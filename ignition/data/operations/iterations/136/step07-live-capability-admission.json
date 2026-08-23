@@ -1,0 +1,24 @@
+{
+  "schema_version": "ignition-136-step07-live-capability-admission-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "07",
+  "implementation": {
+    "source": "ignition/agent_federation/live_admission.py::LiveCapabilityAdmission",
+    "durability_authority": "ignition/agent_runtime/executor_admission.py::ExecutorAdmissionStore",
+    "effective_capability_rule": "OS grant intersection executor declaration intersection lease observed capabilities",
+    "permission_ceiling": "READ_ONLY_SYNTHETIC only; never widened by executor output",
+    "lease_binding": "executor_id and capability_lease_ref must match",
+    "freshness": "ISO expiry, binary digest and interface digest drift fail closed",
+    "revocation": "future route denied; started read-only route cancel-requested; unknown effect requires reconciliation",
+    "retry_policy": "NO_BLIND_RETRY"
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_admission ignition.tests.test_live_bridge_contracts ignition.tests.test_live_transport ignition.tests.test_live_codex_adapter ignition.tests.test_live_hermes_adapter ignition.tests.test_live_openclaw_adapter -v",
+    "tests": 27,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Repository-local capability admission, revocation and fail-closed contract evidence only; no live completion or external truth is inferred."
+}

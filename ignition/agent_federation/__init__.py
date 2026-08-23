@@ -69,6 +69,7 @@ from .pilots import (
 from .live_bridge import LiveCapabilityLease, LiveDispatchEnvelope, LiveDispatchStateMachine, LiveExecutorReceipt, LiveTransitionError
 from .live_transport import LiveProcessResult, LiveProcessTransport, LiveTransportError, interface_digest, parse_bounded_jsonl
 from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAdapter
+from .live_admission import LiveAdmissionDecision, LiveAdmissionError, LiveCapabilityAdmission
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -88,4 +89,5 @@ __all__ = [
     "LiveCapabilityLease", "LiveDispatchEnvelope", "LiveDispatchStateMachine", "LiveExecutorReceipt", "LiveTransitionError",
     "LiveProcessResult", "LiveProcessTransport", "LiveTransportError", "interface_digest", "parse_bounded_jsonl",
     "LiveAdapterError", "LiveAdapterObservation", "LiveCodexAdapter", "LiveHermesAdapter", "LiveOpenClawAdapter",
+    "LiveAdmissionDecision", "LiveAdmissionError", "LiveCapabilityAdmission",
 ]
