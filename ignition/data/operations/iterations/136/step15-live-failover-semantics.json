@@ -1,0 +1,46 @@
+{
+  "schema_version": "ignition-136-step15-live-failover-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "15",
+  "live_reinvocation": "NOT_PERFORMED",
+  "captured_source_receipt": {
+    "executor_id": "external.hermes",
+    "dispatch_id": "live-hermes-136",
+    "attempt_id": "live-hermes-136-initial",
+    "state": "TIMED_OUT_EFFECT_UNKNOWN",
+    "receipt_digest": "d0afc3daf2a269a8b22af9de6b828bcd52b995031a0320f08b6c4b1d0781a060"
+  },
+  "unavailable_target_simulation": {
+    "target_executor_id": "external.codex",
+    "target_admission_status": "ADMITTED",
+    "target_capabilities": ["repo.read"],
+    "no_effect_proven": false,
+    "decision": "REQUIRES_RECONCILIATION",
+    "new_attempt_id": null,
+    "private_session_propagated": false,
+    "policy_rechecked": true,
+    "handoff_capsule": {
+      "task_id": "IGNITION-20260823-136",
+      "dispatch_id": "live-hermes-136",
+      "receipt_digest": "d0afc3daf2a269a8b22af9de6b828bcd52b995031a0320f08b6c4b1d0781a060",
+      "permission_ceiling": ["repo.read"]
+    }
+  },
+  "no_effect_control_test": {
+    "source_state": "TIMED_OUT_KNOWN_NO_EFFECT",
+    "target_admission_status": "ADMITTED",
+    "target_capabilities": ["repo.read"],
+    "decision": "FAILOVER_ELIGIBLE_NEW_LINEAGE",
+    "new_attempt_id": "failover-attempt:failover:external.codex",
+    "private_session_propagated": false
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_failover -v plus replay of Step13 sanitized receipt",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Captured receipt failover semantics only; unknown effect remains reconciliation and no external completion is inferred."
+}

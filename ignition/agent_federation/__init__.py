@@ -76,6 +76,7 @@ from .live_pilot import DisposableLiveFixture, LivePilotError, LivePilotExpectat
 from .live_preflight import LivePreflightEntry, LivePreflightReport, run_live_preflight
 from .live_execution import LiveAttemptResult, LiveExecutionError, execute_bounded_attempt
 from .live_fault_matrix import CASE_SPECS, FaultCaseResult, run_fault_matrix
+from .live_failover import LiveFailoverDecision, decide_bounded_failover
 
 __all__ = [
     "ApprovalPolicy", "ArtifactRef", "BudgetContract", "ExecutorDescriptor", "ExecutorHealth",
@@ -102,4 +103,5 @@ __all__ = [
     "LivePreflightEntry", "LivePreflightReport", "run_live_preflight",
     "LiveAttemptResult", "LiveExecutionError", "execute_bounded_attempt",
     "CASE_SPECS", "FaultCaseResult", "run_fault_matrix",
+    "LiveFailoverDecision", "decide_bounded_failover",
 ]
