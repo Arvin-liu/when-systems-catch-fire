@@ -1,0 +1,23 @@
+{
+  "schema_version": "ignition-136-step09-live-privacy-redaction-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "09",
+  "source": "ignition/agent_federation/live_privacy.py",
+  "canonical_boundary": {
+    "credentials": "redacted or rejected before canonical receipt",
+    "private_paths": "normalized to placeholders",
+    "raw_prompt_and_hidden_reasoning": "rejected",
+    "provider_telemetry_and_transcript": "stripped or rejected",
+    "channel_browser_repository_user_material": "stripped or rejected",
+    "source_text": "digest only; raw text is never persisted"
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_privacy -v",
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Repository-local live-result privacy and redaction evidence only; no provider telemetry, user material or external truth is retained."
+}
