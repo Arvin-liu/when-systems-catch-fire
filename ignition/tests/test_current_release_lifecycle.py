@@ -12,7 +12,7 @@ class CurrentReleaseLifecycleTests(unittest.TestCase):
         self.assertEqual(lifecycle.validate(), [])
         record = lifecycle.load_json(lifecycle.LIFECYCLE_PATH)
         self.assertIn(record["content_phase"], {"RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"})
-        self.assertEqual(record["task_id"], "IGNITION-20260822-135")
+        self.assertEqual(record["task_id"], "IGNITION-20260823-136")
         self.assertEqual(record["task_identity_source"]["binding"], "MUST_MATCH_CURRENT_FORMAL_EXECUTION_CONTRACT_AND_ORDINAL_DERIVATION")
         self.assertEqual(record["required_publication_ref"], "refs/heads/main")
         self.assertEqual(record["publication_authority"], "REMOTE_REF_OBSERVATION")

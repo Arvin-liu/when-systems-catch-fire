@@ -34,7 +34,7 @@
             "required": ["current_formal_task_source", "execution_contract_source", "ordinal_semantics_source", "binding"],
             "properties": {
                 "current_formal_task_source": {"const": "ignition/data/operations/current-task-lineage-status.json#/task_identity/current_formal_task"},
-                "execution_contract_source": {"const": "ignition/data/operations/iterations/135/execution-contract-r1.json#/task_id"},
+                "execution_contract_source": {"const": "ignition/data/operations/iterations/136/execution-contract-r1.json#/task_id"},
                 "ordinal_semantics_source": {"const": "ignition/data/operations/iteration-boundary-semantics-r1.json"},
                 "binding": {"const": "MUST_MATCH_CURRENT_FORMAL_EXECUTION_CONTRACT_AND_ORDINAL_DERIVATION"}
             }

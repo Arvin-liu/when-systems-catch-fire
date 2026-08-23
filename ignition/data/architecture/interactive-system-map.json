@@ -1,17 +1,17 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.12.0",
-  "historical_map_version": "0.11.0",
+  "map_version": "0.13.0",
+  "historical_map_version": "0.12.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整可点击总架构图",
-  "subtitle": "唯一完整总架构图；0.12.0 Current 派生投影，0.11.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R4 Steering + Control Plane → Pack/Federation routing → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.13.0 Current 派生投影，0.12.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R5 Steering + Control Plane → Pack/Federation routing → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Live Bridge 只拥有 provider-neutral 的 bounded envelope、capability lease、transport、receipt、timeout/cancel/reconciliation 与独立验证边界，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "repository_url": "https://github.com/Arvin-liu/when-systems-catch-fire",
   "projection_authority": {
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.1.0",
-    "topology_version": "1.10.0",
+    "component_registry_version": "2.2.0",
+    "topology_version": "1.11.0",
     "layout_version": "2.0.0"
   },
   "layout": {
@@ -197,6 +197,16 @@
         "relation_ids": [
           "map_runtime_pack_contract",
           "map_runtime_external_agent_federation"
+        ]
+      },
+      {
+        "id": "live_bridge",
+        "label": "OS-owned bounded live bridge",
+        "node_ids": [
+          "live_executor_bridge_r1"
+        ],
+        "relation_ids": [
+          "federation_projects_live_executor_bridge"
         ]
       },
       {
@@ -911,6 +921,14 @@
       "target": "docs/architecture/agent-runtime-r0.md",
       "description": "Runtime 外部环境、工具能力与执行者接口；provider/model 只可进入 telemetry。",
       "lifecycle_status": "current"
+    },
+    {
+      "id": "live_executor_bridge_r1",
+      "label": "Live External Executor Bridge R1",
+      "group": "federation",
+      "target": "docs/architecture/external-agent-federation-r1.md#Live External Executor Bridge R1",
+      "description": "OS-owned provider-neutral live dispatch bridge: capability leases, bounded process transport, strict executor receipts, timeout/cancel/reconciliation and independent validation; it owns no provider, channel, browser, remote Git, configuration or billing authority.",
+      "lifecycle_status": "current"
     }
   ],
   "edges": [
@@ -1609,11 +1627,19 @@
       "label": "Steering why-next 与 obligation 状态进入 Driver Console",
       "relation_class": "projects",
       "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "federation_projects_live_executor_bridge",
+      "source": "external_agent_federation",
+      "target": "live_executor_bridge_r1",
+      "label": "Federation 将 bounded live dispatch 交给 OS Bridge",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency"
     }
   ],
   "component_coverage": {
-    "registry_components": 94,
-    "visible_nodes": 82,
+    "registry_components": 95,
+    "visible_nodes": 83,
     "hidden_components": 12,
     "hidden_representatives": {
       "foundation_data": "foundation",

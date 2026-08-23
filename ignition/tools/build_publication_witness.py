@@ -29,10 +29,10 @@ HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
 SCHEMA_PATH = ROOT / "schemas/operations/publication-witness-r1.schema.json"
-CONTRACT_PATH = ROOT / "data/operations/iterations/135/execution-contract-r1.json"
+CONTRACT_PATH = ROOT / "data/operations/iterations/136/execution-contract-r1.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
-FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-135-result.md"
+FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260823-136-result.md"
 REMOTE_REF = "refs/heads/main"
 REMOTE_TRACKING_REF = "refs/remotes/origin/main"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
@@ -115,7 +115,9 @@ def validate_witness(witness: dict[str, Any]) -> list[str]:
         if binding.get("exact_match") is not True:
             rendered.append("$.task_binding.exact_match: task identity binding is not exact")
         if binding.get("latest_architecture_changing_task") == task_id:
-            rendered.append("$.task_binding.latest_architecture_changing_task: architecture task was promoted to formal task")
+            contract = load_json(CONTRACT_PATH)
+            if contract.get("identity_impact") != "ARCHITECTURE_CHANGED":
+                rendered.append("$.task_binding.latest_architecture_changing_task: architecture task was promoted to formal task")
         try:
             formal = task_identity.parse_task_id(task_id)
             architecture = task_identity.parse_task_id(binding.get("latest_architecture_changing_task"))
@@ -176,7 +178,9 @@ def _task_binding(*, task_id: str, formal_result_task_id: str) -> dict[str, Any]
     mismatches = [f"{label}={value}" for label, value in observed.items() if value != task_id]
     if mismatches:
         raise WitnessBuildError("task identity binding mismatch: " + ", ".join(mismatches))
-    if not isinstance(latest_architecture_changing_task, str) or latest_architecture_changing_task == task_id:
+    if not isinstance(latest_architecture_changing_task, str):
+        raise WitnessBuildError("latest architecture-changing task must remain distinct from the formal task")
+    if latest_architecture_changing_task == task_id and contract.get("identity_impact") != "ARCHITECTURE_CHANGED":
         raise WitnessBuildError("latest architecture-changing task must remain distinct from the formal task")
     if contract.get("task_id") != task_id or lineage.get("current_task", {}).get("task_id") != task_id:
         raise WitnessBuildError("task identity binding does not match the execution contract and canonical current task")

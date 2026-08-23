@@ -1,51 +1,40 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/ignition/operations/execution-contract-r1.schema.json",
-  "title": "Ignition formal execution contract",
+  "$id": "https://example.invalid/ignition/operations/execution-contract-136-r1.schema.json",
+  "title": "Ignition Task136 formal execution contract",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "contract_id", "task_id", "control_source", "formal_baseline", "identity_impact", "expected_task_branch", "expected_receipt_branch", "required_release_ref", "no_owner_intermediate", "identity_expectations", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "execution-contract-r1"},
     "contract_id": {"const": "IGNITION_EXECUTION_CONTRACT_R1"},
-    "task_id": {"type": "string", "const": "IGNITION-20260823-136"},
-    "control_source": {"$ref": "#/$defs/controlSource"},
-    "formal_baseline": {"$ref": "#/$defs/formalBaseline"},
+    "task_id": {"const": "IGNITION-20260823-136"},
+    "control_source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "ref", "commit", "command_path"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/1111"},
+        "ref": {"const": "origin/relay/current"},
+        "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "command_path": {"const": "agent-commands/IGNITION-20260823-136-live-external-executor-bridge-r1.md"}
+      }
+    },
+    "formal_baseline": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "ref", "sha"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+        "ref": {"const": "refs/heads/main"},
+        "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    },
     "identity_impact": {"const": "ARCHITECTURE_CHANGED"},
     "expected_task_branch": {"const": "codex/ignition-136-live-external-executor-bridge-r1-20260823"},
     "expected_receipt_branch": {"const": "relay/receipts/ignition-136-live-external-executor-bridge-r1-20260823"},
     "required_release_ref": {"const": "refs/heads/main"},
     "no_owner_intermediate": {"const": true},
-    "identity_expectations": {"$ref": "#/$defs/identityExpectations"},
-    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
-  },
-  "$defs": {
-    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
-    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
-    "controlSource": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["repository", "ref", "commit", "command_path"],
-      "properties": {
-        "repository": {"const": "Arvin-liu/1111"},
-        "ref": {"const": "origin/relay/current"},
-        "commit": {"$ref": "#/$defs/sha"},
-        "command_path": {"const": "agent-commands/IGNITION-20260823-136-live-external-executor-bridge-r1.md"}
-      }
-    },
-    "formalBaseline": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": ["repository", "ref", "sha"],
-      "properties": {
-        "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
-        "ref": {"const": "refs/heads/main"},
-        "sha": {"$ref": "#/$defs/sha"}
-      }
-    },
-    "identityExpectations": {
-      "type": "object",
-      "additionalProperties": false,
+    "identity_expectations": {
+      "type": "object", "additionalProperties": false,
       "required": ["current_formal_task", "latest_architecture_changing_task", "previous_canonical_current_task", "previous_formal_task", "release_candidate_task", "publication_witness_task"],
       "properties": {
         "current_formal_task": {"const": "IGNITION-20260823-136"},
@@ -55,6 +44,7 @@
         "release_candidate_task": {"const": "IGNITION-20260823-136"},
         "publication_witness_task": {"const": "IGNITION-20260823-136"}
       }
-    }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
   }
 }

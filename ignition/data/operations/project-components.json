@@ -128,6 +128,18 @@
         "templates/operations/stage-snapshot-request-template.json"
       ],
       "reason": "The stage snapshot request template is both a method handoff surface and the specific 1.4 candidate interface."
+    },
+    {
+      "authority_source": "docs/architecture/external-agent-federation-r1.md",
+      "component_ids": [
+        "external_agent_federation",
+        "live_executor_bridge_r1"
+      ],
+      "path_patterns": [
+        "agent_federation/",
+        "docs/architecture/external-agent-federation-r1.md"
+      ],
+      "reason": "Federation remains the protocol umbrella while the Live External Executor Bridge owns the bounded OS dispatch implementation and Task136 evidence within the shared executor boundary."
     }
   ],
   "components": [
@@ -1747,6 +1759,18 @@
     },
     {
       "authority": "canonical",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Live External Executor Bridge R1",
+      "component_id": "live_executor_bridge_r1",
+      "component_type": "operation_control",
+      "description": "OS-owned provider-neutral live dispatch bridge: capability leases, bounded process transport, strict executor receipts, timeout/cancel/reconciliation and independent validation; it owns no provider, channel, browser, remote Git, configuration or billing authority.",
+      "label": "Live External Executor Bridge R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_federation/live_bridge.py", "status": "current", "version": "R1"},
+      "map_projection": {"group": "federation", "visible": true},
+      "path_patterns": ["agent_federation/live_*.py", "schemas/agent-federation/live-*.json", "data/operations/iterations/136/", "tests/test_live_*.py", "docs/architecture/external-agent-federation-r1.md"]
+    },
+    {
+      "authority": "canonical",
       "canonical_target": "docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary",
       "component_id": "openclaw_adapter",
       "component_type": "operation_control",
@@ -1939,5 +1963,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.1.0"
+  "registry_version": "2.2.0"
 }

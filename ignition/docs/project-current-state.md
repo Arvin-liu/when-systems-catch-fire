@@ -3,14 +3,14 @@
 更新时间：2026-08-21。以下 Current 摘要先回答“现在是什么”；任务史保留为可回链证据，不再承担 Current 数字权威。
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
-- current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260822-135` (ordinal `135`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129` (ordinal `129`)；current_iteration_boundary: `135` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260822-135`。
-- release_lifecycle: task `IGNITION-20260822-135`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
-- current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
-- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
-- architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260822-135` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `51ebadbf48e838a3489a84dc367022179129db2610d6ef1b4ba9fe700705c2e5`。
+- current_identity_epoch: `os-control-plane-r5-live-executor-federation-r2`；system_role: `Ignition OS / orchestration-governance layer`。
+- current_formal_task: `IGNITION-20260823-136` (ordinal `136`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `136` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260823-136`。
+- release_lifecycle: task `IGNITION-20260823-136`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
+- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
+- architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
+- task_lineage: current `IGNITION-20260823-136` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `f5369c8e95b8fd283249c39c22b689d17545cd77a6a647f3d35223ee47554028`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -146,6 +146,21 @@ channel 状态不进入 Knowledge、Writing、Human Surface 或 canonical memory
 传播契约将 `agent_federation/` 单独投影到 `agent_platform.federation`，并禁止
 它直接生成 Knowledge census、Fire Seeds、publication、Human front-door 或
 Pack registry；若要改变这些表面，仍须由各自 canonical source 独立声明与验证。
+
+## Task 136 current Live External Executor Bridge R1
+
+Task 136 将 Federation contract 落到 OS-owned 的 bounded live bridge：由
+LiveDispatchEnvelope、LiveCapabilityLease、受限 transport、严格 receipt、
+独立 fixture validation、timeout/cancel 与 conservative reconciliation
+组成。pilot 仍严格是 synthetic、disposable、read-only；不启用 message/channel、
+browser、remote Git、executor configuration 或 new billing。
+
+Step 13 只做了一次 Hermes bounded attempt，结果为 TIMED_OUT_EFFECT_UNKNOWN，
+cancel 与 reconciliation 保持 OPEN，fixture 未变更且没有 retry。OpenClaw 因
+无法证明 disposable workspace、显式 read-only ceiling 与 channel-off 边界而
+未调用。当前 live bridge 状态精确为
+LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED，LIVE_EXTERNAL_INVOCATION
+仍是开放义务；任何 executor PASS 都必须先经独立 OS validator。
 
 ## 历史快照（Historical, append-only context）
 

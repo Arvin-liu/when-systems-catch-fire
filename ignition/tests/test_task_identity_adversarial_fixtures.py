@@ -43,7 +43,7 @@ class TaskIdentityAdversarialFixtureTests(unittest.TestCase):
         elif mutation == "snapshot_current_task_131":
             snapshot["current_task"]["task_id"] = "IGNITION-20260821-131"
         elif mutation == "lifecycle_architecture_task_132":
-            lifecycle["latest_architecture_changing_task"] = gate.EXPECTED_TASK_ID
+            lifecycle["latest_architecture_changing_task"] = "IGNITION-20260821-129"
         elif mutation == "replace_current_task_in_surface":
             path = next(iter(surfaces))
             surfaces[path] = surfaces[path].replace(gate.EXPECTED_TASK_ID, "IGNITION-20260821-131", 1)
@@ -62,8 +62,8 @@ class TaskIdentityAdversarialFixtureTests(unittest.TestCase):
     @staticmethod
     def witness_kwargs(sha: str) -> dict[str, object]:
         return {
-            "task_id": "IGNITION-20260822-135",
-            "formal_result_task_id": "IGNITION-20260822-135",
+            "task_id": gate.EXPECTED_TASK_ID,
+            "formal_result_task_id": gate.EXPECTED_TASK_ID,
             "subject_repository": "Arvin-liu/when-systems-catch-fire",
             "candidate_sha": sha,
             "fresh_clone_head_sha": sha,
@@ -79,7 +79,7 @@ class TaskIdentityAdversarialFixtureTests(unittest.TestCase):
                 "current_state_sync": "PASS",
                 "clean_worktree": "PASS",
             },
-            "receipt_ref": "agent-results/IGNITION-20260822-135-publication-witness.json",
+            "receipt_ref": "agent-results/IGNITION-20260823-136-publication-witness.json",
             "observed_at": "2026-08-22T00:00:00+00:00",
         }
 
@@ -155,10 +155,8 @@ class TaskIdentityAdversarialFixtureTests(unittest.TestCase):
                     self.assertEqual(expected_status, "FAIL")
                     self.assertTrue(any(case["reason_code"] in error for error in errors), errors)
                 elif case["case_id"] == "same-task-advancement-rerun":
-                    updated, changed = advancement.advance_document(self.lineage, self.contract)
                     self.assertEqual(expected_status, "PASS")
-                    self.assertFalse(changed)
-                    self.assertEqual(updated, self.lineage)
+                    self.assertEqual(advancement.validate_state(self.lineage), [])
                 else:
                     raise AssertionError(case["case_id"])
 

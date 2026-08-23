@@ -13,11 +13,11 @@ from typing import Any
 from jsonschema import Draft202012Validator
 
 try:
-    from tools import validate_execution_contract_135 as validate_execution_contract
+    from tools import validate_execution_contract
     from tools import iteration_boundary
     from tools import validate_iteration_ordinal_binding as ordinal_binding
 except ImportError:  # direct script / tools-on-PYTHONPATH execution
-    import validate_execution_contract_135 as validate_execution_contract
+    import validate_execution_contract
     import iteration_boundary
     import validate_iteration_ordinal_binding as ordinal_binding
 
@@ -29,8 +29,8 @@ LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SCHEMA_PATH = ROOT / "schemas/operations/current-release-lifecycle-r1.schema.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
-AUDIT_PATH = ROOT / "data/operations/iterations/135/step15-release-lifecycle-audit.json"
-EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/135/execution-contract-r1.json"
+AUDIT_PATH = ROOT / "data/operations/iterations/136/step16-release-lifecycle-audit.json"
+EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/136/execution-contract-r1.json"
 FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 
 PHASES = ["RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"]
@@ -92,10 +92,13 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         facts=facts,
     )
     errors.extend(f"ordinal binding: {error}" for error in ordinal_errors)
-    if lifecycle["latest_architecture_changing_task"] == lifecycle["task_id"]:
+    impact = current_task["identity_impact"]
+    if impact == "PRESENTATION_ONLY" and lifecycle["latest_architecture_changing_task"] == lifecycle["task_id"]:
         errors.append("presentation-only Current task cannot also be latest architecture-changing task")
-    if current_task["identity_impact"] != "PRESENTATION_ONLY":
-        errors.append("release lifecycle requires PRESENTATION_ONLY identity impact")
+    if impact == "ARCHITECTURE_CHANGED" and lifecycle["latest_architecture_changing_task"] != lifecycle["task_id"]:
+        errors.append("architecture-changing Current task must also be the latest architecture-changing task")
+    if impact != execution_contract["identity_impact"]:
+        errors.append("release lifecycle identity impact differs from execution contract")
     if lifecycle["phase_order"] != PHASES:
         errors.append("phase_order must preserve the content-owned lifecycle order")
     if lifecycle["required_publication_ref"] != "refs/heads/main":

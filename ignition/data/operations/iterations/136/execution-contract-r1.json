@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260823-136",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "4fd8bc536a0d2b5d90e8ef837621dfb28b9ffb11",
+    "command_path": "agent-commands/IGNITION-20260823-136-live-external-executor-bridge-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "3acf15ea4c1b1c27eb6e8b9cadbc4f0526bdfddb"
+  },
+  "identity_impact": "ARCHITECTURE_CHANGED",
+  "expected_task_branch": "codex/ignition-136-live-external-executor-bridge-r1-20260823",
+  "expected_receipt_branch": "relay/receipts/ignition-136-live-external-executor-bridge-r1-20260823",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260823-136",
+    "latest_architecture_changing_task": "IGNITION-20260823-136",
+    "previous_canonical_current_task": "IGNITION-20260822-135",
+    "previous_formal_task": "IGNITION-20260822-135",
+    "release_candidate_task": "IGNITION-20260823-136",
+    "publication_witness_task": "IGNITION-20260823-136"
+  },
+  "claim_ceiling": "Task136 repository-local architecture identity and bounded live-executor bridge execution contract only; it grants no Owner authority, truth authority, production readiness, validated external completion or epistemic acceptance."
+}

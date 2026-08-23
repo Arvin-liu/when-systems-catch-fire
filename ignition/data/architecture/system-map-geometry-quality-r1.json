@@ -13,17 +13,17 @@
   },
   "checks": {
     "bottom_only_isolated_groups": [],
-    "clickable_target_count": 82,
+    "clickable_target_count": 83,
     "clickable_target_coverage": true,
-    "expected_node_count": 82,
+    "expected_node_count": 83,
     "group_box_overlap_count": 0,
     "label_clip_count": 0,
     "node_box_overlap_count": 0,
-    "node_geometry_count": 82,
+    "node_geometry_count": 83,
     "nodes_outside_group_count": 0,
     "solid_background_rect_count": 1
   },
-  "clickable_target_count": 82,
+  "clickable_target_count": 83,
   "clickable_target_coverage": true,
   "edge_crossing_proxy": 188,
   "edges": [
@@ -461,9 +461,14 @@
       "id": "map_steering_driver_console",
       "source": "steering_intent_obligation_r1",
       "target": "driver_console_r1"
+    },
+    {
+      "id": "federation_projects_live_executor_bridge",
+      "source": "external_agent_federation",
+      "target": "live_executor_bridge_r1"
     }
   ],
-  "expected_node_count": 82,
+  "expected_node_count": 83,
   "failures": [],
   "gap_by_column": {
     "0": {
@@ -521,7 +526,7 @@
       "node_count": 3,
       "width": 560.0,
       "x": 1208.0,
-      "y": 2030.0
+      "y": 2096.0
     },
     {
       "column": 2,
@@ -546,9 +551,9 @@
     {
       "column": 2,
       "degree": 2,
-      "height": 586.0,
+      "height": 652.0,
       "id": "federation",
-      "node_count": 7,
+      "node_count": 8,
       "width": 560.0,
       "x": 1208.0,
       "y": 1416.0
@@ -647,7 +652,7 @@
   "internal_blank_area": 156800.0,
   "label_clip_count": 0,
   "layout_version": "2.0.0",
-  "map_version": "0.12.0",
+  "map_version": "0.13.0",
   "max_internal_gap": 28.0,
   "metrics": {
     "baseline_canvas_height": 3988.0,
@@ -659,7 +664,7 @@
     "canvas_width": 1800.0,
     "edge_crossing_proxy": 188,
     "edge_crossing_ratio_vs_baseline": 1.0867052023,
-    "group_occupancy_ratio": 0.7504273504,
+    "group_occupancy_ratio": 0.7574786325,
     "internal_blank_area": 156800.0,
     "max_internal_gap": 28.0,
     "mobile_viewports_fit": 2
@@ -1073,6 +1078,14 @@
       "y": 1224.0
     },
     {
+      "group": "federation",
+      "height": 54.0,
+      "id": "live_executor_bridge_r1",
+      "width": 516.0,
+      "x": 1230.0,
+      "y": 1970.0
+    },
+    {
       "group": "models",
       "height": 54.0,
       "id": "mcf",
@@ -1086,7 +1099,7 @@
       "id": "no_l7",
       "width": 516.0,
       "x": 1230.0,
-      "y": 2122.0
+      "y": 2188.0
     },
     {
       "group": "boundaries",
@@ -1094,7 +1107,7 @@
       "id": "no_totality_proof",
       "width": 516.0,
       "x": 1230.0,
-      "y": 2254.0
+      "y": 2320.0
     },
     {
       "group": "boundaries",
@@ -1102,7 +1115,7 @@
       "id": "no_truth_upgrade",
       "width": 516.0,
       "x": 1230.0,
-      "y": 2188.0
+      "y": 2254.0
     },
     {
       "group": "domain_packs",

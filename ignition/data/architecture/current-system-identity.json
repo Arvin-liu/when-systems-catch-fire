@@ -1,12 +1,12 @@
 {
   "schema_version": "current-system-identity-r1",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "identity_epoch": "os-control-plane-r4-steering-intent-r1",
-  "current_formal_task_id": "IGNITION-20260822-135",
-  "current_formal_task_ordinal": 135,
-  "latest_architecture_changing_task_id": "IGNITION-20260821-129",
-  "latest_architecture_task_ordinal": 129,
-  "current_iteration_boundary": 135,
+  "identity_epoch": "os-control-plane-r5-live-executor-federation-r2",
+  "current_formal_task_id": "IGNITION-20260823-136",
+  "current_formal_task_ordinal": 136,
+  "latest_architecture_changing_task_id": "IGNITION-20260823-136",
+  "latest_architecture_task_ordinal": 136,
+  "current_iteration_boundary": 136,
   "current_iteration_boundary_semantics": {
     "contract_id": "ITERATION_BOUNDARY_SEMANTICS_INVARIANT",
     "status": "DEPRECATED_COMPATIBILITY_ALIAS",
@@ -36,14 +36,15 @@
       "Driver Console",
       "Steering / Intent / Goal / Obligation",
       "Domain Pack Registry",
-      "External Agent Federation"
+      "External Agent Federation",
+      "Live External Executor Bridge"
     ],
-    "control_plane_role": "R4 bounded coordination fabric for events, policy narrowing, resource conflict, concurrent scheduling, executor health, queue admission, dispatch reconciliation, operational memory, snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, capability revocation, accounting, recovery orchestration, disaster-recovery bundles, driver-readable recovery and repository-local steering of intents, goals, commitments, temporal windows, dependencies, priority, arbitration, decision traces and explainable why-next records; uncertain external effects stop at reconciliation and the Structural Governance Surface remains a cross-cutting advisory overlay, not a hard control-plane authority.",
+    "control_plane_role": "R5 bounded coordination fabric for events, policy narrowing, resource conflict, concurrent scheduling, executor health, queue admission, provider-neutral live dispatch, capability leases, bounded process transport, strict receipt validation, cancellation and timeout reconciliation, operational memory, snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, capability revocation, accounting, recovery orchestration, disaster-recovery bundles, driver-readable recovery and repository-local steering of intents, goals, commitments, temporal windows, dependencies, priority, arbitration, decision traces and explainable why-next records; uncertain external effects stop at reconciliation and the Structural Governance Surface remains a cross-cutting advisory overlay, not a hard control-plane authority.",
     "external_executor_role": "replaceable executors",
     "knowledge_role": "Knowledge is the first large Domain Pack, not the whole system.",
     "reference_executor_role": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
-    "identity_boundary": "Ignition owns goal, value, policy, permission, durable state, memory, validation, handoff, provenance and result absorption; Steering records distinguish Owner-declared authority from system proposals, keep Goal dependency separate from Supervisor execution DAGs, and require an independent Completion Contract before completion; Durability / Lifecycle keeps repository-local continuity and recovery records, while uncertain external effects stop at reconciliation and are never rerun automatically; external Agents perform bounded local actions through adapters. The Structural Governance Surface can expose advisory context but cannot change capability, permission or epistemic status.",
-    "authority_ceiling": "This is a repository engineering identity. It grants no Owner authority, truth authority, M/E upgrade, production safety, general intelligence or external validity; Steering records model repository-local authority provenance and obligations but do not infer real Owner intent or completion; Durability / Lifecycle is not proof of production durability or external completion, and the advisory Structural Governance Surface is not a new authority layer."
+    "identity_boundary": "Ignition owns goal, value, policy, permission, durable state, memory, validation, handoff, provenance and result absorption; Steering records distinguish Owner-declared authority from system proposals, keep Goal dependency separate from Supervisor execution DAGs, and require an independent Completion Contract before completion; Durability / Lifecycle keeps repository-local continuity and recovery records, while uncertain external effects stop at reconciliation and are never rerun automatically; the Live External Executor Bridge issues only bounded synthetic/read-only dispatch with OS permission intersection, disposable workspace binding, sanitized receipts and no channel, browser, remote Git, configuration or new billing authority; external Agents perform bounded local actions through adapters. The Structural Governance Surface can expose advisory context but cannot change capability, permission or epistemic status.",
+    "authority_ceiling": "This is a repository engineering identity. It grants no Owner authority, truth authority, M/E upgrade, production safety, general intelligence or external validity; Steering records model repository-local authority provenance and obligations but do not infer real Owner intent or completion; the Live External Executor Bridge records bounded transport and reconciliation evidence but a provider return or timeout cannot become validated completion without independent OS validation; Durability / Lifecycle is not proof of production durability or external completion, and the advisory Structural Governance Surface is not a new authority layer."
   },
   "current_map": {
     "source_path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -173,8 +174,8 @@
   "known_open_obligations": [
     {
       "obligation_id": "LIVE_EXTERNAL_INVOCATION",
-      "statement": "OpenClaw, Hermes and Codex live invocation remains bounded by safety and may be SKIPPED; current evidence is not a production or general-intelligence claim.",
-      "source_paths": ["ignition/docs/architecture/external-agent-federation-r1.md", "ignition/data/agent-federation/executor-inventory-r1.json"]
+      "statement": "The provider-neutral live bridge is implemented, but no validated live completion was observed: the bounded Hermes synthetic/read-only attempt timed out with unknown external effect and remains in reconciliation; OpenClaw was skipped because its public Gateway/session surface could not prove disposable workspace, read-only and no-channel boundaries. LIVE_EXTERNAL_INVOCATION remains open; no production, general-intelligence or external-validity claim is made.",
+      "source_paths": ["ignition/docs/architecture/external-agent-federation-r1.md", "ignition/data/agent-federation/executor-inventory-r1.json", "ignition/data/operations/iterations/136/step11-live-preflight.json", "ignition/data/operations/iterations/136/step13-live-execution-receipt.json"]
     },
     {
       "obligation_id": "PRODUCTION_AND_EXTERNAL_VALIDITY",
@@ -210,6 +211,7 @@
     "Event, policy, resource, scheduler, health, queue, dispatch, memory and console records remain bounded operational projections; none grants truth, Owner, executor or epistemic authority.",
     "Durability / Lifecycle records remain bounded repository-local continuity projections; uncertain external effects stop at reconciliation, and recovery evidence does not establish production durability or exact-once execution.",
     "Steering / Intent / Goal / Obligation records remain bounded repository-local authority, lifecycle and explainability projections; system proposals cannot promote themselves, run-pass cannot infer completion, and no record grants Owner, truth or epistemic authority.",
+    "Live External Executor Bridge, capability leases, transport and receipts remain bounded repository-local dispatch/reconciliation projections; no executor output, timeout or captured receipt grants external completion, channel authority, billing authority, Owner authority or epistemic acceptance.",
     "System map and propagation are repository navigation/dependency projections, not reality causality or completeness proof.",
     "Structural Governance Surface is an advisory overlay only; it cannot grant capability, permission, authorization, truth, Owner acceptance, epistemic acceptance or safety release.",
     "CURRENT_WITH_OPEN_OBLIGATIONS remains separate from EPISTEMICALLY_ACCEPTED=0."
@@ -247,7 +249,7 @@
     "replaceable_executors": {"all_of_any_group": [["replaceable executor", "replaceable executors", "可替换执行器", "可替换 adapter"], ["external Agent", "外部 Agent", "external executor", "外部执行器"]]},
     "knowledge_pack": {"all_of_any_group": [["Knowledge"], ["Domain Pack", "DomainPack", "领域 Pack"]]},
     "reference_freeze": {"all_of_any_group": [["Reference"], ["Conformance"], ["Fallback"]]},
-    "map_version": {"all_of_any_group": [["0.12.0"]]},
+    "map_version": {"all_of_any_group": [["0.13.0"]]},
     "state_delta": {"all_of_any_group": [["CURRENT_WITH_OPEN_OBLIGATIONS"], ["EPISTEMICALLY_ACCEPTED=0"]]},
     "current_facts": {"all_of_any_group": [["current-facts", "derived facts", "可推导事实", "机器事实"]]},
     "soft_governance": {"all_of_any_group": [["Structural Governance Surface", "结构治理表面"], ["advisory", "ADVISORY_ONLY", "软"]]},

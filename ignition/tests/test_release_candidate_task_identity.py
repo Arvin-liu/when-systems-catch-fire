@@ -52,11 +52,11 @@ class ReleaseCandidateTaskIdentityTests(unittest.TestCase):
         errors = self.check(snapshot=snapshot)
         self.assertTrue(any("snapshot.task_identity.current_formal_task" in error for error in errors))
 
-    def test_architecture_task_cannot_be_promoted_to_current(self) -> None:
+    def test_architecture_changed_task_matches_current_formal(self) -> None:
         lifecycle = copy.deepcopy(self.lifecycle)
         lifecycle["latest_architecture_changing_task"] = gate.EXPECTED_TASK_ID
         errors = self.check(lifecycle=lifecycle)
-        self.assertTrue(any("lifecycle.latest_architecture_changing_task" in error for error in errors))
+        self.assertEqual(errors, [])
 
     def test_stale_compiler_output_is_rejected(self) -> None:
         docs = dict(self.surface_documents)

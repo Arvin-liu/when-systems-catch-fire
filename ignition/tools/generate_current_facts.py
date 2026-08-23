@@ -138,6 +138,18 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         paths.add(sync.resolve_repo_path(metric["source_path"]))
     for pack_path in sorted((ROOT / "packs").glob("*/manifest.json")):
         paths.add(pack_path)
+    lineage = load_json(sync.resolve_repo_path(contract["current_task_lineage"]["source_path"]))
+    try:
+        current_ordinal = task_identity.parse_task_id(lineage["task_identity"]["current_formal_task"])["ordinal"]
+    except (KeyError, task_identity.TaskIdentityError) as exc:
+        raise ValueError(f"cannot derive current live-evidence ordinal: {exc}") from exc
+    for relative_path in (
+        f"ignition/data/operations/iterations/{current_ordinal}/step11-live-preflight.json",
+        f"ignition/data/operations/iterations/{current_ordinal}/step13-live-execution-receipt.json",
+    ):
+        candidate = sync.resolve_repo_path(relative_path)
+        if candidate.is_file():
+            paths.add(candidate)
     ordered = sorted(paths, key=relative)
     relative_paths = [relative(path) for path in ordered]
     if relative_paths != sorted(relative_paths) or len(relative_paths) != len(set(relative_paths)):
@@ -174,6 +186,27 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
     role_counts = Counter(role for row in sync_surfaces for role in row.get("roles", []))
     executors = inventory.get("executors", [])
     live_statuses = {row["executor_id"]: row.get("live_smoke", {}).get("status", "UNDECLARED") for row in executors}
+    live_ceiling = "NOT_RUN_LIVE_EXTERNAL_INVOCATION" if any(status.startswith("NOT_RUN") for status in live_statuses.values()) else "RECORDED_BOUNDED_PROBES_ONLY"
+    current_ordinal = iteration["current_formal_task_ordinal"]
+    preflight_path = ROOT / f"data/operations/iterations/{current_ordinal}/step11-live-preflight.json"
+    live_receipt_path = ROOT / f"data/operations/iterations/{current_ordinal}/step13-live-execution-receipt.json"
+    if preflight_path.is_file():
+        preflight = load_json(preflight_path)
+        for entry in preflight.get("entries", []):
+            executor_id = entry.get("executor_id")
+            eligibility = entry.get("eligibility")
+            if executor_id and eligibility:
+                live_statuses[executor_id] = eligibility
+    if live_receipt_path.is_file():
+        live_execution = load_json(live_receipt_path)
+        receipt = live_execution.get("receipt", {})
+        executor_id = receipt.get("executor_id")
+        receipt_state = receipt.get("state")
+        if executor_id and receipt_state:
+            live_statuses[executor_id] = receipt_state
+        result_status = live_execution.get("result", {}).get("status")
+        if isinstance(result_status, str) and result_status.strip():
+            live_ceiling = result_status
     residuals = inventory.get("repository_audit", {}).get("residuals", [])
     method_text = sync.resolve_repo_path(contract["current_method"]["source_path"]).read_text(encoding="utf-8")
     method_match = re.search(r"^Current:\s*`([^`]+)`", method_text, re.MULTILINE)
@@ -202,7 +235,7 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "adapter_inventory_count": len(executors),
             "adapter_ids": sorted(row["executor_id"] for row in executors),
             "live_status_by_executor": dict(sorted(live_statuses.items())),
-            "live_invocation_ceiling": "NOT_RUN_LIVE_EXTERNAL_INVOCATION" if any(status.startswith("NOT_RUN") for status in live_statuses.values()) else "RECORDED_BOUNDED_PROBES_ONLY",
+            "live_invocation_ceiling": live_ceiling,
             "reference_executor_identity": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
         },
         "foundation": {

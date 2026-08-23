@@ -1,15 +1,15 @@
 # STATE-CHANGELOG
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
-- current_identity_epoch: `os-control-plane-r4-steering-intent-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260822-135` (ordinal `135`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260821-129` (ordinal `129`)；current_iteration_boundary: `135` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260822-135`。
-- release_lifecycle: task `IGNITION-20260822-135`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_identity_epoch: `os-control-plane-r5-live-executor-federation-r2`；system_role: `Ignition OS / orchestration-governance layer`。
+- current_formal_task: `IGNITION-20260823-136` (ordinal `136`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `136` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260823-136`。
+- release_lifecycle: task `IGNITION-20260823-136`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
-- current_method: `1.4.0` Current；current_map: `0.12.0` Current；historical_map: `0.11.0` Historical。
-- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `NOT_RUN_LIVE_EXTERNAL_INVOCATION`。
-- architecture_counts: `registry=94; visible_nodes=82; visible_edges=87`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260822-135` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `51ebadbf48e838a3489a84dc367022179129db2610d6ef1b4ba9fe700705c2e5`。
+- current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
+- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
+- architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
+- task_lineage: current `IGNITION-20260823-136` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `f5369c8e95b8fd283249c39c22b689d17545cd77a6a647f3d35223ee47554028`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -335,3 +335,15 @@
 - obligations: Step17 must verify the unchanged formal-main baseline, perform one ordinary fast-forward, verify `refs/heads/main` and a fresh remote-main clone, replay the post-publication Current gate and write the independent 1111 publication witness. The formal repository must not self-witness the final publication SHA.
 - stale_knowledge: Task134 and all earlier release records remain immutable provenance; prior failure counts and historical residual fingerprints cannot be treated as live Task135 truth or silently widened.
 - next_read: read the Task135 formal result, machine receipt, final Step16 preflight receipt and manifest-last path evidence, then complete ordinary main publication and the independent 1111 witness.
+
+## 2026-08-24 — IGNITION-20260823-136-LIVE-EXTERNAL-EXECUTOR-BRIDGE-R1 — current architecture transition
+
+- main_state: CURRENT_WITH_OPEN_OBLIGATIONS; formal main remains at the verified Task135 baseline until the separate Task136 candidate release and remote-ref observation. This append-only entry records the Task136 Current transition on the task branch, not formal main publication.
+- delta: adds the OS-owned Live External Executor Bridge R1 as the provider-neutral Federation-to-executor dispatch boundary, with capability lease, bounded transport, strict receipt, timeout/cancel, reconciliation and independent validation. The registry, typed topology, layout, materialized map 0.13.0 and generated Current projections are synchronized.
+- current_formal_task: IGNITION-20260823-136 is IN_PROGRESS with formal ordinal 136; latest architecture-changing task is the same Task136 ordinal, and current_iteration_boundary=136 remains only the deprecated compatibility alias.
+- task_lineage: IGNITION-125 remains HISTORICAL_UNEXECUTED with requirements REBASED_INTO_127; IGNITION-127 remains COMPLETED_WITH_CLASSIFIED_RESIDUALS; Task135 remains immutable historical terminal provenance and Task136 is the current non-terminal successor.
+- live_boundary: the pilot is synthetic, disposable and read-only; no channel/message, browser, remote Git, executor configuration or new billing is enabled. Step11 admitted Codex and Hermes to preflight; OpenClaw was skipped because disposable workspace, explicit read-only ceiling and channel-off operation could not all be proven.
+- live_observation: one bounded Hermes attempt timed out as TIMED_OUT_EFFECT_UNKNOWN; cancellation and reconciliation remain open, the synthetic fixture is unchanged, and no retry or private-session propagation occurred. No validated external completion was observed.
+- live_ceiling: LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED; LIVE_EXTERNAL_INVOCATION remains an open obligation. Executor PASS cannot bypass RETURNED_UNVALIDATED or independent OS validation.
+- authority_changes: the bridge adds no Owner, provider, channel, browser, remote Git, configuration, billing, production, external-truth or epistemic authority; EPISTEMICALLY_ACCEPTED=0 remains unchanged.
+- claim_ceiling: repository-local architecture, dispatch-boundary and observation-time evidence only; no external truth, production readiness, Owner acceptance, live completion or epistemic acceptance is inferred.

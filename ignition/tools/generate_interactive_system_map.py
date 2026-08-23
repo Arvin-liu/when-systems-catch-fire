@@ -224,7 +224,7 @@ def validate_spec(spec: dict, root: Path = ROOT) -> None:
     route = semantic_trunk.get("route")
     require(isinstance(route, list) and len(route) >= 6, "system-map semantic trunk requires route stages")
     route_ids = [stage.get("id") for stage in route]
-    require(route_ids == ["authority", "os_control", "pack_federation_routing", "external_executors", "actions_receipts", "validation_feedback"], "system-map semantic trunk route order is not canonical")
+    require(route_ids == ["authority", "os_control", "pack_federation_routing", "live_bridge", "external_executors", "actions_receipts", "validation_feedback"], "system-map semantic trunk route order is not canonical")
     require(semantic_trunk.get("loop_target") == "os_control", "system-map semantic trunk must loop to os_control")
     relation_ids = {edge.get("id") for edge in edges}
     route_node_ids: list[str] = []

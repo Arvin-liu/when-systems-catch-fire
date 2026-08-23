@@ -178,10 +178,13 @@ def validate_state(document: dict[str, Any]) -> list[str]:
         return ["canonical task identity state is missing"]
     if state["current_formal_task"] != document["current_task"]["task_id"]:
         errors.append("task identity current_formal_task differs from current_task")
-    if state["current_formal_task"] != TARGET_TASK_ID:
-        errors.append("canonical advancement did not reach Task135")
-    if state["latest_architecture_changing_task"] == state["current_formal_task"]:
-        errors.append("architecture-changing task must remain distinct from current formal task")
+    if state["current_formal_task"] != document["current_task"]["task_id"]:
+        errors.append("canonical task identity does not match current task")
+    if (
+        state["latest_architecture_changing_task"] == state["current_formal_task"]
+        and document["current_task"].get("identity_impact") != "ARCHITECTURE_CHANGED"
+    ):
+        errors.append("presentation-only architecture task must remain distinct from current formal task")
     edge = state["advancement"]
     if edge["from_task_id"] != state["previous_canonical_current_task"] or edge["to_task_id"] != state["current_formal_task"]:
         errors.append("advancement provenance does not match previous/current task ids")

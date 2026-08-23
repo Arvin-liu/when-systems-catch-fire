@@ -16,13 +16,13 @@
     },
     "release_candidate_task": {
       "role": "RELEASE_CANDIDATE_TASK",
-      "source_path": "ignition/data/operations/iterations/135/execution-contract-r1.json",
+      "source_path": "ignition/data/operations/iterations/136/execution-contract-r1.json",
       "json_pointer": "/task_id",
       "semantic": "Task identity fixed by the formal execution contract before release-candidate formation."
     },
     "publication_witness_task": {
       "role": "PUBLICATION_WITNESS_TASK",
-      "source_path": "Arvin-liu/1111:agent-results/IGNITION-20260822-135-publication-witness.json",
+      "source_path": "Arvin-liu/1111:agent-results/IGNITION-20260823-136-publication-witness.json",
       "json_pointer": "/task_id",
       "authority": "CONTROL_REPOSITORY_RECEIPT",
       "semantic": "Control-repository task responsible for observation-time remote-ref publication evidence; it grants no architecture authority."

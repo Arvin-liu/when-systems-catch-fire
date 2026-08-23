@@ -34,7 +34,7 @@ NATURAL_WINDOW_MIN_SECONDS = 4 * 60 * 60
 TEST_DISCOVERY_ARGS = ("-m", "unittest", "discover", "-s", "tests", "-p", "test*.py")
 VERSION_IMPORTS = {"sympy": "sympy", "z3-solver": "z3", "jsonschema": "jsonschema"}
 FOUNDATION_PYTHON_ENV_VAR = "IGNITION_FOUNDATION_PYTHON"
-ISOLATED_ENV_PREFIX = "ignition-135-foundation-"
+ISOLATED_ENV_PREFIX = "ignition-136-foundation-"
 RAN_RE = re.compile(r"Ran\s+(\d+)\s+tests?\s+in\s+([0-9.]+)s")
 FAILURE_RE = re.compile(r"failures=(\d+)")
 ERROR_RE = re.compile(r"errors=(\d+)")
@@ -509,7 +509,7 @@ def run_full_regression(
 def contract_summary() -> dict[str, Any]:
     return {
         "schema_version": "ignition-full-regression-runner-r1",
-        "task_id": "IGNITION-20260822-135",
+        "task_id": "IGNITION-20260823-136",
         "runner": relative_to_repo(HERE),
         "repository_root_discovery": "script_path_then_git_toplevel; never cwd-derived",
         "application_root": "ignition",

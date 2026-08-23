@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed ordinal binding for the Task135 release transaction.
+"""Fail-closed ordinal binding for the current release transaction.
 
 Task identity is read from canonical records and ordinals are always derived
 with ``task_identity.parse_task_id``.  The gate deliberately keeps the latest
@@ -25,19 +25,19 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-CONTRACT_PATH = ROOT / "data/operations/iterations/135/execution-contract-r1.json"
+CONTRACT_PATH = ROOT / "data/operations/iterations/136/execution-contract-r1.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SNAPSHOT_PATH = ROOT / "data/operations/current-snapshot-r1.json"
 FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 SEMANTICS_PATH = ROOT / "data/operations/iteration-boundary-semantics-r1.json"
-FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260822-135-result.md"
-MACHINE_RECEIPT_PATH = ROOT / "agent-results/IGNITION-20260822-135-machine-receipt.json"
-REPORT_PATH = ROOT / "data/operations/iterations/135/step15-ordinal-binding-gate-r1.json"
-SCHEMA_PATH = ROOT / "schemas/operations/ordinal-binding-gate-135-step15-r1.schema.json"
+FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260823-136-result.md"
+MACHINE_RECEIPT_PATH = ROOT / "agent-results/IGNITION-20260823-136-machine-receipt.json"
+REPORT_PATH = ROOT / "data/operations/iterations/136/step16-ordinal-binding-gate-r1.json"
+SCHEMA_PATH = ROOT / "schemas/operations/ordinal-binding-gate-136-step16-r1.schema.json"
 
-EXPECTED_TASK_ID = "IGNITION-20260822-135"
-EXPECTED_ARCHITECTURE_TASK = "IGNITION-20260821-129"
+EXPECTED_TASK_ID = "IGNITION-20260823-136"
+EXPECTED_ARCHITECTURE_TASK = "IGNITION-20260823-136"
 ALIAS_SEMANTICS = "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"
 FORMAL_ROLES = (
     "execution_contract_task",
@@ -195,6 +195,7 @@ def validate_binding_chain(
     expected_task_id: str = EXPECTED_TASK_ID,
     expected_architecture_task: str = EXPECTED_ARCHITECTURE_TASK,
     require_terminal_evidence: bool = False,
+    allow_architecture_task_equal_formal: bool = False,
 ) -> list[str]:
     """Validate normalized role records; used by the CLI and adversarial tests."""
 
@@ -254,7 +255,7 @@ def validate_binding_chain(
             else:
                 if expected_architecture and parsed_architecture["canonical"] != expected_architecture["canonical"]:
                     errors.append(f"ARCHITECTURE_TASK_MISMATCH:{role}:expected={expected_architecture['canonical']}:observed={parsed_architecture['canonical']}")
-                if parsed_architecture["canonical"] == expected_task_id:
+                if parsed_architecture["canonical"] == expected_task_id and not allow_architecture_task_equal_formal:
                     errors.append(f"ARCHITECTURE_TASK_PROMOTED_TO_FORMAL:{role}")
                 if architecture_ordinal is not None and architecture_ordinal != parsed_architecture["ordinal"]:
                     errors.append(f"ARCHITECTURE_ORDINAL_MISMATCH:{role}:expected={parsed_architecture['ordinal']}:observed={architecture_ordinal}")
@@ -389,6 +390,7 @@ def validate_documents(
         expected_task_id=contract.get("identity_expectations", {}).get("current_formal_task", EXPECTED_TASK_ID),
         expected_architecture_task=contract.get("identity_expectations", {}).get("latest_architecture_changing_task", EXPECTED_ARCHITECTURE_TASK),
         require_terminal_evidence=require_terminal_evidence,
+        allow_architecture_task_equal_formal=contract.get("identity_impact") == "ARCHITECTURE_CHANGED",
     )
     if facts is not None:
         expected_task_id = contract.get("identity_expectations", {}).get("current_formal_task", EXPECTED_TASK_ID)
@@ -419,9 +421,9 @@ def report(*, require_terminal_evidence: bool = False) -> dict[str, Any]:
     pending = pending_roles(records)
     status = "FAIL" if errors else ("PASS" if not pending else "PASS_WITH_PENDING_TERMINAL_EVIDENCE")
     return {
-        "schema_version": "ignition-135-step15-ordinal-binding-gate-r1",
+        "schema_version": "ignition-136-step16-ordinal-binding-gate-r1",
         "task_id": EXPECTED_TASK_ID,
-        "step": "15",
+        "step": "16",
         "result": status,
         "binding_chain": records,
         "pending_terminal_roles": pending,

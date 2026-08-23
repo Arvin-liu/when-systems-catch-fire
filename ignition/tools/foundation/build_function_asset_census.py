@@ -112,8 +112,12 @@ GENERATED_EXACT_PATHS = {
     # census through receipt self-reference.
     "agent-results/IGNITION-20260822-135-result.md",
     "agent-results/IGNITION-20260822-135-machine-receipt.json",
+    "agent-results/IGNITION-20260823-136-result.md",
+    "agent-results/IGNITION-20260823-136-machine-receipt.json",
     "data/operations/iterations/135/step16-projection-preflight.json",
     "data/operations/iterations/135/step02-projection-preflight.json",
+    "data/operations/iterations/136/step16-projection-preflight.json",
+    "data/operations/iterations/136/step17-post-publication-task-binding-report.json",
     "data/operations/propagation/108-impact/system-map-nonimpact-proof.json",
     "docs/operations/lifecycle-readme.md",
     "reports/operations/lifecycle-audit-108.md",

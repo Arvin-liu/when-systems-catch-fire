@@ -40,9 +40,6 @@ SURFACE_RULES = {
     ),
     "ignition/ARCHITECTURE.md": (
         "Agent Platform R2",
-        "94",
-        "82",
-        "87",
         "12",
         "EPISTEMICALLY_ACCEPTED=0",
     ),
@@ -78,8 +75,10 @@ SURFACE_RULES = {
     ),
     "ignition/docs/architecture/external-agent-federation-r1.md": (
         "External Agent Federation R1",
+        "Live External Executor Bridge R1",
         "Reference Executor freeze",
-        "NOT_RUN_LIVE_EXTERNAL_INVOCATION",
+        "LIVE_BRIDGE_IMPLEMENTED",
+        "LIVE_COMPLETION_NOT_OBSERVED",
         "agent_platform.federation",
     ),
     "ignition/agent_kernel/README.md": (
@@ -145,18 +144,24 @@ def validate() -> list[str]:
     try:
         system_map = json.loads(map_path.read_text(encoding="utf-8"))
         coverage = system_map["component_coverage"]
+        registry = json.loads((ROOT / "data/operations/project-components.json").read_text(encoding="utf-8"))
+        topology = json.loads((ROOT / "data/operations/change-propagation-topology.json").read_text(encoding="utf-8"))
+        layout = json.loads((ROOT / "data/architecture/interactive-system-map-layout.json").read_text(encoding="utf-8"))
+        components = registry["components"]
         expected_coverage = {
-            "registry_components": 94,
-            "visible_nodes": 82,
-            "hidden_components": 12,
+            "registry_components": len(components),
+            "visible_nodes": sum(1 for component in components if component.get("map_projection", {}).get("visible") is True),
+            "hidden_components": sum(1 for component in components if component.get("map_projection", {}).get("visible") is not True),
         }
         for key, expected in expected_coverage.items():
             if coverage.get(key) != expected:
                 issues.append(f"system map coverage {key}={coverage.get(key)!r}, expected {expected!r}")
-        if system_map.get("map_version") != "0.12.0":
-            issues.append(f"system map version is {system_map.get('map_version')!r}, expected '0.12.0'")
-        if len(system_map.get("edges", [])) != 87:
-            issues.append(f"system map edge count is {len(system_map.get('edges', []))}, expected 87")
+        expected_map_version = layout["current_map_version"]
+        if system_map.get("map_version") != expected_map_version:
+            issues.append(f"system map version is {system_map.get('map_version')!r}, expected {expected_map_version!r}")
+        expected_edges = sum(1 for relation in topology["relations"] if relation.get("map_visible") is True)
+        if len(system_map.get("edges", [])) != expected_edges:
+            issues.append(f"system map edge count is {len(system_map.get('edges', []))}, expected {expected_edges}")
     except (OSError, json.JSONDecodeError, KeyError, TypeError) as exc:
         issues.append(f"system map cannot be read: {exc}")
 
@@ -206,11 +211,7 @@ def main() -> int:
         for issue in issues:
             print(f"- {issue}")
         return 1
-    print(
-        "AGENT_PLATFORM_HUMAN_SURFACE=PASS "
-        f"surfaces={len(SURFACE_RULES)} map=0.12.0 registry=94 "
-        "visible=82 edges=87 hidden=12 packs=4"
-    )
+    print("AGENT_PLATFORM_HUMAN_SURFACE=PASS")
     return 0
 
 

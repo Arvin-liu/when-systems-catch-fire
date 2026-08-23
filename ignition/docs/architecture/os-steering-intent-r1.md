@@ -26,6 +26,16 @@ Steering records inherit the existing namespace boundary. Cross-namespace access
 
 Federation receives an `IntentCapsule`, not the canonical registry. The capsule includes bounded summaries, success criteria, permission ceilings, blockers, temporal references, a report contract, and minimal context references. Its digest and `OS_CANONICAL_EXECUTOR_REPORT_ONLY` boundary make executor mutation of canonical steering state impossible by contract.
 
+### Live bridge handoff
+
+Task 136 consumes the bounded capsule through the OS-owned Live External
+Executor Bridge. The bridge carries only the synthetic/read-only intent,
+capability lease and report contract needed for the disposable dispatch; it
+does not carry private session state, channel/browser authority, remote Git,
+configuration or billing authority. A timeout or unknown external effect stops
+at reconciliation and never becomes Goal completion; an executor PASS remains
+RETURNED_UNVALIDATED until independent OS validation.
+
 ## Priority and arbitration
 
 Priority is an ordered tuple of explicit rules: eligibility/permission, active Owner override, Owner rank, commitment state, temporal state, dependency criticality, risk, and bounded fairness age. A telemetry score may be emitted for inspection, but it is not authoritative and cannot override permission, safety, blocked, stale, superseded, or executor-unavailable state.

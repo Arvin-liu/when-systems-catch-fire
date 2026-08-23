@@ -57,6 +57,16 @@ FALLBACK_MINIMAL`. Live external invocation may remain `SKIPPED` when the
 safety boundary cannot be satisfied. `CURRENT_WITH_OPEN_OBLIGATIONS` and
 `EPISTEMICALLY_ACCEPTED=0` remain separate.
 
+Task 136 adds the OS-owned Live External Executor Bridge R1. Keep its
+dispatch envelope, capability lease, bounded read-only transport, receipt,
+timeout/cancel and reconciliation separate from every executor's provider,
+channel, browser, remote Git, configuration, billing and completion authority.
+The synthetic Hermes pilot timed out with unknown effect and remains open for
+reconciliation; OpenClaw was not attempted because its installed surface could
+not prove the disposable/read-only/channel-off boundary. The exact current
+claim is LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED, and
+LIVE_EXTERNAL_INVOCATION remains open.
+
 For Q32I profiles, keep authority, execution capability and validation capability separate. Manual or external validation must not invoke a local validator. A local `validator_argv` is permitted only when it is complete, exists, runs successfully and validates the declared component responsibility. Never substitute the incomplete generic `python3 ignition/tools/validate_protocol_canonical.py --check` command.
 
 Tests, CI, cache and artifacts are repository evidence only. They do not perform independent review, merge a PR, establish Current state or prove real-world truth or causality.

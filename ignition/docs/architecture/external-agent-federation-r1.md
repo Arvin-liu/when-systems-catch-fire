@@ -8,7 +8,7 @@ Agent 的运行时。
 本页与 [`CURRENT_STATE_SYNC_INVARIANT`](../governance/current-state-sync-invariant.md)
 的当前身份保持一致：点火是 driver / orchestration-governance layer，Knowledge
 是第一个大型 Domain Pack，默认决策是 integrate 而不是重造。当前计数、地图版本
-`0.12.0`（`0.11.0` Historical、`0.10.0` 更早 Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
+`0.13.0`（`0.12.0` Historical、`0.11.0` 更早 Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
 为准；真实 live invocation 仍可在安全边界无法满足时明确 `SKIPPED`。
 
 Task 126 的 Structural Governance Surface 是 Federation 可选择读取的 advisory
@@ -154,6 +154,32 @@ disposable local workspace; both hit the hard timeout and are recorded as
 independent OS fixture validator passed, but no vendor completion was promoted
 to an OS terminal state; prompts, tokens, credentials, provider telemetry and
 private session state were not retained.
+
+## Live External Executor Bridge R1
+
+Task 136 adds the OS-owned live bridge that turns the Federation contract into a
+bounded, provider-neutral dispatch boundary. The bridge owns the
+LiveDispatchEnvelope, LiveCapabilityLease, literal-process transport,
+strict LiveExecutorReceipt, independent fixture validation, timeout/cancel
+handling and conservative reconciliation. It does not own an executor's
+provider, channel, browser, remote Git, configuration, billing or completion
+authority.
+
+The live pilot remained synthetic, disposable and read-only: no message/channel,
+browser, remote Git, executor configuration or new billing was permitted. Step
+11 admitted Codex and Hermes to the preflight inventory, while OpenClaw was
+skipped because the installed Gateway/agent surface could not prove all three
+required boundaries: disposable workspace binding, an explicit read-only
+permission ceiling and channel-off operation. Step 13 made one bounded Hermes
+attempt; the process timed out with TIMED_OUT_EFFECT_UNKNOWN, cancellation
+and reconciliation remained open, and the fixture was unchanged. No retry or
+private-session propagation occurred.
+
+Therefore the current bridge claim is exactly
+LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED; the
+LIVE_EXTERNAL_INVOCATION obligation remains open. An executor-reported PASS,
+if ever returned, would still enter RETURNED_UNVALIDATED until the
+independent OS validator accepts it.
 
 ## Disposable pilot boundary
 
