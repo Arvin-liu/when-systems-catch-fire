@@ -1,0 +1,69 @@
+{
+  "schema_version": "ignition-136-step11-live-preflight-r1",
+  "task_id": "IGNITION-20260823-136",
+  "step": "11",
+  "probe_mode": "version-and-public-help-only; no inference, no channel, no secret reads",
+  "no_new_billing_authority": true,
+  "selection": {
+    "selected_executor_id": "external.hermes",
+    "reason": "preferred bounded one-shot executor; selection is policy/request based, not intelligence ranking",
+    "estimated_total_initial_invocations": 2,
+    "retry_policy": "NO_BLIND_RETRY"
+  },
+  "entries": [
+    {
+      "executor_id": "external.codex",
+      "adapter_id": "codex-live-r2",
+      "version": "codex-cli 0.144.4",
+      "eligibility": "ELIGIBLE_FOR_LIVE_READONLY",
+      "blockers": [],
+      "binary_digest": "26da0938fdcecf87566fb8e97b8cd496e9f63d901d50d8e5f74dd00d06c8df0a",
+      "interface_digest": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+      "workspace_semantics": "EXPLICIT_DISPOSABLE_READ_ONLY_CWD",
+      "structured_output_semantics": "JSONL_PUBLIC_EVENTS",
+      "auth_observed": true,
+      "read_only_guard_observed": true,
+      "argv_shape": ["codex", "exec", "--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--sandbox", "read-only", "--cd", "<DISPOSABLE_WORKSPACE>", "<SYNTHETIC_PROMPT>"],
+      "estimated_initial_invocations": 1
+    },
+    {
+      "executor_id": "external.hermes",
+      "adapter_id": "hermes-live-r2",
+      "version": "Hermes Agent v0.20.0 (2026.8.3) Install directory: <HOME_PRIVATE_PATH> Python: 3.11.15 OpenAI SDK: 2.24.0 Run 'hermes version' for update status.",
+      "eligibility": "ELIGIBLE_FOR_LIVE_READONLY",
+      "blockers": [],
+      "binary_digest": "2fe3eaba9696faea508414dc70f62a7daac10176b12514df76ce61d9cc8da3d3",
+      "interface_digest": "0fdcfd5b047316e2fbef3873d90dd59c22f06e91fdfa5ae5bae088d83bb2094b",
+      "workspace_semantics": "EXPLICIT_DISPOSABLE_CWD_WITH_READ_ONLY_FILESYSTEM_GUARD",
+      "structured_output_semantics": "BOUNDED_SINGLE_JSON_TEXT_OBJECT",
+      "auth_observed": true,
+      "read_only_guard_observed": true,
+      "argv_shape": ["hermes", "--safe-mode", "--ignore-user-config", "--ignore-rules", "--no-restore-cwd", "--provider", "openai-codex", "--model", "gpt-5.6-luna", "--reasoning", "low", "-z", "<SYNTHETIC_PROMPT>"],
+      "estimated_initial_invocations": 1
+    },
+    {
+      "executor_id": "external.openclaw",
+      "adapter_id": "openclaw-live-r2",
+      "version": "OpenClaw 2026.7.1-2 (0790d9f)",
+      "eligibility": "SKIPPED_UNSAFE_WORKSPACE_OR_CHANNEL_BOUNDARY",
+      "blockers": ["MISSING_PUBLIC_DISPOSABLE_WORKSPACE_BINDING", "GATEWAY_OR_LOCAL_AGENT_SESSION_SURFACE_NOT_CHANNEL_OFF_PROVABLE", "NO_EXPLICIT_READ_ONLY_PERMISSION_CEILING", "MESSAGE_AND_CHANNEL_OPTIONS_PRESENT_IN_PUBLIC_AGENT_SURFACE"],
+      "binary_digest": "ca76e76571fc7811c297e483e2951074e10f5ac59a9929d3528785ce7050887e",
+      "interface_digest": "b436caaa7b5712b3f596a4f7cd8c3f0f327edee2d240323cf7c7a532b09fc1f8",
+      "workspace_semantics": "GATEWAY_OWNED_OR_CONFIGURED_WORKSPACE_NOT_DISPOSABLE",
+      "structured_output_semantics": "JSON_RESULT_ADVERTISED_BUT_BINDING_UNSAFE",
+      "auth_observed": false,
+      "read_only_guard_observed": true,
+      "argv_shape": ["PROBE_ONLY"],
+      "estimated_initial_invocations": 0
+    }
+  ],
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_preflight -v plus actual version/help probes",
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Current public preflight and eligibility evidence only; eligible means permitted to attempt bounded live dispatch, not completion or external truth."
+}
