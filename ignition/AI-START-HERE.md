@@ -29,7 +29,7 @@ Steering / Intent / Goal / Obligation R1 记录 Owner/提议来源、Goal 生命
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260823-136` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b07c6f7503d901aec6e4da31cc094168a3d1843d03bdc63f8007d5771f793fad`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `de548ea1bf0003a53ee1cfc1a0740dfa845ace9ac96eb5af8fcb64b6f5b9096c`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
