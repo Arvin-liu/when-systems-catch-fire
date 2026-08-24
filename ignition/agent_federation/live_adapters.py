@@ -11,7 +11,25 @@ from typing import Any, Mapping, Sequence
 from .contracts import FederationContractError, canonical_json
 from .live_child_guard import CHILD_ENV_ALLOWLIST, LiveChildContext, LiveChildGuardError, build_synthetic_child_prompt
 from .live_bridge import LiveCapabilityLease, LiveDispatchEnvelope
-from .live_transport import LiveProcessResult, LiveProcessTransport, LiveTransportError, interface_digest, parse_bounded_jsonl
+from .live_filesystem import (
+    AUTH_SOURCE_MODE,
+    PATH_ASSERTION_KEYS,
+    RUNTIME_ENV_REDACTION_POLICY,
+    RUNTIME_SCRATCH_CLEANUP_POLICY,
+    RUNTIME_SCRATCH_MODE,
+    TASK_WORKSPACE_MODE,
+    ExecutionFilesystemDomains,
+)
+from .live_pilot import tree_digest
+from .live_transport import (
+    LiveProcessResult,
+    LiveProcessTransport,
+    LiveTransportError,
+    RuntimeScratchLease,
+    RUNTIME_SCRATCH_CLEANED,
+    interface_digest,
+    parse_bounded_jsonl,
+)
 
 
 class LiveAdapterError(FederationContractError):
@@ -31,6 +49,8 @@ class LiveAdapterObservation:
     summary: str
     response_digest: str | None
     session_pointer: str | None
+    runtime_scratch_receipt: Mapping[str, Any] | None = None
+    runtime_scratch_cleanup_status: str = "NOT_USED"
 
 
 def _response_digest(text: str) -> str | None:
@@ -63,7 +83,7 @@ def _binary_digest(executable: str, version: str) -> str:
 
 
 class LiveCodexAdapter:
-    """R2 adapter for Codex's current public JSONL read-only exec surface."""
+    """Bounded Codex JSONL read-only adapter with optional R3 scratch separation."""
 
     executor_id = "external.codex"
     family = "Codex CLI"
@@ -77,6 +97,12 @@ class LiveCodexAdapter:
         authentication_observed: bool = False,
         adapter_id: str = "codex-live-r2",
         child_context: LiveChildContext | None = None,
+        runtime_scratch_required: bool | None = None,
+        runtime_scratch_parent: str | Path | None = None,
+        formal_repo: str | Path | None = None,
+        control_repo: str | Path | None = None,
+        persistent_user_document_roots: Sequence[str | Path] | None = None,
+        auth_source_ref: str = "auth://existing-public-login-state",
     ) -> None:
         root = Path(workspace)
         if not root.is_absolute() or not root.is_dir():
@@ -89,10 +115,42 @@ class LiveCodexAdapter:
         self.authentication_observed = authentication_observed
         self.adapter_id = adapter_id
         self.child_context = child_context or LiveChildContext.from_environment()
+        self.runtime_scratch_required = adapter_id == "codex-live-r3" if runtime_scratch_required is None else runtime_scratch_required
+        if not isinstance(self.runtime_scratch_required, bool):
+            raise LiveAdapterError("runtime_scratch_required must be boolean")
+        self.runtime_scratch_parent = Path(runtime_scratch_parent).absolute() if runtime_scratch_parent is not None else None
+        if self.runtime_scratch_parent is not None and (not self.runtime_scratch_parent.is_absolute() or not self.runtime_scratch_parent.is_dir()):
+            raise LiveAdapterError("runtime scratch parent must be an existing absolute directory")
+        self.formal_repo = Path(formal_repo or Path(__file__).resolve().parents[2]).resolve()
+        self.control_repo = Path(control_repo or "/Users/zhiyuan/Agent 工作区/1111-sync").resolve()
+        roots = persistent_user_document_roots
+        if roots is None:
+            candidates = (Path.home() / "Documents", Path.home() / "我的笔记", Path.home())
+            roots = tuple(path for path in candidates if path.is_dir())[:2]
+        self.persistent_user_document_roots = tuple(Path(path).resolve() for path in roots)
+        if not self.persistent_user_document_roots:
+            raise LiveAdapterError("persistent user document roots must contain an existing directory")
+        self.auth_source_ref = auth_source_ref
+        self.last_filesystem_domains: ExecutionFilesystemDomains | None = None
         self._probe_cache: tuple[LiveProcessResult, LiveProcessResult] | None = None
 
-    def _run(self, argv: Sequence[str], timeout_seconds: float = 5, *, env_overrides: Mapping[str, str] | None = None) -> LiveProcessResult:
+    def _run(
+        self,
+        argv: Sequence[str],
+        timeout_seconds: float = 5,
+        *,
+        env_overrides: Mapping[str, str] | None = None,
+        runtime_scratch: RuntimeScratchLease | None = None,
+        runtime_env_keys: Sequence[str] = (),
+    ) -> LiveProcessResult:
         try:
+            if runtime_scratch is not None:
+                if not getattr(self.transport, "supports_runtime_scratch", False):
+                    raise LiveAdapterError("Codex R3 requires a transport with runtime scratch lifecycle support")
+                return self.transport.run(
+                    argv, cwd=self.workspace, timeout_seconds=timeout_seconds, env_overrides=env_overrides,
+                    runtime_scratch=runtime_scratch, runtime_env_keys=runtime_env_keys,
+                )
             return self.transport.run(argv, cwd=self.workspace, timeout_seconds=timeout_seconds, env_overrides=env_overrides)
         except (OSError, LiveTransportError) as exc:
             raise LiveAdapterError(f"Codex public process probe failed: {type(exc).__name__}") from exc
@@ -104,6 +162,63 @@ class LiveCodexAdapter:
                 self._run((self.executable, "exec", "--help")),
             )
         return self._probe_cache
+
+    def _protected_roots(self) -> tuple[Path, ...]:
+        roots = [self.workspace, self.formal_repo, self.control_repo, *self.persistent_user_document_roots]
+        if not self.auth_source_ref.startswith("auth://"):
+            roots.append(Path(self.auth_source_ref))
+        return tuple(path.resolve() for path in roots)
+
+    def _new_runtime_scratch(self, attempt_id: str) -> RuntimeScratchLease:
+        try:
+            return RuntimeScratchLease.create(
+                attempt_id=attempt_id,
+                parent=self.runtime_scratch_parent,
+                protected_roots=self._protected_roots(),
+            )
+        except (OSError, LiveTransportError) as exc:
+            raise LiveAdapterError(f"Codex runtime scratch could not be created: {type(exc).__name__}") from exc
+
+    def _filesystem_domains(
+        self,
+        scratch: RuntimeScratchLease,
+        *,
+        workspace_before: str,
+        workspace_after: str,
+        scratch_after: str,
+        validate_paths: bool,
+    ) -> ExecutionFilesystemDomains:
+        contract = ExecutionFilesystemDomains(
+            task_workspace_ref=str(self.workspace.resolve()),
+            task_workspace_mode=TASK_WORKSPACE_MODE,
+            task_workspace_digest_before=workspace_before,
+            task_workspace_digest_after=workspace_after,
+            runtime_scratch_ref=str(scratch.path.resolve()),
+            runtime_scratch_mode=RUNTIME_SCRATCH_MODE,
+            runtime_scratch_owner=scratch.owner,
+            runtime_scratch_ttl=scratch.ttl_seconds,
+            runtime_scratch_cleanup_policy=RUNTIME_SCRATCH_CLEANUP_POLICY,
+            runtime_scratch_digest_before=scratch.before_digest,
+            runtime_scratch_digest_after=scratch_after,
+            auth_source_ref=self.auth_source_ref,
+            auth_source_mode=AUTH_SOURCE_MODE,
+            auth_source_content_read=False,
+            config_mutation_allowed=False,
+            runtime_env_allowlist=tuple(CHILD_ENV_ALLOWLIST),
+            runtime_env_redaction_policy=RUNTIME_ENV_REDACTION_POLICY,
+            path_non_overlap_assertions={key: True for key in PATH_ASSERTION_KEYS},
+            permission_non_escalation_assertion=True,
+            runtime_scratch_persistence_declared=True,
+            secret_materialization=False,
+            unknown_filesystem_domains=(),
+            formal_repo_ref=str(self.formal_repo),
+            control_repo_ref=str(self.control_repo),
+            persistent_user_document_roots=tuple(str(path) for path in self.persistent_user_document_roots),
+        )
+        try:
+            return contract.validate_paths() if validate_paths else contract
+        except FederationContractError as exc:
+            raise LiveAdapterError(f"Codex filesystem domain contract failed: {exc}") from exc
 
     def observe_lease(self, *, lease_id: str, observed_at: str, expires_at: str, ttl_seconds: float) -> LiveCapabilityLease:
         version_result, help_result = self._probe()
@@ -126,10 +241,14 @@ class LiveCodexAdapter:
             binary_digest=_binary_digest(self.executable, version), interface_digest=interface_digest(help_text),
             observed_capabilities=("repo.read", "structured_progress") if not missing else ("repo.read",),
             forbidden_capabilities=("repo.write", "repo.test", "terminal.run", "browser.read", "browser.act", "web.read", "messaging.send", "subagents", "scheduler"),
-            unknown_capabilities=(), workspace_semantics="EXPLICIT_DISPOSABLE_READ_ONLY_CWD",
+            unknown_capabilities=(), workspace_semantics=(
+                "EXPLICIT_DISPOSABLE_READ_ONLY_CWD_WITH_ATTEMPT_RUNTIME_SCRATCH"
+                if self.runtime_scratch_required else "EXPLICIT_DISPOSABLE_READ_ONLY_CWD"
+            ),
             approval_sandbox_semantics="CODEX_READ_ONLY_EPHEMERAL_IGNORE_USER_CONFIG_AND_RULES",
             structured_output_semantics="JSONL_PUBLIC_EVENTS_AND_OUTPUT_SCHEMA", timeout_supported=True, cancel_supported=True,
-            resume_supported=False, live_eligibility=eligibility, eligibility_blockers=tuple(blockers), source="codex-public-cli-probe-r3",
+            resume_supported=False, live_eligibility=eligibility, eligibility_blockers=tuple(blockers),
+            source="codex-public-cli-probe-r3-runtime-scratch" if self.runtime_scratch_required else "codex-public-cli-probe-r3",
         )
 
     def build_argv(self, envelope: LiveDispatchEnvelope) -> tuple[str, ...]:
@@ -191,11 +310,78 @@ class LiveCodexAdapter:
             child_env = child.child_environment()
         except LiveChildGuardError as exc:
             raise LiveAdapterError(str(exc)) from exc
-        process = self._run(argv, timeout_seconds=envelope.timeout_seconds, env_overrides=child_env)
+        runtime_scratch: RuntimeScratchLease | None = None
+        runtime_env_keys: tuple[str, ...] = ()
+        workspace_before: str | None = None
+        if self.runtime_scratch_required:
+            workspace_before = tree_digest(self.workspace)
+            runtime_scratch = self._new_runtime_scratch(envelope.attempt_id)
+            try:
+                runtime_env_keys = (
+                    "HOME", "TMPDIR", "CODEX_HOME", "XDG_CACHE_HOME", "XDG_CONFIG_HOME", "XDG_RUNTIME_DIR",
+                )
+                child_env.update(runtime_scratch.environment_overrides(runtime_env_keys))
+                self._filesystem_domains(
+                    runtime_scratch,
+                    workspace_before=workspace_before,
+                    workspace_after=workspace_before,
+                    scratch_after=runtime_scratch.before_digest,
+                    validate_paths=True,
+                )
+            except (OSError, LiveTransportError, LiveAdapterError) as exc:
+                cleanup_status = runtime_scratch.cleanup()
+                if cleanup_status != RUNTIME_SCRATCH_CLEANED:
+                    raise LiveAdapterError("Codex runtime scratch preflight failed and cleanup was not proven") from exc
+                raise
+        try:
+            process = self._run(
+                argv,
+                timeout_seconds=envelope.timeout_seconds,
+                env_overrides=child_env,
+                runtime_scratch=runtime_scratch,
+                runtime_env_keys=runtime_env_keys,
+            )
+        except Exception:
+            if runtime_scratch is not None and runtime_scratch.cleanup_status is None:
+                runtime_scratch.cleanup()
+            raise
+        runtime_receipt = process.runtime_scratch_receipt
+        runtime_cleanup_status = process.runtime_scratch_cleanup_status
+        if runtime_scratch is not None:
+            if not isinstance(runtime_receipt, Mapping):
+                if runtime_scratch.cleanup_status is None:
+                    runtime_scratch.cleanup()
+                raise LiveAdapterError("Codex R3 process returned no runtime scratch receipt")
+            if (
+                runtime_receipt.get("runtime_scratch_ref") != "ATTEMPT_RUNTIME_SCRATCH"
+                or runtime_receipt.get("attempt_id") != envelope.attempt_id
+                or runtime_receipt.get("digest_before") != runtime_scratch.before_digest
+                or runtime_receipt.get("cleanup_status") != RUNTIME_SCRATCH_CLEANED
+                or runtime_receipt.get("content_persisted") is not False
+                or runtime_cleanup_status != RUNTIME_SCRATCH_CLEANED
+            ):
+                raise LiveAdapterError("Codex R3 runtime scratch receipt did not prove clean ephemeral completion")
+            scratch_after = runtime_receipt.get("digest_after")
+            if not isinstance(scratch_after, str):
+                raise LiveAdapterError("Codex R3 runtime scratch receipt omitted the metadata digest")
+            workspace_after = tree_digest(self.workspace)
+            assert workspace_before is not None
+            self.last_filesystem_domains = self._filesystem_domains(
+                runtime_scratch,
+                workspace_before=workspace_before,
+                workspace_after=workspace_after,
+                scratch_after=scratch_after,
+                validate_paths=False,
+            )
         events: tuple[Mapping[str, Any], ...] = ()
         parsed = False
         parse_error = ""
-        if not process.timed_out and not process.output_truncated and process.stdout.strip():
+        if (
+            not process.timed_out
+            and not process.output_truncated
+            and process.stdout.strip()
+            and (runtime_scratch is None or runtime_cleanup_status == RUNTIME_SCRATCH_CLEANED)
+        ):
             try:
                 events = parse_bounded_jsonl(process.stdout)
                 parsed = True
@@ -207,6 +393,7 @@ class LiveCodexAdapter:
             self._probe()[1].stdout and interface_digest(self._probe()[1].stdout) or interface_digest(self._probe()[1].stderr),
             process, events, parsed, parse_error, _summary(process.stdout or process.stderr),
             _response_digest(process.stdout), _session_pointer(events),
+            runtime_receipt, runtime_cleanup_status,
         )
 
 

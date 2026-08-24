@@ -370,6 +370,8 @@ def _wall_clock_order(started_at: str, ended_at: str) -> str:
 class LiveProcessTransport:
     """Run exactly one bounded public process with an explicit cwd and env."""
 
+    supports_runtime_scratch = True
+
     def __init__(
         self,
         *,

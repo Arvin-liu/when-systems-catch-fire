@@ -12,7 +12,10 @@ from .contracts import FederationContractError, canonical_json
 
 LIVE_CHILD_DEPTH_ENV = "POINTFIRE_LIVE_CHILD_DEPTH"
 MAX_LIVE_CHILD_DEPTH = 1
-CHILD_ENV_ALLOWLIST = ("PATH", "LANG", "LC_ALL", "TMPDIR", "HOME", "CODEX_HOME", LIVE_CHILD_DEPTH_ENV)
+CHILD_ENV_ALLOWLIST = (
+    "PATH", "LANG", "LC_ALL", "TMPDIR", "HOME", "CODEX_HOME",
+    "XDG_CACHE_HOME", "XDG_CONFIG_HOME", "XDG_RUNTIME_DIR", LIVE_CHILD_DEPTH_ENV,
+)
 
 
 class LiveChildGuardError(FederationContractError):
