@@ -13,17 +13,17 @@
 点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；它是长期状态、价值、任务、权限、记忆、验证和 executor 协同的 OS / orchestration-governance layer。OpenClaw、Hermes、Codex 是可替换执行器，不是点火的替代系统；知识治理是第一个大型 Domain Pack，而不是整个系统本体。仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)、[OS Control Plane R2](../ignition/docs/architecture/os-control-plane-r2.md)、[External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。Durability / Lifecycle 负责 repository-local snapshot、migration、namespace、Pack lifecycle、revocation、accounting、recovery 和 DR continuity；不建立第二张图，也不自动重放不确定外部副作用。Structural Governance Surface 是 advisory cross-cutting overlay：只提供阅读与实验上下文，不改变 capability、permission 或 epistemic status，也不增加 L7。Current Snapshot 与 Current Facts 负责易变版本、计数、任务、状态和 live ceiling；这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性。
 本地行动层保持 Reference / Conformance / Fallback 边界；外部 executor 不拥有 OS authority，Current Snapshot 也不把仓库投影升级为现实证明。
 
-任务身份分成两个稳定角色：Current formal task 表示最近哪一轮正式任务正在或刚刚成为 Current；另一个角色记录最近一次改变系统身份或架构的任务。二者允许不同，publication witness 只提供发布观察绑定，不授予 architecture、Owner 或 epistemic authority。Task 137 的延续记录把 Current formal task 推进到 137，同时保留 Task 136 作为架构边界；这只反映状态与解释同步，不增加核心组件或地图关系。
+任务身份分成两个稳定角色：Current formal task 表示最近哪一轮正式任务正在或刚刚成为 Current；另一个角色记录最近一次改变系统身份或架构的任务。二者允许不同，publication witness 只提供发布观察绑定，不授予 architecture、Owner 或 epistemic authority。Task 138 的延续记录把 Current formal task 推进到 138，同时保留 Task 136 作为架构边界；它把任务工作区、执行器 runtime scratch 与 auth/config source 分域，但不增加核心组件或地图关系。
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
 - current_identity_epoch: `os-control-plane-r5-live-executor-federation-r2`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260824-137` (ordinal `137`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `137` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260824-137`。
-- release_lifecycle: task `IGNITION-20260824-137`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260824-138` (ordinal `138`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `138` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260824-138`。
+- release_lifecycle: task `IGNITION-20260824-138`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260824-137` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `c6339defcdc3cbe3d2e639d7e8c70da90bfb03c7e8d7d580f4eb59a203a6715d`。
+- task_lineage: current `IGNITION-20260824-138` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `2b6474e8cc3073806805b88a647fa795ceb59e0fdf3134d2794301a407c94e97`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -42,7 +42,7 @@ Current Snapshot 提供，不把历史记录重写为当前事实。
 - **为什么重要：** 行动、批准、恢复、记忆、Pack 路由和知识治理的职责被分开记录，Agent 可以提出和执行有界动作，但不能自行扩大权限、改写真值或替代 Owner。
 - **怎样使用：** 人类先读[十分钟阅读路线](../ignition/HUMAN-READING.md)与[当前结果](../ignition/RESULTS/LATEST.md)；Agent 先读[AI 冷启动](../ignition/AI-START-HERE.md)、[状态增量日志](../ignition/STATE-CHANGELOG.md)、[R2 架构契约](../ignition/docs/architecture/agent-platform-r2.md)和[联邦契约](../ignition/docs/architecture/external-agent-federation-r1.md)。
 - **它不能证明什么：** 通过测试、Pack 加载、checkpoint、pilot 或系统图，都不等于外部真值、现实因果、生产安全、Owner acceptance 或 epistemic acceptance。
-- **仍然开放：** live provider/inference、daemon、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内；Task 137 先把 Task 136 Hermes timeout 保持在 OPEN reconciliation，再用当前 Codex CLI 做了一次 synthetic/read-only 尝试，但启动阶段 failed closed、没有 exact public result，workspace 未变更，因此仍不是 validated live completion。
+- **仍然开放：** live provider/inference、daemon、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内；Task 138 保持 Task 136 Hermes timeout 的 OPEN reconciliation，并将 Codex 的任务工作区、短命 runtime scratch 和只读 auth/config reference 分开。第一次修复后 dispatch 仍在启动阶段 failed closed、没有 structured public result，workspace 未变更；第二次因 auth-source 只读边界不满足而禁止，因此仍不是 validated live completion。
 
 ## 2. 如何使用
 

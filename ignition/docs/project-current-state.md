@@ -4,13 +4,13 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
 - current_identity_epoch: `os-control-plane-r5-live-executor-federation-r2`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260824-137` (ordinal `137`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `137` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260824-137`。
-- release_lifecycle: task `IGNITION-20260824-137`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260824-138` (ordinal `138`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `138` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260824-138`。
+- release_lifecycle: task `IGNITION-20260824-138`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260824-137` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `c6339defcdc3cbe3d2e639d7e8c70da90bfb03c7e8d7d580f4eb59a203a6715d`。
+- task_lineage: current `IGNITION-20260824-138` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `2b6474e8cc3073806805b88a647fa795ceb59e0fdf3134d2794301a407c94e97`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -69,7 +69,7 @@ recovery evidence，不是 production durability、exact-once delivery、Owner a
 - 历史 Task 126 的 Structural Governance Surface 由候选 ESI、过渡语法、不越权合同和软上下文暴露合同共同限定；它是 advisory，不是权限、真值、Owner 或安全放行层。
 - 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
 - Steering / Intent / Goal / Obligation R1 已形成仓库本地可复算骨架：Intent Registry、Goal lifecycle、独立 Completion Contract、Commitment/Obligation Ledger、时间语义、长期 Goal graph、优先级与 conflict arbitration、DecisionTrace/why-next、Episode binding、drift/handoff guard、Memory/Profile boundary、Durability、namespace/delegation 与 federation Intent Capsule；这些记录不授予 Owner authority，也不把运行通过推断为完成。
-- R2/Federation conformance 仍以 disposable local fixture 为主；Task 137 对 Task 136 Hermes timeout 做了只读 reconciliation，确认历史 receipt 缺少可绑定的 attempt process 身份，因而保持 OPEN、没有 blind retry；随后重新观察当前 Codex CLI 并做了一次 synthetic/read-only 尝试，启动阶段 failed closed、没有 exact public result，fixture workspace 保持不变，独立 validator 没有被调用。当前 live provider/inference ceiling 仍未建立。
+- R2/Federation conformance 仍以 disposable local fixture 为主；Task 138 延续 Task 136/137 的 live completion obligation，确认 Hermes 历史 receipt 仍缺少可绑定的 attempt process 身份，因而保持 OPEN、没有 blind retry；本轮把 task workspace、executor runtime scratch、auth/config source 分成独立 filesystem domains。第一次修复后的 Codex synthetic/read-only dispatch 仍在启动阶段 failed closed、没有 structured public result，fixture workspace 保持不变，独立 validator 没有被调用；第二次真实调用因无法建立合规的只读 auth-source 路径而禁止。当前 live provider/inference ceiling 仍未建立。
 
 ## 当前限制与开放义务
 
@@ -177,6 +177,22 @@ process group 已确认退出、formal worktree 未变更。Pointfire 因而没�
 更没有写入 `COMPLETED_VALIDATED`。`LIVE_EXTERNAL_INVOCATION`、`CURRENT_WITH_OPEN_OBLIGATIONS`
 和 `EPISTEMICALLY_ACCEPTED=0` 都保持原状；不得把本次失败过程解释成成功、Goal completion、
 production readiness、Owner acceptance 或外部真值。
+
+## Task 138 executor runtime scratch separation continuation
+
+Task 138 没有新增持久核心组件、typed topology relation 或地图版本；因此 identity
+epoch、latest architecture-changing task=Task 136 和 map `0.13.0` 保持不变。它把
+task workspace、executor runtime scratch 与 auth/config source 分成三个独立域：任务工作区
+仍为 disposable read-only，runtime scratch 只允许 attempt-specific 的短命最小可写，已有
+登录状态只能作为 read-only reference，不能复制 secret、修改真实 config 或 billing。
+
+第一次修复后的真实 Codex dispatch 在启动阶段 failed closed，没有 structured public result；
+process group 已确认退出，fixture workspace digest 前后一致，runtime scratch 已清理，因而
+没有进入 independent validation。第二次调用没有被盲目重试：public CLI 的 auth/config 边界
+不能在不暴露真实登录域的前提下证明合规的 read-only reference，因此按硬门禁禁止。Hermes
+reconciliation、`LIVE_EXTERNAL_INVOCATION`、`CURRENT_WITH_OPEN_OBLIGATIONS` 和
+`EPISTEMICALLY_ACCEPTED=0` 都保持原状；这不是 validated live completion、production
+readiness、Owner acceptance 或外部真值。
 
 ## 历史快照（Historical, append-only context）
 

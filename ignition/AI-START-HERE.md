@@ -19,24 +19,27 @@ Steering / Intent / Goal / Obligation R1 记录 Owner/提议来源、Goal 生命
 
 任务身份分成两个稳定角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，publication witness 只观察发布身份，不授予 architecture 或 Owner authority。
 
-Task 137 是 Task 136 live bridge 的 reconciliation continuation，不是新的
-architecture-changing task：Task 136 Hermes timeout 仍是 `OPEN`，没有 blind
-retry；当前 Codex CLI 只完成了一次 synthetic/read-only startup attempt，因
-read-only HOME 下 helper 启动失败而 failed closed，没有 exact public result，fixture
-未变更，也没有进入独立 OS validation。因此 `LIVE_EXTERNAL_INVOCATION` 仍开放，不能
-把本轮写成 `COMPLETED_VALIDATED`、Goal completion 或外部真值。
+Task 138 是 Task 136/137 live bridge 的 runtime-scratch separation continuation，不是新的
+architecture-changing task：Task 136 Hermes timeout 仍是 `OPEN`，没有 blind retry。
+本轮把 task workspace、executor runtime scratch、auth/config source 三域分开：任务工作区
+仍为 disposable read-only，runtime scratch 仅是 attempt-specific 的短命可写空间，已有登录
+状态只允许 read-only reference。修复后的第一次 Codex bounded dispatch 仍在启动阶段失败，
+没有 structured public result，fixture 未变更，也没有进入独立 OS validation；第二次调用因
+无法在不暴露真实 auth/config 写域的前提下建立合规的只读 auth-source 路径而被硬门禁禁止。
+因此 `LIVE_EXTERNAL_INVOCATION` 仍开放，不能把本轮写成 `COMPLETED_VALIDATED`、Goal
+completion 或外部真值。
 
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r5-live-executor-federation-r2`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260824-137` (ordinal `137`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `137` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260824-137`。
-- release_lifecycle: task `IGNITION-20260824-137`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260824-138` (ordinal `138`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `138` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260824-138`。
+- release_lifecycle: task `IGNITION-20260824-138`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260824-137` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `c6339defcdc3cbe3d2e639d7e8c70da90bfb03c7e8d7d580f4eb59a203a6715d`。
+- task_lineage: current `IGNITION-20260824-138` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `2b6474e8cc3073806805b88a647fa795ceb59e0fdf3134d2794301a407c94e97`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 

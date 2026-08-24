@@ -1,31 +1,31 @@
 {
     "schema_version": "current-release-lifecycle-r1",
     "contract_id": "CURRENT_RELEASE_LIFECYCLE_REF_DERIVED_R1",
-  "task_id": "IGNITION-20260824-137",
-  "task_branch": "codex/ignition-137-validated-live-completion-reconciliation-r1-20260824",
+  "task_id": "IGNITION-20260824-138",
+  "task_branch": "codex/ignition-138-executor-runtime-scratch-live-codex-r1-20260824",
   "task_identity_source": {
     "current_formal_task_source": "ignition/data/operations/current-task-lineage-status.json#/task_identity/current_formal_task",
-    "execution_contract_source": "ignition/data/operations/iterations/137/execution-contract-r1.json#/task_id",
+    "execution_contract_source": "ignition/data/operations/iterations/138/execution-contract-r1.json#/task_id",
     "ordinal_semantics_source": "ignition/data/operations/iteration-boundary-semantics-r1.json",
     "binding": "MUST_MATCH_CURRENT_FORMAL_EXECUTION_CONTRACT_AND_ORDINAL_DERIVATION"
   },
     "identity_epoch": "os-control-plane-r5-live-executor-federation-r2",
-  "current_formal_task_id": "IGNITION-20260824-137",
-  "current_formal_task_ordinal": 137,
+  "current_formal_task_id": "IGNITION-20260824-138",
+  "current_formal_task_ordinal": 138,
   "latest_architecture_changing_task": "IGNITION-20260823-136",
   "latest_architecture_task_ordinal": 136,
-  "current_iteration_boundary": 137,
+  "current_iteration_boundary": 138,
     "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
-  "content_phase": "RELEASE_READY",
+  "content_phase": "RUNNING",
     "required_publication_ref": "refs/heads/main",
     "publication_authority": "REMOTE_REF_OBSERVATION",
     "embedded_publication_assertion": "NONE",
-  "current_task_terminal": true,
+  "current_task_terminal": false,
     "post_publication_remote_check_required": true,
     "phase_order": [
         "RUNNING",
         "TERMINAL_CANDIDATE",
         "RELEASE_READY"
     ],
-    "claim_ceiling": "Repository-local content release readiness only; publication is derived from the required remote ref and recorded in a separate witness, with no external truth, production readiness, Owner acceptance or epistemic acceptance inferred."
+    "claim_ceiling": "Task138 repository-local content and bounded runtime-scratch evidence only; publication is derived from the required remote ref and recorded in a separate witness, with no external truth, production readiness, Owner acceptance or epistemic acceptance inferred."
 }

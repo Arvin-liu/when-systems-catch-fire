@@ -74,8 +74,16 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("previous formal task must match canonical task identity")
     baseline_audit = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}/step00-baseline-audit.json"
     if baseline_audit.is_file():
-        baseline = load_json(baseline_audit).get("baseline", {})
-        expected_baseline = baseline.get("origin_main_sha") or baseline.get("formal_head_sha")
+        audit = load_json(baseline_audit)
+        # Task137 used a ``baseline`` object; Task138 records the same
+        # observation under ``formal_repository``. Keep the binding strict
+        # while accepting both historical receipt shapes.
+        baseline = audit.get("baseline") or audit.get("formal_repository") or {}
+        expected_baseline = (
+            baseline.get("origin_main_sha")
+            or baseline.get("baseline_sha")
+            or baseline.get("formal_head_sha")
+        )
         if expected_baseline and contract.get("formal_baseline", {}).get("sha") != expected_baseline:
             errors.append("formal baseline must remain the verified current-task starting main SHA")
     current_impact = lineage.get("current_task", {}).get("identity_impact")

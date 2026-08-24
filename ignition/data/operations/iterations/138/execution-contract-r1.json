@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260824-138",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "556dda03ec5019480e79d474910abe836f6f099e",
+    "command_path": "agent-commands/IGNITION-20260824-138-executor-runtime-scratch-separation-live-codex-completion-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "e22013b0c01cdcce052b9fd8a3c85c31798f3f51"
+  },
+  "identity_impact": "PRESENTATION_ONLY",
+  "expected_task_branch": "codex/ignition-138-executor-runtime-scratch-live-codex-r1-20260824",
+  "expected_receipt_branch": "relay/receipts/ignition-138-executor-runtime-scratch-live-codex-r1-20260824",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260824-138",
+    "latest_architecture_changing_task": "IGNITION-20260823-136",
+    "previous_canonical_current_task": "IGNITION-20260824-137",
+    "previous_formal_task": "IGNITION-20260824-137",
+    "release_candidate_task": "IGNITION-20260824-138",
+    "publication_witness_task": "IGNITION-20260824-138"
+  },
+  "claim_ceiling": "Task138 repository-local runtime-scratch separation and bounded Codex completion/reconciliation evidence only; no Owner authority, external truth, production readiness, formal publication or epistemic acceptance."
+}

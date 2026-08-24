@@ -2,11 +2,11 @@
   "schema_version": "current-system-identity-r1",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
   "identity_epoch": "os-control-plane-r5-live-executor-federation-r2",
-  "current_formal_task_id": "IGNITION-20260824-137",
-  "current_formal_task_ordinal": 137,
+  "current_formal_task_id": "IGNITION-20260824-138",
+  "current_formal_task_ordinal": 138,
   "latest_architecture_changing_task_id": "IGNITION-20260823-136",
   "latest_architecture_task_ordinal": 136,
-  "current_iteration_boundary": 137,
+  "current_iteration_boundary": 138,
   "current_iteration_boundary_semantics": {
     "contract_id": "ITERATION_BOUNDARY_SEMANTICS_INVARIANT",
     "status": "DEPRECATED_COMPATIBILITY_ALIAS",
@@ -174,8 +174,8 @@
   "known_open_obligations": [
     {
       "obligation_id": "LIVE_EXTERNAL_INVOCATION",
-      "statement": "The provider-neutral live bridge is implemented, but no validated live completion was observed: the bounded Hermes synthetic/read-only attempt timed out with unknown external effect and remains in reconciliation; OpenClaw was skipped because its public Gateway/session surface could not prove disposable workspace, read-only and no-channel boundaries; the single fresh-current-CLI Codex synthetic/read-only attempt failed closed during startup with no exact public result, while its disposable workspace remained unchanged. LIVE_EXTERNAL_INVOCATION remains open; no production, general-intelligence or external-validity claim is made.",
-      "source_paths": ["ignition/docs/architecture/external-agent-federation-r1.md", "ignition/data/agent-federation/executor-inventory-r1.json", "ignition/data/operations/iterations/136/step11-live-preflight.json", "ignition/data/operations/iterations/136/step13-live-execution-receipt.json", "ignition/data/operations/iterations/137/step01-hermes-timeout-reconciliation.json", "ignition/data/operations/iterations/137/step03-codex-live-eligibility.json", "ignition/data/operations/iterations/137/step09-live-codex-attempt.json", "ignition/data/operations/iterations/137/step10-independent-validation-outcome.json"]
+      "statement": "The provider-neutral live bridge and the Task138 workspace/runtime-scratch separation are implemented, but no validated live completion was observed: the bounded Hermes synthetic/read-only attempt timed out with unknown external effect and remains in reconciliation; OpenClaw was skipped because its public Gateway/session surface could not prove disposable workspace, read-only and no-channel boundaries; Task138's first repaired Codex dispatch failed closed before a structured result, while its disposable workspace remained unchanged, and the second invocation was forbidden because no permitted read-only auth-source route could be established without exposing the existing auth/config domain. LIVE_EXTERNAL_INVOCATION remains open; no production, general-intelligence or external-validity claim is made.",
+      "source_paths": ["ignition/docs/architecture/external-agent-federation-r1.md", "ignition/data/agent-federation/executor-inventory-r1.json", "ignition/data/operations/iterations/136/step11-live-preflight.json", "ignition/data/operations/iterations/136/step13-live-execution-receipt.json", "ignition/data/operations/iterations/137/step01-hermes-timeout-reconciliation.json", "ignition/data/operations/iterations/137/step03-codex-live-eligibility.json", "ignition/data/operations/iterations/137/step09-live-codex-attempt.json", "ignition/data/operations/iterations/137/step10-independent-validation-outcome.json", "ignition/data/operations/iterations/138/step06-capability-reauth.json", "ignition/data/operations/iterations/138/step07-fixture-answer-freeze.json", "ignition/data/operations/iterations/138/step08-first-codex-dispatch.json", "ignition/data/operations/iterations/138/step09-second-gate.json", "ignition/data/operations/iterations/138/step10-independent-validation-gate.json", "ignition/data/operations/iterations/138/step11-obligation-semantics.json"]
     },
     {
       "obligation_id": "PRODUCTION_AND_EXTERNAL_VALIDITY",

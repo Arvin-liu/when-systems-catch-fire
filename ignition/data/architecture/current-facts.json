@@ -1,9 +1,9 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_formal_task_id": "IGNITION-20260824-137",
-  "current_formal_task_ordinal": 137,
-  "current_iteration_boundary": 137,
+  "current_formal_task_id": "IGNITION-20260824-138",
+  "current_formal_task_ordinal": 138,
+  "current_iteration_boundary": 138,
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "facts": {
     "architecture": {
@@ -31,7 +31,7 @@
       "adapter_inventory_count": 3,
       "live_invocation_ceiling": "LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED",
       "live_status_by_executor": {
-        "external.codex": "MALFORMED_RESULT",
+        "external.codex": "ELIGIBLE_FOR_LIVE_READONLY",
         "external.hermes": "TIMED_OUT_EFFECT_UNKNOWN",
         "external.openclaw": "SKIPPED_UNSAFE_WORKSPACE_OR_CHANNEL_BOUNDARY"
       },
@@ -69,9 +69,9 @@
       }
     },
     "iteration": {
-      "current_formal_task_id": "IGNITION-20260824-137",
-      "current_formal_task_ordinal": 137,
-      "current_iteration_boundary": 137,
+      "current_formal_task_id": "IGNITION-20260824-138",
+      "current_formal_task_ordinal": 138,
+      "current_iteration_boundary": 138,
       "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
       "current_map_version": "0.13.0",
       "latest_architecture_changing_task_id": "IGNITION-20260823-136",
@@ -109,8 +109,8 @@
       "pilot_status": "OFFLINE_SYNTHETIC_ONLY"
     },
     "task_lineage": {
-      "current_task_id": "IGNITION-20260824-137",
-      "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+      "current_task_id": "IGNITION-20260824-138",
+      "current_task_status": "IN_PROGRESS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -132,7 +132,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "07e0a5a58cef6dfe1b6172738245bfc06b05effe6e2bc452b4a08802be79d9df"
+      "sha256": "75843600f906f1ad4da57ec24f24218fe7785c32025104a520ccc2e6a63e9559"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -164,11 +164,11 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "6ff14d88a0f6b99693ab1eda24d473ed4edd79ba65abebbfee3404c78866681a"
+      "sha256": "e1205d72e75d3d520f00f8a8a52be07fb61ce7efa307f7d403566f4b73bdab9a"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "4e31ed21567e3fa0ff8b0b29e4ba97b5a3a7f4d04a7a9da493fb5e613a895a4d"
+      "sha256": "4fe791bcd00b1abeb8d52eb2366c0f54f09ad053b5abea2d4563e98bc871609e"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
@@ -181,14 +181,6 @@
     {
       "path": "ignition/data/operations/iterations/136/step13-live-execution-receipt.json",
       "sha256": "e5394c7c9e1f658667fcd062fd6a9ce3a82075af6b73bf1261dfe4a5c1383d4c"
-    },
-    {
-      "path": "ignition/data/operations/iterations/137/step03-codex-live-eligibility.json",
-      "sha256": "4090f7492641cbc7136783538c565396749a5f6e11aa912b77aac75b704093a2"
-    },
-    {
-      "path": "ignition/data/operations/iterations/137/step09-live-codex-attempt.json",
-      "sha256": "f28d7e51ee7ae2a17642808c97703cd884111f542c6505597f857ea35265e14e"
     },
     {
       "path": "ignition/data/operations/project-components.json",

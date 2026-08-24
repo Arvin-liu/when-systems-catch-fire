@@ -194,11 +194,25 @@ The current Codex CLI received one fresh synthetic/read-only dispatch under a
 new bounded lease. The child boundary was at most one level, used only the
 synthetic fixture, forwarded no formal task context or private prompt, and
 had no channel, browser, remote-Git, write or new-billing authority. Codex
-failed closed during helper startup under the read-only HOME, returned no
-exact public JSON result, and left the fixture workspace unchanged. Pointfire
-recorded `MALFORMED_RESULT` / `FAILED_VALIDATION`; independent OS validation
-did not run, so `LIVE_EXTERNAL_INVOCATION` remains open and this observation
-is not `COMPLETED_VALIDATED`, Goal completion or external truth.
+failed closed during helper startup, returned no structured public result, and
+left the fixture workspace unchanged. Pointfire recorded `MALFORMED_RESULT` /
+`FAILED_VALIDATION`; independent OS validation did not run, so
+`LIVE_EXTERNAL_INVOCATION` remains open and this observation is not
+`COMPLETED_VALIDATED`, Goal completion or external truth.
+
+## Task 138 runtime scratch separation continuation
+
+Task 138 keeps the existing bridge and topology unchanged while separating
+three filesystem domains: the synthetic task workspace remains disposable and
+read-only; Codex helper/cache/app-server paths use an attempt-specific writable
+runtime scratch; and existing auth/config state is referenced read-only without
+secret materialization or config/billing mutation. The first repaired Codex
+dispatch still failed before a structured result, with process-group cleanup,
+unchanged workspace digest and no independent validation. A second real
+invocation was not authorized: the public CLI did not expose a compliant
+read-only auth-source route that could be used without exposing the real
+auth/config write domain. The live completion obligation therefore remains
+open and the claim ceiling is unchanged.
 
 ## Disposable pilot boundary
 
