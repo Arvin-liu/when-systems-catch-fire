@@ -1,13 +1,14 @@
 {
   "schema_version": "projection-preflight-r1",
   "contract_id": "GENERATED_OUTPUT_BEFORE_FULL_SUITE_INVARIANT",
-  "task_id": "IGNITION-20260824-137",
+  "task_id": "IGNITION-20260824-138",
   "application_root": "ignition",
   "execution_cwd": "ignition",
   "mode": "READ_ONLY_CHECKS",
   "clean_tree_required_before_full_suite": true,
   "full_suite_side_effect_policy": "FAIL_IF_TRACKED_OR_UNTRACKED_TREE_CHANGES",
   "commands": [
+    {"id": "local_executor_census", "category": "local_executor_census", "argv": ["tools/validate_local_executor_census.py"], "read_only": true},
     {"id": "function_asset_census", "category": "function_canonical_projection", "argv": ["tools/foundation/build_function_asset_census.py", "--check"], "read_only": true},
     {"id": "function_asset_deep_adjudication", "category": "function_adjudication_closure", "argv": ["tools/foundation/adjudicate_function_assets.py", "--check"], "read_only": true},
     {"id": "nonfunction_claim_projection", "category": "nonfunction_canonical_projection", "argv": ["tools/foundation/adjudicate_nonfunction_claims.py", "--check"], "read_only": true},

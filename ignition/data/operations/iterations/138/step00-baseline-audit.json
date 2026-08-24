@@ -6,9 +6,10 @@
   "control": {
     "repository": "Arvin-liu/1111",
     "control_ref": "origin/relay/current",
-    "control_tip": "556dda03ec5019480e79d474910abe836f6f099e",
-    "task_material_commit": "6c7e01c5",
-    "task_material": "agent-commands/IGNITION-20260824-138-executor-runtime-scratch-separation-live-codex-completion-r1.md"
+    "control_tip": "4ab09c3d6595f254577739ec1d87e64144c61803",
+    "task_material_commit": "4ab09c3d6595f254577739ec1d87e64144c61803",
+    "task_material": "agent-commands/IGNITION-20260824-138-executor-runtime-scratch-separation-live-codex-completion-r1.md",
+    "amendment_01": "agent-commands/IGNITION-20260824-138-AMENDMENT-01-local-executor-census-dynamic-admission.md"
   },
   "formal_repository": {
     "repository": "Arvin-liu/when-systems-catch-fire",
@@ -111,6 +112,23 @@
     "dangerous_bypass": false,
     "secret_copied": false,
     "new_billing_authority": false
+  },
+  "amendment_01_local_executor_census": {
+    "receipt": "ignition/data/operations/iterations/138/local-executor-census-r1.json",
+    "report": "ignition/reports/operations/ignition-138-step00-local-executor-census.md",
+    "candidate_count": 14,
+    "agentic_executor_count": 5,
+    "reasoner_runtime_count": 4,
+    "tool_only_count": 3,
+    "ui_or_nonautomatable_count": 2,
+    "admitted_at_census": 0,
+    "selection_status": "NO_SAFE_CANDIDATE",
+    "gemini_checked": true,
+    "github_cli_checked": true,
+    "github_copilot_installed": false,
+    "secret_content_read": false,
+    "inference_started": false,
+    "install_or_upgrade_performed": false
   },
   "claim_ceiling": "Repository-local baseline, public-surface, and Task137 failure causal evidence only; no validated live completion, production readiness, Owner acceptance, external truth, or epistemic acceptance is inferred."
 }
