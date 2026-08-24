@@ -40,16 +40,19 @@ class PublicationWitnessTests(unittest.TestCase):
         }
 
     def kwargs(self, sha: str) -> dict[str, object]:
+        lineage = witness.load_json(witness.LINEAGE_PATH)
+        identity = lineage["task_identity"]
+        task_id = identity["current_formal_task"]
         return {
-            "task_id": "IGNITION-20260823-136",
-            "formal_result_task_id": "IGNITION-20260823-136",
+            "task_id": task_id,
+            "formal_result_task_id": task_id,
             "subject_repository": "Arvin-liu/when-systems-catch-fire",
             "candidate_sha": sha,
             "fresh_clone_head_sha": sha,
             "fresh_clone_branch": "main",
             "fresh_clone_clean": True,
             "semantic_gates": self.gates(),
-            "receipt_ref": "agent-results/IGNITION-20260823-136-publication-witness.json",
+            "receipt_ref": f"agent-results/{task_id}-publication-witness.json",
             "observed_at": "2026-08-21T15:00:00+00:00",
         }
 
@@ -62,7 +65,8 @@ class PublicationWitnessTests(unittest.TestCase):
         self.assertEqual(document["witness"]["scope"], "OBSERVATION_TIME_ONLY")
         self.assertFalse(document["witness"]["credentials_included"])
         self.assertTrue(document["task_binding"]["exact_match"])
-        self.assertEqual(document["task_binding"]["latest_architecture_changing_task"], "IGNITION-20260823-136")
+        identity = witness.load_json(witness.LINEAGE_PATH)["task_identity"]
+        self.assertEqual(document["task_binding"]["latest_architecture_changing_task"], identity["latest_architecture_changing_task"])
 
     def test_witness_rejects_remote_mismatch_before_emission(self) -> None:
         candidate = "a" * 40

@@ -35,36 +35,36 @@ def load_json(path: Path) -> Any:
 
 
 def _base() -> dict[str, Any]:
-    current_task_id = load_json(gate.LINEAGE_PATH)["task_identity"]["current_formal_task"]
-    current_ordinal = task_identity.parse_task_id(current_task_id)["ordinal"]
+    identity = load_json(gate.LINEAGE_PATH)["task_identity"]
+    current_task_id = identity["current_formal_task"]
+    current_architecture_task_id = identity["latest_architecture_changing_task"]
 
-    def historicalize(document: dict[str, Any]) -> dict[str, Any]:
-        text = json.dumps(document, ensure_ascii=False)
-        # The matrix is a sealed Task133 adversarial fixture.  Its documents
-        # are derived from the live Current documents, so advancing Current
-        # must not leave the historical fixture accidentally half-current.
-        text = text.replace(current_task_id, "IGNITION-20260822-133")
-        text = text.replace(
-            '"latest_architecture_changing_task": "IGNITION-20260822-133"',
-            '"latest_architecture_changing_task": "IGNITION-20260821-129"',
-        )
-        text = text.replace(
-            '"latest_architecture_changing_task_id": "IGNITION-20260822-133"',
-            '"latest_architecture_changing_task_id": "IGNITION-20260821-129"',
-        )
-        text = text.replace(
-            f'"current_formal_task_ordinal": {current_ordinal}',
-            '"current_formal_task_ordinal": 133',
-        )
-        text = text.replace(
-            f'"latest_architecture_task_ordinal": {current_ordinal}',
-            '"latest_architecture_task_ordinal": 129',
-        )
-        text = text.replace(
-            f'"current_iteration_boundary": {current_ordinal}',
-            '"current_iteration_boundary": 133',
-        )
-        return json.loads(text)
+    historical_task_id = "IGNITION-20260822-133"
+    historical_architecture_task_id = "IGNITION-20260821-129"
+    current_ordinal = task_identity.parse_task_id(current_task_id)["ordinal"]
+    current_architecture_ordinal = task_identity.parse_task_id(current_architecture_task_id)["ordinal"]
+
+    def historicalize(value: Any, *, key: str | None = None) -> Any:
+        # The matrix is a sealed Task133 adversarial fixture. Its documents
+        # are copied from Current only to exercise the same validator; every
+        # current formal/architecture role must be projected to the historical
+        # Task133/Task129 split before validation.
+        if isinstance(value, dict):
+            return {name: historicalize(item, key=name) for name, item in value.items()}
+        if isinstance(value, list):
+            return [historicalize(item, key=key) for item in value]
+        if isinstance(value, str):
+            if value == current_task_id:
+                return historical_task_id
+            if value == current_architecture_task_id:
+                return historical_architecture_task_id
+            return value
+        if isinstance(value, int) and not isinstance(value, bool):
+            if key in {"current_formal_task_ordinal", "current_iteration_boundary"} and value == current_ordinal:
+                return 133
+            if key in {"latest_architecture_task_ordinal", "architecture_task_ordinal"} and value == current_architecture_ordinal:
+                return 129
+        return value
 
     return {
         "contract": load_json(HISTORICAL_CONTRACT_PATH),
