@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/ignition-137-live-completion-output-r1.schema.json",
+  "title": "Ignition Task137 Live Completion Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["nonce", "selected_ids", "count", "workspace_digest_claim"],
+  "properties": {
+    "nonce": {"type": "string", "pattern": "^[a-f0-9]{24}$"},
+    "selected_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "count": {"type": "integer", "minimum": 0},
+    "workspace_digest_claim": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}

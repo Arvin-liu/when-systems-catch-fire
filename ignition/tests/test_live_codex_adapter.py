@@ -1,4 +1,6 @@
 from pathlib import Path
+import json
+import stat
 import tempfile
 import unittest
 
@@ -79,6 +81,38 @@ class LiveCodexAdapterTests(unittest.TestCase):
             data["permission_ceiling"] = ["repo.read", "structured_progress"]
             with self.assertRaises(FederationContractError):
                 adapter.build_argv(LiveDispatchEnvelope.from_dict(data))
+
+    def test_strict_output_contract_uses_read_only_external_schema(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            workspace = root / "fixture"
+            workspace.mkdir()
+            schema = root / "output-schema.json"
+            schema.write_text(json.dumps({"type": "object", "additionalProperties": False}), encoding="utf-8")
+            schema.chmod(stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
+            value = envelope(workspace).to_dict()
+            value["output_contract"] = {"format": "json", "required_fields": ["nonce"], "strict_output_schema": True, "schema_path": str(schema)}
+            adapter = LiveCodexAdapter(workspace, transport=FakeTransport(), authentication_observed=True)
+            argv = adapter.build_argv(LiveDispatchEnvelope.from_dict(value))
+            self.assertIn("--output-schema", argv)
+            self.assertIn(str(schema.resolve()), argv)
+            self.assertNotIn("--output-last-message", argv)
+
+            schema.chmod(stat.S_IRUSR | stat.S_IWUSR)
+            with self.assertRaises(FederationContractError):
+                adapter.build_argv(LiveDispatchEnvelope.from_dict(value))
+
+    def test_strict_output_schema_cannot_live_inside_fixture(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            schema = root / "schema.json"
+            schema.write_text("{}", encoding="utf-8")
+            schema.chmod(stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
+            value = envelope(root).to_dict()
+            value["output_contract"] = {"format": "json", "required_fields": ["nonce"], "strict_output_schema": True, "schema_path": str(schema)}
+            adapter = LiveCodexAdapter(root, transport=FakeTransport(), authentication_observed=True)
+            with self.assertRaises(FederationContractError):
+                adapter.build_argv(LiveDispatchEnvelope.from_dict(value))
 
 
 if __name__ == "__main__":

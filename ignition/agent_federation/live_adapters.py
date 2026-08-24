@@ -153,10 +153,33 @@ class LiveCodexAdapter:
             raise LiveAdapterError(str(exc)) from exc
         if len(prompt.encode("utf-8")) > 32 * 1024:
             raise LiveAdapterError("Codex live synthetic prompt exceeds the bounded input")
-        argv = (
+        strict_output_schema = envelope.output_contract.get("strict_output_schema", False)
+        if not isinstance(strict_output_schema, bool):
+            raise LiveAdapterError("Codex output contract strict_output_schema must be boolean")
+        argv_prefix = [
             self.executable, "exec", "--json", "--ephemeral", "--ignore-user-config", "--ignore-rules",
-            "--sandbox", "read-only", "--cd", str(self.workspace), prompt,
-        )
+            "--sandbox", "read-only",
+        ]
+        if strict_output_schema:
+            schema_ref = envelope.output_contract.get("schema_path")
+            if not isinstance(schema_ref, str) or not schema_ref.startswith("/"):
+                raise LiveAdapterError("strict Codex output contract requires an absolute disposable schema path")
+            schema_path = Path(schema_ref).resolve()
+            try:
+                schema_path.relative_to(self.workspace.resolve())
+            except ValueError:
+                pass
+            else:
+                raise LiveAdapterError("strict Codex output schema must not be inside the fixture workspace")
+            if not schema_path.is_file():
+                raise LiveAdapterError("strict Codex output schema path must be an existing file")
+            if schema_path.stat().st_mode & 0o222:
+                raise LiveAdapterError("strict Codex output schema must be read-only")
+            help_text = self._probe()[1].stdout or self._probe()[1].stderr
+            if "--output-schema" not in help_text:
+                raise LiveAdapterError("current Codex CLI does not expose --output-schema")
+            argv_prefix.extend(("--output-schema", str(schema_path)))
+        argv = tuple(argv_prefix + ["--cd", str(self.workspace), prompt])
         if any("dangerously" in item or item == "--add-dir" or "workspace-write" in item for item in argv):
             raise LiveAdapterError("unsafe Codex flag leaked into the live argv")
         return argv
