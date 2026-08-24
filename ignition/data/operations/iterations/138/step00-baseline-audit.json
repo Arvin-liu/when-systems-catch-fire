@@ -1,0 +1,116 @@
+{
+  "schema_version": "ignition-138-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "00",
+  "status": "PASS",
+  "control": {
+    "repository": "Arvin-liu/1111",
+    "control_ref": "origin/relay/current",
+    "control_tip": "556dda03ec5019480e79d474910abe836f6f099e",
+    "task_material_commit": "6c7e01c5",
+    "task_material": "agent-commands/IGNITION-20260824-138-executor-runtime-scratch-separation-live-codex-completion-r1.md"
+  },
+  "formal_repository": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "baseline_sha": "e22013b0c01cdcce052b9fd8a3c85c31798f3f51",
+    "origin_main_sha": "e22013b0c01cdcce052b9fd8a3c85c31798f3f51",
+    "remote_main_sha": "e22013b0c01cdcce052b9fd8a3c85c31798f3f51",
+    "worktree_head_before": "e22013b0c01cdcce052b9fd8a3c85c31798f3f51",
+    "branch": "codex/ignition-138-executor-runtime-scratch-live-codex-r1-20260824",
+    "clean_before": true,
+    "fetch_all_prune_completed": true
+  },
+  "task137_failure_archaeology": {
+    "source_receipt": "ignition/data/operations/iterations/137/step09-live-codex-attempt.json",
+    "dispatch_id": "live-dispatch-137",
+    "attempt_id": "live-attempt-137",
+    "executor_id": "external.codex",
+    "adapter_id": "codex-live-r2",
+    "executor_version": "codex-cli 0.144.4",
+    "returncode": 1,
+    "elapsed_seconds": 0.463087,
+    "stdout_bytes": 0,
+    "stderr_bytes": 499,
+    "process_group_status": "CONFIRMED_GONE",
+    "session_pointer": null,
+    "structured_result": null,
+    "workspace_before_digest": "a4993a9ba29920bacecee2575c544053a499c57e906cd5d2189536ed493910f7",
+    "workspace_after_digest": "a4993a9ba29920bacecee2575c544053a499c57e906cd5d2189536ed493910f7",
+    "failure_class": "CODEX_STARTUP_HELPER_PERMISSION_DENIED_UNDER_READ_ONLY_HOME",
+    "causal_stage": "PRE_INFERENCE_STARTUP",
+    "retry_classification": "KNOWN_NO_EFFECT_PRE_INFERENCE_STARTUP_FAILURE"
+  },
+  "causal_ledger": [
+    {
+      "domain": "TASK_WORKSPACE",
+      "mode": "DISPOSABLE_READ_ONLY",
+      "directory_mode": "0555",
+      "file_mode": "0444",
+      "overlap_with_formal_repo": false,
+      "conclusion": "must_remain_read_only"
+    },
+    {
+      "domain": "EXECUTOR_RUNTIME_SCRATCH",
+      "observed_mode": "NOT_SEPARATE",
+      "home_binding": "TASK_WORKSPACE",
+      "tmpdir_binding": "TASK_WORKSPACE",
+      "codex_home_binding": "DERIVED_UNDER_HOME; PARENT_CODEX_HOME_UNSET",
+      "write_needed": "Codex helper binaries and in-process app-server metadata",
+      "conclusion": "independent_attempt_specific_writable_scratch_required"
+    },
+    {
+      "domain": "AUTH_OR_CONFIG_SOURCE",
+      "mode": "READ_ONLY_REFERENCE",
+      "public_auth_status": "LOGGED_IN_PUBLIC_STATUS_ONLY",
+      "content_read": false,
+      "copied": false,
+      "config_mutated": false,
+      "billing_mutated": false
+    }
+  ],
+  "public_surface_probe": {
+    "codex_version": "codex-cli 0.144.4",
+    "exec_help_observed": true,
+    "required_flags_observed": [
+      "--json",
+      "--ephemeral",
+      "--ignore-user-config",
+      "--ignore-rules",
+      "--skip-git-repo-check",
+      "--sandbox",
+      "--cd",
+      "--output-schema"
+    ],
+    "auth_status": "LOGGED_IN_PUBLIC_STATUS_ONLY",
+    "environment_presence_only": {
+      "HOME": "SET:<home>",
+      "TMPDIR": "SET:<tmp>",
+      "XDG_CONFIG_HOME": "UNSET",
+      "XDG_CACHE_HOME": "UNSET",
+      "XDG_RUNTIME_DIR": "UNSET",
+      "CODEX_HOME": "UNSET"
+    }
+  },
+  "deterministic_preflight": {
+    "targeted_unittest_command": "PYTHONPATH=ignition:ignition/tests:ignition/tools/foundation python3 -m unittest tests.test_live_transport tests.test_live_child_guard tests.test_live_codex_adapter tests.test_live_task137 tests.test_live_execution tests.test_live_validation tests.test_live_preflight tests.test_live_bridge_contracts tests.test_live_orchestration",
+    "tests": 41,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS",
+    "execution_contract": "PASS",
+    "current_release_lifecycle": "PASS",
+    "task_identity_gate": "DEFERRED_EXPECTED_138_BRANCH_TRANSITION",
+    "live_inference_started": false
+  },
+  "repair_boundary": {
+    "task_workspace_writable": false,
+    "runtime_scratch_writable": "NOT_YET_IMPLEMENTED",
+    "auth_source_read_only": true,
+    "formal_repo_as_child_cwd": false,
+    "dangerous_bypass": false,
+    "secret_copied": false,
+    "new_billing_authority": false
+  },
+  "claim_ceiling": "Repository-local baseline, public-surface, and Task137 failure causal evidence only; no validated live completion, production readiness, Owner acceptance, external truth, or epistemic acceptance is inferred."
+}
