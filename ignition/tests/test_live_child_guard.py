@@ -32,7 +32,7 @@ class CaptureTransport:
         if argv[-1] == "--version":
             return LiveProcessResult(tuple(argv), str(cwd), 0, "codex-cli 0.144.4\n", "", 1, False, False, True)
         if argv[-2:] == ("exec", "--help"):
-            return LiveProcessResult(tuple(argv), str(cwd), 0, "--json --ephemeral --ignore-user-config --ignore-rules --sandbox --cd --output-schema\n", "", 1, False, False, True)
+            return LiveProcessResult(tuple(argv), str(cwd), 0, "--json --ephemeral --ignore-user-config --ignore-rules --skip-git-repo-check --sandbox --cd --output-schema\n", "", 1, False, False, True)
         event = {"type": "item.completed", "item": {"type": "agent_message", "text": json.dumps({"nonce": "n"})}}
         return LiveProcessResult(tuple(argv), str(cwd), 0, json.dumps(event) + "\n", "", 1, False, False, True)
 

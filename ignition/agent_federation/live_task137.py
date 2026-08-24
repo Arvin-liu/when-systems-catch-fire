@@ -220,6 +220,7 @@ def task137_external_surface_evidence(envelope: LiveDispatchEnvelope, observatio
         and "--ephemeral" in flags
         and "--ignore-user-config" in flags
         and "--ignore-rules" in flags
+        and "--skip-git-repo-check" in flags
         and "--sandbox" in flags
         and "read-only" in argv
         and "--output-schema" in flags

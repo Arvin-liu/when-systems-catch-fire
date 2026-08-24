@@ -109,7 +109,7 @@ class LiveCodexAdapter:
         version_result, help_result = self._probe()
         version = _summary(version_result.stdout or version_result.stderr)
         help_text = (help_result.stdout or "") + ("\n" + help_result.stderr if help_result.stderr else "")
-        required_flags = ("--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--sandbox", "--cd", "--output-schema")
+        required_flags = ("--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--skip-git-repo-check", "--sandbox", "--cd", "--output-schema")
         missing = [flag for flag in required_flags if flag not in help_text]
         blockers: list[str] = []
         if version_result.returncode != 0 or not version:
@@ -158,7 +158,7 @@ class LiveCodexAdapter:
             raise LiveAdapterError("Codex output contract strict_output_schema must be boolean")
         argv_prefix = [
             self.executable, "exec", "--json", "--ephemeral", "--ignore-user-config", "--ignore-rules",
-            "--sandbox", "read-only",
+            "--skip-git-repo-check", "--sandbox", "read-only",
         ]
         if strict_output_schema:
             schema_ref = envelope.output_contract.get("schema_path")

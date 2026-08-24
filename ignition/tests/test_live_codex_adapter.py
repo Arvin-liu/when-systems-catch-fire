@@ -20,7 +20,7 @@ class FakeTransport:
         if argv[-1] == "--version":
             return LiveProcessResult(tuple(argv), str(cwd), 0, "codex-cli 0.144.4\n", "", 1, False, False, True)
         if argv[-2:] == ("exec", "--help"):
-            text = "--json --ephemeral --ignore-user-config --ignore-rules --sandbox --cd --output-schema\n" if self.complete else "--json --sandbox\n"
+            text = "--json --ephemeral --ignore-user-config --ignore-rules --skip-git-repo-check --sandbox --cd --output-schema\n" if self.complete else "--json --sandbox\n"
             return LiveProcessResult(tuple(argv), str(cwd), 0, text, "", 1, False, False, True)
         return LiveProcessResult(
             tuple(argv), str(cwd), 0,
@@ -56,6 +56,7 @@ class LiveCodexAdapterTests(unittest.TestCase):
             adapter = LiveCodexAdapter(directory, transport=FakeTransport(), authentication_observed=True)
             argv = adapter.build_argv(envelope(Path(directory)))
             self.assertIn("--ephemeral", argv)
+            self.assertIn("--skip-git-repo-check", argv)
             self.assertIn("--sandbox", argv)
             self.assertIn("read-only", argv)
             self.assertIn("--cd", argv)

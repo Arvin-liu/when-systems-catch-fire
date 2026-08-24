@@ -32,7 +32,7 @@ class FakeCodexTransport:
         if argv[-1] == "--version":
             return LiveProcessResult(command, str(cwd), 0, "codex-cli 0.144.4\n", "", 5, False, False, True)
         if argv[-2:] == ("exec", "--help"):
-            return LiveProcessResult(command, str(cwd), 0, "--json --ephemeral --ignore-user-config --ignore-rules --sandbox --cd --output-schema\n", "", 5, False, False, True)
+            return LiveProcessResult(command, str(cwd), 0, "--json --ephemeral --ignore-user-config --ignore-rules --skip-git-repo-check --sandbox --cd --output-schema\n", "", 5, False, False, True)
         event = {"type": "item.completed", "item": {"type": "agent_message", "text": json.dumps(self.result, sort_keys=True)}}
         return LiveProcessResult(command, str(cwd), 0, json.dumps(event) + "\n", "", 20, False, False, True)
 
