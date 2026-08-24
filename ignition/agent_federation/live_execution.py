@@ -6,6 +6,7 @@ from dataclasses import dataclass
 import json
 from typing import Any, Mapping, Sequence
 
+from agent_kernel.contracts import sha256_json
 from agent_runtime.accounting import CostVector
 from agent_runtime.dispatch_reconciliation import DispatchReceipt
 
@@ -128,6 +129,8 @@ def execute_bounded_attempt(
     fixture: Any,
     validator: LivePilotValidator,
     observed_at: str,
+    capability_lease_digest: str | None = None,
+    child_depth: int | None = None,
 ) -> LiveAttemptResult:
     """Execute at most one adapter process and close its OS-owned evidence."""
 
@@ -202,6 +205,10 @@ def execute_bounded_attempt(
             os_validation_status=os_validation, reconciliation_status=reconciliation,
             claim_ceiling="Executor result is unvalidated until the independent fixture validator passes.",
             **transport_evidence,
+            workspace_ref=envelope.workspace_ref,
+            capability_lease_digest=capability_lease_digest,
+            result_digest=sha256_json(structured) if structured is not None else None,
+            child_depth=child_depth,
         )
         old_receipt = DispatchReceipt(
             envelope.dispatch_id, envelope.task_id, envelope.executor_id, f"live-idempotency-{envelope.dispatch_id}",
@@ -224,6 +231,10 @@ def execute_bounded_attempt(
             os_validation_status="NOT_RUN", reconciliation_status="OPEN",
             claim_ceiling="Timeout outcome is unresolved; no retry or completion is inferred.",
             **transport_evidence,
+            workspace_ref=envelope.workspace_ref,
+            capability_lease_digest=capability_lease_digest,
+            result_digest=None,
+            child_depth=child_depth,
         )
 
     return LiveAttemptResult(receipt and observation, receipt, validation, tuple(item.to_dict() for item in machine.history), durable,)

@@ -352,6 +352,11 @@ class LiveExecutorReceipt:
     stderr_byte_count: int = 0
     stdout_digest: str | None = None
     stderr_digest: str | None = None
+    workspace_ref: str = ""
+    capability_lease_digest: str | None = None
+    result_digest: str | None = None
+    validator_receipt_digest: str | None = None
+    child_depth: int | None = None
 
     def __post_init__(self) -> None:
         if self.schema_version not in {LIVE_RECEIPT_SCHEMA, LIVE_RECEIPT_LEGACY_SCHEMA}:
@@ -405,6 +410,13 @@ class LiveExecutorReceipt:
                     raise FederationContractError(f"live_receipt.{field} must be non-negative")
             object.__setattr__(self, "stdout_digest", _optional_digest(self.stdout_digest, "live_receipt.stdout_digest"))
             object.__setattr__(self, "stderr_digest", _optional_digest(self.stderr_digest, "live_receipt.stderr_digest"))
+            if self.workspace_ref:
+                _text(self.workspace_ref, "live_receipt.workspace_ref")
+            object.__setattr__(self, "capability_lease_digest", _optional_digest(self.capability_lease_digest, "live_receipt.capability_lease_digest"))
+            object.__setattr__(self, "result_digest", _optional_digest(self.result_digest, "live_receipt.result_digest"))
+            object.__setattr__(self, "validator_receipt_digest", _optional_digest(self.validator_receipt_digest, "live_receipt.validator_receipt_digest"))
+            if self.child_depth is not None and (not isinstance(self.child_depth, int) or isinstance(self.child_depth, bool) or self.child_depth < 0):
+                raise FederationContractError("live_receipt.child_depth must be null or a non-negative integer")
         expected = canonical_digest(self._unsigned_dict())
         if _digest(self.receipt_digest, "live_receipt.receipt_digest") != expected:
             raise FederationContractError("live_receipt.receipt_digest does not match its unsigned content")
@@ -430,6 +442,9 @@ class LiveExecutorReceipt:
                 "first_public_event_latency_seconds": self.first_public_event_latency_seconds,
                 "stdout_byte_count": self.stdout_byte_count, "stderr_byte_count": self.stderr_byte_count,
                 "stdout_digest": self.stdout_digest, "stderr_digest": self.stderr_digest,
+                "workspace_ref": self.workspace_ref, "capability_lease_digest": self.capability_lease_digest,
+                "result_digest": self.result_digest, "validator_receipt_digest": self.validator_receipt_digest,
+                "child_depth": self.child_depth,
             })
         return result
 
@@ -454,6 +469,11 @@ class LiveExecutorReceipt:
             values.setdefault("stderr_byte_count", 0)
             values.setdefault("stdout_digest", None)
             values.setdefault("stderr_digest", None)
+            values.setdefault("workspace_ref", "")
+            values.setdefault("capability_lease_digest", None)
+            values.setdefault("result_digest", None)
+            values.setdefault("validator_receipt_digest", None)
+            values.setdefault("child_depth", None)
         unsigned = dict(values)
         unsigned.pop("receipt_digest", None)
         values["receipt_digest"] = canonical_digest(unsigned)
@@ -471,12 +491,15 @@ class LiveExecutorReceipt:
                 "termination_requested": False, "signals_sent": (), "process_group_status": "UNKNOWN",
                 "first_public_event_latency_seconds": None, "stdout_byte_count": 0, "stderr_byte_count": 0,
                 "stdout_digest": None, "stderr_digest": None,
+                "workspace_ref": "", "capability_lease_digest": None, "result_digest": None,
+                "validator_receipt_digest": None, "child_depth": None,
             })
             return cls(**values)
         keys = base_keys | {
             "elapsed_seconds", "timeout_seconds", "timeout_requested", "termination_requested", "signals_sent",
             "process_group_status", "first_public_event_latency_seconds", "stdout_byte_count", "stderr_byte_count",
-            "stdout_digest", "stderr_digest",
+            "stdout_digest", "stderr_digest", "workspace_ref", "capability_lease_digest", "result_digest",
+            "validator_receipt_digest", "child_depth",
         }
         _strict(data, keys, "LiveExecutorReceipt")
         values = dict(data)

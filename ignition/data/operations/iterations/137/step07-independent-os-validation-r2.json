@@ -1,0 +1,54 @@
+{
+  "schema_version": "ignition-137-step07-independent-os-validation-r2",
+  "task_id": "IGNITION-20260824-137",
+  "step": "07",
+  "implementation": {
+    "validator": "ignition/agent_federation/live_validation.py::LiveIndependentValidator",
+    "validation_receipt": "ignition-137-independent-validation-receipt-r2",
+    "fixture_validator": "ignition/agent_federation/live_pilot.py::LiveCompletionValidator"
+  },
+  "required_bindings": [
+    "task_id",
+    "dispatch_id",
+    "attempt_id",
+    "executor_id",
+    "adapter_id",
+    "capability_lease_digest",
+    "workspace_ref",
+    "workspace_digest_before",
+    "workspace_digest_after",
+    "result_digest",
+    "executor_receipt_digest",
+    "validator_receipt_digest"
+  ],
+  "checks": [
+    "lease_integrity_and_freshness",
+    "exact_task_dispatch_attempt_executor_adapter_binding",
+    "permission_intersection",
+    "strict_output_schema_and_expected_answer",
+    "workspace_unchanged",
+    "no_forbidden_file_or_external_surface",
+    "receipt_integrity",
+    "RETURNED_UNVALIDATED_before_validation",
+    "child_depth_exactly_one",
+    "timeout_reconciliation_status"
+  ],
+  "negative_fixtures": [
+    "forged_result",
+    "stale_lease",
+    "wrong_nonce",
+    "copied_result",
+    "wrong_workspace",
+    "executor_substitution"
+  ],
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_validation ignition.tests.test_live_bridge_contracts ignition.tests.test_live_execution -v",
+    "tests": 13,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS",
+    "live_inference": "NOT_RUN"
+  },
+  "claim_ceiling": "Independent OS validation contract and negative fixtures only; no live executor completion is claimed by this step."
+}
