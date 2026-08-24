@@ -1,0 +1,40 @@
+{
+  "schema_version": "ignition-138-step06-capability-reauth-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "06",
+  "status": "PASS",
+  "lease": {
+    "lease_id": "lease-ignition-138-r3",
+    "executor_id": "external.codex",
+    "executor_version": "codex-cli 0.144.4",
+    "observed_at": "2026-08-24T08:00:00+08:00",
+    "expires_at": "2026-08-24T08:15:00+08:00",
+    "ttl_seconds": 900,
+    "binary_digest": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477",
+    "interface_digest": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+    "lease_digest": "a03b87bf019e787c30e9a858ed6fdd5cfb4f1f91ce396a9c3ab0800c73ce5675",
+    "live_eligibility": "ELIGIBLE_FOR_LIVE_READONLY",
+    "eligibility_blockers": [],
+    "observed_capabilities": ["repo.read", "structured_progress"],
+    "forbidden_capabilities": ["repo.write", "repo.test", "terminal.run", "browser.read", "browser.act", "web.read", "messaging.send", "subagents", "scheduler"],
+    "workspace_semantics": "EXPLICIT_DISPOSABLE_READ_ONLY_CWD_WITH_ATTEMPT_RUNTIME_SCRATCH",
+    "approval_sandbox_semantics": "CODEX_READ_ONLY_EPHEMERAL_IGNORE_USER_CONFIG_AND_RULES",
+    "structured_output_semantics": "JSONL_PUBLIC_EVENTS_AND_OUTPUT_SCHEMA"
+  },
+  "auth": {
+    "public_login_status": "AUTHENTICATED_PRESENCE_OBSERVED",
+    "evidence_policy": "PUBLIC_LOGIN_STATUS_PRESENCE_ONLY",
+    "credential_content_read": false,
+    "credential_copied": false,
+    "config_mutated": false,
+    "relogin_requested": false
+  },
+  "runtime_and_billing": {
+    "runtime_scratch": "ATTEMPT_EPHEMERAL_WRITABLE",
+    "child_depth": "ONE_LEVEL_MAX",
+    "budget_authority": "NO_NEW_BILLING_AUTHORITY",
+    "provider_or_billing_uncertain": false
+  },
+  "inference_started": false,
+  "claim_ceiling": "Public Codex capability/auth/billing re-attestation only; no live result, validated completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}
