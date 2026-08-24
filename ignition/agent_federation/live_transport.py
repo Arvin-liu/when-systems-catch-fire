@@ -177,6 +177,28 @@ class RuntimeScratchLease:
             result[key] = str(targets[key])
         return result
 
+    def prepare_runtime_paths(self, keys: Sequence[str]) -> None:
+        """Create only declared runtime directories inside the validated lease."""
+
+        targets = {
+            "CODEX_HOME": self.path / ".codex",
+            "XDG_CACHE_HOME": self.path / ".cache",
+            "XDG_CONFIG_HOME": self.path / ".config",
+            "XDG_RUNTIME_DIR": self.path / ".runtime",
+        }
+        for key in keys:
+            if key in {"HOME", "TMPDIR"}:
+                continue
+            if key not in targets:
+                raise LiveTransportError(f"runtime environment key is not preparable: {key}")
+            target = targets[key]
+            if target.exists() and (target.is_symlink() or not target.is_dir()):
+                raise LiveTransportError(f"runtime environment directory is not a safe directory: {key}")
+            target.mkdir(mode=0o700, exist_ok=True)
+            if target.is_symlink() or not target.is_dir():
+                raise LiveTransportError(f"runtime environment directory escaped scratch: {key}")
+            target.chmod(0o700)
+
     def validate(self) -> None:
         if self.path.is_symlink() or not self.path.is_dir():
             raise LiveTransportError("runtime scratch path is missing or symlinked")
@@ -562,6 +584,7 @@ class LiveProcessTransport:
                 candidate = Path(value)
                 if candidate.is_symlink() or not candidate.absolute().resolve(strict=False).is_relative_to(scratch_root):
                     raise LiveTransportError(f"runtime environment path escapes scratch: {key}")
+            runtime_scratch.prepare_runtime_paths(keys)
         except Exception as exc:
             cleanup_status = runtime_scratch.cleanup()
             if cleanup_status == RUNTIME_SCRATCH_FAILED:

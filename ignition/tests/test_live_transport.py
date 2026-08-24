@@ -139,7 +139,7 @@ class LiveTransportTests(unittest.TestCase):
                 path.mkdir()
             lease = RuntimeScratchLease.create(attempt_id="attempt-transport", parent=root, protected_roots=(workspace, *protected))
             env = lease.environment_overrides(("HOME", "TMPDIR", "CODEX_HOME"))
-            code = "from pathlib import Path; import os, json; p=Path(os.environ['CODEX_HOME']); p.mkdir(); (p/'helper').write_text('x'); (Path(os.environ['TMPDIR'])/'tmp').write_text('x'); print(json.dumps({'ready':True}))"
+            code = "from pathlib import Path; import os, json; p=Path(os.environ['CODEX_HOME']); assert p.is_dir(); (p/'helper').write_text('x'); (Path(os.environ['TMPDIR'])/'tmp').write_text('x'); print(json.dumps({'ready':True}))"
             result = LiveProcessTransport(
                 executable_allowlist=(PYTHON,),
                 env_allowlist=("PATH", "HOME", "TMPDIR", "CODEX_HOME"),
@@ -154,6 +154,30 @@ class LiveTransportTests(unittest.TestCase):
             self.assertFalse(result.runtime_scratch_receipt["content_persisted"])
             self.assertFalse(lease.path.exists())
             self.assertTrue((workspace / "input.txt").exists())
+
+    def test_runtime_scratch_prepares_declared_codex_and_xdg_directories(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            workspace = root / "workspace"
+            workspace.mkdir()
+            workspace.chmod(0o555)
+            lease = RuntimeScratchLease.create(attempt_id="attempt-prepared-paths", parent=root, protected_roots=(workspace,))
+            env = lease.environment_overrides(("HOME", "TMPDIR", "CODEX_HOME", "XDG_CACHE_HOME", "XDG_CONFIG_HOME", "XDG_RUNTIME_DIR"))
+            code = (
+                "from pathlib import Path; import os; "
+                "assert all(Path(os.environ[key]).is_dir() for key in ('CODEX_HOME', 'XDG_CACHE_HOME', 'XDG_CONFIG_HOME', 'XDG_RUNTIME_DIR')); "
+                "print('ready')"
+            )
+            result = LiveProcessTransport(
+                executable_allowlist=(PYTHON,),
+                env_allowlist=("PATH", "HOME", "TMPDIR", "CODEX_HOME", "XDG_CACHE_HOME", "XDG_CONFIG_HOME", "XDG_RUNTIME_DIR"),
+            ).run(
+                (PYTHON, "-c", code), cwd=workspace, timeout_seconds=2,
+                env_overrides=env, runtime_scratch=lease,
+                runtime_env_keys=("HOME", "TMPDIR", "CODEX_HOME", "XDG_CACHE_HOME", "XDG_CONFIG_HOME", "XDG_RUNTIME_DIR"),
+            )
+            self.assertEqual(result.returncode, 0)
+            self.assertEqual(result.runtime_scratch_cleanup_status, "CLEANED")
 
     def test_runtime_scratch_rejects_workspace_env_and_nonwritable_root(self):
         with tempfile.TemporaryDirectory() as directory:
