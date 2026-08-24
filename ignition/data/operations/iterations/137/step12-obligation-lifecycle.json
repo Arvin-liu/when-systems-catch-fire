@@ -1,0 +1,24 @@
+{
+  "schema_version": "ignition-137-step12-obligation-lifecycle-r1",
+  "task_id": "IGNITION-20260824-137",
+  "live_external_invocation": {
+    "status": "OPEN",
+    "reason": "No Codex structured result reached independent validation; Hermes reconciliation remains open.",
+    "historical_evidence_preserved": [
+      "step01-hermes-timeout-reconciliation.json",
+      "step09-live-codex-attempt.json",
+      "step10-independent-validation-outcome.json"
+    ]
+  },
+  "obligation_transitions": {
+    "LIVE_EXTERNAL_INVOCATION": "REMAINS_OPEN",
+    "LIVE_MULTI_EXECUTOR_VALIDATION": "NOT_CREATED_BY_THIS_TASK",
+    "LIVE_WRITE_OR_EXTERNAL_SIDE_EFFECT_NOT_PROVEN": "REMAINS_OPEN",
+    "LIVE_PRODUCTION_RELIABILITY_NOT_ESTABLISHED": "REMAINS_OPEN",
+    "EPISTEMICALLY_ACCEPTED": 0
+  },
+  "current_ceiling": "LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED",
+  "current_state": "CURRENT_WITH_OPEN_OBLIGATIONS",
+  "retry_policy": "NO_BLIND_RETRY",
+  "claim_ceiling": "A bounded external invocation was observed and failed closed; no obligation closure or capability-generalization is inferred."
+}
