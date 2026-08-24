@@ -139,6 +139,14 @@ class LiveFilesystemTests(unittest.TestCase):
             contract = self._contract(Path(directory), auth_source_ref="auth://existing-public-login-state")
             self.assertIs(contract.validate_paths(), contract)
 
+    def test_auth_mutation_and_secret_materialization_are_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaisesRegex(FederationContractError, "config mutation"):
+                self._contract(Path(directory), config_mutation_allowed=True)
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaisesRegex(FederationContractError, "secret materialization"):
+                self._contract(Path(directory), secret_materialization=True)
+
 
 if __name__ == "__main__":
     unittest.main()

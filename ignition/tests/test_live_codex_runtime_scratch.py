@@ -107,6 +107,10 @@ class LiveCodexRuntimeScratchTests(unittest.TestCase):
             self.assertEqual(observation.runtime_scratch_cleanup_status, "CLEANED")
             self.assertEqual(observation.runtime_scratch_receipt["cleanup_status"], "CLEANED")
             self.assertFalse(observation.runtime_scratch_receipt["content_persisted"])
+            self.assertNotEqual(
+                observation.runtime_scratch_receipt["digest_before"],
+                observation.runtime_scratch_receipt["digest_after"],
+            )
             self.assertEqual(tree_digest(workspace), before)
             self.assertEqual(stat.S_IMODE(workspace.stat().st_mode), 0o555)
             self.assertEqual(stat.S_IMODE((workspace / "input.txt").stat().st_mode), 0o444)

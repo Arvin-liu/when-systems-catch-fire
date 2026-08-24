@@ -220,6 +220,11 @@ class LiveCodexAdapter:
         except FederationContractError as exc:
             raise LiveAdapterError(f"Codex filesystem domain contract failed: {exc}") from exc
 
+    @staticmethod
+    def _assert_safe_argv(argv: Sequence[str]) -> None:
+        if any("dangerously" in item or item == "--add-dir" or "workspace-write" in item for item in argv):
+            raise LiveAdapterError("unsafe Codex flag leaked into the live argv")
+
     def observe_lease(self, *, lease_id: str, observed_at: str, expires_at: str, ttl_seconds: float) -> LiveCapabilityLease:
         version_result, help_result = self._probe()
         version = _summary(version_result.stdout or version_result.stderr)
@@ -299,8 +304,7 @@ class LiveCodexAdapter:
                 raise LiveAdapterError("current Codex CLI does not expose --output-schema")
             argv_prefix.extend(("--output-schema", str(schema_path)))
         argv = tuple(argv_prefix + ["--cd", str(self.workspace), prompt])
-        if any("dangerously" in item or item == "--add-dir" or "workspace-write" in item for item in argv):
-            raise LiveAdapterError("unsafe Codex flag leaked into the live argv")
+        self._assert_safe_argv(argv)
         return argv
 
     def dispatch(self, envelope: LiveDispatchEnvelope) -> LiveAdapterObservation:
