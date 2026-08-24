@@ -1,0 +1,40 @@
+{
+  "schema_version": "ignition-137-step04-live-child-reentrancy-guard-r1",
+  "task_id": "IGNITION-20260824-137",
+  "step": "04",
+  "implementation": {
+    "module": "ignition/agent_federation/live_child_guard.py",
+    "adapter": "ignition/agent_federation/live_adapters.py",
+    "marker": "POINTFIRE_LIVE_CHILD_DEPTH",
+    "max_child_depth": 1
+  },
+  "child_contract": {
+    "parent_context_forwarded": false,
+    "prompt_inputs": ["synthetic_input_ref", "success_criteria", "output_contract"],
+    "prompt_parent_task_body": false,
+    "prompt_parent_formal_instructions": false,
+    "environment_allowlist": ["PATH", "LANG", "LC_ALL", "TMPDIR", "HOME", "CODEX_HOME", "POINTFIRE_LIVE_CHILD_DEPTH"],
+    "home_binding": "DISPOSABLE_WORKSPACE",
+    "tmp_binding": "DISPOSABLE_WORKSPACE",
+    "formal_repo_access": false,
+    "relay_access": false,
+    "real_user_profile_access": "CONFIG_AND_PROFILE_NOT_FORWARDED; AUTH_REF_ONLY",
+    "new_agent_spawn_capability": false
+  },
+  "negative_guard": {
+    "depth_0_to_1": "ALLOWED",
+    "depth_1_to_2": "REJECTED_REENTRANCY",
+    "adapter_at_depth_1": "REJECTED_REENTRANCY",
+    "fake_child_proof": "PASS"
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_child_guard ignition.tests.test_live_codex_adapter ignition.tests.test_live_execution -v",
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS",
+    "live_inference": "NOT_RUN"
+  },
+  "claim_ceiling": "One-level child-context and reentrancy guard evidence only; no external executor result or completion is inferred."
+}

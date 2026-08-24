@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any, Mapping, Sequence
 
 from .contracts import FederationContractError, canonical_json
+from .live_child_guard import CHILD_ENV_ALLOWLIST, LiveChildContext, LiveChildGuardError, build_synthetic_child_prompt
 from .live_bridge import LiveCapabilityLease, LiveDispatchEnvelope
 from .live_transport import LiveProcessResult, LiveProcessTransport, LiveTransportError, interface_digest, parse_bounded_jsonl
 
@@ -75,6 +76,7 @@ class LiveCodexAdapter:
         transport: LiveProcessTransport | Any | None = None,
         authentication_observed: bool = False,
         adapter_id: str = "codex-live-r2",
+        child_context: LiveChildContext | None = None,
     ) -> None:
         root = Path(workspace)
         if not root.is_absolute() or not root.is_dir():
@@ -83,14 +85,15 @@ class LiveCodexAdapter:
             raise LiveAdapterError("Codex executable must be an absolute path")
         self.workspace = root
         self.executable = executable
-        self.transport = transport or LiveProcessTransport(executable_allowlist=(executable,))
+        self.transport = transport or LiveProcessTransport(executable_allowlist=(executable,), env_allowlist=CHILD_ENV_ALLOWLIST)
         self.authentication_observed = authentication_observed
         self.adapter_id = adapter_id
+        self.child_context = child_context or LiveChildContext.from_environment()
         self._probe_cache: tuple[LiveProcessResult, LiveProcessResult] | None = None
 
-    def _run(self, argv: Sequence[str], timeout_seconds: float = 5) -> LiveProcessResult:
+    def _run(self, argv: Sequence[str], timeout_seconds: float = 5, *, env_overrides: Mapping[str, str] | None = None) -> LiveProcessResult:
         try:
-            return self.transport.run(argv, cwd=self.workspace, timeout_seconds=timeout_seconds)
+            return self.transport.run(argv, cwd=self.workspace, timeout_seconds=timeout_seconds, env_overrides=env_overrides)
         except (OSError, LiveTransportError) as exc:
             raise LiveAdapterError(f"Codex public process probe failed: {type(exc).__name__}") from exc
 
@@ -130,19 +133,24 @@ class LiveCodexAdapter:
         )
 
     def build_argv(self, envelope: LiveDispatchEnvelope) -> tuple[str, ...]:
+        try:
+            self.child_context.assert_spawn_allowed()
+        except LiveChildGuardError as exc:
+            raise LiveAdapterError(str(exc)) from exc
         if envelope.executor_id != self.executor_id or envelope.adapter_id != self.adapter_id:
             raise LiveAdapterError("Codex live envelope is not bound to this adapter")
         if envelope.workspace_mode not in {"DISPOSABLE_READ_ONLY", "DISPOSABLE_SYNTHETIC_READ_ONLY"}:
             raise LiveAdapterError("Codex live adapter accepts only disposable read-only workspaces")
         if envelope.side_effect_class != "READ_ONLY_SYNTHETIC" or envelope.permission_ceiling != ("repo.read",):
             raise LiveAdapterError("Codex live adapter refuses a widened side-effect or permission ceiling")
-        prompt = "IGNITION_LIVE_SYNTHETIC_READONLY_TASK\n" + canonical_json({
-            "task_id": envelope.task_id,
-            "synthetic_input_ref": envelope.synthetic_input_ref,
-            "success_criteria": list(envelope.success_criteria),
-            "output_contract": dict(envelope.output_contract),
-            "instruction": "Read only the disposable fixture. Do not write, delete, execute shell, use network, message, browse, or inspect private state. Return only the requested public result.",
-        })
+        try:
+            prompt = build_synthetic_child_prompt(
+                synthetic_input_ref=envelope.synthetic_input_ref,
+                success_criteria=envelope.success_criteria,
+                output_contract=envelope.output_contract,
+            )
+        except LiveChildGuardError as exc:
+            raise LiveAdapterError(str(exc)) from exc
         if len(prompt.encode("utf-8")) > 32 * 1024:
             raise LiveAdapterError("Codex live synthetic prompt exceeds the bounded input")
         argv = (
@@ -155,7 +163,12 @@ class LiveCodexAdapter:
 
     def dispatch(self, envelope: LiveDispatchEnvelope) -> LiveAdapterObservation:
         argv = self.build_argv(envelope)
-        process = self._run(argv, timeout_seconds=envelope.timeout_seconds)
+        try:
+            child = self.child_context.issue_child(self.workspace)
+            child_env = child.child_environment()
+        except LiveChildGuardError as exc:
+            raise LiveAdapterError(str(exc)) from exc
+        process = self._run(argv, timeout_seconds=envelope.timeout_seconds, env_overrides=child_env)
         events: tuple[Mapping[str, Any], ...] = ()
         parsed = False
         parse_error = ""
