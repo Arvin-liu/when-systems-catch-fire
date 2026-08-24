@@ -1,0 +1,38 @@
+{
+  "schema_version": "ignition-138-step11-obligation-semantics-r1",
+  "task_id": "IGNITION-20260824-138",
+  "status": "PASS_OBLIGATIONS_RETAINED_OPEN",
+  "hermes": {
+    "source_attempt": "live-hermes-136",
+    "reconciliation": "RECONCILIATION_REMAINS_OPEN",
+    "reconciled_no_observed_side_effect": false,
+    "retry_or_resume": "NOT_RUN_NO_JUSTIFIED_RETRY",
+    "channel_action": false
+  },
+  "openclaw": {
+    "invocation": "NOT_RUN_SAFETY_BOUNDARY_UNRESOLVED",
+    "blockers_preserved": [
+      "disposable workspace binding not publicly proven",
+      "channel-off boundary not publicly proven",
+      "explicit read-only permission ceiling not publicly proven"
+    ]
+  },
+  "codex": {
+    "validated_completion": false,
+    "LIVE_EXTERNAL_INVOCATION": "REMAINS_OPEN",
+    "ceiling": "LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED",
+    "real_inference_invocation_count": 1,
+    "second_invocation": "FORBIDDEN_AUTH_SOURCE_BOUNDARY"
+  },
+  "obligation_transitions": {
+    "LIVE_MULTI_EXECUTOR_VALIDATION": "NOT_CREATED_BY_THIS_TASK",
+    "LIVE_EXECUTOR_REPEATABILITY_RELIABILITY": "NOT_CREATED_BY_THIS_TASK",
+    "LIVE_WRITE_SIDE_EFFECT_VALIDATION": "REMAINS_OPEN",
+    "LIVE_EXTERNAL_EFFECT_EXACTLY_ONCE": "REMAINS_OPEN",
+    "LIVE_PRODUCTION_AND_EXTERNAL_VALIDITY": "REMAINS_OPEN",
+    "EPISTEMICALLY_ACCEPTED": 0
+  },
+  "current_state": "CURRENT_WITH_OPEN_OBLIGATIONS",
+  "retry_policy": "NO_BLIND_RETRY",
+  "claim_ceiling": "Repository-local obligation/lifecycle bookkeeping only; no live validated completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}
