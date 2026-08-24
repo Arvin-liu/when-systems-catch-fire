@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://when-systems-catch-fire.invalid/schemas/operations/full-regression-runner-r1.schema.json",
-  "title": "IGNITION-136 canonical full regression runner contract",
+  "title": "Ignition canonical full regression runner contract",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -24,7 +24,7 @@
   ],
   "properties": {
     "schema_version": {"const": "ignition-full-regression-runner-r1"},
-    "task_id": {"const": "IGNITION-20260823-136"},
+    "task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
     "runner": {"const": "ignition/tools/run_full_regression.py"},
     "repository_root_discovery": {"const": "script_path_then_git_toplevel; never cwd-derived"},
     "application_root": {"const": "ignition"},

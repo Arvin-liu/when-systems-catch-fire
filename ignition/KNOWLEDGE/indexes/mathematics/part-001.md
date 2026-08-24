@@ -19,6 +19,11 @@
   - 可搜索名称：NFC-91c14428966d6512 / """Raised when a live dispatch attempts an unsafe lifecycle transition."""
   - 来源：`agent_federation/live_bridge.py`
   - 依赖：—；被引用：—
+- ["""Terminate the process group and report signals plus proof status.](../../../agent_federation/live_transport.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-61e6994c3b3f823f / """Terminate the process group and report signals plus proof status.
+  - 来源：`agent_federation/live_transport.py`
+  - 依赖：—；被引用：—
 - ["353 条均已生成 proof obligation；351 条生成 empirical obligation"](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-20f4f9ba9e4bec66 / "353 条均已生成 proof obligation；351 条生成 empirical obligation"
@@ -2497,10 +2502,5 @@
 - [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F7341FA39083DD48 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-F7341FA39083DD48 / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F9A6EA0C8B60F498 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-F9A6EA0C8B60F498 / IMPLICIT-003191F281FA43ED
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

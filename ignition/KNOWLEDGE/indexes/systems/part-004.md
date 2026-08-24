@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| Hoel et al. 2013, DOI `10.1073/pnas.1314922110` \| Coarse-graining and candidate causal emergence under effective infor](../../../reports/research/121Q22-probability-systems-source-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7d9ae9ee130cdc41 / \| Hoel et al. 2013, DOI `10.1073/pnas.1314922110` \| Coarse-graining and candidate causal emergence under effective infor
+  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
+  - 依赖：—；被引用：—
+- [\| Holme & Saramäki, temporal networks \| Time-respecting paths and temporal edge activation. \| Static aggregation must no](../../../reports/research/121Q23-network-theory-source-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b757180a89686c47 / \| Holme & Saramäki, temporal networks \| Time-respecting paths and temporal edge activation. \| Static aggregation must no
+  - 来源：`reports/research/121Q23-network-theory-source-map.md`
+  - 依赖：—；被引用：—
+- [\| I_iso\(A,B\) \| 与赛课机制、邻里积分制同构 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-fce5d44480d16f00 / \| I_iso\(A,B\) \| 与赛课机制、邻里积分制同构 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| I_iso\(A,B\) \| 与赛课机制（C-0807~C-0809）同构：同为「指标化评价→价值替代+表演态」 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-81c9091586f09475 / \| I_iso\(A,B\) \| 与赛课机制（C-0807~C-0809）同构：同为「指标化评价→价值替代+表演态」 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| I_iso\(A,B\) \| 无同构案例；结构独特（多教师个案聚合，指标化评价导致表演化假课）。 \|](../../../outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-74f96d6751f87e33 / \| I_iso\(A,B\) \| 无同构案例；结构独特（多教师个案聚合，指标化评价导致表演化假课）。 \|
+  - 来源：`outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [\| Ito and Sagawa 2013, arXiv `1306.2756` \| Information flows and entropy production on stochastic causal networks. \| Do](../../../reports/research/121Q22-probability-systems-source-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-12fdd3f2e219b4bf / \| Ito and Sagawa 2013, arXiv `1306.2756` \| Information flows and entropy production on stochastic causal networks. \| Do
+  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
+  - 依赖：—；被引用：—
+- [\| Kalman 1960, DOI `10.1115/1.3662552` \| State-space filtering and prediction boundaries. \| Do not universalize linear/G](../../../reports/research/121Q22-probability-systems-source-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-090f0918480fa227 / \| Kalman 1960, DOI `10.1115/1.3662552` \| State-space filtering and prediction boundaries. \| Do not universalize linear/G
+  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
+  - 依赖：—；被引用：—
 - [\| MCF \| nodes plus source-target edges \| simple graph representation PASS; typed relation, residue, and claim ceiling ab](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-60256c49058146f7 / \| MCF \| nodes plus source-target edges \| simple graph representation PASS; typed relation, residue, and claim ceiling ab
@@ -2469,38 +2504,3 @@
   - 可搜索名称：NFC-cd8a458da58b8c65 / 对 P5 causal 声明设计因果识别策略
   - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
   - 依赖：P5；被引用：—
-- [对教师群体而言，教室本是逃离会议、材料、投诉、考核等繁杂事务，回归教学本身的喘息空间。但当下以「专业成长」「以赛促教」为名的**赛课**（优质公开课评比）机制，正在不断挤压教师的核心教学时间，这套深度绑定职称、绩效、学校业绩、教研资源的评价](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ae2033cf70b5bc4a / 对教师群体而言，教室本是逃离会议、材料、投诉、考核等繁杂事务，回归教学本身的喘息空间。但当下以「专业成长」「以赛促教」为名的**赛课**（优质公开课评比）机制，正在不断挤压教师的核心教学时间，这套深度绑定职称、绩效、学校业绩、教研资源的评价
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [对每个 `because/therefore/although` 问：来源有明示关系、强语境关系，还是仅仅并置？](../../../docs/language-thought/profiles/en.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-39fe963d075d9019 / 对每个 `because/therefore/although` 问：来源有明示关系、强语境关系，还是仅仅并置？
-  - 来源：`docs/language-thought/profiles/en.md`
-  - 依赖：—；被引用：—
-- [对每个候选执行六组件：C\(x,y\) 因果结构、M\(B_n\) 自举收敛、I_iso\(A,B\) 同构、L_meta 上位概念判定、G_δ 不可判定/缺口、P_meta 元协议投影。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3252ea1bf7612dd8 / 对每个候选执行六组件：C\(x,y\) 因果结构、M\(B_n\) 自举收敛、I_iso\(A,B\) 同构、L_meta 上位概念判定、G_δ 不可判定/缺口、P_meta 元协议投影。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
-  - 依赖：—；被引用：—
-- [封闭退化为永久封锁且无解除机制](../../../docs/governance/meta-protocol-reviews/protocols/S1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a8db0ee8b42a6300 / 封闭退化为永久封锁且无解除机制
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/S1.md`
-  - 依赖：—；被引用：—
-- [将叙事与因果分开；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-576304ca3cd99dea / 将叙事与因果分开；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [将局部成立的机制扩展成全系统或跨系统规律。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7d03b03fce5df88f / 将局部成立的机制扩展成全系统或跨系统规律。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [尝试下一层时，检查它是否改变问题、定义、边界、观察者、机制、干预、残余、潜题或此前层的意义。若全部没有改变，只是换词、堆例子或增加宏大感，应停止。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bb1760ca3124a8cf / 尝试下一层时，检查它是否改变问题、定义、边界、观察者、机制、干预、残余、潜题或此前层的意义。若全部没有改变，只是换词、堆例子或增加宏大感，应停止。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—

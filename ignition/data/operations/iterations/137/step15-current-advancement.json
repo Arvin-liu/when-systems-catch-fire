@@ -1,0 +1,68 @@
+{
+  "schema_version": "ignition-137-step15-current-advancement-r1",
+  "task_id": "IGNITION-20260824-137",
+  "step": "15",
+  "status": "PASS",
+  "canonical_source": {
+    "path": "ignition/data/operations/current-task-lineage-status.json",
+    "from_task_id": "IGNITION-20260823-136",
+    "to_task_id": "IGNITION-20260824-137",
+    "prior_source_sha256": "eec56ce6b5112d2cb7eecc0f1b377f725849161ba90a3135a8b7739452216a45",
+    "execution_contract": "ignition/data/operations/iterations/137/execution-contract-r1.json",
+    "idempotency_key": "IGNITION-20260824-137"
+  },
+  "identity_binding": {
+    "current_formal_task_id": "IGNITION-20260824-137",
+    "current_formal_task_ordinal": 137,
+    "latest_architecture_changing_task_id": "IGNITION-20260823-136",
+    "latest_architecture_task_ordinal": 136,
+    "current_iteration_boundary": 137,
+    "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+    "identity_epoch": "os-control-plane-r5-live-executor-federation-r2",
+    "current_map_version": "0.13.0",
+    "historical_map_version": "0.12.0",
+    "identity_impact": "PRESENTATION_ONLY"
+  },
+  "lifecycle": {
+    "task_id": "IGNITION-20260824-137",
+    "content_phase": "RELEASE_READY",
+    "current_task_terminal": true,
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "embedded_publication_assertion": "NONE"
+  },
+  "live_observation": {
+    "hermes_reconciliation": "OPEN",
+    "hermes_retry": "NOT_AUTHORIZED_NO_BLIND_RETRY",
+    "openclaw": "NOT_ATTEMPTED_UNSAFE_BOUNDARY",
+    "codex_attempt": "MALFORMED_RESULT",
+    "codex_dispatch": "FAILED_VALIDATION",
+    "codex_independent_validation": "NOT_RUN",
+    "codex_workspace": "READ_ONLY_UNCHANGED",
+    "validated_live_completion": false,
+    "live_external_invocation_obligation": "OPEN"
+  },
+  "projection_gates": {
+    "execution_contract": "PASS",
+    "task_lineage": "PASS",
+    "release_lifecycle": "PASS",
+    "iteration_boundary_semantics": "PASS",
+    "historical_compatibility": "PASS",
+    "task_identity_model": "PASS",
+    "current_state_sync": "PASS",
+    "current_surface_semantics": "PASS",
+    "current_volatile_fact_registry": "PASS",
+    "current_projection_determinism": "PASS",
+    "ordinal_binding": "PASS_WITH_PENDING_TERMINAL_EVIDENCE",
+    "state_changelog_append_only": "PASS"
+  },
+  "generated_current_surfaces": [
+    "homepage-identity",
+    "project-current-state",
+    "ai-cold-start",
+    "ai-agents-handoff",
+    "machine-entry",
+    "architecture",
+    "state-changelog"
+  ],
+  "claim_ceiling": "Repository-local Task137 Current identity, projection and bounded live-failure evidence only; no validated live completion, external truth, production readiness, Owner acceptance, publication or epistemic acceptance is inferred."
+}

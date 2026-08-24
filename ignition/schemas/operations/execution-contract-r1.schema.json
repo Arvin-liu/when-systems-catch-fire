@@ -8,12 +8,12 @@
   "properties": {
     "schema_version": {"const": "execution-contract-r1"},
     "contract_id": {"const": "IGNITION_EXECUTION_CONTRACT_R1"},
-    "task_id": {"type": "string", "const": "IGNITION-20260823-136"},
+    "task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
     "control_source": {"$ref": "#/$defs/controlSource"},
     "formal_baseline": {"$ref": "#/$defs/formalBaseline"},
-    "identity_impact": {"const": "ARCHITECTURE_CHANGED"},
-    "expected_task_branch": {"const": "codex/ignition-136-live-external-executor-bridge-r1-20260823"},
-    "expected_receipt_branch": {"const": "relay/receipts/ignition-136-live-external-executor-bridge-r1-20260823"},
+    "identity_impact": {"enum": ["NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"]},
+    "expected_task_branch": {"$ref": "#/$defs/nonblank"},
+    "expected_receipt_branch": {"$ref": "#/$defs/nonblank"},
     "required_release_ref": {"const": "refs/heads/main"},
     "no_owner_intermediate": {"const": true},
     "identity_expectations": {"$ref": "#/$defs/identityExpectations"},
@@ -30,7 +30,7 @@
         "repository": {"const": "Arvin-liu/1111"},
         "ref": {"const": "origin/relay/current"},
         "commit": {"$ref": "#/$defs/sha"},
-        "command_path": {"const": "agent-commands/IGNITION-20260823-136-live-external-executor-bridge-r1.md"}
+        "command_path": {"type": "string", "pattern": "^agent-commands/IGNITION-[0-9]{8}-[0-9]{3}-.+\\.md$"}
       }
     },
     "formalBaseline": {
@@ -48,12 +48,12 @@
       "additionalProperties": false,
       "required": ["current_formal_task", "latest_architecture_changing_task", "previous_canonical_current_task", "previous_formal_task", "release_candidate_task", "publication_witness_task"],
       "properties": {
-        "current_formal_task": {"const": "IGNITION-20260823-136"},
-        "latest_architecture_changing_task": {"const": "IGNITION-20260823-136"},
-        "previous_canonical_current_task": {"const": "IGNITION-20260822-135"},
-        "previous_formal_task": {"const": "IGNITION-20260822-135"},
-        "release_candidate_task": {"const": "IGNITION-20260823-136"},
-        "publication_witness_task": {"const": "IGNITION-20260823-136"}
+        "current_formal_task": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+        "latest_architecture_changing_task": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+        "previous_canonical_current_task": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+        "previous_formal_task": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+        "release_candidate_task": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+        "publication_witness_task": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"}
       }
     }
   }

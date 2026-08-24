@@ -16,13 +16,13 @@ Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
 - current_identity_epoch: `os-control-plane-r5-live-executor-federation-r2`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260823-136` (ordinal `136`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `136` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260823-136`。
-- release_lifecycle: task `IGNITION-20260823-136`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260824-137` (ordinal `137`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `137` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260824-137`。
+- release_lifecycle: task `IGNITION-20260824-137`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260823-136` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `68e2514f7cf82ffa411083469a64eff74c7a21848c7c884f1bd10579a6b2cbf9`。
+- task_lineage: current `IGNITION-20260824-137` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `30b47df03347722362f46c7ac3085d37042f1859fd277761f7c9800a41e902b0`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -86,6 +86,15 @@ TIMED_OUT_EFFECT_UNKNOWN, OpenClaw remains NOT_ATTEMPTED_UNSAFE_BOUNDARY, and
 the live bridge status is LIVE_BRIDGE_IMPLEMENTED /
 LIVE_COMPLETION_NOT_OBSERVED with the LIVE_EXTERNAL_INVOCATION obligation
 still open.
+
+Task 137 is a presentation-only reconciliation continuation: Current formal
+task advances to 137 while Task 136 remains the latest architecture-changing
+task and map `0.13.0` remains Current. The Hermes timeout remains open because
+the old receipt cannot bind a disposable attempt identity; no blind retry was
+performed. One fresh Codex synthetic/read-only dispatch failed closed during
+startup with no exact public result, unchanged fixture workspace and no
+independent validation. This does not establish live completion or alter the
+claim ceiling.
 
 ```mermaid
 flowchart LR

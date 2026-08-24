@@ -27,19 +27,35 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-CONTRACT_PATH = ROOT / "data/operations/iterations/136/execution-contract-r1.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SNAPSHOT_PATH = ROOT / "data/operations/current-snapshot-r1.json"
-PROGRESS_PATH = ROOT / "data/operations/iterations/136/progress.jsonl"
-RESULT_PATH = ROOT / "agent-results/IGNITION-20260823-136-result.md"
-MACHINE_RECEIPT_PATH = ROOT / "agent-results/IGNITION-20260823-136-machine-receipt.json"
-EXPECTED_TASK_ID = "IGNITION-20260823-136"
-EXPECTED_ARCHITECTURE_TASK = "IGNITION-20260823-136"
+
+
+def _current_identity() -> tuple[str, str, int]:
+    lineage = load_json(LINEAGE_PATH)
+    task_id = lineage["task_identity"]["current_formal_task"]
+    architecture_task = lineage["task_identity"]["latest_architecture_changing_task"]
+    return task_id, architecture_task, task_identity.parse_task_id(task_id)["ordinal"]
+
+
+def _current_paths() -> tuple[Path, Path, Path, Path, str, str]:
+    task_id, architecture_task, ordinal = _current_identity()
+    return (
+        ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json",
+        ROOT / f"data/operations/iterations/{ordinal}/progress.jsonl",
+        ROOT / f"agent-results/{task_id}-result.md",
+        ROOT / f"agent-results/{task_id}-machine-receipt.json",
+        task_id,
+        architecture_task,
+    )
 
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+CONTRACT_PATH, PROGRESS_PATH, RESULT_PATH, MACHINE_RECEIPT_PATH, EXPECTED_TASK_ID, EXPECTED_ARCHITECTURE_TASK = _current_paths()
 
 
 def load_progress() -> list[dict[str, Any]]:
@@ -121,7 +137,7 @@ def validate_documents(
         last = progress[-1]
         if last.get("task_id") != EXPECTED_TASK_ID:
             errors.append("PROGRESS_TASK_ID_MISMATCH")
-        if last.get("current_iteration_id") != 136:
+        if last.get("current_iteration_id") != task_identity.parse_task_id(EXPECTED_TASK_ID)["ordinal"]:
             errors.append("PROGRESS_CURRENT_ITERATION_ID_MISMATCH")
 
     if require_result:

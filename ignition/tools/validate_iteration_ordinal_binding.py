@@ -25,19 +25,11 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-CONTRACT_PATH = ROOT / "data/operations/iterations/136/execution-contract-r1.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SNAPSHOT_PATH = ROOT / "data/operations/current-snapshot-r1.json"
 FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 SEMANTICS_PATH = ROOT / "data/operations/iteration-boundary-semantics-r1.json"
-FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260823-136-result.md"
-MACHINE_RECEIPT_PATH = ROOT / "agent-results/IGNITION-20260823-136-machine-receipt.json"
-REPORT_PATH = ROOT / "data/operations/iterations/136/step16-ordinal-binding-gate-r1.json"
-SCHEMA_PATH = ROOT / "schemas/operations/ordinal-binding-gate-136-step16-r1.schema.json"
-
-EXPECTED_TASK_ID = "IGNITION-20260823-136"
-EXPECTED_ARCHITECTURE_TASK = "IGNITION-20260823-136"
 ALIAS_SEMANTICS = "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL"
 FORMAL_ROLES = (
     "execution_contract_task",
@@ -56,6 +48,25 @@ ORDINAL_LINE_RE = re.compile(r"(?:formal task ordinal|current_formal_task_ordina
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _current_paths() -> tuple[Path, Path, Path, Path, str, str, int]:
+    lineage = load_json(LINEAGE_PATH)
+    task_id = lineage["task_identity"]["current_formal_task"]
+    architecture_task = lineage["task_identity"]["latest_architecture_changing_task"]
+    ordinal = task_identity.parse_task_id(task_id)["ordinal"]
+    return (
+        ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json",
+        ROOT / f"agent-results/{task_id}-result.md",
+        ROOT / f"agent-results/{task_id}-machine-receipt.json",
+        ROOT / f"data/operations/iterations/{ordinal}/step15-ordinal-binding-gate-r1.json",
+        task_id,
+        architecture_task,
+        ordinal,
+    )
+
+
+CONTRACT_PATH, FORMAL_RESULT_PATH, MACHINE_RECEIPT_PATH, REPORT_PATH, EXPECTED_TASK_ID, EXPECTED_ARCHITECTURE_TASK, CURRENT_ORDINAL = _current_paths()
 
 
 def _nested(record: dict[str, Any], *keys: str) -> Any:
@@ -421,9 +432,9 @@ def report(*, require_terminal_evidence: bool = False) -> dict[str, Any]:
     pending = pending_roles(records)
     status = "FAIL" if errors else ("PASS" if not pending else "PASS_WITH_PENDING_TERMINAL_EVIDENCE")
     return {
-        "schema_version": "ignition-136-step16-ordinal-binding-gate-r1",
+        "schema_version": f"ignition-{CURRENT_ORDINAL}-step15-ordinal-binding-gate-r1",
         "task_id": EXPECTED_TASK_ID,
-        "step": "16",
+        "step": "15",
         "result": status,
         "binding_chain": records,
         "pending_terminal_roles": pending,

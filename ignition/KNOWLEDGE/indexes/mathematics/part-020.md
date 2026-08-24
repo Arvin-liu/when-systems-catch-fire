@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [验证过程：** 人类智能的L1层（感知、记忆、学习）→ L2层（意识、自我意识、元认知）。人类具有感知、记忆、学习能力，并涌现出意识、自我意识、元认知等更高层级。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-5dfbe928db328bd5 / 验证过程：** 人类智能的L1层（感知、记忆、学习）→ L2层（意识、自我意识、元认知）。人类具有感知、记忆、学习能力，并涌现出意识、自我意识、元认知等更高层级。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 心智的L1层（神经元）→ L2层（神经网络）→ L3层（意识）。心智从神经元层涌现出神经网络层，再从神经网络层涌现出意识层。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3bf1235a3c25fcef / 验证过程：** 心智的L1层（神经元）→ L2层（神经网络）→ L3层（意识）。心智从神经元层涌现出神经网络层，再从神经网络层涌现出意识层。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 心智的每个神经元通过局部连接调整，大脑整体涌现出意识。神经元感知局部输入信息，调整连接强度，无数神经元的局部调整使得大脑整体涌现出意识。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-3f39c26fec1f0d67 / 验证过程：** 心智的每个神经元通过局部连接调整，大脑整体涌现出意识。神经元感知局部输入信息，调整连接强度，无数神经元的局部调整使得大脑整体涌现出意识。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 心智的每个神经元遵循简单的激活规则。神经元感知输入信号，判定激活阈值，响应调整输出信号。无数神经元的局部交互，使得大脑整体涌现出意识。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-f5c8ad52d3796f60 / 验证过程：** 心智的每个神经元遵循简单的激活规则。神经元感知输入信号，判定激活阈值，响应调整输出信号。无数神经元的局部交互，使得大脑整体涌现出意识。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 植物智能的L1层（感知、记忆、学习）→ L2层（意识），但植物停留在L1层，缺乏L2层。植物具有感知、记忆、学习能力，但缺乏意识层级的涌现。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-42f810e3b3d9dbe4 / 验证过程：** 植物智能的L1层（感知、记忆、学习）→ L2层（意识），但植物停留在L1层，缺乏L2层。植物具有感知、记忆、学习能力，但缺乏意识层级的涌现。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证过程：** 蚁群社会的L1层（感知、记忆、学习）→ L2层（意识），但蚁群停留在L1层，缺乏L2层。蚁群具有感知、记忆、学习能力，但缺乏意识层级的涌现。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-4613ac217ec58813 / 验证过程：** 蚁群社会的L1层（感知、记忆、学习）→ L2层（意识），但蚁群停留在L1层，缺乏L2层。蚁群具有感知、记忆、学习能力，但缺乏意识层级的涌现。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [验证：经 GPT 审核确认后，写入 已迁移的历史函数来源/ + INDEX.md 追加行 + 审计](../../../docs/getnote-collision-workflow-final-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-8b31a306c9920a67 / 验证：经 GPT 审核确认后，写入 已迁移的历史函数来源/ + INDEX.md 追加行 + 审计

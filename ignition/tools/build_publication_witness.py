@@ -29,10 +29,8 @@ HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
 SCHEMA_PATH = ROOT / "schemas/operations/publication-witness-r1.schema.json"
-CONTRACT_PATH = ROOT / "data/operations/iterations/136/execution-contract-r1.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
-FORMAL_RESULT_PATH = ROOT / "agent-results/IGNITION-20260823-136-result.md"
 REMOTE_REF = "refs/heads/main"
 REMOTE_TRACKING_REF = "refs/remotes/origin/main"
 SHA_RE = re.compile(r"^[0-9a-f]{40}$")
@@ -54,6 +52,19 @@ class WitnessBuildError(RuntimeError):
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _current_paths() -> tuple[Path, Path]:
+    lineage = load_json(LINEAGE_PATH)
+    task_id = lineage["task_identity"]["current_formal_task"]
+    ordinal = int(task_id.rsplit("-", 1)[1])
+    return (
+        ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json",
+        ROOT / f"agent-results/{task_id}-result.md",
+    )
+
+
+CONTRACT_PATH, FORMAL_RESULT_PATH = _current_paths()
 
 
 def git(*args: str) -> str:

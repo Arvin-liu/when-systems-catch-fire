@@ -2,14 +2,14 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r5-live-executor-federation-r2`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260823-136` (ordinal `136`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `136` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260823-136`。
-- release_lifecycle: task `IGNITION-20260823-136`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260824-137` (ordinal `137`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `137` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260824-137`。
+- release_lifecycle: task `IGNITION-20260824-137`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260823-136` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `68e2514f7cf82ffa411083469a64eff74c7a21848c7c884f1bd10579a6b2cbf9`。
+- task_lineage: current `IGNITION-20260824-137` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `30b47df03347722362f46c7ac3085d37042f1859fd277761f7c9800a41e902b0`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -367,3 +367,18 @@
 - obligations: perform one ordinary fast-forward from the unchanged formal-main baseline, verify `expected SHA == remote refs/heads/main SHA == fresh remote-main clone HEAD`, replay the post-publication Current gate on a clean `main` checkout, and write the independent 1111 publication witness. Reconciliation for the Hermes timeout and `LIVE_EXTERNAL_INVOCATION` remain open.
 - stale_knowledge: Task135 and all earlier release records remain immutable provenance; the Hermes timeout, OpenClaw safety skip and all Task136 candidate repair attempts cannot be upgraded into validated live completion or rewritten as skipped residuals.
 - next_read: read the Task136 formal result, machine receipt, Step17 candidate receipt, Step18 fresh-clone receipt and the post-publication Current-check report before interpreting the independent 1111 witness.
+
+## 2026-08-24 — IGNITION-20260824-137-VALIDATED-LIVE-COMPLETION-RECONCILIATION-R1 — Current continuation
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal-main baseline remains `a1766ec1b96f59eaca45c013cda574cd5224b78f` until the separate candidate publication observation. This entry records the Task137 Current continuation, not formal `main` publication.
+- current_formal_task: `IGNITION-20260824-137` is a terminal `COMPLETED_WITH_CLASSIFIED_RESIDUALS` Current continuation; Task 136 remains the latest architecture-changing task and map `0.13.0` remains Current.
+- task_lineage: `HISTORICAL_UNEXECUTED` remains bounded by `REBASED_INTO_127`; the current successor is `COMPLETED_WITH_CLASSIFIED_RESIDUALS` and does not rewrite historical task status.
+- delta: Task 137 first reconciles the prior Hermes timeout without blind retry, then records one new Codex synthetic/read-only dispatch. The Codex process failed closed during helper startup under the read-only HOME, returned no exact public JSON result and left the fixture workspace unchanged.
+- live_boundary: Hermes reconciliation remains `OPEN`; OpenClaw remains uninvoked because workspace/channel safety could not be proven; the Codex receipt is `MALFORMED_RESULT` / `FAILED_VALIDATION`, with no independent OS validation and no `COMPLETED_VALIDATED` state.
+- identity_boundary: the task is `PRESENTATION_ONLY`; no persistent executor, core component, typed topology relation, identity epoch or map version was added. `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged.
+- authority_changes: Current task-lineage, lifecycle, Current Facts, Current Snapshot and Human Surface projections are synchronized repository-local records; no Owner, provider, channel, browser, remote-Git, billing, production or epistemic authority was added.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; dispatch and failure receipts do not prove external truth, live completion or Goal completion.
+- claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish external truth, production readiness, Owner acceptance, Goal completion, validated live completion or epistemic acceptance.
+- obligations: complete the exact candidate and fresh-clone natural full regressions, then perform the separate formal publication observation and independent 1111 witness; the Hermes reconciliation and `LIVE_EXTERNAL_INVOCATION` obligation remain open.
+- stale_knowledge: Task136 timeout and all earlier task records remain immutable provenance; no prior failure was reclassified as success and no retry was inferred from an unchanged fixture digest.
+- next_read: read `data/operations/iterations/137/execution-contract-r1.json`, the Step 09/10 live attempt and validation receipts, the Step 15 Current-surface receipts, and the eventual candidate/fresh-clone regression evidence.

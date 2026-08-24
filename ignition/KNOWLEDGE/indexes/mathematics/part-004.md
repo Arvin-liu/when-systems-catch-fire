@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [C-0799｜生命起源与自组织](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-9ee4682411cbe0f5 / C-0799｜生命起源与自组织
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
 - [C-0808 对应函数栏标注 D595，完成候选 → 正式闭环。](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-2e22bbf4e1aff082 / C-0808 对应函数栏标注 D595，完成候选 → 正式闭环。
@@ -396,7 +401,7 @@
   - 依赖：—；被引用：—
 - [CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.13.0", "hidden_components": 12, "historical_map_version"](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7e3f5208a803495b / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.13.0", "hidden_components": 12, "historical_map_version"
+  - 可搜索名称：NFC-fbc2c31df3995c30 / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.13.0", "hidden_components": 12, "historical_map_version"
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [D-meta 元同构函数](../../../docs/phi_meta_law.md)
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ff76c5d23cd2c688 / Git commit SHA values and their post-commit CI run IDs are not self-embeddable: adding either to a tracked file creates
   - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [git diff confirms no modifications to architecture-structure-freeze-v1.json, 已迁移的历史函数来源/, 已迁移的历史案例来源/](../../../data/external-research/104-authoritative-selection-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-807fc56b5c9e4973 / git diff confirms no modifications to architecture-structure-freeze-v1.json, 已迁移的历史函数来源/, 已迁移的历史案例来源/
-  - 来源：`data/external-research/104-authoritative-selection-decisions.jsonl`
   - 依赖：—；被引用：—

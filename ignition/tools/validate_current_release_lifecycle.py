@@ -29,8 +29,6 @@ LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 SCHEMA_PATH = ROOT / "schemas/operations/current-release-lifecycle-r1.schema.json"
 LINEAGE_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
-AUDIT_PATH = ROOT / "data/operations/iterations/136/step16-release-lifecycle-audit.json"
-EXECUTION_CONTRACT_PATH = ROOT / "data/operations/iterations/136/execution-contract-r1.json"
 FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 
 PHASES = ["RUNNING", "TERMINAL_CANDIDATE", "RELEASE_READY"]
@@ -44,6 +42,19 @@ def relative(path: Path) -> str:
     return path.resolve().relative_to(REPO_ROOT.resolve()).as_posix()
 
 
+def current_execution_contract_path() -> Path:
+    lineage = load_json(LINEAGE_PATH)
+    task_id = lineage["task_identity"]["current_formal_task"]
+    ordinal = int(task_id.rsplit("-", 1)[1])
+    return ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json"
+
+
+def current_audit_path() -> Path:
+    lineage = load_json(LINEAGE_PATH)
+    ordinal = int(lineage["task_identity"]["current_formal_task"].rsplit("-", 1)[1])
+    return ROOT / f"data/operations/iterations/{ordinal}/step15-release-lifecycle-audit.json"
+
+
 def validate(document: dict[str, Any] | None = None) -> list[str]:
     lifecycle = document if document is not None else load_json(LIFECYCLE_PATH)
     errors = [error.json_path + ": " + error.message for error in Draft202012Validator(load_json(SCHEMA_PATH)).iter_errors(lifecycle)]
@@ -51,7 +62,7 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         return errors
     lineage = load_json(LINEAGE_PATH)
     identity = load_json(IDENTITY_PATH)
-    execution_contract = load_json(EXECUTION_CONTRACT_PATH)
+    execution_contract = load_json(current_execution_contract_path())
     facts = load_json(FACTS_PATH)
     current_task = lineage["current_task"]
     if lifecycle["task_id"] != current_task["task_id"]:
@@ -142,8 +153,9 @@ def main() -> int:
     args = parser.parse_args()
     result = audit()
     if args.write:
-        AUDIT_PATH.write_text(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-        print(f"CURRENT_RELEASE_LIFECYCLE_AUDIT_WRITTEN path={relative(AUDIT_PATH)} result={result['result']}")
+        audit_path = current_audit_path()
+        audit_path.write_text(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        print(f"CURRENT_RELEASE_LIFECYCLE_AUDIT_WRITTEN path={relative(audit_path)} result={result['result']}")
         return 0 if result["result"] == "PASS" else 1
     if result["result"] != "PASS":
         print("CURRENT_RELEASE_LIFECYCLE_INVALID", file=sys.stderr)

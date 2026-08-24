@@ -34,7 +34,7 @@ NATURAL_WINDOW_MIN_SECONDS = 4 * 60 * 60
 TEST_DISCOVERY_ARGS = ("-m", "unittest", "discover", "-s", "tests", "-p", "test*.py")
 VERSION_IMPORTS = {"sympy": "sympy", "z3-solver": "z3", "jsonschema": "jsonschema"}
 FOUNDATION_PYTHON_ENV_VAR = "IGNITION_FOUNDATION_PYTHON"
-ISOLATED_ENV_PREFIX = "ignition-136-foundation-"
+ISOLATED_ENV_PREFIX = "ignition-current-foundation-"
 RAN_RE = re.compile(r"Ran\s+(\d+)\s+tests?\s+in\s+([0-9.]+)s")
 FAILURE_RE = re.compile(r"failures=(\d+)")
 ERROR_RE = re.compile(r"errors=(\d+)")
@@ -43,6 +43,12 @@ SKIP_RE = re.compile(r"skipped=(\d+)")
 
 class RunnerContractError(RuntimeError):
     """Raised when the canonical runner contract cannot be established."""
+
+
+def current_task_id() -> str:
+    lineage_path = APP_ROOT / "data/operations/current-task-lineage-status.json"
+    document = json.loads(lineage_path.read_text(encoding="utf-8"))
+    return document["task_identity"]["current_formal_task"]
 
 
 def relative_to_repo(path: Path, repo_root: Path = REPO_ROOT) -> str:
@@ -509,7 +515,7 @@ def run_full_regression(
 def contract_summary() -> dict[str, Any]:
     return {
         "schema_version": "ignition-full-regression-runner-r1",
-        "task_id": "IGNITION-20260823-136",
+        "task_id": current_task_id(),
         "runner": relative_to_repo(HERE),
         "repository_root_discovery": "script_path_then_git_toplevel; never cwd-derived",
         "application_root": "ignition",

@@ -759,6 +759,11 @@
   - 可搜索名称：NFC-63c865905b988771 / Held-out benchmark accuracy, task orders, baselines and targeted ablations validate the bounded routing mechanism.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [Hermes `live-hermes-136` remains `RECONCILIATION_REMAINS_OPEN`. Because Step 01 did not prove `RECONCILED_NO_OBSERVED_SI](../../../reports/operations/ignition-137-step11-hermes-retry-decision.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-728401ee11c213a0 / Hermes `live-hermes-136` remains `RECONCILIATION_REMAINS_OPEN`. Because Step 01 did not prove `RECONCILED_NO_OBSERVED_SI
+  - 来源：`reports/operations/ignition-137-step11-hermes-retry-decision.md`
+  - 依赖：—；被引用：—
 - [Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。](../../../data/architecture/interactive-system-map.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-05110b2285138586 / Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。
@@ -1138,6 +1143,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-19373a177b5eda1c / link: "已迁移的历史案例来源/0797-C-0802-技术系统失效与可靠性工程.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [live_boundary: Hermes reconciliation remains `OPEN`; OpenClaw remains uninvoked because workspace/channel safety could n](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bc7a34fb55af7a1e / live_boundary: Hermes reconciliation remains `OPEN`; OpenClaw remains uninvoked because workspace/channel safety could n
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [live_boundary: the pilot is synthetic, disposable and read-only; no channel/message, browser, remote Git, executor confi](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1673,6 +1683,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c544cf3b703ae8f0 / not empirical calibration
   - 来源：`data/architecture/probabilistic-system-dynamics/examples/deterministic-system.json`
+  - 依赖：—；被引用：—
+- [not invoked because its workspace/channel boundary remains unsafe.](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bdb0219afb3ea9e9 / not invoked because its workspace/channel boundary remains unsafe.
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
 - [Object D100 defines a mechanism_model within the point-fire framework. Core: 中文：P_track^AI = 1 + \(ε_aware^AI θ_track\)^+。](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-a7a831e03ff69ddf / Pairwise projection is derived and lossy.
   - 来源：`data/architecture/adaptive-relational-network/real-history/pairwise-hyperrelation-projection.json`
-  - 依赖：—；被引用：—
-- [Path dependence: a foundational concept for historical social science](../../../data/external-research/088-external-source-atlas-v2.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-efea81631b4445ae / Path dependence: a foundational concept for historical social science
-  - 来源：`data/external-research/088-external-source-atlas-v2.jsonl`
-  - 依赖：—；被引用：—
-- [Path**: `data/external-research/104-evidence-tier-schema.md`](../../../data/external-research/120-function-paradigm-atlas/120-provider-and-tool-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a823f161ef38bb9f / Path**: `data/external-research/104-evidence-tier-schema.md`
-  - 来源：`data/external-research/120-function-paradigm-atlas/120-provider-and-tool-audit.md`
-  - 依赖：—；被引用：—
-- [Pearl 2009 *Causality* — `10.1017/cbo9780511803161`](../../../data/external-research/088-FINAL-REPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-fea3a4cf67a9ebc4 / Pearl 2009 *Causality* — `10.1017/cbo9780511803161`
-  - 来源：`data/external-research/088-FINAL-REPORT.md`
   - 依赖：—；被引用：—

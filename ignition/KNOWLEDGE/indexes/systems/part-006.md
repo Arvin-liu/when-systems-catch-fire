@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [防掠夺机制的有效性待实证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-743bb570f64eca86 / 防掠夺机制的有效性待实证
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [降级/证伪凝聚中心机制的证据：关键战役参战者并非亲邻单位；猛安谋克关键形态晚成；逃亡/强制记录显示凝聚叙事不成立；控制叛乱、兵力、地形和补给后凝聚无区分力。支持后勤中心：持续补给、马匹轮换、速度和路线选择与胜负强对应。支持指挥崩溃中心：撤军](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7e0f48c5107a4be2 / 降级/证伪凝聚中心机制的证据：关键战役参战者并非亲邻单位；猛安谋克关键形态晚成；逃亡/强制记录显示凝聚叙事不成立；控制叛乱、兵力、地形和补给后凝聚无区分力。支持后勤中心：持续补给、马匹轮换、速度和路线选择与胜负强对应。支持指挥崩溃中心：撤军
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [限制适用域，补充反例和竞争机制。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-aee6c121f49e3b5d / 限制适用域，补充反例和竞争机制。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [集体行动的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2affe63614c4f69f / 集体行动的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [需要从整体结构定位入口时，打开\[完整可点击系统图\]\(./architecture/interactive-system-map.md\)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8eaebaae362143b5 / 需要从整体结构定位入口时，打开\[完整可点击系统图\]\(./architecture/interactive-system-map.md\)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [项目不采用以下强主张：语言决定可思考的内容；不同语言具有不同真值逻辑；一个语言共同体共享不可改变的民族心智；语言表达差异必然对应非语言认知差异。](../../../docs/language-thought/research-boundary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2441822aa54f4b26 / 项目不采用以下强主张：语言决定可思考的内容；不同语言具有不同真值逻辑；一个语言共同体共享不可改变的民族心智；语言表达差异必然对应非语言认知差异。
+  - 来源：`docs/language-thought/research-boundary.md`
+  - 依赖：—；被引用：—
+- [项目的目标不是把世界统一进一个理论，而是把跨域好奇、天马行空的联想、复杂问题的直觉和多领域材料，放进一个更可检查、更克制、更能承认 pending 的工作流程里。](../../../docs/author_motivation_and_boundary_note.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bb642e8379570aeb / 项目的目标不是把世界统一进一个理论，而是把跨域好奇、天马行空的联想、复杂问题的直觉和多领域材料，放进一个更可检查、更克制、更能承认 pending 的工作流程里。
+  - 来源：`docs/author_motivation_and_boundary_note.md`
+  - 依赖：—；被引用：—
 - [首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）](../../ASSET-CARDS.md#asset-hr-42c319dffa9ac5fd)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08） / teacher-competition-first-real-collision-audit-20260708

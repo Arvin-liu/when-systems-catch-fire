@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Path dependence: a foundational concept for historical social science](../../../data/external-research/088-external-source-atlas-v2.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-efea81631b4445ae / Path dependence: a foundational concept for historical social science
+  - 来源：`data/external-research/088-external-source-atlas-v2.jsonl`
+  - 依赖：—；被引用：—
+- [Path**: `data/external-research/104-evidence-tier-schema.md`](../../../data/external-research/120-function-paradigm-atlas/120-provider-and-tool-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a823f161ef38bb9f / Path**: `data/external-research/104-evidence-tier-schema.md`
+  - 来源：`data/external-research/120-function-paradigm-atlas/120-provider-and-tool-audit.md`
+  - 依赖：—；被引用：—
+- [Pearl 2009 *Causality* — `10.1017/cbo9780511803161`](../../../data/external-research/088-FINAL-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-fea3a4cf67a9ebc4 / Pearl 2009 *Causality* — `10.1017/cbo9780511803161`
+  - 来源：`data/external-research/088-FINAL-REPORT.md`
+  - 依赖：—；被引用：—
 - [pending 项：财富自由=复利+退出权 是否可上收为一般机制，待跨域验证](../../../docs/getbrain-book-collision-guide-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b6dbc81acbc4739f / pending 项：财富自由=复利+退出权 是否可上收为一般机制，待跨域验证
@@ -564,6 +579,11 @@
   - 可搜索名称：NFC-621b4efb02b81b2d / Resource support can help cover AI quota, CI, storage, network access, equipment, review, release work, and basic living
   - 来源：`docs/participate.md`
   - 依赖：—；被引用：—
+- [resume unsupported because the planned child is ephemeral and must not inherit](../../../reports/operations/ignition-137-step03-codex-live-eligibility.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c948c621e7574744 / resume unsupported because the planned child is ephemeral and must not inherit
+  - 来源：`reports/operations/ignition-137-step03-codex-live-eligibility.md`
+  - 依赖：—；被引用：—
 - [return. Do not rotate mechanisms mechanically.](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-70db5b2d1632db55 / return. Do not rotate mechanisms mechanically.
@@ -789,6 +809,11 @@
   - 可搜索名称：STEP09 MCF / PSD / ARN / Function OS execution result / STEP09-EXECUTION
   - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
   - 依赖：—；被引用：—
+- [Strict Task137 envelopes now cause the Codex adapter to pass literal argv with](../../../reports/operations/ignition-137-step06-codex-exact-output-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9c292bb8b078eaeb / Strict Task137 envelopes now cause the Codex adapter to pass literal argv with
+  - 来源：`reports/operations/ignition-137-step06-codex-exact-output-contract.md`
+  - 依赖：—；被引用：—
 - [strongest alternative mechanisms;](../../../docs/architecture/mechanism-adjudication-plane.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ff24abfc444d490a / strongest alternative mechanisms;
@@ -853,6 +878,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-caaecba556a3eba0 / Task 136 将 Live External Executor Bridge R1 单列为 Federation 下的 OS-owned 节点：它负责 bounded envelope、capability lease、transpor
   - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
+- [task and map `0.13.0` remains Current. The Hermes timeout remains open because](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6aacde33cf0f34bf / task and map `0.13.0` remains Current. The Hermes timeout remains open because
+  - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
 - [Task retrieval, top-K selection and input-aware output-space fusion are the paper's central mechanism and are evaluated](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1101,7 +1131,7 @@
   - 依赖：—；被引用：—
 - [The provider-neutral live bridge is implemented, but no validated live completion was observed: the bounded Hermes synth](../../../data/architecture/current-system-identity.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-91c35702e7481a56 / The provider-neutral live bridge is implemented, but no validated live completion was observed: the bounded Hermes synth
+  - 可搜索名称：NFC-127167906029eca8 / The provider-neutral live bridge is implemented, but no validated live completion was observed: the bounded Hermes synth
   - 来源：`data/architecture/current-system-identity.json`
   - 依赖：—；被引用：—
 - [The public page mechanism is `.github/workflows/pages.yml`: it copies the root `README.md` into `site/index.md`, builds](../../../reports/operations/121Q25-front-door-audit.md)
@@ -1238,6 +1268,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b6dc6f8060cb1fd7 / This gap ledger establishes a representation gap only; it does not prove that cognition, projects or society are literal
   - 来源：`data/architecture/adaptive-relational-network/network-gap-ledger.json`
+  - 依赖：—；被引用：—
+- [This is a genuine external invocation receipt, but not a validated live completion. Independent answer validation was no](../../../reports/operations/ignition-137-step09-live-codex-attempt.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9de86353b7bb2673 / This is a genuine external invocation receipt, but not a validated live completion. Independent answer validation was no
+  - 来源：`reports/operations/ignition-137-step09-live-codex-attempt.md`
   - 依赖：—；被引用：—
 - [This is a local social-technical example, not the center of 121Q21R.](../../../data/architecture/multiscale-causal-fabric/examples/vehicle-ownership.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-34f171a1451283fa / \| GAP-018 \| No effect system for tracking side effects in function execution \| PARTIALLY_RESOLVED \| MEDIUM \|
   - 来源：`reports/external-research/121Q3-night-final-report.md`
-  - 依赖：—；被引用：—
-- [\| Hoel et al. 2013, DOI `10.1073/pnas.1314922110` \| Coarse-graining and candidate causal emergence under effective infor](../../../reports/research/121Q22-probability-systems-source-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7d9ae9ee130cdc41 / \| Hoel et al. 2013, DOI `10.1073/pnas.1314922110` \| Coarse-graining and candidate causal emergence under effective infor
-  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
-  - 依赖：—；被引用：—
-- [\| Holme & Saramäki, temporal networks \| Time-respecting paths and temporal edge activation. \| Static aggregation must no](../../../reports/research/121Q23-network-theory-source-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b757180a89686c47 / \| Holme & Saramäki, temporal networks \| Time-respecting paths and temporal edge activation. \| Static aggregation must no
-  - 来源：`reports/research/121Q23-network-theory-source-map.md`
-  - 依赖：—；被引用：—
-- [\| I_iso\(A,B\) \| 与赛课机制、邻里积分制同构 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-fce5d44480d16f00 / \| I_iso\(A,B\) \| 与赛课机制、邻里积分制同构 \|
-  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
-  - 依赖：—；被引用：—
-- [\| I_iso\(A,B\) \| 与赛课机制（C-0807~C-0809）同构：同为「指标化评价→价值替代+表演态」 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-81c9091586f09475 / \| I_iso\(A,B\) \| 与赛课机制（C-0807~C-0809）同构：同为「指标化评价→价值替代+表演态」 \|
-  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
-  - 依赖：—；被引用：—
-- [\| I_iso\(A,B\) \| 无同构案例；结构独特（多教师个案聚合，指标化评价导致表演化假课）。 \|](../../../outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-74f96d6751f87e33 / \| I_iso\(A,B\) \| 无同构案例；结构独特（多教师个案聚合，指标化评价导致表演化假课）。 \|
-  - 来源：`outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [\| Ito and Sagawa 2013, arXiv `1306.2756` \| Information flows and entropy production on stochastic causal networks. \| Do](../../../reports/research/121Q22-probability-systems-source-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-12fdd3f2e219b4bf / \| Ito and Sagawa 2013, arXiv `1306.2756` \| Information flows and entropy production on stochastic causal networks. \| Do
-  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
-  - 依赖：—；被引用：—
-- [\| Kalman 1960, DOI `10.1115/1.3662552` \| State-space filtering and prediction boundaries. \| Do not universalize linear/G](../../../reports/research/121Q22-probability-systems-source-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-090f0918480fa227 / \| Kalman 1960, DOI `10.1115/1.3662552` \| State-space filtering and prediction boundaries. \| Do not universalize linear/G
-  - 来源：`reports/research/121Q22-probability-systems-source-map.md`
   - 依赖：—；被引用：—

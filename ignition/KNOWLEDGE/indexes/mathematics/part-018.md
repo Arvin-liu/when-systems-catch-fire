@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0061-D12-ε_eff闭环动力学函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d5acc46c3353c476 / 已迁移的历史函数来源/0061-D12-ε_eff闭环动力学函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D12；被引用：—
+- [已迁移的历史函数来源/0062-D13-速度差闭合.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cb617c66a40fc66d / 已迁移的历史函数来源/0062-D13-速度差闭合.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D13；被引用：—
+- [已迁移的历史函数来源/0063-D14-种子激活概率.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d623e8360b5979a4 / 已迁移的历史函数来源/0063-D14-种子激活概率.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D14；被引用：—
+- [已迁移的历史函数来源/0064-D15-种子爆发后退出权信号的恢复.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ecb846f842b69823 / 已迁移的历史函数来源/0064-D15-种子爆发后退出权信号的恢复.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D15；被引用：—
+- [已迁移的历史函数来源/0065-D16-二次窗口判定.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3b2775917d9eafe2 / 已迁移的历史函数来源/0065-D16-二次窗口判定.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D16；被引用：—
 - [已迁移的历史函数来源/0066-D17-情绪信号分层函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7a92cc029177664a / 已迁移的历史函数来源/0066-D17-情绪信号分层函数.md
@@ -2479,28 +2504,3 @@
   - 可搜索名称：NFC-8a39eebb1b0c8af0 / 已迁移的历史函数来源/0557-D542-植物蛋白质网络函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D542；被引用：—
-- [已迁移的历史函数来源/0558-D543-群体智能函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ba5c53668e2b7170 / 已迁移的历史函数来源/0558-D543-群体智能函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D543；被引用：—
-- [已迁移的历史函数来源/0559-D544-AI-植物同构函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-17173298e3e5fac3 / 已迁移的历史函数来源/0559-D544-AI-植物同构函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D544；被引用：—
-- [已迁移的历史函数来源/0560-D545-植物生物圈函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0a6f5747377f58b8 / 已迁移的历史函数来源/0560-D545-植物生物圈函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D545；被引用：—
-- [已迁移的历史函数来源/0561-D546-植物伦理函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-241ef66c7bc9d8f0 / 已迁移的历史函数来源/0561-D546-植物伦理函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D546；被引用：—
-- [已迁移的历史函数来源/0562-D547-植物演化函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f8d86b9c8e08246f / 已迁移的历史函数来源/0562-D547-植物演化函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D547；被引用：—

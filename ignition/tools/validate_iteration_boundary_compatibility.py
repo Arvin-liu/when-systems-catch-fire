@@ -24,8 +24,6 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-BASELINE_SHA = "3acf15ea4c1b1c27eb6e8b9cadbc4f0526bdfddb"
-REPORT_PATH = ROOT / "data/operations/iterations/136/step16-historical-compatibility-r1.json"
 HISTORICAL_RECEIPTS = {
     123: ROOT / "data/operations/iterations/123/current-state-sync-receipt.json",
     124: ROOT / "data/operations/iterations/124/current-state-sync-receipt.json",
@@ -57,13 +55,25 @@ def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _current_task_identity() -> tuple[str, int]:
+    lineage = load_json(ROOT / "data/operations/current-task-lineage-status.json")
+    task_id = lineage["task_identity"]["current_formal_task"]
+    return task_id, int(task_id.rsplit("-", 1)[1])
+
+
+CURRENT_TASK_ID, CURRENT_ORDINAL = _current_task_identity()
+REPORT_PATH = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}/step15-historical-compatibility-r1.json"
+
+
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def unchanged_from_baseline(path: Path) -> bool:
+    contract = load_json(ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}/execution-contract-r1.json")
+    baseline_sha = contract["formal_baseline"]["sha"]
     completed = subprocess.run(
-        ["git", "diff", "--quiet", BASELINE_SHA, "HEAD", "--", path.relative_to(REPO_ROOT).as_posix()],
+        ["git", "diff", "--quiet", baseline_sha, "HEAD", "--", path.relative_to(REPO_ROOT).as_posix()],
         cwd=REPO_ROOT,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
@@ -80,7 +90,7 @@ def _current_projection_audit() -> tuple[list[str], dict[str, Any]]:
     lifecycle = load_json(ROOT / "data/operations/current-release-lifecycle-r1.json")
     facts = load_json(ROOT / "data/architecture/current-facts.json")
     snapshot = load_json(ROOT / "data/operations/current-snapshot-r1.json")
-    receipt = load_json(ROOT / "data/operations/iterations/136/current-state-sync-receipt.json")
+    receipt = load_json(ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}/current-state-sync-receipt.json")
     identity_projection = {
         "current_formal_task_id": identity.get("current_formal_task_id"),
         "current_formal_task_ordinal": identity.get("current_formal_task_ordinal"),
@@ -175,9 +185,9 @@ def build_report() -> dict[str, Any]:
     historical_errors, historical = _historical_audit()
     errors = current_errors + historical_errors
     return {
-        "schema_version": "ignition-136-step16-historical-compatibility-r1",
-        "task_id": "IGNITION-20260823-136",
-        "step": "16",
+        "schema_version": f"ignition-{CURRENT_ORDINAL}-step15-historical-compatibility-r1",
+        "task_id": CURRENT_TASK_ID,
+        "step": "15",
         "status": "PASS" if not errors else "FAIL",
         "compatibility_contract": {
             "deprecated_field": "current_iteration_boundary",

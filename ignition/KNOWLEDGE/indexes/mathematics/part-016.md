@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [干预机会面积函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D285 / 干预机会面积函数 / D285
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D360；被引用：CLAIM-D417, NFC-1c59965aeb858074, NFC-25e5efc4e8dfa3b9, NFC-5a421bb208e5d257
+- [并同时保存 `framing_deltas`、`unmapped_residue`、`claim_ceiling`、provenance 与 version。所谓 `normalized_meaning_candidate` 只是便于比较的](../../../docs/architecture/language-thought-logic-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-033c9ef144851d34 / 并同时保存 `framing_deltas`、`unmapped_residue`、`claim_ceiling`、provenance 与 version。所谓 `normalized_meaning_candidate` 只是便于比较的
+  - 来源：`docs/architecture/language-thought-logic-plane.md`
+  - 依赖：—；被引用：—
+- [幽灵-不可逆竞争函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D465 / 幽灵-不可逆竞争函数 / D465
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：D451, D464, D541；被引用：D520, NFC-73f3f09c5e5fab65, NFC-7c267d1a03e4a85f, NFC-96ab636bfb5bde4c
+- [幽灵超指数衰减函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D464 / 幽灵超指数衰减函数 / D464
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D451, D541；被引用：D465, D466, D520, CLAIM-D465
+- [幽灵跳变阻尼函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D470 / 幽灵跳变阻尼函数 / D470
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：D451, D469, D541；被引用：NFC-4c3ac42ce6581d0d, NFC-bbe39573b1c85c00, NFC-c0fdf5697b242f71, NFC-c5fb92db75a81dd0
 - [应约者感知退化](../../../data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D6 / 应约者感知退化 / D6
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-54657b1a8e777c5b / 有边界条件**（函数不适用范围；案例不能推出的普遍结论）；
   - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [有限温临界指数修正函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D415 / 有限温临界指数修正函数 / D415
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-3111ee301be73ebc, NFC-608405b308e958a5, NFC-72c2b38e85358b05, NFC-956b425544a29809
-- [未声称外部证明科学/数学定理：是](../../../outputs/audit/project-body-version-upgrade-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-679b16149975f327 / 未声称外部证明科学/数学定理：是
-  - 来源：`outputs/audit/project-body-version-upgrade-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [未定义成本的边界，默认只算直接投入，容易把生命、生态、代际与主体性代价排除在外（歧义）。](../../../docs/governance/meta-protocol-reviews/protocols/V2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f4add2c37d2dd927 / 未定义成本的边界，默认只算直接投入，容易把生命、生态、代际与主体性代价排除在外（歧义）。
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/V2.md`
-  - 依赖：—；被引用：—
-- [未收敛新发现函数化（4条），验证了因果光锥在物理运动、认知学习、社会传播中的普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bda36f53ff391cbd / 未收敛新发现函数化（4条），验证了因果光锥在物理运动、认知学习、社会传播中的普适性。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [未收敛新发现函数化（4条），验证了时间尺度同构在生物系统、知识系统、组织系统中的普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7b4d5756ad8bc8e5 / 未收敛新发现函数化（4条），验证了时间尺度同构在生物系统、知识系统、组织系统中的普适性。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260824-137",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "e5529e107e2fbed9bddf7b9e0b621fae477727cb",
+    "command_path": "agent-commands/IGNITION-20260824-137-validated-live-completion-reconciliation-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "a1766ec1b96f59eaca45c013cda574cd5224b78f"
+  },
+  "identity_impact": "PRESENTATION_ONLY",
+  "expected_task_branch": "codex/ignition-137-validated-live-completion-reconciliation-r1-20260824",
+  "expected_receipt_branch": "relay/receipts/ignition-137-validated-live-completion-reconciliation-r1-20260824",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260824-137",
+    "latest_architecture_changing_task": "IGNITION-20260823-136",
+    "previous_canonical_current_task": "IGNITION-20260823-136",
+    "previous_formal_task": "IGNITION-20260823-136",
+    "release_candidate_task": "IGNITION-20260824-137",
+    "publication_witness_task": "IGNITION-20260824-137"
+  },
+  "claim_ceiling": "Task137 repository-local validated-live-completion and reconciliation attempt evidence only; it grants no Owner authority, truth authority, production readiness, validated external completion, formal publication or epistemic acceptance."
+}

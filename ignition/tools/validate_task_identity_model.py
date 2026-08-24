@@ -11,12 +11,24 @@ from typing import Any
 
 from jsonschema import Draft202012Validator
 
+try:
+    from tools import task_identity
+except ImportError:  # direct script / tools-on-PYTHONPATH execution
+    import task_identity
+
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
 MODEL_PATH = ROOT / "data/operations/task-identity-model-r1.json"
 SCHEMA_PATH = ROOT / "schemas/operations/task-identity-model-r1.schema.json"
+
+
+def current_execution_contract_path() -> str:
+    lineage = load_json(ROOT / "data/operations/current-task-lineage-status.json")
+    task_id = lineage["task_identity"]["current_formal_task"]
+    ordinal = task_identity.parse_task_id(task_id)["ordinal"]
+    return f"ignition/data/operations/iterations/{ordinal}/execution-contract-r1.json"
 
 ROLE_KEYS = (
     "current_formal_task",
@@ -55,7 +67,7 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("latest_architecture_changing_task must be sourced from canonical task lineage")
     if bindings["latest_architecture_changing_task"]["json_pointer"] != "/task_identity/latest_architecture_changing_task":
         errors.append("latest_architecture_changing_task JSON pointer is not canonical")
-    if bindings["release_candidate_task"]["source_path"] != "ignition/data/operations/iterations/136/execution-contract-r1.json":
+    if bindings["release_candidate_task"]["source_path"] != current_execution_contract_path():
         errors.append("release_candidate_task must be sourced from the current execution contract")
     if not bindings["publication_witness_task"]["source_path"].startswith("Arvin-liu/1111:"):
         errors.append("publication_witness_task must remain in the control repository")

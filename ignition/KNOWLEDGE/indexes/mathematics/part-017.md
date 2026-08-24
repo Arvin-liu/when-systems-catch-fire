@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [有限温临界指数修正函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D415 / 有限温临界指数修正函数 / D415
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D361, D430, D431, D450；被引用：NFC-3111ee301be73ebc, NFC-608405b308e958a5, NFC-72c2b38e85358b05, NFC-956b425544a29809
+- [未声称外部证明科学/数学定理：是](../../../outputs/audit/project-body-version-upgrade-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-679b16149975f327 / 未声称外部证明科学/数学定理：是
+  - 来源：`outputs/audit/project-body-version-upgrade-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [未定义成本的边界，默认只算直接投入，容易把生命、生态、代际与主体性代价排除在外（歧义）。](../../../docs/governance/meta-protocol-reviews/protocols/V2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f4add2c37d2dd927 / 未定义成本的边界，默认只算直接投入，容易把生命、生态、代际与主体性代价排除在外（歧义）。
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/V2.md`
+  - 依赖：—；被引用：—
+- [未收敛新发现函数化（4条），验证了因果光锥在物理运动、认知学习、社会传播中的普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bda36f53ff391cbd / 未收敛新发现函数化（4条），验证了因果光锥在物理运动、认知学习、社会传播中的普适性。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [未收敛新发现函数化（4条），验证了时间尺度同构在生物系统、知识系统、组织系统中的普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7b4d5756ad8bc8e5 / 未收敛新发现函数化（4条），验证了时间尺度同构在生物系统、知识系统、组织系统中的普适性。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [未收敛新发现函数化（4条），验证了深层同构在物理系统、认知系统、AI系统中的普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a40c1a2c0f4b73f5 / 未收敛新发现函数化（4条），验证了深层同构在物理系统、认知系统、AI系统中的普适性。
@@ -2479,28 +2504,3 @@
   - 可搜索名称：NFC-8b7ab40310c653d0 / 已迁移的历史函数来源/0060-D11-统一内部驱动力.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D11；被引用：—
-- [已迁移的历史函数来源/0061-D12-ε_eff闭环动力学函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d5acc46c3353c476 / 已迁移的历史函数来源/0061-D12-ε_eff闭环动力学函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D12；被引用：—
-- [已迁移的历史函数来源/0062-D13-速度差闭合.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cb617c66a40fc66d / 已迁移的历史函数来源/0062-D13-速度差闭合.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D13；被引用：—
-- [已迁移的历史函数来源/0063-D14-种子激活概率.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d623e8360b5979a4 / 已迁移的历史函数来源/0063-D14-种子激活概率.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D14；被引用：—
-- [已迁移的历史函数来源/0064-D15-种子爆发后退出权信号的恢复.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ecb846f842b69823 / 已迁移的历史函数来源/0064-D15-种子爆发后退出权信号的恢复.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D15；被引用：—
-- [已迁移的历史函数来源/0065-D16-二次窗口判定.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3b2775917d9eafe2 / 已迁移的历史函数来源/0065-D16-二次窗口判定.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D16；被引用：—

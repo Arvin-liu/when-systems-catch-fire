@@ -141,11 +141,18 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
     lineage = load_json(sync.resolve_repo_path(contract["current_task_lineage"]["source_path"]))
     try:
         current_ordinal = task_identity.parse_task_id(lineage["task_identity"]["current_formal_task"])["ordinal"]
+        architecture_ordinal = task_identity.parse_task_id(lineage["task_identity"]["latest_architecture_changing_task"])["ordinal"]
     except (KeyError, task_identity.TaskIdentityError) as exc:
         raise ValueError(f"cannot derive current live-evidence ordinal: {exc}") from exc
     for relative_path in (
-        f"ignition/data/operations/iterations/{current_ordinal}/step11-live-preflight.json",
-        f"ignition/data/operations/iterations/{current_ordinal}/step13-live-execution-receipt.json",
+        # Task136 used the generic preflight/receipt names; Task137 records
+        # its current-cli eligibility and bounded attempt under explicit
+        # step names.  Keep both forms so historical current projections can
+        # still be regenerated without importing a newer task's vocabulary.
+        f"ignition/data/operations/iterations/{current_ordinal}/step03-codex-live-eligibility.json",
+        f"ignition/data/operations/iterations/{current_ordinal}/step09-live-codex-attempt.json",
+        f"ignition/data/operations/iterations/{architecture_ordinal}/step11-live-preflight.json",
+        f"ignition/data/operations/iterations/{architecture_ordinal}/step13-live-execution-receipt.json",
     ):
         candidate = sync.resolve_repo_path(relative_path)
         if candidate.is_file():
@@ -188,24 +195,45 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
     live_statuses = {row["executor_id"]: row.get("live_smoke", {}).get("status", "UNDECLARED") for row in executors}
     live_ceiling = "NOT_RUN_LIVE_EXTERNAL_INVOCATION" if any(status.startswith("NOT_RUN") for status in live_statuses.values()) else "RECORDED_BOUNDED_PROBES_ONLY"
     current_ordinal = iteration["current_formal_task_ordinal"]
-    preflight_path = ROOT / f"data/operations/iterations/{current_ordinal}/step11-live-preflight.json"
-    live_receipt_path = ROOT / f"data/operations/iterations/{current_ordinal}/step13-live-execution-receipt.json"
-    if preflight_path.is_file():
+    architecture_ordinal = iteration["latest_architecture_task_ordinal"]
+    live_evidence_paths = [
+        ROOT / f"data/operations/iterations/{current_ordinal}/step03-codex-live-eligibility.json",
+        ROOT / f"data/operations/iterations/{architecture_ordinal}/step11-live-preflight.json",
+    ]
+    for preflight_path in live_evidence_paths:
+        if not preflight_path.is_file():
+            continue
         preflight = load_json(preflight_path)
-        for entry in preflight.get("entries", []):
+        entries = list(preflight.get("entries", []))
+        executor = preflight.get("executor")
+        lease = preflight.get("capability_lease")
+        if isinstance(executor, dict):
+            entries.append(executor)
+        if isinstance(lease, dict) and isinstance(executor, dict):
+            entries.append({"executor_id": executor.get("executor_id"), "eligibility": lease.get("live_eligibility")})
+        for entry in entries:
             executor_id = entry.get("executor_id")
-            eligibility = entry.get("eligibility")
+            eligibility = entry.get("eligibility") or entry.get("live_eligibility")
             if executor_id and eligibility:
                 live_statuses[executor_id] = eligibility
-    if live_receipt_path.is_file():
+    live_receipt_paths = [
+        ROOT / f"data/operations/iterations/{current_ordinal}/step09-live-codex-attempt.json",
+        ROOT / f"data/operations/iterations/{architecture_ordinal}/step13-live-execution-receipt.json",
+    ]
+    for live_receipt_path in live_receipt_paths:
+        if not live_receipt_path.is_file():
+            continue
         live_execution = load_json(live_receipt_path)
-        receipt = live_execution.get("receipt", {})
+        receipt = live_execution.get("receipt", {}) or live_execution.get("executor_receipt", {})
         executor_id = receipt.get("executor_id")
-        receipt_state = receipt.get("state")
+        receipt_state = receipt.get("state") or live_execution.get("status")
         if executor_id and receipt_state:
             live_statuses[executor_id] = receipt_state
         result_status = live_execution.get("result", {}).get("status")
-        if isinstance(result_status, str) and result_status.strip():
+        # Only an explicit bridge ceiling may replace the conservative
+        # inventory default.  A malformed/failed executor receipt is a
+        # per-attempt status, never a new Current completion ceiling.
+        if isinstance(result_status, str) and result_status.startswith("LIVE_BRIDGE_"):
             live_ceiling = result_status
     residuals = inventory.get("repository_audit", {}).get("residuals", [])
     method_text = sync.resolve_repo_path(contract["current_method"]["source_path"]).read_text(encoding="utf-8")

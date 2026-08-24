@@ -1144,6 +1144,11 @@
   - 可搜索名称：NFC-e42ccf21e7be653a / authority_changes: canonical task-lineage, lifecycle, Current Facts, Current Snapshot, residual ledger, path manifest an
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: Current task-lineage, lifecycle, Current Facts, Current Snapshot and Human Surface projections are sy](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cf681c97d3fd8012 / authority_changes: Current task-lineage, lifecycle, Current Facts, Current Snapshot and Human Surface projections are sy
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: the OS↔executor contract, adapter/conformance surfaces, Reference Executor freeze, routing/approval/h](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8cf94a29e84bf719 / authority_changes: the OS↔executor contract, adapter/conformance surfaces, Reference Executor freeze, routing/approval/h
@@ -1359,6 +1364,16 @@
   - 可搜索名称：IMPLICIT-3ADD9C84D6D94F54 / checks\["checksum_prefix_exact"\] = value.get\("checksum_prefix"\) == self.fixture.expectation.checksum_prefix / IMPLICIT-3ADD9C84D6D94F54
   - 来源：`agent_federation/live_pilot.py`
   - 依赖：—；被引用：—
+- [checks\["child_depth"\] = child_depth == 1 and executor_receipt.child_depth == 1 and envelope.provenance.get\("child_depth"\) == 1](../../../agent_federation/live_validation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CB12A5ECACD03400 / checks\["child_depth"\] = child_depth == 1 and executor_receipt.child_depth == 1 and envelope.provenance.get\("child_depth"\) == 1 / IMPLICIT-CB12A5ECACD03400
+  - 来源：`agent_federation/live_validation.py`
+  - 依赖：—；被引用：—
+- [checks\["count_exact"\] = value.get\("count"\) == expected_count](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-21E767128101009D / checks\["count_exact"\] = value.get\("count"\) == expected_count / IMPLICIT-21E767128101009D
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
 - [checks\["field_value_exact"\] = value.get\("field_value"\) == self.fixture.expectation.field_value](../../../agent_federation/live_pilot.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D62F654A7CAEEC12 / checks\["field_value_exact"\] = value.get\("field_value"\) == self.fixture.expectation.field_value / IMPLICIT-D62F654A7CAEEC12
@@ -1374,14 +1389,29 @@
   - 可搜索名称：IMPLICIT-A6D66EB8254BD75F / checks\["line_count_exact"\] = value.get\("line_count"\) == self.fixture.expectation.line_count / IMPLICIT-A6D66EB8254BD75F
   - 来源：`agent_federation/live_pilot.py`
   - 依赖：—；被引用：—
+- [checks\["nonce_exact"\] = value.get\("nonce"\) == expected_nonce](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-ED34CCF4FDEC60DC / checks\["nonce_exact"\] = value.get\("nonce"\) == expected_nonce / IMPLICIT-ED34CCF4FDEC60DC
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
 - [checks\["nonce_exact"\] = value.get\("nonce"\) == self.fixture.expectation.nonce](../../../agent_federation/live_pilot.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0FB7CE89A3F92797 / checks\["nonce_exact"\] = value.get\("nonce"\) == self.fixture.expectation.nonce / IMPLICIT-0FB7CE89A3F92797
   - 来源：`agent_federation/live_pilot.py`
   - 依赖：—；被引用：—
+- [checks\["output_schema_exact"\] = isinstance\(result, Mapping\) and set\(result\) == expected_keys and set\(value\) == expected_keys](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-13AAE7B37E9092AD / checks\["output_schema_exact"\] = isinstance\(result, Mapping\) and set\(result\) == expected_keys and set\(value\) == expected_keys / IMPLICIT-13AAE7B37E9092AD
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
 - [checks\["output_schema_exact"\] = set\(value\) == expected_keys](../../../agent_federation/live_pilot.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-64640E93BB82EFFD / checks\["output_schema_exact"\] = set\(value\) == expected_keys / IMPLICIT-64640E93BB82EFFD
+  - 来源：`agent_federation/live_pilot.py`
+  - 依赖：—；被引用：—
+- [checks\["selected_ids_exact"\] = value.get\("selected_ids"\) == list\(expected_selected\)](../../../agent_federation/live_pilot.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-53263B7F1FB25C6E / checks\["selected_ids_exact"\] = value.get\("selected_ids"\) == list\(expected_selected\) / IMPLICIT-53263B7F1FB25C6E
   - 来源：`agent_federation/live_pilot.py`
   - 依赖：—；被引用：—
 - [CLI projection tool: `tools/driver_console.py` \(`--json` or human-readable\)](../../../reports/operations/ignition-124-progress.md)
@@ -2473,34 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D017711 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json / D017711 / A5007788537
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D018533 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json / D018533 / A5007788537
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D020387 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json / D020387 / A5007788537
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P4310315823 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json / P4310315823 / A5007788537
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T11913 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json / T11913 / A5007788537
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5000648368 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / A5000648368 / A5033434512
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5033434512 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json / A5033434512 / A5000648368
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json`
   - 依赖：—；被引用：—

@@ -181,6 +181,25 @@ LIVE_EXTERNAL_INVOCATION obligation remains open. An executor-reported PASS,
 if ever returned, would still enter RETURNED_UNVALIDATED until the
 independent OS validator accepts it.
 
+## Task 137 reconciliation continuation
+
+Task 137 is a reconciliation continuation, not a new executor or topology
+component. The historical Hermes timeout receipt has no bindable attempt
+PID/PGID or durable disposable-workspace identity; equal fixture digests
+therefore do not prove that an unknown external effect is absent. Its
+reconciliation remains `OPEN`, and no blind retry is authorized. OpenClaw was
+not invoked because its workspace/channel boundary remains unsafe.
+
+The current Codex CLI received one fresh synthetic/read-only dispatch under a
+new bounded lease. The child boundary was at most one level, used only the
+synthetic fixture, forwarded no formal task context or private prompt, and
+had no channel, browser, remote-Git, write or new-billing authority. Codex
+failed closed during helper startup under the read-only HOME, returned no
+exact public JSON result, and left the fixture workspace unchanged. Pointfire
+recorded `MALFORMED_RESULT` / `FAILED_VALIDATION`; independent OS validation
+did not run, so `LIVE_EXTERNAL_INVOCATION` remains open and this observation
+is not `COMPLETED_VALIDATED`, Goal completion or external truth.
+
 ## Disposable pilot boundary
 
 Step 10 的 Pilot A/B/C 只使用 disposable local fixture 和捕获的 public CLI

@@ -23,7 +23,6 @@ except ImportError:  # direct script / tools-on-PYTHONPATH execution
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
-REPORT_PATH = ROOT / "data/operations/iterations/136/step16-current-surface-semantic-gate-r1.json"
 
 TASK_TOKEN_RE = re.compile(r"\b(?:IGNITION-[0-9A-Z-]+|Task\s*\d{2,3})\b", re.I)
 VERSION_TOKEN_RE = re.compile(r"\b\d+\.\d+\.\d+\b")
@@ -36,6 +35,16 @@ GENERATED_BLOCK_RE = re.compile(
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _current_task_identity() -> tuple[str, int]:
+    lineage = load_json(ROOT / "data/operations/current-task-lineage-status.json")
+    task_id = lineage["task_identity"]["current_formal_task"]
+    return task_id, int(task_id.rsplit("-", 1)[1])
+
+
+CURRENT_TASK_ID, CURRENT_ORDINAL = _current_task_identity()
+REPORT_PATH = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}/step15-current-surface-semantic-gate-r1.json"
 
 
 def relative(path: Path) -> str:
@@ -222,7 +231,7 @@ def validate_repository() -> dict[str, Any]:
         })
     return {
         "schema_version": "current-surface-semantic-gate-r1",
-        "task_id": "IGNITION-20260823-136",
+        "task_id": CURRENT_TASK_ID,
         "result": "VALID" if not issues else "INVALID",
         "issue_count": len(issues),
         "snapshot_source_digest": snapshot["generated_from_source_digest"],

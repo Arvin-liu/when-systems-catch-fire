@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [对教师群体而言，教室本是逃离会议、材料、投诉、考核等繁杂事务，回归教学本身的喘息空间。但当下以「专业成长」「以赛促教」为名的**赛课**（优质公开课评比）机制，正在不断挤压教师的核心教学时间，这套深度绑定职称、绩效、学校业绩、教研资源的评价](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ae2033cf70b5bc4a / 对教师群体而言，教室本是逃离会议、材料、投诉、考核等繁杂事务，回归教学本身的喘息空间。但当下以「专业成长」「以赛促教」为名的**赛课**（优质公开课评比）机制，正在不断挤压教师的核心教学时间，这套深度绑定职称、绩效、学校业绩、教研资源的评价
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [对每个 `because/therefore/although` 问：来源有明示关系、强语境关系，还是仅仅并置？](../../../docs/language-thought/profiles/en.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-39fe963d075d9019 / 对每个 `because/therefore/although` 问：来源有明示关系、强语境关系，还是仅仅并置？
+  - 来源：`docs/language-thought/profiles/en.md`
+  - 依赖：—；被引用：—
+- [对每个候选执行六组件：C\(x,y\) 因果结构、M\(B_n\) 自举收敛、I_iso\(A,B\) 同构、L_meta 上位概念判定、G_δ 不可判定/缺口、P_meta 元协议投影。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3252ea1bf7612dd8 / 对每个候选执行六组件：C\(x,y\) 因果结构、M\(B_n\) 自举收敛、I_iso\(A,B\) 同构、L_meta 上位概念判定、G_δ 不可判定/缺口、P_meta 元协议投影。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
+  - 依赖：—；被引用：—
+- [封闭退化为永久封锁且无解除机制](../../../docs/governance/meta-protocol-reviews/protocols/S1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a8db0ee8b42a6300 / 封闭退化为永久封锁且无解除机制
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/S1.md`
+  - 依赖：—；被引用：—
+- [将叙事与因果分开；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-576304ca3cd99dea / 将叙事与因果分开；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [将局部成立的机制扩展成全系统或跨系统规律。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7d03b03fce5df88f / 将局部成立的机制扩展成全系统或跨系统规律。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [尝试下一层时，检查它是否改变问题、定义、边界、观察者、机制、干预、残余、潜题或此前层的意义。若全部没有改变，只是换词、堆例子或增加宏大感，应停止。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bb1760ca3124a8cf / 尝试下一层时，检查它是否改变问题、定义、边界、观察者、机制、干预、残余、潜题或此前层的意义。若全部没有改变，只是换词、堆例子或增加宏大感，应停止。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
 - [尺度域：组织（亲族/谋克）、战场（单位—中军）、政体（动员—投附—财政）、区域（三方外交与战争）。桥：组织凝聚到战场表现、战场胜利到政体资源、政体变化到区域联盟。桥均标为 `mechanism_hypothesis` 或 `unknown_](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6ac454fd58e634a0 / 尺度域：组织（亲族/谋克）、战场（单位—中军）、政体（动员—投附—财政）、区域（三方外交与战争）。桥：组织凝聚到战场表现、战场胜利到政体资源、政体变化到区域联盟。桥均标为 `mechanism_hypothesis` 或 `unknown_
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-cb7b67490188de1d / 阅读书籍** —— 把你正在读的书的机制读出来
   - 来源：`docs/getbrain-book-collision-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [防掠夺机制的有效性待实证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-743bb570f64eca86 / 防掠夺机制的有效性待实证
-  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [降级/证伪凝聚中心机制的证据：关键战役参战者并非亲邻单位；猛安谋克关键形态晚成；逃亡/强制记录显示凝聚叙事不成立；控制叛乱、兵力、地形和补给后凝聚无区分力。支持后勤中心：持续补给、马匹轮换、速度和路线选择与胜负强对应。支持指挥崩溃中心：撤军](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7e0f48c5107a4be2 / 降级/证伪凝聚中心机制的证据：关键战役参战者并非亲邻单位；猛安谋克关键形态晚成；逃亡/强制记录显示凝聚叙事不成立；控制叛乱、兵力、地形和补给后凝聚无区分力。支持后勤中心：持续补给、马匹轮换、速度和路线选择与胜负强对应。支持指挥崩溃中心：撤军
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [限制适用域，补充反例和竞争机制。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-aee6c121f49e3b5d / 限制适用域，补充反例和竞争机制。
-  - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [集体行动的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2affe63614c4f69f / 集体行动的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [需要从整体结构定位入口时，打开\[完整可点击系统图\]\(./architecture/interactive-system-map.md\)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。](../../../docs/USAGE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8eaebaae362143b5 / 需要从整体结构定位入口时，打开\[完整可点击系统图\]\(./architecture/interactive-system-map.md\)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。
-  - 来源：`docs/USAGE.md`
-  - 依赖：—；被引用：—
-- [项目不采用以下强主张：语言决定可思考的内容；不同语言具有不同真值逻辑；一个语言共同体共享不可改变的民族心智；语言表达差异必然对应非语言认知差异。](../../../docs/language-thought/research-boundary.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2441822aa54f4b26 / 项目不采用以下强主张：语言决定可思考的内容；不同语言具有不同真值逻辑；一个语言共同体共享不可改变的民族心智；语言表达差异必然对应非语言认知差异。
-  - 来源：`docs/language-thought/research-boundary.md`
-  - 依赖：—；被引用：—
-- [项目的目标不是把世界统一进一个理论，而是把跨域好奇、天马行空的联想、复杂问题的直觉和多领域材料，放进一个更可检查、更克制、更能承认 pending 的工作流程里。](../../../docs/author_motivation_and_boundary_note.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bb642e8379570aeb / 项目的目标不是把世界统一进一个理论，而是把跨域好奇、天马行空的联想、复杂问题的直觉和多领域材料，放进一个更可检查、更克制、更能承认 pending 的工作流程里。
-  - 来源：`docs/author_motivation_and_boundary_note.md`
   - 依赖：—；被引用：—

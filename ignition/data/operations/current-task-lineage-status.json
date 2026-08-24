@@ -2,11 +2,11 @@
   "schema_version": "current-task-lineage-status-r1",
   "contract_id": "CURRENT_TASK_LINEAGE_STATUS",
   "current_task": {
-    "task_id": "IGNITION-20260823-136",
-    "scope": "Live External Executor Bridge R1",
+    "task_id": "IGNITION-20260824-137",
+    "scope": "Validated Live Completion & Reconciliation R1",
     "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
     "terminal": true,
-    "identity_impact": "ARCHITECTURE_CHANGED"
+    "identity_impact": "PRESENTATION_ONLY"
   },
   "current_state": {
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
@@ -85,12 +85,12 @@
   "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
   "task_identity": {
     "schema_version": "task-identity-state-r1",
-    "current_formal_task": "IGNITION-20260823-136",
+    "current_formal_task": "IGNITION-20260824-137",
     "latest_architecture_changing_task": "IGNITION-20260823-136",
-    "release_candidate_task": "IGNITION-20260823-136",
-    "publication_witness_task": "IGNITION-20260823-136",
-    "previous_canonical_current_task": "IGNITION-20260822-135",
-    "previous_formal_task": "IGNITION-20260822-135",
+    "release_candidate_task": "IGNITION-20260824-137",
+    "publication_witness_task": "IGNITION-20260824-137",
+    "previous_canonical_current_task": "IGNITION-20260823-136",
+    "previous_formal_task": "IGNITION-20260823-136",
     "historical_lineage": [
       {
         "predecessor_task_id": "IGNITION-20260821-129",
@@ -157,15 +157,27 @@
         "successor_task_id": "IGNITION-20260823-136",
         "relation": "FORMAL_TASK_SUCCESSOR",
         "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260823-136",
+        "successor_task_id": "IGNITION-20260824-137",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260823-136",
+        "successor_task_id": "IGNITION-20260824-137",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
       }
     ],
     "advancement": {
-      "from_task_id": "IGNITION-20260822-135",
-      "to_task_id": "IGNITION-20260823-136",
-      "transition_reason": "Task136 advances canonical Current from terminal Task135 to Live External Executor Bridge R1; the provider-neutral live dispatch, capability lease, bounded transport, independent receipt validation and timeout/reconciliation state become current architecture while the live completion obligation remains open.",
-      "prior_source_sha256": "25d725eff90da64575705a620b759a41a7498f2b48f5cb8c351b60bfa7b2133f",
-      "execution_contract_path": "ignition/data/operations/iterations/136/execution-contract-r1.json",
-      "idempotency_key": "IGNITION-20260823-136"
+      "from_task_id": "IGNITION-20260823-136",
+      "to_task_id": "IGNITION-20260824-137",
+      "transition_reason": "Task137 advances canonical Current from terminal Task136 to Validated Live Completion & Reconciliation R1. The existing R5 live bridge is retained without a new core component or topology relation; the Hermes timeout remains open, the single current Codex attempt failed closed during startup, and no validated live completion was observed.",
+      "prior_source_sha256": "eec56ce6b5112d2cb7eecc0f1b377f725849161ba90a3135a8b7739452216a45",
+      "execution_contract_path": "ignition/data/operations/iterations/137/execution-contract-r1.json",
+      "idempotency_key": "IGNITION-20260824-137"
     },
     "claim_ceiling": "Canonical repository-local task advancement only; this record does not grant authority, prove external truth, establish production readiness or set epistemic acceptance."
   }
