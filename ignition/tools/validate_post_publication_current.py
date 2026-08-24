@@ -176,7 +176,9 @@ def _validate_task_id_binding(
             errors.append(
                 f"ARCHITECTURE_TASK_BINDING_MISMATCH:{label}:expected={expected_architecture_task}:observed={observed}"
             )
-    if expected_architecture_task == expected_task_id:
+    if expected_architecture_task == expected_task_id and not (
+        contract.get("task_id") == expected_task_id and contract.get("identity_impact") == "ARCHITECTURE_CHANGED"
+    ):
         errors.append("ARCHITECTURE_TASK_PROMOTED_TO_FORMAL_TASK")
 
     if formal_result_task_id is None:
