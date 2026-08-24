@@ -6,6 +6,11 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5132642072 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5132642072 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5132655801 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5132655801 / A5001316926
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
   - 依赖：—；被引用：—
@@ -1143,6 +1148,16 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-125B69A7D65CAA06 / if schema.get\("type"\) == "object" and isinstance\(inst, dict\): / IMPLICIT-125B69A7D65CAA06
   - 来源：`evidence-program/tools/validate_evidence_program.py`
+  - 依赖：—；被引用：—
+- [if selection.get\("status"\) == "NO_SAFE_CANDIDATE" and selection.get\("selected_executor_id"\) is not None:](../../../agent_federation/local_executor_census.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EF50D210D49592E7 / if selection.get\("status"\) == "NO_SAFE_CANDIDATE" and selection.get\("selected_executor_id"\) is not None: / IMPLICIT-EF50D210D49592E7
+  - 来源：`agent_federation/local_executor_census.py`
+  - 依赖：—；被引用：—
+- [if selection.get\("status"\) == "SELECTED" and not isinstance\(selection.get\("why_executor"\), str\):](../../../agent_federation/local_executor_census.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2DD3616C6046A08D / if selection.get\("status"\) == "SELECTED" and not isinstance\(selection.get\("why_executor"\), str\): / IMPLICIT-2DD3616C6046A08D
+  - 来源：`agent_federation/local_executor_census.py`
   - 依赖：—；被引用：—
 - [if set\(event\) == expected:](../../../agent_federation/live_task137.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2487,20 +2502,5 @@
 - [title: "度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3\(obscuration降低\) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AB3E466D419DEAA3 / title: "度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3\(obscuration降低\) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致" / IMPLICIT-AB3E466D419DEAA3
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "忆秦娥纯拉力上位（外驱转自驱窗口）"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6C67A1C5708EAFDA / title: "忆秦娥纯拉力上位（外驱转自驱窗口）" / IMPLICIT-6C67A1C5708EAFDA
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2BC72810810E6D0B / title: "恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大" / IMPLICIT-2BC72810810E6D0B
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9E8D10CEF514D95F / title: "扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本" / IMPLICIT-9E8D10CEF514D95F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

@@ -1694,6 +1694,11 @@
   - 可搜索名称：NFC-0b0b673dd238f29e / Because Hermes one-shot approvals are auto-bypassed and stdout is final
   - 来源：`reports/operations/ignition-122-federation-progress.md`
   - 依赖：—；被引用：—
+- [because its current surface is the most independently enforceable: JSONL and](../../../reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-81855012e80e69d7 / because its current surface is the most independently enforceable: JSONL and
+  - 来源：`reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md`
+  - 依赖：—；被引用：—
 - [because the observed `agent --help` did not prove those operations.](../../../docs/architecture/openclaw-adapter-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f8405b5c0f8f666f / because the observed `agent --help` did not prove those operations.
@@ -2497,10 +2502,5 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M37 / data/external-research/088-external-source-atlas-medium.jsonl / M37 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M38 / data/external-research/088-external-source-atlas-medium.jsonl / M38 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

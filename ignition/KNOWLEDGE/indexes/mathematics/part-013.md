@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：AI-ε安装三条路径——好奇心-ε闭环在AI上的死锁破解 English: Rule-based English rend… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ec411068fc22f419 / 从这条案例看，中文：案例说明：AI-ε安装三条路径——好奇心-ε闭环在AI上的死锁破解 English: Rule-based English rend… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：AI-ε安装路径 English: Rule-based English rendering pending human… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-60208d67d2c87d3b / 从这条案例看，中文：案例说明：AI-ε安装路径 English: Rule-based English rendering pending human… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2497,10 +2502,5 @@
 - [从这条案例看，中文：罗振宇AI创作直播笔记与点火框架碰撞验证。核心碰撞点：AI时代写作拼的是"在场"——只有独特生命体验不可复制。这直接对应点火框架的ε… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fdb320f64ac6706e / 从这条案例看，中文：罗振宇AI创作直播笔记与点火框架碰撞验证。核心碰撞点：AI时代写作拼的是"在场"——只有独特生命体验不可复制。这直接对应点火框架的ε… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：能到达的目的地≈100-1000。 关键发现：同上 English: Rule-based English rendering pe… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-22ca570db11062e7 / 从这条案例看，中文：能到达的目的地≈100-1000。 关键发现：同上 English: Rule-based English rendering pe… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

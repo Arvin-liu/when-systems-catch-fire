@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutorHealth":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3F863213B6786D32 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutorHealth": / IMPLICIT-3F863213B6786D32
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutorRoutingProfile":](../../../agent_federation/router.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D30438238B5C8D5D / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutorRoutingProfile": / IMPLICIT-D30438238B5C8D5D
+  - 来源：`agent_federation/router.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExternalSessionRef":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-643EF467ED0A5F9F / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExternalSessionRef": / IMPLICIT-643EF467ED0A5F9F
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "FederatedHandoffBundle":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A27105BCBD51D56E / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "FederatedHandoffBundle": / IMPLICIT-A27105BCBD51D56E
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "FederatedProgressEvent":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-40ABD159E6C3E959 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "FederatedProgressEvent": / IMPLICIT-40ABD159E6C3E959
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "FederatedResultReceipt":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-DF4F6B268CE996B6 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "FederatedResultReceipt": / IMPLICIT-DF4F6B268CE996B6
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "FederatedTaskEnvelope":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A35C8F453D650212 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "FederatedTaskEnvelope": / IMPLICIT-A35C8F453D650212
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "HandoffEligibility":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9B9EC8F14B4160BA / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "HandoffEligibility": / IMPLICIT-9B9EC8F14B4160BA
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "HandoffPolicy":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-738DD7B5B6C9A263 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "HandoffPolicy": / IMPLICIT-738DD7B5B6C9A263
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "LiveCapabilityLease":](../../../agent_federation/live_bridge.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-5A2C6327961F074A / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "LiveCapabilityLease": / IMPLICIT-5A2C6327961F074A
+  - 来源：`agent_federation/live_bridge.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "LiveDispatchEnvelope":](../../../agent_federation/live_bridge.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CC02AA7F56A6998F / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "LiveDispatchEnvelope": / IMPLICIT-CC02AA7F56A6998F
+  - 来源：`agent_federation/live_bridge.py`
+  - 依赖：—；被引用：—
 - [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "LiveExecutorReceipt":](../../../agent_federation/live_bridge.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-2A1E5603BA9D8424 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "LiveExecutorReceipt": / IMPLICIT-2A1E5603BA9D8424
@@ -2384,6 +2439,11 @@
   - 可搜索名称：IMPLICIT-6F3B33B6222E601D / def validate_case\(document: Any\) -> None: / IMPLICIT-6F3B33B6222E601D
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—
+- [def validate_census\(data: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/local_executor_census.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E1F1E5E9FB651929 / def validate_census\(data: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-E1F1E5E9FB651929
+  - 来源：`agent_federation/local_executor_census.py`
+  - 依赖：—；被引用：—
 - [def validate_federation_pilot_report\(report: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/pilots.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-22A05165020D3C07 / def validate_federation_pilot_report\(report: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-22A05165020D3C07
@@ -2398,6 +2458,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-E8E710FB982DD223 / def validate_instance\(name, inst, label\): / IMPLICIT-E8E710FB982DD223
   - 来源：`evidence-program/tools/validate_evidence_program.py`
+  - 依赖：—；被引用：—
+- [def validate_path\(path: Path\) -> dict\[str, Any\]:](../../../agent_federation/local_executor_census.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-13F205A463E6B7C1 / def validate_path\(path: Path\) -> dict\[str, Any\]: / IMPLICIT-13F205A463E6B7C1
+  - 来源：`agent_federation/local_executor_census.py`
   - 依赖：—；被引用：—
 - [def validate_protocol_record\(record: dict\[str, Any\], repo: Path\) -> list\[GateResult\]:](../../../inputs/020/validate_formal_protocol.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -2438,69 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B8FB020F629C221B / def write_federation_pilot_report\(path: str \| Path\) -> dict\[str, Any\]: / IMPLICIT-B8FB020F629C221B
   - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [def write_human_log\(out\):](../../../function-os-candidate/v0.2/benchmark/run.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D35DE287152F4BD1 / def write_human_log\(out\): / IMPLICIT-D35DE287152F4BD1
-  - 来源：`function-os-candidate/v0.2/benchmark/run.py`
-  - 依赖：—；被引用：—
-- [Definition**: Compiled, versioned, hashable function artifact](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f27a7cf391089738 / Definition**: Compiled, versioned, hashable function artifact
-  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
-  - 依赖：—；被引用：—
-- [Definition**: Executes function artifact with given inputs](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8ee0b9d76fabaca4 / Definition**: Executes function artifact with given inputs
-  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
-  - 依赖：—；被引用：—
-- [Definition**: Transforms FunctionSpec + Representation into executable artifact](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fd0e3d524bc9dd6e / Definition**: Transforms FunctionSpec + Representation into executable artifact
-  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
-  - 依赖：—；被引用：—
-- [Definition**: Validates function artifacts against specifications and evidence](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-546495ccda4e658c / Definition**: Validates function artifacts against specifications and evidence
-  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
-  - 依赖：—；被引用：—
-- [Delayed transfer, withdrawn rebound, missing evidence, authority confusion,](../../../reports/operations/ignition-126-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1cc0702437de2b9f / Delayed transfer, withdrawn rebound, missing evidence, authority confusion,
-  - 来源：`reports/operations/ignition-126-progress.md`
-  - 依赖：—；被引用：—
-- [delta: added the candidate ESI definition, source-bound transition grammar, advisory Structural Governance Surface, blin](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-296624a37554842c / delta: added the candidate ESI definition, source-bound transition grammar, advisory Structural Governance Surface, blin
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [delta: registers the Current Surface Compiler, single-source volatile-fact registry, deterministic snapshot, typed seman](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-45b8fcd097d903c4 / delta: registers the Current Surface Compiler, single-source volatile-fact registry, deterministic snapshot, typed seman
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [delta: Step 12 closes the bounded adversarial suite, deterministic projection repair, foundation/nonfunction/path closur](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-f5897aff405c58c3 / delta: Step 12 closes the bounded adversarial suite, deterministic projection repair, foundation/nonfunction/path closur
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [delta: Task 122 adds the provider-neutral Ignition OS ↔ executor contract, strict approval intersection, capability/perm](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3efa7fd965d73b38 / delta: Task 122 adds the provider-neutral Ignition OS ↔ executor contract, strict approval intersection, capability/perm
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [dependency 继承 review/downgrade pressure 与适用 ceiling，不继承 external truth。](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5c5a6db8814cc4cd / dependency 继承 review/downgrade pressure 与适用 ceiling，不继承 external truth。
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [derivation_refs = artifact.get\("derivation_refs"\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5d1e87b1426437ee / derivation_refs = artifact.get\("derivation_refs"\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [Derived build evidence:](../../../templates/operations/execution-result-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-92e05267c80588df / Derived build evidence:
-  - 来源：`templates/operations/execution-result-template.md`
   - 依赖：—；被引用：—

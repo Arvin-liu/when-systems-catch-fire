@@ -6,6 +6,11 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M38 / data/external-research/088-external-source-atlas-medium.jsonl / M38 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M39 / data/external-research/088-external-source-atlas-medium.jsonl / M39 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -468,6 +473,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a94e68c603e0cb00 / example mechanism hypothesis
   - 来源：`data/architecture/multiscale-causal-fabric/examples/vehicle-ownership.json`
+  - 依赖：—；被引用：—
+- [exception because it was a confirmed pre-inference startup failure with no](../../../reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b1c1e6b21d7160e8 / exception because it was a confirmed pre-inference startup failure with no
+  - 来源：`reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md`
   - 依赖：—；被引用：—
 - [existing adapters. OpenClaw is denied because its observed descriptor does](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1699,6 +1709,11 @@
   - 可搜索名称：NFC-bad3d49020191b0e / No Git diff, path match, dependency, traversal, visual edge or zero-residue closure is reported as scientific causal ide
   - 来源：`reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md`
   - 依赖：—；被引用：—
+- [No internet install was necessary because installed candidates were found, and](../../../reports/operations/ignition-138-step00-local-executor-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e1f4ae5327690e7d / No internet install was necessary because installed candidates were found, and
+  - 来源：`reports/operations/ignition-138-step00-local-executor-census.md`
+  - 依赖：—；被引用：—
 - [No registry state machine, version identity, supersession, drift, or retirement mechanism is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-902a17c908a7b371 / No registry state machine, version identity, supersession, drift, or retirement mechanism is defined.
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ec30b440216281ca / Only `system_map_projection` is currently automatic: its deterministic producer materializes both the JSON projection an
   - 来源：`docs/architecture/incremental-execution.md`
-  - 依赖：—；被引用：—
-- [OpenClaw was not dispatched because its observed agent surface has no disposable](../../../docs/architecture/external-agent-federation-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-78f990414c2ee32e / OpenClaw was not dispatched because its observed agent surface has no disposable
-  - 来源：`docs/architecture/external-agent-federation-r1.md`
-  - 依赖：—；被引用：—
-- [OpenClaw was not invoked because its public Gateway/session surface could not prove the required disposable-workspace, e](../../../agent-results/IGNITION-20260823-136-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-92762f896ea2b06c / OpenClaw was not invoked because its public Gateway/session surface could not prove the required disposable-workspace, e
-  - 来源：`agent-results/IGNITION-20260823-136-result.md`
-  - 依赖：—；被引用：—
-- [OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带](../../../data/architecture/interactive-system-map.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-794046119666f476 / OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带
-  - 来源：`data/architecture/interactive-system-map.json`
   - 依赖：—；被引用：—

@@ -27,6 +27,7 @@ from .live_transport import (
     LiveTransportError,
     RuntimeScratchLease,
     RUNTIME_SCRATCH_CLEANED,
+    auth_source_metadata_digest,
     interface_digest,
     parse_bounded_jsonl,
 )
@@ -103,6 +104,7 @@ class LiveCodexAdapter:
         control_repo: str | Path | None = None,
         persistent_user_document_roots: Sequence[str | Path] | None = None,
         auth_source_ref: str = "auth://existing-public-login-state",
+        auth_source_path: str | Path | None = None,
     ) -> None:
         root = Path(workspace)
         if not root.is_absolute() or not root.is_dir():
@@ -131,7 +133,15 @@ class LiveCodexAdapter:
         if not self.persistent_user_document_roots:
             raise LiveAdapterError("persistent user document roots must contain an existing directory")
         self.auth_source_ref = auth_source_ref
+        if auth_source_path is not None:
+            source = Path(auth_source_path).absolute()
+            if not source.is_absolute() or source.is_symlink() or not source.exists():
+                raise LiveAdapterError("Codex auth source must be an existing non-symlink reference")
+            self.auth_source_path: Path | None = source
+        else:
+            self.auth_source_path = None
         self.last_filesystem_domains: ExecutionFilesystemDomains | None = None
+        self.last_auth_source_observation: Mapping[str, Any] | None = None
         self._probe_cache: tuple[LiveProcessResult, LiveProcessResult] | None = None
 
     def _run(
@@ -165,6 +175,8 @@ class LiveCodexAdapter:
 
     def _protected_roots(self) -> tuple[Path, ...]:
         roots = [self.workspace, self.formal_repo, self.control_repo, *self.persistent_user_document_roots]
+        if self.auth_source_path is not None:
+            roots.append(self.auth_source_path)
         if not self.auth_source_ref.startswith("auth://"):
             roots.append(Path(self.auth_source_ref))
         return tuple(path.resolve() for path in roots)
@@ -317,13 +329,22 @@ class LiveCodexAdapter:
         runtime_scratch: RuntimeScratchLease | None = None
         runtime_env_keys: tuple[str, ...] = ()
         workspace_before: str | None = None
+        auth_before: str | None = None
+        if self.auth_source_path is not None:
+            try:
+                auth_before = auth_source_metadata_digest(self.auth_source_path)
+                child_env["CODEX_HOME"] = str(self.auth_source_path)
+            except LiveTransportError as exc:
+                raise LiveAdapterError("Codex auth source metadata could not be observed") from exc
         if self.runtime_scratch_required:
             workspace_before = tree_digest(self.workspace)
             runtime_scratch = self._new_runtime_scratch(envelope.attempt_id)
             try:
                 runtime_env_keys = (
-                    "HOME", "TMPDIR", "CODEX_HOME", "XDG_CACHE_HOME", "XDG_CONFIG_HOME", "XDG_RUNTIME_DIR",
+                    "HOME", "TMPDIR", "XDG_CACHE_HOME", "XDG_CONFIG_HOME", "XDG_RUNTIME_DIR",
                 )
+                if self.auth_source_path is None:
+                    runtime_env_keys = runtime_env_keys + ("CODEX_HOME",)
                 child_env.update(runtime_scratch.environment_overrides(runtime_env_keys))
                 self._filesystem_domains(
                     runtime_scratch,
@@ -351,6 +372,22 @@ class LiveCodexAdapter:
             raise
         runtime_receipt = process.runtime_scratch_receipt
         runtime_cleanup_status = process.runtime_scratch_cleanup_status
+        if self.auth_source_path is not None:
+            try:
+                auth_after = auth_source_metadata_digest(self.auth_source_path)
+            except LiveTransportError as exc:
+                raise LiveAdapterError("Codex auth source metadata could not be re-observed") from exc
+            self.last_auth_source_observation = {
+                "mode": "READ_ONLY_REFERENCE",
+                "content_read": False,
+                "copied": False,
+                "mutated": auth_before != auth_after,
+                "metadata_digest_before": auth_before,
+                "metadata_digest_after": auth_after,
+                "unchanged": auth_before == auth_after,
+            }
+            if auth_before != auth_after:
+                raise LiveAdapterError("Codex auth source changed during live attempt")
         if runtime_scratch is not None:
             if not isinstance(runtime_receipt, Mapping):
                 if runtime_scratch.cleanup_status is None:

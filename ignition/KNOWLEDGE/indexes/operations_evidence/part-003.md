@@ -1134,6 +1134,11 @@
   - 可搜索名称：D430 / analysis/corpus-relation/cluster_source_briefs/C006.md / D430
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C006.md`
   - 依赖：—；被引用：D361, D362, D363, D364
+- [and item.get\("admission_status"\) == "ADMITTED"](../../../agent_federation/local_executor_census.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1E3CC1E81F0B5F62 / and item.get\("admission_status"\) == "ADMITTED" / IMPLICIT-1E3CC1E81F0B5F62
+  - 来源：`agent_federation/local_executor_census.py`
+  - 依赖：—；被引用：—
 - [Ann Rev 2025 *From Prediction to Prescription* — `10.1146/annurev-biodatasci-103123-095750`](../../../data/external-research/088-FINAL-REPORT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-76acd555b97be62c / Ann Rev 2025 *From Prediction to Prescription* — `10.1146/annurev-biodatasci-103123-095750`
@@ -2497,10 +2502,5 @@
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5103103878 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json / A5103103878 / A5007788537
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5111905601 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json / A5111905601 / A5007788537
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-04.json`
   - 依赖：—；被引用：—

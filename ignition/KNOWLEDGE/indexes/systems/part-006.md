@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [这条成果链同时展示两类写作材料：原始金朝笔记是 `external_input`；Q26 报告对材料生成的机制链、竞争解释、gap、residue 和 claim ceiling 是 `ignition_increment`。Q29／Q29](../../../docs/publication/zhiyuan-writing-examples.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2edb3ebb63f8b74f / 这条成果链同时展示两类写作材料：原始金朝笔记是 `external_input`；Q26 报告对材料生成的机制链、竞争解释、gap、residue 和 claim ceiling 是 `ignition_increment`。Q29／Q29
+  - 来源：`docs/publication/zhiyuan-writing-examples.md`
+  - 依赖：—；被引用：—
+- [这条机制链不能抹去被改名、改制或被迫接受新秩序的僧尼；不能把普通百姓只写成祥瑞观众；不能把园林、宫观和仪式的资源成本藏在“文明创造力”后面；不能把官僚、士大夫、权臣和批评者的不同位置合成同一个“皇帝”；不能用 1127 年之后的亡国知识，假](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8ce134612b87b87a / 这条机制链不能抹去被改名、改制或被迫接受新秩序的僧尼；不能把普通百姓只写成祥瑞观众；不能把园林、宫观和仪式的资源成本藏在“文明创造力”后面；不能把官僚、士大夫、权臣和批评者的不同位置合成同一个“皇帝”；不能用 1127 年之后的亡国知识，假
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [这让“宗教被皇权利用”变得具体起来。它不只发生在皇帝脑中的动机，也发生在名字、房屋、官文书和资源流向里。若只讨论徽宗是否聪明，就会看不见那些没有权力决定自己怎样被称呼的人。文章若要向更高处走，必须把这些低处一起带上去。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-46711e0bef3ee31f / 这让“宗教被皇权利用”变得具体起来。它不只发生在皇帝脑中的动机，也发生在名字、房屋、官文书和资源流向里。若只讨论徽宗是否聪明，就会看不见那些没有权力决定自己怎样被称呼的人。文章若要向更高处走，必须把这些低处一起带上去。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [这里记录语言怎样参与点火的来源保存、命题抽取、对象建模、论证、机制、验证和公共表达。它是一张横穿 L0—L6 的控制平面，不是 L7，也不是“中文写顺一点”的附属手册。](../../../docs/language-thought/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-17d450d372b073f4 / 这里记录语言怎样参与点火的来源保存、命题抽取、对象建模、论证、机制、验证和公共表达。它是一张横穿 L0—L6 的控制平面，不是 L7，也不是“中文写顺一点”的附属手册。
+  - 来源：`docs/language-thought/README.md`
+  - 依赖：—；被引用：—
 - [进 candidates/ 不强行回填：M7、M8、M9（受≤5约束或需外部证据补强）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0281cf45c54613a8 / 进 candidates/ 不强行回填：M7、M8、M9（受≤5约束或需外部证据补强）。

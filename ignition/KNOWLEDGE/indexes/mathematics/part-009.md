@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Validation and lifecycle boundary](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7c8af339970ae599 / Validation and lifecycle boundary
+  - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
+  - 依赖：—；被引用：—
 - [Validation is only empirical: synthesized program is checked against I/O pairs. No formal verification. No proof that pr](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-220c9b9e1102f6a3 / Validation is only empirical: synthesized program is checked against I/O pairs. No formal verification. No proof that pr
@@ -2497,10 +2502,5 @@
 - [Within the source-defined scope, 退出权最弱项瓶颈函数 is adjudicated as RELATION: P_exit_bottleneck = min\(Ω,T,C,σ\). This is a mode](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D503 / Within the source-defined scope, 退出权最弱项瓶颈函数 is adjudicated as RELATION: P_exit_bottleneck = min\(Ω,T,C,σ\). This is a mode
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 退出权相变级联函数 is adjudicated as STATE_TRANSITION: P_exit_phase\(ε_aware\) = {5个相变点}. This is](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D485 / Within the source-defined scope, 退出权相变级联函数 is adjudicated as STATE_TRANSITION: P_exit_phase\(ε_aware\) = {5个相变点}. This is
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

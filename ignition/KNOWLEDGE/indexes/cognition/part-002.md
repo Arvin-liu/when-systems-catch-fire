@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Repository-local implementation, deterministic projections, recovery rehearsal and synchronization evidence only; no pro](../../../agent-results/IGNITION-20260820-127-machine-receipt.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2cf2866c92aa17c3 / Repository-local implementation, deterministic projections, recovery rehearsal and synchronization evidence only; no pro
+  - 来源：`agent-results/IGNITION-20260820-127-machine-receipt.json`
+  - 依赖：—；被引用：—
+- [Repository-local iteration-boundary semantics, canonical ordinal derivation, deterministic projections, bounded regressi](../../../agent-results/IGNITION-20260822-133-machine-receipt.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-405e669acb1fa80b / Repository-local iteration-boundary semantics, canonical ordinal derivation, deterministic projections, bounded regressi
+  - 来源：`agent-results/IGNITION-20260822-133-machine-receipt.json`
+  - 依赖：—；被引用：—
+- [Repository-local Task134 residual non-growth, deterministic projection, bounded regression and pre-publication release r](../../../agent-results/IGNITION-20260822-134-machine-receipt.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-560e102308eb0e6d / Repository-local Task134 residual non-growth, deterministic projection, bounded regression and pre-publication release r
+  - 来源：`agent-results/IGNITION-20260822-134-machine-receipt.json`
+  - 依赖：—；被引用：—
 - [Repository-local Task135 regression closure, deterministic projection, residual non-growth and content release-readiness](../../../agent-results/IGNITION-20260822-135-machine-receipt.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-65fc92bf1b540b87 / Repository-local Task135 regression closure, deterministic projection, residual non-growth and content release-readiness
@@ -964,6 +979,11 @@
   - 可搜索名称：NFC-7f684842be3fb4fb / \| I_iso\(A,B\) \| 与 D244 **不同构**（D244 是意识涌现阈值）；与 D173 **不同构**（D173 是撤退粘性）；全表无同构条目。 \|
   - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
   - 依赖：D173, D244；被引用：—
+- [\| OpenClaw 2026.7.1-2 \| `AGENTIC_EXECUTOR` \| agent help/JSON surface observed, but workspace/channel/read-only boundary](../../../reports/operations/ignition-138-step00-local-executor-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aa251e7cd817ca38 / \| OpenClaw 2026.7.1-2 \| `AGENTIC_EXECUTOR` \| agent help/JSON surface observed, but workspace/channel/read-only boundary
+  - 来源：`reports/operations/ignition-138-step00-local-executor-census.md`
+  - 依赖：—；被引用：—
 - [\| OpenClaw \| `2026.7.1-2 \(0790d9f\)` \| `openclaw agent --json`, `--message-file`, `--session-key`/`--session-id`, `--time](../../../reports/architecture/external-agent-interface-audit-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-deb74d0129111960 / \| OpenClaw \| `2026.7.1-2 \(0790d9f\)` \| `openclaw agent --json`, `--message-file`, `--session-key`/`--session-id`, `--time
@@ -978,6 +998,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c1a182f28d347874 / \| PEND-016 \| 社会科学 \| 集体行动如何可能 \| L2 / L3 / pending \| 点火框架解决了集体行动问题 \| 点火框架可重写问题结构，不替代社会科学理论和实证 \| 保持 pending \|
   - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| plain `gh` 2.96.0, git, jq \| `TOOL_ONLY` \| command/tool surfaces only \| Never eligible as Agent \|](../../../reports/operations/ignition-138-step00-local-executor-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-120110776da665bc / \| plain `gh` 2.96.0, git, jq \| `TOOL_ONLY` \| command/tool surfaces only \| Never eligible as Agent \|
+  - 来源：`reports/operations/ignition-138-step00-local-executor-census.md`
   - 依赖：—；被引用：—
 - [\| REOS LIGHT Research \| bounded research obligation coordination、evidence request 和研究流程验证 \| `REOS_FULL`、distributed queu](../../../docs/architecture/agent-platform-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`

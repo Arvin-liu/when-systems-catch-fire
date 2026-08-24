@@ -1784,6 +1784,11 @@
   - 可搜索名称：NFC-97ac98519443ab1e / Claim ceiling: repository-local adversarial release identity and evidence-gate validation only; no external truth, autho
   - 来源：`reports/operations/ignition-132-step08-adversarial-matrix.md`
   - 依赖：—；被引用：—
+- [Claim ceiling: repository-local census and admission evidence only. No live](../../../reports/operations/ignition-138-step00-local-executor-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-67de702058e13b01 / Claim ceiling: repository-local census and admission evidence only. No live
+  - 来源：`reports/operations/ignition-138-step00-local-executor-census.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: repository-local Current path-manifest contract evidence only; no external truth, production readiness, O](../../../reports/operations/ignition-134-step03-path-manifest-contract-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-786b4d7f34ce5119 / Claim ceiling: repository-local Current path-manifest contract evidence only; no external truth, production readiness, O
@@ -1798,6 +1803,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6a7fc668c7bc93f8 / Claim ceiling: repository-local current projection regeneration, closure and path-accounting evidence only; no external
   - 来源：`reports/operations/ignition-134-step11-current-projection-closure.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: repository-local dynamic admission and capability-lease evidence](../../../reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66889a77a773c8dd / Claim ceiling: repository-local dynamic admission and capability-lease evidence
+  - 来源：`reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md`
   - 依赖：—；被引用：—
 - [Claim ceiling: repository-local Human Surface fingerprint and materiality-projection evidence only; no external truth, p](../../../reports/operations/ignition-134-step07-human-surface-fingerprint-refresh.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ec8de35ed3a577bd / DARE plus a merge operator concretely generates a merged artifact, but it does not lower a declarative function specific
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [data/evidence_regimes.csv](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-0957ba98dd3f13ef / data/evidence_regimes.csv
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [data/evidence_regimes.json](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-b88453306db08221 / data/evidence_regimes.json
-  - 来源：`docs/machine_readable_data_plan.md`
   - 依赖：—；被引用：—

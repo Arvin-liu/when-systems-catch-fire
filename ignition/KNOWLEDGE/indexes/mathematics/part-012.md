@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：案例说明：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：\[D73\]\(docs/zh/functions/items/D73.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d085800eec28aa39 / 中文：案例说明：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：\[D73\]\(docs/zh/functions/items/D73.md\)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D73；被引用：—
 - [中文：案例说明：AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件。核心函数：D79](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b83aa612f7e335b9 / 中文：案例说明：AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件。核心函数：D79
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-a821506f11445aaa / 从这条案例看，中文：案例说明：\[D66\]\(docs/zh/functions/items/D66.md\)×\[D53\]\(docs/zh/functions… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D53, D66；被引用：—
-- [从这条案例看，中文：案例说明：AI-ε安装三条路径——好奇心-ε闭环在AI上的死锁破解 English: Rule-based English rend… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ec411068fc22f419 / 从这条案例看，中文：案例说明：AI-ε安装三条路径——好奇心-ε闭环在AI上的死锁破解 English: Rule-based English rend… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—

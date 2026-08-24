@@ -155,6 +155,72 @@ class LiveCodexRuntimeScratchTests(unittest.TestCase):
                 adapter.dispatch(envelope())
             self.assertEqual(tuple(parent.iterdir()), ())
 
+    def test_r3_can_reference_existing_codex_auth_without_copying_it(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            workspace = root / "workspace"
+            workspace.mkdir()
+            (workspace / "input.txt").write_text("fixture-138\n", encoding="utf-8")
+            workspace.chmod(0o555)
+            (workspace / "input.txt").chmod(0o444)
+            scratch_parent = root / "runtime-parent"
+            scratch_parent.mkdir()
+            formal = root / "formal"
+            control = root / "control"
+            documents = root / "documents"
+            auth = root / "auth-source"
+            formal.mkdir()
+            control.mkdir()
+            documents.mkdir()
+            auth.mkdir(mode=0o700)
+            auth_file = auth / "auth.json"
+            auth_file.write_text("opaque-auth-placeholder", encoding="utf-8")
+            auth_file.chmod(0o600)
+            fake = root / "codex-auth-reference-fake"
+            fake.write_text(
+                "#!/usr/bin/env python3\n"
+                "import json, os, sys\n"
+                "from pathlib import Path\n"
+                "args = sys.argv[1:]\n"
+                "if args == ['--version']:\n"
+                "    print('codex-cli 0.144.4')\n"
+                "elif args == ['exec', '--help']:\n"
+                "    print('--json --ephemeral --ignore-user-config --ignore-rules --skip-git-repo-check --sandbox --cd --output-schema')\n"
+                "else:\n"
+                "    assert Path(os.environ['CODEX_HOME']).name == 'auth-source'\n"
+                "    scratch = Path(os.environ['TMPDIR']).resolve()\n"
+                "    assert Path(os.environ['HOME']).resolve() == scratch\n"
+                "    assert Path(os.environ['XDG_CACHE_HOME']).resolve() == scratch / '.cache'\n"
+                "    (scratch / 'helper-created').write_text('runtime-only')\n"
+                "    print(json.dumps({'type': 'turn.completed', 'text': '{\\\"nonce\\\":\\\"auth-ref\\\"}'}))\n",
+                encoding="utf-8",
+            )
+            fake.chmod(stat.S_IRUSR | stat.S_IWUSR | stat.S_IXUSR)
+            adapter = LiveCodexAdapter(
+                workspace,
+                executable=str(fake),
+                transport=LiveProcessTransport(executable_allowlist=(str(fake),), env_allowlist=CHILD_ENV_ALLOWLIST),
+                authentication_observed=True,
+                adapter_id="codex-live-r3",
+                runtime_scratch_parent=scratch_parent,
+                formal_repo=formal,
+                control_repo=control,
+                persistent_user_document_roots=(documents,),
+                auth_source_path=auth,
+                auth_source_ref="auth://codex-login-status",
+            )
+
+            observation = adapter.dispatch(envelope())
+
+            self.assertTrue(observation.parsed)
+            self.assertEqual(observation.runtime_scratch_cleanup_status, "CLEANED")
+            self.assertEqual(tuple(scratch_parent.iterdir()), ())
+            self.assertEqual(adapter.last_auth_source_observation["mode"], "READ_ONLY_REFERENCE")
+            self.assertFalse(adapter.last_auth_source_observation["content_read"])
+            self.assertFalse(adapter.last_auth_source_observation["copied"])
+            self.assertFalse(adapter.last_auth_source_observation["mutated"])
+            self.assertTrue(adapter.last_auth_source_observation["unchanged"])
+
 
 if __name__ == "__main__":
     unittest.main()

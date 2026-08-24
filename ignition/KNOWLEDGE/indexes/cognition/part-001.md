@@ -29,6 +29,11 @@
   - 可搜索名称：NFC-967382701e506757 / """Create only declared runtime directories inside the validated lease."""
   - 来源：`agent_federation/live_transport.py`
   - 依赖：—；被引用：—
+- ["""Digest auth-source metadata only; never read credential contents."""](../../../agent_federation/live_transport.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1bc358f219773ec2 / """Digest auth-source metadata only; never read credential contents."""
+  - 来源：`agent_federation/live_transport.py`
+  - 依赖：—；被引用：—
 - ["""Digest names/types/modes/sizes only; never read runtime file contents."""](../../../agent_federation/live_transport.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4e1d5b9e06581427 / """Digest names/types/modes/sizes only; never read runtime file contents."""
@@ -428,6 +433,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6995e5069c586679 / \("external.openclaw", OpenClawAdapter\("openclaw-fixture", runner=openclaw_runner\), openclaw_runner\),
   - 来源：`agent_federation/pilots.py`
+  - 依赖：—；被引用：—
+- [\(item for item in candidates if isinstance\(item, Mapping\) and item.get\("kind"\) == "AGENTIC_EXECUTOR"\),](../../../agent_federation/local_executor_census.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1A8E0FD752B18D30 / \(item for item in candidates if isinstance\(item, Mapping\) and item.get\("kind"\) == "AGENTIC_EXECUTOR"\), / IMPLICIT-1A8E0FD752B18D30
+  - 来源：`agent_federation/local_executor_census.py`
   - 依赖：—；被引用：—
 - [**原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -893,6 +903,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-06630c98dc87acb2 / Analyzer/Builder/Creator agents generate and rewrite specifications, but no machine-enforced compiler, code artifact or
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [and item.get\("kind"\) == "AGENTIC_EXECUTOR"](../../../agent_federation/local_executor_census.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-41F1CCE0672B6E0C / and item.get\("kind"\) == "AGENTIC_EXECUTOR" / IMPLICIT-41F1CCE0672B6E0C
+  - 来源：`agent_federation/local_executor_census.py`
   - 依赖：—；被引用：—
 - [and let the durable failed receipt carry only public evidence.](../../../agent_federation/live_execution.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8fc2b78389b2cb7b / Repository-local deterministic Steering / Intent / Goal / Commitment modeling and current architecture projection only;
   - 来源：`agent-results/IGNITION-20260821-129-machine-receipt.json`
-  - 依赖：—；被引用：—
-- [Repository-local implementation, deterministic projections, recovery rehearsal and synchronization evidence only; no pro](../../../agent-results/IGNITION-20260820-127-machine-receipt.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2cf2866c92aa17c3 / Repository-local implementation, deterministic projections, recovery rehearsal and synchronization evidence only; no pro
-  - 来源：`agent-results/IGNITION-20260820-127-machine-receipt.json`
-  - 依赖：—；被引用：—
-- [Repository-local iteration-boundary semantics, canonical ordinal derivation, deterministic projections, bounded regressi](../../../agent-results/IGNITION-20260822-133-machine-receipt.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-405e669acb1fa80b / Repository-local iteration-boundary semantics, canonical ordinal derivation, deterministic projections, bounded regressi
-  - 来源：`agent-results/IGNITION-20260822-133-machine-receipt.json`
-  - 依赖：—；被引用：—
-- [Repository-local Task134 residual non-growth, deterministic projection, bounded regression and pre-publication release r](../../../agent-results/IGNITION-20260822-134-machine-receipt.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-560e102308eb0e6d / Repository-local Task134 residual non-growth, deterministic projection, bounded regression and pre-publication release r
-  - 来源：`agent-results/IGNITION-20260822-134-machine-receipt.json`
   - 依赖：—；被引用：—

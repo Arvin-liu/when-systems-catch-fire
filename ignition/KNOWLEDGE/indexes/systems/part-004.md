@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| Causal identified \| 0 \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-db40ef483fd96ebd / \| Causal identified \| 0 \|
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [\| Causal reasoning \| Already listed confounding, selection, reverse selection, timing, spatial mismatch, common support,](../../../reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b7c9913c744cad77 / \| Causal reasoning \| Already listed confounding, selection, reverse selection, timing, spatial mismatch, common support,
+  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md`
+  - 依赖：—；被引用：—
+- [\| causal_identification \| 0 \| 250 \| 250 \|](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2d3469ec5af98072 / \| causal_identification \| 0 \| 250 \| 250 \|
+  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
+  - 依赖：—；被引用：—
+- [\| CAUSAL_IDENTIFIED \| 必须有识别假设和证据 \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-431aa77bc2a13ff8 / \| CAUSAL_IDENTIFIED \| 必须有识别假设和证据 \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
 - [\| Collins & Loftus, spreading activation \| Represent activation/retrieval dynamics. \| Retrieval, repetition or activatio](../../../reports/research/121Q23-network-theory-source-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ac14f29d5a1138c1 / \| Collins & Loftus, spreading activation \| Represent activation/retrieval dynamics. \| Retrieval, repetition or activatio
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ec280231d1e66691 / 失败案例反向修正机制缺失
   - 来源：`docs/structural_gap_audit.md`
-  - 依赖：—；被引用：—
-- [失败类型学不是独立文档，而是让 v0.2 任务 A-E 形成可修正闭环的机制。](../../../docs/failure_typology.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b4b8a74af9b9ba20 / 失败类型学不是独立文档，而是让 v0.2 任务 A-E 形成可修正闭环的机制。
-  - 来源：`docs/failure_typology.md`
-  - 依赖：—；被引用：—
-- [她见过太多同行在赛课期间身体出问题。有人月经紊乱，一个月来两三次；有人心脏早搏。她自己的症状是偏头痛，一到备赛期就疼得厉害。医生判断主要是焦虑导致。几年里，她为治头痛花在针灸、拔罐、刮痧、按摩上的钱，加起来有10万元。她也曾被确诊为抑郁症，](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1786ce7c74f6c27d / 她见过太多同行在赛课期间身体出问题。有人月经紊乱，一个月来两三次；有人心脏早搏。她自己的症状是偏头痛，一到备赛期就疼得厉害。医生判断主要是焦虑导致。几年里，她为治头痛花在针灸、拔罐、刮痧、按摩上的钱，加起来有10万元。她也曾被确诊为抑郁症，
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [好选题来自多观点竞争，而不是单点拍脑袋决定。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a7328c882a14752b / 好选题来自多观点竞争，而不是单点拍脑袋决定。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [如果把"问题"看成需要消除的bug，教育就变成了压制；如果把"问题"看成门控面演化的信号，教育就变成了引导。同一个行为，两种框架导致完全不同的结果。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38bf245208de0667 / 如果把"问题"看成需要消除的bug，教育就变成了压制；如果把"问题"看成门控面演化的信号，教育就变成了引导。同一个行为，两种框架导致完全不同的结果。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

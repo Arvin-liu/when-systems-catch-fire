@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| P_meta \| 主机制已入表；暴露候选函数 NF-X3 指标驱动噪声累积 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5d4926d87a5b9ade / \| P_meta \| 主机制已入表；暴露候选函数 NF-X3 指标驱动噪声累积 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
+  - 依赖：—；被引用：—
 - [\| PEND-001 \| 数学 \| 黎曼猜想 \| L2 / L3 / pending \| 点火框架证明了黎曼猜想 \| 点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明 \| 保持 pending，除非有外部数学证明 \|](../../../docs/pending_claims_register.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f2905d2a350b0e8c / \| PEND-001 \| 数学 \| 黎曼猜想 \| L2 / L3 / pending \| 点火框架证明了黎曼猜想 \| 点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明 \| 保持 pending，除非有外部数学证明 \|
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-e7876f0d36847f96 / 中文：案例说明：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：A8, A9；被引用：—
-- [中文：案例说明：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：\[D73\]\(docs/zh/functions/items/D73.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d085800eec28aa39 / 中文：案例说明：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：\[D73\]\(docs/zh/functions/items/D73.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D73；被引用：—

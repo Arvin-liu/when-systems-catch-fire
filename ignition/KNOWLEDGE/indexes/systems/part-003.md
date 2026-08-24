@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [OpenClaw was not dispatched because its observed agent surface has no disposable](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-78f990414c2ee32e / OpenClaw was not dispatched because its observed agent surface has no disposable
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
+- [OpenClaw was not invoked because its public Gateway/session surface could not prove the required disposable-workspace, e](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-92762f896ea2b06c / OpenClaw was not invoked because its public Gateway/session surface could not prove the required disposable-workspace, e
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
+- [OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-794046119666f476 / OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
 - [Operation/continuation chains expose a conceptual execution structure, but no durable trace schema, log, causal receipt](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-21eac89e219c2a7d / Operation/continuation chains expose a conceptual execution structure, but no durable trace schema, log, causal receipt
@@ -788,6 +803,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5cbba054d9c2da64 / Seeds: `ai_guide, current_state, historical_reports, iteration, iteration_manifest_contract, mcf, no_l7, pages_pipeline,
   - 来源：`reports/operations/121Q32-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [selecting by brand. Codex ranks first for the next re-attestation because it](../../../reports/operations/ignition-138-step00-local-executor-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a0e1f1c770dfe7a0 / selecting by brand. Codex ranks first for the next re-attestation because it
+  - 来源：`reports/operations/ignition-138-step00-local-executor-census.md`
   - 依赖：—；被引用：—
 - [Semantic nonblank fields are checked after trimming whitespace. Lists such as provenance, alternatives, residue, evidenc](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f4f646862e8f9ce9 / \| C-15 \| 道教行动主义与富兰克林的自省表格是同一文明机制 \| `SOURCE_REPORTS` \| `OMITTED_FROM_FINAL`，避免跨时代同构冒充证据。 \|
   - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| Causal identified \| 0 \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-db40ef483fd96ebd / \| Causal identified \| 0 \|
-  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
-  - 依赖：—；被引用：—
-- [\| Causal reasoning \| Already listed confounding, selection, reverse selection, timing, spatial mismatch, common support,](../../../reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b7c9913c744cad77 / \| Causal reasoning \| Already listed confounding, selection, reverse selection, timing, spatial mismatch, common support,
-  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md`
-  - 依赖：—；被引用：—
-- [\| causal_identification \| 0 \| 250 \| 250 \|](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2d3469ec5af98072 / \| causal_identification \| 0 \| 250 \| 250 \|
-  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
-  - 依赖：—；被引用：—
-- [\| CAUSAL_IDENTIFIED \| 必须有识别假设和证据 \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-431aa77bc2a13ff8 / \| CAUSAL_IDENTIFIED \| 必须有识别假设和证据 \|
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
   - 依赖：—；被引用：—

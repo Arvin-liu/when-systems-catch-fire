@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "忆秦娥纯拉力上位（外驱转自驱窗口）"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6C67A1C5708EAFDA / title: "忆秦娥纯拉力上位（外驱转自驱窗口）" / IMPLICIT-6C67A1C5708EAFDA
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2BC72810810E6D0B / title: "恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大" / IMPLICIT-2BC72810810E6D0B
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9E8D10CEF514D95F / title: "扁平化vs分层编码效率对比 — CEO直接BL对全员η=0.08，加VP中间层η=0.211，省VP工资但决策失真损失远超人力成本" / IMPLICIT-9E8D10CEF514D95F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降 / 抑郁者调度AI失败 - εaware↓ -> Pencode↓ -> ηinterface↓ -> 即使AI能力不变调度效率大幅下降"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-38830B43051BF616 / title: "抑郁者调度AI失败 — εaware↓→Pencode↓→ηinterface↓→即使AI能力不变调度效率大幅下降 / 抑郁者调度AI失败 - εaware↓ -> Pencode↓ -> ηinterface↓ -> 即使AI能力不变调度效率大幅下降" / IMPLICIT-38830B43051BF616

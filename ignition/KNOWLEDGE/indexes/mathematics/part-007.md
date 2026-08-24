@@ -1599,6 +1599,11 @@
   - 可搜索名称：NFC-aa0b2d722323967c / The published proof is not valid as printed: Eq. 39-40 sums only over k≠t while trying to include the k=t term, and writ
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [the R3 attempt scratch lifecycle. `codex login status` reported an existing](../../../reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f30cdb1978e21b84 / the R3 attempt scratch lifecycle. `codex login status` reported an existing
+  - 来源：`reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md`
+  - 依赖：—；被引用：—
 - [The release adds one coherent OS-owned Steering / Intent / Goal / Obligation plane across intent provenance, goal lifecy](../../../agent-results/IGNITION-20260821-129-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-3105c1372a644df8 / The release adds one coherent OS-owned Steering / Intent / Goal / Obligation plane across intent provenance, goal lifecy
@@ -2497,10 +2502,5 @@
 - [title: "信息守恒函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C5CD39AB1083E474 / title: "信息守恒函数" / IMPLICIT-C5CD39AB1083E474
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "信息维度-容斥权衡函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FE5F911C47442E61 / title: "信息维度-容斥权衡函数" / IMPLICIT-FE5F911C47442E61
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

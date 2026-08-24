@@ -52,6 +52,24 @@ def _runtime_metadata_digest(root: Path) -> str:
     return digest.hexdigest()
 
 
+def auth_source_metadata_digest(root: Path) -> str:
+    """Digest auth-source metadata only; never read credential contents."""
+
+    digest = hashlib.sha256()
+    if not root.exists() or root.is_symlink():
+        return digest.hexdigest()
+    entries = (root,) if root.is_file() else (root, *root.rglob("*"))
+    for path in sorted(entries, key=lambda item: item.relative_to(root.parent).as_posix()):
+        try:
+            info = path.lstat()
+        except OSError as exc:
+            raise LiveTransportError("auth source metadata cannot be inspected") from exc
+        relative = path.relative_to(root.parent).as_posix()
+        record = f"{relative}\0{stat_type(info.st_mode)}\0{info.st_mode & 0o7777:o}\0{info.st_size}\0{info.st_mtime_ns}\n"
+        digest.update(record.encode("utf-8"))
+    return digest.hexdigest()
+
+
 def stat_type(mode: int) -> str:
     if stat.S_ISDIR(mode):
         return "dir"
@@ -635,5 +653,5 @@ def parse_bounded_jsonl(text: str, *, max_events: int = 256, max_line_bytes: int
 __all__ = [
     "LiveProcessResult", "LiveProcessTransport", "LiveTransportError", "RuntimeScratchLease",
     "RUNTIME_SCRATCH_CLEANED", "RUNTIME_SCRATCH_FAILED", "RUNTIME_SCRATCH_RECONCILIATION",
-    "interface_digest", "parse_bounded_jsonl",
+    "auth_source_metadata_digest", "interface_digest", "parse_bounded_jsonl",
 ]

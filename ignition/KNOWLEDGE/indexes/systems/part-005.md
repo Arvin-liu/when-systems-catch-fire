@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [失败类型学不是独立文档，而是让 v0.2 任务 A-E 形成可修正闭环的机制。](../../../docs/failure_typology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b4b8a74af9b9ba20 / 失败类型学不是独立文档，而是让 v0.2 任务 A-E 形成可修正闭环的机制。
+  - 来源：`docs/failure_typology.md`
+  - 依赖：—；被引用：—
+- [她见过太多同行在赛课期间身体出问题。有人月经紊乱，一个月来两三次；有人心脏早搏。她自己的症状是偏头痛，一到备赛期就疼得厉害。医生判断主要是焦虑导致。几年里，她为治头痛花在针灸、拔罐、刮痧、按摩上的钱，加起来有10万元。她也曾被确诊为抑郁症，](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1786ce7c74f6c27d / 她见过太多同行在赛课期间身体出问题。有人月经紊乱，一个月来两三次；有人心脏早搏。她自己的症状是偏头痛，一到备赛期就疼得厉害。医生判断主要是焦虑导致。几年里，她为治头痛花在针灸、拔罐、刮痧、按摩上的钱，加起来有10万元。她也曾被确诊为抑郁症，
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [好选题来自多观点竞争，而不是单点拍脑袋决定。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a7328c882a14752b / 好选题来自多观点竞争，而不是单点拍脑袋决定。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [如果把"问题"看成需要消除的bug，教育就变成了压制；如果把"问题"看成门控面演化的信号，教育就变成了引导。同一个行为，两种框架导致完全不同的结果。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-38bf245208de0667 / 如果把"问题"看成需要消除的bug，教育就变成了压制；如果把"问题"看成门控面演化的信号，教育就变成了引导。同一个行为，两种框架导致完全不同的结果。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [威权体制稳定或崩溃的具体因果判定：**pending**（需要历史材料、制度分析、比较政治、数据支持）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ec74c07ca6234bc1 / 威权体制稳定或崩溃的具体因果判定：**pending**（需要历史材料、制度分析、比较政治、数据支持）
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-1e2cb877a4fe5c5e / 这是首次发现，或比既有 ICL / priming / task-inference 机制更新颖。
   - 来源：`docs/architecture/epistemic-structural-induction-r0.md`
-  - 依赖：—；被引用：—
-- [这条成果链同时展示两类写作材料：原始金朝笔记是 `external_input`；Q26 报告对材料生成的机制链、竞争解释、gap、residue 和 claim ceiling 是 `ignition_increment`。Q29／Q29](../../../docs/publication/zhiyuan-writing-examples.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2edb3ebb63f8b74f / 这条成果链同时展示两类写作材料：原始金朝笔记是 `external_input`；Q26 报告对材料生成的机制链、竞争解释、gap、residue 和 claim ceiling 是 `ignition_increment`。Q29／Q29
-  - 来源：`docs/publication/zhiyuan-writing-examples.md`
-  - 依赖：—；被引用：—
-- [这条机制链不能抹去被改名、改制或被迫接受新秩序的僧尼；不能把普通百姓只写成祥瑞观众；不能把园林、宫观和仪式的资源成本藏在“文明创造力”后面；不能把官僚、士大夫、权臣和批评者的不同位置合成同一个“皇帝”；不能用 1127 年之后的亡国知识，假](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8ce134612b87b87a / 这条机制链不能抹去被改名、改制或被迫接受新秩序的僧尼；不能把普通百姓只写成祥瑞观众；不能把园林、宫观和仪式的资源成本藏在“文明创造力”后面；不能把官僚、士大夫、权臣和批评者的不同位置合成同一个“皇帝”；不能用 1127 年之后的亡国知识，假
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [这让“宗教被皇权利用”变得具体起来。它不只发生在皇帝脑中的动机，也发生在名字、房屋、官文书和资源流向里。若只讨论徽宗是否聪明，就会看不见那些没有权力决定自己怎样被称呼的人。文章若要向更高处走，必须把这些低处一起带上去。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-46711e0bef3ee31f / 这让“宗教被皇权利用”变得具体起来。它不只发生在皇帝脑中的动机，也发生在名字、房屋、官文书和资源流向里。若只讨论徽宗是否聪明，就会看不见那些没有权力决定自己怎样被称呼的人。文章若要向更高处走，必须把这些低处一起带上去。
-  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
-  - 依赖：—；被引用：—
-- [这里记录语言怎样参与点火的来源保存、命题抽取、对象建模、论证、机制、验证和公共表达。它是一张横穿 L0—L6 的控制平面，不是 L7，也不是“中文写顺一点”的附属手册。](../../../docs/language-thought/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-17d450d372b073f4 / 这里记录语言怎样参与点火的来源保存、命题抽取、对象建模、论证、机制、验证和公共表达。它是一张横穿 L0—L6 的控制平面，不是 L7，也不是“中文写顺一点”的附属手册。
-  - 来源：`docs/language-thought/README.md`
   - 依赖：—；被引用：—

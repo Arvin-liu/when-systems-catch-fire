@@ -4,6 +4,106 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [硬约束（6）：** - 仅适用于局部、低耦合、关系稳定、可预测范围](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-98675fc7d49f7b12 / 硬约束（6）：** - 仅适用于局部、低耦合、关系稳定、可预测范围
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [硬约束（6）：** - 开放须在生态/社会承载力上限内](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-610b64e4d0835169 / 硬约束（6）：** - 开放须在生态/社会承载力上限内
+  - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
+  - 依赖：—；被引用：—
+- [碰撞前先校验**：每次碰撞前运行 `python3 tools/validate_data.py`，确认 P1 机器可读数据仍然有效。](../../../docs/getbrain-handoff-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c19153b797a9e7ad / 碰撞前先校验**：每次碰撞前运行 `python3 tools/validate_data.py`，确认 P1 机器可读数据仍然有效。
+  - 来源：`docs/getbrain-handoff-20260708.md`
+  - 依赖：P1；被引用：—
+- [碰撞证据链：不听话的人 × 点火两张表（20260711）](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a2995b34bbd4eff8 / 碰撞证据链：不听话的人 × 点火两张表（20260711）
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [示例：D597 追加「指标排名隐性分层」扩展注释，将单篇教育证据升级为「教育 + 跨域三领域复现」](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-2ec16f4f5463d3fa / 示例：D597 追加「指标排名隐性分层」扩展注释，将单篇教育证据升级为「教育 + 跨域三领域复现」
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：D597；被引用：—
+- [社会信任如何形成](../../../data/classic_problems_benchmark.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：CLAIM-PEND-014 / 社会信任如何形成
+  - 来源：`data/classic_problems_benchmark.csv`
+  - 依赖：—；被引用：—
+- [社会信任如何形成；](../../../docs/storytelling_case_backlog.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c950873c72a3297f / 社会信任如何形成；
+  - 来源：`docs/storytelling_case_backlog.md`
+  - 依赖：—；被引用：—
+- [社会信任如何形成？这是社会科学中的经典问题，涉及制度、文化、互动等多重因素。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ed700072ffff7d94 / 社会信任如何形成？这是社会科学中的经典问题，涉及制度、文化、互动等多重因素。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会学碰撞：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`](../../../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2d5898115dc64d4e / 社会学碰撞：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md`
+  - 依赖：—；被引用：—
+- [社会整体效率最优](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9dd26b9b7bef4873 / 社会整体效率最优
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [社会整体涌现文化和制度](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-037868798d47b28c / 社会整体涌现文化和制度
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [社会科学 / 政治学](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d29f21073d046ba6 / 社会科学 / 政治学
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会科学 / 社会学](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-61c41a73f4ec8e32 / 社会科学 / 社会学
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会科学与经济学](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-64b353f77ef43bd8 / 社会科学与经济学
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [社会科学命题成立需要调查、统计、田野、实验和反事实识别。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-72263a65d3653ead / 社会科学命题成立需要调查、统计、田野、实验和反事实识别。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会科学实证研究；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ab0ee42730ac7bf7 / 社会科学实证研究；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [社会科学数据与反事实；](../../../docs/roadmap_v0.2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-47c2d934d783e52e / 社会科学数据与反事实；
+  - 来源：`docs/roadmap_v0.2.md`
+  - 依赖：—；被引用：—
+- [社会科学界的同行审查](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5588f0edda99cca4 / 社会科学界的同行审查
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会科学界通过实证研究、理论分析、比较研究等方法研究社会信任形成问题。主流观点认为社会信任是由制度、文化、互动等多重因素共同塑造。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c952ab412749e3bd / 社会科学界通过实证研究、理论分析、比较研究等方法研究社会信任形成问题。主流观点认为社会信任是由制度、文化、互动等多重因素共同塑造。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会科学：数据不足或冲突、解释争议很大、缺乏统计显著性检验、缺乏反事实识别](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2ad2ef2dbdc9b964 / 社会科学：数据不足或冲突、解释争议很大、缺乏统计显著性检验、缺乏反事实识别
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [社会角色持续占据评价入口。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c2651618496c9e41 / 社会角色持续占据评价入口。

@@ -1,0 +1,107 @@
+{
+  "schema_version": "ignition-138-step14-candidate-full-regression-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "14",
+  "run_number": 2,
+  "status": "PASS",
+  "candidate_head_sha": "99389c846b6766ca8b373812ece4191660b6474f",
+  "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+  "working_directory": "ignition",
+  "long_window": {
+    "natural_terminal_state": true,
+    "process_killed": false,
+    "arbitrary_timeout_used": false,
+    "watchdog_used": false,
+    "minimum_window_seconds": 14400,
+    "actual_run_completed_before_window": true
+  },
+  "environment_contract": {
+    "isolated": true,
+    "dependency_preflight": "PASS",
+    "python_version": "3.14.6",
+    "execution_python": "temporary isolated foundation venv outside repository",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "path_prepend_contract": "execution interpreter directory precedes inherited PATH for portable python3 child validators"
+  },
+  "result": {
+    "exit_code": 0,
+    "process_returncode": 0,
+    "tests_run": 1173,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "summary": "OK",
+    "status": "PASS",
+    "runtime_seconds": 2929.757,
+    "elapsed_seconds": 2930.779
+  },
+  "side_effect_observation": {
+    "clean_before": true,
+    "clean_after": true,
+    "tracked_mutations": [],
+    "generated_output_drift": [],
+    "capture": {
+      "location": "external temporary directory; not part of the formal repository",
+      "stdout_bytes": 5533,
+      "stdout_sha256": "120776dfd0999a570c36209c011f2702e327c6baed4330a2b4e20a17464845b9",
+      "stderr_bytes": 1621,
+      "stderr_sha256": "03fc06f5b1b9e3acfec9f3a57e715587eb161c6d83c19ba75cdc76e8f5c90e2a"
+    }
+  },
+  "projection_preflight": {
+    "status": "PASS",
+    "check_count": 24,
+    "failed_checks": [],
+    "projection_checks_pass": true,
+    "release_admission": true,
+    "clean_tree_gate_pass": true,
+    "side_effect_detected": false,
+    "claim_ceiling": "Deterministic repository projection cleanliness only; no authority, external truth, production readiness, Owner acceptance or epistemic upgrade."
+  },
+  "attempt_history": [
+    {
+      "run_number": 1,
+      "candidate_head_sha": "9c3ee4805a4b1073894e403837375af9cdc1d92d",
+      "tests_run": 1173,
+      "failures": 9,
+      "errors": 0,
+      "skipped": 0,
+      "runtime_seconds": 3089.427,
+      "elapsed_seconds": 3091.796,
+      "status": "FAIL_GENERATED_PROJECTION_AND_CONTRACT_REPAIR_REQUIRED",
+      "natural_terminal_state": true,
+      "watchdog_used": false,
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "failure_clusters": [
+        "function census and deep adjudication projections out of date",
+        "human/fire-seed source hash drift for docs/architecture/external-agent-federation-r1.md",
+        "full-regression runner contract still bound to Task137",
+        "Knowledge Experience D127 source projection stale",
+        "foundation/production integration failed through the stale generator projections"
+      ],
+      "stdout_sha256": "1a4f10917109a570c36209c011f2702e327c6baed4330a2b4e20a17464845b9",
+      "stderr_sha256": "6a2c9dd09e9992517952aad5ad31528e990cd23f3b6f71eb83ca9803027aa084"
+    }
+  ],
+  "repairs": [
+    "Updated full-regression-runner-r1 task binding to IGNITION-20260824-138",
+    "Rebuilt Function Census and Deep Adjudication projections",
+    "Rebuilt Human Surface, Knowledge Experience and Fire Seed projections",
+    "Regenerated Current Facts, Current Snapshot and seven compiler-owned Current blocks",
+    "Preserved all residuals and did not add skip, xfail, expectedFailure, ignore or residual expansion"
+  ],
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "claim_ceiling": "Exact repository-local candidate natural full-suite and projection-preflight evidence for candidate 99389c846b6766ca8b373812ece4191660b6474f only; no fresh-clone, publication, external truth, production readiness, Owner acceptance, live completion or epistemic acceptance is inferred."
+}

@@ -42,9 +42,9 @@
       "source_census_count": 393
     },
     "foundation": {
-      "function_identity_cards": 5841,
-      "function_quarantine_or_pending": 4848,
-      "nonfunction_claims": 16831,
+      "function_identity_cards": 5857,
+      "function_quarantine_or_pending": 4853,
+      "nonfunction_claims": 16848,
       "nonfunction_quarantine_or_pending": 4812
     },
     "human_surface": {
@@ -84,7 +84,7 @@
       "cards": 414,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 23004
+      "search_records": 23037
     },
     "packs": {
       "capability_route_count": 10,
@@ -140,11 +140,11 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "8706fa8b891707095c64bd3a5d25e191c86a929423b52650ef5ae21102ef7da7"
+      "sha256": "e625b6a72873d8351e8faff15fc078f0c7f015870be7119e33e631f70e7d04b1"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "0797c50de2c587d7a480c1e9bc1ec4e0049893e4699de0cf4cfb938db0a54b6e"
+      "sha256": "8ce0c1958b5ccd684decc5a0c11a5a6b3bac2eb96197349281d6c37f2a97f27e"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -152,11 +152,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "6c3ec3db3c65e723f7820b6065305130882253b989736c1f38f1c2f8ef5b1a0f"
+      "sha256": "c3c2eaf47bbb19883b2ee02a13b567d2e1bfee4a1e8aca09ddd6df7d38a76eb3"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "84082b7c4390f698478888a1bd249a46db9688c8c91a0fa26b3e47b684fbd626"
+      "sha256": "4b0abd8bdb729617c7195a885c0bbc6ea4380e3f5c348c5f4ad76a83c36ef7fe"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -196,7 +196,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "d0b8e590eec3a1f4cd9596cb791ade262dd46603fee5df5e9d3b8379754e2293"
+      "sha256": "2c62d01afb16911adf5c09cb931c00d23ee2b919a01c3da272ac23694ac5a5da"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

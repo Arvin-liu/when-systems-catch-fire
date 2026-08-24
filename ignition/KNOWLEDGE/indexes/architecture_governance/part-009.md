@@ -4,6 +4,106 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| `HEURISTIC` \| 可失败的经验规则，不具有演绎必然性 \|](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-13df5c49fe78f8a5 / \| `HEURISTIC` \| 可失败的经验规则，不具有演绎必然性 \|
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [\| `HISTORICAL_FACT_VALID` \| Task 121/122 pre-release/final-candidate 日志明确标注历史 baseline 与 branch projection \| `ignition/S](../../../reports/architecture/current-state-drift-audit-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7fc4b00915243599 / \| `HISTORICAL_FACT_VALID` \| Task 121/122 pre-release/final-candidate 日志明确标注历史 baseline 与 branch projection \| `ignition/S
+  - 来源：`reports/architecture/current-state-drift-audit-r1.md`
+  - 依赖：—；被引用：—
+- [\| `IDENTIFIER_RESOLVED` \| DOI/ISBN/arXiv/PubMed 等标识符已解析且格式正确 \| Crossref API, arXiv API, PubMed API, ISBN resolver \|](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0ccd6395ecc3abf7 / \| `IDENTIFIER_RESOLVED` \| DOI/ISBN/arXiv/PubMed 等标识符已解析且格式正确 \| Crossref API, arXiv API, PubMed API, ISBN resolver \|
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-ARG-01` \| 小群体亲邻关系 + 互惠/声誉约束 → 更少脱离 → 更高韧性 \| 编制真实、关系有效、惩罚非主因 \| 强制、精锐选择、物质激励 \| 可理解，证据不足 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-af3e77d1cb7ad3cf / \| `JIN-ARG-01` \| 小群体亲邻关系 + 互惠/声誉约束 → 更少脱离 → 更高韧性 \| 编制真实、关系有效、惩罚非主因 \| 强制、精锐选择、物质激励 \| 可理解，证据不足 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-ARG-05` \| 后设史书重构开国意图 → 不能以终局倒推初衷 \| 文本层累已被文献学建立 \| 早期确有多重目标 \| 待外部考证 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-244ec31b64a84f0d / \| `JIN-ARG-05` \| 后设史书重构开国意图 → 不能以终局倒推初衷 \| 文本层累已被文献学建立 \| 早期确有多重目标 \| 待外部考证 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-CLM-05` \| 铁浮图、拐子马、连马与兵种代差不是充分解释 \| `argument_plausible`；细节待核 \| 邓广铭论证和术语年代需原文回读 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-858e868c688133e8 / \| `JIN-CLM-05` \| 铁浮图、拐子马、连马与兵种代差不是充分解释 \| `argument_plausible`；细节待核 \| 邓广铭论证和术语年代需原文回读 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-CLM-11` \| 扁平君民关系提高军事效率 \| `insufficient_evidence` \| 从轶事到军效存在跨层跳跃 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-accd5076fc727546 / \| `JIN-CLM-11` \| 扁平君民关系提高军事效率 \| `insufficient_evidence` \| 从轶事到军效存在跨层跳跃 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-CLM-12` \| 国号、年号与创始意图受到胜利后的回溯重构 \| `source_reports` / `external_verification_required` \| 刘浦江与争论文献需定位原论证 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ec1e6de023420468 / \| `JIN-CLM-12` \| 国号、年号与创始意图受到胜利后的回溯重构 \| `source_reports` / `external_verification_required` \| 刘浦江与争论文献需定位原论证 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-SRC-03` \| S3 \| 文末参考文献 \| 外部核验队列 \| 否 \| 书目出现不等于本轮已打开、定位或支持命题 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d3d4834d9a598ea1 / \| `JIN-SRC-03` \| S3 \| 文末参考文献 \| 外部核验队列 \| 否 \| 书目出现不等于本轮已打开、定位或支持命题 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `METADATA_VERIFIED` \| 标题、作者、年份、期刊/出版社与权威元数据源一致 \| Crossref metadata, publisher page, library catalog \|](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4c14c1ea0f4d8fcb / \| `METADATA_VERIFIED` \| 标题、作者、年份、期刊/出版社与权威元数据源一致 \| Crossref metadata, publisher page, library catalog \|
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [\| `PREEXISTING_RESIDUAL` \| `CURRENT-FACTS-ORDER-DRIFT` remains order-sensitive in the inherited full discovery; `PROPAGA](../../../reports/architecture/os-control-plane-r2-gap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e4ff7c3808fc803e / \| `PREEXISTING_RESIDUAL` \| `CURRENT-FACTS-ORDER-DRIFT` remains order-sensitive in the inherited full discovery; `PROPAGA
+  - 来源：`reports/architecture/os-control-plane-r2-gap-audit.md`
+  - 依赖：—；被引用：—
+- [\| `PUBLICATION_COMPLETION_NOT_TRUTH` \| A report, Results Book entry or public-safe explanation has passed its publicatio](../../../docs/architecture/structural-governance-surface.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0032f0b4175d601c / \| `PUBLICATION_COMPLETION_NOT_TRUTH` \| A report, Results Book entry or public-safe explanation has passed its publicatio
+  - 来源：`docs/architecture/structural-governance-surface.md`
+  - 依赖：—；被引用：—
+- [\| `REJECT` \| research-specific claim/evidence schema、deep-research queue、旧 obligation graph 和整套旧 runtime stack \| 它们属于 Do](../../../reports/architecture/task115-runtime-prior-art-adoption-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b2db80de7713e559 / \| `REJECT` \| research-specific claim/evidence schema、deep-research queue、旧 obligation graph 和整套旧 runtime stack \| 它们属于 Do
+  - 来源：`reports/architecture/task115-runtime-prior-art-adoption-r0.md`
+  - 依赖：—；被引用：—
+- [\| `source-layer-map.md` \| 材料分层（A 可核对事件 / B 当事人解释 / C 访谈者解释 / D 整理概括 / E 外部验证） \|](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-1a271dd31c3ef9a3 / \| `source-layer-map.md` \| 材料分层（A 可核对事件 / B 当事人解释 / C 访谈者解释 / D 整理概括 / E 外部验证） \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [\| `STATE_CONSISTENCY` \| Supervisor trace is an in-memory projection persisted as a whole JSON state; Memory R1 has file](../../../reports/architecture/os-control-plane-r2-gap-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-db1989ef54b951e5 / \| `STATE_CONSISTENCY` \| Supervisor trace is an in-memory projection persisted as a whole JSON state; Memory R1 has file
+  - 来源：`reports/architecture/os-control-plane-r2-gap-audit.md`
+  - 依赖：—；被引用：—
+- [\| `STRUCTURAL_METAPHOR` \| 未给出结构保持映射的跨域类比 \|](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f8783195b77eb485 / \| `STRUCTURAL_METAPHOR` \| 未给出结构保持映射的跨域类比 \|
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [\| `UNAVAILABLE_FOR_CONTENT_REVIEW` \| 只能核验元数据，不能读取支持内容 \| Paywalled, lost, restricted access \|](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-601e7571bf00d1a6 / \| `UNAVAILABLE_FOR_CONTENT_REVIEW` \| 只能核验元数据，不能读取支持内容 \| Paywalled, lost, restricted access \|
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [\| `UNKNOWN_MUST_REMAIN_UNKNOWN` \| The evidence packet, provenance or gate does not license a stronger conclusion. \| The](../../../docs/architecture/structural-governance-surface.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-17d368f9eb054bc8 / \| `UNKNOWN_MUST_REMAIN_UNKNOWN` \| The evidence packet, provenance or gate does not license a stronger conclusion. \| The
+  - 来源：`docs/architecture/structural-governance-surface.md`
+  - 依赖：—；被引用：—
+- [\| `UNRESOLVED_IDENTITY` \| 来源不足以区分对象、引用、标题、代码声明或自然语言时的显式隔离身份 \|](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8176b8428162e33d / \| `UNRESOLVED_IDENTITY` \| 来源不足以区分对象、引用、标题、代码声明或自然语言时的显式隔离身份 \|
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [\| `validations/` \| 可重放验证与反例契约 \|](../../../FOUNDATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-13a5e631d1ea14a4 / \| `validations/` \| 可重放验证与反例契约 \|
+  - 来源：`FOUNDATION.md`
+  - 依赖：—；被引用：—
 - [\| `WITHDRAWN_NO_REBOUND` \| A claim or result is withdrawn, quarantined, downgraded or marked historical. \| It remains in](../../../docs/architecture/structural-governance-surface.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-dfde5ce059672ef1 / \| `WITHDRAWN_NO_REBOUND` \| A claim or result is withdrawn, quarantined, downgraded or marked historical. \| It remains in
@@ -2402,105 +2502,5 @@
 - [中文：案例说明：战后德国人有真实退出权，社会市场经济认同经退出权验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ea997d573e2f779b / 中文：案例说明：战后德国人有真实退出权，社会市场经济认同经退出权验证
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：收益-风险投影-网结构](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5f462ba767762eea / 中文：案例说明：收益-风险投影-网结构
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：政治认同经退出权验证但经济认同未建立](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d30dd3fc5a0215fd / 中文：案例说明：政治认同经退出权验证但经济认同未建立
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：沃尔顿10年追踪 → D61向上螺旋自维持验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-123b454ec7ddfc44 / 中文：案例说明：沃尔顿10年追踪 → D61向上螺旋自维持验证
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D61；被引用：—
-- [中文：案例说明：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4d4c9dc8e194eb2e / 中文：案例说明：沃尔顿1小时归属感练习 → D60智慧干预效力验证（新生有效/大三无效）
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D60；被引用：—
-- [中文：案例说明：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-401970354ea7a6bb / 中文：案例说明：沃尔顿21分钟拯救婚姻 → D60的η_delivery因子验证
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D60；被引用：—
-- [中文：案例说明：理财的几何本质——收益投影拉宽×风险投影压窄](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-42995ca823341948 / 中文：案例说明：理财的几何本质——收益投影拉宽×风险投影压窄
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：短内容降低获得奖励的时间成本，提高预测误差频率，使策略更偏向即时奖励。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8fa460d1e9a474dc / 中文：案例说明：短内容降低获得奖励的时间成本，提高预测误差频率，使策略更偏向即时奖励。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：种姓制度事实上锁定社会位置，认同薄且未经验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38997529a1e84885 / 中文：案例说明：种姓制度事实上锁定社会位置，认同薄且未经验证
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-66c153392c10c232 / 中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：科举制让汉人"可以不考"但事实上不考=放弃上升通道](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4c7ca9d0dbdc9f7d / 中文：案例说明：科举制让汉人"可以不考"但事实上不考=放弃上升通道
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：统一相变框架](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2c6be35c070bbf29 / 中文：案例说明：统一相变框架
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a00f078b123f9a14 / 中文：案例说明：罗森塔尔"潜力生"标签实验 → D59过渡期窗口衰减验证
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D59；被引用：—
-- [中文：案例说明：美国人有真实退出权，新政认同经退出权验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1ebc00405d5a74c4 / 中文：案例说明：美国人有真实退出权，新政认同经退出权验证
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：若个体状态陷入局部极小，重组、突变和选择构成跨代扰动项，可提高跳出局部死锁的概率；这不等于每一代必然改进。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bd7b7765bde9a340 / 中文：案例说明：若个体状态陷入局部极小，重组、突变和选择构成跨代扰动项，可提高跳出局部死锁的概率；这不等于每一代必然改进。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：计划经济+户籍事实上走不了，土地改革让农民获得实在利益，温室效应](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-055d56f6f8be8596 / 中文：案例说明：计划经济+户籍事实上走不了，土地改革让农民获得实在利益，温室效应
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：超生=罚款+开除+社会压力，象征退出权=强制力的优雅版本](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-842d4716b3aaec39 / 中文：案例说明：超生=罚款+开除+社会压力，象征退出权=强制力的优雅版本
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间"所有策略看起来一样"=未破缺](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1e4b0031f55d3a7e / 中文：案例说明：跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff≈0.5；年级观测→ε_eff≈0.9（趋势清晰，维度分化明显）。短时间"所有策略看起来一样"=未破缺
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D149；被引用：—
-- [中文：案例说明：边界优化=变分问题——最小作用量原理在生物/社会域的投影](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0e42b5989240e5e3 / 中文：案例说明：边界优化=变分问题——最小作用量原理在生物/社会域的投影
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c0d862aa04dc7396 / 中文：案例说明：退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D126；被引用：—
-- [中文：案例说明：部落联盟可叛可留，认同经退出权验证但建在部分应约者身上](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6064f4141c1e0b17 / 中文：案例说明：部落联盟可叛可留，认同经退出权验证但建在部分应约者身上
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

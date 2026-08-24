@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [非知识 pilot 在无 Foundation、claims、M/E、Evidence、Knowledge 或 Research 路径输入下，完成读取 fixture、排序 SHA-256 manifest、checkpoint、不同 ex](../../../docs/architecture/agentization-boundary-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8a76de148606ce73 / 非知识 pilot 在无 Foundation、claims、M/E、Evidence、Knowledge 或 Research 路径输入下，完成读取 fixture、排序 SHA-256 manifest、checkpoint、不同 ex
+  - 来源：`docs/architecture/agentization-boundary-r0.md`
+  - 依赖：—；被引用：—
 - [项目本体升级完成情况](../../../outputs/audit/project-body-version-upgrade-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-16dbdcfc49b2344b / 项目本体升级完成情况

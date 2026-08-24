@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [最近邻反事实：D245 是系统对自身门控面的二阶数学门控，与社会身份遮蔽无关；命中点可改为「某 AI 系统自我门控」，D601 失效而 D245 仍适用 → 不同构。身份/角色轴函数表空白。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7b52c1a8384b9fbd / 最近邻反事实：D245 是系统对自身门控面的二阶数学门控，与社会身份遮蔽无关；命中点可改为「某 AI 系统自我门控」，D601 失效而 D245 仍适用 → 不同构。身份/角色轴函数表空白。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：D245, D601；被引用：—
 - [最近邻反事实：D467 是「最优配置处惯性最大」的势阱物理/经济学类比，不描述主体主动识别计划过期并刹车；M7 的反例是「沉没成本陷阱无法刹车」「外部强制中断」，与 D467 互补而非同构。函数表无「计划过期/主动止损」原语。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4cfb508048e18713 / 最近邻反事实：D467 是「最优配置处惯性最大」的势阱物理/经济学类比，不描述主体主动识别计划过期并刹车；M7 的反例是「沉没成本陷阱无法刹车」「外部强制中断」，与 D467 互补而非同构。函数表无「计划过期/主动止损」原语。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-0607874c32055cb7 / 已迁移的历史函数来源/0047-T37-Φ_QG极小点精确位置.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T37；被引用：—
-- [已迁移的历史函数来源/0048-T38-极值点-极小点分离定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-88f8820bfa5a94d4 / 已迁移的历史函数来源/0048-T38-极值点-极小点分离定理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T38；被引用：—
