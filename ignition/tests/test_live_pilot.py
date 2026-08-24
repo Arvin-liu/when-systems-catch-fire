@@ -2,7 +2,13 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from agent_federation.live_pilot import DisposableLiveFixture, LivePilotValidator, tree_digest
+from agent_federation.live_pilot import (
+    DisposableLiveCompletionFixture,
+    DisposableLiveFixture,
+    LiveCompletionValidator,
+    LivePilotValidator,
+    tree_digest,
+)
 
 
 class LivePilotTests(unittest.TestCase):
@@ -56,6 +62,42 @@ class LivePilotTests(unittest.TestCase):
             with DisposableLiveFixture.create(Path(directory), nonce="0123456789abcdef01234567") as fixture:
                 self.assertEqual(tree_digest(fixture.root), fixture.before_digest)
                 self.assertNotIn(str(fixture.root), fixture.before_digest)
+
+    def test_task137_fixture_is_independently_recomputed_and_strict(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with DisposableLiveCompletionFixture.create(Path(directory), nonce="0123456789abcdef01234567") as fixture:
+                fixture.make_read_only()
+                before = fixture.current_digest()
+                result = {
+                    "nonce": fixture.expectation.nonce,
+                    "selected_ids": ["row-a", "row-d", "row-c"],
+                    "count": 3,
+                    "workspace_digest_claim": before,
+                }
+                report = LiveCompletionValidator(fixture).validate(result, before_digest=before, after_digest=fixture.current_digest())
+                self.assertEqual(report.status, "PASS")
+                self.assertEqual(report.to_dict()["schema"], "ignition-137-live-pilot-r1.validation")
+
+                extra = dict(result, extra="forbidden")
+                rejected = LiveCompletionValidator(fixture).validate(extra, before_digest=before, after_digest=fixture.current_digest())
+                self.assertEqual(rejected.status, "FAIL")
+                self.assertIn("OUTPUT_SCHEMA_EXACT", rejected.failure_codes)
+
+    def test_task137_validator_fails_when_table_or_workspace_digest_changes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            with DisposableLiveCompletionFixture.create(Path(directory), nonce="0123456789abcdef01234567") as fixture:
+                fixture.make_read_only()
+                before = fixture.current_digest()
+                fixture.root.chmod(0o755)
+                (fixture.root / "table.json").chmod(0o644)
+                (fixture.root / "table.json").write_text('{"rule":{},"rows":[]}\n', encoding="utf-8")
+                report = LiveCompletionValidator(fixture).validate(
+                    {"nonce": fixture.expectation.nonce, "selected_ids": ["row-a", "row-d", "row-c"], "count": 3, "workspace_digest_claim": before},
+                    before_digest=before, after_digest=fixture.current_digest(), side_effect_observation="FORBIDDEN_EFFECT_OBSERVED",
+                )
+                self.assertEqual(report.status, "FAIL")
+                self.assertIn("FIXTURE_EXPECTATION_RECOMPUTE_FAILED", report.failure_codes)
+                self.assertIn("TREE_UNCHANGED", report.failure_codes)
 
 
 if __name__ == "__main__":
