@@ -1074,6 +1074,11 @@
   - 可搜索名称：IMPLICIT-B6DE8536D7564D7F / # IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure / IMPLICIT-B6DE8536D7564D7F
   - 来源：`reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md`
   - 依赖：—；被引用：—
+- [# IGNITION-20260824-138 — Amendment 01 independent validation gate](../../../reports/operations/ignition-138-step10-amendment-01-independent-validation.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D8DAE0DD53F3F11D / # IGNITION-20260824-138 — Amendment 01 independent validation gate / IMPLICIT-D8DAE0DD53F3F11D
+  - 来源：`reports/operations/ignition-138-step10-amendment-01-independent-validation.md`
+  - 依赖：—；被引用：—
 - [# IGNITION-20260824-138 — Step 09 Second-Invocation Gate](../../../reports/operations/ignition-138-step09-second-gate.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CC312F585CB9671F / # IGNITION-20260824-138 — Step 09 Second-Invocation Gate / IMPLICIT-CC312F585CB9671F
@@ -2497,10 +2502,5 @@
 - [### \[MF-0001｜正向自举通道\]\(docs/zh/functions/meta/items/MF-0001.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3C28D5939C159BE2 / ### \[MF-0001｜正向自举通道\]\(docs/zh/functions/meta/items/MF-0001.md\) / IMPLICIT-3C28D5939C159BE2
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[MF-0002｜反向自举通道\]\(docs/zh/functions/meta/items/MF-0002.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AF872765D8DB5407 / ### \[MF-0002｜反向自举通道\]\(docs/zh/functions/meta/items/MF-0002.md\) / IMPLICIT-AF872765D8DB5407
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

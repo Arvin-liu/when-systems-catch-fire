@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ArtifactRef":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-68F73820BCB47E67 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ArtifactRef": / IMPLICIT-68F73820BCB47E67
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "BudgetContract":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3B9615F2BECB401F / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "BudgetContract": / IMPLICIT-3B9615F2BECB401F
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutorDescriptor":](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A48755CD11D8DD5E / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutorDescriptor": / IMPLICIT-A48755CD11D8DD5E
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
 - [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutorHealth":](../../../agent_federation/contracts.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-3F863213B6786D32 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutorHealth": / IMPLICIT-3F863213B6786D32
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-4D29A0DE86762946 / def visible_work\(row: dict\[str, object\]\) -> str: / IMPLICIT-4D29A0DE86762946
   - 来源：`data/operations/iterations/112/publication/tools/build_ledger.py`
-  - 依赖：—；被引用：—
-- [def visit\(node: str\) -> None:](../../../reos_vnext/validation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-38189E840B31A7FF / def visit\(node: str\) -> None: / IMPLICIT-38189E840B31A7FF
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [def volume_claims\(\) -> list\[dict\[str, object\]\]:](../../../data/operations/iterations/112/publication/tools/audit_r0.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-ACB65CE52FB81F57 / def volume_claims\(\) -> list\[dict\[str, object\]\]: / IMPLICIT-ACB65CE52FB81F57
-  - 来源：`data/operations/iterations/112/publication/tools/audit_r0.py`
-  - 依赖：—；被引用：—
-- [def write_federation_pilot_report\(path: str \| Path\) -> dict\[str, Any\]:](../../../agent_federation/pilots.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B8FB020F629C221B / def write_federation_pilot_report\(path: str \| Path\) -> dict\[str, Any\]: / IMPLICIT-B8FB020F629C221B
-  - 来源：`agent_federation/pilots.py`
   - 依赖：—；被引用：—

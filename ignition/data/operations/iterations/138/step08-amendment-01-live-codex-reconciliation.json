@@ -1,0 +1,39 @@
+{
+  "schema_version": "ignition-138-step08-amendment-01-live-codex-reconciliation-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "08-AMENDMENT-01",
+  "status": "NO_VALIDATED_RESULT_DURABLE_RECEIPT",
+  "dispatch": {
+    "dispatch_id": "dispatch-138-live-02",
+    "attempt_id": "attempt-138-live-02",
+    "executor_id": "external.codex",
+    "adapter_id": "codex-live-r3",
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "max",
+    "invocation_ordinal": 2,
+    "task_max_real_external_invocations": 3,
+    "executor_family_default_limit": 1,
+    "retry_policy": "NO_BLIND_RETRY",
+    "budget_authority": "NO_NEW_BILLING_AUTHORITY",
+    "permission_ceiling": ["repo.read"]
+  },
+  "host_recovery_observation": {
+    "outer_tool_result": "OUTPUT_EXCEEDED_AVAILABLE_MODEL_CONTEXT",
+    "session_pointer_recovered": false,
+    "codex_process_present_when_polled": false,
+    "attempt_scratch_found_after_process_exit": false,
+    "durable_stdout_or_stderr_capture": false,
+    "returncode_recovered": false,
+    "structured_result_recovered": false,
+    "lease_receipt_recovered": false,
+    "process_effect_classification": "UNKNOWN_FROM_RECOVERABLE_RECEIPT",
+    "validator_run": false
+  },
+  "safety_decision": {
+    "validated_completion_claim": false,
+    "live_external_invocation_obligation": "REMAINS_OPEN",
+    "additional_codex_retry": "NOT_AUTHORIZED",
+    "reason": "The second Codex family attempt has no recoverable structured receipt. A further same-family call would be a blind retry and could violate the stop-after-first-success rule; no new executor family passed dynamic admission."
+  },
+  "claim_ceiling": "Host-side receipt-recovery evidence only; this record does not classify the child result, infer success or failure, close LIVE_EXTERNAL_INVOCATION, or establish external truth, production readiness, Owner acceptance, publication, or epistemic acceptance."
+}

@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [D86乘法归零验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8907d09f933cc02d / D86乘法归零验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D86；被引用：—
+- [da41 stage0-4: 65 Crossref-verified sources](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f280250245338129 / da41 stage0-4: 65 Crossref-verified sources
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
+- [DARE plus a merge operator concretely generates a merged artifact, but it does not lower a declarative function specific](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ec8de35ed3a577bd / DARE plus a merge operator concretely generates a merged artifact, but it does not lower a declarative function specific
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [data/evidence_regimes.csv](../../../docs/machine_readable_data_plan.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-0957ba98dd3f13ef / data/evidence_regimes.csv
@@ -2487,20 +2502,5 @@
 - [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ApprovalPolicy":](../../../agent_federation/contracts.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-30D8A8635ABED3F2 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ApprovalPolicy": / IMPLICIT-30D8A8635ABED3F2
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ArtifactRef":](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-68F73820BCB47E67 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ArtifactRef": / IMPLICIT-68F73820BCB47E67
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "BudgetContract":](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3B9615F2BECB401F / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "BudgetContract": / IMPLICIT-3B9615F2BECB401F
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutorDescriptor":](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A48755CD11D8DD5E / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutorDescriptor": / IMPLICIT-A48755CD11D8DD5E
   - 来源：`agent_federation/contracts.py`
   - 依赖：—；被引用：—
