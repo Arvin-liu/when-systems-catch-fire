@@ -7,15 +7,19 @@ and tears down the process group on timeout or output overflow.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import datetime, timezone
 import hashlib
 import json
 import os
 from pathlib import Path
+import re
 import selectors
 import signal
+import shutil
+import stat
 import subprocess
+import tempfile
 import time
 from typing import Any, Callable, Mapping, Sequence
 
@@ -24,6 +28,206 @@ from .contracts import FederationContractError
 
 class LiveTransportError(FederationContractError):
     """Raised when a public process boundary is invalid before execution."""
+
+
+RUNTIME_SCRATCH_CLEANED = "CLEANED"
+RUNTIME_SCRATCH_FAILED = "FAILED"
+RUNTIME_SCRATCH_RECONCILIATION = "REQUIRES_RECONCILIATION"
+
+
+def _runtime_metadata_digest(root: Path) -> str:
+    """Digest names/types/modes/sizes only; never read runtime file contents."""
+
+    digest = hashlib.sha256()
+    if not root.exists():
+        return digest.hexdigest()
+    for path in sorted(root.rglob("*"), key=lambda item: item.relative_to(root).as_posix()):
+        relative = path.relative_to(root).as_posix()
+        try:
+            info = path.lstat()
+        except OSError as exc:
+            raise LiveTransportError("runtime scratch metadata cannot be inspected") from exc
+        record = f"{relative}\0{stat_type(info.st_mode)}\0{info.st_mode & 0o7777:o}\0{info.st_size}\n"
+        digest.update(record.encode("utf-8"))
+    return digest.hexdigest()
+
+
+def stat_type(mode: int) -> str:
+    if stat.S_ISDIR(mode):
+        return "dir"
+    if stat.S_ISREG(mode):
+        return "file"
+    if stat.S_ISLNK(mode):
+        return "symlink"
+    return "other"
+
+
+def _path_overlap(left: Path, right: Path) -> bool:
+    return left == right or left in right.parents or right in left.parents
+
+
+def _tree_has_write_bits(root: Path) -> bool:
+    entries = (root, *root.rglob("*"))
+    return any(item.lstat().st_mode & 0o222 for item in entries)
+
+
+def _tree_has_symlink(root: Path) -> bool:
+    return any(item.is_symlink() for item in (root, *root.rglob("*")))
+
+
+def _make_tree_writable(root: Path) -> None:
+    for item in sorted(root.rglob("*"), key=lambda value: len(value.parts), reverse=True):
+        try:
+            item.chmod(0o700 if item.is_dir() else 0o600)
+        except OSError:
+            pass
+    try:
+        root.chmod(0o700)
+    except OSError:
+        pass
+
+
+@dataclass
+class RuntimeScratchLease:
+    """Attempt-specific empty scratch root with fail-closed cleanup semantics."""
+
+    path: Path
+    attempt_id: str
+    owner: str
+    ttl_seconds: float
+    protected_roots: tuple[Path, ...]
+    before_digest: str
+    cleanup_status: str | None = None
+
+    @classmethod
+    def create(
+        cls,
+        *,
+        attempt_id: str,
+        parent: str | Path | None = None,
+        protected_roots: Sequence[str | Path] = (),
+        ttl_seconds: float = 900.0,
+    ) -> "RuntimeScratchLease":
+        if not isinstance(attempt_id, str) or not re.fullmatch(r"[A-Za-z0-9_.-]+", attempt_id):
+            raise LiveTransportError("runtime scratch attempt_id must be a safe non-empty token")
+        if isinstance(ttl_seconds, bool) or not isinstance(ttl_seconds, (int, float)) or not 0 < ttl_seconds <= 3600:
+            raise LiveTransportError("runtime scratch ttl_seconds must be in (0, 3600]")
+        parent_path = Path(parent or tempfile.gettempdir())
+        if not parent_path.is_absolute() or not parent_path.is_dir():
+            raise LiveTransportError("runtime scratch parent must be an existing absolute directory")
+        parent_resolved = parent_path.resolve(strict=True)
+        protected = tuple(Path(value).resolve(strict=True) for value in protected_roots)
+        if any(parent_resolved == root or root in parent_resolved.parents for root in protected):
+            raise LiveTransportError("runtime scratch parent overlaps a protected root")
+        root = Path(tempfile.mkdtemp(prefix=f"pointfire-live-{attempt_id}-", dir=str(parent_resolved)))
+        root.chmod(0o700)
+        if any(_path_overlap(root.resolve(strict=True), protected_root) for protected_root in protected):
+            _make_tree_writable(root)
+            shutil.rmtree(root)
+            raise LiveTransportError("runtime scratch overlaps a protected root")
+        return cls(
+            path=root,
+            attempt_id=attempt_id,
+            owner=f"uid:{os.getuid()}",
+            ttl_seconds=float(ttl_seconds),
+            protected_roots=protected,
+            before_digest=_runtime_metadata_digest(root),
+        )
+
+    @classmethod
+    def from_existing(
+        cls,
+        path: str | Path,
+        *,
+        attempt_id: str,
+        protected_roots: Sequence[str | Path] = (),
+        ttl_seconds: float = 900.0,
+    ) -> "RuntimeScratchLease":
+        root = Path(path)
+        if not root.is_absolute() or root.is_symlink() or not root.is_dir():
+            raise LiveTransportError("runtime scratch must be an existing non-symlink absolute directory")
+        resolved = root.resolve(strict=True)
+        protected = tuple(Path(value).resolve(strict=True) for value in protected_roots)
+        if any(_path_overlap(resolved, item) for item in protected):
+            raise LiveTransportError("runtime scratch overlaps a protected root")
+        if any(root.iterdir()):
+            raise LiveTransportError("runtime scratch must be an empty attempt-specific directory")
+        return cls(
+            path=resolved,
+            attempt_id=attempt_id,
+            owner=f"uid:{os.getuid()}",
+            ttl_seconds=float(ttl_seconds),
+            protected_roots=protected,
+            before_digest=_runtime_metadata_digest(resolved),
+        )
+
+    def environment_overrides(self, keys: Sequence[str] = ("HOME", "TMPDIR")) -> dict[str, str]:
+        targets = {
+            "HOME": self.path,
+            "TMPDIR": self.path,
+            "CODEX_HOME": self.path / ".codex",
+            "XDG_CACHE_HOME": self.path / ".cache",
+            "XDG_CONFIG_HOME": self.path / ".config",
+            "XDG_RUNTIME_DIR": self.path / ".runtime",
+        }
+        result: dict[str, str] = {}
+        for key in keys:
+            if key not in targets:
+                raise LiveTransportError(f"runtime environment key is not supported: {key}")
+            result[key] = str(targets[key])
+        return result
+
+    def validate(self) -> None:
+        if self.path.is_symlink() or not self.path.is_dir():
+            raise LiveTransportError("runtime scratch path is missing or symlinked")
+        if _tree_has_symlink(self.path):
+            raise LiveTransportError("runtime scratch contains a symlink/path escape")
+        resolved = self.path.resolve(strict=True)
+        if any(_path_overlap(resolved, root) for root in self.protected_roots):
+            raise LiveTransportError("runtime scratch contains a protected root")
+        if any(self.path.iterdir()):
+            raise LiveTransportError("runtime scratch is not empty at dispatch start")
+        if not _tree_has_write_bits(self.path):
+            raise LiveTransportError("runtime scratch is not writable")
+        if self.path.stat().st_uid != os.getuid():
+            raise LiveTransportError("runtime scratch is not owned by the current executor user")
+
+    def cleanup(self) -> str:
+        if self.cleanup_status is not None:
+            return self.cleanup_status
+        try:
+            if self.path.is_symlink() or (self.path.exists() and _tree_has_symlink(self.path)):
+                self.cleanup_status = RUNTIME_SCRATCH_FAILED
+            elif self.path.exists():
+                _make_tree_writable(self.path)
+                shutil.rmtree(self.path)
+                self.cleanup_status = RUNTIME_SCRATCH_CLEANED if not self.path.exists() else RUNTIME_SCRATCH_FAILED
+            else:
+                self.cleanup_status = RUNTIME_SCRATCH_CLEANED
+        except OSError:
+            self.cleanup_status = RUNTIME_SCRATCH_FAILED
+        return self.cleanup_status
+
+    def finalize(self, process_group_status: str) -> str:
+        if process_group_status in {"CHILD_LEFT_BEHIND", "UNKNOWN"}:
+            self.cleanup_status = RUNTIME_SCRATCH_RECONCILIATION
+            return self.cleanup_status
+        return self.cleanup()
+
+    def public_receipt(self, *, after_digest: str, cleanup_status: str) -> dict[str, Any]:
+        return {
+            "schema_version": "runtime-scratch-receipt-r1",
+            "runtime_scratch_ref": "ATTEMPT_RUNTIME_SCRATCH",
+            "attempt_id": self.attempt_id,
+            "mode": "ATTEMPT_EPHEMERAL_WRITABLE",
+            "owner": self.owner,
+            "ttl_seconds": self.ttl_seconds,
+            "cleanup_policy": "CLEANUP_FINALLY_FAIL_CLOSED",
+            "digest_before": self.before_digest,
+            "digest_after": after_digest,
+            "cleanup_status": cleanup_status,
+            "content_persisted": False,
+        }
 
 
 @dataclass(frozen=True)
@@ -51,6 +255,8 @@ class LiveProcessResult:
     stdout_digest: str | None = None
     stderr_digest: str | None = None
     wall_clock_order: str = "UNOBSERVED"
+    runtime_scratch_receipt: Mapping[str, Any] | None = None
+    runtime_scratch_cleanup_status: str = "NOT_USED"
 
 
 def interface_digest(public_help: str) -> str:
@@ -185,7 +391,7 @@ class LiveProcessTransport:
         self._wall_clock = wall_clock or _wall_clock_iso
         self._monotonic = monotonic_clock or time.monotonic
 
-    def run(
+    def _run_process(
         self,
         argv: Sequence[str],
         *,
@@ -320,6 +526,63 @@ class LiveProcessTransport:
             wall_clock_order=_wall_clock_order(started_at, ended_at),
         )
 
+    def run(
+        self,
+        argv: Sequence[str],
+        *,
+        cwd: str | Path,
+        timeout_seconds: float,
+        input_text: str | None = None,
+        env_overrides: Mapping[str, str] | None = None,
+        runtime_scratch: RuntimeScratchLease | None = None,
+        runtime_env_keys: Sequence[str] = ("HOME", "TMPDIR"),
+    ) -> LiveProcessResult:
+        """Run one process and, when supplied, close one scratch lease."""
+
+        if runtime_scratch is None:
+            return self._run_process(
+                argv, cwd=cwd, timeout_seconds=timeout_seconds, input_text=input_text, env_overrides=env_overrides,
+            )
+        if not isinstance(runtime_scratch, RuntimeScratchLease):
+            raise LiveTransportError("runtime_scratch must be a RuntimeScratchLease")
+        try:
+            runtime_scratch.validate()
+            keys = tuple(runtime_env_keys)
+            if any(key not in self.env_allowlist for key in keys):
+                raise LiveTransportError("runtime environment key is outside the transport allowlist")
+            if env_overrides is None:
+                raise LiveTransportError("runtime scratch requires explicit attempt environment overrides")
+            scratch_root = runtime_scratch.path.resolve(strict=True)
+            for key in keys:
+                value = env_overrides.get(key)
+                if not isinstance(value, str) or not value:
+                    raise LiveTransportError(f"runtime environment override is missing: {key}")
+                candidate = Path(value)
+                if candidate.is_symlink() or not candidate.absolute().resolve(strict=False).is_relative_to(scratch_root):
+                    raise LiveTransportError(f"runtime environment path escapes scratch: {key}")
+        except Exception as exc:
+            cleanup_status = runtime_scratch.cleanup()
+            if cleanup_status == RUNTIME_SCRATCH_FAILED:
+                raise LiveTransportError("runtime scratch cleanup failed during preflight") from exc
+            raise
+        try:
+            result = self._run_process(
+                argv, cwd=cwd, timeout_seconds=timeout_seconds, input_text=input_text, env_overrides=env_overrides,
+            )
+        except Exception:
+            cleanup_status = runtime_scratch.cleanup()
+            if cleanup_status == RUNTIME_SCRATCH_FAILED:
+                raise LiveTransportError("runtime scratch cleanup failed after process startup error")
+            raise
+        after_digest = _runtime_metadata_digest(runtime_scratch.path)
+        cleanup_status = runtime_scratch.finalize(result.process_group_status)
+        receipt = runtime_scratch.public_receipt(after_digest=after_digest, cleanup_status=cleanup_status)
+        return replace(
+            result,
+            runtime_scratch_receipt=receipt,
+            runtime_scratch_cleanup_status=cleanup_status,
+        )
+
 
 def parse_bounded_jsonl(text: str, *, max_events: int = 256, max_line_bytes: int = 64 * 1024) -> tuple[dict[str, Any], ...]:
     if not isinstance(text, str) or not text.strip():
@@ -344,4 +607,8 @@ def parse_bounded_jsonl(text: str, *, max_events: int = 256, max_line_bytes: int
     return tuple(events)
 
 
-__all__ = ["LiveProcessResult", "LiveProcessTransport", "LiveTransportError", "interface_digest", "parse_bounded_jsonl"]
+__all__ = [
+    "LiveProcessResult", "LiveProcessTransport", "LiveTransportError", "RuntimeScratchLease",
+    "RUNTIME_SCRATCH_CLEANED", "RUNTIME_SCRATCH_FAILED", "RUNTIME_SCRATCH_RECONCILIATION",
+    "interface_digest", "parse_bounded_jsonl",
+]

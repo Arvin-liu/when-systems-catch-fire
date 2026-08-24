@@ -6,8 +6,17 @@ import sys
 import tempfile
 import time
 import unittest
+from unittest.mock import patch
 
-from agent_federation.live_transport import LiveProcessResult, LiveProcessTransport, LiveTransportError, parse_bounded_jsonl
+from agent_federation.live_transport import (
+    LiveProcessResult,
+    LiveProcessTransport,
+    LiveTransportError,
+    RuntimeScratchLease,
+    RUNTIME_SCRATCH_FAILED,
+    RUNTIME_SCRATCH_RECONCILIATION,
+    parse_bounded_jsonl,
+)
 
 
 PYTHON = sys.executable
@@ -116,6 +125,94 @@ class LiveTransportTests(unittest.TestCase):
             result = self.transport().run((PYTHON, "-c", "import os, sys; os.write(1, b'\\xff'); sys.exit(7)"), cwd=directory, timeout_seconds=2)
         self.assertEqual(result.returncode, 7)
         self.assertIn("�", result.stdout)
+
+    def test_runtime_scratch_is_writable_without_widening_workspace_and_is_cleaned(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            workspace = root / "workspace"
+            workspace.mkdir()
+            (workspace / "input.txt").write_text("fixture\n", encoding="utf-8")
+            workspace.chmod(0o555)
+            (workspace / "input.txt").chmod(0o444)
+            protected = tuple(root / name for name in ("formal", "control", "documents"))
+            for path in protected:
+                path.mkdir()
+            lease = RuntimeScratchLease.create(attempt_id="attempt-transport", parent=root, protected_roots=(workspace, *protected))
+            env = lease.environment_overrides(("HOME", "TMPDIR", "CODEX_HOME"))
+            code = "from pathlib import Path; import os, json; p=Path(os.environ['CODEX_HOME']); p.mkdir(); (p/'helper').write_text('x'); (Path(os.environ['TMPDIR'])/'tmp').write_text('x'); print(json.dumps({'ready':True}))"
+            result = LiveProcessTransport(
+                executable_allowlist=(PYTHON,),
+                env_allowlist=("PATH", "HOME", "TMPDIR", "CODEX_HOME"),
+            ).run(
+                (PYTHON, "-c", code), cwd=workspace, timeout_seconds=2,
+                env_overrides=env, runtime_scratch=lease,
+                runtime_env_keys=("HOME", "TMPDIR", "CODEX_HOME"),
+            )
+            self.assertEqual(result.returncode, 0)
+            self.assertEqual(result.runtime_scratch_cleanup_status, "CLEANED")
+            self.assertEqual(result.runtime_scratch_receipt["runtime_scratch_ref"], "ATTEMPT_RUNTIME_SCRATCH")
+            self.assertFalse(result.runtime_scratch_receipt["content_persisted"])
+            self.assertFalse(lease.path.exists())
+            self.assertTrue((workspace / "input.txt").exists())
+
+    def test_runtime_scratch_rejects_workspace_env_and_nonwritable_root(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            workspace = root / "workspace"
+            workspace.mkdir()
+            workspace.chmod(0o555)
+            lease = RuntimeScratchLease.create(attempt_id="attempt-env", parent=root, protected_roots=(workspace,))
+            env = lease.environment_overrides(("HOME", "TMPDIR"))
+            env["HOME"] = str(workspace)
+            with self.assertRaises(LiveTransportError):
+                self.transport().run((PYTHON, "-c", "print(1)"), cwd=workspace, timeout_seconds=2, env_overrides=env, runtime_scratch=lease)
+            self.assertFalse(lease.path.exists())
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            workspace = root / "workspace"
+            workspace.mkdir()
+            workspace.chmod(0o555)
+            lease = RuntimeScratchLease.create(attempt_id="attempt-mode", parent=root, protected_roots=(workspace,))
+            lease.path.chmod(0o555)
+            with self.assertRaisesRegex(LiveTransportError, "not writable"):
+                LiveProcessTransport(executable_allowlist=(PYTHON,), env_allowlist=("PATH", "HOME", "TMPDIR")).run(
+                    (PYTHON, "-c", "print(1)"), cwd=workspace, timeout_seconds=2,
+                    env_overrides=lease.environment_overrides(), runtime_scratch=lease,
+                )
+            self.assertFalse(lease.path.exists())
+
+    def test_cleanup_failure_is_recorded_and_unknown_group_requires_reconciliation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            workspace = root / "workspace"
+            workspace.mkdir()
+            workspace.chmod(0o555)
+            lease = RuntimeScratchLease.create(attempt_id="attempt-cleanup", parent=root, protected_roots=(workspace,))
+            with patch.object(lease, "cleanup", return_value=RUNTIME_SCRATCH_FAILED):
+                result = LiveProcessTransport(executable_allowlist=(PYTHON,), env_allowlist=("PATH", "HOME", "TMPDIR")).run(
+                    (PYTHON, "-c", "print(1)"), cwd=workspace, timeout_seconds=2,
+                    env_overrides=lease.environment_overrides(), runtime_scratch=lease,
+                )
+            self.assertEqual(result.runtime_scratch_cleanup_status, RUNTIME_SCRATCH_FAILED)
+            self.assertTrue(lease.path.exists())
+            self.assertEqual(lease.finalize("CHILD_LEFT_BEHIND"), RUNTIME_SCRATCH_RECONCILIATION)
+            lease.cleanup_status = None
+            self.assertEqual(lease.cleanup(), "CLEANED")
+
+    def test_runtime_lease_rejects_symlink_escape_and_protected_parent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            outside = root / "outside"
+            outside.mkdir()
+            link = root / "scratch-link"
+            link.symlink_to(outside, target_is_directory=True)
+            with self.assertRaises(LiveTransportError):
+                RuntimeScratchLease.from_existing(link, attempt_id="attempt-link")
+            protected = root / "formal"
+            protected.mkdir()
+            with self.assertRaises(LiveTransportError):
+                RuntimeScratchLease.create(attempt_id="attempt-protected", parent=protected, protected_roots=(protected,))
 
     def test_jsonl_parser_rejects_partial_or_overlarge_public_events(self):
         self.assertEqual(parse_bounded_jsonl('{"type":"a"}\n{"type":"b"}')[1]["type"], "b")

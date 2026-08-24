@@ -1,0 +1,50 @@
+{
+  "schema_version": "ignition-138-step03-live-process-transport-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "03",
+  "status": "PASS",
+  "outputs": [
+    "ignition/agent_federation/live_transport.py",
+    "ignition/tests/test_live_transport.py"
+  ],
+  "runtime_scratch_contract": {
+    "lease": "RuntimeScratchLease",
+    "creation": "empty attempt-specific 0700 directory",
+    "owner": "current executor uid",
+    "ttl_seconds_max": 3600,
+    "metadata_digest": "names/types/modes/sizes only; runtime contents never read",
+    "env_binding": "explicit HOME/TMPDIR and declared runtime keys must resolve inside scratch",
+    "task_cwd": "independent explicit task workspace cwd",
+    "cleanup_policy": "CLEANUP_FINALLY_FAIL_CLOSED",
+    "normal_cleanup": "CLEANED",
+    "cleanup_failure": "FAILED",
+    "unknown_or_left_behind_group": "REQUIRES_RECONCILIATION",
+    "public_receipt_path": "ATTEMPT_RUNTIME_SCRATCH",
+    "content_persisted": false
+  },
+  "safety_matrix": {
+    "literal_argv": "PASS",
+    "bounded_capture": "PASS",
+    "process_group_timeout_and_signal_cleanup": "PASS",
+    "child_left_behind_fail_closed": "PASS",
+    "workspace_remains_read_only": "PASS",
+    "scratch_helper_write": "PASS",
+    "scratch_cleanup": "PASS",
+    "cleanup_failure": "PASS_RECORDED_FAILED",
+    "unknown_group": "PASS_REQUIRES_RECONCILIATION",
+    "env_parent_leakage": "PASS_ALLOWLISTED_ONLY",
+    "env_path_escape": "PASS_REJECTED",
+    "protected_root_overlap": "PASS_REJECTED",
+    "symlink_escape": "PASS_REJECTED"
+  },
+  "targeted_tests": {
+    "transport_tests": 14,
+    "combined_live_bridge_tests": 55,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "live_inference_started": false,
+  "claim_ceiling": "Provider-neutral bounded transport and runtime-scratch lifecycle evidence only; no Codex adapter completion, validated live result, production readiness, external truth, Owner acceptance, or epistemic acceptance is inferred."
+}
