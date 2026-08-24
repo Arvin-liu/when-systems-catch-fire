@@ -1,0 +1,63 @@
+{
+  "schema_version": "ignition-137-step03-codex-live-eligibility-r1",
+  "task_id": "IGNITION-20260824-137",
+  "step": "03",
+  "probe_policy": "PUBLIC_VERSION_HELP_AND_LOGIN_STATUS_ONLY",
+  "executor": {
+    "executor_id": "external.codex",
+    "adapter_id": "codex-live-r2",
+    "version": "codex-cli 0.144.4",
+    "binary_digest": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477",
+    "exec_help_digest": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+    "resume_help_digest": "5a5d005d16a82bedc7f3f672eeaf23bb3f4d364e3a5dc31fa01838c807ebc671",
+    "auth_presence": "OBSERVED_LOGIN_STATUS_PRESENT",
+    "auth_secret_read": false,
+    "eligibility": "ELIGIBLE_FOR_LIVE_READONLY",
+    "blockers": []
+  },
+  "public_boundary": {
+    "jsonl": true,
+    "output_schema": true,
+    "ephemeral": true,
+    "ignore_user_config": true,
+    "ignore_rules": true,
+    "sandbox_read_only": true,
+    "explicit_cd": true,
+    "resume_semantics": "PUBLIC_RESUME_EXISTS_BUT_NOT_USED; ephemeral attempt has no resume lineage",
+    "cancel_semantics": "NO_PUBLIC_CANCEL_FLAG; OS process-group SIGTERM/SIGKILL transport cancellation",
+    "structured_output": "JSONL_PUBLIC_EVENTS_AND_OUTPUT_SCHEMA",
+    "no_remote_git": true,
+    "no_channel_or_browser": true,
+    "no_new_billing_authority": true
+  },
+  "capability_lease": {
+    "schema_version": "live-capability-lease-r1",
+    "lease_id": "live-codex-137-lease",
+    "observed_at": "2026-08-24T05:47:24.498948+00:00",
+    "expires_at": "2026-08-24T06:02:24.498948+00:00",
+    "ttl_seconds": 900,
+    "observed_capabilities": ["repo.read", "structured_progress"],
+    "forbidden_capabilities": ["repo.write", "repo.test", "terminal.run", "browser.read", "browser.act", "web.read", "messaging.send", "subagents", "scheduler"],
+    "unknown_capabilities": [],
+    "workspace_semantics": "EXPLICIT_DISPOSABLE_READ_ONLY_CWD",
+    "approval_sandbox_semantics": "CODEX_READ_ONLY_EPHEMERAL_IGNORE_USER_CONFIG_AND_RULES",
+    "structured_output_semantics": "JSONL_PUBLIC_EVENTS_AND_OUTPUT_SCHEMA",
+    "timeout_supported": true,
+    "cancel_supported": true,
+    "resume_supported": false,
+    "live_eligibility": "ELIGIBLE_FOR_LIVE_READONLY",
+    "eligibility_blockers": [],
+    "source": "codex-public-cli-probe-r3",
+    "lease_digest": "c3a1c9d4e6d364832ad331768d4a0c6a7237b0d93e48d7e6735b242a9ab82d47"
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_codex_adapter ignition.tests.test_live_preflight -v",
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS",
+    "live_inference": "NOT_RUN"
+  },
+  "claim_ceiling": "Current public Codex CLI eligibility and bounded capability lease only; no live result, completion, production readiness or external truth is inferred."
+}

@@ -49,6 +49,18 @@ def _session_pointer(events: Sequence[Mapping[str, Any]]) -> str | None:
     return None
 
 
+def _binary_digest(executable: str, version: str) -> str:
+    """Hash the observed executable when readable; never fall back to secrets."""
+
+    try:
+        path = Path(executable).resolve(strict=True)
+        if path.is_file():
+            return hashlib.sha256(path.read_bytes()).hexdigest()
+    except OSError:
+        pass
+    return hashlib.sha256(version.encode("utf-8")).hexdigest()
+
+
 class LiveCodexAdapter:
     """R2 adapter for Codex's current public JSONL read-only exec surface."""
 
@@ -94,7 +106,7 @@ class LiveCodexAdapter:
         version_result, help_result = self._probe()
         version = _summary(version_result.stdout or version_result.stderr)
         help_text = (help_result.stdout or "") + ("\n" + help_result.stderr if help_result.stderr else "")
-        required_flags = ("--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--sandbox", "--cd")
+        required_flags = ("--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--sandbox", "--cd", "--output-schema")
         missing = [flag for flag in required_flags if flag not in help_text]
         blockers: list[str] = []
         if version_result.returncode != 0 or not version:
@@ -108,13 +120,13 @@ class LiveCodexAdapter:
         return LiveCapabilityLease.build(
             lease_id=lease_id, executor_id=self.executor_id, executor_version=version,
             observed_at=observed_at, expires_at=expires_at, ttl_seconds=ttl_seconds,
-            binary_digest=hashlib.sha256(version.encode("utf-8")).hexdigest(), interface_digest=interface_digest(help_text),
+            binary_digest=_binary_digest(self.executable, version), interface_digest=interface_digest(help_text),
             observed_capabilities=("repo.read", "structured_progress") if not missing else ("repo.read",),
             forbidden_capabilities=("repo.write", "repo.test", "terminal.run", "browser.read", "browser.act", "web.read", "messaging.send", "subagents", "scheduler"),
             unknown_capabilities=(), workspace_semantics="EXPLICIT_DISPOSABLE_READ_ONLY_CWD",
             approval_sandbox_semantics="CODEX_READ_ONLY_EPHEMERAL_IGNORE_USER_CONFIG_AND_RULES",
-            structured_output_semantics="JSONL_PUBLIC_EVENTS", timeout_supported=True, cancel_supported=True,
-            resume_supported=False, live_eligibility=eligibility, eligibility_blockers=tuple(blockers), source="codex-public-cli-probe-r2",
+            structured_output_semantics="JSONL_PUBLIC_EVENTS_AND_OUTPUT_SCHEMA", timeout_supported=True, cancel_supported=True,
+            resume_supported=False, live_eligibility=eligibility, eligibility_blockers=tuple(blockers), source="codex-public-cli-probe-r3",
         )
 
     def build_argv(self, envelope: LiveDispatchEnvelope) -> tuple[str, ...]:

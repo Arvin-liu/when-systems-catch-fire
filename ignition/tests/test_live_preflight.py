@@ -16,7 +16,7 @@ class FakeProbeTransport:
             if argv[-1] == "--version":
                 return LiveProcessResult(command, str(cwd), 0, "codex-cli 0.144.4\n", "", 1, False, False, True)
             if argv[-2:] == ("exec", "--help"):
-                return LiveProcessResult(command, str(cwd), 0, "--json --ephemeral --ignore-user-config --ignore-rules --sandbox --cd\n", "", 1, False, False, True)
+                return LiveProcessResult(command, str(cwd), 0, "--json --ephemeral --ignore-user-config --ignore-rules --sandbox --cd --output-schema\n", "", 1, False, False, True)
         if self.executor == "hermes":
             if argv[-1] == "--version":
                 return LiveProcessResult(command, str(cwd), 0, "Hermes Agent v0.20.0\n", "", 1, False, False, True)
