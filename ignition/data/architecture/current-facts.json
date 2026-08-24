@@ -44,8 +44,8 @@
     "foundation": {
       "function_identity_cards": 5788,
       "function_quarantine_or_pending": 4842,
-      "nonfunction_claims": 16742,
-      "nonfunction_quarantine_or_pending": 4797
+      "nonfunction_claims": 16831,
+      "nonfunction_quarantine_or_pending": 4812
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -144,7 +144,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "312b11684cfc0ca54e16222f118bed5c21dc9280c106abec5752650ff47033ec"
+      "sha256": "0797c50de2c587d7a480c1e9bc1ec4e0049893e4699de0cf4cfb938db0a54b6e"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -152,7 +152,7 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "2386c36ad2209773d11c69fecb26f7a8ed82edcca759370b620ce6b2390b5d42"
+      "sha256": "649621ac94fb272666ff72e316bd8e04407eb016902a81f3388c967b5b9e6025"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
