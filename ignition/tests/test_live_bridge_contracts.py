@@ -4,6 +4,7 @@ import unittest
 from agent_federation.live_bridge import (
     LIVE_DISPATCH_SCHEMA,
     LIVE_LEASE_SCHEMA,
+    LIVE_RECEIPT_LEGACY_SCHEMA,
     LIVE_RECEIPT_SCHEMA,
     LiveCapabilityLease,
     LiveDispatchEnvelope,
@@ -86,7 +87,24 @@ class LiveBridgeContractTests(unittest.TestCase):
             reconciliation_status="NOT_REQUIRED", claim_ceiling="bounded live observation only",
         )
         self.assertEqual(receipt.schema_version, LIVE_RECEIPT_SCHEMA)
+        self.assertEqual(receipt.process_group_status, "UNKNOWN")
+        self.assertEqual(receipt.timeout_seconds, 1.0)
         self.assertEqual(LiveExecutorReceipt.from_dict(receipt.to_dict()), receipt)
+
+    def test_legacy_r1_receipt_remains_readable_without_transport_evidence(self):
+        legacy = LiveExecutorReceipt.build(
+            schema_version=LIVE_RECEIPT_LEGACY_SCHEMA,
+            task_id="t", dispatch_id="d", attempt_id="a", executor_id="external.codex", adapter_id="adapter",
+            state="RETURNED_UNVALIDATED", started_at="s", ended_at="e", exit_code=0, timed_out=False,
+            cancel_state="NOT_REQUESTED", event_count=1, sanitized_event_summary="ok", response_digest=None,
+            structured_result=None, session_pointer=None, side_effect_class="READ_ONLY_SYNTHETIC",
+            side_effect_observation="READ_ONLY_UNCHANGED", workspace_before_digest="a" * 64,
+            workspace_after_digest="a" * 64, os_validation_status="NOT_RUN", reconciliation_status="NOT_REQUIRED",
+            claim_ceiling="legacy bounded receipt",
+        )
+        restored = LiveExecutorReceipt.from_dict(legacy.to_dict())
+        self.assertEqual(restored.schema_version, LIVE_RECEIPT_LEGACY_SCHEMA)
+        self.assertEqual(restored.process_group_status, "UNKNOWN")
 
     def test_receipt_rejects_private_result_fields_and_forged_digest(self):
         with self.assertRaises(FederationContractError):

@@ -8,6 +8,7 @@ and tears down the process group on timeout or output overflow.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import datetime, timezone
 import hashlib
 import json
 import os
@@ -16,7 +17,7 @@ import selectors
 import signal
 import subprocess
 import time
-from typing import Any, Mapping, Sequence
+from typing import Any, Callable, Mapping, Sequence
 
 from .contracts import FederationContractError
 
@@ -36,6 +37,20 @@ class LiveProcessResult:
     timed_out: bool
     output_truncated: bool
     process_group_cleaned: bool
+    started_at: str = ""
+    ended_at: str = ""
+    timeout_seconds: float = 0.0
+    timeout_requested: bool = False
+    termination_requested: bool = False
+    signals_sent: tuple[str, ...] = ()
+    process_group_status: str = "UNKNOWN"
+    first_public_event_latency_ms: float | None = None
+    monotonic_elapsed_ms: float | None = None
+    stdout_bytes: int | None = None
+    stderr_bytes: int | None = None
+    stdout_digest: str | None = None
+    stderr_digest: str | None = None
+    wall_clock_order: str = "UNOBSERVED"
 
 
 def interface_digest(public_help: str) -> str:
@@ -76,28 +91,74 @@ def _sanitized_env(env_allowlist: Sequence[str], env_overrides: Mapping[str, str
     return result
 
 
-def _terminate_group(process: subprocess.Popen[bytes], *, grace_seconds: float = 0.5) -> bool:
-    if process.poll() is not None:
-        return True
-    cleaned = False
+def _group_exists(pid: int) -> bool | None:
+    """Return group existence, or None when the OS cannot prove it."""
+
+    try:
+        os.killpg(pid, 0)
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return None
+    return True
+
+
+def _terminate_group(
+    process: subprocess.Popen[bytes],
+    *,
+    grace_seconds: float = 0.5,
+    descendant_streams_open: bool = False,
+) -> tuple[str, tuple[str, ...]]:
+    """Terminate the process group and report signals plus proof status.
+
+    A returned ``CONFIRMED_GONE`` only describes the original process group.
+    If the leader already exited while inherited pipes remain open, the
+    transport cannot prove that a child did not escape that group and reports
+    ``CHILD_LEFT_BEHIND`` instead.
+    """
+
+    signals_sent: list[str] = []
+    initial = _group_exists(process.pid)
+    if initial is False:
+        if process.poll() is not None and descendant_streams_open:
+            return "CHILD_LEFT_BEHIND", tuple(signals_sent)
+        return "CONFIRMED_GONE", tuple(signals_sent)
     try:
         os.killpg(process.pid, signal.SIGTERM)
+        signals_sent.append("SIGTERM")
     except ProcessLookupError:
-        return True
+        pass
     try:
         process.wait(timeout=grace_seconds)
-        cleaned = True
     except subprocess.TimeoutExpired:
         try:
             os.killpg(process.pid, signal.SIGKILL)
+            signals_sent.append("SIGKILL")
         except ProcessLookupError:
             pass
         try:
             process.wait(timeout=grace_seconds)
-            cleaned = True
         except subprocess.TimeoutExpired:
-            cleaned = False
-    return cleaned
+            pass
+    final = _group_exists(process.pid)
+    if final is False:
+        return "CONFIRMED_GONE", tuple(signals_sent)
+    if final is None:
+        return "UNKNOWN", tuple(signals_sent)
+    return "UNKNOWN", tuple(signals_sent)
+
+
+def _wall_clock_iso() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="microseconds")
+
+
+def _wall_clock_order(started_at: str, ended_at: str) -> str:
+    try:
+        start = datetime.fromisoformat(started_at)
+        end = datetime.fromisoformat(ended_at)
+    except ValueError:
+        return "UNPARSEABLE"
+    return "ORDERED" if end >= start else "DRIFTED"
 
 
 class LiveProcessTransport:
@@ -110,6 +171,8 @@ class LiveProcessTransport:
         env_allowlist: Sequence[str] = ("PATH", "HOME", "TMPDIR", "LANG", "LC_ALL", "CODEX_HOME", "HERMES_HOME"),
         output_cap_bytes: int = 128 * 1024,
         input_cap_bytes: int = 32 * 1024,
+        wall_clock: Callable[[], str] | None = None,
+        monotonic_clock: Callable[[], float] | None = None,
     ) -> None:
         if not isinstance(output_cap_bytes, int) or isinstance(output_cap_bytes, bool) or output_cap_bytes <= 0:
             raise LiveTransportError("output_cap_bytes must be positive")
@@ -119,6 +182,8 @@ class LiveProcessTransport:
         self.env_allowlist = tuple(env_allowlist)
         self.output_cap_bytes = output_cap_bytes
         self.input_cap_bytes = input_cap_bytes
+        self._wall_clock = wall_clock or _wall_clock_iso
+        self._monotonic = monotonic_clock or time.monotonic
 
     def run(
         self,
@@ -141,7 +206,8 @@ class LiveProcessTransport:
             if len(input_text.encode("utf-8")) > self.input_cap_bytes:
                 raise LiveTransportError("input_text exceeds the live input cap")
         environment = _sanitized_env(self.env_allowlist, env_overrides)
-        start = time.monotonic()
+        started_at = self._wall_clock()
+        start = self._monotonic()
         process = subprocess.Popen(
             list(argv_tuple),
             cwd=str(root),
@@ -165,15 +231,23 @@ class LiveProcessTransport:
         selector.register(process.stdout, selectors.EVENT_READ, "stdout")
         selector.register(process.stderr, selectors.EVENT_READ, "stderr")
         buffers: dict[str, bytearray] = {"stdout": bytearray(), "stderr": bytearray()}
+        digests = {"stdout": hashlib.sha256(), "stderr": hashlib.sha256()}
+        byte_counts = {"stdout": 0, "stderr": 0}
+        first_public_event_latency_ms: float | None = None
         timed_out = False
         output_truncated = False
         cleaned = False
+        signals_sent: tuple[str, ...] = ()
+        process_group_status = "UNKNOWN"
         deadline = start + float(timeout_seconds)
         while selector.get_map():
-            remaining = deadline - time.monotonic()
+            remaining = deadline - self._monotonic()
             if remaining <= 0:
                 timed_out = True
-                cleaned = _terminate_group(process)
+                process_group_status, signals_sent = _terminate_group(
+                    process, descendant_streams_open=bool(selector.get_map()) and process.poll() is not None,
+                )
+                cleaned = process_group_status == "CONFIRMED_GONE"
                 break
             for key, _ in selector.select(timeout=min(remaining, 0.05)):
                 stream = key.fileobj
@@ -185,11 +259,18 @@ class LiveProcessTransport:
                     selector.unregister(stream)
                     stream.close()
                     continue
+                if first_public_event_latency_ms is None:
+                    first_public_event_latency_ms = round((self._monotonic() - start) * 1000, 3)
                 target = buffers[key.data]
+                digests[key.data].update(chunk)
+                byte_counts[key.data] += len(chunk)
                 target.extend(chunk)
                 if len(target) > self.output_cap_bytes:
                     output_truncated = True
-                    cleaned = _terminate_group(process)
+                    process_group_status, signals_sent = _terminate_group(
+                        process, descendant_streams_open=bool(selector.get_map()) and process.poll() is not None,
+                    )
+                    cleaned = process_group_status == "CONFIRMED_GONE"
                     selector.unregister(stream)
                     stream.close()
                     break
@@ -203,16 +284,41 @@ class LiveProcessTransport:
                 stream.close()
         if timed_out or output_truncated:
             if process.poll() is None:
-                cleaned = _terminate_group(process) or cleaned
+                process_group_status, signals_sent = _terminate_group(process)
+                cleaned = process_group_status == "CONFIRMED_GONE"
         try:
             returncode = process.wait(timeout=1.0)
         except subprocess.TimeoutExpired:
-            cleaned = _terminate_group(process) or cleaned
+            process_group_status, signals_sent = _terminate_group(process) 
+            cleaned = process_group_status == "CONFIRMED_GONE"
             returncode = process.poll()
-        duration_ms = round((time.monotonic() - start) * 1000, 3)
+        ended_at = self._wall_clock()
+        duration_ms = round((self._monotonic() - start) * 1000, 3)
+        if not timed_out and not output_truncated:
+            group_exists = _group_exists(process.pid)
+            if group_exists is False:
+                process_group_status = "CONFIRMED_GONE"
+                cleaned = True
+            elif group_exists is None:
+                process_group_status = "UNKNOWN"
+                cleaned = False
+            elif process.poll() is not None:
+                process_group_status = "CHILD_LEFT_BEHIND"
+                cleaned = False
+        if process_group_status == "UNKNOWN" and cleaned:
+            cleaned = False
         stdout = bytes(buffers["stdout"][: self.output_cap_bytes]).decode("utf-8", errors="replace")
         stderr = bytes(buffers["stderr"][: self.output_cap_bytes]).decode("utf-8", errors="replace")
-        return LiveProcessResult(argv_tuple, str(root), returncode, stdout, stderr, duration_ms, timed_out, output_truncated, cleaned)
+        return LiveProcessResult(
+            argv_tuple, str(root), returncode, stdout, stderr, duration_ms, timed_out, output_truncated, cleaned,
+            started_at=started_at, ended_at=ended_at, timeout_seconds=float(timeout_seconds),
+            timeout_requested=timed_out, termination_requested=timed_out or output_truncated,
+            signals_sent=signals_sent, process_group_status=process_group_status,
+            first_public_event_latency_ms=first_public_event_latency_ms, monotonic_elapsed_ms=duration_ms,
+            stdout_bytes=byte_counts["stdout"], stderr_bytes=byte_counts["stderr"],
+            stdout_digest=digests["stdout"].hexdigest(), stderr_digest=digests["stderr"].hexdigest(),
+            wall_clock_order=_wall_clock_order(started_at, ended_at),
+        )
 
 
 def parse_bounded_jsonl(text: str, *, max_events: int = 256, max_line_bytes: int = 64 * 1024) -> tuple[dict[str, Any], ...]:

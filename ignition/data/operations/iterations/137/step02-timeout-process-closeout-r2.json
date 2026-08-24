@@ -1,0 +1,50 @@
+{
+  "schema_version": "ignition-137-step02-timeout-process-closeout-r2",
+  "task_id": "IGNITION-20260824-137",
+  "step": "02",
+  "implementation": {
+    "transport": "ignition/agent_federation/live_transport.py",
+    "receipt_contract": "ignition/agent_federation/live_bridge.py",
+    "execution_binding": "ignition/agent_federation/live_execution.py",
+    "receipt_schema": "live-executor-receipt-r2",
+    "legacy_receipt_schema": "live-executor-receipt-r1"
+  },
+  "evidence_contract": {
+    "wall_clock_start_end": true,
+    "wall_clock_order_recorded": true,
+    "monotonic_elapsed_seconds": true,
+    "timeout_seconds_requested": true,
+    "timeout_requested": true,
+    "termination_requested": true,
+    "signals_sent": ["SIGTERM", "SIGKILL"],
+    "process_group_statuses": ["CONFIRMED_GONE", "CHILD_LEFT_BEHIND", "UNKNOWN"],
+    "first_public_event_latency": true,
+    "stdout_stderr_byte_counts": true,
+    "stdout_stderr_digests": true,
+    "raw_output_persisted": false
+  },
+  "compatibility": {
+    "task136_receipt_rewritten": false,
+    "legacy_r1_from_dict_supported": true,
+    "new_live_receipts_require_transport_evidence": true
+  },
+  "deterministic_fake_process_tests": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_transport ignition.tests.test_live_bridge_contracts ignition.tests.test_live_execution -v",
+    "tests": 21,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "cases": [
+      "slow-start-but-valid",
+      "hard-timeout",
+      "SIGTERM-to-SIGKILL",
+      "child-left-behind",
+      "timestamp-drift",
+      "output-bound",
+      "legacy-receipt-compatibility",
+      "live-execution-receipt-binding"
+    ],
+    "status": "PASS"
+  },
+  "claim_ceiling": "Auditable bounded process timing and closeout semantics only; no external effect absence or executor completion is inferred."
+}

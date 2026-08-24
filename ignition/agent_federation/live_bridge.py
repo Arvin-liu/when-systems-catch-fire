@@ -17,7 +17,8 @@ from .sdk import map_capabilities
 
 LIVE_DISPATCH_SCHEMA = "live-dispatch-envelope-r1"
 LIVE_LEASE_SCHEMA = "live-capability-lease-r1"
-LIVE_RECEIPT_SCHEMA = "live-executor-receipt-r1"
+LIVE_RECEIPT_SCHEMA = "live-executor-receipt-r2"
+LIVE_RECEIPT_LEGACY_SCHEMA = "live-executor-receipt-r1"
 
 LIVE_DISPATCH_STATES = frozenset({
     "CREATED", "ADMITTED", "DISPATCHING", "IN_FLIGHT", "RETURNED_UNVALIDATED",
@@ -50,6 +51,8 @@ LIVE_VALIDATION_STATUSES = frozenset({"NOT_RUN", "PASS", "FAIL"})
 LIVE_RECONCILIATION_STATUSES = frozenset({"NOT_REQUIRED", "OPEN", "CLOSED"})
 LIVE_CANCEL_STATES = frozenset({"NOT_REQUESTED", "NOT_SUPPORTED", "REQUESTED", "CONFIRMED", "UNKNOWN"})
 LIVE_SIDE_EFFECT_OBSERVATIONS = frozenset({"NO_EFFECT_OBSERVED", "READ_ONLY_UNCHANGED", "UNKNOWN", "FORBIDDEN_EFFECT_OBSERVED"})
+LIVE_PROCESS_GROUP_STATUSES = frozenset({"NOT_REQUIRED", "CONFIRMED_GONE", "CHILD_LEFT_BEHIND", "UNKNOWN"})
+LIVE_SIGNAL_NAMES = frozenset({"SIGTERM", "SIGKILL"})
 _HIDDEN_MARKERS = frozenset({
     "prompt", "system_prompt", "chain_of_thought", "cot", "thoughts", "reasoning",
     "reasoning_tokens", "token", "api_key", "secret", "cookie", "authorization",
@@ -338,9 +341,20 @@ class LiveExecutorReceipt:
     reconciliation_status: str
     claim_ceiling: str
     receipt_digest: str
+    elapsed_seconds: float = 0.0
+    timeout_seconds: float = 1.0
+    timeout_requested: bool = False
+    termination_requested: bool = False
+    signals_sent: tuple[str, ...] = ()
+    process_group_status: str = "UNKNOWN"
+    first_public_event_latency_seconds: float | None = None
+    stdout_byte_count: int = 0
+    stderr_byte_count: int = 0
+    stdout_digest: str | None = None
+    stderr_digest: str | None = None
 
     def __post_init__(self) -> None:
-        if self.schema_version != LIVE_RECEIPT_SCHEMA:
+        if self.schema_version not in {LIVE_RECEIPT_SCHEMA, LIVE_RECEIPT_LEGACY_SCHEMA}:
             raise FederationContractError("live executor receipt schema version mismatch")
         for field in ("task_id", "dispatch_id", "attempt_id", "executor_id", "adapter_id", "started_at", "ended_at", "sanitized_event_summary", "claim_ceiling"):
             _text(getattr(self, field), f"live_receipt.{field}")
@@ -366,12 +380,37 @@ class LiveExecutorReceipt:
         object.__setattr__(self, "workspace_after_digest", _digest(self.workspace_after_digest, "live_receipt.workspace_after_digest"))
         object.__setattr__(self, "os_validation_status", _enum(self.os_validation_status, LIVE_VALIDATION_STATUSES, "live_receipt.os_validation_status"))
         object.__setattr__(self, "reconciliation_status", _enum(self.reconciliation_status, LIVE_RECONCILIATION_STATUSES, "live_receipt.reconciliation_status"))
+        if self.schema_version == LIVE_RECEIPT_SCHEMA:
+            if not isinstance(self.elapsed_seconds, (int, float)) or isinstance(self.elapsed_seconds, bool) or self.elapsed_seconds < 0:
+                raise FederationContractError("live_receipt.elapsed_seconds must be non-negative")
+            if not isinstance(self.timeout_seconds, (int, float)) or isinstance(self.timeout_seconds, bool) or self.timeout_seconds <= 0:
+                raise FederationContractError("live_receipt.timeout_seconds must be positive")
+            for field in ("timeout_requested", "termination_requested"):
+                if not isinstance(getattr(self, field), bool):
+                    raise FederationContractError(f"live_receipt.{field} must be boolean")
+            signals = tuple(self.signals_sent)
+            if any(signal not in LIVE_SIGNAL_NAMES for signal in signals) or len(signals) != len(set(signals)):
+                raise FederationContractError("live_receipt.signals_sent contains an unsupported or duplicate signal")
+            object.__setattr__(self, "signals_sent", signals)
+            object.__setattr__(self, "process_group_status", _enum(self.process_group_status, LIVE_PROCESS_GROUP_STATUSES, "live_receipt.process_group_status"))
+            if self.first_public_event_latency_seconds is not None and (
+                not isinstance(self.first_public_event_latency_seconds, (int, float))
+                or isinstance(self.first_public_event_latency_seconds, bool)
+                or self.first_public_event_latency_seconds < 0
+            ):
+                raise FederationContractError("live_receipt.first_public_event_latency_seconds must be null or non-negative")
+            for field in ("stdout_byte_count", "stderr_byte_count"):
+                value = getattr(self, field)
+                if not isinstance(value, int) or isinstance(value, bool) or value < 0:
+                    raise FederationContractError(f"live_receipt.{field} must be non-negative")
+            object.__setattr__(self, "stdout_digest", _optional_digest(self.stdout_digest, "live_receipt.stdout_digest"))
+            object.__setattr__(self, "stderr_digest", _optional_digest(self.stderr_digest, "live_receipt.stderr_digest"))
         expected = canonical_digest(self._unsigned_dict())
         if _digest(self.receipt_digest, "live_receipt.receipt_digest") != expected:
             raise FederationContractError("live_receipt.receipt_digest does not match its unsigned content")
 
     def _unsigned_dict(self) -> dict[str, Any]:
-        return {
+        result = {
             "schema_version": self.schema_version, "task_id": self.task_id, "dispatch_id": self.dispatch_id,
             "attempt_id": self.attempt_id, "executor_id": self.executor_id, "adapter_id": self.adapter_id,
             "state": self.state, "started_at": self.started_at, "ended_at": self.ended_at, "exit_code": self.exit_code,
@@ -383,6 +422,16 @@ class LiveExecutorReceipt:
             "os_validation_status": self.os_validation_status, "reconciliation_status": self.reconciliation_status,
             "claim_ceiling": self.claim_ceiling,
         }
+        if self.schema_version == LIVE_RECEIPT_SCHEMA:
+            result.update({
+                "elapsed_seconds": self.elapsed_seconds, "timeout_seconds": self.timeout_seconds,
+                "timeout_requested": self.timeout_requested, "termination_requested": self.termination_requested,
+                "signals_sent": list(self.signals_sent), "process_group_status": self.process_group_status,
+                "first_public_event_latency_seconds": self.first_public_event_latency_seconds,
+                "stdout_byte_count": self.stdout_byte_count, "stderr_byte_count": self.stderr_byte_count,
+                "stdout_digest": self.stdout_digest, "stderr_digest": self.stderr_digest,
+            })
+        return result
 
     def to_dict(self) -> dict[str, Any]:
         result = self._unsigned_dict()
@@ -393,6 +442,18 @@ class LiveExecutorReceipt:
     def build(cls, **kwargs: Any) -> "LiveExecutorReceipt":
         values = dict(kwargs)
         values.setdefault("schema_version", LIVE_RECEIPT_SCHEMA)
+        if values["schema_version"] == LIVE_RECEIPT_SCHEMA:
+            values.setdefault("elapsed_seconds", 0.0)
+            values.setdefault("timeout_seconds", 1.0)
+            values.setdefault("timeout_requested", False)
+            values.setdefault("termination_requested", False)
+            values.setdefault("signals_sent", ())
+            values.setdefault("process_group_status", "UNKNOWN")
+            values.setdefault("first_public_event_latency_seconds", None)
+            values.setdefault("stdout_byte_count", 0)
+            values.setdefault("stderr_byte_count", 0)
+            values.setdefault("stdout_digest", None)
+            values.setdefault("stderr_digest", None)
         unsigned = dict(values)
         unsigned.pop("receipt_digest", None)
         values["receipt_digest"] = canonical_digest(unsigned)
@@ -400,9 +461,27 @@ class LiveExecutorReceipt:
 
     @classmethod
     def from_dict(cls, data: Mapping[str, Any]) -> "LiveExecutorReceipt":
-        keys = {"schema_version", "task_id", "dispatch_id", "attempt_id", "executor_id", "adapter_id", "state", "started_at", "ended_at", "exit_code", "timed_out", "cancel_state", "event_count", "sanitized_event_summary", "response_digest", "structured_result", "session_pointer", "side_effect_class", "side_effect_observation", "workspace_before_digest", "workspace_after_digest", "os_validation_status", "reconciliation_status", "claim_ceiling", "receipt_digest"}
+        base_keys = {"schema_version", "task_id", "dispatch_id", "attempt_id", "executor_id", "adapter_id", "state", "started_at", "ended_at", "exit_code", "timed_out", "cancel_state", "event_count", "sanitized_event_summary", "response_digest", "structured_result", "session_pointer", "side_effect_class", "side_effect_observation", "workspace_before_digest", "workspace_after_digest", "os_validation_status", "reconciliation_status", "claim_ceiling", "receipt_digest"}
+        version = data.get("schema_version") if isinstance(data, Mapping) else None
+        if version == LIVE_RECEIPT_LEGACY_SCHEMA:
+            _strict(data, base_keys, "LiveExecutorReceipt")
+            values = dict(data)
+            values.update({
+                "elapsed_seconds": 0.0, "timeout_seconds": 1.0, "timeout_requested": False,
+                "termination_requested": False, "signals_sent": (), "process_group_status": "UNKNOWN",
+                "first_public_event_latency_seconds": None, "stdout_byte_count": 0, "stderr_byte_count": 0,
+                "stdout_digest": None, "stderr_digest": None,
+            })
+            return cls(**values)
+        keys = base_keys | {
+            "elapsed_seconds", "timeout_seconds", "timeout_requested", "termination_requested", "signals_sent",
+            "process_group_status", "first_public_event_latency_seconds", "stdout_byte_count", "stderr_byte_count",
+            "stdout_digest", "stderr_digest",
+        }
         _strict(data, keys, "LiveExecutorReceipt")
-        return cls(**dict(data))
+        values = dict(data)
+        values["signals_sent"] = tuple(values["signals_sent"])
+        return cls(**values)
 
 
 @dataclass(frozen=True)
@@ -528,7 +607,8 @@ class LiveDispatchStateMachine:
 
 __all__ = [
     "LIVE_BUDGET_AUTHORITIES", "LIVE_DISPATCH_SCHEMA", "LIVE_DISPATCH_STATES", "LIVE_ELIGIBILITY",
-    "LIVE_LEASE_SCHEMA", "LIVE_NETWORK_CLASSES", "LIVE_RECEIPT_SCHEMA", "LIVE_RECONCILIATION_POLICIES",
+    "LIVE_LEASE_SCHEMA", "LIVE_NETWORK_CLASSES", "LIVE_RECEIPT_LEGACY_SCHEMA", "LIVE_RECEIPT_SCHEMA",
+    "LIVE_PROCESS_GROUP_STATUSES", "LIVE_RECONCILIATION_POLICIES", "LIVE_SIGNAL_NAMES",
     "LIVE_SIDE_EFFECT_CLASSES", "LIVE_TRANSITIONS", "LiveCapabilityLease", "LiveDispatchEnvelope",
     "LiveDispatchStateMachine", "LiveExecutorReceipt", "LiveTransitionError", "LiveTransitionRecord",
 ]

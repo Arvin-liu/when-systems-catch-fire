@@ -94,6 +94,32 @@ def _safe_summary(observation: LiveAdapterObservation) -> str:
         return "PUBLIC_SUMMARY_REDACTED"
 
 
+def _transport_evidence(process: Any, *, observed_at: str, timeout_seconds: float) -> dict[str, Any]:
+    elapsed_ms = process.monotonic_elapsed_ms if process.monotonic_elapsed_ms is not None else process.duration_ms
+    process_timeout = process.timeout_seconds if process.timeout_seconds > 0 else timeout_seconds
+    group_status = process.process_group_status
+    if group_status == "UNKNOWN" and process.process_group_cleaned:
+        group_status = "CONFIRMED_GONE"
+    stdout_bytes = process.stdout_bytes if process.stdout_bytes is not None else len(process.stdout.encode("utf-8"))
+    stderr_bytes = process.stderr_bytes if process.stderr_bytes is not None else len(process.stderr.encode("utf-8"))
+    first_event_ms = process.first_public_event_latency_ms
+    return {
+        "started_at": process.started_at or observed_at,
+        "ended_at": process.ended_at or observed_at,
+        "elapsed_seconds": max(0.0, float(elapsed_ms) / 1000.0),
+        "timeout_seconds": float(process_timeout),
+        "timeout_requested": bool(process.timeout_requested or process.timed_out),
+        "termination_requested": bool(process.termination_requested or process.timed_out or process.output_truncated),
+        "signals_sent": tuple(process.signals_sent),
+        "process_group_status": group_status,
+        "first_public_event_latency_seconds": None if first_event_ms is None else max(0.0, float(first_event_ms) / 1000.0),
+        "stdout_byte_count": max(0, int(stdout_bytes)),
+        "stderr_byte_count": max(0, int(stderr_bytes)),
+        "stdout_digest": process.stdout_digest,
+        "stderr_digest": process.stderr_digest,
+    }
+
+
 def execute_bounded_attempt(
     *,
     adapter: Any,
@@ -114,6 +140,7 @@ def execute_bounded_attempt(
     observation = adapter.dispatch(envelope)
     after_digest = fixture.current_digest()
     side_effect_observation = "READ_ONLY_UNCHANGED" if before_digest == after_digest and fixture.read_only_guard_observed() else "FORBIDDEN_EFFECT_OBSERVED"
+    transport_evidence = _transport_evidence(observation.process, observed_at=observed_at, timeout_seconds=envelope.timeout_seconds)
     validation: LiveValidationReport | None = None
 
     if observation.process.timed_out:
@@ -166,7 +193,7 @@ def execute_bounded_attempt(
         receipt = LiveExecutorReceipt.build(
             task_id=envelope.task_id, dispatch_id=envelope.dispatch_id, attempt_id=envelope.attempt_id,
             executor_id=observation.executor_id, adapter_id=observation.adapter_id, state=final_state,
-            started_at=observed_at, ended_at=observed_at, exit_code=observation.process.returncode,
+            exit_code=observation.process.returncode,
             timed_out=observation.process.timed_out, cancel_state="NOT_REQUESTED", event_count=len(observation.parsed_events),
             sanitized_event_summary=_safe_summary(observation), response_digest=observation.response_digest,
             structured_result=structured, session_pointer=observation.session_pointer,
@@ -174,6 +201,7 @@ def execute_bounded_attempt(
             workspace_before_digest=before_digest, workspace_after_digest=after_digest,
             os_validation_status=os_validation, reconciliation_status=reconciliation,
             claim_ceiling="Executor result is unvalidated until the independent fixture validator passes.",
+            **transport_evidence,
         )
         old_receipt = DispatchReceipt(
             envelope.dispatch_id, envelope.task_id, envelope.executor_id, f"live-idempotency-{envelope.dispatch_id}",
@@ -187,7 +215,7 @@ def execute_bounded_attempt(
         receipt = LiveExecutorReceipt.build(
             task_id=envelope.task_id, dispatch_id=envelope.dispatch_id, attempt_id=envelope.attempt_id,
             executor_id=observation.executor_id, adapter_id=observation.adapter_id, state=final_state,
-            started_at=observed_at, ended_at=observed_at, exit_code=observation.process.returncode,
+            exit_code=observation.process.returncode,
             timed_out=True, cancel_state="UNKNOWN", event_count=len(observation.parsed_events),
             sanitized_event_summary=_safe_summary(observation), response_digest=observation.response_digest,
             structured_result=None, session_pointer=observation.session_pointer,
@@ -195,6 +223,7 @@ def execute_bounded_attempt(
             workspace_before_digest=before_digest, workspace_after_digest=after_digest,
             os_validation_status="NOT_RUN", reconciliation_status="OPEN",
             claim_ceiling="Timeout outcome is unresolved; no retry or completion is inferred.",
+            **transport_evidence,
         )
 
     return LiveAttemptResult(receipt and observation, receipt, validation, tuple(item.to_dict() for item in machine.history), durable,)
