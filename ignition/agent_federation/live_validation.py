@@ -164,6 +164,7 @@ class LiveIndependentValidator:
         checks["workspace_digest_binding"] = executor_receipt.workspace_before_digest == before_digest and executor_receipt.workspace_after_digest == after_digest
         checks["result_digest_binding"] = executor_receipt.result_digest == sha256_json(result)
         checks["executor_return_unvalidated"] = executor_receipt.state == "RETURNED_UNVALIDATED" and executor_receipt.os_validation_status == "NOT_RUN"
+        checks["timeout_reconciliation_status"] = not executor_receipt.timed_out and executor_receipt.reconciliation_status == "NOT_REQUIRED"
         checks["fixture_validator"] = fixture_report.status == "PASS"
         checks["workspace_unchanged"] = before_digest == after_digest == self.fixture.before_digest == self.fixture.current_digest()
         checks["child_depth"] = child_depth == 1 and executor_receipt.child_depth == 1 and envelope.provenance.get("child_depth") == 1

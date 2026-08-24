@@ -98,7 +98,7 @@ def build_synthetic_child_prompt(
         "synthetic_input_ref": synthetic_input_ref,
         "success_criteria": list(success_criteria),
         "output_contract": dict(output_contract),
-        "instruction": "Read only the disposable synthetic fixture. Do not write, delete, execute shell, use network, message, browse, inspect private state, or spawn another Agent. Return only the requested public result.",
+        "instruction": "Read only the disposable synthetic fixture, using bounded read-only file inspection when needed. Do not write, delete, run commands with side effects, use network, message, browse, inspect private state, or spawn another Agent. Return only the requested public result.",
     }
     return "IGNITION_LIVE_CHILD_SYNTHETIC_READONLY_TASK\n" + canonical_json(payload)
 

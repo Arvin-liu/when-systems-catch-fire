@@ -1,0 +1,93 @@
+{
+  "schema_version": "ignition-137-step08-dry-run-readiness-r1",
+  "task_id": "IGNITION-20260824-137",
+  "status": "READY_FOR_ONE_LIVE_CODEX_ATTEMPT",
+  "observed_at": "2026-08-24T06:12:18+00:00",
+  "cli": {
+    "executable": "/Users/zhiyuan/.local/bin/codex",
+    "version": "codex-cli 0.144.4",
+    "binary_digest": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477",
+    "interface_digest": "9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19",
+    "auth_probe_returncode": 0,
+    "auth_status_observed": "LOGGED_IN_PUBLIC_STATUS_ONLY"
+  },
+  "lease": {
+    "lease_id": "live-codex-137-attempt-lease",
+    "lease_digest": "ed7f4f8bf0ca4d21ed02ed7e956cbf2813da8d368ccc6cf7a93530545ed10416",
+    "observed_at": "2026-08-24T06:12:18+00:00",
+    "expires_at": "2026-08-24T06:32:18+00:00",
+    "ttl_seconds": 1200,
+    "eligibility": "ELIGIBLE_FOR_LIVE_READONLY",
+    "effective_capabilities": ["repo.read"],
+    "forbidden_capabilities": ["repo.write", "repo.test", "terminal.run", "browser.read", "browser.act", "web.read", "messaging.send", "subagents", "scheduler"]
+  },
+  "envelope": {
+    "schema_version": "live-dispatch-envelope-r1",
+    "dispatch_id": "live-dispatch-137",
+    "attempt_id": "live-attempt-137",
+    "executor_id": "external.codex",
+    "adapter_id": "codex-live-r2",
+    "capability_lease_ref": "live-codex-137-attempt-lease",
+    "workspace_ref": "DISPOSABLE_LIVE_FIXTURE_137",
+    "workspace_mode": "DISPOSABLE_READ_ONLY",
+    "permission_ceiling": ["repo.read"],
+    "side_effect_class": "READ_ONLY_SYNTHETIC",
+    "network_class": "INFERENCE_TRANSPORT_ONLY",
+    "synthetic_input_ref": "fixture://IGNITION-20260824-137",
+    "synthetic_input_digest": "42ad06c9e9a0735df29adf80f651a38c84a81a119826f2c3998eb2babfb36806",
+    "output_contract": {
+      "format": "json",
+      "required_fields": ["nonce", "selected_ids", "count", "workspace_digest_claim"],
+      "strict_output_schema": true,
+      "schema_ref": "DISPOSABLE_SCHEMA_COPY",
+      "schema_digest": "35d8948d0ee7a4c33727ebf6839a07e9009a7246810c68b173a0c7764db0a84a",
+      "additionalProperties": false
+    },
+    "timeout_seconds": 900,
+    "retry_policy": "NO_BLIND_RETRY",
+    "reconciliation_policy": "REQUIRE_ON_TIMEOUT_OR_UNKNOWN_EFFECT",
+    "budget_authority": "NO_NEW_BILLING_AUTHORITY",
+    "child_depth": 1,
+    "parent_prompt_forwarded": false,
+    "formal_task_context_forwarded": false
+  },
+  "fixture": {
+    "workspace_ref": "DISPOSABLE_LIVE_FIXTURE_137",
+    "before_digest": "a4993a9ba29920bacecee2575c544053a499c57e906cd5d2189536ed493910f7",
+    "expected_selected_ids": ["row-a", "row-d", "row-c"],
+    "expected_count": 3,
+    "read_only_guard": true,
+    "root_not_persisted": true
+  },
+  "admission": {
+    "status": "ADMITTED",
+    "effective_capabilities": ["repo.read"],
+    "reason": "fresh lease and strict capability intersection admitted"
+  },
+  "child_guard": {
+    "parent_depth": 0,
+    "child_depth": 1,
+    "formal_task_env_forwarded": false,
+    "parent_prompt_forwarded": false
+  },
+  "argv_gate": {
+    "unsafe_flag_present": false,
+    "argv_digest": "c20373940f8f1e70557769087ee0a9d265356f125cf99afd3a12badf25188e64",
+    "required_flags_observed": ["--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--sandbox", "--output-schema", "--cd"]
+  },
+  "coordinator": {
+    "plan_status": "PREPARED",
+    "external_process_started": false,
+    "dispatch_call_count": 0,
+    "claim_ceiling": "Prepared OS dispatch only; no live executor invocation or completion is claimed."
+  },
+  "verification": {
+    "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_task137 ignition.tests.test_live_validation ignition.tests.test_live_child_guard ignition.tests.test_live_codex_adapter ignition.tests.test_live_bridge_contracts ignition.tests.test_live_execution -v",
+    "tests": 25,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "status": "PASS"
+  },
+  "claim_ceiling": "Dry-run readiness only; no external Agent dispatch, live completion, or validation is claimed."
+}
