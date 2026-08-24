@@ -6,6 +6,7 @@ from dataclasses import dataclass
 import hashlib
 import json
 from pathlib import Path
+import re
 from typing import Any, Mapping, Sequence
 
 from .contracts import FederationContractError, canonical_json
@@ -105,6 +106,8 @@ class LiveCodexAdapter:
         persistent_user_document_roots: Sequence[str | Path] | None = None,
         auth_source_ref: str = "auth://existing-public-login-state",
         auth_source_path: str | Path | None = None,
+        model: str | None = None,
+        reasoning_effort: str | None = None,
     ) -> None:
         root = Path(workspace)
         if not root.is_absolute() or not root.is_dir():
@@ -133,6 +136,14 @@ class LiveCodexAdapter:
         if not self.persistent_user_document_roots:
             raise LiveAdapterError("persistent user document roots must contain an existing directory")
         self.auth_source_ref = auth_source_ref
+        if model is not None and (not isinstance(model, str) or not re.fullmatch(r"[A-Za-z0-9_.-]+", model)):
+            raise LiveAdapterError("Codex model must be a bounded public model identifier")
+        if reasoning_effort is not None and reasoning_effort not in {"none", "low", "medium", "high", "xhigh", "max"}:
+            raise LiveAdapterError("Codex reasoning effort is unsupported")
+        if reasoning_effort is not None and model is None:
+            raise LiveAdapterError("Codex reasoning effort requires an explicit model")
+        self.model = model
+        self.reasoning_effort = reasoning_effort
         if auth_source_path is not None:
             source = Path(auth_source_path).absolute()
             if not source.is_absolute() or source.is_symlink() or not source.exists():
@@ -296,6 +307,10 @@ class LiveCodexAdapter:
             self.executable, "exec", "--json", "--ephemeral", "--ignore-user-config", "--ignore-rules",
             "--skip-git-repo-check", "--sandbox", "read-only",
         ]
+        if self.model is not None:
+            argv_prefix.extend(("--model", self.model))
+        if self.reasoning_effort is not None:
+            argv_prefix.extend(("-c", f'model_reasoning_effort="{self.reasoning_effort}"'))
         if strict_output_schema:
             schema_ref = envelope.output_contract.get("schema_path")
             if not isinstance(schema_ref, str) or not schema_ref.startswith("/"):

@@ -2254,7 +2254,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "6de6916e91a15819a2053c32d71c938062b2ce198f0873bcd07444c73721f37f",
+      "source_sha256": "1c203ba6c8b6f5140b8c79710f6df07475fe8d1482c0f095edf250c9eb901b1c",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2269,7 +2269,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "ae9d7f78b53a256a7f345d3a96e3d99036a9a04d7886b29979afbb5141ccbc44",
+      "source_sha256": "08c3e36b14736aa9458028a761fdeef5aa37e67d907d3f293692658b26a67e30",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2846,7 +2846,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "8201836d37ef1b4472a83a78a03be44cf88edf211205ce35110565ddfc8bc876",
+      "source_sha256": "2436ffdd219441b8d0e5c269531fb9d935729e81c76784ffaf65488f916059a7",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -2889,7 +2889,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "00a477d0e5d29b3e3ad1344c21996072f6477fc19efead24c384c091f3280e5e",
+      "source_sha256": "693f07b37d08dbb61dffd39258cb39ad538b50ee53cf0daa4297795fa79c2b68",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"

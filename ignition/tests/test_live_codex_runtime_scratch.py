@@ -221,6 +221,38 @@ class LiveCodexRuntimeScratchTests(unittest.TestCase):
             self.assertFalse(adapter.last_auth_source_observation["mutated"])
             self.assertTrue(adapter.last_auth_source_observation["unchanged"])
 
+    def test_explicit_model_and_max_reasoning_are_bounded_cli_overrides(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            workspace = root / "workspace"
+            workspace.mkdir()
+            schema = root / "schema.json"
+            schema.write_text('{"type":"object","additionalProperties":false}', encoding="utf-8")
+            schema.chmod(stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
+            adapter = LiveCodexAdapter(
+                workspace,
+                executable="/Users/zhiyuan/.local/bin/codex",
+                authentication_observed=True,
+                adapter_id="codex-live-r3",
+                model="gpt-5.6-luna",
+                reasoning_effort="max",
+            )
+            argv = adapter.build_argv(
+                envelope().__class__(
+                    **{
+                        **envelope().to_dict(),
+                        "output_contract": {
+                            "format": "json",
+                            "required_fields": ["nonce"],
+                            "strict_output_schema": True,
+                            "schema_path": str(schema),
+                        },
+                    }
+                )
+            )
+            self.assertIn(("--model", "gpt-5.6-luna"), tuple(zip(argv, argv[1:])))
+            self.assertIn('model_reasoning_effort="max"', argv)
+
 
 if __name__ == "__main__":
     unittest.main()

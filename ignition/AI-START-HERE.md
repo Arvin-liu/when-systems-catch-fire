@@ -39,7 +39,7 @@ completion 或外部真值。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260824-138` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `6e47ca5a3c9b29b499153503ec0152a6bb96fb84616343bcbb8306c3f913c5d7`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `c72b516e25bb0f82ef3fada3bf6ea00c0d8c4226863b5f822bbaced372929977`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
