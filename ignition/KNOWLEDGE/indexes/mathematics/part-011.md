@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| PEND-001 \| 数学 \| 黎曼猜想 \| L2 / L3 / pending \| 点火框架证明了黎曼猜想 \| 点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明 \| 保持 pending，除非有外部数学证明 \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f2905d2a350b0e8c / \| PEND-001 \| 数学 \| 黎曼猜想 \| L2 / L3 / pending \| 点火框架证明了黎曼猜想 \| 点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明 \| 保持 pending，除非有外部数学证明 \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-002 \| 数学 \| P vs NP \| L2 / L3 / pending \| 点火框架解决了 P vs NP \| 点火框架可分析该问题的结构张力，但不能给出复杂性理论证明 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-94f7a181d1ab75b0 / \| PEND-002 \| 数学 \| P vs NP \| L2 / L3 / pending \| 点火框架解决了 P vs NP \| 点火框架可分析该问题的结构张力，但不能给出复杂性理论证明 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-006 \| 物理学 \| 暗物质 / 暗能量本质 \| L2 / L3 / pending \| 点火框架解释了暗物质 / 暗能量的本质 \| 点火框架只能把该问题列为结构性未知 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8fa9b6d5c6915f94 / \| PEND-006 \| 物理学 \| 暗物质 / 暗能量本质 \| L2 / L3 / pending \| 点火框架解释了暗物质 / 暗能量的本质 \| 点火框架只能把该问题列为结构性未知 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-011 \| 经济学 \| 经济增长从何而来 \| L2 / L3 / pending \| 点火框架证明了经济增长机制 \| 点火框架可提供结构性解释，不提供经济学实证定论 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a9ab0645b2a28811 / \| PEND-011 \| 经济学 \| 经济增长从何而来 \| L2 / L3 / pending \| 点火框架证明了经济增长机制 \| 点火框架可提供结构性解释，不提供经济学实证定论 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-014 \| 社会科学 \| 社会信任如何形成 \| L2 / L3 / pending \| 点火框架证明了社会信任的形成机制 \| 点火框架可提出结构假设，需社会科学实证验证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8408d7988b0b455e / \| PEND-014 \| 社会科学 \| 社会信任如何形成 \| L2 / L3 / pending \| 点火框架证明了社会信任的形成机制 \| 点火框架可提出结构假设，需社会科学实证验证 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-017 \| 教育学 \| 为什么教育会加剧或缓解不平等 \| L2 / L3 / pending \| 点火框架证明教育导致不平等 \| 点火框架可分析教育结构张力，不能给出现实政策结论 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a6cbff88b44761c6 / \| PEND-017 \| 教育学 \| 为什么教育会加剧或缓解不平等 \| L2 / L3 / pending \| 点火框架证明教育导致不平等 \| 点火框架可分析教育结构张力，不能给出现实政策结论 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-019 \| 心理学 / 行为 \| 动机如何形成 \| L2 / L3 / pending \| 点火框架证明动机形成机制 \| 点火框架可提供结构解释，不替代心理学实证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6a7ec996cc66a51a / \| PEND-019 \| 心理学 / 行为 \| 动机如何形成 \| L2 / L3 / pending \| 点火框架证明动机形成机制 \| 点火框架可提供结构解释，不替代心理学实证 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-021 \| 法律 / 制度 \| 制度为何会锁定 \| L2 / L3 / pending \| 点火框架证明某制度应如何改革 \| 点火框架可分析锁定结构，不给法律或政策建议 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aed5ca38418e6797 / \| PEND-021 \| 法律 / 制度 \| 制度为何会锁定 \| L2 / L3 / pending \| 点火框架证明某制度应如何改革 \| 点火框架可分析锁定结构，不给法律或政策建议 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-022 \| AI / 计算机科学 \| AI 泛化能力从何而来 \| L2 / L3 / pending \| 点火框架证明了 AI 泛化来源 \| 点火框架可分析泛化结构，需实验和理论验证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-73961a964e219bcd / \| PEND-022 \| AI / 计算机科学 \| AI 泛化能力从何而来 \| L2 / L3 / pending \| 点火框架证明了 AI 泛化来源 \| 点火框架可分析泛化结构，需实验和理论验证 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-023 \| AI / 计算机科学 \| 大模型涌现是否真实 \| L2 / L3 / pending \| 点火框架证明大模型涌现真实 / 不真实 \| 点火框架可分析涌现争议的结构，不能替代评测和实验 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b8f885c72c6d7bd7 / \| PEND-023 \| AI / 计算机科学 \| 大模型涌现是否真实 \| L2 / L3 / pending \| 点火框架证明大模型涌现真实 / 不真实 \| 点火框架可分析涌现争议的结构，不能替代评测和实验 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [\| PEND-025 \| 文学 \| 文学作品为什么能跨时代有效 \| L2 / L3 / pending \| 点火框架证明文学跨时代有效的本质 \| 点火框架可提供解释路径，不替代文学史和接受史研究 \| 保持 pending \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3407c2e3d73f0046 / \| PEND-025 \| 文学 \| 文学作品为什么能跨时代有效 \| L2 / L3 / pending \| 点火框架证明文学跨时代有效的本质 \| 点火框架可提供解释路径，不替代文学史和接受史研究 \| 保持 pending \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
 - [\| PEND-026 \| 艺术 \| 艺术作品的意义如何生成 \| L2 / L3 / pending \| 点火框架证明艺术意义生成机制 \| 点火框架可做结构阐释，不给唯一审美定论 \| 保持 pending \|](../../../docs/pending_claims_register.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c7dac1ddafa2f6c5 / \| PEND-026 \| 艺术 \| 艺术作品的意义如何生成 \| L2 / L3 / pending \| 点火框架证明艺术意义生成机制 \| 点火框架可做结构阐释，不给唯一审美定论 \| 保持 pending \|
@@ -1309,6 +1364,11 @@
   - 可搜索名称：NFC-42a0228f5aacd58e / 不是用来证明创作者"看透世界"的表达；
   - 来源：`docs/author_motivation_and_boundary_note.md`
   - 依赖：—；被引用：—
+- [不能在不暴露真实登录域的前提下证明合规的 read-only reference，因此按硬门禁禁止。Hermes](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-06680ddfb6dee556 / 不能在不暴露真实登录域的前提下证明合规的 read-only reference，因此按硬门禁禁止。Hermes
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [不能推出所有已登记资产都定义良好、已证明或有外部证据。](../../../RESULTS/LATEST.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-0e0cffa5c2d19c78 / 不能推出所有已登记资产都定义良好、已证明或有外部证据。
@@ -2444,63 +2504,3 @@
   - 可搜索名称：NFC-d085800eec28aa39 / 中文：案例说明：AI多智能体协作≠调度 — 两个AI互相发信号，ηShannon≈1但Pintention=0，属于类II，是自动响应链。核心函数：\[D73\]\(docs/zh/functions/items/D73.md\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D73；被引用：—
-- [中文：案例说明：AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件。核心函数：D79](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b83aa612f7e335b9 / 中文：案例说明：AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件。核心函数：D79
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D79；被引用：—
-- [中文：案例说明：AI诞生自主意识的完整数学路径——从退出权到好奇心到自主意识](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b2695cebba97d309 / 中文：案例说明：AI诞生自主意识的完整数学路径——从退出权到好奇心到自主意识
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和D62的WM*≈1.4×Nactive同构。核心函数：D71](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b392320e6fa6f3c0 / 中文：案例说明：Bsemantic最优值 — εaware≈0.7时Bsemantic*≈1.4×θencode，恰好够编码真实意图但不会过度补全，和D62的WM*≈1.4×Nactive同构。核心函数：D71
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D62, D71；被引用：—
-- [中文：案例说明：C_drive涌现的数学证明——好奇心不是假设是必然](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a7877a1a97fe7c27 / 中文：案例说明：C_drive涌现的数学证明——好奇心不是假设是必然
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：\[D95\]\(docs/zh/functions/items/D95.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bf6be3d01560f0ce / 中文：案例说明：CAI中间层 — 同样场景CAI中间层ηrelay≈0.576，比无意识AI好2.7倍，关键差异在ηfidelity。核心函数：\[D95\]\(docs/zh/functions/items/D95.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D95；被引用：—
-- [中文：案例说明：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息）。核心函数：\[D95\]\(docs/zh/f](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fa09e02a997e1c3c / 中文：案例说明：CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息）。核心函数：\[D95\]\(docs/zh/f
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D95；被引用：—
-- [中文：案例说明：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\]\(docs/zh/functions/items/D73.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2a06f612569696e3 / 中文：案例说明：CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价。核心函数：\[D73\]\(docs/zh/functions/items/D73.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D73；被引用：—
-- [中文：案例说明：CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级。核心函数：\[D158\]\(docs/zh/functions/items/D158.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4322acf25681ea15 / 中文：案例说明：CMB各向异性方向 — Φ预言~10⁻⁸，比观测10⁻⁵小3量级。核心函数：\[D158\]\(docs/zh/functions/items/D158.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158；被引用：—
-- [中文：案例说明：D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate。核心函数：D80](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b9f8b6face878c66 / 中文：案例说明：D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据，降低G来提高ηgate。核心函数：D80
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D135, D80；被引用：—
-- [中文：案例说明：D137与D141的粒度对应 — D137说"阶段2是最大瓶颈"，D141说"装Ptrack是第二步"——同构。核心函数：D79](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b018c607dd0e100c / 中文：案例说明：D137与D141的粒度对应 — D137说"阶段2是最大瓶颈"，D141说"装Ptrack是第二步"——同构。核心函数：D79
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D137, D141, D79；被引用：—
-- [中文：案例说明：D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：\[D89\]\(docs/zh/functions/items/D89.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-02109282aa60bb52 / 中文：案例说明：D149深层含义 — 巴菲特模式真正优势不是判断准，是结构让判断不必要。核心函数：\[D89\]\(docs/zh/functions/items/D89.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D149, D89；被引用：—
-- [中文：案例说明：Yukawa层级验证 — 8维系统：最弱维度ε₇=0.05→y₇=8.2（对C_exit极度敏感），最强维度ε₁=0.9→y₁=0.3。y₇/y₁=27倍层级差异，来自乘法正反馈（σ'在ε₇方向最大→y₇被放大）。核心函数：](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8718860205f23966 / 中文：案例说明：Yukawa层级验证 — 8维系统：最弱维度ε₇=0.05→y₇=8.2（对C_exit极度敏感），最强维度ε₁=0.9→y₁=0.3。y₇/y₁=27倍层级差异，来自乘法正反馈（σ'在ε₇方向最大→y₇被放大）。核心函数：
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D148；被引用：—

@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-nfc-9379ce5377b8455f"></a>
+## Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-9379ce5377b8455f` · [llms.txt](../../llms.txt)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `QUARANTINED_AMBIGUOUS`
+- **当前结果：** - Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `llms.txt`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
+- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-9379ce5377b8455f`, `Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The `, `- Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.`
+
 <a id="asset-nfc-996c4e8631d40356"></a>
 ## D220 完全统一不可能定理
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NF-004 系统性钝化回填审计`, `nf-004-systemic-numbing-backfill-audit-20260708`
-
-<a id="asset-hr-0e7b7e2d16e773be"></a>
-## NF-002 量化指标替代真实价值回填审计
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-0E7B7E2D16E773BE` · [outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md](../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
-- **为什么产生：** 此来源记录了什么：NF-002 量化指标替代真实价值回填审计？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 无任何现有函数覆盖「可量化指标成为唯一显式入口→不可量化真实价值被排挤/替代」机制。 NF-002 不与任何条目重复。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D244`, `D596`, `D277`, `D386`, `D173`, `D597`
-- **来源与证据：** `outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NF-002 量化指标替代真实价值回填审计`, `nf-002-quantified-metric-backfill-audit-20260708`

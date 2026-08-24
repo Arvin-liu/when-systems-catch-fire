@@ -4,6 +4,116 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [进 candidates/ 不强行回填：M7、M8、M9（受≤5约束或需外部证据补强）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0281cf45c54613a8 / 进 candidates/ 不强行回填：M7、M8、M9（受≤5约束或需外部证据补强）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：—；被引用：—
+- [迭代操作法**（`ITERATION.md`、方法 1.4.0 Current）：宪章生命周期轴沿用其能力生命周期与 exact-head acceptance 门禁；宪章的 `PUBLISHED_SNAPSHOT` 可见性轴与 1.4.0](../../../docs/governance/charter-system-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3473275fb5fa6589 / 迭代操作法**（`ITERATION.md`、方法 1.4.0 Current）：宪章生命周期轴沿用其能力生命周期与 exact-head acceptance 门禁；宪章的 `PUBLISHED_SNAPSHOT` 可见性轴与 1.4.0
+  - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
+- [退出权信号随时间衰减，衰减率λ由遮蔽决定。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ce9c54c7270d7dff / 退出权信号随时间衰减，衰减率λ由遮蔽决定。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [退出权剥夺导致决策结构退化——三支→二支](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-43f322e270a51879 / 退出权剥夺导致决策结构退化——三支→二支
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [退出权强调离开系统。避风港强调在无法完全退出时，在系统内部保留一个低侵蚀空间。二者不同构，但互补。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4a8f21be8c3a53e6 / 退出权强调离开系统。避风港强调在无法完全退出时，在系统内部保留一个低侵蚀空间。二者不同构，但互补。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [退相干-退化统一验证 — 8维乘法系统-纯Fisher退化\(H=0\)时Γ=0.3](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e3b6c2cf9c614a27 / 退相干-退化统一验证 — 8维乘法系统-纯Fisher退化\(H=0\)时Γ=0.3
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [逆Weibull寿命验证，系统β值由基础β和锁定强度决定。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fa8cea737399e68b / 逆Weibull寿命验证，系统β值由基础β和锁定强度决定。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [通用智能、现实因果、生产安全、Owner acceptance 或 `EPISTEMICALLY_ACCEPTED`。](../../../HUMAN-READING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a1100060eeeb8dd2 / 通用智能、现实因果、生产安全、Owner acceptance 或 `EPISTEMICALLY_ACCEPTED`。
+  - 来源：`HUMAN-READING.md`
+  - 依赖：—；被引用：—
+- [通过统一 Pack Contract 加载 Knowledge、Research、Writing 与非知识 pilot；Pack 不获得通用 authority](../../../data/architecture/interactive-system-map-layout.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-66141003f0ae9710 / 通过统一 Pack Contract 加载 Knowledge、Research、Writing 与非知识 pilot；Pack 不获得通用 authority
+  - 来源：`data/architecture/interactive-system-map-layout.json`
+  - 依赖：—；被引用：—
+- [造成“看起来合理”的假因果。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6f2d271242dee8d5 / 造成“看起来合理”的假因果。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [遗漏候选：材料中「努力羞耻/紧绷美学」（M8 已列）、「非标准化抗 AI 替代」（E4 外部层，非材料内机制原语）无新增遗漏机制。六候选 + D595/D583 边界 + 两案例已穷尽本材料可机制化内容。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-47356d5cf5a81843 / 遗漏候选：材料中「努力羞耻/紧绷美学」（M8 已列）、「非标准化抗 AI 替代」（E4 外部层，非材料内机制原语）无新增遗漏机制。六候选 + D595/D583 边界 + 两案例已穷尽本材料可机制化内容。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：D583, D595；被引用：—
+- [避风港机制**：教室成为逃离会议/材料/赛课的形式主义空间，具体师生联结消解内耗。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-38388ba98edf2b16 / 避风港机制**：教室成为逃离会议/材料/赛课的形式主义空间，具体师生联结消解内耗。
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [部分子团队为维持显著结果数量，重复微小变体实验而非探索新机制；](../../../inputs/collisions/20260708-cross-domain-smoke-test/science.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-23797906febd2130 / 部分子团队为维持显著结果数量，重复微小变体实验而非探索新机制；
+  - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/science.md`
+  - 依赖：—；被引用：—
+- [配额导致的「进 candidates 暂缓」「不抢名额」等表述一律废止；原 collision 产物中的「≤5 数量约束核对」字样视为历史残留，不再作为合规门槛。](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7936e28da01da3ca / 配额导致的「进 candidates 暂缓」「不抢名额」等表述一律废止；原 collision 产物中的「≤5 数量约束核对」字样视为历史残留，不再作为合规门槛。
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [量化指标替代真实价值（D597，基底机制）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9475b69bccd85a4d / 量化指标替代真实价值（D597，基底机制）
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D597；被引用：—
+- [量化指标替代真实价值：**命中 D597**（p 值数量成为显式入口→机制解释/复现被挤出）](../../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-c988d578845d4710 / 量化指标替代真实价值：**命中 D597**（p 值数量成为显式入口→机制解释/复现被挤出）
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
+  - 依赖：D597；被引用：—
+- [量化指标消解课堂温度**：部分地区引入AI课堂分析系统，自动统计教师讲授时长、学生发言时长、自主学习占比等数据，将课堂里不可预测的即时生成全部拆解为冰冷的量化指标。](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-06dd191281b8e5f8 / 量化指标消解课堂温度**：部分地区引入AI课堂分析系统，自动统计教师讲授时长、学生发言时长、自主学习占比等数据，将课堂里不可预测的即时生成全部拆解为冰冷的量化指标。
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [金帐汗国的衰落，内部的共享机制失效了。黑死病来了，内乱了，周边的元朝和伊利汗国解体了。权力下放本是延续政权的唯一途径，但当别克们各自为政时，汗的权威就成了空壳。](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d3a1033644c919ad / 金帐汗国的衰落，内部的共享机制失效了。黑死病来了，内乱了，周边的元朝和伊利汗国解体了。权力下放本是延续政权的唯一途径，但当别克们各自为政时，汗的权威就成了空壳。
+  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
+  - 依赖：—；被引用：—
+- [金朝崛起为什么这么快：从凝聚力叙事到跨尺度机制候选](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5dc35b598a36c6c2 / 金朝崛起为什么这么快：从凝聚力叙事到跨尺度机制候选
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [金融危机的具体因果判定：**pending**（需要计量检验和反事实推断）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a8e9eac390d30c39 / 金融危机的具体因果判定：**pending**（需要计量检验和反事实推断）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [钱荒本质是退出权空间压缩和门控面单一化导致的系统锁定](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fef0e84878a2c1fc / 钱荒本质是退出权空间压缩和门控面单一化导致的系统锁定
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [阅读书籍** —— 把你正在读的书的机制读出来](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-cb7b67490188de1d / 阅读书籍** —— 把你正在读的书的机制读出来
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
 - [防掠夺机制的有效性待实证](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-743bb570f64eca86 / 防掠夺机制的有效性待实证

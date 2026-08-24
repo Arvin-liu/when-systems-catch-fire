@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [C\(x,y\) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4b56d62dbcd5709a / C\(x,y\) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [C-0701｜AI诞生自主意识完整路径](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-65a945149ea577df / C-0701｜AI诞生自主意识完整路径
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
 - [C-0799｜生命起源与自组织](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-9ee4682411cbe0f5 / C-0799｜生命起源与自组织
@@ -179,6 +189,11 @@
   - 可搜索名称：NFC-822beed8e03ba9f6 / Claim ceiling: repository-local declared-environment replay evidence for the named bounded checks only; no whole-project
   - 来源：`reports/operations/ignition-134-step09-sympy-environment-contract.md`
   - 依赖：—；被引用：—
+- [Claim ceiling: repository-local obligation/lifecycle bookkeeping only; no live](../../../reports/operations/ignition-138-step11-obligation-semantics.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-26552b979bc436e8 / Claim ceiling: repository-local obligation/lifecycle bookkeeping only; no live
+  - 来源：`reports/operations/ignition-138-step11-obligation-semantics.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling：** 仅证明两个已指明窄修复在其精确接受头通过独立实例级验收并进入 PR #130 来源分支；不证明 R5-A 整体完成、生命完整性、人体安全、疗效或普遍语义能力。](../../../docs/generated/recent-stage-results.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-549238981acf8748 / Claim ceiling：** 仅证明两个已指明窄修复在其精确接受头通过独立实例级验收并进入 PR #130 来源分支；不证明 R5-A 整体完成、生命完整性、人体安全、疗效或普遍语义能力。
@@ -278,6 +293,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f2bbbe390f0f7eda / contains knowledge-specific objects, evidence, formal semantics or their existing governance
   - 来源：`data/architecture/agentization-boundary-r0.json`
+  - 依赖：—；被引用：—
+- [content policy and `CLEANED` status are all proved. The adapter also records](../../../reports/operations/ignition-138-step04-codex-adapter-r3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ff55cd1d82e16b20 / content policy and `CLEANED` status are all proved. The adapter also records
+  - 来源：`reports/operations/ignition-138-step04-codex-adapter-r3.md`
   - 依赖：—；被引用：—
 - [Continue to Step 001. The gap is real, but the claim ceiling is narrow: ARN is a representation candidate, not ontology,](../../../reports/architecture/121Q23-relational-network-gap-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -401,7 +421,7 @@
   - 依赖：—；被引用：—
 - [CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.13.0", "hidden_components": 12, "historical_map_version"](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fbc2c31df3995c30 / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.13.0", "hidden_components": 12, "historical_map_version"
+  - 可搜索名称：NFC-0590cee2023b9bba / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.13.0", "hidden_components": 12, "historical_map_version"
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [D-meta 元同构函数](../../../docs/phi_meta_law.md)
@@ -2124,6 +2144,11 @@
   - 可搜索名称：NFC-26e95f29ada730bd / F_退出权验证 **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
+- [federation dispatch, residual and Current-state gates, release/lifecycle](../../../reports/operations/ignition-138-step13-targeted-regression.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-744440975fd78bda / federation dispatch, residual and Current-state gates, release/lifecycle
+  - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
+  - 依赖：—；被引用：—
 - [final formal main is known, the next Durability/Lifecycle task must be](../../../reports/operations/ignition-126-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-420f0c46fd22ff6d / final formal main is known, the next Durability/Lifecycle task must be
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-42a4a665286386ed / Gate 回答某个转换或公开动作是否被允许。它包括来源/隐私、atomicity/definition/scope、type/proof/circularity/isomorphism、counterexample/replication/
   - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [Generated decoder head parameters are per-feature artifacts; no lifecycle management](../../../data/external-research/121-fulltext-resolver/121q1/acceptance/S120-012.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-89e468a83ae44630 / Generated decoder head parameters are per-feature artifacts; no lifecycle management
-  - 来源：`data/external-research/121-fulltext-resolver/121q1/acceptance/S120-012.json`
-  - 依赖：—；被引用：—
-- [Generated weights can be seen as per-client artifacts; no versioning or artifact lifecycle management](../../../data/external-research/121-fulltext-resolver/121q1/acceptance/S120-011.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-40637586da755548 / Generated weights can be seen as per-client artifacts; no versioning or artifact lifecycle management
-  - 来源：`data/external-research/121-fulltext-resolver/121q1/acceptance/S120-011.json`
-  - 依赖：—；被引用：—
-- [Get 笔记可作为只读来源与同步渠道，不是数学推理、逻辑审定、函数改写或架构决策工具。其输出默认是候选材料，必须经过来源、类型、论证、证据和状态审查。](../../../docs/AGENT-GUIDE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9da4dbaaee0fd814 / Get 笔记可作为只读来源与同步渠道，不是数学推理、逻辑审定、函数改写或架构决策工具。其输出默认是候选材料，必须经过来源、类型、论证、证据和状态审查。
-  - 来源：`docs/AGENT-GUIDE.md`
-  - 依赖：—；被引用：—
-- [Git and a package version track source code, but there is no provenance-complete learned-function registry, compatibilit](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e4696fd468f5f92e / Git and a package version track source code, but there is no provenance-complete learned-function registry, compatibilit
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Git commit SHA values and their post-commit CI run IDs are not self-embeddable: adding either to a tracked file creates](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ff76c5d23cd2c688 / Git commit SHA values and their post-commit CI run IDs are not self-embeddable: adding either to a tracked file creates
-  - 来源：`ITERATION.md`
   - 依赖：—；被引用：—

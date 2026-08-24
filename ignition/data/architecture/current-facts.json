@@ -42,8 +42,8 @@
       "source_census_count": 393
     },
     "foundation": {
-      "function_identity_cards": 5788,
-      "function_quarantine_or_pending": 4842,
+      "function_identity_cards": 5841,
+      "function_quarantine_or_pending": 4848,
       "nonfunction_claims": 16831,
       "nonfunction_quarantine_or_pending": 4812
     },
@@ -80,11 +80,11 @@
       "method_version": "1.4.0"
     },
     "knowledge_experience": {
-      "aliases": 875,
-      "cards": 413,
+      "aliases": 877,
+      "cards": 414,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 22862
+      "search_records": 23004
     },
     "packs": {
       "capability_route_count": 10,
@@ -140,7 +140,7 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "596143c031d55402fa000380f763b896e615a53990ddb4df6e105e8cadc66937"
+      "sha256": "8706fa8b891707095c64bd3a5d25e191c86a929423b52650ef5ae21102ef7da7"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
@@ -152,11 +152,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "649621ac94fb272666ff72e316bd8e04407eb016902a81f3388c967b5b9e6025"
+      "sha256": "6c3ec3db3c65e723f7820b6065305130882253b989736c1f38f1c2f8ef5b1a0f"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "fadbb90a946dc363e55b9f6a6bff6b3d52d50de318385510c745ad5ee4adecb7"
+      "sha256": "84082b7c4390f698478888a1bd249a46db9688c8c91a0fa26b3e47b684fbd626"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -196,7 +196,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "636f16ee8bafb2fa7346a7c7ffec4e79df540f8b3233a7b2a6a20e41725654d4"
+      "sha256": "d0b8e590eec3a1f4cd9596cb791ade262dd46603fee5df5e9d3b8379754e2293"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

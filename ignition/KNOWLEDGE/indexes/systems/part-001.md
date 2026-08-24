@@ -1654,6 +1654,11 @@
   - 可搜索名称：NFC-d746274ad8c82435 / authority_changes: \[迭代操作法 1.4.0\]\(./ITERATION.md\)、\[系统图 0.5.0\]\(./data/architecture/interactive-system-map.json\)、\[Charter S
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: the provider-neutral filesystem-domain contract, runtime-scratch lease/cleanup evidence, Codex R3 ada](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-07ce5e98c820e453 / authority_changes: the provider-neutral filesystem-domain contract, runtime-scratch lease/cleanup evidence, Codex R3 ada
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [autonomy, external executor success, universal safety, causality, Owner](../../../reports/architecture/os-control-plane-r2-gap-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a30ceac6a6971e6f / autonomy, external executor success, universal safety, causality, Owner
@@ -1668,6 +1673,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-d59c18b46d8605dd / Bayesian Nonparametric Modeling for Causal Inference
   - 来源：`data/external-research/088-external-source-atlas-v2.jsonl`
+  - 依赖：—；被引用：—
+- [Because Codex did not produce an independently validated structured result,](../../../reports/operations/ignition-138-step11-obligation-semantics.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f031ba614dcfd49b / Because Codex did not produce an independently validated structured result,
+  - 来源：`reports/operations/ignition-138-step11-obligation-semantics.md`
   - 依赖：—；被引用：—
 - [Because diff references are represented as strings, the allowed local reference namespace must be unambiguous: `network_](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1919,6 +1929,11 @@
   - 可搜索名称：NFC-0805a3d8aa88b83e / Causal diagrams for empirical research
   - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
   - 依赖：—；被引用：—
+- [causal evidence only. This step does not establish validated live completion,](../../../reports/operations/ignition-138-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ff37dfc1782f27e7 / causal evidence only. This step does not establish validated live completion,
+  - 来源：`reports/operations/ignition-138-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
 - [Causal Inference for Statistics, Social, and Biomedical Sciences](../../../data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-9f83e9b4b23892a2 / Causal Inference for Statistics, Social, and Biomedical Sciences
@@ -1938,6 +1953,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-438a68c6d211cc99 / Causal inference to scope environmental impact assessment of renewable energy projects
   - 来源：`data/external-research/106-105-correction/106-corrected-source-pack.jsonl`
+  - 依赖：—；被引用：—
+- [Causal ledger](../../../reports/operations/ignition-138-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ff5d8fe5e535b35e / Causal ledger
+  - 来源：`reports/operations/ignition-138-step00-baseline-audit.md`
   - 依赖：—；被引用：—
 - [CAUSAL 必须有结构因果模型、干预语义与识别依据；否则是机制假说。](../../../FOUNDATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2482,25 +2502,5 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M38 / data/external-research/088-external-source-atlas-medium.jsonl / M38 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M39 / data/external-research/088-external-source-atlas-medium.jsonl / M39 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M40 / data/external-research/088-external-source-atlas-medium.jsonl / M40 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M41 / data/external-research/088-external-source-atlas-medium.jsonl / M41 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M42 / data/external-research/088-external-source-atlas-medium.jsonl / M42 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

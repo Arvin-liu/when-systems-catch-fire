@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 退出权空间总函数 is adjudicated as RELATION: P_exit\(Ω\)=f\(Ω,T,C,σ\). This is a model-internal con](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D507 / Within the source-defined scope, 退出权空间总函数 is adjudicated as RELATION: P_exit\(Ω\)=f\(Ω,T,C,σ\). This is a model-internal con
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权空间衰减函数 is adjudicated as STATE_TRANSITION: P_exit_decay\(Ω,t\) = P_exit\(Ω,0\) × e^\(-λ·t](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D510 / Within the source-defined scope, 退出权空间衰减函数 is adjudicated as STATE_TRANSITION: P_exit_decay\(Ω,t\) = P_exit\(Ω,0\) × e^\(-λ·t
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权统一衰减率函数 is adjudicated as STATE_TRANSITION: Γ_Pexit = d_C\(Ω\)/λ + κ_env\(Ω\)·H\(Ω\). This](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D498 / Within the source-defined scope, 退出权统一衰减率函数 is adjudicated as STATE_TRANSITION: Γ_Pexit = d_C\(Ω\)/λ + κ_env\(Ω\)·H\(Ω\). This
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权脆弱性瓶颈函数 is adjudicated as RELATION: P_exit_vulnerable = min\(Ω, T, C, σ\). This is a m](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D491 / Within the source-defined scope, 退出权脆弱性瓶颈函数 is adjudicated as RELATION: P_exit_vulnerable = min\(Ω, T, C, σ\). This is a m
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权自举元函数投影 is adjudicated as RELATION: M_boot = f\(P_exit, σ\(Δv\), d\(ΔK\)/dt\). This is a m](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D490 / Within the source-defined scope, 退出权自举元函数投影 is adjudicated as RELATION: M_boot = f\(P_exit, σ\(Δv\), d\(ΔK\)/dt\). This is a m
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权自举激活专门函数 is adjudicated as RELATION: B_active_Pexit = P_exit × σ\(Δv\) > θ_boot. This](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D504 / Within the source-defined scope, 退出权自举激活专门函数 is adjudicated as RELATION: B_active_Pexit = P_exit × σ\(Δv\) > θ_boot. This
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权自举激活函数 is adjudicated as RELATION: B_active = P_exit × σ\(Δv\) > θ_boot. This is a mod](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D484 / Within the source-defined scope, 退出权自举激活函数 is adjudicated as RELATION: B_active = P_exit × σ\(Δv\) > θ_boot. This is a mod
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权边界相变函数 is adjudicated as STATE_TRANSITION: P_exit_boundary_phase = f\(δ,1/ln,exp\[-ln²](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D497 / Within the source-defined scope, 退出权边界相变函数 is adjudicated as STATE_TRANSITION: P_exit_boundary_phase = f\(δ,1/ln,exp\[-ln²
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权阻抗函数 is adjudicated as RELATION: z_Pexit = 1/\(1 - P_exit\). This is a model-internal](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D502 / Within the source-defined scope, 退出权阻抗函数 is adjudicated as RELATION: z_Pexit = 1/\(1 - P_exit\). This is a model-internal
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退化加速函数 is adjudicated as STATE_TRANSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-inte](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D122 / Within the source-defined scope, 退化加速函数 is adjudicated as STATE_TRANSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-inte
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退化渗透临界触发 is adjudicated as STATE_TRANSITION: 窗口与临界函数，窗口与临界案例验证。. This is a model-intern](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D41 / Within the source-defined scope, 退化渗透临界触发 is adjudicated as STATE_TRANSITION: 窗口与临界函数，窗口与临界案例验证。. This is a model-intern
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 退化渗透临界触发函数 is adjudicated as STATE_TRANSITION: 窗口与临界函数，窗口与临界案例验证。. This is a model-inte](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D48 / Within the source-defined scope, 退化渗透临界触发函数 is adjudicated as STATE_TRANSITION: 窗口与临界函数，窗口与临界案例验证。. This is a model-inte
@@ -2448,59 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-5d4926d87a5b9ade / \| P_meta \| 主机制已入表；暴露候选函数 NF-X3 指标驱动噪声累积 \|
   - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
-  - 依赖：—；被引用：—
-- [\| PEND-001 \| 数学 \| 黎曼猜想 \| L2 / L3 / pending \| 点火框架证明了黎曼猜想 \| 点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明 \| 保持 pending，除非有外部数学证明 \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f2905d2a350b0e8c / \| PEND-001 \| 数学 \| 黎曼猜想 \| L2 / L3 / pending \| 点火框架证明了黎曼猜想 \| 点火框架可对黎曼猜想进行结构性重写，但不能替代数学证明 \| 保持 pending，除非有外部数学证明 \|
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| PEND-002 \| 数学 \| P vs NP \| L2 / L3 / pending \| 点火框架解决了 P vs NP \| 点火框架可分析该问题的结构张力，但不能给出复杂性理论证明 \| 保持 pending \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-94f7a181d1ab75b0 / \| PEND-002 \| 数学 \| P vs NP \| L2 / L3 / pending \| 点火框架解决了 P vs NP \| 点火框架可分析该问题的结构张力，但不能给出复杂性理论证明 \| 保持 pending \|
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| PEND-006 \| 物理学 \| 暗物质 / 暗能量本质 \| L2 / L3 / pending \| 点火框架解释了暗物质 / 暗能量的本质 \| 点火框架只能把该问题列为结构性未知 \| 保持 pending \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8fa9b6d5c6915f94 / \| PEND-006 \| 物理学 \| 暗物质 / 暗能量本质 \| L2 / L3 / pending \| 点火框架解释了暗物质 / 暗能量的本质 \| 点火框架只能把该问题列为结构性未知 \| 保持 pending \|
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| PEND-011 \| 经济学 \| 经济增长从何而来 \| L2 / L3 / pending \| 点火框架证明了经济增长机制 \| 点火框架可提供结构性解释，不提供经济学实证定论 \| 保持 pending \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a9ab0645b2a28811 / \| PEND-011 \| 经济学 \| 经济增长从何而来 \| L2 / L3 / pending \| 点火框架证明了经济增长机制 \| 点火框架可提供结构性解释，不提供经济学实证定论 \| 保持 pending \|
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| PEND-014 \| 社会科学 \| 社会信任如何形成 \| L2 / L3 / pending \| 点火框架证明了社会信任的形成机制 \| 点火框架可提出结构假设，需社会科学实证验证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8408d7988b0b455e / \| PEND-014 \| 社会科学 \| 社会信任如何形成 \| L2 / L3 / pending \| 点火框架证明了社会信任的形成机制 \| 点火框架可提出结构假设，需社会科学实证验证 \| 保持 pending \|
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| PEND-017 \| 教育学 \| 为什么教育会加剧或缓解不平等 \| L2 / L3 / pending \| 点火框架证明教育导致不平等 \| 点火框架可分析教育结构张力，不能给出现实政策结论 \| 保持 pending \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a6cbff88b44761c6 / \| PEND-017 \| 教育学 \| 为什么教育会加剧或缓解不平等 \| L2 / L3 / pending \| 点火框架证明教育导致不平等 \| 点火框架可分析教育结构张力，不能给出现实政策结论 \| 保持 pending \|
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| PEND-019 \| 心理学 / 行为 \| 动机如何形成 \| L2 / L3 / pending \| 点火框架证明动机形成机制 \| 点火框架可提供结构解释，不替代心理学实证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6a7ec996cc66a51a / \| PEND-019 \| 心理学 / 行为 \| 动机如何形成 \| L2 / L3 / pending \| 点火框架证明动机形成机制 \| 点火框架可提供结构解释，不替代心理学实证 \| 保持 pending \|
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| PEND-021 \| 法律 / 制度 \| 制度为何会锁定 \| L2 / L3 / pending \| 点火框架证明某制度应如何改革 \| 点火框架可分析锁定结构，不给法律或政策建议 \| 保持 pending \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-aed5ca38418e6797 / \| PEND-021 \| 法律 / 制度 \| 制度为何会锁定 \| L2 / L3 / pending \| 点火框架证明某制度应如何改革 \| 点火框架可分析锁定结构，不给法律或政策建议 \| 保持 pending \|
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| PEND-022 \| AI / 计算机科学 \| AI 泛化能力从何而来 \| L2 / L3 / pending \| 点火框架证明了 AI 泛化来源 \| 点火框架可分析泛化结构，需实验和理论验证 \| 保持 pending \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-73961a964e219bcd / \| PEND-022 \| AI / 计算机科学 \| AI 泛化能力从何而来 \| L2 / L3 / pending \| 点火框架证明了 AI 泛化来源 \| 点火框架可分析泛化结构，需实验和理论验证 \| 保持 pending \|
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| PEND-023 \| AI / 计算机科学 \| 大模型涌现是否真实 \| L2 / L3 / pending \| 点火框架证明大模型涌现真实 / 不真实 \| 点火框架可分析涌现争议的结构，不能替代评测和实验 \| 保持 pending \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b8f885c72c6d7bd7 / \| PEND-023 \| AI / 计算机科学 \| 大模型涌现是否真实 \| L2 / L3 / pending \| 点火框架证明大模型涌现真实 / 不真实 \| 点火框架可分析涌现争议的结构，不能替代评测和实验 \| 保持 pending \|
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| PEND-025 \| 文学 \| 文学作品为什么能跨时代有效 \| L2 / L3 / pending \| 点火框架证明文学跨时代有效的本质 \| 点火框架可提供解释路径，不替代文学史和接受史研究 \| 保持 pending \|](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3407c2e3d73f0046 / \| PEND-025 \| 文学 \| 文学作品为什么能跨时代有效 \| L2 / L3 / pending \| 点火框架证明文学跨时代有效的本质 \| 点火框架可提供解释路径，不替代文学史和接受史研究 \| 保持 pending \|
-  - 来源：`docs/pending_claims_register.md`
   - 依赖：—；被引用：—

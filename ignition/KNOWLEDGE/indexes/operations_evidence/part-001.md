@@ -1074,6 +1074,16 @@
   - 可搜索名称：IMPLICIT-B6DE8536D7564D7F / # IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure / IMPLICIT-B6DE8536D7564D7F
   - 来源：`reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md`
   - 依赖：—；被引用：—
+- [# IGNITION-20260824-138 — Step 09 Second-Invocation Gate](../../../reports/operations/ignition-138-step09-second-gate.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CC312F585CB9671F / # IGNITION-20260824-138 — Step 09 Second-Invocation Gate / IMPLICIT-CC312F585CB9671F
+  - 来源：`reports/operations/ignition-138-step09-second-gate.md`
+  - 依赖：—；被引用：—
+- [# IGNITION-20260824-138 — Step 10 Independent OS Validation Gate](../../../reports/operations/ignition-138-step10-independent-validation-gate.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1A64B09FA32139E0 / # IGNITION-20260824-138 — Step 10 Independent OS Validation Gate / IMPLICIT-1A64B09FA32139E0
+  - 来源：`reports/operations/ignition-138-step10-independent-validation-gate.md`
+  - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-ED434DF2C7C50934 / # IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report / IMPLICIT-ED434DF2C7C50934
@@ -1267,6 +1277,11 @@
 - [## 2026-08-22 — IGNITION-20260822-133-ITERATION-BOUNDARY-SEMANTICS-R1 — terminal Current release candidate](../../../STATE-CHANGELOG.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C819A9A2993530C3 / ## 2026-08-22 — IGNITION-20260822-133-ITERATION-BOUNDARY-SEMANTICS-R1 — terminal Current release candidate / IMPLICIT-C819A9A2993530C3
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [## 2026-08-24 — IGNITION-20260824-138 — executor runtime scratch separation continuation](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-76B35CFE0976AB03 / ## 2026-08-24 — IGNITION-20260824-138 — executor runtime scratch separation continuation / IMPLICIT-76B35CFE0976AB03
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [## 3. Function Paradigm Cards](../../../reports/external-research/120-function-paradigm-atlas-report.md)
@@ -1494,6 +1509,11 @@
   - 可搜索名称：IMPLICIT-D46EE4C7E7E779DD / ## Model: qclaw/pool-glm-5.2-night \| Thinking: high / IMPLICIT-D46EE4C7E7E779DD
   - 来源：`reports/external-research/121b-fulltext-batch-report.md`
   - 依赖：—；被引用：—
+- [## Next gate](../../../reports/operations/ignition-138-step12-current-state-sync.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-94E646EC25ADB449 / ## Next gate / IMPLICIT-94E646EC25ADB449
+  - 来源：`reports/operations/ignition-138-step12-current-state-sync.md`
+  - 依赖：—；被引用：—
 - [## nfc-a6b80fca608c8c8f — This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git](../../../analysis/corpus-relation/cluster_source_briefs/C004.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D866534FD9EB7C11 / ## nfc-a6b80fca608c8c8f — This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git / IMPLICIT-D866534FD9EB7C11
@@ -1583,6 +1603,16 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-291E51BFC30A8E19 / ## STATUS: COMPLETE — FORCED STOP per Step 017 / IMPLICIT-291E51BFC30A8E19
   - 来源：`reports/external-research/121Q2R-final-report.md`
+  - 依赖：—；被引用：—
+- [## Task 138 executor runtime scratch separation continuation](../../../docs/project-current-state.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-53AD552C10F09492 / ## Task 138 executor runtime scratch separation continuation / IMPLICIT-53AD552C10F09492
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [## Task 138 runtime scratch separation continuation](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-806232FC674095FA / ## Task 138 runtime scratch separation continuation / IMPLICIT-806232FC674095FA
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
 - [## Temporal Model Rule](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2473,34 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AF872765D8DB5407 / ### \[MF-0002｜反向自举通道\]\(docs/zh/functions/meta/items/MF-0002.md\) / IMPLICIT-AF872765D8DB5407
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[MF-0003｜正反互斥判定器\]\(docs/zh/functions/meta/items/MF-0003.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-92AAE8F51554B002 / ### \[MF-0003｜正反互斥判定器\]\(docs/zh/functions/meta/items/MF-0003.md\) / IMPLICIT-92AAE8F51554B002
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[MF-0004｜自举嵌套判定器\]\(docs/zh/functions/meta/items/MF-0004.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F473C6BB0406028E / ### \[MF-0004｜自举嵌套判定器\]\(docs/zh/functions/meta/items/MF-0004.md\) / IMPLICIT-F473C6BB0406028E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[MF-0005｜自举收敛判定器\]\(docs/zh/functions/meta/items/MF-0005.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7A41B32FCC34FCFA / ### \[MF-0005｜自举收敛判定器\]\(docs/zh/functions/meta/items/MF-0005.md\) / IMPLICIT-7A41B32FCC34FCFA
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### BC-20260709-009 《影响力》](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-09E18F45D120C04D / ### BC-20260709-009 《影响力》 / IMPLICIT-09E18F45D120C04D / IMPLICIT-F7AC5BBB30C9232B
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [### D. 执行：Function OS 能做什么](../../../data/operations/iterations/112/publication/r0-original/03-%E7%A0%94%E7%A9%B6%E9%97%AE%E9%A2%98%E8%B0%B1%E7%B3%BB.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7DA9656059AA2661 / ### D. 执行：Function OS 能做什么 / IMPLICIT-7DA9656059AA2661
-  - 来源：`data/operations/iterations/112/publication/r0-original/03-研究问题谱系.md`
-  - 依赖：—；被引用：—
-- [### FORCED STOP — Awaiting GPT Verification](../../../reports/external-research/121Q3-night-final-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-409452B95E2E4B58 / ### FORCED STOP — Awaiting GPT Verification / IMPLICIT-409452B95E2E4B58
-  - 来源：`reports/external-research/121Q3-night-final-report.md`
   - 依赖：—；被引用：—

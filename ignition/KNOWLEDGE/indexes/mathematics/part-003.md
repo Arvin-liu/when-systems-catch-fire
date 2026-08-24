@@ -1979,6 +1979,11 @@
   - 可搜索名称：NFC-1df545b2a2b9264c / `universal_quantifier_gate`：全称、必然、唯一、完全和不可能具有对应证明义务。
   - 来源：`docs/foundation/claim-governance-and-function-identity.md`
   - 依赖：—；被引用：—
+- [`validate_current_release_lifecycle.py --check` passed. The release-candidate](../../../reports/operations/ignition-138-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-de80c95d7c4eecd1 / `validate_current_release_lifecycle.py --check` passed. The release-candidate
+  - 来源：`reports/operations/ignition-138-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
 - [`validate_data.py`：ALL_P1_DATA_VALID（data 数据集未变动）](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d091b527bf922429 / `validate_data.py`：ALL_P1_DATA_VALID（data 数据集未变动）
@@ -2394,6 +2399,11 @@
   - 可搜索名称：NFC-0cf6cb3970c142cf / At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
   - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—
+- [attempt-specific scratch lifecycle.](../../../reports/operations/ignition-138-step02-filesystem-reproduction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f2c7030a5cd50e13 / attempt-specific scratch lifecycle.
+  - 来源：`reports/operations/ignition-138-step02-filesystem-reproduction.md`
+  - 依赖：—；被引用：—
 - [authority_changes: \[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[函数资产\]\(./docs/human/funct](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-619066387ab384c0 / authority_changes: \[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[函数资产\]\(./docs/human/funct
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-20c72c8713cee2b1 / C\(x,y\) 因果结构判定 → 数学证明链（假设→定理→推论）
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [C\(x,y\) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4b56d62dbcd5709a / C\(x,y\) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [C-0701｜AI诞生自主意识完整路径](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-65a945149ea577df / C-0701｜AI诞生自主意识完整路径
-  - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—

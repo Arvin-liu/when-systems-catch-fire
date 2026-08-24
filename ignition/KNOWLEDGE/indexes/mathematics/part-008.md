@@ -4,6 +4,61 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "信息论完备性定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a2c4303325e1aa12 / title: "信息论完备性定理"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "信息门效率统一函数 / information-gate efficiency unification函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B471C812B4556D2E / title: "信息门效率统一函数 / information-gate efficiency unification函数" / IMPLICIT-B471C812B4556D2E
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "信息门效率统一函数 / information-gate efficiency unification函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cb5a07365ed4b5e5 / title: "信息门效率统一函数 / information-gate efficiency unification函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "倒U型统一生成定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-764ec8d94de0aa59 / title: "倒U型统一生成定理"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "偏好-愉悦共同势函数验证"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1F7D365C26B98346 / title: "偏好-愉悦共同势函数验证" / IMPLICIT-1F7D365C26B98346
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "偏好-愉悦共同势函数验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7ab228626f818e23 / title: "偏好-愉悦共同势函数验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "偏差敏感度阈值函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6C873D048D8B56BB / title: "偏差敏感度阈值函数" / IMPLICIT-6C873D048D8B56BB / IMPLICIT-6E624C84338B9B41
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "储能函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C61ACC37C3F5D83F / title: "储能函数" / IMPLICIT-C61ACC37C3F5D83F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "储能函数，储能双类型"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AEDFBB859FAE8791 / title: "储能函数，储能双类型" / IMPLICIT-AEDFBB859FAE8791
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "僵尸态传染免疫函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CF49CDE57F92A876 / title: "僵尸态传染免疫函数" / IMPLICIT-CF49CDE57F92A876
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "僵尸态传染函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BD5E8E9E1CA70617 / title: "僵尸态传染函数" / IMPLICIT-BD5E8E9E1CA70617
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "僵尸态函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7C97C331CEF68AEE / title: "僵尸态函数" / IMPLICIT-7C97C331CEF68AEE
@@ -2448,59 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7c8af339970ae599 / Validation and lifecycle boundary
   - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
-  - 依赖：—；被引用：—
-- [Validation is only empirical: synthesized program is checked against I/O pairs. No formal verification. No proof that pr](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-220c9b9e1102f6a3 / Validation is only empirical: synthesized program is checked against I/O pairs. No formal verification. No proof that pr
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-017.json`
-  - 依赖：—；被引用：—
-- [Validation passed: task lineage, lifecycle, current-facts determinism, Current Snapshot determinism, Current State sync,](../../../reports/operations/ignition-132-step09-canonical-current-migration.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28b4d728759ca738 / Validation passed: task lineage, lifecycle, current-facts determinism, Current Snapshot determinism, Current State sync,
-  - 来源：`reports/operations/ignition-132-step09-canonical-current-migration.md`
-  - 依赖：—；被引用：—
-- [Validation summary](../../ASSET-CARDS.md#asset-hr-4a7f6b204cdcb0ee)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Validation summary / validation-summary-20260712
-  - 来源：`reports/foundation-architecture/validation-summary-20260712.md`
-  - 依赖：—；被引用：—
-- [Validator output never equals formal approval.](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-63a76d5bc526bac1 / Validator output never equals formal approval.
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [Validity And Evidence Axes](../../../docs/math-foundation/03-validity-and-evidence-axes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f8f01acca013d603 / Validity And Evidence Axes
-  - 来源：`docs/math-foundation/03-validity-and-evidence-axes.md`
-  - 依赖：—；被引用：—
-- [VCs, SMT queries and unfold chains are available internally but no durable proof/result receipt is defined.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fd187c312160af76 / VCs, SMT queries and unfold chains are available internally but no durable proof/result receipt is defined.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [VCs, unfoldings and proof code are observable, while calibrated uncertainty, checkable result receipts and lifecycle hea](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-fcfca7ed4c9e3031 / VCs, unfoldings and proof code are observable, while calibrated uncertainty, checkable result receipts and lifecycle hea
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Verified Haskell modules and proof programs are executable artifacts, though certificate and immutable packaging are inc](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-cc5d22bbee5cfde6 / Verified Haskell modules and proof programs are executable artifacts, though certificate and immutable packaging are inc
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Violates equivalence axis - weight similarity is at most DISTRIBUTIONAL_APPROXIMATION, never FORMAL_SEMANTIC_EQUIVALENCE](../../../data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-caa18764adf72389 / Violates equivalence axis - weight similarity is at most DISTRIBUTIONAL_APPROXIMATION, never FORMAL_SEMANTIC_EQUIVALENCE
-  - 来源：`data/external-research/120-function-paradigm-atlas/120-forbidden-wording.jsonl`
-  - 依赖：—；被引用：—
-- [V（4）× S（4）× E（4）= **64** 组合。每个组合是生成空间中的一个理论形态候选，编号规范 `V{n}-S{n}-E{n}`（如 `V1-S1-E2`）。64 组合是**组合空间**，不是新增函数，也不进入 Function](../../../docs/protocols/protocol-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0c33999336fdd578 / V（4）× S（4）× E（4）= **64** 组合。每个组合是生成空间中的一个理论形态候选，编号规范 `V{n}-S{n}-E{n}`（如 `V1-S1-E2`）。64 组合是**组合空间**，不是新增函数，也不进入 Function
-  - 来源：`docs/protocols/protocol-architecture.md`
-  - 依赖：—；被引用：—
-- [W\(S\)=∫_S H² dA, min_{S:亏格g} W\(S\)=2π² \(g=1\)，环面达到Willmore能量极小点。变分法验证通过：J⁺=0.8, J⁻=0.2, C_unified=1。 **扩展注释 / Extended Anno](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d27ff4cb82a56577 / W\(S\)=∫_S H² dA, min_{S:亏格g} W\(S\)=2π² \(g=1\)，环面达到Willmore能量极小点。变分法验证通过：J⁺=0.8, J⁻=0.2, C_unified=1。 **扩展注释 / Extended Anno
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—

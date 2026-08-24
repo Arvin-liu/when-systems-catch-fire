@@ -6,6 +6,26 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M39 / data/external-research/088-external-source-atlas-medium.jsonl / M39 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M40 / data/external-research/088-external-source-atlas-medium.jsonl / M40 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M41 / data/external-research/088-external-source-atlas-medium.jsonl / M41 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M42 / data/external-research/088-external-source-atlas-medium.jsonl / M42 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M43 / data/external-research/088-external-source-atlas-medium.jsonl / M43 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -74,10 +94,30 @@
   - 可搜索名称：NFC-c11a9a7515833ba1 / Decision question: Which architecture surfaces constrain evidence, execution, validation, and publication?
   - 来源：`reports/atlas/maps/map-epistemic-architecture.md`
   - 依赖：—；被引用：—
+- [def _filesystem_domains\(](../../../agent_federation/live_adapters.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-36AD9A3398480546 / def _filesystem_domains\( / IMPLICIT-36AD9A3398480546
+  - 来源：`agent_federation/live_adapters.py`
+  - 依赖：—；被引用：—
 - [def add_warning\(self, field: str, issue: str, current_value: Any = None,](../../../function-os-candidate/v0.1/function_os/n5_compile_feedback.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-57D74FF607459935 / def add_warning\(self, field: str, issue: str, current_value: Any = None, / IMPLICIT-57D74FF607459935
   - 来源：`function-os-candidate/v0.1/function_os/n5_compile_feedback.py`
+  - 依赖：—；被引用：—
+- [def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutionFilesystemDomains":](../../../agent_federation/live_filesystem.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-779445CF40863103 / def from_dict\(cls, data: Mapping\[str, Any\]\) -> "ExecutionFilesystemDomains": / IMPLICIT-779445CF40863103
+  - 来源：`agent_federation/live_filesystem.py`
+  - 依赖：—；被引用：—
+- [def probe\(**kwargs: Any\) -> FilesystemProbeObservation:](../../../agent_federation/live_filesystem_harness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E87C44ECBC08DA63 / def probe\(**kwargs: Any\) -> FilesystemProbeObservation: / IMPLICIT-E87C44ECBC08DA63
+  - 来源：`agent_federation/live_filesystem_harness.py`
+  - 依赖：—；被引用：—
+- [def run_reproduction_matrix\(\) -> tuple\[FilesystemProbeObservation, ...\]:](../../../agent_federation/live_filesystem_harness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-8AE4DA258979A9CA / def run_reproduction_matrix\(\) -> tuple\[FilesystemProbeObservation, ...\]: / IMPLICIT-8AE4DA258979A9CA
+  - 来源：`agent_federation/live_filesystem_harness.py`
   - 依赖：—；被引用：—
 - [def test_evidence_self_reference_warning\(self\):](../../../function-os-candidate/v0.2/tests/test_n7_robust.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -109,6 +149,11 @@
   - 可搜索名称：IMPLICIT-FAE91030CAE07F24 / def test_trace_spec_inconsistency_warning\(self\): / IMPLICIT-FAE91030CAE07F24
   - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
   - 依赖：—；被引用：—
+- [def validate_paths\(self\) -> "ExecutionFilesystemDomains":](../../../agent_federation/live_filesystem.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D6A0A06072E61326 / def validate_paths\(self\) -> "ExecutionFilesystemDomains": / IMPLICIT-D6A0A06072E61326
+  - 来源：`agent_federation/live_filesystem.py`
+  - 依赖：—；被引用：—
 - [def warn\(msg\):](../../../data/external-research/121A-night-recovery/121A-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-D2F446133AFDEA63 / def warn\(msg\): / IMPLICIT-D2F446133AFDEA63
@@ -122,6 +167,11 @@
 - [delta: aligned the current Human/AI, Architecture, Federation, Results and system-map maintenance surfaces to `CURRENT_S](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6dcdd1209b9052c9 / delta: aligned the current Human/AI, Architecture, Federation, Results and system-map maintenance surfaces to `CURRENT_S
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [delta: Task138 separates the disposable read-only task workspace, attempt-specific writable executor runtime scratch and](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d99f20098f608221 / delta: Task138 separates the disposable read-only task workspace, attempt-specific writable executor runtime scratch and
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [delta: 从知识治理系统抽出领域无关 Generic Kernel 与 Agent Runtime R0，建立 `Observe → Frame → Plan → Authorize → Act → Validate → Remembe](../../../STATE-CHANGELOG.md)
@@ -859,6 +909,16 @@
   - 可搜索名称：NFC-b0d5673065c6034c / Identifying instrumental variables for causal inference
   - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
   - 依赖：—；被引用：—
+- [if directory and not resolved.is_dir\(\):](../../../agent_federation/live_filesystem.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-81c442440aab2189 / if directory and not resolved.is_dir\(\):
+  - 来源：`agent_federation/live_filesystem.py`
+  - 依赖：—；被引用：—
+- [if not directory and not resolved.exists\(\):](../../../agent_federation/live_filesystem.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4480d6b655c87a22 / if not directory and not resolved.exists\(\):
+  - 来源：`agent_federation/live_filesystem.py`
+  - 依赖：—；被引用：—
 - [if r.get\("category"\) == "harness_error":](../../../function-os-candidate/v0.2/benchmark/run.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B710F8264CB9F305 / if r.get\("category"\) == "harness_error": / IMPLICIT-B710F8264CB9F305
@@ -948,6 +1008,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b4e4be65a0b4c623 / Investigating the reproducibility of the social and behavioural sciences
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [invocation was forbidden because a compliant read-only auth-source route could not](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a6ced1cb7a5b5ce9 / invocation was forbidden because a compliant read-only auth-source route could not
+  - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
 - [It is not a FUNCTION or PARTIAL_FUNCTION because the displayed multiplicative score does not declare a set-theoretic dom](../../../reports/foundation-architecture/D598-final-adjudication-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2438,69 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-794046119666f476 / OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带
   - 来源：`data/architecture/interactive-system-map.json`
-  - 依赖：—；被引用：—
-- [Operation/continuation chains expose a conceptual execution structure, but no durable trace schema, log, causal receipt](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-21eac89e219c2a7d / Operation/continuation chains expose a conceptual execution structure, but no durable trace schema, log, causal receipt
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Operator learning is supervised approximation of a map between separable Banach function spaces using finite input-outpu](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-53498fd6ee7edf2c / Operator learning is supervised approximation of a map between separable Banach function spaces using finite input-outpu
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Operator Learning review full-text assessment: Banach-space specifications, multiple representation and artifact familie](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-b6681cf731203727 / Operator Learning review full-text assessment: Banach-space specifications, multiple representation and artifact familie
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [OrcaRouter智能分流机制验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bc50a3c368b95083 / OrcaRouter智能分流机制验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [organized visibility and interpretation mechanism only; does not prove fabrication or private belief](../../../data/language-thought/transformations.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4a6e9167b1163ee3 / organized visibility and interpretation mechanism only; does not prove fabrication or private belief
-  - 来源：`data/language-thought/transformations.jsonl`
-  - 依赖：—；被引用：—
-- [outputs/audit 与 outputs/collisions 下历史审计/快照文本中的执行位置路径（文档说明类，反映历史执行环境，是否清理待 GPT 决定）。](../../../outputs/audit/d583-portable-source-reference-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-dd011b533af4a5e0 / outputs/audit 与 outputs/collisions 下历史审计/快照文本中的执行位置路径（文档说明类，反映历史执行环境，是否清理待 GPT 决定）。
-  - 来源：`outputs/audit/d583-portable-source-reference-audit-20260711.md`
-  - 依赖：—；被引用：—
-- [P vs NP 问题是计算复杂性理论中的核心问题：P（多项式时间可解）是否等于 NP（多项式时间可验证）？](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-337720b46ff7dab5 / P vs NP 问题是计算复杂性理论中的核心问题：P（多项式时间可解）是否等于 NP（多项式时间可验证）？
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [P2：建立持续维护机制](../../../docs/function_dependency_map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-fe6f253c0e960db6 / P2：建立持续维护机制
-  - 来源：`docs/function_dependency_map.md`
-  - 依赖：P2；被引用：—
-- [P5 causal（53 条）— 需要干预证据、自然实验或机制证据](../../../reports/foundation-architecture/085-backlog-prioritization.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2251d0d137706572 / P5 causal（53 条）— 需要干预证据、自然实验或机制证据
-  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
-  - 依赖：P5；被引用：—
-- [P5: causal \(53 条\)](../../../reports/foundation-architecture/084-max-adjudication-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-41a12fa7dfd43734 / P5: causal \(53 条\)
-  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
-  - 依赖：P5；被引用：—
-- [P_meta** 是 Ψ₀ 六组件之一（元协议投影算子），负责将跨系统同构投影到点火框架元层面，产出 6 个元协议（F_contract / F_symmetry / F_distributed_learning / F_nash / F_](../../../docs/protocols/protocol-architecture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a5f83ffc3b22d06c / P_meta** 是 Ψ₀ 六组件之一（元协议投影算子），负责将跨系统同构投影到点火框架元层面，产出 6 个元协议（F_contract / F_symmetry / F_distributed_learning / F_nash / F_
-  - 来源：`docs/protocols/protocol-architecture.md`
-  - 依赖：—；被引用：—
-- [Pairwise projection hash: `ad73fc5527efa17481dd9178b4fcdc593b7f4ec7d467e320b179ec00f6cb41ea`](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1b1fd9335b0a1d64 / Pairwise projection hash: `ad73fc5527efa17481dd9178b4fcdc593b7f4ec7d467e320b179ec00f6cb41ea`
-  - 来源：`reports/architecture/121Q23C-operational-arn-real-history-validation.md`
-  - 依赖：—；被引用：—
-- [Pairwise projection is derived and lossy.](../../../data/architecture/adaptive-relational-network/real-history/pairwise-hyperrelation-projection.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a7a831e03ff69ddf / Pairwise projection is derived and lossy.
-  - 来源：`data/architecture/adaptive-relational-network/real-history/pairwise-hyperrelation-projection.json`
   - 依赖：—；被引用：—

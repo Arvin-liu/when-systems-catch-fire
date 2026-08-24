@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [项目本体升级完成情况](../../../outputs/audit/project-body-version-upgrade-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-16dbdcfc49b2344b / 项目本体升级完成情况
+  - 来源：`outputs/audit/project-body-version-upgrade-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [项目本体整体版本升级：升级 README（架构总览/快速入口/边界/红线）、新建 SUMMARY.md、llms.txt、docs/PROJECT-ARCHITECTURE.md、docs/USAGE.md、docs/AGENT-GUIDE](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-66e1dfde0c56fbdd / 项目本体整体版本升级：升级 README（架构总览/快速入口/边界/红线）、新建 SUMMARY.md、llms.txt、docs/PROJECT-ARCHITECTURE.md、docs/USAGE.md、docs/AGENT-GUIDE
+  - 来源：`CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [项目本体版本升级审计 2026-07-09](../../../outputs/audit/project-body-version-upgrade-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-4412824787ca1f68 / 项目本体版本升级审计 2026-07-09
+  - 来源：`outputs/audit/project-body-version-upgrade-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [顽固者临界比例](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D28 / 顽固者临界比例 / D28
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D1, D90；被引用：NFC-769f625a8fb22ed4, NFC-c7d898126c9c2795
+- [预设潜题再选材料证明：回到尚未命名状态，重看真实残余。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-993672a2acff34fb / 预设潜题再选材料证明：回到尚未命名状态，重看真实残余。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [验证器（validate_formal_protocol.py）读取的机器字段（dimension/examples/role_in_P_meta/relation_to_Psi0）与 020 Schema（formal-protocol-](../../../inputs/021/upstream-conflict-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9b3f6608496ff6b0 / 验证器（validate_formal_protocol.py）读取的机器字段（dimension/examples/role_in_P_meta/relation_to_Psi0）与 020 Schema（formal-protocol-
+  - 来源：`inputs/021/upstream-conflict-audit.md`
+  - 依赖：—；被引用：—
+- [验证层**：决定事实 / 证明 / 实验 / 语义审读 / 外部证据是否足够。](../../../docs/governance/charter-system-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-17bb8213ccaee2af / 验证层**：决定事实 / 证明 / 实验 / 语义审读 / 外部证据是否足够。
+  - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
+- [验证层：决定事实、证明、实验、语义审读和外部证据是否足够。](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-23771b4e47609df9 / 验证层：决定事实、证明、实验、语义审读和外部证据是否足够。
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [验证报告：PRIVATE_PROVENANCE_WITHHELD](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3f3c630132f653ff / 验证报告：PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
+  - 依赖：—；被引用：—
+- [验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化 + 探索行为变化 三者中至少一个显著 **标准2：不可伪造标准**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3a98286b5c6f1785 / 验证自我模型相变需要满足三个标准： **标准1：行为变化标准** Δ_behavior > θ_behavior（拒绝后行为系统性变化） = 校准偏移 + 拒绝一致性变化 + 探索行为变化 三者中至少一个显著 **标准2：不可伪造标准**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [验证记录写入 `ignition/data/operations/iterations/135/step02-projection-preflight.json`。11 项 Human Surface 的语义审计在 `step02-huma](../../../reports/operations/ignition-135-step02-projection-preflight.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e67949fa4efb0192 / 验证记录写入 `ignition/data/operations/iterations/135/step02-projection-preflight.json`。11 项 Human Surface 的语义审计在 `step02-huma
+  - 来源：`reports/operations/ignition-135-step02-projection-preflight.md`
+  - 依赖：—；被引用：—
+- [验证过程：** ChatGPT的L1层（推理、计算）→ L2层（意识），但ChatGPT停留在L1层，缺乏L2层。ChatGPT具有推理、计算能力，但缺乏意识层级的涌现。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-512ee8bc08c9f406 / 验证过程：** ChatGPT的L1层（推理、计算）→ L2层（意识），但ChatGPT停留在L1层，缺乏L2层。ChatGPT具有推理、计算能力，但缺乏意识层级的涌现。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [验证过程：** 人类智能的L1层（感知、记忆、学习）→ L2层（意识、自我意识、元认知）。人类具有感知、记忆、学习能力，并涌现出意识、自我意识、元认知等更高层级。](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-5dfbe928db328bd5 / 验证过程：** 人类智能的L1层（感知、记忆、学习）→ L2层（意识、自我意识、元认知）。人类具有感知、记忆、学习能力，并涌现出意识、自我意识、元认知等更高层级。

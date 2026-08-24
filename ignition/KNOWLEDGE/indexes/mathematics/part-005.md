@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Generated decoder head parameters are per-feature artifacts; no lifecycle management](../../../data/external-research/121-fulltext-resolver/121q1/acceptance/S120-012.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-89e468a83ae44630 / Generated decoder head parameters are per-feature artifacts; no lifecycle management
+  - 来源：`data/external-research/121-fulltext-resolver/121q1/acceptance/S120-012.json`
+  - 依赖：—；被引用：—
+- [Generated weights can be seen as per-client artifacts; no versioning or artifact lifecycle management](../../../data/external-research/121-fulltext-resolver/121q1/acceptance/S120-011.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-40637586da755548 / Generated weights can be seen as per-client artifacts; no versioning or artifact lifecycle management
+  - 来源：`data/external-research/121-fulltext-resolver/121q1/acceptance/S120-011.json`
+  - 依赖：—；被引用：—
+- [Get 笔记可作为只读来源与同步渠道，不是数学推理、逻辑审定、函数改写或架构决策工具。其输出默认是候选材料，必须经过来源、类型、论证、证据和状态审查。](../../../docs/AGENT-GUIDE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9da4dbaaee0fd814 / Get 笔记可作为只读来源与同步渠道，不是数学推理、逻辑审定、函数改写或架构决策工具。其输出默认是候选材料，必须经过来源、类型、论证、证据和状态审查。
+  - 来源：`docs/AGENT-GUIDE.md`
+  - 依赖：—；被引用：—
+- [Git and a package version track source code, but there is no provenance-complete learned-function registry, compatibilit](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e4696fd468f5f92e / Git and a package version track source code, but there is no provenance-complete learned-function registry, compatibilit
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Git commit SHA values and their post-commit CI run IDs are not self-embeddable: adding either to a tracked file creates](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ff76c5d23cd2c688 / Git commit SHA values and their post-commit CI run IDs are not self-embeddable: adding either to a tracked file creates
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
 - [git diff confirms no modifications to architecture-structure-freeze-v1.json, 已迁移的历史函数来源/, 已迁移的历史案例来源/](../../../data/external-research/104-authoritative-selection-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-807fc56b5c9e4973 / git diff confirms no modifications to architecture-structure-freeze-v1.json, 已迁移的历史函数来源/, 已迁移的历史案例来源/
@@ -2479,28 +2504,3 @@
   - 可搜索名称：NFC-bead307e87cbe335 / If upstream objects D_{T34} exist, compose F_{T34}=N\(⊕_{g∈D_{T34}} g\); otherwise treat F_{T34} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T34；被引用：—
-- [If upstream objects D_{T35} exist, compose F_{T35}=N\(⊕_{g∈D_{T35}} g\); otherwise treat F_{T35} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d8d9c5240218d35c / If upstream objects D_{T35} exist, compose F_{T35}=N\(⊕_{g∈D_{T35}} g\); otherwise treat F_{T35} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T35；被引用：—
-- [If upstream objects D_{T36} exist, compose F_{T36}=N\(⊕_{g∈D_{T36}} g\); otherwise treat F_{T36} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-70c31959335f5f90 / If upstream objects D_{T36} exist, compose F_{T36}=N\(⊕_{g∈D_{T36}} g\); otherwise treat F_{T36} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T36；被引用：—
-- [If upstream objects D_{T37} exist, compose F_{T37}=N\(⊕_{g∈D_{T37}} g\); otherwise treat F_{T37} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-41dd9542076a84c3 / If upstream objects D_{T37} exist, compose F_{T37}=N\(⊕_{g∈D_{T37}} g\); otherwise treat F_{T37} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T37；被引用：—
-- [If upstream objects D_{T38} exist, compose F_{T38}=N\(⊕_{g∈D_{T38}} g\); otherwise treat F_{T38} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-28314c7426492136 / If upstream objects D_{T38} exist, compose F_{T38}=N\(⊕_{g∈D_{T38}} g\); otherwise treat F_{T38} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T38；被引用：—
-- [If upstream objects D_{T3} exist, compose F_{T3}=N\(⊕_{g∈D_{T3}} g\); otherwise treat F_{T3} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6bc89410425addac / If upstream objects D_{T3} exist, compose F_{T3}=N\(⊕_{g∈D_{T3}} g\); otherwise treat F_{T3} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T3；被引用：—

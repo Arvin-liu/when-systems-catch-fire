@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [层级：L1 - Φ元统一律边界增强层 - UNESCO边界增强层 - 入口函数](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7ebd123738bf2f03 / 层级：L1 - Φ元统一律边界增强层 - UNESCO边界增强层 - 入口函数
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [层级：L1 - Φ元统一律边界增强层 - UNESCO边界增强层 - 增强函数](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-64b3ea2103956411 / 层级：L1 - Φ元统一律边界增强层 - UNESCO边界增强层 - 增强函数
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [层级：L1 - Φ元统一律边界增强层 - UNESCO边界增强层 - 总判定函数](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e0fa5d1e3d6e0de1 / 层级：L1 - Φ元统一律边界增强层 - UNESCO边界增强层 - 总判定函数
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [层级：L1 - Φ元统一律边界增强层 - UNESCO边界增强层 - 边界函数](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-53c1f814facb5c6f / 层级：L1 - Φ元统一律边界增强层 - UNESCO边界增强层 - 边界函数
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [层级：T层（定理层）](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e7fbf55fe9fae85d / 层级：T层（定理层）
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [已有函数**机制同构覆盖**（召回层命中即不新增）](../../../docs/getnote-collision-workflow-final-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bbdcaa6e1f28465e / 已有函数**机制同构覆盖**（召回层命中即不新增）
+  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
+  - 依赖：—；被引用：—
+- [已有函数**：你觉得它对应点火框架的哪个已有函数（不知道就空着）](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ce9e20752e34ba28 / 已有函数**：你觉得它对应点火框架的哪个已有函数（不知道就空着）
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [已经被现实证明的结果。](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-ef5b6c4bddecdb4d / 已经被现实证明的结果。
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [已证明与未证明](../../../docs/architecture/agentization-boundary-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-719fba24a970db3e / 已证明与未证明
+  - 来源：`docs/architecture/agentization-boundary-r0.md`
+  - 依赖：—；被引用：—
+- [已证明定理应区分“外部已证明”与“点火框架结构性重解释”。](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-49d8945ccf91f875 / 已证明定理应区分“外部已证明”与“点火框架结构性重解释”。
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
+- [幂函数等价验证 — f1=ε1,f2=ε22,f3=ε10·5。η1=1](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9ea1fb9413ae8d96 / 幂函数等价验证 — f1=ε1,f2=ε22,f3=ε10·5。η1=1
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [干预时机悖论函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D279 / 干预时机悖论函数 / D279
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D360；被引用：CLAIM-D289, NFC-0e8ab7e56c7b2205, NFC-0efc9f97a36374eb, NFC-21a7ffb89be07a25
 - [干预机会面积函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D285 / 干预机会面积函数 / D285
@@ -2444,63 +2504,3 @@
   - 可搜索名称：NFC-7b52c1a8384b9fbd / 最近邻反事实：D245 是系统对自身门控面的二阶数学门控，与社会身份遮蔽无关；命中点可改为「某 AI 系统自我门控」，D601 失效而 D245 仍适用 → 不同构。身份/角色轴函数表空白。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
   - 依赖：D245, D601；被引用：—
-- [最近邻反事实：D467 是「最优配置处惯性最大」的势阱物理/经济学类比，不描述主体主动识别计划过期并刹车；M7 的反例是「沉没成本陷阱无法刹车」「外部强制中断」，与 D467 互补而非同构。函数表无「计划过期/主动止损」原语。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4cfb508048e18713 / 最近邻反事实：D467 是「最优配置处惯性最大」的势阱物理/经济学类比，不描述主体主动识别计划过期并刹车；M7 的反例是「沉没成本陷阱无法刹车」「外部强制中断」，与 D467 互补而非同构。函数表无「计划过期/主动止损」原语。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
-  - 依赖：D467；被引用：—
-- [最近邻反事实：T40 是元协议层「决策权↔信息权对称」定理，无价值来源维度；给一个「信息权与决策权对称但价值创造外置」的组织，T40 通过而 D602 触发错配 → 不同构。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d862ee0412322f4e / 最近邻反事实：T40 是元协议层「决策权↔信息权对称」定理，无价值来源维度；给一个「信息权与决策权对称但价值创造外置」的组织，T40 通过而 D602 触发错配 → 不同构。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
-  - 依赖：D602, T40；被引用：—
-- [最近邻反事实：函数表无协作/需求/对齐/排序/协议类函数（grep 零命中已独立确认）；D602 是组织权力错配，不涉及需求排序协议。给一对「权力对称但需求隐性错位的伴侣」，D602 不触发、M9 触发 → 不同构。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c1c59743bf6521a5 / 最近邻反事实：函数表无协作/需求/对齐/排序/协议类函数（grep 零命中已独立确认）；D602 是组织权力错配，不涉及需求排序协议。给一对「权力对称但需求隐性错位的伴侣」，D602 不触发、M9 触发 → 不同构。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
-  - 依赖：D602；被引用：—
-- [有一句话定义**（函数：可迁移机制；案例：呈现的结构）；](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-449338f83969212b / 有一句话定义**（函数：可迁移机制；案例：呈现的结构）；
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [有一次，他在自己班里试课，讲到韩愈诗文中的情感时，让学生尝试做创意表达。一个学生忽然联想到自己喜欢的歌手的歌词，说着说着，竟唱了出来。傅铭有些意外。他没想到，文言文里的情感，还能用流行音乐的节奏来呈现，这是精心借调来的「样板学生」都无法做到](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-73c7e49ad09ef19f / 有一次，他在自己班里试课，讲到韩愈诗文中的情感时，让学生尝试做创意表达。一个学生忽然联想到自己喜欢的歌手的歌词，说着说着，竟唱了出来。傅铭有些意外。他没想到，文言文里的情感，还能用流行音乐的节奏来呈现，这是精心借调来的「样板学生」都无法做到
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [有效与真实**：有效性只说明结论随前提；前提真实性和外部证据由其他状态轴负责。](../../../docs/foundation/logic/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d17e01fcd003d2c7 / 有效与真实**：有效性只说明结论随前提；前提真实性和外部证据由其他状态轴负责。
-  - 来源：`docs/foundation/logic/README.md`
-  - 依赖：—；被引用：—
-- [有效信息 = 带宽 × 分辨率 的组合： I_eff\(σ\) = H\(σ\) × I_Fisher\(σ\)^β 其中β是分辨率权重（0<β<1），由具体物理场景决定 简化形式（β=1）： I_eff ∝ ln\(σ\) / σ² 极值点： **扩展注](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-85b78453e0c70130 / 有效信息 = 带宽 × 分辨率 的组合： I_eff\(σ\) = H\(σ\) × I_Fisher\(σ\)^β 其中β是分辨率权重（0<β<1），由具体物理场景决定 简化形式（β=1）： I_eff ∝ ln\(σ\) / σ² 极值点： **扩展注
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [有效信息倒U型定理](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
-  - 可搜索名称：D234 / 有效信息倒U型定理 / D234
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D211, D220, D270；被引用：D237, CLAIM-D237, NFC-024992b462640151, NFC-0ed43f405be6f616
-- [有效信息倒U型定理](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-957437afbe5f6d10 / 有效信息倒U型定理
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [有效性层：形式正确性、证明状态、经验支持状态、外部证据状态。](../../../docs/math-foundation/00-project-ontology.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-ffcb8b3523632794 / 有效性层：形式正确性、证明状态、经验支持状态、外部证据状态。
-  - 来源：`docs/math-foundation/00-project-ontology.md`
-  - 依赖：—；被引用：—
-- [有机制表达**（函数：公式或机制链；案例：因果链）；](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-726598bc80b3300e / 有机制表达**（函数：公式或机制链；案例：因果链）；
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [有边界条件**（函数不适用范围；案例不能推出的普遍结论）；](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-54657b1a8e777c5b / 有边界条件**（函数不适用范围；案例不能推出的普遍结论）；
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—

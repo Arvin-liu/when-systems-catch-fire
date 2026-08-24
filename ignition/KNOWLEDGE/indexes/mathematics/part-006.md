@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{T35} exist, compose F_{T35}=N\(⊕_{g∈D_{T35}} g\); otherwise treat F_{T35} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d8d9c5240218d35c / If upstream objects D_{T35} exist, compose F_{T35}=N\(⊕_{g∈D_{T35}} g\); otherwise treat F_{T35} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T35；被引用：—
+- [If upstream objects D_{T36} exist, compose F_{T36}=N\(⊕_{g∈D_{T36}} g\); otherwise treat F_{T36} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-70c31959335f5f90 / If upstream objects D_{T36} exist, compose F_{T36}=N\(⊕_{g∈D_{T36}} g\); otherwise treat F_{T36} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T36；被引用：—
+- [If upstream objects D_{T37} exist, compose F_{T37}=N\(⊕_{g∈D_{T37}} g\); otherwise treat F_{T37} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-41dd9542076a84c3 / If upstream objects D_{T37} exist, compose F_{T37}=N\(⊕_{g∈D_{T37}} g\); otherwise treat F_{T37} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T37；被引用：—
+- [If upstream objects D_{T38} exist, compose F_{T38}=N\(⊕_{g∈D_{T38}} g\); otherwise treat F_{T38} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-28314c7426492136 / If upstream objects D_{T38} exist, compose F_{T38}=N\(⊕_{g∈D_{T38}} g\); otherwise treat F_{T38} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T38；被引用：—
+- [If upstream objects D_{T3} exist, compose F_{T3}=N\(⊕_{g∈D_{T3}} g\); otherwise treat F_{T3} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6bc89410425addac / If upstream objects D_{T3} exist, compose F_{T3}=N\(⊕_{g∈D_{T3}} g\); otherwise treat F_{T3} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T3；被引用：—
 - [If upstream objects D_{T4} exist, compose F_{T4}=N\(⊕_{g∈D_{T4}} g\); otherwise treat F_{T4} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a3206d0a3d3622fd / If upstream objects D_{T4} exist, compose F_{T4}=N\(⊕_{g∈D_{T4}} g\); otherwise treat F_{T4} as an axiom seed.
@@ -43,6 +68,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-20260816-122 Federation R1 Progress / ignition-122-federation-progress
   - 来源：`reports/operations/ignition-122-federation-progress.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle](../../../reports/operations/ignition-138-step03-live-process-transport-scratch-lifecycle.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5de97774915e7a07 / IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle
+  - 来源：`reports/operations/ignition-138-step03-live-process-transport-scratch-lifecycle.md`
   - 依赖：—；被引用：—
 - [IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC-EXACT-HEAD-ACCEPTANCE-AND-PAGES-CLOSEOUT-R1-20260727 将 PR #143（head `77fc5f95777a3b](../../../docs/VERSIONING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -433,6 +463,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8781d723cb67c693 / lifecycle. Scheduler and resource arbitration have integer priorities, but
   - 来源：`reports/operations/ignition-129-step00-steering-audit.md`
+  - 依赖：—；被引用：—
+- [Lifecycle: `PASS content_phase=RUNNING`, publication authority remains](../../../reports/operations/ignition-138-step13-targeted-regression.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-41d98a7ea642ccfa / Lifecycle: `PASS content_phase=RUNNING`, publication authority remains
+  - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
   - 依赖：—；被引用：—
 - [Lifecycle: content-owned `RELEASE_READY`, publication authority `REMOTE_REF_OBSERVATION`, embedded publication assertion](../../../agent-results/IGNITION-20260822-132-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -1279,6 +1314,11 @@
   - 可搜索名称：NFC-c25d9aafc850267f / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal main baseline for this Task 128 branch is `681f86d79b1112af3c07e0f80
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is the Task138 branch Current projection while the formal baseline rem](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fad12f792ce6c0f0 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is the Task138 branch Current projection while the formal baseline rem
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [main_state: CURRENT_WITH_OPEN_OBLIGATIONS; formal main remains at the verified Task135 baseline `3acf15ea4c1b1c27eb6e8b9](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-43deeae01ada2a2e / main_state: CURRENT_WITH_OPEN_OBLIGATIONS; formal main remains at the verified Task135 baseline `3acf15ea4c1b1c27eb6e8b9
@@ -1403,6 +1443,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ff0d9668e70344c9 / Missing evidence is never treated as `PASS`.
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [Missing scratch lifecycle support or failed cleanup is fail-closed.](../../../reports/operations/ignition-138-step04-codex-adapter-r3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6599f99c1434ab7c / Missing scratch lifecycle support or failed cleanup is fail-closed.
+  - 来源：`reports/operations/ignition-138-step04-codex-adapter-r3.md`
   - 依赖：—；被引用：—
 - [MoE output-space gating and expert selection are not a weight-space composition algebra; the survey defines no parameter](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2458,49 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f118d722978b9e49 / Proof Priority Queue
   - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
-  - 依赖：—；被引用：—
-- [Proof sketches and prototype figures validate feasibility, while incomplete central features, one-run plots, omitted dia](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cb9180e60f588385 / Proof sketches and prototype figures validate feasibility, while incomplete central features, one-run plots, omitted dia
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [proof 不自动提升 E；evidence 不修复 ill-typed object。](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f1a5f7bd7dc99a51 / proof 不自动提升 E；evidence 不修复 ill-typed object。
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [proof\(p\) := ∃sequence\(s_1, s_2, ..., s_n\), s_n = p ∧ ∀i, s_{i+1} ⊢ s_i（证明序列）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-52cb60bdde473505 / proof\(p\) := ∃sequence\(s_1, s_2, ..., s_n\), s_n = p ∧ ∀i, s_{i+1} ⊢ s_i（证明序列）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [Proof/evidence obligation 引用完整性: ✅ 通过](../../../reports/foundation-architecture/084-max-adjudication-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-15249928ae514b6f / Proof/evidence obligation 引用完整性: ✅ 通过
-  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
-  - 依赖：—；被引用：—
-- [proof;](../../../docs/architecture/effectual-action-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-c1cda26362828b69 / proof;
-  - 来源：`docs/architecture/effectual-action-plane.md`
-  - 依赖：—；被引用：—
-- [proof_obligation, evidence_obligation](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e9dfd688c139ee36 / proof_obligation, evidence_obligation
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [proof_status, evidence_status, scope_status, provenance_status](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-b6e97add692eb9ba / proof_status, evidence_status, scope_status, provenance_status
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [Proof（34条）**：低优先 — 形式化证明（除 P1 外）](../../../reports/foundation-architecture/085-backlog-prioritization.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fbb24b418a8b710e / Proof（34条）**：低优先 — 形式化证明（除 P1 外）
-  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
-  - 依赖：P1；被引用：—
-- [propagation step end-to-end. That is the §6 proof and is established by opening PR #163 and letting the remote](../../../docs/foundation/task-107-incident-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-88adf9e6dd896430 / propagation step end-to-end. That is the §6 proof and is established by opening PR #163 and letting the remote
-  - 来源：`docs/foundation/task-107-incident-report.md`
   - 依赖：—；被引用：—

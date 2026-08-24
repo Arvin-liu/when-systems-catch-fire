@@ -624,6 +624,26 @@
 - **主题：** `COGNITION`
 - **可搜索名称：** `NFC-5cdd355026e2307a`, `Task 122 current External Agent Federation R1 projection`, `## Task 122 current External Agent Federation R1 projection`
 
+<a id="asset-nfc-5fb1ec15bd379d24"></a>
+## `EPISTEMICALLY_ACCEPTED=0` 都保持原状；这不是 validated live completion、production
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-5fb1ec15bd379d24` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `QUARANTINED_AMBIGUOUS`
+- **当前结果：** `EPISTEMICALLY_ACCEPTED=0` 都保持原状；这不是 validated live completion、production
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/project-current-state.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
+- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-5fb1ec15bd379d24`, ``EPISTEMICALLY_ACCEPTED=0` 都保持原状；这不是 validated live completion、production`, ``EPISTEMICALLY_ACCEPTED=0` 都保持原状；这不是 validated live completion、production`
+
 <a id="asset-nfc-61546854af53780b"></a>
 ## 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。
 
@@ -983,23 +1003,3 @@
 - **下一步：** No open obligation was recorded.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-921e43a466f461f8`, `非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不`, `非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不能冒充同构，历史撤回不能因改名恢复。`
-
-<a id="asset-nfc-9379ce5377b8455f"></a>
-## Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-9379ce5377b8455f` · [llms.txt](../../llms.txt)
-- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `QUARANTINED_AMBIGUOUS`
-- **当前结果：** - Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `llms.txt`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
-- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
-- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-9379ce5377b8455f`, `Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The `, `- Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.`

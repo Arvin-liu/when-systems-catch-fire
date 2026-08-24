@@ -1,6 +1,6 @@
 {
   "schema_version": "ignition-full-regression-runner-r1",
-  "task_id": "IGNITION-20260824-137",
+  "task_id": "IGNITION-20260824-138",
   "runner": "ignition/tools/run_full_regression.py",
   "repository_root_discovery": "script_path_then_git_toplevel; never cwd-derived",
   "application_root": "ignition",
