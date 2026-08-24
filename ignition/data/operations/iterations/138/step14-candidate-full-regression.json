@@ -2,9 +2,9 @@
   "schema_version": "ignition-138-step14-candidate-full-regression-r1",
   "task_id": "IGNITION-20260824-138",
   "step": "14",
-  "run_number": 2,
+  "run_number": 3,
   "status": "PASS",
-  "candidate_head_sha": "99389c846b6766ca8b373812ece4191660b6474f",
+  "candidate_head_sha": "5e45083c29947e563c99976cd193fd15b8cbc467",
   "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
   "working_directory": "ignition",
   "long_window": {
@@ -30,14 +30,25 @@
   "result": {
     "exit_code": 0,
     "process_returncode": 0,
-    "tests_run": 1173,
+    "tests_run": 1178,
     "failures": 0,
     "errors": 0,
     "skipped": 0,
     "summary": "OK",
     "status": "PASS",
+    "runtime_seconds": 2850.517,
+    "elapsed_seconds": 2851.518
+  },
+  "prior_passed_candidate": {
+    "candidate_head_sha": "99389c846b6766ca8b373812ece4191660b6474f",
+    "tests_run": 1173,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
     "runtime_seconds": 2929.757,
-    "elapsed_seconds": 2930.779
+    "elapsed_seconds": 2930.779,
+    "stdout_sha256": "120776dfd0999a570c36209c011f2702e327c6baed4330a2b4e20a17464845b9",
+    "stderr_sha256": "03fc06f5b1b9e3acfec9f3a57e715587eb161c6d83c19ba75cdc76e8f5c90e2a"
   },
   "side_effect_observation": {
     "clean_before": true,
@@ -47,14 +58,14 @@
     "capture": {
       "location": "external temporary directory; not part of the formal repository",
       "stdout_bytes": 5533,
-      "stdout_sha256": "120776dfd0999a570c36209c011f2702e327c6baed4330a2b4e20a17464845b9",
+      "stdout_sha256": "a2a67f7f621beb5f13075991b0f4fe44325f9fc75fc1bb389368acdeb3990034",
       "stderr_bytes": 1621,
-      "stderr_sha256": "03fc06f5b1b9e3acfec9f3a57e715587eb161c6d83c19ba75cdc76e8f5c90e2a"
+      "stderr_sha256": "0f9f82dcccdd7588621cc7f776c257494c51045ea974a3426641a8efdf52e45e"
     }
   },
   "projection_preflight": {
     "status": "PASS",
-    "check_count": 24,
+    "check_count": 25,
     "failed_checks": [],
     "projection_checks_pass": true,
     "release_admission": true,
@@ -91,6 +102,8 @@
   ],
   "repairs": [
     "Updated full-regression-runner-r1 task binding to IGNITION-20260824-138",
+    "Pinned the explicit Codex live model to gpt-5.6-luna with max reasoning",
+    "Recorded the second live attempt as non-validated when its host receipt was not recoverable",
     "Rebuilt Function Census and Deep Adjudication projections",
     "Rebuilt Human Surface, Knowledge Experience and Fire Seed projections",
     "Regenerated Current Facts, Current Snapshot and seven compiler-owned Current blocks",
@@ -103,5 +116,5 @@
     "ignore_added": false,
     "residual_expanded": false
   },
-  "claim_ceiling": "Exact repository-local candidate natural full-suite and projection-preflight evidence for candidate 99389c846b6766ca8b373812ece4191660b6474f only; no fresh-clone, publication, external truth, production readiness, Owner acceptance, live completion or epistemic acceptance is inferred."
+  "claim_ceiling": "Exact repository-local candidate natural full-suite and projection-preflight evidence for candidate 5e45083c29947e563c99976cd193fd15b8cbc467 only; no fresh-clone, publication, external truth, production readiness, Owner acceptance, live completion or epistemic acceptance is inferred."
 }
