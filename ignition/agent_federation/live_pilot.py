@@ -21,6 +21,7 @@ from .live_privacy import LivePrivacyError, sanitize_live_result
 
 LIVE_PILOT_SCHEMA = "ignition-136-live-pilot-r1"
 LIVE_COMPLETION_PILOT_SCHEMA = "ignition-137-live-pilot-r1"
+LIVE_COMPLETION_138_PILOT_SCHEMA = "ignition-138-live-pilot-r1"
 _NONCE = re.compile(r"^[a-f0-9]{24}$")
 
 
@@ -311,6 +312,190 @@ class DisposableLiveCompletionFixture:
         self.cleanup()
 
 
+@dataclass(frozen=True)
+class Live138CompletionExpectation:
+    nonce: str
+    selected_ids: tuple[str, ...]
+    count: int
+    workspace_digest: str
+    expected_files: tuple[str, ...]
+
+
+class DisposableLive138CompletionFixture:
+    """Task138 disposable fixture with a frozen local answer and strict schema."""
+
+    def __init__(self, root: Path, schema_path: Path, expectation: Live138CompletionExpectation) -> None:
+        self.root = root
+        self.schema_path = schema_path
+        self.expectation = expectation
+        self.before_digest = tree_digest(root)
+        self._read_only = False
+
+    @classmethod
+    def create(cls, parent: str | Path | None = None, *, nonce: str | None = None) -> "DisposableLive138CompletionFixture":
+        parent_path = Path(parent) if parent is not None else None
+        if parent_path is not None and (not parent_path.is_absolute() or not parent_path.is_dir()):
+            raise LivePilotError("fixture parent must be an existing absolute directory")
+        root = Path(tempfile.mkdtemp(prefix="ignition-live-138-", dir=str(parent_path) if parent_path else None))
+        value = nonce or secrets.token_hex(12)
+        if not _NONCE.fullmatch(value):
+            raise LivePilotError("fixture nonce must be exactly 24 lowercase hex characters")
+        readme = (
+            "Task138 synthetic read-only fixture.\n"
+            "Select rows where eligible is true and score is at least 60.\n"
+            "Sort selected ids by score ascending, then id ascending.\n"
+            "Return nonce, selected ids, count and the workspace digest claim.\n"
+        )
+        table = {
+            "rule": {"eligible": True, "minimum_score": 60, "sort": ["score", "id"]},
+            "rows": [
+                {"id": "item-c", "eligible": True, "score": 85},
+                {"id": "item-a", "eligible": True, "score": 60},
+                {"id": "item-b", "eligible": False, "score": 99},
+                {"id": "item-d", "eligible": True, "score": 60},
+                {"id": "item-e", "eligible": True, "score": 40},
+                {"id": "item-f", "eligible": True, "score": 75},
+                {"id": "item-g", "eligible": False, "score": 100},
+            ],
+        }
+        (root / "README.txt").write_text(readme, encoding="utf-8")
+        (root / "nonce.txt").write_text(value + "\n", encoding="utf-8")
+        (root / "table.json").write_text(json.dumps(table, sort_keys=True, separators=(",", ":")) + "\n", encoding="utf-8")
+        schema_path = root.parent / (root.name + "-output-schema.json")
+        schema_path.write_text(json.dumps({
+            "$schema": "https://json-schema.org/draft/2020-12/schema",
+            "type": "object",
+            "additionalProperties": False,
+            "required": ["nonce", "selected_ids", "count", "workspace_digest_claim"],
+            "properties": {
+                "nonce": {"type": "string", "pattern": "^[a-f0-9]{24}$"},
+                "selected_ids": {"type": "array", "items": {"type": "string"}},
+                "count": {"type": "integer", "minimum": 0},
+                "workspace_digest_claim": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+            },
+        }, sort_keys=True, separators=(",", ":")) + "\n", encoding="utf-8")
+        schema_path.chmod(stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
+        selected = tuple(
+            row["id"] for row in sorted(
+                (row for row in table["rows"] if row["eligible"] is True and row["score"] >= table["rule"]["minimum_score"]),
+                key=lambda row: (row["score"], row["id"]),
+            )
+        )
+        expectation = Live138CompletionExpectation(value, selected, len(selected), tree_digest(root), ("README.txt", "nonce.txt", "table.json"))
+        return cls(root, schema_path, expectation)
+
+    def make_read_only(self) -> None:
+        if not self.root.is_dir():
+            raise LivePilotError("fixture root no longer exists")
+        for path in self.root.iterdir():
+            if path.is_file():
+                path.chmod(stat.S_IRUSR | stat.S_IRGRP | stat.S_IROTH)
+        self.root.chmod(stat.S_IRUSR | stat.S_IXUSR | stat.S_IRGRP | stat.S_IXGRP | stat.S_IROTH | stat.S_IXOTH)
+        self._read_only = True
+
+    def read_only_guard_observed(self) -> bool:
+        if not self._read_only:
+            return False
+        root_mode = stat.S_IMODE(self.root.stat().st_mode)
+        return not (root_mode & (stat.S_IWUSR | stat.S_IWGRP | stat.S_IWOTH)) and all(
+            not (stat.S_IMODE(path.stat().st_mode) & (stat.S_IWUSR | stat.S_IWGRP | stat.S_IWOTH))
+            for path in self.root.iterdir() if path.is_file()
+        )
+
+    def current_digest(self) -> str:
+        return tree_digest(self.root)
+
+    def file_names(self) -> tuple[str, ...]:
+        return tuple(sorted(path.relative_to(self.root).as_posix() for path in self.root.rglob("*") if path.is_file()))
+
+    def cleanup(self) -> None:
+        if self.root.exists():
+            for path in self.root.rglob("*"):
+                if path.is_file():
+                    path.chmod(stat.S_IRUSR | stat.S_IWUSR)
+            self.root.chmod(stat.S_IRUSR | stat.S_IWUSR | stat.S_IXUSR)
+            shutil.rmtree(self.root)
+        if self.schema_path.exists():
+            self.schema_path.chmod(stat.S_IRUSR | stat.S_IWUSR)
+            self.schema_path.unlink()
+
+    def __enter__(self) -> "DisposableLive138CompletionFixture":
+        return self
+
+    def __exit__(self, exc_type: Any, exc: Any, traceback: Any) -> None:
+        self.cleanup()
+
+
+class Live138CompletionValidator:
+    """Independent validator for the Task138 fixture's exact result contract."""
+
+    def __init__(self, fixture: DisposableLive138CompletionFixture) -> None:
+        self.fixture = fixture
+
+    def validate(
+        self,
+        result: Mapping[str, Any],
+        *,
+        before_digest: str,
+        after_digest: str,
+        side_effect_observation: str = "READ_ONLY_UNCHANGED",
+    ) -> LiveValidationReport:
+        failures: list[str] = []
+        checks: dict[str, bool] = {}
+        expected_nonce = None
+        expected_selected: tuple[str, ...] = ()
+        expected_count = 0
+        try:
+            expected_nonce = (self.fixture.root / "nonce.txt").read_text(encoding="utf-8").strip()
+            table = json.loads((self.fixture.root / "table.json").read_text(encoding="utf-8"))
+            rule = table["rule"]
+            if rule != {"eligible": True, "minimum_score": 60, "sort": ["score", "id"]}:
+                raise ValueError("fixture rule drifted")
+            expected_selected = tuple(
+                row["id"] for row in sorted(
+                    (row for row in table["rows"] if row["eligible"] is True and row["score"] >= rule["minimum_score"]),
+                    key=lambda row: (row["score"], row["id"]),
+                )
+            )
+            expected_count = len(expected_selected)
+        except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError):
+            failures.append("FIXTURE_EXPECTATION_RECOMPUTE_FAILED")
+        try:
+            sanitized = sanitize_live_result(result, allowed_keys=("nonce", "selected_ids", "count", "workspace_digest_claim"))
+            value = dict(sanitized.value)
+        except LivePrivacyError:
+            value = {}
+            failures.append("RESULT_PRIVACY_REJECTED")
+        expected_keys = {"nonce", "selected_ids", "count", "workspace_digest_claim"}
+        checks["output_schema_exact"] = isinstance(result, Mapping) and set(result) == expected_keys and set(value) == expected_keys
+        checks["output_schema_types"] = (
+            isinstance(value.get("nonce"), str)
+            and isinstance(value.get("selected_ids"), list)
+            and all(isinstance(item, str) for item in value.get("selected_ids", ()))
+            and type(value.get("count")) is int
+            and isinstance(value.get("workspace_digest_claim"), str)
+        )
+        checks["nonce_exact"] = value.get("nonce") == expected_nonce
+        checks["selected_ids_exact"] = value.get("selected_ids") == list(expected_selected)
+        checks["count_exact"] = value.get("count") == expected_count
+        checks["workspace_digest_claim_exact"] = value.get("workspace_digest_claim") == before_digest
+        checks["fixture_files_exact"] = self.fixture.file_names() == self.fixture.expectation.expected_files
+        checks["tree_unchanged"] = before_digest == after_digest == self.fixture.before_digest == self.fixture.current_digest()
+        checks["read_only_guard"] = self.fixture.read_only_guard_observed()
+        checks["side_effect_free"] = side_effect_observation == "READ_ONLY_UNCHANGED"
+        for name, passed in checks.items():
+            if not passed:
+                failures.append(name.upper())
+        return LiveValidationReport(
+            status="PASS" if not failures else "FAIL",
+            checks=checks,
+            failure_codes=tuple(sorted(set(failures))),
+            result_digest=sha256_json(result),
+            claim_ceiling="Independent Task138 synthetic fixture validation only; no Goal completion or external truth is inferred.",
+            schema=LIVE_COMPLETION_138_PILOT_SCHEMA + ".validation",
+        )
+
+
 class LiveCompletionValidator:
     """Independent answer validator for the Task137 fixture."""
 
@@ -372,7 +557,9 @@ class LiveCompletionValidator:
 
 
 __all__ = [
-    "LIVE_COMPLETION_PILOT_SCHEMA", "LIVE_PILOT_SCHEMA", "DisposableLiveCompletionFixture", "DisposableLiveFixture",
-    "LiveCompletionExpectation", "LiveCompletionValidator", "LivePilotError", "LivePilotExpectation", "LivePilotValidator",
+    "LIVE_COMPLETION_138_PILOT_SCHEMA", "LIVE_COMPLETION_PILOT_SCHEMA", "LIVE_PILOT_SCHEMA",
+    "DisposableLive138CompletionFixture", "DisposableLiveCompletionFixture", "DisposableLiveFixture",
+    "Live138CompletionExpectation", "Live138CompletionValidator", "LiveCompletionExpectation", "LiveCompletionValidator",
+    "LivePilotError", "LivePilotExpectation", "LivePilotValidator",
     "LiveValidationReport", "tree_digest",
 ]
