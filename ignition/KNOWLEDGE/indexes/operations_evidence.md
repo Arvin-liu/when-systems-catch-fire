@@ -8,5 +8,5 @@
 - [第 002 片](./operations_evidence/part-002.md)：501—1000；### Function OS Node Statuses → - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0444}\)=1\].
 - [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0445}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-05.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → title: "炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞"
-- [第 006 片](./operations_evidence/part-006.md)：2501—2913；title: "热力学第二定律的Φ表述" → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → title: "涨落-遮蔽定理 / 涨落-obscuration定理"
+- [第 006 片](./operations_evidence/part-006.md)：2501—2914；title: "炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞" → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

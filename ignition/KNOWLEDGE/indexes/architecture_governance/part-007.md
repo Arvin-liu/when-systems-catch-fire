@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [stale_knowledge: terminology/style similarity, offline machine scoring, repository synchronization, publication, map vis](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-018edc9a949d39a4 / stale_knowledge: terminology/style similarity, offline machine scoring, repository synchronization, publication, map vis
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [stale_knowledge: the earlier Task 121 pre-release delta naming the Step 09 tip is historical branch-progress evidence an](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-212dd5e0bc8c6a3a / stale_knowledge: the earlier Task 121 pre-release delta naming the Step 09 tip is historical branch-progress evidence an
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [stale_knowledge: the Task 129 architecture-changing projection and all earlier Task 126/127/128/129 entries remain prove](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-41e9b288068cba93 / stale_knowledge: the Task 129 architecture-changing projection and all earlier Task 126/127/128/129 entries remain prove
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [state from a verified snapshot plus the ordered ledger tail.](../../../docs/architecture/os-control-plane-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5a5fe9305ae1aa6f / state from a verified snapshot plus the ordered ledger tail.
+  - 来源：`docs/architecture/os-control-plane-r2.md`
+  - 依赖：—；被引用：—
 - [Static averaging is implemented but the released experiment compiler is incomplete and broken at its documented entry po](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-2bf30d5c56a302cd / Static averaging is implemented but the released experiment compiler is incomplete and broken at its documented entry po
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1e500d073327027e / VERIFIED: 16
   - 来源：`reports/external-research/121Q2R-final-report.md`
-  - 依赖：—；被引用：—
-- [VERIFIED: 7 \(S120-014/021/030/039/045/047/053\)](../../../reports/external-research/121Q2V-verification-repair-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c3d9c20871a7710e / VERIFIED: 7 \(S120-014/021/030/039/045/047/053\)
-  - 来源：`reports/external-research/121Q2V-verification-repair-report.md`
-  - 依赖：—；被引用：—
-- [VERIFIED: 7 \(S120-021/030/035/039/045/047/053\)](../../../reports/external-research/121Q2W-final-consistency-seal-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5a6c961a77251254 / VERIFIED: 7 \(S120-021/030/035/039/045/047/053\)
-  - 来源：`reports/external-research/121Q2W-final-consistency-seal-report.md`
-  - 依赖：—；被引用：—
-- [Verified: Real titles returned, no errors](../../../docs/external-research/anysearch-usage.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8a7890bda279fbd5 / Verified: Real titles returned, no errors
-  - 来源：`docs/external-research/anysearch-usage.md`
-  - 依赖：—；被引用：—
-- [version and evidence boundaries. A passing Run, executor report, telemetry, memory/profile signal or](../../../reports/operations/ignition-129-step20-current-sync.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e4368fac3fa21656 / version and evidence boundaries. A passing Run, executor report, telemetry, memory/profile signal or
-  - 来源：`reports/operations/ignition-129-step20-current-sync.md`
   - 依赖：—；被引用：—

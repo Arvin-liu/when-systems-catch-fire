@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a62777190ef5f83d / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-105a87195bfb9b6f / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-80a83d1b976f542b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(ε-θ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3b84ce4a54b8671b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(ε-θ
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-51f4faf344085baa / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-210965c701bd98e4 / 政策制定者无法预见禁酒令在社会层面的全部后果，决策天然存在不完备性。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [政策建议缺乏充分证据](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4657bfdaf48ab191 / 政策建议缺乏充分证据
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [故事可以重排事实出现顺序，但不得改写事实。](../../../docs/narrative-output-layer.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-50b220f6cbbad38a / 故事可以重排事实出现顺序，但不得改写事实。
-  - 来源：`docs/narrative-output-layer.md`
-  - 依赖：—；被引用：—
-- [故事很顺，但证据不足；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bda30097d163dbd3 / 故事很顺，但证据不足；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [故事讲通了，但证据链和反事实不足。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-98872dfa2d9de92d / 故事讲通了，但证据链和反事实不足。
-  - 来源：`data/failure_typology.csv`
   - 依赖：—；被引用：—

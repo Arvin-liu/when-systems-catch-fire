@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）](../../ASSET-CARDS.md#asset-hr-42c319dffa9ac5fd)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08） / teacher-competition-first-real-collision-audit-20260708
+  - 来源：`outputs/audit/teacher-competition-first-real-collision-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）](../../../outputs/audit/teacher-competition-first-real-collision-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-63bad6359e8f51a9 / 首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）
+  - 来源：`outputs/audit/teacher-competition-first-real-collision-audit-20260708.md`
+  - 依赖：—；被引用：—
 - [首个真实小材料碰撞：赛课机制下的教师生存困境](../../../inputs/collisions/20260708-teacher-competition/task.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-3f2a57506a798c43 / 首个真实小材料碰撞：赛课机制下的教师生存困境

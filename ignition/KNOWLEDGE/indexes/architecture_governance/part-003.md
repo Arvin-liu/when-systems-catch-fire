@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Deep semantic review** of each evidence card:](../../../data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ddf79e0b3122df43 / Deep semantic review** of each evidence card:
+  - 来源：`data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md`
+  - 依赖：—；被引用：—
+- [def __call__\(self, argv: Sequence\[str\], timeout_seconds: float\) -> SafeProcessResult:](../../../agent_federation/pilots.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C69B8047FC1C125E / def __call__\(self, argv: Sequence\[str\], timeout_seconds: float\) -> SafeProcessResult: / IMPLICIT-C69B8047FC1C125E / IMPLICIT-5E8BC79519B54591
+  - 来源：`agent_federation/pilots.py`
+  - 依赖：—；被引用：—
 - [def __enter__\(self\) -> "DisposableLiveFixture":](../../../agent_federation/live_pilot.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-E37D6B6058BDF2DF / def __enter__\(self\) -> "DisposableLiveFixture": / IMPLICIT-E37D6B6058BDF2DF
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-EB8E4C58B7701508 / def mark_in_flight\(self\) -> LiveTransitionRecord: / IMPLICIT-EB8E4C58B7701508
   - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def mark_timeout\(self, *, effect_known_no_effect: bool\) -> LiveTransitionRecord:](../../../agent_federation/live_bridge.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-AE898056B6D4271A / def mark_timeout\(self, *, effect_known_no_effect: bool\) -> LiveTransitionRecord: / IMPLICIT-AE898056B6D4271A
-  - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def match_version\(version: str, pattern: str\) -> bool:](../../../agent_federation/sdk.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D368717379D35D7C / def match_version\(version: str, pattern: str\) -> bool: / IMPLICIT-D368717379D35D7C
-  - 来源：`agent_federation/sdk.py`
   - 依赖：—；被引用：—

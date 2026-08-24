@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [任务 101 的人类层（2026-07 历史快照，非当前总数）已经提供 README、`HUMAN-READING.md`、`RESULTS/` 与当时约 166 条历史结果记录，但仍存在五个可复现缺口：没有按知识变化组织的时间线；没有按研](../../../reports/operations/102-knowledge-experience-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f5447061d147f065 / 任务 101 的人类层（2026-07 历史快照，非当前总数）已经提供 README、`HUMAN-READING.md`、`RESULTS/` 与当时约 166 条历史结果记录，但仍存在五个可复现缺口：没有按知识变化组织的时间线；没有按研
+  - 来源：`reports/operations/102-knowledge-experience-audit.md`
+  - 依赖：—；被引用：—
+- [任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：](../../ASSET-CARDS.md#asset-nfc-2843222a849fe77e)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2843222a849fe77e / 任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括： / 任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：
+  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
+  - 依赖：—；被引用：—
+- [任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：](../../ASSET-CARDS.md#asset-nfc-187e985133669a56)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-187e985133669a56 / 任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下： / 任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：
+  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
+  - 依赖：—；被引用：—
+- [任务 102：建立统一知识入口、按主题探索、最新变化、资产卡、分层阅读、全量搜索与演化回链。](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a8acc6747c78baf6 / 任务 102：建立统一知识入口、按主题探索、最新变化、资产卡、分层阅读、全量搜索与演化回链。
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
 - [任务 103 建立了最小可用 Evidence Program 并完成首个预注册、可证伪验证试点，使重要断言开始接受外部现实检验：](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c6471b9eb5ac5875 / 任务 103 建立了最小可用 Evidence Program 并完成首个预注册、可证伪验证试点，使重要断言开始接受外部现实检验：
@@ -2482,25 +2502,5 @@
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-73e3f6b9d378a3a2 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a62777190ef5f83d / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-105a87195bfb9b6f / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-80a83d1b976f542b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(ε-θ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3b84ce4a54b8671b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(ε-θ
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

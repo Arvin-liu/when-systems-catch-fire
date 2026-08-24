@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [政策建议缺乏充分证据](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4657bfdaf48ab191 / 政策建议缺乏充分证据
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [故事可以重排事实出现顺序，但不得改写事实。](../../../docs/narrative-output-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-50b220f6cbbad38a / 故事可以重排事实出现顺序，但不得改写事实。
+  - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [故事很顺，但证据不足；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bda30097d163dbd3 / 故事很顺，但证据不足；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [故事讲通了，但证据链和反事实不足。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-98872dfa2d9de92d / 故事讲通了，但证据链和反事实不足。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
 - [教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-58220e3d6ccd1164 / 教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加
@@ -2482,25 +2502,5 @@
 - [证据制度卡片：AI / 计算机科学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f9c5432d549667cf / 证据制度卡片：AI / 计算机科学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：医学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-20c55d3f4101e0ff / 证据制度卡片：医学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：历史学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-53ded72f139fce1b / 证据制度卡片：历史学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：工程学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-e9a2f16acb5bf30d / 证据制度卡片：工程学
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [证据制度卡片：教育学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a0d3493f7fca95ba / 证据制度卡片：教育学
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
   - 依赖：—；被引用：—

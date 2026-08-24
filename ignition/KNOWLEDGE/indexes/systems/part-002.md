@@ -1144,6 +1144,11 @@
   - 可搜索名称：NFC-0d06f1e60c99b775 / live_boundary: the pilot is synthetic, disposable and read-only; no channel/message, browser, remote Git, executor confi
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [live_boundary: the synthetic, disposable, read-only pilot remained within no-channel/no-browser/no-remote-Git/no-executo](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-417e511deeb6f6c0 / live_boundary: the synthetic, disposable, read-only pilot remained within no-channel/no-browser/no-remote-Git/no-executo
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [local diff-reference namespace collision detection across `network_id`, `state_id` and `projection_id`;](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-52f8f49f2767e810 / local diff-reference namespace collision detection across `network_id`, `state_id` and `projection_id`;
@@ -2409,6 +2414,11 @@
   - 可搜索名称：NFC-78f990414c2ee32e / OpenClaw was not dispatched because its observed agent surface has no disposable
   - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
+- [OpenClaw was not invoked because its public Gateway/session surface could not prove the required disposable-workspace, e](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-92762f896ea2b06c / OpenClaw was not invoked because its public Gateway/session surface could not prove the required disposable-workspace, e
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
 - [OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带](../../../data/architecture/interactive-system-map.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-794046119666f476 / OpenClaw 的 provider-neutral public CLI adapter；只暴露可观察 envelope、能力、健康和 pointer-only session，不把 Gateway、channel 或 daemon 带
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-fea3a4cf67a9ebc4 / Pearl 2009 *Causality* — `10.1017/cbo9780511803161`
   - 来源：`data/external-research/088-FINAL-REPORT.md`
-  - 依赖：—；被引用：—
-- [pending 项：财富自由=复利+退出权 是否可上收为一般机制，待跨域验证](../../../docs/getbrain-book-collision-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b6dbc81acbc4739f / pending 项：财富自由=复利+退出权 是否可上收为一般机制，待跨域验证
-  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [Perspectives on Mechanism Design in Economic Theory](../../../data/external-research/088-external-source-atlas-v1.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-dcd54c36c4ba8e99 / Perspectives on Mechanism Design in Economic Theory
-  - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
   - 依赖：—；被引用：—

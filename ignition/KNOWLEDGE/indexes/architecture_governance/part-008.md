@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [VERIFIED: 7 \(S120-014/021/030/039/045/047/053\)](../../../reports/external-research/121Q2V-verification-repair-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c3d9c20871a7710e / VERIFIED: 7 \(S120-014/021/030/039/045/047/053\)
+  - 来源：`reports/external-research/121Q2V-verification-repair-report.md`
+  - 依赖：—；被引用：—
+- [VERIFIED: 7 \(S120-021/030/035/039/045/047/053\)](../../../reports/external-research/121Q2W-final-consistency-seal-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5a6c961a77251254 / VERIFIED: 7 \(S120-021/030/035/039/045/047/053\)
+  - 来源：`reports/external-research/121Q2W-final-consistency-seal-report.md`
+  - 依赖：—；被引用：—
+- [Verified: Real titles returned, no errors](../../../docs/external-research/anysearch-usage.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8a7890bda279fbd5 / Verified: Real titles returned, no errors
+  - 来源：`docs/external-research/anysearch-usage.md`
+  - 依赖：—；被引用：—
+- [version and evidence boundaries. A passing Run, executor report, telemetry, memory/profile signal or](../../../reports/operations/ignition-129-step20-current-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e4368fac3fa21656 / version and evidence boundaries. A passing Run, executor report, telemetry, memory/profile signal or
+  - 来源：`reports/operations/ignition-129-step20-current-sync.md`
+  - 依赖：—；被引用：—
 - [version: which commit, artifact, data version, or time;](../../../docs/governance/non-sycophancy-output-protocol.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a34513656a810d49 / version: which commit, artifact, data version, or time;
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bcfa053414834bdd / \| Residual \| Classification \| Evidence boundary \| Task 130 disposition \|
   - 来源：`reports/operations/ignition-130-step11-residual-reclassification.md`
-  - 依赖：—；被引用：—
-- [\| retain source family and lineage questions \| source/evidence relation \| `SOURCE-BIND → SOURCE-FAMILY-ASSESS` \| duplica](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4e971e6c4ed869ef / \| retain source family and lineage questions \| source/evidence relation \| `SOURCE-BIND → SOURCE-FAMILY-ASSESS` \| duplica
-  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
-  - 依赖：—；被引用：—
-- [\| RETAIN_PROVISIONAL_MODEL \(for P5\) \| 必须有处理/结果对、时间方向、反事实/混杂因素识别 \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cdcbe1befba0b2d4 / \| RETAIN_PROVISIONAL_MODEL \(for P5\) \| 必须有处理/结果对、时间方向、反事实/混杂因素识别 \|
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：P5；被引用：—
-- [\| RETAIN_SCOPED_DEFINITION \(for P4\) \| 必须同时有双射、两个结构、保持运算、双向验证 \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d06c8735090f47ef / \| RETAIN_SCOPED_DEFINITION \(for P4\) \| 必须同时有双射、两个结构、保持运算、双向验证 \|
-  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：P4；被引用：—
-- [\| review 1241 terminal rows \| adjudication artifact \| `REVIEW → LOCAL TERMINAL` \| reviewer authority is scoped \| the nam](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2de71c2a98ffe4aa / \| review 1241 terminal rows \| adjudication artifact \| `REVIEW → LOCAL TERMINAL` \| reviewer authority is scoped \| the nam
-  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—

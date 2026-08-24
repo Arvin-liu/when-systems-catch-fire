@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 逃逸速度-确定性权衡函数 is adjudicated as METRIC: M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低确定性快速探索方](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D383 / Within the source-defined scope, 逃逸速度-确定性权衡函数 is adjudicated as METRIC: M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低确定性快速探索方
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D280；被引用：—
+- [Within the source-defined scope, 逆Weibull寿命验证函数 is adjudicated as ARGUMENT_SCHEMA: 逆Weibull寿命验证，系统β值由基础β和锁定强度决定。. This i](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D36 / Within the source-defined scope, 逆Weibull寿命验证函数 is adjudicated as ARGUMENT_SCHEMA: 逆Weibull寿命验证，系统β值由基础β和锁定强度决定。. This i
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 选择空间上下界函数 is adjudicated as RELATION: Ω_min = 2, Ω_max = C × T. This is a model-interna](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D487 / Within the source-defined scope, 选择空间上下界函数 is adjudicated as RELATION: Ω_min = 2, Ω_max = C × T. This is a model-interna
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 通道不对称 is adjudicated as RELATION: 通道不对称，N_asym = \|P_enter-P_exit\|/\(P_enter+P_exit\)。. Th](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D105 / Within the source-defined scope, 通道不对称 is adjudicated as RELATION: 通道不对称，N_asym = \|P_enter-P_exit\|/\(P_enter+P_exit\)。. Th
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9671e788ef46363b / \| PEND-034 \| 公开故事化 \| 任何故事化案例 \| L1 / L2 / L3 / pending \| 故事证明了点火框架正确 \| 故事化案例只帮助理解结构关系，不是证明 \| 公开前必须过风险检查 \|
   - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [\| Proof obligations \| 353 \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ec22fe6b09e6731c / \| Proof obligations \| 353 \|
-  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
-  - 依赖：—；被引用：—
-- [\| Proof priority \| 34 \| 9.6% \|](../../../reports/foundation-architecture/085-backlog-prioritization.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b34bb728f56817c3 / \| Proof priority \| 34 \| 9.6% \|
-  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
-  - 依赖：—；被引用：—
-- [\| Proof/evidence obligations 完整生成 \| ✅ \|](../../../reports/foundation-architecture/084-max-adjudication-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d6daa076214aa3a2 / \| Proof/evidence obligations 完整生成 \| ✅ \|
-  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
   - 依赖：—；被引用：—

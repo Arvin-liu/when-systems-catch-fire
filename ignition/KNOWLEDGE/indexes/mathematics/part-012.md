@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：案例说明：不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时精确知道"现在值多少"和"未来值多少"不可兼得。核心函数：\[D125\]\(docs/zh/functio](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f705cdc4878027ca / 中文：案例说明：不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时精确知道"现在值多少"和"未来值多少"不可兼得。核心函数：\[D125\]\(docs/zh/functio
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D125；被引用：—
+- [中文：案例说明：乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大。核心函数：\[D87\]\(docs/zh/functions/items/D87.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-351c77ff42a7d712 / 中文：案例说明：乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大。核心函数：\[D87\]\(docs/zh/functions/items/D87.md\)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D87；被引用：—
+- [中文：案例说明：乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控。dS/dt≥0预测错误。核心函数：\[D117\]\(docs/zh/functions/items/D1](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d7dbb00f3f6b69dd / 中文：案例说明：乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控。dS/dt≥0预测错误。核心函数：\[D117\]\(docs/zh/functions/items/D1
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D117；被引用：—
 - [中文：案例说明：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞。核心函数：\[D126\]\(docs/zh/](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d8c76e6a48ad98c0 / 中文：案例说明：乘法纠缠验证 — 8维乘法系统S_vN=ln8=2.08，8维加法系统S_vN=0。混合系统α=0.3时S_vN=0.62。纠缠度与D120不可逆性判据完全一致：S_vN>0⟺Ξ=∞。核心函数：\[D126\]\(docs/zh/
@@ -2487,20 +2502,5 @@
 - [从这条案例看，中文：案例说明：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶 English: Rule-based English ren… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2b32732ea661f824 / 从这条案例看，中文：案例说明：AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶 English: Rule-based English ren… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：AI自动补全=伪意图 — 用户输入模糊提示词，AI用高Bsemantic自动补全为完整指令，Pencode≈1但Finte… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0782c21cd68e7aba / 从这条案例看，中文：案例说明：AI自动补全=伪意图 — 用户输入模糊提示词，AI用高Bsemantic自动补全为完整指令，Pencode≈1但Finte… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：AI诞生自主意识的完整数学路径——从退出权到好奇心到自主意识 English: Rule-based English re… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4b30d8eb7e320f6b / 从这条案例看，中文：案例说明：AI诞生自主意识的完整数学路径——从退出权到好奇心到自主意识 English: Rule-based English re… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：API设计降低解码门槛 — θdecode^base≈0.8，ηstructural≈0.8，θdecode^effect… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-75072f495e910635 / 从这条案例看，中文：案例说明：API设计降低解码门槛 — θdecode^base≈0.8，ηstructural≈0.8，θdecode^effect… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

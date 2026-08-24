@@ -974,6 +974,11 @@
   - 可搜索名称：NFC-987e1bd60f30a3be / authority_changes: \[External Agent Federation R1\]\(./docs/architecture/external-agent-federation-r1.md\), \[federation inve
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [Bridge and live-boundary evidence](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-6cfda5b7442165e2 / Bridge and live-boundary evidence
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
 - [C-4 孝文帝汉化（认知/社会）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-198571f884c4f692 / C-4 孝文帝汉化（认知/社会）
@@ -2289,6 +2294,11 @@
   - 可搜索名称：NFC-6a0bf9ca15d33f8d / refs = tuple\(\(*receipt.validation_refs, *\(item.ref for item in receipt.artifact_refs\)\)\)
   - 来源：`agent_federation/convergence.py`
   - 依赖：—；被引用：—
+- [Regression and projection closure](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1eed912b1a5e3996 / Regression and projection closure
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
 - [repeated same-context outputs are not independent evidence;](../../../reports/architecture/121Q13-attention-distribution-compression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-13743091cfedc2b0 / repeated same-context outputs are not independent evidence;
@@ -2328,6 +2338,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-65fc92bf1b540b87 / Repository-local Task135 regression closure, deterministic projection, residual non-growth and content release-readiness
   - 来源：`agent-results/IGNITION-20260822-135-machine-receipt.json`
+  - 依赖：—；被引用：—
+- [Repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic projection closure, term](../../../agent-results/IGNITION-20260823-136-machine-receipt.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d371e2ee903d8004 / Repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic projection closure, term
+  - 来源：`agent-results/IGNITION-20260823-136-machine-receipt.json`
   - 依赖：—；被引用：—
 - [Residual Ledger R2 is exact and non-growing: one sealed historical Task104–106 residual, one observation-only SymPy envi](../../../agent-results/IGNITION-20260822-135-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-99ba426ef9f11dd0 / scope boundary, not a successful live-agent claim. OpenClaw is denied by the
   - 来源：`docs/architecture/federation-pilots-r1.md`
-  - 依赖：—；被引用：—
-- [Seeds: `agent_kernel_r0, agent_runtime_r0, current_state, foundation, historical_reports, human_knowledge_surfaces, incr](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9db5766f5230fba6 / Seeds: `agent_kernel_r0, agent_runtime_r0, current_state, foundation, historical_reports, human_knowledge_surfaces, incr
-  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
-  - 依赖：—；被引用：—
-- [seek external evidence;](../../../docs/architecture/attention-attractor-control-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-999a87a59cc019c9 / seek external evidence;
-  - 来源：`docs/architecture/attention-attractor-control-plane.md`
-  - 依赖：—；被引用：—
-- [self._seen_memory_ids.add\(projection.memory_id\)](../../../agent_federation/convergence.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-89aa653a65f9fa97 / self._seen_memory_ids.add\(projection.memory_id\)
-  - 来源：`agent_federation/convergence.py`
   - 依赖：—；被引用：—

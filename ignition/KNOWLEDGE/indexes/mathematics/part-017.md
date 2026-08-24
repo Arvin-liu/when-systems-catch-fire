@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [未收敛新发现函数化（4条），验证了深层同构在物理系统、认知系统、AI系统中的普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a40c1a2c0f4b73f5 / 未收敛新发现函数化（4条），验证了深层同构在物理系统、认知系统、AI系统中的普适性。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [未改动：函数定义、`JIP = α·log\(W\) + β·log\(T\)` 公式、判定理由、数学推导过程、有效条件、收敛状态、关联案例（C-0781—C-0784）、原文捞回注释、扩展注释、047 边界扩展块、Ψ₀ 判定（J⁺=1, J⁻=0](../../../outputs/audit/d583-portable-source-reference-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-93983ebc48b068f8 / 未改动：函数定义、`JIP = α·log\(W\) + β·log\(T\)` 公式、判定理由、数学推导过程、有效条件、收敛状态、关联案例（C-0781—C-0784）、原文捞回注释、扩展注释、047 边界扩展块、Ψ₀ 判定（J⁺=1, J⁻=0
+  - 来源：`outputs/audit/d583-portable-source-reference-audit-20260711.md`
+  - 依赖：—；被引用：—
+- [未来视角-思考维度函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D539 / 未来视角-思考维度函数 / D539
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D1, D39, D451, D541；被引用：NFC-a470243da7f6c7aa, NFC-a8b2ed256512e1bd, NFC-bd39c38a030896e8
 - [未来解除 quarantine 必须提交新证据并只提升相应轴：补数学定义不能自动提升 E，补真实数据不能自动补齐 M。任何处置升级都必须更新依赖消费者、公共 claim lineage 和回弹报告。](../../../docs/foundation/function-asset-registry-migration-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ecda5bbd3bbe5a6b / 未来解除 quarantine 必须提交新证据并只提升相应轴：补数学定义不能自动提升 E，补真实数据不能自动补齐 M。任何处置升级都必须更新依赖消费者、公共 claim lineage 和回弹报告。
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-3b2775917d9eafe2 / 已迁移的历史函数来源/0065-D16-二次窗口判定.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D16；被引用：—
-- [已迁移的历史函数来源/0066-D17-情绪信号分层函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7a92cc029177664a / 已迁移的历史函数来源/0066-D17-情绪信号分层函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D17；被引用：—
-- [已迁移的历史函数来源/0067-D18-情绪稳态临界.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a061232318cb5688 / 已迁移的历史函数来源/0067-D18-情绪稳态临界.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D18；被引用：—
-- [已迁移的历史函数来源/0068-D19-情绪注入退出权信号.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d8d7351db41a03fd / 已迁移的历史函数来源/0068-D19-情绪注入退出权信号.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D19；被引用：—

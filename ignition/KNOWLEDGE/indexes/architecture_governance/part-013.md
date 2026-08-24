@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [证据制度卡片：医学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-20c55d3f4101e0ff / 证据制度卡片：医学
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据制度卡片：历史学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-53ded72f139fce1b / 证据制度卡片：历史学
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据制度卡片：工程学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e9a2f16acb5bf30d / 证据制度卡片：工程学
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [证据制度卡片：教育学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a0d3493f7fca95ba / 证据制度卡片：教育学
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [证据制度卡片：文学](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-cffd202f07eed74f / 证据制度卡片：文学

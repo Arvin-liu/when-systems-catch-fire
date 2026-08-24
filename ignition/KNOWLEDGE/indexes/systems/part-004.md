@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| MCF \| nodes plus source-target edges \| simple graph representation PASS; typed relation, residue, and claim ceiling ab](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-60256c49058146f7 / \| MCF \| nodes plus source-target edges \| simple graph representation PASS; typed relation, residue, and claim ceiling ab
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
+  - 依赖：—；被引用：—
+- [\| METADATA_VERIFIED \| 67 \|](../../../reports/external-research/120-function-paradigm-atlas-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cab0cf594e2c74c5 / \| METADATA_VERIFIED \| 67 \|
+  - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
+  - 依赖：—；被引用：—
 - [\| METADATA_VERIFIED \| 67 \| 79.8% \|](../../../data/external-research/120-function-paradigm-atlas/120-provider-and-tool-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7eca5fc642db6cca / \| METADATA_VERIFIED \| 67 \| 79.8% \|
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-bb1760ca3124a8cf / 尝试下一层时，检查它是否改变问题、定义、边界、观察者、机制、干预、残余、潜题或此前层的意义。若全部没有改变，只是换词、堆例子或增加宏大感，应停止。
   - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [尺度域：组织（亲族/谋克）、战场（单位—中军）、政体（动员—投附—财政）、区域（三方外交与战争）。桥：组织凝聚到战场表现、战场胜利到政体资源、政体变化到区域联盟。桥均标为 `mechanism_hypothesis` 或 `unknown_](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6ac454fd58e634a0 / 尺度域：组织（亲族/谋克）、战场（单位—中军）、政体（动员—投附—财政）、区域（三方外交与战争）。桥：组织凝聚到战场表现、战场胜利到政体资源、政体变化到区域联盟。桥均标为 `mechanism_hypothesis` 或 `unknown_
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [尺度错配（个体机制误写成社会规律）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2e6f7a542e1b8cd8 / 尺度错配（个体机制误写成社会规律）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—

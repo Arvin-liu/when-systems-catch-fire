@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [pending 项：财富自由=复利+退出权 是否可上收为一般机制，待跨域验证](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b6dbc81acbc4739f / pending 项：财富自由=复利+退出权 是否可上收为一般机制，待跨域验证
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [Perspectives on Mechanism Design in Economic Theory](../../../data/external-research/088-external-source-atlas-v1.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-dcd54c36c4ba8e99 / Perspectives on Mechanism Design in Economic Theory
+  - 来源：`data/external-research/088-external-source-atlas-v1.jsonl`
+  - 依赖：—；被引用：—
 - [Pessimistic Causal Reinforcement Learning with Mediators for Confounded Offline Data](../../../data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-f6b2c5969428a3ba / Pessimistic Causal Reinforcement Learning with Mediators for Confounded Offline Data
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-090f0918480fa227 / \| Kalman 1960, DOI `10.1115/1.3662552` \| State-space filtering and prediction boundaries. \| Do not universalize linear/G
   - 来源：`reports/research/121Q22-probability-systems-source-map.md`
-  - 依赖：—；被引用：—
-- [\| MCF \| nodes plus source-target edges \| simple graph representation PASS; typed relation, residue, and claim ceiling ab](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-60256c49058146f7 / \| MCF \| nodes plus source-target edges \| simple graph representation PASS; typed relation, residue, and claim ceiling ab
-  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
-  - 依赖：—；被引用：—
-- [\| METADATA_VERIFIED \| 67 \|](../../../reports/external-research/120-function-paradigm-atlas-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cab0cf594e2c74c5 / \| METADATA_VERIFIED \| 67 \|
-  - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
   - 依赖：—；被引用：—

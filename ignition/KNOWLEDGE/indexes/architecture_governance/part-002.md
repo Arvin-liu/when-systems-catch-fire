@@ -1159,6 +1159,11 @@
   - 可搜索名称：NFC-303fc35b52688f52 / authority_changes: the bridge adds no Owner, provider, channel, browser, remote Git, configuration, billing, production,
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: the terminal result adds no Owner, provider, channel, browser, remote Git, executor-configuration, bi](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1d191dff026a1f54 / authority_changes: the terminal result adds no Owner, provider, channel, browser, remote Git, executor-configuration, bi
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Autodiff, JIT ELBO evaluation and trace transforms generate execution/gradients but do not provide a verified compiler o](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5b554ffd3275b7dc / Autodiff, JIT ELBO evaluation and trace transforms generate execution/gradients but do not provide a verified compiler o
@@ -2219,6 +2224,11 @@
   - 可搜索名称：NFC-b2d9d3e930fd331f / current_path_manifest: `classification-manifest.jsonl` remains the Current generated snapshot; the terminal candidate ha
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [current_path_manifest: final Task136 closure records `3141` tracked paths and `3141` manifest paths with missing, stale,](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d5624df880a9a12b / current_path_manifest: final Task136 closure records `3141` tracked paths and `3141` manifest paths with missing, stale,
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [current_path_manifest: the final manifest-last receipt records the live tree with missing, stale, unresolved, duplicate,](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-d3dfa545450e61b0 / current_path_manifest: the final manifest-last receipt records the live tree with missing, stale, unresolved, duplicate,
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-758619b1e4ce1efb / Deep semantic review of 30 evidence cards
   - 来源：`reports/external-research/121A-night-recovery-report.md`
-  - 依赖：—；被引用：—
-- [Deep semantic review** of each evidence card:](../../../data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ddf79e0b3122df43 / Deep semantic review** of each evidence card:
-  - 来源：`data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md`
-  - 依赖：—；被引用：—
-- [def __call__\(self, argv: Sequence\[str\], timeout_seconds: float\) -> SafeProcessResult:](../../../agent_federation/pilots.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C69B8047FC1C125E / def __call__\(self, argv: Sequence\[str\], timeout_seconds: float\) -> SafeProcessResult: / IMPLICIT-C69B8047FC1C125E / IMPLICIT-5E8BC79519B54591
-  - 来源：`agent_federation/pilots.py`
   - 依赖：—；被引用：—

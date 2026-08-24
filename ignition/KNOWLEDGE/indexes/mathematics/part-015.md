@@ -6,6 +6,21 @@
 
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e5c95f9923085208 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D357；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1c46c5e67c844b69 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D358；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-59c69e4dbb2f1de5 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D359；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d4b97988fcac4b22 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D360；被引用：—
@@ -2489,18 +2504,3 @@
   - 可搜索名称：D470 / 幽灵跳变阻尼函数 / D470
   - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
   - 依赖：D451, D469, D541；被引用：NFC-4c3ac42ce6581d0d, NFC-bbe39573b1c85c00, NFC-c0fdf5697b242f71, NFC-c5fb92db75a81dd0
-- [应约者感知退化](../../../data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D6 / 应约者感知退化 / D6
-  - 来源：`data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json`
-  - 依赖：D1, D90；被引用：NFC-60e0b72999f6044f, NFC-9c25a0bf3563b0d5
-- [应约者退出的成本](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5 / 应约者退出的成本 / A5
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：A1, A3, A8；被引用：A9, D24, D481, D482
-- [应约者退出的成本，八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step\(C_exit\(i\) - θ_C\(i\)\)。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2b81469b8a77a7b4 / 应约者退出的成本，八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step\(C_exit\(i\) - θ_C\(i\)\)。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—

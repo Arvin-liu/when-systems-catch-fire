@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| Proof obligations \| 353 \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ec22fe6b09e6731c / \| Proof obligations \| 353 \|
+  - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- [\| Proof priority \| 34 \| 9.6% \|](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b34bb728f56817c3 / \| Proof priority \| 34 \| 9.6% \|
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：—；被引用：—
+- [\| Proof/evidence obligations 完整生成 \| ✅ \|](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d6daa076214aa3a2 / \| Proof/evidence obligations 完整生成 \| ✅ \|
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
 - [\| proof_obligation \| 5 / 353 \| 173 \(49.0%\) \| 100% \|](../../../reports/foundation-architecture/085-084-truth-status-correction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4fbe77283efe2353 / \| proof_obligation \| 5 / 353 \| 173 \(49.0%\) \| 100% \|
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-524a14c244158ab2 / 中文：案例说明：不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现。核心函数：\[D158\]\(docs/zh/functions/items/D158.md\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D158；被引用：—
-- [中文：案例说明：不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时精确知道"现在值多少"和"未来值多少"不可兼得。核心函数：\[D125\]\(docs/zh/functio](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f705cdc4878027ca / 中文：案例说明：不确定性原理验证 — 职业转型决策：精确评估当前岗位价值（Δε小）需要长期观察，但此时行业趋势（dε/dt）已经变化。同时精确知道"现在值多少"和"未来值多少"不可兼得。核心函数：\[D125\]\(docs/zh/functio
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D125；被引用：—
-- [中文：案例说明：乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大。核心函数：\[D87\]\(docs/zh/functions/items/D87.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-351c77ff42a7d712 / 中文：案例说明：乘法临界漂移验证 — 改善0.3→0.5（+67%）乘积+67%，改善0.8→1.0（+25%）乘积+25%，改善最接近零的因子效果更大。核心函数：\[D87\]\(docs/zh/functions/items/D87.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D87；被引用：—
-- [中文：案例说明：乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控。dS/dt≥0预测错误。核心函数：\[D117\]\(docs/zh/functions/items/D1](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d7dbb00f3f6b69dd / 中文：案例说明：乘法系统Shannon熵反常 — 3维乘法系统门控区微观态数=2维积分 vs 存活区=3维积分，门控区熵更低但系统趋向门控。dS/dt≥0预测错误。核心函数：\[D117\]\(docs/zh/functions/items/D1
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D117；被引用：—

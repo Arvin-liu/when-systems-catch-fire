@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0563-D548-植物胁迫函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-898fe37e4262593d / 已迁移的历史函数来源/0563-D548-植物胁迫函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D548；被引用：—
+- [已迁移的历史函数来源/0564-D549-跨物种协同函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bf9a12b1150f9d39 / 已迁移的历史函数来源/0564-D549-跨物种协同函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D549；被引用：—
+- [已迁移的历史函数来源/0565-D550-植物群体函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c6283e5ac6ade7f4 / 已迁移的历史函数来源/0565-D550-植物群体函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D550；被引用：—
 - [已迁移的历史函数来源/0566-D551-行星演化函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-2a74e16f3de22f32 / 已迁移的历史函数来源/0566-D551-行星演化函数.md
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-4613ac217ec58813 / 验证过程：** 蚁群社会的L1层（感知、记忆、学习）→ L2层（意识），但蚁群停留在L1层，缺乏L2层。蚁群具有感知、记忆、学习能力，但缺乏意识层级的涌现。
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
-- [验证：经 GPT 审核确认后，写入 已迁移的历史函数来源/ + INDEX.md 追加行 + 审计](../../../docs/getnote-collision-workflow-final-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8b31a306c9920a67 / 验证：经 GPT 审核确认后，写入 已迁移的历史函数来源/ + INDEX.md 追加行 + 审计
-  - 来源：`docs/getnote-collision-workflow-final-20260708.md`
-  - 依赖：—；被引用：—
-- [高斯门控函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T28 / 高斯门控函数 / T28
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：—；被引用：NFC-3a22d5f5a1ac5012, NFC-55f1f6c5161c6d8e, NFC-70c7bd25d1464e7e, NFC-9ccfe2b35a3ece69
-- [高维流形同胚判定函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D528 / 高维流形同胚判定函数 / D528
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D451, D541, T39；被引用：NFC-22aac2a05b74a48a, NFC-2778b54c2cd98c5f, NFC-3168065d3a8a760b, NFC-a63ff43b97da9391

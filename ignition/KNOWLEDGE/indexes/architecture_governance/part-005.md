@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Evidence for the gap:](../../../templates/operations/task-command-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1b426ff9d3d84165 / Evidence for the gap:
+  - 来源：`templates/operations/task-command-template.md`
+  - 依赖：—；被引用：—
+- [evidence grades;](../../../../.github/SUPPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-edb4086847148fd2 / evidence grades;
+  - 来源：`.github/SUPPORT.md`
+  - 依赖：—；被引用：—
+- [Evidence is recorded in `ignition/data/operations/iterations/132/step11-residual-audit.json`. Claim ceiling: repository-](../../../reports/operations/ignition-132-step11-residual-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5e952dac50135a6f / Evidence is recorded in `ignition/data/operations/iterations/132/step11-residual-audit.json`. Claim ceiling: repository-
+  - 来源：`reports/operations/ignition-132-step11-residual-audit.md`
+  - 依赖：—；被引用：—
 - [Evidence ledger summary](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-168252260a578dfc / Evidence ledger summary
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5f6540278954fc1f / Local executors: OpenClaw `2026.7.1-2`, Hermes `v0.20.0`, Codex `0.144.4`.
   - 来源：`reports/operations/ignition-122-federation-progress.md`
-  - 依赖：—；被引用：—
-- [Local summertime near-surface air-temperature associations with measured canopy-cover exposures were supported within th](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cb6f0318da3c5ebc / Local summertime near-surface air-temperature associations with measured canopy-cover exposures were supported within th
-  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
-  - 依赖：—；被引用：—
-- [LoRA adapters as reusable artifacts stored in a library. Retrieved and merged at inference. This is a practical artifact](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ff6df4f67cae4990 / LoRA adapters as reusable artifacts stored in a library. Retrieved and merged at inference. This is a practical artifact
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json`
-  - 依赖：—；被引用：—
-- [LoRA matrices and the derived task-to-adapter catalog are explicit reusable artifacts.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-80795deeb76d25bb / LoRA matrices and the derived task-to-adapter catalog are explicit reusable artifacts.
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

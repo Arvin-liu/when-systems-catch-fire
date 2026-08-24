@@ -1,8 +1,8 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 29,
-  "active_current_ordinals": [27, 28, 29],
+  "entry_count": 30,
+  "active_current_ordinals": [27, 28, 29, 30],
   "historical_entry_count": 26,
   "legacy_profile_count": 6,
   "profiles": {
@@ -51,6 +51,7 @@
     {"ordinal": 26, "date": "2026-08-22", "label": "IGNITION-20260822-134-RESIDUAL-DEBT-PROJECTION-HYGIENE-R1 — terminal Current release candidate", "profile": "historical-current-r0", "section_sha256": "74bca372b893400c9ed77693b21ec395fee7c961bdbd243b3a878ba1f7599bb7"},
     {"ordinal": 27, "date": "2026-08-23", "label": "IGNITION-20260822-135-FULL-REGRESSION-CLOSURE-TEST-ENVIRONMENT-R1 — canonical Current source transition", "profile": "current-r1", "section_sha256": "3a636113dce106bf4683e5640be870ff50df77c7bfd7942953b789eee07d236e"},
     {"ordinal": 28, "date": "2026-08-23", "label": "IGNITION-20260822-135-FULL-REGRESSION-CLOSURE-TEST-ENVIRONMENT-R1 — terminal Current release candidate", "profile": "current-r1", "section_sha256": "87dd755ef4269d4aac18f0ef7fa9ba1e3fd5953393986173e23c7d5b4308d755"},
-    {"ordinal": 29, "date": "2026-08-24", "label": "IGNITION-20260823-136-LIVE-EXTERNAL-EXECUTOR-BRIDGE-R1 — current architecture transition", "profile": "current-r1", "section_sha256": "5162796f3a6e7cc7e1194d10dcf045a1f6ae76845eceea2021278d2a1bf25b3e"}
+    {"ordinal": 29, "date": "2026-08-24", "label": "IGNITION-20260823-136-LIVE-EXTERNAL-EXECUTOR-BRIDGE-R1 — current architecture transition", "profile": "current-r1", "section_sha256": "afda5ce698a12fa751119f60cc7a5440c4385787be808ce8fdab392653576e25"},
+    {"ordinal": 30, "date": "2026-08-24", "label": "IGNITION-20260823-136-LIVE-EXTERNAL-EXECUTOR-BRIDGE-R1 — terminal Current release candidate", "profile": "current-r1", "section_sha256": "0229347ac5d9f27a2116e86b1507620d4a2e21322e81d426fe8a08ccc6512d2e"}
   ]
 }

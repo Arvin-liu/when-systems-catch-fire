@@ -229,6 +229,11 @@
   - 可搜索名称：NFC-1fa3fc37eef2bc77 / delta: registered the R4 Steering / Intent / Goal / Obligation R1 control surface inside the existing Ignition OS / driv
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [delta: terminalizes Live External Executor Bridge R1 after the exact candidate and fresh-clone natural full regressions,](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-11afd7b36b268e93 / delta: terminalizes Live External Executor Bridge R1 after the exact candidate and fresh-clone natural full regressions,
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [delta: terminalizes Task134 after residual non-growth, Current generated path-manifest closure, eleven-item Human Surfac](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-2b271ed98e21f997 / delta: terminalizes Task134 after residual non-growth, Current generated path-manifest closure, eleven-item Human Surfac
@@ -2497,10 +2502,5 @@
 - [title: "涨落-遮蔽定理 / 涨落-obscuration定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4C01FBCBD9249250 / title: "涨落-遮蔽定理 / 涨落-obscuration定理" / IMPLICIT-4C01FBCBD9249250
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-60BB93A67075081C / title: "炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞" / IMPLICIT-60BB93A67075081C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

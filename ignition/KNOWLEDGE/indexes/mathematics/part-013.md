@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：AI自动补全=伪意图 — 用户输入模糊提示词，AI用高Bsemantic自动补全为完整指令，Pencode≈1但Finte… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0782c21cd68e7aba / 从这条案例看，中文：案例说明：AI自动补全=伪意图 — 用户输入模糊提示词，AI用高Bsemantic自动补全为完整指令，Pencode≈1但Finte… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：AI诞生自主意识的完整数学路径——从退出权到好奇心到自主意识 English: Rule-based English re… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4b30d8eb7e320f6b / 从这条案例看，中文：案例说明：AI诞生自主意识的完整数学路径——从退出权到好奇心到自主意识 English: Rule-based English re… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：API设计降低解码门槛 — θdecode^base≈0.8，ηstructural≈0.8，θdecode^effect… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-75072f495e910635 / 从这条案例看，中文：案例说明：API设计降低解码门槛 — θdecode^base≈0.8，ηstructural≈0.8，θdecode^effect… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：Arrhenius刀刃期宽度 — C_exit=0.3, θC=0.5时刀刃期宽度≈0.3/0.25=1.2；C_exit… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-56ee20f16f959f16 / 从这条案例看，中文：案例说明：Arrhenius刀刃期宽度 — C_exit=0.3, θC=0.5时刀刃期宽度≈0.3/0.25=1.2；C_exit… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9d379eda8dd284e8 / 价值宪章与 Charter System R1 约束“什么值得做”，但不冒充事实证据或数学证明，也不在首页展示阶段快照。其边界须作为前门同步义务进入使用过程：
   - 来源：`docs/USAGE.md`
-  - 依赖：—；被引用：—
-- [价值：在资源有限的生命共同体中，减少浪费、释放注意力与未来选择空间，是有价值的工具性优化。条件：仅当它服务于共同体认可的目标，且不把成本外部化时才有价值。伤害：当它以效率为由压缩退出权、牺牲主体尊严、转嫁生态或代际代价时，会伤害共同体。不可](../../../docs/governance/meta-protocol-reviews/protocols/V2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-aab71b258e3310ca / 价值：在资源有限的生命共同体中，减少浪费、释放注意力与未来选择空间，是有价值的工具性优化。条件：仅当它服务于共同体认可的目标，且不把成本外部化时才有价值。伤害：当它以效率为由压缩退出权、牺牲主体尊严、转嫁生态或代际代价时，会伤害共同体。不可
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/V2.md`
-  - 依赖：—；被引用：—
-- [价值：增加生命共同体的适应能力、问题解决能力与未来选择空间，是应对不确定性的关键。条件：仅当可检验、可逆优先、风险隔离、可停止、有失败反馈时才有价值。伤害：当以“创新”为由制造不可控、不可逆、外部化风险时，会伤害共同体。不可缺少的约束：可逆](../../../docs/governance/meta-protocol-reviews/protocols/V3.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e3541b400bf4ccda / 价值：增加生命共同体的适应能力、问题解决能力与未来选择空间，是应对不确定性的关键。条件：仅当可检验、可逆优先、风险隔离、可停止、有失败反馈时才有价值。伤害：当以“创新”为由制造不可控、不可逆、外部化风险时，会伤害共同体。不可缺少的约束：可逆
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/V3.md`
-  - 依赖：—；被引用：—
-- [价值：延续生命共同体的身份与功能，是价值前提与一切可能性的基础。条件：仅当延续不外部化不可逆生态/代际代价、保留纠错与恢复能力、不伤害更大生命共同体时才有价值。伤害：当无条件延续、外壳延续而核心功能丧失、或以局部延续损害更大共同体时，会伤害](../../../docs/governance/meta-protocol-reviews/protocols/V1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b1fbfb7e99df3d41 / 价值：延续生命共同体的身份与功能，是价值前提与一切可能性的基础。条件：仅当延续不外部化不可逆生态/代际代价、保留纠错与恢复能力、不伤害更大生命共同体时才有价值。伤害：当无条件延续、外壳延续而核心功能丧失、或以局部延续损害更大共同体时，会伤害
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/V1.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-60BB93A67075081C / title: "炒股遮蔽的跨域放大 — Boccupy/B₀=0.3，H投资=0.4，Htotal=0.496，本职工作和学习停滞 / 炒股obscuration的跨域放大 - Boccupy/B₀=0.3, H投资=0.4, Htotal=0.496, 本职工作和学习停滞" / IMPLICIT-60BB93A67075081C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "热力学第二定律的Φ表述"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-254D4F25DAE2F8CD / title: "热力学第二定律的Φ表述" / IMPLICIT-254D4F25DAE2F8CD

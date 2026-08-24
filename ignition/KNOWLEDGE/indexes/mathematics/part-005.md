@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Git tags, serialized .ncg graphs, LFS artifacts, manifests and READMEs provide substantial provenance, but hashes, locke](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-533b39a5891c8e18 / Git tags, serialized .ncg graphs, LFS artifacts, manifests and READMEs provide substantial provenance, but hashes, locke
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [Goodman et al. full byte-identical official UAI/PMLR paper, arXiv minor-corrections version and registered HTML review:](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-c0213a52f7f0a783 / Goodman et al. full byte-identical official UAI/PMLR paper, arXiv minor-corrections version and registered HTML review:
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-a3206d0a3d3622fd / If upstream objects D_{T4} exist, compose F_{T4}=N\(⊕_{g∈D_{T4}} g\); otherwise treat F_{T4} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T4；被引用：—
-- [If upstream objects D_{T5} exist, compose F_{T5}=N\(⊕_{g∈D_{T5}} g\); otherwise treat F_{T5} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-11e83896569178bc / If upstream objects D_{T5} exist, compose F_{T5}=N\(⊕_{g∈D_{T5}} g\); otherwise treat F_{T5} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T5；被引用：—

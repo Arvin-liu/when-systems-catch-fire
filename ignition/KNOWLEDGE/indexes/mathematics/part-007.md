@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [PROVED 必须链接受支持后端或完整、待审的人类证明工件。](../../../FOUNDATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2f240aeb81d1ece5 / PROVED 必须链接受支持后端或完整、待审的人类证明工件。
+  - 来源：`FOUNDATION.md`
+  - 依赖：—；被引用：—
+- [Proved:** the latent Foundation drift is repaired; every Git path is now governed by a fast, always-on](../../../docs/foundation/task-107-incident-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-32099ff811b71c26 / Proved:** the latent Foundation drift is repaired; every Git path is now governed by a fast, always-on
+  - 来源：`docs/foundation/task-107-incident-report.md`
+  - 依赖：—；被引用：—
 - [PROVED_THEOREM** — claim is a provable theorem; update proof_status and confidence](../../../reports/foundation-architecture/083-max-queue-readiness.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8635c6847b124d4e / PROVED_THEOREM** — claim is a provable theorem; update proof_status and confidence
@@ -339,9 +349,9 @@
   - 可搜索名称：NFC-8e86064bb3e8e211 / release_lifecycle: content-owned `RELEASE_READY`, current task terminal, publication authority `REMOTE_REF_OBSERVATION`,
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
-- [release_lifecycle: task `IGNITION-20260823-136`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；e](../../../AI-HANDOFF.md)
+- [release_lifecycle: task `IGNITION-20260823-136`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVAT](../../../AI-HANDOFF.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-897774f48b44e3b1 / release_lifecycle: task `IGNITION-20260823-136`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；e
+  - 可搜索名称：NFC-873196ba34fb80e9 / release_lifecycle: task `IGNITION-20260823-136`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVAT
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [remote `refs/heads/main`, and passed the existing lifecycle validator.](../../../reports/operations/ignition-131-step00-publication-paradox-audit.md)
@@ -1353,6 +1363,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-517c1107f0277504 / The formal PLoT hypothesis identifies reusable concepts with stochastic functions in a universal PPL, combining probabil
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The formal result and machine receipt are candidate-local closure evidence. They deliberately do not embed a final relea](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6fde6b94c7f544c8 / The formal result and machine receipt are candidate-local closure evidence. They deliberately do not embed a final relea
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
   - 依赖：—；被引用：—
 - [The formal result and machine receipt are candidate-local closure evidence. They do not self-assert the final commit SHA](../../../agent-results/IGNITION-20260822-135-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2487,20 +2502,5 @@
 - [title: "元同构律跨文明验证函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-65dbf4378163188d / title: "元同构律跨文明验证函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "元层面收敛与子系统展开冲突函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A72385396C87993F / title: "元层面收敛与子系统展开冲突函数" / IMPLICIT-A72385396C87993F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "充分条件三层函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2FD3F888DF386F95 / title: "充分条件三层函数" / IMPLICIT-2FD3F888DF386F95
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "充分条件三层函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cd0d27cda8d5bf00 / title: "充分条件三层函数"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

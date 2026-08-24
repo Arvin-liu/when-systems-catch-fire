@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [应约者感知退化](../../../data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D6 / 应约者感知退化 / D6
+  - 来源：`data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json`
+  - 依赖：D1, D90；被引用：NFC-60e0b72999f6044f, NFC-9c25a0bf3563b0d5
+- [应约者退出的成本](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5 / 应约者退出的成本 / A5
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：A1, A3, A8；被引用：A9, D24, D481, D482
+- [应约者退出的成本，八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step\(C_exit\(i\) - θ_C\(i\)\)。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2b81469b8a77a7b4 / 应约者退出的成本，八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step\(C_exit\(i\) - θ_C\(i\)\)。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
 - [底层数据：`data/meta-protocols/meta-protocols.json`（status=`candidate_formalized`，assertion_level=L2）。](../../../docs/protocols/protocol-index.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-fa35d631a93c8041 / 底层数据：`data/meta-protocols/meta-protocols.json`（status=`candidate_formalized`，assertion_level=L2）。
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-7b4d5756ad8bc8e5 / 未收敛新发现函数化（4条），验证了时间尺度同构在生物系统、知识系统、组织系统中的普适性。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [未收敛新发现函数化（4条），验证了深层同构在物理系统、认知系统、AI系统中的普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a40c1a2c0f4b73f5 / 未收敛新发现函数化（4条），验证了深层同构在物理系统、认知系统、AI系统中的普适性。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [未改动：函数定义、`JIP = α·log\(W\) + β·log\(T\)` 公式、判定理由、数学推导过程、有效条件、收敛状态、关联案例（C-0781—C-0784）、原文捞回注释、扩展注释、047 边界扩展块、Ψ₀ 判定（J⁺=1, J⁻=0](../../../outputs/audit/d583-portable-source-reference-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-93983ebc48b068f8 / 未改动：函数定义、`JIP = α·log\(W\) + β·log\(T\)` 公式、判定理由、数学推导过程、有效条件、收敛状态、关联案例（C-0781—C-0784）、原文捞回注释、扩展注释、047 边界扩展块、Ψ₀ 判定（J⁺=1, J⁻=0
-  - 来源：`outputs/audit/d583-portable-source-reference-audit-20260711.md`
-  - 依赖：—；被引用：—
-- [未来视角-思考维度函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D539 / 未来视角-思考维度函数 / D539
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D1, D39, D451, D541；被引用：NFC-a470243da7f6c7aa, NFC-a8b2ed256512e1bd, NFC-bd39c38a030896e8

@@ -384,6 +384,11 @@
   - 可搜索名称：NFC-f65ab18ca10355af / Current version: Ignition is the driver and OS / orchestration-governance layer for a bounded Agent Platform repository
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
+- [current_formal_task: `IGNITION-20260823-136` is terminal with formal ordinal `136`; `current_iteration_boundary=136` rem](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-02ca70eb441cb348 / current_formal_task: `IGNITION-20260823-136` is terminal with formal ordinal `136`; `current_iteration_boundary=136` rem
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [current_lifecycle_gated_whole_project_synchronization_method_only](../../../reports/operations/121Q25C-completion-seal.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5f557c45a7203029 / current_lifecycle_gated_whole_project_synchronization_method_only
@@ -391,7 +396,7 @@
   - 依赖：—；被引用：—
 - [CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.13.0", "hidden_components": 12, "historical_map_version"](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f4957cdcb6a5d854 / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.13.0", "hidden_components": 12, "historical_map_version"
+  - 可搜索名称：NFC-7e3f5208a803495b / CURRENT_SNAPSHOT architecture_counts={"current_map_version": "0.13.0", "hidden_components": 12, "historical_map_version"
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [D-meta 元同构函数](../../../docs/phi_meta_law.md)
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-807fc56b5c9e4973 / git diff confirms no modifications to architecture-structure-freeze-v1.json, 已迁移的历史函数来源/, 已迁移的历史案例来源/
   - 来源：`data/external-research/104-authoritative-selection-decisions.jsonl`
-  - 依赖：—；被引用：—
-- [Git tags, serialized .ncg graphs, LFS artifacts, manifests and READMEs provide substantial provenance, but hashes, locke](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-533b39a5891c8e18 / Git tags, serialized .ncg graphs, LFS artifacts, manifests and READMEs provide substantial provenance, but hashes, locke
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

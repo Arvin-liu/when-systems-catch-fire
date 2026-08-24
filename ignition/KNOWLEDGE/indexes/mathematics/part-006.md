@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{T5} exist, compose F_{T5}=N\(⊕_{g∈D_{T5}} g\); otherwise treat F_{T5} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-11e83896569178bc / If upstream objects D_{T5} exist, compose F_{T5}=N\(⊕_{g∈D_{T5}} g\); otherwise treat F_{T5} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T5；被引用：—
 - [If upstream objects D_{T6} exist, compose F_{T6}=N\(⊕_{g∈D_{T6}} g\); otherwise treat F_{T6} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e70f354f1c49d068 / If upstream objects D_{T6} exist, compose F_{T6}=N\(⊕_{g∈D_{T6}} g\); otherwise treat F_{T6} as an axiom seed.
@@ -1247,6 +1252,11 @@
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified `517510aed545ff440c3464536ba2964c94e5](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-86ba91e8a2af0dda / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified `517510aed545ff440c3464536ba2964c94e5
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified Task135 baseline `3acf15ea4c1b1c27eb6](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1fa31d27bf7585a3 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified Task135 baseline `3acf15ea4c1b1c27eb6
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the Task 130 baseline until the required terminal clo](../../../STATE-CHANGELOG.md)
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-845322a9cf4838f2 / Protocol 层描述生成规则；案例验证的是函数与框架，而非协议本身作为独立资产被采纳。
   - 来源：`docs/protocols/protocol-architecture.md`
-  - 依赖：—；被引用：—
-- [PROVED 必须链接受支持后端或完整、待审的人类证明工件。](../../../FOUNDATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2f240aeb81d1ece5 / PROVED 必须链接受支持后端或完整、待审的人类证明工件。
-  - 来源：`FOUNDATION.md`
-  - 依赖：—；被引用：—
-- [Proved:** the latent Foundation drift is repaired; every Git path is now governed by a fast, always-on](../../../docs/foundation/task-107-incident-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-32099ff811b71c26 / Proved:** the latent Foundation drift is repaired; every Git path is now governed by a fast, always-on
-  - 来源：`docs/foundation/task-107-incident-report.md`
   - 依赖：—；被引用：—

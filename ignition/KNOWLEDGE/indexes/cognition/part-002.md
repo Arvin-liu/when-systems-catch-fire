@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Seeds: `agent_kernel_r0, agent_runtime_r0, current_state, foundation, historical_reports, human_knowledge_surfaces, incr](../../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9db5766f5230fba6 / Seeds: `agent_kernel_r0, agent_runtime_r0, current_state, foundation, historical_reports, human_knowledge_surfaces, incr
+  - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [seek external evidence;](../../../docs/architecture/attention-attractor-control-plane.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-999a87a59cc019c9 / seek external evidence;
+  - 来源：`docs/architecture/attention-attractor-control-plane.md`
+  - 依赖：—；被引用：—
+- [self._seen_memory_ids.add\(projection.memory_id\)](../../../agent_federation/convergence.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-89aa653a65f9fa97 / self._seen_memory_ids.add\(projection.memory_id\)
+  - 来源：`agent_federation/convergence.py`
+  - 依赖：—；被引用：—
 - [self.queue.complete\(plan.queue_id, "COMPLETED_VALIDATED" if passed else "FAILED", reason=validation_ref\)](../../../agent_federation/live_orchestration.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1e39d80cda6a4e5d / self.queue.complete\(plan.queue_id, "COMPLETED_VALIDATED" if passed else "FAILED", reason=validation_ref\)
@@ -134,6 +149,11 @@
   - 可搜索名称：NFC-5cdd355026e2307a / Task 122 current External Agent Federation R1 projection / ## Task 122 current External Agent Federation R1 projection
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
+- [Task136 terminalizes the repository-local Live External Executor Bridge R1 as `RELEASE_READY`. `CURRENT_WITH_OPEN_OBLIGA](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a066faae3c3e9d8e / Task136 terminalizes the repository-local Live External Executor Bridge R1 as `RELEASE_READY`. `CURRENT_WITH_OPEN_OBLIGA
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
 - [terminal_state="COMPLETED_VALIDATED",](../../../agent_federation/pilots.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3d2713b4350057f8 / terminal_state="COMPLETED_VALIDATED",
@@ -144,6 +164,11 @@
   - 可搜索名称：NFC-ec3136053d09f2d6 / The 15-case adversarial ordinal matrix passes, including stale 130, Task132 drift, forced architecture ordinal 133, malf
   - 来源：`agent-results/IGNITION-20260822-133-result.md`
   - 依赖：—；被引用：—
+- [The 24-check deterministic projection preflight passed on both candidate/fresh preparation surfaces. Final function/nonf](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b5aa6f5fb0c51db4 / The 24-check deterministic projection preflight passed on both candidate/fresh preparation surfaces. Final function/nonf
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
 - [The adapter owns only the public OpenClaw CLI boundary. It does not start a](../../../agent_federation/adapters/openclaw.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bd19cf9d90e9d117 / The adapter owns only the public OpenClaw CLI boundary. It does not start a
@@ -153,6 +178,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-11bc029a15a476c8 / The canonical Current source is terminal and repository-local `RELEASE_READY`. `current_iteration_boundary=134` is only
   - 来源：`agent-results/IGNITION-20260822-134-result.md`
+  - 依赖：—；被引用：—
+- [The claim ceiling remains `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`; an executor return, timeout or recei](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-92cd9af23d630baa / The claim ceiling remains `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`; an executor return, timeout or recei
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
   - 依赖：—；被引用：—
 - [The Driver Console R3 snapshot presents the selected Goal, why-next trace, blockers, Owner decisions, completed Run stat](../../../docs/architecture/os-steering-intent-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -173,6 +203,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8cec216b3cdc4987 / The final Current path manifest is `tracked=3023`, `manifest=3023`, with missing, stale, unresolved, duplicate, category
   - 来源：`agent-results/IGNITION-20260822-134-result.md`
+  - 依赖：—；被引用：—
+- [The final residual boundary remains `9` historical residuals plus `1` observation-only SymPy environment residual, with](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-563ab90ff7d45813 / The final residual boundary remains `9` historical residuals plus `1` observation-only SymPy environment residual, with
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
   - 依赖：—；被引用：—
 - [The local claim ceiling is `schema_validated` after the 121Q13 validator passes. Remote workflow success can only suppor](../../../reports/architecture/121Q13-attention-distribution-compression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -213,6 +248,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e35e12e0bb8bea3d / This result proves only repository-local regression closure, deterministic projection cleanliness, bounded residual non-
   - 来源：`agent-results/IGNITION-20260822-135-result.md`
+  - 依赖：—；被引用：—
+- [This result proves only repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic](../../../agent-results/IGNITION-20260823-136-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-95b5ede727be431b / This result proves only repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic
+  - 来源：`agent-results/IGNITION-20260823-136-result.md`
   - 依赖：—；被引用：—
 - [This result proves repository-local deterministic projection, semantic consistency, lifecycle bookkeeping and release tr](../../../agent-results/IGNITION-20260821-130-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

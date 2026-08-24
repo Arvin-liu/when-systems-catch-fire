@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "元层面收敛与子系统展开冲突函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A72385396C87993F / title: "元层面收敛与子系统展开冲突函数" / IMPLICIT-A72385396C87993F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "充分条件三层函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2FD3F888DF386F95 / title: "充分条件三层函数" / IMPLICIT-2FD3F888DF386F95
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "充分条件三层函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cd0d27cda8d5bf00 / title: "充分条件三层函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [title: "免疫消耗-传染临界联合函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CEE48705D1A21DEE / title: "免疫消耗-传染临界联合函数" / IMPLICIT-CEE48705D1A21DEE
@@ -2489,18 +2504,3 @@
   - 可搜索名称：D522 / Willmore能量极小点函数 / D522
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D451, D541, T39；被引用：NFC-10ddfa80ee7b2aeb, NFC-45532924eb12681d, NFC-7efca97b00ec9669, NFC-82623454537ea618
-- [Within the source framework, T10 makes a theorem-style optimization claim about the location of a maximum collision prob](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-08578a73d4bf00f5 / Within the source framework, T10 makes a theorem-style optimization claim about the location of a maximum collision prob
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：T10；被引用：—
-- [Within the source-defined scope, 3维流形几何化分解函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M≅∪_i M_i，每个M_i配备8种标准几何之一，Per](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D525 / Within the source-defined scope, 3维流形几何化分解函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M≅∪_i M_i，每个M_i配备8种标准几何之一，Per
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, A-B型门控面冲突函数 is adjudicated as ARGUMENT_SCHEMA: D228已修正T33，从"冲突"升级为"必要张力"。D225是T33修正的数学论](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-T33 / Within the source-defined scope, A-B型门控面冲突函数 is adjudicated as ARGUMENT_SCHEMA: D228已修正T33，从"冲突"升级为"必要张力"。D225是T33修正的数学论
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D225, D228, T33；被引用：—

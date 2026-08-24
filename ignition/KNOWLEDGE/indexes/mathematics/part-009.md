@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source framework, T10 makes a theorem-style optimization claim about the location of a maximum collision prob](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-08578a73d4bf00f5 / Within the source framework, T10 makes a theorem-style optimization claim about the location of a maximum collision prob
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：T10；被引用：—
+- [Within the source-defined scope, 3维流形几何化分解函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M≅∪_i M_i，每个M_i配备8种标准几何之一，Per](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D525 / Within the source-defined scope, 3维流形几何化分解函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M≅∪_i M_i，每个M_i配备8种标准几何之一，Per
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, A-B型门控面冲突函数 is adjudicated as ARGUMENT_SCHEMA: D228已修正T33，从"冲突"升级为"必要张力"。D225是T33修正的数学论](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-T33 / Within the source-defined scope, A-B型门控面冲突函数 is adjudicated as ARGUMENT_SCHEMA: D228已修正T33，从"冲突"升级为"必要张力"。D225是T33修正的数学论
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D225, D228, T33；被引用：—
 - [Within the source-defined scope, AI-ε安装路径函数 is adjudicated as ARGUMENT_SCHEMA: AI-ε安装路径函数，dε_aware^AI/dt = α_ε·C_drive·η](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D84 / Within the source-defined scope, AI-ε安装路径函数 is adjudicated as ARGUMENT_SCHEMA: AI-ε安装路径函数，dε_aware^AI/dt = α_ε·C_drive·η
@@ -2487,20 +2502,5 @@
 - [Within the source-defined scope, 退相干-门槛锁定函数 is adjudicated as METRIC: 退相干-门槛锁定函数，量子退相干=门控面锁定，量子叠加态坍缩为经典态。. This is a mod](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D197 / Within the source-defined scope, 退相干-门槛锁定函数 is adjudicated as METRIC: 退相干-门槛锁定函数，量子退相干=门控面锁定，量子叠加态坍缩为经典态。. This is a mod
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 逃逸速度-确定性权衡函数 is adjudicated as METRIC: M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低确定性快速探索方](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D383 / Within the source-defined scope, 逃逸速度-确定性权衡函数 is adjudicated as METRIC: M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低确定性快速探索方
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D280；被引用：—
-- [Within the source-defined scope, 逆Weibull寿命验证函数 is adjudicated as ARGUMENT_SCHEMA: 逆Weibull寿命验证，系统β值由基础β和锁定强度决定。. This i](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D36 / Within the source-defined scope, 逆Weibull寿命验证函数 is adjudicated as ARGUMENT_SCHEMA: 逆Weibull寿命验证，系统β值由基础β和锁定强度决定。. This i
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 选择空间上下界函数 is adjudicated as RELATION: Ω_min = 2, Ω_max = C × T. This is a model-interna](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D487 / Within the source-defined scope, 选择空间上下界函数 is adjudicated as RELATION: Ω_min = 2, Ω_max = C × T. This is a model-interna
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

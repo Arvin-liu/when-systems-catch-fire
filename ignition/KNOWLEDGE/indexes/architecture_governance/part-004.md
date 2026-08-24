@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def mark_timeout\(self, *, effect_known_no_effect: bool\) -> LiveTransitionRecord:](../../../agent_federation/live_bridge.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-AE898056B6D4271A / def mark_timeout\(self, *, effect_known_no_effect: bool\) -> LiveTransitionRecord: / IMPLICIT-AE898056B6D4271A
+  - 来源：`agent_federation/live_bridge.py`
+  - 依赖：—；被引用：—
+- [def match_version\(version: str, pattern: str\) -> bool:](../../../agent_federation/sdk.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-D368717379D35D7C / def match_version\(version: str, pattern: str\) -> bool: / IMPLICIT-D368717379D35D7C
+  - 来源：`agent_federation/sdk.py`
+  - 依赖：—；被引用：—
 - [def message_file\(self\) -> bool:](../../../agent_federation/adapters/openclaw.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-C1D39818E5F87D2B / def message_file\(self\) -> bool: / IMPLICIT-C1D39818E5F87D2B
@@ -2329,6 +2339,11 @@
   - 可搜索名称：NFC-a476100f991c284e / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Steering tests, offlin
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Terminal repository ev](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3af61996579f880e / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Terminal repository ev
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. This is repository-loc](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ddc7be00117639f4 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. This is repository-loc
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-fe71f3f72c1466d9 / evidence for every applicable declared surface, including the Current State,
   - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [Evidence for the gap:](../../../templates/operations/task-command-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-1b426ff9d3d84165 / Evidence for the gap:
-  - 来源：`templates/operations/task-command-template.md`
-  - 依赖：—；被引用：—
-- [evidence grades;](../../../../.github/SUPPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-edb4086847148fd2 / evidence grades;
-  - 来源：`.github/SUPPORT.md`
-  - 依赖：—；被引用：—
-- [Evidence is recorded in `ignition/data/operations/iterations/132/step11-residual-audit.json`. Claim ceiling: repository-](../../../reports/operations/ignition-132-step11-residual-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5e952dac50135a6f / Evidence is recorded in `ignition/data/operations/iterations/132/step11-residual-audit.json`. Claim ceiling: repository-
-  - 来源：`reports/operations/ignition-132-step11-residual-audit.md`
   - 依赖：—；被引用：—

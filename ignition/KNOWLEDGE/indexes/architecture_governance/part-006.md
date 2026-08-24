@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Local summertime near-surface air-temperature associations with measured canopy-cover exposures were supported within th](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cb6f0318da3c5ebc / Local summertime near-surface air-temperature associations with measured canopy-cover exposures were supported within th
+  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
+  - 依赖：—；被引用：—
+- [LoRA adapters as reusable artifacts stored in a library. Retrieved and merged at inference. This is a practical artifact](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ff6df4f67cae4990 / LoRA adapters as reusable artifacts stored in a library. Retrieved and merged at inference. This is a practical artifact
+  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-036.json`
+  - 依赖：—；被引用：—
+- [LoRA matrices and the derived task-to-adapter catalog are explicit reusable artifacts.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-80795deeb76d25bb / LoRA matrices and the derived task-to-adapter catalog are explicit reusable artifacts.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [LoRA modules are reusable artifacts: train once, deploy many. Swappable for different tasks. But no persistent registry](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3467a578935d3a7e / LoRA modules are reusable artifacts: train once, deploy many. Swappable for different tasks. But no persistent registry
@@ -2484,23 +2499,8 @@
   - 可搜索名称：NFC-e9f741b6bcd68a47 / stale_knowledge: Task134 and all earlier release records remain immutable provenance; prior failure counts and historica
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
-- [stale_knowledge: terminology/style similarity, offline machine scoring, repository synchronization, publication, map vis](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-018edc9a949d39a4 / stale_knowledge: terminology/style similarity, offline machine scoring, repository synchronization, publication, map vis
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: the earlier Task 121 pre-release delta naming the Step 09 tip is historical branch-progress evidence an](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-212dd5e0bc8c6a3a / stale_knowledge: the earlier Task 121 pre-release delta naming the Step 09 tip is historical branch-progress evidence an
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: the Task 129 architecture-changing projection and all earlier Task 126/127/128/129 entries remain prove](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-41e9b288068cba93 / stale_knowledge: the Task 129 architecture-changing projection and all earlier Task 126/127/128/129 entries remain prove
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [state from a verified snapshot plus the ordered ledger tail.](../../../docs/architecture/os-control-plane-r2.md)
+- [stale_knowledge: Task135 and all earlier release records remain immutable provenance; the Hermes timeout, OpenClaw safet](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5a5fe9305ae1aa6f / state from a verified snapshot plus the ordered ledger tail.
-  - 来源：`docs/architecture/os-control-plane-r2.md`
+  - 可搜索名称：NFC-e1996d9a0a464b5d / stale_knowledge: Task135 and all earlier release records remain immutable provenance; the Hermes timeout, OpenClaw safet
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

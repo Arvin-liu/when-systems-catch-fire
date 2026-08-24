@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| retain source family and lineage questions \| source/evidence relation \| `SOURCE-BIND → SOURCE-FAMILY-ASSESS` \| duplica](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4e971e6c4ed869ef / \| retain source family and lineage questions \| source/evidence relation \| `SOURCE-BIND → SOURCE-FAMILY-ASSESS` \| duplica
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [\| RETAIN_PROVISIONAL_MODEL \(for P5\) \| 必须有处理/结果对、时间方向、反事实/混杂因素识别 \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cdcbe1befba0b2d4 / \| RETAIN_PROVISIONAL_MODEL \(for P5\) \| 必须有处理/结果对、时间方向、反事实/混杂因素识别 \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：P5；被引用：—
+- [\| RETAIN_SCOPED_DEFINITION \(for P4\) \| 必须同时有双射、两个结构、保持运算、双向验证 \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d06c8735090f47ef / \| RETAIN_SCOPED_DEFINITION \(for P4\) \| 必须同时有双射、两个结构、保持运算、双向验证 \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：P4；被引用：—
+- [\| review 1241 terminal rows \| adjudication artifact \| `REVIEW → LOCAL TERMINAL` \| reviewer authority is scoped \| the nam](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2de71c2a98ffe4aa / \| review 1241 terminal rows \| adjudication artifact \| `REVIEW → LOCAL TERMINAL` \| reviewer authority is scoped \| the nam
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
 - [\| S10 Pearl 1995 \| FULLTEXT \| ABSTRACT \| UNRESOLVED \| ⚠️降级 \|](../../../reports/external-research/106-105-evidence-correction-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-52e0c07f47fc14c1 / \| S10 Pearl 1995 \| FULLTEXT \| ABSTRACT \| UNRESOLVED \| ⚠️降级 \|
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：CLAIM-PEND-030 / 任何诊断、治疗、用药、心理健康建议
   - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：—；被引用：—
-- [任务 101 的人类层（2026-07 历史快照，非当前总数）已经提供 README、`HUMAN-READING.md`、`RESULTS/` 与当时约 166 条历史结果记录，但仍存在五个可复现缺口：没有按知识变化组织的时间线；没有按研](../../../reports/operations/102-knowledge-experience-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f5447061d147f065 / 任务 101 的人类层（2026-07 历史快照，非当前总数）已经提供 README、`HUMAN-READING.md`、`RESULTS/` 与当时约 166 条历史结果记录，但仍存在五个可复现缺口：没有按知识变化组织的时间线；没有按研
-  - 来源：`reports/operations/102-knowledge-experience-audit.md`
-  - 依赖：—；被引用：—
-- [任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：](../../ASSET-CARDS.md#asset-nfc-2843222a849fe77e)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-2843222a849fe77e / 任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括： / 任务 102 对新增源语料重新运行任务 100 生成器并排除生成投影，当前登记 **17,333** 个 canonical claim。主要类别包括：
-  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
-  - 依赖：—；被引用：—
-- [任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：](../../ASSET-CARDS.md#asset-nfc-187e985133669a56)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-187e985133669a56 / 任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下： / 任务 102 纳入新语料并排除知识体验生成投影回灌后重算，当前登记 **5,663** 个 canonical identity card，主要分布如下：
-  - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
-  - 依赖：—；被引用：—
-- [任务 102：建立统一知识入口、按主题探索、最新变化、资产卡、分层阅读、全量搜索与演化回链。](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a8acc6747c78baf6 / 任务 102：建立统一知识入口、按主题探索、最新变化、资产卡、分层阅读、全量搜索与演化回链。
-  - 来源：`RESULTS/LATEST.md`
   - 依赖：—；被引用：—
