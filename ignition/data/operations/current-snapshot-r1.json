@@ -57,7 +57,7 @@
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
     "epistemically_accepted": 0
   },
-  "generated_from_source_digest": "de548ea1bf0003a53ee1cfc1a0740dfa845ace9ac96eb5af8fcb64b6f5b9096c",
+  "generated_from_source_digest": "62aba3f5c0e32f48cbe7fb4b92491fe30f8742c0bbcda4656f32b103e2295e44",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r5-live-executor-federation-r2",
