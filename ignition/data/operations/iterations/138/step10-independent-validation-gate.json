@@ -1,0 +1,40 @@
+{
+  "schema_version": "ignition-138-step10-independent-validation-gate-r1",
+  "task_id": "IGNITION-20260824-138",
+  "step": "10",
+  "status": "NOT_REACHED_NO_STRUCTURED_RESULT",
+  "attempts": {
+    "real_inference_invocation_count": 1,
+    "structured_result_count": 0,
+    "validated_completion_count": 0,
+    "second_invocation": "FORBIDDEN_AUTH_SOURCE_BOUNDARY"
+  },
+  "independent_gate": {
+    "task_binding_observed": true,
+    "dispatch_binding_observed": true,
+    "attempt_binding_observed": true,
+    "executor_binding_observed": true,
+    "lease_binding_observed": true,
+    "structured_result_present": false,
+    "validator_execution": "NOT_RUN_NO_STRUCTURED_RESULT",
+    "result_digest": null,
+    "workspace_before_digest": "40ab9b327e6bf1044e3f57e00aaf483fe6d7f2f77a3bcddc4c414d1825556fba",
+    "workspace_after_digest": "40ab9b327e6bf1044e3f57e00aaf483fe6d7f2f77a3bcddc4c414d1825556fba",
+    "workspace_unchanged": true,
+    "task_read_only_guard": true,
+    "runtime_scratch_cleanup": "CLEANED",
+    "process_group_status": "CONFIRMED_GONE",
+    "session_pointer_present": false,
+    "timeout_or_effect_unknown": false,
+    "forbidden_side_effect_observed": false
+  },
+  "completion_gate": {
+    "returned_unvalidated": false,
+    "validating": false,
+    "completed_validated": false,
+    "LIVE_READONLY_VALIDATED_COMPLETION": false,
+    "LIVE_EXTERNAL_INVOCATION": "OPEN",
+    "claim_ceiling": "LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED"
+  },
+  "claim_ceiling": "Independent negative completion-gate evidence only; no live validated completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}
