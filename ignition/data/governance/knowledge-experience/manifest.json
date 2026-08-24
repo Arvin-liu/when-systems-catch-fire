@@ -18,7 +18,7 @@
     "KNOWLEDGE/README.md": "c5176eee8f5a17f4be991dea3db189537f1249f9c1b2a97bce638d89db3d47dd",
     "KNOWLEDGE/SEARCH.md": "510e08896cf0e6227d0e7f727cf9bd71f75991e84da3e9d6f57029b619a9fc4e",
     "KNOWLEDGE/WHATS-NEW.md": "43d3ab0cd9b5091ff6e7603ca043f74d092cc69f6c4b0b3c0c7b53a2e49b15c9",
-    "KNOWLEDGE/cards/part-001.md": "f340a5972e0599e8a6f76db5a00725548a880f64b85a93ff683b12b80cc87930",
+    "KNOWLEDGE/cards/part-001.md": "5d13e4f3e51e55491584076aa4f96af2910de4b54774141907e42514c3ff3282",
     "KNOWLEDGE/cards/part-002.md": "86a1d47e9e77f76dacb87cf4696f49765272e090832d47fd9e6378e02ee059e4",
     "KNOWLEDGE/cards/part-003.md": "1164c4dd1ddbd13476ce7c140b6c5d18048b5cfb78bdafd8a1ccbf2a6482c8dd",
     "KNOWLEDGE/cards/part-004.md": "7079e828b444c342b510ba9ed7efbedc5c87c400387f300afb3fd0ae076f1082",
@@ -84,11 +84,11 @@
     "KNOWLEDGE/indexes/writing_publication.md": "b68e2daaabc3451fc4f4e64c165d62d56f590dda80491d41b77d7d85b847a965",
     "KNOWLEDGE/indexes/writing_publication/part-001.md": "dee2e5bb4f045c19d599f3ab42f2a65152397f52268d6b2653d569f4a0802e7e",
     "data/governance/knowledge-experience/alias-index.jsonl": "38f6c866391f5ffa0235838df7e8b347c7dc8f59f99147566410a6a7a6e4b4ba",
-    "data/governance/knowledge-experience/asset-cards.jsonl": "ff557784e3a73efda48b1285ee3d4e0d8e7501f85b4f191dc9cd2267cc3bb61f",
+    "data/governance/knowledge-experience/asset-cards.jsonl": "bd527de71dfaad701211894b6f96ce858eb9e334550be4f57b37f29ea15c6a70",
     "data/governance/knowledge-experience/changes.jsonl": "4644fe79900736fb4df464e9c365694e04f7dbdd6d3a225aa3ef7b61a85acdde",
     "data/governance/knowledge-experience/coverage.json": "0903154f211a4eb1fd3a7761a2ceab82721a61885fc3cedbb6a8587cc54f9af2",
     "data/governance/knowledge-experience/layered-reading.jsonl": "0eb9e30ab2c2140fe77585868259e21c2f09c56e833e4593c48c48163374ff67",
-    "data/governance/knowledge-experience/search-index.jsonl": "6e2bdeb11952524f72bb75d3911a83b0499f7ad426d80a7be47ab874408acf9b"
+    "data/governance/knowledge-experience/search-index.jsonl": "44342209625ef1f520d1c9e85cc2e6c95b7df6b6a1edc73749141f4db3a242c9"
   },
   "machine_human_pairs": [
     {
@@ -119,7 +119,7 @@
   "schema_version": "1.0.0",
   "snapshot_date": "2026-07-30",
   "source_inputs": {
-    "data/foundation/function-assets/identity-cards.jsonl": "113a5a8b6902130ab67f63481a7801a4e159387d73e752ce6c55a0a1dc8c845e",
+    "data/foundation/function-assets/identity-cards.jsonl": "af7bcce1e7f0059c5de7e0c05f9d832179ed49326beb1a550bb4649d6976c3d3",
     "data/foundation/nonfunction-claims/claim-registry.jsonl": "6aa9ce0d6e9d07a9c89a9620bb907a4a31d452659523abf6e96bd651e3454e99",
     "data/governance/human-results/result-ledger.jsonl": "664a3463af13945dcef447386aa7ecb9b7158a0d4ade321d4c1a3f0b3ac0ad65",
     "data/governance/knowledge-experience/config.json": "b10d5fe209ce4f185693571e31917bea63b85d7b4dbe8d4294fb373117563eca",

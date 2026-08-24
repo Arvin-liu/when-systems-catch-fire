@@ -118,6 +118,11 @@ GENERATED_EXACT_PATHS = {
     "data/operations/iterations/135/step02-projection-preflight.json",
     "data/operations/iterations/136/step16-projection-preflight.json",
     "data/operations/iterations/136/step17-post-publication-task-binding-report.json",
+    # Task 138 candidate regression receipts are provenance-only machine
+    # records.  They include test counts, hashes and generator observations;
+    # admitting their prose into discovery would make a fresh clone depend on
+    # which receipt revision happened to be present when the census ran.
+    "data/operations/iterations/138/step14-candidate-full-regression.json",
     "data/operations/propagation/108-impact/system-map-nonimpact-proof.json",
     "docs/operations/lifecycle-readme.md",
     "reports/operations/lifecycle-audit-108.md",

@@ -152,11 +152,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "c3c2eaf47bbb19883b2ee02a13b567d2e1bfee4a1e8aca09ddd6df7d38a76eb3"
+      "sha256": "177e3b337369a53e8f54789aad34c0bf2a1b1693c10f064358eec6673730c3a1"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "3d6a9d6001e13848eb1f05c5af5a92f6f87f8c53d48ccf2b5fd85b85698e7cba"
+      "sha256": "67f80a958a22a96918d1cd9187c52207b6af3909978bc73db5063fdaa97e2aa2"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",

@@ -2818,7 +2818,6 @@
 {"first_line":15,"last_line":15,"mention_count":1,"path":"data/operations/iterations/134/step13-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/134/step14-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/135/step02-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D127"}
-{"first_line":85,"last_line":85,"mention_count":1,"path":"data/operations/iterations/138/step14-candidate-full-regression.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":288,"last_line":288,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D127"}
 {"first_line":67,"last_line":67,"mention_count":1,"path":"docs/editorial/articles/001-withdrawn-gravity-how-strong-claims-do-not-rebound.md","role":"REFERENCE","stable_id":"D127"}

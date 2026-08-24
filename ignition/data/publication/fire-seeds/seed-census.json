@@ -2254,7 +2254,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "8ef74b14d29b3aff5ce2c615fc2fff74f6932458864fe2f3a9e7a751172c4287",
+      "source_sha256": "968d18abad7b7ff7c1696e57f9c137ea182e803b84e56bab6561d51eeeeefeb3",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2269,7 +2269,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "9745dfdf6d18b369475c05881808c9bcf1c4901d175fb973377e24ec0bb64042",
+      "source_sha256": "39bfeb89b5624dcfab69b83da0c41b283f5955fad8fab81255fd1cbe6d9ae492",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2846,7 +2846,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "3666cfcd0a7979d1c0f80a2be8a0514295359d129940cc09fc3488d82552164f",
+      "source_sha256": "f567bc0bccb3846f5e76c4c7c0d15fe72eb1a1f09bb93c76e589b019638baa61",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -2889,7 +2889,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "113a5a8b6902130ab67f63481a7801a4e159387d73e752ce6c55a0a1dc8c845e",
+      "source_sha256": "af7bcce1e7f0059c5de7e0c05f9d832179ed49326beb1a550bb4649d6976c3d3",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"
@@ -4133,7 +4133,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "9a3f5b77c5d3e9e6d9bb06e6f8412fc6731b13b7c19832af1bb4aa21eb8a85a8",
+      "source_sha256": "bc8cca9ec8bc462dd18b7f8dd192916e7caa8122add8bfeead1149001a6a0871",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-03",
@@ -4155,7 +4155,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "24ecf52f04e91fd7168526d58dfab4400012271ac8a38032317bdc88ffbc4ab8",
+      "source_sha256": "411c855053e65498bb7881aca6682b402c19614089ac140f6a5f8c0d09685948",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-10",
