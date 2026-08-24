@@ -1,0 +1,128 @@
+{
+  "schema_version": "ignition-137-step16-candidate-full-regression-r1",
+  "task_id": "IGNITION-20260824-137",
+  "step": "16",
+  "run_number": 2,
+  "status": "PASS",
+  "candidate_head_sha": "634d3f16098a5e0e53296b94551c5b1b929c847d",
+  "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+  "working_directory": "ignition",
+  "runtime_seconds": 2846.856,
+  "elapsed_seconds": 2847.876,
+  "long_window": {
+    "natural_terminal_state": true,
+    "process_killed": false,
+    "arbitrary_timeout_used": false,
+    "minimum_window_seconds": 14400,
+    "actual_run_completed_before_window": true
+  },
+  "environment_contract": {
+    "isolated": true,
+    "dependency_preflight": "PASS",
+    "python_version": "3.14.6",
+    "execution_python": "temporary isolated foundation venv outside repository",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "path_prepend_contract": "execution interpreter directory precedes inherited PATH for portable python3 child validators"
+  },
+  "result": {
+    "exit_code": 0,
+    "process_returncode": 0,
+    "tests_run": 1149,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "summary": "OK",
+    "status": "PASS"
+  },
+  "side_effect_observation": {
+    "clean_before": true,
+    "clean_after": true,
+    "tracked_mutations": [],
+    "generated_output_drift": [],
+    "before_status": [],
+    "after_status": []
+  },
+  "projection_preflight": {
+    "status": "PASS",
+    "check_count": 24,
+    "failed_checks": [],
+    "projection_checks_pass": true,
+    "release_admission": true,
+    "clean_tree_gate_pass": true,
+    "side_effect_detected": false,
+    "tracked_path_count": 3187,
+    "function_asset_cards": 5788,
+    "function_asset_dependency_edges": 1923,
+    "knowledge_experience_cards": 413,
+    "knowledge_experience_changes": 315,
+    "knowledge_experience_layered": 332,
+    "knowledge_experience_search_records": 22862,
+    "knowledge_experience_aliases": 875,
+    "knowledge_experience_links": 24882,
+    "fire_seed_entries": 64,
+    "fire_seed_source_records": 393,
+    "human_surface": {
+      "entries": 48,
+      "machine_components": 95,
+      "visible_graph_nodes": 83,
+      "typed_graph_edges": 88
+    },
+    "worktree_before": {
+      "clean": true,
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracked_content_sha256": "76349f934b818a49d638c92ce3c7013fc6ca8cff6da56141185e810186ca9cec",
+      "tracked_path_count": 3187
+    },
+    "worktree_after": {
+      "clean": true,
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracked_content_sha256": "76349f934b818a49d638c92ce3c7013fc6ca8cff6da56141185e810186ca9cec",
+      "tracked_path_count": 3187
+    },
+    "capture": {
+      "location": "external temporary directory; not part of the formal repository",
+      "stdout_bytes": 20116,
+      "stdout_sha256": "94f87d70e25eb9fa6682ae63b3abfad7b8212afec313a898af135ad16752b35f",
+      "stderr_bytes": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "capture": {
+    "location": "external temporary directory; not part of the formal repository",
+    "stdout_bytes": 5533,
+    "stdout_sha256": "6d098a9625c7dc222da0976aa52498b3adb960eb26517712efe09f69f4d31367",
+    "stderr_bytes": 1597,
+    "stderr_sha256": "a65b7f4467a76f104f8f914233ab1d4be661f298d9a36cfbbff2136ebf7ec5e4"
+  },
+  "attempt_history": [
+    {
+      "run_number": 1,
+      "candidate_head_sha": "fb2859dcd2a89d0493115512a4865ac9c96cd9d5",
+      "tests_run": 1149,
+      "failures": 2,
+      "errors": 5,
+      "skipped": 0,
+      "runtime_seconds": 2885.963,
+      "elapsed_seconds": 2887.226,
+      "status": "FAIL_CURRENT_TASK_BOUNDARY_AND_HISTORICAL_FIXTURE_REPAIR_REQUIRED",
+      "natural_terminal_state": true,
+      "watchdog_used": false,
+      "stdout_bytes": 5533,
+      "stdout_sha256": "fe12de2882170fe65c89aecb4828bf61aa7aa61fa26051cc8e63d92be5577fa0",
+      "stderr_bytes": 21613,
+      "stderr_sha256": "16ebba1bc5b53aadce80ab52f92c321543375a042747656b83f5775ebe581ebc"
+    }
+  ],
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "claim_ceiling": "Exact repository-local candidate natural full-suite evidence for the exact candidate SHA only; no fresh-clone, publication, external truth, production readiness, Owner acceptance, live completion or epistemic acceptance is inferred."
+}
