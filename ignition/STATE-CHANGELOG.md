@@ -1,16 +1,16 @@
 # STATE-CHANGELOG
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
-- current_identity_epoch: `os-control-plane-r5-live-executor-federation-r2`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260825-139` (ordinal `139`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `139` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260825-139`。
-- release_lifecycle: task `IGNITION-20260825-139`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_identity_epoch: `os-control-plane-r6-live-observation-reconciliation-r1`；system_role: `Ignition OS / orchestration-governance layer`。
+- current_formal_task: `IGNITION-20260826-140` (ordinal `140`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260826-140` (ordinal `140`)；current_iteration_boundary: `140` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260826-140`。
+- release_lifecycle: task `IGNITION-20260826-140`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
-- current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
-- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION`。
-- live_attempt_projection: total `5`；validated `0`；unreconciled `3`；observation-incomplete `2`；obligation `OPEN`；next action `RECONCILE_UNRECOVERED_ATTEMPTS`；source `ignition/data/operations/iterations/139/live-current-projection-r1.json`。
-- architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260825-139` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b485f12d0c58442c1864c530ed3f3afad1d71395407930913fb1e8b0fa91941c`。
+- current_method: `1.4.0` Current；current_map: `0.14.0` Current；historical_map: `0.12.0` Historical。
+- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED`。
+- live_attempt_projection: total `5`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/140/live-current-projection-r2.json`。
+- architecture_counts: `registry=96; visible_nodes=84; visible_edges=89`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
+- task_lineage: current `IGNITION-20260826-140` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `5d543c5f291fd9186863ac85b4cd4f2e031d985d8fac73ecfa242a61793430a9`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -422,3 +422,15 @@
 - stale_knowledge: the historical Task138 prose that treated the second invocation as forbidden remains immutable historical knowledge only; the canonical current fact is the ledger record that the dispatch happened and observation is incomplete. The Step11 fail-closed boundary and all earlier receipts remain unchanged.
 - next_read: read the Task139 formal result, machine receipt and Step15 fresh-clone receipt, then complete ordinary main publication, the fresh remote-main Current gate and the independent 1111 witness.
 - claim_ceiling: repository-local Task139 terminal and release-readiness evidence only; no formal publication, validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.
+
+## 2026-08-26 — IGNITION-20260826-140 — Observation / Reconciliation Plane current architecture transition
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task139 baseline until the separate ordinary fast-forward and remote-ref observation. This append-only entry records the Task140 Current transition, not formal publication.
+- delta: Task140 registers the Live Observation / Reconciliation Plane as a Pointfire OS capability, corrects Task139's architecture-impact classification by provenance, separates probe / transport / live-process / capture / structured-result / validator outcomes, and appends hash-chained reconciliation events for the historical Hermes136, Codex138-second and Task139 records.
+- current_formal_task: `IGNITION-20260826-140` is `IN_PROGRESS` with formal ordinal `140`; `current_iteration_boundary=140` remains only the deprecated compatibility alias, and the latest architecture-changing task is Task140 with map `0.14.0` Current.
+- live_observation: the canonical projection contains five attempts, zero validated completions, zero unreconciled attempts and two observation-incomplete records. Hermes136 retains unknown external effect after terminal evidence exhaustion; Codex138 second remains terminal observation-incomplete with unknown effect; Task139 closes only the conclusive no-live-dispatch boundary while preserving unknown effect. The public/transport `return_code: 0` is not a live Codex process result.
+- reconciliation_boundary: terminal reconciliation is not success, failure or no-effect; all three historical states remain ineligible for validated completion and no blind retry is admitted before the retry-safety gate. The next action is dynamic executor admission after a fresh local census.
+- task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; the successor lineage retains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task140 remains the non-terminal current successor.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Typed observation, reconciliation closure, architecture registration and deterministic projections do not establish external truth, production readiness, Owner acceptance or validated live completion.
+- obligations: complete the fresh executor census, at most two distinct-family live admissions after the retry-safety gate, stop at the first independently validated completion if one occurs, then run exact candidate/fresh-clone natural regressions and the separate publication/witness gates.
+- claim_ceiling: Task140 repository-local architecture registration, typed observation, reconciliation and bounded live-admission evidence only; no external truth, production readiness, Owner acceptance, publication or epistemic acceptance is inferred.

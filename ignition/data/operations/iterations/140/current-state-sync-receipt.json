@@ -1,0 +1,137 @@
+{
+  "schema_version": "current-state-sync-receipt-r1",
+  "task_id": "IGNITION-20260826-140",
+  "architecture_identity_impact": "ARCHITECTURE_CHANGED",
+  "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
+  "identity_epoch": "os-control-plane-r6-live-observation-reconciliation-r1",
+  "current_formal_task_id": "IGNITION-20260826-140",
+  "current_formal_task_ordinal": 140,
+  "latest_architecture_changing_task_id": "IGNITION-20260826-140",
+  "latest_architecture_task_ordinal": 140,
+  "current_iteration_boundary": 140,
+  "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+  "surface_decisions": [
+    {
+      "surface_id": "homepage-identity",
+      "path": ".github/README.md",
+      "decision": "CHANGE",
+      "reason": "The front door must identify Task140, the registered Observation / Reconciliation Plane, and the still-open live-completion ceiling.",
+      "evidence": "Generated Current Snapshot, Task140 identity contract and typed live projection digest 9402e78fe5be929444592061df04a87ca64b5b62da69b2e76fb0afd7c7bf11b2."
+    },
+    {
+      "surface_id": "project-current-state",
+      "path": "ignition/docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "Current State must expose the architecture registration, typed outcome boundary and terminal reconciliation semantics without upgrading unknown effect.",
+      "evidence": "Generated Current Snapshot plus Task140 live-current projection and reconciliation-event overlay."
+    },
+    {
+      "surface_id": "ai-cold-start",
+      "path": "ignition/AI-START-HERE.md",
+      "decision": "CHANGE",
+      "reason": "Cold-start recovery must direct agents to Task140's observation contract, reconciliation ledger and dynamic-admission next action.",
+      "evidence": "Generated Task140 Current Snapshot and execution-contract-r1 source."
+    },
+    {
+      "surface_id": "ai-agents-handoff",
+      "path": "ignition/AI-HANDOFF.md",
+      "decision": "CHANGE",
+      "reason": "The handoff must distinguish public probe / transport values from live-process outcomes and state that the three historical reconciliations are no longer blockers.",
+      "evidence": "Typed R2 projection, three hash-chained reconciliation events and Task140 current lineage."
+    },
+    {
+      "surface_id": "architecture",
+      "path": "ignition/ARCHITECTURE.md",
+      "decision": "CHANGE",
+      "reason": "Architecture prose must register Observation / Reconciliation as a current OS capability and correct Task139's under-classified impact.",
+      "evidence": "Observation-plane registry, typed topology, map 0.14.0 and Task139 provenance correction artifact."
+    },
+    {
+      "surface_id": "steering-doc",
+      "path": "ignition/docs/architecture/os-steering-intent-r1.md",
+      "decision": "CHANGE",
+      "reason": "The steering contract must name the adjacent typed evidence boundary used before external execution can be independently validated.",
+      "evidence": "Task140 current paragraph registers probe, transport, live-process, capture, result, validator and reconciliation outcomes."
+    },
+    {
+      "surface_id": "machine-entry",
+      "path": "ignition/llms.txt",
+      "decision": "CHANGE",
+      "reason": "The machine entry must project Task140, map 0.14.0, zero unreconciled historical attempts and dynamic executor admission as the next action.",
+      "evidence": "Deterministic Current Facts / Snapshot compiler output sourced from the typed projection and event overlay."
+    },
+    {
+      "surface_id": "system-map-doc",
+      "path": "ignition/docs/architecture/interactive-system-map.md",
+      "decision": "CHANGE",
+      "reason": "The human map entry must identify map 0.14.0 as Current and describe the registered Observation / Reconciliation node.",
+      "evidence": "Registry-derived map generation reports 96 components, 84 visible nodes, 134 typed relations and 89 visible edges."
+    },
+    {
+      "surface_id": "federation-doc",
+      "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+      "decision": "CHANGE",
+      "reason": "Federation documentation must bind the provider-neutral live bridge to the typed observation and reconciliation boundary.",
+      "evidence": "Task140 Observation / Reconciliation Plane section and live-current projection source metadata."
+    },
+    {
+      "surface_id": "system-map-json",
+      "path": "ignition/data/architecture/interactive-system-map.json",
+      "decision": "CHANGE",
+      "reason": "The materialized machine map must carry the registry-derived Observation / Reconciliation component and current map version.",
+      "evidence": "Deterministic map generator output with current version 0.14.0 and typed topology relation count 134."
+    },
+    {
+      "surface_id": "state-changelog",
+      "path": "ignition/STATE-CHANGELOG.md",
+      "decision": "CHANGE",
+      "reason": "The append-only log must record the Task140 architecture transition, typed outcome semantics and unknown-effect reconciliation ceiling.",
+      "evidence": "Appended Task140 delta plus deterministic Current Snapshot and reconciliation-event head 02027b3ebeb6a946333bc7ff807594083cb638753a81c267aa1601a5884cb10b."
+    }
+  ],
+  "system_map_sync": {
+    "decision": "CHANGE",
+    "reason": "Task140 adds the Observation / Reconciliation Plane to the architecture registry and typed topology.",
+    "evidence": "Current map 0.14.0 is generated from 96 registry components and 134 typed relations, with the materialized map synchronized."
+  },
+  "state_changelog_delta": {
+    "decision": "CHANGE",
+    "reason": "Task140 appends the architecture transition and preserves unknown external effect after historical reconciliation closure.",
+    "evidence": "The new append-only Task140 section names the three terminal reconciliation states and the dynamic-admission boundary."
+  },
+  "changed_paths": [
+    ".github/README.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/AI-START-HERE.md",
+    "ignition/ARCHITECTURE.md",
+    "ignition/STATE-CHANGELOG.md",
+    "ignition/agent_federation/live_current_projection.py",
+    "ignition/agent_federation/live_observation_plane.py",
+    "ignition/agent_federation/live_reconciliation.py",
+    "ignition/agent_federation/live_reconciliation_events.py",
+    "ignition/data/architecture/current-facts.json",
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/architecture/interactive-system-map-layout.json",
+    "ignition/data/architecture/interactive-system-map.json",
+    "ignition/data/operations/current-release-lifecycle-r1.json",
+    "ignition/data/operations/current-snapshot-r1.json",
+    "ignition/data/operations/current-task-lineage-status.json",
+    "ignition/data/operations/current-volatile-fact-registry-r1.json",
+    "ignition/data/operations/iterations/140/current-state-sync-receipt.json",
+    "ignition/data/operations/iterations/140/execution-contract-r1.json",
+    "ignition/data/operations/iterations/140/live-current-projection-r2.json",
+    "ignition/data/operations/iterations/140/live-reconciliation-events-r1.jsonl",
+    "ignition/data/operations/iterations/140/progress.jsonl",
+    "ignition/docs/architecture/external-agent-federation-r1.md",
+    "ignition/docs/architecture/interactive-system-map.md",
+    "ignition/docs/architecture/os-steering-intent-r1.md",
+    "ignition/docs/project-current-state.md",
+    "ignition/docs/architecture/current-facts.md",
+    "ignition/llms.txt",
+    "ignition/tools/build_live_current_projection.py",
+    "ignition/tools/generate_current_facts.py"
+  ],
+  "identity_contract_changed": true,
+  "surface_sync_complete": true,
+  "claim_ceiling": "Task140 repository-local architecture identity, typed observation, reconciliation and Current-surface synchronization evidence only; no validated live completion, external truth, production readiness, Owner acceptance, formal publication or epistemic acceptance is inferred."
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260826-140",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "86df72bea772b61bea5e3c3837e48a2c46f06c76",
+    "command_path": "agent-commands/IGNITION-20260826-140-observation-plane-reconciliation-live-completion-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "ff0adcc2bd736217691bc7c24db82df7577d12e8"
+  },
+  "identity_impact": "ARCHITECTURE_CHANGED",
+  "expected_task_branch": "codex/ignition-140-observation-plane-reconciliation-live-completion-r1-20260826",
+  "expected_receipt_branch": "relay/receipts/ignition-140-observation-plane-reconciliation-live-completion-r1-20260826",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260826-140",
+    "latest_architecture_changing_task": "IGNITION-20260826-140",
+    "previous_canonical_current_task": "IGNITION-20260825-139",
+    "previous_formal_task": "IGNITION-20260825-139",
+    "release_candidate_task": "IGNITION-20260826-140",
+    "publication_witness_task": "IGNITION-20260826-140"
+  },
+  "claim_ceiling": "Task140 repository-local Observation/Reconciliation Plane architecture, typed live-process outcomes, historical reconciliation terminalization, bounded executor admission and live completion evidence only; no Owner authority, external truth, production readiness or epistemic acceptance is inferred."
+}

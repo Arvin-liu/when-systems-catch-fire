@@ -1,22 +1,22 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_formal_task_id": "IGNITION-20260825-139",
-  "current_formal_task_ordinal": 139,
-  "current_iteration_boundary": 139,
+  "current_formal_task_id": "IGNITION-20260826-140",
+  "current_formal_task_ordinal": 140,
+  "current_iteration_boundary": 140,
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "facts": {
     "architecture": {
-      "current_map_version": "0.13.0",
+      "current_map_version": "0.14.0",
       "hidden_components": 12,
       "historical_map_version": "0.12.0",
       "layout_version": "2.0.0",
-      "registry_components": 95,
+      "registry_components": 96,
       "semantic_trunk_route_steps": 7,
       "semantic_trunk_version": "semantic-trunk-r1",
-      "typed_topology_relations": 133,
-      "visible_map_nodes": 83,
-      "visible_typed_edges": 88
+      "typed_topology_relations": 134,
+      "visible_map_nodes": 84,
+      "visible_typed_edges": 89
     },
     "environmental_residuals": [
       "Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately.",
@@ -30,27 +30,23 @@
       ],
       "adapter_inventory_count": 3,
       "live_attempt_projection": {
-        "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION",
-        "next_action": "RECONCILE_UNRECOVERED_ATTEMPTS",
-        "next_action_status": "BLOCKED_UNTIL_RECONCILIATION",
+        "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED",
+        "next_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+        "next_action_status": "ADMISSION_REQUIRED",
         "obligation_state": "OPEN",
         "observation_incomplete_count": 2,
-        "projection_digest": "2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73",
-        "source_path": "ignition/data/operations/iterations/139/live-current-projection-r1.json",
+        "projection_digest": "9402e78fe5be929444592061df04a87ca64b5b62da69b2e76fb0afd7c7bf11b2",
+        "source_path": "ignition/data/operations/iterations/140/live-current-projection-r2.json",
         "total_attempts": 5,
-        "unreconciled_attempt_ids": [
-          "live-hermes-136-initial",
-          "attempt-138-live-02",
-          "attempt-139-live-02"
-        ],
-        "unreconciled_count": 3,
+        "unreconciled_attempt_ids": [],
+        "unreconciled_count": 0,
         "validated_completion_count": 0
       },
-      "live_invocation_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION",
+      "live_invocation_ceiling": "LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED",
       "live_status_by_executor": {
         "external.codex": "OBSERVATION_INCOMPLETE",
         "external.hermes": "TIMED_OUT_EFFECT_UNKNOWN",
-        "external.openclaw": "SKIPPED_UNSAFE_WORKSPACE_OR_CHANNEL_BOUNDARY"
+        "external.openclaw": "NOT_RUN_STEP_00"
       },
       "reference_executor_identity": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL"
     },
@@ -86,13 +82,13 @@
       }
     },
     "iteration": {
-      "current_formal_task_id": "IGNITION-20260825-139",
-      "current_formal_task_ordinal": 139,
-      "current_iteration_boundary": 139,
+      "current_formal_task_id": "IGNITION-20260826-140",
+      "current_formal_task_ordinal": 140,
+      "current_iteration_boundary": 140,
       "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
-      "current_map_version": "0.13.0",
-      "latest_architecture_changing_task_id": "IGNITION-20260823-136",
-      "latest_architecture_task_ordinal": 136,
+      "current_map_version": "0.14.0",
+      "latest_architecture_changing_task_id": "IGNITION-20260826-140",
+      "latest_architecture_task_ordinal": 140,
       "method_status": "Current",
       "method_version": "1.4.0"
     },
@@ -126,17 +122,17 @@
       "pilot_status": "OFFLINE_SYNTHETIC_ONLY"
     },
     "task_lineage": {
-      "current_task_id": "IGNITION-20260825-139",
-      "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+      "current_task_id": "IGNITION-20260826-140",
+      "current_task_status": "IN_PROGRESS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
       "task127_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"
     }
   },
-  "identity_epoch": "os-control-plane-r5-live-executor-federation-r2",
-  "latest_architecture_changing_task_id": "IGNITION-20260823-136",
-  "latest_architecture_task_ordinal": 136,
+  "identity_epoch": "os-control-plane-r6-live-observation-reconciliation-r1",
+  "latest_architecture_changing_task_id": "IGNITION-20260826-140",
+  "latest_architecture_task_ordinal": 140,
   "schema_version": "current-facts-r1",
   "source_fingerprints": [
     {
@@ -149,11 +145,11 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "fc220409cf82620a16f1faa208cab0cf40abc308e6c6288c17b1a974289d5861"
+      "sha256": "06015e8354a2a05c4cec084d34e48c89cf9530b79b797022cb0abb77d39405a8"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "b03475b01172dbe246c6821346d97944c474e9d65192be0c4ad7d1169a58490f"
+      "sha256": "a0bfffea6ecb373d135a527f5ce790028f7b94b17d303762166f588e2e19e723"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
@@ -177,35 +173,35 @@
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
-      "sha256": "249e1c2a228481abbca644a12d4ba452b4600926e4ef80e0c9f5af4a17a0efd4"
+      "sha256": "d0fcef3ba2b1e3759d6eca2d248ecf8f874c804ca3fa84d9703b5e9b7e215ecc"
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "65d9e71accae920a8f40353c897b4e555ec169b238c88ea829046912fedc836f"
+      "sha256": "044ff70c879e3d4e199660c3bfe7f0e88195ff032a64a290841f4a9de3364d2d"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "618e05d00356d577605a9013ac747eb38b3c45b967f0600e168f99bd4655faf7"
+      "sha256": "ae67c7057c6a060f5a6353c4f799fc9ddd899d06c91d159943daa0f433bcc22a"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
       "sha256": "abf13717555709f42245cf8008e121af2f713cb74ed1127e6fc9635633360479"
     },
     {
-      "path": "ignition/data/operations/iterations/136/step11-live-preflight.json",
-      "sha256": "a3a9805e1a4ff14ae447fb1a591b9ac3192e36a5c6889677d3416c496f10d6a6"
+      "path": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+      "sha256": "e2310a7be81d31c786bc1347f1b9876fc7ad616b03604ed338a3d14b5ca809a5"
     },
     {
-      "path": "ignition/data/operations/iterations/136/step13-live-execution-receipt.json",
-      "sha256": "e5394c7c9e1f658667fcd062fd6a9ce3a82075af6b73bf1261dfe4a5c1383d4c"
+      "path": "ignition/data/operations/iterations/140/live-current-projection-r2.json",
+      "sha256": "9b31b3f4899d5b9d27cc33e2ad9429e4c7c0cf3cad8e5bd74264e651d56e8135"
     },
     {
-      "path": "ignition/data/operations/iterations/139/live-current-projection-r1.json",
-      "sha256": "ac0c0f76e838769c9ffa418a63437f895206631d95a8b29263bdb0cb26aa249d"
+      "path": "ignition/data/operations/iterations/140/live-reconciliation-events-r1.jsonl",
+      "sha256": "f045cc532d9bd48227d6c36e69bd3fb96143231f77001b0cfa8c54e8a4006062"
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "766103af3769e7cb34659064f157f4a153c879ab70c32de201f8302997e96a65"
+      "sha256": "427997ca83e8fdef4e2931315cf36f2cec212bad72303c88cf9403e5c520955c"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",
@@ -249,7 +245,7 @@
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
-      "sha256": "97f1bd0bea319152e390a758c914fd84067de8773b85fc2259dd7ce97872d756"
+      "sha256": "eda2f61d7a766ec0e21d3dc9e72c135d7a70f8c7da421521f1248c11dc32ec86"
     },
     {
       "path": "ignition/tools/iteration_boundary.py",
