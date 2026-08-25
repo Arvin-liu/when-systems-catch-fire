@@ -12,9 +12,11 @@ from agent_federation.local_executor_census import LocalExecutorCensusError, val
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("path", nargs="?", type=Path, default=Path("data/operations/iterations/138/local-executor-census-r1.json"))
+    parser.add_argument("--task-id", default=None, help="override the default historical task binding")
+    parser.add_argument("--step", default=None, help="override the default step binding")
     args = parser.parse_args(argv)
     try:
-        summary = validate_path(args.path)
+        summary = validate_path(args.path, expected_task_id=args.task_id, expected_step=args.step)
     except LocalExecutorCensusError as exc:
         parser.error(str(exc))
     print(json.dumps(summary, ensure_ascii=False, sort_keys=True))

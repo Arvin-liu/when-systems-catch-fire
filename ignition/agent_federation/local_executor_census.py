@@ -117,13 +117,20 @@ def deterministic_selection(data: Mapping[str, Any]) -> dict[str, Any]:
     }
 
 
-def validate_census(data: Mapping[str, Any]) -> dict[str, Any]:
+def validate_census(
+    data: Mapping[str, Any],
+    *,
+    expected_task_id: str | None = None,
+    expected_step: str | None = None,
+) -> dict[str, Any]:
     if not isinstance(data, Mapping):
         raise LocalExecutorCensusError("census must be an object")
     required = {"schema_version", "census_id", "task_id", "step", "observed_at", "control", "formal_candidate", "scope", "candidates", "selection", "safety", "claim_ceiling"}
     if set(data) != required:
         raise LocalExecutorCensusError(f"census top-level keys must be exactly {sorted(required)}")
-    if data["schema_version"] != CENSUS_SCHEMA or data["task_id"] != TASK_ID or data["step"] != "00":
+    task_id = TASK_ID if expected_task_id is None else expected_task_id
+    step = "00" if expected_step is None else expected_step
+    if data["schema_version"] != CENSUS_SCHEMA or data["task_id"] != task_id or data["step"] != step:
         raise LocalExecutorCensusError("census schema/task/step binding is invalid")
     control = _public_map(_require(data, "control", "census"), "census.control")
     if control.get("repository") != "Arvin-liu/1111" or control.get("ref") != "origin/relay/current":
@@ -212,12 +219,17 @@ def validate_census(data: Mapping[str, Any]) -> dict[str, Any]:
     }
 
 
-def validate_path(path: Path) -> dict[str, Any]:
+def validate_path(
+    path: Path,
+    *,
+    expected_task_id: str | None = None,
+    expected_step: str | None = None,
+) -> dict[str, Any]:
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise LocalExecutorCensusError(f"cannot read census {path}: {exc}") from exc
-    return validate_census(data)
+    return validate_census(data, expected_task_id=expected_task_id, expected_step=expected_step)
 
 
 __all__ = [
