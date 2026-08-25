@@ -34,15 +34,16 @@
         "next_action": "RECONCILE_UNRECOVERED_ATTEMPTS",
         "next_action_status": "BLOCKED_UNTIL_RECONCILIATION",
         "obligation_state": "OPEN",
-        "observation_incomplete_count": 1,
-        "projection_digest": "0bfa042fe6f2ccc64e4b133babf0fdfb220f9aa75367d7458da72598db50aa1a",
+        "observation_incomplete_count": 2,
+        "projection_digest": "2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73",
         "source_path": "ignition/data/operations/iterations/139/live-current-projection-r1.json",
-        "total_attempts": 4,
+        "total_attempts": 5,
         "unreconciled_attempt_ids": [
           "live-hermes-136-initial",
-          "attempt-138-live-02"
+          "attempt-138-live-02",
+          "attempt-139-live-02"
         ],
-        "unreconciled_count": 2,
+        "unreconciled_count": 3,
         "validated_completion_count": 0
       },
       "live_invocation_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION",
@@ -200,7 +201,7 @@
     },
     {
       "path": "ignition/data/operations/iterations/139/live-current-projection-r1.json",
-      "sha256": "5d227eb93c19bd11f8e099e221e6ffab9857e1f25d298652dc6d4d75a1a8bd14"
+      "sha256": "ac0c0f76e838769c9ffa418a63437f895206631d95a8b29263bdb0cb26aa249d"
     },
     {
       "path": "ignition/data/operations/project-components.json",

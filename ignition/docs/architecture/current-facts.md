@@ -6,7 +6,7 @@
 - Map/method: map `0.13.0` Current（historical `0.12.0`）；layout `2.0.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；method `1.4.0` `Current`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
-- Live attempts: total `4`；validated `0`；unreconciled `2`；observation-incomplete `1`；obligation `OPEN`；next action `RECONCILE_UNRECOVERED_ATTEMPTS`；source `ignition/data/operations/iterations/139/live-current-projection-r1.json`。
+- Live attempts: total `5`；validated `0`；unreconciled `3`；observation-incomplete `2`；obligation `OPEN`；next action `RECONCILE_UNRECOVERED_ATTEMPTS`；source `ignition/data/operations/iterations/139/live-current-projection-r1.json`。
 - Foundation: function identity cards `5858`；function quarantine/pending `4854`；non-function claims `16855`；non-function quarantine/pending `4812`。
 - Knowledge Experience: cards `414`；changes `315`；layered readings `332`；search records `23045`；aliases `877`。
 - Fire Seeds: `64` seeds/clusters；`393` source-census records。

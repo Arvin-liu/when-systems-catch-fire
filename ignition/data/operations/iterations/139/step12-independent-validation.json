@@ -1,0 +1,39 @@
+{
+  "schema_version": "ignition-139-step12-independent-validation-r1",
+  "task_id": "IGNITION-20260825-139",
+  "step": "12",
+  "status": "PASS_FAIL_CLOSED",
+  "formal_candidate_sha": "4d4063ce40bb80fb430746de50263fd6d308283a",
+  "control_tip": "e80d7c4aeb70ae44edbd340fc2f341c7a6a737d4",
+  "exact_binding": {
+    "task_id": "IGNITION-20260825-139",
+    "dispatch_id": "dispatch-139-live-02",
+    "attempt_id": "attempt-139-live-02",
+    "executor_id": "external.codex",
+    "capability_lease_digest": "289b13ca527feb3f8ef88a1614e43b21885e979ad9c6f8210517c99b642c317b"
+  },
+  "record": {
+    "sequence": 4,
+    "record_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
+    "ledger_head_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d"
+  },
+  "current_projection": {
+    "projection_digest": "2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73",
+    "total_attempts": 5,
+    "validated_completion_count": 0,
+    "unreconciled_count": 3,
+    "observation_incomplete_count": 2,
+    "obligation_state": "OPEN",
+    "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION",
+    "next_action": "RECONCILE_UNRECOVERED_ATTEMPTS"
+  },
+  "independent_validation": {
+    "exact_task_dispatch_attempt_executor_lease_binding": "PASS",
+    "executor_result_validator": "NOT_RUN_NO_EXACT_PUBLIC_RESULT",
+    "structured_result_present": false,
+    "validator_status": "UNKNOWN",
+    "completion_claim": false,
+    "retry": "NOT_AUTHORIZED"
+  },
+  "claim_ceiling": "Independent repository-local exact-binding and deterministic Current validation only; the admitted lease and dispatch preparation are not a live result or validated completion."
+}

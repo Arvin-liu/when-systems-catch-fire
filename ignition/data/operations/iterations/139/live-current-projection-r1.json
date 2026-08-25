@@ -67,34 +67,51 @@
       "task_id": "IGNITION-20260824-138",
       "timed_out": false,
       "validator_status": "UNKNOWN"
+    },
+    {
+      "adapter_id": "codex-live-r3",
+      "attempt_id": "attempt-139-live-02",
+      "capture_completeness": "INCOMPLETE",
+      "dispatch_id": "dispatch-139-live-02",
+      "evidence_completeness": "INCOMPLETE",
+      "executor_id": "external.codex",
+      "reconciliation_status": "REQUIRES_RECONCILIATION",
+      "record_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
+      "return_code": 0,
+      "sequence": 4,
+      "state": "OBSERVATION_INCOMPLETE",
+      "structured_result_present": false,
+      "task_id": "IGNITION-20260825-139",
+      "timed_out": false,
+      "validator_status": "UNKNOWN"
     }
   ],
   "claim_ceiling": "Deterministic repository-local live attempt projection only; no external truth, production readiness, Owner acceptance or epistemic upgrade is inferred.",
   "contract_id": "LIVE_CURRENT_STATE_DERIVATION_INVARIANT",
   "counts": {
     "complete_evidence_count": 3,
-    "incomplete_evidence_count": 1,
-    "observation_incomplete_count": 1,
-    "total_attempts": 4,
-    "unreconciled_count": 2,
+    "incomplete_evidence_count": 2,
+    "observation_incomplete_count": 2,
+    "total_attempts": 5,
+    "unreconciled_count": 3,
     "validated_completion_count": 0
   },
   "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION",
   "latest_attempt_per_executor": {
     "external.codex": {
       "adapter_id": "codex-live-r3",
-      "attempt_id": "attempt-138-live-02",
+      "attempt_id": "attempt-139-live-02",
       "capture_completeness": "INCOMPLETE",
-      "dispatch_id": "dispatch-138-live-02",
+      "dispatch_id": "dispatch-139-live-02",
       "evidence_completeness": "INCOMPLETE",
       "executor_id": "external.codex",
       "reconciliation_status": "REQUIRES_RECONCILIATION",
-      "record_hash": "6acf6d4dcc55555e8890483e9fe04cfc58ab1eab663eeb06eadb8492b76b3b9e",
-      "return_code": null,
-      "sequence": 3,
+      "record_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
+      "return_code": 0,
+      "sequence": 4,
       "state": "OBSERVATION_INCOMPLETE",
       "structured_result_present": false,
-      "task_id": "IGNITION-20260824-138",
+      "task_id": "IGNITION-20260825-139",
       "timed_out": false,
       "validator_status": "UNKNOWN"
     },
@@ -119,29 +136,31 @@
   "latest_validated_completion": null,
   "next_eligible_action": {
     "action": "RECONCILE_UNRECOVERED_ATTEMPTS",
-    "blocker_summary": "2 attempt(s) remain unreconciled and the validated completion count is 0; no retry or completion claim is eligible from this projection.",
+    "blocker_summary": "3 attempt(s) remain unreconciled and the validated completion count is 0; no retry or completion claim is eligible from this projection.",
     "status": "BLOCKED_UNTIL_RECONCILIATION"
   },
   "obligation": {
     "obligation_id": "LIVE_EXTERNAL_INVOCATION",
-    "reason": "Ledger-derived live state: 2 unreconciled attempt(s), 0 validated completion(s), 1 observation-incomplete attempt(s).",
+    "reason": "Ledger-derived live state: 3 unreconciled attempt(s), 0 validated completion(s), 2 observation-incomplete attempt(s).",
     "state": "OPEN",
     "unreconciled_attempt_ids": [
       "live-hermes-136-initial",
-      "attempt-138-live-02"
+      "attempt-138-live-02",
+      "attempt-139-live-02"
     ]
   },
   "per_executor": {
     "external.codex": {
-      "attempt_count": 3,
+      "attempt_count": 4,
       "attempt_ids": [
         "attempt-137-live-01",
         "attempt-138-live-01",
-        "attempt-138-live-02"
+        "attempt-138-live-02",
+        "attempt-139-live-02"
       ],
       "state_counts": {
         "FAILED_VALIDATION": 1,
-        "OBSERVATION_INCOMPLETE": 1,
+        "OBSERVATION_INCOMPLETE": 2,
         "STARTUP_FAILURE": 1
       }
     },
@@ -155,11 +174,11 @@
       }
     }
   },
-  "projection_digest": "0bfa042fe6f2ccc64e4b133babf0fdfb220f9aa75367d7458da72598db50aa1a",
+  "projection_digest": "2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73",
   "schema_version": "live-current-projection-r1",
   "source_ledger": {
-    "head_hash": "6acf6d4dcc55555e8890483e9fe04cfc58ab1eab663eeb06eadb8492b76b3b9e",
+    "head_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
     "path": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
-    "record_count": 4
+    "record_count": 5
   }
 }
