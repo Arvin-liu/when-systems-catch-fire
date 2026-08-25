@@ -21,11 +21,17 @@ def render(projection: dict) -> bytes:
     return (json.dumps(projection, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode("utf-8")
 
 
-def check(ledger_path: Path, output_path: Path, reconciliation_events_path: Path | None = None) -> list[str]:
+def check(
+    ledger_path: Path,
+    output_path: Path,
+    reconciliation_events_path: Path | None = None,
+    observation_events_path: Path | None = None,
+) -> list[str]:
     expected = render(build_live_current_projection(
         ledger_path,
         legacy=output_path.name.endswith("-r1.json"),
         reconciliation_events_path=reconciliation_events_path,
+        observation_events_path=observation_events_path,
     ))
     if not output_path.is_file():
         return [f"missing projection: {output_path}"]
@@ -41,6 +47,7 @@ def main() -> int:
     parser.add_argument("--ledger", type=Path, default=DEFAULT_LEDGER_PATH)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT_PATH)
     parser.add_argument("--reconciliation-events", type=Path)
+    parser.add_argument("--observation-events", type=Path)
     parser.add_argument("--write", action="store_true")
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
@@ -51,12 +58,13 @@ def main() -> int:
             args.ledger,
             legacy=args.output.name.endswith("-r1.json"),
             reconciliation_events_path=args.reconciliation_events,
+            observation_events_path=args.observation_events,
         )
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_bytes(render(projection))
         print(f"LIVE_CURRENT_PROJECTION_WRITTEN path={args.output} digest={projection['projection_digest']}")
         return 0
-    errors = check(args.ledger, args.output, args.reconciliation_events)
+    errors = check(args.ledger, args.output, args.reconciliation_events, args.observation_events)
     if errors:
         print("LIVE_CURRENT_PROJECTION_INVALID", file=sys.stderr)
         for error in errors:

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/live-observation-event-r1.schema.json",
+  "title": "Ignition Live Observation Event R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "sequence", "event_type", "task_id", "dispatch_id", "attempt_id",
+    "prior_record_hash", "observation_outcome", "previous_event_hash", "event_hash", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "live-observation-event-r1"},
+    "sequence": {"type": "integer", "minimum": 0},
+    "event_type": {"const": "OBSERVATION_OUTCOME_RECORDED"},
+    "task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]+$"},
+    "dispatch_id": {"type": "string", "minLength": 1},
+    "attempt_id": {"type": "string", "minLength": 1},
+    "prior_record_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "observation_outcome": {"type": "object"},
+    "previous_event_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "event_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}

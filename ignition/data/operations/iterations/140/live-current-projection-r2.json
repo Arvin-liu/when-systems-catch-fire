@@ -129,15 +129,41 @@
       "timed_out": false,
       "transport_return_code": 0,
       "validator_status": "UNKNOWN"
+    },
+    {
+      "adapter_id": "codex-live-r3",
+      "attempt_id": "attempt-140-live-01",
+      "capture_completeness": "COMPLETE",
+      "capture_initialized": true,
+      "dispatch_id": "dispatch-140-live-01",
+      "evidence_completeness": "COMPLETE",
+      "executor_id": "external.codex",
+      "legacy_record_return_code_preserved": 1,
+      "legacy_return_code_scope": "LIVE_PROCESS_RETURN_CODE_OBSERVED",
+      "live_dispatch_calls": 1,
+      "live_dispatch_started": true,
+      "live_process_return_code": 1,
+      "live_process_started": true,
+      "probe_return_code": 0,
+      "public_probe_calls": 2,
+      "reconciliation_status": "NOT_REQUIRED",
+      "record_hash": "dea2793e9ddbb93631c3ea5f0fc7d1554e9ab529c00a6207e7bad1c0181d0049",
+      "sequence": 5,
+      "state": "MALFORMED_RESULT",
+      "structured_result_present": false,
+      "task_id": "IGNITION-20260826-140",
+      "timed_out": false,
+      "transport_return_code": 0,
+      "validator_status": "NOT_RUN"
     }
   ],
   "claim_ceiling": "Deterministic repository-local live attempt observation projection only; no external truth, production readiness, Owner acceptance or epistemic upgrade is inferred.",
   "contract_id": "LIVE_CURRENT_STATE_DERIVATION_INVARIANT",
   "counts": {
-    "complete_evidence_count": 3,
+    "complete_evidence_count": 4,
     "incomplete_evidence_count": 2,
     "observation_incomplete_count": 2,
-    "total_attempts": 5,
+    "total_attempts": 6,
     "unreconciled_count": 0,
     "validated_completion_count": 0
   },
@@ -145,29 +171,29 @@
   "latest_attempt_per_executor": {
     "external.codex": {
       "adapter_id": "codex-live-r3",
-      "attempt_id": "attempt-139-live-02",
-      "capture_completeness": "INCOMPLETE",
-      "capture_initialized": false,
-      "dispatch_id": "dispatch-139-live-02",
-      "evidence_completeness": "INCOMPLETE",
+      "attempt_id": "attempt-140-live-01",
+      "capture_completeness": "COMPLETE",
+      "capture_initialized": true,
+      "dispatch_id": "dispatch-140-live-01",
+      "evidence_completeness": "COMPLETE",
       "executor_id": "external.codex",
-      "legacy_record_return_code_preserved": 0,
-      "legacy_return_code_scope": "PUBLIC_PROBE_TRANSPORT_VALUE_ONLY",
-      "live_dispatch_calls": 0,
-      "live_dispatch_started": false,
-      "live_process_return_code": null,
-      "live_process_started": false,
+      "legacy_record_return_code_preserved": 1,
+      "legacy_return_code_scope": "LIVE_PROCESS_RETURN_CODE_OBSERVED",
+      "live_dispatch_calls": 1,
+      "live_dispatch_started": true,
+      "live_process_return_code": 1,
+      "live_process_started": true,
       "probe_return_code": 0,
       "public_probe_calls": 2,
-      "reconciliation_status": "CLOSED_NO_LIVE_DISPATCH",
-      "record_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
-      "sequence": 4,
-      "state": "OBSERVATION_INCOMPLETE",
+      "reconciliation_status": "NOT_REQUIRED",
+      "record_hash": "dea2793e9ddbb93631c3ea5f0fc7d1554e9ab529c00a6207e7bad1c0181d0049",
+      "sequence": 5,
+      "state": "MALFORMED_RESULT",
       "structured_result_present": false,
-      "task_id": "IGNITION-20260825-139",
+      "task_id": "IGNITION-20260826-140",
       "timed_out": false,
       "transport_return_code": 0,
-      "validator_status": "UNKNOWN"
+      "validator_status": "NOT_RUN"
     },
     "external.hermes": {
       "adapter_id": "hermes-live-r2",
@@ -210,15 +236,17 @@
   },
   "per_executor": {
     "external.codex": {
-      "attempt_count": 4,
+      "attempt_count": 5,
       "attempt_ids": [
         "attempt-137-live-01",
         "attempt-138-live-01",
         "attempt-138-live-02",
-        "attempt-139-live-02"
+        "attempt-139-live-02",
+        "attempt-140-live-01"
       ],
       "state_counts": {
         "FAILED_VALIDATION": 1,
+        "MALFORMED_RESULT": 1,
         "OBSERVATION_INCOMPLETE": 2,
         "STARTUP_FAILURE": 1
       }
@@ -233,16 +261,21 @@
       }
     }
   },
-  "projection_digest": "9402e78fe5be929444592061df04a87ca64b5b62da69b2e76fb0afd7c7bf11b2",
+  "projection_digest": "b1f2802cb6bf17d73e6f775f1bc544c10f4311c9a431af60945109c77b49c1f3",
   "schema_version": "live-current-projection-r2",
   "source_ledger": {
-    "head_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
+    "head_hash": "dea2793e9ddbb93631c3ea5f0fc7d1554e9ab529c00a6207e7bad1c0181d0049",
+    "observation_events": {
+      "event_count": 1,
+      "head_hash": "55827f5e878203922e24af279282f52e9212b19877501597ace86f269d20b649",
+      "path": "ignition/data/operations/iterations/140/live-observation-events-r1.jsonl"
+    },
     "path": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
     "reconciliation_events": {
       "event_count": 3,
       "head_hash": "02027b3ebeb6a946333bc7ff807594083cb638753a81c267aa1601a5884cb10b",
       "path": "ignition/data/operations/iterations/140/live-reconciliation-events-r1.jsonl"
     },
-    "record_count": 5
+    "record_count": 6
   }
 }

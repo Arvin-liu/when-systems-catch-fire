@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -16,9 +17,10 @@ class LiveReconciliationEventTests(unittest.TestCase):
         self.root = Path(__file__).resolve().parents[2]
         self.ledger_path = self.root / "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl"
         self.records = LiveAttemptLedger(self.ledger_path).records()
+        self.historical_records = self.records[:5]
 
     def make_event(self, index: int, observation: str, recovery: str, reason: str) -> dict:
-        record = self.records[index]
+        record = self.historical_records[index]
         state = derive_reconciliation_state({
             "task_id": record["task_id"],
             "attempt_id": record["attempt_id"],
@@ -55,12 +57,17 @@ class LiveReconciliationEventTests(unittest.TestCase):
     def test_projection_consumes_only_exactly_bound_overlay_events(self) -> None:
         with tempfile.TemporaryDirectory(prefix="reconciliation-projection-") as directory:
             event_path = Path(directory) / "events.jsonl"
+            historical_ledger_path = Path(directory) / "historical-ledger.jsonl"
+            historical_ledger_path.write_text(
+                "\n".join(json.dumps(record, ensure_ascii=False, sort_keys=True, separators=(",", ":")) for record in self.historical_records) + "\n",
+                encoding="utf-8",
+            )
             ledger = LiveReconciliationEventLedger(event_path)
             ledger.append(self.make_event(0, "UNKNOWN", "EXHAUSTED", "timeout evidence exhausted"))
             ledger.append(self.make_event(3, "LIVE_PROCESS_OBSERVED_OUTCOME_UNKNOWN", "EXHAUSTED", "capture evidence exhausted"))
             ledger.append(self.make_event(4, "NO_LIVE_PROCESS_OBSERVED", "CONCLUSIVE", "zero live dispatch calls"))
             projection = build_live_current_projection(
-                self.ledger_path,
+                historical_ledger_path,
                 reconciliation_events_path=event_path,
             )
             self.assertEqual(projection["counts"]["total_attempts"], 5)
@@ -75,7 +82,7 @@ class LiveReconciliationEventTests(unittest.TestCase):
     def test_event_state_cannot_be_rebound_to_another_record(self) -> None:
         event = self.make_event(0, "UNKNOWN", "EXHAUSTED", "timeout evidence exhausted")
         tampered = copy.deepcopy(event)
-        tampered["prior_record_hash"] = self.records[3]["record_hash"]
+        tampered["prior_record_hash"] = self.historical_records[3]["record_hash"]
         with tempfile.TemporaryDirectory(prefix="reconciliation-rebind-") as directory:
             ledger = LiveReconciliationEventLedger(Path(directory) / "events.jsonl")
             with self.assertRaises(LiveReconciliationEventError):
