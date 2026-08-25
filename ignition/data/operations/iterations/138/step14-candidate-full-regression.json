@@ -5,6 +5,15 @@
   "run_number": 4,
   "status": "PASS",
   "candidate_head_sha": "1dddd0ffe57b9394bab660af1387dc5ffc5d1190",
+  "fresh_clone": {
+    "source_remote_branch": "refs/heads/codex/ignition-138-executor-runtime-scratch-live-codex-r1-20260824",
+    "source_remote_sha": "4be73c5273a114e6801ca73f47a8ec3303510389",
+    "clone_mode": "fresh remote clone with no copied .venv, cache, generated temporary state or untracked files",
+    "head_sha": "4be73c5273a114e6801ca73f47a8ec3303510389",
+    "clean_before": true,
+    "clean_after": true,
+    "tracked_path_count": 3239
+  },
   "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
   "working_directory": "ignition",
   "long_window": {
@@ -73,6 +82,73 @@
     "side_effect_detected": false,
     "claim_ceiling": "Deterministic repository projection cleanliness only; no authority, external truth, production readiness, Owner acceptance or epistemic upgrade."
   },
+  "fresh_clone_full_suite": {
+    "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+    "working_directory": "ignition",
+    "runtime_seconds": 2829.929,
+    "elapsed_seconds": 2831.256,
+    "exit_code": 0,
+    "process_returncode": 0,
+    "tests_run": 1178,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "summary": "OK",
+    "status": "PASS",
+    "natural_window": {
+      "minimum_supported_seconds": 14400,
+      "process_completed_naturally": true,
+      "watchdog_used": false,
+      "process_killed": false,
+      "arbitrary_timeout_used": false
+    },
+    "execution_environment": {
+      "isolated": true,
+      "python_version": "3.14.6",
+      "dependency_preflight": "PASS",
+      "requirements": {
+        "sympy": "1.14.0",
+        "z3-solver": "4.16.0.0",
+        "jsonschema": "4.26.0"
+      },
+      "execution_python": "temporary isolated foundation venv outside repository"
+    },
+    "generated_output_drift": [],
+    "side_effect_observation": {
+      "clean_before": true,
+      "clean_after": true,
+      "tracked_mutations": [],
+      "generated_output_drift": []
+    },
+    "projection_preflight": {
+      "status": "PASS",
+      "check_count": 25,
+      "failed_checks": [],
+      "projection_checks_pass": true,
+      "release_admission": true,
+      "side_effect_detected": false,
+      "clean_tree_gate_pass": true,
+      "worktree_before": {
+        "clean": true,
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tracked_content_sha256": "0a35f58094409cc9d5c7616f20e4ba4ea017b82b7a899092bd8060f0e4f9bf24",
+        "tracked_path_count": 3239
+      },
+      "worktree_after": {
+        "clean": true,
+        "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tracked_content_sha256": "0a35f58094409cc9d5c7616f20e4ba4ea017b82b7a899092bd8060f0e4f9bf24",
+        "tracked_path_count": 3239
+      }
+    },
+    "capture": {
+      "location": "external temporary directory; not part of the formal repository",
+      "stdout_bytes": 5533,
+      "stdout_sha256": "3c856bd7e74fced5769bf47032019686766866def74cf67cc6e7cac6afaebff2",
+      "stderr_bytes": 1626,
+      "stderr_sha256": "873b11e14fd840ad0ada8f028356ca066a92ba6eec777bd31b00316147a77668"
+    }
+  },
   "attempt_history": [
     {
       "run_number": 1,
@@ -116,5 +192,6 @@
     "ignore_added": false,
     "residual_expanded": false
   },
-  "claim_ceiling": "Exact repository-local candidate natural full-suite and projection-preflight evidence for candidate 1dddd0ffe57b9394bab660af1387dc5ffc5d1190 only; no fresh-clone, publication, external truth, production readiness, Owner acceptance, live completion or epistemic acceptance is inferred."
+  "claim_ceiling": "Exact repository-local candidate natural full-suite and projection-preflight evidence for candidate 1dddd0ffe57b9394bab660af1387dc5ffc5d1190 only; no fresh-clone, publication, external truth, production readiness, Owner acceptance, live completion or epistemic acceptance is inferred.",
+  "fresh_clone_claim_ceiling": "Exact repository-local fresh-clone natural full-suite and projection-preflight evidence for remote SHA 4be73c5273a114e6801ca73f47a8ec3303510389 only; no live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
 }
