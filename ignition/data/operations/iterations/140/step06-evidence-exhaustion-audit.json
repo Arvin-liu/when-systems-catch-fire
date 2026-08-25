@@ -1,0 +1,98 @@
+{
+  "task_id": "IGNITION-20260826-140",
+  "step": "06",
+  "status": "PASS",
+  "audit_scope": "Bounded repository-local recovery audit of the three historical reconciliation blockers; no private session database, credential, hidden reasoning or provider telemetry was read.",
+  "source_presence": {
+    "all_declared_public_sources_exist": true,
+    "checked_source_count": 9
+  },
+  "attempts": [
+    {
+      "task_id": "IGNITION-20260823-136",
+      "attempt_id": "live-hermes-136-initial",
+      "prior_record_hash": "24e4650f3c9a6dd20059c6b1b5f314c6edeba0288872d67c322351600dc24f9c",
+      "source_refs": [
+        "ignition/data/operations/iterations/136/step13-live-execution-receipt.json",
+        "ignition/data/operations/iterations/137/step01-hermes-timeout-reconciliation.json",
+        "ignition/data/operations/iterations/137/step11-hermes-retry-decision.json",
+        "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl"
+      ],
+      "recovery_checks": {
+        "attempt_pid_or_pgid": "UNAVAILABLE",
+        "durable_disposable_workspace": "UNAVAILABLE",
+        "session_pointer": "UNAVAILABLE",
+        "raw_public_output": "UNAVAILABLE",
+        "matching_public_artifact": "NOT_FOUND_IN_BOUNDED_SEARCH",
+        "historical_fixture_reobservation": "UNAVAILABLE",
+        "private_sources": "NOT_READ"
+      },
+      "evidence_recovery_status": "EXHAUSTED",
+      "process_observation": "UNKNOWN",
+      "reconciliation_status": "TERMINAL_UNRECOVERABLE_EFFECT_UNKNOWN",
+      "external_effect_knowledge": "UNKNOWN",
+      "validated_completion_eligible": false,
+      "state_digest": "ba17fcc3df159df72eff8b22d146f5746748877291366b9fa6239446ca7c19bc"
+    },
+    {
+      "task_id": "IGNITION-20260824-138",
+      "attempt_id": "attempt-138-live-02",
+      "prior_record_hash": "6acf6d4dcc55555e8890483e9fe04cfc58ab1eab663eeb06eadb8492b76b3b9e",
+      "source_refs": [
+        "ignition/data/operations/iterations/138/step08-amendment-01-live-codex-reconciliation.json",
+        "ignition/data/operations/iterations/138/step10-amendment-01-independent-validation.json",
+        "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl"
+      ],
+      "recovery_checks": {
+        "attempt_started": "OBSERVED",
+        "durable_stdout_or_stderr_capture": "UNAVAILABLE",
+        "process_return_code": "UNAVAILABLE",
+        "session_pointer": "UNAVAILABLE",
+        "structured_result": "UNAVAILABLE",
+        "lease_receipt": "UNAVAILABLE",
+        "validator_result": "NOT_RUN",
+        "attempt_scratch": "NOT_FOUND_AFTER_PROCESS_EXIT"
+      },
+      "evidence_recovery_status": "EXHAUSTED",
+      "process_observation": "LIVE_PROCESS_OBSERVED_OUTCOME_UNKNOWN",
+      "reconciliation_status": "TERMINAL_UNRECOVERABLE_OBSERVATION_INCOMPLETE",
+      "external_effect_knowledge": "UNKNOWN",
+      "validated_completion_eligible": false,
+      "state_digest": "954a65e4a24786280502a11dd0adb57b8991e454fa71c94ddcbcc0c50c4022ad"
+    },
+    {
+      "task_id": "IGNITION-20260825-139",
+      "attempt_id": "attempt-139-live-02",
+      "prior_record_hash": "8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d",
+      "source_refs": [
+        "ignition/data/operations/iterations/139/step11-live-attempt.json",
+        "ignition/data/operations/iterations/139/step12-independent-validation.json",
+        "ignition/data/operations/iterations/139/step13-targeted-regression.json",
+        "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl"
+      ],
+      "recovery_checks": {
+        "public_probe_calls": 2,
+        "transport_return_code": 0,
+        "live_dispatch_calls": 0,
+        "live_inference_started": false,
+        "capture_capsule_initialized": false,
+        "structured_result": "NOT_PRESENT",
+        "validator": "NOT_RUN",
+        "filesystem_preflight": "FAIL_CLOSED_BEFORE_PROCESS_START"
+      },
+      "evidence_recovery_status": "CONCLUSIVE",
+      "process_observation": "NO_LIVE_PROCESS_OBSERVED",
+      "reconciliation_status": "CLOSED_NO_LIVE_DISPATCH",
+      "external_effect_knowledge": "UNKNOWN",
+      "validated_completion_eligible": false,
+      "state_digest": "d8125317e77f271e5b97ee6122abcdc86ca63416924b2d9230f7c6a3c6890a71"
+    }
+  ],
+  "retry_safety_decision": {
+    "historical_reconciliation_blockers_closed": true,
+    "blind_retry_started": false,
+    "new_live_process_started": false,
+    "admission_may_begin_after_step07": true
+  },
+  "claim_ceiling": "Repository-local evidence recovery audit and reconciliation admission boundary only; external effect remains UNKNOWN for terminalized historical attempts and no success, failure, no-effect, production readiness, Owner acceptance or epistemic upgrade is inferred."
+}
