@@ -44,6 +44,7 @@ FIRE_SEEDS_PATH = ROOT / "data/publication/fire-seeds/seed-census.json"
 LIVE_CURRENT_PROJECTION_PATH = ROOT / "data/operations/iterations/140/live-current-projection-r2.json"
 LIVE_ATTEMPT_LEDGER_PATH = ROOT / "data/operations/iterations/139/live-attempt-ledger.jsonl"
 LIVE_RECONCILIATION_EVENTS_PATH = ROOT / "data/operations/iterations/140/live-reconciliation-events-r1.jsonl"
+LIVE_OBSERVATION_EVENTS_PATH = ROOT / "data/operations/iterations/140/live-observation-events-r1.jsonl"
 
 
 def load_json(path: Path) -> Any:
@@ -140,6 +141,7 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         LIFECYCLE_PATH,
         LIVE_ATTEMPT_LEDGER_PATH,
         LIVE_RECONCILIATION_EVENTS_PATH,
+        LIVE_OBSERVATION_EVENTS_PATH,
         LIVE_CURRENT_PROJECTION_PATH,
     }
     for metric in contract["derived_metrics"]:

@@ -57,7 +57,7 @@
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
     "epistemically_accepted": 0
   },
-  "generated_from_source_digest": "5d543c5f291fd9186863ac85b4cd4f2e031d985d8fac73ecfa242a61793430a9",
+  "generated_from_source_digest": "e44466bcddd37e31bd7b195aec3127b758e6605fd8e3856fe5446f07dc87d654",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r6-live-observation-reconciliation-r1",
@@ -81,9 +81,9 @@
     "next_action_status": "ADMISSION_REQUIRED",
     "obligation_state": "OPEN",
     "observation_incomplete_count": 2,
-    "projection_digest": "9402e78fe5be929444592061df04a87ca64b5b62da69b2e76fb0afd7c7bf11b2",
+    "projection_digest": "b1f2802cb6bf17d73e6f775f1bc544c10f4311c9a431af60945109c77b49c1f3",
     "source_path": "ignition/data/operations/iterations/140/live-current-projection-r2.json",
-    "total_attempts": 5,
+    "total_attempts": 6,
     "unreconciled_attempt_ids": [],
     "unreconciled_count": 0,
     "validated_completion_count": 0

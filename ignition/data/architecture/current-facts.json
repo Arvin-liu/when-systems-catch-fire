@@ -35,16 +35,16 @@
         "next_action_status": "ADMISSION_REQUIRED",
         "obligation_state": "OPEN",
         "observation_incomplete_count": 2,
-        "projection_digest": "9402e78fe5be929444592061df04a87ca64b5b62da69b2e76fb0afd7c7bf11b2",
+        "projection_digest": "b1f2802cb6bf17d73e6f775f1bc544c10f4311c9a431af60945109c77b49c1f3",
         "source_path": "ignition/data/operations/iterations/140/live-current-projection-r2.json",
-        "total_attempts": 5,
+        "total_attempts": 6,
         "unreconciled_attempt_ids": [],
         "unreconciled_count": 0,
         "validated_completion_count": 0
       },
       "live_invocation_ceiling": "LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED",
       "live_status_by_executor": {
-        "external.codex": "OBSERVATION_INCOMPLETE",
+        "external.codex": "MALFORMED_RESULT",
         "external.hermes": "TIMED_OUT_EFFECT_UNKNOWN",
         "external.openclaw": "NOT_RUN_STEP_00"
       },
@@ -145,7 +145,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "06015e8354a2a05c4cec084d34e48c89cf9530b79b797022cb0abb77d39405a8"
+      "sha256": "036752063f666438023e6a32072beefabfa7753c50e70f4dca5ca4cdccf7f78e"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -189,11 +189,15 @@
     },
     {
       "path": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
-      "sha256": "e2310a7be81d31c786bc1347f1b9876fc7ad616b03604ed338a3d14b5ca809a5"
+      "sha256": "ec6d5ba5883986495bb680335e0a6d8cd4f7456ce4b63b31d941f6d2f88f41ca"
     },
     {
       "path": "ignition/data/operations/iterations/140/live-current-projection-r2.json",
-      "sha256": "9b31b3f4899d5b9d27cc33e2ad9429e4c7c0cf3cad8e5bd74264e651d56e8135"
+      "sha256": "99586af871a0ef6762977a2995bc77425befc0ea098b3e5ea9d92dfad2ce8007"
+    },
+    {
+      "path": "ignition/data/operations/iterations/140/live-observation-events-r1.jsonl",
+      "sha256": "7f48642b937dda08b8dcb3b678ff7bc48bfc488cfbd8b813c982e61ea41d8171"
     },
     {
       "path": "ignition/data/operations/iterations/140/live-reconciliation-events-r1.jsonl",
@@ -245,7 +249,7 @@
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
-      "sha256": "eda2f61d7a766ec0e21d3dc9e72c135d7a70f8c7da421521f1248c11dc32ec86"
+      "sha256": "b8ab87372fb4a9986554d5087bf1a98fc92c14571654be7d8e954088cdf5beef"
     },
     {
       "path": "ignition/tools/iteration_boundary.py",
