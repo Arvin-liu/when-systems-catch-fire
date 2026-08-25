@@ -8,14 +8,52 @@
   "properties": {
     "schema_version": {"const": "live-current-projection-r2"},
     "contract_id": {"const": "LIVE_CURRENT_STATE_DERIVATION_INVARIANT"},
-    "source_ledger": {"$ref": "live-current-projection-r1.schema.json#/properties/source_ledger"},
+    "source_ledger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "record_count", "head_hash", "reconciliation_events"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "record_count": {"type": "integer", "minimum": 0},
+        "head_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "reconciliation_events": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "event_count", "head_hash"],
+          "properties": {
+            "path": {"type": "string", "minLength": 1},
+            "event_count": {"type": "integer", "minimum": 0},
+            "head_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+          }
+        }
+      }
+    },
     "counts": {"$ref": "live-current-projection-r1.schema.json#/properties/counts"},
     "per_executor": {"type": "object", "additionalProperties": {"$ref": "live-current-projection-r1.schema.json#/$defs/executorSummary"}},
     "latest_attempt_per_executor": {"type": "object", "additionalProperties": {"$ref": "#/$defs/attemptSummary"}},
     "latest_validated_completion": {"anyOf": [{"$ref": "#/$defs/attemptSummary"}, {"type": "null"}]},
     "current_live_ceiling": {"type": "string", "minLength": 1},
-    "obligation": {"$ref": "live-current-projection-r1.schema.json#/properties/obligation"},
-    "next_eligible_action": {"$ref": "live-current-projection-r1.schema.json#/properties/next_eligible_action"},
+    "obligation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["obligation_id", "state", "reason", "unreconciled_attempt_ids"],
+      "properties": {
+        "obligation_id": {"const": "LIVE_EXTERNAL_INVOCATION"},
+        "state": {"enum": ["OPEN", "CLOSED"]},
+        "reason": {"type": "string", "minLength": 1},
+        "unreconciled_attempt_ids": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "next_eligible_action": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "action", "blocker_summary"],
+      "properties": {
+        "status": {"type": "string", "minLength": 1},
+        "action": {"type": "string", "minLength": 1},
+        "blocker_summary": {"type": "string", "minLength": 1}
+      }
+    },
     "attempts": {"type": "array", "items": {"$ref": "#/$defs/attemptSummary"}},
     "claim_ceiling": {"type": "string", "minLength": 1},
     "projection_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
@@ -48,7 +86,7 @@
         "validator_status": {"enum": ["PASS", "FAIL", "NOT_RUN", "UNKNOWN"]},
         "legacy_record_return_code_preserved": {"type": ["integer", "null"]},
         "legacy_return_code_scope": {"type": "string", "minLength": 1},
-        "reconciliation_status": {"enum": ["NOT_REQUIRED", "OPEN", "REQUIRES_RECONCILIATION", "CLOSED"]},
+        "reconciliation_status": {"enum": ["NOT_REQUIRED", "OPEN", "REQUIRES_RECONCILIATION", "CLOSED", "OPEN_REQUIRES_EVIDENCE", "TERMINAL_UNRECOVERABLE_EFFECT_UNKNOWN", "TERMINAL_UNRECOVERABLE_OBSERVATION_INCOMPLETE", "CLOSED_NO_LIVE_DISPATCH", "CLOSED_RECONCILED"]},
         "record_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
       }
     }

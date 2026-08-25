@@ -16,6 +16,7 @@ from typing import Any, Mapping
 from agent_kernel.contracts import sha256_json
 from agent_federation.live_attempt_ledger import LiveAttemptLedger
 from agent_federation.live_observation_plane import derive_observation_outcome, validate_observation_outcome
+from agent_federation.live_reconciliation_events import LiveReconciliationEventLedger
 
 
 LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA = "live-current-projection-r1"
@@ -67,7 +68,7 @@ def _legacy_attempt_summary(record: Mapping[str, Any]) -> dict[str, Any]:
     }
 
 
-def _typed_attempt_summary(record: Mapping[str, Any]) -> dict[str, Any]:
+def _typed_attempt_summary(record: Mapping[str, Any], reconciliation_status: str | None = None) -> dict[str, Any]:
     process = record["process"]
     events = record["public_events"]
     typed = validate_observation_outcome(derive_observation_outcome(record))
@@ -83,7 +84,7 @@ def _typed_attempt_summary(record: Mapping[str, Any]) -> dict[str, Any]:
         "structured_result_present": typed["structured_result_present"], "validator_status": typed["validator_status"],
         "legacy_record_return_code_preserved": typed["legacy_record_return_code_preserved"],
         "legacy_return_code_scope": typed["legacy_return_code_scope"],
-        "reconciliation_status": record["reconciliation_status"], "record_hash": record["record_hash"],
+        "reconciliation_status": reconciliation_status or record["reconciliation_status"], "record_hash": record["record_hash"],
     }
 
 
@@ -122,6 +123,12 @@ def _validate_summary(summary: Mapping[str, Any], *, typed: bool) -> None:
             raise LiveCurrentProjectionError("typed summary exposes a live-process return code without a started process")
         if summary["live_dispatch_calls"] == 0 and (summary["live_dispatch_started"] is not False or summary["live_process_started"] is not False):
             raise LiveCurrentProjectionError("typed summary exposes a process despite zero live dispatch calls")
+        if summary["reconciliation_status"] not in {
+            "NOT_REQUIRED", "OPEN", "REQUIRES_RECONCILIATION", "CLOSED", "OPEN_REQUIRES_EVIDENCE",
+            "TERMINAL_UNRECOVERABLE_EFFECT_UNKNOWN", "TERMINAL_UNRECOVERABLE_OBSERVATION_INCOMPLETE",
+            "CLOSED_NO_LIVE_DISPATCH", "CLOSED_RECONCILED",
+        }:
+            raise LiveCurrentProjectionError("typed summary reconciliation status is invalid")
     if not isinstance(summary["record_hash"], str) or not SHA256_RE.fullmatch(summary["record_hash"]):
         raise LiveCurrentProjectionError("attempt summary record hash is invalid")
 
@@ -139,12 +146,23 @@ def _validate_projection_common(value: dict[str, Any], *, typed: bool, check_dig
     if set(value) != required:
         raise LiveCurrentProjectionError("live Current projection fields are not canonical")
     source = value["source_ledger"]
-    if not isinstance(source, dict) or set(source) != {"path", "record_count", "head_hash"}:
+    source_keys = {"path", "record_count", "head_hash"}
+    if typed:
+        source_keys.add("reconciliation_events")
+    if not isinstance(source, dict) or set(source) != source_keys:
         raise LiveCurrentProjectionError("source ledger metadata is invalid")
     if not isinstance(source["path"], str) or not source["path"] or not isinstance(source["record_count"], int) or source["record_count"] < 0:
         raise LiveCurrentProjectionError("source ledger metadata is invalid")
     if not isinstance(source["head_hash"], str) or not SHA256_RE.fullmatch(source["head_hash"]):
         raise LiveCurrentProjectionError("source ledger head hash is invalid")
+    if typed:
+        events = source["reconciliation_events"]
+        if not isinstance(events, dict) or set(events) != {"path", "event_count", "head_hash"}:
+            raise LiveCurrentProjectionError("reconciliation event metadata is invalid")
+        if not isinstance(events["path"], str) or not events["path"] or not isinstance(events["event_count"], int) or events["event_count"] < 0:
+            raise LiveCurrentProjectionError("reconciliation event metadata is invalid")
+        if not isinstance(events["head_hash"], str) or not SHA256_RE.fullmatch(events["head_hash"]):
+            raise LiveCurrentProjectionError("reconciliation event head hash is invalid")
     counts = value["counts"]
     count_fields = {"total_attempts", "validated_completion_count", "unreconciled_count", "observation_incomplete_count", "complete_evidence_count", "incomplete_evidence_count"}
     if not isinstance(counts, dict) or set(counts) != count_fields or any(not isinstance(counts[key], int) or counts[key] < 0 for key in count_fields):
@@ -208,8 +226,21 @@ def validate_projection(document: Mapping[str, Any], *, check_digest: bool = Tru
     return _validate_projection_common(value, typed=schema_version == LIVE_CURRENT_PROJECTION_SCHEMA, check_digest=check_digest)
 
 
-def _build_projection(records: list[dict[str, Any]], *, typed: bool, source_path: str, audit: Mapping[str, Any]) -> dict[str, Any]:
-    summaries = [(_typed_attempt_summary(record) if typed else _legacy_attempt_summary(record)) for record in records]
+def _build_projection(
+    records: list[dict[str, Any]],
+    *,
+    typed: bool,
+    source_path: str,
+    audit: Mapping[str, Any],
+    reconciliation_status_by_attempt: Mapping[str, str] | None = None,
+    reconciliation_source_path: str = "NOT_APPLICABLE",
+    reconciliation_audit: Mapping[str, Any] | None = None,
+) -> dict[str, Any]:
+    status_by_attempt = reconciliation_status_by_attempt or {}
+    summaries = [
+        (_typed_attempt_summary(record, status_by_attempt.get(record["attempt_id"])) if typed else _legacy_attempt_summary(record))
+        for record in records
+    ]
     state_counts = Counter(summary["state"] for summary in summaries)
     per_executor_records: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for summary in summaries:
@@ -220,7 +251,7 @@ def _build_projection(records: list[dict[str, Any]], *, typed: bool, source_path
         rows = per_executor_records[executor_id]
         per_executor[executor_id] = {"attempt_count": len(rows), "state_counts": dict(sorted(Counter(row["state"] for row in rows).items())), "attempt_ids": [row["attempt_id"] for row in rows]}
         latest_per_executor[executor_id] = rows[-1]
-    unreconciled = [summary for summary, record in zip(summaries, records) if record["reconciliation_status"] in {"OPEN", "REQUIRES_RECONCILIATION"}]
+    unreconciled = [summary for summary in summaries if summary["reconciliation_status"] in {"OPEN", "REQUIRES_RECONCILIATION", "OPEN_REQUIRES_EVIDENCE"}]
     validated = [summary for summary, record in zip(summaries, records) if record["process"]["state"] == "COMPLETED_VALIDATED"]
     if unreconciled:
         ceiling = "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION"
@@ -237,7 +268,18 @@ def _build_projection(records: list[dict[str, Any]], *, typed: bool, source_path
     projection = {
         "schema_version": LIVE_CURRENT_PROJECTION_SCHEMA if typed else LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA,
         "contract_id": "LIVE_CURRENT_STATE_DERIVATION_INVARIANT",
-        "source_ledger": {"path": source_path, "record_count": audit["record_count"], "head_hash": audit["head_hash"]},
+        "source_ledger": {
+            "path": source_path,
+            "record_count": audit["record_count"],
+            "head_hash": audit["head_hash"],
+            **({
+                "reconciliation_events": {
+                    "path": reconciliation_source_path,
+                    "event_count": (reconciliation_audit or {}).get("record_count", 0),
+                    "head_hash": (reconciliation_audit or {}).get("head_hash", "0" * 64),
+                }
+            } if typed else {}),
+        },
         "counts": {
             "total_attempts": len(summaries), "validated_completion_count": len(validated), "unreconciled_count": len(unreconciled),
             "observation_incomplete_count": state_counts.get("OBSERVATION_INCOMPLETE", 0),
@@ -263,12 +305,42 @@ def build_live_current_projection(
     *,
     source_path: str = "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
     legacy: bool = False,
+    reconciliation_events_path: str | Path | None = None,
 ) -> dict[str, Any]:
     """Build a typed R2 projection, or a compatibility R1 projection."""
 
+    if legacy and reconciliation_events_path is not None:
+        raise LiveCurrentProjectionError("historical R1 projection cannot consume a reconciliation overlay")
     ledger = LiveAttemptLedger(ledger_path)
     records = ledger.records()
-    return _build_projection(records, typed=not legacy, source_path=source_path, audit=ledger.audit())
+    status_by_attempt: dict[str, str] = {}
+    reconciliation_audit: dict[str, Any] | None = None
+    reconciliation_source_path = "NOT_APPLICABLE"
+    if reconciliation_events_path is not None:
+        event_ledger = LiveReconciliationEventLedger(reconciliation_events_path)
+        events = event_ledger.records()
+        records_by_attempt = {record["attempt_id"]: record for record in records}
+        for event in events:
+            source_record = records_by_attempt.get(event["attempt_id"])
+            state = event["reconciliation_state"]
+            if source_record is None:
+                raise LiveCurrentProjectionError("reconciliation event references an unknown attempt")
+            if event["task_id"] != source_record["task_id"] or event["prior_record_hash"] != source_record["record_hash"]:
+                raise LiveCurrentProjectionError("reconciliation event does not bind to the source ledger record")
+            if event["attempt_id"] in status_by_attempt:
+                raise LiveCurrentProjectionError("duplicate reconciliation overlay attempt")
+            status_by_attempt[event["attempt_id"]] = state["reconciliation_status"]
+        reconciliation_audit = event_ledger.audit()
+        reconciliation_source_path = str(reconciliation_events_path)
+    return _build_projection(
+        records,
+        typed=not legacy,
+        source_path=source_path,
+        audit=ledger.audit(),
+        reconciliation_status_by_attempt=status_by_attempt,
+        reconciliation_source_path=reconciliation_source_path,
+        reconciliation_audit=reconciliation_audit,
+    )
 
 
 __all__ = ["LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA", "LIVE_CURRENT_PROJECTION_SCHEMA", "LiveCurrentProjectionError", "build_live_current_projection", "validate_projection"]
