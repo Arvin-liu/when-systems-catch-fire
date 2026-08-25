@@ -427,6 +427,7 @@ class LiveProcessTransport:
         env_allowlist: Sequence[str] = ("PATH", "HOME", "TMPDIR", "LANG", "LC_ALL", "CODEX_HOME", "HERMES_HOME"),
         output_cap_bytes: int = 128 * 1024,
         input_cap_bytes: int = 32 * 1024,
+        capture_output_cap_bytes: int = 16 * 1024 * 1024,
         wall_clock: Callable[[], str] | None = None,
         monotonic_clock: Callable[[], float] | None = None,
     ) -> None:
@@ -434,10 +435,13 @@ class LiveProcessTransport:
             raise LiveTransportError("output_cap_bytes must be positive")
         if not isinstance(input_cap_bytes, int) or isinstance(input_cap_bytes, bool) or input_cap_bytes <= 0:
             raise LiveTransportError("input_cap_bytes must be positive")
+        if not isinstance(capture_output_cap_bytes, int) or isinstance(capture_output_cap_bytes, bool) or capture_output_cap_bytes <= 0:
+            raise LiveTransportError("capture_output_cap_bytes must be positive")
         self.executable_allowlist = tuple(executable_allowlist)
         self.env_allowlist = tuple(env_allowlist)
         self.output_cap_bytes = output_cap_bytes
         self.input_cap_bytes = input_cap_bytes
+        self.capture_output_cap_bytes = capture_output_cap_bytes
         self._wall_clock = wall_clock or _wall_clock_iso
         self._monotonic = monotonic_clock or time.monotonic
 
@@ -511,6 +515,7 @@ class LiveProcessTransport:
         capture_parse_error: str | None = None
         capture_pending = bytearray()
         captured_events: list[Mapping[str, Any]] = []
+        capture_bytes = 0
         cleaned = False
         signals_sent: tuple[str, ...] = ()
         process_group_status = "UNKNOWN"
@@ -566,8 +571,20 @@ class LiveProcessTransport:
                 byte_counts[key.data] += len(chunk)
                 if capture is not None:
                     try:
-                        if key.data == "stdout":
+                        remaining_capture = self.capture_output_cap_bytes - capture_bytes
+                        if remaining_capture < len(chunk):
+                            if remaining_capture > 0:
+                                partial = chunk[:remaining_capture]
+                                if key.data == "stdout":
+                                    capture.write_stdout(partial)
+                                else:
+                                    capture.write_stderr(partial)
+                                capture_bytes += len(partial)
+                            capture_error = "DURABLE_CAPTURE_CAP_REACHED"
+                            output_truncated = True
+                        elif key.data == "stdout":
                             capture.write_stdout(chunk)
+                            capture_bytes += len(chunk)
                             capture_pending.extend(chunk)
                             if len(capture_pending) > 64 * 1024 and b"\n" not in capture_pending:
                                 capture_parse_error = "PUBLIC_EVENT_LINE_TOO_LARGE"
@@ -578,11 +595,17 @@ class LiveProcessTransport:
                                 consume_public_line(line)
                         else:
                             capture.write_stderr(chunk)
+                            capture_bytes += len(chunk)
                     except (LiveCaptureError, LiveTransportError) as exc:
-                        capture_error = type(exc).__name__
+                        capture_error = capture_error or type(exc).__name__
                         output_truncated = True
                 if capture is None:
                     target.extend(chunk)
+                elif capture_error is not None:
+                    # A failed privacy/spool write must not leak the offending
+                    # chunk through the bounded model-facing return value.
+                    target.clear()
+                    context_truncated = True
                 else:
                     remaining = self.output_cap_bytes - len(target)
                     if remaining > 0:
@@ -645,17 +668,19 @@ class LiveProcessTransport:
             try:
                 capture_capsule = capture.finalize(
                     return_code=returncode,
+                    signal_name=signal.Signals(-returncode).name if isinstance(returncode, int) and returncode < 0 else None,
                     timed_out=timed_out,
                     process_group_status=process_group_status if process_group_status != "NOT_APPLICABLE" else "NOT_OBSERVED",
                     capture_completeness=completeness,
                     output_truncated=bool(output_truncated),
                     cleanup=False,
-                    secret_scan_status="FAIL" if capture_error else "PASS",
+                    secret_scan_status="FAIL" if getattr(capture, "_secret_scan_status", "PASS") == "FAIL" else "PASS",
                 )
             except LiveCaptureError as exc:
                 capture_error = capture_error or type(exc).__name__
                 capture_capsule = capture.finalize(
                     return_code=returncode,
+                    signal_name=signal.Signals(-returncode).name if isinstance(returncode, int) and returncode < 0 else None,
                     timed_out=timed_out,
                     process_group_status="UNKNOWN",
                     capture_completeness="INCOMPLETE",

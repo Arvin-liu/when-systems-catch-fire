@@ -53,7 +53,8 @@ def _scan_public(value: Any, field: str = "capture") -> None:
             if not isinstance(key, str) or not key.strip():
                 raise LiveCaptureError(f"{field} contains an invalid key")
             lowered = key.casefold()
-            if any(marker in lowered for marker in PRIVATE_KEY_MARKERS) or "prompt" in lowered:
+            normalized = lowered.replace("_", " ")
+            if any(marker in lowered or marker in normalized for marker in PRIVATE_KEY_MARKERS) or "prompt" in lowered or "prompt" in normalized:
                 raise LiveCaptureError(f"{field}.{key} is not a public capture field")
             _scan_public(child, f"{field}.{key}")
         return
@@ -247,7 +248,11 @@ class LiveCaptureWriter:
     def record_public_event(self, event: Mapping[str, Any]) -> int:
         if self._finalized:
             raise LiveCaptureError("capture is already finalized")
-        _scan_public(event, "public_event")
+        try:
+            _scan_public(event, "public_event")
+        except LiveCaptureError:
+            self._secret_scan_status = "FAIL"
+            raise
         if not isinstance(event, Mapping):
             raise LiveCaptureError("public event must be an object")
         sequence = self._event_count
