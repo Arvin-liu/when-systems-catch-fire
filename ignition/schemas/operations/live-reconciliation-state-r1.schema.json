@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/live-reconciliation-state-r1.schema.json",
+  "title": "Ignition Live Reconciliation State R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "task_id", "attempt_id", "prior_record_hash", "prior_process_state",
+    "reconciliation_status", "evidence_recovery_status", "evidence_exhausted", "process_observation",
+    "external_effect_knowledge", "validated_completion_eligible", "terminal_reason", "evidence_refs",
+    "claim_ceiling", "state_digest"
+  ],
+  "properties": {
+    "schema_version": {"const": "live-reconciliation-state-r1"},
+    "task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]+$"},
+    "attempt_id": {"type": "string", "minLength": 1},
+    "prior_record_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "prior_process_state": {"type": "string", "minLength": 1},
+    "reconciliation_status": {"enum": ["OPEN_REQUIRES_EVIDENCE", "TERMINAL_UNRECOVERABLE_EFFECT_UNKNOWN", "TERMINAL_UNRECOVERABLE_OBSERVATION_INCOMPLETE", "CLOSED_NO_LIVE_DISPATCH", "CLOSED_RECONCILED"]},
+    "evidence_recovery_status": {"enum": ["RECOVERABLE", "EXHAUSTED", "CONCLUSIVE"]},
+    "evidence_exhausted": {"type": "boolean"},
+    "process_observation": {"enum": ["UNKNOWN", "NO_LIVE_PROCESS_OBSERVED", "LIVE_PROCESS_OBSERVED_OUTCOME_UNKNOWN", "LIVE_PROCESS_OUTCOME_KNOWN"]},
+    "external_effect_knowledge": {"const": "UNKNOWN"},
+    "validated_completion_eligible": {"const": false},
+    "terminal_reason": {"type": "string", "minLength": 1},
+    "evidence_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "state_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}
