@@ -22,7 +22,7 @@ def render(projection: dict) -> bytes:
 
 
 def check(ledger_path: Path, output_path: Path) -> list[str]:
-    expected = render(build_live_current_projection(ledger_path))
+    expected = render(build_live_current_projection(ledger_path, legacy=output_path.name.endswith("-r1.json")))
     if not output_path.is_file():
         return [f"missing projection: {output_path}"]
     try:
@@ -42,7 +42,7 @@ def main() -> int:
     if args.write == args.check:
         parser.error("choose exactly one of --write or --check")
     if args.write:
-        projection = build_live_current_projection(args.ledger)
+        projection = build_live_current_projection(args.ledger, legacy=args.output.name.endswith("-r1.json"))
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_bytes(render(projection))
         print(f"LIVE_CURRENT_PROJECTION_WRITTEN path={args.output} digest={projection['projection_digest']}")

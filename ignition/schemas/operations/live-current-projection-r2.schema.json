@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/live-current-projection-r2.schema.json",
+  "title": "Ignition typed Live Current observation projection R2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "source_ledger", "counts", "per_executor", "latest_attempt_per_executor", "latest_validated_completion", "current_live_ceiling", "obligation", "next_eligible_action", "attempts", "claim_ceiling", "projection_digest"],
+  "properties": {
+    "schema_version": {"const": "live-current-projection-r2"},
+    "contract_id": {"const": "LIVE_CURRENT_STATE_DERIVATION_INVARIANT"},
+    "source_ledger": {"$ref": "live-current-projection-r1.schema.json#/properties/source_ledger"},
+    "counts": {"$ref": "live-current-projection-r1.schema.json#/properties/counts"},
+    "per_executor": {"type": "object", "additionalProperties": {"$ref": "live-current-projection-r1.schema.json#/$defs/executorSummary"}},
+    "latest_attempt_per_executor": {"type": "object", "additionalProperties": {"$ref": "#/$defs/attemptSummary"}},
+    "latest_validated_completion": {"anyOf": [{"$ref": "#/$defs/attemptSummary"}, {"type": "null"}]},
+    "current_live_ceiling": {"type": "string", "minLength": 1},
+    "obligation": {"$ref": "live-current-projection-r1.schema.json#/properties/obligation"},
+    "next_eligible_action": {"$ref": "live-current-projection-r1.schema.json#/properties/next_eligible_action"},
+    "attempts": {"type": "array", "items": {"$ref": "#/$defs/attemptSummary"}},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "projection_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "attemptSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sequence", "task_id", "dispatch_id", "attempt_id", "executor_id", "adapter_id", "state", "timed_out", "evidence_completeness", "capture_completeness", "probe_return_code", "transport_return_code", "public_probe_calls", "live_dispatch_calls", "live_dispatch_started", "live_process_started", "live_process_return_code", "capture_initialized", "structured_result_present", "validator_status", "legacy_record_return_code_preserved", "legacy_return_code_scope", "reconciliation_status", "record_hash"],
+      "properties": {
+        "sequence": {"type": "integer", "minimum": 0},
+        "task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]+$"},
+        "dispatch_id": {"type": "string", "minLength": 1},
+        "attempt_id": {"type": "string", "minLength": 1},
+        "executor_id": {"type": "string", "minLength": 1},
+        "adapter_id": {"type": "string", "minLength": 1},
+        "state": {"type": "string", "minLength": 1},
+        "timed_out": {"type": "boolean"},
+        "evidence_completeness": {"enum": ["COMPLETE", "INCOMPLETE", "NOT_OBSERVED"]},
+        "capture_completeness": {"enum": ["COMPLETE", "INCOMPLETE", "NOT_OBSERVED"]},
+        "probe_return_code": {"type": ["integer", "null"]},
+        "transport_return_code": {"type": ["integer", "null"]},
+        "public_probe_calls": {"type": ["integer", "null"], "minimum": 0},
+        "live_dispatch_calls": {"type": ["integer", "null"], "minimum": 0},
+        "live_dispatch_started": {"type": ["boolean", "null"]},
+        "live_process_started": {"type": ["boolean", "null"]},
+        "live_process_return_code": {"type": ["integer", "null"]},
+        "capture_initialized": {"type": ["boolean", "null"]},
+        "structured_result_present": {"type": "boolean"},
+        "validator_status": {"enum": ["PASS", "FAIL", "NOT_RUN", "UNKNOWN"]},
+        "legacy_record_return_code_preserved": {"type": ["integer", "null"]},
+        "legacy_return_code_scope": {"type": "string", "minLength": 1},
+        "reconciliation_status": {"enum": ["NOT_REQUIRED", "OPEN", "REQUIRES_RECONCILIATION", "CLOSED"]},
+        "record_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

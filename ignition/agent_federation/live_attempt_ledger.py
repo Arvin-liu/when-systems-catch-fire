@@ -179,6 +179,13 @@ def validate_record(document: Mapping[str, Any], *, check_hash: bool = True) -> 
             raise LiveAttemptLedgerError("PASS validator requires public ref and SHA-256 digest")
     elif validator["status"] != "PASS" and validator["digest"] not in {None, "UNRECOVERED", "NOT_APPLICABLE"}:
         raise LiveAttemptLedgerError("non-PASS validator cannot claim a completed digest")
+    if "observation_typing" in value:
+        from agent_federation.live_observation_plane import validate_observation_outcome
+
+        try:
+            validate_observation_outcome(value["observation_typing"])
+        except ValueError as exc:
+            raise LiveAttemptLedgerError(f"typed observation outcome is invalid: {exc}") from exc
     state = process["state"]
     if value["evidence_completeness"] == "INCOMPLETE":
         if state not in {"OBSERVATION_INCOMPLETE", "REQUIRES_RECONCILIATION", "TIMED_OUT_EFFECT_UNKNOWN"}:

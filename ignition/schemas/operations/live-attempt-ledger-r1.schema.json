@@ -151,6 +151,7 @@
         }
       }
     },
+    "observation_typing": { "$ref": "#/$defs/observationTyping" },
     "reconciliation_status": { "enum": ["NOT_REQUIRED", "OPEN", "REQUIRES_RECONCILIATION", "CLOSED"] },
     "evidence_completeness": { "enum": ["COMPLETE", "INCOMPLETE", "NOT_OBSERVED"] },
     "claim_ceiling": { "type": "string", "minLength": 1 },
@@ -158,5 +159,34 @@
     "history_classification": { "enum": ["HISTORICAL_IMPORTED", "CURRENT_ATTEMPT", "HISTORICAL_PROJECTION"] },
     "previous_record_hash": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
     "record_hash": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+  },
+  "$defs": {
+    "observationTyping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "observation_outcome_type", "probe_return_code",
+        "transport_return_code", "public_probe_calls", "live_dispatch_calls",
+        "live_dispatch_started", "live_process_started", "live_process_return_code",
+        "capture_initialized", "structured_result_present", "validator_status",
+        "legacy_record_return_code_preserved", "legacy_return_code_scope"
+      ],
+      "properties": {
+        "schema_version": { "const": "live-observation-outcome-r1" },
+        "observation_outcome_type": { "enum": ["PRE_INFERENCE_NO_LIVE_PROCESS", "LIVE_PROCESS_OBSERVED", "LIVE_PROCESS_UNOBSERVED", "LEGACY_SCOPE_UNRECOVERED"] },
+        "probe_return_code": { "type": ["integer", "null"] },
+        "transport_return_code": { "type": ["integer", "null"] },
+        "public_probe_calls": { "type": ["integer", "null"], "minimum": 0 },
+        "live_dispatch_calls": { "type": ["integer", "null"], "minimum": 0 },
+        "live_dispatch_started": { "type": ["boolean", "null"] },
+        "live_process_started": { "type": ["boolean", "null"] },
+        "live_process_return_code": { "type": ["integer", "null"] },
+        "capture_initialized": { "type": ["boolean", "null"] },
+        "structured_result_present": { "type": "boolean" },
+        "validator_status": { "enum": ["PASS", "FAIL", "NOT_RUN", "UNKNOWN"] },
+        "legacy_record_return_code_preserved": { "type": ["integer", "null"] },
+        "legacy_return_code_scope": { "type": "string", "minLength": 1 }
+      }
+    }
   }
 }
