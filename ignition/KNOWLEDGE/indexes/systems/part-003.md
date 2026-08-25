@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ\(参与者策略\)×N_homogeneous/](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-efa2d0e7e8ca1c21 / Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ\(参与者策略\)×N_homogeneous/
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：A6, D66；被引用：—
 - [Object D67 defines a mechanism_model within the point-fire framework. Core: 中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return -](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-eead3989ffbe4892 / Object D67 defines a mechanism_model within the point-fire framework. Core: 中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return -
@@ -2497,10 +2502,5 @@
 - [\| BC-20260709-010 \| 《人类简史》 \| 认知革命、农业革命、科学革命与点火框架元协议演化的同构性。每次革命都是元协议组合的跃迁，推动系统进入新的演化路径。 \| pending \| - \| 《人类简史》最终收敛报告 2026](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3eb7602ffda58626 / \| BC-20260709-010 \| 《人类简史》 \| 认知革命、农业革命、科学革命与点火框架元协议演化的同构性。每次革命都是元协议组合的跃迁，推动系统进入新的演化路径。 \| pending \| - \| 《人类简史》最终收敛报告 2026
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
-  - 依赖：—；被引用：—
-- [\| BC-20260709-012 \| 《文明的冲突》 \| 文明断层线与点火框架封闭边界协议（S₁）的映射。文明边界压缩退出权，形成自我强化路径依赖，导致冲突不可避免。 \| S1 \| - \| 《文明的冲突》最终收敛报告 2026年7月9日1](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ab7626d43ed9c717 / \| BC-20260709-012 \| 《文明的冲突》 \| 文明断层线与点火框架封闭边界协议（S₁）的映射。文明边界压缩退出权，形成自我强化路径依赖，导致冲突不可避免。 \| S1 \| - \| 《文明的冲突》最终收敛报告 2026年7月9日1
   - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
   - 依赖：—；被引用：—

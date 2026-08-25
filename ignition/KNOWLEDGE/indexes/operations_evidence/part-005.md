@@ -6,6 +6,11 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5109179609 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5109179609 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5110613341 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5110613341 / A5001316926
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
   - 依赖：—；被引用：—
@@ -1569,6 +1574,11 @@
   - 可搜索名称：NFC-78a0a495c66b19b3 / live_observation: the canonical projection contains five attempts, zero validated completions, zero unreconciled attempt
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-366ea11858254982 / live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [LORAUTER full-text review: validation-backed task representations, task-adapter catalog construction, query-task retriev](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-8110b07adbcfd2a2 / LORAUTER full-text review: validation-backed task representations, task-adapter catalog construction, query-task retriev
@@ -2099,6 +2109,11 @@
   - 可搜索名称：NFC-a74c4c9a3f0087b9 / Re-run the privacy/secret, disguised-failure, succession, responsibility and deterministic-projection attack cases indiv
   - 来源：`templates/operations/independent-review-template.md`
   - 依赖：—；被引用：—
+- [reconciliation_boundary: the three historical retry-safety blockers are terminalized; terminalization preserves unknown](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0cd66516602c7224 / reconciliation_boundary: the three historical retry-safety blockers are terminalized; terminalization preserves unknown
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [regenerated path/nonfunction projections. The affected closure and production](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c5990da092ac42f2 / regenerated path/nonfunction projections. The affected closure and production
@@ -2487,20 +2502,5 @@
 - [title: "P_exit\(t,L,C\) 退出概率 / P_exit\(t,L,C\) exit probability"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1840559EDF971BC9 / title: "P_exit\(t,L,C\) 退出概率 / P_exit\(t,L,C\) exit probability" / IMPLICIT-1840559EDF971BC9
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "r_cross=0不导致Ψ=0"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C9D721E38BAA2ACA / title: "r_cross=0不导致Ψ=0" / IMPLICIT-C9D721E38BAA2ACA
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "r_cross优先性定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BF5F791B0C6D3351 / title: "r_cross优先性定理" / IMPLICIT-BF5F791B0C6D3351
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "Shannon-Fisher跷跷板定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4631579D56B0CCA4 / title: "Shannon-Fisher跷跷板定理" / IMPLICIT-4631579D56B0CCA4
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

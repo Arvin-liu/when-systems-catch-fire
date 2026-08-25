@@ -6,12 +6,12 @@
 - current_identity_epoch: `os-control-plane-r6-live-observation-reconciliation-r1`；system_role: `Ignition OS / orchestration-governance layer`。
 - current_formal_task: `IGNITION-20260826-140` (ordinal `140`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260826-140` (ordinal `140`)；current_iteration_boundary: `140` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260826-140`。
 - release_lifecycle: task `IGNITION-20260826-140`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
-- current_method: `1.4.0` Current；current_map: `0.14.0` Current；historical_map: `0.12.0` Historical。
+- current_method: `1.4.0` Current；current_map: `0.14.0` Current；historical_map: `0.13.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED`。
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/140/live-current-projection-r2.json`。
 - architecture_counts: `registry=96; visible_nodes=84; visible_edges=89`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260826-140` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `9b946c262c01d6968481975fb8e472461b814f548833c8208e26fb385580ceb3`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `117219689975c42ab776cc5dc93dbf8d436f2f3e89452cb0cf5bd5e108e412a1`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 

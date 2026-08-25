@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-165\]\( \) \| \[炒股带宽溢出全领域衰减（验证D63跨域溢出）\]\( \)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ad2043474ae2407a / \| \[C-165\]\( \) \| \[炒股带宽溢出全领域衰减（验证D63跨域溢出）\]\( \)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D63；被引用：—
+- [\| \[C-166\]\( \) \| \[小资金恐惧锁定向下螺旋（验证D67）\]\( \) \| 资金量、恐惧锁定与](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-70689e2a1ed27124 / \| \[C-166\]\( \) \| \[小资金恐惧锁定向下螺旋（验证D67）\]\( \) \| 资金量、恐惧锁定与
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D67；被引用：—
+- [\| \[C-167\]\( \) \| \[定投=门锁交替律执行（验证D47+D49）\]\( \) \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7deb77c2cc5946ab / \| \[C-167\]\( \) \| \[定投=门锁交替律执行（验证D47+D49）\]\( \) \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D47, D49；被引用：—
+- [\| \[C-168\]\( \) \| \[H_total放大触发F_collapse（验证D65）\]\(<./0168-C-168-H_total放大触发F_co](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-87f1285a984aeeec / \| \[C-168\]\( \) \| \[H_total放大触发F_collapse（验证D65）\]\(<./0168-C-168-H_total放大触发F_co
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D65；被引用：—
 - [\| \[C-16\]\( \) \| \[米尼兹统一埃及\]\( \) \| 上下埃及"可以保留信仰"但武力统一后事实上无法退出 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fedbacb6b9a39140 / \| \[C-16\]\( \) \| \[米尼兹统一埃及\]\( \) \| 上下埃及"可以保留信仰"但武力统一后事实上无法退出 \|
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3c6ad3c6752d56d4 / 七类机器可读数据集；
   - 来源：`outputs/audit/p1-machine-readable-data-audit-20260707.md`
-  - 依赖：—；被引用：—
-- [万维钢AI学习笔记碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8d06a42e5b2d06d4 / 万维钢AI学习笔记碰撞验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [三个公众号碰撞共同验证了点火框架的跨域普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c208c6b543b319b9 / 三个公众号碰撞共同验证了点火框架的跨域普适性。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [三个新增案例均已完成索引可见性验证。](../../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-46d680b076c3bf04 / 三个新增案例均已完成索引可见性验证。
-  - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [三域熵统一](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-24f2ec42326d9f42 / 三域熵统一
-  - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—

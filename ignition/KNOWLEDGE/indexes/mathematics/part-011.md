@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| NF-001 绩效绑定裹挟 \| 函数 \| 入表 \| D595 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|](../../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a44c89098f372ed8 / \| NF-001 绩效绑定裹挟 \| 函数 \| 入表 \| D595 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|
+  - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
+  - 依赖：D595；被引用：—
 - [\| NF-002 \| 量化指标替代真实价值函数 \| 当可量化指标（获奖等级、AI 课堂数据）成为唯一显式考核信号，不可量化核心价值（育人、师生联结）被系统排除在考核表外。 \| L1 \| source.md §量化指标消解课堂温度 / §名实](../../../outputs/collisions/20260708-teacher-competition/new-functions.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0072d9b4359d84f4 / \| NF-002 \| 量化指标替代真实价值函数 \| 当可量化指标（获奖等级、AI 课堂数据）成为唯一显式考核信号，不可量化核心价值（育人、师生联结）被系统排除在考核表外。 \| L1 \| source.md §量化指标消解课堂温度 / §名实
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-b00e969a29e4170e / 中文：教育公平的阶层投影——自然门槛碾压+人为门槛碾压在教育维度的叠加。核心函数：\[D159\]\(docs/zh/functions/items/D159.md…
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D159；被引用：—
-- [中文：数学学习中的"开窍瞬间"可以用点火框架精确描述——不是突然变聪明了，而是门控函数完成了从形态A到形态B的跃迁。这验证了门控函数进化三阶段不仅仅是数学构造，而是认知科学的底层结构。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c0a9f8f2c527084c / 中文：数学学习中的"开窍瞬间"可以用点火框架精确描述——不是突然变聪明了，而是门控函数完成了从形态A到形态B的跃迁。这验证了门控函数进化三阶段不仅仅是数学构造，而是认知科学的底层结构。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—

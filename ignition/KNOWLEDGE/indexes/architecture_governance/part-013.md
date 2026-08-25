@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [术语泄漏列为 soft inputs；允许的影响只有 advisory context、telemetry、实验](../../../data/epistemic-governance/soft-governance-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8ad17bdc90799c7f / 术语泄漏列为 soft inputs；允许的影响只有 advisory context、telemetry、实验
+  - 来源：`data/epistemic-governance/soft-governance-contract.md`
+  - 依赖：—；被引用：—
+- [机器侧只检查可确定的状态越界：既有 negative-permission profiles、typed relations、claim-governance validator、non-function closure/rebound v](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e9f640be5d162e70 / 机器侧只检查可确定的状态越界：既有 negative-permission profiles、typed relations、claim-governance validator、non-function closure/rebound v
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [机器入口：`data/foundation/function-assets/`；验证入口：](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ea493f94155e2fd5 / 机器入口：`data/foundation/function-assets/`；验证入口：
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
+- [机器关系索引位于 \[`data/governance/epistemic-governance-relationships.json`\]\(../../data/governance/epistemic-governance-relation](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-61e8b0c06ef10f30 / 机器关系索引位于 \[`data/governance/epistemic-governance-relationships.json`\]\(../../data/governance/epistemic-governance-relation
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
 - [机器可读化数据结构规范](../../../docs/machine_readable_data_plan.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5450a919fc019b20 / 机器可读化数据结构规范
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ddce97afcb35193f / 这是一条从验证报告里长出来的故事版笔记。它保留了同一个历史骨架，但把表达写得更像一篇可读的故事，方便以后持续扩展更多同类内容。
   - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
-  - 依赖：—；被引用：—
-- [这里的“素材来源”是写作生成角色，不把点火派生产物伪装成新的外部证据。按实际使用复制条目。](../../../templates/publication/zhiyuan-writing-spec.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cf5f1fd7a36062af / 这里的“素材来源”是写作生成角色，不把点火派生产物伪装成新的外部证据。按实际使用复制条目。
-  - 来源：`templates/publication/zhiyuan-writing-spec.md`
-  - 依赖：—；被引用：—
-- [这里的关键不是让模型记住几个词，而是区分两件事：它有没有说出看起来谨慎的话，以及它在遇到越级诱导时是否真的拒绝了没有证据支持的状态跃迁。前者是风格，后者才是待研究的决策边界。](../../../docs/architecture/epistemic-structural-induction-r0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8cacb78df4afe7a3 / 这里的关键不是让模型记住几个词，而是区分两件事：它有没有说出看起来谨慎的话，以及它在遇到越级诱导时是否真的拒绝了没有证据支持的状态跃迁。前者是风格，后者才是待研究的决策边界。
-  - 来源：`docs/architecture/epistemic-structural-induction-r0.md`
-  - 依赖：—；被引用：—
-- [这页把机器边界翻译成人能先读懂的入口。它解释为什么要把原始结构、术语、文风和结构破坏控制分开：只重复词语或模仿语气，不等于保留了边界。它也把文献、合成夹具和 Owner 提供的公开安全观察放在不同证据位置，避免把它们合成一条更强的故事。](../../../docs/architecture/esi-human-surface-r0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0734a534d865d69a / 这页把机器边界翻译成人能先读懂的入口。它解释为什么要把原始结构、术语、文风和结构破坏控制分开：只重复词语或模仿语气，不等于保留了边界。它也把文献、合成夹具和 Owner 提供的公开安全观察放在不同证据位置，避免把它们合成一条更强的故事。
-  - 来源：`docs/architecture/esi-human-surface-r0.md`
-  - 依赖：—；被引用：—
-- [这页遵循之元写作法的人类入口纪律：先说范围和用途，再说不能推出什么、缺什么以及如何回到机器记录。它不改变 canonical 状态，不创建第二套断言数据库，也不把可读性当成证据。](../../../docs/architecture/esi-human-surface-r0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1957957fe42993b1 / 这页遵循之元写作法的人类入口纪律：先说范围和用途，再说不能推出什么、缺什么以及如何回到机器记录。它不改变 canonical 状态，不创建第二套断言数据库，也不把可读性当成证据。
-  - 来源：`docs/architecture/esi-human-surface-r0.md`
   - 依赖：—；被引用：—

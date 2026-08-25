@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [输入材料、事实、引用或案例基础错误，导致后续结构判断失效。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-a631ea6501b44943 / 输入材料、事实、引用或案例基础错误，导致后续结构判断失效。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
 - [输入材料快照 · 赛课机制下的教师生存困境](../../ASSET-CARDS.md#asset-hr-4b5539f6a578f48d)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：输入材料快照 · 赛课机制下的教师生存困境 / source-snapshot

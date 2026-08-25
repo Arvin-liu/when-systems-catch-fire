@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [对目标对象分别报告 source、controlled claim、formal object type、claim type、premises、inference rules、scope、proof obligations、evidenc](../../../docs/AI-PROMPT-TEMPLATES.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b8f9b972083371d7 / 对目标对象分别报告 source、controlled claim、formal object type、claim type、premises、inference rules、scope、proof obligations、evidenc
+  - 来源：`docs/AI-PROMPT-TEMPLATES.md`
+  - 依赖：—；被引用：—
 - [对称-破缺-定向对偶函数\(推论级\)](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D111 / 对称-破缺-定向对偶函数\(推论级\) / D111
@@ -2074,9 +2079,9 @@
   - 可搜索名称：NFC-0f567eda478c18a0 / 方括号步骤按对象可选。来源、行动、公开投影、历史记录和执行 receipt 使用不同 automata。合法 shortcut 包括：来源不产生 claim；semantic claim 不形式化；proof 保持 E0；negative/
   - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
   - 依赖：—；被引用：—
-- [方法 `1.3.0` 与系统图 `0.10.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方](../../../AI-START-HERE.md)
+- [方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0`](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-a0c709f1259d943b / 方法 `1.3.0` 与系统图 `0.10.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方
+  - 可搜索名称：NFC-fd3263c27c283b8f / 方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0`
   - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—
 - [方法转换收益函数：解释了问题转换的价值\\n\\n**跨域验证：**\\n- 数学领域：孪生素数猜想、庞加莱猜想、黎曼猜想、P/NP问题\\n- 密码学领域：恩尼格玛机破解\\n- 技术革命：蒸汽机→电力→信息技术\\n- 个人成长：框架发现过程\\n-](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
@@ -2499,8 +2504,3 @@
   - 可搜索名称：D210 / 最小作用量原理-门槛优化函数 / D210
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D181, D211, D220, D270；被引用：NFC-16e6492d7fbc7642, NFC-28b1ae86b21973a2, NFC-2f379ca5d21d44c0, NFC-2f606b28b7e22392
-- [最小作用量原理-门槛优化函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-9bc646561fe749cd / 最小作用量原理-门槛优化函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—

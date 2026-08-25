@@ -62,7 +62,7 @@ def assert_source_hashes(rows: list[dict], root: Path = ROOT) -> None:
         source = BUILDER.repo_path(row["canonical_source"])
         if not source.is_file():
             raise AssertionError(f"missing source: {row['canonical_source']}")
-        if hashlib.sha256(source.read_bytes()).hexdigest() != row["source_sha256"]:
+        if BUILDER.digest_file(row["canonical_source"]) != row["source_sha256"]:
             raise AssertionError(f"stale source projection: {row.get('asset_id') or row.get('search_id')}")
 
 

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [user switched to Hy3 mid-Q5, no per-step runtime proof](../../../data/external-research/121-fulltext-resolver/121q6/121q5-status-correction-overlay.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-56adb3ae632b33ce / user switched to Hy3 mid-Q5, no per-step runtime proof
+  - 来源：`data/external-research/121-fulltext-resolver/121q6/121q5-status-correction-overlay.json`
+  - 依赖：—；被引用：—
 - [U₁-U₄ 完整函数定义：** 每个统一律都有完整的数学表达，不再是文字简略表达](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-123f526c32581802 / U₁-U₄ 完整函数定义：** 每个统一律都有完整的数学表达，不再是文字简略表达
@@ -2497,10 +2502,5 @@
 - [Within the source-defined scope, 退出权信号 is adjudicated as METRIC: 退出权信号，八维展开。S_sovereign = Σᵢ εᵢ，主权函数为各维度信号之和。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-A7 / Within the source-defined scope, 退出权信号 is adjudicated as METRIC: 退出权信号，八维展开。S_sovereign = Σᵢ εᵢ，主权函数为各维度信号之和。. This is a
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 退出权八维展开 is adjudicated as RELATION: 退出权信号的八维展开。. This is a model-internal controlled pr](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D8 / Within the source-defined scope, 退出权八维展开 is adjudicated as RELATION: 退出权信号的八维展开。. This is a model-internal controlled pr
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

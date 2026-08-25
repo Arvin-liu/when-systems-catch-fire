@@ -3,12 +3,12 @@
 
 - Iteration identity: current formal task `IGNITION-20260826-140` (ordinal `140`)；latest architecture-changing task `IGNITION-20260826-140` (ordinal `140`)；`current_iteration_boundary` `140` is a deprecated compatibility alias of the formal ordinal。
 - Architecture registry: `96` components；`84` visible map nodes；`12` hidden represented components；`134` typed relations；`89` visible typed edges。
-- Map/method: map `0.14.0` Current（historical `0.12.0`）；layout `2.0.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；method `1.4.0` `Current`。
+- Map/method: map `0.14.0` Current（historical `0.13.0`）；layout `2.0.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；method `1.4.0` `Current`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Live attempts: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/140/live-current-projection-r2.json`。
-- Foundation: function identity cards `5944`；function quarantine/pending `4868`；non-function claims `17172`；non-function quarantine/pending `4866`。
-- Knowledge Experience: cards `414`；changes `315`；layered readings `332`；search records `23448`；aliases `876`。
+- Foundation: function identity cards `5944`；function quarantine/pending `4868`；non-function claims `17181`；non-function quarantine/pending `4867`。
+- Knowledge Experience: cards `414`；changes `315`；layered readings `332`；search records `23457`；aliases `876`。
 - Fire Seeds: `64` seeds/clusters；`393` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`20` registered sync surfaces；`14` machine/human pairs。
 - Task lineage: current `IGNITION-20260826-140` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。

@@ -284,6 +284,26 @@
 - **主题：** `PHYSICS`, `SYSTEMS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-06ddf2b643747a14`, `现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agent`, `现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 [`agentization-boundary-r0.json`](../../data/architecture/agentization-boundary-r0.json)、`DomainPackManifest`、Agent Profile 和当时的唯一系统图 `0.6.0` 为准；后续 `0.7.0`、`0.8.0` 均是后续历史/当前投影。非知识 pilot 只读取两个 fixture 文本、生成排序 SHA-256 manifest，在不同 executor 间 checkpoint/resume，并在 validator 通过后进入 `COMPLETED_VALIDATED`；它是仓库范围隔离证据，不是 AGI、长期自主性或知识真值证据。`
 
+<a id="asset-nfc-08dd51bd4230ce81"></a>
+## Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0,
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-08dd51bd4230ce81` · [llms.txt](../../llms.txt)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `ACCEPTED_AS_DEFINITION`
+- **当前结果：** Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `llms.txt`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-08dd51bd4230ce81`, `Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0,`, `Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.`
+
 <a id="asset-nfc-0b7defaef4efab24"></a>
 ## 历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/(1-p)` 偏差敏感度评分。物理断言和评分函数分别处理。
 
@@ -764,6 +784,26 @@
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-71e297ca6132aac6`, `函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等`, `函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等于验证。T2、D127、D182—D190、D260 仍以 task 98 correction overlay 为最高专项权威；旧表保留原文。任何“大一统已被证明不可能”或“点火已统一四力”的结论均为撤回/禁止状态。`
 
+<a id="asset-nfc-77109cb5f560bd28"></a>
+## 方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、
+
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-77109cb5f560bd28` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
+- **当前状态：** `ACCEPTED_AS_DEFINITION`
+- **当前结果：** 方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
+- **双成熟度：** 数学 `M0`；外部证据 `E0`
+- **假设与表述上限：** May be stated only as a repository definition, policy, status record or explicitly scoped convention; it is not external truth.
+- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `AI-HANDOFF.md`
+- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
+- **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
+- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `NFC-77109cb5f560bd28`, `方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`, `方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。`
+
 <a id="asset-nfc-777640d03f719f40"></a>
 ## 原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**
 
@@ -963,43 +1003,3 @@
 - **下一步：** No open obligation was recorded.
 - **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-91ea4c56fdc6c482`, ``agent_runtime/`：R1 本地行动层、R2 Pack Registry/Bus、Pack-aware routing、Reasoner Gateway、Profile 投影、Operational Memory 与 Super`, `- `agent_runtime/`：R1 本地行动层、R2 Pack Registry/Bus、Pack-aware routing、Reasoner Gateway、Profile 投影、Operational Memory 与 Supervisor。`
-
-<a id="asset-nfc-921e43a466f461f8"></a>
-## 非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-921e43a466f461f8` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** 非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不能冒充同构，历史撤回不能因改名恢复。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-HANDOFF.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-921e43a466f461f8`, `非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不`, `非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不能冒充同构，历史撤回不能因改名恢复。`
-
-<a id="asset-nfc-9379ce5377b8455f"></a>
-## Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-9379ce5377b8455f` · [llms.txt](../../llms.txt)
-- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `QUARANTINED_AMBIGUOUS`
-- **当前结果：** - Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `llms.txt`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
-- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
-- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-9379ce5377b8455f`, `Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The `, `- Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.`

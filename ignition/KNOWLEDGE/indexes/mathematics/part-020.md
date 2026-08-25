@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [集体智能函数 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d417c3c649e0f898 / 集体智能函数 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
 - [需真实函数表对照证据；仅有 function_layer_relation 等字段不足以自动判为 PASS](../../../data/protocol-canonical-validation-results.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-57259baa3cdb0b05 / 需真实函数表对照证据；仅有 function_layer_relation 等字段不足以自动判为 PASS

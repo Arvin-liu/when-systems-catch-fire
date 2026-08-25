@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：并行增加状态空间，仲裁筛选降低无效熵，整体智能提升。物理/社会/认知三域共享对数结构。 关键发现：三域共享对数结构 English:… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8403f2d57337ec5b / 从这条案例看，中文：并行增加状态空间，仲裁筛选降低无效熵，整体智能提升。物理/社会/认知三域共享对数结构。 关键发现：三域共享对数结构 English:… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：性能突破来自模型网络编排，而不是单体模型继续堆参数。AI 系统从单体能力范式转向拓扑结构范式。 关键发现：AI 系统从单体能力范式转… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1b6b5cca656faab9 / 从这条案例看，中文：性能突破来自模型网络编排，而不是单体模型继续堆参数。AI 系统从单体能力范式转向拓扑结构范式。 关键发现：AI 系统从单体能力范式转… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-4804283f135a62f7 / 从这条案例看，中文：案例说明：鲜卑贵族无退出权（迁都后回不去），但心理上主动认同汉文化 关键发现：第5步跑通 English: Rule-based E… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：麦克斯韦妖 — 信息操作总Φ变化≥0，Landauer是特例。核心函数：\[D158\]\(docs/zh/functions/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e35514347083a77b / 从这条案例看，中文：案例说明：麦克斯韦妖 — 信息操作总Φ变化≥0，Landauer是特例。核心函数：\[D158\]\(docs/zh/functions/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158；被引用：—

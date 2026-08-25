@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [最小作用量原理-门槛优化函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-9bc646561fe749cd / 最小作用量原理-门槛优化函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
 - [最小作用量原理-门槛优化函数，最小作用量原理δS=0描述门控面Λ的演化路径。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-763bd874f9402f03 / 最小作用量原理-门槛优化函数，最小作用量原理δS=0描述门控面Λ的演化路径。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-d83c55d544db26a5 / 已迁移的历史函数来源/0038-T28-高斯门控函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T28；被引用：—
-- [已迁移的历史函数来源/0039-T29-门控函数进化三阶段.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-41fe53299e4209c5 / 已迁移的历史函数来源/0039-T29-门控函数进化三阶段.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T29；被引用：—

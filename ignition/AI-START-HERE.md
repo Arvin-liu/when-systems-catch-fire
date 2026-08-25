@@ -33,12 +33,12 @@ observation incomplete，return code、structured result、lease、workspace 和
 - current_formal_task: `IGNITION-20260826-140` (ordinal `140`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260826-140` (ordinal `140`)；current_iteration_boundary: `140` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260826-140`。
 - release_lifecycle: task `IGNITION-20260826-140`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
-- current_method: `1.4.0` Current；current_map: `0.14.0` Current；historical_map: `0.12.0` Historical。
+- current_method: `1.4.0` Current；current_map: `0.14.0` Current；historical_map: `0.13.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED`。
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/140/live-current-projection-r2.json`。
 - architecture_counts: `registry=96; visible_nodes=84; visible_edges=89`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260826-140` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `9b946c262c01d6968481975fb8e472461b814f548833c8208e26fb385580ceb3`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `117219689975c42ab776cc5dc93dbf8d436f2f3e89452cb0cf5bd5e108e412a1`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -125,7 +125,7 @@ epistemic acceptance。
 - 迭代方法只能约束操作纪律，不能证明实质结论正确。
 - 当前迭代方法、地图版本和历史版本由 generated Current Snapshot 提供；Durability / Lifecycle R3 是同一 OS 控制脊柱内的 repository-local recovery component；Structural Governance Surface 是 advisory overlay，不增加 L7。
 
-方法 `1.3.0` 与系统图 `0.10.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
+方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求读取 `data/operations/project-components.json` 与 `data/operations/change-propagation-topology.json`，把变更路径解析为构件、遍历声明关系到 fixpoint、绑定决定／map diff／residue，再由 registries 与布局 overlay 派生系统图。不得把 Git diff、依赖或可达性称为现实因果证明。
 - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。
 
 `1.3.0` 降为 Historical，Q32I 为 Closed。选择性物化只在完整 profile、authority、plan 与指纹身份一致时选择性物化。Authority 类型、execution capability 与 validation capability 必须分别声明；apply 必须先通过统一预检，rollback（回滚）必须证明整仓字节／类型／symlink／mode 恢复，否则进入 unrecovered 与 recovery package。NonImpactProof 只证明声明关系范围内的非影响；cache 不是真相源；meta-authority 变更强制 full rebuild。Q33 启动包已准备，但 Q33 与 Q34—Q40 均尚未启动。

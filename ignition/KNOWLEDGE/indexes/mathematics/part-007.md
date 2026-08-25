@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Proof Obligation](../../../data/foundation/schemas/proof-obligation.schema.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e6a57d58ca2258d4 / Proof Obligation
+  - 来源：`data/foundation/schemas/proof-obligation.schema.json`
+  - 依赖：—；被引用：—
 - [Proof Obligations](../../../docs/math-foundation/04-proof-obligations.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-9a3be8cd0806c9aa / Proof Obligations
@@ -2497,10 +2502,5 @@
 - [title: "传染临界-不可逆线一致性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2EB1D6666D20F3C1 / title: "传染临界-不可逆线一致性函数" / IMPLICIT-2EB1D6666D20F3C1
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "传染临界-不可逆观测量函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4F7E44C55498665A / title: "传染临界-不可逆观测量函数" / IMPLICIT-4F7E44C55498665A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

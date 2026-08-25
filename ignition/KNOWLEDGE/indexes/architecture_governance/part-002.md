@@ -2044,6 +2044,11 @@
   - 可搜索名称：NFC-108fd04a680ba380 / claim_ceiling: Task140 repository-local architecture registration, typed observation, reconciliation and bounded live-ad
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [claim_ceiling: Task140 repository-local terminal architecture/current and fail-closed live-observation evidence only; no](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a0c1dd9cb95e8996 / claim_ceiling: Task140 repository-local terminal architecture/current and fail-closed live-observation evidence only; no
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish extern](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd7cc4e938e6b72a / claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish extern
@@ -2497,10 +2502,5 @@
 - [current_path_manifest: `classification-manifest.jsonl` is the Current generated snapshot of the live tracked engine; the](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-75846cdb91075c9e / current_path_manifest: `classification-manifest.jsonl` is the Current generated snapshot of the live tracked engine; the
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [current_path_manifest: `classification-manifest.jsonl` remains the Current generated snapshot; the terminal candidate ha](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b2d9d3e930fd331f / current_path_manifest: `classification-manifest.jsonl` remains the Current generated snapshot; the terminal candidate ha
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

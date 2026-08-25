@@ -1279,6 +1279,11 @@
   - 可搜索名称：NFC-cf681c97d3fd8012 / authority_changes: Current task-lineage, lifecycle, Current Facts, Current Snapshot and Human Surface projections are sy
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: Task140 terminalization adds no Owner, provider, channel, browser, remote-Git, configuration, billing](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-67345b454dc3318e / authority_changes: Task140 terminalization adds no Owner, provider, channel, browser, remote-Git, configuration, billing
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: the ledger, capture/projection contracts and Current generators are repository-local observation mach](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1be5eb03f52151f8 / authority_changes: the ledger, capture/projection contracts and Current generators are repository-local observation mach
@@ -2497,10 +2502,5 @@
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5079396226 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json / A5079396226 / A5004821708
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D001803 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json / D001803 / A5004821708
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json`
   - 依赖：—；被引用：—

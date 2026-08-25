@@ -1,8 +1,8 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 34,
-  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34],
+  "entry_count": 36,
+  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
   "historical_entry_count": 26,
   "legacy_profile_count": 6,
   "profiles": {
@@ -56,6 +56,8 @@
     {"ordinal": 31, "date": "2026-08-24", "label": "IGNITION-20260824-137-VALIDATED-LIVE-COMPLETION-RECONCILIATION-R1 — Current continuation", "profile": "current-r1", "section_sha256": "db91e101419fc1152afcdcf14146f67badfdb4db1b59548a40d8aba4f007fef7"},
     {"ordinal": 32, "date": "2026-08-24", "label": "IGNITION-20260824-138 — executor runtime scratch separation continuation", "profile": "current-r1", "section_sha256": "a1c73641b93286a506e09b0e29459526dcc37f1d0c29b0b524dee25e62fbf5ad"},
     {"ordinal": 33, "date": "2026-08-25", "label": "IGNITION-20260825-139 — durable live attempt journal and observation projection", "profile": "current-r1", "section_sha256": "df9bf3013d2d2c7c1d59c0374cbaa11720701e3600d9d8d05f2c62c4afd04502"},
-    {"ordinal": 34, "date": "2026-08-25", "label": "IGNITION-20260825-139 — terminal Current release candidate", "profile": "current-r1", "section_sha256": "662519d3e7b6c372631b759da5bad41d47aac6c955494c33d39a5948d457b6ac"}
+    {"ordinal": 34, "date": "2026-08-25", "label": "IGNITION-20260825-139 — terminal Current release candidate", "profile": "current-r1", "section_sha256": "4d9223e045a02021a215274cde7f43f054371af83b087c085f3a7286528e4f20"},
+    {"ordinal": 35, "date": "2026-08-26", "label": "IGNITION-20260826-140 — Observation / Reconciliation Plane current architecture transition", "profile": "current-r1", "section_sha256": "06c915d1ecc1b761ae31dc04d9dfbabda8c5ba58ada42b73ec527c44ba882b9a"},
+    {"ordinal": 36, "date": "2026-08-26", "label": "IGNITION-20260826-140 — terminal task with open live obligation", "profile": "current-r1", "section_sha256": "124b39ac7255e12de2a629977017f4b4299a60c1ae873d2363e19da54bf3b4c7"}
   ]
 }

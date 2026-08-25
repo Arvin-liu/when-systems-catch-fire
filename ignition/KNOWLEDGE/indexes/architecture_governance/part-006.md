@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If the attempt fails or times out, the failure remains the terminal evidence;](../../../reports/operations/ignition-137-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-eb60ddcb6d6b4fdd / If the attempt fails or times out, the failure remains the terminal evidence;
+  - 来源：`reports/operations/ignition-137-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [if total_success_verified != 79:](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0e67ef5e62409275 / if total_success_verified != 79:
+  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
+  - 依赖：—；被引用：—
 - [If You institute patent litigation against any entity \(including a cross-claim or counterclaim in a lawsuit\) alleging th](../../../LICENSES/active/APACHE-2.0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-99201e138fbc24d2 / If You institute patent litigation against any entity \(including a cross-claim or counterclaim in a lawsuit\) alleging th
@@ -1924,6 +1934,11 @@
   - 可搜索名称：NFC-6a9949d11c390aed / Obligation dependencies are acyclic and never imply truth inheritance.
   - 来源：`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`
   - 依赖：—；被引用：—
+- [obligations: complete Step15 natural candidate/fresh-clone regression, then ordinary fast-forward main and the independe](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1399faf8e06accd5 / obligations: complete Step15 natural candidate/fresh-clone regression, then ordinary fast-forward main and the independe
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [obligations: complete the fresh executor census, at most two distinct-family live admissions after the retry-safety gate](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a2193204115eecde / obligations: complete the fresh executor census, at most two distinct-family live admissions after the retry-safety gate
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-441127f3ba52b7aa / passes.append\(f"CHECK_7: 5 retry successes verified"\)
   - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
-  - 依赖：—；被引用：—
-- [passes.append\(f"CHECK_7: {total_success_verified} success items verified \({original_verified} original, {landing_fix} la](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5c674042b80ee6ed / passes.append\(f"CHECK_7: {total_success_verified} success items verified \({original_verified} original, {landing_fix} la
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
-  - 依赖：—；被引用：—
-- [path = f"{BASE}/evidence-cards-max/{sid}.json"](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-98bae669e57f685f / path = f"{BASE}/evidence-cards-max/{sid}.json"
-  - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
-  - 依赖：—；被引用：—
-- [Path-independent imports: removed sys.path hacks, standard pkg import, verified from /tmp](../../../data/external-research/121-fulltext-resolver/121q6/121q6-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6deba5f6b0bff700 / Path-independent imports: removed sys.path hacks, standard pkg import, verified from /tmp
-  - 来源：`data/external-research/121-fulltext-resolver/121q6/121q6-step-ledger.jsonl`
   - 依赖：—；被引用：—

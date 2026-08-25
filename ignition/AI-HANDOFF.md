@@ -53,12 +53,12 @@ R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、�
 - current_formal_task: `IGNITION-20260826-140` (ordinal `140`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260826-140` (ordinal `140`)；current_iteration_boundary: `140` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260826-140`。
 - release_lifecycle: task `IGNITION-20260826-140`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
-- current_method: `1.4.0` Current；current_map: `0.14.0` Current；historical_map: `0.12.0` Historical。
+- current_method: `1.4.0` Current；current_map: `0.14.0` Current；historical_map: `0.13.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED`。
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/140/live-current-projection-r2.json`。
 - architecture_counts: `registry=96; visible_nodes=84; visible_edges=89`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260826-140` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `9b946c262c01d6968481975fb8e472461b814f548833c8208e26fb385580ceb3`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `117219689975c42ab776cc5dc93dbf8d436f2f3e89452cb0cf5bd5e108e412a1`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -136,7 +136,7 @@ PR #55 已将 121Q23 Adaptive Relational Network 合并进 `main`。涉及关系
 
 当前方法、地图和历史版本由 generated Current Snapshot 提供；Durability / Lifecycle R3 保持 repository-local recovery boundary；Structural Governance Surface 仍是 advisory overlay，不增加 L7。
 
-方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
+方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
 
 Q25C 的每表面 `blocks` 生命周期原则继续有效；任务 101 退役独立阅读站表面，当前人类层由仓库内机器/人类双输出、main 验证和全新克隆复验收口。未来外部表面必须单独登记与 attestation。
 

@@ -112,6 +112,25 @@ SELF_EXCLUDES = {
     "reports/operations/ignition-139-step15-fresh-clone-publication.md",
     "agent-results/IGNITION-20260825-139-result.md",
     "agent-results/IGNITION-20260825-139-machine-receipt.json",
+    # Task 140 Step13-15 validation, projection and publication records are
+    # provenance-only operation artifacts. Exclude them explicitly so their
+    # evidence text cannot re-enter the canonical claim registry through
+    # receipt wording or revision order.
+    "data/operations/iterations/140/progress.jsonl",
+    "data/operations/iterations/140/step13-adversarial-matrix.json",
+    "data/operations/iterations/140/step13-targeted-regression.json",
+    "data/operations/iterations/140/step14-current-terminal-semantics.json",
+    "data/operations/iterations/140/step15-deterministic-current-surface-r1.json",
+    "data/operations/iterations/140/step15-projection-preflight.json",
+    "data/operations/iterations/140/step15-candidate-full-regression.json",
+    "data/operations/iterations/140/step15-fresh-clone-publication.json",
+    "reports/operations/ignition-140-step13-adversarial-matrix.md",
+    "reports/operations/ignition-140-step13-targeted-regression.md",
+    "reports/operations/ignition-140-step14-current-terminal-semantics.md",
+    "reports/operations/ignition-140-step15-candidate-full-regression.md",
+    "reports/operations/ignition-140-step15-fresh-clone-publication.md",
+    "agent-results/IGNITION-20260826-140-result.md",
+    "agent-results/IGNITION-20260826-140-machine-receipt.json",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",

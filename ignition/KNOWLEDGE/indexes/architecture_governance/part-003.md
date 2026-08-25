@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [current_path_manifest: `classification-manifest.jsonl` remains the Current generated snapshot; the terminal candidate ha](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b2d9d3e930fd331f / current_path_manifest: `classification-manifest.jsonl` remains the Current generated snapshot; the terminal candidate ha
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [current_path_manifest: final Task136 closure records `3141` tracked paths and `3141` manifest paths with missing, stale,](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-d5624df880a9a12b / current_path_manifest: final Task136 closure records `3141` tracked paths and `3141` manifest paths with missing, stale,
@@ -2497,10 +2502,5 @@
 - [def code\(self\) -> str \| None:](../../../reos_vnext/validation.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-1711B736B3E8AE14 / def code\(self\) -> str \| None: / IMPLICIT-1711B736B3E8AE14
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [def collect_case_errors\(document: Any\) -> list\[ValidationIssue\]:](../../../reos_vnext/validation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1C06B327116C1105 / def collect_case_errors\(document: Any\) -> list\[ValidationIssue\]: / IMPLICIT-1C06B327116C1105 / IMPLICIT-44EC931671F432FC
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—

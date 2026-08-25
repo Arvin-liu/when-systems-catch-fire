@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [国家形成的具体因果判定：**pending**（需要史料考证和解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f4a5874180534f9e / 国家形成的具体因果判定：**pending**（需要史料考证和解释共同体共识）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [在局部、低耦合、关系稳定、可预测范围内，假设状态沿可预测路径演化的建模与行动方式；须设反馈点、偏差检测与非线性退出条件，禁止把复杂生命系统强行简化为直线模型。](../../../docs/governance/meta-protocol-reviews/protocols/E1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a721d9a9e4dc641f / 在局部、低耦合、关系稳定、可预测范围内，假设状态沿可预测路径演化的建模与行动方式；须设反馈点、偏差检测与非线性退出条件，禁止把复杂生命系统强行简化为直线模型。
@@ -1169,9 +1174,9 @@
   - 可搜索名称：NFC-8160454521535f71 / 新条目**逻辑信息完整**（定义/机制/边界/来源/pending 齐），但**结构表达与旧条目不统一**：
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
   - 依赖：—；被引用：—
-- [方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Histor](../../ASSET-CARDS.md#asset-nfc-de320ba9d14281ee)
+- [方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、](../../ASSET-CARDS.md#asset-nfc-77109cb5f560bd28)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-de320ba9d14281ee / 方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Histor / 方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
+  - 可搜索名称：NFC-77109cb5f560bd28 / 方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、 / 方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 topology 与 `data/operations/synchronization-surfaces.json` 计算全项目传播闭包。README、`HUMAN-READING.md`、`RESULTS/`、项目现状、人类 AI 指南、AI 冷启动、Agent 交接、机器入口和版本历史都是必须评估的项目表面。实现完成不能替代仓库同步完成；本地验证也不能声称任何未登记的实时外部状态已验证。
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [无限性问题：点火框架处理有限系统内的演化规律\\n2.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-92073259e5989c23 / 跨域跳转必须依靠共享意象、动作、变量、句法回声或因果铰链。
   - 来源：`docs/narrative-output-layer.md`
-  - 依赖：—；被引用：—
-- [输入材料、事实、引用或案例基础错误，导致后续结构判断失效。](../../../data/failure_typology.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a631ea6501b44943 / 输入材料、事实、引用或案例基础错误，导致后续结构判断失效。
-  - 来源：`data/failure_typology.csv`
   - 依赖：—；被引用：—

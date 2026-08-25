@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [这里的“素材来源”是写作生成角色，不把点火派生产物伪装成新的外部证据。按实际使用复制条目。](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cf5f1fd7a36062af / 这里的“素材来源”是写作生成角色，不把点火派生产物伪装成新的外部证据。按实际使用复制条目。
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [这里的关键不是让模型记住几个词，而是区分两件事：它有没有说出看起来谨慎的话，以及它在遇到越级诱导时是否真的拒绝了没有证据支持的状态跃迁。前者是风格，后者才是待研究的决策边界。](../../../docs/architecture/epistemic-structural-induction-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8cacb78df4afe7a3 / 这里的关键不是让模型记住几个词，而是区分两件事：它有没有说出看起来谨慎的话，以及它在遇到越级诱导时是否真的拒绝了没有证据支持的状态跃迁。前者是风格，后者才是待研究的决策边界。
+  - 来源：`docs/architecture/epistemic-structural-induction-r0.md`
+  - 依赖：—；被引用：—
+- [这页把机器边界翻译成人能先读懂的入口。它解释为什么要把原始结构、术语、文风和结构破坏控制分开：只重复词语或模仿语气，不等于保留了边界。它也把文献、合成夹具和 Owner 提供的公开安全观察放在不同证据位置，避免把它们合成一条更强的故事。](../../../docs/architecture/esi-human-surface-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0734a534d865d69a / 这页把机器边界翻译成人能先读懂的入口。它解释为什么要把原始结构、术语、文风和结构破坏控制分开：只重复词语或模仿语气，不等于保留了边界。它也把文献、合成夹具和 Owner 提供的公开安全观察放在不同证据位置，避免把它们合成一条更强的故事。
+  - 来源：`docs/architecture/esi-human-surface-r0.md`
+  - 依赖：—；被引用：—
+- [这页遵循之元写作法的人类入口纪律：先说范围和用途，再说不能推出什么、缺什么以及如何回到机器记录。它不改变 canonical 状态，不创建第二套断言数据库，也不把可读性当成证据。](../../../docs/architecture/esi-human-surface-r0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1957957fe42993b1 / 这页遵循之元写作法的人类入口纪律：先说范围和用途，再说不能推出什么、缺什么以及如何回到机器记录。它不改变 canonical 状态，不创建第二套断言数据库，也不把可读性当成证据。
+  - 来源：`docs/architecture/esi-human-surface-r0.md`
+  - 依赖：—；被引用：—
 - [退出隧穿验证 — 朝鲜脱北者-C_exit≈∞\(地理+政治+身份三维锁定\),经典P_exit≈0,但实际发生。隧穿路径-边境信息泄漏\(降低势](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-64f7bd1987d19921 / 退出隧穿验证 — 朝鲜脱北者-C_exit≈∞\(地理+政治+身份三维锁定\),经典P_exit≈0,但实际发生。隧穿路径-边境信息泄漏\(降低势

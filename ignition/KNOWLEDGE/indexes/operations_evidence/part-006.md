@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "r_cross=0不导致Ψ=0"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C9D721E38BAA2ACA / title: "r_cross=0不导致Ψ=0" / IMPLICIT-C9D721E38BAA2ACA
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "r_cross优先性定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BF5F791B0C6D3351 / title: "r_cross优先性定理" / IMPLICIT-BF5F791B0C6D3351
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "Shannon-Fisher跷跷板定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4631579D56B0CCA4 / title: "Shannon-Fisher跷跷板定理" / IMPLICIT-4631579D56B0CCA4
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（\\"想通\\"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控\(\\"想通\\"是质变\); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数\(](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8FC396CED57EC5C1 / title: "Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（\\"想通\\"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控\(\\"想通\\"是质变\); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数\( / IMPLICIT-8FC396CED57EC5C1

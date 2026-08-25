@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 退出权八维展开 is adjudicated as RELATION: 退出权信号的八维展开。. This is a model-internal controlled pr](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D8 / Within the source-defined scope, 退出权八维展开 is adjudicated as RELATION: 退出权信号的八维展开。. This is a model-internal controlled pr
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 退出权共振函数 is adjudicated as RELATION: P_exit_resonance = max\[P_exit\(Ω,T,C,σ\)\]. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D509 / Within the source-defined scope, 退出权共振函数 is adjudicated as RELATION: P_exit_resonance = max\[P_exit\(Ω,T,C,σ\)\]. This is a
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-53dae338f2c0930a / \| NF-001 \| 绩效绑定裹挟函数 \| 当晋升/职称/绩效/退休待遇与某竞赛指标强绑定时，个体参与该竞赛的「可拒绝性」趋近于零，即使主观反感也被结构裹挟参与。 \| L1（组织激励层） \| source.md §职称绑定的无奈裹挟 \| N
   - 来源：`outputs/collisions/20260708-teacher-competition/new-functions.md`
   - 依赖：—；被引用：—
-- [\| NF-001 绩效绑定裹挟 \| 函数 \| 入表 \| D595 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|](../../../outputs/audit/teacher-competition-batch-closeout-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a44c89098f372ed8 / \| NF-001 绩效绑定裹挟 \| 函数 \| 入表 \| D595 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|
-  - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
-  - 依赖：D595；被引用：—

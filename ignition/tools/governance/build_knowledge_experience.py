@@ -72,7 +72,7 @@ def repo_path(path: str) -> Path:
 
 
 def digest_file(path: str) -> str:
-    return hashlib.sha256(repo_path(path).read_bytes()).hexdigest()
+    return digest_text(_normalized_source_text(path))
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -203,7 +203,7 @@ def source_date(path: str, fallback: str) -> str:
 
 
 def source_fragments(path: str) -> list[str]:
-    lines = repo_path(path).read_text(encoding="utf-8", errors="replace").splitlines()
+    lines = _normalized_source_text(path).splitlines()
     fragments: list[str] = []
     paragraph: list[str] = []
     in_fence = False
@@ -976,6 +976,32 @@ relink_in_file = lambda content, product_path: _RELINK_RE.sub(
             ))(raw.partition("#")[0], raw.partition("#")[2])
         ))(m.group(2).strip())
     ), content)
+
+
+# Compiler-owned Current Snapshot blocks contain derived counts and digests.
+# They are intentionally excluded from Knowledge source fingerprints and
+# navigation fragments, matching the Human Surface validator, so a Current
+# projection refresh cannot feed a self-referential hash cycle back into
+# Knowledge Experience.
+_CURRENT_SNAPSHOT_BLOCK = re.compile(
+    r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n"
+    r".*?<!-- CURRENT-SNAPSHOT:END -->\n?",
+    re.DOTALL,
+)
+_normalize_snapshot_text = lambda text: (
+    _CURRENT_SNAPSHOT_BLOCK.sub("", text)
+    if "<!-- CURRENT-SNAPSHOT:BEGIN" in text
+    else text
+)
+_SOURCE_TEXT_CACHE = {}
+_normalized_source_text = lambda path: (
+    _SOURCE_TEXT_CACHE[path]
+    if path in _SOURCE_TEXT_CACHE
+    else _SOURCE_TEXT_CACHE.setdefault(
+        path,
+        _normalize_snapshot_text(repo_path(path).read_text(encoding="utf-8", errors="replace")),
+    )
+)
 
 
 if __name__ == "__main__":

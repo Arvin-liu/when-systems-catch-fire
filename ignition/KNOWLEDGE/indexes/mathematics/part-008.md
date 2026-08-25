@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "传染临界-不可逆观测量函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4F7E44C55498665A / title: "传染临界-不可逆观测量函数" / IMPLICIT-4F7E44C55498665A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "传染临界n依赖函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6A61A586BBB40C8B / title: "传染临界n依赖函数" / IMPLICIT-6A61A586BBB40C8B
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-23ac17aae24e335a / Use public proof tooling while retaining proof-scope claims.
   - 来源：`data/atlas/generated/ignition-atlas-121q14.json`
-  - 依赖：—；被引用：—
-- [user switched to Hy3 mid-Q5, no per-step runtime proof](../../../data/external-research/121-fulltext-resolver/121q6/121q5-status-correction-overlay.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-56adb3ae632b33ce / user switched to Hy3 mid-Q5, no per-step runtime proof
-  - 来源：`data/external-research/121-fulltext-resolver/121q6/121q5-status-correction-overlay.json`
   - 依赖：—；被引用：—

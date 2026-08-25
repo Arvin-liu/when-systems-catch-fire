@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The public synthesis describes projection, normalization/deduplication, theme mapping, review/conflict retention and bou](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a17936317c90494c / The public synthesis describes projection, normalization/deduplication, theme mapping, review/conflict retention and bou
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [The publication states are `UNPUBLISHED`, `PR_VISIBLE`, `PUBLISHED_SNAPSHOT`, `SUPERSEDED_SNAPSHOT`, `WITHDRAWN_SNAPSHOT](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-da998873679354c8 / The publication states are `UNPUBLISHED`, `PR_VISIBLE`, `PUBLISHED_SNAPSHOT`, `SUPERSEDED_SNAPSHOT`, `WITHDRAWN_SNAPSHOT
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [the published aggregates cannot be reproduced from the frozen, authorized projection;](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1235a0c96fdfd612 / the published aggregates cannot be reproduced from the frozen, authorized projection;
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [the registry or memory projection.](../../../docs/architecture/federation-convergence-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-32d757509e7e4d85 / the registry or memory projection.
+  - 来源：`docs/architecture/federation-convergence-r1.md`
+  - 依赖：—；被引用：—
 - [The registry's own `crossref_verified: true`, `crossref_title`, `crossref_year`](../../../evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-60c8e4b003dc6024 / The registry's own `crossref_verified: true`, `crossref_title`, `crossref_year`
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-0bdf513546a02535 / \| \[C-164\]\( \) \| \[AI共震策略全失效（验证D66）\]\( \) \| 同质性遮蔽放大后，信息对抗会被
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D66；被引用：—
-- [\| \[C-165\]\( \) \| \[炒股带宽溢出全领域衰减（验证D63跨域溢出）\]\( \)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ad2043474ae2407a / \| \[C-165\]\( \) \| \[炒股带宽溢出全领域衰减（验证D63跨域溢出）\]\( \)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D63；被引用：—
-- [\| \[C-166\]\( \) \| \[小资金恐惧锁定向下螺旋（验证D67）\]\( \) \| 资金量、恐惧锁定与](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-70689e2a1ed27124 / \| \[C-166\]\( \) \| \[小资金恐惧锁定向下螺旋（验证D67）\]\( \) \| 资金量、恐惧锁定与
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D67；被引用：—
-- [\| \[C-167\]\( \) \| \[定投=门锁交替律执行（验证D47+D49）\]\( \) \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7deb77c2cc5946ab / \| \[C-167\]\( \) \| \[定投=门锁交替律执行（验证D47+D49）\]\( \) \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D47, D49；被引用：—
-- [\| \[C-168\]\( \) \| \[H_total放大触发F_collapse（验证D65）\]\(<./0168-C-168-H_total放大触发F_co](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-87f1285a984aeeec / \| \[C-168\]\( \) \| \[H_total放大触发F_collapse（验证D65）\]\(<./0168-C-168-H_total放大触发F_co
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D65；被引用：—

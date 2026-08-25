@@ -209,6 +209,11 @@
   - 可搜索名称：NFC-d99f20098f608221 / delta: Task138 separates the disposable read-only task workspace, attempt-specific writable executor runtime scratch and
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [delta: terminalizes the Task140 architecture/current transition after historical reconciliation closure and the adversar](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b4d485f314c1cdd2 / delta: terminalizes the Task140 architecture/current transition after historical reconciliation closure and the adversar
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [delta: 从知识治理系统抽出领域无关 Generic Kernel 与 Agent Runtime R0，建立 `Observe → Frame → Plan → Authorize → Act → Validate → Remembe](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b69e804b28d519d4 / delta: 从知识治理系统抽出领域无关 Generic Kernel 与 Agent Runtime R0，建立 `Observe → Frame → Plan → Authorize → Act → Validate → Remembe
@@ -1074,9 +1079,9 @@
   - 可搜索名称：NFC-f5221d99ca4acd3e / It is not a FUNCTION or PARTIAL_FUNCTION because the displayed multiplicative score does not declare a set-theoretic dom
   - 来源：`reports/foundation-architecture/D598-final-adjudication-20260713.md`
   - 依赖：—；被引用：—
-- [Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0](../../ASSET-CARDS.md#asset-nfc-de2dafc4a06528aa)
+- [Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0,](../../ASSET-CARDS.md#asset-nfc-08dd51bd4230ce81)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-de2dafc4a06528aa / Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0 / Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
+  - 可搜索名称：NFC-08dd51bd4230ce81 / Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, / Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, not Current. Treat implementation completion, repository synchronization, external synchronization and project completion as distinct states; local validation never proves undeclared live external truth.
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
 - [Its critique identifies comparability and systems-measurement requirements for validation, while providing no semantic/b](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-62a7dbd9654b5f82 / Object D62 defines a mechanism_model within the point-fire framework. Core: 中文：dε_opt/dt = η_reprogram × Σⱼ\(新档案ⱼ的安装强度 ×
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D62；被引用：—
-- [Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ\(参与者策略\)×N_homogeneous/](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-efa2d0e7e8ca1c21 / Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ\(参与者策略\)×N_homogeneous/
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：A6, D66；被引用：—

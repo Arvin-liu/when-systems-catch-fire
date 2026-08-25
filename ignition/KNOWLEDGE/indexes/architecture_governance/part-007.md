@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [passes.append\(f"CHECK_7: {total_success_verified} success items verified \({original_verified} original, {landing_fix} la](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5c674042b80ee6ed / passes.append\(f"CHECK_7: {total_success_verified} success items verified \({original_verified} original, {landing_fix} la
+  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
+  - 依赖：—；被引用：—
+- [path = f"{BASE}/evidence-cards-max/{sid}.json"](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-98bae669e57f685f / path = f"{BASE}/evidence-cards-max/{sid}.json"
+  - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
+  - 依赖：—；被引用：—
+- [Path-independent imports: removed sys.path hacks, standard pkg import, verified from /tmp](../../../data/external-research/121-fulltext-resolver/121q6/121q6-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6deba5f6b0bff700 / Path-independent imports: removed sys.path hacks, standard pkg import, verified from /tmp
+  - 来源：`data/external-research/121-fulltext-resolver/121q6/121q6-step-ledger.jsonl`
+  - 依赖：—；被引用：—
 - [PCA-Net, DeepONet, FNO, ANO, and random-feature parameterizations are concrete reusable artifact families.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-fae73cb40b365b80 / PCA-Net, DeepONet, FNO, ANO, and random-feature parameterizations are concrete reusable artifact families.
@@ -1479,6 +1494,11 @@
   - 可搜索名称：NFC-e1996d9a0a464b5d / stale_knowledge: Task135 and all earlier release records remain immutable provenance; the Hermes timeout, OpenClaw safet
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [stale_knowledge: Task139's historical five-attempt and `PRESENTATION_ONLY` claims remain immutable provenance; the curre](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d08ed888c0697852 / stale_knowledge: Task139's historical five-attempt and `PRESENTATION_ONLY` claims remain immutable provenance; the curre
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [stale_knowledge: terminology/style similarity, offline machine scoring, repository synchronization, publication, map vis](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-018edc9a949d39a4 / stale_knowledge: terminology/style similarity, offline machine scoring, repository synchronization, publication, map vis
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3c3fe8840720ea1c / The public status remains `EPISTEMICALLY_ACCEPTED=0`; this bounded replay does not grant epistemic acceptance. Review pr
   - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
-  - 依赖：—；被引用：—
-- [The public synthesis describes projection, normalization/deduplication, theme mapping, review/conflict retention and bou](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a17936317c90494c / The public synthesis describes projection, normalization/deduplication, theme mapping, review/conflict retention and bou
-  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
-  - 依赖：—；被引用：—
-- [The publication states are `UNPUBLISHED`, `PR_VISIBLE`, `PUBLISHED_SNAPSHOT`, `SUPERSEDED_SNAPSHOT`, `WITHDRAWN_SNAPSHOT](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-da998873679354c8 / The publication states are `UNPUBLISHED`, `PR_VISIBLE`, `PUBLISHED_SNAPSHOT`, `SUPERSEDED_SNAPSHOT`, `WITHDRAWN_SNAPSHOT
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [the published aggregates cannot be reproduced from the frozen, authorized projection;](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-1235a0c96fdfd612 / the published aggregates cannot be reproduced from the frozen, authorized projection;
-  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
-  - 依赖：—；被引用：—
-- [the registry or memory projection.](../../../docs/architecture/federation-convergence-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-32d757509e7e4d85 / the registry or memory projection.
-  - 来源：`docs/architecture/federation-convergence-r1.md`
   - 依赖：—；被引用：—

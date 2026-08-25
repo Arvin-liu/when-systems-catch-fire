@@ -137,6 +137,7 @@
         "future_executors",
         "hermes_adapter",
         "live_executor_bridge_r1",
+        "live_observation_reconciliation_plane_r1",
         "openclaw_adapter",
         "reference_executor"
       ],

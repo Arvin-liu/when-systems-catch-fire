@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def collect_case_errors\(document: Any\) -> list\[ValidationIssue\]:](../../../reos_vnext/validation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-1C06B327116C1105 / def collect_case_errors\(document: Any\) -> list\[ValidationIssue\]: / IMPLICIT-1C06B327116C1105 / IMPLICIT-44EC931671F432FC
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
 - [def compile\(self, spec: dict\) -> Dict\[str, Any\]:](../../../function-os-candidate/v0.1/function_os/n2_symbolic_compiler.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-DF9EC26E8A0C7BE8 / def compile\(self, spec: dict\) -> Dict\[str, Any\]: / IMPLICIT-DF9EC26E8A0C7BE8
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-137C2A434870A4B6 / def test_symbolic_subset_allowed\(self\): / IMPLICIT-137C2A434870A4B6
   - 来源：`function-os-candidate/v0.2/tests/test_n1_robust.py`
-  - 依赖：—；被引用：—
-- [def test_synthetic_legalization_runs_but_is_excluded\(self\):](../../../function-os-candidate/v0.2/tests/test_asset_import_e2e.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E033B380FBE98394 / def test_synthetic_legalization_runs_but_is_excluded\(self\): / IMPLICIT-E033B380FBE98394
-  - 来源：`function-os-candidate/v0.2/tests/test_asset_import_e2e.py`
   - 依赖：—；被引用：—

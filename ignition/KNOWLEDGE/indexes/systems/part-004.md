@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| BC-20260709-012 \| 《文明的冲突》 \| 文明断层线与点火框架封闭边界协议（S₁）的映射。文明边界压缩退出权，形成自我强化路径依赖，导致冲突不可避免。 \| S1 \| - \| 《文明的冲突》最终收敛报告 2026年7月9日1](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ab7626d43ed9c717 / \| BC-20260709-012 \| 《文明的冲突》 \| 文明断层线与点火框架封闭边界协议（S₁）的映射。文明边界压缩退出权，形成自我强化路径依赖，导致冲突不可避免。 \| S1 \| - \| 《文明的冲突》最终收敛报告 2026年7月9日1
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
 - [\| BC-20260709-015 \| 《技术与文明》 \| 技术决定论与点火框架元协议组合的映射。技术作为元协议实例，重塑社会结构，验证了技术与社会演化的同构性。 \| pending \| - \| 《技术与文明》最终收敛报告 2026年7月9](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3b31a417224aea79 / \| BC-20260709-015 \| 《技术与文明》 \| 技术决定论与点火框架元协议组合的映射。技术作为元协议实例，重塑社会结构，验证了技术与社会演化的同构性。 \| pending \| - \| 《技术与文明》最终收敛报告 2026年7月9
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8bcc8cf9b20f4e19 / 因此，本轮最终判断是：**保留“信仰与利用同时存在”的复杂性，把“制造天意”从造假指控提升为对接口和反馈权的追问；文章完成公共表达，历史唯一因果仍未识别。**
   - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [国家形成的具体因果判定：**pending**（需要史料考证和解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f4a5874180534f9e / 国家形成的具体因果判定：**pending**（需要史料考证和解释共同体共识）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—

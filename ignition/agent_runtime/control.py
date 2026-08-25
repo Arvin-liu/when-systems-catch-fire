@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime, timezone
 import fcntl
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -63,10 +64,21 @@ def _atomic_json(path: Path, value: Any) -> None:
 
 
 class FileLock:
-    """A process-level lock whose lock file is never removed."""
+    """A process-level lock kept outside the repository or durable data tree.
+
+    The lock is keyed by the canonical target path, so independent processes
+    still serialize access to the same target.  Keeping the coordination inode
+    in the OS temporary directory prevents read-only validation of a durable
+    JSONL file from creating an untracked repository artifact.
+    """
+
+    _LOCK_ROOT = Path(tempfile.gettempdir()) / "ignition-runtime-locks"
 
     def __init__(self, path: str | Path) -> None:
-        self.path = Path(path)
+        requested = Path(path).expanduser().resolve()
+        digest = hashlib.sha256(str(requested).encode("utf-8")).hexdigest()
+        self.requested_path = requested
+        self.path = self._LOCK_ROOT / f"{digest}.lock"
         self._handle: Any = None
 
     def __enter__(self) -> "FileLock":

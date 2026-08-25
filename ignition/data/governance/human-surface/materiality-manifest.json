@@ -3,7 +3,7 @@
     "function_human": 24,
     "function_machine": 5944,
     "nonfunction_human": 24,
-    "nonfunction_machine": 17172
+    "nonfunction_machine": 17181
   },
   "entries": [
     {
@@ -80,7 +80,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "e63a8ab71ecd7372c37cc8412b91a93e287b47185572f8bc3a9a34f094a65ccc",
+      "source_sha256": "e7517269bcb9ef8447b8a4039289343378be358f4acd29ff162ca3d750206c49",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -91,7 +91,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "e63a8ab71ecd7372c37cc8412b91a93e287b47185572f8bc3a9a34f094a65ccc",
+      "source_sha256": "e7517269bcb9ef8447b8a4039289343378be358f4acd29ff162ca3d750206c49",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -179,7 +179,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "e63a8ab71ecd7372c37cc8412b91a93e287b47185572f8bc3a9a34f094a65ccc",
+      "source_sha256": "e7517269bcb9ef8447b8a4039289343378be358f4acd29ff162ca3d750206c49",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -190,7 +190,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "e63a8ab71ecd7372c37cc8412b91a93e287b47185572f8bc3a9a34f094a65ccc",
+      "source_sha256": "e7517269bcb9ef8447b8a4039289343378be358f4acd29ff162ca3d750206c49",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -256,7 +256,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "e63a8ab71ecd7372c37cc8412b91a93e287b47185572f8bc3a9a34f094a65ccc",
+      "source_sha256": "e7517269bcb9ef8447b8a4039289343378be358f4acd29ff162ca3d750206c49",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -443,7 +443,7 @@
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
-      "source_sha256": "e63a8ab71ecd7372c37cc8412b91a93e287b47185572f8bc3a9a34f094a65ccc",
+      "source_sha256": "e7517269bcb9ef8447b8a4039289343378be358f4acd29ff162ca3d750206c49",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -465,7 +465,7 @@
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "llms.txt",
-      "source_sha256": "209e9819d0770f118cdaadd5c220e04f1231e6ed1b4d3b8195e20b8bc45c90b8",
+      "source_sha256": "ad4b0323b19f80f6176ea75eb8712b78d7ec2adc0892881a77c33b2ea1a351fd",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -476,7 +476,7 @@
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-START-HERE.md",
-      "source_sha256": "2c5c37648a763a4c94262b211cd9d246637b5cfe2239c23a90543244f5ca4df5",
+      "source_sha256": "4043cf4cc016c1f1d0b2c7e247378728970b8e22b4255f6e3d3d8f1284d37462",
       "writing_method": "之元写作法 0.5.0"
     },
     {

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：麦克斯韦妖 — 信息操作总Φ变化≥0，Landauer是特例。核心函数：\[D158\]\(docs/zh/functions/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e35514347083a77b / 从这条案例看，中文：案例说明：麦克斯韦妖 — 信息操作总Φ变化≥0，Landauer是特例。核心函数：\[D158\]\(docs/zh/functions/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158；被引用：—
 - [从这条案例看，中文：案例说明：黑洞信息（天文视角） — 信息按质量分级保留，大黑洞~98%。核心函数：\[D158\]\(docs/zh/functions/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-442d49ec3f6571d6 / 从这条案例看，中文：案例说明：黑洞信息（天文视角） — 信息按质量分级保留，大黑洞~98%。核心函数：\[D158\]\(docs/zh/functions/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-14c37e19e397c981 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D327；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ceb19a141287a1b1 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D328；被引用：—

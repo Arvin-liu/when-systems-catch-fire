@@ -1655,7 +1655,6 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/139/fixtures/live-attempt-ledger-fixtures-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/139/fixtures/live-observation-semantic-fixtures-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl"}
-{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl.lock"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/139/live-current-projection-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/139/local-executor-census-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/139/progress.jsonl"}
@@ -1678,7 +1677,6 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/live-current-projection-r2.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/live-observation-events-r1.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/live-reconciliation-events-r1.jsonl"}
-{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/live-reconciliation-events-r1.jsonl.lock"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/local-executor-census-r1.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/progress.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/step00-baseline-audit.json"}
@@ -1694,6 +1692,11 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/step10-live-admission.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/step11-live-attempt.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/step12-independent-validation.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/step13-adversarial-matrix.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/step13-targeted-regression.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/step14-current-terminal-semantics.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/step15-deterministic-current-surface-r1.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/140/step15-projection-preflight.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/lifecycle-events.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/merged-iteration-ledger.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/project-components.json"}
@@ -2582,6 +2585,9 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-140-step09-local-executor-census-and-selection.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-140-step10-live-admission.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-140-step12-independent-validation.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-140-step13-adversarial-matrix.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-140-step13-targeted-regression.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-140-step14-current-terminal-semantics.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/lifecycle-audit-108.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/publication/jin-rise-point-fire-analysis.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/publication/song-huizong-taoism-point-fire-analysis.md"}
@@ -3080,6 +3086,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task139_live_admission.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task139_local_executor_census.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task139_post_attempt_validation.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task140_adversarial_matrix.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task_identity_adversarial_fixtures.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task_identity_model.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task_identity_parser.py"}
@@ -3215,6 +3222,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/publication/validate_fire_seeds.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/record_current_surface_determinism.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/record_task140_observation_outcome.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/record_task140_terminal_semantics.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/run_control_plane_r2_pilot.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/run_cross_executor_driver_pilot.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/run_durability_lifecycle_pilot.py"}
@@ -3344,6 +3352,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_synthetic_benchmark.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_system_map_geometry.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_task139_live_attempt.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_task140_adversarial_matrix.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_task140_live_attempt.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_task_identity_model.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/validate_task_identity_parser.py"}

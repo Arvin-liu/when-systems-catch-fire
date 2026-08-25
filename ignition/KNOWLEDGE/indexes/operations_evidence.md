@@ -8,5 +8,5 @@
 - [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[#605｜仲裁模型升级自举循环验证\]\(docs/zh/cases/items/C-0605.md\) → - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0427}\)=1\].
 - [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0428}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → title: "Shannon-Fisher跷跷板定理"
-- [第 006 片](./operations_evidence/part-006.md)：2501—2986；title: "Weinberg角验证 — 三个维度：心理α=5→θ_cog=81°→纯门控（\\"想通\\"是质变）；技能α=1→θ_cog=45°→混合；经济α=0.2→θ_cog=24°→偏参数（收入可渐变）。心理维度改善只能0→1，经济维度可渐变 / Weinberg角验证 - 三个维度: 心理α=5 -> θ_cog=81° -> 纯门控\(\\"想通\\"是质变\); 技能α=1 -> θ_cog=45° -> 混合; 经济α=0.2 -> θ_cog=24° -> 偏参数\( → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → title: "P_exit\(t,L,C\) 退出概率 / P_exit\(t,L,C\) exit probability"
+- [第 006 片](./operations_evidence/part-006.md)：2501—2989；title: "r_cross=0不导致Ψ=0" → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

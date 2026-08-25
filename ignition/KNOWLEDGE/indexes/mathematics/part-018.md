@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0039-T29-门控函数进化三阶段.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-41fe53299e4209c5 / 已迁移的历史函数来源/0039-T29-门控函数进化三阶段.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T29；被引用：—
 - [已迁移的历史函数来源/0040-T30-门控-路径积分同构与极小熵原理.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-aa49a8d5dc9b201b / 已迁移的历史函数来源/0040-T30-门控-路径积分同构与极小熵原理.md
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-b718c062780181d7 / 已迁移的历史函数来源/0535-D538-潜意识-觉知-意识函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D538；被引用：—
-- [已迁移的历史函数来源/0536-D539-未来视角-思考维度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a8b2ed256512e1bd / 已迁移的历史函数来源/0536-D539-未来视角-思考维度函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D539；被引用：—

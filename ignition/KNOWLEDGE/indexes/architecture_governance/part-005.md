@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_synthetic_legalization_runs_but_is_excluded\(self\):](../../../function-os-candidate/v0.2/tests/test_asset_import_e2e.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E033B380FBE98394 / def test_synthetic_legalization_runs_but_is_excluded\(self\): / IMPLICIT-E033B380FBE98394
+  - 来源：`function-os-candidate/v0.2/tests/test_asset_import_e2e.py`
+  - 依赖：—；被引用：—
 - [def test_tamper_artifact_hash\(self\):](../../../function-os-candidate/v0.2/tests/test_n4_robust.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-C14175A232EE2BB7 / def test_tamper_artifact_hash\(self\): / IMPLICIT-C14175A232EE2BB7
@@ -982,6 +987,11 @@
 - [epistemic_state: EPISTEMICALLY_ACCEPTED=0; this transition records repository-local architecture and bounded live-attemp](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ed2c784c78466d2f / epistemic_state: EPISTEMICALLY_ACCEPTED=0; this transition records repository-local architecture and bounded live-attemp
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [epistemic_state: terminal task status, typed observation, adversarial negative evidence and deterministic projections do](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c2d6bdfc39abe8e7 / epistemic_state: terminal task status, typed observation, adversarial negative evidence and deterministic projections do
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [error\(f"Evidence cards < 20: {len\(evidence_cards\)}"\)](../../../data/external-research/121A-night-recovery/121A-validator.py)
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f7eae0d762398e9c / if result not in artifact_ids:
   - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [If the attempt fails or times out, the failure remains the terminal evidence;](../../../reports/operations/ignition-137-step00-baseline-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eb60ddcb6d6b4fdd / If the attempt fails or times out, the failure remains the terminal evidence;
-  - 来源：`reports/operations/ignition-137-step00-baseline-audit.md`
-  - 依赖：—；被引用：—
-- [if total_success_verified != 79:](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0e67ef5e62409275 / if total_success_verified != 79:
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
   - 依赖：—；被引用：—

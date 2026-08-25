@@ -7,7 +7,7 @@
 
 **引导问题：** 对象、运算、定义域、证明和反例究竟完成到哪一步？
 
-当前检索覆盖 9546 项，重点卡片 102 项。 [打开本主题完整索引](./indexes/mathematics.md)
+当前检索覆盖 9547 项，重点卡片 102 项。 [打开本主题完整索引](./indexes/mathematics.md)
 
 - [认知路径积分函数](./ASSET-CARDS.md#asset-d127) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → structured inference or procedure.
 - [经典确定性函数](./ASSET-CARDS.md#asset-d182) — `KEEP_AS_TOY_MODEL`；Identity: PARAMETRIC_MATHEMATICAL_MODEL. Definition scope: r=mu/Lambda in \(0,1\) union \(1,infinity\) → relation over source entities.
@@ -61,16 +61,16 @@
 
 **引导问题：** 跨尺度表示、概率动力学和关系网络能描述什么，不能证明什么？
 
-当前检索覆盖 4116 项，重点卡片 85 项。 [打开本主题完整索引](./indexes/systems.md)
+当前检索覆盖 4117 项，重点卡片 85 项。 [打开本主题完整索引](./indexes/systems.md)
 
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
+- [Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0,](./ASSET-CARDS.md#asset-nfc-08dd51bd4230ce81) — `ACCEPTED_AS_DEFINITION`；Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earli
 - [Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth so](./ASSET-CARDS.md#asset-nfc-1e10227f1b51e4d0) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 121Q14 Ignition Atlas maps are versioned derived projections, not a permanent total map and not a second canonical truth source.
 - [`ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。](./ASSET-CARDS.md#asset-nfc-62c0ef5e2c8b99f2) — `ACCEPTED_AS_DEFINITION`；- `ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。
+- [方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、](./ASSET-CARDS.md#asset-nfc-77109cb5f560bd28) — `ACCEPTED_AS_DEFINITION`；方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从
 - [“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。](./ASSET-CARDS.md#asset-nfc-b3044ed3734222fb) — `ACCEPTED_AS_DEFINITION`；“物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。
 - [K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated](./ASSET-CARDS.md#asset-nfc-c55e34db613b6c41) — `RETAINED_AS_STRUCTURAL_METAPHOR`；K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated citation, cross-domain corres
 - [Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。](./ASSET-CARDS.md#asset-nfc-d584235380a9199d) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。
-- [Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0](./ASSET-CARDS.md#asset-nfc-de2dafc4a06528aa) — `ACCEPTED_AS_DEFINITION`；Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earlier Historical, n
-- [方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Histor](./ASSET-CARDS.md#asset-nfc-de320ba9d14281ee) — `ACCEPTED_AS_DEFINITION`；方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从构件 registry、类型化 to
 - [点火从知识治理系统向智能体运行时抽层](./ASSET-CARDS.md#asset-hr-054b4581c405f948) — `CURRENT_SCOPED_SOURCE`；任务 IGNITION-20260815-119 的 R0 完成了领域切割和依赖解耦；任务 121 的 R2 在这个 generic boundary 上接入 Pack、Memory、Supervisor、Gateway、Profile 和 真实离线维护 pilot，仍不做全仓物理大搬家。唯一可点击
 - [Codespace 救援两张表差异审计](./ASSET-CARDS.md#asset-hr-09324a8008a3bd3d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；两张表（函数总表 / 案例总表）本质上属于点火项目 Arvin-liu/when-systems-catch-fire 的核心资产，不应长期分裂到独立仓库维护。LIANGZHANGBIAO / Unified-Case-Table / Unified-Function-Table 仅作为 Codes
 - [任务 114 项目级语言—思维风险审计](./ASSET-CARDS.md#asset-hr-094a86ef6aa2a143) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；本轮在结果性审计之前冻结了 14 个高风险项目表面，见 data/language-thought/project-audit-population.json。范围包括根入口、权威架构、当前状态、AI 冷启动、系统地图、之元写作法、两篇现行作品、人工／机器书架以及只能由生成器更新的阅读与知识表面。冻
@@ -115,10 +115,11 @@
 
 **引导问题：** 知识资产怎样被登记、裁决、修订、隔离并保持机器与人类表面一致？
 
-当前检索覆盖 17718 项，重点卡片 219 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
+当前检索覆盖 17724 项，重点卡片 219 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
 
 - [哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](./ASSET-CARDS.md#asset-nfc-00b4be17fb8dc706) — `ACCEPTED_AS_DEFINITION`；哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
+- [Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0,](./ASSET-CARDS.md#asset-nfc-08dd51bd4230ce81) — `ACCEPTED_AS_DEFINITION`；Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earli
 - [历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/\(1-p\)` 偏差敏感度评分。物理断言和评分函数分别处理。](./ASSET-CARDS.md#asset-nfc-0b7defaef4efab24) — `ACCEPTED_AS_DEFINITION`；- 历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/\(1-p\)` 偏差敏感度评分。物理断言和评分函数分别处理。
 - [Knowledge remains a Domain Pack; OpenClaw, Hermes and Codex remain replaceable executors; the local action layer remains](./ASSET-CARDS.md#asset-nfc-0f9ab187be8acae3) — `QUARANTINED_AMBIGUOUS`；Knowledge remains a Domain Pack; OpenClaw, Hermes and Codex remain replaceable executors; the local action layer remains `REFERENCE_EXECUTOR / CONFORM
 - [对同次重算的 non-function claims 建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限；当前可复算数量见 current-facts projection（`15,899`）。](./ASSET-CARDS.md#asset-nfc-10dc7fb421e66908) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 对同次重算的 non-function claims 建立类别、来源、证据谱系、十三道门禁、依赖、M/E、处置与公开表述上限；当前可复算数量见 current-facts projection（`15,899`）。
@@ -133,8 +134,7 @@
 - [撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀](./ASSET-CARDS.md#asset-nfc-6ca935ca1a4f2a8e) — `ACCEPTED_AS_DEFINITION`；撤回、降级或隔离的结论，即使换标题、换编号、改成“结构性定理”或藏入摘要，也继续受原 supersession lineage 与 claim ceiling 约束。CI 检查大一统不可能性、单模型失败推出普遍不可能、类比冒充同构、量词膨胀和内部测试真值升级等模式。
 - [“物理大一统不可能”已经撤回，不能通过改名为结构性边界推论而恢复。](./ASSET-CARDS.md#asset-nfc-70a1ec2c42864627) — `ACCEPTED_AS_DEFINITION`；- “物理大一统不可能”已经撤回，不能通过改名为结构性边界推论而恢复。
 - [函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等](./ASSET-CARDS.md#asset-nfc-71e297ca6132aac6) — `QUARANTINED_AMBIGUOUS`；函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等于验证。T2、D127、D182—D190、D260 仍以
-- [原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**](./ASSET-CARDS.md#asset-nfc-777640d03f719f40) — `HISTORICAL_ONLY`；- 原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**
-- [Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections](./ASSET-CARDS.md#asset-nfc-79e157390b0bf89a) — `RETAINED_AS_STRUCTURAL_METAPHOR`；Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections from canonical registries and
+- [方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、](./ASSET-CARDS.md#asset-nfc-77109cb5f560bd28) — `ACCEPTED_AS_DEFINITION`；方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从
 - 其余 201 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `ARCHITECTURE_GOVERNANCE`。
 
 <a id="subject-writing-publication"></a>
@@ -169,12 +169,13 @@
 
 **引导问题：** 候选、验证、合并和 Current 怎样分离并留下可复算证据？
 
-当前检索覆盖 11765 项，重点卡片 264 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
+当前检索覆盖 11769 项，重点卡片 264 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
 
 - [门控面合并统一函数](./ASSET-CARDS.md#asset-d183) — `REWRITE_AND_RETEST`；Identity: RELATION_OR_CONSTRAINT. Definition scope: Positive scale ratios excluding one, plus an independently defined merge map → relation over sourc
 - [相对论门槛函数](./ASSET-CARDS.md#asset-d185) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → scalar-like score with unspecified units.
 - [乘法归零律](./ASSET-CARDS.md#asset-t2) — `KEEP_AS_ESTABLISHED_MATH`；Identity: RELATION_OR_CONSTRAINT. Definition scope: Typed pairs \(a,b\) in a specified carrier with an absorbing zero → Nat proposition.
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
+- [Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0,](./ASSET-CARDS.md#asset-nfc-08dd51bd4230ce81) — `ACCEPTED_AS_DEFINITION`；Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earli
 - [任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/revi](./ASSET-CARDS.md#asset-nfc-1ead70b9f991a2b8) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 任务 106（本迭代）建立了合并后真相传播基础设施：规范化 merged-iteration ledger、9 维 impact 引擎、确定性 current-truth 投影、fail-closed 验证器、编辑文章 stale/review 生命周期与系统图 impact 审计，使后续合并的
 - [Current Snapshot 投影。历史/环境 residual 仍按 receipt 保留，旧任务记录不会被重写为当前事实。](./ASSET-CARDS.md#asset-nfc-28eaec186367612e) — `RETAINED_AS_STRUCTURAL_METAPHOR`；Current Snapshot 投影。历史/环境 residual 仍按 receipt 保留，旧任务记录不会被重写为当前事实。
 - [当前迭代方法版本由 generated Current Snapshot 统一投影。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activa](./ASSET-CARDS.md#asset-nfc-40fe1d8d95323e67) — `RETAINED_AS_STRUCTURAL_METAPHOR`；当前迭代方法版本由 generated Current Snapshot 统一投影。看到首页阶段成果时，逐项读取显式布尔量和来源 HEAD；`PUBLISHED_SNAPSHOT` 不等于 Accepted、Current 或 Activated，首页可见不等于能力可用。Agent 只能生成 sta
@@ -188,5 +189,4 @@
 - [事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选](./ASSET-CARDS.md#asset-nfc-8b5cd2066783ecf6) — `RETAINED_AS_STRUCTURAL_METAPHOR`；事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选
 - [`agent_runtime/`：R1 本地行动层、R2 Pack Registry/Bus、Pack-aware routing、Reasoner Gateway、Profile 投影、Operational Memory 与 Super](./ASSET-CARDS.md#asset-nfc-91ea4c56fdc6c482) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- `agent_runtime/`：R1 本地行动层、R2 Pack Registry/Bus、Pack-aware routing、Reasoner Gateway、Profile 投影、Operational Memory 与 Supervisor。
 - [D220 完全统一不可能定理](./ASSET-CARDS.md#asset-nfc-996c4e8631d40356) — `HISTORICAL_ONLY`；### D220 完全统一不可能定理
-- [函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。](./ASSET-CARDS.md#asset-nfc-a1a28b3a56bcb64b) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。
 - 其余 246 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `OPERATIONS_EVIDENCE`。

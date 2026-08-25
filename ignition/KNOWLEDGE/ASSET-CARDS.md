@@ -30,6 +30,8 @@
 - [哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](./cards/part-001.md#asset-nfc-00b4be17fb8dc706) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-00b4be17fb8dc706`
 <a id="asset-nfc-06ddf2b643747a14"></a>
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./cards/part-001.md#asset-nfc-06ddf2b643747a14) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-06ddf2b643747a14`
+<a id="asset-nfc-08dd51bd4230ce81"></a>
+- [Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0,](./cards/part-001.md#asset-nfc-08dd51bd4230ce81) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-08dd51bd4230ce81`
 <a id="asset-nfc-0b7defaef4efab24"></a>
 - [历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/\(1-p\)` 偏差敏感度评分。物理断言和评分函数分别处理。](./cards/part-001.md#asset-nfc-0b7defaef4efab24) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-0b7defaef4efab24`
 <a id="asset-nfc-0f9ab187be8acae3"></a>
@@ -78,6 +80,8 @@
 - [“物理大一统不可能”已经撤回，不能通过改名为结构性边界推论而恢复。](./cards/part-001.md#asset-nfc-70a1ec2c42864627) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-70a1ec2c42864627`
 <a id="asset-nfc-71e297ca6132aac6"></a>
 - [函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等](./cards/part-001.md#asset-nfc-71e297ca6132aac6) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-71e297ca6132aac6`
+<a id="asset-nfc-77109cb5f560bd28"></a>
+- [方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、](./cards/part-001.md#asset-nfc-77109cb5f560bd28) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-77109cb5f560bd28`
 <a id="asset-nfc-777640d03f719f40"></a>
 - [原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**](./cards/part-001.md#asset-nfc-777640d03f719f40) — `NONFUNCTION_CLAIM` · `HISTORICAL_ONLY` · `NFC-777640d03f719f40`
 <a id="asset-nfc-79e157390b0bf89a"></a>
@@ -99,9 +103,9 @@
 <a id="asset-nfc-91ea4c56fdc6c482"></a>
 - [`agent_runtime/`：R1 本地行动层、R2 Pack Registry/Bus、Pack-aware routing、Reasoner Gateway、Profile 投影、Operational Memory 与 Super](./cards/part-001.md#asset-nfc-91ea4c56fdc6c482) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-91ea4c56fdc6c482`
 <a id="asset-nfc-921e43a466f461f8"></a>
-- [非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不](./cards/part-001.md#asset-nfc-921e43a466f461f8) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-921e43a466f461f8`
+- [非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不](./cards/part-002.md#asset-nfc-921e43a466f461f8) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-921e43a466f461f8`
 <a id="asset-nfc-9379ce5377b8455f"></a>
-- [Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The](./cards/part-001.md#asset-nfc-9379ce5377b8455f) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-9379ce5377b8455f`
+- [Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The](./cards/part-002.md#asset-nfc-9379ce5377b8455f) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-9379ce5377b8455f`
 <a id="asset-nfc-996c4e8631d40356"></a>
 - [D220 完全统一不可能定理](./cards/part-002.md#asset-nfc-996c4e8631d40356) — `NONFUNCTION_CLAIM` · `HISTORICAL_ONLY` · `NFC-996c4e8631d40356`
 <a id="asset-nfc-a1a28b3a56bcb64b"></a>
@@ -144,10 +148,6 @@
 - [其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。](./cards/part-002.md#asset-nfc-dd395b512a59af63) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-dd395b512a59af63`
 <a id="asset-nfc-de10f2ada4964649"></a>
 - [`UNRECOVERED`。当前结论由 ledger-derived projection 给出：不是](./cards/part-002.md#asset-nfc-de10f2ada4964649) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-de10f2ada4964649`
-<a id="asset-nfc-de2dafc4a06528aa"></a>
-- [Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0](./cards/part-002.md#asset-nfc-de2dafc4a06528aa) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-de2dafc4a06528aa`
-<a id="asset-nfc-de320ba9d14281ee"></a>
-- [方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Histor](./cards/part-002.md#asset-nfc-de320ba9d14281ee) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-de320ba9d14281ee`
 <a id="asset-nfc-e9612969179efbcb"></a>
 - [R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s](./cards/part-002.md#asset-nfc-e9612969179efbcb) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-e9612969179efbcb`
 <a id="asset-nfc-ea55d13b7ba7aeff"></a>

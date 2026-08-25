@@ -54,6 +54,13 @@ def _base() -> dict[str, Any]:
         if isinstance(value, list):
             return [historicalize(item, key=key) for item in value]
         if isinstance(value, str):
+            if value == current_architecture_task_id and key in {
+                "latest_architecture_changing_task",
+                "latest_architecture_changing_task_id",
+                "architecture_task_id",
+                "latest_architecture_task",
+            }:
+                return historical_architecture_task_id
             if value == current_task_id:
                 return historical_task_id
             if value == current_architecture_task_id:

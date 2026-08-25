@@ -1319,9 +1319,14 @@
   - 可搜索名称：NFC-ea516b59cd3da9d5 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the Task 130 baseline until the required terminal clo
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
-- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task139 baseline until the separate ordi](../../../STATE-CHANGELOG.md)
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task139 baseline `ff0adcc2bd736217691bc7](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2c67c10b492e4217 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task139 baseline until the separate ordi
+  - 可搜索名称：NFC-52a44e8eab2dc929 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task139 baseline `ff0adcc2bd736217691bc7
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task139 baseline `ff0adcc2bd736217691bc7](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f8ab53d615685a34 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task139 baseline `ff0adcc2bd736217691bc7
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal main baseline for this Task 128 branch is `681f86d79b1112af3c07e0f80](../../../STATE-CHANGELOG.md)
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-3797e2c9a03a9411 / Proof combinators, dependent application, unfolding and algebraic constraints provide explicit symbolic composition rule
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Proof Obligation](../../../data/foundation/schemas/proof-obligation.schema.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e6a57d58ca2258d4 / Proof Obligation
-  - 来源：`data/foundation/schemas/proof-obligation.schema.json`
   - 依赖：—；被引用：—

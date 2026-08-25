@@ -6,6 +6,11 @@
 
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ceb19a141287a1b1 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D328；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cb7ac7099ca9bc35 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D329；被引用：—
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e64a0f600b3cdaa7 / 对应案例须正向登记（案例反向引用函数不等于函数已登记该案例）。
   - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [对目标对象分别报告 source、controlled claim、formal object type、claim type、premises、inference rules、scope、proof obligations、evidenc](../../../docs/AI-PROMPT-TEMPLATES.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b8f9b972083371d7 / 对目标对象分别报告 source、controlled claim、formal object type、claim type、premises、inference rules、scope、proof obligations、evidenc
-  - 来源：`docs/AI-PROMPT-TEMPLATES.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：数学学习中的"开窍瞬间"可以用点火框架精确描述——不是突然变聪明了，而是门控函数完成了从形态A到形态B的跃迁。这验证了门控函数进化三阶段不仅仅是数学构造，而是认知科学的底层结构。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c0a9f8f2c527084c / 中文：数学学习中的"开窍瞬间"可以用点火框架精确描述——不是突然变聪明了，而是门控函数完成了从形态A到形态B的跃迁。这验证了门控函数进化三阶段不仅仅是数学构造，而是认知科学的底层结构。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [中文：无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通\(η≈0.15\)好40%但丢失50%隐含信息。核心函数：\[D95\]\(docs/zh/functions/items/D95.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-95227a041cb2a668 / 中文：无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通\(η≈0.15\)好40%但丢失50%隐含信息。核心函数：\[D95\]\(docs/zh/functions/items/D95.md\)
@@ -2497,10 +2502,5 @@
 - [从这条案例看，中文：工人能掌握的工具≈10-100。 关键发现：同上 English: Rule-based English rendering pen… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-62ab80149dd8e75a / 从这条案例看，中文：工人能掌握的工具≈10-100。 关键发现：同上 English: Rule-based English rendering pen… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：并行增加状态空间，仲裁筛选降低无效熵，整体智能提升。物理/社会/认知三域共享对数结构。 关键发现：三域共享对数结构 English:… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8403f2d57337ec5b / 从这条案例看，中文：并行增加状态空间，仲裁筛选降低无效熵，整体智能提升。物理/社会/认知三域共享对数结构。 关键发现：三域共享对数结构 English:… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
