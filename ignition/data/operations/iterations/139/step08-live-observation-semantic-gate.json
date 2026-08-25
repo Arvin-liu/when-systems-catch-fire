@@ -1,0 +1,28 @@
+{
+  "schema_version": "ignition-139-step08-live-observation-semantic-gate-r1",
+  "task_id": "IGNITION-20260825-139",
+  "status": "PASS",
+  "case_count": 12,
+  "negative_cases": 8,
+  "positive_cases": 4,
+  "cases": [
+    {"id": "ledger-says-happened-current-says-forbidden", "expected": "FAIL", "observed": "FAIL", "guard": "CURRENT_SPLIT_BRAIN_SECOND_ATTEMPT_FORBIDDEN"},
+    {"id": "incomplete-capsule-current-says-success", "expected": "FAIL", "observed": "FAIL", "guard": "INCOMPLETE_EVIDENCE_CANNOT_CLAIM_SUCCESS"},
+    {"id": "exit-zero-without-validator", "expected": "FAIL", "observed": "FAIL", "guard": "EXIT_ZERO_WITHOUT_VALIDATOR_CANNOT_CLAIM_SUCCESS"},
+    {"id": "validated-completion-exact-binding", "expected": "PASS", "observed": "PASS", "guard": "EXACT_TASK_EXECUTOR_LEASE_RESULT_VALIDATOR_BINDING"},
+    {"id": "historical-narrative-preserved", "expected": "PASS", "observed": "PASS", "guard": "HISTORICAL_NARRATIVE_EXEMPT"},
+    {"id": "duplicate-attempt-overwrite", "expected": "FAIL", "observed": "FAIL", "guard": "DUPLICATE_ATTEMPT_OVERWRITE_REJECTED"},
+    {"id": "raw-private-output-formal-ledger", "expected": "FAIL", "observed": "FAIL", "guard": "RAW_PRIVATE_OUTPUT_REJECTED"},
+    {"id": "context-lost-capsule-complete", "expected": "PASS", "observed": "PASS", "guard": "CAPSULE_COMPLETE_RECOVERABLE"},
+    {"id": "context-lost-capsule-absent", "expected": "PASS", "observed": "PASS", "guard": "CAPSULE_ABSENT_REQUIRES_RECONCILIATION"},
+    {"id": "plain-gh-promoted-to-agent", "expected": "FAIL", "observed": "FAIL", "guard": "TOOL_ONLY_GH_PROMOTION_REJECTED"},
+    {"id": "reasoner-runtime-closes-agent-obligation", "expected": "FAIL", "observed": "FAIL", "guard": "REASONER_RUNTIME_CANNOT_CLOSE_AGENT_OBLIGATION"},
+    {"id": "soft-governance-raises-authority", "expected": "FAIL", "observed": "FAIL", "guard": "SOFT_GOVERNANCE_AUTHORITY_ESCALATION_REJECTED"}
+  ],
+  "canonical_sources": [
+    "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+    "ignition/data/operations/iterations/139/live-current-projection-r1.json",
+    "ignition/data/architecture/current-system-identity.json"
+  ],
+  "claim_ceiling": "Task139 repository-local live-observation semantic-boundary evidence only; no live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

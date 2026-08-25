@@ -1,0 +1,19 @@
+{
+  "schema_version": "live-observation-semantic-fixtures-r1",
+  "task_id": "IGNITION-20260825-139",
+  "cases": [
+    {"id": "ledger-says-happened-current-says-forbidden", "kind": "negative", "expected_status": "FAIL", "guard": "Current cannot call the canonical Task138 second dispatch forbidden."},
+    {"id": "incomplete-capsule-current-says-success", "kind": "negative", "expected_status": "FAIL", "guard": "Incomplete capture cannot become validated success."},
+    {"id": "exit-zero-without-validator", "kind": "negative", "expected_status": "FAIL", "guard": "Exit code zero without validator PASS remains unvalidated."},
+    {"id": "validated-completion-exact-binding", "kind": "positive", "expected_status": "PASS", "guard": "Validated completion requires exact task, executor, lease, result and validator binding."},
+    {"id": "historical-narrative-preserved", "kind": "positive", "expected_status": "PASS", "guard": "Historical Task138 wording remains readable when explicitly classified historical."},
+    {"id": "duplicate-attempt-overwrite", "kind": "negative", "expected_status": "FAIL", "guard": "Append-only ledger rejects duplicate dispatch or attempt identity."},
+    {"id": "raw-private-output-formal-ledger", "kind": "negative", "expected_status": "FAIL", "guard": "Raw private or prompt material cannot enter the formal ledger."},
+    {"id": "context-lost-capsule-complete", "kind": "positive", "expected_status": "PASS", "guard": "Complete durable capture remains recoverable after bounded context loss."},
+    {"id": "context-lost-capsule-absent", "kind": "positive", "expected_status": "PASS", "guard": "Absent capture is observation incomplete and requires reconciliation."},
+    {"id": "plain-gh-promoted-to-agent", "kind": "negative", "expected_status": "FAIL", "guard": "TOOL_ONLY GitHub CLI cannot be promoted to an Agentic Executor."},
+    {"id": "reasoner-runtime-closes-agent-obligation", "kind": "negative", "expected_status": "FAIL", "guard": "A reasoner runtime without an agent loop cannot close the external-Agent obligation."},
+    {"id": "soft-governance-raises-authority", "kind": "negative", "expected_status": "FAIL", "guard": "Structural Governance Surface remains advisory and cannot raise authority."}
+  ],
+  "claim_ceiling": "Negative and positive semantic fixtures test repository-local live-observation boundaries only."
+}
