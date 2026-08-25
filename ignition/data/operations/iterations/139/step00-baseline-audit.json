@@ -1,0 +1,101 @@
+{
+  "schema_version": "ignition-139-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260825-139",
+  "baseline": {
+    "formal_origin_main_expected": "12205be8ad94916a39253e0eba2106bf5da9da12",
+    "formal_worktree": "codex/ignition-139-durable-live-attempt-journal-r1-20260825",
+    "control_ref": "origin/relay/current",
+    "live_inference_started": false
+  },
+  "preflight": {
+    "validate_current_task_lineage": "PASS",
+    "validate_current_state_sync": "PASS",
+    "validate_current_volatile_fact_registry": "PASS",
+    "validate_current_surface_semantics": "PASS",
+    "current_projection_determinism": "PASS_TWO_BYTE_IDENTICAL_PASSES",
+    "targeted_tests": {
+      "tests": 36,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "scope": [
+        "test_live_transport",
+        "test_live_execution",
+        "test_event_ledger",
+        "test_current_state_sync",
+        "test_current_surface_semantics"
+      ]
+    }
+  },
+  "historical_attempt_archaeology": [
+    {
+      "task_id": "IGNITION-20260823-136",
+      "attempt_ref": "live-hermes-136",
+      "observed_state": "TIMED_OUT_EFFECT_UNKNOWN",
+      "reconciliation": "RECONCILIATION_REMAINS_OPEN",
+      "source_paths": [
+        "ignition/data/operations/iterations/136/step13-live-execution-receipt.json",
+        "ignition/data/operations/iterations/136/current-state-sync-receipt.json"
+      ]
+    },
+    {
+      "task_id": "IGNITION-20260824-137",
+      "attempt_ref": "attempt-137-live-01",
+      "observed_state": "MALFORMED_RESULT / FAILED_VALIDATION",
+      "reconciliation": "NOT_REQUIRED",
+      "source_paths": [
+        "ignition/data/operations/iterations/137/step09-live-codex-attempt.json",
+        "ignition/data/operations/iterations/137/step10-independent-validation-outcome.json"
+      ]
+    },
+    {
+      "task_id": "IGNITION-20260824-138",
+      "attempt_ref": "attempt-138-live-01",
+      "observed_state": "CODEX_RUNTIME_PATH_PRE_INFERENCE_STARTUP_FAILURE",
+      "reconciliation": "NOT_REQUIRED",
+      "source_paths": [
+        "ignition/data/operations/iterations/138/step08-first-codex-dispatch.json",
+        "ignition/data/operations/iterations/138/step09-second-gate.json"
+      ]
+    },
+    {
+      "task_id": "IGNITION-20260824-138",
+      "attempt_ref": "attempt-138-live-02",
+      "canonical_fact": "ATTEMPT_HAPPENED_OBSERVATION_INCOMPLETE",
+      "observed_state": "NO_VALIDATED_RESULT_DURABLE_RECEIPT",
+      "reconciliation": "REQUIRES_RECONCILIATION",
+      "host_observation": {
+        "outer_tool_result": "OUTPUT_EXCEEDED_AVAILABLE_MODEL_CONTEXT",
+        "process_started": true,
+        "returncode_recovered": false,
+        "structured_result_recovered": false,
+        "lease_receipt_recovered": false,
+        "durable_stdout_or_stderr_capture": false,
+        "validator_run": false
+      },
+      "source_paths": [
+        "ignition/data/operations/iterations/138/step08-amendment-01-live-codex-reconciliation.json",
+        "ignition/data/operations/iterations/138/step10-independent-validation-gate.json"
+      ]
+    }
+  ],
+  "current_split_brain": {
+    "historical_attempt_fact": "Task138 second attempt happened but observation was incomplete",
+    "current_open_obligation_text": "Task138 second invocation was forbidden because no permitted read-only auth-source route could be established",
+    "conflict": "CURRENT_NARRATIVE_DISAGREES_WITH_CANONICAL_ATTEMPT_HISTORY",
+    "source_path": "ignition/data/architecture/current-system-identity.json",
+    "repair_required_in_task139": true
+  },
+  "transport_ownership_audit": {
+    "process_boundary": "ignition/agent_federation/live_transport.py::LiveProcessTransport",
+    "stdout_stderr_capture": "in-memory bytearray only, bounded by output_cap_bytes",
+    "oversize_behavior": "terminate process group and return output_truncated; no durable spool",
+    "event_parsing": "adapter parses returned stdout after process completion",
+    "context_dependency": "adapter observation and outer tool result are the only receipt path",
+    "lifecycle_metadata": "return code, counts and digests are returned in LiveProcessResult but not durably captured before context delivery",
+    "runtime_scratch": "attempt-specific and ephemeral; cleanup is lifecycle evidence, not a durable observation journal",
+    "existing_generic_ledger": "ignition/agent_runtime/event_ledger.py provides append-only operational events but has no LiveAttemptLedger identity or capture capsule contract",
+    "finding": "DURABLE_CAPTURE_MISSING_BEFORE_MODEL_CONTEXT"
+  },
+  "claim_ceiling": "Repository-local baseline and historical-observation audit only; no live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
