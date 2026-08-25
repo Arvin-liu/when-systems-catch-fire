@@ -89,13 +89,27 @@ OBSERVATION_INCOMPLETE. The ledger-derived live projection keeps
 LIVE_EXTERNAL_INVOCATION open and does not infer a validated completion from
 missing observation evidence.
 
-Task 139 is a presentation-only durable-observation continuation: Current formal
-task advances to 139 while the architecture boundary remains Task 136 and map
+Task 139's historical release receipt recorded a presentation-only identity
+label: Current formal task advances to 139 while the architecture boundary remains Task 136 and map
 `0.13.0` remains Current. Durable capture is initialized before bounded
 context delivery, and the append-only ledger is the canonical source for live
 attempt facts. Task138 first remains STARTUP_FAILURE; Task138 second really was
 dispatched, but outer context overflow made its observation incomplete. This does
 not establish live completion or alter the claim ceiling.
+
+Task140 corrects the semantic classification of that historical change by
+provenance: Task139 changed bounded process transport, durable capture
+ownership, canonical attempt-ledger authority and Current derivation, so it is
+not presentation-only in architectural semantics. Task140 registers the
+bounded Live Observation / Reconciliation Plane as a current OS capability.
+The chain is `Executor -> process transport -> durable capture/capsule ->
+append-only LiveAttemptLedger -> deterministic observation projection ->
+reconciliation and independent Pointfire validation -> Steering/Goal boundary`.
+Probe return codes, transport wrapper codes and live-process return codes are
+separate; reconciliation closure never infers success or no-effect, and
+`TERMINAL_UNRECOVERABLE_*` preserves unknown evidence while closing the
+retry-safety workflow. This remains a repository-local bounded observation
+plane, not a world-truth sensing layer.
 
 ```mermaid
 flowchart LR

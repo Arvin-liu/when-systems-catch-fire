@@ -181,6 +181,24 @@ LIVE_EXTERNAL_INVOCATION obligation remains open. An executor-reported PASS,
 if ever returned, would still enter RETURNED_UNVALIDATED until the
 independent OS validator accepts it.
 
+## Live Observation / Reconciliation Plane R1
+
+Task 140 registers the bounded Observation / Reconciliation Plane as an
+OS-owned architecture capability. Its canonical chain is
+`Executor -> process transport -> durable capture/capsule -> append-only
+LiveAttemptLedger -> deterministic Current observation projection ->
+reconciliation and Pointfire independent validation -> Steering/Goal boundary`.
+
+The plane keeps public probes, transport wrappers, live-process lifecycle,
+durable capture, structured results, validator status and reconciliation state
+typed and separately observable. A provider report is not an observation;
+observation is not a validated outcome; a validated local outcome is not Goal
+completion; reconciliation closure is not success or no-effect; and a Current
+projection is not Owner authority. `TERMINAL_UNRECOVERABLE_*` states preserve
+unknown effect or incomplete observation while allowing retry-safety workflow
+to move forward. This R1 is a bounded repository-local observation and
+reconciliation plane, not a world-truth sensing layer.
+
 ## Task 137 reconciliation continuation
 
 Task 137 is a reconciliation continuation, not a new executor or topology

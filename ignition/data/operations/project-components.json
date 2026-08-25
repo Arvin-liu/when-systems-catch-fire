@@ -1776,6 +1776,18 @@
     },
     {
       "authority": "canonical",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Live Observation / Reconciliation Plane R1",
+      "component_id": "live_observation_reconciliation_plane_r1",
+      "component_type": "operation_control",
+      "description": "OS-owned bounded observation and reconciliation plane that separates probe, transport, live-process, durable-capture, structured-result, validation and unknown-effect states; reconciliation closure never infers success or no-effect.",
+      "label": "Live Observation / Reconciliation Plane R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_federation/live_observation_plane.py", "status": "current", "version": "R1"},
+      "map_projection": {"group": "federation", "visible": true},
+      "path_patterns": ["agent_federation/live_observation_plane.py", "agent_federation/live_attempt_ledger.py", "agent_federation/live_current_projection.py", "schemas/operations/live-*.json", "data/operations/iterations/140/", "tests/test_live_observation_*.py", "docs/architecture/external-agent-federation-r1.md"]
+    },
+    {
+      "authority": "canonical",
       "canonical_target": "docs/architecture/external-agent-federation-r1.md#OpenClaw adapter boundary",
       "component_id": "openclaw_adapter",
       "component_type": "operation_control",
@@ -1968,5 +1980,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.2.0"
+  "registry_version": "2.3.0"
 }

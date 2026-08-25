@@ -1,5 +1,5 @@
 {
-  "topology_version": "1.11.0",
+  "topology_version": "1.12.0",
   "purpose": "Typed declared relations for repository change propagation and map projection. Substantive causal candidates remain informational unless separately evidenced in MCF.",
   "relation_classes": [
     "derives",
@@ -2576,6 +2576,23 @@
       "label": "Federation 将 bounded live dispatch 交给 OS Bridge",
       "declaration_source": "docs/architecture/external-agent-federation-r1.md#Live External Executor Bridge R1",
       "claim_ceiling": "provider-neutral live bridge boundary only; no provider, channel, browser, billing or completion authority",
+      "residue": []
+    },
+    {
+      "relation_id": "live_bridge_projects_observation_reconciliation_plane",
+      "source": "live_executor_bridge_r1",
+      "target": "live_observation_reconciliation_plane_r1",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency",
+      "trigger_dimensions": ["capability", "identity", "handoff", "lifecycle_current_state"],
+      "trigger_classifications": ["CAPABILITY_ADDITION", "INTERFACE_CHANGE", "GOVERNANCE_CHANGE", "RELEASE_OR_CURRENT_STATE_SYNC"],
+      "propagation_mode": "required_assessment",
+      "required_evaluation": true,
+      "creates_sync_obligation": true,
+      "map_visible": true,
+      "label": "Live Bridge 将 process evidence 交给 Observation / Reconciliation Plane",
+      "declaration_source": "docs/architecture/external-agent-federation-r1.md#Live Observation / Reconciliation Plane R1",
+      "claim_ceiling": "bounded observation and reconciliation projection only; closure does not infer success, no-effect, external truth or retry authority",
       "residue": []
     },
     {

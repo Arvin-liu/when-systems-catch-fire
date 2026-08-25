@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0.0",
-  "map_version": "0.13.0",
+  "map_version": "0.14.0",
   "historical_map_version": "0.12.0",
   "projection_status": "CURRENT_DERIVED_PROJECTION",
   "title": "点火唯一完整可点击总架构图",
@@ -10,8 +10,8 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.2.0",
-    "topology_version": "1.11.0",
+    "component_registry_version": "2.3.0",
+    "topology_version": "1.12.0",
     "layout_version": "2.0.0"
   },
   "layout": {
@@ -201,12 +201,14 @@
       },
       {
         "id": "live_bridge",
-        "label": "OS-owned bounded live bridge",
+        "label": "OS-owned bounded live bridge and observation plane",
         "node_ids": [
-          "live_executor_bridge_r1"
+          "live_executor_bridge_r1",
+          "live_observation_reconciliation_plane_r1"
         ],
         "relation_ids": [
-          "federation_projects_live_executor_bridge"
+          "federation_projects_live_executor_bridge",
+          "live_bridge_projects_observation_reconciliation_plane"
         ]
       },
       {
@@ -929,6 +931,14 @@
       "target": "docs/architecture/external-agent-federation-r1.md#Live External Executor Bridge R1",
       "description": "OS-owned provider-neutral live dispatch bridge: capability leases, bounded process transport, strict executor receipts, timeout/cancel/reconciliation and independent validation; it owns no provider, channel, browser, remote Git, configuration or billing authority.",
       "lifecycle_status": "current"
+    },
+    {
+      "id": "live_observation_reconciliation_plane_r1",
+      "label": "Live Observation / Reconciliation Plane R1",
+      "group": "federation",
+      "target": "docs/architecture/external-agent-federation-r1.md#Live Observation / Reconciliation Plane R1",
+      "description": "OS-owned bounded observation and reconciliation plane that separates probe, transport, live-process, durable-capture, structured-result, validation and unknown-effect states; reconciliation closure never infers success or no-effect.",
+      "lifecycle_status": "current"
     }
   ],
   "edges": [
@@ -1635,11 +1645,19 @@
       "label": "Federation 将 bounded live dispatch 交给 OS Bridge",
       "relation_class": "projects",
       "relation_domain": "repository_dependency"
+    },
+    {
+      "id": "live_bridge_projects_observation_reconciliation_plane",
+      "source": "live_executor_bridge_r1",
+      "target": "live_observation_reconciliation_plane_r1",
+      "label": "Live Bridge 将 process evidence 交给 Observation / Reconciliation Plane",
+      "relation_class": "projects",
+      "relation_domain": "repository_dependency"
     }
   ],
   "component_coverage": {
-    "registry_components": 95,
-    "visible_nodes": 83,
+    "registry_components": 96,
+    "visible_nodes": 84,
     "hidden_components": 12,
     "hidden_representatives": {
       "foundation_data": "foundation",

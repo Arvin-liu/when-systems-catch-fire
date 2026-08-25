@@ -1,5 +1,5 @@
 {
-  "current_map_version": "0.13.0",
+  "current_map_version": "0.14.0",
   "geometry": {
     "columns": 3,
     "group_gap": 28,
@@ -186,7 +186,8 @@
       "reference_executor",
       "future_executors",
       "runtime_environment",
-      "live_executor_bridge_r1"
+      "live_executor_bridge_r1",
+      "live_observation_reconciliation_plane_r1"
     ],
     "os_spine": [
       "owner_human",
@@ -240,7 +241,7 @@
       {"id":"authority","label":"Owner / Value Charter","node_ids":["owner_human","charter"],"relation_ids":["map_owner_human_agent_profile","map_charter_agent_profile"]},
       {"id":"os_control","label":"Ignition OS control / governance spine with durable lifecycle and explainable steering","node_ids":["agentization_boundary_r0","agent_profile_r0","agent_kernel_r0","agent_runtime_r0","event_ledger_r1","policy_compiler_r1","resource_arbitration_r1","bounded_scheduler_r1","executor_health_lease_r1","queue_control_r1","durable_dispatch_r1","concurrent_operational_memory_r2","durability_lifecycle_r3","steering_intent_obligation_r1","driver_console_r1","runtime_memory_loop"],"relation_ids":["map_profile_agent_kernel","map_kernel_agent_runtime","map_runtime_event_ledger","map_event_ledger_scheduler","map_scheduler_health","map_scheduler_queue","map_scheduler_dispatch","map_runtime_concurrent_memory","map_runtime_durability_lifecycle","map_runtime_steering_intent","map_steering_driver_console","map_durability_driver_console","map_memory_console","map_runtime_memory"]},
       {"id":"pack_federation_routing","label":"Pack / Federation routing","node_ids":["domain_pack_contract","external_agent_federation"],"relation_ids":["map_runtime_pack_contract","map_runtime_external_agent_federation"]},
-      {"id":"live_bridge","label":"OS-owned bounded live bridge","node_ids":["live_executor_bridge_r1"],"relation_ids":["federation_projects_live_executor_bridge"]},
+      {"id":"live_bridge","label":"OS-owned bounded live bridge and observation plane","node_ids":["live_executor_bridge_r1","live_observation_reconciliation_plane_r1"],"relation_ids":["federation_projects_live_executor_bridge","live_bridge_projects_observation_reconciliation_plane"]},
       {"id":"external_executors","label":"External replaceable executors","node_ids":["openclaw_adapter","hermes_adapter","codex_adapter","future_executors"],"relation_ids":["map_federation_openclaw","map_federation_hermes","map_federation_codex","map_federation_future_executors"]},
       {"id":"actions_receipts","label":"Actions / observations / receipts","node_ids":["reference_executor","function_os","sync"],"relation_ids":["map_federation_reference_executor","map_function_q12","map_iteration_sync"]},
       {"id":"validation_feedback","label":"Validation / provenance / state update / feedback / advisory structure","node_ids":["foundation","provenance_capture","feedback_routes","candidate_return","structural_governance_surface"],"relation_ids":["map_foundation_no_truth","map_provenance_return","map_return_routes","map_routes_increment","map_epistemic_kernel_structural_surface"]}
