@@ -2,9 +2,9 @@
   "schema_version": "ignition-138-step14-candidate-full-regression-r1",
   "task_id": "IGNITION-20260824-138",
   "step": "14",
-  "run_number": 3,
+  "run_number": 4,
   "status": "PASS",
-  "candidate_head_sha": "5e45083c29947e563c99976cd193fd15b8cbc467",
+  "candidate_head_sha": "1dddd0ffe57b9394bab660af1387dc5ffc5d1190",
   "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
   "working_directory": "ignition",
   "long_window": {
@@ -36,8 +36,8 @@
     "skipped": 0,
     "summary": "OK",
     "status": "PASS",
-    "runtime_seconds": 2850.517,
-    "elapsed_seconds": 2851.518
+    "runtime_seconds": 2848.288,
+    "elapsed_seconds": 2849.314
   },
   "prior_passed_candidate": {
     "candidate_head_sha": "99389c846b6766ca8b373812ece4191660b6474f",
@@ -58,9 +58,9 @@
     "capture": {
       "location": "external temporary directory; not part of the formal repository",
       "stdout_bytes": 5533,
-      "stdout_sha256": "a2a67f7f621beb5f13075991b0f4fe44325f9fc75fc1bb389368acdeb3990034",
-      "stderr_bytes": 1621,
-      "stderr_sha256": "0f9f82dcccdd7588621cc7f776c257494c51045ea974a3426641a8efdf52e45e"
+      "stdout_sha256": "babae19861b26db0b037f8319e254cec5b3d92925ee18fe48aaa490397e8521f",
+      "stderr_bytes": 1626,
+      "stderr_sha256": "e5b014c525bdf3eb7abda907ce9421ffcc9a8ac908288f71708fc446d5db6b9a"
     }
   },
   "projection_preflight": {
@@ -116,5 +116,5 @@
     "ignore_added": false,
     "residual_expanded": false
   },
-  "claim_ceiling": "Exact repository-local candidate natural full-suite and projection-preflight evidence for candidate 5e45083c29947e563c99976cd193fd15b8cbc467 only; no fresh-clone, publication, external truth, production readiness, Owner acceptance, live completion or epistemic acceptance is inferred."
+  "claim_ceiling": "Exact repository-local candidate natural full-suite and projection-preflight evidence for candidate 1dddd0ffe57b9394bab660af1387dc5ffc5d1190 only; no fresh-clone, publication, external truth, production readiness, Owner acceptance, live completion or epistemic acceptance is inferred."
 }
