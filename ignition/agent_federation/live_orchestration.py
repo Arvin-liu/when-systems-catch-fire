@@ -111,7 +111,7 @@ class LiveDispatchCoordinator:
             raise LiveOrchestrationError("admission decision is not bound to the live envelope")
         if envelope.budget_authority != "NO_NEW_BILLING_AUTHORITY":
             raise LiveOrchestrationError(NO_NEW_BILLING_AUTHORITY_INVARIANT + " violated")
-        if envelope.workspace_mode != "DISPOSABLE_READ_ONLY" or envelope.side_effect_class != "READ_ONLY_SYNTHETIC":
+        if envelope.workspace_mode not in {"DISPOSABLE_READ_ONLY", "DISPOSABLE_SYNTHETIC_READ_ONLY"} or envelope.side_effect_class != "READ_ONLY_SYNTHETIC":
             raise LiveOrchestrationError("live coordinator only admits disposable read-only synthetic work")
         if envelope.intent_capsule_ref is not None and envelope.intent_capsule_ref != steering.capsule.capsule_id:
             raise LiveOrchestrationError("Intent Capsule reference does not bind to the OS steering capsule")

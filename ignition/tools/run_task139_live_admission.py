@@ -39,7 +39,10 @@ CONTROL_TIP = "e80d7c4aeb70ae44edbd340fc2f341c7a6a737d4"
 CODEX = Path("/Users/zhiyuan/.local/bin/codex")
 AUTH_SOURCE = Path("/Users/zhiyuan/.codex/auth.json")
 CONTROL_REPO = Path("/Users/zhiyuan/Agent 工作区/1111-sync")
-DOCUMENT_ROOT = Path("/Users/zhiyuan/Documents")
+# The broad Documents tree contains unrelated symlinked tool environments.  A
+# bounded persistent user-document root is required by the filesystem contract;
+# this note root is observed by metadata only and is never read or copied.
+DOCUMENT_ROOT = Path("/Users/zhiyuan/我的笔记")
 
 
 class LiveAdmissionGateError(RuntimeError):
@@ -87,13 +90,23 @@ def _schema_path(fixture: DisposableLiveFixture) -> Path:
     return path
 
 
-def _envelope(lease: LiveCapabilityLease, fixture: DisposableLiveFixture, schema_path: Path, observed_at: str, expires_at: str) -> LiveDispatchEnvelope:
+def _envelope(
+    lease: LiveCapabilityLease,
+    fixture: DisposableLiveFixture,
+    schema_path: Path,
+    observed_at: str,
+    expires_at: str,
+    *,
+    dispatch_id: str = "dispatch-139-live-01",
+    attempt_id: str = "attempt-139-live-01",
+    phase: str = "step10-admission-only",
+) -> LiveDispatchEnvelope:
     synthetic_ref = "fixture://IGNITION-20260825-139"
     return LiveDispatchEnvelope(
         schema_version=LIVE_DISPATCH_SCHEMA,
         task_id=TASK_ID,
-        dispatch_id="dispatch-139-live-01",
-        attempt_id="attempt-139-live-01",
+        dispatch_id=dispatch_id,
+        attempt_id=attempt_id,
         executor_id="external.codex",
         adapter_id="codex-live-r3",
         capability_id="live.readonly.synthetic",
@@ -118,7 +131,7 @@ def _envelope(lease: LiveCapabilityLease, fixture: DisposableLiveFixture, schema
         retry_policy="NO_BLIND_RETRY",
         reconciliation_policy="REQUIRE_ON_TIMEOUT_OR_UNKNOWN_EFFECT",
         budget_authority="NO_NEW_BILLING_AUTHORITY",
-        provenance={"controller": "pointfire-os", "task": TASK_ID, "phase": "step10-admission-only"},
+        provenance={"controller": "pointfire-os", "task": TASK_ID, "phase": phase},
     )
 
 
@@ -175,6 +188,18 @@ def run_gate() -> dict[str, Any]:
             )
             if lease.live_eligibility != "ELIGIBLE_FOR_LIVE_READONLY":
                 raise LiveAdmissionGateError("Codex public lease was not eligible: " + ",".join(lease.eligibility_blockers))
+            filesystem_probe = adapter._new_runtime_scratch("admission-139-probe")
+            try:
+                adapter._filesystem_domains(
+                    filesystem_probe,
+                    workspace_before=fixture.before_digest,
+                    workspace_after=fixture.before_digest,
+                    scratch_after=filesystem_probe.before_digest,
+                    validate_paths=True,
+                )
+            finally:
+                if filesystem_probe.cleanup() != "CLEANED":
+                    raise LiveAdmissionGateError("filesystem admission probe did not prove scratch cleanup")
             envelope = _envelope(lease, fixture, schema_path, observed_at, expires_at)
             argv = adapter.build_argv(envelope)
             admission = LiveCapabilityAdmission().admit(
@@ -267,6 +292,7 @@ def run_gate() -> dict[str, Any]:
                     "auth_source_copied": False,
                     "config_mutation_allowed": False,
                     "workspace_read_only_guard": fixture.read_only_guard_observed(),
+                    "runtime_filesystem_domains_validated": True,
                 },
                 "child_depth_guard": child_depth_guard,
                 "durable_capture_support": transport.supports_durable_capture,
