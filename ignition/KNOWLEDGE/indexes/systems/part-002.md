@@ -6,6 +6,21 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M32 / data/external-research/088-external-source-atlas-medium.jsonl / M32 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M33 / data/external-research/088-external-source-atlas-medium.jsonl / M33 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M34 / data/external-research/088-external-source-atlas-medium.jsonl / M34 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M35 / data/external-research/088-external-source-atlas-medium.jsonl / M35 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -799,6 +814,11 @@
   - 可搜索名称：NFC-e61c4601ff026506 / GAP-013 证据制度 （MEDIUM）
   - 来源：`data/external-research/089-external-source-atlas.md`
   - 依赖：—；被引用：—
+- [Gemini remains blocked because its public auth interface did not provide a bounded status result and auth/home separatio](../../../reports/operations/ignition-140-step09-local-executor-census-and-selection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2becbef902884322 / Gemini remains blocked because its public auth interface did not provide a bounded status result and auth/home separatio
+  - 来源：`reports/operations/ignition-140-step09-local-executor-census-and-selection.md`
+  - 依赖：—；被引用：—
 - [Generalizing experimental results by leveraging knowledge of mechanisms](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-36b946c9a683ac83 / Generalizing experimental results by leveraging knowledge of mechanisms
@@ -848,6 +868,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-05110b2285138586 / Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。
   - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [Hermes136 timed out with unknown external effect because PID/PGID and a](../../../reports/operations/ignition-140-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9cb5246293415a41 / Hermes136 timed out with unknown external effect because PID/PGID and a
+  - 来源：`reports/operations/ignition-140-step00-baseline-audit.md`
   - 依赖：—；被引用：—
 - [High probability is not strong causality. Low probability is not absence of causality.](../../../docs/architecture/probabilistic-system-dynamics.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1013,6 +1038,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7a2dfdee8f2cf896 / independent embedding-evidence axis summary.
   - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
+  - 依赖：—；被引用：—
+- [inference start, and no capture capsule because Pointfire failed closed before](../../../reports/operations/ignition-140-step06-evidence-exhaustion-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ca6eeab79b05a1d3 / inference start, and no capture capsule because Pointfire failed closed before
+  - 来源：`reports/operations/ignition-140-step06-evidence-exhaustion-audit.md`
   - 依赖：—；被引用：—
 - [information-gain stop: PASS — another level must change a question, boundary, observer, mechanism, intervention, residue](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-efa2d0e7e8ca1c21 / Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ\(参与者策略\)×N_homogeneous/
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：A6, D66；被引用：—
-- [Object D67 defines a mechanism_model within the point-fire framework. Core: 中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return -](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-eead3989ffbe4892 / Object D67 defines a mechanism_model within the point-fire framework. Core: 中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return -
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D54, D64, D67；被引用：—
-- [Object D72 defines a mechanism_model within the point-fire framework. Core: 中文：五个相变统一为同一相变的五个投影。. Annotation: 统一相变框架，五个相](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-3e5092bc555461b2 / Object D72 defines a mechanism_model within the point-fire framework. Core: 中文：五个相变统一为同一相变的五个投影。. Annotation: 统一相变框架，五个相
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D72, T8；被引用：—
-- [Object D98 defines a mechanism_model within the point-fire framework. Core: 中文：B_total = B_symbolic + B_semantic。. Annot](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-1d2e793c40b7035c / Object D98 defines a mechanism_model within the point-fire framework. Core: 中文：B_total = B_symbolic + B_semantic。. Annot
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：A6, D98；被引用：—
-- [Object T18 defines a mechanism_model within the point-fire framework. Core expression: 容斥项可映射到Ising模型的J-K竞争：容斥项 = Σᵢⱼ Jᵢ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f0f1115ae6efb142 / Object T18 defines a mechanism_model within the point-fire framework. Core expression: 容斥项可映射到Ising模型的J-K竞争：容斥项 = Σᵢⱼ Jᵢ
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：T18；被引用：—
-- [obligations: live-provider evidence remains `NOT_RUN_LIVE_EXTERNAL`; independent replication, cross-domain/delayed-trans](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-688bcc32751313d7 / obligations: live-provider evidence remains `NOT_RUN_LIVE_EXTERNAL`; independent replication, cross-domain/delayed-trans
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [OBS --> M1\[M1 行动后机制裁决\]](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-0b6c0f4b8dd3717c / OBS --> M1\[M1 行动后机制裁决\]
-  - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—

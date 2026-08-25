@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [最小作用量原理-门槛优化函数，最小作用量原理δS=0描述门控面Λ的演化路径。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-763bd874f9402f03 / 最小作用量原理-门槛优化函数，最小作用量原理δS=0描述门控面Λ的演化路径。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [最小作用量原理-门槛优化函数，最小作用量原理δS=0描述门控面Λ的演化路径。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-e45a92c0484c84ec / 最小作用量原理-门槛优化函数，最小作用量原理δS=0描述门控面Λ的演化路径。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [最小作用量原理是D183门控面合并的动力学原理。δS=0→Λ的极值路径→门控面合并的最优路径。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-da0daf215633548e / 最小作用量原理是D183门控面合并的动力学原理。δS=0→Λ的极值路径→门控面合并的最优路径。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D183；被引用：—
+- [最小因果：社会把「努力」绑人格价值 → 高强度努力仍自我贬低 → 「努力是策略非人格证明」（B6/A11/A12）。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-6887e4ab95ace350 / 最小因果：社会把「努力」绑人格价值 → 高强度努力仍自我贬低 → 「努力是策略非人格证明」（B6/A11/A12）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：A11, A12；被引用：—
 - [最强可保留的有界命题是：把所有状态压成一个等价类的商映射不能保存非恒定可观测量；零门只退化其声明的读出，不等于世界、状态空间或全部物理信息消失。该命题仍需独立形式证明工件，不能被包装成物理学 no-go theorem。](../../../docs/foundation/physics-asset-correction-20260729.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b6840e89d56b7668 / 最强可保留的有界命题是：把所有状态压成一个等价类的商映射不能保存非恒定可观测量；零门只退化其声明的读出，不等于世界、状态空间或全部物理信息消失。该命题仍需独立形式证明工件，不能被包装成物理学 no-go theorem。
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-41fe53299e4209c5 / 已迁移的历史函数来源/0039-T29-门控函数进化三阶段.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T29；被引用：—
-- [已迁移的历史函数来源/0040-T30-门控-路径积分同构与极小熵原理.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-aa49a8d5dc9b201b / 已迁移的历史函数来源/0040-T30-门控-路径积分同构与极小熵原理.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T30；被引用：—
-- [已迁移的历史函数来源/0041-T31-门控信息熵跃迁函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2a8b33c23ca27ee1 / 已迁移的历史函数来源/0041-T31-门控信息熵跃迁函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T31；被引用：—
-- [已迁移的历史函数来源/0042-T32-认知分辨率函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-97843a268745d169 / 已迁移的历史函数来源/0042-T32-认知分辨率函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T32；被引用：—
-- [已迁移的历史函数来源/0043-T33-A-B型门控面冲突函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-87af9e6e0d6aac8e / 已迁移的历史函数来源/0043-T33-A-B型门控面冲突函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T33；被引用：—

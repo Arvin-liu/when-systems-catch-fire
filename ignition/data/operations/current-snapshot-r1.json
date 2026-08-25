@@ -57,7 +57,7 @@
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
     "epistemically_accepted": 0
   },
-  "generated_from_source_digest": "e44466bcddd37e31bd7b195aec3127b758e6605fd8e3856fe5446f07dc87d654",
+  "generated_from_source_digest": "135dc73e173fa464a84843d33d4f318876d0039167c529ba01ed43eeb0393273",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r6-live-observation-reconciliation-r1",

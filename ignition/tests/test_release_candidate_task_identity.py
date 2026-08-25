@@ -52,11 +52,11 @@ class ReleaseCandidateTaskIdentityTests(unittest.TestCase):
         errors = self.check(snapshot=snapshot)
         self.assertTrue(any("snapshot.task_identity.current_formal_task" in error for error in errors))
 
-    def test_presentation_only_task_rejects_architecture_promotion(self) -> None:
+    def test_architecture_changing_task_cannot_be_detached_from_formal(self) -> None:
         lifecycle = copy.deepcopy(self.lifecycle)
-        lifecycle["latest_architecture_changing_task"] = gate.EXPECTED_TASK_ID
+        lifecycle["latest_architecture_changing_task"] = "IGNITION-20260825-139"
         errors = self.check(lifecycle=lifecycle)
-        self.assertTrue(any("ARCHITECTURE_TASK_PROMOTED_TO_FORMAL" in error for error in errors))
+        self.assertTrue(any("TASK_IDENTITY_MISMATCH:lifecycle.latest_architecture_changing_task" in error for error in errors))
 
     def test_stale_compiler_output_is_rejected(self) -> None:
         docs = dict(self.surface_documents)

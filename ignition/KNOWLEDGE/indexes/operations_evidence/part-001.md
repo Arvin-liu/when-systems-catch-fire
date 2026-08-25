@@ -1049,6 +1049,11 @@
   - 可搜索名称：IMPLICIT-9ADF7AD4A431C625 / # IGNITION-139 Step 03 — Durable capture before model context / IMPLICIT-9ADF7AD4A431C625
   - 来源：`reports/operations/ignition-139-step03-durable-capture-transport.md`
   - 依赖：—；被引用：—
+- [# IGNITION-140 Step 05 — Reconciliation State Model](../../../reports/operations/ignition-140-step05-reconciliation-state-model.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-63C9658E65BE3716 / # IGNITION-140 Step 05 — Reconciliation State Model / IMPLICIT-63C9658E65BE3716
+  - 来源：`reports/operations/ignition-140-step05-reconciliation-state-model.md`
+  - 依赖：—；被引用：—
 - [# IGNITION-20260816-122 Federation R1 Progress](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BE8F655E45B6CCA2 / # IGNITION-20260816-122 Federation R1 Progress / IMPLICIT-BE8F655E45B6CCA2
@@ -1098,6 +1103,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-78D20EE068DECD7D / # IGNITION-20260825-139 Step 08 — Live-observation semantic gate / IMPLICIT-78D20EE068DECD7D
   - 来源：`reports/operations/ignition-139-step08-live-observation-semantic-gate.md`
+  - 依赖：—；被引用：—
+- [# IGNITION-20260826-140 Step 03 — Observation / Reconciliation Plane registration](../../../reports/operations/ignition-140-step03-observation-plane-registration.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7D1CC4626FF82EF6 / # IGNITION-20260826-140 Step 03 — Observation / Reconciliation Plane registration / IMPLICIT-7D1CC4626FF82EF6
+  - 来源：`reports/operations/ignition-140-step03-observation-plane-registration.md`
   - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1553,6 +1563,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-94E646EC25ADB449 / ## Next gate / IMPLICIT-94E646EC25ADB449 / IMPLICIT-225FD3F7FCDDD515
   - 来源：`reports/operations/ignition-138-step12-current-state-sync.md`
+  - 依赖：—；被引用：—
+- [## Next gate](../../../reports/operations/ignition-140-step09-local-executor-census-and-selection.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F274733CD2AAA214 / ## Next gate / IMPLICIT-F274733CD2AAA214 / IMPLICIT-225FD3F7FCDDD515
+  - 来源：`reports/operations/ignition-140-step09-local-executor-census-and-selection.md`
   - 依赖：—；被引用：—
 - [## nfc-a6b80fca608c8c8f — This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git](../../../analysis/corpus-relation/cluster_source_briefs/C004.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2487,20 +2502,5 @@
 - [### \[#604｜仲裁模型能力上限预测验证\]\(docs/zh/cases/items/C-0604.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D4AF49C25F68D531 / ### \[#604｜仲裁模型能力上限预测验证\]\(docs/zh/cases/items/C-0604.md\) / IMPLICIT-D4AF49C25F68D531
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#605｜仲裁模型升级自举循环验证\]\(docs/zh/cases/items/C-0605.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FFE5B63C84F3E8F2 / ### \[#605｜仲裁模型升级自举循环验证\]\(docs/zh/cases/items/C-0605.md\) / IMPLICIT-FFE5B63C84F3E8F2
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#672｜最优化问题×跨域统一定理验证\]\(docs/zh/cases/items/C-0672.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-282DB863095F3936 / ### \[#672｜最优化问题×跨域统一定理验证\]\(docs/zh/cases/items/C-0672.md\) / IMPLICIT-282DB863095F3936
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#674｜导数连续性×双向动力学验证\]\(docs/zh/cases/items/C-0674.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0B8BB9AF2C343B2B / ### \[#674｜导数连续性×双向动力学验证\]\(docs/zh/cases/items/C-0674.md\) / IMPLICIT-0B8BB9AF2C343B2B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

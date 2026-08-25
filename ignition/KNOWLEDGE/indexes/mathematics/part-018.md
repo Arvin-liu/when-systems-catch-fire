@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0040-T30-门控-路径积分同构与极小熵原理.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-aa49a8d5dc9b201b / 已迁移的历史函数来源/0040-T30-门控-路径积分同构与极小熵原理.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T30；被引用：—
+- [已迁移的历史函数来源/0041-T31-门控信息熵跃迁函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2a8b33c23ca27ee1 / 已迁移的历史函数来源/0041-T31-门控信息熵跃迁函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T31；被引用：—
+- [已迁移的历史函数来源/0042-T32-认知分辨率函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-97843a268745d169 / 已迁移的历史函数来源/0042-T32-认知分辨率函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T32；被引用：—
+- [已迁移的历史函数来源/0043-T33-A-B型门控面冲突函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-87af9e6e0d6aac8e / 已迁移的历史函数来源/0043-T33-A-B型门控面冲突函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T33；被引用：—
 - [已迁移的历史函数来源/0044-T34-量子引力Φ框架函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-ef217bde15f6830d / 已迁移的历史函数来源/0044-T34-量子引力Φ框架函数.md
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-a8b2ed256512e1bd / 已迁移的历史函数来源/0536-D539-未来视角-思考维度函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D539；被引用：—
-- [已迁移的历史函数来源/0537-D540-执念-逃避-逃避的逃避函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5ffcc2b6fb98bc40 / 已迁移的历史函数来源/0537-D540-执念-逃避-逃避的逃避函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D540；被引用：—
-- [已迁移的历史函数来源/0538-D541-道德自居-认知偏差函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dba7777c4b87d33d / 已迁移的历史函数来源/0538-D541-道德自居-认知偏差函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D541；被引用：—
-- [已迁移的历史函数来源/0539-T40-决策权与信息权对称元协议实例化函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f168f49369ede392 / 已迁移的历史函数来源/0539-T40-决策权与信息权对称元协议实例化函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T40；被引用：—
-- [已迁移的历史函数来源/0540-T41-艺术创作逻辑跨时空同构函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-cc1f0cdcbcb57717 / 已迁移的历史函数来源/0540-T41-艺术创作逻辑跨时空同构函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T41；被引用：—

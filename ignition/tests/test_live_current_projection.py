@@ -23,16 +23,16 @@ class LiveCurrentProjectionTests(unittest.TestCase):
     def tearDown(self) -> None:
         self._temporary_directory.cleanup()
 
-    def test_projection_has_ledger_derived_counts_and_canonical_second_attempt(self) -> None:
+    def test_projection_has_current_ledger_derived_counts_and_latest_attempt(self) -> None:
         projection = build_live_current_projection(self.ledger_path)
-        self.assertEqual(projection["counts"]["total_attempts"], 5)
+        self.assertEqual(projection["counts"]["total_attempts"], 6)
         self.assertEqual(projection["counts"]["validated_completion_count"], 0)
         self.assertEqual(projection["counts"]["unreconciled_count"], 3)
         self.assertEqual(projection["counts"]["observation_incomplete_count"], 2)
-        self.assertEqual(projection["per_executor"]["external.codex"]["attempt_count"], 4)
+        self.assertEqual(projection["per_executor"]["external.codex"]["attempt_count"], 5)
         self.assertEqual(
             projection["latest_attempt_per_executor"]["external.codex"]["state"],
-            "OBSERVATION_INCOMPLETE",
+            "MALFORMED_RESULT",
         )
         self.assertIsNone(projection["latest_validated_completion"])
         self.assertEqual(projection["obligation"]["state"], "OPEN")

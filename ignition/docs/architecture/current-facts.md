@@ -7,8 +7,8 @@
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Live attempts: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/140/live-current-projection-r2.json`。
-- Foundation: function identity cards `5911`；function quarantine/pending `4864`；non-function claims `17031`；non-function quarantine/pending `4839`。
-- Knowledge Experience: cards `414`；changes `315`；layered readings `332`；search records `23274`；aliases `876`。
+- Foundation: function identity cards `5944`；function quarantine/pending `4868`；non-function claims `17172`；non-function quarantine/pending `4866`。
+- Knowledge Experience: cards `414`；changes `315`；layered readings `332`；search records `23448`；aliases `876`。
 - Fire Seeds: `64` seeds/clusters；`393` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`20` registered sync surfaces；`14` machine/human pairs。
 - Task lineage: current `IGNITION-20260826-140` `IN_PROGRESS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。

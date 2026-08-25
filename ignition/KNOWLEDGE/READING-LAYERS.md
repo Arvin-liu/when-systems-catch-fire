@@ -2099,7 +2099,7 @@
 ## 点火仓库原生系统图
 `HISTORICAL_OR_SUPERSEDED_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
 - 1 分钟：状态：0.8.0 Current registry-derived navigation projection；0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：状态：0.13.0 Current registry-derived navigation projection；0.12.0、0.11.0、0.10.0、0.9.0、0.8.0、0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。；project component registry + typed propagation topology + layout overlay → deterministic generator → materialized spec + repository SVG → .github/README.md / ordinary Markdown navigation；不要手改 materialized spec 或 SVG：；SVG 现在位于 docs/generated/ignition-system-architecture.svg，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 节点链接指向 GitHub 仓库 canonical 文件；若客户端不支持 SVG 内部热点，可使用本页的文本入口。它是当前唯一完整总架构图，不再并列维护另一张图。；节点身份、canonical target 与生命周期来自 component registry。；边的 relation class/domain 来自 propagation topology。
+- 5 分钟：状态：0.14.0 Current registry-derived navigation projection；0.13.0、0.12.0、0.11.0、0.10.0、0.9.0、0.8.0、0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。；project component registry + typed propagation topology + layout overlay → deterministic generator → materialized spec + repository SVG → .github/README.md / ordinary Markdown navigation；不要手改 materialized spec 或 SVG：；SVG 现在位于 docs/generated/ignition-system-architecture.svg，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 节点链接指向 GitHub 仓库 canonical 文件；若客户端不支持 SVG 内部热点，可使用本页的文本入口。它是当前唯一完整总架构图，不再并列维护另一张图。；节点身份、canonical target 与生命周期来自 component registry。；边的 relation class/domain 来自 propagation topology。
 - 完整阅读：[docs/architecture/interactive-system-map.md](../docs/architecture/interactive-system-map.md)
 
 <a id="reading-hr-dc0c745159dd31db"></a>

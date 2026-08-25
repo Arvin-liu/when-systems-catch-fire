@@ -1,12 +1,12 @@
 {
   "assets_with_dependencies": 541,
   "authority_boundary": "AUTO_CANDIDATE records never override human adjudication; corrections.jsonl is the task 98 authority overlay.",
-  "deduplicated_assets": 5911,
+  "deduplicated_assets": 5944,
   "dependency_edges": 1923,
   "duplicate_mentions": 57337,
   "explicit_undefined_ids": 842,
   "external_evidence_counts": {
-    "E0": 5906,
+    "E0": 5939,
     "E1": 5
   },
   "highest_reverse_dependency_counts": [
@@ -97,25 +97,25 @@
     "CONJECTURE_OR_PENDING_CLAIM": 121,
     "GATE_OR_DECISION_RULE": 18,
     "HEURISTIC": 24,
-    "INVALID_OR_PSEUDO_FUNCTION": 5290,
+    "INVALID_OR_PSEUDO_FUNCTION": 5323,
     "PARAMETRIC_MODEL": 72,
     "RELATION_OR_CONSTRAINT": 227,
     "SCORE_OR_INDEX": 72,
     "STRUCTURAL_METAPHOR": 4
   },
-  "implicit_named_assets": 4447,
+  "implicit_named_assets": 4480,
   "math_maturity_counts": {
-    "M0": 5290,
+    "M0": 5323,
     "M1": 616,
     "M3": 1,
     "M4": 3,
     "M6": 1
   },
-  "queued_for_human_review": 5899,
+  "queued_for_human_review": 5932,
   "registered_assets": 622,
   "scanner_version": "2.0.0",
   "snapshot": "function-census-v2-20260729",
-  "source_mentions": 63248,
-  "source_occurrence_records": 28703,
-  "tracked_text_files_scanned": 3621
+  "source_mentions": 63281,
+  "source_occurrence_records": 28736,
+  "tracked_text_files_scanned": 3657
 }
