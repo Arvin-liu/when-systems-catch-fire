@@ -1,0 +1,48 @@
+{
+  "census_path": "ignition/data/operations/iterations/140/local-executor-census-r1.json",
+  "claim_ceiling": "Fresh repository-local observation-time executor census, executor-kind classification, admission checks and why-executor trace only; no live inference, validated completion, model-quality ranking, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.",
+  "control_tip": "86df72bea772b61bea5e3c3837e48a2c46f06c76",
+  "counts": {
+    "admitted_agentic_executors": 1,
+    "agentic_executors": 5,
+    "candidates": 14,
+    "installed_agentic_executors": 4,
+    "reasoner_runtimes": 4,
+    "tools": 3,
+    "ui_only": 2
+  },
+  "formal_candidate_sha": "84ce6b8aea2d5b7a3bd53ee4e7d89b3724b1c4d7",
+  "observations": {
+    "agent_version_help_read": true,
+    "codex_login_status": "AUTHENTICATED_PUBLIC_STATUS_EXIT_0",
+    "public_auth_content_read": false,
+    "reasoner_models_invoked": false,
+    "ui_action_performed": false
+  },
+  "safety": {
+    "auth_content_copied": false,
+    "billing_changed": false,
+    "configuration_changed": false,
+    "install_or_upgrade_performed": false,
+    "live_inference_started": false,
+    "secret_content_read": false,
+    "workspace_modified": false
+  },
+  "schema_version": "ignition-140-step09-local-executor-census-and-selection-r1",
+  "selection": {
+    "ranking": [
+      "external.codex",
+      "external.gemini",
+      "external.hermes",
+      "external.openclaw",
+      "external.github-copilot-cli"
+    ],
+    "selected_executor_id": "external.codex",
+    "selected_family": "Codex CLI",
+    "selection_status": "SELECTED",
+    "why_executor": "Fresh census selects Codex CLI (codex-cli 0.144.4) because it is the only installed AGENTIC_EXECUTOR with all ten bounded checks true, including Codex public login status exit 0, read-only one-shot transport, structured output, isolated runtime scratch and independent OS validation. This is an admission trace, not a model-quality or completion claim."
+  },
+  "status": "PASS",
+  "step": "09",
+  "task_id": "IGNITION-20260826-140"
+}
