@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/live-attempt-ledger-r1.schema.json",
+  "title": "Ignition Live Attempt Ledger R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "sequence", "task_id", "dispatch_id", "attempt_id",
+    "executor_id", "adapter_id", "executor_version", "capability_lease_digest",
+    "lease_binding_status", "workspace_ref", "workspace_digest_before",
+    "workspace_digest_after", "runtime_scratch_lifecycle_digest", "started_at",
+    "ended_at", "process", "public_events", "structured_result", "validator",
+    "reconciliation_status", "evidence_completeness", "claim_ceiling",
+    "source_refs", "history_classification", "previous_record_hash", "record_hash"
+  ],
+  "properties": {
+    "schema_version": { "const": "live-attempt-ledger-r1" },
+    "sequence": { "type": "integer", "minimum": 0 },
+    "task_id": { "type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]+$" },
+    "dispatch_id": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+$", "minLength": 1 },
+    "attempt_id": { "type": "string", "pattern": "^[A-Za-z0-9_.-]+$", "minLength": 1 },
+    "executor_id": { "type": "string", "minLength": 1 },
+    "adapter_id": { "type": "string", "minLength": 1 },
+    "executor_version": { "type": "string", "minLength": 1 },
+    "capability_lease_digest": {
+      "anyOf": [
+        { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        { "const": "UNRECOVERED" },
+        { "const": "NOT_APPLICABLE" }
+      ]
+    },
+    "lease_binding_status": { "enum": ["BOUND", "UNRECOVERED", "NOT_APPLICABLE"] },
+    "workspace_ref": { "type": "string", "minLength": 1 },
+    "workspace_digest_before": {
+      "anyOf": [
+        { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        { "const": "UNRECOVERED" },
+        { "const": "NOT_APPLICABLE" }
+      ]
+    },
+    "workspace_digest_after": {
+      "anyOf": [
+        { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        { "const": "UNRECOVERED" },
+        { "const": "NOT_APPLICABLE" }
+      ]
+    },
+    "runtime_scratch_lifecycle_digest": {
+      "anyOf": [
+        { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        { "const": "UNRECOVERED" },
+        { "const": "NOT_APPLICABLE" }
+      ]
+    },
+    "started_at": {
+      "anyOf": [
+        { "type": "string", "format": "date-time" },
+        { "const": "UNRECOVERED" }
+      ]
+    },
+    "ended_at": {
+      "anyOf": [
+        { "type": "string", "format": "date-time" },
+        { "const": "UNRECOVERED" },
+        { "const": "NOT_APPLICABLE" }
+      ]
+    },
+    "process": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "return_code", "timed_out", "signal", "cleanup_status", "process_group_status"],
+      "properties": {
+        "state": {
+          "enum": [
+            "STARTUP_FAILURE", "TIMED_OUT_EFFECT_UNKNOWN", "FAILED_VALIDATION",
+            "OBSERVATION_INCOMPLETE", "COMPLETED_VALIDATED", "RETURNED_UNVALIDATED",
+            "MALFORMED_RESULT", "SKIPPED_UNSAFE_OR_UNAVAILABLE", "REQUIRES_RECONCILIATION"
+          ]
+        },
+        "return_code": { "type": ["integer", "null"] },
+        "timed_out": { "type": "boolean" },
+        "signal": { "type": ["string", "null"] },
+        "cleanup_status": { "enum": ["CLEANED", "FAILED", "REQUIRES_RECONCILIATION", "NOT_OBSERVED", "NOT_APPLICABLE"] },
+        "process_group_status": { "enum": ["CONFIRMED_GONE", "CHILD_LEFT_BEHIND", "UNKNOWN", "NOT_OBSERVED", "NOT_APPLICABLE"] }
+      }
+    },
+    "public_events": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capture_ref", "capture_digest", "event_count", "capture_completeness", "stdout_digest", "stderr_digest", "stdout_byte_count", "stderr_byte_count"],
+      "properties": {
+        "capture_ref": { "type": "string", "minLength": 1 },
+        "capture_digest": {
+          "anyOf": [
+            { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+            { "const": "UNRECOVERED" },
+            { "const": "NOT_APPLICABLE" }
+          ]
+        },
+        "event_count": { "type": "integer", "minimum": 0 },
+        "capture_completeness": { "enum": ["COMPLETE", "INCOMPLETE", "NOT_OBSERVED"] },
+        "stdout_digest": {
+          "anyOf": [
+            { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+            { "const": "UNRECOVERED" },
+            { "const": "NOT_APPLICABLE" }
+          ]
+        },
+        "stderr_digest": {
+          "anyOf": [
+            { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+            { "const": "UNRECOVERED" },
+            { "const": "NOT_APPLICABLE" }
+          ]
+        },
+        "stdout_byte_count": { "type": "integer", "minimum": 0 },
+        "stderr_byte_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "structured_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["present", "ref", "digest"],
+      "properties": {
+        "present": { "type": "boolean" },
+        "ref": { "type": ["string", "null"] },
+        "digest": {
+          "anyOf": [
+            { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+            { "const": "UNRECOVERED" },
+            { "const": "NOT_APPLICABLE" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "validator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "ref", "digest"],
+      "properties": {
+        "status": { "enum": ["PASS", "FAIL", "NOT_RUN", "UNKNOWN"] },
+        "ref": { "type": ["string", "null"] },
+        "digest": {
+          "anyOf": [
+            { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+            { "const": "UNRECOVERED" },
+            { "const": "NOT_APPLICABLE" },
+            { "type": "null" }
+          ]
+        }
+      }
+    },
+    "reconciliation_status": { "enum": ["NOT_REQUIRED", "OPEN", "REQUIRES_RECONCILIATION", "CLOSED"] },
+    "evidence_completeness": { "enum": ["COMPLETE", "INCOMPLETE", "NOT_OBSERVED"] },
+    "claim_ceiling": { "type": "string", "minLength": 1 },
+    "source_refs": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+    "history_classification": { "enum": ["HISTORICAL_IMPORTED", "CURRENT_ATTEMPT", "HISTORICAL_PROJECTION"] },
+    "previous_record_hash": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "record_hash": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+  }
+}

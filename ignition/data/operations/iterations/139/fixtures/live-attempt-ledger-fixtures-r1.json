@@ -1,0 +1,11 @@
+{
+  "schema_version": "live-attempt-ledger-fixtures-r1",
+  "fixtures": [
+    {"id": "duplicate-dispatch", "kind": "negative", "expected": "LiveAttemptDuplicateError"},
+    {"id": "duplicate-attempt", "kind": "negative", "expected": "LiveAttemptDuplicateError"},
+    {"id": "wrong-task-binding", "kind": "negative", "expected": "LiveAttemptBindingError"},
+    {"id": "unknown-state", "kind": "negative", "expected": "LiveAttemptLedgerError"},
+    {"id": "incomplete-success", "kind": "negative", "expected": "LiveAttemptLedgerError"}
+  ],
+  "claim_ceiling": "Negative fixtures test repository-local ledger integrity only."
+}
