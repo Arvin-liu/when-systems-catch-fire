@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/live-current-projection-r1.schema.json",
+  "title": "Ignition Live Current Projection R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "contract_id", "source_ledger", "counts", "per_executor",
+    "latest_attempt_per_executor", "latest_validated_completion", "current_live_ceiling",
+    "obligation", "next_eligible_action", "attempts", "claim_ceiling", "projection_digest"
+  ],
+  "properties": {
+    "schema_version": {"const": "live-current-projection-r1"},
+    "contract_id": {"const": "LIVE_CURRENT_STATE_DERIVATION_INVARIANT"},
+    "source_ledger": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "record_count", "head_hash"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "record_count": {"type": "integer", "minimum": 0},
+        "head_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "counts": {
+      "type": "object", "additionalProperties": false,
+      "required": ["total_attempts", "validated_completion_count", "unreconciled_count", "observation_incomplete_count", "complete_evidence_count", "incomplete_evidence_count"],
+      "properties": {
+        "total_attempts": {"type": "integer", "minimum": 0},
+        "validated_completion_count": {"type": "integer", "minimum": 0},
+        "unreconciled_count": {"type": "integer", "minimum": 0},
+        "observation_incomplete_count": {"type": "integer", "minimum": 0},
+        "complete_evidence_count": {"type": "integer", "minimum": 0},
+        "incomplete_evidence_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "per_executor": {"type": "object", "additionalProperties": {"$ref": "#/$defs/executorSummary"}},
+    "latest_attempt_per_executor": {"type": "object", "additionalProperties": {"$ref": "#/$defs/attemptSummary"}},
+    "latest_validated_completion": {"anyOf": [{"$ref": "#/$defs/attemptSummary"}, {"type": "null"}]},
+    "current_live_ceiling": {"type": "string", "minLength": 1},
+    "obligation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["obligation_id", "state", "reason", "unreconciled_attempt_ids"],
+      "properties": {
+        "obligation_id": {"const": "LIVE_EXTERNAL_INVOCATION"},
+        "state": {"enum": ["OPEN", "CLOSED"]},
+        "reason": {"type": "string", "minLength": 1},
+        "unreconciled_attempt_ids": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "next_eligible_action": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "action", "blocker_summary"],
+      "properties": {
+        "status": {"type": "string", "minLength": 1},
+        "action": {"type": "string", "minLength": 1},
+        "blocker_summary": {"type": "string", "minLength": 1}
+      }
+    },
+    "attempts": {"type": "array", "items": {"$ref": "#/$defs/attemptSummary"}},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "projection_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "$defs": {
+    "attemptSummary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["sequence", "task_id", "dispatch_id", "attempt_id", "executor_id", "adapter_id", "state", "return_code", "timed_out", "evidence_completeness", "capture_completeness", "structured_result_present", "validator_status", "reconciliation_status", "record_hash"],
+      "properties": {
+        "sequence": {"type": "integer", "minimum": 0},
+        "task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]+$"},
+        "dispatch_id": {"type": "string", "minLength": 1},
+        "attempt_id": {"type": "string", "minLength": 1},
+        "executor_id": {"type": "string", "minLength": 1},
+        "adapter_id": {"type": "string", "minLength": 1},
+        "state": {"type": "string", "minLength": 1},
+        "return_code": {"type": ["integer", "null"]},
+        "timed_out": {"type": "boolean"},
+        "evidence_completeness": {"enum": ["COMPLETE", "INCOMPLETE", "NOT_OBSERVED"]},
+        "capture_completeness": {"enum": ["COMPLETE", "INCOMPLETE", "NOT_OBSERVED"]},
+        "structured_result_present": {"type": "boolean"},
+        "validator_status": {"enum": ["PASS", "FAIL", "NOT_RUN", "UNKNOWN"]},
+        "reconciliation_status": {"enum": ["NOT_REQUIRED", "OPEN", "REQUIRES_RECONCILIATION", "CLOSED"]},
+        "record_hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    },
+    "executorSummary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["attempt_count", "state_counts", "attempt_ids"],
+      "properties": {
+        "attempt_count": {"type": "integer", "minimum": 0},
+        "state_counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+        "attempt_ids": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    }
+  }
+}
