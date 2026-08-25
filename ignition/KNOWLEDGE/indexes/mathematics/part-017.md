@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [最终文件哈希、bytes 和行数在复制完成后写入 1111 result 回执；这些完整性检查只证明本地文件一致性，不提高历史 claim ceiling。](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f61b1edaacbc07af / 最终文件哈希、bytes 和行数在复制完成后写入 1111 result 回执；这些完整性检查只证明本地文件一致性，不提高历史 claim ceiling。
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
 - [最近邻反事实：D245 是系统对自身门控面的二阶数学门控，与社会身份遮蔽无关；命中点可改为「某 AI 系统自我门控」，D601 失效而 D245 仍适用 → 不同构。身份/角色轴函数表空白。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7b52c1a8384b9fbd / 最近邻反事实：D245 是系统对自身门控面的二阶数学门控，与社会身份遮蔽无关；命中点可改为「某 AI 系统自我门控」，D601 失效而 D245 仍适用 → 不同构。身份/角色轴函数表空白。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-337d30a65ec9a4a0 / 已迁移的历史函数来源/0046-T36-σ能标依赖函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T36；被引用：—
-- [已迁移的历史函数来源/0047-T37-Φ_QG极小点精确位置.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0607874c32055cb7 / 已迁移的历史函数来源/0047-T37-Φ_QG极小点精确位置.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T37；被引用：—

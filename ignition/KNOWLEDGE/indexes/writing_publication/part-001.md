@@ -164,6 +164,11 @@
   - 可搜索名称：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IGNITION-ITERATION-METHOD-1.4-change-propagation-impact
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [projection. The public view is cleared when the capture/privacy boundary fails.](../../../reports/operations/ignition-139-step04-context-loss-fault-matrix.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-47ecf7a3de1a1a88 / projection. The public view is cleared when the capture/privacy boundary fails.
+  - 来源：`reports/operations/ignition-139-step04-context-loss-fault-matrix.md`
+  - 依赖：—；被引用：—
 - [Q27 的战场、麦克风、银行与电网共同暴露“扰动—耦合—正反馈—阈值—换态”的结构，并产生“冲击衰减／冲击放大”的新增解释。它是跨域同构叙事这一应用类型的有效基线。](../../../docs/publication/zhiyuan-writing-examples.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-4bf829b566abc1c0 / Q27 的战场、麦克风、银行与电网共同暴露“扰动—耦合—正反馈—阈值—换态”的结构，并产生“冲击衰减／冲击放大”的新增解释。它是跨域同构叙事这一应用类型的有效基线。

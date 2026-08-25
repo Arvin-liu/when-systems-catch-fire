@@ -21,10 +21,10 @@
 - release_lifecycle: task `IGNITION-20260825-139`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION`。
-- live_attempt_projection: total `4`；validated `0`；unreconciled `2`；observation-incomplete `1`；obligation `OPEN`；next action `RECONCILE_UNRECOVERED_ATTEMPTS`；source `ignition/data/operations/iterations/139/live-current-projection-r1.json`。
+- live_attempt_projection: total `5`；validated `0`；unreconciled `3`；observation-incomplete `2`；obligation `OPEN`；next action `RECONCILE_UNRECOVERED_ATTEMPTS`；source `ignition/data/operations/iterations/139/live-current-projection-r1.json`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260825-139` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `767cc02a1b250dc0272afdc3b2342e6c60dedfbf8c8c8c5d6389bddb0e302522`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `8a028dbe8bd07ab4c174237f639763fe987c69fdaa6f428642421d517c791119`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 

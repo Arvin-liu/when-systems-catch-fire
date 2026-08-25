@@ -123,6 +123,12 @@ GENERATED_EXACT_PATHS = {
     # admitting their prose into discovery would make a fresh clone depend on
     # which receipt revision happened to be present when the census ran.
     "data/operations/iterations/138/step14-candidate-full-regression.json",
+    # Task 139 Step13 progress and targeted-regression receipt/report are
+    # provenance-only operation records. Exclude them explicitly so adding
+    # their evidence cannot make the census depend on its own receipt text.
+    "data/operations/iterations/139/progress.jsonl",
+    "data/operations/iterations/139/step13-targeted-regression.json",
+    "reports/operations/ignition-139-step13-targeted-regression.md",
     "data/operations/propagation/108-impact/system-map-nonimpact-proof.json",
     "docs/operations/lifecycle-readme.md",
     "reports/operations/lifecycle-audit-108.md",

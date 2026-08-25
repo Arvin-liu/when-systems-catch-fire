@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [这些跨域同构的案例，是系统底层逻辑的必然。](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d8bd76d66a812c8c / 这些跨域同构的案例，是系统底层逻辑的必然。
+  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
+  - 依赖：—；被引用：—
+- [这句话之所以重要，不是因为它强势，而是因为它把一个经常被混在一起的问题拆开了。一个人擅长做事，不等于她自动拥有决定权。一个人被角色需要，不等于她已经以自己的名字存在。真正让主体性重新长出来的，不是别人夸你辛苦，也不是别人承认你能干，而是你开](../../../outputs/stories/20260712-disobedience-subjectivity/story-longform.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e792dd9aa2403dd4 / 这句话之所以重要，不是因为它强势，而是因为它把一个经常被混在一起的问题拆开了。一个人擅长做事，不等于她自动拥有决定权。一个人被角色需要，不等于她已经以自己的名字存在。真正让主体性重新长出来的，不是别人夸你辛苦，也不是别人承认你能干，而是你开
+  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-longform.md`
+  - 依赖：—；被引用：—
+- [这是 Q26 点火分析的仓库公开副本，不是史学定论、项目当前真值或已完成的外部历史核验。报告把笔记拆为来源、命题、论证、模型、证据、验证、解释和发布边界，并把最强解释降格为可被外部材料检验的机制候选。](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f73906865b89c873 / 这是 Q26 点火分析的仓库公开副本，不是史学定论、项目当前真值或已完成的外部历史核验。报告把笔记拆为来源、命题、论证、模型、证据、验证、解释和发布边界，并把最强解释降格为可被外部材料检验的机制候选。
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
 - [这是首次发现，或比既有 ICL / priming / task-inference 机制更新颖。](../../../docs/architecture/epistemic-structural-induction-r0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-1e2cb877a4fe5c5e / 这是首次发现，或比既有 ICL / priming / task-inference 机制更新颖。

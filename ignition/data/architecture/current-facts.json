@@ -59,10 +59,10 @@
       "source_census_count": 393
     },
     "foundation": {
-      "function_identity_cards": 5858,
-      "function_quarantine_or_pending": 4854,
-      "nonfunction_claims": 16855,
-      "nonfunction_quarantine_or_pending": 4812
+      "function_identity_cards": 5911,
+      "function_quarantine_or_pending": 4864,
+      "nonfunction_claims": 17023,
+      "nonfunction_quarantine_or_pending": 4839
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -97,11 +97,11 @@
       "method_version": "1.4.0"
     },
     "knowledge_experience": {
-      "aliases": 877,
+      "aliases": 876,
       "cards": 414,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 23045
+      "search_records": 23266
     },
     "packs": {
       "capability_route_count": 10,
@@ -157,11 +157,11 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "354508f7aef380aa13acad8e0b08e6d768952ab9677636dfb39089c63887f806"
+      "sha256": "01c2152ecf0e40fc001fabec9f7f5a40535520246be0094793052840c3a58410"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "b72c9831490bd509ba0e58987992f44cd1bff084f3edbfea91bdc916827746fc"
+      "sha256": "7cf17e02d105de3d5e8d9ea13c36eb5c83214a79a78b8d3adfdff5a71b0ec5d1"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -169,11 +169,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "177e3b337369a53e8f54789aad34c0bf2a1b1693c10f064358eec6673730c3a1"
+      "sha256": "8eeecaa4ab46456cfeadb9de8f53a63db816f01db383580e57060eee6903d35c"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "67f80a958a22a96918d1cd9187c52207b6af3909978bc73db5063fdaa97e2aa2"
+      "sha256": "e6bb4809f051440fbf85b056df6aefa6be9fe1e705f450db96c0dc7a4a179eec"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",

@@ -13,6 +13,11 @@ import hashlib
 import sys
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+REPO_ROOT = ROOT.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 try:
     from tools import build_current_snapshot as snapshot
     from tools import current_surface_compiler as compiler
@@ -23,8 +28,6 @@ except ModuleNotFoundError:
     import generate_current_facts as facts
 
 
-ROOT = Path(__file__).resolve().parents[1]
-REPO_ROOT = ROOT.parent
 SURFACE_CONTRACT = ROOT / "data/operations/current-surface-block-contract-r1.json"
 
 

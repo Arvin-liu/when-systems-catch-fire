@@ -6,6 +6,71 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5121767954 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5121767954 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5121850258 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5121850258 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5123890179 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5123890179 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5125105800 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5125105800 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5125257263 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5125257263 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5125266347 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5125266347 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5125275403 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5125275403 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5125277928 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5125277928 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5132561910 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5132561910 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5132569607 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5132569607 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5132578434 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5132578434 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5132599331 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5132599331 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5132607827 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5132607827 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5132629775 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5132629775 / A5001316926
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
   - 依赖：—；被引用：—
@@ -302,6 +367,11 @@
 - [delta: advances canonical Current from Task133 to the Task134 residual-debt and projection-hygiene release boundary with](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-a379a67ff769a4cc / delta: advances canonical Current from Task133 to the Task134 residual-debt and projection-hygiene release boundary with
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [delta: host-side durable capture precedes bounded model context; an append-only `LiveAttemptLedger` and deterministic Cu](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-927cad4790188f60 / delta: host-side durable capture precedes bounded model context; an append-only `LiveAttemptLedger` and deterministic Cu
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [delta: registered the R4 Steering / Intent / Goal / Obligation R1 control surface inside the existing Ignition OS / driv](../../../STATE-CHANGELOG.md)
@@ -924,6 +994,11 @@
   - 可搜索名称：IMPLICIT-D380926E03568CE7 / hierarchy_topology := ∫_{Ω} abstraction_validity × irreducible_properties dΩ / IMPLICIT-D380926E03568CE7 / IMPLICIT-7F7816A028C75EFA
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
+- [historical import, and only then Current projection repair and any one-time live](../../../reports/operations/ignition-139-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-facacf1a8ce52f0a / historical import, and only then Current projection repair and any one-time live
+  - 来源：`reports/operations/ignition-139-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
 - [I\(Ω\) = log₂ \|{x \| 所有硬约束 Cᵢ\(x\) 同时满足}\|](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-97A481DCF7C16A81 / I\(Ω\) = log₂ \|{x \| 所有硬约束 Cᵢ\(x\) 同时满足}\| / IMPLICIT-97A481DCF7C16A81
@@ -1164,6 +1239,11 @@
   - 可搜索名称：IMPLICIT-2DD3616C6046A08D / if selection.get\("status"\) == "SELECTED" and not isinstance\(selection.get\("why_executor"\), str\): / IMPLICIT-2DD3616C6046A08D
   - 来源：`agent_federation/local_executor_census.py`
   - 依赖：—；被引用：—
+- [if self.capture_parent.resolve\(\) == self.runtime_scratch_parent.resolve\(\):](../../../agent_federation/live_adapters.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AE2BBF62373F6A42 / if self.capture_parent.resolve\(\) == self.runtime_scratch_parent.resolve\(\): / IMPLICIT-AE2BBF62373F6A42
+  - 来源：`agent_federation/live_adapters.py`
+  - 依赖：—；被引用：—
 - [if set\(event\) == expected:](../../../agent_federation/live_task137.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B0803E4563706CDA / if set\(event\) == expected: / IMPLICIT-B0803E4563706CDA
@@ -1228,6 +1308,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b5d4688eb73e68f5 / IGNITION-20260822-134 Step 11 — Current projection closure
   - 来源：`reports/operations/ignition-134-step11-current-projection-closure.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection](../../../reports/operations/ignition-139-step06-live-current-projection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7857b1080cce321a / IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection
+  - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260825-139 Step 12 — Independent binding and Current projection](../../../reports/operations/ignition-139-step12-independent-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf24ed7c82727f83 / IGNITION-20260825-139 Step 12 — Independent binding and Current projection
+  - 来源：`reports/operations/ignition-139-step12-independent-validation.md`
   - 依赖：—；被引用：—
 - [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-bda837b6080acf95)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -1554,6 +1644,11 @@
   - 可搜索名称：NFC-710279d3c6596422 / next_read: read \[`current-release-lifecycle-r1.json`\]\(./data/operations/current-release-lifecycle-r1.json\), \[`current-sn
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [next_read: read \[Task139 execution contract\]\(./data/operations/iterations/139/execution-contract-r1.json\), \[historical L](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-74766f3eb275b970 / next_read: read \[Task139 execution contract\]\(./data/operations/iterations/139/execution-contract-r1.json\), \[historical L
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [next_read: read `data/operations/iterations/134/step14-residual-debt-projection-hygiene-r1.json`, `data/operations/itera](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-1cbf5b1dadbe2f01 / next_read: read `data/operations/iterations/134/step14-residual-debt-projection-hygiene-r1.json`, `data/operations/itera
@@ -1608,6 +1703,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8d6c0ce89d856afd / obligations: Step 09–13 must retain the 11 pre-existing Human Surface source-hash drifts, historical projection residual
   - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [observed = result.captured_events and result.captured_events\[0\].get\("result"\) == result_value and result.capture_capsule\["capture_completeness"\] == "COMPLETE"](../../../agent_federation/live_capture_fault_matrix.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7071C8835B6C7D2F / observed = result.captured_events and result.captured_events\[0\].get\("result"\) == result_value and result.capture_capsule\["capture_completeness"\] == "COMPLETE" / IMPLICIT-7071C8835B6C7D2F
+  - 来源：`agent_federation/live_capture_fault_matrix.py`
   - 依赖：—；被引用：—
 - [ops = len\(re.findall\(r"\[∀∃∈⊆⊂→↔∧∨¬⇒⇔∂∇∫∑∏≡≈≤≥\]", text\)\)](../../../function-os-candidate/v0.2/function_os/importer/legacy_asset_importer.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1849,10 +1949,25 @@
   - 可搜索名称：NFC-a3cbab124af22e6e / Projection contains `12/12` grammar relations and labels itself
   - 来源：`reports/operations/ignition-126-progress.md`
   - 依赖：—；被引用：—
+- [projection contains no raw provider output, private session data, or model](../../../reports/operations/ignition-139-step06-live-current-projection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e8430101c5aca71a / projection contains no raw provider output, private session data, or model
+  - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
+  - 依赖：—；被引用：—
+- [Projection digest: `0bfa042fe6f2ccc64e4b133babf0fdfb220f9aa75367d7458da72598db50aa1a`.](../../../reports/operations/ignition-139-step06-live-current-projection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cd653c4b2921ba7b / Projection digest: `0bfa042fe6f2ccc64e4b133babf0fdfb220f9aa75367d7458da72598db50aa1a`.
+  - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
+  - 依赖：—；被引用：—
 - [projection rather than the retired 50-node expectation.](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9817eea616b45f20 / projection rather than the retired 50-node expectation.
   - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [Projection validator: `LIVE_CURRENT_PROJECTION_OK`.](../../../reports/operations/ignition-139-step06-live-current-projection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9f91c8fdc2ee03df / Projection validator: `LIVE_CURRENT_PROJECTION_OK`.
+  - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
   - 依赖：—；被引用：—
 - [projection-matrix.jsonl — 250 条投影矩阵 ✅ 全覆盖](../../../data/discipline-projection/087-execution-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -1898,6 +2013,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FAAF64CD3333EB3C / propagation_ok = \(len\(missing_steps\) == 0\) / IMPLICIT-FAAF64CD3333EB3C
   - 来源：`function-os-candidate/v0.2/benchmark/run.py`
+  - 依赖：—；被引用：—
+- [R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s](../../ASSET-CARDS.md#asset-nfc-e9612969179efbcb)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e9612969179efbcb / R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s / - R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-side durable capture、append-only LiveAttemptLedger 和 ledger-derived Current projection。历史 ledger 共记录四次尝试，其中 Hermes136 与 Codex138 second 仍待 reconciliation；Codex138 second 确实发生，但 outer context overflow 使 observation incomplete，return code、structured result、lease、workspace 和 validator input 未恢复。当前 live provider/inference ceiling 仍未建立。
+  - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
 - [r\["replay_match"\] = \(p is not None and p.get\("result_sha"\) == r.get\("result_sha"\)\)](../../../function-os-candidate/v0.2/benchmark/run.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2049,6 +2169,11 @@
   - 可搜索名称：IMPLICIT-57249D2D07EEDF8D / same = canon\(used\) == canon\(pre\) / IMPLICIT-57249D2D07EEDF8D
   - 来源：`evidence-program/tools/validate_evidence_program.py`
   - 依赖：—；被引用：—
+- [secret_scan_status="FAIL" if getattr\(capture, "_secret_scan_status", "PASS"\) == "FAIL" else "PASS",](../../../agent_federation/live_transport.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1647FD700E719A64 / secret_scan_status="FAIL" if getattr\(capture, "_secret_scan_status", "PASS"\) == "FAIL" else "PASS", / IMPLICIT-1647FD700E719A64
+  - 来源：`agent_federation/live_transport.py`
+  - 依赖：—；被引用：—
 - [Seeds: `ai_guide, current_state, historical_reports, incremental_execution, iteration, iteration_manifest_contract, no_l](../../../reports/operations/121Q32I-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-55ed81918300c441 / Seeds: `ai_guide, current_state, historical_reports, incremental_execution, iteration, iteration_manifest_contract, no_l
@@ -2108,6 +2233,16 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
   - 可搜索名称：STEP03 blinded baseline versus governed replay / BASELINE-VS-GOVERNED
   - 来源：`reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md`
+  - 依赖：—；被引用：—
+- [Step08 must establish the semantic-negative and observation-projection gates.](../../../reports/operations/ignition-139-step07-current-state-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9519130f38124099 / Step08 must establish the semantic-negative and observation-projection gates.
+  - 来源：`reports/operations/ignition-139-step07-current-state-sync.md`
+  - 依赖：—；被引用：—
+- [Step12 must rebuild Current solely from the ledger, validate the projection,](../../../reports/operations/ignition-139-step11-live-attempt.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-039a21505072aedb / Step12 must rebuild Current solely from the ledger, validate the projection,
+  - 来源：`reports/operations/ignition-139-step11-live-attempt.md`
   - 依赖：—；被引用：—
 - [Step13 must run the targeted regression and projection preflight. Step14 and](../../../reports/operations/ignition-138-step12-current-state-sync.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2169,10 +2304,20 @@
   - 可搜索名称：NFC-c5868dcc96b73a34 / The current-facts JSON and Markdown projections were rebuilt twice. Their two
   - 来源：`reports/operations/ignition-128-step04-regression.md`
   - 依赖：—；被引用：—
+- [the deterministic live projection. Historical Task138 reports remain](../../../reports/operations/ignition-139-step07-current-state-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4fbe141e80c6942b / the deterministic live projection. Historical Task138 reports remain
+  - 来源：`reports/operations/ignition-139-step07-current-state-sync.md`
+  - 依赖：—；被引用：—
 - [The first post-Step12 run exposed four genuine stale-projection/accounting](../../../reports/operations/ignition-138-step13-targeted-regression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bf04e0575b570af8 / The first post-Step12 run exposed four genuine stale-projection/accounting
   - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
+  - 依赖：—；被引用：—
+- [The gate binds the canonical Task139 ledger and Current projection before](../../../reports/operations/ignition-139-step08-live-observation-semantic-gate.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-625d2ce8fd73bb80 / The gate binds the canonical Task139 ledger and Current projection before
+  - 来源：`reports/operations/ignition-139-step08-live-observation-semantic-gate.md`
   - 依赖：—；被引用：—
 - [The projection-hygiene gate fails on a clean `e04752d20d071bac8f0c4a1e5cff20fb3004dae1` baseline with `missing=164`; the](../../../reports/operations/ignition-132-step11-residual-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2357,150 +2502,5 @@
 - [title: "倒U型统一生成定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-23DD248AF3E210D9 / title: "倒U型统一生成定理" / IMPLICIT-23DD248AF3E210D9 / IMPLICIT-A8002391595D3B5A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "倒U型统一生成定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A8002391595D3B5A / title: "倒U型统一生成定理" / IMPLICIT-A8002391595D3B5A / IMPLICIT-23DD248AF3E210D9
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "倒U型统一生成定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B9CEAFDDFA7D096D / title: "倒U型统一生成定理" / IMPLICIT-B9CEAFDDFA7D096D / IMPLICIT-23DD248AF3E210D9
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "倒U型驱动力"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0AC379BACA7B98B8 / title: "倒U型驱动力" / IMPLICIT-0AC379BACA7B98B8
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "公理化体系外层补齐×定理层验证"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C0F7F80F73DB942D / title: "公理化体系外层补齐×定理层验证" / IMPLICIT-C0F7F80F73DB942D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "动态算力分配"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4D965EAD91A5F02E / title: "动态算力分配" / IMPLICIT-4D965EAD91A5F02E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "单体模型到模型网络相变验证"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AB062FE34D709C41 / title: "单体模型到模型网络相变验证" / IMPLICIT-AB062FE34D709C41
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "原子化的门控面分裂——Λ_culture分裂为多个小Λ，门控面数量本身就是Φ的增项"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0A9EFFAA2A2BFB39 / title: "原子化的门控面分裂——Λ_culture分裂为多个小Λ，门控面数量本身就是Φ的增项" / IMPLICIT-0A9EFFAA2A2BFB39
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "双通道信息衰减定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-94193EFE8B31A8A6 / title: "双通道信息衰减定理" / IMPLICIT-94193EFE8B31A8A6
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "发现瓶颈，变量闭包定律"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3829078A3C8DBED2 / title: "发现瓶颈，变量闭包定律" / IMPLICIT-3829078A3C8DBED2
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "可选集动力学×商业模式"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9F64EDAE2E3FD3A5 / title: "可选集动力学×商业模式" / IMPLICIT-9F64EDAE2E3FD3A5
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "可选集双向动力学"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-23ADE432450B4FC4 / title: "可选集双向动力学" / IMPLICIT-23ADE432450B4FC4
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "可靠性工程β因子模型在高β条件下的失效"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A6D92529C0D3D36A / title: "可靠性工程β因子模型在高β条件下的失效" / IMPLICIT-A6D92529C0D3D36A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "同质性遮蔽 / 同质性obscuration"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-915FD6B1323D2DB8 / title: "同质性遮蔽 / 同质性obscuration" / IMPLICIT-915FD6B1323D2DB8
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "哈勃张力超指数衰减"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3143F5BCD6DA528A / title: "哈勃张力超指数衰减" / IMPLICIT-3143F5BCD6DA528A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "哥德尔不完备定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1A7CEAB60724F0D1 / title: "哥德尔不完备定理" / IMPLICIT-1A7CEAB60724F0D1
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "四层乘法门控=神经通路归零律"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-51C2B87BB7BE4F17 / title: "四层乘法门控=神经通路归零律" / IMPLICIT-51C2B87BB7BE4F17
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "坏觉概率"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2D60C2E9E3B81D69 / title: "坏觉概率" / IMPLICIT-2D60C2E9E3B81D69
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "多模型并行/仲裁三域熵统一验证"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0C5F55175B87B01A / title: "多模型并行/仲裁三域熵统一验证" / IMPLICIT-0C5F55175B87B01A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变 / 大数据的泛化相变 - - μ_data越过Λ_generalization的瞬间泛化能力质变"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-78D7BB705E5702EE / title: "大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变 / 大数据的泛化相变 - - μ_data越过Λ_generalization的瞬间泛化能力质变" / IMPLICIT-78D7BB705E5702EE
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A3E30A77D91148B8 / title: "大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间" / IMPLICIT-A3E30A77D91148B8
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "天赋努力是乘法不是加法——任何一个为零则整体为零"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3555A7240EC32A43 / title: "天赋努力是乘法不是加法——任何一个为零则整体为零" / IMPLICIT-3555A7240EC32A43
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ σ_opt时提高精度, σ<σ_opt时增加带宽"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2A4EE51C7AB4FF2A / title: "好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ σ_opt时提高精度, σ<σ_opt时增加带宽" / IMPLICIT-2A4EE51C7AB4FF2A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "学科点火指数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BE867A74A3071414 / title: "学科点火指数" / IMPLICIT-BE867A74A3071414
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "学科训练的遮蔽作用 / 学科训练的obscuration作用"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C769D2F389F5B199 / title: "学科训练的遮蔽作用 / 学科训练的obscuration作用" / IMPLICIT-C769D2F389F5B199 / IMPLICIT-FE4C656D45427A8E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "学科训练的遮蔽作用 / 学科训练的obscuration作用"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FE4C656D45427A8E / title: "学科训练的遮蔽作用 / 学科训练的obscuration作用" / IMPLICIT-FE4C656D45427A8E / IMPLICIT-C769D2F389F5B199
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "宇宙膨胀-Φ衰减同构定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A4259277C66E7C25 / title: "宇宙膨胀-Φ衰减同构定理" / IMPLICIT-A4259277C66E7C25
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "完全统一不可能定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EA1E527E775BBE49 / title: "完全统一不可能定理" / IMPLICIT-EA1E527E775BBE49
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "定投指数基金"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0E44B83F7566075D / title: "定投指数基金" / IMPLICIT-0E44B83F7566075D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "导数连续性×双向动力学验证"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E3E61D069F83D5F3 / title: "导数连续性×双向动力学验证" / IMPLICIT-E3E61D069F83D5F3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

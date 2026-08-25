@@ -1,8 +1,8 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 32,
-  "active_current_ordinals": [27, 28, 29, 30, 31, 32],
+  "entry_count": 33,
+  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33],
   "historical_entry_count": 26,
   "legacy_profile_count": 6,
   "profiles": {
@@ -54,6 +54,7 @@
     {"ordinal": 29, "date": "2026-08-24", "label": "IGNITION-20260823-136-LIVE-EXTERNAL-EXECUTOR-BRIDGE-R1 — current architecture transition", "profile": "current-r1", "section_sha256": "afda5ce698a12fa751119f60cc7a5440c4385787be808ce8fdab392653576e25"},
     {"ordinal": 30, "date": "2026-08-24", "label": "IGNITION-20260823-136-LIVE-EXTERNAL-EXECUTOR-BRIDGE-R1 — terminal Current release candidate", "profile": "current-r1", "section_sha256": "994624b0c6582f8fcaf2b1f28ae83a38b7a45e7653d78a220b2323858a728bce"},
     {"ordinal": 31, "date": "2026-08-24", "label": "IGNITION-20260824-137-VALIDATED-LIVE-COMPLETION-RECONCILIATION-R1 — Current continuation", "profile": "current-r1", "section_sha256": "db91e101419fc1152afcdcf14146f67badfdb4db1b59548a40d8aba4f007fef7"},
-    {"ordinal": 32, "date": "2026-08-24", "label": "IGNITION-20260824-138 — executor runtime scratch separation continuation", "profile": "current-r1", "section_sha256": "59f8af915aed07f9ba1b699b1f4ecc8c308b53c45708ed3a8130353ceed8a826"}
+    {"ordinal": 32, "date": "2026-08-24", "label": "IGNITION-20260824-138 — executor runtime scratch separation continuation", "profile": "current-r1", "section_sha256": "a1c73641b93286a506e09b0e29459526dcc37f1d0c29b0b524dee25e62fbf5ad"},
+    {"ordinal": 33, "date": "2026-08-25", "label": "IGNITION-20260825-139 — durable live attempt journal and observation projection", "profile": "current-r1", "section_sha256": "c9527e3ad3753f46bc7bb4a373d29865f41476317db7d639d42461632ef004ca"}
   ]
 }

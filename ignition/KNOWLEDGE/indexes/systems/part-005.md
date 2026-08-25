@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [大模型涌现的具体因果判定：**pending**（需要代码、实验、benchmark、可复现评测）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9e34ed971713c921 / 大模型涌现的具体因果判定：**pending**（需要代码、实验、benchmark、可复现评测）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [失败条件：语法方便性改变因果主体、端点、知识路径或反事实而无显式裁定。](../../../docs/language-thought/cross-layer-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-564d247fd8eef5f9 / 失败条件：语法方便性改变因果主体、端点、知识路径或反事实而无显式裁定。
+  - 来源：`docs/language-thought/cross-layer-contract.md`
+  - 依赖：—；被引用：—
+- [失败案例反向修正机制](../../../docs/failure_typology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-e8a56edc06377dcd / 失败案例反向修正机制
+  - 来源：`docs/failure_typology.md`
+  - 依赖：—；被引用：—
 - [失败案例反向修正机制缺失](../../../docs/structural_gap_audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ec280231d1e66691 / 失败案例反向修正机制缺失
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c985f47475cf68e6 / 这与“徽宗完全不懂政治”是两回事。一个人可以很懂得如何安排人、物、仪式和形象，却仍然不懂得如何让自己的安排接受坏消息。技巧越高，可能越能把短期成功组织成证据；也可能越难分辨，成功究竟来自世界的配合，还是来自系统只让成功被看见。
   - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
-  - 依赖：—；被引用：—
-- [这些跨域同构的案例，是系统底层逻辑的必然。](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-d8bd76d66a812c8c / 这些跨域同构的案例，是系统底层逻辑的必然。
-  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
-  - 依赖：—；被引用：—
-- [这句话之所以重要，不是因为它强势，而是因为它把一个经常被混在一起的问题拆开了。一个人擅长做事，不等于她自动拥有决定权。一个人被角色需要，不等于她已经以自己的名字存在。真正让主体性重新长出来的，不是别人夸你辛苦，也不是别人承认你能干，而是你开](../../../outputs/stories/20260712-disobedience-subjectivity/story-longform.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e792dd9aa2403dd4 / 这句话之所以重要，不是因为它强势，而是因为它把一个经常被混在一起的问题拆开了。一个人擅长做事，不等于她自动拥有决定权。一个人被角色需要，不等于她已经以自己的名字存在。真正让主体性重新长出来的，不是别人夸你辛苦，也不是别人承认你能干，而是你开
-  - 来源：`outputs/stories/20260712-disobedience-subjectivity/story-longform.md`
-  - 依赖：—；被引用：—
-- [这是 Q26 点火分析的仓库公开副本，不是史学定论、项目当前真值或已完成的外部历史核验。报告把笔记拆为来源、命题、论证、模型、证据、验证、解释和发布边界，并把最强解释降格为可被外部材料检验的机制候选。](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f73906865b89c873 / 这是 Q26 点火分析的仓库公开副本，不是史学定论、项目当前真值或已完成的外部历史核验。报告把笔记拆为来源、命题、论证、模型、证据、验证、解释和发布边界，并把最强解释降格为可被外部材料检验的机制候选。
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—

@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [If upstream objects D_{T35} exist, compose F_{T35}=N\(⊕_{g∈D_{T35}} g\); otherwise treat F_{T35} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d8d9c5240218d35c / If upstream objects D_{T35} exist, compose F_{T35}=N\(⊕_{g∈D_{T35}} g\); otherwise treat F_{T35} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T35；被引用：—
 - [If upstream objects D_{T36} exist, compose F_{T36}=N\(⊕_{g∈D_{T36}} g\); otherwise treat F_{T36} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-70c31959335f5f90 / If upstream objects D_{T36} exist, compose F_{T36}=N\(⊕_{g∈D_{T36}} g\); otherwise treat F_{T36} as an axiom seed.
@@ -1317,6 +1312,11 @@
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is the Task138 branch Current projection while the formal baseline rem](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fad12f792ce6c0f0 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is the Task138 branch Current projection while the formal baseline rem
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is the Task139 Current projection from formal main baseline `12205be8a](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d4edfe209cc1d44f / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is the Task139 Current projection from formal main baseline `12205be8a
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [main_state: CURRENT_WITH_OPEN_OBLIGATIONS; formal main remains at the verified Task135 baseline `3acf15ea4c1b1c27eb6e8b9](../../../STATE-CHANGELOG.md)

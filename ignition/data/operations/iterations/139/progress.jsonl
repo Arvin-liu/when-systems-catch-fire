@@ -1,0 +1,14 @@
+{"task_id":"IGNITION-20260825-139","step":"00","status":"PASS","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step00-baseline-audit.json"],"next_step":"01"}
+{"task_id":"IGNITION-20260825-139","step":"01","status":"PASS","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step01-ledger-migration-plan.json"],"next_step":"02"}
+{"task_id":"IGNITION-20260825-139","step":"02","status":"PASS","current_iteration_id":139,"outputs":[],"next_step":"03"}
+{"task_id":"IGNITION-20260825-139","step":"03","status":"PASS","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step03-durable-capture-transport.json"],"next_step":"04"}
+{"task_id":"IGNITION-20260825-139","step":"04","status":"PASS","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step04-context-loss-fault-matrix.json"],"next_step":"05"}
+{"task_id":"IGNITION-20260825-139","step":"05","status":"PASS","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step05-historical-attempt-import.json"],"next_step":"06"}
+{"task_id":"IGNITION-20260825-139","step":"06","status":"PASS","current_iteration_id":139,"outputs":[],"next_step":"07"}
+{"task_id":"IGNITION-20260825-139","step":"07","status":"PASS","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step07-current-state-sync.json"],"next_step":"08"}
+{"task_id":"IGNITION-20260825-139","step":"08","status":"PASS","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step08-live-observation-semantic-gate.json"],"next_step":"09"}
+{"task_id":"IGNITION-20260825-139","step":"09","status":"PASS","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step09-local-executor-census-and-selection.json"],"next_step":"10"}
+{"task_id":"IGNITION-20260825-139","step":"10","status":"PASS","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step10-live-admission.json"],"next_step":"11"}
+{"task_id":"IGNITION-20260825-139","step":"11","status":"RECORDED_FAIL_CLOSED","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step11-live-attempt.json"],"next_step":"12"}
+{"task_id":"IGNITION-20260825-139","step":"12","status":"PASS_FAIL_CLOSED","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step12-independent-validation.json"],"next_step":"13"}
+{"task_id":"IGNITION-20260825-139","step":"13","status":"PASS","current_iteration_id":139,"outputs":["ignition/data/operations/iterations/139/step13-targeted-regression.json"],"next_step":"14"}

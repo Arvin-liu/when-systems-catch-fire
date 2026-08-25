@@ -86,8 +86,6 @@
 - [分开；版本、计数和 live ceiling 以 generated Current Snapshot 与 Current Facts 投影为准。](./cards/part-001.md#asset-nfc-79f739fc37a3efbd) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-79f739fc37a3efbd`
 <a id="asset-nfc-7ba5ae6b5efe40a7"></a>
 - [点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。](./cards/part-001.md#asset-nfc-7ba5ae6b5efe40a7) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-7ba5ae6b5efe40a7`
-<a id="asset-nfc-7c3ee8deab1faa31"></a>
-- [claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production re](./cards/part-001.md#asset-nfc-7c3ee8deab1faa31) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-7c3ee8deab1faa31`
 <a id="asset-nfc-7cc4e23e0d003f8f"></a>
 - [任务 114 已将 L6 `之元写作法` `0.5.0` 收口为当前能力；`0.4.0`、`0.3.0` 保留为历史已合并版本。交接时必须区分外部输入与点火增量输出，后者保存 canonical 路径／ID、生成任务、版本、claim ce](./cards/part-001.md#asset-nfc-7cc4e23e0d003f8f) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-7cc4e23e0d003f8f`
 <a id="asset-nfc-7d491e8a66bfebe6"></a>
@@ -103,7 +101,7 @@
 <a id="asset-nfc-921e43a466f461f8"></a>
 - [非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不](./cards/part-001.md#asset-nfc-921e43a466f461f8) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-921e43a466f461f8`
 <a id="asset-nfc-9379ce5377b8455f"></a>
-- [Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The](./cards/part-002.md#asset-nfc-9379ce5377b8455f) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-9379ce5377b8455f`
+- [Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The](./cards/part-001.md#asset-nfc-9379ce5377b8455f) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-9379ce5377b8455f`
 <a id="asset-nfc-996c4e8631d40356"></a>
 - [D220 完全统一不可能定理](./cards/part-002.md#asset-nfc-996c4e8631d40356) — `NONFUNCTION_CLAIM` · `HISTORICAL_ONLY` · `NFC-996c4e8631d40356`
 <a id="asset-nfc-a1a28b3a56bcb64b"></a>
@@ -144,12 +142,14 @@
 - [The retired function and case tables are preserved only through the migration manifest, Git history and canonical regist](./cards/part-002.md#asset-nfc-d64522bd6b0c9ee7) — `NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS` · `NFC-d64522bd6b0c9ee7`
 <a id="asset-nfc-dd395b512a59af63"></a>
 - [其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。](./cards/part-002.md#asset-nfc-dd395b512a59af63) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-dd395b512a59af63`
+<a id="asset-nfc-de10f2ada4964649"></a>
+- [`UNRECOVERED`。当前结论由 ledger-derived projection 给出：不是](./cards/part-002.md#asset-nfc-de10f2ada4964649) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-de10f2ada4964649`
 <a id="asset-nfc-de2dafc4a06528aa"></a>
 - [Iteration method 1.3.0 and system maps 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0](./cards/part-002.md#asset-nfc-de2dafc4a06528aa) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-de2dafc4a06528aa`
 <a id="asset-nfc-de320ba9d14281ee"></a>
 - [方法 `1.3.0` 与系统图 `0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Histor](./cards/part-002.md#asset-nfc-de320ba9d14281ee) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-de320ba9d14281ee`
-<a id="asset-nfc-e01c28ab6e18083d"></a>
-- [CURRENT_SNAPSHOT claim_ceiling="Deterministic repository-local Current projection only; no Owner authority, external tru](./cards/part-002.md#asset-nfc-e01c28ab6e18083d) — `NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION` · `NFC-e01c28ab6e18083d`
+<a id="asset-nfc-e9612969179efbcb"></a>
+- [R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s](./cards/part-002.md#asset-nfc-e9612969179efbcb) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-e9612969179efbcb`
 <a id="asset-nfc-ea55d13b7ba7aeff"></a>
 - [\[任务 106 合并后真相传播与当前真相调和\]\(../ITERATION.md\)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。](./cards/part-002.md#asset-nfc-ea55d13b7ba7aeff) — `NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR` · `NFC-ea55d13b7ba7aeff`
 <a id="asset-nfc-ebfd48dc0e2de71c"></a>

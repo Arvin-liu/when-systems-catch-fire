@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0047-T37-Φ_QG极小点精确位置.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0607874c32055cb7 / 已迁移的历史函数来源/0047-T37-Φ_QG极小点精确位置.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T37；被引用：—
 - [已迁移的历史函数来源/0048-T38-极值点-极小点分离定理.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-88f8820bfa5a94d4 / 已迁移的历史函数来源/0048-T38-极值点-极小点分离定理.md
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-9388b9f24afeee6c / 已迁移的历史函数来源/0543-T44-元层面收敛与子系统展开冲突函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T44；被引用：—
-- [已迁移的历史函数来源/0544-T45-外部冲击与系统价值归零函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2dffc3035793dad5 / 已迁移的历史函数来源/0544-T45-外部冲击与系统价值归零函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T45；被引用：—

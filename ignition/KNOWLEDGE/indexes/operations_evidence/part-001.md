@@ -1044,6 +1044,11 @@
   - 可搜索名称：IMPLICIT-6DF1244E0F4E1F5D / # Gate Semantics \(022 frozen\) / IMPLICIT-6DF1244E0F4E1F5D
   - 来源：`canonical/docs/gate-semantics.md`
   - 依赖：—；被引用：—
+- [# IGNITION-139 Step 03 — Durable capture before model context](../../../reports/operations/ignition-139-step03-durable-capture-transport.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9ADF7AD4A431C625 / # IGNITION-139 Step 03 — Durable capture before model context / IMPLICIT-9ADF7AD4A431C625
+  - 来源：`reports/operations/ignition-139-step03-durable-capture-transport.md`
+  - 依赖：—；被引用：—
 - [# IGNITION-20260816-122 Federation R1 Progress](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BE8F655E45B6CCA2 / # IGNITION-20260816-122 Federation R1 Progress / IMPLICIT-BE8F655E45B6CCA2
@@ -1088,6 +1093,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1A64B09FA32139E0 / # IGNITION-20260824-138 — Step 10 Independent OS Validation Gate / IMPLICIT-1A64B09FA32139E0
   - 来源：`reports/operations/ignition-138-step10-independent-validation-gate.md`
+  - 依赖：—；被引用：—
+- [# IGNITION-20260825-139 Step 08 — Live-observation semantic gate](../../../reports/operations/ignition-139-step08-live-observation-semantic-gate.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-78D20EE068DECD7D / # IGNITION-20260825-139 Step 08 — Live-observation semantic gate / IMPLICIT-78D20EE068DECD7D
+  - 来源：`reports/operations/ignition-139-step08-live-observation-semantic-gate.md`
   - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1414,6 +1424,11 @@
   - 可搜索名称：IMPLICIT-A846131BDFD112F1 / ## Function OS 的边界也必须保留 / IMPLICIT-A846131BDFD112F1
   - 来源：`docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md`
   - 依赖：—；被引用：—
+- [## Gates](../../../reports/operations/ignition-139-step07-current-state-sync.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AA69EAE47C2AAB80 / ## Gates / IMPLICIT-AA69EAE47C2AAB80 / IMPLICIT-9C08BBED1A4380A8
+  - 来源：`reports/operations/ignition-139-step07-current-state-sync.md`
+  - 依赖：—；被引用：—
 - [## INDEX / 总览可见性](../../../outputs/audit/teacher-competition-index-visibility-check-20260708.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1280E6BB621CDD00 / ## INDEX / 总览可见性 / IMPLICIT-1280E6BB621CDD00 / IMPLICIT-9B87124205FBD2ED
@@ -1514,9 +1529,29 @@
   - 可搜索名称：IMPLICIT-D46EE4C7E7E779DD / ## Model: qclaw/pool-glm-5.2-night \| Thinking: high / IMPLICIT-D46EE4C7E7E779DD
   - 来源：`reports/external-research/121b-fulltext-batch-report.md`
   - 依赖：—；被引用：—
+- [## Next gate](../../../reports/operations/ignition-139-step07-current-state-sync.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-225FD3F7FCDDD515 / ## Next gate / IMPLICIT-225FD3F7FCDDD515 / IMPLICIT-35362EB97A12CEAD
+  - 来源：`reports/operations/ignition-139-step07-current-state-sync.md`
+  - 依赖：—；被引用：—
+- [## Next gate](../../../reports/operations/ignition-139-step10-live-admission.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-35362EB97A12CEAD / ## Next gate / IMPLICIT-35362EB97A12CEAD / IMPLICIT-225FD3F7FCDDD515
+  - 来源：`reports/operations/ignition-139-step10-live-admission.md`
+  - 依赖：—；被引用：—
+- [## Next gate](../../../reports/operations/ignition-139-step09-local-executor-census-and-selection.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-50DDB08561758931 / ## Next gate / IMPLICIT-50DDB08561758931 / IMPLICIT-225FD3F7FCDDD515
+  - 来源：`reports/operations/ignition-139-step09-local-executor-census-and-selection.md`
+  - 依赖：—；被引用：—
+- [## Next gate](../../../reports/operations/ignition-139-step08-live-observation-semantic-gate.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5BAA5213B547D431 / ## Next gate / IMPLICIT-5BAA5213B547D431 / IMPLICIT-225FD3F7FCDDD515
+  - 来源：`reports/operations/ignition-139-step08-live-observation-semantic-gate.md`
+  - 依赖：—；被引用：—
 - [## Next gate](../../../reports/operations/ignition-138-step12-current-state-sync.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-94E646EC25ADB449 / ## Next gate / IMPLICIT-94E646EC25ADB449
+  - 可搜索名称：IMPLICIT-94E646EC25ADB449 / ## Next gate / IMPLICIT-94E646EC25ADB449 / IMPLICIT-225FD3F7FCDDD515
   - 来源：`reports/operations/ignition-138-step12-current-state-sync.md`
   - 依赖：—；被引用：—
 - [## nfc-a6b80fca608c8c8f — This iteration does not deep-review all 2,033 discovered assets, prove the census exhaustive outside tracked textual Git](../../../analysis/corpus-relation/cluster_source_briefs/C004.md)
@@ -2467,40 +2502,5 @@
 - [### \[#674｜导数连续性×双向动力学验证\]\(docs/zh/cases/items/C-0674.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0B8BB9AF2C343B2B / ### \[#674｜导数连续性×双向动力学验证\]\(docs/zh/cases/items/C-0674.md\) / IMPLICIT-0B8BB9AF2C343B2B
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#675｜公理化体系外层补齐×定理层验证\]\(docs/zh/cases/items/C-0675.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C3970A872372F469 / ### \[#675｜公理化体系外层补齐×定理层验证\]\(docs/zh/cases/items/C-0675.md\) / IMPLICIT-C3970A872372F469
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#78｜可选集双向动力学\]\(docs/zh/cases/items/C-0078.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-63D7980F3173957B / ### \[#78｜可选集双向动力学\]\(docs/zh/cases/items/C-0078.md\) / IMPLICIT-63D7980F3173957B
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#89｜遮蔽-补偿-成本三角 / obscuration-补偿-成本三角\]\(docs/zh/cases/items/C-0089.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-929C91FC9D6BFDD4 / ### \[#89｜遮蔽-补偿-成本三角 / obscuration-补偿-成本三角\]\(docs/zh/cases/items/C-0089.md\) / IMPLICIT-929C91FC9D6BFDD4
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#90｜结构保守性元定理\]\(docs/zh/cases/items/C-0090.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-77947EA2045A8510 / ### \[#90｜结构保守性元定理\]\(docs/zh/cases/items/C-0090.md\) / IMPLICIT-77947EA2045A8510
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#91｜倒U型统一生成定理\]\(docs/zh/cases/items/C-0091.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7BE72F57A31EDFD8 / ### \[#91｜倒U型统一生成定理\]\(docs/zh/cases/items/C-0091.md\) / IMPLICIT-7BE72F57A31EDFD8
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[Dxx｜ \]\(docs/zh/functions/items/Dxx.md\)](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C880A3AFA931889A / ### \[Dxx｜ \]\(docs/zh/functions/items/Dxx.md\) / IMPLICIT-C880A3AFA931889A
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [### \[MF-0001｜正向自举通道\]\(docs/zh/functions/meta/items/MF-0001.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3C28D5939C159BE2 / ### \[MF-0001｜正向自举通道\]\(docs/zh/functions/meta/items/MF-0001.md\) / IMPLICIT-3C28D5939C159BE2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

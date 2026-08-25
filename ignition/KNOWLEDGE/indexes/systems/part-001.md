@@ -1139,6 +1139,11 @@
   - 可搜索名称：NFC-7483adc69161e35b / `ignition/tools/foundation/validate_repository_path_classification.py` explicitly defines `classification-manifest.jsonl
   - 来源：`reports/operations/ignition-134-step00-residual-archaeology.md`
   - 依赖：—；被引用：—
+- [`IN_PROGRESS` because Steps08–15 are still open.](../../../reports/operations/ignition-139-step07-current-state-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-02ffa1a325602588 / `IN_PROGRESS` because Steps08–15 are still open.
+  - 来源：`reports/operations/ignition-139-step07-current-state-sync.md`
+  - 依赖：—；被引用：—
 - [`incremental_execution --generates / repository_dependency--> iteration` — declared repository materialization relation](../../../reports/operations/121Q32I-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b922630dbb357073 / `incremental_execution --generates / repository_dependency--> iteration` — declared repository materialization relation
@@ -1698,6 +1703,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-81855012e80e69d7 / because its current surface is the most independently enforceable: JSONL and
   - 来源：`reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md`
+  - 依赖：—；被引用：—
+- [because no auth-source route was available. This is the Step139 split-brain to](../../../reports/operations/ignition-139-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-df9dcc0ab5934e9a / because no auth-source route was available. This is the Step139 split-brain to
+  - 来源：`reports/operations/ignition-139-step00-baseline-audit.md`
   - 依赖：—；被引用：—
 - [because the observed `agent --help` did not prove those operations.](../../../docs/architecture/openclaw-adapter-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2492,15 +2502,5 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M34 / data/external-research/088-external-source-atlas-medium.jsonl / M34 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M35 / data/external-research/088-external-source-atlas-medium.jsonl / M35 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M36 / data/external-research/088-external-source-atlas-medium.jsonl / M36 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

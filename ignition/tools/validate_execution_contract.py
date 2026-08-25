@@ -83,6 +83,7 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
             baseline.get("origin_main_sha")
             or baseline.get("baseline_sha")
             or baseline.get("formal_head_sha")
+            or baseline.get("formal_origin_main_expected")
         )
         if expected_baseline and contract.get("formal_baseline", {}).get("sha") != expected_baseline:
             errors.append("formal baseline must remain the verified current-task starting main SHA")

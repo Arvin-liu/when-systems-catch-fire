@@ -100,6 +100,12 @@ SELF_EXCLUDES = {
     # schema are auditable operation artifacts, not upstream claim sources.
     "reports/operations/ignition-123-nightshift-progress.md",
     "schemas/operations/step12-closure-r1.schema.json",
+    # Task 139 Step13 progress and targeted-regression receipt/report are
+    # provenance-only operation records; excluding them prevents receipt text
+    # from re-entering the canonical claim registry.
+    "data/operations/iterations/139/progress.jsonl",
+    "data/operations/iterations/139/step13-targeted-regression.json",
+    "reports/operations/ignition-139-step13-targeted-regression.md",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
@@ -144,6 +150,16 @@ NON_AUTHORITATIVE_PREFIXES = (
 EXPLICIT_IMPORTS = {
     "data/foundation/claims/claims.jsonl",
 }
+
+# Compiler-owned Current Snapshot blocks are derived navigation output, not
+# upstream claim text.  Keep their newlines so source anchors remain stable,
+# while preventing the generated registry/counts from feeding back into the
+# next nonfunction-claim generation pass.
+CURRENT_SNAPSHOT_BLOCK = re.compile(
+    r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n"
+    r".*?<!-- CURRENT-SNAPSHOT:END -->\n?",
+    re.DOTALL,
+)
 
 SIGNALS = re.compile(
     r"(?:theorem|lemma|axiom|law|principle|proof|proved|verified|validated|solved|"
@@ -268,6 +284,10 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
         raw = None
     if raw is None:
         return [], "EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE"
+    raw = CURRENT_SNAPSHOT_BLOCK.sub(
+        lambda match: "".join("\n" if character == "\n" else " " for character in match.group(0)),
+        raw,
+    )
     fragments: list[dict] = []
     if path in EXPLICIT_IMPORTS:
         return fragments, "EXPLICIT_CANONICAL_IMPORT"

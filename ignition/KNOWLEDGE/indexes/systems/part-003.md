@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [On the paper's Poisson, Darcy, Burgers and Navier-Stokes datasets, neural-operator variants are evaluated as learned PDE](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-21b4db177fa11770 / On the paper's Poisson, Darcy, Burgers and Navier-Stokes datasets, neural-operator variants are evaluated as learned PDE
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [One retained LoRA module per task and the learned routers are explicit reusable artifacts.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fc9d4f973c12b33a / One retained LoRA module per task and the learned routers are explicit reusable artifacts.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [Only `system_map_projection` is currently automatic: its deterministic producer materializes both the JSON projection an](../../../docs/architecture/incremental-execution.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ec30b440216281ca / Only `system_map_projection` is currently automatic: its deterministic producer materializes both the JSON projection an
@@ -193,6 +203,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
   - 可搜索名称：Probabilistic System Dynamics / 概率—系统动力学 / probabilistic-system-dynamics
   - 来源：`docs/architecture/probabilistic-system-dynamics.md`
+  - 依赖：—；被引用：—
+- [process result because `live_dispatch_calls=0`; it is the last public-probe](../../../reports/operations/ignition-139-step11-live-attempt.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b5ed28e47fa6faa / process result because `live_dispatch_calls=0`; it is the last public-probe
+  - 来源：`reports/operations/ignition-139-step11-live-attempt.md`
   - 依赖：—；被引用：—
 - [Program examples and cited prior systems show artifact shape, while this paper releases no synthesized scientific progra](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1249,9 +1264,9 @@
   - 可搜索名称：NFC-e56563c8eb6949c1 / The projection sources are \[`current-system-identity.json`\]\(../../data/architecture/current-system-identity.json\),
   - 来源：`reports/operations/ignition-129-step20-current-sync.md`
   - 依赖：—；被引用：—
-- [The provider-neutral live bridge and the Task138 workspace/runtime-scratch separation are implemented, but no validated](../../../data/architecture/current-system-identity.json)
+- [The provider-neutral live bridge and durable host-side capture are implemented, but no validated live completion was obs](../../../data/architecture/current-system-identity.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1cd07d24afd87418 / The provider-neutral live bridge and the Task138 workspace/runtime-scratch separation are implemented, but no validated
+  - 可搜索名称：NFC-38b9bc807eb6a9b3 / The provider-neutral live bridge and durable host-side capture are implemented, but no validated live completion was obs
   - 来源：`data/architecture/current-system-identity.json`
   - 依赖：—；被引用：—
 - [The public page mechanism is `.github/workflows/pages.yml`: it copies the root `README.md` into `site/index.md`, builds](../../../reports/operations/121Q25-front-door-audit.md)
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f2fd5d5daa5ead5f / \| C-05 \| Multiscale causal fabric edge-case \| DEFERRED \| 0.50 \| Internal-consistency only \(not external evidence, §3.5\).
   - 来源：`evidence-program/registry/candidate-portfolio.md`
-  - 依赖：—；被引用：—
-- [\| C-07 \| 1112 年瑞鹤事件与《瑞鹤图》把自然现象转成宫廷政治图像 \| `SUPPORTED_WITH_SCOPE` \| 以“登记、绘制、题诗、公开解释”的机制写；不采用驯鹤说。 \|](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9fce450baeb93a84 / \| C-07 \| 1112 年瑞鹤事件与《瑞鹤图》把自然现象转成宫廷政治图像 \| `SUPPORTED_WITH_SCOPE` \| 以“登记、绘制、题诗、公开解释”的机制写；不采用驯鹤说。 \|
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| C-0807 \| 双机制具象 \| 入案例表 \| 无同构案例 \| 个案非普遍 \| 单篇 pending \| 入案例表 \|](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-11aabfa71e2f103f / \| C-0807 \| 双机制具象 \| 入案例表 \| 无同构案例 \| 个案非普遍 \| 单篇 pending \| 入案例表 \|
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [\| C-13 \| 道教为百姓提供普遍的治病、求子、升官与防疫服务 \| `NOT_VERIFIED` \| `OMITTED_FROM_FINAL`，只保留“仪式可把不确定性变成可执行步骤”的机制性讨论。 \|](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cef31a4da0c4a7d3 / \| C-13 \| 道教为百姓提供普遍的治病、求子、升官与防疫服务 \| `NOT_VERIFIED` \| `OMITTED_FROM_FINAL`，只保留“仪式可把不确定性变成可执行步骤”的机制性讨论。 \|
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
   - 依赖：—；被引用：—

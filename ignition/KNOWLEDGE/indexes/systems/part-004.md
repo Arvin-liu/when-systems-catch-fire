@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| C-07 \| 1112 年瑞鹤事件与《瑞鹤图》把自然现象转成宫廷政治图像 \| `SUPPORTED_WITH_SCOPE` \| 以“登记、绘制、题诗、公开解释”的机制写；不采用驯鹤说。 \|](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9fce450baeb93a84 / \| C-07 \| 1112 年瑞鹤事件与《瑞鹤图》把自然现象转成宫廷政治图像 \| `SUPPORTED_WITH_SCOPE` \| 以“登记、绘制、题诗、公开解释”的机制写；不采用驯鹤说。 \|
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| C-0807 \| 双机制具象 \| 入案例表 \| 无同构案例 \| 个案非普遍 \| 单篇 pending \| 入案例表 \|](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-11aabfa71e2f103f / \| C-0807 \| 双机制具象 \| 入案例表 \| 无同构案例 \| 个案非普遍 \| 单篇 pending \| 入案例表 \|
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [\| C-13 \| 道教为百姓提供普遍的治病、求子、升官与防疫服务 \| `NOT_VERIFIED` \| `OMITTED_FROM_FINAL`，只保留“仪式可把不确定性变成可执行步骤”的机制性讨论。 \|](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cef31a4da0c4a7d3 / \| C-13 \| 道教为百姓提供普遍的治病、求子、升官与防疫服务 \| `NOT_VERIFIED` \| `OMITTED_FROM_FINAL`，只保留“仪式可把不确定性变成可执行步骤”的机制性讨论。 \|
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
 - [\| C-15 \| 道教行动主义与富兰克林的自省表格是同一文明机制 \| `SOURCE_REPORTS` \| `OMITTED_FROM_FINAL`，避免跨时代同构冒充证据。 \|](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f4f646862e8f9ce9 / \| C-15 \| 道教行动主义与富兰克林的自省表格是同一文明机制 \| `SOURCE_REPORTS` \| `OMITTED_FROM_FINAL`，避免跨时代同构冒充证据。 \|
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dbdc5961c121f72c / 多尺度机制重构
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [大模型涌现的具体因果判定：**pending**（需要代码、实验、benchmark、可复现评测）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9e34ed971713c921 / 大模型涌现的具体因果判定：**pending**（需要代码、实验、benchmark、可复现评测）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [失败条件：语法方便性改变因果主体、端点、知识路径或反事实而无显式裁定。](../../../docs/language-thought/cross-layer-contract.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-564d247fd8eef5f9 / 失败条件：语法方便性改变因果主体、端点、知识路径或反事实而无显式裁定。
-  - 来源：`docs/language-thought/cross-layer-contract.md`
-  - 依赖：—；被引用：—
-- [失败案例反向修正机制](../../../docs/failure_typology.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e8a56edc06377dcd / 失败案例反向修正机制
-  - 来源：`docs/failure_typology.md`
   - 依赖：—；被引用：—
