@@ -2,15 +2,15 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r6-live-observation-reconciliation-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260826-140` (ordinal `140`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260826-140` (ordinal `140`)；current_iteration_boundary: `140` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260826-140`。
-- release_lifecycle: task `IGNITION-20260826-140`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260826-140` (ordinal `140`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260826-140` (ordinal `140`)；current_iteration_boundary: `140` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260826-140`。
+- release_lifecycle: task `IGNITION-20260826-140`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.14.0` Current；historical_map: `0.12.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED`。
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/140/live-current-projection-r2.json`。
 - architecture_counts: `registry=96; visible_nodes=84; visible_edges=89`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260826-140` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `135dc73e173fa464a84843d33d4f318876d0039167c529ba01ed43eeb0393273`。
+- task_lineage: current `IGNITION-20260826-140` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `9b946c262c01d6968481975fb8e472461b814f548833c8208e26fb385580ceb3`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -434,3 +434,15 @@
 - epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Typed observation, reconciliation closure, architecture registration and deterministic projections do not establish external truth, production readiness, Owner acceptance or validated live completion.
 - obligations: complete the fresh executor census, at most two distinct-family live admissions after the retry-safety gate, stop at the first independently validated completion if one occurs, then run exact candidate/fresh-clone natural regressions and the separate publication/witness gates.
 - claim_ceiling: Task140 repository-local architecture registration, typed observation, reconciliation and bounded live-admission evidence only; no external truth, production readiness, Owner acceptance, publication or epistemic acceptance is inferred.
+
+## 2026-08-26 — IGNITION-20260826-140 — terminal task with open live obligation
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task139 baseline until the separate ordinary fast-forward and remote-ref observation. This append-only entry records Task140 repository-local terminal semantics, not formal publication.
+- delta: terminalizes the Task140 architecture/current transition after historical reconciliation closure and the adversarial boundary matrix. Task completion is now classified residual closure; the separate live invocation obligation remains OPEN because no exact `LIVE_READONLY_VALIDATED_COMPLETION` exists.
+- current_formal_task: `IGNITION-20260826-140` is `COMPLETED_WITH_CLASSIFIED_RESIDUALS` and terminal with formal ordinal `140`; `current_iteration_boundary=140` remains only the deprecated compatibility alias, and Task140 remains the latest architecture-changing task with map `0.14.0` Current.
+- live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts and two observation-incomplete records. Task140's probe/transport return codes are both `0`, its observed live process return code is `1`, capture is complete, and no structured result or validator PASS exists.
+- reconciliation_boundary: the three historical retry-safety blockers are terminalized; terminalization preserves unknown external effect and does not close the live obligation. Projection-derived next action remains `RUN_DYNAMIC_EXECUTOR_ADMISSION`; a future attempt requires fresh executor admission and fresh identity.
+- task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; the successor lineage retains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task140 is the terminal current successor while `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged.
+- epistemic_state: terminal task status, typed observation, adversarial negative evidence and deterministic projections do not establish external truth, production readiness, Owner acceptance, validated live completion or epistemic acceptance.
+- obligations: complete Step15 natural candidate/fresh-clone regression, then ordinary fast-forward main and the independent 1111 publication witness; preserve the open live obligation and stop immediately if a later attempt forms the first exact validated completion.
+- claim_ceiling: Task140 repository-local terminal architecture/current and fail-closed live-observation evidence only; no formal publication, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.

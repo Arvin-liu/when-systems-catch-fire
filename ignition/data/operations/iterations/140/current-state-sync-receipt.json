@@ -16,7 +16,7 @@
       "path": ".github/README.md",
       "decision": "CHANGE",
       "reason": "The front door must identify Task140, the registered Observation / Reconciliation Plane, and the still-open live-completion ceiling.",
-      "evidence": "Generated Current Snapshot, Task140 identity contract and typed live projection digest 9402e78fe5be929444592061df04a87ca64b5b62da69b2e76fb0afd7c7bf11b2."
+      "evidence": "Generated Current Snapshot, Task140 identity contract and typed live projection digest b1f2802cb6bf17d73e6f775f1bc544c10f4311c9a431af60945109c77b49c1f3."
     },
     {
       "surface_id": "project-current-state",
@@ -85,7 +85,7 @@
       "surface_id": "state-changelog",
       "path": "ignition/STATE-CHANGELOG.md",
       "decision": "CHANGE",
-      "reason": "The append-only log must record the Task140 architecture transition, typed outcome semantics and unknown-effect reconciliation ceiling.",
+      "reason": "The append-only log must record the Task140 architecture transition, typed outcome semantics, unknown-effect reconciliation ceiling and terminal task/open live-obligation distinction.",
       "evidence": "Appended Task140 delta plus deterministic Current Snapshot and reconciliation-event head 02027b3ebeb6a946333bc7ff807594083cb638753a81c267aa1601a5884cb10b."
     }
   ],
@@ -97,7 +97,7 @@
   "state_changelog_delta": {
     "decision": "CHANGE",
     "reason": "Task140 appends the architecture transition and preserves unknown external effect after historical reconciliation closure.",
-    "evidence": "The new append-only Task140 section names the three terminal reconciliation states and the dynamic-admission boundary."
+    "evidence": "The append-only Task140 entries name the three terminal reconciliation states, the terminal task/open live-obligation distinction and the dynamic-admission boundary."
   },
   "changed_paths": [
     ".github/README.md",
@@ -133,5 +133,5 @@
   ],
   "identity_contract_changed": true,
   "surface_sync_complete": true,
-  "claim_ceiling": "Task140 repository-local architecture identity, typed observation, reconciliation and Current-surface synchronization evidence only; no validated live completion, external truth, production readiness, Owner acceptance, formal publication or epistemic acceptance is inferred."
+  "claim_ceiling": "Task140 repository-local architecture identity, typed observation, reconciliation, terminal task/open live-obligation semantics and Current-surface synchronization evidence only; no validated live completion, external truth, production readiness, Owner acceptance, formal publication or epistemic acceptance is inferred."
 }

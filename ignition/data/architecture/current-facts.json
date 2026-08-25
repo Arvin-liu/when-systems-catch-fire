@@ -123,7 +123,7 @@
     },
     "task_lineage": {
       "current_task_id": "IGNITION-20260826-140",
-      "current_task_status": "IN_PROGRESS",
+      "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -177,11 +177,11 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "044ff70c879e3d4e199660c3bfe7f0e88195ff032a64a290841f4a9de3364d2d"
+      "sha256": "8d7e99cc4bcbe6aa0da4c8aa8fa45c075082ec0bae6fc1286a7ce7b921392b46"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "ae67c7057c6a060f5a6353c4f799fc9ddd899d06c91d159943daa0f433bcc22a"
+      "sha256": "5c10322fbce26e9969aa1a4393c94812abcff28f89ee1fea7aa886c839c28743"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
