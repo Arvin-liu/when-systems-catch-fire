@@ -1,0 +1,140 @@
+{
+  "schema_version": "ignition-140-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260826-140",
+  "step": "00",
+  "baseline": {
+    "formal_origin_main_expected": "ff0adcc2bd736217691bc7c24db82df7577d12e8",
+    "formal_origin_main_observed": "ff0adcc2bd736217691bc7c24db82df7577d12e8",
+    "formal_remote_main_observed": "ff0adcc2bd736217691bc7c24db82df7577d12e8",
+    "formal_worktree": "codex/ignition-140-observation-plane-reconciliation-live-completion-r1-20260826",
+    "control_ref": "origin/relay/current@86df72bea772b61bea5e3c3837e48a2c46f06c76",
+    "supplied_directory_is_git_worktree": false,
+    "live_inference_started": false
+  },
+  "preflight": {
+    "current_facts": "PASS",
+    "current_snapshot": "PASS",
+    "current_task_lineage": "PASS",
+    "current_volatile_fact_registry": "PASS",
+    "current_state_sync": "PASS",
+    "current_surface_semantics": "PASS",
+    "current_projection_determinism": "PASS_TWO_BYTE_IDENTICAL_PASSES",
+    "targeted_tests": {
+      "tests": 46,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "command_environment": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_transport ignition.tests.test_live_execution ignition.tests.test_event_ledger ignition.tests.test_current_state_sync ignition.tests.test_current_surface_semantics ignition.tests.test_live_attempt_ledger ignition.tests.test_live_current_projection ignition.tests.test_live_observation_semantics"
+    }
+  },
+  "current_projection_before_reconciliation": {
+    "source": "ignition/data/operations/iterations/139/live-current-projection-r1.json",
+    "total_attempts": 5,
+    "validated_completion_count": 0,
+    "unreconciled_count": 3,
+    "observation_incomplete_count": 2,
+    "unreconciled_attempt_ids": [
+      "live-hermes-136-initial",
+      "attempt-138-live-02",
+      "attempt-139-live-02"
+    ],
+    "next_action": "RECONCILE_UNRECOVERED_ATTEMPTS",
+    "obligation": "LIVE_EXTERNAL_INVOCATION",
+    "obligation_state": "OPEN",
+    "projection_digest": "2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73"
+  },
+  "semantic_audit": {
+    "task139_identity_impact_observed": "PRESENTATION_ONLY",
+    "task139_identity_impact_finding": "UNDER_CLASSIFIED_CONTROL_PLANE_CHANGE",
+    "task139_changed_semantics": [
+      "process_transport",
+      "durable_capture_ownership",
+      "append_only_live_attempt_ledger",
+      "ledger_derived_current_projection"
+    ],
+    "task139_history_rewrite": false,
+    "task139_sequence4": {
+      "source": "ignition/data/operations/iterations/139/step11-live-attempt.json",
+      "dispatch_id": "dispatch-139-live-02",
+      "attempt_id": "attempt-139-live-02",
+      "public_probe_calls": 2,
+      "live_dispatch_calls": 0,
+      "live_inference_started": false,
+      "capture_capsule_initialized": false,
+      "ledger_state": "OBSERVATION_INCOMPLETE",
+      "ledger_reconciliation_status": "REQUIRES_RECONCILIATION",
+      "raw_record_return_code": 0,
+      "raw_record_return_code_scope": "last public-probe transport value",
+      "live_process_return_code_semantics": "NOT_OBSERVED_AND_MUST_NOT_BE_INFERRED"
+    },
+    "historical_reconciliation_audit": [
+      {
+        "task_id": "IGNITION-20260823-136",
+        "attempt_id": "live-hermes-136-initial",
+        "observed_state": "TIMED_OUT_EFFECT_UNKNOWN",
+        "reconciliation_status": "REQUIRES_RECONCILIATION",
+        "recoverable_evidence": [
+          "historical timeout receipt",
+          "bounded synthetic read-only fixture before/after digest"
+        ],
+        "missing_evidence": [
+          "attempt PID/PGID",
+          "durable disposable workspace path",
+          "durable scratch lifecycle"
+        ],
+        "safe_interpretation": "effect remains unknown; equal workspace digests do not prove no external effect",
+        "source_refs": [
+          "ignition/data/operations/iterations/136/step13-live-execution-receipt.json",
+          "ignition/data/operations/iterations/137/step01-hermes-timeout-reconciliation.json"
+        ]
+      },
+      {
+        "task_id": "IGNITION-20260824-138",
+        "attempt_id": "attempt-138-live-02",
+        "observed_state": "ATTEMPT_HAPPENED_OBSERVATION_INCOMPLETE",
+        "reconciliation_status": "REQUIRES_RECONCILIATION",
+        "recoverable_evidence": [
+          "host recovery observation that dispatch happened",
+          "bounded permission ceiling and no-blind-retry policy"
+        ],
+        "missing_evidence": [
+          "process return code",
+          "structured result",
+          "lease receipt",
+          "workspace before/after result",
+          "durable stdout/stderr capture",
+          "validator input"
+        ],
+        "safe_interpretation": "attempt happened but process/result outcome remains unknown",
+        "source_refs": [
+          "ignition/data/operations/iterations/138/step08-amendment-01-live-codex-reconciliation.json",
+          "ignition/data/operations/iterations/138/step10-independent-validation-gate.json"
+        ]
+      },
+      {
+        "task_id": "IGNITION-20260825-139",
+        "attempt_id": "attempt-139-live-02",
+        "observed_state": "OBSERVATION_INCOMPLETE",
+        "reconciliation_status": "REQUIRES_RECONCILIATION",
+        "recoverable_evidence": [
+          "two public probes",
+          "OS coordinator dispatch preparation",
+          "filesystem-domain preflight failure before capture and process"
+        ],
+        "missing_evidence": [
+          "live process lifecycle",
+          "capture capsule",
+          "structured result",
+          "validator result"
+        ],
+        "safe_interpretation": "CLOSED_NO_LIVE_DISPATCH is eligible once the typed model is in place; probe return 0 is not Agent process success",
+        "source_refs": [
+          "ignition/data/operations/iterations/139/step11-live-attempt.json",
+          "ignition/data/operations/iterations/139/step12-independent-validation.json",
+          "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl"
+        ]
+      }
+    ]
+  },
+  "claim_ceiling": "Repository-local Task140 baseline and semantic audit only; no external truth, validated live completion, production readiness, Owner acceptance or epistemic upgrade is inferred."
+}
