@@ -19,27 +19,26 @@ Steering / Intent / Goal / Obligation R1 记录 Owner/提议来源、Goal 生命
 
 任务身份分成两个稳定角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，publication witness 只观察发布身份，不授予 architecture 或 Owner authority。
 
-Task 138 是 Task 136/137 live bridge 的 runtime-scratch separation continuation，不是新的
-architecture-changing task：Task 136 Hermes timeout 仍是 `OPEN`，没有 blind retry。
-本轮把 task workspace、executor runtime scratch、auth/config source 三域分开：任务工作区
-仍为 disposable read-only，runtime scratch 仅是 attempt-specific 的短命可写空间，已有登录
-状态只允许 read-only reference。修复后的第一次 Codex bounded dispatch 仍在启动阶段失败，
-没有 structured public result，fixture 未变更，也没有进入独立 OS validation；第二次调用因
-无法在不暴露真实 auth/config 写域的前提下建立合规的只读 auth-source 路径而被硬门禁禁止。
-因此 `LIVE_EXTERNAL_INVOCATION` 仍开放，不能把本轮写成 `COMPLETED_VALIDATED`、Goal
-completion 或外部真值。
+Task 139 是 Task 136–138 live bridge 的 durable-observation continuation，不是新的
+architecture-changing task：Task 136 Hermes timeout 与 Task 138 second Codex attempt
+都由 append-only ledger 保持为待和解事实。外部进程证据先进入 host-side durable capture，
+再进入 bounded context；Task138 second dispatch 确实发生，但 outer context overflow 使
+observation incomplete，return code、structured result、lease、workspace 和 validator input
+仍是 `UNRECOVERED`。因此 `LIVE_EXTERNAL_INVOCATION` 仍开放，下一步是 reconciliation，
+不能把本轮写成 `COMPLETED_VALIDATED`、Goal completion 或外部真值。
 
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r5-live-executor-federation-r2`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260824-138` (ordinal `138`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `138` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260824-138`。
-- release_lifecycle: task `IGNITION-20260824-138`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260825-139` (ordinal `139`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `139` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260825-139`。
+- release_lifecycle: task `IGNITION-20260825-139`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
-- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
+- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION`。
+- live_attempt_projection: total `4`；validated `0`；unreconciled `2`；observation-incomplete `1`；obligation `OPEN`；next action `RECONCILE_UNRECOVERED_ATTEMPTS`；source `ignition/data/operations/iterations/139/live-current-projection-r1.json`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260824-138` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `9473928ee5d1dae8f86c343542e5a4a33a84ecaebf8d3b04b6f46f3dbeca327d`。
+- task_lineage: current `IGNITION-20260825-139` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `767cc02a1b250dc0272afdc3b2342e6c60dedfbf8c8c8c5d6389bddb0e302522`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 

@@ -61,12 +61,29 @@
         },
         "federation": {
           "type": "object", "additionalProperties": false,
-          "required": ["adapter_inventory_count", "adapter_ids", "live_status_by_executor", "live_invocation_ceiling", "reference_executor_identity"],
+          "required": ["adapter_inventory_count", "adapter_ids", "live_status_by_executor", "live_invocation_ceiling", "live_attempt_projection", "reference_executor_identity"],
           "properties": {
             "adapter_inventory_count": {"type": "integer", "minimum": 0},
             "adapter_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
             "live_status_by_executor": {"type": "object", "additionalProperties": {"$ref": "#/$defs/nonblank"}},
             "live_invocation_ceiling": {"$ref": "#/$defs/nonblank"},
+            "live_attempt_projection": {
+              "type": "object", "additionalProperties": false,
+              "required": ["source_path", "projection_digest", "total_attempts", "validated_completion_count", "unreconciled_count", "observation_incomplete_count", "current_live_ceiling", "obligation_state", "unreconciled_attempt_ids", "next_action_status", "next_action"],
+              "properties": {
+                "source_path": {"$ref": "#/$defs/nonblank"},
+                "projection_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+                "total_attempts": {"type": "integer", "minimum": 0},
+                "validated_completion_count": {"type": "integer", "minimum": 0},
+                "unreconciled_count": {"type": "integer", "minimum": 0},
+                "observation_incomplete_count": {"type": "integer", "minimum": 0},
+                "current_live_ceiling": {"$ref": "#/$defs/nonblank"},
+                "obligation_state": {"enum": ["OPEN", "CLOSED"]},
+                "unreconciled_attempt_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}},
+                "next_action_status": {"$ref": "#/$defs/nonblank"},
+                "next_action": {"$ref": "#/$defs/nonblank"}
+              }
+            },
             "reference_executor_identity": {"$ref": "#/$defs/nonblank"}
           }
         },

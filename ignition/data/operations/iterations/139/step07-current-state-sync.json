@@ -1,0 +1,73 @@
+{
+  "schema_version": "ignition-139-step07-current-state-sync-r1",
+  "task_id": "IGNITION-20260825-139",
+  "step": "07",
+  "status": "PASS",
+  "current_projection": {
+    "current_formal_task": "IGNITION-20260825-139",
+    "current_formal_task_ordinal": 139,
+    "latest_architecture_changing_task": "IGNITION-20260823-136",
+    "latest_architecture_changing_task_ordinal": 136,
+    "current_iteration_boundary": 139,
+    "identity_impact": "PRESENTATION_ONLY",
+    "identity_epoch": "os-control-plane-r5-live-executor-federation-r2",
+    "current_map_version": "0.13.0",
+    "current_task_status": "IN_PROGRESS",
+    "current_task_terminal": false,
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0,
+    "live_external_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION"
+  },
+  "canonical_live_observation": {
+    "ledger_path": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+    "ledger_head": "6acf6d4dcc55555e8890483e9fe04cfc58ab1eab663eeb06eadb8492b76b3b9e",
+    "projection_path": "ignition/data/operations/iterations/139/live-current-projection-r1.json",
+    "projection_digest": "0bfa042fe6f2ccc64e4b133babf0fdfb220f9aa75367d7458da72598db50aa1a",
+    "total_attempts": 4,
+    "validated_completions": 0,
+    "unreconciled_attempts": 2,
+    "observation_incomplete_attempts": 1,
+    "task138_second_attempt": "DISPATCHED_BUT_OBSERVATION_INCOMPLETE",
+    "return_code_structured_result_lease_workspace_validator": "UNRECOVERED",
+    "next_action": "RECONCILE_UNRECOVERED_ATTEMPTS"
+  },
+  "split_brain_repair": {
+    "canonical_fact": "Task138 second Codex dispatch happened; outer context overflow made observation incomplete.",
+    "current_forbidden_narrative": false,
+    "historical_task138_reports_unchanged": true,
+    "current_projection_source": "ledger-derived"
+  },
+  "projection_gates": {
+    "execution_contract": "PASS",
+    "canonical_current_advancement": "PASS",
+    "current_facts": "PASS",
+    "current_snapshot": "PASS",
+    "current_snapshot_deterministic_check": "PASS",
+    "current_surface_compiler_two_pass": "PASS",
+    "current_surface_semantic_gate": "PASS",
+    "current_task_lineage": "PASS",
+    "current_volatile_fact_registry": "PASS",
+    "current_state_sync_receipt": "PASS",
+    "identity_impact": "PASS_PRESENTATION_ONLY",
+    "system_map_sync": "PASS_NO_CHANGE_WITH_REASON",
+    "publication_authority": "REMOTE_REF_OBSERVATION"
+  },
+  "live_regression": {
+    "tests": 113,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "runtime_scratch_capture_parent_separation": "PASS"
+  },
+  "surface_sync_receipt": "ignition/data/operations/iterations/139/current-state-sync-receipt.json",
+  "generated_surfaces": [
+    ".github/README.md",
+    "ignition/docs/project-current-state.md",
+    "ignition/AI-START-HERE.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/ARCHITECTURE.md",
+    "ignition/llms.txt",
+    "ignition/STATE-CHANGELOG.md"
+  ],
+  "claim_ceiling": "Task139 repository-local Current/Human/AI durable-observation synchronization evidence only; no validated live completion, external truth, production readiness, Owner acceptance, publication or epistemic acceptance is inferred."
+}

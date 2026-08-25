@@ -220,6 +220,7 @@ def build_snapshot() -> dict[str, Any]:
         },
         "active_architecture_overlays": overlays,
         "live_external_ceiling": facts["facts"]["federation"]["live_invocation_ceiling"],
+        "live_attempt_projection": facts["facts"]["federation"]["live_attempt_projection"],
         "architecture_counts": dict(facts["facts"]["architecture"]),
         "claim_ceiling": "Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade."
     }

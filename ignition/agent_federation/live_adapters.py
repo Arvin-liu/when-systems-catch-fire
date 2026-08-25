@@ -102,6 +102,7 @@ class LiveCodexAdapter:
         child_context: LiveChildContext | None = None,
         runtime_scratch_required: bool | None = None,
         runtime_scratch_parent: str | Path | None = None,
+        capture_parent: str | Path | None = None,
         formal_repo: str | Path | None = None,
         control_repo: str | Path | None = None,
         persistent_user_document_roots: Sequence[str | Path] | None = None,
@@ -127,6 +128,22 @@ class LiveCodexAdapter:
         self.runtime_scratch_parent = Path(runtime_scratch_parent).absolute() if runtime_scratch_parent is not None else None
         if self.runtime_scratch_parent is not None and (not self.runtime_scratch_parent.is_absolute() or not self.runtime_scratch_parent.is_dir()):
             raise LiveAdapterError("runtime scratch parent must be an existing absolute directory")
+        if capture_parent is not None and (not isinstance(capture_parent, (str, Path))):
+            raise LiveAdapterError("capture parent must be a path")
+        self.capture_parent = (
+            Path(capture_parent).absolute() if capture_parent is not None
+            else self.runtime_scratch_parent.parent if self.runtime_scratch_parent is not None
+            else None
+        )
+        if self.capture_parent is not None and (
+            not self.capture_parent.is_absolute()
+            or not self.capture_parent.is_dir()
+            or self.capture_parent.is_symlink()
+        ):
+            raise LiveAdapterError("capture parent must be an existing non-symlink absolute directory")
+        if self.runtime_scratch_parent is not None and self.capture_parent is not None:
+            if self.capture_parent.resolve() == self.runtime_scratch_parent.resolve():
+                raise LiveAdapterError("durable capture parent must be separate from runtime scratch parent")
         self.formal_repo = Path(formal_repo or Path(__file__).resolve().parents[2]).resolve()
         self.control_repo = Path(control_repo or "/Users/zhiyuan/Agent 工作区/1111-sync").resolve()
         roots = persistent_user_document_roots
@@ -394,7 +411,7 @@ class LiveCodexAdapter:
                     attempt_id=envelope.attempt_id,
                     executor_id=self.executor_id,
                     adapter_id=self.adapter_id,
-                    parent=self.runtime_scratch_parent,
+                    parent=self.capture_parent,
                     protected_roots=self._protected_roots(),
                 )
             except LiveCaptureError as exc:

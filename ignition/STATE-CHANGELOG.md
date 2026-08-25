@@ -2,14 +2,15 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r5-live-executor-federation-r2`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260824-138` (ordinal `138`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `138` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260824-138`。
-- release_lifecycle: task `IGNITION-20260824-138`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260825-139` (ordinal `139`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260823-136` (ordinal `136`)；current_iteration_boundary: `139` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260825-139`。
+- release_lifecycle: task `IGNITION-20260825-139`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.13.0` Current；historical_map: `0.12.0` Historical。
-- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`。
+- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION`。
+- live_attempt_projection: total `4`；validated `0`；unreconciled `2`；observation-incomplete `1`；obligation `OPEN`；next action `RECONCILE_UNRECOVERED_ATTEMPTS`；source `ignition/data/operations/iterations/139/live-current-projection-r1.json`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260824-138` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `9473928ee5d1dae8f86c343542e5a4a33a84ecaebf8d3b04b6f46f3dbeca327d`。
+- task_lineage: current `IGNITION-20260825-139` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `767cc02a1b250dc0272afdc3b2342e6c60dedfbf8c8c8c5d6389bddb0e302522`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -391,3 +392,17 @@
 - obligations: Hermes reconciliation remains `OPEN`; `LIVE_EXTERNAL_INVOCATION` remains open with ceiling `LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED`; no blind retry, secret copy, config/billing mutation or workspace permission widening occurred. Task138 Step13 targeted regression, Step14 exact candidate full regression, and Step15 fresh-clone/publication/witness gates remain the next reads.
 - stale_knowledge: equal workspace digests and a cleaned runtime scratch do not prove absence of the historical Hermes unknown effect; a startup failure without a structured result is not `COMPLETED_VALIDATED`; the current surfaces and receipts must not be read as external truth or a publication receipt.
 - next_read: read [Task138 execution contract](./data/operations/iterations/138/execution-contract-r1.json), [Step08 dispatch](./data/operations/iterations/138/step08-first-codex-dispatch.json), [Step09 gate](./data/operations/iterations/138/step09-second-gate.json), [Step10 validation gate](./data/operations/iterations/138/step10-independent-validation-gate.json), [Step11 obligation semantics](./data/operations/iterations/138/step11-obligation-semantics.json), then continue with the current task's Step13–Step15 gates.
+
+## 2026-08-25 — IGNITION-20260825-139 — durable live attempt journal and observation projection
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is the Task139 Current projection from formal main baseline `12205be8ad94916a39253e0eba2106bf5da9da12`, not a publication assertion.
+- current_formal_task: `IGNITION-20260825-139` `IN_PROGRESS`; latest architecture-changing task remains `IGNITION-20260823-136`; map remains `0.13.0`; identity impact is `PRESENTATION_ONLY`.
+- delta: host-side durable capture precedes bounded model context; an append-only `LiveAttemptLedger` and deterministic Current projection now carry live-attempt facts into Current surfaces.
+- live_observation: four historical records are canonical: Hermes136 `TIMED_OUT_EFFECT_UNKNOWN` remains open; Codex137 is `FAILED_VALIDATION`; Codex138 first is `STARTUP_FAILURE`; Codex138 second was dispatched but became `OBSERVATION_INCOMPLETE` after outer-context overflow, with return code, structured result, lease receipt, workspace observation and validator input unrecovered.
+- authority_changes: the ledger, capture/projection contracts and Current generators are repository-local observation machinery only; no persistent core component, typed topology relation, identity epoch or map version changed.
+- obligations: reconcile the two unreconciled attempts before any retry; Task139 Step08–Step15 remain open; at most one new bounded live invocation may occur after the durable-observation gates.
+- stale_knowledge: the old Task138 statement that the second invocation was forbidden is historical Task138 knowledge only; it is not the Current execution fact.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged.
+- lineage_status: historical Task125 remains `HISTORICAL_UNEXECUTED_REBASED_INTO_127`; successor Task127 remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; no deferred-current marker is introduced.
+- next_read: read [Task139 execution contract](./data/operations/iterations/139/execution-contract-r1.json), [historical LiveAttemptLedger](./data/operations/iterations/139/live-attempt-ledger.jsonl), [Current live projection](./data/operations/iterations/139/live-current-projection-r1.json), and the Step07 Current-state receipt before continuing the remaining gates.
+- claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projection and bounded executor-observation evidence only; no validated completion, external truth, production readiness, Owner acceptance, publication or epistemic acceptance is inferred.

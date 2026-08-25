@@ -19,6 +19,8 @@ from typing import Any
 
 import validate_current_state_sync as sync
 
+from agent_federation.live_current_projection import validate_projection
+
 try:
     from tools import iteration_boundary, task_identity
 except ImportError:
@@ -39,6 +41,7 @@ LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 MATERIALITY_PATH = ROOT / "data/governance/human-surface/materiality-manifest.json"
 KNOWLEDGE_MANIFEST_PATH = ROOT / "data/governance/knowledge-experience/manifest.json"
 FIRE_SEEDS_PATH = ROOT / "data/publication/fire-seeds/seed-census.json"
+LIVE_CURRENT_PROJECTION_PATH = ROOT / "data/operations/iterations/139/live-current-projection-r1.json"
 
 
 def load_json(path: Path) -> Any:
@@ -133,6 +136,7 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         iteration_boundary.HERE,
         Path(task_identity.__file__).resolve(),
         LIFECYCLE_PATH,
+        LIVE_CURRENT_PROJECTION_PATH,
     }
     for metric in contract["derived_metrics"]:
         paths.add(sync.resolve_repo_path(metric["source_path"]))
@@ -189,11 +193,12 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
     sync_registry = load_json(sync.resolve_repo_path("ignition/data/operations/synchronization-surfaces.json"))
     task_lineage = load_json(sync.resolve_repo_path(contract["current_task_lineage"]["source_path"]))
     steering = load_json(STEERING_PATH)
+    live_projection = validate_projection(load_json(LIVE_CURRENT_PROJECTION_PATH))
     sync_surfaces = sync_registry.get("surfaces", [])
     role_counts = Counter(role for row in sync_surfaces for role in row.get("roles", []))
     executors = inventory.get("executors", [])
     live_statuses = {row["executor_id"]: row.get("live_smoke", {}).get("status", "UNDECLARED") for row in executors}
-    live_ceiling = "NOT_RUN_LIVE_EXTERNAL_INVOCATION" if any(status.startswith("NOT_RUN") for status in live_statuses.values()) else "RECORDED_BOUNDED_PROBES_ONLY"
+    live_ceiling = live_projection["current_live_ceiling"]
     current_ordinal = iteration["current_formal_task_ordinal"]
     architecture_ordinal = iteration["latest_architecture_task_ordinal"]
     live_evidence_paths = [
@@ -229,12 +234,11 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
         receipt_state = receipt.get("state") or live_execution.get("status")
         if executor_id and receipt_state:
             live_statuses[executor_id] = receipt_state
-        result_status = live_execution.get("result", {}).get("status")
-        # Only an explicit bridge ceiling may replace the conservative
-        # inventory default.  A malformed/failed executor receipt is a
-        # per-attempt status, never a new Current completion ceiling.
-        if isinstance(result_status, str) and result_status.startswith("LIVE_BRIDGE_"):
-            live_ceiling = result_status
+        # Historical receipt state is retained for provenance, but the live
+        # Current ceiling is always ledger-derived.  A stale historical result
+        # must never overwrite the durable attempt projection.
+    for executor_id, summary in live_projection["latest_attempt_per_executor"].items():
+        live_statuses[executor_id] = summary["state"]
     residuals = inventory.get("repository_audit", {}).get("residuals", [])
     method_text = sync.resolve_repo_path(contract["current_method"]["source_path"]).read_text(encoding="utf-8")
     method_match = re.search(r"^Current:\s*`([^`]+)`", method_text, re.MULTILINE)
@@ -264,6 +268,19 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "adapter_ids": sorted(row["executor_id"] for row in executors),
             "live_status_by_executor": dict(sorted(live_statuses.items())),
             "live_invocation_ceiling": live_ceiling,
+            "live_attempt_projection": {
+                "source_path": relative(LIVE_CURRENT_PROJECTION_PATH),
+                "projection_digest": live_projection["projection_digest"],
+                "total_attempts": live_projection["counts"]["total_attempts"],
+                "validated_completion_count": live_projection["counts"]["validated_completion_count"],
+                "unreconciled_count": live_projection["counts"]["unreconciled_count"],
+                "observation_incomplete_count": live_projection["counts"]["observation_incomplete_count"],
+                "current_live_ceiling": live_projection["current_live_ceiling"],
+                "obligation_state": live_projection["obligation"]["state"],
+                "unreconciled_attempt_ids": live_projection["obligation"]["unreconciled_attempt_ids"],
+                "next_action_status": live_projection["next_eligible_action"]["status"],
+                "next_action": live_projection["next_eligible_action"]["action"],
+            },
             "reference_executor_identity": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
         },
         "foundation": {
@@ -362,6 +379,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
         f"- Map/method: map `{architecture['current_map_version']}` Current（historical `{architecture['historical_map_version']}`）；layout `{architecture['layout_version']}`；semantic trunk `{architecture['semantic_trunk_version']}` with `{architecture['semantic_trunk_route_steps']}` bounded route stages；method `{iteration['method_version']}` `{iteration['method_status']}`。",
         f"- Packs: `{packs['count']}` packs；`{packs['capability_route_count']}` declared capability routes。",
         f"- Federation: `{federation['adapter_inventory_count']}` adapter inventory entries；live ceiling `{federation['live_invocation_ceiling']}`；local boundary `{federation['reference_executor_identity']}`。",
+        f"- Live attempts: total `{federation['live_attempt_projection']['total_attempts']}`；validated `{federation['live_attempt_projection']['validated_completion_count']}`；unreconciled `{federation['live_attempt_projection']['unreconciled_count']}`；observation-incomplete `{federation['live_attempt_projection']['observation_incomplete_count']}`；obligation `{federation['live_attempt_projection']['obligation_state']}`；next action `{federation['live_attempt_projection']['next_action']}`；source `{federation['live_attempt_projection']['source_path']}`。",
         f"- Foundation: function identity cards `{foundation['function_identity_cards']}`；function quarantine/pending `{foundation['function_quarantine_or_pending']}`；non-function claims `{foundation['nonfunction_claims']}`；non-function quarantine/pending `{foundation['nonfunction_quarantine_or_pending']}`。",
         f"- Knowledge Experience: cards `{knowledge['cards']}`；changes `{knowledge['changes']}`；layered readings `{knowledge['layered_readings']}`；search records `{knowledge['search_records']}`；aliases `{knowledge['aliases']}`。",
         f"- Fire Seeds: `{fire_seeds['seed_count']}` seeds/clusters；`{fire_seeds['source_census_count']}` source-census records。",
