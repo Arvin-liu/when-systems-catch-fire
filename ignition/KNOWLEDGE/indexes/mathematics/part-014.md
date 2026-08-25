@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：简单请求走低成本单模型，困难请求走多模型并行。智能分流验证倒U型最优：资源不足和资源过度都非最优。 关键发现：智能分流验证倒U型最优… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f62bfff8ae6a4ac0 / 从这条案例看，中文：简单请求走低成本单模型，困难请求走多模型并行。智能分流验证倒U型最优：资源不足和资源过度都非最优。 关键发现：智能分流验证倒U型最优… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：糖域实验 Agent 的视野Ω_vision决定 I。Agent 的可视空间决定其信息量。 关键发现：视野空间→信息量 Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-172d67fc6af75bca / 从这条案例看，中文：糖域实验 Agent 的视野Ω_vision决定 I。Agent 的可视空间决定其信息量。 关键发现：视野空间→信息量 Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：系统不需要预先知道哪个模型最强，而是通过并行+仲裁自动筛选。结构优势替代人工判断优势。 关键发现：结构优势替代人工判断优势 Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-464361763e1f1e89 / 从这条案例看，中文：系统不需要预先知道哪个模型最强，而是通过并行+仲裁自动筛选。结构优势替代人工判断优势。 关键发现：结构优势替代人工判断优势 Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：罗振宇AI创作直播笔记与点火框架碰撞验证。核心碰撞点：AI时代写作拼的是"在场"——只有独特生命体验不可复制。这直接对应点火框架的ε… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fdb320f64ac6706e / 从这条案例看，中文：罗振宇AI创作直播笔记与点火框架碰撞验证。核心碰撞点：AI时代写作拼的是"在场"——只有独特生命体验不可复制。这直接对应点火框架的ε… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-28d1d64d07e6b8f3 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D333；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9e132276b1a7b61d / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D334；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5705fd7e0e10c796 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D335；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bfba4ef626354a3f / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D336；被引用：—

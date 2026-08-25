@@ -6,6 +6,21 @@
 
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9e132276b1a7b61d / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D334；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5705fd7e0e10c796 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D335；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bfba4ef626354a3f / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D336；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2547b1ca24bb1051 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D337；被引用：—
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-91e79bc2c8b2757c / 将 L0-L3 的结构性推论写成 L4-L5 的证明、实证结论或专业定论。
   - 来源：`data/publication_risk_rules.csv`
-  - 依赖：—；被引用：—
-- [将 T2 从无条件普遍律改写为明确载体上的零吸收命题，并加入零因子环与矩阵反例边界。](../../../docs/foundation/historical-correction-log.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-31a61c27d1508642 / 将 T2 从无条件普遍律改写为明确载体上的零吸收命题，并加入零因子环与矩阵反例边界。
-  - 来源：`docs/foundation/historical-correction-log.md`
-  - 依赖：T2；被引用：—
-- [将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 `FOUNDATION.md`，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion gra](../../../docs/foundation/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-344d15562acc65ea / 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 `FOUNDATION.md`，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion gra
-  - 来源：`docs/foundation/README.md`
-  - 依赖：—；被引用：—
-- [将失败案例、失败类型、反例和修正机制反馈到函数与案例治理。](../../../data/function_dependency.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-197104a393ad4ffe / 将失败案例、失败类型、反例和修正机制反馈到函数与案例治理。
-  - 来源：`data/function_dependency.csv`
   - 依赖：—；被引用：—

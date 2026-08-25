@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Gate 回答某个转换或公开动作是否被允许。它包括来源/隐私、atomicity/definition/scope、type/proof/circularity/isomorphism、counterexample/replication/](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-42a4a665286386ed / Gate 回答某个转换或公开动作是否被允许。它包括来源/隐私、atomicity/definition/scope、type/proof/circularity/isomorphism、counterexample/replication/
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [Generated decoder head parameters are per-feature artifacts; no lifecycle management](../../../data/external-research/121-fulltext-resolver/121q1/acceptance/S120-012.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-89e468a83ae44630 / Generated decoder head parameters are per-feature artifacts; no lifecycle management
+  - 来源：`data/external-research/121-fulltext-resolver/121q1/acceptance/S120-012.json`
+  - 依赖：—；被引用：—
 - [Generated weights can be seen as per-client artifacts; no versioning or artifact lifecycle management](../../../data/external-research/121-fulltext-resolver/121q1/acceptance/S120-011.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-40637586da755548 / Generated weights can be seen as per-client artifacts; no versioning or artifact lifecycle management
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-4d61e577edfd52d4 / If upstream objects D_{T33} exist, compose F_{T33}=N\(⊕_{g∈D_{T33}} g\); otherwise treat F_{T33} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T33；被引用：—
-- [If upstream objects D_{T34} exist, compose F_{T34}=N\(⊕_{g∈D_{T34}} g\); otherwise treat F_{T34} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bead307e87cbe335 / If upstream objects D_{T34} exist, compose F_{T34}=N\(⊕_{g∈D_{T34}} g\); otherwise treat F_{T34} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T34；被引用：—
-- [If upstream objects D_{T35} exist, compose F_{T35}=N\(⊕_{g∈D_{T35}} g\); otherwise treat F_{T35} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d8d9c5240218d35c / If upstream objects D_{T35} exist, compose F_{T35}=N\(⊕_{g∈D_{T35}} g\); otherwise treat F_{T35} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T35；被引用：—

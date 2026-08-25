@@ -394,6 +394,11 @@
   - 可搜索名称：NFC-eaa020c2f5bd4417 / delta: terminalizes Task135 after exact Task134 failure inventory closure, canonical isolated-environment full-suite PAS
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [delta: terminalizes the durable live-attempt journal and observation projection after the exact candidate and fresh-task](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a495563d60b70573 / delta: terminalizes the durable live-attempt journal and observation projection after the exact candidate and fresh-task
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Derived and external surfaces remain distinct from repository sources. Current human result projections are repository f](../../../ITERATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d6c99a7d27958737 / Derived and external surfaces remain distinct from repository sources. Current human result projections are repository f
@@ -2039,6 +2044,11 @@
   - 可搜索名称：NFC-37eceaaf3c9f4fda / registries remain unchanged and the projection validator fails closed.
   - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
   - 依赖：—；被引用：—
+- [regression_boundary: candidate and fresh remote task-branch clone both passed on exact `9a3b4a5561cf389b4f8af91274391096](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a189ab7b47015ac7 / regression_boundary: candidate and fresh remote task-branch clone both passed on exact `9a3b4a5561cf389b4f8af91274391096
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [relation = next\(\(item for item in topology.get\("relations", \[\]\) if item.get\("relation_id"\) == "map_language_thought_zhiyuan"\), None\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3C0F724825A54953 / relation = next\(\(item for item in topology.get\("relations", \[\]\) if item.get\("relation_id"\) == "map_language_thought_zhiyuan"\), None\) / IMPLICIT-3C0F724825A54953
@@ -2492,15 +2502,5 @@
 - [title: "信源可遮蔽 — Shannon假设信源熵客观给定，但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降 / 信源可obscuration - Shannon假设信源熵客观给定, 但Ignition发现εaware可被Hobscuration压低 -> Fintent↓ -> 信源质量下降"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B02D6DA00C95C0F8 / title: "信源可遮蔽 — Shannon假设信源熵客观给定，但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降 / 信源可obscuration - Shannon假设信源熵客观给定, 但Ignition发现εaware可被Hobscuration压低 -> Fintent↓ -> 信源质量下降" / IMPLICIT-B02D6DA00C95C0F8
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D4D024CC9666A15A / title: "修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍" / IMPLICIT-D4D024CC9666A15A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "倒U型统一生成定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-23DD248AF3E210D9 / title: "倒U型统一生成定理" / IMPLICIT-23DD248AF3E210D9 / IMPLICIT-A8002391595D3B5A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

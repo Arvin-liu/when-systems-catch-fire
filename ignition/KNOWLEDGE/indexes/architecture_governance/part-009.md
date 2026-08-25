@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-51\]\( \) \| \[丰田生产方式\]\( \) \| 员工可辞职且行业有下家，"丰田人"认同经退出权验证 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b32929c1c90d5826 / \| \[C-51\]\( \) \| \[丰田生产方式\]\( \) \| 员工可辞职且行业有下家，"丰田人"认同经退出权验证 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-520\]\( \) \| \[Weinberg角验证 — 三个维](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-006c170421e607bf / \| \[C-520\]\( \) \| \[Weinberg角验证 — 三个维
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D147；被引用：—
+- [\| \[C-522\]\( \) \| \[跑动耦合验证 — 投资决策：秒级观](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-33615c701d79d5fb / \| \[C-522\]\( \) \| \[跑动耦合验证 — 投资决策：秒级观
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D149；被引用：—
 - [\| \[C-523\]\( \) \| \[不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现\]\(<./](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-adc155a1ea330aae / \| \[C-523\]\( \) \| \[不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现\]\(<./
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-0867d485420fe93e / 中文：M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ 1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D158, D260, D296；被引用：—
-- [中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar\(ΔΦᵢ\)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-161fb2de3082a436 / 中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar\(ΔΦᵢ\)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D342；被引用：—
-- [中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个门控面平均代价∝Φ/n随n减小，但总代价守恒。类比：修复桥的总成本取决于损坏程度而非构件数——构件越多每个修复量越少但总量不变。守恒律：复活总代价=拐点处](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a54ea7d7a9cb5589 / 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个门控面平均代价∝Φ/n随n减小，但总代价守恒。类比：修复桥的总成本取决于损坏程度而非构件数——构件越多每个修复量越少但总量不变。守恒律：复活总代价=拐点处
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：M3的D372与D328是同一现象不同表述。统一指标I_concentration = max\(ΔΦᵢ\)/ΣΔΦᵢ·\(1+ln\(n\)\)。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-56dfc8d3f6b4a396 / 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentration = max\(ΔΦᵢ\)/ΣΔΦᵢ·\(1+ln\(n\)\)。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D328, D372；被引用：—

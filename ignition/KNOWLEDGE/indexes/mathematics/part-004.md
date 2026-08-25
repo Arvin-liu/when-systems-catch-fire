@@ -199,6 +199,11 @@
   - 可搜索名称：NFC-6bdb73beeb04337b / claim ceiling：本步只证明 repository-local deterministic projection cleanliness 与 gate 行为，不证明外部真值、生产安全、Owner acceptance 或 epis
   - 来源：`reports/operations/ignition-135-step02-projection-preflight.md`
   - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Task139 terminal and release-readiness evidence only; no formal publication, validated l](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dca7a52c83875bc8 / claim_ceiling: repository-local Task139 terminal and release-readiness evidence only; no formal publication, validated l
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [claim_counts: `{'ALGORITHMIC_CLAIM': 2, 'DEFINITION': 12, 'EXPLANATORY_HYPOTHESIS': 6, 'MATHEMATICAL_PROPOSITION': 3, 'S](../../../reports/foundation-architecture/080-full-semantic-adjudication-report-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-722bf33b2c6b5f74 / claim_counts: `{'ALGORITHMIC_CLAIM': 2, 'DEFINITION': 12, 'EXPLANATORY_HYPOTHESIS': 6, 'MATHEMATICAL_PROPOSITION': 3, 'S
@@ -407,6 +412,11 @@
 - [current_formal_task: `IGNITION-20260823-136` is terminal with formal ordinal `136`; `current_iteration_boundary=136` rem](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-02ca70eb441cb348 / current_formal_task: `IGNITION-20260823-136` is terminal with formal ordinal `136`; `current_iteration_boundary=136` rem
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [current_formal_task: `IGNITION-20260825-139` is terminal with formal ordinal `139`; `current_iteration_boundary=139` rem](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7575422455468e6b / current_formal_task: `IGNITION-20260825-139` is terminal with formal ordinal `139`; `current_iteration_boundary=139` rem
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [current_lifecycle_gated_whole_project_synchronization_method_only](../../../reports/operations/121Q25C-completion-seal.json)
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7eacc2b8871b43c2 / Gap: the existing Foundation separated formal object types and status axes, but did not provide the requested ten-class
   - 来源：`reports/foundation-architecture/098-remote-truth-and-gap.md`
-  - 依赖：—；被引用：—
-- [Gate 回答某个转换或公开动作是否被允许。它包括来源/隐私、atomicity/definition/scope、type/proof/circularity/isomorphism、counterexample/replication/](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-42a4a665286386ed / Gate 回答某个转换或公开动作是否被允许。它包括来源/隐私、atomicity/definition/scope、type/proof/circularity/isomorphism、counterexample/replication/
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [Generated decoder head parameters are per-feature artifacts; no lifecycle management](../../../data/external-research/121-fulltext-resolver/121q1/acceptance/S120-012.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-89e468a83ae44630 / Generated decoder head parameters are per-feature artifacts; no lifecycle management
-  - 来源：`data/external-research/121-fulltext-resolver/121q1/acceptance/S120-012.json`
   - 依赖：—；被引用：—

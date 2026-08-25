@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [It is not a claim that the repository knows an actual Owner preference, has completed a real-world objective, or has est](../../../docs/architecture/os-steering-intent-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2c2afe0459115e14 / It is not a claim that the repository knows an actual Owner preference, has completed a real-world objective, or has est
+  - 来源：`docs/architecture/os-steering-intent-r1.md`
+  - 依赖：—；被引用：—
 - [It rejects identity drift, missing evidence, duplicate IDs, removed limitations, capability registration, privacy/secret](../../../ITERATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-b24520f1afe95182 / It rejects identity drift, missing evidence, duplicate IDs, removed limitations, capability registration, privacy/secret
@@ -983,6 +988,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7849a68e3dfcc9e8 / live result, validated completion, production readiness, external truth, Owner
   - 来源：`reports/operations/ignition-138-step06-capability-reauth.md`
+  - 依赖：—；被引用：—
+- [live_boundary: no new invocation was made after the Step11 fail-closed adapter boundary. The ledger remains at five atte](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ce2fcea0071dceaf / live_boundary: no new invocation was made after the Step11 fail-closed adapter boundary. The ledger remains at five atte
+  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [live_ceiling: LIVE_BRIDGE_IMPLEMENTED / LIVE_COMPLETION_NOT_OBSERVED; LIVE_EXTERNAL_INVOCATION remains an open obligatio](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-65d75d89a5b9f8e8 / print\(f"Generated {len\(cards\)} evidence cards"\)
   - 来源：`scripts/external-research/121_generate_evidence_cards.py`
-  - 依赖：—；被引用：—
-- [Prior 121Q5 status `MIXED_OR_UNVERIFIED` → now **`VERIFIED_HY3`**. Full task executed by a single Hy3 runtime; no model](../../../data/external-research/121-fulltext-resolver/121q6/pr41-body.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-dab61d02036e1e17 / Prior 121Q5 status `MIXED_OR_UNVERIFIED` → now **`VERIFIED_HY3`**. Full task executed by a single Hy3 runtime; no model
-  - 来源：`data/external-research/121-fulltext-resolver/121q6/pr41-body.md`
-  - 依赖：—；被引用：—
-- [Privacy classes and prohibited inference are validated locally; public publication remains the existing Results Book/pub](../../../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-74fc8b8245464e0c / Privacy classes and prohibited inference are validated locally; public publication remains the existing Results Book/pub
-  - 来源：`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`
   - 依赖：—；被引用：—

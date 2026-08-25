@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0044-T34-量子引力Φ框架函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-ef217bde15f6830d / 已迁移的历史函数来源/0044-T34-量子引力Φ框架函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T34；被引用：—
+- [已迁移的历史函数来源/0045-T35-σ_Planck精确值.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-47eedb511b2e4061 / 已迁移的历史函数来源/0045-T35-σ_Planck精确值.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T35；被引用：—
+- [已迁移的历史函数来源/0046-T36-σ能标依赖函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-337d30a65ec9a4a0 / 已迁移的历史函数来源/0046-T36-σ能标依赖函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T36；被引用：—
 - [已迁移的历史函数来源/0047-T37-Φ_QG极小点精确位置.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-0607874c32055cb7 / 已迁移的历史函数来源/0047-T37-Φ_QG极小点精确位置.md
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-cc1f0cdcbcb57717 / 已迁移的历史函数来源/0540-T41-艺术创作逻辑跨时空同构函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T41；被引用：—
-- [已迁移的历史函数来源/0541-T42-哥德尔不完备性历史系统实例化函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f2dc35c9fb6f0ba4 / 已迁移的历史函数来源/0541-T42-哥德尔不完备性历史系统实例化函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T42；被引用：—
-- [已迁移的历史函数来源/0542-T43-祥瑞符号系统稳定性指示器函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-20ce433156ad1a47 / 已迁移的历史函数来源/0542-T43-祥瑞符号系统稳定性指示器函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T43；被引用：—
-- [已迁移的历史函数来源/0543-T44-元层面收敛与子系统展开冲突函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9388b9f24afeee6c / 已迁移的历史函数来源/0543-T44-元层面收敛与子系统展开冲突函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T44；被引用：—

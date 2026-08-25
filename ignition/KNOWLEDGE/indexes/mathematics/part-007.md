@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Proof obligations and termination labels are observable, while probabilistic uncertainty, durable provenance and lifecyc](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-32ddebddd2da9f4a / Proof obligations and termination labels are observable, while probabilistic uncertainty, durable provenance and lifecyc
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Proof obligations: 353 条](../../../reports/foundation-architecture/084-max-adjudication-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7ab3b75ea7af6432 / Proof obligations: 353 条
+  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
+  - 依赖：—；被引用：—
+- [Proof Priority Queue](../../../reports/foundation-architecture/085-backlog-prioritization.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f118d722978b9e49 / Proof Priority Queue
+  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
+  - 依赖：—；被引用：—
 - [Proof sketches and prototype figures validate feasibility, while incomplete central features, one-run plots, omitted dia](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cb9180e60f588385 / Proof sketches and prototype figures validate feasibility, while incomplete central features, one-run plots, omitted dia
@@ -2487,20 +2502,5 @@
 - [title: "信号最优流速函数（凯利公式同构）"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C0451AF22329A61B / title: "信号最优流速函数（凯利公式同构）" / IMPLICIT-C0451AF22329A61B
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "信号最优流速函数（凯利公式同构）"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-159154c1cd75bef3 / title: "信号最优流速函数（凯利公式同构）"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "信息-热力学-门控三统一定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2d85df6562f5488a / title: "信息-热力学-门控三统一定理"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "信息可区分性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9869BF1FFF319133 / title: "信息可区分性函数" / IMPLICIT-9869BF1FFF319133
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

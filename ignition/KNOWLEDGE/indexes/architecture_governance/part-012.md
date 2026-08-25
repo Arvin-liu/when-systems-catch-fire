@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [四种基本力统一；](../../../docs/storytelling_case_backlog.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3e3138acb7f398b1 / 四种基本力统一；
+  - 来源：`docs/storytelling_case_backlog.md`
+  - 依赖：—；被引用：—
+- [四阶段严格串行验证 — 不能跳过Stage2直接到Stage3-rcross=0时D84三条路径失效](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3de78d821ecd388e / 四阶段严格串行验证 — 不能跳过Stage2直接到Stage3-rcross=0时D84三条路径失效
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D84；被引用：—
+- [回滚条件：说明哪些事实、伤害、失败或治理异议会触发撤回；](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2a31a1e49015849d / 回滚条件：说明哪些事实、伤害、失败或治理异议会触发撤回；
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
 - [回滚：只回退 registry 记录和其确定性投影；不得借快照回滚去改写候选载荷或历史。](../../../docs/operations/stage-snapshot-publication.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-78aca6fed07add63 / 回滚：只回退 registry 记录和其确定性投影；不得借快照回滚去改写候选载荷或历史。
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-a812bfc5e4f816ff / 没有证据制度门槛。
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [没有读到内容时必须停在 `METADATA_VERIFIED` 或 `UNAVAILABLE_FOR_CONTENT_REVIEW`，不能凭标题推断。](../../../data/external-research/104-evidence-tier-schema.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-13849f28e7a39a24 / 没有读到内容时必须停在 `METADATA_VERIFIED` 或 `UNAVAILABLE_FOR_CONTENT_REVIEW`，不能凭标题推断。
-  - 来源：`data/external-research/104-evidence-tier-schema.md`
-  - 依赖：—；被引用：—
-- [注意：本文是证据制度库初稿，不代表已经完成所有 UNESCO 学科的证据制度细化。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-dc81e8d6bd47ed7d / 注意：本文是证据制度库初稿，不代表已经完成所有 UNESCO 学科的证据制度细化。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [注：三个案例均来自单篇一线访谈，非随机抽样；涉及普遍性表述须 pending（evidence_regimes EVID-011/004）。](../../../outputs/collisions/20260708-teacher-competition/new-cases.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e9bdbab9a0db1ead / 注：三个案例均来自单篇一线访谈，非随机抽样；涉及普遍性表述须 pending（evidence_regimes EVID-011/004）。
-  - 来源：`outputs/collisions/20260708-teacher-competition/new-cases.md`
   - 依赖：—；被引用：—

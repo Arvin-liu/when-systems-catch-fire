@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在心智中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-169c99b5fe95a17e / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在心智中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在植物智能中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-451393bc964c0ce6 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在植物智能中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在蚁群社会中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8862bdbe52c273f9 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在蚁群社会中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在ChatGPT中成立](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-62c63efcea29a9cb / 验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在ChatGPT中成立

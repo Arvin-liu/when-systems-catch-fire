@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 退出权时变空间函数 is adjudicated as RELATION: P_exit\(t\)=f\(Ω\(t\),T\(t\),C\(t\),σ\(t\)\). This is a model](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D508 / Within the source-defined scope, 退出权时变空间函数 is adjudicated as RELATION: P_exit\(t\)=f\(Ω\(t\),T\(t\),C\(t\),σ\(t\)\). This is a model
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权时间衰减函数 is adjudicated as STATE_TRANSITION: P_exit\(t\)=P_exit\(Ω,T,C,σ\) × e^\(-Γ_unified](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D499 / Within the source-defined scope, 退出权时间衰减函数 is adjudicated as STATE_TRANSITION: P_exit\(t\)=P_exit\(Ω,T,C,σ\) × e^\(-Γ_unified
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 退出权最大化函数 is adjudicated as RELATION: P_exit_max = max\[P_exit\(Ω,T,C,σ\)\]. This is a model](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D501 / Within the source-defined scope, 退出权最大化函数 is adjudicated as RELATION: P_exit_max = max\[P_exit\(Ω,T,C,σ\)\]. This is a model
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 退出权最弱项瓶颈函数 is adjudicated as RELATION: P_exit_bottleneck = min\(Ω,T,C,σ\). This is a mode](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D503 / Within the source-defined scope, 退出权最弱项瓶颈函数 is adjudicated as RELATION: P_exit_bottleneck = min\(Ω,T,C,σ\). This is a mode
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-161cfedc68f29fdf / \| NF-005 避风港 \| 函数 \| 入表 \| D596 \| 已验证（teacher-competition-index-visibility-check） \| small-batch-backfill-audit \|
   - 来源：`outputs/audit/teacher-competition-batch-closeout-audit-20260708.md`
   - 依赖：D596；被引用：—
-- [\| NFC-015cfd6ba387c9b1 \| `docs/project-current-state.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `RE](../../../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-61f14b368e8c6a93 / \| NFC-015cfd6ba387c9b1 \| `docs/project-current-state.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `RE
-  - 来源：`reports/operations/ignition-134-step14-human-surface-semantic-audit.md`
-  - 依赖：—；被引用：—
-- [\| ontology \| 0 \| 250 \| 250 \|](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1e6dab44e65788bf / \| ontology \| 0 \| 250 \| 250 \|
-  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
-  - 依赖：—；被引用：—
-- [\| P1 \| 2 \| Proof/equivalence \(highest\) \|](../../../reports/foundation-architecture/083-max-queue-readiness.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-422e7520b392a7dd / \| P1 \| 2 \| Proof/equivalence \(highest\) \|
-  - 来源：`reports/foundation-architecture/083-max-queue-readiness.md`
-  - 依赖：P1；被引用：—

@@ -729,6 +729,11 @@
   - 可搜索名称：NFC-6d5c43973955e503 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Deterministic two-pass
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Durable observation an](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ef20a66890dfacc8 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Durable observation an
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Historical Task125 rem](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5fa5c91ca8b57a3a / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Historical Task125 rem
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-069f8cabb6662200 / it does not prove production readiness, external truth, Owner acceptance or
   - 来源：`reports/operations/ignition-128-step00-current-state-audit.md`
-  - 依赖：—；被引用：—
-- [It is not a claim that the repository knows an actual Owner preference, has completed a real-world objective, or has est](../../../docs/architecture/os-steering-intent-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2c2afe0459115e14 / It is not a claim that the repository knows an actual Owner preference, has completed a real-world objective, or has est
-  - 来源：`docs/architecture/os-steering-intent-r1.md`
   - 依赖：—；被引用：—

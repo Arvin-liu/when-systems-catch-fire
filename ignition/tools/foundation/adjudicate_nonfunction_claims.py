@@ -105,7 +105,13 @@ SELF_EXCLUDES = {
     # from re-entering the canonical claim registry.
     "data/operations/iterations/139/progress.jsonl",
     "data/operations/iterations/139/step13-targeted-regression.json",
+    "data/operations/iterations/139/step14-candidate-full-regression.json",
+    "data/operations/iterations/139/step15-fresh-clone-publication.json",
     "reports/operations/ignition-139-step13-targeted-regression.md",
+    "reports/operations/ignition-139-step14-candidate-full-regression.md",
+    "reports/operations/ignition-139-step15-fresh-clone-publication.md",
+    "agent-results/IGNITION-20260825-139-result.md",
+    "agent-results/IGNITION-20260825-139-machine-receipt.json",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",

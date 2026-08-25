@@ -8,13 +8,13 @@
 - [第 002 片](./architecture_governance/part-002.md)：501—1000；`1131 tests / 0 failures / 0 errors / 0 skips`. This is the baseline evidence → D127+D123深层同构
 - [第 003 片](./architecture_governance/part-003.md)：1001—1500；D135修正的工程含义 — CAI和EAI应使用部分不同的训练数据,降低G来提高ηgate → def dispatch\(self, envelope: FederatedTaskEnvelope\) -> FederatedProgressEvent:
 - [第 004 片](./architecture_governance/part-004.md)：1501—2000；def dispatch\(self, envelope: FederatedTaskEnvelope\) -> FederatedProgressEvent: ... → def to_compact\(self, trace: dict\) -> str:
-- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def to_dict\(self\) -> dict: → It is not a claim that the repository knows an actual Owner preference, has completed a real-world objective, or has est
-- [第 006 片](./architecture_governance/part-006.md)：2501—3000；It rejects identity drift, missing evidence, duplicate IDs, removed limitations, capability registration, privacy/secret → Privacy classes and prohibited inference are validated locally; public publication remains the existing Results Book/pub
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；private SQLite/session databases, OpenClaw memory, and the OpenClaw internal → This report is repository-local Current-State synchronization and deterministic navigation evidence
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；This review was executed with **model=qclaw/pool-kimi-k2.7-code-highspeed, thinking=adaptive**. The task file originally → \| \[C-522\]\( \) \| \[跑动耦合验证 — 投资决策：秒级观
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；\| \[C-523\]\( \) \| \[不确定性原理 — Fisher信息度规的几何必然，算符不对易是度规非对角的代数表现\]\(<./ → 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentration = max\(ΔΦᵢ\)/ΣΔΦᵢ·\(1+ln\(n\)\)。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；中文：M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 回滚条件：说明哪些事实、伤害、失败或治理异议会触发撤回；
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；回滚：只回退 registry 记录和其确定性投影；不得借快照回滚去改写候选载荷或历史。 → 注：三个案例均来自单篇一线访谈，非随机抽样；涉及普遍性表述须 pending（evidence_regimes EVID-011/004）。
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；注：五个候选均受 evidence_regimes\(EVID-011/004\) 约束，涉及普遍性表述须 pending，claim level ≤ L3。 → 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在蚁群社会中成立
-- [第 014 片](./architecture_governance/part-014.md)：6501—6574；验证结论：** J⁺=1, J⁻=0 → 局部信息→局部调整→全局涌现在ChatGPT中成立 → （证据不足、需外部验证、待人工复核）
+- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def to_dict\(self\) -> dict: → it does not prove production readiness, external truth, Owner acceptance or
+- [第 006 片](./architecture_governance/part-006.md)：2501—3000；It is not a claim that the repository knows an actual Owner preference, has completed a real-world objective, or has est → print\(f"Generated {len\(cards\)} evidence cards"\)
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；Prior 121Q5 status `MIXED_OR_UNVERIFIED` → now **`VERIFIED_HY3`**. Full task executed by a single Hy3 runtime; no model → This public artifact records the accepted 12-unit source-family verification.
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；This report aggregates the already completed D1 unified validator, D2 end-to-end acceptance, and D3 local defensive reje → \| \[C-519\]\( \) \| \[Higgs相变验证 — 职业选择：
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；\| \[C-51\]\( \) \| \[丰田生产方式\]\( \) \| 员工可辞职且行业有下家，"丰田人"认同经退出权验证 \| → 中文：M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ 1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar\(ΔΦᵢ\)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 四种基本力统一
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；四种基本力统一； → 没有证据制度门槛。
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；没有读到内容时必须停在 `METADATA_VERIFIED` 或 `UNAVAILABLE_FOR_CONTENT_REVIEW`，不能凭标题推断。 → 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在开源开发中成立
+- [第 014 片](./architecture_governance/part-014.md)：6501—6577；验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在心智中成立 → （证据不足、需外部验证、待人工复核）

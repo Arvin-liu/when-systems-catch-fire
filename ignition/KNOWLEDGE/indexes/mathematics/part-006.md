@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{T34} exist, compose F_{T34}=N\(⊕_{g∈D_{T34}} g\); otherwise treat F_{T34} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bead307e87cbe335 / If upstream objects D_{T34} exist, compose F_{T34}=N\(⊕_{g∈D_{T34}} g\); otherwise treat F_{T34} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T34；被引用：—
+- [If upstream objects D_{T35} exist, compose F_{T35}=N\(⊕_{g∈D_{T35}} g\); otherwise treat F_{T35} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d8d9c5240218d35c / If upstream objects D_{T35} exist, compose F_{T35}=N\(⊕_{g∈D_{T35}} g\); otherwise treat F_{T35} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T35；被引用：—
 - [If upstream objects D_{T36} exist, compose F_{T36}=N\(⊕_{g∈D_{T36}} g\); otherwise treat F_{T36} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-70c31959335f5f90 / If upstream objects D_{T36} exist, compose F_{T36}=N\(⊕_{g∈D_{T36}} g\); otherwise treat F_{T36} as an axiom seed.
@@ -1299,6 +1309,11 @@
   - 可搜索名称：NFC-1fa31d27bf7585a3 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified Task135 baseline `3acf15ea4c1b1c27eb6
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified Task138 baseline `12205be8ad94916a392](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2f3f9379016dbd77 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains at the verified Task138 baseline `12205be8ad94916a392
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the Task 130 baseline until the required terminal clo](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ea516b59cd3da9d5 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the Task 130 baseline until the required terminal clo
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-9a3be8cd0806c9aa / Proof Obligations
   - 来源：`docs/math-foundation/04-proof-obligations.md`
-  - 依赖：—；被引用：—
-- [Proof obligations and termination labels are observable, while probabilistic uncertainty, durable provenance and lifecyc](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-32ddebddd2da9f4a / Proof obligations and termination labels are observable, while probabilistic uncertainty, durable provenance and lifecyc
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Proof obligations: 353 条](../../../reports/foundation-architecture/084-max-adjudication-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7ab3b75ea7af6432 / Proof obligations: 353 条
-  - 来源：`reports/foundation-architecture/084-max-adjudication-report.md`
-  - 依赖：—；被引用：—
-- [Proof Priority Queue](../../../reports/foundation-architecture/085-backlog-prioritization.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f118d722978b9e49 / Proof Priority Queue
-  - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
   - 依赖：—；被引用：—

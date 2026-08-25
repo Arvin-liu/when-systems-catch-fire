@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [没有读到内容时必须停在 `METADATA_VERIFIED` 或 `UNAVAILABLE_FOR_CONTENT_REVIEW`，不能凭标题推断。](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-13849f28e7a39a24 / 没有读到内容时必须停在 `METADATA_VERIFIED` 或 `UNAVAILABLE_FOR_CONTENT_REVIEW`，不能凭标题推断。
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [注意：本文是证据制度库初稿，不代表已经完成所有 UNESCO 学科的证据制度细化。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dc81e8d6bd47ed7d / 注意：本文是证据制度库初稿，不代表已经完成所有 UNESCO 学科的证据制度细化。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [注：三个案例均来自单篇一线访谈，非随机抽样；涉及普遍性表述须 pending（evidence_regimes EVID-011/004）。](../../../outputs/collisions/20260708-teacher-competition/new-cases.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e9bdbab9a0db1ead / 注：三个案例均来自单篇一线访谈，非随机抽样；涉及普遍性表述须 pending（evidence_regimes EVID-011/004）。
+  - 来源：`outputs/collisions/20260708-teacher-competition/new-cases.md`
+  - 依赖：—；被引用：—
 - [注：五个候选均受 evidence_regimes\(EVID-011/004\) 约束，涉及普遍性表述须 pending，claim level ≤ L3。](../../../outputs/collisions/20260708-teacher-competition/new-functions.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-189192179a14530f / 注：五个候选均受 evidence_regimes\(EVID-011/004\) 约束，涉及普遍性表述须 pending，claim level ≤ L3。
@@ -2487,20 +2502,5 @@
 - [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在开源开发中成立](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5c32e520e2228b42 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在开源开发中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在心智中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-169c99b5fe95a17e / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在心智中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在植物智能中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-451393bc964c0ce6 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在植物智能中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在蚁群社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8862bdbe52c273f9 / 验证结论：** J⁺=1, J⁻=0 → 决策权与信息权的对称性在蚁群社会中成立
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

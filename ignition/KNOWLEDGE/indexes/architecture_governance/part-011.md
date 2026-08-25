@@ -6,6 +6,21 @@
 
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b233e25c377b820 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a24a3423aa1c8aac / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4d9bfbd80688d083 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6aa8ffce4debe46e / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：CLAIM-PEND-004 / 四种基本力统一
   - 来源：`data/foundation/claims/claims.jsonl`
-  - 依赖：—；被引用：—
-- [四种基本力统一；](../../../docs/storytelling_case_backlog.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3e3138acb7f398b1 / 四种基本力统一；
-  - 来源：`docs/storytelling_case_backlog.md`
-  - 依赖：—；被引用：—
-- [四阶段严格串行验证 — 不能跳过Stage2直接到Stage3-rcross=0时D84三条路径失效](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3de78d821ecd388e / 四阶段严格串行验证 — 不能跳过Stage2直接到Stage3-rcross=0时D84三条路径失效
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：D84；被引用：—
-- [回滚条件：说明哪些事实、伤害、失败或治理异议会触发撤回；](../../../docs/governance/life-community-value-charter.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2a31a1e49015849d / 回滚条件：说明哪些事实、伤害、失败或治理异议会触发撤回；
-  - 来源：`docs/governance/life-community-value-charter.md`
   - 依赖：—；被引用：—

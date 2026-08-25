@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| NFC-015cfd6ba387c9b1 \| `docs/project-current-state.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `RE](../../../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-61f14b368e8c6a93 / \| NFC-015cfd6ba387c9b1 \| `docs/project-current-state.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `RE
+  - 来源：`reports/operations/ignition-134-step14-human-surface-semantic-audit.md`
+  - 依赖：—；被引用：—
+- [\| ontology \| 0 \| 250 \| 250 \|](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1e6dab44e65788bf / \| ontology \| 0 \| 250 \| 250 \|
+  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
+  - 依赖：—；被引用：—
+- [\| P1 \| 2 \| Proof/equivalence \(highest\) \|](../../../reports/foundation-architecture/083-max-queue-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-422e7520b392a7dd / \| P1 \| 2 \| Proof/equivalence \(highest\) \|
+  - 来源：`reports/foundation-architecture/083-max-queue-readiness.md`
+  - 依赖：P1；被引用：—
 - [\| P_meta \| 主机制已入表；暴露两个候选新函数（指标排名隐性分层、刷分博弈） \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-6ad53cc6af2f4856 / \| P_meta \| 主机制已入表；暴露两个候选新函数（指标排名隐性分层、刷分博弈） \|
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-97a9b52320cd18fa / 中文：时空维度d的稳定性取决于该维度下所有门控面的否决概率是否低于容斥阈值p*。d=4（3+1维）是唯一使所有pᵢ 4时长程力p→1（自由度太多），均触发容斥主导
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），β由ε₇决定（策略偏离最远）。三重发散同步。核心函数：\[D141\]\(docs/zh/functions/item](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-98c71b91cf7850a2 / 中文：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），β由ε₇决定（策略偏离最远）。三重发散同步。核心函数：\[D141\]\(docs/zh/functions/item
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D141；被引用：—
-- [中文：本轮对话之前的公众号碰撞内容（唐宋钱荒、《主角》、《看见中国村镇》）与点火框架的跨域普适性验证。唐宋钱荒验证了门控面单一化导致系统锁定的规律（C-655已有），《主角》退出权让渡验证了提议者消耗函数，《看见中国村镇》退出权梯度验证了等](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-73d37109de031788 / 中文：本轮对话之前的公众号碰撞内容（唐宋钱荒、《主角》、《看见中国村镇》）与点火框架的跨域普适性验证。唐宋钱荒验证了门控面单一化导致系统锁定的规律（C-655已有），《主角》退出权让渡验证了提议者消耗函数，《看见中国村镇》退出权梯度验证了等
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整。核心函数：\[D111\]\(docs/zh/func](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1ab1209d781608dd / 中文：案例说明："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整。核心函数：\[D111\]\(docs/zh/func
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D111；被引用：—

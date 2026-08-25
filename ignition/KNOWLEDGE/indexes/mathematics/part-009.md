@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [V2 的效率不能通过外部化生命与生态代价实现；](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-52a525ee435677ab / V2 的效率不能通过外部化生命与生态代价实现；
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [V2 高置信 2 条碰撞预审：机制级比对，均为「已有函数覆盖 / 不新增」，D597/D599 反向语境误触发被识破](../../../outputs/audit/agent-collision-phase-closeout-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4e36a045efa4daa3 / V2 高置信 2 条碰撞预审：机制级比对，均为「已有函数覆盖 / 不新增」，D597/D599 反向语境误触发被识破
+  - 来源：`outputs/audit/agent-collision-phase-closeout-20260708.md`
+  - 依赖：D597, D599；被引用：—
+- [V2、V3 未自行发明全成本公式或可逆性指数并冒充已验证标准；仅保留事实度量 pending。](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d2c2859e925c4028 / V2、V3 未自行发明全成本公式或可逆性指数并冒充已验证标准；仅保留事实度量 pending。
+  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
+  - 依赖：—；被引用：—
 - [Validation and lifecycle](../../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2d85dfeaa9660c53 / Validation and lifecycle
@@ -2487,20 +2502,5 @@
 - [Within the source-defined scope, 退出权归零函数 is adjudicated as RELATION: P_exit_zero = step\(min\(Ω,T,C,σ\) - θ_zero\). This is](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D511 / Within the source-defined scope, 退出权归零函数 is adjudicated as RELATION: P_exit_zero = step\(min\(Ω,T,C,σ\) - θ_zero\). This is
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 退出权时变空间函数 is adjudicated as RELATION: P_exit\(t\)=f\(Ω\(t\),T\(t\),C\(t\),σ\(t\)\). This is a model](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D508 / Within the source-defined scope, 退出权时变空间函数 is adjudicated as RELATION: P_exit\(t\)=f\(Ω\(t\),T\(t\),C\(t\),σ\(t\)\). This is a model
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 退出权时间衰减函数 is adjudicated as STATE_TRANSITION: P_exit\(t\)=P_exit\(Ω,T,C,σ\) × e^\(-Γ_unified](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D499 / Within the source-defined scope, 退出权时间衰减函数 is adjudicated as STATE_TRANSITION: P_exit\(t\)=P_exit\(Ω,T,C,σ\) × e^\(-Γ_unified
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 退出权最大化函数 is adjudicated as RELATION: P_exit_max = max\[P_exit\(Ω,T,C,σ\)\]. This is a model](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D501 / Within the source-defined scope, 退出权最大化函数 is adjudicated as RELATION: P_exit_max = max\[P_exit\(Ω,T,C,σ\)\]. This is a model
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

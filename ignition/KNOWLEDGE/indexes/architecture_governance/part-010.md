@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar\(ΔΦᵢ\)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-161fb2de3082a436 / 中文：M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar\(ΔΦᵢ\)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D342；被引用：—
+- [中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个门控面平均代价∝Φ/n随n减小，但总代价守恒。类比：修复桥的总成本取决于损坏程度而非构件数——构件越多每个修复量越少但总量不变。守恒律：复活总代价=拐点处](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a54ea7d7a9cb5589 / 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个门控面平均代价∝Φ/n随n减小，但总代价守恒。类比：修复桥的总成本取决于损坏程度而非构件数——构件越多每个修复量越少但总量不变。守恒律：复活总代价=拐点处
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：M3的D372与D328是同一现象不同表述。统一指标I_concentration = max\(ΔΦᵢ\)/ΣΔΦᵢ·\(1+ln\(n\)\)。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-56dfc8d3f6b4a396 / 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentration = max\(ΔΦᵢ\)/ΣΔΦᵢ·\(1+ln\(n\)\)。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D328, D372；被引用：—
 - [中文：M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c46c2a3ab0cc1366 / 中文：M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是平均场相变，普适类与Ising相同。
@@ -2487,20 +2502,5 @@
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dc63e0b37ca8e57a / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0b233e25c377b820 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a24a3423aa1c8aac / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4d9bfbd80688d083 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

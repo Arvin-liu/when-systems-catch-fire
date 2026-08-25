@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D4D024CC9666A15A / title: "修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍" / IMPLICIT-D4D024CC9666A15A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "倒U型统一生成定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-23DD248AF3E210D9 / title: "倒U型统一生成定理" / IMPLICIT-23DD248AF3E210D9 / IMPLICIT-A8002391595D3B5A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "倒U型统一生成定理"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A8002391595D3B5A / title: "倒U型统一生成定理" / IMPLICIT-A8002391595D3B5A / IMPLICIT-23DD248AF3E210D9

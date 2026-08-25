@@ -7,11 +7,11 @@
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Live attempts: total `5`；validated `0`；unreconciled `3`；observation-incomplete `2`；obligation `OPEN`；next action `RECONCILE_UNRECOVERED_ATTEMPTS`；source `ignition/data/operations/iterations/139/live-current-projection-r1.json`。
-- Foundation: function identity cards `5911`；function quarantine/pending `4864`；non-function claims `17023`；non-function quarantine/pending `4839`。
-- Knowledge Experience: cards `414`；changes `315`；layered readings `332`；search records `23266`；aliases `876`。
+- Foundation: function identity cards `5911`；function quarantine/pending `4864`；non-function claims `17031`；non-function quarantine/pending `4839`。
+- Knowledge Experience: cards `414`；changes `315`；layered readings `332`；search records `23274`；aliases `876`。
 - Fire Seeds: `64` seeds/clusters；`393` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`20` registered sync surfaces；`14` machine/human pairs。
-- Task lineage: current `IGNITION-20260825-139` `IN_PROGRESS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- Task lineage: current `IGNITION-20260825-139` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
 - Steering: `REPOSITORY_LOCAL_CURRENT`；`15` bounded modules；`4` integration surfaces；pilot `OFFLINE_SYNTHETIC_ONLY`；completion boundary `run_pass_is_not_goal_completion; independent completion contract and validator evidence remain required`。
 - Current environmental residuals: Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately.；T16_SYMPY_COUNTEREXAMPLE is explicitly classified as an environmental SymPy-unavailable residual from Task 121; this inventory does not change claim or proof status.。
 

@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "信号最优流速函数（凯利公式同构）"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-159154c1cd75bef3 / title: "信号最优流速函数（凯利公式同构）"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "信息-热力学-门控三统一定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2d85df6562f5488a / title: "信息-热力学-门控三统一定理"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "信息可区分性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9869BF1FFF319133 / title: "信息可区分性函数" / IMPLICIT-9869BF1FFF319133
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "信息守恒函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C5CD39AB1083E474 / title: "信息守恒函数" / IMPLICIT-C5CD39AB1083E474
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-8630579218f1e1a6 / V1-S2-E2: **现实案例：** 生命演化——开放边界，非线性演化，追求物种延续
   - 来源：`docs/meta-protocols/12-meta-protocols.md`
-  - 依赖：—；被引用：—
-- [V2 的效率不能通过外部化生命与生态代价实现；](../../../docs/governance/life-community-value-charter.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-52a525ee435677ab / V2 的效率不能通过外部化生命与生态代价实现；
-  - 来源：`docs/governance/life-community-value-charter.md`
-  - 依赖：—；被引用：—
-- [V2 高置信 2 条碰撞预审：机制级比对，均为「已有函数覆盖 / 不新增」，D597/D599 反向语境误触发被识破](../../../outputs/audit/agent-collision-phase-closeout-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4e36a045efa4daa3 / V2 高置信 2 条碰撞预审：机制级比对，均为「已有函数覆盖 / 不新增」，D597/D599 反向语境误触发被识破
-  - 来源：`outputs/audit/agent-collision-phase-closeout-20260708.md`
-  - 依赖：D597, D599；被引用：—
-- [V2、V3 未自行发明全成本公式或可逆性指数并冒充已验证标准；仅保留事实度量 pending。](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d2c2859e925c4028 / V2、V3 未自行发明全成本公式或可逆性指数并冒充已验证标准；仅保留事实度量 pending。
-  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
   - 依赖：—；被引用：—

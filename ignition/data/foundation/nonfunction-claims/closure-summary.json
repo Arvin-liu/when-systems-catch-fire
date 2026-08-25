@@ -1,26 +1,26 @@
 {
   "active_conclusion_rebounds": 0,
   "assertion_type_distribution": {
-    "DESCRIPTIVE": 361,
-    "EMPIRICAL": 4335,
-    "INTERPRETIVE": 2758,
+    "DESCRIPTIVE": 362,
+    "EMPIRICAL": 4338,
+    "INTERPRETIVE": 2760,
     "MATHEMATICAL": 2364,
     "METAPHYSICAL": 741,
-    "NORMATIVE": 152,
-    "UNRESOLVED": 6312
+    "NORMATIVE": 153,
+    "UNRESOLVED": 6313
   },
   "blocked_conclusion_rebounds": 1,
-  "candidate_fragments": 29728,
-  "canonical_claims": 17023,
+  "candidate_fragments": 29737,
+  "canonical_claims": 17031,
   "claim_class_distribution": {
-    "CROSS_DOMAIN_CORRESPONDENCE": 2304,
-    "DESCRIPTIVE_REPOSITORY_CLAIM": 361,
-    "EMPIRICAL_OR_LITERATURE_CLAIM": 1998,
-    "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 700,
+    "CROSS_DOMAIN_CORRESPONDENCE": 2306,
+    "DESCRIPTIVE_REPOSITORY_CLAIM": 362,
+    "EMPIRICAL_OR_LITERATURE_CLAIM": 2000,
+    "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 701,
     "INTERPRETATION_OR_FRAMEWORK_CLAIM": 454,
     "LAW_OR_PRINCIPLE_CLAIM": 191,
-    "MECHANISM_OR_CAUSAL_CLAIM": 2138,
-    "NORMATIVE_OR_GOVERNANCE_CLAIM": 152,
+    "MECHANISM_OR_CAUSAL_CLAIM": 2139,
+    "NORMATIVE_OR_GOVERNANCE_CLAIM": 153,
     "ONTOLOGICAL_OR_METAPHYSICAL_CLAIM": 741,
     "PREDICTION_OR_FORECAST": 199,
     "THEOREM_OR_MATHEMATICAL_CLAIM": 2364,
@@ -30,7 +30,7 @@
   "conclusion_rebound_candidates": 59,
   "dependency_edges": 5620,
   "disposition_distribution": {
-    "ACCEPTED_AS_DEFINITION": 3390,
+    "ACCEPTED_AS_DEFINITION": 3398,
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
     "HISTORICAL_ONLY": 7145,
     "PENDING_EMPIRICAL_TEST": 870,
@@ -49,11 +49,11 @@
   "explicit_quarantine_or_pending": 4839,
   "explicitly_unresolved_dependency_edges": 52,
   "external_evidence_distribution": {
-    "E0": 9872,
+    "E0": 9880,
     "E1": 7151
   },
   "mathematical_maturity_distribution": {
-    "M0": 14411,
+    "M0": 14419,
     "M1": 2607,
     "M3": 1,
     "M4": 3,
@@ -64,7 +64,7 @@
   "registry_closed": true,
   "source_base_commit": "ebe723fbf544f3fa1a87706e82493319d9f0af7e",
   "source_coverage_distribution": {
-    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 28,
+    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 34,
     "EXCLUDED_GENERATED_PROJECTION_EXCLUDED": 247,
     "EXCLUDED_KNOWLEDGE_SOURCE_EXPLICIT_ONLY": 7,
     "EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE": 4,
@@ -76,5 +76,5 @@
     "SCANNED_REGISTERED": 2324
   },
   "task_id": "IGNITION-CORPUS-WIDE-NONFUNCTION-CLAIM-ADJUDICATION-AND-EVIDENCE-LINEAGE-CLOSURE-R1-20260729",
-  "tracked_files_accounted": 4728
+  "tracked_files_accounted": 4734
 }

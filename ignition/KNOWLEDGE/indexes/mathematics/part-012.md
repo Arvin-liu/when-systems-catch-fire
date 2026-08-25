@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），β由ε₇决定（策略偏离最远）。三重发散同步。核心函数：\[D141\]\(docs/zh/functions/item](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-98c71b91cf7850a2 / 中文：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），β由ε₇决定（策略偏离最远）。三重发散同步。核心函数：\[D141\]\(docs/zh/functions/item
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D141；被引用：—
+- [中文：本轮对话之前的公众号碰撞内容（唐宋钱荒、《主角》、《看见中国村镇》）与点火框架的跨域普适性验证。唐宋钱荒验证了门控面单一化导致系统锁定的规律（C-655已有），《主角》退出权让渡验证了提议者消耗函数，《看见中国村镇》退出权梯度验证了等](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-73d37109de031788 / 中文：本轮对话之前的公众号碰撞内容（唐宋钱荒、《主角》、《看见中国村镇》）与点火框架的跨域普适性验证。唐宋钱荒验证了门控面单一化导致系统锁定的规律（C-655已有），《主角》退出权让渡验证了提议者消耗函数，《看见中国村镇》退出权梯度验证了等
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：案例说明："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整。核心函数：\[D111\]\(docs/zh/func](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1ab1209d781608dd / 中文：案例说明："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整。核心函数：\[D111\]\(docs/zh/func
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D111；被引用：—
 - [中文：案例说明：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e7876f0d36847f96 / 中文：案例说明：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-b45f7f1fe227683a / 从这条案例看，中文：本轮对话之前的公众号碰撞内容（唐宋钱荒、《主角》、《看见中国村镇》）与点火框架的跨域普适性验证。唐宋钱荒验证了门控面单一化导致系统锁… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明："We家族"认同被验证但协作系统未建 关键发现：第4步跑通但搭房失败 English: Rule-based Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bb177fbf3835b498 / 从这条案例看，中文：案例说明："We家族"认同被验证但协作系统未建 关键发现：第4步跑通但搭房失败 English: Rule-based Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-415ff3de7f32281d / 从这条案例看，中文：案例说明："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性 Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7d8638f20730510c / 从这条案例看，中文：案例说明：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性 Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A8, A9；被引用：—

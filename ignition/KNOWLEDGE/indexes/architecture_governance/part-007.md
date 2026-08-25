@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Prior 121Q5 status `MIXED_OR_UNVERIFIED` → now **`VERIFIED_HY3`**. Full task executed by a single Hy3 runtime; no model](../../../data/external-research/121-fulltext-resolver/121q6/pr41-body.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dab61d02036e1e17 / Prior 121Q5 status `MIXED_OR_UNVERIFIED` → now **`VERIFIED_HY3`**. Full task executed by a single Hy3 runtime; no model
+  - 来源：`data/external-research/121-fulltext-resolver/121q6/pr41-body.md`
+  - 依赖：—；被引用：—
+- [Privacy classes and prohibited inference are validated locally; public publication remains the existing Results Book/pub](../../../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-74fc8b8245464e0c / Privacy classes and prohibited inference are validated locally; public publication remains the existing Results Book/pub
+  - 来源：`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`
+  - 依赖：—；被引用：—
 - [private SQLite/session databases, OpenClaw memory, and the OpenClaw internal](../../../docs/architecture/openclaw-adapter-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-08de5f737c0799fd / private SQLite/session databases, OpenClaw memory, and the OpenClaw internal
@@ -1172,6 +1182,11 @@
 - [stale_knowledge: the earlier Task 121 pre-release delta naming the Step 09 tip is historical branch-progress evidence an](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-212dd5e0bc8c6a3a / stale_knowledge: the earlier Task 121 pre-release delta naming the Step 09 tip is historical branch-progress evidence an
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [stale_knowledge: the historical Task138 prose that treated the second invocation as forbidden remains immutable historic](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6b9e466a47b4b8ae / stale_knowledge: the historical Task138 prose that treated the second invocation as forbidden remains immutable historic
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [stale_knowledge: the old Task138 statement that the second invocation was forbidden is historical Task138 knowledge only](../../../STATE-CHANGELOG.md)
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-564aff6fc907beee / This public artifact records the accepted 12-unit source-family verification.
   - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [This report aggregates the already completed D1 unified validator, D2 end-to-end acceptance, and D3 local defensive reje](../../../reports/operations/121Q32I-phase-d-validation-closeout.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-19c27386c7e7f30e / This report aggregates the already completed D1 unified validator, D2 end-to-end acceptance, and D3 local defensive reje
-  - 来源：`reports/operations/121Q32I-phase-d-validation-closeout.md`
-  - 依赖：D1, D2, D3；被引用：—
-- [This report is an engineering/publication artifact only. It does not imply](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3d0b07f598e8886a / This report is an engineering/publication artifact only. It does not imply
-  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [This report is repository-local Current-State synchronization and deterministic navigation evidence](../../../reports/operations/ignition-129-step20-current-sync.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e49b9d900d2f0eb5 / This report is repository-local Current-State synchronization and deterministic navigation evidence
-  - 来源：`reports/operations/ignition-129-step20-current-sync.md`
   - 依赖：—；被引用：—

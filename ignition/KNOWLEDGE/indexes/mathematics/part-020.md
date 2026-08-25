@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验与本体断言必须先按\[未来断言准入协议\]\(./foundation/future-claim-admission-protocol.md\)进入 task-100 registry，](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3bfc6a762714cf9d / 非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验与本体断言必须先按\[未来断言准入协议\]\(./foundation/future-claim-admission-protocol.md\)进入 task-100 registry，
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不](../../ASSET-CARDS.md#asset-nfc-921e43a466f461f8)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-921e43a466f461f8 / 非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不 / 非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不能冒充同构，历史撤回不能因改名恢复。
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [非函数断言、十三门、证据谱系、依赖图、结论防回弹与公开上限：data/foundation/nonfunction-claims/ 与 docs/foundation/nonfunction-claim-adjudication-index](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3b26daaa94e895b5 / 非函数断言、十三门、证据谱系、依赖图、结论防回弹与公开上限：data/foundation/nonfunction-claims/ 与 docs/foundation/nonfunction-claim-adjudication-index
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
 - [非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差,再进入各自领域](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-0c5901e46d6fa065 / 非对称门在跨学科合作中 — 先在共享域建立沟通降低意识落差,再进入各自领域

@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [将 T2 从无条件普遍律改写为明确载体上的零吸收命题，并加入零因子环与矩阵反例边界。](../../../docs/foundation/historical-correction-log.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-31a61c27d1508642 / 将 T2 从无条件普遍律改写为明确载体上的零吸收命题，并加入零因子环与矩阵反例边界。
+  - 来源：`docs/foundation/historical-correction-log.md`
+  - 依赖：T2；被引用：—
+- [将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 `FOUNDATION.md`，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion gra](../../../docs/foundation/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-344d15562acc65ea / 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 `FOUNDATION.md`，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion gra
+  - 来源：`docs/foundation/README.md`
+  - 依赖：—；被引用：—
+- [将失败案例、失败类型、反例和修正机制反馈到函数与案例治理。](../../../data/function_dependency.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-197104a393ad4ffe / 将失败案例、失败类型、反例和修正机制反馈到函数与案例治理。
+  - 来源：`data/function_dependency.csv`
+  - 依赖：—；被引用：—
 - [将数学表达压缩为历史函数来源可读格式。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-99468e292c9d641c / 将数学表达压缩为历史函数来源可读格式。
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-6887e4ab95ace350 / 最小因果：社会把「努力」绑人格价值 → 高强度努力仍自我贬低 → 「努力是策略非人格证明」（B6/A11/A12）。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
   - 依赖：A11, A12；被引用：—
-- [最强可保留的有界命题是：把所有状态压成一个等价类的商映射不能保存非恒定可观测量；零门只退化其声明的读出，不等于世界、状态空间或全部物理信息消失。该命题仍需独立形式证明工件，不能被包装成物理学 no-go theorem。](../../../docs/foundation/physics-asset-correction-20260729.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b6840e89d56b7668 / 最强可保留的有界命题是：把所有状态压成一个等价类的商映射不能保存非恒定可观测量；零门只退化其声明的读出，不等于世界、状态空间或全部物理信息消失。该命题仍需独立形式证明工件，不能被包装成物理学 no-go theorem。
-  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
-  - 依赖：—；被引用：—
-- [最终判断仍应回到 \[项目现状\]\(./project-current-state.md\)、\[生命共同体价值宪章\]\(./governance/life-community-value-charter.md\)、\[现行架构\]\(../ARCHITEC](../../../docs/ai-assistant-usage-reference.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-b2b9b7683ac55348 / 最终判断仍应回到 \[项目现状\]\(./project-current-state.md\)、\[生命共同体价值宪章\]\(./governance/life-community-value-charter.md\)、\[现行架构\]\(../ARCHITEC
-  - 来源：`docs/ai-assistant-usage-reference.md`
-  - 依赖：—；被引用：—
-- [最终处置使用 `KEEP_AS_*`、`REWRITE_AND_RETEST`、`DOWNGRADE_TO_*`、`QUARANTINE_UNTIL_DEFINED`、`WITHDRAW_PUBLIC_CLAIM`、`REJECT_AS_I](../../../docs/foundation/claim-governance-and-function-identity.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3a3ae5ed81650258 / 最终处置使用 `KEEP_AS_*`、`REWRITE_AND_RETEST`、`DOWNGRADE_TO_*`、`QUARANTINE_UNTIL_DEFINED`、`WITHDRAW_PUBLIC_CLAIM`、`REJECT_AS_I
-  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
-  - 依赖：—；被引用：—

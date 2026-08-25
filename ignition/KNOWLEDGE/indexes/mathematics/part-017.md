@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [最强可保留的有界命题是：把所有状态压成一个等价类的商映射不能保存非恒定可观测量；零门只退化其声明的读出，不等于世界、状态空间或全部物理信息消失。该命题仍需独立形式证明工件，不能被包装成物理学 no-go theorem。](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b6840e89d56b7668 / 最强可保留的有界命题是：把所有状态压成一个等价类的商映射不能保存非恒定可观测量；零门只退化其声明的读出，不等于世界、状态空间或全部物理信息消失。该命题仍需独立形式证明工件，不能被包装成物理学 no-go theorem。
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：—；被引用：—
+- [最终判断仍应回到 \[项目现状\]\(./project-current-state.md\)、\[生命共同体价值宪章\]\(./governance/life-community-value-charter.md\)、\[现行架构\]\(../ARCHITEC](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-b2b9b7683ac55348 / 最终判断仍应回到 \[项目现状\]\(./project-current-state.md\)、\[生命共同体价值宪章\]\(./governance/life-community-value-charter.md\)、\[现行架构\]\(../ARCHITEC
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [最终处置使用 `KEEP_AS_*`、`REWRITE_AND_RETEST`、`DOWNGRADE_TO_*`、`QUARANTINE_UNTIL_DEFINED`、`WITHDRAW_PUBLIC_CLAIM`、`REJECT_AS_I](../../../docs/foundation/claim-governance-and-function-identity.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3a3ae5ed81650258 / 最终处置使用 `KEEP_AS_*`、`REWRITE_AND_RETEST`、`DOWNGRADE_TO_*`、`QUARANTINE_UNTIL_DEFINED`、`WITHDRAW_PUBLIC_CLAIM`、`REJECT_AS_I
+  - 来源：`docs/foundation/claim-governance-and-function-identity.md`
+  - 依赖：—；被引用：—
 - [最终文件哈希、bytes 和行数在复制完成后写入 1111 result 回执；这些完整性检查只证明本地文件一致性，不提高历史 claim ceiling。](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f61b1edaacbc07af / 最终文件哈希、bytes 和行数在复制完成后写入 1111 result 回执；这些完整性检查只证明本地文件一致性，不提高历史 claim ceiling。
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-87af9e6e0d6aac8e / 已迁移的历史函数来源/0043-T33-A-B型门控面冲突函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T33；被引用：—
-- [已迁移的历史函数来源/0044-T34-量子引力Φ框架函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-ef217bde15f6830d / 已迁移的历史函数来源/0044-T34-量子引力Φ框架函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T34；被引用：—
-- [已迁移的历史函数来源/0045-T35-σ_Planck精确值.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-47eedb511b2e4061 / 已迁移的历史函数来源/0045-T35-σ_Planck精确值.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T35；被引用：—
-- [已迁移的历史函数来源/0046-T36-σ能标依赖函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-337d30a65ec9a4a0 / 已迁移的历史函数来源/0046-T36-σ能标依赖函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T36；被引用：—

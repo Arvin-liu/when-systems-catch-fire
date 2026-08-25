@@ -8,5 +8,5 @@
 - [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[#675｜公理化体系外层补齐×定理层验证\]\(docs/zh/cases/items/C-0675.md\) → - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0430}\)=1\].
 - [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0431}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-03.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-03.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → title: "倒U型统一生成定理"
-- [第 006 片](./operations_evidence/part-006.md)：2501—2967；title: "倒U型统一生成定理" → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → title: "信源可遮蔽 — Shannon假设信源熵客观给定，但点火发现εaware可被H遮蔽压低→Fintent↓→信源质量下降 / 信源可obscuration - Shannon假设信源熵客观给定, 但Ignition发现εaware可被Hobscuration压低 -> Fintent↓ -> 信源质量下降"
+- [第 006 片](./operations_evidence/part-006.md)：2501—2969；title: "修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍" → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

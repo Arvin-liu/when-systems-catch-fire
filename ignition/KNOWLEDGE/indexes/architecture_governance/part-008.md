@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [This report aggregates the already completed D1 unified validator, D2 end-to-end acceptance, and D3 local defensive reje](../../../reports/operations/121Q32I-phase-d-validation-closeout.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-19c27386c7e7f30e / This report aggregates the already completed D1 unified validator, D2 end-to-end acceptance, and D3 local defensive reje
+  - 来源：`reports/operations/121Q32I-phase-d-validation-closeout.md`
+  - 依赖：D1, D2, D3；被引用：—
+- [This report is an engineering/publication artifact only. It does not imply](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3d0b07f598e8886a / This report is an engineering/publication artifact only. It does not imply
+  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
+  - 依赖：—；被引用：—
+- [This report is repository-local Current-State synchronization and deterministic navigation evidence](../../../reports/operations/ignition-129-step20-current-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e49b9d900d2f0eb5 / This report is repository-local Current-State synchronization and deterministic navigation evidence
+  - 来源：`reports/operations/ignition-129-step20-current-sync.md`
+  - 依赖：—；被引用：—
 - [This review was executed with **model=qclaw/pool-kimi-k2.7-code-highspeed, thinking=adaptive**. The task file originally](../../../reports/external-research/121-function-paradigm-fulltext-review-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e77695b90d835c5c / This review was executed with **model=qclaw/pool-kimi-k2.7-code-highspeed, thinking=adaptive**. The task file originally
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-23d6aef5b7f97fdf / \| \[C-519\]\( \) \| \[Higgs相变验证 — 职业选择：
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D146；被引用：—
-- [\| \[C-51\]\( \) \| \[丰田生产方式\]\( \) \| 员工可辞职且行业有下家，"丰田人"认同经退出权验证 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b32929c1c90d5826 / \| \[C-51\]\( \) \| \[丰田生产方式\]\( \) \| 员工可辞职且行业有下家，"丰田人"认同经退出权验证 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-520\]\( \) \| \[Weinberg角验证 — 三个维](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-006c170421e607bf / \| \[C-520\]\( \) \| \[Weinberg角验证 — 三个维
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D147；被引用：—
-- [\| \[C-522\]\( \) \| \[跑动耦合验证 — 投资决策：秒级观](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-33615c701d79d5fb / \| \[C-522\]\( \) \| \[跑动耦合验证 — 投资决策：秒级观
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D149；被引用：—

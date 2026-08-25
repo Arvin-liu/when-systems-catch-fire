@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0541-T42-哥德尔不完备性历史系统实例化函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f2dc35c9fb6f0ba4 / 已迁移的历史函数来源/0541-T42-哥德尔不完备性历史系统实例化函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T42；被引用：—
+- [已迁移的历史函数来源/0542-T43-祥瑞符号系统稳定性指示器函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-20ce433156ad1a47 / 已迁移的历史函数来源/0542-T43-祥瑞符号系统稳定性指示器函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T43；被引用：—
+- [已迁移的历史函数来源/0543-T44-元层面收敛与子系统展开冲突函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9388b9f24afeee6c / 已迁移的历史函数来源/0543-T44-元层面收敛与子系统展开冲突函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：T44；被引用：—
 - [已迁移的历史函数来源/0544-T45-外部冲击与系统价值归零函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-2dffc3035793dad5 / 已迁移的历史函数来源/0544-T45-外部冲击与系统价值归零函数.md
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-b1a8827c52c0f31f / 非人类生命原则
   - 来源：`docs/governance/life-community-value-charter.md`
-  - 依赖：—；被引用：—
-- [非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验与本体断言必须先按\[未来断言准入协议\]\(./foundation/future-claim-admission-protocol.md\)进入 task-100 registry，](../../../docs/USAGE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3bfc6a762714cf9d / 非函数型定理、规律、机制、因果、不可能性、跨域对应、预测、经验与本体断言必须先按\[未来断言准入协议\]\(./foundation/future-claim-admission-protocol.md\)进入 task-100 registry，
-  - 来源：`docs/USAGE.md`
-  - 依赖：—；被引用：—
-- [非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不](../../ASSET-CARDS.md#asset-nfc-921e43a466f461f8)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-921e43a466f461f8 / 非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不 / 非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不能冒充同构，历史撤回不能因改名恢复。
-  - 来源：`AI-HANDOFF.md`
-  - 依赖：—；被引用：—
-- [非函数断言、十三门、证据谱系、依赖图、结论防回弹与公开上限：data/foundation/nonfunction-claims/ 与 docs/foundation/nonfunction-claim-adjudication-index](../../../AI-HANDOFF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-3b26daaa94e895b5 / 非函数断言、十三门、证据谱系、依赖图、结论防回弹与公开上限：data/foundation/nonfunction-claims/ 与 docs/foundation/nonfunction-claim-adjudication-index
-  - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
