@@ -58,7 +58,7 @@ R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、�
 - live_attempt_projection: total `5`；validated `0`；unreconciled `3`；observation-incomplete `2`；obligation `OPEN`；next action `RECONCILE_UNRECOVERED_ATTEMPTS`；source `ignition/data/operations/iterations/139/live-current-projection-r1.json`。
 - architecture_counts: `registry=95; visible_nodes=83; visible_edges=88`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260825-139` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `8a028dbe8bd07ab4c174237f639763fe987c69fdaa6f428642421d517c791119`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `3867684638c641d86c683f99db4fcd5b7443d565eeabbf123684adbe22db6a58`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
