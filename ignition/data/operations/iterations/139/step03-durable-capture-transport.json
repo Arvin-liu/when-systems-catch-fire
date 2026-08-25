@@ -1,0 +1,37 @@
+{
+  "schema_version": "ignition-139-step03-durable-capture-transport-r1",
+  "task_id": "IGNITION-20260825-139",
+  "step": "03",
+  "status": "PASS_DURABLE_CAPTURE_BEFORE_CONTEXT",
+  "transport": {
+    "implementation": "ignition/agent_federation/live_transport.py",
+    "capture_contract": "ignition/agent_federation/live_capture.py",
+    "capture_initialized_before_process": true,
+    "stdout_stderr_stream_to_spool": true,
+    "bounded_context_view": true,
+    "context_overflow_terminates_process": false,
+    "durable_capture_error_fails_closed": true,
+    "capture_finalized_before_result_return": true,
+    "raw_spool_cleanup": "deferred_until_consumer_or_reconciliation",
+    "pid_and_process_group_projection": "REDACTED_OPAQUE_REF"
+  },
+  "evidence": {
+    "large_output_capture": "PASS_1MB_PLUS_BYTES_AND_DIGEST",
+    "public_event_sequence_capture": "PASS",
+    "timeout_capsule": "PASS",
+    "structured_result_attach_after_process_finalize": "PASS",
+    "legacy_transport_regression": {
+      "tests": 34,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0
+    },
+    "durable_transport_regression": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0
+    }
+  },
+  "claim_ceiling": "Repository-local bounded process transport and host-side capture evidence only; no live external completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}

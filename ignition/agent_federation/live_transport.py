@@ -24,6 +24,7 @@ import time
 from typing import Any, Callable, Mapping, Sequence
 
 from .contracts import FederationContractError
+from .live_capture import LiveCaptureError, LiveCaptureWriter
 
 
 class LiveTransportError(FederationContractError):
@@ -297,6 +298,12 @@ class LiveProcessResult:
     wall_clock_order: str = "UNOBSERVED"
     runtime_scratch_receipt: Mapping[str, Any] | None = None
     runtime_scratch_cleanup_status: str = "NOT_USED"
+    capture_capsule: Mapping[str, Any] | None = None
+    capture_writer: LiveCaptureWriter | None = None
+    captured_events: tuple[Mapping[str, Any], ...] = ()
+    context_truncated: bool = False
+    capture_error: str | None = None
+    capture_parse_error: str | None = None
 
 
 def interface_digest(public_help: str) -> str:
@@ -411,6 +418,7 @@ class LiveProcessTransport:
     """Run exactly one bounded public process with an explicit cwd and env."""
 
     supports_runtime_scratch = True
+    supports_durable_capture = True
 
     def __init__(
         self,
@@ -441,6 +449,7 @@ class LiveProcessTransport:
         timeout_seconds: float,
         input_text: str | None = None,
         env_overrides: Mapping[str, str] | None = None,
+        capture: LiveCaptureWriter | None = None,
     ) -> LiveProcessResult:
         argv_tuple = _validate_argv(argv, self.executable_allowlist)
         root = Path(cwd)
@@ -453,19 +462,32 @@ class LiveProcessTransport:
                 raise LiveTransportError("input_text must be text or null")
             if len(input_text.encode("utf-8")) > self.input_cap_bytes:
                 raise LiveTransportError("input_text exceeds the live input cap")
+        if capture is not None:
+            if not isinstance(capture, LiveCaptureWriter) or capture._finalized:
+                raise LiveTransportError("durable capture must be initialized and open before dispatch")
+            if not capture.spool_path.is_dir():
+                raise LiveTransportError("durable capture spool is unavailable before dispatch")
         environment = _sanitized_env(self.env_allowlist, env_overrides)
         started_at = self._wall_clock()
         start = self._monotonic()
-        process = subprocess.Popen(
-            list(argv_tuple),
-            cwd=str(root),
-            env=environment,
-            stdin=subprocess.PIPE,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            shell=False,
-            start_new_session=True,
-        )
+        try:
+            process = subprocess.Popen(
+                list(argv_tuple),
+                cwd=str(root),
+                env=environment,
+                stdin=subprocess.PIPE,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                shell=False,
+                start_new_session=True,
+            )
+        except Exception:
+            if capture is not None:
+                capture.finalize(
+                    return_code=None, process_group_status="NOT_OBSERVED",
+                    capture_completeness="INCOMPLETE", cleanup=False,
+                )
+            raise
         if process.stdin is not None:
             try:
                 if input_text is not None:
@@ -484,9 +506,39 @@ class LiveProcessTransport:
         first_public_event_latency_ms: float | None = None
         timed_out = False
         output_truncated = False
+        context_truncated = False
+        capture_error: str | None = None
+        capture_parse_error: str | None = None
+        capture_pending = bytearray()
+        captured_events: list[Mapping[str, Any]] = []
         cleaned = False
         signals_sent: tuple[str, ...] = ()
         process_group_status = "UNKNOWN"
+
+        def consume_public_line(line: bytes) -> None:
+            nonlocal capture_parse_error
+            stripped = line.strip()
+            if not stripped:
+                return
+            if len(stripped) > 64 * 1024:
+                capture_parse_error = "PUBLIC_EVENT_LINE_TOO_LARGE"
+                return
+            try:
+                parsed = json.loads(stripped.decode("utf-8"))
+            except (UnicodeDecodeError, json.JSONDecodeError):
+                capture_parse_error = "PUBLIC_EVENT_JSONL_MALFORMED"
+                return
+            if not isinstance(parsed, dict):
+                capture_parse_error = "PUBLIC_EVENT_NOT_OBJECT"
+                return
+            if capture is not None:
+                try:
+                    capture.record_public_event(parsed)
+                except LiveCaptureError as exc:
+                    capture_parse_error = "PUBLIC_EVENT_REJECTED"
+                    raise LiveTransportError("public event failed capture privacy gate") from exc
+            captured_events.append(parsed)
+
         deadline = start + float(timeout_seconds)
         while selector.get_map():
             remaining = deadline - self._monotonic()
@@ -512,9 +564,34 @@ class LiveProcessTransport:
                 target = buffers[key.data]
                 digests[key.data].update(chunk)
                 byte_counts[key.data] += len(chunk)
-                target.extend(chunk)
-                if len(target) > self.output_cap_bytes:
+                if capture is not None:
+                    try:
+                        if key.data == "stdout":
+                            capture.write_stdout(chunk)
+                            capture_pending.extend(chunk)
+                            if len(capture_pending) > 64 * 1024 and b"\n" not in capture_pending:
+                                capture_parse_error = "PUBLIC_EVENT_LINE_TOO_LARGE"
+                                capture_pending.clear()
+                            while b"\n" in capture_pending:
+                                line, _, remainder = capture_pending.partition(b"\n")
+                                capture_pending = bytearray(remainder)
+                                consume_public_line(line)
+                        else:
+                            capture.write_stderr(chunk)
+                    except (LiveCaptureError, LiveTransportError) as exc:
+                        capture_error = type(exc).__name__
+                        output_truncated = True
+                if capture is None:
+                    target.extend(chunk)
+                else:
+                    remaining = self.output_cap_bytes - len(target)
+                    if remaining > 0:
+                        target.extend(chunk[:remaining])
+                    if len(chunk) > max(0, remaining):
+                        context_truncated = True
+                if capture is None and len(target) > self.output_cap_bytes:
                     output_truncated = True
+                if output_truncated:
                     process_group_status, signals_sent = _terminate_group(
                         process, descendant_streams_open=bool(selector.get_map()) and process.poll() is not None,
                     )
@@ -530,6 +607,11 @@ class LiveProcessTransport:
         for stream in (process.stdout, process.stderr):
             if stream is not None and not stream.closed:
                 stream.close()
+        if capture is not None and capture_pending:
+            try:
+                consume_public_line(bytes(capture_pending))
+            except LiveTransportError as exc:
+                capture_error = capture_error or type(exc).__name__
         if timed_out or output_truncated:
             if process.poll() is None:
                 process_group_status, signals_sent = _terminate_group(process)
@@ -557,6 +639,30 @@ class LiveProcessTransport:
             cleaned = False
         stdout = bytes(buffers["stdout"][: self.output_cap_bytes]).decode("utf-8", errors="replace")
         stderr = bytes(buffers["stderr"][: self.output_cap_bytes]).decode("utf-8", errors="replace")
+        capture_capsule: Mapping[str, Any] | None = None
+        if capture is not None:
+            completeness = "INCOMPLETE" if capture_error is not None or process_group_status in {"UNKNOWN", "CHILD_LEFT_BEHIND"} else "COMPLETE"
+            try:
+                capture_capsule = capture.finalize(
+                    return_code=returncode,
+                    timed_out=timed_out,
+                    process_group_status=process_group_status if process_group_status != "NOT_APPLICABLE" else "NOT_OBSERVED",
+                    capture_completeness=completeness,
+                    output_truncated=bool(output_truncated),
+                    cleanup=False,
+                    secret_scan_status="FAIL" if capture_error else "PASS",
+                )
+            except LiveCaptureError as exc:
+                capture_error = capture_error or type(exc).__name__
+                capture_capsule = capture.finalize(
+                    return_code=returncode,
+                    timed_out=timed_out,
+                    process_group_status="UNKNOWN",
+                    capture_completeness="INCOMPLETE",
+                    output_truncated=True,
+                    cleanup=False,
+                    secret_scan_status="FAIL",
+                )
         return LiveProcessResult(
             argv_tuple, str(root), returncode, stdout, stderr, duration_ms, timed_out, output_truncated, cleaned,
             started_at=started_at, ended_at=ended_at, timeout_seconds=float(timeout_seconds),
@@ -566,6 +672,9 @@ class LiveProcessTransport:
             stdout_bytes=byte_counts["stdout"], stderr_bytes=byte_counts["stderr"],
             stdout_digest=digests["stdout"].hexdigest(), stderr_digest=digests["stderr"].hexdigest(),
             wall_clock_order=_wall_clock_order(started_at, ended_at),
+            capture_capsule=capture_capsule, capture_writer=capture,
+            captured_events=tuple(captured_events), context_truncated=context_truncated,
+            capture_error=capture_error, capture_parse_error=capture_parse_error,
         )
 
     def run(
@@ -578,12 +687,14 @@ class LiveProcessTransport:
         env_overrides: Mapping[str, str] | None = None,
         runtime_scratch: RuntimeScratchLease | None = None,
         runtime_env_keys: Sequence[str] = ("HOME", "TMPDIR"),
+        capture: LiveCaptureWriter | None = None,
     ) -> LiveProcessResult:
         """Run one process and, when supplied, close one scratch lease."""
 
         if runtime_scratch is None:
             return self._run_process(
                 argv, cwd=cwd, timeout_seconds=timeout_seconds, input_text=input_text, env_overrides=env_overrides,
+                capture=capture,
             )
         if not isinstance(runtime_scratch, RuntimeScratchLease):
             raise LiveTransportError("runtime_scratch must be a RuntimeScratchLease")
@@ -611,6 +722,7 @@ class LiveProcessTransport:
         try:
             result = self._run_process(
                 argv, cwd=cwd, timeout_seconds=timeout_seconds, input_text=input_text, env_overrides=env_overrides,
+                capture=capture,
             )
         except Exception:
             cleanup_status = runtime_scratch.cleanup()

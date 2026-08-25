@@ -33,6 +33,7 @@ class LiveAttemptResult:
     state_history: tuple[Mapping[str, Any], ...]
     durable_record: Mapping[str, Any]
     claim_ceiling: str = "Bounded executor observation plus independent synthetic validation only; no Goal completion or external truth is inferred."
+    capture_capsule: Mapping[str, Any] | None = None
 
     @property
     def success(self) -> bool:
@@ -52,6 +53,7 @@ class LiveAttemptResult:
             "validation": self.validation.to_dict() if self.validation else None,
             "state_history": [dict(item) for item in self.state_history],
             "durable_record_state": durable_state,
+            "capture_capsule": dict(self.capture_capsule) if self.capture_capsule is not None else None,
             "claim_ceiling": self.claim_ceiling,
         }
 
@@ -121,6 +123,20 @@ def _transport_evidence(process: Any, *, observed_at: str, timeout_seconds: floa
     }
 
 
+def _close_capture(observation: LiveAdapterObservation, structured: Mapping[str, Any] | None, *, retain_for_reconciliation: bool) -> Mapping[str, Any] | None:
+    """Attach the bounded result and clean raw spool only after a durable receipt exists."""
+
+    writer = getattr(observation.process, "capture_writer", None)
+    capsule = getattr(observation.process, "capture_capsule", None)
+    if writer is None:
+        return capsule
+    if structured is not None:
+        capsule = writer.attach_structured_result(structured)
+    if not retain_for_reconciliation:
+        capsule = writer.cleanup_spool()
+    return capsule
+
+
 def execute_bounded_attempt(
     *,
     adapter: Any,
@@ -145,6 +161,7 @@ def execute_bounded_attempt(
     side_effect_observation = "READ_ONLY_UNCHANGED" if before_digest == after_digest and fixture.read_only_guard_observed() else "FORBIDDEN_EFFECT_OBSERVED"
     transport_evidence = _transport_evidence(observation.process, observed_at=observed_at, timeout_seconds=envelope.timeout_seconds)
     validation: LiveValidationReport | None = None
+    capture_capsule: Mapping[str, Any] | None = observation.process.capture_capsule
 
     if observation.process.timed_out:
         machine.mark_timeout(effect_known_no_effect=False)
@@ -193,6 +210,8 @@ def execute_bounded_attempt(
             os_validation = "FAIL"
             reconciliation = "NOT_REQUIRED"
 
+        capture_capsule = _close_capture(observation, structured, retain_for_reconciliation=False)
+
         receipt = LiveExecutorReceipt.build(
             task_id=envelope.task_id, dispatch_id=envelope.dispatch_id, attempt_id=envelope.attempt_id,
             executor_id=observation.executor_id, adapter_id=observation.adapter_id, state=final_state,
@@ -219,6 +238,7 @@ def execute_bounded_attempt(
         durable = coordinator.finalize_receipt(old_receipt, passed=receipt.state == "COMPLETED_VALIDATED", validation_ref="live-pilot-validator-136", actual_cost=_cost(observation, envelope.timeout_seconds))
 
     if observation.process.timed_out:
+        capture_capsule = _close_capture(observation, None, retain_for_reconciliation=True)
         receipt = LiveExecutorReceipt.build(
             task_id=envelope.task_id, dispatch_id=envelope.dispatch_id, attempt_id=envelope.attempt_id,
             executor_id=observation.executor_id, adapter_id=observation.adapter_id, state=final_state,
@@ -237,7 +257,10 @@ def execute_bounded_attempt(
             child_depth=child_depth,
         )
 
-    return LiveAttemptResult(receipt and observation, receipt, validation, tuple(item.to_dict() for item in machine.history), durable,)
+    return LiveAttemptResult(
+        receipt and observation, receipt, validation, tuple(item.to_dict() for item in machine.history), durable,
+        capture_capsule=capture_capsule,
+    )
 
 
 __all__ = ["LIVE_EXECUTION_SCHEMA", "LiveAttemptResult", "LiveExecutionError", "execute_bounded_attempt"]

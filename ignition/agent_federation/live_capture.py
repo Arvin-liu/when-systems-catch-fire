@@ -282,6 +282,47 @@ class LiveCaptureWriter:
         self._structured_digest = digest
         return f"{self.spool_ref}/structured-result"
 
+    def attach_structured_result(self, result: Mapping[str, Any]) -> dict[str, Any]:
+        """Attach a public result after process finalization without reopening raw spool."""
+
+        if not isinstance(result, Mapping):
+            raise LiveCaptureError("structured result must be an object")
+        _scan_public(result, "structured_result")
+        value = json.loads(json.dumps(result, ensure_ascii=False, sort_keys=True))
+        self._structured_result = value
+        self._structured_digest = sha256_json(value)
+        if not self._finalized or self._capsule is None:
+            self.record_structured_result(value)
+            return dict(self._capsule or {})
+        self._capsule["structured_result"] = {
+            "present": True,
+            "ref": f"{self.spool_ref}/structured-result",
+            "digest": self._structured_digest,
+        }
+        self._capsule = validate_capsule(self._capsule)
+        return dict(self._capsule)
+
+    def cleanup_spool(self) -> dict[str, Any]:
+        """Remove raw spool after reconciliation/consumption and update the capsule."""
+
+        if not self._finalized or self._capsule is None:
+            raise LiveCaptureError("capture must be finalized before spool cleanup")
+        if self._capsule["spool_cleanup_status"] == "CLEANED":
+            return dict(self._capsule)
+        try:
+            if self.spool_path.is_symlink() or (self.spool_path.exists() and any(path.is_symlink() for path in self.spool_path.rglob("*"))):
+                raise OSError("capture spool contains a symlink")
+            if self.spool_path.exists():
+                shutil.rmtree(self.spool_path)
+            status = "CLEANED" if not self.spool_path.exists() else "FAILED"
+        except OSError:
+            status = "FAILED"
+        self._capsule["spool_cleanup_status"] = status
+        if status == "FAILED":
+            self._capsule["finalization_state"] = "RECOVERY_REQUIRED"
+        self._capsule = validate_capsule(self._capsule)
+        return dict(self._capsule)
+
     def finalize(
         self,
         *,

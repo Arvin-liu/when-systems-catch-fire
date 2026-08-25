@@ -12,6 +12,7 @@ from typing import Any, Mapping, Sequence
 from .contracts import FederationContractError, canonical_json
 from .live_child_guard import CHILD_ENV_ALLOWLIST, LiveChildContext, LiveChildGuardError, build_synthetic_child_prompt
 from .live_bridge import LiveCapabilityLease, LiveDispatchEnvelope
+from .live_capture import LiveCaptureError, LiveCaptureWriter
 from .live_filesystem import (
     AUTH_SOURCE_MODE,
     PATH_ASSERTION_KEYS,
@@ -163,16 +164,26 @@ class LiveCodexAdapter:
         env_overrides: Mapping[str, str] | None = None,
         runtime_scratch: RuntimeScratchLease | None = None,
         runtime_env_keys: Sequence[str] = (),
+        capture: LiveCaptureWriter | None = None,
     ) -> LiveProcessResult:
         try:
             if runtime_scratch is not None:
                 if not getattr(self.transport, "supports_runtime_scratch", False):
                     raise LiveAdapterError("Codex R3 requires a transport with runtime scratch lifecycle support")
-                return self.transport.run(
-                    argv, cwd=self.workspace, timeout_seconds=timeout_seconds, env_overrides=env_overrides,
-                    runtime_scratch=runtime_scratch, runtime_env_keys=runtime_env_keys,
-                )
-            return self.transport.run(argv, cwd=self.workspace, timeout_seconds=timeout_seconds, env_overrides=env_overrides)
+                kwargs: dict[str, Any] = {
+                    "cwd": self.workspace, "timeout_seconds": timeout_seconds,
+                    "env_overrides": env_overrides, "runtime_scratch": runtime_scratch,
+                    "runtime_env_keys": runtime_env_keys,
+                }
+                if capture is not None:
+                    kwargs["capture"] = capture
+                return self.transport.run(argv, **kwargs)
+            if capture is not None and not getattr(self.transport, "supports_durable_capture", False):
+                raise LiveAdapterError("live dispatch requires a transport with durable capture support")
+            kwargs = {"cwd": self.workspace, "timeout_seconds": timeout_seconds, "env_overrides": env_overrides}
+            if capture is not None:
+                kwargs["capture"] = capture
+            return self.transport.run(argv, **kwargs)
         except (OSError, LiveTransportError) as exc:
             raise LiveAdapterError(f"Codex public process probe failed: {type(exc).__name__}") from exc
 
@@ -373,6 +384,23 @@ class LiveCodexAdapter:
                 if cleanup_status != RUNTIME_SCRATCH_CLEANED:
                     raise LiveAdapterError("Codex runtime scratch preflight failed and cleanup was not proven") from exc
                 raise
+        capture: LiveCaptureWriter | None = None
+        if getattr(self.transport, "supports_durable_capture", False):
+            try:
+                capture = LiveCaptureWriter.create(
+                    capture_id=f"capture-{envelope.attempt_id}",
+                    task_id=envelope.task_id,
+                    dispatch_id=envelope.dispatch_id,
+                    attempt_id=envelope.attempt_id,
+                    executor_id=self.executor_id,
+                    adapter_id=self.adapter_id,
+                    parent=self.runtime_scratch_parent,
+                    protected_roots=self._protected_roots(),
+                )
+            except LiveCaptureError as exc:
+                if runtime_scratch is not None and runtime_scratch.cleanup_status is None:
+                    runtime_scratch.cleanup()
+                raise LiveAdapterError("Codex durable capture could not be initialized") from exc
         try:
             process = self._run(
                 argv,
@@ -380,6 +408,7 @@ class LiveCodexAdapter:
                 env_overrides=child_env,
                 runtime_scratch=runtime_scratch,
                 runtime_env_keys=runtime_env_keys,
+                capture=capture,
             )
         except Exception:
             if runtime_scratch is not None and runtime_scratch.cleanup_status is None:
@@ -432,12 +461,13 @@ class LiveCodexAdapter:
         events: tuple[Mapping[str, Any], ...] = ()
         parsed = False
         parse_error = ""
-        if (
-            not process.timed_out
-            and not process.output_truncated
-            and process.stdout.strip()
-            and (runtime_scratch is None or runtime_cleanup_status == RUNTIME_SCRATCH_CLEANED)
-        ):
+        if process.capture_capsule is not None:
+            events = tuple(process.captured_events)
+            if process.capture_parse_error:
+                parse_error = process.capture_parse_error
+            elif events:
+                parsed = True
+        elif not process.timed_out and not process.output_truncated and process.stdout.strip() and (runtime_scratch is None or runtime_cleanup_status == RUNTIME_SCRATCH_CLEANED):
             try:
                 events = parse_bounded_jsonl(process.stdout)
                 parsed = True
@@ -448,7 +478,7 @@ class LiveCodexAdapter:
             _summary(self._probe()[0].stdout or self._probe()[0].stderr),
             self._probe()[1].stdout and interface_digest(self._probe()[1].stdout) or interface_digest(self._probe()[1].stderr),
             process, events, parsed, parse_error, _summary(process.stdout or process.stderr),
-            _response_digest(process.stdout), _session_pointer(events),
+            process.stdout_digest or _response_digest(process.stdout), _session_pointer(events),
             runtime_receipt, runtime_cleanup_status,
         )
 
@@ -486,9 +516,14 @@ class LiveHermesAdapter:
         self.model = model
         self._probe_cache: tuple[LiveProcessResult, LiveProcessResult] | None = None
 
-    def _run(self, argv: Sequence[str], timeout_seconds: float = 5) -> LiveProcessResult:
+    def _run(self, argv: Sequence[str], timeout_seconds: float = 5, *, capture: LiveCaptureWriter | None = None) -> LiveProcessResult:
         try:
-            return self.transport.run(argv, cwd=self.workspace, timeout_seconds=timeout_seconds)
+            kwargs: dict[str, Any] = {"cwd": self.workspace, "timeout_seconds": timeout_seconds}
+            if capture is not None:
+                if not getattr(self.transport, "supports_durable_capture", False):
+                    raise LiveAdapterError("live dispatch requires a transport with durable capture support")
+                kwargs["capture"] = capture
+            return self.transport.run(argv, **kwargs)
         except (OSError, LiveTransportError) as exc:
             raise LiveAdapterError(f"Hermes public process probe failed: {type(exc).__name__}") from exc
 
@@ -556,11 +591,36 @@ class LiveHermesAdapter:
 
     def dispatch(self, envelope: LiveDispatchEnvelope) -> LiveAdapterObservation:
         argv = self.build_argv(envelope)
-        process = self._run(argv, timeout_seconds=envelope.timeout_seconds)
+        capture: LiveCaptureWriter | None = None
+        if getattr(self.transport, "supports_durable_capture", False):
+            try:
+                capture = LiveCaptureWriter.create(
+                    capture_id=f"capture-{envelope.attempt_id}",
+                    task_id=envelope.task_id,
+                    dispatch_id=envelope.dispatch_id,
+                    attempt_id=envelope.attempt_id,
+                    executor_id=self.executor_id,
+                    adapter_id=self.adapter_id,
+                    protected_roots=(self.workspace,),
+                )
+            except LiveCaptureError as exc:
+                raise LiveAdapterError("Hermes durable capture could not be initialized") from exc
+        try:
+            process = self._run(argv, timeout_seconds=envelope.timeout_seconds, capture=capture)
+        except Exception:
+            if capture is not None and not capture._finalized:
+                capture.finalize(return_code=None, process_group_status="NOT_OBSERVED", capture_completeness="INCOMPLETE", cleanup=False)
+            raise
         events: tuple[Mapping[str, Any], ...] = ()
         parsed = False
         parse_error = ""
-        if not process.timed_out and not process.output_truncated and process.stdout.strip():
+        if process.capture_capsule is not None:
+            events = tuple(process.captured_events)
+            if process.capture_parse_error:
+                parse_error = process.capture_parse_error
+            elif events:
+                parsed = True
+        elif not process.timed_out and not process.output_truncated and process.stdout.strip():
             try:
                 value = json.loads(process.stdout.strip())
                 if not isinstance(value, dict):
@@ -573,7 +633,7 @@ class LiveHermesAdapter:
         help_text = help_result.stdout or help_result.stderr
         return LiveAdapterObservation(
             self.executor_id, self.adapter_id, _summary(version_result.stdout or version_result.stderr), interface_digest(help_text),
-            process, events, parsed, parse_error, _summary(process.stdout or process.stderr), _response_digest(process.stdout), None,
+            process, events, parsed, parse_error, _summary(process.stdout or process.stderr), process.stdout_digest or _response_digest(process.stdout), None,
         )
 
 
