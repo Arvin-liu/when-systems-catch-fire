@@ -1,0 +1,30 @@
+{
+  "schema_version": "ignition-141-step11-live-probe-and-independent-validation-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "11",
+  "status": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+  "admission_ref": "ignition/data/operations/iterations/141/step10-live-admission.json",
+  "probe": {
+    "attempts": [],
+    "live_dispatch_calls": 0,
+    "live_process_observed": false,
+    "inference_observation_status": "NOT_APPLICABLE_PRE_PROCESS",
+    "structured_result_status": "NOT_APPLICABLE",
+    "validated_completion_status": "NOT_VALIDATED",
+    "reconciliation_status": "NONE"
+  },
+  "independent_validator": {
+    "status": "NOT_STARTED_NO_LIVE_ATTEMPT",
+    "exact_binding_required": ["task_id", "dispatch_id", "attempt_id", "executor_id", "lease_digest", "workspace_digest", "capture_ref", "structured_result_digest"],
+    "validated_completion_count": 0
+  },
+  "safety": {
+    "blind_retry": false,
+    "live_inference_started": false,
+    "raw_spool_created": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "secret_content_read": false
+  },
+  "claim_ceiling": "No-live-attempt closure and validator binding requirements only; no executor process, inference, structured result, validated completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
