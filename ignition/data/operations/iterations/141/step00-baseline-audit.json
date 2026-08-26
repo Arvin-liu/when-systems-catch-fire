@@ -1,0 +1,87 @@
+{
+  "schema_version": "ignition-141-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "00",
+  "status": "PASS",
+  "baseline": {
+    "formal_origin_main_expected": "77f8fe099dbadfc7f7f32314186369c825e5f31d",
+    "formal_origin_main_observed": "77f8fe099dbadfc7f7f32314186369c825e5f31d",
+    "formal_remote_main_observed": "77f8fe099dbadfc7f7f32314186369c825e5f31d",
+    "formal_worktree": "/Users/zhiyuan/Agent 工作区/when-systems-catch-fire-141",
+    "formal_branch": "codex/ignition-141-live-state-semantics-structured-result-reliability-r1-20260826",
+    "control_ref": "origin/relay/current@aa5954a71366400b5a52af432cb985869db1c8ed",
+    "task_definition_commit": "b2d5107d",
+    "task140_formal_head": "77f8fe099dbadfc7f7f32314186369c825e5f31d",
+    "supplied_directory_is_git_worktree": false,
+    "live_inference_started": false,
+    "live_probe_performed": false
+  },
+  "preflight": {
+    "fresh_worktree_clean": true,
+    "current_facts": "PASS",
+    "current_snapshot": "PASS",
+    "current_state_sync": "PASS",
+    "current_projection_determinism": "PASS_TWO_BYTE_IDENTICAL_PASSES",
+    "task140_exact_binding_validator": "PASS",
+    "targeted_tests": {
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_observation_plane ignition.tests.test_live_current_projection ignition.tests.test_live_observation_events ignition.tests.test_live_attempt_ledger ignition.tests.test_task140_adversarial_matrix"
+    }
+  },
+  "task140_publication_evidence": {
+    "step11_attempt": {
+      "task_id": "IGNITION-20260826-140",
+      "dispatch_id": "dispatch-140-live-01",
+      "attempt_id": "attempt-140-live-01",
+      "executor_id": "external.codex",
+      "state": "MALFORMED_RESULT",
+      "live_dispatch_calls": 1,
+      "live_process_started": true,
+      "live_process_return_code": 1,
+      "capture_completeness": "COMPLETE",
+      "process_group_status": "CONFIRMED_GONE",
+      "structured_result_present": false,
+      "validator_status": "NOT_RUN",
+      "record_hash": "dea2793e9ddbb93631c3ea5f0fc7d1554e9ab529c00a6207e7bad1c0181d0049"
+    },
+    "formal_main_publication": "77f8fe099dbadfc7f7f32314186369c825e5f31d",
+    "step15_candidate_regression": "PASS",
+    "step16_fresh_clone_publication": "PASS",
+    "current_projection_digest": "b1f2802cb6bf17d73e6f775f1bc544c10f4311c9a431af60945109c77b49c1f3"
+  },
+  "semantic_audit": {
+    "live_process_vs_completion": {
+      "source": "ignition/data/operations/iterations/140/live-current-projection-r2.json",
+      "canonical_attempt_live_process_started": true,
+      "canonical_attempt_validated_completion": false,
+      "canonical_attempt_unreconciled": false,
+      "derived_current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED",
+      "derived_next_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+      "finding": "CURRENT_PROJECTION_CONFLATES_PROCESS_OBSERVATION_WITH_VALIDATED_COMPLETION"
+    },
+    "dispatch_vs_inference": {
+      "source": "ignition/tools/run_task140_single_live_attempt.py",
+      "source_expression": "live_inference_started = transport.live_dispatch_calls == 1",
+      "dispatch_calls": 1,
+      "independent_inference_marker": "NOT_OBSERVED",
+      "finding": "DISPATCH_TRANSPORT_CROSSING_MUST_NOT_BE_PROMOTED_TO_INFERENCE_OBSERVED"
+    },
+    "malformed_result_forensics": {
+      "state": "MALFORMED_RESULT",
+      "return_code": 1,
+      "stdout_byte_count": 0,
+      "stderr_byte_count": 271,
+      "raw_spool_status": "CLEANED",
+      "formal_root_cause_status": "ROOT_CAUSE_NOT_RECOVERABLE_FROM_TASK140_FORMAL_EVIDENCE",
+      "inference_claim": "NOT_INFERABLE_FROM_ELAPSED_TIME_OR_NONZERO_EXIT_ALONE"
+    },
+    "history_policy": {
+      "task140_history_rewritten": false,
+      "correction_mode": "FUTURE_TYPED_OVERLAY_AND_PROVENANCE_ONLY"
+    }
+  },
+  "claim_ceiling": "Repository-local Task141 baseline and independent semantic audit only; no live inference, validated live completion, external truth, production readiness, Owner acceptance or epistemic upgrade is inferred."
+}
