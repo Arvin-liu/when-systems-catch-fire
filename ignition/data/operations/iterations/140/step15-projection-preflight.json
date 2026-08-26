@@ -23,7 +23,7 @@
         "--check"
       ],
       "category": "function_canonical_projection",
-      "duration_seconds": 32.099,
+      "duration_seconds": 32.118,
       "id": "function_asset_census",
       "returncode": 0,
       "status": "PASS",
@@ -39,7 +39,7 @@
         "--check"
       ],
       "category": "function_adjudication_closure",
-      "duration_seconds": 2.457,
+      "duration_seconds": 2.469,
       "id": "function_asset_deep_adjudication",
       "returncode": 0,
       "status": "PASS",
@@ -55,7 +55,7 @@
         "--check"
       ],
       "category": "nonfunction_canonical_projection",
-      "duration_seconds": 33.453,
+      "duration_seconds": 33.485,
       "id": "nonfunction_claim_projection",
       "returncode": 0,
       "status": "PASS",
@@ -71,7 +71,7 @@
         "--check"
       ],
       "category": "knowledge_experience",
-      "duration_seconds": 260.463,
+      "duration_seconds": 260.658,
       "id": "knowledge_experience_projection",
       "returncode": 0,
       "status": "PASS",
@@ -86,7 +86,7 @@
         "tools/governance/validate_knowledge_experience.py"
       ],
       "category": "knowledge_experience",
-      "duration_seconds": 261.675,
+      "duration_seconds": 261.845,
       "id": "knowledge_experience_validator",
       "returncode": 0,
       "status": "PASS",
@@ -102,7 +102,7 @@
         "--check"
       ],
       "category": "fire_seeds",
-      "duration_seconds": 0.163,
+      "duration_seconds": 0.151,
       "id": "fire_seeds_census",
       "returncode": 0,
       "status": "PASS",
@@ -117,7 +117,7 @@
         "tools/publication/validate_fire_seeds.py"
       ],
       "category": "fire_seeds",
-      "duration_seconds": 0.069,
+      "duration_seconds": 0.068,
       "id": "fire_seeds_validator",
       "returncode": 0,
       "status": "PASS",
@@ -133,7 +133,7 @@
         "--check"
       ],
       "category": "blast_radius",
-      "duration_seconds": 0.092,
+      "duration_seconds": 0.088,
       "id": "blast_radius_report",
       "returncode": 0,
       "status": "PASS",
@@ -149,7 +149,7 @@
         "--check"
       ],
       "category": "current_surface",
-      "duration_seconds": 0.212,
+      "duration_seconds": 0.209,
       "id": "current_facts",
       "returncode": 0,
       "status": "PASS",
@@ -237,7 +237,7 @@
         "ai-agents-handoff"
       ],
       "category": "current_surface_compiler",
-      "duration_seconds": 0.043,
+      "duration_seconds": 0.044,
       "id": "current_surface_ai_agents_handoff",
       "returncode": 0,
       "status": "PASS",
@@ -255,7 +255,7 @@
         "machine-entry"
       ],
       "category": "current_surface_compiler",
-      "duration_seconds": 0.043,
+      "duration_seconds": 0.044,
       "id": "current_surface_machine_entry",
       "returncode": 0,
       "status": "PASS",
@@ -323,7 +323,7 @@
         "--check"
       ],
       "category": "current_surface",
-      "duration_seconds": 0.199,
+      "duration_seconds": 0.2,
       "id": "current_surface_determinism",
       "returncode": 0,
       "status": "PASS",
@@ -338,7 +338,7 @@
         "tools/governance/validate_human_surface_contract.py"
       ],
       "category": "human_surface_fingerprint",
-      "duration_seconds": 0.666,
+      "duration_seconds": 0.667,
       "id": "human_surface_contract",
       "returncode": 0,
       "status": "PASS",
@@ -353,7 +353,7 @@
         "tools/validate_agent_platform_human_surface.py"
       ],
       "category": "human_surface_fingerprint",
-      "duration_seconds": 0.028,
+      "duration_seconds": 0.03,
       "id": "agent_platform_human_surface",
       "returncode": 0,
       "status": "PASS",
@@ -368,7 +368,7 @@
         "tools/validate_current_volatile_fact_registry.py"
       ],
       "category": "current_surface",
-      "duration_seconds": 0.066,
+      "duration_seconds": 0.063,
       "id": "current_volatile_fact_registry",
       "returncode": 0,
       "status": "PASS",
@@ -383,14 +383,14 @@
         "tools/validate_durability_projection_hygiene.py"
       ],
       "category": "release_projection",
-      "duration_seconds": 0.384,
+      "duration_seconds": 0.38,
       "id": "durability_projection_hygiene",
       "returncode": 0,
       "status": "PASS",
       "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "stderr_tail": "",
-      "stdout_sha256": "e01efa8f26ba6911c5366dc6504e8b8285e74dbecf92e7ed785c400b83cadf23",
-      "stdout_tail": "\n  GENERATED_PROJECTION=371\n  GOVERNED_MACHINE_RECORD=779\n  RECEIPT_HISTORY_OPERATIONS=737\n  REFERENCE_OR_KNOWLEDGE=154\n  REPOSITORY_GOVERNANCE_DOC=22\n  SCHEMA=206\n  TEST_FIXTURE=252\n  TOOL_OR_WORKFLOW=384\ntracked=3370 manifest=3370\nPASS contract:single-current-source\nPASS classification:no-unresolved count=0\nPASS classification:no-duplicate count=0\nPASS manifest:all-tracked-accounted missing=0\nPASS manifest:no-stale-path stale=0\nPASS manifest:category-stable changed=0\nPASS anti-backflow:authoritative-only-from-allowlist violations=0\nPASS anti-backflow:allowlist-not-mislabeled count=0\nPASS anti-backflow:manifest-authoritative-allowlist violations=0\nPASS schema:manifest-rows-valid invalid=0\nCHECKS_TOTAL=10 CHECKS_PASSED=10 CHECKS_FAILED=0\nREPOSITORY_PATH_CLASSIFICATION_VALID\nCURRENT_STATE_SYNC_OK identity_epoch=os-control-plane-r6-live-observation-reconciliation-r1 metrics=16 receipt=ignition/data/operations/iterations/140/current-state-sync-receipt.json impact=ARCHITECTURE_CHANGED\nDURABILITY_PROJECTION_HYGIENE_OK new_paths=5 foundation_knowledge_backflow=0 human_machine_dump=0 fire_seed_backflow=0 historical_residuals=9 sympy_residuals=1 current_facts=PASS path_classification=PASS\n"
+      "stdout_sha256": "bfbe687fdffcb38b7fbd1b0598074ab0c59b5f9f9bb38ae3927dee2b1ec260fa",
+      "stdout_tail": "\n  GENERATED_PROJECTION=372\n  GOVERNED_MACHINE_RECORD=779\n  RECEIPT_HISTORY_OPERATIONS=738\n  REFERENCE_OR_KNOWLEDGE=154\n  REPOSITORY_GOVERNANCE_DOC=22\n  SCHEMA=206\n  TEST_FIXTURE=252\n  TOOL_OR_WORKFLOW=384\ntracked=3372 manifest=3372\nPASS contract:single-current-source\nPASS classification:no-unresolved count=0\nPASS classification:no-duplicate count=0\nPASS manifest:all-tracked-accounted missing=0\nPASS manifest:no-stale-path stale=0\nPASS manifest:category-stable changed=0\nPASS anti-backflow:authoritative-only-from-allowlist violations=0\nPASS anti-backflow:allowlist-not-mislabeled count=0\nPASS anti-backflow:manifest-authoritative-allowlist violations=0\nPASS schema:manifest-rows-valid invalid=0\nCHECKS_TOTAL=10 CHECKS_PASSED=10 CHECKS_FAILED=0\nREPOSITORY_PATH_CLASSIFICATION_VALID\nCURRENT_STATE_SYNC_OK identity_epoch=os-control-plane-r6-live-observation-reconciliation-r1 metrics=16 receipt=ignition/data/operations/iterations/140/current-state-sync-receipt.json impact=ARCHITECTURE_CHANGED\nDURABILITY_PROJECTION_HYGIENE_OK new_paths=5 foundation_knowledge_backflow=0 human_machine_dump=0 fire_seed_backflow=0 historical_residuals=9 sympy_residuals=1 current_facts=PASS path_classification=PASS\n"
     },
     {
       "argv": [
@@ -399,14 +399,14 @@
         "--check"
       ],
       "category": "repository_path_manifest",
-      "duration_seconds": 0.08,
+      "duration_seconds": 0.077,
       "id": "repository_path_manifest",
       "returncode": 0,
       "status": "PASS",
       "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "stderr_tail": "",
-      "stdout_sha256": "ce7a664de2893656c0a45c51a5b732d7a17b31d69f5fe7918f4e87ff6d0807ec",
-      "stdout_tail": "category_distribution:\n  CANDIDATE_NONAUTHORITATIVE_RECORD=92\n  EDITORIAL_ARTICLE=337\n  EVIDENCE_OR_BENCHMARK=36\n  GENERATED_PROJECTION=371\n  GOVERNED_MACHINE_RECORD=779\n  RECEIPT_HISTORY_OPERATIONS=737\n  REFERENCE_OR_KNOWLEDGE=154\n  REPOSITORY_GOVERNANCE_DOC=22\n  SCHEMA=206\n  TEST_FIXTURE=252\n  TOOL_OR_WORKFLOW=384\ntracked=3370 manifest=3370\nPASS contract:single-current-source\nPASS classification:no-unresolved count=0\nPASS classification:no-duplicate count=0\nPASS manifest:all-tracked-accounted missing=0\nPASS manifest:no-stale-path stale=0\nPASS manifest:category-stable changed=0\nPASS anti-backflow:authoritative-only-from-allowlist violations=0\nPASS anti-backflow:allowlist-not-mislabeled count=0\nPASS anti-backflow:manifest-authoritative-allowlist violations=0\nPASS schema:manifest-rows-valid invalid=0\nCHECKS_TOTAL=10 CHECKS_PASSED=10 CHECKS_FAILED=0\nREPOSITORY_PATH_CLASSIFICATION_VALID\n"
+      "stdout_sha256": "ee702f320a4c335745374466696a6e9e81f72e497f12109e8597df61695e10de",
+      "stdout_tail": "category_distribution:\n  CANDIDATE_NONAUTHORITATIVE_RECORD=92\n  EDITORIAL_ARTICLE=337\n  EVIDENCE_OR_BENCHMARK=36\n  GENERATED_PROJECTION=372\n  GOVERNED_MACHINE_RECORD=779\n  RECEIPT_HISTORY_OPERATIONS=738\n  REFERENCE_OR_KNOWLEDGE=154\n  REPOSITORY_GOVERNANCE_DOC=22\n  SCHEMA=206\n  TEST_FIXTURE=252\n  TOOL_OR_WORKFLOW=384\ntracked=3372 manifest=3372\nPASS contract:single-current-source\nPASS classification:no-unresolved count=0\nPASS classification:no-duplicate count=0\nPASS manifest:all-tracked-accounted missing=0\nPASS manifest:no-stale-path stale=0\nPASS manifest:category-stable changed=0\nPASS anti-backflow:authoritative-only-from-allowlist violations=0\nPASS anti-backflow:allowlist-not-mislabeled count=0\nPASS anti-backflow:manifest-authoritative-allowlist violations=0\nPASS schema:manifest-rows-valid invalid=0\nCHECKS_TOTAL=10 CHECKS_PASSED=10 CHECKS_FAILED=0\nREPOSITORY_PATH_CLASSIFICATION_VALID\n"
     }
   ],
   "claim_ceiling": "Repository-local deterministic projection cleanliness only; no authority, external truth, production readiness, Owner acceptance or epistemic upgrade.",
@@ -429,13 +429,13 @@
   "worktree_after": {
     "clean": true,
     "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "tracked_content_sha256": "83b30c243e0d4a6a7e2cddadcf526056deebe974011f72b0a9a1d15439863d24",
-    "tracked_path_count": 3370
+    "tracked_content_sha256": "7b3365be2decd3174bc4826d48adef8f2826841971915cecd065538ff6cd5d33",
+    "tracked_path_count": 3372
   },
   "worktree_before": {
     "clean": true,
     "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "tracked_content_sha256": "83b30c243e0d4a6a7e2cddadcf526056deebe974011f72b0a9a1d15439863d24",
-    "tracked_path_count": 3370
+    "tracked_content_sha256": "7b3365be2decd3174bc4826d48adef8f2826841971915cecd065538ff6cd5d33",
+    "tracked_path_count": 3372
   }
 }

@@ -124,11 +124,13 @@ SELF_EXCLUDES = {
     "data/operations/iterations/140/step15-projection-preflight.json",
     "data/operations/iterations/140/step15-candidate-full-regression.json",
     "data/operations/iterations/140/step15-fresh-clone-publication.json",
+    "data/operations/iterations/140/step16-fresh-clone-publication.json",
     "reports/operations/ignition-140-step13-adversarial-matrix.md",
     "reports/operations/ignition-140-step13-targeted-regression.md",
     "reports/operations/ignition-140-step14-current-terminal-semantics.md",
     "reports/operations/ignition-140-step15-candidate-full-regression.md",
     "reports/operations/ignition-140-step15-fresh-clone-publication.md",
+    "reports/operations/ignition-140-step16-fresh-clone-publication.md",
     "agent-results/IGNITION-20260826-140-result.md",
     "agent-results/IGNITION-20260826-140-machine-receipt.json",
 }
