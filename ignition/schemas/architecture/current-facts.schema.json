@@ -61,12 +61,13 @@
         },
         "federation": {
           "type": "object", "additionalProperties": false,
-          "required": ["adapter_inventory_count", "adapter_ids", "live_status_by_executor", "live_invocation_ceiling", "live_attempt_projection", "reference_executor_identity"],
+          "required": ["adapter_inventory_count", "adapter_ids", "live_status_by_executor", "live_invocation_ceiling", "live_state_dimensions", "live_attempt_projection", "reference_executor_identity"],
           "properties": {
             "adapter_inventory_count": {"type": "integer", "minimum": 0},
             "adapter_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
             "live_status_by_executor": {"type": "object", "additionalProperties": {"$ref": "#/$defs/nonblank"}},
             "live_invocation_ceiling": {"$ref": "#/$defs/nonblank"},
+            "live_state_dimensions": {"$ref": "#/$defs/liveStateDimensions"},
             "live_attempt_projection": {
               "type": "object", "additionalProperties": false,
               "required": ["source_path", "projection_digest", "total_attempts", "validated_completion_count", "unreconciled_count", "observation_incomplete_count", "current_live_ceiling", "obligation_state", "unreconciled_attempt_ids", "next_action_status", "next_action"],
@@ -159,6 +160,20 @@
           }
         },
         "environmental_residuals": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}}
+      }
+    },
+    "liveStateDimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "live_dispatch_observation_status", "live_process_observation_status", "inference_observation_status", "validated_completion_status", "reconciliation_blocker_status", "next_eligible_action"],
+      "properties": {
+        "schema_version": {"const": "live-state-dimensions-r1"},
+        "live_dispatch_observation_status": {"$ref": "#/$defs/nonblank"},
+        "live_process_observation_status": {"$ref": "#/$defs/nonblank"},
+        "inference_observation_status": {"$ref": "#/$defs/nonblank"},
+        "validated_completion_status": {"$ref": "#/$defs/nonblank"},
+        "reconciliation_blocker_status": {"$ref": "#/$defs/nonblank"},
+        "next_eligible_action": {"$ref": "#/$defs/nonblank"}
       }
     }
   }

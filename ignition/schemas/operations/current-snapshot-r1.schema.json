@@ -4,7 +4,7 @@
   "title": "Ignition deterministic Current Surface snapshot",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "contract_id", "source_policy", "generated_from_source_digest", "identity", "current_method_version", "current_task", "task_identity", "iteration_identity", "latest_architecture_changing_task", "map", "engineering_status", "task_lineage", "release_lifecycle", "active_architecture_overlays", "live_external_ceiling", "live_attempt_projection", "architecture_counts", "claim_ceiling"],
+  "required": ["schema_version", "contract_id", "source_policy", "generated_from_source_digest", "identity", "current_method_version", "current_task", "task_identity", "iteration_identity", "latest_architecture_changing_task", "map", "engineering_status", "task_lineage", "release_lifecycle", "active_architecture_overlays", "live_external_ceiling", "live_state_dimensions", "live_attempt_projection", "architecture_counts", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "current-snapshot-r1"},
     "contract_id": {"const": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT"},
@@ -21,6 +21,7 @@
     "task_lineage": {"$ref": "#/$defs/lineage"},
     "active_architecture_overlays": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/overlay"}},
     "live_external_ceiling": {"type": "string", "minLength": 1},
+    "live_state_dimensions": {"$ref": "#/$defs/liveStateDimensions"},
     "live_attempt_projection": {"$ref": "#/$defs/liveAttemptProjection"},
     "architecture_counts": {"type": "object", "minProperties": 1, "additionalProperties": {"type": ["string", "integer", "number"]}},
     "release_lifecycle": {"type": "object", "additionalProperties": false, "required": ["task_id", "content_phase", "required_publication_ref", "publication_authority", "embedded_publication_assertion", "post_publication_check_required"], "properties": {"task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}, "content_phase": {"type": "string", "minLength": 1}, "required_publication_ref": {"const": "refs/heads/main"}, "publication_authority": {"const": "REMOTE_REF_OBSERVATION"}, "embedded_publication_assertion": {"const": "NONE"}, "post_publication_check_required": {"const": true}}},
@@ -48,6 +49,7 @@
       }
     },
     "overlay": {"type": "object", "additionalProperties": false, "required": ["overlay_id", "label", "source_paths", "authority", "status"], "properties": {"overlay_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]+$"}, "label": {"type": "string", "minLength": 1}, "source_paths": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}, "authority": {"type": "string", "minLength": 1}, "status": {"type": "string", "minLength": 1}}},
+    "liveStateDimensions": {"type": "object", "additionalProperties": false, "required": ["schema_version", "live_dispatch_observation_status", "live_process_observation_status", "inference_observation_status", "validated_completion_status", "reconciliation_blocker_status", "next_eligible_action"], "properties": {"schema_version": {"const": "live-state-dimensions-r1"}, "live_dispatch_observation_status": {"type": "string", "minLength": 1}, "live_process_observation_status": {"type": "string", "minLength": 1}, "inference_observation_status": {"type": "string", "minLength": 1}, "validated_completion_status": {"type": "string", "minLength": 1}, "reconciliation_blocker_status": {"type": "string", "minLength": 1}, "next_eligible_action": {"type": "string", "minLength": 1}}},
     "liveAttemptProjection": {
       "type": "object", "additionalProperties": false,
       "required": ["source_path", "projection_digest", "total_attempts", "validated_completion_count", "unreconciled_count", "observation_incomplete_count", "current_live_ceiling", "obligation_state", "unreconciled_attempt_ids", "next_action_status", "next_action"],

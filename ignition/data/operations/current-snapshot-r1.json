@@ -32,9 +32,9 @@
     }
   ],
   "architecture_counts": {
-    "current_map_version": "0.14.0",
+    "current_map_version": "0.15.0",
     "hidden_components": 12,
-    "historical_map_version": "0.13.0",
+    "historical_map_version": "0.14.0",
     "layout_version": "2.0.0",
     "registry_components": 96,
     "semantic_trunk_route_steps": 7,
@@ -47,63 +47,72 @@
   "contract_id": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT",
   "current_method_version": "1.4.0",
   "current_task": {
-    "execution_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "execution_status": "IN_PROGRESS",
     "identity_impact": "ARCHITECTURE_CHANGED",
-    "scope": "Formal task IGNITION-20260826-140 Current advancement",
-    "task_id": "IGNITION-20260826-140",
-    "terminal": true
+    "scope": "Formal task IGNITION-20260826-141 Current advancement",
+    "task_id": "IGNITION-20260826-141",
+    "terminal": false
   },
   "engineering_status": {
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
     "epistemically_accepted": 0
   },
-  "generated_from_source_digest": "689055851d86839845fc68f97b4283db949ae53d31980ab4ecd81fe2a0ce06ed",
+  "generated_from_source_digest": "5f85974c8d08c6ff4fca698650ffc63bd83f35489effbcb097305094d0d1fa4b",
   "identity": {
     "driver_role": "driver",
-    "epoch": "os-control-plane-r6-live-observation-reconciliation-r1",
+    "epoch": "os-control-plane-r7-live-state-semantics-structured-result-reliability-r1",
     "external_executor_role": "replaceable executors",
     "reference_executor_role": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
     "system_role": "Ignition OS / orchestration-governance layer"
   },
   "iteration_identity": {
-    "current_formal_task_id": "IGNITION-20260826-140",
-    "current_formal_task_ordinal": 140,
-    "current_iteration_boundary": 140,
+    "current_formal_task_id": "IGNITION-20260826-141",
+    "current_formal_task_ordinal": 141,
+    "current_iteration_boundary": 141,
     "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
     "current_method_version": "1.4.0",
-    "latest_architecture_changing_task_id": "IGNITION-20260826-140",
-    "latest_architecture_task_ordinal": 140
+    "latest_architecture_changing_task_id": "IGNITION-20260826-141",
+    "latest_architecture_task_ordinal": 141
   },
-  "latest_architecture_changing_task": "IGNITION-20260826-140",
+  "latest_architecture_changing_task": "IGNITION-20260826-141",
   "live_attempt_projection": {
-    "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED",
+    "current_live_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION",
     "next_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
     "next_action_status": "ADMISSION_REQUIRED",
     "obligation_state": "OPEN",
     "observation_incomplete_count": 2,
-    "projection_digest": "b1f2802cb6bf17d73e6f775f1bc544c10f4311c9a431af60945109c77b49c1f3",
-    "source_path": "ignition/data/operations/iterations/140/live-current-projection-r2.json",
+    "projection_digest": "31691dc290a6192d0864f4405d8b98f8557dfe0c83c7d1e2e05850de314ee0e2",
+    "source_path": "ignition/data/operations/iterations/141/live-current-projection-r3.json",
     "total_attempts": 6,
     "unreconciled_attempt_ids": [],
     "unreconciled_count": 0,
     "validated_completion_count": 0
   },
-  "live_external_ceiling": "LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED",
+  "live_external_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION",
+  "live_state_dimensions": {
+    "inference_observation_status": "NOT_OBSERVED",
+    "live_dispatch_observation_status": "OBSERVED",
+    "live_process_observation_status": "OBSERVED",
+    "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+    "reconciliation_blocker_status": "NONE",
+    "schema_version": "live-state-dimensions-r1",
+    "validated_completion_status": "NOT_VALIDATED"
+  },
   "map": {
-    "current_version": "0.14.0",
+    "current_version": "0.15.0",
     "historical_versions": [
-      "0.13.0"
+      "0.14.0"
     ],
     "projection_status": "CURRENT_DERIVED_PROJECTION",
     "source_path": "ignition/data/architecture/interactive-system-map-layout.json"
   },
   "release_lifecycle": {
-    "content_phase": "RELEASE_READY",
+    "content_phase": "RUNNING",
     "embedded_publication_assertion": "NONE",
     "post_publication_check_required": true,
     "publication_authority": "REMOTE_REF_OBSERVATION",
     "required_publication_ref": "refs/heads/main",
-    "task_id": "IGNITION-20260826-140"
+    "task_id": "IGNITION-20260826-141"
   },
   "schema_version": "current-snapshot-r1",
   "source_policy": {
@@ -112,17 +121,17 @@
     "registry_path": "ignition/data/operations/current-volatile-fact-registry-r1.json"
   },
   "task_identity": {
-    "current_formal_task": "IGNITION-20260826-140",
-    "latest_architecture_changing_task": "IGNITION-20260826-140",
-    "previous_canonical_current_task": "IGNITION-20260825-139",
-    "previous_formal_task": "IGNITION-20260825-139",
-    "publication_witness_task": "IGNITION-20260826-140",
-    "release_candidate_task": "IGNITION-20260826-140"
+    "current_formal_task": "IGNITION-20260826-141",
+    "latest_architecture_changing_task": "IGNITION-20260826-141",
+    "previous_canonical_current_task": "IGNITION-20260826-140",
+    "previous_formal_task": "IGNITION-20260826-140",
+    "publication_witness_task": "IGNITION-20260826-141",
+    "release_candidate_task": "IGNITION-20260826-141"
   },
   "task_lineage": {
     "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
-    "current_task_id": "IGNITION-20260826-140",
-    "current_task_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+    "current_task_id": "IGNITION-20260826-141",
+    "current_task_status": "IN_PROGRESS",
     "predecessor_requirement_lineage": "REBASED_INTO_127",
     "predecessor_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
     "successor_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"

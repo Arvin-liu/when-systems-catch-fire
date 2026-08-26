@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260826-141",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "aa5954a71366400b5a52af432cb985869db1c8ed",
+    "command_path": "agent-commands/IGNITION-20260826-141-live-state-semantics-structured-result-reliability-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "77f8fe099dbadfc7f7f32314186369c825e5f31d"
+  },
+  "identity_impact": "ARCHITECTURE_CHANGED",
+  "expected_task_branch": "codex/ignition-141-live-state-semantics-structured-result-reliability-r1-20260826",
+  "expected_receipt_branch": "relay/receipts/ignition-141-live-state-semantics-structured-result-reliability-r1-20260826",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260826-141",
+    "latest_architecture_changing_task": "IGNITION-20260826-141",
+    "previous_canonical_current_task": "IGNITION-20260826-140",
+    "previous_formal_task": "IGNITION-20260826-140",
+    "release_candidate_task": "IGNITION-20260826-141",
+    "publication_witness_task": "IGNITION-20260826-141"
+  },
+  "claim_ceiling": "Task141 repository-local Live State Semantics and Structured Result Reliability architecture, independent dispatch/process/inference/completion dimensions, sanitized failure forensics, bounded executor admission and live completion evidence only; no Owner authority, external truth, production readiness or epistemic acceptance is inferred."
+}

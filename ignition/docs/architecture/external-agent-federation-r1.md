@@ -199,6 +199,29 @@ unknown effect or incomplete observation while allowing retry-safety workflow
 to move forward. This R1 is a bounded repository-local observation and
 reconciliation plane, not a world-truth sensing layer.
 
+## Live State Semantics & Structured Result Reliability R1
+
+Task 141 makes the observation dimensions explicit and keeps them provider-
+neutral: dispatch crossing is not process start; process start is not an
+independent inference marker; an inference marker is not a structured result;
+and a structured result remains `RETURNED_UNVALIDATED` until exact task,
+attempt, executor, adapter, lease, workspace, capture and validator binding
+passes. The canonical R3 projection therefore records Task140 as process
+observed while inference is `NOT_OBSERVED`, validated completion is
+`NOT_VALIDATED`, and reconciliation is not blocked. It cannot emit the old
+`LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED` ceiling when a canonical attempt has
+`live_process_started=true`.
+
+FailureForensicsCapsule is an OS-owned sanitized boundary for malformed,
+startup, parse, schema, transport and observation failures. It records public
+argv/interface fingerprints, lifecycle and stream digests, parser/schema
+status, stable diagnostic class, redaction, runtime scratch/auth/workspace
+boundaries, inference status and raw-spool disposal status without storing raw
+private output, secrets, hidden reasoning or provider-private telemetry.
+Task140's malformed-result root cause remains
+`ROOT_CAUSE_NARROWED_NOT_CONFIRMED`; a Codex same-family retry is therefore a
+blind retry and remains forbidden until a concrete public root cause is fixed.
+
 ## Task 137 reconciliation continuation
 
 Task 137 is a reconciliation continuation, not a new executor or topology

@@ -15,15 +15,15 @@ Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability
 
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
-- current_identity_epoch: `os-control-plane-r6-live-observation-reconciliation-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260826-140` (ordinal `140`)；status: `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260826-140` (ordinal `140`)；current_iteration_boundary: `140` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260826-140`。
-- release_lifecycle: task `IGNITION-20260826-140`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
-- current_method: `1.4.0` Current；current_map: `0.14.0` Current；historical_map: `0.13.0` Historical。
-- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED`。
-- live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/140/live-current-projection-r2.json`。
+- current_identity_epoch: `os-control-plane-r7-live-state-semantics-structured-result-reliability-r1`；system_role: `Ignition OS / orchestration-governance layer`。
+- current_formal_task: `IGNITION-20260826-141` (ordinal `141`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260826-141` (ordinal `141`)；current_iteration_boundary: `141` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260826-141`。
+- release_lifecycle: task `IGNITION-20260826-141`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_method: `1.4.0` Current；current_map: `0.15.0` Current；historical_map: `0.14.0` Historical。
+- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；live dimensions: dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`, validated completion `NOT_VALIDATED`, reconciliation blocker `NONE`。
+- live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=96; visible_nodes=84; visible_edges=89`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260826-140` `COMPLETED_WITH_CLASSIFIED_RESIDUALS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `689055851d86839845fc68f97b4283db949ae53d31980ab4ecd81fe2a0ce06ed`。
+- task_lineage: current `IGNITION-20260826-141` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `5f85974c8d08c6ff4fca698650ffc63bd83f35489effbcb097305094d0d1fa4b`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -110,6 +110,18 @@ separate; reconciliation closure never infers success or no-effect, and
 `TERMINAL_UNRECOVERABLE_*` preserves unknown evidence while closing the
 retry-safety workflow. This remains a repository-local bounded observation
 plane, not a world-truth sensing layer.
+
+Task141 extends that capability into the R7 Live State Semantics / Structured
+Result Reliability boundary. Dispatch observation, process observation,
+independent inference markers, structured-result return and independent
+validation are separate facts; `live_dispatch_calls=1` cannot promote
+`inference_observation_status` to `OBSERVED`. The R3 Current projection now
+recognizes Task140's real process while retaining zero validated completions,
+and the FailureForensicsCapsule is written before raw private spool disposal.
+Task140's malformed-result root cause is not confirmed by its retained formal
+evidence, so no same-family Codex blind retry is admitted. This is an OS-owned
+repository boundary, not provider runtime, external truth, production
+readiness or epistemic acceptance.
 
 ```mermaid
 flowchart LR

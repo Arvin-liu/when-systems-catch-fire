@@ -1,8 +1,8 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 36,
-  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36],
+  "entry_count": 37,
+  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37],
   "historical_entry_count": 26,
   "legacy_profile_count": 6,
   "profiles": {
@@ -58,6 +58,7 @@
     {"ordinal": 33, "date": "2026-08-25", "label": "IGNITION-20260825-139 — durable live attempt journal and observation projection", "profile": "current-r1", "section_sha256": "df9bf3013d2d2c7c1d59c0374cbaa11720701e3600d9d8d05f2c62c4afd04502"},
     {"ordinal": 34, "date": "2026-08-25", "label": "IGNITION-20260825-139 — terminal Current release candidate", "profile": "current-r1", "section_sha256": "4d9223e045a02021a215274cde7f43f054371af83b087c085f3a7286528e4f20"},
     {"ordinal": 35, "date": "2026-08-26", "label": "IGNITION-20260826-140 — Observation / Reconciliation Plane current architecture transition", "profile": "current-r1", "section_sha256": "06c915d1ecc1b761ae31dc04d9dfbabda8c5ba58ada42b73ec527c44ba882b9a"},
-    {"ordinal": 36, "date": "2026-08-26", "label": "IGNITION-20260826-140 — terminal task with open live obligation", "profile": "current-r1", "section_sha256": "124b39ac7255e12de2a629977017f4b4299a60c1ae873d2363e19da54bf3b4c7"}
+    {"ordinal": 36, "date": "2026-08-26", "label": "IGNITION-20260826-140 — terminal task with open live obligation", "profile": "current-r1", "section_sha256": "aeb6dc790fe486ec226606c1c9f5a118db32a52717f8ce83f9111db5dc0da2bc"},
+    {"ordinal": 37, "date": "2026-08-26", "label": "IGNITION-20260826-141 — Live State Semantics & Structured Result Reliability R1 current architecture transition", "profile": "current-r1", "section_sha256": "0cbf9f84763cf88f61a8abae844c1b4812b02c30b97f608080b3835599404b66"}
   ]
 }

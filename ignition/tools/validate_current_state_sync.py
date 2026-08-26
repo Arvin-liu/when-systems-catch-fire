@@ -240,7 +240,10 @@ def validate_current_facts(contract: dict[str, Any]) -> list[str]:
     try:
         facts = load_json(FACTS_PATH)
         errors.extend(schema_errors(facts, FACTS_SCHEMA_PATH))
-        from generate_current_facts import build_projection, render_json, render_markdown
+        try:
+            from generate_current_facts import build_projection, render_json, render_markdown
+        except ImportError:  # package import from the repository tools namespace
+            from tools.generate_current_facts import build_projection, render_json, render_markdown
 
         expected = build_projection(contract)
         if FACTS_PATH.read_bytes() != render_json(expected):
@@ -441,8 +444,12 @@ def validate_release_publication_contract(
 
     errors: list[str] = []
     try:
-        from validate_current_release_lifecycle import validate as validate_lifecycle
-        from validate_release_state_model import validate as validate_state_model
+        try:
+            from validate_current_release_lifecycle import validate as validate_lifecycle
+            from validate_release_state_model import validate as validate_state_model
+        except ImportError:  # package import from the repository tools namespace
+            from tools.validate_current_release_lifecycle import validate as validate_lifecycle
+            from tools.validate_release_state_model import validate as validate_state_model
 
         errors.extend(validate_lifecycle(lifecycle_record))
         errors.extend(validate_state_model())
@@ -490,7 +497,10 @@ def run_check(receipt_path: Path | None = None, check_fixtures: bool = True) -> 
     contract_errors, metrics = validate_contract(contract)
     errors.extend(contract_errors)
     try:
-        from validate_current_task_lineage import validate as validate_task_lineage
+        try:
+            from validate_current_task_lineage import validate as validate_task_lineage
+        except ImportError:  # package import from the repository tools namespace
+            from tools.validate_current_task_lineage import validate as validate_task_lineage
 
         errors.extend(validate_task_lineage())
     except Exception as exc:  # pragma: no cover - fail-closed integration boundary

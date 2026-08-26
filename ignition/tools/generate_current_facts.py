@@ -17,7 +17,10 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-import validate_current_state_sync as sync
+try:
+    import validate_current_state_sync as sync
+except ImportError:  # package import from the repository tools namespace
+    from tools import validate_current_state_sync as sync
 
 from agent_federation.live_current_projection import validate_projection
 
@@ -41,10 +44,11 @@ LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
 MATERIALITY_PATH = ROOT / "data/governance/human-surface/materiality-manifest.json"
 KNOWLEDGE_MANIFEST_PATH = ROOT / "data/governance/knowledge-experience/manifest.json"
 FIRE_SEEDS_PATH = ROOT / "data/publication/fire-seeds/seed-census.json"
-LIVE_CURRENT_PROJECTION_PATH = ROOT / "data/operations/iterations/140/live-current-projection-r2.json"
+LIVE_CURRENT_PROJECTION_PATH = ROOT / "data/operations/iterations/141/live-current-projection-r3.json"
 LIVE_ATTEMPT_LEDGER_PATH = ROOT / "data/operations/iterations/139/live-attempt-ledger.jsonl"
 LIVE_RECONCILIATION_EVENTS_PATH = ROOT / "data/operations/iterations/140/live-reconciliation-events-r1.jsonl"
 LIVE_OBSERVATION_EVENTS_PATH = ROOT / "data/operations/iterations/140/live-observation-events-r1.jsonl"
+LIVE_INFERENCE_OBSERVATION_EVENTS_PATH = ROOT / "data/operations/iterations/141/live-inference-observation-events-r1.jsonl"
 
 
 def load_json(path: Path) -> Any:
@@ -142,6 +146,7 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         LIVE_ATTEMPT_LEDGER_PATH,
         LIVE_RECONCILIATION_EVENTS_PATH,
         LIVE_OBSERVATION_EVENTS_PATH,
+        LIVE_INFERENCE_OBSERVATION_EVENTS_PATH,
         LIVE_CURRENT_PROJECTION_PATH,
     }
     for metric in contract["derived_metrics"]:
@@ -274,6 +279,7 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "adapter_ids": sorted(row["executor_id"] for row in executors),
             "live_status_by_executor": dict(sorted(live_statuses.items())),
             "live_invocation_ceiling": live_ceiling,
+            "live_state_dimensions": live_projection["live_state_dimensions"],
             "live_attempt_projection": {
                 "source_path": relative(LIVE_CURRENT_PROJECTION_PATH),
                 "projection_digest": live_projection["projection_digest"],
@@ -385,6 +391,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
         f"- Map/method: map `{architecture['current_map_version']}` Current（historical `{architecture['historical_map_version']}`）；layout `{architecture['layout_version']}`；semantic trunk `{architecture['semantic_trunk_version']}` with `{architecture['semantic_trunk_route_steps']}` bounded route stages；method `{iteration['method_version']}` `{iteration['method_status']}`。",
         f"- Packs: `{packs['count']}` packs；`{packs['capability_route_count']}` declared capability routes。",
         f"- Federation: `{federation['adapter_inventory_count']}` adapter inventory entries；live ceiling `{federation['live_invocation_ceiling']}`；local boundary `{federation['reference_executor_identity']}`。",
+        f"- Live state dimensions: dispatch `{federation['live_state_dimensions']['live_dispatch_observation_status']}`；process `{federation['live_state_dimensions']['live_process_observation_status']}`；inference `{federation['live_state_dimensions']['inference_observation_status']}`；validated completion `{federation['live_state_dimensions']['validated_completion_status']}`；reconciliation blocker `{federation['live_state_dimensions']['reconciliation_blocker_status']}`；next eligible action `{federation['live_state_dimensions']['next_eligible_action']}`。",
         f"- Live attempts: total `{federation['live_attempt_projection']['total_attempts']}`；validated `{federation['live_attempt_projection']['validated_completion_count']}`；unreconciled `{federation['live_attempt_projection']['unreconciled_count']}`；observation-incomplete `{federation['live_attempt_projection']['observation_incomplete_count']}`；obligation `{federation['live_attempt_projection']['obligation_state']}`；next action `{federation['live_attempt_projection']['next_action']}`；source `{federation['live_attempt_projection']['source_path']}`。",
         f"- Foundation: function identity cards `{foundation['function_identity_cards']}`；function quarantine/pending `{foundation['function_quarantine_or_pending']}`；non-function claims `{foundation['nonfunction_claims']}`；non-function quarantine/pending `{foundation['nonfunction_quarantine_or_pending']}`。",
         f"- Knowledge Experience: cards `{knowledge['cards']}`；changes `{knowledge['changes']}`；layered readings `{knowledge['layered_readings']}`；search records `{knowledge['search_records']}`；aliases `{knowledge['aliases']}`。",

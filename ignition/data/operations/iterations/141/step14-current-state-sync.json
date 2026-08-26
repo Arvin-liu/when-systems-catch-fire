@@ -1,0 +1,64 @@
+{
+  "architecture_identity_impact": "ARCHITECTURE_CHANGED",
+  "claim_ceiling": "Task141 repository-local Current/architecture synchronization and live-state semantic projection evidence only; no validated live completion, external truth, production readiness, Owner acceptance, formal publication or epistemic acceptance is inferred.",
+  "current_identity": {
+    "current_formal_task_id": "IGNITION-20260826-141",
+    "current_formal_task_ordinal": 141,
+    "current_iteration_boundary": 141,
+    "identity_epoch": "os-control-plane-r7-live-state-semantics-structured-result-reliability-r1",
+    "latest_architecture_changing_task_id": "IGNITION-20260826-141",
+    "latest_architecture_task_ordinal": 141
+  },
+  "errors": [],
+  "live_projection_counts": {
+    "complete_evidence_count": 4,
+    "incomplete_evidence_count": 2,
+    "observation_incomplete_count": 2,
+    "total_attempts": 6,
+    "unreconciled_count": 0,
+    "validated_completion_count": 0
+  },
+  "map_identity": {
+    "current_map_version": "0.15.0",
+    "historical_map_version": "0.14.0",
+    "materialized_map_version": "0.15.0"
+  },
+  "schema_version": "ignition-141-step14-current-state-sync-r1",
+  "source_projections": {
+    "current_facts_digest": "97035130b2c34265071b63e8284d641e68a05a8fe5808fd704570bc38b2cc4da",
+    "current_snapshot_digest": "2e3506a61e79610ae87b298a8e612f188902a35bebb530ce88e61228bd432fcb",
+    "current_snapshot_source_digest": "5f85974c8d08c6ff4fca698650ffc63bd83f35489effbcb097305094d0d1fa4b",
+    "live_projection_digest": "31691dc290a6192d0864f4405d8b98f8557dfe0c83c7d1e2e05850de314ee0e2",
+    "live_projection_path": "ignition/data/operations/iterations/141/live-current-projection-r3.json",
+    "live_state_dimensions": {
+      "inference_observation_status": "NOT_OBSERVED",
+      "live_dispatch_observation_status": "OBSERVED",
+      "live_process_observation_status": "OBSERVED",
+      "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+      "reconciliation_blocker_status": "NONE",
+      "schema_version": "live-state-dimensions-r1",
+      "validated_completion_status": "NOT_VALIDATED"
+    }
+  },
+  "status": "PASS",
+  "step": "14",
+  "surface_sync": {
+    "changed_surface_count": 11,
+    "identity_contract_changed": true,
+    "receipt_path": "ignition/data/operations/iterations/141/current-state-sync-receipt.json",
+    "required_surface_count": 11,
+    "state_changelog_delta": "CHANGE",
+    "surface_sync_complete": true,
+    "system_map_sync": "CHANGE"
+  },
+  "task_id": "IGNITION-20260826-141",
+  "validation": {
+    "current_facts_determinism": "PASS",
+    "current_release_lifecycle": "PASS",
+    "current_snapshot_determinism": "PASS",
+    "current_state_sync": "PASS",
+    "current_surface_compiler": "PASS",
+    "current_task_lineage": "PASS",
+    "current_volatile_fact_registry": "PASS"
+  }
+}

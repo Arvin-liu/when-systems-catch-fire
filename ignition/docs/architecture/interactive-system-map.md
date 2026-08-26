@@ -1,6 +1,6 @@
 # 点火仓库原生系统图
 
-状态：`0.14.0 Current registry-derived navigation projection`；`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
+状态：`0.15.0 Current registry-derived navigation projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
 
 ## 打开与生成
 
@@ -33,6 +33,7 @@ SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 READ
 - cluster 只表达导航分组，不增加架构层。
 - Task 136 将 Live External Executor Bridge R1 单列为 Federation 下的 OS-owned 节点：它负责 bounded envelope、capability lease、transport、receipt、timeout/cancel、reconciliation 与独立验证，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority。
 - Task 140 将 Live Observation / Reconciliation Plane 注册为当前 OS 架构节点：它把 probe、transport、live process、durable capture、structured result、validator 和 append-only reconciliation event overlay 保持为可区分的 typed outcomes；事件闭合仍不等于成功，未知 external effect 仍不得升级为 validated completion。
+- Task 141 将 Live State Semantics & Structured Result Reliability R1 注册为当前 OS 控制语义：dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 各自独立；Task140 的真实 process observation 不再被 Current 写成 invocation 未观察到，且 FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断。它不新增 L7，也不授予 external Agent、Owner 或 epistemic authority。
 - `language_thought` 是横穿 L0—L6 的控制平面 overlay；`structural_governance_surface` 是 governance 组中的 advisory cross-cutting overlay；`layers` 组仍严格只有 L0—L6。两者的连线表示框架审计、同步义务或候选阅读关系，不表示语言或结构决定现实因果。
 - `repository_dependency`、`synchronization_obligation` 和 `substantive_causal_candidate` 权限不同。
 - `os_spine`、`federation` 与 `domain_packs` 三个 overlay 分别表达 Owner/Human、Generic Kernel/Runtime/Memory，External Agent Federation/adapter，以及可加载 Domain/Skill Pack 的边界；`Structural Governance Surface` 只表达 advisory reading/experiment context，不增加 L7。`Kernel ≠ Knowledge`，`Runtime ≠ Research`，`OS ≠ executor`，soft context ≠ permission。
@@ -50,7 +51,7 @@ REOS LIGHT Research、之元 Writing 和 Maintenance 仍由各自 manifest 声�
 对象类型、validator 与禁止的 authority upgrade。
 
 当前机器投影的 registry、可见节点、typed edges 和隐藏 components 计数以
-`current-facts.json` 为准；当前地图为 `0.13.0`，上一版 `0.12.0`、更早版 `0.11.0` 仅作 Historical。
+`current-facts.json` 为准；当前地图为 `0.15.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
 Structural Governance Surface 的可见关系仍是 advisory repository projection。
 R2 的 source-domain 与
 blast-radius 规则见
