@@ -25,6 +25,8 @@ SCHEMA_PATH = ROOT / "schemas/operations/current-snapshot-r1.schema.json"
 SNAPSHOT_PATH = ROOT / "data/operations/current-snapshot-r1.json"
 CURRENT_FACTS_PATH = ROOT / "data/architecture/current-facts.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
+FORMAL_TASK_LIFECYCLE_PATH = ROOT / "data/operations/formal-task-lifecycle-r1.json"
+OPEN_OBLIGATION_REGISTRY_PATH = ROOT / "data/operations/open-obligation-registry-r1.json"
 SEMANTICS_PATH = ROOT / "data/operations/iteration-boundary-semantics-r1.json"
 
 
@@ -72,7 +74,8 @@ def registry_values(registry: dict[str, Any]) -> tuple[dict[str, Any], dict[str,
 
 
 def source_paths(registry: dict[str, Any]) -> list[Path]:
-    paths = {REGISTRY_PATH, SCHEMA_PATH, HERE, CURRENT_FACTS_PATH, LIFECYCLE_PATH, SEMANTICS_PATH, iteration_boundary.HERE, Path(task_identity.__file__).resolve()}
+    paths = {REGISTRY_PATH, SCHEMA_PATH, HERE, CURRENT_FACTS_PATH, LIFECYCLE_PATH, FORMAL_TASK_LIFECYCLE_PATH, OPEN_OBLIGATION_REGISTRY_PATH, SEMANTICS_PATH, iteration_boundary.HERE, Path(task_identity.__file__).resolve()}
+    paths.update({ROOT / "schemas/operations/formal-task-lifecycle-r1.schema.json", ROOT / "schemas/operations/open-obligation-registry-r1.schema.json", ROOT / "tools/validate_formal_task_lifecycle.py", ROOT / "tools/validate_open_obligation_registry.py"})
     paths.update(resolve(fact["canonical_source"]["path"]) for fact in registry["facts"])
     return sorted(paths, key=relative)
 
@@ -95,10 +98,16 @@ def build_snapshot() -> dict[str, Any]:
     facts = load_json(CURRENT_FACTS_PATH)
     map_layout = load_json(resolve("ignition/data/architecture/interactive-system-map-layout.json"))
     lifecycle = load_json(LIFECYCLE_PATH)
+    formal_task_lifecycle = load_json(FORMAL_TASK_LIFECYCLE_PATH)
+    obligation_registry = load_json(OPEN_OBLIGATION_REGISTRY_PATH)
     iteration = iteration_boundary.derive()
     if facts.get("schema_version") != "current-facts-r1":
         raise ValueError("current-facts projection schema is not current-facts-r1")
     current_task = lineage["current_task"]
+    formal_records = {row["task_id"]: row for row in formal_task_lifecycle["tasks"]}
+    formal_current = formal_records.get(formal_task_lifecycle["current_task_id"])
+    if formal_current is None:
+        raise ValueError("formal task lifecycle is missing its current task record")
     task_identity = lineage.get("task_identity")
     if not task_identity:
         raise ValueError("canonical task identity state is missing")
@@ -116,6 +125,12 @@ def build_snapshot() -> dict[str, Any]:
         raise ValueError("registry current_map_version does not match map layout")
     if lifecycle["task_id"] != current_task["task_id"]:
         raise ValueError("release lifecycle task_id does not match current task")
+    if formal_task_lifecycle["current_task_id"] != current_task["task_id"]:
+        raise ValueError("formal task lifecycle task_id does not match current task")
+    if obligation_registry["current_task_id"] != current_task["task_id"]:
+        raise ValueError("obligation registry task_id does not match current task")
+    if formal_current["execution_status"] != current_task["execution_status"] or formal_current["terminal"] != current_task["terminal"]:
+        raise ValueError("formal task lifecycle terminality does not match current task")
     for key, expected in iteration.items():
         if key == "current_iteration_boundary_semantics":
             continue
@@ -209,6 +224,23 @@ def build_snapshot() -> dict[str, Any]:
             "predecessor_requirement_lineage": predecessor.get("requirement_lineage_status", "UNKNOWN"),
             "successor_status": successor.get("execution_status", "UNKNOWN"),
             "claim_ceiling": lineage["claim_ceiling"]
+        },
+        "formal_task_lifecycle": {
+            "authority": formal_task_lifecycle["authority"],
+            "source_path": relative(FORMAL_TASK_LIFECYCLE_PATH),
+            "current_task_id": formal_task_lifecycle["current_task_id"],
+            "current_task_status": formal_current["execution_status"],
+            "current_task_terminal": formal_current["terminal"],
+            "scope_complete": formal_current["scope_complete"],
+            "open_obligation_ids": formal_current["open_obligation_ids"],
+        },
+        "open_obligations": {
+            "authority": obligation_registry["authority"],
+            "source_path": relative(OPEN_OBLIGATION_REGISTRY_PATH),
+            "current_task_id": obligation_registry["current_task_id"],
+            "open_count": sum(row["current_status"] == "OPEN" for row in obligation_registry["obligations"]),
+            "open_obligation_ids": sorted(row["obligation_id"] for row in obligation_registry["obligations"] if row["current_status"] == "OPEN"),
+            "next_eligible_actions": sorted({row["next_eligible_action"] for row in obligation_registry["obligations"] if row["current_status"] == "OPEN"}),
         },
         "release_lifecycle": {
             "task_id": lifecycle["task_id"],

@@ -4,7 +4,7 @@
   "title": "Ignition deterministic Current Surface snapshot",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "contract_id", "source_policy", "generated_from_source_digest", "identity", "current_method_version", "current_task", "task_identity", "iteration_identity", "latest_architecture_changing_task", "map", "engineering_status", "task_lineage", "release_lifecycle", "active_architecture_overlays", "live_external_ceiling", "live_state_dimensions", "live_attempt_projection", "architecture_counts", "claim_ceiling"],
+  "required": ["schema_version", "contract_id", "source_policy", "generated_from_source_digest", "identity", "current_method_version", "current_task", "task_identity", "iteration_identity", "latest_architecture_changing_task", "map", "engineering_status", "task_lineage", "formal_task_lifecycle", "open_obligations", "release_lifecycle", "active_architecture_overlays", "live_external_ceiling", "live_state_dimensions", "live_attempt_projection", "architecture_counts", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "current-snapshot-r1"},
     "contract_id": {"const": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT"},
@@ -19,6 +19,8 @@
     "map": {"$ref": "#/$defs/map"},
     "engineering_status": {"$ref": "#/$defs/status"},
     "task_lineage": {"$ref": "#/$defs/lineage"},
+    "formal_task_lifecycle": {"$ref": "#/$defs/formalTaskLifecycle"},
+    "open_obligations": {"$ref": "#/$defs/openObligations"},
     "active_architecture_overlays": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/overlay"}},
     "live_external_ceiling": {"type": "string", "minLength": 1},
     "live_state_dimensions": {"$ref": "#/$defs/liveStateDimensions"},
@@ -33,6 +35,8 @@
     "map": {"type": "object", "additionalProperties": false, "required": ["current_version", "historical_versions", "source_path", "projection_status"], "properties": {"current_version": {"type": "string", "minLength": 1}, "historical_versions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}, "source_path": {"type": "string", "minLength": 1}, "projection_status": {"type": "string", "minLength": 1}}},
     "status": {"type": "object", "additionalProperties": false, "required": ["current_state_status", "epistemically_accepted"], "properties": {"current_state_status": {"type": "string", "minLength": 1}, "epistemically_accepted": {"const": 0}}},
     "lineage": {"type": "object", "additionalProperties": false, "required": ["current_task_id", "current_task_status", "predecessor_status", "predecessor_requirement_lineage", "successor_status", "claim_ceiling"], "properties": {"current_task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}, "current_task_status": {"type": "string", "minLength": 1}, "predecessor_status": {"type": "string", "minLength": 1}, "predecessor_requirement_lineage": {"type": "string", "minLength": 1}, "successor_status": {"type": "string", "minLength": 1}, "claim_ceiling": {"type": "string", "minLength": 1}}},
+    "formalTaskLifecycle": {"type": "object", "additionalProperties": false, "required": ["authority", "source_path", "current_task_id", "current_task_status", "current_task_terminal", "scope_complete", "open_obligation_ids"], "properties": {"authority": {"const": "FORMAL_TASK_LIFECYCLE"}, "source_path": {"type": "string", "minLength": 1}, "current_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"}, "current_task_status": {"type": "string", "minLength": 1}, "current_task_terminal": {"type": "boolean"}, "scope_complete": {"type": "boolean"}, "open_obligation_ids": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}}},
+    "openObligations": {"type": "object", "additionalProperties": false, "required": ["authority", "source_path", "current_task_id", "open_count", "open_obligation_ids", "next_eligible_actions"], "properties": {"authority": {"const": "OPEN_OBLIGATION_REGISTRY"}, "source_path": {"type": "string", "minLength": 1}, "current_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"}, "open_count": {"type": "integer", "minimum": 0}, "open_obligation_ids": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}, "next_eligible_actions": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true}}},
     "taskIdentity": {"type": "object", "additionalProperties": false, "required": ["current_formal_task", "latest_architecture_changing_task", "release_candidate_task", "publication_witness_task", "previous_canonical_current_task", "previous_formal_task"], "properties": {"current_formal_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}, "latest_architecture_changing_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}, "release_candidate_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}, "publication_witness_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}, "previous_canonical_current_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}, "previous_formal_task": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}}},
     "iterationIdentity": {
       "type": "object",

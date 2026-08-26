@@ -12,6 +12,13 @@
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
     "epistemically_accepted": 0
   },
+  "obligation_registry": {
+    "authority": "OPEN_OBLIGATION_REGISTRY",
+    "source_path": "ignition/data/operations/open-obligation-registry-r1.json",
+    "schema_path": "ignition/schemas/operations/open-obligation-registry-r1.schema.json",
+    "validator_path": "ignition/tools/validate_open_obligation_registry.py",
+    "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
+  },
   "current_surface_status_requirements": {
     "required_status_tokens": [
       "HISTORICAL_UNEXECUTED",

@@ -1,0 +1,26 @@
+{
+  "schema_version": "ignition-142-step02-obligation-registry-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "02",
+  "status": "PASS",
+  "registry": {
+    "source_path": "ignition/data/operations/open-obligation-registry-r1.json",
+    "schema_path": "ignition/schemas/operations/open-obligation-registry-r1.schema.json",
+    "validator_path": "ignition/tools/validate_open_obligation_registry.py",
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "current_status": "OPEN",
+    "current_owner_plane": "EXECUTOR_ADMISSION",
+    "blocker": "NO_EXACT_BOUND_VALIDATED_COMPLETION",
+    "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+    "inherited_by_task": "IGNITION-20260826-141",
+    "terminal_condition": "FIRST_EXACT_BOUND_LIVE_READONLY_VALIDATED_COMPLETION"
+  },
+  "independence_checks": {
+    "task141_formal_lifecycle_terminal": true,
+    "task141_open_obligation": true,
+    "task141_current_state_open": true,
+    "obligation_closure_can_be_adjudicated_without_reopening_task": true,
+    "task_terminality_derived_from_obligation_status": false
+  },
+  "claim_ceiling": "Repository-local obligation registry and carry-forward semantics only; no live executor capability, external truth, production readiness, Owner acceptance or epistemic acceptance is claimed."
+}

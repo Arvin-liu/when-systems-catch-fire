@@ -41,6 +41,8 @@ SCHEMA_PATH = ROOT / "schemas/architecture/current-facts.schema.json"
 STEERING_PATH = ROOT / "data/operations/steering/current-state-r1.json"
 SEMANTICS_PATH = ROOT / "data/operations/iteration-boundary-semantics-r1.json"
 LIFECYCLE_PATH = ROOT / "data/operations/current-release-lifecycle-r1.json"
+FORMAL_TASK_LIFECYCLE_PATH = ROOT / "data/operations/formal-task-lifecycle-r1.json"
+OPEN_OBLIGATION_REGISTRY_PATH = ROOT / "data/operations/open-obligation-registry-r1.json"
 MATERIALITY_PATH = ROOT / "data/governance/human-surface/materiality-manifest.json"
 KNOWLEDGE_MANIFEST_PATH = ROOT / "data/governance/knowledge-experience/manifest.json"
 FIRE_SEEDS_PATH = ROOT / "data/publication/fire-seeds/seed-census.json"
@@ -143,6 +145,12 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         iteration_boundary.HERE,
         Path(task_identity.__file__).resolve(),
         LIFECYCLE_PATH,
+        FORMAL_TASK_LIFECYCLE_PATH,
+        OPEN_OBLIGATION_REGISTRY_PATH,
+        ROOT / "schemas/operations/formal-task-lifecycle-r1.schema.json",
+        ROOT / "schemas/operations/open-obligation-registry-r1.schema.json",
+        ROOT / "tools/validate_formal_task_lifecycle.py",
+        ROOT / "tools/validate_open_obligation_registry.py",
         LIVE_ATTEMPT_LEDGER_PATH,
         LIVE_RECONCILIATION_EVENTS_PATH,
         LIVE_OBSERVATION_EVENTS_PATH,
@@ -203,6 +211,16 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
     human_config = load_json(sync.resolve_repo_path("ignition/data/governance/human-results/config.json"))
     sync_registry = load_json(sync.resolve_repo_path("ignition/data/operations/synchronization-surfaces.json"))
     task_lineage = load_json(sync.resolve_repo_path(contract["current_task_lineage"]["source_path"]))
+    formal_task_lifecycle = load_json(FORMAL_TASK_LIFECYCLE_PATH)
+    obligation_registry = load_json(OPEN_OBLIGATION_REGISTRY_PATH)
+    lifecycle_records = {row["task_id"]: row for row in formal_task_lifecycle["tasks"]}
+    formal_current = lifecycle_records.get(formal_task_lifecycle["current_task_id"])
+    if formal_current is None:
+        raise ValueError("formal task lifecycle is missing its current task record")
+    if formal_task_lifecycle["current_task_id"] != task_lineage["current_task"]["task_id"]:
+        raise ValueError("formal task lifecycle current task differs from task lineage")
+    if obligation_registry["current_task_id"] != task_lineage["current_task"]["task_id"]:
+        raise ValueError("obligation registry current task differs from task lineage")
     steering = load_json(STEERING_PATH)
     live_projection = validate_projection(load_json(LIVE_CURRENT_PROJECTION_PATH))
     sync_surfaces = sync_registry.get("surfaces", [])
@@ -339,6 +357,23 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "task125_canonical_status": task_lineage["lineages"][0]["predecessor"]["canonical_status"],
             "task127_status": task_lineage["lineages"][0]["successor"]["execution_status"],
         },
+        "formal_task_lifecycle": {
+            "authority": formal_task_lifecycle["authority"],
+            "source_path": relative(FORMAL_TASK_LIFECYCLE_PATH),
+            "current_task_id": formal_task_lifecycle["current_task_id"],
+            "current_task_status": formal_current["execution_status"],
+            "current_task_terminal": formal_current["terminal"],
+            "scope_complete": formal_current["scope_complete"],
+            "open_obligation_ids": formal_current["open_obligation_ids"],
+        },
+        "open_obligations": {
+            "authority": obligation_registry["authority"],
+            "source_path": relative(OPEN_OBLIGATION_REGISTRY_PATH),
+            "current_task_id": obligation_registry["current_task_id"],
+            "open_count": sum(row["current_status"] == "OPEN" for row in obligation_registry["obligations"]),
+            "open_obligation_ids": sorted(row["obligation_id"] for row in obligation_registry["obligations"] if row["current_status"] == "OPEN"),
+            "next_eligible_actions": sorted({row["next_eligible_action"] for row in obligation_registry["obligations"] if row["current_status"] == "OPEN"}),
+        },
         "steering": {
             "current_status": steering["current_status"],
             "invariant_ids": steering["identity_invariants"],
@@ -398,6 +433,8 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
         f"- Fire Seeds: `{fire_seeds['seed_count']}` seeds/clusters；`{fire_seeds['source_census_count']}` source-census records。",
         f"- Human Surface: `{human['materiality_entries']}` materiality entries（function `{human['function_human_entries']}` + non-function `{human['nonfunction_human_entries']}`）；`{human['registered_synchronization_surfaces']}` registered sync surfaces；`{human['machine_human_pairs']}` machine/human pairs。",
         f"- Task lineage: current `{facts['task_lineage']['current_task_id']}` `{facts['task_lineage']['current_task_status']}`；125 file `{facts['task_lineage']['task125_file_status']}`, requirements `{facts['task_lineage']['task125_requirement_lineage_status']}`, canonical `{facts['task_lineage']['task125_canonical_status']}`；127 `{facts['task_lineage']['task127_status']}`。",
+        f"- Formal task lifecycle: `{facts['formal_task_lifecycle']['current_task_id']}` `{facts['formal_task_lifecycle']['current_task_status']}` terminal `{str(facts['formal_task_lifecycle']['current_task_terminal']).lower()}` scope_complete `{str(facts['formal_task_lifecycle']['scope_complete']).lower()}`；source `{facts['formal_task_lifecycle']['source_path']}`。",
+        f"- Open obligations: authority `{facts['open_obligations']['authority']}`; open `{facts['open_obligations']['open_obligation_ids']}`; next eligible actions `{facts['open_obligations']['next_eligible_actions']}`; source `{facts['open_obligations']['source_path']}`。",
         f"- Steering: `{steering['current_status']}`；`{steering['module_count']}` bounded modules；`{steering['integration_surface_count']}` integration surfaces；pilot `{steering['pilot_status']}`；completion boundary `{steering['completion_boundary']}`。",
         "- Current environmental residuals: " + ("；".join(residuals) if residuals else "none declared") + "。",
         "",

@@ -63,6 +63,17 @@
       "seed_count": 64,
       "source_census_count": 393
     },
+    "formal_task_lifecycle": {
+      "authority": "FORMAL_TASK_LIFECYCLE",
+      "current_task_id": "IGNITION-20260826-141",
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "current_task_terminal": true,
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "scope_complete": true,
+      "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json"
+    },
     "foundation": {
       "function_identity_cards": 5979,
       "function_quarantine_or_pending": 4869,
@@ -107,6 +118,18 @@
       "changes": 315,
       "layered_readings": 332,
       "search_records": 23615
+    },
+    "open_obligations": {
+      "authority": "OPEN_OBLIGATION_REGISTRY",
+      "current_task_id": "IGNITION-20260826-141",
+      "next_eligible_actions": [
+        "RUN_DYNAMIC_EXECUTOR_ADMISSION"
+      ],
+      "open_count": 1,
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "source_path": "ignition/data/operations/open-obligation-registry-r1.json"
     },
     "packs": {
       "capability_route_count": 10,
@@ -190,7 +213,11 @@
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "b37b63d2679976916dccea75a434df9d7807c4db8af99eec132ae11781f81c82"
+      "sha256": "56001707d731e1f5c07caa75880ece34d3fd2f89894a3350ee3793598e9bb985"
+    },
+    {
+      "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
+      "sha256": "6e8a8b8c984e17f742f917d92ec230684892b68f41b1329432e3eafec7f37c03"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
@@ -215,6 +242,10 @@
     {
       "path": "ignition/data/operations/iterations/141/live-inference-observation-events-r1.jsonl",
       "sha256": "a3642322ca9eecfa1c627151150f32b1e4a3a3fa6a133098cc676e77055260fe"
+    },
+    {
+      "path": "ignition/data/operations/open-obligation-registry-r1.json",
+      "sha256": "cbb0074b8f55a4479676d2915e3076bad0d31e8e8cf98e44d1946b9efe744f52"
     },
     {
       "path": "ignition/data/operations/project-components.json",
@@ -250,7 +281,7 @@
     },
     {
       "path": "ignition/schemas/architecture/current-facts.schema.json",
-      "sha256": "a972464d2cf8bdd564256ea5104be985a4d638d41c9b0c4ce9160e6ed046fd8b"
+      "sha256": "e8973307a4bcff64c7e4efa0767a944f9622aff9c7f4107a78ebd5e6e9746eed"
     },
     {
       "path": "ignition/schemas/architecture/current-system-identity.schema.json",
@@ -258,11 +289,19 @@
     },
     {
       "path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
-      "sha256": "ddde22e4321e95aab13af7414bae09045fa98f03e11fc9b10f64bca924659f0c"
+      "sha256": "bb14a1628f21f7bcc7eec5c85b678cb337f00a6e0f6126e63c88886d425026e3"
+    },
+    {
+      "path": "ignition/schemas/operations/formal-task-lifecycle-r1.schema.json",
+      "sha256": "5c31cd08bef78c7427c3d82a3e819a897410cfbda5c66f01c5438ace37c2c4ab"
+    },
+    {
+      "path": "ignition/schemas/operations/open-obligation-registry-r1.schema.json",
+      "sha256": "effc8777a2734c11ef1032ee2a3371964ff2bff39ced768144ffcdab7b8edcdc"
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
-      "sha256": "18aef9da90ccfc85d33f3e3005ead6d3bbbd112099e7e9121be9f25a31658f3c"
+      "sha256": "35dd0ff4d45872ec7f2333fa71a38368de951a0c866c1509f36c7c3a4cea234d"
     },
     {
       "path": "ignition/tools/iteration_boundary.py",
@@ -275,6 +314,14 @@
     {
       "path": "ignition/tools/validate_current_task_lineage.py",
       "sha256": "cfec2a13296b420a7cbfa4dc1c791f439f1607ae3b387442cff66c9423f30cb5"
+    },
+    {
+      "path": "ignition/tools/validate_formal_task_lifecycle.py",
+      "sha256": "589f217f94d05380e3d0d8b94250978596774da3cb782c2b1abc9a927110a4ea"
+    },
+    {
+      "path": "ignition/tools/validate_open_obligation_registry.py",
+      "sha256": "274afe6b6939090662ebc8e668950795f1ae78087379fffe62589f6c52d49ec9"
     }
   ]
 }

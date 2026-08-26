@@ -3,6 +3,13 @@
   "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
   "authority": "FORMAL_TASK_LIFECYCLE",
   "current_task_id": "IGNITION-20260826-141",
+  "obligation_registry": {
+    "authority": "OPEN_OBLIGATION_REGISTRY",
+    "path": "ignition/data/operations/open-obligation-registry-r1.json",
+    "schema_path": "ignition/schemas/operations/open-obligation-registry-r1.schema.json",
+    "validator_path": "ignition/tools/validate_open_obligation_registry.py",
+    "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
+  },
   "tasks": [
     {
       "task_id": "IGNITION-20260826-141",

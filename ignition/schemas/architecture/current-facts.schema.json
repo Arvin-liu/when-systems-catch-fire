@@ -36,7 +36,7 @@
     "facts": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["architecture", "packs", "federation", "foundation", "knowledge_experience", "fire_seeds", "human_surface", "iteration", "task_lineage", "steering", "environmental_residuals"],
+      "required": ["architecture", "packs", "federation", "foundation", "knowledge_experience", "fire_seeds", "human_surface", "iteration", "task_lineage", "formal_task_lifecycle", "open_obligations", "steering", "environmental_residuals"],
       "properties": {
         "architecture": {
           "type": "object", "additionalProperties": false,
@@ -145,6 +145,31 @@
             "task125_requirement_lineage_status": {"const": "REBASED_INTO_127"},
             "task125_canonical_status": {"const": "HISTORICAL_UNEXECUTED_REBASED_INTO_127"},
             "task127_status": {"const": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"}
+          }
+        },
+        "formal_task_lifecycle": {
+          "type": "object", "additionalProperties": false,
+          "required": ["authority", "source_path", "current_task_id", "current_task_status", "current_task_terminal", "scope_complete", "open_obligation_ids"],
+          "properties": {
+            "authority": {"const": "FORMAL_TASK_LIFECYCLE"},
+            "source_path": {"$ref": "#/$defs/nonblank"},
+            "current_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+            "current_task_status": {"$ref": "#/$defs/nonblank"},
+            "current_task_terminal": {"type": "boolean"},
+            "scope_complete": {"type": "boolean"},
+            "open_obligation_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
+          }
+        },
+        "open_obligations": {
+          "type": "object", "additionalProperties": false,
+          "required": ["authority", "source_path", "current_task_id", "open_count", "open_obligation_ids", "next_eligible_actions"],
+          "properties": {
+            "authority": {"const": "OPEN_OBLIGATION_REGISTRY"},
+            "source_path": {"$ref": "#/$defs/nonblank"},
+            "current_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+            "open_count": {"type": "integer", "minimum": 0},
+            "open_obligation_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+            "next_eligible_actions": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
           }
         },
         "steering": {

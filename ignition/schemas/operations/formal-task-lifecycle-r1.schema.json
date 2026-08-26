@@ -4,12 +4,13 @@
   "title": "Ignition independent formal task lifecycle",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "contract_id", "authority", "current_task_id", "tasks", "claim_ceiling"],
+  "required": ["schema_version", "contract_id", "authority", "current_task_id", "obligation_registry", "tasks", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "formal-task-lifecycle-r1"},
     "contract_id": {"const": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION"},
     "authority": {"const": "FORMAL_TASK_LIFECYCLE"},
     "current_task_id": {"$ref": "#/$defs/taskId"},
+    "obligation_registry": {"$ref": "#/$defs/sourceRef"},
     "tasks": {
       "type": "array",
       "minItems": 1,
@@ -20,6 +21,18 @@
   "$defs": {
     "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
     "taskId": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
+    "sourceRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authority", "path", "schema_path", "validator_path", "independence_rule"],
+      "properties": {
+        "authority": {"const": "OPEN_OBLIGATION_REGISTRY"},
+        "path": {"const": "ignition/data/operations/open-obligation-registry-r1.json"},
+        "schema_path": {"const": "ignition/schemas/operations/open-obligation-registry-r1.schema.json"},
+        "validator_path": {"const": "ignition/tools/validate_open_obligation_registry.py"},
+        "independence_rule": {"const": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"}
+      }
+    },
     "task": {
       "type": "object",
       "additionalProperties": false,

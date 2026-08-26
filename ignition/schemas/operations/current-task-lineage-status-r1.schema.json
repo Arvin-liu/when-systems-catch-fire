@@ -4,13 +4,14 @@
   "title": "Ignition current task lineage and lifecycle status",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "contract_id", "current_task", "current_state", "lineages", "current_surface_status_requirements", "protected_historical_paths", "claim_ceiling"],
+  "required": ["schema_version", "contract_id", "current_task", "current_state", "obligation_registry", "lineages", "current_surface_status_requirements", "protected_historical_paths", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "current-task-lineage-status-r1"},
     "contract_id": {"const": "CURRENT_TASK_LINEAGE_STATUS"},
     "current_task": {"$ref": "#/$defs/currentTask"},
     "task_identity": {"$ref": "#/$defs/taskIdentityState"},
     "current_state": {"$ref": "#/$defs/currentState"},
+    "obligation_registry": {"$ref": "#/$defs/obligationRegistryRef"},
     "lineages": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/lineage"}},
     "current_surface_status_requirements": {"$ref": "#/$defs/surfaceRequirements"},
     "protected_historical_paths": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
@@ -37,6 +38,18 @@
       "properties": {
         "current_state_status": {"const": "CURRENT_WITH_OPEN_OBLIGATIONS"},
         "epistemically_accepted": {"const": 0}
+      }
+    },
+    "obligationRegistryRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authority", "source_path", "schema_path", "validator_path", "independence_rule"],
+      "properties": {
+        "authority": {"const": "OPEN_OBLIGATION_REGISTRY"},
+        "source_path": {"const": "ignition/data/operations/open-obligation-registry-r1.json"},
+        "schema_path": {"const": "ignition/schemas/operations/open-obligation-registry-r1.schema.json"},
+        "validator_path": {"const": "ignition/tools/validate_open_obligation_registry.py"},
+        "independence_rule": {"const": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"}
       }
     },
     "surfaceRequirements": {

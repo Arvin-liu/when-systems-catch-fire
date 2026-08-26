@@ -57,7 +57,18 @@
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
     "epistemically_accepted": 0
   },
-  "generated_from_source_digest": "cb74bfbcdee5132538d6cd0326d8f1c7bc9d470c57742cd1d23dbbb7e9b3ef44",
+  "formal_task_lifecycle": {
+    "authority": "FORMAL_TASK_LIFECYCLE",
+    "current_task_id": "IGNITION-20260826-141",
+    "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "current_task_terminal": true,
+    "open_obligation_ids": [
+      "LIVE_EXTERNAL_INVOCATION"
+    ],
+    "scope_complete": true,
+    "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json"
+  },
+  "generated_from_source_digest": "577d4f757eecb9ba018e8f1f6c4fea029e8f91f385f1c4f38864fb6ff92e5c54",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r7-live-state-semantics-structured-result-reliability-r1",
@@ -105,6 +116,18 @@
     ],
     "projection_status": "CURRENT_DERIVED_PROJECTION",
     "source_path": "ignition/data/architecture/interactive-system-map-layout.json"
+  },
+  "open_obligations": {
+    "authority": "OPEN_OBLIGATION_REGISTRY",
+    "current_task_id": "IGNITION-20260826-141",
+    "next_eligible_actions": [
+      "RUN_DYNAMIC_EXECUTOR_ADMISSION"
+    ],
+    "open_count": 1,
+    "open_obligation_ids": [
+      "LIVE_EXTERNAL_INVOCATION"
+    ],
+    "source_path": "ignition/data/operations/open-obligation-registry-r1.json"
   },
   "release_lifecycle": {
     "content_phase": "RELEASE_READY",
