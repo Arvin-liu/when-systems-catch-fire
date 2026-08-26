@@ -1,0 +1,38 @@
+{
+  "schema_version": "ignition-141-step09-live-policy-freeze-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "09",
+  "status": "PASS",
+  "inputs": {
+    "census_path": "ignition/data/operations/iterations/141/local-executor-census-r1.json",
+    "census_id": "ignition-141-local-executor-census-r1-20260826",
+    "root_cause_audit_path": "ignition/data/operations/iterations/141/step06-malformed-root-cause-archaeology.json",
+    "root_cause_status": "ROOT_CAUSE_NARROWED_NOT_CONFIRMED"
+  },
+  "policy": {
+    "max_distinct_executor_families": 2,
+    "max_attempts_per_family": 1,
+    "stop_condition": "FIRST_EXACT_BOUND_LIVE_READONLY_VALIDATED_COMPLETION",
+    "same_family_retry_rule": "NO_RETRY_WITHOUT_PUBLIC_ROOT_CAUSE_CONFIRMED_AND_FIXED",
+    "codex_family_status": "EXCLUDED_ROOT_CAUSE_NOT_CONFIRMED",
+    "candidate_families": ["Gemini CLI", "Hermes Agent", "OpenClaw"],
+    "authorized_families": [],
+    "live_probe_authorization": "NO_AUTHORIZED_FAMILY",
+    "live_probe_count": 0,
+    "validated_completion_count": 0
+  },
+  "admission_decision": {
+    "status": "NO_AUTHORIZED_FAMILY",
+    "reason": "Fresh census found Codex capability-admitted but policy-excluded; Gemini, Hermes and OpenClaw retained independent blockers. No policy relaxation or blind retry is authorized.",
+    "next_safe_action": "REPAIR_A_PUBLICLY_CONFIRMED_EXECUTOR_BOUNDARY_OR_REFRESH_CENSUS",
+    "stop_on_first_validated": true
+  },
+  "safety": {
+    "live_inference_started": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "secret_content_read": false,
+    "workspace_modified": false
+  },
+  "claim_ceiling": "OS-owned live policy freeze and admission result only; no live inference, validated completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
