@@ -365,6 +365,11 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "current_task_terminal": formal_current["terminal"],
             "scope_complete": formal_current["scope_complete"],
             "open_obligation_ids": formal_current["open_obligation_ids"],
+            "terminal_task_history": [
+                {"task_id": row["task_id"], "execution_status": row["execution_status"], "terminal": True}
+                for row in formal_task_lifecycle["tasks"]
+                if row["terminal"]
+            ],
         },
         "open_obligations": {
             "authority": obligation_registry["authority"],
@@ -434,6 +439,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
         f"- Human Surface: `{human['materiality_entries']}` materiality entries（function `{human['function_human_entries']}` + non-function `{human['nonfunction_human_entries']}`）；`{human['registered_synchronization_surfaces']}` registered sync surfaces；`{human['machine_human_pairs']}` machine/human pairs。",
         f"- Task lineage: current `{facts['task_lineage']['current_task_id']}` `{facts['task_lineage']['current_task_status']}`；125 file `{facts['task_lineage']['task125_file_status']}`, requirements `{facts['task_lineage']['task125_requirement_lineage_status']}`, canonical `{facts['task_lineage']['task125_canonical_status']}`；127 `{facts['task_lineage']['task127_status']}`。",
         f"- Formal task lifecycle: `{facts['formal_task_lifecycle']['current_task_id']}` `{facts['formal_task_lifecycle']['current_task_status']}` terminal `{str(facts['formal_task_lifecycle']['current_task_terminal']).lower()}` scope_complete `{str(facts['formal_task_lifecycle']['scope_complete']).lower()}`；source `{facts['formal_task_lifecycle']['source_path']}`。",
+        f"- Formal terminal history: `{facts['formal_task_lifecycle']['terminal_task_history']}`；terminal formal tasks remain independent from open obligations。",
         f"- Open obligations: authority `{facts['open_obligations']['authority']}`; open `{facts['open_obligations']['open_obligation_ids']}`; next eligible actions `{facts['open_obligations']['next_eligible_actions']}`; source `{facts['open_obligations']['source_path']}`。",
         f"- Steering: `{steering['current_status']}`；`{steering['module_count']}` bounded modules；`{steering['integration_surface_count']}` integration surfaces；pilot `{steering['pilot_status']}`；completion boundary `{steering['completion_boundary']}`。",
         "- Current environmental residuals: " + ("；".join(residuals) if residuals else "none declared") + "。",

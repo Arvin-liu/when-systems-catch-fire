@@ -12,7 +12,7 @@
     "current_owner_plane": "EXECUTOR_ADMISSION",
     "blocker": "NO_EXACT_BOUND_VALIDATED_COMPLETION",
     "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
-    "inherited_by_task": "IGNITION-20260826-141",
+    "inherited_by_task": "IGNITION-20260827-142",
     "terminal_condition": "FIRST_EXACT_BOUND_LIVE_READONLY_VALIDATED_COMPLETION"
   },
   "independence_checks": {

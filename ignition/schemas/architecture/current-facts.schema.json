@@ -33,6 +33,7 @@
   },
   "$defs": {
     "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "terminalTask": {"type": "object", "additionalProperties": false, "required": ["task_id", "execution_status", "terminal"], "properties": {"task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"}, "execution_status": {"type": "string", "minLength": 1}, "terminal": {"const": true}}},
     "facts": {
       "type": "object",
       "additionalProperties": false,
@@ -149,7 +150,7 @@
         },
         "formal_task_lifecycle": {
           "type": "object", "additionalProperties": false,
-          "required": ["authority", "source_path", "current_task_id", "current_task_status", "current_task_terminal", "scope_complete", "open_obligation_ids"],
+          "required": ["authority", "source_path", "current_task_id", "current_task_status", "current_task_terminal", "scope_complete", "open_obligation_ids", "terminal_task_history"],
           "properties": {
             "authority": {"const": "FORMAL_TASK_LIFECYCLE"},
             "source_path": {"$ref": "#/$defs/nonblank"},
@@ -157,7 +158,8 @@
             "current_task_status": {"$ref": "#/$defs/nonblank"},
             "current_task_terminal": {"type": "boolean"},
             "scope_complete": {"type": "boolean"},
-            "open_obligation_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
+            "open_obligation_ids": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+            "terminal_task_history": {"type": "array", "items": {"$ref": "#/$defs/terminalTask"}, "uniqueItems": true}
           }
         },
         "open_obligations": {

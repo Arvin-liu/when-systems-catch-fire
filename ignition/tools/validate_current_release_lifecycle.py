@@ -67,6 +67,8 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     current_task = lineage["current_task"]
     if lifecycle["task_id"] != current_task["task_id"]:
         errors.append("lifecycle task_id differs from canonical current task")
+    if lifecycle["current_task_terminal"] != current_task["terminal"]:
+        errors.append("lifecycle current_task_terminal differs from canonical current task terminality")
     if lifecycle["task_id"] != execution_contract["task_id"]:
         errors.append("lifecycle task_id differs from execution contract task")
     if lifecycle["task_branch"] != execution_contract["expected_task_branch"]:

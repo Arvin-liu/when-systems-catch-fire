@@ -2,7 +2,7 @@
   "schema_version": "open-obligation-registry-r1",
   "contract_id": "OBLIGATION_CARRY_FORWARD_WITHOUT_TASK_LIVENESS",
   "authority": "OPEN_OBLIGATION_REGISTRY",
-  "current_task_id": "IGNITION-20260826-141",
+  "current_task_id": "IGNITION-20260827-142",
   "obligations": [
     {
       "obligation_id": "LIVE_EXTERNAL_INVOCATION",
@@ -12,20 +12,22 @@
       "current_owner_plane": "EXECUTOR_ADMISSION",
       "blocker": "NO_EXACT_BOUND_VALIDATED_COMPLETION",
       "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
-      "inherited_by_task": "IGNITION-20260826-141",
+      "inherited_by_task": "IGNITION-20260827-142",
       "carry_forward_tasks": [
         "IGNITION-20260823-136",
         "IGNITION-20260824-137",
         "IGNITION-20260824-138",
         "IGNITION-20260825-139",
         "IGNITION-20260826-140",
-        "IGNITION-20260826-141"
+        "IGNITION-20260826-141",
+        "IGNITION-20260827-142"
       ],
       "terminal_condition": "FIRST_EXACT_BOUND_LIVE_READONLY_VALIDATED_COMPLETION",
       "evidence_refs": [
         "ignition/data/operations/iterations/141/live-current-projection-r3.json",
         "ignition/data/operations/iterations/141/step11-live-probe-and-independent-validation.json",
         "ignition/agent-results/IGNITION-20260826-141-machine-receipt.json",
+        "ignition/data/operations/iterations/142/step02-obligation-registry.json",
         "ignition/STATE-CHANGELOG.md"
       ]
     }

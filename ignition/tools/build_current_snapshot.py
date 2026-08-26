@@ -233,6 +233,11 @@ def build_snapshot() -> dict[str, Any]:
             "current_task_terminal": formal_current["terminal"],
             "scope_complete": formal_current["scope_complete"],
             "open_obligation_ids": formal_current["open_obligation_ids"],
+            "terminal_task_history": [
+                {"task_id": row["task_id"], "execution_status": row["execution_status"], "terminal": True}
+                for row in formal_task_lifecycle["tasks"]
+                if row["terminal"]
+            ],
         },
         "open_obligations": {
             "authority": obligation_registry["authority"],

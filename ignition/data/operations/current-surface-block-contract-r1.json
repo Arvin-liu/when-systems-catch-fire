@@ -21,6 +21,7 @@
     "current_task_terminal",
     "formal_task_terminality",
     "formal_task_open_obligations",
+    "formal_task_terminal_history",
     "open_obligation_registry",
     "open_obligation_next_action",
     "latest_architecture_changing_task",

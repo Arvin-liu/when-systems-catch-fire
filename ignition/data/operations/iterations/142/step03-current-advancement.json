@@ -1,0 +1,27 @@
+{
+  "schema_version": "ignition-142-step03-current-advancement-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "03",
+  "status": "PASS",
+  "transition": {
+    "from_task": "IGNITION-20260826-141",
+    "from_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "from_terminal": true,
+    "to_task": "IGNITION-20260827-142",
+    "to_status": "IN_PROGRESS",
+    "to_terminal": false,
+    "carried_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+    "obligation_registry_remains_open": true,
+    "terminality_and_obligation_are_not_derived_from_each_other": true
+  },
+  "current_surface_requirements": {
+    "current_formal_task": "IGNITION-20260827-142",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "task141_historical_terminal_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "task141_is_not_current_in_progress": true,
+    "open_obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "open_obligation_status": "OPEN",
+    "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION"
+  },
+  "claim_ceiling": "Repository-local Current advancement and independent lifecycle/obligation projection only; no executor, external truth, production readiness, Owner acceptance or epistemic claim is made."
+}

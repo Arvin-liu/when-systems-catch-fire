@@ -47,11 +47,11 @@
   "contract_id": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT",
   "current_method_version": "1.4.0",
   "current_task": {
-    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "execution_status": "IN_PROGRESS",
     "identity_impact": "ARCHITECTURE_CHANGED",
-    "scope": "Formal task IGNITION-20260826-141 Current advancement",
-    "task_id": "IGNITION-20260826-141",
-    "terminal": true
+    "scope": "Formal task IGNITION-20260827-142 Current advancement",
+    "task_id": "IGNITION-20260827-142",
+    "terminal": false
   },
   "engineering_status": {
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
@@ -59,16 +59,23 @@
   },
   "formal_task_lifecycle": {
     "authority": "FORMAL_TASK_LIFECYCLE",
-    "current_task_id": "IGNITION-20260826-141",
-    "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
-    "current_task_terminal": true,
+    "current_task_id": "IGNITION-20260827-142",
+    "current_task_status": "IN_PROGRESS",
+    "current_task_terminal": false,
     "open_obligation_ids": [
       "LIVE_EXTERNAL_INVOCATION"
     ],
-    "scope_complete": true,
-    "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json"
+    "scope_complete": false,
+    "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "terminal_task_history": [
+      {
+        "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+        "task_id": "IGNITION-20260826-141",
+        "terminal": true
+      }
+    ]
   },
-  "generated_from_source_digest": "577d4f757eecb9ba018e8f1f6c4fea029e8f91f385f1c4f38864fb6ff92e5c54",
+  "generated_from_source_digest": "0639dd9412d0590e6cc4c6702d70e0e18854fb6a894cb9e4ae2a1c3e5544953e",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r7-live-state-semantics-structured-result-reliability-r1",
@@ -77,15 +84,15 @@
     "system_role": "Ignition OS / orchestration-governance layer"
   },
   "iteration_identity": {
-    "current_formal_task_id": "IGNITION-20260826-141",
-    "current_formal_task_ordinal": 141,
-    "current_iteration_boundary": 141,
+    "current_formal_task_id": "IGNITION-20260827-142",
+    "current_formal_task_ordinal": 142,
+    "current_iteration_boundary": 142,
     "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
     "current_method_version": "1.4.0",
-    "latest_architecture_changing_task_id": "IGNITION-20260826-141",
-    "latest_architecture_task_ordinal": 141
+    "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+    "latest_architecture_task_ordinal": 142
   },
-  "latest_architecture_changing_task": "IGNITION-20260826-141",
+  "latest_architecture_changing_task": "IGNITION-20260827-142",
   "live_attempt_projection": {
     "current_live_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION",
     "next_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
@@ -119,7 +126,7 @@
   },
   "open_obligations": {
     "authority": "OPEN_OBLIGATION_REGISTRY",
-    "current_task_id": "IGNITION-20260826-141",
+    "current_task_id": "IGNITION-20260827-142",
     "next_eligible_actions": [
       "RUN_DYNAMIC_EXECUTOR_ADMISSION"
     ],
@@ -130,12 +137,12 @@
     "source_path": "ignition/data/operations/open-obligation-registry-r1.json"
   },
   "release_lifecycle": {
-    "content_phase": "RELEASE_READY",
+    "content_phase": "RUNNING",
     "embedded_publication_assertion": "NONE",
     "post_publication_check_required": true,
     "publication_authority": "REMOTE_REF_OBSERVATION",
     "required_publication_ref": "refs/heads/main",
-    "task_id": "IGNITION-20260826-141"
+    "task_id": "IGNITION-20260827-142"
   },
   "schema_version": "current-snapshot-r1",
   "source_policy": {
@@ -144,17 +151,17 @@
     "registry_path": "ignition/data/operations/current-volatile-fact-registry-r1.json"
   },
   "task_identity": {
-    "current_formal_task": "IGNITION-20260826-141",
-    "latest_architecture_changing_task": "IGNITION-20260826-141",
-    "previous_canonical_current_task": "IGNITION-20260826-140",
-    "previous_formal_task": "IGNITION-20260826-140",
-    "publication_witness_task": "IGNITION-20260826-141",
-    "release_candidate_task": "IGNITION-20260826-141"
+    "current_formal_task": "IGNITION-20260827-142",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "previous_canonical_current_task": "IGNITION-20260826-141",
+    "previous_formal_task": "IGNITION-20260826-141",
+    "publication_witness_task": "IGNITION-20260827-142",
+    "release_candidate_task": "IGNITION-20260827-142"
   },
   "task_lineage": {
     "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
-    "current_task_id": "IGNITION-20260826-141",
-    "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "current_task_id": "IGNITION-20260827-142",
+    "current_task_status": "IN_PROGRESS",
     "predecessor_requirement_lineage": "REBASED_INTO_127",
     "predecessor_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
     "successor_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"

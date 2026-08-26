@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260827-142",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "d2c092ce8961e51835249d345eab44d8216026f0",
+    "command_path": "agent-commands/IGNITION-20260827-142-task-lifecycle-decoupling-executor-admission-first-validated-completion-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "6de0841e27a0b38b4ac9a2703daef5b9637c6611"
+  },
+  "identity_impact": "ARCHITECTURE_CHANGED",
+  "expected_task_branch": "codex/ignition-142-task-lifecycle-admission-r1-20260827",
+  "expected_receipt_branch": "relay/receipts/ignition-142-task-lifecycle-admission-first-validated-completion-r1-20260827",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260827-142",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "previous_canonical_current_task": "IGNITION-20260826-141",
+    "previous_formal_task": "IGNITION-20260826-141",
+    "release_candidate_task": "IGNITION-20260827-142",
+    "publication_witness_task": "IGNITION-20260827-142"
+  },
+  "claim_ceiling": "Task142 repository-local task-lifecycle decoupling, provider-neutral executor admission, synthetic/read-only conformance and bounded live-observation evidence only; no Owner authority, external truth, production readiness, general executor interchangeability, exact-once execution or epistemic acceptance is inferred."
+}

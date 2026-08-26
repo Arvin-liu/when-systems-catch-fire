@@ -2,7 +2,7 @@
   "schema_version": "formal-task-lifecycle-r1",
   "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
   "authority": "FORMAL_TASK_LIFECYCLE",
-  "current_task_id": "IGNITION-20260826-141",
+  "current_task_id": "IGNITION-20260827-142",
   "obligation_registry": {
     "authority": "OPEN_OBLIGATION_REGISTRY",
     "path": "ignition/data/operations/open-obligation-registry-r1.json",
@@ -11,6 +11,20 @@
     "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
   },
   "tasks": [
+    {
+      "task_id": "IGNITION-20260827-142",
+      "execution_status": "IN_PROGRESS",
+      "terminal": false,
+      "scope_complete": false,
+      "identity_impact": "ARCHITECTURE_CHANGED",
+      "terminal_basis": "Task142 is the current formal task; Steps 00-02 establish the lifecycle and obligation authorities and the remaining admission/live/validation/release steps are open.",
+      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/142/execution-contract-r1.json",
+        "ignition/data/operations/iterations/142/step02-obligation-registry.json"
+      ],
+      "claim_ceiling": "Task142 is not terminal; the carried obligation remains independently open and no live, external, production or epistemic claim is made."
+    },
     {
       "task_id": "IGNITION-20260826-141",
       "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
