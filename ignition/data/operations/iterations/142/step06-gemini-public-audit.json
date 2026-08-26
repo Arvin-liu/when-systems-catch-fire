@@ -1,0 +1,64 @@
+{
+  "schema_version": "task142-public-executor-audit-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "06",
+  "status": "PASS",
+  "observed_at": "2026-08-26T17:04:16Z",
+  "executor_id": "external.gemini",
+  "family": "AGENTIC_EXECUTOR",
+  "observation_policy": "PATH_VERSION_HELP_PUBLIC_AUTH_PRESENCE_ONLY_NO_SECRET_NO_INFERENCE",
+  "public_probe": {
+    "path_ref": "PATH_ENTRY:gemini",
+    "version": "0.53.1",
+    "version_code": 0,
+    "help_code": 0,
+    "binary_sha256": "a193db41b0b2c9e35a8c5aafcb2c810947ee41a311757bb4ee4d6b015bc3bfb5",
+    "help_sha256": "49639e15d7396409da1eabcf21ce18df1489b890a348aae8200c4d1fd1b4c887",
+    "relevant_flags": ["--accept-raw-output-risk", "--allowed-tools", "--approval-mode", "--output-format", "--prompt", "--sandbox"]
+  },
+  "auth": {
+    "public_status": "NOT_OBSERVED",
+    "public_status_exit": null,
+    "presence_ref": "AUTH_STATE_PRESENCE:external.gemini",
+    "present": true,
+    "content_read": false
+  },
+  "gates": {
+    "public_auth": "NOT_OBSERVED",
+    "auth_separation": "UNPROVEN",
+    "argv_contract": "STRICT",
+    "structured_result": "UNPROVEN",
+    "workspace": "UNPROVEN",
+    "capture": "UNPROVEN",
+    "validator_binding": "UNPROVEN",
+    "cleanup": "UNPROVEN",
+    "permission_ceiling": "UNPROVEN",
+    "exact_binding": "UNPROVEN",
+    "no_effect_scope": "UNPROVEN"
+  },
+  "admission": {
+    "technical_status": "BLOCKED",
+    "live_eligibility": "BLOCKED",
+    "blockers": ["AUTH_SOURCE_HOME_NOT_SEPARABLE", "POINTFIRE_ADAPTER_NOT_ATTESTED", "PUBLIC_AUTH_STATUS_UNAVAILABLE_WITHOUT_INFERENCE"],
+    "policy_blockers": [],
+    "why_executor": "Gemini has a healthy public version/help surface and visible prompt, output-format and sandbox flags, but public auth status cannot be confirmed without inference, the auth source boundary is not separable for this task, and no attested Pointfire adapter translates the public contract into the exact admission and capture boundary."
+  },
+  "adapter": {
+    "status": "NOT_ATTESTED",
+    "adapter_ref": null,
+    "translation_only": true,
+    "agent_loop_added": false
+  },
+  "safety": {
+    "secret_content_read": false,
+    "auth_content_copied": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "install_or_upgrade_performed": false,
+    "live_process_started": false,
+    "live_inference_started": false,
+    "workspace_modified": false,
+    "ui_action_performed": false
+  },
+  "claim_ceiling": "Fresh public Gemini metadata, explicit gate observations and admission blockers only; no auth validity, inference, live process, validated completion, production readiness, external truth or executor interchangeability is claimed."
+}
