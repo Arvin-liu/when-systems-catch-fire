@@ -1,0 +1,19 @@
+{
+  "schema_version": "task142-live-attempt-adjudication-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "13",
+  "status": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+  "decision": "NO_LIVE_INVOCATION",
+  "attempt_id": null,
+  "executor_id": null,
+  "family": null,
+  "process_started": false,
+  "inference_started": false,
+  "validated_completion": false,
+  "reason": "NO_LIVE_SELECTABLE_EXECUTOR",
+  "pre_live_gate_ref": "ignition/data/operations/iterations/142/step12-pre-live-gate.json",
+  "census_ref": "ignition/data/operations/iterations/142/local-executor-census-r2.json",
+  "historical_live_counts": {"attempts": 6, "validated_completion": 0, "unreconciled": 0, "observation_incomplete": 2},
+  "safety": {"secret_content_read": false, "auth_content_copied": false, "configuration_changed": false, "billing_changed": false, "install_or_upgrade_performed": false, "live_process_started": false, "live_inference_started": false, "workspace_modified": false, "ui_action_performed": false},
+  "claim_ceiling": "Attempt A was not authorized and was not invoked; no live process, inference, validated completion, external truth or obligation closure is claimed."
+}

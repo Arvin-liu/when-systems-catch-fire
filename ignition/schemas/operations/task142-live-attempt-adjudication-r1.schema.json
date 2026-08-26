@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task142-live-attempt-adjudication-r1.schema.json",
+  "title": "Task142 live attempt adjudication",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "status", "decision", "attempt_id", "executor_id", "family", "process_started", "inference_started", "validated_completion", "reason", "pre_live_gate_ref", "census_ref", "historical_live_counts", "safety", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "task142-live-attempt-adjudication-r1"},
+    "task_id": {"const": "IGNITION-20260827-142"},
+    "step": {"enum": ["13", "14"]},
+    "status": {"const": "SKIPPED_UNSAFE_OR_UNAVAILABLE"},
+    "decision": {"const": "NO_LIVE_INVOCATION"},
+    "attempt_id": {"const": null},
+    "executor_id": {"const": null},
+    "family": {"const": null},
+    "process_started": {"const": false},
+    "inference_started": {"const": false},
+    "validated_completion": {"const": false},
+    "reason": {"type": "string", "minLength": 1},
+    "pre_live_gate_ref": {"const": "ignition/data/operations/iterations/142/step12-pre-live-gate.json"},
+    "census_ref": {"const": "ignition/data/operations/iterations/142/local-executor-census-r2.json"},
+    "historical_live_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["attempts", "validated_completion", "unreconciled", "observation_incomplete"],
+      "properties": {"attempts": {"const": 6}, "validated_completion": {"const": 0}, "unreconciled": {"const": 0}, "observation_incomplete": {"const": 2}}
+    },
+    "safety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["secret_content_read", "auth_content_copied", "configuration_changed", "billing_changed", "install_or_upgrade_performed", "live_process_started", "live_inference_started", "workspace_modified", "ui_action_performed"],
+      "properties": {
+        "secret_content_read": {"const": false},
+        "auth_content_copied": {"const": false},
+        "configuration_changed": {"const": false},
+        "billing_changed": {"const": false},
+        "install_or_upgrade_performed": {"const": false},
+        "live_process_started": {"const": false},
+        "live_inference_started": {"const": false},
+        "workspace_modified": {"const": false},
+        "ui_action_performed": {"const": false}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  }
+}
