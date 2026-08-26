@@ -498,27 +498,18 @@ def build_live_current_projection(
         observation_audit = observation_ledger.audit()
         observation_source_path = str(observation_events_path)
     if inference_observation_events_path is not None:
-        inference_path = Path(inference_observation_events_path)
-        if not inference_path.is_file():
-            raise LiveCurrentProjectionError("inference observation overlay is unavailable")
-        try:
-            raw_events = [json.loads(line) for line in inference_path.read_text(encoding="utf-8").splitlines() if line.strip()]
-        except (OSError, json.JSONDecodeError) as exc:
-            raise LiveCurrentProjectionError("inference observation overlay is unreadable") from exc
+        from agent_federation.live_inference_observation_events import LiveInferenceObservationEventLedger
+
+        inference_ledger = LiveInferenceObservationEventLedger(inference_observation_events_path)
+        inference_events = inference_ledger.records()
         records_by_attempt = {record["attempt_id"]: record for record in records}
-        seen: set[str] = set()
-        for event in raw_events:
-            if not isinstance(event, dict) or set(event) != {"task_id", "dispatch_id", "attempt_id", "prior_record_hash", "inference_observation_status"}:
-                raise LiveCurrentProjectionError("inference observation overlay fields are not canonical")
+        for event in inference_events:
             record = records_by_attempt.get(event["attempt_id"])
             if record is None or event["task_id"] != record["task_id"] or event["dispatch_id"] != record["dispatch_id"] or event["prior_record_hash"] != record["record_hash"]:
                 raise LiveCurrentProjectionError("inference observation overlay does not bind to the source record")
-            if event["attempt_id"] in seen or event["inference_observation_status"] not in {"OBSERVED", "NOT_OBSERVED", "UNKNOWN", "NOT_APPLICABLE_PRE_PROCESS"}:
-                raise LiveCurrentProjectionError("inference observation overlay is duplicated or invalid")
-            seen.add(event["attempt_id"])
             inference_status_by_attempt[event["attempt_id"]] = event["inference_observation_status"]
-        inference_observation_source_path = str(inference_path)
-        inference_observation_audit = {"record_count": len(raw_events), "head_hash": sha256_json(raw_events) if raw_events else "0" * 64}
+        inference_observation_source_path = str(inference_observation_events_path)
+        inference_observation_audit = inference_ledger.audit()
     return _build_projection(
         records,
         typed=not legacy,

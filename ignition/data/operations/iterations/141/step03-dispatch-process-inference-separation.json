@@ -1,0 +1,27 @@
+{
+  "schema_version": "ignition-141-step03-dispatch-process-inference-separation-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "03",
+  "status": "PASS",
+  "models": {
+    "dispatch": "live_dispatch_calls/live_dispatch_started",
+    "process": "live_process_started/live_process_return_code",
+    "inference": "independent public machine-verifiable inference marker only",
+    "completion": "Pointfire independent exact-bound validator only"
+  },
+  "task140_correction": {
+    "source_record": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl#attempt-140-live-01",
+    "prior_record_hash": "dea2793e9ddbb93631c3ea5f0fc7d1554e9ab529c00a6207e7bad1c0181d0049",
+    "overlay": "ignition/data/operations/iterations/141/live-inference-observation-events-r1.jsonl",
+    "overlay_event_hash": "325dacc3e0473bfd8ff193d73441171d4787027fae5a0579daa0f5e5e525c410",
+    "inference_observation_status": "NOT_OBSERVED",
+    "marker_observed": false,
+    "historical_record_rewritten": false
+  },
+  "negative_gate": {
+    "dispatch_calls_one_implies_inference_observed": "FAIL",
+    "process_started_without_marker": "NOT_OBSERVED",
+    "private_inference_claim": "FORBIDDEN"
+  },
+  "claim_ceiling": "Repository-local typed dispatch/process/inference observation separation and provenance overlay only; no private inference, validated completion, external truth, production readiness, Owner acceptance or epistemic upgrade is inferred."
+}
