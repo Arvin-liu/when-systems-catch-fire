@@ -1,0 +1,84 @@
+{
+  "capability_selection": {
+    "capability_selected_executor_id": "external.codex",
+    "excluded": [
+      {
+        "executor_id": "external.gemini",
+        "reason": "PUBLIC_AUTH_STATUS_UNAVAILABLE_WITHOUT_INFERENCE; AUTH_SOURCE_HOME_NOT_SEPARABLE_BY_CURRENT_PUBLIC_INTERFACE; NO_NEW_BILLING_AUTHORITY_NOT_REATTESTED; NO_POINTFIRE_GEMINI_ADAPTER_ATTESTED"
+      },
+      {
+        "executor_id": "external.codex",
+        "reason": "TASK140_ROOT_CAUSE_NOT_CONFIRMED_SAME_FAMILY_RETRY_FORBIDDEN"
+      },
+      {
+        "executor_id": "external.hermes",
+        "reason": "STRUCTURED_RESULT_BOUNDARY_NOT_STRICT; PUBLIC_AUTH_STATUS_NOT_REATTESTED; NO_NEW_BILLING_AUTHORITY_NOT_REATTESTED; AUTH_SOURCE_SEPARATION_NOT_PROVEN"
+      },
+      {
+        "executor_id": "external.openclaw",
+        "reason": "WORKSPACE_AND_CHANNEL_BOUNDARY_NOT_PROVEN; AUTH_SOURCE_SEPARATION_NOT_PROVEN; PROCESS_CLEANUP_NOT_REATTESTED; STRUCTURED_RESULT_BOUNDARY_NOT_STRICT"
+      },
+      {
+        "executor_id": "external.github-copilot-cli",
+        "reason": "NOT_INSTALLED_NO_DOWNLOAD_OR_BILLING_AUTHORITY"
+      }
+    ],
+    "live_selectable_executor_ids": [],
+    "live_selection_status": "NO_AUTHORIZED_FAMILY",
+    "policy_excluded_executor_ids": [
+      "external.codex"
+    ],
+    "ranking": [
+      "external.codex",
+      "external.gemini",
+      "external.hermes",
+      "external.openclaw",
+      "external.github-copilot-cli"
+    ],
+    "selected_executor_id": "external.codex",
+    "selected_family": "Codex CLI",
+    "status": "SELECTED",
+    "why_executor": "Codex is capability-admitted by fresh public evidence but is policy-excluded because Task140's concrete malformed-result root cause remains unconfirmed; no alternate family passed all ten checks and policy is not relaxed."
+  },
+  "census_path": "ignition/data/operations/iterations/141/local-executor-census-r1.json",
+  "claim_ceiling": "Fresh repository-local observation-time executor census, executor-kind classification, admission checks, policy exclusion and why-executor trace only; no live inference, validated completion, model-quality ranking, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.",
+  "control_tip": "aa5954a71366400b5a52af432cb985869db1c8ed",
+  "counts": {
+    "admitted_agentic_executors": 1,
+    "agentic_executors": 5,
+    "candidates": 14,
+    "installed_agentic_executors": 4,
+    "live_selectable_executors": 0,
+    "policy_excluded_admitted_executors": 1,
+    "reasoner_runtimes": 4,
+    "tools": 3,
+    "ui_only": 2
+  },
+  "formal_candidate_sha": "c3f5cc0e4565751cd2e066d7559efd611830c2b8",
+  "observations": {
+    "agent_version_help_read": true,
+    "public_auth_content_read": false,
+    "reasoner_models_invoked": false,
+    "ui_action_performed": false
+  },
+  "policy": {
+    "codex_same_family_retry": "FORBIDDEN_BLIND_RETRY",
+    "live_selection_status": "NO_AUTHORIZED_FAMILY",
+    "policy_excluded_executor_ids": [
+      "external.codex"
+    ]
+  },
+  "safety": {
+    "auth_content_copied": false,
+    "billing_changed": false,
+    "configuration_changed": false,
+    "install_or_upgrade_performed": false,
+    "live_inference_started": false,
+    "secret_content_read": false,
+    "workspace_modified": false
+  },
+  "schema_version": "ignition-141-step08-local-executor-census-r1",
+  "status": "PASS",
+  "step": "08",
+  "task_id": "IGNITION-20260826-141"
+}
