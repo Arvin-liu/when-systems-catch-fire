@@ -14,6 +14,11 @@
   - 可搜索名称：NFC-f84c059268ae7a97 / """An adapter does not claim an optional lifecycle operation."""
   - 来源：`agent_federation/contracts.py`
   - 依赖：—；被引用：—
+- ["""Offline adversarial guards for Task142 lifecycle and executor admission.](../../../agent_federation/task142_adversarial.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-f7a6c18b82763e50 / """Offline adversarial guards for Task142 lifecycle and executor admission.
+  - 来源：`agent_federation/task142_adversarial.py`
+  - 依赖：—；被引用：—
 - ["""Raised when a live dispatch attempts an unsafe lifecycle transition."""](../../../agent_federation/live_bridge.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-91c14428966d6512 / """Raised when a live dispatch attempts an unsafe lifecycle transition."""
@@ -28,6 +33,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-20f4f9ba9e4bec66 / "353 条均已生成 proof obligation；351 条生成 empirical obligation"
   - 来源：`reports/foundation-architecture/085-084-truth-status-correction.md`
+  - 依赖：—；被引用：—
+- ["a completed formal scope cannot remain IN_PROGRESS because an obligation is open",](../../../agent_federation/task142_adversarial.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f7c739aa70a69c0d / "a completed formal scope cannot remain IN_PROGRESS because an obligation is open",
+  - 来源：`agent_federation/task142_adversarial.py`
   - 依赖：—；被引用：—
 - ["anchors": \["sec:intro", "sec:framework", "sec:lifecycle", "sec:memory"\],](../../../scripts/external-research/121_generate_evidence_cards.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -48,6 +58,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-38255a74ba0c318c / "function_index": repo / "已迁移的历史函数来源/INDEX.md",
   - 来源：`inputs/020/validate_formal_protocol.py`
+  - 依赖：—；被引用：—
+- ["ignition/data/operations/formal-task-lifecycle-r1.json",](../../../agent_federation/task142_adversarial.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-788d519487b81935 / "ignition/data/operations/formal-task-lifecycle-r1.json",
+  - 来源：`agent_federation/task142_adversarial.py`
   - 依赖：—；被引用：—
 - ["name": "乘法临界漂移函数族",](../../../data/function_dependency.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -793,6 +808,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-94BEA1FF86F1D6B7 / ## d260 — 偏差敏感度阈值函数 / IMPLICIT-94BEA1FF86F1D6B7
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：—
+- [## Formal task terminality and open-obligation separation R1](../../../docs/architecture/os-control-plane-r2.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0C1C225D3C9A2ACD / ## Formal task terminality and open-obligation separation R1 / IMPLICIT-0C1C225D3C9A2ACD
+  - 来源：`docs/architecture/os-control-plane-r2.md`
   - 依赖：—；被引用：—
 - [## hr-2bf3c3a1ac552110 — 历史函数资产深度裁决与注册表闭合 R1](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2482,25 +2502,5 @@
 - [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F30C240EC5207576 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-F30C240EC5207576 / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F4958006382E7D18 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-F4958006382E7D18 / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F4C7676516379318 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-F4C7676516379318 / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F5A6C0CFA08040E1 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-F5A6C0CFA08040E1 / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F7341FA39083DD48 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-F7341FA39083DD48 / IMPLICIT-003191F281FA43ED
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [G_δ 哥德尔不完备性判定 → 绝对完备统一的结构性边界（非物理学 no-go theorem）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-00ef70998b18efa8 / G_δ 哥德尔不完备性判定 → 绝对完备统一的结构性边界（非物理学 no-go theorem）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [G_δ\(proposition\) := ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\)](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-6eb80dd68139489b / G_δ\(proposition\) := ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\)
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\)](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-306F3B1504EE8766 / G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\) / IMPLICIT-306F3B1504EE8766 / IMPLICIT-55DAD7CA608BB878
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-55DAD7CA608BB878 / G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\) / IMPLICIT-55DAD7CA608BB878 / IMPLICIT-306F3B1504EE8766
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E2F68DF470C186DC / G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\) / IMPLICIT-E2F68DF470C186DC / IMPLICIT-306F3B1504EE8766
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [G_δ：三领域材料足够支持 L2/L3 候选函数；不足以支持 L5（需更多学科验证）。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7ba0f34da0287f52 / G_δ：三领域材料足够支持 L2/L3 候选函数；不足以支持 L5（需更多学科验证）。
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：—；被引用：—
+- [GAP-011 \(本体论\) has only 4 sources; GAP-014 \(反例与失败\) has only 4 sources](../../../data/external-research/104-source-integrity-alerts.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6865632114b33732 / GAP-011 \(本体论\) has only 4 sources; GAP-014 \(反例与失败\) has only 4 sources
+  - 来源：`data/external-research/104-source-integrity-alerts.jsonl`
+  - 依赖：—；被引用：—
+- [GAP-011 本体论 \(250P\) — MEDIUM](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-0f529083eb0f994f / GAP-011 本体论 \(250P\) — MEDIUM
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [GAP-011 本体论 （MEDIUM）](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-eced5f2b4acb2bdc / GAP-011 本体论 （MEDIUM）
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
+- [GAP-011 本体论** \| ENHANCE_WITH_EXTERNAL_SOURCES \| 4 来源 \| 补 `domain_ontology`](../../../data/external-research/088-FINAL-REPORT.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-f20bd288f6cbd432 / GAP-011 本体论** \| ENHANCE_WITH_EXTERNAL_SOURCES \| 4 来源 \| 补 `domain_ontology`
+  - 来源：`data/external-research/088-FINAL-REPORT.md`
+  - 依赖：—；被引用：—
+- [GAP-011（本体论）：仅 4 条来源，需优先补齐](../../../reports/external-research/104-gap-patch-evidence-readiness.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-137fca0055b0671d / GAP-011（本体论）：仅 4 条来源，需优先补齐
+  - 来源：`reports/external-research/104-gap-patch-evidence-readiness.md`
+  - 依赖：—；被引用：—
+- [GAP-016 \(weight-space composition algebra\):** PARTIALLY_SUPPORTED_WITH_MAJOR_GAPS. Empirical composition exists but no f](../../../reports/external-research/121-function-paradigm-fulltext-review-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b964d42019745ae4 / GAP-016 \(weight-space composition algebra\):** PARTIALLY_SUPPORTED_WITH_MAJOR_GAPS. Empirical composition exists but no f
+  - 来源：`reports/external-research/121-function-paradigm-fulltext-review-report.md`
+  - 依赖：—；被引用：—
 - [Gap: the existing Foundation separated formal object types and status axes, but did not provide the requested ten-class](../../../reports/foundation-architecture/098-remote-truth-and-gap.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7eacc2b8871b43c2 / Gap: the existing Foundation separated formal object types and status axes, but did not provide the requested ten-class
@@ -2444,63 +2504,3 @@
   - 可搜索名称：NFC-228ec595baf3c792 / If upstream objects D_{T21} exist, compose F_{T21}=N\(⊕_{g∈D_{T21}} g\); otherwise treat F_{T21} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T21；被引用：—
-- [If upstream objects D_{T22} exist, compose F_{T22}=N\(⊕_{g∈D_{T22}} g\); otherwise treat F_{T22} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-51a25282be57349c / If upstream objects D_{T22} exist, compose F_{T22}=N\(⊕_{g∈D_{T22}} g\); otherwise treat F_{T22} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T22；被引用：—
-- [If upstream objects D_{T23} exist, compose F_{T23}=N\(⊕_{g∈D_{T23}} g\); otherwise treat F_{T23} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8ca543be1cefae1a / If upstream objects D_{T23} exist, compose F_{T23}=N\(⊕_{g∈D_{T23}} g\); otherwise treat F_{T23} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T23；被引用：—
-- [If upstream objects D_{T24} exist, compose F_{T24}=N\(⊕_{g∈D_{T24}} g\); otherwise treat F_{T24} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e1723a2549293f57 / If upstream objects D_{T24} exist, compose F_{T24}=N\(⊕_{g∈D_{T24}} g\); otherwise treat F_{T24} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T24；被引用：—
-- [If upstream objects D_{T25} exist, compose F_{T25}=N\(⊕_{g∈D_{T25}} g\); otherwise treat F_{T25} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-522b29ab88b0b399 / If upstream objects D_{T25} exist, compose F_{T25}=N\(⊕_{g∈D_{T25}} g\); otherwise treat F_{T25} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T25；被引用：—
-- [If upstream objects D_{T26} exist, compose F_{T26}=N\(⊕_{g∈D_{T26}} g\); otherwise treat F_{T26} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa4b6ca983d58e7c / If upstream objects D_{T26} exist, compose F_{T26}=N\(⊕_{g∈D_{T26}} g\); otherwise treat F_{T26} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T26；被引用：—
-- [If upstream objects D_{T27} exist, compose F_{T27}=N\(⊕_{g∈D_{T27}} g\); otherwise treat F_{T27} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-52e76addbdc7001b / If upstream objects D_{T27} exist, compose F_{T27}=N\(⊕_{g∈D_{T27}} g\); otherwise treat F_{T27} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T27；被引用：—
-- [If upstream objects D_{T28} exist, compose F_{T28}=N\(⊕_{g∈D_{T28}} g\); otherwise treat F_{T28} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3a22d5f5a1ac5012 / If upstream objects D_{T28} exist, compose F_{T28}=N\(⊕_{g∈D_{T28}} g\); otherwise treat F_{T28} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T28；被引用：—
-- [If upstream objects D_{T29} exist, compose F_{T29}=N\(⊕_{g∈D_{T29}} g\); otherwise treat F_{T29} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5ede6e40e5c825a8 / If upstream objects D_{T29} exist, compose F_{T29}=N\(⊕_{g∈D_{T29}} g\); otherwise treat F_{T29} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T29；被引用：—
-- [If upstream objects D_{T2} exist, compose F_{T2}=N\(⊕_{g∈D_{T2}} g\); otherwise treat F_{T2} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-175a9b35e802626f / If upstream objects D_{T2} exist, compose F_{T2}=N\(⊕_{g∈D_{T2}} g\); otherwise treat F_{T2} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T2；被引用：—
-- [If upstream objects D_{T30} exist, compose F_{T30}=N\(⊕_{g∈D_{T30}} g\); otherwise treat F_{T30} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-52930ec600cbef3d / If upstream objects D_{T30} exist, compose F_{T30}=N\(⊕_{g∈D_{T30}} g\); otherwise treat F_{T30} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T30；被引用：—
-- [If upstream objects D_{T31} exist, compose F_{T31}=N\(⊕_{g∈D_{T31}} g\); otherwise treat F_{T31} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7c54f4ffde23da5f / If upstream objects D_{T31} exist, compose F_{T31}=N\(⊕_{g∈D_{T31}} g\); otherwise treat F_{T31} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T31；被引用：—
-- [If upstream objects D_{T32} exist, compose F_{T32}=N\(⊕_{g∈D_{T32}} g\); otherwise treat F_{T32} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-39e2adc394ad4c8a / If upstream objects D_{T32} exist, compose F_{T32}=N\(⊕_{g∈D_{T32}} g\); otherwise treat F_{T32} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T32；被引用：—

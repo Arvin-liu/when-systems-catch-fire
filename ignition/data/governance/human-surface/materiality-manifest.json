@@ -1,9 +1,9 @@
 {
   "counts": {
     "function_human": 24,
-    "function_machine": 5979,
+    "function_machine": 6026,
     "nonfunction_human": 24,
-    "nonfunction_machine": 17304
+    "nonfunction_machine": 17454
   },
   "entries": [
     {
@@ -267,7 +267,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "ARCHITECTURE.md",
-      "source_sha256": "a58ac88bbd37f747cbff9d071b5ab70d27fbf2adc9e3a7c385f4523ec3a28bfa",
+      "source_sha256": "b4ee015d78a5406bcf3db92bcf53349821fe338835d63ca38b31dbc6c0353ae3",
       "writing_method": "之元写作法 0.5.0"
     },
     {
@@ -417,7 +417,7 @@
       "asset_kind": "NONFUNCTION_ASSET",
       "human_path": "docs/human/nonfunction-assets/entries/nfc-015cfd6ba387c9b1.md",
       "machine_id": "NFC-015cfd6ba387c9b1",
-      "machine_record_sha256": "8aa784950db99d55edfbf331edae8bd31f0e68824f129d2bbb413e40b9d04ced",
+      "machine_record_sha256": "4cfd3e4dd3ab23877cbecb07726e5794da987c5c77ec28fdb252daba90bf1ba0",
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "docs/project-current-state.md",
@@ -461,7 +461,7 @@
       "asset_kind": "NONFUNCTION_ASSET",
       "human_path": "docs/human/nonfunction-assets/entries/nfc-02f68962a6f13abc.md",
       "machine_id": "NFC-02f68962a6f13abc",
-      "machine_record_sha256": "de6bad6c749dcb06d4de00921752b79774550f9787028f4a1d1f77dff7102ca0",
+      "machine_record_sha256": "a3756b69ec780d634016d6e7749bfa245ba2f1e003351aa8135f751456e46202",
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "llms.txt",
@@ -494,7 +494,7 @@
       "asset_kind": "NONFUNCTION_ASSET",
       "human_path": "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md",
       "machine_id": "NFC-14866124cc1a2cae",
-      "machine_record_sha256": "bddd3b827093823bc876b9318393cc1dbb788139b1fe9f8678357f01c0076d21",
+      "machine_record_sha256": "d5ce074c3fe4f52c192901465f8ca0e1af089520c23a0c202892464b56c27d5e",
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "docs/project-current-state.md",
@@ -505,7 +505,7 @@
       "asset_kind": "NONFUNCTION_ASSET",
       "human_path": "docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md",
       "machine_id": "NFC-154bdc1ff37c47f6",
-      "machine_record_sha256": "49164e4f3aeb7a24f9adf1349501a41fe163b2742cb41fac9f72556844b1c4df",
+      "machine_record_sha256": "2ffe913811d8eeb68e96c0fd302d0e6c3377935ea393a535074f2a6aef0d53f7",
       "machine_source": "data/foundation/nonfunction-claims/claim-registry.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "docs/project-current-state.md",

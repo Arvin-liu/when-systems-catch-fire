@@ -1109,6 +1109,16 @@
   - 可搜索名称：IMPLICIT-7D1CC4626FF82EF6 / # IGNITION-20260826-140 Step 03 — Observation / Reconciliation Plane registration / IMPLICIT-7D1CC4626FF82EF6
   - 来源：`reports/operations/ignition-140-step03-observation-plane-registration.md`
   - 依赖：—；被引用：—
+- [# IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate](../../../reports/operations/ignition-142-step12-pre-live-gate.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-64EF7B495D7F0760 / # IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate / IMPLICIT-64EF7B495D7F0760
+  - 来源：`reports/operations/ignition-142-step12-pre-live-gate.md`
+  - 依赖：—；被引用：—
+- [# IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate](../../../reports/operations/ignition-142-step18-adversarial-matrix.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2974F2F96E122CAE / # IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate / IMPLICIT-2974F2F96E122CAE
+  - 来源：`reports/operations/ignition-142-step18-adversarial-matrix.md`
+  - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-ED434DF2C7C50934 / # IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report / IMPLICIT-ED434DF2C7C50934
@@ -2492,15 +2502,5 @@
 - [### \[#600｜仲裁模型最弱维度锁死验证\]\(docs/zh/cases/items/C-0600.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-25707D01200B4132 / ### \[#600｜仲裁模型最弱维度锁死验证\]\(docs/zh/cases/items/C-0600.md\) / IMPLICIT-25707D01200B4132
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#601｜多模型并行/仲裁三域熵统一验证\]\(docs/zh/cases/items/C-0601.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-14EB324B5145DBB9 / ### \[#601｜多模型并行/仲裁三域熵统一验证\]\(docs/zh/cases/items/C-0601.md\) / IMPLICIT-14EB324B5145DBB9
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#604｜仲裁模型能力上限预测验证\]\(docs/zh/cases/items/C-0604.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D4AF49C25F68D531 / ### \[#604｜仲裁模型能力上限预测验证\]\(docs/zh/cases/items/C-0604.md\) / IMPLICIT-D4AF49C25F68D531
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

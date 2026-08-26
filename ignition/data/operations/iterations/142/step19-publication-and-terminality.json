@@ -1,0 +1,50 @@
+{
+  "schema_version": "task142-step19-publication-and-terminality-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "19",
+  "status": "PASS",
+  "terminality": {
+    "formal_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "terminal": true,
+    "scope_complete": true,
+    "basis": "Steps 00-19 complete the formal task scope and its release contract; the long-lived live obligation remains a separate open projection.",
+    "source": "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
+  },
+  "obligation_boundary": {
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "status": "OPEN",
+    "validated_completion_count": 0,
+    "attempt_count": 6,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+    "source": "ignition/data/operations/open-obligation-registry-r1.json"
+  },
+  "publication_boundary": {
+    "required_ref": "refs/heads/main",
+    "authority": "REMOTE_REF_OBSERVATION",
+    "ordinary_fast_forward_only": true,
+    "formal_self_witness_commit": false,
+    "independent_witness_repository": "Arvin-liu/1111",
+    "independent_witness_status": "REQUIRED_ON_RECEIPT_BRANCH"
+  },
+  "verification_boundary": {
+    "targeted_regression": "RECORDED_BY_SEPARATE_RECEIPT",
+    "projection_preflight": "RECORDED_BY_SEPARATE_RECEIPT",
+    "candidate_full_suite": "RECORDED_BY_SEPARATE_RECEIPT",
+    "fresh_clone_full_suite": "RECORDED_BY_SEPARATE_RECEIPT",
+    "sha_equality": "RECORDED_BY_SEPARATE_RECEIPT",
+    "evidence_authority": "1111_CONTROL_REPOSITORY_RECEIPT"
+  },
+  "safety": {
+    "live_process_started": false,
+    "secret_content_read": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "install_or_upgrade_performed": false,
+    "external_side_effect": false,
+    "second_system_map_added": false
+  },
+  "claim_ceiling": "Task142 repository-local terminality and publication-contract evidence only; the exact release SHA, remote-ref observation, fresh-clone regression and 1111 witness remain separate observations, with no validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance inferred."
+}

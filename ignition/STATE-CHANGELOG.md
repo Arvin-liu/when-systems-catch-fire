@@ -2,18 +2,18 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260827-142` (ordinal `142`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260827-142` (ordinal `142`)；current_iteration_boundary: `142` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260827-142`。
-- formal_task_terminality: authority `FORMAL_TASK_LIFECYCLE`；task `IGNITION-20260827-142` status `IN_PROGRESS`；terminal `false`；scope_complete `false`；open references `['LIVE_EXTERNAL_INVOCATION']`。
+- current_formal_task: `IGNITION-20260827-142` (ordinal `142`)；status: `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260827-142` (ordinal `142`)；current_iteration_boundary: `142` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260827-142`。
+- formal_task_terminality: authority `FORMAL_TASK_LIFECYCLE`；task `IGNITION-20260827-142` status `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal `true`；scope_complete `true`；open references `['LIVE_EXTERNAL_INVOCATION']`。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
-- formal_task_terminal_history: `[{'task_id': 'IGNITION-20260826-141', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}]`；Task141 terminality remains recorded independently of the carried obligation。
+- formal_task_terminal_history: `[{'task_id': 'IGNITION-20260827-142', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}, {'task_id': 'IGNITION-20260826-141', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}]`；Task141 terminality remains recorded independently of the carried obligation。
 - open_obligation_registry: authority `OPEN_OBLIGATION_REGISTRY`；status `OPEN` ids `['LIVE_EXTERNAL_INVOCATION']`；count `1`；next eligible action `['RUN_DYNAMIC_EXECUTOR_ADMISSION']`。
-- release_lifecycle: task `IGNITION-20260827-142`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- release_lifecycle: task `IGNITION-20260827-142`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - current_method: `1.4.0` Current；current_map: `0.16.0` Current；historical_map: `0.14.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；live dimensions: dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`, validated completion `NOT_VALIDATED`, reconciliation blocker `NONE`。
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=99; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260827-142` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `29b308e2a69d899da95393b929ec0a60a2ca0b7735baa4d7e79fb29884888eec`。
+- task_lineage: current `IGNITION-20260827-142` `COMPLETED_WITH_OPEN_OBLIGATIONS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `34f73620fdbe050247780db13a947e8adccd59448e0687fbbaf85a4659a2b7a0`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -506,3 +506,12 @@
 - obligations: the carried `LIVE_EXTERNAL_INVOCATION` obligation remains `OPEN`; any future live attempt still requires the fail-closed admission gate, exact independent validation and the stop-after-first-success rule.
 - next_read: read the Step17 architecture-impact receipt and then the Step18 adversarial/full-regression receipt before formal terminalization and ordinary main publication.
 - claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence only; no live success, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.
+
+## 2026-08-27 — IGNITION-20260827-142 — formal terminality and independent obligation closure
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; Task142 formal scope is terminal and `RELEASE_READY`, while the remote-ref publication and separate 1111 witness remain observation-time boundaries rather than embedded claims.
+- formal_task: `IGNITION-20260827-142` is `COMPLETED_WITH_OPEN_OBLIGATIONS` and terminal after Steps 00–19; terminality is determined by the formal task scope and release contract, not by closure of a long-lived obligation.
+- obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN`; the six historical attempts still yield zero validated completions, zero unreconciled attempts and two observation-incomplete outcomes, with next eligible action `RUN_DYNAMIC_EXECUTOR_ADMISSION`.
+- task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task141 remains terminal `COMPLETED_WITH_OPEN_OBLIGATIONS` and is not reopened.
+- safety: no new live process, billing/auth/configuration change, installation/upgrade, secret-content read, channel/browser action or external side effect was introduced; no validated live completion is claimed.
+- claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic regression and publication-contract evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.

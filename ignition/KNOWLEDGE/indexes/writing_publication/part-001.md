@@ -29,6 +29,11 @@
   - 可搜索名称：IMPLICIT-F377B4E69AF765FE / # IGNITION-20260826-141 Step 16 — Post-publication projection gate repair / IMPLICIT-F377B4E69AF765FE
   - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
   - 依赖：—；被引用：—
+- [# IGNITION-20260827-142 Step 08 — OpenClaw Public Interface Audit](../../../reports/operations/ignition-142-step08-openclaw-public-audit.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4D301EDF6B02290A / # IGNITION-20260827-142 Step 08 — OpenClaw Public Interface Audit / IMPLICIT-4D301EDF6B02290A
+  - 来源：`reports/operations/ignition-142-step08-openclaw-public-audit.md`
+  - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-88D7E6316D5F3876 / # IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IMPLICIT-88D7E6316D5F3876
@@ -223,6 +228,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DCD595A104850EA5 / require\(manifest.get\("task_id"\) == TASK_ID, "publication manifest task identity mismatch"\) / IMPLICIT-DCD595A104850EA5
   - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 依赖：—；被引用：—
+- [Targeted regression, clean projection preflight, exact-candidate natural full regression and fresh-clone natural full re](../../../reports/operations/ignition-142-step19-publication-and-terminality.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6fa54ca534ecc2c9 / Targeted regression, clean projection preflight, exact-candidate natural full regression and fresh-clone natural full re
+  - 来源：`reports/operations/ignition-142-step19-publication-and-terminality.md`
   - 依赖：—；被引用：—
 - [The bounded example uses only short excerpts and structural paraphrase: translated poetry → time cost → remaining life/l](../../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`

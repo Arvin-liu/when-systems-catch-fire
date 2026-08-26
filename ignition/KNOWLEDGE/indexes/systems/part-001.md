@@ -1094,9 +1094,9 @@
   - 可搜索名称：NFC-72709873d276b952 / `Codex CLI` is the current selection: Fresh census selects Codex CLI \(codex-cli 0.144.4\) because it is the only installe
   - 来源：`reports/operations/ignition-140-step09-local-executor-census-and-selection.md`
   - 依赖：—；被引用：—
-- [`current-facts.json` 为准；当前地图为 `0.15.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
+- [`current-facts.json` 为准；当前地图为 `0.16.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-95781cf3b6c624e0 / `current-facts.json` 为准；当前地图为 `0.15.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
+  - 可搜索名称：NFC-d3ad062793783315 / `current-facts.json` 为准；当前地图为 `0.16.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`](../../../AI-START-HERE.md)
@@ -1643,6 +1643,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bbe9766ecf5e0a0e / atomic, and unknown side effects never receive automatic failover merely because
   - 来源：`docs/architecture/os-control-plane-r2.md`
+  - 依赖：—；被引用：—
+- [Attempt B was not considered or started. Its strict precondition requires an observed, non-validated Attempt A without e](../../../reports/operations/ignition-142-step14-live-attempt-b.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bf76e90fa0ff5cf0 / Attempt B was not considered or started. Its strict precondition requires an observed, non-validated Attempt A without e
+  - 来源：`reports/operations/ignition-142-step14-live-attempt-b.md`
   - 依赖：—；被引用：—
 - [Audit factual fidelity, evidence links, causal language, counterevidence,](../../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2497,10 +2502,5 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M28 / data/external-research/088-external-source-atlas-medium.jsonl / M28 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M29 / data/external-research/088-external-source-atlas-medium.jsonl / M29 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

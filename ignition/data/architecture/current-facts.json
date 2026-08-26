@@ -66,14 +66,19 @@
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
       "current_task_id": "IGNITION-20260827-142",
-      "current_task_status": "IN_PROGRESS",
-      "current_task_terminal": false,
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "current_task_terminal": true,
       "open_obligation_ids": [
         "LIVE_EXTERNAL_INVOCATION"
       ],
-      "scope_complete": false,
+      "scope_complete": true,
       "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json",
       "terminal_task_history": [
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260827-142",
+          "terminal": true
+        },
         {
           "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
           "task_id": "IGNITION-20260826-141",
@@ -82,10 +87,10 @@
       ]
     },
     "foundation": {
-      "function_identity_cards": 5979,
-      "function_quarantine_or_pending": 4869,
-      "nonfunction_claims": 17304,
-      "nonfunction_quarantine_or_pending": 4908
+      "function_identity_cards": 6026,
+      "function_quarantine_or_pending": 4874,
+      "nonfunction_claims": 17454,
+      "nonfunction_quarantine_or_pending": 4938
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -124,7 +129,7 @@
       "cards": 414,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 23615
+      "search_records": 23812
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -162,7 +167,7 @@
     },
     "task_lineage": {
       "current_task_id": "IGNITION-20260827-142",
-      "current_task_status": "IN_PROGRESS",
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -192,11 +197,11 @@
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
-      "sha256": "2cbe808680a7fa02ce3502b818b73bf8609f82c24996d145cf6ffd4063373502"
+      "sha256": "40f2d59d7a32c91c03271fef80ed52b86ced52c3d79a73ec27033c8b84c65525"
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "7c54bccd0ad6db428992daab5759fc9d85b03265d11deacdd1b1b153ddfd20bd"
+      "sha256": "9d9706089615dc7e9382fda7abe41d6b2d50d2d50c2b3548954d0da542ebcbfa"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -204,11 +209,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "e5d0916c0d38f9fdbc833618b6dbce516498f2a4c7b68bd161d4fad6b42015be"
+      "sha256": "07a34268061afe5ff1c58c536e333022416cbfbb85e29914be4e8a6932db8a71"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "3814a0590c076e45191c10985c2e3d68f61bd9b6a3ba74eaa141165ebce4ede8"
+      "sha256": "fabfef9f3afb1807c0de57ec0004302ef5513c7933a137cc16892230fbc0ebea"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -216,15 +221,15 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "ddcf329876a512d7c297f8be2b2e00f588b9d432dc8ba9ad8b83f68b5824a4d4"
+      "sha256": "5a19d6d2360f760b8f5eaacfb642fd55ff2d853215d9138c9ed07b9331e2c447"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "278dd2b709185b4e55ab6a0383bd2d2bd165f4a026e4a84243769cfe184a3dc0"
+      "sha256": "d43552cdc105c94554b5b56cea18f6cda90f48aa7b2d8d3f5f00dcf6bd677fce"
     },
     {
       "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
-      "sha256": "1d998b06c34bf346275bbd33d404ccc0abb4db0ce8ce020d55d0d4034415e4db"
+      "sha256": "1510bdd7544e027078f319f79059ca8166aa6297cfa174f5e622923839a85267"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
@@ -268,7 +273,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "0586ebfe7f5498cf9b8e282d456b4524ed4597780ec273a5d1fa25d5f88a35bb"
+      "sha256": "f8b19135569bc65b14a96cea4f0de337647f3f2996e382e5be9468c021cf019a"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

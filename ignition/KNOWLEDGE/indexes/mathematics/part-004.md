@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Branch:** `agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731`](../../../docs/foundation/task-107-incident-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-85a7b6430641f130 / Branch:** `agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731`
+  - 来源：`docs/foundation/task-107-incident-report.md`
+  - 依赖：—；被引用：—
+- [by adding a new formal commit that would itself need publication proof.](../../../reports/operations/ignition-131-step00-publication-paradox-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9dde57723f240dca / by adding a new formal commit that would itself need publication proof.
+  - 来源：`reports/operations/ignition-131-step00-publication-paradox-audit.md`
+  - 依赖：—；被引用：—
+- [C --> PO\[proof obligations\]](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-d42826c1463a4ca0 / C --> PO\[proof obligations\]
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [C\(x,y\) 因果结构判定 → 历史因果链（事件→结果→反馈）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a844836ba7e1cc47 / C\(x,y\) 因果结构判定 → 历史因果链（事件→结果→反馈）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [C\(x,y\) 因果结构判定 → 数学证明链（假设→定理→推论）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-20c72c8713cee2b1 / C\(x,y\) 因果结构判定 → 数学证明链（假设→定理→推论）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [C\(x,y\) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-4b56d62dbcd5709a / C\(x,y\) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）
@@ -103,6 +128,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6bc1b273ff3222e5 / candidate coarse-graining record, not emergence proof
   - 来源：`data/architecture/probabilistic-system-dynamics/examples/coarse-graining-emergence.json`
+  - 依赖：—；被引用：—
+- [Canonical Current now advances from terminal Task141 to `IGNITION-20260827-142` with status `IN_PROGRESS`. The independe](../../../reports/operations/ignition-142-step03-current-advancement.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a66471459a1a8ebf / Canonical Current now advances from terminal Task141 to `IGNITION-20260827-142` with status `IN_PROGRESS`. The independe
+  - 来源：`reports/operations/ignition-142-step03-current-advancement.md`
   - 依赖：—；被引用：—
 - [Canonical Protocol Validation Results](../../ASSET-CARDS.md#asset-hr-cdbd2a8dabea0396)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -409,6 +439,11 @@
   - 可搜索名称：NFC-82df86a6c23d4524 / Current path classification is regenerated only after all Task135 formal paths are present; final missing, stale, unreso
   - 来源：`agent-results/IGNITION-20260822-135-result.md`
   - 依赖：—；被引用：—
+- [Current surfaces expose all three facts together: latest formal task Task142, prior Task141 terminality, and the open lo](../../../reports/operations/ignition-142-step03-current-advancement.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-264ec162b8ccca0c / Current surfaces expose all three facts together: latest formal task Task142, prior Task141 terminality, and the open lo
+  - 来源：`reports/operations/ignition-142-step03-current-advancement.md`
+  - 依赖：—；被引用：—
 - [Current version: Ignition is the driver and OS / orchestration-governance layer for a bounded Agent Platform repository](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-f65ab18ca10355af / Current version: Ignition is the driver and OS / orchestration-governance layer for a bounded Agent Platform repository
@@ -422,6 +457,11 @@
 - [current_formal_task: `IGNITION-20260825-139` is terminal with formal ordinal `139`; `current_iteration_boundary=139` rem](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7575422455468e6b / current_formal_task: `IGNITION-20260825-139` is terminal with formal ordinal `139`; `current_iteration_boundary=139` rem
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [current_formal_task: `IGNITION-20260826-141` is `COMPLETED_WITH_OPEN_OBLIGATIONS` and terminal; `current_iteration_bound](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ae32ee31a5314cdf / current_formal_task: `IGNITION-20260826-141` is `COMPLETED_WITH_OPEN_OBLIGATIONS` and terminal; `current_iteration_bound
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [current_lifecycle_gated_whole_project_synchronization_method_only](../../../reports/operations/121Q25C-completion-seal.json)
@@ -1679,6 +1719,11 @@
   - 可搜索名称：NFC-cbab7cb13e50743a / delta: terminalizes the Current Surface Compiler release candidate after single-source registry/snapshot compilation, ty
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [delta: the sole registry-derived system map now exposes Formal Task Lifecycle R1, Open Obligation Registry R1 and provid](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-128de6f75eeebdad / delta: the sole registry-derived system map now exposes Formal Task Lifecycle R1, Open Obligation Registry R1 and provid
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Denotational semantics and regression fixtures give meaning and finite checks, but no mechanized correspondence, semanti](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ead18f42a23c2858 / Denotational semantics and regression fixtures give meaning and finite checks, but no mechanized correspondence, semanti
@@ -2259,6 +2304,21 @@
   - 可搜索名称：NFC-d182ca8a39870579 / Formal soundness proofs and a 10KLOC implementation evaluation jointly validate the bounded verifier.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [Formal Task Lifecycle owns terminality from task scope, steps, publication and](../../../reports/operations/ignition-142-step17-architecture-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c7819093f25aeb53 / Formal Task Lifecycle owns terminality from task scope, steps, publication and
+  - 来源：`reports/operations/ignition-142-step17-architecture-impact.md`
+  - 依赖：—；被引用：—
+- [Formal Task Lifecycle R1, Open Obligation Registry R1 and Executor Admission R1.](../../../reports/operations/ignition-142-step17-architecture-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dd979cd972095f0a / Formal Task Lifecycle R1, Open Obligation Registry R1 and Executor Admission R1.
+  - 来源：`reports/operations/ignition-142-step17-architecture-impact.md`
+  - 依赖：—；被引用：—
+- [formal task terminality is owned by the Formal Task Lifecycle, while](../../../docs/architecture/os-steering-intent-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-a9f965e4d960054f / formal task terminality is owned by the Formal Task Lifecycle, while
+  - 来源：`docs/architecture/os-steering-intent-r1.md`
+  - 依赖：—；被引用：—
 - [formal 支持 UNFORMALIZED、FORMALIZATION_INCOMPLETE、WELL_TYPED、TYPE_ERROR、SEMANTICALLY_UNDEFINED、DIMENSION_ERROR、COUNTEREXAM](../../../docs/foundation/status-system.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-215a166b594ba984 / formal 支持 UNFORMALIZED、FORMALIZATION_INCOMPLETE、WELL_TYPED、TYPE_ERROR、SEMANTICALLY_UNDEFINED、DIMENSION_ERROR、COUNTEREXAM
@@ -2443,64 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3f9d7b25a255b7e9 / G_δ 哥德尔不完备性判定 → 公理系统的结构性不完备性
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [G_δ 哥德尔不完备性判定 → 绝对完备统一的结构性边界（非物理学 no-go theorem）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-00ef70998b18efa8 / G_δ 哥德尔不完备性判定 → 绝对完备统一的结构性边界（非物理学 no-go theorem）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [G_δ\(proposition\) := ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\)](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-6eb80dd68139489b / G_δ\(proposition\) := ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\)
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\)](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-306F3B1504EE8766 / G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\) / IMPLICIT-306F3B1504EE8766 / IMPLICIT-55DAD7CA608BB878
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-55DAD7CA608BB878 / G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\) / IMPLICIT-55DAD7CA608BB878 / IMPLICIT-306F3B1504EE8766
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E2F68DF470C186DC / G_δ\(proposition\) = ∀p, \(∃proof\(p\) ∨ ¬∃proof\(p\)\) / IMPLICIT-E2F68DF470C186DC / IMPLICIT-306F3B1504EE8766
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [G_δ：三领域材料足够支持 L2/L3 候选函数；不足以支持 L5（需更多学科验证）。](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7ba0f34da0287f52 / G_δ：三领域材料足够支持 L2/L3 候选函数；不足以支持 L5（需更多学科验证）。
-  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
-  - 依赖：—；被引用：—
-- [GAP-011 \(本体论\) has only 4 sources; GAP-014 \(反例与失败\) has only 4 sources](../../../data/external-research/104-source-integrity-alerts.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6865632114b33732 / GAP-011 \(本体论\) has only 4 sources; GAP-014 \(反例与失败\) has only 4 sources
-  - 来源：`data/external-research/104-source-integrity-alerts.jsonl`
-  - 依赖：—；被引用：—
-- [GAP-011 本体论 \(250P\) — MEDIUM](../../../data/discipline-projection/087-execution-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-0f529083eb0f994f / GAP-011 本体论 \(250P\) — MEDIUM
-  - 来源：`data/discipline-projection/087-execution-report.md`
-  - 依赖：—；被引用：—
-- [GAP-011 本体论 （MEDIUM）](../../../data/external-research/089-external-source-atlas.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-eced5f2b4acb2bdc / GAP-011 本体论 （MEDIUM）
-  - 来源：`data/external-research/089-external-source-atlas.md`
-  - 依赖：—；被引用：—
-- [GAP-011 本体论** \| ENHANCE_WITH_EXTERNAL_SOURCES \| 4 来源 \| 补 `domain_ontology`](../../../data/external-research/088-FINAL-REPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-f20bd288f6cbd432 / GAP-011 本体论** \| ENHANCE_WITH_EXTERNAL_SOURCES \| 4 来源 \| 补 `domain_ontology`
-  - 来源：`data/external-research/088-FINAL-REPORT.md`
-  - 依赖：—；被引用：—
-- [GAP-011（本体论）：仅 4 条来源，需优先补齐](../../../reports/external-research/104-gap-patch-evidence-readiness.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-137fca0055b0671d / GAP-011（本体论）：仅 4 条来源，需优先补齐
-  - 来源：`reports/external-research/104-gap-patch-evidence-readiness.md`
-  - 依赖：—；被引用：—
-- [GAP-016 \(weight-space composition algebra\):** PARTIALLY_SUPPORTED_WITH_MAJOR_GAPS. Empirical composition exists but no f](../../../reports/external-research/121-function-paradigm-fulltext-review-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b964d42019745ae4 / GAP-016 \(weight-space composition algebra\):** PARTIALLY_SUPPORTED_WITH_MAJOR_GAPS. Empirical composition exists but no f
-  - 来源：`reports/external-research/121-function-paradigm-fulltext-review-report.md`
   - 依赖：—；被引用：—

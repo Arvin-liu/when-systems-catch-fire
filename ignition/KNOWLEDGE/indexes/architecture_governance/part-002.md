@@ -364,6 +364,11 @@
   - 可搜索名称：NFC-5355713aa67bc09d / `LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION`; the 138 second Codex
   - 来源：`reports/operations/ignition-139-step10-live-admission.md`
   - 依赖：—；被引用：—
+- [`LIVE_EXTERNAL_INVOCATION` now has an independent machine source at `ignition/data/operations/open-obligation-registry-r](../../../reports/operations/ignition-142-step02-obligation-registry.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-997574cd1fe783c1 / `LIVE_EXTERNAL_INVOCATION` now has an independent machine source at `ignition/data/operations/open-obligation-registry-r
+  - 来源：`reports/operations/ignition-142-step02-obligation-registry.md`
+  - 依赖：—；被引用：—
 - [`LIVE_READONLY_VALIDATED_COMPLETION=false` and](../../../reports/operations/ignition-138-step10-amendment-01-independent-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a4e09ed4d9b07642 / `LIVE_READONLY_VALIDATED_COMPLETION=false` and
@@ -1869,6 +1874,31 @@
   - 可搜索名称：NFC-daa38d24162030c5 / Claim ceiling: exact repository-local full-discovery terminal evidence and failure classification only; no whole-project
   - 来源：`reports/operations/ignition-134-step10-full-unittest-discovery.md`
   - 依赖：—；被引用：—
+- [Claim ceiling: fail-closed pre-live admission evidence only; no live completion is claimed.](../../../reports/operations/ignition-142-step12-pre-live-gate.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3121b0c89fa63287 / Claim ceiling: fail-closed pre-live admission evidence only; no live completion is claimed.
+  - 来源：`reports/operations/ignition-142-step12-pre-live-gate.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: fresh class separation and public metadata only; no inference or validated completion is claimed.](../../../reports/operations/ignition-142-step10-reasoner-tool-closure.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6b3393d259ad39b7 / Claim ceiling: fresh class separation and public metadata only; no inference or validated completion is claimed.
+  - 来源：`reports/operations/ignition-142-step10-reasoner-tool-closure.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: fresh public metadata, adapter classification and blocker evidence only; no live completion is claimed.](../../../reports/operations/ignition-142-step07-hermes-public-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-646cf1b91a06c95a / Claim ceiling: fresh public metadata, adapter classification and blocker evidence only; no live completion is claimed.
+  - 来源：`reports/operations/ignition-142-step07-hermes-public-audit.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: fresh public metadata, gate observations and blocker classification only; no live completion or external](../../../reports/operations/ignition-142-step06-gemini-public-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2732d1ff962752a7 / Claim ceiling: fresh public metadata, gate observations and blocker classification only; no live completion or external
+  - 来源：`reports/operations/ignition-142-step06-gemini-public-audit.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: fresh public observation, classification, admission checks, policy exclusion and deterministic why-execut](../../../reports/operations/ignition-142-step11-fresh-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fd4fc9ea8f22792c / Claim ceiling: fresh public observation, classification, admission checks, policy exclusion and deterministic why-execut
+  - 来源：`reports/operations/ignition-142-step11-fresh-census.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: fresh repository-local observation-time census, executor-kind classification, admission checks and why-ex](../../../reports/operations/ignition-140-step09-local-executor-census-and-selection.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a7856edf3b7f5088 / Claim ceiling: fresh repository-local observation-time census, executor-kind classification, admission checks and why-ex
@@ -1883,6 +1913,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ddd5077829f2dc27 / Claim ceiling: independent negative completion-gate evidence only; no live
   - 来源：`reports/operations/ignition-138-step10-independent-validation-gate.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: offline repository-local adversarial rejection evidence only. This does not claim a live validated comple](../../../reports/operations/ignition-142-step18-adversarial-matrix.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e33157f81349ae0a / Claim ceiling: offline repository-local adversarial rejection evidence only. This does not claim a live validated comple
+  - 来源：`reports/operations/ignition-142-step18-adversarial-matrix.md`
   - 依赖：—；被引用：—
 - [Claim ceiling: repository-local admission and boundary evidence only; no live](../../../reports/operations/ignition-139-step10-live-admission.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2042,6 +2077,21 @@
 - [claim_ceiling: repository-local architecture, dispatch-boundary and observation-time evidence only; no external truth, p](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7629799c8ea31880 / claim_ceiling: repository-local architecture, dispatch-boundary and observation-time evidence only; no external truth, p
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local lifecycle decoupling semantics and historical live-state evidence only; no executor capa](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d8cb1636b49fdb47 / claim_ceiling: repository-local lifecycle decoupling semantics and historical live-state evidence only; no executor capa
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence o](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bf1bc9243324afd1 / claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence o
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic reg](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-60deb9780a4e83e4 / claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic reg
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti](../../../STATE-CHANGELOG.md)
@@ -2453,54 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a25550c4c19ae767 / Current Facts, Current Snapshot and the seven compiler-owned Current Snapshot
   - 来源：`reports/operations/ignition-138-step12-current-state-sync.md`
-  - 依赖：—；被引用：—
-- [Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections](../../ASSET-CARDS.md#asset-nfc-79e157390b0bf89a)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-79e157390b0bf89a / Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections / Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections from canonical registries and manifests; they are navigation/current-facts evidence, not a second truth layer.
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [Current iteration method version is emitted by the generated Current Snapshot. Read data/operations/stage-snapshots.json](../../ASSET-CARDS.md#asset-nfc-a97aee2717fb336a)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a97aee2717fb336a / Current iteration method version is emitted by the generated Current Snapshot. Read data/operations/stage-snapshots.json / Current iteration method version is emitted by the generated Current Snapshot. Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [Current state**: 085 frozen v1 JSON is a partial artifact](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-255fa31045fd9427 / Current state**: 085 frozen v1 JSON is a partial artifact
-  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
-  - 依赖：—；被引用：—
-- [Current still projects four historical attempts, zero validated completions,](../../../reports/operations/ignition-139-step10-live-admission.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1473bad6c9a27ec0 / Current still projects four historical attempts, zero validated completions,
-  - 来源：`reports/operations/ignition-139-step10-live-admission.md`
-  - 依赖：—；被引用：—
-- [Current task lineage and volatile fact registry: `PASS`.](../../../reports/operations/ignition-139-step07-current-state-sync.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-51f2b312256307a2 / Current task lineage and volatile fact registry: `PASS`.
-  - 来源：`reports/operations/ignition-139-step07-current-state-sync.md`
-  - 依赖：—；被引用：—
-- [Current validation only; no live completion, external truth, production](../../../reports/operations/ignition-139-step12-independent-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-53913158d2dc372c / Current validation only; no live completion, external truth, production
-  - 来源：`reports/operations/ignition-139-step12-independent-validation.md`
-  - 依赖：—；被引用：—
-- [Current volatile registry: `PASS facts=19 surfaces=7`.](../../../reports/operations/ignition-138-step13-targeted-regression.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e8b8fe43b655e572 / Current volatile registry: `PASS facts=19 surfaces=7`.
-  - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
-  - 依赖：—；被引用：—
-- [Current Zhiyuan Writing Method showcase outcomes are indexed at docs/publication/zhiyuan-writing-showcase.md and data/pu](../../../llms.txt)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-20b6127625a0ee5f / Current Zhiyuan Writing Method showcase outcomes are indexed at docs/publication/zhiyuan-writing-showcase.md and data/pu
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [current-facts and map surfaces contain the R3 identity but need to be checked against](../../../reports/operations/ignition-128-step00-current-state-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-726a31ab447e36ee / current-facts and map surfaces contain the R3 identity but need to be checked against
-  - 来源：`reports/operations/ignition-128-step00-current-state-audit.md`
-  - 依赖：—；被引用：—
-- [current-facts values from `129` to `130` while classifying the work as](../../../docs/architecture/iteration-boundary-archaeology-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9bb6175f8fcfb285 / current-facts values from `129` to `130` while classifying the work as
-  - 来源：`docs/architecture/iteration-boundary-archaeology-r1.md`
   - 依赖：—；被引用：—

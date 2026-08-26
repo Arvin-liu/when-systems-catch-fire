@@ -6,6 +6,11 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M29 / data/external-research/088-external-source-atlas-medium.jsonl / M29 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M30 / data/external-research/088-external-source-atlas-medium.jsonl / M30 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -664,9 +669,9 @@
   - 可搜索名称：NFC-e1157733ec3704dd / Family assignments were mostly accurate because they were tied to the source registry.
   - 来源：`data/external-research/121-fulltext-resolver/121-template-risk-reaudit.json`
   - 依赖：—；被引用：—
-- [Federation 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界](../../../data/architecture/interactive-system-map-layout.json)
+- [Federation、provider-neutral admission 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界](../../../data/architecture/interactive-system-map-layout.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7fb76eb6c73ee456 / Federation 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界
+  - 可搜索名称：NFC-1485857207054024 / Federation、provider-neutral admission 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界
   - 来源：`data/architecture/interactive-system-map-layout.json`
   - 依赖：—；被引用：—
 - [Final 079 type: `MECHANISM_MODEL`.](../../../reports/foundation-architecture/D598-final-adjudication-20260713.md)
@@ -879,6 +884,11 @@
   - 可搜索名称：NFC-728401ee11c213a0 / Hermes `live-hermes-136` remains `RECONCILIATION_REMAINS_OPEN`. Because Step 01 did not prove `RECONCILED_NO_OBSERVED_SI
   - 来源：`reports/operations/ignition-137-step11-hermes-retry-decision.md`
   - 依赖：—；被引用：—
+- [Hermes remains blocked because its final public response is not a strict structured-result stream for the Task142 exact](../../../reports/operations/ignition-142-step07-hermes-public-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b4c86d5da8ad331 / Hermes remains blocked because its final public response is not a strict structured-result stream for the Task142 exact
+  - 来源：`reports/operations/ignition-142-step07-hermes-public-audit.md`
+  - 依赖：—；被引用：—
 - [Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。](../../../data/architecture/interactive-system-map.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-05110b2285138586 / Hermes 的受限 text bridge adapter；仅允许声明的低风险读取 envelope，文本输出必须经过 typed parse、redaction 与独立验证。
@@ -984,6 +994,11 @@
   - 可搜索名称：NFC-81c442440aab2189 / if directory and not resolved.is_dir\(\):
   - 来源：`agent_federation/live_filesystem.py`
   - 依赖：—；被引用：—
+- [if not all\(row.get\("root_cause_confirmed"\) is True and bool\(row.get\("root_cause_fix_ref"\)\) for row in rows\[1:\]\):](../../../agent_federation/task142_adversarial.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-74c601fcc2292024 / if not all\(row.get\("root_cause_confirmed"\) is True and bool\(row.get\("root_cause_fix_ref"\)\) for row in rows\[1:\]\):
+  - 来源：`agent_federation/task142_adversarial.py`
+  - 依赖：—；被引用：—
 - [if not directory and not resolved.exists\(\):](../../../agent_federation/live_filesystem.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4480d6b655c87a22 / if not directory and not resolved.exists\(\):
@@ -1048,6 +1063,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：Incremental Execution and Selective Materialization / incremental-execution
   - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
+- [Independent cross-task obligation authority for identity, status, owner plane, blocker, next eligible action, evidence a](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-289bec878c6e581a / Independent cross-task obligation authority for identity, status, owner plane, blocker, next eligible action, evidence a
+  - 来源：`data/architecture/interactive-system-map.json`
   - 依赖：—；被引用：—
 - [independent embedding-evidence axis summary.](../../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-bbb11add418b8963 / Object D423 defines a mechanism_model within the point-fire framework. Core: 中文：M13的六个参数归约为3个有效参数：n_eff=n·√\(p̄·Σαᵢ/β\)，K，
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D423；被引用：—
-- [Object D424 defines a mechanism_model within the point-fire framework. Core: 中文：M14的**两步策略是学习效应存在时的唯一最优策略。** 利用P_correct](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a11599aefb2ebd97 / Object D424 defines a mechanism_model within the point-fire framework. Core: 中文：M14的**两步策略是学习效应存在时的唯一最优策略。** 利用P_correct
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D424；被引用：—
-- [Object D494 defines a mechanism_model within the point-fire framework. Core: 中文：dP_exit/dΩ = 0 ↔ dΦ/dμ = 0. Annotation:](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-46cfbd8461153fa5 / Object D494 defines a mechanism_model within the point-fire framework. Core: 中文：dP_exit/dΩ = 0 ↔ dΦ/dμ = 0. Annotation:
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D494；被引用：—
-- [Object D528 defines a mechanism_model within the point-fire framework. Core: 中文：∀n≥5，H_*\(M\)≅H_*\(Sⁿ\) ⇒ M≅Sⁿ，同调群同构推流形同胚. A](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a63ff43b97da9391 / Object D528 defines a mechanism_model within the point-fire framework. Core: 中文：∀n≥5，H_*\(M\)≅H_*\(Sⁿ\) ⇒ M≅Sⁿ，同调群同构推流形同胚. A
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D528；被引用：—
-- [Object D529 defines a mechanism_model within the point-fire framework. Core: 中文：K_n\(R\)/p≅H^i\(Gal\(R^sep/R\), μ_p^j\)，数域和有限域](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b95d7a53fe4a697d / Object D529 defines a mechanism_model within the point-fire framework. Core: 中文：K_n\(R\)/p≅H^i\(Gal\(R^sep/R\), μ_p^j\)，数域和有限域
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D529；被引用：—
