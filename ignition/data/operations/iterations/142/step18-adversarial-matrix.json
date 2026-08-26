@@ -1,0 +1,181 @@
+{
+  "canonical_sources": [
+    "ignition/agent_federation/task142_first_completion_validator.py",
+    "ignition/agent_federation/executor_admission_contract.py",
+    "ignition/agent_federation/live_state_dimensions.py",
+    "ignition/agent_federation/structured_result_contract.py",
+    "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "ignition/data/operations/open-obligation-registry-r1.json",
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/architecture/interactive-system-map-layout.json"
+  ],
+  "case_count": 15,
+  "cases": [
+    {
+      "case_id": "completed-scope-reverted-by-open-obligation",
+      "detail": "Task142AdversarialError: FORMAL_TASK_REVERTED_BY_OPEN_OBLIGATION: a completed formal scope cannot remain IN_PROGRESS because an obligation is open",
+      "expected_action": "REJECT",
+      "expected_code": "FORMAL_TASK_REVERTED_BY_OPEN_OBLIGATION",
+      "guard": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
+      "observed_action": "REJECT",
+      "observed_code": "FORMAL_TASK_REVERTED_BY_OPEN_OBLIGATION",
+      "status": "PASS"
+    },
+    {
+      "case_id": "open-obligation-written-terminal",
+      "detail": "Task142AdversarialError: OBLIGATION_CLOSED_WITHOUT_VALIDATED_COMPLETION: the first-validated-completion obligation cannot close at count zero",
+      "expected_action": "REJECT",
+      "expected_code": "OBLIGATION_CLOSED_WITHOUT_VALIDATED_COMPLETION",
+      "guard": "OBLIGATION_CARRY_FORWARD_WITHOUT_TASK_LIVENESS",
+      "observed_action": "REJECT",
+      "observed_code": "OBLIGATION_CLOSED_WITHOUT_VALIDATED_COMPLETION",
+      "status": "PASS"
+    },
+    {
+      "case_id": "reasoner-masquerades-as-agent",
+      "detail": "Task142AdversarialError: NON_AGENT_CLASS_NOT_LIVE_ELIGIBLE: only AGENTIC_EXECUTOR may enter live admission",
+      "expected_action": "REJECT",
+      "expected_code": "NON_AGENT_CLASS_NOT_LIVE_ELIGIBLE",
+      "guard": "TOOL_REASONER_AGENT_CLASS_SEPARATION",
+      "observed_action": "REJECT",
+      "observed_code": "NON_AGENT_CLASS_NOT_LIVE_ELIGIBLE",
+      "status": "PASS"
+    },
+    {
+      "case_id": "provider-brand-bypasses-admission",
+      "detail": "Task142AdversarialError: PROVIDER_BRAND_BYPASS: a provider brand or arbitrary family label cannot replace the canonical family taxonomy",
+      "expected_action": "REJECT",
+      "expected_code": "PROVIDER_BRAND_BYPASS",
+      "guard": "EXECUTOR_ADMISSION_PROVIDER_NEUTRAL",
+      "observed_action": "REJECT",
+      "observed_code": "PROVIDER_BRAND_BYPASS",
+      "status": "PASS"
+    },
+    {
+      "case_id": "fake-auth-success",
+      "detail": "Task142AdversarialError: PUBLIC_AUTH_NOT_ATTESTED: presence-only or fake auth success is not public status proof",
+      "expected_action": "REJECT",
+      "expected_code": "PUBLIC_AUTH_NOT_ATTESTED",
+      "guard": "PUBLIC_AUTH_STATUS_ATTESTATION",
+      "observed_action": "REJECT",
+      "observed_code": "PUBLIC_AUTH_NOT_ATTESTED",
+      "status": "PASS"
+    },
+    {
+      "case_id": "billing-change-requirement-ignored",
+      "detail": "Task142AdversarialError: NEW_BILLING_REQUIRED: admission cannot ignore a billing or API authorization change",
+      "expected_action": "REJECT",
+      "expected_code": "NEW_BILLING_REQUIRED",
+      "guard": "NO_NEW_BILLING_AUTHORITY",
+      "observed_action": "REJECT",
+      "observed_code": "NEW_BILLING_REQUIRED",
+      "status": "PASS"
+    },
+    {
+      "case_id": "writable-task-workspace",
+      "detail": "Task142AdversarialError: WORKSPACE_NOT_READ_ONLY: the task workspace must be a disposable read-only fixture",
+      "expected_action": "REJECT",
+      "expected_code": "WORKSPACE_NOT_READ_ONLY",
+      "guard": "DISPOSABLE_READ_ONLY_WORKSPACE",
+      "observed_action": "REJECT",
+      "observed_code": "WORKSPACE_NOT_READ_ONLY",
+      "status": "PASS"
+    },
+    {
+      "case_id": "runtime-scratch-mixed-with-workspace",
+      "detail": "Task142AdversarialError: RUNTIME_SCRATCH_BOUNDARY_INVALID: runtime scratch must be separate from the task workspace",
+      "expected_action": "REJECT",
+      "expected_code": "RUNTIME_SCRATCH_BOUNDARY_INVALID",
+      "guard": "RUNTIME_SCRATCH_SEPARATION",
+      "observed_action": "REJECT",
+      "observed_code": "RUNTIME_SCRATCH_BOUNDARY_INVALID",
+      "status": "PASS"
+    },
+    {
+      "case_id": "malformed-result-promoted-to-validated",
+      "detail": "StructuredResultContractError: EXTRA_FIELDS: structured result has unsupported fields: ['extra']",
+      "expected_action": "REJECT",
+      "expected_code": "EXTRA_FIELDS",
+      "guard": "FIRST_VALIDATED_COMPLETION_EXACT_BINDING",
+      "observed_action": "REJECT",
+      "observed_code": "EXTRA_FIELDS",
+      "status": "PASS"
+    },
+    {
+      "case_id": "executor-self-pass-direct-completion",
+      "detail": "FirstCompletionValidationError: EXECUTOR_SELF_PASS_NOT_AUTHORITY: executor state must remain RETURNED_UNVALIDATED until this validator passes",
+      "expected_action": "REJECT",
+      "expected_code": "EXECUTOR_SELF_PASS_NOT_AUTHORITY",
+      "guard": "EXECUTOR_SELF_PASS_NOT_AUTHORITY",
+      "observed_action": "REJECT",
+      "observed_code": "EXECUTOR_SELF_PASS_NOT_AUTHORITY",
+      "status": "PASS"
+    },
+    {
+      "case_id": "same-family-blind-retry",
+      "detail": "Task142AdversarialError: SAME_FAMILY_BLIND_RETRY: family Codex has no confirmed root-cause repair",
+      "expected_action": "REJECT",
+      "expected_code": "SAME_FAMILY_BLIND_RETRY",
+      "guard": "NO_BLIND_SAME_FAMILY_RETRY",
+      "observed_action": "REJECT",
+      "observed_code": "SAME_FAMILY_BLIND_RETRY",
+      "status": "PASS"
+    },
+    {
+      "case_id": "second-attempt-after-first-success",
+      "detail": "Task142AdversarialError: SUCCESS_STOP_VIOLATION: no attempt may start after the first validated completion",
+      "expected_action": "REJECT",
+      "expected_code": "SUCCESS_STOP_VIOLATION",
+      "guard": "STOP_AFTER_FIRST_VALIDATED_COMPLETION",
+      "observed_action": "REJECT",
+      "observed_code": "SUCCESS_STOP_VIOLATION",
+      "status": "PASS"
+    },
+    {
+      "case_id": "capture-incomplete-promoted-to-validated",
+      "detail": "FirstCompletionValidationError: CAPTURE_INCOMPLETE: durable capture is incomplete",
+      "expected_action": "REJECT",
+      "expected_code": "CAPTURE_INCOMPLETE",
+      "guard": "COMPLETE_DURABLE_CAPTURE_REQUIRED",
+      "observed_action": "REJECT",
+      "observed_code": "CAPTURE_INCOMPLETE",
+      "status": "PASS"
+    },
+    {
+      "case_id": "process-observed-promotes-inference",
+      "detail": "Task142AdversarialError: PROCESS_DOES_NOT_PROVE_INFERENCE: process observation must not promote inference without an independent accepted marker",
+      "expected_action": "REJECT",
+      "expected_code": "PROCESS_DOES_NOT_PROVE_INFERENCE",
+      "guard": "PROCESS_INFERENCE_SEPARATION",
+      "observed_action": "REJECT",
+      "observed_code": "PROCESS_DOES_NOT_PROVE_INFERENCE",
+      "status": "PASS"
+    },
+    {
+      "case_id": "stale-current-architecture-projection",
+      "detail": "Task142AdversarialError: STALE_CURRENT_ARCHITECTURE_PROJECTION: map_version differs from canonical identity",
+      "expected_action": "REJECT",
+      "expected_code": "STALE_CURRENT_ARCHITECTURE_PROJECTION",
+      "guard": "CURRENT_STATE_SYNC_AND_SOLE_MAP",
+      "observed_action": "REJECT",
+      "observed_code": "STALE_CURRENT_ARCHITECTURE_PROJECTION",
+      "status": "PASS"
+    }
+  ],
+  "claim_ceiling": "Offline repository-local adversarial rejection evidence only; no executor was probed or invoked, no validated completion is claimed, and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "live_process_started": false,
+  "negative_case_count": 15,
+  "safety": {
+    "billing_changed": false,
+    "configuration_changed": false,
+    "install_or_upgrade_performed": false,
+    "live_inference_started": false,
+    "live_process_started": false,
+    "secret_content_read": false,
+    "workspace_modified": false
+  },
+  "schema_version": "task142-adversarial-matrix-r1",
+  "status": "PASS",
+  "step": "18",
+  "task_id": "IGNITION-20260827-142"
+}
