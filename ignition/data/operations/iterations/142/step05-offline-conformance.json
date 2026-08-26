@@ -1,0 +1,31 @@
+{
+  "schema_version": "ignition-142-step05-offline-conformance-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "05",
+  "status": "PASS",
+  "matrix_path": "ignition/data/operations/executor-conformance-matrix-r1.json",
+  "validator_path": "ignition/tools/validate_executor_conformance.py",
+  "case_count": 11,
+  "accepted_count": 1,
+  "rejected_count": 10,
+  "negative_cases": {
+    "malformed_json": "JSON_NOT_EXACT",
+    "extra_field": "EXTRA_FIELDS",
+    "wrong_result": "STRUCTURED_RESULT_SEMANTIC_MISMATCH",
+    "nonzero_exit": "PROCESS_EXIT_NONZERO",
+    "timeout": "TIMEOUT_EFFECT_UNKNOWN",
+    "child_cleanup_failure": "CHILD_CLEANUP_FAILED",
+    "workspace_mutation": "WORKSPACE_MUTATED",
+    "runtime_scratch_leak": "RUNTIME_SCRATCH_LEAK",
+    "capture_incomplete": "CAPTURE_INCOMPLETE",
+    "redaction_failure": "REDACTION_GATE_FAILED"
+  },
+  "safety": {
+    "live_process_started": false,
+    "child_processes_left": 0,
+    "formal_workspace_mutated": false,
+    "runtime_scratch_leaked": false,
+    "secret_content_read": false
+  },
+  "claim_ceiling": "Offline synthetic conformance only; no live executor capability, external truth, production readiness, Owner acceptance or epistemic acceptance is claimed."
+}

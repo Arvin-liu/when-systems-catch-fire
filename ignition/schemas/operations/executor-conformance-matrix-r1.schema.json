@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/executor-conformance-matrix-r1.schema.json",
+  "title": "Offline provider-neutral executor conformance matrix",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "case_order", "cases", "summary", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "executor-conformance-matrix-r1"},
+    "contract_id": {"const": "OFFLINE_EXECUTOR_CONFORMANCE_MATRIX"},
+    "case_order": {"const": ["exact_valid", "malformed_json", "extra_field", "wrong_result", "nonzero_exit", "timeout", "child_cleanup_failure", "workspace_mutation", "runtime_scratch_leak", "capture_incomplete", "redaction_failure"]},
+    "cases": {"type": "array", "minItems": 11, "items": {"$ref": "#/$defs/case"}},
+    "summary": {"$ref": "#/$defs/summary"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["case_id", "decision", "validated_completion", "reasons", "structured_result_digest", "claim_ceiling"],
+      "properties": {
+        "case_id": {"type": "string", "minLength": 1},
+        "decision": {"enum": ["CONFORMANCE_PASS", "REJECTED"]},
+        "validated_completion": {"type": "boolean"},
+        "reasons": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "structured_result_digest": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "claim_ceiling": {"type": "string", "minLength": 1}
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["case_count", "accepted_count", "rejected_count", "expected_rejection_count", "live_process_started", "child_processes_left", "formal_workspace_mutated", "runtime_scratch_leaked"],
+      "properties": {
+        "case_count": {"const": 11},
+        "accepted_count": {"const": 1},
+        "rejected_count": {"const": 10},
+        "expected_rejection_count": {"const": 10},
+        "live_process_started": {"const": false},
+        "child_processes_left": {"const": 0},
+        "formal_workspace_mutated": {"const": false},
+        "runtime_scratch_leaked": {"const": false}
+      }
+    }
+  }
+}
