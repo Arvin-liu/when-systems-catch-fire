@@ -1,0 +1,41 @@
+{
+  "schema_version": "ignition-141-step04-failure-forensics-capsule-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "04",
+  "status": "PASS",
+  "capsule_schema": "failure-forensics-capsule-r1",
+  "required_machine_facts": [
+    "task_dispatch_attempt_executor_adapter_binding",
+    "argv_public_shape_digest_and_option_set_fingerprint",
+    "process_return_code_duration_timeout_process_group_cleanup",
+    "stdout_stderr_byte_counts_and_digests",
+    "parser_schema_and_structured_output_status",
+    "stable_provider_neutral_diagnostic_class",
+    "redaction_status",
+    "runtime_scratch_auth_source_workspace_boundary_status",
+    "inference_observation_status",
+    "raw_spool_retention_and_disposal_status",
+    "known_unknown_not_inferable_classification"
+  ],
+  "privacy_gate": {
+    "raw_private_output_stored": false,
+    "prompt_stored": false,
+    "secret_content_stored": false,
+    "absolute_paths_redacted": true,
+    "hidden_reasoning_stored": false
+  },
+  "cleanup_order": "capsule_generated_before_raw_spool_cleanup_then_disposition_updated_after_durable_receipt",
+  "diagnostic_classes": [
+    "CLI_ARGV_REJECTED",
+    "OUTPUT_SCHEMA_REJECTED",
+    "STARTUP_PERMISSION_FAILURE",
+    "AUTH_PUBLIC_STATUS_FAILURE",
+    "TRANSPORT_FAILURE",
+    "PROCESS_EXIT_NONZERO_NO_STRUCTURED_RESULT",
+    "STRUCTURED_RESULT_PARSE_FAILURE",
+    "STRUCTURED_RESULT_SCHEMA_FAILURE",
+    "OBSERVATION_INCOMPLETE",
+    "UNKNOWN_UNCLASSIFIED"
+  ],
+  "claim_ceiling": "Repository-local sanitized failure forensics contract and privacy validation only; no private inference, validated completion, external truth, production readiness, Owner acceptance or epistemic upgrade is inferred."
+}

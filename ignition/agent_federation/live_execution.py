@@ -12,6 +12,7 @@ from agent_runtime.dispatch_reconciliation import DispatchReceipt
 
 from .live_adapters import LiveAdapterObservation
 from .live_bridge import LiveDispatchEnvelope, LiveDispatchStateMachine, LiveExecutorReceipt
+from .failure_forensics import build_failure_forensics_capsule, update_spool_disposition
 from .live_orchestration import LiveDispatchCoordinator
 from .live_pilot import LivePilotValidator, LiveValidationReport
 from .live_privacy import LivePrivacyError, sanitize_live_result, sanitize_public_summary
@@ -34,6 +35,7 @@ class LiveAttemptResult:
     durable_record: Mapping[str, Any]
     claim_ceiling: str = "Bounded executor observation plus independent synthetic validation only; no Goal completion or external truth is inferred."
     capture_capsule: Mapping[str, Any] | None = None
+    failure_forensics_capsule: Mapping[str, Any] | None = None
 
     @property
     def success(self) -> bool:
@@ -54,6 +56,7 @@ class LiveAttemptResult:
             "state_history": [dict(item) for item in self.state_history],
             "durable_record_state": durable_state,
             "capture_capsule": dict(self.capture_capsule) if self.capture_capsule is not None else None,
+            "failure_forensics_capsule": dict(self.failure_forensics_capsule) if self.failure_forensics_capsule is not None else None,
             "claim_ceiling": self.claim_ceiling,
         }
 
@@ -95,6 +98,91 @@ def _safe_summary(observation: LiveAdapterObservation) -> str:
         return sanitize_public_summary(observation.summary)
     except LivePrivacyError:
         return "PUBLIC_SUMMARY_REDACTED"
+
+
+def _public_error_class(value: str) -> str:
+    if not value:
+        return "NONE"
+    upper = value.upper()
+    if "JSONL" in upper or "JSON" in upper:
+        return "PUBLIC_JSON_PARSE_ERROR"
+    if "EXACT" in upper or "RESULT" in upper:
+        return "STRUCTURED_RESULT_EXTRACTION_ERROR"
+    return "PUBLIC_PARSER_ERROR"
+
+
+def _auth_boundary_status(adapter: Any) -> str:
+    observed = getattr(adapter, "last_auth_source_observation", None)
+    if isinstance(observed, Mapping):
+        return "MUTATED" if observed.get("mutated") else "UNCHANGED_REFERENCE"
+    return "NOT_CONFIGURED" if getattr(adapter, "auth_source_path", None) is None else "UNKNOWN"
+
+
+def _runtime_boundary_status(observation: LiveAdapterObservation) -> str:
+    status = observation.runtime_scratch_cleanup_status
+    if status == "CLEANED":
+        return "UNCHANGED"
+    if status == "NOT_USED":
+        return "NOT_CONFIGURED"
+    return "UNKNOWN"
+
+
+def _failure_forensics(
+    *,
+    observation: LiveAdapterObservation,
+    adapter: Any,
+    envelope: LiveDispatchEnvelope,
+    before_digest: str,
+    after_digest: str,
+    parser_status: str,
+    parser_error_class: str,
+    schema_status: str,
+    schema_error_class: str,
+    structured_output_status: str,
+    structured_output_present: bool,
+    diagnostic_class: str | None,
+    raw_spool_retention_status: str,
+    raw_spool_disposal_status: str,
+) -> Mapping[str, Any]:
+    process = observation.process
+    cleanup_status = "CLEANED" if process.process_group_cleaned else "REQUIRES_RECONCILIATION" if process.process_group_status in {"CHILD_LEFT_BEHIND", "UNKNOWN"} else "NOT_OBSERVED"
+    inference_status = "UNKNOWN" if process.returncode is None else "NOT_OBSERVED"
+    return build_failure_forensics_capsule(
+        task_id=envelope.task_id,
+        dispatch_id=envelope.dispatch_id,
+        attempt_id=envelope.attempt_id,
+        executor_id=observation.executor_id,
+        adapter_id=observation.adapter_id,
+        executor_version=observation.version,
+        interface_digest=observation.interface_digest,
+        argv=process.argv,
+        process_return_code=process.returncode,
+        duration_ms=process.duration_ms,
+        timed_out=process.timed_out,
+        process_group_status=process.process_group_status,
+        cleanup_status=cleanup_status,
+        stdout_byte_count=process.stdout_bytes if process.stdout_bytes is not None else len(process.stdout.encode("utf-8")),
+        stdout_digest=process.stdout_digest,
+        stderr_byte_count=process.stderr_bytes if process.stderr_bytes is not None else len(process.stderr.encode("utf-8")),
+        stderr_digest=process.stderr_digest,
+        parser_status=parser_status,
+        parser_error_class=parser_error_class,
+        schema_status=schema_status,
+        schema_error_class=schema_error_class,
+        structured_output_status=structured_output_status,
+        structured_output_present=structured_output_present,
+        diagnostic_class=diagnostic_class,
+        runtime_scratch_status=_runtime_boundary_status(observation),
+        auth_source_status=_auth_boundary_status(adapter),
+        workspace_status="UNCHANGED" if before_digest == after_digest else "MUTATED",
+        inference_observation_status=inference_status,
+        raw_spool_initialized=process.capture_writer is not None or process.capture_capsule is not None,
+        raw_spool_retention_status=raw_spool_retention_status,
+        raw_spool_disposal_status=raw_spool_disposal_status,
+        known=("public process lifecycle was captured", "structured result presence was classified"),
+        unknown=("provider-private diagnostic text", "executor-internal inference state"),
+        not_inferable=("private inference execution", "external side effects beyond the bounded workspace"),
+    )
 
 
 def _transport_evidence(process: Any, *, observed_at: str, timeout_seconds: float) -> dict[str, Any]:
@@ -162,6 +250,13 @@ def execute_bounded_attempt(
     transport_evidence = _transport_evidence(observation.process, observed_at=observed_at, timeout_seconds=envelope.timeout_seconds)
     validation: LiveValidationReport | None = None
     capture_capsule: Mapping[str, Any] | None = observation.process.capture_capsule
+    failure_forensics_capsule: Mapping[str, Any] | None = None
+    parser_status = "NOT_RUN"
+    parser_error_class = "NONE"
+    schema_status = "NOT_RUN"
+    schema_error_class = "NONE"
+    structured_output_status = "UNKNOWN"
+    structured_output_present = False
 
     if observation.process.timed_out:
         machine.mark_timeout(effect_known_no_effect=False)
@@ -170,23 +265,44 @@ def execute_bounded_attempt(
         structured = None
         os_validation = "NOT_RUN"
         reconciliation = "OPEN"
+        structured_output_status = "UNKNOWN"
+        failure_forensics_capsule = _failure_forensics(
+            observation=observation, adapter=adapter, envelope=envelope,
+            before_digest=before_digest, after_digest=after_digest,
+            parser_status="UNKNOWN", parser_error_class="OBSERVATION_INCOMPLETE",
+            schema_status="UNKNOWN", schema_error_class="OBSERVATION_INCOMPLETE",
+            structured_output_status="UNKNOWN", structured_output_present=False,
+            diagnostic_class="OBSERVATION_INCOMPLETE",
+            raw_spool_retention_status="RETAINED_UNTIL_DURABLE_RECEIPT",
+            raw_spool_disposal_status="PENDING",
+        )
     else:
         try:
             if not observation.parsed or observation.process.returncode != 0:
+                parser_status = "FAIL" if observation.parse_error else "NOT_RUN"
+                parser_error_class = _public_error_class(observation.parse_error)
                 machine.record_executor_return(parsed=False, returncode=observation.process.returncode)
                 final_state = machine.state
                 structured = None
+                structured_output_status = "ABSENT"
                 os_validation = "FAIL"
                 reconciliation = "NOT_REQUIRED"
             else:
+                parser_status = "PASS"
                 machine.record_executor_return(parsed=True, returncode=observation.process.returncode)
                 try:
                     raw_result = _extract_structured_result(observation.parsed_events)
                     structured = sanitize_live_result(raw_result, allowed_keys=_RESULT_KEYS).value
+                    structured_output_status = "PRESENT"
+                    structured_output_present = True
+                    schema_status = "PASS"
                 except (LiveExecutionError, LivePrivacyError):
                     machine.transition("MALFORMED_RESULT", "structured result failed exact extraction or privacy gate")
                     final_state = machine.state
                     structured = None
+                    structured_output_status = "SCHEMA_MISMATCH" if isinstance(raw_result if 'raw_result' in locals() else None, Mapping) else "MALFORMED"
+                    schema_status = "FAIL"
+                    schema_error_class = "STRUCTURED_RESULT_CONTRACT_REJECTED"
                     os_validation = "FAIL"
                     reconciliation = "NOT_REQUIRED"
                 else:
@@ -207,10 +323,32 @@ def execute_bounded_attempt(
                 machine.transition("MALFORMED_RESULT", "bounded result handling failed closed")
             final_state = machine.state
             structured = None
+            structured_output_status = "MALFORMED"
+            schema_status = "FAIL"
+            schema_error_class = "BOUNDED_RESULT_HANDLING_FAILURE"
             os_validation = "FAIL"
             reconciliation = "NOT_REQUIRED"
 
+        if final_state != "COMPLETED_VALIDATED":
+            failure_forensics_capsule = _failure_forensics(
+                observation=observation, adapter=adapter, envelope=envelope,
+                before_digest=before_digest, after_digest=after_digest,
+                parser_status=parser_status, parser_error_class=parser_error_class,
+                schema_status=schema_status, schema_error_class=schema_error_class,
+                structured_output_status=structured_output_status,
+                structured_output_present=structured_output_present,
+                diagnostic_class=None,
+                raw_spool_retention_status="RETAINED_UNTIL_DURABLE_RECEIPT",
+                raw_spool_disposal_status="PENDING",
+            )
         capture_capsule = _close_capture(observation, structured, retain_for_reconciliation=False)
+        if failure_forensics_capsule is not None:
+            cleanup = capture_capsule.get("spool_cleanup_status") if isinstance(capture_capsule, Mapping) else None
+            failure_forensics_capsule = update_spool_disposition(
+                failure_forensics_capsule,
+                retention_status="CLEANED_AFTER_DURABLE_RECEIPT" if cleanup == "CLEANED" else "UNKNOWN" if cleanup == "FAILED" else "RETAINED_UNTIL_DURABLE_RECEIPT",
+                disposal_status="CLEANED" if cleanup == "CLEANED" else "RETAINED" if cleanup == "PENDING" else "UNKNOWN",
+            )
 
         receipt = LiveExecutorReceipt.build(
             task_id=envelope.task_id, dispatch_id=envelope.dispatch_id, attempt_id=envelope.attempt_id,
@@ -260,6 +398,7 @@ def execute_bounded_attempt(
     return LiveAttemptResult(
         receipt and observation, receipt, validation, tuple(item.to_dict() for item in machine.history), durable,
         capture_capsule=capture_capsule,
+        failure_forensics_capsule=failure_forensics_capsule,
     )
 
 
