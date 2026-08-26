@@ -1,0 +1,24 @@
+{
+  "schema_version": "formal-task-lifecycle-r1",
+  "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
+  "authority": "FORMAL_TASK_LIFECYCLE",
+  "current_task_id": "IGNITION-20260826-141",
+  "tasks": [
+    {
+      "task_id": "IGNITION-20260826-141",
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
+      "identity_impact": "ARCHITECTURE_CHANGED",
+      "terminal_basis": "Task141 Step00-16 completed and formal publication closed; the validated-completion obligation is tracked independently and does not keep the formal task alive.",
+      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/141/step16-fresh-clone-publication.json",
+        "ignition/agent-results/IGNITION-20260826-141-machine-receipt.json",
+        "ignition/STATE-CHANGELOG.md"
+      ],
+      "claim_ceiling": "Formal task terminality is repository-local scope and publication evidence only; the open obligation remains independently unresolved and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+    }
+  ],
+  "claim_ceiling": "Independent repository-local formal task lifecycle authority; task terminality never closes or proves an open obligation and does not establish external truth, production readiness, Owner acceptance or epistemic acceptance."
+}

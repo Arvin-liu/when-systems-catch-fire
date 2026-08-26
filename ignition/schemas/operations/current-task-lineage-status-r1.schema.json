@@ -25,7 +25,7 @@
             "properties": {
                 "task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"},
         "scope": {"$ref": "#/$defs/nonblank"},
-        "execution_status": {"enum": ["IN_PROGRESS", "COMPLETED_WITH_CLASSIFIED_RESIDUALS"]},
+        "execution_status": {"enum": ["IN_PROGRESS", "COMPLETED_WITH_CLASSIFIED_RESIDUALS", "COMPLETED_WITH_OPEN_OBLIGATIONS"]},
         "terminal": {"type": "boolean"},
                 "identity_impact": {"enum": ["NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"]}
       }

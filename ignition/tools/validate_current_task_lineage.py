@@ -164,7 +164,7 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.extend(advance_current_task.validate_state(source))
     if current_task["execution_status"] == "IN_PROGRESS" and current_task["terminal"]:
         errors.append("IN_PROGRESS current task cannot be terminal")
-    if current_task["execution_status"] == "COMPLETED_WITH_CLASSIFIED_RESIDUALS" and not current_task["terminal"]:
+    if current_task["execution_status"] in {"COMPLETED_WITH_CLASSIFIED_RESIDUALS", "COMPLETED_WITH_OPEN_OBLIGATIONS"} and not current_task["terminal"]:
         errors.append("completed current task must be terminal")
     if source["current_state"]["current_state_status"] != "CURRENT_WITH_OPEN_OBLIGATIONS":
         errors.append("current state status must remain CURRENT_WITH_OPEN_OBLIGATIONS")

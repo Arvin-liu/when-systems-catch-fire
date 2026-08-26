@@ -132,7 +132,7 @@
     },
     "task_lineage": {
       "current_task_id": "IGNITION-20260826-141",
-      "current_task_status": "IN_PROGRESS",
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -186,11 +186,11 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "63fa0aa41cef7489a279f723920032af2f10b2d3f659df3d4248d5f65d92e846"
+      "sha256": "5679a1d763ee2b3ad55a167018ced522e06f70bf6dd7f3a97190673ea1ae4679"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "7260684ddae961b7efa07be539ba9f074ffe8d74b29b173754dbe631fcc85d6e"
+      "sha256": "b37b63d2679976916dccea75a434df9d7807c4db8af99eec132ae11781f81c82"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
@@ -250,7 +250,7 @@
     },
     {
       "path": "ignition/schemas/architecture/current-facts.schema.json",
-      "sha256": "f017c4f685311e1a7a27241fd9b3f37a1ab01df80f259e73176942cd795d5506"
+      "sha256": "a972464d2cf8bdd564256ea5104be985a4d638d41c9b0c4ce9160e6ed046fd8b"
     },
     {
       "path": "ignition/schemas/architecture/current-system-identity.schema.json",
@@ -258,7 +258,7 @@
     },
     {
       "path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
-      "sha256": "a27c54af7daaac8504db7b562e622efe4aeade7291c0dbcd98c262c1b4d3e368"
+      "sha256": "ddde22e4321e95aab13af7414bae09045fa98f03e11fc9b10f64bca924659f0c"
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
@@ -274,7 +274,7 @@
     },
     {
       "path": "ignition/tools/validate_current_task_lineage.py",
-      "sha256": "b0faa34ce0882d6b338a36db834252ed02eb1f1cd8d15009ae9506b91ba54f92"
+      "sha256": "cfec2a13296b420a7cbfa4dc1c791f439f1607ae3b387442cff66c9423f30cb5"
     }
   ]
 }

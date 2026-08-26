@@ -2,15 +2,15 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r7-live-state-semantics-structured-result-reliability-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260826-141` (ordinal `141`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260826-141` (ordinal `141`)；current_iteration_boundary: `141` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260826-141`。
-- release_lifecycle: task `IGNITION-20260826-141`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- current_formal_task: `IGNITION-20260826-141` (ordinal `141`)；status: `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260826-141` (ordinal `141`)；current_iteration_boundary: `141` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260826-141`。
+- release_lifecycle: task `IGNITION-20260826-141`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - current_method: `1.4.0` Current；current_map: `0.15.0` Current；historical_map: `0.14.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；live dimensions: dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`, validated completion `NOT_VALIDATED`, reconciliation blocker `NONE`。
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=96; visible_nodes=84; visible_edges=89`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260826-141` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b0ca7f14ee17b0ece6bbd14aca77844a97541bdac07209b65f26a3297dc0cfcd`。
+- task_lineage: current `IGNITION-20260826-141` `COMPLETED_WITH_OPEN_OBLIGATIONS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `cb74bfbcdee5132538d6cd0326d8f1c7bc9d470c57742cd1d23dbbb7e9b3ef44`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -467,3 +467,14 @@
 - stale_knowledge: Task140 raw receipt, ledger hash chain, old R2 projection and historical Current prose remain immutable provenance; Task141 corrects only the Current interpretation through typed overlay and does not infer whether model inference began from dispatch crossing or a 0.058-second duration.
 - next_read: read the Task141 Step 12 R3 projection, Step 13 adversarial matrix, Step 14 current-state receipt and then complete Step 15 targeted/natural regression before terminal release closure.
 - claim_ceiling: Task141 repository-local Live State Semantics, Structured Result Reliability, sanitized failure forensics and bounded live-admission evidence only; no formal publication, external truth, production readiness, Owner acceptance, validated live completion or epistemic acceptance is inferred.
+
+## 2026-08-27 — IGNITION-20260827-142 — terminality and obligation decoupling baseline
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; the formal Task141 publication is already observed at `6de0841e27a0b38b4ac9a2703daef5b9637c6611`, and this append-only entry records the Task142 semantic correction.
+- current_formal_task: `IGNITION-20260826-141` is `COMPLETED_WITH_OPEN_OBLIGATIONS` and terminal; `current_iteration_boundary=141` remains only the deprecated compatibility alias, and the formal lifecycle source owns this terminality independently of obligation closure.
+- task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task141 scope and publication are complete.
+- obligations: `LIVE_EXTERNAL_INVOCATION` remains `OPEN` in the forthcoming independent obligation registry because no exact-bound validated live completion exists. The open obligation keeps Current state open but does not keep terminal Task141 `IN_PROGRESS`.
+- live_observation: the six-attempt projection remains dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`, validated completion `NOT_VALIDATED`, reconciliation blocker `NONE`, with zero validated completions, zero unreconciled attempts and two observation-incomplete outcomes.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; no external truth, production readiness, Owner acceptance or validated live completion is inferred.
+- next_read: complete the independent obligation registry, advance Current to Task142, and then execute the provider-neutral admission and bounded synthetic/read-only live gates.
+- claim_ceiling: repository-local lifecycle decoupling semantics and historical live-state evidence only; no executor capability or external validity claim is made.

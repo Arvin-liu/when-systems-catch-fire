@@ -4,8 +4,8 @@
   "current_task": {
     "task_id": "IGNITION-20260826-141",
     "scope": "Formal task IGNITION-20260826-141 Current advancement",
-    "execution_status": "IN_PROGRESS",
-    "terminal": false,
+    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "terminal": true,
     "identity_impact": "ARCHITECTURE_CHANGED"
   },
   "current_state": {
@@ -16,7 +16,8 @@
     "required_status_tokens": [
       "HISTORICAL_UNEXECUTED",
       "REBASED_INTO_127",
-      "COMPLETED_WITH_CLASSIFIED_RESIDUALS"
+      "COMPLETED_WITH_CLASSIFIED_RESIDUALS",
+      "COMPLETED_WITH_OPEN_OBLIGATIONS"
     ],
     "forbidden_status_tokens": [
       "DEFERRED_PENDING_REBASE"

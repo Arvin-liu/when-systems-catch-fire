@@ -140,7 +140,7 @@
           "required": ["current_task_id", "current_task_status", "task125_file_status", "task125_requirement_lineage_status", "task125_canonical_status", "task127_status"],
           "properties": {
             "current_task_id": {"pattern": "^IGNITION-[0-9A-Z-]+$"},
-            "current_task_status": {"enum": ["IN_PROGRESS", "COMPLETED_WITH_CLASSIFIED_RESIDUALS"]},
+            "current_task_status": {"enum": ["IN_PROGRESS", "COMPLETED_WITH_CLASSIFIED_RESIDUALS", "COMPLETED_WITH_OPEN_OBLIGATIONS"]},
             "task125_file_status": {"const": "HISTORICAL_UNEXECUTED"},
             "task125_requirement_lineage_status": {"const": "REBASED_INTO_127"},
             "task125_canonical_status": {"const": "HISTORICAL_UNEXECUTED_REBASED_INTO_127"},

@@ -1,0 +1,28 @@
+{
+  "schema_version": "ignition-142-step01-terminality-semantics-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "01",
+  "status": "PASS",
+  "decision": {
+    "task141_execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "task141_terminal": true,
+    "scope_complete": true,
+    "open_obligation_keeps_current_state_open": true,
+    "open_obligation_keeps_task141_nonterminal": false,
+    "terminality_authority": "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "obligation_authority": "TO_BE_ESTABLISHED_STEP_02"
+  },
+  "compatibility": {
+    "new_status_is_minimal": true,
+    "existing_completed_with_classified_residuals_semantics_preserved": true,
+    "current_state_status_remains": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted_remains": 0
+  },
+  "checks": [
+    "A terminal formal task may carry open_obligation_ids without treating the obligation as task liveness.",
+    "IN_PROGRESS cannot be terminal.",
+    "COMPLETED_WITH_CLASSIFIED_RESIDUALS and COMPLETED_WITH_OPEN_OBLIGATIONS must be terminal.",
+    "The lifecycle validator compares terminality to task scope/status, not to obligation closure."
+  ],
+  "claim_ceiling": "Repository-local lifecycle semantics only; no live executor capability, external truth, production readiness, Owner acceptance or epistemic acceptance is claimed."
+}
