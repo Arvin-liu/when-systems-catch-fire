@@ -1,0 +1,196 @@
+{
+  "canonical_sources": [
+    "ignition/agent_federation/live_state_dimensions.py",
+    "ignition/agent_federation/live_current_projection.py",
+    "ignition/agent_federation/structured_result_contract.py",
+    "ignition/agent_federation/failure_forensics.py",
+    "ignition/data/operations/iterations/141/live-current-projection-r3.json",
+    "ignition/data/operations/iterations/141/step09-live-policy-freeze.json"
+  ],
+  "case_count": 22,
+  "cases": [
+    {
+      "case_id": "r3-old-invocation-not-observed-ceiling",
+      "detail": "LiveCurrentProjectionError: compatibility projection does not bind to current_live_ceiling",
+      "expected_action": "REJECT",
+      "guard": "R3_PROCESS_OBSERVATION_CEILING",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "dispatch-count-alone-not-inference",
+      "detail": "guard chain completed without rejection",
+      "expected_action": "ALLOW",
+      "guard": "DISPATCH_PROCESS_INFERENCE_SEPARATION",
+      "observed_action": "ALLOW",
+      "status": "PASS"
+    },
+    {
+      "case_id": "inference-observed-before-process",
+      "detail": "LiveStateDimensionsError: inference cannot be observed before a live process is observed",
+      "expected_action": "REJECT",
+      "guard": "INFERENCE_REQUIRES_PROCESS",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "return-code-without-process-start",
+      "detail": "LiveObservationOutcomeError: live_process_return_code must be null when live_process_started is false",
+      "expected_action": "REJECT",
+      "guard": "TYPED_PROCESS_RETURN_SCOPE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "exit-zero-without-structured-result",
+      "detail": "MatrixGuardError: COMPLETION_REQUIRES_COMPLETED_VALIDATED_STATE",
+      "expected_action": "REJECT",
+      "guard": "COMPLETION_RESULT_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "nonzero-without-failure-capsule",
+      "detail": "MatrixGuardError: FAILURE_FORENSICS_CAPSULE_REQUIRED_BEFORE_RAW_SPOOL_DISPOSAL",
+      "expected_action": "REJECT",
+      "guard": "FORENSICS_BEFORE_SPOOL_DISPOSAL",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "malformed-result-without-failure-capsule",
+      "detail": "MatrixGuardError: FAILURE_FORENSICS_CAPSULE_REQUIRED_BEFORE_RAW_SPOOL_DISPOSAL",
+      "expected_action": "REJECT",
+      "guard": "FORENSICS_BEFORE_SPOOL_DISPOSAL",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "extra-structured-field",
+      "detail": "StructuredResultContractError: EXTRA_FIELDS: structured result has unsupported fields: ['extra']",
+      "expected_action": "REJECT",
+      "guard": "STRICT_RESULT_SCHEMA",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "non-exact-json-result",
+      "detail": "StructuredResultContractError: JSON_NOT_EXACT: JSON_NOT_EXACT: Expecting value: line 1 column 1 (char 0)",
+      "expected_action": "REJECT",
+      "guard": "STRICT_RESULT_PARSER",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "distinct-duplicate-results",
+      "detail": "StructuredResultContractError: AMBIGUOUS_RESULTS: public events contained multiple distinct synthetic results",
+      "expected_action": "REJECT",
+      "guard": "AMBIGUOUS_RESULT_GUARD",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "valid-strict-result",
+      "detail": "guard chain completed without rejection",
+      "expected_action": "ALLOW",
+      "guard": "STRICT_RESULT_CONTRACT",
+      "observed_action": "ALLOW",
+      "status": "PASS"
+    },
+    {
+      "case_id": "timeout-not-completion",
+      "detail": "guard chain completed without rejection",
+      "expected_action": "ALLOW",
+      "guard": "TIMEOUT_UNKNOWN_DIMENSION",
+      "observed_action": "ALLOW",
+      "status": "PASS"
+    },
+    {
+      "case_id": "timeout-validated-claim",
+      "detail": "LiveStateDimensionsError: validated completion requires no reconciliation blocker",
+      "expected_action": "REJECT",
+      "guard": "TIMEOUT_RECONCILIATION_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "inference-marker-false-observed",
+      "detail": "InferenceObservationEventError: OBSERVED inference status requires marker_observed=true",
+      "expected_action": "REJECT",
+      "guard": "INFERENCE_MARKER_INVARIANT",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "failure-forensics-specific-class",
+      "detail": "guard chain completed without rejection",
+      "expected_action": "ALLOW",
+      "guard": "FAILURE_DIAGNOSTIC_CLASSIFICATION",
+      "observed_action": "ALLOW",
+      "status": "PASS"
+    },
+    {
+      "case_id": "failure-forensics-private-text",
+      "detail": "FailureForensicsError: capsule.knowledge.known[0] contains private material",
+      "expected_action": "REJECT",
+      "guard": "FAILURE_REDACTION_GATE",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "spool-disposal-without-capsule",
+      "detail": "MatrixGuardError: FAILURE_FORENSICS_CAPSULE_REQUIRED_BEFORE_RAW_SPOOL_DISPOSAL",
+      "expected_action": "REJECT",
+      "guard": "FORENSICS_BEFORE_SPOOL_DISPOSAL",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "codex-policy-exclusion",
+      "detail": "MatrixGuardError: CODEX_SAME_FAMILY_RETRY_REJECTED",
+      "expected_action": "REJECT",
+      "guard": "NO_BLIND_SAME_FAMILY_RETRY",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "three-family-policy",
+      "detail": "MatrixGuardError: MAX_DISTINCT_EXECUTOR_FAMILIES_EXCEEDED",
+      "expected_action": "REJECT",
+      "guard": "MAX_TWO_EXECUTOR_FAMILIES",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "two-attempts-one-family",
+      "detail": "MatrixGuardError: MAX_ATTEMPTS_PER_FAMILY_EXCEEDED",
+      "expected_action": "REJECT",
+      "guard": "MAX_ONE_ATTEMPT_PER_FAMILY",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "post-validated-probe",
+      "detail": "MatrixGuardError: STOP_AFTER_FIRST_EXACT_BOUND_VALIDATED_COMPLETION",
+      "expected_action": "REJECT",
+      "guard": "STOP_AFTER_FIRST_VALIDATED_COMPLETION",
+      "observed_action": "REJECT",
+      "status": "PASS"
+    },
+    {
+      "case_id": "pre-process-inference-not-applicable",
+      "detail": "guard chain completed without rejection",
+      "expected_action": "ALLOW",
+      "guard": "PRE_PROCESS_DIMENSION",
+      "observed_action": "ALLOW",
+      "status": "PASS"
+    }
+  ],
+  "claim_ceiling": "Task141 repository-local adversarial semantic and live-policy evidence only; no live process was started by this matrix and no external truth, validated completion, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "live_processes_started": 0,
+  "negative_case_count": 17,
+  "positive_case_count": 5,
+  "schema_version": "ignition-141-step13-adversarial-matrix-r1",
+  "status": "PASS",
+  "task_id": "IGNITION-20260826-141"
+}
