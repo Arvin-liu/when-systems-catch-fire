@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/live-state-dimensions-r1.schema.json",
+  "title": "Pointfire live state dimensions R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "live_dispatch_observation_status",
+    "live_process_observation_status",
+    "inference_observation_status",
+    "validated_completion_status",
+    "reconciliation_blocker_status",
+    "next_eligible_action"
+  ],
+  "properties": {
+    "schema_version": {"const": "live-state-dimensions-r1"},
+    "live_dispatch_observation_status": {"enum": ["OBSERVED", "NOT_OBSERVED", "UNKNOWN"]},
+    "live_process_observation_status": {"enum": ["OBSERVED", "NOT_OBSERVED", "UNKNOWN"]},
+    "inference_observation_status": {"enum": ["OBSERVED", "NOT_OBSERVED", "UNKNOWN", "NOT_APPLICABLE_PRE_PROCESS"]},
+    "validated_completion_status": {"enum": ["VALIDATED", "NOT_VALIDATED", "UNKNOWN"]},
+    "reconciliation_blocker_status": {"enum": ["NONE", "OPEN", "UNKNOWN"]},
+    "next_eligible_action": {"enum": ["RECONCILE_UNRECOVERED_ATTEMPTS", "RUN_DYNAMIC_EXECUTOR_ADMISSION", "REPAIR_EXECUTOR_CONTRACT", "STOP_LIVE_INVOCATION", "NO_ACTION", "UNKNOWN"]}
+  }
+}
