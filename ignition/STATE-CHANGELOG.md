@@ -13,7 +13,7 @@
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=96; visible_nodes=84; visible_edges=89`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260827-142` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `0639dd9412d0590e6cc4c6702d70e0e18854fb6a894cb9e4ae2a1c3e5544953e`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `8b96e55827fc24660a425aed0f4fd245b55d3e209ec5f1790af489c152073d81`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 

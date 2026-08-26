@@ -252,7 +252,7 @@
     },
     {
       "path": "ignition/data/operations/open-obligation-registry-r1.json",
-      "sha256": "d8b3d39eff308125822e6c26d249165fb02fd51548db89b200825616aab16a9b"
+      "sha256": "74dfc107700199c3d54f9c050c6f8aa291aa533124cc990c682e4213251b1d49"
     },
     {
       "path": "ignition/data/operations/project-components.json",
@@ -304,7 +304,7 @@
     },
     {
       "path": "ignition/schemas/operations/open-obligation-registry-r1.schema.json",
-      "sha256": "effc8777a2734c11ef1032ee2a3371964ff2bff39ced768144ffcdab7b8edcdc"
+      "sha256": "fb139262cefbb6dc50e730db1f706b6cdaa22685561075bf3342e664e5c42600"
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
@@ -328,7 +328,7 @@
     },
     {
       "path": "ignition/tools/validate_open_obligation_registry.py",
-      "sha256": "274afe6b6939090662ebc8e668950795f1ae78087379fffe62589f6c52d49ec9"
+      "sha256": "cb545197ba9195b802830045b60a6864a8d8ee67259c136e871099d303d77e30"
     }
   ]
 }

@@ -4,13 +4,14 @@
   "title": "Ignition independent open-obligation registry",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "contract_id", "authority", "current_task_id", "obligations", "claim_ceiling"],
+  "required": ["schema_version", "contract_id", "authority", "current_task_id", "obligations", "last_adjudication", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "open-obligation-registry-r1"},
     "contract_id": {"const": "OBLIGATION_CARRY_FORWARD_WITHOUT_TASK_LIVENESS"},
     "authority": {"const": "OPEN_OBLIGATION_REGISTRY"},
     "current_task_id": {"type": "string", "pattern": "^IGNITION-[0-9]{8}-[0-9]{3}$"},
     "obligations": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/obligation"}},
+    "last_adjudication": {"$ref": "#/$defs/adjudication"},
     "claim_ceiling": {"$ref": "#/$defs/nonblank"}
   },
   "$defs": {
@@ -31,6 +32,22 @@
         "inherited_by_task": {"$ref": "#/$defs/taskId"},
         "carry_forward_tasks": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/taskId"}, "uniqueItems": true},
         "terminal_condition": {"$ref": "#/$defs/nonblank"},
+        "evidence_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
+      }
+    },
+    "adjudication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "decision", "previous_status", "current_status", "validated_completion_count", "live_attempt_started", "new_obligation_ids", "reason", "evidence_refs"],
+      "properties": {
+        "task_id": {"$ref": "#/$defs/taskId"},
+        "decision": {"enum": ["OPEN_RETAINED", "CLOSED_WITH_NEW_OBLIGATIONS"]},
+        "previous_status": {"enum": ["OPEN", "CLOSED"]},
+        "current_status": {"enum": ["OPEN", "CLOSED"]},
+        "validated_completion_count": {"type": "integer", "minimum": 0},
+        "live_attempt_started": {"type": "boolean"},
+        "new_obligation_ids": {"type": "array", "items": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]+$"}, "uniqueItems": true},
+        "reason": {"$ref": "#/$defs/nonblank"},
         "evidence_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
       }
     }

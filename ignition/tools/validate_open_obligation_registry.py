@@ -37,6 +37,13 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     lineage = load_json(LINEAGE_PATH)
     if registry["current_task_id"] != lineage["current_task"]["task_id"]:
         errors.append("obligation registry current_task_id differs from current task lineage")
+    adjudication = registry["last_adjudication"]
+    if adjudication["task_id"] != registry["current_task_id"]:
+        errors.append("last obligation adjudication is not bound to the current task")
+    if adjudication["current_status"] == "OPEN" and adjudication["decision"] != "OPEN_RETAINED":
+        errors.append("an open obligation adjudication must be OPEN_RETAINED")
+    if adjudication["current_status"] == "CLOSED" and adjudication["decision"] != "CLOSED_WITH_NEW_OBLIGATIONS":
+        errors.append("a closed obligation adjudication must declare its successor decision")
     ids = [row["obligation_id"] for row in registry["obligations"]]
     if len(ids) != len(set(ids)):
         errors.append("obligation registry contains duplicate obligation ids")
