@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "阶段过渡不可逆标记函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-19E160B277A8A803 / title: "阶段过渡不可逆标记函数" / IMPLICIT-19E160B277A8A803
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "阶段过渡滞后函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-47858CA2D846C93E / title: "阶段过渡滞后函数" / IMPLICIT-47858CA2D846C93E
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "阶段过渡锐度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6E2115EDA41BA2B6 / title: "阶段过渡锐度函数" / IMPLICIT-6E2115EDA41BA2B6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "阶级背叛函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5938768A0B9134B3 / title: "阶级背叛函数" / IMPLICIT-5938768A0B9134B3
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "集中性-序参量映射修正函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7E4DFEE2D84F9CC4 / title: "集中性-序参量映射修正函数" / IMPLICIT-7E4DFEE2D84F9CC4
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "集中性-序参量统一函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-79C8BDAF500B79BC / title: "集中性-序参量统一函数" / IMPLICIT-79C8BDAF500B79BC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "集中性-序参量统一函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-934d970a6519802e / title: "集中性-序参量统一函数"
@@ -2472,35 +2502,5 @@
 - [Within the source-defined scope, 良性循环启动阈值函数 is adjudicated as STATE_TRANSITION: 良性循环启动条件：降低p_max的速率β>α·\(n-1\)/n（其他pᵢ自然增长速](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D264 / Within the source-defined scope, 良性循环启动阈值函数 is adjudicated as STATE_TRANSITION: 良性循环启动条件：降低p_max的速率β>α·\(n-1\)/n（其他pᵢ自然增长速
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 良性循环收敛速度函数 is adjudicated as STATE_TRANSITION: M14良性循环收敛速度由反馈增益K∝\|∂g_eff/∂p_max\|·∂p*/∂g](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D274 / Within the source-defined scope, 良性循环收敛速度函数 is adjudicated as STATE_TRANSITION: M14良性循环收敛速度由反馈增益K∝\|∂g_eff/∂p_max\|·∂p*/∂g
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 良性循环逃逸速度函数 is adjudicated as STATE_TRANSITION: M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D289 / Within the source-defined scope, 良性循环逃逸速度函数 is adjudicated as STATE_TRANSITION: M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D279；被引用：—
-- [Within the source-defined scope, 衰减率干预函数 is adjudicated as STATE_TRANSITION: 衰减率干预，锁定强度、退出成本的平衡。. This is a model-intern](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D31 / Within the source-defined scope, 衰减率干预函数 is adjudicated as STATE_TRANSITION: 衰减率干预，锁定强度、退出成本的平衡。. This is a model-intern
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 解码门槛降低 is adjudicated as METRIC: 解码门槛降低，θ_decode^effective = θ_decode^base × \(1-η_struc](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D92 / Within the source-defined scope, 解码门槛降低 is adjudicated as METRIC: 解码门槛降低，θ_decode^effective = θ_decode^base × \(1-η_struc
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 解码门槛降低 is adjudicated as METRIC: 解码门槛降低，结构性改善优于参数性改善。. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D151 / Within the source-defined scope, 解码门槛降低 is adjudicated as METRIC: 解码门槛降低，结构性改善优于参数性改善。. This is a model-internal control
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 解读偏置函数\(核心疑问→错误解读的数学结构\) is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-in](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D57 / Within the source-defined scope, 解读偏置函数\(核心疑问→错误解读的数学结构\) is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-in
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [f₁=15%（与原始案例框架相似度，≤30% 通过）、f₁=3%（与已有验证报告重复度，≤5% 通过）、f₄=1.0（与点火框架收敛度，≥1 通过）；J⁺=1,J⁻=0。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-2c501e1b5fdcdb99 / f₁=15%（与原始案例框架相似度，≤30% 通过）、f₁=3%（与已有验证报告重复度，≤5% 通过）、f₄=1.0（与点火框架收敛度，≥1 通过）；J⁺=1,J⁻=0。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：—；被引用：—
+- [G22 边界/反例：semi_automatic → 需边界案例或证据。](../../../canonical/docs/gate-semantics.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-cce981c29351259d / G22 边界/反例：semi_automatic → 需边界案例或证据。
+  - 来源：`canonical/docs/gate-semantics.md`
+  - 依赖：—；被引用：—
 - [g\["status"\] in \["EVIDENCE_ACCUMULATING", "POSSIBLE_FIELD_ENHANCEMENT",](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-6c9c4c4c51b549e2 / g\["status"\] in \["EVIDENCE_ACCUMULATING", "POSSIBLE_FIELD_ENHANCEMENT",
@@ -2314,6 +2324,11 @@
   - 可搜索名称：NFC-ab4b0e94e18dab60 / next_read: read `data/operations/iterations/137/execution-contract-r1.json`, the Step 09/10 live attempt and validation
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [next_read: read the final Task142 machine receipt and independent 1111 publication witness for exact SHA, remote-ref and](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d9ed53f761eef2b8 / next_read: read the final Task142 machine receipt and independent 1111 publication witness for exact SHA, remote-ref and
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [next_read: 先读\[首页\]\(../.github/README.md\)、\[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[唯一完](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-0430b2c6ee1fbccf / next_read: 先读\[首页\]\(../.github/README.md\)、\[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[唯一完
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b2c39bb272f4a26d / nothing about real user data, external truth, production readiness, or Goal
   - 来源：`reports/operations/ignition-137-step05-synthetic-readonly-fixture.md`
-  - 依赖：—；被引用：—
-- [NotIdentifiable --> AtomicOrIdentified: new identity evidence](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a99b98562260d02a / NotIdentifiable --> AtomicOrIdentified: new identity evidence
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [Obligation dependencies are acyclic and never imply truth inheritance.](../../../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6a9949d11c390aed / Obligation dependencies are acyclic and never imply truth inheritance.
-  - 来源：`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`
-  - 依赖：—；被引用：—
-- [obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN`; the six historical attempts still yield zero valida](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b60e5e84e35a6f3f / obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN`; the six historical attempts still yield zero valida
-  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

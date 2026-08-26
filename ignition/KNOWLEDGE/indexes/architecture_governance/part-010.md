@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| STRICT_ISOMORPHISM \| 必须有结构、双射、保持运算、双向验证 \|](../../../docs/foundation/architecture-structure-freeze-v1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e44d556cf71439f1 / \| STRICT_ISOMORPHISM \| 必须有结构、双射、保持运算、双向验证 \|
+  - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
+  - 依赖：—；被引用：—
+- [\| T15 \| 乘法临界漂移统一 \| C-169 财富域 \| C-334 关系衰减 \| 待验证 \| 待验证 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b60bf8660c1b900b / \| T15 \| 乘法临界漂移统一 \| C-169 财富域 \| C-334 关系衰减 \| 待验证 \| 待验证 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：T15；被引用：—
+- [\| T18 evidence \| EMPIRICAL_EVIDENCE_AVAILABLE \| NO_EMPIRICAL_EVIDENCE \|](../../../reports/foundation-architecture/085-architecture-structure-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fc18c3b62490a703 / \| T18 evidence \| EMPIRICAL_EVIDENCE_AVAILABLE \| NO_EMPIRICAL_EVIDENCE \|
+  - 来源：`reports/foundation-architecture/085-architecture-structure-freeze.md`
+  - 依赖：T18；被引用：—
+- [\| theme synthesis \| result-unit candidate \| `LOCAL CLAIMS → SANITIZE/PROJECT` \| aggregation must not widen any local cei](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3173c19de9277855 / \| theme synthesis \| result-unit candidate \| `LOCAL CLAIMS → SANITIZE/PROJECT` \| aggregation must not widen any local cei
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [\| Unclear rights \| imported exports, generated content with uncertain source, legacy material with incomplete attributio](../../../docs/governance/licensing-rights-inventory.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b9325a8853ffee2d / \| Unclear rights \| imported exports, generated content with uncertain source, legacy material with incomplete attributio
+  - 来源：`docs/governance/licensing-rights-inventory.md`
+  - 依赖：—；被引用：—
+- [\| UNRESOLVED_HIGH_RISK \| 11 \| 5.4% \|](../../../reports/foundation-architecture/082-independent-acceptance-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ee746938324709c8 / \| UNRESOLVED_HIGH_RISK \| 11 \| 5.4% \|
+  - 来源：`reports/foundation-architecture/082-independent-acceptance-audit.md`
+  - 依赖：—；被引用：—
 - [\| Validated completions \| `0` \|](../../../reports/operations/ignition-139-step06-live-current-projection.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-52efc329a32622ef / \| Validated completions \| `0` \|
@@ -2472,35 +2502,5 @@
 - [任务 110 将 planner 的完成状态与 Evidence Program 生命周期连接起来：任务 109 的](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-65875732268d93c8 / 任务 110 将 planner 的完成状态与 Evidence Program 生命周期连接起来：任务 109 的
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [任务 111 先冻结 `case_failures/` 的三项原始分类，再分别审计外部证据、可执行 target、](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-fe4146af84f93d5f / 任务 111 先冻结 `case_failures/` 的三项原始分类，再分别审计外部证据、可执行 target、
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [任务 111 对 `case_failures/` 的三项原始 `IMPLEMENTATION_DEFECT` 分类做证据门禁，而不把](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ccf5acb437d0db1e / 任务 111 对 `case_failures/` 的三项原始 `IMPLEMENTATION_DEFECT` 分类做证据门禁，而不把
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [任务 111 建立了 fail-closed evidence gate：只有版本化 repository executable、冻结](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-7558cb060f3a6557 / 任务 111 建立了 fail-closed evidence gate：只有版本化 repository executable、冻结
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [任务 111 的 evidence gate 只有在 repository executable、冻结 commit、精确输入/输出、](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d5dc7bbcac14d010 / 任务 111 的 evidence gate 只有在 repository executable、冻结 commit、精确输入/输出、
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [任务 111（失败案例证据门禁与苹果案例裁定）](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-8c8fa0c87ea277ed / 任务 111（失败案例证据门禁与苹果案例裁定）
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [任务 112 把既有百轮材料整理为可连续阅读的前台成果，而不是继续扩张模块。入口是\[成果书架\]\(../PUBLICATIONS/README.md\)，其下可直接到达\[一页全景\]\(../PUBLICATIONS/what-pointfire-](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-59e585cde03cb863 / 任务 112 把既有百轮材料整理为可连续阅读的前台成果，而不是继续扩张模块。入口是\[成果书架\]\(../PUBLICATIONS/README.md\)，其下可直接到达\[一页全景\]\(../PUBLICATIONS/what-pointfire-
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—

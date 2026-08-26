@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [NotIdentifiable --> AtomicOrIdentified: new identity evidence](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a99b98562260d02a / NotIdentifiable --> AtomicOrIdentified: new identity evidence
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [Obligation dependencies are acyclic and never imply truth inheritance.](../../../docs/architecture/reos-vnext-minimal-kernel-r1-contract.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6a9949d11c390aed / Obligation dependencies are acyclic and never imply truth inheritance.
+  - 来源：`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`
+  - 依赖：—；被引用：—
+- [obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN`; the six historical attempts still yield zero valida](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b60e5e84e35a6f3f / obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN`; the six historical attempts still yield zero valida
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [obligations: `LIVE_EXTERNAL_INVOCATION` is carried forward in the independent obligation registry with status `OPEN`, bl](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-880f92136fb43e9e / obligations: `LIVE_EXTERNAL_INVOCATION` is carried forward in the independent obligation registry with status `OPEN`, bl
@@ -27,6 +42,11 @@
 - [obligations: historical propagation records 104–106 remain append-only `REQUIRES_REVIEW` residuals and were not rewritte](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c72f992429cc64f1 / obligations: historical propagation records 104–106 remain append-only `REQUIRES_REVIEW` residuals and were not rewritte
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [obligations: preserve the independent open obligation and, only when a fresh executor is actually admitted, perform at m](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-81853a05c70e18a1 / obligations: preserve the independent open obligation and, only when a fresh executor is actually admitted, perform at m
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [obligations: tuple\[Mapping\[str, Any\], ...\] = field\(default_factory=tuple\)](../../../reos_vnext/contract.py)
@@ -2124,9 +2144,19 @@
   - 可搜索名称：NFC-6b9e466a47b4b8ae / stale_knowledge: the historical Task138 prose that treated the second invocation as forbidden remains immutable historic
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [stale_knowledge: the initial Task142 candidate regression exposed stale generated/identity bindings and was repaired wit](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5b0249d0ce854968 / stale_knowledge: the initial Task142 candidate regression exposed stale generated/identity bindings and was repaired wit
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [stale_knowledge: the old Task138 statement that the second invocation was forbidden is historical Task138 knowledge only](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3897a09063689779 / stale_knowledge: the old Task138 statement that the second invocation was forbidden is historical Task138 knowledge only
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [stale_knowledge: the prior Task141 `IN_PROGRESS` rendering was a current-state coupling defect, not evidence that Task14](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7ab94b3bb77a5f48 / stale_knowledge: the prior Task141 `IN_PROGRESS` rendering was a current-state coupling defect, not evidence that Task14
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [stale_knowledge: the Task 129 architecture-changing projection and all earlier Task 126/127/128/129 entries remain prove](../../../STATE-CHANGELOG.md)
@@ -2473,34 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-88082b542376389b / TA-LoRA full-text review: low-rank prompt factorization, fast-slow source training, supervised target-factor adaptation,
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [TA-LoRA is a prompt-tuning method: it factorizes adaptable prompt representations, not the frozen model's weight deltas](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-807f0ed7576ee702 / TA-LoRA is a prompt-tuning method: it factorizes adaptable prompt representations, not the frozen model's weight deltas
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure](../../ASSET-CARDS.md#asset-hr-3785d4850d94b77e)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure / 100-nonfunction-claim-evidence-lineage-closure
-  - 来源：`reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md`
-  - 依赖：—；被引用：—
-- [Task 103 证据试点产生的开放问题](../../../RESULTS/OPEN-QUESTIONS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4a890abf400eb7bb / Task 103 证据试点产生的开放问题
-  - 来源：`RESULTS/OPEN-QUESTIONS.md`
-  - 依赖：—；被引用：—
-- [Task 110：完成状态 reconciliation 与独立元数据复制](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c99a568c46c12340 / Task 110：完成状态 reconciliation 与独立元数据复制
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [Task 111 failure-case evidence gate](../../../evidence-program/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-cfe7dc64dfe0effa / Task 111 failure-case evidence gate
-  - 来源：`evidence-program/README.md`
-  - 依赖：—；被引用：—
-- [Task 111：失败案例证据门禁与真实缺陷复现试点](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-161f04cf9dc69047 / Task 111：失败案例证据门禁与真实缺陷复现试点
-  - 来源：`ITERATION.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [g_eff-p-正反馈函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D258 / g_eff-p-正反馈函数 / D258
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D270；被引用：D259, CLAIM-D259, NFC-0010dc88926c1b40, NFC-1af659d0058d7b85
+- [g_eff下降导致p*下降（因为耦合减弱→容斥更早接管），p*下降导致更早进入容斥主导→p分布更分散→g_eff进一步下降。形成自加速正反馈：g_eff↓→p*↓→容斥更早接管→g_eff↓↓。系统一旦开始衰退就加速衰退——不只是pᵢ在增大](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9cd2c416056f5ecb / g_eff下降导致p*下降（因为耦合减弱→容斥更早接管），p*下降导致更早进入容斥主导→p分布更分散→g_eff进一步下降。形成自加速正反馈：g_eff↓→p*↓→容斥更早接管→g_eff↓↓。系统一旦开始衰退就加速衰退——不只是pᵢ在增大
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [g_eff有限时间崩溃函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D288 / g_eff有限时间崩溃函数 / D288
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D360；被引用：CLAIM-D346, NFC-4e3256479cc3acc8, NFC-6b581909a238c8c6, NFC-73df962921ff21da
+- [G_δ 哥德尔不完备性判定 → 公理系统的结构性不完备性](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3f9d7b25a255b7e9 / G_δ 哥德尔不完备性判定 → 公理系统的结构性不完备性
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [G_δ 哥德尔不完备性判定 → 绝对完备统一的结构性边界（非物理学 no-go theorem）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-00ef70998b18efa8 / G_δ 哥德尔不完备性判定 → 绝对完备统一的结构性边界（非物理学 no-go theorem）
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-684d0f0a36c252d4 / If upstream objects D_{T17} exist, compose F_{T17}=N\(⊕_{g∈D_{T17}} g\); otherwise treat F_{T17} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T17；被引用：—
-- [If upstream objects D_{T18} exist, compose F_{T18}=N\(⊕_{g∈D_{T18}} g\); otherwise treat F_{T18} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5dd26636b6e196e1 / If upstream objects D_{T18} exist, compose F_{T18}=N\(⊕_{g∈D_{T18}} g\); otherwise treat F_{T18} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T18；被引用：—
-- [If upstream objects D_{T19} exist, compose F_{T19}=N\(⊕_{g∈D_{T19}} g\); otherwise treat F_{T19} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fc229d7023573f93 / If upstream objects D_{T19} exist, compose F_{T19}=N\(⊕_{g∈D_{T19}} g\); otherwise treat F_{T19} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T19；被引用：—
-- [If upstream objects D_{T1} exist, compose F_{T1}=N\(⊕_{g∈D_{T1}} g\); otherwise treat F_{T1} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-eba4cda81c7a677f / If upstream objects D_{T1} exist, compose F_{T1}=N\(⊕_{g∈D_{T1}} g\); otherwise treat F_{T1} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T1；被引用：—
-- [If upstream objects D_{T21} exist, compose F_{T21}=N\(⊕_{g∈D_{T21}} g\); otherwise treat F_{T21} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-228ec595baf3c792 / If upstream objects D_{T21} exist, compose F_{T21}=N\(⊕_{g∈D_{T21}} g\); otherwise treat F_{T21} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T21；被引用：—

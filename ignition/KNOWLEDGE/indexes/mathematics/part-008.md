@@ -6,6 +6,36 @@
 
 - [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4ACADE5485EF8EE8 / title: "三重死亡与执念逃避函数族" / IMPLICIT-4ACADE5485EF8EE8 / IMPLICIT-14198B49A125D810
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5F81A886F31D44D4 / title: "三重死亡与执念逃避函数族" / IMPLICIT-5F81A886F31D44D4 / IMPLICIT-14198B49A125D810
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8794F91F4C3EA2B7 / title: "三重死亡与执念逃避函数族" / IMPLICIT-8794F91F4C3EA2B7 / IMPLICIT-14198B49A125D810
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AF6AA8D88C9AD3B8 / title: "三重死亡与执念逃避函数族" / IMPLICIT-AF6AA8D88C9AD3B8 / IMPLICIT-14198B49A125D810
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D8F87E0415BEF356 / title: "三重死亡与执念逃避函数族" / IMPLICIT-D8F87E0415BEF356 / IMPLICIT-14198B49A125D810
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DFD418877E4A4F29 / title: "三重死亡与执念逃避函数族" / IMPLICIT-DFD418877E4A4F29 / IMPLICIT-14198B49A125D810
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F781F257879860C8 / title: "三重死亡与执念逃避函数族" / IMPLICIT-F781F257879860C8 / IMPLICIT-14198B49A125D810
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
@@ -2472,35 +2502,5 @@
 - [title: "阶段宽度竞争函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-92B383A6433DA4F5 / title: "阶段宽度竞争函数" / IMPLICIT-92B383A6433DA4F5
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "阶段过渡不可逆标记函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-19E160B277A8A803 / title: "阶段过渡不可逆标记函数" / IMPLICIT-19E160B277A8A803
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "阶段过渡滞后函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-47858CA2D846C93E / title: "阶段过渡滞后函数" / IMPLICIT-47858CA2D846C93E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "阶段过渡锐度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6E2115EDA41BA2B6 / title: "阶段过渡锐度函数" / IMPLICIT-6E2115EDA41BA2B6
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "阶级背叛函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5938768A0B9134B3 / title: "阶级背叛函数" / IMPLICIT-5938768A0B9134B3
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "集中性-序参量映射修正函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7E4DFEE2D84F9CC4 / title: "集中性-序参量映射修正函数" / IMPLICIT-7E4DFEE2D84F9CC4
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "集中性-序参量统一函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-79C8BDAF500B79BC / title: "集中性-序参量统一函数" / IMPLICIT-79C8BDAF500B79BC
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

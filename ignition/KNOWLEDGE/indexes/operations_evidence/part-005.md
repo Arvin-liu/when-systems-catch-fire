@@ -6,6 +6,11 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5085634802 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5085634802 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5087538878 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5087538878 / A5001316926
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
   - 依赖：—；被引用：—
@@ -2364,6 +2369,11 @@
   - 可搜索名称：NFC-434fbb2c61bdc374 / stale_knowledge: Task140 raw receipt, ledger hash chain, old R2 projection and historical Current prose remain immutable
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [stale_knowledge: Task141's historical terminality and six-attempt projection are preserved; the older `IN_PROGRESS` surf](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c0ceb387ecfbcc2e / stale_knowledge: Task141's historical terminality and six-attempt projection are preserved; the older `IN_PROGRESS` surf
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Step 10's actionable current failures were deterministic projection drift, not permission to enlarge a residual. The nat](../../../reports/operations/ignition-134-step11-current-projection-closure.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1303c8b2c0f5364b / Step 10's actionable current failures were deterministic projection drift, not permission to enlarge a residual. The nat
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-99659a72ca025a6b / The terminal Task134 candidate keeps the residual ledger bounded and makes the Current projections decidable.
   - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
-  - 依赖：—；被引用：—
-- [the visible projection is `80` nodes and `83` typed edges.](../../../reports/operations/ignition-126-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f39f549213f5713b / the visible projection is `80` nodes and `83` typed edges.
-  - 来源：`reports/operations/ignition-126-progress.md`
-  - 依赖：—；被引用：—
-- [This exposed and closed a genuine projection cycle: materiality bookkeeping names Current Surface sources, while Current](../../../reports/operations/ignition-134-step11-current-projection-closure.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f9fbca0919e86506 / This exposed and closed a genuine projection cycle: materiality bookkeeping names Current Surface sources, while Current
-  - 来源：`reports/operations/ignition-134-step11-current-projection-closure.md`
   - 依赖：—；被引用：—

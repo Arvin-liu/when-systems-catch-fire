@@ -89,8 +89,8 @@
     "foundation": {
       "function_identity_cards": 6026,
       "function_quarantine_or_pending": 4874,
-      "nonfunction_claims": 17454,
-      "nonfunction_quarantine_or_pending": 4938
+      "nonfunction_claims": 17468,
+      "nonfunction_quarantine_or_pending": 4939
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -129,7 +129,7 @@
       "cards": 414,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 23812
+      "search_records": 23826
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -201,7 +201,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "9d9706089615dc7e9382fda7abe41d6b2d50d2d50c2b3548954d0da542ebcbfa"
+      "sha256": "241753379be2b383b80b01a9cd6d2f4625ea2342b738942a9ffefccecb15a6ae"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -213,7 +213,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "fabfef9f3afb1807c0de57ec0004302ef5513c7933a137cc16892230fbc0ebea"
+      "sha256": "bf8d40d951790a6499901fb9b5caa5b9f0102a68fe71ccfacd7b9762372f8d58"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -261,7 +261,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "578f47857a34001e24d119ff27bc14a8fd6da79c599ff7b3918ffbabd4222d38"
+      "sha256": "9add55944e807109a853fc828269522712e44e1b1807f47c60577dcc52a052c6"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",
@@ -273,7 +273,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "f8b19135569bc65b14a96cea4f0de337647f3f2996e382e5be9468c021cf019a"
+      "sha256": "244602c1e19c712a6ee94627751b718d583f306e5cd9514bba5a7fb44022d370"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

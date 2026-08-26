@@ -2434,6 +2434,16 @@
   - 可搜索名称：NFC-619066387ab384c0 / authority_changes: \[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[函数资产\]\(./docs/human/funct
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: formal Task Lifecycle, Open Obligation Registry and Executor Admission remain repository-local bounde](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-edc6ae0c0a101b95 / authority_changes: formal Task Lifecycle, Open Obligation Registry and Executor Admission remain repository-local bounde
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [authority_changes: Task142 adds independent formal-task lifecycle and open-obligation authorities; it grants no Owner, p](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7fb57951c41f3190 / authority_changes: Task142 adds independent formal-task lifecycle and open-obligation authorities; it grants no Owner, p
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Automatic discovery can propose a record, but cannot assign authoritative truth, proof, evidence or novelty status.](../../../docs/foundation/future-claim-admission-protocol.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-fedb396c6063c21f / Automatic discovery can propose a record, but cannot assign authoritative truth, proof, evidence or novelty status.
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f2fbd3a2f0c12ee9 / Boundary: this is not a complete cosmological network and does not claim to unify stellar physics, thermodynamics, and l
   - 来源：`data/architecture/multiscale-causal-fabric/examples/stellar-nucleosynthesis.md`
-  - 依赖：—；被引用：—
-- [Boundary: this is not a technical proof in quantum information theory. It is a repository safety example for preventing](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0719069b163d9e38 / Boundary: this is not a technical proof in quantum information theory. It is a repository safety example for preventing
-  - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.md`
-  - 依赖：—；被引用：—
-- [Bošnjak et al. exact registered PMLR/ICML paper, all-10-page main plus all-8-page supplement visual review and complete](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-98d9285c3f97e670 / Bošnjak et al. exact registered PMLR/ICML paper, all-10-page main plus all-8-page supplement visual review and complete
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—

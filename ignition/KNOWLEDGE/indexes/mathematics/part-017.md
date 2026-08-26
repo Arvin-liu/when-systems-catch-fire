@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [是否覆盖主要证据制度领域：是（13 个领域：数学、物理、历史、社会科学、经济、工程、医学、法律、文学、艺术、教育、AI、计算机）](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-eb923ea646a07c75 / 是否覆盖主要证据制度领域：是（13 个领域：数学、物理、历史、社会科学、经济、工程、医学、法律、文学、艺术、教育、AI、计算机）
+  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
+  - 依赖：—；被引用：—
+- [是（适合作为结构性分析的样本，不适合作为"已证明"的样本）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a9010c4dc10021b5 / 是（适合作为结构性分析的样本，不适合作为"已证明"的样本）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [是（适合作为结构性分析的样本，不适合作为"已证明因果"的样本）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-273a39dc42fb11c1 / 是（适合作为结构性分析的样本，不适合作为"已证明因果"的样本）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [是（适合作为结构性推论的样本，不适合作为“已证明成立”或“审美判断客观”的样本）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c21bfd43404f31af / 是（适合作为结构性推论的样本，不适合作为“已证明成立”或“审美判断客观”的样本）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [显式记录生命周期状态、发布状态、结果类型、完成项、未完成项、claim ceiling、限制和阻断；](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6b87a85e0920cee9 / 显式记录生命周期状态、发布状态、结果类型、完成项、未完成项、claim ceiling、限制和阻断；
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
+- [显态粘性函数](../../../analysis/corpus-relation/cluster_source_briefs/C006.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D173 / 显态粘性函数 / D173
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C006.md`
+  - 依赖：D180, D91；被引用：NFC-00014d440f9edb9b, NFC-104354d72f921837, NFC-17930fe535861fe7, NFC-1c80bad39e38d06b
 - [显态粘性函数,μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成本R_retreat和退出成本C_exit的比值决定。R_retreat越大或C_exit越小,显态粘性越高,系统越难从显态退回隐态。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-76e3a2c21e05935b / 显态粘性函数,μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成本R_retreat和退出成本C_exit的比值决定。R_retreat越大或C_exit越小,显态粘性越高,系统越难从显态退回隐态。
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-13d69f2570ef7e83 / 已迁移的历史函数来源/0000-MF-0004-自举嵌套判定器.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [已迁移的历史函数来源/0000-MF-0005-自举收敛判定器.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cfb38a50c805f286 / 已迁移的历史函数来源/0000-MF-0005-自举收敛判定器.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b0ec72c406315b47 / 已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [已迁移的历史函数来源/0001-Ψ₀元统一律完整定义.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b0c3a03268b89789 / 已迁移的历史函数来源/0001-Ψ₀元统一律完整定义.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [已迁移的历史函数来源/0002-A1-I\(t,L\) 提议者意识.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-0e96d1c41ed34116 / 已迁移的历史函数来源/0002-A1-I\(t,L\) 提议者意识.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：A1；被引用：—
-- [已迁移的历史函数来源/0003-A2-提议者姿态的激进程度.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-36bb67f09cf7f417 / 已迁移的历史函数来源/0003-A2-提议者姿态的激进程度.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：A2；被引用：—
-- [已迁移的历史函数来源/0004-A3-R\(t,L,C\) 应约者退出权.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1188ecb30b0720df / 已迁移的历史函数来源/0004-A3-R\(t,L,C\) 应约者退出权.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：A3；被引用：—

@@ -8,8 +8,8 @@
 - Federation: `3` adapter inventory entries；live ceiling `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Live state dimensions: dispatch `OBSERVED`；process `OBSERVED`；inference `NOT_OBSERVED`；validated completion `NOT_VALIDATED`；reconciliation blocker `NONE`；next eligible action `RUN_DYNAMIC_EXECUTOR_ADMISSION`。
 - Live attempts: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
-- Foundation: function identity cards `6026`；function quarantine/pending `4874`；non-function claims `17454`；non-function quarantine/pending `4938`。
-- Knowledge Experience: cards `414`；changes `315`；layered readings `332`；search records `23812`；aliases `876`。
+- Foundation: function identity cards `6026`；function quarantine/pending `4874`；non-function claims `17468`；non-function quarantine/pending `4939`。
+- Knowledge Experience: cards `414`；changes `315`；layered readings `332`；search records `23826`；aliases `876`。
 - Fire Seeds: `64` seeds/clusters；`393` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`20` registered sync surfaces；`14` machine/human pairs。
 - Task lineage: current `IGNITION-20260827-142` `COMPLETED_WITH_OPEN_OBLIGATIONS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。

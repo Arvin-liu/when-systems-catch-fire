@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Boundary: this is not a technical proof in quantum information theory. It is a repository safety example for preventing](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0719069b163d9e38 / Boundary: this is not a technical proof in quantum information theory. It is a repository safety example for preventing
+  - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.md`
+  - 依赖：—；被引用：—
+- [Bošnjak et al. exact registered PMLR/ICML paper, all-10-page main plus all-8-page supplement visual review and complete](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-98d9285c3f97e670 / Bošnjak et al. exact registered PMLR/ICML paper, all-10-page main plus all-8-page supplement visual review and complete
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
 - [Branch:** `agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731`](../../../docs/foundation/task-107-incident-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-85a7b6430641f130 / Branch:** `agent/foundation-drift-repair-universal-preflight-propagation-ci-proof-r1-20260731`
@@ -1714,6 +1724,16 @@
   - 可搜索名称：NFC-6b5fd62d4da00a25 / delta: registered Durability / Lifecycle R3 as one current component inside the existing Ignition OS / driver spine; syn
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [delta: Steps 00–19 close the formal Task142 scope and publish the task's terminal lifecycle semantics; the separate obli](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1fcef1c3115bda60 / delta: Steps 00–19 close the formal Task142 scope and publish the task's terminal lifecycle semantics; the separate obli
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [delta: Task142 identifies the lifecycle bug in which an open long-lived validated-completion obligation kept the already](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-24f5892944c26b9f / delta: Task142 identifies the lifecycle bug in which an open long-lived validated-completion obligation kept the already
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [delta: terminalizes the Current Surface Compiler release candidate after single-source registry/snapshot compilation, ty](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cbab7cb13e50743a / delta: terminalizes the Current Surface Compiler release candidate after single-source registry/snapshot compilation, ty
@@ -2484,23 +2504,3 @@
   - 可搜索名称：D259 / g_eff-p-双向反馈函数 / D259
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D181, D211, D220, D258；被引用：CLAIM-D259, NFC-04ae107a279786cf, NFC-1af659d0058d7b85, NFC-46aaaaf0e5dca8e6
-- [g_eff-p-正反馈函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D258 / g_eff-p-正反馈函数 / D258
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D211, D220, D270；被引用：D259, CLAIM-D259, NFC-0010dc88926c1b40, NFC-1af659d0058d7b85
-- [g_eff下降导致p*下降（因为耦合减弱→容斥更早接管），p*下降导致更早进入容斥主导→p分布更分散→g_eff进一步下降。形成自加速正反馈：g_eff↓→p*↓→容斥更早接管→g_eff↓↓。系统一旦开始衰退就加速衰退——不只是pᵢ在增大](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9cd2c416056f5ecb / g_eff下降导致p*下降（因为耦合减弱→容斥更早接管），p*下降导致更早进入容斥主导→p分布更分散→g_eff进一步下降。形成自加速正反馈：g_eff↓→p*↓→容斥更早接管→g_eff↓↓。系统一旦开始衰退就加速衰退——不只是pᵢ在增大
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [g_eff有限时间崩溃函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D288 / g_eff有限时间崩溃函数 / D288
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D271, D360；被引用：CLAIM-D346, NFC-4e3256479cc3acc8, NFC-6b581909a238c8c6, NFC-73df962921ff21da
-- [G_δ 哥德尔不完备性判定 → 公理系统的结构性不完备性](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3f9d7b25a255b7e9 / G_δ 哥德尔不完备性判定 → 公理系统的结构性不完备性
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—

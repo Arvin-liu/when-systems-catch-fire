@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Current Facts, Current Snapshot and the seven compiler-owned Current Snapshot](../../../reports/operations/ignition-138-step12-current-state-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a25550c4c19ae767 / Current Facts, Current Snapshot and the seven compiler-owned Current Snapshot
+  - 来源：`reports/operations/ignition-138-step12-current-state-sync.md`
+  - 依赖：—；被引用：—
 - [Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections](../../ASSET-CARDS.md#asset-nfc-79e157390b0bf89a)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-79e157390b0bf89a / Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections / Current facts: data/architecture/current-facts.json and docs/architecture/current-facts.md are deterministic projections from canonical registries and manifests; they are navigation/current-facts evidence, not a second truth layer.
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-A942558ACA6DD91E / def begin_dispatch\(self\) -> LiveTransitionRecord: / IMPLICIT-A942558ACA6DD91E
   - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def build\(cls, **kwargs: Any\) -> "IndependentValidationReceipt":](../../../agent_federation/live_validation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E922CA1A5DA731BD / def build\(cls, **kwargs: Any\) -> "IndependentValidationReceipt": / IMPLICIT-E922CA1A5DA731BD
-  - 来源：`agent_federation/live_validation.py`
   - 依赖：—；被引用：—

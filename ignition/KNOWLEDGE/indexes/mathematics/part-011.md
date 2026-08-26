@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| D595 \| 函数内容/机制表达/关联函数族/来源/边界/pending \| 无 frontmatter、无收敛状态、无对应案例字段、无变量解释段 \| 表述口语化易读；边界段清晰 \| 一句话定义、变量解释、对应案例、版本记录 \| 无"机](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a84655eee1c6c43f / \| D595 \| 函数内容/机制表达/关联函数族/来源/边界/pending \| 无 frontmatter、无收敛状态、无对应案例字段、无变量解释段 \| 表述口语化易读；边界段清晰 \| 一句话定义、变量解释、对应案例、版本记录 \| 无"机
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：D595, D597, D599；被引用：—
+- [\| D595 \| 新变量「绑定→不可拒绝」 \| 挂 EXIT 族不重复 \| 不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-47fb2d59f379a91b / \| D595 \| 新变量「绑定→不可拒绝」 \| 挂 EXIT 族不重复 \| 不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：D595；被引用：—
+- [\| D596 \| 新结构「内部保留空间」 \| 挂 EXIT 族互补 \| 与退出权不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0c2ddddc6b79e106 / \| D596 \| 新结构「内部保留空间」 \| 挂 EXIT 族互补 \| 与退出权不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：D596；被引用：—
+- [\| D597 \| 机制表达+机制链+与D244边界+扩展注释 \| 结构最完整 \| 机制链清晰、边界明确、有扩展注释 \| 一句话定义、变量解释独立段、对应案例字段、版本记录 \| frontmatter 缺失；"机制表达"命名与旧"数学表达"不](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-212b7d5ab35420fe / \| D597 \| 机制表达+机制链+与D244边界+扩展注释 \| 结构最完整 \| 机制链清晰、边界明确、有扩展注释 \| 一句话定义、变量解释独立段、对应案例字段、版本记录 \| frontmatter 缺失；"机制表达"命名与旧"数学表达"不
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：D244, D597；被引用：—
+- [\| D601 \| A5/A8/A15 \| 角色占入口→能力附属→目标遮蔽→决策外移 \| 角色稳定+外部只按角色评 \| 角色外自我叙事 \| 角色与自我一致/多元/可逆 \| ✅ \| 异于 D245（数学门控 vs 社会遮蔽） \| 材料内成立 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b9e7235b90320f1e / \| D601 \| A5/A8/A15 \| 角色占入口→能力附属→目标遮蔽→决策外移 \| 角色稳定+外部只按角色评 \| 角色外自我叙事 \| 角色与自我一致/多元/可逆 \| ✅ \| 异于 D245（数学门控 vs 社会遮蔽） \| 材料内成立 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
+  - 依赖：A15, A5, A8, D245；被引用：—
+- [\| D67 \| 认知自主性函数 \| T9（自主意识函数） \| T9 保留，D67 降级为案例标签 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-ea7bb75a18e00d4c / \| D67 \| 认知自主性函数 \| T9（自主意识函数） \| T9 保留，D67 降级为案例标签 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D67, T9；被引用：—
 - [\| Field \| Meaning \| Source / derivation \| Authority and lifecycle \|](../../../docs/architecture/iteration-boundary-semantics-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-31059d92e85c955b / \| Field \| Meaning \| Source / derivation \| Authority and lifecycle \|
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-f602f75ec6fa9932 / 中文：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：\[D223\]\(docs/zh/functions/items/D223.md\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D223；被引用：—
-- [中文：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：\[D223\]\(docs/zh/functions/items/D223.…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-66a688f76db34157 / 中文：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：\[D223\]\(docs/zh/functions/items/D223.…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D223；被引用：—
-- [中文：宋莹芳×脱不花直播《用美育给人生加分》与点火框架碰撞验证。核心碰撞点：丰子恺家教理念"支持而非纠正"对应点火框架的遮蔽函数——当家长不断"纠正"孩子的所谓"问题"时，实际是在提高遮蔽度，压缩孩子的退出权和自主性；而"支持"则是降低遮蔽](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-30134844028cfdd8 / 中文：宋莹芳×脱不花直播《用美育给人生加分》与点火框架碰撞验证。核心碰撞点：丰子恺家教理念"支持而非纠正"对应点火框架的遮蔽函数——当家长不断"纠正"孩子的所谓"问题"时，实际是在提高遮蔽度，压缩孩子的退出权和自主性；而"支持"则是降低遮蔽
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：定投场景中的全局峰值可以被明确函数化表达；在多轮碰撞后，该案例额外产出 5 个可入表的新函数，证明 D34 在财富域具有可重复的推导能力。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8c3a5482714f679d / 中文：定投场景中的全局峰值可以被明确函数化表达；在多轮碰撞后，该案例额外产出 5 个可入表的新函数，证明 D34 在财富域具有可重复的推导能力。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D34；被引用：—
-- [中文：定投天然具备结构保守性，自动满足凯利公式下注要求。定投通过固定周期固定金额投资，在C_exit/H/ε/Rperceived/Δv五因子上同时取近最大值，是投资域Psustain全局最大值点。炒股或AI选股至少有一个因子归零（通常C_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7009bd424c9cc272 / 中文：定投天然具备结构保守性，自动满足凯利公式下注要求。定投通过固定周期固定金额投资，在C_exit/H/ε/Rperceived/Δv五因子上同时取近最大值，是投资域Psustain全局最大值点。炒股或AI选股至少有一个因子归零（通常C_
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：\[D85\]\(docs/zh/functions/items/D85.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c29aea4653e1285e / 中文：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：\[D85\]\(docs/zh/functions/items/D85.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D85；被引用：—
-- [中文：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：\[D85\]\(docs/zh/funct…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8ff192e6a876a58a / 中文：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：\[D85\]\(docs/zh/funct…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D85；被引用：—

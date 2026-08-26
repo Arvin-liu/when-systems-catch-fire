@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [任务 111 先冻结 `case_failures/` 的三项原始分类，再分别审计外部证据、可执行 target、](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-fe4146af84f93d5f / 任务 111 先冻结 `case_failures/` 的三项原始分类，再分别审计外部证据、可执行 target、
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [任务 111 对 `case_failures/` 的三项原始 `IMPLEMENTATION_DEFECT` 分类做证据门禁，而不把](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ccf5acb437d0db1e / 任务 111 对 `case_failures/` 的三项原始 `IMPLEMENTATION_DEFECT` 分类做证据门禁，而不把
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [任务 111 建立了 fail-closed evidence gate：只有版本化 repository executable、冻结](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-7558cb060f3a6557 / 任务 111 建立了 fail-closed evidence gate：只有版本化 repository executable、冻结
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [任务 111 的 evidence gate 只有在 repository executable、冻结 commit、精确输入/输出、](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d5dc7bbcac14d010 / 任务 111 的 evidence gate 只有在 repository executable、冻结 commit、精确输入/输出、
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [任务 111（失败案例证据门禁与苹果案例裁定）](../../../RESULTS/LATEST.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8c8fa0c87ea277ed / 任务 111（失败案例证据门禁与苹果案例裁定）
+  - 来源：`RESULTS/LATEST.md`
+  - 依赖：—；被引用：—
+- [任务 112 把既有百轮材料整理为可连续阅读的前台成果，而不是继续扩张模块。入口是\[成果书架\]\(../PUBLICATIONS/README.md\)，其下可直接到达\[一页全景\]\(../PUBLICATIONS/what-pointfire-](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-59e585cde03cb863 / 任务 112 把既有百轮材料整理为可连续阅读的前台成果，而不是继续扩张模块。入口是\[成果书架\]\(../PUBLICATIONS/README.md\)，其下可直接到达\[一页全景\]\(../PUBLICATIONS/what-pointfire-
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [任务 113 接受文本的 SHA-256 `8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4` 保持为历史事实。任务 114 发布的是新修订，不回填旧哈希，不改](../../../docs/language-thought/task-113-defect-before-after.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5036993630775281 / 任务 113 接受文本的 SHA-256 `8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4` 保持为历史事实。任务 114 发布的是新修订，不回填旧哈希，不改
@@ -2472,35 +2502,5 @@
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cdeaac5ad33b6d99 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4e13ef3c27dadab0 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(乘法-任一关键蛋白归零则死亡\),死亡后Shannon熵增但Fisher可达性=0\(信息](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-df92099ef2dd6838 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(乘法-任一关键蛋白归零则死亡\),死亡后Shannon熵增但Fisher可达性=0\(信息
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9d797f9b2cd37def / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(可区分状态减少\),但Fisher可达性=0\(调整路径被锁死\)。-明明知道问](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-695584351ef9130c / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(可区分状态减少\),但Fisher可达性=0\(调整路径被锁死\)。-明明知道问
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(记忆训练\)不增加A_Fisher\(清洗通道仍堵\),无效。增加可达性\(改善睡眠→](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ea1dd77197c2c0f8 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(记忆训练\)不增加A_Fisher\(清洗通道仍堵\),无效。增加可达性\(改善睡眠→
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a6c6959626fade76 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

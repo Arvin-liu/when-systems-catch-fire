@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 良性循环收敛速度函数 is adjudicated as STATE_TRANSITION: M14良性循环收敛速度由反馈增益K∝\|∂g_eff/∂p_max\|·∂p*/∂g](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D274 / Within the source-defined scope, 良性循环收敛速度函数 is adjudicated as STATE_TRANSITION: M14良性循环收敛速度由反馈增益K∝\|∂g_eff/∂p_max\|·∂p*/∂g
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 良性循环逃逸速度函数 is adjudicated as STATE_TRANSITION: M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D289 / Within the source-defined scope, 良性循环逃逸速度函数 is adjudicated as STATE_TRANSITION: M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D279；被引用：—
+- [Within the source-defined scope, 衰减率干预函数 is adjudicated as STATE_TRANSITION: 衰减率干预，锁定强度、退出成本的平衡。. This is a model-intern](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D31 / Within the source-defined scope, 衰减率干预函数 is adjudicated as STATE_TRANSITION: 衰减率干预，锁定强度、退出成本的平衡。. This is a model-intern
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 解码门槛降低 is adjudicated as METRIC: 解码门槛降低，θ_decode^effective = θ_decode^base × \(1-η_struc](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D92 / Within the source-defined scope, 解码门槛降低 is adjudicated as METRIC: 解码门槛降低，θ_decode^effective = θ_decode^base × \(1-η_struc
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 解码门槛降低 is adjudicated as METRIC: 解码门槛降低，结构性改善优于参数性改善。. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D151 / Within the source-defined scope, 解码门槛降低 is adjudicated as METRIC: 解码门槛降低，结构性改善优于参数性改善。. This is a model-internal control
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 解读偏置函数\(核心疑问→错误解读的数学结构\) is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-in](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D57 / Within the source-defined scope, 解读偏置函数\(核心疑问→错误解读的数学结构\) is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-in
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 认知-收益滞后函数 is adjudicated as MECHANISM_MODEL: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-in](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D126 / Within the source-defined scope, 认知-收益滞后函数 is adjudicated as MECHANISM_MODEL: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-in
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-e4788ce3da63da51 / \| D507 \| 退出权空间总函数 \| C-20 改革开放 \| C-53 晨星 \| C-170 七层主权 \| C-196 AI 自主意识 \|
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：D507；被引用：—
-- [\| D595 \| 函数内容/机制表达/关联函数族/来源/边界/pending \| 无 frontmatter、无收敛状态、无对应案例字段、无变量解释段 \| 表述口语化易读；边界段清晰 \| 一句话定义、变量解释、对应案例、版本记录 \| 无"机](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a84655eee1c6c43f / \| D595 \| 函数内容/机制表达/关联函数族/来源/边界/pending \| 无 frontmatter、无收敛状态、无对应案例字段、无变量解释段 \| 表述口语化易读；边界段清晰 \| 一句话定义、变量解释、对应案例、版本记录 \| 无"机
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：D595, D597, D599；被引用：—
-- [\| D595 \| 新变量「绑定→不可拒绝」 \| 挂 EXIT 族不重复 \| 不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-47fb2d59f379a91b / \| D595 \| 新变量「绑定→不可拒绝」 \| 挂 EXIT 族不重复 \| 不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：D595；被引用：—
-- [\| D596 \| 新结构「内部保留空间」 \| 挂 EXIT 族互补 \| 与退出权不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0c2ddddc6b79e106 / \| D596 \| 新结构「内部保留空间」 \| 挂 EXIT 族互补 \| 与退出权不同构 \| 机制函数 \| 单篇 pending \| 入函数表 \|
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：D596；被引用：—
-- [\| D597 \| 机制表达+机制链+与D244边界+扩展注释 \| 结构最完整 \| 机制链清晰、边界明确、有扩展注释 \| 一句话定义、变量解释独立段、对应案例字段、版本记录 \| frontmatter 缺失；"机制表达"命名与旧"数学表达"不](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-212b7d5ab35420fe / \| D597 \| 机制表达+机制链+与D244边界+扩展注释 \| 结构最完整 \| 机制链清晰、边界明确、有扩展注释 \| 一句话定义、变量解释独立段、对应案例字段、版本记录 \| frontmatter 缺失；"机制表达"命名与旧"数学表达"不
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：D244, D597；被引用：—
-- [\| D601 \| A5/A8/A15 \| 角色占入口→能力附属→目标遮蔽→决策外移 \| 角色稳定+外部只按角色评 \| 角色外自我叙事 \| 角色与自我一致/多元/可逆 \| ✅ \| 异于 D245（数学门控 vs 社会遮蔽） \| 材料内成立 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b9e7235b90320f1e / \| D601 \| A5/A8/A15 \| 角色占入口→能力附属→目标遮蔽→决策外移 \| 角色稳定+外部只按角色评 \| 角色外自我叙事 \| 角色与自我一致/多元/可逆 \| ✅ \| 异于 D245（数学门控 vs 社会遮蔽） \| 材料内成立 \|
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
-  - 依赖：A15, A5, A8, D245；被引用：—
-- [\| D67 \| 认知自主性函数 \| T9（自主意识函数） \| T9 保留，D67 降级为案例标签 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-ea7bb75a18e00d4c / \| D67 \| 认知自主性函数 \| T9（自主意识函数） \| T9 保留，D67 降级为案例标签 \|
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：D67, T9；被引用：—

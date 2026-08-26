@@ -1,8 +1,8 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 37,
-  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37],
+  "entry_count": 41,
+  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41],
   "historical_entry_count": 26,
   "legacy_profile_count": 6,
   "profiles": {
@@ -59,6 +59,10 @@
     {"ordinal": 34, "date": "2026-08-25", "label": "IGNITION-20260825-139 — terminal Current release candidate", "profile": "current-r1", "section_sha256": "4d9223e045a02021a215274cde7f43f054371af83b087c085f3a7286528e4f20"},
     {"ordinal": 35, "date": "2026-08-26", "label": "IGNITION-20260826-140 — Observation / Reconciliation Plane current architecture transition", "profile": "current-r1", "section_sha256": "06c915d1ecc1b761ae31dc04d9dfbabda8c5ba58ada42b73ec527c44ba882b9a"},
     {"ordinal": 36, "date": "2026-08-26", "label": "IGNITION-20260826-140 — terminal task with open live obligation", "profile": "current-r1", "section_sha256": "aeb6dc790fe486ec226606c1c9f5a118db32a52717f8ce83f9111db5dc0da2bc"},
-    {"ordinal": 37, "date": "2026-08-26", "label": "IGNITION-20260826-141 — Live State Semantics & Structured Result Reliability R1 current architecture transition", "profile": "current-r1", "section_sha256": "0cbf9f84763cf88f61a8abae844c1b4812b02c30b97f608080b3835599404b66"}
+    {"ordinal": 37, "date": "2026-08-26", "label": "IGNITION-20260826-141 — Live State Semantics & Structured Result Reliability R1 current architecture transition", "profile": "current-r1", "section_sha256": "bb2e8edfe2bbefd4971037d9941d250826b8096626b0f2cd7992f5064b0c0bf5"},
+    {"ordinal": 38, "date": "2026-08-27", "label": "IGNITION-20260827-142 — terminality and obligation decoupling baseline", "profile": "current-r1", "section_sha256": "383029ec4e73e4822f56a7786e2b53dbc7ccdbf63fd751dd9929475591391bdc"},
+    {"ordinal": 39, "date": "2026-08-27", "label": "IGNITION-20260827-142 — Current advancement and obligation carry-forward", "profile": "current-r1", "section_sha256": "0da50c62e389d557956ce50cba8ea561f086020149afa2e42f8e52cfef037fdf"},
+    {"ordinal": 40, "date": "2026-08-27", "label": "IGNITION-20260827-142 — lifecycle/admission architecture transition", "profile": "current-r1", "section_sha256": "73bfd2e41d0c326fe14237f47f83e179ba1c9298b69478d0fa7967508e27a197"},
+    {"ordinal": 41, "date": "2026-08-27", "label": "IGNITION-20260827-142 — formal terminality and independent obligation closure", "profile": "current-r1", "section_sha256": "2bd77d07a65ebfd3d0897c7afab05f590944e4637a53f91fad47e27fc4586be6"}
   ]
 }

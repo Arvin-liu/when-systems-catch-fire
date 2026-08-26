@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：\[D223\]\(docs/zh/functions/items/D223.…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66a688f76db34157 / 中文：宇宙是Φ从正值趋向零的暂态 — 物理存在有保质期，D223的终极案例。核心函数：\[D223\]\(docs/zh/functions/items/D223.…
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D223；被引用：—
+- [中文：宋莹芳×脱不花直播《用美育给人生加分》与点火框架碰撞验证。核心碰撞点：丰子恺家教理念"支持而非纠正"对应点火框架的遮蔽函数——当家长不断"纠正"孩子的所谓"问题"时，实际是在提高遮蔽度，压缩孩子的退出权和自主性；而"支持"则是降低遮蔽](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-30134844028cfdd8 / 中文：宋莹芳×脱不花直播《用美育给人生加分》与点火框架碰撞验证。核心碰撞点：丰子恺家教理念"支持而非纠正"对应点火框架的遮蔽函数——当家长不断"纠正"孩子的所谓"问题"时，实际是在提高遮蔽度，压缩孩子的退出权和自主性；而"支持"则是降低遮蔽
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：定投场景中的全局峰值可以被明确函数化表达；在多轮碰撞后，该案例额外产出 5 个可入表的新函数，证明 D34 在财富域具有可重复的推导能力。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8c3a5482714f679d / 中文：定投场景中的全局峰值可以被明确函数化表达；在多轮碰撞后，该案例额外产出 5 个可入表的新函数，证明 D34 在财富域具有可重复的推导能力。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D34；被引用：—
+- [中文：定投天然具备结构保守性，自动满足凯利公式下注要求。定投通过固定周期固定金额投资，在C_exit/H/ε/Rperceived/Δv五因子上同时取近最大值，是投资域Psustain全局最大值点。炒股或AI选股至少有一个因子归零（通常C_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7009bd424c9cc272 / 中文：定投天然具备结构保守性，自动满足凯利公式下注要求。定投通过固定周期固定金额投资，在C_exit/H/ε/Rperceived/Δv五因子上同时取近最大值，是投资域Psustain全局最大值点。炒股或AI选股至少有一个因子归零（通常C_
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：\[D85\]\(docs/zh/functions/items/D85.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c29aea4653e1285e / 中文：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：\[D85\]\(docs/zh/functions/items/D85.md\)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D85；被引用：—
+- [中文：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：\[D85\]\(docs/zh/funct…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8ff192e6a876a58a / 中文：定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守。核心函数：\[D85\]\(docs/zh/funct…
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D85；被引用：—
 - [中文：密码学与点火框架碰撞验证。四组核心映射关系：①加密解密对抗→锁定函数（D1），加密方提高信息熵提升锁定强度，解密方降低信息熵削弱锁定强度；②恩尼格玛机破解→自举激活条件（F_T6/F_D504），多阶段突破（间谍→数学家→图灵）验证ε](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2a00dd51f1b466b0 / 中文：密码学与点火框架碰撞验证。四组核心映射关系：①加密解密对抗→锁定函数（D1），加密方提高信息熵提升锁定强度，解密方降低信息熵削弱锁定强度；②恩尼格玛机破解→自举激活条件（F_T6/F_D504），多阶段突破（间谍→数学家→图灵）验证ε
@@ -2473,34 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-207E5D8CB5FA83A2 / 从这条案例看，中文：Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。 关键发现：选项无差异=退出权归零 Engli… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-207E5D8CB5FA83A2
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。 关键发现：选项无差异=退出权归零 Engli… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bc5ea9e6a87ef049 / 从这条案例看，中文：Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。 关键发现：选项无差异=退出权归零 Engli… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 关键发现：无选择=无退出权 English: Rule-based E… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-744AFD0EB722A8AB / 从这条案例看，中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 关键发现：无选择=无退出权 English: Rule-based E… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-744AFD0EB722A8AB
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 关键发现：无选择=无退出权 English: Rule-based E… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-078243158d116e9e / 从这条案例看，中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 关键发现：无选择=无退出权 English: Rule-based E… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：Ω_reachable = Ω_total × I。可达空间=总空间×信息量。 关键发现：可达空间=总空间×信息量 English:… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e1f1e245db649d5b / 从这条案例看，中文：Ω_reachable = Ω_total × I。可达空间=总空间×信息量。 关键发现：可达空间=总空间×信息量 English:… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：Ω_topology 的退化导致 D_immune 下降。拓扑空间退化导致系统退化免疫力下降。 关键发现：拓扑退化→免疫力下降 En… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e730601d2f266b2 / 从这条案例看，中文：Ω_topology 的退化导致 D_immune 下降。拓扑空间退化导致系统退化免疫力下降。 关键发现：拓扑退化→免疫力下降 En… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：Ω、T、C、σ达到共振条件→P_exit最大化。四个因子共振时退出权最大。 关键发现：四因子共振最大化退出权 English: Ru… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c24084f0d745aa98 / 从这条案例看，中文：Ω、T、C、σ达到共振条件→P_exit最大化。四个因子共振时退出权最大。 关键发现：四因子共振最大化退出权 English: Ru… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

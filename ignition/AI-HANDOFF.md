@@ -53,7 +53,7 @@ R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、�
 - current_formal_task: `IGNITION-20260827-142` (ordinal `142`)；status: `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260827-142` (ordinal `142`)；current_iteration_boundary: `142` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260827-142`。
 - formal_task_terminality: authority `FORMAL_TASK_LIFECYCLE`；task `IGNITION-20260827-142` status `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal `true`；scope_complete `true`；open references `['LIVE_EXTERNAL_INVOCATION']`。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
-- formal_task_terminal_history: `[{'task_id': 'IGNITION-20260827-142', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}, {'task_id': 'IGNITION-20260826-141', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}]`；Task141 terminality remains recorded independently of the carried obligation。
+- formal_task_terminal_history: `[{"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260827-142", "terminal": true}, {"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260826-141", "terminal": true}]`；Task141 terminality remains recorded independently of the carried obligation。
 - open_obligation_registry: authority `OPEN_OBLIGATION_REGISTRY`；status `OPEN` ids `['LIVE_EXTERNAL_INVOCATION']`；count `1`；next eligible action `['RUN_DYNAMIC_EXECUTOR_ADMISSION']`。
 - release_lifecycle: task `IGNITION-20260827-142`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - current_method: `1.4.0` Current；current_map: `0.16.0` Current；historical_map: `0.14.0` Historical。
@@ -61,7 +61,7 @@ R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、�
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=99; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260827-142` `COMPLETED_WITH_OPEN_OBLIGATIONS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `34f73620fdbe050247780db13a947e8adccd59448e0687fbbaf85a4659a2b7a0`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `7f0eb430d4d69214768780972c20c4181ce6944144a1ccedf8863992c2397475`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 

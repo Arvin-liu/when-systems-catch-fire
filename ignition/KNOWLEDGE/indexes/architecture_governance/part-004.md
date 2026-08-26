@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def build\(cls, **kwargs: Any\) -> "IndependentValidationReceipt":](../../../agent_federation/live_validation.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-E922CA1A5DA731BD / def build\(cls, **kwargs: Any\) -> "IndependentValidationReceipt": / IMPLICIT-E922CA1A5DA731BD
+  - 来源：`agent_federation/live_validation.py`
+  - 依赖：—；被引用：—
 - [def build\(cls, **kwargs: Any\) -> "LiveCapabilityLease":](../../../agent_federation/live_bridge.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-FA0DBDF1D10C136E / def build\(cls, **kwargs: Any\) -> "LiveCapabilityLease": / IMPLICIT-FA0DBDF1D10C136E
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-2D0ED15814C6DD34 / def test_hash_mismatch\(self\): / IMPLICIT-2D0ED15814C6DD34
   - 来源：`function-os-candidate/v0.2/tests/test_n3_robust.py`
-  - 依赖：—；被引用：—
-- [def test_history\(self\):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-13E3DADBDF373080 / def test_history\(self\): / IMPLICIT-13E3DADBDF373080 / IMPLICIT-4D55C7D6D57FAE61
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
   - 依赖：—；被引用：—

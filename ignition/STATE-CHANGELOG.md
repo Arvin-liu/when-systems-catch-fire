@@ -5,7 +5,7 @@
 - current_formal_task: `IGNITION-20260827-142` (ordinal `142`)；status: `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260827-142` (ordinal `142`)；current_iteration_boundary: `142` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260827-142`。
 - formal_task_terminality: authority `FORMAL_TASK_LIFECYCLE`；task `IGNITION-20260827-142` status `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal `true`；scope_complete `true`；open references `['LIVE_EXTERNAL_INVOCATION']`。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
-- formal_task_terminal_history: `[{'task_id': 'IGNITION-20260827-142', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}, {'task_id': 'IGNITION-20260826-141', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}]`；Task141 terminality remains recorded independently of the carried obligation。
+- formal_task_terminal_history: `[{"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260827-142", "terminal": true}, {"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260826-141", "terminal": true}]`；Task141 terminality remains recorded independently of the carried obligation。
 - open_obligation_registry: authority `OPEN_OBLIGATION_REGISTRY`；status `OPEN` ids `['LIVE_EXTERNAL_INVOCATION']`；count `1`；next eligible action `['RUN_DYNAMIC_EXECUTOR_ADMISSION']`。
 - release_lifecycle: task `IGNITION-20260827-142`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - current_method: `1.4.0` Current；current_map: `0.16.0` Current；historical_map: `0.14.0` Historical。
@@ -13,7 +13,7 @@
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=99; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260827-142` `COMPLETED_WITH_OPEN_OBLIGATIONS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `34f73620fdbe050247780db13a947e8adccd59448e0687fbbaf85a4659a2b7a0`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `7f0eb430d4d69214768780972c20c4181ce6944144a1ccedf8863992c2397475`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -474,44 +474,58 @@
 ## 2026-08-27 — IGNITION-20260827-142 — terminality and obligation decoupling baseline
 
 - main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; the formal Task141 publication is already observed at `6de0841e27a0b38b4ac9a2703daef5b9637c6611`, and this append-only entry records the Task142 semantic correction.
+- delta: Task142 identifies the lifecycle bug in which an open long-lived validated-completion obligation kept the already-complete Task141 marked `IN_PROGRESS`; formal task terminality is now an independent authority.
 - current_formal_task: `IGNITION-20260826-141` is `COMPLETED_WITH_OPEN_OBLIGATIONS` and terminal; `current_iteration_boundary=141` remains only the deprecated compatibility alias, and the formal lifecycle source owns this terminality independently of obligation closure.
 - task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task141 scope and publication are complete.
 - obligations: `LIVE_EXTERNAL_INVOCATION` remains `OPEN` in the forthcoming independent obligation registry because no exact-bound validated live completion exists. The open obligation keeps Current state open but does not keep terminal Task141 `IN_PROGRESS`.
 - live_observation: the six-attempt projection remains dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`, validated completion `NOT_VALIDATED`, reconciliation blocker `NONE`, with zero validated completions, zero unreconciled attempts and two observation-incomplete outcomes.
 - epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; no external truth, production readiness, Owner acceptance or validated live completion is inferred.
+- authority_changes: Task142 adds independent formal-task lifecycle and open-obligation authorities; it grants no Owner, provider, channel, browser, remote-Git, configuration, billing, production, external-truth or epistemic authority.
+- stale_knowledge: the prior Task141 `IN_PROGRESS` rendering was a current-state coupling defect, not evidence that Task141 formal scope was unfinished; Task141's sealed historical Step14 receipt remains immutable.
 - next_read: complete the independent obligation registry, advance Current to Task142, and then execute the provider-neutral admission and bounded synthetic/read-only live gates.
 - claim_ceiling: repository-local lifecycle decoupling semantics and historical live-state evidence only; no executor capability or external validity claim is made.
 
 ## 2026-08-27 — IGNITION-20260827-142 — Current advancement and obligation carry-forward
 
 - main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this entry records the repository-local Task142 Current transition after Task141 formal publication at `6de0841e27a0b38b4ac9a2703daef5b9637c6611`.
+- delta: Current advances from terminal Task141 to Task142 while carrying `LIVE_EXTERNAL_INVOCATION` as an independent open obligation; the predecessor is not reopened and task terminality is not derived from obligation closure.
 - current_formal_task: `IGNITION-20260827-142` is `IN_PROGRESS` and non-terminal; the latest architecture-changing task is Task142 and `current_iteration_boundary=142` remains only the deprecated compatibility alias.
 - prior_task: `IGNITION-20260826-141` is terminal `COMPLETED_WITH_OPEN_OBLIGATIONS` in the independent formal lifecycle; it is not reopened by this advancement.
 - task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`.
 - obligations: `LIVE_EXTERNAL_INVOCATION` is carried forward in the independent obligation registry with status `OPEN`, blocker `NO_EXACT_BOUND_VALIDATED_COMPLETION`, and next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`.
 - live_observation: the historical projection remains six attempts, zero validated completions, zero unreconciled attempts and two observation-incomplete outcomes; dispatch/process are observed, inference is not observed, validated completion is not validated, and reconciliation blocker is none.
 - epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; no external truth, production readiness, Owner acceptance or validated live completion is inferred.
+- authority_changes: Task142 changes only repository-local Current lifecycle and obligation projection; it grants no Owner, provider, channel, browser, remote-Git, configuration, billing, production, external-truth or epistemic authority.
+- stale_knowledge: Task141's historical terminality and six-attempt projection are preserved; the older `IN_PROGRESS` surface wording is superseded by the explicit terminal/open-obligation split.
 - next_read: establish the provider-neutral executor admission contract and conformance harness, then run the fresh blocker matrix before any bounded live attempt.
 - claim_ceiling: repository-local Current advancement with independently rendered task terminality and obligation carry-forward only; no executor capability or external validity is claimed.
 
 ## 2026-08-27 — IGNITION-20260827-142 — lifecycle/admission architecture transition
 
-- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this append-only entry records the Task142 architecture transition before formal publication.
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task141 baseline `6de0841e27a0b38b4ac9a2703daef5b9637c6611` until the separate ordinary fast-forward and remote-ref observation. This append-only entry records the Task142 architecture transition before formal publication.
 - delta: the sole registry-derived system map now exposes Formal Task Lifecycle R1, Open Obligation Registry R1 and provider-neutral Executor Admission R1. Formal task terminality is sourced from task scope/steps/publication/witness; open obligations retain their own identity and carry-forward lineage.
 - architecture_boundary: component registry `2.4.0`, typed topology `1.13.0`, layout-derived map `0.16.0` Current and identity epoch `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`. Six new typed relations remain canonical; the compact map exposes only the non-regressing visible subset.
 - task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task141 remains `COMPLETED_WITH_OPEN_OBLIGATIONS` and terminal, while Task142 is the current non-terminal successor during this transition.
 - admission_boundary: installed agentic candidates are evaluated by the same public attestation, auth/billing, workspace/scratch, structured-result, capture, cleanup, validator and side-effect dimensions. Tool-only and reasoner runtimes cannot be promoted to Agentic Executor.
 - safety: no live process, secret-content read, configuration change, billing change, second system map or external side effect was introduced by this transition.
 - epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; architecture projections and admission gates do not establish external truth, production readiness, Owner acceptance or validated live completion.
+- authority_changes: Task142 adds three repository-local control-plane components and their typed registry/topology bindings; they do not acquire provider, channel, browser, remote-Git, configuration, billing, completion or truth authority.
+- stale_knowledge: prior component counts and map versions are historical; only the registry-derived 0.16.0 sole map and R8 identity are current for this transition.
 - obligations: the carried `LIVE_EXTERNAL_INVOCATION` obligation remains `OPEN`; any future live attempt still requires the fail-closed admission gate, exact independent validation and the stop-after-first-success rule.
 - next_read: read the Step17 architecture-impact receipt and then the Step18 adversarial/full-regression receipt before formal terminalization and ordinary main publication.
 - claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence only; no live success, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.
 
 ## 2026-08-27 — IGNITION-20260827-142 — formal terminality and independent obligation closure
 
-- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; Task142 formal scope is terminal and `RELEASE_READY`, while the remote-ref publication and separate 1111 witness remain observation-time boundaries rather than embedded claims.
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task141 baseline `6de0841e27a0b38b4ac9a2703daef5b9637c6611` while Task142 formal scope is terminal and `RELEASE_READY`; the remote-ref publication and separate 1111 witness remain observation-time boundaries rather than embedded claims.
 - formal_task: `IGNITION-20260827-142` is `COMPLETED_WITH_OPEN_OBLIGATIONS` and terminal after Steps 00–19; terminality is determined by the formal task scope and release contract, not by closure of a long-lived obligation.
+- delta: Steps 00–19 close the formal Task142 scope and publish the task's terminal lifecycle semantics; the separate obligation remains open for future admission and is not allowed to reopen the terminal task.
 - obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN`; the six historical attempts still yield zero validated completions, zero unreconciled attempts and two observation-incomplete outcomes, with next eligible action `RUN_DYNAMIC_EXECUTOR_ADMISSION`.
 - task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task141 remains terminal `COMPLETED_WITH_OPEN_OBLIGATIONS` and is not reopened.
 - safety: no new live process, billing/auth/configuration change, installation/upgrade, secret-content read, channel/browser action or external side effect was introduced; no validated live completion is claimed.
+- authority_changes: formal Task Lifecycle, Open Obligation Registry and Executor Admission remain repository-local bounded authorities; no Owner, provider, channel, browser, remote-Git, configuration, billing, production, external-truth or epistemic authority is granted.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; terminality, admission conformance and regression evidence do not establish external truth, production readiness, Owner acceptance or epistemic acceptance.
+- obligations: preserve the independent open obligation and, only when a fresh executor is actually admitted, perform at most two different-family synthetic/read-only attempts, stopping at the first exact-bound `LIVE_READONLY_VALIDATED_COMPLETION`.
+- stale_knowledge: the initial Task142 candidate regression exposed stale generated/identity bindings and was repaired without rewriting the Step19 candidate history; final regression evidence must remain separate from this append-only semantic record.
+- next_read: read the final Task142 machine receipt and independent 1111 publication witness for exact SHA, remote-ref and fresh-clone evidence; do not infer those observations from this changelog.
 - claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic regression and publication-contract evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.

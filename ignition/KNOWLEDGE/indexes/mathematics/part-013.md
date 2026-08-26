@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。 关键发现：选项无差异=退出权归零 Engli… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bc5ea9e6a87ef049 / 从这条案例看，中文：Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。 关键发现：选项无差异=退出权归零 Engli… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 关键发现：无选择=无退出权 English: Rule-based E… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-744AFD0EB722A8AB / 从这条案例看，中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 关键发现：无选择=无退出权 English: Rule-based E… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-744AFD0EB722A8AB
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 关键发现：无选择=无退出权 English: Rule-based E… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-078243158d116e9e / 从这条案例看，中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 关键发现：无选择=无退出权 English: Rule-based E… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Ω_reachable = Ω_total × I。可达空间=总空间×信息量。 关键发现：可达空间=总空间×信息量 English:… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e1f1e245db649d5b / 从这条案例看，中文：Ω_reachable = Ω_total × I。可达空间=总空间×信息量。 关键发现：可达空间=总空间×信息量 English:… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Ω_topology 的退化导致 D_immune 下降。拓扑空间退化导致系统退化免疫力下降。 关键发现：拓扑退化→免疫力下降 En… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3e730601d2f266b2 / 从这条案例看，中文：Ω_topology 的退化导致 D_immune 下降。拓扑空间退化导致系统退化免疫力下降。 关键发现：拓扑退化→免疫力下降 En… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Ω、T、C、σ达到共振条件→P_exit最大化。四个因子共振时退出权最大。 关键发现：四因子共振最大化退出权 English: Ru… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c24084f0d745aa98 / 从这条案例看，中文：Ω、T、C、σ达到共振条件→P_exit最大化。四个因子共振时退出权最大。 关键发现：四因子共振最大化退出权 English: Ru… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：Ω的维度间存在耦合。选择空间各维度不是独立变化。 关键发现：空间维度耦合 English: Rule-based English r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1b0b281a60112d34 / 从这条案例看，中文：Ω的维度间存在耦合。选择空间各维度不是独立变化。 关键发现：空间维度耦合 English: Rule-based English r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2472,35 +2502,5 @@
 - [从这条案例看，中文：案例说明：近亲、自交和连续克隆都可能体现系统把自身输出当输入源后的多样性衰减和负荷累积；社会禁忌与遗传风险不是同一层。 关键发现：Q… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-998aacff9e4c72f2 / 从这条案例看，中文：案例说明：近亲、自交和连续克隆都可能体现系统把自身输出当输入源后的多样性衰减和负荷累积；社会禁忌与遗传风险不是同一层。 关键发现：Q… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：退休金绑在安然股票上走不了，象征退出权=强制力的优雅版本 关键发现：第3步未满足 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8916b9ca6e0d87b7 / 从这条案例看，中文：案例说明：退休金绑在安然股票上走不了，象征退出权=强制力的优雅版本 关键发现：第3步未满足 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：退出权真实，但"20%时间"从真实承诺退化为象征性口号 关键发现：第5步跑通后在退化 English: Rule-base… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0fe0d746c48568e5 / 从这条案例看，中文：案例说明：退出权真实，但"20%时间"从真实承诺退化为象征性口号 关键发现：第5步跑通后在退化 English: Rule-base… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：退出权真实，但"无限假期"等政策让部分应约者消极 关键发现：第5步跑通 English: Rule-based Engli… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fe486a4a0de7ca89 / 从这条案例看，中文：案例说明：退出权真实，但"无限假期"等政策让部分应约者消极 关键发现：第5步跑通 English: Rule-based Engli… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：退出权真实，但文化冲突→应约者消极→无人应约 关键发现：第3步未满足 English: Rule-based Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-594d5336f0225635 / 从这条案例看，中文：案例说明：退出权真实，但文化冲突→应约者消极→无人应约 关键发现：第3步未满足 English: Rule-based Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：退出权真实，但方案本身是假的→无人应约 关键发现：第2步不成立 English: Rule-based English r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-138e966b84262560 / 从这条案例看，中文：案例说明：退出权真实，但方案本身是假的→无人应约 关键发现：第2步不成立 English: Rule-based English r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：退出权真实，但认同建在外部锚定（脱亚入欧），80年后内爆 关键发现：第5步跑通但隐患反噬 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-656d063e9067634e / 从这条案例看，中文：案例说明：退出权真实，但认同建在外部锚定（脱亚入欧），80年后内爆 关键发现：第5步跑通但隐患反噬 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

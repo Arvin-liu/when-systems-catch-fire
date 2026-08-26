@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 from typing import Any
 
@@ -32,6 +33,7 @@ MAP_PATH = ROOT / "data/architecture/interactive-system-map.json"
 PROJECTION_PATH = ROOT / "data/operations/iterations/141/live-current-projection-r3.json"
 RECEIPT_PATH = ROOT / "data/operations/iterations/141/current-state-sync-receipt.json"
 OUTPUT_PATH = ROOT / "data/operations/iterations/141/step14-current-state-sync.json"
+HISTORICAL_SHA_RE = re.compile(r"^[0-9a-f]{64}$")
 
 
 def load(path: Path) -> Any:
@@ -44,6 +46,116 @@ def sha256(path: Path) -> str:
 
 def relative(path: Path) -> str:
     return path.resolve().relative_to(REPO_ROOT.resolve()).as_posix()
+
+
+def validate_sealed_historical_report(report: dict[str, Any]) -> list[str]:
+    """Validate Task141's sealed Step14 receipt without reopening its past.
+
+    Task141 is historical after Task142 advances canonical Current.  Re-running
+    the old builder against today's identity would manufacture a failure by
+    design, so this validator checks the sealed report's own boundary and the
+    immutable R3 projection instead of comparing it with current sources.
+    """
+
+    errors: list[str] = []
+    if report.get("schema_version") != "ignition-141-step14-current-state-sync-r1":
+        errors.append("historical Step14 schema version drifted")
+    if report.get("task_id") != TASK_ID or report.get("step") != "14":
+        errors.append("historical Step14 task or step identity drifted")
+    if report.get("status") != "PASS":
+        errors.append("sealed historical Step14 report is not PASS")
+    if report.get("errors") != []:
+        errors.append("sealed historical Step14 report contains errors")
+    expected_identity = {
+        "identity_epoch": "os-control-plane-r7-live-state-semantics-structured-result-reliability-r1",
+        "current_formal_task_id": TASK_ID,
+        "current_formal_task_ordinal": 141,
+        "latest_architecture_changing_task_id": TASK_ID,
+        "latest_architecture_task_ordinal": 141,
+        "current_iteration_boundary": 141,
+    }
+    if report.get("current_identity") != expected_identity:
+        errors.append("sealed historical Step14 identity does not match Task141")
+    if report.get("map_identity") != {
+        "current_map_version": "0.15.0",
+        "historical_map_version": "0.14.0",
+        "materialized_map_version": "0.15.0",
+    }:
+        errors.append("sealed historical Step14 map identity does not match Task141")
+    expected_counts = {
+        "complete_evidence_count": 4,
+        "incomplete_evidence_count": 2,
+        "observation_incomplete_count": 2,
+        "total_attempts": 6,
+        "unreconciled_count": 0,
+        "validated_completion_count": 0,
+    }
+    if report.get("live_projection_counts") != expected_counts:
+        errors.append("sealed historical Step14 projection counts drifted")
+    expected_dimensions = {
+        "inference_observation_status": "NOT_OBSERVED",
+        "live_dispatch_observation_status": "OBSERVED",
+        "live_process_observation_status": "OBSERVED",
+        "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+        "reconciliation_blocker_status": "NONE",
+        "schema_version": "live-state-dimensions-r1",
+        "validated_completion_status": "NOT_VALIDATED",
+    }
+    if report.get("source_projections", {}).get("live_state_dimensions") != expected_dimensions:
+        errors.append("sealed historical Step14 live dimensions drifted")
+    if report.get("surface_sync") != {
+        "changed_surface_count": 11,
+        "identity_contract_changed": True,
+        "receipt_path": "ignition/data/operations/iterations/141/current-state-sync-receipt.json",
+        "required_surface_count": 11,
+        "state_changelog_delta": "CHANGE",
+        "surface_sync_complete": True,
+        "system_map_sync": "CHANGE",
+    }:
+        errors.append("sealed historical Step14 surface-sync boundary drifted")
+    if report.get("validation") != {
+        "current_facts_determinism": "PASS",
+        "current_release_lifecycle": "PASS",
+        "current_snapshot_determinism": "PASS",
+        "current_state_sync": "PASS",
+        "current_surface_compiler": "PASS",
+        "current_task_lineage": "PASS",
+        "current_volatile_fact_registry": "PASS",
+    }:
+        errors.append("sealed historical Step14 validator statuses drifted")
+    source = report.get("source_projections", {})
+    for field in ("current_facts_digest", "current_snapshot_digest", "current_snapshot_source_digest", "live_projection_digest"):
+        if not HISTORICAL_SHA_RE.fullmatch(str(source.get(field, ""))):
+            errors.append(f"sealed historical Step14 digest is invalid: {field}")
+    try:
+        projection = validate_projection(load(PROJECTION_PATH))
+        if projection["counts"] != expected_counts:
+            errors.append("immutable Task141 R3 projection counts do not match sealed report")
+        if projection["live_state_dimensions"] != expected_dimensions:
+            errors.append("immutable Task141 R3 projection dimensions do not match sealed report")
+        if source.get("live_projection_digest") != projection["projection_digest"]:
+            errors.append("sealed Step14 live projection digest does not match immutable R3 projection")
+    except Exception as exc:
+        errors.append(f"immutable Task141 R3 projection cannot be validated: {type(exc).__name__}")
+    return errors
+
+
+def build_sealed_report() -> dict[str, Any]:
+    if not OUTPUT_PATH.is_file():
+        return {
+            "schema_version": "ignition-141-step14-current-state-sync-r1",
+            "task_id": TASK_ID,
+            "step": "14",
+            "status": "FAIL",
+            "errors": ["sealed historical Step14 artifact is missing"],
+        }
+    report = load(OUTPUT_PATH)
+    errors = validate_sealed_historical_report(report)
+    if errors:
+        report = dict(report)
+        report["status"] = "FAIL"
+        report["errors"] = errors
+    return report
 
 
 def compiler_errors() -> list[str]:
@@ -60,6 +172,11 @@ def compiler_errors() -> list[str]:
 
 
 def build_report() -> dict[str, Any]:
+    return build_sealed_report()
+
+
+def build_report_at_task141() -> dict[str, Any]:
+    """Retained source-time builder for historical archaeology only."""
     identity = load(IDENTITY_PATH)
     lineage = load(LINEAGE_PATH)
     lifecycle = load(LIFECYCLE_PATH)

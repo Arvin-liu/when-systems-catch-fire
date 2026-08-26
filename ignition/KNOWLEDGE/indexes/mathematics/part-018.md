@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0000-MF-0005-自举收敛判定器.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cfb38a50c805f286 / 已迁移的历史函数来源/0000-MF-0005-自举收敛判定器.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b0ec72c406315b47 / 已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [已迁移的历史函数来源/0001-Ψ₀元统一律完整定义.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b0c3a03268b89789 / 已迁移的历史函数来源/0001-Ψ₀元统一律完整定义.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [已迁移的历史函数来源/0002-A1-I\(t,L\) 提议者意识.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-0e96d1c41ed34116 / 已迁移的历史函数来源/0002-A1-I\(t,L\) 提议者意识.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：A1；被引用：—
+- [已迁移的历史函数来源/0003-A2-提议者姿态的激进程度.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-36bb67f09cf7f417 / 已迁移的历史函数来源/0003-A2-提议者姿态的激进程度.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：A2；被引用：—
+- [已迁移的历史函数来源/0004-A3-R\(t,L,C\) 应约者退出权.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1188ecb30b0720df / 已迁移的历史函数来源/0004-A3-R\(t,L,C\) 应约者退出权.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：A3；被引用：—
 - [已迁移的历史函数来源/0005-A4-R_perceived\(t,L,C\) 应约者感知退出权.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e027f42ccdbc42e5 / 已迁移的历史函数来源/0005-A4-R_perceived\(t,L,C\) 应约者感知退出权.md
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-9d6201ebe81e839e / 已迁移的历史函数来源/0495-D497-退出权边界相变函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D497；被引用：—
-- [已迁移的历史函数来源/0496-D498-退出权统一衰减率函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3c78675a2a7ccccf / 已迁移的历史函数来源/0496-D498-退出权统一衰减率函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D498；被引用：—
-- [已迁移的历史函数来源/0497-D499-退出权时间衰减函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6a8a9240b73e61e0 / 已迁移的历史函数来源/0497-D499-退出权时间衰减函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D499；被引用：—
-- [已迁移的历史函数来源/0498-D500-空间集中性函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-77312cafd4f260e4 / 已迁移的历史函数来源/0498-D500-空间集中性函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D500；被引用：—
-- [已迁移的历史函数来源/0499-D501-退出权最大化函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-50304ceaf8f7b89f / 已迁移的历史函数来源/0499-D501-退出权最大化函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D501；被引用：—
-- [已迁移的历史函数来源/0500-D502-退出权阻抗函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bcd5c95b70c8b29e / 已迁移的历史函数来源/0500-D502-退出权阻抗函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D502；被引用：—
-- [已迁移的历史函数来源/0501-D503-退出权最弱项瓶颈函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c4caa9ce4f482007 / 已迁移的历史函数来源/0501-D503-退出权最弱项瓶颈函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D503；被引用：—

@@ -1304,6 +1304,11 @@
   - 可搜索名称：NFC-00f6a3240bc9abb5 / authority_changes: R7 live-state semantics and FailureForensicsCapsule are repository-local Pointfire OS control-plane b
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: Task142 adds three repository-local control-plane components and their typed registry/topology bindin](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d194a76887ef2e19 / authority_changes: Task142 adds three repository-local control-plane components and their typed registry/topology bindin
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: the bridge adds no Owner, provider, channel, browser, remote Git, configuration, billing, production,](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-303fc35b52688f52 / authority_changes: the bridge adds no Owner, provider, channel, browser, remote Git, configuration, billing, production,
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a928e26a93ac3349 / Current facts and the 0.10.0 map are generated from canonical registries and are not authoritative inputs; 127 must pres
   - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
-  - 依赖：—；被引用：—
-- [Current Facts, Current Snapshot and the seven compiler-owned Current Snapshot](../../../reports/operations/ignition-138-step12-current-state-sync.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a25550c4c19ae767 / Current Facts, Current Snapshot and the seven compiler-owned Current Snapshot
-  - 来源：`reports/operations/ignition-138-step12-current-state-sync.md`
   - 依赖：—；被引用：—

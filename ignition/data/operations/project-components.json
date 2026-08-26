@@ -133,6 +133,7 @@
       "authority_source": "docs/architecture/external-agent-federation-r1.md",
       "component_ids": [
         "codex_adapter",
+        "executor_admission_r1",
         "external_agent_federation",
         "future_executors",
         "hermes_adapter",

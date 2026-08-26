@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [the visible projection is `80` nodes and `83` typed edges.](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f39f549213f5713b / the visible projection is `80` nodes and `83` typed edges.
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
+- [This exposed and closed a genuine projection cycle: materiality bookkeeping names Current Surface sources, while Current](../../../reports/operations/ignition-134-step11-current-projection-closure.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f9fbca0919e86506 / This exposed and closed a genuine projection cycle: materiality bookkeeping names Current Surface sources, while Current
+  - 来源：`reports/operations/ignition-134-step11-current-projection-closure.md`
+  - 依赖：—；被引用：—
 - [This is the final item-by-item audit after the Task134 terminal Current projection was regenerated. It records provenanc](../../../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0f7f17867c85ae2d / This is the final item-by-item audit after the Task134 terminal Current projection was regenerated. It records provenanc
@@ -2492,15 +2502,5 @@
 - [（对应旧条目 / 扩展内容 / 为何非新增 / 是否更新）](../../../templates/collision/output-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-ba32d7ba1ee3af06 / （对应旧条目 / 扩展内容 / 为何非新增 / 是否更新）
-  - 来源：`templates/collision/output-template.md`
-  - 依赖：—；被引用：—
-- [（对应条目 + 类型）](../../../templates/collision/backfill-plan-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6acbf6f7b1c347ab / （对应条目 + 类型）
-  - 来源：`templates/collision/backfill-plan-template.md`
-  - 依赖：—；被引用：—
-- [（对应条目 / 注释内容 / 类型 / 来源 / 是否入表）](../../../templates/collision/output-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-ac8b556355d1c6d3 / （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
   - 来源：`templates/collision/output-template.md`
   - 依赖：—；被引用：—

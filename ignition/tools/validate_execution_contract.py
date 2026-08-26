@@ -78,9 +78,10 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         # Task137 used a ``baseline`` object; Task138 records the same
         # observation under ``formal_repository``. Keep the binding strict
         # while accepting both historical receipt shapes.
-        baseline = audit.get("baseline") or audit.get("formal_repository") or {}
+        baseline = audit.get("baseline") or audit.get("formal_repository") or audit.get("formal_baseline") or {}
         expected_baseline = (
-            baseline.get("origin_main_sha")
+            baseline.get("expected_main_sha")
+            or baseline.get("origin_main_sha")
             or baseline.get("baseline_sha")
             or baseline.get("formal_head_sha")
             or baseline.get("formal_origin_main_expected")

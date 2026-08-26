@@ -40,7 +40,7 @@ VERSION_FACTS = {
     "current_method": "1.4.0",
     "historical_method": "1.3.0",
     "earlier_historical_method": "1.2.0",
-    "current_map": "0.15.0",
+    "current_map": "0.16.0",
     "historical_map": "0.14.0",
     "earlier_historical_map": "0.13.0",
 }

@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [容斥主导区内部结构函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D346 / 容斥主导区内部结构函数 / D346
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-53b7441545721276, NFC-555fd2b261b3669a, NFC-c32661bf976e60cb, NFC-f508e30bf9686b73
+- [容斥主导实验签名函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D287 / 容斥主导实验签名函数 / D287
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D360；被引用：NFC-0cf604fa9170bd75, NFC-19f295a1e4e2f3e2, NFC-4a1310e3e5a2d998, NFC-663daf6286484355
+- [容斥主导实验签名函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8be96557258232ff / 容斥主导实验签名函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [容斥主导尺度函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D318 / 容斥主导尺度函数 / D318
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-01fc67c06cb1b284, NFC-57dd36c192579bd2, NFC-a19c6cecdbc04bbf, NFC-b64f3f9148951d99
+- [容斥偏差加速函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D266 / 容斥偏差加速函数 / D266
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D270；被引用：D342, CLAIM-D342, NFC-29cf101bd449784e, NFC-6ce1abf8b9534233
+- [容斥关联动态函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D344 / 容斥关联动态函数 / D344
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D289, D290, D360；被引用：NFC-34090607ca1994da, NFC-5927f54dd7b84821, NFC-77a6d9e69a353a98, NFC-86e35231865eb32d
 - [容斥关联对称性破缺函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
   - 可搜索名称：D358 / 容斥关联对称性破缺函数 / D358
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-20e47892aa8f75cd / 是否有实验、观测、公式或同行评议支持。
   - 来源：`docs/publication_risk_checklist.md`
   - 依赖：—；被引用：—
-- [是否覆盖主要证据制度领域：是（13 个领域：数学、物理、历史、社会科学、经济、工程、医学、法律、文学、艺术、教育、AI、计算机）](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-eb923ea646a07c75 / 是否覆盖主要证据制度领域：是（13 个领域：数学、物理、历史、社会科学、经济、工程、医学、法律、文学、艺术、教育、AI、计算机）
-  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
-  - 依赖：—；被引用：—
-- [是（适合作为结构性分析的样本，不适合作为"已证明"的样本）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a9010c4dc10021b5 / 是（适合作为结构性分析的样本，不适合作为"已证明"的样本）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [是（适合作为结构性分析的样本，不适合作为"已证明因果"的样本）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-273a39dc42fb11c1 / 是（适合作为结构性分析的样本，不适合作为"已证明因果"的样本）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [是（适合作为结构性推论的样本，不适合作为“已证明成立”或“审美判断客观”的样本）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c21bfd43404f31af / 是（适合作为结构性推论的样本，不适合作为“已证明成立”或“审美判断客观”的样本）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [显式记录生命周期状态、发布状态、结果类型、完成项、未完成项、claim ceiling、限制和阻断；](../../../docs/operations/stage-snapshot-publication.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6b87a85e0920cee9 / 显式记录生命周期状态、发布状态、结果类型、完成项、未完成项、claim ceiling、限制和阻断；
-  - 来源：`docs/operations/stage-snapshot-publication.md`
-  - 依赖：—；被引用：—
-- [显态粘性函数](../../../analysis/corpus-relation/cluster_source_briefs/C006.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D173 / 显态粘性函数 / D173
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C006.md`
-  - 依赖：D180, D91；被引用：NFC-00014d440f9edb9b, NFC-104354d72f921837, NFC-17930fe535861fe7, NFC-1c80bad39e38d06b

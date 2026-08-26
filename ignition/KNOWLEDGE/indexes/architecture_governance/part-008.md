@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [TA-LoRA is a prompt-tuning method: it factorizes adaptable prompt representations, not the frozen model's weight deltas](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-807f0ed7576ee702 / TA-LoRA is a prompt-tuning method: it factorizes adaptable prompt representations, not the frozen model's weight deltas
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure](../../ASSET-CARDS.md#asset-hr-3785d4850d94b77e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure / 100-nonfunction-claim-evidence-lineage-closure
+  - 来源：`reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md`
+  - 依赖：—；被引用：—
+- [Task 103 证据试点产生的开放问题](../../../RESULTS/OPEN-QUESTIONS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4a890abf400eb7bb / Task 103 证据试点产生的开放问题
+  - 来源：`RESULTS/OPEN-QUESTIONS.md`
+  - 依赖：—；被引用：—
+- [Task 110：完成状态 reconciliation 与独立元数据复制](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c99a568c46c12340 / Task 110：完成状态 reconciliation 与独立元数据复制
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [Task 111 failure-case evidence gate](../../../evidence-program/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-cfe7dc64dfe0effa / Task 111 failure-case evidence gate
+  - 来源：`evidence-program/README.md`
+  - 依赖：—；被引用：—
+- [Task 111：失败案例证据门禁与真实缺陷复现试点](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-161f04cf9dc69047 / Task 111：失败案例证据门禁与真实缺陷复现试点
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
 - [Task 111：失败案例证据门禁与苹果案例状态](../../../RESULTS/OPEN-QUESTIONS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-73af8b4463d70779 / Task 111：失败案例证据门禁与苹果案例状态
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-ffd395e3a3665be4 / withdrawal 保留对象、旧措辞、证据与理由；
   - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
   - 依赖：—；被引用：—
-- [Within the source-defined scope, 0001-正向自举通道 is adjudicated as PREDICATE: 0001-正向自举通道. This is a model-internal controll](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-MF1 / Within the source-defined scope, 0001-正向自举通道 is adjudicated as PREDICATE: 0001-正向自举通道. This is a model-internal controll
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 0002-反向自举通道 is adjudicated as PREDICATE: 0002-反向自举通道. This is a model-internal controll](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-MF2 / Within the source-defined scope, 0002-反向自举通道 is adjudicated as PREDICATE: 0002-反向自举通道. This is a model-internal controll
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 0003-正反互斥判定器 is adjudicated as PREDICATE: 0003-正反互斥判定器. This is a model-internal contro](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-MF3 / Within the source-defined scope, 0003-正反互斥判定器 is adjudicated as PREDICATE: 0003-正反互斥判定器. This is a model-internal contro
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 0004-自举嵌套判定器 is adjudicated as STATE_TRANSITION: 0004-自举嵌套判定器. This is a model-internal](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-MF4 / Within the source-defined scope, 0004-自举嵌套判定器 is adjudicated as STATE_TRANSITION: 0004-自举嵌套判定器. This is a model-internal
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 0005-自举收敛判定器 is adjudicated as PREDICATE: 0005-自举收敛判定器. This is a model-internal contro](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-MF5 / Within the source-defined scope, 0005-自举收敛判定器 is adjudicated as PREDICATE: 0005-自举收敛判定器. This is a model-internal contro
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, D572｜退出权验证 is adjudicated as ARGUMENT_SCHEMA: F_退出权验证. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D572 / Within the source-defined scope, D572｜退出权验证 is adjudicated as ARGUMENT_SCHEMA: F_退出权验证. This is a model-internal control
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D572；被引用：—

@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [persona or consciousness claims, or a second physical Pack migration.](../../../docs/architecture/agent-platform-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-119a925faa2e837f / persona or consciousness claims, or a second physical Pack migration.
+  - 来源：`docs/architecture/agent-platform-r2.md`
+  - 依赖：—；被引用：—
+- [Phase B planner and NonImpactProof: 3/3 PASS.](../../../reports/operations/121Q32I-phase-d-validation-closeout.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5088a3cf7d1198f1 / Phase B planner and NonImpactProof: 3/3 PASS.
+  - 来源：`reports/operations/121Q32I-phase-d-validation-closeout.md`
+  - 依赖：—；被引用：—
+- [Pilot Formal Audit](../../ASSET-CARDS.md#asset-hr-d4b5c8e581f06e23)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Pilot Formal Audit / pilot-formal-audit-20260712
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：—；被引用：—
+- [Planner and NonImpactProof](../../../docs/architecture/incremental-execution.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-998c952769dc3883 / Planner and NonImpactProof
+  - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
+- [Platform 原型；知识治理是第一个大型 Domain Pack，而不是整个系统本体。**](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-8b2d85012a29f7bb / Platform 原型；知识治理是第一个大型 Domain Pack，而不是整个系统本体。**
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [PLE repeatedly unfolds enabled guarded definitions and is sound, complete for the paper's equational-proof relation, and](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-11472a69a417c679 / PLE repeatedly unfolds enabled guarded definitions and is sound, complete for the paper's equational-proof relation, and
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [PR #56 / 121Q24 已在验收后合并：迭代操作法与同步验证契约是当前仓库操作能力。它约束状态改变任务怎样记录 gap、claim ceiling、同步矩阵、验证和回执，但不证明任何结论的真理、价值、因果、完整性或正确性。](../../../docs/VERSIONING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9d7557ed4d174405 / PR #56 / 121Q24 已在验收后合并：迭代操作法与同步验证契约是当前仓库操作能力。它约束状态改变任务怎样记录 gap、claim ceiling、同步矩阵、验证和回执，但不证明任何结论的真理、价值、因果、完整性或正确性。
@@ -2472,35 +2502,5 @@
 - [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-23BD5B4309F90C7E / title: "三重死亡与执念逃避函数族" / IMPLICIT-23BD5B4309F90C7E / IMPLICIT-14198B49A125D810
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4ACADE5485EF8EE8 / title: "三重死亡与执念逃避函数族" / IMPLICIT-4ACADE5485EF8EE8 / IMPLICIT-14198B49A125D810
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5F81A886F31D44D4 / title: "三重死亡与执念逃避函数族" / IMPLICIT-5F81A886F31D44D4 / IMPLICIT-14198B49A125D810
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8794F91F4C3EA2B7 / title: "三重死亡与执念逃避函数族" / IMPLICIT-8794F91F4C3EA2B7 / IMPLICIT-14198B49A125D810
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AF6AA8D88C9AD3B8 / title: "三重死亡与执念逃避函数族" / IMPLICIT-AF6AA8D88C9AD3B8 / IMPLICIT-14198B49A125D810
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D8F87E0415BEF356 / title: "三重死亡与执念逃避函数族" / IMPLICIT-D8F87E0415BEF356 / IMPLICIT-14198B49A125D810
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三重死亡与执念逃避函数族"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DFD418877E4A4F29 / title: "三重死亡与执念逃避函数族" / IMPLICIT-DFD418877E4A4F29 / IMPLICIT-14198B49A125D810
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

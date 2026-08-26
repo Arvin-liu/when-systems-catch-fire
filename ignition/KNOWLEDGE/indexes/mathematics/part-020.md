@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [门控组合-中心极限定理](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：D236 / 门控组合-中心极限定理 / D236
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D270；被引用：NFC-61902d9e697a1c72, NFC-63b84c750eb623aa, NFC-b84650487261e89a, NFC-bfddace945f1fa22
+- [门控组合-中心极限定理](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-9c0f5a789ab5fd27 / 门控组合-中心极限定理
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-501627e4e580fe2c / 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [门控面共振统一函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D216 / 门控面共振统一函数 / D216
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D270；被引用：NFC-2631104a4d15e23a, NFC-5930b972ae851a81, NFC-65efed72899f647f, NFC-7b835c2ab17c9285
+- [门控面共振统一函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3d0d81bc85341514 / 门控面共振统一函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [门控面合并 → 四种基本力的结构性统一（候选机制，非物理机制）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b2cc0619ebba08d5 / 门控面合并 → 四种基本力的结构性统一（候选机制，非物理机制）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [门控面合并是物理统一的数学本质，通过减少门控面数量降低Φ，提升系统稳定度Ω。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a2288d1b991e3869 / 门控面合并是物理统一的数学本质，通过减少门控面数量降低Φ，提升系统稳定度Ω。
