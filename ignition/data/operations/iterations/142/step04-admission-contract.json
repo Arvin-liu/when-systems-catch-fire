@@ -1,0 +1,31 @@
+{
+  "schema_version": "ignition-142-step04-admission-contract-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "04",
+  "status": "PASS",
+  "contract_path": "ignition/data/operations/executor-admission-contract-r1.json",
+  "validator_path": "ignition/tools/validate_executor_admission_contract.py",
+  "provider_neutral": true,
+  "class_separation": {
+    "agentic_executor": "may be live-eligible only after every admission gate passes",
+    "reasoner_runtime": "a model/runtime facility, not an agentic executor",
+    "tool": "a deterministic operation, not an agentic executor",
+    "ui_surface": "an interaction surface, not an agentic executor"
+  },
+  "required_gates": ["public_auth", "auth_separation", "argv_contract", "structured_result", "workspace", "capture", "validator_binding", "cleanup", "permission_ceiling", "exact_binding", "no_effect_scope"],
+  "live_policy": {
+    "max_attempts_total": 2,
+    "max_attempts_per_family": 1,
+    "stop_on_first_validated_completion": true,
+    "child_spawn": "DENY",
+    "side_effect_scope": "SYNTHETIC_READ_ONLY_NO_CHANNEL_BROWSER_REMOTE_GIT_CONFIG_OR_BILLING",
+    "workspace_mode": "DISPOSABLE_READ_ONLY_FIXTURE"
+  },
+  "result_binding": ["task_id", "dispatch_id", "attempt_id", "executor_id", "family", "lease_id", "workspace_digest_before", "workspace_digest_after", "capture_ref", "structured_result_ref", "validator_ref"],
+  "offline_contract_evaluation": {
+    "candidate_placeholder": "BLOCKED",
+    "blocker": "CONTRACT_ONLY_NO_CANDIDATE_ADMITTED",
+    "live_process_started": false
+  },
+  "claim_ceiling": "Repository-local provider-neutral admission contract only; no executor is yet installed, authenticated, admitted or invoked."
+}
