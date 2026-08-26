@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 2912" width="1800" height="2912" role="img" preserveAspectRatio="xMidYMin meet" aria-labelledby="map-title map-description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 3044" width="1800" height="3044" role="img" preserveAspectRatio="xMidYMin meet" aria-labelledby="map-title map-description">
   <title id="map-title">点火唯一完整可点击总架构图</title>
-  <desc id="map-description">唯一完整总架构图；0.15.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R7 Live State Semantics &amp; Structured Result Reliability → Pack/Federation routing → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Live Bridge 只拥有 provider-neutral 的 bounded envelope、capability lease、transport、receipt、timeout/cancel/reconciliation 与独立验证边界，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</desc>
+  <desc id="map-description">唯一完整总架构图；0.16.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R8 Task Lifecycle Decoupling &amp; Executor Admission → Pack/Federation routing → provider-neutral Executor Admission → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Formal Task Lifecycle 与 Open Obligation Registry 分别记录任务终态和长期义务，前者可以引用后者但不由 obligation liveness 推导；Executor Admission 只按统一安全、auth、structured-result、capture、workspace、cleanup 与 validator 维度决定是否进入 bounded live bridge，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering、Task Lifecycle、Obligation Registry、Executor Admission 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</desc>
   <style>
       .map-bg{fill:#f8fafc}.map-title{font:700 30px system-ui,sans-serif;fill:#0f172a}
       .map-subtitle{font:400 15px system-ui,sans-serif;fill:#475569}
@@ -22,22 +22,22 @@
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0f172a" flood-opacity=".10" />
     </filter>
   </defs>
-  <rect class="map-bg" x="0" y="0" width="1800" height="2912" />
+  <rect class="map-bg" x="0" y="0" width="1800" height="3044" />
   <text class="map-title" x="32" y="42">点火唯一完整可点击总架构图</text>
-  <text class="map-subtitle" x="32" y="72">唯一完整总架构图；0.15.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R7 Live State Semantics &amp; Structured Result Reliability → Pack/Federation routing → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Live Bridge 只拥有 provider-neutral 的 bounded envelope、capability lease、transport、receipt、timeout/cancel/reconciliation 与独立验证边界，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</text>
+  <text class="map-subtitle" x="32" y="72">唯一完整总架构图；0.16.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R8 Task Lifecycle Decoupling &amp; Executor Admission → Pack/Federation routing → provider-neutral Executor Admission → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Formal Task Lifecycle 与 Open Obligation Registry 分别记录任务终态和长期义务，前者可以引用后者但不由 obligation liveness 推导；Executor Admission 只按统一安全、auth、structured-result、capture、workspace、cleanup 与 validator 维度决定是否进入 bounded live bridge，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering、Task Lifecycle、Obligation Registry、Executor Admission 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</text>
   <text class="boundary-note" x="32" y="98">点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。</text>
   <g class="semantic-trunk" aria-label="Current semantic trunk：OS 在中间，外部执行器是可替换手脚" data-mode="bounded_reading_path" data-loop-target="os_control">
     <rect class="semantic-trunk-band" x="32" y="103" width="1736" height="18" rx="9" />
-    <text class="semantic-trunk-label" x="44" y="116">主干：Owner / Value Charter → Ignition OS control / governance spine with durable lifecycle and explainable steering → Pack / Federation routing → OS-owned bounded live bridge and observation plane → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback / advisory structure → OS</text>
+    <text class="semantic-trunk-label" x="44" y="116">主干：Owner / Value Charter → Ignition OS control / governance spine with independent task terminality, obligations, durable lifecycle and explainable steering → Pack / Federation routing → OS-owned bounded live bridge, admission and observation plane → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback / advisory structure → OS</text>
   </g>
   <rect class="cluster" data-group="front_doors" x="32" y="1918" width="560" height="520" rx="16" stroke="#2563eb" />
   <text class="cluster-title" x="54" y="1950" fill="#2563eb">前门 / 导航</text>
   <text class="cluster-desc" x="54" y="1976">
     <tspan x="54" dy="0">人类、AI 与机器进入项目的当前入口</tspan>
   </text>
-  <rect class="cluster" data-group="layers" x="620" y="2294" width="560" height="586" rx="16" stroke="#7c3aed" />
-  <text class="cluster-title" x="642" y="2326" fill="#7c3aed">L0—L6 七层主架构</text>
-  <text class="cluster-desc" x="642" y="2352">
+  <rect class="cluster" data-group="layers" x="620" y="2426" width="560" height="586" rx="16" stroke="#7c3aed" />
+  <text class="cluster-title" x="642" y="2458" fill="#7c3aed">L0—L6 七层主架构</text>
+  <text class="cluster-desc" x="642" y="2484">
     <tspan x="642" dy="0">来源到解释出版的认识权限链；不存在 L7</tspan>
   </text>
   <rect class="cluster" data-group="core" x="1208" y="122" width="560" height="256" rx="16" stroke="#0f766e" />
@@ -50,9 +50,9 @@
   <text class="cluster-desc" x="54" y="180">
     <tspan x="54" dy="0">多尺度、概率动力学与自适应关系的候选表示</tspan>
   </text>
-  <rect class="cluster" data-group="operations" x="620" y="1396" width="560" height="454" rx="16" stroke="#d97706" />
-  <text class="cluster-title" x="642" y="1428" fill="#d97706">控制 / 操作层</text>
-  <text class="cluster-desc" x="642" y="1454">
+  <rect class="cluster" data-group="operations" x="620" y="1528" width="560" height="454" rx="16" stroke="#d97706" />
+  <text class="cluster-title" x="642" y="1560" fill="#d97706">控制 / 操作层</text>
+  <text class="cluster-desc" x="642" y="1586">
     <tspan x="642" dy="0">行动、注意力、地图、迭代与类型化传播闭包</tspan>
   </text>
   <rect class="cluster" data-group="governance" x="1208" y="406" width="560" height="982" rx="16" stroke="#be123c" />
@@ -65,14 +65,14 @@
   <text class="cluster-desc" x="54" y="748">
     <tspan x="54" dy="0">双来源素材池、公共表达与可追溯成果</tspan>
   </text>
-  <rect class="cluster" data-group="feedback" x="620" y="1878" width="560" height="388" rx="16" stroke="#15803d" />
-  <text class="cluster-title" x="642" y="1910" fill="#15803d">现实反馈环</text>
-  <text class="cluster-desc" x="642" y="1936">
+  <rect class="cluster" data-group="feedback" x="620" y="2010" width="560" height="388" rx="16" stroke="#15803d" />
+  <text class="cluster-title" x="642" y="2042" fill="#15803d">现实反馈环</text>
+  <text class="cluster-desc" x="642" y="2068">
     <tspan x="642" dy="0">作品响应经来源登记后返回适用点火流程</tspan>
   </text>
-  <rect class="cluster" data-group="boundaries" x="1208" y="2162" width="560" height="322" rx="16" stroke="#475569" />
-  <text class="cluster-title" x="1230" y="2194" fill="#475569">图的解释边界</text>
-  <text class="cluster-desc" x="1230" y="2220">
+  <rect class="cluster" data-group="boundaries" x="1208" y="2228" width="560" height="322" rx="16" stroke="#475569" />
+  <text class="cluster-title" x="1230" y="2260" fill="#475569">图的解释边界</text>
+  <text class="cluster-desc" x="1230" y="2286">
     <tspan x="1230" dy="0">这是一张导航接口，不是完整性、因果或理论证明</tspan>
   </text>
   <rect class="cluster" data-group="language_thought" x="32" y="472" width="560" height="190" rx="16" stroke="#0369a1" />
@@ -80,11 +80,11 @@
   <text class="cluster-desc" x="54" y="530">
     <tspan x="54" dy="0">横穿 L0—L6 保存语言框架差异、残余与目标语言实现；不是 L7</tspan>
   </text>
-  <rect class="cluster" data-group="os_spine" x="620" y="122" width="560" height="1246" rx="16" stroke="#1d4ed8" />
+  <rect class="cluster" data-group="os_spine" x="620" y="122" width="560" height="1378" rx="16" stroke="#1d4ed8" />
   <text class="cluster-title" x="642" y="154" fill="#1d4ed8">Ignition OS / 控制脊柱</text>
   <text class="cluster-desc" x="642" y="180">
-    <tspan x="642" dy="0">Owner/Human、Profile、Kernel、Runtime、R4 Steering /</tspan>
-    <tspan x="642" dy="16">Intent 与 Control Plane、Durability 和 Memory 的点火 OS</tspan>
+    <tspan x="642" dy="0">Owner/Human、Profile、Kernel、Runtime、Control</tspan>
+    <tspan x="642" dy="16">Plane、Task Lifecycle、Obligation、Durability、Steering</tspan>
   </text>
   <rect class="cluster" data-group="domain_packs" x="32" y="1436" width="560" height="454" rx="16" stroke="#6d28d9" />
   <text class="cluster-title" x="54" y="1468" fill="#6d28d9">Domain / Skill Packs</text>
@@ -92,11 +92,11 @@
     <tspan x="54" dy="0">通过统一 Pack Contract 加载 Knowledge、Research、Writing</tspan>
     <tspan x="54" dy="16">与非知识 pilot；Pack 不获得通用 authority</tspan>
   </text>
-  <rect class="cluster" data-group="federation" x="1208" y="1416" width="560" height="718" rx="16" stroke="#ea580c" />
+  <rect class="cluster" data-group="federation" x="1208" y="1416" width="560" height="784" rx="16" stroke="#ea580c" />
   <text class="cluster-title" x="1230" y="1448" fill="#ea580c">Federation / 外部手脚</text>
   <text class="cluster-desc" x="1230" y="1474">
-    <tspan x="1230" dy="0">Federation 与 OpenClaw、Hermes、Codex、Reference/Future</tspan>
-    <tspan x="1230" dy="16">Executors 的外部、可替换手脚边界</tspan>
+    <tspan x="1230" dy="0">Federation、provider-neutral admission 与</tspan>
+    <tspan x="1230" dy="16">OpenClaw、Hermes、Codex、Reference/Future Executors</tspan>
   </text>
   <g aria-label="system relations">
     <path class="edge" d="M 312.0 1166.0 C 312.0 1007.0, 312.0 1007.0, 312.0 848.0" data-source="point_fire_analysis" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
@@ -108,73 +108,73 @@
     <path class="edge" d="M 312.0 1100.0 C 312.0 1106.0, 312.0 1106.0, 312.0 1112.0" data-source="case_source" data-target-node="point_fire_analysis" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>case_source → point_fire_analysis: 点火处理 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 591.0 C 1194.0 591.0, 1194.0 1713.0, 900.0 1713.0" data-source="charter_system_r1" data-target-node="iteration" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 591.0 C 1194.0 591.0, 1194.0 1845.0, 900.0 1845.0" data-source="charter_system_r1" data-target-node="iteration" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
       <title>charter_system_r1 → iteration: 宪章门控迭代 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 2367.0 C 900.0 2367.0, 900.0 2413.0, 1488.0 2413.0" data-source="current_state" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 312.0 2367.0 C 900.0 2367.0, 900.0 2479.0, 1488.0 2479.0" data-source="current_state" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>current_state → no_totality_proof: 完整性边界 [synchronization_obligation]</title>
     </path>
     <path class="edge" d="M 312.0 836.0 C 312.0 875.0, 312.0 875.0, 312.0 914.0" data-source="external_input" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>external_input → source_pool: 外部材料 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 241.0 C 1194.0 241.0, 1194.0 2545.0, 900.0 2545.0" data-source="foundation" data-target-node="l2" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 1488.0 241.0 C 1194.0 241.0, 1194.0 2677.0, 900.0 2677.0" data-source="foundation" data-target-node="l2" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>foundation → l2: 权威对象 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 241.0 C 1488.0 241.0, 1488.0 2347.0, 1488.0 2347.0" data-source="foundation" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 241.0 C 1488.0 241.0, 1488.0 2413.0, 1488.0 2413.0" data-source="foundation" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>foundation → no_truth_upgrade: 真值边界 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 307.0 C 1194.0 307.0, 1194.0 1515.0, 900.0 1515.0" data-source="function_os" data-target-node="q12" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 1488.0 307.0 C 1194.0 307.0, 1194.0 1647.0, 900.0 1647.0" data-source="function_os" data-target-node="q12" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
       <title>function_os → q12: 执行动作 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 312.0 902.0 C 312.0 908.0, 312.0 908.0, 312.0 914.0" data-source="ignition_increment" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>ignition_increment → source_pool: 点火增量 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1740.0 C 900.0 1746.0, 900.0 1746.0, 900.0 1752.0" data-source="iteration" data-target-node="sync" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 900.0 1872.0 C 900.0 1878.0, 900.0 1878.0, 900.0 1884.0" data-source="iteration" data-target-node="sync" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
       <title>iteration → sync: 传播闭包 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2413.0, 900.0 2413.0" data-source="language_thought_plane" data-target-node="l0" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2545.0, 900.0 2545.0" data-source="language_thought_plane" data-target-node="l0" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
       <title>language_thought_plane → l0: 来源语言与转换链 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2479.0, 900.0 2479.0" data-source="language_thought_plane" data-target-node="l1" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2611.0, 900.0 2611.0" data-source="language_thought_plane" data-target-node="l1" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
       <title>language_thought_plane → l1: 命题框架差异 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2545.0, 900.0 2545.0" data-source="language_thought_plane" data-target-node="l2" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2677.0, 900.0 2677.0" data-source="language_thought_plane" data-target-node="l2" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
       <title>language_thought_plane → l2: 对象与事件包装 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2611.0, 900.0 2611.0" data-source="language_thought_plane" data-target-node="l3" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2743.0, 900.0 2743.0" data-source="language_thought_plane" data-target-node="l3" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
       <title>language_thought_plane → l3: 篇章与连接审计 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2677.0, 900.0 2677.0" data-source="language_thought_plane" data-target-node="l4" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2809.0, 900.0 2809.0" data-source="language_thought_plane" data-target-node="l4" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
       <title>language_thought_plane → l4: 机制主体与终点 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2743.0, 900.0 2743.0" data-source="language_thought_plane" data-target-node="l5" data-relation-class="validates" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2875.0, 900.0 2875.0" data-source="language_thought_plane" data-target-node="l5" data-relation-class="validates" data-relation-domain="synchronization_obligation">
       <title>language_thought_plane → l5: 框架差异与残余门 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2809.0, 900.0 2809.0" data-source="language_thought_plane" data-target-node="l6" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 312.0 591.0 C 606.0 591.0, 606.0 2941.0, 900.0 2941.0" data-source="language_thought_plane" data-target-node="l6" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
       <title>language_thought_plane → l6: 目标语言实现 [synchronization_obligation]</title>
     </path>
     <path class="edge" d="M 312.0 591.0 C 312.0 591.0, 312.0 1007.0, 312.0 1007.0" data-source="language_thought_plane" data-target-node="zhiyuan_method" data-relation-class="synchronization_requires" data-relation-domain="synchronization_obligation">
       <title>language_thought_plane → zhiyuan_method: 中文直接成句与残余 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 900.0 2440.0 C 900.0 2446.0, 900.0 2446.0, 900.0 2452.0" data-source="l0" data-target-node="l1" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2572.0 C 900.0 2578.0, 900.0 2578.0, 900.0 2584.0" data-source="l0" data-target-node="l1" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>l0 → l1: 受控语义 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2506.0 C 900.0 2512.0, 900.0 2512.0, 900.0 2518.0" data-source="l1" data-target-node="l2" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2638.0 C 900.0 2644.0, 900.0 2644.0, 900.0 2650.0" data-source="l1" data-target-node="l2" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>l1 → l2: 形式化 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2572.0 C 900.0 2578.0, 900.0 2578.0, 900.0 2584.0" data-source="l2" data-target-node="l3" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2704.0 C 900.0 2710.0, 900.0 2710.0, 900.0 2716.0" data-source="l2" data-target-node="l3" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>l2 → l3: 论证 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2638.0 C 900.0 2644.0, 900.0 2644.0, 900.0 2650.0" data-source="l3" data-target-node="l4" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2770.0 C 900.0 2776.0, 900.0 2776.0, 900.0 2782.0" data-source="l3" data-target-node="l4" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>l3 → l4: 模型与证明 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2704.0 C 900.0 2710.0, 900.0 2710.0, 900.0 2716.0" data-source="l4" data-target-node="l5" data-relation-class="validates" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2836.0 C 900.0 2842.0, 900.0 2842.0, 900.0 2848.0" data-source="l4" data-target-node="l5" data-relation-class="validates" data-relation-domain="repository_dependency">
       <title>l4 → l5: 验证 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2770.0 C 900.0 2776.0, 900.0 2776.0, 900.0 2782.0" data-source="l5" data-target-node="l6" data-relation-class="publishes" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2902.0 C 900.0 2908.0, 900.0 2908.0, 900.0 2914.0" data-source="l5" data-target-node="l6" data-relation-class="publishes" data-relation-domain="repository_dependency">
       <title>l5 → l6: 受约束发布 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 1251.0 C 1194.0 1251.0, 1194.0 2809.0, 900.0 2809.0" data-source="licensing" data-target-node="l6" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 1251.0 C 1194.0 1251.0, 1194.0 2941.0, 900.0 2941.0" data-source="licensing" data-target-node="l6" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
       <title>licensing → l6: 发布权利边界 [synchronization_obligation]</title>
     </path>
     <path class="edge" d="M 312.0 268.0 C 312.0 274.0, 312.0 274.0, 312.0 280.0" data-source="mcf" data-target-node="psd" data-relation-class="enabling_condition" data-relation-domain="substantive_causal_candidate">
@@ -183,52 +183,52 @@
     <path class="edge" d="M 312.0 1034.0 C 312.0 1106.0, 312.0 1106.0, 312.0 1178.0" data-source="zhiyuan_method" data-target-node="accepted_work" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>zhiyuan_method → accepted_work: 公共表达 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 2308.0 C 1488.0 2314.0, 1488.0 2314.0, 1488.0 2320.0" data-source="no_l7" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 2374.0 C 1488.0 2380.0, 1488.0 2380.0, 1488.0 2386.0" data-source="no_l7" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>no_l7 → no_truth_upgrade: 边界 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 2374.0 C 1488.0 2380.0, 1488.0 2380.0, 1488.0 2386.0" data-source="no_truth_upgrade" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 2440.0 C 1488.0 2446.0, 1488.0 2446.0, 1488.0 2452.0" data-source="no_truth_upgrade" data-target-node="no_totality_proof" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>no_truth_upgrade → no_totality_proof: 边界 [synchronization_obligation]</title>
     </path>
     <path class="edge" d="M 312.0 968.0 C 312.0 974.0, 312.0 974.0, 312.0 980.0" data-source="source_pool" data-target-node="zhiyuan_method" data-relation-class="enabling_condition" data-relation-domain="repository_dependency">
       <title>source_pool → zhiyuan_method: 选材与边界 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2090.0 C 900.0 2096.0, 900.0 2096.0, 900.0 2102.0" data-source="provenance_capture" data-target-node="candidate_return" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2222.0 C 900.0 2228.0, 900.0 2228.0, 900.0 2234.0" data-source="provenance_capture" data-target-node="candidate_return" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>provenance_capture → candidate_return: 范围审查 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1542.0 C 900.0 1548.0, 900.0 1548.0, 900.0 1554.0" data-source="q12" data-target-node="q13" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 1674.0 C 900.0 1680.0, 900.0 1680.0, 900.0 1686.0" data-source="q12" data-target-node="q13" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>q12 → q13: 增量与吸引子控制 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1608.0 C 900.0 1614.0, 900.0 1614.0, 900.0 1620.0" data-source="q13" data-target-node="q14" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 1740.0 C 900.0 1746.0, 900.0 1746.0, 900.0 1752.0" data-source="q13" data-target-node="q14" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>q13 → q14: 版本化导航 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1674.0 C 900.0 1680.0, 900.0 1680.0, 900.0 1686.0" data-source="q14" data-target-node="iteration" data-relation-class="documents" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 1806.0 C 900.0 1812.0, 900.0 1812.0, 900.0 1818.0" data-source="q14" data-target-node="iteration" data-relation-class="documents" data-relation-domain="repository_dependency">
       <title>q14 → iteration: 行动与修订 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 312.0 2064.0 C 312.0 2202.0, 312.0 2202.0, 312.0 2340.0" data-source="readme" data-target-node="current_state" data-relation-class="documents" data-relation-domain="repository_dependency">
       <title>readme → current_state: 展开当前状态 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 2037.0 C 606.0 2037.0, 606.0 2413.0, 900.0 2413.0" data-source="readme" data-target-node="l0" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 2037.0 C 606.0 2037.0, 606.0 2545.0, 900.0 2545.0" data-source="readme" data-target-node="l0" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>readme → l0: 进入架构 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2024.0 C 900.0 2030.0, 900.0 2030.0, 900.0 2036.0" data-source="public_response" data-target-node="provenance_capture" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 900.0 2156.0 C 900.0 2162.0, 900.0 2162.0, 900.0 2168.0" data-source="public_response" data-target-node="provenance_capture" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
       <title>public_response → provenance_capture: 登记 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 900.0 2129.0 C 606.0 2129.0, 606.0 941.0, 312.0 941.0" data-source="candidate_return" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2261.0 C 606.0 2261.0, 606.0 941.0, 312.0 941.0" data-source="candidate_return" data-target-node="source_pool" data-relation-class="derives" data-relation-domain="repository_dependency">
       <title>candidate_return → source_pool: 可继续写作 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2156.0 C 900.0 2162.0, 900.0 2162.0, 900.0 2168.0" data-source="candidate_return" data-target-node="feedback_routes" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2288.0 C 900.0 2294.0, 900.0 2294.0, 900.0 2300.0" data-source="candidate_return" data-target-node="feedback_routes" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>candidate_return → feedback_routes: 分派 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 2195.0 C 606.0 2195.0, 606.0 875.0, 312.0 875.0" data-source="feedback_routes" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 2327.0 C 606.0 2327.0, 606.0 875.0, 312.0 875.0" data-source="feedback_routes" data-target-node="ignition_increment" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>feedback_routes → ignition_increment: 新增量 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 1317.0 C 1194.0 1317.0, 1194.0 1713.0, 900.0 1713.0" data-source="sustainability" data-target-node="iteration" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 1317.0 C 1194.0 1317.0, 1194.0 1845.0, 900.0 1845.0" data-source="sustainability" data-target-node="iteration" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>sustainability → iteration: 可承受行动 [synchronization_obligation]</title>
     </path>
     <path class="edge" d="M 312.0 1232.0 C 312.0 1271.0, 312.0 1271.0, 312.0 1310.0" data-source="accepted_work" data-target-node="showcase_registry" data-relation-class="documents" data-relation-domain="repository_dependency">
       <title>accepted_work → showcase_registry: 机器登记 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 312.0 1205.0 C 606.0 1205.0, 606.0 1997.0, 900.0 1997.0" data-source="accepted_work" data-target-node="public_response" data-relation-class="publishes" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 312.0 1205.0 C 606.0 1205.0, 606.0 2129.0, 900.0 2129.0" data-source="accepted_work" data-target-node="public_response" data-relation-class="publishes" data-relation-domain="repository_dependency">
       <title>accepted_work → public_response: 现实暴露 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 312.0 1232.0 C 312.0 1238.0, 312.0 1238.0, 312.0 1244.0" data-source="accepted_work" data-target-node="showcase" data-relation-class="publishes" data-relation-domain="repository_dependency">
@@ -258,10 +258,10 @@
     <path class="edge" d="M 1488.0 552.0 C 1488.0 591.0, 1488.0 591.0, 1488.0 630.0" data-source="charter" data-target-node="epistemic_governance_kernel" data-relation-class="governance_constrains" data-relation-domain="synchronization_obligation">
       <title>charter → epistemic_governance_kernel: 行动许可边界 [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 657.0 C 1194.0 657.0, 1194.0 2809.0, 900.0 2809.0" data-source="epistemic_governance_kernel" data-target-node="l6" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 657.0 C 1194.0 657.0, 1194.0 2941.0, 900.0 2941.0" data-source="epistemic_governance_kernel" data-target-node="l6" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>epistemic_governance_kernel → l6: ceiling / provenance / withdrawal route [synchronization_obligation]</title>
     </path>
-    <path class="edge" d="M 1488.0 657.0 C 1488.0 657.0, 1488.0 2347.0, 1488.0 2347.0" data-source="epistemic_governance_kernel" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 1488.0 657.0 C 1488.0 657.0, 1488.0 2413.0, 1488.0 2413.0" data-source="epistemic_governance_kernel" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>epistemic_governance_kernel → no_truth_upgrade: 联邦内核不制造真值 [synchronization_obligation]</title>
     </path>
     <path class="edge" d="M 1488.0 684.0 C 1488.0 690.0, 1488.0 690.0, 1488.0 696.0" data-source="epistemic_governance_kernel" data-target-node="structural_governance_surface" data-relation-class="projects" data-relation-domain="synchronization_obligation">
@@ -324,7 +324,7 @@
     <path class="edge" d="M 900.0 439.0 C 606.0 439.0, 606.0 1819.0, 312.0 1819.0" data-source="agent_runtime_r0" data-target-node="nonknowledge_pilot" data-relation-class="validates" data-relation-domain="repository_dependency">
       <title>agent_runtime_r0 → nonknowledge_pilot: 非知识闭环验证 Runtime 隔离 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 373.0 C 1194.0 373.0, 1194.0 2347.0, 1488.0 2347.0" data-source="agent_kernel_r0" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
+    <path class="edge" d="M 900.0 373.0 C 1194.0 373.0, 1194.0 2413.0, 1488.0 2413.0" data-source="agent_kernel_r0" data-target-node="no_truth_upgrade" data-relation-class="constraint" data-relation-domain="synchronization_obligation">
       <title>agent_kernel_r0 → no_truth_upgrade: 通用 Kernel 不升级真值或 Owner 权限 [synchronization_obligation]</title>
     </path>
     <path class="edge" d="M 900.0 466.0 C 900.0 538.0, 900.0 538.0, 900.0 610.0" data-source="agent_runtime_r0" data-target-node="event_ledger_r1" data-relation-class="generates" data-relation-domain="repository_dependency">
@@ -345,26 +345,35 @@
     <path class="edge" d="M 900.0 466.0 C 900.0 769.0, 900.0 769.0, 900.0 1072.0" data-source="agent_runtime_r0" data-target-node="concurrent_operational_memory_r2" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>agent_runtime_r0 → concurrent_operational_memory_r2: Runtime 吸收并发 Operational Memory 事件 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1126.0 C 900.0 1198.0, 900.0 1198.0, 900.0 1270.0" data-source="concurrent_operational_memory_r2" data-target-node="driver_console_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 1126.0 C 900.0 1264.0, 900.0 1264.0, 900.0 1402.0" data-source="concurrent_operational_memory_r2" data-target-node="driver_console_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>concurrent_operational_memory_r2 → driver_console_r1: Memory 生成 Driver Console 的恢复提示 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 900.0 466.0 C 900.0 802.0, 900.0 802.0, 900.0 1138.0" data-source="agent_runtime_r0" data-target-node="durability_lifecycle_r3" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>agent_runtime_r0 → durability_lifecycle_r3: Runtime 生成有界 Durability / Lifecycle 记录 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1192.0 C 900.0 1231.0, 900.0 1231.0, 900.0 1270.0" data-source="durability_lifecycle_r3" data-target-node="driver_console_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 1192.0 C 900.0 1297.0, 900.0 1297.0, 900.0 1402.0" data-source="durability_lifecycle_r3" data-target-node="driver_console_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>durability_lifecycle_r3 → driver_console_r1: Durability 状态进入 Driver Console 恢复视图 [repository_dependency]</title>
     </path>
     <path class="edge" d="M 900.0 466.0 C 900.0 835.0, 900.0 835.0, 900.0 1204.0" data-source="agent_runtime_r0" data-target-node="steering_intent_obligation_r1" data-relation-class="generates" data-relation-domain="repository_dependency">
       <title>agent_runtime_r0 → steering_intent_obligation_r1: Runtime 生成有界 Steering / Intent / Goal / Obligation 记录 [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 900.0 1258.0 C 900.0 1264.0, 900.0 1264.0, 900.0 1270.0" data-source="steering_intent_obligation_r1" data-target-node="driver_console_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 900.0 1258.0 C 900.0 1330.0, 900.0 1330.0, 900.0 1402.0" data-source="steering_intent_obligation_r1" data-target-node="driver_console_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>steering_intent_obligation_r1 → driver_console_r1: Steering why-next 与 obligation 状态进入 Driver Console [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 1562.0 C 1488.0 1766.0, 1488.0 1766.0, 1488.0 1970.0" data-source="external_agent_federation" data-target-node="live_executor_bridge_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 1488.0 1562.0 C 1488.0 1799.0, 1488.0 1799.0, 1488.0 2036.0" data-source="external_agent_federation" data-target-node="live_executor_bridge_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>external_agent_federation → live_executor_bridge_r1: Federation 将 bounded live dispatch 交给 OS Bridge [repository_dependency]</title>
     </path>
-    <path class="edge" d="M 1488.0 2024.0 C 1488.0 2030.0, 1488.0 2030.0, 1488.0 2036.0" data-source="live_executor_bridge_r1" data-target-node="live_observation_reconciliation_plane_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+    <path class="edge" d="M 1488.0 2090.0 C 1488.0 2096.0, 1488.0 2096.0, 1488.0 2102.0" data-source="live_executor_bridge_r1" data-target-node="live_observation_reconciliation_plane_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
       <title>live_executor_bridge_r1 → live_observation_reconciliation_plane_r1: Live Bridge 将 process evidence 交给 Observation / Reconciliation Plane [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 900.0 1324.0 C 900.0 1330.0, 900.0 1330.0, 900.0 1336.0" data-source="formal_task_lifecycle_r1" data-target-node="open_obligation_registry_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>formal_task_lifecycle_r1 → open_obligation_registry_r1: Formal task 引用可 carry-forward obligation，但不继承其 liveness [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 1562.0 C 1488.0 1766.0, 1488.0 1766.0, 1488.0 1970.0" data-source="external_agent_federation" data-target-node="executor_admission_r1" data-relation-class="projects" data-relation-domain="repository_dependency">
+      <title>external_agent_federation → executor_admission_r1: Federation 进入 provider-neutral executor admission [repository_dependency]</title>
+    </path>
+    <path class="edge" d="M 1488.0 2024.0 C 1488.0 2030.0, 1488.0 2030.0, 1488.0 2036.0" data-source="executor_admission_r1" data-target-node="live_executor_bridge_r1" data-relation-class="governance_constrains" data-relation-domain="repository_dependency">
+      <title>executor_admission_r1 → live_executor_bridge_r1: Admission gate 先于 bounded live dispatch [repository_dependency]</title>
     </path>
   </g>
   <g aria-label="clickable system components">
@@ -412,50 +421,50 @@
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l0" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L0 来源与证据：保存来源事实、版本、范围与证据边界。">
       <title>L0 来源与证据 — 保存来源事实、版本、范围与证据边界。</title>
-      <rect class="node" x="642.0" y="2386.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2419.0">
+      <rect class="node" x="642.0" y="2518.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2551.0">
         <tspan x="658.0" dy="0">L0 来源与证据</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l1" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L1 受控语义命题：声明主体、条件、量词、范围与失败边界。">
       <title>L1 受控语义命题 — 声明主体、条件、量词、范围与失败边界。</title>
-      <rect class="node" x="642.0" y="2452.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2485.0">
+      <rect class="node" x="642.0" y="2584.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2617.0">
         <tspan x="658.0" dy="0">L1 受控语义命题</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l2" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L2 形式对象：选择可审计的对象类型与规范表示。">
       <title>L2 形式对象 — 选择可审计的对象类型与规范表示。</title>
-      <rect class="node" x="642.0" y="2518.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2551.0">
+      <rect class="node" x="642.0" y="2650.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2683.0">
         <tspan x="658.0" dy="0">L2 形式对象</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l3" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L3 逻辑论证：保存前提、规则、结论、反例与未决义务。">
       <title>L3 逻辑论证 — 保存前提、规则、结论、反例与未决义务。</title>
-      <rect class="node" x="642.0" y="2584.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2617.0">
+      <rect class="node" x="642.0" y="2716.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2749.0">
         <tspan x="658.0" dy="0">L3 逻辑论证</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l4" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L4 数学模型与证明：保存模型、证明义务、证明和反例工件。">
       <title>L4 数学模型与证明 — 保存模型、证明义务、证明和反例工件。</title>
-      <rect class="node" x="642.0" y="2650.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2683.0">
+      <rect class="node" x="642.0" y="2782.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2815.0">
         <tspan x="658.0" dy="0">L4 数学模型与证明</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l5" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L5 验证与有效性：分开评估形式、逻辑、数学、经验、范围与来源。">
       <title>L5 验证与有效性 — 分开评估形式、逻辑、数学、经验、范围与来源。</title>
-      <rect class="node" x="642.0" y="2716.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2749.0">
+      <rect class="node" x="642.0" y="2848.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2881.0">
         <tspan x="658.0" dy="0">L5 验证与有效性</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="l6" data-group="layers" data-target="ARCHITECTURE.md#七层关系" aria-label="L6 解释、应用与出版：在不提高下层 claim 的前提下阐释、应用与发布。">
       <title>L6 解释、应用与出版 — 在不提高下层 claim 的前提下阐释、应用与发布。</title>
-      <rect class="node" x="642.0" y="2782.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2815.0">
+      <rect class="node" x="642.0" y="2914.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2947.0">
         <tspan x="658.0" dy="0">L6 解释、应用与出版</tspan>
       </text>
     </a>
@@ -496,38 +505,38 @@
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/effectual-action-plane.md" target="_top" data-node-id="q12" data-group="operations" data-target="docs/architecture/effectual-action-plane.md" aria-label="Q12 行动 / 机制双环：从最小状态改变到行动后机制裁决。">
       <title>Q12 行动 / 机制双环 — 从最小状态改变到行动后机制裁决。</title>
-      <rect class="node" x="642.0" y="1488.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="1510.0">
+      <rect class="node" x="642.0" y="1620.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1642.0">
         <tspan x="658.0" dy="0">Q12 行动 /</tspan>
         <tspan x="658.0" dy="18">机制双环</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/attention-attractor-control-plane.md" target="_top" data-node-id="q13" data-group="operations" data-target="docs/architecture/attention-attractor-control-plane.md" aria-label="Q13 注意力 / 分布 / 压缩：控制吸引子、采样分布、决策坍缩与压缩完整性。">
       <title>Q13 注意力 / 分布 / 压缩 — 控制吸引子、采样分布、决策坍缩与压缩完整性。</title>
-      <rect class="node" x="642.0" y="1554.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="1576.0">
+      <rect class="node" x="642.0" y="1686.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1708.0">
         <tspan x="658.0" dy="0">Q13 注意力 /</tspan>
         <tspan x="658.0" dy="18">分布 / 压缩</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/ignition-atlas.md" target="_top" data-node-id="q14" data-group="operations" data-target="docs/architecture/ignition-atlas.md" aria-label="Q14 点火地图集：提供版本化、多视角、可回溯的导航投影。">
       <title>Q14 点火地图集 — 提供版本化、多视角、可回溯的导航投影。</title>
-      <rect class="node" x="642.0" y="1620.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="1653.0">
+      <rect class="node" x="642.0" y="1752.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1785.0">
         <tspan x="658.0" dy="0">Q14 点火地图集</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ITERATION.md" target="_top" data-node-id="iteration" data-group="operations" data-target="ITERATION.md" aria-label="点火迭代操作法：1.3 增量执行为 Current；1.4 候选增加正交的持续阶段快照发布轴。">
       <title>点火迭代操作法 — 1.3 增量执行为 Current；1.4 候选增加正交的持续阶段快照发布轴。</title>
-      <rect class="node" x="642.0" y="1686.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="1719.0">
+      <rect class="node" x="642.0" y="1818.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1851.0">
         <tspan x="658.0" dy="0">点火迭代操作法</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/operations/synchronization-surfaces.json" target="_top" data-node-id="sync" data-group="operations" data-target="data/operations/synchronization-surfaces.json" aria-label="同步表面 / 类型传播 / 增量执行：1.2 Current 传播闭包与 1.3 Draft 选择性物化联合工作；关键权威变更仍强制 full rebuild。">
       <title>同步表面 / 类型传播 / 增量执行 — 1.2 Current 传播闭包与 1.3 Draft 选择性物化联合工作；关键权威变更仍强制 full rebuild。</title>
-      <rect class="node" x="642.0" y="1752.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="1774.0">
+      <rect class="node" x="642.0" y="1884.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1906.0">
         <tspan x="658.0" dy="0">同步表面 /</tspan>
         <tspan x="658.0" dy="18">类型传播 / 增量执行</tspan>
       </text>
@@ -691,53 +700,53 @@
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="public_response" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="Public work / response：作品、读者响应、作者修订与现实反例。">
       <title>Public work / response — 作品、读者响应、作者修订与现实反例。</title>
-      <rect class="node" x="642.0" y="1970.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="1992.0">
+      <rect class="node" x="642.0" y="2102.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2124.0">
         <tspan x="658.0" dy="0">Public work /</tspan>
         <tspan x="658.0" dy="18">response</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="provenance_capture" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="Provenance capture：登记主体、渠道、时间、原文范围、版本和解释限制。">
       <title>Provenance capture — 登记主体、渠道、时间、原文范围、版本和解释限制。</title>
-      <rect class="node" x="642.0" y="2036.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2069.0">
+      <rect class="node" x="642.0" y="2168.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2201.0">
         <tspan x="658.0" dy="0">Provenance capture</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="candidate_return" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="Candidate source / gap / reality feedback：合格反馈只成为候选来源、缺口或现实反馈，不直接升级真值。">
       <title>Candidate source / gap / reality feedback — 合格反馈只成为候选来源、缺口或现实反馈，不直接升级真值。</title>
-      <rect class="node" x="642.0" y="2102.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2124.0">
+      <rect class="node" x="642.0" y="2234.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2256.0">
         <tspan x="658.0" dy="0">Candidate source /</tspan>
         <tspan x="658.0" dy="18">gap / reality feedback</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/publication/zhiyuan-writing-method.md#%E8%BF%94%E5%9B%9E%E7%82%B9%E7%81%AB" target="_top" data-node-id="feedback_routes" data-group="feedback" data-target="docs/publication/zhiyuan-writing-method.md#返回点火" aria-label="返回 Q12 / Q13 / MCF / PSD / ARN / iteration：由适用组件决定下一行动并生成新的可追溯增量。">
       <title>返回 Q12 / Q13 / MCF / PSD / ARN / iteration — 由适用组件决定下一行动并生成新的可追溯增量。</title>
-      <rect class="node" x="642.0" y="2168.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="658.0" y="2190.0">
+      <rect class="node" x="642.0" y="2300.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="2322.0">
         <tspan x="658.0" dy="0">返回 Q12 /</tspan>
         <tspan x="658.0" dy="18">Q13 / MCF / PSD / ARN / iteration</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/ARCHITECTURE.md#%E4%B8%83%E5%B1%82%E5%85%B3%E7%B3%BB" target="_top" data-node-id="no_l7" data-group="boundaries" data-target="ARCHITECTURE.md#七层关系" aria-label="不增加 L7：系统图和写作素材池都在现有 L0—L6 与 overlay 内工作。">
       <title>不增加 L7 — 系统图和写作素材池都在现有 L0—L6 与 overlay 内工作。</title>
-      <rect class="node" x="1230.0" y="2254.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="1246.0" y="2287.0">
+      <rect class="node" x="1230.0" y="2320.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2353.0">
         <tspan x="1246.0" dy="0">不增加 L7</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/FOUNDATION.md" target="_top" data-node-id="no_truth_upgrade" data-group="boundaries" data-target="FOUNDATION.md" aria-label="不自动升级真值：节点、连线、生成结果、测试与点击量都不能制造事实或因果。">
       <title>不自动升级真值 — 节点、连线、生成结果、测试与点击量都不能制造事实或因果。</title>
-      <rect class="node" x="1230.0" y="2320.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="1246.0" y="2353.0">
+      <rect class="node" x="1230.0" y="2386.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2419.0">
         <tspan x="1246.0" dy="0">不自动升级真值</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/project-current-state.md" target="_top" data-node-id="no_totality_proof" data-group="boundaries" data-target="docs/project-current-state.md" aria-label="不证明理论完整：完整图是当前导航投影，不是永久总图或理论完备性证明。">
       <title>不证明理论完整 — 完整图是当前导航投影，不是永久总图或理论完备性证明。</title>
-      <rect class="node" x="1230.0" y="2386.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="1246.0" y="2419.0">
+      <rect class="node" x="1230.0" y="2452.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2485.0">
         <tspan x="1246.0" dy="0">不证明理论完整</tspan>
       </text>
     </a>
@@ -871,10 +880,25 @@
         <tspan x="658.0" dy="18">Intent / Goal / Obligation R1</tspan>
       </text>
     </a>
-    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Driver%20Console%20R1" target="_top" data-node-id="driver_console_r1" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Driver Console R1" aria-label="Driver Console R1：Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations without becoming a second truth source.">
-      <title>Driver Console R1 — Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations without becoming a second truth source.</title>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/operations/formal-task-lifecycle-r1.json" target="_top" data-node-id="formal_task_lifecycle_r1" data-group="os_spine" data-target="data/operations/formal-task-lifecycle-r1.json" aria-label="Formal Task Lifecycle R1：Independent formal-task terminality authority: scope, steps, publication and witness determine task terminality; an open long-term obligation may be referenced and carried forward but cannot keep a completed task running.">
+      <title>Formal Task Lifecycle R1 — Independent formal-task terminality authority: scope, steps, publication and witness determine task terminality; an open long-term obligation may be referenced and carried forward but cannot keep a completed task running.</title>
       <rect class="node" x="642.0" y="1270.0" width="516.0" height="54.0" rx="10" />
       <text class="node-label" x="658.0" y="1303.0">
+        <tspan x="658.0" dy="0">Formal Task Lifecycle R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/data/operations/open-obligation-registry-r1.json" target="_top" data-node-id="open_obligation_registry_r1" data-group="os_spine" data-target="data/operations/open-obligation-registry-r1.json" aria-label="Open Obligation Registry R1：Independent cross-task obligation authority for identity, status, owner plane, blocker, next eligible action, evidence and carry-forward lineage; obligation closure is not formal-task liveness.">
+      <title>Open Obligation Registry R1 — Independent cross-task obligation authority for identity, status, owner plane, blocker, next eligible action, evidence and carry-forward lineage; obligation closure is not formal-task liveness.</title>
+      <rect class="node" x="642.0" y="1336.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1358.0">
+        <tspan x="658.0" dy="0">Open Obligation Registry</tspan>
+        <tspan x="658.0" dy="18">R1</tspan>
+      </text>
+    </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/os-control-plane-r2.md#Driver%20Console%20R1" target="_top" data-node-id="driver_console_r1" data-group="os_spine" data-target="docs/architecture/os-control-plane-r2.md#Driver Console R1" aria-label="Driver Console R1：Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations without becoming a second truth source.">
+      <title>Driver Console R1 — Human-readable Driver Console projection that orders reconciliation, health, conflict, queue and resume obligations without becoming a second truth source.</title>
+      <rect class="node" x="642.0" y="1402.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="658.0" y="1435.0">
         <tspan x="658.0" dy="0">Driver Console R1</tspan>
       </text>
     </a>
@@ -967,18 +991,25 @@
         <tspan x="1246.0" dy="18">Tools / Executors</tspan>
       </text>
     </a>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Provider-neutral%20executor%20admission" target="_top" data-node-id="executor_admission_r1" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Provider-neutral executor admission" aria-label="Executor Admission R1：Provider-neutral admission gate for installed agentic executors: public attestation, bounded interface, auth and billing policy, workspace/scratch isolation, structured result, capture, cleanup, validator and side-effect constraints are evaluated before live dispatch.">
+      <title>Executor Admission R1 — Provider-neutral admission gate for installed agentic executors: public attestation, bounded interface, auth and billing policy, workspace/scratch isolation, structured result, capture, cleanup, validator and side-effect constraints are evaluated before live dispatch.</title>
+      <rect class="node" x="1230.0" y="1970.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2003.0">
+        <tspan x="1246.0" dy="0">Executor Admission R1</tspan>
+      </text>
+    </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Live%20External%20Executor%20Bridge%20R1" target="_top" data-node-id="live_executor_bridge_r1" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Live External Executor Bridge R1" aria-label="Live External Executor Bridge R1：OS-owned provider-neutral live dispatch bridge: capability leases, bounded process transport, strict executor receipts, timeout/cancel/reconciliation and independent validation; it owns no provider, channel, browser, remote Git, configuration or billing authority.">
       <title>Live External Executor Bridge R1 — OS-owned provider-neutral live dispatch bridge: capability leases, bounded process transport, strict executor receipts, timeout/cancel/reconciliation and independent validation; it owns no provider, channel, browser, remote Git, configuration or billing authority.</title>
-      <rect class="node" x="1230.0" y="1970.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="1246.0" y="1992.0">
+      <rect class="node" x="1230.0" y="2036.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2058.0">
         <tspan x="1246.0" dy="0">Live External Executor</tspan>
         <tspan x="1246.0" dy="18">Bridge R1</tspan>
       </text>
     </a>
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/external-agent-federation-r1.md#Live%20Observation%20%2F%20Reconciliation%20Plane%20R1" target="_top" data-node-id="live_observation_reconciliation_plane_r1" data-group="federation" data-target="docs/architecture/external-agent-federation-r1.md#Live Observation / Reconciliation Plane R1" aria-label="Live Observation / Reconciliation Plane R1：OS-owned bounded observation and reconciliation plane that separates probe, transport, live-process, durable-capture, structured-result, validation and unknown-effect states; reconciliation closure never infers success or no-effect.">
       <title>Live Observation / Reconciliation Plane R1 — OS-owned bounded observation and reconciliation plane that separates probe, transport, live-process, durable-capture, structured-result, validation and unknown-effect states; reconciliation closure never infers success or no-effect.</title>
-      <rect class="node" x="1230.0" y="2036.0" width="516.0" height="54.0" rx="10" />
-      <text class="node-label" x="1246.0" y="2058.0">
+      <rect class="node" x="1230.0" y="2102.0" width="516.0" height="54.0" rx="10" />
+      <text class="node-label" x="1246.0" y="2124.0">
         <tspan x="1246.0" dy="0">Live Observation /</tspan>
         <tspan x="1246.0" dy="18">Reconciliation Plane R1</tspan>
       </text>

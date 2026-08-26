@@ -15,27 +15,39 @@ Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability
 
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
-- current_identity_epoch: `os-control-plane-r7-live-state-semantics-structured-result-reliability-r1`；system_role: `Ignition OS / orchestration-governance layer`。
+- current_identity_epoch: `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`；system_role: `Ignition OS / orchestration-governance layer`。
 - current_formal_task: `IGNITION-20260827-142` (ordinal `142`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260827-142` (ordinal `142`)；current_iteration_boundary: `142` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260827-142`。
 - formal_task_terminality: authority `FORMAL_TASK_LIFECYCLE`；task `IGNITION-20260827-142` status `IN_PROGRESS`；terminal `false`；scope_complete `false`；open references `['LIVE_EXTERNAL_INVOCATION']`。
 - formal_task_terminal_history: `[{'task_id': 'IGNITION-20260826-141', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}]`；Task141 terminality remains recorded independently of the carried obligation。
 - open_obligation_registry: authority `OPEN_OBLIGATION_REGISTRY`；status `OPEN` ids `['LIVE_EXTERNAL_INVOCATION']`；count `1`；next eligible action `['RUN_DYNAMIC_EXECUTOR_ADMISSION']`。
 - release_lifecycle: task `IGNITION-20260827-142`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
-- current_method: `1.4.0` Current；current_map: `0.15.0` Current；historical_map: `0.14.0` Historical。
+- current_method: `1.4.0` Current；current_map: `0.16.0` Current；historical_map: `0.14.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；live dimensions: dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`, validated completion `NOT_VALIDATED`, reconciliation blocker `NONE`。
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
-- architecture_counts: `registry=96; visible_nodes=84; visible_edges=89`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
+- architecture_counts: `registry=99; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260827-142` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `8b96e55827fc24660a425aed0f4fd245b55d3e209ec5f1790af489c152073d81`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `29b308e2a69d899da95393b929ec0a60a2ca0b7735baa4d7e79fb29884888eec`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
-## 当前工程主干：Agent Platform R2 + Durability / Lifecycle R3 + Steering R1
+## 当前工程主干：Agent Platform R2 + Task Lifecycle / Executor Admission R1
 
 点火当前的工程脊柱是一个有界、可审计、可恢复的 Agent Platform 原型；
 知识治理是第一个大型 Domain Pack，而不是整个系统本体。这个表述描述仓库
 内的职责与运行接口，不是通用智能、长期自主性、现实世界普适安全性或外部
 有效性的结论。工程与 epistemic ceiling 由 generated Current Snapshot 投影。
+
+### Task Lifecycle / Open Obligation / Executor Admission R1
+
+Task 142 将 Formal Task Lifecycle、Open Obligation Registry 与
+provider-neutral Executor Admission 登记为同一 OS 控制脊柱内的三个独立
+overlay。前者依据任务自身 scope、steps、publication 与 witness 决定
+terminality；第二者保留跨任务长期义务及其 carry-forward；第三者在任何
+live process 之前统一检查安全、auth、workspace、runtime scratch、strict
+structured result、capture、cleanup 和独立 validator 边界。它们都只是
+repository-local control records：open obligation 不会把已完成任务留在
+RUNNING，admission 也不等于 live success、external truth 或 production
+readiness。
 
 ### OS Control Plane R2
 

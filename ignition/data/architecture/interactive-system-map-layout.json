@@ -1,5 +1,5 @@
 {
-  "current_map_version": "0.15.0",
+  "current_map_version": "0.16.0",
   "geometry": {
     "columns": 3,
     "group_gap": 28,
@@ -96,7 +96,7 @@
     {
       "color": "#1d4ed8",
       "column": 1,
-      "description": "Owner/Human、Profile、Kernel、Runtime、R4 Steering / Intent 与 Control Plane、Durability 和 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
+      "description": "Owner/Human、Profile、Kernel、Runtime、Control Plane、Task Lifecycle、Obligation、Durability、Steering 和 Memory 的点火 OS 控制/治理脊柱；不拥有供应商 runtime",
       "id": "os_spine",
       "label": "Ignition OS / 控制脊柱",
       "row": 0
@@ -112,7 +112,7 @@
     {
       "color": "#ea580c",
       "column": 2,
-      "description": "Federation 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界",
+      "description": "Federation、provider-neutral admission 与 OpenClaw、Hermes、Codex、Reference/Future Executors 的外部、可替换手脚边界",
       "id": "federation",
       "label": "Federation / 外部手脚",
       "row": 1
@@ -186,6 +186,7 @@
       "reference_executor",
       "future_executors",
       "runtime_environment",
+      "executor_admission_r1",
       "live_executor_bridge_r1",
       "live_observation_reconciliation_plane_r1"
     ],
@@ -206,6 +207,8 @@
       "concurrent_operational_memory_r2",
       "durability_lifecycle_r3",
       "steering_intent_obligation_r1",
+      "formal_task_lifecycle_r1",
+      "open_obligation_registry_r1",
       "driver_console_r1"
     ],
     "models": [
@@ -239,9 +242,9 @@
     "label": "Current semantic trunk：OS 在中间，外部执行器是可替换手脚",
     "route": [
       {"id":"authority","label":"Owner / Value Charter","node_ids":["owner_human","charter"],"relation_ids":["map_owner_human_agent_profile","map_charter_agent_profile"]},
-      {"id":"os_control","label":"Ignition OS control / governance spine with durable lifecycle and explainable steering","node_ids":["agentization_boundary_r0","agent_profile_r0","agent_kernel_r0","agent_runtime_r0","event_ledger_r1","policy_compiler_r1","resource_arbitration_r1","bounded_scheduler_r1","executor_health_lease_r1","queue_control_r1","durable_dispatch_r1","concurrent_operational_memory_r2","durability_lifecycle_r3","steering_intent_obligation_r1","driver_console_r1","runtime_memory_loop"],"relation_ids":["map_profile_agent_kernel","map_kernel_agent_runtime","map_runtime_event_ledger","map_event_ledger_scheduler","map_scheduler_health","map_scheduler_queue","map_scheduler_dispatch","map_runtime_concurrent_memory","map_runtime_durability_lifecycle","map_runtime_steering_intent","map_steering_driver_console","map_durability_driver_console","map_memory_console","map_runtime_memory"]},
-      {"id":"pack_federation_routing","label":"Pack / Federation routing","node_ids":["domain_pack_contract","external_agent_federation"],"relation_ids":["map_runtime_pack_contract","map_runtime_external_agent_federation"]},
-      {"id":"live_bridge","label":"OS-owned bounded live bridge and observation plane","node_ids":["live_executor_bridge_r1","live_observation_reconciliation_plane_r1"],"relation_ids":["federation_projects_live_executor_bridge","live_bridge_projects_observation_reconciliation_plane"]},
+      {"id":"os_control","label":"Ignition OS control / governance spine with independent task terminality, obligations, durable lifecycle and explainable steering","node_ids":["agentization_boundary_r0","agent_profile_r0","agent_kernel_r0","agent_runtime_r0","event_ledger_r1","policy_compiler_r1","resource_arbitration_r1","bounded_scheduler_r1","executor_health_lease_r1","queue_control_r1","durable_dispatch_r1","concurrent_operational_memory_r2","durability_lifecycle_r3","steering_intent_obligation_r1","formal_task_lifecycle_r1","open_obligation_registry_r1","driver_console_r1","runtime_memory_loop"],"relation_ids":["map_profile_agent_kernel","map_kernel_agent_runtime","map_runtime_event_ledger","map_event_ledger_scheduler","map_scheduler_health","map_scheduler_queue","map_scheduler_dispatch","map_runtime_concurrent_memory","map_runtime_durability_lifecycle","map_runtime_steering_intent","map_steering_driver_console","map_durability_driver_console","map_memory_console","map_runtime_memory","formal_task_lifecycle_links_open_obligation"]},
+      {"id":"pack_federation_routing","label":"Pack / Federation routing","node_ids":["domain_pack_contract","external_agent_federation"],"relation_ids":["map_runtime_pack_contract","map_runtime_external_agent_federation","federation_projects_executor_admission"]},
+      {"id":"live_bridge","label":"OS-owned bounded live bridge, admission and observation plane","node_ids":["executor_admission_r1","live_executor_bridge_r1","live_observation_reconciliation_plane_r1"],"relation_ids":["federation_projects_live_executor_bridge","live_bridge_projects_observation_reconciliation_plane","executor_admission_governs_live_executor_bridge"]},
       {"id":"external_executors","label":"External replaceable executors","node_ids":["openclaw_adapter","hermes_adapter","codex_adapter","future_executors"],"relation_ids":["map_federation_openclaw","map_federation_hermes","map_federation_codex","map_federation_future_executors"]},
       {"id":"actions_receipts","label":"Actions / observations / receipts","node_ids":["reference_executor","function_os","sync"],"relation_ids":["map_federation_reference_executor","map_function_q12","map_iteration_sync"]},
       {"id":"validation_feedback","label":"Validation / provenance / state update / feedback / advisory structure","node_ids":["foundation","provenance_capture","feedback_routes","candidate_return","structural_governance_surface"],"relation_ids":["map_foundation_no_truth","map_provenance_return","map_return_routes","map_routes_increment","map_epistemic_kernel_structural_surface"]}
@@ -253,6 +256,6 @@
       "External executors do not own Owner, truth, permission or vendor-runtime authority."
     ]
   },
-  "subtitle": "唯一完整总架构图；0.15.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R7 Live State Semantics & Structured Result Reliability → Pack/Federation routing → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Live Bridge 只拥有 provider-neutral 的 bounded envelope、capability lease、transport、receipt、timeout/cancel/reconciliation 与独立验证边界，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
+  "subtitle": "唯一完整总架构图；0.16.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R8 Task Lifecycle Decoupling & Executor Admission → Pack/Federation routing → provider-neutral Executor Admission → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Formal Task Lifecycle 与 Open Obligation Registry 分别记录任务终态和长期义务，前者可以引用后者但不由 obligation liveness 推导；Executor Admission 只按统一安全、auth、structured-result、capture、workspace、cleanup 与 validator 维度决定是否进入 bounded live bridge，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering、Task Lifecycle、Obligation Registry、Executor Admission 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。",
   "title": "点火唯一完整可点击总架构图"
 }

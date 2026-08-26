@@ -147,6 +147,30 @@ def build_snapshot() -> dict[str, Any]:
     control_text = identity["current_architecture_identity"]["control_plane_role"]
     overlay_specs = [
         {
+            "overlay_id": "formal-task-lifecycle",
+            "label": "Formal Task Lifecycle",
+            "marker": "Formal Task Lifecycle",
+            "source_paths": ["ignition/data/operations/formal-task-lifecycle-r1.json", "ignition/docs/architecture/os-control-plane-r2.md"],
+            "authority": "repository-local formal task terminality projection",
+            "status": "ACTIVE_BOUNDED_OVERLAY"
+        },
+        {
+            "overlay_id": "open-obligation-registry",
+            "label": "Open Obligation Registry",
+            "marker": "Open Obligation Registry",
+            "source_paths": ["ignition/data/operations/open-obligation-registry-r1.json", "ignition/docs/architecture/os-control-plane-r2.md"],
+            "authority": "repository-local cross-task obligation and carry-forward projection",
+            "status": "ACTIVE_BOUNDED_OVERLAY"
+        },
+        {
+            "overlay_id": "executor-admission",
+            "label": "Executor Admission",
+            "marker": "Provider-neutral Executor Admission",
+            "source_paths": ["ignition/data/operations/executor-admission-contract-r1.json", "ignition/docs/architecture/external-agent-federation-r1.md"],
+            "authority": "repository-local provider-neutral pre-live eligibility projection",
+            "status": "ACTIVE_BOUNDED_OVERLAY"
+        },
+        {
             "overlay_id": "durability-lifecycle",
             "label": "Durability / Lifecycle",
             "marker": "Durability / Lifecycle",

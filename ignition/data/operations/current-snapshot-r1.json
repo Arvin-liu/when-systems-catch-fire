@@ -1,6 +1,36 @@
 {
   "active_architecture_overlays": [
     {
+      "authority": "repository-local formal task terminality projection",
+      "label": "Formal Task Lifecycle",
+      "overlay_id": "formal-task-lifecycle",
+      "source_paths": [
+        "ignition/data/operations/formal-task-lifecycle-r1.json",
+        "ignition/docs/architecture/os-control-plane-r2.md"
+      ],
+      "status": "ACTIVE_BOUNDED_OVERLAY"
+    },
+    {
+      "authority": "repository-local cross-task obligation and carry-forward projection",
+      "label": "Open Obligation Registry",
+      "overlay_id": "open-obligation-registry",
+      "source_paths": [
+        "ignition/data/operations/open-obligation-registry-r1.json",
+        "ignition/docs/architecture/os-control-plane-r2.md"
+      ],
+      "status": "ACTIVE_BOUNDED_OVERLAY"
+    },
+    {
+      "authority": "repository-local provider-neutral pre-live eligibility projection",
+      "label": "Executor Admission",
+      "overlay_id": "executor-admission",
+      "source_paths": [
+        "ignition/data/operations/executor-admission-contract-r1.json",
+        "ignition/docs/architecture/external-agent-federation-r1.md"
+      ],
+      "status": "ACTIVE_BOUNDED_OVERLAY"
+    },
+    {
       "authority": "repository-local continuity and recovery projection",
       "label": "Durability / Lifecycle",
       "overlay_id": "durability-lifecycle",
@@ -32,16 +62,16 @@
     }
   ],
   "architecture_counts": {
-    "current_map_version": "0.15.0",
+    "current_map_version": "0.16.0",
     "hidden_components": 12,
     "historical_map_version": "0.14.0",
     "layout_version": "2.0.0",
-    "registry_components": 96,
+    "registry_components": 99,
     "semantic_trunk_route_steps": 7,
     "semantic_trunk_version": "semantic-trunk-r1",
-    "typed_topology_relations": 134,
-    "visible_map_nodes": 84,
-    "visible_typed_edges": 89
+    "typed_topology_relations": 140,
+    "visible_map_nodes": 87,
+    "visible_typed_edges": 92
   },
   "claim_ceiling": "Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.",
   "contract_id": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT",
@@ -75,10 +105,10 @@
       }
     ]
   },
-  "generated_from_source_digest": "8b96e55827fc24660a425aed0f4fd245b55d3e209ec5f1790af489c152073d81",
+  "generated_from_source_digest": "29b308e2a69d899da95393b929ec0a60a2ca0b7735baa4d7e79fb29884888eec",
   "identity": {
     "driver_role": "driver",
-    "epoch": "os-control-plane-r7-live-state-semantics-structured-result-reliability-r1",
+    "epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
     "external_executor_role": "replaceable executors",
     "reference_executor_role": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
     "system_role": "Ignition OS / orchestration-governance layer"
@@ -117,7 +147,7 @@
     "validated_completion_status": "NOT_VALIDATED"
   },
   "map": {
-    "current_version": "0.15.0",
+    "current_version": "0.16.0",
     "historical_versions": [
       "0.14.0"
     ],

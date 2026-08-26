@@ -98,6 +98,22 @@ its snapshot, migration, revocation, accounting, recovery and DR observations
 are bounded repository evidence, not production durability, exact-once delivery,
 live-provider success, Owner acceptance or epistemic acceptance.
 
+## Formal task terminality and open-obligation separation R1
+
+Task 142 registers formal task terminality and open obligations as separate
+OS-owned records. The Formal Task Lifecycle determines whether a formal task
+is terminal from its own scope, steps, publication and witness contract. The
+Open Obligation Registry separately carries obligation identity, status,
+owner plane, blocker, next eligible action, evidence and successor lineage.
+The lifecycle may reference an open obligation, but obligation liveness cannot
+keep a completed task in `RUNNING`, and task terminality cannot close the
+obligation.
+
+The same separation is visible in Current and in the sole registry-derived
+system map. It is repository-local lifecycle and synchronization evidence;
+it does not grant Owner authority, external truth, production readiness or
+epistemic acceptance.
+
 ## Boundaries and evidence
 
 The five-child pilot is a disposable offline repository fixture. It demonstrates

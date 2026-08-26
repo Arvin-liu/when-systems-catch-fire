@@ -1,6 +1,6 @@
 # 点火仓库原生系统图
 
-状态：`0.15.0 Current registry-derived navigation projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
+状态：`0.16.0 Current registry-derived navigation projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
 
 ## 打开与生成
 
@@ -51,7 +51,7 @@ REOS LIGHT Research、之元 Writing 和 Maintenance 仍由各自 manifest 声�
 对象类型、validator 与禁止的 authority upgrade。
 
 当前机器投影的 registry、可见节点、typed edges 和隐藏 components 计数以
-`current-facts.json` 为准；当前地图为 `0.15.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
+`current-facts.json` 为准；当前地图为 `0.16.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
 Structural Governance Surface 的可见关系仍是 advisory repository projection。
 R2 的 source-domain 与
 blast-radius 规则见

@@ -1,19 +1,19 @@
 # STATE-CHANGELOG
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
-- current_identity_epoch: `os-control-plane-r7-live-state-semantics-structured-result-reliability-r1`；system_role: `Ignition OS / orchestration-governance layer`。
+- current_identity_epoch: `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`；system_role: `Ignition OS / orchestration-governance layer`。
 - current_formal_task: `IGNITION-20260827-142` (ordinal `142`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260827-142` (ordinal `142`)；current_iteration_boundary: `142` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260827-142`。
 - formal_task_terminality: authority `FORMAL_TASK_LIFECYCLE`；task `IGNITION-20260827-142` status `IN_PROGRESS`；terminal `false`；scope_complete `false`；open references `['LIVE_EXTERNAL_INVOCATION']`。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - formal_task_terminal_history: `[{'task_id': 'IGNITION-20260826-141', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}]`；Task141 terminality remains recorded independently of the carried obligation。
 - open_obligation_registry: authority `OPEN_OBLIGATION_REGISTRY`；status `OPEN` ids `['LIVE_EXTERNAL_INVOCATION']`；count `1`；next eligible action `['RUN_DYNAMIC_EXECUTOR_ADMISSION']`。
 - release_lifecycle: task `IGNITION-20260827-142`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
-- current_method: `1.4.0` Current；current_map: `0.15.0` Current；historical_map: `0.14.0` Historical。
+- current_method: `1.4.0` Current；current_map: `0.16.0` Current；historical_map: `0.14.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；live dimensions: dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`, validated completion `NOT_VALIDATED`, reconciliation blocker `NONE`。
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `RUN_DYNAMIC_EXECUTOR_ADMISSION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
-- architecture_counts: `registry=96; visible_nodes=84; visible_edges=89`；active_overlays: `Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
+- architecture_counts: `registry=99; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260827-142` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `8b96e55827fc24660a425aed0f4fd245b55d3e209ec5f1790af489c152073d81`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `29b308e2a69d899da95393b929ec0a60a2ca0b7735baa4d7e79fb29884888eec`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -493,3 +493,16 @@
 - epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; no external truth, production readiness, Owner acceptance or validated live completion is inferred.
 - next_read: establish the provider-neutral executor admission contract and conformance harness, then run the fresh blocker matrix before any bounded live attempt.
 - claim_ceiling: repository-local Current advancement with independently rendered task terminality and obligation carry-forward only; no executor capability or external validity is claimed.
+
+## 2026-08-27 — IGNITION-20260827-142 — lifecycle/admission architecture transition
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this append-only entry records the Task142 architecture transition before formal publication.
+- delta: the sole registry-derived system map now exposes Formal Task Lifecycle R1, Open Obligation Registry R1 and provider-neutral Executor Admission R1. Formal task terminality is sourced from task scope/steps/publication/witness; open obligations retain their own identity and carry-forward lineage.
+- architecture_boundary: component registry `2.4.0`, typed topology `1.13.0`, layout-derived map `0.16.0` Current and identity epoch `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`. Six new typed relations remain canonical; the compact map exposes only the non-regressing visible subset.
+- task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task141 remains `COMPLETED_WITH_OPEN_OBLIGATIONS` and terminal, while Task142 is the current non-terminal successor during this transition.
+- admission_boundary: installed agentic candidates are evaluated by the same public attestation, auth/billing, workspace/scratch, structured-result, capture, cleanup, validator and side-effect dimensions. Tool-only and reasoner runtimes cannot be promoted to Agentic Executor.
+- safety: no live process, secret-content read, configuration change, billing change, second system map or external side effect was introduced by this transition.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; architecture projections and admission gates do not establish external truth, production readiness, Owner acceptance or validated live completion.
+- obligations: the carried `LIVE_EXTERNAL_INVOCATION` obligation remains `OPEN`; any future live attempt still requires the fail-closed admission gate, exact independent validation and the stop-after-first-success rule.
+- next_read: read the Step17 architecture-impact receipt and then the Step18 adversarial/full-regression receipt before formal terminalization and ordinary main publication.
+- claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence only; no live success, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.

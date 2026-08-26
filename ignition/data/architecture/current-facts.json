@@ -7,16 +7,16 @@
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "facts": {
     "architecture": {
-      "current_map_version": "0.15.0",
+      "current_map_version": "0.16.0",
       "hidden_components": 12,
       "historical_map_version": "0.14.0",
       "layout_version": "2.0.0",
-      "registry_components": 96,
+      "registry_components": 99,
       "semantic_trunk_route_steps": 7,
       "semantic_trunk_version": "semantic-trunk-r1",
-      "typed_topology_relations": 134,
-      "visible_map_nodes": 84,
-      "visible_typed_edges": 89
+      "typed_topology_relations": 140,
+      "visible_map_nodes": 87,
+      "visible_typed_edges": 92
     },
     "environmental_residuals": [
       "Full unittest discovery was deferred to Step 12 after the baseline probe produced no output for several minutes; the 121 targeted core gate completed separately.",
@@ -113,7 +113,7 @@
       "current_formal_task_ordinal": 142,
       "current_iteration_boundary": 142,
       "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
-      "current_map_version": "0.15.0",
+      "current_map_version": "0.16.0",
       "latest_architecture_changing_task_id": "IGNITION-20260827-142",
       "latest_architecture_task_ordinal": 142,
       "method_status": "Current",
@@ -169,7 +169,7 @@
       "task127_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"
     }
   },
-  "identity_epoch": "os-control-plane-r7-live-state-semantics-structured-result-reliability-r1",
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
   "latest_architecture_changing_task_id": "IGNITION-20260827-142",
   "latest_architecture_task_ordinal": 142,
   "schema_version": "current-facts-r1",
@@ -184,11 +184,11 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "f7c50bb1909070a5dc1c9fdafef1219dc7b28048075baa96116a0144b01166f8"
+      "sha256": "d6cb28f5e773bcd86aaf90b69daff5c88cf14926bff470d660eca2ba19b3db6c"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
-      "sha256": "9ced521424b031c701c50f283fe5898ff188307eee742a6e1b700a9fa3ee59fc"
+      "sha256": "cde1ab60affb626dcf348bff202e43ae4d1436126f8715c534c0c68039dd82be"
     },
     {
       "path": "ignition/data/foundation/function-assets/closure-summary.json",
@@ -212,11 +212,11 @@
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
-      "sha256": "d0fcef3ba2b1e3759d6eca2d248ecf8f874c804ca3fa84d9703b5e9b7e215ecc"
+      "sha256": "efde6fb6d29caee917cd3e6a723b66dad2c63fe9e123b18753270b710b9e8085"
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "a686a4370738ffdeed88f5f3323d0313556eccbc533cd9c68d610b56aed28b6b"
+      "sha256": "ddcf329876a512d7c297f8be2b2e00f588b9d432dc8ba9ad8b83f68b5824a4d4"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
@@ -256,7 +256,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "8001dd3bd1cd0804301c801d2f8f7073d092f1b8f9bf94642ed49f5215902d9e"
+      "sha256": "578f47857a34001e24d119ff27bc14a8fd6da79c599ff7b3918ffbabd4222d38"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",

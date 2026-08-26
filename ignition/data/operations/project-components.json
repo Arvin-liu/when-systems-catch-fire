@@ -1978,8 +1978,44 @@
       "lifecycle": {"source": "agent_runtime/steering.py", "status": "current", "version": "R1"},
       "map_projection": {"group": "os_spine", "visible": true},
       "path_patterns": ["agent_runtime/steering.py", "agent_runtime/driver_console.py", "agent_runtime/event_ledger.py", "agent_runtime/pilots/steering_portfolio_129.py", "agent_runtime/pilots/steering_adversarial_129.py", "data/operations/steering/", "data/operations/iterations/129/fixtures/steering-", "tools/validate_steering_", "tests/test_steering_"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/operations/formal-task-lifecycle-r1.json",
+      "component_id": "formal_task_lifecycle_r1",
+      "component_type": "operation_control",
+      "description": "Independent formal-task terminality authority: scope, steps, publication and witness determine task terminality; an open long-term obligation may be referenced and carried forward but cannot keep a completed task running.",
+      "label": "Formal Task Lifecycle R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "data/operations/formal-task-lifecycle-r1.json", "status": "current", "version": "R1"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["data/operations/formal-task-lifecycle-r1.json", "schemas/operations/formal-task-lifecycle-r1.schema.json", "tools/validate_formal_task_lifecycle.py", "tools/validate_task142_obligation_adjudication.py", "tests/test_formal_task_lifecycle.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "data/operations/open-obligation-registry-r1.json",
+      "component_id": "open_obligation_registry_r1",
+      "component_type": "operation_control",
+      "description": "Independent cross-task obligation authority for identity, status, owner plane, blocker, next eligible action, evidence and carry-forward lineage; obligation closure is not formal-task liveness.",
+      "label": "Open Obligation Registry R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "data/operations/open-obligation-registry-r1.json", "status": "current", "version": "R1"},
+      "map_projection": {"group": "os_spine", "visible": true},
+      "path_patterns": ["data/operations/open-obligation-registry-r1.json", "schemas/operations/open-obligation-registry-r1.schema.json", "tools/validate_open_obligation_registry.py", "tools/validate_task142_obligation_adjudication.py", "tests/test_open_obligation_registry.py"]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "docs/architecture/external-agent-federation-r1.md#Provider-neutral executor admission",
+      "component_id": "executor_admission_r1",
+      "component_type": "operation_control",
+      "description": "Provider-neutral admission gate for installed agentic executors: public attestation, bounded interface, auth and billing policy, workspace/scratch isolation, structured result, capture, cleanup, validator and side-effect constraints are evaluated before live dispatch.",
+      "label": "Executor Admission R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {"source": "agent_federation/executor_admission_contract.py", "status": "current", "version": "R1"},
+      "map_projection": {"group": "federation", "visible": true},
+      "path_patterns": ["agent_federation/executor_admission_contract.py", "schemas/operations/executor-admission-contract-r1.schema.json", "data/operations/executor-admission-contract-r1.json", "tools/validate_executor_admission_contract.py", "data/operations/iterations/142/local-executor-census-r2.json", "tests/test_executor_admission_contract.py"]
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.3.0"
+  "registry_version": "2.4.0"
 }

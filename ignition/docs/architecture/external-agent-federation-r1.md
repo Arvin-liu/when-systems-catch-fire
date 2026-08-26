@@ -8,7 +8,7 @@ Agent 的运行时。
 本页与 [`CURRENT_STATE_SYNC_INVARIANT`](../governance/current-state-sync-invariant.md)
 的当前身份保持一致：点火是 driver / orchestration-governance layer，Knowledge
 是第一个大型 Domain Pack，默认决策是 integrate 而不是重造。当前计数、地图版本
-`0.13.0`（`0.12.0` Historical、`0.11.0` 更早 Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
+`0.16.0`（`0.14.0` Historical、`0.13.0` 及之前为更早 Historical）和 live ceiling 以 [`current-facts.json`](../../data/architecture/current-facts.json)
 为准；真实 live invocation 仍可在安全边界无法满足时明确 `SKIPPED`。
 
 Task 126 的 Structural Governance Surface 是 Federation 可选择读取的 advisory
@@ -72,6 +72,26 @@ Surface 内容。
 - [Build versus integrate policy](../../data/agent-federation/build-vs-integrate-policy-r1.json)
 - [Executor component ownership](../../data/agent-federation/executor-component-ownership-r1.json)
 - [Step 00 inventory](../../data/agent-federation/executor-inventory-r1.json)
+
+## Provider-neutral executor admission
+
+Task 142 adds an OS-owned admission layer between the Federation contract and
+the Live External Executor Bridge. Admission is evaluated from the same
+dimensions for every installed candidate: public installation/version
+attestation, one-shot noninteractive interface, publicly confirmable auth
+without new billing, read-only task-workspace binding, disposable runtime
+scratch, strict structured-result support, timeout/cancel/cleanup behavior,
+durable capture, independent validator compatibility and explicit
+no-channel/no-browser/no-remote-write boundaries. Brand, model strength or
+ranking is not an admission condition.
+
+The admission record is a fail-closed eligibility projection, not a provider
+implementation or a success claim. A candidate that passes this gate would
+still return an executor receipt as `RETURNED_UNVALIDATED`; only the
+independent exact-bound validator can produce a bounded
+`LIVE_READONLY_VALIDATED_COMPLETION`. A reasoner runtime or ordinary tool is
+never promoted to an `AGENTIC_EXECUTOR` by the gate, and a long-term open
+obligation never keeps a formally completed task in `RUNNING`.
 
 The ownership labels are `OS_OWNED`, `EXTERNAL_AGENT_OWNED`,
 `ADAPTER_BOUNDARY`, `REFERENCE_ONLY` and `DEFERRED`. These are engineering

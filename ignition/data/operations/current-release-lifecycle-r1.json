@@ -9,7 +9,7 @@
     "ordinal_semantics_source": "ignition/data/operations/iteration-boundary-semantics-r1.json",
     "binding": "MUST_MATCH_CURRENT_FORMAL_EXECUTION_CONTRACT_AND_ORDINAL_DERIVATION"
   },
-  "identity_epoch": "os-control-plane-r7-live-state-semantics-structured-result-reliability-r1",
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
   "current_formal_task_id": "IGNITION-20260827-142",
   "current_formal_task_ordinal": 142,
   "latest_architecture_changing_task": "IGNITION-20260827-142",

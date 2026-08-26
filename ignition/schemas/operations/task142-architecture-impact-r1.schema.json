@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task142-architecture-impact-r1.schema.json",
+  "title": "Task142 architecture impact and sole-map synchronization receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "status", "architecture_identity_impact", "semantic_changes", "changed_paths", "evidence", "semantic_classification", "component_changes", "relation_changes", "map_projection", "surface_sync", "safety", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "task142-architecture-impact-r1"},
+    "task_id": {"const": "IGNITION-20260827-142"},
+    "step": {"const": "17"},
+    "status": {"const": "PASS"},
+    "architecture_identity_impact": {"const": "ARCHITECTURE_CHANGED"},
+    "semantic_changes": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "changed_paths": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "evidence": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "semantic_classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_version", "classification", "legacy_identity_impact", "semantic_changes", "architecture_markers", "behavioral_control_plane_markers", "changed_paths", "evidence", "current_identity_sync_required", "claim_ceiling"],
+      "properties": {
+        "schema_version": {"const": "architecture-impact-classification-r1"},
+        "classification": {"const": "ARCHITECTURE_CHANGING"},
+        "legacy_identity_impact": {"const": "ARCHITECTURE_CHANGED"},
+        "semantic_changes": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "architecture_markers": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "behavioral_control_plane_markers": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "changed_paths": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "evidence": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+        "current_identity_sync_required": {"const": true},
+        "claim_ceiling": {"type": "string", "minLength": 1}
+      }
+    },
+    "component_changes": {
+      "type": "object", "additionalProperties": false,
+      "required": ["registry_version", "total_components", "new_component_ids", "authority_rule"],
+      "properties": {
+        "registry_version": {"const": "2.4.0"},
+        "total_components": {"const": 99},
+        "new_component_ids": {"type": "array", "const": ["executor_admission_r1", "formal_task_lifecycle_r1", "open_obligation_registry_r1"]},
+        "authority_rule": {"const": "canonical registry owns component identity; no second graph"}
+      }
+    },
+    "relation_changes": {
+      "type": "object", "additionalProperties": false,
+      "required": ["topology_version", "total_relations", "new_relation_ids", "visible_relation_ids", "hidden_relation_rule"],
+      "properties": {
+        "topology_version": {"const": "1.13.0"},
+        "total_relations": {"const": 140},
+        "new_relation_ids": {"type": "array", "const": ["executor_admission_governs_live_executor_bridge", "executor_admission_requires_observation_plane", "federation_projects_executor_admission", "formal_task_lifecycle_links_open_obligation", "formal_task_lifecycle_projects_current", "open_obligation_projects_current"]},
+        "visible_relation_ids": {"type": "array", "const": ["executor_admission_governs_live_executor_bridge", "federation_projects_executor_admission", "formal_task_lifecycle_links_open_obligation"]},
+        "hidden_relation_rule": {"const": "all relations remain canonical and typed; map visibility is a compact navigation projection"}
+      }
+    },
+    "map_projection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["map_version", "historical_map_version", "layout_version", "registry_version", "topology_version", "visible_nodes", "visible_edges", "orphan_components", "sole_map_path", "additional_map_count"],
+      "properties": {
+        "map_version": {"const": "0.16.0"},
+        "historical_map_version": {"const": "0.14.0"},
+        "layout_version": {"const": "2.0.0"},
+        "registry_version": {"const": "2.4.0"},
+        "topology_version": {"const": "1.13.0"},
+        "visible_nodes": {"const": 87},
+        "visible_edges": {"const": 92},
+        "orphan_components": {"type": "array", "maxItems": 0},
+        "sole_map_path": {"const": "ignition/data/architecture/interactive-system-map.json"},
+        "additional_map_count": {"const": 0}
+      }
+    },
+    "surface_sync": {
+      "type": "object", "additionalProperties": false,
+      "required": ["identity_epoch", "sync_receipt", "current_map_version", "current_task_terminality_rule", "open_obligation_rule"],
+      "properties": {
+        "identity_epoch": {"const": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1"},
+        "sync_receipt": {"const": "ignition/data/operations/iterations/142/current-state-sync-receipt.json"},
+        "current_map_version": {"const": "0.16.0"},
+        "current_task_terminality_rule": {"const": "formal task terminality is independent of open-obligation closure"},
+        "open_obligation_rule": {"const": "open obligation is independently carried and does not keep a completed formal task running"}
+      }
+    },
+    "safety": {
+      "type": "object", "additionalProperties": false,
+      "required": ["live_process_started", "secret_content_read", "configuration_changed", "billing_changed", "second_system_map_added"],
+      "properties": {"live_process_started": {"const": false}, "secret_content_read": {"const": false}, "configuration_changed": {"const": false}, "billing_changed": {"const": false}, "second_system_map_added": {"const": false}}
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}

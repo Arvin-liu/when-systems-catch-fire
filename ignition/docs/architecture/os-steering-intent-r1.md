@@ -4,6 +4,12 @@ This document describes the repository-local steering plane introduced by IGNITI
 
 ## Authority boundary
 
+Task 142 makes the lifecycle boundary explicit beside this steering plane:
+formal task terminality is owned by the Formal Task Lifecycle, while
+long-term open obligations are carried by the independent Open Obligation
+Registry. Steering may explain the next eligible admission action, but an
+open obligation is not task liveness and a successful run is not completion.
+
 The canonical chain is explicit:
 
 `OWNER_DECLARED` or `OWNER_APPROVED_DERIVED` → canonical Intent → versioned Goal → explicitly accepted Commitment → Episode/Run binding → bounded Action.

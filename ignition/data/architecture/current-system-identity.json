@@ -1,7 +1,7 @@
 {
   "schema_version": "current-system-identity-r1",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "identity_epoch": "os-control-plane-r7-live-state-semantics-structured-result-reliability-r1",
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
   "current_formal_task_id": "IGNITION-20260827-142",
   "current_formal_task_ordinal": 142,
   "latest_architecture_changing_task_id": "IGNITION-20260827-142",
@@ -37,16 +37,19 @@
       "Steering / Intent / Goal / Obligation",
       "Domain Pack Registry",
       "External Agent Federation",
+      "Formal Task Lifecycle",
+      "Open Obligation Registry",
+      "Provider-neutral Executor Admission",
       "Live External Executor Bridge",
       "Live Observation / Reconciliation Plane",
       "Live State Semantics / Structured Result Reliability"
     ],
-    "control_plane_role": "R7 bounded coordination fabric for events, policy narrowing, resource conflict, concurrent scheduling, executor health, queue admission, provider-neutral live dispatch, capability leases, bounded process transport, strict receipt validation, cancellation and timeout reconciliation, typed dispatch/process/inference/capture/structured-result/validation outcomes, append-only reconciliation events, FailureForensicsCapsule ownership before raw-spool disposal, dynamic executor admission, operational memory, snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, capability revocation, accounting, recovery orchestration, disaster-recovery bundles, driver-readable recovery and repository-local steering of intents, goals, commitments, temporal windows, dependencies, priority, arbitration, decision traces and explainable why-next records; process observation, inference observation, structured result return and independent validation remain separate facts, uncertain external effects stop at reconciliation, and the Structural Governance Surface remains a cross-cutting advisory overlay, not a hard control-plane authority.",
+    "control_plane_role": "R8 bounded coordination fabric for events, policy narrowing, resource conflict, concurrent scheduling, executor health, queue admission, provider-neutral live dispatch, capability leases, bounded process transport, strict receipt validation, cancellation and timeout reconciliation, typed dispatch/process/inference/capture/structured-result/validation outcomes, append-only reconciliation events, FailureForensicsCapsule ownership before raw-spool disposal, dynamic executor admission, independent formal-task terminality, cross-task open-obligation carry-forward, operational memory, snapshot plus tail, compaction, schema migration, namespace isolation, Pack lifecycle, capability revocation, accounting, recovery orchestration, disaster-recovery bundles, driver-readable recovery and repository-local steering of intents, goals, commitments, temporal windows, dependencies, priority, arbitration, decision traces and explainable why-next records; task terminality is determined by task scope/publication/witness and does not derive from obligation closure, while admission is provider-neutral and requires exact structured-result/capture/validator compatibility before live dispatch; process observation, inference observation, structured result return and independent validation remain separate facts, uncertain external effects stop at reconciliation, and the Structural Governance Surface remains a cross-cutting advisory overlay, not a hard control-plane authority.",
     "external_executor_role": "replaceable executors",
     "knowledge_role": "Knowledge is the first large Domain Pack, not the whole system.",
     "reference_executor_role": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
     "identity_boundary": "Ignition owns goal, value, policy, permission, durable state, memory, validation, handoff, provenance and result absorption; Steering records distinguish Owner-declared authority from system proposals, keep Goal dependency separate from Supervisor execution DAGs, and require an independent Completion Contract before completion; Durability / Lifecycle keeps repository-local continuity and recovery records, while uncertain external effects stop at reconciliation and are never rerun automatically; the Live External Executor Bridge issues only bounded synthetic/read-only dispatch with OS permission intersection, disposable workspace binding, sanitized receipts and no channel, browser, remote Git, configuration or new billing authority; the Live Observation / Reconciliation Plane records scoped dispatch, transport, process, durable capture, structured result, validator and reconciliation states, while Live State Semantics keeps dispatch crossing, process start, independent inference marker, structured result return and validated completion as distinct dimensions; FailureForensicsCapsule records sanitized diagnostics before raw-spool disposal. Reconciliation closure is not success and external effect remains unknown unless independently validated; external Agents perform bounded local actions through adapters. The Structural Governance Surface can expose advisory context but cannot change capability, permission or epistemic status.",
-    "authority_ceiling": "This is a repository engineering identity. It grants no Owner authority, truth authority, M/E upgrade, production safety, general intelligence or external validity; Steering records model repository-local authority provenance and obligations but do not infer real Owner intent or completion; the Live External Executor Bridge records bounded transport and reconciliation evidence but a provider return or timeout cannot become validated completion without independent OS validation; Durability / Lifecycle is not proof of production durability or external completion, and the advisory Structural Governance Surface is not a new authority layer."
+    "authority_ceiling": "This is a repository engineering identity. It grants no Owner authority, truth authority, M/E upgrade, production safety, general intelligence or external validity; Formal Task Lifecycle and Open Obligation Registry are separate repository-local records, and neither grants completion or closes the other; Steering records model repository-local authority provenance and obligations but do not infer real Owner intent or completion; Provider-neutral Executor Admission is a fail-closed eligibility gate, not a success claim; the Live External Executor Bridge records bounded transport and reconciliation evidence but a provider return or timeout cannot become validated completion without independent OS validation; Durability / Lifecycle is not proof of production durability or external completion, and the advisory Structural Governance Surface is not a new authority layer."
   },
   "current_map": {
     "source_path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -251,7 +254,7 @@
     "replaceable_executors": {"all_of_any_group": [["replaceable executor", "replaceable executors", "可替换执行器", "可替换 adapter"], ["external Agent", "外部 Agent", "external executor", "外部执行器"]]},
     "knowledge_pack": {"all_of_any_group": [["Knowledge"], ["Domain Pack", "DomainPack", "领域 Pack"]]},
     "reference_freeze": {"all_of_any_group": [["Reference"], ["Conformance"], ["Fallback"]]},
-    "map_version": {"all_of_any_group": [["0.15.0"]]},
+    "map_version": {"all_of_any_group": [["0.16.0"]]},
     "state_delta": {"all_of_any_group": [["CURRENT_WITH_OPEN_OBLIGATIONS"], ["EPISTEMICALLY_ACCEPTED=0"]]},
     "current_facts": {"all_of_any_group": [["current-facts", "derived facts", "可推导事实", "机器事实"]]},
     "soft_governance": {"all_of_any_group": [["Structural Governance Surface", "结构治理表面"], ["advisory", "ADVISORY_ONLY", "软"]]},

@@ -2,8 +2,8 @@
 # Current Facts（机器推导事实）
 
 - Iteration identity: current formal task `IGNITION-20260827-142` (ordinal `142`)；latest architecture-changing task `IGNITION-20260827-142` (ordinal `142`)；`current_iteration_boundary` `142` is a deprecated compatibility alias of the formal ordinal。
-- Architecture registry: `96` components；`84` visible map nodes；`12` hidden represented components；`134` typed relations；`89` visible typed edges。
-- Map/method: map `0.15.0` Current（historical `0.14.0`）；layout `2.0.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；method `1.4.0` `Current`。
+- Architecture registry: `99` components；`87` visible map nodes；`12` hidden represented components；`140` typed relations；`92` visible typed edges。
+- Map/method: map `0.16.0` Current（historical `0.14.0`）；layout `2.0.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；method `1.4.0` `Current`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Live state dimensions: dispatch `OBSERVED`；process `OBSERVED`；inference `NOT_OBSERVED`；validated completion `NOT_VALIDATED`；reconciliation blocker `NONE`；next eligible action `RUN_DYNAMIC_EXECUTOR_ADMISSION`。
