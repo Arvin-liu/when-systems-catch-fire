@@ -75,6 +75,7 @@ from .live_privacy import LivePrivacyError, SanitizedLiveResult, sanitize_live_r
 from .live_pilot import DisposableLiveFixture, LivePilotError, LivePilotExpectation, LivePilotValidator, LiveValidationReport, tree_digest
 from .live_preflight import LivePreflightEntry, LivePreflightReport, run_live_preflight
 from .live_execution import LiveAttemptResult, LiveExecutionError, execute_bounded_attempt
+from .structured_result_contract import StructuredResultContractError, StructuredResultEvidence, extract_synthetic_result, validate_synthetic_result
 from .live_fault_matrix import CASE_SPECS, FaultCaseResult, run_fault_matrix
 from .live_failover import LiveFailoverDecision, decide_bounded_failover
 
@@ -102,6 +103,7 @@ __all__ = [
     "DisposableLiveFixture", "LivePilotError", "LivePilotExpectation", "LivePilotValidator", "LiveValidationReport", "tree_digest",
     "LivePreflightEntry", "LivePreflightReport", "run_live_preflight",
     "LiveAttemptResult", "LiveExecutionError", "execute_bounded_attempt",
+    "StructuredResultContractError", "StructuredResultEvidence", "extract_synthetic_result", "validate_synthetic_result",
     "CASE_SPECS", "FaultCaseResult", "run_fault_matrix",
     "LiveFailoverDecision", "decide_bounded_failover",
 ]

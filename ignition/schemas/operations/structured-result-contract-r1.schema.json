@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/structured-result-contract-r1.schema.json",
+  "title": "Pointfire Strict Synthetic Structured Result Contract R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["nonce", "line_count", "field_value", "checksum_prefix"],
+  "properties": {
+    "nonce": {"type": "string", "pattern": "^[a-f0-9]{24}$"},
+    "line_count": {"type": "integer", "minimum": 1},
+    "field_value": {"type": "string", "minLength": 1},
+    "checksum_prefix": {"type": "string", "pattern": "^[a-f0-9]{8}$"}
+  }
+}

@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-import json
 from typing import Any, Mapping, Sequence
 
 from agent_kernel.contracts import sha256_json
@@ -12,10 +11,11 @@ from agent_runtime.dispatch_reconciliation import DispatchReceipt
 
 from .live_adapters import LiveAdapterObservation
 from .live_bridge import LiveDispatchEnvelope, LiveDispatchStateMachine, LiveExecutorReceipt
-from .failure_forensics import build_failure_forensics_capsule, update_spool_disposition
+from .failure_forensics import build_failure_forensics_capsule, classify_failure, update_spool_disposition
 from .live_orchestration import LiveDispatchCoordinator
 from .live_pilot import LivePilotValidator, LiveValidationReport
 from .live_privacy import LivePrivacyError, sanitize_live_result, sanitize_public_summary
+from .structured_result_contract import StructuredResultContractError, extract_synthetic_result
 
 
 LIVE_EXECUTION_SCHEMA = "ignition-136-live-execution-r1"
@@ -61,31 +61,11 @@ class LiveAttemptResult:
         }
 
 
-def _candidate_objects(value: Any) -> list[Mapping[str, Any]]:
-    if isinstance(value, Mapping):
-        yield value
-        for item in value.values():
-            yield from _candidate_objects(item)
-    elif isinstance(value, (list, tuple)):
-        for item in value:
-            yield from _candidate_objects(item)
-
-
 def _extract_structured_result(events: Sequence[Mapping[str, Any]]) -> Mapping[str, Any]:
-    for event in _candidate_objects(events):
-        if set(_RESULT_KEYS).issubset(event):
-            return {key: event[key] for key in _RESULT_KEYS}
-        for key in ("text", "content", "message"):
-            text = event.get(key)
-            if not isinstance(text, str) or not text.strip():
-                continue
-            try:
-                parsed = json.loads(text.strip())
-            except json.JSONDecodeError:
-                continue
-            if isinstance(parsed, Mapping) and set(_RESULT_KEYS).issubset(parsed):
-                return {key: parsed[key] for key in _RESULT_KEYS}
-    raise LiveExecutionError("public events did not contain the exact synthetic result object")
+    try:
+        return extract_synthetic_result(events).value
+    except StructuredResultContractError as exc:
+        raise LiveExecutionError(f"{exc.code}: {exc}") from exc
 
 
 def _cost(observation: LiveAdapterObservation, timeout_seconds: float) -> CostVector:
@@ -279,7 +259,7 @@ def execute_bounded_attempt(
     else:
         try:
             if not observation.parsed or observation.process.returncode != 0:
-                parser_status = "FAIL" if observation.parse_error else "NOT_RUN"
+                parser_status = "FAIL" if observation.parse_error else "PASS" if observation.parsed else "NOT_RUN"
                 parser_error_class = _public_error_class(observation.parse_error)
                 machine.record_executor_return(parsed=False, returncode=observation.process.returncode)
                 final_state = machine.state
@@ -337,7 +317,13 @@ def execute_bounded_attempt(
                 schema_status=schema_status, schema_error_class=schema_error_class,
                 structured_output_status=structured_output_status,
                 structured_output_present=structured_output_present,
-                diagnostic_class=None,
+                diagnostic_class=classify_failure(
+                    process_return_code=observation.process.returncode,
+                    timed_out=observation.process.timed_out,
+                    parser_status=parser_status,
+                    schema_status=schema_status,
+                    structured_output_status=structured_output_status,
+                ),
                 raw_spool_retention_status="RETAINED_UNTIL_DURABLE_RECEIPT",
                 raw_spool_disposal_status="PENDING",
             )
