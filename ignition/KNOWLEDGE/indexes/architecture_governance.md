@@ -8,13 +8,13 @@
 - [第 002 片](./architecture_governance/part-002.md)：501—1000；`1131 tests / 0 failures / 0 errors / 0 skips`. This is the baseline evidence → current-facts values from `129` to `130` while classifying the work as
 - [第 003 片](./architecture_governance/part-003.md)：1001—1500；Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00 → def canon\(obj\):
 - [第 004 片](./architecture_governance/part-004.md)：1501—2000；def canonical\(self, federation_task_id: str\) -> FederatedProgressEvent \| None: → def test_plan_ok\(self\):
-- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def test_postcondition_failed\(self\): → Historical lifecycle evidence: method 1.3.0 entered `main` through Q32I third independent exact-head acceptance, PR #62
-- [第 006 片](./architecture_governance/part-006.md)：2501—3000；Historical source programs, interpreter code, examples and regression fixtures are concrete executable artifacts, bounde → P1-4：已生成 pending / risk / failure 机器可读数据，见 `data/pending_claims.*`、`data/publication_risk_rules.*` 和 `data/failure_typol
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；P1-4：生成 pending / risk / failure 数据 → The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；The life-community value charter and general governance principle texts are licensed under CC BY-SA 4.0 unless a file sa → \| 6 body recoveries blocked \| source / source body \| `SOURCE-BIND → BODY_RECOVERY_BLOCKED` \| fail closed; no inferred bo
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；\| 7 \| 社会信任如何形成 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| 52 \| 是 \| → “四种基本力统一”必须保持 pending；
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；“失败类型”本身也需要后续与真实失败案例绑定验证 → 创建独立的外部证据层文件\(external-evidence-layer.jsonl\)，与框架核心对象解耦，通过reference_id关联
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；创新增益 vs 风险成本的跨域实证案例待补充 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；未把 CONDITIONAL_ACCEPTANCE 写成：正式批准、已完成全部人工审核、已完成外部验证、已晋级正式协议、canonical 已更新。 → 跨代际/跨文化的普遍发生率 pending。
-- [第 014 片](./architecture_governance/part-014.md)：6501—6702；跨协议一致性红队（外部治理记录） → （证据不足、需外部验证、待人工复核）
+- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def test_postcondition_failed\(self\): → Historical fact that must become canonical
+- [第 006 片](./architecture_governance/part-006.md)：2501—3000；Historical lifecycle evidence: method 1.3.0 entered `main` through Q32I third independent exact-head acceptance, PR #62 → P1-4 已生成 pending / risk / failure 机器可读数据：
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；P1-4：已生成 pending / risk / failure 机器可读数据，见 `data/pending_claims.*`、`data/publication_risk_rules.*` 和 `data/failure_typol → The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter crea
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications → \| 5 \| 四种基本力统一 \| `outputs/getbrain/classic-problems-benchmark-draft-20260706.md` \| 278 \| 是 \|
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；\| 6 body recoveries blocked \| source / source body \| `SOURCE-BIND → BODY_RECOVERY_BLOCKED` \| fail closed; no inferred bo → “叙事为什么能改变人的理解”不等于“叙事改变事实”
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；“四种基本力统一”必须保持 pending； → 创业/组织中「价值创造权—决策权错配」的普遍结构 pending。
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；创建独立的外部证据层文件\(external-evidence-layer.jsonl\)，与框架核心对象解耦，通过reference_id关联 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 有限划分必然存在倒数和大于1的子集
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。 → 距离衰减验证案例。
+- [第 014 片](./architecture_governance/part-014.md)：6501—6703；跨代际/跨文化的普遍发生率 pending。 → （证据不足、需外部验证、待人工复核）

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| ARN 因果主张委托 MCF \| PASS \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-87c64e3c6ab502c0 / \| ARN 因果主张委托 MCF \| PASS \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
 - [\| BC-20260709-001 \| 《系统之美》 \| 系统基模中的"成长上限"基模与点火框架M1增强回路的同构性。当增强回路推动系统增长，同时调节回路在某个阈值启动限制增长，形成门控面极小点。 \| pending \| M1 \| 《系统之](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f938c66f58afc087 / \| BC-20260709-001 \| 《系统之美》 \| 系统基模中的"成长上限"基模与点火框架M1增强回路的同构性。当增强回路推动系统增长，同时调节回路在某个阈值启动限制增长，形成门控面极小点。 \| pending \| M1 \| 《系统之
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-2e335eff60a1457e / 因果链**：A 导致 B 导致 C（cause → effect）
   - 来源：`docs/getbrain-book-collision-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [因果链分析：L2](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-416d86601ff77292 / 因果链分析：L2
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—

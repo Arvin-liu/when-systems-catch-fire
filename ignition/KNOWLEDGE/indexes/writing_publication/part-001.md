@@ -24,6 +24,11 @@
   - 可搜索名称：IMPLICIT-C97E7BAF3411DC9C / "title": "IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report", / IMPLICIT-C97E7BAF3411DC9C / IMPLICIT-BC5F903CEB38AA1E
   - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
   - 依赖：—；被引用：—
+- [# IGNITION-20260826-141 Step 16 — Post-publication projection gate repair](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F377B4E69AF765FE / # IGNITION-20260826-141 Step 16 — Post-publication projection gate repair / IMPLICIT-F377B4E69AF765FE
+  - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-88D7E6316D5F3876 / # IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IMPLICIT-88D7E6316D5F3876
@@ -99,6 +104,11 @@
   - 可搜索名称：NFC-2304d7a7965cf7f8 / `stage_snapshot_publication --projects / repository_dependency--> readme` — public stage-summary projection only; no cap
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [`step16-projection-preflight.json` receipt was created after path-manifest](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-faf89433c6a36c43 / `step16-projection-preflight.json` receipt was created after path-manifest
+  - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
 - [`tools/operations/stage_snapshot_contract.py` 做 schema、actor reference 解析、语义、隐私、关系、远端 identity/HEAD 和投影检查；](../../../docs/operations/stage-snapshot-publication.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-a6510599e4fe4423 / `tools/operations/stage_snapshot_contract.py` 做 schema、actor reference 解析、语义、隐私、关系、远端 identity/HEAD 和投影检查；
@@ -123,6 +133,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6e3478fe878eae79 / CI 的仓库内门使用确定性 schema、语义和投影检查；独立验收者还必须在线重新获取 PR 身份、HEAD 与 Actions，不能只采信记录时间的 attestation。
   - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
+- [clone did not pass. It reported five deterministic projection failures:](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ed87f4ca387552b7 / clone did not pass. It reported five deterministic projection failures:
+  - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
   - 依赖：—；被引用：—
 - [Current Main vs 1.4 Candidate Homepage Comparison](../../ASSET-CARDS.md#asset-hr-4f3c4ff4a7ab0e3a)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -159,15 +174,30 @@
   - 可搜索名称：GetNote external verification R1 / pointfire-getnote-external-verification-r1-20260813
   - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260826-141 Step 16 — Post-publication projection gate repair](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-515e3c0bccdd8f30 / IGNITION-20260826-141 Step 16 — Post-publication projection gate repair
+  - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
 - [IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-5a6642209467ff3a)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IGNITION-ITERATION-METHOD-1.4-change-propagation-impact
   - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [nonfunction and Knowledge projections were generated. The final tracked tree](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dc7f89bc84dd66f5 / nonfunction and Knowledge projections were generated. The final tracked tree
+  - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
 - [projection. The public view is cleared when the capture/privacy boundary fails.](../../../reports/operations/ignition-139-step04-context-loss-fault-matrix.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-47ecf7a3de1a1a88 / projection. The public view is cleared when the capture/privacy boundary fails.
   - 来源：`reports/operations/ignition-139-step04-context-loss-fault-matrix.md`
+  - 依赖：—；被引用：—
+- [projections. The failed observation is preserved in the machine audit; it is](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6278f47ee645f19e / projections. The failed observation is preserved in the machine audit; it is
+  - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
   - 依赖：—；被引用：—
 - [Q27 的战场、麦克风、银行与电网共同暴露“扰动—耦合—正反馈—阈值—换态”的结构，并产生“冲击衰减／冲击放大”的新增解释。它是跨域同构叙事这一应用类型的有效基线。](../../../docs/publication/zhiyuan-writing-examples.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`

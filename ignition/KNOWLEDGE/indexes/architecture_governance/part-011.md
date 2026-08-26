@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [创建独立的外部证据层文件\(external-evidence-layer.jsonl\)，与框架核心对象解耦，通过reference_id关联](../../../data/external-research/105-intervention-control/105-interface-options-analysis.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4007bec357c2720a / 创建独立的外部证据层文件\(external-evidence-layer.jsonl\)，与框架核心对象解耦，通过reference_id关联
+  - 来源：`data/external-research/105-intervention-control/105-interface-options-analysis.json`
+  - 依赖：—；被引用：—
 - [创新增益 vs 风险成本的跨域实证案例待补充](../../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f47925d347dcd4ea / 创新增益 vs 风险成本的跨域实证案例待补充
@@ -2497,10 +2502,5 @@
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-821264901dbdcc45 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-72458b746c80a668 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

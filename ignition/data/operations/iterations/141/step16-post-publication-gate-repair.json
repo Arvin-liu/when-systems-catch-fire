@@ -1,0 +1,38 @@
+{
+  "schema_version": "ignition-141-step16-post-publication-gate-repair-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "16",
+  "status": "REPAIR_REQUIRED",
+  "phase": "POST_PUBLICATION_CURRENT_GATE",
+  "initial_gate_observation": {
+    "source": "external fresh remote-main runtime capture",
+    "publication_sha_binding": "DEFERRED_TO_1111_INDEPENDENT_WITNESS",
+    "result": "FAIL",
+    "failed_checks": [
+      "nonfunction_claim_projection",
+      "knowledge_experience_projection",
+      "knowledge_experience_validator",
+      "durability_projection_hygiene",
+      "repository_path_manifest"
+    ],
+    "side_effect_detected": false,
+    "diagnosis": "The Step16 projection-preflight receipt was created after path-manifest generation and the final progress/result records were added after the nonfunction and Knowledge projections were generated; the final tracked tree therefore contained one unaccounted path and stale deterministic projections."
+  },
+  "repair_actions": [
+    "regenerate repository path classification after every Step16 formal record exists",
+    "regenerate nonfunction claims and Knowledge Experience projections",
+    "regenerate Current Facts, Current Snapshot, compiler-owned Current surfaces and Fire Seeds",
+    "rerun deterministic projection preflight and verify the final remote-main clone independently"
+  ],
+  "live_boundary": {
+    "new_live_invocations": 0,
+    "attempt_count": 6,
+    "validated_completion_count": 0,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "obligation": "OPEN",
+    "retry": "NOT_AUTHORIZED"
+  },
+  "formal_self_witness_commit": false,
+  "claim_ceiling": "Repository-local post-publication projection repair audit only; the independent publication SHA and final remote-main gate remain separate 1111 witness observations, with no validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance inferred."
+}

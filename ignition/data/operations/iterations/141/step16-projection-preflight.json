@@ -7,7 +7,7 @@
         "tools/validate_local_executor_census.py"
       ],
       "category": "local_executor_census",
-      "duration_seconds": 0.119,
+      "duration_seconds": 0.122,
       "id": "local_executor_census",
       "returncode": 0,
       "status": "PASS",
@@ -23,14 +23,14 @@
         "--check"
       ],
       "category": "function_canonical_projection",
-      "duration_seconds": 31.41,
+      "duration_seconds": 31.405,
       "id": "function_asset_census",
       "returncode": 0,
       "status": "PASS",
       "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "stderr_tail": "",
-      "stdout_sha256": "8bd5e10ff3e65789f8e1085a6e6b75aefe2b3fea0e7f7007fccf6d5f26ee0b7f",
-      "stdout_tail": ": 80, \"stable_id\": \"D90\"}, {\"dependent_count\": 80, \"stable_id\": \"D211\"}, {\"dependent_count\": 77, \"stable_id\": \"D451\"}, {\"dependent_count\": 77, \"stable_id\": \"D541\"}, {\"dependent_count\": 71, \"stable_id\": \"D289\"}, {\"dependent_count\": 70, \"stable_id\": \"D290\"}, {\"dependent_count\": 64, \"stable_id\": \"D430\"}, {\"dependent_count\": 64, \"stable_id\": \"D431\"}, {\"dependent_count\": 64, \"stable_id\": \"D450\"}, {\"dependent_count\": 63, \"stable_id\": \"D361\"}, {\"dependent_count\": 35, \"stable_id\": \"D476\"}, {\"dependent_count\": 35, \"stable_id\": \"D477\"}], \"human_adjudicated_task98\": 12, \"identity_counts\": {\"ALGORITHM_OR_WORKFLOW\": 83, \"CONJECTURE_OR_PENDING_CLAIM\": 121, \"GATE_OR_DECISION_RULE\": 18, \"HEURISTIC\": 24, \"INVALID_OR_PSEUDO_FUNCTION\": 5357, \"PARAMETRIC_MODEL\": 72, \"RELATION_OR_CONSTRAINT\": 227, \"SCORE_OR_INDEX\": 72, \"STRUCTURAL_METAPHOR\": 4}, \"implicit_named_assets\": 4514, \"math_maturity_counts\": {\"M0\": 5357, \"M1\": 616, \"M3\": 1, \"M4\": 3, \"M6\": 1}, \"queued_for_human_review\": 5966, \"registered_assets\": 622, \"scanner_version\": \"2.0.0\", \"snapshot\": \"function-census-v2-20260729\", \"source_mentions\": 63315, \"source_occurrence_records\": 28770, \"tracked_text_files_scanned\": 3662}\nFUNCTION_ASSET_CENSUS_VALID\n"
+      "stdout_sha256": "5b257150495b6683b81b560d29aa4f911ff7fc594e34d80f4f9c10efc6fe5fb3",
+      "stdout_tail": ": 80, \"stable_id\": \"D90\"}, {\"dependent_count\": 80, \"stable_id\": \"D211\"}, {\"dependent_count\": 77, \"stable_id\": \"D451\"}, {\"dependent_count\": 77, \"stable_id\": \"D541\"}, {\"dependent_count\": 71, \"stable_id\": \"D289\"}, {\"dependent_count\": 70, \"stable_id\": \"D290\"}, {\"dependent_count\": 64, \"stable_id\": \"D430\"}, {\"dependent_count\": 64, \"stable_id\": \"D431\"}, {\"dependent_count\": 64, \"stable_id\": \"D450\"}, {\"dependent_count\": 63, \"stable_id\": \"D361\"}, {\"dependent_count\": 35, \"stable_id\": \"D476\"}, {\"dependent_count\": 35, \"stable_id\": \"D477\"}], \"human_adjudicated_task98\": 12, \"identity_counts\": {\"ALGORITHM_OR_WORKFLOW\": 83, \"CONJECTURE_OR_PENDING_CLAIM\": 121, \"GATE_OR_DECISION_RULE\": 18, \"HEURISTIC\": 24, \"INVALID_OR_PSEUDO_FUNCTION\": 5358, \"PARAMETRIC_MODEL\": 72, \"RELATION_OR_CONSTRAINT\": 227, \"SCORE_OR_INDEX\": 72, \"STRUCTURAL_METAPHOR\": 4}, \"implicit_named_assets\": 4515, \"math_maturity_counts\": {\"M0\": 5358, \"M1\": 616, \"M3\": 1, \"M4\": 3, \"M6\": 1}, \"queued_for_human_review\": 5967, \"registered_assets\": 622, \"scanner_version\": \"2.0.0\", \"snapshot\": \"function-census-v2-20260729\", \"source_mentions\": 63316, \"source_occurrence_records\": 28771, \"tracked_text_files_scanned\": 3663}\nFUNCTION_ASSET_CENSUS_VALID\n"
     },
     {
       "argv": [
@@ -39,14 +39,14 @@
         "--check"
       ],
       "category": "function_adjudication_closure",
-      "duration_seconds": 2.448,
+      "duration_seconds": 2.43,
       "id": "function_asset_deep_adjudication",
       "returncode": 0,
       "status": "PASS",
       "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "stderr_tail": "",
-      "stdout_sha256": "36a47cd0ab0bf54bfa6cbe90f9a06319236e802b8b74afc9dcd344e3dbc3827f",
-      "stdout_tail": "TURAL_METAPHOR\": 4, \"KEEP_AS_TESTED_INDEX_OR_CLASSIFIER\": 1, \"KEEP_AS_TOY_MODEL\": 2, \"QUARANTINE_UNTIL_DEFINED\": 4746, \"REJECT_AS_INVALID\": 1, \"REWRITE_AND_RETEST\": 1}, \"explicit_quarantine_or_pending\": 4868, \"external_evidence_distribution\": {\"E0\": 5973, \"E1\": 5}, \"identity_distribution\": {\"ALGORITHM_OR_WORKFLOW\": 1184, \"CONJECTURE_OR_RESEARCH_CANDIDATE\": 122, \"GATE_OR_CLASSIFIER\": 18, \"HEURISTIC\": 24, \"INVALID_OR_PSEUDO_FUNCTION\": 1, \"PARAMETRIC_MATHEMATICAL_MODEL\": 72, \"RELATION_OR_CONSTRAINT\": 227, \"SCORING_OR_INDEX_FUNCTION\": 72, \"STRUCTURAL_METAPHOR\": 4, \"UNRESOLVED_IDENTITY\": 4254}, \"mathematical_maturity_distribution\": {\"M0\": 4256, \"M1\": 1321, \"M2\": 396, \"M3\": 1, \"M4\": 3, \"M6\": 1}, \"public_strong_claim_candidates\": 0, \"registry_closed\": true, \"reviewer_state_distribution\": {\"TASK98_HUMAN_ADJUDICATION_RECONFIRMED\": 12, \"TASK99_MACHINE_TRIAGED_EXPLICIT_QUARANTINE\": 4255, \"TASK99_REPOSITORY_EVIDENCE_ADJUDICATED\": 1711}, \"schema_version\": \"2.0.0\", \"semantic_rebound_candidates\": 0, \"source_commit\": \"23f4702a0e9f136cb39f03c4bcd3d85a27084804\", \"task_id\": \"IGNITION-HISTORICAL-FUNCTION-ASSET-DEEP-ADJUDICATION-AND-REGISTRY-CLOSURE-R1-20260729\"}\nFUNCTION_ASSET_DEEP_ADJUDICATION_VALID\n"
+      "stdout_sha256": "c841388e79c2c01e489d0afceb0a3b31ce8159e7d77ab1ae0ed54e669aead639",
+      "stdout_tail": "TURAL_METAPHOR\": 4, \"KEEP_AS_TESTED_INDEX_OR_CLASSIFIER\": 1, \"KEEP_AS_TOY_MODEL\": 2, \"QUARANTINE_UNTIL_DEFINED\": 4747, \"REJECT_AS_INVALID\": 1, \"REWRITE_AND_RETEST\": 1}, \"explicit_quarantine_or_pending\": 4869, \"external_evidence_distribution\": {\"E0\": 5974, \"E1\": 5}, \"identity_distribution\": {\"ALGORITHM_OR_WORKFLOW\": 1184, \"CONJECTURE_OR_RESEARCH_CANDIDATE\": 122, \"GATE_OR_CLASSIFIER\": 18, \"HEURISTIC\": 24, \"INVALID_OR_PSEUDO_FUNCTION\": 1, \"PARAMETRIC_MATHEMATICAL_MODEL\": 72, \"RELATION_OR_CONSTRAINT\": 227, \"SCORING_OR_INDEX_FUNCTION\": 72, \"STRUCTURAL_METAPHOR\": 4, \"UNRESOLVED_IDENTITY\": 4255}, \"mathematical_maturity_distribution\": {\"M0\": 4257, \"M1\": 1321, \"M2\": 396, \"M3\": 1, \"M4\": 3, \"M6\": 1}, \"public_strong_claim_candidates\": 0, \"registry_closed\": true, \"reviewer_state_distribution\": {\"TASK98_HUMAN_ADJUDICATION_RECONFIRMED\": 12, \"TASK99_MACHINE_TRIAGED_EXPLICIT_QUARANTINE\": 4256, \"TASK99_REPOSITORY_EVIDENCE_ADJUDICATED\": 1711}, \"schema_version\": \"2.0.0\", \"semantic_rebound_candidates\": 0, \"source_commit\": \"23f4702a0e9f136cb39f03c4bcd3d85a27084804\", \"task_id\": \"IGNITION-HISTORICAL-FUNCTION-ASSET-DEEP-ADJUDICATION-AND-REGISTRY-CLOSURE-R1-20260729\"}\nFUNCTION_ASSET_DEEP_ADJUDICATION_VALID\n"
     },
     {
       "argv": [
@@ -55,7 +55,7 @@
         "--check"
       ],
       "category": "nonfunction_canonical_projection",
-      "duration_seconds": 32.708,
+      "duration_seconds": 32.559,
       "id": "nonfunction_claim_projection",
       "returncode": 0,
       "status": "PASS",
@@ -71,14 +71,14 @@
         "--check"
       ],
       "category": "knowledge_experience",
-      "duration_seconds": 260.342,
+      "duration_seconds": 262.987,
       "id": "knowledge_experience_projection",
       "returncode": 0,
       "status": "PASS",
       "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "stderr_tail": "",
-      "stdout_sha256": "085866f5c56df4bfd68c5968246f15dd9d2df355bb656ee21e8e997d17390205",
-      "stdout_tail": "KNOWLEDGE_EXPERIENCE_OK cards=414 changes=315 layered=332 search=23607\n"
+      "stdout_sha256": "002f0c2fd199f3429f95fa3ad55a49256f401a1376ac26b70fff0abe4746a564",
+      "stdout_tail": "KNOWLEDGE_EXPERIENCE_OK cards=414 changes=315 layered=332 search=23615\n"
     },
     {
       "argv": [
@@ -86,14 +86,14 @@
         "tools/governance/validate_knowledge_experience.py"
       ],
       "category": "knowledge_experience",
-      "duration_seconds": 261.631,
+      "duration_seconds": 261.284,
       "id": "knowledge_experience_validator",
       "returncode": 0,
       "status": "PASS",
       "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "stderr_tail": "",
-      "stdout_sha256": "2abacc8df4cfb1bf01301113df4f1cd337af8397de00ba15a5ed5ef99730e57d",
-      "stdout_tail": "KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=414 changes=315 layers=332 search=23607 aliases=876 links=25631 two_click_pages=8\n"
+      "stdout_sha256": "7ccf0a3053e18222b19d3877683a72b4d42049e763d2e0832b6a26ee90ba420d",
+      "stdout_tail": "KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=414 changes=315 layers=332 search=23615 aliases=876 links=25639 two_click_pages=8\n"
     },
     {
       "argv": [
@@ -102,7 +102,7 @@
         "--check"
       ],
       "category": "fire_seeds",
-      "duration_seconds": 0.151,
+      "duration_seconds": 0.126,
       "id": "fire_seeds_census",
       "returncode": 0,
       "status": "PASS",
@@ -117,7 +117,7 @@
         "tools/publication/validate_fire_seeds.py"
       ],
       "category": "fire_seeds",
-      "duration_seconds": 0.067,
+      "duration_seconds": 0.069,
       "id": "fire_seeds_validator",
       "returncode": 0,
       "status": "PASS",
@@ -133,7 +133,7 @@
         "--check"
       ],
       "category": "blast_radius",
-      "duration_seconds": 0.085,
+      "duration_seconds": 0.086,
       "id": "blast_radius_report",
       "returncode": 0,
       "status": "PASS",
@@ -149,7 +149,7 @@
         "--check"
       ],
       "category": "current_surface",
-      "duration_seconds": 0.205,
+      "duration_seconds": 0.206,
       "id": "current_facts",
       "returncode": 0,
       "status": "PASS",
@@ -255,7 +255,7 @@
         "machine-entry"
       ],
       "category": "current_surface_compiler",
-      "duration_seconds": 0.044,
+      "duration_seconds": 0.042,
       "id": "current_surface_machine_entry",
       "returncode": 0,
       "status": "PASS",
@@ -291,7 +291,7 @@
         "state-changelog"
       ],
       "category": "current_surface_compiler",
-      "duration_seconds": 0.043,
+      "duration_seconds": 0.042,
       "id": "current_surface_state_changelog",
       "returncode": 0,
       "status": "PASS",
@@ -323,7 +323,7 @@
         "--check"
       ],
       "category": "current_surface",
-      "duration_seconds": 0.195,
+      "duration_seconds": 0.196,
       "id": "current_surface_determinism",
       "returncode": 0,
       "status": "PASS",
@@ -338,7 +338,7 @@
         "tools/governance/validate_human_surface_contract.py"
       ],
       "category": "human_surface_fingerprint",
-      "duration_seconds": 0.649,
+      "duration_seconds": 0.659,
       "id": "human_surface_contract",
       "returncode": 0,
       "status": "PASS",
@@ -353,7 +353,7 @@
         "tools/validate_agent_platform_human_surface.py"
       ],
       "category": "human_surface_fingerprint",
-      "duration_seconds": 0.027,
+      "duration_seconds": 0.026,
       "id": "agent_platform_human_surface",
       "returncode": 0,
       "status": "PASS",
@@ -383,14 +383,14 @@
         "tools/validate_durability_projection_hygiene.py"
       ],
       "category": "release_projection",
-      "duration_seconds": 0.368,
+      "duration_seconds": 0.386,
       "id": "durability_projection_hygiene",
       "returncode": 0,
       "status": "PASS",
       "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "stderr_tail": "",
-      "stdout_sha256": "2d19ff022dd17ef2c065978015e266ac0c8adddd6ddc434984c194a2853c553c",
-      "stdout_tail": "TION=376\n  GOVERNED_MACHINE_RECORD=779\n  RECEIPT_HISTORY_OPERATIONS=764\n  REFERENCE_OR_KNOWLEDGE=154\n  REPOSITORY_GOVERNANCE_DOC=22\n  SCHEMA=211\n  TEST_FIXTURE=266\n  TOOL_OR_WORKFLOW=401\ntracked=3440 manifest=3440\nPASS contract:single-current-source\nPASS classification:no-unresolved count=0\nPASS classification:no-duplicate count=0\nPASS manifest:all-tracked-accounted missing=0\nPASS manifest:no-stale-path stale=0\nPASS manifest:category-stable changed=0\nPASS anti-backflow:authoritative-only-from-allowlist violations=0\nPASS anti-backflow:allowlist-not-mislabeled count=0\nPASS anti-backflow:manifest-authoritative-allowlist violations=0\nPASS schema:manifest-rows-valid invalid=0\nCHECKS_TOTAL=10 CHECKS_PASSED=10 CHECKS_FAILED=0\nREPOSITORY_PATH_CLASSIFICATION_VALID\nCURRENT_STATE_SYNC_OK identity_epoch=os-control-plane-r7-live-state-semantics-structured-result-reliability-r1 metrics=16 receipt=ignition/data/operations/iterations/141/current-state-sync-receipt.json impact=ARCHITECTURE_CHANGED\nDURABILITY_PROJECTION_HYGIENE_OK new_paths=5 foundation_knowledge_backflow=0 human_machine_dump=0 fire_seed_backflow=0 historical_residuals=9 sympy_residuals=1 current_facts=PASS path_classification=PASS\n"
+      "stdout_sha256": "0d5e431749c5db2cf6306b66d15e025b80b66fef879ef68896f549cde27325f1",
+      "stdout_tail": "TION=377\n  GOVERNED_MACHINE_RECORD=779\n  RECEIPT_HISTORY_OPERATIONS=766\n  REFERENCE_OR_KNOWLEDGE=154\n  REPOSITORY_GOVERNANCE_DOC=22\n  SCHEMA=211\n  TEST_FIXTURE=266\n  TOOL_OR_WORKFLOW=401\ntracked=3443 manifest=3443\nPASS contract:single-current-source\nPASS classification:no-unresolved count=0\nPASS classification:no-duplicate count=0\nPASS manifest:all-tracked-accounted missing=0\nPASS manifest:no-stale-path stale=0\nPASS manifest:category-stable changed=0\nPASS anti-backflow:authoritative-only-from-allowlist violations=0\nPASS anti-backflow:allowlist-not-mislabeled count=0\nPASS anti-backflow:manifest-authoritative-allowlist violations=0\nPASS schema:manifest-rows-valid invalid=0\nCHECKS_TOTAL=10 CHECKS_PASSED=10 CHECKS_FAILED=0\nREPOSITORY_PATH_CLASSIFICATION_VALID\nCURRENT_STATE_SYNC_OK identity_epoch=os-control-plane-r7-live-state-semantics-structured-result-reliability-r1 metrics=16 receipt=ignition/data/operations/iterations/141/current-state-sync-receipt.json impact=ARCHITECTURE_CHANGED\nDURABILITY_PROJECTION_HYGIENE_OK new_paths=5 foundation_knowledge_backflow=0 human_machine_dump=0 fire_seed_backflow=0 historical_residuals=9 sympy_residuals=1 current_facts=PASS path_classification=PASS\n"
     },
     {
       "argv": [
@@ -399,14 +399,14 @@
         "--check"
       ],
       "category": "repository_path_manifest",
-      "duration_seconds": 0.078,
+      "duration_seconds": 0.076,
       "id": "repository_path_manifest",
       "returncode": 0,
       "status": "PASS",
       "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "stderr_tail": "",
-      "stdout_sha256": "e52ff20c228096568ae900d9eb98d9fd34e14db1bd458857f61d589d94866336",
-      "stdout_tail": "category_distribution:\n  CANDIDATE_NONAUTHORITATIVE_RECORD=92\n  EDITORIAL_ARTICLE=339\n  EVIDENCE_OR_BENCHMARK=36\n  GENERATED_PROJECTION=376\n  GOVERNED_MACHINE_RECORD=779\n  RECEIPT_HISTORY_OPERATIONS=764\n  REFERENCE_OR_KNOWLEDGE=154\n  REPOSITORY_GOVERNANCE_DOC=22\n  SCHEMA=211\n  TEST_FIXTURE=266\n  TOOL_OR_WORKFLOW=401\ntracked=3440 manifest=3440\nPASS contract:single-current-source\nPASS classification:no-unresolved count=0\nPASS classification:no-duplicate count=0\nPASS manifest:all-tracked-accounted missing=0\nPASS manifest:no-stale-path stale=0\nPASS manifest:category-stable changed=0\nPASS anti-backflow:authoritative-only-from-allowlist violations=0\nPASS anti-backflow:allowlist-not-mislabeled count=0\nPASS anti-backflow:manifest-authoritative-allowlist violations=0\nPASS schema:manifest-rows-valid invalid=0\nCHECKS_TOTAL=10 CHECKS_PASSED=10 CHECKS_FAILED=0\nREPOSITORY_PATH_CLASSIFICATION_VALID\n"
+      "stdout_sha256": "e3282650fa8acad3b4a4b99cca59ce0e4b45fc505bc8690868a93ef30cb70cf8",
+      "stdout_tail": "category_distribution:\n  CANDIDATE_NONAUTHORITATIVE_RECORD=92\n  EDITORIAL_ARTICLE=339\n  EVIDENCE_OR_BENCHMARK=36\n  GENERATED_PROJECTION=377\n  GOVERNED_MACHINE_RECORD=779\n  RECEIPT_HISTORY_OPERATIONS=766\n  REFERENCE_OR_KNOWLEDGE=154\n  REPOSITORY_GOVERNANCE_DOC=22\n  SCHEMA=211\n  TEST_FIXTURE=266\n  TOOL_OR_WORKFLOW=401\ntracked=3443 manifest=3443\nPASS contract:single-current-source\nPASS classification:no-unresolved count=0\nPASS classification:no-duplicate count=0\nPASS manifest:all-tracked-accounted missing=0\nPASS manifest:no-stale-path stale=0\nPASS manifest:category-stable changed=0\nPASS anti-backflow:authoritative-only-from-allowlist violations=0\nPASS anti-backflow:allowlist-not-mislabeled count=0\nPASS anti-backflow:manifest-authoritative-allowlist violations=0\nPASS schema:manifest-rows-valid invalid=0\nCHECKS_TOTAL=10 CHECKS_PASSED=10 CHECKS_FAILED=0\nREPOSITORY_PATH_CLASSIFICATION_VALID\n"
     }
   ],
   "claim_ceiling": "Repository-local deterministic projection cleanliness only; no authority, external truth, production readiness, Owner acceptance or epistemic upgrade.",
@@ -428,14 +428,14 @@
   "task_id": "IGNITION-20260826-141",
   "worktree_after": {
     "clean": false,
-    "status_sha256": "f4f05bd92c575c3dd516a666b45207b8e8bba954371240b5746ce66dab1ef987",
-    "tracked_content_sha256": "8b50470c272c81d0e5958207ed5b590bb20b7ace5130d055e54152bf0e5e3e56",
-    "tracked_path_count": 3436
+    "status_sha256": "dbae2b6ad3006ebf77a2f78dba7b5f64acbdaf1aff86ce85a25c4947a52ea20a",
+    "tracked_content_sha256": "6370605a41502fffaf5e9d7a1b0e3e3b5f8fec70e44fc737ec925a795b77f852",
+    "tracked_path_count": 3441
   },
   "worktree_before": {
     "clean": false,
-    "status_sha256": "f4f05bd92c575c3dd516a666b45207b8e8bba954371240b5746ce66dab1ef987",
-    "tracked_content_sha256": "8b50470c272c81d0e5958207ed5b590bb20b7ace5130d055e54152bf0e5e3e56",
-    "tracked_path_count": 3436
+    "status_sha256": "dbae2b6ad3006ebf77a2f78dba7b5f64acbdaf1aff86ce85a25c4947a52ea20a",
+    "tracked_content_sha256": "6370605a41502fffaf5e9d7a1b0e3e3b5f8fec70e44fc737ec925a795b77f852",
+    "tracked_path_count": 3441
   }
 }

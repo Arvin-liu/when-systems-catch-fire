@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-148c1f9467f5cab4 / The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications
+  - 来源：`LICENSES/active/CC-BY-NC-SA-4.0.md`
+  - 依赖：—；被引用：—
 - [The life-community value charter and general governance principle texts are licensed under CC BY-SA 4.0 unless a file sa](../../../LICENSES/active/CC-BY-SA-4.0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-15c2d1b6d8acb99e / The life-community value charter and general governance principle texts are licensed under CC BY-SA 4.0 unless a file sa
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-bf19cfc0046a4c46 / \| 5 \| 四种基本力统一 \| `outputs/getbrain/classic-problems-benchmark-draft-20260706.md` \| 278 \| 是 \|
   - 来源：`outputs/audit/v0.2-id-preflight-discrepancy-20260707.md`
-  - 依赖：—；被引用：—
-- [\| 6 body recoveries blocked \| source / source body \| `SOURCE-BIND → BODY_RECOVERY_BLOCKED` \| fail closed; no inferred bo](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-14ce3ffea9c7162b / \| 6 body recoveries blocked \| source / source body \| `SOURCE-BIND → BODY_RECOVERY_BLOCKED` \| fail closed; no inferred bo
-  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—

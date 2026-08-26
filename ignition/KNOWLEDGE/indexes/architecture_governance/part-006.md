@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Historical lifecycle evidence: method 1.3.0 entered `main` through Q32I third independent exact-head acceptance, PR #62](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e94d50907acedab3 / Historical lifecycle evidence: method 1.3.0 entered `main` through Q32I third independent exact-head acceptance, PR #62
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
 - [Historical source programs, interpreter code, examples and regression fixtures are concrete executable artifacts, bounde](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7790e798adc06be0 / Historical source programs, interpreter code, examples and regression fixtures are concrete executable artifacts, bounde
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a83c52714d97a13a / P1-4 已生成 pending / risk / failure 机器可读数据：
   - 来源：`docs/v0.2_summary.md`
-  - 依赖：P1；被引用：—
-- [P1-4：已生成 pending / risk / failure 机器可读数据，见 `data/pending_claims.*`、`data/publication_risk_rules.*` 和 `data/failure_typol](../../../docs/v0.2_next_tasks.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ed2ea79ab312f453 / P1-4：已生成 pending / risk / failure 机器可读数据，见 `data/pending_claims.*`、`data/publication_risk_rules.*` 和 `data/failure_typol
-  - 来源：`docs/v0.2_next_tasks.md`
   - 依赖：P1；被引用：—

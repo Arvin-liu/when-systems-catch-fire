@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| 6 body recoveries blocked \| source / source body \| `SOURCE-BIND → BODY_RECOVERY_BLOCKED` \| fail closed; no inferred bo](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-14ce3ffea9c7162b / \| 6 body recoveries blocked \| source / source body \| `SOURCE-BIND → BODY_RECOVERY_BLOCKED` \| fail closed; no inferred bo
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
 - [\| 7 \| 社会信任如何形成 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| 52 \| 是 \|](../../../outputs/audit/v0.2-id-preflight-discrepancy-20260707.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-41cb1764c2ad66fa / \| 7 \| 社会信任如何形成 \| `outputs/getbrain/storytelling-case-backlog-draft-20260707.md` \| 52 \| 是 \|
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-78edfbc585bc0f84 / “叙事为什么能改变人的理解”不等于“叙事改变事实”
   - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [“四种基本力统一”必须保持 pending；](../../../docs/discipline_kernel_pilot.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d42d5de048f49247 / “四种基本力统一”必须保持 pending；
-  - 来源：`docs/discipline_kernel_pilot.md`
   - 依赖：—；被引用：—

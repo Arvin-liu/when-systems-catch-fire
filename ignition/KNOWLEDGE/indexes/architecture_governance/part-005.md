@@ -1704,6 +1704,11 @@
   - 可搜索名称：NFC-9d8b45164331d9e7 / Executor:** QClaw \| **Model:** Hy3 \(pool-hy3-preview\), adaptive deep-thinking HIGH \| **No Auto / no model-switch / no fa
   - 来源：`data/external-research/121-fulltext-resolver/121q6/pr41-body.md`
   - 依赖：—；被引用：—
+- [exist, then rebuilds nonfunction claims, Knowledge Experience, Current Facts,](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a6873c1cfae91db7 / exist, then rebuilds nonfunction claims, Knowledge Experience, Current Facts,
+  - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
 - [EXP\[External expert/replication\] -->\|scoped evidence\| SRC](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f245e9200bb84634 / EXP\[External expert/replication\] -->\|scoped evidence\| SRC
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a7db978dcb8d36ac / Historical fact that must become canonical
   - 来源：`reports/operations/ignition-139-step00-baseline-audit.md`
-  - 依赖：—；被引用：—
-- [Historical lifecycle evidence: method 1.3.0 entered `main` through Q32I third independent exact-head acceptance, PR #62](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-e94d50907acedab3 / Historical lifecycle evidence: method 1.3.0 entered `main` through Q32I third independent exact-head acceptance, PR #62
-  - 来源：`ITERATION.md`
   - 依赖：—；被引用：—

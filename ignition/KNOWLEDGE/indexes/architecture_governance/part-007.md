@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [P1-4：已生成 pending / risk / failure 机器可读数据，见 `data/pending_claims.*`、`data/publication_risk_rules.*` 和 `data/failure_typol](../../../docs/v0.2_next_tasks.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ed2ea79ab312f453 / P1-4：已生成 pending / risk / failure 机器可读数据，见 `data/pending_claims.*`、`data/publication_risk_rules.*` 和 `data/failure_typol
+  - 来源：`docs/v0.2_next_tasks.md`
+  - 依赖：P1；被引用：—
 - [P1-4：生成 pending / risk / failure 数据](../../../docs/machine_readable_data_plan.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5cc9e4124795edc0 / P1-4：生成 pending / risk / failure 数据
@@ -2497,10 +2502,5 @@
 - [The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter crea](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7bf6631a26057aca / The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter crea
-  - 来源：`LICENSES/active/CC-BY-NC-SA-4.0.md`
-  - 依赖：—；被引用：—
-- [The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications](../../../LICENSES/active/CC-BY-NC-SA-4.0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-148c1f9467f5cab4 / The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications
   - 来源：`LICENSES/active/CC-BY-NC-SA-4.0.md`
   - 依赖：—；被引用：—

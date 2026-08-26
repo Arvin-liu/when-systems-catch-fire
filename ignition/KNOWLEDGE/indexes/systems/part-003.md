@@ -1159,6 +1159,11 @@
   - 可搜索名称：NFC-7bbf0de26a905730 / The canonical method name is `之元写作法 / Zhiyuan Writing Method`. It is named for maintainer 之元 because the method was dist
   - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
   - 依赖：—；被引用：—
+- [The cause was ordering, not a live or full-suite regression. The](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c47d8675f47d00c4 / The cause was ordering, not a live or full-suite regression. The
+  - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
 - [The ceiling must bind object, criterion, version, test, and boundary. A higher ceiling requires a discriminating test or](../../../docs/architecture/mechanism-adjudication-plane.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f1be25d737677f21 / The ceiling must bind object, criterion, version, test, and boundary. A higher ceiling requires a discriminating test or
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-94836f1c9a1eb288 / \| Agricultural Science \| S31 \| 管理实践\(施肥/PGR\)对作物产量的因果效应 \|
   - 来源：`reports/external-research/106-105-evidence-correction-report.md`
-  - 依赖：—；被引用：—
-- [\| ARN 因果主张委托 MCF \| PASS \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-87c64e3c6ab502c0 / \| ARN 因果主张委托 MCF \| PASS \|
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—

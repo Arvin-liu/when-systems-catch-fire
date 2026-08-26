@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [跃迁不是为了换景，而是因为当前层不能容纳某个真实残余：定义刚成立就显得不够，事实没有回答意义，机制没有解释主体经验，或一个选择暴露了不可同时实现的可能性。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5a6db2ea7b183ff3 / 跃迁不是为了换景，而是因为当前层不能容纳某个真实残余：定义刚成立就显得不够，事实没有回答意义，机制没有解释主体经验，或一个选择暴露了不可同时实现的可能性。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
 - [跨域同构**：这个机制在别的领域也见过吗（摄影？财商？AI？历史？）](../../../docs/getbrain-book-collision-guide-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-068793fa591cc7f3 / 跨域同构**：这个机制在别的领域也见过吗（摄影？财商？AI？历史？）

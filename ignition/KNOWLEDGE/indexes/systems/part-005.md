@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [因果链分析：L2](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-416d86601ff77292 / 因果链分析：L2
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [因果链条过于整齐；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-bd6a16fc6df376e2 / 因果链条过于整齐；
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-dbb4c54cd2760dcf / 赛课的评价与选拔机制，存在诸多心照不宣的潜规则：
   - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [跃迁不是为了换景，而是因为当前层不能容纳某个真实残余：定义刚成立就显得不够，事实没有回答意义，机制没有解释主体经验，或一个选择暴露了不可同时实现的可能性。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5a6db2ea7b183ff3 / 跃迁不是为了换景，而是因为当前层不能容纳某个真实残余：定义刚成立就显得不够，事实没有回答意义，机制没有解释主体经验，或一个选择暴露了不可同时实现的可能性。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—

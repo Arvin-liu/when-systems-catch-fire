@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [“四种基本力统一”必须保持 pending；](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d42d5de048f49247 / “四种基本力统一”必须保持 pending；
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
 - [“失败类型”本身也需要后续与真实失败案例绑定验证](../../../outputs/getbrain/failure-typology-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-55f5fb27e8316ab8 / “失败类型”本身也需要后续与真实失败案例绑定验证
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1bcf6e9616100c12 / 创业/组织中「价值创造权—决策权错配」的普遍结构 pending。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [创建独立的外部证据层文件\(external-evidence-layer.jsonl\)，与框架核心对象解耦，通过reference_id关联](../../../data/external-research/105-intervention-control/105-interface-options-analysis.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4007bec357c2720a / 创建独立的外部证据层文件\(external-evidence-layer.jsonl\)，与框架核心对象解耦，通过reference_id关联
-  - 来源：`data/external-research/105-intervention-control/105-interface-options-analysis.json`
   - 依赖：—；被引用：—
