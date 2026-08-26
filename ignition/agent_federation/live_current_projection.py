@@ -17,10 +17,12 @@ from agent_kernel.contracts import sha256_json
 from agent_federation.live_attempt_ledger import LiveAttemptLedger
 from agent_federation.live_observation_plane import derive_observation_outcome, validate_observation_outcome
 from agent_federation.live_reconciliation_events import LiveReconciliationEventLedger
+from agent_federation.live_state_dimensions import derive_live_state_dimensions, validate_live_state_dimensions
 
 
 LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA = "live-current-projection-r1"
-LIVE_CURRENT_PROJECTION_SCHEMA = "live-current-projection-r2"
+TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA = "live-current-projection-r2"
+LIVE_CURRENT_PROJECTION_SCHEMA = "live-current-projection-r3"
 SHA256_RE = re.compile(r"^[0-9a-f]{64}$")
 
 
@@ -33,7 +35,12 @@ def _schema_validate(document: Mapping[str, Any], *, schema_version: str) -> Non
         from jsonschema import Draft202012Validator
     except ImportError:  # pragma: no cover - clean bootstrap fallback
         return
-    filename = "live-current-projection-r1.schema.json" if schema_version == LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA else "live-current-projection-r2.schema.json"
+    if schema_version == LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA:
+        filename = "live-current-projection-r1.schema.json"
+    elif schema_version == TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA:
+        filename = "live-current-projection-r2.schema.json"
+    else:
+        filename = "live-current-projection-r3.schema.json"
     schema_path = Path(__file__).resolve().parents[1] / "schemas/operations" / filename
     try:
         schema = json.loads(schema_path.read_text(encoding="utf-8"))
@@ -41,7 +48,7 @@ def _schema_validate(document: Mapping[str, Any], *, schema_version: str) -> Non
         raise LiveCurrentProjectionError("live Current projection schema is unavailable") from exc
     # R2 is checked below with the same strict field contract because its
     # schema references the historical R1 document for shared fragments.
-    if schema_version == LIVE_CURRENT_PROJECTION_SCHEMA:
+    if schema_version in {TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA, LIVE_CURRENT_PROJECTION_SCHEMA}:
         return
     errors = sorted(Draft202012Validator(schema).iter_errors(document), key=lambda error: list(error.path))
     if errors:
@@ -140,8 +147,8 @@ def _validate_summary(summary: Mapping[str, Any], *, typed: bool) -> None:
         raise LiveCurrentProjectionError("attempt summary record hash is invalid")
 
 
-def _validate_projection_common(value: dict[str, Any], *, typed: bool, check_digest: bool) -> dict[str, Any]:
-    expected_schema = LIVE_CURRENT_PROJECTION_SCHEMA if typed else LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA
+def _validate_projection_common(value: dict[str, Any], *, typed: bool, r3: bool = False, check_digest: bool) -> dict[str, Any]:
+    expected_schema = LIVE_CURRENT_PROJECTION_SCHEMA if r3 else TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA if typed else LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA
     if value.get("schema_version") != expected_schema:
         raise LiveCurrentProjectionError("live Current projection schema version mismatch")
     if value.get("contract_id") != "LIVE_CURRENT_STATE_DERIVATION_INVARIANT":
@@ -150,6 +157,8 @@ def _validate_projection_common(value: dict[str, Any], *, typed: bool, check_dig
         "schema_version", "contract_id", "source_ledger", "counts", "per_executor", "latest_attempt_per_executor",
         "latest_validated_completion", "current_live_ceiling", "obligation", "next_eligible_action", "attempts", "claim_ceiling", "projection_digest",
     }
+    if r3:
+        required.update({"live_state_dimensions", "compatibility_projection"})
     if set(value) != required:
         raise LiveCurrentProjectionError("live Current projection fields are not canonical")
     source = value["source_ledger"]
@@ -158,6 +167,8 @@ def _validate_projection_common(value: dict[str, Any], *, typed: bool, check_dig
         source_keys.add("reconciliation_events")
         if isinstance(value.get("source_ledger"), dict) and "observation_events" in value["source_ledger"]:
             source_keys.add("observation_events")
+        if isinstance(value.get("source_ledger"), dict) and "inference_observation_events" in value["source_ledger"]:
+            source_keys.add("inference_observation_events")
     if not isinstance(source, dict) or set(source) != source_keys:
         raise LiveCurrentProjectionError("source ledger metadata is invalid")
     if not isinstance(source["path"], str) or not source["path"] or not isinstance(source["record_count"], int) or source["record_count"] < 0:
@@ -206,7 +217,10 @@ def _validate_projection_common(value: dict[str, Any], *, typed: bool, check_dig
         if value["latest_validated_completion"]["state"] != "COMPLETED_VALIDATED":
             raise LiveCurrentProjectionError("latest validated completion has an incompatible state")
     obligation = value["obligation"]
-    if not isinstance(obligation, dict) or set(obligation) != {"obligation_id", "state", "reason", "unreconciled_attempt_ids"}:
+    obligation_keys = {"obligation_id", "state", "reason", "unreconciled_attempt_ids"}
+    if r3:
+        obligation_keys.add("closure_condition")
+    if not isinstance(obligation, dict) or set(obligation) != obligation_keys:
         raise LiveCurrentProjectionError("live obligation projection is invalid")
     if obligation["obligation_id"] != "LIVE_EXTERNAL_INVOCATION" or obligation["state"] not in {"OPEN", "CLOSED"}:
         raise LiveCurrentProjectionError("live obligation state is invalid")
@@ -214,6 +228,8 @@ def _validate_projection_common(value: dict[str, Any], *, typed: bool, check_dig
         raise LiveCurrentProjectionError("unreconciled attempt list is invalid")
     if len(obligation["unreconciled_attempt_ids"]) != counts["unreconciled_count"]:
         raise LiveCurrentProjectionError("unreconciled count does not match obligation")
+    if r3 and obligation["closure_condition"] != "FIRST_EXACT_BOUND_LIVE_READONLY_VALIDATED_COMPLETION":
+        raise LiveCurrentProjectionError("live obligation closure condition is invalid")
     action = value["next_eligible_action"]
     if not isinstance(action, dict) or set(action) != {"status", "action", "blocker_summary"}:
         raise LiveCurrentProjectionError("next eligible action projection is invalid")
@@ -221,6 +237,26 @@ def _validate_projection_common(value: dict[str, Any], *, typed: bool, check_dig
         raise LiveCurrentProjectionError("next eligible action contains an empty field")
     if not isinstance(value["claim_ceiling"], str) or not value["claim_ceiling"]:
         raise LiveCurrentProjectionError("claim ceiling is missing")
+    if r3:
+        try:
+            dimensions = validate_live_state_dimensions(value["live_state_dimensions"])
+        except ValueError as exc:
+            raise LiveCurrentProjectionError(f"live state dimensions are invalid: {exc}") from exc
+        compatibility = value["compatibility_projection"]
+        if not isinstance(compatibility, dict) or set(compatibility) != {"field", "status", "value", "semantics"}:
+            raise LiveCurrentProjectionError("compatibility projection is invalid")
+        if compatibility["field"] != "current_live_ceiling" or compatibility["status"] != "DEPRECATED_COMPATIBILITY_ALIAS":
+            raise LiveCurrentProjectionError("current_live_ceiling is not marked as a compatibility alias")
+        if compatibility["value"] != value["current_live_ceiling"] or not isinstance(compatibility["semantics"], str) or not compatibility["semantics"]:
+            raise LiveCurrentProjectionError("compatibility projection does not bind to current_live_ceiling")
+        if dimensions["next_eligible_action"] != value["next_eligible_action"]["action"]:
+            raise LiveCurrentProjectionError("dimension next action disagrees with action projection")
+        if dimensions["validated_completion_status"] == "VALIDATED" and counts["validated_completion_count"] == 0:
+            raise LiveCurrentProjectionError("validated dimension disagrees with completion count")
+        if dimensions["validated_completion_status"] == "NOT_VALIDATED" and counts["validated_completion_count"] != 0:
+            raise LiveCurrentProjectionError("not-validated dimension disagrees with completion count")
+        if dimensions["live_process_observation_status"] == "OBSERVED" and value["current_live_ceiling"] == "LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED":
+            raise LiveCurrentProjectionError("process-observed projection cannot use invocation-not-observed ceiling")
     if check_digest:
         digest = value["projection_digest"]
         if not isinstance(digest, str) or not SHA256_RE.fullmatch(digest):
@@ -237,10 +273,15 @@ def validate_projection(document: Mapping[str, Any], *, check_digest: bool = Tru
         raise LiveCurrentProjectionError("live Current projection must be an object")
     value = json.loads(json.dumps(document, ensure_ascii=False))
     schema_version = value.get("schema_version")
-    if schema_version not in {LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA, LIVE_CURRENT_PROJECTION_SCHEMA}:
+    if schema_version not in {LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA, TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA, LIVE_CURRENT_PROJECTION_SCHEMA}:
         raise LiveCurrentProjectionError("live Current projection schema version mismatch")
     _schema_validate(value, schema_version=schema_version)
-    return _validate_projection_common(value, typed=schema_version == LIVE_CURRENT_PROJECTION_SCHEMA, check_digest=check_digest)
+    return _validate_projection_common(
+        value,
+        typed=schema_version in {TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA, LIVE_CURRENT_PROJECTION_SCHEMA},
+        r3=schema_version == LIVE_CURRENT_PROJECTION_SCHEMA,
+        check_digest=check_digest,
+    )
 
 
 def _build_projection(
@@ -255,7 +296,14 @@ def _build_projection(
     observation_outcome_by_attempt: Mapping[str, Mapping[str, Any]] | None = None,
     observation_source_path: str | None = None,
     observation_audit: Mapping[str, Any] | None = None,
+    projection_schema: str = TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA,
+    inference_observation_source_path: str | None = None,
+    inference_observation_audit: Mapping[str, Any] | None = None,
+    inference_status_by_attempt: Mapping[str, str] | None = None,
 ) -> dict[str, Any]:
+    if projection_schema not in {LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA, TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA, LIVE_CURRENT_PROJECTION_SCHEMA}:
+        raise LiveCurrentProjectionError("unsupported typed live Current projection schema")
+    r3 = projection_schema == LIVE_CURRENT_PROJECTION_SCHEMA
     status_by_attempt = reconciliation_status_by_attempt or {}
     observation_overlay = observation_outcome_by_attempt or {}
     summaries = [
@@ -283,11 +331,48 @@ def _build_projection(
         obligation_state = "CLOSED"
         action = {"status": "STOP_AFTER_FIRST_VALIDATED_COMPLETION", "action": "STOP_LIVE_INVOCATION", "blocker_summary": "A validated completion is present; no additional live invocation is eligible."}
     else:
-        ceiling = "LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED"
+        process_observed = any(summary["live_process_started"] is True for summary in summaries) if typed else False
+        ceiling = "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION" if process_observed and r3 else "LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED"
         obligation_state = "OPEN"
         action = {"status": "ADMISSION_REQUIRED", "action": "RUN_DYNAMIC_EXECUTOR_ADMISSION", "blocker_summary": "No validated completion is present and no historical attempt is available to close the obligation."}
+        if r3 and process_observed:
+            action = {"status": "ADMISSION_REQUIRED", "action": "RUN_DYNAMIC_EXECUTOR_ADMISSION", "blocker_summary": "A live process observation exists but no exact-bound validated completion is present; repair/admit an eligible executor before any bounded attempt."}
+    live_state_dimensions: dict[str, Any] | None = None
+    if r3:
+        explicit_inference = inference_status_by_attempt or {}
+        per_attempt_dimensions: list[dict[str, Any]] = []
+        for summary in summaries:
+            observation = {
+                "live_dispatch_calls": summary["live_dispatch_calls"],
+                "live_dispatch_started": summary["live_dispatch_started"],
+                "live_process_started": summary["live_process_started"],
+                "live_process_return_code": summary["live_process_return_code"],
+            }
+            per_attempt_dimensions.append(derive_live_state_dimensions(
+                observation,
+                reconciliation_status=summary["reconciliation_status"],
+                validated_completion=summary["state"] == "COMPLETED_VALIDATED",
+                explicit_inference_status=explicit_inference.get(summary["attempt_id"]),
+                next_action=action["action"],
+            ))
+        def aggregate(field: str, ordered: tuple[str, ...], default: str) -> str:
+            values = [item[field] for item in per_attempt_dimensions]
+            for candidate in ordered:
+                if candidate in values:
+                    return candidate
+            return default
+        live_state_dimensions = {
+            "schema_version": "live-state-dimensions-r1",
+            "live_dispatch_observation_status": aggregate("live_dispatch_observation_status", ("OBSERVED", "UNKNOWN", "NOT_OBSERVED"), "UNKNOWN"),
+            "live_process_observation_status": aggregate("live_process_observation_status", ("OBSERVED", "UNKNOWN", "NOT_OBSERVED"), "UNKNOWN"),
+            "inference_observation_status": aggregate("inference_observation_status", ("OBSERVED", "NOT_OBSERVED", "UNKNOWN", "NOT_APPLICABLE_PRE_PROCESS"), "UNKNOWN"),
+            "validated_completion_status": "VALIDATED" if validated else "NOT_VALIDATED",
+            "reconciliation_blocker_status": "OPEN" if unreconciled else "NONE",
+            "next_eligible_action": action["action"],
+        }
+        validate_live_state_dimensions(live_state_dimensions)
     projection = {
-        "schema_version": LIVE_CURRENT_PROJECTION_SCHEMA if typed else LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA,
+        "schema_version": projection_schema if typed else LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA,
         "contract_id": "LIVE_CURRENT_STATE_DERIVATION_INVARIANT",
         "source_ledger": {
             "path": source_path,
@@ -307,6 +392,13 @@ def _build_projection(
                     "head_hash": (observation_audit or {}).get("head_hash", "0" * 64),
                 }
             } if typed and observation_source_path is not None else {}),
+            **({
+                "inference_observation_events": {
+                    "path": inference_observation_source_path,
+                    "event_count": (inference_observation_audit or {}).get("record_count", 0),
+                    "head_hash": (inference_observation_audit or {}).get("head_hash", "0" * 64),
+                }
+            } if r3 and inference_observation_source_path is not None else {}),
         },
         "counts": {
             "total_attempts": len(summaries), "validated_completion_count": len(validated), "unreconciled_count": len(unreconciled),
@@ -316,7 +408,12 @@ def _build_projection(
         },
         "per_executor": per_executor, "latest_attempt_per_executor": latest_per_executor,
         "latest_validated_completion": validated[-1] if validated else None, "current_live_ceiling": ceiling,
-        "obligation": {"obligation_id": "LIVE_EXTERNAL_INVOCATION", "state": obligation_state, "reason": f"Ledger-derived live state: {len(unreconciled)} unreconciled attempt(s), {len(validated)} validated completion(s), {state_counts.get('OBSERVATION_INCOMPLETE', 0)} observation-incomplete attempt(s).", "unreconciled_attempt_ids": [summary["attempt_id"] for summary in unreconciled]},
+        "obligation": {
+            "obligation_id": "LIVE_EXTERNAL_INVOCATION", "state": obligation_state,
+            "reason": f"Ledger-derived live state: {len(unreconciled)} unreconciled attempt(s), {len(validated)} validated completion(s), {state_counts.get('OBSERVATION_INCOMPLETE', 0)} observation-incomplete attempt(s).",
+            "unreconciled_attempt_ids": [summary["attempt_id"] for summary in unreconciled],
+            **({"closure_condition": "FIRST_EXACT_BOUND_LIVE_READONLY_VALIDATED_COMPLETION"} if r3 else {}),
+        },
         "next_eligible_action": action, "attempts": summaries,
         "claim_ceiling": (
             "Deterministic repository-local live attempt observation projection only; no external truth, production readiness, Owner acceptance or epistemic upgrade is inferred."
@@ -324,8 +421,16 @@ def _build_projection(
             "Deterministic repository-local live attempt projection only; no external truth, production readiness, Owner acceptance or epistemic upgrade is inferred."
         ),
     }
+    if r3:
+        projection["live_state_dimensions"] = live_state_dimensions
+        projection["compatibility_projection"] = {
+            "field": "current_live_ceiling",
+            "status": "DEPRECATED_COMPATIBILITY_ALIAS",
+            "value": ceiling,
+            "semantics": "Compatibility projection only; live_state_dimensions is canonical for process, inference, completion and reconciliation meaning.",
+        }
     projection["projection_digest"] = sha256_json(_unsigned(projection))
-    return _validate_projection_common(projection, typed=typed, check_digest=True)
+    return _validate_projection_common(projection, typed=typed, r3=r3, check_digest=True)
 
 
 def build_live_current_projection(
@@ -335,11 +440,15 @@ def build_live_current_projection(
     legacy: bool = False,
     reconciliation_events_path: str | Path | None = None,
     observation_events_path: str | Path | None = None,
+    projection_schema: str = TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA,
+    inference_observation_events_path: str | Path | None = None,
 ) -> dict[str, Any]:
     """Build a typed R2 projection, or a compatibility R1 projection."""
 
-    if legacy and reconciliation_events_path is not None:
+    if legacy and (reconciliation_events_path is not None or projection_schema != TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA):
         raise LiveCurrentProjectionError("historical R1 projection cannot consume a reconciliation overlay")
+    if projection_schema not in {TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA, LIVE_CURRENT_PROJECTION_SCHEMA}:
+        raise LiveCurrentProjectionError("unsupported live Current projection schema")
     ledger = LiveAttemptLedger(ledger_path)
     records = ledger.records()
     status_by_attempt: dict[str, str] = {}
@@ -348,6 +457,9 @@ def build_live_current_projection(
     observation_outcome_by_attempt: dict[str, dict[str, Any]] = {}
     observation_audit: dict[str, Any] | None = None
     observation_source_path = None
+    inference_status_by_attempt: dict[str, str] = {}
+    inference_observation_audit: dict[str, Any] | None = None
+    inference_observation_source_path = None
     if reconciliation_events_path is not None:
         event_ledger = LiveReconciliationEventLedger(reconciliation_events_path)
         events = event_ledger.records()
@@ -385,6 +497,28 @@ def build_live_current_projection(
             observation_outcome_by_attempt[event["attempt_id"]] = event["observation_outcome"]
         observation_audit = observation_ledger.audit()
         observation_source_path = str(observation_events_path)
+    if inference_observation_events_path is not None:
+        inference_path = Path(inference_observation_events_path)
+        if not inference_path.is_file():
+            raise LiveCurrentProjectionError("inference observation overlay is unavailable")
+        try:
+            raw_events = [json.loads(line) for line in inference_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+        except (OSError, json.JSONDecodeError) as exc:
+            raise LiveCurrentProjectionError("inference observation overlay is unreadable") from exc
+        records_by_attempt = {record["attempt_id"]: record for record in records}
+        seen: set[str] = set()
+        for event in raw_events:
+            if not isinstance(event, dict) or set(event) != {"task_id", "dispatch_id", "attempt_id", "prior_record_hash", "inference_observation_status"}:
+                raise LiveCurrentProjectionError("inference observation overlay fields are not canonical")
+            record = records_by_attempt.get(event["attempt_id"])
+            if record is None or event["task_id"] != record["task_id"] or event["dispatch_id"] != record["dispatch_id"] or event["prior_record_hash"] != record["record_hash"]:
+                raise LiveCurrentProjectionError("inference observation overlay does not bind to the source record")
+            if event["attempt_id"] in seen or event["inference_observation_status"] not in {"OBSERVED", "NOT_OBSERVED", "UNKNOWN", "NOT_APPLICABLE_PRE_PROCESS"}:
+                raise LiveCurrentProjectionError("inference observation overlay is duplicated or invalid")
+            seen.add(event["attempt_id"])
+            inference_status_by_attempt[event["attempt_id"]] = event["inference_observation_status"]
+        inference_observation_source_path = str(inference_path)
+        inference_observation_audit = {"record_count": len(raw_events), "head_hash": sha256_json(raw_events) if raw_events else "0" * 64}
     return _build_projection(
         records,
         typed=not legacy,
@@ -396,7 +530,15 @@ def build_live_current_projection(
         observation_outcome_by_attempt=observation_outcome_by_attempt,
         observation_source_path=observation_source_path,
         observation_audit=observation_audit,
+        projection_schema=projection_schema if not legacy else LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA,
+        inference_observation_source_path=inference_observation_source_path,
+        inference_observation_audit=inference_observation_audit,
+        inference_status_by_attempt=inference_status_by_attempt,
     )
 
 
-__all__ = ["LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA", "LIVE_CURRENT_PROJECTION_SCHEMA", "LiveCurrentProjectionError", "build_live_current_projection", "validate_projection"]
+__all__ = [
+    "LEGACY_LIVE_CURRENT_PROJECTION_SCHEMA", "TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA",
+    "LIVE_CURRENT_PROJECTION_SCHEMA", "LiveCurrentProjectionError",
+    "build_live_current_projection", "validate_projection",
+]

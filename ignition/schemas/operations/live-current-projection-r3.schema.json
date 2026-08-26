@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pointfire.local/schemas/live-current-projection-r3.schema.json",
+  "title": "Ignition canonical Live Current dimensional projection R3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "contract_id", "source_ledger", "counts", "per_executor",
+    "latest_attempt_per_executor", "latest_validated_completion", "current_live_ceiling",
+    "compatibility_projection", "live_state_dimensions", "obligation", "next_eligible_action",
+    "attempts", "claim_ceiling", "projection_digest"
+  ],
+  "properties": {
+    "schema_version": {"const": "live-current-projection-r3"},
+    "contract_id": {"const": "LIVE_CURRENT_STATE_DERIVATION_INVARIANT"},
+    "source_ledger": {"type": "object"},
+    "counts": {"type": "object"},
+    "per_executor": {"type": "object"},
+    "latest_attempt_per_executor": {"type": "object"},
+    "latest_validated_completion": {"type": ["object", "null"]},
+    "current_live_ceiling": {"type": "string", "minLength": 1},
+    "compatibility_projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field", "status", "value", "semantics"],
+      "properties": {
+        "field": {"const": "current_live_ceiling"},
+        "status": {"const": "DEPRECATED_COMPATIBILITY_ALIAS"},
+        "value": {"type": "string", "minLength": 1},
+        "semantics": {"type": "string", "minLength": 1}
+      }
+    },
+    "live_state_dimensions": {"$ref": "live-state-dimensions-r1.schema.json"},
+    "obligation": {"type": "object"},
+    "next_eligible_action": {"type": "object"},
+    "attempts": {"type": "array"},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "projection_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

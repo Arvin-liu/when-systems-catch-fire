@@ -7,7 +7,12 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from agent_federation.live_current_projection import LiveCurrentProjectionError, build_live_current_projection, validate_projection
+from agent_federation.live_current_projection import (
+    LIVE_CURRENT_PROJECTION_SCHEMA,
+    LiveCurrentProjectionError,
+    build_live_current_projection,
+    validate_projection,
+)
 
 
 class LiveCurrentProjectionTests(unittest.TestCase):
@@ -62,6 +67,22 @@ class LiveCurrentProjectionTests(unittest.TestCase):
             path.write_text(json.dumps(projection, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
             loaded = json.loads(path.read_text(encoding="utf-8"))
         self.assertEqual(validate_projection(loaded)["projection_digest"], projection["projection_digest"])
+
+    def test_r3_separates_process_observation_from_validated_completion(self) -> None:
+        projection = build_live_current_projection(
+            self.ledger_path,
+            projection_schema=LIVE_CURRENT_PROJECTION_SCHEMA,
+            reconciliation_events_path=self.repo_root / "ignition/data/operations/iterations/140/live-reconciliation-events-r1.jsonl",
+            observation_events_path=self.repo_root / "ignition/data/operations/iterations/140/live-observation-events-r1.jsonl",
+        )
+        self.assertEqual(projection["schema_version"], "live-current-projection-r3")
+        self.assertEqual(projection["live_state_dimensions"]["live_dispatch_observation_status"], "OBSERVED")
+        self.assertEqual(projection["live_state_dimensions"]["live_process_observation_status"], "OBSERVED")
+        self.assertEqual(projection["live_state_dimensions"]["inference_observation_status"], "NOT_OBSERVED")
+        self.assertEqual(projection["live_state_dimensions"]["validated_completion_status"], "NOT_VALIDATED")
+        self.assertEqual(projection["current_live_ceiling"], "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION")
+        self.assertNotEqual(projection["current_live_ceiling"], "LIVE_EXTERNAL_INVOCATION_NOT_OBSERVED")
+        self.assertEqual(validate_projection(projection)["projection_digest"], projection["projection_digest"])
 
 
 if __name__ == "__main__":
