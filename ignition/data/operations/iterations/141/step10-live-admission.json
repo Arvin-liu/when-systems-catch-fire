@@ -1,0 +1,32 @@
+{
+  "schema_version": "ignition-141-step10-live-admission-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "10",
+  "status": "SKIPPED_UNSAFE_OR_UNAVAILABLE",
+  "policy_ref": "ignition/data/operations/iterations/141/step09-live-policy-freeze.json",
+  "census_ref": "ignition/data/operations/iterations/141/local-executor-census-r1.json",
+  "admission": {
+    "selected_executor_id": null,
+    "selected_family": null,
+    "status": "NO_AUTHORIZED_FAMILY",
+    "reason": "Codex is policy-excluded after an unconfirmed Task140 malformed-result root cause; Gemini, Hermes and OpenClaw failed fresh bounded admission checks.",
+    "live_dispatch_authorized": false,
+    "live_inference_authorized": false
+  },
+  "preflight": {
+    "disposable_workspace": "NOT_CREATED",
+    "runtime_scratch": "NOT_CREATED",
+    "capability_lease": "NOT_ISSUED",
+    "durable_capture": "NOT_INITIALIZED",
+    "independent_validator": "NOT_STARTED"
+  },
+  "safety": {
+    "live_dispatch_calls": 0,
+    "live_process_started": false,
+    "live_inference_started": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "secret_content_read": false
+  },
+  "claim_ceiling": "Fresh admission decision only; no live process, inference, structured result, validated completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
