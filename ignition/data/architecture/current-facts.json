@@ -66,8 +66,8 @@
     "foundation": {
       "function_identity_cards": 5978,
       "function_quarantine_or_pending": 4868,
-      "nonfunction_claims": 17292,
-      "nonfunction_quarantine_or_pending": 4906
+      "nonfunction_claims": 17297,
+      "nonfunction_quarantine_or_pending": 4908
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -106,7 +106,7 @@
       "cards": 414,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 23602
+      "search_records": 23607
     },
     "packs": {
       "capability_route_count": 10,
@@ -166,7 +166,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "574d721ebaef3c45d51fe9fb893195d6b7613ed151c51bbb5805ad1757144250"
+      "sha256": "656565f08e03ce73522b0dac375308c1a88464c51487c9de7bec9e096ee25789"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -174,11 +174,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "283a95f8340521815afcdc91ec1b45830312d1ee20c73204bbf3cbd0d72c68a6"
+      "sha256": "03c62d2239b03cc2bb7cc96c24156cd611a821198d64ed73b69a073843792a44"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "77875124e6d92205f9b79cfb4715e808ee8c3cb632299148614fc5f0a0564f22"
+      "sha256": "f33d6a73d9b46c868210705ac5e589562f7e57fb12e0c0f9bbae8ac0d9ccc747"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -230,7 +230,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "30b49306d363daaca631d0a1c13618b1c685f8a94c9d83b9ed1d0fbcdec00084"
+      "sha256": "6efde4566027f4ce82e5add1d7875c33b8636dc1965dad61b9484fd9abe2b8f7"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

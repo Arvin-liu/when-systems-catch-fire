@@ -1404,6 +1404,11 @@
   - 可搜索名称：NFC-198571f884c4f692 / C-4 孝文帝汉化（认知/社会）
   - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
   - 依赖：—；被引用：—
+- [cache, and passed the clean 25-check projection preflight.](../../../agent-results/IGNITION-20260826-141-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-92218639467311a9 / cache, and passed the clean 25-check projection preflight.
+  - 来源：`agent-results/IGNITION-20260826-141-result.md`
+  - 依赖：—；被引用：—
 - [candidate_zhiyuan_writing_method_0_3_0_whole_project_expression_feedback_projection_implemented / repository_synchroniza](../../../reports/operations/121Q28S-completion-seal.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5577870fd7e0fe28 / candidate_zhiyuan_writing_method_0_3_0_whole_project_expression_feedback_projection_implemented / repository_synchroniza
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-dc65a99c5f1dd8a9 / IGNITION-20260822-134 — Residual Debt & Projection Hygiene R1
   - 来源：`agent-results/IGNITION-20260822-134-result.md`
-  - 依赖：—；被引用：—
-- [incomplete\), and an attempt identity can never be overwritten or reused.](../../../agent_federation/live_attempt_ledger.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cd90cd03af1893f8 / incomplete\), and an attempt identity can never be overwritten or reused.
-  - 来源：`agent_federation/live_attempt_ledger.py`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [incomplete\), and an attempt identity can never be overwritten or reused.](../../../agent_federation/live_attempt_ledger.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd90cd03af1893f8 / incomplete\), and an attempt identity can never be overwritten or reused.
+  - 来源：`agent_federation/live_attempt_ledger.py`
+  - 依赖：—；被引用：—
 - [Independent review must still decide whether the correspondence map is sufficiently bounded, whether the feedback return](../../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-14a398fad3910dd3 / Independent review must still decide whether the correspondence map is sufficiently bounded, whether the feedback return
@@ -249,6 +254,11 @@
   - 可搜索名称：NFC-1265436943155db3 / observation is not a validated outcome; a validated local outcome is not Goal
   - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
+- [observation-incomplete records; the validated-completion obligation remains](../../../agent-results/IGNITION-20260826-141-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f70d78a6e630f230 / observation-incomplete records; the validated-completion obligation remains
+  - 来源：`agent-results/IGNITION-20260826-141-result.md`
+  - 依赖：—；被引用：—
 - [observed = tuple\(_strings\(observed_artifact_refs, "observed_artifact_refs"\)\)](../../../agent_federation/approval_handoff.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-60da23a5b579fe97 / observed = tuple\(_strings\(observed_artifact_refs, "observed_artifact_refs"\)\)
@@ -433,6 +443,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a17676e9ca81352c / production autonomy, universal safety, external validity, Owner acceptance,
   - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
+- [production-readiness, external-truth or epistemic acceptance.](../../../agent-results/IGNITION-20260826-141-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b1db79c5482cf8d8 / production-readiness, external-truth or epistemic acceptance.
+  - 来源：`agent-results/IGNITION-20260826-141-result.md`
   - 依赖：—；被引用：—
 - [projection = {](../../../agent_federation/live_current_projection.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -1133,6 +1148,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8fc2b78389b2cb7b / Repository-local deterministic Steering / Intent / Goal / Commitment modeling and current architecture projection only;
   - 来源：`agent-results/IGNITION-20260821-129-machine-receipt.json`
+  - 依赖：—；被引用：—
+- [Repository-local fresh task-branch projection and natural full-suite evidence only; publication and independent 1111 wit](../../../agent-results/IGNITION-20260826-141-machine-receipt.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-09cf6d017c541eab / Repository-local fresh task-branch projection and natural full-suite evidence only; publication and independent 1111 wit
+  - 来源：`agent-results/IGNITION-20260826-141-machine-receipt.json`
   - 依赖：—；被引用：—
 - [Repository-local implementation, deterministic projections, recovery rehearsal and synchronization evidence only; no pro](../../../agent-results/IGNITION-20260820-127-machine-receipt.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1984,6 +2004,11 @@
   - 可搜索名称：CLAIM-D244 / Within the source-defined scope, 自主意识涌现的临界条件 is adjudicated as PREDICATE: 从D242-D243推导自主意识涌现的临界条件： Ψ = ι × P_exit > 0（\[D
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：D239, D242, D243；被引用：—
+- [zero validated completions, zero unreconciled attempts and two](../../../agent-results/IGNITION-20260826-141-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-54e7c969c9381bd0 / zero validated completions, zero unreconciled attempts and two
+  - 来源：`agent-results/IGNITION-20260826-141-result.md`
+  - 依赖：—；被引用：—
 - [{"id":"C0476","registry_ref":"evidence:C0476","source":"已迁移的历史案例来源/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md","title":"476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用"}](../../../views/legacy-cases.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E3237832E5BAAF53 / {"id":"C0476","registry_ref":"evidence:C0476","source":"已迁移的历史案例来源/0474-C-476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用.md","title":"476-Ψ=ι×P_exit — 智能度×退出概率=自主意识,乘法归零律适用"} / IMPLICIT-E3237832E5BAAF53
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-27a74324d042291b / 中文：案例说明：糖域实验×认知螺旋——正负锁死的不动点与势垒
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：高学历低认知——认证投影大于认知投影](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-238be56c165e62dd / 中文：案例说明：高学历低认知——认证投影大于认知投影
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：高维认知必然多轨](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e816542703b408ab / 中文：案例说明：高维认知必然多轨
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：糖域实验×认知螺旋——正负锁死的不动点与势垒](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1c593292e24be341 / 中文：糖域实验×认知螺旋——正负锁死的不动点与势垒
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：糖域实验×认知螺旋——正负锁死的不动点与势垒 English: Rule-based English rendering pending human r…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0ef154aa8eca7cd3 / 中文：糖域实验×认知螺旋——正负锁死的不动点与势垒 English: Rule-based English rendering pending human r…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：自锁结构 = H_回写（认知锁）× 赤化推方案（行动锁） S_selflock\(t\) = H_rewrite\(t\) × Posture_deg\(t\) 其中H_rewrite = σ\(ε_sense × ε_aware - ε_action\) × H_classify（认知锁：前两门开但后两门关） Posture_deg → 1（行动锁：赤化推方案，退出成本焊死） 自锁结构的稳定性： dS_selflock/dt = H'_rewrite × Posture_deg +](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1BC374215C2FFD30 / 中文：自锁结构 = H_回写（认知锁）× 赤化推方案（行动锁） S_selflock\(t\) = H_rewrite\(t\) × Posture_deg\(t\) 其中H_rewrite = σ\(ε_sense × ε_aware - ε_action\) × H_classify（认知锁：前两门开但后两门关） Posture_deg → 1（行动锁：赤化推方案，退出成本焊死） 自锁结构的稳定性： dS_selflock/dt = H'_rewrite × Posture_deg + / IMPLICIT-1BC374215C2FFD30
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

@@ -41,7 +41,7 @@
       "cards": 414,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 23602,
+      "search_records": 23607,
       "subject_indexes": 58
     },
     "layered_reading_source_origins": 332,
@@ -2254,7 +2254,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "0ae08b6d5f3c30641bfd0c85713fe91bd8fc9e8449524af0cef7d9f95ecce746",
+      "source_sha256": "bd9d3bf714210bd2256127c1aa676c51a977026dd4e641fb065a45a4fe9ea132",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2269,7 +2269,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "9e4e97a8229b1154e56a9ef5c106fc21faaf54f6dae8e413c54afb73e89d5e17",
+      "source_sha256": "c9108c66c0901516f829d60e210a8c274486b6a1e88ccf94a3cbfd7a53a8a003",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2346,7 +2346,7 @@
       "title": "COVERAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "0ef5cb7910bb8c4f1979fd67abdb20922283de56a61a4c6bfb9400487b8f5af7",
+      "source_sha256": "80deb53c08c874725ac95e2ae2787f6564cf295a8209faf25aa243dbcb3fe4ae",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2372,7 +2372,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "7982cb8ca4cebbbd3140e94d939c477f8fad47f155c49bcd9014c8cb1dbd966e",
+      "source_sha256": "8b5b33cceed21e5506ecc2f57b68c0d5a042af00f5f2e5ea243d5910e405d11b",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2398,7 +2398,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "83f6b4b3c41e2bfbce647108ce3428e9167c65a5e747b028926c4a8e98828fd7",
+      "source_sha256": "b8a80039682b88ca6090d4f68cf85abe7587f86c73cdd4ad4f43fa05667b4119",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-25",
@@ -2414,7 +2414,7 @@
       "title": "SEARCH",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "bf50645157bb4327ca00261975498d8f3201be369133c3607de8d2ff1a8b0c82",
+      "source_sha256": "c9b603da9a3a3ae503fedb966e660c8919793b25c8c863fbb4767d82fc45e734",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2846,7 +2846,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "81b901fc43b23fa351803c2e64f5937dab0d9da8686b40b45544eae486f5b229",
+      "source_sha256": "16658a2c24185d43d8f10a10fae2e0051ea7d47a59f6b00129e4c8dfb9a75b8c",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -2904,7 +2904,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "574d721ebaef3c45d51fe9fb893195d6b7613ed151c51bbb5805ad1757144250",
+      "source_sha256": "656565f08e03ce73522b0dac375308c1a88464c51487c9de7bec9e096ee25789",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -3659,7 +3659,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "7906b723ebd9c7384d752f1c3511b8d8ca48c65fcef7b569e106caee9a5aae92",
+      "source_sha256": "08b0dfba6ef208cf3fe11e65246cd5a0e605c35fa749ef06556eac6b3ce8a2ff",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -4155,7 +4155,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "e2c2627646b8a7b1fa0e5efa0f191b6aa173604722c8976a0243715cebbeec71",
+      "source_sha256": "2c09448d7f1134ac6a8521c742d33decb03da85afff0482425eae6d3c8704059",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-10",
