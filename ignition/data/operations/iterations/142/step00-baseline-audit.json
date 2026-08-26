@@ -1,0 +1,65 @@
+{
+  "schema_version": "ignition-142-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "00",
+  "status": "PASS",
+  "formal_baseline": {
+    "expected_main_sha": "6de0841e27a0b38b4ac9a2703daef5b9637c6611",
+    "origin_main_sha": "6de0841e27a0b38b4ac9a2703daef5b9637c6611",
+    "fresh_clone_sha": "6de0841e27a0b38b4ac9a2703daef5b9637c6611",
+    "fresh_clone_clean": true,
+    "formal_worktree": "/Users/zhiyuan/Agent 工作区/when-systems-catch-fire-142",
+    "formal_branch": "codex/ignition-142-task-lifecycle-admission-r1-20260827",
+    "supplied_rollout_directory_is_git": false
+  },
+  "control_baseline": {
+    "control_repository": "https://github.com/Arvin-liu/1111.git",
+    "control_ref": "origin/relay/current",
+    "control_sha": "d2c092ce8961e51835249d345eab44d8216026f0",
+    "task_definition_commit": "946a0e626d5d1325eae78abebb10d0835d5ebb37",
+    "receipt_branch": "relay/receipts/ignition-142-task-lifecycle-admission-first-validated-completion-r1-20260827"
+  },
+  "task141_observed_state": {
+    "formal_task_status": "IN_PROGRESS",
+    "formal_task_terminal": false,
+    "release_lifecycle_phase": "RUNNING",
+    "release_lifecycle_current_task_terminal": false,
+    "live_dispatch_observation_status": "OBSERVED",
+    "live_process_observation_status": "OBSERVED",
+    "inference_observation_status": "NOT_OBSERVED",
+    "validated_completion_status": "NOT_VALIDATED",
+    "reconciliation_blocker_status": "NONE",
+    "attempts_total": 6,
+    "validated_completion_count": 0,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "long_lived_obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "long_lived_obligation_status": "OPEN",
+    "new_live_process_started_by_task141": false,
+    "evidence_refs": [
+      "ignition/data/operations/iterations/141/step16-fresh-clone-publication.json",
+      "agent-results/IGNITION-20260826-141-machine-receipt.json",
+      "1111:agent-results/IGNITION-20260826-141-independent-witness.md"
+    ]
+  },
+  "coupling_audit": {
+    "advance_current_task_behavior": "ignition/tools/advance_current_task.py::_contract_target always writes execution_status=IN_PROGRESS and terminal=false for the successor Current task",
+    "lineage_schema_behavior": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json models task status and terminality but has no independent obligation registry or terminal-with-open-obligation status",
+    "release_schema_behavior": "ignition/schemas/operations/current-release-lifecycle-r1.schema.json couples phase validity to current_task_terminal and contains no obligation authority",
+    "projection_behavior": "generate_current_facts.py, build_current_snapshot.py, and current_surface_compiler.py mirror the task status, terminal flag, and live obligation in one Current projection without an independent lifecycle source",
+    "missing_authority": "No independent machine source owns formal task terminality separately from the open-obligation registry"
+  },
+  "finding": {
+    "code": "FORMAL_TASK_TERMINALITY_OBLIGATION_COUPLED_BY_MISSING_INDEPENDENT_AUTHORITY",
+    "statement": "Task141 Step00-16 and publication evidence establish formal completion, but Current remains IN_PROGRESS solely because the long-lived validated-completion obligation is open.",
+    "required_correction": "Introduce independent formal task lifecycle and open-obligation authorities, then render their linkage explicitly on Current surfaces.",
+    "scope_complete": true
+  },
+  "safety_boundary": {
+    "live_probe_performed": false,
+    "external_agent_invocation_performed": false,
+    "auth_or_secret_state_changed": false,
+    "workspace_mutation_outside_formal_artifact": false,
+    "claim_ceiling": "Repository-local baseline and lifecycle-coupling diagnosis only; no external-agent capability, safety, production, Owner, or epistemic acceptance claim."
+  }
+}
