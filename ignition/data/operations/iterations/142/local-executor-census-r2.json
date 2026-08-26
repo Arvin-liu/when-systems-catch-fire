@@ -1,0 +1,951 @@
+{
+  "candidates": [
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": true,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "BLOCKED",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:external.gemini present; content not read",
+        "public_status": "NOT_OBSERVED",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:external.gemini"
+      },
+      "binary_sha256": "a193db41b0b2c9e35a8c5aafcb2c810947ee41a311757bb4ee4d6b015bc3bfb5",
+      "blockers": [
+        "AUTH_SOURCE_HOME_NOT_SEPARABLE",
+        "POINTFIRE_ADAPTER_NOT_ATTESTED",
+        "PUBLIC_AUTH_STATUS_UNAVAILABLE_WITHOUT_INFERENCE"
+      ],
+      "executor_id": "external.gemini",
+      "family": "Gemini",
+      "help_sha256": "49639e15d7396409da1eabcf21ce18df1489b890a348aae8200c4d1fd1b4c887",
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "AGENTIC_EXECUTOR",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:gemini",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:gemini",
+        "executor_id_scope": "external.gemini",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [
+          "--accept-raw-output-risk    Suppress the security warning when using --raw-output.  [boolean]",
+          "--acp                       Starts the agent in ACP mode  [boolean]",
+          "--admin-policy              Additional admin policy files or directories to load (comma-separated or multiple --admin-po",
+          "--allowed-mcp-server-names  Allowed MCP server names  [array]",
+          "--allowed-tools             [DEPRECATED: Use Policy Engine instead See https://geminicli.com/docs/core/policy-engine] To",
+          "--approval-mode             Set the approval mode: default (prompt for approval), auto_edit (auto-approve edit tools), y",
+          "--delete-session            Delete a session by index number (use --list-sessions to see available sessions).  [string]",
+          "--experimental-acp          Starts the agent in ACP mode (deprecated, use --acp instead)  [boolean]",
+          "--include-directories       Additional directories to include in the workspace (comma-separated or multiple --include-di",
+          "--list-sessions             List available sessions for the current project and exit.  [boolean]",
+          "--policy                    Additional policy files or directories to load (comma-separated or multiple --policy)  [arra",
+          "--raw-output                Disable sanitization of model output (e.g. allow ANSI escape sequences). WARNING: This can b"
+        ],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": "0.53.1"
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": true,
+        "disposable_workspace": true,
+        "explicit_read_only_ceiling": true,
+        "independent_os_validation": true,
+        "no_channel_browser_side_effect": true,
+        "no_new_billing": true,
+        "noninteractive_one_shot": true,
+        "public_auth_status": true,
+        "structured_result": true,
+        "timeout_and_process_cleanup": true
+      },
+      "admission_status": "ADMITTED",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:external.codex present; content not read",
+        "public_status": "PASS",
+        "public_status_exit": 0,
+        "source_ref": "AUTH_STATE_PRESENCE:external.codex"
+      },
+      "binary_sha256": "134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477",
+      "blockers": [],
+      "executor_id": "external.codex",
+      "family": "Codex",
+      "help_sha256": "da7f8d58749fb3084723cded1620d133235a090ebe5ee412ef404f171415d434",
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "AGENTIC_EXECUTOR",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:codex",
+      "policy_blockers": [
+        "TASK140_ROOT_CAUSE_NOT_CONFIRMED_SAME_FAMILY_RETRY_FORBIDDEN"
+      ],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:codex",
+        "executor_id_scope": "external.codex",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [
+          "--add-dir <DIR>",
+          "--color <COLOR>",
+          "--dangerously-bypass-approvals-and-sandbox",
+          "--dangerously-bypass-hook-trust",
+          "--disable <FEATURE>",
+          "--enable <FEATURE>",
+          "--ephemeral",
+          "--ignore-rules",
+          "--ignore-user-config",
+          "--json",
+          "--local-provider <OSS_PROVIDER>",
+          "--oss"
+        ],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": "codex-cli 0.144.4"
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": true,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "BLOCKED",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:external.hermes present; content not read",
+        "public_status": "NOT_OBSERVED",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:external.hermes"
+      },
+      "binary_sha256": "6eed0de072756645ce086cc379eb58fae17023c8935c4e55a3cd9117df8b4df9",
+      "blockers": [
+        "AUTH_SOURCE_SEPARATION_NOT_PROVEN",
+        "PUBLIC_AUTH_STATUS_NOT_REATTESTED",
+        "STRUCTURED_RESULT_BOUNDARY_NOT_STRICT"
+      ],
+      "executor_id": "external.hermes",
+      "family": "Hermes",
+      "help_sha256": "521ad7c6d77e535cac195cf6ce7355cf8a781fc59e1ec02c06c8d561f1458e67",
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "AGENTIC_EXECUTOR",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:hermes",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:hermes",
+        "executor_id_scope": "external.hermes",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [
+          "--accept-hooks        Auto-approve any unseen shell hooks declared in",
+          "--cli                 Force the classic prompt_toolkit REPL (overrides",
+          "--continue [SESSION_NAME], -c [SESSION_NAME]",
+          "--dev                 With --tui: run TypeScript sources via tsx (skip dist",
+          "--ignore-rules        Skip auto-injection of AGENTS.md, SOUL.md,",
+          "--ignore-rules)",
+          "--ignore-user-config  Ignore ~/.hermes/config.yaml and fall back to built-in",
+          "--no-restore-cwd      Don't cd into a resumed session's recorded working",
+          "--pass-session-id     Include the session ID in the agent's system prompt",
+          "--provider PROVIDER   Provider override for this invocation (e.g.",
+          "--reasoning LEVEL     Reasoning effort for this invocation: none, minimal,",
+          "--resume SESSION, -r SESSION"
+        ],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": "Hermes Agent v0.20.0 (2026.8.3)"
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": true,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "BLOCKED",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:external.openclaw present; content not read",
+        "public_status": "NOT_OBSERVED",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:external.openclaw"
+      },
+      "binary_sha256": "f643b005d6db233a0b45204e8d8e943256874ccc6897b8a6e0cf42a9b376a188",
+      "blockers": [
+        "AUTH_SOURCE_SEPARATION_NOT_PROVEN",
+        "PROCESS_CLEANUP_NOT_REATTESTED",
+        "STRUCTURED_RESULT_BOUNDARY_NOT_STRICT",
+        "WORKSPACE_AND_CHANNEL_BOUNDARY_NOT_PROVEN"
+      ],
+      "executor_id": "external.openclaw",
+      "family": "Openclaw",
+      "help_sha256": "f7918446c0ccfe8d73018f8deb77fcd310e4acf3ab008bcb46f4ee09aa785387",
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "AGENTIC_EXECUTOR",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:openclaw",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:openclaw",
+        "executor_id_scope": "external.openclaw",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [
+          "--agent <id>               Agent id (overrides routing bindings)",
+          "--channel <channel>        Delivery channel:",
+          "--deliver                  Send the agent's reply back to the selected channel",
+          "--json                     Output result as JSON (default: false)",
+          "--local                    Run the embedded agent locally (requires model",
+          "--message-file <path>      Read the agent message body from a UTF-8 file",
+          "--model <id>               Model override for this run (provider/model or",
+          "--reply-account <id>       Delivery account id override",
+          "--reply-channel <channel>  Delivery channel override (separate from routing)",
+          "--reply-to <target>        Delivery target override (separate from session",
+          "--session-id <id>          Use an explicit session id",
+          "--session-key <key>        Explicit session key (agent:<id>:<key>, or scoped"
+        ],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": "OpenClaw 2026.7.1-2 (0790d9f)"
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": false,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "BLOCKED",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:external.github-copilot-cli absent; content not read",
+        "public_status": "NOT_APPLICABLE",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:external.github-copilot-cli"
+      },
+      "binary_sha256": null,
+      "blockers": [
+        "NOT_INSTALLED_NO_DOWNLOAD_OR_BILLING_AUTHORITY"
+      ],
+      "executor_id": "external.github-copilot-cli",
+      "family": "Github Copilot Cli",
+      "help_sha256": null,
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": false,
+      "kind": "AGENTIC_EXECUTOR",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:copilot",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:copilot",
+        "executor_id_scope": "external.github-copilot-cli",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": null
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": false,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "NOT_APPLICABLE",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:runtime.ollama absent; content not read",
+        "public_status": "NOT_APPLICABLE",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:runtime.ollama"
+      },
+      "binary_sha256": "da3e797f075ffce71303fc482fc539d52d047a916c7d63973c778231e68625aa",
+      "blockers": [
+        "REASONER_RUNTIME_HAS_NO_AGENT_TOOL_LOOP"
+      ],
+      "executor_id": "runtime.ollama",
+      "family": "Ollama",
+      "help_sha256": "199df3c3603aa31ce391156e2b29781b67d708eba8683598f814057cfd80e0fa",
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "REASONER_RUNTIME",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:ollama",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:ollama",
+        "executor_id_scope": "runtime.ollama",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [
+          "--nowordwrap   Don't wrap words to the next line automatically",
+          "--verbose      Show timings for response",
+          "-h, --help         help for ollama",
+          "-v, --version      Show version information"
+        ],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": "ollama version is 0.32.7"
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": false,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "NOT_APPLICABLE",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:runtime.lm-studio absent; content not read",
+        "public_status": "NOT_APPLICABLE",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:runtime.lm-studio"
+      },
+      "binary_sha256": "55df775235e919502954f505cb885a6977fb9699ef2b791934a98e131369dd5f",
+      "blockers": [
+        "REASONER_RUNTIME_HAS_NO_AGENT_TOOL_LOOP"
+      ],
+      "executor_id": "runtime.lm-studio",
+      "family": "Lm Studio",
+      "help_sha256": "a68b75d72c3db4e702c9f34fed496601aace9889702ffe2fd5ffb827a9ad1ba2",
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "REASONER_RUNTIME",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:lms",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:lms",
+        "executor_id_scope": "runtime.lm-studio",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": "CLI commit: 6041ae0"
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": false,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "NOT_APPLICABLE",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:runtime.mlx-dspark absent; content not read",
+        "public_status": "NOT_APPLICABLE",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:runtime.mlx-dspark"
+      },
+      "binary_sha256": "1f208c0490f873a2b7355930a0993482957051801fb7d943e30a599a8fc13817",
+      "blockers": [
+        "REASONER_RUNTIME_HAS_NO_AGENT_TOOL_LOOP"
+      ],
+      "executor_id": "runtime.mlx-dspark",
+      "family": "Mlx Dspark",
+      "help_sha256": "65da939e9e2f7f6c22fac406c77ac9b0cc23b4c22f86b6ee2e507babaac56c88",
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "REASONER_RUNTIME",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:mlx-dspark",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:mlx-dspark",
+        "executor_id_scope": "runtime.mlx-dspark",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [
+          "--confidence-threshold CONFIDENCE_THRESHOLD",
+          "--drafter DRAFTER     drafter repo/path (overrides auto-resolve)",
+          "--drafter-bits DRAFTER_BITS",
+          "--max-draft MAX_DRAFT",
+          "--max-new-tokens MAX_NEW_TOKENS",
+          "--mode {dspark,dflash,baseline}",
+          "--model MODEL         target model: an HF repo or local path (e.g. mlx-",
+          "--no-chat-template",
+          "--no-stream",
+          "--prompt PROMPT",
+          "--seed SEED",
+          "--temperature TEMPERATURE"
+        ],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": "usage: mlx-dspark generate [-h] [--mode {dspark,dflash,baseline}]"
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": false,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "NOT_APPLICABLE",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:runtime.llama-server-bundled absent; content not read",
+        "public_status": "NOT_APPLICABLE",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:runtime.llama-server-bundled"
+      },
+      "binary_sha256": null,
+      "blockers": [
+        "REASONER_RUNTIME_HAS_NO_AGENT_TOOL_LOOP"
+      ],
+      "executor_id": "runtime.llama-server-bundled",
+      "family": "Llama Server Bundled",
+      "help_sha256": null,
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": false,
+      "kind": "REASONER_RUNTIME",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:llama-server",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:llama-server",
+        "executor_id_scope": "runtime.llama-server-bundled",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": null
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": false,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "NOT_APPLICABLE",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:tool.github-cli absent; content not read",
+        "public_status": "NOT_APPLICABLE",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:tool.github-cli"
+      },
+      "binary_sha256": "02d2d4a85241c6a8c0b77ebb1ec76fc723caf7fb128e00915b306b968847cba1",
+      "blockers": [
+        "TOOL_ONLY_NOT_EXTERNAL_AGENT"
+      ],
+      "executor_id": "tool.github-cli",
+      "family": "Github Cli",
+      "help_sha256": "5649d346b8ad03c40b9569eb07dc394e7ceba7e5563d524028f7f2f9f8e426b1",
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "TOOL_ONLY",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:gh",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:gh",
+        "executor_id_scope": "tool.github-cli",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [
+          "--help      Show help for command",
+          "--version   Show gh version"
+        ],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": "gh version 2.96.0 (2026-07-02)"
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": false,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "NOT_APPLICABLE",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:tool.git absent; content not read",
+        "public_status": "NOT_APPLICABLE",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:tool.git"
+      },
+      "binary_sha256": "b8763cf250e607a778bb4603cecb5b90338814d0a3dfcba0d57b1de242f610e9",
+      "blockers": [
+        "TOOL_ONLY_NOT_EXTERNAL_AGENT"
+      ],
+      "executor_id": "tool.git",
+      "family": "Git",
+      "help_sha256": "e58e010df9aae589b0ced087d4ecd63edf0b10dc89787573ede394e86fdfa52a",
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "TOOL_ONLY",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:git",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:git",
+        "executor_id_scope": "tool.git",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": "git version 2.50.1 (Apple Git-155)"
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": false,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "NOT_APPLICABLE",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:tool.jq absent; content not read",
+        "public_status": "NOT_APPLICABLE",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:tool.jq"
+      },
+      "binary_sha256": "b16bc93b2f3c69ce3134f20b796bb72aa3410b10166566ac2ca1bee5e4153ed5",
+      "blockers": [
+        "TOOL_ONLY_NOT_EXTERNAL_AGENT"
+      ],
+      "executor_id": "tool.jq",
+      "family": "Jq",
+      "help_sha256": "7e78aac727b20a734b7ae31a0730fa4929d30c27b46d4748c8caffe59ed139ca",
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "TOOL_ONLY",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "PATH_ENTRY:jq",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "PATH_ENTRY:jq",
+        "executor_id_scope": "tool.jq",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [
+          "--                        terminates argument processing;",
+          "--arg name value      set $name to the string value;",
+          "--argjson name value  set $name to the JSON value;",
+          "--args                consume remaining arguments as positional",
+          "--build-configuration     show jq's build configuration;",
+          "--indent n            use n spaces for indentation (max 7 spaces);",
+          "--jsonargs            consume remaining arguments as positional",
+          "--raw-output0         implies -r and output NUL after each output;",
+          "--rawfile name file   set $name to string contents of file;",
+          "--seq                 parse input/output as application/json-seq;",
+          "--slurpfile name file set $name to an array of JSON values read",
+          "--stream              parse the input value in streaming fashion;"
+        ],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": "jq-1.7.1-apple"
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": false,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "NOT_APPLICABLE",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:ui.claude-desktop absent; content not read",
+        "public_status": "NOT_APPLICABLE",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:ui.claude-desktop"
+      },
+      "binary_sha256": null,
+      "blockers": [
+        "UI_OR_NONAUTOMATABLE_NO_STABLE_MACHINE_BOUNDARY"
+      ],
+      "executor_id": "ui.claude-desktop",
+      "family": "Claude Desktop",
+      "help_sha256": null,
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "UI_OR_NONAUTOMATABLE",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "APP_BUNDLE:ui.claude-desktop",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "APP_BUNDLE:ui.claude-desktop",
+        "executor_id_scope": "ui.claude-desktop",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": null
+    },
+    {
+      "admission_checks": {
+        "auth_source_separation": false,
+        "disposable_workspace": false,
+        "explicit_read_only_ceiling": false,
+        "independent_os_validation": false,
+        "no_channel_browser_side_effect": false,
+        "no_new_billing": false,
+        "noninteractive_one_shot": false,
+        "public_auth_status": false,
+        "structured_result": false,
+        "timeout_and_process_cleanup": false
+      },
+      "admission_status": "NOT_APPLICABLE",
+      "auth": {
+        "content_read": false,
+        "copied": false,
+        "mutated": false,
+        "presence_observed": "AUTH_STATE_PRESENCE:ui.qwenworkcn absent; content not read",
+        "public_status": "NOT_APPLICABLE",
+        "public_status_exit": null,
+        "source_ref": "AUTH_STATE_PRESENCE:ui.qwenworkcn"
+      },
+      "binary_sha256": null,
+      "blockers": [
+        "UI_OR_NONAUTOMATABLE_NO_STABLE_MACHINE_BOUNDARY"
+      ],
+      "executor_id": "ui.qwenworkcn",
+      "family": "Qwenworkcn",
+      "help_sha256": null,
+      "install_sources": [
+        "PATH command resolution",
+        "public --version/--help",
+        "public auth-status exit behavior",
+        "presence-only local application/auth state"
+      ],
+      "installed": true,
+      "kind": "UI_OR_NONAUTOMATABLE",
+      "live": {
+        "inference_started": false,
+        "reason": "Fresh public metadata probe only; no Agent inference was started.",
+        "status": "NOT_RUN_CENSUS"
+      },
+      "path_ref": "APP_BUNDLE:ui.qwenworkcn",
+      "policy_blockers": [],
+      "public_interface": {
+        "entrypoint": "APP_BUNDLE:ui.qwenworkcn",
+        "executor_id_scope": "ui.qwenworkcn",
+        "metadata_source": "run_task142_public_executor_probe.py",
+        "relevant_flags_observed": [],
+        "version_help_probe": "public --version and --help"
+      },
+      "version": null
+    }
+  ],
+  "census_id": "ignition-142-local-executor-census-r2-20260827",
+  "claim_ceiling": "Fresh repository-local observation-time executor census, class separation, admission checks, policy exclusion and deterministic why-executor trace only; no live inference, validated completion, model-quality ranking, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.",
+  "control": {
+    "ref": "origin/relay/current",
+    "repository": "Arvin-liu/1111",
+    "tip": "d2c092ce8961e51835249d345eab44d8216026f0"
+  },
+  "formal_candidate": {
+    "branch": "codex/ignition-142-task-lifecycle-admission-r1-20260827",
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "sha": "08fcd9a2d51e75504ddc0281d158a5abc8d3adbc"
+  },
+  "observed_at": "2026-08-26T17:14:29Z",
+  "safety": {
+    "auth_content_copied": false,
+    "billing_changed": false,
+    "configuration_changed": false,
+    "install_or_upgrade_performed": false,
+    "live_inference_started": false,
+    "secret_content_read": false,
+    "workspace_modified": false
+  },
+  "schema_version": "local-executor-census-r1",
+  "scope": {
+    "explicit_names": [
+      "Gemini CLI",
+      "Codex CLI",
+      "Hermes",
+      "OpenClaw",
+      "GitHub Copilot CLI",
+      "Ollama",
+      "LM Studio",
+      "MLX DSpark",
+      "llama-server",
+      "GitHub CLI",
+      "Git",
+      "jq",
+      "Claude Desktop",
+      "QwenWorkCN Desktop"
+    ],
+    "install_sources": [
+      "PATH command resolution",
+      "public --version/--help",
+      "public auth-status exit behavior",
+      "presence-only local application/auth state"
+    ],
+    "observation_policy": "PATH_VERSION_HELP_PUBLIC_AUTH_PRESENCE_ONLY_NO_SECRET_NO_INFERENCE",
+    "search_domains": [
+      "PATH",
+      "~/.local/bin",
+      "Homebrew prefix and formulae",
+      "npm/uv/pipx tool roots",
+      "selected /Applications bundles"
+    ]
+  },
+  "selection": {
+    "capability_selected_executor_id": "external.codex",
+    "excluded": [
+      {
+        "executor_id": "external.gemini",
+        "reason": "AUTH_SOURCE_HOME_NOT_SEPARABLE; POINTFIRE_ADAPTER_NOT_ATTESTED; PUBLIC_AUTH_STATUS_UNAVAILABLE_WITHOUT_INFERENCE"
+      },
+      {
+        "executor_id": "external.codex",
+        "reason": "TASK140_ROOT_CAUSE_NOT_CONFIRMED_SAME_FAMILY_RETRY_FORBIDDEN"
+      },
+      {
+        "executor_id": "external.hermes",
+        "reason": "AUTH_SOURCE_SEPARATION_NOT_PROVEN; PUBLIC_AUTH_STATUS_NOT_REATTESTED; STRUCTURED_RESULT_BOUNDARY_NOT_STRICT"
+      },
+      {
+        "executor_id": "external.openclaw",
+        "reason": "AUTH_SOURCE_SEPARATION_NOT_PROVEN; PROCESS_CLEANUP_NOT_REATTESTED; STRUCTURED_RESULT_BOUNDARY_NOT_STRICT; WORKSPACE_AND_CHANNEL_BOUNDARY_NOT_PROVEN"
+      },
+      {
+        "executor_id": "external.github-copilot-cli",
+        "reason": "NOT_INSTALLED_NO_DOWNLOAD_OR_BILLING_AUTHORITY"
+      }
+    ],
+    "live_selectable_executor_ids": [],
+    "live_selection_status": "NO_AUTHORIZED_FAMILY",
+    "policy_excluded_executor_ids": [
+      "external.codex"
+    ],
+    "ranking": [
+      "external.codex",
+      "external.gemini",
+      "external.hermes",
+      "external.openclaw",
+      "external.github-copilot-cli"
+    ],
+    "selected_executor_id": "external.codex",
+    "selected_family": "Codex",
+    "status": "SELECTED",
+    "why_executor": "Deterministic ranking counts only the ten provider-neutral admission checks, then breaks ties by family and executor ID. Codex is technically admitted but policy-excluded by the unchanged Task140 same-family blind-retry prohibition; no other agentic candidate passes every check, so live selection is NO_AUTHORIZED_FAMILY."
+  },
+  "step": "11",
+  "task_id": "IGNITION-20260827-142"
+}
