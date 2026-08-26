@@ -1,0 +1,16 @@
+{
+  "schema_version": "task142-independent-validator-r1",
+  "task_id": "IGNITION-20260827-142",
+  "step": "15",
+  "status": "PASS",
+  "validator_version": "task142-exact-validator-r1",
+  "validator_path": "ignition/agent_federation/task142_first_completion_validator.py",
+  "case_count": 9,
+  "passed_count": 9,
+  "validated_completion_count": 0,
+  "live_process_started": false,
+  "required_bindings": ["task_id", "dispatch_id", "attempt_id", "executor_id", "family", "executor_version", "capability_lease_id", "fixture_nonce", "workspace_digest_before", "workspace_digest_after", "capture_ref", "structured_result_ref", "validator_ref"],
+  "negative_cases": ["executor_self_pass", "missing_dispatch_binding", "wrong_structured_result", "workspace_mutation", "capture_incomplete", "process_nonzero", "cleanup_unconfirmed", "wrong_executor_class"],
+  "safety": {"secret_content_read": false, "configuration_changed": false, "billing_changed": false, "workspace_modified": false, "live_inference_started": false},
+  "claim_ceiling": "Offline independent exact-binding validator evidence only; no external process, validated completion, production readiness, external truth or executor interchangeability is claimed."
+}
