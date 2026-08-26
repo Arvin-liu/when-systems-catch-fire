@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [对应哪些点火函数？](../../../docs/templates/discipline_kernel_card.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-586f5127d2f79636 / 对应哪些点火函数？
+  - 来源：`docs/templates/discipline_kernel_card.md`
+  - 依赖：—；被引用：—
+- [对应文件：`已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md`](../../../outputs/audit/d597-index-visibility-check-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-33b01b2af4df13e9 / 对应文件：`已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md`
+  - 来源：`outputs/audit/d597-index-visibility-check-20260708.md`
+  - 依赖：D597；被引用：—
+- [对应旧条目：FUNC-L1-EXIT 退出权函数族（A4/A9/D499）。](../../../outputs/collisions/20260708-teacher-competition/expanded-notes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-90881f5256b468dc / 对应旧条目：FUNC-L1-EXIT 退出权函数族（A4/A9/D499）。
+  - 来源：`outputs/collisions/20260708-teacher-competition/expanded-notes.md`
+  - 依赖：A4, A9, D499；被引用：—
+- [对应条目：退出权函数族（A4 应约者感知退出权 / A9 退出概率 / D499 退出权时间衰减）。](../../../outputs/collisions/20260708-teacher-competition/notes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-9528e74e4c6dfa18 / 对应条目：退出权函数族（A4 应约者感知退出权 / A9 退出概率 / D499 退出权时间衰减）。
+  - 来源：`outputs/collisions/20260708-teacher-competition/notes.md`
+  - 依赖：A4, A9, D499；被引用：—
+- [对应案例须正向登记（案例反向引用函数不等于函数已登记该案例）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e64a0f600b3cdaa7 / 对应案例须正向登记（案例反向引用函数不等于函数已登记该案例）。
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
 - [对目标对象分别报告 source、controlled claim、formal object type、claim type、premises、inference rules、scope、proof obligations、evidenc](../../../docs/AI-PROMPT-TEMPLATES.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b8f9b972083371d7 / 对目标对象分别报告 source、controlled claim、formal object type、claim type、premises、inference rules、scope、proof obligations、evidenc
@@ -2479,28 +2504,3 @@
   - 可搜索名称：D467 / 最优性-惯性反比函数 / D467
   - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
   - 依赖：D307, D451, D541；被引用：D468, D603, T17, CLAIM-D468
-- [最优空间规模函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D492 / 最优空间规模函数 / D492
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：A5, A9, D451, D476；被引用：NFC-3be5d11e02676cf3, NFC-b59d6c1282c99f09, NFC-deeb573eb2823e58
-- [最初那个士兵的后退，也像一次保护动作。在无法看清全局时先保住自己，是生命面对危险时最古老的选择。问题不在于他“软弱”，正如问题不在于继电器“判断错误”。真正要看的是，整体怎样接住这个动作：它能把损失留在原地，还是会把负担推给下一个人、下一条](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-56538f8051182141 / 最初那个士兵的后退，也像一次保护动作。在无法看清全局时先保住自己，是生命面对危险时最古老的选择。问题不在于他“软弱”，正如问题不在于继电器“判断错误”。真正要看的是，整体怎样接住这个动作：它能把损失留在原地，还是会把负担推给下一个人、下一条
-  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
-  - 依赖：—；被引用：—
-- [最小作用量-弹性级联统一函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D118 / 最小作用量-弹性级联统一函数 / D118
-  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：D180, D91；被引用：NFC-057ecb2af9dc4696, NFC-058ea65fbaa3ade5, NFC-10dc1948734dd748, NFC-1a1c01d0e412f440
-- [最小作用量-弹性级联统一函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4b80f62e02ca920d / 最小作用量-弹性级联统一函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—
-- [最小作用量原理-门槛优化函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D210 / 最小作用量原理-门槛优化函数 / D210
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D211, D220, D270；被引用：NFC-16e6492d7fbc7642, NFC-28b1ae86b21973a2, NFC-2f379ca5d21d44c0, NFC-2f606b28b7e22392

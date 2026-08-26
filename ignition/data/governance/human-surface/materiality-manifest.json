@@ -1,9 +1,9 @@
 {
   "counts": {
     "function_human": 24,
-    "function_machine": 5944,
+    "function_machine": 5978,
     "nonfunction_human": 24,
-    "nonfunction_machine": 17181
+    "nonfunction_machine": 17292
   },
   "entries": [
     {
@@ -267,7 +267,7 @@
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "ARCHITECTURE.md",
-      "source_sha256": "07c0108c24fbd9c17a7deee1d6b888fea991f417ecdace3bf3dea4b132242f1b",
+      "source_sha256": "a58ac88bbd37f747cbff9d071b5ab70d27fbf2adc9e3a7c385f4523ec3a28bfa",
       "writing_method": "之元写作法 0.5.0"
     },
     {

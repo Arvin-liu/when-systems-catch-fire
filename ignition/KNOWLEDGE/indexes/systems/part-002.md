@@ -6,6 +6,16 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M30 / data/external-research/088-external-source-atlas-medium.jsonl / M30 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M31 / data/external-research/088-external-source-atlas-medium.jsonl / M31 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M32 / data/external-research/088-external-source-atlas-medium.jsonl / M32 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-b95d7a53fe4a697d / Object D529 defines a mechanism_model within the point-fire framework. Core: 中文：K_n\(R\)/p≅H^i\(Gal\(R^sep/R\), μ_p^j\)，数域和有限域
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D529；被引用：—
-- [Object D602 defines a mechanism_model within the point-fire framework. Core: . Annotation: .](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-27a20e8e3b6ca33c / Object D602 defines a mechanism_model within the point-fire framework. Core: . Annotation: .
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D602；被引用：—
-- [Object D62 defines a mechanism_model within the point-fire framework. Core: 中文：dε_opt/dt = η_reprogram × Σⱼ\(新档案ⱼ的安装强度 ×](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-62a7dbd9654b5f82 / Object D62 defines a mechanism_model within the point-fire framework. Core: 中文：dε_opt/dt = η_reprogram × Σⱼ\(新档案ⱼ的安装强度 ×
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D62；被引用：—

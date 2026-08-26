@@ -2359,6 +2359,11 @@
   - 可搜索名称：NFC-2018e97047f695f0 / Are the Gödel incompleteness theorems limitative results for the neurosciences?
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
+- [argv/interface fingerprints, lifecycle and stream digests, parser/schema](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-1ea431d77221290a / argv/interface fingerprints, lifecycle and stream digests, parser/schema
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
 - [ARN is current only as a bounded projection/reconfiguration capability; network adjacency, similarity, centrality, commu](../../../CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bc5214a233885bab / ARN is current only as a bounded projection/reconfiguration capability; network adjacency, similarity, centrality, commu
@@ -2497,10 +2502,5 @@
 - [C\(x,y\) 因果结构判定 → 数学证明链（假设→定理→推论）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-20c72c8713cee2b1 / C\(x,y\) 因果结构判定 → 数学证明链（假设→定理→推论）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [C\(x,y\) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4b56d62dbcd5709a / C\(x,y\) 因果结构判定 → 物理因果链（拉格朗日量→运动方程）
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—

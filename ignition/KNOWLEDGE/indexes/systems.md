@@ -5,8 +5,8 @@
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
 - [第 001 片](./systems/part-001.md)：1—500；"1_FunctionSpec", "2_Representation", "3_Compiler", "4_Artifact", → data/external-research/088-external-source-atlas-medium.jsonl
-- [第 002 片](./systems/part-002.md)：501—1000；data/external-research/088-external-source-atlas-medium.jsonl → Object D62 defines a mechanism_model within the point-fire framework. Core: 中文：dε_opt/dt = η_reprogram × Σⱼ\(新档案ⱼ的安装强度 ×
-- [第 003 片](./systems/part-003.md)：1001—1500；Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ\(参与者策略\)×N_homogeneous/ → \| BC-20260709-010 \| 《人类简史》 \| 认知革命、农业革命、科学革命与点火框架元协议演化的同构性。每次革命都是元协议组合的跃迁，推动系统进入新的演化路径。 \| pending \| - \| 《人类简史》最终收敛报告 2026
-- [第 004 片](./systems/part-004.md)：1501—2000；\| BC-20260709-012 \| 《文明的冲突》 \| 文明断层线与点火框架封闭边界协议（S₁）的映射。文明边界压缩退出权，形成自我强化路径依赖，导致冲突不可避免。 \| S1 \| - \| 《文明的冲突》最终收敛报告 2026年7月9日1 → 因此，本轮最终判断是：**保留“信仰与利用同时存在”的复杂性，把“制造天意”从造假指控提升为对接口和反馈权的追问；文章完成公共表达，历史唯一因果仍未识别。**
-- [第 005 片](./systems/part-005.md)：2001—2500；国家形成的具体因果判定：**pending**（需要史料考证和解释共同体共识） → 跨域跳转必须依靠共享意象、动作、变量、句法回声或因果铰链。
-- [第 006 片](./systems/part-006.md)：2501—2592；输入材料、事实、引用或案例基础错误，导致后续结构判断失效。 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。
+- [第 002 片](./systems/part-002.md)：501—1000；data/external-research/088-external-source-atlas-medium.jsonl → Object D529 defines a mechanism_model within the point-fire framework. Core: 中文：K_n\(R\)/p≅H^i\(Gal\(R^sep/R\), μ_p^j\)，数域和有限域
+- [第 003 片](./systems/part-003.md)：1001—1500；Object D602 defines a mechanism_model within the point-fire framework. Core: . Annotation: . → \| ARN 因果主张委托 MCF \| PASS \|
+- [第 004 片](./systems/part-004.md)：1501—2000；\| BC-20260709-001 \| 《系统之美》 \| 系统基模中的"成长上限"基模与点火框架M1增强回路的同构性。当增强回路推动系统增长，同时调节回路在某个阈值启动限制增长，形成门控面极小点。 \| pending \| M1 \| 《系统之 → 因果链分析：L2
+- [第 005 片](./systems/part-005.md)：2001—2500；因果链条过于整齐； → 跃迁不是为了换景，而是因为当前层不能容纳某个真实残余：定义刚成立就显得不够，事实没有回答意义，机制没有解释主体经验，或一个选择暴露了不可同时实现的可能性。
+- [第 006 片](./systems/part-006.md)：2501—2597；跨域同构**：这个机制在别的领域也见过吗（摄影？财商？AI？历史？） → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。

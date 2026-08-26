@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [因果链条过于整齐；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bd6a16fc6df376e2 / 因果链条过于整齐；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [因果链须含时间顺序与反事实判断（"若没有 X，则不会 Y"）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-710c37582256869b / 因果链须含时间顺序与反事实判断（"若没有 X，则不会 Y"）。
+  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
+  - 依赖：—；被引用：—
+- [因果链：有积蓄 → 拒绝不合理要求底气↑ → 人生选择权↑](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6061568d9108686b / 因果链：有积蓄 → 拒绝不合理要求底气↑ → 人生选择权↑
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [因此本报告总体上限为：`mechanism_plausible / causal_identification_pending / external_historical_verification_required`。下一项最小状态改变行动](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4cc13b8001829706 / 因此本报告总体上限为：`mechanism_plausible / causal_identification_pending / external_historical_verification_required`。下一项最小状态改变行动
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [因此，本轮最终判断是：**保留“信仰与利用同时存在”的复杂性，把“制造天意”从造假指控提升为对接口和反馈权的追问；文章完成公共表达，历史唯一因果仍未识别。**](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8bcc8cf9b20f4e19 / 因此，本轮最终判断是：**保留“信仰与利用同时存在”的复杂性，把“制造天意”从造假指控提升为对接口和反馈权的追问；文章完成公共表达，历史唯一因果仍未识别。**
+  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
+  - 依赖：—；被引用：—
 - [国家形成的具体因果判定：**pending**（需要史料考证和解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f4a5874180534f9e / 国家形成的具体因果判定：**pending**（需要史料考证和解释共同体共识）
@@ -1809,9 +1834,9 @@
   - 可搜索名称：NFC-d186d31663cc9741 / 版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.6.0`；系统图 `0.5.0`、`0.4.0`、`0.3.0` 与更早版本均为 Historical
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
-- [状态：`0.14.0 Current registry-derived navigation projection`；`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`](../../../docs/architecture/interactive-system-map.md)
+- [状态：`0.15.0 Current registry-derived navigation projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d7648c1d7e289a43 / 状态：`0.14.0 Current registry-derived navigation projection`；`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`
+  - 可搜索名称：NFC-96d19bb7628e2b53 / 状态：`0.15.0 Current registry-derived navigation projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [状态：`CURRENT_BOUNDED_R0_BASE_WITH_R2_PROJECTION_AND_OPEN_OBLIGATIONS`。这仍不构成通用智能、长期自主性、现实因果、生产安全或 `EPISTEMICALLY_ACCEPTED`](../../../docs/architecture/agentization-boundary-r0.md)
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5a6db2ea7b183ff3 / 跃迁不是为了换景，而是因为当前层不能容纳某个真实残余：定义刚成立就显得不够，事实没有回答意义，机制没有解释主体经验，或一个选择暴露了不可同时实现的可能性。
   - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [跨域同构**：这个机制在别的领域也见过吗（摄影？财商？AI？历史？）](../../../docs/getbrain-book-collision-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-068793fa591cc7f3 / 跨域同构**：这个机制在别的领域也见过吗（摄影？财商？AI？历史？）
-  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [跨域同构叙事只是应用类型。它必须声明比较层，保留不可映射残余，不能把结构相似写成物质、尺度或因果相同，更不能用领域收敛提高证据等级。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f74123d864e238d5 / 跨域同构叙事只是应用类型。它必须声明比较层，保留不可映射残余，不能把结构相似写成物质、尺度或因果相同，更不能用领域收敛提高证据等级。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [跨域同构识别、候选机制生成、反例生成、`pending` 判定。](../../../outputs/audit/agent-project-understanding-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ac2b81b7e9c296dd / 跨域同构识别、候选机制生成、反例生成、`pending` 判定。
-  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
-  - 依赖：—；被引用：—
-- [跨域同构：财富滚雪球 ↔ 系统正反馈 M13；10万积蓄↔退出权 A3](../../../docs/getbrain-book-collision-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-99f2f581d5b5e8b9 / 跨域同构：财富滚雪球 ↔ 系统正反馈 M13；10万积蓄↔退出权 A3
-  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
-  - 依赖：A3；被引用：—
-- [跨域跳转必须依靠共享意象、动作、变量、句法回声或因果铰链。](../../../docs/narrative-output-layer.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-92073259e5989c23 / 跨域跳转必须依靠共享意象、动作、变量、句法回声或因果铰链。
-  - 来源：`docs/narrative-output-layer.md`
   - 依赖：—；被引用：—

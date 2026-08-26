@@ -1,7 +1,7 @@
 {
   "schema_version": "projection-preflight-r1",
   "contract_id": "GENERATED_OUTPUT_BEFORE_FULL_SUITE_INVARIANT",
-  "task_id": "IGNITION-20260826-140",
+  "task_id": "IGNITION-20260826-141",
   "application_root": "ignition",
   "execution_cwd": "ignition",
   "mode": "READ_ONLY_CHECKS",

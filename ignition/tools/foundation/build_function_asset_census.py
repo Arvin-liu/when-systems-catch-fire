@@ -69,6 +69,10 @@ GENERATED_PREFIXES = (
     # Durability/lifecycle contracts and receipts are OS machine records; they
     # must remain provenance-only and cannot feed Foundation discovery.
     "data/operations/durability/",
+    # Task141 live-state semantics and structured-result receipts are
+    # provenance-only operation records. They must not become function-asset
+    # discovery input or make the census depend on receipt wording/order.
+    "data/operations/iterations/141/",
     ".github/",
     "tools/publication/",
 )
@@ -156,6 +160,11 @@ GENERATED_EXACT_PATHS = {
     "reports/operations/ignition-140-step16-fresh-clone-publication.md",
     "agent-results/IGNITION-20260826-140-result.md",
     "agent-results/IGNITION-20260826-140-machine-receipt.json",
+    # Task141 operation reports are provenance-only artifacts.
+    "reports/operations/ignition-141-step08-local-executor-census.md",
+    "reports/operations/ignition-141-step15-targeted-regression.md",
+    "reports/operations/ignition-141-step15-candidate-full-regression.md",
+    "reports/operations/ignition-141-step16-fresh-clone-publication.md",
     "data/operations/propagation/108-impact/system-map-nonimpact-proof.json",
     "docs/operations/lifecycle-readme.md",
     "reports/operations/lifecycle-audit-108.md",

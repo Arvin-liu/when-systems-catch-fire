@@ -657,7 +657,7 @@
   "internal_blank_area": 156800.0,
   "label_clip_count": 0,
   "layout_version": "2.0.0",
-  "map_version": "0.14.0",
+  "map_version": "0.15.0",
   "max_internal_gap": 28.0,
   "metrics": {
     "baseline_canvas_height": 3988.0,

@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [最优空间规模函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D492 / 最优空间规模函数 / D492
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：A5, A9, D451, D476；被引用：NFC-3be5d11e02676cf3, NFC-b59d6c1282c99f09, NFC-deeb573eb2823e58
+- [最初那个士兵的后退，也像一次保护动作。在无法看清全局时先保住自己，是生命面对危险时最古老的选择。问题不在于他“软弱”，正如问题不在于继电器“判断错误”。真正要看的是，整体怎样接住这个动作：它能把损失留在原地，还是会把负担推给下一个人、下一条](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-56538f8051182141 / 最初那个士兵的后退，也像一次保护动作。在无法看清全局时先保住自己，是生命面对危险时最古老的选择。问题不在于他“软弱”，正如问题不在于继电器“判断错误”。真正要看的是，整体怎样接住这个动作：它能把损失留在原地，还是会把负担推给下一个人、下一条
+  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
+  - 依赖：—；被引用：—
+- [最小作用量-弹性级联统一函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D118 / 最小作用量-弹性级联统一函数 / D118
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：D180, D91；被引用：NFC-057ecb2af9dc4696, NFC-058ea65fbaa3ade5, NFC-10dc1948734dd748, NFC-1a1c01d0e412f440
+- [最小作用量-弹性级联统一函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4b80f62e02ca920d / 最小作用量-弹性级联统一函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [最小作用量原理-门槛优化函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D210 / 最小作用量原理-门槛优化函数 / D210
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-16e6492d7fbc7642, NFC-28b1ae86b21973a2, NFC-2f379ca5d21d44c0, NFC-2f606b28b7e22392
 - [最小作用量原理-门槛优化函数](../../../data/foundation/formal-objects/objects.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-9bc646561fe749cd / 最小作用量原理-门槛优化函数
@@ -2479,28 +2504,3 @@
   - 可搜索名称：NFC-8477ed409f04d5db / 已迁移的历史函数来源/0033-T23-Φ跨域稳定性定理.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：T23；被引用：—
-- [已迁移的历史函数来源/0034-T24-共生外部注入函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-64e1ad39c24c29a2 / 已迁移的历史函数来源/0034-T24-共生外部注入函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T24；被引用：—
-- [已迁移的历史函数来源/0035-T25-权力腐败函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a2309fe75a1f8f7b / 已迁移的历史函数来源/0035-T25-权力腐败函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T25；被引用：—
-- [已迁移的历史函数来源/0036-T26-物理大统一本质函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-257b92ef12121e43 / 已迁移的历史函数来源/0036-T26-物理大统一本质函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T26；被引用：—
-- [已迁移的历史函数来源/0037-T27-门控函数稳定性必要条件.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fb37e8c6f7115069 / 已迁移的历史函数来源/0037-T27-门控函数稳定性必要条件.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T27；被引用：—
-- [已迁移的历史函数来源/0038-T28-高斯门控函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-d83c55d544db26a5 / 已迁移的历史函数来源/0038-T28-高斯门控函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：T28；被引用：—

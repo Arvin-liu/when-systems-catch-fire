@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00](../../ASSET-CARDS.md#asset-hr-3ded720d598ae407)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00 / current-state-drift-audit-r1
+  - 来源：`reports/architecture/current-state-drift-audit-r1.md`
+  - 依赖：—；被引用：—
+- [Current-state sync, volatile-fact registry, Current semantic gate, and two-pass](../../../reports/operations/ignition-139-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f23e3f05d80e2bae / Current-state sync, volatile-fact registry, Current semantic gate, and two-pass
+  - 来源：`reports/operations/ignition-139-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [current_path_manifest: `classification-manifest.jsonl` is the Current generated snapshot of the live tracked engine; the](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-75846cdb91075c9e / current_path_manifest: `classification-manifest.jsonl` is the Current generated snapshot of the live tracked engine; the
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [current_path_manifest: `classification-manifest.jsonl` remains the Current generated snapshot; the terminal candidate ha](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-b2d9d3e930fd331f / current_path_manifest: `classification-manifest.jsonl` remains the Current generated snapshot; the terminal candidate ha
@@ -399,6 +414,11 @@
   - 可搜索名称：IMPLICIT-8C93A196DE60DAE9 / def __init__\(self, archiver: N6TraceArchiver\): / IMPLICIT-8C93A196DE60DAE9
   - 来源：`function-os-candidate/v0.2/function_os/n6_execution_trace.py`
   - 依赖：—；被引用：—
+- [def __init__\(self, code: str, message: str\) -> None:](../../../agent_federation/structured_result_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0D406401D79DC3BD / def __init__\(self, code: str, message: str\) -> None: / IMPLICIT-0D406401D79DC3BD
+  - 来源：`agent_federation/structured_result_contract.py`
+  - 依赖：—；被引用：—
 - [def __init__\(self, envelope: LiveDispatchEnvelope, *, observed_at: str\) -> None:](../../../agent_federation/live_bridge.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-669CF22D978073C1 / def __init__\(self, envelope: LiveDispatchEnvelope, *, observed_at: str\) -> None: / IMPLICIT-669CF22D978073C1
@@ -468,6 +488,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-DAFCBFAD2CC08DD8 / def __init__\(self, path: str \| Path\) -> None: / IMPLICIT-DAFCBFAD2CC08DD8 / IMPLICIT-7578DD8FD0C53706
   - 来源：`agent_federation/live_reconciliation_events.py`
+  - 依赖：—；被引用：—
+- [def __init__\(self, path: str \| Path\) -> None:](../../../agent_federation/live_inference_observation_events.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-EAD076FFCD25D60F / def __init__\(self, path: str \| Path\) -> None: / IMPLICIT-EAD076FFCD25D60F / IMPLICIT-7578DD8FD0C53706
+  - 来源：`agent_federation/live_inference_observation_events.py`
   - 依赖：—；被引用：—
 - [def __init__\(self, root: Path, expectation: LiveCompletionExpectation\) -> None:](../../../agent_federation/live_pilot.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -599,6 +624,11 @@
   - 可搜索名称：IMPLICIT-A1214D349D8D80B9 / def _atomic_write\(self, path: str, content: bytes\) -> None: / IMPLICIT-A1214D349D8D80B9
   - 来源：`function-os-candidate/v0.1/function_os/n9_registry_store.py`
   - 依赖：—；被引用：—
+- [def _auth_boundary_status\(adapter: Any\) -> str:](../../../agent_federation/live_execution.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-AB8A57C5601B9A53 / def _auth_boundary_status\(adapter: Any\) -> str: / IMPLICIT-AB8A57C5601B9A53
+  - 来源：`agent_federation/live_execution.py`
+  - 依赖：—；被引用：—
 - [def _auth_path\(value: str\) -> Path \| None:](../../../agent_federation/live_filesystem.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-8F9158F8995A3B7B / def _auth_path\(value: str\) -> Path \| None: / IMPLICIT-8F9158F8995A3B7B
@@ -654,15 +684,20 @@
   - 可搜索名称：IMPLICIT-CAA530C8B6BC274E / def _call\(self, argv: Sequence\[str\], timeout_seconds: float\) -> SafeProcessResult: / IMPLICIT-CAA530C8B6BC274E / IMPLICIT-5E8BC79519B54591
   - 来源：`agent_federation/adapters/openclaw.py`
   - 依赖：—；被引用：—
-- [def _candidate_objects\(value: Any\) -> list\[Mapping\[str, Any\]\]:](../../../agent_federation/live_execution.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-AFB476016E178F77 / def _candidate_objects\(value: Any\) -> list\[Mapping\[str, Any\]\]: / IMPLICIT-AFB476016E178F77
-  - 来源：`agent_federation/live_execution.py`
-  - 依赖：—；被引用：—
 - [def _candidate_objects\(value: Any\):](../../../agent_federation/live_task137.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-DD836559617DAF0B / def _candidate_objects\(value: Any\): / IMPLICIT-DD836559617DAF0B
   - 来源：`agent_federation/live_task137.py`
+  - 依赖：—；被引用：—
+- [def _candidate_objects\(value: Any, path: str = "event"\) -> list\[tuple\[str, Mapping\[str, Any\]\]\]:](../../../agent_federation/structured_result_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-CDCFBA2028F909A4 / def _candidate_objects\(value: Any, path: str = "event"\) -> list\[tuple\[str, Mapping\[str, Any\]\]\]: / IMPLICIT-CDCFBA2028F909A4
+  - 来源：`agent_federation/structured_result_contract.py`
+  - 依赖：—；被引用：—
+- [def _canonical_digest\(value: Mapping\[str, Any\]\) -> str:](../../../agent_federation/structured_result_contract.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-18D583CD33CC0187 / def _canonical_digest\(value: Mapping\[str, Any\]\) -> str: / IMPLICIT-18D583CD33CC0187
+  - 来源：`agent_federation/structured_result_contract.py`
   - 依赖：—；被引用：—
 - [def _canonical_existing_path\(value: str, field: str, *, directory: bool = True\) -> Path:](../../../agent_federation/live_filesystem.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -844,6 +879,11 @@
   - 可搜索名称：IMPLICIT-B922083AF25186FC / def _compute_trace_hash\(self, trace: dict\) -> str: / IMPLICIT-B922083AF25186FC
   - 来源：`function-os-candidate/v0.2/function_os/n6_execution_trace.py`
   - 依赖：—；被引用：—
+- [def _copy\(value: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/live_state_dimensions.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9CD325C47A530C4E / def _copy\(value: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-9CD325C47A530C4E
+  - 来源：`agent_federation/live_state_dimensions.py`
+  - 依赖：—；被引用：—
 - [def _cost\(observation: LiveAdapterObservation, timeout_seconds: float\) -> CostVector:](../../../agent_federation/live_execution.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-064DEB8766D71A15 / def _cost\(observation: LiveAdapterObservation, timeout_seconds: float\) -> CostVector: / IMPLICIT-064DEB8766D71A15
@@ -898,6 +938,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-A57CB1A21CC52676 / def _digest_or_none\(value: Any, field: str, *, allow_null: bool = False\) -> None: / IMPLICIT-A57CB1A21CC52676
   - 来源：`agent_federation/live_capture.py`
+  - 依赖：—；被引用：—
+- [def _digest_or_unrecovered\(value: Any\) -> str:](../../../agent_federation/failure_forensics.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-09322FD1283DB455 / def _digest_or_unrecovered\(value: Any\) -> str: / IMPLICIT-09322FD1283DB455
+  - 来源：`agent_federation/failure_forensics.py`
   - 依赖：—；被引用：—
 - [def _effective\(envelope: LiveDispatchEnvelope, lease: LiveCapabilityLease, os_granted: Iterable\[str\], executor_declared: Iterable\[str\]\) -> tuple\[str, ...\]:](../../../agent_federation/live_admission.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -1019,6 +1064,11 @@
   - 可搜索名称：IMPLICIT-F1E24AAB00397856 / def _extract_vars\(self, expr: str\) -> Set\[str\]: / IMPLICIT-F1E24AAB00397856
   - 来源：`function-os-candidate/v0.1/function_os/n1_semantic_checker.py`
   - 依赖：—；被引用：—
+- [def _failure_forensics\(](../../../agent_federation/live_execution.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3CA71A7A2E9A7DCC / def _failure_forensics\( / IMPLICIT-3CA71A7A2E9A7DCC
+  - 来源：`agent_federation/live_execution.py`
+  - 依赖：—；被引用：—
 - [def _field_name\(key: Any\) -> str:](../../../agent_federation/live_privacy.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-4457E26F05FC64D9 / def _field_name\(key: Any\) -> str: / IMPLICIT-4457E26F05FC64D9
@@ -1108,6 +1158,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-44C36DACB1105B10 / def _internal_update\(self, function_id: str, new_record: dict\) -> dict: / IMPLICIT-44C36DACB1105B10
   - 来源：`function-os-candidate/v0.1/function_os/n9_registry_store.py`
+  - 依赖：—；被引用：—
+- [def _invalid\(field: str\) -> str:](../../../agent_federation/live_state_dimensions.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-EE342CBD02CE82BE / def _invalid\(field: str\) -> str: / IMPLICIT-EE342CBD02CE82BE
+  - 来源：`agent_federation/live_state_dimensions.py`
   - 依赖：—；被引用：—
 - [def _is_allowed\(node\) -> bool:](../../../function-os-candidate/v0.2/benchmark/oracle/reference.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -1359,6 +1414,11 @@
   - 可搜索名称：IMPLICIT-A571B58101A0E0A6 / def _public\(value: Any, field: str, *, depth: int = 0\) -> Any: / IMPLICIT-A571B58101A0E0A6
   - 来源：`agent_federation/live_bridge.py`
   - 依赖：—；被引用：—
+- [def _public_error_class\(value: str\) -> str:](../../../agent_federation/live_execution.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-116C39B742AF1D01 / def _public_error_class\(value: str\) -> str: / IMPLICIT-116C39B742AF1D01
+  - 来源：`agent_federation/live_execution.py`
+  - 依赖：—；被引用：—
 - [def _public_map\(value: Any, field: str\) -> Mapping\[str, Any\]:](../../../agent_federation/local_executor_census.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-D9A8F2D06B0B16DF / def _public_map\(value: Any, field: str\) -> Mapping\[str, Any\]: / IMPLICIT-D9A8F2D06B0B16DF
@@ -1393,6 +1453,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-6F2A70DFB30C089C / def _read_unlocked\(self\) -> list\[dict\[str, Any\]\]: / IMPLICIT-6F2A70DFB30C089C / IMPLICIT-2F2D2DBBB9F28D41
   - 来源：`agent_federation/live_reconciliation_events.py`
+  - 依赖：—；被引用：—
+- [def _read_unlocked\(self\) -> list\[dict\[str, Any\]\]:](../../../agent_federation/live_inference_observation_events.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-7293C62303CB3DA9 / def _read_unlocked\(self\) -> list\[dict\[str, Any\]\]: / IMPLICIT-7293C62303CB3DA9 / IMPLICIT-2F2D2DBBB9F28D41
+  - 来源：`agent_federation/live_inference_observation_events.py`
   - 依赖：—；被引用：—
 - [def _receipt\(](../../../agent_federation/live_task137.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -1514,6 +1579,11 @@
   - 可搜索名称：IMPLICIT-F0A1536A03582AED / def _run_process\( / IMPLICIT-F0A1536A03582AED
   - 来源：`agent_federation/live_transport.py`
   - 依赖：—；被引用：—
+- [def _runtime_boundary_status\(observation: LiveAdapterObservation\) -> str:](../../../agent_federation/live_execution.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-9CA5B251AD95561E / def _runtime_boundary_status\(observation: LiveAdapterObservation\) -> str: / IMPLICIT-9CA5B251AD95561E
+  - 来源：`agent_federation/live_execution.py`
+  - 依赖：—；被引用：—
 - [def _runtime_metadata_digest\(root: Path\) -> str:](../../../agent_federation/live_transport.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-8208E5054631BA5E / def _runtime_metadata_digest\(root: Path\) -> str: / IMPLICIT-8208E5054631BA5E
@@ -1558,6 +1628,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-8CE166C51920A38F / def _sanitized_env\(env_allowlist: Sequence\[str\], env_overrides: Mapping\[str, str\] \| None\) -> dict\[str, str\]: / IMPLICIT-8CE166C51920A38F
   - 来源：`agent_federation/live_transport.py`
+  - 依赖：—；被引用：—
+- [def _scan_capsule\(value: Any, field: str = "capsule"\) -> None:](../../../agent_federation/failure_forensics.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-0346E7CAF2BB0521 / def _scan_capsule\(value: Any, field: str = "capsule"\) -> None: / IMPLICIT-0346E7CAF2BB0521
+  - 来源：`agent_federation/failure_forensics.py`
   - 依赖：—；被引用：—
 - [def _scan_public\(value: Any, field: str = "capture"\) -> None:](../../../agent_federation/live_capture.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -1658,6 +1733,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-88D23EB768AB2D6A / def _stages_completed\(self, event_types: dict\) -> list: / IMPLICIT-88D23EB768AB2D6A
   - 来源：`function-os-candidate/v0.1/function_os/n6_validation_feedback.py`
+  - 依赖：—；被引用：—
+- [def _status_from_count\(calls: Any, started: Any\) -> str:](../../../agent_federation/live_state_dimensions.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-BC672FEF9BD31E67 / def _status_from_count\(calls: Any, started: Any\) -> str: / IMPLICIT-BC672FEF9BD31E67
+  - 来源：`agent_federation/live_state_dimensions.py`
   - 依赖：—；被引用：—
 - [def _strict\(data: Mapping\[str, Any\], keys: set\[str\], name: str\) -> None:](../../../agent_federation/contracts.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -1839,24 +1919,34 @@
   - 可搜索名称：IMPLICIT-15384DF7CE4F6143 / def _typed_attempt_summary\( / IMPLICIT-15384DF7CE4F6143
   - 来源：`agent_federation/live_current_projection.py`
   - 依赖：—；被引用：—
+- [def _unsigned\(capsule: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/failure_forensics.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-84FB4E583F6DBBDA / def _unsigned\(capsule: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-84FB4E583F6DBBDA
+  - 来源：`agent_federation/failure_forensics.py`
+  - 依赖：—；被引用：—
+- [def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/live_inference_observation_events.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-20541D15EDE8D39A / def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-20541D15EDE8D39A / IMPLICIT-7569A0A35A98B4B1
+  - 来源：`agent_federation/live_inference_observation_events.py`
+  - 依赖：—；被引用：—
 - [def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/live_reconciliation.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7569A0A35A98B4B1 / def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-7569A0A35A98B4B1 / IMPLICIT-C71079D4BAB0554D
+  - 可搜索名称：IMPLICIT-7569A0A35A98B4B1 / def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-7569A0A35A98B4B1 / IMPLICIT-20541D15EDE8D39A
   - 来源：`agent_federation/live_reconciliation.py`
   - 依赖：—；被引用：—
 - [def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/live_observation_events.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C71079D4BAB0554D / def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-C71079D4BAB0554D / IMPLICIT-7569A0A35A98B4B1
+  - 可搜索名称：IMPLICIT-C71079D4BAB0554D / def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-C71079D4BAB0554D / IMPLICIT-20541D15EDE8D39A
   - 来源：`agent_federation/live_observation_events.py`
   - 依赖：—；被引用：—
 - [def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/live_reconciliation_events.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D249251699D0F2F5 / def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-D249251699D0F2F5 / IMPLICIT-7569A0A35A98B4B1
+  - 可搜索名称：IMPLICIT-D249251699D0F2F5 / def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-D249251699D0F2F5 / IMPLICIT-20541D15EDE8D39A
   - 来源：`agent_federation/live_reconciliation_events.py`
   - 依赖：—；被引用：—
 - [def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]:](../../../agent_federation/live_current_projection.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-DF8CEA470FF3A9C3 / def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-DF8CEA470FF3A9C3 / IMPLICIT-7569A0A35A98B4B1
+  - 可搜索名称：IMPLICIT-DF8CEA470FF3A9C3 / def _unsigned\(document: Mapping\[str, Any\]\) -> dict\[str, Any\]: / IMPLICIT-DF8CEA470FF3A9C3 / IMPLICIT-20541D15EDE8D39A
   - 来源：`agent_federation/live_current_projection.py`
   - 依赖：—；被引用：—
 - [def _unsigned_dict\(self\) -> dict\[str, Any\]:](../../../agent_federation/live_bridge.py)
@@ -1989,9 +2079,9 @@
   - 可搜索名称：IMPLICIT-0703A56EED8398D7 / def _validate_obligations\( / IMPLICIT-0703A56EED8398D7
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—
-- [def _validate_projection_common\(value: dict\[str, Any\], *, typed: bool, check_digest: bool\) -> dict\[str, Any\]:](../../../agent_federation/live_current_projection.py)
+- [def _validate_projection_common\(value: dict\[str, Any\], *, typed: bool, r3: bool = False, check_digest: bool\) -> dict\[str, Any\]:](../../../agent_federation/live_current_projection.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-63A481DE23D84D49 / def _validate_projection_common\(value: dict\[str, Any\], *, typed: bool, check_digest: bool\) -> dict\[str, Any\]: / IMPLICIT-63A481DE23D84D49
+  - 可搜索名称：IMPLICIT-8E4F2879F6F8C30B / def _validate_projection_common\(value: dict\[str, Any\], *, typed: bool, r3: bool = False, check_digest: bool\) -> dict\[str, Any\]: / IMPLICIT-8E4F2879F6F8C30B
   - 来源：`agent_federation/live_current_projection.py`
   - 依赖：—；被引用：—
 - [def _validate_question\(question: Any, path: str, issues: list\[ValidationIssue\]\) -> None:](../../../reos_vnext/validation.py)
@@ -2114,6 +2204,11 @@
   - 可搜索名称：IMPLICIT-491A493D995456CD / def admitted_candidates\(data: Mapping\[str, Any\]\) -> list\[Mapping\[str, Any\]\]: / IMPLICIT-491A493D995456CD
   - 来源：`agent_federation/local_executor_census.py`
   - 依赖：—；被引用：—
+- [def aggregate\(field: str, ordered: tuple\[str, ...\], default: str\) -> str:](../../../agent_federation/live_current_projection.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-6557349F3CDF9E79 / def aggregate\(field: str, ordered: tuple\[str, ...\], default: str\) -> str: / IMPLICIT-6557349F3CDF9E79
+  - 来源：`agent_federation/live_current_projection.py`
+  - 依赖：—；被引用：—
 - [def aggregate\(results, thresholds\):](../../../function-os-candidate/v0.2/benchmark/run.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-8ED2D6C4EA3D0CEE / def aggregate\(results, thresholds\): / IMPLICIT-8ED2D6C4EA3D0CEE
@@ -2131,8 +2226,13 @@
   - 依赖：—；被引用：—
 - [def append\(](../../../agent_federation/live_attempt_ledger.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-3939C9B8FFADCCC0 / def append\( / IMPLICIT-3939C9B8FFADCCC0 / IMPLICIT-D8D61A53523A7055
+  - 可搜索名称：IMPLICIT-3939C9B8FFADCCC0 / def append\( / IMPLICIT-3939C9B8FFADCCC0 / IMPLICIT-58E2526280287963
   - 来源：`agent_federation/live_attempt_ledger.py`
+  - 依赖：—；被引用：—
+- [def append\(](../../../agent_federation/live_inference_observation_events.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-58E2526280287963 / def append\( / IMPLICIT-58E2526280287963 / IMPLICIT-3939C9B8FFADCCC0
+  - 来源：`agent_federation/live_inference_observation_events.py`
   - 依赖：—；被引用：—
 - [def append\(](../../../agent_federation/live_reconciliation_events.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -2199,6 +2299,11 @@
   - 可搜索名称：IMPLICIT-71D404A4960F0975 / def audit\(self\) -> dict\[str, Any\]: / IMPLICIT-71D404A4960F0975 / IMPLICIT-369887DE44B09696
   - 来源：`agent_federation/live_observation_events.py`
   - 依赖：—；被引用：—
+- [def audit\(self\) -> dict\[str, Any\]:](../../../agent_federation/live_inference_observation_events.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-92043ABC4EE94536 / def audit\(self\) -> dict\[str, Any\]: / IMPLICIT-92043ABC4EE94536 / IMPLICIT-369887DE44B09696
+  - 来源：`agent_federation/live_inference_observation_events.py`
+  - 依赖：—；被引用：—
 - [def audit\(self\) -> dict\[str, Any\]:](../../../agent_federation/convergence.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-EBDEA8E739CFE6A4 / def audit\(self\) -> dict\[str, Any\]: / IMPLICIT-EBDEA8E739CFE6A4 / IMPLICIT-369887DE44B09696
@@ -2253,6 +2358,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B346BD9E83AC91EF / def build_card\(src: dict, fetch: dict, content: dict, extract: dict\) -> dict: / IMPLICIT-B346BD9E83AC91EF
   - 来源：`scripts/external-research/121_generate_evidence_cards.py`
+  - 依赖：—；被引用：—
+- [def build_failure_forensics_capsule\(](../../../agent_federation/failure_forensics.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-2D330C1B55B7930D / def build_failure_forensics_capsule\( / IMPLICIT-2D330C1B55B7930D
+  - 来源：`agent_federation/failure_forensics.py`
   - 依赖：—；被引用：—
 - [def build_handoff_bundle\(](../../../agent_federation/approval_handoff.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
@@ -2393,114 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-3D8294F5D95A2B6B / def canon\(obj\): / IMPLICIT-3D8294F5D95A2B6B
   - 来源：`evidence-program/tools/validate_evidence_program.py`
-  - 依赖：—；被引用：—
-- [def canonical\(self, federation_task_id: str\) -> FederatedProgressEvent \| None:](../../../agent_federation/convergence.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-F8CE046B6636899D / def canonical\(self, federation_task_id: str\) -> FederatedProgressEvent \| None: / IMPLICIT-F8CE046B6636899D
-  - 来源：`agent_federation/convergence.py`
-  - 依赖：—；被引用：—
-- [def canonical_digest\(value: Any\) -> str:](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2EA74CF70E75D17E / def canonical_digest\(value: Any\) -> str: / IMPLICIT-2EA74CF70E75D17E
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def canonical_json\(value: Any\) -> str:](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-65AEE6C7F3EEDAC7 / def canonical_json\(value: Any\) -> str: / IMPLICIT-65AEE6C7F3EEDAC7 / IMPLICIT-67A285E29F566920
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def canonical_json\(value: Any\) -> str:](../../../reos_vnext/validation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-67A285E29F566920 / def canonical_json\(value: Any\) -> str: / IMPLICIT-67A285E29F566920 / IMPLICIT-65AEE6C7F3EEDAC7
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [def capabilities\(self\) -> dict:](../../../function-os-candidate/v0.2/function_os/n8_composer_router.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-5226F4065B345447 / def capabilities\(self\) -> dict: / IMPLICIT-5226F4065B345447
-  - 来源：`function-os-candidate/v0.2/function_os/n8_composer_router.py`
-  - 依赖：—；被引用：—
-- [def capture\(self, execution_result: dict, spec: dict\) -> dict:](../../../function-os-candidate/v0.2/function_os/n6_execution_trace.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-D9BCEB668F13F0FB / def capture\(self, execution_result: dict, spec: dict\) -> dict: / IMPLICIT-D9BCEB668F13F0FB
-  - 来源：`function-os-candidate/v0.2/function_os/n6_execution_trace.py`
-  - 依赖：—；被引用：—
-- [def ceiling\(row: dict\[str, object\], cls: str, validity: str\) -> str:](../../../data/operations/iterations/112/publication/tools/build_ledger.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A315AE3FD42826A9 / def ceiling\(row: dict\[str, object\], cls: str, validity: str\) -> str: / IMPLICIT-A315AE3FD42826A9
-  - 来源：`data/operations/iterations/112/publication/tools/build_ledger.py`
-  - 依赖：—；被引用：—
-- [def char_counts\(path: Path\) -> dict\[str, int\]:](../../../data/operations/iterations/112/publication/tools/r0_intake.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-330F651B157269CB / def char_counts\(path: Path\) -> dict\[str, int\]: / IMPLICIT-330F651B157269CB
-  - 来源：`data/operations/iterations/112/publication/tools/r0_intake.py`
-  - 依赖：—；被引用：—
-- [def check\(name, condition, detail=""\):](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E95C104F9DD61704 / def check\(name, condition, detail=""\): / IMPLICIT-E95C104F9DD61704
-  - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
-  - 依赖：—；被引用：—
-- [def check\(self, spec: dict\) -> List\[Dict\]:](../../../function-os-candidate/v0.1/function_os/n1_semantic_checker.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EF7F636BF9DF6A6A / def check\(self, spec: dict\) -> List\[Dict\]: / IMPLICIT-EF7F636BF9DF6A6A
-  - 来源：`function-os-candidate/v0.1/function_os/n1_semantic_checker.py`
-  - 依赖：—；被引用：—
-- [def check_file_exists\(path\):](../../../data/external-research/120-function-paradigm-atlas/120-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2D7B441C230F2C00 / def check_file_exists\(path\): / IMPLICIT-2D7B441C230F2C00
-  - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
-  - 依赖：—；被引用：—
-- [def check_instance\(inst, schema, path="$"\):](../../../evidence-program/tools/validate_evidence_program.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4B8E5AFB5E508906 / def check_instance\(inst, schema, path="$"\): / IMPLICIT-4B8E5AFB5E508906
-  - 来源：`evidence-program/tools/validate_evidence_program.py`
-  - 依赖：—；被引用：—
-- [def check_no_api_key_leak\(path\):](../../../data/external-research/120-function-paradigm-atlas/120-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-0C7F23AF4BE7DF55 / def check_no_api_key_leak\(path\): / IMPLICIT-0C7F23AF4BE7DF55
-  - 来源：`data/external-research/120-function-paradigm-atlas/120-validator.py`
-  - 依赖：—；被引用：—
-- [def check_retraction\(doi: str \| None = None, openalex_id: str \| None = None,](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1489F1F7E216A3D8 / def check_retraction\(doi: str \| None = None, openalex_id: str \| None = None, / IMPLICIT-1489F1F7E216A3D8
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
-- [def check_type\(value, t\):](../../../evidence-program/tools/validate_evidence_program.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C81A59FA0B4F42EC / def check_type\(value, t\): / IMPLICIT-C81A59FA0B4F42EC
-  - 来源：`evidence-program/tools/validate_evidence_program.py`
-  - 依赖：—；被引用：—
-- [def child_environment\(self, base_environment: Mapping\[str, str\] \| None = None\) -> dict\[str, str\]:](../../../agent_federation/live_child_guard.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E9C95139F53CFF17 / def child_environment\(self, base_environment: Mapping\[str, str\] \| None = None\) -> dict\[str, str\]: / IMPLICIT-E9C95139F53CFF17
-  - 来源：`agent_federation/live_child_guard.py`
-  - 依赖：—；被引用：—
-- [def claim\(self, idempotency_key: str\) -> bool:](../../../agent_federation/conformance.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-17D44A27AD735E05 / def claim\(self, idempotency_key: str\) -> bool: / IMPLICIT-17D44A27AD735E05
-  - 来源：`agent_federation/conformance.py`
-  - 依赖：—；被引用：—
-- [def claim_verdicts\(by_claim, metrics, thresholds\):](../../../function-os-candidate/v0.2/benchmark/run.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-5B1972D46CF48F32 / def claim_verdicts\(by_claim, metrics, thresholds\): / IMPLICIT-5B1972D46CF48F32
-  - 来源：`function-os-candidate/v0.2/benchmark/run.py`
-  - 依赖：—；被引用：—
-- [def cleanup\(self\) -> None:](../../../agent_federation/live_pilot.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CBF82B09461DCA89 / def cleanup\(self\) -> None: / IMPLICIT-CBF82B09461DCA89
-  - 来源：`agent_federation/live_pilot.py`
-  - 依赖：—；被引用：—
-- [def cleanup\(self\) -> str:](../../../agent_federation/live_transport.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C0E56AA6A52BBC79 / def cleanup\(self\) -> str: / IMPLICIT-C0E56AA6A52BBC79
-  - 来源：`agent_federation/live_transport.py`
-  - 依赖：—；被引用：—
-- [def cleanup_spool\(self\) -> dict\[str, Any\]:](../../../agent_federation/live_capture.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-E7AEA8700B40D380 / def cleanup_spool\(self\) -> dict\[str, Any\]: / IMPLICIT-E7AEA8700B40D380
-  - 来源：`agent_federation/live_capture.py`
-  - 依赖：—；被引用：—
-- [def code\(self\) -> str \| None:](../../../reos_vnext/validation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-1711B736B3E8AE14 / def code\(self\) -> str \| None: / IMPLICIT-1711B736B3E8AE14
-  - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—

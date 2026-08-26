@@ -1094,9 +1094,9 @@
   - 可搜索名称：NFC-72709873d276b952 / `Codex CLI` is the current selection: Fresh census selects Codex CLI \(codex-cli 0.144.4\) because it is the only installe
   - 来源：`reports/operations/ignition-140-step09-local-executor-census-and-selection.md`
   - 依赖：—；被引用：—
-- [`current-facts.json` 为准；当前地图为 `0.13.0`，上一版 `0.12.0`、更早版 `0.11.0` 仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
+- [`current-facts.json` 为准；当前地图为 `0.15.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-70b84a574bbba814 / `current-facts.json` 为准；当前地图为 `0.13.0`，上一版 `0.12.0`、更早版 `0.11.0` 仅作 Historical。
+  - 可搜索名称：NFC-95781cf3b6c624e0 / `current-facts.json` 为准；当前地图为 `0.15.0`，上一版 `0.14.0`、更早版 `0.13.0` 及之前版本仅作 Historical。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [`data/architecture/current-system-identity.json`、`data/architecture/current-facts.json`](../../../AI-START-HERE.md)
@@ -1288,6 +1288,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f08476fbd2e0db06 / `repository_dependency`、`synchronization_obligation` 和 `substantive_causal_candidate` 权限不同。
   - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
+- [`ROOT_CAUSE_NARROWED_NOT_CONFIRMED`; a Codex same-family retry is therefore a](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b395232d15cd3291 / `ROOT_CAUSE_NARROWED_NOT_CONFIRMED`; a Codex same-family retry is therefore a
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
 - [`schema_validated` for local overlay structure after the validator passes, and `workflow_passed` only for specific CI ru](../../../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1743,6 +1748,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-06f07756189dfd05 / benchmark 通过"是否适合作为点火项目公开案例"字段，决定哪些问题适合公开故事化。如果 benchmark 结果是"结构增益 + pending"，适合作为结构性推论的样本；如果 benchmark 结果是"结构增益 + 重述"，适
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [blind retry and remains forbidden until a concrete public root cause is fixed.](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1dfdd28ae9149f7f / blind retry and remains forbidden until a concrete public root cause is fixed.
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
 - [broad physical mechanism](../../../data/architecture/multiscale-causal-fabric/examples/stellar-nucleosynthesis.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2492,15 +2502,5 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M29 / data/external-research/088-external-source-atlas-medium.jsonl / M29 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M30 / data/external-research/088-external-source-atlas-medium.jsonl / M30 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M31 / data/external-research/088-external-source-atlas-medium.jsonl / M31 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

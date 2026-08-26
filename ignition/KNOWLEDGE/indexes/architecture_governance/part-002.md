@@ -304,6 +304,11 @@
   - 可搜索名称：NFC-32b06de13c379737 / `implementation_complete`: the local artifact, schema, tool and test work exists and passes its relevant local checks.
   - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
+- [`inference_observation_status` to `OBSERVED`. The R3 Current projection now](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-eb877ca0698841da / `inference_observation_status` to `OBSERVED`. The R3 Current projection now
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
 - [`inputs/collisions/20260708-cross-domain-smoke-test/social.md`（社会学·邻里积分制）](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a50c57f69fda8e2c / `inputs/collisions/20260708-cross-domain-smoke-test/social.md`（社会学·邻里积分制）
@@ -1289,6 +1294,11 @@
   - 可搜索名称：NFC-51f9eb82e46ec9ea / authority_changes: \[Durability / Lifecycle R3\]\(./docs/architecture/os-control-plane-r2.md#durability-and-lifecycle-r3\),
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: R7 live-state semantics and FailureForensicsCapsule are repository-local Pointfire OS control-plane b](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-00f6a3240bc9abb5 / authority_changes: R7 live-state semantics and FailureForensicsCapsule are repository-local Pointfire OS control-plane b
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: the bridge adds no Owner, provider, channel, browser, remote Git, configuration, billing, production,](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-303fc35b52688f52 / authority_changes: the bridge adds no Owner, provider, channel, browser, remote Git, configuration, billing, production,
@@ -2049,6 +2059,11 @@
   - 可搜索名称：NFC-a0c1dd9cb95e8996 / claim_ceiling: Task140 repository-local terminal architecture/current and fail-closed live-observation evidence only; no
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [claim_ceiling: Task141 repository-local Live State Semantics, Structured Result Reliability, sanitized failure forensics](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-87ee9905723e8c1b / claim_ceiling: Task141 repository-local Live State Semantics, Structured Result Reliability, sanitized failure forensics
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish extern](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd7cc4e938e6b72a / claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish extern
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-9bb6175f8fcfb285 / current-facts values from `129` to `130` while classifying the work as
   - 来源：`docs/architecture/iteration-boundary-archaeology-r1.md`
-  - 依赖：—；被引用：—
-- [Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00](../../ASSET-CARDS.md#asset-hr-3ded720d598ae407)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00 / current-state-drift-audit-r1
-  - 来源：`reports/architecture/current-state-drift-audit-r1.md`
-  - 依赖：—；被引用：—
-- [Current-state sync, volatile-fact registry, Current semantic gate, and two-pass](../../../reports/operations/ignition-139-step00-baseline-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f23e3f05d80e2bae / Current-state sync, volatile-fact registry, Current semantic gate, and two-pass
-  - 来源：`reports/operations/ignition-139-step00-baseline-audit.md`
-  - 依赖：—；被引用：—
-- [current_path_manifest: `classification-manifest.jsonl` is the Current generated snapshot of the live tracked engine; the](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-75846cdb91075c9e / current_path_manifest: `classification-manifest.jsonl` is the Current generated snapshot of the live tracked engine; the
-  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

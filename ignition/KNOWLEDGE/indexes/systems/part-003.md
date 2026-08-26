@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D602 defines a mechanism_model within the point-fire framework. Core: . Annotation: .](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-27a20e8e3b6ca33c / Object D602 defines a mechanism_model within the point-fire framework. Core: . Annotation: .
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D602；被引用：—
+- [Object D62 defines a mechanism_model within the point-fire framework. Core: 中文：dε_opt/dt = η_reprogram × Σⱼ\(新档案ⱼ的安装强度 ×](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-62a7dbd9654b5f82 / Object D62 defines a mechanism_model within the point-fire framework. Core: 中文：dε_opt/dt = η_reprogram × Σⱼ\(新档案ⱼ的安装强度 ×
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D62；被引用：—
 - [Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ\(参与者策略\)×N_homogeneous/](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-efa2d0e7e8ca1c21 / Object D66 defines a mechanism_model within the point-fire framework. Core: 中文：H_correlation = α×ρ\(参与者策略\)×N_homogeneous/
@@ -1014,6 +1024,11 @@
   - 可搜索名称：NFC-8bd1c2352cc442c4 / Structural Governance Surface 的可见关系仍是 advisory repository projection。
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
+- [structured_result_boundary: strict synthetic structured-result validation rejects extra/missing fields, malformed JSON a](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-9282e2bbf48e44f2 / structured_result_boundary: strict synthetic structured-result validation rejects extra/missing fields, malformed JSON a
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Substantive causal candidates cannot use automatic propagation.](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2b383eece18acd81 / Substantive causal candidates cannot use automatic propagation.
@@ -1064,6 +1079,11 @@
   - 可搜索名称：NFC-636c12c26bc0f5fa / Task 140 将 Live Observation / Reconciliation Plane 注册为当前 OS 架构节点：它把 probe、transport、live process、durable capture、structu
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
+- [Task 141 将 Live State Semantics & Structured Result Reliability R1 注册为当前 OS 控制语义：dispatch crossing、process observation、i](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7d9e218be01d45cd / Task 141 将 Live State Semantics & Structured Result Reliability R1 注册为当前 OS 控制语义：dispatch crossing、process observation、i
+  - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
 - [Task retrieval, top-K selection and input-aware output-space fusion are the paper's central mechanism and are evaluated](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-e4eab0b6b1c1b205 / Task retrieval, top-K selection and input-aware output-space fusion are the paper's central mechanism and are evaluated
@@ -1073,6 +1093,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-b76c9ec66c5dc29b / task-111 投影的下一候选是 `arn-gap-001`，不创建 task 112。
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [Task140's malformed-result root cause remains](../../../docs/architecture/external-agent-federation-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3b66ea3b7c0ab31f / Task140's malformed-result root cause remains
+  - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
 - [Tensor shapes, mode, causality, routing and resource constraints are useful architecture-specification fragments, but th](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1324,9 +1349,9 @@
   - 可搜索名称：NFC-e56563c8eb6949c1 / The projection sources are \[`current-system-identity.json`\]\(../../data/architecture/current-system-identity.json\),
   - 来源：`reports/operations/ignition-129-step20-current-sync.md`
   - 依赖：—；被引用：—
-- [The provider-neutral live bridge, durable host-side capture, typed observation outcome projection and append-only reconc](../../../data/architecture/current-system-identity.json)
+- [The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure](../../../data/architecture/current-system-identity.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0311ccd21f659124 / The provider-neutral live bridge, durable host-side capture, typed observation outcome projection and append-only reconc
+  - 可搜索名称：NFC-7b1f7d211136ed14 / The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure
   - 来源：`data/architecture/current-system-identity.json`
   - 依赖：—；被引用：—
 - [The public page mechanism is `.github/workflows/pages.yml`: it copies the root `README.md` into `site/index.md`, builds](../../../reports/operations/121Q25-front-door-audit.md)
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-87c64e3c6ab502c0 / \| ARN 因果主张委托 MCF \| PASS \|
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| BC-20260709-001 \| 《系统之美》 \| 系统基模中的"成长上限"基模与点火框架M1增强回路的同构性。当增强回路推动系统增长，同时调节回路在某个阈值启动限制增长，形成门控面极小点。 \| pending \| M1 \| 《系统之](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f938c66f58afc087 / \| BC-20260709-001 \| 《系统之美》 \| 系统基模中的"成长上限"基模与点火框架M1增强回路的同构性。当增强回路推动系统增长，同时调节回路在某个阈值启动限制增长，形成门控面极小点。 \| pending \| M1 \| 《系统之
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
-  - 依赖：—；被引用：—
-- [\| BC-20260709-003 \| 《枪炮、病菌与钢铁》 \| 地理决定论与点火框架P_meta元协议的碰撞。地理环境作为初始条件（V₁延续性协议），通过资源分布影响技术发展路径，验证了元协议组合对文明演化的决定性作用。 \| V1 \| P](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-0ec7ea9e512fea25 / \| BC-20260709-003 \| 《枪炮、病菌与钢铁》 \| 地理决定论与点火框架P_meta元协议的碰撞。地理环境作为初始条件（V₁延续性协议），通过资源分布影响技术发展路径，验证了元协议组合对文明演化的决定性作用。 \| V1 \| P
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
-  - 依赖：—；被引用：—
-- [\| BC-20260709-006 \| 《黑天鹅》 \| 极端事件与点火框架G_δ哥德尔不完备性判定的映射。系统内部无法预测极端事件，必须跳到元层面（元协议）处理不确定性。 \| pending \| G_δ \| 《黑天鹅》最终收敛报告 2026](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-075b65ab678cb727 / \| BC-20260709-006 \| 《黑天鹅》 \| 极端事件与点火框架G_δ哥德尔不完备性判定的映射。系统内部无法预测极端事件，必须跳到元层面（元协议）处理不确定性。 \| pending \| G_δ \| 《黑天鹅》最终收敛报告 2026
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
-  - 依赖：—；被引用：—
-- [\| BC-20260709-007 \| 《反脆弱》 \| 从混乱中获益与点火框架M1增强回路的同构性。适度压力触发增强回路，系统从压力中恢复并增强，验证了乘法最优生存策略。 \| pending \| M1 \| 《反脆弱》最终收敛报告 2026年](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bc7c862a8b716227 / \| BC-20260709-007 \| 《反脆弱》 \| 从混乱中获益与点火框架M1增强回路的同构性。适度压力触发增强回路，系统从压力中恢复并增强，验证了乘法最优生存策略。 \| pending \| M1 \| 《反脆弱》最终收敛报告 2026年
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
-  - 依赖：—；被引用：—
-- [\| BC-20260709-010 \| 《人类简史》 \| 认知革命、农业革命、科学革命与点火框架元协议演化的同构性。每次革命都是元协议组合的跃迁，推动系统进入新的演化路径。 \| pending \| - \| 《人类简史》最终收敛报告 2026](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3eb7602ffda58626 / \| BC-20260709-010 \| 《人类简史》 \| 认知革命、农业革命、科学革命与点火框架元协议演化的同构性。每次革命都是元协议组合的跃迁，推动系统进入新的演化路径。 \| pending \| - \| 《人类简史》最终收敛报告 2026
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
   - 依赖：—；被引用：—

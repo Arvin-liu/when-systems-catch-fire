@@ -8,5 +8,5 @@
 - [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[#605｜仲裁模型升级自举循环验证\]\(docs/zh/cases/items/C-0605.md\) → - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0427}\)=1\].
 - [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0428}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → title: "P_exit\(t,L,C\) 退出概率 / P_exit\(t,L,C\) exit probability"
-- [第 006 片](./operations_evidence/part-006.md)：2501—2989；title: "r_cross=0不导致Ψ=0" → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → title: "BEC — N个独立因子→1个共享因子，门控风险消除"
+- [第 006 片](./operations_evidence/part-006.md)：2501—2994；title: "Fisher不可逆vs Shannon不可逆 — 门控区Shannon熵S=-Σpᵢlnpᵢ更低（少一个可区分状态），但Fisher距离d=∞。从存活区到门控区Shannon熵降（违反第二定律？），但Fisher距离增（符合dFisher/dt≤0）。真正的不可逆在Fisher几何不在Shannon统计 / Fisher不可逆vs Shannon不可逆 - 门控区Shannon熵S=-Σpᵢlnpᵢ更低\(少一个可区分状态\), 但Fisher距离d=∞. 从存活 → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

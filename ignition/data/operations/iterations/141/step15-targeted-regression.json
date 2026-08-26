@@ -1,0 +1,51 @@
+{
+  "schema_version": "ignition-141-step15-targeted-regression-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "15",
+  "status": "PASS",
+  "command": "PYTHONPATH=ignition python3 -m unittest ignition.tests.test_live_transport ignition.tests.test_live_execution ignition.tests.test_event_ledger ignition.tests.test_current_state_sync ignition.tests.test_current_surface_semantics ignition.tests.test_live_attempt_ledger ignition.tests.test_live_current_projection ignition.tests.test_live_observation_semantics ignition.tests.test_live_observation_plane ignition.tests.test_live_reconciliation ignition.tests.test_live_reconciliation_events ignition.tests.test_live_observation_events ignition.tests.test_live_inference_observation_events ignition.tests.test_live_state_dimensions ignition.tests.test_failure_forensics ignition.tests.test_structured_result_contract ignition.tests.test_local_executor_census ignition.tests.test_current_surface_compiler ignition.tests.test_current_surface_determinism ignition.tests.test_current_release_lifecycle ignition.tests.test_execution_contract ignition.tests.test_task_identity_model ignition.tests.test_release_candidate_task_identity ignition.tests.test_owner_observation_privacy ignition.tests.test_live_validation ignition.tests.test_task140_historical_correction ignition.tests.test_task140_adversarial_matrix ignition.tests.test_task141_adversarial_matrix ignition.tests.test_task141_current_projection ignition.tests.test_task141_current_state_sync ignition.tests.test_task141_live_admission ignition.tests.test_task141_live_policy_freeze ignition.tests.test_task141_live_probe ignition.tests.test_task141_local_executor_census ignition.tests.test_task141_root_cause_archaeology ignition.tests.test_task141_structured_result_repair",
+  "working_directory": "repository root",
+  "attempts": [
+    {
+      "attempt": 1,
+      "tests_run": 127,
+      "failures": 3,
+      "errors": 0,
+      "skips": 0,
+      "runtime_seconds": 2.079,
+      "status": "FAIL_IDENTITY_PROJECTION_REPAIR_REQUIRED",
+      "failure_clusters": [
+        "task identity model still declared the release-candidate execution contract at iteration 140",
+        "release-candidate identity gate had no Task141 current_iteration_id progress record"
+      ],
+      "live_processes_started": 0,
+      "generated_output_drift": false
+    },
+    {
+      "attempt": 2,
+      "tests_run": 127,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "runtime_seconds": 2.081,
+      "status": "PASS",
+      "live_processes_started": 0,
+      "generated_output_drift": false
+    }
+  ],
+  "repair": {
+    "files": [
+      "ignition/data/operations/task-identity-model-r1.json",
+      "ignition/data/operations/iterations/141/progress.jsonl"
+    ],
+    "semantics": "The release-candidate role now follows the current formal execution contract, and the current iteration gate is satisfied by an explicit Task141 progress binding."
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "claim_ceiling": "Targeted repository-local Task141 semantic, identity, projection and policy evidence only; no validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

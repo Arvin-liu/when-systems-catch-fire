@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{T33} exist, compose F_{T33}=N\(⊕_{g∈D_{T33}} g\); otherwise treat F_{T33} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4d61e577edfd52d4 / If upstream objects D_{T33} exist, compose F_{T33}=N\(⊕_{g∈D_{T33}} g\); otherwise treat F_{T33} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T33；被引用：—
 - [If upstream objects D_{T34} exist, compose F_{T34}=N\(⊕_{g∈D_{T34}} g\); otherwise treat F_{T34} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bead307e87cbe335 / If upstream objects D_{T34} exist, compose F_{T34}=N\(⊕_{g∈D_{T34}} g\); otherwise treat F_{T34} as an axiom seed.
@@ -233,6 +238,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-d6342e10fa5ace9d / Knowledge 是第一个大型 Domain Pack，不是整个系统本体；Research、Writing、
   - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [known=\("public process lifecycle was captured", "structured result presence was classified"\),](../../../agent_federation/live_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-325d6b63fd8ad5ce / known=\("public process lifecycle was captured", "structured result presence was classified"\),
+  - 来源：`agent_federation/live_execution.py`
   - 依赖：—；被引用：—
 - [L0 source and evidence -> L1 controlled semantic claims -> L2 formal objects -> L3 logical arguments -> L4 mathematical](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -1327,6 +1337,11 @@
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task139 baseline `ff0adcc2bd736217691bc7](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f8ab53d615685a34 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task139 baseline `ff0adcc2bd736217691bc7
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task140 baseline `77f8fe099dbadfc7f7f323](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cad6c34a33fadde1 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task140 baseline `77f8fe099dbadfc7f7f323
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal main baseline for this Task 128 branch is `681f86d79b1112af3c07e0f80](../../../STATE-CHANGELOG.md)
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-ecd720e26eb342f1 / Proof Artifact 接口
   - 来源：`docs/foundation/architecture-structure-freeze-v1.md`
-  - 依赖：—；被引用：—
-- [Proof artifacts: 1 claim with Lean/Z3 realizations. Replayable counterexample/countermodel records: 2.](../../../reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b3f1e131d7276816 / Proof artifacts: 1 claim with Lean/Z3 realizations. Replayable counterexample/countermodel records: 2.
-  - 来源：`reports/foundation-architecture/core-proof-and-countermodel-report-20260713.md`
-  - 依赖：—；被引用：—
-- [Proof Boundary](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-750832eb8ca39a6c / Proof Boundary
-  - 来源：`reports/architecture/121Q23C-operational-arn-real-history-validation.md`
-  - 依赖：—；被引用：—
-- [Proof combinators, dependent application, unfolding and algebraic constraints provide explicit symbolic composition rule](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-3797e2c9a03a9411 / Proof combinators, dependent application, unfolding and algebraic constraints provide explicit symbolic composition rule
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

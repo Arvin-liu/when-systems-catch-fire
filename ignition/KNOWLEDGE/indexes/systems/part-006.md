@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [跨域同构**：这个机制在别的领域也见过吗（摄影？财商？AI？历史？）](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-068793fa591cc7f3 / 跨域同构**：这个机制在别的领域也见过吗（摄影？财商？AI？历史？）
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [跨域同构叙事只是应用类型。它必须声明比较层，保留不可映射残余，不能把结构相似写成物质、尺度或因果相同，更不能用领域收敛提高证据等级。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f74123d864e238d5 / 跨域同构叙事只是应用类型。它必须声明比较层，保留不可映射残余，不能把结构相似写成物质、尺度或因果相同，更不能用领域收敛提高证据等级。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [跨域同构识别、候选机制生成、反例生成、`pending` 判定。](../../../outputs/audit/agent-project-understanding-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ac2b81b7e9c296dd / 跨域同构识别、候选机制生成、反例生成、`pending` 判定。
+  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
+  - 依赖：—；被引用：—
+- [跨域同构：财富滚雪球 ↔ 系统正反馈 M13；10万积蓄↔退出权 A3](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-99f2f581d5b5e8b9 / 跨域同构：财富滚雪球 ↔ 系统正反馈 M13；10万积蓄↔退出权 A3
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：A3；被引用：—
+- [跨域跳转必须依靠共享意象、动作、变量、句法回声或因果铰链。](../../../docs/narrative-output-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-92073259e5989c23 / 跨域跳转必须依靠共享意象、动作、变量、句法回声或因果铰链。
+  - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
 - [输入材料、事实、引用或案例基础错误，导致后续结构判断失效。](../../../data/failure_typology.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a631ea6501b44943 / 输入材料、事实、引用或案例基础错误，导致后续结构判断失效。

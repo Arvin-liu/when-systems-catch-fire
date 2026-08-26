@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0531-D534-无聊-意义重构函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d5dbbf8da0acb032 / 已迁移的历史函数来源/0531-D534-无聊-意义重构函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D534；被引用：—
+- [已迁移的历史函数来源/0532-D535-死亡三重定义函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-5bf584b356c1e332 / 已迁移的历史函数来源/0532-D535-死亡三重定义函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D535；被引用：—
+- [已迁移的历史函数来源/0533-D536-清醒梦-梦境真实感提升函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-eb1360e34f181a6e / 已迁移的历史函数来源/0533-D536-清醒梦-梦境真实感提升函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D536；被引用：—
+- [已迁移的历史函数来源/0534-D537-完成-完美函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ad9123a2ba97eb07 / 已迁移的历史函数来源/0534-D537-完成-完美函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D537；被引用：—
+- [已迁移的历史函数来源/0535-D538-潜意识-觉知-意识函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-b718c062780181d7 / 已迁移的历史函数来源/0535-D538-潜意识-觉知-意识函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D538；被引用：—
 - [已迁移的历史函数来源/0536-D539-未来视角-思考维度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a8b2ed256512e1bd / 已迁移的历史函数来源/0536-D539-未来视角-思考维度函数.md
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-ff3acb0a87ea321a / 除非有外部数学证明、实验验证、史料互证、临床证据、法律程序、工程测试或可复现评测，否则点火框架输出通常应保持在 L1-L3。
   - 来源：`docs/evidence_regime_library.md`
-  - 依赖：—；被引用：—
-- [随机游走维数临界函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D527 / 随机游走维数临界函数 / D527
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D451, D541, T39；被引用：NFC-1f40f0ec9de35773, NFC-857665052de73b2c, NFC-dc140de78123443e, NFC-ed4045159e7d8ef3
-- [雅各布森根幂零传递函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D530 / 雅各布森根幂零传递函数 / D530
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D451, D541, T31, T39；被引用：NFC-02097872c4f8b36d, NFC-1a4a4cbe06538dd1, NFC-315f675a0923fd7f, NFC-e5820d3f7234ee85
-- [集中性-序参量映射修正函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D414 / 集中性-序参量映射修正函数 / D414
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-12fba21d0fcd69c5, NFC-4cedd442a6ca0a9d, NFC-89fb6543f6a924da, NFC-a81514f1b9dec989
-- [集中性-序参量统一函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D400 / 集中性-序参量统一函数 / D400
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D361, D430, D431, D450；被引用：NFC-21dbbf6c43c01dbb, NFC-2948f5783ed55ebc, NFC-31592bd7220a7681, NFC-3fec5a81376b908f
-- [集中性-序参量统一函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-174369641da9cfac / 集中性-序参量统一函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
   - 依赖：—；被引用：—

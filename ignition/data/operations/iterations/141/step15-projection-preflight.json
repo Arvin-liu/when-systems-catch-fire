@@ -1,0 +1,441 @@
+{
+  "check_count": 25,
+  "checks": [
+    {
+      "argv": [
+        "python3.14",
+        "tools/validate_local_executor_census.py"
+      ],
+      "category": "local_executor_census",
+      "duration_seconds": 0.118,
+      "id": "local_executor_census",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "6952adb61aa61c6138f3dec79df0ab722b64c70dd0d73a68458b67004bcdd73c",
+      "stdout_tail": "{\"admitted_executor_count\": 0, \"agentic_executor_count\": 5, \"candidate_count\": 14, \"census_id\": \"ignition-138-local-executor-census-r1-20260825\", \"safe\": true, \"selected_executor_id\": null, \"selection_status\": \"NO_SAFE_CANDIDATE\"}\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/foundation/build_function_asset_census.py",
+        "--check"
+      ],
+      "category": "function_canonical_projection",
+      "duration_seconds": 31.394,
+      "id": "function_asset_census",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "67c4f5fa9f7189bdbb8cc2a2fecaff1f23b8cb77bdb961c0930fbaaf0d08bb57",
+      "stdout_tail": ": 80, \"stable_id\": \"D90\"}, {\"dependent_count\": 80, \"stable_id\": \"D211\"}, {\"dependent_count\": 77, \"stable_id\": \"D451\"}, {\"dependent_count\": 77, \"stable_id\": \"D541\"}, {\"dependent_count\": 71, \"stable_id\": \"D289\"}, {\"dependent_count\": 70, \"stable_id\": \"D290\"}, {\"dependent_count\": 64, \"stable_id\": \"D430\"}, {\"dependent_count\": 64, \"stable_id\": \"D431\"}, {\"dependent_count\": 64, \"stable_id\": \"D450\"}, {\"dependent_count\": 63, \"stable_id\": \"D361\"}, {\"dependent_count\": 35, \"stable_id\": \"D476\"}, {\"dependent_count\": 35, \"stable_id\": \"D477\"}], \"human_adjudicated_task98\": 12, \"identity_counts\": {\"ALGORITHM_OR_WORKFLOW\": 83, \"CONJECTURE_OR_PENDING_CLAIM\": 121, \"GATE_OR_DECISION_RULE\": 18, \"HEURISTIC\": 24, \"INVALID_OR_PSEUDO_FUNCTION\": 5357, \"PARAMETRIC_MODEL\": 72, \"RELATION_OR_CONSTRAINT\": 227, \"SCORE_OR_INDEX\": 72, \"STRUCTURAL_METAPHOR\": 4}, \"implicit_named_assets\": 4514, \"math_maturity_counts\": {\"M0\": 5357, \"M1\": 616, \"M3\": 1, \"M4\": 3, \"M6\": 1}, \"queued_for_human_review\": 5966, \"registered_assets\": 622, \"scanner_version\": \"2.0.0\", \"snapshot\": \"function-census-v2-20260729\", \"source_mentions\": 63315, \"source_occurrence_records\": 28770, \"tracked_text_files_scanned\": 3660}\nFUNCTION_ASSET_CENSUS_VALID\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/foundation/adjudicate_function_assets.py",
+        "--check"
+      ],
+      "category": "function_adjudication_closure",
+      "duration_seconds": 2.456,
+      "id": "function_asset_deep_adjudication",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "36a47cd0ab0bf54bfa6cbe90f9a06319236e802b8b74afc9dcd344e3dbc3827f",
+      "stdout_tail": "TURAL_METAPHOR\": 4, \"KEEP_AS_TESTED_INDEX_OR_CLASSIFIER\": 1, \"KEEP_AS_TOY_MODEL\": 2, \"QUARANTINE_UNTIL_DEFINED\": 4746, \"REJECT_AS_INVALID\": 1, \"REWRITE_AND_RETEST\": 1}, \"explicit_quarantine_or_pending\": 4868, \"external_evidence_distribution\": {\"E0\": 5973, \"E1\": 5}, \"identity_distribution\": {\"ALGORITHM_OR_WORKFLOW\": 1184, \"CONJECTURE_OR_RESEARCH_CANDIDATE\": 122, \"GATE_OR_CLASSIFIER\": 18, \"HEURISTIC\": 24, \"INVALID_OR_PSEUDO_FUNCTION\": 1, \"PARAMETRIC_MATHEMATICAL_MODEL\": 72, \"RELATION_OR_CONSTRAINT\": 227, \"SCORING_OR_INDEX_FUNCTION\": 72, \"STRUCTURAL_METAPHOR\": 4, \"UNRESOLVED_IDENTITY\": 4254}, \"mathematical_maturity_distribution\": {\"M0\": 4256, \"M1\": 1321, \"M2\": 396, \"M3\": 1, \"M4\": 3, \"M6\": 1}, \"public_strong_claim_candidates\": 0, \"registry_closed\": true, \"reviewer_state_distribution\": {\"TASK98_HUMAN_ADJUDICATION_RECONFIRMED\": 12, \"TASK99_MACHINE_TRIAGED_EXPLICIT_QUARANTINE\": 4255, \"TASK99_REPOSITORY_EVIDENCE_ADJUDICATED\": 1711}, \"schema_version\": \"2.0.0\", \"semantic_rebound_candidates\": 0, \"source_commit\": \"23f4702a0e9f136cb39f03c4bcd3d85a27084804\", \"task_id\": \"IGNITION-HISTORICAL-FUNCTION-ASSET-DEEP-ADJUDICATION-AND-REGISTRY-CLOSURE-R1-20260729\"}\nFUNCTION_ASSET_DEEP_ADJUDICATION_VALID\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/foundation/adjudicate_nonfunction_claims.py",
+        "--check"
+      ],
+      "category": "nonfunction_canonical_projection",
+      "duration_seconds": 32.672,
+      "id": "nonfunction_claim_projection",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "1ddee0d2c8ef70f695373b024279ac801ba5d94b18984026a4ecfb0f6fd87af9",
+      "stdout_tail": "NONFUNCTION_CLAIM_GENERATION_DETERMINISTIC files=14\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/governance/build_knowledge_experience.py",
+        "--check"
+      ],
+      "category": "knowledge_experience",
+      "duration_seconds": 259.841,
+      "id": "knowledge_experience_projection",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "9be652b156e7e276d7ae374c9fb89602ae4192ec9b7bfcd18424fcd1ceb32096",
+      "stdout_tail": "KNOWLEDGE_EXPERIENCE_OK cards=414 changes=315 layered=332 search=23602\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/governance/validate_knowledge_experience.py"
+      ],
+      "category": "knowledge_experience",
+      "duration_seconds": 261.918,
+      "id": "knowledge_experience_validator",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "28cc2e1f7ee9b5fa055e0ff82424ef0baca688050e9ddc92f9fe25d4ec8e3a11",
+      "stdout_tail": "KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=414 changes=315 layers=332 search=23602 aliases=876 links=25626 two_click_pages=8\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/publication/build_fire_seed_census.py",
+        "--check"
+      ],
+      "category": "fire_seeds",
+      "duration_seconds": 0.149,
+      "id": "fire_seeds_census",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "f70da22cdbfbb0447fc0012d1025470ff6ec77645230720ba55aa563edc8fbc6",
+      "stdout_tail": "FIRE_SEEDS_CENSUS_CHECK_OK seeds=64 sources=393 layered_origins=332\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/publication/validate_fire_seeds.py"
+      ],
+      "category": "fire_seeds",
+      "duration_seconds": 0.068,
+      "id": "fire_seeds_validator",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "172ad5b5aa4751f75b90755716364c027133e35e404419205163ec1b706b78e8",
+      "stdout_tail": "FIRE_SEEDS_VALID entries=64 clusters=64 content_seed_count=40 methodology_seed_count=24 source_count=393 changelog_records=2\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/propagation/agent_platform_blast_radius.py",
+        "--check"
+      ],
+      "category": "blast_radius",
+      "duration_seconds": 0.085,
+      "id": "blast_radius_report",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "0128f28c9f1dc05dcfbd7ceebd87c70377f1bfafeae29d31f181211f6b0c057c",
+      "stdout_tail": "BLAST_RADIUS_OK fixtures=4 status=PASS\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/generate_current_facts.py",
+        "--check"
+      ],
+      "category": "current_surface",
+      "duration_seconds": 0.205,
+      "id": "current_facts",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "bdb39eb43f5414e22b69896b7168a750cce651ac27c9c21f12c7704dbd060454",
+      "stdout_tail": "CURRENT_FACTS_DETERMINISTIC_OK\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/build_current_snapshot.py",
+        "--check"
+      ],
+      "category": "current_surface",
+      "duration_seconds": 0.043,
+      "id": "current_snapshot",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "de1960bc3cf28bfebb35fbdc909a303ee9b8ddb3744d850b4b823664538a731f",
+      "stdout_tail": "CURRENT_SNAPSHOT_DETERMINISTIC_OK\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/current_surface_compiler.py",
+        "--check",
+        "--surface-id",
+        "homepage-identity"
+      ],
+      "category": "current_surface_compiler",
+      "duration_seconds": 0.043,
+      "id": "current_surface_homepage_identity",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "498c7275333243071b5195e97ff3729acc75e7a21bb37ff33f94a0657275765f",
+      "stdout_tail": "CURRENT_SURFACE_OK surface=homepage-identity\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/current_surface_compiler.py",
+        "--check",
+        "--surface-id",
+        "project-current-state"
+      ],
+      "category": "current_surface_compiler",
+      "duration_seconds": 0.042,
+      "id": "current_surface_project_current_state",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "77dcfe208928a8207f4b74a9db177b0a39c740c7db8048ec8eb2cf7c2f0935c6",
+      "stdout_tail": "CURRENT_SURFACE_OK surface=project-current-state\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/current_surface_compiler.py",
+        "--check",
+        "--surface-id",
+        "ai-cold-start"
+      ],
+      "category": "current_surface_compiler",
+      "duration_seconds": 0.042,
+      "id": "current_surface_ai_cold_start",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "33b39521db3289d84b1f57fa968c74c650b581296c2bb5ed155abe41886b1b76",
+      "stdout_tail": "CURRENT_SURFACE_OK surface=ai-cold-start\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/current_surface_compiler.py",
+        "--check",
+        "--surface-id",
+        "ai-agents-handoff"
+      ],
+      "category": "current_surface_compiler",
+      "duration_seconds": 0.043,
+      "id": "current_surface_ai_agents_handoff",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "c725c985491a0a4af8d4514e48052cd9b26ca705ee12623842aec2c333b414a6",
+      "stdout_tail": "CURRENT_SURFACE_OK surface=ai-agents-handoff\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/current_surface_compiler.py",
+        "--check",
+        "--surface-id",
+        "machine-entry"
+      ],
+      "category": "current_surface_compiler",
+      "duration_seconds": 0.042,
+      "id": "current_surface_machine_entry",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "a85b0f8c2c0239e7ded5891a61fe0f945d205215367a2e678f6664329453f76f",
+      "stdout_tail": "CURRENT_SURFACE_OK surface=machine-entry\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/current_surface_compiler.py",
+        "--check",
+        "--surface-id",
+        "architecture"
+      ],
+      "category": "current_surface_compiler",
+      "duration_seconds": 0.042,
+      "id": "current_surface_architecture",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "64a30d40c3ddca3ce58d0e3584785d6d9b49de802f8b214df881264ea305370e",
+      "stdout_tail": "CURRENT_SURFACE_OK surface=architecture\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/current_surface_compiler.py",
+        "--check",
+        "--surface-id",
+        "state-changelog"
+      ],
+      "category": "current_surface_compiler",
+      "duration_seconds": 0.042,
+      "id": "current_surface_state_changelog",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "33e4f6e017ec4d90a162a27a3fae5fd3d63d539799d57eaa3ac55de3416f2881",
+      "stdout_tail": "CURRENT_SURFACE_OK surface=state-changelog\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/validate_current_surface_semantics.py",
+        "--check"
+      ],
+      "category": "current_surface",
+      "duration_seconds": 0.063,
+      "id": "current_surface_semantics",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "5ea888ed97cf634dede2bebe690c0dc87cae0f445ff19902dd19a933e92ce0ad",
+      "stdout_tail": "CURRENT_SURFACE_SEMANTIC_GATE_OK\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/check_current_projection_determinism.py",
+        "--check"
+      ],
+      "category": "current_surface",
+      "duration_seconds": 0.196,
+      "id": "current_surface_determinism",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "316e8457a76d98d2eae227d95d59d691c614cd478565887052903e017342c5da",
+      "stdout_tail": "CURRENT_PROJECTION_DETERMINISM_OK passes=2 outputs=10\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/governance/validate_human_surface_contract.py"
+      ],
+      "category": "human_surface_fingerprint",
+      "duration_seconds": 0.653,
+      "id": "human_surface_contract",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "5dffa3b75a5112e823202def90dbabceec935185aeadd48e3fbf11aa933d3970",
+      "stdout_tail": "HUMAN_SURFACE_CONTRACT_OK human_entries=48 machine_components=96 visible_graph_nodes=84 typed_graph_edges=89\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/validate_agent_platform_human_surface.py"
+      ],
+      "category": "human_surface_fingerprint",
+      "duration_seconds": 0.028,
+      "id": "agent_platform_human_surface",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "820f0abe31df12af1a980ad4f88afec8ad4a071472592e99aadb6a867f5c2672",
+      "stdout_tail": "AGENT_PLATFORM_HUMAN_SURFACE=PASS\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/validate_current_volatile_fact_registry.py"
+      ],
+      "category": "current_surface",
+      "duration_seconds": 0.066,
+      "id": "current_volatile_fact_registry",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "1c4f479dce246c6391ebbd99c7699ef83543ddd4cad70c3b4da041e7da0199a7",
+      "stdout_tail": "CURRENT_VOLATILE_FACT_REGISTRY_OK facts=19 surfaces=7\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/validate_durability_projection_hygiene.py"
+      ],
+      "category": "release_projection",
+      "duration_seconds": 0.374,
+      "id": "durability_projection_hygiene",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "fce0fdba3683a30aa2d642d6241e56a82f0ff11adedff88176590289e3bc3180",
+      "stdout_tail": "TION=375\n  GOVERNED_MACHINE_RECORD=779\n  RECEIPT_HISTORY_OPERATIONS=763\n  REFERENCE_OR_KNOWLEDGE=154\n  REPOSITORY_GOVERNANCE_DOC=22\n  SCHEMA=211\n  TEST_FIXTURE=266\n  TOOL_OR_WORKFLOW=401\ntracked=3436 manifest=3436\nPASS contract:single-current-source\nPASS classification:no-unresolved count=0\nPASS classification:no-duplicate count=0\nPASS manifest:all-tracked-accounted missing=0\nPASS manifest:no-stale-path stale=0\nPASS manifest:category-stable changed=0\nPASS anti-backflow:authoritative-only-from-allowlist violations=0\nPASS anti-backflow:allowlist-not-mislabeled count=0\nPASS anti-backflow:manifest-authoritative-allowlist violations=0\nPASS schema:manifest-rows-valid invalid=0\nCHECKS_TOTAL=10 CHECKS_PASSED=10 CHECKS_FAILED=0\nREPOSITORY_PATH_CLASSIFICATION_VALID\nCURRENT_STATE_SYNC_OK identity_epoch=os-control-plane-r7-live-state-semantics-structured-result-reliability-r1 metrics=16 receipt=ignition/data/operations/iterations/141/current-state-sync-receipt.json impact=ARCHITECTURE_CHANGED\nDURABILITY_PROJECTION_HYGIENE_OK new_paths=5 foundation_knowledge_backflow=0 human_machine_dump=0 fire_seed_backflow=0 historical_residuals=9 sympy_residuals=1 current_facts=PASS path_classification=PASS\n"
+    },
+    {
+      "argv": [
+        "python3.14",
+        "tools/foundation/validate_repository_path_classification.py",
+        "--check"
+      ],
+      "category": "repository_path_manifest",
+      "duration_seconds": 0.075,
+      "id": "repository_path_manifest",
+      "returncode": 0,
+      "status": "PASS",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_tail": "",
+      "stdout_sha256": "4e10a885b9b00b02a86841247bcfbdfb33c444604a579b7c5be4b48f9552e1ff",
+      "stdout_tail": "category_distribution:\n  CANDIDATE_NONAUTHORITATIVE_RECORD=92\n  EDITORIAL_ARTICLE=337\n  EVIDENCE_OR_BENCHMARK=36\n  GENERATED_PROJECTION=375\n  GOVERNED_MACHINE_RECORD=779\n  RECEIPT_HISTORY_OPERATIONS=763\n  REFERENCE_OR_KNOWLEDGE=154\n  REPOSITORY_GOVERNANCE_DOC=22\n  SCHEMA=211\n  TEST_FIXTURE=266\n  TOOL_OR_WORKFLOW=401\ntracked=3436 manifest=3436\nPASS contract:single-current-source\nPASS classification:no-unresolved count=0\nPASS classification:no-duplicate count=0\nPASS manifest:all-tracked-accounted missing=0\nPASS manifest:no-stale-path stale=0\nPASS manifest:category-stable changed=0\nPASS anti-backflow:authoritative-only-from-allowlist violations=0\nPASS anti-backflow:allowlist-not-mislabeled count=0\nPASS anti-backflow:manifest-authoritative-allowlist violations=0\nPASS schema:manifest-rows-valid invalid=0\nCHECKS_TOTAL=10 CHECKS_PASSED=10 CHECKS_FAILED=0\nREPOSITORY_PATH_CLASSIFICATION_VALID\n"
+    }
+  ],
+  "claim_ceiling": "Repository-local deterministic projection cleanliness only; no authority, external truth, production readiness, Owner acceptance or epistemic upgrade.",
+  "clean_tree_gate_pass": true,
+  "contract_id": "GENERATED_OUTPUT_BEFORE_FULL_SUITE_INVARIANT",
+  "execution_policy": {
+    "check_mode_writes": false,
+    "regeneration_is_explicit": true,
+    "runner_root_derived_from": "ignition/tools/run_projection_preflight.py",
+    "subprocess_cwd": "ignition"
+  },
+  "failed_checks": [],
+  "projection_checks_pass": true,
+  "release_admission": true,
+  "require_clean": false,
+  "result": "PASS",
+  "schema_version": "projection-preflight-r1",
+  "side_effect_detected": false,
+  "task_id": "IGNITION-20260826-141",
+  "worktree_after": {
+    "clean": false,
+    "status_sha256": "a4656d1ac5dbeb4aae4ec4a251be46a1a979c03b2d05fa73cdfdff7cc0106a8a",
+    "tracked_content_sha256": "4f318bddf70eb0072e2139fada9c86de028cd4fe7072dbae90575710d12906e0",
+    "tracked_path_count": 3429
+  },
+  "worktree_before": {
+    "clean": false,
+    "status_sha256": "a4656d1ac5dbeb4aae4ec4a251be46a1a979c03b2d05fa73cdfdff7cc0106a8a",
+    "tracked_content_sha256": "4f318bddf70eb0072e2139fada9c86de028cd4fe7072dbae90575710d12906e0",
+    "tracked_path_count": 3429
+  }
+}

@@ -133,6 +133,12 @@ SELF_EXCLUDES = {
     "reports/operations/ignition-140-step16-fresh-clone-publication.md",
     "agent-results/IGNITION-20260826-140-result.md",
     "agent-results/IGNITION-20260826-140-machine-receipt.json",
+    # Task141 Step08 report and the forthcoming Step15/16 receipts are
+    # provenance-only operation artifacts, not claim-source prose.
+    "reports/operations/ignition-141-step08-local-executor-census.md",
+    "reports/operations/ignition-141-step15-targeted-regression.md",
+    "reports/operations/ignition-141-step15-candidate-full-regression.md",
+    "reports/operations/ignition-141-step16-fresh-clone-publication.md",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",

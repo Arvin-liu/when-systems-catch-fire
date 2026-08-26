@@ -1,0 +1,118 @@
+{
+  "schema_version": "ignition-141-step15-candidate-full-regression-r1",
+  "task_id": "IGNITION-20260826-141",
+  "step": "15",
+  "status": "PASS",
+  "candidate_head_sha": "429364bc8f5b9a07652f41303fd7d2106a24aaf5",
+  "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+  "working_directory": "ignition",
+  "natural_window": {
+    "minimum_supported_seconds": 14400,
+    "watchdog_used": false,
+    "arbitrary_timeout_used": false,
+    "process_killed": false,
+    "completed_naturally": true
+  },
+  "environment": {
+    "isolated": true,
+    "python_version": "3.14.6",
+    "dependency_preflight": "PASS",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "execution_python": "temporary isolated foundation venv outside repository"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate_head_sha": "b68e13fafbf91b0ab22fec09f6800175bcbbf5ba",
+      "capture": "<external-temporary-capture>",
+      "runtime_seconds": 2989.918,
+      "elapsed_seconds": 2991.293,
+      "exit_code": 1,
+      "tests_run": 1260,
+      "failures": 2,
+      "errors": 0,
+      "skips": 0,
+      "status": "FAIL_CURRENT_PROJECTION_BINDING_REPAIR_REQUIRED",
+      "failure_clusters": [
+        "full-regression-runner-r1.json still declared Task140 while the runner resolved the current formal task as Task141",
+        "system-map-geometry-quality-r1.json still declared map version 0.14.0 while the current map is 0.15.0"
+      ],
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "stdout_sha256": "d0f1d35419064923c62db5d79d4414ba1f54dc7d32b3e446bf7de3e281859d3f",
+      "stderr_sha256": "7a67106b8b2053dbc0e7fdc610f6a9c2936a1da9dc8cd3872459ea85a771c807"
+    },
+    {
+      "attempt": 2,
+      "candidate_head_sha": "429364bc8f5b9a07652f41303fd7d2106a24aaf5",
+      "capture": "<external-temporary-capture>",
+      "runtime_seconds": 2983.884,
+      "elapsed_seconds": 2984.92,
+      "exit_code": 0,
+      "tests_run": 1260,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "status": "PASS",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "stdout_sha256": "a6af0ac70af23dde353adc3f2697b47ff4ec043928b49317616e1f33c569b440",
+      "stderr_sha256": "2dbadd649ddfa4117a67c00648a8aac85460828bbf1eadb0fabd2aea73f75cf6"
+    }
+  ],
+  "repair": {
+    "cause": "The candidate full regression exposed two stale current-task/current-map bindings introduced while advancing the formal architecture to Task141.",
+    "actions": [
+      "bound full-regression-runner-r1.json to IGNITION-20260826-141",
+      "advanced validate_human_front_door.py map-version bindings to current 0.15.0, historical 0.14.0 and earlier historical 0.13.0",
+      "regenerated system-map-geometry-quality-r1.json and verified its deterministic geometry closure"
+    ],
+    "focused_validation": "16 tests / 0 failures / 0 errors / 0 skips across full-regression runner, system-map geometry and human front door checks"
+  },
+  "projection_preflight": {
+    "status": "PASS",
+    "receipt": "ignition/data/operations/iterations/141/step15-projection-preflight.json",
+    "check_count": 25,
+    "failed_checks": [],
+    "projection_checks_pass": true,
+    "release_admission": true,
+    "side_effect_detected": false,
+    "candidate_tree_clean": true,
+    "formal_tree_clean_at_receipt": false,
+    "function_assets": 5978,
+    "nonfunction_claims": 17292,
+    "knowledge_cards": 414,
+    "knowledge_changes": 315,
+    "knowledge_layered_readings": 332,
+    "knowledge_search_records": 23602,
+    "fire_seeds": 64,
+    "fire_seed_sources": 393,
+    "current_surface_outputs": 15,
+    "deterministic_current_surface": "PASS"
+  },
+  "live_boundary": {
+    "new_live_invocations": 0,
+    "validated_completion_count": 0,
+    "attempt_count": 6,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "obligation": "OPEN",
+    "retry": "NOT_AUTHORIZED",
+    "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION"
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "next_step": "16",
+  "claim_ceiling": "Exact repository-local candidate natural offline full-suite evidence for tested head 429364bc8f5b9a07652f41303fd7d2106a24aaf5, including the preserved prior failure and explicit repair; no fresh-clone, formal-main publication, validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
