@@ -6,7 +6,7 @@
   "properties": {
     "schema_version": {"const": "projection-preflight-r1"},
     "contract_id": {"const": "GENERATED_OUTPUT_BEFORE_FULL_SUITE_INVARIANT"},
-    "task_id": {"const": "IGNITION-20260822-135"},
+    "task_id": {"const": "IGNITION-20260827-143"},
     "application_root": {"const": "ignition"},
     "execution_cwd": {"const": "ignition"},
     "mode": {"const": "READ_ONLY_CHECKS"},
