@@ -77,11 +77,11 @@
   "contract_id": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT",
   "current_method_version": "1.4.0",
   "current_task": {
-    "execution_status": "IN_PROGRESS",
+    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
     "identity_impact": "PRESENTATION_ONLY",
     "scope": "Formal task IGNITION-20260827-143 Current advancement",
     "task_id": "IGNITION-20260827-143",
-    "terminal": false
+    "terminal": true
   },
   "engineering_status": {
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
@@ -90,14 +90,19 @@
   "formal_task_lifecycle": {
     "authority": "FORMAL_TASK_LIFECYCLE",
     "current_task_id": "IGNITION-20260827-143",
-    "current_task_status": "IN_PROGRESS",
-    "current_task_terminal": false,
+    "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "current_task_terminal": true,
     "open_obligation_ids": [
       "LIVE_EXTERNAL_INVOCATION"
     ],
-    "scope_complete": false,
+    "scope_complete": true,
     "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json",
     "terminal_task_history": [
+      {
+        "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+        "task_id": "IGNITION-20260827-143",
+        "terminal": true
+      },
       {
         "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
         "task_id": "IGNITION-20260827-142",
@@ -110,7 +115,7 @@
       }
     ]
   },
-  "generated_from_source_digest": "417b84aeaa6fc32df90320907fd4833f34f95221fe6f9a6808e54068026c186b",
+  "generated_from_source_digest": "f56d14acaa19d32c7a4f8ccea06c35af121c808a9281877fed9caf0c8b1c0935",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
@@ -172,7 +177,7 @@
     "source_path": "ignition/data/operations/open-obligation-registry-r1.json"
   },
   "release_lifecycle": {
-    "content_phase": "RUNNING",
+    "content_phase": "RELEASE_READY",
     "embedded_publication_assertion": "NONE",
     "post_publication_check_required": true,
     "publication_authority": "REMOTE_REF_OBSERVATION",
@@ -196,7 +201,7 @@
   "task_lineage": {
     "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
     "current_task_id": "IGNITION-20260827-143",
-    "current_task_status": "IN_PROGRESS",
+    "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
     "predecessor_requirement_lineage": "REBASED_INTO_127",
     "predecessor_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
     "successor_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"

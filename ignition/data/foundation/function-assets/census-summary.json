@@ -3,7 +3,7 @@
   "authority_boundary": "AUTO_CANDIDATE records never override human adjudication; corrections.jsonl is the task 98 authority overlay.",
   "deduplicated_assets": 6029,
   "dependency_edges": 1923,
-  "duplicate_mentions": 57377,
+  "duplicate_mentions": 57381,
   "explicit_undefined_ids": 842,
   "external_evidence_counts": {
     "E0": 6024,
@@ -115,7 +115,7 @@
   "registered_assets": 622,
   "scanner_version": "2.0.0",
   "snapshot": "function-census-v2-20260729",
-  "source_mentions": 63406,
-  "source_occurrence_records": 28845,
-  "tracked_text_files_scanned": 3752
+  "source_mentions": 63410,
+  "source_occurrence_records": 28849,
+  "tracked_text_files_scanned": 3756
 }

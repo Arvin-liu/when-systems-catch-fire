@@ -18927,6 +18927,7 @@
 {"first_line":15,"last_line":71,"mention_count":10,"path":"统一案例总表/0153-C-153-沃尔顿1小时归属感练习.md","role":"REFERENCE","stable_id":"D60"}
 {"first_line":15,"last_line":71,"mention_count":10,"path":"统一案例总表/0154-C-154-沃尔顿21分钟拯救婚姻.md","role":"REFERENCE","stable_id":"D60"}
 {"first_line":160,"last_line":161,"mention_count":2,"path":"统一案例总表/INDEX.md","role":"REFERENCE","stable_id":"D60"}
+{"first_line":21,"last_line":21,"mention_count":1,"path":"agent-results/IGNITION-20260827-143-result.md","role":"REFERENCE","stable_id":"D600"}
 {"first_line":466,"last_line":466,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"D600"}
 {"first_line":69,"last_line":105,"mention_count":2,"path":"analysis/corpus-relation/cluster_source_briefs/C002.md","role":"REFERENCE","stable_id":"D600"}
 {"first_line":51,"last_line":51,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C004.md","role":"REFERENCE","stable_id":"D600"}
@@ -18980,6 +18981,7 @@
 {"first_line":18,"last_line":18,"mention_count":1,"path":"reports/operations/ignition-143-step11-cross-publication-editorial-review.md","role":"REFERENCE","stable_id":"D600"}
 {"first_line":12,"last_line":15,"mention_count":2,"path":"reports/operations/ignition-143-step15-cross-publication-coherence.md","role":"REFERENCE","stable_id":"D600"}
 {"first_line":22,"last_line":22,"mention_count":1,"path":"reports/operations/ignition-143-step16-canonical-publication-integration.md","role":"REFERENCE","stable_id":"D600"}
+{"first_line":20,"last_line":20,"mention_count":1,"path":"reports/operations/ignition-143-step19-terminality.md","role":"REFERENCE","stable_id":"D600"}
 {"first_line":618,"last_line":618,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D600"}
 {"first_line":34,"last_line":34,"mention_count":1,"path":"统一函数总表/0605-D595-绩效绑定裹挟.md","role":"REFERENCE","stable_id":"D600"}
 {"first_line":4,"last_line":72,"mention_count":6,"path":"统一函数总表/0610-D600-资源托举退化为路径控制.md","role":"DEFINITION","stable_id":"D600"}
@@ -25544,6 +25546,7 @@
 {"first_line":103,"last_line":103,"mention_count":1,"path":"data/operations/iterations/110/openalex/population-manifest.jsonl","role":"REFERENCE","stable_id":"M29"}
 {"first_line":103,"last_line":103,"mention_count":1,"path":"evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/source-manifest.jsonl","role":"REFERENCE","stable_id":"M29"}
 {"first_line":103,"last_line":103,"mention_count":1,"path":"evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/source-manifest.jsonl","role":"REFERENCE","stable_id":"M29"}
+{"first_line":21,"last_line":21,"mention_count":1,"path":"agent-results/IGNITION-20260827-143-result.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":55,"last_line":55,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":3504,"last_line":3504,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"M3"}
 {"first_line":36,"last_line":36,"mention_count":1,"path":"data/collisions/20260711-disobedience-subjectivity.json","role":"REFERENCE","stable_id":"M3"}
@@ -25581,6 +25584,7 @@
 {"first_line":14,"last_line":28,"mention_count":3,"path":"outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":12,"last_line":15,"mention_count":2,"path":"reports/operations/ignition-143-step15-cross-publication-coherence.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":22,"last_line":22,"mention_count":1,"path":"reports/operations/ignition-143-step16-canonical-publication-integration.md","role":"REFERENCE","stable_id":"M3"}
+{"first_line":20,"last_line":20,"mention_count":1,"path":"reports/operations/ignition-143-step19-terminality.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0302-D266-容斥偏差加速函数.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":14,"last_line":55,"mention_count":4,"path":"统一函数总表/0318-D282-Φ二阶近似函数.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0332-D296-Φ近似阶数选择函数.md","role":"REFERENCE","stable_id":"M3"}

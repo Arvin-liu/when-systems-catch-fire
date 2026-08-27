@@ -1319,6 +1319,11 @@
   - 可搜索名称：Agent 碰撞阶段收口审计（2026-07-08 23:55） / agent-collision-phase-closeout-20260708
   - 来源：`outputs/audit/agent-collision-phase-closeout-20260708.md`
   - 依赖：—；被引用：—
+- [agent-results/IGNITION-20260827-143-result.md](../../../agent-results/IGNITION-20260827-143-result.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M3 / agent-results/IGNITION-20260827-143-result.md / M3
+  - 来源：`agent-results/IGNITION-20260827-143-result.md`
+  - 依赖：—；被引用：—
 - [Agent/Codex 在**正式入表前**，必须把得到大脑的输出**转换成统一模板结构**（含 frontmatter：kind/seq/id/title/source/source_line/link）。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1b650effa2d90ed8 / Agent/Codex 在**正式入表前**，必须把得到大脑的输出**转换成统一模板结构**（含 frontmatter：kind/seq/id/title/source/source_line/link）。
@@ -2084,6 +2089,11 @@
   - 可搜索名称：NFC-85ec25b63965ea13 / evidence = extract_synthetic_result\(case.get\("events", \[\]\)\)
   - 来源：`agent_federation/executor_conformance.py`
   - 依赖：—；被引用：—
+- [evidence in the Step18 machine receipt rather than being deleted or relabelled.](../../../agent-results/IGNITION-20260827-143-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c7c92915f7fa89e7 / evidence in the Step18 machine receipt rather than being deleted or relabelled.
+  - 来源：`agent-results/IGNITION-20260827-143-result.md`
+  - 依赖：—；被引用：—
 - [Evidence summary](../../../agent-results/IGNITION-20260820-127-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-a333649f796edf2c / Evidence summary
@@ -2379,6 +2389,11 @@
   - 可搜索名称：NFC-e7c96703f6df9ce8 / Historical compatibility audit passes for seven Task123–130 receipts; old boundary values remain captured historical evi
   - 来源：`agent-results/IGNITION-20260822-133-result.md`
   - 依赖：—；被引用：—
+- [historical six attempts, zero validated completions, zero unreconciled records](../../../agent-results/IGNITION-20260827-143-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3c59a9aeec46006e / historical six attempts, zero validated completions, zero unreconciled records
+  - 来源：`agent-results/IGNITION-20260827-143-result.md`
+  - 依赖：—；被引用：—
 - [HOME and temporary files point at the disposable workspace, never at](../../../agent_federation/live_child_guard.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a2ae195adc771e7c / HOME and temporary files point at the disposable workspace, never at
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-58f2f92d1af9fe44 / if not isinstance\(matrix, list\) or {row.get\("executor_id"\) for row in matrix if isinstance\(row, Mapping\)} != {"reference
   - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [if not isinstance\(projection, MemoryProjection\):](../../../agent_federation/convergence.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bb36f88424491003 / if not isinstance\(projection, MemoryProjection\):
-  - 来源：`agent_federation/convergence.py`
-  - 依赖：—；被引用：—
-- [if not isinstance\(raw_artifacts, \(list, tuple\)\):](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0e09b996a117f9f0 / if not isinstance\(raw_artifacts, \(list, tuple\)\):
-  - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [if not isinstance\(self.artifact_refs, \(list, tuple\)\) or any\(not isinstance\(item, ArtifactRef\) for item in self.artifact_](../../../agent_federation/contracts.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-53be464e7c6333d6 / if not isinstance\(self.artifact_refs, \(list, tuple\)\) or any\(not isinstance\(item, ArtifactRef\) for item in self.artifact_
-  - 来源：`agent_federation/contracts.py`
   - 依赖：—；被引用：—

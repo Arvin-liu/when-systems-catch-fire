@@ -1,0 +1,59 @@
+{
+  "schema_version": "ignition-agent-result-machine-receipt-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "19",
+  "status": "TERMINAL_WITH_OPEN_OBLIGATION_PUBLICATION_PENDING",
+  "formal_task": {
+    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "terminal": true,
+    "scope_complete": true,
+    "identity_impact": "PRESENTATION_ONLY",
+    "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"]
+  },
+  "task_binding": {
+    "formal_result_task_id": "IGNITION-20260827-143",
+    "canonical_current_formal_task_id": "IGNITION-20260827-143",
+    "lifecycle_task_id": "IGNITION-20260827-143",
+    "release_candidate_task_id": "IGNITION-20260827-143",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "current_formal_task_ordinal": 143,
+    "latest_architecture_task_ordinal": 142,
+    "current_iteration_boundary": 143,
+    "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+    "exact_match": true
+  },
+  "publication_production": {
+    "canonical_entrypoint": "ignition/PUBLICATIONS/pointfire-results-book/README.md",
+    "complete_article_count": 3,
+    "book_project_r1": true,
+    "polished_sample_count": 2,
+    "registered_in_existing_publication_system": true
+  },
+  "step18_natural_regression": {
+    "tested_candidate_sha": "0a25989dd895af6326447e1a8741df1db5101211",
+    "tests_run": 1272,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "completed_naturally": true,
+    "clean_before_after": true,
+    "historical_attempts_preserved": 4
+  },
+  "live_boundary": {
+    "new_live_invocations": 0,
+    "historical_attempt_count": 6,
+    "validated_completion_count": 0,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "obligation": "OPEN",
+    "operational_state": "OWNER_DEFERRED",
+    "retry": "NOT_AUTHORIZED"
+  },
+  "publication_boundary": {
+    "required_ref": "refs/heads/main",
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "formal_repository_self_sha": false,
+    "publication_status": "PENDING_SEPARATE_REMOTE_AND_1111_OBSERVATION"
+  },
+  "claim_ceiling": "Repository-local terminality, publication-production and release-ready candidate evidence only; formal main publication, external truth, production readiness, Owner acceptance, validated live completion and epistemic acceptance remain separate or unclaimed."
+}

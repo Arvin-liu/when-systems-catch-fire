@@ -13,17 +13,20 @@
   "tasks": [
     {
       "task_id": "IGNITION-20260827-143",
-      "execution_status": "IN_PROGRESS",
-      "terminal": false,
-      "scope_complete": false,
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
       "identity_impact": "PRESENTATION_ONLY",
-      "terminal_basis": "Task143 is active on publication production after the architecture/executor qualification phase was closed and Owner-deferred; its formal scope is not terminal until the required manuscripts, book project, current-state sync and publication gates are complete.",
+      "terminal_basis": "Task143 Steps 00-19 complete the phase parking, publication production, canonical integration, Current sync, natural regression and terminal release scope. LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
       "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
       "evidence_refs": [
         "ignition/data/operations/iterations/143/execution-contract-r1.json",
         "ignition/data/operations/iterations/143/step00-baseline-audit.json",
         "ignition/data/operations/iterations/143/phase-closure-state-r1.json",
-        "ignition/data/operations/iterations/143/step01-phase-closure.json"
+        "ignition/data/operations/iterations/143/step01-phase-closure.json",
+        "ignition/data/operations/iterations/143/step18-full-regression.json",
+        "ignition/data/operations/iterations/143/step19-terminality.json",
+        "ignition/agent-results/IGNITION-20260827-143-result.md"
       ],
       "claim_ceiling": "Task143 active publication-production and phase-parking scope only; the deferred live obligation remains open and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
     },

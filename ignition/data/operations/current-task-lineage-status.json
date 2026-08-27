@@ -4,8 +4,8 @@
   "current_task": {
     "task_id": "IGNITION-20260827-143",
     "scope": "Formal task IGNITION-20260827-143 Current advancement",
-    "execution_status": "IN_PROGRESS",
-    "terminal": false,
+    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "terminal": true,
     "identity_impact": "PRESENTATION_ONLY"
   },
   "current_state": {

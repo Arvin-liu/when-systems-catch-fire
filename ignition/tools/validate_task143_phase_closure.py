@@ -100,12 +100,12 @@ def validate() -> list[str]:
         errors.append("historical live-attempt counts changed unexpectedly")
     if census.get("candidates") is None or len(census["candidates"]) != 14:
         errors.append("historical executor census is not preserved")
-    if lineage.get("current_task", {}).get("task_id") != "IGNITION-20260827-143" or lineage.get("current_task", {}).get("execution_status") != "IN_PROGRESS":
-        errors.append("current lineage is not the active Task143 publication task")
+    if lineage.get("current_task", {}).get("task_id") != "IGNITION-20260827-143" or lineage.get("current_task", {}).get("execution_status") != "COMPLETED_WITH_OPEN_OBLIGATIONS" or lineage.get("current_task", {}).get("terminal") is not True:
+        errors.append("current lineage is not the terminal Task143 publication task")
     if lineage.get("task_identity", {}).get("latest_architecture_changing_task") != "IGNITION-20260827-142":
         errors.append("Task143 incorrectly changes the latest architecture identity")
-    if release.get("task_id") != "IGNITION-20260827-143" or release.get("content_phase") != "RUNNING" or release.get("current_task_terminal") is not False:
-        errors.append("release lifecycle is not active for Task143")
+    if release.get("task_id") != "IGNITION-20260827-143" or release.get("content_phase") != "RELEASE_READY" or release.get("current_task_terminal") is not True:
+        errors.append("release lifecycle is not release-ready and terminal for Task143")
     if contract.get("identity_impact") != "PRESENTATION_ONLY":
         errors.append("Task143 phase closure must remain presentation-only")
     task143 = step.get("task143_live_boundary", {})
