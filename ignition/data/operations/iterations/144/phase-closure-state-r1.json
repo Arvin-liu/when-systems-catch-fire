@@ -7,8 +7,9 @@
     "sha": "75c06887f59fa94868101707acc4b8386f41fe13"
   },
   "engineering_scope": {
-    "phase": "CLOSING",
+    "phase": "CLOSED",
     "target_terminal_phase": "CLOSED",
+    "engineering_phase_closed_current_scope": true,
     "architecture_phase": "CLOSED",
     "architecture_mode": "FROZEN_TASK142_BASELINE",
     "latest_architecture_task": "IGNITION-20260827-142",

@@ -574,3 +574,17 @@
 - next_read: read the Task144 execution contract, phase-closure state, Owner authority contract, Results Book entrypoint and the later Step15–19 receipts; do not infer formal publication from this append-only projection.
 - safety: no provider, executor, channel, browser, remote-Git, configuration, billing, installation, authentication or external side effect is authorized by this presentation-only closure transition.
 - claim_ceiling: repository-local engineering closure and Owner production-handoff evidence only; no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred.
+
+## 2026-08-28 — IGNITION-20260828-144 — engineering phase closed, production awaits Owner brief
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task143 baseline `75c06887f59fa94868101707acc4b8386f41fe13` until Task144's separate ordinary fast-forward and remote-ref observation; this append-only entry is not a publication claim.
+- delta: Task144 Step15 closes the current repository-local engineering scope on the frozen Task142 architecture baseline. Current, AI handoff, Results Book and registry boundaries now state that the engineering phase is closed and production is waiting for an Owner brief.
+- authority_changes: the phase-closure state records `ENGINEERING_PHASE_CLOSED_CURRENT_SCOPE=true`; Owner remains the authority for article selection, book initiation, production direction and publication acceptance. No provider, executor, channel, browser, remote-Git, configuration, billing, production, truth or epistemic authority is added.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Smoke-test outputs, closure gates and regression evidence do not establish external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance.
+- obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero validated completions, zero unreconciled records and two observation-incomplete records. Task144 adds no live invocation and does not reopen the obligation; formal production waits for `AWAIT_OWNER_PRODUCTION_BRIEF`.
+- task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task142 and Task143 remain terminal `COMPLETED_WITH_OPEN_OBLIGATIONS` historical records.
+- stale_knowledge: Task143 smoke outputs remain preserved but non-accepted; the older “engineering phase closing” wording is superseded by this current-scope closure entry, while historical executor qualification records and earlier regression failures remain unchanged.
+- next_read: read the Task144 phase-closure state, Owner production-brief contract, Step15 gate and later exact candidate/fresh-clone/publication receipts; do not infer formal main publication from this append-only entry.
+- automation_boundary: Task144 must stop after its formal publication and independent witness; no automatic Task145 creation or start is permitted, and the next production action is `AWAIT_OWNER_PRODUCTION_BRIEF`.
+- base_main_tip: `75c06887f59fa94868101707acc4b8386f41fe13`.
+- claim_ceiling: repository-local engineering phase closure and Owner production-handoff evidence only; no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred.

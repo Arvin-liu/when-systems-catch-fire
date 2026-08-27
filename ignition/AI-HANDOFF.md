@@ -26,7 +26,7 @@ capability、permission、truth、Owner 或 epistemic status。
 
 Task143 的文章、Book Project 与样章仅是 capability smoke-test outputs，状态为
 `SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`；它们不等于
-Owner 选题、书籍立项或出版接受。当前工程阶段正在收口而不是继续扩展 executor qualification：
+Owner 选题、书籍立项或出版接受。当前工程范围已关闭，不再继续扩展 executor qualification：
 架构身份和 live-observation 历史保持冻结，外部 Agent 线为 `OWNER_DEFERRED`，
 `LIVE_EXTERNAL_INVOCATION` 仍 OPEN，禁止新的 live attempt、安装、配置或认证动作。未来正式
 生产必须以 Owner 明示的 production brief 为起点；系统只能按 brief 解析、研究、起草和编辑，

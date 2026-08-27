@@ -6,7 +6,7 @@ Current iteration method and Current system map are emitted by the generated Cur
 
 ## Task 144 engineering closure and production handoff
 
-The current engineering phase is closing on the frozen architecture baseline. Do not resume architecture optimization or external-executor qualification, do not install or configure an executor, and do not start a Gemini, Hermes, OpenClaw, Codex or other live attempt. Task143's articles, Book Project and samples are capability smoke-test outputs with `OWNER_REVIEW_PENDING` and `PUBLICATION_ACCEPTANCE_NOT_GRANTED`; they are not Owner-selected production.
+The current engineering phase is closed for the current scope on the frozen architecture baseline. Do not resume architecture optimization or external-executor qualification, do not install or configure an executor, and do not start a Gemini, Hermes, OpenClaw, Codex or other live attempt. Task143's articles, Book Project and samples are capability smoke-test outputs with `OWNER_REVIEW_PENDING` and `PUBLICATION_ACCEPTANCE_NOT_GRANTED`; they are not Owner-selected production.
 
 Formal production begins only from an Owner-selected production brief. An Agent may parse the Owner's words, research, draft and edit within that brief, but it may not choose an article topic, initiate a book project or accept publication. If the Owner explicitly reopens engineering and prepares/attests the local environment, read the Task144 resume capsule; otherwise keep the deferred obligation parked and do not create a new engineering task or new body text.
 

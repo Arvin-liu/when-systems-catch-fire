@@ -18,11 +18,11 @@
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
-当前工程阶段正在按既定范围收口：架构身份保持冻结，外部 Agent qualification 保持
+当前工程阶段已按既定范围关闭：架构身份保持冻结，外部 Agent qualification 保持
 `OWNER_DEFERRED`，不再自动恢复工程优化或 live 工作。既有成果册中的文章、Book Project
 和样章保留为 capability smoke-test outputs，等待 Owner review；正式文章/书籍生产必须从
 Owner production brief 开始。当前收口只处理 Current、入口、registry 与发布门禁的一致性，
-不新增 Agent 能力，也不把仓库内生产证据解释成 Owner acceptance、外部出版或认识论接受。
+已完成且不新增 Agent 能力，也不把仓库内生产证据解释成 Owner acceptance、外部出版或认识论接受。
 
 ## 当前形态
 

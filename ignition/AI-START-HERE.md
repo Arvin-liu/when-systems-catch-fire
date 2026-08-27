@@ -21,7 +21,7 @@ Steering / Intent / Goal / Obligation R1 记录 Owner/提议来源、Goal 生命
 
 Task143 的文章、Book Project 与样章是 capability smoke-test outputs，状态为
 `SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`，不代表
-Owner 已选题、已立项或已接受出版。当前工程阶段正在收口：架构身份保持冻结，外部 Agent
+Owner 已选题、已立项或已接受出版。当前工程阶段已按当前范围关闭：架构身份保持冻结，外部 Agent
 qualification 与 `LIVE_EXTERNAL_INVOCATION` 保持 `OWNER_DEFERRED / OPEN`，不得自动恢复、
 安装、改配置或启动 live process。未来正式生产必须从 Owner 明示的 production brief 开始；
 系统可以解析 Owner 的一句自然语言，但不能替 Owner 选题、立书或接受出版。只有 Owner 显式
