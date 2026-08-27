@@ -19,14 +19,14 @@ Steering / Intent / Goal / Obligation R1 记录 Owner/提议来源、Goal 生命
 
 任务身份分成两个稳定角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，publication witness 只观察发布身份，不授予 architecture 或 Owner authority。
 
-Task143 是 Task142 之后的 presentation-only 阶段收口与出版生产任务，不是新的
-architecture-changing task：Task142 的架构身份和 `0.16.0` 地图冻结为 resume baseline；
-外部 Agent qualification 已按 Owner 决定进入 `OWNER_DEFERRED`。`LIVE_EXTERNAL_INVOCATION`
-仍开放，历史六次 attempt、零 validated completion、零 unreconciled 和两次
-observation-incomplete 保持可回链；Task143 没有启动 live process 或 inference。未来只有在
-Owner 明确重新开启、且本机环境先完成准备/安装/attestation 后，才可重新建立 qualification
-边界。当前工作模式是直接生产人类可读的文章、Book Project 与书稿样章，不把出版完成写成
-`COMPLETED_VALIDATED`、Goal completion 或外部真值。
+Task143 的文章、Book Project 与样章是 capability smoke-test outputs，状态为
+`SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`，不代表
+Owner 已选题、已立项或已接受出版。当前工程阶段正在收口：架构身份保持冻结，外部 Agent
+qualification 与 `LIVE_EXTERNAL_INVOCATION` 保持 `OWNER_DEFERRED / OPEN`，不得自动恢复、
+安装、改配置或启动 live process。未来正式生产必须从 Owner 明示的 production brief 开始；
+系统可以解析 Owner 的一句自然语言，但不能替 Owner 选题、立书或接受出版。只有 Owner 显式
+重开工程并完成本机环境准备/安装/attestation 后，才可读取 resume capsule；没有新的 Owner
+brief 或新证据时，不得创建下一轮工程任务，也不得自动生成下一篇文章或下一本书。
 
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。

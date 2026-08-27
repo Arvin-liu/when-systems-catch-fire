@@ -24,12 +24,14 @@ capability、permission、truth、Owner 或 epistemic status。
 
 交接时分开读取两个任务角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，publication witness 只绑定发布观察，不把 release task 变成 architecture authority。
 
-Task143 继续的是阶段收口后的出版生产，而不是 executor qualification：Task142 的架构身份、
-`0.16.0` 地图和 live-observation 历史保持冻结；外部 Agent 线按 Owner 决定为
-`OWNER_DEFERRED`。`LIVE_EXTERNAL_INVOCATION` 仍 OPEN，六次历史 attempt、零 validated
-completion、零 unreconciled 和两次 observation-incomplete 都保留，Task143 没有启动 live
-process 或 inference。后续恢复必须先有 Owner 明确 reopen，再完成本机环境的准备、安装和
-attestation；当前 Agent 只应推进文章、书稿和既有出版入口。
+Task143 的文章、Book Project 与样章仅是 capability smoke-test outputs，状态为
+`SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`；它们不等于
+Owner 选题、书籍立项或出版接受。当前工程阶段正在收口而不是继续扩展 executor qualification：
+架构身份和 live-observation 历史保持冻结，外部 Agent 线为 `OWNER_DEFERRED`，
+`LIVE_EXTERNAL_INVOCATION` 仍 OPEN，禁止新的 live attempt、安装、配置或认证动作。未来正式
+生产必须以 Owner 明示的 production brief 为起点；系统只能按 brief 解析、研究、起草和编辑，
+不能自行选择题目、启动 Book Project 或接受出版。若 Owner 显式重开工程，先完成本机环境准备、
+安装和 attestation，再读取 resume capsule；否则保持等待，不创建下一轮工程任务或新正文。
 
 ### R2 工程脊柱
 

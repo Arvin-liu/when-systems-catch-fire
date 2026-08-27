@@ -2,7 +2,13 @@
 
 Read `ignition/AI-START-HERE.md`, `ignition/STATE-CHANGELOG.md` (baseline and recent deltas), `ignition/AI-HANDOFF.md`, `ignition/llms.txt`, `ignition/ITERATION.md` and the active task command before state-changing work. The state delta log is a high-priority recovery surface: current main merges must append one short delta in the same iteration.
 
-Current iteration method is `1.4.0` and Current system map is `0.8.0`. Method `1.3.0` and map `0.7.0` are Historical; maps `0.6.0`/`0.5.0`/`0.4.0`/`0.3.0`/`0.2.0`/`0.1.0` are earlier Historical.
+Current iteration method and Current system map are emitted by the generated Current Snapshot and canonical identity contract; do not copy volatile values from this operating-boundary file. Historical method/map values remain historical only.
+
+## Task 144 engineering closure and production handoff
+
+The current engineering phase is closing on the frozen architecture baseline. Do not resume architecture optimization or external-executor qualification, do not install or configure an executor, and do not start a Gemini, Hermes, OpenClaw, Codex or other live attempt. Task143's articles, Book Project and samples are capability smoke-test outputs with `OWNER_REVIEW_PENDING` and `PUBLICATION_ACCEPTANCE_NOT_GRANTED`; they are not Owner-selected production.
+
+Formal production begins only from an Owner-selected production brief. An Agent may parse the Owner's words, research, draft and edit within that brief, but it may not choose an article topic, initiate a book project or accept publication. If the Owner explicitly reopens engineering and prepares/attests the local environment, read the Task144 resume capsule; otherwise keep the deferred obligation parked and do not create a new engineering task or new body text.
 
 ## Task 121 Agent Platform R2 cold start
 

@@ -1,0 +1,34 @@
+{
+  "schema_version": "ignition-144-step07-ai-cold-start-handoff-r1",
+  "task_id": "IGNITION-20260828-144",
+  "result": "PASS",
+  "handoff_rules": {
+    "engineering_phase": "CLOSING",
+    "architecture_baseline": "FROZEN_TASK142_BASELINE",
+    "external_executor_qualification": "OWNER_DEFERRED",
+    "live_attempts_authorized": 0,
+    "task143_outputs": "SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED",
+    "production_entry": "OWNER_SELECTED_PRODUCTION_BRIEF",
+    "automatic_topic_selection": false,
+    "automatic_book_initiation": false,
+    "automatic_publication_acceptance": false,
+    "automatic_next_engineering_task": false
+  },
+  "surfaces_checked": [
+    "ignition/AI-START-HERE.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/llms.txt",
+    "AGENTS.md",
+    "ignition/data/operations/current-snapshot-r1.json",
+    "ignition/data/operations/iterations/144/resume-capsule-r1.json"
+  ],
+  "checks": {
+    "current_snapshot_compiler": "PASS",
+    "ai_current_blocks_ref_derived": "PASS",
+    "owner_brief_required_for_production": "PASS",
+    "task143_non_acceptance_boundary": "PASS",
+    "deferred_executor_no_auto_resume": "PASS",
+    "no_task145_instruction": "PASS"
+  },
+  "claim_ceiling": "Repository-local AI cold-start and handoff routing evidence only; it does not grant Owner authority, production readiness, publication acceptance, external truth or epistemic acceptance."
+}
