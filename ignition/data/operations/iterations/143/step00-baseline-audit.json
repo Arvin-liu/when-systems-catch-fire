@@ -1,0 +1,101 @@
+{
+  "schema_version": "ignition-143-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "00",
+  "status": "PASS",
+  "control_baseline": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "sha": "8baea4d57528dbb551e71c22af1f0548dac7c295",
+    "task_definition_path": "agent-commands/IGNITION-20260827-143-executor-qualification-campaign-first-validated-completion-r1.md",
+    "task_definition_commit": "f141968365231c6e39c8c98d0d78691c73e3512f",
+    "receipt_branch_for_predecessor": "relay/receipts/ignition-142-task-lifecycle-admission-first-validated-completion-r1-20260827",
+    "predecessor_receipt_sha": "034b5938121f291ae11d22a6ce6e1d8ee3ec62ef"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "expected_main_sha": "b359580fe31866bc04eeb24911011e0baba9b66d",
+    "local_task_branch_sha": "b359580fe31866bc04eeb24911011e0baba9b66d",
+    "origin_main_sha": "b359580fe31866bc04eeb24911011e0baba9b66d",
+    "remote_main_sha": "b359580fe31866bc04eeb24911011e0baba9b66d",
+    "fresh_clone_path": "/private/tmp/ignition-143-step00-exact.OeP4PR",
+    "fresh_clone_branch": "codex/ignition-142-task-lifecycle-admission-r1-20260827",
+    "fresh_clone_sha": "b359580fe31866bc04eeb24911011e0baba9b66d",
+    "fresh_clone_clean": true,
+    "supplied_rollout_directory_is_git": false,
+    "all_baseline_sha_values_equal": true
+  },
+  "predecessor_lifecycle": {
+    "formal_task_id": "IGNITION-20260827-142",
+    "formal_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "formal_task_terminal": true,
+    "scope_complete": true,
+    "previous_task_id": "IGNITION-20260826-141",
+    "previous_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "previous_task_terminal": true,
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0
+  },
+  "open_obligation": {
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "kind": "LIVE_READONLY_VALIDATED_COMPLETION",
+    "status": "OPEN",
+    "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+    "blocker": "NO_EXACT_BOUND_VALIDATED_COMPLETION; TASK142_NO_SAFE_LIVE_FAMILY",
+    "inherited_by_task": "IGNITION-20260827-142",
+    "terminal_condition": "FIRST_EXACT_BOUND_LIVE_READONLY_VALIDATED_COMPLETION"
+  },
+  "live_history": {
+    "total_attempts": 6,
+    "validated_completion_count": 0,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "current_live_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION",
+    "dispatch_observation_status": "OBSERVED",
+    "process_observation_status": "OBSERVED",
+    "inference_observation_status": "NOT_OBSERVED",
+    "validated_completion_status": "NOT_VALIDATED",
+    "reconciliation_blocker_status": "NONE",
+    "source_ledger": "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+    "projection": "ignition/data/operations/iterations/141/live-current-projection-r3.json"
+  },
+  "admission_baseline": {
+    "census": "ignition/data/operations/iterations/142/local-executor-census-r2.json",
+    "candidate_count": 14,
+    "agentic_executor_count": 5,
+    "installed_agentic_executor_count": 4,
+    "technically_admitted_count": 1,
+    "live_selectable_count": 0,
+    "policy_excluded_executor_ids": [
+      "external.codex"
+    ],
+    "installed_families_in_scope": [
+      "external.gemini",
+      "external.hermes",
+      "external.openclaw"
+    ],
+    "no_new_live_process_in_predecessor": true
+  },
+  "baseline_validations": {
+    "formal_task_lifecycle": "FORMAL_TASK_LIFECYCLE_OK task=IGNITION-20260827-142 terminal=true",
+    "current_task_lineage": "CURRENT_TASK_LINEAGE_STATUS_OK",
+    "current_volatile_fact_registry": "CURRENT_VOLATILE_FACT_REGISTRY_OK facts=19 surfaces=7",
+    "current_release_lifecycle": "CURRENT_RELEASE_LIFECYCLE_OK content_phase=RELEASE_READY publication_authority=REMOTE_REF_OBSERVATION embedded_publication_assertion=NONE",
+    "task_identity_model": "TASK_IDENTITY_MODEL_OK",
+    "open_obligation_registry": "OPEN_OBLIGATION_REGISTRY_OK open=1",
+    "executor_admission_contract": "EXECUTOR_ADMISSION_CONTRACT_OK candidates=1 eligible=0",
+    "executor_conformance": "EXECUTOR_CONFORMANCE_OK cases=11 accepted=1 rejected=10 live_process_started=false"
+  },
+  "safety": {
+    "live_process_started": false,
+    "live_inference_started": false,
+    "secret_content_read": false,
+    "auth_content_copied": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "executor_installed_or_upgraded": false,
+    "channel_or_browser_used": false,
+    "formal_workspace_modified_by_executor": false
+  },
+  "claim_ceiling": "Repository-local baseline, predecessor publication and live-obligation evidence only; no executor qualification, validated completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
