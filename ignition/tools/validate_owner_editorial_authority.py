@@ -29,6 +29,18 @@ def validate_contract(contract: dict[str, Any], schema: dict[str, Any]) -> list[
         errors.append("terminal states must preserve the four Owner decision outcomes")
     if "CANDIDATE" not in states.get("allowed_states", []):
         errors.append("CANDIDATE must be the initial production state")
+    expected_transitions = {
+        ("CANDIDATE", "OWNER_SELECTED"),
+        ("OWNER_SELECTED", "DRAFTING"),
+        ("DRAFTING", "OWNER_REVIEW"),
+        ("OWNER_REVIEW", "ACCEPTED"),
+        ("OWNER_REVIEW", "REVISE"),
+        ("OWNER_REVIEW", "PARKED"),
+        ("OWNER_REVIEW", "REJECTED"),
+    }
+    observed_transitions = {(row.get("from"), row.get("to")) for row in states.get("allowed_transitions", [])}
+    if observed_transitions != expected_transitions:
+        errors.append("allowed transitions must be the minimal Owner editorial state path")
     rules = contract.get("rules", {})
     if not set(rules.get("owner_authority_sources", [])) == {"OWNER_EXPLICIT_PRODUCTION_BRIEF", "OWNER_EXPLICIT_SELECTION"}:
         errors.append("Owner authority sources are incomplete")

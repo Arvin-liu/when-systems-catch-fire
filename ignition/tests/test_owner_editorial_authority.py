@@ -55,6 +55,18 @@ class OwnerEditorialAuthorityTests(unittest.TestCase):
         }
         self.assertIn("PUBLICATION_ACCEPTED_REQUIRES_OWNER_AUTHORITY", authority.validate_item(item, self.contract))
 
+    def test_state_machine_has_only_minimal_editorial_transitions(self) -> None:
+        transitions = {(row["from"], row["to"]) for row in self.contract["state_machine"]["allowed_transitions"]}
+        self.assertEqual(transitions, {
+            ("CANDIDATE", "OWNER_SELECTED"),
+            ("OWNER_SELECTED", "DRAFTING"),
+            ("DRAFTING", "OWNER_REVIEW"),
+            ("OWNER_REVIEW", "ACCEPTED"),
+            ("OWNER_REVIEW", "REVISE"),
+            ("OWNER_REVIEW", "PARKED"),
+            ("OWNER_REVIEW", "REJECTED"),
+        })
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -12,14 +12,28 @@
     "state_machine": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["initial_state", "owner_selected_state", "drafting_state", "review_state", "terminal_states", "allowed_states"],
+      "required": ["initial_state", "owner_selected_state", "drafting_state", "review_state", "terminal_states", "allowed_states", "allowed_transitions"],
       "properties": {
         "initial_state": {"const": "CANDIDATE"},
         "owner_selected_state": {"const": "OWNER_SELECTED"},
         "drafting_state": {"const": "DRAFTING"},
         "review_state": {"const": "OWNER_REVIEW"},
         "terminal_states": {"type": "array", "items": {"enum": ["ACCEPTED", "REVISE", "PARKED", "REJECTED"]}, "minItems": 4, "uniqueItems": true},
-        "allowed_states": {"type": "array", "items": {"enum": ["CANDIDATE", "OWNER_SELECTED", "DRAFTING", "OWNER_REVIEW", "ACCEPTED", "REVISE", "PARKED", "REJECTED"]}, "minItems": 8, "uniqueItems": true}
+        "allowed_states": {"type": "array", "items": {"enum": ["CANDIDATE", "OWNER_SELECTED", "DRAFTING", "OWNER_REVIEW", "ACCEPTED", "REVISE", "PARKED", "REJECTED"]}, "minItems": 8, "uniqueItems": true},
+        "allowed_transitions": {
+          "type": "array",
+          "minItems": 7,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["from", "to"],
+            "properties": {
+              "from": {"enum": ["CANDIDATE", "OWNER_SELECTED", "DRAFTING", "OWNER_REVIEW", "ACCEPTED", "REVISE", "PARKED", "REJECTED"]},
+              "to": {"enum": ["CANDIDATE", "OWNER_SELECTED", "DRAFTING", "OWNER_REVIEW", "ACCEPTED", "REVISE", "PARKED", "REJECTED"]}
+            }
+          }
+        }
       }
     },
     "fields": {

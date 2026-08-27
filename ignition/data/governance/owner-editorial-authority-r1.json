@@ -8,7 +8,16 @@
     "drafting_state": "DRAFTING",
     "review_state": "OWNER_REVIEW",
     "terminal_states": ["ACCEPTED", "REVISE", "PARKED", "REJECTED"],
-    "allowed_states": ["CANDIDATE", "OWNER_SELECTED", "DRAFTING", "OWNER_REVIEW", "ACCEPTED", "REVISE", "PARKED", "REJECTED"]
+    "allowed_states": ["CANDIDATE", "OWNER_SELECTED", "DRAFTING", "OWNER_REVIEW", "ACCEPTED", "REVISE", "PARKED", "REJECTED"],
+    "allowed_transitions": [
+      {"from": "CANDIDATE", "to": "OWNER_SELECTED"},
+      {"from": "OWNER_SELECTED", "to": "DRAFTING"},
+      {"from": "DRAFTING", "to": "OWNER_REVIEW"},
+      {"from": "OWNER_REVIEW", "to": "ACCEPTED"},
+      {"from": "OWNER_REVIEW", "to": "REVISE"},
+      {"from": "OWNER_REVIEW", "to": "PARKED"},
+      {"from": "OWNER_REVIEW", "to": "REJECTED"}
+    ]
   },
   "fields": {
     "kind": ["article", "book"],
