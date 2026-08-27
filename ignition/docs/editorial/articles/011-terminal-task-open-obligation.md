@@ -15,7 +15,7 @@ maturity_note: "本文解释 Task142 的仓库内生命周期修复；不提高�
 
 ## 最容易被误解的一句“完成了”
 
-很多项目到了最后都会遇到一句不舒服的话：这轮工作已经做完了，但还有一件重要的事没有做完。
+一个项目到了最后，常会遇到一句不舒服的话：这轮工作已经做完了，但还有一件重要的事没有做完。
 
 如果只能在“完成”和“未完成”之间选一个，团队通常会有三种反应。有人坚持不许关单，于是任务永远停在运行中；有人为了让看板干净，直接把未完成的事从当前项目里抹掉；还有人把它写成一个模糊的“基本完成”，让读者自己猜剩下的到底是什么。三种写法都不诚实：第一种把未来责任误写成当前任务的生命，第二种丢掉责任，第三种把两种状态压成了一句漂亮但不可操作的话。
 
@@ -83,8 +83,8 @@ Task142 留下的最值得继续使用的经验，不是一个更漂亮的枚举
 
 ## 来源与边界
 
-- Task142 生命周期与终态：`data/operations/iterations/142/step01-terminality-semantics.json`、`data/operations/iterations/142/step19-publication-and-terminality.json`、`reports/operations/ignition-142-step19-publication-and-terminality.md`。
-- 开放义务登记与历史计数：`data/operations/open-obligation-registry-r1.json`、`data/operations/iterations/141/live-current-projection-r3.json`。
-- 相邻但不同的出版边界：`PUBLICATIONS/pointfire-results-book/07-方法系统与负结果.md`、`docs/editorial/articles/003-from-candidate-to-current-evidence-chain.md`、`docs/editorial/articles/009-system-completion-state-and-independent-replication.md`。
+- Task142 生命周期与终态：[`Step01 terminality`](../../../data/operations/iterations/142/step01-terminality-semantics.json)、[`Step19 terminality`](../../../data/operations/iterations/142/step19-publication-and-terminality.json)、[`Step19 report`](../../../reports/operations/ignition-142-step19-publication-and-terminality.md)。
+- 开放义务登记与历史计数：[`obligation registry`](../../../data/operations/open-obligation-registry-r1.json)、[`historical live projection`](../../../data/operations/iterations/141/live-current-projection-r3.json)。
+- 相邻但不同的出版边界：[`方法、系统与负结果`](../../../PUBLICATIONS/pointfire-results-book/07-方法系统与负结果.md)、[`Article 003`](003-from-candidate-to-current-evidence-chain.md)、[`Article 009`](009-system-completion-state-and-independent-replication.md)。
 
 本文只解释仓库内的任务终态与开放义务如何分离，以及这一区分怎样改善可恢复的写作。它不证明外部执行器完成，不证明系统生产就绪，不把工程收据升级为外部事实，也不关闭 `LIVE_EXTERNAL_INVOCATION`；当前总体上限仍是 `CURRENT_WITH_OPEN_OBLIGATIONS`，`EPISTEMICALLY_ACCEPTED=0`。
