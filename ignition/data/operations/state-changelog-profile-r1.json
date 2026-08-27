@@ -1,8 +1,8 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 41,
-  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41],
+  "entry_count": 42,
+  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42],
   "historical_entry_count": 26,
   "legacy_profile_count": 6,
   "profiles": {
@@ -63,6 +63,7 @@
     {"ordinal": 38, "date": "2026-08-27", "label": "IGNITION-20260827-142 — terminality and obligation decoupling baseline", "profile": "current-r1", "section_sha256": "383029ec4e73e4822f56a7786e2b53dbc7ccdbf63fd751dd9929475591391bdc"},
     {"ordinal": 39, "date": "2026-08-27", "label": "IGNITION-20260827-142 — Current advancement and obligation carry-forward", "profile": "current-r1", "section_sha256": "0da50c62e389d557956ce50cba8ea561f086020149afa2e42f8e52cfef037fdf"},
     {"ordinal": 40, "date": "2026-08-27", "label": "IGNITION-20260827-142 — lifecycle/admission architecture transition", "profile": "current-r1", "section_sha256": "73bfd2e41d0c326fe14237f47f83e179ba1c9298b69478d0fa7967508e27a197"},
-    {"ordinal": 41, "date": "2026-08-27", "label": "IGNITION-20260827-142 — formal terminality and independent obligation closure", "profile": "current-r1", "section_sha256": "2bd77d07a65ebfd3d0897c7afab05f590944e4637a53f91fad47e27fc4586be6"}
+    {"ordinal": 41, "date": "2026-08-27", "label": "IGNITION-20260827-142 — formal terminality and independent obligation closure", "profile": "current-r1", "section_sha256": "084d2c66fb87d7042fedb40f20c857c7f013daa40dd07f256ddb4d6aee248ba3"},
+    {"ordinal": 42, "date": "2026-08-27", "label": "IGNITION-20260827-143 — phase closure and publication production active", "profile": "current-r1", "section_sha256": "2da6efdeb6219ac47aa2be6cf73c984978e9acf7c0135f2d07ff0fc644804ec3"}
   ]
 }

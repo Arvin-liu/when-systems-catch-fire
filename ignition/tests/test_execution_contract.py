@@ -20,13 +20,13 @@ class ExecutionContractTests(unittest.TestCase):
         contract["no_owner_intermediate"] = False
         self.assertTrue(validator.validate(contract))
 
-    def test_architecture_changing_task_binds_formal_identity(self) -> None:
+    def test_presentation_only_task_keeps_architecture_identity_distinct(self) -> None:
         contract = validator.load_json(validator.CONTRACT_PATH)
-        self.assertEqual(
+        self.assertNotEqual(
             contract["identity_expectations"]["current_formal_task"],
             contract["identity_expectations"]["latest_architecture_changing_task"],
         )
-        self.assertEqual(contract["identity_impact"], "ARCHITECTURE_CHANGED")
+        self.assertEqual(contract["identity_impact"], "PRESENTATION_ONLY")
 
 
 if __name__ == "__main__":

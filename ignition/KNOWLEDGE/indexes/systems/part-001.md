@@ -949,6 +949,11 @@
   - 可搜索名称：NFC-75806f2c315fe0c5 / \[#599｜仲裁机制让判断不必要验证\]\(docs/zh/cases/items/C-0599.md\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [\[Article 011\]\(../../docs/editorial/articles/011-terminal-task-open-obligation.md\) · \[Article 012\]\(../../docs/editorial/a](../../../reports/operations/ignition-143-step15-cross-publication-coherence.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a5afcdc2590a24bd / \[Article 011\]\(../../docs/editorial/articles/011-terminal-task-open-obligation.md\) · \[Article 012\]\(../../docs/editorial/a
+  - 来源：`reports/operations/ignition-143-step15-cross-publication-coherence.md`
+  - 依赖：—；被引用：—
 - [\[C-0732｜哥德尔不完备性历史系统实例化案例\]\(../已迁移的历史案例来源/0727-C-0732-哥德尔不完备性历史系统实例化案例.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9ba9f4a8cfe5f146 / \[C-0732｜哥德尔不完备性历史系统实例化案例\]\(../已迁移的历史案例来源/0727-C-0732-哥德尔不完备性历史系统实例化案例.md\)
@@ -1023,6 +1028,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-19697eda6fee6484 / `0.1.0` 把“肉身锚定”这一重要入口误写成方法资格门槛。维护者对《每日一诗停更说明》的结构说明构成反例：作品可以从诗句、时间安排、费用、决定和概念重定义出发，完成稳定的心智层级跃迁，而没有统摄全文、反复返回的身体坐标。正式审查 `47
   - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [`0.16.0` 地图和 live-observation 历史保持冻结；外部 Agent 线按 Owner 决定为](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-7c53db92ea21f541 / `0.16.0` 地图和 live-observation 历史保持冻结；外部 Agent 线按 Owner 决定为
+  - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [`0.4.0` 修复“写作素材默认等于外部原始材料”的窄化：写作素材池至少同时接收外部输入源和点火增量输出源。点火对材料生成的 claim、argument、mechanism、map、gap、residue、Q12—Q14 输出、MCF／](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1618,6 +1628,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-4259f0ea54c5997e / arn-projection-26fea4a0
   - 来源：`data/architecture/adaptive-relational-network/real-history/after-layer-architecture.md`
+  - 依赖：—；被引用：—
+- [Article B 通过编辑复核并修订为 `REVIEWED_CURRENT_R1`。它保留了实质性非 meta 文章的身份：正文讨论的是点火碰撞提出的“支持如何变成路径控制”问题，而不是介绍点火仓库如何工作。D600 仍被明确写成内部候选](../../../reports/operations/ignition-143-step09-article-b-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b0b13d9e58097998 / Article B 通过编辑复核并修订为 `REVIEWED_CURRENT_R1`。它保留了实质性非 meta 文章的身份：正文讨论的是点火碰撞提出的“支持如何变成路径控制”问题，而不是介绍点火仓库如何工作。D600 仍被明确写成内部候选
+  - 来源：`reports/operations/ignition-143-step09-article-b-editorial-review.md`
+  - 依赖：D600；被引用：—
+- [Article C 写树冠、温度对象与因果范围的具体公开 replay。](../../../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ff4a373c883fa6f1 / Article C 写树冠、温度对象与因果范围的具体公开 replay。
+  - 来源：`reports/operations/ignition-143-step11-cross-publication-editorial-review.md`
   - 依赖：—；被引用：—
 - [Artifact \(Node 4\)** is demonstrated by PAW adapters, LoRA matrices, hypernetwork-generated weights, and merged models.](../../../reports/external-research/121-function-paradigm-fulltext-review-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2482,25 +2502,5 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M24 / data/external-research/088-external-source-atlas-medium.jsonl / M24 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M25 / data/external-research/088-external-source-atlas-medium.jsonl / M25 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M26 / data/external-research/088-external-source-atlas-medium.jsonl / M26 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M27 / data/external-research/088-external-source-atlas-medium.jsonl / M27 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M28 / data/external-research/088-external-source-atlas-medium.jsonl / M28 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

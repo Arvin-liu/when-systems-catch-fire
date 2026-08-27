@@ -1069,6 +1069,11 @@
   - 可搜索名称：NFC-facacf1a8ce52f0a / historical import, and only then Current projection repair and any one-time live
   - 来源：`reports/operations/ignition-139-step00-baseline-audit.md`
   - 依赖：—；被引用：—
+- [Historical projection: `ignition/data/operations/iterations/141/live-current-projection-r3.json`](../../../reports/operations/ignition-143-resume-capsule.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-de66cc102f7b1a58 / Historical projection: `ignition/data/operations/iterations/141/live-current-projection-r3.json`
+  - 来源：`reports/operations/ignition-143-resume-capsule.md`
+  - 依赖：—；被引用：—
 - [historical R1 projection digest: `2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73`](../../../reports/operations/ignition-140-step04-typed-observation-outcomes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-28f220dedb320524 / historical R1 projection digest: `2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73`
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c8a16b1d2280f62a / The regenerated closure was then propagated through the Current chain: `current-facts.json` / `current-facts.md`, `curre
   - 来源：`reports/operations/ignition-134-step11-current-projection-closure.md`
-  - 依赖：—；被引用：—
-- [The terminal Task134 candidate keeps the residual ledger bounded and makes the Current projections decidable.](../../../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-99659a72ca025a6b / The terminal Task134 candidate keeps the residual ledger bounded and makes the Current projections decidable.
-  - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
   - 依赖：—；被引用：—

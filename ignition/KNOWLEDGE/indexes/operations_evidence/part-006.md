@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The terminal Task134 candidate keeps the residual ledger bounded and makes the Current projections decidable.](../../../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-99659a72ca025a6b / The terminal Task134 candidate keeps the residual ledger bounded and makes the Current projections decidable.
+  - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
+  - 依赖：—；被引用：—
 - [the visible projection is `80` nodes and `83` typed edges.](../../../reports/operations/ignition-126-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f39f549213f5713b / the visible projection is `80` nodes and `83` typed edges.
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-f964b994be6bda81 / （对应旧条目 + 扩展要点）
   - 来源：`templates/collision/backfill-plan-template.md`
-  - 依赖：—；被引用：—
-- [（对应旧条目 / 扩展内容 / 为何非新增 / 是否更新）](../../../templates/collision/output-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-ba32d7ba1ee3af06 / （对应旧条目 / 扩展内容 / 为何非新增 / 是否更新）
-  - 来源：`templates/collision/output-template.md`
   - 依赖：—；被引用：—

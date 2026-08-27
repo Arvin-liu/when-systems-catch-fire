@@ -354,6 +354,11 @@
   - 可搜索名称：NFC-f59634078386ce66 / No `skip`, `xfail`, `expectedFailure` or `ignore` was added to manufacture green status. Historical residuals remain vis
   - 来源：`agent-results/IGNITION-20260822-135-result.md`
   - 依赖：—；被引用：—
+- [No Task143 external-Agent live process, inference, live attempt, authentication/configuration/billing change, installati](../../../reports/operations/ignition-143-step00-baseline-owner-override-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-38623d363545f148 / No Task143 external-Agent live process, inference, live attempt, authentication/configuration/billing change, installati
+  - 来源：`reports/operations/ignition-143-step00-baseline-owner-override-audit.md`
+  - 依赖：—；被引用：—
 - [Object D293 defines a optimization_problem within the point-fire framework. Core: 中文：M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-9d356d98b063d464 / Object D293 defines a optimization_problem within the point-fire framework. Core: 中文：M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段
@@ -2497,10 +2502,5 @@
 - [\| \[C-619\]\( \) \| \[大脑容量空间验证\]\( \) \| 人类大脑神经元≈860亿。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-05881f129b2e1908 / \| \[C-619\]\( \) \| \[大脑容量空间验证\]\( \) \| 人类大脑神经元≈860亿。 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-620\]\( \) \| \[早产5年空间验证\]\( \) \| 人类大脑容量受盆骨限制。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f2c4173da3bf7a3d / \| \[C-620\]\( \) \| \[早产5年空间验证\]\( \) \| 人类大脑容量受盆骨限制。 \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

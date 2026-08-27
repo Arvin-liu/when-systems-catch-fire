@@ -4,26 +4,6 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
-<a id="asset-hr-0e7b7e2d16e773be"></a>
-## NF-002 量化指标替代真实价值回填审计
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-0E7B7E2D16E773BE` · [outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md](../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
-- **为什么产生：** 此来源记录了什么：NF-002 量化指标替代真实价值回填审计？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 无任何现有函数覆盖「可量化指标成为唯一显式入口→不可量化真实价值被排挤/替代」机制。 NF-002 不与任何条目重复。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D244`, `D596`, `D277`, `D386`, `D173`, `D597`
-- **来源与证据：** `outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NF-002 量化指标替代真实价值回填审计`, `nf-002-quantified-metric-backfill-audit-20260708`
-
 <a id="asset-hr-0ef2189bb50603b7"></a>
 ## 121Q22 Probabilistic System Dynamics Validation
 
@@ -1003,3 +983,23 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `来源清单`, `source-manifest`
+
+<a id="asset-hr-3842ff66e7acfebf"></a>
+## 新增函数候选 · P1 接入烟雾测试
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3842FF66E7ACFEBF` · [outputs/collisions/20260708-smoke-test/new-functions.md](../../outputs/collisions/20260708-smoke-test/new-functions.md)
+- **为什么产生：** 此来源记录了什么：新增函数候选 · P1 接入烟雾测试？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `outputs/collisions/20260708-smoke-test/new-functions.md`, `202`
+- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`
+- **可搜索名称：** `新增函数候选 · P1 接入烟雾测试`, `new-functions`

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [（对应旧条目 / 扩展内容 / 为何非新增 / 是否更新）](../../../templates/collision/output-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-ba32d7ba1ee3af06 / （对应旧条目 / 扩展内容 / 为何非新增 / 是否更新）
+  - 来源：`templates/collision/output-template.md`
+  - 依赖：—；被引用：—
 - [（对应条目 + 类型）](../../../templates/collision/backfill-plan-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6acbf6f7b1c347ab / （对应条目 + 类型）

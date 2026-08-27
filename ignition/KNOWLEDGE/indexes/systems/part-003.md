@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D420 defines a mechanism_model within the point-fire framework. Core: 中文：M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fcf31339b01442b2 / Object D420 defines a mechanism_model within the point-fire framework. Core: 中文：M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D420；被引用：—
+- [Object D421 defines a mechanism_model within the point-fire framework. Core: 中文：M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4b5d067bdc7365dd / Object D421 defines a mechanism_model within the point-fire framework. Core: 中文：M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D421；被引用：—
+- [Object D422 defines a mechanism_model within the point-fire framework. Core: 中文：M12的n/2作为容斥主导不可逆的间接观测量——用可观测的传染临界预警不可观测的](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8745e2c1e85da806 / Object D422 defines a mechanism_model within the point-fire framework. Core: 中文：M12的n/2作为容斥主导不可逆的间接观测量——用可观测的传染临界预警不可观测的
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D422；被引用：—
+- [Object D423 defines a mechanism_model within the point-fire framework. Core: 中文：M13的六个参数归约为3个有效参数：n_eff=n·√\(p̄·Σαᵢ/β\)，K，](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bbb11add418b8963 / Object D423 defines a mechanism_model within the point-fire framework. Core: 中文：M13的六个参数归约为3个有效参数：n_eff=n·√\(p̄·Σαᵢ/β\)，K，
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D423；被引用：—
 - [Object D424 defines a mechanism_model within the point-fire framework. Core: 中文：M14的**两步策略是学习效应存在时的唯一最优策略。** 利用P_correct](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a11599aefb2ebd97 / Object D424 defines a mechanism_model within the point-fire framework. Core: 中文：M14的**两步策略是学习效应存在时的唯一最优策略。** 利用P_correct
@@ -1024,6 +1044,11 @@
   - 可搜索名称：NFC-eb2ae2f64b183e8e / Step 002: Mechanism Adjudication Plane, mechanism-map schema, calibration schema, non-sycophancy output protocol.
   - 来源：`reports/architecture/121Q12-effectual-mechanism-dual-loop.md`
   - 依赖：—；被引用：—
+- [Step 04 已完成。盘点不是看标题投票，而是把成果册、火种、既有文章、碰撞机制、树冠 replay 和 Task142 生命周期修复逐一读到能说明“它支持什么、不能支持什么”的程度。机器版见 \[`corpus-census-r1.jso](../../../reports/operations/ignition-143-step04-corpus-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1717286a4383368c / Step 04 已完成。盘点不是看标题投票，而是把成果册、火种、既有文章、碰撞机制、树冠 replay 和 Task142 生命周期修复逐一读到能说明“它支持什么、不能支持什么”的程度。机器版见 \[`corpus-census-r1.jso
+  - 来源：`reports/operations/ignition-143-step04-corpus-census.md`
+  - 依赖：—；被引用：—
 - [Step Evidence](../../../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-72776244b2c4a8c8 / Step Evidence
@@ -1411,7 +1436,7 @@
   - 依赖：—；被引用：—
 - [The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure](../../../data/architecture/current-system-identity.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7b1f7d211136ed14 / The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure
+  - 可搜索名称：NFC-aeb11fcb36086948 / The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure
   - 来源：`data/architecture/current-system-identity.json`
   - 依赖：—；被引用：—
 - [The provider-neutral offline harness accepts exactly one strict synthetic result and rejects ten negative cases: malform](../../../reports/operations/ignition-142-step05-offline-conformance.md)
@@ -2109,6 +2134,16 @@
   - 可搜索名称：NFC-f5812f14f36d57d9 / \| **Θ 统一元律** \| U₁零点约束元律、U₂线性变换元律、U₃耦合动力学元律、U₄判定优化元律 \| 约束-优化统一:系统在约束条件下通过优化寻找最优态 \|
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
+- [\| 012 support/path \| “我是在帮你”是否足够；四个连接点加五类反例 \| D600 只作内部候选，缺口进入正文 \| 不推出普遍率、诊断或因果定律 \| 不把退出、角色、价值模型合成列表 \| PASS \|](../../../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c2f6931fbccb0532 / \| 012 support/path \| “我是在帮你”是否足够；四个连接点加五类反例 \| D600 只作内部候选，缺口进入正文 \| 不推出普遍率、诊断或因果定律 \| 不把退出、角色、价值模型合成列表 \| PASS \|
+  - 来源：`reports/operations/ignition-143-step11-cross-publication-editorial-review.md`
+  - 依赖：D600；被引用：—
+- [\| 013 canopy/temperature \| 一个直观政策问题；测量对象逐层拆开 \| 只用七个公开来源入口与已有 bounded replay 综合 \| 关联不等于干预因果，人体热应激未恢复 \| 不重复 005 的抽象表示论证 \|](../../../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-52f37a0832af969e / \| 013 canopy/temperature \| 一个直观政策问题；测量对象逐层拆开 \| 只用七个公开来源入口与已有 bounded replay 综合 \| 关联不等于干预因果，人体热应激未恢复 \| 不重复 005 的抽象表示论证 \|
+  - 来源：`reports/operations/ignition-143-step11-cross-publication-editorial-review.md`
+  - 依赖：—；被引用：—
 - [\| 088-A \| `IGNITION-20260709-088-external-frontier-evidence-atlas-and-gap-applicability-audit.md` \| 无 \| 无 \| 否 \| 无（未执行） \|](../../../reports/external-research/104-dual-088-reconciliation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b5302a823e105146 / \| 088-A \| `IGNITION-20260709-088-external-frontier-evidence-atlas-and-gap-applicability-audit.md` \| 无 \| 无 \| 否 \| 无（未执行） \|
@@ -2467,40 +2502,5 @@
 - [\| `CLM-14` 遗漏项 \| 多机制交互 \| 数据分散 \| 单因素主导 \| 三束证据表 \| 财政、疾病、气候 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d218be9ef2a32cdb / \| `CLM-14` 遗漏项 \| 多机制交互 \| 数据分散 \| 单因素主导 \| 三束证据表 \| 财政、疾病、气候 \|
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| `CURRENT` \| 合并态在 `main` 上验证、front-door/current-state 表面同步 \| 真理式 post-merge 收口、无未决 residue、逐表面 attestation \|](../../../docs/governance/charter-system-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-de006142893383f7 / \| `CURRENT` \| 合并态在 `main` 上验证、front-door/current-state 表面同步 \| 真理式 post-merge 收口、无未决 residue、逐表面 attestation \|
-  - 来源：`docs/governance/charter-system-r1.md`
-  - 依赖：—；被引用：—
-- [\| `EVIDENCE_LEVEL_CEILING` \| A source, fixture, review or observation supports a conclusion at a bounded evidence level.](../../../docs/architecture/structural-governance-surface.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-26d2132de095c538 / \| `EVIDENCE_LEVEL_CEILING` \| A source, fixture, review or observation supports a conclusion at a bounded evidence level.
-  - 来源：`docs/architecture/structural-governance-surface.md`
-  - 依赖：—；被引用：—
-- [\| `G_δ` 与 `pending` 联动机制缺失 \| 新增 G_delta Pending Protocol \|](../../../docs/structural_gap_audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-729df5e7b4517651 / \| `G_δ` 与 `pending` 联动机制缺失 \| 新增 G_delta Pending Protocol \|
-  - 来源：`docs/structural_gap_audit.md`
-  - 依赖：—；被引用：—
-- [\| `JIN-ARG-02` \| 局部集中 + 打击中枢 → 局部优势 → 全军级联 \| 中枢位置可识别；信息传播迅速 \| 撤军、叛乱、后勤断裂先发生 \| 机制可行，时序待核 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4bcdded991079480 / \| `JIN-ARG-02` \| 局部集中 + 打击中枢 → 局部优势 → 全军级联 \| 中枢位置可识别；信息传播迅速 \| 撤军、叛乱、后勤断裂先发生 \| 机制可行，时序待核 \|
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| `JIN-CLM-02` \| “连续灭辽、宋两个成熟帝国”把北宋政权与宋朝整体混同 \| `contested` / 过度表述 \| 仅改为“灭辽并导致北宋覆亡”可保留 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-88ad431d70239d70 / \| `JIN-CLM-02` \| “连续灭辽、宋两个成熟帝国”把北宋政权与宋朝整体混同 \| `contested` / 过度表述 \| 仅改为“灭辽并导致北宋覆亡”可保留 \|
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| `JIN-CLM-06` \| “完颜家族天才”可能含幸存者选择 \| `mechanism_hypothesis` \| 人才结构、亲族任用与反事实样本缺失 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ccb4dbefa70b4dbd / \| `JIN-CLM-06` \| “完颜家族天才”可能含幸存者选择 \| `mechanism_hypothesis` \| 人才结构、亲族任用与反事实样本缺失 \|
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [\| `JIN-CLM-07` \| 局部兵力集中比总量对比更贴近部分战役机制 \| `argument_plausible` \| 必须重建地形、序列、可用兵力和指挥 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-77b0370931de8a79 / \| `JIN-CLM-07` \| 局部兵力集中比总量对比更贴近部分战役机制 \| `argument_plausible` \| 必须重建地形、序列、可用兵力和指挥 \|
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—

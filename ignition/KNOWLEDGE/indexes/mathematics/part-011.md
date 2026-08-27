@@ -4,6 +4,76 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| Current task/lifecycle \| Task134 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`, terminal `true`, lifecycle `RELEASE_READY`; pu](../../../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-15afebdbd3b1a10d / \| Current task/lifecycle \| Task134 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`, terminal `true`, lifecycle `RELEASE_READY`; pu
+  - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
+  - 依赖：—；被引用：—
+- [\| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\]\(../discipline-kernel-pilot-physics-math-his](../../../outputs/getbrain/v0.2-summary-and-closure-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-255fb859cd51bf49 / \| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\]\(../discipline-kernel-pilot-physics-math-his
+  - 来源：`outputs/getbrain/v0.2-summary-and-closure-20260707.md`
+  - 依赖：—；被引用：—
+- [\| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\]\(../outputs/getbrain/discipline-kernel-pilot](../../../docs/v0.2_summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ed5d6a309a95dcd5 / \| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\]\(../outputs/getbrain/discipline-kernel-pilot
+  - 来源：`docs/v0.2_summary.md`
+  - 依赖：—；被引用：—
+- [\| D183 \| D181, D270, D211, D220 \| D516, T26 \| Block gate-count monotonicity and physical-unification claims \|](../../../reports/foundation-architecture/098-dependency-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7e0060a3100d31d2 / \| D183 \| D181, D270, D211, D220 \| D516, T26 \| Block gate-count monotonicity and physical-unification claims \|
+  - 来源：`reports/foundation-architecture/098-dependency-impact.md`
+  - 依赖：D181, D183, D211, D220；被引用：—
+- [\| D183 \| REWRITE \| 定义完整时可比较两个玩具评分 \| “门更少”必然令 Φ 下降、Ω 上升；符号合并即物理统一 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a86d596d447fd7e1 / \| D183 \| REWRITE \| 定义完整时可比较两个玩具评分 \| “门更少”必然令 Φ 下降、Ω 上升；符号合并即物理统一 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D183；被引用：—
+- [\| D185 \| DOWNGRADE \| 比率类比 \| 由门函数推导相对论；源文本 `v<<c` 极限还存在方向矛盾 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-fef8d79f944638ea / \| D185 \| DOWNGRADE \| 比率类比 \| 由门函数推导相对论；源文本 `v<<c` 极限还存在方向矛盾 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D185；被引用：—
+- [\| D186 \| DOWNGRADE \| 未操作化的阈值聚集隐喻 \| 推导量子力学或普遍相变阶数 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-14238e2b443cf8d3 / \| D186 \| DOWNGRADE \| 未操作化的阈值聚集隐喻 \| 推导量子力学或普遍相变阶数 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D186；被引用：—
+- [\| D187 \| DOWNGRADE \| 电弱统一的历史类比 \| 取代规范群、场、拉格朗日量和对称破缺机制 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2cbf897479d91394 / \| D187 \| DOWNGRADE \| 电弱统一的历史类比 \| 取代规范群、场、拉格朗日量和对称破缺机制 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D187；被引用：—
+- [\| D188 \| REWRITE \| 保留失效历史 \| 源文本对渐近自由物理区间的错误投影及 QCD 机制声明 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-88d30125fd7dcf8b / \| D188 \| REWRITE \| 保留失效历史 \| 源文本对渐近自由物理区间的错误投影及 QCD 机制声明 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D188；被引用：—
+- [\| D189 \| DOWNGRADE \| GUT 待验证类比 \| 成功统一、精确统一能标、由该评分推出质子衰变 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c23fc2228da9d1c5 / \| D189 \| DOWNGRADE \| GUT 待验证类比 \| 成功统一、精确统一能标、由该评分推出质子衰变 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D189；被引用：—
+- [\| D190 \| `AI-HANDOFF.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `REFRESH_CURRENT_FINGERPRINT_ONLY`](../../../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f5110f158bcfcb21 / \| D190 \| `AI-HANDOFF.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `REFRESH_CURRENT_FINGERPRINT_ONLY`
+  - 来源：`reports/operations/ignition-134-step14-human-surface-semantic-audit.md`
+  - 依赖：D190；被引用：—
+- [\| D190 \| DOWNGRADE \| ToE 开放问题记录 \| 已统一四力、已统一量子与引力、已证可能或不可能 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c3100a9e66dac85d / \| D190 \| DOWNGRADE \| ToE 开放问题记录 \| 已统一四力、已统一量子与引力、已证可能或不可能 \|
+  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
+  - 依赖：D190；被引用：—
+- [\| D260 \| `AI-HANDOFF.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `REFRESH_CURRENT_FINGERPRINT_ONLY`](../../../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ffe626b408abbf1a / \| D260 \| `AI-HANDOFF.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `REFRESH_CURRENT_FINGERPRINT_ONLY`
+  - 来源：`reports/operations/ignition-134-step14-human-surface-semantic-audit.md`
+  - 依赖：D260；被引用：—
+- [\| D479 \| 空间耦合函数 \| C-137 认知光锥 \| C-507 组织退化 \| 待验证 \| 待验证 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-10634c84f08d3807 / \| D479 \| 空间耦合函数 \| C-137 认知光锥 \| C-507 组织退化 \| 待验证 \| 待验证 \|
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：D479；被引用：—
 - [\| D480 \| 空间动态性函数 \| C-138 框架发现 \| C-461 组织衰败 \| 待验证 \| 待验证 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-97a826949c20bceb / \| D480 \| 空间动态性函数 \| C-138 框架发现 \| C-461 组织衰败 \| 待验证 \| 待验证 \|
@@ -529,6 +599,11 @@
   - 可搜索名称：NFC-b4ffb67fd102914f / \| volatile fact registry \| Names the identity field as the source \| Does not distinguish formal vs architecture ordinal
   - 来源：`docs/architecture/iteration-boundary-archaeology-r1.md`
   - 依赖：—；被引用：—
+- [\| “收据不能冒充现实” \| 必要的共同边界 \| 只保留在 A 的生命周期论证、B 的候选成熟度和 C 的 replay 分层中各自服务的短句，不另起一篇总论。 \|](../../../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5d5794f7a8389c6e / \| “收据不能冒充现实” \| 必要的共同边界 \| 只保留在 A 的生命周期论证、B 的候选成熟度和 C 的 replay 分层中各自服务的短句，不另起一篇总论。 \|
+  - 来源：`reports/operations/ignition-143-step11-cross-publication-editorial-review.md`
+  - 依赖：—；被引用：—
 - [\| “理论生成器” \| `DOWNGRADED` \| candidate-generation aid，不生成 proof/truth \|](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7f5173d7407fd34a / \| “理论生成器” \| `DOWNGRADED` \| candidate-generation aid，不生成 proof/truth \|
@@ -613,6 +688,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a8771dc8af449c00 / \| 学科 \| 最低证据要求 \| 强证据要求 \| 必须 pending 的情况 \|
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 完成与开放义务 \| 任务怎样在未来义务仍开放时结束？ \| 只证明仓库内生命周期语义，不证明外部完成 \| 文章候选 A；也可作为书的开场 \|](../../../reports/operations/ignition-143-step04-corpus-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-76cf22eddd3d3b81 / \| 完成与开放义务 \| 任务怎样在未来义务仍开放时结束？ \| 只证明仓库内生命周期语义，不证明外部完成 \| 文章候选 A；也可作为书的开场 \|
+  - 来源：`reports/operations/ignition-143-step04-corpus-census.md`
   - 依赖：—；被引用：—
 - [\| 形式内容 \| formal object、函数类资产、argument、proof \| Foundation formal/function/argument/proof registries \| 保持 type、proof、M/E 分](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -1174,10 +1254,20 @@
   - 可搜索名称：NFC-8e3fb9dd06be923f / “该案例适合故事化展示，不适合作为证明材料。”
   - 来源：`docs/pending_claims_register.md`
   - 依赖：—；被引用：—
+- [“还没有被证明的世界”：把不确定性写成读者可以操作的区分，而不是抽象美德；](../../../reports/operations/ignition-143-step04-corpus-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f6d1eef805f3771b / “还没有被证明的世界”：把不确定性写成读者可以操作的区分，而不是抽象美德；
+  - 来源：`reports/operations/ignition-143-step04-corpus-census.md`
+  - 依赖：—；被引用：—
 - [“这不是学科内证明，而是跨域结构映射。”](../../../docs/pending_claims_register.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e506d0d21def34a3 / “这不是学科内证明，而是跨域结构映射。”
   - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [“这不是给‘不够成功’找一个新标签”改为明确针对本仓库的 lifecycle 判断，避免把局部设计写成普遍心理解释。](../../../reports/operations/ignition-143-step07-article-a-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d2ae9c838fd49126 / “这不是给‘不够成功’找一个新标签”改为明确针对本仓库的 lifecycle 判断，避免把局部设计写成普遍心理解释。
+  - 来源：`reports/operations/ignition-143-step07-article-a-editorial-review.md`
   - 依赖：—；被引用：—
 - [“这就是数学证明……”；](../../../docs/pending_claims_register.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -1423,6 +1513,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4bd762baed8eea06 / 三框架操作类型在维度上形成降低链条：并行验证（点火）→ 对比操作（Science Earth）→ 评估操作（EGSS） **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [三篇正文都具备标题、deck、清晰 lead、完整论证、结尾和来源与边界说明，长度约 4,200–4,400 个中文字符。最终审校证明的是本轮稿件达到 publication production 的编辑门槛，不证明其中的内部候选、公开关联](../../../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d9904fd111a694a8 / 三篇正文都具备标题、deck、清晰 lead、完整论证、结尾和来源与边界说明，长度约 4,200–4,400 个中文字符。最终审校证明的是本轮稿件达到 publication production 的编辑门槛，不证明其中的内部候选、公开关联
+  - 来源：`reports/operations/ignition-143-step11-cross-publication-editorial-review.md`
   - 依赖：—；被引用：—
 - [三门学科的证据制度对比](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -2407,100 +2502,5 @@
 - [中文：吴军《数学通识50讲》认知升级主线与点火框架碰撞验证。核心映射：从初等数学思维（静态、具体）到高等数学思维（动态、规律性）的认知升级，对应点火框架的门控函数进化三阶段——δ→1/ln→exp\[-ln²\]，从"是不是"到"过不过门槛"再](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-59880620dec0aaca / 中文：吴军《数学通识50讲》认知升级主线与点火框架碰撞验证。核心映射：从初等数学思维（静态、具体）到高等数学思维（动态、规律性）的认知升级，对应点火框架的门控函数进化三阶段——δ→1/ln→exp\[-ln²\]，从"是不是"到"过不过门槛"再
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：吴军的"先存后花"看似理财建议，本质上是退出权函数在个人财务域的应用——先锁定"退出权保留"（强制储蓄），再考虑"退出权利用"（投资）。这验证了点火框架的核心洞见：退出权优先于效用最大化。当退出权被确保后，系统自动进入最优演化路径。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5f30e8c16d6470ee / 中文：吴军的"先存后花"看似理财建议，本质上是退出权函数在个人财务域的应用——先锁定"退出权保留"（强制储蓄），再考虑"退出权利用"（投资）。这验证了点火框架的核心洞见：退出权优先于效用最大化。当退出权被确保后，系统自动进入最优演化路径。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：吴军直播《普通人如何规划财富路径？》与点火框架碰撞验证。核心碰撞点："先存后花"逻辑（强制储蓄20%，流动性优先，回报率次要）对应点火框架的退出权函数：强制储蓄相当于主动压缩消费退出权，转换为金融资产退出权。流动性优先验证了退出权的"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7e4b72408eb36b2c / 中文：吴军直播《普通人如何规划财富路径？》与点火框架碰撞验证。核心碰撞点："先存后花"逻辑（强制储蓄20%，流动性优先，回报率次要）对应点火框架的退出权函数：强制储蓄相当于主动压缩消费退出权，转换为金融资产退出权。流动性优先验证了退出权的"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：哥德尔不完备定理——公理层的逻辑必然性](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bc939da77321aee5 / 中文：哥德尔不完备定理——公理层的逻辑必然性
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：哥德尔不完备定理——公理层的逻辑必然性 English: Rule-based English rendering pending human revi…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0f49b3e067b9b5ae / 中文：哥德尔不完备定理——公理层的逻辑必然性 English: Rule-based English rendering pending human revi…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫。核心函数：\[D160\]\(docs/zh/functions/items/D160.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-08ee4bcb73fa8fa9 / 中文：器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫。核心函数：\[D160\]\(docs/zh/functions/items/D160.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D160；被引用：—
-- [中文：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效。核心函数：\[D74\]\(docs/zh/functions/items/D74.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a0fb96e685412584 / 中文：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效。核心函数：\[D74\]\(docs/zh/functions/items/D74.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D74, D84；被引用：—
-- [中文：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效。核心函数：\[D74\]\(docs/zh/functi…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-32b25ad683e738aa / 中文：四阶段严格串行验证 — 不能跳过Stage2直接到Stage3：rcross=0时D84三条路径失效。核心函数：\[D74\]\(docs/zh/functi…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D74, D84；被引用：—
-- [中文：因果光锥×马拉松×高山滑雪——不可逆路径的统一数学骨架](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-700c4920c6edb2bb / 中文：因果光锥×马拉松×高山滑雪——不可逆路径的统一数学骨架
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：因果光锥×马拉松×高山滑雪——不可逆路径的统一数学骨架 English: Rule-based English rendering pending hu…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f6b6ce3553060ba6 / 中文：因果光锥×马拉松×高山滑雪——不可逆路径的统一数学骨架 English: Rule-based English rendering pending hu…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：地形切割度×人口密度^\(-α\)×通勤半径^β×气候约束，乘法结构。广州、重庆、西安、县城四城市自然落位在四个象限，每个象限对应一个最优商业形态。这是F5地理维度的展开，不是新独立函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-486b79ff10e63361 / 中文：地形切割度×人口密度^\(-α\)×通勤半径^β×气候约束，乘法结构。广州、重庆、西安、县城四城市自然落位在四个象限，每个象限对应一个最优商业形态。这是F5地理维度的展开，不是新独立函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-070206fdb07497df / 中文：均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R守恒但分布不均→系统不在最优态。核心函数：\[D116\]\(docs/zh/funct](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-911f34d7649c00af / 中文：均等定理=诺特定理实例 — 3维乘法G=ε₁×ε₂×ε₃，维度置换对称→总资源R守恒。打破均等（如ε₁=0.1,ε₂=ε₃=0.9）→维度置换不对称→R守恒但分布不均→系统不在最优态。核心函数：\[D116\]\(docs/zh/funct
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D116；被引用：—
-- [中文：城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压。核心函数：\[D162\]\(docs/zh/functions/items/D162.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4751a2d56ed8c305 / 中文：城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压。核心函数：\[D162\]\(docs/zh/functions/items/D162.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D162；被引用：—
-- [中文：城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压。核心函数：\[D162\]\(docs/zh/functions/items/D162.md\) En…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fd1d7f74f1278e9e / 中文：城中村改造的门槛碾压逆效应——改造抬高Λ导致原居民被碾压。核心函数：\[D162\]\(docs/zh/functions/items/D162.md\) En…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D162；被引用：—
-- [中文：大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变。核心函数：\[D159\]\(docs/zh/functions/items/D159.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ed82725b77a533e4 / 中文：大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变。核心函数：\[D159\]\(docs/zh/functions/items/D159.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D159；被引用：—
-- [中文：大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变。核心函数：\[D159\]\(docs/zh/functions/it…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2ac237148e1ea41d / 中文：大数据的泛化相变——μ_data越过Λ_generalization的瞬间泛化能力质变。核心函数：\[D159\]\(docs/zh/functions/it…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D159；被引用：—
-- [中文：好奇心是自主意识的元点——C=0⟹Ψ=0定理](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bc77832eed9a56ca / 中文：好奇心是自主意识的元点——C=0⟹Ψ=0定理
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering pending human r…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-13911aadf91dd0aa / 中文：好奇心是自主意识的元点——C=0⟹Ψ=0定理 English: Rule-based English rendering pending human r…
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：学校教育新剧变直播笔记与点火框架碰撞验证。核心碰撞点：孩子成长中的"问题"其实是能力发展的里程碑。这对应点火框架的门控面演化函数——孩子成长中表现出的"问题行为"（好动、叛逆、固执等）不是需要纠正的错误，而是门控面正在演化、新的能力正](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bf2292742e79dcb8 / 中文：学校教育新剧变直播笔记与点火框架碰撞验证。核心碰撞点：孩子成长中的"问题"其实是能力发展的里程碑。这对应点火框架的门控面演化函数——孩子成长中表现出的"问题行为"（好动、叛逆、固执等）不是需要纠正的错误，而是门控面正在演化、新的能力正
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

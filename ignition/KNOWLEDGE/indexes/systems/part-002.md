@@ -6,6 +6,26 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M25 / data/external-research/088-external-source-atlas-medium.jsonl / M25 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M26 / data/external-research/088-external-source-atlas-medium.jsonl / M26 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M27 / data/external-research/088-external-source-atlas-medium.jsonl / M27 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M28 / data/external-research/088-external-source-atlas-medium.jsonl / M28 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M29 / data/external-research/088-external-source-atlas-medium.jsonl / M29 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-5bbe20bc4b728334 / Object D419 defines a mechanism_model within the point-fire framework. Core: 中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D309\]\(docs/zh/func
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D30, D309, D419；被引用：—
-- [Object D420 defines a mechanism_model within the point-fire framework. Core: 中文：M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-fcf31339b01442b2 / Object D420 defines a mechanism_model within the point-fire framework. Core: 中文：M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D420；被引用：—
-- [Object D421 defines a mechanism_model within the point-fire framework. Core: 中文：M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4b5d067bdc7365dd / Object D421 defines a mechanism_model within the point-fire framework. Core: 中文：M11的**τ_min=τ_delay**——最小响应时间等于反馈延迟时间。延迟
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D421；被引用：—
-- [Object D422 defines a mechanism_model within the point-fire framework. Core: 中文：M12的n/2作为容斥主导不可逆的间接观测量——用可观测的传染临界预警不可观测的](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8745e2c1e85da806 / Object D422 defines a mechanism_model within the point-fire framework. Core: 中文：M12的n/2作为容斥主导不可逆的间接观测量——用可观测的传染临界预警不可观测的
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D422；被引用：—
-- [Object D423 defines a mechanism_model within the point-fire framework. Core: 中文：M13的六个参数归约为3个有效参数：n_eff=n·√\(p̄·Σαᵢ/β\)，K，](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bbb11add418b8963 / Object D423 defines a mechanism_model within the point-fire framework. Core: 中文：M13的六个参数归约为3个有效参数：n_eff=n·√\(p̄·Σαᵢ/β\)，K，
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D423；被引用：—

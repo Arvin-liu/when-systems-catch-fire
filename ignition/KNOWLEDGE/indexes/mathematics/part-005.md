@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [G21 Positive Evidence Exists](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ad58742af903fcd3 / G21 Positive Evidence Exists
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [G22 Boundary / Negative Evidence Exists](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-5de07f5aa27f2276 / G22 Boundary / Negative Evidence Exists
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [G25 Evidence Path Available](../../../inputs/020/formal-protocol-promotion-standard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-00e0a602807e2221 / G25 Evidence Path Available
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [g=exp\[-\(ln\(μ/M_Planck\)\)²/\(2σ²\)\]，A-B型统一、极值点处量子涨落自然为零 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c38618c5f6cbb8e4 / g=exp\[-\(ln\(μ/M_Planck\)\)²/\(2σ²\)\]，A-B型统一、极值点处量子涨落自然为零 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [G_delta 仅可作为有适用条件的外部定理引用或受限类比。](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9a47c60274d2a0a1 / G_delta 仅可作为有适用条件的外部定理引用或受限类比。
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [g_eff-p-双向反馈函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D259 / g_eff-p-双向反馈函数 / D259
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D258；被引用：CLAIM-D259, NFC-04ae107a279786cf, NFC-1af659d0058d7b85, NFC-46aaaaf0e5dca8e6
 - [g_eff-p-正反馈函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D258 / g_eff-p-正反馈函数 / D258
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-ac9f307d019f67e3 / If upstream objects D_{T11} exist, compose F_{T11}=N\(⊕_{g∈D_{T11}} g\); otherwise treat F_{T11} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T11；被引用：—
-- [If upstream objects D_{T12} exist, compose F_{T12}=N\(⊕_{g∈D_{T12}} g\); otherwise treat F_{T12} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a73eb9d7fdbffa16 / If upstream objects D_{T12} exist, compose F_{T12}=N\(⊕_{g∈D_{T12}} g\); otherwise treat F_{T12} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T12；被引用：—
-- [If upstream objects D_{T13} exist, compose F_{T13}=N\(⊕_{g∈D_{T13}} g\); otherwise treat F_{T13} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8384f0b2965a3069 / If upstream objects D_{T13} exist, compose F_{T13}=N\(⊕_{g∈D_{T13}} g\); otherwise treat F_{T13} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T13；被引用：—
-- [If upstream objects D_{T14} exist, compose F_{T14}=N\(⊕_{g∈D_{T14}} g\); otherwise treat F_{T14} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-242b7394976d20bc / If upstream objects D_{T14} exist, compose F_{T14}=N\(⊕_{g∈D_{T14}} g\); otherwise treat F_{T14} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T14；被引用：—
-- [If upstream objects D_{T15} exist, compose F_{T15}=N\(⊕_{g∈D_{T15}} g\); otherwise treat F_{T15} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cbb740fc28ed4d36 / If upstream objects D_{T15} exist, compose F_{T15}=N\(⊕_{g∈D_{T15}} g\); otherwise treat F_{T15} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T15；被引用：—
-- [If upstream objects D_{T16} exist, compose F_{T16}=N\(⊕_{g∈D_{T16}} g\); otherwise treat F_{T16} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa0a32ab9e43acea / If upstream objects D_{T16} exist, compose F_{T16}=N\(⊕_{g∈D_{T16}} g\); otherwise treat F_{T16} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T16；被引用：—
-- [If upstream objects D_{T17} exist, compose F_{T17}=N\(⊕_{g∈D_{T17}} g\); otherwise treat F_{T17} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-684d0f0a36c252d4 / If upstream objects D_{T17} exist, compose F_{T17}=N\(⊕_{g∈D_{T17}} g\); otherwise treat F_{T17} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T17；被引用：—

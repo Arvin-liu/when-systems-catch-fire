@@ -4,6 +4,121 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [量子引力 → **pending**（需要外部物理理论和实验验证）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-54b2724c6e8bc559 / 量子引力 → **pending**（需要外部物理理论和实验验证）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [量子引力-新门控面预测](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D272 / 量子引力-新门控面预测 / D272
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D271, D360；被引用：NFC-704660a74163a5d3, NFC-7d09c143e8723e77, NFC-9ad72cbef33df0be, NFC-a5f9291fa7ceaba0
+- [量子引力-新门控面预测](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4fc37ef4ab309ff5 / 量子引力-新门控面预测
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [量子引力Φ框架函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：T34 / 量子引力Φ框架函数 / T34
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：CLAIM-T34, NFC-278d05610ba609bd, NFC-3427d0ab77db1b9b, NFC-3ce146523623f7bf
+- [量子引力和四力统一是两个不同能标上的事件 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7bd9eeb8caa7ceea / 量子引力和四力统一是两个不同能标上的事件 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [量子引力（需要外部物理理论和实验验证）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ed3afd64c6cfa7c7 / 量子引力（需要外部物理理论和实验验证）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [量子引力：外部物理理论（如弦论、圈量子引力）和实验验证（如引力波、量子引力效应）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-dc0afe0d0e459185 / 量子引力：外部物理理论（如弦论、圈量子引力）和实验验证（如引力波、量子引力效应）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [量子隧穿-门槛突破函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D196 / 量子隧穿-门槛突破函数 / D196
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-129d24b6b1fbef77, NFC-2c24f35a8363309f, NFC-96a1c93db5345c88
+- [链间耦合函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D74 / 链间耦合函数 / D74
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D1, D90；被引用：NFC-0a2132fb635ab1e7, NFC-0b49583d065d82fd, NFC-32b25ad683e738aa, NFC-3ac33c33eff9db84
+- [链间耦合函数→跨链耦合强度由共享节点数决定。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ab66f3492de48d0a / 链间耦合函数→跨链耦合强度由共享节点数决定。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [链间耦合函数，跨链耦合强度由共享节点数决定。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-73ab320886c53005 / 链间耦合函数，跨链耦合强度由共享节点数决定。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [链间耦合函数，跨链耦合强度由共享节点数决定。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-342a6ac1d96b1e24 / 链间耦合函数，跨链耦合强度由共享节点数决定。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [锁定-遮蔽耦合](../../../data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D2 / 锁定-遮蔽耦合 / D2
+  - 来源：`data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json`
+  - 依赖：A6, A7, D1, D90；被引用：CLAIM-D246, NFC-11dbb957877436da, NFC-19c27386c7e7f30e, NFC-4088ee508709a718
+- [锁定强度函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D1 / 锁定强度函数 / D1
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：D224, D90, T39；被引用：D10, D11, D12, D13
+- [错误分类**：循环、偷换概念、量词滑移、范畴错误、相关因果混淆、隐藏前提均独立标注。](../../../docs/foundation/logic/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6ae28e9beeedc5ad / 错误分类**：循环、偷换概念、量词滑移、范畴错误、相关因果混淆、隐藏前提均独立标注。
+  - 来源：`docs/foundation/logic/README.md`
+  - 依赖：—；被引用：—
+- [门控-路径积分同构与极小熵原理](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-f9a917ac9e4bc1d9 / 门控-路径积分同构与极小熵原理
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [门控-路径积分同构与极小熵原理](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：T30 / 门控-路径积分同构与极小熵原理 / T30
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：T20, NFC-436ab05b21c267b3, NFC-4d1674df3a136291, NFC-52930ec600cbef3d
+- [门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-54bbccedb66cd99d / 门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [门控信息熵跃迁函数](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：T31 / 门控信息熵跃迁函数 / T31
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：D530, D531, D532, NFC-2a8b33c23ca27ee1
+- [门控函数族的跨域同构](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2eb2d1f029410967 / 门控函数族的跨域同构
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [门控函数族（候选机制生成）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6fc7fd5781651a67 / 门控函数族（候选机制生成）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [门控函数稳定性必要条件](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d0a760381eeeace4 / 门控函数稳定性必要条件
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [门控函数稳定性必要条件](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
+  - 可搜索名称：T27 / 门控函数稳定性必要条件 / T27
+  - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
+  - 依赖：—；被引用：NFC-036aa2d55299124d, NFC-2fa63c847b99b389, NFC-3e0d307d91ff5cf5, NFC-458a90cdf12cfc83
 - [门控函数稳定性必要条件 / necessary condition for gate-function stability](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-0928bff692a6ec2e / 门控函数稳定性必要条件 / necessary condition for gate-function stability

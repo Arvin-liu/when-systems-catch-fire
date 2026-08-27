@@ -1,0 +1,42 @@
+{
+  "claim_ceiling": "Deterministic repository projection equality only; no authority, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.",
+  "output_count": 15,
+  "pass_1_sha256": {
+    ".github/README.md": "7ffc132b988fcdd1bc912c3b243ed221fb796e05384c58811042d847e8b5af10",
+    "ignition/AI-HANDOFF.md": "77af6eda0d131b95cfcf123ed4cdf9b22c33d1d03a0cd2897c76818554c1cc11",
+    "ignition/AI-START-HERE.md": "01c4d5fb728d78f417bbfc463deea4976bf55195ab773e3196623019f93df0e6",
+    "ignition/ARCHITECTURE.md": "4ca5b1fb7ea76e58f1aec615c763fd0b1c20d7d303e4d0c4a01259d5de20b44c",
+    "ignition/STATE-CHANGELOG.md": "6231dd44a348496134b576c17700a16088fa74e034891d5d443ca9e4d2eefb4b",
+    "ignition/data/architecture/current-facts.json": "65f15669a48b4ced51e91ed5fa8bf812c68785d2317474ceef46bf2cdb604951",
+    "ignition/data/operations/current-release-lifecycle-r1.json": "5c0eb3f8c59520bfb53aaa53a83b9506b44c951d7227da97c37556aa81a33589",
+    "ignition/data/operations/current-snapshot-r1.json": "762ecb6c408e0218853c72220319f394246cf72516a1db3979cafe0d8be03ab8",
+    "ignition/data/operations/current-task-lineage-status.json": "48767cbb296ce4617b51fa56d981040797941c0e6f4137c2459f02b37bbb281b",
+    "ignition/data/operations/current-volatile-fact-registry-r1.json": "74d355d7f12cbfec428b6ae7f58536b43bf2b018fc7d156171f4d71cdcd986b3",
+    "ignition/data/operations/iterations/143/execution-contract-r1.json": "01aa3d3678853bc9b0af3850a18d40d3d8d5ac41fbe0ddcc7e1aeaf1b58a8371",
+    "ignition/data/operations/task-identity-model-r1.json": "c7acb8c5a33dd8a91c0e8b84f895bd881ea73f7bd5fbb7a48a7f66f52e2cc250",
+    "ignition/docs/architecture/current-facts.md": "3a8a527116c05ecc9399c3d98327924d2ce5c34accf64e4acf7dbd5571c5ef13",
+    "ignition/docs/project-current-state.md": "94399f5ac007d6fd65aecb40b8c72eedb641255540c5f3fde2c9bde24bb11305",
+    "ignition/llms.txt": "12b5c1186737718e21c819ceae6626b3c0b6ef0bd5405d9cfc3f70aee397734e"
+  },
+  "pass_2_sha256": {
+    ".github/README.md": "7ffc132b988fcdd1bc912c3b243ed221fb796e05384c58811042d847e8b5af10",
+    "ignition/AI-HANDOFF.md": "77af6eda0d131b95cfcf123ed4cdf9b22c33d1d03a0cd2897c76818554c1cc11",
+    "ignition/AI-START-HERE.md": "01c4d5fb728d78f417bbfc463deea4976bf55195ab773e3196623019f93df0e6",
+    "ignition/ARCHITECTURE.md": "4ca5b1fb7ea76e58f1aec615c763fd0b1c20d7d303e4d0c4a01259d5de20b44c",
+    "ignition/STATE-CHANGELOG.md": "6231dd44a348496134b576c17700a16088fa74e034891d5d443ca9e4d2eefb4b",
+    "ignition/data/architecture/current-facts.json": "65f15669a48b4ced51e91ed5fa8bf812c68785d2317474ceef46bf2cdb604951",
+    "ignition/data/operations/current-release-lifecycle-r1.json": "5c0eb3f8c59520bfb53aaa53a83b9506b44c951d7227da97c37556aa81a33589",
+    "ignition/data/operations/current-snapshot-r1.json": "762ecb6c408e0218853c72220319f394246cf72516a1db3979cafe0d8be03ab8",
+    "ignition/data/operations/current-task-lineage-status.json": "48767cbb296ce4617b51fa56d981040797941c0e6f4137c2459f02b37bbb281b",
+    "ignition/data/operations/current-volatile-fact-registry-r1.json": "74d355d7f12cbfec428b6ae7f58536b43bf2b018fc7d156171f4d71cdcd986b3",
+    "ignition/data/operations/iterations/143/execution-contract-r1.json": "01aa3d3678853bc9b0af3850a18d40d3d8d5ac41fbe0ddcc7e1aeaf1b58a8371",
+    "ignition/data/operations/task-identity-model-r1.json": "c7acb8c5a33dd8a91c0e8b84f895bd881ea73f7bd5fbb7a48a7f66f52e2cc250",
+    "ignition/docs/architecture/current-facts.md": "3a8a527116c05ecc9399c3d98327924d2ce5c34accf64e4acf7dbd5571c5ef13",
+    "ignition/docs/project-current-state.md": "94399f5ac007d6fd65aecb40b8c72eedb641255540c5f3fde2c9bde24bb11305",
+    "ignition/llms.txt": "12b5c1186737718e21c819ceae6626b3c0b6ef0bd5405d9cfc3f70aee397734e"
+  },
+  "passes_equal": true,
+  "result": "PASS",
+  "schema_version": "ignition-143-step15-deterministic-current-surface-r1",
+  "task_id": "IGNITION-20260827-143"
+}

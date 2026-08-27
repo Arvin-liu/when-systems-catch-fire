@@ -94,10 +94,10 @@
   - 可搜索名称：NFC-b6ab17c423d791c0 / `COMPLETED_VALIDATED` without validator refs remains unverified.
   - 来源：`reports/operations/ignition-122-federation-progress.md`
   - 依赖：—；被引用：—
-- [`COMPLETED_VALIDATED`，下一步必须先 reconciliation。](../../../AI-HANDOFF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ccb2e161d8884c20 / `COMPLETED_VALIDATED`，下一步必须先 reconciliation。
-  - 来源：`AI-HANDOFF.md`
+- [`COMPLETED_VALIDATED`、Goal completion 或外部真值。](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3db5074d5589f80a / `COMPLETED_VALIDATED`、Goal completion 或外部真值。
+  - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—
 - [`content_truth_status = pending_item_level_review` at 076](../../../reports/foundation-architecture/076-adversarial-acceptance-audit-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -148,6 +148,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ba6528ed948e8af2 / `docs/architecture/esi-experiment-protocol-r0.md`.
   - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
+- [`docs/editorial/README.md`：将三篇新文章接入人类阅读入口，说明 Task104 旧质量快照与 Task143 当前编辑证据的区别。](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-36c216511df7b2c3 / `docs/editorial/README.md`：将三篇新文章接入人类阅读入口，说明 Task104 旧质量快照与 Task143 当前编辑证据的区别。
+  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
+  - 依赖：—；被引用：—
+- [`docs/editorial/source-manifest.json`：为三篇新文章登记 17 个实际来源路径、SHA-256、审校证据和 `REVIEWED_CURRENT` 状态；`editorial_lifecycle.py` 重](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8809f661216de258 / `docs/editorial/source-manifest.json`：为三篇新文章登记 17 个实际来源路径、SHA-256、审校证据和 `REVIEWED_CURRENT` 状态；`editorial_lifecycle.py` 重
+  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
   - 依赖：—；被引用：—
 - [`docs/generated/recent-stage-results.md` 是阶段快照的唯一展示投影，不能成为第二份人工状态源。`--check` 重新渲染该专用页并逐字比较；registry 变化但该专用页未同步时失败。README](../../../docs/operations/stage-snapshot-publication.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -408,6 +418,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6aa3e39a1de08176 / `OS != executor`; `Reasoner != Executor`; `Pack != truth authority`; Memory is
   - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
+- [`OWNER_DEFERRED`。`LIVE_EXTERNAL_INVOCATION` 仍 OPEN，六次历史 attempt、零 validated](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-dcab1f31640341bd / `OWNER_DEFERRED`。`LIVE_EXTERNAL_INVOCATION` 仍 OPEN，六次历史 attempt、零 validated
+  - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [`P1 machine-readable data` 已完成：七类机器可读数据 + schema + 校验器齐备，`python3 tools/validate_data.py` 通过（`ALL_P1_DATA_VALID`）。](../../../docs/getbrain-handoff-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1319,6 +1334,11 @@
   - 可搜索名称：NFC-1d191dff026a1f54 / authority_changes: the terminal result adds no Owner, provider, channel, browser, remote Git, executor-configuration, bi
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: this presentation-only transition grants no Owner, provider, executor, channel, browser, remote-Git,](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-757c8c95c59672a7 / authority_changes: this presentation-only transition grants no Owner, provider, executor, channel, browser, remote-Git,
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [Autodiff, JIT ELBO evaluation and trace transforms generate execution/gradients but do not provide a verified compiler o](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5b554ffd3275b7dc / Autodiff, JIT ELBO evaluation and trace transforms generate execution/gradients but do not provide a verified compiler o
@@ -1583,6 +1603,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-3b0689e5cf63f5c5 / Canonical evidence/source references:
   - 来源：`templates/operations/task-command-template.md`
+  - 依赖：—；被引用：—
+- [canonical identity、Task143 lineage、current facts JSON/Markdown 与 deterministic snapshot：由 `validate_current_state_sync.p](../../../reports/operations/ignition-143-step17-current-state-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-054994690dc7f3c9 / canonical identity、Task143 lineage、current facts JSON/Markdown 与 deterministic snapshot：由 `validate_current_state_sync.p
+  - 来源：`reports/operations/ignition-143-step17-current-state-sync.md`
   - 依赖：—；被引用：—
 - [Canonical index conflicts: FIXED \(S120-008=UNRESOLVED, S120-015=BLOCKED\)](../../../reports/external-research/121Q2V-verification-repair-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2049,6 +2074,11 @@
   - 可搜索名称：NFC-9ad103c39a99509d / Claim ceiling: this audit records repository-local baseline evidence only. It
   - 来源：`reports/operations/ignition-137-step00-baseline-audit.md`
   - 依赖：—；被引用：—
+- [Claim ceiling: this capsule is repository-local continuity and resume evidence only. It does not establish production re](../../../reports/operations/ignition-143-resume-capsule.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fc8dfae9e3db196e / Claim ceiling: this capsule is repository-local continuity and resume evidence only. It does not establish production re
+  - 来源：`reports/operations/ignition-143-resume-capsule.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: this is bounded read-only reconciliation evidence. It does not](../../../reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-aa76b1085a2beffe / Claim ceiling: this is bounded read-only reconciliation evidence. It does not
@@ -2092,6 +2122,11 @@
 - [claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence o](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bf1bc9243324afd1 / claim_ceiling: repository-local lifecycle decoupling, provider-neutral admission and sole-map synchronization evidence o
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [claim_ceiling: repository-local phase parking and publication-production evidence only; no external truth, production re](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e8034b37155ad1e4 / claim_ceiling: repository-local phase parking and publication-production evidence only; no external truth, production re
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic reg](../../../STATE-CHANGELOG.md)
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ac2350dd70c2ef55 / Current canonical record already preserves the information-gate metric with unresolved cross-domain semantics.
   - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：—；被引用：—
-- [Current canonical record already preserves the model-internal threshold claim and unresolved semantics.](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-73f1795f8492b3f9 / Current canonical record already preserves the model-internal threshold claim and unresolved semantics.
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：—；被引用：—
-- [Current canonical record already preserves the probability model with unresolved semantics and no empirical promotion.](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ee8d6d8e43e433aa / Current canonical record already preserves the probability model with unresolved semantics and no empirical promotion.
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：—；被引用：—
-- [Current canonical record already preserves the repository/model ceiling and unresolved mapping obligations.](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-74abbfd8c193957f / Current canonical record already preserves the repository/model ceiling and unresolved mapping obligations.
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：—；被引用：—
-- [Current canonical record already preserves the repository/model relation and its unresolved physical interpretation.](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-08eacafde46ce466 / Current canonical record already preserves the repository/model relation and its unresolved physical interpretation.
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：—；被引用：—
-- [Current canonical record already preserves the spatial-coupling relation as unresolved.](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-239dc13aead03768 / Current canonical record already preserves the spatial-coupling relation as unresolved.
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：—；被引用：—
-- [Current canonical record already preserves the threshold candidate and unresolved type/definition gates.](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1241bf098ad7de75 / Current canonical record already preserves the threshold candidate and unresolved type/definition gates.
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：—；被引用：—
-- [Current facts and the 0.10.0 map are generated from canonical registries and are not authoritative inputs; 127 must pres](../../../reports/operations/ignition-127-step00-rebase-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a928e26a93ac3349 / Current facts and the 0.10.0 map are generated from canonical registries and are not authoritative inputs; 127 must pres
-  - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
   - 依赖：—；被引用：—

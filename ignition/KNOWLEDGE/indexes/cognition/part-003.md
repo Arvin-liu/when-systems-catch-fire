@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-620\]\( \) \| \[早产5年空间验证\]\( \) \| 人类大脑容量受盆骨限制。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f2c4173da3bf7a3d / \| \[C-620\]\( \) \| \[早产5年空间验证\]\( \) \| 人类大脑容量受盆骨限制。 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-647\]\( \) \| \[退出权空间案例27\]\( \) \| A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4ab0f0ff84915a62 / \| \[C-647\]\( \) \| \[退出权空间案例27\]\( \) \| A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的

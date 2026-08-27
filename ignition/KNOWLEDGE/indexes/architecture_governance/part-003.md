@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Current canonical record already preserves the model-internal threshold claim and unresolved semantics.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-73f1795f8492b3f9 / Current canonical record already preserves the model-internal threshold claim and unresolved semantics.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the probability model with unresolved semantics and no empirical promotion.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ee8d6d8e43e433aa / Current canonical record already preserves the probability model with unresolved semantics and no empirical promotion.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the repository/model ceiling and unresolved mapping obligations.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-74abbfd8c193957f / Current canonical record already preserves the repository/model ceiling and unresolved mapping obligations.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the repository/model relation and its unresolved physical interpretation.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-08eacafde46ce466 / Current canonical record already preserves the repository/model relation and its unresolved physical interpretation.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the spatial-coupling relation as unresolved.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-239dc13aead03768 / Current canonical record already preserves the spatial-coupling relation as unresolved.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current canonical record already preserves the threshold candidate and unresolved type/definition gates.](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1241bf098ad7de75 / Current canonical record already preserves the threshold candidate and unresolved type/definition gates.
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：—；被引用：—
+- [Current facts and the 0.10.0 map are generated from canonical registries and are not authoritative inputs; 127 must pres](../../../reports/operations/ignition-127-step00-rebase-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a928e26a93ac3349 / Current facts and the 0.10.0 map are generated from canonical registries and are not authoritative inputs; 127 must pres
+  - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
+  - 依赖：—；被引用：—
 - [Current Facts, Current Snapshot and the seven compiler-owned Current Snapshot](../../../reports/operations/ignition-138-step12-current-state-sync.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a25550c4c19ae767 / Current Facts, Current Snapshot and the seven compiler-owned Current Snapshot
@@ -2468,39 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-3EECD05B496C6C0A / def audit\(self\) -> dict\[str, Any\]: / IMPLICIT-3EECD05B496C6C0A / IMPLICIT-369887DE44B09696
   - 来源：`agent_federation/live_reconciliation_events.py`
-  - 依赖：—；被引用：—
-- [def audit\(self\) -> dict\[str, Any\]:](../../../agent_federation/live_observation_events.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-71D404A4960F0975 / def audit\(self\) -> dict\[str, Any\]: / IMPLICIT-71D404A4960F0975 / IMPLICIT-369887DE44B09696
-  - 来源：`agent_federation/live_observation_events.py`
-  - 依赖：—；被引用：—
-- [def audit\(self\) -> dict\[str, Any\]:](../../../agent_federation/live_inference_observation_events.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-92043ABC4EE94536 / def audit\(self\) -> dict\[str, Any\]: / IMPLICIT-92043ABC4EE94536 / IMPLICIT-369887DE44B09696
-  - 来源：`agent_federation/live_inference_observation_events.py`
-  - 依赖：—；被引用：—
-- [def audit\(self\) -> dict\[str, Any\]:](../../../agent_federation/convergence.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EBDEA8E739CFE6A4 / def audit\(self\) -> dict\[str, Any\]: / IMPLICIT-EBDEA8E739CFE6A4 / IMPLICIT-369887DE44B09696
-  - 来源：`agent_federation/convergence.py`
-  - 依赖：—；被引用：—
-- [def auth_source_metadata_digest\(root: Path\) -> str:](../../../agent_federation/live_transport.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-7E8B80A55601B000 / def auth_source_metadata_digest\(root: Path\) -> str: / IMPLICIT-7E8B80A55601B000
-  - 来源：`agent_federation/live_transport.py`
-  - 依赖：—；被引用：—
-- [def bare_doi\(raw\):](../../../evidence-program/tools/run_crossref_verification.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-50FC6C3884BC6CE0 / def bare_doi\(raw\): / IMPLICIT-50FC6C3884BC6CE0
-  - 来源：`evidence-program/tools/run_crossref_verification.py`
-  - 依赖：—；被引用：—
-- [def batch_verify_dois\(dois: list\[str\], mailto: str = DEFAULT_MAILTO\) -> list\[dict\]:](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A7FF43C815F28F6D / def batch_verify_dois\(dois: list\[str\], mailto: str = DEFAULT_MAILTO\) -> list\[dict\]: / IMPLICIT-A7FF43C815F28F6D
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
-- [def begin_dispatch\(self\) -> LiveTransitionRecord:](../../../agent_federation/live_bridge.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A942558ACA6DD91E / def begin_dispatch\(self\) -> LiveTransitionRecord: / IMPLICIT-A942558ACA6DD91E
-  - 来源：`agent_federation/live_bridge.py`
   - 依赖：—；被引用：—

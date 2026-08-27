@@ -89,8 +89,8 @@
     "foundation": {
       "function_identity_cards": 6026,
       "function_quarantine_or_pending": 4874,
-      "nonfunction_claims": 17473,
-      "nonfunction_quarantine_or_pending": 4940
+      "nonfunction_claims": 17550,
+      "nonfunction_quarantine_or_pending": 4944
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -125,11 +125,11 @@
       "method_version": "1.4.0"
     },
     "knowledge_experience": {
-      "aliases": 876,
-      "cards": 414,
+      "aliases": 874,
+      "cards": 413,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 23831
+      "search_records": 23908
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -201,7 +201,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "61b870ebc76ce9e5f45041e7385504f098d836ebb163dc6b9f74c76b3599edcf"
+      "sha256": "caee486a14d1b639c4b169c82e9517c07f55032a2ab5888da3b4707dce2bfbc5"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -209,11 +209,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "07a34268061afe5ff1c58c536e333022416cbfbb85e29914be4e8a6932db8a71"
+      "sha256": "adb5d78a41a72029b21467c56d9233364187ed2419e7232058e04bba6bb773de"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "88843426d6334bd0d3ba1933bfbac845fe178f300cb4fac662b40ad74cc116ce"
+      "sha256": "92c5b980176c3fb7c73548653bf1d203770a1c3209582cdf12f5e7ca5f655a2e"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",

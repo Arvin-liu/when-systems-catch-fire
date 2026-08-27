@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Per-surface external attestations and lifecycle blockers:](../../../templates/operations/execution-result-template.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-ebd47c26575ab0c3 / Per-surface external attestations and lifecycle blockers:
+  - 来源：`templates/operations/execution-result-template.md`
+  - 依赖：—；被引用：—
+- [Per-task latent programs are ephemeral and have no registry, provenance, version, approval, deprecation or rollback life](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0e307d57f43f54c5 / Per-task latent programs are ephemeral and have no registry, provenance, version, approval, deprecation or rollback life
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [perception := P\(state\) = {perceived information}（感知函数）](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-53608C960F3B1928 / perception := P\(state\) = {perceived information}（感知函数） / IMPLICIT-53608C960F3B1928 / IMPLICIT-6768A17E7FDFDFD0
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [perception := P\(state\) = {perceived information}（感知函数）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6768A17E7FDFDFD0 / perception := P\(state\) = {perceived information}（感知函数） / IMPLICIT-6768A17E7FDFDFD0 / IMPLICIT-53608C960F3B1928
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [Perelman用Ricci流证明，8种几何是"原子"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4b01213ce039eedf / Perelman用Ricci流证明，8种几何是"原子"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [Persistent checkpoints, code/descriptions, vectors, events and overwrite files support lifecycle, but provenance, versio](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e57ec7dd1bb7ba21 / Persistent checkpoints, code/descriptions, vectors, events and overwrite files support lifecycle, but provenance, versio
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [persona or consciousness claims, or a second physical Pack migration.](../../../docs/architecture/agent-platform-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-119a925faa2e837f / persona or consciousness claims, or a second physical Pack migration.
@@ -1004,6 +1034,16 @@
   - 可搜索名称：NFC-cd74cba4280cfac6 / Step 09 ran 44 current identity/semantics/ordinal/compiler/lifecycle/witness/release-candidate tests with 44 passes. Rel
   - 来源：`agent-results/IGNITION-20260822-133-result.md`
   - 依赖：—；被引用：—
+- [Step 17 通过，Task143 的 Current State 同步影响为 `PRESENTATION_ONLY`。当前正式任务仍是 `IGNITION-20260827-143`，最新 architecture-changing t](../../../reports/operations/ignition-143-step17-current-state-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-edd0ea07b47d4af7 / Step 17 通过，Task143 的 Current State 同步影响为 `PRESENTATION_ONLY`。当前正式任务仍是 `IGNITION-20260827-143`，最新 architecture-changing t
+  - 来源：`reports/operations/ignition-143-step17-current-state-sync.md`
+  - 依赖：—；被引用：—
+- [Step00 read the formal lifecycle and publication witness evidence, the Results Book entry points and boundary, the Fire](../../../reports/operations/ignition-143-step00-baseline-owner-override-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ac650f27afc5f6f3 / Step00 read the formal lifecycle and publication witness evidence, the Results Book entry points and boundary, the Fire
+  - 来源：`reports/operations/ignition-143-step00-baseline-owner-override-audit.md`
+  - 依赖：—；被引用：—
 - [Stochastic inputs, means/standard deviations, repeat variability and Wasserstein shift are modeled, but calibration and](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-f00dfce24c4a7f10 / Stochastic inputs, means/standard deviations, repeat variability and Wasserstein shift are modeled, but calibration and
@@ -1569,6 +1609,11 @@
   - 可搜索名称：NFC-62d2d09d55ec1c7d / The approved action is therefore narrow: refresh each materiality entry's current `source_sha256` to the observed source
   - 来源：`reports/operations/ignition-134-step06-human-surface-semantic-audit.md`
   - 依赖：—；被引用：—
+- [The architecture and external-executor qualification phase is closed at the verified Task142 baseline. Publication produ](../../../reports/operations/ignition-143-resume-capsule.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4986937df68dc594 / The architecture and external-executor qualification phase is closed at the verified Task142 baseline. Publication produ
+  - 来源：`reports/operations/ignition-143-resume-capsule.md`
+  - 依赖：—；被引用：—
 - [the audit output includes evidence paths for each hard gate](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-662e8659da3d78c3 / the audit output includes evidence paths for each hard gate
@@ -1678,6 +1723,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-5406b09b345f2a77 / The front-door staleness check is fail-closed: `tools/validate_human_front_door.py` enforces the current method version,
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [The frozen formal baseline is `Arvin-liu/when-systems-catch-fire` `refs/heads/main` at `b359580fe31866bc04eeb24911011e0b](../../../reports/operations/ignition-143-resume-capsule.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f8ab17a690a205ae / The frozen formal baseline is `Arvin-liu/when-systems-catch-fire` `refs/heads/main` at `b359580fe31866bc04eeb24911011e0b
+  - 来源：`reports/operations/ignition-143-resume-capsule.md`
   - 依赖：—；被引用：—
 - [The functions satisfy the stated opposing monotonicity and the product lacks an interior inverted-U maximum. It refutes](../../../data/foundation/validations/079-equivalence-checks.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2454,53 +2504,3 @@
   - 可搜索名称：NFC-8cc6510047aa827a / title: "Φ跨域统一定理（D224升级）"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D224；被引用：—
-- [title: "Φ近似阶数选择函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-DD2B35B96ED4688C / title: "Φ近似阶数选择函数" / IMPLICIT-DD2B35B96ED4688C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f9ca03e38e4b5d70 / title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "Ω最优区间定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f5380a3ca7fc944b / title: "Ω最优区间定理"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "万有理论门槛函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C936B741BF0B7EA8 / title: "万有理论门槛函数" / IMPLICIT-C936B741BF0B7EA8 / IMPLICIT-33B3F0E68BEA7051
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三域熵统一函数（推论级）"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-49C2EFC5DE1C037D / title: "三域熵统一函数（推论级）" / IMPLICIT-49C2EFC5DE1C037D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三域熵统一函数（推论级）"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b1f3f4edf18e58cc / title: "三域熵统一函数（推论级）"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三域退化统一参数函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C66F71BAD9194790 / title: "三域退化统一参数函数" / IMPLICIT-C66F71BAD9194790
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三域退化统一参数函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-167dc3fc69a95484 / title: "三域退化统一参数函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三层退化叠加函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2876F2656A55413F / title: "三层退化叠加函数" / IMPLICIT-2876F2656A55413F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构 / 三层重演验证 - L1/L2/L3共享Φdispatch骨架, 差异仅在ηinterface参数值, 数](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38d7952b519392f8 / title: "三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构 / 三层重演验证 - L1/L2/L3共享Φdispatch骨架, 差异仅在ηinterface参数值, 数
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—

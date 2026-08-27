@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Blockers](../../ASSET-CARDS.md#asset-hr-853faf13207f1d67)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Blockers / blockers-20260712
+  - 来源：`reports/math-foundation/blockers-20260712.md`
+  - 依赖：—；被引用：—
+- [blocker、未解决证明义务、commit 和 Draft PR。](../../../docs/VERSIONING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-94e5fcd10761eaf4 / blocker、未解决证明义务、commit 和 Draft PR。
+  - 来源：`docs/VERSIONING.md`
+  - 依赖：—；被引用：—
+- [Book Project R1 已链接两篇样章，且素材—章节映射、四层证据策略和与既有十二章成果册的重复审计都已写入\[书籍项目\]\(../../PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没](../../../reports/operations/ignition-143-step15-cross-publication-coherence.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5ce6612c1ab61624 / Book Project R1 已链接两篇样章，且素材—章节映射、四层证据策略和与既有十二章成果册的重复审计都已写入\[书籍项目\]\(../../PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没
+  - 来源：`reports/operations/ignition-143-step15-cross-publication-coherence.md`
+  - 依赖：—；被引用：—
+- [Both artifacts are valid, but their domains differ from one another and both are narrower than the source's domain-unspe](../../../reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c5f84bed8ecf6bfc / Both artifacts are valid, but their domains differ from one another and both are narrower than the source's domain-unspe
+  - 来源：`reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md`
+  - 依赖：T2；被引用：—
+- [Boundary negative example; not a technical quantum information proof.](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-439d5220b042dcfd / Boundary negative example; not a technical quantum information proof.
+  - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json`
+  - 依赖：—；被引用：—
+- [Boundary: this is not a complete cosmological network and does not claim to unify stellar physics, thermodynamics, and l](../../../data/architecture/multiscale-causal-fabric/examples/stellar-nucleosynthesis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f2fbd3a2f0c12ee9 / Boundary: this is not a complete cosmological network and does not claim to unify stellar physics, thermodynamics, and l
+  - 来源：`data/architecture/multiscale-causal-fabric/examples/stellar-nucleosynthesis.md`
+  - 依赖：—；被引用：—
 - [Boundary: this is not a technical proof in quantum information theory. It is a repository safety example for preventing](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0719069b163d9e38 / Boundary: this is not a technical proof in quantum information theory. It is a repository safety example for preventing
@@ -1578,7 +1608,7 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D600 / D600｜资源托举退化为路径控制 / D600
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
-  - 依赖：A2, A3, A4, D595；被引用：D595, CLAIM-D600, NFC-11f3a0cd14dba324, NFC-1fff0958b33e40bd
+  - 依赖：A2, A3, A4, D595；被引用：D595, CLAIM-D600, NFC-06e1728b9ffcecbb, NFC-07c8403741925891
 - [D601｜角色覆盖主体身份](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
   - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
   - 可搜索名称：D601 / D601｜角色覆盖主体身份 / D601
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-be4848bc5a50c87b / G2 系统不越权改写宪章内容。** 宪章系统只治理宪章的*生命周期、版本、绑定与继承*，不修改任何宪章的规范正文。价值宪章的**底线（保留底线）**高于本系统。
   - 来源：`docs/governance/charter-system-r1.md`
   - 依赖：—；被引用：—
-- [G21 Positive Evidence Exists](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ad58742af903fcd3 / G21 Positive Evidence Exists
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [G22 Boundary / Negative Evidence Exists](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-5de07f5aa27f2276 / G22 Boundary / Negative Evidence Exists
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [G25 Evidence Path Available](../../../inputs/020/formal-protocol-promotion-standard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-00e0a602807e2221 / G25 Evidence Path Available
-  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
-  - 依赖：—；被引用：—
-- [g=exp\[-\(ln\(μ/M_Planck\)\)²/\(2σ²\)\]，A-B型统一、极值点处量子涨落自然为零 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c38618c5f6cbb8e4 / g=exp\[-\(ln\(μ/M_Planck\)\)²/\(2σ²\)\]，A-B型统一、极值点处量子涨落自然为零 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [G_delta 仅可作为有适用条件的外部定理引用或受限类比。](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9a47c60274d2a0a1 / G_delta 仅可作为有适用条件的外部定理引用或受限类比。
-  - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [g_eff-p-双向反馈函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D259 / g_eff-p-双向反馈函数 / D259
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D211, D220, D258；被引用：CLAIM-D259, NFC-04ae107a279786cf, NFC-1af659d0058d7b85, NFC-46aaaaf0e5dca8e6

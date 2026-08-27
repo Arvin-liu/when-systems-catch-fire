@@ -37,7 +37,7 @@
       "data/operations/propagation/106-impact/106-impact.json": "bb6ef719f5b4deb152cb4a0c3523bab56757b96fdb93bf2073342155169a109a",
       "data/operations/propagation/121Q32I-residue.json": "268bc5a65643693a99494b2192dadc39d0e8f818d5582872f77e44070f4ee0d3",
       "data/operations/propagation/121Q33-residue.json": "d5317ca5bcfce8e1ca5830a8aacd7a003948504c64251b74a93b40db892a6a9f",
-      "tools/propagation/impact_contract.py": "508343ed447547856c734f12e86e8955746f86c870236a61acdfc6272854bfc5"
+      "tools/propagation/impact_contract.py": "4cf8685c8552f82a11e41108086fc78cccf1881abffa7934954541d88985a936"
     }
   },
   "negative_fixture_path": "tests/fixtures/step06-sealed-propagation-residual-r1.json",

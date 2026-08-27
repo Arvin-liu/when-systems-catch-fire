@@ -4,6 +4,51 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [FUNC 数据不少于 13 条；](../../../outputs/audit/p1-machine-readable-data-audit-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8ed7cd67a714b03d / FUNC 数据不少于 13 条；
+  - 来源：`outputs/audit/p1-machine-readable-data-audit-20260707.md`
+  - 依赖：—；被引用：—
+- [Function Dependency Dataset](../../../data/schemas/function_dependency.schema.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-92242248eb3585b1 / Function Dependency Dataset
+  - 来源：`data/schemas/function_dependency.schema.json`
+  - 依赖：—；被引用：—
+- [Function OS baseline: a direct bounded Python function with an input check and return value. It can compute and reject a](../../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a35d5e7a2de41899 / Function OS baseline: a direct bounded Python function with an input check and return value. It can compute and reject a
+  - 来源：`reports/architecture-calibration/STEP08-PREREGISTRATION.md`
+  - 依赖：—；被引用：—
+- [Function OS CI 失败 -> 已修。真实根因（Actions 日志）：`pytest: command not found`（exit 127），runner 未预装且 pyproject 未声明。修复：workflow 显式](../../../data/external-research/121-fulltext-resolver/121q6d/121Q6D-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-69bd4b18a990f9a2 / Function OS CI 失败 -> 已修。真实根因（Actions 日志）：`pytest: command not found`（exit 127），runner 未预装且 pyproject 未声明。修复：workflow 显式
+  - 来源：`data/external-research/121-fulltext-resolver/121q6d/121Q6D-final-report.md`
+  - 依赖：—；被引用：—
+- [Function OS v0.2 硬化候选**已本地验证可复现**（任意 CWD、双运行器、163 测试）。](../../../data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-0f633568bb468cfe / Function OS v0.2 硬化候选**已本地验证可复现**（任意 CWD、双运行器、163 测试）。
+  - 来源：`data/external-research/121-fulltext-resolver/121q6c/121Q6C-final-report.md`
+  - 依赖：—；被引用：—
+- [function_dependency 数据结构](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b957852530e85536 / function_dependency 数据结构
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [FunctionSpec → Representation → Compiler → Artifact → Interpreter → ExecutionTrace → Validator → ComposerRouter → Versio](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-249aaba834375c20 / FunctionSpec → Representation → Compiler → Artifact → Interpreter → ExecutionTrace → Validator → ComposerRouter → Versio
+  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
+  - 依赖：—；被引用：—
+- [FUSE survey full-text review: static, sparse, routed, activation-guided, aligned and search-based composition families,](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-471b524f3e7f0f07 / FUSE survey full-text review: static, sparse, routed, activation-guided, aligned and search-based composition families,
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [Future state-changing work must follow ITERATION.md: recover remote truth, prove the gap, set a claim ceiling, synchroni](../../../llms.txt)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-db4e2fffc192a39e / Future state-changing work must follow ITERATION.md: recover remote truth, prove the gap, set a claim ceiling, synchroni
+  - 来源：`llms.txt`
+  - 依赖：—；被引用：—
 - [f₁=15%（与原始案例框架相似度，≤30% 通过）、f₁=3%（与已有验证报告重复度，≤5% 通过）、f₄=1.0（与点火框架收敛度，≥1 通过）；J⁺=1,J⁻=0。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-2c501e1b5fdcdb99 / f₁=15%（与原始案例框架相似度，≤30% 通过）、f₁=3%（与已有验证报告重复度，≤5% 通过）、f₄=1.0（与点火框架收敛度，≥1 通过）；J⁺=1,J⁻=0。
@@ -2024,6 +2069,11 @@
   - 可搜索名称：NFC-a6f78b797dc87bb3 / main_merged_schema_validated_navigation_view
   - 来源：`reports/releases/121Q15-completion-seal.json`
   - 依赖：—；被引用：—
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; Task143 starts from the verified Task142 final baseline `b359580fe31866bc04](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fd86a22b00fcce90 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; Task143 starts from the verified Task142 final baseline `b359580fe31866bc04
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this append-only delta records the completed task-branch candidate, not a c](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5d8137dbfc4910f8 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this append-only delta records the completed task-branch candidate, not a c
@@ -2453,54 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6f8e30fdf1940375 / No validated live completion occurred, so the historical `LIVE_EXTERNAL_INVOCATION` obligation remains open with its ori
   - 来源：`reports/operations/ignition-137-step12-obligation-lifecycle.md`
-  - 依赖：—；被引用：—
-- [No validator semantics were weakened and no historical manifest, Human Surface entry, map source, or append-only histori](../../../reports/operations/ignition-132-step12-regression-closure.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-57f51a2bfea889e1 / No validator semantics were weakened and no historical manifest, Human Surface entry, map source, or append-only histori
-  - 来源：`reports/operations/ignition-132-step12-regression-closure.md`
-  - 依赖：—；被引用：—
-- [No Ψ₀ frozen assets, 085 frozen v1 assets, legacy two-table source files, or historical evidence cards were intentionall](../../../reports/governance/121Q8-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7b9864e6a60444b0 / No Ψ₀ frozen assets, 085 frozen v1 assets, legacy two-table source files, or historical evidence cards were intentionall
-  - 来源：`reports/governance/121Q8-final-report.md`
-  - 依赖：—；被引用：—
-- [Node 4: Artifact](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-701920732f557551 / Node 4: Artifact
-  - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
-  - 依赖：—；被引用：—
-- [nodes = load_jsonl\(f"{BASE}/121c01-function-os-node-evidence-increment.jsonl"\)](../../../data/external-research/121-fulltext-resolver/121c01/121c01-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-03268a0e2f5830c2 / nodes = load_jsonl\(f"{BASE}/121c01-function-os-node-evidence-increment.jsonl"\)
-  - 来源：`data/external-research/121-fulltext-resolver/121c01/121c01-validator.py`
-  - 依赖：—；被引用：—
-- [non-OK must still record a reason \(never silently dropped\)](../../../evidence-program/tools/validate_evidence_program.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-392fef7492457c11 / non-OK must still record a reason \(never silently dropped\)
-  - 来源：`evidence-program/tools/validate_evidence_program.py`
-  - 依赖：—；被引用：—
-- [Non-Sycophancy Output Protocol](../../ASSET-CARDS.md#asset-hr-70403729fef8b50e)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：Non-Sycophancy Output Protocol / non-sycophancy-output-protocol
-  - 来源：`docs/governance/non-sycophancy-output-protocol.md`
-  - 依赖：—；被引用：—
-- [nonfunction registry changed the declared Current Facts inputs. Current Facts,](../../../reports/operations/ignition-138-step13-targeted-regression.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5421779d6cc6a1b2 / nonfunction registry changed the declared Current Facts inputs. Current Facts,
-  - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
-  - 依赖：—；被引用：—
-- [not claim validated reader cognitive migration, literary quality, knowledge](../../../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e85583fe169ccff4 / not claim validated reader cognitive migration, literary quality, knowledge
-  - 来源：`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
-  - 依赖：—；被引用：—
-- [Not every registered surface must change. Every applicable surface must receive exactly one explicit `CHANGE`, `NO_CHANG](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6ea07034fddf38df / Not every registered surface must change. Every applicable surface must receive exactly one explicit `CHANGE`, `NO_CHANG
-  - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [nothing about real user data, external truth, production readiness, or Goal](../../../reports/operations/ignition-137-step05-synthetic-readonly-fixture.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b2c39bb272f4a26d / nothing about real user data, external truth, production readiness, or Goal
-  - 来源：`reports/operations/ignition-137-step05-synthetic-readonly-fixture.md`
   - 依赖：—；被引用：—

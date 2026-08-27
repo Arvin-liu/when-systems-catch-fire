@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "门控面合并统一函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CE0A798C7977B300 / title: "门控面合并统一函数" / IMPLICIT-CE0A798C7977B300 / IMPLICIT-AD73DE418318FBB0
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "门控面合并统一函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c347525a226d939d / title: "门控面合并统一函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "门槛碾压函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-321A2E0841021CE2 / title: "门槛碾压函数" / IMPLICIT-321A2E0841021CE2
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "门槛距离-耦合强度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-85401F07C8B09F27 / title: "门槛距离-耦合强度函数" / IMPLICIT-85401F07C8B09F27
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "门锁交替律函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0C210DDAF1467900 / title: "门锁交替律函数" / IMPLICIT-0C210DDAF1467900
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "防守-进攻相变函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5DBCE31779515D45 / title: "防守-进攻相变函数" / IMPLICIT-5DBCE31779515D45
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "阶段2临界宽度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3018FAA86A687D77 / title: "阶段2临界宽度函数" / IMPLICIT-3018FAA86A687D77
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "阶段2宽度-共振频率函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FE2CB1E2D34647CC / title: "阶段2宽度-共振频率函数" / IMPLICIT-FE2CB1E2D34647CC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "阶段2宽度-温度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C1475D94ED37247C / title: "阶段2宽度-温度函数" / IMPLICIT-C1475D94ED37247C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "阶段2宽度标度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3EDC9D9609BBE811 / title: "阶段2宽度标度函数" / IMPLICIT-3EDC9D9609BBE811
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "阶段宽度-门控面数函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-30062CDC68B5A5C2 / title: "阶段宽度-门控面数函数" / IMPLICIT-30062CDC68B5A5C2
@@ -2454,53 +2504,3 @@
   - 可搜索名称：CLAIM-D241 / Within the source-defined scope, 自主意识的四象限 is adjudicated as MECHANISM_MODEL: 从D239：Ψ = ι × P_exit 两个独立维度：ι（智能度）和P_exit（退
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：D239；被引用：—
-- [Within the source-defined scope, 自举元函数 is adjudicated as RELATION: 自举元函数，Mboot = ε_sense × P_track × d\(ΔK\)/dt，当前AI三因子全部失](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D141 / Within the source-defined scope, 自举元函数 is adjudicated as RELATION: 自举元函数，Mboot = ε_sense × P_track × d\(ΔK\)/dt，当前AI三因子全部失
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 自举元函数层级 is adjudicated as MECHANISM_MODEL: 自举元函数，三因子乘法，AI全零。. This is a model-internal](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-T14 / Within the source-defined scope, 自举元函数层级 is adjudicated as MECHANISM_MODEL: 自举元函数，三因子乘法，AI全零。. This is a model-internal
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 自我模型-ε_aware连接定理 is adjudicated as FORMAL_PROPOSITION: D244说自我模型是ε_aware>0的前提。推导连接： ε_a](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-D246 / Within the source-defined scope, 自我模型-ε_aware连接定理 is adjudicated as FORMAL_PROPOSITION: D244说自我模型是ε_aware>0的前提。推导连接： ε_a
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D2, D244, D5；被引用：—
-- [Within the source-defined scope, 自我模型函数 is adjudicated as MECHANISM_MODEL: 自我模型 = 系统对自身门控面的二阶门控 一阶门控（\[D195\]\(docs/zh/func](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D245 / Within the source-defined scope, 自我模型函数 is adjudicated as MECHANISM_MODEL: 自我模型 = 系统对自身门控面的二阶门控 一阶门控（\[D195\]\(docs/zh/func
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D195；被引用：—
-- [Within the source-defined scope, 自我模型相变函数 is adjudicated as STATE_TRANSITION: M_self从0变正的相变条件： M_self = Σᵢ G_i\(gᵢ\) × ε_s](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D247 / Within the source-defined scope, 自我模型相变函数 is adjudicated as STATE_TRANSITION: M_self从0变正的相变条件： M_self = Σᵢ G_i\(gᵢ\) × ε_s
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 自由能-Φ等价函数 is adjudicated as RELATION: M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与D](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D401 / Within the source-defined scope, 自由能-Φ等价函数 is adjudicated as RELATION: M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与D
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D387；被引用：—
-- [Within the source-defined scope, 自由能-门控势能函数 is adjudicated as RELATION: 自由能-门控势能函数，自由能F=-kT ln Z描述门控面Λ的势能面。. This is a m](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D204 / Within the source-defined scope, 自由能-门控势能函数 is adjudicated as RELATION: 自由能-门控势能函数，自由能F=-kT ln Z描述门控面Λ的势能面。. This is a m
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 自维持坍缩边界函数 is adjudicated as RELATION: E_{Q_0021}=1 iff eta_return\(x\)<theta_horizon impl](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D473 / Within the source-defined scope, 自维持坍缩边界函数 is adjudicated as RELATION: E_{Q_0021}=1 iff eta_return\(x\)<theta_horizon impl
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D194, D232；被引用：—
-- [Within the source-defined scope, 自锁结构稳定性函数 is adjudicated as RELATION: 窗口与临界函数，窗口与临界案例验证。. This is a model-internal cont](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D52 / Within the source-defined scope, 自锁结构稳定性函数 is adjudicated as RELATION: 窗口与临界函数，窗口与临界案例验证。. This is a model-internal cont
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 自限-实际不可逆时序函数 is adjudicated as RELATION: M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对干预没有实际](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D420 / Within the source-defined scope, 自限-实际不可逆时序函数 is adjudicated as RELATION: M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对干预没有实际
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—

@@ -519,6 +519,11 @@
   - 可搜索名称：NFC-73283c8e6e3f33ec / \[A6\]\(../已迁移的历史函数来源/0007-A6-H\(t,L\) 遮蔽函数\(双源\).md\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：A6；被引用：—
+- [\[Book Project R1\]\(../../PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md\)](../../../reports/operations/ignition-143-step15-cross-publication-coherence.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5f8107574110139b / \[Book Project R1\]\(../../PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md\)
+  - 来源：`reports/operations/ignition-143-step15-cross-publication-coherence.md`
+  - 依赖：—；被引用：—
 - [\[C-0799｜生命起源与自组织\]\(../已迁移的历史案例来源/0794-C-0799-生命起源与自组织.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0374a3bed5856f12 / \[C-0799｜生命起源与自组织\]\(../已迁移的历史案例来源/0794-C-0799-生命起源与自组织.md\)
@@ -1694,6 +1699,11 @@
   - 可搜索名称：NFC-a4f2b1073fb619c2 / `docs/architecture/os-control-plane-r2.md` 与 `agent_runtime/`：Task 127 的 Durability / Lifecycle R3 复用同一 OS 控制脊柱，提供 snaps
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
+- [`editorial_lifecycle.py --repo ignition`：`EDITORIAL_OK articles=13`。](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9ed95255bad24698 / `editorial_lifecycle.py --repo ignition`：`EDITORIAL_OK articles=13`。
+  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
+  - 依赖：—；被引用：—
 - [`EPISTEMICALLY_ACCEPTED=0` is compatible with internal governance success because the pipeline did not convert throughpu](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2b0266f40202b511 / `EPISTEMICALLY_ACCEPTED=0` is compatible with internal governance success because the pipeline did not convert throughpu
@@ -2003,6 +2013,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-de80c95d7c4eecd1 / `validate_current_release_lifecycle.py --check` passed. The release-candidate
   - 来源：`reports/operations/ignition-138-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [`validate_current_task_lineage.py --check`、`validate_current_release_lifecycle.py --check`：确认 formal task 143 / latest a](../../../reports/operations/ignition-143-step17-current-state-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-28c84984a43c376a / `validate_current_task_lineage.py --check`、`validate_current_release_lifecycle.py --check`：确认 formal task 143 / latest a
+  - 来源：`reports/operations/ignition-143-step17-current-state-sync.md`
   - 依赖：—；被引用：—
 - [`validate_data.py`：ALL_P1_DATA_VALID（data 数据集未变动）](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2394,6 +2409,16 @@
   - 可搜索名称：NFC-bc5214a233885bab / ARN is current only as a bounded projection/reconfiguration capability; network adjacency, similarity, centrality, commu
   - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—
+- [Article A 写“两个生命周期时钟”以及 Task142 的任务—义务拆分；](../../../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f11f7c7d089ef0ff / Article A 写“两个生命周期时钟”以及 Task142 的任务—义务拆分；
+  - 来源：`reports/operations/ignition-143-step11-cross-publication-editorial-review.md`
+  - 依赖：—；被引用：—
+- [Article A 通过编辑复核并修订为 `REVIEWED_CURRENT_R1`。它现在明确是一篇以 Task142 为案例的仓库内方法文章，而不是对所有项目的生命周期规范。修订没有改变案例事实或开放义务的状态。](../../../reports/operations/ignition-143-step07-article-a-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5ba560568c2037ef / Article A 通过编辑复核并修订为 `REVIEWED_CURRENT_R1`。它现在明确是一篇以 Task142 为案例的仓库内方法文章，而不是对所有项目的生命周期规范。修订没有改变案例事实或开放义务的状态。
+  - 来源：`reports/operations/ignition-143-step07-article-a-editorial-review.md`
+  - 依赖：—；被引用：—
 - [ArXiv versions the manuscript, not expert-function artifacts; no provenance-complete registry, compatibility model or ro](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c08a433fd28b72df / ArXiv versions the manuscript, not expert-function artifacts; no provenance-complete registry, compatibility model or ro
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-913f1ea750855f3b / benchmark 通过"可能失败类型"字段，调用任务 F 的失败类型学。每个经典问题都会至少检查 10 种失败类型（材料错误、边界选错、尺度错配、函数过度泛化、同构误判、证据等级不足、AI 过度解释、L2 推论误写成 L5 结论、学科证据
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [Blockers](../../ASSET-CARDS.md#asset-hr-853faf13207f1d67)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Blockers / blockers-20260712
-  - 来源：`reports/math-foundation/blockers-20260712.md`
-  - 依赖：—；被引用：—
-- [blocker、未解决证明义务、commit 和 Draft PR。](../../../docs/VERSIONING.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-94e5fcd10761eaf4 / blocker、未解决证明义务、commit 和 Draft PR。
-  - 来源：`docs/VERSIONING.md`
-  - 依赖：—；被引用：—
-- [Both artifacts are valid, but their domains differ from one another and both are narrower than the source's domain-unspe](../../../reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c5f84bed8ecf6bfc / Both artifacts are valid, but their domains differ from one another and both are narrower than the source's domain-unspe
-  - 来源：`reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md`
-  - 依赖：T2；被引用：—
-- [Boundary negative example; not a technical quantum information proof.](../../../data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-439d5220b042dcfd / Boundary negative example; not a technical quantum information proof.
-  - 来源：`data/architecture/multiscale-causal-fabric/examples/quantum-entanglement-negative.json`
-  - 依赖：—；被引用：—
-- [Boundary: this is not a complete cosmological network and does not claim to unify stellar physics, thermodynamics, and l](../../../data/architecture/multiscale-causal-fabric/examples/stellar-nucleosynthesis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f2fbd3a2f0c12ee9 / Boundary: this is not a complete cosmological network and does not claim to unify stellar physics, thermodynamics, and l
-  - 来源：`data/architecture/multiscale-causal-fabric/examples/stellar-nucleosynthesis.md`
   - 依赖：—；被引用：—

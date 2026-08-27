@@ -4,6 +4,91 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [证据等级：强（多案例 + 机制清晰）](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-566049bfc8af25fc / 证据等级：强（多案例 + 机制清晰）
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [证据边界：独立来源支持的史实只按范围使用；徽宗私人信仰、佛教改制的全部地方经验、道教疗效、未核彩色细节和道教对北宋灭亡的唯一因果均保持开放或删除。原输入中的第三方课程原文未公开。](../../../docs/publication/zhiyuan-writing-showcase.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-02c2c48a46e5d0cd / 证据边界：独立来源支持的史实只按范围使用；徽宗私人信仰、佛教改制的全部地方经验、道教疗效、未核彩色细节和道教对北宋灭亡的唯一因果均保持开放或删除。原输入中的第三方课程原文未公开。
+  - 来源：`docs/publication/zhiyuan-writing-showcase.md`
+  - 依赖：—；被引用：—
+- [证据：** \[正式 PR\]\(https://github.com/Arvin-liu/when-systems-catch-fire/pull/134\) / \[1111 回执 PR #42\]\(https://github.com/Arvin](../../../docs/generated/recent-stage-results.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-274bf6906898a5a5 / 证据：** \[正式 PR\]\(https://github.com/Arvin-liu/when-systems-catch-fire/pull/134\) / \[1111 回执 PR #42\]\(https://github.com/Arvin
+  - 来源：`docs/generated/recent-stage-results.md`
+  - 依赖：—；被引用：—
+- [评价端也在发生变化。林麂所在的区，最近出台了一套新的赛课评课标准——用AI做课堂分析。老师上传两节不同课的录像，系统会自动统计出一组数据：老师讲了多久，学生说了多久，自主学习的时间占多少等。数据表生成后，教研员和领导据此打分。课堂里那些最鲜](../../../inputs/collisions/20260708-teacher-competition/source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-697d4a07c912390f / 评价端也在发生变化。林麂所在的区，最近出台了一套新的赛课评课标准——用AI做课堂分析。老师上传两节不同课的录像，系统会自动统计出一组数据：老师讲了多久，学生说了多久，自主学习的时间占多少等。数据表生成后，教研员和领导据此打分。课堂里那些最鲜
+  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
+  - 依赖：—；被引用：—
+- [译者增加 `therefore`，回译又得到 `因此`，制造出来源没有的因果。](../../../docs/language-thought/translation-and-residue.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2482492124ab857c / 译者增加 `therefore`，回译又得到 `因此`，制造出来源没有的因果。
+  - 来源：`docs/language-thought/translation-and-residue.md`
+  - 依赖：—；被引用：—
+- [话题链跨句时先建立指称账本，再决定重复名词、代词、被动或重组段落。](../../../docs/language-thought/profiles/en.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-c0d88f3c97c3a04a / 话题链跨句时先建立指称账本，再决定重复名词、代词、被动或重组段落。
+  - 来源：`docs/language-thought/profiles/en.md`
+  - 依赖：—；被引用：—
+- [该案例展示了元协议缺失如何直接导致系统性失效。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1d4085eba5ad49bc / 该案例展示了元协议缺失如何直接导致系统性失效。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [该案例适合做系统性风险和均衡失效的跨域投影。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-87e9bce1f01427a9 / 该案例适合做系统性风险和均衡失效的跨域投影。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [该链由当前迭代操作法继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-36b84f9cd332934b / 该链由当前迭代操作法继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [误导后续机制生成。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5f285e355a366258 / 误导后续机制生成。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [说明：机制抽取、全文读取与两张表碰撞均基于 Markdown 整理稿；PDF 仅作会话展示载体，已降为 transport hash，不声称与文本逐字节一致。](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b940abd825d0644a / 说明：机制抽取、全文读取与两张表碰撞均基于 Markdown 整理稿；PDF 仅作会话展示载体，已降为 transport hash，不声称与文本逐字节一致。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [请解释 MCF、PSD 与 ARN 怎样分工、连接，以及 ARN 为什么把因果主张](../../../docs/ai-assistant-usage-reference.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3fb62e98814a9522 / 请解释 MCF、PSD 与 ARN 怎样分工、连接，以及 ARN 为什么把因果主张
+  - 来源：`docs/ai-assistant-usage-reference.md`
+  - 依赖：—；被引用：—
+- [责任/负担投影 `JIN-MCF-B01`：胜利收益集中于新政权、军政精英和部分投附者；风险与成本由士卒、被征发者、平民、俘虏、迁徙者、被征服地区和沉默主体承担。凯旋叙事把死亡、屠杀、掳掠、饥荒和治理断裂压成“效率”。](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-67264acc5c2b157f / 责任/负担投影 `JIN-MCF-B01`：胜利收益集中于新政权、军政精英和部分投附者；风险与成本由士卒、被征发者、平民、俘虏、迁徙者、被征服地区和沉默主体承担。凯旋叙事把死亡、屠杀、掳掠、饥荒和治理断裂压成“效率”。
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [贫困陷阱与点火框架M1增强回路的负向同构。贫困形成负向增强回路，需要外部扰动打破锁定，验证了代际逃逸死锁机制。](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：CLAIM-BC-20260709-018 / 贫困陷阱与点火框架M1增强回路的负向同构。贫困形成负向增强回路，需要外部扰动打破锁定，验证了代际逃逸死锁机制。
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [费勇的"瓶颈→系统调整→知行合一"三段论与点火框架的"锁定→自举激活→主权最大化"完美对应，验证了框架在个人成长域的适用性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b38964253db9c8d3 / 费勇的"瓶颈→系统调整→知行合一"三段论与点火框架的"锁定→自举激活→主权最大化"完美对应，验证了框架在个人成长域的适用性。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [赛课机制、职称考评、学校业绩和形式主义事务长期挤压教师的真实教学空间。部分教师在长期高压中逐渐压低愧疚感，形成系统性钝化；但教室中的具体师生互动仍可能成为教师的避风港，使教师在非教学事务之外保留意义感。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ac4dbb8eeb32b801 / 赛课机制、职称考评、学校业绩和形式主义事务长期挤压教师的真实教学空间。部分教师在长期高压中逐渐压低愧疚感，形成系统性钝化；但教室中的具体师生互动仍可能成为教师的避风港，使教师在非教学事务之外保留意义感。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [赛课机制下的教师生存困境碰撞](../../../inputs/collisions/20260708-teacher-competition/task.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5b39d5b68ac56a55 / 赛课机制下的教师生存困境碰撞
+  - 来源：`inputs/collisions/20260708-teacher-competition/task.md`
+  - 依赖：—；被引用：—
 - [赛课机制下的教师生存困境碰撞报告](../../ASSET-CARDS.md#asset-hr-a9a90af4c17ea1f8)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：赛课机制下的教师生存困境碰撞报告 / collision-report

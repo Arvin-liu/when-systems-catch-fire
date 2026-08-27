@@ -114,13 +114,15 @@ HISTORICAL_SEALED_TASKS = {104, 105, 106}
 HISTORICAL_SEALED_SOURCES = {
     "data/operations/project-components.json",
     "data/operations/change-propagation-topology.json",
-    # The current system-map layout, its human explanation and the versioned
-    # current-state page are also append-only projections.  Later Agent
-    # Platform/Federation releases may legitimately evolve them without
-    # rewriting the historical NO_IMPACT decisions of Tasks 104-106.
+    # The current system-map layout, its human explanation, the versioned
+    # current-state page and the editorial source manifest are also append-only
+    # projections. Later Agent Platform/Federation/publication releases may
+    # legitimately evolve them without rewriting the historical NO_IMPACT
+    # decisions of Tasks 104-106.
     "data/architecture/interactive-system-map-layout.json",
     "docs/architecture/interactive-system-map.md",
     "docs/project-current-state.md",
+    "docs/editorial/source-manifest.json",
 }
 
 

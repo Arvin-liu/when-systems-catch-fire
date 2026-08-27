@@ -1109,6 +1109,11 @@
   - 可搜索名称：NFC-4f1fb1f466592de9 / `I_iso\(A,B\)` 同构判定：现代艺术与科学范式转移、制度变迁、媒介变化之间的结构同构
   - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
   - 依赖：—；被引用：—
+- [`LIVE_EXTERNAL_INVOCATION` remains `OPEN`. The historical ledger-derived projection retains six attempts, zero validated](../../../reports/operations/ignition-143-resume-capsule.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fcfbd0a3bd801334 / `LIVE_EXTERNAL_INVOCATION` remains `OPEN`. The historical ledger-derived projection retains six attempts, zero validated
+  - 来源：`reports/operations/ignition-143-resume-capsule.md`
+  - 依赖：—；被引用：—
 - [`MemoryProjection` is the narrow bridge into the existing](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e003460aad6fbea1 / `MemoryProjection` is the narrow bridge into the existing
@@ -1148,11 +1153,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5cbd19f3ab984e2a / `PASS` for the branch-local Task139 Current projection. Current identity now
   - 来源：`reports/operations/ignition-139-step07-current-state-sync.md`
-  - 依赖：—；被引用：—
-- [`UNRECOVERED`。当前结论由 ledger-derived projection 给出：不是](../../ASSET-CARDS.md#asset-nfc-de10f2ada4964649)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-de10f2ada4964649 / `UNRECOVERED`。当前结论由 ledger-derived projection 给出：不是 / `UNRECOVERED`。当前结论由 ledger-derived projection 给出：不是
-  - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [A 1.2.0 manifest binds the request and four generated products, seed paths and components, resolved components, typed re](../../../ITERATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`

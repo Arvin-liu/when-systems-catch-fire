@@ -14,16 +14,15 @@
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=99; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260827-143` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `d5051cfae4cf4d1c52911743f33d2c1b1392cba711022a2d89a2915c11d357c8`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `522b9f3d2ae8a6c5fe30ddefcbfd4e9aac31823ca4b1eba7d1fd2a590c4fed14`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
-Task143 当前把点火从架构/执行器资格化阶段切换到出版生产阶段。Task142 的架构身份和 `0.16.0`
-地图是冻结的 resume baseline；执行器资格化已按 Owner 决定 `CLOSED / OWNER_DEFERRED`，
-`LIVE_EXTERNAL_INVOCATION` 仍 OPEN 但不再驱动当前任务继续运行。Task143 不启动外部 Agent
-live process；当前交付是三篇完整文章、一个 Book Project R1、至少两段成熟书稿以及它们在既有
-成果册入口中的链接。出版完成仍只是仓库内生产证据，不改变 `CURRENT_WITH_OPEN_OBLIGATIONS`
-或 `EPISTEMICALLY_ACCEPTED=0`。
+本轮把点火从架构/执行器资格化阶段切换到出版生产阶段。冻结的架构身份和 `0.16.0`
+地图构成 resume baseline；执行器资格化已按 Owner 决定停车并等待明确恢复，开放义务仍保留，
+但不再驱动本轮继续运行。本轮不启动外部 Agent live process；当前交付是三篇完整文章、一个
+Book Project R1、至少两段成熟书稿以及它们在既有成果册入口中的链接。出版完成仍只是仓库内
+生产证据，不改变当前开放义务与尚未达到认识论接受的边界。
 
 ## 当前形态
 

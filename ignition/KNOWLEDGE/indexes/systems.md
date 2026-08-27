@@ -5,8 +5,8 @@
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
 - [第 001 片](./systems/part-001.md)：1—500；"1_FunctionSpec", "2_Representation", "3_Compiler", "4_Artifact", → data/external-research/088-external-source-atlas-medium.jsonl
-- [第 002 片](./systems/part-002.md)：501—1000；data/external-research/088-external-source-atlas-medium.jsonl → Object D423 defines a mechanism_model within the point-fire framework. Core: 中文：M13的六个参数归约为3个有效参数：n_eff=n·√\(p̄·Σαᵢ/β\)，K，
-- [第 003 片](./systems/part-003.md)：1001—1500；Object D424 defines a mechanism_model within the point-fire framework. Core: 中文：M14的**两步策略是学习效应存在时的唯一最优策略。** 利用P_correct → \| `JIN-CLM-07` \| 局部兵力集中比总量对比更贴近部分战役机制 \| `argument_plausible` \| 必须重建地形、序列、可用兵力和指挥 \|
-- [第 004 片](./systems/part-004.md)：1501—2000；\| `JIN-CLM-08` \| 指挥中枢失序可能放大为溃败级联 \| `mechanism_hypothesis` \| 5% 不是已建立统一阈值；时序与中介待证 \| → 器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫
-- [第 005 片](./systems/part-005.md)：2001—2500；四、失败案例反向修正机制 → 赛课机制下的教师生存困境碰撞
-- [第 006 片](./systems/part-006.md)：2501—2611；赛课机制下的教师生存困境碰撞报告 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。
+- [第 002 片](./systems/part-002.md)：501—1000；data/external-research/088-external-source-atlas-medium.jsonl → Object D419 defines a mechanism_model within the point-fire framework. Core: 中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D309\]\(docs/zh/func
+- [第 003 片](./systems/part-003.md)：1001—1500；Object D420 defines a mechanism_model within the point-fire framework. Core: 中文：M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对 → \| `CLM-14` 遗漏项 \| 多机制交互 \| 数据分散 \| 单因素主导 \| 三束证据表 \| 财政、疾病、气候 \|
+- [第 004 片](./systems/part-004.md)：1501—2000；\| `CURRENT` \| 合并态在 `main` 上验证、front-door/current-state 表面同步 \| 真理式 post-merge 收口、无未决 residue、逐表面 attestation \| → 只列相似点，不列差异和机制证据。
+- [第 005 片](./systems/part-005.md)：2001—2500；可作为机制解释但需外部证据：B/C 层。 → 证据状态：** 日语等语言的语法／词汇系统描述充分；社会意义随场景与群体变化。
+- [第 006 片](./systems/part-006.md)：2501—2628；证据等级：强（多案例 + 机制清晰） → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。

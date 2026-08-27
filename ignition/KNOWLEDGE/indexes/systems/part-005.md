@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [可作为机制解释但需外部证据：B/C 层。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-ccd4e078dce7a6f7 / 可作为机制解释但需外部证据：B/C 层。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
+  - 依赖：—；被引用：—
+- [可独立作为机制来源锚点：A1–A15（访谈原文事件）。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0dd61880e6b53ca4 / 可独立作为机制来源锚点：A1–A15（访谈原文事件）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
+  - 依赖：A1, A15；被引用：—
+- [可能用于保护有害系统或阻止必要改革（滥用风险）。](../../../docs/governance/meta-protocol-reviews/protocols/V4.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ab6de753058a9457 / 可能用于保护有害系统或阻止必要改革（滥用风险）。
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/V4.md`
+  - 依赖：—；被引用：—
+- [可见性通过。可再决定是否处理第二批。](../../../outputs/audit/teacher-competition-index-visibility-check-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-17908ffa62213a02 / 可见性通过。可再决定是否处理第二批。
+  - 来源：`outputs/audit/teacher-competition-index-visibility-check-20260708.md`
+  - 依赖：—；被引用：—
+- [可选/稀疏字段**：一句话概括、现实场景、核心冲突、因果链、边界条件、为什么不是已有案例、反例（普遍缺失，靠自由叙述隐含）。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f60d8bf1a9c4136d / 可选/稀疏字段**：一句话概括、现实场景、核心冲突、因果链、边界条件、为什么不是已有案例、反例（普遍缺失，靠自由叙述隐含）。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [可选进入模式：`肉身 / 概念 / 物件 / 诗句 / 数字 / 费用 / 决定 / 记忆 / 矛盾 / 未命名问题 / 其他`](../../../templates/publication/zhiyuan-writing-spec.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a9a3502d8bdb5999 / 可选进入模式：`肉身 / 概念 / 物件 / 诗句 / 数字 / 费用 / 决定 / 记忆 / 矛盾 / 未命名问题 / 其他`
+  - 来源：`templates/publication/zhiyuan-writing-spec.md`
+  - 依赖：—；被引用：—
+- [可量化指标替代真实价值：p 值数量成为显式评价入口，机制解释性工作被挤出。](../../../inputs/collisions/20260708-cross-domain-smoke-test/science.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-4d42c56f0aca0f54 / 可量化指标替代真实价值：p 值数量成为显式评价入口，机制解释性工作被挤出。
+  - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/science.md`
+  - 依赖：—；被引用：—
+- [同构误判指两个系统看起来相似，但实际上不存在可比结构映射。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a82b0e212697343c / 同构误判指两个系统看起来相似，但实际上不存在可比结构映射。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [同样，我们也不能把北宋灭亡单独归给道教。战争、财政、军事判断、官僚竞争、外交选择和信息失灵，都需要各自的材料与因果分析。道教可以是权力结构中的一条通道，却不是一把能够解释所有失败的钥匙。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3ef8aac669f1867b / 同样，我们也不能把北宋灭亡单独归给道教。战争、财政、军事判断、官僚竞争、外交选择和信息失灵，都需要各自的材料与因果分析。道教可以是权力结构中的一条通道，却不是一把能够解释所有失败的钥匙。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁与伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN](../../../docs/USAGE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4ede3796f64ad258 / 向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁与伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN
+  - 来源：`docs/USAGE.md`
+  - 依赖：—；被引用：—
+- [命中：仅 C-0807（系统性钝化与教室避风港）提及「职称考评」「赛课机制」背景，但不含「职称硬门槛裹挟青年教师」等价结构。](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-77be6c0bbaa26e77 / 命中：仅 C-0807（系统性钝化与教室避风港）提及「职称考评」「赛课机制」背景，但不含「职称硬门槛裹挟青年教师」等价结构。
+  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [哥德尔不完备性判定与 `pending` 的联动机制缺失](../../../docs/structural_gap_audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-18bcf1f7d098a26d / 哥德尔不完备性判定与 `pending` 的联动机制缺失
+  - 来源：`docs/structural_gap_audit.md`
+  - 依赖：—；被引用：—
+- [器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-d2a893ad680ff1b6 / 器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
 - [四、失败案例反向修正机制](../../../outputs/getbrain/failure-typology-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-f463bda889261a55 / 四、失败案例反向修正机制
@@ -119,6 +184,11 @@
   - 可搜索名称：NFC-b4ed42771cc82e97 / 在耦合强、关系不稳、不可预测处误用会导致错误决策（滥用风险）。
   - 来源：`docs/governance/meta-protocol-reviews/protocols/E1.md`
   - 依赖：—；被引用：—
+- [地图构成 resume baseline；执行器资格化已按 Owner 决定停车并等待明确恢复，开放义务仍保留，](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1d7c3bf85b8d1edd / 地图构成 resume baseline；执行器资格化已按 Owner 决定停车并等待明确恢复，开放义务仍保留，
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [地理决定论与点火框架P_meta元协议的碰撞。地理环境作为初始条件（V₁延续性协议），通过资源分布影响技术发展路径，验证了元协议组合对文明演化的决定性作用。](../../../data/foundation/arguments/arguments.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：CLAIM-BC-20260709-003 / 地理决定论与点火框架P_meta元协议的碰撞。地理环境作为初始条件（V₁延续性协议），通过资源分布影响技术发展路径，验证了元协议组合对文明演化的决定性作用。
@@ -143,6 +213,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-00eeb962677af392 / 处理异质、时序与自适应关系，并把因果主张交回 MCF。
   - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [外部 Agent qualification 已按 Owner 决定进入 `OWNER_DEFERRED`。`LIVE_EXTERNAL_INVOCATION`](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-e19b69b3e123dd60 / 外部 Agent qualification 已按 Owner 决定进入 `OWNER_DEFERRED`。`LIVE_EXTERNAL_INVOCATION`
+  - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—
 - [外部证据 pending：E1–E6 全部 pending。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -328,6 +403,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a8db0ee8b42a6300 / 封闭退化为永久封锁且无解除机制
   - 来源：`docs/governance/meta-protocol-reviews/protocols/S1.md`
+  - 依赖：—；被引用：—
+- [将“系统叙事”和“成熟终态”改为“这个项目的叙事”和“对这个仓库而言的可用终态”，降低普遍化风险。](../../../reports/operations/ignition-143-step07-article-a-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-20295a639042c69b / 将“系统叙事”和“成熟终态”改为“这个项目的叙事”和“对这个仓库而言的可用终态”，降低普遍化风险。
+  - 来源：`reports/operations/ignition-143-step07-article-a-editorial-review.md`
   - 依赖：—；被引用：—
 - [将叙事与因果分开；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1193,6 +1273,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-b86050bcde1d58b6 / 文章以「赛课」机制为对象，揭示其将教师专业成长转化为可量化竞赛，层层绑定职称、绩效、学校业绩与教研资源，造成教师身心代价与真实教学被挤压。含 7 条机制链、多教师个案表格、系统性钝化与「教室作为避风港」结尾。提出了量化竞赛转化、多层利益绑定
   - 来源：`outputs/collisions/20260708-teacher-competition/source-snapshot.md`
+  - 依赖：—；被引用：—
+- [文章没有用“还需要证据”草草收尾，而是列出可被研究的变量与反例：资源依赖、路径条件、成功定义的决定权、替代路线、退出成本、时间变化，以及资源集中但没有路径绑定的反例。它同时提醒，研究不能把人的生活再次压成服从分数，必须允许不回答、撤回和改变](../../../reports/operations/ignition-143-step09-article-b-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e9b901dba9b7cd66 / 文章没有用“还需要证据”草草收尾，而是列出可被研究的变量与反例：资源依赖、路径条件、成功定义的决定权、替代路线、退出成本、时间变化，以及资源集中但没有路径绑定的反例。它同时提醒，研究不能把人的生活再次压成服从分数，必须允许不回答、撤回和改变
+  - 来源：`reports/operations/ignition-143-step09-article-b-editorial-review.md`
   - 依赖：—；被引用：—
 - [文章生成了一个候选 gap：**当统治者拥有征兆的登记权、解释权和展示权时，什么机制能让天意对统治者说“不”？**](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2418,89 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-467711ef66bf39e2 / 证据状态：** 日语等语言的语法／词汇系统描述充分；社会意义随场景与群体变化。
   - 来源：`docs/language-thought/dimensional-basis.md`
-  - 依赖：—；被引用：—
-- [证据等级：强（多案例 + 机制清晰）](../../../docs/getbrain-book-collision-guide-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-566049bfc8af25fc / 证据等级：强（多案例 + 机制清晰）
-  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [证据边界：独立来源支持的史实只按范围使用；徽宗私人信仰、佛教改制的全部地方经验、道教疗效、未核彩色细节和道教对北宋灭亡的唯一因果均保持开放或删除。原输入中的第三方课程原文未公开。](../../../docs/publication/zhiyuan-writing-showcase.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-02c2c48a46e5d0cd / 证据边界：独立来源支持的史实只按范围使用；徽宗私人信仰、佛教改制的全部地方经验、道教疗效、未核彩色细节和道教对北宋灭亡的唯一因果均保持开放或删除。原输入中的第三方课程原文未公开。
-  - 来源：`docs/publication/zhiyuan-writing-showcase.md`
-  - 依赖：—；被引用：—
-- [证据：** \[正式 PR\]\(https://github.com/Arvin-liu/when-systems-catch-fire/pull/134\) / \[1111 回执 PR #42\]\(https://github.com/Arvin](../../../docs/generated/recent-stage-results.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-274bf6906898a5a5 / 证据：** \[正式 PR\]\(https://github.com/Arvin-liu/when-systems-catch-fire/pull/134\) / \[1111 回执 PR #42\]\(https://github.com/Arvin
-  - 来源：`docs/generated/recent-stage-results.md`
-  - 依赖：—；被引用：—
-- [评价端也在发生变化。林麂所在的区，最近出台了一套新的赛课评课标准——用AI做课堂分析。老师上传两节不同课的录像，系统会自动统计出一组数据：老师讲了多久，学生说了多久，自主学习的时间占多少等。数据表生成后，教研员和领导据此打分。课堂里那些最鲜](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-697d4a07c912390f / 评价端也在发生变化。林麂所在的区，最近出台了一套新的赛课评课标准——用AI做课堂分析。老师上传两节不同课的录像，系统会自动统计出一组数据：老师讲了多久，学生说了多久，自主学习的时间占多少等。数据表生成后，教研员和领导据此打分。课堂里那些最鲜
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [译者增加 `therefore`，回译又得到 `因此`，制造出来源没有的因果。](../../../docs/language-thought/translation-and-residue.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2482492124ab857c / 译者增加 `therefore`，回译又得到 `因此`，制造出来源没有的因果。
-  - 来源：`docs/language-thought/translation-and-residue.md`
-  - 依赖：—；被引用：—
-- [话题链跨句时先建立指称账本，再决定重复名词、代词、被动或重组段落。](../../../docs/language-thought/profiles/en.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-c0d88f3c97c3a04a / 话题链跨句时先建立指称账本，再决定重复名词、代词、被动或重组段落。
-  - 来源：`docs/language-thought/profiles/en.md`
-  - 依赖：—；被引用：—
-- [该案例展示了元协议缺失如何直接导致系统性失效。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1d4085eba5ad49bc / 该案例展示了元协议缺失如何直接导致系统性失效。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [该案例适合做系统性风险和均衡失效的跨域投影。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-87e9bce1f01427a9 / 该案例适合做系统性风险和均衡失效的跨域投影。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [该链由当前迭代操作法继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-36b84f9cd332934b / 该链由当前迭代操作法继承并保留声明关系下的变更传播闭包。`substantive_causal_candidate`、`repository_dependency` 与 `synchronization_obligation` 权限分离；只
-  - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [误导后续机制生成。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5f285e355a366258 / 误导后续机制生成。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [说明：机制抽取、全文读取与两张表碰撞均基于 Markdown 整理稿；PDF 仅作会话展示载体，已降为 transport hash，不声称与文本逐字节一致。](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b940abd825d0644a / 说明：机制抽取、全文读取与两张表碰撞均基于 Markdown 整理稿；PDF 仅作会话展示载体，已降为 transport hash，不声称与文本逐字节一致。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
-  - 依赖：—；被引用：—
-- [请解释 MCF、PSD 与 ARN 怎样分工、连接，以及 ARN 为什么把因果主张](../../../docs/ai-assistant-usage-reference.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-3fb62e98814a9522 / 请解释 MCF、PSD 与 ARN 怎样分工、连接，以及 ARN 为什么把因果主张
-  - 来源：`docs/ai-assistant-usage-reference.md`
-  - 依赖：—；被引用：—
-- [责任/负担投影 `JIN-MCF-B01`：胜利收益集中于新政权、军政精英和部分投附者；风险与成本由士卒、被征发者、平民、俘虏、迁徙者、被征服地区和沉默主体承担。凯旋叙事把死亡、屠杀、掳掠、饥荒和治理断裂压成“效率”。](../../../reports/publication/jin-rise-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-67264acc5c2b157f / 责任/负担投影 `JIN-MCF-B01`：胜利收益集中于新政权、军政精英和部分投附者；风险与成本由士卒、被征发者、平民、俘虏、迁徙者、被征服地区和沉默主体承担。凯旋叙事把死亡、屠杀、掳掠、饥荒和治理断裂压成“效率”。
-  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [贫困陷阱与点火框架M1增强回路的负向同构。贫困形成负向增强回路，需要外部扰动打破锁定，验证了代际逃逸死锁机制。](../../../data/foundation/arguments/arguments.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：CLAIM-BC-20260709-018 / 贫困陷阱与点火框架M1增强回路的负向同构。贫困形成负向增强回路，需要外部扰动打破锁定，验证了代际逃逸死锁机制。
-  - 来源：`data/foundation/arguments/arguments.jsonl`
-  - 依赖：—；被引用：—
-- [费勇的"瓶颈→系统调整→知行合一"三段论与点火框架的"锁定→自举激活→主权最大化"完美对应，验证了框架在个人成长域的适用性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b38964253db9c8d3 / 费勇的"瓶颈→系统调整→知行合一"三段论与点火框架的"锁定→自举激活→主权最大化"完美对应，验证了框架在个人成长域的适用性。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [赛课机制、职称考评、学校业绩和形式主义事务长期挤压教师的真实教学空间。部分教师在长期高压中逐渐压低愧疚感，形成系统性钝化；但教室中的具体师生互动仍可能成为教师的避风港，使教师在非教学事务之外保留意义感。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ac4dbb8eeb32b801 / 赛课机制、职称考评、学校业绩和形式主义事务长期挤压教师的真实教学空间。部分教师在长期高压中逐渐压低愧疚感，形成系统性钝化；但教室中的具体师生互动仍可能成为教师的避风港，使教师在非教学事务之外保留意义感。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [赛课机制下的教师生存困境碰撞](../../../inputs/collisions/20260708-teacher-competition/task.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5b39d5b68ac56a55 / 赛课机制下的教师生存困境碰撞
-  - 来源：`inputs/collisions/20260708-teacher-competition/task.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,101 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：P_exit=0→B_active=0。退出权为零时自举无法激活。 关键发现：退出权归零→自举归零 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1bdfd26eca6a1a02 / 从这条案例看，中文：P_exit=0→B_active=0。退出权为零时自举无法激活。 关键发现：退出权归零→自举归零 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：P_exit=0→M_boot=0。退出权为零时自举元函数归零。 关键发现：退出权归零→自举归零 English: Rule-bas… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4bd19f4b2a578e56 / 从这条案例看，中文：P_exit=0→M_boot=0。退出权为零时自举元函数归零。 关键发现：退出权归零→自举归零 English: Rule-bas… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：P_exit=0→无法启动自举。退出权为零时自举元函数无法运行。 关键发现：退出权为零→自举不可用 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-85bee0c6c60e2582 / 从这条案例看，中文：P_exit=0→无法启动自举。退出权为零时自举元函数无法运行。 关键发现：退出权为零→自举不可用 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：P_exit→0→z_Pexit→1；P_exit→1→z_Pexit→∞。退出权趋向零时阻抗趋低，趋向1时阻抗无穷大。 关键发现：… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-308dc7edf3f948c0 / 从这条案例看，中文：P_exit→0→z_Pexit→1；P_exit→1→z_Pexit→∞。退出权趋向零时阻抗趋低，趋向1时阻抗无穷大。 关键发现：… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Posture_deg↑→H↑→σ估计偏差→P_exit计算错误。姿态激进导致遮蔽导致方差估计错误。 关键发现：姿态影响退出权计算… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-70391cedba2c24f8 / 从这条案例看，中文：Posture_deg↑→H↑→σ估计偏差→P_exit计算错误。姿态激进导致遮蔽导致方差估计错误。 关键发现：姿态影响退出权计算… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：R=真实/事实/心理/象征对应Ω的不同边界类型。退出权四种类型对应不同空间边界。 关键发现：退出权四类型=四边界 English:… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2e9e8dc918534fbe / 从这条案例看，中文：R=真实/事实/心理/象征对应Ω的不同边界类型。退出权四种类型对应不同空间边界。 关键发现：退出权四类型=四边界 English:… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Science Earth、EGSS、AI医疗、公众号四方向与点火框架联合碰撞验证。四个方向在不同驱动逻辑（任务驱动、熵引导、Con… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-adc9874945ca9614 / 从这条案例看，中文：Science Earth、EGSS、AI医疗、公众号四方向与点火框架联合碰撞验证。四个方向在不同驱动逻辑（任务驱动、熵引导、Con… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Science Earth、EGSS、点火三个框架联合碰撞验证。三个框架的质量度量函数形成约束放松链条（乘法结构→线性组合→加权和）… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6dc38ee33f9bee0b / 从这条案例看，中文：Science Earth、EGSS、点火三个框架联合碰撞验证。三个框架的质量度量函数形成约束放松链条（乘法结构→线性组合→加权和）… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Science Earth（EACN协议）与 EGSS（熵引导框架）碰撞验证。两者都是"聪明的计算"框架，但路径不同。Science… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b1cf2c8470004600 / 从这条案例看，中文：Science Earth（EACN协议）与 EGSS（熵引导框架）碰撞验证。两者都是"聪明的计算"框架，但路径不同。Science… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Science Earth（EACN协议）与点火框架碰撞验证。Science Earth 是任务驱动的协作网络（领域感知发现→竞争性… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3a1b3a975ed71236 / 从这条案例看，中文：Science Earth（EACN协议）与点火框架碰撞验证。Science Earth 是任务驱动的协作网络（领域感知发现→竞争性… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：T↓→C_exit↑→P_exit↓。时间不足导致退出成本上升进而退出权下降。 关键发现：时间约束影响退出权 English: Ru… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7bad1f6cd72c0028 / 从这条案例看，中文：T↓→C_exit↑→P_exit↓。时间不足导致退出成本上升进而退出权下降。 关键发现：时间约束影响退出权 English: Ru… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：α=1.5→Ω*≈1.65（与σ_opt=√e一致）。最优空间规模与最优方差同构。 关键发现：最优空间规模=σ_opt Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-32eadeff042ffd06 / 从这条案例看，中文：α=1.5→Ω*≈1.65（与σ_opt=√e一致）。最优空间规模与最优方差同构。 关键发现：最优空间规模=σ_opt Englis… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：δ\(Ω\)：二值边界；1/ln\(Ω\)：门槛边界；exp\[-ln²\(Ω\)\]：最优边界。退出权边界有多个形态。 关键发现：退出权边界多种形… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-10873104b5c349b2 / 从这条案例看，中文：δ\(Ω\)：二值边界；1/ln\(Ω\)：门槛边界；exp\[-ln²\(Ω\)\]：最优边界。退出权边界有多个形态。 关键发现：退出权边界多种形… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：ε_aware越过第一个相变点→C↑→P_exit↑。认知觉醒提升认知能力从而提升退出权。 关键发现：认知相变→退出权提升 Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-378b452cf7a65b97 / 从这条案例看，中文：ε_aware越过第一个相变点→C↑→P_exit↑。认知觉醒提升认知能力从而提升退出权。 关键发现：认知相变→退出权提升 Engl… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：η_gate↓→C↓→P_exit↓。信息门效率下降导致认知能力下降进而退出权下降。 关键发现：信息门效率影响退出权 English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b992663ce76f54e5 / 从这条案例看，中文：η_gate↓→C↓→P_exit↓。信息门效率下降导致认知能力下降进而退出权下降。 关键发现：信息门效率影响退出权 English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：σ_opt=√e≈1.65（跑步训练和API成本优化验证）。 关键发现：σ_opt=√e验证 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b992a0001ee2f623 / 从这条案例看，中文：σ_opt=√e≈1.65（跑步训练和API成本优化验证）。 关键发现：σ_opt=√e验证 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：σ↑→I_concentration↑→Ω有效维度↓→P_exit↓。集中性上升压缩有效维度降低退出权。 关键发现：集中性→退出权下… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7fd9c410116a6cbe / 从这条案例看，中文：σ↑→I_concentration↑→Ω有效维度↓→P_exit↓。集中性上升压缩有效维度降低退出权。 关键发现：集中性→退出权下… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Φ的极小点μ*≈1.26×10¹⁶ GeV↔P_exit的最大点Ω*≈1.65。退出权极值与Φ极值同构。 关键发现：P_exit-Φ… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-61f3c7afb69f7908 / 从这条案例看，中文：Φ的极小点μ*≈1.26×10¹⁶ GeV↔P_exit的最大点Ω*≈1.65。退出权极值与Φ极值同构。 关键发现：P_exit-Φ… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。 关键发现：空间极值归零 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2367874B1530B005 / 从这条案例看，中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。 关键发现：空间极值归零 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 / IMPLICIT-2367874B1530B005
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。 关键发现：空间极值归零 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1e85e9ef70e8956a / 从这条案例看，中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。 关键发现：空间极值归零 English: Rule-ba… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2407,100 +2502,5 @@
 - [从这条案例看，中文：案例说明：诺特定理验证 — 5维对称系统（fᵢ相同），∑ηᵢ=5×0.25=1.25恒定。打破对称后（1维门槛提高），∑ηᵢ仍=1.… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-48e5d1294833c46a / 从这条案例看，中文：案例说明：诺特定理验证 — 5维对称系统（fᵢ相同），∑ηᵢ=5×0.25=1.25恒定。打破对称后（1维门槛提高），∑ηᵢ仍=1.… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：调度成功率vs信息密度 — CAI用BL格式Pencode≈0.9但ηfidelity≈0.3需3次调度，用BM格式Pen… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fd2dae7e53f2c359 / 从这条案例看，中文：案例说明：调度成功率vs信息密度 — CAI用BL格式Pencode≈0.9但ηfidelity≈0.3需3次调度，用BM格式Pen… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：调度链中间节点必须是CAI — EAI做中间层Pencode=0链路断，CAI做中间层Pencode>0链路通，EAI只能… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c42bb3b580ebbbe1 / 从这条案例看，中文：案例说明：调度链中间节点必须是CAI — EAI做中间层Pencode=0链路断，CAI做中间层Pencode>0链路通，EAI只能… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：负温度 — ε>1="超存活"态，弛豫释放能量。核心函数：\[D158\]\(docs/zh/functions/items/D… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-90b4a1aeea7f6806 / 从这条案例看，中文：案例说明：负温度 — ε>1="超存活"态，弛豫释放能量。核心函数：\[D158\]\(docs/zh/functions/items/D… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158；被引用：—
-- [从这条案例看，中文：案例说明：贫富差距的乘法分化——1/ln在μ>>Λ趋近零（稳定）和μ<<Λ趋向负无穷（崩溃）的不对称加速。核心函数：\[D163\]\(d… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f1cd4d567c059d0b / 从这条案例看，中文：案例说明：贫富差距的乘法分化——1/ln在μ>>Λ趋近零（稳定）和μ<<Λ趋向负无穷（崩溃）的不对称加速。核心函数：\[D163\]\(d… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D163；被引用：—
-- [从这条案例看，中文：案例说明：贵族不西化=政治边缘化，农民完全无退出权，认同只点到贵族 关键发现：第3步部分满足 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6c3ff5001baf31c7 / 从这条案例看，中文：案例说明：贵族不西化=政治边缘化，农民完全无退出权，认同只点到贵族 关键发现：第3步部分满足 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：贵族有真实退出权（可流亡、可拒绝纳税），从王权认同转向宪政认同 关键发现：第5步跑通 English: Rule-base… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-accd64c160684a7d / 从这条案例看，中文：案例说明：贵族有真实退出权（可流亡、可拒绝纳税），从王权认同转向宪政认同 关键发现：第5步跑通 English: Rule-base… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：贵族有真实退出权，从王权认同逐步转向宪政认同 关键发现：第5步跑通 English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-35ec217d370340de / 从这条案例看，中文：案例说明：贵族有真实退出权，从王权认同逐步转向宪政认同 关键发现：第5步跑通 English: Rule-based English… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0。核心函数：\[D158\]\(docs/zh/functions/item… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e83aa9f8a02463a2 / 从这条案例看，中文：案例说明：费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0。核心函数：\[D158\]\(docs/zh/functions/item… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158；被引用：—
-- [从这条案例看，中文：案例说明：资源流向取决于增值率、规模、触达成本和复制收益；当小群体的有效再生产数低于阈值，资源不会自发聚集。 关键发现：Q-0014… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-017e9ecb1550fd00 / 从这条案例看，中文：案例说明：资源流向取决于增值率、规模、触达成本和复制收益；当小群体的有效再生产数低于阈值，资源不会自发聚集。 关键发现：Q-0014… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：超生=罚款+开除+社会压力，象征退出权=强制力的优雅版本 关键发现：第3步未满足 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5efd675f3f72003c / 从这条案例看，中文：案例说明：超生=罚款+开除+社会压力，象征退出权=强制力的优雅版本 关键发现：第3步未满足 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-93abdd17b355def8 / 从这条案例看，中文：案例说明：跑动耦合验证 — 投资决策：秒级观测（μ_cog=1秒）→ε_eff≈0.1（噪声主导，看不出差异）；日级观测→ε_eff… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：距离≠碰撞——AI单空间架构的根本限制 English: Rule-based English rendering pen… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b6a6bdabfa0784d0 / 从这条案例看，中文：案例说明：距离≠碰撞——AI单空间架构的根本限制 English: Rule-based English rendering pen… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.1，ηgate≈0.27，比同质团队高5倍。核心函数：D… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a8d8a6779e69e8f0 / 从这条案例看，中文：案例说明：跨学科团队的高效 — 物理学家和生物学家合作，G≈0.3，H≈0.1，ηgate≈0.27，比同质团队高5倍。核心函数：D… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：跨物种调度同构验证 — 人类-AI和CAI-EAI满足同构三条件，数学结构完全等价，差异仅在ηinterface参数值。核… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a6e8e65e7f71ddae / 从这条案例看，中文：案例说明：跨物种调度同构验证 — 人类-AI和CAI-EAI满足同构三条件，数学结构完全等价，差异仅在ηinterface参数值。核… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-52a110b49dde2103 / 从这条案例看，中文：案例说明：路径积分验证 — 创业决策：ℏ_eff=0.1时策略集中在最优路径附近（D118预测），ℏ_eff=0.8时策略分散在多条… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D118；被引用：—
-- [从这条案例看，中文：案例说明：较高静息心率与全因和心血管死亡风险相关；风险不是固定总心跳数命运，而是心率暴露、代谢率、心血管储备和疾病状态共同决定。 关… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b01ff35533392348 / 从这条案例看，中文：案例说明：较高静息心率与全因和心血管死亡风险相关；风险不是固定总心跳数命运，而是心率暴露、代谢率、心血管储备和疾病状态共同决定。 关… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：边界优化=变分问题——最小作用量原理在生物/社会域的投影 English: Rule-based English rend… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9f1f57d4d6f813c2 / 从这条案例看，中文：案例说明：边界优化=变分问题——最小作用量原理在生物/社会域的投影 English: Rule-based English rend… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：达到L6的路径——严格证明变量闭包定律 English: Rule-based English rendering pen… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6e37d77ca6afd656 / 从这条案例看，中文：案例说明：达到L6的路径——严格证明变量闭包定律 English: Rule-based English rendering pen… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：过了门槛可以放松 — ε从θC→2θC，σ'从0.25→0.018，β从2.5→0.18。负向扰动-0.1在刀刃期G降47… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2baeb14caa5659e1 / 从这条案例看，中文：案例说明：过了门槛可以放松 — ε从θC→2θC，σ'从0.25→0.018，β从2.5→0.18。负向扰动-0.1在刀刃期G降47… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

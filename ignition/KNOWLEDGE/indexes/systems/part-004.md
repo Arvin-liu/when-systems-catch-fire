@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| `CURRENT` \| 合并态在 `main` 上验证、front-door/current-state 表面同步 \| 真理式 post-merge 收口、无未决 residue、逐表面 attestation \|](../../../docs/governance/charter-system-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-de006142893383f7 / \| `CURRENT` \| 合并态在 `main` 上验证、front-door/current-state 表面同步 \| 真理式 post-merge 收口、无未决 residue、逐表面 attestation \|
+  - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
+- [\| `EVIDENCE_LEVEL_CEILING` \| A source, fixture, review or observation supports a conclusion at a bounded evidence level.](../../../docs/architecture/structural-governance-surface.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-26d2132de095c538 / \| `EVIDENCE_LEVEL_CEILING` \| A source, fixture, review or observation supports a conclusion at a bounded evidence level.
+  - 来源：`docs/architecture/structural-governance-surface.md`
+  - 依赖：—；被引用：—
+- [\| `G_δ` 与 `pending` 联动机制缺失 \| 新增 G_delta Pending Protocol \|](../../../docs/structural_gap_audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-729df5e7b4517651 / \| `G_δ` 与 `pending` 联动机制缺失 \| 新增 G_delta Pending Protocol \|
+  - 来源：`docs/structural_gap_audit.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-ARG-02` \| 局部集中 + 打击中枢 → 局部优势 → 全军级联 \| 中枢位置可识别；信息传播迅速 \| 撤军、叛乱、后勤断裂先发生 \| 机制可行，时序待核 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4bcdded991079480 / \| `JIN-ARG-02` \| 局部集中 + 打击中枢 → 局部优势 → 全军级联 \| 中枢位置可识别；信息传播迅速 \| 撤军、叛乱、后勤断裂先发生 \| 机制可行，时序待核 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-CLM-02` \| “连续灭辽、宋两个成熟帝国”把北宋政权与宋朝整体混同 \| `contested` / 过度表述 \| 仅改为“灭辽并导致北宋覆亡”可保留 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-88ad431d70239d70 / \| `JIN-CLM-02` \| “连续灭辽、宋两个成熟帝国”把北宋政权与宋朝整体混同 \| `contested` / 过度表述 \| 仅改为“灭辽并导致北宋覆亡”可保留 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-CLM-06` \| “完颜家族天才”可能含幸存者选择 \| `mechanism_hypothesis` \| 人才结构、亲族任用与反事实样本缺失 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ccb4dbefa70b4dbd / \| `JIN-CLM-06` \| “完颜家族天才”可能含幸存者选择 \| `mechanism_hypothesis` \| 人才结构、亲族任用与反事实样本缺失 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| `JIN-CLM-07` \| 局部兵力集中比总量对比更贴近部分战役机制 \| `argument_plausible` \| 必须重建地形、序列、可用兵力和指挥 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-77b0370931de8a79 / \| `JIN-CLM-07` \| 局部兵力集中比总量对比更贴近部分战役机制 \| `argument_plausible` \| 必须重建地形、序列、可用兵力和指挥 \|
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
 - [\| `JIN-CLM-08` \| 指挥中枢失序可能放大为溃败级联 \| `mechanism_hypothesis` \| 5% 不是已建立统一阈值；时序与中介待证 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4a2771e53eb71d27 / \| `JIN-CLM-08` \| 指挥中枢失序可能放大为溃败级联 \| `mechanism_hypothesis` \| 5% 不是已建立统一阈值；时序与中介待证 \|
@@ -39,6 +74,11 @@
   - 可搜索名称：NFC-9f74d161d55a3249 / \| `PERMISSION_INTERSECTION_ONLY_NARROWS` \| Task, profile, pack, executor and approval scopes are composed for a proposed
   - 来源：`docs/architecture/structural-governance-surface.md`
   - 依赖：—；被引用：—
+- [\| `R1-IGNITION-143-ARTICLE-C` \| `docs/editorial/articles/013-tree-canopy-temperature-causality.md` \| 有界公开来源 replay 的读者价值](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4de7f5098f25884d / \| `R1-IGNITION-143-ARTICLE-C` \| `docs/editorial/articles/013-tree-canopy-temperature-causality.md` \| 有界公开来源 replay 的读者价值
+  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
+  - 依赖：—；被引用：—
 - [\| `REJECT` \| executor 自行决定 stop/completion、Owner acceptance 或权限升级 \| 当前 Kernel fail closed；只有 validator 可提供最终动作验证，Owner 边](../../../reports/architecture/task115-runtime-prior-art-adoption-r0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ff1c7537795f1b9d / \| `REJECT` \| executor 自行决定 stop/completion、Owner acceptance 或权限升级 \| 当前 Kernel fail closed；只有 validator 可提供最终动作验证，Owner 边
@@ -73,6 +113,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-87c64e3c6ab502c0 / \| ARN 因果主张委托 MCF \| PASS \|
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
+- [\| Article 012 \| 资源支持什么时候开始收窄行动路径 \| D600/M3 内部候选模型与五类反例 \| 讲关系机制与研究问题，不冒充普遍因果定律 \|](../../../reports/operations/ignition-143-step15-cross-publication-coherence.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-07c8403741925891 / \| Article 012 \| 资源支持什么时候开始收窄行动路径 \| D600/M3 内部候选模型与五类反例 \| 讲关系机制与研究问题，不冒充普遍因果定律 \|
+  - 来源：`reports/operations/ignition-143-step15-cross-publication-coherence.md`
+  - 依赖：D600；被引用：—
+- [\| Article 013 \| 树冠、温度和因果为什么不能互换 \| 七组公开来源与 bounded replay \| 讲测量对象和因果范围，不恢复人体热应激结论 \|](../../../reports/operations/ignition-143-step15-cross-publication-coherence.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-df2bcaed44565998 / \| Article 013 \| 树冠、温度和因果为什么不能互换 \| 七组公开来源与 bounded replay \| 讲测量对象和因果范围，不恢复人体热应激结论 \|
+  - 来源：`reports/operations/ignition-143-step15-cross-publication-coherence.md`
   - 依赖：—；被引用：—
 - [\| BC-20260709-001 \| 《系统之美》 \| 系统基模中的"成长上限"基模与点火框架M1增强回路的同构性。当增强回路推动系统增长，同时调节回路在某个阈值启动限制增长，形成门控面极小点。 \| pending \| M1 \| 《系统之](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -639,6 +689,11 @@
   - 可搜索名称：NFC-4ff3b45bdba3780c / \| 失败案例反向修正机制缺失 \| 任务 F：失败类型学初稿 \|
   - 来源：`docs/structural_gap_audit.md`
   - 依赖：—；被引用：—
+- [\| 支持与路径控制 \| “为你好”的支持何时开始替人决定方向？ \| D600 是内部候选，外部证据和操作化仍待补 \| 文章候选 B，作为实质性火种 \|](../../../reports/operations/ignition-143-step04-corpus-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-73ef99c5c9e579a0 / \| 支持与路径控制 \| “为你好”的支持何时开始替人决定方向？ \| D600 是内部候选，外部证据和操作化仍待补 \| 文章候选 B，作为实质性火种 \|
+  - 来源：`reports/operations/ignition-143-step04-corpus-census.md`
+  - 依赖：D600；被引用：—
 - [\| 新物种 \| analogy_only \| 抹平制度连续性与族群复杂性 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-62192f0014603ff5 / \| 新物种 \| analogy_only \| 抹平制度连续性与族群复杂性 \|
@@ -653,6 +708,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-662de597490540ff / \| 机制关键词 职称 / 硬门槛 / 裹挟 \| 正文第 5/9/21 行 ✓ \|
   - 来源：`outputs/audit/c0808-index-visibility-check-20260708.md`
+  - 依赖：—；被引用：—
+- [\| 树冠与热暴露 \| 相关、测量对象和因果句子怎样逐层拆开？ \| 仅限已列公开观测材料的有界关联 \| 文章候选 C，按读者价值选择 \|](../../../reports/operations/ignition-143-step04-corpus-census.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d1a7a2c5623f5b79 / \| 树冠与热暴露 \| 相关、测量对象和因果句子怎样逐层拆开？ \| 仅限已列公开观测材料的有界关联 \| 文章候选 C，按读者价值选择 \|
+  - 来源：`reports/operations/ignition-143-step04-corpus-census.md`
   - 依赖：—；被引用：—
 - [\| 校准对象 \| 只提取的机制 \| 防止哪种误判 \|](../../../docs/language-thought/chinese-literary-calibration.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -703,6 +763,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c0d88df36ae8e1ec / \| 行动边界 \| action candidate、workflow、execution/recovery receipt \| Charter、action/mechanism overlay、iteration machinery \| 路
   - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [\| 过度主张 \| PASS_AFTER_REVISION \| 将“成熟终态”“系统叙事”“修复判断”等可能被读成普遍规律的语句收窄为本仓库的可用语义。 \|](../../../reports/operations/ignition-143-step07-article-a-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ec7f29b7e1f50871 / \| 过度主张 \| PASS_AFTER_REVISION \| 将“成熟终态”“系统叙事”“修复判断”等可能被读成普遍规律的语句收窄为本仓库的可用语义。 \|
+  - 来源：`reports/operations/ignition-143-step07-article-a-editorial-review.md`
   - 依赖：—；被引用：—
 - [\| 降维打击 \| relabeling \| 暗示技术层级，删除因果权重 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2438,69 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b763ad3096821ae9 / 只列相似点，不列差异和机制证据。
   - 来源：`data/failure_typology.csv`
-  - 依赖：—；被引用：—
-- [可作为机制解释但需外部证据：B/C 层。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-ccd4e078dce7a6f7 / 可作为机制解释但需外部证据：B/C 层。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
-  - 依赖：—；被引用：—
-- [可独立作为机制来源锚点：A1–A15（访谈原文事件）。](../../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-0dd61880e6b53ca4 / 可独立作为机制来源锚点：A1–A15（访谈原文事件）。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
-  - 依赖：A1, A15；被引用：—
-- [可能用于保护有害系统或阻止必要改革（滥用风险）。](../../../docs/governance/meta-protocol-reviews/protocols/V4.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ab6de753058a9457 / 可能用于保护有害系统或阻止必要改革（滥用风险）。
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/V4.md`
-  - 依赖：—；被引用：—
-- [可见性通过。可再决定是否处理第二批。](../../../outputs/audit/teacher-competition-index-visibility-check-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-17908ffa62213a02 / 可见性通过。可再决定是否处理第二批。
-  - 来源：`outputs/audit/teacher-competition-index-visibility-check-20260708.md`
-  - 依赖：—；被引用：—
-- [可选/稀疏字段**：一句话概括、现实场景、核心冲突、因果链、边界条件、为什么不是已有案例、反例（普遍缺失，靠自由叙述隐含）。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f60d8bf1a9c4136d / 可选/稀疏字段**：一句话概括、现实场景、核心冲突、因果链、边界条件、为什么不是已有案例、反例（普遍缺失，靠自由叙述隐含）。
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
-  - 依赖：—；被引用：—
-- [可选进入模式：`肉身 / 概念 / 物件 / 诗句 / 数字 / 费用 / 决定 / 记忆 / 矛盾 / 未命名问题 / 其他`](../../../templates/publication/zhiyuan-writing-spec.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a9a3502d8bdb5999 / 可选进入模式：`肉身 / 概念 / 物件 / 诗句 / 数字 / 费用 / 决定 / 记忆 / 矛盾 / 未命名问题 / 其他`
-  - 来源：`templates/publication/zhiyuan-writing-spec.md`
-  - 依赖：—；被引用：—
-- [可量化指标替代真实价值：p 值数量成为显式评价入口，机制解释性工作被挤出。](../../../inputs/collisions/20260708-cross-domain-smoke-test/science.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4d42c56f0aca0f54 / 可量化指标替代真实价值：p 值数量成为显式评价入口，机制解释性工作被挤出。
-  - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/science.md`
-  - 依赖：—；被引用：—
-- [同构误判指两个系统看起来相似，但实际上不存在可比结构映射。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a82b0e212697343c / 同构误判指两个系统看起来相似，但实际上不存在可比结构映射。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [同样，我们也不能把北宋灭亡单独归给道教。战争、财政、军事判断、官僚竞争、外交选择和信息失灵，都需要各自的材料与因果分析。道教可以是权力结构中的一条通道，却不是一把能够解释所有失败的钥匙。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3ef8aac669f1867b / 同样，我们也不能把北宋灭亡单独归给道教。战争、财政、军事判断、官僚竞争、外交选择和信息失灵，都需要各自的材料与因果分析。道教可以是权力结构中的一条通道，却不是一把能够解释所有失败的钥匙。
-  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
-  - 依赖：—；被引用：—
-- [向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁与伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN](../../../docs/USAGE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4ede3796f64ad258 / 向外表达时保存来源、不可映射残余与受损主体；发布或试读后，记录误解、反例、遗漏主体、失败跃迁与伪压缩的 provenance。只有经登记和范围审查的反馈才能成为候选 source／gap，再交回适用的 Q12、Q13、MCF、PSD、ARN
-  - 来源：`docs/USAGE.md`
-  - 依赖：—；被引用：—
-- [命中：仅 C-0807（系统性钝化与教室避风港）提及「职称考评」「赛课机制」背景，但不含「职称硬门槛裹挟青年教师」等价结构。](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-77be6c0bbaa26e77 / 命中：仅 C-0807（系统性钝化与教室避风港）提及「职称考评」「赛课机制」背景，但不含「职称硬门槛裹挟青年教师」等价结构。
-  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [哥德尔不完备性判定与 `pending` 的联动机制缺失](../../../docs/structural_gap_audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-18bcf1f7d098a26d / 哥德尔不完备性判定与 `pending` 的联动机制缺失
-  - 来源：`docs/structural_gap_audit.md`
-  - 依赖：—；被引用：—
-- [器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-d2a893ad680ff1b6 / 器官排斥的门槛翻转——异质组织降低Λ_immune导致自身免疫
-  - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—

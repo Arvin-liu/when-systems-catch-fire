@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 自举元函数 is adjudicated as RELATION: 自举元函数，Mboot = ε_sense × P_track × d\(ΔK\)/dt，当前AI三因子全部失](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D141 / Within the source-defined scope, 自举元函数 is adjudicated as RELATION: 自举元函数，Mboot = ε_sense × P_track × d\(ΔK\)/dt，当前AI三因子全部失
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 自举元函数层级 is adjudicated as MECHANISM_MODEL: 自举元函数，三因子乘法，AI全零。. This is a model-internal](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-T14 / Within the source-defined scope, 自举元函数层级 is adjudicated as MECHANISM_MODEL: 自举元函数，三因子乘法，AI全零。. This is a model-internal
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 自我模型-ε_aware连接定理 is adjudicated as FORMAL_PROPOSITION: D244说自我模型是ε_aware>0的前提。推导连接： ε_a](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：CLAIM-D246 / Within the source-defined scope, 自我模型-ε_aware连接定理 is adjudicated as FORMAL_PROPOSITION: D244说自我模型是ε_aware>0的前提。推导连接： ε_a
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D2, D244, D5；被引用：—
+- [Within the source-defined scope, 自我模型函数 is adjudicated as MECHANISM_MODEL: 自我模型 = 系统对自身门控面的二阶门控 一阶门控（\[D195\]\(docs/zh/func](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D245 / Within the source-defined scope, 自我模型函数 is adjudicated as MECHANISM_MODEL: 自我模型 = 系统对自身门控面的二阶门控 一阶门控（\[D195\]\(docs/zh/func
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D195；被引用：—
+- [Within the source-defined scope, 自我模型相变函数 is adjudicated as STATE_TRANSITION: M_self从0变正的相变条件： M_self = Σᵢ G_i\(gᵢ\) × ε_s](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D247 / Within the source-defined scope, 自我模型相变函数 is adjudicated as STATE_TRANSITION: M_self从0变正的相变条件： M_self = Σᵢ G_i\(gᵢ\) × ε_s
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 自由能-Φ等价函数 is adjudicated as RELATION: M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与D](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D401 / Within the source-defined scope, 自由能-Φ等价函数 is adjudicated as RELATION: M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~Φ/n∝ḡ——与D
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D387；被引用：—
+- [Within the source-defined scope, 自由能-门控势能函数 is adjudicated as RELATION: 自由能-门控势能函数，自由能F=-kT ln Z描述门控面Λ的势能面。. This is a m](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D204 / Within the source-defined scope, 自由能-门控势能函数 is adjudicated as RELATION: 自由能-门控势能函数，自由能F=-kT ln Z描述门控面Λ的势能面。. This is a m
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 自维持坍缩边界函数 is adjudicated as RELATION: E_{Q_0021}=1 iff eta_return\(x\)<theta_horizon impl](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D473 / Within the source-defined scope, 自维持坍缩边界函数 is adjudicated as RELATION: E_{Q_0021}=1 iff eta_return\(x\)<theta_horizon impl
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D194, D232；被引用：—
+- [Within the source-defined scope, 自锁结构稳定性函数 is adjudicated as RELATION: 窗口与临界函数，窗口与临界案例验证。. This is a model-internal cont](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D52 / Within the source-defined scope, 自锁结构稳定性函数 is adjudicated as RELATION: 窗口与临界函数，窗口与临界案例验证。. This is a model-internal cont
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 自限-实际不可逆时序函数 is adjudicated as RELATION: M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对干预没有实际](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D420 / Within the source-defined scope, 自限-实际不可逆时序函数 is adjudicated as RELATION: M10的时序：传染→实际不可逆→全局僵尸化→自限。自限在系统已经死后才生效——对干预没有实际
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 良性-恶性共存函数 is adjudicated as RELATION: M14的良性/恶性循环可共存：某些pᵢ降（良性），某些升（恶性）。容斥凸性给恶性方向天然加速→良性](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D299 / Within the source-defined scope, 良性-恶性共存函数 is adjudicated as RELATION: M14的良性/恶性循环可共存：某些pᵢ降（良性），某些升（恶性）。容斥凸性给恶性方向天然加速→良性
@@ -808,6 +858,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FCDADC2B866FCC31 / \| **M₄ 动力学元律** \| G₅微分方程律\(dx/dt=αx₁-βx₂\)、G₁₁复合函数律\(f\(g\(x\),h\(x\)\)\) \| 动力学耦合族,包括微分方程和复合函数 \| / IMPLICIT-FCDADC2B866FCC31 / IMPLICIT-C82E3AAB6C9C3F6F
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [\| 011 lifecycle \| 两只时钟；解释 Task142 的真实工程转折 \| 只使用仓库内生命周期与义务记录 \| 不推出外部执行或生产就绪 \| 与 003/008/009 明确区分 \| PASS \|](../../../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-61484bdd20ea1776 / \| 011 lifecycle \| 两只时钟；解释 Task142 的真实工程转折 \| 只使用仓库内生命周期与义务记录 \| 不推出外部执行或生产就绪 \| 与 003/008/009 明确区分 \| PASS \|
+  - 来源：`reports/operations/ignition-143-step11-cross-publication-editorial-review.md`
   - 依赖：—；被引用：—
 - [\| 02 \| COMPLETED \| pending closure \| pending closure \| Monotonic Effective Policy compiler with digest binding, narrowin](../../../reports/operations/ignition-124-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2304,6 +2359,16 @@
   - 可搜索名称：NFC-6d6c63f65e7bc49e / \| `proofs/` \| 证明义务与证明工件索引 \|
   - 来源：`FOUNDATION.md`
   - 依赖：—；被引用：—
+- [\| `R1-IGNITION-143-ARTICLE-A` \| `docs/editorial/articles/011-terminal-task-open-obligation.md` \| Task142 两只生命周期时钟的仓库内方法/](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4ee6dd721e35278c / \| `R1-IGNITION-143-ARTICLE-A` \| `docs/editorial/articles/011-terminal-task-open-obligation.md` \| Task142 两只生命周期时钟的仓库内方法/
+  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
+  - 依赖：—；被引用：—
+- [\| `R1-IGNITION-143-BOOK-PROJECT` \| `PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md` \| 可供人工继续编辑的完整书籍项目 \|](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-35938d409f9dc061 / \| `R1-IGNITION-143-BOOK-PROJECT` \| `PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md` \| 可供人工继续编辑的完整书籍项目 \|
+  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
+  - 依赖：—；被引用：—
 - [\| `README.md` \| 新增“生命共同体价值宪章”章节（声明 + 折叠核心原则 + 全文链接），并在“关键参考”加入链接 \|](../../../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-9af44f0a5cdd0c43 / \| `README.md` \| 新增“生命共同体价值宪章”章节（声明 + 折叠核心原则 + 全文链接），并在“关键参考”加入链接 \|
@@ -2318,6 +2383,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a22dde387c0e9c91 / \| ALREADY_COVERED \| 被现有函数族覆盖，仅作跨域补强证据 \| 否 \|
   - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [\| Article 011 \| 任务怎样在开放义务仍存在时诚实 terminal \| Task142 生命周期与 obligation registry \| 讲生命周期分离，不承担支持模型或树冠 replay \|](../../../reports/operations/ignition-143-step15-cross-publication-coherence.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b274d59aa0f8f253 / \| Article 011 \| 任务怎样在开放义务仍存在时诚实 terminal \| Task142 生命周期与 obligation registry \| 讲生命周期分离，不承担支持模型或树冠 replay \|
+  - 来源：`reports/operations/ignition-143-step15-cross-publication-coherence.md`
   - 依赖：—；被引用：—
 - [\| BC-20260709-001 \| 《系统之美》 \| pending \| M1 \| 增强回路机制（暂无对应 D 编号，待定位） \| candidate_only \| 无形式化函数 ID；单材料 \|](../../../outputs/book-collisions/20260709-22-book-validation/formalization-crosswalk.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2434,73 +2504,3 @@
   - 可搜索名称：NFC-df1ffb484f237a91 / \| conflict markers and alternatives \| counterexample / review cue \| `TEST/COUNTEREXAMPLE → REVIEW` \| lexical cues cannot
   - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
   - 依赖：—；被引用：—
-- [\| Current task/lifecycle \| Task134 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`, terminal `true`, lifecycle `RELEASE_READY`; pu](../../../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-15afebdbd3b1a10d / \| Current task/lifecycle \| Task134 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`, terminal `true`, lifecycle `RELEASE_READY`; pu
-  - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
-  - 依赖：—；被引用：—
-- [\| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\]\(../discipline-kernel-pilot-physics-math-his](../../../outputs/getbrain/v0.2-summary-and-closure-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-255fb859cd51bf49 / \| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\]\(../discipline-kernel-pilot-physics-math-his
-  - 来源：`outputs/getbrain/v0.2-summary-and-closure-20260707.md`
-  - 依赖：—；被引用：—
-- [\| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\]\(../outputs/getbrain/discipline-kernel-pilot](../../../docs/v0.2_summary.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ed5d6a309a95dcd5 / \| D \| 三门学科理论核试跑 \| \[discipline-kernel-pilot-physics-math-history-20260706.md\]\(../outputs/getbrain/discipline-kernel-pilot
-  - 来源：`docs/v0.2_summary.md`
-  - 依赖：—；被引用：—
-- [\| D183 \| D181, D270, D211, D220 \| D516, T26 \| Block gate-count monotonicity and physical-unification claims \|](../../../reports/foundation-architecture/098-dependency-impact.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7e0060a3100d31d2 / \| D183 \| D181, D270, D211, D220 \| D516, T26 \| Block gate-count monotonicity and physical-unification claims \|
-  - 来源：`reports/foundation-architecture/098-dependency-impact.md`
-  - 依赖：D181, D183, D211, D220；被引用：—
-- [\| D183 \| REWRITE \| 定义完整时可比较两个玩具评分 \| “门更少”必然令 Φ 下降、Ω 上升；符号合并即物理统一 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a86d596d447fd7e1 / \| D183 \| REWRITE \| 定义完整时可比较两个玩具评分 \| “门更少”必然令 Φ 下降、Ω 上升；符号合并即物理统一 \|
-  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
-  - 依赖：D183；被引用：—
-- [\| D185 \| DOWNGRADE \| 比率类比 \| 由门函数推导相对论；源文本 `v<<c` 极限还存在方向矛盾 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-fef8d79f944638ea / \| D185 \| DOWNGRADE \| 比率类比 \| 由门函数推导相对论；源文本 `v<<c` 极限还存在方向矛盾 \|
-  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
-  - 依赖：D185；被引用：—
-- [\| D186 \| DOWNGRADE \| 未操作化的阈值聚集隐喻 \| 推导量子力学或普遍相变阶数 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-14238e2b443cf8d3 / \| D186 \| DOWNGRADE \| 未操作化的阈值聚集隐喻 \| 推导量子力学或普遍相变阶数 \|
-  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
-  - 依赖：D186；被引用：—
-- [\| D187 \| DOWNGRADE \| 电弱统一的历史类比 \| 取代规范群、场、拉格朗日量和对称破缺机制 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2cbf897479d91394 / \| D187 \| DOWNGRADE \| 电弱统一的历史类比 \| 取代规范群、场、拉格朗日量和对称破缺机制 \|
-  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
-  - 依赖：D187；被引用：—
-- [\| D188 \| REWRITE \| 保留失效历史 \| 源文本对渐近自由物理区间的错误投影及 QCD 机制声明 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-88d30125fd7dcf8b / \| D188 \| REWRITE \| 保留失效历史 \| 源文本对渐近自由物理区间的错误投影及 QCD 机制声明 \|
-  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
-  - 依赖：D188；被引用：—
-- [\| D189 \| DOWNGRADE \| GUT 待验证类比 \| 成功统一、精确统一能标、由该评分推出质子衰变 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c23fc2228da9d1c5 / \| D189 \| DOWNGRADE \| GUT 待验证类比 \| 成功统一、精确统一能标、由该评分推出质子衰变 \|
-  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
-  - 依赖：D189；被引用：—
-- [\| D190 \| `AI-HANDOFF.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `REFRESH_CURRENT_FINGERPRINT_ONLY`](../../../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f5110f158bcfcb21 / \| D190 \| `AI-HANDOFF.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `REFRESH_CURRENT_FINGERPRINT_ONLY`
-  - 来源：`reports/operations/ignition-134-step14-human-surface-semantic-audit.md`
-  - 依赖：D190；被引用：—
-- [\| D190 \| DOWNGRADE \| ToE 开放问题记录 \| 已统一四力、已统一量子与引力、已证可能或不可能 \|](../../../docs/foundation/physics-asset-correction-20260729.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c3100a9e66dac85d / \| D190 \| DOWNGRADE \| ToE 开放问题记录 \| 已统一四力、已统一量子与引力、已证可能或不可能 \|
-  - 来源：`docs/foundation/physics-asset-correction-20260729.md`
-  - 依赖：D190；被引用：—
-- [\| D260 \| `AI-HANDOFF.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `REFRESH_CURRENT_FINGERPRINT_ONLY`](../../../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ffe626b408abbf1a / \| D260 \| `AI-HANDOFF.md` \| `SOURCE_CHANGED_HUMAN_SURFACE_STILL_SEMANTICALLY_VALID` \| `REFRESH_CURRENT_FINGERPRINT_ONLY`
-  - 来源：`reports/operations/ignition-134-step14-human-surface-semantic-audit.md`
-  - 依赖：D260；被引用：—
-- [\| D479 \| 空间耦合函数 \| C-137 认知光锥 \| C-507 组织退化 \| 待验证 \| 待验证 \|](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-10634c84f08d3807 / \| D479 \| 空间耦合函数 \| C-137 认知光锥 \| C-507 组织退化 \| 待验证 \| 待验证 \|
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：D479；被引用：—
