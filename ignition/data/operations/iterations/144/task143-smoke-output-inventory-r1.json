@@ -1,0 +1,118 @@
+{
+  "schema_version": "task143-smoke-output-inventory-r1",
+  "task_id": "IGNITION-20260828-144",
+  "step": "01",
+  "status": "PASS",
+  "source_task": "IGNITION-20260827-143",
+  "inventory_kind": "CAPABILITY_SMOKE_TEST_ARTIFACTS",
+  "default_owner_selection": "NOT_REVIEWED",
+  "default_publication_acceptance": "NOT_GRANTED",
+  "artifacts": [
+    {
+      "artifact_id": "R1-IGNITION-143-ARTICLE-A",
+      "path": "ignition/docs/editorial/articles/011-terminal-task-open-obligation.md",
+      "kind": "editorial_article",
+      "title": "一个系统如何在停止时仍然诚实：把开放义务从任务生命周期里拆出来",
+      "smoke_test": true,
+      "owner_selection": "NOT_REVIEWED",
+      "publication_acceptance": "NOT_GRANTED",
+      "observed_registry_status": "PUBLICATION_PRODUCTION_R1_EDITORIALLY_REVIEWED",
+      "source_paths": [
+        "ignition/data/operations/iterations/142/step01-terminality-semantics.json",
+        "ignition/data/operations/iterations/142/step19-publication-and-terminality.json",
+        "ignition/reports/operations/ignition-142-step19-publication-and-terminality.md",
+        "ignition/data/operations/open-obligation-registry-r1.json"
+      ],
+      "source_evidence_ceiling": "Repository-local Task142 lifecycle semantics and open-obligation separation; no external executor completion, production readiness or epistemic acceptance."
+    },
+    {
+      "artifact_id": "R1-IGNITION-143-ARTICLE-B",
+      "path": "ignition/docs/editorial/articles/012-support-becomes-path-control.md",
+      "kind": "editorial_article",
+      "title": "资源托举为什么会变成路径控制",
+      "smoke_test": true,
+      "owner_selection": "NOT_REVIEWED",
+      "publication_acceptance": "NOT_GRANTED",
+      "observed_registry_status": "PUBLICATION_PRODUCTION_R1_EDITORIALLY_REVIEWED",
+      "source_paths": [
+        "ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md",
+        "ignition/outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md",
+        "ignition/outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md",
+        "ignition/reports/math-foundation/pilot-formal-audit-20260712.md",
+        "ignition/reports/math-foundation/provenance-audit-20260712.md"
+      ],
+      "source_evidence_ceiling": "Pointfire-originated D600/M3 candidate model and research question; no universal causal law, prevalence, diagnosis, external validation or epistemic acceptance."
+    },
+    {
+      "artifact_id": "R1-IGNITION-143-ARTICLE-C",
+      "path": "ignition/docs/editorial/articles/013-tree-canopy-temperature-causality.md",
+      "kind": "editorial_article",
+      "title": "树冠会降温吗：一个好问题如何被证据层拆开",
+      "smoke_test": true,
+      "owner_selection": "NOT_REVIEWED",
+      "publication_acceptance": "NOT_GRANTED",
+      "observed_registry_status": "PUBLICATION_PRODUCTION_R1_EDITORIALLY_REVIEWED",
+      "source_paths": [
+        "ignition/PUBLICATIONS/pointfire-results-book/10-七轨证据演化-契约修复.md",
+        "ignition/PUBLICATIONS/pointfire-results-book/06-当前科学与WAIC.md"
+      ],
+      "source_evidence_ceiling": "Named public materials support a bounded canopy/near-ground-air-temperature association; no city-wide causal tree-planting effect, human heat-stress result or epistemic acceptance."
+    },
+    {
+      "artifact_id": "R1-IGNITION-143-BOOK-PROJECT",
+      "path": "ignition/PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md",
+      "kind": "book_project",
+      "title": "书籍项目 R1：《还没有被证明的世界》",
+      "smoke_test": true,
+      "owner_selection": "NOT_REVIEWED",
+      "publication_acceptance": "NOT_GRANTED",
+      "observed_registry_status": "PUBLICATION_PRODUCTION_R1_PROJECT_READY_FOR_HUMAN_EDITING",
+      "source_paths": [
+        "ignition/PUBLICATIONS/pointfire-results-book/13-出版组合-R1.md",
+        "ignition/data/operations/iterations/143/corpus-census-r1.json",
+        "ignition/data/operations/iterations/143/publication-portfolio-r1.json",
+        "ignition/PUBLICATIONS/pointfire-results-book/README.md"
+      ],
+      "source_evidence_ceiling": "Book Project architecture, audience promise, contents, material mapping and evidence strategy; not a completed book, external publication acceptance or epistemic acceptance."
+    },
+    {
+      "artifact_id": "R1-IGNITION-143-BOOK-SAMPLE-01",
+      "path": "ignition/PUBLICATIONS/pointfire-results-book/book-project-r1/01-第一章-先别急着宣布完成.md",
+      "kind": "book_sample",
+      "title": "书稿样章：第一章 先别急着宣布完成",
+      "smoke_test": true,
+      "owner_selection": "NOT_REVIEWED",
+      "publication_acceptance": "NOT_GRANTED",
+      "observed_registry_status": "PUBLICATION_PRODUCTION_R1_POLISHED_SAMPLE",
+      "source_paths": [
+        "ignition/PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md",
+        "ignition/data/operations/iterations/142/step19-publication-and-terminality.json",
+        "ignition/data/operations/open-obligation-registry-r1.json"
+      ],
+      "source_evidence_ceiling": "Mature repository-local book opening based on Task142; no external completion, production readiness or epistemic acceptance."
+    },
+    {
+      "artifact_id": "R1-IGNITION-143-BOOK-SAMPLE-03",
+      "path": "ignition/PUBLICATIONS/pointfire-results-book/book-project-r1/03-第三章-退出不是按钮.md",
+      "kind": "book_sample",
+      "title": "书稿样章：第三章 退出不是按钮",
+      "smoke_test": true,
+      "owner_selection": "NOT_REVIEWED",
+      "publication_acceptance": "NOT_GRANTED",
+      "observed_registry_status": "PUBLICATION_PRODUCTION_R1_POLISHED_SAMPLE",
+      "source_paths": [
+        "ignition/PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md",
+        "ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md"
+      ],
+      "source_evidence_ceiling": "Mature repository-local book middle sample distinguishing formal, perceived and post-exit agency; no measured probability, universal social law or epistemic acceptance."
+    }
+  ],
+  "counts": {
+    "complete_articles": 3,
+    "book_projects": 1,
+    "mature_book_samples": 2,
+    "total_smoke_outputs": 6
+  },
+  "canonical_entrypoint": "ignition/PUBLICATIONS/pointfire-results-book/README.md",
+  "claim_ceiling": "Inventory and classification of repository-local Task143 smoke-test artifacts only; no Owner selection, publication acceptance, external truth or epistemic upgrade is inferred."
+}
