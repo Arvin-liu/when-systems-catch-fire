@@ -1,0 +1,42 @@
+{
+  "schema_version": "ignition-144-step14-repair-cycles-b-c-r1",
+  "task_id": "IGNITION-20260828-144",
+  "step": "14",
+  "status": "PASS",
+  "repair_cycles": {
+    "A": {
+      "status": "USED",
+      "receipt": "ignition/data/operations/iterations/144/step13-repair-cycle-a.json",
+      "root_cause": "stale release-candidate task-identity execution-contract path"
+    },
+    "B": {
+      "status": "NOT_NEEDED",
+      "root_cause": "NONE",
+      "repair_applied": false,
+      "reason": "Step13 closure regression passed; no deterministic blocker remained."
+    },
+    "C": {
+      "status": "NOT_NEEDED",
+      "root_cause": "NONE",
+      "repair_applied": false,
+      "reason": "Step13 closure regression passed; no deterministic blocker remained."
+    }
+  },
+  "repair_cycles_used": 1,
+  "repair_cycles_remaining": 2,
+  "new_live_invocations": 0,
+  "new_external_inference": 0,
+  "new_capability": false,
+  "green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "ignore_added": false,
+    "expected_failure_added": false
+  },
+  "closure_basis": {
+    "step13_targeted_tests": "77 / 0 failures / 0 errors / 0 skips",
+    "step13_standalone_validators": "14 / 14 passed",
+    "remaining_deterministic_blockers": 0
+  },
+  "claim_ceiling": "Repository-local bounded repair disposition only; no validated live completion, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}
