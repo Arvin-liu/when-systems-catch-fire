@@ -1,0 +1,46 @@
+{
+  "schema_version": "ignition-144-step13-repair-cycle-a-r1",
+  "task_id": "IGNITION-20260828-144",
+  "step": "13",
+  "status": "PASS",
+  "repair_cycle": "A",
+  "candidate_head_before_step13_commit": "195fd5bccad2791b2e5307e92c499c123d57eab5",
+  "root_cause": "The declarative task-identity model still sourced release_candidate_task from the superseded Task143 execution contract. Task144 progress.jsonl was also absent at the initial Step12 gate and was recorded as part of the Step12 evidence commit.",
+  "repair_applied": {
+    "files": [
+      "ignition/data/operations/task-identity-model-r1.json"
+    ],
+    "change": "Rebound role_bindings.release_candidate_task.source_path to ignition/data/operations/iterations/144/execution-contract-r1.json; no validator, test, capability, adapter or live boundary was changed."
+  },
+  "pre_repair_evidence": {
+    "receipt": "ignition/data/operations/iterations/144/step12-targeted-regression.json",
+    "tests": 77,
+    "failures": 4,
+    "errors": 0,
+    "skips": 0,
+    "failed_identity_gate": "PROGRESS_CURRENT_ITERATION_MISSING before the Step12 progress record was committed",
+    "identity_model_failure": "release_candidate_task must be sourced from the current execution contract"
+  },
+  "post_repair_regression": {
+    "natural_completion": true,
+    "standalone_validators": 14,
+    "standalone_validator_failures": 0,
+    "tests": 77,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "stdout_stderr_sha256": "75b952e6b099c18f701d2ceeb4ac2a4d54adce22c30ca0a917b55f60317773ea",
+    "status": "PASS",
+    "live_processes_started": 0,
+    "external_inference_started": 0
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "ignore_added": false,
+    "expected_failure_added": false,
+    "residual_expanded": false
+  },
+  "remaining_repair_budget": 2,
+  "claim_ceiling": "Repository-local deterministic identity/projection repair and targeted regression evidence only; no validated live completion, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}
