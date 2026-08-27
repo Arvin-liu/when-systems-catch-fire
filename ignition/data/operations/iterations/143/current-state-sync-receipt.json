@@ -1,0 +1,127 @@
+{
+  "schema_version": "current-state-sync-receipt-r1",
+  "task_id": "IGNITION-20260827-143",
+  "architecture_identity_impact": "PRESENTATION_ONLY",
+  "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+  "current_formal_task_id": "IGNITION-20260827-143",
+  "current_formal_task_ordinal": 143,
+  "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+  "latest_architecture_task_ordinal": 142,
+  "current_iteration_boundary": 143,
+  "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+  "surface_decisions": [
+    {
+      "surface_id": "homepage-identity",
+      "path": ".github/README.md",
+      "decision": "CHANGE",
+      "reason": "The front door must identify Task143 publication production while keeping Task142 as the latest architecture-changing task and the executor obligation Owner-deferred.",
+      "evidence": "Task143 Step03 current-surface synchronization and the generated Current Snapshot block."
+    },
+    {
+      "surface_id": "project-current-state",
+      "path": "ignition/docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "Current State must expose phase closure, publication production and the independent open obligation without reopening qualification.",
+      "evidence": "Task143 Step03 Current State wording and current-facts projection."
+    },
+    {
+      "surface_id": "ai-cold-start",
+      "path": "ignition/AI-START-HERE.md",
+      "decision": "CHANGE",
+      "reason": "Cold start must route to the Task143 resume capsule and canonical publication entry while preserving the Task142 architecture identity.",
+      "evidence": "Task143 Step03 AI cold-start wording and deterministic Current Snapshot."
+    },
+    {
+      "surface_id": "ai-agents-handoff",
+      "path": "ignition/AI-HANDOFF.md",
+      "decision": "CHANGE",
+      "reason": "Handoff must prohibit external qualification/live attempts and route publication work through the existing Results Book.",
+      "evidence": "Task143 Step03 handoff wording, phase-closure state and resume capsule."
+    },
+    {
+      "surface_id": "architecture",
+      "path": "ignition/ARCHITECTURE.md",
+      "decision": "CHANGE",
+      "reason": "The architecture surface must state that the current task is presentation-only and that the latest architecture identity remains Task142/R8.",
+      "evidence": "Task143 Step01 generated architecture Current block; no component, relation or map version was added."
+    },
+    {
+      "surface_id": "steering-doc",
+      "path": "ignition/docs/architecture/os-steering-intent-r1.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task143 introduces no Goal, Intent or Memory mutation and therefore changes no steering contract.",
+      "evidence": "Task143 execution contract identity_impact=PRESENTATION_ONLY and phase-closure state."
+    },
+    {
+      "surface_id": "machine-entry",
+      "path": "ignition/llms.txt",
+      "decision": "CHANGE",
+      "reason": "The machine entry must carry current Task143, the frozen Task142 architecture identity and the deferred obligation action.",
+      "evidence": "Task143 Step01 generated machine Current Snapshot."
+    },
+    {
+      "surface_id": "system-map-doc",
+      "path": "ignition/docs/architecture/interactive-system-map.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Publication production adds no map component, typed relation, layout or map version.",
+      "evidence": "Current map remains 0.16.0 and latest architecture-changing task remains Task142."
+    },
+    {
+      "surface_id": "federation-doc",
+      "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The old federation contract is not reopened or extended; external Agent readiness is parked Owner-deferred for a future explicit reopen.",
+      "evidence": "Task143 phase-closure state and resume capsule require local preparation before any future qualification."
+    },
+    {
+      "surface_id": "system-map-json",
+      "path": "ignition/data/architecture/interactive-system-map.json",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No new persistent architecture object or typed topology relation is justified by publication production.",
+      "evidence": "Task143 execution contract is PRESENTATION_ONLY; map 0.16.0 is unchanged."
+    },
+    {
+      "surface_id": "state-changelog",
+      "path": "ignition/STATE-CHANGELOG.md",
+      "decision": "CHANGE",
+      "reason": "The append-only log must retain the Task143 phase closure, Owner-deferred executor line and active publication-production mode.",
+      "evidence": "Task143 Step03 append-only Current entry preserves the open obligation and epistemic ceiling."
+    }
+  ],
+  "system_map_sync": {
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "Task143 adds publication outputs and presentation prose only; the R8 identity, 0.16.0 map, topology and layout remain unchanged.",
+    "evidence": "Task143 execution contract, phase-closure state and current-system-identity contract."
+  },
+  "state_changelog_delta": {
+    "decision": "CHANGE",
+    "reason": "The append-only Current history records phase closure and publication production while parking, not resolving, LIVE_EXTERNAL_INVOCATION.",
+    "evidence": "Task143 State Changelog entry and open-obligation registry."
+  },
+  "changed_paths": [
+    ".github/README.md",
+    "ignition/AI-START-HERE.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/ARCHITECTURE.md",
+    "ignition/STATE-CHANGELOG.md",
+    "ignition/data/architecture/current-facts.json",
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/operations/current-release-lifecycle-r1.json",
+    "ignition/data/operations/current-snapshot-r1.json",
+    "ignition/data/operations/current-task-lineage-status.json",
+    "ignition/data/operations/current-volatile-fact-registry-r1.json",
+    "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "ignition/docs/architecture/current-facts.md",
+    "ignition/docs/project-current-state.md",
+    "ignition/llms.txt",
+    "ignition/data/operations/open-obligation-registry-r1.json",
+    "ignition/data/operations/iterations/143/phase-closure-state-r1.json",
+    "ignition/data/operations/iterations/143/resume-capsule-r1.json",
+    "ignition/data/operations/iterations/143/current-state-sync-receipt.json",
+    "ignition/reports/operations/ignition-143-step17-current-state-sync.md"
+  ],
+  "identity_contract_changed": false,
+  "surface_sync_complete": false,
+  "claim_ceiling": "Task143 repository-local Current State and presentation-only synchronization evidence; no architecture-content change, external truth, publication acceptance, production readiness, Owner acceptance or epistemic acceptance is inferred, and LIVE_EXTERNAL_INVOCATION remains OPEN/Owner-deferred."
+}
