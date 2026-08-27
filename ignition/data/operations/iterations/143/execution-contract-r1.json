@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260827-143",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "8baea4d57528dbb551e71c22af1f0548dac7c295",
+    "command_path": "agent-commands/IGNITION-20260827-143-executor-qualification-campaign-first-validated-completion-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "b359580fe31866bc04eeb24911011e0baba9b66d"
+  },
+  "identity_impact": "ARCHITECTURE_CHANGED",
+  "expected_task_branch": "codex/ignition-143-executor-qualification-r1-20260827",
+  "expected_receipt_branch": "relay/receipts/ignition-143-executor-qualification-campaign-r1-20260827",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260827-143",
+    "latest_architecture_changing_task": "IGNITION-20260827-143",
+    "previous_canonical_current_task": "IGNITION-20260827-142",
+    "previous_formal_task": "IGNITION-20260827-142",
+    "release_candidate_task": "IGNITION-20260827-143",
+    "publication_witness_task": "IGNITION-20260827-143"
+  },
+  "claim_ceiling": "Task143 repository-local executor qualification, bounded synthetic/read-only live-attempt and publication evidence only; no external truth, production readiness, Owner authority, exactly-once guarantee or epistemic acceptance is inferred."
+}

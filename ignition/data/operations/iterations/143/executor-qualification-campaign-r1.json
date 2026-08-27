@@ -1,0 +1,125 @@
+{
+  "schema_version": "executor-qualification-campaign-r1",
+  "campaign_id": "ignition-143-qualification-r1",
+  "task_id": "IGNITION-20260827-143",
+  "campaign_status": "QUALIFICATION_OPEN",
+  "qualification_scope": [
+    "external.gemini",
+    "external.hermes",
+    "external.openclaw"
+  ],
+  "policy": {
+    "max_families": 3,
+    "max_attempts_per_family": 1,
+    "stop_on_first_validated_completion": true,
+    "no_blind_retry": true,
+    "codex_same_family_retry": "FORBIDDEN_UNLESS_NEW_ROOT_CAUSE_EVIDENCE"
+  },
+  "families": [
+    {
+      "executor_id": "external.codex",
+      "family": "Codex",
+      "installed": true,
+      "version": "codex-cli 0.144.4",
+      "state": "TERMINAL_BLOCKED",
+      "blockers": [
+        "TASK140_ROOT_CAUSE_NOT_CONFIRMED_SAME_FAMILY_RETRY_FORBIDDEN"
+      ],
+      "blocker_fingerprint": "256ddaf7c14d46b541bf43c5dc1ebd06936b615f04600419dc8eca03573ff8be",
+      "evidence_refs": [
+        "ignition/data/operations/iterations/142/step09-codex-blocker-audit.json",
+        "ignition/reports/operations/ignition-143-step00-baseline-audit.md"
+      ],
+      "attempt_count": 0
+    },
+    {
+      "executor_id": "external.gemini",
+      "family": "Gemini",
+      "installed": true,
+      "version": "0.53.1",
+      "state": "QUALIFYING",
+      "blockers": [
+        "AUTH_SOURCE_HOME_NOT_SEPARABLE",
+        "POINTFIRE_ADAPTER_NOT_ATTESTED",
+        "PUBLIC_AUTH_STATUS_UNAVAILABLE_WITHOUT_INFERENCE"
+      ],
+      "blocker_fingerprint": "f8740aac4a9de1a196da699dc5f311082aeb9cd822b248af39a5916e7920fcf1",
+      "evidence_refs": [
+        "ignition/data/operations/iterations/142/step06-gemini-public-audit.json",
+        "ignition/data/operations/iterations/142/local-executor-census-r2.json"
+      ],
+      "attempt_count": 0
+    },
+    {
+      "executor_id": "external.hermes",
+      "family": "Hermes",
+      "installed": true,
+      "version": "Hermes Agent v0.20.0 (2026.8.3)",
+      "state": "QUALIFYING",
+      "blockers": [
+        "AUTH_SOURCE_SEPARATION_NOT_PROVEN",
+        "PUBLIC_AUTH_STATUS_NOT_REATTESTED",
+        "STRUCTURED_RESULT_BOUNDARY_NOT_STRICT"
+      ],
+      "blocker_fingerprint": "e61c0d88e9af84e6474b63031f6eaaf0bd1fc1eba3a2b070dc99a71ba68b39ba",
+      "evidence_refs": [
+        "ignition/data/operations/iterations/142/step07-hermes-public-audit.json",
+        "ignition/data/operations/iterations/142/local-executor-census-r2.json"
+      ],
+      "attempt_count": 0
+    },
+    {
+      "executor_id": "external.openclaw",
+      "family": "OpenClaw",
+      "installed": true,
+      "version": "OpenClaw 2026.7.1-2 (0790d9f)",
+      "state": "QUALIFYING",
+      "blockers": [
+        "AUTH_SOURCE_SEPARATION_NOT_PROVEN",
+        "PROCESS_CLEANUP_NOT_REATTESTED",
+        "STRUCTURED_RESULT_BOUNDARY_NOT_STRICT",
+        "WORKSPACE_AND_CHANNEL_BOUNDARY_NOT_PROVEN"
+      ],
+      "blocker_fingerprint": "5db7b16a014ed1a91c00c59c84a37cb5bff55df529551da40f95188e16d92e9c",
+      "evidence_refs": [
+        "ignition/data/operations/iterations/142/step08-openclaw-public-audit.json",
+        "ignition/data/operations/iterations/142/local-executor-census-r2.json"
+      ],
+      "attempt_count": 0
+    },
+    {
+      "executor_id": "external.github-copilot-cli",
+      "family": "GitHub Copilot CLI",
+      "installed": false,
+      "version": null,
+      "state": "NOT_INSTALLED",
+      "blockers": [
+        "NOT_INSTALLED_NO_DOWNLOAD_OR_BILLING_AUTHORITY"
+      ],
+      "blocker_fingerprint": "7e76d5f47a81fae36af6c247587987a5cfdc294779fbb0a4852c3f60ec6c253d",
+      "evidence_refs": [
+        "ignition/data/operations/iterations/142/local-executor-census-r2.json"
+      ],
+      "attempt_count": 0
+    }
+  ],
+  "safety": {
+    "secret_content_read": false,
+    "auth_content_copied": false,
+    "configuration_changed": false,
+    "billing_changed": false,
+    "executor_installed_or_upgraded": false,
+    "live_inference_started": false,
+    "channel_or_browser_used": false,
+    "task_workspace_modified": false
+  },
+  "evidence_refs": [
+    "ignition/data/operations/iterations/143/step00-baseline-audit.json",
+    "ignition/data/operations/iterations/142/local-executor-census-r2.json",
+    "ignition/data/operations/iterations/142/step06-gemini-public-audit.json",
+    "ignition/data/operations/iterations/142/step07-hermes-public-audit.json",
+    "ignition/data/operations/iterations/142/step08-openclaw-public-audit.json",
+    "ignition/data/operations/iterations/142/step09-codex-blocker-audit.json"
+  ],
+  "claim_ceiling": "Initial repository-local qualification campaign state only; installed status and prior blockers do not prove authentication, live selectability, inference, validated completion or external truth."
+}
