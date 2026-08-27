@@ -216,9 +216,16 @@ def main() -> int:
     mode.add_argument("--write", action="store_true")
     args = parser.parse_args()
     document = load_json(STATUS_PATH)
-    current_task = load_json(STATUS_PATH)["task_identity"]["current_formal_task"] if load_json(STATUS_PATH).get("task_identity") else None
+    current_task = document["task_identity"]["current_formal_task"] if document.get("task_identity") else None
     ordinal = int(current_task.rsplit("-", 1)[1]) + 1 if current_task else 1
-    contract_path = ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json"
+    next_contract_path = ROOT / f"data/operations/iterations/{ordinal}/execution-contract-r1.json"
+    if next_contract_path.is_file():
+        contract_path = next_contract_path
+    else:
+        recorded_path = document.get("task_identity", {}).get("advancement", {}).get("execution_contract_path")
+        if not recorded_path:
+            raise AdvancementError("no next execution contract or recorded current execution contract is available")
+        contract_path = REPO_ROOT / recorded_path
     contract = load_json(contract_path)
     try:
         updated, changed = advance_document(document, contract)

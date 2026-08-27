@@ -26,5 +26,5 @@
     "release_candidate_task": "IGNITION-20260828-144",
     "publication_witness_task": "IGNITION-20260828-144"
   },
-  "claim_ceiling": "Task144 repository-local engineering closure, Owner production handoff and release evidence only; no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+  "claim_ceiling": "Task144 repository-local engineering closure, Owner authority for production handoff and release evidence only; no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
 }

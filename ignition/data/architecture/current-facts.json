@@ -1,9 +1,9 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_formal_task_id": "IGNITION-20260827-143",
-  "current_formal_task_ordinal": 143,
-  "current_iteration_boundary": 143,
+  "current_formal_task_id": "IGNITION-20260828-144",
+  "current_formal_task_ordinal": 144,
+  "current_iteration_boundary": 144,
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "facts": {
     "architecture": {
@@ -65,13 +65,13 @@
     },
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
-      "current_task_id": "IGNITION-20260827-143",
-      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
-      "current_task_terminal": true,
+      "current_task_id": "IGNITION-20260828-144",
+      "current_task_status": "IN_PROGRESS",
+      "current_task_terminal": false,
       "open_obligation_ids": [
         "LIVE_EXTERNAL_INVOCATION"
       ],
-      "scope_complete": true,
+      "scope_complete": false,
       "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json",
       "terminal_task_history": [
         {
@@ -119,9 +119,9 @@
       }
     },
     "iteration": {
-      "current_formal_task_id": "IGNITION-20260827-143",
-      "current_formal_task_ordinal": 143,
-      "current_iteration_boundary": 143,
+      "current_formal_task_id": "IGNITION-20260828-144",
+      "current_formal_task_ordinal": 144,
+      "current_iteration_boundary": 144,
       "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
       "current_map_version": "0.16.0",
       "latest_architecture_changing_task_id": "IGNITION-20260827-142",
@@ -138,7 +138,7 @@
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
-      "current_task_id": "IGNITION-20260827-143",
+      "current_task_id": "IGNITION-20260828-144",
       "next_eligible_actions": [
         "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION"
       ],
@@ -171,8 +171,8 @@
       "pilot_status": "OFFLINE_SYNTHETIC_ONLY"
     },
     "task_lineage": {
-      "current_task_id": "IGNITION-20260827-143",
-      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "current_task_id": "IGNITION-20260828-144",
+      "current_task_status": "IN_PROGRESS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -194,7 +194,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "ffb463a978f61e89f03c5688608290a4f5a1c4751a2d6908b81ae22ff3cb95ee"
+      "sha256": "d0317094e1e9bb0552d86b7f226b8d5e06756e85c4ea7a1a60074d13a263fdf8"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -226,15 +226,15 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "cd26910bd4bdfe4b8a3a0ac629b8170d0b0e66cfe2483fc9bf2c8944d3533da0"
+      "sha256": "00a37808b516ce09683fc1be61e3ff427337b218716c130aaf1b629b44693bcc"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "51a948c42f90659cd76d60cf4730d150e450fd0f425fdcc1e5eca9c6bafa8db6"
+      "sha256": "b969b629a3904155c5cfb547b12211e38f3b80424b8d19b55b9f8b8d931b451c"
     },
     {
       "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
-      "sha256": "a775ffd319b55a63c7da9891993b63d3b58e5100dfa395961c97187624f15ed2"
+      "sha256": "4b2aef71aa957e479b55faf7db96f01b9fd40ddef634ef2811fdfb25a94b71fe"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
@@ -262,7 +262,7 @@
     },
     {
       "path": "ignition/data/operations/open-obligation-registry-r1.json",
-      "sha256": "80a6637c207907cc71d948dd56df5dd5ba23027df4c79ae0f33f854b7db90cb1"
+      "sha256": "58770716eb8701c4dff7860353f406665af6403d2bfdf43a577d96fad76f5f71"
     },
     {
       "path": "ignition/data/operations/project-components.json",

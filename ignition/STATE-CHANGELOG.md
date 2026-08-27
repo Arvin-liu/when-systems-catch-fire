@@ -2,18 +2,18 @@
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。
 - current_identity_epoch: `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260827-143` (ordinal `143`)；status: `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260827-142` (ordinal `142`)；current_iteration_boundary: `143` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260827-143`。
-- formal_task_terminality: authority `FORMAL_TASK_LIFECYCLE`；task `IGNITION-20260827-143` status `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal `true`；scope_complete `true`；open references `['LIVE_EXTERNAL_INVOCATION']`。
+- current_formal_task: `IGNITION-20260828-144` (ordinal `144`)；status: `IN_PROGRESS`；terminal: `false`；latest_architecture_changing_task: `IGNITION-20260827-142` (ordinal `142`)；current_iteration_boundary: `144` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260828-144`。
+- formal_task_terminality: authority `FORMAL_TASK_LIFECYCLE`；task `IGNITION-20260828-144` status `IN_PROGRESS`；terminal `false`；scope_complete `false`；open references `['LIVE_EXTERNAL_INVOCATION']`。
 - publication_instruction: run ref-derived verification against `refs/heads/main`; do not infer publication from embedded Current content。
 - formal_task_terminal_history: `[{"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260827-143", "terminal": true}, {"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260827-142", "terminal": true}, {"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260826-141", "terminal": true}]`；Task141 terminality remains recorded independently of the carried obligation。
 - open_obligation_registry: authority `OPEN_OBLIGATION_REGISTRY`；status `OPEN` ids `['LIVE_EXTERNAL_INVOCATION']`；count `1`；next eligible action `['OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION']`。
-- release_lifecycle: task `IGNITION-20260827-143`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
+- release_lifecycle: task `IGNITION-20260828-144`；content phase `RUNNING`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
 - current_method: `1.4.0` Current；current_map: `0.16.0` Current；historical_map: `0.14.0` Historical。
 - current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；live dimensions: dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`, validated completion `NOT_VALIDATED`, reconciliation blocker `NONE`。
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=99; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260827-143` `COMPLETED_WITH_OPEN_OBLIGATIONS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `f56d14acaa19d32c7a4f8ccea06c35af121c808a9281877fed9caf0c8b1c0935`。
+- task_lineage: current `IGNITION-20260828-144` `IN_PROGRESS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `b96936080bd806cffc8fc3bd3b14ea8a3085e26888e8e5872eb497e3756fc442`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
@@ -557,3 +557,14 @@
 - stale_knowledge: the active Task143 phase-closure entry described the work before manuscript and terminality closure; it remains immutable historical context. The superseded executor-qualification campaign is not revived, and the Step18 29/6/1 failure observations remain evidence rather than being erased.
 - next_read: read the [Task143 terminality receipt](./reports/operations/ignition-143-step19-terminality.md), [成果册入口](./PUBLICATIONS/pointfire-results-book/README.md), and the separate fresh-clone/remote-ref/`1111` witness evidence when published; do not infer main publication from this source.
 - claim_ceiling: repository-local terminality, publication-production and release-ready candidate evidence only; no formal main publication, external truth, production readiness, Owner acceptance, validated live completion or epistemic acceptance is inferred.
+
+## 2026-08-28 — IGNITION-20260828-144 — engineering closure and production handoff in progress
+
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; Task144 advances canonical Current from terminal Task143 while formal publication remains a separate remote-ref observation and independent 1111 witness.
+- formal_task: `IGNITION-20260828-144` is `IN_PROGRESS` and non-terminal while the engineering phase closure and production-handoff gates execute. Task143 remains the historical `COMPLETED_WITH_OPEN_OBLIGATIONS` predecessor.
+- phase_boundary: the architecture and executor phase is frozen at Task142 (`FROZEN_TASK142_BASELINE`, map `0.16.0`) and is closing without a new architecture or Agent layer. The external qualification line is `OWNER_DEFERRED`; no new live attempt or automatic resume is authorized.
+- production_handoff: Task143's three articles, Book Project R1 and two samples are classified `SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`. Article selection, book initiation and publication acceptance remain Owner authority; the next action is `AWAIT_OWNER_PRODUCTION_BRIEF`.
+- task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task142 and Task143 remain terminal `COMPLETED_WITH_OPEN_OBLIGATIONS` historical records.
+- obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED`; its six historical attempts and zero validated completions are preserved, and Task144 does not reopen or retry it.
+- safety: no provider, executor, channel, browser, remote-Git, configuration, billing, installation, authentication or external side effect is authorized by this presentation-only closure transition.
+- claim_ceiling: repository-local engineering closure and Owner production-handoff evidence only; no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred.

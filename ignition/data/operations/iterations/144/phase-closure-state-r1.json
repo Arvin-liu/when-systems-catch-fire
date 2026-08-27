@@ -1,0 +1,48 @@
+{
+  "schema_version": "ignition-144-phase-closure-state-r1",
+  "task_id": "IGNITION-20260828-144",
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "75c06887f59fa94868101707acc4b8386f41fe13"
+  },
+  "engineering_scope": {
+    "phase": "CLOSING",
+    "target_terminal_phase": "CLOSED",
+    "architecture_phase": "CLOSED",
+    "architecture_mode": "FROZEN_TASK142_BASELINE",
+    "latest_architecture_task": "IGNITION-20260827-142",
+    "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+    "current_map_version": "0.16.0",
+    "new_architecture_or_agent_layer": false
+  },
+  "production_handoff": {
+    "mode": "AWAITING_OWNER_PRODUCTION_BRIEF",
+    "next_action": "AWAIT_OWNER_PRODUCTION_BRIEF",
+    "task143_outputs": "SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED",
+    "owner_topic_selection_required": true,
+    "owner_book_initiation_required": true,
+    "automatic_new_article_or_book_body": false,
+    "automatic_next_engineering_task": false
+  },
+  "external_executor_qualification": {
+    "phase": "OWNER_DEFERRED",
+    "status": "DEFERRED_NOT_FAILED",
+    "new_qualification_or_live_attempts": 0,
+    "no_automatic_resume": true,
+    "resume_capsule": "ignition/data/operations/iterations/144/resume-capsule-r1.json",
+    "resume_prerequisites": [
+      "OWNER_EXPLICIT_REOPEN",
+      "LOCAL_ENVIRONMENT_PREPARED_INSTALLED_AND_ATTESTED"
+    ]
+  },
+  "open_obligation": {
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "status": "OPEN",
+    "operational_state": "OWNER_DEFERRED",
+    "task_liveness_independent": true,
+    "historical_attempts_preserved": true,
+    "current_next_action": "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION"
+  },
+  "claim_ceiling": "Repository-local engineering phase closure and Owner production handoff state only; this record does not prove production safety, external truth, Owner acceptance, publication acceptance or epistemic acceptance."
+}

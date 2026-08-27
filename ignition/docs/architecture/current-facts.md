@@ -1,7 +1,7 @@
 <!-- BEGIN GENERATED CURRENT-FACTS r1; DO NOT EDIT -->
 # Current Facts（机器推导事实）
 
-- Iteration identity: current formal task `IGNITION-20260827-143` (ordinal `143`)；latest architecture-changing task `IGNITION-20260827-142` (ordinal `142`)；`current_iteration_boundary` `143` is a deprecated compatibility alias of the formal ordinal。
+- Iteration identity: current formal task `IGNITION-20260828-144` (ordinal `144`)；latest architecture-changing task `IGNITION-20260827-142` (ordinal `142`)；`current_iteration_boundary` `144` is a deprecated compatibility alias of the formal ordinal。
 - Architecture registry: `99` components；`87` visible map nodes；`12` hidden represented components；`140` typed relations；`92` visible typed edges。
 - Map/method: map `0.16.0` Current（historical `0.14.0`）；layout `2.0.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；method `1.4.0` `Current`。
 - Packs: `4` packs；`10` declared capability routes。
@@ -12,8 +12,8 @@
 - Knowledge Experience: cards `413`；changes `315`；layered readings `332`；search records `23943`；aliases `874`。
 - Fire Seeds: `64` seeds/clusters；`398` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`20` registered sync surfaces；`14` machine/human pairs。
-- Task lineage: current `IGNITION-20260827-143` `COMPLETED_WITH_OPEN_OBLIGATIONS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- Formal task lifecycle: `IGNITION-20260827-143` `COMPLETED_WITH_OPEN_OBLIGATIONS` terminal `true` scope_complete `true`；source `ignition/data/operations/formal-task-lifecycle-r1.json`。
+- Task lineage: current `IGNITION-20260828-144` `IN_PROGRESS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
+- Formal task lifecycle: `IGNITION-20260828-144` `IN_PROGRESS` terminal `false` scope_complete `false`；source `ignition/data/operations/formal-task-lifecycle-r1.json`。
 - Formal terminal history: `[{'task_id': 'IGNITION-20260827-143', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}, {'task_id': 'IGNITION-20260827-142', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}, {'task_id': 'IGNITION-20260826-141', 'execution_status': 'COMPLETED_WITH_OPEN_OBLIGATIONS', 'terminal': True}]`；terminal formal tasks remain independent from open obligations。
 - Open obligations: authority `OPEN_OBLIGATION_REGISTRY`; open `['LIVE_EXTERNAL_INVOCATION']`; next eligible actions `['OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION']`; source `ignition/data/operations/open-obligation-registry-r1.json`。
 - Steering: `REPOSITORY_LOCAL_CURRENT`；`15` bounded modules；`4` integration surfaces；pilot `OFFLINE_SYNTHETIC_ONLY`；completion boundary `run_pass_is_not_goal_completion; independent completion contract and validator evidence remain required`。
