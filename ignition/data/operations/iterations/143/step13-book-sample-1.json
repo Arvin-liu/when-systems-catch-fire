@@ -1,0 +1,26 @@
+{
+  "schema_version": "ignition-143-step13-book-sample-1-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "13",
+  "status": "PASS",
+  "sample_id": "book-project-r1-sample-01",
+  "path": "PUBLICATIONS/pointfire-results-book/book-project-r1/01-第一章-先别急着宣布完成.md",
+  "chapter": "第一章 先别急着宣布完成",
+  "book_project": "PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md",
+  "prose_mode": "BOOK_PROSE_NOT_ARCHITECTURE_DOCUMENTATION",
+  "reader_job": "Let a general reader feel why task delivery and long-lived responsibility need separate subjects and timelines.",
+  "source_anchor": [
+    "data/operations/iterations/142/step01-terminality-semantics.json",
+    "data/operations/iterations/142/step19-publication-and-terminality.json",
+    "data/operations/open-obligation-registry-r1.json",
+    "reports/operations/ignition-142-step19-publication-and-terminality.md"
+  ],
+  "editorial_checks": {
+    "substantial_prose": true,
+    "reader_entry_before_internal_labels": true,
+    "distinct_from_article_a_lead_and_structure": true,
+    "hypothetical_scenes_marked_as_non_evidence": true,
+    "claim_ceiling_preserved": true
+  },
+  "claim_ceiling": "Polished book sample explaining a repository-local lifecycle case; not external truth, production readiness, Owner acceptance or epistemic acceptance."
+}
