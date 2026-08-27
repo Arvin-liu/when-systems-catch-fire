@@ -1,0 +1,72 @@
+{
+  "schema_version": "ignition-144-deferred-backlog-r1",
+  "task_id": "IGNITION-20260828-144",
+  "step": "04",
+  "status": "PASS",
+  "baseline_sha": "75c06887f59fa94868101707acc4b8386f41fe13",
+  "categories": {
+    "DEFERRED_OWNER_REOPEN": [
+      {
+        "item_id": "LIVE_EXTERNAL_INVOCATION",
+        "source_task_range": "IGNITION-20260827-142 through IGNITION-20260827-143",
+        "status": "OPEN",
+        "operational_state": "OWNER_DEFERRED",
+        "validated_completion_count": 0,
+        "historical_attempt_count": 6,
+        "observation_incomplete_count": 2,
+        "resume_prerequisites": [
+          "OWNER_EXPLICIT_REOPEN",
+          "LOCAL_ENVIRONMENT_PREPARED_INSTALLED_AND_ATTESTED",
+          "REVALIDATE_AUTH_WORKSPACE_STRUCTURED_RESULT_CLEANUP_AND_SIDE_EFFECT_BOUNDARIES"
+        ],
+        "automatic_resume": false,
+        "next_action": "OWNER_DEFERRED"
+      }
+    ],
+    "HISTORICAL_PRESERVED": [
+      {
+        "item_id": "TASK142_EXECUTOR_CENSUS_AND_ATTEMPT_HISTORY",
+        "source": "ignition/data/operations/iterations/142/local-executor-census-r2.json",
+        "disposition": "retain_as_historical_evidence",
+        "new_attempts_in_task144": 0
+      },
+      {
+        "item_id": "TASK143_PUBLICATION_SMOKE_OUTPUTS",
+        "source": "ignition/data/operations/iterations/144/task143-smoke-output-inventory-r1.json",
+        "disposition": "retain_but_nonaccepted",
+        "status": "SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED"
+      },
+      {
+        "item_id": "TASK143_NATURAL_FAILURE_RUNS",
+        "source": "ignition/data/operations/iterations/143/step18-full-regression.json",
+        "disposition": "retain_failure_evidence_without_relabeling"
+      }
+    ],
+    "NONBLOCKING_UNKNOWN": [
+      {
+        "item_id": "OWNER_PRODUCTION_SELECTION",
+        "status": "NOT_PROVIDED",
+        "next_action": "AWAIT_OWNER_PRODUCTION_BRIEF"
+      },
+      {
+        "item_id": "EXTERNAL_TRUTH_AND_EPISTEMIC_ACCEPTANCE",
+        "status": "NOT_ESTABLISHED",
+        "disposition": "do_not_infer_from_repository_outputs"
+      },
+      {
+        "item_id": "FUTURE_LOCAL_EXECUTOR_ENVIRONMENT",
+        "status": "NOT_PREPARED_FOR_RESUME",
+        "disposition": "Owner-deferred prerequisite, not a Task144 closure blocker"
+      }
+    ],
+    "CLOSURE_BLOCKER": []
+  },
+  "external_agent_boundary": {
+    "qualification": "OWNER_DEFERRED",
+    "new_live_attempts": 0,
+    "installation_or_upgrade": false,
+    "auth_or_billing_change": false,
+    "automatic_reopen": false
+  },
+  "claim_ceiling": "Repository-local backlog classification and recoverability record only; deferred is not failed, and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

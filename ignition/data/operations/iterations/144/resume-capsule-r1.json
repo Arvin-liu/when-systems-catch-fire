@@ -1,0 +1,42 @@
+{
+  "schema_version": "ignition-144-resume-capsule-r1",
+  "task_id": "IGNITION-20260828-144",
+  "parking_status": "OWNER_DEFERRED_NOT_FAILED",
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "75c06887f59fa94868101707acc4b8386f41fe13"
+  },
+  "frozen_architecture_identity": {
+    "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+    "latest_architecture_task": "IGNITION-20260827-142",
+    "current_map_version": "0.16.0",
+    "architecture_phase": "CLOSED"
+  },
+  "live_obligation_snapshot": {
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "status": "OPEN",
+    "operational_state": "OWNER_DEFERRED",
+    "current_next_action": "OWNER_EXPLICIT_REOPEN_AFTER_LOCAL_ENVIRONMENT_PREPARATION",
+    "total_attempts": 6,
+    "validated_completion_count": 0,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "current_live_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION"
+  },
+  "resume_prerequisites": [
+    "OWNER_EXPLICIT_REOPEN",
+    "LOCAL_ENVIRONMENT_PREPARED_INSTALLED_AND_ATTESTED",
+    "REVALIDATE_AUTH_WORKSPACE_STRUCTURED_RESULT_CLEANUP_AND_SIDE_EFFECT_BOUNDARIES"
+  ],
+  "resume_sources": [
+    "ignition/data/operations/iterations/142/local-executor-census-r2.json",
+    "ignition/data/operations/iterations/141/live-current-projection-r3.json",
+    "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+    "ignition/data/operations/open-obligation-registry-r1.json",
+    "ignition/data/operations/iterations/143/resume-capsule-r1.json",
+    "ignition/data/governance/owner-editorial-authority-r1.json"
+  ],
+  "resume_rule": "Do not infer readiness or start qualification from this capsule. A future Owner-authorized task must re-read the listed sources, prepare and attest the local environment, and re-establish every live boundary before any attempt.",
+  "claim_ceiling": "Repository-local resume aid and phase-parking evidence only; this capsule is not a production-readiness claim, validated completion, external truth, Owner acceptance or epistemic acceptance."
+}
