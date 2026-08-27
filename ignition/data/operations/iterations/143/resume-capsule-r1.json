@@ -1,0 +1,56 @@
+{
+  "schema_version": "ignition-143-resume-capsule-r1",
+  "task_id": "IGNITION-20260827-143",
+  "parking_status": "OWNER_DEFERRED_NOT_FAILED",
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "b359580fe31866bc04eeb24911011e0baba9b66d"
+  },
+  "frozen_architecture_identity": {
+    "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+    "latest_architecture_task": "IGNITION-20260827-142",
+    "current_map_version": "0.16.0",
+    "architecture_phase": "CLOSED"
+  },
+  "live_obligation_snapshot": {
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "status": "OPEN",
+    "operational_state": "OWNER_DEFERRED",
+    "current_next_action": "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION",
+    "historical_next_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+    "total_attempts": 6,
+    "validated_completion_count": 0,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "current_live_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION"
+  },
+  "executor_census_snapshot": {
+    "source": "ignition/data/operations/iterations/142/local-executor-census-r2.json",
+    "candidate_count": 14,
+    "agentic_families_of_interest": {
+      "Gemini": "BLOCKED",
+      "Hermes": "BLOCKED",
+      "Openclaw": "BLOCKED",
+      "Codex": "ADMITTED_BUT_POLICY_EXCLUDED"
+    },
+    "live_process_started_in_task143": false
+  },
+  "resume_prerequisites": [
+    "OWNER_EXPLICIT_REOPEN",
+    "LOCAL_ENVIRONMENT_PREPARED_INSTALLED_AND_ATTESTED"
+  ],
+  "resume_sources": [
+    "ignition/data/operations/iterations/143/execution-contract-r1.json",
+    "ignition/data/operations/iterations/143/phase-closure-state-r1.json",
+    "ignition/data/operations/iterations/143/step01-phase-closure.json",
+    "ignition/data/operations/open-obligation-registry-r1.json",
+    "ignition/data/operations/iterations/141/live-current-projection-r3.json",
+    "ignition/data/operations/iterations/139/live-attempt-ledger.jsonl",
+    "ignition/data/operations/iterations/142/local-executor-census-r2.json",
+    "ignition/data/agent-federation/executor-inventory-r1.json",
+    "ignition/data/architecture/current-system-identity.json"
+  ],
+  "resume_rule": "Do not infer readiness or start qualification from this capsule. A future Owner-authorized task must re-read the listed sources, revalidate the environment and re-establish every live boundary before any attempt.",
+  "claim_ceiling": "Repository-local resume aid and phase-parking evidence only; this capsule is not a production-readiness claim, validated completion, external truth, Owner acceptance or epistemic acceptance."
+}
