@@ -244,6 +244,108 @@
         "schemas/failure-case-evidence-gate.schema.json",
         "tools/failure_case_evidence_gate.py"
       ]
+    },
+    "011-terminal-task-open-obligation": {
+      "current_claim_ceiling": "repository-local task terminality and open-obligation separation; no external executor completion, production readiness or epistemic acceptance",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/011-terminal-task-open-obligation.md",
+      "last_reviewed_commit": "fec54448",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "IGNITION-143 Step11 cross-publication editorial review; Task143 article A final wording review retained the repository-local lifecycle ceiling",
+      "source_hashes": {
+        "data/operations/iterations/142/step01-terminality-semantics.json": "61fb9a3a9b10faeaf5ddc832efc7e8267979ddcafcf2f0765a10a9d781605ba9",
+        "data/operations/iterations/142/step19-publication-and-terminality.json": "a9d16a31c607f256ab840fae18ba571c1c8aee390fa88a71ba02e06674cf45dd",
+        "reports/operations/ignition-142-step19-publication-and-terminality.md": "562b9301576bebf081b064a4094b0d49d9f842837fa116782f228cbc69e65f23",
+        "data/operations/open-obligation-registry-r1.json": "80a6637c207907cc71d948dd56df5dd5ba23027df4c79ae0f33f854b7db90cb1",
+        "data/operations/iterations/141/live-current-projection-r3.json": "47bb033b4d6b84223a2ee03283a0170430da18e9f6ca9a63bfbe998c4867e271",
+        "PUBLICATIONS/pointfire-results-book/07-方法系统与负结果.md": "7475b373aa86b919b5d904cac6d3a385d863e93253ffcd0efc47202aad29e2ca",
+        "docs/editorial/articles/003-from-candidate-to-current-evidence-chain.md": "2d0d7e109acf2808a33e43c92949e7ee1d4a10882e450576621c0b44c0130b31",
+        "docs/editorial/articles/009-system-completion-state-and-independent-replication.md": "aa27fe49388e35146df9b230fa8434edb44872f620a40840f2cbee35fbbe27ec"
+      },
+      "source_ids": [
+        "task-142-step01-terminality",
+        "task-142-step19-terminality",
+        "task-142-step19-report",
+        "open-obligation-registry-r1",
+        "task-141-live-current-projection",
+        "methods-systems-negative-results",
+        "article-003",
+        "article-009"
+      ],
+      "source_paths": [
+        "data/operations/iterations/142/step01-terminality-semantics.json",
+        "data/operations/iterations/142/step19-publication-and-terminality.json",
+        "reports/operations/ignition-142-step19-publication-and-terminality.md",
+        "data/operations/open-obligation-registry-r1.json",
+        "data/operations/iterations/141/live-current-projection-r3.json",
+        "PUBLICATIONS/pointfire-results-book/07-方法系统与负结果.md",
+        "docs/editorial/articles/003-from-candidate-to-current-evidence-chain.md",
+        "docs/editorial/articles/009-system-completion-state-and-independent-replication.md"
+      ]
+    },
+    "012-support-becomes-path-control": {
+      "current_claim_ceiling": "Pointfire-originated D600/M3 internal candidate model and research problem; no universal causal law, measured prevalence, external validation or epistemic acceptance",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/012-support-becomes-path-control.md",
+      "last_reviewed_commit": "60938e21",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "IGNITION-143 Step09 adversarial edit and Step11 cross-publication editorial review; D600/M3 remains INDIRECT_SOURCE_ONLY and FORMALIZATION_INCOMPLETE",
+      "source_hashes": {
+        "PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md": "40c732c325e223cec485f4aac31c040a0c520e3b5b813268020a0c6a84d7d506",
+        "outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md": "c24df41ec8614a2073c1cc6e373054a2cc2adfa3fd18a46a223eda0df5ce4cd4",
+        "outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md": "57f1e7244dfa742af8cde3ace2ff69423147213cac4555e4a56fe48717d838be",
+        "outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md": "48dfe1b592c3e583dd280b71cdc9aa2875aa760abb77e136774460cc181aad7a",
+        "outputs/collisions/20260711-disobedience-subjectivity/validation-report.md": "abd3406f8ae02ce2ea9058137afe1fef4ba6fbea496cda1d16d7bbd76e7276c6",
+        "reports/math-foundation/pilot-formal-audit-20260712.md": "87f7994c58ad8c6f11976ef2c5efc821cd11439400c73c29d7abe8b3058da286",
+        "reports/math-foundation/provenance-audit-20260712.md": "1b340820410f879baab71d9d3ba0cd52a4bb05fcfe98b04304ba7bdb78412667"
+      },
+      "source_ids": [
+        "fire-seed-cf-07",
+        "d600-m3-mechanism-extraction",
+        "d600-m3-decision-matrix",
+        "independent-second-angle-audit-056",
+        "d600-m3-validation-report",
+        "pilot-formal-audit",
+        "provenance-audit"
+      ],
+      "source_paths": [
+        "PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md",
+        "outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md",
+        "outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md",
+        "outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md",
+        "outputs/collisions/20260711-disobedience-subjectivity/validation-report.md",
+        "reports/math-foundation/pilot-formal-audit-20260712.md",
+        "reports/math-foundation/provenance-audit-20260712.md"
+      ]
+    },
+    "013-tree-canopy-temperature-causality": {
+      "current_claim_ceiling": "bounded public-source canopy and local near-ground-air-temperature association; no city-wide causal tree-planting effect, direct human heat-stress result or epistemic acceptance",
+      "editorial_status": "REVIEWED_CURRENT",
+      "file": "docs/editorial/articles/013-tree-canopy-temperature-causality.md",
+      "last_reviewed_commit": "fec54448",
+      "materiality_rules": [
+        "any change to a listed source path requires re-review before currency",
+        "changing only an unrelated source does not force staleness"
+      ],
+      "review_evidence": "IGNITION-143 Step11 cross-publication editorial review; public links remain source entrances and not a claim of causal validation",
+      "source_hashes": {
+        "PUBLICATIONS/pointfire-results-book/10-七轨证据演化-契约修复.md": "45ef79f06c5115094e55d805ddd40a1023fd775066495c1528df13f3239d2152",
+        "PUBLICATIONS/pointfire-results-book/06-当前科学与WAIC.md": "03c770b86ce6277dbc5977dd27c062098b6e5a3fd7357282427a277403e40e4f"
+      },
+      "source_ids": [
+        "pointfire-seven-track-bounded-replay",
+        "current-science-waic"
+      ],
+      "source_paths": [
+        "PUBLICATIONS/pointfire-results-book/10-七轨证据演化-契约修复.md",
+        "PUBLICATIONS/pointfire-results-book/06-当前科学与WAIC.md"
+      ]
     }
   },
   "generated_by": "tools/propagation/generate_editorial_manifest.py",

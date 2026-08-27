@@ -1,4 +1,4 @@
-# 编辑文章阅读入口（任务 104 · §6）
+# 编辑文章阅读入口（任务 104 · §6；IGNITION-143 R1 新增）
 
 本目录是任务 104「叙事合成」产出的**人类阅读入口**。它与仓库已有的机器可读注册表、人类可读表面刻意分开，遵循「三分离」原则：**查一个资产**、**看项目现在有哪些结论**、**读一篇真正组织过的文章**是三种不同的动作，不应被混为同一件事。
 
@@ -6,6 +6,8 @@
 > 规划元数据与大纲：`docs/editorial/MANIFEST.md`
 > 源资产简报（每簇成员卡的关键字段）：`analysis/corpus-relation/cluster_source_briefs/`
 > 质量门报告：`docs/editorial/QUALITY-REPORT.md`
+
+Task143 的出版生产成果也从这里进入人类阅读层：三篇新文章分别承担生命周期、实质性候选模型和公开来源 replay 的独立读者问题；它们与 Book Project R1 的样章保持互链。Task104 的 `QUALITY-REPORT.md` 是历史自动检查快照，本轮文章的单篇质量与交叉审校证据见 `data/operations/iterations/143/` 和 `reports/operations/ignition-143-step11-cross-publication-editorial-review.md`。
 
 ---
 
@@ -27,7 +29,7 @@
 
 如果你想快速知道**这个项目在哪些问题上已经有了组织过的结论**，看这里：
 
-- **六篇编辑文章**（见下方清单）：它们是被组织过的叙事结论，覆盖 §5.3 五类（修正/架构/证据/跨域/开放问题）外加一篇编辑纪律篇。
+- **既有编辑文章与 Task143 R1 三篇新文章**（见下方清单）：它们是被组织过的叙事结论，覆盖修正、架构、证据、跨域、开放问题、编辑纪律和本轮三个独立读者问题。
 - **文章簇候选（15 簇）**：`analysis/corpus-relation/article_cluster_candidates.json`，说明语料如何被分组、哪些簇是 ARTICLE_CANDIDATE、哪些是 REFERENCE_TAXONOMIC 参考集合。
 
 注意：这里的「结论」是**导航性结论**——它告诉你「这个项目从哪些角度组织过论证」，不替代注册表里的逐项裁决。
@@ -55,6 +57,16 @@
 | `006-readable-works-with-boundaries.md` | 编辑 / 出版纪律 | 把结果写成可读作品，而不越过边界 |
 | `007-bounded-trust-function-os-v02-capability-benchmark.md` | 证据 / 验证 | 边界之内的可信：Function OS v0.2 能力基准告诉我们什么，以及它诚实停在哪里 |
 | `008-merged-but-stale-public-truth.md` | 架构 / 治理 | 已合并，却活在过去：公开当前真相为何会滞后 |
+
+### IGNITION-143 R1 新文章
+
+| 文件 | 类别 | 一句话 |
+|---|---|---|
+| `011-terminal-task-open-obligation.md` | 方法 / 系统 | 一个系统如何在停止时仍然诚实 |
+| `012-support-becomes-path-control.md` | 实质性内部候选模型 | 资源托举为什么会变成路径控制 |
+| `013-tree-canopy-temperature-causality.md` | 有界公开 replay / 读者价值 | 树冠会降温吗：一个好问题如何被证据层拆开 |
+
+三篇新文章的共同边界是必要的出版语法，不代表它们共享一个结论。要看书稿主线、素材—章节映射和样章，进入[Book Project R1](../../PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md)；要看本轮选择与舍弃项，进入[出版组合 R1](../../PUBLICATIONS/pointfire-results-book/13-出版组合-R1.md)。
 
 ---
 

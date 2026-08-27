@@ -21,6 +21,19 @@
 
 普通读者不需要打开 JSONL。需要核对可独立修订的成果单元时，再看[公开 registry](RESULT-REGISTRY.jsonl)；需要了解私有来源如何被处理时，看[公共出版边界](PUBLICATION-BOUNDARY.md)。
 
+## IGNITION-143 R1：新出版成果
+
+本轮把当前工程阶段封存后，直接进入成果生产。以下成果已经接回本册这一条 canonical 出版入口：
+
+- [出版组合 R1](13-出版组合-R1.md)：三篇文章与书籍项目的选择、排序和舍弃项。
+- [Article 011：一个系统如何在停止时仍然诚实](../../docs/editorial/articles/011-terminal-task-open-obligation.md)：从 Task142 的两只生命周期时钟写任务 terminality 与开放义务。
+- [Article 012：资源托举为什么会变成路径控制](../../docs/editorial/articles/012-support-becomes-path-control.md)：把 D600/M3 保持为带反例的内部候选模型。
+- [Article 013：树冠会降温吗](../../docs/editorial/articles/013-tree-canopy-temperature-causality.md)：用公开来源拆开树冠、温度对象和因果范围。
+- [Book Project R1：《还没有被证明的世界》](14-书籍项目-R1-还没有被证明的世界.md)：书名方向、读者承诺、目录、素材映射与证据策略。
+- 成熟书稿样章：[第一章](book-project-r1/01-第一章-先别急着宣布完成.md) · [第三章](book-project-r1/03-第三章-退出不是按钮.md)。
+
+这些是可继续人工编辑的出版生产成果，不是整本书完成、外部真值、生产就绪或 `EPISTEMICALLY_ACCEPTED`。新成果的机器登记与 claim ceiling 见[公开 registry](RESULT-REGISTRY.jsonl)；旧的 `LIVE_EXTERNAL_INVOCATION` 仍由 obligation registry 独立保留为 Owner-deferred，不在本轮被伪装成已解决。
+
 ## 这本书收录什么
 
 - 早期“转身”问题如何逐步压缩为“点火”、应约、退出权、决策、事件和时间窗口；
