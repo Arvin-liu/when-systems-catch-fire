@@ -23,7 +23,9 @@
 
 ## IGNITION-143 R1：新出版成果
 
-本轮把当前工程阶段封存后，直接进入成果生产。以下成果已经接回本册这一条 canonical 出版入口：
+本轮把当前工程阶段封存后，执行了一次成果生产能力 smoke test。以下成果已经接回本册这一条 canonical 出版入口，但不因此成为 Owner 已选择或已接受的正式作品：
+
+> **统一状态：** `SMOKE_TEST_OUTPUT` · `OWNER_REVIEW_PENDING` · `PUBLICATION_ACCEPTANCE_NOT_GRANTED`。`repository publication artifact != external publication acceptance`。
 
 - [出版组合 R1](13-出版组合-R1.md)：三篇文章与书籍项目的选择、排序和舍弃项。
 - [Article 011：一个系统如何在停止时仍然诚实](../../docs/editorial/articles/011-terminal-task-open-obligation.md)：从 Task142 的两只生命周期时钟写任务 terminality 与开放义务。
@@ -32,7 +34,7 @@
 - [Book Project R1：《还没有被证明的世界》](14-书籍项目-R1-还没有被证明的世界.md)：书名方向、读者承诺、目录、素材映射与证据策略。
 - 成熟书稿样章：[第一章](book-project-r1/01-第一章-先别急着宣布完成.md) · [第三章](book-project-r1/03-第三章-退出不是按钮.md)。
 
-这些是可继续人工编辑的出版生产成果，不是整本书完成、外部真值、生产就绪或 `EPISTEMICALLY_ACCEPTED`。新成果的机器登记与 claim ceiling 见[公开 registry](RESULT-REGISTRY.jsonl)；旧的 `LIVE_EXTERNAL_INVOCATION` 仍由 obligation registry 独立保留为 Owner-deferred，不在本轮被伪装成已解决。
+这些是可继续人工编辑的 smoke-test 输出，不是 Owner 已选择的正式生产项目，不是整本书完成、外部真值、生产就绪或 `EPISTEMICALLY_ACCEPTED`。新成果的机器登记与 claim ceiling 见[公开 registry](RESULT-REGISTRY.jsonl)；旧的 `LIVE_EXTERNAL_INVOCATION` 仍由 obligation registry 独立保留为 Owner-deferred，不在本轮被伪装成已解决。
 
 ## 这本书收录什么
 

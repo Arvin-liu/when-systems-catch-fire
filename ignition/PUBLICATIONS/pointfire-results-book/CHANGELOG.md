@@ -6,6 +6,7 @@
 - 新增三篇完整、可继续人工编辑的文章：Task142 的任务 terminality 与开放义务、D600/M3 的资源—路径候选模型、树冠—温度—因果的公开来源 replay。
 - 新增 Book Project R1《还没有被证明的世界》、第一章与第三章两篇成熟样章；素材—章节映射、四层证据策略和重复审计写入书籍项目。
 - 将以上成果接回本册唯一 canonical README、编辑文章入口和公开 `RESULT-REGISTRY.jsonl`；出版生产状态不提升任何外部真值或 `EPISTEMICALLY_ACCEPTED`。
+- Task144 将这六项成果重分类为 `SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`；Task143 的内部编排不替代 Owner 的正式 production brief、选题或接受。
 
 ## 2026-08-15 · IGNITION-20260815-117 内容考古与火种扩展
 

@@ -248,6 +248,10 @@
     "011-terminal-task-open-obligation": {
       "current_claim_ceiling": "repository-local task terminality and open-obligation separation; no external executor completion, production readiness or epistemic acceptance",
       "editorial_status": "REVIEWED_CURRENT",
+      "production_status": "SMOKE_TEST_OUTPUT",
+      "owner_review_status": "OWNER_REVIEW_PENDING",
+      "owner_selection": "NOT_REVIEWED",
+      "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
       "file": "docs/editorial/articles/011-terminal-task-open-obligation.md",
       "last_reviewed_commit": "fec54448",
       "materiality_rules": [
@@ -289,6 +293,10 @@
     "012-support-becomes-path-control": {
       "current_claim_ceiling": "Pointfire-originated D600/M3 internal candidate model and research problem; no universal causal law, measured prevalence, external validation or epistemic acceptance",
       "editorial_status": "REVIEWED_CURRENT",
+      "production_status": "SMOKE_TEST_OUTPUT",
+      "owner_review_status": "OWNER_REVIEW_PENDING",
+      "owner_selection": "NOT_REVIEWED",
+      "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
       "file": "docs/editorial/articles/012-support-becomes-path-control.md",
       "last_reviewed_commit": "60938e21",
       "materiality_rules": [
@@ -327,6 +335,10 @@
     "013-tree-canopy-temperature-causality": {
       "current_claim_ceiling": "bounded public-source canopy and local near-ground-air-temperature association; no city-wide causal tree-planting effect, direct human heat-stress result or epistemic acceptance",
       "editorial_status": "REVIEWED_CURRENT",
+      "production_status": "SMOKE_TEST_OUTPUT",
+      "owner_review_status": "OWNER_REVIEW_PENDING",
+      "owner_selection": "NOT_REVIEWED",
+      "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
       "file": "docs/editorial/articles/013-tree-canopy-temperature-causality.md",
       "last_reviewed_commit": "fec54448",
       "materiality_rules": [

@@ -179,6 +179,14 @@
       "resume_condition": "Separate case material and a need for a distinct article rather than a list of adjacent D IDs."
     }
   ],
-  "decision": "SELECT_A_B_C_AND_BOOK_T2",
+  "decision": "TASK143_SMOKE_TEST_PORTFOLIO_ONLY",
+  "owner_authority_boundary": {
+    "artifact_class": "SMOKE_TEST_OUTPUT",
+    "owner_review_status": "OWNER_REVIEW_PENDING",
+    "owner_selection": "NOT_REVIEWED",
+    "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
+    "formal_production_requires": "OWNER_EXPLICIT_PRODUCTION_BRIEF_OR_OWNER_EXPLICIT_SELECTION",
+    "repository_publication_note": "repository publication artifact != external publication acceptance"
+  },
   "claim_ceiling": "Editorial selection and publication planning based on repository-local sources; selection does not upgrade any source, model, result, Owner decision or epistemic status."
 }

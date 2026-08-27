@@ -7,7 +7,7 @@
 > 源资产简报（每簇成员卡的关键字段）：`analysis/corpus-relation/cluster_source_briefs/`
 > 质量门报告：`docs/editorial/QUALITY-REPORT.md`
 
-Task143 的出版生产成果也从这里进入人类阅读层：三篇新文章分别承担生命周期、实质性候选模型和公开来源 replay 的独立读者问题；它们与 Book Project R1 的样章保持互链。Task104 的 `QUALITY-REPORT.md` 是历史自动检查快照，本轮文章的单篇质量与交叉审校证据见 `data/operations/iterations/143/` 和 `reports/operations/ignition-143-step11-cross-publication-editorial-review.md`。
+Task143 的出版生产 smoke-test 成果也从这里进入人类阅读层：三篇新文章分别承担生命周期、实质性候选模型和公开来源 replay 的独立读者问题；它们与 Book Project R1 的样章保持互链。它们当前统一为 `SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`，不等于 Owner 选题或接受。Task104 的 `QUALITY-REPORT.md` 是历史自动检查快照，本轮文章的单篇质量与交叉审校证据见 `data/operations/iterations/143/` 和 `reports/operations/ignition-143-step11-cross-publication-editorial-review.md`。
 
 ---
 
