@@ -1,59 +1,59 @@
 {
   "active_conclusion_rebounds": 0,
   "assertion_type_distribution": {
-    "DESCRIPTIVE": 396,
-    "EMPIRICAL": 4470,
+    "DESCRIPTIVE": 397,
+    "EMPIRICAL": 4471,
     "INTERPRETIVE": 2876,
     "MATHEMATICAL": 2366,
-    "METAPHYSICAL": 771,
+    "METAPHYSICAL": 773,
     "NORMATIVE": 163,
-    "UNRESOLVED": 6426
+    "UNRESOLVED": 6427
   },
   "blocked_conclusion_rebounds": 1,
-  "candidate_fragments": 30190,
-  "canonical_claims": 17468,
+  "candidate_fragments": 30195,
+  "canonical_claims": 17473,
   "claim_class_distribution": {
     "CROSS_DOMAIN_CORRESPONDENCE": 2422,
-    "DESCRIPTIVE_REPOSITORY_CLAIM": 396,
-    "EMPIRICAL_OR_LITERATURE_CLAIM": 2105,
+    "DESCRIPTIVE_REPOSITORY_CLAIM": 397,
+    "EMPIRICAL_OR_LITERATURE_CLAIM": 2106,
     "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 726,
     "INTERPRETATION_OR_FRAMEWORK_CLAIM": 454,
     "LAW_OR_PRINCIPLE_CLAIM": 191,
     "MECHANISM_OR_CAUSAL_CLAIM": 2166,
     "NORMATIVE_OR_GOVERNANCE_CLAIM": 163,
-    "ONTOLOGICAL_OR_METAPHYSICAL_CLAIM": 771,
+    "ONTOLOGICAL_OR_METAPHYSICAL_CLAIM": 773,
     "PREDICTION_OR_FORECAST": 199,
     "THEOREM_OR_MATHEMATICAL_CLAIM": 2366,
-    "UNRESOLVED_CLAIM": 5509
+    "UNRESOLVED_CLAIM": 5510
   },
   "closure_semantics": "Registry accounting is closed by explicit disposition or quarantine. Mathematical proof, external evidence, novelty and replication obligations remain independently open.",
   "conclusion_rebound_candidates": 59,
   "dependency_edges": 5620,
   "disposition_distribution": {
-    "ACCEPTED_AS_DEFINITION": 3534,
+    "ACCEPTED_AS_DEFINITION": 3537,
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
     "HISTORICAL_ONLY": 7273,
     "PENDING_EMPIRICAL_TEST": 878,
     "PENDING_LITERATURE_ADJUDICATION": 1015,
     "PENDING_PROOF": 657,
-    "QUARANTINED_AMBIGUOUS": 2386,
+    "QUARANTINED_AMBIGUOUS": 2387,
     "REJECTED_FALSE_OR_INVALID": 1,
     "RETAINED_AS_HEURISTIC": 620,
-    "RETAINED_AS_RESEARCH_HYPOTHESIS": 346,
+    "RETAINED_AS_RESEARCH_HYPOTHESIS": 347,
     "RETAINED_AS_STRUCTURAL_METAPHOR": 752,
     "RETAINED_AS_TOY_MODEL": 3,
     "REWRITE_AND_RETEST": 1,
     "WITHDRAWN_UNSUPPORTED": 1
   },
   "existing_claims_mapped": 678,
-  "explicit_quarantine_or_pending": 4939,
+  "explicit_quarantine_or_pending": 4940,
   "explicitly_unresolved_dependency_edges": 52,
   "external_evidence_distribution": {
-    "E0": 10189,
+    "E0": 10194,
     "E1": 7279
   },
   "mathematical_maturity_distribution": {
-    "M0": 14854,
+    "M0": 14859,
     "M1": 2609,
     "M3": 1,
     "M4": 3,
@@ -73,8 +73,8 @@
     "EXCLUDED_PLATFORM_CODE_EXCLUDED": 863,
     "EXPLICIT_CANONICAL_IMPORT": 1,
     "SCANNED_NO_CANDIDATE": 513,
-    "SCANNED_REGISTERED": 2370
+    "SCANNED_REGISTERED": 2371
   },
   "task_id": "IGNITION-CORPUS-WIDE-NONFUNCTION-CLAIM-ADJUDICATION-AND-EVIDENCE-LINEAGE-CLOSURE-R1-20260729",
-  "tracked_files_accounted": 4957
+  "tracked_files_accounted": 4958
 }

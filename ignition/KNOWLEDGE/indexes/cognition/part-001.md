@@ -1454,6 +1454,11 @@
   - 可搜索名称：NFC-86611ecc2ea1937c / At the current commit, Ignition is a bounded, auditable and recoverable Agent Platform prototype for cross-domain resear
   - 来源：`llms.txt`
   - 依赖：—；被引用：—
+- [attempts, zero validated completions, zero unreconciled attempts and two](../../../agent-results/IGNITION-20260827-142-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-de342ea7da9d841b / attempts, zero validated completions, zero unreconciled attempts and two
+  - 来源：`agent-results/IGNITION-20260827-142-result.md`
+  - 依赖：—；被引用：—
 - [Attention And Attractor Control Plane](../../ASSET-CARDS.md#asset-hr-9be719cb6ef0fd88)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：Attention And Attractor Control Plane / attention-attractor-control-plane
@@ -1678,6 +1683,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-febbbf0ed02d4411 / completion = "VALIDATED"
   - 来源：`agent_federation/live_state_dimensions.py`
+  - 依赖：—；被引用：—
+- [completion, external truth, production readiness, Owner acceptance or](../../../agent-results/IGNITION-20260827-142-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f113ec6181d57684 / completion, external truth, production readiness, Owner acceptance or
+  - 来源：`agent-results/IGNITION-20260827-142-result.md`
   - 依赖：—；被引用：—
 - [Conformance / Fallback，不再向万能 Agent 壳扩张。](../../../docs/architecture/agent-platform-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2492,15 +2502,5 @@
 - [if not isinstance\(value\["evidence_exhausted"\], bool\):](../../../agent_federation/live_reconciliation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-05250dd5aa4cb30d / if not isinstance\(value\["evidence_exhausted"\], bool\):
-  - 来源：`agent_federation/live_reconciliation.py`
-  - 依赖：—；被引用：—
-- [if not isinstance\(value\["evidence_refs"\], list\) or not value\["evidence_refs"\] or any\(not isinstance\(ref, str\) or not ref](../../../agent_federation/live_reconciliation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f027ba37f618df34 / if not isinstance\(value\["evidence_refs"\], list\) or not value\["evidence_refs"\] or any\(not isinstance\(ref, str\) or not ref
-  - 来源：`agent_federation/live_reconciliation.py`
-  - 依赖：—；被引用：—
-- [if not isinstance\(value\["validated_completion_eligible"\], bool\):](../../../agent_federation/live_reconciliation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2ffd7cafe9fe27d4 / if not isinstance\(value\["validated_completion_eligible"\], bool\):
   - 来源：`agent_federation/live_reconciliation.py`
   - 依赖：—；被引用：—

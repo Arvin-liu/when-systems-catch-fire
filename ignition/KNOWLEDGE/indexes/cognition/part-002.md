@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [if not isinstance\(value\["evidence_refs"\], list\) or not value\["evidence_refs"\] or any\(not isinstance\(ref, str\) or not ref](../../../agent_federation/live_reconciliation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f027ba37f618df34 / if not isinstance\(value\["evidence_refs"\], list\) or not value\["evidence_refs"\] or any\(not isinstance\(ref, str\) or not ref
+  - 来源：`agent_federation/live_reconciliation.py`
+  - 依赖：—；被引用：—
+- [if not isinstance\(value\["validated_completion_eligible"\], bool\):](../../../agent_federation/live_reconciliation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2ffd7cafe9fe27d4 / if not isinstance\(value\["validated_completion_eligible"\], bool\):
+  - 来源：`agent_federation/live_reconciliation.py`
+  - 依赖：—；被引用：—
 - [if not value\["evidence_exhausted"\] or value\["process_observation"\] == "LIVE_PROCESS_OUTCOME_KNOWN" or value\["validated_c](../../../agent_federation/live_reconciliation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-63cdbf07a5dc1288 / if not value\["evidence_exhausted"\] or value\["process_observation"\] == "LIVE_PROCESS_OUTCOME_KNOWN" or value\["validated_c
@@ -713,6 +723,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-81b531a071797df7 / protocol compatibility and bounded failure behavior only; not intelligence, production autonomy, external approval or un
   - 来源：`data/agent-federation/federation-pilot-results-r1.json`
+  - 依赖：—；被引用：—
+- [publication-contract evidence only. It does not establish validated live](../../../agent-results/IGNITION-20260827-142-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-72dcce9f0e676350 / publication-contract evidence only. It does not establish validated live
+  - 来源：`agent-results/IGNITION-20260827-142-result.md`
   - 依赖：—；被引用：—
 - [Q25B assesses all triggered human, AI/Agent, machine, history and deployment surfaces. Q25's accepted README/current-sta](../../../reports/operations/121Q25B-whole-project-synchronization-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-f2c4173da3bf7a3d / \| \[C-620\]\( \) \| \[早产5年空间验证\]\( \) \| 人类大脑容量受盆骨限制。 \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-647\]\( \) \| \[退出权空间案例27\]\( \) \| A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4ab0f0ff84915a62 / \| \[C-647\]\( \) \| \[退出权空间案例27\]\( \) \| A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A1, A3；被引用：—
-- [\| \[C-97\]\( \) \| \[高维认知必然多轨\]\( \) \| 高维认知必然多轨 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c633baa337a052df / \| \[C-97\]\( \) \| \[高维认知必然多轨\]\( \) \| 高维认知必然多轨 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[D97\]\( \) \| \[高维认知必然多轨\]\( \) \| F_{D97}\(x\) := dim>1 ⟹ P_track>1。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-be95638b50bb1efa / \| \[D97\]\( \) \| \[高维认知必然多轨\]\( \) \| F_{D97}\(x\) := dim>1 ⟹ P_track>1。 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D97；被引用：—

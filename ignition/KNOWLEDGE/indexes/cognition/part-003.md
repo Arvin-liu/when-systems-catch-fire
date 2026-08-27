@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-647\]\( \) \| \[退出权空间案例27\]\( \) \| A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4ab0f0ff84915a62 / \| \[C-647\]\( \) \| \[退出权空间案例27\]\( \) \| A1-A3都是认知空间Ω的不同维度。提议者意识、姿态、退出权是同一空间的
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：A1, A3；被引用：—
+- [\| \[C-97\]\( \) \| \[高维认知必然多轨\]\( \) \| 高维认知必然多轨 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c633baa337a052df / \| \[C-97\]\( \) \| \[高维认知必然多轨\]\( \) \| 高维认知必然多轨 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[D97\]\( \) \| \[高维认知必然多轨\]\( \) \| F_{D97}\(x\) := dim>1 ⟹ P_track>1。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-be95638b50bb1efa / \| \[D97\]\( \) \| \[高维认知必然多轨\]\( \) \| F_{D97}\(x\) := dim>1 ⟹ P_track>1。 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D97；被引用：—
 - [\| `CONSENSUS_NOT_AUTHORITY` \| One or more models, Agents, reviewers or executors produce matching judgments or receipts.](../../../docs/architecture/structural-governance-surface.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-32b4c965a4a8562b / \| `CONSENSUS_NOT_AUTHORITY` \| One or more models, Agents, reviewers or executors produce matching judgments or receipts.
