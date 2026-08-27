@@ -1,0 +1,28 @@
+{
+  "schema_version": "ignition-143-step10-article-c-draft-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "10",
+  "status": "PASS",
+  "article_id": "013-tree-canopy-temperature-causality",
+  "path": "docs/editorial/articles/013-tree-canopy-temperature-causality.md",
+  "title": "树冠会降温吗：一个好问题如何被证据层拆开",
+  "article_kind": "BOUNDED_EXTERNAL_REPLAY_READER_VALUE",
+  "draft_completeness": {
+    "title": true,
+    "deck": true,
+    "opening_question": true,
+    "complete_argument": true,
+    "human_readable_body": true,
+    "concrete_case": true,
+    "source_and_boundary_note": true,
+    "approximate_character_target_met": true
+  },
+  "central_argument": "A bounded observational association can remain useful when canopy, surface temperature, near-ground air temperature and human heat exposure are kept distinct and a broader causal tree-planting sentence is refused.",
+  "source_status": {
+    "public_source_families": 7,
+    "replay_status": "BOUNDED_REPLAY_WITH_EXPLICIT_RESIDUALS",
+    "direct_human_heat_stress_source": "SOURCE_NOT_RECOVERED",
+    "external_validity": "NOT_ESTABLISHED"
+  },
+  "claim_ceiling": "Named observational materials support a bounded canopy/near-ground-air-temperature association only; no universal causal tree-planting effect, human heat-stress conclusion or Pointfire external validation is inferred."
+}
