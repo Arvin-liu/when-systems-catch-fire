@@ -1,0 +1,43 @@
+{
+  "schema_version": "ignition-143-step06-article-a-draft-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "06",
+  "status": "PASS",
+  "article_id": "011-terminal-task-open-obligation",
+  "path": "docs/editorial/articles/011-terminal-task-open-obligation.md",
+  "title": "一个系统如何在停止时仍然诚实：把开放义务从任务生命周期里拆出来",
+  "article_kind": "METHOD_SYSTEM",
+  "draft_completeness": {
+    "title": true,
+    "deck": true,
+    "opening_question": true,
+    "complete_argument": true,
+    "human_readable_body": true,
+    "source_and_boundary_note": true,
+    "approximate_character_target_met": true
+  },
+  "argument": "Formal task terminality and long-lived obligation liveness are two independently meaningful clocks; keeping both visible prevents a completed scope from being held RUNNING and prevents an open responsibility from disappearing.",
+  "distinct_from_existing_articles": [
+    "Does not re-explain candidate/validated/merged/Current transitions from article 003.",
+    "Does not center publication drift or independent replication from articles 008 and 009.",
+    "Centers Task142's terminal-with-open-obligation lifecycle semantics and resume boundary."
+  ],
+  "source_claims": [
+    {
+      "claim": "Task142 is terminal with status COMPLETED_WITH_OPEN_OBLIGATIONS.",
+      "source": "data/operations/iterations/142/step19-publication-and-terminality.json",
+      "ceiling": "Repository-local formal task status."
+    },
+    {
+      "claim": "LIVE_EXTERNAL_INVOCATION remains open with six attempts, zero validated completions, zero unreconciled attempts and two incomplete observations.",
+      "source": "data/operations/open-obligation-registry-r1.json",
+      "ceiling": "Repository-local obligation accounting; not external success."
+    },
+    {
+      "claim": "The current phase can defer executor qualification without deleting historical evidence.",
+      "source": "data/operations/iterations/143/phase-closure-state-r1.json",
+      "ceiling": "Owner-scoped repository phase decision; not a permanent executor verdict."
+    }
+  ],
+  "claim_ceiling": "Repository-local lifecycle semantics and publication-boundary explanation only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
