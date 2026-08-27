@@ -1,6 +1,6 @@
 # 点火项目现状
 
-更新时间：2026-08-25。以下 Current 摘要先回答“现在是什么”；任务史保留为可回链证据，不再承担 Current 数字权威。
+更新时间：2026-08-27。以下 Current 摘要先回答“现在是什么”；任务史保留为可回链证据，不再承担 Current 数字权威。
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
 - current_identity_epoch: `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`；system_role: `Ignition OS / orchestration-governance layer`。
@@ -17,6 +17,13 @@
 - source: ignition/data/operations/current-snapshot-r1.json；source_digest: `d5051cfae4cf4d1c52911743f33d2c1b1392cba711022a2d89a2915c11d357c8`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
+
+Task143 当前把点火从架构/执行器资格化阶段切换到出版生产阶段。Task142 的架构身份和 `0.16.0`
+地图是冻结的 resume baseline；执行器资格化已按 Owner 决定 `CLOSED / OWNER_DEFERRED`，
+`LIVE_EXTERNAL_INVOCATION` 仍 OPEN 但不再驱动当前任务继续运行。Task143 不启动外部 Agent
+live process；当前交付是三篇完整文章、一个 Book Project R1、至少两段成熟书稿以及它们在既有
+成果册入口中的链接。出版完成仍只是仓库内生产证据，不改变 `CURRENT_WITH_OPEN_OBLIGATIONS`
+或 `EPISTEMICALLY_ACCEPTED=0`。
 
 ## 当前形态
 

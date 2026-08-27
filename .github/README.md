@@ -13,7 +13,7 @@
 点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；它是长期状态、价值、任务、权限、记忆、验证和 executor 协同的 OS / orchestration-governance layer。OpenClaw、Hermes、Codex 是可替换执行器，不是点火的替代系统；知识治理是第一个大型 Domain Pack，而不是整个系统本体。仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)、[OS Control Plane R2](../ignition/docs/architecture/os-control-plane-r2.md)、[External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。Durability / Lifecycle 负责 repository-local snapshot、migration、namespace、Pack lifecycle、revocation、accounting、recovery 和 DR continuity；不建立第二张图，也不自动重放不确定外部副作用。Structural Governance Surface 是 advisory cross-cutting overlay：只提供阅读与实验上下文，不改变 capability、permission 或 epistemic status，也不增加 L7。Current Snapshot 与 Current Facts 负责易变版本、计数、任务、状态和 live ceiling；这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性。
 本地行动层保持 Reference / Conformance / Fallback 边界；外部 executor 不拥有 OS authority，Current Snapshot 也不把仓库投影升级为现实证明。
 
-任务身份分成两个稳定角色：Current formal task 表示最近哪一轮正式任务正在或刚刚成为 Current；另一个角色记录最近一次改变系统身份或架构的任务。二者允许不同，publication witness 只提供发布观察绑定，不授予 architecture、Owner 或 epistemic authority。Task 139 把 Current formal task 推进到 139，同时保留 Task 136 作为架构边界；它把外部执行证据先落入 durable capture、append-only ledger，再投影给 Current，不增加核心组件或地图关系。
+任务身份分成两个稳定角色：Current formal task 表示最近哪一轮正式任务正在或刚刚成为 Current；另一个角色记录最近一次改变系统身份或架构的任务。二者允许不同，publication witness 只提供发布观察绑定，不授予 architecture、Owner 或 epistemic authority。Task143 是 presentation-only 的阶段收口与出版生产任务：Task142 作为最新架构基线保持冻结，外部 Agent qualification 已按 Owner 决定进入 `OWNER_DEFERRED`，当前主动工作转为文章、书稿和出版入口建设；这不增加核心组件或地图关系。
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
 - current_identity_epoch: `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`；system_role: `Ignition OS / orchestration-governance layer`。
@@ -46,7 +46,7 @@ Current Snapshot 提供，不把历史记录重写为当前事实。
 - **为什么重要：** 行动、批准、恢复、记忆、Pack 路由和知识治理的职责被分开记录，Agent 可以提出和执行有界动作，但不能自行扩大权限、改写真值或替代 Owner。
 - **怎样使用：** 人类先读[十分钟阅读路线](../ignition/HUMAN-READING.md)与[当前结果](../ignition/RESULTS/LATEST.md)；Agent 先读[AI 冷启动](../ignition/AI-START-HERE.md)、[状态增量日志](../ignition/STATE-CHANGELOG.md)、[R2 架构契约](../ignition/docs/architecture/agent-platform-r2.md)和[联邦契约](../ignition/docs/architecture/external-agent-federation-r1.md)。
 - **它不能证明什么：** 通过测试、Pack 加载、checkpoint、pilot 或系统图，都不等于外部真值、现实因果、生产安全、Owner acceptance 或 epistemic acceptance。
-- **仍然开放：** live provider/inference、daemon、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内；Task 139 的 ledger projection 保持 Hermes136 timeout 与 Codex138 second attempt 的 reconciliation 开放：第二次 dispatch 确实发生，但 outer context overflow 使 observation incomplete，return code、structured result、lease、workspace 和 validator input 都未恢复。任何 retry 都必须先完成 reconciliation，因此仍不是 validated live completion。
+- **仍然开放：** live provider/inference、daemon、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内；`LIVE_EXTERNAL_INVOCATION` 仍是 OPEN，历史六次 attempt、零 validated completion、零 unreconciled 和两次 observation-incomplete 保持不变。Task143 不启动 live process；外部 Agent 线只有在 Owner 明确重新开启、且本机环境先完成准备/安装/attestation 后才可恢复。当前出版生产入口见[点火成果册](../ignition/PUBLICATIONS/pointfire-results-book/README.md)，写作产物不抬升外部真值。
 
 ## 2. 如何使用
 

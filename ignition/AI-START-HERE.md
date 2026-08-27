@@ -19,13 +19,14 @@ Steering / Intent / Goal / Obligation R1 记录 Owner/提议来源、Goal 生命
 
 任务身份分成两个稳定角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，publication witness 只观察发布身份，不授予 architecture 或 Owner authority。
 
-Task 139 是 Task 136–138 live bridge 的 durable-observation continuation，不是新的
-architecture-changing task：Task 136 Hermes timeout 与 Task 138 second Codex attempt
-都由 append-only ledger 保持为待和解事实。外部进程证据先进入 host-side durable capture，
-再进入 bounded context；Task138 second dispatch 确实发生，但 outer context overflow 使
-observation incomplete，return code、structured result、lease、workspace 和 validator input
-仍是 `UNRECOVERED`。因此 `LIVE_EXTERNAL_INVOCATION` 仍开放，下一步是 reconciliation，
-不能把本轮写成 `COMPLETED_VALIDATED`、Goal completion 或外部真值。
+Task143 是 Task142 之后的 presentation-only 阶段收口与出版生产任务，不是新的
+architecture-changing task：Task142 的架构身份和 `0.16.0` 地图冻结为 resume baseline；
+外部 Agent qualification 已按 Owner 决定进入 `OWNER_DEFERRED`。`LIVE_EXTERNAL_INVOCATION`
+仍开放，历史六次 attempt、零 validated completion、零 unreconciled 和两次
+observation-incomplete 保持可回链；Task143 没有启动 live process 或 inference。未来只有在
+Owner 明确重新开启、且本机环境先完成准备/安装/attestation 后，才可重新建立 qualification
+边界。当前工作模式是直接生产人类可读的文章、Book Project 与书稿样章，不把出版完成写成
+`COMPLETED_VALIDATED`、Goal completion 或外部真值。
 
 <!-- CURRENT-SNAPSHOT:BEGIN profile=ai schema=current-snapshot-r1 -->
 - Current Snapshot（generated; read this block before interpreting prose）。

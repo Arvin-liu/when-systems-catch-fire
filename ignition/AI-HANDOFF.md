@@ -24,12 +24,12 @@ capability、permission、truth、Owner 或 epistemic status。
 
 交接时分开读取两个任务角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，publication witness 只绑定发布观察，不把 release task 变成 architecture authority。
 
-Task 139 继续处理 Task 136–138 的 live completion obligation：Hermes136 timeout 与
-Codex138 second dispatch 都由 durable append-only ledger 保存，尚未完成 reconciliation。
-Task138 second dispatch 确实发生，但 outer context overflow 使 observation incomplete；
-return code、structured result、lease、workspace 和 validator input 都保持
-`UNRECOVERED`。当前结论由 ledger-derived projection 给出：不是
-`COMPLETED_VALIDATED`，下一步必须先 reconciliation。
+Task143 继续的是阶段收口后的出版生产，而不是 executor qualification：Task142 的架构身份、
+`0.16.0` 地图和 live-observation 历史保持冻结；外部 Agent 线按 Owner 决定为
+`OWNER_DEFERRED`。`LIVE_EXTERNAL_INVOCATION` 仍 OPEN，六次历史 attempt、零 validated
+completion、零 unreconciled 和两次 observation-incomplete 都保留，Task143 没有启动 live
+process 或 inference。后续恢复必须先有 Owner 明确 reopen，再完成本机环境的准备、安装和
+attestation；当前 Agent 只应推进文章、书稿和既有出版入口。
 
 ### R2 工程脊柱
 
