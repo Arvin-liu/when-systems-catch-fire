@@ -4,10 +4,10 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./operations_evidence/part-001.md)：1—500；"compiler_or_generator": "The compiler flattens aligned task deltas, retains top-k magnitude coordinates per task, elects sign\(gamma_p\)=sign\(sum_t trimmed_tau_t,p\), selects nonzero entries of that sign, averages them coordinate-wise, applie → ### \[#595｜OrcaRouter多模型并行扇出验证\]\(docs/zh/cases/items/C-0595.md\)
-- [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[#597｜模型异质性共享度倒U验证\]\(docs/zh/cases/items/C-0597.md\) → - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0422}\)=1\].
-- [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0423}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json
+- [第 001 片](./operations_evidence/part-001.md)：1—500；"compiler_or_generator": "The compiler flattens aligned task deltas, retains top-k magnitude coordinates per task, elects sign\(gamma_p\)=sign\(sum_t trimmed_tau_t,p\), selects nonzero entries of that sign, averages them coordinate-wise, applie → ### \[#580｜睡眠清除门控验证\]\(docs/zh/cases/items/C-0580.md\)
+- [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[#595｜OrcaRouter多模型并行扇出验证\]\(docs/zh/cases/items/C-0595.md\) → - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0421}\)=1\].
+- [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0422}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → The frozen attempt policy allows at most two different executor families, at most one attempt per family, forbids blind
-- [第 006 片](./operations_evidence/part-006.md)：2501—3000；The gate binds the canonical Task139 ledger and Current projection before → 验证报告：047 证据链补齐与 PR 11 合并前复核（IGNITION-20260709-049）
-- [第 007 片](./operations_evidence/part-007.md)：3001—3007；高价值修复优先于全库文风清洗。历史版本与接受哈希不回填；新版本通过 revision lineage 指向旧版本。机器投影因当前构件变化而重生成，不等于把历史文本重写。 → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → The defect is structural: the current lineage source exposes only `IN_PROGRESS` or `COMPLETED_WITH_CLASSIFIED_RESIDUALS`
+- [第 006 片](./operations_evidence/part-006.md)：2501—3000；the deterministic live projection. Historical Task138 reports remain → 项目本体版本升级审计 2026-07-09
+- [第 007 片](./operations_evidence/part-007.md)：3001—3010；验证「不同领域材料 → 统一两张表」流程是否跑得通，并确认框架能否识别跨域同构。 → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

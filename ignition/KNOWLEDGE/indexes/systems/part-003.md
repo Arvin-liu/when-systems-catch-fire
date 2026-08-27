@@ -734,6 +734,16 @@
   - 可搜索名称：NFC-42aa20f5876f6842 / REOS is a research-execution control system. It records recoverable research obligations, bounded case state, references
   - 来源：`docs/architecture/reos-vnext-light.md`
   - 依赖：—；被引用：—
+- [Repair Cycle A addressed one deterministic identity/projection root cause: `task-identity-model-r1.json` still pointed t](../../../reports/operations/ignition-144-step13-repair-cycle-a.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b55a3b7e8978cad3 / Repair Cycle A addressed one deterministic identity/projection root cause: `task-identity-model-r1.json` still pointed t
+  - 来源：`reports/operations/ignition-144-step13-repair-cycle-a.md`
+  - 依赖：—；被引用：—
+- [Repair Cycle B only regenerated existing deterministic outputs and refreshed Current Facts/snapshot surfaces. The result](../../../reports/operations/ignition-144-step16-repair-cycle-b.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5e4be932dd7f5cfe / Repair Cycle B only regenerated existing deterministic outputs and refreshed Current Facts/snapshot surfaces. The result
+  - 来源：`reports/operations/ignition-144-step16-repair-cycle-b.md`
+  - 依赖：—；被引用：—
 - [repaired the embodied hard gate but left a one-way picture: point-fire assets constrained an external L6 writing method.](../../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ec2dc39ce01d363e / repaired the embodied hard gate but left a one-way picture: point-fire assets constrained an external L6 writing method.
@@ -1329,6 +1339,11 @@
   - 可搜索名称：NFC-6fe4add5b056c348 / The HyperRelation pairwise projection records explicit information-loss residue.
   - 来源：`reports/architecture/121Q23C-operational-arn-real-history-validation.md`
   - 依赖：—；被引用：—
+- [The identical offline closure command set then completed naturally with **77 tests / 0 failures / 0 errors / 0 skips**,](../../../reports/operations/ignition-144-step13-repair-cycle-a.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-391d5aa1f48a84ba / The identical offline closure command set then completed naturally with **77 tests / 0 failures / 0 errors / 0 skips**,
+  - 来源：`reports/operations/ignition-144-step13-repair-cycle-a.md`
+  - 依赖：—；被引用：—
 - [The Ignition Atlas is a set of versioned derived maps. It is not a new source of truth.](../../../docs/architecture/ignition-atlas.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-101da998a9ef8e84 / The Ignition Atlas is a set of versioned derived maps. It is not a new source of truth.
@@ -1409,6 +1424,11 @@
   - 可搜索名称：NFC-8a5500996268118d / The names `When Systems Catch Fire`, `点火`, official project badges, logos, and release labels may be used to refer truth
   - 来源：`TRADEMARKS.md`
   - 依赖：—；被引用：—
+- [The offline closure suite completed naturally. Fourteen standalone validators passed except the release-candidate identi](../../../reports/operations/ignition-144-step12-targeted-regression.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0594663802146141 / The offline closure suite completed naturally. Fourteen standalone validators passed except the release-candidate identi
+  - 来源：`reports/operations/ignition-144-step12-targeted-regression.md`
+  - 依赖：—；被引用：—
 - [The overlay does not add a truth layer and does not change L0-L6. Charter Gate remains above action choice, execution, v](../../../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-25710edf0cfc7776 / The overlay does not add a truth layer and does not change L0-L6. Charter Gate remains above action choice, execution, v
@@ -1441,7 +1461,7 @@
   - 依赖：—；被引用：—
 - [The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure](../../../data/architecture/current-system-identity.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-aeb11fcb36086948 / The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure
+  - 可搜索名称：NFC-4b399b6c6ee8a4ef / The provider-neutral live bridge, durable host-side capture, typed R7 live-state dimension projection, sanitized Failure
   - 来源：`data/architecture/current-system-identity.json`
   - 依赖：—；被引用：—
 - [The provider-neutral offline harness accepts exactly one strict synthetic result and rejects ten negative cases: malform](../../../reports/operations/ignition-142-step05-offline-conformance.md)
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-55f1f6c5161c6d8e / \| \[C-655\]\( \) \| \[唐宋钱荒（公元1111年货币锁定）\]\( \) \| 《文明之旅》公元1111
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T28；被引用：—
-- [\| \[C-664\]\( \) \| \[费勇瓶颈突破笔记碰撞验证\]\( \) \| 费勇直播笔记《人生遇到瓶颈，如何找到突破口？》与点火框](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0d65d4c739bd6756 / \| \[C-664\]\( \) \| \[费勇瓶颈突破笔记碰撞验证\]\( \) \| 费勇直播笔记《人生遇到瓶颈，如何找到突破口？》与点火框
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-676\]\( \) \| \[万维钢AI学习笔记碰撞验证\]\( \) \| 万维钢直播笔记《AI时代，普通人如何高效学习？》](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-600826d4bd8573a7 / \| \[C-676\]\( \) \| \[万维钢AI学习笔记碰撞验证\]\( \) \| 万维钢直播笔记《AI时代，普通人如何高效学习？》
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158, D307；被引用：—
-- [\| \[D159\]\( \) \| \[认知Higgs机制\]\( \) \| F_{D159}\(x\) := F_{D159}: X_{D159} -> Y_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6ddbfe5baaaa0ad2 / \| \[D159\]\( \) \| \[认知Higgs机制\]\( \) \| F_{D159}\(x\) := F_{D159}: X_{D159} -> Y_
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D159；被引用：—
-- [\| \[D192\]\( \) \| \[认知Higgs机制\]\( \) \| F_{D192}\(x\) := Higgs场提供分裂的触发器 真空期望值 设](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-99f347b33afb1485 / \| \[D192\]\( \) \| \[认知Higgs机制\]\( \) \| F_{D192}\(x\) := Higgs场提供分裂的触发器 真空期望值 设
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D192；被引用：—

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Function/non-function registry closure leaves proof, evidence, replication and item-level review obligations independent](../../../data/architecture/current-system-identity.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-aa8a61a648940e02 / Function/non-function registry closure leaves proof, evidence, replication and item-level review obligations independent
+  - 来源：`data/architecture/current-system-identity.json`
+  - 依赖：—；被引用：—
+- [FUSE and Table 5 provide a broad method vocabulary, but not a machine-readable semantic, compatibility, effect or lifecy](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6f5c68d63009947a / FUSE and Table 5 provide a broad method vocabulary, but not a machine-readable semantic, compatibility, effect or lifecy
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [Future non-function claim admission protocol](../../ASSET-CARDS.md#asset-hr-75b56a91c97f20be)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：Future non-function claim admission protocol / future-claim-admission-protocol
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-3ef29c562bba95da / If upstream objects D_{D96} exist, compose F_{D96}=N\(⊕_{g∈D_{D96}} g\); otherwise treat F_{D96} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D96；被引用：—
-- [If upstream objects D_{D97} exist, compose F_{D97}=N\(⊕_{g∈D_{D97}} g\); otherwise treat F_{D97} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-889c2d173247f79b / If upstream objects D_{D97} exist, compose F_{D97}=N\(⊕_{g∈D_{D97}} g\); otherwise treat F_{D97} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D97；被引用：—
-- [If upstream objects D_{D98} exist, compose F_{D98}=N\(⊕_{g∈D_{D98}} g\); otherwise treat F_{D98} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c49ee2ee99ffbe37 / If upstream objects D_{D98} exist, compose F_{D98}=N\(⊕_{g∈D_{D98}} g\); otherwise treat F_{D98} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D98；被引用：—

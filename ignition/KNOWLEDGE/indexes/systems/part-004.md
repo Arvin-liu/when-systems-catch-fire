@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-664\]\( \) \| \[费勇瓶颈突破笔记碰撞验证\]\( \) \| 费勇直播笔记《人生遇到瓶颈，如何找到突破口？》与点火框](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0d65d4c739bd6756 / \| \[C-664\]\( \) \| \[费勇瓶颈突破笔记碰撞验证\]\( \) \| 费勇直播笔记《人生遇到瓶颈，如何找到突破口？》与点火框
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-676\]\( \) \| \[万维钢AI学习笔记碰撞验证\]\( \) \| 万维钢直播笔记《AI时代，普通人如何高效学习？》](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-600826d4bd8573a7 / \| \[C-676\]\( \) \| \[万维钢AI学习笔记碰撞验证\]\( \) \| 万维钢直播笔记《AI时代，普通人如何高效学习？》
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158, D307；被引用：—
+- [\| \[D159\]\( \) \| \[认知Higgs机制\]\( \) \| F_{D159}\(x\) := F_{D159}: X_{D159} -> Y_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6ddbfe5baaaa0ad2 / \| \[D159\]\( \) \| \[认知Higgs机制\]\( \) \| F_{D159}\(x\) := F_{D159}: X_{D159} -> Y_
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D159；被引用：—
+- [\| \[D192\]\( \) \| \[认知Higgs机制\]\( \) \| F_{D192}\(x\) := Higgs场提供分裂的触发器 真空期望值 设](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-99f347b33afb1485 / \| \[D192\]\( \) \| \[认知Higgs机制\]\( \) \| F_{D192}\(x\) := Higgs场提供分裂的触发器 真空期望值 设
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D192；被引用：—
 - [\| `CLM-14` 遗漏项 \| 多机制交互 \| 数据分散 \| 单因素主导 \| 三束证据表 \| 财政、疾病、气候 \|](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d218be9ef2a32cdb / \| `CLM-14` 遗漏项 \| 多机制交互 \| 数据分散 \| 单因素主导 \| 三束证据表 \| 财政、疾病、气候 \|
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-429e0964b1ab53fa / 变分唯一性验证 — 3维sigmoid乘法系统,随机采样1000组Δε分配,D111分配的S_ignition全局最小,无第二极值点
   - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：D111；被引用：—
-- [变量位置决定推导方向](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e59d302ad268de44 / 变量位置决定推导方向
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [变量解释须与机制表达中的符号一一对应。](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-0184ed8ae24f7f57 / 变量解释须与机制表达中的符号一一对应。
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [叙事改变理解的具体因果判定：`pending`（需要文本细读、认知实验、传播效果研究、教育评估和解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-424e80d2ba0d9d26 / 叙事改变理解的具体因果判定：`pending`（需要文本细读、认知实验、传播效果研究、教育评估和解释共同体共识）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
-- [叙事改变理解的具体因果强度：`pending`（需要传播效果研究）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-212e37343326cb95 / 叙事改变理解的具体因果强度：`pending`（需要传播效果研究）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—

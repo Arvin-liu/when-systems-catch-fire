@@ -1,42 +1,42 @@
 {
   "active_conclusion_rebounds": 0,
   "assertion_type_distribution": {
-    "DESCRIPTIVE": 403,
-    "EMPIRICAL": 4518,
-    "INTERPRETIVE": 2883,
+    "DESCRIPTIVE": 404,
+    "EMPIRICAL": 4532,
+    "INTERPRETIVE": 2887,
     "MATHEMATICAL": 2375,
-    "METAPHYSICAL": 786,
+    "METAPHYSICAL": 791,
     "NORMATIVE": 162,
-    "UNRESOLVED": 6455
+    "UNRESOLVED": 6467
   },
   "blocked_conclusion_rebounds": 1,
-  "candidate_fragments": 30305,
-  "canonical_claims": 17582,
+  "candidate_fragments": 30342,
+  "canonical_claims": 17618,
   "claim_class_distribution": {
-    "CROSS_DOMAIN_CORRESPONDENCE": 2429,
-    "DESCRIPTIVE_REPOSITORY_CLAIM": 403,
-    "EMPIRICAL_OR_LITERATURE_CLAIM": 2137,
-    "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 737,
+    "CROSS_DOMAIN_CORRESPONDENCE": 2433,
+    "DESCRIPTIVE_REPOSITORY_CLAIM": 404,
+    "EMPIRICAL_OR_LITERATURE_CLAIM": 2149,
+    "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 738,
     "INTERPRETATION_OR_FRAMEWORK_CLAIM": 454,
     "LAW_OR_PRINCIPLE_CLAIM": 194,
-    "MECHANISM_OR_CAUSAL_CLAIM": 2182,
+    "MECHANISM_OR_CAUSAL_CLAIM": 2184,
     "NORMATIVE_OR_GOVERNANCE_CLAIM": 162,
-    "ONTOLOGICAL_OR_METAPHYSICAL_CLAIM": 786,
+    "ONTOLOGICAL_OR_METAPHYSICAL_CLAIM": 791,
     "PREDICTION_OR_FORECAST": 199,
     "THEOREM_OR_MATHEMATICAL_CLAIM": 2375,
-    "UNRESOLVED_CLAIM": 5524
+    "UNRESOLVED_CLAIM": 5535
   },
   "closure_semantics": "Registry accounting is closed by explicit disposition or quarantine. Mathematical proof, external evidence, novelty and replication obligations remain independently open.",
   "conclusion_rebound_candidates": 59,
   "dependency_edges": 5627,
   "disposition_distribution": {
-    "ACCEPTED_AS_DEFINITION": 3554,
+    "ACCEPTED_AS_DEFINITION": 3563,
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
-    "HISTORICAL_ONLY": 7359,
-    "PENDING_EMPIRICAL_TEST": 881,
+    "HISTORICAL_ONLY": 7391,
+    "PENDING_EMPIRICAL_TEST": 878,
     "PENDING_LITERATURE_ADJUDICATION": 1017,
     "PENDING_PROOF": 657,
-    "QUARANTINED_AMBIGUOUS": 2389,
+    "QUARANTINED_AMBIGUOUS": 2387,
     "REJECTED_FALSE_OR_INVALID": 1,
     "RETAINED_AS_HEURISTIC": 620,
     "RETAINED_AS_RESEARCH_HYPOTHESIS": 347,
@@ -46,35 +46,35 @@
     "WITHDRAWN_UNSUPPORTED": 1
   },
   "existing_claims_mapped": 678,
-  "explicit_quarantine_or_pending": 4947,
+  "explicit_quarantine_or_pending": 4942,
   "explicitly_unresolved_dependency_edges": 52,
   "external_evidence_distribution": {
-    "E0": 10217,
-    "E1": 7365
+    "E0": 10221,
+    "E1": 7397
   },
   "mathematical_maturity_distribution": {
-    "M0": 14959,
+    "M0": 14995,
     "M1": 2618,
     "M3": 1,
     "M4": 3,
     "M6": 1
   },
-  "public_surface_records": 522,
+  "public_surface_records": 516,
   "public_surface_violations": 0,
   "registry_closed": true,
   "source_base_commit": "ebe723fbf544f3fa1a87706e82493319d9f0af7e",
   "source_coverage_distribution": {
     "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 51,
-    "EXCLUDED_GENERATED_PROJECTION_EXCLUDED": 248,
+    "EXCLUDED_GENERATED_PROJECTION_EXCLUDED": 251,
     "EXCLUDED_KNOWLEDGE_SOURCE_EXPLICIT_ONLY": 7,
     "EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE": 4,
-    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 927,
+    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 946,
     "EXCLUDED_NON_TEXT_SUFFIX": 4,
-    "EXCLUDED_PLATFORM_CODE_EXCLUDED": 864,
+    "EXCLUDED_PLATFORM_CODE_EXCLUDED": 868,
     "EXPLICIT_CANONICAL_IMPORT": 1,
-    "SCANNED_NO_CANDIDATE": 513,
-    "SCANNED_REGISTERED": 2384
+    "SCANNED_NO_CANDIDATE": 518,
+    "SCANNED_REGISTERED": 2396
   },
   "task_id": "IGNITION-CORPUS-WIDE-NONFUNCTION-CLAIM-ADJUDICATION-AND-EVIDENCE-LINEAGE-CLOSURE-R1-20260729",
-  "tracked_files_accounted": 5003
+  "tracked_files_accounted": 5046
 }

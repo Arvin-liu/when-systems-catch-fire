@@ -2459,6 +2459,11 @@
   - 可搜索名称：NFC-619066387ab384c0 / authority_changes: \[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[函数资产\]\(./docs/human/funct
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: Current/task-lineage/lifecycle, Owner editorial authority and the existing Results Book boundary rema](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-34b1dd929d0bd27e / authority_changes: Current/task-lineage/lifecycle, Owner editorial authority and the existing Results Book boundary rema
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: formal Task Lifecycle, Open Obligation Registry and Executor Admission remain repository-local bounde](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-edc6ae0c0a101b95 / authority_changes: formal Task Lifecycle, Open Obligation Registry and Executor Admission remain repository-local bounde
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-12c786c7ae9031aa / Behavior change is not proof of a specific internal cognitive mechanism.
   - 来源：`docs/architecture/adaptive-relational-network.md`
-  - 依赖：—；被引用：—
-- [behavior, external validity, causal proof, or ESI acceptance.](../../../reports/operations/ignition-126-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-23e06ace76325076 / behavior, external validity, causal proof, or ESI acceptance.
-  - 来源：`reports/operations/ignition-126-progress.md`
   - 依赖：—；被引用：—
