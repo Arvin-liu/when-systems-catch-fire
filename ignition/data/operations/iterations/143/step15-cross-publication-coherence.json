@@ -1,0 +1,73 @@
+{
+  "schema_version": "ignition-143-step15-cross-publication-coherence-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "15",
+  "status": "PASS",
+  "publication_coherence": {
+    "three_complete_articles": true,
+    "book_project_r1": true,
+    "polished_book_samples": 2,
+    "book_links_to_samples": true,
+    "canonical_entry_not_parallel_system": true,
+    "distinct_reader_jobs": true,
+    "duplicate_thesis_paragraphs_removed": true,
+    "duplicate_anecdotes_removed": true,
+    "private_material_reproduced": false
+  },
+  "article_checks": [
+    {
+      "path": "docs/editorial/articles/011-terminal-task-open-obligation.md",
+      "body_lines": 46,
+      "list_ratio": 0.0,
+      "id_dominated_paras": 0,
+      "has_source_appendix": true,
+      "has_source_links": true,
+      "result": "PASS"
+    },
+    {
+      "path": "docs/editorial/articles/012-support-becomes-path-control.md",
+      "body_lines": 45,
+      "list_ratio": 0.0,
+      "id_dominated_paras": 0,
+      "has_source_appendix": true,
+      "has_source_links": true,
+      "result": "PASS"
+    },
+    {
+      "path": "docs/editorial/articles/013-tree-canopy-temperature-causality.md",
+      "body_lines": 48,
+      "list_ratio": 0.125,
+      "id_dominated_paras": 0,
+      "has_source_appendix": true,
+      "has_source_links": true,
+      "result": "PASS"
+    }
+  ],
+  "targeted_checks": {
+    "fire_seeds": "PASS",
+    "human_visibility": "PASS",
+    "editorial_quality": "PASS",
+    "diff_check": "PASS",
+    "private_path_and_secret_scan": "PASS"
+  },
+  "baseline_validator_observation": {
+    "status": "PRE_EXISTING_BASELINE_DRIFT",
+    "introduced_by_task143": false,
+    "proof": "git diff from b359580fe31866bc04eeb24911011e0baba9b66d for the ten reported Human Surface files is empty",
+    "reported_files": [
+      "docs/human/function-assets/entries/d127.md",
+      "docs/human/function-assets/entries/d182.md",
+      "docs/human/function-assets/entries/d190.md",
+      "docs/human/function-assets/entries/d260.md",
+      "docs/human/function-assets/entries/t2.md",
+      "docs/human/nonfunction-assets/entries/nfc-015cfd6ba387c9b1.md",
+      "docs/human/nonfunction-assets/entries/nfc-01d7757c148ee0cc.md",
+      "docs/human/nonfunction-assets/entries/nfc-0331afe8d84f2538.md",
+      "docs/human/nonfunction-assets/entries/nfc-14866124cc1a2cae.md",
+      "docs/human/nonfunction-assets/entries/nfc-154bdc1ff37c47f6.md"
+    ],
+    "materiality_manifest_changed": false,
+    "full_human_surface_gate_claimed_green": false
+  },
+  "claim_ceiling": "Cross-publication coherence and editorial production checks only; the manuscripts remain repository-local, bounded-source or internal-candidate narratives and do not establish external truth, causal validation, production readiness, Owner acceptance or epistemic acceptance."
+}
