@@ -1,0 +1,34 @@
+{
+  "schema_version": "ignition-143-step09-article-b-editorial-review-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "09",
+  "status": "PASS",
+  "article_id": "012-support-becomes-path-control",
+  "path": "docs/editorial/articles/012-support-becomes-path-control.md",
+  "editorial_status": "REVIEWED_CURRENT_R1",
+  "revision_applied": true,
+  "non_meta_requirement": "PASS",
+  "checks": {
+    "opening_tension": "PASS",
+    "substantive_pointfire_material": "PASS",
+    "counterexample_audit": "PASS",
+    "hypothetical_vs_fact_audit": "PASS_AFTER_REVISION",
+    "diagnosis_overclaim_audit": "PASS_AFTER_REVISION",
+    "proportional_evidence": "PASS",
+    "claim_ceiling": "PASS",
+    "privacy_machine_dump_scan": "PASS"
+  },
+  "revision_summary": [
+    "Removed an unsupported prevalence suggestion from the illustrative opening.",
+    "Scoped the direction/decision-right observation explicitly to the candidate model.",
+    "Kept D600's indirect-source-only and incomplete-formalization ceiling visible in the narrative and source note."
+  ],
+  "source_paths": [
+    "PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md",
+    "outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md",
+    "outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md",
+    "reports/math-foundation/pilot-formal-audit-20260712.md",
+    "reports/math-foundation/provenance-audit-20260712.md"
+  ],
+  "claim_ceiling": "Editorial readiness for an internal candidate model and research problem only; no universal causal law, measured prevalence, external validation, production readiness or epistemic acceptance is inferred."
+}
