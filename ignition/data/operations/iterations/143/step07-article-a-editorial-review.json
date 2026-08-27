@@ -1,0 +1,32 @@
+{
+  "schema_version": "ignition-143-step07-article-a-editorial-review-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "07",
+  "status": "PASS",
+  "article_id": "011-terminal-task-open-obligation",
+  "path": "docs/editorial/articles/011-terminal-task-open-obligation.md",
+  "editorial_status": "REVIEWED_CURRENT_R1",
+  "revision_applied": true,
+  "checks": {
+    "opening_tension": "PASS",
+    "independent_argument": "PASS",
+    "human_readable_language": "PASS",
+    "proportional_evidence": "PASS",
+    "claim_ceiling": "PASS",
+    "overclaim_audit": "PASS_AFTER_REVISION",
+    "duplication_audit_against_003_008_009": "PASS",
+    "privacy_machine_dump_scan": "PASS"
+  },
+  "revision_summary": [
+    "Scoped several potentially universal statements to this repository or this project.",
+    "Retained the distinction between historical next action and current Owner-deferred action.",
+    "Kept the article's center on independent task and obligation liveness rather than reusing existing evidence-chain articles."
+  ],
+  "source_paths": [
+    "data/operations/iterations/142/step01-terminality-semantics.json",
+    "data/operations/iterations/142/step19-publication-and-terminality.json",
+    "data/operations/open-obligation-registry-r1.json",
+    "data/operations/iterations/143/phase-closure-state-r1.json"
+  ],
+  "claim_ceiling": "Editorial readiness for a repository-local lifecycle explanation only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
