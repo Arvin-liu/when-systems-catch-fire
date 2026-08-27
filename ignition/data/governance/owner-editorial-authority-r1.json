@@ -1,0 +1,40 @@
+{
+  "schema_version": "owner-editorial-authority-r1",
+  "contract_id": "OWNER_EDITORIAL_AUTHORITY_R1",
+  "contract_scope": "MINIMAL_MACHINE_BOUNDARY_FOR_OWNER_SELECTION_AND_PUBLICATION_ACCEPTANCE",
+  "state_machine": {
+    "initial_state": "CANDIDATE",
+    "owner_selected_state": "OWNER_SELECTED",
+    "drafting_state": "DRAFTING",
+    "review_state": "OWNER_REVIEW",
+    "terminal_states": ["ACCEPTED", "REVISE", "PARKED", "REJECTED"],
+    "allowed_states": ["CANDIDATE", "OWNER_SELECTED", "DRAFTING", "OWNER_REVIEW", "ACCEPTED", "REVISE", "PARKED", "REJECTED"]
+  },
+  "fields": {
+    "kind": ["article", "book"],
+    "owner_selection": ["NOT_REVIEWED", "OWNER_SELECTED"],
+    "draft_status": ["NOT_GENERATED", "DRAFT_GENERATED"],
+    "production_state": ["CANDIDATE", "OWNER_SELECTED", "DRAFTING", "OWNER_REVIEW", "ACCEPTED", "REVISE", "PARKED", "REJECTED"],
+    "publication_acceptance": ["PUBLICATION_ACCEPTANCE_NOT_GRANTED", "PUBLICATION_ACCEPTED", "REVISE_REQUESTED", "PARKED", "REJECTED"],
+    "authority_source": ["NONE", "OWNER_EXPLICIT_PRODUCTION_BRIEF", "OWNER_EXPLICIT_SELECTION", "MODEL_RANKING", "AUTO_CLUSTER", "DRAFT", "RESULT_REGISTRY", "FIRE_SEED_SCORE"],
+    "source_origin": ["OWNER_BRIEF", "MODEL_RANKING", "AUTO_CLUSTER", "DRAFT", "RESULT_REGISTRY", "FIRE_SEED_SCORE"]
+  },
+  "rules": {
+    "owner_authority_sources": ["OWNER_EXPLICIT_PRODUCTION_BRIEF", "OWNER_EXPLICIT_SELECTION"],
+    "automated_sources": ["MODEL_RANKING", "AUTO_CLUSTER", "DRAFT", "RESULT_REGISTRY", "FIRE_SEED_SCORE"],
+    "smoke_test_defaults": {
+      "owner_selection": "NOT_REVIEWED",
+      "production_state": "CANDIDATE",
+      "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
+      "authority_source": "NONE"
+    },
+    "non_equivalences": [
+      "DRAFT_GENERATED_NOT_OWNER_SELECTED",
+      "DRAFT_GENERATED_NOT_PUBLICATION_ACCEPTED",
+      "RESULT_REGISTRY_NOT_OWNER_ACCEPTANCE",
+      "FIRE_SEED_SCORE_NOT_OWNER_SELECTION",
+      "MODEL_RANKING_NOT_OWNER_SELECTION"
+    ]
+  },
+  "claim_ceiling": "Repository-local editorial authority contract only; it does not choose a topic, accept a work, establish publication quality, external truth, production readiness or epistemic acceptance."
+}

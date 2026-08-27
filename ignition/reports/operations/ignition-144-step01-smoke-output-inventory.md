@@ -6,7 +6,8 @@ and two mature book samples. Their existing bodies and canonical paths remain
 unchanged.
 
 Every item is explicitly recorded with `smoke_test=true`,
-`owner_selection=NOT_REVIEWED` and `publication_acceptance=NOT_GRANTED`. The
+`owner_selection=NOT_REVIEWED` and
+`publication_acceptance=PUBLICATION_ACCEPTANCE_NOT_GRANTED`. The
 existing registry labels describe the production phase in which the artifacts
 were made; they are not evidence that the Owner selected a topic or accepted a
 publication. Source paths and claim ceilings are preserved per artifact in the

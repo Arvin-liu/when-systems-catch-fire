@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/governance/owner-editorial-authority-r1.schema.json",
+  "title": "Owner editorial authority contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "contract_id", "contract_scope", "state_machine", "fields", "rules", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "owner-editorial-authority-r1"},
+    "contract_id": {"const": "OWNER_EDITORIAL_AUTHORITY_R1"},
+    "contract_scope": {"const": "MINIMAL_MACHINE_BOUNDARY_FOR_OWNER_SELECTION_AND_PUBLICATION_ACCEPTANCE"},
+    "state_machine": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["initial_state", "owner_selected_state", "drafting_state", "review_state", "terminal_states", "allowed_states"],
+      "properties": {
+        "initial_state": {"const": "CANDIDATE"},
+        "owner_selected_state": {"const": "OWNER_SELECTED"},
+        "drafting_state": {"const": "DRAFTING"},
+        "review_state": {"const": "OWNER_REVIEW"},
+        "terminal_states": {"type": "array", "items": {"enum": ["ACCEPTED", "REVISE", "PARKED", "REJECTED"]}, "minItems": 4, "uniqueItems": true},
+        "allowed_states": {"type": "array", "items": {"enum": ["CANDIDATE", "OWNER_SELECTED", "DRAFTING", "OWNER_REVIEW", "ACCEPTED", "REVISE", "PARKED", "REJECTED"]}, "minItems": 8, "uniqueItems": true}
+      }
+    },
+    "fields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "owner_selection", "draft_status", "production_state", "publication_acceptance", "authority_source", "source_origin"],
+      "properties": {
+        "kind": {"type": "array", "items": {"enum": ["article", "book"]}, "minItems": 2, "uniqueItems": true},
+        "owner_selection": {"type": "array", "items": {"enum": ["NOT_REVIEWED", "OWNER_SELECTED"]}, "minItems": 2, "uniqueItems": true},
+        "draft_status": {"type": "array", "items": {"enum": ["NOT_GENERATED", "DRAFT_GENERATED"]}, "minItems": 2, "uniqueItems": true},
+        "production_state": {"type": "array", "items": {"enum": ["CANDIDATE", "OWNER_SELECTED", "DRAFTING", "OWNER_REVIEW", "ACCEPTED", "REVISE", "PARKED", "REJECTED"]}, "minItems": 8, "uniqueItems": true},
+        "publication_acceptance": {"type": "array", "items": {"enum": ["PUBLICATION_ACCEPTANCE_NOT_GRANTED", "PUBLICATION_ACCEPTED", "REVISE_REQUESTED", "PARKED", "REJECTED"]}, "minItems": 5, "uniqueItems": true},
+        "authority_source": {"type": "array", "items": {"enum": ["NONE", "OWNER_EXPLICIT_PRODUCTION_BRIEF", "OWNER_EXPLICIT_SELECTION", "MODEL_RANKING", "AUTO_CLUSTER", "DRAFT", "RESULT_REGISTRY", "FIRE_SEED_SCORE"]}, "minItems": 8, "uniqueItems": true},
+        "source_origin": {"type": "array", "items": {"enum": ["OWNER_BRIEF", "MODEL_RANKING", "AUTO_CLUSTER", "DRAFT", "RESULT_REGISTRY", "FIRE_SEED_SCORE"]}, "minItems": 6, "uniqueItems": true}
+      }
+    },
+    "rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["owner_authority_sources", "automated_sources", "smoke_test_defaults", "non_equivalences"],
+      "properties": {
+        "owner_authority_sources": {"type": "array", "items": {"enum": ["OWNER_EXPLICIT_PRODUCTION_BRIEF", "OWNER_EXPLICIT_SELECTION"]}, "minItems": 2, "uniqueItems": true},
+        "automated_sources": {"type": "array", "items": {"enum": ["MODEL_RANKING", "AUTO_CLUSTER", "DRAFT", "RESULT_REGISTRY", "FIRE_SEED_SCORE"]}, "minItems": 5, "uniqueItems": true},
+        "smoke_test_defaults": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["owner_selection", "production_state", "publication_acceptance", "authority_source"],
+          "properties": {
+            "owner_selection": {"const": "NOT_REVIEWED"},
+            "production_state": {"const": "CANDIDATE"},
+            "publication_acceptance": {"const": "PUBLICATION_ACCEPTANCE_NOT_GRANTED"},
+            "authority_source": {"const": "NONE"}
+          }
+        },
+        "non_equivalences": {"type": "array", "items": {"enum": ["DRAFT_GENERATED_NOT_OWNER_SELECTED", "DRAFT_GENERATED_NOT_PUBLICATION_ACCEPTED", "RESULT_REGISTRY_NOT_OWNER_ACCEPTANCE", "FIRE_SEED_SCORE_NOT_OWNER_SELECTION", "MODEL_RANKING_NOT_OWNER_SELECTION"]}, "minItems": 5, "uniqueItems": true}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  }
+}

@@ -6,7 +6,7 @@
   "source_task": "IGNITION-20260827-143",
   "inventory_kind": "CAPABILITY_SMOKE_TEST_ARTIFACTS",
   "default_owner_selection": "NOT_REVIEWED",
-  "default_publication_acceptance": "NOT_GRANTED",
+  "default_publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
   "artifacts": [
     {
       "artifact_id": "R1-IGNITION-143-ARTICLE-A",
@@ -15,7 +15,7 @@
       "title": "一个系统如何在停止时仍然诚实：把开放义务从任务生命周期里拆出来",
       "smoke_test": true,
       "owner_selection": "NOT_REVIEWED",
-      "publication_acceptance": "NOT_GRANTED",
+      "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
       "observed_registry_status": "PUBLICATION_PRODUCTION_R1_EDITORIALLY_REVIEWED",
       "source_paths": [
         "ignition/data/operations/iterations/142/step01-terminality-semantics.json",
@@ -32,7 +32,7 @@
       "title": "资源托举为什么会变成路径控制",
       "smoke_test": true,
       "owner_selection": "NOT_REVIEWED",
-      "publication_acceptance": "NOT_GRANTED",
+      "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
       "observed_registry_status": "PUBLICATION_PRODUCTION_R1_EDITORIALLY_REVIEWED",
       "source_paths": [
         "ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md",
@@ -50,7 +50,7 @@
       "title": "树冠会降温吗：一个好问题如何被证据层拆开",
       "smoke_test": true,
       "owner_selection": "NOT_REVIEWED",
-      "publication_acceptance": "NOT_GRANTED",
+      "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
       "observed_registry_status": "PUBLICATION_PRODUCTION_R1_EDITORIALLY_REVIEWED",
       "source_paths": [
         "ignition/PUBLICATIONS/pointfire-results-book/10-七轨证据演化-契约修复.md",
@@ -65,7 +65,7 @@
       "title": "书籍项目 R1：《还没有被证明的世界》",
       "smoke_test": true,
       "owner_selection": "NOT_REVIEWED",
-      "publication_acceptance": "NOT_GRANTED",
+      "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
       "observed_registry_status": "PUBLICATION_PRODUCTION_R1_PROJECT_READY_FOR_HUMAN_EDITING",
       "source_paths": [
         "ignition/PUBLICATIONS/pointfire-results-book/13-出版组合-R1.md",
@@ -82,7 +82,7 @@
       "title": "书稿样章：第一章 先别急着宣布完成",
       "smoke_test": true,
       "owner_selection": "NOT_REVIEWED",
-      "publication_acceptance": "NOT_GRANTED",
+      "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
       "observed_registry_status": "PUBLICATION_PRODUCTION_R1_POLISHED_SAMPLE",
       "source_paths": [
         "ignition/PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md",
@@ -98,7 +98,7 @@
       "title": "书稿样章：第三章 退出不是按钮",
       "smoke_test": true,
       "owner_selection": "NOT_REVIEWED",
-      "publication_acceptance": "NOT_GRANTED",
+      "publication_acceptance": "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
       "observed_registry_status": "PUBLICATION_PRODUCTION_R1_POLISHED_SAMPLE",
       "source_paths": [
         "ignition/PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md",
