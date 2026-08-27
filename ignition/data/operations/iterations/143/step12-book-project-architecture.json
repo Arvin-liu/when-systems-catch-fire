@@ -1,0 +1,33 @@
+{
+  "schema_version": "ignition-143-step12-book-project-architecture-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "12",
+  "status": "PASS",
+  "book_project_id": "book-project-r1-not-yet-proven-world",
+  "path": "PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md",
+  "title": "还没有被证明的世界",
+  "subtitle": "在复杂系统里保留证据、选择与退出",
+  "one_sentence_promise": "Give readers portable distinctions for acting without confusing observation, authority, exit, evidence and truth.",
+  "intended_readers": [
+    "researchers and long-term project workers",
+    "writers who need source-bound public language",
+    "organizers and system builders handling direction, consent and correction"
+  ],
+  "is_not": [
+    "a Pointfire component manual",
+    "a universal theory of AI, social relations or urban cooling",
+    "a private-source biography",
+    "a result-count or green-pipeline success proof"
+  ],
+  "chapter_count": 9,
+  "epilogue": true,
+  "sample_paths": [
+    "PUBLICATIONS/pointfire-results-book/book-project-r1/01-第一章-先别急着宣布完成.md",
+    "PUBLICATIONS/pointfire-results-book/book-project-r1/03-第三章-退出不是按钮.md"
+  ],
+  "source_to_chapter_map_present": true,
+  "evidence_strategy_present": true,
+  "duplication_audit_present": true,
+  "selected_through_line": "Evidence, choice and exit constrain action without pretending to be a universal theory.",
+  "claim_ceiling": "Book project architecture and editorial promise only; not a completed book, external publication acceptance, production readiness, external truth or epistemic acceptance."
+}
