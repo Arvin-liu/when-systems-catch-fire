@@ -1,0 +1,184 @@
+{
+  "schema_version": "ignition-143-publication-portfolio-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "05",
+  "status": "PASS",
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "sha": "b359580fe31866bc04eeb24911011e0baba9b66d"
+  },
+  "canonical_human_entrypoint": "PUBLICATIONS/pointfire-results-book/README.md",
+  "scoring": {
+    "scale": "1-5; 5 is strongest or safest",
+    "dimensions": {
+      "originality": "Distinctive reader-facing angle not already carried by the existing ten articles",
+      "reader_value": "Immediate value to a reader who does not know the repository",
+      "evidence_maturity": "How much current source material can support without new retrieval",
+      "narrative_potential": "Whether the material has tension, movement and a non-list argument",
+      "writing_readiness": "How close the material is to a complete manuscript with current sources",
+      "claim_safety": "Ease of preserving the existing claim ceiling in readable prose",
+      "overlap_safety": "5 means low duplication risk with the existing publication corpus"
+    }
+  },
+  "ranked_candidates": [
+    {
+      "rank": 1,
+      "candidate_id": "A",
+      "working_title": "一个系统如何在停止时仍然诚实：把开放义务从任务生命周期里拆出来",
+      "planned_path": "docs/editorial/articles/011-terminal-task-open-obligation.md",
+      "kind": "METHOD_SYSTEM",
+      "scores": {
+        "originality": 4,
+        "reader_value": 5,
+        "evidence_maturity": 5,
+        "narrative_potential": 5,
+        "writing_readiness": 5,
+        "claim_safety": 4,
+        "overlap_safety": 3
+      },
+      "total": 31,
+      "selection_reason": "Task142 supplies a concrete lifecycle change: formal task terminality and obligation liveness are independent. This is narrower and more original than repeating the general receipt-versus-reality warning.",
+      "claim_ceiling": "Repository-local lifecycle semantics and engineering evidence only; no external completion, executor capability or production readiness.",
+      "source_paths": [
+        "data/operations/iterations/142/step01-terminality-semantics.json",
+        "data/operations/iterations/142/step19-publication-and-terminality.json",
+        "reports/operations/ignition-142-step19-publication-and-terminality.md",
+        "data/operations/open-obligation-registry-r1.json"
+      ]
+    },
+    {
+      "rank": 2,
+      "candidate_id": "C",
+      "working_title": "树冠会降温吗：一个好问题如何被证据层拆开",
+      "planned_path": "docs/editorial/articles/013-tree-canopy-temperature-causality.md",
+      "kind": "BOUNDED_EXTERNAL_REPLAY_READER_VALUE",
+      "scores": {
+        "originality": 4,
+        "reader_value": 5,
+        "evidence_maturity": 4,
+        "narrative_potential": 5,
+        "writing_readiness": 4,
+        "claim_safety": 4,
+        "overlap_safety": 3
+      },
+      "total": 29,
+      "selection_reason": "A concrete public-source question lets a general reader watch useful evidence survive while the causal sentence is narrowed. It is more accessible than a second abstract essay about representation.",
+      "claim_ceiling": "Named observational materials support a bounded canopy/near-ground-air-temperature association; no city-wide causal tree-planting effect and no direct human heat-stress result.",
+      "source_paths": [
+        "PUBLICATIONS/pointfire-results-book/10-七轨证据演化-契约修复.md",
+        "PUBLICATIONS/pointfire-results-book/06-当前科学与WAIC.md"
+      ]
+    },
+    {
+      "rank": 3,
+      "candidate_id": "B",
+      "working_title": "资源托举为什么会变成路径控制",
+      "planned_path": "docs/editorial/articles/012-support-becomes-path-control.md",
+      "kind": "SUBSTANTIVE_INTERNAL_MODEL",
+      "scores": {
+        "originality": 5,
+        "reader_value": 5,
+        "evidence_maturity": 2,
+        "narrative_potential": 5,
+        "writing_readiness": 4,
+        "claim_safety": 2,
+        "overlap_safety": 4
+      },
+      "total": 27,
+      "selection_reason": "This is the required substantive non-meta piece. Its lower evidence score is deliberate: the article will make the unresolved status part of the argument and will name counterexamples rather than hide the gap.",
+      "claim_ceiling": "Pointfire-originated candidate model and writing problem; no universal causal law, measured prevalence or external validation.",
+      "source_paths": [
+        "PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md",
+        "outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md",
+        "outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md",
+        "reports/math-foundation/pilot-formal-audit-20260712.md",
+        "reports/math-foundation/provenance-audit-20260712.md"
+      ]
+    },
+    {
+      "rank": 4,
+      "candidate_id": "D",
+      "working_title": "退出不是按钮",
+      "planned_path": null,
+      "kind": "CONTENT_FIRE_SEED",
+      "scores": {
+        "originality": 4,
+        "reader_value": 5,
+        "evidence_maturity": 2,
+        "narrative_potential": 4,
+        "writing_readiness": 2,
+        "claim_safety": 2,
+        "overlap_safety": 3
+      },
+      "total": 22,
+      "selection_reason": "Keep as a central book thread and future article. A standalone R1 article would currently overlap B and would need operationalization of real, perceived and post-exit freedom.",
+      "status": "FUTURE_BACKLOG"
+    },
+    {
+      "rank": 5,
+      "candidate_id": "E",
+      "working_title": "描述、表示和证明之间隔着一段路",
+      "planned_path": "docs/editorial/articles/005-description-is-not-proof-systems-representations.md",
+      "kind": "EXISTING_ARTICLE",
+      "scores": {
+        "originality": 2,
+        "reader_value": 4,
+        "evidence_maturity": 5,
+        "narrative_potential": 3,
+        "writing_readiness": 5,
+        "claim_safety": 5,
+        "overlap_safety": 1
+      },
+      "total": 25,
+      "selection_reason": "Use as a boundary and book evidence chapter reference; do not create a duplicate manuscript.",
+      "status": "ALREADY_PUBLISHED_DO_NOT_DUPLICATE"
+    },
+    {
+      "rank": 6,
+      "candidate_id": "F",
+      "working_title": "收据不能冒充现实",
+      "planned_path": "docs/editorial/articles/006-readable-works-with-boundaries.md",
+      "kind": "EXISTING_ARTICLE_AND_RESULTS_BOOK_THREAD",
+      "scores": {
+        "originality": 2,
+        "reader_value": 4,
+        "evidence_maturity": 5,
+        "narrative_potential": 3,
+        "writing_readiness": 5,
+        "claim_safety": 5,
+        "overlap_safety": 1
+      },
+      "total": 25,
+      "selection_reason": "Keep as a recurring boundary, not a fourth new article. Article A must use the new lifecycle case rather than re-summarize this maxim.",
+      "status": "BOUNDARY_ONLY"
+    }
+  ],
+  "selected_articles": ["A", "B", "C"],
+  "selected_book": {
+    "through_line_id": "T2",
+    "working_title": "还没有被证明的世界",
+    "working_subtitle": "在复杂系统里保留证据、选择与退出",
+    "reason": "This line can hold a concrete engineering repair, a substantive social model and a public-source replay while making uncertainty operational rather than decorative.",
+    "planned_path": "PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md",
+    "non_negotiable_design": "Every chapter must be carried by a concrete scene or source, and every substantive claim must retain its source status and unresolved remainder."
+  },
+  "future_backlog": [
+    {
+      "title": "退出不是按钮",
+      "why_deferred": "High reader value but needs clearer operational distinctions and would otherwise merge with the support/control article.",
+      "resume_condition": "A source-backed case set or an explicit measurement design for formal, perceived and post-exit freedom."
+    },
+    {
+      "title": "量化指标如何让专业劳动变得麻木",
+      "why_deferred": "Strong fire seed, but the current materials are a local collision and internal candidate rather than a broad empirical account.",
+      "resume_condition": "A deliberately bounded multi-context source set with counterexamples and an explicit non-generalization frame."
+    },
+    {
+      "title": "角色覆盖主体身份 / 价值创造权与决策权错配",
+      "why_deferred": "Important companion models from the same collision; combining all three would flatten their distinct mechanisms.",
+      "resume_condition": "Separate case material and a need for a distinct article rather than a list of adjacent D IDs."
+    }
+  ],
+  "decision": "SELECT_A_B_C_AND_BOOK_T2",
+  "claim_ceiling": "Editorial selection and publication planning based on repository-local sources; selection does not upgrade any source, model, result, Owner decision or epistemic status."
+}
