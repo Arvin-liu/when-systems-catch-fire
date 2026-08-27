@@ -1,0 +1,40 @@
+{
+  "schema_version": "ignition-144-step08-publication-entrypoint-audit-r1",
+  "task_id": "IGNITION-20260828-144",
+  "result": "PASS",
+  "canonical_entrypoint": {
+    "path": "ignition/PUBLICATIONS/pointfire-results-book/README.md",
+    "role": "SOLE_CANONICAL_RESULTS_BOOK_ENTRYPOINT",
+    "parallel_results_registries": 0,
+    "parallel_results_book_readmes": 0
+  },
+  "inventory": {
+    "registry_path": "ignition/PUBLICATIONS/pointfire-results-book/RESULT-REGISTRY.jsonl",
+    "registry_rows": 95,
+    "task143_smoke_rows": 6,
+    "task143_smoke_status_tuple": [
+      "SMOKE_TEST_OUTPUT",
+      "OWNER_REVIEW_PENDING",
+      "PUBLICATION_ACCEPTANCE_NOT_GRANTED"
+    ],
+    "source_manifest_articles": 13
+  },
+  "link_audit": {
+    "audited_paths": [
+      "ignition/PUBLICATIONS/pointfire-results-book/README.md",
+      "ignition/PUBLICATIONS/pointfire-results-book/13-出版组合-R1.md",
+      "ignition/PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md"
+    ],
+    "internal_links_checked": 32,
+    "broken_internal_links": 0,
+    "missing_registry_narratives": 0
+  },
+  "boundary_checks": {
+    "repository_publication_artifact_not_external_acceptance": "PASS",
+    "task143_outputs_remain_owner_review_pending": "PASS",
+    "book_project_not_owner_initiated": "PASS",
+    "single_registry_entrypoint": "PASS",
+    "no_new_publication_system": "PASS"
+  },
+  "claim_ceiling": "Repository-local publication-entrypoint and link-integrity evidence only; this receipt does not establish article quality, book quality, Owner selection, publication acceptance, external truth or epistemic acceptance."
+}
