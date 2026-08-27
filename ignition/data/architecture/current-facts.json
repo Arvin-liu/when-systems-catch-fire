@@ -129,7 +129,7 @@
       "cards": 413,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 23908
+      "search_records": 23911
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -213,7 +213,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "92c5b980176c3fb7c73548653bf1d203770a1c3209582cdf12f5e7ca5f655a2e"
+      "sha256": "56d12ff39902d020817dd3f5c16a845cdaa63786aff66fd56c72a9b70b148050"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -273,7 +273,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "9772b393c62b55c40ed8c66d16fbcc4fb3cff539ad66be8e4a96fd91bea6bb59"
+      "sha256": "2265cf7cfe8cbb9d4c6d8f497ac82317e7a313fa4f680a3b06ca6cf6a4efbdf0"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

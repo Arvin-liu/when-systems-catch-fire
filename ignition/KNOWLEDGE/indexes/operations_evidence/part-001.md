@@ -909,6 +909,11 @@
   - 可搜索名称：IMPLICIT-86E52946BB352461 / "title": "故事化评分维度", / IMPLICIT-86E52946BB352461 / IMPLICIT-5CB34F10778A389F
   - 来源：`analysis/corpus-relation/article_cluster_candidates.json`
   - 依赖：—；被引用：—
+- ["title": "表示、能力与证据边界",](../../../data/operations/iterations/143/corpus-census-r1.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F5942A2AA946BD9E / "title": "表示、能力与证据边界", / IMPLICIT-F5942A2AA946BD9E
+  - 来源：`data/operations/iterations/143/corpus-census-r1.json`
+  - 依赖：—；被引用：—
 - [# 080 Highest Model Escalation Summary](../../../reports/foundation-architecture/080-highest-model-escalation-summary-20260713.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C4BDF7F07F1F612D / # 080 Highest Model Escalation Summary / IMPLICIT-C4BDF7F07F1F612D
@@ -1694,6 +1699,11 @@
   - 可搜索名称：IMPLICIT-5E9998E91AA51975 / ## V3（黄色协议）— 可逆性度量待验证 / IMPLICIT-5E9998E91AA51975
   - 来源：`docs/governance/meta-protocol-reviews/factual-pending-register.md`
   - 依赖：—；被引用：—
+- [## 不是所有支持都属于这个模型](../../../docs/editorial/articles/012-support-becomes-path-control.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3D18E438612ADC1 / ## 不是所有支持都属于这个模型 / IMPLICIT-C3D18E438612ADC1
+  - 来源：`docs/editorial/articles/012-support-becomes-path-control.md`
+  - 依赖：—；被引用：—
 - [## 与 Ψ₀ / Function / Case 的关系](../../../docs/protocols/protocol-index.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FD410FCA908A4C68 / ## 与 Ψ₀ / Function / Case 的关系 / IMPLICIT-FD410FCA908A4C68
@@ -2104,6 +2114,11 @@
   - 可搜索名称：IMPLICIT-A23966E7DB02CF3F / ## 规范性协议是边界声明，不是经验定律 / IMPLICIT-A23966E7DB02CF3F
   - 来源：`docs/editorial/articles/005-description-is-not-proof-systems-representations.md`
   - 依赖：—；被引用：—
+- [## 这个模型目前知道什么，还不知道什么](../../../docs/editorial/articles/012-support-becomes-path-control.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9BE6FB1E28C92398 / ## 这个模型目前知道什么，还不知道什么 / IMPLICIT-9BE6FB1E28C92398
+  - 来源：`docs/editorial/articles/012-support-becomes-path-control.md`
+  - 依赖：—；被引用：—
 - [### 1. 轮次不是样本，而是压力](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-16D49D6FCBE5DB92 / ### 1. 轮次不是样本，而是压力 / IMPLICIT-16D49D6FCBE5DB92
@@ -2487,20 +2502,5 @@
 - [### \[#595｜OrcaRouter多模型并行扇出验证\]\(docs/zh/cases/items/C-0595.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6B3AE0813F0507F2 / ### \[#595｜OrcaRouter多模型并行扇出验证\]\(docs/zh/cases/items/C-0595.md\) / IMPLICIT-6B3AE0813F0507F2
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#597｜模型异质性共享度倒U验证\]\(docs/zh/cases/items/C-0597.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-904EFC7E9A5801B2 / ### \[#597｜模型异质性共享度倒U验证\]\(docs/zh/cases/items/C-0597.md\) / IMPLICIT-904EFC7E9A5801B2
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#598｜单体模型到模型网络相变验证\]\(docs/zh/cases/items/C-0598.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D9BB4CEF72BD6115 / ### \[#598｜单体模型到模型网络相变验证\]\(docs/zh/cases/items/C-0598.md\) / IMPLICIT-D9BB4CEF72BD6115
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#600｜仲裁模型最弱维度锁死验证\]\(docs/zh/cases/items/C-0600.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-25707D01200B4132 / ### \[#600｜仲裁模型最弱维度锁死验证\]\(docs/zh/cases/items/C-0600.md\) / IMPLICIT-25707D01200B4132
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
