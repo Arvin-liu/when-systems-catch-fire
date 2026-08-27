@@ -1,0 +1,30 @@
+{
+  "schema_version": "owner-production-brief-r1",
+  "contract_id": "OWNER_PRODUCTION_BRIEF_R1",
+  "status": "AWAITING_OWNER_PRODUCTION_BRIEF",
+  "authority": "OWNER_EXPLICIT_PRODUCTION_BRIEF_REQUIRED",
+  "brief_fields": {
+    "kind": null,
+    "owner_selected_topic": null,
+    "owner_selected_direction": null,
+    "purpose": null,
+    "audience": null,
+    "must_use_sources": null,
+    "must_avoid": null,
+    "desired_length": null,
+    "publication_target": null
+  },
+  "input_policy": {
+    "accepted_forms": ["NATURAL_LANGUAGE_OWNER_BRIEF", "STRUCTURED_OWNER_BRIEF"],
+    "minimum_owner_content": ["kind", "owner_selected_topic_or_direction", "purpose", "audience"],
+    "natural_language_parse_preserves_intent": true,
+    "missing_brief_action": "AWAIT_OWNER_PRODUCTION_BRIEF"
+  },
+  "transition_binding": {
+    "current_default_production_state": "CANDIDATE",
+    "owner_authority_required_for_activation": true,
+    "draft_generation_does_not_select": true,
+    "publication_acceptance_requires_owner_authority": true
+  },
+  "claim_ceiling": "Repository-local Owner production brief protocol only; this empty template is not an Owner selection, book initiation, draft authorization, publication acceptance or external-truth claim."
+}

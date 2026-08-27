@@ -1,0 +1,20 @@
+{
+  "schema_version": "ignition-144-step09-production-brief-contract-r1",
+  "task_id": "IGNITION-20260828-144",
+  "result": "PASS",
+  "contract_path": "ignition/data/governance/owner-production-brief-r1.json",
+  "schema_path": "ignition/schemas/governance/owner-production-brief-r1.schema.json",
+  "status": "AWAITING_OWNER_PRODUCTION_BRIEF",
+  "template_is_empty": true,
+  "formal_topic_created": false,
+  "formal_book_project_created": false,
+  "owner_authority_source": "OWNER_EXPLICIT_PRODUCTION_BRIEF_REQUIRED",
+  "required_content": ["kind", "owner_selected_topic_or_direction", "purpose", "audience"],
+  "optional_content": ["must_use_sources", "must_avoid", "desired_length", "publication_target"],
+  "interpretation_rules": [
+    "NATURAL_LANGUAGE_OWNER_BRIEF_MAY_BE_PARSED_BUT_NOT_REWRITTEN_INTO_OWNER_INTENT",
+    "MODEL_RANKING_AUTO_CLUSTER_DRAFT_AND_RESULT_REGISTRY_CANNOT_SUBSTITUTE_FOR_OWNER_BRIEF",
+    "DRAFT_GENERATED_IS_NOT_OWNER_SELECTED_OR_PUBLICATION_ACCEPTED"
+  ],
+  "claim_ceiling": "Repository-local production brief protocol evidence only; no topic, book initiation, publication acceptance, production readiness, external truth or epistemic acceptance is inferred."
+}

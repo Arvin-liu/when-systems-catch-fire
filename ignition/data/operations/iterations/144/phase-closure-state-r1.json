@@ -19,6 +19,7 @@
   "production_handoff": {
     "mode": "AWAITING_OWNER_PRODUCTION_BRIEF",
     "next_action": "AWAIT_OWNER_PRODUCTION_BRIEF",
+    "production_brief_contract": "ignition/data/governance/owner-production-brief-r1.json",
     "task143_outputs": "SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED",
     "owner_topic_selection_required": true,
     "owner_book_initiation_required": true,
