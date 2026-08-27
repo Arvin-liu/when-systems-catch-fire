@@ -1,0 +1,65 @@
+{
+  "schema_version": "ignition-144-step16-repair-cycle-c-r1",
+  "task_id": "IGNITION-20260828-144",
+  "step": "16",
+  "status": "PASS",
+  "repair_cycle": "C",
+  "candidate_head_before_repair": "39746bbe3f72e23c933f6dbf76f2231fd9b96433",
+  "root_cause": "The current Task144 baseline receipt used the task144_baseline.formal_baseline_sha field shape, but validate_execution_contract.py only accepted older baseline field names; the current full-regression runner contract document still carried the superseded Task143 task id while the runner derived Task144 from canonical Current.",
+  "pre_repair_evidence": {
+    "natural_full_regression": {
+      "tests": 1278,
+      "failures": 2,
+      "errors": 0,
+      "skips": 0,
+      "completed_naturally": true,
+      "watchdog_used": false,
+      "clean_before": true,
+      "clean_after": true,
+      "candidate_head": "39746bbe3f72e23c933f6dbf76f2231fd9b96433",
+      "stdout_sha256": "247a2a569b36906598218527311a6a51ca17ee490c8d41a920fdf358a9b8416d",
+      "stderr_sha256": "7c343edb87e032e628ae6407d84a37d23f5b8e1ff48fa463df09c17f4c3e800c"
+    },
+    "failed_tests": [
+      "test_execution_contract.ExecutionContractTests.test_wrong_baseline_is_rejected",
+      "test_full_regression_runner.FullRegressionRunnerContractTests.test_contract_document_matches_code_summary"
+    ],
+    "failure_classification": "DETERMINISTIC_TASK144_BASELINE_FIELD_AND_RUNNER_CONTRACT_BINDING"
+  },
+  "repair_applied": {
+    "files": [
+      "ignition/tools/validate_execution_contract.py",
+      "ignition/data/operations/full-regression-runner-r1.json"
+    ],
+    "changes": [
+      "Accept the current task144_baseline.formal_baseline_sha receipt shape while preserving strict baseline equality and the existing error semantics.",
+      "Rebind the current runner contract document task_id to IGNITION-20260828-144 so it matches the canonical Current task derived by the runner."
+    ],
+    "prohibited_scope_untouched": [
+      "external executors",
+      "live invocations",
+      "provider adapters",
+      "article or book正文",
+      "historical failure receipts"
+    ]
+  },
+  "safety": {
+    "new_live_invocations": 0,
+    "new_external_inference": 0,
+    "new_executor_qualification": 0,
+    "new_capability": false,
+    "historical_failure_preserved": true,
+    "green_laundering": {
+      "skip_added": false,
+      "xfail_added": false,
+      "ignore_added": false,
+      "expected_failure_added": false,
+      "residual_expanded": false
+    }
+  },
+  "repair_budget": {
+    "used": 3,
+    "remaining": 0
+  },
+  "claim_ceiling": "Repository-local deterministic test and contract-binding repair evidence only; no validated live completion, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}
