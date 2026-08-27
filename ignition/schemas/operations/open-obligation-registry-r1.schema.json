@@ -27,12 +27,29 @@
         "opened_by_task": {"$ref": "#/$defs/taskId"},
         "current_status": {"enum": ["OPEN", "CLOSED"]},
         "current_owner_plane": {"$ref": "#/$defs/nonblank"},
+        "operational_state": {"enum": ["ACTIVE", "OWNER_DEFERRED"]},
+        "owner_deferral": {"$ref": "#/$defs/ownerDeferral"},
         "blocker": {"$ref": "#/$defs/nonblank"},
         "next_eligible_action": {"$ref": "#/$defs/nonblank"},
         "inherited_by_task": {"$ref": "#/$defs/taskId"},
         "carry_forward_tasks": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/taskId"}, "uniqueItems": true},
         "terminal_condition": {"$ref": "#/$defs/nonblank"},
         "evidence_refs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true}
+      }
+    },
+    "ownerDeferral": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "authority", "deferred_is_not_failed", "no_automatic_resume", "resume_prerequisites", "source_task_id", "historical_next_action", "decision_source"],
+      "properties": {
+        "status": {"const": "OWNER_DEFERRED"},
+        "authority": {"const": "OWNER_EXPLICIT_SCOPE_OVERRIDE"},
+        "deferred_is_not_failed": {"const": true},
+        "no_automatic_resume": {"const": true},
+        "resume_prerequisites": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/nonblank"}, "uniqueItems": true},
+        "source_task_id": {"$ref": "#/$defs/taskId"},
+        "historical_next_action": {"$ref": "#/$defs/nonblank"},
+        "decision_source": {"$ref": "#/$defs/nonblank"}
       }
     },
     "adjudication": {

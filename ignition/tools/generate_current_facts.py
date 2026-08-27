@@ -223,6 +223,16 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
         raise ValueError("obligation registry current task differs from task lineage")
     steering = load_json(STEERING_PATH)
     live_projection = validate_projection(load_json(LIVE_CURRENT_PROJECTION_PATH))
+    live_obligation = next((row for row in obligation_registry["obligations"] if row["obligation_id"] == "LIVE_EXTERNAL_INVOCATION"), None)
+    if live_obligation is None:
+        raise ValueError("current facts require the LIVE_EXTERNAL_INVOCATION obligation")
+    live_state_dimensions = dict(live_projection["live_state_dimensions"])
+    live_next_action_status = live_projection["next_eligible_action"]["status"]
+    live_next_action = live_projection["next_eligible_action"]["action"]
+    if live_obligation.get("operational_state") == "OWNER_DEFERRED":
+        live_next_action_status = "OWNER_DEFERRED"
+        live_next_action = live_obligation["next_eligible_action"]
+        live_state_dimensions["next_eligible_action"] = live_next_action
     sync_surfaces = sync_registry.get("surfaces", [])
     role_counts = Counter(role for row in sync_surfaces for role in row.get("roles", []))
     executors = inventory.get("executors", [])
@@ -297,7 +307,7 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "adapter_ids": sorted(row["executor_id"] for row in executors),
             "live_status_by_executor": dict(sorted(live_statuses.items())),
             "live_invocation_ceiling": live_ceiling,
-            "live_state_dimensions": live_projection["live_state_dimensions"],
+            "live_state_dimensions": live_state_dimensions,
             "live_attempt_projection": {
                 "source_path": relative(LIVE_CURRENT_PROJECTION_PATH),
                 "projection_digest": live_projection["projection_digest"],
@@ -308,8 +318,8 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
                 "current_live_ceiling": live_projection["current_live_ceiling"],
                 "obligation_state": live_projection["obligation"]["state"],
                 "unreconciled_attempt_ids": live_projection["obligation"]["unreconciled_attempt_ids"],
-                "next_action_status": live_projection["next_eligible_action"]["status"],
-                "next_action": live_projection["next_eligible_action"]["action"],
+                "next_action_status": live_next_action_status,
+                "next_action": live_next_action,
             },
             "reference_executor_identity": "REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL",
         },

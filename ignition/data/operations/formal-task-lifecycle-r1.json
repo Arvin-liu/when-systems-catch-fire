@@ -2,7 +2,7 @@
   "schema_version": "formal-task-lifecycle-r1",
   "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
   "authority": "FORMAL_TASK_LIFECYCLE",
-  "current_task_id": "IGNITION-20260827-142",
+  "current_task_id": "IGNITION-20260827-143",
   "obligation_registry": {
     "authority": "OPEN_OBLIGATION_REGISTRY",
     "path": "ignition/data/operations/open-obligation-registry-r1.json",
@@ -11,6 +11,22 @@
     "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
   },
   "tasks": [
+    {
+      "task_id": "IGNITION-20260827-143",
+      "execution_status": "IN_PROGRESS",
+      "terminal": false,
+      "scope_complete": false,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task143 is active on publication production after the architecture/executor qualification phase was closed and Owner-deferred; its formal scope is not terminal until the required manuscripts, book project, current-state sync and publication gates are complete.",
+      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/143/execution-contract-r1.json",
+        "ignition/data/operations/iterations/143/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/143/phase-closure-state-r1.json",
+        "ignition/data/operations/iterations/143/step01-phase-closure.json"
+      ],
+      "claim_ceiling": "Task143 active publication-production and phase-parking scope only; the deferred live obligation remains open and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+    },
     {
       "task_id": "IGNITION-20260827-142",
       "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",

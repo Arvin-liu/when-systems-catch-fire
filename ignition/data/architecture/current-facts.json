@@ -1,9 +1,9 @@
 {
   "claim_ceiling": "Deterministic repository-derived current facts and navigation support only; no external truth, Owner acceptance, production safety or epistemic upgrade.",
   "contract_id": "CURRENT_STATE_SYNC_INVARIANT",
-  "current_formal_task_id": "IGNITION-20260827-142",
-  "current_formal_task_ordinal": 142,
-  "current_iteration_boundary": 142,
+  "current_formal_task_id": "IGNITION-20260827-143",
+  "current_formal_task_ordinal": 143,
+  "current_iteration_boundary": 143,
   "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
   "facts": {
     "architecture": {
@@ -31,8 +31,8 @@
       "adapter_inventory_count": 3,
       "live_attempt_projection": {
         "current_live_ceiling": "LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION",
-        "next_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
-        "next_action_status": "ADMISSION_REQUIRED",
+        "next_action": "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION",
+        "next_action_status": "OWNER_DEFERRED",
         "obligation_state": "OPEN",
         "observation_incomplete_count": 2,
         "projection_digest": "31691dc290a6192d0864f4405d8b98f8557dfe0c83c7d1e2e05850de314ee0e2",
@@ -47,7 +47,7 @@
         "inference_observation_status": "NOT_OBSERVED",
         "live_dispatch_observation_status": "OBSERVED",
         "live_process_observation_status": "OBSERVED",
-        "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+        "next_eligible_action": "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION",
         "reconciliation_blocker_status": "NONE",
         "schema_version": "live-state-dimensions-r1",
         "validated_completion_status": "NOT_VALIDATED"
@@ -65,13 +65,13 @@
     },
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
-      "current_task_id": "IGNITION-20260827-142",
-      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
-      "current_task_terminal": true,
+      "current_task_id": "IGNITION-20260827-143",
+      "current_task_status": "IN_PROGRESS",
+      "current_task_terminal": false,
       "open_obligation_ids": [
         "LIVE_EXTERNAL_INVOCATION"
       ],
-      "scope_complete": true,
+      "scope_complete": false,
       "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json",
       "terminal_task_history": [
         {
@@ -114,9 +114,9 @@
       }
     },
     "iteration": {
-      "current_formal_task_id": "IGNITION-20260827-142",
-      "current_formal_task_ordinal": 142,
-      "current_iteration_boundary": 142,
+      "current_formal_task_id": "IGNITION-20260827-143",
+      "current_formal_task_ordinal": 143,
+      "current_iteration_boundary": 143,
       "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
       "current_map_version": "0.16.0",
       "latest_architecture_changing_task_id": "IGNITION-20260827-142",
@@ -133,9 +133,9 @@
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
-      "current_task_id": "IGNITION-20260827-142",
+      "current_task_id": "IGNITION-20260827-143",
       "next_eligible_actions": [
-        "RUN_DYNAMIC_EXECUTOR_ADMISSION"
+        "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION"
       ],
       "open_count": 1,
       "open_obligation_ids": [
@@ -166,8 +166,8 @@
       "pilot_status": "OFFLINE_SYNTHETIC_ONLY"
     },
     "task_lineage": {
-      "current_task_id": "IGNITION-20260827-142",
-      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "current_task_id": "IGNITION-20260827-143",
+      "current_task_status": "IN_PROGRESS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -189,7 +189,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "d6cb28f5e773bcd86aaf90b69daff5c88cf14926bff470d660eca2ba19b3db6c"
+      "sha256": "ffb463a978f61e89f03c5688608290a4f5a1c4751a2d6908b81ae22ff3cb95ee"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -221,15 +221,15 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "5a19d6d2360f760b8f5eaacfb642fd55ff2d853215d9138c9ed07b9331e2c447"
+      "sha256": "5c0eb3f8c59520bfb53aaa53a83b9506b44c951d7227da97c37556aa81a33589"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "d43552cdc105c94554b5b56cea18f6cda90f48aa7b2d8d3f5f00dcf6bd677fce"
+      "sha256": "48767cbb296ce4617b51fa56d981040797941c0e6f4137c2459f02b37bbb281b"
     },
     {
       "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
-      "sha256": "1510bdd7544e027078f319f79059ca8166aa6297cfa174f5e622923839a85267"
+      "sha256": "d1671cccd988383f42e872e30d6d81116cc2a33f4c895714cb171040bc21b762"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
@@ -257,7 +257,7 @@
     },
     {
       "path": "ignition/data/operations/open-obligation-registry-r1.json",
-      "sha256": "74dfc107700199c3d54f9c050c6f8aa291aa533124cc990c682e4213251b1d49"
+      "sha256": "80a6637c207907cc71d948dd56df5dd5ba23027df4c79ae0f33f854b7db90cb1"
     },
     {
       "path": "ignition/data/operations/project-components.json",
@@ -309,11 +309,11 @@
     },
     {
       "path": "ignition/schemas/operations/open-obligation-registry-r1.schema.json",
-      "sha256": "fb139262cefbb6dc50e730db1f706b6cdaa22685561075bf3342e664e5c42600"
+      "sha256": "dbedd915d553321bef9d238fd6f3e2f2df9bc1514ac5c7c01c314c30a458da79"
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
-      "sha256": "619e4bf26f55b61c8c39d11b5344cff26f9b2af69e36f5326e78990f59b69485"
+      "sha256": "98d75337f9d2a7ae4aa45ce93bb7637a4aa0f2212ff15e012286862349ecf3ac"
     },
     {
       "path": "ignition/tools/iteration_boundary.py",
@@ -333,7 +333,7 @@
     },
     {
       "path": "ignition/tools/validate_open_obligation_registry.py",
-      "sha256": "cb545197ba9195b802830045b60a6864a8d8ee67259c136e871099d303d77e30"
+      "sha256": "1bcd19dc9514cd3d2293ee56c33eee778acd1b1280befa39831d14fbcb41de03"
     }
   ]
 }

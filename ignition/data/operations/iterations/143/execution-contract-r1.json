@@ -26,5 +26,5 @@
     "release_candidate_task": "IGNITION-20260827-143",
     "publication_witness_task": "IGNITION-20260827-143"
   },
-  "claim_ceiling": "Task143 repository-local phase closure, Owner deferral, publication production, editorial review and release evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+  "claim_ceiling": "Task143 repository-local phase closure, Owner deferral, publication production, editorial review and release evidence only; no Owner authority is granted, and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
 }

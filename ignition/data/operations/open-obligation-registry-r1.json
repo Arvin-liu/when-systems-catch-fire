@@ -2,17 +2,31 @@
   "schema_version": "open-obligation-registry-r1",
   "contract_id": "OBLIGATION_CARRY_FORWARD_WITHOUT_TASK_LIVENESS",
   "authority": "OPEN_OBLIGATION_REGISTRY",
-  "current_task_id": "IGNITION-20260827-142",
+  "current_task_id": "IGNITION-20260827-143",
   "obligations": [
     {
       "obligation_id": "LIVE_EXTERNAL_INVOCATION",
       "kind": "LIVE_READONLY_VALIDATED_COMPLETION",
       "opened_by_task": "IGNITION-20260823-136",
       "current_status": "OPEN",
-      "current_owner_plane": "EXECUTOR_ADMISSION",
+    "current_owner_plane": "OWNER_DEFERRED",
+    "operational_state": "OWNER_DEFERRED",
+    "owner_deferral": {
+      "status": "OWNER_DEFERRED",
+      "authority": "OWNER_EXPLICIT_SCOPE_OVERRIDE",
+      "deferred_is_not_failed": true,
+      "no_automatic_resume": true,
+      "resume_prerequisites": [
+        "OWNER_EXPLICIT_REOPEN",
+        "LOCAL_ENVIRONMENT_PREPARED_INSTALLED_AND_ATTESTED"
+      ],
+      "source_task_id": "IGNITION-20260827-143",
+      "historical_next_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
+      "decision_source": "IGNITION-20260827-143-phase-closure-publication-production-r1.md"
+    },
       "blocker": "NO_EXACT_BOUND_VALIDATED_COMPLETION; TASK142_NO_SAFE_LIVE_FAMILY",
-      "next_eligible_action": "RUN_DYNAMIC_EXECUTOR_ADMISSION",
-      "inherited_by_task": "IGNITION-20260827-142",
+    "next_eligible_action": "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION",
+    "inherited_by_task": "IGNITION-20260827-143",
       "carry_forward_tasks": [
         "IGNITION-20260823-136",
         "IGNITION-20260824-137",
@@ -20,7 +34,8 @@
         "IGNITION-20260825-139",
         "IGNITION-20260826-140",
         "IGNITION-20260826-141",
-        "IGNITION-20260827-142"
+      "IGNITION-20260827-142",
+      "IGNITION-20260827-143"
       ],
       "terminal_condition": "FIRST_EXACT_BOUND_LIVE_READONLY_VALIDATED_COMPLETION",
       "evidence_refs": [
@@ -32,26 +47,30 @@
         "ignition/data/operations/iterations/142/step13-live-attempt-a.json",
         "ignition/data/operations/iterations/142/step14-live-attempt-b.json",
         "ignition/data/operations/iterations/142/step15-independent-validator.json",
-        "ignition/data/operations/iterations/142/step16-obligation-adjudication.json",
-        "ignition/STATE-CHANGELOG.md"
+      "ignition/data/operations/iterations/142/step16-obligation-adjudication.json",
+      "ignition/data/operations/iterations/143/phase-closure-state-r1.json",
+      "ignition/data/operations/iterations/143/step01-phase-closure.json",
+      "ignition/STATE-CHANGELOG.md"
       ]
     }
   ],
   "last_adjudication": {
-    "task_id": "IGNITION-20260827-142",
+    "task_id": "IGNITION-20260827-143",
     "decision": "OPEN_RETAINED",
     "previous_status": "OPEN",
     "current_status": "OPEN",
     "validated_completion_count": 0,
     "live_attempt_started": false,
     "new_obligation_ids": [],
-    "reason": "No Task142 live attempt was authorized: the fresh census has no safe live-selectable family. The independent validator is ready but has no live result to adjudicate, so the original first-validated-completion obligation remains open while Task142 lifecycle proceeds independently.",
+    "reason": "Owner superseded the queued executor-qualification campaign before formal execution. The six historical attempts and zero validated completions remain preserved; LIVE_EXTERNAL_INVOCATION stays OPEN but is explicitly parked as OWNER_DEFERRED until a future Owner reopen and deliberate local environment preparation.",
     "evidence_refs": [
       "ignition/data/operations/iterations/142/step11-fresh-census.json",
       "ignition/data/operations/iterations/142/step12-pre-live-gate.json",
       "ignition/data/operations/iterations/142/step13-live-attempt-a.json",
       "ignition/data/operations/iterations/142/step14-live-attempt-b.json",
-      "ignition/data/operations/iterations/142/step15-independent-validator.json"
+      "ignition/data/operations/iterations/142/step15-independent-validator.json",
+      "ignition/data/operations/iterations/143/phase-closure-state-r1.json",
+      "ignition/data/operations/iterations/143/step01-phase-closure.json"
     ]
   },
   "claim_ceiling": "Independent repository-local obligation status and carry-forward only; an open obligation does not keep a terminal formal task alive, and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."

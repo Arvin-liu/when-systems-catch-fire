@@ -57,7 +57,13 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
             errors.append("live obligation cannot close without a validated completion")
         if live["current_status"] == "OPEN" and counts["validated_completion_count"] > 0:
             errors.append("live obligation must be adjudicated after a validated completion")
-        if live["next_eligible_action"] != projection["next_eligible_action"]["action"]:
+        if live.get("operational_state") == "OWNER_DEFERRED":
+            deferral = live.get("owner_deferral", {})
+            if deferral.get("historical_next_action") != projection["next_eligible_action"]["action"]:
+                errors.append("owner-deferred live obligation does not preserve the historical projection next action")
+            if live["next_eligible_action"].startswith("RUN_"):
+                errors.append("owner-deferred live obligation cannot expose an automatic RUN_* next action")
+        elif live["next_eligible_action"] != projection["next_eligible_action"]["action"]:
             errors.append("live obligation next action differs from live projection")
     return errors
 
