@@ -1,0 +1,56 @@
+{
+  "schema_version": "ignition-144-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260828-144",
+  "step": "00",
+  "status": "PASS",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "refs/heads/relay/current",
+    "observed_sha": "597fe7b745d35a05c5c6b396985eab530cc5dae5",
+    "command_path": "agent-commands/IGNITION-20260828-144-engineering-phase-final-closure-production-handoff-r1.md"
+  },
+  "task143_final_witness": {
+    "repository": "Arvin-liu/1111",
+    "receipt_ref": "refs/heads/relay/receipts/ignition-143-phase-closure-publication-r1-20260827",
+    "receipt_branch_sha": "dc7d51377bc8fe549707dc0448e2e7ab12a6f727",
+    "witness_kind": "INDEPENDENT_1111_REMOTE_REF_OBSERVATION",
+    "task_id": "IGNITION-20260827-143",
+    "formal_task_terminal": true,
+    "formal_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "content_phase": "RELEASE_READY",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "open_obligation": "LIVE_EXTERNAL_INVOCATION",
+    "open_obligation_operational_state": "OWNER_DEFERRED",
+    "new_live_invocations": 0,
+    "formal_final_sha": "75c06887f59fa94868101707acc4b8386f41fe13",
+    "remote_task_branch_sha": "75c06887f59fa94868101707acc4b8386f41fe13",
+    "remote_main_sha": "75c06887f59fa94868101707acc4b8386f41fe13",
+    "fresh_task_clone_head_sha": "75c06887f59fa94868101707acc4b8386f41fe13",
+    "fresh_remote_main_clone_head_sha": "75c06887f59fa94868101707acc4b8386f41fe13",
+    "exact_sha_binding": true,
+    "natural_full_regressions": {
+      "local_candidate": "1272 tests / 0 failures / 0 errors / 0 skips",
+      "fresh_task_clone": "1272 tests / 0 failures / 0 errors / 0 skips",
+      "fresh_remote_main_clone": "1272 tests / 0 failures / 0 errors / 0 skips"
+    },
+    "publication_gate": "PASS",
+    "historical_attempts_preserved": true,
+    "claim_ceiling": "Task143 repository-local publication and terminality evidence only; no Owner acceptance, external truth, production readiness or epistemic acceptance is inferred."
+  },
+  "task144_baseline": {
+    "formal_repository": "Arvin-liu/when-systems-catch-fire",
+    "formal_baseline_ref": "refs/heads/main",
+    "formal_baseline_sha": "75c06887f59fa94868101707acc4b8386f41fe13",
+    "baseline_source": "Task143 independent 1111 publication witness and fresh remote-main observation",
+    "architecture_baseline": "IGNITION-20260827-142",
+    "architecture_change_expected": false
+  },
+  "scope_decision": {
+    "external_executor_qualification": "OWNER_DEFERRED_NO_NEW_QUALIFICATION",
+    "new_live_attempt": "FORBIDDEN",
+    "new_publication_body": "FORBIDDEN",
+    "new_architecture_layer": "FORBIDDEN",
+    "task144_mode": "ENGINEERING_CLOSURE_AND_PRODUCTION_HANDOFF"
+  },
+  "claim_ceiling": "Repository-local Task143 baseline verification and Task144 starting-boundary evidence only; this record does not grant Owner authority, prove external truth, establish production readiness or claim publication acceptance."
+}
