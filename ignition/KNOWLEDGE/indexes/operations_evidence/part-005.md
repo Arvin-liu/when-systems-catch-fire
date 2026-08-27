@@ -1419,6 +1419,11 @@
   - 可搜索名称：NFC-cf24ed7c82727f83 / IGNITION-20260825-139 Step 12 — Independent binding and Current projection
   - 来源：`reports/operations/ignition-139-step12-independent-validation.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260827-143 Step 18 — Natural full regression and projection closure](../../../reports/operations/ignition-143-step18-full-regression.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e7aa2204cc53e376 / IGNITION-20260827-143 Step 18 — Natural full regression and projection closure
+  - 来源：`reports/operations/ignition-143-step18-full-regression.md`
+  - 依赖：—；被引用：—
 - [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-bda837b6080acf95)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report / IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bf04e0575b570af8 / The first post-Step12 run exposed four genuine stale-projection/accounting
   - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
-  - 依赖：—；被引用：—
-- [The frozen attempt policy allows at most two different executor families, at most one attempt per family, forbids blind](../../../reports/operations/ignition-140-step10-live-admission.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d62806e380e1776e / The frozen attempt policy allows at most two different executor families, at most one attempt per family, forbids blind
-  - 来源：`reports/operations/ignition-140-step10-live-admission.md`
   - 依赖：—；被引用：—

@@ -1,0 +1,152 @@
+{
+  "schema_version": "ignition-143-step18-full-regression-r1",
+  "task_id": "IGNITION-20260827-143",
+  "step": "18",
+  "status": "PASS",
+  "candidate_head_sha": "0a25989dd895af6326447e1a8741df1db5101211",
+  "command": "python3 ignition/tools/run_full_regression.py --provision-isolated --output-dir <external-temporary-capture>",
+  "working_directory": "ignition",
+  "natural_window": {
+    "minimum_supported_seconds": 14400,
+    "watchdog_used": false,
+    "arbitrary_timeout_used": false,
+    "process_killed": false,
+    "completed_naturally": true
+  },
+  "environment": {
+    "isolated": true,
+    "python_version": "3.14.6",
+    "dependency_preflight": "PASS",
+    "requirements": {
+      "sympy": "1.14.0",
+      "z3-solver": "4.16.0.0",
+      "jsonschema": "4.26.0"
+    },
+    "execution_python": "temporary isolated foundation venv outside repository"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "candidate_head_sha": "8d28bca2702a191e18e0f0c912bb0ae2187bcdeb",
+      "capture": "/private/tmp/ignition-143-step18-regression.i5zkth",
+      "runtime_seconds": 3065.989,
+      "exit_code": 1,
+      "tests_run": 1272,
+      "failures": 29,
+      "errors": 0,
+      "skips": 0,
+      "status": "FAIL_STALE_PROJECTION_AND_CONTRACT_REPAIR_REQUIRED",
+      "failure": "Natural full discovery preserved 29 deterministic failures: stale function/nonfunction/knowledge/current projections, human-source fingerprints, Task143 identity and runner bindings, state-changelog profile, and historical propagation classification.",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "stdout_sha256": "37ed47f24f280c27edb88e98408efe1fff3b35640da04365b3fe14b24a126508",
+      "stderr_sha256": "d16dff0b1f94f90288893ad5659a14f43dae81db17a5e73ac56d22ee1f94e009"
+    },
+    {
+      "attempt": 2,
+      "candidate_head_sha": "6ae5a0948fe07f22d85635a3dd80bba609ecc5bb",
+      "capture": "/private/tmp/ignition-143-step18-final.bs6lWV",
+      "runtime_seconds": 3018.366,
+      "elapsed_seconds": 3019.397,
+      "exit_code": 1,
+      "tests_run": 1272,
+      "failures": 6,
+      "errors": 0,
+      "skips": 0,
+      "status": "FAIL_FUNCTION_AND_PUBLICATION_PROJECTION_REPAIR_REQUIRED",
+      "failure": "Deep function adjudication remained at 6026 versus the 6029 census, the Agent Platform blast-radius report had stale authority hashes, and the Fire Seeds source fingerprint was stale.",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "stdout_sha256": "d0d23ca27046a8c63e03c35ed15d6c9e432fa9ff93f74c99759f9fe746d73ca0",
+      "stderr_sha256": "a0928f00a00209e07aa6b427cc6e7cf266dfa99312f038a2c89f0c474e5a5e5c"
+    },
+    {
+      "attempt": 3,
+      "candidate_head_sha": "e2932297d18563dbfb20184e53d89b6333b1144a",
+      "capture": "/private/tmp/ignition-143-step18-final2.u6zwv9",
+      "runtime_seconds": 3017.667,
+      "elapsed_seconds": 3018.698,
+      "exit_code": 1,
+      "tests_run": 1272,
+      "failures": 1,
+      "errors": 0,
+      "skips": 0,
+      "status": "FAIL_KNOWLEDGE_PROJECTION_REPAIR_REQUIRED",
+      "failure": "Knowledge Experience still reflected 6026 function assets after deep adjudication closed at 6029; the stale manifest and generated knowledge surfaces were preserved as evidence.",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "stdout_sha256": "54f0bcdfb17c199a94dbb0d93d2e8347a9fee305942da35c0885edae361374af",
+      "stderr_sha256": "28056b15e53d054255843c15a2ccea63f9fd848a2641f60eeb44780e716429bb"
+    },
+    {
+      "attempt": 4,
+      "candidate_head_sha": "0a25989dd895af6326447e1a8741df1db5101211",
+      "capture": "/private/tmp/ignition-143-step18-final3.T8r5EK",
+      "runtime_seconds": 3019.932,
+      "elapsed_seconds": 3020.978,
+      "exit_code": 0,
+      "tests_run": 1272,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "status": "PASS",
+      "clean_before": true,
+      "clean_after": true,
+      "generated_output_drift": [],
+      "stdout_sha256": "f0b57c2ddf8879e04487b18f70c94ce9721f48eabf0b4d606e9476161beffb39",
+      "stderr_sha256": "acb632b90ebd16e1761ab6b0d29ae7b15cf560b28013cb0a939c53203d1c8ee7"
+    }
+  ],
+  "repair": {
+    "cause": "Task143 publication artifacts expanded the repository source population and changed current presentation-only projections, while the existing deep function, knowledge, blast-radius and Fire Seeds projections retained earlier source and registry snapshots.",
+    "actions": [
+      "Regenerated function census and deep adjudication to a closed 6029/6029 registry.",
+      "Regenerated nonfunction claim closure at 17550 canonical claims and refreshed Knowledge Experience to 413 cards, 315 changes, 332 layered readings and 23911 search records.",
+      "Refreshed the existing Agent Platform blast-radius receipt, Fire Seeds census and Current State deterministic projections.",
+      "Repaired Task143 runner/identity/state-changelog contracts and sealed the append-only historical propagation source boundary without expanding historical residuals.",
+      "Refreshed Human Surface materiality/fingerprints using the existing deterministic generator; no skip, xfail, ignore, expected-failure or residual expansion was added."
+    ],
+    "validation": "The fourth natural isolated full regression passed 1272/1272 with zero failures, errors or skips; all four natural attempts completed with clean before/after worktrees."
+  },
+  "projection_preflight": {
+    "status": "PASS",
+    "check_count": 10,
+    "failed_checks": [],
+    "tracked_path_count": 3566,
+    "function_assets": 6029,
+    "nonfunction_claims": 17550,
+    "knowledge_cards": 413,
+    "knowledge_changes": 315,
+    "knowledge_layered_readings": 332,
+    "knowledge_search_records": 23911,
+    "fire_seeds": 64,
+    "fire_seed_sources": 398,
+    "current_surface_outputs": 15,
+    "deterministic_current_surface": "PASS",
+    "human_surface_contract": "PASS",
+    "historical_propagation": "SEALED_RESIDUAL_PRESERVED"
+  },
+  "live_boundary": {
+    "new_live_invocations": 0,
+    "validated_completion_count": 0,
+    "attempt_count": 6,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "obligation": "OPEN",
+    "operational_state": "OWNER_DEFERRED",
+    "retry": "NOT_AUTHORIZED",
+    "current_live_ceiling": "LIVE_EXTERNAL_INVOCATION_OPEN_NO_VALIDATED_COMPLETION"
+  },
+  "prohibited_green_laundering": {
+    "skip_added": false,
+    "xfail_added": false,
+    "expected_failure_added": false,
+    "ignore_added": false,
+    "residual_expanded": false
+  },
+  "next_step": "19",
+  "claim_ceiling": "Exact repository-local candidate natural offline full-suite evidence for tested head 0a25989dd895af6326447e1a8741df1db5101211, including preserved failed attempts and deterministic projection repairs; no fresh-clone, formal-main publication, validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}

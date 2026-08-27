@@ -6,6 +6,11 @@
 
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e894045affa64333 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D264；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ca3882d7d1a89d87 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D265；被引用：—
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-284af7e98334f9a8 / 定投是巴菲特模式的精确实现，通过结构设计让估计不必要（D90结构保守性元定理），优于"选对后保守执行"的传统策略。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D90；被引用：—
-- [定投跨域验证函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D181 / 定投跨域验证函数 / D181
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：D211, D220, D270；被引用：D182, D183, D184, D185
