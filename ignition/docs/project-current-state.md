@@ -1,6 +1,6 @@
 # 点火项目现状
 
-更新时间：2026-08-27。以下 Current 摘要先回答“现在是什么”；任务史保留为可回链证据，不再承担 Current 数字权威。
+更新时间：2026-08-28。以下 Current 摘要先回答“现在是什么”；任务史保留为可回链证据，不再承担 Current 数字权威。
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
 - current_identity_epoch: `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`；system_role: `Ignition OS / orchestration-governance layer`。
@@ -18,11 +18,11 @@
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 
-本轮把点火从架构/执行器资格化阶段切换到出版生产阶段。冻结的架构身份和 `0.16.0`
-地图构成 resume baseline；执行器资格化已按 Owner 决定停车并等待明确恢复，开放义务仍保留，
-但不再驱动本轮继续运行。本轮不启动外部 Agent live process；当前交付是三篇完整文章、一个
-Book Project R1、至少两段成熟书稿以及它们在既有成果册入口中的链接。出版完成仍只是仓库内
-生产证据，不改变当前开放义务与尚未达到认识论接受的边界。
+当前工程阶段正在按既定范围收口：架构身份保持冻结，外部 Agent qualification 保持
+`OWNER_DEFERRED`，不再自动恢复工程优化或 live 工作。既有成果册中的文章、Book Project
+和样章保留为 capability smoke-test outputs，等待 Owner review；正式文章/书籍生产必须从
+Owner production brief 开始。当前收口只处理 Current、入口、registry 与发布门禁的一致性，
+不新增 Agent 能力，也不把仓库内生产证据解释成 Owner acceptance、外部出版或认识论接受。
 
 ## 当前形态
 
@@ -48,7 +48,7 @@ snapshot、migration、namespace、Pack lifecycle、revocation、accounting、re
 统一表达；历史任务、requirements lineage、terminal status 和当前架构变更任务由 generated
 Current Snapshot 投影。历史/环境 residual 仍按 receipt 保留，旧任务记录不会被重写为当前事实。
 
-任务身份分成两个稳定可读的角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，release-governance task 不会因为成为 formal task 就自动获得 architecture authority。
+任务身份分成两个稳定可读的角色：Current formal task 回答“最近哪一轮正式任务正在或刚刚成为 Current”；latest architecture-changing task 回答“最近哪一轮改变了系统身份或架构”。二者允许不同，release-governance task 不会因为成为 formal task 就自动获得 architecture authority。工程阶段收口后，默认下一步是等待 Owner production brief，而不是自动创建新的工程任务或正文。
 
 Steering 以 `OWNER_DECLARED`／`OWNER_APPROVED_DERIVED` 与 `SYSTEM_DERIVED_PROPOSAL` 分离
 权威来源；Goal completion 需要独立 Completion Contract，`PASS` Run 不得推断完成。

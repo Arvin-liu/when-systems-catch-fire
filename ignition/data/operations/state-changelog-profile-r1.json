@@ -1,8 +1,8 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 43,
-  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43],
+  "entry_count": 44,
+  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44],
   "historical_entry_count": 26,
   "legacy_profile_count": 6,
   "profiles": {
@@ -65,6 +65,7 @@
     {"ordinal": 40, "date": "2026-08-27", "label": "IGNITION-20260827-142 — lifecycle/admission architecture transition", "profile": "current-r1", "section_sha256": "73bfd2e41d0c326fe14237f47f83e179ba1c9298b69478d0fa7967508e27a197"},
     {"ordinal": 41, "date": "2026-08-27", "label": "IGNITION-20260827-142 — formal terminality and independent obligation closure", "profile": "current-r1", "section_sha256": "084d2c66fb87d7042fedb40f20c857c7f013daa40dd07f256ddb4d6aee248ba3"},
     {"ordinal": 42, "date": "2026-08-27", "label": "IGNITION-20260827-143 — phase closure and publication production active", "profile": "current-r1", "section_sha256": "78a0870d45a7b3a907f127ad07c17bfa1285d90bcd5de6debd6f369a45a27de1"},
-    {"ordinal": 43, "date": "2026-08-27", "label": "IGNITION-20260827-143 — terminal publication-production scope", "profile": "current-r1", "section_sha256": "fb433e989cf111483acbfb6f738f908c5f0081f31dbfab6b53d2833e2304786a"}
+    {"ordinal": 43, "date": "2026-08-27", "label": "IGNITION-20260827-143 — terminal publication-production scope", "profile": "current-r1", "section_sha256": "2386d2343608d0313bd40a91f88c337a98a9d3822c5d7561c18b7046410ff944"},
+    {"ordinal": 44, "date": "2026-08-28", "label": "IGNITION-20260828-144 — engineering closure and production handoff in progress", "profile": "current-r1", "section_sha256": "9a2f6af1e75ead0cbc01eda158c1939d56aa48f79b909e2097a53993d36f05f0"}
   ]
 }

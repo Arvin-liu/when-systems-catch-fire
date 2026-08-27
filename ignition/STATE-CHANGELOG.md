@@ -560,11 +560,17 @@
 
 ## 2026-08-28 — IGNITION-20260828-144 — engineering closure and production handoff in progress
 
-- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; Task144 advances canonical Current from terminal Task143 while formal publication remains a separate remote-ref observation and independent 1111 witness.
+- main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task143 baseline `75c06887f59fa94868101707acc4b8386f41fe13` until Task144's separate ordinary fast-forward and remote-ref observation; this append-only entry is not a publication claim.
+- delta: advances the repository-local Current interpretation into engineering phase closure and Owner production handoff without adding architecture, an Agent layer, a new article or a new book body.
+- authority_changes: Current/task-lineage/lifecycle, Owner editorial authority and the existing Results Book boundary remain repository-local contracts; no provider, executor, channel, browser, remote-Git, configuration, billing, production, truth or epistemic authority is added.
 - formal_task: `IGNITION-20260828-144` is `IN_PROGRESS` and non-terminal while the engineering phase closure and production-handoff gates execute. Task143 remains the historical `COMPLETED_WITH_OPEN_OBLIGATIONS` predecessor.
 - phase_boundary: the architecture and executor phase is frozen at Task142 (`FROZEN_TASK142_BASELINE`, map `0.16.0`) and is closing without a new architecture or Agent layer. The external qualification line is `OWNER_DEFERRED`; no new live attempt or automatic resume is authorized.
 - production_handoff: Task143's three articles, Book Project R1 and two samples are classified `SMOKE_TEST_OUTPUT / OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`. Article selection, book initiation and publication acceptance remain Owner authority; the next action is `AWAIT_OWNER_PRODUCTION_BRIEF`.
 - task_lineage: `IGNITION-125` remains `HISTORICAL_UNEXECUTED` with requirements `REBASED_INTO_127`; `IGNITION-127` remains `COMPLETED_WITH_CLASSIFIED_RESIDUALS`; Task142 and Task143 remain terminal `COMPLETED_WITH_OPEN_OBLIGATIONS` historical records.
 - obligation: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED`; its six historical attempts and zero validated completions are preserved, and Task144 does not reopen or retry it.
+- epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; closure and production-handoff evidence do not establish external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance.
+- obligations: complete only the bounded Current, entrypoint, authority, targeted-regression, fresh-clone, publication and witness gates; preserve the deferred live obligation and stop after Task144 without automatic Task145 creation.
+- stale_knowledge: Task143 smoke-test prose and historical executor-qualification records remain preserved as provenance; neither is promoted into Owner-selected production or live success.
+- next_read: read the Task144 execution contract, phase-closure state, Owner authority contract, Results Book entrypoint and the later Step15–19 receipts; do not infer formal publication from this append-only projection.
 - safety: no provider, executor, channel, browser, remote-Git, configuration, billing, installation, authentication or external side effect is authorized by this presentation-only closure transition.
 - claim_ceiling: repository-local engineering closure and Owner production-handoff evidence only; no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred.
