@@ -10,7 +10,9 @@ from tools.validate_human_front_door import (
     GUIDE,
     HUMAN_READING,
     LLMS,
+    PROJECT_IDENTITY_TEXT,
     README,
+    validate_component_navigation,
     validate_all,
     validate_readme_structure,
     validate_texts,
@@ -41,12 +43,23 @@ class HumanFrontDoorTests(unittest.TestCase):
         validate_texts(self.readme, self.guide, self.current_state, self.human_reading)
         self.assertLess(self.readme.index("### 项目现状"), self.readme.index("### 价值宪章"))
         self.assertLess(self.readme.index("### 价值宪章"), self.readme.index("## 2. 如何使用"))
-        self.assertNotIn("<details", self.readme.lower())
+        self.assertIn("<details", self.readme.lower())
+        self.assertIn("组件导航：核心控制与状态", self.readme)
         self.assertNotIn("CURRENT-SNAPSHOT", self.readme)
         self.assertNotIn("architecture_counts", self.readme)
 
+    def test_project_identity_is_the_owner_provided_text(self):
+        start = self.readme.index("### 项目现状") + len("### 项目现状")
+        end = self.readme.index("### 价值宪章")
+        self.assertEqual(self.readme[start:end].strip(), PROJECT_IDENTITY_TEXT)
+
+    def test_component_navigation_is_collapsed_and_canonical(self):
+        architecture_start = self.readme.index("## 4. 整体架构")
+        architecture_end = self.readme.index("## 5. 致谢")
+        self.assertGreater(validate_component_navigation(self.readme[architecture_start:architecture_end]), 0)
+
     def test_static_front_door_fixture_has_positive_and_negative_cases(self):
-        fixture_path = Path(__file__).parent / "fixtures/human-front-door-r2.json"
+        fixture_path = Path(__file__).parent / "fixtures/human-front-door-r3.json"
         fixture = json.loads(fixture_path.read_text(encoding="utf-8"))
         for case in fixture["cases"]:
             with self.subTest(case=case["id"]):
@@ -65,6 +78,19 @@ class HumanFrontDoorTests(unittest.TestCase):
                     mutated = mutated.replace("[完整《生命共同体价值宪章》](../ignition/docs/governance/life-community-value-charter.md)", "完整《生命共同体价值宪章》", 1)
                 elif case["mutation"] == "insert-machine-count":
                     mutated = mutated.replace("### 价值宪章", "architecture_counts=99\n\n### 价值宪章", 1)
+                elif case["mutation"] == "drift-project-identity":
+                    mutated = mutated.replace("点火是一个面向长期研究", "点火是一个面向短期研究", 1)
+                elif case["mutation"] == "insert-raw-svg-link":
+                    mutated = mutated.replace("这张图展示点火的整体结构", "[查看原始 SVG](../ignition/docs/generated/ignition-system-architecture.svg)\n\n这张图展示点火的整体结构", 1)
+                elif case["mutation"] == "insert-machine-architecture-explanation":
+                    mutated = mutated.replace("这张图展示点火的整体结构", "SVG href link metadata\n\n这张图展示点火的整体结构", 1)
+                elif case["mutation"] == "open-component-group":
+                    mutated = mutated.replace("<details>\n<summary>组件导航：核心控制与状态", "<details open>\n<summary>组件导航：核心控制与状态", 1)
+                elif case["mutation"] == "noncanonical-component-link":
+                    mutated = mutated.replace("../ignition/docs/architecture/os-control-plane-r2.md", "../ignition/docs/README.md", 1)
+                elif case["mutation"] == "duplicate-main-architecture-image":
+                    image = "![点火整体架构图](../ignition/docs/generated/ignition-system-architecture.svg)"
+                    mutated = mutated.replace(image, image + "\n\n" + image, 1)
                 if case["expected"] == "PASS":
                     validate_readme_structure(mutated)
                 else:

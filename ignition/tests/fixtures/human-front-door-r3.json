@@ -1,0 +1,19 @@
+{
+  "schema_version": "human-front-door-fixtures-r3",
+  "cases": [
+    {"id": "canonical-identity-and-five-groups", "mutation": "none", "expected": "PASS"},
+    {"id": "prose-before-project-current", "mutation": "insert-before-current", "expected": "FAIL"},
+    {"id": "duplicate-project-current", "mutation": "duplicate-project-current", "expected": "FAIL"},
+    {"id": "duplicate-value-charter", "mutation": "duplicate-value-charter", "expected": "FAIL"},
+    {"id": "legacy-current-snapshot", "mutation": "insert-snapshot", "expected": "FAIL"},
+    {"id": "nested-details-under-project-value", "mutation": "insert-details", "expected": "FAIL"},
+    {"id": "missing-canonical-charter-link", "mutation": "remove-charter-link", "expected": "FAIL"},
+    {"id": "machine-count-in-homepage", "mutation": "insert-machine-count", "expected": "FAIL"},
+    {"id": "project-identity-drift", "mutation": "drift-project-identity", "expected": "FAIL"},
+    {"id": "raw-svg-secondary-link", "mutation": "insert-raw-svg-link", "expected": "FAIL"},
+    {"id": "machine-architecture-explanation", "mutation": "insert-machine-architecture-explanation", "expected": "FAIL"},
+    {"id": "open-component-group", "mutation": "open-component-group", "expected": "FAIL"},
+    {"id": "noncanonical-component-link", "mutation": "noncanonical-component-link", "expected": "FAIL"},
+    {"id": "duplicate-main-architecture-image", "mutation": "duplicate-main-architecture-image", "expected": "FAIL"}
+  ]
+}

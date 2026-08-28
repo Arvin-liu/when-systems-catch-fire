@@ -4,7 +4,7 @@
 
 ### 项目现状
 
-当前阶段的工程建设已经收口，点火已从“建设点火”进入“使用点火生产”。现在，点火作为一个长期工作系统，用于组织研究、证据、问题、火种、文章与书籍生产，不再继续扩张 Agent 架构工程。正式文章选题、书籍立项、生产方向与 publication acceptance 由 Owner 决定，当前等待 Owner 正式 production brief；external-Agent qualification / live completion 已由 Owner 延后，不是当前工作方向。
+点火是一个面向长期研究、判断与创作的认知—行动工作系统。它把问题、来源、证据、模型、反例、记忆、任务、工具与公开表达组织在同一套可追溯、可修订的结构中，使跨时间、跨领域的工作能够持续积累、检验、纠错，并最终转化为文章、书籍和其他成果。它不替人决定目标，也不把模型、Agent、工程状态或写得漂亮的结论当作真理；它负责保存上下文、约束边界、协调可替换的工具与执行器，让人始终知道依据从哪里来、哪里仍然未知，以及工作如何继续。
 
 ### 价值宪章
 
@@ -30,11 +30,56 @@
 
 ## 4. 整体架构
 
-![点火唯一完整总架构图](../ignition/docs/generated/ignition-system-architecture.svg)
+![点火整体架构图](../ignition/docs/generated/ignition-system-architecture.svg)
 
-[打开透明完整总架构图 SVG](../ignition/docs/generated/ignition-system-architecture.svg) · [查看 Agent Platform R2 架构](../ignition/docs/architecture/agent-platform-r2.md) · [查看 Human Surface 编辑契约](../ignition/docs/governance/human-surface-editorial-contract.md) · [查看架构维护说明](../ignition/docs/architecture/interactive-system-map.md)
+这张图展示点火的整体结构；想了解具体组件，可展开下面的组件列表。
 
-整体架构图是确定性结构投影：它表达仓库内的来源、状态、治理、执行、验证、人类阅读和出版之间的声明关系，不表达现实因果、严格同构、理论完备性或任何具体命题的新证据。SVG 源码可以保留指向 canonical 目标的 link metadata，但这不承诺 GitHub 渲染页面提供交互热点。图的 registry、topology 和 layout 仍是机器维护输入；总架构图不是新的真值层。
+<details>
+<summary>组件导航：核心控制与状态</summary>
+
+- [Ignition Generic Kernel R0](../ignition/agent_kernel/README.md)
+- [Agent Runtime R2](../ignition/agent_runtime/README.md)
+- [OS Control Plane R2](../ignition/docs/architecture/os-control-plane-r2.md)
+- [Steering / Intent / Goal / Obligation R1](../ignition/docs/architecture/os-steering-intent-r1.md#os-steering-intent-and-obligation-r1)
+</details>
+
+<details>
+<summary>组件导航：执行与协作</summary>
+
+- [External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md#architecture-hierarchy)
+- [Executor Admission R1](../ignition/docs/architecture/external-agent-federation-r1.md#provider-neutral-executor-admission)
+- [Live External Executor Bridge R1](../ignition/docs/architecture/external-agent-federation-r1.md#live-external-executor-bridge-r1)
+- [Reference Executor](../ignition/docs/architecture/external-agent-federation-r1.md#reference-executor-freeze)
+</details>
+
+<details>
+<summary>组件导航：研究与知识</summary>
+
+- [统一知识入口](../ignition/KNOWLEDGE/README.md)
+- [Foundation](../ignition/FOUNDATION.md)
+- [MCF 多尺度因果织体](../ignition/docs/architecture/multiscale-causal-fabric.md)
+- [PSD 概率系统动力学](../ignition/docs/architecture/probabilistic-system-dynamics.md)
+- [ARN 自适应关系网络](../ignition/docs/architecture/adaptive-relational-network.md)
+</details>
+
+<details>
+<summary>组件导航：人类入口与成果</summary>
+
+- [人类使用说明](../ignition/docs/USAGE.md)
+- [当前项目现状](../ignition/docs/project-current-state.md)
+- [之元写作法 0.5.0](../ignition/docs/publication/zhiyuan-writing-method.md)
+- [成果索引](../ignition/docs/publication/zhiyuan-writing-showcase.md)
+</details>
+
+<details>
+<summary>组件导航：治理与边界</summary>
+
+- [生命共同体价值宪章](../ignition/docs/governance/life-community-value-charter.md)
+- [Human Surface 编辑契约](../ignition/docs/governance/human-surface-editorial-contract.md)
+- [认识论治理内核与联邦平面](../ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+- [智能体化边界 R0](../ignition/docs/architecture/agentization-boundary-r0.md)
+- [许可与权利边界](../ignition/docs/governance/licensing-rights-inventory.md)
+</details>
 
 ## 5. 致谢
 

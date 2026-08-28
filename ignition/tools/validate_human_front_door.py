@@ -7,6 +7,7 @@ import json
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 try:
     from tools.generate_interactive_system_map import build_projection, load_spec, render_svg, validate_spec
@@ -29,6 +30,7 @@ LLMS = ROOT / "llms.txt"
 HUMAN_READING = ROOT / "HUMAN-READING.md"
 SYSTEM_MAP_SPEC = ROOT / "data/architecture/interactive-system-map.json"
 SYSTEM_MAP_SVG = ROOT / "docs/generated/ignition-system-architecture.svg"
+COMPONENT_REGISTRY = ROOT / "data/operations/project-components.json"
 
 CAPABILITIES = {
     "MCF": "docs/architecture/multiscale-causal-fabric.md",
@@ -47,6 +49,20 @@ VERSION_FACTS = {
 HUMAN_CURRENT_HEADING = "### 项目现状"
 HUMAN_CHARTER_HEADING = "### 价值宪章"
 CHARTER_LINK = "../ignition/docs/governance/life-community-value-charter.md"
+PROJECT_IDENTITY_TEXT = "点火是一个面向长期研究、判断与创作的认知—行动工作系统。它把问题、来源、证据、模型、反例、记忆、任务、工具与公开表达组织在同一套可追溯、可修订的结构中，使跨时间、跨领域的工作能够持续积累、检验、纠错，并最终转化为文章、书籍和其他成果。它不替人决定目标，也不把模型、Agent、工程状态或写得漂亮的结论当作真理；它负责保存上下文、约束边界、协调可替换的工具与执行器，让人始终知道依据从哪里来、哪里仍然未知，以及工作如何继续。"
+ARCHITECTURE_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
+NAVIGATION_SUMMARIES = (
+    "组件导航：核心控制与状态",
+    "组件导航：执行与协作",
+    "组件导航：研究与知识",
+    "组件导航：人类入口与成果",
+    "组件导航：治理与边界",
+)
+ADDITIONAL_CANONICAL_NAVIGATION_PATHS = {
+    "ignition/docs/architecture/agent-platform-r2.md",
+    "ignition/docs/architecture/interactive-system-map.md",
+    "ignition/docs/governance/human-surface-editorial-contract.md",
+}
 FORBIDDEN_HOMEPAGE_MACHINE_TOKENS = (
     "CURRENT-SNAPSHOT:BEGIN",
     "CURRENT-SNAPSHOT:END",
@@ -73,10 +89,6 @@ FORBIDDEN_HOMEPAGE_MACHINE_TOKENS = (
     "OWNER_REVIEW_PENDING",
     "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
     "Reference / Conformance / Fallback",
-    "Kernel",
-    "Runtime",
-    "Federation",
-    "Driver Console",
     "current-snapshot",
     "live_attempt",
     "formal_task",
@@ -87,6 +99,66 @@ FORBIDDEN_HOMEPAGE_MACHINE_TOKENS = (
 def require(condition: bool, message: str) -> None:
     if not condition:
         raise AssertionError(message)
+
+
+def _section_text(readme: str, heading: str) -> str:
+    headings = list(re.finditer(r"^## (?!#)(.+?)\s*$", readme, re.MULTILINE))
+    current = next((match for match in headings if match.group(1).strip() == heading), None)
+    require(current is not None, f"README is missing section: {heading}")
+    following = next((match for match in headings if match.start() > current.start()), None)
+    return readme[current.start() : following.start() if following else len(readme)]
+
+
+def _canonical_navigation_paths() -> set[str]:
+    require(COMPONENT_REGISTRY.is_file(), "architecture component registry is missing")
+    registry = json.loads(COMPONENT_REGISTRY.read_text(encoding="utf-8"))
+    paths = set(ADDITIONAL_CANONICAL_NAVIGATION_PATHS)
+    for component in registry.get("components", []):
+        target = component.get("canonical_target", "").split("#", 1)[0]
+        if target:
+            paths.add(f"ignition/{target}" if not target.startswith(".github/") else target)
+    return paths
+
+
+def _resolve_readme_link(target: str) -> tuple[Path, str]:
+    parsed = urlsplit(target)
+    require(not parsed.scheme and not parsed.netloc, f"component link must stay inside the repository: {target}")
+    relative_path = unquote(parsed.path)
+    candidate = (README.parent / relative_path).resolve()
+    try:
+        candidate.relative_to(REPO_ROOT.resolve())
+    except ValueError as exc:
+        raise AssertionError(f"component link escapes the repository: {target}") from exc
+    return candidate, parsed.fragment
+
+
+def validate_component_navigation(architecture: str) -> int:
+    details = list(
+        re.finditer(
+            r"<details(?P<attributes>[^>]*)>\s*<summary>(?P<summary>.*?)</summary>(?P<body>.*?)</details>",
+            architecture,
+            re.IGNORECASE | re.DOTALL,
+        )
+    )
+    require(len(details) == len(NAVIGATION_SUMMARIES), "README architecture navigation must contain exactly five component groups")
+    summaries = tuple(re.sub(r"\s+", " ", match.group("summary")).strip() for match in details)
+    require(summaries == NAVIGATION_SUMMARIES, "README component navigation groups are missing or out of order")
+    canonical_paths = _canonical_navigation_paths()
+    link_count = 0
+    labels: set[str] = set()
+    for match in details:
+        require("open" not in match.group("attributes").casefold(), "README component navigation must be default collapsed")
+        items = re.findall(r"^\s*-\s+\[([^\]]+)\]\(([^)\n]+)\)\s*$", match.group("body"), re.MULTILINE)
+        require(items, f"README component group has no component links: {match.group('summary')}")
+        for label, target in items:
+            require(label.strip() and label.strip() not in labels, f"README component link label is blank or duplicated: {label}")
+            labels.add(label.strip())
+            candidate, _fragment = _resolve_readme_link(target.strip())
+            require(candidate.is_file(), f"README component link target does not exist: {target}")
+            candidate_relative = candidate.relative_to(REPO_ROOT).as_posix()
+            require(candidate_relative in canonical_paths, f"README component link is not a canonical architecture or human entry: {target}")
+            link_count += 1
+    return link_count
 
 
 def validate_readme_structure(readme: str) -> None:
@@ -104,19 +176,11 @@ def validate_readme_structure(readme: str) -> None:
     h3_titles = [match.group(1).strip() for match in h3_matches]
     require(h3_titles == ["项目现状", "价值宪章"], "README 项目与价值 must contain exactly 项目现状 then 价值宪章")
     require(section_one[section_one.find("\n") + 1 : h3_matches[0].start()].strip() == "", "README 项目现状 must be the first block under 项目与价值")
+    require("<details" not in section_one.casefold() and "</details" not in section_one.casefold(), "README 项目与价值 must not contain a nested component or machine details block")
 
-    current_text = section_one[h3_matches[0].end() : h3_matches[1].start()]
+    current_text = section_one[h3_matches[0].end() : h3_matches[1].start()].strip()
     charter_text = section_one[h3_matches[1].end() :]
-    for phrase, label in (
-        ("工程建设已经收口", "engineering closure"),
-        ("使用点火生产", "production transition"),
-        ("production brief", "Owner production brief handoff"),
-        ("Owner", "Owner decision boundary"),
-        ("文章", "article production boundary"),
-        ("书籍", "book production boundary"),
-        ("external-Agent qualification", "deferred external qualification"),
-    ):
-        require(phrase in current_text, f"README project status lacks {label}")
+    require(current_text == PROJECT_IDENTITY_TEXT, "README 项目现状 must match the Owner-provided identity text exactly")
     for phrase, label in (
         ("长瞻一宇同叩月", "poetic source"),
         ("生命共同体", "life-community scope"),
@@ -138,7 +202,6 @@ def validate_readme_structure(readme: str) -> None:
         require(phrase in charter_text, f"README value charter lacks {label}")
     require(CHARTER_LINK in charter_text, "README value charter link is missing or not canonical")
     require("点火是一个仓库原生" not in readme, "README must not retain the superseded project definition")
-    require("<details" not in readme.lower() and "</details" not in readme.lower(), "README must not fold machine state into details")
     lowered = readme.casefold()
     for token in FORBIDDEN_HOMEPAGE_MACHINE_TOKENS:
         require(token.casefold() not in lowered, f"README must not contain machine Current state: {token}")
@@ -150,6 +213,31 @@ def validate_readme_structure(readme: str) -> None:
         ("ignition-system-architecture.svg", "architecture route"),
     ):
         require(phrase in readme, f"README lacks {label}")
+
+    architecture = _section_text(readme, "4. 整体架构")
+    images = re.findall(r"!\[[^\]]*\]\(([^)\s]+)(?:\s+[^)]*)?\)", architecture)
+    require(images == [ARCHITECTURE_IMAGE_TARGET], "README architecture section must contain exactly one main embedded architecture image")
+    require(
+        not re.search(r"(?<!!)\[[^\]]+\]\([^)]*ignition-system-architecture\.svg", architecture),
+        "README must not expose the architecture SVG as a second ordinary link",
+    )
+    for phrase in (
+        "打开透明完整总架构图 svg",
+        "打开完整总架构图 svg",
+        "查看原始 svg",
+        "透明完整总架构图",
+        "raw svg",
+        "href",
+        "link metadata",
+        "interactive hotspot",
+        "registry",
+        "topology",
+        "layout",
+        "可点击架构图",
+    ):
+        require(phrase not in architecture.casefold(), f"README architecture section must not expose machine SVG/navigation detail: {phrase}")
+    require("这张图展示点火的整体结构" in architecture, "README architecture section lacks its short human explanation")
+    require(validate_component_navigation(architecture) > 0, "README architecture component navigation is missing")
 
 
 def validate_texts(readme: str, guide: str, current_state: str, human_reading: str) -> None:

@@ -63,7 +63,7 @@
       "profile": "human",
       "generation_policy": "human_static_summary",
       "current_snapshot_policy": "no_generated_snapshot",
-      "reason": "The public homepage is maintained as a two-block human front door; machine Current state belongs in the linked AI, current-state, architecture, changelog and snapshot records."
+      "reason": "The public homepage is maintained as a human identity summary with two direct project/value blocks and a default-collapsed component navigation; machine Current state belongs in the linked AI, current-state, architecture, changelog and snapshot records."
     }
   ],
   "historical_policy": "Historical sections may retain prior task/map/version values only when their section/date/metadata explicitly marks them Historical; the classifier must not treat those mentions as Current assertions.",
