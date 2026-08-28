@@ -53,6 +53,30 @@ class CurrentSurfaceCompilerTests(unittest.TestCase):
         text = compiler.compile_surface("# H\n## 1. 项目与价值\n", surface, self.snapshot)
         self.assertEqual(text.count("## "), 1)
 
+    def test_homepage_generated_block_stays_inside_details_after_regeneration(self) -> None:
+        surface = next(row for row in self.contract["surfaces"] if row["surface_id"] == "homepage-identity")
+        source = (compiler.REPO_ROOT / surface["path"]).read_text(encoding="utf-8")
+        first = compiler.compile_surface(source, surface, self.snapshot)
+        second = compiler.compile_surface(first, surface, self.snapshot)
+        self.assertEqual(first, second)
+        self.assertEqual(first.lower().count("<details"), 1)
+        self.assertEqual(first.lower().count("</details>"), 1)
+        self.assertIn("<summary>机器状态与工程细节（展开查看）</summary>", first)
+        block_start = first.index("<!-- CURRENT-SNAPSHOT:BEGIN")
+        details_start = first.lower().rindex("<details", 0, block_start)
+        details_end = first.lower().index("</details>", block_start)
+        self.assertLess(details_start, block_start)
+        self.assertLess(block_start, details_end)
+
+    def test_homepage_missing_details_is_repaired_without_heading_change(self) -> None:
+        surface = next(row for row in self.contract["surfaces"] if row["surface_id"] == "homepage-identity")
+        source = "# H\n## 1. 项目与价值\n### 项目现状\n"
+        text = compiler.compile_surface(source, surface, self.snapshot)
+        self.assertEqual(text.count("\n## 1. 项目与价值\n"), 1)
+        self.assertEqual(text.count("\n### 项目现状\n"), 1)
+        self.assertIn("<details>\n<summary>机器状态与工程细节（展开查看）</summary>", text)
+        self.assertEqual(text.lower().count("<details"), 1)
+
 
 if __name__ == "__main__":
     unittest.main()

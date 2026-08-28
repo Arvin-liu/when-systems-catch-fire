@@ -21,6 +21,12 @@ REPO_ROOT = ROOT.parent
 CONTRACT_PATH = ROOT / "data/operations/current-surface-block-contract-r1.json"
 BLOCK_BEGIN_RE = re.compile(r"^<!-- CURRENT-SNAPSHOT:BEGIN profile=(human|ai|machine) schema=current-snapshot-r1 -->$")
 BLOCK_END = "<!-- CURRENT-SNAPSHOT:END -->"
+DETAILS_TOKEN_RE = re.compile(r"<details\b[^>]*>|</details\s*>", re.IGNORECASE)
+GENERATED_BLOCK_RE = re.compile(
+    r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n"
+    r".*?<!-- CURRENT-SNAPSHOT:END -->\n?",
+    re.DOTALL,
+)
 
 
 def load_json(path: Path) -> Any:
@@ -121,8 +127,50 @@ def insert_block(text: str, block: str, surface: dict[str, Any]) -> str:
     return updated[:line_start] + block + "\n" + updated[line_start:]
 
 
+def _details_container(text: str, summary: str) -> tuple[re.Match[str], re.Match[str]] | None:
+    stack: list[re.Match[str]] = []
+    for match in DETAILS_TOKEN_RE.finditer(text):
+        token = match.group(0).lower()
+        if token.startswith("<details"):
+            stack.append(match)
+            continue
+        if not stack:
+            continue
+        opening = stack.pop()
+        if summary in text[opening.end() : match.start()]:
+            return opening, match
+    return None
+
+
+def _ensure_details_container(text: str, surface: dict[str, Any]) -> str:
+    summary = surface.get("details_summary")
+    if not summary:
+        return text
+    block_match = GENERATED_BLOCK_RE.search(text)
+    if not block_match:
+        raise ValueError(f"generated block missing for details surface {surface['surface_id']}")
+    container = _details_container(text, summary)
+    if container and container[0].start() < block_match.start() < container[1].end():
+        return text
+    if container:
+        block = block_match.group(0)
+        without_block = text[: block_match.start()] + text[block_match.end() :]
+        refreshed = _details_container(without_block, summary)
+        if refreshed is None:
+            raise ValueError(f"details container disappeared for {surface['surface_id']}")
+        insert_at = refreshed[1].start()
+        prefix = without_block[:insert_at]
+        if not prefix.endswith("\n"):
+            prefix += "\n"
+        return prefix + block + without_block[insert_at:]
+    block = block_match.group(0)
+    wrapped = f"<details>\n<summary>{summary}</summary>\n\n{block}</details>\n"
+    return text[: block_match.start()] + wrapped + text[block_match.end() :]
+
+
 def compile_surface(text: str, surface: dict[str, Any], snapshot: dict[str, Any] | None = None) -> str:
-    return insert_block(text, render_block(snapshot or build_snapshot(), surface["profile"]), surface)
+    updated = insert_block(text, render_block(snapshot or build_snapshot(), surface["profile"]), surface)
+    return _ensure_details_container(updated, surface)
 
 
 def extract_block(text: str) -> str | None:

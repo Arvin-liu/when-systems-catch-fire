@@ -17,6 +17,10 @@
 下一步等待 Owner production brief（`AWAIT_OWNER_PRODUCTION_BRIEF`），由 Owner 决定写哪篇文章、立哪本书。Task143 产生的三篇文章、Book Project R1 和两个样章只是 production capability smoke-test outputs，仍处于 `OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`；它们不等同于 Owner 已选题、正式立项或出版接受。工程收口不推出 production safety、外部真值、作品质量或 Owner acceptance。
 
 本地行动层保持 Reference / Conformance / Fallback 边界；外部 executor 不拥有 OS authority，仓库投影也不升级为现实证明。
+
+<details>
+<summary>机器状态与工程细节（展开查看）</summary>
+
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
 - current_identity_epoch: `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`；system_role: `Ignition OS / orchestration-governance layer`。
@@ -50,6 +54,8 @@ Current Snapshot 提供，不把历史记录重写为当前事实。
 - **怎样使用：** 人类先读[十分钟阅读路线](../ignition/HUMAN-READING.md)与[当前结果](../ignition/RESULTS/LATEST.md)；Agent 先读[AI 冷启动](../ignition/AI-START-HERE.md)、[状态增量日志](../ignition/STATE-CHANGELOG.md)、[R2 架构契约](../ignition/docs/architecture/agent-platform-r2.md)和[联邦契约](../ignition/docs/architecture/external-agent-federation-r1.md)。
 - **它不能证明什么：** 通过测试、Pack 加载、checkpoint、pilot 或系统图，都不等于外部真值、现实因果、生产安全、Owner acceptance 或 epistemic acceptance。
 - **仍然开放：** live provider/inference、daemon、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内；`LIVE_EXTERNAL_INVOCATION` 仍是 OPEN，历史六次 attempt、零 validated completion、零 unreconciled 和两次 observation-incomplete 保持不变。Task143 不启动 live process；外部 Agent 线只有在 Owner 明确重新开启、且本机环境先完成准备/安装/attestation 后才可恢复。当前出版生产入口见[点火成果册](../ignition/PUBLICATIONS/pointfire-results-book/README.md)，写作产物不抬升外部真值。
+
+</details>
 
 ## 2. 如何使用
 
