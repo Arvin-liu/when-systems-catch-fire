@@ -1,0 +1,52 @@
+{
+  "schema_version": "ignition-148-step10-homepage-ai-first-entry-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "10",
+  "status": "PASS_WITH_DECLARED_STEP12_PROPAGATION_PENDING",
+  "surface": ".github/README.md",
+  "module": {
+    "heading": "## 2. 点火操作法 / 如何使用",
+    "directly_visible": true,
+    "section_characters": 1552,
+    "full_manual_copied_to_homepage": false,
+    "homepage_sha256": "1720c242aa9329ab5cfb4d79d62253fd4d9eed6b8bae23ea9e0e08116e4cd4a0"
+  },
+  "required_entry_contract": {
+    "repository_link_plus_task_or_object_routes_to_current_operating_method": true,
+    "repository_url_is_method_source_not_mutation_request": true,
+    "default_mode": "READ_ONLY_RUN",
+    "input_object_is_not_instruction": true,
+    "operating_method_link": "../ignition/OPERATING-METHOD.md",
+    "capability_registry_link": "../ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "three_modes_present_in_order": [
+      "READ_ONLY_RUN",
+      "REPOSITORY_CHANGE_RUN",
+      "EXTERNAL_ACTION_RUN"
+    ],
+    "minimal_invocation": "请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。",
+    "minimal_invocation_requires_internal_jargon": false,
+    "human_reading_route_preserved": true,
+    "ai_cold_start_route_preserved": true
+  },
+  "validation": {
+    "human_front_door_validator": "PASS repository_native_human_surfaces_only; system_map_source_link_nodes=87; external_truth_verified=false",
+    "homepage_components_validator": "PASS count=5",
+    "human_front_door_tests": "13/13 PASS",
+    "ai_first_static_fixtures": "10/10 expected positive and fail-closed outcomes PASS",
+    "visibility_and_current_surface_regression": "15/15 PASS",
+    "fixture_sha256": "78bb061f33316e12d6ed2f5c06cb019ba863931d3bc83a12ee8c8795e3804d24",
+    "json_parse": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "declared_step12_projection_residuals": [
+    "Function census projection remains pending Step12 after Task148 source additions.",
+    "Non-function claim projection remains pending Step12 over its previously recorded exact 12-path set."
+  ],
+  "projection_policy": {
+    "closure_step": "12",
+    "ignore_or_skip_added": false,
+    "validator_weakened": false,
+    "projection_closure_claimed": false
+  },
+  "claim_ceiling": "Task148 candidate homepage routing and repository-native front-door validation only; it does not make the Operating Method Current on main, authorize repository or external actions, establish external truth, or close deterministic Foundation projections before Step12."
+}

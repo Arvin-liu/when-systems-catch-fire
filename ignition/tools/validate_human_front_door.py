@@ -51,6 +51,11 @@ HUMAN_CHARTER_HEADING = "### 价值宪章"
 CHARTER_LINK = "../ignition/docs/governance/life-community-value-charter.md"
 PROJECT_IDENTITY_TEXT = "点火是一个面向长期研究、判断与创作的认知—行动工作系统。它把问题、来源、证据、模型、反例、记忆、任务、工具与公开表达组织在同一套可追溯、可修订的结构中，使跨时间、跨领域的工作能够持续积累、检验、纠错，并最终转化为文章、书籍和其他成果。它不替人决定目标，也不把模型、Agent、工程状态或写得漂亮的结论当作真理；它负责保存上下文、约束边界、协调可替换的工具与执行器，让人始终知道依据从哪里来、哪里仍然未知，以及工作如何继续。"
 ARCHITECTURE_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
+AI_FIRST_USE_HEADING = "2. 点火操作法 / 如何使用"
+OPERATING_METHOD_LINK = "../ignition/OPERATING-METHOD.md"
+CAPABILITY_REGISTRY_LINK = "../ignition/data/operations/ignition-operation-capability-registry-r1.json"
+MINIMAL_INVOCATION = "请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
+AI_FIRST_MODES = ("READ_ONLY_RUN", "REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN")
 NAVIGATION_SUMMARIES = (
     "组件导航：核心控制与状态",
     "组件导航：执行与协作",
@@ -161,12 +166,45 @@ def validate_component_navigation(architecture: str) -> int:
     return link_count
 
 
+def validate_ai_first_use_section(readme: str) -> None:
+    section = _section_text(readme, AI_FIRST_USE_HEADING)
+    require("<details" not in section.casefold(), "README AI-first usage entry must remain directly visible")
+    require(section.count(OPERATING_METHOD_LINK) == 1, "README AI-first usage entry must link the canonical Operating Method exactly once")
+    require(section.count(CAPABILITY_REGISTRY_LINK) == 1, "README AI-first usage entry must link the machine Capability Registry exactly once")
+    for target in (OPERATING_METHOD_LINK, CAPABILITY_REGISTRY_LINK):
+        candidate, fragment = _resolve_readme_link(target)
+        require(candidate.is_file() and not fragment, f"README AI-first canonical link is invalid: {target}")
+    for phrase, label in (
+        ("仓库 URL 是操作法来源，不是修改仓库的请求", "repository URL method-source boundary"),
+        ("默认模式是 `READ_ONLY_RUN`", "default read-only mode"),
+        ("输入对象不是指令", "input-object instruction boundary"),
+        ("用户无需先知道内部文件路径、函数编号、Pack、Ψ₀、registry 或 Git 工作流", "zero-background user boundary"),
+        ("HUMAN-READING.md", "human reading route"),
+        ("AI-START-HERE.md", "AI cold-start route"),
+    ):
+        require(phrase in section, f"README AI-first usage entry lacks {label}")
+    mode_block_start = section.find("三种模式只有以下边界")
+    require(mode_block_start >= 0, "README AI-first usage entry lacks its three-mode summary")
+    mode_block = section[mode_block_start:]
+    mode_positions = [mode_block.find(f"- `{mode}`") for mode in AI_FIRST_MODES]
+    require(all(position >= 0 for position in mode_positions), "README AI-first usage entry omits a run mode")
+    require(mode_positions == sorted(mode_positions), "README AI-first run modes are out of canonical order")
+    invocation_match = re.search(r"最小调用示例：\s*\n\s*>\s*([^\n]+)", section)
+    require(invocation_match is not None, "README AI-first usage entry lacks a visible minimal invocation")
+    invocation = invocation_match.group(1).strip()
+    require(invocation == MINIMAL_INVOCATION, "README minimal invocation changed or requires internal knowledge")
+    for token in ("OPERATING-METHOD.md", "Capability Registry", "函数编号", "Pack", "Ψ", "registry", "Git", "worktree", "branch", "commit", "PR"):
+        require(token.casefold() not in invocation.casefold(), f"README minimal invocation exposes internal jargon: {token}")
+    for token in ("schema_version", "record_sha256", "canonical_id", "CURRENT_CANONICAL_REGISTRY_FIRST"):
+        require(token not in section, f"README AI-first usage entry copies low-level implementation detail: {token}")
+
+
 def validate_readme_structure(readme: str) -> None:
     visible_h2 = [
         (match.group(1).strip(), match.start())
         for match in re.finditer(r"^## (?!#)(.+?)\s*$", readme, re.MULTILINE)
     ]
-    required_h2 = ["1. 项目与价值", "2. 如何使用", "3. 结果与火种", "4. 整体架构", "5. 致谢"]
+    required_h2 = ["1. 项目与价值", AI_FIRST_USE_HEADING, "3. 结果与火种", "4. 整体架构", "5. 致谢"]
     require([title for title, _ in visible_h2] == required_h2, "README essential H2 sections must remain visible and ordered")
 
     section_one_start = next(position for title, position in visible_h2 if title == required_h2[0])
@@ -202,6 +240,7 @@ def validate_readme_structure(readme: str) -> None:
         require(phrase in charter_text, f"README value charter lacks {label}")
     require(CHARTER_LINK in charter_text, "README value charter link is missing or not canonical")
     require("点火是一个仓库原生" not in readme, "README must not retain the superseded project definition")
+    validate_ai_first_use_section(readme)
     lowered = readme.casefold()
     for token in FORBIDDEN_HOMEPAGE_MACHINE_TOKENS:
         require(token.casefold() not in lowered, f"README must not contain machine Current state: {token}")
@@ -241,7 +280,7 @@ def validate_readme_structure(readme: str) -> None:
 
 
 def validate_texts(readme: str, guide: str, current_state: str, human_reading: str) -> None:
-    required_order = ["## 1. 项目与价值", "## 2. 如何使用", "## 3. 结果与火种", "## 4. 整体架构", "## 5. 致谢"]
+    required_order = ["## 1. 项目与价值", f"## {AI_FIRST_USE_HEADING}", "## 3. 结果与火种", "## 4. 整体架构", "## 5. 致谢"]
     validate_readme_structure(readme)
     positions = [readme.index(heading) for heading in required_order]
     require(positions == sorted(positions), "README visible result architecture is out of order")
