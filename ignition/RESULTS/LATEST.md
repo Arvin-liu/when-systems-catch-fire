@@ -65,7 +65,7 @@ Owner acceptance 或 `EPISTEMICALLY_ACCEPTED`；后者仍为 `0`。
 |非函数断言是否全部被治理链覆盖？|同次重算的 15,899 个 canonical claim 均有处置或 quarantine；其中 4,615 项仍是 quarantine/pending。|语料与规则范围内的仓库审计；不证明断言真值。|[任务 100 报告](../reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md)|REGISTRY_CLOSED_WITH_OPEN_OBLIGATIONS|
 |门控乘积模型是否统一四力？|没有。现有模型缺少共同物理载体、量纲一致作用量、规范结构、可重整化/有效场论边界与实验预测。|模型反例与定义义务；不推出其他统一路线失败。|[物理资产纠偏](../docs/foundation/physics-asset-correction-20260729.md)|WITHDRAW_UNIVERSAL_IMPOSSIBILITY_CLAIM|
 |大一统是否已被证明不可能？|没有。单一模型失败、哥德尔类比或跨域结构相似都不能推出所有可能理论不可能。|开放物理问题；不存在项目内 no-go theorem。|[物理资产纠偏](../docs/foundation/physics-asset-correction-20260729.md)|OPEN_RESEARCH_QUESTION|
-|系统图代表什么？|它是 registry/topology/layout 的确定性导航投影。|仓库结构证据；不证明现实因果、同构或完整性。|[系统图说明](../docs/architecture/interactive-system-map.md)|RETAIN_AS_NAVIGATION_PROJECTION|
+|系统图代表什么？|它是 registry/topology/layout 的确定性结构投影。|仓库结构证据；不证明现实因果、同构或完整性。|[系统图说明](../docs/architecture/interactive-system-map.md)|RETAIN_AS_NAVIGATION_PROJECTION|
 |价值宪章代表什么？|它约束项目的规范选择、风险与回滚边界。|规范性资产；不替代经验或数学证据。|[生命共同体价值宪章](../docs/governance/life-community-value-charter.md)|CURRENT_NORMATIVE_BOUNDARY|
 
 ## 最近变化

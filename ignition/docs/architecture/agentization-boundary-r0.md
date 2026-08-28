@@ -2,8 +2,9 @@
 
 任务 `IGNITION-20260815-119` 的 R0 完成了领域切割和依赖解耦；任务 121 的 R2
 在这个 generic boundary 上接入 Pack、Memory、Supervisor、Gateway、Profile 和
-真实离线维护 pilot，仍不做全仓物理大搬家。唯一可点击总架构图继续由 registry、
-typed topology 和 layout 生成；本页是 R0 基础边界的 Human Surface，机器边界以
+真实离线维护 pilot，仍不做全仓物理大搬家。完整总架构图 SVG 继续由 registry、
+typed topology 和 layout 确定性生成；SVG 源码可以保留指向 canonical 目标的 link metadata，
+但不承诺 GitHub 渲染页面提供交互热点；本页是 R0 基础边界的 Human Surface，机器边界以
 [`agentization-boundary-r0.json`](../../data/architecture/agentization-boundary-r0.json)
 和其 schema 为准，R2 总说明见 [`agent-platform-r2.md`](./agent-platform-r2.md)。
 

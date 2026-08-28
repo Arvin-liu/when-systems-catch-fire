@@ -1,0 +1,37 @@
+{
+  "schema_version": "ignition-145-step10-current-surface-language-audit-r1",
+  "task_id": "IGNITION-20260828-145",
+  "step": "10",
+  "status": "PASS",
+  "scope": "Current Human Surface wording directly related to the README architecture route",
+  "checks": {
+    "architecture_boundary_source": {
+      "path": "ignition/docs/architecture/agentization-boundary-r0.md",
+      "stale_clickability_terms": 0,
+      "source_link_metadata_wording": true,
+      "result": "PASS"
+    },
+    "latest_results_surface": {
+      "path": "ignition/RESULTS/LATEST.md",
+      "deterministic_structural_projection_wording": true,
+      "compatibility_disposition_key_preserved": "RETAIN_AS_NAVIGATION_PROJECTION",
+      "result": "PASS"
+    },
+    "readme_front_door": {
+      "step07_audit_remains_valid": true,
+      "visible_project_state_count": 1,
+      "closed_machine_details_count": 1,
+      "clickability_promise_count": 0,
+      "result": "PASS"
+    }
+  },
+  "scope_guards": {
+    "architecture_geometry_redrawn": false,
+    "architecture_identity_changed": false,
+    "task143_article_or_book_body_changed": false,
+    "historical_result_ledgers_rewritten": false,
+    "external_live_process_started": false,
+    "automatic_task146_created_or_started": false
+  },
+  "claim_ceiling": "Repository-local current Human Surface wording and compatibility-key audit only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}
