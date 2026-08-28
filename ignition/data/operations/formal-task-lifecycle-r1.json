@@ -13,18 +13,23 @@
   "tasks": [
     {
       "task_id": "IGNITION-20260828-144",
-      "execution_status": "IN_PROGRESS",
-      "terminal": false,
-      "scope_complete": false,
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
       "identity_impact": "PRESENTATION_ONLY",
-      "terminal_basis": "Task144 is executing engineering phase closure and Owner production handoff; terminality is pending Steps 15-19.",
+      "terminal_basis": "Task144 Steps 00-19 complete the engineering phase closure, Owner production handoff, exact candidate and fresh-task-clone regression, formal release candidate sealing and terminal lifecycle state. LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
       "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
       "evidence_refs": [
         "ignition/data/operations/iterations/144/execution-contract-r1.json",
         "ignition/data/operations/iterations/144/step00-baseline-audit.json",
-        "ignition/data/operations/iterations/144/phase-closure-state-r1.json"
+        "ignition/data/operations/iterations/144/phase-closure-state-r1.json",
+        "ignition/data/operations/iterations/144/step15-engineering-closure-gate.json",
+        "ignition/data/operations/iterations/144/step16-candidate-full-regression.json",
+        "ignition/data/operations/iterations/144/step17-fresh-task-full-regression.json",
+        "ignition/data/operations/iterations/144/step18-formal-main-publication.json",
+        "ignition/data/operations/iterations/144/step19-terminality.json"
       ],
-      "claim_ceiling": "Task144 repository-local engineering closure and Owner production handoff scope only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+      "claim_ceiling": "Task144 repository-local engineering closure, Owner production handoff, regression and formal terminality evidence only; the deferred live obligation remains open and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
     },
     {
       "task_id": "IGNITION-20260827-143",

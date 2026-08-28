@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Status: OWNER_ACCEPTED_BOUNDED_CALIBRATION_EVIDENCE_WITH_EXPLICIT_RESIDUALS](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5605259688235854 / Status: OWNER_ACCEPTED_BOUNDED_CALIBRATION_EVIDENCE_WITH_EXPLICIT_RESIDUALS
+  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
+  - 依赖：—；被引用：—
+- [Status:** 121C01_MAX_SEMANTIC_BATCH_COMPLETE_EVIDENCE_ACCUMULATING](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ba2c25d81b98781e / Status:** 121C01_MAX_SEMANTIC_BATCH_COMPLETE_EVIDENCE_ACCUMULATING
+  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
+  - 依赖：—；被引用：—
+- [Status:** `FULLTEXT_FETCH_AND_EXTRACTION_VERIFIED_PENDING_SEMANTIC_REVIEW`](../../../reports/external-research/121A-night-recovery-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-12257f5b24da57f7 / Status:** `FULLTEXT_FETCH_AND_EXTRACTION_VERIFIED_PENDING_SEMANTIC_REVIEW`
+  - 来源：`reports/external-research/121A-night-recovery-report.md`
+  - 依赖：—；被引用：—
+- [Steering records inherit the existing namespace boundary. Cross-namespace access requires verified principals, an unexpi](../../../docs/architecture/os-steering-intent-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-abf4d5ccc5b5676a / Steering records inherit the existing namespace boundary. Cross-namespace access requires verified principals, an unexpi
+  - 来源：`docs/architecture/os-steering-intent-r1.md`
+  - 依赖：—；被引用：—
+- [Steering validators, Current-State/task-lineage validators, deterministic map/Current Facts generators,](../../../reports/operations/ignition-129-step20-current-sync.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3b97cd57cabb4086 / Steering validators, Current-State/task-lineage validators, deterministic map/Current Facts generators,
+  - 来源：`reports/operations/ignition-129-step20-current-sync.md`
+  - 依赖：—；被引用：—
+- [Step 00 evidence](../../../reports/operations/ignition-124-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e9d8f57e145f7bb9 / Step 00 evidence
+  - 来源：`reports/operations/ignition-124-progress.md`
+  - 依赖：—；被引用：—
+- [Step 00 passes. A fresh `relay/current` clone resolved Task144 at](../../../reports/operations/ignition-144-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e9937407463cc154 / Step 00 passes. A fresh `relay/current` clone resolved Task144 at
+  - 来源：`reports/operations/ignition-144-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [Step 000-001: Baseline, evidence routing](../../../reports/external-research/121Q3-night-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ac5a27acac2e77a9 / Step 000-001: Baseline, evidence routing
+  - 来源：`reports/external-research/121Q3-night-progress.md`
+  - 依赖：—；被引用：—
 - [Step 001 \(3de47af\): Evidence routing \(6 GAPs, 9 nodes, 35 assets\)](../../../reports/external-research/121Q3-night-final-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2c903deb68875428 / Step 001 \(3de47af\): Evidence routing \(6 GAPs, 9 nodes, 35 assets\)
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4e0cd636c1612fa7 / UNRESOLVED: 2 \(S120-008, S120-015\)
   - 来源：`reports/external-research/121Q2V-verification-repair-report.md`
-  - 依赖：—；被引用：—
-- [unverified = \[s\["source_id"\] for s in sources if not s.get\("crossref_verified"\)\]](../../../data/external-research/105-intervention-control/105-evidence-validator.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1c9156734a8a54d1 / unverified = \[s\["source_id"\] for s in sources if not s.get\("crossref_verified"\)\]
-  - 来源：`data/external-research/105-intervention-control/105-evidence-validator.py`
-  - 依赖：—；被引用：—
-- [Updated evidence cards with GLM-5.2 max review](../../../reports/external-research/121b-handoff-to-121c.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8b22712ceece3f14 / Updated evidence cards with GLM-5.2 max review
-  - 来源：`reports/external-research/121b-handoff-to-121c.md`
-  - 依赖：—；被引用：—
-- [Upgrade/downgrade adjudication based on fulltext evidence](../../../data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-aaf0e4f8efc9ae29 / Upgrade/downgrade adjudication based on fulltext evidence
-  - 来源：`data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md`
-  - 依赖：—；被引用：—
-- [upgrades and a recoverable-evidence gate that remains open.](../../../reports/operations/ignition-140-step05-reconciliation-state-model.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a81c3f2ecaa69389 / upgrades and a recoverable-evidence gate that remains open.
-  - 来源：`reports/operations/ignition-140-step05-reconciliation-state-model.md`
-  - 依赖：—；被引用：—
-- [Use `DIRECT_RESEARCH` when ordinary notes, a source ledger and a human review are sufficient.](../../../docs/architecture/reos-vnext-light.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cd4182f6404992b5 / Use `DIRECT_RESEARCH` when ordinary notes, a source ledger and a human review are sufficient.
-  - 来源：`docs/architecture/reos-vnext-light.md`
-  - 依赖：—；被引用：—
-- [Use environment variables names only; never store values.](../../../docs/external-research/legal-fulltext-resolution-protocol.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-41df6816f02606da / Use environment variables names only; never store values.
-  - 来源：`docs/external-research/legal-fulltext-resolution-protocol.md`
-  - 依赖：—；被引用：—
-- [Use that page to describe what the repository has currently become, what it can currently do, what remains missing, and](../../../docs/project_positioning.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-194f78f006d399da / Use that page to describe what the repository has currently become, what it can currently do, what remains missing, and
-  - 来源：`docs/project_positioning.md`
-  - 依赖：—；被引用：—
-- [Use this form for real non-commercial use within the current license scope. Do not include private contact information,](../../../../.github/ISSUE_TEMPLATE/noncommercial-use-report.yml)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cb3d03a407bc07ea / Use this form for real non-commercial use within the current license scope. Do not include private contact information,
-  - 来源：`.github/ISSUE_TEMPLATE/noncommercial-use-report.yml`
   - 依赖：—；被引用：—

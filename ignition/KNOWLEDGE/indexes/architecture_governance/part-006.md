@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [For empirical claims, declare replication as `NO_REPLICATION_CLAIMED`, `INTERNAL_REPLAY_ONLY` or `EXTERNAL_REPLICATION_D](../../../docs/foundation/future-claim-admission-protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7514859261fb3600 / For empirical claims, declare replication as `NO_REPLICATION_CLAIMED`, `INTERNAL_REPLAY_ONLY` or `EXTERNAL_REPLICATION_D
+  - 来源：`docs/foundation/future-claim-admission-protocol.md`
+  - 依赖：—；被引用：—
+- [for index, artifact in enumerate\(artifacts\):](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-fbdce913ecd0b202 / for index, artifact in enumerate\(artifacts\):
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [for index, artifact in enumerate\(values\):](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-aa7d0349d089cf7d / for index, artifact in enumerate\(values\):
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [for name in \("depends_on", "inputs", "required_capabilities", "stop_fail_conditions", "output_artifact_refs"\):](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6402525c029e8301 / for name in \("depends_on", "inputs", "required_capabilities", "stop_fail_conditions", "output_artifact_refs"\):
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [for name in \("question", "desired_evidence_type", "source_family_requirement"\):](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d2f937b3fa8effab / for name in \("question", "desired_evidence_type", "source_family_requirement"\):
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
 - [for name in \("supporting_artifact_ids", "contradicting_artifact_ids"\):](../../../reos_vnext/validation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1c4fb344d94cadb1 / for name in \("supporting_artifact_ids", "contradicting_artifact_ids"\):
@@ -2477,30 +2502,5 @@
 - [next_read: complete the Task134 Current identity gates, terminal closure and exact long-window full unittest evidence; r](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f6963970dd1ff7e9 / next_read: complete the Task134 Current identity gates, terminal closure and exact long-window full unittest evidence; r
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read `data/operations/current-task-lineage-status.json`, `data/architecture/current-facts.json`, `data/operat](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-535bc825f3dcd82d / next_read: read `data/operations/current-task-lineage-status.json`, `data/architecture/current-facts.json`, `data/operat
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read `data/operations/iterations/135/execution-contract-r1.json`, `data/operations/iterations/135/current-sta](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f991a60a0e2372a8 / next_read: read `data/operations/iterations/135/execution-contract-r1.json`, `data/operations/iterations/135/current-sta
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read `data/operations/iterations/137/execution-contract-r1.json`, the Step 09/10 live attempt and validation](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ab4b0e94e18dab60 / next_read: read `data/operations/iterations/137/execution-contract-r1.json`, the Step 09/10 live attempt and validation
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read the \[Task143 terminality receipt\]\(./reports/operations/ignition-143-step19-terminality.md\), \[成果册入口\]\(./PU](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8a22699e93dc3474 / next_read: read the \[Task143 terminality receipt\]\(./reports/operations/ignition-143-step19-terminality.md\), \[成果册入口\]\(./PU
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read the final Task142 machine receipt and independent 1111 publication witness for exact SHA, remote-ref and](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d9ed53f761eef2b8 / next_read: read the final Task142 machine receipt and independent 1111 publication witness for exact SHA, remote-ref and
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

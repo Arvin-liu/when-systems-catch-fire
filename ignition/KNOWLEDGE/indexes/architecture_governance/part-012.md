@@ -6,6 +6,46 @@
 
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-67294989f1132a8e / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1e3e10315f4b3a78 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b05d1f63e5d50434 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bdc222a1568dcac4 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6101b91067ed05cb / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-691c14896bea69be / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b040391b381dbedc / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-df240b9240f1dd0c / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-728bf95f5a752e2c / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-37307534fd3e2232 / 想要统一解释过多现象；
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [感知社会环境](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8be0099cc5891e43 / 感知社会环境
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [成本-性能空间拓扑优化验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-94fe0200ea206d6b / 成本-性能空间拓扑优化验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [成果册 `RESULT-REGISTRY.jsonl`：新增 6 个 public-safe 出版工作成果登记（3 篇文章、1 个 Book Project、2 个样章），各自保留 provenance、claim ceiling、未决证据](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a40dd96e4c368674 / 成果册 `RESULT-REGISTRY.jsonl`：新增 6 个 public-safe 出版工作成果登记（3 篇文章、1 个 Book Project、2 个样章），各自保留 provenance、claim ceiling、未决证据
-  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
-  - 依赖：—；被引用：—
-- [成果册仍只有一个权威人类入口。文章是叙事层，`RESULT-REGISTRY.jsonl` 是可独立修订的成果登记，工程状态和开放义务仍由各自 canonical operations registry 与 Current surfaces](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2ed92f38aac5a281 / 成果册仍只有一个权威人类入口。文章是叙事层，`RESULT-REGISTRY.jsonl` 是可独立修订的成果登记，工程状态和开放义务仍由各自 canonical operations registry 与 Current surfaces
-  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
-  - 依赖：—；被引用：—
-- [我们习惯把“失败”理解为一个结果：阵地丢了，主将死了，伤亡大到无法继续。可在这里，失败先是一种解释。有人把后退解释为前线已败，随后用自己的后退替这个解释增加证据。等越来越多人这样做，解释才取得肉身，踩倒同伴，堵塞道路，把原本尚可收拾的混乱变](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-05236610087c5055 / 我们习惯把“失败”理解为一个结果：阵地丢了，主将死了，伤亡大到无法继续。可在这里，失败先是一种解释。有人把后退解释为前线已败，随后用自己的后退替这个解释增加证据。等越来越多人这样做，解释才取得肉身，踩倒同伴，堵塞道路，把原本尚可收拾的混乱变
-  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
-  - 依赖：—；被引用：—
-- [所以 reconciliation 继续 OPEN；OpenClaw 仍因 workspace/channel 边界不安全而跳过。](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d41f1d2316e2fe92 / 所以 reconciliation 继续 OPEN；OpenClaw 仍因 workspace/channel 边界不安全而跳过。
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [所有 117 条 DOI 均标记 crossref_verified=true。但 Crossref 验证仅确认：](../../../reports/external-research/104-source-quality-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4dd95a4e2d188602 / 所有 117 条 DOI 均标记 crossref_verified=true。但 Crossref 验证仅确认：
-  - 来源：`reports/external-research/104-source-quality-audit.md`
-  - 依赖：—；被引用：—
-- [所有 117 条有 `abstract_or_official_summary` 字段 → 可提升至 `ABSTRACT_REVIEWED`（但需验证摘要是否为实际读取而非模型生成）](../../../data/external-research/104-evidence-tier-schema.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-01c233edf8a73fd1 / 所有 117 条有 `abstract_or_official_summary` 字段 → 可提升至 `ABSTRACT_REVIEWED`（但需验证摘要是否为实际读取而非模型生成）
-  - 来源：`data/external-research/104-evidence-tier-schema.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| GAP-018 \(Effect Tracking\) \| EVIDENCE_ACCUMULATING \| 4 \| 4 \| Yes \|](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6f2f091519649f8d / \| GAP-018 \(Effect Tracking\) \| EVIDENCE_ACCUMULATING \| 4 \| 4 \| Yes \|
+  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
+  - 依赖：—；被引用：—
+- [\| GAP-019 \(Registry Semantics\) \| RESOLVED \| N9 fully implements versioned, append-only registry \|](../../../reports/external-research/121Q4-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f9c79990808d4a20 / \| GAP-019 \(Registry Semantics\) \| RESOLVED \| N9 fully implements versioned, append-only registry \|
+  - 来源：`reports/external-research/121Q4-final-report.md`
+  - 依赖：—；被引用：—
+- [\| GAP-019 \(Versioned Registry\) \| EVIDENCE_ACCUMULATING \| 6 \| 4 \| Yes \|](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a9b3ffd958d0e5df / \| GAP-019 \(Versioned Registry\) \| EVIDENCE_ACCUMULATING \| 6 \| 4 \| Yes \|
+  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
+  - 依赖：—；被引用：—
+- [\| GAP-019 \| No versioned function registry with provenance tracking \| RESOLVED_BY_EXISTING_EVIDENCE \| MEDIUM-HIGH \|](../../../reports/external-research/121Q3-night-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a424a2626237c73c / \| GAP-019 \| No versioned function registry with provenance tracking \| RESOLVED_BY_EXISTING_EVIDENCE \| MEDIUM-HIGH \|
+  - 来源：`reports/external-research/121Q3-night-final-report.md`
+  - 依赖：—；被引用：—
+- [\| GAP-020 \(Probabilistic Semantics\) \| INSUFFICIENT_EVIDENCE \| 2 \| 2 \| No \|](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-760ac7168e7aa124 / \| GAP-020 \(Probabilistic Semantics\) \| INSUFFICIENT_EVIDENCE \| 2 \| 2 \| No \|
+  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
+  - 依赖：—；被引用：—
+- [\| GAP-020 \| No probabilistic/stochastic function semantics framework \| PARTIALLY_RESOLVED \| MEDIUM-HIGH \|](../../../reports/external-research/121Q3-night-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-11de7f0a353734aa / \| GAP-020 \| No probabilistic/stochastic function semantics framework \| PARTIALLY_RESOLVED \| MEDIUM-HIGH \|
+  - 来源：`reports/external-research/121Q3-night-final-report.md`
+  - 依赖：—；被引用：—
+- [\| Gate \| Terminal evidence \|](../../../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-39e075c33c6be5a5 / \| Gate \| Terminal evidence \|
+  - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
+  - 依赖：—；被引用：—
+- [\| Historical interpretive essay \| `docs/publication/works/when-an-emperor-manufactures-heaven.md` \| recoverable source t](../../../docs/publication/method-sources/cognitive-migration-editorial-revision-source.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-75debf3bc98b064c / \| Historical interpretive essay \| `docs/publication/works/when-an-emperor-manufactures-heaven.md` \| recoverable source t
+  - 来源：`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`
+  - 依赖：—；被引用：—
 - [\| HOLD \| 暂停公开，等待证据、边界或编号修正 \|](../../../docs/pending_claims_register.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-4cb3809b1832db00 / \| HOLD \| 暂停公开，等待证据、边界或编号修正 \|
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-79754f2efb610b1b / 乘法临界漂移统一→脆弱点在最接近零的因子。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [乘法临界漂移统一，∂θ_critical/∂xᵢ = -θ_critical × \(∂lnfᵢ/∂xᵢ\)/Σⱼ\(∂lnfⱼ/∂xⱼ\)。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bd06a86195a61180 / 乘法临界漂移统一，∂θ_critical/∂xᵢ = -θ_critical × \(∂lnfᵢ/∂xᵢ\)/Σⱼ\(∂lnfⱼ/∂xⱼ\)。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [乘法临界漂移统一，脆弱点在最接近零的因子。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7e89249c3a431e25 / 乘法临界漂移统一，脆弱点在最接近零的因子。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [乘法临界漂移验证 — 改善0.3→0.5\(+67%\)乘积+67%,改善0.8→1.0\(+25%\)乘积+25%,改善最接近零的因子效果更大](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2511c8b32493c140 / 乘法临界漂移验证 — 改善0.3→0.5\(+67%\)乘积+67%,改善0.8→1.0\(+25%\)乘积+25%,改善最接近零的因子效果更大
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [也是动作与外部 executor 的司机。OpenClaw、Hermes、Codex 是可替换执行器，](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-eefc0626777219ec / 也是动作与外部 executor 的司机。OpenClaw、Hermes、Codex 是可替换执行器，
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [书籍验证案例候选模板](../../../templates/book-validation-case-candidate-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fb5951d592b7bd19 / 书籍验证案例候选模板
-  - 来源：`templates/book-validation-case-candidate-template.md`
-  - 依赖：—；被引用：—
-- [书级验证案例映射存在，作为正向证据](../../../data/meta-protocols/protocols-canonical.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d660c3cfe7f38ba6 / 书级验证案例映射存在，作为正向证据
-  - 来源：`data/meta-protocols/protocols-canonical.json`
-  - 依赖：—；被引用：—
-- [书评、社论、预印本、会议摘要、数据集、专著章节必须分别标注，不得统一当作原始同行评审研究。](../../../data/external-research/104-evidence-tier-schema.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-774e3c560f6b3e61 / 书评、社论、预印本、会议摘要、数据集、专著章节必须分别标注，不得统一当作原始同行评审研究。
-  - 来源：`data/external-research/104-evidence-tier-schema.md`
-  - 依赖：—；被引用：—
-- [事实 pending](../../../docs/governance/meta-protocol-reviews/protocols/E1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c986bfff8701e487 / 事实 pending
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/E1.md`
   - 依赖：—；被引用：—

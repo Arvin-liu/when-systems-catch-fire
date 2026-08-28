@@ -16,16 +16,16 @@
   "latest_architecture_task_ordinal": 142,
   "current_iteration_boundary": 144,
     "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
-  "content_phase": "RUNNING",
+  "content_phase": "RELEASE_READY",
     "required_publication_ref": "refs/heads/main",
     "publication_authority": "REMOTE_REF_OBSERVATION",
     "embedded_publication_assertion": "NONE",
-  "current_task_terminal": false,
+  "current_task_terminal": true,
     "post_publication_remote_check_required": true,
     "phase_order": [
         "RUNNING",
         "TERMINAL_CANDIDATE",
         "RELEASE_READY"
     ],
-  "claim_ceiling": "Task144 repository-local engineering phase closure and Owner production handoff evidence only; the deferred live obligation remains open, publication is derived from the required remote ref and recorded in a separate witness, and no external truth, production readiness, Owner acceptance or publication acceptance is inferred."
+  "claim_ceiling": "Task144 repository-local engineering phase closure, Owner production handoff, regression and release-ready terminality evidence only; the deferred live obligation remains open, publication is derived from the required remote ref and recorded in a separate witness, and no external truth, production readiness, Owner acceptance or publication acceptance is inferred."
 }

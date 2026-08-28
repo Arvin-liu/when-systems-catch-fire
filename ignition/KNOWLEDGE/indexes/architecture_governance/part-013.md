@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [感知社会环境](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8be0099cc5891e43 / 感知社会环境
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [成本-性能空间拓扑优化验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-94fe0200ea206d6b / 成本-性能空间拓扑优化验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [成果册 `RESULT-REGISTRY.jsonl`：新增 6 个 public-safe 出版工作成果登记（3 篇文章、1 个 Book Project、2 个样章），各自保留 provenance、claim ceiling、未决证据](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a40dd96e4c368674 / 成果册 `RESULT-REGISTRY.jsonl`：新增 6 个 public-safe 出版工作成果登记（3 篇文章、1 个 Book Project、2 个样章），各自保留 provenance、claim ceiling、未决证据
+  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
+  - 依赖：—；被引用：—
+- [成果册仍只有一个权威人类入口。文章是叙事层，`RESULT-REGISTRY.jsonl` 是可独立修订的成果登记，工程状态和开放义务仍由各自 canonical operations registry 与 Current surfaces](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2ed92f38aac5a281 / 成果册仍只有一个权威人类入口。文章是叙事层，`RESULT-REGISTRY.jsonl` 是可独立修订的成果登记，工程状态和开放义务仍由各自 canonical operations registry 与 Current surfaces
+  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
+  - 依赖：—；被引用：—
+- [我们习惯把“失败”理解为一个结果：阵地丢了，主将死了，伤亡大到无法继续。可在这里，失败先是一种解释。有人把后退解释为前线已败，随后用自己的后退替这个解释增加证据。等越来越多人这样做，解释才取得肉身，踩倒同伴，堵塞道路，把原本尚可收拾的混乱变](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-05236610087c5055 / 我们习惯把“失败”理解为一个结果：阵地丢了，主将死了，伤亡大到无法继续。可在这里，失败先是一种解释。有人把后退解释为前线已败，随后用自己的后退替这个解释增加证据。等越来越多人这样做，解释才取得肉身，踩倒同伴，堵塞道路，把原本尚可收拾的混乱变
+  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
+  - 依赖：—；被引用：—
+- [所以 reconciliation 继续 OPEN；OpenClaw 仍因 workspace/channel 边界不安全而跳过。](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d41f1d2316e2fe92 / 所以 reconciliation 继续 OPEN；OpenClaw 仍因 workspace/channel 边界不安全而跳过。
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [所有 117 条 DOI 均标记 crossref_verified=true。但 Crossref 验证仅确认：](../../../reports/external-research/104-source-quality-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4dd95a4e2d188602 / 所有 117 条 DOI 均标记 crossref_verified=true。但 Crossref 验证仅确认：
+  - 来源：`reports/external-research/104-source-quality-audit.md`
+  - 依赖：—；被引用：—
+- [所有 117 条有 `abstract_or_official_summary` 字段 → 可提升至 `ABSTRACT_REVIEWED`（但需验证摘要是否为实际读取而非模型生成）](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-01c233edf8a73fd1 / 所有 117 条有 `abstract_or_official_summary` 字段 → 可提升至 `ABSTRACT_REVIEWED`（但需验证摘要是否为实际读取而非模型生成）
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
 - [所有 117 条有 DOI 且 Crossref 元数据匹配 → 至少 `METADATA_VERIFIED`](../../../data/external-research/104-evidence-tier-schema.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7b8d8d577ad1c247 / 所有 117 条有 DOI 且 Crossref 元数据匹配 → 至少 `METADATA_VERIFIED`
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1626db3de1e59e39 / 统一矩阵入口、12 个协议入口、跨协议红队、事实 pending 总表与宪章入口见本目录 \[README.md\]\(./README.md\)。
   - 来源：`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`
-  - 依赖：—；被引用：—
-- [统一矩阵：\[12-meta-protocol-normative-review.md\]\(./12-meta-protocol-normative-review.md\)](../../../docs/governance/meta-protocol-reviews/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8c661cb492130d09 / 统一矩阵：\[12-meta-protocol-normative-review.md\]\(./12-meta-protocol-normative-review.md\)
-  - 来源：`docs/governance/meta-protocol-reviews/README.md`
-  - 依赖：—；被引用：—
-- [统一禁止表达](../../../docs/pending_claims_register.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-107f38f1cbf5d57e / 统一禁止表达
-  - 来源：`docs/pending_claims_register.md`
-  - 依赖：—；被引用：—
-- [统一表达；历史任务、requirements lineage、terminal status 和当前架构变更任务由 generated](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-da816cc6a5dd5120 / 统一表达；历史任务、requirements lineage、terminal status 和当前架构变更任务由 generated
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [统一资产卡；](../../../docs/governance/knowledge-experience-layer.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c5efabe540b05d48 / 统一资产卡；
-  - 来源：`docs/governance/knowledge-experience-layer.md`
-  - 依赖：—；被引用：—
-- [维度-容斥稳定性、#297基本常数约束验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6afe0adaea53896e / 维度-容斥稳定性、#297基本常数约束验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [缓存倒U型验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-30913ab0394ba5a7 / 缓存倒U型验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [缓解：所有普遍判断 REVISE + pending。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bd737d61bee6b653 / 缓解：所有普遍判断 REVISE + pending。
-  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
-  - 依赖：—；被引用：—
-- [编辑文章 stale/review 闭合**：若材料源变化，文章须离开 CURRENT 直至附审稿证据。](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a6e52b9d77c31dc2 / 编辑文章 stale/review 闭合**：若材料源变化，文章须离开 CURRENT 直至附审稿证据。
-  - 来源：`ITERATION.md`
   - 依赖：—；被引用：—

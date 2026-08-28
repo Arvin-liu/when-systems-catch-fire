@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [next_read: read `data/operations/current-task-lineage-status.json`, `data/architecture/current-facts.json`, `data/operat](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-535bc825f3dcd82d / next_read: read `data/operations/current-task-lineage-status.json`, `data/architecture/current-facts.json`, `data/operat
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [next_read: read `data/operations/iterations/135/execution-contract-r1.json`, `data/operations/iterations/135/current-sta](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f991a60a0e2372a8 / next_read: read `data/operations/iterations/135/execution-contract-r1.json`, `data/operations/iterations/135/current-sta
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [next_read: read `data/operations/iterations/137/execution-contract-r1.json`, the Step 09/10 live attempt and validation](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ab4b0e94e18dab60 / next_read: read `data/operations/iterations/137/execution-contract-r1.json`, the Step 09/10 live attempt and validation
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [next_read: read the \[Task143 terminality receipt\]\(./reports/operations/ignition-143-step19-terminality.md\), \[成果册入口\]\(./PU](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8a22699e93dc3474 / next_read: read the \[Task143 terminality receipt\]\(./reports/operations/ignition-143-step19-terminality.md\), \[成果册入口\]\(./PU
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [next_read: read the final Task142 machine receipt and independent 1111 publication witness for exact SHA, remote-ref and](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d9ed53f761eef2b8 / next_read: read the final Task142 machine receipt and independent 1111 publication witness for exact SHA, remote-ref and
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [next_read: 先读\[首页\]\(../.github/README.md\)、\[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[唯一完](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-0430b2c6ee1fbccf / next_read: 先读\[首页\]\(../.github/README.md\)、\[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[唯一完
@@ -222,6 +247,11 @@
 - [obligations: `LIVE_EXTERNAL_INVOCATION` is carried forward in the independent obligation registry with status `OPEN`, bl](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-880f92136fb43e9e / obligations: `LIVE_EXTERNAL_INVOCATION` is carried forward in the independent obligation registry with status `OPEN`, bl
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-50626461930a7bac / obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [obligations: `LIVE_EXTERNAL_INVOCATION` remains independently `OPEN / OWNER_DEFERRED` with six historical attempts, zero](../../../STATE-CHANGELOG.md)
@@ -1539,6 +1569,11 @@
   - 可搜索名称：NFC-f9eb833f3685fa55 / Registry-based construction and Trainer-based fitting create executable parameter artifacts from config and data.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [regression: the exact candidate and fresh task-clone natural suites are each `1278 / 0 / 0 / 0`; the earlier failed Task](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-10cb922603f1a21c / regression: the exact candidate and fresh task-clone natural suites are each `1278 / 0 / 0 / 0`; the earlier failed Task
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [regression_boundary: candidate and fresh-clone natural full suites each report `1082` tests, `0` failures, `0` errors an](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9519b8186b830167 / regression_boundary: candidate and fresh-clone natural full suites each report `1082` tests, `0` failures, `0` errors an
@@ -2374,6 +2409,11 @@
   - 可搜索名称：NFC-d08ed888c0697852 / stale_knowledge: Task139's historical five-attempt and `PRESENTATION_ONLY` claims remain immutable provenance; the curre
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [stale_knowledge: Task143 smoke-test content and historical executor qualification records remain preserved but non-accep](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-015449c73c27e40f / stale_knowledge: Task143 smoke-test content and historical executor qualification records remain preserved but non-accep
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [stale_knowledge: terminology/style similarity, offline machine scoring, repository synchronization, publication, map vis](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-018edc9a949d39a4 / stale_knowledge: terminology/style similarity, offline machine scoring, repository synchronization, publication, map vis
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-66df99b394d511e2 / Status: `STRICT_FOUR_PART_README_VALIDATED_LOCALLY`
   - 来源：`reports/readme/121Q19-readme-frontdoor-validation.md`
-  - 依赖：—；被引用：—
-- [Status: OWNER_ACCEPTED_BOUNDED_CALIBRATION_EVIDENCE_WITH_EXPLICIT_RESIDUALS](../../../reports/architecture-calibration/STEP09-EXECUTION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5605259688235854 / Status: OWNER_ACCEPTED_BOUNDED_CALIBRATION_EVIDENCE_WITH_EXPLICIT_RESIDUALS
-  - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
-  - 依赖：—；被引用：—
-- [Status:** 121C01_MAX_SEMANTIC_BATCH_COMPLETE_EVIDENCE_ACCUMULATING](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ba2c25d81b98781e / Status:** 121C01_MAX_SEMANTIC_BATCH_COMPLETE_EVIDENCE_ACCUMULATING
-  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
-  - 依赖：—；被引用：—
-- [Status:** `FULLTEXT_FETCH_AND_EXTRACTION_VERIFIED_PENDING_SEMANTIC_REVIEW`](../../../reports/external-research/121A-night-recovery-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-12257f5b24da57f7 / Status:** `FULLTEXT_FETCH_AND_EXTRACTION_VERIFIED_PENDING_SEMANTIC_REVIEW`
-  - 来源：`reports/external-research/121A-night-recovery-report.md`
-  - 依赖：—；被引用：—
-- [Steering records inherit the existing namespace boundary. Cross-namespace access requires verified principals, an unexpi](../../../docs/architecture/os-steering-intent-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-abf4d5ccc5b5676a / Steering records inherit the existing namespace boundary. Cross-namespace access requires verified principals, an unexpi
-  - 来源：`docs/architecture/os-steering-intent-r1.md`
-  - 依赖：—；被引用：—
-- [Steering validators, Current-State/task-lineage validators, deterministic map/Current Facts generators,](../../../reports/operations/ignition-129-step20-current-sync.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3b97cd57cabb4086 / Steering validators, Current-State/task-lineage validators, deterministic map/Current Facts generators,
-  - 来源：`reports/operations/ignition-129-step20-current-sync.md`
-  - 依赖：—；被引用：—
-- [Step 00 evidence](../../../reports/operations/ignition-124-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e9d8f57e145f7bb9 / Step 00 evidence
-  - 来源：`reports/operations/ignition-124-progress.md`
-  - 依赖：—；被引用：—
-- [Step 00 passes. A fresh `relay/current` clone resolved Task144 at](../../../reports/operations/ignition-144-step00-baseline-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e9937407463cc154 / Step 00 passes. A fresh `relay/current` clone resolved Task144 at
-  - 来源：`reports/operations/ignition-144-step00-baseline-audit.md`
-  - 依赖：—；被引用：—
-- [Step 000-001: Baseline, evidence routing](../../../reports/external-research/121Q3-night-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ac5a27acac2e77a9 / Step 000-001: Baseline, evidence routing
-  - 来源：`reports/external-research/121Q3-night-progress.md`
   - 依赖：—；被引用：—

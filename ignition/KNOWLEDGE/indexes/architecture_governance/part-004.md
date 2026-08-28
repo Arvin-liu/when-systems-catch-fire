@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def amend_question\(](../../../reos_vnext/kernel.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A0169B1F748CB909 / def amend_question\( / IMPLICIT-A0169B1F748CB909
+  - 来源：`reos_vnext/kernel.py`
+  - 依赖：—；被引用：—
+- [def ancestry_ok\(prereg\):](../../../function-os-candidate/v0.2/benchmark/run.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-54DF462703AFE68E / def ancestry_ok\(prereg\): / IMPLICIT-54DF462703AFE68E
+  - 来源：`function-os-candidate/v0.2/benchmark/run.py`
+  - 依赖：—；被引用：—
+- [def append\(](../../../agent_federation/live_attempt_ledger.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-3939C9B8FFADCCC0 / def append\( / IMPLICIT-3939C9B8FFADCCC0 / IMPLICIT-58E2526280287963
+  - 来源：`agent_federation/live_attempt_ledger.py`
+  - 依赖：—；被引用：—
 - [def append\(](../../../agent_federation/live_inference_observation_events.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-58E2526280287963 / def append\( / IMPLICIT-58E2526280287963 / IMPLICIT-3939C9B8FFADCCC0
@@ -2488,19 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-9A48AF772962BC36 / def test_content_hash_tamper_fails\(self\): / IMPLICIT-9A48AF772962BC36
   - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
-  - 依赖：—；被引用：—
-- [def test_create_basic\(self\):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-93E96B51147AA583 / def test_create_basic\(self\): / IMPLICIT-93E96B51147AA583
-  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
-  - 依赖：—；被引用：—
-- [def test_create_duplicate\(self\):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B308FC766D67E270 / def test_create_duplicate\(self\): / IMPLICIT-B308FC766D67E270
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
-  - 依赖：—；被引用：—
-- [def test_create_read\(self\):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-C4C3831319E2B66C / def test_create_read\(self\): / IMPLICIT-C4C3831319E2B66C
-  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
   - 依赖：—；被引用：—

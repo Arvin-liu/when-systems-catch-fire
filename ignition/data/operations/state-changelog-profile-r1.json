@@ -1,8 +1,8 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 45,
-  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+  "entry_count": 46,
+  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46],
   "historical_entry_count": 26,
   "legacy_profile_count": 6,
   "profiles": {
@@ -67,6 +67,7 @@
     {"ordinal": 42, "date": "2026-08-27", "label": "IGNITION-20260827-143 — phase closure and publication production active", "profile": "current-r1", "section_sha256": "78a0870d45a7b3a907f127ad07c17bfa1285d90bcd5de6debd6f369a45a27de1"},
     {"ordinal": 43, "date": "2026-08-27", "label": "IGNITION-20260827-143 — terminal publication-production scope", "profile": "current-r1", "section_sha256": "2386d2343608d0313bd40a91f88c337a98a9d3822c5d7561c18b7046410ff944"},
     {"ordinal": 44, "date": "2026-08-28", "label": "IGNITION-20260828-144 — engineering closure and production handoff in progress", "profile": "current-r1", "section_sha256": "b582eb057f568852f6697a14ff119dafcf434e038674e153c962b3a49b1b6e95"},
-    {"ordinal": 45, "date": "2026-08-28", "label": "IGNITION-20260828-144 — engineering phase closed, production awaits Owner brief", "profile": "current-r1", "section_sha256": "1bcb13384bc7fd55e32cd19b51dc43ac608b1e053042fef3125b4256c28ed6cb"}
+    {"ordinal": 45, "date": "2026-08-28", "label": "IGNITION-20260828-144 — engineering phase closed, production awaits Owner brief", "profile": "current-r1", "section_sha256": "bc47dfda988c1c7a445ab709612309d676d0790b3667caf407a2261d3c0c194f"},
+    {"ordinal": 46, "date": "2026-08-28", "label": "IGNITION-20260828-144 — terminal engineering closure and formal release handoff", "profile": "current-r1", "section_sha256": "e9b5a16c59fd7dbf70fb357adfb2a07e28186cf2d172f766b81a14bf093ef7be"}
   ]
 }

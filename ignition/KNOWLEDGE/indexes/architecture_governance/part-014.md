@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [统一矩阵：\[12-meta-protocol-normative-review.md\]\(./12-meta-protocol-normative-review.md\)](../../../docs/governance/meta-protocol-reviews/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8c661cb492130d09 / 统一矩阵：\[12-meta-protocol-normative-review.md\]\(./12-meta-protocol-normative-review.md\)
+  - 来源：`docs/governance/meta-protocol-reviews/README.md`
+  - 依赖：—；被引用：—
+- [统一禁止表达](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-107f38f1cbf5d57e / 统一禁止表达
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
+- [统一表达；历史任务、requirements lineage、terminal status 和当前架构变更任务由 generated](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-da816cc6a5dd5120 / 统一表达；历史任务、requirements lineage、terminal status 和当前架构变更任务由 generated
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [统一资产卡；](../../../docs/governance/knowledge-experience-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c5efabe540b05d48 / 统一资产卡；
+  - 来源：`docs/governance/knowledge-experience-layer.md`
+  - 依赖：—；被引用：—
+- [维度-容斥稳定性、#297基本常数约束验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6afe0adaea53896e / 维度-容斥稳定性、#297基本常数约束验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [缓存倒U型验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-30913ab0394ba5a7 / 缓存倒U型验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [缓解：所有普遍判断 REVISE + pending。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bd737d61bee6b653 / 缓解：所有普遍判断 REVISE + pending。
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [编辑文章 stale/review 闭合**：若材料源变化，文章须离开 CURRENT 直至附审稿证据。](../../../ITERATION.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a6e52b9d77c31dc2 / 编辑文章 stale/review 闭合**：若材料源变化，文章须离开 CURRENT 直至附审稿证据。
+  - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
 - [缺乏反事实推断](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-db9335c05bc5ddea / 缺乏反事实推断

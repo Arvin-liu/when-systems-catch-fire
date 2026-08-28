@@ -1349,6 +1349,11 @@
   - 可搜索名称：NFC-d194a76887ef2e19 / authority_changes: Task142 adds three repository-local control-plane components and their typed registry/topology bindin
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: Task144 records repository-local terminality and Owner production-handoff boundaries only; it grants](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-80d8b4bb66d4d04e / authority_changes: Task144 records repository-local terminality and Owner production-handoff boundaries only; it grants
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: the bridge adds no Owner, provider, channel, browser, remote Git, configuration, billing, production,](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-303fc35b52688f52 / authority_changes: the bridge adds no Owner, provider, channel, browser, remote Git, configuration, billing, production,
@@ -1623,6 +1628,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-20ca671c13054c2b / cancel 与 reconciliation 保持 OPEN，fixture 未变更且没有 retry。OpenClaw 因
   - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [Candidate and fresh task-clone natural regression evidence remains 1278/0/0/0, with the earlier failed run and all three](../../../reports/operations/ignition-144-step19-terminality.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fca621ec94bd66ac / Candidate and fresh task-clone natural regression evidence remains 1278/0/0/0, with the earlier failed run and all three
+  - 来源：`reports/operations/ignition-144-step19-terminality.md`
   - 依赖：—；被引用：—
 - [Candidate functions and composed programs are artifacts, but durable identity, packaging, signing, and version semantics](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2199,6 +2209,11 @@
   - 可搜索名称：NFC-60deb9780a4e83e4 / claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic reg
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Task144 engineering closure, Owner production handoff and terminality evidence only; no](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-43f1c6ef54a37ba8 / claim_ceiling: repository-local Task144 engineering closure, Owner production handoff and terminality evidence only; no
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bb586cd973539003 / claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6ba9389b1efe3e6d / Crossref verification**: 11/13 DOIs verified successfully, confirming metadata accuracy for published works
   - 来源：`reports/external-research/120-source-quality-and-template-risk-audit.md`
-  - 依赖：—；被引用：—
-- [Crossref 成功只允许提升至 `METADATA_VERIFIED`**，绝不能直接提升至 `CLAIM_SUPPORT_CONFIRMED`。](../../../data/external-research/104-evidence-tier-schema.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-803b273b6186be75 / Crossref 成功只允许提升至 `METADATA_VERIFIED`**，绝不能直接提升至 `CLAIM_SUPPORT_CONFIRMED`。
-  - 来源：`data/external-research/104-evidence-tier-schema.md`
-  - 依赖：—；被引用：—
-- [Crossref 验证 **不** 确认：](../../../reports/external-research/104-source-quality-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ff35ea8c28a0543d / Crossref 验证 **不** 确认：
-  - 来源：`reports/external-research/104-source-quality-audit.md`
-  - 依赖：—；被引用：—
-- [Crossref 验证状态](../../../reports/external-research/104-source-quality-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3c4fdfbd5c62eb0a / Crossref 验证状态
-  - 来源：`reports/external-research/104-source-quality-audit.md`
   - 依赖：—；被引用：—

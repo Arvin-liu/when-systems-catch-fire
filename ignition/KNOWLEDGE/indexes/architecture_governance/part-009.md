@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [unverified = \[s\["source_id"\] for s in sources if not s.get\("crossref_verified"\)\]](../../../data/external-research/105-intervention-control/105-evidence-validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1c9156734a8a54d1 / unverified = \[s\["source_id"\] for s in sources if not s.get\("crossref_verified"\)\]
+  - 来源：`data/external-research/105-intervention-control/105-evidence-validator.py`
+  - 依赖：—；被引用：—
+- [Updated evidence cards with GLM-5.2 max review](../../../reports/external-research/121b-handoff-to-121c.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8b22712ceece3f14 / Updated evidence cards with GLM-5.2 max review
+  - 来源：`reports/external-research/121b-handoff-to-121c.md`
+  - 依赖：—；被引用：—
+- [Upgrade/downgrade adjudication based on fulltext evidence](../../../data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-aaf0e4f8efc9ae29 / Upgrade/downgrade adjudication based on fulltext evidence
+  - 来源：`data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md`
+  - 依赖：—；被引用：—
+- [upgrades and a recoverable-evidence gate that remains open.](../../../reports/operations/ignition-140-step05-reconciliation-state-model.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a81c3f2ecaa69389 / upgrades and a recoverable-evidence gate that remains open.
+  - 来源：`reports/operations/ignition-140-step05-reconciliation-state-model.md`
+  - 依赖：—；被引用：—
+- [Use `DIRECT_RESEARCH` when ordinary notes, a source ledger and a human review are sufficient.](../../../docs/architecture/reos-vnext-light.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cd4182f6404992b5 / Use `DIRECT_RESEARCH` when ordinary notes, a source ledger and a human review are sufficient.
+  - 来源：`docs/architecture/reos-vnext-light.md`
+  - 依赖：—；被引用：—
+- [Use environment variables names only; never store values.](../../../docs/external-research/legal-fulltext-resolution-protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-41df6816f02606da / Use environment variables names only; never store values.
+  - 来源：`docs/external-research/legal-fulltext-resolution-protocol.md`
+  - 依赖：—；被引用：—
+- [Use that page to describe what the repository has currently become, what it can currently do, what remains missing, and](../../../docs/project_positioning.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-194f78f006d399da / Use that page to describe what the repository has currently become, what it can currently do, what remains missing, and
+  - 来源：`docs/project_positioning.md`
+  - 依赖：—；被引用：—
+- [Use this form for real non-commercial use within the current license scope. Do not include private contact information,](../../../../.github/ISSUE_TEMPLATE/noncommercial-use-report.yml)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cb3d03a407bc07ea / Use this form for real non-commercial use within the current license scope. Do not include private contact information,
+  - 来源：`.github/ISSUE_TEMPLATE/noncommercial-use-report.yml`
+  - 依赖：—；被引用：—
 - [v0.2 P0 收口复核审计](../../ASSET-CARDS.md#asset-hr-996b1e97820089e9)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：v0.2 P0 收口复核审计 / v0.2-p0-closeout-audit-20260707
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-0ec740ef778dc1ba / \| GAP-017 \| No equivalence checker across different function representations \| UNRESOLVED_INSUFFICIENT_EVIDENCE \| LOW \|
   - 来源：`reports/external-research/121Q3-night-final-report.md`
-  - 依赖：—；被引用：—
-- [\| GAP-018 \(Effect Tracking\) \| EVIDENCE_ACCUMULATING \| 4 \| 4 \| Yes \|](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6f2f091519649f8d / \| GAP-018 \(Effect Tracking\) \| EVIDENCE_ACCUMULATING \| 4 \| 4 \| Yes \|
-  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
-  - 依赖：—；被引用：—
-- [\| GAP-019 \(Registry Semantics\) \| RESOLVED \| N9 fully implements versioned, append-only registry \|](../../../reports/external-research/121Q4-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f9c79990808d4a20 / \| GAP-019 \(Registry Semantics\) \| RESOLVED \| N9 fully implements versioned, append-only registry \|
-  - 来源：`reports/external-research/121Q4-final-report.md`
-  - 依赖：—；被引用：—
-- [\| GAP-019 \(Versioned Registry\) \| EVIDENCE_ACCUMULATING \| 6 \| 4 \| Yes \|](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a9b3ffd958d0e5df / \| GAP-019 \(Versioned Registry\) \| EVIDENCE_ACCUMULATING \| 6 \| 4 \| Yes \|
-  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
-  - 依赖：—；被引用：—
-- [\| GAP-019 \| No versioned function registry with provenance tracking \| RESOLVED_BY_EXISTING_EVIDENCE \| MEDIUM-HIGH \|](../../../reports/external-research/121Q3-night-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a424a2626237c73c / \| GAP-019 \| No versioned function registry with provenance tracking \| RESOLVED_BY_EXISTING_EVIDENCE \| MEDIUM-HIGH \|
-  - 来源：`reports/external-research/121Q3-night-final-report.md`
-  - 依赖：—；被引用：—
-- [\| GAP-020 \(Probabilistic Semantics\) \| INSUFFICIENT_EVIDENCE \| 2 \| 2 \| No \|](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-760ac7168e7aa124 / \| GAP-020 \(Probabilistic Semantics\) \| INSUFFICIENT_EVIDENCE \| 2 \| 2 \| No \|
-  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
-  - 依赖：—；被引用：—
-- [\| GAP-020 \| No probabilistic/stochastic function semantics framework \| PARTIALLY_RESOLVED \| MEDIUM-HIGH \|](../../../reports/external-research/121Q3-night-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-11de7f0a353734aa / \| GAP-020 \| No probabilistic/stochastic function semantics framework \| PARTIALLY_RESOLVED \| MEDIUM-HIGH \|
-  - 来源：`reports/external-research/121Q3-night-final-report.md`
-  - 依赖：—；被引用：—
-- [\| Gate \| Terminal evidence \|](../../../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-39e075c33c6be5a5 / \| Gate \| Terminal evidence \|
-  - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
-  - 依赖：—；被引用：—
-- [\| Historical interpretive essay \| `docs/publication/works/when-an-emperor-manufactures-heaven.md` \| recoverable source t](../../../docs/publication/method-sources/cognitive-migration-editorial-revision-source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-75debf3bc98b064c / \| Historical interpretive essay \| `docs/publication/works/when-an-emperor-manufactures-heaven.md` \| recoverable source t
-  - 来源：`docs/publication/method-sources/cognitive-migration-editorial-revision-source.md`
   - 依赖：—；被引用：—

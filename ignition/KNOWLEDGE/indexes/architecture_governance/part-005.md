@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def test_create_basic\(self\):](../../../function-os-candidate/v0.2/tests/test_n9_robust.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-93E96B51147AA583 / def test_create_basic\(self\): / IMPLICIT-93E96B51147AA583
+  - 来源：`function-os-candidate/v0.2/tests/test_n9_robust.py`
+  - 依赖：—；被引用：—
+- [def test_create_duplicate\(self\):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B308FC766D67E270 / def test_create_duplicate\(self\): / IMPLICIT-B308FC766D67E270
+  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
+  - 依赖：—；被引用：—
+- [def test_create_read\(self\):](../../../function-os-candidate/v0.2/tests/test_n5_through_n9.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-C4C3831319E2B66C / def test_create_read\(self\): / IMPLICIT-C4C3831319E2B66C
+  - 来源：`function-os-candidate/v0.2/tests/test_n5_through_n9.py`
+  - 依赖：—；被引用：—
 - [def test_cross_node_hash_chain_consistent\(self\):](../../../function-os-candidate/v0.2/tests/test_integration_full_chain.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-F4F11DC284A8999B / def test_cross_node_hash_chain_consistent\(self\): / IMPLICIT-F4F11DC284A8999B
@@ -1104,6 +1119,11 @@
   - 可搜索名称：NFC-f5897aff405c58c3 / delta: Step 12 closes the bounded adversarial suite, deterministic projection repair, foundation/nonfunction/path closur
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [delta: Steps 00–19 close the current repository-local engineering scope, seal the Owner production handoff, preserve Tas](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e7689d361da8b426 / delta: Steps 00–19 close the current repository-local engineering scope, seal the Owner production handoff, preserve Tas
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [delta: Task 122 adds the provider-neutral Ignition OS ↔ executor contract, strict approval intersection, capability/perm](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3efa7fd965d73b38 / delta: Task 122 adds the provider-neutral Ignition OS ↔ executor contract, strict approval intersection, capability/perm
@@ -1567,6 +1587,11 @@
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; terminality, admission](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-985a40d0a0224dd3 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; terminality, admission
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; terminality, smoke-out](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-603c6a074bc937e6 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; terminality, smoke-out
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [epistemic_state: EPISTEMICALLY_ACCEPTED=0; this transition records repository-local architecture and bounded live-attemp](../../../STATE-CHANGELOG.md)
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-90f698da80dc07d4 / For each of 9 nodes, map specific evidence to node capabilities
   - 来源：`data/external-research/121A-night-recovery/121A-resume-plan-121B-121C.md`
-  - 依赖：—；被引用：—
-- [For empirical claims, declare replication as `NO_REPLICATION_CLAIMED`, `INTERNAL_REPLAY_ONLY` or `EXTERNAL_REPLICATION_D](../../../docs/foundation/future-claim-admission-protocol.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7514859261fb3600 / For empirical claims, declare replication as `NO_REPLICATION_CLAIMED`, `INTERNAL_REPLAY_ONLY` or `EXTERNAL_REPLICATION_D
-  - 来源：`docs/foundation/future-claim-admission-protocol.md`
-  - 依赖：—；被引用：—
-- [for index, artifact in enumerate\(artifacts\):](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fbdce913ecd0b202 / for index, artifact in enumerate\(artifacts\):
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [for index, artifact in enumerate\(values\):](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-aa7d0349d089cf7d / for index, artifact in enumerate\(values\):
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [for name in \("depends_on", "inputs", "required_capabilities", "stop_fail_conditions", "output_artifact_refs"\):](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6402525c029e8301 / for name in \("depends_on", "inputs", "required_capabilities", "stop_fail_conditions", "output_artifact_refs"\):
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [for name in \("question", "desired_evidence_type", "source_family_requirement"\):](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d2f937b3fa8effab / for name in \("question", "desired_evidence_type", "source_family_requirement"\):
-  - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—

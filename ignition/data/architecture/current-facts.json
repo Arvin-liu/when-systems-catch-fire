@@ -66,14 +66,19 @@
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
       "current_task_id": "IGNITION-20260828-144",
-      "current_task_status": "IN_PROGRESS",
-      "current_task_terminal": false,
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "current_task_terminal": true,
       "open_obligation_ids": [
         "LIVE_EXTERNAL_INVOCATION"
       ],
-      "scope_complete": false,
+      "scope_complete": true,
       "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json",
       "terminal_task_history": [
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260828-144",
+          "terminal": true
+        },
         {
           "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
           "task_id": "IGNITION-20260827-143",
@@ -94,7 +99,7 @@
     "foundation": {
       "function_identity_cards": 6030,
       "function_quarantine_or_pending": 4878,
-      "nonfunction_claims": 17623,
+      "nonfunction_claims": 17631,
       "nonfunction_quarantine_or_pending": 4942
     },
     "human_surface": {
@@ -134,7 +139,7 @@
       "cards": 413,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 23985
+      "search_records": 23993
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -172,7 +177,7 @@
     },
     "task_lineage": {
       "current_task_id": "IGNITION-20260828-144",
-      "current_task_status": "IN_PROGRESS",
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -206,7 +211,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "025762231764eb324b9d0aa890084eddc5da98d956d65c7398b520e51f6ab0aa"
+      "sha256": "90dbac72aaa0b31c1dff3c2e8acb5c4689f963d6ca9402e012c475f5e87a649d"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -214,11 +219,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "54c3e9296858c269d8f0616a0f0faa45bbfb4248db9c2b46754d6624d0f74c0b"
+      "sha256": "37fd9869663ad406905d3a93d2ad98c3df6bed08bbab0af5c0771ee4c89193bb"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "96eaf964c08d02d53fd3a1a71186763d6fb972bccc091192182506c76eb01a08"
+      "sha256": "4e50f20305e8681dbf8f69b975d9bc590c612fc7e69bf20190016a3512ebb028"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -226,15 +231,15 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "00a37808b516ce09683fc1be61e3ff427337b218716c130aaf1b629b44693bcc"
+      "sha256": "ec202e9e876e1847d9af5521aa937048da82c2f9e0802d918db947c34a50aad1"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "b969b629a3904155c5cfb547b12211e38f3b80424b8d19b55b9f8b8d931b451c"
+      "sha256": "d84f265306e68de3874cd2e3e2dd5380ba6c9959004d66aeb5155c84515bc9b8"
     },
     {
       "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
-      "sha256": "4b2aef71aa957e479b55faf7db96f01b9fd40ddef634ef2811fdfb25a94b71fe"
+      "sha256": "63290ff22640105c00350b9ba9acc747c6706c7531aacaed28e40281d7e52840"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
@@ -278,7 +283,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "b0be0f5caf01990d8539f34f7da9cdb29b267b1ebc447d0942428214a6136cc9"
+      "sha256": "ca55d5a72cf02e8f5779a9463815d4ac0cabe5d77dedab8dfa5d3ca6399bd92f"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",
