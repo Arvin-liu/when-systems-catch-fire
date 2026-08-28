@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260828-147",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "0ff4bf2e3065a05c848a380aad55d0832de3727c",
+    "command_path": "agent-commands/IGNITION-20260828-147-readme-project-identity-architecture-navigation-r3.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "eda6e356419c41beecc8e45b2392ffa14e4794ee"
+  },
+  "identity_impact": "PRESENTATION_ONLY",
+  "expected_task_branch": "codex/ignition-147-readme-project-identity-architecture-navigation-r3-20260828",
+  "expected_receipt_branch": "relay/receipts/ignition-147-readme-project-identity-architecture-navigation-r3-20260828",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260828-147",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "previous_canonical_current_task": "IGNITION-20260828-146",
+    "previous_formal_task": "IGNITION-20260828-146",
+    "release_candidate_task": "IGNITION-20260828-147",
+    "publication_witness_task": "IGNITION-20260828-147"
+  },
+  "claim_ceiling": "Task147 repository-local project identity wording, human architecture navigation, validator and deterministic regression evidence only; architecture semantics and geometry remain frozen, Owner authority remains required for production, production awaits the Owner brief, and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

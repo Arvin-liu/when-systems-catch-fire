@@ -1,0 +1,50 @@
+{
+  "schema_version": "ignition-147-step00-baseline-audit-r1",
+  "task_id": "IGNITION-20260828-147",
+  "step": "00",
+  "status": "PASS",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "refs/heads/relay/current",
+    "observed_sha": "0ff4bf2e3065a05c848a380aad55d0832de3727c",
+    "command_path": "agent-commands/IGNITION-20260828-147-readme-project-identity-architecture-navigation-r3.md"
+  },
+  "task146_independent_witness": {
+    "repository": "Arvin-liu/1111",
+    "path": "agent-results/IGNITION-20260828-146-publication-witness.json",
+    "receipt_branch": "refs/heads/relay/receipts/ignition-146-readme-human-front-door-simplification-r2-20260828",
+    "formal_main_sha": "eda6e356419c41beecc8e45b2392ffa14e4794ee",
+    "candidate_equals_remote": true,
+    "remote_equals_fresh_clone": true,
+    "related_current_gates": "PASS"
+  },
+  "formal_remote_observation": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "observed_sha": "eda6e356419c41beecc8e45b2392ffa14e4794ee",
+    "matches_task146_witness": true,
+    "fetch_command": "git fetch --prune origin",
+    "remote_ref_command": "git ls-remote origin refs/heads/main"
+  },
+  "working_tree": {
+    "candidate_base": "eda6e356419c41beecc8e45b2392ffa14e4794ee",
+    "clean_before_task_changes": true,
+    "candidate_is_fresh_remote_main_worktree": true
+  },
+  "owner_delta_observations": [
+    "README 的项目现状仍把工程收口、Owner production brief 与 external-Agent 工作状态当作点火的身份描述。",
+    "架构图下仍有透明完整总架构图 SVG 二级入口，并保留 href、link metadata、interactive hotspot 与 registry/topology/layout 的机器解释。",
+    "README 尚未提供默认折叠、按人类概念分组且逐一链接到 canonical 文档的组件导航。",
+    "Human Front Door validator 仍验证旧的工作状态正文和无 details，而不是 Owner 给定的固定项目身份与组件导航意图。"
+  ],
+  "scope_decision": {
+    "identity_impact": "PRESENTATION_ONLY",
+    "engineering_phase": "CLOSED_CURRENT_SCOPE",
+    "architecture_change": false,
+    "map_redraw": false,
+    "external_live_process": false,
+    "task143_body_change": false,
+    "automatic_task148": false
+  },
+  "claim_ceiling": "Repository-local Task146 witness, formal-main baseline and Owner-delta evidence only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}
