@@ -256,7 +256,46 @@ handoff 不能把未完成、deferred、reference、historical、unsupported 或
 
 决定性 lifecycle planner 位于 [plan_ignition_operation_run.py](tools/operations/plan_ignition_operation_run.py)，其 fixture 只证明机器路由和 fail-closed 边界，不替代本文 authority。
 
-## 9. 本文状态与 claim ceiling
+## 9. Current-first canonical resolution 与 Legacy Leakage Guard
+
+凡任务涉及函数、断言、模型、案例、机制、规律、公式、定理、跨域映射、旧案例编号或声称“点火已有某资产”，在执行、碰撞或输出前都必须先过 identity gate：
+
+`CURRENT_CANONICAL_REGISTRY_FIRST`
+
+先查 Current canonical identity authority；只有直接命中 Current canonical ID、唯一 canonical title，或经现行 migration / evolution / alias / identity mapping 明确导向 Current identity，才算完成解析。Historical 文件、旧案例正文、搜索结果和模型记忆都不能单独完成这一步。
+
+硬不变量是：
+
+`LEGACY_REFERENCE_MUST_RESOLVE_CURRENT_CANONICAL_IDENTITY`
+
+D1、D2、D5、T7、A5 等旧编号或 label 在作为“点火当前已有资产”展示前，必须返回 Current canonical ID、title、identity authority、final disposition、claim ceiling 和 identity-card hash。解析到 canonical identity 不等于资产已经验证、解除隔离或成为外部真值；`QUARANTINE_UNTIL_DEFINED`、supersession、withdrawal、downgrade 和其它 disposition 必须原样保留。
+
+解析顺序与边界：
+
+1. 精确 Current canonical ID；
+2. 经 corrections 交叉验证的 `IDENTITY_CORRECTED` alias；
+3. 指向现行 canonical ID 的 `CURRENT_SEARCH_ALIAS`；
+4. 唯一精确 canonical title；
+5. 同时有 Current identity card 与兼容 migration mapping 的 historical ID；
+6. 其余一律 fail closed，不做模糊匹配、语义猜测或记忆补全。
+
+无法唯一解析时输出：
+
+`UNRESOLVED_LEGACY_REFERENCE`
+
+若 Current authority 明确给出多个候选，则输出 `AMBIGUOUS_CANONICAL_REFERENCE` 和候选 ID，不能任选一个。两种结果都必须停在 identity gate；可以报告需要补齐的 mapping/correction authority，但不得继续以旧 ID 生成“现有资产”结论。
+
+`HISTORICAL_FILE_IS_NOT_CANONICAL_IDENTITY`
+
+历史案例文件和旧路径只能作为 provenance/source evidence；文件名里含有编号或旧名称，也不得把文件本身当 canonical identity。不得从旧文件标题反向覆盖 Current card。
+
+`LEGACY_RENAME_CANNOT_BYPASS_DISPOSITION`
+
+旧名字“改名复活”不得绕过 supersession、quarantine、withdrawal、correction 或 claim ceiling。特别是裸 `D127` 当前解析为“认知路径积分函数”的 structural metaphor；只有 Current alias/correction authority 明确登记的错误组合标签 `D127 乘法归零律` 才纠正到 `T2`。模型记得旧函数名不构成任何映射。
+
+决定性离线解析器是 [resolve_current_canonical_asset.py](tools/foundation/resolve_current_canonical_asset.py)，fixture 是 [canonical-resolution-r1.json](tests/fixtures/ignition-operating-method/canonical-resolution-r1.json)。解析器只报告 Current identity 与原有 disposition/claim ceiling；它不修改 registry、不复活历史资产，也不证明数学、经验或外部世界中的真值。
+
+## 10. 本文状态与 claim ceiling
 
 本文件当前随 `IGNITION-20260829-148` 处于任务分支候选状态；它尚未进入正式 `main`，不得声称主分支已经拥有本操作法。其版本、Current identity、入口同步、完整模式、生命周期、operation playbook、碰撞协议和输出合同由本任务后续原子步骤补齐，并继续受同一 Draft-only 生命周期约束。
 

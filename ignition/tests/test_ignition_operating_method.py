@@ -39,6 +39,22 @@ class IgnitionOperatingMethodFoundationTests(unittest.TestCase):
         candidate = self.source.replace("尚未进入正式 `main`".replace("`", chr(96)), "已经进入正式 main", 1)
         self.assertTrue(any("尚未进入正式 main" in error for error in validator.validate(candidate)))
 
+    def test_legacy_reference_must_resolve_current_identity(self) -> None:
+        candidate = self.source.replace(
+            "LEGACY_REFERENCE_MUST_RESOLVE_CURRENT_CANONICAL_IDENTITY",
+            "LEGACY_REFERENCE_MAY_USE_MEMORY",
+            1,
+        )
+        self.assertTrue(any("LEGACY_REFERENCE_MUST_RESOLVE" in error for error in validator.validate(candidate)))
+
+    def test_historical_file_cannot_become_identity_authority(self) -> None:
+        candidate = self.source.replace(
+            "HISTORICAL_FILE_IS_NOT_CANONICAL_IDENTITY",
+            "HISTORICAL_FILE_MAY_DEFINE_IDENTITY",
+            1,
+        )
+        self.assertTrue(any("HISTORICAL_FILE_IS_NOT_CANONICAL_IDENTITY" in error for error in validator.validate(candidate)))
+
 
 if __name__ == "__main__":
     unittest.main()

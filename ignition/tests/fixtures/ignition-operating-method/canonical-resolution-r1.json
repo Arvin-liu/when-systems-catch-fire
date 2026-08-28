@@ -1,0 +1,132 @@
+{
+  "schema_version": "ignition-current-canonical-resolution-fixtures-r1",
+  "authority": "TEST_FIXTURES_NOT_IDENTITY_AUTHORITY",
+  "cases": [
+    {
+      "case_id": "legacy_label_d1_resolves_current_but_stays_quarantined",
+      "reference": "D1",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "D1",
+        "canonical_title": "锁定强度函数",
+        "match_kind": "CANONICAL_ID",
+        "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+        "record_sha256": "b1a8702f0f6385d4ab023942798f1440eb49dd5291ba0f25d62dc899f49f9dce"
+      }
+    },
+    {
+      "case_id": "legacy_label_d2_resolves_current_but_stays_quarantined",
+      "reference": "D2",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "D2",
+        "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+        "record_sha256": "afc9203bc7f25ac0cb21db7068f1b0d3a6e79532ee24723c439dda67cdcff85c"
+      }
+    },
+    {
+      "case_id": "legacy_label_d5_resolves_current_but_stays_quarantined",
+      "reference": "D5",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "D5",
+        "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+        "record_sha256": "0164065d350e5c2df5fa66906f84a772ad1a2a5da080866289847d59581ef650"
+      }
+    },
+    {
+      "case_id": "legacy_label_t7_resolves_current_but_stays_quarantined",
+      "reference": "T7",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "T7",
+        "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+        "record_sha256": "47b0e25353385969f4c060bd44304155ca1754bc1edb37dd3b7f60a90ba5466e"
+      }
+    },
+    {
+      "case_id": "legacy_label_a5_resolves_current_but_stays_quarantined",
+      "reference": "A5",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "A5",
+        "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+        "record_sha256": "c57206c29b08bf0efd001233b4c66b73c79f5da402bb14c0682058fd1b3b2b8d"
+      }
+    },
+    {
+      "case_id": "bare_d127_keeps_current_d127_identity",
+      "reference": "D127",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "D127",
+        "canonical_title": "认知路径积分函数",
+        "primary_identity": "STRUCTURAL_METAPHOR",
+        "final_disposition": "KEEP_AS_STRUCTURAL_METAPHOR",
+        "record_sha256": "f89854c6f87b24b156c10113f66e0aeb8c5a1d71d56666c78bcaa78a8cb722d6"
+      }
+    },
+    {
+      "case_id": "wrong_d127_zero_law_label_is_corrected_to_t2",
+      "reference": "D127 乘法归零律",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "T2",
+        "canonical_title": "乘法归零律",
+        "match_kind": "IDENTITY_CORRECTED_ALIAS",
+        "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+        "record_sha256": "d191cec113ac32bd44c05b9c415a6a7fa6d76d0a7d3dcb98735b801433832abe"
+      }
+    },
+    {
+      "case_id": "current_zero_law_title_resolves_t2",
+      "reference": "乘法归零律",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "T2",
+        "match_kind": "CURRENT_SEARCH_ALIAS",
+        "final_disposition": "KEEP_AS_ESTABLISHED_MATH"
+      }
+    },
+    {
+      "case_id": "wrong_d260_grand_unification_label_keeps_corrected_d260",
+      "reference": "D260 大一统不可能命题",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "D260",
+        "canonical_title": "偏差敏感度阈值函数",
+        "match_kind": "IDENTITY_CORRECTED_ALIAS",
+        "final_disposition": "KEEP_AS_TESTED_INDEX_OR_CLASSIFIER",
+        "record_sha256": "6e2aa71d97baf2f9c9a48890b1961ed835667d2ac2f7a9ca4527bc8b02e13e34"
+      }
+    },
+    {
+      "case_id": "invented_remembered_id_fails_closed",
+      "reference": "D999999-remembered-function",
+      "expected": {
+        "resolution_status": "UNRESOLVED_LEGACY_REFERENCE",
+        "failure_reason": "NO_EXACT_CURRENT_CANONICAL_MAPPING",
+        "canonical_id": null
+      }
+    },
+    {
+      "case_id": "near_match_does_not_use_fuzzy_memory",
+      "reference": "D127 乘法清零律",
+      "expected": {
+        "resolution_status": "UNRESOLVED_LEGACY_REFERENCE",
+        "failure_reason": "NO_EXACT_CURRENT_CANONICAL_MAPPING",
+        "canonical_id": null
+      }
+    },
+    {
+      "case_id": "historical_file_path_is_not_identity",
+      "reference": "统一函数总表/0012-T2-乘法归零律.md",
+      "expected": {
+        "resolution_status": "UNRESOLVED_LEGACY_REFERENCE",
+        "failure_reason": "NO_EXACT_CURRENT_CANONICAL_MAPPING",
+        "canonical_id": null,
+        "historical_file_used_as_identity": false
+      }
+    }
+  ]
+}

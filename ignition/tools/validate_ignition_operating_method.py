@@ -27,6 +27,12 @@ BOUNDARY_TOKENS = (
     "MINIMAL_CURRENT_READS_NOT_FULL_REPOSITORY",
     "UNSUPPORTED_OPERATION",
     "CAPABILITY_NOT_CURRENT",
+    "CURRENT_CANONICAL_REGISTRY_FIRST",
+    "LEGACY_REFERENCE_MUST_RESOLVE_CURRENT_CANONICAL_IDENTITY",
+    "UNRESOLVED_LEGACY_REFERENCE",
+    "AMBIGUOUS_CANONICAL_REFERENCE",
+    "HISTORICAL_FILE_IS_NOT_CANONICAL_IDENTITY",
+    "LEGACY_RENAME_CANNOT_BYPASS_DISPOSITION",
 )
 PRIORITY_TOKENS = (
     "CURRENT_USER_OR_OWNER_EXPLICIT_REQUEST",
@@ -105,6 +111,11 @@ def validate(text: str | None = None) -> list[str]:
         "CAPABILITY_OWNER_DEFERRED",
         "CAPABILITY_REFERENCE_ONLY",
         "OPERATION_MODE_MISMATCH",
+        "D1、D2、D5、T7、A5",
+        "不做模糊匹配、语义猜测或记忆补全",
+        "历史案例文件和旧路径只能作为 provenance/source evidence",
+        "裸 D127 当前解析为“认知路径积分函数”的 structural metaphor",
+        "解析器只报告 Current identity 与原有 disposition/claim ceiling",
     )
     for phrase in required_phrases:
         if phrase not in normalized:
