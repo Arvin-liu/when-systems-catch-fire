@@ -1,0 +1,790 @@
+{
+  "schema_version": "ignition-operation-capability-registry-r1",
+  "registry_id": "IGNITION_OPERATION_CAPABILITY_REGISTRY_R1",
+  "title": "Ignition Operation Capability Registry R1",
+  "authority": "CANONICAL_AI_FACING_OPERATION_CAPABILITY_REGISTRY",
+  "canonical_source_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+  "registry_lifecycle": {
+    "task_id": "IGNITION-20260829-148",
+    "status": "TASK148_CANDIDATE_BRANCH",
+    "baseline_ref": "refs/heads/main",
+    "baseline_sha": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
+    "merged_to_main": false,
+    "current_on_main": false,
+    "requires_acceptance_merge_and_sync_for_current": true
+  },
+  "status_vocabulary": [
+    "CURRENT",
+    "CURRENT_BOUNDED",
+    "OWNER_DEFERRED",
+    "REFERENCE_ONLY",
+    "HISTORICAL",
+    "UNSUPPORTED"
+  ],
+  "execution_mode_vocabulary": [
+    "READ_ONLY_RUN",
+    "REPOSITORY_CHANGE_RUN",
+    "EXTERNAL_ACTION_RUN"
+  ],
+  "coverage": {
+    "formal_main_baseline": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
+    "pack_manifest_paths": [
+      "ignition/packs/knowledge/manifest.json",
+      "ignition/packs/maintenance/manifest.json",
+      "ignition/packs/research/manifest.json",
+      "ignition/packs/writing/manifest.json"
+    ],
+    "pack_capability_count": 10,
+    "represented_pack_capability_count": 10,
+    "non_pack_operation_count": 8,
+    "operation_count": 18,
+    "census_rule": "Every capability declared by the four Current Pack manifests is represented exactly once; non-Pack entries require a Current, bounded, deferred, reference, historical or unsupported authority outside task-local history.",
+    "non_inference_rule": "Implementation presence, a past test, a historical case, a Reference Executor feature or a Pack hook does not by itself establish a Current public operation or grant execution authority."
+  },
+  "operations": [
+    {
+      "operation_id": "executor.reference_conformance",
+      "public_name": {"zh": "Reference Executor 一致性边界", "en": "Reference Executor conformance boundary"},
+      "description": "Expose the frozen local executor only as a reference, conformance and minimal fallback boundary.",
+      "operation_class": "EXECUTOR_ORCHESTRATION",
+      "ai_callability": "STATUS_ONLY",
+      "authoritative_sources": [
+        {"path": "ignition/data/architecture/current-system-identity.json", "role": "BOUNDARY_AUTHORITY", "json_pointer": "/current_architecture_identity/reference_executor_role"},
+        {"path": "ignition/data/agent-federation/os-executor-ownership-r1.json", "role": "BOUNDARY_AUTHORITY", "json_pointer": "/reference_executor"}
+      ],
+      "owning_component": "Agent Federation / Reference Executor Freeze",
+      "pack_binding": null,
+      "accepted_input_types": ["executor compatibility status query"],
+      "output_types": ["reference/conformance boundary report"],
+      "current_status": "REFERENCE_ONLY",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/data/architecture/current-system-identity.json",
+        "ignition/data/agent-federation/os-executor-ownership-r1.json"
+      ],
+      "applicable_governance": [
+        "ignition/docs/architecture/external-agent-federation-r1.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_federation_ownership.py"}
+      ],
+      "known_limits": [
+        "Not a default or production executor.",
+        "Cannot grant Owner, truth, permission, network, channel, billing or epistemic authority."
+      ],
+      "historical_relations": [
+        {"relation": "REFERENCE_FREEZE", "target_operation_id": null, "source": "ignition/data/agent-federation/os-executor-ownership-r1.json"}
+      ],
+      "claim_ceiling": "Reference and conformance compatibility only; no live execution, production safety, external completion or authority upgrade."
+    },
+    {
+      "operation_id": "external.live_invocation",
+      "public_name": {"zh": "外部 Agent 实时调用", "en": "Live external Agent invocation"},
+      "description": "Represent the live external execution obligation and its current admission boundary without starting a process.",
+      "operation_class": "EXECUTOR_ORCHESTRATION",
+      "ai_callability": "STATUS_ONLY",
+      "authoritative_sources": [
+        {"path": "ignition/data/operations/open-obligation-registry-r1.json", "role": "CURRENT_STATUS_AUTHORITY", "json_pointer": "/obligations/0"},
+        {"path": "ignition/data/architecture/current-facts.json", "role": "CURRENT_STATUS_AUTHORITY", "json_pointer": "/facts/federation/live_attempt_projection"}
+      ],
+      "owning_component": "Open Obligation Registry / Live External Executor Bridge",
+      "pack_binding": null,
+      "accepted_input_types": ["explicit Owner external-action request", "executor admission evidence"],
+      "output_types": ["deferred status", "admission decision", "bounded execution receipt if separately authorized and validated"],
+      "current_status": "OWNER_DEFERRED",
+      "default_execution_mode": "EXTERNAL_ACTION_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "EXPLICIT_OWNER_AUTHORIZATION_AND_CURRENT_ADMISSION",
+      "explicit_owner_authorization_required": true,
+      "required_current_reads": [
+        "ignition/data/operations/open-obligation-registry-r1.json",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/agent-federation/executor-inventory-r1.json"
+      ],
+      "applicable_governance": [
+        "ignition/docs/architecture/external-agent-federation-r1.md",
+        "ignition/docs/architecture/os-control-plane-r2.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_open_obligation_registry.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_federation_ownership.py"}
+      ],
+      "known_limits": [
+        "OPEN and OWNER_DEFERRED with zero validated completions.",
+        "No automatic resume; explicit Owner reopening and a prepared, installed and attested local environment are prerequisites.",
+        "Dispatch, process observation, inference observation, result return and validated completion remain separate facts."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Deferred capability status and admission boundary only; no live process, validated completion, external truth or production readiness."
+    },
+    {
+      "operation_id": "foundation.resolve_current_asset",
+      "public_name": {"zh": "解析 Current canonical 资产", "en": "Resolve a Current canonical asset"},
+      "description": "Resolve function, claim and legacy references through Current identity, migration, evolution and alias authorities.",
+      "operation_class": "KNOWLEDGE",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/data/foundation/function-assets/identity-cards.jsonl", "role": "CAPABILITY_DECLARATION"},
+        {"path": "ignition/docs/foundation/migration.md", "role": "BOUNDARY_AUTHORITY"},
+        {"path": "ignition/KNOWLEDGE/EVOLUTION.md", "role": "BOUNDARY_AUTHORITY"},
+        {"path": "ignition/data/governance/knowledge-experience/manifest.json", "role": "CURRENT_STATUS_AUTHORITY"}
+      ],
+      "owning_component": "Foundation / Knowledge Experience",
+      "pack_binding": null,
+      "accepted_input_types": ["canonical id", "legacy id", "alias", "natural-language asset query"],
+      "output_types": ["canonical identity match", "migration relation", "unresolved reference status"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/data/foundation/function-assets/closure-summary.json",
+        "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/governance/knowledge-experience/manifest.json",
+        "ignition/docs/foundation/migration.md"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/foundation/validate_function_asset_closure.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/governance/validate_knowledge_experience.py"}
+      ],
+      "known_limits": [
+        "Aliases and search hits are navigation aids, not canonical identity by themselves.",
+        "Unresolved legacy references must fail closed rather than be reconstructed from model memory.",
+        "Canonical registration does not prove truth or external validity."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Repository-local identity and migration resolution only; no proof, evidence upgrade or external truth."
+    },
+    {
+      "operation_id": "ignition.recover_current_state",
+      "public_name": {"zh": "恢复点火 Current 状态", "en": "Recover Ignition Current state"},
+      "description": "Recover repository identity, formal task, lifecycle, open obligations, current method, current map and minimum read order before interpreting a user task.",
+      "operation_class": "CURRENT_RECOVERY",
+      "ai_callability": "PUBLIC",
+      "authoritative_sources": [
+        {"path": "ignition/AI-START-HERE.md", "role": "METHOD_AUTHORITY"},
+        {"path": "ignition/data/architecture/current-facts.json", "role": "CURRENT_STATUS_AUTHORITY"},
+        {"path": "ignition/data/operations/current-snapshot-r1.json", "role": "CURRENT_STATUS_AUTHORITY"}
+      ],
+      "owning_component": "AI Cold Start / Current State Sync",
+      "pack_binding": null,
+      "accepted_input_types": ["Ignition repository URL", "repository checkout", "Current state query"],
+      "output_types": ["Current identity snapshot", "minimum authority read plan", "open-obligation boundary"],
+      "current_status": "CURRENT",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/AI-START-HERE.md",
+        "ignition/data/architecture/current-facts.json",
+        "ignition/data/operations/current-snapshot-r1.json",
+        "ignition/data/operations/open-obligation-registry-r1.json"
+      ],
+      "applicable_governance": [
+        "ignition/docs/project-current-state.md",
+        "ignition/STATE-CHANGELOG.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_current_state_sync.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_state_changelog.py"}
+      ],
+      "known_limits": [
+        "Recovers what is Current and where authority lives; it does not itself choose or execute a user-facing domain operation.",
+        "Repository Current evidence is not external truth, production readiness or Owner acceptance."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Deterministic repository-local Current recovery only; no external truth, permission or epistemic upgrade."
+    },
+    {
+      "operation_id": "knowledge.project_results",
+      "public_name": {"zh": "投影受约束知识结果", "en": "Project bounded knowledge results"},
+      "description": "Route a declared result record into bounded Knowledge result projections without upgrading its epistemic state.",
+      "operation_class": "KNOWLEDGE",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/packs/knowledge/manifest.json", "role": "CAPABILITY_DECLARATION", "json_pointer": "/capabilities_provided/3"},
+        {"path": "ignition/data/architecture/current-facts.json", "role": "CURRENT_STATUS_AUTHORITY", "json_pointer": "/facts/packs"}
+      ],
+      "owning_component": "Knowledge Domain Pack R0",
+      "pack_binding": {
+        "pack_id": "knowledge.r0",
+        "manifest_path": "ignition/packs/knowledge/manifest.json",
+        "manifest_capability_id": "knowledge.project_results"
+      },
+      "accepted_input_types": ["result_record", "epistemic_correction"],
+      "output_types": ["bounded result projection", "projection validation report"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/data/governance/knowledge-experience/manifest.json"
+      ],
+      "applicable_governance": [
+        "ignition/docs/governance/knowledge-experience-layer.md",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_pack_registry.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/governance/validate_knowledge_experience.py"}
+      ],
+      "known_limits": [
+        "The Pack Bus routes a proposal and does not execute hooks.",
+        "Projection cannot increase claim, evidence, proof or acceptance status."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Bounded repository result projection only; no truth, evidence or epistemic upgrade."
+    },
+    {
+      "operation_id": "knowledge.read_foundation",
+      "public_name": {"zh": "读取 Foundation", "en": "Read Foundation"},
+      "description": "Read declared Foundation objects and Current knowledge entrances under Pack and claim-governance boundaries.",
+      "operation_class": "KNOWLEDGE",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/packs/knowledge/manifest.json", "role": "CAPABILITY_DECLARATION", "json_pointer": "/capabilities_provided/0"},
+        {"path": "ignition/data/architecture/current-facts.json", "role": "CURRENT_STATUS_AUTHORITY", "json_pointer": "/facts/packs"}
+      ],
+      "owning_component": "Knowledge Domain Pack R0",
+      "pack_binding": {
+        "pack_id": "knowledge.r0",
+        "manifest_path": "ignition/packs/knowledge/manifest.json",
+        "manifest_capability_id": "knowledge.read_foundation"
+      },
+      "accepted_input_types": ["foundation_object", "function_asset", "nonfunction_assertion", "natural-language knowledge query"],
+      "output_types": ["source-bounded knowledge summary", "canonical source references"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/FOUNDATION.md",
+        "ignition/KNOWLEDGE/README.md",
+        "ignition/packs/knowledge/manifest.json"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_pack_registry.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/foundation/validate_foundation.py"}
+      ],
+      "known_limits": [
+        "Navigation, registry closure and summaries do not prove substantive claims.",
+        "The Pack Bus is declarative and performs no hook execution."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Repository-local Foundation reading only; no independent truth, proof or evidence upgrade."
+    },
+    {
+      "operation_id": "knowledge.validate_claim",
+      "public_name": {"zh": "校验断言边界", "en": "Validate claim boundaries"},
+      "description": "Apply declared function and non-function claim governance checks without inferring human-review passes.",
+      "operation_class": "VALIDATION_AUDIT",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/packs/knowledge/manifest.json", "role": "CAPABILITY_DECLARATION", "json_pointer": "/capabilities_provided/1"},
+        {"path": "ignition/docs/foundation/claim-governance-and-function-identity.md", "role": "METHOD_AUTHORITY"}
+      ],
+      "owning_component": "Knowledge Domain Pack R0 / Foundation Claim Governance",
+      "pack_binding": {
+        "pack_id": "knowledge.r0",
+        "manifest_path": "ignition/packs/knowledge/manifest.json",
+        "manifest_capability_id": "knowledge.validate_claim"
+      },
+      "accepted_input_types": ["claim", "function_asset", "nonfunction_assertion", "proof_obligation"],
+      "output_types": ["claim-governance findings", "required human review", "bounded adjudication status"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md",
+        "ignition/packs/knowledge/manifest.json"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/foundation/validate_claim_governance.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/foundation/validate_nonfunction_claim_closure.py"}
+      ],
+      "known_limits": [
+        "Formal maturity and external evidence remain independent.",
+        "Unautomatable gates return human review rather than inferred PASS.",
+        "Quarantine or closure does not establish truth."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Repository-local governance validation only; no truth, proof, evidence, causal or Owner-status upgrade."
+    },
+    {
+      "operation_id": "knowledge.validate_evidence_link",
+      "public_name": {"zh": "校验证据链接", "en": "Validate an evidence link"},
+      "description": "Check declared evidence-link structure, provenance and source relationship without treating a link as substantive confirmation.",
+      "operation_class": "VALIDATION_AUDIT",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/packs/knowledge/manifest.json", "role": "CAPABILITY_DECLARATION", "json_pointer": "/capabilities_provided/2"},
+        {"path": "ignition/docs/foundation/claim-governance-and-function-identity.md", "role": "BOUNDARY_AUTHORITY"}
+      ],
+      "owning_component": "Knowledge Domain Pack R0 / Evidence Governance",
+      "pack_binding": {
+        "pack_id": "knowledge.r0",
+        "manifest_path": "ignition/packs/knowledge/manifest.json",
+        "manifest_capability_id": "knowledge.validate_evidence_link"
+      },
+      "accepted_input_types": ["evidence_link", "source record", "claim-to-source relation"],
+      "output_types": ["provenance validation report", "missing-evidence finding", "scope mismatch"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_pack_registry.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_epistemic_governance_relationships.py"}
+      ],
+      "known_limits": [
+        "A valid link establishes traceability, not truth or replication.",
+        "Source presence cannot substitute for claim-specific support."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Evidence-link structure and provenance validation only; no substantive confirmation or epistemic acceptance."
+    },
+    {
+      "operation_id": "language_thought.project_bounded_meaning",
+      "public_name": {"zh": "语言—思维受约束投影", "en": "Bounded Language-Thought projection"},
+      "description": "Normalize and project meaning across source and target language profiles while preserving framing delta and unmapped residue.",
+      "operation_class": "LANGUAGE_THOUGHT",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/docs/architecture/language-thought-logic-plane.md", "role": "CURRENT_STATUS_AUTHORITY"},
+        {"path": "ignition/data/language-thought/manifest.json", "role": "CAPABILITY_DECLARATION"}
+      ],
+      "owning_component": "Language-Thought Logic Plane",
+      "pack_binding": null,
+      "accepted_input_types": ["source text", "proposition", "translation request", "target-language publication material"],
+      "output_types": ["normalized meaning candidate", "target form candidate", "framing delta", "unmapped residue"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/docs/architecture/language-thought-logic-plane.md",
+        "ignition/data/language-thought/manifest.json",
+        "ignition/docs/language-thought/README.md"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/publication/zhiyuan-writing-method.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/language_thought/validate_language_thought.py"},
+        {"kind": "UNIT_TEST", "path": "ignition/tests/test_language_thought_plane.py"}
+      ],
+      "known_limits": [
+        "Meaning candidates are not language-independent truth.",
+        "Human review remains required for naturalness, literary quality and context-sensitive loss.",
+        "Language profiles do not establish strong linguistic determinism or different truth logics."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Bounded cross-language representation and audit only; no universal meaning, literary-quality or truth guarantee."
+    },
+    {
+      "operation_id": "maintenance.inspect_repository",
+      "public_name": {"zh": "检查仓库", "en": "Inspect a repository"},
+      "description": "Perform declared offline, read-only repository inspection through the Repository Maintenance Pack boundary.",
+      "operation_class": "REPOSITORY_MAINTENANCE",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/packs/maintenance/manifest.json", "role": "CAPABILITY_DECLARATION", "json_pointer": "/capabilities_provided/0"},
+        {"path": "ignition/agent_runtime/README.md", "role": "BOUNDARY_AUTHORITY"}
+      ],
+      "owning_component": "Repository Maintenance Pack",
+      "pack_binding": {
+        "pack_id": "maintenance.repository",
+        "manifest_path": "ignition/packs/maintenance/manifest.json",
+        "manifest_capability_id": "maintenance.inspect_repository"
+      },
+      "accepted_input_types": ["repository_snapshot", "declared repository path", "offline maintenance query"],
+      "output_types": ["read-only inspection report", "offline maintenance proposal"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/packs/maintenance/manifest.json",
+        "ignition/agent_runtime/README.md"
+      ],
+      "applicable_governance": [
+        "ignition/ITERATION.md",
+        "ignition/docs/architecture/os-control-plane-r2.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_r2_offline_repository_maintenance.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_agent_runtime_boundary.py"}
+      ],
+      "known_limits": [
+        "Network and remote Git mutation are prohibited.",
+        "Pack Bus routing produces a proposal and does not execute hooks.",
+        "Inspection does not authorize repository change."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Offline read-only repository inspection only; no mutation, remote publication or production claim."
+    },
+    {
+      "operation_id": "maintenance.validate_checkpoint",
+      "public_name": {"zh": "校验仓库 checkpoint", "en": "Validate a repository checkpoint"},
+      "description": "Validate bounded repository checkpoint and runtime-boundary evidence without publishing or mutating remote state.",
+      "operation_class": "VALIDATION_AUDIT",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/packs/maintenance/manifest.json", "role": "CAPABILITY_DECLARATION", "json_pointer": "/capabilities_provided/1"},
+        {"path": "ignition/agent_runtime/README.md", "role": "BOUNDARY_AUTHORITY"}
+      ],
+      "owning_component": "Repository Maintenance Pack",
+      "pack_binding": {
+        "pack_id": "maintenance.repository",
+        "manifest_path": "ignition/packs/maintenance/manifest.json",
+        "manifest_capability_id": "maintenance.validate_checkpoint"
+      },
+      "accepted_input_types": ["checkpoint_receipt", "repository_snapshot", "offline validation request"],
+      "output_types": ["checkpoint validation report", "bounded failure finding"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/packs/maintenance/manifest.json",
+        "ignition/agent_runtime/README.md"
+      ],
+      "applicable_governance": [
+        "ignition/ITERATION.md",
+        "ignition/docs/architecture/os-control-plane-r2.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_agent_runtime_boundary.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_state_changelog.py"}
+      ],
+      "known_limits": [
+        "A passing checkpoint does not imply accepted, merged, Current, deployed or externally valid state.",
+        "Remote Git mutation remains prohibited."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Repository-local checkpoint validation only; no publication, deployment, external completion or acceptance."
+    },
+    {
+      "operation_id": "repository.apply_iteration_method",
+      "public_name": {"zh": "按点火迭代操作法修改点火", "en": "Change Ignition through the Iteration Method"},
+      "description": "Govern explicitly authorized changes to Ignition through remote truth, gap, claim ceiling, propagation, validation, review, merge and receipt boundaries.",
+      "operation_class": "REPOSITORY_SELF_ITERATION",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/ITERATION.md", "role": "METHOD_AUTHORITY"},
+        {"path": "ignition/data/architecture/current-system-identity.json", "role": "CURRENT_STATUS_AUTHORITY", "json_pointer": "/current_method"}
+      ],
+      "owning_component": "Ignition Iteration Method",
+      "pack_binding": null,
+      "accepted_input_types": ["explicit Ignition repository change request", "declared change manifest"],
+      "output_types": ["candidate repository change", "validation evidence", "Draft lifecycle record", "merge/current receipt when separately authorized"],
+      "current_status": "CURRENT",
+      "default_execution_mode": "REPOSITORY_CHANGE_RUN",
+      "repository_mutation_permission": "EXPLICIT_USER_OR_OWNER_AUTHORIZATION_AND_ITERATION_METHOD",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": true,
+      "required_current_reads": [
+        "ignition/ITERATION.md",
+        "ignition/AI-START-HERE.md",
+        "ignition/data/operations/project-components.json",
+        "ignition/data/operations/change-propagation-topology.json"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/governance/life-community-value-charter.md"
+      ],
+      "validation_checks": [
+        {"kind": "UNIT_TEST", "path": "ignition/tests/test_change_propagation.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_current_state_sync.py"}
+      ],
+      "known_limits": [
+        "Governs how Ignition changes itself; it is not the general protocol for using Ignition on an external object.",
+        "An open Draft PR is not Current and tests do not self-establish acceptance or merge.",
+        "Repository propagation is not reality causality."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Repository-state change discipline only; no truth, evidence, causal, Owner-acceptance or publication inference."
+    },
+    {
+      "operation_id": "repository.apply_iteration_method_1_3",
+      "public_name": {"zh": "点火迭代操作法 1.3.0", "en": "Ignition Iteration Method 1.3.0"},
+      "description": "Preserve the superseded incremental-execution method as historical provenance only.",
+      "operation_class": "REPOSITORY_SELF_ITERATION",
+      "ai_callability": "STATUS_ONLY",
+      "authoritative_sources": [
+        {"path": "ignition/ITERATION.md", "role": "HISTORICAL_STATUS_AUTHORITY"}
+      ],
+      "owning_component": "Ignition Iteration Method history",
+      "pack_binding": null,
+      "accepted_input_types": ["historical method query"],
+      "output_types": ["historical status", "supersession relation"],
+      "current_status": "HISTORICAL",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/ITERATION.md",
+        "ignition/data/architecture/current-system-identity.json"
+      ],
+      "applicable_governance": [
+        "ignition/docs/VERSIONING.md"
+      ],
+      "validation_checks": [
+        {"kind": "SOURCE_ASSERTION", "path": "ignition/ITERATION.md"}
+      ],
+      "known_limits": [
+        "Cannot be selected as the Current method.",
+        "Historical execution evidence cannot override Current 1.4.0."
+      ],
+      "historical_relations": [
+        {"relation": "SUPERSEDED_BY", "target_operation_id": "repository.apply_iteration_method", "source": "ignition/ITERATION.md"}
+      ],
+      "claim_ceiling": "Historical provenance and supersession status only; no Current execution authority."
+    },
+    {
+      "operation_id": "research.coordinate_obligations",
+      "public_name": {"zh": "协调受约束研究义务", "en": "Coordinate bounded research obligations"},
+      "description": "Coordinate bounded research obligations, dependencies, negative results and typed handoff through REOS LIGHT.",
+      "operation_class": "RESEARCH",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/packs/research/manifest.json", "role": "CAPABILITY_DECLARATION", "json_pointer": "/capabilities_provided/0"},
+        {"path": "ignition/docs/architecture/reos-vnext-light.md", "role": "CURRENT_STATUS_AUTHORITY"}
+      ],
+      "owning_component": "REOS LIGHT Research Pack",
+      "pack_binding": {
+        "pack_id": "research.reos-light",
+        "manifest_path": "ignition/packs/research/manifest.json",
+        "manifest_capability_id": "research.coordinate_obligations"
+      },
+      "accepted_input_types": ["research_obligation", "evidence_request", "negative_result"],
+      "output_types": ["bounded obligation DAG", "case status", "typed handoff bundle"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/docs/architecture/reos-vnext-light.md",
+        "ignition/packs/research/manifest.json"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_pack_registry.py"},
+        {"kind": "UNIT_TEST", "path": "ignition/tests/test_reos_vnext_minimal_kernel.py"}
+      ],
+      "known_limits": [
+        "REOS LIGHT adds process control, not epistemic authority.",
+        "Direct research remains preferable when obligation control is unnecessary.",
+        "The Pack Bus does not execute declared hooks."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Bounded research-process coordination only; no truth, publication, acceptance or external-validation inference."
+    },
+    {
+      "operation_id": "research.reos_full",
+      "public_name": {"zh": "REOS FULL", "en": "REOS FULL"},
+      "description": "Record that no REOS FULL runtime is available and prevent an Agent from inventing one.",
+      "operation_class": "RESEARCH",
+      "ai_callability": "STATUS_ONLY",
+      "authoritative_sources": [
+        {"path": "ignition/docs/architecture/reos-vnext-light.md", "role": "UNSUPPORTED_STATUS_AUTHORITY"}
+      ],
+      "owning_component": "REOS boundary",
+      "pack_binding": null,
+      "accepted_input_types": ["REOS FULL capability request"],
+      "output_types": ["UNSUPPORTED status", "bounded alternative reference"],
+      "current_status": "UNSUPPORTED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/docs/architecture/reos-vnext-light.md"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md"
+      ],
+      "validation_checks": [
+        {"kind": "SOURCE_ASSERTION", "path": "ignition/docs/architecture/reos-vnext-light.md"}
+      ],
+      "known_limits": [
+        "There is no available REOS FULL runtime.",
+        "No recovery layer or expanded authority may be inferred."
+      ],
+      "historical_relations": [
+        {"relation": "UNAVAILABLE_VARIANT", "target_operation_id": "research.validate_reos_light", "source": "ignition/docs/architecture/reos-vnext-light.md"}
+      ],
+      "claim_ceiling": "Unsupported-status declaration only; no runtime, recovery, execution or epistemic capability."
+    },
+    {
+      "operation_id": "research.validate_reos_light",
+      "public_name": {"zh": "校验 REOS LIGHT", "en": "Validate REOS LIGHT"},
+      "description": "Validate bounded REOS LIGHT case state, references, obligation graph, review and typed handoff.",
+      "operation_class": "VALIDATION_AUDIT",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/packs/research/manifest.json", "role": "CAPABILITY_DECLARATION", "json_pointer": "/capabilities_provided/1"},
+        {"path": "ignition/docs/architecture/reos-vnext-light.md", "role": "CURRENT_STATUS_AUTHORITY"}
+      ],
+      "owning_component": "REOS LIGHT Research Pack",
+      "pack_binding": {
+        "pack_id": "research.reos-light",
+        "manifest_path": "ignition/packs/research/manifest.json",
+        "manifest_capability_id": "research.validate_reos_light"
+      },
+      "accepted_input_types": ["reos_light_run", "research case state", "typed handoff bundle"],
+      "output_types": ["REOS LIGHT validation report", "bounded failure state"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/docs/architecture/reos-vnext-light.md",
+        "ignition/packs/research/manifest.json"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md"
+      ],
+      "validation_checks": [
+        {"kind": "UNIT_TEST", "path": "ignition/tests/test_reos_vnext_minimal_kernel.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_pack_registry.py"}
+      ],
+      "known_limits": [
+        "Validation checks process structure, not proposition truth.",
+        "Generic SUCCESS and authority upgrades fail closed."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "REOS LIGHT structural validation only; no truth, external validity or publication status."
+    },
+    {
+      "operation_id": "writing.apply_editorial_method",
+      "public_name": {"zh": "应用之元写作法", "en": "Apply the Zhiyuan Writing Method"},
+      "description": "Transform source-bounded material into L6 writing while preserving source class, provenance, language-thought deltas and claim ceiling.",
+      "operation_class": "WRITING",
+      "ai_callability": "PUBLIC",
+      "authoritative_sources": [
+        {"path": "ignition/packs/writing/manifest.json", "role": "CAPABILITY_DECLARATION", "json_pointer": "/capabilities_provided/0"},
+        {"path": "ignition/docs/publication/zhiyuan-writing-method.md", "role": "CURRENT_STATUS_AUTHORITY"}
+      ],
+      "owning_component": "Zhiyuan Writing and Publication Pack",
+      "pack_binding": {
+        "pack_id": "writing.zhiyuan",
+        "manifest_path": "ignition/packs/writing/manifest.json",
+        "manifest_capability_id": "writing.apply_editorial_method"
+      },
+      "accepted_input_types": ["editorial_source", "external_input", "ignition_increment", "publication draft request"],
+      "output_types": ["source-bounded publication draft", "editorial provenance record", "language-thought residue"],
+      "current_status": "CURRENT",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/docs/publication/zhiyuan-writing-method.md",
+        "ignition/templates/publication/zhiyuan-writing-spec.md",
+        "ignition/docs/architecture/language-thought-logic-plane.md"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/governance/life-community-value-charter.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/publication/validate_fire_seeds.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/governance/validate_human_surface_contract.py"}
+      ],
+      "known_limits": [
+        "Writing quality cannot raise fact, cause, proof, value or evidence status.",
+        "Ignition-derived material is not a new independent source.",
+        "The Pack Bus routes a proposal and does not execute publishing hooks."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Current L6 writing transformation only; no factual, causal, proof, value, publication-acceptance or literary-quality guarantee."
+    },
+    {
+      "operation_id": "writing.validate_publication_surface",
+      "public_name": {"zh": "校验出版表面", "en": "Validate a publication surface"},
+      "description": "Validate declared publication and human-surface structure, provenance and navigation without establishing substantive acceptance.",
+      "operation_class": "VALIDATION_AUDIT",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/packs/writing/manifest.json", "role": "CAPABILITY_DECLARATION", "json_pointer": "/capabilities_provided/1"},
+        {"path": "ignition/docs/publication/zhiyuan-writing-method.md", "role": "BOUNDARY_AUTHORITY"}
+      ],
+      "owning_component": "Zhiyuan Writing and Publication Pack",
+      "pack_binding": {
+        "pack_id": "writing.zhiyuan",
+        "manifest_path": "ignition/packs/writing/manifest.json",
+        "manifest_capability_id": "writing.validate_publication_surface"
+      },
+      "accepted_input_types": ["publication_draft", "publication_review", "human_surface_entry"],
+      "output_types": ["publication-surface validation report", "provenance or navigation finding"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/packs/writing/manifest.json",
+        "ignition/docs/publication/zhiyuan-writing-method.md"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/governance/life-community-value-charter.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/governance/validate_human_surface_contract.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/publication/validate_fire_seeds.py"}
+      ],
+      "known_limits": [
+        "Surface validity does not imply content truth, literary quality, acceptance, deployment or Current status.",
+        "Public visibility is distinct from capability availability."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Publication-surface structure and provenance validation only; no substantive acceptance, truth or deployment inference."
+    }
+  ],
+  "claim_ceiling": "Canonical Task148 candidate inventory of repository-declared operation capabilities and truthful Current, bounded, Owner-deferred, reference-only, historical and unsupported boundaries at baseline a1a1d102c3cd2fa12fc962b648b0eea62d8097cf. This registry grants no permission by itself, performs no action, and does not establish external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance. It is not Current on main until accepted, merged and synchronized."
+}
