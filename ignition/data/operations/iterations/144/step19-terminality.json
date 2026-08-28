@@ -83,7 +83,7 @@
     },
     "absorption_matrix": [
       {
-        "id": "M1",
+        "mechanism_key": "model_before_tool",
         "mechanism": "先建模再选工具 / Problem Capsule",
         "classification": "NET_NEW",
         "source_anchors": ["24-40", "53-68"],
@@ -92,7 +92,7 @@
         "replay_effect": "没有改变既有三篇文章、Book Project 或样章的定题；只会让未来 Owner brief 到来后的调用前提更显式。"
       },
       {
-        "id": "M2",
+        "mechanism_key": "bounded_tool_set_and_deletion_test",
         "mechanism": "1 个主工具 + 至多 3 个补充/反证工具 + 删除工具测试",
         "classification": "NET_NEW",
         "source_anchors": ["40-47", "65-68"],
@@ -101,7 +101,7 @@
         "replay_effect": "不重写正文；回放显示三篇文章本身已经以单一读者问题组织，新增工具标签不会增加解释力。"
       },
       {
-        "id": "M3",
+        "mechanism_key": "typed_tool_role_grammar",
         "mechanism": "定题 / 定界 / 估计 / 找机制 / 造选项 / 找反作用 / 落地学习 / 查价值 typed role grammar",
         "classification": "NET_NEW",
         "source_anchors": ["114-123"],
@@ -110,7 +110,7 @@
         "replay_effect": "对 Article 011/012/013 和书项目只产生调用卡元数据，不改变主题、结构或事实边界。"
       },
       {
-        "id": "M4",
+        "mechanism_key": "evidence_ledger_and_update_conditions",
         "mechanism": "证据账本、决策相关信息、可逆性×证据强度、内外视角、反证、更新时间与推翻条件",
         "classification": "NET_NEW",
         "source_anchors": ["97-110", "633-639", "805-817", "1628-1632"],
@@ -119,7 +119,7 @@
         "replay_effect": "三篇文章与书项目已经明确对象、范围、缺失来源和反例；回放没有发现需要扩大 claim ceiling 的新证据。"
       },
       {
-        "id": "M5",
+        "mechanism_key": "stop_when_no_judgment_gain",
         "mechanism": "工具无判断增益即停止并退回朴素答案",
         "classification": "NET_NEW",
         "source_anchors": ["183", "1684-1686"],
@@ -128,7 +128,7 @@
         "replay_effect": "回放的实际结果是 NO_REWRITE_JUSTIFIED；没有为了展示协议而添加概念或改写正文。"
       },
       {
-        "id": "A1",
+        "mechanism_key": "owner_authority_boundary",
         "mechanism": "OWNER_SELECTS_TOPIC / OWNER_SELECTS_BOOK / AGENT_SELECTS_MEANS_WITHIN_INTENT",
         "classification": "DUPLICATE",
         "source_anchors": ["1330-1336", "1390-1412"],
@@ -136,7 +136,7 @@
         "replay_effect": "所有输入仍为 OWNER_REVIEW_PENDING；Agent 没有把草稿或候选变成 Owner-selected。"
       },
       {
-        "id": "A2",
+        "mechanism_key": "existing_evidence_claim_boundary",
         "mechanism": "来源分账、反证、claim ceiling、公开与私有 provenance 边界",
         "classification": "ALREADY_COVERED",
         "source_anchors": ["97-110", "1200-1206"],
@@ -144,7 +144,7 @@
         "replay_effect": "原有文章/书稿的证据边界、反例与缺失层保持不变。"
       },
       {
-        "id": "R1",
+        "rejection_key": "unbounded_all_tools_import",
         "mechanism": "把 100 个工具整体导入，或把课程观点当作 Pointfire truth",
         "classification": "REJECT",
         "source_anchors": ["14", "40", "183"],

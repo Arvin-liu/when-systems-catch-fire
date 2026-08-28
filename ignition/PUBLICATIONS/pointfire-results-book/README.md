@@ -38,11 +38,6 @@ Task144 已按当前边界关闭工程阶段。Task143 的文章、Book Project 
 
 这些是可继续人工编辑的 smoke-test 输出，不是 Owner 已选择的正式生产项目，不是整本书完成、外部真值、生产就绪或 `EPISTEMICALLY_ACCEPTED`。新成果的机器登记与 claim ceiling 见[公开 registry](RESULT-REGISTRY.jsonl)；旧的 `LIVE_EXTERNAL_INVOCATION` 仍由 obligation registry 独立保留为 Owner-deferred，不在本轮被伪装成已解决。
 
-## Post-closure 生产方法候选
-
-在不新增正文、不重开工程阶段的前提下，Task144 之后附着一份
-[Pointfire Production Reasoning Protocol R0 候选](../../docs/editorial/README.md#post-closurepointfire-production-reasoning-protocol-r0)，以及对应的 absorption matrix / offline replay。它只约束未来在 Owner brief 到来后的生产调用纪律：先建模、少量选工具、分账证据、寻找反证、记录更新条件、没有判断增益就退回朴素答案。其状态仍是 `OWNER_REVIEW_PENDING`；它不构成 Owner 选题、书籍立项、出版接受或 Pointfire truth。
-
 ## 这本书收录什么
 
 - 早期“转身”问题如何逐步压缩为“点火”、应约、退出权、决策、事件和时间窗口；

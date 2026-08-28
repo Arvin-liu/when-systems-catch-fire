@@ -98,10 +98,10 @@ Decision: 基准选项｜下一步｜观察指标｜更新时间｜维持/修正
 Authority: Owner 选题/立书/接受；Agent 只在意图内选手段
 ```
 
-本候选的 absorption matrix 与纯离线 replay 记录在 Task144 Step19 终态记录和
-[Step19 report](../../reports/operations/ignition-144-step19-terminality.md) 中。
-Replay 不重写三篇文章、Book Project 或样章；若方法不能改变实际判断，就保留
-`OWNER_REVIEW_PENDING`，并回到 `AWAIT_OWNER_PRODUCTION_BRIEF`。
+本候选的 absorption matrix 与纯离线 replay 记录在 Task144 Step19 终态记录中；
+[Step19 report](../../reports/operations/ignition-144-step19-terminality.md) 仍保留工程
+收口的独立历史回执。Replay 不重写三篇文章、Book Project 或样章；若方法不能改变
+实际判断，就保留 `OWNER_REVIEW_PENDING`，并回到 `AWAIT_OWNER_PRODUCTION_BRIEF`。
 
 ---
 
