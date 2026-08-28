@@ -13,17 +13,29 @@
   "tasks": [
     {
       "task_id": "IGNITION-20260828-147",
-      "execution_status": "IN_PROGRESS",
-      "terminal": false,
-      "scope_complete": false,
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
       "identity_impact": "PRESENTATION_ONLY",
-      "terminal_basis": "Task147 is executing the repository-local README project-identity and architecture-navigation repair; terminality requires the bounded validation, Current synchronization and publication witness steps.",
+      "terminal_basis": "Task147 completes the bounded repository-local README project-identity and architecture-navigation repair, Human Front Door validation, deterministic Current synchronization and publication-ready evidence; the deferred live obligation remains independent and is not reopened.",
       "open_obligation_ids": [
         "LIVE_EXTERNAL_INVOCATION"
       ],
       "evidence_refs": [
         "ignition/data/operations/iterations/147/execution-contract-r1.json",
-        "ignition/data/operations/iterations/147/step00-baseline-audit.json"
+        "ignition/data/operations/iterations/147/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/147/step02-current-state-sync.json",
+        "ignition/data/operations/iterations/147/step06-targeted-human-surface-validation.json",
+        "ignition/data/operations/iterations/147/step07-first-visit-readme-audit.json",
+        "ignition/data/operations/iterations/147/step08-regression-scope-audit.json",
+        "ignition/data/operations/iterations/147/step09-current-minimal-sync.json",
+        "ignition/data/operations/iterations/147/step15-deterministic-current-surface-r1.json",
+        "ignition/data/operations/iterations/147/step15-current-surface-semantic-gate-r1.json",
+        "ignition/data/operations/iterations/147/step15-ordinal-binding-gate-r1.json",
+        "ignition/data/operations/iterations/147/step15-release-lifecycle-audit.json",
+        "ignition/data/operations/iterations/147/step10-publication-preflight.json",
+        "ignition/agent-results/IGNITION-20260828-147-result.md",
+        "ignition/agent-results/IGNITION-20260828-147-machine-receipt.json"
       ],
       "claim_ceiling": "Task147 repository-local project identity wording, human architecture navigation, validator and deterministic regression evidence only; architecture semantics and geometry remain frozen, Owner authority remains required for production, production awaits the Owner brief, and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
     },

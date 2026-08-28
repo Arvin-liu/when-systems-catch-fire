@@ -1,0 +1,85 @@
+{
+  "schema_version": "ignition-agent-result-machine-receipt-r1",
+  "task_id": "IGNITION-20260828-147",
+  "step": "09",
+  "status": "TERMINAL_WITH_OPEN_OBLIGATION_RELEASE_READY_PUBLICATION_PENDING",
+  "formal_task": {
+    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "terminal": true,
+    "scope_complete": true,
+    "identity_impact": "PRESENTATION_ONLY",
+    "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"]
+  },
+  "task_binding": {
+    "formal_result_task_id": "IGNITION-20260828-147",
+    "canonical_current_formal_task_id": "IGNITION-20260828-147",
+    "lifecycle_task_id": "IGNITION-20260828-147",
+    "release_candidate_task_id": "IGNITION-20260828-147",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "current_formal_task_ordinal": 147,
+    "latest_architecture_task_ordinal": 142,
+    "current_iteration_boundary": 147,
+    "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+    "exact_match": true
+  },
+  "human_front_door": {
+    "visible_current_state_count": 1,
+    "visible_value_charter_count": 1,
+    "project_and_value_h3_order": ["项目现状", "价值宪章"],
+    "project_identity_exact": true,
+    "project_current_is_first_block": true,
+    "machine_detail_container_count": 0,
+    "current_snapshot_block_count": 0,
+    "generated_current_homepage": false,
+    "current_machine_surface_count": 6,
+    "architecture_image_count": 1,
+    "component_group_count": 5,
+    "component_navigation_links": 22,
+    "component_groups_default_collapsed": true,
+    "canonical_component_targets_exist": true,
+    "clickability_claim_terms": 0,
+    "architecture_semantics": "visual overview plus separate human component navigation; rendered GitHub SVG clickability is not promised"
+  },
+  "targeted_regression": {
+    "tests_run": 42,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "completed_naturally": true,
+    "generated_output_drift": [],
+    "full_suite": "NOT_RUN_BY_SCOPE"
+  },
+  "phase_boundary": {
+    "engineering_phase": "CLOSED_CURRENT_SCOPE",
+    "architecture_executor_phase": "CLOSED_OWNER_DEFERRED",
+    "architecture_frozen": true,
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "current_map_version": "0.16.0",
+    "production_handoff": "AWAIT_OWNER_PRODUCTION_BRIEF"
+  },
+  "publication_boundary": {
+    "required_ref": "refs/heads/main",
+    "publication_authority": "REMOTE_REF_OBSERVATION",
+    "formal_repository_self_sha": false,
+    "publication_status": "PENDING_SEPARATE_REMOTE_AND_1111_OBSERVATION"
+  },
+  "live_boundary": {
+    "new_live_invocations": 0,
+    "historical_attempt_count": 6,
+    "validated_completion_count": 0,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "obligation": "OPEN",
+    "operational_state": "OWNER_DEFERRED",
+    "retry": "NOT_AUTHORIZED"
+  },
+  "scope_guards": {
+    "architecture_geometry_redrawn": false,
+    "architecture_identity_changed": false,
+    "task143_article_or_book_body_changed": false,
+    "external_live_process_started": false,
+    "automatic_task148_created_or_started": false,
+    "self_witness_formal_commit_created": false
+  },
+  "claim_ceiling": "Repository-local Task147 project identity, Human Front Door navigation, Current synchronization, targeted regression and release-ready terminality evidence only; formal main publication, fresh remote-main observation, external truth, production readiness, Owner acceptance, publication acceptance, validated live completion and epistemic acceptance remain separate or unclaimed."
+}

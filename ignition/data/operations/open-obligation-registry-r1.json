@@ -68,7 +68,7 @@
     "validated_completion_count": 0,
     "live_attempt_started": false,
     "new_obligation_ids": [],
-    "reason": "Task146 keeps LIVE_EXTERNAL_INVOCATION OPEN and OWNER_DEFERRED as an obligation independent of task liveness; no live attempt is authorized, and this presentation-only homepage simplification proceeds without reopening the deferred campaign.",
+    "reason": "Task147 keeps LIVE_EXTERNAL_INVOCATION OPEN and OWNER_DEFERRED as an obligation independent of task liveness; no live attempt is authorized, and this presentation-only README identity/navigation repair proceeds without reopening the deferred campaign.",
       "evidence_refs": [
         "ignition/data/operations/iterations/142/step11-fresh-census.json",
         "ignition/data/operations/iterations/142/step12-pre-live-gate.json",

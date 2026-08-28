@@ -16,16 +16,16 @@
   "latest_architecture_task_ordinal": 142,
   "current_iteration_boundary": 147,
     "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
-  "content_phase": "RUNNING",
+  "content_phase": "RELEASE_READY",
     "required_publication_ref": "refs/heads/main",
     "publication_authority": "REMOTE_REF_OBSERVATION",
     "embedded_publication_assertion": "NONE",
-  "current_task_terminal": false,
+  "current_task_terminal": true,
     "post_publication_remote_check_required": true,
     "phase_order": [
         "RUNNING",
         "TERMINAL_CANDIDATE",
         "RELEASE_READY"
     ],
-  "claim_ceiling": "Task147 repository-local project identity wording, human architecture navigation, Current-surface synchronization and bounded regression evidence only; architecture semantics and geometry remain frozen, engineering remains closed, production awaits the Owner brief, the deferred live obligation remains open, and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+  "claim_ceiling": "Task147 repository-local project identity wording, human architecture navigation, Current-surface synchronization, bounded regression and release-ready evidence only; architecture semantics and geometry remain frozen, engineering remains closed, production awaits the Owner brief, the deferred live obligation remains open, publication remains a separate remote-ref observation, and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
 }

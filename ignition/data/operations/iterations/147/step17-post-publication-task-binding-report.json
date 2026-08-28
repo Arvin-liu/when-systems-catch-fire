@@ -1,0 +1,79 @@
+{
+  "branch": "codex/ignition-147-readme-project-identity-architecture-navigation-r3-20260828",
+  "checks": [
+    {
+      "check": "release_lifecycle",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "content_lifecycle",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "release_state_model",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "current_facts",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "current_snapshot",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "static_publication_semantics",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "task_id_binding",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "current_surface_compiler",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "typed_semantic_gate",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "task_lineage",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "current_state_sync",
+      "errors": [],
+      "result": "PASS"
+    },
+    {
+      "check": "clean_worktree",
+      "errors": [
+        "clean clone is enforced only in post-publication mode"
+      ],
+      "result": "NOT_APPLICABLE"
+    }
+  ],
+  "claim_ceiling": "Fresh-clone Current and observation-time Git ref evidence only; this does not prove external truth, production readiness, Owner acceptance or epistemic acceptance.",
+  "errors": [],
+  "expected_sha": null,
+  "expected_task_id": "IGNITION-20260828-147",
+  "formal_result_task_id": "IGNITION-20260828-147",
+  "head_sha": "8b7d1efb2b50caf64be83707821e51d3c84baf26",
+  "mode": "PRE_PUBLICATION",
+  "observed_ref": null,
+  "observed_remote_sha": null,
+  "result": "PASS",
+  "schema_version": "post-publication-current-check-r2",
+  "task_id": "IGNITION-20260828-147"
+}
