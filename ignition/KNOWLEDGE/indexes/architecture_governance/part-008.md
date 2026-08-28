@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Step 001 \(3de47af\): Evidence routing \(6 GAPs, 9 nodes, 35 assets\)](../../../reports/external-research/121Q3-night-final-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2c903deb68875428 / Step 001 \(3de47af\): Evidence routing \(6 GAPs, 9 nodes, 35 assets\)
+  - 来源：`reports/external-research/121Q3-night-final-report.md`
+  - 依赖：—；被引用：—
 - [Step 002-007: GAP-015-020 adjudication \(1 RESOLVED, 4 PARTIALLY_RESOLVED, 1 UNRESOLVED\)](../../../reports/external-research/121Q3-night-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-80310ae6117a60fc / Step 002-007: GAP-015-020 adjudication \(1 RESOLVED, 4 PARTIALLY_RESOLVED, 1 UNRESOLVED\)
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cb3d03a407bc07ea / Use this form for real non-commercial use within the current license scope. Do not include private contact information,
   - 来源：`.github/ISSUE_TEMPLATE/noncommercial-use-report.yml`
-  - 依赖：—；被引用：—
-- [v0.2 P0 收口复核审计](../../ASSET-CARDS.md#asset-hr-996b1e97820089e9)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：v0.2 P0 收口复核审计 / v0.2-p0-closeout-audit-20260707
-  - 来源：`outputs/audit/v0.2-p0-closeout-audit-20260707.md`
   - 依赖：—；被引用：—

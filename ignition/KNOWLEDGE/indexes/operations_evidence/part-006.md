@@ -44,6 +44,11 @@
   - 可搜索名称：NFC-2a232b66bd6f0dd1 / The remaining failures were deterministic source/projection closure issues.
   - 来源：`reports/operations/ignition-143-step18-full-regression.md`
   - 依赖：—；被引用：—
+- [The remote task branch was freshly cloned and bound before execution. The remote branch SHA, fresh clone HEAD, and teste](../../../reports/operations/ignition-144-step17-fresh-task-full-regression.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-04bb73c6552454bb / The remote task branch was freshly cloned and bound before execution. The remote branch SHA, fresh clone HEAD, and teste
+  - 来源：`reports/operations/ignition-144-step17-fresh-task-full-regression.md`
+  - 依赖：—；被引用：—
 - [The terminal Task134 candidate keeps the residual ledger bounded and makes the Current projections decidable.](../../../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-99659a72ca025a6b / The terminal Task134 candidate keeps the residual ledger bounded and makes the Current projections decidable.
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-2ca4a09d5a0a3a8c / 阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-
   - 来源：`AI-START-HERE.md`
-  - 依赖：—；被引用：—
-- [阻断在 task-111 投影之外，并通过 110 的权威 OpenAlex result 将 C-03 识别为已完成 partial；](../../../ITERATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-2d40a1bf779ba05a / 阻断在 task-111 投影之外，并通过 110 的权威 OpenAlex result 将 C-03 识别为已完成 partial；
-  - 来源：`ITERATION.md`
   - 依赖：—；被引用：—

@@ -10,11 +10,11 @@
 - [第 004 片](./architecture_governance/part-004.md)：1501—2000；def append\( → def test_create_read\(self\):
 - [第 005 片](./architecture_governance/part-005.md)：2001—2500；def test_cross_node_hash_chain_consistent\(self\): → for name in \("question", "desired_evidence_type", "source_family_requirement"\):
 - [第 006 片](./architecture_governance/part-006.md)：2501—3000；for name in \("supporting_artifact_ids", "contradicting_artifact_ids"\): → next_read: read the final Task142 machine receipt and independent 1111 publication witness for exact SHA, remote-ref and
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；next_read: 先读\[首页\]\(../.github/README.md\)、\[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[唯一完 → Step 001 \(3de47af\): Evidence routing \(6 GAPs, 9 nodes, 35 assets\)
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；Step 002-007: GAP-015-020 adjudication \(1 RESOLVED, 4 PARTIALLY_RESOLVED, 1 UNRESOLVED\) → v0.2 P0 收口复核审计
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；V1 canonical 记录、其他 11 个协议、64 组合数据：未修改。 → \| HOLD \| 暂停公开，等待证据、边界或编号修正 \|
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| HOLD \| 暂停发布，等待证据、编号或边界修正 \| → 事实 Pending 总表（外部治理记录）
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；next_read: 先读\[首页\]\(../.github/README.md\)、\[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[唯一完 → Step 000-001: Baseline, evidence routing
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；Step 001 \(3de47af\): Evidence routing \(6 GAPs, 9 nodes, 35 assets\) → Use this form for real non-commercial use within the current license scope. Do not include private contact information,
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；v0.2 P0 收口复核审计 → \| Historical interpretive essay \| `docs/publication/works/when-an-emperor-manufactures-heaven.md` \| recoverable source t
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| HOLD \| 暂停公开，等待证据、边界或编号修正 \| → 事实 pending
 - [第 011 片](./architecture_governance/part-011.md)：5001—5500；事实 Pending 总表（外部治理记录） → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD → 所有 117 条有 DOI 且 Crossref 元数据匹配 → 至少 `METADATA_VERIFIED`
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；所有 JSON 数据集建议遵守以下通用字段规范。 → 缺乏反事实推断
-- [第 014 片](./architecture_governance/part-014.md)：6501—6877；缺乏反事实识别 → （证据不足、需外部验证、待人工复核）
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 所有 117 条有 `abstract_or_official_summary` 字段 → 可提升至 `ABSTRACT_REVIEWED`（但需验证摘要是否为实际读取而非模型生成）
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；所有 117 条有 DOI 且 Crossref 元数据匹配 → 至少 `METADATA_VERIFIED` → 编辑文章 stale/review 闭合**：若材料源变化，文章须离开 CURRENT 直至附审稿证据。
+- [第 014 片](./architecture_governance/part-014.md)：6501—6878；缺乏反事实推断 → （证据不足、需外部验证、待人工复核）

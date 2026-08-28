@@ -54,6 +54,11 @@
   - 可搜索名称：NFC-0ad4d7e3f39cfb2d / No external executor, live invocation, provider adapter, article body, or book body was started or changed. This is repo
   - 来源：`reports/operations/ignition-144-step16-candidate-full-regression.md`
   - 依赖：—；被引用：—
+- [No external executor, live invocation, qualification attempt, article body, or book body was started or changed. This is](../../../reports/operations/ignition-144-step17-fresh-task-full-regression.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a5dc5912b99820e3 / No external executor, live invocation, qualification attempt, article body, or book body was started or changed. This is
+  - 来源：`reports/operations/ignition-144-step17-fresh-task-full-regression.md`
+  - 依赖：—；被引用：—
 - [no external truth, production readiness, Owner acceptance, or epistemic](../../../reports/operations/ignition-139-step06-live-current-projection.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b558fd2154c8777e / no external truth, production readiness, Owner acceptance, or epistemic
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ac5a27acac2e77a9 / Step 000-001: Baseline, evidence routing
   - 来源：`reports/external-research/121Q3-night-progress.md`
-  - 依赖：—；被引用：—
-- [Step 001 \(3de47af\): Evidence routing \(6 GAPs, 9 nodes, 35 assets\)](../../../reports/external-research/121Q3-night-final-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2c903deb68875428 / Step 001 \(3de47af\): Evidence routing \(6 GAPs, 9 nodes, 35 assets\)
-  - 来源：`reports/external-research/121Q3-night-final-report.md`
   - 依赖：—；被引用：—

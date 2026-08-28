@@ -9,5 +9,5 @@
 - [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0422}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-01.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP003-02.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
 - [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → The defect is structural: the current lineage source exposes only `IN_PROGRESS` or `COMPLETED_WITH_CLASSIFIED_RESIDUALS`
-- [第 006 片](./operations_evidence/part-006.md)：2501—3000；the deterministic live projection. Historical Task138 reports remain → 阻断在 task-111 投影之外，并通过 110 的权威 OpenAlex result 将 C-03 识别为已完成 partial；
-- [第 007 片](./operations_evidence/part-007.md)：3001—3011；项目本体版本升级审计 2026-07-09 → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 006 片](./operations_evidence/part-006.md)：2501—3000；the deterministic live projection. Historical Task138 reports remain → 阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-
+- [第 007 片](./operations_evidence/part-007.md)：3001—3012；阻断在 task-111 投影之外，并通过 110 的权威 OpenAlex result 将 C-03 识别为已完成 partial； → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

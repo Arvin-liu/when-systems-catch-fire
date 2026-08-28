@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| HOLD \| 暂停公开，等待证据、边界或编号修正 \|](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4cb3809b1832db00 / \| HOLD \| 暂停公开，等待证据、边界或编号修正 \|
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
 - [\| HOLD \| 暂停发布，等待证据、编号或边界修正 \|](../../../docs/publication_risk_checklist.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-2a1c985a55379039 / \| HOLD \| 暂停发布，等待证据、编号或边界修正 \|
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c986bfff8701e487 / 事实 pending
   - 来源：`docs/governance/meta-protocol-reviews/protocols/E1.md`
-  - 依赖：—；被引用：—
-- [事实 Pending 总表（外部治理记录）](../../ASSET-CARDS.md#asset-hr-ef6e1d0860ae3fef)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：事实 Pending 总表（外部治理记录） / factual-pending-register
-  - 来源：`docs/governance/meta-protocol-reviews/factual-pending-register.md`
   - 依赖：—；被引用：—
