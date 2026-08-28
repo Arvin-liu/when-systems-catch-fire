@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260828-145",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "298014368e22995f562003951bf72d8366d602d2",
+    "command_path": "agent-commands/IGNITION-20260828-145-readme-human-front-door-cleanup-r1.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "74cc83b26e5903c074c2b213c3f46afac1104856"
+  },
+  "identity_impact": "PRESENTATION_ONLY",
+  "expected_task_branch": "codex/ignition-145-readme-human-front-door-cleanup-r1-20260828",
+  "expected_receipt_branch": "relay/receipts/ignition-145-readme-human-front-door-cleanup-r1-20260828",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260828-145",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "previous_canonical_current_task": "IGNITION-20260828-144",
+    "previous_formal_task": "IGNITION-20260828-144",
+    "release_candidate_task": "IGNITION-20260828-145",
+    "publication_witness_task": "IGNITION-20260828-145"
+  },
+  "claim_ceiling": "Task145 repository-local Human Front Door maintenance, deterministic folding and ref-derived release evidence only; engineering phase remains closed, production waits for Owner brief, and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}
