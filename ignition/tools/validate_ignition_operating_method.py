@@ -24,6 +24,9 @@ BOUNDARY_TOKENS = (
     "MEMORY_IS_RETRIEVAL_HINT_NOT_CURRENT_AUTHORITY",
     "AMBIGUOUS_REQUESTS_USE_LEAST_AUTHORITY",
     "NOTE_PLUS_REPOSITORY_URL_ROUTES_READ_ONLY",
+    "MINIMAL_CURRENT_READS_NOT_FULL_REPOSITORY",
+    "UNSUPPORTED_OPERATION",
+    "CAPABILITY_NOT_CURRENT",
 )
 PRIORITY_TOKENS = (
     "CURRENT_USER_OR_OWNER_EXPLICIT_REQUEST",
@@ -32,6 +35,22 @@ PRIORITY_TOKENS = (
     "OPERATION_SPECIFIC_AUTHORITY",
     "INPUT_OBJECT",
     "HISTORICAL_ASSETS_AGENT_MEMORY_CHAT_MEMORY",
+)
+LIFECYCLE_TOKENS = (
+    "ACCEPT_REQUEST",
+    "FREEZE_CURRENT",
+    "CLASSIFY_MODE",
+    "CLASSIFY_INPUT_OBJECT",
+    "RESOLVE_OPERATION",
+    "CHECK_CAPABILITY_STATUS",
+    "BUILD_MINIMAL_READ_PLAN",
+    "NORMALIZE_INPUT_AND_PROVENANCE",
+    "EXECUTE_OPERATION",
+    "CANONICAL_COLLISION / EVIDENCE CHECK",
+    "ADVERSARIAL_REVIEW",
+    "APPLY_CLAIM_CEILING",
+    "RENDER_RESULT",
+    "STOP / HANDOFF",
 )
 
 
@@ -57,6 +76,11 @@ def validate(text: str | None = None) -> list[str]:
         errors.append("authority priority is missing a required tier")
     elif positions != sorted(positions) or len(set(positions)) != len(positions):
         errors.append("authority priority tiers are not in canonical order")
+    lifecycle_positions = [source.find(f"{tick}{token}{tick}", source.find("## 8.")) for token in LIFECYCLE_TOKENS]
+    if any(position < 0 for position in lifecycle_positions):
+        errors.append("unified lifecycle is missing a required stage")
+    elif lifecycle_positions != sorted(lifecycle_positions) or len(set(lifecycle_positions)) != len(lifecycle_positions):
+        errors.append("unified lifecycle stages are not in canonical order")
 
     normalized = source.replace(tick, "")
     required_phrases = (
@@ -75,6 +99,12 @@ def validate(text: str | None = None) -> list[str]:
         "REPOSITORY_CHANGE_RUN — 仅限明确修改点火",
         "EXTERNAL_ACTION_RUN — 明示请求加 Current admission",
         "不得创建 worktree、branch 或 PR",
+        "MINIMAL_CURRENT_READS_NOT_FULL_REPOSITORY",
+        "CURRENT_STATE_UNAVAILABLE",
+        "REQUEST_OBJECT_BOUNDARY_UNRESOLVED",
+        "CAPABILITY_OWNER_DEFERRED",
+        "CAPABILITY_REFERENCE_ONLY",
+        "OPERATION_MODE_MISMATCH",
     )
     for phrase in required_phrases:
         if phrase not in normalized:

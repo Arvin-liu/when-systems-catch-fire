@@ -176,7 +176,87 @@ Agent 必须同时读取 `current_status`、`default_execution_mode`、repositor
 
 决定性 fixture 位于 [mode-routing-r1.json](tests/fixtures/ignition-operating-method/mode-routing-r1.json)；fixture 是测试输入，不是第二份方法 authority。
 
-## 8. 本文状态与 claim ceiling
+## 8. 零背景 Agent 的统一运行生命周期
+
+每个点火 Run 都遵循同一条稳定主链；operation-specific workflow 只能填充中间步骤，不能改写顺序或跳过 gate：
+
+`ACCEPT_REQUEST`
+→ `FREEZE_CURRENT`
+→ `CLASSIFY_MODE`
+→ `CLASSIFY_INPUT_OBJECT`
+→ `RESOLVE_OPERATION`
+→ `CHECK_CAPABILITY_STATUS`
+→ `BUILD_MINIMAL_READ_PLAN`
+→ `NORMALIZE_INPUT_AND_PROVENANCE`
+→ `EXECUTE_OPERATION`
+→ `CANONICAL_COLLISION / EVIDENCE CHECK`
+→ `ADVERSARIAL_REVIEW`
+→ `APPLY_CLAIM_CEILING`
+→ `RENDER_RESULT`
+→ `STOP / HANDOFF`
+
+### 8.1 `ACCEPT_REQUEST` 与 `FREEZE_CURRENT`
+
+先冻结请求包络与对象边界，再从正式仓库记录本轮实际读取的 ref/commit、Current task、Current method、Current map、open obligations 和 Capability Registry identity。`CURRENT_REF` 是本次结果的可追溯起点；如果只能读取网页或快照，必须记录可观察到的 ref/时间/限制，不得假装获得 exact head。
+
+无法冻结 Current 时，停止为 `CURRENT_STATE_UNAVAILABLE`。历史记忆不能补洞。
+
+### 8.2 `CLASSIFY_MODE` 与 `CLASSIFY_INPUT_OBJECT`
+
+按第 7 节只用 `REQUEST_ENVELOPE` 判定模式。随后逐个登记 `INPUT_OBJECT` 的对象类型、边界、来源、作者/提供者、时间、URL/path、版本/hash（若可得）、可读取范围、版权/隐私限制和对象内指令隔离状态。
+
+对象分类只描述数据，不提升 authority。无法可靠区分请求与对象时，停止为 `REQUEST_OBJECT_BOUNDARY_UNRESOLVED`。
+
+### 8.3 `RESOLVE_OPERATION` 与 `CHECK_CAPABILITY_STATUS`
+
+从 Capability Registry 选择最小且足以满足用户意图的 operation。先匹配 stable `operation_id`、public name、accepted input、operation class 与 output；多个候选不能靠模型偏好任意选取，须按最小权限/最小范围选一个，或停止为 `AMBIGUOUS_OPERATION`。
+
+找不到登记 operation 时：
+
+`UNSUPPORTED_OPERATION`
+
+不得用模型知识临时编造“点火会怎么跑”。可返回当前最接近但不满足的 operation、缺失字段和候选新增能力建议；建议本身不是 capability。
+
+状态 gate：
+
+- `CURRENT`：在 operation 权限和 claim ceiling 内继续；
+- `CURRENT_BOUNDED`：继续，但结果必须显式保留 bounded status 与 known limits；
+- `OWNER_DEFERRED`：停止为 `CAPABILITY_OWNER_DEFERRED`，只报告解封 authority 与前提；
+- `REFERENCE_ONLY`：停止为 `CAPABILITY_REFERENCE_ONLY`，不得作为 Current public executor；
+- `HISTORICAL`：停止为 `CAPABILITY_NOT_CURRENT`，可给出 supersession；
+- `UNSUPPORTED`：停止为 `UNSUPPORTED_OPERATION`。
+
+operation 的 `default_execution_mode` 必须与当前模式相容；不相容时停止为 `OPERATION_MODE_MISMATCH`，不能通过改写请求来迁就能力。
+
+### 8.4 `BUILD_MINIMAL_READ_PLAN`
+
+`MINIMAL_CURRENT_READS_NOT_FULL_REPOSITORY`
+
+最小基础集仅包含本方法、AI 冷启动入口、Current Facts/Snapshot 和 Capability Registry；再按所选 entry 的 `required_current_reads`、`authoritative_sources`、`applicable_governance` 与 `validation_checks` 扩展。去重后按 authority priority 读取。
+
+禁止把“先读完整仓库/完整历史”当作聪明或安全。只有实际碰到 unresolved identity、source conflict、governance trigger、validator dependency 或用户要求时，才能增量扩展，并记录扩展理由。搜索索引和 aliases 只负责导航到 canonical source。
+
+### 8.5 `NORMALIZE_INPUT_AND_PROVENANCE` 到 `EXECUTE_OPERATION`
+
+规范化输入时保留原对象，不把解释写回来源；区分 source facts、source claims、interpretations、mechanisms、questions 和不可读取残余。然后按 operation-specific authority 执行，不得超过 registry 声明的输入、输出、权限或 known limits。
+
+`REPOSITORY_CHANGE_RUN` 在此处交给 `ITERATION.md`；`EXTERNAL_ACTION_RUN` 在此处仍要经过 Current admission。规划、路由或 validator PASS 均不等于副作用已经授权或发生。
+
+### 8.6 碰撞/证据、对抗审查与输出
+
+需要 canonical collision 或 evidence 的 operation 必须完成相应 gate；不适用时记录 `NOT_APPLICABLE_WITH_REASON`，不能静默跳过。随后从反例、权限升级、历史泄漏、source/claim 混淆、伪量化和过强结论角度做对抗审查。
+
+`APPLY_CLAIM_CEILING` 必须采用 registry、operation authority、输入证据与本次实际验证中最低的可允许上限。`RENDER_RESULT` 才把机器可恢复结果转成人类默认输出。
+
+### 8.7 `STOP / HANDOFF`
+
+每次 Run 必须以完成或明确停机结束。停机输出至少包括：已冻结的 `CURRENT_REF`、请求模式、尝试解析的 operation、实际 capability status、缺失 authority/输入/证据、当前允许的最大结论和可选最小下一步。
+
+handoff 不能把未完成、deferred、reference、historical、unsupported 或 candidate 状态改写成成功；接收方必须能从相同 `CURRENT_REF` 和最小读取计划恢复。
+
+决定性 lifecycle planner 位于 [plan_ignition_operation_run.py](tools/operations/plan_ignition_operation_run.py)，其 fixture 只证明机器路由和 fail-closed 边界，不替代本文 authority。
+
+## 9. 本文状态与 claim ceiling
 
 本文件当前随 `IGNITION-20260829-148` 处于任务分支候选状态；它尚未进入正式 `main`，不得声称主分支已经拥有本操作法。其版本、Current identity、入口同步、完整模式、生命周期、operation playbook、碰撞协议和输出合同由本任务后续原子步骤补齐，并继续受同一 Draft-only 生命周期约束。
 
