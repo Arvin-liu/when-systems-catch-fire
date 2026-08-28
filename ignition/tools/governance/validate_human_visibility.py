@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 import urllib.parse
 from pathlib import Path
 
@@ -100,7 +101,19 @@ def validate() -> dict:
 
     for path in CORE + ["docs/project-current-state.md", "SUMMARY.md"]:
         text = file_for(path).read_text(encoding="utf-8")
-        if "<details" in text.lower():
+        if path == "README.md":
+            try:
+                from tools.validate_human_front_door import validate_readme_structure
+            except ModuleNotFoundError:
+                tools_path = str(ROOT / "tools")
+                if tools_path not in sys.path:
+                    sys.path.insert(0, tools_path)
+                from validate_human_front_door import validate_readme_structure
+            try:
+                validate_readme_structure(text)
+            except AssertionError as exc:
+                errors.append(f"README front-door structure invalid: {exc}")
+        elif "<details" in text.lower():
             errors.append(f"essential content is hidden by details: {path}")
         for target in local_links(path):
             if not file_for(target).exists():

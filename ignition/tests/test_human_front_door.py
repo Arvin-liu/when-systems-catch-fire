@@ -1,6 +1,7 @@
 import json
 import re
 import unittest
+from pathlib import Path
 
 from tools.validate_human_front_door import (
     AI_HANDOFF,
@@ -12,6 +13,7 @@ from tools.validate_human_front_door import (
     LLMS,
     README,
     validate_all,
+    validate_readme_structure,
     validate_texts,
     validate_version_front_doors,
 )
@@ -34,11 +36,38 @@ class HumanFrontDoorTests(unittest.TestCase):
         # The canonical generator materializes every visible registry component;
         # hidden components remain represented in coverage data.
         spec = json.loads((CURRENT_STATE.parent.parent / "data/architecture/interactive-system-map.json").read_text(encoding="utf-8"))
-        self.assertEqual(result["interactive_system_map_nodes"], len(spec["nodes"]))
+        self.assertEqual(result["system_map_source_link_nodes"], len(spec["nodes"]))
 
-    def test_visible_result_sections_are_ordered_and_unfolded(self):
+    def test_visible_result_sections_are_ordered_and_machine_state_is_folded(self):
         validate_texts(self.readme, self.guide, self.current_state, self.human_reading)
-        self.assertNotIn("<details", self.readme.lower())
+        self.assertIn("<details>", self.readme)
+        self.assertLess(self.readme.index("### 项目现状"), self.readme.index("<details>"))
+        self.assertGreater(self.readme.index("CURRENT-SNAPSHOT:BEGIN"), self.readme.index("<details>"))
+
+    def test_details_visibility_fixture_has_positive_and_negative_cases(self):
+        fixture_path = Path(__file__).parent / "fixtures/human-front-door-details-r1.json"
+        fixture = json.loads(fixture_path.read_text(encoding="utf-8"))
+        for case in fixture["cases"]:
+            with self.subTest(case=case["id"]):
+                mutated = self.readme
+                if case["mutation"] == "fold-project-definition":
+                    mutated = mutated.replace("点火是一个仓库原生", "<details>\n点火是一个仓库原生\n</details>", 1)
+                elif case["mutation"] == "fold-value-charter":
+                    line = next(line for line in mutated.splitlines() if line.startswith("项目的规范性方向由"))
+                    mutated = mutated.replace(line, f"<details>\n{line}\n</details>", 1)
+                elif case["mutation"] == "fold-project-current":
+                    mutated = mutated.replace("### 项目现状", "<details>\n### 项目现状\n</details>", 1)
+                elif case["mutation"] == "fold-results-entry":
+                    mutated = mutated.replace("## 3. 结果与火种", "<details>\n## 3. 结果与火种\n</details>", 1)
+                elif case["mutation"] == "fold-architecture-entry":
+                    mutated = mutated.replace("## 4. 整体架构", "<details>\n## 4. 整体架构\n</details>", 1)
+                elif case["mutation"] == "duplicate-project-current":
+                    mutated = mutated.replace("### 项目现状", "### 项目现状\n\n### 项目现状", 1)
+                if case["expected"] == "PASS":
+                    validate_readme_structure(mutated)
+                else:
+                    with self.assertRaises(AssertionError):
+                        validate_readme_structure(mutated)
 
     def test_each_capability_has_direct_readme_link(self):
         for name, path in CAPABILITIES.items():

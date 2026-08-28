@@ -44,6 +44,13 @@ VERSION_FACTS = {
     "historical_map": "0.14.0",
     "earlier_historical_map": "0.13.0",
 }
+DETAILS_TOKEN_RE = re.compile(r"<details\b[^>]*>|</details\s*>", re.IGNORECASE)
+CURRENT_SNAPSHOT_BLOCK_RE = re.compile(
+    r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n"
+    r".*?<!-- CURRENT-SNAPSHOT:END -->\n?",
+    re.DOTALL,
+)
+README_DETAILS_SUMMARY = "机器状态与工程细节（展开查看）"
 
 
 def require(condition: bool, message: str) -> None:
@@ -51,14 +58,83 @@ def require(condition: bool, message: str) -> None:
         raise AssertionError(message)
 
 
+def _details_spans(text: str) -> tuple[list[tuple[int, int]], int, int]:
+    stack: list[re.Match[str]] = []
+    spans: list[tuple[int, int]] = []
+    unmatched_closes = 0
+    for match in DETAILS_TOKEN_RE.finditer(text):
+        token = match.group(0).lower()
+        if token.startswith("<details"):
+            stack.append(match)
+        elif stack:
+            opening = stack.pop()
+            spans.append((opening.start(), match.end()))
+        else:
+            unmatched_closes += 1
+    return spans, len(stack), unmatched_closes
+
+
+def _inside_details(position: int, spans: list[tuple[int, int]]) -> bool:
+    return any(start < position < end for start, end in spans)
+
+
+def _outside_occurrence(text: str, needle: str, spans: list[tuple[int, int]]) -> bool:
+    return any(not _inside_details(match.start(), spans) for match in re.finditer(re.escape(needle), text))
+
+
+def validate_readme_structure(readme: str) -> None:
+    spans, unclosed, unmatched_closes = _details_spans(readme)
+    require(not unclosed and not unmatched_closes, "README details tags are not balanced")
+    require(len(spans) == 1, "README must have exactly one details container for machine state")
+    details_start, details_end = spans[0]
+    summary = f"<summary>{README_DETAILS_SUMMARY}</summary>"
+    require(readme.count(summary) == 1, "README machine-state details summary is missing or duplicated")
+    summary_position = readme.index(summary)
+    require(details_start < summary_position < details_end, "README details summary is outside its container")
+
+    visible_h2 = [
+        (match.group(1).strip(), match.start())
+        for match in re.finditer(r"^## (?!#)(.+?)\s*$", readme, re.MULTILINE)
+        if not _inside_details(match.start(), spans)
+    ]
+    required_h2 = ["1. 项目与价值", "2. 如何使用", "3. 结果与火种", "4. 整体架构", "5. 致谢"]
+    require([title for title, _ in visible_h2] == required_h2, "README essential H2 sections must remain visible and ordered")
+
+    current_headings = list(re.finditer(r"^### 项目现状\s*$", readme, re.MULTILINE))
+    require(len(current_headings) == 1, "README must have exactly one human project-current-state heading")
+    require(not _inside_details(current_headings[0].start(), spans), "README project current state is hidden by details")
+
+    for phrase, label in (
+        ("点火是一个", "project definition"),
+        ("生命共同体价值宪章", "value charter"),
+        ("工程建设阶段已经收口", "engineering closure"),
+        ("使用点火生产", "production transition"),
+        ("AWAIT_OWNER_PRODUCTION_BRIEF", "Owner production brief handoff"),
+        ("OWNER_DEFERRED", "deferred external qualification"),
+        ("OWNER_REVIEW_PENDING", "Owner review state"),
+        ("PUBLICATION_ACCEPTANCE_NOT_GRANTED", "publication acceptance state"),
+        ("HUMAN-READING.md", "human reading route"),
+        ("RESULTS/LATEST.md", "current results route"),
+        ("火种", "Fire Seeds route"),
+        ("ignition-system-architecture.svg", "architecture route"),
+    ):
+        require(_outside_occurrence(readme, phrase, spans), f"README hides essential {label}")
+
+    blocks = list(CURRENT_SNAPSHOT_BLOCK_RE.finditer(readme))
+    require(len(blocks) == 1, "README must contain exactly one generated Current Snapshot block")
+    require(_inside_details(blocks[0].start(), spans), "README generated Current Snapshot must be folded")
+    for phrase in ("architecture_counts", "live_attempt_projection", "task_lineage", "### 当前主干怎样理解"):
+        require(phrase in readme[details_start:details_end], f"README machine detail is outside the details container: {phrase}")
+
+
 def validate_texts(readme: str, guide: str, current_state: str, human_reading: str) -> None:
     required_order = ["## 1. 项目与价值", "## 2. 如何使用", "## 3. 结果与火种", "## 4. 整体架构", "## 5. 致谢"]
+    validate_readme_structure(readme)
     positions = [readme.index(heading) for heading in required_order]
     require(positions == sorted(positions), "README visible result architecture is out of order")
-    require("<details" not in readme.lower(), "README hides essential content")
     require("HUMAN-READING.md" in readme and "RESULTS/LATEST.md" in readme, "README lacks current human result entrances")
     require("火种" in readme and "价值宪章" in readme and "STATE-CHANGELOG" in readme, "README lacks the value, Fire Seeds and AI recovery routes")
-    require("透明可点击完整总架构图 SVG" in readme and "ignition-system-architecture.svg" in readme, "README lacks the single complete architecture entry")
+    require("ignition-system-architecture.svg" in readme, "README lacks the single complete architecture entry")
     require("human-surface-editorial-contract.md" in readme or "Human Surface" in readme, "README lacks the Human Surface editorial contract route")
     require("任务 101" in current_state, "current state omits task 101")
     require("机器记录" in human_reading and "人类" in human_reading, "human reading page omits machine-human boundary")
@@ -88,10 +164,10 @@ def validate_system_map(root: Path = ROOT) -> int:
     validate_spec(spec, root)
     require(SYSTEM_MAP_SVG.read_bytes() == render_svg(spec, root), "repository system-map SVG is stale")
     svg_root = ET.fromstring(SYSTEM_MAP_SVG.read_bytes())
-    links = svg_root.findall(".//{http://www.w3.org/2000/svg}a")
-    require(len(links) == len(spec["nodes"]), "not every system-map node is clickable")
-    require(all(link.attrib.get("href", "").startswith("https://github.com/Arvin-liu/when-systems-catch-fire/") for link in links), "system-map node link is not canonical GitHub HTTPS")
-    require({node["id"] for node in spec["nodes"]} == {link.attrib.get("data-node-id") for link in links}, "system-map SVG ids diverge from spec")
+    source_links = svg_root.findall(".//{http://www.w3.org/2000/svg}a")
+    require(len(source_links) == len(spec["nodes"]), "system-map SVG source link metadata does not cover every node")
+    require(all(link.attrib.get("href", "").startswith("https://github.com/Arvin-liu/when-systems-catch-fire/") for link in source_links), "system-map source link metadata is not canonical GitHub HTTPS")
+    require({node["id"] for node in spec["nodes"]} == {link.attrib.get("data-node-id") for link in source_links}, "system-map source link metadata ids diverge from spec")
     require(not any(node["id"] == "l7" for node in spec["nodes"]), "system map adds forbidden L7")
     return len(spec["nodes"])
 
@@ -104,7 +180,7 @@ def validate_all(root: Path = ROOT) -> dict[str, object]:
     visibility = validate_human_visibility()
     human_surface = validate_human_surface_contract()
     nodes = validate_system_map(root)
-    return {"status": "PASS", "scope": "repository_native_human_surfaces_only", "interactive_system_map_nodes": nodes, "human_visibility": visibility, "human_surface_contract": human_surface, "external_truth_verified": False}
+    return {"status": "PASS", "scope": "repository_native_human_surfaces_only", "system_map_source_link_nodes": nodes, "human_visibility": visibility, "human_surface_contract": human_surface, "external_truth_verified": False}
 
 
 if __name__ == "__main__":
