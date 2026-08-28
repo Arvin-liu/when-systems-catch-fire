@@ -71,6 +71,14 @@ class IgnitionOperatingMethodFoundationTests(unittest.TestCase):
         )
         self.assertTrue(any("SOURCE_EXPLICIT_VIEW_IS_SOURCE_DERIVED" in error for error in validator.validate(candidate)))
 
+    def test_status_only_entries_cannot_receive_callable_playbooks(self) -> None:
+        candidate = self.source.replace(
+            "STATUS_ONLY_ENTRIES_HAVE_NO_CALLABLE_PLAYBOOK",
+            "STATUS_ONLY_ENTRIES_MAY_HAVE_PLAYBOOKS",
+            1,
+        )
+        self.assertTrue(any("STATUS_ONLY_ENTRIES_HAVE_NO_CALLABLE_PLAYBOOK" in error for error in validator.validate(candidate)))
+
 
 if __name__ == "__main__":
     unittest.main()

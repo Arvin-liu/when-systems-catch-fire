@@ -17,6 +17,7 @@ from classify_ignition_run_mode import ModeRoutingError, classify_mode  # noqa: 
 
 
 REGISTRY_PATH = ROOT / "data/operations/ignition-operation-capability-registry-r1.json"
+PLAYBOOKS_PATH = "ignition/data/operations/ignition-operation-playbooks-r1.json"
 FIXTURE_PATH = ROOT / "tests/fixtures/ignition-operating-method/lifecycle-planning-r1.json"
 CORE_CURRENT_READS = (
     "ignition/OPERATING-METHOD.md",
@@ -103,8 +104,10 @@ def plan_run(request: dict[str, Any], operation_id: str, current_ref: str) -> di
         decision = "STOP"
         stop_reason = "STOP_SPLIT_OR_CLARIFY"
 
+    callable_playbook_reads = [PLAYBOOKS_PATH] if operation["current_status"] in {"CURRENT", "CURRENT_BOUNDED"} else []
     reads = _dedupe(
         list(CORE_CURRENT_READS)
+        + callable_playbook_reads
         + operation["required_current_reads"]
         + [source["path"] for source in operation["authoritative_sources"]]
         + operation["applicable_governance"]
@@ -123,6 +126,7 @@ def plan_run(request: dict[str, Any], operation_id: str, current_ref: str) -> di
         "minimal_read_plan": reads,
         "operation_claim_ceiling": operation["claim_ceiling"],
         "known_limits": operation["known_limits"],
+        "playbook_source": PLAYBOOKS_PATH if callable_playbook_reads else None,
         "side_effects_authorized_by_plan": False,
     }
 

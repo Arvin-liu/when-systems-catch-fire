@@ -50,6 +50,15 @@ class IgnitionOperationLifecycleTests(unittest.TestCase):
         with self.assertRaises(planner.RunPlanningError):
             planner.plan_run(request, "knowledge.validate_claim", "")
 
+    def test_only_callable_current_operations_load_playbook_index(self) -> None:
+        request = {"request_envelope": {"user_request": "请核查断言。"}, "input_objects": []}
+        current = planner.plan_run(request, "knowledge.validate_claim", "refs/heads/main@example-current")
+        historical = planner.plan_run(request, "repository.apply_iteration_method_1_3", "refs/heads/main@example-current")
+        self.assertEqual(current["playbook_source"], planner.PLAYBOOKS_PATH)
+        self.assertIn(planner.PLAYBOOKS_PATH, current["minimal_read_plan"])
+        self.assertIsNone(historical["playbook_source"])
+        self.assertNotIn(planner.PLAYBOOKS_PATH, historical["minimal_read_plan"])
+
 
 if __name__ == "__main__":
     unittest.main()

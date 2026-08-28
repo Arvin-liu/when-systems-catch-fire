@@ -38,6 +38,8 @@ BOUNDARY_TOKENS = (
     "CANDIDATE_NEW_REQUIRES_CANONICAL_COLLISION_EVIDENCE",
     "CANDIDATE_IS_NOT_REGISTERED_ASSET",
     "NO_UNDEFINED_PSEUDO_QUANTIFICATION",
+    "PLAYBOOKS_ARE_DERIVED_FROM_CAPABILITY_REGISTRY",
+    "STATUS_ONLY_ENTRIES_HAVE_NO_CALLABLE_PLAYBOOK",
 )
 PRIORITY_TOKENS = (
     "CURRENT_USER_OR_OWNER_EXPLICIT_REQUEST",
@@ -132,6 +134,11 @@ def validate(text: str | None = None) -> list[str]:
         "UNRESOLVED",
         "registry_action 固定为 NONE",
         "metric 名称、单位、定义域、计算方法和验证方法",
+        "真实 registry 派生出 15 个 playbooks",
+        "public name、输入、输出、Current status、run mode",
+        "当前 4 个非可调用项只出现在排除表",
+        "没有登记通用自主检索 operation",
+        "executor/orchestration 没有 Current callable operation",
     )
     for phrase in required_phrases:
         if phrase not in normalized:

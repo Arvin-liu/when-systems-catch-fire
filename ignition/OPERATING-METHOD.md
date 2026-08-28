@@ -350,8 +350,31 @@ candidate-new 只属于本次 Run 的候选区；`registry_action` 固定为 `NO
 
 机器输入合同位于 [ignition-object-collision-run-r1.schema.json](schemas/operations/ignition-object-collision-run-r1.schema.json)，决定性校验与渲染入口是 [evaluate_object_collision_run.py](tools/operations/evaluate_object_collision_run.py)。它核验 canonical ID/hash/disposition 并分开输出 source-derived findings、existing canonical matches、post-collision increments、candidate-new 与 unresolved；validator PASS 只证明协议结构闭合，不证明输入或分析正确。
 
-## 11. 本文状态与 claim ceiling
+## 11. Registry-derived operation playbooks
 
-本文件当前随 `IGNITION-20260829-148` 处于任务分支候选状态；它尚未进入正式 `main`，不得声称主分支已经拥有本操作法。其版本、Current identity、入口同步、operation playbook 和输出合同由本任务后续原子步骤补齐，并继续受同一 Draft-only 生命周期约束。
+`PLAYBOOKS_ARE_DERIVED_FROM_CAPABILITY_REGISTRY`
+
+每个同时满足以下条件的顶层 operation 有且只有一个可调用 playbook：registry status 为 `CURRENT` 或 `CURRENT_BOUNDED`，且 `ai_callability` 为 `PUBLIC` 或 `PUBLIC_BOUNDED`。当前任务分支快照由真实 registry 派生出 15 个 playbooks；数量不是手写常量，registry 变化时一致性校验必须迫使 playbook 集同步变化。
+
+每个 playbook 只补充 operation-specific 的：
+
+1. 用户常见自然语言意图；
+2. 执行步骤；
+3. stop conditions；
+4. 不得做什么。
+
+public name、输入、输出、Current status、run mode、operation-specific reads、authority、governance、validator 和 claim ceiling 始终从 Capability Registry 投影，不能在 playbook 中建立第二份能力真相。统一 lifecycle 先完成 operation/status gate；只有 `CURRENT` / `CURRENT_BOUNDED` operation 才加载其 playbook，再构建完整最小读取计划。
+
+`STATUS_ONLY_ENTRIES_HAVE_NO_CALLABLE_PLAYBOOK`
+
+当前 4 个非可调用项只出现在排除表：Reference Executor 为 `REFERENCE_ONLY`，live external invocation 为 `OWNER_DEFERRED`，Iteration Method 1.3.0 为 `HISTORICAL`，REOS FULL 为 `UNSUPPORTED`。它们只能返回 status/boundary，不能因为写了一段“使用说明”而获得执行入口。
+
+类别审计必须如实保留能力缺口。当前 source/evidence research 只有 evidence-link validation 与 REOS LIGHT obligation coordination，没有登记通用自主检索 operation；mechanism/model mapping 与 synthesis/open-question generation 只能通过 collision、claim governance 和 bounded obligation coordination 部分覆盖；executor/orchestration 没有 Current callable operation。Agent 不得用自己的通用模型能力伪装成点火 registry 已有能力。
+
+canonical authored index 位于 [ignition-operation-playbooks-r1.json](data/operations/ignition-operation-playbooks-r1.json)，[operation playbooks human view](docs/operations/ignition-operation-playbooks-r1.md) 是由该索引和 Capability Registry 共同生成的阅读视图。validator 必须证明：可调用 operation 完整一一覆盖、排除项精确、11 类审计闭合、generated view 无漂移。
+
+## 12. 本文状态与 claim ceiling
+
+本文件当前随 `IGNITION-20260829-148` 处于任务分支候选状态；它尚未进入正式 `main`，不得声称主分支已经拥有本操作法。其版本、Current identity、入口同步和输出合同由本任务后续原子步骤补齐，并继续受同一 Draft-only 生命周期约束。
 
 本文只建立 AI 使用入口的基础调用契约、authority priority、Current-first 纪律及与 `ITERATION.md` 的不可合并边界。它不授予仓库修改或外部行动权限，不建立新架构层或真值层，也不证明任何输入、分析、断言、模型、写作或现实结果正确。
