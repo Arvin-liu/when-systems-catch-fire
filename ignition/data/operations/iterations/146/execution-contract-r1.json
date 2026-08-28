@@ -1,0 +1,30 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260828-146",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "1fa65cdc397442ccc442f4a1f45be0eb8316850b",
+    "command_path": "agent-commands/IGNITION-20260828-146-readme-human-front-door-simplification-r2.md"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "b95ed581ee3ca77599246041f3f39f0909452e74"
+  },
+  "identity_impact": "PRESENTATION_ONLY",
+  "expected_task_branch": "codex/ignition-146-readme-human-front-door-simplification-r2-20260828",
+  "expected_receipt_branch": "relay/receipts/ignition-146-readme-human-front-door-simplification-r2-20260828",
+  "required_release_ref": "refs/heads/main",
+  "no_owner_intermediate": true,
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260828-146",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "previous_canonical_current_task": "IGNITION-20260828-145",
+    "previous_formal_task": "IGNITION-20260828-145",
+    "release_candidate_task": "IGNITION-20260828-146",
+    "publication_witness_task": "IGNITION-20260828-146"
+  },
+  "claim_ceiling": "Task146 repository-local Human Front Door simplification, generated Current-surface decoupling, deterministic regression and ref-derived release evidence only; engineering phase remains closed, Owner authority remains required for production, production waits for Owner brief, and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}
