@@ -51,6 +51,20 @@ class IgnitionOperationCapabilityRegistryR1Tests(unittest.TestCase):
         current["authoritative_sources"][0]["path"] = "ignition/data/operations/does-not-exist.json"
         self.assertTrue(any("authoritative source missing" in error for error in validate(candidate)))
 
+    def test_object_collision_must_read_both_canonical_registries(self) -> None:
+        candidate = copy.deepcopy(self.registry)
+        collision = next(row for row in candidate["operations"] if row["operation_id"] == "knowledge.collide_object")
+        collision["required_current_reads"].remove(
+            "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+        )
+        self.assertTrue(any("both Current canonical registries" in error for error in validate(candidate)))
+
+    def test_object_collision_cannot_authorize_side_effects(self) -> None:
+        candidate = copy.deepcopy(self.registry)
+        collision = next(row for row in candidate["operations"] if row["operation_id"] == "knowledge.collide_object")
+        collision["repository_mutation_permission"] = "EXPLICIT_USER_OR_OWNER_AUTHORIZATION_AND_ITERATION_METHOD"
+        self.assertTrue(any("READ_ONLY_RUN cannot permit repository mutation" in error for error in validate(candidate)))
+
 
 if __name__ == "__main__":
     unittest.main()

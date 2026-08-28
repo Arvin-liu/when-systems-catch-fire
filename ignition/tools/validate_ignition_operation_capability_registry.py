@@ -225,6 +225,25 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     if operation_map.get("repository.apply_iteration_method", {}).get("current_status") != "CURRENT":
         errors.append("Current Iteration Method operation is missing")
 
+    collision = operation_map.get("knowledge.collide_object")
+    if collision is None:
+        errors.append("bounded object-collision operation is missing")
+    else:
+        if collision["current_status"] != "CURRENT_BOUNDED":
+            errors.append("knowledge.collide_object must remain CURRENT_BOUNDED")
+        if collision["default_execution_mode"] != "READ_ONLY_RUN":
+            errors.append("knowledge.collide_object must remain READ_ONLY_RUN")
+        if collision["repository_mutation_permission"] != "FORBIDDEN" or collision["external_action_permission"] != "FORBIDDEN":
+            errors.append("knowledge.collide_object cannot authorize side effects")
+        required_collision_reads = {
+            "ignition/data/foundation/function-assets/identity-cards.jsonl",
+            "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        }
+        if not required_collision_reads <= set(collision["required_current_reads"]):
+            errors.append("knowledge.collide_object must read both Current canonical registries")
+        if "candidate registration" not in collision["claim_ceiling"]:
+            errors.append("knowledge.collide_object claim ceiling must prohibit candidate registration")
+
     tick = chr(96)
     required_markers = {
         ROOT / "ITERATION.md": [f"Current: {tick}1.4.0{tick}", "governs how 点火 changes itself"],

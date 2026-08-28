@@ -36,8 +36,8 @@
     ],
     "pack_capability_count": 10,
     "represented_pack_capability_count": 10,
-    "non_pack_operation_count": 8,
-    "operation_count": 18,
+    "non_pack_operation_count": 9,
+    "operation_count": 19,
     "census_rule": "Every capability declared by the four Current Pack manifests is represented exactly once; non-Pack entries require a Current, bounded, deferred, reference, historical or unsupported authority outside task-local history.",
     "non_inference_rule": "Implementation presence, a past test, a historical case, a Reference Executor feature or a Pack hook does not by itself establish a Current public operation or grant execution authority."
   },
@@ -203,6 +203,49 @@
       ],
       "historical_relations": [],
       "claim_ceiling": "Deterministic repository-local Current recovery only; no external truth, permission or epistemic upgrade."
+    },
+    {
+      "operation_id": "knowledge.collide_object",
+      "public_name": {"zh": "运行受约束对象碰撞", "en": "Run a bounded object collision"},
+      "description": "Decompose a user-supplied note, article, case, argument or source object; preserve provenance; collide it with Current function and non-function canonical registries; and separate source-derived content from bounded post-collision increments.",
+      "operation_class": "KNOWLEDGE",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/OPERATING-METHOD.md", "role": "METHOD_AUTHORITY"},
+        {"path": "ignition/schemas/operations/ignition-object-collision-run-r1.schema.json", "role": "BOUNDARY_AUTHORITY"}
+      ],
+      "owning_component": "Ignition Operating Method / Foundation Claim Governance",
+      "pack_binding": null,
+      "accepted_input_types": ["note", "article", "case", "argument", "source material", "structured collision run"],
+      "output_types": ["provenance-preserving object decomposition", "verified canonical collision matches", "bounded relationship findings", "unregistered candidate-new records"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/OPERATING-METHOD.md",
+        "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md"
+      ],
+      "applicable_governance": [
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/operations/evaluate_object_collision_run.py"},
+        {"kind": "UNIT_TEST", "path": "ignition/tests/test_ignition_object_collision.py"}
+      ],
+      "known_limits": [
+        "Canonical registry matches establish repository identity and relationship evidence, not truth, proof, external evidence or novelty.",
+        "Input-explicit viewpoints remain source-derived and cannot be counted as Ignition discoveries.",
+        "CANDIDATE_NEW requires actual nearest canonical matches and never writes a registry automatically.",
+        "Undefined percentages, similarity scores and isomorphism scores are prohibited."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Repository-local object decomposition and canonical collision relation only; no candidate registration, truth, evidence, proof, causality, novelty or epistemic acceptance."
     },
     {
       "operation_id": "knowledge.project_results",

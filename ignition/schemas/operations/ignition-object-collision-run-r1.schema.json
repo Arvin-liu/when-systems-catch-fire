@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/operations/ignition-object-collision-run-r1.schema.json",
+  "title": "Ignition Object Collision Run R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "current_ref",
+    "operation_id",
+    "run_mode",
+    "input_object",
+    "normalized_units",
+    "canonical_search",
+    "findings",
+    "candidate_new",
+    "quantitative_assessments",
+    "side_effects"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-object-collision-run-r1"},
+    "run_id": {"$ref": "#/$defs/nonblank"},
+    "current_ref": {"$ref": "#/$defs/nonblank"},
+    "operation_id": {"const": "knowledge.collide_object"},
+    "run_mode": {"const": "READ_ONLY_RUN"},
+    "input_object": {"$ref": "#/$defs/inputObject"},
+    "normalized_units": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/normalizedUnit"}
+    },
+    "canonical_search": {"$ref": "#/$defs/canonicalSearch"},
+    "findings": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/finding"}
+    },
+    "candidate_new": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/candidateNew"}
+    },
+    "quantitative_assessments": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/quantitativeAssessment"}
+    },
+    "side_effects": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository_mutation", "external_action", "registry_write"],
+      "properties": {
+        "repository_mutation": {"const": false},
+        "external_action": {"const": false},
+        "registry_write": {"const": false}
+      }
+    }
+  },
+  "$defs": {
+    "nonblank": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "inputObject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["object_id", "object_type", "provenance"],
+      "properties": {
+        "object_id": {"$ref": "#/$defs/nonblank"},
+        "object_type": {
+          "enum": ["MARKDOWN", "PDF", "NOTE", "ARTICLE", "CASE", "ARGUMENT", "SOURCE_MATERIAL", "WEBPAGE", "CODE", "OTHER"]
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source_kind", "source_locator", "supplied_by", "content_sha256", "version_or_captured_at"],
+          "properties": {
+            "source_kind": {"enum": ["USER_SUPPLIED_LOCAL", "USER_SUPPLIED_URL", "USER_PASTED", "REPOSITORY_SOURCE", "OTHER"]},
+            "source_locator": {"$ref": "#/$defs/nonblank"},
+            "supplied_by": {"$ref": "#/$defs/nonblank"},
+            "content_sha256": {"$ref": "#/$defs/sha256"},
+            "version_or_captured_at": {"$ref": "#/$defs/nonblank"}
+          }
+        }
+      }
+    },
+    "normalizedUnit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unit_id", "category", "text", "source_locator", "input_origin"],
+      "properties": {
+        "unit_id": {"$ref": "#/$defs/nonblank"},
+        "category": {"enum": ["SOURCE_FACT", "SOURCE_CLAIM", "INTERPRETATION", "MECHANISM", "QUESTION"]},
+        "text": {"$ref": "#/$defs/nonblank"},
+        "source_locator": {"$ref": "#/$defs/nonblank"},
+        "input_origin": {"const": "SOURCE_EXPLICIT"}
+      }
+    },
+    "mappingReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reviewer_kind", "method", "rationale", "not_identity_authority"],
+      "properties": {
+        "reviewer_kind": {"enum": ["CURRENT_AGENT", "HUMAN", "DECLARED_TOOL"]},
+        "method": {"$ref": "#/$defs/nonblank"},
+        "rationale": {"$ref": "#/$defs/nonblank"},
+        "not_identity_authority": {"const": true}
+      }
+    },
+    "canonicalMatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["match_id", "registry_kind", "canonical_id", "query_reference", "match_basis", "unit_ids", "collision_evidence"],
+      "properties": {
+        "match_id": {"$ref": "#/$defs/nonblank"},
+        "registry_kind": {"enum": ["FUNCTION_ASSET", "NONFUNCTION_CLAIM"]},
+        "canonical_id": {"$ref": "#/$defs/nonblank"},
+        "query_reference": {"$ref": "#/$defs/nonblank"},
+        "match_basis": {"enum": ["EXACT_ID", "EXACT_TITLE", "CURRENT_ALIAS", "REVIEWED_MAPPING"]},
+        "unit_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "collision_evidence": {"$ref": "#/$defs/nonblank"},
+        "mapping_review": {"$ref": "#/$defs/mappingReview"}
+      }
+    },
+    "canonicalSearch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registries_searched", "matches"],
+      "properties": {
+        "registries_searched": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "ignition/data/foundation/function-assets/identity-cards.jsonl",
+              "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+            ]
+          }
+        },
+        "matches": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/canonicalMatch"}
+        }
+      }
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finding_id", "statement", "relationship", "unit_ids", "canonical_match_ids", "post_collision_increment"],
+      "properties": {
+        "finding_id": {"$ref": "#/$defs/nonblank"},
+        "statement": {"$ref": "#/$defs/nonblank"},
+        "relationship": {"enum": ["DUPLICATE_OF", "EXTENSION_OF", "COMBINATION_OF", "CONFLICT_WITH", "SOURCE_DERIVED", "UNRESOLVED"]},
+        "unit_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "canonical_match_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "post_collision_increment": {"type": "boolean"}
+      }
+    },
+    "candidateNew": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_id", "statement", "relationship", "derived_from_unit_ids", "nearest_canonical_match_ids", "collision_delta", "not_verbatim_from_input", "source_explicit_overlap_review", "registry_action"],
+      "properties": {
+        "candidate_id": {"$ref": "#/$defs/nonblank"},
+        "statement": {"$ref": "#/$defs/nonblank"},
+        "relationship": {"const": "CANDIDATE_NEW"},
+        "derived_from_unit_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "nearest_canonical_match_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "collision_delta": {"$ref": "#/$defs/nonblank"},
+        "not_verbatim_from_input": {"const": true},
+        "source_explicit_overlap_review": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["reviewed_unit_ids", "decision", "method", "rationale"],
+          "properties": {
+            "reviewed_unit_ids": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {"$ref": "#/$defs/nonblank"}
+            },
+            "decision": {"const": "NOT_SOURCE_EXPLICIT"},
+            "method": {"$ref": "#/$defs/nonblank"},
+            "rationale": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "registry_action": {"const": "NONE"}
+      }
+    },
+    "quantitativeAssessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric_id", "metric_name", "metric_value", "metric_definition"],
+      "properties": {
+        "metric_id": {"$ref": "#/$defs/nonblank"},
+        "metric_name": {"$ref": "#/$defs/nonblank"},
+        "metric_value": {"type": "number"},
+        "metric_definition": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["unit", "domain", "calculation", "validation"],
+          "properties": {
+            "unit": {"$ref": "#/$defs/nonblank"},
+            "domain": {"$ref": "#/$defs/nonblank"},
+            "calculation": {"$ref": "#/$defs/nonblank"},
+            "validation": {"$ref": "#/$defs/nonblank"}
+          }
+        }
+      }
+    }
+  }
+}

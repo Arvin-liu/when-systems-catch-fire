@@ -55,6 +55,22 @@ class IgnitionOperatingMethodFoundationTests(unittest.TestCase):
         )
         self.assertTrue(any("HISTORICAL_FILE_IS_NOT_CANONICAL_IDENTITY" in error for error in validator.validate(candidate)))
 
+    def test_candidate_new_requires_actual_collision_evidence(self) -> None:
+        candidate = self.source.replace(
+            "CANDIDATE_NEW_REQUIRES_CANONICAL_COLLISION_EVIDENCE",
+            "CANDIDATE_NEW_MAY_USE_MEMORY",
+            1,
+        )
+        self.assertTrue(any("CANDIDATE_NEW_REQUIRES" in error for error in validator.validate(candidate)))
+
+    def test_source_explicit_view_is_not_ignition_discovery(self) -> None:
+        candidate = self.source.replace(
+            "SOURCE_EXPLICIT_VIEW_IS_SOURCE_DERIVED_NOT_IGNITION_DISCOVERY",
+            "SOURCE_VIEW_MAY_BE_NEW_DISCOVERY",
+            1,
+        )
+        self.assertTrue(any("SOURCE_EXPLICIT_VIEW_IS_SOURCE_DERIVED" in error for error in validator.validate(candidate)))
+
 
 if __name__ == "__main__":
     unittest.main()

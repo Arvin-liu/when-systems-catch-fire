@@ -295,8 +295,63 @@ D1、D2、D5、T7、A5 等旧编号或 label 在作为“点火当前已有资�
 
 决定性离线解析器是 [resolve_current_canonical_asset.py](tools/foundation/resolve_current_canonical_asset.py)，fixture 是 [canonical-resolution-r1.json](tests/fixtures/ignition-operating-method/canonical-resolution-r1.json)。解析器只报告 Current identity 与原有 disposition/claim ceiling；它不修改 registry、不复活历史资产，也不证明数学、经验或外部世界中的真值。
 
-## 10. 本文状态与 claim ceiling
+## 10. “碰撞 / 跑一下点火”的通用对象协议
 
-本文件当前随 `IGNITION-20260829-148` 处于任务分支候选状态；它尚未进入正式 `main`，不得声称主分支已经拥有本操作法。其版本、Current identity、入口同步、完整模式、生命周期、operation playbook、碰撞协议和输出合同由本任务后续原子步骤补齐，并继续受同一 Draft-only 生命周期约束。
+`knowledge.collide_object` 是笔记、文章、案例、论证和来源材料进入点火时的 `CURRENT_BOUNDED` 候选 operation。它只在 `READ_ONLY_RUN` 中运行；它不修改点火、输入对象、外部系统或任何 canonical registry。
+
+`OBJECT_COLLISION_PRESERVES_INPUT_PROVENANCE`
+
+先冻结对象级 provenance：对象类型、source locator、提供者、版本/抓取时间和可得的 content hash。再把输入拆成最小可追踪单元，每个单元保留原 locator，并且只能标为：
+
+- `SOURCE_FACT` — 来源作为事实陈述给出的内容；这不自动证明它真实；
+- `SOURCE_CLAIM` — 来源明确提出、但仍需证据或治理的断言；
+- `INTERPRETATION` — 来源或分析者对材料的解释；
+- `MECHANISM` — 来源提出或分析后形成的机制候选；
+- `QUESTION` — 来源问题或碰撞后仍未解决的问题。
+
+拆分不能改写来源。source fact 与 source claim 的区别描述的是来源中的话语角色，不是 Agent 对真值的背书。
+
+### 10.1 两类 Current canonical collision 都必须执行
+
+对需要碰撞的对象，最小搜索面同时包含：
+
+1. Current function identity cards；
+2. Current non-function claim registry。
+
+每个实际命中必须给出 registry kind、canonical ID、Current title、record hash、final disposition、claim ceiling、查询依据和 collision evidence。alias 必须先经过第 9 节 Current-first resolver；search result、历史两张表、旧 P1 碰撞模板或模型记忆都不是 identity authority。
+
+在 Current authority 上形成的关系只能是：
+
+- `DUPLICATE_OF` — 输入没有增加可区分内容；
+- `EXTENSION_OF` — 在现有边界内增加限定、条件、反例或适用域；
+- `COMBINATION_OF` — 显式组合多个已命中资产，并保留各自 ceiling；
+- `CONFLICT_WITH` — 输入与 Current identity、disposition、correction 或 claim ceiling 冲突；
+- `SOURCE_DERIVED` — 内容已由输入明确给出；
+- `CANDIDATE_NEW` — 只在完成实际 collision 后形成、尚未登记的候选增量；
+- `UNRESOLVED` — 当前证据不足以唯一建立上述关系。
+
+`SOURCE_EXPLICIT_VIEW_IS_SOURCE_DERIVED_NOT_IGNITION_DISCOVERY`
+
+原始输入已经明确写出的观点、术语、机制或问题必须留在 `INPUT_DERIVED_FINDINGS / SOURCE_DERIVED`；即使它与 canonical asset 一致，也不能重新计为本轮点火发现。真正的点火增量只能是碰撞之后出现且可追溯到实际 matches 的新关系、新边界、冲突、组合、缺口、反例、可检验推论或其它受治理增量。
+
+### 10.2 Candidate-new gate
+
+`CANDIDATE_NEW_REQUIRES_CANONICAL_COLLISION_EVIDENCE`
+
+宣布 `CANDIDATE_NEW` 前，必须列出实际 nearest canonical match IDs、两类 registry 的查询记录、碰撞差异和来源单元。模型“没想起来”、搜索没有执行、只有历史文件、只给一个未验证名字，均不能建立 candidate-new。若没有可靠关系，输出 `UNRESOLVED`。
+
+`CANDIDATE_IS_NOT_REGISTERED_ASSET`
+
+candidate-new 只属于本次 Run 的候选区；`registry_action` 固定为 `NONE`。它不得自动获得正式编号、Current status、claim/evidence maturity、truth、novelty 或 epistemic acceptance，也不得自动写入 registry。正式登记属于另一个有明确仓库修改授权并受 `ITERATION.md` 管理的 Run。
+
+`NO_UNDEFINED_PSEUDO_QUANTIFICATION`
+
+禁止无定义的“同构度 75%”“相似度 80%”或其它看似精确的关系分数。任何定量值必须同时声明 metric 名称、单位、定义域、计算方法和验证方法；否则不输出数字，只给定性关系与 unresolved boundary。
+
+机器输入合同位于 [ignition-object-collision-run-r1.schema.json](schemas/operations/ignition-object-collision-run-r1.schema.json)，决定性校验与渲染入口是 [evaluate_object_collision_run.py](tools/operations/evaluate_object_collision_run.py)。它核验 canonical ID/hash/disposition 并分开输出 source-derived findings、existing canonical matches、post-collision increments、candidate-new 与 unresolved；validator PASS 只证明协议结构闭合，不证明输入或分析正确。
+
+## 11. 本文状态与 claim ceiling
+
+本文件当前随 `IGNITION-20260829-148` 处于任务分支候选状态；它尚未进入正式 `main`，不得声称主分支已经拥有本操作法。其版本、Current identity、入口同步、operation playbook 和输出合同由本任务后续原子步骤补齐，并继续受同一 Draft-only 生命周期约束。
 
 本文只建立 AI 使用入口的基础调用契约、authority priority、Current-first 纪律及与 `ITERATION.md` 的不可合并边界。它不授予仓库修改或外部行动权限，不建立新架构层或真值层，也不证明任何输入、分析、断言、模型、写作或现实结果正确。

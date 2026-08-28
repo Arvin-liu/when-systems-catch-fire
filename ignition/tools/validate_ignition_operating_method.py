@@ -33,6 +33,11 @@ BOUNDARY_TOKENS = (
     "AMBIGUOUS_CANONICAL_REFERENCE",
     "HISTORICAL_FILE_IS_NOT_CANONICAL_IDENTITY",
     "LEGACY_RENAME_CANNOT_BYPASS_DISPOSITION",
+    "OBJECT_COLLISION_PRESERVES_INPUT_PROVENANCE",
+    "SOURCE_EXPLICIT_VIEW_IS_SOURCE_DERIVED_NOT_IGNITION_DISCOVERY",
+    "CANDIDATE_NEW_REQUIRES_CANONICAL_COLLISION_EVIDENCE",
+    "CANDIDATE_IS_NOT_REGISTERED_ASSET",
+    "NO_UNDEFINED_PSEUDO_QUANTIFICATION",
 )
 PRIORITY_TOKENS = (
     "CURRENT_USER_OR_OWNER_EXPLICIT_REQUEST",
@@ -116,6 +121,17 @@ def validate(text: str | None = None) -> list[str]:
         "历史案例文件和旧路径只能作为 provenance/source evidence",
         "裸 D127 当前解析为“认知路径积分函数”的 structural metaphor",
         "解析器只报告 Current identity 与原有 disposition/claim ceiling",
+        "Current function identity cards",
+        "Current non-function claim registry",
+        "DUPLICATE_OF",
+        "EXTENSION_OF",
+        "COMBINATION_OF",
+        "CONFLICT_WITH",
+        "SOURCE_DERIVED",
+        "CANDIDATE_NEW",
+        "UNRESOLVED",
+        "registry_action 固定为 NONE",
+        "metric 名称、单位、定义域、计算方法和验证方法",
     )
     for phrase in required_phrases:
         if phrase not in normalized:
