@@ -25,7 +25,7 @@ STATUS_PATH = ROOT / "data/operations/current-task-lineage-status.json"
 SCHEMA_PATH = ROOT / "schemas/operations/current-task-lineage-status-r1.schema.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
 FIXTURE_PATH = ROOT / "data/operations/iterations/129/fixtures/current-task-lineage-status-fixtures-r1.json"
-CURRENT_SURFACE_IDS = {"homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry"}
+CURRENT_SURFACE_IDS = {"project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry"}
 CURRENT_SNAPSHOT_BLOCK_RE = re.compile(
     r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n.*?<!-- CURRENT-SNAPSHOT:END -->\n?",
     re.DOTALL,

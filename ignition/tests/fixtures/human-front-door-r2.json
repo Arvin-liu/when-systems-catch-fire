@@ -1,0 +1,13 @@
+{
+  "schema_version": "human-front-door-fixtures-r2",
+  "cases": [
+    {"id": "canonical-two-blocks", "mutation": "none", "expected": "PASS"},
+    {"id": "prose-before-project-current", "mutation": "insert-before-current", "expected": "FAIL"},
+    {"id": "duplicate-project-current", "mutation": "duplicate-project-current", "expected": "FAIL"},
+    {"id": "duplicate-value-charter", "mutation": "duplicate-value-charter", "expected": "FAIL"},
+    {"id": "legacy-current-snapshot", "mutation": "insert-snapshot", "expected": "FAIL"},
+    {"id": "legacy-details-wrapper", "mutation": "insert-details", "expected": "FAIL"},
+    {"id": "missing-canonical-charter-link", "mutation": "remove-charter-link", "expected": "FAIL"},
+    {"id": "machine-count-in-homepage", "mutation": "insert-machine-count", "expected": "FAIL"}
+  ]
+}

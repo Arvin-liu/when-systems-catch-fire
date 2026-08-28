@@ -110,7 +110,7 @@ def _compiler_issues(snapshot: dict[str, Any], *, stale: bool = False) -> list[s
     issues: list[str] = []
     for surface in contract["surfaces"]:
         text = (REPO_ROOT / surface["path"]).read_text(encoding="utf-8")
-        if stale and surface["surface_id"] == "homepage-identity":
+        if stale and surface["surface_id"] == "project-current-state":
             current_task_id = snapshot["current_task"]["task_id"]
             text = text.replace(
                 f"current_formal_task: `{current_task_id}`",

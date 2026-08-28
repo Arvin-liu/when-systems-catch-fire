@@ -1,5 +1,4 @@
 import json
-import re
 import unittest
 from pathlib import Path
 
@@ -38,31 +37,34 @@ class HumanFrontDoorTests(unittest.TestCase):
         spec = json.loads((CURRENT_STATE.parent.parent / "data/architecture/interactive-system-map.json").read_text(encoding="utf-8"))
         self.assertEqual(result["system_map_source_link_nodes"], len(spec["nodes"]))
 
-    def test_visible_result_sections_are_ordered_and_machine_state_is_folded(self):
+    def test_visible_project_and_charter_blocks_are_first_and_machine_state_is_absent(self):
         validate_texts(self.readme, self.guide, self.current_state, self.human_reading)
-        self.assertIn("<details>", self.readme)
-        self.assertLess(self.readme.index("### 项目现状"), self.readme.index("<details>"))
-        self.assertGreater(self.readme.index("CURRENT-SNAPSHOT:BEGIN"), self.readme.index("<details>"))
+        self.assertLess(self.readme.index("### 项目现状"), self.readme.index("### 价值宪章"))
+        self.assertLess(self.readme.index("### 价值宪章"), self.readme.index("## 2. 如何使用"))
+        self.assertNotIn("<details", self.readme.lower())
+        self.assertNotIn("CURRENT-SNAPSHOT", self.readme)
+        self.assertNotIn("architecture_counts", self.readme)
 
-    def test_details_visibility_fixture_has_positive_and_negative_cases(self):
-        fixture_path = Path(__file__).parent / "fixtures/human-front-door-details-r1.json"
+    def test_static_front_door_fixture_has_positive_and_negative_cases(self):
+        fixture_path = Path(__file__).parent / "fixtures/human-front-door-r2.json"
         fixture = json.loads(fixture_path.read_text(encoding="utf-8"))
         for case in fixture["cases"]:
             with self.subTest(case=case["id"]):
                 mutated = self.readme
-                if case["mutation"] == "fold-project-definition":
-                    mutated = mutated.replace("点火是一个仓库原生", "<details>\n点火是一个仓库原生\n</details>", 1)
-                elif case["mutation"] == "fold-value-charter":
-                    line = next(line for line in mutated.splitlines() if line.startswith("项目的规范性方向由"))
-                    mutated = mutated.replace(line, f"<details>\n{line}\n</details>", 1)
-                elif case["mutation"] == "fold-project-current":
-                    mutated = mutated.replace("### 项目现状", "<details>\n### 项目现状\n</details>", 1)
-                elif case["mutation"] == "fold-results-entry":
-                    mutated = mutated.replace("## 3. 结果与火种", "<details>\n## 3. 结果与火种\n</details>", 1)
-                elif case["mutation"] == "fold-architecture-entry":
-                    mutated = mutated.replace("## 4. 整体架构", "<details>\n## 4. 整体架构\n</details>", 1)
+                if case["mutation"] == "insert-before-current":
+                    mutated = mutated.replace("### 项目现状", "> 首页导语\n\n### 项目现状", 1)
                 elif case["mutation"] == "duplicate-project-current":
                     mutated = mutated.replace("### 项目现状", "### 项目现状\n\n### 项目现状", 1)
+                elif case["mutation"] == "duplicate-value-charter":
+                    mutated = mutated.replace("### 价值宪章", "### 价值宪章\n\n### 价值宪章", 1)
+                elif case["mutation"] == "insert-snapshot":
+                    mutated = mutated.replace("### 价值宪章", "<!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->\nlegacy\n<!-- CURRENT-SNAPSHOT:END -->\n\n### 价值宪章", 1)
+                elif case["mutation"] == "insert-details":
+                    mutated = mutated.replace("### 价值宪章", "<details>\n### 价值宪章\n</details>", 1)
+                elif case["mutation"] == "remove-charter-link":
+                    mutated = mutated.replace("[完整《生命共同体价值宪章》](../ignition/docs/governance/life-community-value-charter.md)", "完整《生命共同体价值宪章》", 1)
+                elif case["mutation"] == "insert-machine-count":
+                    mutated = mutated.replace("### 价值宪章", "architecture_counts=99\n\n### 价值宪章", 1)
                 if case["expected"] == "PASS":
                     validate_readme_structure(mutated)
                 else:

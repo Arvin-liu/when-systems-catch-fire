@@ -2,60 +2,15 @@
 
 ## 1. 项目与价值
 
-> ## 丹无定形，火有法度；炼无终局，化有来路。
-
-点火是一个仓库原生、版本化、可审计的跨领域研究与行动基础设施原型。它把来源、命题、证据、模型、证明、反例、验证、现实反馈和公开表达分开记录，允许结论在新证据出现后被修订、降级、隔离或撤回。历史上已撤回“物理大一统普遍不可能”等越界断言；撤回、降级和开放问题继续保持可见。
-
-> ## 长瞻一宇同叩月, 此心相契共今宵。
-
-项目的规范性方向由[生命共同体价值宪章](../ignition/docs/governance/life-community-value-charter.md)约束；宪章是价值边界，不是经验事实、数学证明或外部真值来源。工程与 epistemic ceiling 由 generated Current Snapshot 投影；工程完成、写作完成、测试通过、重复引用、跨域对应、模型美感或 Agent 共识都不能自动抬升命题的断言地位。
-
 ### 项目现状
 
-按现有范围，点火的工程建设阶段已经收口，架构冻结在已发布基线；外部 Agent qualification / live completion 保持 `OWNER_DEFERRED`，不会自动继续。项目已经从“建设点火”切换到“使用点火生产”。
+当前阶段的工程建设已经收口，点火已从“建设点火”进入“使用点火生产”。现在，点火作为一个长期工作系统，用于组织研究、证据、问题、火种、文章与书籍生产，不再继续扩张 Agent 架构工程。正式文章选题、书籍立项、生产方向与 publication acceptance 由 Owner 决定，当前等待 Owner 正式 production brief；external-Agent qualification / live completion 已由 Owner 延后，不是当前工作方向。
 
-下一步等待 Owner production brief（`AWAIT_OWNER_PRODUCTION_BRIEF`），由 Owner 决定写哪篇文章、立哪本书。Task143 产生的三篇文章、Book Project R1 和两个样章只是 production capability smoke-test outputs，仍处于 `OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`；它们不等同于 Owner 已选题、正式立项或出版接受。工程收口不推出 production safety、外部真值、作品质量或 Owner acceptance。
+### 价值宪章
 
-本地行动层保持 Reference / Conformance / Fallback 边界；外部 executor 不拥有 OS authority，仓库投影也不升级为现实证明。
+> 长瞻一宇同叩月，此心相契共今宵。
 
-<details>
-<summary>机器状态与工程细节（展开查看）</summary>
-
-<!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
-- Current Snapshot（机器生成；请勿手改）。
-- current_identity_epoch: `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`；system_role: `Ignition OS / orchestration-governance layer`。
-- current_formal_task: `IGNITION-20260828-145` (ordinal `145`)；status: `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal: `true`；latest_architecture_changing_task: `IGNITION-20260827-142` (ordinal `142`)；current_iteration_boundary: `145` is a deprecated compatibility alias of `current_formal_task_ordinal`；publication_witness_task: `IGNITION-20260828-145`。
-- formal_task_terminality: authority `FORMAL_TASK_LIFECYCLE`；task `IGNITION-20260828-145` status `COMPLETED_WITH_OPEN_OBLIGATIONS`；terminal `true`；scope_complete `true`；open references `['LIVE_EXTERNAL_INVOCATION']`。
-- formal_task_terminal_history: `[{"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260828-145", "terminal": true}, {"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260828-144", "terminal": true}, {"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260827-143", "terminal": true}, {"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260827-142", "terminal": true}, {"execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS", "task_id": "IGNITION-20260826-141", "terminal": true}]`；Task141 terminality remains recorded independently of the carried obligation。
-- open_obligation_registry: authority `OPEN_OBLIGATION_REGISTRY`；status `OPEN` ids `['LIVE_EXTERNAL_INVOCATION']`；count `1`；next eligible action `['OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION']`。
-- release_lifecycle: task `IGNITION-20260828-145`；content phase `RELEASE_READY`；publication authority `REMOTE_REF_OBSERVATION`；embedded publication assertion `NONE`；required ref `refs/heads/main`；post-publication verification must observe that remote ref。
-- current_method: `1.4.0` Current；current_map: `0.16.0` Current；historical_map: `0.14.0` Historical。
-- current_state_status: `CURRENT_WITH_OPEN_OBLIGATIONS`；EPISTEMICALLY_ACCEPTED=0；epistemic_acceptance: `0`；live_external_ceiling: `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；live dimensions: dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`, validated completion `NOT_VALIDATED`, reconciliation blocker `NONE`。
-- live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
-- architecture_counts: `registry=99; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
-- task_lineage: current `IGNITION-20260828-145` `COMPLETED_WITH_OPEN_OBLIGATIONS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `4760bb2f24a9830e44745a16f2623a61c2aa8518ca26ab8d55c226f1e687f10f`。
-- claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
-<!-- CURRENT-SNAPSHOT:END -->
-
-### 当前主干怎样理解
-
-Steering / Intent / Goal / Obligation R1 记录来源权威、Goal 生命周期、独立完成契约、承诺义务、
-优先级、冲突、why-next、漂移和 handoff；`PASS` Run 不能推断 Goal 完成，系统提议不能晋升为
-Owner authority。Current Snapshot、Current Facts、地图和本页都是仓库本地投影，易变值只从 canonical
-machine sources 生成。
-
-当前任务链以 [`current-task-lineage-status.json`](../ignition/data/operations/current-task-lineage-status.json)
-为机器权威；历史 task、requirements lineage、terminal status 和本轮 Current 语义由 generated
-Current Snapshot 提供，不把历史记录重写为当前事实。
-
-- **它说什么：** Kernel、Runtime、Federation、Profile、Reasoner Gateway、Supervisor、Event Ledger、monotonic policy、resource arbitration、bounded concurrent scheduler、executor health lease、queue/backpressure、durable dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle R3、Driver Console 和四个声明式 Domain Pack 已形成一条仓库内可检查的 Agent Platform R3 结构；OpenClaw、Hermes、Codex 只通过 provider-neutral adapter boundary 接入，当前唯一完整系统图仍是 registry/topology/layout 的确定性结构投影。
-- **为什么重要：** 行动、批准、恢复、记忆、Pack 路由和知识治理的职责被分开记录，Agent 可以提出和执行有界动作，但不能自行扩大权限、改写真值或替代 Owner。
-- **怎样使用：** 人类先读[十分钟阅读路线](../ignition/HUMAN-READING.md)与[当前结果](../ignition/RESULTS/LATEST.md)；Agent 先读[AI 冷启动](../ignition/AI-START-HERE.md)、[状态增量日志](../ignition/STATE-CHANGELOG.md)、[R2 架构契约](../ignition/docs/architecture/agent-platform-r2.md)和[联邦契约](../ignition/docs/architecture/external-agent-federation-r1.md)。
-- **它不能证明什么：** 通过测试、Pack 加载、checkpoint、pilot 或系统图，都不等于外部真值、现实因果、生产安全、Owner acceptance 或 epistemic acceptance。
-- **仍然开放：** live provider/inference、daemon、向量记忆、网络/浏览、外部仓库 mutation、物理 Pack 拆分和现实世界效果仍不在本轮授权范围内；`LIVE_EXTERNAL_INVOCATION` 仍是 OPEN，历史六次 attempt、零 validated completion、零 unreconciled 和两次 observation-incomplete 保持不变。Task143 不启动 live process；外部 Agent 线只有在 Owner 明确重新开启、且本机环境先完成准备/安装/attestation 后才可恢复。当前出版生产入口见[点火成果册](../ignition/PUBLICATIONS/pointfire-results-book/README.md)，写作产物不抬升外部真值。
-
-</details>
+点火的价值方向来自[完整《生命共同体价值宪章》](../ignition/docs/governance/life-community-value-charter.md)。它把生命共同体的规范性范围延伸至未来世代、非人类生命、生态系统、沉默主体，以及可能具备道德地位的新型智能；不因主体尚未被命名或理解就将其排除。任何局部效率、扩张或创新，都不能以不可逆、不可补偿、非自愿的重大伤害为代价。重大行动应保留纠错、退出、恢复与未来选择空间；当高不确定性伴随不可逆风险时，应提高证据门槛并采用预防原则。完整宪章是规范性价值前提，不是经验事实、数学证明或外部真值来源。
 
 ## 2. 如何使用
 
@@ -66,6 +21,8 @@ Current Snapshot 提供，不把历史记录重写为当前事实。
 需要进入具体能力时，可从[点火迭代操作法](../ignition/ITERATION.md)、[MCF](../ignition/docs/architecture/multiscale-causal-fabric.md)、[PSD](../ignition/docs/architecture/probabilistic-system-dynamics.md)和[ARN](../ignition/docs/architecture/adaptive-relational-network.md)开始；这些都是有边界的项目构件，不是新的真值层。
 
 ## 3. 结果与火种
+
+历史上已撤回“物理大一统普遍不可能”等越界断言；撤回、降级和开放问题继续保持可见。
 
 先看[《火种：点火跑出来的发现、问题与写作种子》](../ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md)：它把现有成果、失败、边界和仍值得继续写作/研究的问题整理成可继续追踪的人类条目，不增加外部新颖性，也不替代来源、registry、M/E、proof、evidence 或 claim ceiling。
 

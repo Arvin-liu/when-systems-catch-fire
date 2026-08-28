@@ -38,7 +38,10 @@ OUTPUTS = [
     "ignition/ARCHITECTURE.md",
     "ignition/STATE-CHANGELOG.md"
 ]
-SURFACES = ["homepage-identity", "project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"]
+# The homepage remains in OUTPUTS so two rebuilds prove that its hand-authored
+# bytes stay stable, but it is deliberately absent from the compiler surface
+# list and is never rewritten by Current regeneration.
+SURFACES = ["project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"]
 
 
 def sha256(path: Path) -> str:

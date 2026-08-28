@@ -1,0 +1,62 @@
+{
+  "schema_version": "ignition-146-step09-current-minimal-sync-r1",
+  "task_id": "IGNITION-20260828-146",
+  "step": "09",
+  "status": "PASS",
+  "current_sync": {
+    "identity_impact": "PRESENTATION_ONLY",
+    "engineering_phase": "CLOSED_CURRENT_SCOPE",
+    "architecture_executor_phase": "CLOSED_OWNER_DEFERRED",
+    "architecture_frozen": true,
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "current_map_version": "0.16.0",
+    "current_task": "IGNITION-20260828-146",
+    "current_task_status": "IN_PROGRESS",
+    "current_task_terminal": false,
+    "current_release_phase": "RUNNING",
+    "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "epistemically_accepted": 0
+  },
+  "homepage_boundary": {
+    "generated_current_surface": false,
+    "human_blocks": ["项目现状", "价值宪章"],
+    "machine_state_location": "AI-START-HERE.md, AI-HANDOFF.md, project-current-state.md, llms.txt, ARCHITECTURE.md, STATE-CHANGELOG.md and Current Snapshot JSON",
+    "regeneration_reinjects_homepage_machine_state": false
+  },
+  "production_handoff": {
+    "next_action": "AWAIT_OWNER_PRODUCTION_BRIEF",
+    "article_or_book_brief_required": true,
+    "owner_topic_selection_required": true,
+    "owner_book_initiation_required": true,
+    "publication_acceptance_required": true,
+    "automatic_next_engineering_task": false,
+    "automatic_new_article_or_book_body": false
+  },
+  "open_obligation": {
+    "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+    "status": "OPEN",
+    "operational_state": "OWNER_DEFERRED",
+    "new_live_invocations": 0,
+    "historical_attempt_count": 6,
+    "validated_completion_count": 0,
+    "unreconciled_count": 0,
+    "observation_incomplete_count": 2,
+    "retry": "NOT_AUTHORIZED"
+  },
+  "publication_boundary": {
+    "required_ref": "refs/heads/main",
+    "authority": "REMOTE_REF_OBSERVATION",
+    "formal_repository_self_sha": false,
+    "remote_main_and_fresh_clone_observation": "PENDING_SEPARATE_RELEASE_GATE",
+    "independent_1111_witness": "PENDING_SEPARATE_RELEASE_GATE"
+  },
+  "scope_guards": {
+    "architecture_geometry_redrawn": false,
+    "architecture_identity_changed": false,
+    "task143_article_or_book_body_changed": false,
+    "external_live_process_started": false,
+    "automatic_task147_created_or_started": false,
+    "self_witness_formal_commit_created": false
+  },
+  "claim_ceiling": "Repository-local Current/changelog synchronization and Human Front Door evidence only; engineering remains closed, production awaits the Owner brief, the deferred live obligation remains open, and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

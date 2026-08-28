@@ -44,13 +44,44 @@ VERSION_FACTS = {
     "historical_map": "0.14.0",
     "earlier_historical_map": "0.13.0",
 }
-DETAILS_TOKEN_RE = re.compile(r"<details\b[^>]*>|</details\s*>", re.IGNORECASE)
-CURRENT_SNAPSHOT_BLOCK_RE = re.compile(
-    r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n"
-    r".*?<!-- CURRENT-SNAPSHOT:END -->\n?",
-    re.DOTALL,
+HUMAN_CURRENT_HEADING = "### 项目现状"
+HUMAN_CHARTER_HEADING = "### 价值宪章"
+CHARTER_LINK = "../ignition/docs/governance/life-community-value-charter.md"
+FORBIDDEN_HOMEPAGE_MACHINE_TOKENS = (
+    "CURRENT-SNAPSHOT:BEGIN",
+    "CURRENT-SNAPSHOT:END",
+    "Current Snapshot",
+    "generated Current",
+    "architecture_counts",
+    "live_attempt_projection",
+    "formal_task_terminal_history",
+    "task_lineage",
+    "机器状态与工程细节",
+    "当前主干怎样理解",
+    "current_identity_epoch",
+    "current_formal_task",
+    "current_iteration_boundary",
+    "release_lifecycle",
+    "current_map_version",
+    "current_state_status",
+    "EPISTEMICALLY_ACCEPTED",
+    "CURRENT_WITH_OPEN_OBLIGATIONS",
+    "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "AWAIT_OWNER_PRODUCTION_BRIEF",
+    "LIVE_EXTERNAL_INVOCATION",
+    "OWNER_DEFERRED",
+    "OWNER_REVIEW_PENDING",
+    "PUBLICATION_ACCEPTANCE_NOT_GRANTED",
+    "Reference / Conformance / Fallback",
+    "Kernel",
+    "Runtime",
+    "Federation",
+    "Driver Console",
+    "current-snapshot",
+    "live_attempt",
+    "formal_task",
+    "architecture_count",
 )
-README_DETAILS_SUMMARY = "机器状态与工程细节（展开查看）"
 
 
 def require(condition: bool, message: str) -> None:
@@ -58,74 +89,67 @@ def require(condition: bool, message: str) -> None:
         raise AssertionError(message)
 
 
-def _details_spans(text: str) -> tuple[list[tuple[int, int]], int, int]:
-    stack: list[re.Match[str]] = []
-    spans: list[tuple[int, int]] = []
-    unmatched_closes = 0
-    for match in DETAILS_TOKEN_RE.finditer(text):
-        token = match.group(0).lower()
-        if token.startswith("<details"):
-            stack.append(match)
-        elif stack:
-            opening = stack.pop()
-            spans.append((opening.start(), match.end()))
-        else:
-            unmatched_closes += 1
-    return spans, len(stack), unmatched_closes
-
-
-def _inside_details(position: int, spans: list[tuple[int, int]]) -> bool:
-    return any(start < position < end for start, end in spans)
-
-
-def _outside_occurrence(text: str, needle: str, spans: list[tuple[int, int]]) -> bool:
-    return any(not _inside_details(match.start(), spans) for match in re.finditer(re.escape(needle), text))
-
-
 def validate_readme_structure(readme: str) -> None:
-    spans, unclosed, unmatched_closes = _details_spans(readme)
-    require(not unclosed and not unmatched_closes, "README details tags are not balanced")
-    require(len(spans) == 1, "README must have exactly one details container for machine state")
-    details_start, details_end = spans[0]
-    summary = f"<summary>{README_DETAILS_SUMMARY}</summary>"
-    require(readme.count(summary) == 1, "README machine-state details summary is missing or duplicated")
-    summary_position = readme.index(summary)
-    require(details_start < summary_position < details_end, "README details summary is outside its container")
-
     visible_h2 = [
         (match.group(1).strip(), match.start())
         for match in re.finditer(r"^## (?!#)(.+?)\s*$", readme, re.MULTILINE)
-        if not _inside_details(match.start(), spans)
     ]
     required_h2 = ["1. 项目与价值", "2. 如何使用", "3. 结果与火种", "4. 整体架构", "5. 致谢"]
     require([title for title, _ in visible_h2] == required_h2, "README essential H2 sections must remain visible and ordered")
 
-    current_headings = list(re.finditer(r"^### 项目现状\s*$", readme, re.MULTILINE))
-    require(len(current_headings) == 1, "README must have exactly one human project-current-state heading")
-    require(not _inside_details(current_headings[0].start(), spans), "README project current state is hidden by details")
+    section_one_start = next(position for title, position in visible_h2 if title == required_h2[0])
+    section_two_start = next(position for title, position in visible_h2 if title == required_h2[1])
+    section_one = readme[section_one_start:section_two_start]
+    h3_matches = list(re.finditer(r"^### (?!#)(.+?)\s*$", section_one, re.MULTILINE))
+    h3_titles = [match.group(1).strip() for match in h3_matches]
+    require(h3_titles == ["项目现状", "价值宪章"], "README 项目与价值 must contain exactly 项目现状 then 价值宪章")
+    require(section_one[section_one.find("\n") + 1 : h3_matches[0].start()].strip() == "", "README 项目现状 must be the first block under 项目与价值")
 
+    current_text = section_one[h3_matches[0].end() : h3_matches[1].start()]
+    charter_text = section_one[h3_matches[1].end() :]
     for phrase, label in (
-        ("点火是一个", "project definition"),
-        ("生命共同体价值宪章", "value charter"),
-        ("工程建设阶段已经收口", "engineering closure"),
+        ("工程建设已经收口", "engineering closure"),
         ("使用点火生产", "production transition"),
-        ("AWAIT_OWNER_PRODUCTION_BRIEF", "Owner production brief handoff"),
-        ("OWNER_DEFERRED", "deferred external qualification"),
-        ("OWNER_REVIEW_PENDING", "Owner review state"),
-        ("PUBLICATION_ACCEPTANCE_NOT_GRANTED", "publication acceptance state"),
+        ("production brief", "Owner production brief handoff"),
+        ("Owner", "Owner decision boundary"),
+        ("文章", "article production boundary"),
+        ("书籍", "book production boundary"),
+        ("external-Agent qualification", "deferred external qualification"),
+    ):
+        require(phrase in current_text, f"README project status lacks {label}")
+    for phrase, label in (
+        ("长瞻一宇同叩月", "poetic source"),
+        ("生命共同体", "life-community scope"),
+        ("未来世代", "future generations"),
+        ("非人类生命", "non-human life"),
+        ("沉默主体", "silent subjects"),
+        ("新型智能", "new intelligences"),
+        ("不可逆", "irreversible harm boundary"),
+        ("不可补偿", "non-compensable harm boundary"),
+        ("非自愿", "non-consensual harm boundary"),
+        ("纠错", "correction"),
+        ("退出", "exit"),
+        ("恢复", "recovery"),
+        ("未来选择空间", "future choice space"),
+        ("预防原则", "precautionary principle"),
+        ("规范性价值", "normative value boundary"),
+        ("不是经验事实、数学证明或外部真值来源", "non-epistemic charter boundary"),
+    ):
+        require(phrase in charter_text, f"README value charter lacks {label}")
+    require(CHARTER_LINK in charter_text, "README value charter link is missing or not canonical")
+    require("点火是一个仓库原生" not in readme, "README must not retain the superseded project definition")
+    require("<details" not in readme.lower() and "</details" not in readme.lower(), "README must not fold machine state into details")
+    lowered = readme.casefold()
+    for token in FORBIDDEN_HOMEPAGE_MACHINE_TOKENS:
+        require(token.casefold() not in lowered, f"README must not contain machine Current state: {token}")
+    require("可点击" not in readme and "clickable" not in lowered, "README must not promise rendered architecture clickability")
+    for phrase, label in (
         ("HUMAN-READING.md", "human reading route"),
         ("RESULTS/LATEST.md", "current results route"),
         ("火种", "Fire Seeds route"),
         ("ignition-system-architecture.svg", "architecture route"),
     ):
-        require(_outside_occurrence(readme, phrase, spans), f"README hides essential {label}")
-
-    blocks = list(CURRENT_SNAPSHOT_BLOCK_RE.finditer(readme))
-    require(len(blocks) == 1, "README must contain exactly one generated Current Snapshot block")
-    require(_inside_details(blocks[0].start(), spans), "README generated Current Snapshot must be folded")
-    for phrase in ("architecture_counts", "live_attempt_projection", "task_lineage", "### 当前主干怎样理解"):
-        require(phrase in readme[details_start:details_end], f"README machine detail is outside the details container: {phrase}")
-    require("可点击" not in readme and "clickable" not in readme.lower(), "README must not promise rendered architecture clickability")
+        require(phrase in readme, f"README lacks {label}")
 
 
 def validate_texts(readme: str, guide: str, current_state: str, human_reading: str) -> None:

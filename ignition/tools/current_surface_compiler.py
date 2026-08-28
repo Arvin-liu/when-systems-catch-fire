@@ -21,12 +21,12 @@ REPO_ROOT = ROOT.parent
 CONTRACT_PATH = ROOT / "data/operations/current-surface-block-contract-r1.json"
 BLOCK_BEGIN_RE = re.compile(r"^<!-- CURRENT-SNAPSHOT:BEGIN profile=(human|ai|machine) schema=current-snapshot-r1 -->$")
 BLOCK_END = "<!-- CURRENT-SNAPSHOT:END -->"
-DETAILS_TOKEN_RE = re.compile(r"<details\b[^>]*>|</details\s*>", re.IGNORECASE)
 GENERATED_BLOCK_RE = re.compile(
     r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n"
     r".*?<!-- CURRENT-SNAPSHOT:END -->\n?",
     re.DOTALL,
 )
+HOMEPAGE_PATH = ".github/README.md"
 
 
 def load_json(path: Path) -> Any:
@@ -127,50 +127,24 @@ def insert_block(text: str, block: str, surface: dict[str, Any]) -> str:
     return updated[:line_start] + block + "\n" + updated[line_start:]
 
 
-def _details_container(text: str, summary: str) -> tuple[re.Match[str], re.Match[str]] | None:
-    stack: list[re.Match[str]] = []
-    for match in DETAILS_TOKEN_RE.finditer(text):
-        token = match.group(0).lower()
-        if token.startswith("<details"):
-            stack.append(match)
-            continue
-        if not stack:
-            continue
-        opening = stack.pop()
-        if summary in text[opening.end() : match.start()]:
-            return opening, match
-    return None
+def is_non_generated_surface(surface: dict[str, Any]) -> bool:
+    """Return whether a surface is intentionally maintained outside Current generation."""
 
-
-def _ensure_details_container(text: str, surface: dict[str, Any]) -> str:
-    summary = surface.get("details_summary")
-    if not summary:
-        return text
-    block_match = GENERATED_BLOCK_RE.search(text)
-    if not block_match:
-        raise ValueError(f"generated block missing for details surface {surface['surface_id']}")
-    container = _details_container(text, summary)
-    if container and container[0].start() < block_match.start() < container[1].end():
-        return text
-    if container:
-        block = block_match.group(0)
-        without_block = text[: block_match.start()] + text[block_match.end() :]
-        refreshed = _details_container(without_block, summary)
-        if refreshed is None:
-            raise ValueError(f"details container disappeared for {surface['surface_id']}")
-        insert_at = refreshed[1].start()
-        prefix = without_block[:insert_at]
-        if not prefix.endswith("\n"):
-            prefix += "\n"
-        return prefix + block + without_block[insert_at:]
-    block = block_match.group(0)
-    wrapped = f"<details>\n<summary>{summary}</summary>\n\n{block}</details>\n"
-    return text[: block_match.start()] + wrapped + text[block_match.end() :]
+    return (
+        surface.get("path") == HOMEPAGE_PATH
+        or surface.get("current_snapshot_policy") == "no_generated_snapshot"
+        or surface.get("generation_policy") == "human_static_summary"
+    )
 
 
 def compile_surface(text: str, surface: dict[str, Any], snapshot: dict[str, Any] | None = None) -> str:
+    if is_non_generated_surface(surface):
+        # The homepage is a hand-authored human summary.  In particular, never
+        # remove, replace, wrap or append a machine Current block here: the
+        # front-door validator fails closed if an old block is still present.
+        return text
     updated = insert_block(text, render_block(snapshot or build_snapshot(), surface["profile"]), surface)
-    return _ensure_details_container(updated, surface)
+    return updated
 
 
 def extract_block(text: str) -> str | None:
@@ -192,11 +166,18 @@ def main() -> int:
         return 0
     contract = load_json(CONTRACT_PATH)
     surfaces = {row["surface_id"]: row for row in contract["surfaces"]}
+    surfaces.update({row["surface_id"]: row for row in contract.get("non_generated_surfaces", [])})
     if args.surface_id not in surfaces:
         parser.error(f"unknown surface id: {args.surface_id}")
     surface = surfaces[args.surface_id]
     path = REPO_ROOT / surface["path"]
     source = path.read_text(encoding="utf-8")
+    if is_non_generated_surface(surface):
+        if extract_block(source):
+            print(f"CURRENT_SURFACE_FORBIDDEN_GENERATED_BLOCK surface={args.surface_id}", file=sys.stderr)
+            return 1
+        print(f"CURRENT_SURFACE_STATIC_OK surface={args.surface_id}")
+        return 0
     expected = compile_surface(source, surface)
     if args.write:
         path.write_text(expected, encoding="utf-8")

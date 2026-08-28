@@ -19,7 +19,6 @@
     {"id": "blast_radius_report", "category": "blast_radius", "argv": ["tools/propagation/agent_platform_blast_radius.py", "--check"], "read_only": true},
     {"id": "current_facts", "category": "current_surface", "argv": ["tools/generate_current_facts.py", "--check"], "read_only": true},
     {"id": "current_snapshot", "category": "current_surface", "argv": ["tools/build_current_snapshot.py", "--check"], "read_only": true},
-    {"id": "current_surface_homepage_identity", "category": "current_surface_compiler", "argv": ["tools/current_surface_compiler.py", "--check", "--surface-id", "homepage-identity"], "read_only": true},
     {"id": "current_surface_project_current_state", "category": "current_surface_compiler", "argv": ["tools/current_surface_compiler.py", "--check", "--surface-id", "project-current-state"], "read_only": true},
     {"id": "current_surface_ai_cold_start", "category": "current_surface_compiler", "argv": ["tools/current_surface_compiler.py", "--check", "--surface-id", "ai-cold-start"], "read_only": true},
     {"id": "current_surface_ai_agents_handoff", "category": "current_surface_compiler", "argv": ["tools/current_surface_compiler.py", "--check", "--surface-id", "ai-agents-handoff"], "read_only": true},

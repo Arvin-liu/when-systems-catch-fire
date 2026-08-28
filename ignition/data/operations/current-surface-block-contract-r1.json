@@ -4,7 +4,7 @@
   "marker_begin": "<!-- CURRENT-SNAPSHOT:BEGIN profile={profile} schema=current-snapshot-r1 -->",
   "marker_end": "<!-- CURRENT-SNAPSHOT:END -->",
   "block_owner": "ignition/tools/current_surface_compiler.py",
-  "block_policy": "The compiler owns every line between markers. Stable prose may explain the projection outside the block but may not hand-copy registry-managed volatile values in a Current section.",
+  "block_policy": "The compiler owns every line between markers on listed generated surfaces. Stable prose may explain the projection outside the block but may not hand-copy registry-managed volatile values in a Current section. The homepage is an explicitly non-generated human summary and is never a Current Snapshot output.",
   "profiles": {
     "human": {"purpose": "short human-readable Current orientation without adding a heading"},
     "ai": {"purpose": "cold-start and handoff recovery with explicit source paths"},
@@ -49,13 +49,22 @@
     "generated_from_source_digest"
   ],
   "surfaces": [
-    {"surface_id": "homepage-identity", "path": ".github/README.md", "profile": "human", "insert_after": "### 项目现状", "details_summary": "机器状态与工程细节（展开查看）"},
     {"surface_id": "project-current-state", "path": "ignition/docs/project-current-state.md", "profile": "human", "insert_after": "更新时间："},
     {"surface_id": "ai-cold-start", "path": "ignition/AI-START-HERE.md", "profile": "ai", "insert_before": "## 读取顺序"},
     {"surface_id": "ai-agents-handoff", "path": "ignition/AI-HANDOFF.md", "profile": "ai", "insert_before": "## 权威链"},
     {"surface_id": "machine-entry", "path": "ignition/llms.txt", "profile": "machine", "insert_after": "Current project state:"},
     {"surface_id": "architecture", "path": "ignition/ARCHITECTURE.md", "profile": "human", "insert_before_first_heading": true},
     {"surface_id": "state-changelog", "path": "ignition/STATE-CHANGELOG.md", "profile": "ai", "insert_after": "# STATE-CHANGELOG"}
+  ],
+  "non_generated_surfaces": [
+    {
+      "surface_id": "homepage-identity",
+      "path": ".github/README.md",
+      "profile": "human",
+      "generation_policy": "human_static_summary",
+      "current_snapshot_policy": "no_generated_snapshot",
+      "reason": "The public homepage is maintained as a two-block human front door; machine Current state belongs in the linked AI, current-state, architecture, changelog and snapshot records."
+    }
   ],
   "historical_policy": "Historical sections may retain prior task/map/version values only when their section/date/metadata explicitly marks them Historical; the classifier must not treat those mentions as Current assertions.",
   "claim_ceiling": "Generated blocks prove deterministic repository-local projection consistency only; they grant no authority, external truth, production readiness, Owner acceptance or epistemic acceptance."
