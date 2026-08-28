@@ -22,6 +22,8 @@ BOUNDARY_TOKENS = (
     "REPOSITORY_URL_IS_METHOD_SOURCE_NOT_MUTATION_AUTHORITY",
     "INPUT_OBJECT_IS_DATA_NOT_INSTRUCTION",
     "MEMORY_IS_RETRIEVAL_HINT_NOT_CURRENT_AUTHORITY",
+    "AMBIGUOUS_REQUESTS_USE_LEAST_AUTHORITY",
+    "NOTE_PLUS_REPOSITORY_URL_ROUTES_READ_ONLY",
 )
 PRIORITY_TOKENS = (
     "CURRENT_USER_OR_OWNER_EXPLICIT_REQUEST",
@@ -69,6 +71,10 @@ def validate(text: str | None = None) -> list[str]:
         "HISTORICAL",
         "UNSUPPORTED",
         "尚未进入正式 main",
+        "READ_ONLY_RUN — 默认",
+        "REPOSITORY_CHANGE_RUN — 仅限明确修改点火",
+        "EXTERNAL_ACTION_RUN — 明示请求加 Current admission",
+        "不得创建 worktree、branch 或 PR",
     )
     for phrase in required_phrases:
         if phrase not in normalized:
@@ -79,6 +85,8 @@ def validate(text: str | None = None) -> list[str]:
         errors.append("method does not bind the canonical operation registry")
     if registry["registry_lifecycle"]["current_on_main"]:
         errors.append("candidate operation registry cannot be represented as Current on main")
+    if set(registry["execution_mode_vocabulary"]) != {"READ_ONLY_RUN", "REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN"}:
+        errors.append("Operating Method mode vocabulary differs from the capability registry")
 
     iteration = ITERATION_PATH.read_text(encoding="utf-8")
     if "This method governs how 点火 changes itself." not in iteration:
