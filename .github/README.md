@@ -10,10 +10,13 @@
 
 项目的规范性方向由[生命共同体价值宪章](../ignition/docs/governance/life-community-value-charter.md)约束；宪章是价值边界，不是经验事实、数学证明或外部真值来源。工程与 epistemic ceiling 由 generated Current Snapshot 投影；工程完成、写作完成、测试通过、重复引用、跨域对应、模型美感或 Agent 共识都不能自动抬升命题的断言地位。
 
-点火当前主干以一个有界、可审计、可恢复的 Agent Platform 原型为工程脊柱；它是长期状态、价值、任务、权限、记忆、验证和 executor 协同的 OS / orchestration-governance layer。OpenClaw、Hermes、Codex 是可替换执行器，不是点火的替代系统；知识治理是第一个大型 Domain Pack，而不是整个系统本体。仓库内能力、边界和未完成义务见[Agent Platform R2](../ignition/docs/architecture/agent-platform-r2.md)、[OS Control Plane R2](../ignition/docs/architecture/os-control-plane-r2.md)、[External Agent Federation R1](../ignition/docs/architecture/external-agent-federation-r1.md)与[智能体化边界](../ignition/docs/architecture/agentization-boundary-r0.md)。Durability / Lifecycle 负责 repository-local snapshot、migration、namespace、Pack lifecycle、revocation、accounting、recovery 和 DR continuity；不建立第二张图，也不自动重放不确定外部副作用。Structural Governance Surface 是 advisory cross-cutting overlay：只提供阅读与实验上下文，不改变 capability、permission 或 epistemic status，也不增加 L7。Current Snapshot 与 Current Facts 负责易变版本、计数、任务、状态和 live ceiling；这不表示已经证明通用智能、长期自主性、现实世界普适安全性或外部有效性。
-本地行动层保持 Reference / Conformance / Fallback 边界；外部 executor 不拥有 OS authority，Current Snapshot 也不把仓库投影升级为现实证明。
+### 项目现状
 
-任务身份分成两个稳定角色：Current formal task 表示最近哪一轮正式任务正在或刚刚成为 Current；另一个角色记录最近一次改变系统身份或架构的任务。二者允许不同，publication witness 只提供发布观察绑定，不授予 architecture、Owner 或 epistemic authority。当前工程范围已按既定边界关闭：架构身份保持冻结，外部 Agent qualification 保持 `OWNER_DEFERRED`，不再自动恢复工程优化或 live 工作。既有成果册中的文章、Book Project 和样章只是 capability smoke-test outputs，等待 Owner review；正式生产必须从 Owner production brief 开始，且不自动创建下一轮工程任务或新的正文。
+按现有范围，点火的工程建设阶段已经收口，架构冻结在已发布基线；外部 Agent qualification / live completion 保持 `OWNER_DEFERRED`，不会自动继续。项目已经从“建设点火”切换到“使用点火生产”。
+
+下一步等待 Owner production brief（`AWAIT_OWNER_PRODUCTION_BRIEF`），由 Owner 决定写哪篇文章、立哪本书。Task143 产生的三篇文章、Book Project R1 和两个样章只是 production capability smoke-test outputs，仍处于 `OWNER_REVIEW_PENDING / PUBLICATION_ACCEPTANCE_NOT_GRANTED`；它们不等同于 Owner 已选题、正式立项或出版接受。工程收口不推出 production safety、外部真值、作品质量或 Owner acceptance。
+
+本地行动层保持 Reference / Conformance / Fallback 边界；外部 executor 不拥有 OS authority，仓库投影也不升级为现实证明。
 <!-- CURRENT-SNAPSHOT:BEGIN profile=human schema=current-snapshot-r1 -->
 - Current Snapshot（机器生成；请勿手改）。
 - current_identity_epoch: `os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1`；system_role: `Ignition OS / orchestration-governance layer`。
