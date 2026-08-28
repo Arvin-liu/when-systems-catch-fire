@@ -1,31 +1,31 @@
 {
     "schema_version": "current-release-lifecycle-r1",
     "contract_id": "CURRENT_RELEASE_LIFECYCLE_REF_DERIVED_R1",
-  "task_id": "IGNITION-20260828-146",
-  "task_branch": "codex/ignition-146-readme-human-front-door-simplification-r2-20260828",
+  "task_id": "IGNITION-20260828-147",
+  "task_branch": "codex/ignition-147-readme-project-identity-architecture-navigation-r3-20260828",
   "task_identity_source": {
     "current_formal_task_source": "ignition/data/operations/current-task-lineage-status.json#/task_identity/current_formal_task",
-    "execution_contract_source": "ignition/data/operations/iterations/146/execution-contract-r1.json#/task_id",
+    "execution_contract_source": "ignition/data/operations/iterations/147/execution-contract-r1.json#/task_id",
     "ordinal_semantics_source": "ignition/data/operations/iteration-boundary-semantics-r1.json",
     "binding": "MUST_MATCH_CURRENT_FORMAL_EXECUTION_CONTRACT_AND_ORDINAL_DERIVATION"
   },
   "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
-  "current_formal_task_id": "IGNITION-20260828-146",
-  "current_formal_task_ordinal": 146,
+  "current_formal_task_id": "IGNITION-20260828-147",
+  "current_formal_task_ordinal": 147,
   "latest_architecture_changing_task": "IGNITION-20260827-142",
   "latest_architecture_task_ordinal": 142,
-  "current_iteration_boundary": 146,
+  "current_iteration_boundary": 147,
     "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
-  "content_phase": "RELEASE_READY",
+  "content_phase": "RUNNING",
     "required_publication_ref": "refs/heads/main",
     "publication_authority": "REMOTE_REF_OBSERVATION",
     "embedded_publication_assertion": "NONE",
-  "current_task_terminal": true,
+  "current_task_terminal": false,
     "post_publication_remote_check_required": true,
     "phase_order": [
         "RUNNING",
         "TERMINAL_CANDIDATE",
         "RELEASE_READY"
     ],
-  "claim_ceiling": "Task146 repository-local Human Front Door simplification, generated Current surface decoupling, targeted regression and release evidence only; engineering phase remains closed, Owner production handoff remains AWAIT_OWNER_PRODUCTION_BRIEF, the deferred live obligation remains open, publication is derived from the required remote ref and recorded in a separate witness, and no external truth, production readiness, Owner acceptance or publication acceptance is inferred."
+  "claim_ceiling": "Task147 repository-local project identity wording, human architecture navigation, Current-surface synchronization and bounded regression evidence only; architecture semantics and geometry remain frozen, engineering remains closed, production awaits the Owner brief, the deferred live obligation remains open, and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
 }

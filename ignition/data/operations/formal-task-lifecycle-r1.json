@@ -2,7 +2,7 @@
   "schema_version": "formal-task-lifecycle-r1",
   "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
   "authority": "FORMAL_TASK_LIFECYCLE",
-  "current_task_id": "IGNITION-20260828-146",
+  "current_task_id": "IGNITION-20260828-147",
   "obligation_registry": {
     "authority": "OPEN_OBLIGATION_REGISTRY",
     "path": "ignition/data/operations/open-obligation-registry-r1.json",
@@ -11,6 +11,22 @@
     "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
   },
   "tasks": [
+    {
+      "task_id": "IGNITION-20260828-147",
+      "execution_status": "IN_PROGRESS",
+      "terminal": false,
+      "scope_complete": false,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task147 is executing the repository-local README project-identity and architecture-navigation repair; terminality requires the bounded validation, Current synchronization and publication witness steps.",
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/147/execution-contract-r1.json",
+        "ignition/data/operations/iterations/147/step00-baseline-audit.json"
+      ],
+      "claim_ceiling": "Task147 repository-local project identity wording, human architecture navigation, validator and deterministic regression evidence only; architecture semantics and geometry remain frozen, Owner authority remains required for production, production awaits the Owner brief, and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+    },
     {
       "task_id": "IGNITION-20260828-146",
       "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",

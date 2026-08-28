@@ -77,11 +77,11 @@
   "contract_id": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT",
   "current_method_version": "1.4.0",
   "current_task": {
-    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "execution_status": "IN_PROGRESS",
     "identity_impact": "PRESENTATION_ONLY",
-    "scope": "Formal task IGNITION-20260828-146 Current advancement",
-    "task_id": "IGNITION-20260828-146",
-    "terminal": true
+    "scope": "Formal task IGNITION-20260828-147 Current advancement",
+    "task_id": "IGNITION-20260828-147",
+    "terminal": false
   },
   "engineering_status": {
     "current_state_status": "CURRENT_WITH_OPEN_OBLIGATIONS",
@@ -89,13 +89,13 @@
   },
   "formal_task_lifecycle": {
     "authority": "FORMAL_TASK_LIFECYCLE",
-    "current_task_id": "IGNITION-20260828-146",
-    "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
-    "current_task_terminal": true,
+    "current_task_id": "IGNITION-20260828-147",
+    "current_task_status": "IN_PROGRESS",
+    "current_task_terminal": false,
     "open_obligation_ids": [
       "LIVE_EXTERNAL_INVOCATION"
     ],
-    "scope_complete": true,
+    "scope_complete": false,
     "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json",
     "terminal_task_history": [
       {
@@ -130,7 +130,7 @@
       }
     ]
   },
-  "generated_from_source_digest": "e8fd91040550c2bdaec7a88a5c7190203947b234a825d546000f0fd773d80fa2",
+  "generated_from_source_digest": "f9b40d70a812cdd0a5ba9128efd5ede00337e5c5f0e0acdbaabb72024b3f56ad",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
@@ -139,9 +139,9 @@
     "system_role": "Ignition OS / orchestration-governance layer"
   },
   "iteration_identity": {
-    "current_formal_task_id": "IGNITION-20260828-146",
-    "current_formal_task_ordinal": 146,
-    "current_iteration_boundary": 146,
+    "current_formal_task_id": "IGNITION-20260828-147",
+    "current_formal_task_ordinal": 147,
+    "current_iteration_boundary": 147,
     "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
     "current_method_version": "1.4.0",
     "latest_architecture_changing_task_id": "IGNITION-20260827-142",
@@ -181,7 +181,7 @@
   },
   "open_obligations": {
     "authority": "OPEN_OBLIGATION_REGISTRY",
-    "current_task_id": "IGNITION-20260828-146",
+    "current_task_id": "IGNITION-20260828-147",
     "next_eligible_actions": [
       "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION"
     ],
@@ -192,12 +192,12 @@
     "source_path": "ignition/data/operations/open-obligation-registry-r1.json"
   },
   "release_lifecycle": {
-    "content_phase": "RELEASE_READY",
+    "content_phase": "RUNNING",
     "embedded_publication_assertion": "NONE",
     "post_publication_check_required": true,
     "publication_authority": "REMOTE_REF_OBSERVATION",
     "required_publication_ref": "refs/heads/main",
-    "task_id": "IGNITION-20260828-146"
+    "task_id": "IGNITION-20260828-147"
   },
   "schema_version": "current-snapshot-r1",
   "source_policy": {
@@ -206,17 +206,17 @@
     "registry_path": "ignition/data/operations/current-volatile-fact-registry-r1.json"
   },
   "task_identity": {
-    "current_formal_task": "IGNITION-20260828-146",
+    "current_formal_task": "IGNITION-20260828-147",
     "latest_architecture_changing_task": "IGNITION-20260827-142",
-    "previous_canonical_current_task": "IGNITION-20260828-145",
-    "previous_formal_task": "IGNITION-20260828-145",
-    "publication_witness_task": "IGNITION-20260828-146",
-    "release_candidate_task": "IGNITION-20260828-146"
+    "previous_canonical_current_task": "IGNITION-20260828-146",
+    "previous_formal_task": "IGNITION-20260828-146",
+    "publication_witness_task": "IGNITION-20260828-147",
+    "release_candidate_task": "IGNITION-20260828-147"
   },
   "task_lineage": {
     "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
-    "current_task_id": "IGNITION-20260828-146",
-    "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "current_task_id": "IGNITION-20260828-147",
+    "current_task_status": "IN_PROGRESS",
     "predecessor_requirement_lineage": "REBASED_INTO_127",
     "predecessor_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
     "successor_status": "COMPLETED_WITH_CLASSIFIED_RESIDUALS"
