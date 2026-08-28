@@ -67,17 +67,18 @@
     "live_attempt_started": false,
     "new_obligation_ids": [],
     "reason": "Task145 keeps LIVE_EXTERNAL_INVOCATION OPEN and OWNER_DEFERRED as an obligation independent of task liveness; no live attempt is authorized, and this presentation-only homepage maintenance proceeds without reopening the deferred campaign.",
-    "evidence_refs": [
-      "ignition/data/operations/iterations/142/step11-fresh-census.json",
-      "ignition/data/operations/iterations/142/step12-pre-live-gate.json",
-      "ignition/data/operations/iterations/142/step13-live-attempt-a.json",
-      "ignition/data/operations/iterations/142/step14-live-attempt-b.json",
-      "ignition/data/operations/iterations/142/step15-independent-validator.json",
-      "ignition/data/operations/iterations/143/phase-closure-state-r1.json",
-      "ignition/data/operations/iterations/143/step01-phase-closure.json",
-      "ignition/data/operations/iterations/144/phase-closure-state-r1.json",
-      "ignition/data/operations/iterations/144/deferred-backlog-r1.json"
-    ]
+      "evidence_refs": [
+        "ignition/data/operations/iterations/142/step11-fresh-census.json",
+        "ignition/data/operations/iterations/142/step12-pre-live-gate.json",
+        "ignition/data/operations/iterations/142/step13-live-attempt-a.json",
+        "ignition/data/operations/iterations/142/step14-live-attempt-b.json",
+        "ignition/data/operations/iterations/142/step15-independent-validator.json",
+        "ignition/data/operations/iterations/143/phase-closure-state-r1.json",
+        "ignition/data/operations/iterations/143/step01-phase-closure.json",
+        "ignition/data/operations/iterations/144/phase-closure-state-r1.json",
+        "ignition/data/operations/iterations/144/deferred-backlog-r1.json",
+        "ignition/data/operations/iterations/145/step09-current-minimal-sync.json"
+      ]
   },
   "claim_ceiling": "Independent repository-local obligation status and carry-forward only; an open obligation does not keep a terminal formal task alive, and no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
 }

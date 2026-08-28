@@ -13,17 +13,23 @@
   "tasks": [
     {
       "task_id": "IGNITION-20260828-145",
-      "execution_status": "IN_PROGRESS",
-      "terminal": false,
-      "scope_complete": false,
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
       "identity_impact": "PRESENTATION_ONLY",
-      "terminal_basis": "Task145 is the current presentation-only Human Front Door maintenance task; terminality awaits the README folding, validator, deterministic projection, targeted regression, release and independent witness gates. The deferred live obligation remains independently OPEN/OWNER_DEFERRED.",
+      "terminal_basis": "Task145 Steps 00-09 complete the repository-local Human Front Door cleanup, compiler folding, validator repair, architecture naming correction, deterministic Current projection, targeted regression, first-visit audit, scope check and release-ready terminal candidate. LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
       "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
       "evidence_refs": [
         "ignition/data/operations/iterations/145/execution-contract-r1.json",
-        "ignition/data/operations/iterations/145/step00-baseline-audit.json"
+        "ignition/data/operations/iterations/145/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/145/step06-targeted-human-surface-validation.json",
+        "ignition/data/operations/iterations/145/step07-first-visit-readme-audit.json",
+        "ignition/data/operations/iterations/145/step08-regression-scope-audit.json",
+        "ignition/data/operations/iterations/145/step09-current-minimal-sync.json",
+        "ignition/agent-results/IGNITION-20260828-145-result.md",
+        "ignition/agent-results/IGNITION-20260828-145-machine-receipt.json"
       ],
-      "claim_ceiling": "Task145 repository-local Human Front Door maintenance and release evidence only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+      "claim_ceiling": "Task145 repository-local Human Front Door maintenance, targeted regression and release-ready terminality evidence only; the deferred live obligation remains open and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
     },
     {
       "task_id": "IGNITION-20260828-144",

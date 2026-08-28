@@ -66,14 +66,19 @@
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
       "current_task_id": "IGNITION-20260828-145",
-      "current_task_status": "IN_PROGRESS",
-      "current_task_terminal": false,
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "current_task_terminal": true,
       "open_obligation_ids": [
         "LIVE_EXTERNAL_INVOCATION"
       ],
-      "scope_complete": false,
+      "scope_complete": true,
       "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json",
       "terminal_task_history": [
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260828-145",
+          "terminal": true
+        },
         {
           "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
           "task_id": "IGNITION-20260828-144",
@@ -177,7 +182,7 @@
     },
     "task_lineage": {
       "current_task_id": "IGNITION-20260828-145",
-      "current_task_status": "IN_PROGRESS",
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -199,7 +204,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "10af69ed98019a79d2881bd9b92187fe2252749aa2e168905439d4eb6721ed24"
+      "sha256": "9e940d22efe6bb7c0fbbe8b5f894a7d81ae40d1d41bf04b4cf19820844c18b8a"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -231,15 +236,15 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "5eb58e533868746ae051d497c4bd01ba8f9eb63a3f5a9b7aa7ac835cf0c8bbac"
+      "sha256": "b39adab57f81ae6c15d1912d52e98790bd996b53ea9f5fde128b4965460b9606"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "34b8ef90344be9c645a353eaddc76363c4798f46d2d897af22b17cc982902865"
+      "sha256": "c484457eee63074de8b1ef87c9367e8fe7ea9ca610784400451096f01e22cdc1"
     },
     {
       "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
-      "sha256": "da3fff93ab94098b3cf6b54dc4b88aaa7ceb53171e5d8c708745dc1fffd968ef"
+      "sha256": "31cdcbd9359b3e953c95928b42291618c82a6f6c5a09ce42e344c76d94bb9b37"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
@@ -267,7 +272,7 @@
     },
     {
       "path": "ignition/data/operations/open-obligation-registry-r1.json",
-      "sha256": "bc15c83af5833e21f75957a81fe5c6732b7d3fc2ec0a7bb71f2600185a2ff357"
+      "sha256": "d657a49f1338096989b8bedd69a33d7d254d6c4b5df0538ad0d414c4fbccc6d2"
     },
     {
       "path": "ignition/data/operations/project-components.json",
