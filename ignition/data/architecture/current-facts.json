@@ -272,7 +272,7 @@
     },
     {
       "path": "ignition/data/operations/open-obligation-registry-r1.json",
-      "sha256": "d657a49f1338096989b8bedd69a33d7d254d6c4b5df0538ad0d414c4fbccc6d2"
+      "sha256": "4665d2abcc81ab729c0d1bd5ed400da86e54ab49e28ae98cb0a67d3a2d1bfe07"
     },
     {
       "path": "ignition/data/operations/project-components.json",
