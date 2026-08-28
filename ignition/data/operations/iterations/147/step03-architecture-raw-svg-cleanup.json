@@ -1,0 +1,21 @@
+{
+  "schema_version": "ignition-147-step03-architecture-raw-svg-cleanup-r1",
+  "task_id": "IGNITION-20260828-147",
+  "step": "03",
+  "status": "PASS",
+  "architecture_section": {
+    "embedded_overview_image_count": 1,
+    "embedded_overview_target": "../ignition/docs/generated/ignition-system-architecture.svg",
+    "raw_svg_secondary_entries": 0,
+    "transparent_svg_entries": 0,
+    "rendered_clickability_promises": 0,
+    "machine_explanation_tokens": []
+  },
+  "frozen_architecture_observation": {
+    "map_version": "0.16.0",
+    "architecture_identity_changed": false,
+    "map_geometry_redrawn": false,
+    "system_map_source_spec_svg_changed": false
+  },
+  "claim_ceiling": "Repository-local README architecture-entry cleanup evidence only; the SVG remains a visual architecture projection and no GitHub rendered clickability or external truth is inferred."
+}

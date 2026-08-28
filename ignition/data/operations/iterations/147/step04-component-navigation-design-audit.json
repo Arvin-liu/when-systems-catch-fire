@@ -1,0 +1,32 @@
+{
+  "schema_version": "ignition-147-step04-component-navigation-design-audit-r1",
+  "task_id": "IGNITION-20260828-147",
+  "step": "04",
+  "status": "PASS",
+  "canonical_sources": {
+    "component_registry": "ignition/data/operations/project-components.json",
+    "system_map_spec": "ignition/data/architecture/interactive-system-map.json",
+    "canonical_document_sources": "registry canonical_target values plus explicitly validated architecture/governance documents"
+  },
+  "architecture_inventory": {
+    "registry_components": 99,
+    "visible_map_nodes": 87,
+    "typed_graph_edges": 92,
+    "map_version": "0.16.0"
+  },
+  "human_navigation_design": {
+    "group_count": 5,
+    "groups": [
+      "核心控制与状态",
+      "执行与协作",
+      "研究与知识",
+      "人类入口与成果",
+      "治理与边界"
+    ],
+    "component_navigation_links": 22,
+    "canonical_targets_exist": true,
+    "registry_dumped_in_full": false,
+    "new_parallel_registry": false
+  },
+  "claim_ceiling": "Repository-local component-navigation design and canonical-path audit only; architecture semantics, registry meaning and map geometry remain unchanged."
+}
