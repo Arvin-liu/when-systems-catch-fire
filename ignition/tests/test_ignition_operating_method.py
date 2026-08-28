@@ -79,6 +79,29 @@ class IgnitionOperatingMethodFoundationTests(unittest.TestCase):
         )
         self.assertTrue(any("STATUS_ONLY_ENTRIES_HAVE_NO_CALLABLE_PLAYBOOK" in error for error in validator.validate(candidate)))
 
+    def test_machine_audit_recoverability_is_required(self) -> None:
+        candidate = self.source.replace(
+            "UNIFIED_OUTPUT_MACHINE_AUDIT_RECOVERABILITY",
+            "HUMAN_OUTPUT_ONLY",
+            1,
+        )
+        self.assertTrue(any("UNIFIED_OUTPUT_MACHINE_AUDIT_RECOVERABILITY" in error for error in validator.validate(candidate)))
+
+    def test_input_and_candidate_output_boundaries_are_required(self) -> None:
+        for token in ("INPUT_DERIVED_IS_NOT_IGNITION_DISCOVERY", "CANDIDATE_IS_NOT_CANONICAL_ASSET"):
+            candidate = self.source.replace(token, "BOUNDARY_REMOVED", 1)
+            self.assertTrue(any(token in error for error in validator.validate(candidate)))
+
+    def test_repository_match_and_consensus_cannot_upgrade_evidence(self) -> None:
+        for token in ("REPOSITORY_MATCH_IS_NOT_EXTERNAL_TRUTH", "AGENT_CONSENSUS_IS_NOT_EVIDENCE"):
+            candidate = self.source.replace(token, "BOUNDARY_REMOVED", 1)
+            self.assertTrue(any(token in error for error in validator.validate(candidate)))
+
+    def test_implementation_and_history_cannot_upgrade_epistemic_status(self) -> None:
+        for token in ("IMPLEMENTATION_COMPLETE_IS_NOT_EPISTEMIC_ACCEPTANCE", "HISTORICAL_MEMORY_IS_NOT_CURRENT_REGISTRY"):
+            candidate = self.source.replace(token, "BOUNDARY_REMOVED", 1)
+            self.assertTrue(any(token in error for error in validator.validate(candidate)))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -25,6 +25,7 @@ CORE_CURRENT_READS = (
     "ignition/data/architecture/current-facts.json",
     "ignition/data/operations/current-snapshot-r1.json",
     "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "ignition/data/operations/ignition-run-output-contract-r1.json",
 )
 CALLABLE_STATUSES = {"CURRENT", "CURRENT_BOUNDED"}
 CALLABLE_AI = {"PUBLIC", "PUBLIC_BOUNDED"}

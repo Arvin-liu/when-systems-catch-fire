@@ -232,7 +232,7 @@ operation 的 `default_execution_mode` 必须与当前模式相容；不相容�
 
 `MINIMAL_CURRENT_READS_NOT_FULL_REPOSITORY`
 
-最小基础集仅包含本方法、AI 冷启动入口、Current Facts/Snapshot 和 Capability Registry；再按所选 entry 的 `required_current_reads`、`authoritative_sources`、`applicable_governance` 与 `validation_checks` 扩展。去重后按 authority priority 读取。
+最小基础集仅包含本方法、AI 冷启动入口、Current Facts/Snapshot、Capability Registry 与统一输出契约；对可调用 operation 再加载 registry-derived playbook，并按所选 entry 的 `required_current_reads`、`authoritative_sources`、`applicable_governance` 与 `validation_checks` 扩展。去重后按 authority priority 读取。
 
 禁止把“先读完整仓库/完整历史”当作聪明或安全。只有实际碰到 unresolved identity、source conflict、governance trigger、validator dependency 或用户要求时，才能增量扩展，并记录扩展理由。搜索索引和 aliases 只负责导航到 canonical source。
 
@@ -373,8 +373,60 @@ public name、输入、输出、Current status、run mode、operation-specific r
 
 canonical authored index 位于 [ignition-operation-playbooks-r1.json](data/operations/ignition-operation-playbooks-r1.json)，[operation playbooks human view](docs/operations/ignition-operation-playbooks-r1.md) 是由该索引和 Capability Registry 共同生成的阅读视图。validator 必须证明：可调用 operation 完整一一覆盖、排除项精确、11 类审计闭合、generated view 无漂移。
 
-## 12. 本文状态与 claim ceiling
+## 12. Unified output contract
 
-本文件当前随 `IGNITION-20260829-148` 处于任务分支候选状态；它尚未进入正式 `main`，不得声称主分支已经拥有本操作法。其版本、Current identity、入口同步和输出合同由本任务后续原子步骤补齐，并继续受同一 Draft-only 生命周期约束。
+`UNIFIED_OUTPUT_MACHINE_AUDIT_RECOVERABILITY`
 
-本文只建立 AI 使用入口的基础调用契约、authority priority、Current-first 纪律及与 `ITERATION.md` 的不可合并边界。它不授予仓库修改或外部行动权限，不建立新架构层或真值层，也不证明任何输入、分析、断言、模型、写作或现实结果正确。
+每个点火 Run 的最终记录都必须服从同一个输出契约。默认人类视图应简洁、按任务给结论，不要求机械打印整份 JSON；但它必须来自一份已验证的 `MACHINE_AUDIT` profile，并保留该 profile 的 run ID 与契约 identity，使审计者可以恢复以下 15 组语义：
+
+1. `REQUEST`
+2. `RUN_MODE`
+3. `OPERATION_PATH`
+4. `CURRENT_REF`
+5. `INPUT_OBJECT / PROVENANCE`
+6. `INPUT_DERIVED_FINDINGS`
+7. `EXISTING_CANONICAL_MATCHES`
+8. `COLLISION_RELATIONS`
+9. `CANDIDATE_DELTAS`
+10. `CONTRADICTIONS / GAPS`
+11. `EVIDENCE / SOURCES`
+12. `UNCERTAINTY`
+13. `CLAIM_CEILING`
+14. `RESULT`
+15. `STOP_REASON / OPTIONAL_NEXT_ACTION`
+
+空数组也是可恢复状态：它表示该组在本轮没有记录，不表示字段被遗忘。任何完成、停机或 handoff 输出都要显式给出 stop reason；下一步确实可选时才给 `OPTIONAL_NEXT_ACTION`，不得把“建议继续”伪装成当前 Run 已完成的动作。
+
+以下六个混淆必须由 schema 与语义 validator 共同 fail closed：
+
+`INPUT_DERIVED_IS_NOT_IGNITION_DISCOVERY`
+
+`INPUT_DERIVED_FINDINGS` 中每条内容必须保留 source-explicit provenance，并标明 `NOT_IGNITION_DISCOVERY`。输入已经写出的观点不能因被 Agent 重述而成为点火增量。
+
+`CANDIDATE_IS_NOT_CANONICAL_ASSET`
+
+`CANDIDATE_DELTAS` 固定为 `CANDIDATE_NOT_CANONICAL`、`registry_action = NONE`、epistemic status 未建立；正式登记需要另一个明确授权的 repository-change Run。
+
+`REPOSITORY_MATCH_IS_NOT_EXTERNAL_TRUTH`
+
+`EXISTING_CANONICAL_MATCHES` 只建立 repository identity 和 Current relationship。match 必须绑定 Current registry 的 canonical ID、title、record hash、disposition 与 ceiling，并明确 `NOT_ESTABLISHED_BY_REPOSITORY_MATCH`；repository match ≠ external truth。
+
+`AGENT_CONSENSUS_IS_NOT_EVIDENCE`
+
+Agent agreement、模型互评或重复回答不能作为 `EVIDENCE / SOURCES`；它们最多是需要独立核验的 observation。validator 不接纳 `AGENT_CONSENSUS` 或 `MODEL_MEMORY` 为 evidence source kind。
+
+`IMPLEMENTATION_COMPLETE_IS_NOT_EPISTEMIC_ACCEPTANCE`
+
+`implementation_status` 与 `epistemic_status` 是两个独立维度。实现、测试、commit、部署或多 Agent 一致不能自动产生 epistemic acceptance；若确有接受状态，必须单独指向明确的 Current epistemic authority 与 decision identity。
+
+`HISTORICAL_MEMORY_IS_NOT_CURRENT_REGISTRY`
+
+Historical 文件、模型记忆和聊天记忆只能作为 `HISTORICAL_RETRIEVAL_HINT`，authority effect 固定为 `NONE`，不能支持 Current canonical match。历史记忆 ≠ Current registry。
+
+canonical 契约位于 [ignition-run-output-contract-r1.json](data/operations/ignition-run-output-contract-r1.json)，机器实例 schema 位于 [ignition-run-output-r1.schema.json](schemas/operations/ignition-run-output-r1.schema.json)，决定性入口是 [validate_ignition_run_output.py](tools/operations/validate_ignition_run_output.py)。所有 run plan 都必须把 canonical output contract 纳入 core Current reads；schema/validator PASS 只说明这些语义可恢复且边界结构闭合，不证明结果真实、证据充分或已获 epistemic acceptance。
+
+## 13. 本文状态与 claim ceiling
+
+本文件当前随 `IGNITION-20260829-148` 处于任务分支候选状态；它尚未进入正式 `main`，不得声称主分支已经拥有本操作法。统一输出合同也只是同一任务分支候选；版本、Current identity 与入口同步由本任务后续原子步骤补齐，并继续受同一 Draft-only 生命周期约束。
+
+本文只建立 AI 使用入口的调用契约、authority priority、Current-first 纪律、operation playbooks、统一输出语义及与 `ITERATION.md` 的不可合并边界。它不授予仓库修改或外部行动权限，不建立新架构层或真值层，也不证明任何输入、分析、断言、模型、写作或现实结果正确。

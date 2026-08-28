@@ -1,0 +1,454 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/operations/ignition-run-output-r1.schema.json",
+  "title": "Ignition Run Output R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract_id",
+    "profile",
+    "run_id",
+    "request",
+    "run_mode",
+    "operation_path",
+    "current_ref",
+    "input_object_provenance",
+    "input_derived_findings",
+    "existing_canonical_matches",
+    "collision_relations",
+    "candidate_deltas",
+    "contradictions_gaps",
+    "evidence_sources",
+    "uncertainty",
+    "claim_ceiling",
+    "result",
+    "stop",
+    "boundary_attestations"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-run-output-r1"},
+    "contract_id": {"const": "IGNITION_RUN_OUTPUT_CONTRACT_R1"},
+    "profile": {"const": "MACHINE_AUDIT"},
+    "run_id": {"$ref": "#/$defs/nonblank"},
+    "request": {"$ref": "#/$defs/request"},
+    "run_mode": {"enum": ["READ_ONLY_RUN", "REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN"]},
+    "operation_path": {"$ref": "#/$defs/operationPath"},
+    "current_ref": {"$ref": "#/$defs/currentRef"},
+    "input_object_provenance": {"$ref": "#/$defs/inputObjectProvenance"},
+    "input_derived_findings": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/inputDerivedFinding"}
+    },
+    "existing_canonical_matches": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/canonicalMatch"}
+    },
+    "collision_relations": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/collisionRelation"}
+    },
+    "candidate_deltas": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/candidateDelta"}
+    },
+    "contradictions_gaps": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/contradictionGap"}
+    },
+    "evidence_sources": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/evidenceSource"}
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/uncertainty"}
+    },
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"},
+    "result": {"$ref": "#/$defs/result"},
+    "stop": {"$ref": "#/$defs/stop"},
+    "boundary_attestations": {"$ref": "#/$defs/boundaryAttestations"}
+  },
+  "$defs": {
+    "nonblank": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "stringList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonblank"}
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["request_id", "natural_language_intent", "request_envelope_locator", "explicit_permissions"],
+      "properties": {
+        "request_id": {"$ref": "#/$defs/nonblank"},
+        "natural_language_intent": {"$ref": "#/$defs/nonblank"},
+        "request_envelope_locator": {"$ref": "#/$defs/nonblank"},
+        "explicit_permissions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["repository_mutation", "external_action"],
+          "properties": {
+            "repository_mutation": {"type": "boolean"},
+            "external_action": {"type": "boolean"}
+          }
+        }
+      }
+    },
+    "operationPath": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation_id", "registry_status", "decision", "playbook_source", "lifecycle_stages_completed"],
+      "properties": {
+        "operation_id": {"$ref": "#/$defs/nonblank"},
+        "registry_status": {
+          "enum": ["CURRENT", "CURRENT_BOUNDED", "OWNER_DEFERRED", "REFERENCE_ONLY", "HISTORICAL", "UNSUPPORTED", "UNREGISTERED"]
+        },
+        "decision": {"enum": ["PROCEED", "PROCEED_BOUNDED", "STOP", "HANDOFF"]},
+        "playbook_source": {
+          "oneOf": [
+            {"const": "ignition/data/operations/ignition-operation-playbooks-r1.json"},
+            {"type": "null"}
+          ]
+        },
+        "lifecycle_stages_completed": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "ACCEPT_REQUEST",
+              "FREEZE_CURRENT",
+              "CLASSIFY_MODE",
+              "CLASSIFY_INPUT_OBJECT",
+              "RESOLVE_OPERATION",
+              "CHECK_CAPABILITY_STATUS",
+              "BUILD_MINIMAL_READ_PLAN",
+              "NORMALIZE_INPUT_AND_PROVENANCE",
+              "EXECUTE_OPERATION",
+              "CANONICAL_COLLISION / EVIDENCE CHECK",
+              "ADVERSARIAL_REVIEW",
+              "APPLY_CLAIM_CEILING",
+              "RENDER_RESULT",
+              "STOP / HANDOFF"
+            ]
+          }
+        }
+      }
+    },
+    "currentRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "ref", "observed_identity", "commit_sha", "exact_head", "frozen_at", "limitations"],
+      "properties": {
+        "repository": {"$ref": "#/$defs/nonblank"},
+        "ref": {"$ref": "#/$defs/nonblank"},
+        "observed_identity": {"$ref": "#/$defs/nonblank"},
+        "commit_sha": {
+          "oneOf": [
+            {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+            {"type": "null"}
+          ]
+        },
+        "exact_head": {"type": "boolean"},
+        "frozen_at": {"$ref": "#/$defs/nonblank"},
+        "limitations": {"$ref": "#/$defs/stringList"}
+      }
+    },
+    "inputObjectProvenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["boundary_status", "objects"],
+      "properties": {
+        "boundary_status": {"enum": ["SEPARATED", "UNRESOLVED"]},
+        "objects": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/inputObject"}
+        }
+      }
+    },
+    "inputObject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["object_id", "object_type", "provenance"],
+      "properties": {
+        "object_id": {"$ref": "#/$defs/nonblank"},
+        "object_type": {"$ref": "#/$defs/nonblank"},
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["source_kind", "source_locator", "supplied_by", "content_sha256", "version_or_captured_at"],
+          "properties": {
+            "source_kind": {"enum": ["USER_SUPPLIED_LOCAL", "USER_SUPPLIED_URL", "USER_PASTED", "REPOSITORY_SOURCE", "OTHER"]},
+            "source_locator": {"$ref": "#/$defs/nonblank"},
+            "supplied_by": {"$ref": "#/$defs/nonblank"},
+            "content_sha256": {
+              "oneOf": [
+                {"$ref": "#/$defs/sha256"},
+                {"type": "null"}
+              ]
+            },
+            "version_or_captured_at": {"$ref": "#/$defs/nonblank"}
+          }
+        }
+      }
+    },
+    "inputDerivedFinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finding_id", "statement", "input_object_ids", "provenance_locators", "origin", "ignition_discovery_status"],
+      "properties": {
+        "finding_id": {"$ref": "#/$defs/nonblank"},
+        "statement": {"$ref": "#/$defs/nonblank"},
+        "input_object_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "provenance_locators": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "origin": {"const": "SOURCE_EXPLICIT"},
+        "ignition_discovery_status": {"const": "NOT_IGNITION_DISCOVERY"}
+      }
+    },
+    "canonicalMatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "match_id",
+        "registry_kind",
+        "canonical_id",
+        "canonical_title",
+        "authority_path",
+        "record_sha256",
+        "final_disposition",
+        "claim_ceiling",
+        "repository_identity_effect",
+        "external_truth_status"
+      ],
+      "properties": {
+        "match_id": {"$ref": "#/$defs/nonblank"},
+        "registry_kind": {"enum": ["FUNCTION_ASSET", "NONFUNCTION_CLAIM"]},
+        "canonical_id": {"$ref": "#/$defs/nonblank"},
+        "canonical_title": {"$ref": "#/$defs/nonblank"},
+        "authority_path": {
+          "enum": [
+            "ignition/data/foundation/function-assets/identity-cards.jsonl",
+            "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+          ]
+        },
+        "record_sha256": {"$ref": "#/$defs/sha256"},
+        "final_disposition": {"$ref": "#/$defs/nonblank"},
+        "claim_ceiling": {"$ref": "#/$defs/nonblank"},
+        "repository_identity_effect": {"const": "ESTABLISHES_REPOSITORY_IDENTITY_ONLY"},
+        "external_truth_status": {"const": "NOT_ESTABLISHED_BY_REPOSITORY_MATCH"}
+      }
+    },
+    "collisionRelation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relation_id", "relation_type", "input_finding_ids", "canonical_match_ids", "statement", "evidence_source_ids"],
+      "properties": {
+        "relation_id": {"$ref": "#/$defs/nonblank"},
+        "relation_type": {"enum": ["DUPLICATE_OF", "EXTENSION_OF", "COMBINATION_OF", "CONFLICT_WITH", "SOURCE_DERIVED", "CANDIDATE_NEW", "UNRESOLVED"]},
+        "input_finding_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "canonical_match_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "statement": {"$ref": "#/$defs/nonblank"},
+        "evidence_source_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        }
+      }
+    },
+    "candidateDelta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "candidate_id",
+        "statement",
+        "derived_from_input_finding_ids",
+        "canonical_match_ids",
+        "relation_ids",
+        "asset_status",
+        "registry_action",
+        "epistemic_status"
+      ],
+      "properties": {
+        "candidate_id": {"$ref": "#/$defs/nonblank"},
+        "statement": {"$ref": "#/$defs/nonblank"},
+        "derived_from_input_finding_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "canonical_match_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "relation_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "asset_status": {"const": "CANDIDATE_NOT_CANONICAL"},
+        "registry_action": {"const": "NONE"},
+        "epistemic_status": {"const": "NOT_ESTABLISHED"}
+      }
+    },
+    "contradictionGap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["item_id", "kind", "statement", "basis_refs", "resolution_status"],
+      "properties": {
+        "item_id": {"$ref": "#/$defs/nonblank"},
+        "kind": {"enum": ["CONTRADICTION", "GAP", "UNRESOLVED"]},
+        "statement": {"$ref": "#/$defs/nonblank"},
+        "basis_refs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "resolution_status": {"enum": ["OPEN", "RESOLVED_BOUNDED", "DEFERRED"]}
+      }
+    },
+    "evidenceSource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "source_kind", "locator", "provenance", "supports_refs", "authority_effect", "limitations"],
+      "properties": {
+        "source_id": {"$ref": "#/$defs/nonblank"},
+        "source_kind": {
+          "enum": [
+            "CURRENT_REPOSITORY_AUTHORITY",
+            "INPUT_SOURCE",
+            "EXTERNAL_PRIMARY_SOURCE",
+            "EXTERNAL_SECONDARY_SOURCE",
+            "VALIDATOR_OUTPUT",
+            "HUMAN_REVIEW",
+            "CURRENT_EPISTEMIC_AUTHORITY",
+            "HISTORICAL_RETRIEVAL_HINT"
+          ]
+        },
+        "locator": {"$ref": "#/$defs/nonblank"},
+        "provenance": {"$ref": "#/$defs/nonblank"},
+        "supports_refs": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "authority_effect": {
+          "enum": [
+            "REPOSITORY_IDENTITY_OR_POLICY_ONLY",
+            "SOURCE_PROVENANCE_ONLY",
+            "EXTERNAL_EVIDENCE_WITH_DECLARED_SCOPE",
+            "VALIDATION_ONLY",
+            "HUMAN_REVIEW_WITH_DECLARED_SCOPE",
+            "EPISTEMIC_DECISION_WITH_DECLARED_SCOPE",
+            "NONE"
+          ]
+        },
+        "limitations": {"$ref": "#/$defs/stringList"}
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["uncertainty_id", "statement", "scope", "status", "consequence"],
+      "properties": {
+        "uncertainty_id": {"$ref": "#/$defs/nonblank"},
+        "statement": {"$ref": "#/$defs/nonblank"},
+        "scope": {"$ref": "#/$defs/nonblank"},
+        "status": {"enum": ["OPEN", "BOUNDED", "RESOLVED"]},
+        "consequence": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "epistemicAcceptanceAuthority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authority_source_id", "decision_id", "independent_of_implementation"],
+      "properties": {
+        "authority_source_id": {"$ref": "#/$defs/nonblank"},
+        "decision_id": {"$ref": "#/$defs/nonblank"},
+        "independent_of_implementation": {"const": true}
+      }
+    },
+    "result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "summary", "implementation_status", "epistemic_status", "epistemic_acceptance_authority", "artifacts"],
+      "properties": {
+        "status": {"enum": ["COMPLETED", "COMPLETED_BOUNDED", "STOPPED", "HANDOFF_REQUIRED", "FAILED_VALIDATION"]},
+        "summary": {"$ref": "#/$defs/nonblank"},
+        "implementation_status": {"enum": ["NOT_APPLICABLE", "NOT_STARTED", "PARTIAL", "COMPLETE", "VALIDATED"]},
+        "epistemic_status": {"enum": ["NOT_ESTABLISHED", "UNRESOLVED", "REQUIRES_REVIEW", "ACCEPTED_BY_SEPARATE_CURRENT_AUTHORITY"]},
+        "epistemic_acceptance_authority": {
+          "oneOf": [
+            {"$ref": "#/$defs/epistemicAcceptanceAuthority"},
+            {"type": "null"}
+          ]
+        },
+        "artifacts": {"$ref": "#/$defs/stringList"}
+      }
+    },
+    "stop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stop_reason", "optional_next_action"],
+      "properties": {
+        "stop_reason": {"$ref": "#/$defs/nonblank"},
+        "optional_next_action": {
+          "oneOf": [
+            {"$ref": "#/$defs/nonblank"},
+            {"type": "null"}
+          ]
+        }
+      }
+    },
+    "boundaryAttestations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "INPUT_DERIVED_IS_NOT_IGNITION_DISCOVERY",
+        "CANDIDATE_IS_NOT_CANONICAL_ASSET",
+        "REPOSITORY_MATCH_IS_NOT_EXTERNAL_TRUTH",
+        "AGENT_CONSENSUS_IS_NOT_EVIDENCE",
+        "IMPLEMENTATION_COMPLETE_IS_NOT_EPISTEMIC_ACCEPTANCE",
+        "HISTORICAL_MEMORY_IS_NOT_CURRENT_REGISTRY"
+      ],
+      "properties": {
+        "INPUT_DERIVED_IS_NOT_IGNITION_DISCOVERY": {"const": true},
+        "CANDIDATE_IS_NOT_CANONICAL_ASSET": {"const": true},
+        "REPOSITORY_MATCH_IS_NOT_EXTERNAL_TRUTH": {"const": true},
+        "AGENT_CONSENSUS_IS_NOT_EVIDENCE": {"const": true},
+        "IMPLEMENTATION_COMPLETE_IS_NOT_EPISTEMIC_ACCEPTANCE": {"const": true},
+        "HISTORICAL_MEMORY_IS_NOT_CURRENT_REGISTRY": {"const": true}
+      }
+    }
+  }
+}

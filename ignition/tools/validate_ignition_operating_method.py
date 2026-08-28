@@ -14,6 +14,7 @@ ROOT = HERE.parents[1]
 METHOD_PATH = ROOT / "OPERATING-METHOD.md"
 ITERATION_PATH = ROOT / "ITERATION.md"
 REGISTRY_PATH = ROOT / "data/operations/ignition-operation-capability-registry-r1.json"
+OUTPUT_CONTRACT_PATH = ROOT / "data/operations/ignition-run-output-contract-r1.json"
 
 TITLE = "# 点火操作法 / Ignition Operating Method"
 BOUNDARY_TOKENS = (
@@ -40,6 +41,13 @@ BOUNDARY_TOKENS = (
     "NO_UNDEFINED_PSEUDO_QUANTIFICATION",
     "PLAYBOOKS_ARE_DERIVED_FROM_CAPABILITY_REGISTRY",
     "STATUS_ONLY_ENTRIES_HAVE_NO_CALLABLE_PLAYBOOK",
+    "UNIFIED_OUTPUT_MACHINE_AUDIT_RECOVERABILITY",
+    "INPUT_DERIVED_IS_NOT_IGNITION_DISCOVERY",
+    "CANDIDATE_IS_NOT_CANONICAL_ASSET",
+    "REPOSITORY_MATCH_IS_NOT_EXTERNAL_TRUTH",
+    "AGENT_CONSENSUS_IS_NOT_EVIDENCE",
+    "IMPLEMENTATION_COMPLETE_IS_NOT_EPISTEMIC_ACCEPTANCE",
+    "HISTORICAL_MEMORY_IS_NOT_CURRENT_REGISTRY",
 )
 PRIORITY_TOKENS = (
     "CURRENT_USER_OR_OWNER_EXPLICIT_REQUEST",
@@ -64,6 +72,31 @@ LIFECYCLE_TOKENS = (
     "APPLY_CLAIM_CEILING",
     "RENDER_RESULT",
     "STOP / HANDOFF",
+)
+OUTPUT_SEMANTICS = (
+    "REQUEST",
+    "RUN_MODE",
+    "OPERATION_PATH",
+    "CURRENT_REF",
+    "INPUT_OBJECT / PROVENANCE",
+    "INPUT_DERIVED_FINDINGS",
+    "EXISTING_CANONICAL_MATCHES",
+    "COLLISION_RELATIONS",
+    "CANDIDATE_DELTAS",
+    "CONTRADICTIONS / GAPS",
+    "EVIDENCE / SOURCES",
+    "UNCERTAINTY",
+    "CLAIM_CEILING",
+    "RESULT",
+    "STOP_REASON / OPTIONAL_NEXT_ACTION",
+)
+OUTPUT_GUARDS = (
+    "INPUT_DERIVED_IS_NOT_IGNITION_DISCOVERY",
+    "CANDIDATE_IS_NOT_CANONICAL_ASSET",
+    "REPOSITORY_MATCH_IS_NOT_EXTERNAL_TRUTH",
+    "AGENT_CONSENSUS_IS_NOT_EVIDENCE",
+    "IMPLEMENTATION_COMPLETE_IS_NOT_EPISTEMIC_ACCEPTANCE",
+    "HISTORICAL_MEMORY_IS_NOT_CURRENT_REGISTRY",
 )
 
 
@@ -139,6 +172,12 @@ def validate(text: str | None = None) -> list[str]:
         "当前 4 个非可调用项只出现在排除表",
         "没有登记通用自主检索 operation",
         "executor/orchestration 没有 Current callable operation",
+        "默认人类视图应简洁、按任务给结论",
+        "空数组也是可恢复状态",
+        "repository match ≠ external truth",
+        "Historical 文件、模型记忆和聊天记忆只能作为 HISTORICAL_RETRIEVAL_HINT",
+        "实现、测试、commit、部署或多 Agent 一致不能自动产生 epistemic acceptance",
+        "所有 run plan 都必须把 canonical output contract 纳入 core Current reads",
     )
     for phrase in required_phrases:
         if phrase not in normalized:
@@ -151,6 +190,18 @@ def validate(text: str | None = None) -> list[str]:
         errors.append("candidate operation registry cannot be represented as Current on main")
     if set(registry["execution_mode_vocabulary"]) != {"READ_ONLY_RUN", "REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN"}:
         errors.append("Operating Method mode vocabulary differs from the capability registry")
+
+    output_contract = load_json(OUTPUT_CONTRACT_PATH)
+    if output_contract.get("canonical_source_path") != "ignition/data/operations/ignition-run-output-contract-r1.json":
+        errors.append("method does not bind the canonical unified output contract")
+    if output_contract.get("lifecycle", {}).get("current_on_main"):
+        errors.append("candidate output contract cannot be represented as Current on main")
+    actual_semantics = tuple(row.get("semantic_id") for row in output_contract.get("semantic_fields", []))
+    if actual_semantics != OUTPUT_SEMANTICS:
+        errors.append("unified output contract does not expose the fifteen required semantics in canonical order")
+    actual_guards = tuple(row.get("guard_id") for row in output_contract.get("boundary_guards", []))
+    if actual_guards != OUTPUT_GUARDS:
+        errors.append("unified output contract does not preserve all six anti-confusion guards")
 
     iteration = ITERATION_PATH.read_text(encoding="utf-8")
     if "This method governs how 点火 changes itself." not in iteration:

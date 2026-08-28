@@ -1,0 +1,73 @@
+{
+  "schema_version": "ignition-run-output-contract-r1",
+  "contract_id": "IGNITION_RUN_OUTPUT_CONTRACT_R1",
+  "canonical_source_path": "ignition/data/operations/ignition-run-output-contract-r1.json",
+  "instance_schema_path": "ignition/schemas/operations/ignition-run-output-r1.schema.json",
+  "validator_path": "ignition/tools/operations/validate_ignition_run_output.py",
+  "lifecycle": {
+    "task_id": "IGNITION-20260829-148",
+    "status": "TASK148_CANDIDATE_BRANCH",
+    "current_on_main": false
+  },
+  "profiles": {
+    "machine_audit": {
+      "profile_id": "MACHINE_AUDIT",
+      "rule": "The validated instance is the complete recoverable record. Every required semantic ID resolves through semantic_fields to one required JSON value."
+    },
+    "human_default": {
+      "profile_id": "HUMAN_DEFAULT",
+      "rule": "Render a concise result, material uncertainty, claim ceiling, stop reason and optional next action without mechanically dumping every machine field.",
+      "machine_audit_recovery_required": true
+    }
+  },
+  "semantic_fields": [
+    {"semantic_id": "REQUEST", "json_pointer": "/request"},
+    {"semantic_id": "RUN_MODE", "json_pointer": "/run_mode"},
+    {"semantic_id": "OPERATION_PATH", "json_pointer": "/operation_path"},
+    {"semantic_id": "CURRENT_REF", "json_pointer": "/current_ref"},
+    {"semantic_id": "INPUT_OBJECT / PROVENANCE", "json_pointer": "/input_object_provenance"},
+    {"semantic_id": "INPUT_DERIVED_FINDINGS", "json_pointer": "/input_derived_findings"},
+    {"semantic_id": "EXISTING_CANONICAL_MATCHES", "json_pointer": "/existing_canonical_matches"},
+    {"semantic_id": "COLLISION_RELATIONS", "json_pointer": "/collision_relations"},
+    {"semantic_id": "CANDIDATE_DELTAS", "json_pointer": "/candidate_deltas"},
+    {"semantic_id": "CONTRADICTIONS / GAPS", "json_pointer": "/contradictions_gaps"},
+    {"semantic_id": "EVIDENCE / SOURCES", "json_pointer": "/evidence_sources"},
+    {"semantic_id": "UNCERTAINTY", "json_pointer": "/uncertainty"},
+    {"semantic_id": "CLAIM_CEILING", "json_pointer": "/claim_ceiling"},
+    {"semantic_id": "RESULT", "json_pointer": "/result"},
+    {"semantic_id": "STOP_REASON / OPTIONAL_NEXT_ACTION", "json_pointer": "/stop"}
+  ],
+  "boundary_guards": [
+    {
+      "guard_id": "INPUT_DERIVED_IS_NOT_IGNITION_DISCOVERY",
+      "prohibited_confusion": "An input-explicit statement cannot be presented as a discovery produced by Ignition.",
+      "enforcement": "Every input-derived finding is SOURCE_EXPLICIT and NOT_IGNITION_DISCOVERY."
+    },
+    {
+      "guard_id": "CANDIDATE_IS_NOT_CANONICAL_ASSET",
+      "prohibited_confusion": "A run-local candidate cannot be represented as a registered canonical asset.",
+      "enforcement": "Every candidate delta is CANDIDATE_NOT_CANONICAL with registry action NONE."
+    },
+    {
+      "guard_id": "REPOSITORY_MATCH_IS_NOT_EXTERNAL_TRUTH",
+      "prohibited_confusion": "A canonical repository match cannot establish external truth.",
+      "enforcement": "Every canonical match has repository-identity-only effect and external truth NOT_ESTABLISHED_BY_REPOSITORY_MATCH."
+    },
+    {
+      "guard_id": "AGENT_CONSENSUS_IS_NOT_EVIDENCE",
+      "prohibited_confusion": "Agreement among Agents or models cannot be entered as evidence.",
+      "enforcement": "AGENT_CONSENSUS and MODEL_MEMORY are not admitted evidence source kinds."
+    },
+    {
+      "guard_id": "IMPLEMENTATION_COMPLETE_IS_NOT_EPISTEMIC_ACCEPTANCE",
+      "prohibited_confusion": "Implementation completion cannot by itself establish epistemic acceptance.",
+      "enforcement": "Implementation and epistemic status are separate; acceptance requires a separately identified Current epistemic authority."
+    },
+    {
+      "guard_id": "HISTORICAL_MEMORY_IS_NOT_CURRENT_REGISTRY",
+      "prohibited_confusion": "Historical files, model memory and chat memory cannot establish a Current canonical identity.",
+      "enforcement": "Canonical matches must bind the exact Current function or non-function registry; historical material is retrieval-hint evidence with authority effect NONE."
+    }
+  ],
+  "claim_ceiling": "This contract preserves output semantics, provenance, status dimensions and stop boundaries. Structural validation does not establish truth, evidence sufficiency, novelty, implementation success, Owner acceptance or epistemic acceptance."
+}

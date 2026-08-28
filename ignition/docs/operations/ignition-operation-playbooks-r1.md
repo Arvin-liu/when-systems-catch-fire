@@ -54,7 +54,7 @@ Only operations whose registry status is `CURRENT` or `CURRENT_BOUNDED` and whos
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/data/foundation/function-assets/closure-summary.json`, `ignition/data/foundation/function-assets/identity-cards.jsonl`, `ignition/data/governance/knowledge-experience/manifest.json`, `ignition/docs/foundation/migration.md`
 - Expand with declared authority/governance/validator paths: `ignition/data/foundation/function-assets/identity-cards.jsonl`, `ignition/docs/foundation/migration.md`, `ignition/KNOWLEDGE/EVOLUTION.md`, `ignition/data/governance/knowledge-experience/manifest.json`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/tools/foundation/validate_function_asset_closure.py`, `ignition/tools/governance/validate_knowledge_experience.py`
 
@@ -110,7 +110,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/open-obligation-registry-r1.json`
 - Expand with declared authority/governance/validator paths: `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/docs/project-current-state.md`, `ignition/STATE-CHANGELOG.md`, `ignition/tools/validate_current_state_sync.py`, `ignition/tools/validate_state_changelog.py`
 
@@ -168,7 +168,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/OPERATING-METHOD.md`, `ignition/data/foundation/function-assets/identity-cards.jsonl`, `ignition/data/foundation/nonfunction-claims/claim-registry.jsonl`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`
 - Expand with declared authority/governance/validator paths: `ignition/OPERATING-METHOD.md`, `ignition/schemas/operations/ignition-object-collision-run-r1.schema.json`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/tools/operations/evaluate_object_collision_run.py`, `ignition/tests/test_ignition_object_collision.py`
 
@@ -224,7 +224,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/packs/knowledge/manifest.json`, `ignition/data/governance/knowledge-experience/manifest.json`
 - Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/architecture/current-facts.json`, `ignition/docs/governance/knowledge-experience-layer.md`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/tools/validate_pack_registry.py`, `ignition/tools/governance/validate_knowledge_experience.py`
 
@@ -278,7 +278,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/FOUNDATION.md`, `ignition/KNOWLEDGE/README.md`, `ignition/packs/knowledge/manifest.json`
 - Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/architecture/current-facts.json`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/tools/validate_pack_registry.py`, `ignition/tools/foundation/validate_foundation.py`
 
@@ -332,7 +332,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/packs/knowledge/manifest.json`
 - Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/tools/foundation/validate_claim_governance.py`, `ignition/tools/foundation/validate_nonfunction_claim_closure.py`
 
@@ -385,7 +385,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/packs/knowledge/manifest.json`, `ignition/docs/foundation/claim-governance-and-function-identity.md`
 - Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/tools/validate_pack_registry.py`, `ignition/tools/validate_epistemic_governance_relationships.py`
 
@@ -439,7 +439,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/docs/architecture/language-thought-logic-plane.md`, `ignition/data/language-thought/manifest.json`, `ignition/docs/language-thought/README.md`
 - Expand with declared authority/governance/validator paths: `ignition/docs/architecture/language-thought-logic-plane.md`, `ignition/data/language-thought/manifest.json`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/publication/zhiyuan-writing-method.md`, `ignition/tools/language_thought/validate_language_thought.py`, `ignition/tests/test_language_thought_plane.py`
 
@@ -494,7 +494,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/packs/maintenance/manifest.json`, `ignition/agent_runtime/README.md`
 - Expand with declared authority/governance/validator paths: `ignition/packs/maintenance/manifest.json`, `ignition/agent_runtime/README.md`, `ignition/ITERATION.md`, `ignition/docs/architecture/os-control-plane-r2.md`, `ignition/tools/validate_r2_offline_repository_maintenance.py`, `ignition/tools/validate_agent_runtime_boundary.py`
 
@@ -547,7 +547,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/packs/maintenance/manifest.json`, `ignition/agent_runtime/README.md`
 - Expand with declared authority/governance/validator paths: `ignition/packs/maintenance/manifest.json`, `ignition/agent_runtime/README.md`, `ignition/ITERATION.md`, `ignition/docs/architecture/os-control-plane-r2.md`, `ignition/tools/validate_agent_runtime_boundary.py`, `ignition/tools/validate_state_changelog.py`
 
@@ -599,7 +599,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/ITERATION.md`, `ignition/AI-START-HERE.md`, `ignition/data/operations/project-components.json`, `ignition/data/operations/change-propagation-topology.json`
 - Expand with declared authority/governance/validator paths: `ignition/ITERATION.md`, `ignition/data/architecture/current-system-identity.json`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/governance/life-community-value-charter.md`, `ignition/tests/test_change_propagation.py`, `ignition/tools/validate_current_state_sync.py`
 
@@ -656,7 +656,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/docs/architecture/reos-vnext-light.md`, `ignition/packs/research/manifest.json`
 - Expand with declared authority/governance/validator paths: `ignition/packs/research/manifest.json`, `ignition/docs/architecture/reos-vnext-light.md`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/tools/validate_pack_registry.py`, `ignition/tests/test_reos_vnext_minimal_kernel.py`
 
@@ -710,7 +710,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/docs/architecture/reos-vnext-light.md`, `ignition/packs/research/manifest.json`
 - Expand with declared authority/governance/validator paths: `ignition/packs/research/manifest.json`, `ignition/docs/architecture/reos-vnext-light.md`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/tests/test_reos_vnext_minimal_kernel.py`, `ignition/tools/validate_pack_registry.py`
 
@@ -764,7 +764,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/docs/publication/zhiyuan-writing-method.md`, `ignition/templates/publication/zhiyuan-writing-spec.md`, `ignition/docs/architecture/language-thought-logic-plane.md`
 - Expand with declared authority/governance/validator paths: `ignition/packs/writing/manifest.json`, `ignition/docs/publication/zhiyuan-writing-method.md`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/governance/life-community-value-charter.md`, `ignition/tools/publication/validate_fire_seeds.py`, `ignition/tools/governance/validate_human_surface_contract.py`
 
@@ -818,7 +818,7 @@ Stop conditions：
 
 最小 Current read set：
 
-- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
 - Operation-specific required reads: `ignition/packs/writing/manifest.json`, `ignition/docs/publication/zhiyuan-writing-method.md`
 - Expand with declared authority/governance/validator paths: `ignition/packs/writing/manifest.json`, `ignition/docs/publication/zhiyuan-writing-method.md`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/governance/life-community-value-charter.md`, `ignition/tools/governance/validate_human_surface_contract.py`, `ignition/tools/publication/validate_fire_seeds.py`
 

@@ -18,6 +18,7 @@ from classify_ignition_run_mode import ModeRoutingError, classify_mode  # noqa: 
 
 REGISTRY_PATH = ROOT / "data/operations/ignition-operation-capability-registry-r1.json"
 PLAYBOOKS_PATH = "ignition/data/operations/ignition-operation-playbooks-r1.json"
+OUTPUT_CONTRACT_PATH = "ignition/data/operations/ignition-run-output-contract-r1.json"
 FIXTURE_PATH = ROOT / "tests/fixtures/ignition-operating-method/lifecycle-planning-r1.json"
 CORE_CURRENT_READS = (
     "ignition/OPERATING-METHOD.md",
@@ -25,6 +26,7 @@ CORE_CURRENT_READS = (
     "ignition/data/architecture/current-facts.json",
     "ignition/data/operations/current-snapshot-r1.json",
     "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    OUTPUT_CONTRACT_PATH,
 )
 LIFECYCLE_STAGES = (
     "ACCEPT_REQUEST",
@@ -92,6 +94,7 @@ def plan_run(request: dict[str, Any], operation_id: str, current_ref: str) -> di
             "decision": "STOP",
             "stop_reason": "UNSUPPORTED_OPERATION",
             "minimal_read_plan": list(CORE_CURRENT_READS),
+            "output_contract_source": OUTPUT_CONTRACT_PATH,
             "side_effects_authorized_by_plan": False,
         }
 
@@ -127,6 +130,7 @@ def plan_run(request: dict[str, Any], operation_id: str, current_ref: str) -> di
         "operation_claim_ceiling": operation["claim_ceiling"],
         "known_limits": operation["known_limits"],
         "playbook_source": PLAYBOOKS_PATH if callable_playbook_reads else None,
+        "output_contract_source": OUTPUT_CONTRACT_PATH,
         "side_effects_authorized_by_plan": False,
     }
 

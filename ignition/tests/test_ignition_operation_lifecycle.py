@@ -59,6 +59,15 @@ class IgnitionOperationLifecycleTests(unittest.TestCase):
         self.assertIsNone(historical["playbook_source"])
         self.assertNotIn(planner.PLAYBOOKS_PATH, historical["minimal_read_plan"])
 
+    def test_every_run_plan_loads_the_unified_output_contract(self) -> None:
+        request = {"request_envelope": {"user_request": "请说明当前状态。"}, "input_objects": []}
+        current = planner.plan_run(request, "ignition.recover_current_state", "refs/heads/main@example-current")
+        status_only = planner.plan_run(request, "executor.reference_conformance", "refs/heads/main@example-current")
+        unknown = planner.plan_run(request, "ignition.unknown", "refs/heads/main@example-current")
+        for result in (current, status_only, unknown):
+            self.assertEqual(result["output_contract_source"], planner.OUTPUT_CONTRACT_PATH)
+            self.assertIn(planner.OUTPUT_CONTRACT_PATH, result["minimal_read_plan"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -79,6 +79,7 @@ class IgnitionOperationPlaybooksTests(unittest.TestCase):
             "不得做什么：",
         ):
             self.assertEqual(rendered.count(heading), 15)
+        self.assertEqual(rendered.count("ignition/data/operations/ignition-run-output-contract-r1.json"), 15)
 
     def test_authored_playbooks_do_not_duplicate_registry_fields(self) -> None:
         allowed = {
