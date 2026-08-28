@@ -1,0 +1,37 @@
+{
+  "schema_version": "ignition-147-step06-targeted-human-surface-validation-r1",
+  "task_id": "IGNITION-20260828-147",
+  "step": "06",
+  "status": "PASS",
+  "commands": {
+    "human_front_door": "PASS system_map_source_link_nodes=87 human_surfaces=25 machine_human_pairs=14 two_click_destinations=20",
+    "human_surface_contract": "PASS human_entries=48 machine_components=99 visible_graph_nodes=87 typed_graph_edges=92",
+    "human_visibility": "PASS human_surfaces=25 machine_human_pairs=14 two_click_destinations=20",
+    "homepage_components": "PASS count=5",
+    "current_projection_determinism": "PASS passes=2 outputs=9",
+    "current_surface_determinism": "PASS passes=2 outputs=15",
+    "current_surface_semantics": "PASS",
+    "current_state_sync": "PASS receipt=ignition/data/operations/iterations/147/current-state-sync-receipt.json",
+    "current_volatile_fact_registry": "PASS facts=19 surfaces=6",
+    "current_task_lineage": "PASS",
+    "iteration_ordinal_matrix": "PASS cases=15",
+    "related_unit_tests": "PASS 42 tests, 0 failures, 0 errors, 0 skips"
+  },
+  "homepage_contract": {
+    "project_identity_exact": true,
+    "architecture_image_count": 1,
+    "component_navigation_links": 22,
+    "component_groups_default_collapsed": true,
+    "canonical_component_targets_exist": true,
+    "machine_explanation_tokens_present": []
+  },
+  "scope_guards": {
+    "architecture_identity_changed": false,
+    "map_geometry_redrawn": false,
+    "task143_body_changed": false,
+    "external_live_process_started": false,
+    "automatic_task148_created_or_started": false,
+    "homepage_generated_snapshot_reinjected": false
+  },
+  "claim_ceiling": "Repository-local targeted Human Front Door, Current Surface contract, deterministic projection and affected unit-test evidence only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

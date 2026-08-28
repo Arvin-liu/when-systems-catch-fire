@@ -1,0 +1,40 @@
+{
+  "schema_version": "ignition-147-step08-regression-scope-audit-r1",
+  "task_id": "IGNITION-20260828-147",
+  "step": "08",
+  "status": "PASS",
+  "targeted_regression": {
+    "human_front_door": "PASS",
+    "human_surface_contract": "PASS human_entries=48 machine_components=99 visible_graph_nodes=87 typed_graph_edges=92",
+    "human_visibility": "PASS human_surfaces=25 machine_human_pairs=14 two_click_destinations=20",
+    "homepage_components": "PASS count=5",
+    "current_projection_determinism": "PASS passes=2 outputs=9",
+    "current_surface_determinism": "PASS passes=2 outputs=15",
+    "current_surface_semantics": "PASS",
+    "current_state_sync": "PASS",
+    "current_volatile_fact_registry": "PASS facts=19 surfaces=6",
+    "system_map_source_spec_svg": "PASS nodes=87 edges=92",
+    "related_unit_tests": {
+      "tests_run": 42,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "completed_naturally": true
+    },
+    "generated_output_drift": []
+  },
+  "full_suite": {
+    "status": "NOT_RUN_BY_SCOPE",
+    "reason": "Task147 is the authorized narrow Human Front Door and architecture-navigation maintenance patch; the affected validator, compiler, Current projection, identity and map-freeze paths were covered by targeted deterministic gates and related tests."
+  },
+  "scope_guards": {
+    "architecture_identity_changed": false,
+    "map_geometry_redrawn": false,
+    "task143_article_or_book_body_changed": false,
+    "external_live_process_started": false,
+    "automatic_task148_created_or_started": false,
+    "skip_xfail_ignore_used": false,
+    "homepage_machine_snapshot_reinjected": false
+  },
+  "claim_ceiling": "Repository-local targeted regression and scope evidence for the README project identity and architecture navigation only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

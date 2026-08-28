@@ -1,0 +1,40 @@
+{
+  "schema_version": "ignition-147-step07-first-visit-readme-audit-r1",
+  "task_id": "IGNITION-20260828-147",
+  "step": "07",
+  "status": "PASS",
+  "first_visit_surface": {
+    "visible_h2_order": [
+      "1. 项目与价值",
+      "2. 如何使用",
+      "3. 结果与火种",
+      "4. 整体架构",
+      "5. 致谢"
+    ],
+    "project_and_value_h3_order": [
+      "项目现状",
+      "价值宪章"
+    ],
+    "project_identity_exact": true,
+    "project_current_is_first_block": true,
+    "value_charter_is_second_block": true,
+    "project_value_snapshot_block_count": 0,
+    "architecture_image_count": 1,
+    "architecture_image_target": "../ignition/docs/generated/ignition-system-architecture.svg",
+    "component_group_count": 5,
+    "component_groups_default_collapsed": true,
+    "component_navigation_links": 22,
+    "canonical_component_targets_exist": true,
+    "machine_explanation_tokens_present": [],
+    "rendering_dependency": "GitHub Markdown and native SVG only",
+    "js_pages_implementation_detected": false
+  },
+  "scope_guards": {
+    "architecture_geometry_redrawn": false,
+    "architecture_identity_changed": false,
+    "task143_article_or_book_body_changed": false,
+    "external_live_process_started": false,
+    "automatic_task148_created_or_started": false
+  },
+  "claim_ceiling": "Repository-local first-visit README project identity, architecture overview and human component-navigation audit only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}
