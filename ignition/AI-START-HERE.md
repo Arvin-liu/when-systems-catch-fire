@@ -42,7 +42,7 @@ brief 或新证据时，不得创建下一轮工程任务，也不得自动生�
 - live_attempt_projection: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
 - architecture_counts: `registry=99; visible_nodes=87; visible_edges=92`；active_overlays: `Formal Task Lifecycle, Open Obligation Registry, Executor Admission, Durability / Lifecycle, Steering / Intent / Goal / Obligation, Structural Governance Surface`。
 - task_lineage: current `IGNITION-20260828-144` `COMPLETED_WITH_OPEN_OBLIGATIONS`；predecessor `HISTORICAL_UNEXECUTED_REBASED_INTO_127` / `REBASED_INTO_127`；successor `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
-- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `71accca567224b037db7aa899f8de85e598e960ade61682b23ab9857f47392c0`。
+- source: ignition/data/operations/current-snapshot-r1.json；source_digest: `3c3d8a7c708c6ea79b55e8a907e8011ab45f71f4c788d1e66d3c3f002c31aa10`。
 - claim_ceiling: Deterministic repository-local Current projection only; no Owner authority, external truth, production readiness or epistemic upgrade.
 <!-- CURRENT-SNAPSHOT:END -->
 

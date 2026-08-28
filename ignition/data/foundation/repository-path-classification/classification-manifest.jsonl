@@ -180,6 +180,7 @@
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/agent-results/IGNITION-20260827-142-result.md"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/agent-results/IGNITION-20260827-143-machine-receipt.json"}
 {"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/agent-results/IGNITION-20260827-143-result.md"}
+{"category": "EDITORIAL_ARTICLE", "matched_rule": "EDITORIAL_ARTICLE", "path": "ignition/agent-results/IGNITION-20260828-144-result.md"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/agent_federation/__init__.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/agent_federation/adapters/__init__.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/agent_federation/adapters/codex.py"}

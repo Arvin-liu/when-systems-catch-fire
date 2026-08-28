@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-199\]\( \) \| \[初中肄业高认知\]\( \) \| 初中肄业高认知——反设置路径的投影优势 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4e1ed22aa4398cb1 / \| \[C-199\]\( \) \| \[初中肄业高认知\]\( \) \| 初中肄业高认知——反设置路径的投影优势 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-231\]\( \) \| \[四卡点统一根源\]\( \) \| 四卡点统一根源——同一个认知结构的四个投影 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-515e5932c78e8389 / \| \[C-231\]\( \) \| \[四卡点统一根源\]\( \) \| 四卡点统一根源——同一个认知结构的四个投影 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-445\]\( \) \| \[三阶段操作协议验证 — 个人职业转](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5e90e40d50dfff5d / \| \[C-445\]\( \) \| \[三阶段操作协议验证 — 个人职业转
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D114；被引用：—
+- [\| \[C-481\]\( \) \| \[认知叠加验证 — 专家vs通才：专](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4394a59fb2fdae3c / \| \[C-481\]\( \) \| \[认知叠加验证 — 专家vs通才：专
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D125；被引用：—
 - [\| \[C-486\]\( \) \| \[路径积分验证 — 创业决策：ℏ_e](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-af5bfc2b7bd7c6cc / \| \[C-486\]\( \) \| \[路径积分验证 — 创业决策：ℏ_e

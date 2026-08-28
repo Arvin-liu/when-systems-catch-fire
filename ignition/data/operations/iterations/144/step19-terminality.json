@@ -51,6 +51,7 @@
   "publication_boundary": {
     "publication_authority": "REMOTE_REF_OBSERVATION",
     "required_ref": "refs/heads/main",
+    "formal_result": "ignition/agent-results/IGNITION-20260828-144-result.md",
     "formal_repository_self_sha": "NOT_EMBEDDED",
     "fresh_remote_main_observation": "PENDING_SEPARATE_GATE",
     "independent_1111_witness": "PENDING_SEPARATE_GATE"

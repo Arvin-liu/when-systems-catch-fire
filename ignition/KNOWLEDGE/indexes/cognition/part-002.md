@@ -679,6 +679,11 @@
   - 可搜索名称：NFC-8be11e01b0e9287b / Positive claims must still be tied to evidence, version, test scope, and boundary conditions. Negative feedback is not t
   - 来源：`.github/SUPPORT.md`
   - 依赖：—；被引用：—
+- [preserved as evidence. This result does not self-witness a publication SHA:](../../../agent-results/IGNITION-20260828-144-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0fa7cd3a99d71f29 / preserved as evidence. This result does not self-witness a publication SHA:
+  - 来源：`agent-results/IGNITION-20260828-144-result.md`
+  - 依赖：—；被引用：—
 - [Privacy and non-authority: owner-observation privacy, public-artifact secret/local-path](../../../agent-results/IGNITION-20260820-127-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-d6be150d22279266 / Privacy and non-authority: owner-observation privacy, public-artifact secret/local-path
@@ -693,6 +698,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a17676e9ca81352c / production autonomy, universal safety, external validity, Owner acceptance,
   - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
+- [production handoff, regression and terminality evidence only; no external](../../../agent-results/IGNITION-20260828-144-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8a614338d011f7a8 / production handoff, regression and terminality evidence only; no external
+  - 来源：`agent-results/IGNITION-20260828-144-result.md`
   - 依赖：—；被引用：—
 - [production readiness, Owner acceptance, validated live completion or](../../../agent-results/IGNITION-20260827-143-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2129,6 +2139,11 @@
   - 可搜索名称：NFC-d747b5e7294c2974 / trusts an executor's PASS as completion and never invokes a provider.
   - 来源：`agent_federation/task142_first_completion_validator.py`
   - 依赖：—；被引用：—
+- [truth, production readiness, Owner acceptance, publication acceptance,](../../../agent-results/IGNITION-20260828-144-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c74fa47910b5b2d5 / truth, production readiness, Owner acceptance, publication acceptance,
+  - 来源：`agent-results/IGNITION-20260828-144-result.md`
+  - 依赖：—；被引用：—
 - [turn an unverified side effect into a safe automatic retry.](../../../agent_federation/approval_handoff.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-eabc668ba117f8c2 / turn an unverified side effect into a safe automatic retry.
@@ -2268,6 +2283,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-eaad813e95f59241 / validated = validate_event\(candidate\)
   - 来源：`agent_federation/live_reconciliation_events.py`
+  - 依赖：—；被引用：—
+- [validated live completion or epistemic acceptance is inferred.](../../../agent-results/IGNITION-20260828-144-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-71a53a8b1dc3012e / validated live completion or epistemic acceptance is inferred.
+  - 来源：`agent-results/IGNITION-20260828-144-result.md`
   - 依赖：—；被引用：—
 - [validated_completed_work: tuple\[str, ...\]](../../../agent_federation/contracts.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-c6363d63954e58ae / \| \[C-198\]\( \) \| \[高学历低认知\]\( \) \| 高学历低认知——认证投影大于认知投影 \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [\| \[C-199\]\( \) \| \[初中肄业高认知\]\( \) \| 初中肄业高认知——反设置路径的投影优势 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4e1ed22aa4398cb1 / \| \[C-199\]\( \) \| \[初中肄业高认知\]\( \) \| 初中肄业高认知——反设置路径的投影优势 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-231\]\( \) \| \[四卡点统一根源\]\( \) \| 四卡点统一根源——同一个认知结构的四个投影 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-515e5932c78e8389 / \| \[C-231\]\( \) \| \[四卡点统一根源\]\( \) \| 四卡点统一根源——同一个认知结构的四个投影 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-445\]\( \) \| \[三阶段操作协议验证 — 个人职业转](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5e90e40d50dfff5d / \| \[C-445\]\( \) \| \[三阶段操作协议验证 — 个人职业转
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D114；被引用：—
-- [\| \[C-481\]\( \) \| \[认知叠加验证 — 专家vs通才：专](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4394a59fb2fdae3c / \| \[C-481\]\( \) \| \[认知叠加验证 — 专家vs通才：专
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D125；被引用：—
