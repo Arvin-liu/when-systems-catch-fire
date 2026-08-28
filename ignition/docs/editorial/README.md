@@ -70,6 +70,41 @@ Task143 的出版生产 smoke-test 成果也从这里进入人类阅读层：三
 
 ---
 
+## Post-closure：Pointfire Production Reasoning Protocol R0（候选）
+
+这是一份附着在既有 editorial / Results Book 入口上的**生产方法候选**，状态为
+`OWNER_REVIEW_PENDING`。它不是 Task145，不是新的架构层，不修改 Kernel、
+architecture registry、system map 或 executor subsystem，也不把附件中的课程
+观点升级为 Pointfire truth。原始附件已完整读到 EOF；source SHA-256 为
+`affef2c1d0b20a470d458eace81f8307dff5520800fe12e01c9c95bcfa4927f4`。
+
+### R0 的最小调用协议
+
+1. **先写 Problem Capsule，再选工具。** 只写七项：目标、价值/愿意牺牲什么、硬约束、时间尺度、当前状态与反馈、关键未知、失败方式。若只是事实查找或低判断执行，不调用思维工具。
+2. **一主至多三辅。** 主工具必须改变问题表示、判断标准或行动方案；删除它后结论不变，就不使用它。补充工具只承担机制、边界、反证或行动中的明确一项，不为展示资产而叠概念。
+3. **使用 typed tool-role grammar。** 先把需要的工位说清：`定题 / 定界 / 估计 / 找机制 / 造选项 / 找反作用 / 落地学习 / 查价值`；再为每个工位指定一个工具或明确写 `NONE`。工具只决定“怎样看”，不决定“事实上是什么”。
+4. **建立轻量证据账本。** 每条关键材料标记为：Owner/用户事实、可核验外部事实、模型推断、情景假设或价值前提；只优先搜集可能翻转判断的信息。对低成本可逆动作可容忍更大未知，对高损失/难逆/涉及他人权利的决定提高证据强度，并同时写内部视角、参考类/外部视角、反证、观察窗口、更新时间和推翻条件。
+5. **输出可行动且可更新的判断。** 至少留下一个基准选项、下一步、负责人或触发条件、观察指标、复盘时间，以及维持/修正/停止判断的信号。证据不足时写工作假说、试验建议或待验证分支，不把模型名写成事实。
+6. **无增益即撤回。** 如果工具没有改变定题、证据边界、反证、结构或行动，记录“工具在此处没有增加解释力”，退回朴素答案；不继续添加概念。
+7. **保留剩余判断权。** `OWNER_SELECTS_TOPIC / OWNER_SELECTS_BOOK / AGENT_SELECTS_MEANS_WITHIN_INTENT`。Agent 可以在 Owner 意图、硬约束和安全边界内选手段，但不能独占目标解释权、事实解释权或最终接受权；`DRAFT_GENERATED != OWNER_SELECTED != PUBLICATION_ACCEPTED`。
+
+### 最小输出卡
+
+```text
+Problem Capsule: 目标｜价值/牺牲｜硬约束｜时间尺度｜状态/反馈｜关键未知｜失败方式
+Tool card: 主工具（为何改变判断）｜补充/反证（各自工位，最多3个）｜删除测试
+Evidence ledger: 事实｜推断｜假设｜价值前提｜内部/外部视角｜反证
+Decision: 基准选项｜下一步｜观察指标｜更新时间｜维持/修正/推翻条件
+Authority: Owner 选题/立书/接受；Agent 只在意图内选手段
+```
+
+本候选的 absorption matrix 与纯离线 replay 记录在 Task144 Step19 终态记录和
+[Step19 report](../../reports/operations/ignition-144-step19-terminality.md) 中。
+Replay 不重写三篇文章、Book Project 或样章；若方法不能改变实际判断，就保留
+`OWNER_REVIEW_PENDING`，并回到 `AWAIT_OWNER_PRODUCTION_BRIEF`。
+
+---
+
 ## 边界纪律（务必记住）
 
 - **文章 ≠ 权威**：注册表是权威；文章是组织过的叙事。

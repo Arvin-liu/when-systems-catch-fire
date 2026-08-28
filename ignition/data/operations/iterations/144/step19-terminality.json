@@ -56,5 +56,184 @@
     "fresh_remote_main_observation": "PENDING_SEPARATE_GATE",
     "independent_1111_witness": "PENDING_SEPARATE_GATE"
   },
-  "claim_ceiling": "Repository-local Task144 engineering closure, Owner production handoff and terminality evidence only; the open live obligation remains unresolved, formal main and fresh remote-main publication are separate observations, and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+  "claim_ceiling": "Repository-local Task144 engineering closure, Owner production handoff and terminality evidence only; the open live obligation remains unresolved, formal main and fresh remote-main publication are separate observations, and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred.",
+  "post_closure_absorption_audit": {
+    "audit_id": "POST_CLOSURE_MODERN_THINKING_TOOLS_ABSORPTION_R0",
+    "parent_task_id": "IGNITION-20260828-144",
+    "status": "OWNER_REVIEW_PENDING",
+    "phase_relation": "POST_CLOSURE_METHOD_AUDIT_NO_ENGINEERING_REOPEN",
+    "source": {
+      "kind": "OWNER_ATTACHED_SKILL_MD",
+      "source_label": "1-SKILL.md",
+      "source_sha256": "affef2c1d0b20a470d458eace81f8307dff5520800fe12e01c9c95bcfa4927f4",
+      "line_count": 1686,
+      "read_to_eof": true,
+      "primary_anchors": ["24-40", "97-110", "114-123", "183", "1330-1412", "1684-1686"]
+    },
+    "scope_guards": {
+      "kernel_modified": false,
+      "architecture_registry_modified": false,
+      "system_map_modified": false,
+      "executor_subsystem_modified": false,
+      "new_task145_created_or_started": false,
+      "new_live_attempt_started": false,
+      "article_or_book_body_rewritten": false,
+      "course_views_promoted_to_pointfire_truth": false,
+      "existing_publication_entry_reused": true
+    },
+    "absorption_matrix": [
+      {
+        "id": "M1",
+        "mechanism": "先建模再选工具 / Problem Capsule",
+        "classification": "NET_NEW",
+        "source_anchors": ["24-40", "53-68"],
+        "pointfire_comparison": "Task144 已有 execution/current/owner contracts，但没有一个面向每次写作的七字段 Problem Capsule。",
+        "absorbed_delta": "把目标、价值/牺牲、硬约束、时间尺度、状态反馈、关键未知、失败方式作为生产前最小卡片。",
+        "replay_effect": "没有改变既有三篇文章、Book Project 或样章的定题；只会让未来 Owner brief 到来后的调用前提更显式。"
+      },
+      {
+        "id": "M2",
+        "mechanism": "1 个主工具 + 至多 3 个补充/反证工具 + 删除工具测试",
+        "classification": "NET_NEW",
+        "source_anchors": ["40-47", "65-68"],
+        "pointfire_comparison": "Pointfire 已有去重、claim ceiling 与不扩张边界，但没有生产时的工具数量上限和反概念堆砌测试。",
+        "absorbed_delta": "每个工具必须承担可说明的判断变化；删掉后判断不变就撤回。",
+        "replay_effect": "不重写正文；回放显示三篇文章本身已经以单一读者问题组织，新增工具标签不会增加解释力。"
+      },
+      {
+        "id": "M3",
+        "mechanism": "定题 / 定界 / 估计 / 找机制 / 造选项 / 找反作用 / 落地学习 / 查价值 typed role grammar",
+        "classification": "NET_NEW",
+        "source_anchors": ["114-123"],
+        "pointfire_comparison": "Pointfire 有分层证据、编辑、研究和工程入口，但没有将生产调用写成按工位分配的轻量语法。",
+        "absorbed_delta": "每个被调用工具先声明工位，未需要的工位写 NONE；工具不能代替事实来源。",
+        "replay_effect": "对 Article 011/012/013 和书项目只产生调用卡元数据，不改变主题、结构或事实边界。"
+      },
+      {
+        "id": "M4",
+        "mechanism": "证据账本、决策相关信息、可逆性×证据强度、内外视角、反证、更新时间与推翻条件",
+        "classification": "NET_NEW",
+        "source_anchors": ["97-110", "633-639", "805-817", "1628-1632"],
+        "pointfire_comparison": "Pointfire 已覆盖来源分层、claim ceiling、反例、abstention、公开/私有边界与不把工程证据升级为外部真值；新增部分仅是把决策相关性、可逆性配证据强度、更新时间和翻转条件压成生产账本。",
+        "absorbed_delta": "只搜集会改变判断的信息；对不可逆/高损失动作提高证据门槛，并为判断写复盘日期和推翻信号。",
+        "replay_effect": "三篇文章与书项目已经明确对象、范围、缺失来源和反例；回放没有发现需要扩大 claim ceiling 的新证据。"
+      },
+      {
+        "id": "M5",
+        "mechanism": "工具无判断增益即停止并退回朴素答案",
+        "classification": "NET_NEW",
+        "source_anchors": ["183", "1684-1686"],
+        "pointfire_comparison": "工程阶段已有禁止抽象扩张的边界，但生产文本层尚缺一个逐次工具增益检查。",
+        "absorbed_delta": "若工具不改变定题、证据边界、反证、结构或行动，明确撤回，不为吸收而吸收。",
+        "replay_effect": "回放的实际结果是 NO_REWRITE_JUSTIFIED；没有为了展示协议而添加概念或改写正文。"
+      },
+      {
+        "id": "A1",
+        "mechanism": "OWNER_SELECTS_TOPIC / OWNER_SELECTS_BOOK / AGENT_SELECTS_MEANS_WITHIN_INTENT",
+        "classification": "DUPLICATE",
+        "source_anchors": ["1330-1336", "1390-1412"],
+        "pointfire_comparison": "Task144 Owner editorial authority、指挥官意图与委托—代理边界已明确覆盖；本审计只采用其生产命名，不新增权限。",
+        "replay_effect": "所有输入仍为 OWNER_REVIEW_PENDING；Agent 没有把草稿或候选变成 Owner-selected。"
+      },
+      {
+        "id": "A2",
+        "mechanism": "来源分账、反证、claim ceiling、公开与私有 provenance 边界",
+        "classification": "ALREADY_COVERED",
+        "source_anchors": ["97-110", "1200-1206"],
+        "pointfire_comparison": "现有 editorial README、publication boundary、registry 与 Task143 文章已明确覆盖；不重复导入课程术语。",
+        "replay_effect": "原有文章/书稿的证据边界、反例与缺失层保持不变。"
+      },
+      {
+        "id": "R1",
+        "mechanism": "把 100 个工具整体导入，或把课程观点当作 Pointfire truth",
+        "classification": "REJECT",
+        "source_anchors": ["14", "40", "183"],
+        "pointfire_comparison": "超出本审计范围，会重新造资产层/框架层，也违反删除工具和停止规则。",
+        "replay_effect": "不运行、不登记、不改变 Kernel/architecture/executor，不进入正式 truth 或 active production。"
+      }
+    ],
+    "offline_replay": {
+      "mode": "PURE_OFFLINE_READ_ONLY_REPLAY",
+      "input_scope": "Task143 three articles + Book Project R1 + two mature book samples",
+      "body_rewrite_performed": false,
+      "owner_brief_present": false,
+      "case_results": [
+        {
+          "input": "ignition/docs/editorial/articles/011-terminal-task-open-obligation.md",
+          "native_question": "任务范围如何在长期义务仍开放时诚实终止",
+          "selected_main_lens": "任务终态与开放义务的两只时钟",
+          "existing_counterevidence": "永远 RUNNING、任务关单即义务消失、把工程回执写成外部成功",
+          "topic_changed": false,
+          "evidence_boundary_changed": false,
+          "counterevidence_changed": false,
+          "structure_changed": false
+        },
+        {
+          "input": "ignition/docs/editorial/articles/012-support-becomes-path-control.md",
+          "native_question": "资源支持何时从扩大选择转为路径控制",
+          "selected_main_lens": "资源—路径绑定的候选机制",
+          "existing_counterevidence": "无条件兜底、纯建议、透明交换、直接胁迫、知情且主动选择",
+          "topic_changed": false,
+          "evidence_boundary_changed": false,
+          "counterevidence_changed": false,
+          "structure_changed": false
+        },
+        {
+          "input": "ignition/docs/editorial/articles/013-tree-canopy-temperature-causality.md",
+          "native_question": "树冠、不同温度对象与人体热暴露如何分层",
+          "selected_main_lens": "测量对象拆分与关联—因果边界",
+          "existing_counterevidence": "街区混杂因素、观测条件不等于干预、直接人体热应激来源缺失",
+          "topic_changed": false,
+          "evidence_boundary_changed": false,
+          "counterevidence_changed": false,
+          "structure_changed": false
+        },
+        {
+          "input": "ignition/PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md",
+          "native_question": "以证据、选择与退出为主线组织可读成果",
+          "selected_main_lens": "作品如何保留未证明处并继续行动",
+          "existing_counterevidence": "工程通过不等于外部真理、Memory 不等于 Truth、结构相似不等于同构",
+          "topic_changed": false,
+          "evidence_boundary_changed": false,
+          "counterevidence_changed": false,
+          "structure_changed": false
+        },
+        {
+          "input": "ignition/PUBLICATIONS/pointfire-results-book/book-project-r1/01-第一章-先别急着宣布完成.md + book-project-r1/03-第三章-退出不是按钮.md",
+          "native_question": "把完成、退出、选择和后果写成读者可理解的区分",
+          "selected_main_lens": "门、路、时间线与责任主语",
+          "existing_counterevidence": "纸面出口不等于可用出口；留下不自动等于服从；函数名不等于测量",
+          "topic_changed": false,
+          "evidence_boundary_changed": false,
+          "counterevidence_changed": false,
+          "structure_changed": false
+        }
+      ],
+      "content_level_effect": {
+        "topics_changed": 0,
+        "evidence_boundaries_changed": 0,
+        "new_counterevidence_added": 0,
+        "structures_changed": 0,
+        "body_files_rewritten": 0,
+        "method_level_gain": "A future production brief can be accompanied by a small Problem Capsule, tool-role card, evidence ledger and stop check; this is process discipline, not a new result."
+      },
+      "input_sha256_before_after": [
+        {"path": "ignition/docs/editorial/articles/011-terminal-task-open-obligation.md", "before": "5c5d15ecd0b641054f5e5c9c2db0447a11c2d8f479f66e90de398c0b9447bc32", "after": "5c5d15ecd0b641054f5e5c9c2db0447a11c2d8f479f66e90de398c0b9447bc32"},
+        {"path": "ignition/docs/editorial/articles/012-support-becomes-path-control.md", "before": "4f8daeda424026f6bfcfbc695dcb366c965896f29038b606a3900b8883b19cc5", "after": "4f8daeda424026f6bfcfbc695dcb366c965896f29038b606a3900b8883b19cc5"},
+        {"path": "ignition/docs/editorial/articles/013-tree-canopy-temperature-causality.md", "before": "234475482d35555dbfe75a07c31909c192271a5beac4c43087b97b3f9d549059", "after": "234475482d35555dbfe75a07c31909c192271a5beac4c43087b97b3f9d549059"},
+        {"path": "ignition/PUBLICATIONS/pointfire-results-book/14-书籍项目-R1-还没有被证明的世界.md", "before": "44afa8b06bdba38f1d3658a746756e6a3bbbf86fe4b6fbd118acb9d98f9920c1", "after": "44afa8b06bdba38f1d3658a746756e6a3bbbf86fe4b6fbd118acb9d98f9920c1"},
+        {"path": "ignition/PUBLICATIONS/pointfire-results-book/book-project-r1/01-第一章-先别急着宣布完成.md", "before": "ba275ff8937bda1d7bc2b91bc226bcdaffb1d771c5a574e8ee3f1fa2499ff45c", "after": "ba275ff8937bda1d7bc2b91bc226bcdaffb1d771c5a574e8ee3f1fa2499ff45c"},
+        {"path": "ignition/PUBLICATIONS/pointfire-results-book/book-project-r1/03-第三章-退出不是按钮.md", "before": "bd04cc37168a6e383bc91e263bd5d507e5ba07e5ee69432ad55e5c391c88f07d", "after": "bd04cc37168a6e383bc91e263bd5d507e5ba07e5ee69432ad55e5c391c88f07d"}
+      ],
+      "replay_verdict": "NO_CONTENT_REWRITE_JUSTIFIED"
+    },
+    "disposition": {
+      "candidate_protocol": "OWNER_REVIEW_PENDING",
+      "absorption_result": "NARROW_PRODUCTION_DISCIPLINE_ONLY",
+      "not_promoted_to_pointfire_truth": true,
+      "next_action": "AWAIT_OWNER_PRODUCTION_BRIEF",
+      "no_unbounded_followup": true
+    },
+    "claim_ceiling": "Offline comparison of an attached production-method source against existing Pointfire publication artifacts; it does not establish external truth, content quality, Owner selection, publication acceptance, validated live completion or epistemic acceptance."
+  }
 }
