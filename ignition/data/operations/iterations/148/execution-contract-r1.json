@@ -1,0 +1,25 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260829-148",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "origin/relay/current",
+    "commit": "0ff4bf2e3065a05c848a380aad55d0832de3727c",
+    "command_path": "agent-commands/IGNITION-20260829-148-ai-first-ignition-operating-method-r1.md",
+    "command_record_commit": "080915807c03135eb396a7a2ee9b4bb0e3be9525"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf"
+  },
+  "expected_task_branch": "codex/ignition-148-ai-first-operating-method-r1-20260829",
+  "expected_receipt_branch": "relay/receipts/ignition-148-ai-first-operating-method-r1-20260829",
+  "required_release_ref": "refs/heads/main",
+  "draft_pr_only": true,
+  "owner_authorization_required_for_ready_merge_or_close": true,
+  "no_owner_intermediate": true,
+  "architecture_identity_impact": "PENDING_STEP02_CURRENT_ASSET_ARCHAEOLOGY",
+  "claim_ceiling": "Task148 repository-local remote-truth recovery and bounded AI-facing operating-interface work only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}
