@@ -66,14 +66,19 @@
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
       "current_task_id": "IGNITION-20260828-146",
-      "current_task_status": "IN_PROGRESS",
-      "current_task_terminal": false,
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "current_task_terminal": true,
       "open_obligation_ids": [
         "LIVE_EXTERNAL_INVOCATION"
       ],
-      "scope_complete": false,
+      "scope_complete": true,
       "source_path": "ignition/data/operations/formal-task-lifecycle-r1.json",
       "terminal_task_history": [
+        {
+          "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+          "task_id": "IGNITION-20260828-146",
+          "terminal": true
+        },
         {
           "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
           "task_id": "IGNITION-20260828-145",
@@ -182,7 +187,7 @@
     },
     "task_lineage": {
       "current_task_id": "IGNITION-20260828-146",
-      "current_task_status": "IN_PROGRESS",
+      "current_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
       "task125_canonical_status": "HISTORICAL_UNEXECUTED_REBASED_INTO_127",
       "task125_file_status": "HISTORICAL_UNEXECUTED",
       "task125_requirement_lineage_status": "REBASED_INTO_127",
@@ -236,15 +241,15 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "b2fca1486c958334ac817a151f27ac7617d4b6bbe0937a10fa6f5a3236a909a3"
+      "sha256": "ab869f8a364898bd5c2b271390d75058d3a48d45bf418c6bd15e95e5d8f754da"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
-      "sha256": "b1ffd597bf0c9cac5cca1a4ad3983fccd540db7b83cc60b17e64e3749e7d3a4a"
+      "sha256": "1eaec068818445ed90b0137c6c45719e1e3f49b9a2223e76e69b2e445deec8c6"
     },
     {
       "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
-      "sha256": "fd14aa128ea7500659bf8c52d731b460c553bf4c6342204b49d1fa5e8a514d14"
+      "sha256": "572439ecef4549718be8f93e55eaa3722ad3730efd53992fce69d9570479cbce"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",

@@ -16,11 +16,11 @@
   "latest_architecture_task_ordinal": 142,
   "current_iteration_boundary": 146,
     "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
-  "content_phase": "RUNNING",
+  "content_phase": "RELEASE_READY",
     "required_publication_ref": "refs/heads/main",
     "publication_authority": "REMOTE_REF_OBSERVATION",
     "embedded_publication_assertion": "NONE",
-  "current_task_terminal": false,
+  "current_task_terminal": true,
     "post_publication_remote_check_required": true,
     "phase_order": [
         "RUNNING",

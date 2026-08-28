@@ -13,18 +13,26 @@
   "tasks": [
     {
       "task_id": "IGNITION-20260828-146",
-      "execution_status": "IN_PROGRESS",
-      "terminal": false,
-      "scope_complete": false,
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
       "identity_impact": "PRESENTATION_ONLY",
-      "terminal_basis": "Task146 is in progress on the repository-local Human Front Door simplification and generated Current surface decoupling scope; the deferred live obligation remains independent and is not reopened.",
+      "terminal_basis": "Task146 completes the repository-local Human Front Door simplification and generated Current surface decoupling scope; the deferred live obligation remains independent and is not reopened.",
       "open_obligation_ids": [
         "LIVE_EXTERNAL_INVOCATION"
       ],
       "evidence_refs": [
-        "ignition/data/operations/iterations/146/execution-contract-r1.json"
+        "ignition/data/operations/iterations/146/execution-contract-r1.json",
+        "ignition/data/operations/iterations/146/step00-baseline-audit.json",
+        "ignition/data/operations/iterations/146/step06-targeted-human-surface-validation.json",
+        "ignition/data/operations/iterations/146/step07-first-visit-readme-audit.json",
+        "ignition/data/operations/iterations/146/step08-regression-scope-audit.json",
+        "ignition/data/operations/iterations/146/step09-current-minimal-sync.json",
+        "ignition/data/operations/iterations/146/step15-deterministic-current-surface-r1.json",
+        "ignition/agent-results/IGNITION-20260828-146-result.md",
+        "ignition/agent-results/IGNITION-20260828-146-machine-receipt.json"
       ],
-      "claim_ceiling": "Task146 in-progress repository-local presentation and Current-surface scope only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+      "claim_ceiling": "Task146 repository-local Human Front Door simplification, Current-surface decoupling, targeted regression and release-ready terminality evidence only; the deferred live obligation remains open and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
     },
     {
       "task_id": "IGNITION-20260828-145",
