@@ -69,7 +69,7 @@
   "expected_sha": null,
   "expected_task_id": "IGNITION-20260828-147",
   "formal_result_task_id": "IGNITION-20260828-147",
-  "head_sha": "8b7d1efb2b50caf64be83707821e51d3c84baf26",
+  "head_sha": "a838752232e46e04c7f48eda1b68a32d876dd625",
   "mode": "PRE_PUBLICATION",
   "observed_ref": null,
   "observed_remote_sha": null,
