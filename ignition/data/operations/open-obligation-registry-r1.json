@@ -2,7 +2,7 @@
   "schema_version": "open-obligation-registry-r1",
   "contract_id": "OBLIGATION_CARRY_FORWARD_WITHOUT_TASK_LIVENESS",
   "authority": "OPEN_OBLIGATION_REGISTRY",
-  "current_task_id": "IGNITION-20260828-144",
+  "current_task_id": "IGNITION-20260828-145",
   "obligations": [
     {
       "obligation_id": "LIVE_EXTERNAL_INVOCATION",
@@ -26,7 +26,7 @@
     },
       "blocker": "NO_EXACT_BOUND_VALIDATED_COMPLETION; TASK142_NO_SAFE_LIVE_FAMILY",
     "next_eligible_action": "OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION",
-    "inherited_by_task": "IGNITION-20260828-144",
+    "inherited_by_task": "IGNITION-20260828-145",
       "carry_forward_tasks": [
         "IGNITION-20260823-136",
         "IGNITION-20260824-137",
@@ -36,7 +36,8 @@
         "IGNITION-20260826-141",
       "IGNITION-20260827-142",
       "IGNITION-20260827-143",
-      "IGNITION-20260828-144"
+      "IGNITION-20260828-144",
+      "IGNITION-20260828-145"
       ],
       "terminal_condition": "FIRST_EXACT_BOUND_LIVE_READONLY_VALIDATED_COMPLETION",
       "evidence_refs": [
@@ -58,14 +59,14 @@
     }
   ],
   "last_adjudication": {
-    "task_id": "IGNITION-20260828-144",
+    "task_id": "IGNITION-20260828-145",
     "decision": "OPEN_RETAINED",
     "previous_status": "OPEN",
     "current_status": "OPEN",
     "validated_completion_count": 0,
     "live_attempt_started": false,
     "new_obligation_ids": [],
-    "reason": "Task144 keeps LIVE_EXTERNAL_INVOCATION OPEN and OWNER_DEFERRED as an obligation independent of task liveness; no live attempt is authorized, and the engineering closure scope proceeds without reopening the deferred campaign.",
+    "reason": "Task145 keeps LIVE_EXTERNAL_INVOCATION OPEN and OWNER_DEFERRED as an obligation independent of task liveness; no live attempt is authorized, and this presentation-only homepage maintenance proceeds without reopening the deferred campaign.",
     "evidence_refs": [
       "ignition/data/operations/iterations/142/step11-fresh-census.json",
       "ignition/data/operations/iterations/142/step12-pre-live-gate.json",

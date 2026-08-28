@@ -26,5 +26,5 @@
     "release_candidate_task": "IGNITION-20260828-145",
     "publication_witness_task": "IGNITION-20260828-145"
   },
-  "claim_ceiling": "Task145 repository-local Human Front Door maintenance, deterministic folding and ref-derived release evidence only; engineering phase remains closed, production waits for Owner brief, and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+  "claim_ceiling": "Task145 repository-local Human Front Door maintenance, deterministic folding and ref-derived release evidence only; engineering phase remains closed, Owner authority remains required for production, production waits for Owner brief, and no external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
 }

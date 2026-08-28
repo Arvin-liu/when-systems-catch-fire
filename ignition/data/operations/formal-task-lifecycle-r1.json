@@ -2,7 +2,7 @@
   "schema_version": "formal-task-lifecycle-r1",
   "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
   "authority": "FORMAL_TASK_LIFECYCLE",
-  "current_task_id": "IGNITION-20260828-144",
+  "current_task_id": "IGNITION-20260828-145",
   "obligation_registry": {
     "authority": "OPEN_OBLIGATION_REGISTRY",
     "path": "ignition/data/operations/open-obligation-registry-r1.json",
@@ -11,6 +11,20 @@
     "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
   },
   "tasks": [
+    {
+      "task_id": "IGNITION-20260828-145",
+      "execution_status": "IN_PROGRESS",
+      "terminal": false,
+      "scope_complete": false,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task145 is the current presentation-only Human Front Door maintenance task; terminality awaits the README folding, validator, deterministic projection, targeted regression, release and independent witness gates. The deferred live obligation remains independently OPEN/OWNER_DEFERRED.",
+      "open_obligation_ids": ["LIVE_EXTERNAL_INVOCATION"],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/145/execution-contract-r1.json",
+        "ignition/data/operations/iterations/145/step00-baseline-audit.json"
+      ],
+      "claim_ceiling": "Task145 repository-local Human Front Door maintenance and release evidence only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+    },
     {
       "task_id": "IGNITION-20260828-144",
       "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",

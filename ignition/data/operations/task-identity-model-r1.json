@@ -16,7 +16,7 @@
     },
     "release_candidate_task": {
       "role": "RELEASE_CANDIDATE_TASK",
-      "source_path": "ignition/data/operations/iterations/144/execution-contract-r1.json",
+      "source_path": "ignition/data/operations/iterations/145/execution-contract-r1.json",
       "json_pointer": "/task_id",
       "semantic": "Task identity fixed by the formal execution contract before release-candidate formation."
     },
