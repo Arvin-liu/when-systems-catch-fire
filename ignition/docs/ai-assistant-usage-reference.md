@@ -102,7 +102,7 @@ L6 公共写作的当前接口是之元写作法 [`0.5.0`](./publication/zhiyuan
 
 涉及翻译、转述、命题抽取或目标语言成文时，先读[语言—思维逻辑平面](./architecture/language-thought-logic-plane.md)和[人类入口](./language-thought/README.md)。正式记录至少保存 source form/profile、normalized meaning candidate、target form/profile、framing delta、unmapped residue、claim ceiling、provenance 和 version；候选意义不是语言外真义。行为者、体貌、证据来源、指称、连接或机制视角发生认识相关变化却未声明时必须失败关闭。自动门不裁定任意文本的自然度或文学质量；中文出版还要经过母语上下文、朗读和反常句法收益审查。语言配置描述有边界倾向，不得写成强语言决定论、民族心智或不同真值逻辑。
 
-若任务需要全项目导航，读取[完整可点击系统图说明](./architecture/interactive-system-map.md)及机器 spec。图中节点和连线是当前导航或受约束信息流，不是 L7、因果图、严格同构或理论完整性证明。
+若任务需要全项目导航，读取[完整总架构图说明](./architecture/interactive-system-map.md)及机器 spec。图中节点和连线是当前结构阅读或受约束信息流；SVG link metadata 不等同于客户端交互能力，图也不是 L7、因果图、严格同构或理论完整性证明。
 
 当前成果从[人类索引](./publication/zhiyuan-writing-showcase.md)与 `data/publication/zhiyuan-writing-showcase.json` 读取。AI 不得只抓取作品标题：必须同时核对案例来源链、点火分析、方法版本、review provenance 与 claim ceiling；registry 是展示与追踪接口，不是事实或文学质量注册表。
 

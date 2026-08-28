@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 3044" width="1800" height="3044" role="img" preserveAspectRatio="xMidYMin meet" aria-labelledby="map-title map-description">
-  <title id="map-title">点火唯一完整可点击总架构图</title>
+  <title id="map-title">点火唯一完整总架构图</title>
   <desc id="map-description">唯一完整总架构图；0.16.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R8 Task Lifecycle Decoupling &amp; Executor Admission → Pack/Federation routing → provider-neutral Executor Admission → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Formal Task Lifecycle 与 Open Obligation Registry 分别记录任务终态和长期义务，前者可以引用后者但不由 obligation liveness 推导；Executor Admission 只按统一安全、auth、structured-result、capture、workspace、cleanup 与 validator 维度决定是否进入 bounded live bridge，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering、Task Lifecycle、Obligation Registry、Executor Admission 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</desc>
   <style>
       .map-bg{fill:#f8fafc}.map-title{font:700 30px system-ui,sans-serif;fill:#0f172a}
@@ -23,9 +23,9 @@
     </filter>
   </defs>
   <rect class="map-bg" x="0" y="0" width="1800" height="3044" />
-  <text class="map-title" x="32" y="42">点火唯一完整可点击总架构图</text>
+  <text class="map-title" x="32" y="42">点火唯一完整总架构图</text>
   <text class="map-subtitle" x="32" y="72">唯一完整总架构图；0.16.0 Current 派生投影，0.14.0 为 Historical。主干是 Owner/Value Charter → Ignition OS driver / R8 Task Lifecycle Decoupling &amp; Executor Admission → Pack/Federation routing → provider-neutral Executor Admission → Live External Executor Bridge → 外部可替换执行器（external replaceable executors；external executors）→ Actions/Receipts → Validation/Feedback → OS；Formal Task Lifecycle 与 Open Obligation Registry 分别记录任务终态和长期义务，前者可以引用后者但不由 obligation liveness 推导；Executor Admission 只按统一安全、auth、structured-result、capture、workspace、cleanup 与 validator 维度决定是否进入 bounded live bridge，不拥有 provider、channel、browser、remote Git、配置、billing 或 completion authority；Current 将 dispatch crossing、process observation、independent inference marker、structured result return 与 validated completion 分开，FailureForensicsCapsule 在 raw spool disposal 前保留脱敏诊断；Steering / Intent / Goal / Obligation 是 OS 内的有界权威来源、生命周期、依赖、优先级、arbitration 与 why-next 记录，不推断真实 Owner 意图或完成；Durability / Lifecycle R3 是 OS 内的有界持久化、恢复、迁移、命名空间、Pack 生命周期、撤销、账本与 DR 连续性记录，不是第二张图，也不自动重放不确定外部副作用；Structural Governance Surface 是 advisory cross-cutting overlay，不增加 L7，不改变 capability、permission 或 epistemic status；Event Ledger、monotonic policy、resource arbitration、bounded scheduler、health lease、queue/backpressure、dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle、Steering、Task Lifecycle、Obligation Registry、Executor Admission 与 Driver Console 都是有界控制记录；Reference / Conformance / Fallback 是本地冻结边界；Kernel ≠ Knowledge，Runtime ≠ Research，Pack 不拥有通用 authority；语言—思维横穿 L0—L6，不增加 L7。连线是仓库关系、同步义务或候选反馈，不自动表示现实因果。</text>
-  <text class="boundary-note" x="32" y="98">点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。</text>
+  <text class="boundary-note" x="32" y="98">每个构件保留指向 canonical 目标的 link metadata；视觉邻近与连线不自动表示因果、严格同构或理论完备。</text>
   <g class="semantic-trunk" aria-label="Current semantic trunk：OS 在中间，外部执行器是可替换手脚" data-mode="bounded_reading_path" data-loop-target="os_control">
     <rect class="semantic-trunk-band" x="32" y="103" width="1736" height="18" rx="9" />
     <text class="semantic-trunk-label" x="44" y="116">主干：Owner / Value Charter → Ignition OS control / governance spine with independent task terminality, obligations, durable lifecycle and explainable steering → Pack / Federation routing → OS-owned bounded live bridge, admission and observation plane → External replaceable executors → Actions / observations / receipts → Validation / provenance / state update / feedback / advisory structure → OS</text>
@@ -376,7 +376,7 @@
       <title>executor_admission_r1 → live_executor_bridge_r1: Admission gate 先于 bounded live dispatch [repository_dependency]</title>
     </path>
   </g>
-  <g aria-label="clickable system components">
+  <g aria-label="system components with source links">
     <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/.github/README.md" target="_top" data-node-id="readme" data-group="front_doors" data-target=".github/README.md" aria-label="README 首页：项目现状、成果、价值约束、完整系统图与使用入口。">
       <title>README 首页 — 项目现状、成果、价值约束、完整系统图与使用入口。</title>
       <rect class="node" x="54.0" y="2010.0" width="516.0" height="54.0" rx="10" />
@@ -519,8 +519,8 @@
         <tspan x="658.0" dy="18">分布 / 压缩</tspan>
       </text>
     </a>
-    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/ignition-atlas.md" target="_top" data-node-id="q14" data-group="operations" data-target="docs/architecture/ignition-atlas.md" aria-label="Q14 点火地图集：提供版本化、多视角、可回溯的导航投影。">
-      <title>Q14 点火地图集 — 提供版本化、多视角、可回溯的导航投影。</title>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/architecture/ignition-atlas.md" target="_top" data-node-id="q14" data-group="operations" data-target="docs/architecture/ignition-atlas.md" aria-label="Q14 点火地图集：提供版本化、多视角、可回溯的结构投影。">
+      <title>Q14 点火地图集 — 提供版本化、多视角、可回溯的结构投影。</title>
       <rect class="node" x="642.0" y="1752.0" width="516.0" height="54.0" rx="10" />
       <text class="node-label" x="658.0" y="1785.0">
         <tspan x="658.0" dy="0">Q14 点火地图集</tspan>
@@ -743,8 +743,8 @@
         <tspan x="1246.0" dy="0">不自动升级真值</tspan>
       </text>
     </a>
-    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/project-current-state.md" target="_top" data-node-id="no_totality_proof" data-group="boundaries" data-target="docs/project-current-state.md" aria-label="不证明理论完整：完整图是当前导航投影，不是永久总图或理论完备性证明。">
-      <title>不证明理论完整 — 完整图是当前导航投影，不是永久总图或理论完备性证明。</title>
+    <a class="node-link" href="https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/docs/project-current-state.md" target="_top" data-node-id="no_totality_proof" data-group="boundaries" data-target="docs/project-current-state.md" aria-label="不证明理论完整：完整图是当前结构投影，不是永久总图或理论完备性证明。">
+      <title>不证明理论完整 — 完整图是当前结构投影，不是永久总图或理论完备性证明。</title>
       <rect class="node" x="1230.0" y="2452.0" width="516.0" height="54.0" rx="10" />
       <text class="node-label" x="1246.0" y="2485.0">
         <tspan x="1246.0" dy="0">不证明理论完整</tspan>

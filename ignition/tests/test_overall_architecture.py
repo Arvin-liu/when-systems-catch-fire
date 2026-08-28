@@ -47,11 +47,11 @@ class OverallArchitectureTest(unittest.TestCase):
         node_ids = {node["id"] for node in spec["nodes"]}
         self.assertTrue(all(edge["source"] in node_ids and edge["target"] in node_ids for edge in spec["edges"]))
 
-    def test_conceptual_map_is_transparent_clickable_and_bounded(self) -> None:
+    def test_conceptual_map_is_transparent_source_linked_and_bounded(self) -> None:
         spec = MODULE.json.loads(MODULE.SPEC_PATH.read_text(encoding="utf-8"))
         expected = MODULE.build_projection()
         svg = MODULE.OUT.read_text(encoding="utf-8")
-        self.assertEqual(spec["title"], "点火唯一完整可点击总架构图")
+        self.assertEqual(spec["title"], "点火唯一完整总架构图")
         self.assertIn("map-bg", svg)
         # The graph contract is derived from the canonical component registry,
         # propagation topology, and layout overlay.  No Current node/edge

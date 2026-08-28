@@ -125,6 +125,7 @@ def validate_readme_structure(readme: str) -> None:
     require(_inside_details(blocks[0].start(), spans), "README generated Current Snapshot must be folded")
     for phrase in ("architecture_counts", "live_attempt_projection", "task_lineage", "### 当前主干怎样理解"):
         require(phrase in readme[details_start:details_end], f"README machine detail is outside the details container: {phrase}")
+    require("可点击" not in readme and "clickable" not in readme.lower(), "README must not promise rendered architecture clickability")
 
 
 def validate_texts(readme: str, guide: str, current_state: str, human_reading: str) -> None:

@@ -75,7 +75,7 @@ recovery evidence，不是 production durability、exact-once delivery、Owner a
 - 由 Kernel、Runtime、Supervisor、Operational Memory、Profile、Reasoner Gateway、Federation 和四个 Domain Pack 形成有界的仓库内协同骨架；Reasoner 提议，Profile 收窄，Pack 按声明范围验证，执行器在权限交集内行动。
 - 从 canonical registries 保留来源、命题、形式对象、论证、证据、证明义务、反例、验证、迁移和人类结果的独立谱系；工程闭合不升级内容真值。
 - 通过 `current-facts.json` 确定性投影同步可复算事实；本页不手抄第二份数量表。[Current Facts](../data/architecture/current-facts.json) 与[人读 facts block](./architecture/current-facts.md) 是窄范围派生入口。
-- 以唯一 registry/topology/layout 生成系统图；图是可点击的仓库导航与依赖投影，不是现实因果图、严格同构或完备性证明。
+- 以唯一 registry/topology/layout 生成系统图；图是仓库结构与依赖投影，SVG 中的 href 只表示 source link metadata，不是现实因果图、严格同构或完备性证明。
 - 历史 Task 126 的 Structural Governance Surface 由候选 ESI、过渡语法、不越权合同和软上下文暴露合同共同限定；它是 advisory，不是权限、真值、Owner 或安全放行层。
 - 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
 - Steering / Intent / Goal / Obligation R1 已形成仓库本地可复算骨架：Intent Registry、Goal lifecycle、独立 Completion Contract、Commitment/Obligation Ledger、时间语义、长期 Goal graph、优先级与 conflict arbitration、DecisionTrace/why-next、Episode binding、drift/handoff guard、Memory/Profile boundary、Durability、namespace/delegation 与 federation Intent Capsule；这些记录不授予 Owner authority，也不把运行通过推断为完成。

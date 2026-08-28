@@ -49,7 +49,7 @@ machine sources 生成。
 为机器权威；历史 task、requirements lineage、terminal status 和本轮 Current 语义由 generated
 Current Snapshot 提供，不把历史记录重写为当前事实。
 
-- **它说什么：** Kernel、Runtime、Federation、Profile、Reasoner Gateway、Supervisor、Event Ledger、monotonic policy、resource arbitration、bounded concurrent scheduler、executor health lease、queue/backpressure、durable dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle R3、Driver Console 和四个声明式 Domain Pack 已形成一条仓库内可检查的 Agent Platform R3 结构；OpenClaw、Hermes、Codex 只通过 provider-neutral adapter boundary 接入，当前唯一完整系统图仍是 registry/topology/layout 的确定性导航投影。
+- **它说什么：** Kernel、Runtime、Federation、Profile、Reasoner Gateway、Supervisor、Event Ledger、monotonic policy、resource arbitration、bounded concurrent scheduler、executor health lease、queue/backpressure、durable dispatch/reconciliation、concurrent operational memory、Durability / Lifecycle R3、Driver Console 和四个声明式 Domain Pack 已形成一条仓库内可检查的 Agent Platform R3 结构；OpenClaw、Hermes、Codex 只通过 provider-neutral adapter boundary 接入，当前唯一完整系统图仍是 registry/topology/layout 的确定性结构投影。
 - **为什么重要：** 行动、批准、恢复、记忆、Pack 路由和知识治理的职责被分开记录，Agent 可以提出和执行有界动作，但不能自行扩大权限、改写真值或替代 Owner。
 - **怎样使用：** 人类先读[十分钟阅读路线](../ignition/HUMAN-READING.md)与[当前结果](../ignition/RESULTS/LATEST.md)；Agent 先读[AI 冷启动](../ignition/AI-START-HERE.md)、[状态增量日志](../ignition/STATE-CHANGELOG.md)、[R2 架构契约](../ignition/docs/architecture/agent-platform-r2.md)和[联邦契约](../ignition/docs/architecture/external-agent-federation-r1.md)。
 - **它不能证明什么：** 通过测试、Pack 加载、checkpoint、pilot 或系统图，都不等于外部真值、现实因果、生产安全、Owner acceptance 或 epistemic acceptance。
@@ -75,9 +75,9 @@ Current Snapshot 提供，不把历史记录重写为当前事实。
 
 ![点火唯一完整总架构图](../ignition/docs/generated/ignition-system-architecture.svg)
 
-[打开透明可点击完整总架构图 SVG](../ignition/docs/generated/ignition-system-architecture.svg) · [查看 Agent Platform R2 架构](../ignition/docs/architecture/agent-platform-r2.md) · [查看 Human Surface 编辑契约](../ignition/docs/governance/human-surface-editorial-contract.md) · [查看架构维护说明](../ignition/docs/architecture/interactive-system-map.md)
+[打开透明完整总架构图 SVG](../ignition/docs/generated/ignition-system-architecture.svg) · [查看 Agent Platform R2 架构](../ignition/docs/architecture/agent-platform-r2.md) · [查看 Human Surface 编辑契约](../ignition/docs/governance/human-surface-editorial-contract.md) · [查看架构维护说明](../ignition/docs/architecture/interactive-system-map.md)
 
-整体架构图是确定性导航投影：它表达仓库内的来源、状态、治理、执行、验证、人类阅读和出版之间的声明关系，不表达现实因果、严格同构、理论完备性或任何具体命题的新证据。图的 registry、topology 和 layout 仍是机器维护输入；总架构图不是新的真值层。
+整体架构图是确定性结构投影：它表达仓库内的来源、状态、治理、执行、验证、人类阅读和出版之间的声明关系，不表达现实因果、严格同构、理论完备性或任何具体命题的新证据。SVG 源码可以保留指向 canonical 目标的 link metadata，但这不承诺 GitHub 渲染页面提供交互热点。图的 registry、topology 和 layout 仍是机器维护输入；总架构图不是新的真值层。
 
 ## 5. 致谢
 

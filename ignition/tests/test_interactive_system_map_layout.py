@@ -62,7 +62,7 @@ class InteractiveSystemMapLayoutTests(unittest.TestCase):
         self.assertGreaterEqual(len(declared_rows), 3)
         self.assertEqual(self.spec["layout"]["packing_algorithm"], "deterministic-scc-ranked-column-packing-r1")
 
-    def test_every_visible_node_remains_clickable_with_solid_background(self) -> None:
+    def test_every_visible_node_keeps_source_link_metadata_with_solid_background(self) -> None:
         links = self.root.findall(f".//{{{SVG_NS}}}a[@class='node-link']")
         backgrounds = self.root.findall(f"{{{SVG_NS}}}rect[@class='map-bg']")
         self.assertEqual(len(links), len(self.spec["nodes"]))

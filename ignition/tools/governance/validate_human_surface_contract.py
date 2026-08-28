@@ -177,8 +177,8 @@ def validate() -> dict[str, int]:
     require(len(spec.get("edges", [])) > 0 and all(edge.get("relation_domain") for edge in spec.get("edges", [])), "architecture graph lacks typed relation edges")
     try:
         svg_root = ET.fromstring(SYSTEM_MAP_SVG.read_bytes())
-        links = svg_root.findall(".//{http://www.w3.org/2000/svg}a")
-        require(len(links) == len(node_ids), "architecture graph does not make every node clickable")
+        source_links = svg_root.findall(".//{http://www.w3.org/2000/svg}a")
+        require(len(source_links) == len(node_ids), "architecture SVG source link metadata does not cover every node")
     except (ET.ParseError, OSError) as exc:
         errors.append(f"architecture SVG cannot be parsed: {exc}")
 

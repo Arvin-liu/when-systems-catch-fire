@@ -820,7 +820,7 @@
       "canonical_target": "docs/project-current-state.md",
       "component_id": "no_totality_proof",
       "component_type": "interpretation_boundary",
-      "description": "完整图是当前导航投影，不是永久总图或理论完备性证明。",
+      "description": "完整图是当前结构投影，不是永久总图或理论完备性证明。",
       "label": "不证明理论完整",
       "layer_or_overlay": "boundary",
       "lifecycle": {
@@ -1103,7 +1103,7 @@
       "canonical_target": "docs/architecture/ignition-atlas.md",
       "component_id": "q14",
       "component_type": "operation_control",
-      "description": "提供版本化、多视角、可回溯的导航投影。",
+      "description": "提供版本化、多视角、可回溯的结构投影。",
       "label": "Q14 点火地图集",
       "layer_or_overlay": "overlay",
       "lifecycle": {
@@ -1309,7 +1309,7 @@
       "canonical_target": "data/architecture/interactive-system-map.json",
       "component_id": "system_map_projection",
       "component_type": "repository_infrastructure",
-      "description": "由 component registry、topology 与 layout overlay 确定性派生；0.5.0 是当前唯一完整可点击总架构图，0.4.0 与 0.3.0 为 Historical 权威链。",
+      "description": "由 component registry、topology 与 layout overlay 确定性派生；0.5.0 是当前唯一完整总架构图，0.4.0 与 0.3.0 为 Historical 权威链。",
       "label": "系统图 0.5 唯一完整投影派生基础设施",
       "layer_or_overlay": "infrastructure",
       "lifecycle": {

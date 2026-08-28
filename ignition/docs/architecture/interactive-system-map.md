@@ -1,10 +1,10 @@
 # 点火仓库原生系统图
 
-状态：`0.16.0 Current registry-derived navigation projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
+状态：`0.16.0 Current registry-derived structural projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
 
 ## 打开与生成
 
-- [仓库内唯一完整可点击 SVG](../generated/ignition-system-architecture.svg)
+- [仓库内唯一完整总架构图 SVG](../generated/ignition-system-architecture.svg)
 - [机器可读投影](../../data/architecture/interactive-system-map.json)
 - [构件 registry](../../data/operations/project-components.json)
 - [类型化传播 topology](../../data/operations/change-propagation-topology.json)
@@ -21,7 +21,7 @@ python3 tools/generate_interactive_system_map.py
 python3 tools/generate_interactive_system_map.py --check
 ```
 
-SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 节点链接指向 GitHub 仓库 canonical 文件；若客户端不支持 SVG 内部热点，可使用本页的文本入口。它是当前唯一完整总架构图，不再并列维护另一张图。
+SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 源码保留指向 GitHub 仓库 canonical 文件的 link metadata；客户端是否把这些元数据显示成交互热点不由源文件保证，必要时可使用本页的文本入口。它是当前唯一完整总架构图，不再并列维护另一张图。
 
 ## 权威与边界
 
@@ -64,7 +64,7 @@ Writing、Human front-door 或 Pack registry。上述数字是仓库导航与生
 
 ## Steering / Intent / Goal / Obligation R1
 
-`steering_intent_obligation_r1` 是 `os_spine` 中的一个可点击节点，指向
+`steering_intent_obligation_r1` 是 `os_spine` 中的一个带 source link metadata 的节点，指向
 [`os-steering-intent-r1.md`](./os-steering-intent-r1.md)。它与 Driver Console R3、
 Durability / Lifecycle、Event Ledger 和 Federation Intent Capsule 形成仓库依赖与同步义务
 投影；连线不表示现实因果。`PASS` Run 不能推断 Goal completion，系统 proposal 不能成为

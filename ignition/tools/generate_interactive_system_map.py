@@ -420,7 +420,7 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
     root.append(svg_element("rect", {"class": "map-bg", "x": "0", "y": "0", "width": str(width), "height": str(height)}))
     root.append(svg_element("text", {"class": "map-title", "x": str(outer), "y": "42"}, spec["title"]))
     root.append(svg_element("text", {"class": "map-subtitle", "x": str(outer), "y": "72"}, spec["subtitle"]))
-    root.append(svg_element("text", {"class": "boundary-note", "x": str(outer), "y": "98"}, "点击任一构件打开 canonical 目标；视觉邻近与连线不自动表示因果、严格同构或理论完备。"))
+    root.append(svg_element("text", {"class": "boundary-note", "x": str(outer), "y": "98"}, "每个构件保留指向 canonical 目标的 link metadata；视觉邻近与连线不自动表示因果、严格同构或理论完备。"))
     trunk = spec["semantic_trunk"]
     trunk_group = svg_element("g", {"class": "semantic-trunk", "aria-label": trunk["label"], "data-mode": trunk["mode"], "data-loop-target": trunk["loop_target"]})
     trunk_group.append(svg_element("rect", {"class": "semantic-trunk-band", "x": str(outer), "y": "103", "width": str(width - outer * 2), "height": "18", "rx": "9"}))
@@ -466,7 +466,7 @@ def render_svg(spec: dict, root_path: Path = ROOT) -> bytes:
         edge_layer.append(path)
     root.append(edge_layer)
 
-    node_layer = svg_element("g", {"aria-label": "clickable system components"})
+    node_layer = svg_element("g", {"aria-label": "system components with source links"})
     repository_url = spec["repository_url"]
     for node in spec["nodes"]:
         x, y, node_width, node_height_value, _ = node_positions[node["id"]]

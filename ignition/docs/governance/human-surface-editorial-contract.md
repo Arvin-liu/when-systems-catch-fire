@@ -49,7 +49,7 @@ materiality policy 是覆盖政策，不是质量评分。重要、边界敏感�
 - 是否有摘要、边界和继续阅读链接；
 - 是否有 machine ID、M/E、claim ceiling、source hash 与 machine-record hash；
 - 每个当前 canonical 目标、迁移 manifest、函数资产和非函数资产路径是否可达且无断链；
-- 唯一总架构图是否是透明、可点击、关系驱动的单一 SVG，并且没有退役 PNG/旧双图入口。
+- 唯一总架构图是否是透明、关系驱动的单一 SVG，并且没有退役 PNG/旧双图入口；SVG href 仅作为 source link metadata，不把客户端渲染能力写成首页承诺。
 
 这些检查只判断结构、完整性、可达性和是否明显把机器字段直接倒给读者；它们**不判断文学质量、事实真伪、证明是否成立、现实因果、外部新颖性或某个作者是否“写得好”**。这部分仍需人类审阅、来源核查和各自的 M/E、K13、9 轴与 claim ceiling。
 

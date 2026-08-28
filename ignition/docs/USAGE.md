@@ -24,7 +24,7 @@
 
 需要查看当前已接受应用时，进入[之元写作法成果索引](./publication/zhiyuan-writing-showcase.md)。每项成果必须同时回链正式作品、起始案例来源记录、点火分析和方法版本；原始材料受版权或隐私限制时，只公开来源记录，不复制全文。README 只展示 registry 中最近三项，完整索引才是人类成果入口。
 
-需要从整体结构定位入口时，打开[完整可点击系统图](./architecture/interactive-system-map.md)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。
+需要从整体结构定位入口时，打开[完整总架构图](./architecture/interactive-system-map.md)。图只用于结构阅读；SVG 的 link metadata 与客户端交互呈现是两件事，视觉邻近、连线和 cluster 也不自动表示因果、同构、真值或新增架构层。
 
 ## 3. 宪章体系怎样进入使用过程
 

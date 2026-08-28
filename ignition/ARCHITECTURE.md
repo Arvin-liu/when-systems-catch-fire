@@ -245,7 +245,7 @@ flowchart LR
 
 该链只证明某个版本的来源、分析、方法与作品可被共同审计。作品被接受不证明来源命题为真、分析完成因果识别、方法普遍有效或 AI 复制了作者；受限原始材料只保留 provenance，不因成果展示而重新公开。
 
-### 完整可点击系统图
+### 完整总架构图
 
 Q32I 收口后的早期系统图与后续 registry-derived 系统图均保留为 Historical 投影；Current 版本和最近历史版本由 generated Current Snapshot 与 map layout 读取。节点身份、canonical target 与生命周期从 `data/operations/project-components.json` 派生；可见关系及其权限域从 `data/operations/change-propagation-topology.json` 派生；`data/architecture/interactive-system-map-layout.json` 只保留布局。生成器产生 materialized spec 与同一 interactive SVG，再由 README 与仓库 Markdown 投影。
 
