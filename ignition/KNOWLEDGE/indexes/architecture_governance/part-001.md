@@ -214,15 +214,30 @@
   - 可搜索名称：IMPLICIT-0D99AAB88B64F6A8 / "name": "function discovery/adjudication/closure", / IMPLICIT-0D99AAB88B64F6A8
   - 来源：`docs/foundation/task-107-verification-ladder.json`
   - 依赖：—；被引用：—
+- ["name": "function-claim-governance-projection",](../../../data/operations/iterations/148/step11-interface-surface-sync.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E5C901E6FD85663A / "name": "function-claim-governance-projection", / IMPLICIT-E5C901E6FD85663A
+  - 来源：`data/operations/iterations/148/step11-interface-surface-sync.json`
+  - 依赖：—；被引用：—
 - ["name": "generator --check: adjudicate_nonfunction_claims.py",](../../../docs/foundation/task-107-verification-ladder.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D63F4F40F546EC49 / "name": "generator --check: adjudicate_nonfunction_claims.py", / IMPLICIT-D63F4F40F546EC49
   - 来源：`docs/foundation/task-107-verification-ladder.json`
   - 依赖：—；被引用：—
+- ["name": "iteration-synchronization-registry",](../../../data/operations/iterations/148/step11-interface-surface-sync.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CF0523895127BB81 / "name": "iteration-synchronization-registry", / IMPLICIT-CF0523895127BB81
+  - 来源：`data/operations/iterations/148/step11-interface-surface-sync.json`
+  - 依赖：—；被引用：—
 - ["name": "nonfunction discovery/adjudication/closure",](../../../docs/foundation/task-107-verification-ladder.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6A1D611B40FC65C9 / "name": "nonfunction discovery/adjudication/closure", / IMPLICIT-6A1D611B40FC65C9
   - 来源：`docs/foundation/task-107-verification-ladder.json`
+  - 依赖：—；被引用：—
+- ["name": "nonfunction-claim-projection",](../../../data/operations/iterations/148/step11-interface-surface-sync.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B11FC7A76B568280 / "name": "nonfunction-claim-projection", / IMPLICIT-B11FC7A76B568280
+  - 来源：`data/operations/iterations/148/step11-interface-surface-sync.json`
   - 依赖：—；被引用：—
 - ["NOT_IDENTIFIABLE_WITH_AVAILABLE_EVIDENCE",](../../../reos_vnext/contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -413,6 +428,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-105FC4649DD1AA85 / "title": "Ignition corpus-wide non-function claim", / IMPLICIT-105FC4649DD1AA85
   - 来源：`data/foundation/schemas/nonfunction-claim.schema.json`
+  - 依赖：—；被引用：—
+- ["title": "Ignition Operation Capability Registry R1",](../../../data/operations/ignition-operation-capability-registry-r1.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4BC0B8F674EEF02F / "title": "Ignition Operation Capability Registry R1", / IMPLICIT-4BC0B8F674EEF02F
+  - 来源：`data/operations/ignition-operation-capability-registry-r1.json`
   - 依赖：—；被引用：—
 - ["title": "nonfunction-claim CLAIM-BC-20260709-003",](../../../data/operations/iterations/111/candidate_inventory.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -803,6 +823,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9EAD8EAF7A6900A2 / # Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure / IMPLICIT-9EAD8EAF7A6900A2
   - 来源：`reports/foundation-architecture/100-nonfunction-claim-evidence-lineage-closure.md`
+  - 依赖：—；被引用：—
+- [## 11. Registry-derived operation playbooks](../../../OPERATING-METHOD.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DD3F371857CA9DC6 / ## 11. Registry-derived operation playbooks / IMPLICIT-DD3F371857CA9DC6
+  - 来源：`OPERATING-METHOD.md`
   - 依赖：—；被引用：—
 - [## 2. Claim matrix — 7 claims → metric → threshold](../../../function-os-candidate/v0.2/benchmark/PREREGISTRATION.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3e436859091f4829 / _strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)
   - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_strings\(results, f"{item_path}.result_artifact_ids", issues\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5def4e4dd74b6776 / _strings\(results, f"{item_path}.result_artifact_ids", issues\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_validate_evidence\(case.get\("evidence_requests"\), obligation_ids, artifact_ids, "$.case.evidence_requests", issues\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-fc59aede4e195a6a / _validate_evidence\(case.get\("evidence_requests"\), obligation_ids, artifact_ids, "$.case.evidence_requests", issues\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_本协议保证 088 不污染 Ψ₀ 最小必要结构。_](../../../data/external-research/093-scope-guard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-253685174c0bba56 / _本协议保证 088 不污染 Ψ₀ 最小必要结构。_
-  - 来源：`data/external-research/093-scope-guard.md`
-  - 依赖：—；被引用：—
-- [`--all --prune`; its verified `origin/main`, remote `refs/heads/main`, and the](../../../reports/operations/ignition-138-step00-baseline-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3f6a2dfdd162dc9a / `--all --prune`; its verified `origin/main`, remote `refs/heads/main`, and the
-  - 来源：`reports/operations/ignition-138-step00-baseline-audit.md`
-  - 依赖：—；被引用：—
-- [`0.2.0` 将上位方法修订并命名为“之元写作法”，以心智层级跃迁为内部生成内核。肉身锚定是可选生成／回返模式，跨域同构叙事是一种应用类型，高维压缩结尾是一种可选收束。旧候选从未被接受、合并或成为当前能力；其错误与纠正保留在 Git 历史](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-69c6f41c5ff4a316 / `0.2.0` 将上位方法修订并命名为“之元写作法”，以心智层级跃迁为内部生成内核。肉身锚定是可选生成／回返模式，跨域同构叙事是一种应用类型，高维压缩结尾是一种可选收束。旧候选从未被接受、合并或成为当前能力；其错误与纠正保留在 Git 历史
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—

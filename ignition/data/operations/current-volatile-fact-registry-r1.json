@@ -57,6 +57,45 @@
       "claim_ceiling": "Repository iteration method version only."
     },
     {
+      "fact_id": "current_operating_method_identity",
+      "canonical_source": {"path": "ignition/data/architecture/current-facts.json", "json_pointer": "/facts/operating_method/identity", "source_kind": "deterministic_derived_projection"},
+      "value_type": "method_identity",
+      "extractor": "json_pointer",
+      "allowed_current_renderings": ["generated_snapshot.current_operating_method.identity"],
+      "allowed_historical_usage": ["historical operating-method identities may be retained with explicit Historical labels"],
+      "required_current_surfaces": ["project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+      "freshness_rule": "Must be derived from the identity marker in OPERATING-METHOD.md through Current Facts.",
+      "null_behavior": "FAIL",
+      "authority": "OPERATING-METHOD.md projected through current-facts generator",
+      "claim_ceiling": "Repository operating-method identity only; no action or truth authority."
+    },
+    {
+      "fact_id": "current_operating_method_version",
+      "canonical_source": {"path": "ignition/data/architecture/current-facts.json", "json_pointer": "/facts/operating_method/version", "source_kind": "deterministic_derived_projection"},
+      "value_type": "version",
+      "extractor": "json_pointer",
+      "allowed_current_renderings": ["generated_snapshot.current_operating_method.version"],
+      "allowed_historical_usage": ["historical operating-method versions may be retained with explicit Historical labels"],
+      "required_current_surfaces": ["project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+      "freshness_rule": "Must be derived from the Candidate marker in OPERATING-METHOD.md through Current Facts until acceptance, merge and synchronization promote the method on main.",
+      "null_behavior": "FAIL",
+      "authority": "OPERATING-METHOD.md projected through current-facts generator",
+      "claim_ceiling": "Repository operating-method version only; it does not replace the Iteration Method version."
+    },
+    {
+      "fact_id": "current_operating_method_status",
+      "canonical_source": {"path": "ignition/data/architecture/current-facts.json", "json_pointer": "/facts/operating_method/status", "source_kind": "deterministic_derived_projection"},
+      "value_type": "lifecycle_status",
+      "extractor": "json_pointer",
+      "allowed_current_renderings": ["generated_snapshot.current_operating_method.status"],
+      "allowed_historical_usage": ["historical operating-method lifecycle states may be retained in dated records"],
+      "required_current_surfaces": ["project-current-state", "ai-cold-start", "ai-agents-handoff", "machine-entry", "architecture", "state-changelog"],
+      "freshness_rule": "Must be derived from the independent current_operating_method identity contract.",
+      "null_behavior": "FAIL",
+      "authority": "current-system-identity contract projected through Current Facts",
+      "claim_ceiling": "Repository method lifecycle only; CURRENT_CANDIDATE_ON_DRAFT does not assert main publication or Current status on main."
+    },
+    {
       "fact_id": "current_task_id",
       "canonical_source": {"path": "ignition/data/operations/current-task-lineage-status.json", "json_pointer": "/current_task/task_id", "source_kind": "canonical_task_lineage"},
       "value_type": "task_id",
@@ -123,7 +162,7 @@
     },
     {
       "fact_id": "release_candidate_task",
-      "canonical_source": {"path": "ignition/data/operations/iterations/147/execution-contract-r1.json", "json_pointer": "/identity_expectations/release_candidate_task", "source_kind": "canonical_execution_contract"},
+      "canonical_source": {"path": "ignition/data/operations/iterations/148/execution-contract-r1.json", "json_pointer": "/identity_expectations/release_candidate_task", "source_kind": "canonical_execution_contract"},
       "value_type": "task_id",
       "extractor": "json_pointer",
       "allowed_current_renderings": ["generated_snapshot.task_identity.release_candidate_task", "release-candidate identity gate"],

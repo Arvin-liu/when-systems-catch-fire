@@ -4,6 +4,71 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(对C_exit极度敏感\),最强维度ε1=0.9→y1=0](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5349472ae1ff7fcd / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(对C_exit极度敏感\),最强维度ε1=0.9→y1=0
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b29add64b7e376a9 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8f6b2741fe6cdfaf / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-53bf4cba0a096898 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9f9c83ea33c58bf1 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原版：`G_δ\(Ψ₀\)` 会导致 Ψ₀ 与 P_meta 的递归引用](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ea4429f788cd0a1e / 原版：`G_δ\(Ψ₀\)` 会导致 Ψ₀ 与 P_meta 的递归引用
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [双稳态分岔，μ符号决定落在哪个稳态：μ 0→ε_opt。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4fad0ee6645eb875 / 双稳态分岔，μ符号决定落在哪个稳态：μ 0→ε_opt。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [反例：信息充分后自愿合作（非服从，是协商）、无真实选择下的被迫服从（非美德驱动）、合理规则遵守（规则本身被接受）。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-91fb85426410e067 / 反例：信息充分后自愿合作（非服从，是协商）、无真实选择下的被迫服从（非美德驱动）、合理规则遵守（规则本身被接受）。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：—；被引用：—
+- [反常结构可以通过，但须回答它带来的可审计收益：视角、速度、压力、歧义、声音或回响。若唯一理由是“文学可以不自然”，退回重写；若为了规则整齐而删除真实收益，也同样失败。文学校准只裁定表达，不提高事实、因果或价值 claim ceiling。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-341c464a2e3f07dc / 反常结构可以通过，但须回答它带来的可审计收益：视角、速度、压力、歧义、声音或回响。若唯一理由是“文学可以不自然”，退回重写；若为了规则整齐而删除真实收益，也同样失败。文学校准只裁定表达，不提高事实、因果或价值 claim ceiling。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [反过来，制度没有独立到能压倒皇帝。林灵素可以提供天上的说法，却不能决定皇帝最终听谁的。所谓神圣网络，仍然在皇权能够撤回资源、重新分配信任的范围里运行。](../../../docs/publication/works/when-an-emperor-manufactures-heaven.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-371e5ac037d5382e / 反过来，制度没有独立到能压倒皇帝。林灵素可以提供天上的说法，却不能决定皇帝最终听谁的。所谓神圣网络，仍然在皇权能够撤回资源、重新分配信任的范围里运行。
+  - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
+  - 依赖：—；被引用：—
+- [发布 / 可见性轴**（如需将宪章摘要公开而不提升其生命周期）：`UNPUBLISHED → PR_VISIBLE → PUBLISHED_SNAPSHOT → SUPERSEDED/WITHDRAWN/HISTORICAL_SNAPSHO](../../../docs/governance/charter-system-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-93e225fc7cd8829d / 发布 / 可见性轴**（如需将宪章摘要公开而不提升其生命周期）：`UNPUBLISHED → PR_VISIBLE → PUBLISHED_SNAPSHOT → SUPERSEDED/WITHDRAWN/HISTORICAL_SNAPSHO
+  - 来源：`docs/governance/charter-system-r1.md`
+  - 依赖：—；被引用：—
+- [发现跨域同构** —— 这本书的机制，和你在别的领域（摄影、财商、AI、历史）看到的是不是同一个底层结构](../../../docs/getbrain-book-collision-guide-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-61fb40e13560e5f1 / 发现跨域同构** —— 这本书的机制，和你在别的领域（摄影、财商、AI、历史）看到的是不是同一个底层结构
+  - 来源：`docs/getbrain-book-collision-guide-20260708.md`
+  - 依赖：—；被引用：—
+- [变分唯一性验证 — 3维sigmoid乘法系统,随机采样1000组Δε分配,D111分配的S_ignition全局最小,无第二极值点](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-429e0964b1ab53fa / 变分唯一性验证 — 3维sigmoid乘法系统,随机采样1000组Δε分配,D111分配的S_ignition全局最小,无第二极值点
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：D111；被引用：—
 - [变量位置决定推导方向](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-e59d302ad268de44 / 变量位置决定推导方向
@@ -594,6 +659,11 @@
   - 可搜索名称：NFC-f4dcfd7116d21c4d / 当前 fixture 必须覆盖：意外事件施事化、进行／完成／终点变化、话题链、零照应歧义、凭空因果连接、证据来源丢失或发明、名词化抽象与事件化成句、合法长短句、应保留的有意标记句法、词面回译相似但框架改变，以及 L0—L6 每层实例。
   - 来源：`docs/language-thought/validation-and-audit.md`
   - 依赖：—；被引用：—
+- [当前 Iteration Method `1.4.0`、独立的 Ignition Operating Method R1 / `1.0.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；两个方法版本不得互相覆](../../../docs/VERSIONING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-097df042864faddb / 当前 Iteration Method `1.4.0`、独立的 Ignition Operating Method R1 / `1.0.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；两个方法版本不得互相覆
+  - 来源：`docs/VERSIONING.md`
+  - 依赖：—；被引用：—
 - [当前仓库没有苹果案例 runner、历史因果 oracle 或可绑定的 Function OS target；因此状态为](../../../RESULTS/OPEN-QUESTIONS.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f2c8d0ac6ace5b9c / 当前仓库没有苹果案例 runner、历史因果 oracle 或可绑定的 Function OS target；因此状态为
@@ -603,11 +673,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-edff5a599cc37b0a / 当前仓库的之元写作法 0.4.0、任务 112 的出版边界、Pointfire 的 claim／mechanism／gap／residue 纪律，属于 `ignition_increment`。它们帮助组织问题、保留差异和决定何时停止，但不
   - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [当前方法 `1.4.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；系统图 `0.5.0`、`0.4.0` 及更早版本只作为历史证据。面向 AI 的最近状态增量见 \[`STATE-CHANGELOG.md`](../../../docs/VERSIONING.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3bf9f8910a2df6b7 / 当前方法 `1.4.0`、系统图 `0.6.0` 与之元写作法 `0.5.0` 均以各自权威资产为准；系统图 `0.5.0`、`0.4.0` 及更早版本只作为历史证据。面向 AI 的最近状态增量见 \[`STATE-CHANGELOG.md`
-  - 来源：`docs/VERSIONING.md`
   - 依赖：—；被引用：—
 - [当前机器投影的 registry、可见节点、typed edges 和隐藏 components 计数以](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -1049,9 +1114,9 @@
   - 可搜索名称：NFC-4b9c7403c1aa5fce / 提供因果链分析：集体行动的因果链（L2）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
-- [提供版本化、多视角、可回溯的导航投影。](../../../data/architecture/interactive-system-map.json)
+- [提供版本化、多视角、可回溯的结构投影。](../../../data/architecture/interactive-system-map.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-7d937cc5face50e8 / 提供版本化、多视角、可回溯的导航投影。
+  - 可搜索名称：NFC-4f17d511c5aafb26 / 提供版本化、多视角、可回溯的结构投影。
   - 来源：`data/architecture/interactive-system-map.json`
   - 依赖：—；被引用：—
 - [提取机制** —— 这本书讲了什么底层结构、因果、反馈](../../../docs/getbrain-book-collision-guide-20260708.md)
@@ -1999,14 +2064,14 @@
   - 可搜索名称：NFC-8525c865c7596601 / 点火风险：** L3 发明因果或隐藏前提，L4 把共现误写成机制。
   - 来源：`docs/language-thought/dimensional-basis.md`
   - 依赖：—；被引用：—
-- [版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.6.0`；系统图 `0.5.0`、`0.4.0`、`0.3.0` 与更早版本均为 Historical](../../../docs/ai-assistant-usage-reference.md)
+- [版本事实从 `data/operations/current-snapshot-r1.json` 与 `data/architecture/current-facts.json` 恢复，不在本页复制易漂移的系统图版本。当前 Iteratio](../../../docs/ai-assistant-usage-reference.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d186d31663cc9741 / 版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.6.0`；系统图 `0.5.0`、`0.4.0`、`0.3.0` 与更早版本均为 Historical
+  - 可搜索名称：NFC-98e4b06ff7d1d337 / 版本事实从 `data/operations/current-snapshot-r1.json` 与 `data/architecture/current-facts.json` 恢复，不在本页复制易漂移的系统图版本。当前 Iteratio
   - 来源：`docs/ai-assistant-usage-reference.md`
   - 依赖：—；被引用：—
-- [状态：`0.16.0 Current registry-derived navigation projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、](../../../docs/architecture/interactive-system-map.md)
+- [状态：`0.16.0 Current registry-derived structural projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c9f0351326fc14c1 / 状态：`0.16.0 Current registry-derived navigation projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、
+  - 可搜索名称：NFC-d37c46803e71bc15 / 状态：`0.16.0 Current registry-derived structural projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [状态：`CURRENT_BOUNDED_R0_BASE_WITH_R2_PROJECTION_AND_OPEN_OBLIGATIONS`。这仍不构成通用智能、长期自主性、现实因果、生产安全或 `EPISTEMICALLY_ACCEPTED`](../../../docs/architecture/agentization-boundary-r0.md)
@@ -2234,6 +2299,11 @@
   - 可搜索名称：NFC-1723970e8f08623c / 简介：从战场中的一次后退进入系统自我生产证据、局部理性与整体毁灭、局部保护和稳定成本，最终返回历史解释如何被胜利结果反写。
   - 来源：`docs/publication/zhiyuan-writing-showcase.md`
   - 依赖：—；被引用：—
+- [类别审计必须如实保留能力缺口。当前 source/evidence research 只有 evidence-link validation 与 REOS LIGHT obligation coordination，没有登记通用自主检索 o](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4a8012b724608a55 / 类别审计必须如实保留能力缺口。当前 source/evidence research 只有 evidence-link validation 与 REOS LIGHT obligation coordination，没有登记通用自主检索 o
+  - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
 - [类型化变更传播闭包 / Typed Change-Propagation Closure](../../ASSET-CARDS.md#asset-hr-da202c53b7387f68)
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_OR_SUPERSEDED_SOURCE`
   - 可搜索名称：类型化变更传播闭包 / Typed Change-Propagation Closure / typed-change-propagation
@@ -2433,74 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-11bbabe6d882cf0e / 自造例：** `天黑了，他还没回来` 允许多种关系；若无上下文，不能自动登记为 `Because it was dark...`。
   - 来源：`docs/language-thought/dimensional-basis.md`
-  - 依赖：—；被引用：—
-- [至少列出输入、机制、状态变化、输出、边界](../../../docs/narrative-story-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-aa33987a44ec7e8a / 至少列出输入、机制、状态变化、输出、边界
-  - 来源：`docs/narrative-story-validation.md`
-  - 依赖：—；被引用：—
-- [至少映射输入、机制、状态变化、输出、边界。](../../../docs/narrative-output-layer.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e00d46df7b063d51 / 至少映射输入、机制、状态变化、输出、边界。
-  - 来源：`docs/narrative-output-layer.md`
-  - 依赖：—；被引用：—
-- [节点、连线、生成结果、测试与点击量都不能制造事实或因果。](../../../data/architecture/interactive-system-map.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-011dc72b8b6445e2 / 节点、连线、生成结果、测试与点击量都不能制造事实或因果。
-  - 来源：`data/architecture/interactive-system-map.json`
-  - 依赖：—；被引用：—
-- [若两个决定不可比较，合法结果是 fail-closed，不是虚构一个总 precedence。](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2e7830858f0260ac / 若两个决定不可比较，合法结果是 fail-closed，不是虚构一个总 precedence。
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [表演性互助：指标化评价导致行为朝可测方向畸变，信任下降。](../../../inputs/collisions/20260708-cross-domain-smoke-test/social.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f2dfb216db45d743 / 表演性互助：指标化评价导致行为朝可测方向畸变，信任下降。
-  - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/social.md`
-  - 依赖：—；被引用：—
-- [触发：贡献者创造核心价值但无对应决策权。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-b3dfae198882557d / 触发：贡献者创造核心价值但无对应决策权。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
-  - 依赖：—；被引用：—
-- [计量检验验证（回归分析、因果推断）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-19bd25545d807642 / 计量检验验证（回归分析、因果推断）
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [认知Higgs机制案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6ebe7af4565dd73e / 认知Higgs机制案例验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [认知Higgs机制，Higgs场提供分裂的触发器——真空期望值 设定了μ*_break。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b32380b481dc3ddd / 认知Higgs机制，Higgs场提供分裂的触发器——真空期望值 设定了μ*_break。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [认知Higgs机制，规范破缺后真空选择。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7f26548bb4b6d054 / 认知Higgs机制，规范破缺后真空选择。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [认知迁移编辑修订：Owner 决定与独立审查入口](../../../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-15aed9991e713320 / 认知迁移编辑修订：Owner 决定与独立审查入口
-  - 来源：`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
-  - 依赖：—；被引用：—
-- [认知革命、农业革命、科学革命与点火框架元协议演化的同构性。每次革命都是元协议组合的跃迁，推动系统进入新的演化路径。](../../../data/foundation/arguments/arguments.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：CLAIM-BC-20260709-010 / 认知革命、农业革命、科学革命与点火框架元协议演化的同构性。每次革命都是元协议组合的跃迁，推动系统进入新的演化路径。
-  - 来源：`data/foundation/arguments/arguments.jsonl`
-  - 依赖：—；被引用：—
-- [让事件和关系先落地，再决定抽象反思何时进入。抽象可以先说，但必须是作品真实需要的倒置，不是潜在翻译句架。“事件先行”是一种诊断动作，不是要求所有作品使用同一开头、同一语序或同一短句模板。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8e71f07768abd3fd / 让事件和关系先落地，再决定抽象反思何时进入。抽象可以先说，但必须是作品真实需要的倒置，不是潜在翻译句架。“事件先行”是一种诊断动作，不是要求所有作品使用同一开头、同一语序或同一短句模板。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
-  - 依赖：—；被引用：—
-- [让事情先发生，再决定反思何时进入；](../../../docs/language-thought/profiles/zh-hans.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5b4aa1f2b1470f17 / 让事情先发生，再决定反思何时进入；
-  - 来源：`docs/language-thought/profiles/zh-hans.md`
   - 依赖：—；被引用：—

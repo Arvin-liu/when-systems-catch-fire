@@ -2239,9 +2239,9 @@
   - 可搜索名称：NFC-06ddf2b643747a14 / 现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent / 现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../data/architecture/agentization-boundary-r0.json\)、`DomainPackManifest`、Agent Profile 和当时的唯一系统图 `0.6.0` 为准；后续 `0.7.0`、`0.8.0` 均是后续历史/当前投影。非知识 pilot 只读取两个 fixture 文本、生成排序 SHA-256 manifest，在不同 executor 间 checkpoint/resume，并在 validator 通过后进入 `COMPLETED_VALIDATED`；它是仓库范围隔离证据，不是 AGI、长期自主性或知识真值证据。
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
-- [真实离线维护 pilot，仍不做全仓物理大搬家。唯一可点击总架构图继续由 registry、](../../../docs/architecture/agentization-boundary-r0.md)
+- [真实离线维护 pilot，仍不做全仓物理大搬家。完整总架构图 SVG 继续由 registry、](../../../docs/architecture/agentization-boundary-r0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c04720d847c20c5d / 真实离线维护 pilot，仍不做全仓物理大搬家。唯一可点击总架构图继续由 registry、
+  - 可搜索名称：NFC-f480b3d8a826d785 / 真实离线维护 pilot，仍不做全仓物理大搬家。完整总架构图 SVG 继续由 registry、
   - 来源：`docs/architecture/agentization-boundary-r0.md`
   - 依赖：—；被引用：—
 - [统一规范群；](../../../docs/physics_boundary.md)

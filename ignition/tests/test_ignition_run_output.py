@@ -38,7 +38,7 @@ class IgnitionRunOutputTests(unittest.TestCase):
     def test_machine_audit_profile_binds_current_canonical_records(self) -> None:
         self.assertEqual(output_contract.validate_output(copy.deepcopy(self.base)), [])
         matches = {row["canonical_id"]: row for row in self.base["existing_canonical_matches"]}
-        self.assertEqual(matches["T2"]["record_sha256"], "d191cec113ac32bd44c05b9c415a6a7fa6d76d0a7d3dcb98735b801433832abe")
+        self.assertEqual(matches["T2"]["record_sha256"], "2abb649f843f7914faaeaecf2b682e48a4f0fae724d1f98aa5c32f908d46a850")
         self.assertEqual(matches["CLAIM-T2"]["record_sha256"], "a02e5aa6aff35b60f28ca8cdd0beca0f02a0ea887efef594fec17ce8e6a03136")
 
     def test_human_default_is_concise_but_points_to_audit_recovery(self) -> None:

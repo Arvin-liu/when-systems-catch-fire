@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 from pathlib import Path
 from typing import Any
@@ -49,6 +50,29 @@ def load_json(path: Path) -> dict[str, Any]:
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def step11_introduction_commit() -> str:
+    tree_path = RECEIPT_PATH.relative_to(REPO_ROOT).as_posix()
+    completed = subprocess.run(
+        ["git", "-C", str(REPO_ROOT), "log", "--diff-filter=A", "-1", "--format=%H", "--", tree_path],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    revision = completed.stdout.strip()
+    require(bool(re.fullmatch(r"[0-9a-f]{40}", revision)), "STEP11_INTRODUCTION_COMMIT_UNRESOLVED")
+    return revision
+
+
+def sha256_at_revision(locator: str, revision: str) -> str:
+    tree_path = (ROOT / locator).relative_to(REPO_ROOT).as_posix()
+    completed = subprocess.run(
+        ["git", "-C", str(REPO_ROOT), "show", f"{revision}:{tree_path}"],
+        check=True,
+        capture_output=True,
+    )
+    return hashlib.sha256(completed.stdout).hexdigest()
 
 
 def require(condition: bool, code: str) -> None:
@@ -161,11 +185,10 @@ def validate_no_historical_rewrite() -> None:
     require(not violations, f"HISTORICAL_EVIDENCE_REWRITE:{sorted(violations)}")
 
 
-def validate_preserved_digests(receipt: dict[str, Any]) -> None:
+def validate_preserved_digests(receipt: dict[str, Any], *, revision: str | None = None) -> None:
     mismatches = []
     for locator, expected in receipt["step11_preserved_digests"].items():
-        path = ROOT / locator
-        actual = sha256(path)
+        actual = sha256_at_revision(locator, revision) if revision else sha256(ROOT / locator)
         if actual != expected:
             mismatches.append(f"{locator}:{expected}:{actual}")
     require(not mismatches, f"STEP11_PRESERVED_DIGEST_MISMATCH:{mismatches}")

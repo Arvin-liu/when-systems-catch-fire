@@ -41,7 +41,7 @@
       "cards": 413,
       "changes": 315,
       "layered_readings": 332,
-      "search_records": 23997,
+      "search_records": 24211,
       "subject_indexes": 59
     },
     "layered_reading_source_origins": 332,
@@ -2254,7 +2254,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "4b3f6c909d5fe9d3f2122758f596f557bfdd4703279750f968877415d1aa7ebe",
+      "source_sha256": "3b9e4ef9bfc5364d3f8b41a4b5fd07604391ebef13096bd1b7b6d643a805eba3",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2269,7 +2269,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "9c74dfd6941d64dc9624cfa980806eaed4e7dbd478c07359e7763257785417c5",
+      "source_sha256": "65a739a2b0d78bdcd521f238c074c90b51b46270842fd87d3e445064ab7bc81f",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2300,7 +2300,7 @@
       "title": "HUMAN-READING",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "5c6f2da7c459378c0cbff4ace83b811c3388cdbfc37e4754cef522de32457e45",
+      "source_sha256": "fc27ad68d0f7efef80b20de5fe81e2223e5ed80c2be4cda186edb5a2669a827c",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-10",
@@ -2346,7 +2346,7 @@
       "title": "COVERAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "a32adb38aad99a2066f44d9e4aad70afccc6c641c3a2b8c929ae6d427813d393",
+      "source_sha256": "ca8b27c15eb33614358cbb5f1eba1d416e1d3bbc709435aa219fcf1b8da7ecfd",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2372,7 +2372,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "a192b4873754a684177f816d36ca1fa2c8b3869f4d648dc869e3d1c7958fa00e",
+      "source_sha256": "4c41a656bc12d7e3e718973a37fc04478e16eba12712f8eb2e5c363ae39861af",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2385,7 +2385,7 @@
       "title": "READING-LAYERS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "95e2d4d76253156503a4fa4b425f489a0de0d275343754f9f4799a781f3d386a",
+      "source_sha256": "48e83214c4df705447266590808dc6202e61815696e60fe050aaf9d43692e159",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2398,7 +2398,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "40c93cd228f2866e77d0f9db45a1ee15bc269f340d7b61a8971e158a87d3ac96",
+      "source_sha256": "189caeb2572932d1e6a6a1299e51398d7a96143ed974d2a1f2215ac529554929",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-25",
@@ -2414,7 +2414,7 @@
       "title": "SEARCH",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "5ad7240e36942ed92f3e134c388908753116ee027a51e7c99be44bb16be9368a",
+      "source_sha256": "fa551fb924341c639433f56a00fbb5cea1ec25039b7da30b889b2ec04f32fcb5",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2792,7 +2792,7 @@
       "title": "LATEST",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "b6d607d0c3cd8947ffeede00ced93a5cdc04afc3d4d18e53c4fd640c72f7a032",
+      "source_sha256": "217f09ada4c9cd57bcfc964a6e5f77d964e8bed473d70e342119c913918191f1",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-01",
@@ -2872,7 +2872,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "a492df1f5c69f0f4f232c8939ad917ae020090710c57f3864c21a8001df2441c",
+      "source_sha256": "b37965bc3952b9c3221d3ede257742468eaf9a80a46352ff530553e0f4b07b94",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -2900,7 +2900,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "60dd901ca1c4d0288c7a18726fd00b87271abc78a638ab5efc333e42ccabb2db",
+      "source_sha256": "6f936a4819ae9a17d6ba313af3009de5878d4af65b68ebddbfdea2694fd5ffa8",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-06"
@@ -2915,7 +2915,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "755cd7da996fc4c652a912cc2738fab63d83a5511617da63e0fa05b4f7f0ce1f",
+      "source_sha256": "b6d65c5333d0d3b04a8e63c4bef084982e00ff7cf1d4e176d5560b0210c9d5b9",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"
@@ -2930,7 +2930,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "06e34e45bece27d34e084058563ca85db72eb146c54dbd43a26458907c70cafe",
+      "source_sha256": "c20ccb345606cd824feb41642fa7223237394ada16b8efd416f3113b2c0d9275",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -3010,7 +3010,7 @@
       "title": "点火从知识治理系统向智能体运行时抽层",
       "knowledge_status": "CURRENT_SCOPED_SOURCE",
       "subject": null,
-      "source_sha256": "f8e24452d9e54c6be9fe789fe25b3736d15b1efabcaac50800371511099e0dd7",
+      "source_sha256": "bb831dee3b927c19f9f868432492ec86823a54d1793a00b96acaa1916206e4b8",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -3236,7 +3236,7 @@
       "title": "点火仓库原生系统图",
       "knowledge_status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
       "subject": null,
-      "source_sha256": "330b35e7d71844d06b5a068d6dfcabf4093ae82e6ccb982092006ba10f2a8bb0",
+      "source_sha256": "ad42990f2da806413b40b2ea666f7cc3a14ebf6b586f1d6b69cff0600b38bfbf",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-12"
@@ -3724,7 +3724,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "3b2e37f3bc9f3aa63f26e4a403182bdf0ab25bd68966cdf546153c957f9330e4",
+      "source_sha256": "219385fc98233641bc6ed0d1a86c55b7048f8db87fa07ba6a1d1a1cbcf296678",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -3819,7 +3819,7 @@
       "title": "ignition-system-architecture",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "d50a14a95e6cca90310df0bfa1afcdf56180b9f615a43072f4997b3d8aaf3e04",
+      "source_sha256": "54d6c2f2e30b42b2dc5ff2669b2ca1b853d074bad8c135f487f2216e2effcc43",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-12"
@@ -3889,7 +3889,7 @@
       "title": "Human Surface 编辑契约",
       "knowledge_status": "CURRENT_SCOPED_SOURCE",
       "subject": null,
-      "source_sha256": "8599a9ed277c9c1f4330f034e842853dcdf7e3ded2b7c8bd545e4c8d54101b41",
+      "source_sha256": "b2562e12ca8afc03e37271d2deceb7de0f5edc028aea9b03bc871ff5c53bb734",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -4198,7 +4198,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "a54b2ca959b93bbe6aa766a33af476bb9569ec8b839bc4a1701d6c6d031264c8",
+      "source_sha256": "bf0d011dc0329bce1e50a254c419db71ec142252cb36ae007c0f23ae6214b159",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-03",
@@ -4220,7 +4220,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "5f07fbb2f5618f67b0ed08ed980b015753f9ed4dc35013c6043b5d6c02c7ad2e",
+      "source_sha256": "e398ffbf5b1f650f1ad190affded3f53baad19b399baf0cac49ab45149fbe287",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-10",

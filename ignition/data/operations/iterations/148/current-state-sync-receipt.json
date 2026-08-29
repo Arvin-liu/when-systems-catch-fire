@@ -1,0 +1,121 @@
+{
+  "schema_version": "current-state-sync-receipt-r1",
+  "task_id": "IGNITION-20260829-148",
+  "architecture_identity_impact": "PRESENTATION_ONLY",
+  "identity_contract_path": "ignition/data/architecture/current-system-identity.json",
+  "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+  "current_formal_task_id": "IGNITION-20260829-148",
+  "current_formal_task_ordinal": 148,
+  "latest_architecture_changing_task_id": "IGNITION-20260827-142",
+  "latest_architecture_task_ordinal": 142,
+  "current_iteration_boundary": 148,
+  "current_iteration_boundary_semantics": "DEPRECATED_COMPATIBILITY_ALIAS_OF_CURRENT_FORMAL_TASK_ORDINAL",
+  "surface_decisions": [
+    {
+      "surface_id": "homepage-identity",
+      "path": ".github/README.md",
+      "decision": "CHANGE",
+      "reason": "Task148 changes the second homepage module into the self-sufficient AI-first Operating Method entry without injecting generated Current state.",
+      "evidence": "ignition/data/operations/iterations/148/step10-homepage-ai-first-entry.json"
+    },
+    {
+      "surface_id": "project-current-state",
+      "path": "ignition/docs/project-current-state.md",
+      "decision": "CHANGE",
+      "reason": "The Current narrative distinguishes Operating Method 1.0.0 from Iteration Method 1.4.0 and receives the generated Task148 snapshot.",
+      "evidence": "ignition/OPERATING-METHOD.md; ignition/data/architecture/current-facts.json"
+    },
+    {
+      "surface_id": "ai-cold-start",
+      "path": "ignition/AI-START-HERE.md",
+      "decision": "CHANGE",
+      "reason": "General user tasks now enter the Operating Method first and the generated Current block advances to Task148.",
+      "evidence": "ignition/data/operations/iterations/148/step11-interface-surface-sync.json"
+    },
+    {
+      "surface_id": "ai-agents-handoff",
+      "path": "ignition/AI-HANDOFF.md",
+      "decision": "CHANGE",
+      "reason": "Handoff routing separates use from self-modification and the generated Current block advances to Task148.",
+      "evidence": "ignition/data/operations/iterations/148/step11-interface-surface-sync.json"
+    },
+    {
+      "surface_id": "architecture",
+      "path": "ignition/ARCHITECTURE.md",
+      "decision": "CHANGE",
+      "reason": "Only the compiler-owned Current block changes to expose the independent use-layer method identity and Task148; architecture identity remains Task142.",
+      "evidence": "ignition/data/operations/current-snapshot-r1.json; generated block only"
+    },
+    {
+      "surface_id": "steering-doc",
+      "path": "ignition/docs/architecture/os-steering-intent-r1.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The use-layer routing contract changes no steering intent, goal, obligation or completion authority semantics."
+    },
+    {
+      "surface_id": "machine-entry",
+      "path": "ignition/llms.txt",
+      "decision": "CHANGE",
+      "reason": "The machine entry exposes both independent method identities and the Task148 non-terminal Current snapshot.",
+      "evidence": "ignition/data/operations/current-snapshot-r1.json"
+    },
+    {
+      "surface_id": "system-map-doc",
+      "path": "ignition/docs/architecture/interactive-system-map.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The hidden use-layer component is represented by the existing AI guide node; map reading, visible nodes, visible edges and geometry remain unchanged."
+    },
+    {
+      "surface_id": "federation-doc",
+      "path": "ignition/docs/architecture/external-agent-federation-r1.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The Operating Method preserves OWNER_DEFERRED live invocation and changes no federation or executor contract."
+    },
+    {
+      "surface_id": "system-map-json",
+      "path": "ignition/data/architecture/interactive-system-map.json",
+      "decision": "CHANGE",
+      "reason": "The deterministic projection refresh records the component-registry source change while keeping the 0.16.0 visible node/edge projection unchanged.",
+      "evidence": "python3 tools/generate_interactive_system_map.py --check"
+    },
+    {
+      "surface_id": "state-changelog",
+      "path": "ignition/STATE-CHANGELOG.md",
+      "decision": "CHANGE",
+      "reason": "Task148 appends its own in-progress Current-candidate delta and receives the generated Current block.",
+      "evidence": "IGNITION-20260829-148 AI-first Operating Method R1 Current candidate delta"
+    }
+  ],
+  "system_map_sync": {
+    "decision": "NO_CHANGE_WITH_REASON",
+    "reason": "Map version 0.16.0, visible nodes, visible typed edges and SVG geometry remain unchanged; only deterministic hidden-component/source provenance is refreshed.",
+    "evidence": "SYSTEM_MAP_DERIVED_OK with byte-stable SVG"
+  },
+  "state_changelog_delta": {
+    "decision": "CHANGE",
+    "reason": "Task148 has an append-only independent-method and propagation-closure delta; terminal closeout remains a later Step14 delta."
+  },
+  "changed_paths": [
+    ".github/README.md",
+    "ignition/OPERATING-METHOD.md",
+    "ignition/AI-START-HERE.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/llms.txt",
+    "ignition/ARCHITECTURE.md",
+    "ignition/STATE-CHANGELOG.md",
+    "ignition/docs/project-current-state.md",
+    "ignition/docs/VERSIONING.md",
+    "ignition/data/architecture/current-system-identity.json",
+    "ignition/data/architecture/current-facts.json",
+    "ignition/data/architecture/interactive-system-map.json",
+    "ignition/data/operations/current-snapshot-r1.json",
+    "ignition/data/operations/project-components.json",
+    "ignition/data/operations/current-task-lineage-status.json",
+    "ignition/data/operations/formal-task-lifecycle-r1.json",
+    "ignition/data/operations/open-obligation-registry-r1.json",
+    "ignition/data/operations/current-release-lifecycle-r1.json",
+    "ignition/data/operations/iterations/148/current-state-sync-receipt.json"
+  ],
+  "identity_contract_changed": true,
+  "claim_ceiling": "Repository-local Task148 use-layer method identity, Current projection, natural propagation rebuild and deterministic synchronization evidence only; no architecture identity change, formal-main publication, external truth, production readiness, Owner acceptance, validated live completion or epistemic acceptance is inferred."
+}

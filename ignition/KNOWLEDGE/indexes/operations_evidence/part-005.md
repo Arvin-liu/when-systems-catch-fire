@@ -6,6 +6,76 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5059785745 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5059785745 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5060574653 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5060574653 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5060667008 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5060667008 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5061336502 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5061336502 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5061765954 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5061765954 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5062875334 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5062875334 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5063112241 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5063112241 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5064785636 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5064785636 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5065424905 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5065424905 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5065734284 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5065734284 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5066039394 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5066039394 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5069087058 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5069087058 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5073055080 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5073055080 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5073223730 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5073223730 / A5001316926
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5076925759 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json / A5076925759 / A5001316926
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json`
   - 依赖：—；被引用：—
@@ -772,6 +842,11 @@
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; residual gates, Curren](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ed0cc0d5a1a5f515 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; residual gates, Curren
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; terminality, determini](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c5b48812c42c8326 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged; terminality, determini
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [Exact registered arXiv v3 hash/size, all-23-page visual/full-text/complete-source and official Tensor2Tensor current/his](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
@@ -2204,6 +2279,11 @@
   - 可搜索名称：NFC-37eceaaf3c9f4fda / registries remain unchanged and the projection validator fails closed.
   - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
   - 依赖：—；被引用：—
+- [regression: Human Front Door, Human Surface, Current projection, compiler, current-state sync, ordinal and related unit-](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-979f376a2dc749be / regression: Human Front Door, Human Surface, Current projection, compiler, current-state sync, ordinal and related unit-
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [regression_boundary: candidate and fresh remote task-branch clone both passed on exact `9a3b4a5561cf389b4f8af91274391096](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a189ab7b47015ac7 / regression_boundary: candidate and fresh remote task-branch clone both passed on exact `9a3b4a5561cf389b4f8af91274391096
@@ -2213,6 +2293,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3C0F724825A54953 / relation = next\(\(item for item in topology.get\("relations", \[\]\) if item.get\("relation_id"\) == "map_language_thought_zhiyuan"\), None\) / IMPLICIT-3C0F724825A54953
   - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 依赖：—；被引用：—
+- [Render only the bounded projection and its validation findings.](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6b94045797632202 / Render only the bounded projection and its validation findings.
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
   - 依赖：—；被引用：—
 - [Repair Cycle A is the only cycle used. The repaired identity/projection closure suite passed naturally with **77 tests /](../../../reports/operations/ignition-144-step14-repair-cycles-b-c.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2418,89 +2503,4 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
   - 可搜索名称：STEP03 blinded baseline versus governed replay / BASELINE-VS-GOVERNED
   - 来源：`reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md`
-  - 依赖：—；被引用：—
-- [Step08 must establish the semantic-negative and observation-projection gates.](../../../reports/operations/ignition-139-step07-current-state-sync.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9519130f38124099 / Step08 must establish the semantic-negative and observation-projection gates.
-  - 来源：`reports/operations/ignition-139-step07-current-state-sync.md`
-  - 依赖：—；被引用：—
-- [Step12 must rebuild Current solely from the ledger, validate the projection,](../../../reports/operations/ignition-139-step11-live-attempt.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-039a21505072aedb / Step12 must rebuild Current solely from the ledger, validate the projection,
-  - 来源：`reports/operations/ignition-139-step11-live-attempt.md`
-  - 依赖：—；被引用：—
-- [Step13 must run the targeted regression and projection preflight. Step14 and](../../../reports/operations/ignition-138-step12-current-state-sync.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-fc20174883423750 / Step13 must run the targeted regression and projection preflight. Step14 and
-  - 来源：`reports/operations/ignition-138-step12-current-state-sync.md`
-  - 依赖：—；被引用：—
-- [structure_A ≅ structure_B := ∃φ: A→B, ∀x,y∈A, \(x≈y ⇔ φ\(x\)≈φ\(y\)\)（结构同构）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-7933b0f73adff625 / structure_A ≅ structure_B := ∃φ: A→B, ∀x,y∈A, \(x≈y ⇔ φ\(x\)≈φ\(y\)\)（结构同构）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [Summary: 11 audited; 11 semantically valid; 0 regeneration-required; 0 superseded; 0 hash-only; 0 actual conflicts. Curr](../../../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5e88593f153bf61c / Summary: 11 audited; 11 semantically valid; 0 regeneration-required; 0 superseded; 0 hash-only; 0 actual conflicts. Curr
-  - 来源：`reports/operations/ignition-134-step14-human-surface-semantic-audit.md`
-  - 依赖：—；被引用：—
-- [Surface semantics. Two deterministic projection checks were byte-identical.](../../../reports/operations/ignition-140-step00-baseline-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0be3952fb51314cd / Surface semantics. Two deterministic projection checks were byte-identical.
-  - 来源：`reports/operations/ignition-140-step00-baseline-audit.md`
-  - 依赖：—；被引用：—
-- [Task arithmetic IS composition: \(1\) negation = subtractive composition, \(2\) addition = additive composition, \(3\) analogy](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-045.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-bc9024ed08373c7b / Task arithmetic IS composition: \(1\) negation = subtractive composition, \(2\) addition = additive composition, \(3\) analogy
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-045.json`
-  - 依赖：—；被引用：—
-- [task_events = \[event for event in lifecycle if event.get\("task_number"\) == 114\]](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A9FA98F547424F1C / task_events = \[event for event in lifecycle if event.get\("task_number"\) == 114\] / IMPLICIT-A9FA98F547424F1C
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [terminals = \[event for event in task_events if event.get\("event_type"\) == "TERMINALIZATION_PROJECTION"\]](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B827D053A0848E65 / terminals = \[event for event in task_events if event.get\("event_type"\) == "TERMINALIZATION_PROJECTION"\] / IMPLICIT-B827D053A0848E65
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [The 078 example uses `f1\(x\)=exp\(x\)` and `f2\(x\)=exp\(-2x\)` on the reals. The first is strictly increasing, the second strictly decreasing, while the product `exp\(-x\)` is strictly decreasing and has no interior inverted-U maximum. It satisfies](../../../reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C42628140EE40C96 / The 078 example uses `f1\(x\)=exp\(x\)` and `f2\(x\)=exp\(-2x\)` on the reals. The first is strictly increasing, the second strictly decreasing, while the product `exp\(-x\)` is strictly decreasing and has no interior inverted-U maximum. It satisfies / IMPLICIT-C42628140EE40C96
-  - 来源：`reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md`
-  - 依赖：—；被引用：—
-- [The 126 closure remains the authority for historical/environment residuals. 127 preserves function census drift, nonfunc](../../../reports/operations/ignition-127-step00-rebase-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f2fd2d4f3e742b71 / The 126 closure remains the authority for historical/environment residuals. 127 preserves function census drift, nonfunc
-  - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
-  - 依赖：—；被引用：—
-- [The 15 entries are recorded machine-readably in `ignition/data/operations/iterations/135/step00-failure-inventory.json`.](../../../reports/operations/ignition-135-step00-failure-inventory.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cfaa96c8533444b1 / The 15 entries are recorded machine-readably in `ignition/data/operations/iterations/135/step00-failure-inventory.json`.
-  - 来源：`reports/operations/ignition-135-step00-failure-inventory.md`
-  - 依赖：—；被引用：—
-- [The 6 NARROWS cases reflect that the provisional Kimi/non-max cards were overly conservative \(rating all as PARTIAL\), wh](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-43ed9ee882071037 / The 6 NARROWS cases reflect that the provisional Kimi/non-max cards were overly conservative \(rating all as PARTIAL\), wh
-  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
-  - 依赖：—；被引用：—
-- [The affected downstream projections were rebuilt and checked: Knowledge Experience \(`404` cards, `332` layered readings,](../../../reports/operations/ignition-126-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3877a1546fe7ed94 / The affected downstream projections were rebuilt and checked: Knowledge Experience \(`404` cards, `332` layered readings,
-  - 来源：`reports/operations/ignition-126-progress.md`
-  - 依赖：—；被引用：—
-- [The Current projection is sourced from the Task139 append-only attempt ledger plus the Task140 reconciliation-event over](../../../reports/operations/ignition-140-step08-current-state-sync.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e92d171898490514 / The Current projection is sourced from the Task139 append-only attempt ledger plus the Task140 reconciliation-event over
-  - 来源：`reports/operations/ignition-140-step08-current-state-sync.md`
-  - 依赖：—；被引用：—
-- [The current-facts JSON and Markdown projections were rebuilt twice. Their two](../../../reports/operations/ignition-128-step04-regression.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c5868dcc96b73a34 / The current-facts JSON and Markdown projections were rebuilt twice. Their two
-  - 来源：`reports/operations/ignition-128-step04-regression.md`
-  - 依赖：—；被引用：—
-- [The defect is structural: the current lineage source exposes only `IN_PROGRESS` or `COMPLETED_WITH_CLASSIFIED_RESIDUALS`](../../../reports/operations/ignition-142-step00-baseline-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d637c364c7224d4b / The defect is structural: the current lineage source exposes only `IN_PROGRESS` or `COMPLETED_WITH_CLASSIFIED_RESIDUALS`
-  - 来源：`reports/operations/ignition-142-step00-baseline-audit.md`
   - 依赖：—；被引用：—

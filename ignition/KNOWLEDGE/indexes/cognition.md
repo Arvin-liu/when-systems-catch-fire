@@ -4,6 +4,6 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./cognition/part-001.md)：1—500；"""A thin, fixture-testable adapter over ``openclaw agent --json``.""" → if not isinstance\(matrix, list\) or {row.get\("executor_id"\) for row in matrix if isinstance\(row, Mapping\)} != {"reference
-- [第 002 片](./cognition/part-002.md)：501—1000；if not isinstance\(projection, MemoryProjection\): → \| \[C-198\]\( \) \| \[高学历低认知\]\( \) \| 高学历低认知——认证投影大于认知投影 \|
-- [第 003 片](./cognition/part-003.md)：1001—1236；\| \[C-199\]\( \) \| \[初中肄业高认知\]\( \) \| 初中肄业高认知——反设置路径的投影优势 \| → 高维认知必然多轨，dim>1 ⟹ P_track>1。
+- [第 001 片](./cognition/part-001.md)：1—500；"""A thin, fixture-testable adapter over ``openclaw agent --json``.""" → if decision and decision.get\("verdict"\) == "MATERIAL_REPAIR_REQUIRED":
+- [第 002 片](./cognition/part-002.md)：501—1000；if decision_record.get\("verdict"\) == "MATERIAL_REPAIR_REQUIRED" and not repair_ids and not decision_record.get\("residuals"\): → \| 02 \| `5b6184ac02ddc9d574ed6223361da9761b221388` \| verified \|
+- [第 003 片](./cognition/part-003.md)：1001—1260；\| 03 \| `3c05df0e812c705a0858adf432feca061fc287d6` \| verified \| → 高维认知必然多轨，dim>1 ⟹ P_track>1。

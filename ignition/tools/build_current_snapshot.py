@@ -220,6 +220,12 @@ def build_snapshot() -> dict[str, Any]:
             "reference_executor_role": identity["current_architecture_identity"]["reference_executor_role"]
         },
         "current_method_version": values["current_method_version"],
+        "current_operating_method": {
+            "identity": values["current_operating_method_identity"],
+            "version": values["current_operating_method_version"],
+            "status": values["current_operating_method_status"],
+            "source_path": facts["facts"]["operating_method"]["source_path"],
+        },
         "current_task": dict(current_task),
         "iteration_identity": dict(iteration),
         "task_identity": {

@@ -15,11 +15,19 @@
     "sha": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf"
   },
   "expected_task_branch": "codex/ignition-148-ai-first-operating-method-r1-20260829",
-  "expected_receipt_branch": "relay/receipts/ignition-148-ai-first-operating-method-r1-20260829",
+  "expected_receipt_branch": "relay/records/ignition-148-ai-first-operating-method-r1-20260829",
   "required_release_ref": "refs/heads/main",
   "draft_pr_only": true,
   "owner_authorization_required_for_ready_merge_or_close": true,
   "no_owner_intermediate": true,
-  "architecture_identity_impact": "PENDING_STEP02_CURRENT_ASSET_ARCHAEOLOGY",
-  "claim_ceiling": "Task148 repository-local remote-truth recovery and bounded AI-facing operating-interface work only; no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+  "identity_impact": "PRESENTATION_ONLY",
+  "identity_expectations": {
+    "current_formal_task": "IGNITION-20260829-148",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "previous_canonical_current_task": "IGNITION-20260828-147",
+    "previous_formal_task": "IGNITION-20260828-147",
+    "release_candidate_task": "IGNITION-20260829-148",
+    "publication_witness_task": "IGNITION-20260829-148"
+  },
+  "claim_ceiling": "Task148 repository-local remote-truth recovery and bounded AI-facing operating-interface work only; Owner authority is not inferred or transferred, and no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
 }

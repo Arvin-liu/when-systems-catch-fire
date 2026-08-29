@@ -4,6 +4,81 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [至少列出输入、机制、状态变化、输出、边界](../../../docs/narrative-story-validation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-aa33987a44ec7e8a / 至少列出输入、机制、状态变化、输出、边界
+  - 来源：`docs/narrative-story-validation.md`
+  - 依赖：—；被引用：—
+- [至少映射输入、机制、状态变化、输出、边界。](../../../docs/narrative-output-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-e00d46df7b063d51 / 至少映射输入、机制、状态变化、输出、边界。
+  - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [节点、连线、生成结果、测试与点击量都不能制造事实或因果。](../../../data/architecture/interactive-system-map.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-011dc72b8b6445e2 / 节点、连线、生成结果、测试与点击量都不能制造事实或因果。
+  - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [若两个决定不可比较，合法结果是 fail-closed，不是虚构一个总 precedence。](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2e7830858f0260ac / 若两个决定不可比较，合法结果是 fail-closed，不是虚构一个总 precedence。
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [表演性互助：指标化评价导致行为朝可测方向畸变，信任下降。](../../../inputs/collisions/20260708-cross-domain-smoke-test/social.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f2dfb216db45d743 / 表演性互助：指标化评价导致行为朝可测方向畸变，信任下降。
+  - 来源：`inputs/collisions/20260708-cross-domain-smoke-test/social.md`
+  - 依赖：—；被引用：—
+- [规范化输入时保留原对象，不把解释写回来源；区分 source facts、source claims、interpretations、mechanisms、questions 和不可读取残余。然后按 operation-specific a](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6e9be918ca9c134e / 规范化输入时保留原对象，不把解释写回来源；区分 source facts、source claims、interpretations、mechanisms、questions 和不可读取残余。然后按 operation-specific a
+  - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
+- [触发：贡献者创造核心价值但无对应决策权。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b3dfae198882557d / 触发：贡献者创造核心价值但无对应决策权。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
+  - 依赖：—；被引用：—
+- [计量检验验证（回归分析、因果推断）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-19bd25545d807642 / 计量检验验证（回归分析、因果推断）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [认知Higgs机制案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6ebe7af4565dd73e / 认知Higgs机制案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [认知Higgs机制，Higgs场提供分裂的触发器——真空期望值 设定了μ*_break。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b32380b481dc3ddd / 认知Higgs机制，Higgs场提供分裂的触发器——真空期望值 设定了μ*_break。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [认知Higgs机制，规范破缺后真空选择。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7f26548bb4b6d054 / 认知Higgs机制，规范破缺后真空选择。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [认知迁移编辑修订：Owner 决定与独立审查入口](../../../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-15aed9991e713320 / 认知迁移编辑修订：Owner 决定与独立审查入口
+  - 来源：`reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md`
+  - 依赖：—；被引用：—
+- [认知革命、农业革命、科学革命与点火框架元协议演化的同构性。每次革命都是元协议组合的跃迁，推动系统进入新的演化路径。](../../../data/foundation/arguments/arguments.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：CLAIM-BC-20260709-010 / 认知革命、农业革命、科学革命与点火框架元协议演化的同构性。每次革命都是元协议组合的跃迁，推动系统进入新的演化路径。
+  - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [让事件和关系先落地，再决定抽象反思何时进入。抽象可以先说，但必须是作品真实需要的倒置，不是潜在翻译句架。“事件先行”是一种诊断动作，不是要求所有作品使用同一开头、同一语序或同一短句模板。](../../../docs/publication/zhiyuan-writing-method.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8e71f07768abd3fd / 让事件和关系先落地，再决定抽象反思何时进入。抽象可以先说，但必须是作品真实需要的倒置，不是潜在翻译句架。“事件先行”是一种诊断动作，不是要求所有作品使用同一开头、同一语序或同一短句模板。
+  - 来源：`docs/publication/zhiyuan-writing-method.md`
+  - 依赖：—；被引用：—
+- [让事情先发生，再决定反思何时进入；](../../../docs/language-thought/profiles/zh-hans.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5b4aa1f2b1470f17 / 让事情先发生，再决定反思何时进入；
+  - 来源：`docs/language-thought/profiles/zh-hans.md`
+  - 依赖：—；被引用：—
 - [记录跨域复现证据（领域 + 具体机制）](../../../docs/getnote-collision-workflow-final-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a7ccf023498798cf / 记录跨域复现证据（领域 + 具体机制）
@@ -304,6 +379,11 @@
   - 可搜索名称：NFC-0281cf45c54613a8 / 进 candidates/ 不强行回填：M7、M8、M9（受≤5约束或需外部证据补强）。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
   - 依赖：—；被引用：—
+- [进入后必须立即把 \[`ITERATION.md`\]\(ITERATION.md\) 作为子协议；先恢复 remote truth、确认 gap/claim ceiling、建立传播闭包和 Draft lifecycle，再决定任何编辑。`REP](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2895d66277ed9807 / 进入后必须立即把 \[`ITERATION.md`\]\(ITERATION.md\) 作为子协议；先恢复 remote truth、确认 gap/claim ceiling、建立传播闭包和 Draft lifecycle，再决定任何编辑。`REP
+  - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
 - [迭代操作法**（`ITERATION.md`、方法 1.4.0 Current）：宪章生命周期轴沿用其能力生命周期与 exact-head acceptance 门禁；宪章的 `PUBLISHED_SNAPSHOT` 可见性轴与 1.4.0](../../../docs/governance/charter-system-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-3473275fb5fa6589 / 迭代操作法**（`ITERATION.md`、方法 1.4.0 Current）：宪章生命周期轴沿用其能力生命周期与 exact-head acceptance 门禁；宪章的 `PUBLISHED_SNAPSHOT` 可见性轴与 1.4.0
@@ -429,9 +509,9 @@
   - 可搜索名称：NFC-2affe63614c4f69f / 集体行动的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
-- [需要从整体结构定位入口时，打开\[完整可点击系统图\]\(./architecture/interactive-system-map.md\)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。](../../../docs/USAGE.md)
+- [需要从整体结构定位入口时，打开\[完整总架构图\]\(./architecture/interactive-system-map.md\)。图只用于结构阅读；SVG 的 link metadata 与客户端交互呈现是两件事，视觉邻近、连线和 clu](../../../docs/USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8eaebaae362143b5 / 需要从整体结构定位入口时，打开\[完整可点击系统图\]\(./architecture/interactive-system-map.md\)。图只用于导航；视觉邻近、连线和 cluster 不自动表示因果、同构、真值或新增架构层。
+  - 可搜索名称：NFC-a31858eda072758a / 需要从整体结构定位入口时，打开\[完整总架构图\]\(./architecture/interactive-system-map.md\)。图只用于结构阅读；SVG 的 link metadata 与客户端交互呈现是两件事，视觉邻近、连线和 clu
   - 来源：`docs/USAGE.md`
   - 依赖：—；被引用：—
 - [项目不采用以下强主张：语言决定可思考的内容；不同语言具有不同真值逻辑；一个语言共同体共享不可改变的民族心智；语言表达差异必然对应非语言认知差异。](../../../docs/language-thought/research-boundary.md)

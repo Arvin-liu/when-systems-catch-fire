@@ -4,17 +4,17 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./architecture_governance/part-001.md)：1—500；"""121-validator.py — Validate 121 fulltext artifacts by actually reading files. → `0.2.0` 将上位方法修订并命名为“之元写作法”，以心智层级跃迁为内部生成内核。肉身锚定是可选生成／回返模式，跨域同构叙事是一种应用类型，高维压缩结尾是一种可选收束。旧候选从未被接受、合并或成为当前能力；其错误与纠正保留在 Git 历史
-- [第 002 片](./architecture_governance/part-002.md)：501—1000；`1111` witness evidence are separate gates. → Crossref verification**: 11/13 DOIs verified successfully, confirming metadata accuracy for published works
-- [第 003 片](./architecture_governance/part-003.md)：1001—1500；Crossref 成功只允许提升至 `METADATA_VERIFIED`**，绝不能直接提升至 `CLAIM_SUPPORT_CONFIRMED`。 → def aggregate\(results, thresholds\):
-- [第 004 片](./architecture_governance/part-004.md)：1501—2000；def amend_question\( → def test_content_hash_tamper_fails\(self\):
-- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def test_create_basic\(self\): → For each of 9 nodes, map specific evidence to node capabilities
-- [第 006 片](./architecture_governance/part-006.md)：2501—3000；For empirical claims, declare replication as `NO_REPLICATION_CLAIMED`, `INTERNAL_REPLAY_ONLY` or `EXTERNAL_REPLICATION_D → next_read: complete the Task134 Current identity gates, terminal closure and exact long-window full unittest evidence; r
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；next_read: read `data/operations/current-task-lineage-status.json`, `data/architecture/current-facts.json`, `data/operat → Status: `STRICT_FOUR_PART_README_VALIDATED_LOCALLY`
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；Status: OWNER_ACCEPTED_BOUNDED_CALIBRATION_EVIDENCE_WITH_EXPLICIT_RESIDUALS → UNRESOLVED: 2 \(S120-008, S120-015\)
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；unverified = \[s\["source_id"\] for s in sources if not s.get\("crossref_verified"\)\] → \| GAP-017 \| No equivalence checker across different function representations \| UNRESOLVED_INSUFFICIENT_EVIDENCE \| LOW \|
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| GAP-018 \(Effect Tracking\) \| EVIDENCE_ACCUMULATING \| 4 \| 4 \| Yes \| → 乘法临界漂移统一→脆弱点在最接近零的因子。
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；乘法临界漂移统一，∂θ_critical/∂xᵢ = -θ_critical × \(∂lnfᵢ/∂xᵢ\)/Σⱼ\(∂lnfⱼ/∂xⱼ\)。 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 想要统一解释过多现象；
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；感知社会环境 → 统一矩阵入口、12 个协议入口、跨协议红队、事实 pending 总表与宪章入口见本目录 \[README.md\]\(./README.md\)。
-- [第 014 片](./architecture_governance/part-014.md)：6501—6886；统一矩阵：\[12-meta-protocol-normative-review.md\]\(./12-meta-protocol-normative-review.md\) → （证据不足、需外部验证、待人工复核）
+- [第 001 片](./architecture_governance/part-001.md)：1—500；"""121-validator.py — Validate 121 fulltext artifacts by actually reading files. → _strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)
+- [第 002 片](./architecture_governance/part-002.md)：501—1000；_strings\(results, f"{item_path}.result_artifact_ids", issues\) → classic_problems_benchmark 数据结构
+- [第 003 片](./architecture_governance/part-003.md)：1001—1500；classic_problems_benchmark（34 条）— 无标题命中，验证未命中正常输出 → def _validate\(self, data: dict\) -> List\[str\]:
+- [第 004 片](./architecture_governance/part-004.md)：1501—2000；def _validate\(self, spec: dict\): → def summary\(self, trace: dict\) -> Dict\[str, Any\]:
+- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def supersede\(self, function_id: str, new_record: dict\) -> dict: → external truth, Owner acceptance or epistemic acceptance is inferred.
+- [第 006 片](./architecture_governance/part-006.md)：2501—3000；external truth, Owner acceptance, production safety or epistemic acceptance. → Machine-readable evidence regime records for domains covered by v0.2.
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；main publication, external truth, production readiness, Owner acceptance, → Same-organization repeated comments are not automatically independent evidence.
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；SAMoRA factorizes a LoRA mixture into one shared down-projection A and multiple expert-specific up-projections B_i, and → title: "自我模型相变的验证标准"
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；title: "菜品空间验证" → \| BC-20260709-009 \| 《影响力》 \| 六大影响力原则与点火框架P_meta元协议的映射。互惠、承诺一致、社会认同等原则作为元协议实例，影响决策门控面。 \| pending \| P_meta \| 《影响力》最终收敛报告 20
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| BC-20260709-011 \| 《未来简史》 \| 数据主义与点火框架Φ元统一律的碰撞。万物数据化→Φ从正值趋向零的暂态，验证了宇宙是Φ加速衰减的终极案例。 \| pending \| Φ \| 《未来简史》最终收敛报告 2026年7月9日 → 中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；中文：案例说明：科举制让汉人"可以不考"但事实上不考=放弃上升通道 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 密码学碰撞验证案例
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；对 22 本书验证候选（BC-20260709-001~022）逐条查重与入表门槛复核。 → 看似完整但缺少证据；
+- [第 014 片](./architecture_governance/part-014.md)：6501—6993；真正必要的问题，然后给我一份个性化的首次使用建议。 → （证据不足、需外部验证、待人工复核）

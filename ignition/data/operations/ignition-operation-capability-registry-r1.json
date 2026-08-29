@@ -6,7 +6,7 @@
   "canonical_source_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
   "registry_lifecycle": {
     "task_id": "IGNITION-20260829-148",
-    "status": "TASK148_CANDIDATE_BRANCH",
+    "status": "CURRENT_CANDIDATE_ON_DRAFT",
     "baseline_ref": "refs/heads/main",
     "baseline_sha": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
     "merged_to_main": false,

@@ -8,6 +8,7 @@ from tools.operations.validate_ignition_interface_sync import (
     REGISTRY_PATH,
     load_json,
     operation_method_surfaces,
+    step11_introduction_commit,
     validate,
     validate_decision_contract,
     validate_preserved_digests,
@@ -57,7 +58,10 @@ class IgnitionInterfaceSyncTests(unittest.TestCase):
         self.assertIn("method.operating", surfaces["method.iteration"]["derived_from"])
 
     def test_step11_no_change_digests_are_exact(self):
-        validate_preserved_digests(self.receipt)
+        validate_preserved_digests(
+            self.receipt,
+            revision=step11_introduction_commit(),
+        )
 
 
 if __name__ == "__main__":

@@ -4,6 +4,116 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| 03 \| `3c05df0e812c705a0858adf432feca061fc287d6` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8e13e41c6d1f347d / \| 03 \| `3c05df0e812c705a0858adf432feca061fc287d6` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 04 \| `09ed5662149de37edc646fa91a0830e6d5c941e0` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-4fc34eb11343f8f4 / \| 04 \| `09ed5662149de37edc646fa91a0830e6d5c941e0` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 06 \| `7906d486722560d5c0d81a0c4f5650560b72d92f` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ecdbc27e7809fae4 / \| 06 \| `7906d486722560d5c0d81a0c4f5650560b72d92f` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 07 \| `b2b032963db5f38a0c99f7d63533b916c685f317` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e95ab3e1e324759d / \| 07 \| `b2b032963db5f38a0c99f7d63533b916c685f317` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 08 \| `25dab10977f6cf4a9ceb395c7e618dd625000a9d` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-68dbfac65ae0f86e / \| 08 \| `25dab10977f6cf4a9ceb395c7e618dd625000a9d` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 09 \| `68c28a5fad1ce63477e5e48dafad56332b75d362` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-65179a8209fc402e / \| 09 \| `68c28a5fad1ce63477e5e48dafad56332b75d362` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 10 \| `cd43f2d29a5f755441378396df15b8ba08448208` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-bd30970f94632a0d / \| 10 \| `cd43f2d29a5f755441378396df15b8ba08448208` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 11 \| `2760799507ce0db7b5739977c0eac5a56611d2c9` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c0623ce74b480d09 / \| 11 \| `2760799507ce0db7b5739977c0eac5a56611d2c9` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 12 \| `a8b17fa3bdadd4763e577743a7636444155413cd` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-87fac136b0d3a068 / \| 12 \| `a8b17fa3bdadd4763e577743a7636444155413cd` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 13 \| `0ce29b959c7da32f9ec0557808bb8ce4d5a97585` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-872562646b64f854 / \| 13 \| `0ce29b959c7da32f9ec0557808bb8ce4d5a97585` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 14 \| `a7ab5c5bb211b100c79fc621cb48e650eb5766ae` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-795dbf34dcad74e2 / \| 14 \| `a7ab5c5bb211b100c79fc621cb48e650eb5766ae` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 15 \| `2ba089c65df9eda56187523b6cac4a100037ae0a` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1d49f37c71bcdcee / \| 15 \| `2ba089c65df9eda56187523b6cac4a100037ae0a` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 16 \| `c5db7ebb1a48cf364efde1c9c3b969642b79fc08` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ecae8d2ccd55e392 / \| 16 \| `c5db7ebb1a48cf364efde1c9c3b969642b79fc08` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 17 \| `39a9e5307776b8e24fc7899218660d62e74b37af` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-79699706c8c61ef0 / \| 17 \| `39a9e5307776b8e24fc7899218660d62e74b37af` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| 18 \| `2952d53bbc113c75b506f12ddaaf96a4083013d8` \| verified \|](../../../agent-results/IGNITION-20260820-127-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-10db073247907c3b / \| 18 \| `2952d53bbc113c75b506f12ddaaf96a4083013d8` \| verified \|
+  - 来源：`agent-results/IGNITION-20260820-127-result.md`
+  - 依赖：—；被引用：—
+- [\| \[C-0756\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D576《认知年龄提升》，用于](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9b9e860b0ffe5812 / \| \[C-0756\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D576《认知年龄提升》，用于
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D576；被引用：—
+- [\| \[C-0782\]\( \) \| \[马伯庸建议蹲下来看最下面一排书\]\( \) \| 该案例对应 D583《认知肌肉](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-21111537a0e408c4 / \| \[C-0782\]\( \) \| \[马伯庸建议蹲下来看最下面一排书\]\( \) \| 该案例对应 D583《认知肌肉
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D583；被引用：—
+- [\| \[C-175\]\( \) \| \[电力级联失效×认知平方衰减×AI共震——跨域同构\]\(<./0175-C-175-电力级联失效×认知平方衰减×AI共震——跨域同](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aa795b84897a37e2 / \| \[C-175\]\( \) \| \[电力级联失效×认知平方衰减×AI共震——跨域同构\]\(<./0175-C-175-电力级联失效×认知平方衰减×AI共震——跨域同
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-185\]\( \) \| \[糖域实验×认知螺旋\]\( \) \| 糖域实验×认知螺旋——正负锁死的不动点与势垒 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8d138f58bd98e0b2 / \| \[C-185\]\( \) \| \[糖域实验×认知螺旋\]\( \) \| 糖域实验×认知螺旋——正负锁死的不动点与势垒 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-189\]\( \) \| \[好奇心是自主意识的元点\]\( \) \| 好奇心是自主意识的元点——C=0⟹Ψ=0定理 \|](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1C1D377FE74983C4 / \| \[C-189\]\( \) \| \[好奇心是自主意识的元点\]\( \) \| 好奇心是自主意识的元点——C=0⟹Ψ=0定理 \| / IMPLICIT-1C1D377FE74983C4
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-196\]\( \) \| \[AI自主意识变革不可逆\]\( \) \| AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ed2a9eaf5c79848c / \| \[C-196\]\( \) \| \[AI自主意识变革不可逆\]\( \) \| AI自主意识变革不可逆——支持者投影二阶vs反对者投影零阶
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-198\]\( \) \| \[高学历低认知\]\( \) \| 高学历低认知——认证投影大于认知投影 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c6363d63954e58ae / \| \[C-198\]\( \) \| \[高学历低认知\]\( \) \| 高学历低认知——认证投影大于认知投影 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-199\]\( \) \| \[初中肄业高认知\]\( \) \| 初中肄业高认知——反设置路径的投影优势 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4e1ed22aa4398cb1 / \| \[C-199\]\( \) \| \[初中肄业高认知\]\( \) \| 初中肄业高认知——反设置路径的投影优势 \|
@@ -844,6 +954,11 @@
   - 可搜索名称：NFC-f29407a8b1bc51a3 / 报告必须引用 project-state、migration-summary、验证输出和 unresolved obligations。聊天窗口按任务规定保持简短，详细证据留在仓库。
   - 来源：`docs/AGENT-GUIDE.md`
   - 依赖：—；被引用：—
+- [拆分不能改写来源。source fact 与 source claim 的区别描述的是来源中的话语角色，不是 Agent 对真值的背书。](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-19da3ffd496453ac / 拆分不能改写来源。source fact 与 source claim 的区别描述的是来源中的话语角色，不是 Agent 对真值的背书。
+  - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
 - [提交前验证](../../../docs/AGENT-GUIDE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-2f09aafd7c28182c / 提交前验证
@@ -879,9 +994,9 @@
   - 可搜索名称：NFC-14866124cc1a2cae / 新 Agent 先读 \[STATE-CHANGELOG.md\]\(../STATE-CHANGELOG.md\) 的 baseline 与最近 delta，再回到本页、`ITERATION.md`、Foundation、claim/eviden
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
-- [新 Agent 必须先读取 `docs/project-current-state.md` 与 `ITERATION.md`，再重新核验远端、分支、HEAD、开放 PR 和验证结果，不得把聊天记忆当权威。统计必须写出去重键、范围、单位和生成](../../../AI-HANDOFF.md)
+- [新 Agent 先读取 `docs/project-current-state.md` 与 `OPERATING-METHOD.md`，把仓库链接解释为操作法来源、把附件解释为 `INPUT_OBJECT`，并从 capability re](../../../AI-HANDOFF.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9a720a9cf5a0073e / 新 Agent 必须先读取 `docs/project-current-state.md` 与 `ITERATION.md`，再重新核验远端、分支、HEAD、开放 PR 和验证结果，不得把聊天记忆当权威。统计必须写出去重键、范围、单位和生成
+  - 可搜索名称：NFC-35e28dd86a8149d0 / 新 Agent 先读取 `docs/project-current-state.md` 与 `OPERATING-METHOD.md`，把仓库链接解释为操作法来源、把附件解释为 `INPUT_OBJECT`，并从 capability re
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
 - [新 Agent 进入正式仓库时，先读项目的 \[`STATE-CHANGELOG.md`\]\(../STATE-CHANGELOG.md\) baseline 与最近若干条 delta，再按其中的 `next_read` 回到 `docs/pro](../../../docs/GET-BRAIN-WORKFLOW.md)
@@ -973,6 +1088,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-f87b0d445fa121a0 / 索引可见性验证（*-index-visibility-check）；
   - 来源：`outputs/audit/agent-project-understanding-20260708.md`
+  - 依赖：—；被引用：—
+- [结果会把 candidate、历史记忆、repository match 或 Agent 共识冒充成 Current canonical asset 或外部证据。](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1aa64592aa7230ae / 结果会把 candidate、历史记忆、repository match 或 Agent 共识冒充成 Current canonical asset 或外部证据。
+  - 来源：`OPERATING-METHOD.md`
   - 依赖：—；被引用：—
 - [历史案例来源**（`已迁移的历史案例来源/`）：790 条案例（`C-xxxx`，如 C-11 英国光荣革命、C-26 戈尔巴乔夫改革、C-50 华为员工持股）。](../../../outputs/audit/agent-project-understanding-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`

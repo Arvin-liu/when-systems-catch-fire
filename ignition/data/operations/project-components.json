@@ -39,6 +39,7 @@
       "authority_source": "FOUNDATION.md",
       "component_ids": [
         "foundation",
+        "ignition_operating_method",
         "l5"
       ],
       "path_patterns": [
@@ -46,6 +47,17 @@
         "tools/foundation/"
       ],
       "reason": "Foundation includes tests/foundation/ and tools/foundation/ for cross-layer validation; L5 owns them for evaluation methodology."
+    },
+    {
+      "authority_source": "OPERATING-METHOD.md",
+      "component_ids": [
+        "ignition_operating_method",
+        "propagation_calculator"
+      ],
+      "path_patterns": [
+        "tests/fixtures/ignition-operating-method/"
+      ],
+      "reason": "The propagation calculator retains its historical broad tests/fixtures/ coverage while the more specific Operating Method fixtures are authoritative executable examples for the AI-facing use protocol."
     },
     {
       "authority_source": "docs/publication/cases/jin-rise-case-source.md",
@@ -297,7 +309,27 @@
         "docs/project-current-state.md",
         "CHANGELOG.md",
         "STATE-CHANGELOG.md",
-        "docs/VERSIONING.md"
+        "docs/VERSIONING.md",
+        "data/architecture/current-facts.json",
+        "data/architecture/current-system-identity.json",
+        "data/operations/current-release-lifecycle-r1.json",
+        "data/operations/current-snapshot-r1.json",
+        "data/operations/state-changelog-profile-r1.json",
+        "data/operations/current-task-lineage-status.json",
+        "data/operations/current-volatile-fact-registry-r1.json",
+        "data/operations/task-identity-model-r1.json",
+        "docs/architecture/current-facts.md",
+        "schemas/architecture/current-facts.schema.json",
+        "schemas/architecture/current-system-identity.schema.json",
+        "schemas/operations/current-snapshot-r1.schema.json",
+        "tests/test_current_state_sync.py",
+        "tests/test_current_surface_compiler.py",
+        "tests/test_state_changelog.py",
+        "tools/build_current_snapshot.py",
+        "tools/current_surface_compiler.py",
+        "tools/generate_current_facts.py",
+        "tools/validate_current_state_sync.py",
+        "tools/validate_state_changelog.py"
       ]
     },
     {
@@ -491,6 +523,56 @@
         "tools/operations/validate_phase_d_closeout.py",
         "tools/operations/validate_phase_e_candidate.py",
         "docs/architecture/incremental-execution.md"
+      ]
+    },
+    {
+      "authority": "canonical",
+      "canonical_target": "OPERATING-METHOD.md",
+      "component_id": "ignition_operating_method",
+      "component_type": "operation_control",
+      "description": "AI-facing use-layer protocol that defaults to READ_ONLY_RUN, resolves Current operations and routes explicit Ignition self-modification into the separate Iteration Method.",
+      "label": "点火操作法 / Ignition Operating Method R1",
+      "layer_or_overlay": "overlay",
+      "lifecycle": {
+        "source": "OPERATING-METHOD.md",
+        "status": "draft_candidate",
+        "version": "1.0.0"
+      },
+      "map_projection": {
+        "no_change_reason": "The Operating Method is a use-layer AI interface represented by the existing AI guide/front-door node; it is not an architecture layer or a replacement for the Iteration Method node.",
+        "represented_by": "ai_guide",
+        "visible": false
+      },
+      "path_patterns": [
+        "OPERATING-METHOD.md",
+        "data/operations/ignition-operation-capability-registry-r1.json",
+        "data/operations/ignition-operation-playbooks-r1.json",
+        "data/operations/ignition-run-output-contract-r1.json",
+        "schemas/operations/ignition-interface-sync-r1.schema.json",
+        "schemas/operations/ignition-object-collision-run-r1.schema.json",
+        "schemas/operations/ignition-operation-capability-registry-r1.schema.json",
+        "schemas/operations/ignition-operation-playbooks-r1.schema.json",
+        "schemas/operations/ignition-run-output-r1.schema.json",
+        "tools/foundation/resolve_current_canonical_asset.py",
+        "tools/operations/classify_ignition_run_mode.py",
+        "tools/operations/evaluate_object_collision_run.py",
+        "tools/operations/plan_ignition_operation_run.py",
+        "tools/operations/validate_ignition_interface_sync.py",
+        "tools/operations/validate_ignition_operation_playbooks.py",
+        "tools/operations/validate_ignition_run_output.py",
+        "tools/validate_ignition_operating_method.py",
+        "tools/validate_ignition_operation_capability_registry.py",
+        "tests/fixtures/ignition-operating-method/",
+        "tests/test_current_canonical_resolution.py",
+        "tests/test_ignition_interface_sync.py",
+        "tests/test_ignition_object_collision.py",
+        "tests/test_ignition_operating_method.py",
+        "tests/test_ignition_operating_mode_router.py",
+        "tests/test_ignition_operation_capability_registry.py",
+        "tests/test_ignition_operation_lifecycle.py",
+        "tests/test_ignition_operation_playbooks.py",
+        "tests/test_ignition_run_output.py",
+        "docs/operations/ignition-operation-playbooks-r1.md"
       ]
     },
     {
@@ -872,6 +954,7 @@
         "KNOWLEDGE/",
         "RESULTS/",
         "data/governance/human-results/",
+        "data/governance/human-surface/materiality-manifest.json",
         "data/governance/knowledge-experience/",
         "data/governance/self-correction/",
         "docs/generated/ignition-system-architecture.svg",
@@ -882,6 +965,7 @@
         "schemas/governance/knowledge-asset-card.schema.json",
         "schemas/governance/knowledge-change.schema.json",
         "tools/governance/",
+        "tools/validate_agent_platform_human_surface.py",
         "tests/test_human_visibility_gate.py",
         "tests/test_knowledge_experience.py",
         "tests/test_self_correction_engine.py"
@@ -1990,7 +2074,7 @@
       "layer_or_overlay": "overlay",
       "lifecycle": {"source": "data/operations/formal-task-lifecycle-r1.json", "status": "current", "version": "R1"},
       "map_projection": {"group": "os_spine", "visible": true},
-      "path_patterns": ["data/operations/formal-task-lifecycle-r1.json", "schemas/operations/formal-task-lifecycle-r1.schema.json", "tools/validate_formal_task_lifecycle.py", "tools/validate_task142_obligation_adjudication.py", "tests/test_formal_task_lifecycle.py"]
+      "path_patterns": ["data/operations/formal-task-lifecycle-r1.json", "schemas/operations/formal-task-lifecycle-r1.schema.json", "schemas/operations/execution-contract-r1.schema.json", "tools/validate_formal_task_lifecycle.py", "tools/validate_task142_obligation_adjudication.py", "tests/test_formal_task_lifecycle.py"]
     },
     {
       "authority": "canonical",
@@ -2018,5 +2102,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.4.0"
+  "registry_version": "2.5.0"
 }

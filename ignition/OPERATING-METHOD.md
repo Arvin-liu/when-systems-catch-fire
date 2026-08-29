@@ -1,6 +1,10 @@
 # 点火操作法 / Ignition Operating Method
 
-> Lifecycle: `TASK148_CANDIDATE_BRANCH`. This document is not Current on `main` until it is accepted, merged and synchronized.
+Identity: `IGNITION_OPERATING_METHOD_R1`
+
+Candidate: `1.0.0`
+
+> Lifecycle: `CURRENT_CANDIDATE_ON_DRAFT`. This document is the canonical Current candidate on the Task148 branch; it is not Current on `main` until it is accepted, merged and synchronized.
 >
 > Canonical candidate path: `ignition/OPERATING-METHOD.md`. Machine capability authority: [Ignition Operation Capability Registry R1](data/operations/ignition-operation-capability-registry-r1.json).
 

@@ -1249,6 +1249,11 @@
   - 可搜索名称：NFC-f6aabc72c32c7027 / \[意识的智能必要条件\]\(docs/zh/functions/items/D240.md\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D240；被引用：—
+- [\[点火迭代操作法\]\(ITERATION.md\)当前版本 `1.4.0` 的 canonical scope 是“点火怎样改变自己”。它治理 remote truth、gap、claim ceiling、传播闭包、同步矩阵、验证、审查、Dra](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-6b4347476a3ef12d / \[点火迭代操作法\]\(ITERATION.md\)当前版本 `1.4.0` 的 canonical scope 是“点火怎样改变自己”。它治理 remote truth、gap、claim ceiling、传播闭包、同步矩阵、验证、审查、Dra
+  - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
 - [\[生命共同体价值宪章\]\(./docs/governance/life-community-value-charter.md\)：规范性边界。](../../../SUMMARY.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-6371ba9b57f2ffb5 / \[生命共同体价值宪章\]\(./docs/governance/life-community-value-charter.md\)：规范性边界。
@@ -1699,6 +1704,11 @@
   - 可搜索名称：NFC-a4f2b1073fb619c2 / `docs/architecture/os-control-plane-r2.md` 与 `agent_runtime/`：Task 127 的 Durability / Lifecycle R3 复用同一 OS 控制脊柱，提供 snaps
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
+- [`Draft lifecycle record`](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-9e2477e446c88508 / `Draft lifecycle record`
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
 - [`editorial_lifecycle.py --repo ignition`：`EDITORIAL_OK articles=13`。](../../../reports/operations/ignition-143-step16-canonical-publication-integration.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9ed95255bad24698 / `editorial_lifecycle.py --repo ignition`：`EDITORIAL_OK articles=13`。
@@ -1739,6 +1749,16 @@
   - 可搜索名称：NFC-4e99473f12d43ddb / `formal_protocol`: formally approved and reflected in the repository with traceable update history.
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
+- [`formal_task_lifecycle_r1 --projects / repository_dependency--> current_state` — formal task lifecycle projection only;](../../../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a0df81ba947bb038 / `formal_task_lifecycle_r1 --projects / repository_dependency--> current_state` — formal task lifecycle projection only;
+  - 来源：`reports/operations/IGNITION-20260829-148-change-propagation-impact.md`
+  - 依赖：—；被引用：—
+- [`formal_task_lifecycle_r1 --projects / repository_dependency--> open_obligation_registry_r1` — declared repository linka](../../../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-032fb919f8a894df / `formal_task_lifecycle_r1 --projects / repository_dependency--> open_obligation_registry_r1` — declared repository linka
+  - 来源：`reports/operations/IGNITION-20260829-148-change-propagation-impact.md`
+  - 依赖：—；被引用：—
 - [`FUNC-L1-EXIT 退出权函数族`：材料「青年教师无法拒绝参赛」「职称硬门槛」与退出权受限同构。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-569aff2fb15cb74f / `FUNC-L1-EXIT 退出权函数族`：材料「青年教师无法拒绝参赛」「职称硬门槛」与退出权受限同构。
@@ -1753,6 +1773,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bee7e94c7741f242 / `git ls-remote origin refs/heads/main`. The lifecycle schema/validator also treats
   - 来源：`reports/operations/ignition-131-step00-publication-paradox-audit.md`
+  - 依赖：—；被引用：—
+- [`ignition/docs/governance/life-community-value-charter.md`](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-d6b4599dff8823dd / `ignition/docs/governance/life-community-value-charter.md`
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
   - 依赖：—；被引用：—
 - [`INDEX` INDEX: MULTIPLE_CONFLICTING_SOURCES; missing=direct local note path or raw source artifact missing](../../../reports/math-foundation/provenance-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1963,6 +1988,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3fea9adb1fc63915 / `rejected`: clear evidence that the item is not a protocol-layer item.
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
+  - 依赖：—；被引用：—
+- [`SOURCE_FACT` — 来源作为事实陈述给出的内容；这不自动证明它真实；](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-45c76f5f77eee281 / `SOURCE_FACT` — 来源作为事实陈述给出的内容；这不自动证明它真实；
+  - 来源：`OPERATING-METHOD.md`
   - 依赖：—；被引用：—
 - [`STRUCTURALLY_VALID`**: the projection satisfied a structural/formal condition. Structure does not establish empirical s](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2214,9 +2244,9 @@
   - 可搜索名称：NFC-2ee19c4a19490e2c / affordance, not mechanism proof
   - 来源：`data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json`
   - 依赖：—；被引用：—
-- [AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。](../../../docs/AI-USAGE.md)
+- [AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。最终结果按\[统一输出契约\]\(../data/operations/ignition](../../../docs/AI-USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0553491cb8dc66ae / AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。
+  - 可搜索名称：NFC-dfc593b29cc5c47c / AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。最终结果按\[统一输出契约\]\(../data/operations/ignition
   - 来源：`docs/AI-USAGE.md`
   - 依赖：—；被引用：—
 - [AI 或人工生命道德地位不确定时的审慎边界；](../../../docs/governance/life-community-value-charter.md)
@@ -2473,34 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7fb57951c41f3190 / authority_changes: Task142 adds independent formal-task lifecycle and open-obligation authorities; it grants no Owner, p
   - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [authority_changes: the formal task lifecycle now owns Task143 terminality independently of the open-obligation registry;](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b44b798bb9a58591 / authority_changes: the formal task lifecycle now owns Task143 terminality independently of the open-obligation registry;
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [Automatic discovery can propose a record, but cannot assign authoritative truth, proof, evidence or novelty status.](../../../docs/foundation/future-claim-admission-protocol.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-fedb396c6063c21f / Automatic discovery can propose a record, but cannot assign authoritative truth, proof, evidence or novelty status.
-  - 来源：`docs/foundation/future-claim-admission-protocol.md`
-  - 依赖：—；被引用：—
-- [Axes 是由局部权威独立维护的坐标，包括九轴状态、数学成熟度 `M0–M7`、外部证据成熟度 `E0–E7`、source lineage、claim ceiling、隐私/出版资格、语言 framing residue、能力可用性与模型](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-3bb597d1a9ce28ce / Axes 是由局部权威独立维护的坐标，包括九轴状态、数学成熟度 `M0–M7`、外部证据成熟度 `E0–E7`、source lineage、claim ceiling、隐私/出版资格、语言 framing residue、能力可用性与模型
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [Banach算子不变子空间函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D533 / Banach算子不变子空间函数 / D533
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D451, D541, T39；被引用：NFC-5d63a48694a89956, NFC-5dbfe141bae8b4d2, NFC-afafff54af9ea43e, NFC-b9ec817d61ae13f8
-- [Before apply performs any producer, validator, output, cache, or recovery write, the unified production validator comple](../../../docs/architecture/incremental-execution.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-139020b88d33626b / Before apply performs any producer, validator, output, cache, or recovery write, the unified production validator comple
-  - 来源：`docs/architecture/incremental-execution.md`
-  - 依赖：—；被引用：—
-- [Behavior change is not proof of a specific internal cognitive mechanism.](../../../docs/architecture/adaptive-relational-network.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-12c786c7ae9031aa / Behavior change is not proof of a specific internal cognitive mechanism.
-  - 来源：`docs/architecture/adaptive-relational-network.md`
   - 依赖：—；被引用：—

@@ -2,7 +2,7 @@
   "schema_version": "formal-task-lifecycle-r1",
   "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
   "authority": "FORMAL_TASK_LIFECYCLE",
-  "current_task_id": "IGNITION-20260828-147",
+  "current_task_id": "IGNITION-20260829-148",
   "obligation_registry": {
     "authority": "OPEN_OBLIGATION_REGISTRY",
     "path": "ignition/data/operations/open-obligation-registry-r1.json",
@@ -11,6 +11,24 @@
     "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
   },
   "tasks": [
+    {
+      "task_id": "IGNITION-20260829-148",
+      "execution_status": "IN_PROGRESS",
+      "terminal": false,
+      "scope_complete": false,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task148 is executing the bounded repository-local AI-first Ignition Operating Method R1, independent method identity, Current propagation closure and adversarial regression; terminality requires Steps 13-14 and the separate Draft/publication evidence gates.",
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/148/execution-contract-r1.json",
+        "ignition/data/operations/iterations/148/step01-remote-truth-audit.json",
+        "ignition/data/operations/iterations/148/step11-interface-surface-sync.json",
+        "ignition/data/operations/iterations/148/current-state-sync-receipt.json"
+      ],
+      "claim_ceiling": "Task148 repository-local Operating Method, capability registry, interface, deterministic projection and validation evidence only; the method remains a Current candidate on Draft until accepted, merged and synchronized, while no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+    },
     {
       "task_id": "IGNITION-20260828-147",
       "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",

@@ -4,7 +4,7 @@
   "title": "Ignition deterministic Current Surface snapshot",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "contract_id", "source_policy", "generated_from_source_digest", "identity", "current_method_version", "current_task", "task_identity", "iteration_identity", "latest_architecture_changing_task", "map", "engineering_status", "task_lineage", "formal_task_lifecycle", "open_obligations", "release_lifecycle", "active_architecture_overlays", "live_external_ceiling", "live_state_dimensions", "live_attempt_projection", "architecture_counts", "claim_ceiling"],
+  "required": ["schema_version", "contract_id", "source_policy", "generated_from_source_digest", "identity", "current_method_version", "current_operating_method", "current_task", "task_identity", "iteration_identity", "latest_architecture_changing_task", "map", "engineering_status", "task_lineage", "formal_task_lifecycle", "open_obligations", "release_lifecycle", "active_architecture_overlays", "live_external_ceiling", "live_state_dimensions", "live_attempt_projection", "architecture_counts", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "current-snapshot-r1"},
     "contract_id": {"const": "CURRENT_SURFACE_NO_SPLIT_BRAIN_INVARIANT"},
@@ -12,6 +12,7 @@
     "generated_from_source_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
     "identity": {"$ref": "#/$defs/identity"},
     "current_method_version": {"type": "string", "minLength": 1},
+    "current_operating_method": {"$ref": "#/$defs/operatingMethod"},
     "current_task": {"$ref": "#/$defs/task"},
     "task_identity": {"$ref": "#/$defs/taskIdentity"},
     "iteration_identity": {"$ref": "#/$defs/iterationIdentity"},
@@ -31,6 +32,7 @@
   },
   "$defs": {
     "identity": {"type": "object", "additionalProperties": false, "required": ["epoch", "system_role", "driver_role", "external_executor_role", "reference_executor_role"], "properties": {"epoch": {"type": "string", "minLength": 1}, "system_role": {"type": "string", "minLength": 1}, "driver_role": {"type": "string", "minLength": 1}, "external_executor_role": {"type": "string", "minLength": 1}, "reference_executor_role": {"type": "string", "minLength": 1}}},
+    "operatingMethod": {"type": "object", "additionalProperties": false, "required": ["identity", "version", "status", "source_path"], "properties": {"identity": {"const": "IGNITION_OPERATING_METHOD_R1"}, "version": {"const": "1.0.0"}, "status": {"const": "CURRENT_CANDIDATE_ON_DRAFT"}, "source_path": {"const": "ignition/OPERATING-METHOD.md"}}},
     "task": {"type": "object", "additionalProperties": false, "required": ["task_id", "scope", "execution_status", "terminal", "identity_impact"], "properties": {"task_id": {"type": "string", "pattern": "^IGNITION-[0-9A-Z-]+$"}, "scope": {"type": "string", "minLength": 1}, "execution_status": {"type": "string", "minLength": 1}, "terminal": {"type": "boolean"}, "identity_impact": {"type": "string", "minLength": 1}}},
     "map": {"type": "object", "additionalProperties": false, "required": ["current_version", "historical_versions", "source_path", "projection_status"], "properties": {"current_version": {"type": "string", "minLength": 1}, "historical_versions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}, "source_path": {"type": "string", "minLength": 1}, "projection_status": {"type": "string", "minLength": 1}}},
     "status": {"type": "object", "additionalProperties": false, "required": ["current_state_status", "epistemically_accepted"], "properties": {"current_state_status": {"type": "string", "minLength": 1}, "epistemically_accepted": {"const": 0}}},

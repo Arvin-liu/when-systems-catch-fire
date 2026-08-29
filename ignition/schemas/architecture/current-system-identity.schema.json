@@ -19,6 +19,7 @@
     "current_architecture_identity",
     "current_map",
     "current_method",
+    "current_operating_method",
     "current_facts_projection",
     "current_task_lineage",
     "derived_metrics",
@@ -53,6 +54,7 @@
     "current_architecture_identity": {"$ref": "#/$defs/identity"},
     "current_map": {"$ref": "#/$defs/mapRef"},
     "current_method": {"$ref": "#/$defs/methodRef"},
+    "current_operating_method": {"$ref": "#/$defs/operatingMethodRef"},
     "current_facts_projection": {"$ref": "#/$defs/factsProjection"},
     "current_task_lineage": {"$ref": "#/$defs/taskLineageRef"},
     "derived_metrics": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/metric"}},
@@ -97,6 +99,17 @@
       "additionalProperties": false,
       "required": ["source_path", "required_marker", "status"],
       "properties": {"source_path": {"$ref": "#/$defs/nonblank"}, "required_marker": {"$ref": "#/$defs/nonblank"}, "status": {"const": "Current"}}
+    },
+    "operatingMethodRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_path", "required_marker", "identity_marker", "status"],
+      "properties": {
+        "source_path": {"const": "ignition/OPERATING-METHOD.md"},
+        "required_marker": {"const": "Candidate: `1.0.0`"},
+        "identity_marker": {"const": "Identity: `IGNITION_OPERATING_METHOD_R1`"},
+        "status": {"const": "CURRENT_CANDIDATE_ON_DRAFT"}
+      }
     },
     "factsProjection": {
       "type": "object",

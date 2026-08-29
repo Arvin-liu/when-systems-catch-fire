@@ -14,6 +14,8 @@
     "identity_impact": {"enum": ["NONE", "PRESENTATION_ONLY", "ARCHITECTURE_CHANGED"]},
     "expected_task_branch": {"$ref": "#/$defs/nonblank"},
     "expected_receipt_branch": {"$ref": "#/$defs/nonblank"},
+    "draft_pr_only": {"const": true},
+    "owner_authorization_required_for_ready_merge_or_close": {"const": true},
     "required_release_ref": {"const": "refs/heads/main"},
     "no_owner_intermediate": {"const": true},
     "identity_expectations": {"$ref": "#/$defs/identityExpectations"},
@@ -30,7 +32,8 @@
         "repository": {"const": "Arvin-liu/1111"},
         "ref": {"const": "origin/relay/current"},
         "commit": {"$ref": "#/$defs/sha"},
-        "command_path": {"type": "string", "pattern": "^agent-commands/IGNITION-[0-9]{8}-[0-9]{3}-.+\\.md$"}
+        "command_path": {"type": "string", "pattern": "^agent-commands/IGNITION-[0-9]{8}-[0-9]{3}-.+\\.md$"},
+        "command_record_commit": {"$ref": "#/$defs/sha"}
       }
     },
     "formalBaseline": {

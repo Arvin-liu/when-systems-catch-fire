@@ -2,10 +2,10 @@
   "schema_version": "current-task-lineage-status-r1",
   "contract_id": "CURRENT_TASK_LINEAGE_STATUS",
   "current_task": {
-    "task_id": "IGNITION-20260828-147",
-    "scope": "Formal task IGNITION-20260828-147 Current advancement",
-    "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
-    "terminal": true,
+    "task_id": "IGNITION-20260829-148",
+    "scope": "Formal task IGNITION-20260829-148 Current advancement",
+    "execution_status": "IN_PROGRESS",
+    "terminal": false,
     "identity_impact": "PRESENTATION_ONLY"
   },
   "current_state": {
@@ -93,12 +93,12 @@
   "claim_ceiling": "Canonical repository-local task lineage and status semantics only; this record does not grant authority, prove external truth, establish production readiness, or set epistemic acceptance.",
   "task_identity": {
     "schema_version": "task-identity-state-r1",
-    "current_formal_task": "IGNITION-20260828-147",
+    "current_formal_task": "IGNITION-20260829-148",
     "latest_architecture_changing_task": "IGNITION-20260827-142",
-    "release_candidate_task": "IGNITION-20260828-147",
-    "publication_witness_task": "IGNITION-20260828-147",
-    "previous_canonical_current_task": "IGNITION-20260828-146",
-    "previous_formal_task": "IGNITION-20260828-146",
+    "release_candidate_task": "IGNITION-20260829-148",
+    "publication_witness_task": "IGNITION-20260829-148",
+    "previous_canonical_current_task": "IGNITION-20260828-147",
+    "previous_formal_task": "IGNITION-20260828-147",
     "historical_lineage": [
       {
         "predecessor_task_id": "IGNITION-20260821-129",
@@ -297,15 +297,27 @@
         "successor_task_id": "IGNITION-20260828-147",
         "relation": "FORMAL_TASK_SUCCESSOR",
         "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260828-147",
+        "successor_task_id": "IGNITION-20260829-148",
+        "relation": "CANONICAL_SOURCE_ADVANCEMENT",
+        "status": "CURRENT_ADVANCEMENT"
+      },
+      {
+        "predecessor_task_id": "IGNITION-20260828-147",
+        "successor_task_id": "IGNITION-20260829-148",
+        "relation": "FORMAL_TASK_SUCCESSOR",
+        "status": "CURRENT_ADVANCEMENT"
       }
     ],
     "advancement": {
-      "from_task_id": "IGNITION-20260828-146",
-      "to_task_id": "IGNITION-20260828-147",
-      "transition_reason": "IGNITION-20260828-147 advances canonical Current from terminal IGNITION-20260828-146 while preserving the prior task as historical provenance and keeping the formal task separate from the latest architecture-changing task.",
-      "prior_source_sha256": "1eaec068818445ed90b0137c6c45719e1e3f49b9a2223e76e69b2e445deec8c6",
-      "execution_contract_path": "ignition/data/operations/iterations/147/execution-contract-r1.json",
-      "idempotency_key": "IGNITION-20260828-147"
+      "from_task_id": "IGNITION-20260828-147",
+      "to_task_id": "IGNITION-20260829-148",
+      "transition_reason": "IGNITION-20260829-148 advances canonical Current from terminal IGNITION-20260828-147 while preserving the prior task as historical provenance and keeping the formal task separate from the latest architecture-changing task.",
+      "prior_source_sha256": "58a01efdef5e969fd4be64f75e0cdc05b7d93a086fe512ebfdba1613610f6649",
+      "execution_contract_path": "ignition/data/operations/iterations/148/execution-contract-r1.json",
+      "idempotency_key": "IGNITION-20260829-148"
     },
     "claim_ceiling": "Canonical repository-local task advancement only; this record does not grant authority, prove external truth, establish production readiness or set epistemic acceptance."
   }

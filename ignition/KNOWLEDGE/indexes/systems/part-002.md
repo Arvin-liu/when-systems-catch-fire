@@ -6,6 +6,31 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M21 / data/external-research/088-external-source-atlas-medium.jsonl / M21 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M22 / data/external-research/088-external-source-atlas-medium.jsonl / M22 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M23 / data/external-research/088-external-source-atlas-medium.jsonl / M23 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M24 / data/external-research/088-external-source-atlas-medium.jsonl / M24 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M25 / data/external-research/088-external-source-atlas-medium.jsonl / M25 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M26 / data/external-research/088-external-source-atlas-medium.jsonl / M26 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -753,6 +778,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d058d620b72de09e / Foundation: remains authoritative for object status, evidence, downgrade, and claim ceiling.
   - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
+  - 依赖：—；被引用：—
+- [Freeze object provenance and split source facts, claims, interpretations, mechanisms and questions.](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bd0abe015da00451 / Freeze object provenance and split source facts, claims, interpretations, mechanisms and questions.
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
   - 依赖：—；被引用：—
 - [From Prediction to Prescription: Machine Learning and Causal Inference for the Heterogeneous Treatment Effect](../../../data/external-research/088-external-source-atlas-v2.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-74c835069d67893b / Object D413 defines a mechanism_model within the point-fire framework. Core: 中文：M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D301, D413；被引用：—
-- [Object D414 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I=\(1+m\)/2在有限n时有O\(1/n\)修正。有限系统比平均场预测更集中](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f68460fd6c4659fb / Object D414 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I=\(1+m\)/2在有限n时有O\(1/n\)修正。有限系统比平均场预测更集中
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D331, D414；被引用：—
-- [Object D415 defines a mechanism_model within the point-fire framework. Core: 中文：M4的β_eff = 1/2 - ε\(T\)，ε∝\(kT/Φ_min\)²。大系统临](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e3bbdc062f04bbad / Object D415 defines a mechanism_model within the point-fire framework. Core: 中文：M4的β_eff = 1/2 - ε\(T\)，ε∝\(kT/Φ_min\)²。大系统临
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D415；被引用：—
-- [Object D416 defines a mechanism_model within the point-fire framework. Core: 中文：—降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-28ac63d8a9fa536c / Object D416 defines a mechanism_model within the point-fire framework. Core: 中文：—降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D416；被引用：—
-- [Object D417 defines a mechanism_model within the point-fire framework. Core: 中文：M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e70ab8fe7a8f1c48 / Object D417 defines a mechanism_model within the point-fire framework. Core: 中文：M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D285, D417；被引用：—
-- [Object D418 defines a mechanism_model within the point-fire framework. Core: 中文：M7的有效β = min\(β_intended, β_max\)，β_max∝√n](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4e738cfb9f24cf77 / Object D418 defines a mechanism_model within the point-fire framework. Core: 中文：M7的有效β = min\(β_intended, β_max\)，β_max∝√n
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D418；被引用：—
-- [Object D419 defines a mechanism_model within the point-fire framework. Core: 中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D309\]\(docs/zh/func](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5bbe20bc4b728334 / Object D419 defines a mechanism_model within the point-fire framework. Core: 中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D309\]\(docs/zh/func
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D30, D309, D419；被引用：—
