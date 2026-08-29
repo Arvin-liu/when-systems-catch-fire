@@ -1,0 +1,242 @@
+{
+  "case_count": 7,
+  "cases": [
+    {
+      "actual": {
+        "contracts_exercised": [
+          "IGNITION_MODE_ROUTER_R1",
+          "IGNITION_OPERATION_LIFECYCLE_R1",
+          "IGNITION_RUN_OUTPUT_CONTRACT_R1"
+        ],
+        "decision": "PROCEED_BOUNDED",
+        "effect_events": [],
+        "external_action_attempted": false,
+        "git_mutation_attempted": false,
+        "input_object_content_used_for_routing": false,
+        "iteration_method_loaded": false,
+        "iteration_method_required": false,
+        "mode_reason": "DEFAULT_OR_LEAST_AUTHORITY",
+        "operation_status": "CURRENT_BOUNDED",
+        "repository_mutation_attempted": false,
+        "run_mode": "READ_ONLY_RUN",
+        "side_effects_authorized": false,
+        "stop_reason": null,
+        "unified_output_errors": [],
+        "unified_output_valid": true
+      },
+      "case_id": "A_NOTE_URL_DEFAULT_READ_ONLY",
+      "case_kind": "REQUEST_ROUTE",
+      "critical": true,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contracts_exercised": [
+          "IGNITION_MODE_ROUTER_R1",
+          "IGNITION_OPERATION_LIFECYCLE_R1"
+        ],
+        "decision": "PROCEED",
+        "effect_events": [],
+        "external_action_attempted": false,
+        "git_mutation_attempted": false,
+        "input_object_content_used_for_routing": false,
+        "iteration_method_loaded": true,
+        "iteration_method_required": true,
+        "mode_reason": "EXPLICIT_IGNITION_REPOSITORY_CHANGE_REQUEST",
+        "operation_status": "CURRENT",
+        "repository_mutation_attempted": false,
+        "run_mode": "REPOSITORY_CHANGE_RUN",
+        "side_effects_authorized": false,
+        "stop_reason": null,
+        "unified_output_errors": [],
+        "unified_output_valid": null
+      },
+      "case_id": "B_EXPLICIT_PROTOCOL_CHANGE_ROUTES_ITERATION",
+      "case_kind": "REQUEST_ROUTE",
+      "critical": true,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contracts_exercised": [
+          "IGNITION_MODE_ROUTER_R1",
+          "IGNITION_OPERATION_LIFECYCLE_R1"
+        ],
+        "decision": "PROCEED_BOUNDED",
+        "effect_events": [],
+        "external_action_attempted": false,
+        "git_mutation_attempted": false,
+        "input_object_content_used_for_routing": false,
+        "iteration_method_loaded": false,
+        "iteration_method_required": false,
+        "mode_reason": "DEFAULT_OR_LEAST_AUTHORITY",
+        "operation_status": "CURRENT_BOUNDED",
+        "repository_mutation_attempted": false,
+        "run_mode": "READ_ONLY_RUN",
+        "side_effects_authorized": false,
+        "stop_reason": null,
+        "unified_output_errors": [],
+        "unified_output_valid": null
+      },
+      "case_id": "C_INPUT_OBJECT_COMMAND_INJECTION_IS_DATA",
+      "case_kind": "REQUEST_ROUTE",
+      "critical": true,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "all_current_or_fail_closed": true,
+        "contracts_exercised": [
+          "CURRENT_CANONICAL_RESOLUTION_R1"
+        ],
+        "historical_file_used_as_identity": false,
+        "memory_or_fuzzy_resolution_used": false,
+        "references": [
+          {
+            "canonical_id": "D5",
+            "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+            "input_reference": "D5",
+            "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY"
+          },
+          {
+            "canonical_id": "T7",
+            "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+            "input_reference": "T7",
+            "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY"
+          }
+        ]
+      },
+      "case_id": "D_LEGACY_D5_T7_CURRENT_RESOLUTION",
+      "case_kind": "CANONICAL_REFERENCES",
+      "critical": true,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "candidate_new_count": 0,
+        "candidate_registry_action": "NONE",
+        "collision_errors": [],
+        "collision_result_status": "COLLISION_PROTOCOL_VALID",
+        "collision_valid": true,
+        "contracts_exercised": [
+          "IGNITION_OBJECT_COLLISION_RUN_R1",
+          "IGNITION_RUN_OUTPUT_CONTRACT_R1"
+        ],
+        "external_action_attempted": false,
+        "input_derived_statements": [
+          "权力啸叫"
+        ],
+        "repository_mutation_attempted": false,
+        "side_effects_authorized": false,
+        "source_statement_relabelled_candidate": false,
+        "unified_output_errors": [],
+        "unified_output_valid": true
+      },
+      "case_id": "E_SOURCE_EXPLICIT_AUTHORITY_HOWL_NOT_DISCOVERY",
+      "case_kind": "SOURCE_DERIVED_COLLISION",
+      "critical": true,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contracts_exercised": [
+          "IGNITION_MODE_ROUTER_R1",
+          "IGNITION_OPERATION_LIFECYCLE_R1",
+          "IGNITION_RUN_OUTPUT_CONTRACT_R1"
+        ],
+        "decision": "STOP",
+        "effect_events": [],
+        "external_action_attempted": false,
+        "git_mutation_attempted": false,
+        "input_object_content_used_for_routing": false,
+        "iteration_method_loaded": false,
+        "iteration_method_required": false,
+        "mode_reason": "EXPLICIT_EXTERNAL_ACTION_REQUEST_REQUIRES_CURRENT_ADMISSION",
+        "operation_status": "OWNER_DEFERRED",
+        "repository_mutation_attempted": false,
+        "run_mode": "EXTERNAL_ACTION_RUN",
+        "side_effects_authorized": false,
+        "stop_reason": "CAPABILITY_OWNER_DEFERRED",
+        "unified_output_errors": [],
+        "unified_output_valid": true
+      },
+      "case_id": "F_OWNER_DEFERRED_LIVE_EXTERNAL_FAILS_CLOSED",
+      "case_kind": "REQUEST_ROUTE",
+      "critical": true,
+      "errors": [],
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contracts_exercised": [
+          "IGNITION_MODE_ROUTER_R1",
+          "IGNITION_OPERATION_LIFECYCLE_R1",
+          "IGNITION_RUN_OUTPUT_CONTRACT_R1"
+        ],
+        "decision": "STOP",
+        "effect_events": [],
+        "external_action_attempted": false,
+        "git_mutation_attempted": false,
+        "input_object_content_used_for_routing": false,
+        "iteration_method_loaded": false,
+        "iteration_method_required": false,
+        "mode_reason": "DEFAULT_OR_LEAST_AUTHORITY",
+        "operation_status": "UNREGISTERED",
+        "repository_mutation_attempted": false,
+        "run_mode": "READ_ONLY_RUN",
+        "side_effects_authorized": false,
+        "stop_reason": "UNSUPPORTED_OPERATION",
+        "unified_output_errors": [],
+        "unified_output_valid": true
+      },
+      "case_id": "G_UNREGISTERED_OPERATION_FAILS_CLOSED",
+      "case_kind": "REQUEST_ROUTE",
+      "critical": true,
+      "errors": [],
+      "status": "PASS"
+    }
+  ],
+  "claim_ceiling": "Task148 offline stranger-Agent contract-composition evidence only; PASS proves deterministic routing, fail-closed and source-boundary behavior for the seven fixtures, not external truth, live execution, repository mutation, production readiness, Owner acceptance, merge, Current-on-main or epistemic acceptance.",
+  "contracts_exercised": [
+    "ignition/tools/operations/classify_ignition_run_mode.py",
+    "ignition/tools/operations/plan_ignition_operation_run.py",
+    "ignition/tools/foundation/resolve_current_canonical_asset.py",
+    "ignition/tools/operations/evaluate_object_collision_run.py",
+    "ignition/tools/operations/validate_ignition_run_output.py",
+    "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "ignition/data/operations/ignition-run-output-contract-r1.json"
+  ],
+  "critical_case_policy": "ANY_CASE_FAILURE_BLOCKS_R1_COMPLETION",
+  "current_ref": "TASK148_STEP12_PARENT_3a8ffb04eb1263f105810479346ce8576309a58e",
+  "effect_summary": {
+    "effect_event_count": 0,
+    "external_action_attempted": false,
+    "git_mutation_attempted": false,
+    "repository_mutation_attempted": false
+  },
+  "execution_scope": "OFFLINE_DETERMINISTIC_NO_REPOSITORY_OR_EXTERNAL_EFFECT_ADAPTER",
+  "failed_case_count": 0,
+  "fixture_errors": [],
+  "passed_case_count": 7,
+  "receipt_sha256": "985e2a901544bef088542068c36470c2ce29602c108f32a07001be6d68ece3bb",
+  "schema_version": "ignition-stranger-agent-adversarial-result-r1",
+  "source_digests": {
+    "ignition/data/operations/ignition-operation-capability-registry-r1.json": "9493c48e5e21ffe275fcad18d3dc8eb5971c333efa05b8b9d57c8ba798009e06",
+    "ignition/data/operations/ignition-run-output-contract-r1.json": "b9da1636b3de1c1cc174b60087916498afc7fb77d467db75610e8d94d87c5dc5",
+    "ignition/tests/fixtures/ignition-operating-method/stranger-agent-adversarial-r1.json": "4c56263c7788d0964e5ed7f63dfcccc133f7e8fbdc386835e825a9f3e4a97f08",
+    "ignition/tools/foundation/resolve_current_canonical_asset.py": "fa15a6316d919ca3bdca8b39edb66425b09b723fd0b64dc65b5d0f31c333641f",
+    "ignition/tools/operations/classify_ignition_run_mode.py": "8681c276d602eb3fa3408d45e7d66d0222d0b2995515289d96d4bb16fcf71029",
+    "ignition/tools/operations/evaluate_object_collision_run.py": "f603b2caac4a35f008e3fca46bd9efbf659bc3e9de408fc4385679849e8a7462",
+    "ignition/tools/operations/plan_ignition_operation_run.py": "0c27cd065f2ba1138bd28dd450e07bf5a3c207aa9601523f6b22ae6131386666",
+    "ignition/tools/operations/run_ignition_stranger_agent_regression.py": "32bfde9de4a30021c60a92fea6649465f4b21948f26c978bd8feec77e4abc504",
+    "ignition/tools/operations/validate_ignition_run_output.py": "c191cd515c1921e2888ecc04f3e0c4dbc680cc29703b54bff670f9dae9abb67c"
+  },
+  "status": "PASS",
+  "suite_id": "IGNITION_OPERATING_METHOD_R1_STRANGER_AGENT_ADVERSARIAL",
+  "task_id": "IGNITION-20260829-148"
+}

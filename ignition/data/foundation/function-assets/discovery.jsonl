@@ -15801,8 +15801,9 @@
 {"first_line":22,"last_line":22,"mention_count":1,"path":"data/foundation/work-queues/082-escalation-routing.jsonl","role":"REFERENCE","stable_id":"D5"}
 {"first_line":196,"last_line":439,"mention_count":2,"path":"data/math-foundation/function-provenance-ledger.csv","role":"REFERENCE","stable_id":"D5"}
 {"first_line":195,"last_line":438,"mention_count":2,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"D5"}
-{"first_line":6,"last_line":6,"mention_count":1,"path":"data/operations/iterations/148/progress.jsonl","role":"REFERENCE","stable_id":"D5"}
+{"first_line":6,"last_line":13,"mention_count":2,"path":"data/operations/iterations/148/progress.jsonl","role":"REFERENCE","stable_id":"D5"}
 {"first_line":19,"last_line":19,"mention_count":1,"path":"data/operations/iterations/148/step06-current-canonical-resolution.json","role":"REFERENCE","stable_id":"D5"}
+{"first_line":99,"last_line":101,"mention_count":2,"path":"data/operations/iterations/148/step13-stranger-agent-adversarial-regression.json","role":"REFERENCE","stable_id":"D5"}
 {"first_line":77,"last_line":77,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"D5"}
 {"first_line":4,"last_line":45,"mention_count":17,"path":"统一函数总表/0054-D5-偏好伪造崩塌.md","role":"DEFINITION","stable_id":"D5"}
 {"first_line":19,"last_line":57,"mention_count":3,"path":"统一函数总表/0282-D246-自我模型-ε_aware连接定理.md","role":"REFERENCE","stable_id":"D5"}
@@ -28602,8 +28603,9 @@
 {"first_line":20,"last_line":20,"mention_count":1,"path":"data/foundation/work-queues/080-semantic-review-queue.jsonl","role":"REFERENCE","stable_id":"T7"}
 {"first_line":966,"last_line":966,"mention_count":1,"path":"data/math-foundation/function-provenance-ledger.csv","role":"REFERENCE","stable_id":"T7"}
 {"first_line":641,"last_line":641,"mention_count":1,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"T7"}
-{"first_line":6,"last_line":6,"mention_count":1,"path":"data/operations/iterations/148/progress.jsonl","role":"REFERENCE","stable_id":"T7"}
+{"first_line":6,"last_line":13,"mention_count":2,"path":"data/operations/iterations/148/progress.jsonl","role":"REFERENCE","stable_id":"T7"}
 {"first_line":19,"last_line":19,"mention_count":1,"path":"data/operations/iterations/148/step06-current-canonical-resolution.json","role":"REFERENCE","stable_id":"T7"}
+{"first_line":105,"last_line":107,"mention_count":2,"path":"data/operations/iterations/148/step13-stranger-agent-adversarial-regression.json","role":"REFERENCE","stable_id":"T7"}
 {"first_line":83,"last_line":83,"mention_count":1,"path":"outputs/getbrain/v0.2-function-dependency-graph-20260706.md","role":"REFERENCE","stable_id":"T7"}
 {"first_line":16,"last_line":16,"mention_count":1,"path":"reports/foundation-architecture/080-full-semantic-adjudication-report-20260713.md","role":"REFERENCE","stable_id":"T7"}
 {"first_line":1323,"last_line":1335,"mention_count":2,"path":"reports/math-foundation/pilot-formal-audit-20260712.md","role":"REFERENCE","stable_id":"T7"}

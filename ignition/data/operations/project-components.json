@@ -557,6 +557,7 @@
         "tools/operations/classify_ignition_run_mode.py",
         "tools/operations/evaluate_object_collision_run.py",
         "tools/operations/plan_ignition_operation_run.py",
+        "tools/operations/run_ignition_stranger_agent_regression.py",
         "tools/operations/validate_ignition_interface_sync.py",
         "tools/operations/validate_ignition_operation_playbooks.py",
         "tools/operations/validate_ignition_run_output.py",
@@ -572,6 +573,7 @@
         "tests/test_ignition_operation_lifecycle.py",
         "tests/test_ignition_operation_playbooks.py",
         "tests/test_ignition_run_output.py",
+        "tests/test_ignition_stranger_agent_regression.py",
         "docs/operations/ignition-operation-playbooks-r1.md"
       ]
     },
@@ -2102,5 +2104,5 @@
     }
   ],
   "purpose": "Canonical project-component identity, target and lifecycle registry for declared change propagation and system-map projection; it does not establish real-world causality.",
-  "registry_version": "2.5.0"
+  "registry_version": "2.6.0"
 }

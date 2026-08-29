@@ -236,7 +236,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "c20ccb345606cd824feb41642fa7223237394ada16b8efd416f3113b2c0d9275"
+      "sha256": "8ab34e860a9e98679204584d50a8a6e45fa8d0028b777167b2f27d48fb85fef8"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -248,7 +248,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "ff281257ec9751c8df588abb9ecea87d700e938c4e7c58a67c96af99e5a19f34"
+      "sha256": "35e611b5f1e8f4f9e72457b6ba50fe639b956c5eed71ec79f12d69b79660dfc9"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -296,7 +296,7 @@
     },
     {
       "path": "ignition/data/operations/project-components.json",
-      "sha256": "10ec5d038a24b6150d8a21039d8f645979d4293a8cc3d8ace5bc408f492127b6"
+      "sha256": "3d06c8e9755f5c0a0a533b4bda165c23dc22a60ca925ac44fda9e564e2eacabb"
     },
     {
       "path": "ignition/data/operations/steering/current-state-r1.json",
