@@ -37,6 +37,7 @@ Reference / Conformance / Fallback。当前唯一完整系统图为 `0.8.0`，�
 |不知道名称或路径，只想探索|[知识地图](./KNOWLEDGE/MAP.md)|[最新变化](./KNOWLEDGE/WHATS-NEW.md)、[搜索](./KNOWLEDGE/SEARCH.md)|
 |快速读懂一篇长文|[分层阅读](./KNOWLEDGE/READING-LAYERS.md)|对应完整来源、[统一资产卡](./KNOWLEDGE/ASSET-CARDS.md)|
 |判断点火是什么、当前做到哪里|[当前结果](./RESULTS/LATEST.md)|[项目现状](./docs/project-current-state.md)、[架构](./ARCHITECTURE.md)|
+|让点火处理一篇笔记、网页、PDF、代码或其它对象|[点火操作法](./OPERATING-METHOD.md)|[Capability Registry](./data/operations/ignition-operation-capability-registry-r1.json)、[统一输出契约](./data/operations/ignition-run-output-contract-r1.json)|
 |理解 Agent Platform、Federation、Pack、Memory 与 Supervisor|[Agent Platform R2](./docs/architecture/agent-platform-r2.md)|[External Agent Federation R1](./docs/architecture/external-agent-federation-r1.md)、[Runtime](./agent_runtime/README.md)、[四个 Pack](./packs/)、[离线 pilot 简报](./data/agent-runtime/pilots/r2-offline-repository-maintenance/HUMAN-REPORT.md)|
 |查看历史错误怎样修正|[纠正与撤回](./RESULTS/CORRECTIONS.md)|[历史纠正日志](./docs/foundation/historical-correction-log.md)|
 |查看函数、断言资产裁决|[裁决总结](./RESULTS/ADJUDICATION-SUMMARY.md)|[函数深度裁决](./docs/foundation/historical-function-deep-adjudication-20260729.md)、[非函数断言索引](./docs/foundation/nonfunction-claim-adjudication-index.md)|

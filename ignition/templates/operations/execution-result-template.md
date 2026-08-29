@@ -1,6 +1,8 @@
 # Ignition Execution Result Template
 
-Current method contract: `ITERATION.md` 1.3.0; 1.2.0 is Historical. For the Current 1.3.0 contract, report the plan hash, authority identity, cache disposition, rollback/recovery outcome and stable validator error code.
+Eligibility gate: this repository-change result template applies only after `OPERATING-METHOD.md` classified `REPOSITORY_CHANGE_RUN`; ordinary runs use the unified Ignition run output contract.
+
+Repository-change sub-protocol: `ITERATION.md` 1.4.0; 1.3.0 is Historical. Report the plan hash, authority identity, cache disposition, rollback/recovery outcome and stable validator error code.
 
 Status: `<STATUS>`
 

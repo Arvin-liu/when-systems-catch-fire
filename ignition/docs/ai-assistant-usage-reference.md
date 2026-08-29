@@ -1,6 +1,6 @@
 # AI 助手使用参考
 
-版本事实：当前迭代方法为 `1.4.0 Continuous Stage Snapshot Publication`，当前系统图为 `0.6.0`；系统图 `0.5.0`、`0.4.0`、`0.3.0` 与更早版本均为 Historical。Q32I 已独立接受、由 PR #62 普通合并并 Closed；其 execution capability 与 validation capability 必须分离，manual/external 不得调用本地 validator。`docs/generated/recent-stage-results.md` 的“正在炼化”只投影阶段摘要；可见不等于 Accepted、Current、Activated 或能力可用。
+版本事实从 `data/operations/current-snapshot-r1.json` 与 `data/architecture/current-facts.json` 恢复，不在本页复制易漂移的系统图版本。当前 Iteration Method 为 `1.4.0 Continuous Stage Snapshot Publication`；它治理点火如何改变自己。一般用户任务的入口是独立的[点火操作法](../OPERATING-METHOD.md)。阶段摘要可见不等于 Accepted、Current、Activated 或能力可用。
 
 这页给第一次接触点火项目的人使用。你不必先读完整仓库，可以先把下面的提示词复制给自己常用的 AI 助手，让它帮你做第一轮阅读。
 
@@ -19,6 +19,14 @@
 
 这些助手不一定具备相同的浏览能力、地区可用性或回答质量。如果它无法打开 GitHub 链接，必须明确说无法读取，不应只凭项目名称猜测。你可以改用具备联网阅读能力的助手，或把仓库文件内容粘贴给它。
 
+## 直接让点火处理对象
+
+把仓库链接、当前任务和对象一起交给 Agent 即可：
+
+> 请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。
+
+Agent 应先读取 Operating Method 与 machine-readable Capability Registry。仓库链接是方法来源，附件是 `INPUT_OBJECT`；默认 `READ_ONLY_RUN`。只有当前请求明确要求修改点火自身时才进入 `REPOSITORY_CHANGE_RUN` 并调用 Iteration Method；外部动作还必须满足明示授权与 Current admission。
+
 ## 可直接复制的提示词
 
 ```text
@@ -31,6 +39,8 @@ https://github.com/Arvin-liu/when-systems-catch-fire
 
 请优先阅读以下文件：
 README.md
+OPERATING-METHOD.md
+data/operations/ignition-operation-capability-registry-r1.json
 KNOWLEDGE/README.md
 KNOWLEDGE/WHATS-NEW.md
 KNOWLEDGE/MAP.md
@@ -57,7 +67,7 @@ llms.txt
    请把“当前现状”与“永久定位”区分开。
 2. 它由哪些核心部分组成？项目现状、生命共同体价值宪章、Foundation、
    Ψ₀、Function OS、效果推理与机制判断、注意力与分布控制、
-   地图集、MCF、PSD、ARN、点火迭代操作法和现实反馈分别负责什么？
+   地图集、MCF、PSD、ARN、点火操作法、点火迭代操作法和现实反馈分别负责什么？
    请解释 MCF、PSD 与 ARN 怎样分工、连接，以及 ARN 为什么把因果主张
    委托给 MCF。
 3. 它对普通人的工作、学习、生活判断和长期项目有什么实际作用
@@ -88,7 +98,7 @@ llms.txt
 
 这个链接打开的就是项目首页。你可以复制上面的提示词，再把这个链接交给自己常用的 AI。
 
-当前状态与架构直达入口：[项目现状](./project-current-state.md) / [点火迭代操作法](../ITERATION.md) / [MCF](./architecture/multiscale-causal-fabric.md) / [PSD](./architecture/probabilistic-system-dynamics.md) / [ARN](./architecture/adaptive-relational-network.md)。本页是完整的人类 AI 使用指南；根 README 中的提示词是同一份受验证的前门投影，两者不得独立漂移。当前迭代方法把状态改变视为全项目同步传播：实现完成、仓库同步、逐外部表面证明和项目整体完成必须分开报告，局部通过不能替代整体闭环。
+当前使用与状态直达入口：[点火操作法](../OPERATING-METHOD.md) / [Capability Registry](../data/operations/ignition-operation-capability-registry-r1.json) / [项目现状](./project-current-state.md) / [点火迭代操作法](../ITERATION.md) / [MCF](./architecture/multiscale-causal-fabric.md) / [PSD](./architecture/probabilistic-system-dynamics.md) / [ARN](./architecture/adaptive-relational-network.md)。本页是完整的人类 AI 使用指南；根 README 中的最小调用是同一份受验证的前门投影，两者不得独立漂移。Iteration Method 只治理状态改变：实现完成、仓库同步、逐外部表面证明和项目整体完成必须分开报告，局部通过不能替代整体闭环。
 
 普通读者和 AI 不必猜文件路径：先从[统一知识入口](../KNOWLEDGE/README.md)选择最新变化、主题地图、搜索或分层阅读。搜索索引覆盖完整函数/断言 registry，但机器命中、自动摘要和主题标签都只是导航；必须继续核对资产卡的状态、M/E、来源、历史、supersession、依赖和不得推出的结论。
 

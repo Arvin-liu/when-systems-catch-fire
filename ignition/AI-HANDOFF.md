@@ -69,6 +69,8 @@ R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、�
 
 ## 权威链
 
+- 一般用户任务：[OPERATING-METHOD.md](./OPERATING-METHOD.md)；先冻结 Current、判定运行模式，再由 `data/operations/ignition-operation-capability-registry-r1.json` 解析 operation，并按统一输出契约返回结果。
+- 点火自身变更：[ITERATION.md](./ITERATION.md)；它只在当前请求明确要求 repository mutation 且 Operating Method 判定为 `REPOSITORY_CHANGE_RUN` 后作为子协议进入。
 - AI 状态恢复：先读 [STATE-CHANGELOG.md](./STATE-CHANGELOG.md) 的 baseline 与最近 delta，再回到下面的当前状态和对象权威；日志只记录增量，不是第二真相源。
 - 当前状态：docs/project-current-state.md（版本化现状，不是固定定位）
 - 统一知识入口：KNOWLEDGE/README.md；仓库首页：`.github/README.md`；机器配对与 freshness：data/governance/knowledge-experience/manifest.json
@@ -88,7 +90,7 @@ R2 仍不包括 live provider、daemon、multi-Agent 并发、vector memory、�
 
 ## 交接规则
 
-新 Agent 必须先读取 `docs/project-current-state.md` 与 `ITERATION.md`，再重新核验远端、分支、HEAD、开放 PR 和验证结果，不得把聊天记忆当权威。统计必须写出去重键、范围、单位和生成脚本。缺字段、缺来源、不可形式化、反模型和真实 counterexample 分别记录。
+新 Agent 先读取 `docs/project-current-state.md` 与 `OPERATING-METHOD.md`，把仓库链接解释为操作法来源、把附件解释为 `INPUT_OBJECT`，并从 capability registry 建立最小 Current 读取计划。一般任务保持 `READ_ONLY_RUN`；只有当前请求明确要求修改点火自身时才继续读取 `ITERATION.md`，重新核验远端、分支、HEAD、开放 PR 和验证结果。不得把聊天记忆或 Historical 任务当 Current 权威。统计必须写出去重键、范围、单位和生成脚本。缺字段、缺来源、不可形式化、反模型和真实 counterexample 分别记录。
 
 新增或修改知识资产时，必须把 Claim Delta/impact/lineage 与任务 102 的 What's New、主题、资产卡、分层阅读、别名/supersession、来源、依赖和反向依赖一起重算。`KNOWLEDGE/` 是生成的人类探索层，不是新的真值权威；机器-only 也不等于删除或否定。
 

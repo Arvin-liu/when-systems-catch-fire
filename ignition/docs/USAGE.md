@@ -2,7 +2,13 @@
 
 ## 1. 从哪里进入
 
-先从[统一知识入口](../KNOWLEDGE/README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 [仓库首页](../../.github/README.md)、[ARCHITECTURE.md](../ARCHITECTURE.md) 与 [FOUNDATION.md](../FOUNDATION.md)。当前机器状态见 [project-state.json](../data/foundation/project-state.json)。
+如果目标是让点火处理一篇笔记、网页、PDF、代码或其它用户对象，先读[点火操作法](../OPERATING-METHOD.md)，再由[机器可读 Capability Registry](../data/operations/ignition-operation-capability-registry-r1.json)选择状态和权限都允许的 operation。仓库链接默认只是操作法来源，附件默认是 `INPUT_OBJECT`；没有明确升级依据时使用 `READ_ONLY_RUN`，不创建 branch、worktree、commit 或 PR。只有当前请求明确要求修改点火自身时，才进入 `REPOSITORY_CHANGE_RUN` 并调用[点火迭代操作法](../ITERATION.md)；外部动作还必须有明示授权和 Current admission。
+
+最小调用可以直接写：
+
+> 请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。
+
+如果目标只是阅读或探索仓库，先从[统一知识入口](../KNOWLEDGE/README.md)按最近变化、主题、搜索或阅读时长找到对象，再读 [仓库首页](../../.github/README.md)、[ARCHITECTURE.md](../ARCHITECTURE.md) 与 [FOUNDATION.md](../FOUNDATION.md)。当前机器状态见 [project-state.json](../data/foundation/project-state.json)。
 
 不知道术语或编号时，使用[知识地图](../KNOWLEDGE/MAP.md)；知道旧称或自然语言词时，使用[搜索与交叉引用](../KNOWLEDGE/SEARCH.md)；要快速判断长文是否值得继续读，使用[分层阅读](../KNOWLEDGE/READING-LAYERS.md)。摘要和搜索只用于导航，最终判断仍回到完整来源与 canonical registry。
 

@@ -1,5 +1,5 @@
 {
-  "registry_version": "1.6.0",
+  "registry_version": "1.7.0",
   "purpose": "Canonical synchronization topology and obligations only; not a substantive project truth store.",
   "surfaces": [
     {
@@ -510,6 +510,40 @@
       ]
     },
     {
+      "surface_id": "method.operating",
+      "surface_type": "repository_source",
+      "locator": "OPERATING-METHOD.md",
+      "roles": [
+        "human_guide",
+        "ai_cold_start",
+        "agent_handoff",
+        "machine_state"
+      ],
+      "authority": "canonical",
+      "derived_from": [],
+      "trigger_dimensions": [
+        "capability",
+        "usage",
+        "handoff",
+        "operations_method"
+      ],
+      "trigger_classifications": [
+        "CAPABILITY_ADDITION",
+        "INTERFACE_CHANGE",
+        "OPERATIONS_METHOD"
+      ],
+      "allowed_decisions": [
+        "CHANGE",
+        "NO_CHANGE_WITH_REASON"
+      ],
+      "validation_mode": "repository_schema_and_semantic_validation",
+      "blocks": [
+        "ready",
+        "current",
+        "closed"
+      ]
+    },
+    {
       "surface_id": "method.iteration",
       "surface_type": "repository_source",
       "locator": "ITERATION.md",
@@ -518,7 +552,9 @@
         "agent_handoff"
       ],
       "authority": "canonical",
-      "derived_from": [],
+      "derived_from": [
+        "method.operating"
+      ],
       "trigger_dimensions": [
         "operations_method"
       ],

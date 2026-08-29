@@ -21,6 +21,8 @@
 
 - [README](../.github/README.md)：可直接看到当前结论、纠正、开放问题和主要入口。
 - [项目现状](./docs/project-current-state.md)：当前仓库能力、边界与未完成义务。
+- [点火操作法](./OPERATING-METHOD.md)：一般用户/Agent 怎样判定模式、选择 Current operation、处理输入对象并返回统一结果。
+- [机器可读 Capability Registry](./data/operations/ignition-operation-capability-registry-r1.json)：operation 状态、输入、输出、权限、所需权威与 validator 的 canonical 清单。
 - [点火迭代操作法](./ITERATION.md)：状态变化、传播、验证、审查、合并与回执规则。
 - [现行架构](./ARCHITECTURE.md) 与 [Foundation](./FOUNDATION.md)。
 - [生命共同体价值宪章](./docs/governance/life-community-value-charter.md)：规范性边界。

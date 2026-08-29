@@ -304,7 +304,9 @@ guard 的 `REPRODUCED_IMPLEMENTATION_DEFECT`。三项历史案例仍可检索，
 
 ## 当前操作法
 
-Iteration Method `1.4.0` 仍是当前仓库操作法。任务 101 增加机器/人类双输出；任务 102 进一步要求有意义的知识变化声明人类目的地、What's New、主题、资产卡、分层阅读（适用时）、别名/supersession、来源和双向依赖。缺失、断链、断锚、过期、隐藏、无来源摘要或回弹时，CI 失败。
+[`OPERATING-METHOD.md`](../OPERATING-METHOD.md) 是外部用户和 Agent **使用点火完成任务**的规范入口：默认 `READ_ONLY_RUN`，从 Current capability registry 解析 operation，并把仓库链接与输入对象分别约束为操作法来源和 `INPUT_OBJECT`。Iteration Method `1.4.0` 是独立的**点火如何改变自己**协议；只有当前请求明确要求修改点火自身时，Operating Method 才把任务路由为 `REPOSITORY_CHANGE_RUN` 并调用它。二者不得合并，也不得用 Iteration Method 代替一般任务入口。
+
+任务 101 增加机器/人类双输出；任务 102 进一步要求有意义的知识变化声明人类目的地、What's New、主题、资产卡、分层阅读（适用时）、别名/supersession、来源和双向依赖。缺失、断链、断锚、过期、隐藏、无来源摘要或回弹时，CI 失败。
 
 候选、Ready、Accepted、Merged、Current 和 Closed 仍是不同状态。普通合并、main 验证、远端 CI 与全新克隆复验都必须分别记录；仓库没有需要继续维护的独立阅读站生产门。
 
