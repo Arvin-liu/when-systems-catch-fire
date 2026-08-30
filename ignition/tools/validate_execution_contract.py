@@ -72,8 +72,21 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("previous canonical Current task must match canonical task identity")
     if expectations.get("previous_formal_task") != identity.get("previous_formal_task"):
         errors.append("previous formal task must match canonical task identity")
-    baseline_audit = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}/step00-baseline-audit.json"
-    if baseline_audit.is_file():
+    iteration_root = ROOT / f"data/operations/iterations/{CURRENT_ORDINAL}"
+    baseline_audit = next(
+        (
+            candidate
+            for candidate in (
+                iteration_root / "step00-baseline-audit.json",
+                iteration_root / "step01-remote-truth-audit.json",
+            )
+            if candidate.is_file()
+        ),
+        None,
+    )
+    if baseline_audit is None:
+        errors.append("current-task verified baseline audit is missing")
+    else:
         audit = load_json(baseline_audit)
         # Task137 used a ``baseline`` object; Task138 records the same
         # observation under ``formal_repository``. Keep the binding strict
@@ -83,6 +96,7 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
             or audit.get("formal_repository")
             or audit.get("formal_baseline")
             or audit.get("task144_baseline")
+            or audit.get("formal_remote_observation")
             or {}
         )
         expected_baseline = (
@@ -92,8 +106,12 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
             or baseline.get("formal_head_sha")
             or baseline.get("formal_origin_main_expected")
             or baseline.get("formal_baseline_sha")
+            or baseline.get("candidate_base")
+            or baseline.get("observed_sha")
         )
-        if expected_baseline and contract.get("formal_baseline", {}).get("sha") != expected_baseline:
+        if not expected_baseline:
+            errors.append("verified current-task baseline SHA is missing from the audit")
+        elif contract.get("formal_baseline", {}).get("sha") != expected_baseline:
             errors.append("formal baseline must remain the verified current-task starting main SHA")
     current_impact = lineage.get("current_task", {}).get("identity_impact")
     if current_impact and contract.get("identity_impact") != current_impact:
