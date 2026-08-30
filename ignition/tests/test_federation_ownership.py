@@ -28,7 +28,13 @@ class FederationOwnershipTests(unittest.TestCase):
     def test_protected_new_runtime_path_fails_closed_without_exception(self) -> None:
         with self.assertRaises(OwnershipValidationError):
             validate_contracts(changed_paths=["agent_runtime/browser_driver.py"])
+        with self.assertRaises(OwnershipValidationError):
+            validate_contracts(changed_paths=["agent_runtime/model.py"])
         result = validate_contracts(changed_paths=["agent_federation/adapters/openclaw.py"])
+        self.assertEqual(result["protected_path_violations"], 0)
+
+    def test_task_identity_model_is_not_an_external_runtime_layer(self) -> None:
+        result = validate_contracts(changed_paths=["data/operations/task-identity-model-r1.json"])
         self.assertEqual(result["protected_path_violations"], 0)
 
     def test_incomplete_exception_is_rejected(self) -> None:

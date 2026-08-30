@@ -17,7 +17,13 @@ OWNERSHIP_PATH = ROOT / "data/agent-federation/os-executor-ownership-r1.json"
 POLICY_PATH = ROOT / "data/agent-federation/build-vs-integrate-policy-r1.json"
 REGISTRY_PATH = ROOT / "data/agent-federation/executor-component-ownership-r1.json"
 FIXTURE_PATH = ROOT / "data/operations/iterations/123/fixtures/reference-executor-freeze-fixtures-r1.json"
-PROTECTED_PATH = re.compile(r"(?:browser|gateway|channel|messag|model|provider|subagent|daemon|scheduler|remote[-_]git)", re.I)
+PROTECTED_PATH = re.compile(r"(?:browser|gateway|channel|messag|provider|subagent|daemon|scheduler|remote[-_]git)", re.I)
+PROTECTED_MODEL_PATH = re.compile(
+    r"(?:^|/)models?(?:/|$)"
+    r"|(?:agent_runtime|agent_federation|executors?)/[^\n]*model"
+    r"|model[-_](?:client|provider|runtime|gateway)",
+    re.I,
+)
 REQUIRED_ROLES = {"OS_OWNED", "EXTERNAL_AGENT_OWNED", "ADAPTER_BOUNDARY", "REFERENCE_ONLY", "DEFERRED"}
 REQUIRED_FREEZE_FORBIDDEN = {
     "browser", "network", "messaging", "provider", "model", "daemon", "subagent", "mcp_ecosystem", "remote_git",
@@ -309,7 +315,7 @@ def validate_contracts(
         normalized = str(path).replace("\\", "/")
         if normalized.startswith("ignition/"):
             normalized = normalized[len("ignition/"):]
-        if not PROTECTED_PATH.search(normalized):
+        if not (PROTECTED_PATH.search(normalized) or PROTECTED_MODEL_PATH.search(normalized)):
             continue
         if normalized.startswith("agent_federation/adapters/") or normalized.startswith("schemas/agent-federation/"):
             continue
