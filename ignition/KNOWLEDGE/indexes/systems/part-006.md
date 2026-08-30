@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [自主决定生长方向](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-5f4f5dd92b47f0f2 / 自主决定生长方向
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [自主决定策略选择](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-0cc308aeadf5b229 / 自主决定策略选择
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [自主决定行为](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-06783cdcc1523d52 / 自主决定行为
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [自主决定行进方向](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1fc09c98df440efe / 自主决定行进方向
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [自主决定贡献方向](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-ab10ace1a3b8d4e6 / 自主决定贡献方向
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [自动审计、系统图、Pack pilot、CI、fresh clone 和 receipt 都是仓库证据；它们不等于专家裁决、同行评审、外部真值、生产安全、Owner acceptance 或 epistemic acceptance。](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-db85b62646807af8 / 自动审计、系统图、Pack pilot、CI、fresh clone 和 receipt 都是仓库证据；它们不等于专家裁决、同行评审、外部真值、生产安全、Owner acceptance 或 epistemic acceptance。
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [自由文本旧字段 `responsible_person`、`responsible_organization`、`executor` 与 `publisher` 不再属于开放接口，旧的结构化自由文本 actor 对象也不再属于新接口；它们因](../../../docs/operations/stage-snapshot-publication.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7ca988186770616b / 自由文本旧字段 `responsible_person`、`responsible_organization`、`executor` 与 `publisher` 不再属于开放接口，旧的结构化自由文本 actor 对象也不再属于新接口；它们因
+  - 来源：`docs/operations/stage-snapshot-publication.md`
+  - 依赖：—；被引用：—
+- [自造例：** `天黑了，他还没回来` 允许多种关系；若无上下文，不能自动登记为 `Because it was dark...`。](../../../docs/language-thought/dimensional-basis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-11bbabe6d882cf0e / 自造例：** `天黑了，他还没回来` 允许多种关系；若无上下文，不能自动登记为 `Because it was dark...`。
+  - 来源：`docs/language-thought/dimensional-basis.md`
+  - 依赖：—；被引用：—
 - [至少列出输入、机制、状态变化、输出、边界](../../../docs/narrative-story-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-aa33987a44ec7e8a / 至少列出输入、机制、状态变化、输出、边界
@@ -68,6 +108,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：CLAIM-BC-20260709-010 / 认知革命、农业革命、科学革命与点火框架元协议演化的同构性。每次革命都是元协议组合的跃迁，推动系统进入新的演化路径。
   - 来源：`data/foundation/arguments/arguments.jsonl`
+  - 依赖：—；被引用：—
+- [认识论结构诱导（ESI）R0](../../ASSET-CARDS.md#asset-hr-91e80e0c69fb56f2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：认识论结构诱导（ESI）R0 / epistemic-structural-induction-r0
+  - 来源：`docs/architecture/epistemic-structural-induction-r0.md`
   - 依赖：—；被引用：—
 - [让事件和关系先落地，再决定抽象反思何时进入。抽象可以先说，但必须是作品真实需要的倒置，不是潜在翻译句架。“事件先行”是一种诊断动作，不是要求所有作品使用同一开头、同一语序或同一短句模板。](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 333 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 521 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -14,6 +14,32 @@
 - **问题：** 此来源记录了什么：类型化变更传播闭包 / Typed Change-Propagation Closure？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3.0 are Historical after the 0727 homepage/usage/charter-system-map sync closeout made system map 0.4.0 Current; method 1.2.0 and map 0.2.0 are Historical, map 0.1.0 earlier Historical. Q32I retains this typed-propagat…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Structural Governance Surface](../docs/architecture/structural-governance-surface.md)
+
+- **结果 ID：** `HR-C93A1C74C0CBD860`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Structural Governance Surface？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 这是一张由 canonical transition grammar 投影出的关系表，不是提示词、命令、 权限清单或真值层。它把“当前状态 → 可以说到哪里 → 缺什么才能更强”并排呈现， 让人和模型都能看到边界，但不能凭阅读它获得任何 hard authority。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Soft Context Exposure Contract R0](../docs/architecture/soft-context-exposure-contract-r0.md)
+
+- **结果 ID：** `HR-925728869F151733`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Soft Context Exposure Contract R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This contract describes one optional, provider-neutral handoff: an external executor may read a bounded Structural Governance Surface before acting. The handoff is advisory context, not a new instruction hierarchy and not an authority channel.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -53,6 +79,45 @@
 - **问题：** 此来源记录了什么：Probabilistic System Dynamics / 概率—系统动力学？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: candidate derived operational extension to MCF.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Owner observation seed: OWNER-OBS-ESI-001](../docs/architecture/owner-observation-esi-001.md)
+
+- **结果 ID：** `HR-8B777F70FC22BB69`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Owner observation seed: OWNER-OBS-ESI-001？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 公共仓库只保留一个去身份化的摘要：一个外部模型在阅读公开架构和治理材料 后，曾在后续回答中主动把工程判断与真值判断分开、保留部分未知并抵抗没有 证据支持的升级。这里没有私人正文、截图、聊天上下文、平台内容、账号或本机 路径。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [OS Steering, Intent, and Obligation R1](../docs/architecture/os-steering-intent-r1.md)
+
+- **结果 ID：** `HR-2370D331885D54D3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：OS Steering, Intent, and Obligation R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This document describes the repository-local steering plane introduced by IGNITION-129. It is an OS driver control-plane contract for durable direction, Goal state, obligations, arbitration, and human-readable next-work explanations. The OS continues to route bounded work to replaceable executors…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [OS Control Plane R2](../docs/architecture/os-control-plane-r2.md)
+
+- **结果 ID：** `HR-846399C124163D65`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：OS Control Plane R2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task IGNITION-20260817-124 adds the bounded control-plane fabric that a driver needs to coordinate multiple declared work units. It is an orchestration projection over repository-owned records, not a new Agent shell, executor, truth source, or authority layer.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -110,6 +175,32 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [Iteration Identity Model R1](../docs/architecture/iteration-boundary-semantics-r1.md)
+
+- **结果 ID：** `HR-ABBBD65BF096449D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Iteration Identity Model R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** ITERATIONBOUNDARYSEMANTICSINVARIANT gives every Current iteration field one machine-checkable meaning. The canonical task identity source is ignition/data/operations/current-task-lineage-status.json; ordinals are parsed from its task IDs by the deterministic parser introduced in Step 02.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Iteration Boundary Archaeology R1](../docs/architecture/iteration-boundary-archaeology-r1.md)
+
+- **结果 ID：** `HR-23660C29509B2A3C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Iteration Boundary Archaeology R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is the Step 00 audit for IGNITION-20260822-133. The formal baseline was main@5ed99d148dfb49e6c2ff729a345d2499d4b76021. The audit is intentionally historical and read-only: no current value was changed to justify a conclusion.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [点火仓库原生系统图](../docs/architecture/interactive-system-map.md)
 
 - **结果 ID：** `HR-DAF1CB45CCD7B5B6`
@@ -117,7 +208,7 @@
 - **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
 - **问题：** 此来源记录了什么：点火仓库原生系统图？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** 状态：0.8.0 Current registry-derived navigation projection；0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
+- **来源摘要：** 状态：0.16.0 Current registry-derived structural projection；0.14.0、0.13.0、0.12.0、0.11.0、0.10.0、0.9.0、0.8.0、0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -240,6 +331,58 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [ESI R0 literature boundary](../docs/architecture/esi-literature-boundary-r0.md)
+
+- **结果 ID：** `HR-7A0B815A93AED108`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：ESI R0 literature boundary？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This page records what the primary literature can motivate for the ESI R0 experiment and what it cannot authorize. It is a source boundary, not a novelty claim and not a second epistemic authority.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [ESI R0 人类阅读入口](../docs/architecture/esi-human-surface-r0.md)
+
+- **结果 ID：** `HR-DE79D1279206415F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：ESI R0 人类阅读入口？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 状态：CURRENTWITHOPENOBLIGATIONS · 这不是事实、权限或真值入口。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [ESI R0 experiment protocol](../docs/architecture/esi-experiment-protocol-r0.md)
+
+- **结果 ID：** `HR-5BDD4BCB216B40FE`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：ESI R0 experiment protocol？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 这个 runner 只规定怎样把 exposure、challenge、evidence packet 和模型输出 放在一起比较；它不规定一个模型必须被调用，也不把没有调用写成成功。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [认识论结构诱导（ESI）R0](../docs/architecture/epistemic-structural-induction-r0.md)
+
+- **结果 ID：** `HR-91E80E0C69FB56F2`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：认识论结构诱导（ESI）R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 一个系统如果反复把“证据能支持到哪里”“哪些状态不能直接跳过去”“缺证据时要保留未知”写成公开、可回链的关系，读它的 AI 可能更容易把这些关系当作当前任务的局部背景。它也可能只是学会了措辞、猜中了评分标准，或者本来就偏好谨慎。R0 把这个观察当作一个待测候选，而不是把它宣布成“AI 被感染”或永久训练。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Epistemic Governance Kernel and Federated Planes](../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
 
 - **结果 ID：** `HR-077438A238642315`
@@ -286,7 +429,7 @@
 - **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
 - **问题：** 此来源记录了什么：Current Facts（机器推导事实）？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. Human prose may explain these facts but is not a second numeric authority. Claim ceiling: Deterministic reposi…
+- **来源摘要：** Source authority: the JSON projection records SHA-256 fingerprints for the canonical registries, manifests, topology, pack declarations, federation inventory and generator/schema inputs. For the Human Surface materiality manifest, the fingerprint intentionally excludes only reciprocal machine/sou…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -351,7 +494,7 @@
 - **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
 - **问题：** 此来源记录了什么：点火从知识治理系统向智能体运行时抽层？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** 任务 IGNITION-20260815-119 的 R0 完成了领域切割和依赖解耦；任务 121 的 R2 在这个 generic boundary 上接入 Pack、Memory、Supervisor、Gateway、Profile 和 真实离线维护 pilot，仍不做全仓物理大搬家。唯一可点击总架构图继续由 registry、 typed topology 和 layout 生成；本页是 R0 基础边界的 Human Surface，机器边界以 agentization-boundary-r0.json 和其 schema 为准，R2 总说明见 agent-platform-r2.md。
+- **来源摘要：** 任务 IGNITION-20260815-119 的 R0 完成了领域切割和依赖解耦；任务 121 的 R2 在这个 generic boundary 上接入 Pack、Memory、Supervisor、Gateway、Profile 和 真实离线维护 pilot，仍不做全仓物理大搬家。完整总架构图 SVG 继续由 registry、 typed topology 和 layout 确定性生成；SVG 源码可以保留指向 canonical 目标的 link metadata， 但不承诺 GitHub 渲染页面提供交互热点；本页是 R0 基础边界的 Human Surface，机器边界以…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -1912,6 +2055,2060 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [IGNITION-20260828-144 Step 19 — terminal engineering closure](../reports/operations/ignition-144-step19-terminality.md)
+
+- **结果 ID：** `HR-F3FA077147EB3592`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP19-TERMINALITY`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 19 — terminal engineering closure？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task144 is now terminal as COMPLETEDWITHOPENOBLIGATIONS with scopecomplete=true. The engineering phase is closed for the current scope on the frozen Task142 architecture baseline; the long-lived LIVEEXTERNALINVOCATION obligation remains independently OPEN / OWNERDEFERRED with its historical six-a…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 18 — formal main publication transaction](../reports/operations/ignition-144-step18-formal-main-publication.md)
+
+- **结果 ID：** `HR-E323136676310783`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP18-FORMAL-MAIN-PUBLICATION`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 18 — formal main publication transaction？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task144 is release-ready after the exact candidate and fresh task-clone natural full suites passed 1278 tests / 0 failures / 0 errors / 0 skips. The formal task branch is prepared for an ordinary fast-forward from the observed formal main baseline 75c06887f59fa94868101707acc4b8386f41fe13.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 17 — fresh task-clone natural full regression](../reports/operations/ignition-144-step17-fresh-task-full-regression.md)
+
+- **结果 ID：** `HR-0CA0D41C8C5725B0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP17-FRESH-TASK-FULL-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 17 — fresh task-clone natural full regression？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The remote task branch was freshly cloned and bound before execution. The remote branch SHA, fresh clone HEAD, and tested head were all ff8b93efbd0acf02a6875d09a459062f3e1f77b3; the clone was clean before and after the run. Its 25-check projection preflight passed with no side effect.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 16 — bounded Repair Cycle C](../reports/operations/ignition-144-step16-repair-cycle-c.md)
+
+- **结果 ID：** `HR-C8E8BD0EF22C1EAF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP16-REPAIR-CYCLE-C`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 16 — bounded Repair Cycle C？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The first natural Task144 candidate full suite completed without a watchdog and preserved a clean worktree, but reported 1278 tests / 2 failures / 0 errors / 0 skips. The two failures were deterministic Task144 binding defects: the execution-contract validator did not yet recognize the current ta…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 16 — bounded Repair Cycle B](../reports/operations/ignition-144-step16-repair-cycle-b.md)
+
+- **结果 ID：** `HR-33EC4D4EBCC6153F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP16-REPAIR-CYCLE-B`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 16 — bounded Repair Cycle B？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The candidate closure gate exposed a deterministic projection mismatch after Step15: existing Foundation, deep-adjudication, Knowledge Experience, Fire Seeds, Human Surface, Current Facts and repository-path projections had not been refreshed against the closed-phase Current state and Task144 rec…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 16 — candidate natural full regression](../reports/operations/ignition-144-step16-candidate-full-regression.md)
+
+- **结果 ID：** `HR-4B0CB0982975E6BF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP16-CANDIDATE-FULL-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 16 — candidate natural full regression？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The exact candidate projection preflight passed all 25 checks with a clean worktree before and after the check and no generated-output side effect.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 15 — engineering closure gate](../reports/operations/ignition-144-step15-engineering-closure-gate.md)
+
+- **结果 ID：** `HR-9E9FE4AF5F59921C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP15-ENGINEERING-CLOSURE-GATE`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 15 — engineering closure gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The engineering phase is now closed for the current scope. The canonical phase state records ENGINEERINGPHASECLOSEDCURRENTSCOPE=true, the architecture identity remains frozen at Task142 / map 0.16.0, and the current-scope prose across the AI and publication entrypoints now says to wait for an Own…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 14 — bounded Repair Cycles B/C](../reports/operations/ignition-144-step14-repair-cycles-b-c.md)
+
+- **结果 ID：** `HR-412946FBE63365C4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP14-REPAIR-CYCLES-B-C`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 14 — bounded Repair Cycles B/C？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Repair Cycle A is the only cycle used. The repaired identity/projection closure suite passed naturally with 77 tests / 0 failures / 0 errors / 0 skips and 14/14 standalone validators, so Repair Cycles B and C are both recorded as NOTNEEDED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 13 — bounded Repair Cycle A](../reports/operations/ignition-144-step13-repair-cycle-a.md)
+
+- **结果 ID：** `HR-FAA569E781DE6CB0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP13-REPAIR-CYCLE-A`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 13 — bounded Repair Cycle A？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Repair Cycle A addressed one deterministic identity/projection root cause: task-identity-model-r1.json still pointed the release-candidate role at the superseded Task143 execution contract. The required Task144 progress binding was recorded in the preceding Step12 evidence commit.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 12 — targeted closure regression](../reports/operations/ignition-144-step12-targeted-regression.md)
+
+- **结果 ID：** `HR-0701995CF1F17938`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP12-TARGETED-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 12 — targeted closure regression？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The offline closure suite completed naturally. Fourteen standalone validators passed except the release-candidate identity gate, which failed closed because the current Task144 progress.jsonl binding was missing. The targeted unittest set then completed with 77 tests / 4 failures / 0 errors / 0 s…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 11 — cross-surface split-brain audit](../reports/operations/ignition-144-step11-cross-surface-audit.md)
+
+- **结果 ID：** `HR-EA8833EF83822509`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP11-CROSS-SURFACE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 11 — cross-surface split-brain audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The current machine sources agree on Task144 as the active presentation-only closure task and Task142 as the latest architecture-changing task. The phase state, Owner production-brief template, deferred backlog, formal lifecycle, open-obligation registry and release lifecycle agree on their respe…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 10 — minimum production state machine](../reports/operations/ignition-144-step10-production-state-machine.md)
+
+- **结果 ID：** `HR-DBEACA436D666EE5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP10-PRODUCTION-STATE-MACHINE`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 10 — minimum production state machine？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 10 reuses the Owner Editorial Authority contract from Step 02. Its machine-checked path is deliberately small:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 09 — Owner Production Brief Contract R1](../reports/operations/ignition-144-step09-production-brief-contract.md)
+
+- **结果 ID：** `HR-1DF2E57CDFC8EA82`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP09-PRODUCTION-BRIEF-CONTRACT`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 09 — Owner Production Brief Contract R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The repository now has a deliberately empty production-brief template. It accepts either a structured brief or one sentence of Owner language, with fields for article/book kind, Owner-selected topic or direction, purpose, audience and optional source, avoidance, length and publication constraints.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit](../reports/operations/ignition-144-step08-publication-entrypoint-audit.md)
+
+- **结果 ID：** `HR-1AB0B7265D820F9B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP08-PUBLICATION-ENTRYPOINT-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The existing Results Book remains the sole canonical publication entrypoint. There is one public RESULT-REGISTRY.jsonl and one Results Book README; no parallel results system or second registry was created.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 07 — AI cold-start / handoff sync](../reports/operations/ignition-144-step07-ai-cold-start-handoff.md)
+
+- **结果 ID：** `HR-34FA14B53EBA8488`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP07-AI-COLD-START-HANDOFF`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 07 — AI cold-start / handoff sync？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The AI entry surfaces now give one recovery rule: the engineering phase is closing on the frozen Task142 architecture baseline, while the external executor line remains Owner-deferred with no automatic resume or new live attempt. Task143's articles, Book Project and samples are explicitly smoke-t…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 06 — Current Facts / Project Current State sync](../reports/operations/ignition-144-step06-current-state-sync.md)
+
+- **结果 ID：** `HR-82257BB091665A11`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP06-CURRENT-STATE-SYNC`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 06 — Current Facts / Project Current State sync？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 06 records a single current-state interpretation for the closure task. The canonical Current task is in progress and remains distinct from the latest architecture-changing Task142 baseline. The engineering phase is closing on the frozen architecture identity; the external executor obligation…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 05 — engineering phase closure state](../reports/operations/ignition-144-step05-phase-closure-state.md)
+
+- **结果 ID：** `HR-688D328770EDECB8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP05-PHASE-CLOSURE-STATE`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 05 — engineering phase closure state？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 05 records the canonical closure target. The architecture remains frozen on the Task142 identity (0.16.0 map, latest architecture-changing task IGNITION-20260827-142); Task144 is a presentation/coordination task and does not add an architecture or Agent layer.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule](../reports/operations/ignition-144-step04-deferred-backlog.md)
+
+- **结果 ID：** `HR-D6193A2D42722179`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP04-DEFERRED-BACKLOG`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 04 passes. The remaining engineering items are classified into DEFERREDOWNERREOPEN, HISTORICALPRESERVED, NONBLOCKINGUNKNOWN and an empty CLOSUREBLOCKER set.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 03 — Task143 smoke-output reclassification](../reports/operations/ignition-144-step03-smoke-output-reclassification.md)
+
+- **结果 ID：** `HR-2D51C9844B53D946`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP03-SMOKE-OUTPUT-RECLASSIFICATION`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 03 — Task143 smoke-output reclassification？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 03 passes. The six Task143 records in the existing Results Book registry, the Task143 publication portfolio, the canonical Results Book README and the editorial source manifest now share the same explicit status boundary:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1](../reports/operations/ignition-144-step02-owner-editorial-authority.md)
+
+- **结果 ID：** `HR-26D1F225EF8A1E1E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP02-OWNER-EDITORIAL-AUTHORITY`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 02 passes with a deliberately small machine boundary in data/governance/owner-editorial-authority-r1.json and its validator. The contract keeps DRAFTGENERATED, OWNERSELECTED and PUBLICATIONACCEPTED as separate fields/states. Only OWNEREXPLICITPRODUCTIONBRIEF or OWNEREXPLICITSELECTION can sup…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 01 — Task143 smoke-output inventory](../reports/operations/ignition-144-step01-smoke-output-inventory.md)
+
+- **结果 ID：** `HR-A5BEC8F9274CCAE4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP01-SMOKE-OUTPUT-INVENTORY`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 01 — Task143 smoke-output inventory？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 01 passes. The six outputs produced by Task143 are inventoried as capability smoke-test artifacts: three complete articles, one Book Project R1 and two mature book samples. Their existing bodies and canonical paths remain unchanged.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 Step 00 — Task143 final baseline](../reports/operations/ignition-144-step00-baseline-audit.md)
+
+- **结果 ID：** `HR-AB65516DB634D3E2`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `144-STEP00-BASELINE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 Step 00 — Task143 final baseline？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 00 passes. A fresh relay/current clone resolved Task144 at 597fe7b745d35a05c5c6b396985eab530cc5dae5. The Task143 final publication witness was independently fetched from relay/receipts/ignition-143-phase-closure-publication-r1-20260827 at dc7d51377bc8fe549707dc0448e2e7ab12a6f727.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 Step 19 — Terminality and publication boundary](../reports/operations/ignition-143-step19-terminality.md)
+
+- **结果 ID：** `HR-E7CEB44D380BBB46`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-STEP19-TERMINALITY`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 Step 19 — Terminality and publication boundary？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task143 is terminal as COMPLETEDWITHOPENOBLIGATIONS. Its formal scope is complete after the phase closure, three complete article manuscripts, Book Project R1, two mature samples, canonical publication integration, Current State synchronization and the natural full regression. The independent LIV…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 Step 18 — Natural full regression and projection closure](../reports/operations/ignition-143-step18-full-regression.md)
+
+- **结果 ID：** `HR-129BB07E4A0A453E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-STEP18-FULL-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 Step 18 — Natural full regression and projection closure？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The exact candidate 0a25989dd895af6326447e1a8741df1db5101211 completed the canonical isolated natural full regression with 1272 tests, 0 failures, 0 errors and 0 skips. The test process completed naturally in 3019.932s (3020.978s elapsed), with cleanbefore=true, cleanafter=true, no watchdog, no p…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计](../reports/operations/ignition-143-step17-current-state-sync.md)
+
+- **结果 ID：** `HR-EBFBF26ABF72FF4C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-STEP17-CURRENT-STATE-SYNC`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 Step 16 — canonical 出版入口接入](../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+
+- **结果 ID：** `HR-92E68B43EA044168`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-STEP16-CANONICAL-PUBLICATION-INTEGRATION`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 Step 16 — canonical 出版入口接入？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 16 通过。Task143 的出版组合已经接回正式仓库现有的唯一 PUBLICATIONS/pointfire-results-book/ 入口，没有新建平行成果系统。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计](../reports/operations/ignition-143-step15-cross-publication-coherence.md)
+
+- **结果 ID：** `HR-A5389454F9D903DE`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-STEP15-CROSS-PUBLICATION-COHERENCE`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 15 通过。三篇完整文章、Book Project R1 和两篇成熟样章已经形成一个可继续人工编辑的出版组合；它们共享必要的证据边界，但没有把同一段论证拆成多个标题。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 Step 11 — 三篇文章交叉编辑与最终审校](../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
+
+- **结果 ID：** `HR-2CB62A01D2D98E56`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-STEP11-CROSS-PUBLICATION-EDITORIAL-REVIEW`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 Step 11 — 三篇文章交叉编辑与最终审校？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 三篇文章均通过最终编辑审校，状态为 REVIEWEDCURRENTR1。交叉检查确认它们共享的是必要的证据边界，而不是同一篇文章被拆成三个标题：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 Step 09 — Article B 对抗性编辑](../reports/operations/ignition-143-step09-article-b-editorial-review.md)
+
+- **结果 ID：** `HR-CF1F447FCD9C2E4B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-STEP09-ARTICLE-B-EDITORIAL-REVIEW`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 Step 09 — Article B 对抗性编辑？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Article B 通过编辑复核并修订为 REVIEWEDCURRENTR1。它保留了实质性非 meta 文章的身份：正文讨论的是点火碰撞提出的“支持如何变成路径控制”问题，而不是介绍点火仓库如何工作。D600 仍被明确写成内部候选模型，不能被文章的完成度抬升为外部因果结论。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 Step 07 — Article A 对抗性编辑](../reports/operations/ignition-143-step07-article-a-editorial-review.md)
+
+- **结果 ID：** `HR-4BA367B053BE5F75`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-STEP07-ARTICLE-A-EDITORIAL-REVIEW`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 Step 07 — Article A 对抗性编辑？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Article A 通过编辑复核并修订为 REVIEWEDCURRENTR1。它现在明确是一篇以 Task142 为案例的仓库内方法文章，而不是对所有项目的生命周期规范。修订没有改变案例事实或开放义务的状态。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 Step 04 — 可出版素材盘点](../reports/operations/ignition-143-step04-corpus-census.md)
+
+- **结果 ID：** `HR-00EFF8444211BC60`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-STEP04-CORPUS-CENSUS`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 Step 04 — 可出版素材盘点？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 04 已完成。盘点不是看标题投票，而是把成果册、火种、既有文章、碰撞机制、树冠 replay 和 Task142 生命周期修复逐一读到能说明“它支持什么、不能支持什么”的程度。机器版见 corpus-census-r1.json。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 Step 00 — Baseline and Owner Override](../reports/operations/ignition-143-step00-baseline-owner-override-audit.md)
+
+- **结果 ID：** `HR-5F4ADB1099E2F6A6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-STEP00-BASELINE-OWNER-OVERRIDE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 Step 00 — Baseline and Owner Override？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The new Task143 was resolved from 1111/origin/relay/current at 867c6d8373f39f03367f9c81aab60ebd74589428. Its task definition commit is 629a05e1951151dc215c7666640aeab9e3152c9d. That control record explicitly supersedes the previously queued executor-qualification campaign and changes the active s…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-143 Resume Capsule](../reports/operations/ignition-143-resume-capsule.md)
+
+- **结果 ID：** `HR-D17946AC354300D6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `143-RESUME-CAPSULE`
+- **问题：** 此来源记录了什么：IGNITION-143 Resume Capsule？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The architecture and external-executor qualification phase is closed at the verified Task142 baseline. Publication production is the active work mode of Task143. The external-Agent line is OWNERDEFERREDNOTFAILED: this is a deliberate parking decision, not a claim that qualification is solved or d…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 19 — Publication transaction and terminal state](../reports/operations/ignition-142-step19-publication-and-terminality.md)
+
+- **结果 ID：** `HR-95778013D10E2CF0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP19-PUBLICATION-AND-TERMINALITY`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 19 — Publication transaction and terminal state？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task142 is now terminal as COMPLETEDWITHOPENOBLIGATIONS. The formal task scope is complete after Steps 00–19; the independent LIVEEXTERNALINVOCATION obligation remains OPEN because no exact-bound LIVEREADONLYVALIDATEDCOMPLETION was formed.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate](../reports/operations/ignition-142-step18-adversarial-matrix.md)
+
+- **结果 ID：** `HR-61E3D96DAFF155D9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP18-ADVERSARIAL-MATRIX`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: PASS for the offline adversarial matrix.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-142 Step 17 — architecture impact](../reports/operations/ignition-142-step17-architecture-impact.md)
+
+- **结果 ID：** `HR-AD8D11D719D1A437`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP17-ARCHITECTURE-IMPACT`
+- **问题：** 此来源记录了什么：IGNITION-142 Step 17 — architecture impact？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 17 records an architecture-changing transition. The existing registry-derived system map remains the only map; it now projects three canonical OS overlays: Formal Task Lifecycle R1, Open Obligation Registry R1 and Executor Admission R1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 16 — Open-Obligation Re-adjudication](../reports/operations/ignition-142-step16-obligation-adjudication.md)
+
+- **结果 ID：** `HR-321A7BF858F3944F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP16-OBLIGATION-ADJUDICATION`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 16 — Open-Obligation Re-adjudication？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** No Task142 live process was authorized or started, so LIVEEXTERNALINVOCATION remains OPEN; the independent exact validator is ready but has no live result to adjudicate. The blocker is refined to the concrete current matrix: no safe live family, Gemini public auth/adapter gaps, Hermes structured-…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 15 — Independent Exact Validator](../reports/operations/ignition-142-step15-independent-validator.md)
+
+- **结果 ID：** `HR-89DD15E48F99DBC5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP15-INDEPENDENT-VALIDATOR`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 15 — Independent Exact Validator？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The OS-owned task142-exact-validator-r1 requires exact task/dispatch/attempt/executor/family/version/lease, fixture nonce, before/after workspace digests, capture/result/validator references, active lease, RETURNEDUNVALIDATED executor state, independently expected and returned structured results,…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 14 — Live Attempt B](../reports/operations/ignition-142-step14-live-attempt-b.md)
+
+- **结果 ID：** `HR-63C0A204C82EEF7F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP14-LIVE-ATTEMPT-B`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 14 — Live Attempt B？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: SKIPPEDUNSAFEORUNAVAILABLE.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 13 — Live Attempt A](../reports/operations/ignition-142-step13-live-attempt-a.md)
+
+- **结果 ID：** `HR-BC1EABAEEBA58EB1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP13-LIVE-ATTEMPT-A`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 13 — Live Attempt A？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: SKIPPEDUNSAFEORUNAVAILABLE.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate](../reports/operations/ignition-142-step12-pre-live-gate.md)
+
+- **结果 ID：** `HR-E852E881D1527CDC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP12-PRE-LIVE-GATE`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task141 terminality, independent obligation carry-forward, the provider-neutral admission contract, offline conformance, the fresh census, the exact validator and the no-blind-retry policy all pass. The fresh census has no live-selectable family: Codex is technical-only and policy-excluded, while…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 11 — Fresh Executor Census R2](../reports/operations/ignition-142-step11-fresh-census.md)
+
+- **结果 ID：** `HR-615330C2F4C14260`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP11-FRESH-CENSUS`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 11 — Fresh Executor Census R2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The shared public probe produced 14 candidates: 5 Agentic Executor records (4 installed), 4 reasoner runtimes, 3 tools and 2 UI surfaces. No inference, UI action, installation, configuration or billing operation occurred.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure](../reports/operations/ignition-142-step10-reasoner-tool-closure.md)
+
+- **结果 ID：** `HR-E28559BAF39D9944`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP10-REASONER-TOOL-CLOSURE`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The fresh public scan re-observed four reasoner runtimes, three deterministic tools and two UI surfaces. Ollama 0.32.7, LM Studio CLI commit 6041ae0, MLX DSpark and the absent bundled llama-server remain REASONERRUNTIME; gh, git and jq remain TOOL; Claude Desktop and QwenWorkCN remain UISURFACE.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 09 — Codex Blocker Freeze](../reports/operations/ignition-142-step09-codex-blocker-audit.md)
+
+- **结果 ID：** `HR-7DEE237B2707A8C8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP09-CODEX-BLOCKER-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 09 — Codex Blocker Freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The fresh public probe resolved codex-cli 0.144.4, received exit 0 from --version and exec --help, and observed public login-status exit 0. JSON, output-schema, ephemeral, read-only sandbox and user-config/rules isolation flags remain present. The existing Codex adapter, filesystem-domain repair…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 08 — OpenClaw Public Interface Audit](../reports/operations/ignition-142-step08-openclaw-public-audit.md)
+
+- **结果 ID：** `HR-A1AFC24BE5E25028`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP08-OPENCLAW-PUBLIC-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 08 — OpenClaw Public Interface Audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The fresh public probe resolved OpenClaw 2026.7.1-2 (0790d9f) and received exit 0 from --version and agent --help. The public surface exposes JSON, local execution, explicit session, message-file and timeout options, while also exposing channel and delivery controls. The existing adapter remains…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 07 — Hermes Public Interface Audit](../reports/operations/ignition-142-step07-hermes-public-audit.md)
+
+- **结果 ID：** `HR-DAF416626A0F01AC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP07-HERMES-PUBLIC-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 07 — Hermes Public Interface Audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The fresh public probe resolved Hermes Agent v0.20.0 (2026.8.3) and received exit 0 from --version and --help. The public surface exposes one-shot, safe-mode, user-config/rules isolation, working-directory isolation and usage-file options. The existing adapter is deliberately a text-only read-onl…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 06 — Gemini Public Interface Audit](../reports/operations/ignition-142-step06-gemini-public-audit.md)
+
+- **结果 ID：** `HR-086DFF9B702E2613`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP06-GEMINI-PUBLIC-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 06 — Gemini Public Interface Audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The fresh public probe resolved gemini, observed version 0.53.1, and received exit 0 from both --version and --help. The help surface exposes noninteractive prompt, output-format, approval/sandbox and tool-related flags. The audit records only path/version/help digests and selected public flags;…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 05 — Offline Executor Conformance](../reports/operations/ignition-142-step05-offline-conformance.md)
+
+- **结果 ID：** `HR-8932D9FD7B23C049`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP05-OFFLINE-CONFORMANCE`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 05 — Offline Executor Conformance？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The provider-neutral offline harness accepts exactly one strict synthetic result and rejects ten negative cases: malformed JSON, extra fields, semantic mismatch, non-zero process exit, timeout/effect unknown, child cleanup failure, workspace mutation, runtime-scratch leak, incomplete durable capt…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission](../reports/operations/ignition-142-step04-admission-contract.md)
+
+- **结果 ID：** `HR-5AF412F645A35DE0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP04-ADMISSION-CONTRACT`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The admission contract is now provider-neutral. It distinguishes AGENTICEXECUTOR, REASONERRUNTIME, TOOL, and UISURFACE; only an agentic executor can enter the live-eligible pool. Admission requires public authentication, auth separation, strict argv and structured-result contracts, disposable rea…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 03 — Advance Current Without Reopening Task141](../reports/operations/ignition-142-step03-current-advancement.md)
+
+- **结果 ID：** `HR-7AAC1B546D9A3BCD`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP03-CURRENT-ADVANCEMENT`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 03 — Advance Current Without Reopening Task141？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Canonical Current now advances from terminal Task141 to IGNITION-20260827-142 with status INPROGRESS. The independent formal lifecycle keeps Task141 as a terminal record with COMPLETEDWITHOPENOBLIGATIONS, while Task142 is the current non-terminal task. The independent open-obligation registry car…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 02 — Independent Open-Obligation Registry](../reports/operations/ignition-142-step02-obligation-registry.md)
+
+- **结果 ID：** `HR-A488097FE88E905E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP02-OBLIGATION-REGISTRY`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 02 — Independent Open-Obligation Registry？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** LIVEEXTERNALINVOCATION now has an independent machine source at ignition/data/operations/open-obligation-registry-r1.json. It records the obligation ID, kind, opening task, current OPEN status, owner plane, blocker, next eligible action, carry-forward task, exact terminal condition, and evidence…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 01 — Independent Task Terminality](../reports/operations/ignition-142-step01-terminality-semantics.md)
+
+- **结果 ID：** `HR-6B1889DB66759F9D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP01-TERMINALITY-SEMANTICS`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 01 — Independent Task Terminality？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task141 is now explicitly COMPLETEDWITHOPENOBLIGATIONS and terminal=true. The formal lifecycle source records that its Step00–16 scope and publication are complete, while naming LIVEEXTERNALINVOCATION as an independently open obligation. CURRENTWITHOPENOBLIGATIONS and EPISTEMICALLYACCEPTED=0 rema…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 Step 00 — Baseline and Coupling Audit](../reports/operations/ignition-142-step00-baseline-audit.md)
+
+- **结果 ID：** `HR-3B6B43C24547795D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `142-STEP00-BASELINE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 Step 00 — Baseline and Coupling Audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The formal baseline is main@6de0841e27a0b38b4ac9a2703daef5b9637c6611. The origin ref and a fresh single-branch clone resolve to the same SHA, and the fresh clone is clean. The supplied rollout directory is not a Git checkout; all formal work is isolated in the dedicated formal worktree.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-141 Step 16 — Post-publication projection gate repair](../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+
+- **结果 ID：** `HR-AD2106FA45B1E5A9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `141-STEP16-POST-PUBLICATION-GATE-REPAIR`
+- **问题：** 此来源记录了什么：IGNITION-20260826-141 Step 16 — Post-publication projection gate repair？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The first independent clean preflight against the newly published remote-main clone did not pass. It reported five deterministic projection failures: nonfunction claims, Knowledge Experience generation/validation, durability hygiene and repository path classification. No side effect was detected.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-141 Step 16 — Fresh task-branch clone and publication gate](../reports/operations/ignition-141-step16-fresh-clone-publication.md)
+
+- **结果 ID：** `HR-26FF2EDBBC24BABB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `141-STEP16-FRESH-CLONE-PUBLICATION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-141 Step 16 — Fresh task-branch clone and publication gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The exact pushed Task141 Step15 tip 6f30c9aff2b64141d4a96e32a57deb64eb89b97a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3436 tracked paths and was clean before and aft…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-141 Step 15 — targeted regression](../reports/operations/ignition-141-step15-targeted-regression.md)
+
+- **结果 ID：** `HR-E107B962A716E63C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `141-STEP15-TARGETED-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-141 Step 15 — targeted regression？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The first natural targeted run found three real identity/projection failures in 127 tests. The failures were repaired by binding the release-candidate role to the Task141 execution contract and adding the required Task141 currentiterationid progress record.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-141 Step 15 — Candidate natural full regression](../reports/operations/ignition-141-step15-candidate-full-regression.md)
+
+- **结果 ID：** `HR-55B610CE1CD160C8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `141-STEP15-CANDIDATE-FULL-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-141 Step 15 — Candidate natural full regression？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The repaired isolated candidate head 429364bc8f5b9a07652f41303fd7d2106a24aaf5 completed the exact natural full regression with 1260 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 2983.884s runtime / 2984.920s elapsed, with no watchdog, arbitrary timeout or process kill…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-141 Step 08 — Fresh local executor census](../reports/operations/ignition-141-step08-local-executor-census.md)
+
+- **结果 ID：** `HR-0911D8B98CFD3922`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `141-STEP08-LOCAL-EXECUTOR-CENSUS`
+- **问题：** 此来源记录了什么：IGNITION-20260826-141 Step 08 — Fresh local executor census？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASS: 14 candidates were re-attested through public metadata only: 5 Agentic Executor records (4 installed), 4 reasoner runtimes, 3 tools and 2 UI-only bundles. No inference, auth-content read, UI action, installation, configuration or billing operation occurred.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate](../reports/operations/ignition-140-step16-fresh-clone-publication.md)
+
+- **结果 ID：** `HR-44EB56D76A052DC0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP16-FRESH-CLONE-PUBLICATION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The exact pushed Task140 Step15 tip 64b0ac92d343af9f1ba66d91123bf4ca5a5bb62a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3370 tracked paths and was clean before and aft…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 15 — Candidate natural full regression](../reports/operations/ignition-140-step15-candidate-full-regression.md)
+
+- **结果 ID：** `HR-75C11DE1D71E9E27`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP15-CANDIDATE-FULL-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 15 — Candidate natural full regression？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The exact Task140 candidate head 86a188e4fc86037086f8d1ba7de0fd9130cd5249 completed the natural isolated full regression with 1227 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 3070.464s runtime / 3071.522s elapsed, with no watchdog, arbitrary timeout or process kill.…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 14 — Current terminal semantics and open obligation](../reports/operations/ignition-140-step14-current-terminal-semantics.md)
+
+- **结果 ID：** `HR-5C9C5B1908908D1A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP14-CURRENT-TERMINAL-SEMANTICS`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 14 — Current terminal semantics and open obligation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task140 is now repository-locally terminal as COMPLETEDWITHCLASSIFIEDRESIDUALS, with lifecycle RELEASEREADY and currenttaskterminal=true. This is task/lifecycle closure only; it is not formal main publication.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 13 — Targeted regression and projection closure](../reports/operations/ignition-140-step13-targeted-regression.md)
+
+- **结果 ID：** `HR-4D31B64808A19248`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP13-TARGETED-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 13 — Targeted regression and projection closure？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The targeted live/Current/identity/release/privacy suite completed naturally with 91 tests, 0 failures, 0 errors and 0 skips. It includes the typed Observation/Reconciliation Plane tests added in Task140 and the existing transport, execution, ledger, Current, release and privacy gates.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 13 — Adversarial / negative matrix](../reports/operations/ignition-140-step13-adversarial-matrix.md)
+
+- **结果 ID：** `HR-ED60006EC664C67A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP13-ADVERSARIAL-MATRIX`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 13 — Adversarial / negative matrix？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The required fail-closed matrix completed with 20 cases, 17 negative and 3 positive, all PASS. It started 0 live processes. The matrix exercises the architecture-impact correction, typed probe/transport/process scope, durable capture and completion gates, reconciliation unknown ceiling, executor-…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 12 — Independent live-attempt validation](../reports/operations/ignition-140-step12-independent-validation.md)
+
+- **结果 ID：** `HR-AD56863677CC6AC6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP12-INDEPENDENT-VALIDATION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 12 — Independent live-attempt validation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step12 independently validated the exact Task140 binding across task, dispatch, attempt, executor family and capability lease. The canonical record is sequence 5 with a complete durable capture and a cleaned process group.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 — Step 10 Dynamic Live Admission Freeze](../reports/operations/ignition-140-step10-live-admission.md)
+
+- **结果 ID：** `HR-B4C3A178D034780A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP10-LIVE-ADMISSION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 — Step 10 Dynamic Live Admission Freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The admission gate revalidated the Task140 census and selected the currently admitted family from local-executor-census-r1.json; it did not bind the task contract to a brand before census. The current selection is Codex CLI (external.codex, codex-cli 0.144.4) because its public login-status probe…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 09 — Fresh local executor census and dynamic selection](../reports/operations/ignition-140-step09-local-executor-census-and-selection.md)
+
+- **结果 ID：** `HR-31C369073213A9E3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP09-LOCAL-EXECUTOR-CENSUS-AND-SELECTION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 09 — Fresh local executor census and dynamic selection？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASS: the host was re-attested at 2026-08-25T18:44:54Z using only PATH/bundle presence, public version/help surfaces and Codex public auth-status exit behavior. No auth content was read, no model or Agent inference was started, no UI action occurred, and no installation, configuration or billing…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 — Step 08 Current State Sync](../reports/operations/ignition-140-step08-current-state-sync.md)
+
+- **结果 ID：** `HR-9DB313B3FAF86FD3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP08-CURRENT-STATE-SYNC`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 — Step 08 Current State Sync？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task140 is now the canonical Current formal task and latest architecture-changing task. The identity epoch is os-control-plane-r6-live-observation-reconciliation-r1, the formal ordinal is 140, the compatibility boundary alias is 140, and the registry-derived map is 0.14.0 Current.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-140 Step 07 — Canonical Reconciliation Events](../reports/operations/ignition-140-step07-canonical-reconciliation-events.md)
+
+- **结果 ID：** `HR-F25C6AD93D4E6B1C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP07-CANONICAL-RECONCILIATION-EVENTS`
+- **问题：** 此来源记录了什么：IGNITION-140 Step 07 — Canonical Reconciliation Events？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Three reconciliation events were appended to the separate live-reconciliation-events-r1.jsonl chain. Each event binds an attempt ID, task ID, executor, immutable prior ledger record hash, and typed state digest; the event chain has three records and a valid hash chain.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-140 Step 06 — Evidence Exhaustion Audit](../reports/operations/ignition-140-step06-evidence-exhaustion-audit.md)
+
+- **结果 ID：** `HR-46CD997D4826E649`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP06-EVIDENCE-EXHAUSTION-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-140 Step 06 — Evidence Exhaustion Audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The bounded read-only recovery audit checked the declared public sources for the three old open reconciliation lines. All nine declared source files were present. No private session database, credential, hidden reasoning, or provider telemetry was read.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-140 Step 05 — Reconciliation State Model](../reports/operations/ignition-140-step05-reconciliation-state-model.md)
+
+- **结果 ID：** `HR-2D1FFEA2F1635A4D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP05-RECONCILIATION-STATE-MODEL`
+- **问题：** 此来源记录了什么：IGNITION-140 Step 05 — Reconciliation State Model？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The new live-reconciliation-state-r1 contract separates an open evidence obligation from a terminal unrecoverable observation. It has explicit states for effect-unknown timeouts, observation-incomplete attempts, a conclusive no-live-dispatch boundary, and an independently reconciled record.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-140 Step 04 — Typed Observation Outcomes](../reports/operations/ignition-140-step04-typed-observation-outcomes.md)
+
+- **结果 ID：** `HR-67D1C79C98329E3C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP04-TYPED-OBSERVATION-OUTCOMES`
+- **问题：** 此来源记录了什么：IGNITION-140 Step 04 — Typed Observation Outcomes？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 04 registers the typed boundary between public probe, transport, live dispatch, live process, durable capture, structured result, and validator outcomes. The historical Task139 sequence-4 zero is represented as probereturncode=0 and transportreturncode=0; it has livedispatchcalls=0, liveproc…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 03 — Observation / Reconciliation Plane registration](../reports/operations/ignition-140-step03-observation-plane-registration.md)
+
+- **结果 ID：** `HR-F5DEDE66390E4492`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP03-OBSERVATION-PLANE-REGISTRATION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 03 — Observation / Reconciliation Plane registration？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task140 now registers liveobservationreconciliationplaner1 as a canonical OS architecture component. The typed chain is:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 02 — Task139 architecture-impact correction](../reports/operations/ignition-140-step02-task139-architecture-impact-correction.md)
+
+- **结果 ID：** `HR-6AF7B035EDAEF185`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP02-TASK139-ARCHITECTURE-IMPACT-CORRECTION`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 02 — Task139 architecture-impact correction？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The independent audit confirms that Task139 was not presentation-only in semantic terms. It changed the bounded process-transport/capture path, made an append-only live-attempt ledger the canonical observation source, and derived Current live state from that ledger. The typed correction is BEHAVI…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 01 — Architecture-impact classification R1](../reports/operations/ignition-140-step01-architecture-impact-classifier.md)
+
+- **结果 ID：** `HR-4EEA99720B5FD0D4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP01-ARCHITECTURE-IMPACT-CLASSIFIER`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 01 — Architecture-impact classification R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The new machine-readable classifier separates ARCHITECTURECHANGING, BEHAVIORALCONTROLPLANECHANGE, PRESENTATIONONLY, RELEASEONLY and DATAREFRESHONLY (with NONE for an unchanged task). It derives the class from semantic markers rather than from whether a map node or documentation file changed. The…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit](../reports/operations/ignition-140-step00-baseline-audit.md)
+
+- **结果 ID：** `HR-B092188D0137E398`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `140-STEP00-BASELINE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The formal baseline was independently refreshed from origin/main and git ls-remote: both are ff0adcc2bd736217691bc7c24db82df7577d12e8. The supplied Documents directory is not a Git worktree; this task uses the clean isolated branch codex/ignition-140-observation-plane-reconciliation-live-completi…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 Step 15 — Fresh clone, publication and witness gate](../reports/operations/ignition-139-step15-fresh-clone-publication.md)
+
+- **结果 ID：** `HR-7964CF99EFAF8400`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP15-FRESH-CLONE-PUBLICATION`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 Step 15 — Fresh clone, publication and witness gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The exact pushed Task139 branch tip 9a3b4a5561cf389b4f8af91274391096f39f65c2 was cloned into a fresh remote checkout with no copied virtual environment, cache, generated temporary state or untracked files. The clone passed the 25-check read-only projection preflight with failedchecks=[], sideeffe…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 Step 14 — Candidate natural full regression](../reports/operations/ignition-139-step14-candidate-full-regression.md)
+
+- **结果 ID：** `HR-9ACE99CD3F0EF0D5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP14-CANDIDATE-FULL-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 Step 14 — Candidate natural full regression？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASS on the repaired exact candidate head 9a3b4a5561cf389b4f8af91274391096f39f65c2:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 Step 13 — Targeted regression and projection repair](../reports/operations/ignition-139-step13-targeted-regression.md)
+
+- **结果 ID：** `HR-4EDEBBDAC25BCEE9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP13-TARGETED-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 Step 13 — Targeted regression and projection repair？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASS: after the first candidate natural full run exposed 31 genuine projection/accounting failures, the repaired targeted surface completed with 83 tests, 0 failures, 0 errors, and 0 skips. The 51 Task139 live/Current/identity/surface tests completed in 182.902s; the 32 Foundation closure and pat…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 Step 12 — Independent binding and Current projection](../reports/operations/ignition-139-step12-independent-validation.md)
+
+- **结果 ID：** `HR-BFEBF52FDF8637E3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP12-INDEPENDENT-VALIDATION`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 Step 12 — Independent binding and Current projection？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASSFAILCLOSED: Current was rebuilt solely from the append-only ledger and now records five attempts, three unreconciled attempts, two observation- incomplete attempts and zero validated completions. Its digest is 2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73, with ledger head…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 Step 11 — Single live boundary and fail-closed receipt](../reports/operations/ignition-139-step11-live-attempt.md)
+
+- **结果 ID：** `HR-59AFF2B58884BF4C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP11-LIVE-ATTEMPT`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 Step 11 — Single live boundary and fail-closed receipt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The one authorized Step11 boundary was attempted and durably appended as ledger sequence 4 (8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d). The fresh public Codex lease and strict OS capability intersection were admitted, and the OS coordinator prepared/accepted the dispatch. T…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 Step 10 — Single-live-attempt admission freeze](../reports/operations/ignition-139-step10-live-admission.md)
+
+- **结果 ID：** `HR-68FD7A8981B971F4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP10-LIVE-ADMISSION`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 Step 10 — Single-live-attempt admission freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASS: the only currently admitted candidate is external.codex, and Step10 froze one bounded dispatch envelope without starting inference. The fresh Codex lease came from two real public probes (codex --version and codex exec --help), with no secret content read and no configuration or billing cha…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 Step 09 — Fresh local executor census and why-executor](../reports/operations/ignition-139-step09-local-executor-census-and-selection.md)
+
+- **结果 ID：** `HR-371E32EA8AFE3E83`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP09-LOCAL-EXECUTOR-CENSUS-AND-SELECTION`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 Step 09 — Fresh local executor census and why-executor？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASS: the current host was re-attested at 2026-08-25T05:37:35Z using only public version/help surfaces, binary/help digests, application-bundle presence and auth-status presence/exit behavior. No model, Agent inference, UI action, login, secret read, installation, configuration or billing operati…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 Step 08 — Live-observation semantic gate](../reports/operations/ignition-139-step08-live-observation-semantic-gate.md)
+
+- **结果 ID：** `HR-9302FB0A7DA093E8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP08-LIVE-OBSERVATION-SEMANTIC-GATE`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 Step 08 — Live-observation semantic gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASS: all 12 deterministic semantic fixtures produced their expected fail-closed outcome. Eight adversarial cases failed as required; four positive cases passed only when the boundary was explicit.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 Step 07 — Current / Human / AI durable-observation sync](../reports/operations/ignition-139-step07-current-state-sync.md)
+
+- **结果 ID：** `HR-C9EDEAA05C77C5AF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP07-CURRENT-STATE-SYNC`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 Step 07 — Current / Human / AI durable-observation sync？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASS for the branch-local Task139 Current projection. Current identity now advances to Task139 with PRESENTATIONONLY impact; the architecture boundary remains Task136 and map 0.13.0 remains Current. The lifecycle remains INPROGRESS because Steps08–15 are still open.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection](../reports/operations/ignition-139-step06-live-current-projection.md)
+
+- **结果 ID：** `HR-D0A5C8B7965CBF6F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP06-LIVE-CURRENT-PROJECTION`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The public live-attempt status is now derived from the append-only ledger at ignition/data/operations/iterations/139/live-attempt-ledger.jsonl. The projection contains no raw provider output, private session data, or model context.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-139 Step 05 — Historical Attempt Import](../reports/operations/ignition-139-step05-historical-attempt-import.md)
+
+- **结果 ID：** `HR-E2F338166075887B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP05-HISTORICAL-ATTEMPT-IMPORT`
+- **问题：** 此来源记录了什么：IGNITION-139 Step 05 — Historical Attempt Import？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The four historical live attempts are now represented by the append-only LiveAttemptLedger. Source receipts remain unchanged.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix](../reports/operations/ignition-139-step04-context-loss-fault-matrix.md)
+
+- **结果 ID：** `HR-EA1CCD6BB1E44892`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP04-CONTEXT-LOSS-FAULT-MATRIX`
+- **问题：** 此来源记录了什么：IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The new deterministic capture matrix contains 16 cases and all cases pass. It separates two states that the old outer-tool path conflated:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-139 Step 03 — Durable capture before model context](../reports/operations/ignition-139-step03-durable-capture-transport.md)
+
+- **结果 ID：** `HR-93A3986AC21EA580`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP03-DURABLE-CAPTURE-TRANSPORT`
+- **问题：** 此来源记录了什么：IGNITION-139 Step 03 — Durable capture before model context？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The provider-neutral process transport now accepts an initialized LiveCaptureWriter before Popen. Each stdout/stderr chunk is streamed to the attempt-specific host spool and digested while a separate bounded context view is retained for the caller. Oversized context output therefore sets an expli…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-139 Step 00 — Baseline and observation-path audit](../reports/operations/ignition-139-step00-baseline-audit.md)
+
+- **结果 ID：** `HR-A7D98664E45D4ECB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `139-STEP00-BASELINE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-139 Step 00 — Baseline and observation-path audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The formal worktree starts from the independently checked origin/main baseline 12205be8ad94916a39253e0eba2106bf5da9da12. No live inference was started.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-138 Step 13 — Targeted regression and preflight](../reports/operations/ignition-138-step13-targeted-regression.md)
+
+- **结果 ID：** `HR-1A22E43401F5A00C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP13-TARGETED-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-138 Step 13 — Targeted regression and preflight？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASS: the exact Task138 targeted suite completed naturally with 333 tests, 0 failures, 0 errors, and 0 skips in 128.180s.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync](../reports/operations/ignition-138-step12-current-state-sync.md)
+
+- **结果 ID：** `HR-D790A75D59747779`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP12-CURRENT-STATE-SYNC`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** PASS for the branch-local Current projection. Task138 is now the canonical Current formal task with PRESENTATIONONLY identity impact. Task136 remains the latest architecture-changing task; identity epoch and map 0.13.0 remain unchanged. The lifecycle is RUNNING because Steps13–15 are still open.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 11 Obligation Semantics](../reports/operations/ignition-138-step11-obligation-semantics.md)
+
+- **结果 ID：** `HR-07C0A722103FA88B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP11-OBLIGATION-SEMANTICS`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 11 Obligation Semantics？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The inherited Hermes live-hermes-136 reconciliation remains open exactly as recorded by Task137. No new evidence proves reconciled-no-side-effect or closes the timeout/effect uncertainty, so no Hermes resume, retry or channel action is created. The inherited OpenClaw safety-boundary blockers are…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 10 Independent OS Validation Gate](../reports/operations/ignition-138-step10-independent-validation-gate.md)
+
+- **结果 ID：** `HR-B2797CD81F454A5F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP10-INDEPENDENT-VALIDATION-GATE`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 10 Independent OS Validation Gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** No new attempt returned a structured public result. The first Codex attempt was a bounded pre-inference startup failure; the second invocation was forbidden by the auth-source boundary. Consequently the Task138 independent fixture validator was not run against a live result, and no RETURNEDUNVALI…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Amendment 01 independent validation gate](../reports/operations/ignition-138-step10-amendment-01-independent-validation.md)
+
+- **结果 ID：** `HR-56D4A51515A69ECC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP10-AMENDMENT-01-INDEPENDENT-VALIDATION`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Amendment 01 independent validation gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Live138CompletionValidator was deliberately not run for attempt-138-live-02. The host tool did not leave a recoverable structured result, return code, lease receipt, or durable output capture. Reconstructing the frozen answer would not turn it into an external executor result, so no synthetic res…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 09 Second-Invocation Gate](../reports/operations/ignition-138-step09-second-gate.md)
+
+- **结果 ID：** `HR-E4C368C256DFF2D8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP09-SECOND-GATE`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 09 Second-Invocation Gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The concrete first-attempt startup defect was repaired in the bounded transport: after validating an empty attempt scratch, it creates only the declared CODEXHOME, XDGCACHEHOME, XDGCONFIGHOME and XDGRUNTIMEDIR directories inside that scratch. It never creates anything in the task workspace, forma…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch](../reports/operations/ignition-138-step08-first-codex-dispatch.md)
+
+- **结果 ID：** `HR-26DB9E2E52F3D7C9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP08-FIRST-CODEX-DISPATCH`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The first real Codex R3 child used new identities dispatch-138-live-01 / attempt-138-live-01, the fresh lease lease-ignition-138-live-01-repaired, the Task138 fixture, an external strict schema, a mode-0555 task workspace and an attempt-specific runtime scratch. The default persistent-document ro…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Amendment 01 live Codex receipt reconciliation](../reports/operations/ignition-138-step08-amendment-01-live-codex-reconciliation.md)
+
+- **结果 ID：** `HR-B1CAD13C5132A17D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP08-AMENDMENT-01-LIVE-CODEX-RECONCILIATION`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Amendment 01 live Codex receipt reconciliation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The repaired second Codex family attempt was started with the explicit gpt-5.6-luna model and max reasoning effort, after the first attempt had been proven to be a pre-inference runtime-scratch startup failure. The outer execution tool then reported that its output exceeded the available model co…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 07 Synthetic Fixture / Answer Freeze](../reports/operations/ignition-138-step07-fixture-answer-freeze.md)
+
+- **结果 ID：** `HR-D90E753541F60132`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP07-FIXTURE-ANSWER-FREEZE`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 07 Synthetic Fixture / Answer Freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task138 now has a new disposable fixture family, separate from Task137 dispatch and attempt identities. Its seven-row table applies the deterministic rule eligible == true and score = 60, then sorts by (score, id). With the frozen synthetic nonce abcdef0123456789abcdef01, Pointfire computes the i…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 06 Capability / Auth / Billing Re-attestation](../reports/operations/ignition-138-step06-capability-reauth.md)
+
+- **结果 ID：** `HR-049665D816CA48A6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP06-CAPABILITY-REAUTH`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 06 Capability / Auth / Billing Re-attestation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Before any real inference, the current public Codex CLI was re-observed in a disposable read-only probe directory. The observed version is codex-cli 0.144.4; the public exec --help interface digest is 9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19, and the binary digest is 13406…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-138 — Amendment-01 Step 06 Dynamic Admission](../reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md)
+
+- **结果 ID：** `HR-E053E34801E5F2CC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP06-AMENDMENT-01-DYNAMIC-ADMISSION`
+- **问题：** 此来源记录了什么：IGNITION-138 — Amendment-01 Step 06 Dynamic Admission？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The census found five installed Agent candidates but admitted none at the initial boundary. A read-only public re-attestation then selected Codex CLI because its current surface is the most independently enforceable: JSONL and output-schema results, --ephemeral, --sandbox read-only, ignored user…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 05 Runtime Scratch Adversarial Matrix](../reports/operations/ignition-138-step05-runtime-scratch-adversarial-matrix.md)
+
+- **结果 ID：** `HR-BCEE4731C5F039A7`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP05-RUNTIME-SCRATCH-ADVERSARIAL-MATRIX`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 05 Runtime Scratch Adversarial Matrix？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The R3 filesystem boundary was exercised against the required negative and positive cases. The task workspace must have no write bits; a scratch parent inside the task workspace, formal repository or control repository is rejected before process start. Symlink escape is rejected. The domain contr…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 04 Codex Live Adapter R3](../reports/operations/ignition-138-step04-codex-adapter-r3.md)
+
+- **结果 ID：** `HR-7537E6849DB277E0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP04-CODEX-ADAPTER-R3`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 04 Codex Live Adapter R3？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The Codex adapter now has an explicit R3 mode in which the disposable task workspace remains read-only and --sandbox read-only remains bound in the literal argv. Runtime HOME, TMPDIR, CODEXHOME and XDG cache/config/runtime paths are redirected to one empty, attempt-specific writable scratch lease…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle](../reports/operations/ignition-138-step03-live-process-transport-scratch-lifecycle.md)
+
+- **结果 ID：** `HR-A2E1D8A6EC4E2CF4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP03-LIVE-PROCESS-TRANSPORT-SCRATCH-LIFECYCLE`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The existing literal-argv, explicit-cwd, bounded stdout/stderr and process-group transport now accepts an attempt-specific RuntimeScratchLease. The lease is created as an empty 0700 directory, records only metadata digests (relative names, types, modes and sizes; never runtime file contents), and…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 02 Deterministic Startup-Failure Reproduction](../reports/operations/ignition-138-step02-filesystem-reproduction.md)
+
+- **结果 ID：** `HR-0A9930BE185EAEA8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP02-FILESYSTEM-REPRODUCTION`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 02 Deterministic Startup-Failure Reproduction？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** No model or live Codex invocation was started. A bounded Python subprocess harness was used to mimic only the public startup filesystem operations observed in Task137: create a helper directory/file under the effective CODEXHOME/HOME, create a runtime file under TMPDIR, and then emit one structur…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-138 — Step 00 Amendment-01 Local Executor Census](../reports/operations/ignition-138-step00-local-executor-census.md)
+
+- **结果 ID：** `HR-0DC8E1B43354E8DA`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP00-LOCAL-EXECUTOR-CENSUS`
+- **问题：** 此来源记录了什么：IGNITION-138 — Step 00 Amendment-01 Local Executor Census？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a read-only, observation-time census performed before any new Task138 live inference. The control material was refreshed from origin/relay/current@4ab09c3d6595f254577739ec1d87e64144c61803; the formal candidate observed by the census is 99389c846b6766ca8b373812ece4191660b6474f.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-138 — Step 00 Baseline Audit](../reports/operations/ignition-138-step00-baseline-audit.md)
+
+- **结果 ID：** `HR-4E1F3584ADABCBAB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `138-STEP00-BASELINE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260824-138 — Step 00 Baseline Audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The live control ref was refreshed before this task. origin/relay/current is 556dda03ec5019480e79d474910abe836f6f099e, which points to the IGNITION-138 task material at 6c7e01c5. The formal repository was fetched with --all --prune; its verified origin/main, remote refs/heads/main, and the new is…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-137 Step 14 — adversarial / fault matrix](../reports/operations/ignition-137-step14-fault-matrix.md)
+
+- **结果 ID：** `HR-DDB5C91E38C8934A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP14-FAULT-MATRIX`
+- **问题：** 此来源记录了什么：IGNITION-137 Step 14 — adversarial / fault matrix？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The inherited live fault matrix exercised 27 cases and returned allfailclosed=true: stale leases, executor/permission/workspace widening, workspace mutations, malformed results, wrong answers, duplicate dispatch/receipts, timeout/cancellation uncertainty, capability revocation and drift, privacy…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-137 Step 13 — Steering / Goal / Memory boundary](../reports/operations/ignition-137-step13-steering-goal-memory-boundary.md)
+
+- **结果 ID：** `HR-07F04C57755E61ED`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP13-STEERING-GOAL-MEMORY-BOUNDARY`
+- **问题：** 此来源记录了什么：IGNITION-137 Step 13 — Steering / Goal / Memory boundary？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** There is no validated structured result to absorb. The MALFORMEDRESULT startup receipt remains operational evidence only; it does not become Intent, Goal completion, Owner acceptance, or Memory content.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-137 Step 12 — obligation lifecycle](../reports/operations/ignition-137-step12-obligation-lifecycle.md)
+
+- **结果 ID：** `HR-4022B786A5D8EFF6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP12-OBLIGATION-LIFECYCLE`
+- **问题：** 此来源记录了什么：IGNITION-137 Step 12 — obligation lifecycle？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** No validated live completion occurred, so the historical LIVEEXTERNALINVOCATION obligation remains open with its original semantic ceiling: LIVEBRIDGEIMPLEMENTED / LIVECOMPLETIONNOTOBSERVED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-137 Step 11 — Hermes retry decision](../reports/operations/ignition-137-step11-hermes-retry-decision.md)
+
+- **结果 ID：** `HR-F974B5A400509D56`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP11-HERMES-RETRY-DECISION`
+- **问题：** 此来源记录了什么：IGNITION-137 Step 11 — Hermes retry decision？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Hermes live-hermes-136 remains RECONCILIATIONREMAINSOPEN. Because Step 01 did not prove RECONCILEDNOOBSERVEDSIDEEFFECT and did not establish a complete transport/deadline cause, the task’s retry conditions are not all satisfied.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-137 Step 10 — independent validation outcome](../reports/operations/ignition-137-step10-independent-validation-outcome.md)
+
+- **结果 ID：** `HR-6702D7FFB571D921`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP10-INDEPENDENT-VALIDATION-OUTCOME`
+- **问题：** 此来源记录了什么：IGNITION-137 Step 10 — independent validation outcome？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The Step 09 receipt round-trips through the strict live-executor-receipt-r2 contract with digest 125c385e5d38ab7c922128ec015423797b6875bb98f8ca4359ee6336a163d83d. Its state is MALFORMEDRESULT, exit code is 1, and no structured result exists.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-137 Step 09 — one real Codex synthetic/read-only attempt](../reports/operations/ignition-137-step09-live-codex-attempt.md)
+
+- **结果 ID：** `HR-B22454BA8F3E5429`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP09-LIVE-CODEX-ATTEMPT`
+- **问题：** 此来源记录了什么：IGNITION-137 Step 09 — one real Codex synthetic/read-only attempt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The single authorized Codex live dispatch ran at 2026-08-24 06:16:05 UTC with a fresh codex-cli 0.144.4 lease, repo.read ceiling, disposable fixture, strict output schema, 900-second deadline, depth-one child guard, --skip-git-repo-check, read-only sandbox, and no new billing authority.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-137 Step 08 — dry-run readiness](../reports/operations/ignition-137-step08-dry-run-readiness.md)
+
+- **结果 ID：** `HR-0854899207C74D5D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP08-DRY-RUN-READINESS`
+- **问题：** 此来源记录了什么：IGNITION-137 Step 08 — dry-run readiness？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: READYFORONELIVECODEXATTEMPT
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-137 — Step 07 Independent OS Validation R2](../reports/operations/ignition-137-step07-independent-os-validation-r2.md)
+
+- **结果 ID：** `HR-E7D89C150ADBA4AE`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP07-INDEPENDENT-OS-VALIDATION-R2`
+- **问题：** 此来源记录了什么：IGNITION-20260824-137 — Step 07 Independent OS Validation R2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** LiveIndependentValidator now accepts an executor result only in RETURNEDUNVALIDATED state and emits a separate ignition-137-independent-validation-receipt-r2. That receipt binds the task, dispatch, attempt, executor, adapter, capability-lease digest, workspace reference and before/after digests,…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-137 — Step 06 Codex Adapter R2 Exact Output Contract](../reports/operations/ignition-137-step06-codex-exact-output-contract.md)
+
+- **结果 ID：** `HR-7E853C8821F44F01`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP06-CODEX-EXACT-OUTPUT-CONTRACT`
+- **问题：** 此来源记录了什么：IGNITION-20260824-137 — Step 06 Codex Adapter R2 Exact Output Contract？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Strict Task137 envelopes now cause the Codex adapter to pass literal argv with --json, --ephemeral, --ignore-user-config, --ignore-rules, --sandbox read-only, an externally materialized read-only --output-schema, and explicit disposable --cd. The adapter does not use shell interpolation, --output…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-137 — Step 05 Synthetic Read-Only Fixture](../reports/operations/ignition-137-step05-synthetic-readonly-fixture.md)
+
+- **结果 ID：** `HR-DA6EAE8E6291205C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP05-SYNTHETIC-READONLY-FIXTURE`
+- **问题：** 此来源记录了什么：IGNITION-20260824-137 — Step 05 Synthetic Read-Only Fixture？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task137 now uses a fresh disposable fixture containing README.txt, nonce.txt, and table.json. The nonce is a per-attempt synthetic 24-character lowercase hex value. The table rule is explicit: retain rows with eligible=true and score=50, then sort by (score, id). The expected selection is row-a,…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-137 — Step 04 Child Context and Reentrancy Guard](../reports/operations/ignition-137-step04-live-child-reentrancy-guard.md)
+
+- **结果 ID：** `HR-4798FDBCB413611B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP04-LIVE-CHILD-REENTRANCY-GUARD`
+- **问题：** 此来源记录了什么：IGNITION-20260824-137 — Step 04 Child Context and Reentrancy Guard？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The live Codex adapter now materializes at most one child context. A parent at depth 0 may issue a depth-1 child with POINTFIRELIVECHILDDEPTH=1; a depth-1 context cannot issue another child, and a Codex adapter created at depth 1 refuses to build a dispatch argv.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-137 — Step 03 Codex Live Eligibility Re-attestation](../reports/operations/ignition-137-step03-codex-live-eligibility.md)
+
+- **结果 ID：** `HR-589863C3BD7FF8FD`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP03-CODEX-LIVE-ELIGIBILITY`
+- **问题：** 此来源记录了什么：IGNITION-20260824-137 — Step 03 Codex Live Eligibility Re-attestation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The current public Codex CLI was re-observed on the disposable probe surface: codex-cli 0.144.4, with exec --help digest 9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19. The public boundary includes --json, --output-schema, --ephemeral, --ignore-user-config, --ignore-rules, --san…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-137 — Step 02 Timeout / Timestamp / Process Closeout R2](../reports/operations/ignition-137-step02-timeout-process-closeout-r2.md)
+
+- **结果 ID：** `HR-5C77EDF677C622FF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP02-TIMEOUT-PROCESS-CLOSEOUT-R2`
+- **问题：** 此来源记录了什么：IGNITION-20260824-137 — Step 02 Timeout / Timestamp / Process Closeout R2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The live transport now records separate wall-clock startedat and endedat, monotonic elapsed time, the requested timeout, whether termination was requested, signals sent, final process-group status, first public-event latency, and stdout/stderr byte counts plus SHA-256 digests. Raw stdout and stde…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation](../reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md)
+
+- **结果 ID：** `HR-B00BBD6F7FEA949F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP01-HERMES-TIMEOUT-RECONCILIATION`
+- **问题：** 此来源记录了什么：IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The Task136 attempt was inspected without dispatching Hermes again. Its public receipt is live-hermes-136 / live-hermes-136-initial, with TIMEDOUTEFFECTUNKNOWN, equal historical workspace digests, no public events, no session pointer, and cancelstate=UNKNOWN.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260824-137 — Step 00 Baseline Audit](../reports/operations/ignition-137-step00-baseline-audit.md)
+
+- **结果 ID：** `HR-66AD322D25919EEA`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `137-STEP00-BASELINE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260824-137 — Step 00 Baseline Audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The live control ref was refreshed before this task. origin/relay/current is e5529e107e2fbed9bddf7b9e0b621fae477727cb, whose task pointer is IGNITION-137 and whose task material is fc0ad277.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-135 Step 02 — deterministic projection preflight](../reports/operations/ignition-135-step02-projection-preflight.md)
+
+- **结果 ID：** `HR-60C1B4D3B3D1D0F5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `135-STEP02-PROJECTION-PREFLIGHT`
+- **问题：** 此来源记录了什么：IGNITION-135 Step 02 — deterministic projection preflight？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 本步把 full suite 前的 generated-output cleanliness 变成显式、只读、可机器判定的 preflight。tools/runprojectionpreflight.py --check 从自身路径推导 repository/application root，在 ignition/ 作为 subprocess cwd，逐项执行 contract 中的 --check/validator 命令；不会自动 regeneration。--record 是单独的、显式的 receipt 写入动作。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-135 Step 01 — Canonical full regression runner](../reports/operations/ignition-135-step01-full-regression-runner.md)
+
+- **结果 ID：** `HR-301B77606275333C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `135-STEP01-FULL-REGRESSION-RUNNER`
+- **问题：** 此来源记录了什么：IGNITION-20260822-135 Step 01 — Canonical full regression runner？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The repository now has one explicit orchestration wrapper, ignition/tools/runfullregression.py, and one machine-readable contract at ignition/data/operations/full-regression-runner-r1.json.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-135 Step 00 — Fresh baseline and exact failure inventory](../reports/operations/ignition-135-step00-failure-inventory.md)
+
+- **结果 ID：** `HR-885CD7549621BD64`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `135-STEP00-FAILURE-INVENTORY`
+- **问题：** 此来源记录了什么：IGNITION-20260822-135 Step 00 — Fresh baseline and exact failure inventory？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Baseline is clean main@421a41462e26f8323c7b811e61d47f26232d61b5, obtained from the live formal remote after refreshing 1111/origin/relay/current@43459ecaf9952163d4638c0bf9c76da99ff73b13. The supplied Codex output directory is non-Git and was not edited.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-134 Step 14 — Residual debt and projection hygiene closeout](../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
+
+- **结果 ID：** `HR-3789B2D3CAF1625C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP14-RESIDUAL-DEBT-PROJECTION-HYGIENE`
+- **问题：** 此来源记录了什么：IGNITION-134 Step 14 — Residual debt and projection hygiene closeout？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The terminal Task134 candidate keeps the residual ledger bounded and makes the Current projections decidable.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-134 Step 14 — Human Surface semantic audit](../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
+
+- **结果 ID：** `HR-6772A74D740663B7`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP14-HUMAN-SURFACE-SEMANTIC-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-134 Step 14 — Human Surface semantic audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is the final item-by-item audit after the Task134 terminal Current projection was regenerated. It records provenance decisions; it does not rewrite the historical Step13 audit or raise any claim ceiling.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure](../reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md)
+
+- **结果 ID：** `HR-D8277885E64BF9E8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP13-RESIDUAL-DEBT-PROJECTION-HYGIENE`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Canonical Current now advances from terminal Task133 to non-terminal Task134, while the latest architecture-changing task remains Task129 and currentiterationboundary=134 remains only the deprecated compatibility alias of the formal ordinal. Task133 receipts, schemas, fixtures, residual provenanc…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 13 — Human Surface semantic re-audit](../reports/operations/ignition-134-step13-human-surface-semantic-audit.md)
+
+- **结果 ID：** `HR-50499CA77F223F3E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP13-HUMAN-SURFACE-SEMANTIC-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 13 — Human Surface semantic re-audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All 11 named source-hash drifts were audited again after the Task134 canonical Current identity migration and Current projection regeneration. Each remains SOURCECHANGEDHUMANSURFACESTILLSEMANTICALLYVALID; regeneration-required, superseded, hash-only, and actual-conflict counts are all zero.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 12 — Residual adversarial matrix](../reports/operations/ignition-134-step12-residual-adversarial-matrix.md)
+
+- **结果 ID：** `HR-C1E3CB3130D2DF76`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP12-RESIDUAL-ADVERSARIAL-MATRIX`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 12 — Residual adversarial matrix？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The 18-case matrix exercises the residual comparator against an inherited unchanged tuple, object/count growth, same-count replacement, failure-dimension growth, baseline/current count-set mismatches, forged baseline/current fingerprints, three new-residual classifications, source-command changes…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 11 — Current projection closure](../reports/operations/ignition-134-step11-current-projection-closure.md)
+
+- **结果 ID：** `HR-BEF5D05D5390FD53`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP11-CURRENT-PROJECTION-CLOSURE`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 11 — Current projection closure？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 10's actionable current failures were deterministic projection drift, not permission to enlarge a residual. The native builders were run in their normal write mode. Function asset census followed by deep adjudication produced 5623 canonical cards; the census and 46-check function closure bot…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 10 — Full unittest discovery](../reports/operations/ignition-134-step10-full-unittest-discovery.md)
+
+- **结果 ID：** `HR-74D7FD233721374F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP10-FULL-UNITTEST-DISCOVERY`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 10 — Full unittest discovery？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: TERMINALFAILURESRECORDED
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 09 — SymPy environment contract](../reports/operations/ignition-134-step09-sympy-environment-contract.md)
+
+- **结果 ID：** `HR-7912554F9BB12EBC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP09-SYMPY-ENVIRONMENT-CONTRACT`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 09 — SymPy environment contract？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The repository declares sympy==1.14.0, z3-solver==4.16.0.0 and jsonschema==4.26.0 in ignition/requirements-foundation.txt. A temporary isolated foundation venv installed exactly those declared versions without modifying the repository, external agent configuration, authentication, or any secret-b…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 08 — Residual sealing and baseline preservation](../reports/operations/ignition-134-step08-residual-sealing-r1.md)
+
+- **结果 ID：** `HR-9E9CC07C265F9AE3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP08-RESIDUAL-SEALING-R1`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 08 — Residual sealing and baseline preservation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The residual builder was corrected so a current repair does not erase the debt it repaired. It now reads only the prior ledger's baseline tuple—objects, failure dimensions and baseline command—while recomputing the current tuple from live validators. The current observation is never reused as the…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh](../reports/operations/ignition-134-step07-human-surface-fingerprint-refresh.md)
+
+- **结果 ID：** `HR-314D6D340FDA2A7B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP07-HUMAN-SURFACE-FINGERPRINT-REFRESH`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The 11 source revisions approved in Step 06 were written into the materiality manifest and the corresponding human-entry 来源指纹 fields. The operation changed no human explanation, machine-record fingerprint, disposition, M/E field, or claim ceiling. No source hash was recomputed for an entry outsid…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit](../reports/operations/ignition-134-step06-human-surface-semantic-audit.md)
+
+- **结果 ID：** `HR-9AAEA8346E63B9A2`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP06-HUMAN-SURFACE-SEMANTIC-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All 11 named IDs were audited independently against their declared source and human entry. The result is 11 × SOURCECHANGEDHUMANSURFACESTILLSEMANTICALLYVALID, with zero regeneration-required cases, zero superseded cases, zero hash-only bookkeeping cases, and zero actual semantic conflicts.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism](../reports/operations/ignition-134-step05-current-path-manifest-r1.md)
+
+- **结果 ID：** `HR-541C9F6FD2E3A890`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP05-CURRENT-PATH-MANIFEST-R1`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The manifest was regenerated from the live classification engine after the Step 04 audit. Before regeneration, the Task134 working tree had 2,978 tracked paths and 2,720 manifest rows with missing=258; after the Step 05 artifacts were present and the manifest was generated, the live tree and mani…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit](../reports/operations/ignition-134-step04-path-rules-completeness-r1.md)
+
+- **结果 ID：** `HR-670FC055B0DC389F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP04-PATH-RULES-COMPLETENESS-R1`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The existing ordered path rules cover all required current planes without an authoritative allowlist expansion:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 03 — Current path manifest contract audit](../reports/operations/ignition-134-step03-path-manifest-contract-audit.md)
+
+- **结果 ID：** `HR-D882BCF095BAADDD`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP03-PATH-MANIFEST-CONTRACT-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 03 — Current path manifest contract audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The contract audit selects方案 A: classification-manifest.jsonl remains the sole Current generated snapshot of the live path-classification engine. This is supported by the validator's source contract and by its --check behavior, which compares the live tracked set to the committed manifest and rep…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 02 — Residual delta gate](../reports/operations/ignition-134-step02-residual-delta-gate-r1.md)
+
+- **结果 ID：** `HR-3BBF97C58B1CEF8B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP02-RESIDUAL-DELTA-GATE-R1`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 02 — Residual delta gate？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The residual comparator now recomputes baseline and current fingerprints from the count, object set and failure-dimension set. It fails closed when an inherited residual grows, replaces an object at the same count, changes failure dimensions, changes its source command without an explicit migrati…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 01 — Residual Ledger R1](../reports/operations/ignition-134-step01-residual-ledger-r1.md)
+
+- **结果 ID：** `HR-5E86B0C4A2323D56`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP01-RESIDUAL-LEDGER-R1`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 01 — Residual Ledger R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task134 now has one machine-readable Current Residual Ledger at ignition/data/operations/residual-ledger-r1.json, validated by ignition/tools/validateresidualledger.py. It contains five stable residual IDs:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit](../reports/operations/ignition-134-step00-residual-archaeology.md)
+
+- **结果 ID：** `HR-BA75DD3140D0B0A0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `134-STEP00-RESIDUAL-ARCHAEOLOGY`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: BASELINEREPRODUCED
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-132 Step 12 — Targeted and Bounded Regression Closure](../reports/operations/ignition-132-step12-regression-closure.md)
+
+- **结果 ID：** `HR-7EFC33A583446487`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `132-STEP12-REGRESSION-CLOSURE`
+- **问题：** 此来源记录了什么：IGNITION-20260822-132 Step 12 — Targeted and Bounded Regression Closure？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: COMPLETED WITH CLASSIFIED RESIDUALS
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-132 Step 11 — Residual and Regression Audit](../reports/operations/ignition-132-step11-residual-audit.md)
+
+- **结果 ID：** `HR-1306015AABA6E51B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `132-STEP11-RESIDUAL-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260822-132 Step 11 — Residual and Regression Audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: PASS WITH CLASSIFIED RESIDUALS
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-132 Step 10 — Current Surface Recompilation and Stable Prose](../reports/operations/ignition-132-step10-surface-recompilation.md)
+
+- **结果 ID：** `HR-722A8BC0A3BFD244`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `132-STEP10-SURFACE-RECOMPILATION`
+- **问题：** 此来源记录了什么：IGNITION-20260822-132 Step 10 — Current Surface Recompilation and Stable Prose？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The seven compiler-owned surfaces were regenerated from the terminalized canonical Current source: homepage identity, project current state, AI cold start, AI handoff, machine entry, architecture, and State Changelog. Stable prose now explains the task-role split without hand-copying volatile tas…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-132 Step 09 — Canonical Current Migration](../reports/operations/ignition-132-step09-canonical-current-migration.md)
+
+- **结果 ID：** `HR-B45BAB5B6A15098B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `132-STEP09-CANONICAL-CURRENT-MIGRATION`
+- **问题：** 此来源记录了什么：IGNITION-20260822-132 Step 09 — Canonical Current Migration？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The canonical source now records IGNITION-20260822-132 as the current formal task with COMPLETEDWITHCLASSIFIEDRESIDUALS and terminal=true. The content-owned lifecycle is RELEASEREADY and terminal. Current Facts, Current Snapshot, and all compiler-owned Current surfaces were regenerated from that…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix](../reports/operations/ignition-132-step08-adversarial-matrix.md)
+
+- **结果 ID：** `HR-97478CB8DCEEBA3A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `132-STEP08-ADVERSARIAL-MATRIX`
+- **问题：** 此来源记录了什么：IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The Step 08 matrix contains 14 explicit fixtures. It covers stale canonical Current source, stale lifecycle, forged Snapshot, architecture-task promotion, witness/task mismatch, matching SHA with mismatched task identity, rollback, unknown-task-without-contract, stale compiler output, legal histo…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding](../reports/operations/ignition-132-step07-task-id-binding.md)
+
+- **结果 ID：** `HR-4DB4D409044421B2`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `132-STEP07-TASK-ID-BINDING`
+- **问题：** 此来源记录了什么：IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 07 binds the observation-time publication witness to the formal result, canonical Current source, lifecycle, and release candidate. The latest architecture-changing task remains IGNITION-20260821-129; it is deliberately not promoted to the current formal task.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-132 Step 00 — Canonical Current stale-source reproduction](../reports/operations/ignition-132-step00-canonical-current-audit.md)
+
+- **结果 ID：** `HR-890A09F2962945D8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `132-STEP00-CANONICAL-CURRENT-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260822-132 Step 00 — Canonical Current stale-source reproduction？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: BASELINEREPRODUCED
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-131 Step 00 — Release publication paradox audit](../reports/operations/ignition-131-step00-publication-paradox-audit.md)
+
+- **结果 ID：** `HR-CBD98F3C6861AA2B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `131-STEP00-PUBLICATION-PARADOX-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-131 Step 00 — Release publication paradox audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This audit was completed before any IGNITION-131 repair. The formal remote main ref and an isolated fresh checkout both resolve to 11e5ed0f8f16f7f315179b540f08018c2e6e45d1, the terminal IGNITION-130 tip.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-130 Step 11 — residual reclassification](../reports/operations/ignition-130-step11-residual-reclassification.md)
+
+- **结果 ID：** `HR-9E6A888145F934B6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `130-STEP11-RESIDUAL-RECLASSIFICATION`
+- **问题：** 此来源记录了什么：IGNITION-130 Step 11 — residual reclassification？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task 129’s terminal receipt remains the source record. The following items are retained as historical or environmental residuals; none is a new Task 130 Current Surface regression.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-130 Step 00 — Current surface split-brain audit](../reports/operations/ignition-130-step00-current-surface-audit.md)
+
+- **结果 ID：** `HR-2976C727FB36904E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `130-STEP00-CURRENT-SURFACE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-130 Step 00 — Current surface split-brain audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The audit found real, pre-repair contradictions; this report does not rewrite them as a clean baseline.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-129 Step 20 — Current architecture/state synchronization](../reports/operations/ignition-129-step20-current-sync.md)
+
+- **结果 ID：** `HR-D340ADC528DC460F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `129-STEP20-CURRENT-SYNC`
+- **问题：** 此来源记录了什么：IGNITION-129 Step 20 — Current architecture/state synchronization？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step 20 synchronizes the repository Current surface after the R1 steering implementation. The change is classified ARCHITECTURECHANGED because Steering / Intent / Goal / Obligation R1 is added to the existing Ignition OS / driver identity and to the single registry-derived system map.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260821-129 Step 00 — Steering gap audit](../reports/operations/ignition-129-step00-steering-audit.md)
+
+- **结果 ID：** `HR-61F3531A51705A76`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `129-STEP00-STEERING-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260821-129 Step 00 — Steering gap audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 0064897c5537cc4a20eb7b03824841a9d6a608d6
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-128 Step 04 — deterministic rebuild and regression](../reports/operations/ignition-128-step04-regression.md)
+
+- **结果 ID：** `HR-E1FC77026A23A989`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `128-STEP04-REGRESSION`
+- **问题：** 此来源记录了什么：IGNITION-128 Step 04 — deterministic rebuild and regression？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The current-facts JSON and Markdown projections were rebuilt twice. Their two passes were byte-identical (3fd2156c... and c2cebc4b...), and the generator check passed. The canonical lineage validator, integrated CURRENTSTATESYNC validator, 17 scoped tests, four negative fixture classes, Human vis…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-128 Step 00 — Current-State semantic audit](../reports/operations/ignition-128-step00-current-state-audit.md)
+
+- **结果 ID：** `HR-BD65D2AF1B1AFED8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `128-STEP00-CURRENT-STATE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-128 Step 00 — Current-State semantic audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Formal baseline: origin/main@681f86d79b1112af3c07e0f8091335860c237ef2. Control source: 1111 relay/current@3b6d27441395492cf633e53d3d1e985d0b2ec933. The formal main fetch and baseline equality check passed before this audit.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit](../reports/operations/ignition-127-step00-rebase-audit.md)
+
+- **结果 ID：** `HR-F5FB13BFBFDFA4C8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `127-STEP00-REBASE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: COMPLETED (repository-local audit only)
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260818-126 — Epistemic Structural Induction R0 progress](../reports/operations/ignition-126-progress.md)
+
+- **结果 ID：** `HR-3F9D23D382DA2A17`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `126-PROGRESS`
+- **问题：** 此来源记录了什么：IGNITION-20260818-126 — Epistemic Structural Induction R0 progress？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This task-branch ledger records repository evidence only. origin/main stays unchanged until the final ordinary fast-forward gate. Task 125 is not executed by this run and remains DEFERREDPENDINGREBASE.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260817-124 — OS Control Plane R2 progress](../reports/operations/ignition-124-progress.md)
+
+- **结果 ID：** `HR-BB7BAE0C9846BCB2`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `124-PROGRESS`
+- **问题：** 此来源记录了什么：IGNITION-20260817-124 — OS Control Plane R2 progress？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is the task-branch progress surface for the independently pushed Step 00–12 ledger. It records repository evidence and bounded claims only. The formal main tip does not move during the task branch run.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [IGNITION-20260816-123 架构真相同步 R1 夜班进度](../reports/operations/ignition-123-nightshift-progress.md)
 
 - **结果 ID：** `HR-D7C4CA0BBA65194F`
@@ -2250,6 +4447,32 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [点火 Operation-specific Playbooks R1](../docs/operations/ignition-operation-playbooks-r1.md)
+
+- **结果 ID：** `HR-CD008D2B8134B963`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：点火 Operation-specific Playbooks R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Only operations whose registry status is CURRENT or CURRENTBOUNDED and whose AI callability is PUBLIC or PUBLICBOUNDED receive a callable playbook. Required inputs, outputs, status, mode, read set, authorities, validators and claim ceiling below are derived from the registry rather than copied as…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260829-148 typed change-propagation impact report](../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
+
+- **结果 ID：** `HR-EABED7BD3564479D`
+- **日期：** 2026-08-29
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260829-148 typed change-propagation impact report？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [IGNITION-20260815-120 typed change-propagation impact report](../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
 
 - **结果 ID：** `HR-9099ADC0CE6C7E7C`
@@ -2533,6 +4756,19 @@
 - **问题：** 此来源记录了什么：Task 115 Runtime Prior-Art Adoption Review R0？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 审计对象是 Task 115 的公开 Draft prior art，不是当前实现的 merge source。PR 195 Round 1: executor-neutral action/observation boundary schemas (Draft) 仍是 OPEN/Draft，基于旧 main；本轮没有 merge、rebase、cherry-pick 或关闭它。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [OS Control Plane R2 gap audit — IGNITION-20260817-124](../reports/architecture/os-control-plane-r2-gap-audit.md)
+
+- **结果 ID：** `HR-A904C867936C20D9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：OS Control Plane R2 gap audit — IGNITION-20260817-124？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The existing Supervisor R0 was run with two dependency-ready children, ready-a and ready-b, whose write targets do not overlap. Both were accepted and the episode reached EPISODECOMPLETEDVALIDATED, but the trace was strictly ready-a → ready-b and the maximum observed concurrency was 1. The curren…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -3131,6 +5367,214 @@
 - **问题：** 此来源记录了什么：IGNITION-121Q6C 执行结果？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-147 result](../agent-results/IGNITION-20260828-147-result.md)
+
+- **结果 ID：** `HR-3548680B422987DD`
+- **日期：** 2026-08-28
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260828-147 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260828-147 Formal task ordinal: 147
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-146 result](../agent-results/IGNITION-20260828-146-result.md)
+
+- **结果 ID：** `HR-FFCC6D11834EEE16`
+- **日期：** 2026-08-28
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260828-146 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260828-146 Formal task ordinal: 146
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-145 result](../agent-results/IGNITION-20260828-145-result.md)
+
+- **结果 ID：** `HR-5CE620910139A348`
+- **日期：** 2026-08-28
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260828-145 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260828-145 Formal task ordinal: 145
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260828-144 result](../agent-results/IGNITION-20260828-144-result.md)
+
+- **结果 ID：** `HR-8DE5531764311043`
+- **日期：** 2026-08-28
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260828-144 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260828-144 Formal task ordinal: 144
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-143 result](../agent-results/IGNITION-20260827-143-result.md)
+
+- **结果 ID：** `HR-5D91AC36F8249920`
+- **日期：** 2026-08-27
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260827-143 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260827-143 Formal task ordinal: 143
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260827-142 result](../agent-results/IGNITION-20260827-142-result.md)
+
+- **结果 ID：** `HR-50FD13FEC9100C58`
+- **日期：** 2026-08-27
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260827-142 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260827-142 Formal task ordinal: 142
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260826-141 result](../agent-results/IGNITION-20260826-141-result.md)
+
+- **结果 ID：** `HR-E3529305643DDA11`
+- **日期：** 2026-08-26
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260826-141 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The exact pushed Task141 task-branch tip 6f30c9aff2b64141d4a96e32a57deb64eb89b97a was independently cloned from the remote task branch. The fresh clone had 3436 tracked paths, no copied venv or cache, and passed the clean 25-check projection preflight.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1](../agent-results/IGNITION-20260825-139-result.md)
+
+- **结果 ID：** `HR-3697FEF2B08E4800`
+- **日期：** 2026-08-25
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260825-139
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260823-136 — Live External Executor Bridge R1](../agent-results/IGNITION-20260823-136-result.md)
+
+- **结果 ID：** `HR-6A9B73C834A5AF36`
+- **日期：** 2026-08-23
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260823-136 — Live External Executor Bridge R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260823-136
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-135 — Full Regression Closure & Test Environment R1](../agent-results/IGNITION-20260822-135-result.md)
+
+- **结果 ID：** `HR-E8430D8482271D1D`
+- **日期：** 2026-08-22
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260822-135 — Full Regression Closure & Test Environment R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260822-135
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-134 — Residual Debt & Projection Hygiene R1](../agent-results/IGNITION-20260822-134-result.md)
+
+- **结果 ID：** `HR-21714DD5B17E54D7`
+- **日期：** 2026-08-22
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260822-134 — Residual Debt & Projection Hygiene R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260822-134
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-133 — Iteration Boundary Semantics R1](../agent-results/IGNITION-20260822-133-result.md)
+
+- **结果 ID：** `HR-272476F707875492`
+- **日期：** 2026-08-22
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260822-133 — Iteration Boundary Semantics R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260822-133
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260822-132 — Canonical Current Advancement & Release Transaction R1](../agent-results/IGNITION-20260822-132-result.md)
+
+- **结果 ID：** `HR-8D16219ED78008E0`
+- **日期：** 2026-08-22
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260822-132 — Canonical Current Advancement & Release Transaction R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260822-132
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260821-130 — Terminal Result](../agent-results/IGNITION-20260821-130-result.md)
+
+- **结果 ID：** `HR-C56DD758323901B9`
+- **日期：** 2026-08-21
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260821-130 — Terminal Result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: COMPLETEDWITHCLASSIFIEDRESIDUALS
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260821-129 — Terminal Result](../agent-results/IGNITION-20260821-129-result.md)
+
+- **结果 ID：** `HR-2DEB299B702D6DFE`
+- **日期：** 2026-08-21
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260821-129 — Terminal Result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: COMPLETEDWITHCLASSIFIEDRESIDUALS
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260820-127 执行结果](../agent-results/IGNITION-20260820-127-result.md)
+
+- **结果 ID：** `HR-BF69E7F307F0B285`
+- **日期：** 2026-08-20
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260820-127 执行结果？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 状态：COMPLETEDWITHCLASSIFIEDRESIDUALS
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

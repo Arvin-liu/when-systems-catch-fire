@@ -21,6 +21,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          # Generated human-result products are bound to the exact source
+          # commit. A pull_request merge SHA has the same tree here but a
+          # synthetic identity, so validate the published candidate head.
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

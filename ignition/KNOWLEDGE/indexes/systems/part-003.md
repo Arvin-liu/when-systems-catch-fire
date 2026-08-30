@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D406 defines a mechanism_model within the point-fire framework. Core: 中文：M9的g_eff_macro = \(1-R_irreversible\)·g_ef](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-eaecafe45c681a14 / Object D406 defines a mechanism_model within the point-fire framework. Core: 中文：M9的g_eff_macro = \(1-R_irreversible\)·g_ef
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D311, D406；被引用：—
+- [Object D407 defines a mechanism_model within the point-fire framework. Core: 中文：M10的传染链有自限：僵尸化降低ḡ→降低溢出→传染减速。但自限点在全局僵尸化附近](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-43feee556b385436 / Object D407 defines a mechanism_model within the point-fire framework. Core: 中文：M10的传染链有自限：僵尸化降低ḡ→降低溢出→传染减速。但自限点在全局僵尸化附近
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D407；被引用：—
+- [Object D408 defines a mechanism_model within the point-fire framework. Core: 中文：M11的连续极限下Jensen项∝\(dΦ/dt\)²·τ_min/2。τ_min→](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-7c0b4b19a54cbe7d / Object D408 defines a mechanism_model within the point-fire framework. Core: 中文：M11的连续极限下Jensen项∝\(dΦ/dt\)²·τ_min/2。τ_min→
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D394, D408；被引用：—
+- [Object D409 defines a mechanism_model within the point-fire framework. Core: 中文：M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D39](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1e800167d290aa25 / Object D409 defines a mechanism_model within the point-fire framework. Core: 中文：M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D39
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D388, D395, D409；被引用：—
+- [Object D410 defines a mechanism_model within the point-fire framework. Core: 中文：M13的四条不可逆线在\(p_max,n,K,τ_delay\)四维空间中划分3个有](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2d35e4be71a4c527 / Object D410 defines a mechanism_model within the point-fire framework. Core: 中文：M13的四条不可逆线在\(p_max,n,K,τ_delay\)四维空间中划分3个有
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D410；被引用：—
+- [Object D411 defines a mechanism_model within the point-fire framework. Core: 中文：M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统天然需要](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8f70d927b76b7eaf / Object D411 defines a mechanism_model within the point-fire framework. Core: 中文：M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统天然需要
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D411；被引用：—
+- [Object D412 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.2](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0809ebb83c709ce2 / Object D412 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.2
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D316, D412；被引用：—
+- [Object D413 defines a mechanism_model within the point-fire framework. Core: 中文：M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-74c835069d67893b / Object D413 defines a mechanism_model within the point-fire framework. Core: 中文：M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D301, D413；被引用：—
 - [Object D414 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I=\(1+m\)/2在有限n时有O\(1/n\)修正。有限系统比平均场预测更集中](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-f68460fd6c4659fb / Object D414 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I=\(1+m\)/2在有限n时有O\(1/n\)修正。有限系统比平均场预测更集中
@@ -2462,45 +2502,5 @@
 - [\| \[C-589\]\( \) \| \[皮屑屏障-微生态失配验证\]\( \) \| 头屑强度由微生态、皮脂、屏障和炎症共同决定；消除路径是](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-db4461c604226879 / \| \[C-589\]\( \) \| \[皮屑屏障-微生态失配验证\]\( \) \| 头屑强度由微生态、皮脂、屏障和炎症共同决定；消除路径是
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-58\]\( \) \| \[恒大\]\( \) \| 已购房者事实上走不了（沉没成本），身体在系统内心已撤回 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6cc3dfcfce6d1ace / \| \[C-58\]\( \) \| \[恒大\]\( \) \| 已购房者事实上走不了（沉没成本），身体在系统内心已撤回 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-596\]\( \) \| \[OrcaRouter智能分流机制验证\]\( \) \| 简单请求走低成本单](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aac8da2dac581cdf / \| \[C-596\]\( \) \| \[OrcaRouter智能分流机制验证\]\( \) \| 简单请求走低成本单
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-597\]\( \) \| \[模型异质性共享度倒U验证\]\( \) \| 完全同质导致 η_gate 下降，过度异质导致协同成本](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-45e02970d897c261 / \| \[C-597\]\( \) \| \[模型异质性共享度倒U验证\]\( \) \| 完全同质导致 η_gate 下降，过度异质导致协同成本
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-599\]\( \) \| \[仲裁机制让判断不必要验证\]\( \) \| 系统不需要预先知道哪个模型最强，而是通过并行+仲裁自动](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c21ff896e2f0f74e / \| \[C-599\]\( \) \| \[仲裁机制让判断不必要验证\]\( \) \| 系统不需要预先知道哪个模型最强，而是通过并行+仲裁自动
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-604\]\( \) \| \[仲裁模型能力上限预测验证\]\( \) \| 仲裁模型若不能识别某任务最优答案，系统性能无法突破该方](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ce1ede6375f9fb65 / \| \[C-604\]\( \) \| \[仲裁模型能力上限预测验证\]\( \) \| 仲裁模型若不能识别某任务最优答案，系统性能无法突破该方
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-605\]\( \) \| \[仲裁模型升级自举循环验证\]\( \) \| 仲裁模型升级后，即使并行候选模型不变，系统性能也应同步](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cb28c31db501a686 / \| \[C-605\]\( \) \| \[仲裁模型升级自举循环验证\]\( \) \| 仲裁模型升级后，即使并行候选模型不变，系统性能也应同步
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-622\]\( \) \| \[退出权空间案例02\]\( \) \| Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1b6d8de6a1ed8e31 / \| \[C-622\]\( \) \| \[退出权空间案例02\]\( \) \| Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-628\]\( \) \| \[退出权空间案例08\]\( \) \| η_gate↓→C↓→P_exit↓。信息门效率下降导致认知能力下降进而](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ab0ec2879de16f40 / \| \[C-628\]\( \) \| \[退出权空间案例08\]\( \) \| η_gate↓→C↓→P_exit↓。信息门效率下降导致认知能力下降进而
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

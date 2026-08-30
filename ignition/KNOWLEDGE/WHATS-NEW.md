@@ -4,6 +4,1590 @@
 
 ## 2026
 
+<a id="change-src-hr-eabed7bd3564479d"></a>
+### 2026-08-29 · IGNITION-20260829-148 typed change-propagation impact report
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [IGNITION-20260829-148-change-propagation-impact.md](../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
+- **资产卡：** [HR-EABED7BD3564479D](./ASSET-CARDS.md#asset-hr-eabed7bd3564479d)
+
+<a id="change-src-hr-cd008d2b8134b963"></a>
+### 2026-08-29 · 点火 Operation-specific Playbooks R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Only operations whose registry status is CURRENT or CURRENTBOUNDED and whose AI callability is PUBLIC or PUBLICBOUNDED receive a callable playbook. Required inputs, outputs, status, mode, read set, authorities, validators and claim ceiling below are derived from the registry rather than copied as…
+- **来源：** [ignition-operation-playbooks-r1.md](../docs/operations/ignition-operation-playbooks-r1.md)
+- **资产卡：** [HR-CD008D2B8134B963](./ASSET-CARDS.md#asset-hr-cd008d2b8134b963)
+
+<a id="change-src-hr-ffcc6d11834eee16"></a>
+### 2026-08-28 · IGNITION-20260828-146 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task ID: IGNITION-20260828-146 Formal task ordinal: 146
+- **来源：** [IGNITION-20260828-146-result.md](../agent-results/IGNITION-20260828-146-result.md)
+- **资产卡：** [HR-FFCC6D11834EEE16](./ASSET-CARDS.md#asset-hr-ffcc6d11834eee16)
+
+<a id="change-src-hr-faa569e781de6cb0"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 13 — bounded Repair Cycle A
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Repair Cycle A addressed one deterministic identity/projection root cause: task-identity-model-r1.json still pointed the release-candidate role at the superseded Task143 execution contract. The required Task144 progress binding was recorded in the preceding Step12 evidence commit.
+- **来源：** [ignition-144-step13-repair-cycle-a.md](../reports/operations/ignition-144-step13-repair-cycle-a.md)
+- **资产卡：** [HR-FAA569E781DE6CB0](./ASSET-CARDS.md#asset-hr-faa569e781de6cb0)
+
+<a id="change-src-hr-f3fa077147eb3592"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 19 — terminal engineering closure
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task144 is now terminal as COMPLETEDWITHOPENOBLIGATIONS with scopecomplete=true. The engineering phase is closed for the current scope on the frozen Task142 architecture baseline; the long-lived LIVEEXTERNALINVOCATION obligation remains independently OPEN / OWNERDEFERRED with its historical six-a…
+- **来源：** [ignition-144-step19-terminality.md](../reports/operations/ignition-144-step19-terminality.md)
+- **资产卡：** [HR-F3FA077147EB3592](./ASSET-CARDS.md#asset-hr-f3fa077147eb3592)
+
+<a id="change-src-hr-ea8833ef83822509"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 11 — cross-surface split-brain audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The current machine sources agree on Task144 as the active presentation-only closure task and Task142 as the latest architecture-changing task. The phase state, Owner production-brief template, deferred backlog, formal lifecycle, open-obligation registry and release lifecycle agree on their respe…
+- **来源：** [ignition-144-step11-cross-surface-audit.md](../reports/operations/ignition-144-step11-cross-surface-audit.md)
+- **资产卡：** [HR-EA8833EF83822509](./ASSET-CARDS.md#asset-hr-ea8833ef83822509)
+
+<a id="change-src-hr-e323136676310783"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 18 — formal main publication transaction
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task144 is release-ready after the exact candidate and fresh task-clone natural full suites passed 1278 tests / 0 failures / 0 errors / 0 skips. The formal task branch is prepared for an ordinary fast-forward from the observed formal main baseline 75c06887f59fa94868101707acc4b8386f41fe13.
+- **来源：** [ignition-144-step18-formal-main-publication.md](../reports/operations/ignition-144-step18-formal-main-publication.md)
+- **资产卡：** [HR-E323136676310783](./ASSET-CARDS.md#asset-hr-e323136676310783)
+
+<a id="change-src-hr-dbeaca436d666ee5"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 10 — minimum production state machine
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 10 reuses the Owner Editorial Authority contract from Step 02. Its machine-checked path is deliberately small:
+- **来源：** [ignition-144-step10-production-state-machine.md](../reports/operations/ignition-144-step10-production-state-machine.md)
+- **资产卡：** [HR-DBEACA436D666EE5](./ASSET-CARDS.md#asset-hr-dbeaca436d666ee5)
+
+<a id="change-src-hr-d6193a2d42722179"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 04 passes. The remaining engineering items are classified into DEFERREDOWNERREOPEN, HISTORICALPRESERVED, NONBLOCKINGUNKNOWN and an empty CLOSUREBLOCKER set.
+- **来源：** [ignition-144-step04-deferred-backlog.md](../reports/operations/ignition-144-step04-deferred-backlog.md)
+- **资产卡：** [HR-D6193A2D42722179](./ASSET-CARDS.md#asset-hr-d6193a2d42722179)
+
+<a id="change-src-hr-c8e8bd0ef22c1eaf"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 16 — bounded Repair Cycle C
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The first natural Task144 candidate full suite completed without a watchdog and preserved a clean worktree, but reported 1278 tests / 2 failures / 0 errors / 0 skips. The two failures were deterministic Task144 binding defects: the execution-contract validator did not yet recognize the current ta…
+- **来源：** [ignition-144-step16-repair-cycle-c.md](../reports/operations/ignition-144-step16-repair-cycle-c.md)
+- **资产卡：** [HR-C8E8BD0EF22C1EAF](./ASSET-CARDS.md#asset-hr-c8e8bd0ef22c1eaf)
+
+<a id="change-src-hr-a5bec8f9274ccae4"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 01 — Task143 smoke-output inventory
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 01 passes. The six outputs produced by Task143 are inventoried as capability smoke-test artifacts: three complete articles, one Book Project R1 and two mature book samples. Their existing bodies and canonical paths remain unchanged.
+- **来源：** [ignition-144-step01-smoke-output-inventory.md](../reports/operations/ignition-144-step01-smoke-output-inventory.md)
+- **资产卡：** [HR-A5BEC8F9274CCAE4](./ASSET-CARDS.md#asset-hr-a5bec8f9274ccae4)
+
+<a id="change-src-hr-9e9fe4af5f59921c"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 15 — engineering closure gate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The engineering phase is now closed for the current scope. The canonical phase state records ENGINEERINGPHASECLOSEDCURRENTSCOPE=true, the architecture identity remains frozen at Task142 / map 0.16.0, and the current-scope prose across the AI and publication entrypoints now says to wait for an Own…
+- **来源：** [ignition-144-step15-engineering-closure-gate.md](../reports/operations/ignition-144-step15-engineering-closure-gate.md)
+- **资产卡：** [HR-9E9FE4AF5F59921C](./ASSET-CARDS.md#asset-hr-9e9fe4af5f59921c)
+
+<a id="change-src-hr-8de5531764311043"></a>
+### 2026-08-28 · IGNITION-20260828-144 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task ID: IGNITION-20260828-144 Formal task ordinal: 144
+- **来源：** [IGNITION-20260828-144-result.md](../agent-results/IGNITION-20260828-144-result.md)
+- **资产卡：** [HR-8DE5531764311043](./ASSET-CARDS.md#asset-hr-8de5531764311043)
+
+<a id="change-src-hr-82257bb091665a11"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 06 — Current Facts / Project Current State sync
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 06 records a single current-state interpretation for the closure task. The canonical Current task is in progress and remains distinct from the latest architecture-changing Task142 baseline. The engineering phase is closing on the frozen architecture identity; the external executor obligation…
+- **来源：** [ignition-144-step06-current-state-sync.md](../reports/operations/ignition-144-step06-current-state-sync.md)
+- **资产卡：** [HR-82257BB091665A11](./ASSET-CARDS.md#asset-hr-82257bb091665a11)
+
+<a id="change-src-hr-688d328770edecb8"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 05 — engineering phase closure state
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 05 records the canonical closure target. The architecture remains frozen on the Task142 identity (0.16.0 map, latest architecture-changing task IGNITION-20260827-142); Task144 is a presentation/coordination task and does not add an architecture or Agent layer.
+- **来源：** [ignition-144-step05-phase-closure-state.md](../reports/operations/ignition-144-step05-phase-closure-state.md)
+- **资产卡：** [HR-688D328770EDECB8](./ASSET-CARDS.md#asset-hr-688d328770edecb8)
+
+<a id="change-src-hr-5ce620910139a348"></a>
+### 2026-08-28 · IGNITION-20260828-145 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task ID: IGNITION-20260828-145 Formal task ordinal: 145
+- **来源：** [IGNITION-20260828-145-result.md](../agent-results/IGNITION-20260828-145-result.md)
+- **资产卡：** [HR-5CE620910139A348](./ASSET-CARDS.md#asset-hr-5ce620910139a348)
+
+<a id="change-src-hr-4b0cb0982975e6bf"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 16 — candidate natural full regression
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The exact candidate projection preflight passed all 25 checks with a clean worktree before and after the check and no generated-output side effect.
+- **来源：** [ignition-144-step16-candidate-full-regression.md](../reports/operations/ignition-144-step16-candidate-full-regression.md)
+- **资产卡：** [HR-4B0CB0982975E6BF](./ASSET-CARDS.md#asset-hr-4b0cb0982975e6bf)
+
+<a id="change-src-hr-412946fbe63365c4"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 14 — bounded Repair Cycles B/C
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Repair Cycle A is the only cycle used. The repaired identity/projection closure suite passed naturally with 77 tests / 0 failures / 0 errors / 0 skips and 14/14 standalone validators, so Repair Cycles B and C are both recorded as NOTNEEDED.
+- **来源：** [ignition-144-step14-repair-cycles-b-c.md](../reports/operations/ignition-144-step14-repair-cycles-b-c.md)
+- **资产卡：** [HR-412946FBE63365C4](./ASSET-CARDS.md#asset-hr-412946fbe63365c4)
+
+<a id="change-src-hr-3548680b422987dd"></a>
+### 2026-08-28 · IGNITION-20260828-147 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task ID: IGNITION-20260828-147 Formal task ordinal: 147
+- **来源：** [IGNITION-20260828-147-result.md](../agent-results/IGNITION-20260828-147-result.md)
+- **资产卡：** [HR-3548680B422987DD](./ASSET-CARDS.md#asset-hr-3548680b422987dd)
+
+<a id="change-src-hr-33ec4d4ebcc6153f"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 16 — bounded Repair Cycle B
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The candidate closure gate exposed a deterministic projection mismatch after Step15: existing Foundation, deep-adjudication, Knowledge Experience, Fire Seeds, Human Surface, Current Facts and repository-path projections had not been refreshed against the closed-phase Current state and Task144 rec…
+- **来源：** [ignition-144-step16-repair-cycle-b.md](../reports/operations/ignition-144-step16-repair-cycle-b.md)
+- **资产卡：** [HR-33EC4D4EBCC6153F](./ASSET-CARDS.md#asset-hr-33ec4d4ebcc6153f)
+
+<a id="change-src-hr-2d51c9844b53d946"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 03 — Task143 smoke-output reclassification
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 03 passes. The six Task143 records in the existing Results Book registry, the Task143 publication portfolio, the canonical Results Book README and the editorial source manifest now share the same explicit status boundary:
+- **来源：** [ignition-144-step03-smoke-output-reclassification.md](../reports/operations/ignition-144-step03-smoke-output-reclassification.md)
+- **资产卡：** [HR-2D51C9844B53D946](./ASSET-CARDS.md#asset-hr-2d51c9844b53d946)
+
+<a id="change-src-hr-26d1f225ef8a1e1e"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 02 passes with a deliberately small machine boundary in data/governance/owner-editorial-authority-r1.json and its validator. The contract keeps DRAFTGENERATED, OWNERSELECTED and PUBLICATIONACCEPTED as separate fields/states. Only OWNEREXPLICITPRODUCTIONBRIEF or OWNEREXPLICITSELECTION can sup…
+- **来源：** [ignition-144-step02-owner-editorial-authority.md](../reports/operations/ignition-144-step02-owner-editorial-authority.md)
+- **资产卡：** [HR-26D1F225EF8A1E1E](./ASSET-CARDS.md#asset-hr-26d1f225ef8a1e1e)
+
+<a id="change-src-hr-1df2e57cdfc8ea82"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 09 — Owner Production Brief Contract R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The repository now has a deliberately empty production-brief template. It accepts either a structured brief or one sentence of Owner language, with fields for article/book kind, Owner-selected topic or direction, purpose, audience and optional source, avoidance, length and publication constraints.
+- **来源：** [ignition-144-step09-production-brief-contract.md](../reports/operations/ignition-144-step09-production-brief-contract.md)
+- **资产卡：** [HR-1DF2E57CDFC8EA82](./ASSET-CARDS.md#asset-hr-1df2e57cdfc8ea82)
+
+<a id="change-src-hr-1ab0b7265d820f9b"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The existing Results Book remains the sole canonical publication entrypoint. There is one public RESULT-REGISTRY.jsonl and one Results Book README; no parallel results system or second registry was created.
+- **来源：** [ignition-144-step08-publication-entrypoint-audit.md](../reports/operations/ignition-144-step08-publication-entrypoint-audit.md)
+- **资产卡：** [HR-1AB0B7265D820F9B](./ASSET-CARDS.md#asset-hr-1ab0b7265d820f9b)
+
+<a id="change-src-hr-0ca0d41c8c5725b0"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 17 — fresh task-clone natural full regression
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The remote task branch was freshly cloned and bound before execution. The remote branch SHA, fresh clone HEAD, and tested head were all ff8b93efbd0acf02a6875d09a459062f3e1f77b3; the clone was clean before and after the run. Its 25-check projection preflight passed with no side effect.
+- **来源：** [ignition-144-step17-fresh-task-full-regression.md](../reports/operations/ignition-144-step17-fresh-task-full-regression.md)
+- **资产卡：** [HR-0CA0D41C8C5725B0](./ASSET-CARDS.md#asset-hr-0ca0d41c8c5725b0)
+
+<a id="change-src-hr-0701995cf1f17938"></a>
+### 2026-08-28 · IGNITION-20260828-144 Step 12 — targeted closure regression
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The offline closure suite completed naturally. Fourteen standalone validators passed except the release-candidate identity gate, which failed closed because the current Task144 progress.jsonl binding was missing. The targeted unittest set then completed with 77 tests / 4 failures / 0 errors / 0 s…
+- **来源：** [ignition-144-step12-targeted-regression.md](../reports/operations/ignition-144-step12-targeted-regression.md)
+- **资产卡：** [HR-0701995CF1F17938](./ASSET-CARDS.md#asset-hr-0701995cf1f17938)
+
+<a id="change-src-hr-ebfbf26abf72ff4c"></a>
+### 2026-08-27 · IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。
+- **来源：** [ignition-143-step17-current-state-sync.md](../reports/operations/ignition-143-step17-current-state-sync.md)
+- **资产卡：** [HR-EBFBF26ABF72FF4C](./ASSET-CARDS.md#asset-hr-ebfbf26abf72ff4c)
+
+<a id="change-src-hr-e852e881d1527cdc"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Task141 terminality, independent obligation carry-forward, the provider-neutral admission contract, offline conformance, the fresh census, the exact validator and the no-blind-retry policy all pass. The fresh census has no live-selectable family: Codex is technical-only and policy-excluded, while…
+- **来源：** [ignition-142-step12-pre-live-gate.md](../reports/operations/ignition-142-step12-pre-live-gate.md)
+- **资产卡：** [HR-E852E881D1527CDC](./ASSET-CARDS.md#asset-hr-e852e881d1527cdc)
+
+<a id="change-src-hr-e7ceb44d380bbb46"></a>
+### 2026-08-27 · IGNITION-20260827-143 Step 19 — Terminality and publication boundary
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task143 is terminal as COMPLETEDWITHOPENOBLIGATIONS. Its formal scope is complete after the phase closure, three complete article manuscripts, Book Project R1, two mature samples, canonical publication integration, Current State synchronization and the natural full regression. The independent LIV…
+- **来源：** [ignition-143-step19-terminality.md](../reports/operations/ignition-143-step19-terminality.md)
+- **资产卡：** [HR-E7CEB44D380BBB46](./ASSET-CARDS.md#asset-hr-e7ceb44d380bbb46)
+
+<a id="change-src-hr-e28559baf39d9944"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The fresh public scan re-observed four reasoner runtimes, three deterministic tools and two UI surfaces. Ollama 0.32.7, LM Studio CLI commit 6041ae0, MLX DSpark and the absent bundled llama-server remain REASONERRUNTIME; gh, git and jq remain TOOL; Claude Desktop and QwenWorkCN remain UISURFACE.
+- **来源：** [ignition-142-step10-reasoner-tool-closure.md](../reports/operations/ignition-142-step10-reasoner-tool-closure.md)
+- **资产卡：** [HR-E28559BAF39D9944](./ASSET-CARDS.md#asset-hr-e28559baf39d9944)
+
+<a id="change-src-hr-daf416626a0f01ac"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 07 — Hermes Public Interface Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The fresh public probe resolved Hermes Agent v0.20.0 (2026.8.3) and received exit 0 from --version and --help. The public surface exposes one-shot, safe-mode, user-config/rules isolation, working-directory isolation and usage-file options. The existing adapter is deliberately a text-only read-onl…
+- **来源：** [ignition-142-step07-hermes-public-audit.md](../reports/operations/ignition-142-step07-hermes-public-audit.md)
+- **资产卡：** [HR-DAF416626A0F01AC](./ASSET-CARDS.md#asset-hr-daf416626a0f01ac)
+
+<a id="change-src-hr-d17946ac354300d6"></a>
+### 2026-08-27 · IGNITION-143 Resume Capsule
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The architecture and external-executor qualification phase is closed at the verified Task142 baseline. Publication production is the active work mode of Task143. The external-Agent line is OWNERDEFERREDNOTFAILED: this is a deliberate parking decision, not a claim that qualification is solved or d…
+- **来源：** [ignition-143-resume-capsule.md](../reports/operations/ignition-143-resume-capsule.md)
+- **资产卡：** [HR-D17946AC354300D6](./ASSET-CARDS.md#asset-hr-d17946ac354300d6)
+
+<a id="change-src-hr-cf1f447fcd9c2e4b"></a>
+### 2026-08-27 · IGNITION-20260827-143 Step 09 — Article B 对抗性编辑
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Article B 通过编辑复核并修订为 REVIEWEDCURRENTR1。它保留了实质性非 meta 文章的身份：正文讨论的是点火碰撞提出的“支持如何变成路径控制”问题，而不是介绍点火仓库如何工作。D600 仍被明确写成内部候选模型，不能被文章的完成度抬升为外部因果结论。
+- **来源：** [ignition-143-step09-article-b-editorial-review.md](../reports/operations/ignition-143-step09-article-b-editorial-review.md)
+- **资产卡：** [HR-CF1F447FCD9C2E4B](./ASSET-CARDS.md#asset-hr-cf1f447fcd9c2e4b)
+
+<a id="change-src-hr-bc1eabaeeba58eb1"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 13 — Live Attempt A
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: SKIPPEDUNSAFEORUNAVAILABLE.
+- **来源：** [ignition-142-step13-live-attempt-a.md](../reports/operations/ignition-142-step13-live-attempt-a.md)
+- **资产卡：** [HR-BC1EABAEEBA58EB1](./ASSET-CARDS.md#asset-hr-bc1eabaeeba58eb1)
+
+<a id="change-src-hr-ad8d11d719d1a437"></a>
+### 2026-08-27 · IGNITION-142 Step 17 — architecture impact
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 17 records an architecture-changing transition. The existing registry-derived system map remains the only map; it now projects three canonical OS overlays: Formal Task Lifecycle R1, Open Obligation Registry R1 and Executor Admission R1.
+- **来源：** [ignition-142-step17-architecture-impact.md](../reports/operations/ignition-142-step17-architecture-impact.md)
+- **资产卡：** [HR-AD8D11D719D1A437](./ASSET-CARDS.md#asset-hr-ad8d11d719d1a437)
+
+<a id="change-src-hr-a5389454f9d903de"></a>
+### 2026-08-27 · IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 15 通过。三篇完整文章、Book Project R1 和两篇成熟样章已经形成一个可继续人工编辑的出版组合；它们共享必要的证据边界，但没有把同一段论证拆成多个标题。
+- **来源：** [ignition-143-step15-cross-publication-coherence.md](../reports/operations/ignition-143-step15-cross-publication-coherence.md)
+- **资产卡：** [HR-A5389454F9D903DE](./ASSET-CARDS.md#asset-hr-a5389454f9d903de)
+
+<a id="change-src-hr-a488097fe88e905e"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 02 — Independent Open-Obligation Registry
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** LIVEEXTERNALINVOCATION now has an independent machine source at ignition/data/operations/open-obligation-registry-r1.json. It records the obligation ID, kind, opening task, current OPEN status, owner plane, blocker, next eligible action, carry-forward task, exact terminal condition, and evidence…
+- **来源：** [ignition-142-step02-obligation-registry.md](../reports/operations/ignition-142-step02-obligation-registry.md)
+- **资产卡：** [HR-A488097FE88E905E](./ASSET-CARDS.md#asset-hr-a488097fe88e905e)
+
+<a id="change-src-hr-a1afc24be5e25028"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 08 — OpenClaw Public Interface Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The fresh public probe resolved OpenClaw 2026.7.1-2 (0790d9f) and received exit 0 from --version and agent --help. The public surface exposes JSON, local execution, explicit session, message-file and timeout options, while also exposing channel and delivery controls. The existing adapter remains…
+- **来源：** [ignition-142-step08-openclaw-public-audit.md](../reports/operations/ignition-142-step08-openclaw-public-audit.md)
+- **资产卡：** [HR-A1AFC24BE5E25028](./ASSET-CARDS.md#asset-hr-a1afc24be5e25028)
+
+<a id="change-src-hr-95778013d10e2cf0"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 19 — Publication transaction and terminal state
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task142 is now terminal as COMPLETEDWITHOPENOBLIGATIONS. The formal task scope is complete after Steps 00–19; the independent LIVEEXTERNALINVOCATION obligation remains OPEN because no exact-bound LIVEREADONLYVALIDATEDCOMPLETION was formed.
+- **来源：** [ignition-142-step19-publication-and-terminality.md](../reports/operations/ignition-142-step19-publication-and-terminality.md)
+- **资产卡：** [HR-95778013D10E2CF0](./ASSET-CARDS.md#asset-hr-95778013d10e2cf0)
+
+<a id="change-src-hr-92e68b43ea044168"></a>
+### 2026-08-27 · IGNITION-20260827-143 Step 16 — canonical 出版入口接入
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 16 通过。Task143 的出版组合已经接回正式仓库现有的唯一 PUBLICATIONS/pointfire-results-book/ 入口，没有新建平行成果系统。
+- **来源：** [ignition-143-step16-canonical-publication-integration.md](../reports/operations/ignition-143-step16-canonical-publication-integration.md)
+- **资产卡：** [HR-92E68B43EA044168](./ASSET-CARDS.md#asset-hr-92e68b43ea044168)
+
+<a id="change-src-hr-89dd15e48f99dbc5"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 15 — Independent Exact Validator
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The OS-owned task142-exact-validator-r1 requires exact task/dispatch/attempt/executor/family/version/lease, fixture nonce, before/after workspace digests, capture/result/validator references, active lease, RETURNEDUNVALIDATED executor state, independently expected and returned structured results,…
+- **来源：** [ignition-142-step15-independent-validator.md](../reports/operations/ignition-142-step15-independent-validator.md)
+- **资产卡：** [HR-89DD15E48F99DBC5](./ASSET-CARDS.md#asset-hr-89dd15e48f99dbc5)
+
+<a id="change-src-hr-8932d9fd7b23c049"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 05 — Offline Executor Conformance
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The provider-neutral offline harness accepts exactly one strict synthetic result and rejects ten negative cases: malformed JSON, extra fields, semantic mismatch, non-zero process exit, timeout/effect unknown, child cleanup failure, workspace mutation, runtime-scratch leak, incomplete durable capt…
+- **来源：** [ignition-142-step05-offline-conformance.md](../reports/operations/ignition-142-step05-offline-conformance.md)
+- **资产卡：** [HR-8932D9FD7B23C049](./ASSET-CARDS.md#asset-hr-8932d9fd7b23c049)
+
+<a id="change-src-hr-7dee237b2707a8c8"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 09 — Codex Blocker Freeze
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The fresh public probe resolved codex-cli 0.144.4, received exit 0 from --version and exec --help, and observed public login-status exit 0. JSON, output-schema, ephemeral, read-only sandbox and user-config/rules isolation flags remain present. The existing Codex adapter, filesystem-domain repair…
+- **来源：** [ignition-142-step09-codex-blocker-audit.md](../reports/operations/ignition-142-step09-codex-blocker-audit.md)
+- **资产卡：** [HR-7DEE237B2707A8C8](./ASSET-CARDS.md#asset-hr-7dee237b2707a8c8)
+
+<a id="change-src-hr-7aac1b546d9a3bcd"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 03 — Advance Current Without Reopening Task141
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Canonical Current now advances from terminal Task141 to IGNITION-20260827-142 with status INPROGRESS. The independent formal lifecycle keeps Task141 as a terminal record with COMPLETEDWITHOPENOBLIGATIONS, while Task142 is the current non-terminal task. The independent open-obligation registry car…
+- **来源：** [ignition-142-step03-current-advancement.md](../reports/operations/ignition-142-step03-current-advancement.md)
+- **资产卡：** [HR-7AAC1B546D9A3BCD](./ASSET-CARDS.md#asset-hr-7aac1b546d9a3bcd)
+
+<a id="change-src-hr-6b1889db66759f9d"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 01 — Independent Task Terminality
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Task141 is now explicitly COMPLETEDWITHOPENOBLIGATIONS and terminal=true. The formal lifecycle source records that its Step00–16 scope and publication are complete, while naming LIVEEXTERNALINVOCATION as an independently open obligation. CURRENTWITHOPENOBLIGATIONS and EPISTEMICALLYACCEPTED=0 rema…
+- **来源：** [ignition-142-step01-terminality-semantics.md](../reports/operations/ignition-142-step01-terminality-semantics.md)
+- **资产卡：** [HR-6B1889DB66759F9D](./ASSET-CARDS.md#asset-hr-6b1889db66759f9d)
+
+<a id="change-src-hr-63c0a204c82eef7f"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 14 — Live Attempt B
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: SKIPPEDUNSAFEORUNAVAILABLE.
+- **来源：** [ignition-142-step14-live-attempt-b.md](../reports/operations/ignition-142-step14-live-attempt-b.md)
+- **资产卡：** [HR-63C0A204C82EEF7F](./ASSET-CARDS.md#asset-hr-63c0a204c82eef7f)
+
+<a id="change-src-hr-61e3d96daff155d9"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: PASS for the offline adversarial matrix.
+- **来源：** [ignition-142-step18-adversarial-matrix.md](../reports/operations/ignition-142-step18-adversarial-matrix.md)
+- **资产卡：** [HR-61E3D96DAFF155D9](./ASSET-CARDS.md#asset-hr-61e3d96daff155d9)
+
+<a id="change-src-hr-615330c2f4c14260"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 11 — Fresh Executor Census R2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The shared public probe produced 14 candidates: 5 Agentic Executor records (4 installed), 4 reasoner runtimes, 3 tools and 2 UI surfaces. No inference, UI action, installation, configuration or billing operation occurred.
+- **来源：** [ignition-142-step11-fresh-census.md](../reports/operations/ignition-142-step11-fresh-census.md)
+- **资产卡：** [HR-615330C2F4C14260](./ASSET-CARDS.md#asset-hr-615330c2f4c14260)
+
+<a id="change-src-hr-5f4adb1099e2f6a6"></a>
+### 2026-08-27 · IGNITION-20260827-143 Step 00 — Baseline and Owner Override
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The new Task143 was resolved from 1111/origin/relay/current at 867c6d8373f39f03367f9c81aab60ebd74589428. Its task definition commit is 629a05e1951151dc215c7666640aeab9e3152c9d. That control record explicitly supersedes the previously queued executor-qualification campaign and changes the active s…
+- **来源：** [ignition-143-step00-baseline-owner-override-audit.md](../reports/operations/ignition-143-step00-baseline-owner-override-audit.md)
+- **资产卡：** [HR-5F4ADB1099E2F6A6](./ASSET-CARDS.md#asset-hr-5f4adb1099e2f6a6)
+
+<a id="change-src-hr-5d91ac36f8249920"></a>
+### 2026-08-27 · IGNITION-20260827-143 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task ID: IGNITION-20260827-143 Formal task ordinal: 143
+- **来源：** [IGNITION-20260827-143-result.md](../agent-results/IGNITION-20260827-143-result.md)
+- **资产卡：** [HR-5D91AC36F8249920](./ASSET-CARDS.md#asset-hr-5d91ac36f8249920)
+
+<a id="change-src-hr-5af412f645a35de0"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The admission contract is now provider-neutral. It distinguishes AGENTICEXECUTOR, REASONERRUNTIME, TOOL, and UISURFACE; only an agentic executor can enter the live-eligible pool. Admission requires public authentication, auth separation, strict argv and structured-result contracts, disposable rea…
+- **来源：** [ignition-142-step04-admission-contract.md](../reports/operations/ignition-142-step04-admission-contract.md)
+- **资产卡：** [HR-5AF412F645A35DE0](./ASSET-CARDS.md#asset-hr-5af412f645a35de0)
+
+<a id="change-src-hr-50fd13fec9100c58"></a>
+### 2026-08-27 · IGNITION-20260827-142 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task ID: IGNITION-20260827-142 Formal task ordinal: 142
+- **来源：** [IGNITION-20260827-142-result.md](../agent-results/IGNITION-20260827-142-result.md)
+- **资产卡：** [HR-50FD13FEC9100C58](./ASSET-CARDS.md#asset-hr-50fd13fec9100c58)
+
+<a id="change-src-hr-4ba367b053be5f75"></a>
+### 2026-08-27 · IGNITION-20260827-143 Step 07 — Article A 对抗性编辑
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Article A 通过编辑复核并修订为 REVIEWEDCURRENTR1。它现在明确是一篇以 Task142 为案例的仓库内方法文章，而不是对所有项目的生命周期规范。修订没有改变案例事实或开放义务的状态。
+- **来源：** [ignition-143-step07-article-a-editorial-review.md](../reports/operations/ignition-143-step07-article-a-editorial-review.md)
+- **资产卡：** [HR-4BA367B053BE5F75](./ASSET-CARDS.md#asset-hr-4ba367b053be5f75)
+
+<a id="change-src-hr-321a7bf858f3944f"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 16 — Open-Obligation Re-adjudication
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** No Task142 live process was authorized or started, so LIVEEXTERNALINVOCATION remains OPEN; the independent exact validator is ready but has no live result to adjudicate. The blocker is refined to the concrete current matrix: no safe live family, Gemini public auth/adapter gaps, Hermes structured-…
+- **来源：** [ignition-142-step16-obligation-adjudication.md](../reports/operations/ignition-142-step16-obligation-adjudication.md)
+- **资产卡：** [HR-321A7BF858F3944F](./ASSET-CARDS.md#asset-hr-321a7bf858f3944f)
+
+<a id="change-src-hr-2cb62a01d2d98e56"></a>
+### 2026-08-27 · IGNITION-20260827-143 Step 11 — 三篇文章交叉编辑与最终审校
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 三篇文章均通过最终编辑审校，状态为 REVIEWEDCURRENTR1。交叉检查确认它们共享的是必要的证据边界，而不是同一篇文章被拆成三个标题：
+- **来源：** [ignition-143-step11-cross-publication-editorial-review.md](../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
+- **资产卡：** [HR-2CB62A01D2D98E56](./ASSET-CARDS.md#asset-hr-2cb62a01d2d98e56)
+
+<a id="change-src-hr-129bb07e4a0a453e"></a>
+### 2026-08-27 · IGNITION-20260827-143 Step 18 — Natural full regression and projection closure
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The exact candidate 0a25989dd895af6326447e1a8741df1db5101211 completed the canonical isolated natural full regression with 1272 tests, 0 failures, 0 errors and 0 skips. The test process completed naturally in 3019.932s (3020.978s elapsed), with cleanbefore=true, cleanafter=true, no watchdog, no p…
+- **来源：** [ignition-143-step18-full-regression.md](../reports/operations/ignition-143-step18-full-regression.md)
+- **资产卡：** [HR-129BB07E4A0A453E](./ASSET-CARDS.md#asset-hr-129bb07e4a0a453e)
+
+<a id="change-src-hr-086dff9b702e2613"></a>
+### 2026-08-27 · IGNITION-20260827-142 Step 06 — Gemini Public Interface Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The fresh public probe resolved gemini, observed version 0.53.1, and received exit 0 from both --version and --help. The help surface exposes noninteractive prompt, output-format, approval/sandbox and tool-related flags. The audit records only path/version/help digests and selected public flags;…
+- **来源：** [ignition-142-step06-gemini-public-audit.md](../reports/operations/ignition-142-step06-gemini-public-audit.md)
+- **资产卡：** [HR-086DFF9B702E2613](./ASSET-CARDS.md#asset-hr-086dff9b702e2613)
+
+<a id="change-src-hr-00eff8444211bc60"></a>
+### 2026-08-27 · IGNITION-20260827-143 Step 04 — 可出版素材盘点
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 04 已完成。盘点不是看标题投票，而是把成果册、火种、既有文章、碰撞机制、树冠 replay 和 Task142 生命周期修复逐一读到能说明“它支持什么、不能支持什么”的程度。机器版见 corpus-census-r1.json。
+- **来源：** [ignition-143-step04-corpus-census.md](../reports/operations/ignition-143-step04-corpus-census.md)
+- **资产卡：** [HR-00EFF8444211BC60](./ASSET-CARDS.md#asset-hr-00eff8444211bc60)
+
+<a id="change-src-hr-f5dede66390e4492"></a>
+### 2026-08-26 · IGNITION-20260826-140 Step 03 — Observation / Reconciliation Plane registration
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task140 now registers liveobservationreconciliationplaner1 as a canonical OS architecture component. The typed chain is:
+- **来源：** [ignition-140-step03-observation-plane-registration.md](../reports/operations/ignition-140-step03-observation-plane-registration.md)
+- **资产卡：** [HR-F5DEDE66390E4492](./ASSET-CARDS.md#asset-hr-f5dede66390e4492)
+
+<a id="change-src-hr-f25c6ad93d4e6b1c"></a>
+### 2026-08-26 · IGNITION-140 Step 07 — Canonical Reconciliation Events
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Three reconciliation events were appended to the separate live-reconciliation-events-r1.jsonl chain. Each event binds an attempt ID, task ID, executor, immutable prior ledger record hash, and typed state digest; the event chain has three records and a valid hash chain.
+- **来源：** [ignition-140-step07-canonical-reconciliation-events.md](../reports/operations/ignition-140-step07-canonical-reconciliation-events.md)
+- **资产卡：** [HR-F25C6AD93D4E6B1C](./ASSET-CARDS.md#asset-hr-f25c6ad93d4e6b1c)
+
+<a id="change-src-hr-ed60006ec664c67a"></a>
+### 2026-08-26 · IGNITION-20260826-140 Step 13 — Adversarial / negative matrix
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The required fail-closed matrix completed with 20 cases, 17 negative and 3 positive, all PASS. It started 0 live processes. The matrix exercises the architecture-impact correction, typed probe/transport/process scope, durable capture and completion gates, reconciliation unknown ceiling, executor-…
+- **来源：** [ignition-140-step13-adversarial-matrix.md](../reports/operations/ignition-140-step13-adversarial-matrix.md)
+- **资产卡：** [HR-ED60006EC664C67A](./ASSET-CARDS.md#asset-hr-ed60006ec664c67a)
+
+<a id="change-src-hr-e3529305643dda11"></a>
+### 2026-08-26 · IGNITION-20260826-141 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The exact pushed Task141 task-branch tip 6f30c9aff2b64141d4a96e32a57deb64eb89b97a was independently cloned from the remote task branch. The fresh clone had 3436 tracked paths, no copied venv or cache, and passed the clean 25-check projection preflight.
+- **来源：** [IGNITION-20260826-141-result.md](../agent-results/IGNITION-20260826-141-result.md)
+- **资产卡：** [HR-E3529305643DDA11](./ASSET-CARDS.md#asset-hr-e3529305643dda11)
+
+<a id="change-src-hr-e107b962a716e63c"></a>
+### 2026-08-26 · IGNITION-20260826-141 Step 15 — targeted regression
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The first natural targeted run found three real identity/projection failures in 127 tests. The failures were repaired by binding the release-candidate role to the Task141 execution contract and adding the required Task141 currentiterationid progress record.
+- **来源：** [ignition-141-step15-targeted-regression.md](../reports/operations/ignition-141-step15-targeted-regression.md)
+- **资产卡：** [HR-E107B962A716E63C](./ASSET-CARDS.md#asset-hr-e107b962a716e63c)
+
+<a id="change-src-hr-b4c3a178d034780a"></a>
+### 2026-08-26 · IGNITION-20260826-140 — Step 10 Dynamic Live Admission Freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The admission gate revalidated the Task140 census and selected the currently admitted family from local-executor-census-r1.json; it did not bind the task contract to a brand before census. The current selection is Codex CLI (external.codex, codex-cli 0.144.4) because its public login-status probe…
+- **来源：** [ignition-140-step10-live-admission.md](../reports/operations/ignition-140-step10-live-admission.md)
+- **资产卡：** [HR-B4C3A178D034780A](./ASSET-CARDS.md#asset-hr-b4c3a178d034780a)
+
+<a id="change-src-hr-ad56863677cc6ac6"></a>
+### 2026-08-26 · IGNITION-20260826-140 Step 12 — Independent live-attempt validation
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step12 independently validated the exact Task140 binding across task, dispatch, attempt, executor family and capability lease. The canonical record is sequence 5 with a complete durable capture and a cleaned process group.
+- **来源：** [ignition-140-step12-independent-validation.md](../reports/operations/ignition-140-step12-independent-validation.md)
+- **资产卡：** [HR-AD56863677CC6AC6](./ASSET-CARDS.md#asset-hr-ad56863677cc6ac6)
+
+<a id="change-src-hr-ad2106fa45b1e5a9"></a>
+### 2026-08-26 · IGNITION-20260826-141 Step 16 — Post-publication projection gate repair
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The first independent clean preflight against the newly published remote-main clone did not pass. It reported five deterministic projection failures: nonfunction claims, Knowledge Experience generation/validation, durability hygiene and repository path classification. No side effect was detected.
+- **来源：** [ignition-141-step16-post-publication-gate-repair.md](../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+- **资产卡：** [HR-AD2106FA45B1E5A9](./ASSET-CARDS.md#asset-hr-ad2106fa45b1e5a9)
+
+<a id="change-src-hr-9db313b3faf86fd3"></a>
+### 2026-08-26 · IGNITION-20260826-140 — Step 08 Current State Sync
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Task140 is now the canonical Current formal task and latest architecture-changing task. The identity epoch is os-control-plane-r6-live-observation-reconciliation-r1, the formal ordinal is 140, the compatibility boundary alias is 140, and the registry-derived map is 0.14.0 Current.
+- **来源：** [ignition-140-step08-current-state-sync.md](../reports/operations/ignition-140-step08-current-state-sync.md)
+- **资产卡：** [HR-9DB313B3FAF86FD3](./ASSET-CARDS.md#asset-hr-9db313b3faf86fd3)
+
+<a id="change-src-hr-75c11de1d71e9e27"></a>
+### 2026-08-26 · IGNITION-20260826-140 Step 15 — Candidate natural full regression
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The exact Task140 candidate head 86a188e4fc86037086f8d1ba7de0fd9130cd5249 completed the natural isolated full regression with 1227 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 3070.464s runtime / 3071.522s elapsed, with no watchdog, arbitrary timeout or process kill.…
+- **来源：** [ignition-140-step15-candidate-full-regression.md](../reports/operations/ignition-140-step15-candidate-full-regression.md)
+- **资产卡：** [HR-75C11DE1D71E9E27](./ASSET-CARDS.md#asset-hr-75c11de1d71e9e27)
+
+<a id="change-src-hr-6af7b035edaef185"></a>
+### 2026-08-26 · IGNITION-20260826-140 Step 02 — Task139 architecture-impact correction
+
+- **类型：** `CORRECTION_OR_WITHDRAWAL`
+- **状态：** `CURRENT_CORRECTION_RECORD`
+- **变化：** The independent audit confirms that Task139 was not presentation-only in semantic terms. It changed the bounded process-transport/capture path, made an append-only live-attempt ledger the canonical observation source, and derived Current live state from that ledger. The typed correction is BEHAVI…
+- **来源：** [ignition-140-step02-task139-architecture-impact-correction.md](../reports/operations/ignition-140-step02-task139-architecture-impact-correction.md)
+- **资产卡：** [HR-6AF7B035EDAEF185](./ASSET-CARDS.md#asset-hr-6af7b035edaef185)
+
+<a id="change-src-hr-67d1c79c98329e3c"></a>
+### 2026-08-26 · IGNITION-140 Step 04 — Typed Observation Outcomes
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Step 04 registers the typed boundary between public probe, transport, live dispatch, live process, durable capture, structured result, and validator outcomes. The historical Task139 sequence-4 zero is represented as probereturncode=0 and transportreturncode=0; it has livedispatchcalls=0, liveproc…
+- **来源：** [ignition-140-step04-typed-observation-outcomes.md](../reports/operations/ignition-140-step04-typed-observation-outcomes.md)
+- **资产卡：** [HR-67D1C79C98329E3C](./ASSET-CARDS.md#asset-hr-67d1c79c98329e3c)
+
+<a id="change-src-hr-5c9c5b1908908d1a"></a>
+### 2026-08-26 · IGNITION-20260826-140 Step 14 — Current terminal semantics and open obligation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task140 is now repository-locally terminal as COMPLETEDWITHCLASSIFIEDRESIDUALS, with lifecycle RELEASEREADY and currenttaskterminal=true. This is task/lifecycle closure only; it is not formal main publication.
+- **来源：** [ignition-140-step14-current-terminal-semantics.md](../reports/operations/ignition-140-step14-current-terminal-semantics.md)
+- **资产卡：** [HR-5C9C5B1908908D1A](./ASSET-CARDS.md#asset-hr-5c9c5b1908908d1a)
+
+<a id="change-src-hr-55b610ce1cd160c8"></a>
+### 2026-08-26 · IGNITION-20260826-141 Step 15 — Candidate natural full regression
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The repaired isolated candidate head 429364bc8f5b9a07652f41303fd7d2106a24aaf5 completed the exact natural full regression with 1260 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 2983.884s runtime / 2984.920s elapsed, with no watchdog, arbitrary timeout or process kill…
+- **来源：** [ignition-141-step15-candidate-full-regression.md](../reports/operations/ignition-141-step15-candidate-full-regression.md)
+- **资产卡：** [HR-55B610CE1CD160C8](./ASSET-CARDS.md#asset-hr-55b610ce1cd160c8)
+
+<a id="change-src-hr-4eea99720b5fd0d4"></a>
+### 2026-08-26 · IGNITION-20260826-140 Step 01 — Architecture-impact classification R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The new machine-readable classifier separates ARCHITECTURECHANGING, BEHAVIORALCONTROLPLANECHANGE, PRESENTATIONONLY, RELEASEONLY and DATAREFRESHONLY (with NONE for an unchanged task). It derives the class from semantic markers rather than from whether a map node or documentation file changed. The…
+- **来源：** [ignition-140-step01-architecture-impact-classifier.md](../reports/operations/ignition-140-step01-architecture-impact-classifier.md)
+- **资产卡：** [HR-4EEA99720B5FD0D4](./ASSET-CARDS.md#asset-hr-4eea99720b5fd0d4)
+
+<a id="change-src-hr-4d31b64808a19248"></a>
+### 2026-08-26 · IGNITION-20260826-140 Step 13 — Targeted regression and projection closure
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The targeted live/Current/identity/release/privacy suite completed naturally with 91 tests, 0 failures, 0 errors and 0 skips. It includes the typed Observation/Reconciliation Plane tests added in Task140 and the existing transport, execution, ledger, Current, release and privacy gates.
+- **来源：** [ignition-140-step13-targeted-regression.md](../reports/operations/ignition-140-step13-targeted-regression.md)
+- **资产卡：** [HR-4D31B64808A19248](./ASSET-CARDS.md#asset-hr-4d31b64808a19248)
+
+<a id="change-src-hr-46cd997d4826e649"></a>
+### 2026-08-26 · IGNITION-140 Step 06 — Evidence Exhaustion Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The bounded read-only recovery audit checked the declared public sources for the three old open reconciliation lines. All nine declared source files were present. No private session database, credential, hidden reasoning, or provider telemetry was read.
+- **来源：** [ignition-140-step06-evidence-exhaustion-audit.md](../reports/operations/ignition-140-step06-evidence-exhaustion-audit.md)
+- **资产卡：** [HR-46CD997D4826E649](./ASSET-CARDS.md#asset-hr-46cd997d4826e649)
+
+<a id="change-src-hr-44eb56d76a052dc0"></a>
+### 2026-08-26 · IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The exact pushed Task140 Step15 tip 64b0ac92d343af9f1ba66d91123bf4ca5a5bb62a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3370 tracked paths and was clean before and aft…
+- **来源：** [ignition-140-step16-fresh-clone-publication.md](../reports/operations/ignition-140-step16-fresh-clone-publication.md)
+- **资产卡：** [HR-44EB56D76A052DC0](./ASSET-CARDS.md#asset-hr-44eb56d76a052dc0)
+
+<a id="change-src-hr-31c369073213a9e3"></a>
+### 2026-08-26 · IGNITION-20260826-140 Step 09 — Fresh local executor census and dynamic selection
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PASS: the host was re-attested at 2026-08-25T18:44:54Z using only PATH/bundle presence, public version/help surfaces and Codex public auth-status exit behavior. No auth content was read, no model or Agent inference was started, no UI action occurred, and no installation, configuration or billing…
+- **来源：** [ignition-140-step09-local-executor-census-and-selection.md](../reports/operations/ignition-140-step09-local-executor-census-and-selection.md)
+- **资产卡：** [HR-31C369073213A9E3](./ASSET-CARDS.md#asset-hr-31c369073213a9e3)
+
+<a id="change-src-hr-2d1ffea2f1635a4d"></a>
+### 2026-08-26 · IGNITION-140 Step 05 — Reconciliation State Model
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The new live-reconciliation-state-r1 contract separates an open evidence obligation from a terminal unrecoverable observation. It has explicit states for effect-unknown timeouts, observation-incomplete attempts, a conclusive no-live-dispatch boundary, and an independently reconciled record.
+- **来源：** [ignition-140-step05-reconciliation-state-model.md](../reports/operations/ignition-140-step05-reconciliation-state-model.md)
+- **资产卡：** [HR-2D1FFEA2F1635A4D](./ASSET-CARDS.md#asset-hr-2d1ffea2f1635a4d)
+
+<a id="change-src-hr-26ff2edbbc24babb"></a>
+### 2026-08-26 · IGNITION-20260826-141 Step 16 — Fresh task-branch clone and publication gate
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The exact pushed Task141 Step15 tip 6f30c9aff2b64141d4a96e32a57deb64eb89b97a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3436 tracked paths and was clean before and aft…
+- **来源：** [ignition-141-step16-fresh-clone-publication.md](../reports/operations/ignition-141-step16-fresh-clone-publication.md)
+- **资产卡：** [HR-26FF2EDBBC24BABB](./ASSET-CARDS.md#asset-hr-26ff2edbbc24babb)
+
+<a id="change-src-hr-0911d8b98cfd3922"></a>
+### 2026-08-26 · IGNITION-20260826-141 Step 08 — Fresh local executor census
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PASS: 14 candidates were re-attested through public metadata only: 5 Agentic Executor records (4 installed), 4 reasoner runtimes, 3 tools and 2 UI-only bundles. No inference, auth-content read, UI action, installation, configuration or billing operation occurred.
+- **来源：** [ignition-141-step08-local-executor-census.md](../reports/operations/ignition-141-step08-local-executor-census.md)
+- **资产卡：** [HR-0911D8B98CFD3922](./ASSET-CARDS.md#asset-hr-0911d8b98cfd3922)
+
+<a id="change-src-hr-ea1ccd6bb1e44892"></a>
+### 2026-08-25 · IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The new deterministic capture matrix contains 16 cases and all cases pass. It separates two states that the old outer-tool path conflated:
+- **来源：** [ignition-139-step04-context-loss-fault-matrix.md](../reports/operations/ignition-139-step04-context-loss-fault-matrix.md)
+- **资产卡：** [HR-EA1CCD6BB1E44892](./ASSET-CARDS.md#asset-hr-ea1ccd6bb1e44892)
+
+<a id="change-src-hr-e2f338166075887b"></a>
+### 2026-08-25 · IGNITION-139 Step 05 — Historical Attempt Import
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The four historical live attempts are now represented by the append-only LiveAttemptLedger. Source receipts remain unchanged.
+- **来源：** [ignition-139-step05-historical-attempt-import.md](../reports/operations/ignition-139-step05-historical-attempt-import.md)
+- **资产卡：** [HR-E2F338166075887B](./ASSET-CARDS.md#asset-hr-e2f338166075887b)
+
+<a id="change-src-hr-e053e34801e5f2cc"></a>
+### 2026-08-25 · IGNITION-138 — Amendment-01 Step 06 Dynamic Admission
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The census found five installed Agent candidates but admitted none at the initial boundary. A read-only public re-attestation then selected Codex CLI because its current surface is the most independently enforceable: JSONL and output-schema results, --ephemeral, --sandbox read-only, ignored user…
+- **来源：** [ignition-138-step06-amendment-01-dynamic-admission.md](../reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md)
+- **资产卡：** [HR-E053E34801E5F2CC](./ASSET-CARDS.md#asset-hr-e053e34801e5f2cc)
+
+<a id="change-src-hr-d0a5c8b7965cbf6f"></a>
+### 2026-08-25 · IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The public live-attempt status is now derived from the append-only ledger at ignition/data/operations/iterations/139/live-attempt-ledger.jsonl. The projection contains no raw provider output, private session data, or model context.
+- **来源：** [ignition-139-step06-live-current-projection.md](../reports/operations/ignition-139-step06-live-current-projection.md)
+- **资产卡：** [HR-D0A5C8B7965CBF6F](./ASSET-CARDS.md#asset-hr-d0a5c8b7965cbf6f)
+
+<a id="change-src-hr-c9edeaa05c77c5af"></a>
+### 2026-08-25 · IGNITION-20260825-139 Step 07 — Current / Human / AI durable-observation sync
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PASS for the branch-local Task139 Current projection. Current identity now advances to Task139 with PRESENTATIONONLY impact; the architecture boundary remains Task136 and map 0.13.0 remains Current. The lifecycle remains INPROGRESS because Steps08–15 are still open.
+- **来源：** [ignition-139-step07-current-state-sync.md](../reports/operations/ignition-139-step07-current-state-sync.md)
+- **资产卡：** [HR-C9EDEAA05C77C5AF](./ASSET-CARDS.md#asset-hr-c9edeaa05c77c5af)
+
+<a id="change-src-hr-bfebf52fdf8637e3"></a>
+### 2026-08-25 · IGNITION-20260825-139 Step 12 — Independent binding and Current projection
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PASSFAILCLOSED: Current was rebuilt solely from the append-only ledger and now records five attempts, three unreconciled attempts, two observation- incomplete attempts and zero validated completions. Its digest is 2769e67813ecae3b6dc321088fb44c845b6895c3c48ee841db289e7eac824f73, with ledger head…
+- **来源：** [ignition-139-step12-independent-validation.md](../reports/operations/ignition-139-step12-independent-validation.md)
+- **资产卡：** [HR-BFEBF52FDF8637E3](./ASSET-CARDS.md#asset-hr-bfebf52fdf8637e3)
+
+<a id="change-src-hr-b1cad13c5132a17d"></a>
+### 2026-08-25 · IGNITION-20260824-138 — Amendment 01 live Codex receipt reconciliation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The repaired second Codex family attempt was started with the explicit gpt-5.6-luna model and max reasoning effort, after the first attempt had been proven to be a pre-inference runtime-scratch startup failure. The outer execution tool then reported that its output exceeded the available model co…
+- **来源：** [ignition-138-step08-amendment-01-live-codex-reconciliation.md](../reports/operations/ignition-138-step08-amendment-01-live-codex-reconciliation.md)
+- **资产卡：** [HR-B1CAD13C5132A17D](./ASSET-CARDS.md#asset-hr-b1cad13c5132a17d)
+
+<a id="change-src-hr-9ace99cd3f0ef0d5"></a>
+### 2026-08-25 · IGNITION-20260825-139 Step 14 — Candidate natural full regression
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PASS on the repaired exact candidate head 9a3b4a5561cf389b4f8af91274391096f39f65c2:
+- **来源：** [ignition-139-step14-candidate-full-regression.md](../reports/operations/ignition-139-step14-candidate-full-regression.md)
+- **资产卡：** [HR-9ACE99CD3F0EF0D5](./ASSET-CARDS.md#asset-hr-9ace99cd3f0ef0d5)
+
+<a id="change-src-hr-93a3986ac21ea580"></a>
+### 2026-08-25 · IGNITION-139 Step 03 — Durable capture before model context
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The provider-neutral process transport now accepts an initialized LiveCaptureWriter before Popen. Each stdout/stderr chunk is streamed to the attempt-specific host spool and digested while a separate bounded context view is retained for the caller. Oversized context output therefore sets an expli…
+- **来源：** [ignition-139-step03-durable-capture-transport.md](../reports/operations/ignition-139-step03-durable-capture-transport.md)
+- **资产卡：** [HR-93A3986AC21EA580](./ASSET-CARDS.md#asset-hr-93a3986ac21ea580)
+
+<a id="change-src-hr-9302fb0a7da093e8"></a>
+### 2026-08-25 · IGNITION-20260825-139 Step 08 — Live-observation semantic gate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PASS: all 12 deterministic semantic fixtures produced their expected fail-closed outcome. Eight adversarial cases failed as required; four positive cases passed only when the boundary was explicit.
+- **来源：** [ignition-139-step08-live-observation-semantic-gate.md](../reports/operations/ignition-139-step08-live-observation-semantic-gate.md)
+- **资产卡：** [HR-9302FB0A7DA093E8](./ASSET-CARDS.md#asset-hr-9302fb0a7da093e8)
+
+<a id="change-src-hr-7964cf99efaf8400"></a>
+### 2026-08-25 · IGNITION-20260825-139 Step 15 — Fresh clone, publication and witness gate
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The exact pushed Task139 branch tip 9a3b4a5561cf389b4f8af91274391096f39f65c2 was cloned into a fresh remote checkout with no copied virtual environment, cache, generated temporary state or untracked files. The clone passed the 25-check read-only projection preflight with failedchecks=[], sideeffe…
+- **来源：** [ignition-139-step15-fresh-clone-publication.md](../reports/operations/ignition-139-step15-fresh-clone-publication.md)
+- **资产卡：** [HR-7964CF99EFAF8400](./ASSET-CARDS.md#asset-hr-7964cf99efaf8400)
+
+<a id="change-src-hr-68fd7a8981b971f4"></a>
+### 2026-08-25 · IGNITION-20260825-139 Step 10 — Single-live-attempt admission freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PASS: the only currently admitted candidate is external.codex, and Step10 froze one bounded dispatch envelope without starting inference. The fresh Codex lease came from two real public probes (codex --version and codex exec --help), with no secret content read and no configuration or billing cha…
+- **来源：** [ignition-139-step10-live-admission.md](../reports/operations/ignition-139-step10-live-admission.md)
+- **资产卡：** [HR-68FD7A8981B971F4](./ASSET-CARDS.md#asset-hr-68fd7a8981b971f4)
+
+<a id="change-src-hr-59aff2b58884bf4c"></a>
+### 2026-08-25 · IGNITION-20260825-139 Step 11 — Single live boundary and fail-closed receipt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The one authorized Step11 boundary was attempted and durably appended as ledger sequence 4 (8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d). The fresh public Codex lease and strict OS capability intersection were admitted, and the OS coordinator prepared/accepted the dispatch. T…
+- **来源：** [ignition-139-step11-live-attempt.md](../reports/operations/ignition-139-step11-live-attempt.md)
+- **资产卡：** [HR-59AFF2B58884BF4C](./ASSET-CARDS.md#asset-hr-59aff2b58884bf4c)
+
+<a id="change-src-hr-56d4a51515a69ecc"></a>
+### 2026-08-25 · IGNITION-20260824-138 — Amendment 01 independent validation gate
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Live138CompletionValidator was deliberately not run for attempt-138-live-02. The host tool did not leave a recoverable structured result, return code, lease receipt, or durable output capture. Reconstructing the frozen answer would not turn it into an external executor result, so no synthetic res…
+- **来源：** [ignition-138-step10-amendment-01-independent-validation.md](../reports/operations/ignition-138-step10-amendment-01-independent-validation.md)
+- **资产卡：** [HR-56D4A51515A69ECC](./ASSET-CARDS.md#asset-hr-56d4a51515a69ecc)
+
+<a id="change-src-hr-4edebbdac25bcee9"></a>
+### 2026-08-25 · IGNITION-20260825-139 Step 13 — Targeted regression and projection repair
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PASS: after the first candidate natural full run exposed 31 genuine projection/accounting failures, the repaired targeted surface completed with 83 tests, 0 failures, 0 errors, and 0 skips. The 51 Task139 live/Current/identity/surface tests completed in 182.902s; the 32 Foundation closure and pat…
+- **来源：** [ignition-139-step13-targeted-regression.md](../reports/operations/ignition-139-step13-targeted-regression.md)
+- **资产卡：** [HR-4EDEBBDAC25BCEE9](./ASSET-CARDS.md#asset-hr-4edebbdac25bcee9)
+
+<a id="change-src-hr-371e32ea8afe3e83"></a>
+### 2026-08-25 · IGNITION-20260825-139 Step 09 — Fresh local executor census and why-executor
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PASS: the current host was re-attested at 2026-08-25T05:37:35Z using only public version/help surfaces, binary/help digests, application-bundle presence and auth-status presence/exit behavior. No model, Agent inference, UI action, login, secret read, installation, configuration or billing operati…
+- **来源：** [ignition-139-step09-local-executor-census-and-selection.md](../reports/operations/ignition-139-step09-local-executor-census-and-selection.md)
+- **资产卡：** [HR-371E32EA8AFE3E83](./ASSET-CARDS.md#asset-hr-371e32ea8afe3e83)
+
+<a id="change-src-hr-3697fef2b08e4800"></a>
+### 2026-08-25 · IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Task ID: IGNITION-20260825-139
+- **来源：** [IGNITION-20260825-139-result.md](../agent-results/IGNITION-20260825-139-result.md)
+- **资产卡：** [HR-3697FEF2B08E4800](./ASSET-CARDS.md#asset-hr-3697fef2b08e4800)
+
+<a id="change-src-hr-0dc8e1b43354e8da"></a>
+### 2026-08-25 · IGNITION-138 — Step 00 Amendment-01 Local Executor Census
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a read-only, observation-time census performed before any new Task138 live inference. The control material was refreshed from origin/relay/current@4ab09c3d6595f254577739ec1d87e64144c61803; the formal candidate observed by the census is 99389c846b6766ca8b373812ece4191660b6474f.
+- **来源：** [ignition-138-step00-local-executor-census.md](../reports/operations/ignition-138-step00-local-executor-census.md)
+- **资产卡：** [HR-0DC8E1B43354E8DA](./ASSET-CARDS.md#asset-hr-0dc8e1b43354e8da)
+
+<a id="change-src-hr-f974b5a400509d56"></a>
+### 2026-08-24 · IGNITION-137 Step 11 — Hermes retry decision
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Hermes live-hermes-136 remains RECONCILIATIONREMAINSOPEN. Because Step 01 did not prove RECONCILEDNOOBSERVEDSIDEEFFECT and did not establish a complete transport/deadline cause, the task’s retry conditions are not all satisfied.
+- **来源：** [ignition-137-step11-hermes-retry-decision.md](../reports/operations/ignition-137-step11-hermes-retry-decision.md)
+- **资产卡：** [HR-F974B5A400509D56](./ASSET-CARDS.md#asset-hr-f974b5a400509d56)
+
+<a id="change-src-hr-e7d89c150adba4ae"></a>
+### 2026-08-24 · IGNITION-20260824-137 — Step 07 Independent OS Validation R2
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** LiveIndependentValidator now accepts an executor result only in RETURNEDUNVALIDATED state and emits a separate ignition-137-independent-validation-receipt-r2. That receipt binds the task, dispatch, attempt, executor, adapter, capability-lease digest, workspace reference and before/after digests,…
+- **来源：** [ignition-137-step07-independent-os-validation-r2.md](../reports/operations/ignition-137-step07-independent-os-validation-r2.md)
+- **资产卡：** [HR-E7D89C150ADBA4AE](./ASSET-CARDS.md#asset-hr-e7d89c150adba4ae)
+
+<a id="change-src-hr-e4c368c256dff2d8"></a>
+### 2026-08-24 · IGNITION-20260824-138 — Step 09 Second-Invocation Gate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The concrete first-attempt startup defect was repaired in the bounded transport: after validating an empty attempt scratch, it creates only the declared CODEXHOME, XDGCACHEHOME, XDGCONFIGHOME and XDGRUNTIMEDIR directories inside that scratch. It never creates anything in the task workspace, forma…
+- **来源：** [ignition-138-step09-second-gate.md](../reports/operations/ignition-138-step09-second-gate.md)
+- **资产卡：** [HR-E4C368C256DFF2D8](./ASSET-CARDS.md#asset-hr-e4c368c256dff2d8)
+
+<a id="change-src-hr-ddb5c91e38c8934a"></a>
+### 2026-08-24 · IGNITION-137 Step 14 — adversarial / fault matrix
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The inherited live fault matrix exercised 27 cases and returned allfailclosed=true: stale leases, executor/permission/workspace widening, workspace mutations, malformed results, wrong answers, duplicate dispatch/receipts, timeout/cancellation uncertainty, capability revocation and drift, privacy…
+- **来源：** [ignition-137-step14-fault-matrix.md](../reports/operations/ignition-137-step14-fault-matrix.md)
+- **资产卡：** [HR-DDB5C91E38C8934A](./ASSET-CARDS.md#asset-hr-ddb5c91e38c8934a)
+
+<a id="change-src-hr-da6eae8e6291205c"></a>
+### 2026-08-24 · IGNITION-20260824-137 — Step 05 Synthetic Read-Only Fixture
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task137 now uses a fresh disposable fixture containing README.txt, nonce.txt, and table.json. The nonce is a per-attempt synthetic 24-character lowercase hex value. The table rule is explicit: retain rows with eligible=true and score=50, then sort by (score, id). The expected selection is row-a,…
+- **来源：** [ignition-137-step05-synthetic-readonly-fixture.md](../reports/operations/ignition-137-step05-synthetic-readonly-fixture.md)
+- **资产卡：** [HR-DA6EAE8E6291205C](./ASSET-CARDS.md#asset-hr-da6eae8e6291205c)
+
+<a id="change-src-hr-d90e753541f60132"></a>
+### 2026-08-24 · IGNITION-20260824-138 — Step 07 Synthetic Fixture / Answer Freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task138 now has a new disposable fixture family, separate from Task137 dispatch and attempt identities. Its seven-row table applies the deterministic rule eligible == true and score = 60, then sorts by (score, id). With the frozen synthetic nonce abcdef0123456789abcdef01, Pointfire computes the i…
+- **来源：** [ignition-138-step07-fixture-answer-freeze.md](../reports/operations/ignition-138-step07-fixture-answer-freeze.md)
+- **资产卡：** [HR-D90E753541F60132](./ASSET-CARDS.md#asset-hr-d90e753541f60132)
+
+<a id="change-src-hr-d790a75d59747779"></a>
+### 2026-08-24 · IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** PASS for the branch-local Current projection. Task138 is now the canonical Current formal task with PRESENTATIONONLY identity impact. Task136 remains the latest architecture-changing task; identity epoch and map 0.13.0 remain unchanged. The lifecycle is RUNNING because Steps13–15 are still open.
+- **来源：** [ignition-138-step12-current-state-sync.md](../reports/operations/ignition-138-step12-current-state-sync.md)
+- **资产卡：** [HR-D790A75D59747779](./ASSET-CARDS.md#asset-hr-d790a75d59747779)
+
+<a id="change-src-hr-bcee4731c5f039a7"></a>
+### 2026-08-24 · IGNITION-20260824-138 — Step 05 Runtime Scratch Adversarial Matrix
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The R3 filesystem boundary was exercised against the required negative and positive cases. The task workspace must have no write bits; a scratch parent inside the task workspace, formal repository or control repository is rejected before process start. Symlink escape is rejected. The domain contr…
+- **来源：** [ignition-138-step05-runtime-scratch-adversarial-matrix.md](../reports/operations/ignition-138-step05-runtime-scratch-adversarial-matrix.md)
+- **资产卡：** [HR-BCEE4731C5F039A7](./ASSET-CARDS.md#asset-hr-bcee4731c5f039a7)
+
+<a id="change-src-hr-b2797cd81f454a5f"></a>
+### 2026-08-24 · IGNITION-20260824-138 — Step 10 Independent OS Validation Gate
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** No new attempt returned a structured public result. The first Codex attempt was a bounded pre-inference startup failure; the second invocation was forbidden by the auth-source boundary. Consequently the Task138 independent fixture validator was not run against a live result, and no RETURNEDUNVALI…
+- **来源：** [ignition-138-step10-independent-validation-gate.md](../reports/operations/ignition-138-step10-independent-validation-gate.md)
+- **资产卡：** [HR-B2797CD81F454A5F](./ASSET-CARDS.md#asset-hr-b2797cd81f454a5f)
+
+<a id="change-src-hr-b22454ba8f3e5429"></a>
+### 2026-08-24 · IGNITION-137 Step 09 — one real Codex synthetic/read-only attempt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The single authorized Codex live dispatch ran at 2026-08-24 06:16:05 UTC with a fresh codex-cli 0.144.4 lease, repo.read ceiling, disposable fixture, strict output schema, 900-second deadline, depth-one child guard, --skip-git-repo-check, read-only sandbox, and no new billing authority.
+- **来源：** [ignition-137-step09-live-codex-attempt.md](../reports/operations/ignition-137-step09-live-codex-attempt.md)
+- **资产卡：** [HR-B22454BA8F3E5429](./ASSET-CARDS.md#asset-hr-b22454ba8f3e5429)
+
+<a id="change-src-hr-b00bbd6f7fea949f"></a>
+### 2026-08-24 · IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The Task136 attempt was inspected without dispatching Hermes again. Its public receipt is live-hermes-136 / live-hermes-136-initial, with TIMEDOUTEFFECTUNKNOWN, equal historical workspace digests, no public events, no session pointer, and cancelstate=UNKNOWN.
+- **来源：** [ignition-137-step01-hermes-timeout-reconciliation.md](../reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md)
+- **资产卡：** [HR-B00BBD6F7FEA949F](./ASSET-CARDS.md#asset-hr-b00bbd6f7fea949f)
+
+<a id="change-src-hr-a2e1d8a6ec4e2cf4"></a>
+### 2026-08-24 · IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The existing literal-argv, explicit-cwd, bounded stdout/stderr and process-group transport now accepts an attempt-specific RuntimeScratchLease. The lease is created as an empty 0700 directory, records only metadata digests (relative names, types, modes and sizes; never runtime file contents), and…
+- **来源：** [ignition-138-step03-live-process-transport-scratch-lifecycle.md](../reports/operations/ignition-138-step03-live-process-transport-scratch-lifecycle.md)
+- **资产卡：** [HR-A2E1D8A6EC4E2CF4](./ASSET-CARDS.md#asset-hr-a2e1d8a6ec4e2cf4)
+
+<a id="change-src-hr-7e853c8821f44f01"></a>
+### 2026-08-24 · IGNITION-20260824-137 — Step 06 Codex Adapter R2 Exact Output Contract
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Strict Task137 envelopes now cause the Codex adapter to pass literal argv with --json, --ephemeral, --ignore-user-config, --ignore-rules, --sandbox read-only, an externally materialized read-only --output-schema, and explicit disposable --cd. The adapter does not use shell interpolation, --output…
+- **来源：** [ignition-137-step06-codex-exact-output-contract.md](../reports/operations/ignition-137-step06-codex-exact-output-contract.md)
+- **资产卡：** [HR-7E853C8821F44F01](./ASSET-CARDS.md#asset-hr-7e853c8821f44f01)
+
+<a id="change-src-hr-7537e6849db277e0"></a>
+### 2026-08-24 · IGNITION-20260824-138 — Step 04 Codex Live Adapter R3
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The Codex adapter now has an explicit R3 mode in which the disposable task workspace remains read-only and --sandbox read-only remains bound in the literal argv. Runtime HOME, TMPDIR, CODEXHOME and XDG cache/config/runtime paths are redirected to one empty, attempt-specific writable scratch lease…
+- **来源：** [ignition-138-step04-codex-adapter-r3.md](../reports/operations/ignition-138-step04-codex-adapter-r3.md)
+- **资产卡：** [HR-7537E6849DB277E0](./ASSET-CARDS.md#asset-hr-7537e6849db277e0)
+
+<a id="change-src-hr-6702d7ffb571d921"></a>
+### 2026-08-24 · IGNITION-137 Step 10 — independent validation outcome
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The Step 09 receipt round-trips through the strict live-executor-receipt-r2 contract with digest 125c385e5d38ab7c922128ec015423797b6875bb98f8ca4359ee6336a163d83d. Its state is MALFORMEDRESULT, exit code is 1, and no structured result exists.
+- **来源：** [ignition-137-step10-independent-validation-outcome.md](../reports/operations/ignition-137-step10-independent-validation-outcome.md)
+- **资产卡：** [HR-6702D7FFB571D921](./ASSET-CARDS.md#asset-hr-6702d7ffb571d921)
+
+<a id="change-src-hr-5c77edf677c622ff"></a>
+### 2026-08-24 · IGNITION-20260824-137 — Step 02 Timeout / Timestamp / Process Closeout R2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The live transport now records separate wall-clock startedat and endedat, monotonic elapsed time, the requested timeout, whether termination was requested, signals sent, final process-group status, first public-event latency, and stdout/stderr byte counts plus SHA-256 digests. Raw stdout and stde…
+- **来源：** [ignition-137-step02-timeout-process-closeout-r2.md](../reports/operations/ignition-137-step02-timeout-process-closeout-r2.md)
+- **资产卡：** [HR-5C77EDF677C622FF](./ASSET-CARDS.md#asset-hr-5c77edf677c622ff)
+
+<a id="change-src-hr-589863c3bd7ff8fd"></a>
+### 2026-08-24 · IGNITION-20260824-137 — Step 03 Codex Live Eligibility Re-attestation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The current public Codex CLI was re-observed on the disposable probe surface: codex-cli 0.144.4, with exec --help digest 9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19. The public boundary includes --json, --output-schema, --ephemeral, --ignore-user-config, --ignore-rules, --san…
+- **来源：** [ignition-137-step03-codex-live-eligibility.md](../reports/operations/ignition-137-step03-codex-live-eligibility.md)
+- **资产卡：** [HR-589863C3BD7FF8FD](./ASSET-CARDS.md#asset-hr-589863c3bd7ff8fd)
+
+<a id="change-src-hr-4798fdbcb413611b"></a>
+### 2026-08-24 · IGNITION-20260824-137 — Step 04 Child Context and Reentrancy Guard
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The live Codex adapter now materializes at most one child context. A parent at depth 0 may issue a depth-1 child with POINTFIRELIVECHILDDEPTH=1; a depth-1 context cannot issue another child, and a Codex adapter created at depth 1 refuses to build a dispatch argv.
+- **来源：** [ignition-137-step04-live-child-reentrancy-guard.md](../reports/operations/ignition-137-step04-live-child-reentrancy-guard.md)
+- **资产卡：** [HR-4798FDBCB413611B](./ASSET-CARDS.md#asset-hr-4798fdbcb413611b)
+
+<a id="change-src-hr-4022b786a5d8eff6"></a>
+### 2026-08-24 · IGNITION-137 Step 12 — obligation lifecycle
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** No validated live completion occurred, so the historical LIVEEXTERNALINVOCATION obligation remains open with its original semantic ceiling: LIVEBRIDGEIMPLEMENTED / LIVECOMPLETIONNOTOBSERVED.
+- **来源：** [ignition-137-step12-obligation-lifecycle.md](../reports/operations/ignition-137-step12-obligation-lifecycle.md)
+- **资产卡：** [HR-4022B786A5D8EFF6](./ASSET-CARDS.md#asset-hr-4022b786a5d8eff6)
+
+<a id="change-src-hr-26db9e2e52f3d7c9"></a>
+### 2026-08-24 · IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The first real Codex R3 child used new identities dispatch-138-live-01 / attempt-138-live-01, the fresh lease lease-ignition-138-live-01-repaired, the Task138 fixture, an external strict schema, a mode-0555 task workspace and an attempt-specific runtime scratch. The default persistent-document ro…
+- **来源：** [ignition-138-step08-first-codex-dispatch.md](../reports/operations/ignition-138-step08-first-codex-dispatch.md)
+- **资产卡：** [HR-26DB9E2E52F3D7C9](./ASSET-CARDS.md#asset-hr-26db9e2e52f3d7c9)
+
+<a id="change-src-hr-0a9930be185eaea8"></a>
+### 2026-08-24 · IGNITION-20260824-138 — Step 02 Deterministic Startup-Failure Reproduction
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** No model or live Codex invocation was started. A bounded Python subprocess harness was used to mimic only the public startup filesystem operations observed in Task137: create a helper directory/file under the effective CODEXHOME/HOME, create a runtime file under TMPDIR, and then emit one structur…
+- **来源：** [ignition-138-step02-filesystem-reproduction.md](../reports/operations/ignition-138-step02-filesystem-reproduction.md)
+- **资产卡：** [HR-0A9930BE185EAEA8](./ASSET-CARDS.md#asset-hr-0a9930be185eaea8)
+
+<a id="change-src-hr-0854899207c74d5d"></a>
+### 2026-08-24 · IGNITION-137 Step 08 — dry-run readiness
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: READYFORONELIVECODEXATTEMPT
+- **来源：** [ignition-137-step08-dry-run-readiness.md](../reports/operations/ignition-137-step08-dry-run-readiness.md)
+- **资产卡：** [HR-0854899207C74D5D](./ASSET-CARDS.md#asset-hr-0854899207c74d5d)
+
+<a id="change-src-hr-07f04c57755e61ed"></a>
+### 2026-08-24 · IGNITION-137 Step 13 — Steering / Goal / Memory boundary
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** There is no validated structured result to absorb. The MALFORMEDRESULT startup receipt remains operational evidence only; it does not become Intent, Goal completion, Owner acceptance, or Memory content.
+- **来源：** [ignition-137-step13-steering-goal-memory-boundary.md](../reports/operations/ignition-137-step13-steering-goal-memory-boundary.md)
+- **资产卡：** [HR-07F04C57755E61ED](./ASSET-CARDS.md#asset-hr-07f04c57755e61ed)
+
+<a id="change-src-hr-07c0a722103fa88b"></a>
+### 2026-08-24 · IGNITION-20260824-138 — Step 11 Obligation Semantics
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The inherited Hermes live-hermes-136 reconciliation remains open exactly as recorded by Task137. No new evidence proves reconciled-no-side-effect or closes the timeout/effect uncertainty, so no Hermes resume, retry or channel action is created. The inherited OpenClaw safety-boundary blockers are…
+- **来源：** [ignition-138-step11-obligation-semantics.md](../reports/operations/ignition-138-step11-obligation-semantics.md)
+- **资产卡：** [HR-07C0A722103FA88B](./ASSET-CARDS.md#asset-hr-07c0a722103fa88b)
+
+<a id="change-src-hr-049665d816ca48a6"></a>
+### 2026-08-24 · IGNITION-20260824-138 — Step 06 Capability / Auth / Billing Re-attestation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Before any real inference, the current public Codex CLI was re-observed in a disposable read-only probe directory. The observed version is codex-cli 0.144.4; the public exec --help interface digest is 9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19, and the binary digest is 13406…
+- **来源：** [ignition-138-step06-capability-reauth.md](../reports/operations/ignition-138-step06-capability-reauth.md)
+- **资产卡：** [HR-049665D816CA48A6](./ASSET-CARDS.md#asset-hr-049665d816ca48a6)
+
+<a id="change-src-hr-6a9b73c834a5af36"></a>
+### 2026-08-23 · IGNITION-20260823-136 — Live External Executor Bridge R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Task ID: IGNITION-20260823-136
+- **来源：** [IGNITION-20260823-136-result.md](../agent-results/IGNITION-20260823-136-result.md)
+- **资产卡：** [HR-6A9B73C834A5AF36](./ASSET-CARDS.md#asset-hr-6a9b73c834a5af36)
+
+<a id="change-src-hr-e8430d8482271d1d"></a>
+### 2026-08-22 · IGNITION-20260822-135 — Full Regression Closure & Test Environment R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Task ID: IGNITION-20260822-135
+- **来源：** [IGNITION-20260822-135-result.md](../agent-results/IGNITION-20260822-135-result.md)
+- **资产卡：** [HR-E8430D8482271D1D](./ASSET-CARDS.md#asset-hr-e8430d8482271d1d)
+
+<a id="change-src-hr-d882bcf095baaddd"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 03 — Current path manifest contract audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The contract audit selects方案 A: classification-manifest.jsonl remains the sole Current generated snapshot of the live path-classification engine. This is supported by the validator's source contract and by its --check behavior, which compares the live tracked set to the committed manifest and rep…
+- **来源：** [ignition-134-step03-path-manifest-contract-audit.md](../reports/operations/ignition-134-step03-path-manifest-contract-audit.md)
+- **资产卡：** [HR-D882BCF095BAADDD](./ASSET-CARDS.md#asset-hr-d882bcf095baaddd)
+
+<a id="change-src-hr-d8277885e64bf9e8"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Canonical Current now advances from terminal Task133 to non-terminal Task134, while the latest architecture-changing task remains Task129 and currentiterationboundary=134 remains only the deprecated compatibility alias of the formal ordinal. Task133 receipts, schemas, fixtures, residual provenanc…
+- **来源：** [ignition-134-step13-residual-debt-projection-hygiene.md](../reports/operations/ignition-134-step13-residual-debt-projection-hygiene.md)
+- **资产卡：** [HR-D8277885E64BF9E8](./ASSET-CARDS.md#asset-hr-d8277885e64bf9e8)
+
+<a id="change-src-hr-c1e3cb3130d2df76"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 12 — Residual adversarial matrix
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The 18-case matrix exercises the residual comparator against an inherited unchanged tuple, object/count growth, same-count replacement, failure-dimension growth, baseline/current count-set mismatches, forged baseline/current fingerprints, three new-residual classifications, source-command changes…
+- **来源：** [ignition-134-step12-residual-adversarial-matrix.md](../reports/operations/ignition-134-step12-residual-adversarial-matrix.md)
+- **资产卡：** [HR-C1E3CB3130D2DF76](./ASSET-CARDS.md#asset-hr-c1e3cb3130d2df76)
+
+<a id="change-src-hr-bef5d05d5390fd53"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 11 — Current projection closure
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Step 10's actionable current failures were deterministic projection drift, not permission to enlarge a residual. The native builders were run in their normal write mode. Function asset census followed by deep adjudication produced 5623 canonical cards; the census and 46-check function closure bot…
+- **来源：** [ignition-134-step11-current-projection-closure.md](../reports/operations/ignition-134-step11-current-projection-closure.md)
+- **资产卡：** [HR-BEF5D05D5390FD53](./ASSET-CARDS.md#asset-hr-bef5d05d5390fd53)
+
+<a id="change-src-hr-ba75dd3140d0b0a0"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: BASELINEREPRODUCED
+- **来源：** [ignition-134-step00-residual-archaeology.md](../reports/operations/ignition-134-step00-residual-archaeology.md)
+- **资产卡：** [HR-BA75DD3140D0B0A0](./ASSET-CARDS.md#asset-hr-ba75dd3140d0b0a0)
+
+<a id="change-src-hr-b45bab5b6a15098b"></a>
+### 2026-08-22 · IGNITION-20260822-132 Step 09 — Canonical Current Migration
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The canonical source now records IGNITION-20260822-132 as the current formal task with COMPLETEDWITHCLASSIFIEDRESIDUALS and terminal=true. The content-owned lifecycle is RELEASEREADY and terminal. Current Facts, Current Snapshot, and all compiler-owned Current surfaces were regenerated from that…
+- **来源：** [ignition-132-step09-canonical-current-migration.md](../reports/operations/ignition-132-step09-canonical-current-migration.md)
+- **资产卡：** [HR-B45BAB5B6A15098B](./ASSET-CARDS.md#asset-hr-b45bab5b6a15098b)
+
+<a id="change-src-hr-abbbd65bf096449d"></a>
+### 2026-08-22 · Iteration Identity Model R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** ITERATIONBOUNDARYSEMANTICSINVARIANT gives every Current iteration field one machine-checkable meaning. The canonical task identity source is ignition/data/operations/current-task-lineage-status.json; ordinals are parsed from its task IDs by the deterministic parser introduced in Step 02.
+- **来源：** [iteration-boundary-semantics-r1.md](../docs/architecture/iteration-boundary-semantics-r1.md)
+- **资产卡：** [HR-ABBBD65BF096449D](./ASSET-CARDS.md#asset-hr-abbbd65bf096449d)
+
+<a id="change-src-hr-9e9cc07c265f9ae3"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 08 — Residual sealing and baseline preservation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The residual builder was corrected so a current repair does not erase the debt it repaired. It now reads only the prior ledger's baseline tuple—objects, failure dimensions and baseline command—while recomputing the current tuple from live validators. The current observation is never reused as the…
+- **来源：** [ignition-134-step08-residual-sealing-r1.md](../reports/operations/ignition-134-step08-residual-sealing-r1.md)
+- **资产卡：** [HR-9E9CC07C265F9AE3](./ASSET-CARDS.md#asset-hr-9e9cc07c265f9ae3)
+
+<a id="change-src-hr-9aaea8346e63b9a2"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** All 11 named IDs were audited independently against their declared source and human entry. The result is 11 × SOURCECHANGEDHUMANSURFACESTILLSEMANTICALLYVALID, with zero regeneration-required cases, zero superseded cases, zero hash-only bookkeeping cases, and zero actual semantic conflicts.
+- **来源：** [ignition-134-step06-human-surface-semantic-audit.md](../reports/operations/ignition-134-step06-human-surface-semantic-audit.md)
+- **资产卡：** [HR-9AAEA8346E63B9A2](./ASSET-CARDS.md#asset-hr-9aaea8346e63b9a2)
+
+<a id="change-src-hr-97478cb8dceeba3a"></a>
+### 2026-08-22 · IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The Step 08 matrix contains 14 explicit fixtures. It covers stale canonical Current source, stale lifecycle, forged Snapshot, architecture-task promotion, witness/task mismatch, matching SHA with mismatched task identity, rollback, unknown-task-without-contract, stale compiler output, legal histo…
+- **来源：** [ignition-132-step08-adversarial-matrix.md](../reports/operations/ignition-132-step08-adversarial-matrix.md)
+- **资产卡：** [HR-97478CB8DCEEBA3A](./ASSET-CARDS.md#asset-hr-97478cb8dceeba3a)
+
+<a id="change-src-hr-8d16219ed78008e0"></a>
+### 2026-08-22 · IGNITION-20260822-132 — Canonical Current Advancement & Release Transaction R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Task ID: IGNITION-20260822-132
+- **来源：** [IGNITION-20260822-132-result.md](../agent-results/IGNITION-20260822-132-result.md)
+- **资产卡：** [HR-8D16219ED78008E0](./ASSET-CARDS.md#asset-hr-8d16219ed78008e0)
+
+<a id="change-src-hr-890a09f2962945d8"></a>
+### 2026-08-22 · IGNITION-20260822-132 Step 00 — Canonical Current stale-source reproduction
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: BASELINEREPRODUCED
+- **来源：** [ignition-132-step00-canonical-current-audit.md](../reports/operations/ignition-132-step00-canonical-current-audit.md)
+- **资产卡：** [HR-890A09F2962945D8](./ASSET-CARDS.md#asset-hr-890a09f2962945d8)
+
+<a id="change-src-hr-885cd7549621bd64"></a>
+### 2026-08-22 · IGNITION-20260822-135 Step 00 — Fresh baseline and exact failure inventory
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Baseline is clean main@421a41462e26f8323c7b811e61d47f26232d61b5, obtained from the live formal remote after refreshing 1111/origin/relay/current@43459ecaf9952163d4638c0bf9c76da99ff73b13. The supplied Codex output directory is non-Git and was not edited.
+- **来源：** [ignition-135-step00-failure-inventory.md](../reports/operations/ignition-135-step00-failure-inventory.md)
+- **资产卡：** [HR-885CD7549621BD64](./ASSET-CARDS.md#asset-hr-885cd7549621bd64)
+
+<a id="change-src-hr-7efc33a583446487"></a>
+### 2026-08-22 · IGNITION-20260822-132 Step 12 — Targeted and Bounded Regression Closure
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: COMPLETED WITH CLASSIFIED RESIDUALS
+- **来源：** [ignition-132-step12-regression-closure.md](../reports/operations/ignition-132-step12-regression-closure.md)
+- **资产卡：** [HR-7EFC33A583446487](./ASSET-CARDS.md#asset-hr-7efc33a583446487)
+
+<a id="change-src-hr-7912554f9bb12ebc"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 09 — SymPy environment contract
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The repository declares sympy==1.14.0, z3-solver==4.16.0.0 and jsonschema==4.26.0 in ignition/requirements-foundation.txt. A temporary isolated foundation venv installed exactly those declared versions without modifying the repository, external agent configuration, authentication, or any secret-b…
+- **来源：** [ignition-134-step09-sympy-environment-contract.md](../reports/operations/ignition-134-step09-sympy-environment-contract.md)
+- **资产卡：** [HR-7912554F9BB12EBC](./ASSET-CARDS.md#asset-hr-7912554f9bb12ebc)
+
+<a id="change-src-hr-74d7fd233721374f"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 10 — Full unittest discovery
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: TERMINALFAILURESRECORDED
+- **来源：** [ignition-134-step10-full-unittest-discovery.md](../reports/operations/ignition-134-step10-full-unittest-discovery.md)
+- **资产卡：** [HR-74D7FD233721374F](./ASSET-CARDS.md#asset-hr-74d7fd233721374f)
+
+<a id="change-src-hr-722a8bc0a3bfd244"></a>
+### 2026-08-22 · IGNITION-20260822-132 Step 10 — Current Surface Recompilation and Stable Prose
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The seven compiler-owned surfaces were regenerated from the terminalized canonical Current source: homepage identity, project current state, AI cold start, AI handoff, machine entry, architecture, and State Changelog. Stable prose now explains the task-role split without hand-copying volatile tas…
+- **来源：** [ignition-132-step10-surface-recompilation.md](../reports/operations/ignition-132-step10-surface-recompilation.md)
+- **资产卡：** [HR-722A8BC0A3BFD244](./ASSET-CARDS.md#asset-hr-722a8bc0a3bfd244)
+
+<a id="change-src-hr-6772a74d740663b7"></a>
+### 2026-08-22 · IGNITION-134 Step 14 — Human Surface semantic audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is the final item-by-item audit after the Task134 terminal Current projection was regenerated. It records provenance decisions; it does not rewrite the historical Step13 audit or raise any claim ceiling.
+- **来源：** [ignition-134-step14-human-surface-semantic-audit.md](../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
+- **资产卡：** [HR-6772A74D740663B7](./ASSET-CARDS.md#asset-hr-6772a74d740663b7)
+
+<a id="change-src-hr-670fc055b0dc389f"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The existing ordered path rules cover all required current planes without an authoritative allowlist expansion:
+- **来源：** [ignition-134-step04-path-rules-completeness-r1.md](../reports/operations/ignition-134-step04-path-rules-completeness-r1.md)
+- **资产卡：** [HR-670FC055B0DC389F](./ASSET-CARDS.md#asset-hr-670fc055b0dc389f)
+
+<a id="change-src-hr-5e86b0c4a2323d56"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 01 — Residual Ledger R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Task134 now has one machine-readable Current Residual Ledger at ignition/data/operations/residual-ledger-r1.json, validated by ignition/tools/validateresidualledger.py. It contains five stable residual IDs:
+- **来源：** [ignition-134-step01-residual-ledger-r1.md](../reports/operations/ignition-134-step01-residual-ledger-r1.md)
+- **资产卡：** [HR-5E86B0C4A2323D56](./ASSET-CARDS.md#asset-hr-5e86b0c4a2323d56)
+
+<a id="change-src-hr-541c9f6fd2e3a890"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The manifest was regenerated from the live classification engine after the Step 04 audit. Before regeneration, the Task134 working tree had 2,978 tracked paths and 2,720 manifest rows with missing=258; after the Step 05 artifacts were present and the manifest was generated, the live tree and mani…
+- **来源：** [ignition-134-step05-current-path-manifest-r1.md](../reports/operations/ignition-134-step05-current-path-manifest-r1.md)
+- **资产卡：** [HR-541C9F6FD2E3A890](./ASSET-CARDS.md#asset-hr-541c9f6fd2e3a890)
+
+<a id="change-src-hr-50499ca77f223f3e"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 13 — Human Surface semantic re-audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** All 11 named source-hash drifts were audited again after the Task134 canonical Current identity migration and Current projection regeneration. Each remains SOURCECHANGEDHUMANSURFACESTILLSEMANTICALLYVALID; regeneration-required, superseded, hash-only, and actual-conflict counts are all zero.
+- **来源：** [ignition-134-step13-human-surface-semantic-audit.md](../reports/operations/ignition-134-step13-human-surface-semantic-audit.md)
+- **资产卡：** [HR-50499CA77F223F3E](./ASSET-CARDS.md#asset-hr-50499ca77f223f3e)
+
+<a id="change-src-hr-4db4d409044421b2"></a>
+### 2026-08-22 · IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Step 07 binds the observation-time publication witness to the formal result, canonical Current source, lifecycle, and release candidate. The latest architecture-changing task remains IGNITION-20260821-129; it is deliberately not promoted to the current formal task.
+- **来源：** [ignition-132-step07-task-id-binding.md](../reports/operations/ignition-132-step07-task-id-binding.md)
+- **资产卡：** [HR-4DB4D409044421B2](./ASSET-CARDS.md#asset-hr-4db4d409044421b2)
+
+<a id="change-src-hr-3bbf97c58b1cef8b"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 02 — Residual delta gate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The residual comparator now recomputes baseline and current fingerprints from the count, object set and failure-dimension set. It fails closed when an inherited residual grows, replaces an object at the same count, changes failure dimensions, changes its source command without an explicit migrati…
+- **来源：** [ignition-134-step02-residual-delta-gate-r1.md](../reports/operations/ignition-134-step02-residual-delta-gate-r1.md)
+- **资产卡：** [HR-3BBF97C58B1CEF8B](./ASSET-CARDS.md#asset-hr-3bbf97c58b1cef8b)
+
+<a id="change-src-hr-3789b2d3caf1625c"></a>
+### 2026-08-22 · IGNITION-134 Step 14 — Residual debt and projection hygiene closeout
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The terminal Task134 candidate keeps the residual ledger bounded and makes the Current projections decidable.
+- **来源：** [ignition-134-step14-residual-debt-projection-hygiene.md](../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
+- **资产卡：** [HR-3789B2D3CAF1625C](./ASSET-CARDS.md#asset-hr-3789b2d3caf1625c)
+
+<a id="change-src-hr-314d6d340fda2a7b"></a>
+### 2026-08-22 · IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** The 11 source revisions approved in Step 06 were written into the materiality manifest and the corresponding human-entry 来源指纹 fields. The operation changed no human explanation, machine-record fingerprint, disposition, M/E field, or claim ceiling. No source hash was recomputed for an entry outsid…
+- **来源：** [ignition-134-step07-human-surface-fingerprint-refresh.md](../reports/operations/ignition-134-step07-human-surface-fingerprint-refresh.md)
+- **资产卡：** [HR-314D6D340FDA2A7B](./ASSET-CARDS.md#asset-hr-314d6d340fda2a7b)
+
+<a id="change-src-hr-301b77606275333c"></a>
+### 2026-08-22 · IGNITION-20260822-135 Step 01 — Canonical full regression runner
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The repository now has one explicit orchestration wrapper, ignition/tools/runfullregression.py, and one machine-readable contract at ignition/data/operations/full-regression-runner-r1.json.
+- **来源：** [ignition-135-step01-full-regression-runner.md](../reports/operations/ignition-135-step01-full-regression-runner.md)
+- **资产卡：** [HR-301B77606275333C](./ASSET-CARDS.md#asset-hr-301b77606275333c)
+
+<a id="change-src-hr-272476f707875492"></a>
+### 2026-08-22 · IGNITION-20260822-133 — Iteration Boundary Semantics R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Task ID: IGNITION-20260822-133
+- **来源：** [IGNITION-20260822-133-result.md](../agent-results/IGNITION-20260822-133-result.md)
+- **资产卡：** [HR-272476F707875492](./ASSET-CARDS.md#asset-hr-272476f707875492)
+
+<a id="change-src-hr-23660c29509b2a3c"></a>
+### 2026-08-22 · Iteration Boundary Archaeology R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This is the Step 00 audit for IGNITION-20260822-133. The formal baseline was main@5ed99d148dfb49e6c2ff729a345d2499d4b76021. The audit is intentionally historical and read-only: no current value was changed to justify a conclusion.
+- **来源：** [iteration-boundary-archaeology-r1.md](../docs/architecture/iteration-boundary-archaeology-r1.md)
+- **资产卡：** [HR-23660C29509B2A3C](./ASSET-CARDS.md#asset-hr-23660c29509b2a3c)
+
+<a id="change-src-hr-21714dd5b17e54d7"></a>
+### 2026-08-22 · IGNITION-20260822-134 — Residual Debt & Projection Hygiene R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Task ID: IGNITION-20260822-134
+- **来源：** [IGNITION-20260822-134-result.md](../agent-results/IGNITION-20260822-134-result.md)
+- **资产卡：** [HR-21714DD5B17E54D7](./ASSET-CARDS.md#asset-hr-21714dd5b17e54d7)
+
+<a id="change-src-hr-1306015aaba6e51b"></a>
+### 2026-08-22 · IGNITION-20260822-132 Step 11 — Residual and Regression Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: PASS WITH CLASSIFIED RESIDUALS
+- **来源：** [ignition-132-step11-residual-audit.md](../reports/operations/ignition-132-step11-residual-audit.md)
+- **资产卡：** [HR-1306015AABA6E51B](./ASSET-CARDS.md#asset-hr-1306015aaba6e51b)
+
+<a id="change-src-hr-e1fc77026a23a989"></a>
+### 2026-08-21 · IGNITION-128 Step 04 — deterministic rebuild and regression
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The current-facts JSON and Markdown projections were rebuilt twice. Their two passes were byte-identical (3fd2156c... and c2cebc4b...), and the generator check passed. The canonical lineage validator, integrated CURRENTSTATESYNC validator, 17 scoped tests, four negative fixture classes, Human vis…
+- **来源：** [ignition-128-step04-regression.md](../reports/operations/ignition-128-step04-regression.md)
+- **资产卡：** [HR-E1FC77026A23A989](./ASSET-CARDS.md#asset-hr-e1fc77026a23a989)
+
+<a id="change-src-hr-d340adc528dc460f"></a>
+### 2026-08-21 · IGNITION-129 Step 20 — Current architecture/state synchronization
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step 20 synchronizes the repository Current surface after the R1 steering implementation. The change is classified ARCHITECTURECHANGED because Steering / Intent / Goal / Obligation R1 is added to the existing Ignition OS / driver identity and to the single registry-derived system map.
+- **来源：** [ignition-129-step20-current-sync.md](../reports/operations/ignition-129-step20-current-sync.md)
+- **资产卡：** [HR-D340ADC528DC460F](./ASSET-CARDS.md#asset-hr-d340adc528dc460f)
+
+<a id="change-src-hr-cbd98f3c6861aa2b"></a>
+### 2026-08-21 · IGNITION-131 Step 00 — Release publication paradox audit
+
+- **类型：** `ARTICLE_OR_PUBLICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This audit was completed before any IGNITION-131 repair. The formal remote main ref and an isolated fresh checkout both resolve to 11e5ed0f8f16f7f315179b540f08018c2e6e45d1, the terminal IGNITION-130 tip.
+- **来源：** [ignition-131-step00-publication-paradox-audit.md](../reports/operations/ignition-131-step00-publication-paradox-audit.md)
+- **资产卡：** [HR-CBD98F3C6861AA2B](./ASSET-CARDS.md#asset-hr-cbd98f3c6861aa2b)
+
+<a id="change-src-hr-c56dd758323901b9"></a>
+### 2026-08-21 · IGNITION-20260821-130 — Terminal Result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: COMPLETEDWITHCLASSIFIEDRESIDUALS
+- **来源：** [IGNITION-20260821-130-result.md](../agent-results/IGNITION-20260821-130-result.md)
+- **资产卡：** [HR-C56DD758323901B9](./ASSET-CARDS.md#asset-hr-c56dd758323901b9)
+
+<a id="change-src-hr-bd65d2af1b1afed8"></a>
+### 2026-08-21 · IGNITION-128 Step 00 — Current-State semantic audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Formal baseline: origin/main@681f86d79b1112af3c07e0f8091335860c237ef2. Control source: 1111 relay/current@3b6d27441395492cf633e53d3d1e985d0b2ec933. The formal main fetch and baseline equality check passed before this audit.
+- **来源：** [ignition-128-step00-current-state-audit.md](../reports/operations/ignition-128-step00-current-state-audit.md)
+- **资产卡：** [HR-BD65D2AF1B1AFED8](./ASSET-CARDS.md#asset-hr-bd65d2af1b1afed8)
+
+<a id="change-src-hr-9e6a888145f934b6"></a>
+### 2026-08-21 · IGNITION-130 Step 11 — residual reclassification
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task 129’s terminal receipt remains the source record. The following items are retained as historical or environmental residuals; none is a new Task 130 Current Surface regression.
+- **来源：** [ignition-130-step11-residual-reclassification.md](../reports/operations/ignition-130-step11-residual-reclassification.md)
+- **资产卡：** [HR-9E6A888145F934B6](./ASSET-CARDS.md#asset-hr-9e6a888145f934b6)
+
+<a id="change-src-hr-61f3531a51705a76"></a>
+### 2026-08-21 · IGNITION-20260821-129 Step 00 — Steering gap audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 0064897c5537cc4a20eb7b03824841a9d6a608d6
+- **来源：** [ignition-129-step00-steering-audit.md](../reports/operations/ignition-129-step00-steering-audit.md)
+- **资产卡：** [HR-61F3531A51705A76](./ASSET-CARDS.md#asset-hr-61f3531a51705a76)
+
+<a id="change-src-hr-2deb299b702d6dfe"></a>
+### 2026-08-21 · IGNITION-20260821-129 — Terminal Result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: COMPLETEDWITHCLASSIFIEDRESIDUALS
+- **来源：** [IGNITION-20260821-129-result.md](../agent-results/IGNITION-20260821-129-result.md)
+- **资产卡：** [HR-2DEB299B702D6DFE](./ASSET-CARDS.md#asset-hr-2deb299b702d6dfe)
+
+<a id="change-src-hr-2976c727fb36904e"></a>
+### 2026-08-21 · IGNITION-130 Step 00 — Current surface split-brain audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The audit found real, pre-repair contradictions; this report does not rewrite them as a clean baseline.
+- **来源：** [ignition-130-step00-current-surface-audit.md](../reports/operations/ignition-130-step00-current-surface-audit.md)
+- **资产卡：** [HR-2976C727FB36904E](./ASSET-CARDS.md#asset-hr-2976c727fb36904e)
+
+<a id="change-src-hr-2370d331885d54d3"></a>
+### 2026-08-21 · OS Steering, Intent, and Obligation R1
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This document describes the repository-local steering plane introduced by IGNITION-129. It is an OS driver control-plane contract for durable direction, Goal state, obligations, arbitration, and human-readable next-work explanations. The OS continues to route bounded work to replaceable executors…
+- **来源：** [os-steering-intent-r1.md](../docs/architecture/os-steering-intent-r1.md)
+- **资产卡：** [HR-2370D331885D54D3](./ASSET-CARDS.md#asset-hr-2370d331885d54d3)
+
+<a id="change-src-hr-f5fb13bfbfdfa4c8"></a>
+### 2026-08-20 · IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: COMPLETED (repository-local audit only)
+- **来源：** [ignition-127-step00-rebase-audit.md](../reports/operations/ignition-127-step00-rebase-audit.md)
+- **资产卡：** [HR-F5FB13BFBFDFA4C8](./ASSET-CARDS.md#asset-hr-f5fb13bfbfdfa4c8)
+
+<a id="change-src-hr-de79d1279206415f"></a>
+### 2026-08-20 · ESI R0 人类阅读入口
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** 状态：CURRENTWITHOPENOBLIGATIONS · 这不是事实、权限或真值入口。
+- **来源：** [esi-human-surface-r0.md](../docs/architecture/esi-human-surface-r0.md)
+- **资产卡：** [HR-DE79D1279206415F](./ASSET-CARDS.md#asset-hr-de79d1279206415f)
+
+<a id="change-src-hr-c93a1c74c0cbd860"></a>
+### 2026-08-20 · Structural Governance Surface
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 这是一张由 canonical transition grammar 投影出的关系表，不是提示词、命令、 权限清单或真值层。它把“当前状态 → 可以说到哪里 → 缺什么才能更强”并排呈现， 让人和模型都能看到边界，但不能凭阅读它获得任何 hard authority。
+- **来源：** [structural-governance-surface.md](../docs/architecture/structural-governance-surface.md)
+- **资产卡：** [HR-C93A1C74C0CBD860](./ASSET-CARDS.md#asset-hr-c93a1c74c0cbd860)
+
+<a id="change-src-hr-bf69e7f307f0b285"></a>
+### 2026-08-20 · IGNITION-20260820-127 执行结果
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** 状态：COMPLETEDWITHCLASSIFIEDRESIDUALS
+- **来源：** [IGNITION-20260820-127-result.md](../agent-results/IGNITION-20260820-127-result.md)
+- **资产卡：** [HR-BF69E7F307F0B285](./ASSET-CARDS.md#asset-hr-bf69e7f307f0b285)
+
+<a id="change-src-hr-925728869f151733"></a>
+### 2026-08-20 · Soft Context Exposure Contract R0
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This contract describes one optional, provider-neutral handoff: an external executor may read a bounded Structural Governance Surface before acting. The handoff is advisory context, not a new instruction hierarchy and not an authority channel.
+- **来源：** [soft-context-exposure-contract-r0.md](../docs/architecture/soft-context-exposure-contract-r0.md)
+- **资产卡：** [HR-925728869F151733](./ASSET-CARDS.md#asset-hr-925728869f151733)
+
+<a id="change-src-hr-91e80e0c69fb56f2"></a>
+### 2026-08-20 · 认识论结构诱导（ESI）R0
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 一个系统如果反复把“证据能支持到哪里”“哪些状态不能直接跳过去”“缺证据时要保留未知”写成公开、可回链的关系，读它的 AI 可能更容易把这些关系当作当前任务的局部背景。它也可能只是学会了措辞、猜中了评分标准，或者本来就偏好谨慎。R0 把这个观察当作一个待测候选，而不是把它宣布成“AI 被感染”或永久训练。
+- **来源：** [epistemic-structural-induction-r0.md](../docs/architecture/epistemic-structural-induction-r0.md)
+- **资产卡：** [HR-91E80E0C69FB56F2](./ASSET-CARDS.md#asset-hr-91e80e0c69fb56f2)
+
+<a id="change-src-hr-8b777f70fc22bb69"></a>
+### 2026-08-20 · Owner observation seed: OWNER-OBS-ESI-001
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 公共仓库只保留一个去身份化的摘要：一个外部模型在阅读公开架构和治理材料 后，曾在后续回答中主动把工程判断与真值判断分开、保留部分未知并抵抗没有 证据支持的升级。这里没有私人正文、截图、聊天上下文、平台内容、账号或本机 路径。
+- **来源：** [owner-observation-esi-001.md](../docs/architecture/owner-observation-esi-001.md)
+- **资产卡：** [HR-8B777F70FC22BB69](./ASSET-CARDS.md#asset-hr-8b777f70fc22bb69)
+
+<a id="change-src-hr-7a0b815a93aed108"></a>
+### 2026-08-20 · ESI R0 literature boundary
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This page records what the primary literature can motivate for the ESI R0 experiment and what it cannot authorize. It is a source boundary, not a novelty claim and not a second epistemic authority.
+- **来源：** [esi-literature-boundary-r0.md](../docs/architecture/esi-literature-boundary-r0.md)
+- **资产卡：** [HR-7A0B815A93AED108](./ASSET-CARDS.md#asset-hr-7a0b815a93aed108)
+
+<a id="change-src-hr-5bdd4bcb216b40fe"></a>
+### 2026-08-20 · ESI R0 experiment protocol
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 这个 runner 只规定怎样把 exposure、challenge、evidence packet 和模型输出 放在一起比较；它不规定一个模型必须被调用，也不把没有调用写成成功。
+- **来源：** [esi-experiment-protocol-r0.md](../docs/architecture/esi-experiment-protocol-r0.md)
+- **资产卡：** [HR-5BDD4BCB216B40FE](./ASSET-CARDS.md#asset-hr-5bdd4bcb216b40fe)
+
+<a id="change-src-hr-3f9d23d382da2a17"></a>
+### 2026-08-20 · IGNITION-20260818-126 — Epistemic Structural Induction R0 progress
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This task-branch ledger records repository evidence only. origin/main stays unchanged until the final ordinary fast-forward gate. Task 125 is not executed by this run and remains DEFERREDPENDINGREBASE.
+- **来源：** [ignition-126-progress.md](../reports/operations/ignition-126-progress.md)
+- **资产卡：** [HR-3F9D23D382DA2A17](./ASSET-CARDS.md#asset-hr-3f9d23d382da2a17)
+
 <a id="change-src-hr-d7c4ca0bba65194f"></a>
 ### 2026-08-17 · IGNITION-20260816-123 架构真相同步 R1 夜班进度
 
@@ -12,6 +1596,33 @@
 - **变化：** 任务分支：codex/ignition-123-current-state-sync-compact-map-federation-r2-20260816 正式基线：d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e 控制面：1111 origin/relay/current = 7a1cfff8
 - **来源：** [ignition-123-nightshift-progress.md](../reports/operations/ignition-123-nightshift-progress.md)
 - **资产卡：** [HR-D7C4CA0BBA65194F](./ASSET-CARDS.md#asset-hr-d7c4ca0bba65194f)
+
+<a id="change-src-hr-bb7bae0c9846bcb2"></a>
+### 2026-08-17 · IGNITION-20260817-124 — OS Control Plane R2 progress
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is the task-branch progress surface for the independently pushed Step 00–12 ledger. It records repository evidence and bounded claims only. The formal main tip does not move during the task branch run.
+- **来源：** [ignition-124-progress.md](../reports/operations/ignition-124-progress.md)
+- **资产卡：** [HR-BB7BAE0C9846BCB2](./ASSET-CARDS.md#asset-hr-bb7bae0c9846bcb2)
+
+<a id="change-src-hr-a904c867936c20d9"></a>
+### 2026-08-17 · OS Control Plane R2 gap audit — IGNITION-20260817-124
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The existing Supervisor R0 was run with two dependency-ready children, ready-a and ready-b, whose write targets do not overlap. Both were accepted and the episode reached EPISODECOMPLETEDVALIDATED, but the trace was strictly ready-a → ready-b and the maximum observed concurrency was 1. The curren…
+- **来源：** [os-control-plane-r2-gap-audit.md](../reports/architecture/os-control-plane-r2-gap-audit.md)
+- **资产卡：** [HR-A904C867936C20D9](./ASSET-CARDS.md#asset-hr-a904c867936c20d9)
+
+<a id="change-src-hr-846399c124163d65"></a>
+### 2026-08-17 · OS Control Plane R2
+
+- **类型：** `MODEL_OR_ARCHITECTURE`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Task IGNITION-20260817-124 adds the bounded control-plane fabric that a driver needs to coordinate multiple declared work units. It is an orchestration projection over repository-owned records, not a new Agent shell, executor, truth source, or authority layer.
+- **来源：** [os-control-plane-r2.md](../docs/architecture/os-control-plane-r2.md)
+- **资产卡：** [HR-846399C124163D65](./ASSET-CARDS.md#asset-hr-846399c124163d65)
 
 <a id="change-src-hr-545b33bce6b635d1"></a>
 ### 2026-08-17 · CURRENTSTATESYNCINVARIANT
@@ -207,7 +1818,7 @@
 
 - **类型：** `MODEL_OR_ARCHITECTURE`
 - **状态：** `CURRENT_SCOPED_SOURCE`
-- **变化：** 任务 IGNITION-20260815-119 的 R0 完成了领域切割和依赖解耦；任务 121 的 R2 在这个 generic boundary 上接入 Pack、Memory、Supervisor、Gateway、Profile 和 真实离线维护 pilot，仍不做全仓物理大搬家。唯一可点击总架构图继续由 registry、 typed topology 和 layout 生成；本页是 R0 基础边界的 Human Surface，机器边界以 agentization-boundary-r0.json 和其 schema 为准，R2 总说明见 agent-platform-r2.md。
+- **变化：** 任务 IGNITION-20260815-119 的 R0 完成了领域切割和依赖解耦；任务 121 的 R2 在这个 generic boundary 上接入 Pack、Memory、Supervisor、Gateway、Profile 和 真实离线维护 pilot，仍不做全仓物理大搬家。完整总架构图 SVG 继续由 registry、 typed topology 和 layout 确定性生成；SVG 源码可以保留指向 canonical 目标的 link metadata， 但不承诺 GitHub 渲染页面提供交互热点；本页是 R0 基础边界的 Human Surface，机器边界以…
 - **来源：** [agentization-boundary-r0.md](../docs/architecture/agentization-boundary-r0.md)
 - **资产卡：** [HR-054B4581C405F948](./ASSET-CARDS.md#asset-hr-054b4581c405f948)
 
@@ -752,7 +2363,7 @@
 
 - **类型：** `MODEL_OR_ARCHITECTURE`
 - **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
-- **变化：** 状态：0.8.0 Current registry-derived navigation projection；0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
+- **变化：** 状态：0.16.0 Current registry-derived structural projection；0.14.0、0.13.0、0.12.0、0.11.0、0.10.0、0.9.0、0.8.0、0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
 - **来源：** [interactive-system-map.md](../docs/architecture/interactive-system-map.md)
 - **资产卡：** [HR-DAF1CB45CCD7B5B6](./ASSET-CARDS.md#asset-hr-daf1cb45ccd7b5b6)
 

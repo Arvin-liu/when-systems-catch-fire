@@ -1454,15 +1454,95 @@
   - 可搜索名称：IGNITION-106: GAP-001 接口就绪度评估 / 106-gap001-interface-readiness
   - 来源：`reports/external-research/106-gap001-interface-readiness.md`
   - 依赖：—；被引用：—
+- [IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit](../../ASSET-CARDS.md#asset-hr-f5fb13bfbfdfa4c8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit / ignition-127-step00-rebase-audit
+  - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-128 Step 04 — deterministic rebuild and regression](../../ASSET-CARDS.md#asset-hr-e1fc77026a23a989)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-128 Step 04 — deterministic rebuild and regression / ignition-128-step04-regression
+  - 来源：`reports/operations/ignition-128-step04-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-130 Step 00 — Current surface split-brain audit](../../ASSET-CARDS.md#asset-hr-2976c727fb36904e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-130 Step 00 — Current surface split-brain audit / ignition-130-step00-current-surface-audit
+  - 来源：`reports/operations/ignition-130-step00-current-surface-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-130 Step 11 — residual reclassification](../../ASSET-CARDS.md#asset-hr-9e6a888145f934b6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-130 Step 11 — residual reclassification / ignition-130-step11-residual-reclassification
+  - 来源：`reports/operations/ignition-130-step11-residual-reclassification.md`
+  - 依赖：—；被引用：—
+- [IGNITION-134 Step 14 — Residual debt and projection hygiene closeout](../../ASSET-CARDS.md#asset-hr-3789b2d3caf1625c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-134 Step 14 — Residual debt and projection hygiene closeout / ignition-134-step14-residual-debt-projection-hygiene
+  - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
+  - 依赖：—；被引用：—
 - [IGNITION-134 Step 14 — Residual debt and projection hygiene closeout](../../../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b14298ee5264c819 / IGNITION-134 Step 14 — Residual debt and projection hygiene closeout
   - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
   - 依赖：—；被引用：—
+- [IGNITION-135 Step 02 — deterministic projection preflight](../../ASSET-CARDS.md#asset-hr-60c1b4d3b3d1d0f5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-135 Step 02 — deterministic projection preflight / ignition-135-step02-projection-preflight
+  - 来源：`reports/operations/ignition-135-step02-projection-preflight.md`
+  - 依赖：—；被引用：—
 - [IGNITION-135 Step 02 — deterministic projection preflight](../../../reports/operations/ignition-135-step02-projection-preflight.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-63cc2cf819c671fc / IGNITION-135 Step 02 — deterministic projection preflight
   - 来源：`reports/operations/ignition-135-step02-projection-preflight.md`
+  - 依赖：—；被引用：—
+- [IGNITION-137 Step 08 — dry-run readiness](../../ASSET-CARDS.md#asset-hr-0854899207c74d5d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：IGNITION-137 Step 08 — dry-run readiness / ignition-137-step08-dry-run-readiness
+  - 来源：`reports/operations/ignition-137-step08-dry-run-readiness.md`
+  - 依赖：—；被引用：—
+- [IGNITION-137 Step 09 — one real Codex synthetic/read-only attempt](../../ASSET-CARDS.md#asset-hr-b22454ba8f3e5429)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-137 Step 09 — one real Codex synthetic/read-only attempt / ignition-137-step09-live-codex-attempt
+  - 来源：`reports/operations/ignition-137-step09-live-codex-attempt.md`
+  - 依赖：—；被引用：—
+- [IGNITION-137 Step 10 — independent validation outcome](../../ASSET-CARDS.md#asset-hr-6702d7ffb571d921)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-137 Step 10 — independent validation outcome / ignition-137-step10-independent-validation-outcome
+  - 来源：`reports/operations/ignition-137-step10-independent-validation-outcome.md`
+  - 依赖：—；被引用：—
+- [IGNITION-137 Step 12 — obligation lifecycle](../../ASSET-CARDS.md#asset-hr-4022b786a5d8eff6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-137 Step 12 — obligation lifecycle / ignition-137-step12-obligation-lifecycle
+  - 来源：`reports/operations/ignition-137-step12-obligation-lifecycle.md`
+  - 依赖：—；被引用：—
+- [IGNITION-137 Step 14 — adversarial / fault matrix](../../ASSET-CARDS.md#asset-hr-ddb5c91e38c8934a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-137 Step 14 — adversarial / fault matrix / ignition-137-step14-fault-matrix
+  - 来源：`reports/operations/ignition-137-step14-fault-matrix.md`
+  - 依赖：—；被引用：—
+- [IGNITION-138 Step 13 — Targeted regression and preflight](../../ASSET-CARDS.md#asset-hr-1a22e43401f5a00c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-138 Step 13 — Targeted regression and preflight / ignition-138-step13-targeted-regression
+  - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-139 Step 03 — Durable capture before model context](../../ASSET-CARDS.md#asset-hr-93a3986ac21ea580)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-139 Step 03 — Durable capture before model context / ignition-139-step03-durable-capture-transport
+  - 来源：`reports/operations/ignition-139-step03-durable-capture-transport.md`
+  - 依赖：—；被引用：—
+- [IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix](../../ASSET-CARDS.md#asset-hr-ea1ccd6bb1e44892)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix / ignition-139-step04-context-loss-fault-matrix
+  - 来源：`reports/operations/ignition-139-step04-context-loss-fault-matrix.md`
+  - 依赖：—；被引用：—
+- [IGNITION-139 Step 05 — Historical Attempt Import](../../ASSET-CARDS.md#asset-hr-e2f338166075887b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-139 Step 05 — Historical Attempt Import / ignition-139-step05-historical-attempt-import
+  - 来源：`reports/operations/ignition-139-step05-historical-attempt-import.md`
+  - 依赖：—；被引用：—
+- [IGNITION-140 Step 07 — Canonical Reconciliation Events](../../ASSET-CARDS.md#asset-hr-f25c6ad93d4e6b1c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-140 Step 07 — Canonical Reconciliation Events / ignition-140-step07-canonical-reconciliation-events
+  - 来源：`reports/operations/ignition-140-step07-canonical-reconciliation-events.md`
   - 依赖：—；被引用：—
 - [IGNITION-20260815-120 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-9099adc0ce6c7e7c)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -1474,30 +1554,290 @@
   - 可搜索名称：IGNITION-20260816-121 night-shift progress / ignition-121-nightshift-progress
   - 来源：`reports/operations/ignition-121-nightshift-progress.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260821-129 Step 00 — Steering gap audit](../../ASSET-CARDS.md#asset-hr-61f3531a51705a76)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260821-129 Step 00 — Steering gap audit / ignition-129-step00-steering-audit
+  - 来源：`reports/operations/ignition-129-step00-steering-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-132 Step 00 — Canonical Current stale-source reproduction](../../ASSET-CARDS.md#asset-hr-890a09f2962945d8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260822-132 Step 00 — Canonical Current stale-source reproduction / ignition-132-step00-canonical-current-audit
+  - 来源：`reports/operations/ignition-132-step00-canonical-current-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-132 Step 11 — Residual and Regression Audit](../../ASSET-CARDS.md#asset-hr-1306015aaba6e51b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-132 Step 11 — Residual and Regression Audit / ignition-132-step11-residual-audit
+  - 来源：`reports/operations/ignition-132-step11-residual-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-132 Step 12 — Targeted and Bounded Regression Closure](../../ASSET-CARDS.md#asset-hr-7efc33a583446487)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-132 Step 12 — Targeted and Bounded Regression Closure / ignition-132-step12-regression-closure
+  - 来源：`reports/operations/ignition-132-step12-regression-closure.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit](../../ASSET-CARDS.md#asset-hr-ba75dd3140d0b0a0)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit / ignition-134-step00-residual-archaeology
+  - 来源：`reports/operations/ignition-134-step00-residual-archaeology.md`
+  - 依赖：—；被引用：—
 - [IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit](../../../reports/operations/ignition-134-step00-residual-archaeology.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7c2a8d1928bbb5bb / IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit
   - 来源：`reports/operations/ignition-134-step00-residual-archaeology.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 01 — Residual Ledger R1](../../ASSET-CARDS.md#asset-hr-5e86b0c4a2323d56)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-134 Step 01 — Residual Ledger R1 / ignition-134-step01-residual-ledger-r1
+  - 来源：`reports/operations/ignition-134-step01-residual-ledger-r1.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 02 — Residual delta gate](../../ASSET-CARDS.md#asset-hr-3bbf97c58b1cef8b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-134 Step 02 — Residual delta gate / ignition-134-step02-residual-delta-gate-r1
+  - 来源：`reports/operations/ignition-134-step02-residual-delta-gate-r1.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 03 — Current path manifest contract audit](../../ASSET-CARDS.md#asset-hr-d882bcf095baaddd)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-134 Step 03 — Current path manifest contract audit / ignition-134-step03-path-manifest-contract-audit
+  - 来源：`reports/operations/ignition-134-step03-path-manifest-contract-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit](../../ASSET-CARDS.md#asset-hr-670fc055b0dc389f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-134 Step 04 — Path rules completeness and anti-backflow audit / ignition-134-step04-path-rules-completeness-r1
+  - 来源：`reports/operations/ignition-134-step04-path-rules-completeness-r1.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism](../../ASSET-CARDS.md#asset-hr-541c9f6fd2e3a890)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-134 Step 05 — Current path manifest regeneration and determinism / ignition-134-step05-current-path-manifest-r1
+  - 来源：`reports/operations/ignition-134-step05-current-path-manifest-r1.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit](../../ASSET-CARDS.md#asset-hr-9aaea8346e63b9a2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit / ignition-134-step06-human-surface-semantic-audit
+  - 来源：`reports/operations/ignition-134-step06-human-surface-semantic-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 08 — Residual sealing and baseline preservation](../../ASSET-CARDS.md#asset-hr-9e9cc07c265f9ae3)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-134 Step 08 — Residual sealing and baseline preservation / ignition-134-step08-residual-sealing-r1
+  - 来源：`reports/operations/ignition-134-step08-residual-sealing-r1.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 10 — Full unittest discovery](../../ASSET-CARDS.md#asset-hr-74d7fd233721374f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260822-134 Step 10 — Full unittest discovery / ignition-134-step10-full-unittest-discovery
+  - 来源：`reports/operations/ignition-134-step10-full-unittest-discovery.md`
   - 依赖：—；被引用：—
 - [IGNITION-20260822-134 Step 11 — Current projection closure](../../../reports/operations/ignition-134-step11-current-projection-closure.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b5d4688eb73e68f5 / IGNITION-20260822-134 Step 11 — Current projection closure
   - 来源：`reports/operations/ignition-134-step11-current-projection-closure.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 12 — Residual adversarial matrix](../../ASSET-CARDS.md#asset-hr-c1e3cb3130d2df76)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-134 Step 12 — Residual adversarial matrix / ignition-134-step12-residual-adversarial-matrix
+  - 来源：`reports/operations/ignition-134-step12-residual-adversarial-matrix.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-134 Step 13 — Human Surface semantic re-audit](../../ASSET-CARDS.md#asset-hr-50499ca77f223f3e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260822-134 Step 13 — Human Surface semantic re-audit / ignition-134-step13-human-surface-semantic-audit
+  - 来源：`reports/operations/ignition-134-step13-human-surface-semantic-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260822-135 Step 01 — Canonical full regression runner](../../ASSET-CARDS.md#asset-hr-301b77606275333c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260822-135 Step 01 — Canonical full regression runner / ignition-135-step01-full-regression-runner
+  - 来源：`reports/operations/ignition-135-step01-full-regression-runner.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-137 — Step 00 Baseline Audit](../../ASSET-CARDS.md#asset-hr-66ad322d25919eea)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-137 — Step 00 Baseline Audit / ignition-137-step00-baseline-audit
+  - 来源：`reports/operations/ignition-137-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-137 — Step 04 Child Context and Reentrancy Guard](../../ASSET-CARDS.md#asset-hr-4798fdbcb413611b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-137 — Step 04 Child Context and Reentrancy Guard / ignition-137-step04-live-child-reentrancy-guard
+  - 来源：`reports/operations/ignition-137-step04-live-child-reentrancy-guard.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-137 — Step 05 Synthetic Read-Only Fixture](../../ASSET-CARDS.md#asset-hr-da6eae8e6291205c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-137 — Step 05 Synthetic Read-Only Fixture / ignition-137-step05-synthetic-readonly-fixture
+  - 来源：`reports/operations/ignition-137-step05-synthetic-readonly-fixture.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-137 — Step 06 Codex Adapter R2 Exact Output Contract](../../ASSET-CARDS.md#asset-hr-7e853c8821f44f01)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-137 — Step 06 Codex Adapter R2 Exact Output Contract / ignition-137-step06-codex-exact-output-contract
+  - 来源：`reports/operations/ignition-137-step06-codex-exact-output-contract.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-137 — Step 07 Independent OS Validation R2](../../ASSET-CARDS.md#asset-hr-e7d89c150adba4ae)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-137 — Step 07 Independent OS Validation R2 / ignition-137-step07-independent-os-validation-r2
+  - 来源：`reports/operations/ignition-137-step07-independent-os-validation-r2.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-138 — Amendment 01 independent validation gate](../../ASSET-CARDS.md#asset-hr-56d4a51515a69ecc)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-138 — Amendment 01 independent validation gate / ignition-138-step10-amendment-01-independent-validation
+  - 来源：`reports/operations/ignition-138-step10-amendment-01-independent-validation.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-138 — Amendment 01 live Codex receipt reconciliation](../../ASSET-CARDS.md#asset-hr-b1cad13c5132a17d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-138 — Amendment 01 live Codex receipt reconciliation / ignition-138-step08-amendment-01-live-codex-reconciliation
+  - 来源：`reports/operations/ignition-138-step08-amendment-01-live-codex-reconciliation.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle](../../ASSET-CARDS.md#asset-hr-a2e1d8a6ec4e2cf4)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle / ignition-138-step03-live-process-transport-scratch-lifecycle
+  - 来源：`reports/operations/ignition-138-step03-live-process-transport-scratch-lifecycle.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-138 — Step 04 Codex Live Adapter R3](../../ASSET-CARDS.md#asset-hr-7537e6849db277e0)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-138 — Step 04 Codex Live Adapter R3 / ignition-138-step04-codex-adapter-r3
+  - 来源：`reports/operations/ignition-138-step04-codex-adapter-r3.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-138 — Step 07 Synthetic Fixture / Answer Freeze](../../ASSET-CARDS.md#asset-hr-d90e753541f60132)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-138 — Step 07 Synthetic Fixture / Answer Freeze / ignition-138-step07-fixture-answer-freeze
+  - 来源：`reports/operations/ignition-138-step07-fixture-answer-freeze.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch](../../ASSET-CARDS.md#asset-hr-26db9e2e52f3d7c9)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch / ignition-138-step08-first-codex-dispatch
+  - 来源：`reports/operations/ignition-138-step08-first-codex-dispatch.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-138 — Step 09 Second-Invocation Gate](../../ASSET-CARDS.md#asset-hr-e4c368c256dff2d8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-138 — Step 09 Second-Invocation Gate / ignition-138-step09-second-gate
+  - 来源：`reports/operations/ignition-138-step09-second-gate.md`
+  - 依赖：—；被引用：—
 - [IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection](../../../reports/operations/ignition-139-step06-live-current-projection.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7857b1080cce321a / IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection
   - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260825-139 Step 08 — Live-observation semantic gate](../../ASSET-CARDS.md#asset-hr-9302fb0a7da093e8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260825-139 Step 08 — Live-observation semantic gate / ignition-139-step08-live-observation-semantic-gate
+  - 来源：`reports/operations/ignition-139-step08-live-observation-semantic-gate.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260825-139 Step 12 — Independent binding and Current projection](../../ASSET-CARDS.md#asset-hr-bfebf52fdf8637e3)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260825-139 Step 12 — Independent binding and Current projection / ignition-139-step12-independent-validation
+  - 来源：`reports/operations/ignition-139-step12-independent-validation.md`
   - 依赖：—；被引用：—
 - [IGNITION-20260825-139 Step 12 — Independent binding and Current projection](../../../reports/operations/ignition-139-step12-independent-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cf24ed7c82727f83 / IGNITION-20260825-139 Step 12 — Independent binding and Current projection
   - 来源：`reports/operations/ignition-139-step12-independent-validation.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260825-139 Step 14 — Candidate natural full regression](../../ASSET-CARDS.md#asset-hr-9ace99cd3f0ef0d5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260825-139 Step 14 — Candidate natural full regression / ignition-139-step14-candidate-full-regression
+  - 来源：`reports/operations/ignition-139-step14-candidate-full-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260826-140 Step 12 — Independent live-attempt validation](../../ASSET-CARDS.md#asset-hr-ad56863677cc6ac6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260826-140 Step 12 — Independent live-attempt validation / ignition-140-step12-independent-validation
+  - 来源：`reports/operations/ignition-140-step12-independent-validation.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260826-140 Step 13 — Targeted regression and projection closure](../../ASSET-CARDS.md#asset-hr-4d31b64808a19248)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260826-140 Step 13 — Targeted regression and projection closure / ignition-140-step13-targeted-regression
+  - 来源：`reports/operations/ignition-140-step13-targeted-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260826-140 Step 15 — Candidate natural full regression](../../ASSET-CARDS.md#asset-hr-75c11de1d71e9e27)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260826-140 Step 15 — Candidate natural full regression / ignition-140-step15-candidate-full-regression
+  - 来源：`reports/operations/ignition-140-step15-candidate-full-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260826-141 Step 15 — Candidate natural full regression](../../ASSET-CARDS.md#asset-hr-55b610ce1cd160c8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260826-141 Step 15 — Candidate natural full regression / ignition-141-step15-candidate-full-regression
+  - 来源：`reports/operations/ignition-141-step15-candidate-full-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260826-141 Step 15 — targeted regression](../../ASSET-CARDS.md#asset-hr-e107b962a716e63c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260826-141 Step 15 — targeted regression / ignition-141-step15-targeted-regression
+  - 来源：`reports/operations/ignition-141-step15-targeted-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate](../../ASSET-CARDS.md#asset-hr-e852e881d1527cdc)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate / ignition-142-step12-pre-live-gate
+  - 来源：`reports/operations/ignition-142-step12-pre-live-gate.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-142 Step 13 — Live Attempt A](../../ASSET-CARDS.md#asset-hr-bc1eabaeeba58eb1)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260827-142 Step 13 — Live Attempt A / ignition-142-step13-live-attempt-a
+  - 来源：`reports/operations/ignition-142-step13-live-attempt-a.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-142 Step 14 — Live Attempt B](../../ASSET-CARDS.md#asset-hr-63c0a204c82eef7f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260827-142 Step 14 — Live Attempt B / ignition-142-step14-live-attempt-b
+  - 来源：`reports/operations/ignition-142-step14-live-attempt-b.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-142 Step 15 — Independent Exact Validator](../../ASSET-CARDS.md#asset-hr-89dd15e48f99dbc5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260827-142 Step 15 — Independent Exact Validator / ignition-142-step15-independent-validator
+  - 来源：`reports/operations/ignition-142-step15-independent-validator.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate](../../ASSET-CARDS.md#asset-hr-61e3d96daff155d9)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate / ignition-142-step18-adversarial-matrix
+  - 来源：`reports/operations/ignition-142-step18-adversarial-matrix.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-143 Step 00 — Baseline and Owner Override](../../ASSET-CARDS.md#asset-hr-5f4adb1099e2f6a6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260827-143 Step 00 — Baseline and Owner Override / ignition-143-step00-baseline-owner-override-audit
+  - 来源：`reports/operations/ignition-143-step00-baseline-owner-override-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-143 Step 18 — Natural full regression and projection closure](../../ASSET-CARDS.md#asset-hr-129bb07e4a0a453e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260827-143 Step 18 — Natural full regression and projection closure / ignition-143-step18-full-regression
+  - 来源：`reports/operations/ignition-143-step18-full-regression.md`
+  - 依赖：—；被引用：—
 - [IGNITION-20260827-143 Step 18 — Natural full regression and projection closure](../../../reports/operations/ignition-143-step18-full-regression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e7aa2204cc53e376 / IGNITION-20260827-143 Step 18 — Natural full regression and projection closure
   - 来源：`reports/operations/ignition-143-step18-full-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 01 — Task143 smoke-output inventory](../../ASSET-CARDS.md#asset-hr-a5bec8f9274ccae4)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 01 — Task143 smoke-output inventory / ignition-144-step01-smoke-output-inventory
+  - 来源：`reports/operations/ignition-144-step01-smoke-output-inventory.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule](../../ASSET-CARDS.md#asset-hr-d6193a2d42722179)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule / ignition-144-step04-deferred-backlog
+  - 来源：`reports/operations/ignition-144-step04-deferred-backlog.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 10 — minimum production state machine](../../ASSET-CARDS.md#asset-hr-dbeaca436d666ee5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 10 — minimum production state machine / ignition-144-step10-production-state-machine
+  - 来源：`reports/operations/ignition-144-step10-production-state-machine.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 12 — targeted closure regression](../../ASSET-CARDS.md#asset-hr-0701995cf1f17938)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 12 — targeted closure regression / ignition-144-step12-targeted-regression
+  - 来源：`reports/operations/ignition-144-step12-targeted-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 14 — bounded Repair Cycles B/C](../../ASSET-CARDS.md#asset-hr-412946fbe63365c4)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 14 — bounded Repair Cycles B/C / ignition-144-step14-repair-cycles-b-c
+  - 来源：`reports/operations/ignition-144-step14-repair-cycles-b-c.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 16 — bounded Repair Cycle C](../../ASSET-CARDS.md#asset-hr-c8e8bd0ef22c1eaf)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 16 — bounded Repair Cycle C / ignition-144-step16-repair-cycle-c
+  - 来源：`reports/operations/ignition-144-step16-repair-cycle-c.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 16 — candidate natural full regression](../../ASSET-CARDS.md#asset-hr-4b0cb0982975e6bf)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 16 — candidate natural full regression / ignition-144-step16-candidate-full-regression
+  - 来源：`reports/operations/ignition-144-step16-candidate-full-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 17 — fresh task-clone natural full regression](../../ASSET-CARDS.md#asset-hr-0ca0d41c8c5725b0)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 17 — fresh task-clone natural full regression / ignition-144-step17-fresh-task-full-regression
+  - 来源：`reports/operations/ignition-144-step17-fresh-task-full-regression.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260829-148 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-eabed7bd3564479d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260829-148 typed change-propagation impact report / IGNITION-20260829-148-change-propagation-impact
+  - 来源：`reports/operations/IGNITION-20260829-148-change-propagation-impact.md`
   - 依赖：—；被引用：—
 - [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-bda837b6080acf95)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -2163,344 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-b45bda51548536d3 / Parsel full-text review: hierarchical natural-language function specifications, SCC-aware candidate composition, target-
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [Pointfire seven-track current-main maintenance integration R1](../../ASSET-CARDS.md#asset-hr-5d85331f1d96b2aa)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
-  - 可搜索名称：Pointfire seven-track current-main maintenance integration R1 / pointfire-seven-track-current-main-maintenance-r1-20260813
-  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [Pointfire seven-track external cross-domain replay — repaired governed pass](../../ASSET-CARDS.md#asset-hr-3254690d89efc00d)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
-  - 可搜索名称：Pointfire seven-track external cross-domain replay — repaired governed pass / REPLAY-REPORT
-  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
-  - 依赖：—；被引用：—
-- [Projection arms: `5/5` — delexicalized structure, terminology-only,](../../../reports/operations/ignition-126-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-011205ef277a20c0 / Projection arms: `5/5` — delexicalized structure, terminology-only,
-  - 来源：`reports/operations/ignition-126-progress.md`
-  - 依赖：—；被引用：—
-- [Projection contains `12/12` grammar relations and labels itself](../../../reports/operations/ignition-126-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a3cbab124af22e6e / Projection contains `12/12` grammar relations and labels itself
-  - 来源：`reports/operations/ignition-126-progress.md`
-  - 依赖：—；被引用：—
-- [projection contains no raw provider output, private session data, or model](../../../reports/operations/ignition-139-step06-live-current-projection.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e8430101c5aca71a / projection contains no raw provider output, private session data, or model
-  - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
-  - 依赖：—；被引用：—
-- [Projection digest: `0bfa042fe6f2ccc64e4b133babf0fdfb220f9aa75367d7458da72598db50aa1a`.](../../../reports/operations/ignition-139-step06-live-current-projection.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cd653c4b2921ba7b / Projection digest: `0bfa042fe6f2ccc64e4b133babf0fdfb220f9aa75367d7458da72598db50aa1a`.
-  - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
-  - 依赖：—；被引用：—
-- [projection rather than the retired 50-node expectation.](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9817eea616b45f20 / projection rather than the retired 50-node expectation.
-  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [Projection validator: `LIVE_CURRENT_PROJECTION_OK`.](../../../reports/operations/ignition-139-step06-live-current-projection.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9f91c8fdc2ee03df / Projection validator: `LIVE_CURRENT_PROJECTION_OK`.
-  - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
-  - 依赖：—；被引用：—
-- [projection-matrix.jsonl — 250 条投影矩阵 ✅ 全覆盖](../../../data/discipline-projection/087-execution-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-4aad79b291df47cb / projection-matrix.jsonl — 250 条投影矩阵 ✅ 全覆盖
-  - 来源：`data/discipline-projection/087-execution-report.md`
-  - 依赖：—；被引用：—
-- [projection-only `HandoffBundle`;](../../../reports/research/reos-vnext-light-pilot-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9e3b70412057ef75 / projection-only `HandoffBundle`;
-  - 来源：`reports/research/reos-vnext-light-pilot-r1.md`
-  - 依赖：—；被引用：—
-- [projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-ECE12C2FF35AECEB / projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分） / IMPLICIT-ECE12C2FF35AECEB / IMPLICIT-FF67B9E83A1A37FA
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分）](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FF67B9E83A1A37FA / projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分） / IMPLICIT-FF67B9E83A1A37FA / IMPLICIT-ECE12C2FF35AECEB
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a82531d0e1f8b09b / projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-510C4AE85EF0880B / projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ / IMPLICIT-510C4AE85EF0880B / IMPLICIT-F88CEAB528337AE8
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F88CEAB528337AE8 / projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ / IMPLICIT-F88CEAB528337AE8 / IMPLICIT-510C4AE85EF0880B
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-95b5dd8eb1e04894 / projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [propagation_ok = \(len\(missing_steps\) == 0\)](../../../function-os-candidate/v0.2/benchmark/run.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FAAF64CD3333EB3C / propagation_ok = \(len\(missing_steps\) == 0\) / IMPLICIT-FAAF64CD3333EB3C
-  - 来源：`function-os-candidate/v0.2/benchmark/run.py`
-  - 依赖：—；被引用：—
-- [R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s](../../ASSET-CARDS.md#asset-nfc-e9612969179efbcb)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-e9612969179efbcb / R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s / - R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-side durable capture、append-only LiveAttemptLedger 和 ledger-derived Current projection。历史 ledger 共记录四次尝试，其中 Hermes136 与 Codex138 second 仍待 reconciliation；Codex138 second 确实发生，但 outer context overflow 使 observation incomplete，return code、structured result、lease、workspace 和 validator input 未恢复。当前 live provider/inference ceiling 仍未建立。
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [r\["replay_match"\] = \(p is not None and p.get\("result_sha"\) == r.get\("result_sha"\)\)](../../../function-os-candidate/v0.2/benchmark/run.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F42AE8D92C486956 / r\["replay_match"\] = \(p is not None and p.get\("result_sha"\) == r.get\("result_sha"\)\) / IMPLICIT-F42AE8D92C486956
-  - 来源：`function-os-candidate/v0.2/benchmark/run.py`
-  - 依赖：—；被引用：—
-- [Re-run the privacy/secret, disguised-failure, succession, responsibility and deterministic-projection attack cases indiv](../../../templates/operations/independent-review-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a74c4c9a3f0087b9 / Re-run the privacy/secret, disguised-failure, succession, responsibility and deterministic-projection attack cases indiv
-  - 来源：`templates/operations/independent-review-template.md`
-  - 依赖：—；被引用：—
-- [reconciliation_boundary: the three historical retry-safety blockers are terminalized; terminalization preserves unknown](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0cd66516602c7224 / reconciliation_boundary: the three historical retry-safety blockers are terminalized; terminalization preserves unknown
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [regenerated path/nonfunction projections. The affected closure and production](../../../reports/operations/ignition-122-federation-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c5990da092ac42f2 / regenerated path/nonfunction projections. The affected closure and production
-  - 来源：`reports/operations/ignition-122-federation-progress.md`
-  - 依赖：—；被引用：—
-- [registries remain unchanged and the projection validator fails closed.](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-37eceaaf3c9f4fda / registries remain unchanged and the projection validator fails closed.
-  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [regression: Human Front Door, Human Surface, Current projection, compiler, current-state sync, ordinal and related unit-](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-979f376a2dc749be / regression: Human Front Door, Human Surface, Current projection, compiler, current-state sync, ordinal and related unit-
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [regression_boundary: candidate and fresh remote task-branch clone both passed on exact `9a3b4a5561cf389b4f8af91274391096](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a189ab7b47015ac7 / regression_boundary: candidate and fresh remote task-branch clone both passed on exact `9a3b4a5561cf389b4f8af91274391096
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [relation = next\(\(item for item in topology.get\("relations", \[\]\) if item.get\("relation_id"\) == "map_language_thought_zhiyuan"\), None\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3C0F724825A54953 / relation = next\(\(item for item in topology.get\("relations", \[\]\) if item.get\("relation_id"\) == "map_language_thought_zhiyuan"\), None\) / IMPLICIT-3C0F724825A54953
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [Render only the bounded projection and its validation findings.](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6b94045797632202 / Render only the bounded projection and its validation findings.
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Repair Cycle A is the only cycle used. The repaired identity/projection closure suite passed naturally with **77 tests /](../../../reports/operations/ignition-144-step14-repair-cycles-b-c.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e10563f4fb97a7fb / Repair Cycle A is the only cycle used. The repaired identity/projection closure suite passed naturally with **77 tests /
-  - 来源：`reports/operations/ignition-144-step14-repair-cycles-b-c.md`
-  - 依赖：—；被引用：—
-- [require\(item.get\("accepted_text_sha256"\) == HISTORICAL_HASHES\[path\], f"historical acceptance overwritten: {path}"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C8C60FC7F4882A50 / require\(item.get\("accepted_text_sha256"\) == HISTORICAL_HASHES\[path\], f"historical acceptance overwritten: {path}"\) / IMPLICIT-C8C60FC7F4882A50
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [require\(item.get\("current_method_version"\) == "0.5.0", f"current method version missing: {path}"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9243413E59DF982D / require\(item.get\("current_method_version"\) == "0.5.0", f"current method version missing: {path}"\) / IMPLICIT-9243413E59DF982D
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [require\(item.get\("current_revision_sha256"\) == FINAL_HASHES\[path\], f"current revision not bound: {path}"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-9731E65665C76DFE / require\(item.get\("current_revision_sha256"\) == FINAL_HASHES\[path\], f"current revision not bound: {path}"\) / IMPLICIT-9731E65665C76DFE
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [require\(language_profile is not None and language_profile.get\("execution_capability"\) == "manual", "language-thought component execution profile is missing or inflated"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-998858336877DEFA / require\(language_profile is not None and language_profile.get\("execution_capability"\) == "manual", "language-thought component execution profile is missing or inflated"\) / IMPLICIT-998858336877DEFA
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [require\(len\(candidates\) == 1, "Task 114 must have exactly one content candidate event"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EC4D8A58E2C046EE / require\(len\(candidates\) == 1, "Task 114 must have exactly one content candidate event"\) / IMPLICIT-EC4D8A58E2C046EE
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [require\(manifest.get\("review_state"\) == "FOUR_ROLE_REVIEW_COMPLETE_SUBSTANTIVE_REWRITE_COMPLETE", "four-role review is not complete"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F1A49E6E262D1AF1 / require\(manifest.get\("review_state"\) == "FOUR_ROLE_REVIEW_COMPLETE_SUBSTANTIVE_REWRITE_COMPLETE", "four-role review is not complete"\) / IMPLICIT-F1A49E6E262D1AF1
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [require\(relation is not None and relation.get\("relation_class"\) == "synchronization_requires", "plane-to-method relation is not a synchronization obligation"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1A50EE66C2111D4B / require\(relation is not None and relation.get\("relation_class"\) == "synchronization_requires", "plane-to-method relation is not a synchronization obligation"\) / IMPLICIT-1A50EE66C2111D4B
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [require\(terminals\[0\].get\("lifecycle_state"\) == "TERMINAL_SUCCESS", "Task 114 terminal projection is not TERMINAL_SUCCESS"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-34A1F97A69390ED0 / require\(terminals\[0\].get\("lifecycle_state"\) == "TERMINAL_SUCCESS", "Task 114 terminal projection is not TERMINAL_SUCCESS"\) / IMPLICIT-34A1F97A69390ED0
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [require\(text\(ROOT / "reports/operations/114-language-thought-project-audit.md"\).count\("25 条"\) == 1, "project audit summary missing exact finding count"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require\(text\(ROOT / "reports/operations/114-language-thought-project-audit.md"\).count\("25 条"\) == 1, "project audit summary missing exact finding count"\) / IMPLICIT-31147A1B2F97C9BA
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
-  - 依赖：—；被引用：—
-- [res=search\(q, lim\)](../../../scripts/external-research/anysearch_client.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-56D5E4E6E61F07B7 / res=search\(q, lim\) / IMPLICIT-56D5E4E6E61F07B7
-  - 来源：`scripts/external-research/anysearch_client.py`
-  - 依赖：—；被引用：—
-- [residual_boundary: the 11 pre-existing Human Surface source-hash drifts, projection-manifest residual, historical Task10](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4b4c5bd3853f6755 / residual_boundary: the 11 pre-existing Human Surface source-hash drifts, projection-manifest residual, historical Task10
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [results = search\(q, lim, mailto\)](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E1E109777BC7E0A5 / results = search\(q, lim, mailto\) / IMPLICIT-E1E109777BC7E0A5
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
-- [results\["passed"\] = len\(results\["errors"\]\) == 0](../../../data/external-research/121-fulltext-resolver/121-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-28CCC08D41E25491 / results\["passed"\] = len\(results\["errors"\]\) == 0 / IMPLICIT-28CCC08D41E25491
-  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
-  - 依赖：—；被引用：—
-- [retry_failed = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "RETRY_FAILED"\)](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-13CCA3457F0363F8 / retry_failed = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "RETRY_FAILED"\) / IMPLICIT-13CCA3457F0363F8
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
-  - 依赖：—；被引用：—
-- [retry_pending = sum\(1 for e in extraction_manifest if e.get\("extraction_status"\) == "DOWNLOADED_NOT_FULLY_EXTRACTED"\)](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-95A99DD304A90E18 / retry_pending = sum\(1 for e in extraction_manifest if e.get\("extraction_status"\) == "DOWNLOADED_NOT_FULLY_EXTRACTED"\) / IMPLICIT-95A99DD304A90E18
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
-  - 依赖：—；被引用：—
-- [retry_success = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "RETRY_SUCCESS"\)](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FF6229E2F6A4A96B / retry_success = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "RETRY_SUCCESS"\) / IMPLICIT-FF6229E2F6A4A96B
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
-  - 依赖：—；被引用：—
-- [return "RETRY_REQUIRES_NEW_LINEAGE" if machine.retry_allowed and machine.new_lineage_attempt\("fault-repair-attempt"\) == "fault-repair-attempt" else "UNEXPECTED_REPLAY"](../../../agent_federation/live_fault_matrix.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-2BAD7A79E647C1B0 / return "RETRY_REQUIRES_NEW_LINEAGE" if machine.retry_allowed and machine.new_lineage_attempt\("fault-repair-attempt"\) == "fault-repair-attempt" else "UNEXPECTED_REPLAY" / IMPLICIT-2BAD7A79E647C1B0
-  - 来源：`agent_federation/live_fault_matrix.py`
-  - 依赖：—；被引用：—
-- [return candidates\[0\] if len\(candidates\) == 1 else None](../../../evidence-program/tools/validate_evidence_program.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1FFA7A65FC0F169E / return candidates\[0\] if len\(candidates\) == 1 else None / IMPLICIT-1FFA7A65FC0F169E
-  - 来源：`evidence-program/tools/validate_evidence_program.py`
-  - 依赖：—；被引用：—
-- [return mapping.get\(expected, expected\) == mapping.get\(actual, actual\)](../../../function-os-candidate/v0.2/function_os/n5_interpreter.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C64CE0713483A405 / return mapping.get\(expected, expected\) == mapping.get\(actual, actual\) / IMPLICIT-C64CE0713483A405
-  - 来源：`function-os-candidate/v0.2/function_os/n5_interpreter.py`
-  - 依赖：—；被引用：—
-- [run the production-authority validator matrix under the same canonical environment and projection preflight.](../../../reports/operations/ignition-135-step00-failure-inventory.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-52ab504b18a00355 / run the production-authority validator matrix under the same canonical environment and projection preflight.
-  - 来源：`reports/operations/ignition-135-step00-failure-inventory.md`
-  - 依赖：—；被引用：—
-- [S\(x\) := -k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ（熵项）](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5635B73E31A9CADB / S\(x\) := -k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ（熵项） / IMPLICIT-5635B73E31A9CADB / IMPLICIT-C9BC2B57C2E6DBF5
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [S\(x\) := -k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ（熵项）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C9BC2B57C2E6DBF5 / S\(x\) := -k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ（熵项） / IMPLICIT-C9BC2B57C2E6DBF5 / IMPLICIT-5635B73E31A9CADB
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [S120-045 \(Task Arithmetic\):** Task vectors as weight-space directions. Negation, addition, and analogy as composition op](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7a5507be7c7038cf / S120-045 \(Task Arithmetic\):** Task vectors as weight-space directions. Negation, addition, and analogy as composition op
-  - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
-  - 依赖：—；被引用：—
-- [safe_workspace = Path\(process.cwd\).resolve\(\) == fixture.root.resolve\(\)](../../../agent_federation/live_task137.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B1B5139E27962123 / safe_workspace = Path\(process.cwd\).resolve\(\) == fixture.root.resolve\(\) / IMPLICIT-B1B5139E27962123
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [same = canon\(used\) == canon\(pre\)](../../../evidence-program/tools/validate_evidence_program.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-57249D2D07EEDF8D / same = canon\(used\) == canon\(pre\) / IMPLICIT-57249D2D07EEDF8D
-  - 来源：`evidence-program/tools/validate_evidence_program.py`
-  - 依赖：—；被引用：—
-- [secret_scan_status="FAIL" if getattr\(capture, "_secret_scan_status", "PASS"\) == "FAIL" else "PASS",](../../../agent_federation/live_transport.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1647FD700E719A64 / secret_scan_status="FAIL" if getattr\(capture, "_secret_scan_status", "PASS"\) == "FAIL" else "PASS", / IMPLICIT-1647FD700E719A64
-  - 来源：`agent_federation/live_transport.py`
-  - 依赖：—；被引用：—
-- [Seeds: `ai_guide, current_state, historical_reports, incremental_execution, iteration, iteration_manifest_contract, no_l](../../../reports/operations/121Q32I-change-propagation-impact.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-55ed81918300c441 / Seeds: `ai_guide, current_state, historical_reports, incremental_execution, iteration, iteration_manifest_contract, no_l
-  - 来源：`reports/operations/121Q32I-change-propagation-impact.md`
-  - 依赖：—；被引用：—
-- [Seeds: `ai_guide, current_state, historical_reports, incremental_execution, iteration, pages_pipeline, project_component](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c451adc332991ff4 / Seeds: `ai_guide, current_state, historical_reports, incremental_execution, iteration, pages_pipeline, project_component
-  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md`
-  - 依赖：—；被引用：—
-- [self_organization_topology := ∫_{Ω} perception × adjustment × recursion dΩ](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0C6254CA494049EE / self_organization_topology := ∫_{Ω} perception × adjustment × recursion dΩ / IMPLICIT-0C6254CA494049EE / IMPLICIT-40E637D3F6A4E50C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [self_organization_topology := ∫_{Ω} perception × adjustment × recursion dΩ](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-40E637D3F6A4E50C / self_organization_topology := ∫_{Ω} perception × adjustment × recursion dΩ / IMPLICIT-40E637D3F6A4E50C / IMPLICIT-0C6254CA494049EE
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [smoke test **通过**：不同领域材料可正常接入，查重/Ψ₀/候选输出链路完整，跨域同构可被框架识别。](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6cee1acec0811671 / smoke test **通过**：不同领域材料可正常接入，查重/Ψ₀/候选输出链路完整，跨域同构可被框架识别。
-  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [Space_Function\(Ω\) = {I\(Ω\), D_immune\(Ω\), R\(Ω\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F94492AC052076DF / Space_Function\(Ω\) = {I\(Ω\), D_immune\(Ω\), R\(Ω\)} / IMPLICIT-F94492AC052076DF
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [stale_knowledge: a stable Knowledge projection, a validated local Reference/Conformance/Fallback path, a cross-executor](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-51e998cd89d410de / stale_knowledge: a stable Knowledge projection, a validated local Reference/Conformance/Fallback path, a cross-executor
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: historical Task 126 map `0.10.0`, old copied counts and branch-only receipts remain historical context;](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ef1c806fbc97ffe9 / stale_knowledge: historical Task 126 map `0.10.0`, old copied counts and branch-only receipts remain historical context;
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: historical Task 126/127/128 records retain their original wording as provenance and are not rewritten;](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-20359ad2a9b373f8 / stale_knowledge: historical Task 126/127/128 records retain their original wording as provenance and are not rewritten;
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: Task 119/120 R0/R1-only descriptions are historical compatibility surfaces; R2 is now the current engin](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a4004aa617043331 / stale_knowledge: Task 119/120 R0/R1-only descriptions are historical compatibility surfaces; R2 is now the current engin
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: Task140 raw receipt, ledger hash chain, old R2 projection and historical Current prose remain immutable](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-434fbb2c61bdc374 / stale_knowledge: Task140 raw receipt, ledger hash chain, old R2 projection and historical Current prose remain immutable
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: Task141's historical terminality and six-attempt projection are preserved; the older `IN_PROGRESS` surf](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c0ceb387ecfbcc2e / stale_knowledge: Task141's historical terminality and six-attempt projection are preserved; the older `IN_PROGRESS` surf
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [Step 10's actionable current failures were deterministic projection drift, not permission to enlarge a residual. The nat](../../../reports/operations/ignition-134-step11-current-projection-closure.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1303c8b2c0f5364b / Step 10's actionable current failures were deterministic projection drift, not permission to enlarge a residual. The nat
-  - 来源：`reports/operations/ignition-134-step11-current-projection-closure.md`
-  - 依赖：—；被引用：—
-- [STEP03 blinded baseline versus governed replay](../../ASSET-CARDS.md#asset-hr-d75690d278464805)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
-  - 可搜索名称：STEP03 blinded baseline versus governed replay / BASELINE-VS-GOVERNED
-  - 来源：`reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md`
   - 依赖：—；被引用：—
