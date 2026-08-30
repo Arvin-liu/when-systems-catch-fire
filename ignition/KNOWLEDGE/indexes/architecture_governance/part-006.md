@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [external truth and epistemic acceptance remain unknown/non-established rather](../../../reports/operations/ignition-144-step04-deferred-backlog.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7b43bf637a7c91b5 / external truth and epistemic acceptance remain unknown/non-established rather
+  - 来源：`reports/operations/ignition-144-step04-deferred-backlog.md`
+  - 依赖：—；被引用：—
+- [external truth, Owner acceptance or epistemic acceptance is inferred.](../../../reports/operations/ignition-138-step07-fixture-answer-freeze.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-86234570eba6b7c8 / external truth, Owner acceptance or epistemic acceptance is inferred.
+  - 来源：`reports/operations/ignition-138-step07-fixture-answer-freeze.md`
+  - 依赖：—；被引用：—
 - [external truth, Owner acceptance, production safety or epistemic acceptance.](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b6e761a2320a792f / external truth, Owner acceptance, production safety or epistemic acceptance.
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-449e574f1b16ddf7 / machine validator 只能验证 strict schema、引用、封闭 effects、negative profiles、obligation classification 与 closed public routes；
   - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [machine validator：验证语法、引用、确定性计算和禁止边；不能裁定语义真值；](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-63f8a0026677f36b / machine validator：验证语法、引用、确定性计算和禁止边；不能裁定语义真值；
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [Machine-readable evidence regime records for domains covered by v0.2.](../../../data/schemas/evidence_regimes.schema.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4e97aa34295c21f3 / Machine-readable evidence regime records for domains covered by v0.2.
-  - 来源：`data/schemas/evidence_regimes.schema.json`
   - 依赖：—；被引用：—

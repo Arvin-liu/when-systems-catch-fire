@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D64} exist, compose F_{D64}=N\(⊕_{g∈D_{D64}} g\); otherwise treat F_{D64} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a7255c7b06ec4add / If upstream objects D_{D64} exist, compose F_{D64}=N\(⊕_{g∈D_{D64}} g\); otherwise treat F_{D64} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D64；被引用：—
+- [If upstream objects D_{D65} exist, compose F_{D65}=N\(⊕_{g∈D_{D65}} g\); otherwise treat F_{D65} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e85d0e3386614c00 / If upstream objects D_{D65} exist, compose F_{D65}=N\(⊕_{g∈D_{D65}} g\); otherwise treat F_{D65} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D65；被引用：—
 - [If upstream objects D_{D66} exist, compose F_{D66}=N\(⊕_{g∈D_{D66}} g\); otherwise treat F_{D66} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-85a03b021524d2e2 / If upstream objects D_{D66} exist, compose F_{D66}=N\(⊕_{g∈D_{D66}} g\); otherwise treat F_{D66} as an axiom seed.
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-f29fb6016e4047b7 / Ontology-Based Process Modelling-with Examples of Physical Topologies
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [ontology: 250/250 PARTIAL](../../../data/discipline-projection/087-execution-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-c7032f1561d00cfe / ontology: 250/250 PARTIAL
-  - 来源：`data/discipline-projection/087-execution-report.md`
-  - 依赖：—；被引用：—
-- [Open system boundary example; not an ecological causal proof.](../../../data/architecture/probabilistic-system-dynamics/examples/open-ecosystem.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-50b64d12de36921e / Open system boundary example; not an ecological causal proof.
-  - 来源：`data/architecture/probabilistic-system-dynamics/examples/open-ecosystem.json`
   - 依赖：—；被引用：—

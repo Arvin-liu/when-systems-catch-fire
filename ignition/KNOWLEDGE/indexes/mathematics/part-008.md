@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6c6fae389c827d42 / title: "CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "D158预测失效阈值函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-df1b47a5dca6c115 / title: "D158预测失效阈值函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158；被引用：—
 - [title: "d_opt-σ_opt平衡稳定性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D75984A385D340D7 / title: "d_opt-σ_opt平衡稳定性函数" / IMPLICIT-D75984A385D340D7
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fb45df484c2f34a7 / title: "退出权-Φ极值同构函数"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "退出权共振函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3BAAF438ACCB0F60 / title: "退出权共振函数" / IMPLICIT-3BAAF438ACCB0F60
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "退出权净收益函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5D43B42C9541F3EC / title: "退出权净收益函数" / IMPLICIT-5D43B42C9541F3EC
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

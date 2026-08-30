@@ -6,6 +6,16 @@
 
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d9c56d1325176827 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d6af444fce48af10 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f92924614a1ae4de / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ba613e1d01d26d16 / 容斥项精确结构验证。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [密码学四个维度的映射全部通过了J⁺=1, J⁻=0的正反交叉验证，验证了点火框架在密码域的跨域适用性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bec07388499dba2b / 密码学四个维度的映射全部通过了J⁺=1, J⁻=0的正反交叉验证，验证了点火框架在密码域的跨域适用性。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [密码学碰撞验证案例](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7de0ed3ccb885907 / 密码学碰撞验证案例
-  - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—

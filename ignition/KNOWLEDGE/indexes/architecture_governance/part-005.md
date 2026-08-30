@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def summary\(self, trace: dict\) -> Dict\[str, Any\]:](../../../function-os-candidate/v0.1/function_os/n8_trace_archiver.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-A86596E4434B8783 / def summary\(self, trace: dict\) -> Dict\[str, Any\]: / IMPLICIT-A86596E4434B8783
+  - 来源：`function-os-candidate/v0.1/function_os/n8_trace_archiver.py`
+  - 依赖：—；被引用：—
 - [def supersede\(self, function_id: str, new_record: dict\) -> dict:](../../../function-os-candidate/v0.2/function_os/n9_registry.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-5D50729700A4B369 / def supersede\(self, function_id: str, new_record: dict\) -> dict: / IMPLICIT-5D50729700A4B369
@@ -1884,6 +1889,11 @@
   - 可搜索名称：NFC-ed2c784c78466d2f / epistemic_state: EPISTEMICALLY_ACCEPTED=0; this transition records repository-local architecture and bounded live-attemp
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [epistemic_state: executable fixtures and green repository validators establish bounded implementation conformance only.](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6906d4486d27357e / epistemic_state: executable fixtures and green repository validators establish bounded implementation conformance only.
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [epistemic_state: repository-local implementation and deterministic validation evidence only; Draft candidacy, repository](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-18aef86df604071e / epistemic_state: repository-local implementation and deterministic validation evidence only; Draft candidacy, repository
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6a338757fe67559d / external or epistemic truth.
   - 来源：`reports/foundation-architecture/pointfire-seven-track-foundation-high-impact-frontier-r1-20260813.md`
-  - 依赖：—；被引用：—
-- [external truth and epistemic acceptance remain unknown/non-established rather](../../../reports/operations/ignition-144-step04-deferred-backlog.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7b43bf637a7c91b5 / external truth and epistemic acceptance remain unknown/non-established rather
-  - 来源：`reports/operations/ignition-144-step04-deferred-backlog.md`
-  - 依赖：—；被引用：—
-- [external truth, Owner acceptance or epistemic acceptance is inferred.](../../../reports/operations/ignition-138-step07-fixture-answer-freeze.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-86234570eba6b7c8 / external truth, Owner acceptance or epistemic acceptance is inferred.
-  - 来源：`reports/operations/ignition-138-step07-fixture-answer-freeze.md`
   - 依赖：—；被引用：—

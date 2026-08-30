@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [safety: no new live process, billing/auth/configuration change, installation/upgrade, secret-content read, channel/brows](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c1c43b915aeef94f / safety: no new live process, billing/auth/configuration change, installation/upgrade, secret-content read, channel/brows
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [Same-organization repeated comments are not automatically independent evidence.](../../../reports/reality/121Q16-sustainability-signal-pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4a46af7eec0bdf9d / Same-organization repeated comments are not automatically independent evidence.
+  - 来源：`reports/reality/121Q16-sustainability-signal-pilot.md`
+  - 依赖：—；被引用：—
 - [SAMoRA factorizes a LoRA mixture into one shared down-projection A and multiple expert-specific up-projections B_i, and](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6715be4ecc83afba / SAMoRA factorizes a LoRA mixture into one shared down-projection A and multiple expert-specific up-projections B_i, and
@@ -2492,15 +2502,5 @@
 - [title: "自举循环的结构保守性 — B\(n\)越大ΔB/B越小但永远为正，不会爆炸也不会归零"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b25c977f557dc8a7 / title: "自举循环的结构保守性 — B\(n\)越大ΔB/B越小但永远为正，不会爆炸也不会归零"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自我模型相变实验方案"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6c5e50723962c0ff / title: "自我模型相变实验方案"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自我模型相变的验证标准"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-300f9d8ba7a3c11a / title: "自我模型相变的验证标准"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

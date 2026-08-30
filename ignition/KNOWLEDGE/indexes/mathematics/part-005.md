@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Formal Task Lifecycle owns terminality from task scope, steps, publication and](../../../reports/operations/ignition-142-step17-architecture-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c7819093f25aeb53 / Formal Task Lifecycle owns terminality from task scope, steps, publication and
+  - 来源：`reports/operations/ignition-142-step17-architecture-impact.md`
+  - 依赖：—；被引用：—
+- [Formal Task Lifecycle R1, Open Obligation Registry R1 and Executor Admission R1.](../../../reports/operations/ignition-142-step17-architecture-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dd979cd972095f0a / Formal Task Lifecycle R1, Open Obligation Registry R1 and Executor Admission R1.
+  - 来源：`reports/operations/ignition-142-step17-architecture-impact.md`
+  - 依赖：—；被引用：—
 - [formal task terminality is owned by the Formal Task Lifecycle, while](../../../docs/architecture/os-steering-intent-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-a9f965e4d960054f / formal task terminality is owned by the Formal Task Lifecycle, while
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-9fa2fc32761d67cd / If upstream objects D_{D63} exist, compose F_{D63}=N\(⊕_{g∈D_{D63}} g\); otherwise treat F_{D63} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D63；被引用：—
-- [If upstream objects D_{D64} exist, compose F_{D64}=N\(⊕_{g∈D_{D64}} g\); otherwise treat F_{D64} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a7255c7b06ec4add / If upstream objects D_{D64} exist, compose F_{D64}=N\(⊕_{g∈D_{D64}} g\); otherwise treat F_{D64} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D64；被引用：—
-- [If upstream objects D_{D65} exist, compose F_{D65}=N\(⊕_{g∈D_{D65}} g\); otherwise treat F_{D65} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e85d0e3386614c00 / If upstream objects D_{D65} exist, compose F_{D65}=N\(⊕_{g∈D_{D65}} g\); otherwise treat F_{D65} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D65；被引用：—

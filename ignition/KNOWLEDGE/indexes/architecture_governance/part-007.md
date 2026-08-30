@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [machine validator：验证语法、引用、确定性计算和禁止边；不能裁定语义真值；](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-63f8a0026677f36b / machine validator：验证语法、引用、确定性计算和禁止边；不能裁定语义真值；
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [Machine-readable evidence regime records for domains covered by v0.2.](../../../data/schemas/evidence_regimes.schema.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4e97aa34295c21f3 / Machine-readable evidence regime records for domains covered by v0.2.
+  - 来源：`data/schemas/evidence_regimes.schema.json`
+  - 依赖：—；被引用：—
 - [main publication, external truth, production readiness, Owner acceptance,](../../../reports/operations/ignition-143-step19-terminality.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1923ef15ddfd91ef / main publication, external truth, production readiness, Owner acceptance,
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-fabe78464ad8a21f / Safe Phase E recovery entry: fetch the candidate branch, require the exact D4 commit produced after this report, verify
   - 来源：`reports/operations/121Q32I-phase-d-validation-closeout.md`
   - 依赖：D3, D4；被引用：—
-- [safety: no new live process, billing/auth/configuration change, installation/upgrade, secret-content read, channel/brows](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c1c43b915aeef94f / safety: no new live process, billing/auth/configuration change, installation/upgrade, secret-content read, channel/brows
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [Same-organization repeated comments are not automatically independent evidence.](../../../reports/reality/121Q16-sustainability-signal-pilot.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a46af7eec0bdf9d / Same-organization repeated comments are not automatically independent evidence.
-  - 来源：`reports/reality/121Q16-sustainability-signal-pilot.md`
-  - 依赖：—；被引用：—

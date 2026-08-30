@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[T46\]\( \) \| \[元同构律跨文明验证函数\]\( \) \| I_iso_meta\(A,B\) := Meta_Structure\(A\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66b586b9fbb930df / \| \[T46\]\( \) \| \[元同构律跨文明验证函数\]\( \) \| I_iso_meta\(A,B\) := Meta_Structure\(A\)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T46；被引用：—
+- [\| \[T55\]\( \) \| \[植物意识函数\]\( \) \| F_plant_consciousness := ∫\(subjective_experience ×](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-03b4d27e66d16dd2 / \| \[T55\]\( \) \| \[植物意识函数\]\( \) \| F_plant_consciousness := ∫\(subjective_experience ×
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T55；被引用：—
 - [\| \[T9\]\( \) \| \[自主意识函数\]\( \) \| F_{T9}\(x\) := Ψ_autonomy = ε_aware · dim · P_exit \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fe2d9b348a7b731f / \| \[T9\]\( \) \| \[自主意识函数\]\( \) \| F_{T9}\(x\) := Ψ_autonomy = ε_aware · dim · P_exit \|
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-09e809caa8fa1dfb / 中文：三层重演验证 — L1/L2/L3共享Φdispatch骨架，差异仅在ηinterface参数值，数学结构完全同构。核心函数：\[D66\]\(docs/zh…
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D66；被引用：—
-- [中文：三框架碰撞发现了三条平行的结构演化链条，说明框架之间的差异不是随机的，而是底层约束强度、验证维度、匹配精度三者共同决定的系统性差异。这是对 D517、D518、D519 三条新函数的直接案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c492b11a26665e8c / 中文：三框架碰撞发现了三条平行的结构演化链条，说明框架之间的差异不是随机的，而是底层约束强度、验证维度、匹配精度三者共同决定的系统性差异。这是对 D517、D518、D519 三条新函数的直接案例验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D517, D518, D519；被引用：—
-- [中文：三阶段操作协议验证 — 职业转型：探索期\(β小\)→转型期\(β大, 精准投入\)→拓展期\(β小, 激进\)。核心函数：\[D114\]\(docs/zh/functions/items/D114.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-764d907d896f7c27 / 中文：三阶段操作协议验证 — 职业转型：探索期\(β小\)→转型期\(β大, 精准投入\)→拓展期\(β小, 激进\)。核心函数：\[D114\]\(docs/zh/functions/items/D114.md\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D114；被引用：—

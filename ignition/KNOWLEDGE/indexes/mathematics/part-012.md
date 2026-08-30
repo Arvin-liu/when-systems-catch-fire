@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：三框架碰撞发现了三条平行的结构演化链条，说明框架之间的差异不是随机的，而是底层约束强度、验证维度、匹配精度三者共同决定的系统性差异。这是对 D517、D518、D519 三条新函数的直接案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c492b11a26665e8c / 中文：三框架碰撞发现了三条平行的结构演化链条，说明框架之间的差异不是随机的，而是底层约束强度、验证维度、匹配精度三者共同决定的系统性差异。这是对 D517、D518、D519 三条新函数的直接案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D517, D518, D519；被引用：—
+- [中文：三阶段操作协议验证 — 职业转型：探索期\(β小\)→转型期\(β大, 精准投入\)→拓展期\(β小, 激进\)。核心函数：\[D114\]\(docs/zh/functions/items/D114.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-764d907d896f7c27 / 中文：三阶段操作协议验证 — 职业转型：探索期\(β小\)→转型期\(β大, 精准投入\)→拓展期\(β小, 激进\)。核心函数：\[D114\]\(docs/zh/functions/items/D114.md\)
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D114；被引用：—
 - [中文：三阶段操作协议验证 — 职业转型：探索期\(β小\)→转型期\(β大, 精准投入\)→拓展期\(β小, 激进\)。核心函数：\[D114\]\(docs/zh/funct…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4ac75f3bc8970042 / 中文：三阶段操作协议验证 — 职业转型：探索期\(β小\)→转型期\(β大, 精准投入\)→拓展期\(β小, 激进\)。核心函数：\[D114\]\(docs/zh/funct…
@@ -2492,15 +2502,5 @@
 - [从原文看，解码门槛降低，结构性改善优于参数性改善。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-948725594a5fe8a0 / 从原文看，解码门槛降低，结构性改善优于参数性改善。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从原文看，认知Higgs机制，Higgs场提供分裂的触发器——真空期望值 设定了μ*_break。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6b092a6604d5e41b / 从原文看，认知Higgs机制，Higgs场提供分裂的触发器——真空期望值 设定了μ*_break。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从原文看，认知Higgs机制，规范破缺后真空选择。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ab73a449f86cf23b / 从原文看，认知Higgs机制，规范破缺后真空选择。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

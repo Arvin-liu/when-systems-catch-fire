@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [classic_problems_benchmark 数据结构](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cdf4220868dbb8d3 / classic_problems_benchmark 数据结构
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
 - [classic_problems_benchmark（34 条）— 无标题命中，验证未命中正常输出](../../../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cb4845f9b43cac05 / classic_problems_benchmark（34 条）— 无标题命中，验证未命中正常输出
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-0C4A21C314337447 / def _validate\(self, **overrides\): / IMPLICIT-0C4A21C314337447
   - 来源：`function-os-candidate/v0.2/tests/test_n7_robust.py`
-  - 依赖：—；被引用：—
-- [def _validate\(self, data: dict\) -> List\[str\]:](../../../function-os-candidate/v0.1/function_os/n1_functionspec_parser.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-472D2BA113A549F5 / def _validate\(self, data: dict\) -> List\[str\]: / IMPLICIT-472D2BA113A549F5
-  - 来源：`function-os-candidate/v0.1/function_os/n1_functionspec_parser.py`
   - 依赖：—；被引用：—

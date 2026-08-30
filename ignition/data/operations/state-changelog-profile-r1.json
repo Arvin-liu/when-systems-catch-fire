@@ -1,8 +1,8 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 52,
-  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
+  "entry_count": 53,
+  "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53],
   "historical_entry_count": 26,
   "legacy_profile_count": 6,
   "profiles": {
@@ -89,6 +89,7 @@
     {"ordinal": 49, "date": "2026-08-28", "label": "IGNITION-20260828-146 — terminal README human front door simplification", "profile": "current-homepage-simplification-r1", "section_sha256": "199104abaedf2719b7c2f941f27ddd1a9519d090aa1a6b815c09e5c82effe301"},
     {"ordinal": 50, "date": "2026-08-28", "label": "IGNITION-20260828-147 — README project identity and architecture navigation R3", "profile": "current-project-identity-r1", "section_sha256": "73537e97ed50bbe969ecbc38c9f637ac9de13aa15bf691a56477eb2d4b81033f"},
     {"ordinal": 51, "date": "2026-08-28", "label": "IGNITION-20260828-147 — terminal README project identity and architecture navigation R3", "profile": "current-project-identity-r1", "section_sha256": "71a5638ab39a1287696809b93bfc0510149a97d855b97b2faae803e2d3bc5bf8"},
-    {"ordinal": 52, "date": "2026-08-29", "label": "IGNITION-20260829-148 — AI-first Ignition Operating Method R1 Current candidate", "profile": "current-r1", "section_sha256": "3f2394643595456840b0eafd647b65123d63e45d54d54704d931b3c5cd87cc85"}
+    {"ordinal": 52, "date": "2026-08-29", "label": "IGNITION-20260829-148 — AI-first Ignition Operating Method R1 Current candidate", "profile": "current-r1", "section_sha256": "3f2394643595456840b0eafd647b65123d63e45d54d54704d931b3c5cd87cc85"},
+    {"ordinal": 53, "date": "2026-08-30", "label": "IGNITION-20260829-148 — terminal AI-first Ignition Operating Method R1 Draft candidate", "profile": "current-r1", "section_sha256": "36a8cc07254e5a0cb7768a56c3e515e4ab9735dec56c680bdc6944a4d962656d"}
   ]
 }

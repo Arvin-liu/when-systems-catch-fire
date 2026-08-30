@@ -2499,8 +2499,8 @@
   - 可搜索名称：NFC-edc6ae0c0a101b95 / authority_changes: formal Task Lifecycle, Open Obligation Registry and Executor Admission remain repository-local bounde
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
-- [authority_changes: Task142 adds independent formal-task lifecycle and open-obligation authorities; it grants no Owner, p](../../../STATE-CHANGELOG.md)
+- [authority_changes: formal Task148 lifecycle advances from `IN_PROGRESS` to terminal `COMPLETED_WITH_OPEN_OBLIGATIONS`, a](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7fb57951c41f3190 / authority_changes: Task142 adds independent formal-task lifecycle and open-obligation authorities; it grants no Owner, p
+  - 可搜索名称：NFC-32151e937124e1cd / authority_changes: formal Task148 lifecycle advances from `IN_PROGRESS` to terminal `COMPLETED_WITH_OPEN_OBLIGATIONS`, a
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

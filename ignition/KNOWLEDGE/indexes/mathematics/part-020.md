@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [退出权信号随时间衰减，衰减率λ由遮蔽决定。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-119e6cdcfbb2c1d3 / 退出权信号随时间衰减，衰减率λ由遮蔽决定。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [退出权八维展开](../../../data/external-research/121-fulltext-resolver/121-extracts.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D8 / 退出权八维展开 / D8
+  - 来源：`data/external-research/121-fulltext-resolver/121-extracts.jsonl`
+  - 依赖：D1, D90；被引用：NFC-937ae365d1f67a2e, NFC-c9439e4b0a2d5056, NFC-d40e953b18ee28e1, NFC-e57b15f4fdd63544
 - [退出权共振函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D509 / 退出权共振函数 / D509

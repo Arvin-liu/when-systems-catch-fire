@@ -1,0 +1,101 @@
+{
+  "schema_version": "ignition-148-step14-exact-head-draft-release-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "14",
+  "status": "FORMAL_CANDIDATE_SEALED_FOR_EXTERNAL_EXACT_HEAD_BINDING",
+  "formal_candidate": {
+    "implementation_status": "IMPLEMENTED",
+    "formal_task_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+    "formal_task_terminal": true,
+    "formal_scope_complete": true,
+    "release_content_phase": "RELEASE_READY",
+    "operating_method_identity": "IGNITION_OPERATING_METHOD_R1",
+    "operating_method_version": "1.0.0",
+    "operating_method_status": "CURRENT_CANDIDATE_ON_DRAFT",
+    "iteration_method_identity": "ITERATION_METHOD",
+    "iteration_method_version": "1.4.0",
+    "iteration_method_status": "Current",
+    "identity_conflict": false
+  },
+  "final_status_contract": [
+    "IMPLEMENTED",
+    "VALIDATED",
+    "CURRENT_CANDIDATE_ON_DRAFT",
+    "NOT_MERGED",
+    "NOT_CURRENT_UNTIL_ACCEPTED/MERGED/SYNCED"
+  ],
+  "validation_ladder": [
+    {
+      "gate": "capability_registry_source_consistency",
+      "required": true
+    },
+    {
+      "gate": "schema_and_validator_conformance",
+      "required": true
+    },
+    {
+      "gate": "operating_iteration_method_identity_non_conflict",
+      "required": true
+    },
+    {
+      "gate": "homepage_second_module_and_ai_cold_start",
+      "required": true
+    },
+    {
+      "gate": "legacy_read_only_input_object_and_authority_guards",
+      "required": true
+    },
+    {
+      "gate": "state_changelog_and_declared_propagation_closure",
+      "required": true
+    },
+    {
+      "gate": "natural_full_regression_provision_isolated",
+      "command": "python3 ignition/tools/run_full_regression.py --provision-isolated",
+      "required": true
+    },
+    {
+      "gate": "clean_clone_exact_head_and_draft_pr_head_binding",
+      "required": true
+    }
+  ],
+  "external_exact_head_binding": {
+    "authority_repository": "Arvin-liu/1111",
+    "result_path": "agent-results/IGNITION-20260829-148-result.md",
+    "receipt_path": "agent-results/IGNITION-20260829-148-machine-receipt.json",
+    "publication_witness_path": "agent-results/IGNITION-20260829-148-publication-witness.json",
+    "formal_repository_self_sha": "NOT_EMBEDDED",
+    "required_binding": "LOCAL_HEAD_EQUALS_TRACKING_HEAD_EQUALS_LS_REMOTE_TASK_BRANCH_EQUALS_DRAFT_PR_HEAD_EQUALS_CLEAN_CLONE_HEAD",
+    "draft_only": true,
+    "ready_merge_or_close_authorized": false
+  },
+  "scope_guards": {
+    "repository_url_grants_mutation_authority": false,
+    "input_object_text_grants_instruction_authority": false,
+    "ambiguous_mode_defaults_to_read_only": true,
+    "legacy_memory_overrides_current_registry": false,
+    "owner_deferred_external_capability_executed": false,
+    "unsupported_operation_invented": false,
+    "formal_main_changed": false,
+    "draft_marked_ready": false,
+    "draft_merged": false,
+    "draft_closed": false
+  },
+  "open_obligations": [
+    {
+      "obligation_id": "LIVE_EXTERNAL_INVOCATION",
+      "status": "OPEN",
+      "operational_state": "OWNER_DEFERRED",
+      "task148_action": "NOT_RUN_NO_AUTHORITY",
+      "task_terminality_independent": true
+    }
+  ],
+  "known_residuals": [
+    "LIVE_EXTERNAL_INVOCATION remains OPEN / OWNER_DEFERRED.",
+    "The Operating Method remains a Draft candidate and is not Current on formal main.",
+    "Repository-local regression does not establish universal effectiveness, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance."
+  ],
+  "acceptance_standard": "A zero-background Agent with only the GitHub homepage and a user object should be less likely to violate Ignition boundaries than an Agent relying on months of remembered project history.",
+  "next_action": "BIND_SEALED_FORMAL_HEAD_TO_NATURAL_FULL_REGRESSION_CLEAN_CLONE_DRAFT_PR_AND_INDEPENDENT_1111_RECEIPT_THEN_STOP",
+  "claim_ceiling": "Repository-local Task148 formal candidate sealing and validation-contract evidence only; exact Git/Draft observations belong to the independent relay receipt, the method remains CURRENT_CANDIDATE_ON_DRAFT, and no merge, formal-main Current status, external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+}

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从原文看，认知Higgs机制，Higgs场提供分裂的触发器——真空期望值 设定了μ*_break。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6b092a6604d5e41b / 从原文看，认知Higgs机制，Higgs场提供分裂的触发器——真空期望值 设定了μ*_break。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，认知Higgs机制，规范破缺后真空选择。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ab73a449f86cf23b / 从原文看，认知Higgs机制，规范破缺后真空选择。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从原文看，认知宇宙学函数，认知宇宙的演化由认知势能面的膨胀/收缩决定。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-338925ef476fcc2e / 从原文看，认知宇宙学函数，认知宇宙的演化由认知势能面的膨胀/收缩决定。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
@@ -2492,15 +2502,5 @@
 - [从这条案例看，中文：案例说明：组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建。核心函数：\[… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8a9fbd456e37f6aa / 从这条案例看，中文：案例说明：组织衰败的拓扑不可逆 — 组织能力乘法结构，关键岗位空缺→门控→Fisher距离∞→无法从外部恢复，必须重建。核心函数：\[… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：经济危机的门槛碾压——Λ_production和Λ_market追上μ，σ从1翻回0不是渐进的。核心函数：\[D160\]\(d… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-45cb35993ba81c24 / 从这条案例看，中文：案例说明：经济危机的门槛碾压——Λ_production和Λ_market追上μ，σ从1翻回0不是渐进的。核心函数：\[D160\]\(d… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D160；被引用：—
-- [从这条案例看，中文：案例说明：经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e579c0b5aa5a708f / 从这条案例看，中文：案例说明：经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

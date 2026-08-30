@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [文字说明：** 决策权与信息权的对称性元协议在9个系统中全部验证通过，证明了决策权必须与信息权对称的普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cab1eae0e5795ff8 / 文字说明：** 决策权与信息权的对称性元协议在9个系统中全部验证通过，证明了决策权必须与信息权对称的普适性。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [文字说明：** 同构判定函数是Ψ₀的核心组件之一，用于检测不同系统A和B之间的结构同构性。它通过判定结构同构、同构映射、不变性三个维度，综合判定两个系统是否同构。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f3150b072602facb / 文字说明：** 同构判定函数是Ψ₀的核心组件之一，用于检测不同系统A和B之间的结构同构性。它通过判定结构同构、同构映射、不变性三个维度，综合判定两个系统是否同构。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [文字说明：** 同构判定子函数负责判定两个系统A和B的结构同构性。它通过计算结构同构、映射一致性、同构拓扑积分三个维度，综合判定A和B是否同构。](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-561b9dbc958b99f2 / 文字说明：** 同构判定子函数负责判定两个系统A和B的结构同构性。它通过计算结构同构、映射一致性、同构拓扑积分三个维度，综合判定A和B是否同构。
@@ -2492,15 +2502,5 @@
 - [空间有界性函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
   - 可搜索名称：D477 / 空间有界性函数 / D477
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：D451, D541；被引用：D481, D482, D483, D484
-- [空间竞争性函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
-  - 可搜索名称：D478 / 空间竞争性函数 / D478
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：D451, D541；被引用：D481, D482, D483, D484
-- [空间耦合函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D479 / 空间耦合函数 / D479
   - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
   - 依赖：D451, D541；被引用：D481, D482, D483, D484

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：案例说明：种姓制度事实上锁定社会位置，认同薄且未经验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-38997529a1e84885 / 中文：案例说明：种姓制度事实上锁定社会位置，认同薄且未经验证
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-66c153392c10c232 / 中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [中文：案例说明：科举制让汉人"可以不考"但事实上不考=放弃上升通道](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4c7ca9d0dbdc9f7d / 中文：案例说明：科举制让汉人"可以不考"但事实上不考=放弃上升通道
@@ -2492,15 +2502,5 @@
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9b70eb40ae9b71a3 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d9c56d1325176827 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d6af444fce48af10 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

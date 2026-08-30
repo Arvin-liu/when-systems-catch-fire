@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0411-D375-维度不归点-退化路径联合函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9ffba3ceeb750be6 / 已迁移的历史函数来源/0411-D375-维度不归点-退化路径联合函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D375；被引用：—
+- [已迁移的历史函数来源/0412-D376-加速-波动累积极限函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e7a6effa50c0431a / 已迁移的历史函数来源/0412-D376-加速-波动累积极限函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D376；被引用：—
 - [已迁移的历史函数来源/0413-D377-感知-调整双延迟函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-05a488e966a649c2 / 已迁移的历史函数来源/0413-D377-感知-调整双延迟函数.md
@@ -2494,13 +2504,3 @@
   - 可搜索名称：D3 / 退出权信号衰减 / D3
   - 来源：`data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json`
   - 依赖：A6, D1, D90；被引用：NFC-19c27386c7e7f30e, NFC-4f6f0233d69d3834, NFC-6acc1815414ed079, NFC-7bc5d8bbf30fe0ec
-- [退出权信号随时间衰减，衰减率λ由遮蔽决定。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-119e6cdcfbb2c1d3 / 退出权信号随时间衰减，衰减率λ由遮蔽决定。 **扩展注释 / Extended Annotation**
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：—；被引用：—
-- [退出权八维展开](../../../data/external-research/121-fulltext-resolver/121-extracts.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D8 / 退出权八维展开 / D8
-  - 来源：`data/external-research/121-fulltext-resolver/121-extracts.jsonl`
-  - 依赖：D1, D90；被引用：NFC-937ae365d1f67a2e, NFC-c9439e4b0a2d5056, NFC-d40e953b18ee28e1, NFC-e57b15f4fdd63544

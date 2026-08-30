@@ -93,7 +93,7 @@
   },
   "state_changelog_delta": {
     "decision": "CHANGE",
-    "reason": "Task148 has an append-only independent-method and propagation-closure delta; terminal closeout remains a later Step14 delta."
+    "reason": "Task148 has an append-only independent-method and propagation-closure delta plus a separate Step14 terminal Draft-candidate closeout delta."
   },
   "changed_paths": [
     ".github/README.md",

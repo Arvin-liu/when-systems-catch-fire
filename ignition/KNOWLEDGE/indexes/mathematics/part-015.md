@@ -6,6 +6,16 @@
 
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3427d0ab77db1b9b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T34；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9d74071fb051bcc4 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T35；被引用：—
+- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7b663f1bd1144d7e / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T36；被引用：—
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：CLAIM-BC-20260709-002 / 学习型组织的五项修炼与点火框架L3锁定强度函数的映射。个人修炼→团队学习→系统思考的层级演化，对应ε_eff的三阶段提升。
   - 来源：`data/foundation/arguments/arguments.jsonl`
-  - 依赖：—；被引用：—
-- [学科理论核卡片：物理学](../../ASSET-CARDS.md#asset-hr-fd9206bee6e7782d)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：学科理论核卡片：物理学 / discipline-kernel-pilot-physics-math-history-20260706
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [学科理论核卡片：物理学](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-04768cb05d2e78d3 / 学科理论核卡片：物理学
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—

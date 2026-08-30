@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [密码学四个维度的映射全部通过了J⁺=1, J⁻=0的正反交叉验证，验证了点火框架在密码域的跨域适用性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bec07388499dba2b / 密码学四个维度的映射全部通过了J⁺=1, J⁻=0的正反交叉验证，验证了点火框架在密码域的跨域适用性。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [密码学碰撞验证案例](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7de0ed3ccb885907 / 密码学碰撞验证案例
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
 - [对 22 本书验证候选（BC-20260709-001~022）逐条查重与入表门槛复核。](../../../CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-9c162372dca6a1e7 / 对 22 本书验证候选（BC-20260709-001~022）逐条查重与入表门槛复核。
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c82b2838342fbc2c / 相反，两个当前作品中的部分长句、结尾压缩和有意重复在朗读与反方审查后保留。0.5.0 不是短句化工具，也不把汪曾祺或任何作家当统一风格；它要求反常结构有可说明的表达收益，普通结构则真正沿目标语言组织。
   - 来源：`docs/publication/zhiyuan-writing-examples.md`
-  - 依赖：—；被引用：—
-- [相变序参量门槛案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6989f37fde6e877b / 相变序参量门槛案例验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [看似完整但缺少证据；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-e3bf2548c4f88202 / 看似完整但缺少证据；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
   - 依赖：—；被引用：—

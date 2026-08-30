@@ -1892,6 +1892,7 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/148/step11-interface-surface-sync.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/148/step12-current-version-propagation-closure.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/148/step13-stranger-agent-adversarial-regression.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/148/step14-exact-head-draft-release.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/lifecycle-events.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/merged-iteration-ledger.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/open-obligation-registry-r1.json"}

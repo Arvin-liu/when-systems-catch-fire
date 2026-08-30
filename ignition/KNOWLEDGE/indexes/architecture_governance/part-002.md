@@ -2444,6 +2444,11 @@
   - 可搜索名称：NFC-ae3089d399ee5018 / claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization, target
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [claim_ceiling: repository-local Task148 implementation, deterministic Current projection, declared-relation closure, off](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-425d1ee39ae0be4d / claim_ceiling: repository-local Task148 implementation, deterministic Current projection, declared-relation closure, off
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bb586cd973539003 / claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-2d5cf18b4ed756c1 / Classic Problems Benchmark Dataset
   - 来源：`data/schemas/classic_problems_benchmark.schema.json`
-  - 依赖：—；被引用：—
-- [classic_problems_benchmark 数据结构](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cdf4220868dbb8d3 / classic_problems_benchmark 数据结构
-  - 来源：`docs/machine_readable_data_plan.md`
   - 依赖：—；被引用：—

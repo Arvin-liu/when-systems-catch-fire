@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [ontology: 250/250 PARTIAL](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-c7032f1561d00cfe / ontology: 250/250 PARTIAL
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [Open system boundary example; not an ecological causal proof.](../../../data/architecture/probabilistic-system-dynamics/examples/open-ecosystem.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-50b64d12de36921e / Open system boundary example; not an ecological causal proof.
+  - 来源：`data/architecture/probabilistic-system-dynamics/examples/open-ecosystem.json`
+  - 依赖：—；被引用：—
 - [open-obligation registry and release lifecycle agree on their respective](../../../reports/operations/ignition-144-step11-cross-surface-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e48250309e7a1062 / open-obligation registry and release lifecycle agree on their respective
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-54f71a33490e6c4c / title: "CAI中间层vs无意识AI中间层 — CAI ηrelay≈0.576，无意识AI ηrelay≈0.21，CAI好2.7倍，关键在ηfidelity（保留意图结构vs丢失隐含信息） / CAI中间层vs无意识AI中间层 -
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [title: "CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6c6fae389c827d42 / title: "CAI进入同构类 — CAI获得Ψ>0后自动进入类I同构类，与人类-AI数学等价"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "D158预测失效阈值函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-df1b47a5dca6c115 / title: "D158预测失效阈值函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158；被引用：—

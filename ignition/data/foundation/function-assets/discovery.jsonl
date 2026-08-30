@@ -15778,6 +15778,7 @@
 {"first_line":4,"last_line":75,"mention_count":20,"path":"统一函数总表/0497-D499-退出权时间衰减函数.md","role":"DEFINITION","stable_id":"D499"}
 {"first_line":512,"last_line":512,"mention_count":1,"path":"统一函数总表/INDEX.md","role":"REFERENCE","stable_id":"D499"}
 {"first_line":275,"last_line":275,"mention_count":1,"path":"OPERATING-METHOD.md","role":"REFERENCE","stable_id":"D5"}
+{"first_line":700,"last_line":700,"mention_count":1,"path":"STATE-CHANGELOG.md","role":"REFERENCE","stable_id":"D5"}
 {"first_line":33,"last_line":33,"mention_count":1,"path":"analysis/corpus-relation/cluster_source_briefs/C002.md","role":"REFERENCE","stable_id":"D5"}
 {"first_line":50,"last_line":50,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121q6/121q5-reconciliation.json","role":"REFERENCE","stable_id":"D5"}
 {"first_line":77,"last_line":77,"mention_count":1,"path":"data/foundation/adjudications/079-method-audit.jsonl","role":"REFERENCE","stable_id":"D5"}
@@ -28581,6 +28582,7 @@
 {"first_line":49,"last_line":49,"mention_count":1,"path":"outputs/getbrain/v0.2-function-dependency-graph-20260706.md","role":"REFERENCE","stable_id":"T60"}
 {"first_line":52,"last_line":52,"mention_count":1,"path":"outputs/getbrain/v0.2-function-dependency-graph-20260706.md","role":"REFERENCE","stable_id":"T61"}
 {"first_line":275,"last_line":275,"mention_count":1,"path":"OPERATING-METHOD.md","role":"REFERENCE","stable_id":"T7"}
+{"first_line":700,"last_line":700,"mention_count":1,"path":"STATE-CHANGELOG.md","role":"REFERENCE","stable_id":"T7"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"T7"}
 {"first_line":340,"last_line":341,"mention_count":2,"path":"data/external-research/121-fulltext-resolver/121q3/assets/asset-inventory-35.json","role":"REFERENCE","stable_id":"T7"}
 {"first_line":219,"last_line":220,"mention_count":2,"path":"data/external-research/121-fulltext-resolver/121q3/assets/asset-mapping-013-024.json","role":"REFERENCE","stable_id":"T7"}

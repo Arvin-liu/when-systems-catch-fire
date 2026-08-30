@@ -48,7 +48,7 @@ class StateChangelogTests(unittest.TestCase):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
         source = _replace_in_entry(
             source,
-            52,
+            53,
             "- authority_changes:",
             "- authority_removed:",
         )

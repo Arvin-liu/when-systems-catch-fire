@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def _validate\(self, data: dict\) -> List\[str\]:](../../../function-os-candidate/v0.1/function_os/n1_functionspec_parser.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-472D2BA113A549F5 / def _validate\(self, data: dict\) -> List\[str\]: / IMPLICIT-472D2BA113A549F5
+  - 来源：`function-os-candidate/v0.1/function_os/n1_functionspec_parser.py`
+  - 依赖：—；被引用：—
 - [def _validate\(self, spec: dict\):](../../../function-os-candidate/v0.2/function_os/n1_functionspec_parser.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-B01954F8D38565F0 / def _validate\(self, spec: dict\): / IMPLICIT-B01954F8D38565F0
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-3E8302B5110E3DA7 / def summary\(self\) -> dict: / IMPLICIT-3E8302B5110E3DA7
   - 来源：`function-os-candidate/v0.2/function_os/n6_execution_trace.py`
-  - 依赖：—；被引用：—
-- [def summary\(self, trace: dict\) -> Dict\[str, Any\]:](../../../function-os-candidate/v0.1/function_os/n8_trace_archiver.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-A86596E4434B8783 / def summary\(self, trace: dict\) -> Dict\[str, Any\]: / IMPLICIT-A86596E4434B8783
-  - 来源：`function-os-candidate/v0.1/function_os/n8_trace_archiver.py`
   - 依赖：—；被引用：—

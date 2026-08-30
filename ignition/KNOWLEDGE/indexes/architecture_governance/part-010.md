@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| assign 931/307/3/88 ceilings \| claim projection \| `CLASSIFY → ASSIGN-CEILING` or legal `NOT_ASSIGNED` \| ceilings remai](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f716e31b64749bc5 / \| assign 931/307/3/88 ceilings \| claim projection \| `CLASSIFY → ASSIGN-CEILING` or legal `NOT_ASSIGNED` \| ceilings remai
+  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
+  - 依赖：—；被引用：—
+- [\| BC-20260709-009 \| 《影响力》 \| 六大影响力原则与点火框架P_meta元协议的映射。互惠、承诺一致、社会认同等原则作为元协议实例，影响决策门控面。 \| pending \| P_meta \| 《影响力》最终收敛报告 20](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a72483d96322f0b9 / \| BC-20260709-009 \| 《影响力》 \| 六大影响力原则与点火框架P_meta元协议的映射。互惠、承诺一致、社会认同等原则作为元协议实例，影响决策门控面。 \| pending \| P_meta \| 《影响力》最终收敛报告 20
+  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
+  - 依赖：—；被引用：—
 - [\| BC-20260709-011 \| 《未来简史》 \| 数据主义与点火框架Φ元统一律的碰撞。万物数据化→Φ从正值趋向零的暂态，验证了宇宙是Φ加速衰减的终极案例。 \| pending \| Φ \| 《未来简史》最终收敛报告 2026年7月9日](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9eedba8183e369d4 / \| BC-20260709-011 \| 《未来简史》 \| 数据主义与点火框架Φ元统一律的碰撞。万物数据化→Φ从正值趋向零的暂态，验证了宇宙是Φ加速衰减的终极案例。 \| pending \| Φ \| 《未来简史》最终收敛报告 2026年7月9日
@@ -2492,15 +2502,5 @@
 - [中文：案例说明：短内容降低获得奖励的时间成本，提高预测误差频率，使策略更偏向即时奖励。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8fa460d1e9a474dc / 中文：案例说明：短内容降低获得奖励的时间成本，提高预测误差频率，使策略更偏向即时奖励。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：种姓制度事实上锁定社会位置，认同薄且未经验证](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-38997529a1e84885 / 中文：案例说明：种姓制度事实上锁定社会位置，认同薄且未经验证
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-66c153392c10c232 / 中文：案例说明：种姓制度事实上锁定社会位置，认同靠阿育王个人权威维持
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

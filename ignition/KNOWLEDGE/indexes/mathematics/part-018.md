@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [空间竞争性函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D478 / 空间竞争性函数 / D478
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：D451, D541；被引用：D481, D482, D483, D484
+- [空间耦合函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D479 / 空间耦合函数 / D479
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：D451, D541；被引用：D481, D482, D483, D484
 - [空间锁死维度计数函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D495 / 空间锁死维度计数函数 / D495
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-918b713dcf25602c / 已迁移的历史函数来源/0410-D374-弱容斥窗口-逃逸速度联合函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D374；被引用：—
-- [已迁移的历史函数来源/0411-D375-维度不归点-退化路径联合函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9ffba3ceeb750be6 / 已迁移的历史函数来源/0411-D375-维度不归点-退化路径联合函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D375；被引用：—
-- [已迁移的历史函数来源/0412-D376-加速-波动累积极限函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e7a6effa50c0431a / 已迁移的历史函数来源/0412-D376-加速-波动累积极限函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D376；被引用：—

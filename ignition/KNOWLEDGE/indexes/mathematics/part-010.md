@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 碰撞层级8格概率函数 is adjudicated as PROBABILISTIC_MODEL: 窗口与临界函数，窗口与临界案例验证。. This is a model-i](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D46 / Within the source-defined scope, 碰撞层级8格概率函数 is adjudicated as PROBABILISTIC_MODEL: 窗口与临界函数，窗口与临界案例验证。. This is a model-i
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 社会学容斥加速函数 is adjudicated as MECHANISM_MODEL: 阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢpⱼ加](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D252 / Within the source-defined scope, 社会学容斥加速函数 is adjudicated as MECHANISM_MODEL: 阶层固化的否决强度不仅随各门槛否决概率pᵢ线性增长（容斥一阶），还随交叉项pᵢpⱼ加
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D147；被引用：—
 - [Within the source-defined scope, 种子-点火结果概率分布函数 is adjudicated as PROBABILISTIC_MODEL: 窗口与临界函数，窗口与临界案例验证。. This is a mode](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D49 / Within the source-defined scope, 种子-点火结果概率分布函数 is adjudicated as PROBABILISTIC_MODEL: 窗口与临界函数，窗口与临界案例验证。. This is a mode
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-76904f5d381f2318 / \| \[T41\]\( \) \| \[艺术创作逻辑跨时空同构函数\]\( \) \| I_iso_art\(A,B\) := Flow_Type\(A\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T41；被引用：—
-- [\| \[T46\]\( \) \| \[元同构律跨文明验证函数\]\( \) \| I_iso_meta\(A,B\) := Meta_Structure\(A\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-66b586b9fbb930df / \| \[T46\]\( \) \| \[元同构律跨文明验证函数\]\( \) \| I_iso_meta\(A,B\) := Meta_Structure\(A\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T46；被引用：—
-- [\| \[T55\]\( \) \| \[植物意识函数\]\( \) \| F_plant_consciousness := ∫\(subjective_experience ×](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-03b4d27e66d16dd2 / \| \[T55\]\( \) \| \[植物意识函数\]\( \) \| F_plant_consciousness := ∫\(subjective_experience ×
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T55；被引用：—

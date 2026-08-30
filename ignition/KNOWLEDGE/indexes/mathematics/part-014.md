@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：经济危机的门槛碾压——Λ_production和Λ_market追上μ，σ从1翻回0不是渐进的。核心函数：\[D160\]\(d… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-45cb35993ba81c24 / 从这条案例看，中文：案例说明：经济危机的门槛碾压——Λ_production和Λ_market追上μ，σ从1翻回0不是渐进的。核心函数：\[D160\]\(d… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D160；被引用：—
+- [从这条案例看，中文：案例说明：经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e579c0b5aa5a708f / 从这条案例看，中文：案例说明：经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-73db216b1c533beb / 从这条案例看，中文：案例说明：经验法则证伪 — 经验说"先确保生存再追求增长"，但D112说防守强度在接近门槛时反而增大——不是"先防守完再进攻"，而是… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-7042331cd69de1ce / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T33；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3427d0ab77db1b9b / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T34；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9d74071fb051bcc4 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：T35；被引用：—

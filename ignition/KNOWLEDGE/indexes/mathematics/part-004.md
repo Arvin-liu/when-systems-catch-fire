@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [authority_changes: Task142 adds independent formal-task lifecycle and open-obligation authorities; it grants no Owner, p](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7fb57951c41f3190 / authority_changes: Task142 adds independent formal-task lifecycle and open-obligation authorities; it grants no Owner, p
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: the formal task lifecycle now owns Task143 terminality independently of the open-obligation registry;](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b44b798bb9a58591 / authority_changes: the formal task lifecycle now owns Task143 terminality independently of the open-obligation registry;
@@ -1849,6 +1854,11 @@
   - 可搜索名称：NFC-6b5fd62d4da00a25 / delta: registered Durability / Lifecycle R3 as one current component inside the existing Ignition OS / driver spine; syn
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [delta: Steps 00-14 seal the AI-first Operating Method, 19-operation capability registry, mode and authority routing, uni](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-10514922a49de3f2 / delta: Steps 00-14 seal the AI-first Operating Method, 19-operation capability registry, mode and authority routing, uni
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [delta: Steps 00–19 close the formal Task142 scope and publish the task's terminal lifecycle semantics; the separate obli](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1fcef1c3115bda60 / delta: Steps 00–19 close the formal Task142 scope and publish the task's terminal lifecycle semantics; the separate obli
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-d182ca8a39870579 / Formal soundness proofs and a 10KLOC implementation evaluation jointly validate the bounded verifier.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Formal Task Lifecycle owns terminality from task scope, steps, publication and](../../../reports/operations/ignition-142-step17-architecture-impact.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c7819093f25aeb53 / Formal Task Lifecycle owns terminality from task scope, steps, publication and
-  - 来源：`reports/operations/ignition-142-step17-architecture-impact.md`
-  - 依赖：—；被引用：—
-- [Formal Task Lifecycle R1, Open Obligation Registry R1 and Executor Admission R1.](../../../reports/operations/ignition-142-step17-architecture-impact.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-dd979cd972095f0a / Formal Task Lifecycle R1, Open Obligation Registry R1 and Executor Admission R1.
-  - 来源：`reports/operations/ignition-142-step17-architecture-impact.md`
   - 依赖：—；被引用：—

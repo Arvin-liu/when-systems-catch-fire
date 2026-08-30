@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [学科理论核卡片：物理学](../../ASSET-CARDS.md#asset-hr-fd9206bee6e7782d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：学科理论核卡片：物理学 / discipline-kernel-pilot-physics-math-history-20260706
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [学科理论核卡片：物理学](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-04768cb05d2e78d3 / 学科理论核卡片：物理学
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [学科证据制度误配（用结构性推论替代数学证明）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-3aca36fdcf6ab769 / 学科证据制度误配（用结构性推论替代数学证明）
@@ -2492,15 +2502,5 @@
 - [文字说明：** 元同构函数是Ψ₀在"同构维度"的完整表达，包含14个内部算子，覆盖参数空间、对数、势函数、统一同构、四象限、跨域、尺度七个维度。](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6216a1b78dc4c635 / 文字说明：** 元同构函数是Ψ₀在"同构维度"的完整表达，包含14个内部算子，覆盖参数空间、对数、势函数、统一同构、四象限、跨域、尺度七个维度。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [文字说明：** 决策权与信息权的对称性元协议在9个系统中全部验证通过，证明了决策权必须与信息权对称的普适性。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cab1eae0e5795ff8 / 文字说明：** 决策权与信息权的对称性元协议在9个系统中全部验证通过，证明了决策权必须与信息权对称的普适性。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [文字说明：** 同构判定函数是Ψ₀的核心组件之一，用于检测不同系统A和B之间的结构同构性。它通过判定结构同构、同构映射、不变性三个维度，综合判定两个系统是否同构。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f3150b072602facb / 文字说明：** 同构判定函数是Ψ₀的核心组件之一，用于检测不同系统A和B之间的结构同构性。它通过判定结构同构、同构映射、不变性三个维度，综合判定两个系统是否同构。
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
