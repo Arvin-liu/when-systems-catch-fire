@@ -17,6 +17,11 @@ defaults:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    # Keep direct unittest module loads on the same explicit roots as the
+    # canonical full-regression runner.  Script execution adds its own
+    # directory to sys.path; importlib-based tests do not.
+    env:
+      PYTHONPATH: ${{ github.workspace }}/ignition:${{ github.workspace }}/ignition/tests:${{ github.workspace }}/ignition/tools/foundation
     steps:
       - uses: actions/checkout@v4
         with:
