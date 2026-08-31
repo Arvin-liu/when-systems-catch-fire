@@ -16,13 +16,14 @@ class CurrentCanonicalResolutionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
         cls.cards = resolver.load_jsonl(resolver.IDENTITY_CARDS_PATH)
+        cls.claims = resolver.load_jsonl(resolver.NONFUNCTION_CLAIMS_PATH)
         cls.aliases = resolver.load_jsonl(resolver.ALIAS_INDEX_PATH)
         cls.corrections = resolver.load_jsonl(resolver.CORRECTIONS_PATH)
         cls.mappings = resolver.load_jsonl(resolver.LEGACY_MAPPINGS_PATH)
 
     def test_all_twelve_current_authority_fixtures_pass(self) -> None:
         fixtures = json.loads(resolver.FIXTURE_PATH.read_text(encoding="utf-8"))
-        self.assertEqual(len(fixtures["cases"]), 12)
+        self.assertEqual(len(fixtures["cases"]), 14)
         self.assertEqual(resolver.validate_fixtures(fixtures), [])
 
     def test_exposed_legacy_labels_preserve_current_quarantine(self) -> None:
@@ -45,6 +46,37 @@ class CurrentCanonicalResolutionTests(unittest.TestCase):
             ["CORR-98-D127", "CORR-98-T2"],
         )
         self.assertIn(resolver.CORRECTION_AUTHORITY, corrected["authority_sources"])
+
+    def test_nonfunction_claims_resolve_from_their_canonical_authority(self) -> None:
+        result = resolver.resolve_reference("CLAIM-T2")
+        self.assertEqual(result["resolution_status"], resolver.RESOLVED)
+        self.assertEqual(result["registry_kind"], "NONFUNCTION_CLAIM")
+        self.assertEqual(result["canonical_id"], "CLAIM-T2")
+        self.assertEqual(
+            result["canonical_title"],
+            "For all a,b in Nat, if a=0 or b=0, then a*b=0.",
+        )
+        self.assertEqual(result["identity_authority"], resolver.NONFUNCTION_CLAIMS_AUTHORITY)
+        self.assertEqual(
+            result["final_disposition"], "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT"
+        )
+        self.assertFalse(result["resolution_establishes_external_truth"])
+
+    def test_function_and_nonfunction_title_collision_is_ambiguous(self) -> None:
+        claims = copy.deepcopy(self.claims)
+        function = next(row for row in self.cards if row["canonical_id"] == "D1")
+        claims[0]["canonical_title"] = function["title"]
+        result = resolver.resolve_reference_from_rows(
+            function["title"],
+            self.cards,
+            [],
+            self.corrections,
+            self.mappings,
+            claims,
+        )
+        self.assertEqual(result["resolution_status"], resolver.AMBIGUOUS)
+        self.assertIn(function["canonical_id"], result["candidate_canonical_ids"])
+        self.assertIn(claims[0]["canonical_id"], result["candidate_canonical_ids"])
 
     def test_historical_path_and_near_match_fail_closed(self) -> None:
         for reference in ("统一函数总表/0012-T2-乘法归零律.md", "D127 乘法清零律"):

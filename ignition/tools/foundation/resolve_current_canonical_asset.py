@@ -18,12 +18,14 @@ from typing import Any, Iterable
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[2]
 IDENTITY_CARDS_PATH = ROOT / "data/foundation/function-assets/identity-cards.jsonl"
+NONFUNCTION_CLAIMS_PATH = ROOT / "data/foundation/nonfunction-claims/claim-registry.jsonl"
 ALIAS_INDEX_PATH = ROOT / "data/governance/knowledge-experience/alias-index.jsonl"
 CORRECTIONS_PATH = ROOT / "data/foundation/function-assets/corrections.jsonl"
 LEGACY_MAPPINGS_PATH = ROOT / "data/foundation/mappings/legacy-mappings.jsonl"
 FIXTURE_PATH = ROOT / "tests/fixtures/ignition-operating-method/canonical-resolution-r1.json"
 
 IDENTITY_AUTHORITY = "ignition/data/foundation/function-assets/identity-cards.jsonl"
+NONFUNCTION_CLAIMS_AUTHORITY = "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
 ALIAS_AUTHORITY = "ignition/data/governance/knowledge-experience/alias-index.jsonl"
 CORRECTION_AUTHORITY = "ignition/data/foundation/function-assets/corrections.jsonl"
 LEGACY_MAPPING_AUTHORITY = "ignition/data/foundation/mappings/legacy-mappings.jsonl"
@@ -75,6 +77,19 @@ def _exact_token(text: str, token: str) -> bool:
     return re.search(rf"(?<![A-Za-z0-9]){re.escape(token)}(?![A-Za-z0-9])", text) is not None
 
 
+def _canonical_title(record: dict[str, Any], authority: str) -> str:
+    title = record.get("title") or record.get("canonical_title")
+    if not isinstance(title, str) or not title:
+        raise CanonicalAuthorityError(f"{authority} contains a row without title/canonical_title")
+    return title
+
+
+def _looks_like_historical_path(reference: str) -> bool:
+    return reference.startswith(("统一函数总表/", "统一案例总表/")) or bool(
+        re.search(r"(?:^|/)[^/]+\.(?:md|markdown|json|jsonl|csv)$", reference, re.IGNORECASE)
+    )
+
+
 def _unresolved(reference: str, reason: str, authority_sources: list[str] | None = None) -> dict[str, Any]:
     return {
         "input_reference": reference,
@@ -83,7 +98,7 @@ def _unresolved(reference: str, reason: str, authority_sources: list[str] | None
         "canonical_id": None,
         "canonical_title": None,
         "match_kind": None,
-        "authority_sources": authority_sources or [IDENTITY_AUTHORITY, ALIAS_AUTHORITY],
+        "authority_sources": authority_sources or [IDENTITY_AUTHORITY, NONFUNCTION_CLAIMS_AUTHORITY, ALIAS_AUTHORITY],
         "memory_or_fuzzy_resolution_used": False,
         "historical_file_used_as_identity": False,
         "resolution_establishes_external_truth": False,
@@ -99,7 +114,7 @@ def _ambiguous(reference: str, reason: str, candidates: list[str]) -> dict[str, 
         "canonical_id": None,
         "canonical_title": None,
         "match_kind": None,
-        "authority_sources": [IDENTITY_AUTHORITY, ALIAS_AUTHORITY],
+        "authority_sources": [IDENTITY_AUTHORITY, NONFUNCTION_CLAIMS_AUTHORITY, ALIAS_AUTHORITY],
         "memory_or_fuzzy_resolution_used": False,
         "historical_file_used_as_identity": False,
         "resolution_establishes_external_truth": False,
@@ -108,30 +123,37 @@ def _ambiguous(reference: str, reason: str, candidates: list[str]) -> dict[str, 
 
 def _resolved(
     reference: str,
-    card: dict[str, Any],
+    record: dict[str, Any],
     match_kind: str,
     authority_sources: list[str],
     *,
     alias: dict[str, Any] | None = None,
     corrections: list[dict[str, Any]] | None = None,
+    registry_kind: str = "FUNCTION_ASSET",
+    identity_authority: str = IDENTITY_AUTHORITY,
 ) -> dict[str, Any]:
+    canonical_title = _canonical_title(record, identity_authority)
     result: dict[str, Any] = {
         "input_reference": reference,
         "resolution_status": RESOLVED,
         "failure_reason": None,
-        "canonical_id": card["canonical_id"],
-        "canonical_title": card["title"],
+        "canonical_id": record["canonical_id"],
+        "canonical_title": canonical_title,
         "match_kind": match_kind,
-        "primary_identity": card["primary_identity"],
-        "identity_authority": card["identity_authority"],
-        "final_disposition": card["final_disposition"],
-        "claim_ceiling": card["claim_ceiling"],
-        "record_sha256": card["record_sha256"],
+        "registry_kind": registry_kind,
+        "identity_authority": record.get("identity_authority", identity_authority),
+        "final_disposition": record["final_disposition"],
+        "claim_ceiling": record["claim_ceiling"],
+        "record_sha256": record["record_sha256"],
         "authority_sources": list(dict.fromkeys(authority_sources)),
         "memory_or_fuzzy_resolution_used": False,
         "historical_file_used_as_identity": False,
         "resolution_establishes_external_truth": False,
     }
+    if "primary_identity" in record:
+        result["primary_identity"] = record["primary_identity"]
+    if "claim_class" in record:
+        result["claim_class"] = record["claim_class"]
     if alias is not None:
         result["alias_resolution"] = {
             "alias_id": alias["alias_id"],
@@ -184,13 +206,38 @@ def resolve_reference_from_rows(
     aliases: list[dict[str, Any]],
     corrections: list[dict[str, Any]],
     legacy_mappings: list[dict[str, Any]],
+    claims: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     """Resolve one exact reference against supplied Current authority rows."""
     normalized = reference.strip() if isinstance(reference, str) else ""
     if not normalized:
         return _unresolved("", "BLANK_REFERENCE")
+    if _looks_like_historical_path(normalized):
+        return _unresolved(
+            normalized,
+            "NO_EXACT_CURRENT_CANONICAL_MAPPING",
+            [IDENTITY_AUTHORITY, NONFUNCTION_CLAIMS_AUTHORITY],
+        )
 
+    claims = claims or []
     cards_by_id = _index_unique(cards, "canonical_id", IDENTITY_AUTHORITY)
+    claims_by_id = _index_unique(claims, "canonical_id", NONFUNCTION_CLAIMS_AUTHORITY)
+    duplicate_ids = sorted(set(cards_by_id) & set(claims_by_id))
+    if duplicate_ids:
+        raise CanonicalAuthorityError(
+            "function and non-function authorities contain duplicate canonical IDs: "
+            + ", ".join(duplicate_ids)
+        )
+    records_by_id = {
+        **{
+            key: (value, "FUNCTION_ASSET", IDENTITY_AUTHORITY)
+            for key, value in cards_by_id.items()
+        },
+        **{
+            key: (value, "NONFUNCTION_CLAIM", NONFUNCTION_CLAIMS_AUTHORITY)
+            for key, value in claims_by_id.items()
+        },
+    }
     corrections_by_id: dict[str, dict[str, Any]] = {}
     for row in corrections:
         stable_id = _stable_correction_id(row)
@@ -199,15 +246,28 @@ def resolve_reference_from_rows(
                 raise CanonicalAuthorityError(f"duplicate correction authority for {stable_id}")
             corrections_by_id[stable_id] = row
 
-    titles: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    historical_ids: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    titles: dict[str, list[tuple[dict[str, Any], str, str]]] = defaultdict(list)
+    historical_ids: dict[str, list[tuple[dict[str, Any], str, str]]] = defaultdict(list)
     aliases_by_text: dict[str, list[dict[str, Any]]] = defaultdict(list)
     mappings_by_id: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for card in cards:
-        titles[card["title"]].append(card)
+        titles[_canonical_title(card, IDENTITY_AUTHORITY)].append(
+            (card, "FUNCTION_ASSET", IDENTITY_AUTHORITY)
+        )
         for historical_id in card.get("historical_ids", []):
             if isinstance(historical_id, str):
-                historical_ids[historical_id].append(card)
+                historical_ids[historical_id].append(
+                    (card, "FUNCTION_ASSET", IDENTITY_AUTHORITY)
+                )
+    for claim in claims:
+        titles[_canonical_title(claim, NONFUNCTION_CLAIMS_AUTHORITY)].append(
+            (claim, "NONFUNCTION_CLAIM", NONFUNCTION_CLAIMS_AUTHORITY)
+        )
+        for historical_id in claim.get("historical_ids", []):
+            if isinstance(historical_id, str):
+                historical_ids[historical_id].append(
+                    (claim, "NONFUNCTION_CLAIM", NONFUNCTION_CLAIMS_AUTHORITY)
+                )
     for row in aliases:
         alias_text = row.get("alias")
         if isinstance(alias_text, str):
@@ -218,8 +278,9 @@ def resolve_reference_from_rows(
             mappings_by_id[mapping_id].append(row)
 
     # A Current canonical ID always wins over memory, titles and old combined labels.
-    if normalized in cards_by_id:
-        sources = [IDENTITY_AUTHORITY]
+    if normalized in records_by_id:
+        record, registry_kind, identity_authority = records_by_id[normalized]
+        sources = [identity_authority]
         mappings = mappings_by_id.get(normalized, [])
         if mappings:
             valid = [
@@ -229,7 +290,14 @@ def resolve_reference_from_rows(
             ]
             if valid:
                 sources.append(LEGACY_MAPPING_AUTHORITY)
-        return _resolved(normalized, cards_by_id[normalized], "CANONICAL_ID", sources)
+        return _resolved(
+            normalized,
+            record,
+            "CANONICAL_ID",
+            sources,
+            registry_kind=registry_kind,
+            identity_authority=identity_authority,
+        )
 
     exact_aliases = aliases_by_text.get(normalized, [])
     if len(exact_aliases) > 1:
@@ -253,32 +321,45 @@ def resolve_reference_from_rows(
                 [IDENTITY_AUTHORITY, ALIAS_AUTHORITY, CORRECTION_AUTHORITY],
                 alias=alias,
                 corrections=relevant_corrections,
+                registry_kind="FUNCTION_ASSET",
+                identity_authority=IDENTITY_AUTHORITY,
             )
         if alias.get("status") == "CURRENT_SEARCH_ALIAS":
             target = alias.get("lineage_key")
-            if isinstance(target, str) and target in cards_by_id:
+            if isinstance(target, str) and target in records_by_id:
+                record, registry_kind, identity_authority = records_by_id[target]
                 return _resolved(
                     normalized,
-                    cards_by_id[target],
+                    record,
                     "CURRENT_SEARCH_ALIAS",
-                    [IDENTITY_AUTHORITY, ALIAS_AUTHORITY],
+                    [identity_authority, ALIAS_AUTHORITY],
                     alias=alias,
+                    registry_kind=registry_kind,
+                    identity_authority=identity_authority,
                 )
             return _unresolved(
                 normalized,
                 "CURRENT_ALIAS_TARGET_NOT_CURRENT",
-                [IDENTITY_AUTHORITY, ALIAS_AUTHORITY],
+                [IDENTITY_AUTHORITY, NONFUNCTION_CLAIMS_AUTHORITY, ALIAS_AUTHORITY],
             )
         return _unresolved(normalized, "ALIAS_STATUS_NOT_CURRENT")
 
     title_matches = titles.get(normalized, [])
     if len(title_matches) == 1:
-        return _resolved(normalized, title_matches[0], "CANONICAL_TITLE", [IDENTITY_AUTHORITY])
+        record, registry_kind, identity_authority = title_matches[0]
+        return _resolved(
+            normalized,
+            record,
+            "CANONICAL_TITLE",
+            [identity_authority],
+            registry_kind=registry_kind,
+            identity_authority=identity_authority,
+        )
     if len(title_matches) > 1:
         return _ambiguous(
             normalized,
             "NON_UNIQUE_CANONICAL_TITLE",
-            [row["canonical_id"] for row in title_matches],
+            [record["canonical_id"] for record, _, _ in title_matches],
         )
 
     historical_matches = historical_ids.get(normalized, [])
@@ -290,24 +371,29 @@ def resolve_reference_from_rows(
             and isinstance(row.get("target_ref"), str)
             and row["target_ref"].startswith("formal-object:")
         }
-        candidates = [row for row in historical_matches if row["canonical_id"] in mapping_targets]
+        candidates = [
+            item for item in historical_matches if item[0]["canonical_id"] in mapping_targets
+        ]
         if len(candidates) == 1:
+            record, registry_kind, identity_authority = candidates[0]
             return _resolved(
                 normalized,
-                candidates[0],
+                record,
                 "MIGRATED_HISTORICAL_ID",
-                [IDENTITY_AUTHORITY, LEGACY_MAPPING_AUTHORITY],
+                [identity_authority, LEGACY_MAPPING_AUTHORITY],
+                registry_kind=registry_kind,
+                identity_authority=identity_authority,
             )
         if len(candidates) > 1:
             return _ambiguous(
                 normalized,
                 "HISTORICAL_ID_MAPS_TO_MULTIPLE_CURRENT_IDENTITIES",
-                [row["canonical_id"] for row in candidates],
+                [record["canonical_id"] for record, _, _ in candidates],
             )
         return _unresolved(
             normalized,
             "HISTORICAL_ID_WITHOUT_CURRENT_MAPPING",
-            [IDENTITY_AUTHORITY, LEGACY_MAPPING_AUTHORITY],
+            [IDENTITY_AUTHORITY, NONFUNCTION_CLAIMS_AUTHORITY, LEGACY_MAPPING_AUTHORITY],
         )
 
     # Paths and near matches intentionally do not resolve: historical files are evidence, not identity.
@@ -321,6 +407,7 @@ def resolve_reference(reference: str) -> dict[str, Any]:
         load_jsonl(ALIAS_INDEX_PATH),
         load_jsonl(CORRECTIONS_PATH),
         load_jsonl(LEGACY_MAPPINGS_PATH),
+        load_jsonl(NONFUNCTION_CLAIMS_PATH),
     )
 
 

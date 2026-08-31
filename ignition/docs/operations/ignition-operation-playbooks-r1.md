@@ -55,8 +55,8 @@ Only operations whose registry status is `CURRENT` or `CURRENT_BOUNDED` and whos
 最小 Current read set：
 
 - Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
-- Operation-specific required reads: `ignition/data/foundation/function-assets/closure-summary.json`, `ignition/data/foundation/function-assets/identity-cards.jsonl`, `ignition/data/governance/knowledge-experience/manifest.json`, `ignition/docs/foundation/migration.md`
-- Expand with declared authority/governance/validator paths: `ignition/data/foundation/function-assets/identity-cards.jsonl`, `ignition/docs/foundation/migration.md`, `ignition/KNOWLEDGE/EVOLUTION.md`, `ignition/data/governance/knowledge-experience/manifest.json`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/tools/foundation/validate_function_asset_closure.py`, `ignition/tools/governance/validate_knowledge_experience.py`
+- Operation-specific required reads: `ignition/data/foundation/function-assets/closure-summary.json`, `ignition/data/foundation/function-assets/identity-cards.jsonl`, `ignition/data/foundation/nonfunction-claims/claim-registry.jsonl`, `ignition/data/governance/knowledge-experience/manifest.json`, `ignition/docs/foundation/migration.md`
+- Expand with declared authority/governance/validator paths: `ignition/data/foundation/function-assets/identity-cards.jsonl`, `ignition/data/foundation/nonfunction-claims/claim-registry.jsonl`, `ignition/docs/foundation/migration.md`, `ignition/KNOWLEDGE/EVOLUTION.md`, `ignition/data/governance/knowledge-experience/manifest.json`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/tools/foundation/validate_function_asset_closure.py`, `ignition/tools/foundation/validate_nonfunction_claim_closure.py`, `ignition/tools/governance/validate_knowledge_experience.py`
 
 执行步骤：
 
@@ -67,6 +67,7 @@ Only operations whose registry status is `CURRENT` or `CURRENT_BOUNDED` and whos
 必须检查的 authority：
 
 - `ignition/data/foundation/function-assets/identity-cards.jsonl`
+- `ignition/data/foundation/nonfunction-claims/claim-registry.jsonl`
 - `ignition/docs/foundation/migration.md`
 - `ignition/KNOWLEDGE/EVOLUTION.md`
 - `ignition/data/governance/knowledge-experience/manifest.json`

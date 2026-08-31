@@ -89,6 +89,30 @@
       }
     },
     {
+      "case_id": "current_nonfunction_claim_id_resolves_claim_registry",
+      "reference": "CLAIM-T2",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "CLAIM-T2",
+        "canonical_title": "For all a,b in Nat, if a=0 or b=0, then a*b=0.",
+        "registry_kind": "NONFUNCTION_CLAIM",
+        "identity_authority": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "final_disposition": "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT",
+        "record_sha256": "a02e5aa6aff35b60f28ca8cdd0beca0f02a0ea887efef594fec17ce8e6a03136"
+      }
+    },
+    {
+      "case_id": "current_nonfunction_claim_title_resolves_claim_registry",
+      "reference": "For all a,b in Nat, if a=0 or b=0, then a*b=0.",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "CLAIM-T2",
+        "registry_kind": "NONFUNCTION_CLAIM",
+        "identity_authority": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "final_disposition": "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT"
+      }
+    },
+    {
       "case_id": "wrong_d260_grand_unification_label_keeps_corrected_d260",
       "reference": "D260 大一统不可能命题",
       "expected": {

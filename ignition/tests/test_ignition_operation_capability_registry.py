@@ -65,6 +65,23 @@ class IgnitionOperationCapabilityRegistryR1Tests(unittest.TestCase):
         collision["repository_mutation_permission"] = "EXPLICIT_USER_OR_OWNER_AUTHORIZATION_AND_ITERATION_METHOD"
         self.assertTrue(any("READ_ONLY_RUN cannot permit repository mutation" in error for error in validate(candidate)))
 
+    def test_current_resolver_must_read_both_canonical_registries(self) -> None:
+        candidate = copy.deepcopy(self.registry)
+        resolver = next(
+            row for row in candidate["operations"]
+            if row["operation_id"] == "foundation.resolve_current_asset"
+        )
+        resolver["authoritative_sources"] = [
+            source for source in resolver["authoritative_sources"]
+            if source["path"] != "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+        ]
+        resolver["required_current_reads"].remove(
+            "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+        )
+        errors = validate(candidate)
+        self.assertTrue(any("both Current canonical registries" in error for error in errors))
+        self.assertTrue(any("must read both Current canonical registries" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

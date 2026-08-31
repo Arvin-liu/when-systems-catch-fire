@@ -128,6 +128,7 @@
       "ai_callability": "PUBLIC_BOUNDED",
       "authoritative_sources": [
         {"path": "ignition/data/foundation/function-assets/identity-cards.jsonl", "role": "CAPABILITY_DECLARATION"},
+        {"path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl", "role": "CAPABILITY_DECLARATION"},
         {"path": "ignition/docs/foundation/migration.md", "role": "BOUNDARY_AUTHORITY"},
         {"path": "ignition/KNOWLEDGE/EVOLUTION.md", "role": "BOUNDARY_AUTHORITY"},
         {"path": "ignition/data/governance/knowledge-experience/manifest.json", "role": "CURRENT_STATUS_AUTHORITY"}
@@ -144,6 +145,7 @@
       "required_current_reads": [
         "ignition/data/foundation/function-assets/closure-summary.json",
         "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
         "ignition/data/governance/knowledge-experience/manifest.json",
         "ignition/docs/foundation/migration.md"
       ],
@@ -153,6 +155,7 @@
       ],
       "validation_checks": [
         {"kind": "SCRIPT", "path": "ignition/tools/foundation/validate_function_asset_closure.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/foundation/validate_nonfunction_claim_closure.py"},
         {"kind": "SCRIPT", "path": "ignition/tools/governance/validate_knowledge_experience.py"}
       ],
       "known_limits": [

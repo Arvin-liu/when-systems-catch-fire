@@ -244,6 +244,20 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         if "candidate registration" not in collision["claim_ceiling"]:
             errors.append("knowledge.collide_object claim ceiling must prohibit candidate registration")
 
+    resolver = operation_map.get("foundation.resolve_current_asset")
+    if resolver is None:
+        errors.append("Current canonical resolver operation is missing")
+    else:
+        required_resolver_sources = {
+            "ignition/data/foundation/function-assets/identity-cards.jsonl",
+            "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        }
+        actual_resolver_sources = {source["path"] for source in resolver["authoritative_sources"]}
+        if not required_resolver_sources <= actual_resolver_sources:
+            errors.append("foundation.resolve_current_asset must declare both Current canonical registries")
+        if not required_resolver_sources <= set(resolver["required_current_reads"]):
+            errors.append("foundation.resolve_current_asset must read both Current canonical registries")
+
     tick = chr(96)
     required_markers = {
         ROOT / "ITERATION.md": [f"Current: {tick}1.4.0{tick}", "governs how 点火 changes itself"],
