@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "7afef891194eca87173a414a9f579a3aaf52ba1a04e89301b5171b80a320277a"
+      "sha256": "faf077792e2be20113145a30703ad549a2dfe9d578793d6afb84439574dcfd43"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "15ad57f0f69bae4321f403435854bd6e7fd80995b76b535fe81993163a653dfa"
+      "sha256": "3fb1a7343648c13e123dd72449c24f67746247ae41135568cc1f44260405a126"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",
