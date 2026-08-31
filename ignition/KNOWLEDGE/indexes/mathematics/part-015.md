@@ -6,6 +6,11 @@
 
 - [原始来源: PRIVATE_PROVENANCE_WITHHELD](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6cb5b52dcab86296 / 原始来源: PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：T30；被引用：—
+- [原始来源: PRIVATE_PROVENANCE_WITHHELD](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c3baecbeda8b6f47 / 原始来源: PRIVATE_PROVENANCE_WITHHELD
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：T31；被引用：—
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-388a1325ef260f86 / 基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）
   - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
-  - 依赖：—；被引用：—
-- [增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。](../../../docs/governance/meta-protocol-reviews/protocols/V3.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-939611815531bbfd / 增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/V3.md`
   - 依赖：—；被引用：—

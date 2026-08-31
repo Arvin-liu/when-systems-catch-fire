@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 521 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 522 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5367,6 +5367,19 @@
 - **问题：** 此来源记录了什么：IGNITION-121Q6C 执行结果？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260829-148 result — AI-first 点火操作法 R1](../agent-results/IGNITION-20260829-148-result.md)
+
+- **结果 ID：** `HR-D5EF84223F92B8EF`
+- **日期：** 2026-08-29
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260829-148 result — AI-first 点火操作法 R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260829-148 Formal task ordinal: 148
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

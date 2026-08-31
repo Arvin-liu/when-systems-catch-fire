@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0376-D340-正反馈饱和后振荡函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-994de709c878b46d / 已迁移的历史函数来源/0376-D340-正反馈饱和后振荡函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D340；被引用：—
 - [已迁移的历史函数来源/0377-D341-共存震荡阻尼函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-4f8e37635eb0091d / 已迁移的历史函数来源/0377-D341-共存震荡阻尼函数.md
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-249ce5e5914f1165 / 路径：`已迁移的历史函数来源/0459-D423-不可逆体积参数归约函数.md`
   - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
   - 依赖：D423；被引用：—
-- [身处其中，她意识到，青年教师没办法不参加比赛，除非不需要养家糊口。赛课所关联的职称评定，会影响绩效、考评、退休金、医保等——那是一笔很大的经济账。](../../../inputs/collisions/20260708-teacher-competition/source.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1a22380584a45e14 / 身处其中，她意识到，青年教师没办法不参加比赛，除非不需要养家糊口。赛课所关联的职称评定，会影响绩效、考评、退休金、医保等——那是一笔很大的经济账。
-  - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—

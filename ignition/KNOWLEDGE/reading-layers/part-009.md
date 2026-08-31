@@ -305,6 +305,13 @@
 - 5 分钟：元协议文件（1902 内）：12 篇（V1–V4 / S1–S4 / E1–E4 各 1）；22 本候选是否全部映射到最终收敛报告：是（22/22）；未分配 C 编号：是（formalcaseid 全为 null）
 - 完整阅读：[outputs/book-collisions/20260709-22-book-validation/extraction-audit.md](../../outputs/book-collisions/20260709-22-book-validation/extraction-audit.md)
 
+<a id="reading-hr-d5ef84223f92b8ef"></a>
+## IGNITION-20260829-148 result — AI-first 点火操作法 R1
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`
+- 1 分钟：Task ID: IGNITION-20260829-148 Formal task ordinal: 148 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260829-148 result — AI-first 点火操作法 R1；Task ID: IGNITION-20260829-148 Formal task ordinal: 148；result: COMPLETEDWITHOPENOBLIGATIONS；NOTPRODUCTIONREADY；NOEXTERNALTRUTHASSERTION；Task148 completes the bounded repository-local delivery of IGNITIONOPERATINGMETHODR1. The formal task is terminal as COMPLETEDWITHOPENOBLIGATIONS: the Operating Method, Current Snapshot, Current Facts, State Changelog, registry, playbooks, output and current surfaces are synchronized on formal main after the ordinary merge and post-merge closeout.
+- 完整阅读：[agent-results/IGNITION-20260829-148-result.md](../../agent-results/IGNITION-20260829-148-result.md)
+
 <a id="reading-hr-d6193a2d42722179"></a>
 ## IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 是相互独立的枚举轴。schema 与验证器禁止将 CLOSED、CONVERGED、MULTICASE、MACHINECHECKEDPROOF 等单轴状态传播成其他轴的成功。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 是相互独立的枚举轴。schema 与验证器禁止将 CLOSED、CONVERGED、MULTICASE、MACHINECHECKEDPROOF 等单轴状态传播成其他轴的成功。；formal 支持 UNFORMALIZED、FORMALIZATIONINCOMPLETE、WELLTYPED、TYPEERROR、SEMANTICALLYUNDEFINED、DIMENSIONERROR、COUNTEREXAMPLEFOUND、FORMALLYREFUTED。logic 支持 NOTASSESSED、VALIDDEDUCTION、INVALIDINFERENCE、DEFEASIBLESUPPORT、COUNTERMODELFOUND、HIDDENPREMISE、CIRCULAR、INCONSISTENTPREMISES、NOTAPPLICABLE。proof 与 evidence 的完整建议枚举见任务命令和 schema 演进记录。；分类状态另行使用 PROVISIONAL / ADJUDICATED / CONTESTED，不得与九轴混算。迁移覆盖率的分母是 622 个 legacy registry 对象；语义审定覆盖率只计算 ADJUDICATED，当前为 621/622。
 - 完整阅读：[docs/foundation/status-system.md](../../docs/foundation/status-system.md)
-
-<a id="reading-hr-d790a75d59747779"></a>
-## IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：PASS for the branch-local Current projection. Task138 is now the canonical Current formal task with PRESENTATIONONLY identity impact. Task136 remains the latest architecture-changing task; identity epoch and map 0.13.0 remain unchanged. The lifecycle is RUNNING because Steps13–15 are still open. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync；PASS for the branch-local Current projection. Task138 is now the canonical Current formal task with PRESENTATIONONLY identity impact. Task136 remains the latest architecture-changing task; identity epoch and map 0.13.0 remain unchanged. The lifecycle is RUNNING because Steps13–15 are still open.；The live ceiling remains LIVEBRIDGEIMPLEMENTED / LIVECOMPLETIONNOTOBSERVED. The first repaired Codex dispatch produced a known no-effect pre-inference startup failure with no structured result; the synthetic workspace was unchanged and runtime scratch cleanup was confirmed. The second invocation was forbidden by the auth-source read-only gate. Hermes reconci…；主题：Domain and claim boundaries；TASKWORKSPACE remains DISPOSABLEREADONLY.；EXECUTORRUNTIMESCRATCH is ATTEMPTEPHEMERALWRITABLE only, isolated and noncanonical.
-- 完整阅读：[reports/operations/ignition-138-step12-current-state-sync.md](../../reports/operations/ignition-138-step12-current-state-sync.md)

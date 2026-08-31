@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "认知规范破缺函数 / cognitive norm-breaking function"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8DEFCB279435DB6A / title: "认知规范破缺函数 / cognitive norm-breaking function" / IMPLICIT-8DEFCB279435DB6A / IMPLICIT-29EC0136CA46D781
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "认知调取函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F6A918775C931AA9 / title: "认知调取函数" / IMPLICIT-F6A918775C931AA9
@@ -2497,10 +2502,5 @@
 - [Within the source-defined scope, 死亡三重定义函数 is adjudicated as RELATION: 死亡分三个层次：生物学死亡（身体机能终止）→社会学死亡（社会关系中断）→存在论死亡（痕迹完全消失），](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D535 / Within the source-defined scope, 死亡三重定义函数 is adjudicated as RELATION: 死亡分三个层次：生物学死亡（身体机能终止）→社会学死亡（社会关系中断）→存在论死亡（痕迹完全消失），
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 民事保护,各维度退出权的乘积 is adjudicated as RELATION: 民事保护，各维度退出权的乘积。. This is a model-internal co](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D22 / Within the source-defined scope, 民事保护,各维度退出权的乘积 is adjudicated as RELATION: 民事保护，各维度退出权的乘积。. This is a model-internal co
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

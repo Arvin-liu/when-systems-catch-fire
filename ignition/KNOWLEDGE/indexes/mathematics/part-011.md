@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D538\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D538\(s\) := C\(s\)=1\[φ\(s\)>θ_a\], φ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-464a4ff404f42917 / \| \[D538\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D538\(s\) := C\(s\)=1\[φ\(s\)>θ_a\], φ
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D538；被引用：—
 - [\| \[D53\]\( \) \| \[信号最优流速函数（凯利公式同构）\]\( \) \| F_{D53}\(x\) := 凯利公式 f*](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-99fb38b353c2b13b / \| \[D53\]\( \) \| \[信号最优流速函数（凯利公式同构）\]\( \) \| F_{D53}\(x\) := 凯利公式 f*
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-3ec58646620e18df / 中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D54, D64；被引用：—
-- [中文：E_{Q_0003}=1 iff d*\(O\)=argmin_d\[L\(M_d\|O\)+Omega\(d\)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a1272f1f935027b4 / 中文：E_{Q_0003}=1 iff d*\(O\)=argmin_d\[L\(M_d\|O\)+Omega\(d\)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A8, D237；被引用：—

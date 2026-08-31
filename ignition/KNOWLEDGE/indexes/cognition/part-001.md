@@ -1174,6 +1174,11 @@
   - 可搜索名称：NFC-973f00a5acd301c5 / `NO_CHANGE_WITH_REASON` decisions and evidence:
   - 来源：`templates/operations/task-command-template.md`
   - 依赖：—；被引用：—
+- [`NO_EXTERNAL_TRUTH_ASSERTION`](../../../agent-results/IGNITION-20260829-148-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f1ba09b5e027bc7a / `NO_EXTERNAL_TRUTH_ASSERTION`
+  - 来源：`agent-results/IGNITION-20260829-148-result.md`
+  - 依赖：—；被引用：—
 - [`NOT_VALIDATED`, and reconciliation is not blocked. It cannot emit the old](../../../docs/architecture/external-agent-federation-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6fb9736619b965a0 / `NOT_VALIDATED`, and reconciliation is not blocked. It cannot emit the old
@@ -1234,6 +1239,11 @@
   - 可搜索名称：NFC-565cc869a9344fb0 / `tests/test_agent_runtime_r1.py` 覆盖 path/symlink/special-file、executable/argv、timeout/output bound、packet expansion、stal
   - 来源：`docs/architecture/agent-runtime-r1.md`
   - 依赖：—；被引用：—
+- [`VALIDATED`](../../../agent-results/IGNITION-20260829-148-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e3e4aec373724261 / `VALIDATED`
+  - 来源：`agent-results/IGNITION-20260829-148-result.md`
+  - 依赖：—；被引用：—
 - [`已迁移的历史案例来源/`](../../../docs/agent-trigger-phrases-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-10f35dbc0f4da141 / `已迁移的历史案例来源/`
@@ -1259,6 +1269,11 @@
   - 可搜索名称：NFC-94493c40991e288b / A1-A3=认知空间投影
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：A1, A3；被引用：—
+- [acceptance, publication acceptance, validated live completion or epistemic](../../../agent-results/IGNITION-20260829-148-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-d187852ddcfbd377 / acceptance, publication acceptance, validated live completion or epistemic
+  - 来源：`agent-results/IGNITION-20260829-148-result.md`
+  - 依赖：—；被引用：—
 - [action = {"status": "ADMISSION_REQUIRED", "action": "RUN_DYNAMIC_EXECUTOR_ADMISSION", "blocker_summary": "A live process](../../../agent_federation/live_current_projection.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2c9b355c1975c653 / action = {"status": "ADMISSION_REQUIRED", "action": "RUN_DYNAMIC_EXECUTOR_ADMISSION", "blocker_summary": "A live process
@@ -1768,6 +1783,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-12a55e0c469fe46b / Current Facts, Current Snapshot, compiler-owned surfaces, semantic gate, two-pass determinism, Current State sync, task
   - 来源：`agent-results/IGNITION-20260822-134-result.md`
+  - 依赖：—；被引用：—
+- [Current Facts, State Changelog, registry, playbooks, output and current](../../../agent-results/IGNITION-20260829-148-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-940422348c7cc0bc / Current Facts, State Changelog, registry, playbooks, output and current
+  - 来源：`agent-results/IGNITION-20260829-148-result.md`
   - 依赖：—；被引用：—
 - [Current path classification is a generated snapshot of the live tree. The final candidate must be read with the Step14 p](../../../agent-results/IGNITION-20260822-134-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-57aafc0fa05dc486 / if any\(_path_overlap\(resolved, root\) for root in self.protected_roots\):
   - 来源：`agent_federation/live_transport.py`
-  - 依赖：—；被引用：—
-- [if any\(parent_resolved == root or root in parent_resolved.parents for root in protected\):](../../../agent_federation/live_capture.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-673e0c6ce99c32ce / if any\(parent_resolved == root or root in parent_resolved.parents for root in protected\):
-  - 来源：`agent_federation/live_capture.py`
-  - 依赖：—；被引用：—
-- [if current_status == "CLOSED" and validated_completion_count < 1:](../../../agent_federation/task142_adversarial.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-27ba6bcb28ed3c77 / if current_status == "CLOSED" and validated_completion_count < 1:
-  - 来源：`agent_federation/task142_adversarial.py`
-  - 依赖：—；被引用：—
-- [if current_status == "OPEN" and validated_completion_count > 0:](../../../agent_federation/task142_adversarial.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e59e048a81b48685 / if current_status == "OPEN" and validated_completion_count > 0:
-  - 来源：`agent_federation/task142_adversarial.py`
-  - 依赖：—；被引用：—
-- [if decision and decision.get\("verdict"\) == "MATERIAL_REPAIR_REQUIRED":](../../../reos_vnext/kernel.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7C10A5864A563371 / if decision and decision.get\("verdict"\) == "MATERIAL_REPAIR_REQUIRED": / IMPLICIT-7C10A5864A563371
-  - 来源：`reos_vnext/kernel.py`
   - 依赖：—；被引用：—

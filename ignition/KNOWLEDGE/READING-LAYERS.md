@@ -888,6 +888,8 @@
 - [Pilot Formal Audit](./reading-layers/part-009.md#reading-hr-d4b5c8e581f06e23) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d5166569c3ff6750"></a>
 - [抽取审计](./reading-layers/part-009.md#reading-hr-d5166569c3ff6750) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+<a id="reading-hr-d5ef84223f92b8ef"></a>
+- [IGNITION-20260829-148 result — AI-first 点火操作法 R1](./reading-layers/part-009.md#reading-hr-d5ef84223f92b8ef) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`
 <a id="reading-hr-d6193a2d42722179"></a>
 - [IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule](./reading-layers/part-009.md#reading-hr-d6193a2d42722179) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d660dc784cc90282"></a>
@@ -901,7 +903,7 @@
 <a id="reading-hr-d77d1e13245bc9a4"></a>
 - [九轴状态系统](./reading-layers/part-009.md#reading-hr-d77d1e13245bc9a4) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d790a75d59747779"></a>
-- [IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync](./reading-layers/part-009.md#reading-hr-d790a75d59747779) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- [IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync](./reading-layers/part-010.md#reading-hr-d790a75d59747779) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d7c4ca0bba65194f"></a>
 - [IGNITION-20260816-123 架构真相同步 R1 夜班进度](./reading-layers/part-010.md#reading-hr-d7c4ca0bba65194f) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d7cc969a8b1b7ce4"></a>
@@ -1001,7 +1003,7 @@
 <a id="reading-hr-ebfbf26abf72ff4c"></a>
 - [IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计](./reading-layers/part-010.md#reading-hr-ebfbf26abf72ff4c) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ecc4e92db835c50c"></a>
-- [REOS vNext LIGHT pilot R1 — public-safe synthesis](./reading-layers/part-010.md#reading-hr-ecc4e92db835c50c) — `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- [REOS vNext LIGHT pilot R1 — public-safe synthesis](./reading-layers/part-011.md#reading-hr-ecc4e92db835c50c) — `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ed60006ec664c67a"></a>
 - [IGNITION-20260826-140 Step 13 — Adversarial / negative matrix](./reading-layers/part-011.md#reading-hr-ed60006ec664c67a) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ef6e1d0860ae3fef"></a>

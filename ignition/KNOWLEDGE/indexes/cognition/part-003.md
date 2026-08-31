@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Usage: openclaw agent \[options\]](../../../agent_federation/pilots.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-1e272d97f2c66cfb / Usage: openclaw agent \[options\]
+  - 来源：`agent_federation/pilots.py`
+  - 依赖：—；被引用：—
+- [Use this form for review evidence, reproducibility checks, red-team feedback, or gap reports. A negative finding is welc](../../../../.github/ISSUE_TEMPLATE/independent-review.yml)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-07cf7d18e996b259 / Use this form for review evidence, reproducibility checks, red-team feedback, or gap reports. A negative finding is welc
+  - 来源：`.github/ISSUE_TEMPLATE/independent-review.yml`
+  - 依赖：—；被引用：—
+- [USER_AGENT = "PointfireEvidencePilot/1.0 \(mailto:49422864+Arvin-liu@users.noreply.github.com\)"](../../../evidence-program/tools/run_crossref_verification.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d598613a606e8198 / USER_AGENT = "PointfireEvidencePilot/1.0 \(mailto:49422864+Arvin-liu@users.noreply.github.com\)"
+  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 依赖：—；被引用：—
+- [V2 规范性审核 - 效率性协议 \(Efficiency Protocol\)](../../ASSET-CARDS.md#asset-hr-c32095e69516906c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：V2 规范性审核 - 效率性协议 \(Efficiency Protocol\) / V2
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/V2.md`
+  - 依赖：—；被引用：—
+- [valid.append\(StructuredResultEvidence\(value, f"{path}.{key}", source_digest\)\)](../../../agent_federation/structured_result_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ad073c5976214a62 / valid.append\(StructuredResultEvidence\(value, f"{path}.{key}", source_digest\)\)
+  - 来源：`agent_federation/structured_result_contract.py`
+  - 依赖：—；被引用：—
+- [valid.append\(StructuredResultEvidence\(value, path, None\)\)](../../../agent_federation/structured_result_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c505fb55ae3b684f / valid.append\(StructuredResultEvidence\(value, path, None\)\)
+  - 来源：`agent_federation/structured_result_contract.py`
+  - 依赖：—；被引用：—
+- [valid: list\[StructuredResultEvidence\] = \[\]](../../../agent_federation/structured_result_contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a56ebb6812d14f8a / valid: list\[StructuredResultEvidence\] = \[\]
+  - 来源：`agent_federation/structured_result_contract.py`
+  - 依赖：—；被引用：—
+- [validate_current_projection_fresh\(current, expected\)](../../../agent_federation/task142_adversarial.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-57c9c93c57b3a2d0 / validate_current_projection_fresh\(current, expected\)
+  - 来源：`agent_federation/task142_adversarial.py`
+  - 依赖：—；被引用：—
 - [validated = \[summary for summary, record in zip\(summaries, records\) if record\["process"\]\["state"\] == "COMPLETED_VALIDATE](../../../agent_federation/live_current_projection.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3732530b8d5b730e / validated = \[summary for summary, record in zip\(summaries, records\) if record\["process"\]\["state"\] == "COMPLETED_VALIDATE

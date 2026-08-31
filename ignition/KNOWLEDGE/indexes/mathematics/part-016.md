@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。](../../../docs/governance/meta-protocol-reviews/protocols/V3.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-939611815531bbfd / 增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。
+  - 来源：`docs/governance/meta-protocol-reviews/protocols/V3.md`
+  - 依赖：—；被引用：—
 - [增量类型：`claim / argument / formal_object / mechanism / map / gap / residue / Q12 / Q13 / Q14 / MCF / PSD / ARN / Atlas / p](../../../templates/publication/zhiyuan-writing-spec.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-50e109d3eea0a5d2 / 增量类型：`claim / argument / formal_object / mechanism / map / gap / residue / Q12 / Q13 / Q14 / MCF / PSD / ARN / Atlas / p
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-e3f5d6752c0e0a7a / 数学表达 / Expression: `F_{T28}\(x\) := g=exp\[-\(ln\(μ/M_Planck\)\)²/\(2σ²\)\]，A-B型统一、极值点处量子涨落自然为零`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T28；被引用：—
-- [数学表达 / Expression: `F_{T34}\(x\) := T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln\(M_Planck/μ\)在μ=M_Pla](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ac05b5dd9e5f6a3c / 数学表达 / Expression: `F_{T34}\(x\) := T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln\(M_Planck/μ\)在μ=M_Pla
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D225, T34；被引用：—

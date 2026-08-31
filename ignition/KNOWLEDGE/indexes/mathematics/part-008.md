@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [This is a local ARN validation rule for avoiding projection errors. It is not a universal theorem about temporal network](../../../docs/architecture/adaptive-relational-network.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5bf8034f285367b7 / This is a local ARN validation rule for avoiding projection errors. It is not a universal theorem about temporal network
+  - 来源：`docs/architecture/adaptive-relational-network.md`
+  - 依赖：—；被引用：—
 - [This is the formal repository result for the Task132 canonical-Current advancement and release-transaction implementatio](../../../agent-results/IGNITION-20260822-132-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-accf7e65bd8c2664 / This is the formal repository result for the Task132 canonical-Current advancement and release-transaction implementatio
@@ -2497,10 +2502,5 @@
 - [title: "认知规范破缺函数 / cognitive norm-breaking function"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-29EC0136CA46D781 / title: "认知规范破缺函数 / cognitive norm-breaking function" / IMPLICIT-29EC0136CA46D781 / IMPLICIT-8DEFCB279435DB6A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "认知规范破缺函数 / cognitive norm-breaking function"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8DEFCB279435DB6A / title: "认知规范破缺函数 / cognitive norm-breaking function" / IMPLICIT-8DEFCB279435DB6A / IMPLICIT-29EC0136CA46D781
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
