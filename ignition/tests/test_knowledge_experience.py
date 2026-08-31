@@ -46,6 +46,15 @@ class KnowledgeExperienceTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "stale source projection"):
             MODULE.assert_source_hashes(broken)
 
+    def test_reading_layers_are_bounded_and_fully_sharded(self):
+        manifest = json.loads((ROOT / "data/governance/knowledge-experience/manifest.json").read_text(encoding="utf-8"))
+        shards = sorted((ROOT / "KNOWLEDGE/reading-layers").glob("part-*.md"))
+        self.assertEqual(manifest["counts"]["layer_shards"], len(shards))
+        self.assertTrue(shards)
+        self.assertTrue(all(path.stat().st_size < 500_000 for path in shards))
+        shard_anchors = set().union(*(MODULE.explicit_anchors(path) for path in shards))
+        self.assertEqual({row["human_anchor"] for row in self.layers}, shard_anchors)
+
     def test_generated_experience_cannot_reenter_canonical_census(self):
         functions = MODULE.read_jsonl(ROOT / "data/foundation/function-assets/identity-cards.jsonl")
         claims = MODULE.read_jsonl(ROOT / "data/foundation/nonfunction-claims/claim-registry.jsonl")

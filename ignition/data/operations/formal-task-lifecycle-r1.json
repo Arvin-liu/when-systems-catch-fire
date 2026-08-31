@@ -2,7 +2,7 @@
   "schema_version": "formal-task-lifecycle-r1",
   "contract_id": "FORMAL_TASK_TERMINALITY_INDEPENDENT_OF_OPEN_OBLIGATION",
   "authority": "FORMAL_TASK_LIFECYCLE",
-  "current_task_id": "IGNITION-20260828-147",
+  "current_task_id": "IGNITION-20260829-148",
   "obligation_registry": {
     "authority": "OPEN_OBLIGATION_REGISTRY",
     "path": "ignition/data/operations/open-obligation-registry-r1.json",
@@ -11,6 +11,26 @@
     "independence_rule": "TASK_TERMINALITY_DOES_NOT_DERIVE_FROM_OBLIGATION_CLOSURE"
   },
   "tasks": [
+    {
+      "task_id": "IGNITION-20260829-148",
+      "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",
+      "terminal": true,
+      "scope_complete": true,
+      "identity_impact": "PRESENTATION_ONLY",
+      "terminal_basis": "Task148 Steps 00-14 complete the bounded repository-local AI-first Ignition Operating Method R1, independent method identity, capability and output contracts, Current synchronization, declared propagation closure, stranger-Agent regression and terminal candidate sealing. The exact-head natural full regression, Draft PR observation and independent 1111 receipt bind the sealed formal candidate externally; LIVE_EXTERNAL_INVOCATION remains independently OPEN/OWNER_DEFERRED and does not keep the formal task non-terminal.",
+      "open_obligation_ids": [
+        "LIVE_EXTERNAL_INVOCATION"
+      ],
+      "evidence_refs": [
+        "ignition/data/operations/iterations/148/execution-contract-r1.json",
+        "ignition/data/operations/iterations/148/step01-remote-truth-audit.json",
+        "ignition/data/operations/iterations/148/step11-interface-surface-sync.json",
+        "ignition/data/operations/iterations/148/current-state-sync-receipt.json",
+        "ignition/data/operations/iterations/148/step13-stranger-agent-adversarial-regression.json",
+        "ignition/data/operations/iterations/148/step14-exact-head-draft-release.json"
+      ],
+      "claim_ceiling": "Task148 repository-local Operating Method, capability registry, interface, deterministic projection, regression and release-candidate evidence only; the method remains CURRENT_CANDIDATE_ON_DRAFT and is not Current on formal main until accepted, ordinarily merged and synchronized, while no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+    },
     {
       "task_id": "IGNITION-20260828-147",
       "execution_status": "COMPLETED_WITH_OPEN_OBLIGATIONS",

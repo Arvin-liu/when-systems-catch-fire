@@ -17,10 +17,19 @@ defaults:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    # Keep direct unittest module loads on the same explicit roots as the
+    # canonical full-regression runner.  Script execution adds its own
+    # directory to sys.path; importlib-based tests do not.
+    env:
+      PYTHONPATH: ${{ github.workspace }}/ignition:${{ github.workspace }}/ignition/tests:${{ github.workspace }}/ignition/tools/foundation
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          # Generated human-result products are bound to the exact source
+          # commit. A pull_request merge SHA has the same tree here but a
+          # synthetic identity, so validate the published candidate head.
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -28,7 +37,7 @@ jobs:
       - uses: leanprover/lean-action@v1
         with:
           auto-config: false
-          lake-package-directory: formal/lean
+          lake-package-directory: ignition/formal/lean
           use-mathlib-cache: false
           use-github-cache: false
       - run: cd formal/lean && lake env lean Foundation.lean

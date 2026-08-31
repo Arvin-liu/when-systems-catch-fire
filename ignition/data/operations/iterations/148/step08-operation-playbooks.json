@@ -1,0 +1,46 @@
+{
+  "schema_version": "ignition-148-step08-operation-playbooks-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "08",
+  "status": "PASS_WITH_DECLARED_STEP12_PROPAGATION_PENDING",
+  "canonical_playbook_source": "ignition/data/operations/ignition-operation-playbooks-r1.json",
+  "generated_human_view": "ignition/docs/operations/ignition-operation-playbooks-r1.md",
+  "capability_registry": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+  "selection_rule": "CURRENT_OR_CURRENT_BOUNDED_AND_PUBLIC_OR_PUBLIC_BOUNDED",
+  "coverage": {
+    "registry_operations": 19,
+    "callable_playbooks": 15,
+    "status_only_exclusions": 4,
+    "required_category_audits": 11,
+    "one_playbook_per_callable_operation": true,
+    "playbook_for_noncallable_operation": false,
+    "registry_fields_duplicated_as_authored_truth": false
+  },
+  "bounded_category_findings": {
+    "source_evidence_research": "PARTIAL_BOUNDED; evidence-link validation and obligation coordination exist, but no general direct-source retrieval or autonomous research operation is registered.",
+    "mechanism_model_mapping": "PARTIAL_BOUNDED through collision and claim validation; no dedicated general model-mapping operation is registered.",
+    "synthesis_open_question_generation": "PARTIAL_BOUNDED through collision and REOS LIGHT obligation coordination; no unconstrained synthesis/discovery operation is registered.",
+    "executor_orchestration": "STATUS_ONLY_NOT_CALLABLE; Reference Executor is REFERENCE_ONLY and live invocation is OWNER_DEFERRED."
+  },
+  "validation": {
+    "playbook_validator": "PASS playbooks=15 excluded=4 categories=11",
+    "focused_playbook_tests": "8/8 PASS",
+    "lifecycle_tests": "7/7 PASS",
+    "operating_method_tests": "11/11 PASS",
+    "generated_view_sha256": "2293a44dfb919deb1f704e453a102a263fa8bbbb8a1a4f2be5b4ab5b87138790",
+    "deterministic_second_render": "PASS identical SHA-256",
+    "json_schema": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "declared_step12_projection_residuals": [
+    "CENSUS_OUT_OF_DATE discovery.jsonl census.jsonl audit-queue.jsonl census-summary.json",
+    "NONFUNCTION_CLAIM_OUTPUT_DRIFT over the governed non-function projection set"
+  ],
+  "projection_policy": {
+    "closure_step": "12",
+    "ignore_or_skip_added": false,
+    "validator_weakened": false,
+    "projection_closure_claimed": false
+  },
+  "claim_ceiling": "Task148 candidate registry-derived playbook coverage and deterministic human-view evidence only; playbooks do not create capabilities, non-callable status items remain non-callable, generated guidance grants no side effect or epistemic authority, projections remain pending Step12, and nothing is Current on main."
+}

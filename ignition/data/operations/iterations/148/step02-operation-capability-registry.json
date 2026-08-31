@@ -1,0 +1,47 @@
+{
+  "schema_version": "ignition-148-step02-operation-capability-registry-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "02",
+  "status": "PASS",
+  "canonical_registry": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+  "schema": "ignition/schemas/operations/ignition-operation-capability-registry-r1.schema.json",
+  "validator": "ignition/tools/validate_ignition_operation_capability_registry.py",
+  "tests": "ignition/tests/test_ignition_operation_capability_registry.py",
+  "formal_main_baseline": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
+  "coverage": {
+    "operation_count": 18,
+    "pack_manifest_count": 4,
+    "pack_capability_count": 10,
+    "represented_pack_capability_count": 10,
+    "non_pack_operation_count": 8,
+    "status_values_represented": [
+      "CURRENT",
+      "CURRENT_BOUNDED",
+      "OWNER_DEFERRED",
+      "REFERENCE_ONLY",
+      "HISTORICAL",
+      "UNSUPPORTED"
+    ]
+  },
+  "critical_boundaries": {
+    "live_external_invocation": "OWNER_DEFERRED",
+    "reference_executor": "REFERENCE_ONLY",
+    "reos_full": "UNSUPPORTED",
+    "iteration_method_1_3": "HISTORICAL",
+    "iteration_method_1_4": "CURRENT",
+    "pack_bus": "DECLARATIVE_ROUTING_WITHOUT_HOOK_EXECUTION"
+  },
+  "validation": {
+    "schema_and_semantic_validator": "PASS",
+    "focused_unit_tests": "6/6 PASS",
+    "pack_registry_unit_tests": "6/6 PASS",
+    "pack_manifest_registry_validation": "PASS",
+    "open_obligation_registry_validation": "PASS_OPEN_1",
+    "source_and_check_paths_exist": true,
+    "pack_capability_exact_coverage": true,
+    "permission_mode_invariants": true,
+    "owner_deferred_live_boundary": true,
+    "git_diff_check": "PASS"
+  },
+  "claim_ceiling": "Task148 candidate registry construction and repository-local source-binding validation only; the registry performs no action, grants no authority and is not Current on main until accepted, merged and synchronized."
+}

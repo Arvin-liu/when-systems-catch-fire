@@ -15,8 +15,8 @@ REPO_ROOT = ROOT.parent
 PATH = ROOT / "STATE-CHANGELOG.md"
 PROFILE_PATH = ROOT / "data" / "operations" / "state-changelog-profile-r1.json"
 PROFILE_SCHEMA_VERSION = "state-changelog-profile-r1"
-EXPECTED_ENTRY_COUNT = 46
-EXPECTED_CURRENT_ORDINALS = [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46]
+EXPECTED_ENTRY_COUNT = 53
+EXPECTED_CURRENT_ORDINALS = list(range(27, EXPECTED_ENTRY_COUNT + 1))
 EXPECTED_HISTORICAL_COUNT = 26
 EXPECTED_LEGACY_COUNT = 6
 STRICT_FIELDS = [
@@ -51,6 +51,21 @@ def _validate_profile_contract(profile: dict, errors: list[str]) -> None:
         return
     expected_profiles = {
         "current-r1": ("current", STRICT_FIELDS, True),
+        "current-human-front-door-r1": (
+            "current",
+            ["main_state", "delta", "architecture_language", "phase_boundary", "production_handoff", "task_lineage", "obligation", "regression", "authority_and_automation", "next_read", "claim_ceiling"],
+            False,
+        ),
+        "current-homepage-simplification-r1": (
+            "current",
+            ["main_state", "delta", "homepage_boundary", "architecture_language", "task_lineage", "obligations", "epistemic_state", "claim_ceiling"],
+            False,
+        ),
+        "current-project-identity-r1": (
+            "current",
+            ["main_state", "architecture_boundary", "task_lineage", "current_boundary", "claim_ceiling"],
+            False,
+        ),
         "historical-current-r0": ("historical", STRICT_FIELDS, True),
         "historical-legacy-r0": ("historical", [], False),
     }
@@ -71,7 +86,13 @@ def _validate_profile_contract(profile: dict, errors: list[str]) -> None:
     ordinals = [item.get("ordinal") for item in entries if isinstance(item, dict)]
     if ordinals != list(range(1, EXPECTED_ENTRY_COUNT + 1)):
         errors.append("validation profile ordinals are not a complete ordered seal")
-    current = [item.get("ordinal") for item in entries if isinstance(item, dict) and item.get("profile") == "current-r1"]
+    current = [
+        item.get("ordinal")
+        for item in entries
+        if isinstance(item, dict)
+        and isinstance(profiles.get(item.get("profile")), dict)
+        and profiles[item["profile"]].get("kind") == "current"
+    ]
     historical = [item for item in entries if isinstance(item, dict) and str(item.get("profile", "")).startswith("historical-")]
     legacy = [item for item in entries if isinstance(item, dict) and item.get("profile") == "historical-legacy-r0"]
     if current != EXPECTED_CURRENT_ORDINALS:
@@ -248,7 +269,13 @@ def main() -> int:
         return 1
     profile, _ = _load_profile(PROFILE_PATH)
     entries = profile.get("entries", [])
-    current = sum(1 for item in entries if item.get("profile") == "current-r1")
+    definitions = profile.get("profiles", {})
+    current = sum(
+        1
+        for item in entries
+        if isinstance(definitions.get(item.get("profile")), dict)
+        and definitions[item["profile"]].get("kind") == "current"
+    )
     historical = sum(1 for item in entries if item.get("profile", "").startswith("historical-"))
     legacy = sum(1 for item in entries if item.get("profile") == "historical-legacy-r0")
     print(

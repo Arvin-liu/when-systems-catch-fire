@@ -150,7 +150,7 @@ def validate_contract(contract: dict[str, Any] | None = None) -> tuple[list[str]
     errors.extend(schema_errors(contract, SCHEMA_PATH))
     errors.extend(_require(contract, (
         "schema_version", "contract_id", "identity_epoch", "current_iteration_boundary",
-        "current_architecture_identity", "current_map", "current_method", "derived_metrics",
+        "current_architecture_identity", "current_map", "current_method", "current_operating_method", "derived_metrics",
         "current_facts_projection",
         "known_open_obligations", "authority_ceilings", "architecture_impact_handshake",
         "required_sync_surfaces", "concept_requirements",
@@ -220,6 +220,18 @@ def validate_contract(contract: dict[str, Any] | None = None) -> tuple[list[str]
             errors.append("current method marker is absent from its declared source")
     except Exception as exc:
         errors.append(f"cannot resolve current method: {exc}")
+
+    operating_method = contract.get("current_operating_method", {})
+    try:
+        operating_method_text = resolve_repo_path(operating_method["source_path"]).read_text(encoding="utf-8")
+        if operating_method.get("required_marker") not in operating_method_text:
+            errors.append("current operating method version marker is absent from its declared source")
+        if operating_method.get("identity_marker") not in operating_method_text:
+            errors.append("current operating method identity marker is absent from its declared source")
+        if operating_method.get("source_path") == method.get("source_path"):
+            errors.append("operating method and iteration method must have independent canonical sources")
+    except Exception as exc:
+        errors.append(f"cannot resolve current operating method: {exc}")
 
     metrics, metric_errors = derive_metrics(contract)
     errors.extend(metric_errors)

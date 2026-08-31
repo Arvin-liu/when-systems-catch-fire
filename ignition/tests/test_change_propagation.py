@@ -79,6 +79,16 @@ class ChangePropagationTests(unittest.TestCase):
                 "decision": "NO_CHANGE_WITH_REASON",
                 "reason": "Synthetic fixture is not a formal main merge; state-delta obligation is not triggered.",
             })
+        # Task148 adds the independent Operating Method as a Current-candidate
+        # synchronization surface. Historical Q32-derived synthetic requests do
+        # not change that method unless a case says so, but they must still make
+        # the current registry-required assessment explicit.
+        if not any(item["item_id"] == "method.operating" for item in request["surface_decisions"]):
+            request["surface_decisions"].append({
+                "item_id": "method.operating",
+                "decision": "NO_CHANGE_WITH_REASON",
+                "reason": "Synthetic fixture does not change the Task148 Operating Method candidate.",
+            })
         return request
 
     def test_a_method_version_change_reaches_front_doors_and_map(self):

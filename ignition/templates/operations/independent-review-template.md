@@ -1,6 +1,8 @@
 # Ignition Independent Review Template
 
-Current method contract: `ITERATION.md` 1.3.0; 1.2.0 is Historical. Current method 1.3.0 retains separate review, plan recomputation and authority-identity requirements for future changes.
+Eligibility gate: this review template applies to a repository mutation only after `OPERATING-METHOD.md` classified `REPOSITORY_CHANGE_RUN`; it does not turn a read-only user object into a change request.
+
+Repository-change sub-protocol: `ITERATION.md` 1.4.0; 1.3.0 is Historical. It retains separate review, plan recomputation and authority-identity requirements for future changes.
 
 Review target:
 

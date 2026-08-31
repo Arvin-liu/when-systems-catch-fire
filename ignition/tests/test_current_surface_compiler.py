@@ -25,6 +25,9 @@ class CurrentSurfaceCompilerTests(unittest.TestCase):
                 else:
                     self.assertIn("deprecated compatibility alias", block)
                 self.assertIn(self.snapshot["map"]["current_version"], block)
+                self.assertIn(self.snapshot["current_operating_method"]["identity"], block)
+                self.assertIn(self.snapshot["current_operating_method"]["version"], block)
+                self.assertIn(self.snapshot["current_method_version"], block)
                 self.assertIn("REMOTE_REF_OBSERVATION", block)
                 self.assertIn(compiler.BLOCK_END, block)
 
@@ -40,6 +43,11 @@ class CurrentSurfaceCompilerTests(unittest.TestCase):
 
     def test_render_is_byte_deterministic(self) -> None:
         self.assertEqual(compiler.render_block(self.snapshot, "human"), compiler.render_block(self.snapshot, "human"))
+
+    def test_iteration_and_operating_method_versions_are_not_overwritten(self) -> None:
+        self.assertEqual(self.snapshot["current_method_version"], "1.4.0")
+        self.assertEqual(self.snapshot["current_operating_method"]["version"], "1.0.0")
+        self.assertEqual(self.snapshot["current_operating_method"]["identity"], "IGNITION_OPERATING_METHOD_R1")
 
     def test_upsert_replaces_existing_block_without_duplicate(self) -> None:
         surface = {"surface_id": "test", "profile": "human", "insert_after": "## 1."}

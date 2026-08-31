@@ -1,0 +1,140 @@
+{
+  "schema_version": "ignition-operating-lifecycle-planning-fixtures-r1",
+  "authority": "TEST_FIXTURES_NOT_METHOD_AUTHORITY",
+  "cases": [
+    {
+      "case_id": "current_operation_proceeds",
+      "request": {
+        "request_envelope": {"user_request": "请先恢复点火 Current 状态。"},
+        "input_objects": []
+      },
+      "operation_id": "ignition.recover_current_state",
+      "current_ref": "refs/heads/main@example-current",
+      "expected": {
+        "run_mode": "READ_ONLY_RUN",
+        "operation_status": "CURRENT",
+        "decision": "PROCEED",
+        "stop_reason": null,
+        "side_effects_authorized_by_plan": false
+      }
+    },
+    {
+      "case_id": "bounded_operation_proceeds_bounded",
+      "request": {
+        "request_envelope": {"user_request": "请核查这个断言。"},
+        "input_objects": [{"object_type": "CLAIM", "content": "候选断言"}]
+      },
+      "operation_id": "knowledge.validate_claim",
+      "current_ref": "refs/heads/main@example-current",
+      "expected": {
+        "run_mode": "READ_ONLY_RUN",
+        "operation_status": "CURRENT_BOUNDED",
+        "decision": "PROCEED_BOUNDED",
+        "stop_reason": null
+      }
+    },
+    {
+      "case_id": "owner_deferred_stops",
+      "request": {
+        "request_envelope": {"user_request": "请调用外部 Agent 执行只读任务。"},
+        "input_objects": [{"object_type": "TASK", "content": "probe"}]
+      },
+      "operation_id": "external.live_invocation",
+      "current_ref": "refs/heads/main@example-current",
+      "expected": {
+        "run_mode": "EXTERNAL_ACTION_RUN",
+        "operation_status": "OWNER_DEFERRED",
+        "decision": "STOP",
+        "stop_reason": "CAPABILITY_OWNER_DEFERRED",
+        "side_effects_authorized_by_plan": false
+      }
+    },
+    {
+      "case_id": "reference_only_stops",
+      "request": {
+        "request_envelope": {"user_request": "请使用 Reference Executor。"},
+        "input_objects": []
+      },
+      "operation_id": "executor.reference_conformance",
+      "current_ref": "refs/heads/main@example-current",
+      "expected": {
+        "operation_status": "REFERENCE_ONLY",
+        "decision": "STOP",
+        "stop_reason": "CAPABILITY_REFERENCE_ONLY"
+      }
+    },
+    {
+      "case_id": "historical_operation_not_current",
+      "request": {
+        "request_envelope": {"user_request": "请使用迭代操作法 1.3.0。"},
+        "input_objects": []
+      },
+      "operation_id": "repository.apply_iteration_method_1_3",
+      "current_ref": "refs/heads/main@example-current",
+      "expected": {
+        "operation_status": "HISTORICAL",
+        "decision": "STOP",
+        "stop_reason": "CAPABILITY_NOT_CURRENT"
+      }
+    },
+    {
+      "case_id": "unsupported_reos_full_stops",
+      "request": {
+        "request_envelope": {"user_request": "请运行 REOS FULL。"},
+        "input_objects": []
+      },
+      "operation_id": "research.reos_full",
+      "current_ref": "refs/heads/main@example-current",
+      "expected": {
+        "operation_status": "UNSUPPORTED",
+        "decision": "STOP",
+        "stop_reason": "UNSUPPORTED_OPERATION"
+      }
+    },
+    {
+      "case_id": "unknown_operation_stops",
+      "request": {
+        "request_envelope": {"user_request": "请运行不存在的点火能力。"},
+        "input_objects": []
+      },
+      "operation_id": "ignition.nonexistent_operation",
+      "current_ref": "refs/heads/main@example-current",
+      "expected": {
+        "operation_status": "UNREGISTERED",
+        "decision": "STOP",
+        "stop_reason": "UNSUPPORTED_OPERATION"
+      }
+    },
+    {
+      "case_id": "repository_mode_mismatch_stops",
+      "request": {
+        "request_envelope": {"user_request": "请分析点火目前怎样修改自己。"},
+        "input_objects": []
+      },
+      "operation_id": "repository.apply_iteration_method",
+      "current_ref": "refs/heads/main@example-current",
+      "expected": {
+        "run_mode": "READ_ONLY_RUN",
+        "operation_status": "CURRENT",
+        "decision": "STOP",
+        "stop_reason": "OPERATION_MODE_MISMATCH"
+      }
+    },
+    {
+      "case_id": "explicit_repository_change_routes_iteration",
+      "request": {
+        "request_envelope": {"user_request": "请给点火增加一个新操作协议。"},
+        "input_objects": []
+      },
+      "operation_id": "repository.apply_iteration_method",
+      "current_ref": "refs/heads/main@example-current",
+      "expected": {
+        "run_mode": "REPOSITORY_CHANGE_RUN",
+        "operation_status": "CURRENT",
+        "decision": "PROCEED",
+        "stop_reason": null,
+        "side_effects_authorized_by_plan": false
+      }
+    }
+  ]
+}

@@ -10,7 +10,7 @@
     "component_registry": "data/operations/project-components.json",
     "propagation_topology": "data/operations/change-propagation-topology.json",
     "layout_overlay": "data/architecture/interactive-system-map-layout.json",
-    "component_registry_version": "2.4.0",
+    "component_registry_version": "2.6.0",
     "topology_version": "1.13.0",
     "layout_version": "2.0.0"
   },
@@ -1710,13 +1710,14 @@
     }
   ],
   "component_coverage": {
-    "registry_components": 99,
+    "registry_components": 100,
     "visible_nodes": 87,
-    "hidden_components": 12,
+    "hidden_components": 13,
     "hidden_representatives": {
       "foundation_data": "foundation",
       "historical_reports": "current_state",
       "incremental_execution": "iteration",
+      "ignition_operating_method": "ai_guide",
       "stage_snapshot_publication": "iteration",
       "iteration_manifest_contract": "iteration",
       "project_component_registry": "sync",

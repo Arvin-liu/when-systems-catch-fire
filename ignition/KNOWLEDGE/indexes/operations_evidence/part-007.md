@@ -4,6 +4,451 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [提供跨域同构识别：不同金融危机的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8d5ada6d58758a0f / 提供跨域同构识别：不同金融危机的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供跨域同构识别：中国王朝周期与其他帝国周期性的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5bb08e4b13d10d80 / 提供跨域同构识别：中国王朝周期与其他帝国周期性的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供跨域同构识别：工业革命与其他技术革命的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-1709cb2bf8a13e4d / 提供跨域同构识别：工业革命与其他技术革命的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [提供跨域同构识别：现代艺术与科学范式转移、制度变迁、媒介变化的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-221d7b8d1d88e492 / 提供跨域同构识别：现代艺术与科学范式转移、制度变迁、媒介变化的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [提供跨域同构识别：罗马帝国衰亡与其他帝国衰亡的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8b74960539d0f70e / 提供跨域同构识别：罗马帝国衰亡与其他帝国衰亡的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [文字说明：** 决策权与信息权的对称性是元协议2，描述局部信息如何对应局部决策。它通过分布式权威和网络拓扑，形成对称的决策结构。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-19dfb3ab1c36d1d9 / 文字说明：** 决策权与信息权的对称性是元协议2，描述局部信息如何对应局部决策。它通过分布式权威和网络拓扑，形成对称的决策结构。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [文字说明：** 判定标准分为正向判定J⁺和负向判定J⁻。J⁺=1表示同构性清晰，J⁻=0表示传递性一致。只有当J⁺=1且J⁻=0时，同构判定才通过。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a88af1e1a71003e4 / 文字说明：** 判定标准分为正向判定J⁺和负向判定J⁻。J⁺=1表示同构性清晰，J⁻=0表示传递性一致。只有当J⁺=1且J⁻=0时，同构判定才通过。
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [新分支：records/ignition-087-unesco-discipline-projection-gap-closure-20260713](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-bf37d7c084db9e48 / 新分支：records/ignition-087-unesco-discipline-projection-gap-closure-20260713
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [新增案例候选 · P1 接入烟雾测试](../../ASSET-CARDS.md#asset-hr-104843eaeaebb434)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：新增案例候选 · P1 接入烟雾测试 / new-cases
+  - 来源：`outputs/collisions/20260708-smoke-test/new-cases.md`
+  - 依赖：—；被引用：—
+- [新增注释 · P1 接入烟雾测试](../../ASSET-CARDS.md#asset-hr-4597e4725744281a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：新增注释 · P1 接入烟雾测试 / notes
+  - 来源：`outputs/collisions/20260708-smoke-test/notes.md`
+  - 依赖：—；被引用：—
+- [新故事索引表（2026年07月06日03时06分，故事总数 1）](../../ASSET-CARDS.md#asset-hr-ad59534793e1d1d7)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：新故事索引表（2026年07月06日03时06分，故事总数 1） / INDEX
+  - 来源：`新故事/INDEX.md`
+  - 依赖：—；被引用：—
+- [无需预知路径的 canonical 入口已经迁移到\[点火知识入口\]\(./KNOWLEDGE/README.md\)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必](../../../HUMAN-READING.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1884493a96704d23 / 无需预知路径的 canonical 入口已经迁移到\[点火知识入口\]\(./KNOWLEDGE/README.md\)。本页保留十分钟阅读路线；它与机器注册表并行，但不要求读者先理解 JSON、JSONL、schema 或 CI。任何机器记录都必
+  - 来源：`HUMAN-READING.md`
+  - 依赖：—；被引用：—
+- [旧条目每周维护时逐步补齐**：在碰撞/维护触及时，顺手补齐"边界条件/适用条件/反例/对应案例/版本记录"等缺失字段，不主动大面积重排。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3e2634d19f55d4da / 旧条目每周维护时逐步补齐**：在碰撞/维护触及时，顺手补齐"边界条件/适用条件/反例/对应案例/版本记录"等缺失字段，不主动大面积重排。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [是否缺少对应案例**：全部缺"对应案例"结构化字段（但 C-0807~C-0809 反向引用了 D595-D599，说明关联存在，仅未正向登记）。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2e33615ffec95b56 / 是否缺少对应案例**：全部缺"对应案例"结构化字段（但 C-0807~C-0809 反向引用了 D595-D599，说明关联存在，仅未正向登记）。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：D595, D599；被引用：—
+- [是（适合作为跨域同构识别的样本）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-00d0e4a98efdc828 / 是（适合作为跨域同构识别的样本）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FEF855692D34E196 / 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能 / IMPLICIT-FEF855692D34E196
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [最终同构性判定：** J⁺=1, J⁻=0 → 真收敛](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2a9c25011e13ee78 / 最终同构性判定：** J⁺=1, J⁻=0 → 真收敛
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [最近邻反事实：D595 是绩效/待遇/组织资源绑定架空退出权；D600 是代际/亲密关系中**正向支持**退化为控制。给一个富裕但无权无势的父母「为你好」式路径控制，D595 不触发、D600 触发 → 预测不同。不可约差异成立。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bc3ae5037002d6da / 最近邻反事实：D595 是绩效/待遇/组织资源绑定架空退出权；D600 是代际/亲密关系中**正向支持**退化为控制。给一个富裕但无权无势的父母「为你好」式路径控制，D595 不触发、D600 触发 → 预测不同。不可约差异成立。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：D595, D600；被引用：—
+- [本步把 full suite 前的 generated-output cleanliness 变成显式、只读、可机器判定的 preflight。`tools/run_projection_preflight.py --check` 从自身路](../../../reports/operations/ignition-135-step02-projection-preflight.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-32084ed04ec2bf41 / 本步把 full suite 前的 generated-output cleanliness 变成显式、只读、可机器判定的 preflight。`tools/run_projection_preflight.py --check` 从自身路
+  - 来源：`reports/operations/ignition-135-step02-projection-preflight.md`
+  - 依赖：—；被引用：—
+- [本步的 stale fixtures 位于 `ignition/data/operations/iterations/135/step02-projection-preflight-fixtures-r1.json`。fixture con](../../../reports/operations/ignition-135-step02-projection-preflight.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d7d6ad9bb5ae1445 / 本步的 stale fixtures 位于 `ignition/data/operations/iterations/135/step02-projection-preflight-fixtures-r1.json`。fixture con
+  - 来源：`reports/operations/ignition-135-step02-projection-preflight.md`
+  - 依赖：—；被引用：—
+- [本目录是点火项目「元协议生成框架」的文档层，对应 `data/meta-protocols/` 数据层、`templates/` 模板层。](../../../docs/meta-protocols/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-6c8b6740d3bee543 / 本目录是点火项目「元协议生成框架」的文档层，对应 `data/meta-protocols/` 数据层、`templates/` 模板层。
+  - 来源：`docs/meta-protocols/README.md`
+  - 依赖：—；被引用：—
+- [材料分层图（source-layer-map）](../../ASSET-CARDS.md#asset-hr-bcc48ae7649ea4fe)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：材料分层图（source-layer-map） / source-layer-map
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
+  - 依赖：—；被引用：—
+- [来源中的证据语气在目标语言没有一对一形态对应；](../../../docs/language-thought/translation-and-residue.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e6909c42c40ffcdd / 来源中的证据语气在目标语言没有一对一形态对应；
+  - 来源：`docs/language-thought/translation-and-residue.md`
+  - 依赖：—；被引用：—
+- [来源清单](../../ASSET-CARDS.md#asset-hr-37c1dabc2f087f11)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：来源清单 / source-manifest
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/source-manifest.md`
+  - 依赖：—；被引用：—
+- [标记可能的失败类型：过度类比、证据不足、层级误置、概念漂移等。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bad77e3124f8231b / 标记可能的失败类型：过度类比、证据不足、层级误置、概念漂移等。
+  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
+  - 依赖：—；被引用：—
+- [核心案例：生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-0031874d337f4ab0 / 核心案例：生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
+  - 依赖：—；被引用：—
+- [核心案例：破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-36762869a4ccba39 / 核心案例：破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。
+  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
+  - 依赖：—；被引用：—
+- [框架发现能力，Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-328EDCBB13541AF8 / 框架发现能力，Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。 / IMPLICIT-328EDCBB13541AF8
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [框架跨域同构识别能力：**通过**。](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-48f713ff2a2d2b25 / 框架跨域同构识别能力：**通过**。
+  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [模糊相关命中（已逐条核对边界，均非同构）：](../../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-27e200b6811a088d / 模糊相关命中（已逐条核对边界，均非同构）：
+  - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
+  - 依赖：—；被引用：—
+- [点火框架接收外部学科输入时，先按 gap 路由到对应 object_type 接口；接口仅承载外部理论的结构化表示，不参与 Ψ₀ 核心判定；核心判定仍由 Ψ₀ 六组件执行。](../../../data/external-research/096-clm-alignment-layer-v2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-bd21ee94b6df12bc / 点火框架接收外部学科输入时，先按 gap 路由到对应 object_type 接口；接口仅承载外部理论的结构化表示，不参与 Ψ₀ 核心判定；核心判定仍由 Ψ₀ 六组件执行。
+  - 来源：`data/external-research/096-clm-alignment-layer-v2.md`
+  - 依赖：—；被引用：—
+- [热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-868E3234B2BEC52B / 热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-868E3234B2BEC52B
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [独立反事实同构判别（不可依赖 grep 零命中）](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-398e17fa8444189a / 独立反事实同构判别（不可依赖 grep 零命中）
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [独立复核主报告：脱不花×李丹阳长谈碰撞（IGNITION-20260709-056 第二视角）](../../ASSET-CARDS.md#asset-hr-052d55fd7ec8bacd)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：独立复核主报告：脱不花×李丹阳长谈碰撞（IGNITION-20260709-056 第二视角） / independent-second-angle-audit-056
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：—；被引用：—
+- [生命共同体价值审查（life-community-value-audit）](../../ASSET-CARDS.md#asset-hr-f8c21cd0cd6a1f34)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：生命共同体价值审查（life-community-value-audit） / life-community-value-audit
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md`
+  - 依赖：—；被引用：—
+- [生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）](../../ASSET-CARDS.md#asset-hr-1bf6463b42d7824f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1） / lifecycle-audit-108
+  - 来源：`reports/operations/lifecycle-audit-108.md`
+  - 依赖：—；被引用：—
+- [用 failure_typology 的 `symptom` 检查碰撞过程是否出现对应失败模式。](../../../docs/p1-data-index-map-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-f7ce6a90addb464c / 用 failure_typology 的 `symptom` 检查碰撞过程是否出现对应失败模式。
+  - 来源：`docs/p1-data-index-map-20260708.md`
+  - 依赖：—；被引用：—
+- [用户阶段摘要出现 181/252，但 087 全部产物中：权威学科总数=250（非252），且无任何 181 计数或 252 分母字段。252 可能为另一份 UNESCO 总表口径，181 在 087 内无对应物。](../../../data/external-research/088-087-count-reconciliation.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cf30908cbfb6f9e5 / 用户阶段摘要出现 181/252，但 087 全部产物中：权威学科总数=250（非252），且无任何 181 计数或 252 分母字段。252 可能为另一份 UNESCO 总表口径，181 在 087 内无对应物。
+  - 来源：`data/external-research/088-087-count-reconciliation.json`
+  - 依赖：—；被引用：—
+- [碰撞证据链：不听话的人 × 点火两张表（20260711）](../../ASSET-CARDS.md#asset-hr-628b84a2327f5c52)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：碰撞证据链：不听话的人 × 点火两张表（20260711） / README
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：—；被引用：—
+- [碰撞输出报告 · P1 接入烟雾测试](../../ASSET-CARDS.md#asset-hr-53733a2aa5cf5dd7)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：碰撞输出报告 · P1 接入烟雾测试 / collision-report
+  - 来源：`outputs/collisions/20260708-smoke-test/collision-report.md`
+  - 依赖：—；被引用：—
+- [禁止无定义的“同构度 75%”“相似度 80%”或其它看似精确的关系分数。任何定量值必须同时声明 metric 名称、单位、定义域、计算方法和验证方法；否则不输出数字，只给定性关系与 unresolved boundary。](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a1b4d43ad5518c09 / 禁止无定义的“同构度 75%”“相似度 80%”或其它看似精确的关系分数。任何定量值必须同时声明 metric 名称、单位、定义域、计算方法和验证方法；否则不输出数字，只给定性关系与 unresolved boundary。
+  - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
+- [第一批回填审计：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`（D595 已将 NF-001 入表，NC-001 可对应）](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cd0369f8c6f3816a / 第一批回填审计：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`（D595 已将 NF-001 入表，NC-001 可对应）
+  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
+  - 依赖：D595；被引用：—
+- [约束条件：g_i\(x\) ≤ 0, h_j\(x\) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5FA5FC22EE630E05 / 约束条件：g_i\(x\) ≤ 0, h_j\(x\) = 0 / IMPLICIT-5FA5FC22EE630E05 / IMPLICIT-80957DA18DE64A01
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [约束条件：g_i\(x\) ≤ 0, h_j\(x\) = 0](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-80957DA18DE64A01 / 约束条件：g_i\(x\) ≤ 0, h_j\(x\) = 0 / IMPLICIT-80957DA18DE64A01 / IMPLICIT-5FA5FC22EE630E05
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [约束：∃i, x_i = 0 ⇒ G₁\(x\) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-65B93CCE80652BA5 / 约束：∃i, x_i = 0 ⇒ G₁\(x\) = 0 / IMPLICIT-65B93CCE80652BA5 / IMPLICIT-B2A81D8E3CB688FF
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [约束：∃i, x_i = 0 ⇒ G₁\(x\) = 0](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B2A81D8E3CB688FF / 约束：∃i, x_i = 0 ⇒ G₁\(x\) = 0 / IMPLICIT-B2A81D8E3CB688FF / IMPLICIT-65B93CCE80652BA5
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [约束：∃i, x_i = 0 ⇒ M₁\(x\) = 0](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-864C55E012FB95BA / 约束：∃i, x_i = 0 ⇒ M₁\(x\) = 0 / IMPLICIT-864C55E012FB95BA / IMPLICIT-BF396655A112545A
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [约束：∃i, x_i = 0 ⇒ M₁\(x\) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BF396655A112545A / 约束：∃i, x_i = 0 ⇒ M₁\(x\) = 0 / IMPLICIT-BF396655A112545A / IMPLICIT-864C55E012FB95BA
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [约束：∃i, x_i = 0 ⇒ U₁\(x\) = 0](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6823090CA011969C / 约束：∃i, x_i = 0 ⇒ U₁\(x\) = 0 / IMPLICIT-6823090CA011969C / IMPLICIT-CE0BA13DBB28DB07
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [约束：∃i, x_i = 0 ⇒ U₁\(x\) = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CE0BA13DBB28DB07 / 约束：∃i, x_i = 0 ⇒ U₁\(x\) = 0 / IMPLICIT-CE0BA13DBB28DB07 / IMPLICIT-6823090CA011969C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [经典问题 benchmark 卡片：叙事为什么能改变人的理解](../../ASSET-CARDS.md#asset-hr-d2f7959438110a91)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：经典问题 benchmark 卡片：叙事为什么能改变人的理解 / classic-problems-benchmark-supplement-20260707
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [经典问题 benchmark 卡片：黎曼猜想](../../ASSET-CARDS.md#asset-hr-a8550987d2a41dab)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：经典问题 benchmark 卡片：黎曼猜想 / classic-problems-benchmark-draft-20260706
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [结构同构不能替代具体历史语境；](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d622606e20e17fff / 结构同构不能替代具体历史语境；
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
+- [结论：D244 与「量化指标替代真实价值」**无关、不同构、无重叠**。原复核报告「需与 D244 查重边界」的前提不成立。](../../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1509c82a1677f618 / 结论：D244 与「量化指标替代真实价值」**无关、不同构、无重叠**。原复核报告「需与 D244 查重边界」的前提不成立。
+  - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
+  - 依赖：D244；被引用：—
+- [已迁移的历史案例来源/0171-C-171-AI直觉缺失的物种判据.md](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D68 / 已迁移的历史案例来源/0171-C-171-AI直觉缺失的物种判据.md / D68
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：NFC-0b05adc9116ac6ea
+- [已迁移的历史案例来源/0315-C-315-异地恋断裂 — μ翻转导致dcritical从2000km缩到50km,不是距离变了是临界距离变了.md](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D78 / 已迁移的历史案例来源/0315-C-315-异地恋断裂 — μ翻转导致dcritical从2000km缩到50km,不是距离变了是临界距离变了.md / D78
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：NFC-037eb47d38a73989, NFC-227da73d85c88cb4, NFC-5a8872ad89646d1e, NFC-ac875e0653a09a26
+- [已迁移的历史案例来源/0319-C-319-多数人的直觉闪念 — Mboot被外部扰动推到-0但ΔK太小,正反馈强度不够,被日常消耗拉回0.md](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D79 / 已迁移的历史案例来源/0319-C-319-多数人的直觉闪念 — Mboot被外部扰动推到-0但ΔK太小,正反馈强度不够,被日常消耗拉回0.md / D79
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：NFC-65e465031f885d73, NFC-7691e2b92589bd11, NFC-a47e3ea6abe37305, NFC-ab882cf39b845cf6
+- [已迁移的历史案例来源/0323-C-323-AI同质化训练的遮蔽 — 两个GPT-4实例对话,G≈1,Hhomogeneity≈1,ηgate≈0,对话流畅但信息增量为零.md](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D80 / 已迁移的历史案例来源/0323-C-323-AI同质化训练的遮蔽 — 两个GPT-4实例对话,G≈1,Hhomogeneity≈1,ηgate≈0,对话流畅但信息增量为零.md / D80
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：NFC-06ad20dbab3ef509, NFC-25dc0aaf3160cf42, NFC-2b3622813a3ce0b8, NFC-31cb89435418bc62
+- [已迁移的历史案例来源/0327-C-327-炒股遮蔽的跨域放大 — Boccupy.md](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D83 / 已迁移的历史案例来源/0327-C-327-炒股遮蔽的跨域放大 — Boccupy.md / D83
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [缺口→补丁投影（证据门槛全部达标）](../../../data/external-research/088-PROGRESS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-3d86719daa69ae95 / 缺口→补丁投影（证据门槛全部达标）
+  - 来源：`data/external-research/088-PROGRESS.md`
+  - 依赖：—；被引用：—
+- [缺对应案例正向登记。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-118c4050e646b5ae / 缺对应案例正向登记。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [能清楚区分 FACT / NORM / ANALOGY](../../../outputs/research/role-identity-collision-batches-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1edd6f3f02e72f68 / 能清楚区分 FACT / NORM / ANALOGY
+  - 来源：`outputs/research/role-identity-collision-batches-20260712.md`
+  - 依赖：—；被引用：—
+- [角色—身份—主体性补全书单（2026-07）](../../ASSET-CARDS.md#asset-hr-3a14f1ddbf2ed824)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：角色—身份—主体性补全书单（2026-07） / role-identity-subjectivity-reading-list-20260712
+  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
+  - 依赖：—；被引用：—
+- [角色—身份碰撞批次路线](../../ASSET-CARDS.md#asset-hr-49dd491e1cd0cf42)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：角色—身份碰撞批次路线 / role-identity-collision-batches-20260712
+  - 来源：`outputs/research/role-identity-collision-batches-20260712.md`
+  - 依赖：—；被引用：—
+- [让跨域同构看起来成立，实际上只是边界错位。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-84b32912ad35f739 / 让跨域同构看起来成立，实际上只是边界错位。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [记录该场景与预测差异。](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-40d8306099ced18c / 记录该场景与预测差异。
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [跨域 smoke test — 社会学碰撞报告](../../ASSET-CARDS.md#asset-hr-6106e26409ecfa79)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：跨域 smoke test — 社会学碰撞报告 / collision-report
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
+  - 依赖：—；被引用：—
+- [跨域 smoke test — 自然科学碰撞报告](../../ASSET-CARDS.md#asset-hr-7dfd6b8ed7333b2a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：跨域 smoke test — 自然科学碰撞报告 / collision-report
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
+  - 依赖：—；被引用：—
+- [跨域 smoke test — 跨域同构汇总](../../ASSET-CARDS.md#asset-hr-aee11399d5cfd399)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：跨域 smoke test — 跨域同构汇总 / cross-domain-synthesis
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md`
+  - 依赖：—；被引用：—
+- [跨域 smoke test — 跨域同构汇总](../../../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-f3d03e2e41dc8e8b / 跨域 smoke test — 跨域同构汇总
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md`
+  - 依赖：—；被引用：—
+- [跨域 smoke test 审计](../../ASSET-CARDS.md#asset-hr-52502d2b9c02b338)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：跨域 smoke test 审计 / cross-domain-smoke-test-audit-20260708
+  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [跨域同构映射需要进一步验证，确保映射的准确性](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2eda6e05b7cba801 / 跨域同构映射需要进一步验证，确保映射的准确性
+  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
+  - 依赖：—；被引用：—
+- [跨域同构碰撞；](../../../outputs/getbrain/project-position-update-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-7b3c6cf6ca8f0c43 / 跨域同构碰撞；
+  - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
+- [跨域同构识别结果](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-d6b92f3a53a48fb5 / 跨域同构识别结果
+  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [跨域同构识别：L1](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-63d968eb0cd08b03 / 跨域同构识别：L1
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [跨域同构识别；](../../../outputs/getbrain/project-position-update-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-af5747b95b95b176 / 跨域同构识别；
+  - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
+- [路由规则：检索外部理论时，先按 gap_id 路由到对应 object_type 接口与已验真来源；无对应验真源则拒答并提示补全。](../../../data/external-research/102-prompt-retrieval-router.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8603b9a1128cdd14 / 路由规则：检索外部理论时，先按 gap_id 路由到对应 object_type 接口与已验真来源；无对应验真源则拒答并提示补全。
+  - 来源：`data/external-research/102-prompt-retrieval-router.md`
+  - 依赖：—；被引用：—
+- [身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。](../../ASSET-CARDS.md#asset-nfc-a50fdd39601af897)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a50fdd39601af897 / 身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。 / 身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [身份、当前任务、方法、地图、状态和 lineage 由下方 generated Current Snapshot 统一投影。](../../ASSET-CARDS.md#asset-nfc-4e59b068b13c91fe)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-4e59b068b13c91fe / 身份、当前任务、方法、地图、状态和 lineage 由下方 generated Current Snapshot 统一投影。 / 身份、当前任务、方法、地图、状态和 lineage 由下方 generated Current Snapshot 统一投影。
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
+- [转换时**缺字段必须标注"缺失"或"pending"**，不得擅自补成确定结论（尤其边界、反例、对应案例）。](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a1ede458641827a6 / 转换时**缺字段必须标注"缺失"或"pending"**，不得擅自补成确定结论（尤其边界、反例、对应案例）。
+  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [输入材料快照 · P1 接入烟雾测试](../../ASSET-CARDS.md#asset-hr-6ff393d82ba46184)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：输入材料快照 · P1 接入烟雾测试 / source-snapshot
+  - 来源：`outputs/collisions/20260708-smoke-test/source-snapshot.md`
+  - 依赖：—；被引用：—
+- [输入材料本身是本次工程操作的复盘，案例表已有更直接对应的救援流程案例（Codespace 救援闭环），不构成必须新增的独立案例。](../../../outputs/collisions/20260708-smoke-test/new-cases.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0c2c1e492dc77329 / 输入材料本身是本次工程操作的复盘，案例表已有更直接对应的救援流程案例（Codespace 救援闭环），不构成必须新增的独立案例。
+  - 来源：`outputs/collisions/20260708-smoke-test/new-cases.md`
+  - 依赖：—；被引用：—
+- [边界扩展（不新增编号）：D595（M1 同构扩展）、D583（M6 反向约束边）](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-29677b1a7c718daf / 边界扩展（不新增编号）：D595（M1 同构扩展）、D583（M6 反向约束边）
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
+  - 依赖：D583, D595；被引用：—
+- [这不是宣传层，也不是把漂亮类比反向当成证据的捷径。它是一层受审计约束的表达层。](../../../docs/narrative-output-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7ddb11c78fa42778 / 这不是宣传层，也不是把漂亮类比反向当成证据的捷径。它是一层受审计约束的表达层。
+  - 来源：`docs/narrative-output-layer.md`
+  - 依赖：—；被引用：—
+- [这个旧编号现在对应什么？](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-9e2337620f5bf55c / 这个旧编号现在对应什么？
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
+- [迭代生命周期模型（事件溯源 · 任务 108 引入）](../../ASSET-CARDS.md#asset-hr-f3d97a665e74558a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：迭代生命周期模型（事件溯源 · 任务 108 引入） / lifecycle-readme
+  - 来源：`docs/operations/lifecycle-readme.md`
+  - 依赖：—；被引用：—
+- [适用对象：088-patch-library, 096-clm-alignment-layer, 所有外部理论投影](../../../data/external-research/101-anti-hallucination-gate.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-5176582e60f07107 / 适用对象：088-patch-library, 096-clm-alignment-layer, 所有外部理论投影
+  - 来源：`data/external-research/101-anti-hallucination-gate.md`
+  - 依赖：—；被引用：—
+- [阶段 3：投影矩阵 ✅ COMPLETE \(250/250\)](../../../data/discipline-projection/087-execution-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-fa12301fc4aa2533 / 阶段 3：投影矩阵 ✅ COMPLETE \(250/250\)
+  - 来源：`data/discipline-projection/087-execution-report.md`
+  - 依赖：—；被引用：—
+- [阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-](../../../AI-START-HERE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-2ca4a09d5a0a3a8c / 阶段成果展示在专用页 `docs/generated/recent-stage-results.md`（“正在炼化 / Recent Stage Results”）；若需了解阶段快照，必须读取 `data/operations/stage-
+  - 来源：`AI-START-HERE.md`
+  - 依赖：—；被引用：—
 - [阻断在 task-111 投影之外，并通过 110 的权威 OpenAlex result 将 C-03 识别为已完成 partial；](../../../ITERATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-2d40a1bf779ba05a / 阻断在 task-111 投影之外，并通过 110 的权威 OpenAlex result 将 C-03 识别为已完成 partial；

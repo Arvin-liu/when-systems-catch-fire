@@ -25,6 +25,7 @@ OUT = ROOT / "data/governance/knowledge-experience"
 HUMAN = ROOT / "KNOWLEDGE"
 FIRST_SEEN_PATH = OUT / "source-first-seen.json"
 CARD_SHARD_SIZE = 50
+LAYER_SHARD_SIZE = 50
 
 # Public knowledge products may quote source text, but they must not carry
 # machine-local provenance into the repository surface. The source registries
@@ -739,20 +740,31 @@ def render_card_chunk(cards: list[dict], index: int) -> str:
     return markdown(lines)
 
 
-def render_layers(layers: list[dict]) -> str:
-    lines = ["# 分层阅读", "", "每项都提供 1 分钟、5 分钟和完整来源。1/5 分钟层由来源文本确定性提取，只用于定位；如与完整来源或现行裁决冲突，以后两者为准。", ""]
+def render_layers(layers: list[dict], chunks: list[list[dict]]) -> str:
+    locations = {
+        row["asset_id"]: f"./reading-layers/part-{index:03d}.md#{row['human_anchor']}"
+        for index, chunk in enumerate(chunks, 1)
+        for row in chunk
+    }
+    lines = ["# 分层阅读", "", "每项都提供 1 分钟、5 分钟和完整来源。正文按固定 50 项分片，避免单页超过 GitHub 渲染预算；本页保留每项稳定锚点与直达链接。1/5 分钟层只用于定位，如与完整来源或现行裁决冲突，以后两者为准。", ""]
     for row in layers:
-        # Keep all extracted points but render each layer as one compact record.
-        # The knowledge ledger has grown beyond the original corpus size; this
-        # preserves two-click navigation while keeping the human page below its
-        # deterministic render budget.
+        lines.extend([
+            f"<a id=\"{row['human_anchor']}\"></a>",
+            f"- [{md(row['title'])}]({locations[row['asset_id']]}) — `{row['status']}` · {', '.join(f'`{item}`' for item in row['subjects'])}",
+        ])
+    return markdown(lines)
+
+
+def render_layer_chunk(layers: list[dict], index: int) -> str:
+    lines = [f"# 分层阅读 · 第 {index:03d} 片", "", "1/5 分钟层由来源文本确定性提取，只用于定位；如与完整来源或现行裁决冲突，以后两者为准。", "", "[返回分层阅读总索引](../READING-LAYERS.md)", ""]
+    for row in layers:
         lines.extend([
             f"<a id=\"{row['human_anchor']}\"></a>",
             f"## {row['title']}",
             f"`{row['status']}` · {', '.join(f'`{item}`' for item in row['subjects'])}",
             f"- 1 分钟：{row['one_minute']}",
             f"- 5 分钟：{'；'.join(point.replace('来源要点（导航摘录，不得视为当前断言）：', '') for point in row['five_minute_points'])}",
-            f"- 完整阅读：[{row['canonical_source']}]({href(row['full_reading'])})",
+            f"- 完整阅读：[{row['canonical_source']}]({href(row['full_reading'], 2)})",
             "",
         ])
     return markdown(lines)
@@ -815,6 +827,7 @@ def render_coverage(coverage: dict) -> str:
 
 def output_map(data: dict, config: dict) -> dict[Path, str]:
     card_chunks = [data["cards"][index:index + CARD_SHARD_SIZE] for index in range(0, len(data["cards"]), CARD_SHARD_SIZE)] or [[]]
+    layer_chunks = [data["layers"][index:index + LAYER_SHARD_SIZE] for index in range(0, len(data["layers"]), LAYER_SHARD_SIZE)] or [[]]
     products: dict[Path, str] = {
         OUT / "asset-cards.jsonl": "".join(canonical_json(row) + "\n" for row in data["cards"]),
         OUT / "changes.jsonl": "".join(canonical_json(row) + "\n" for row in data["changes"]),
@@ -826,13 +839,15 @@ def output_map(data: dict, config: dict) -> dict[Path, str]:
         HUMAN / "WHATS-NEW.md": relink_in_file(render_changes(data["changes"], config), HUMAN / "WHATS-NEW.md"),
         HUMAN / "MAP.md": relink_in_file(render_map(data, config), HUMAN / "MAP.md"),
         HUMAN / "ASSET-CARDS.md": relink_in_file(render_cards_landing(data["cards"], card_chunks), HUMAN / "ASSET-CARDS.md"),
-        HUMAN / "READING-LAYERS.md": relink_in_file(render_layers(data["layers"]), HUMAN / "READING-LAYERS.md"),
+        HUMAN / "READING-LAYERS.md": render_layers(data["layers"], layer_chunks),
         HUMAN / "SEARCH.md": relink_in_file(render_search(data, config), HUMAN / "SEARCH.md"),
         HUMAN / "EVOLUTION.md": relink_in_file(render_evolution(data["aliases"]), HUMAN / "EVOLUTION.md"),
         HUMAN / "COVERAGE.md": relink_in_file(render_coverage(data["coverage"]), HUMAN / "COVERAGE.md"),
     }
     for index, chunk in enumerate(card_chunks, 1):
         products[HUMAN / "cards" / f"part-{index:03d}.md"] = relink_in_file(render_card_chunk(chunk, index), HUMAN / "cards" / f"part-{index:03d}.md")
+    for index, chunk in enumerate(layer_chunks, 1):
+        products[HUMAN / "reading-layers" / f"part-{index:03d}.md"] = relink_in_file(render_layer_chunk(chunk, index), HUMAN / "reading-layers" / f"part-{index:03d}.md")
     subject_index_count = 0
     for subject in config["subjects"]:
         rows = [row for row in data["search"] if row["subjects"][0] == subject["id"]]
@@ -852,7 +867,7 @@ def output_map(data: dict, config: dict) -> dict[Path, str]:
         "snapshot_date": config["snapshot_date"],
         "source_inputs": {str(path.relative_to(ROOT)): digest_file(str(path.relative_to(ROOT))) for path in (CONFIG_PATH, RESULT_LEDGER, FUNCTION_CARDS, CLAIM_REGISTRY, FIRST_SEEN_PATH)},
         "generated_outputs": hashes,
-        "counts": {"cards": len(data["cards"]), "card_shards": len(card_chunks), "changes": len(data["changes"]), "layered_readings": len(data["layers"]), "search_records": len(data["search"]), "aliases": len(data["aliases"]), "subject_indexes": subject_index_count},
+        "counts": {"cards": len(data["cards"]), "card_shards": len(card_chunks), "changes": len(data["changes"]), "layered_readings": len(data["layers"]), "layer_shards": len(layer_chunks), "search_records": len(data["search"]), "aliases": len(data["aliases"]), "subject_indexes": subject_index_count},
         "machine_human_pairs": [{"machine": "data/governance/knowledge-experience/changes.jsonl", "human": "KNOWLEDGE/WHATS-NEW.md"}, {"machine": "data/governance/knowledge-experience/asset-cards.jsonl", "human": "KNOWLEDGE/ASSET-CARDS.md"}, {"machine": "data/governance/knowledge-experience/layered-reading.jsonl", "human": "KNOWLEDGE/READING-LAYERS.md"}, {"machine": "data/governance/knowledge-experience/search-index.jsonl", "human": "KNOWLEDGE/SEARCH.md"}, {"machine": "data/governance/knowledge-experience/alias-index.jsonl", "human": "KNOWLEDGE/EVOLUTION.md"}, {"machine": "data/governance/knowledge-experience/coverage.json", "human": "KNOWLEDGE/COVERAGE.md"}],
         "claim_ceiling": config["claim_ceiling"],
     }
@@ -888,7 +903,7 @@ def main() -> int:
     expected_paths = set(products)
     stale_shards = [
         path
-        for root in (HUMAN / "indexes", HUMAN / "cards")
+        for root in (HUMAN / "indexes", HUMAN / "cards", HUMAN / "reading-layers")
         for path in root.rglob("part-*.md")
         if path not in expected_paths
     ]

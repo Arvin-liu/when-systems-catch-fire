@@ -1,0 +1,43 @@
+{
+  "schema_version": "ignition-148-step05-unified-operation-lifecycle-r1",
+  "task_id": "IGNITION-20260829-148",
+  "step": "05",
+  "status": "PASS",
+  "lifecycle_stage_count": 14,
+  "lifecycle": [
+    "ACCEPT_REQUEST",
+    "FREEZE_CURRENT",
+    "CLASSIFY_MODE",
+    "CLASSIFY_INPUT_OBJECT",
+    "RESOLVE_OPERATION",
+    "CHECK_CAPABILITY_STATUS",
+    "BUILD_MINIMAL_READ_PLAN",
+    "NORMALIZE_INPUT_AND_PROVENANCE",
+    "EXECUTE_OPERATION",
+    "CANONICAL_COLLISION / EVIDENCE CHECK",
+    "ADVERSARIAL_REVIEW",
+    "APPLY_CLAIM_CEILING",
+    "RENDER_RESULT",
+    "STOP / HANDOFF"
+  ],
+  "minimal_read_rule": "MINIMAL_CURRENT_READS_NOT_FULL_REPOSITORY",
+  "planner": "ignition/tools/operations/plan_ignition_operation_run.py",
+  "fixture_path": "ignition/tests/fixtures/ignition-operating-method/lifecycle-planning-r1.json",
+  "fail_closed_statuses": [
+    "UNSUPPORTED_OPERATION",
+    "CAPABILITY_NOT_CURRENT",
+    "CAPABILITY_OWNER_DEFERRED",
+    "CAPABILITY_REFERENCE_ONLY",
+    "OPERATION_MODE_MISMATCH"
+  ],
+  "validation": {
+    "lifecycle_fixtures": "9/9 PASS",
+    "focused_lifecycle_tests": "6/6 PASS",
+    "operating_method_validator": "PASS",
+    "capability_registry_validator": "PASS",
+    "minimal_read_plan_source_bound_and_deduplicated": true,
+    "planner_authorizes_no_side_effects": true,
+    "git_diff_check": "PASS"
+  },
+  "claim_ceiling": "Task148 candidate lifecycle-planning and fail-closed routing evidence only; the planner executes no operation, authorizes no side effect, does not make the method Current on main and does not establish external truth or epistemic acceptance."
+}

@@ -44,6 +44,20 @@ class StateChangelogTests(unittest.TestCase):
             path.unlink(missing_ok=True)
         self.assertTrue(any("broken repository link" in error for error in errors), errors)
 
+    def test_latest_current_profile_required_field_is_rejected(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8")
+        source = _replace_in_entry(
+            source,
+            53,
+            "- authority_changes:",
+            "- authority_removed:",
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "STATE-CHANGELOG.md"
+            path.write_text(source, encoding="utf-8")
+            errors = validate(path)
+        self.assertTrue(any("authority_changes" in error for error in errors), errors)
+
     def test_profile_fixture_cases_preserve_historical_boundary(self):
         fixture = json.loads(FIXTURE_PATH.read_text(encoding="utf-8"))
         self.assertEqual("ignition-135-state-changelog-profile-fixtures-r1", fixture["schema_version"])

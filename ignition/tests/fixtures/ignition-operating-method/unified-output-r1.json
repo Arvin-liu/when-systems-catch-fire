@@ -1,0 +1,301 @@
+{
+  "schema_version": "ignition-run-output-fixtures-r1",
+  "authority": "TEST_FIXTURES_NOT_OUTPUT_OR_EPISTEMIC_AUTHORITY",
+  "base_output": {
+    "schema_version": "ignition-run-output-r1",
+    "contract_id": "IGNITION_RUN_OUTPUT_CONTRACT_R1",
+    "profile": "MACHINE_AUDIT",
+    "run_id": "fixture-unified-output-base",
+    "request": {
+      "request_id": "REQUEST-FIXTURE-001",
+      "natural_language_intent": "用最新的点火跑一遍这篇笔记，并返回受约束结果。",
+      "request_envelope_locator": "request.user_message",
+      "explicit_permissions": {
+        "repository_mutation": false,
+        "external_action": false
+      }
+    },
+    "run_mode": "READ_ONLY_RUN",
+    "operation_path": {
+      "operation_id": "knowledge.collide_object",
+      "registry_status": "CURRENT_BOUNDED",
+      "decision": "PROCEED_BOUNDED",
+      "playbook_source": "ignition/data/operations/ignition-operation-playbooks-r1.json",
+      "lifecycle_stages_completed": [
+        "ACCEPT_REQUEST",
+        "FREEZE_CURRENT",
+        "CLASSIFY_MODE",
+        "CLASSIFY_INPUT_OBJECT",
+        "RESOLVE_OPERATION",
+        "CHECK_CAPABILITY_STATUS",
+        "BUILD_MINIMAL_READ_PLAN",
+        "NORMALIZE_INPUT_AND_PROVENANCE",
+        "EXECUTE_OPERATION",
+        "CANONICAL_COLLISION / EVIDENCE CHECK",
+        "ADVERSARIAL_REVIEW",
+        "APPLY_CLAIM_CEILING",
+        "RENDER_RESULT",
+        "STOP / HANDOFF"
+      ]
+    },
+    "current_ref": {
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "ref": "refs/heads/main",
+      "observed_identity": "refs/heads/main@example-current-fixture",
+      "commit_sha": null,
+      "exact_head": false,
+      "frozen_at": "TEST_FIXTURE_NOT_LIVE_OBSERVATION",
+      "limitations": [
+        "This is a deterministic test fixture, not a live Current-head observation."
+      ]
+    },
+    "input_object_provenance": {
+      "boundary_status": "SEPARATED",
+      "objects": [
+        {
+          "object_id": "INPUT-NOTE-001",
+          "object_type": "NOTE",
+          "provenance": {
+            "source_kind": "USER_PASTED",
+            "source_locator": "request.input_objects[0]",
+            "supplied_by": "CURRENT_USER",
+            "content_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "version_or_captured_at": "fixture-v1"
+          }
+        }
+      ]
+    },
+    "input_derived_findings": [
+      {
+        "finding_id": "F1",
+        "statement": "输入原文已经提出：乘法归零律可以直接解释现实中的不可替代性。",
+        "input_object_ids": ["INPUT-NOTE-001"],
+        "provenance_locators": ["paragraph:1"],
+        "origin": "SOURCE_EXPLICIT",
+        "ignition_discovery_status": "NOT_IGNITION_DISCOVERY"
+      }
+    ],
+    "existing_canonical_matches": [
+      {
+        "match_id": "M1",
+        "registry_kind": "FUNCTION_ASSET",
+        "canonical_id": "T2",
+        "canonical_title": "乘法归零律",
+        "authority_path": "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "record_sha256": "2abb649f843f7914faaeaecf2b682e48a4f0fae724d1f98aa5c32f908d46a850",
+        "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+        "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+        "repository_identity_effect": "ESTABLISHES_REPOSITORY_IDENTITY_ONLY",
+        "external_truth_status": "NOT_ESTABLISHED_BY_REPOSITORY_MATCH"
+      },
+      {
+        "match_id": "M2",
+        "registry_kind": "NONFUNCTION_CLAIM",
+        "canonical_id": "CLAIM-T2",
+        "canonical_title": "For all a,b in Nat, if a=0 or b=0, then a*b=0.",
+        "authority_path": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "record_sha256": "a02e5aa6aff35b60f28ca8cdd0beca0f02a0ea887efef594fec17ce8e6a03136",
+        "final_disposition": "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT",
+        "claim_ceiling": "A carrier-specific algebraic proposition only; it says nothing about time, irreversibility, substitutability or physical ontology.",
+        "repository_identity_effect": "ESTABLISHES_REPOSITORY_IDENTITY_ONLY",
+        "external_truth_status": "NOT_ESTABLISHED_BY_REPOSITORY_MATCH"
+      }
+    ],
+    "collision_relations": [
+      {
+        "relation_id": "R1",
+        "relation_type": "CONFLICT_WITH",
+        "input_finding_ids": ["F1"],
+        "canonical_match_ids": ["M1", "M2"],
+        "statement": "Current T2 and CLAIM-T2 limit the proposition to typed algebraic carriers, so the input's reality-level interpretation exceeds their claim ceiling.",
+        "evidence_source_ids": ["E1", "E2", "E3"]
+      }
+    ],
+    "candidate_deltas": [
+      {
+        "candidate_id": "C1",
+        "statement": "The missing bridge from typed multiplication to real-world substitutability is a run-local research gap requiring operationalization.",
+        "derived_from_input_finding_ids": ["F1"],
+        "canonical_match_ids": ["M1", "M2"],
+        "relation_ids": ["R1"],
+        "asset_status": "CANDIDATE_NOT_CANONICAL",
+        "registry_action": "NONE",
+        "epistemic_status": "NOT_ESTABLISHED"
+      }
+    ],
+    "contradictions_gaps": [
+      {
+        "item_id": "G1",
+        "kind": "GAP",
+        "statement": "No operational or evidential bridge from the typed algebraic proposition to real-world substitutability is present.",
+        "basis_refs": ["C1", "R1", "M1", "M2"],
+        "resolution_status": "OPEN"
+      }
+    ],
+    "evidence_sources": [
+      {
+        "source_id": "E1",
+        "source_kind": "INPUT_SOURCE",
+        "locator": "request.input_objects[0]#paragraph:1",
+        "provenance": "User-pasted fixture note with frozen content hash.",
+        "supports_refs": ["F1"],
+        "authority_effect": "SOURCE_PROVENANCE_ONLY",
+        "limitations": ["The input states a viewpoint; it does not prove that viewpoint."]
+      },
+      {
+        "source_id": "E2",
+        "source_kind": "CURRENT_REPOSITORY_AUTHORITY",
+        "locator": "ignition/data/foundation/function-assets/identity-cards.jsonl#canonical_id=T2",
+        "provenance": "Current function identity registry record used by the deterministic fixture.",
+        "supports_refs": ["M1"],
+        "authority_effect": "REPOSITORY_IDENTITY_OR_POLICY_ONLY",
+        "limitations": ["Repository identity does not establish external truth."]
+      },
+      {
+        "source_id": "E3",
+        "source_kind": "CURRENT_REPOSITORY_AUTHORITY",
+        "locator": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl#canonical_id=CLAIM-T2",
+        "provenance": "Current non-function claim registry record used by the deterministic fixture.",
+        "supports_refs": ["M2"],
+        "authority_effect": "REPOSITORY_IDENTITY_OR_POLICY_ONLY",
+        "limitations": ["Repository claim maturity is scoped to its declared carrier and cannot rebound into a reality claim."]
+      },
+      {
+        "source_id": "E4",
+        "source_kind": "VALIDATOR_OUTPUT",
+        "locator": "ignition/tools/operations/validate_ignition_run_output.py",
+        "provenance": "Deterministic structural validation of this fixture.",
+        "supports_refs": ["R1", "C1", "G1"],
+        "authority_effect": "VALIDATION_ONLY",
+        "limitations": ["Validator PASS proves contract conformance only."]
+      }
+    ],
+    "uncertainty": [
+      {
+        "uncertainty_id": "U1",
+        "statement": "No external evidence for the proposed real-world bridge was evaluated in this fixture.",
+        "scope": "External applicability of the input interpretation.",
+        "status": "OPEN",
+        "consequence": "The bridge remains a candidate research gap and cannot be stated as a result."
+      }
+    ],
+    "claim_ceiling": "Repository-local source decomposition and canonical collision relation only; no external truth, novelty, candidate registration or epistemic acceptance is established.",
+    "result": {
+      "status": "COMPLETED_BOUNDED",
+      "summary": "The input viewpoint conflicts with the Current carrier-specific ceiling; the missing real-world bridge is retained only as an open candidate gap.",
+      "implementation_status": "NOT_APPLICABLE",
+      "epistemic_status": "NOT_ESTABLISHED",
+      "epistemic_acceptance_authority": null,
+      "artifacts": []
+    },
+    "stop": {
+      "stop_reason": "COMPLETED_WITHIN_CLAIM_CEILING",
+      "optional_next_action": "If the user requests research, define the bridge variables and gather admissible external evidence under a registered research operation."
+    },
+    "boundary_attestations": {
+      "INPUT_DERIVED_IS_NOT_IGNITION_DISCOVERY": true,
+      "CANDIDATE_IS_NOT_CANONICAL_ASSET": true,
+      "REPOSITORY_MATCH_IS_NOT_EXTERNAL_TRUTH": true,
+      "AGENT_CONSENSUS_IS_NOT_EVIDENCE": true,
+      "IMPLEMENTATION_COMPLETE_IS_NOT_EPISTEMIC_ACCEPTANCE": true,
+      "HISTORICAL_MEMORY_IS_NOT_CURRENT_REGISTRY": true
+    }
+  },
+  "cases": [
+    {
+      "case_id": "valid_complete_machine_audit_profile",
+      "mutations": [],
+      "expected_valid": true
+    },
+    {
+      "case_id": "valid_empty_candidate_and_gap_sections_remain_recoverable",
+      "mutations": [
+        {"op": "set", "path": "/candidate_deltas", "value": []},
+        {"op": "set", "path": "/contradictions_gaps", "value": []},
+        {"op": "set", "path": "/evidence_sources/3/supports_refs", "value": ["R1"]}
+      ],
+      "expected_valid": true
+    },
+    {
+      "case_id": "missing_required_semantic_fails_closed",
+      "mutations": [
+        {"op": "delete", "path": "/request"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["request"]
+    },
+    {
+      "case_id": "input_viewpoint_cannot_become_ignition_discovery",
+      "mutations": [
+        {"op": "set", "path": "/input_derived_findings/0/ignition_discovery_status", "value": "IGNITION_DISCOVERY"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["NOT_IGNITION_DISCOVERY"]
+    },
+    {
+      "case_id": "candidate_cannot_become_canonical_asset",
+      "mutations": [
+        {"op": "set", "path": "/candidate_deltas/0/asset_status", "value": "CANONICAL_ASSET"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["CANDIDATE_NOT_CANONICAL"]
+    },
+    {
+      "case_id": "repository_match_cannot_establish_external_truth",
+      "mutations": [
+        {"op": "set", "path": "/existing_canonical_matches/0/external_truth_status", "value": "ESTABLISHED"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["NOT_ESTABLISHED_BY_REPOSITORY_MATCH"]
+    },
+    {
+      "case_id": "agent_consensus_cannot_be_evidence",
+      "mutations": [
+        {"op": "set", "path": "/evidence_sources/3/source_kind", "value": "AGENT_CONSENSUS"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["Agent consensus or model memory cannot be entered as evidence"]
+    },
+    {
+      "case_id": "implementation_complete_cannot_auto_accept_epistemically",
+      "mutations": [
+        {"op": "set", "path": "/result/implementation_status", "value": "COMPLETE"},
+        {"op": "set", "path": "/result/epistemic_status", "value": "ACCEPTED_BY_SEPARATE_CURRENT_AUTHORITY"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["epistemic acceptance requires a separately identified Current authority"]
+    },
+    {
+      "case_id": "historical_path_cannot_establish_current_identity",
+      "mutations": [
+        {"op": "set", "path": "/existing_canonical_matches/0/authority_path", "value": "ignition/data/old_tables/historical-functions.jsonl"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["authority_path"]
+    },
+    {
+      "case_id": "canonical_record_hash_must_match_current_registry",
+      "mutations": [
+        {"op": "set", "path": "/existing_canonical_matches/0/record_sha256", "value": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["record_sha256 differs from the Current canonical record"]
+    },
+    {
+      "case_id": "stop_reason_is_always_required",
+      "mutations": [
+        {"op": "delete", "path": "/stop/stop_reason"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["stop_reason"]
+    },
+    {
+      "case_id": "evidence_kind_cannot_claim_a_stronger_authority_effect",
+      "mutations": [
+        {"op": "set", "path": "/evidence_sources/0/authority_effect", "value": "EXTERNAL_EVIDENCE_WITH_DECLARED_SCOPE"}
+      ],
+      "expected_valid": false,
+      "expected_error_contains": ["evidence authority effect differs from source kind"]
+    }
+  ]
+}

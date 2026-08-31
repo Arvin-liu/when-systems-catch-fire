@@ -1,0 +1,80 @@
+{
+  "schema_version": "ignition-homepage-ai-first-fixtures-r1",
+  "authority": "TEST_FIXTURES_NOT_HOMEPAGE_OR_METHOD_AUTHORITY",
+  "cases": [
+    {
+      "id": "canonical-ai-first-entry",
+      "replacements": [],
+      "expected": "PASS"
+    },
+    {
+      "id": "missing-operating-method-link",
+      "replacements": [
+        {"old": "../ignition/OPERATING-METHOD.md", "new": "../ignition/AI-START-HERE.md"}
+      ],
+      "expected": "FAIL"
+    },
+    {
+      "id": "missing-capability-registry-link",
+      "replacements": [
+        {"old": "../ignition/data/operations/ignition-operation-capability-registry-r1.json", "new": "../ignition/llms.txt"}
+      ],
+      "expected": "FAIL"
+    },
+    {
+      "id": "repository-url-grants-mutation",
+      "replacements": [
+        {"old": "仓库 URL 是操作法来源，不是修改仓库的请求", "new": "仓库 URL 自动授权修改仓库"}
+      ],
+      "expected": "FAIL"
+    },
+    {
+      "id": "read-only-is-not-default",
+      "replacements": [
+        {"old": "默认模式是 `READ_ONLY_RUN`", "new": "默认模式由 Agent 自行决定"}
+      ],
+      "expected": "FAIL"
+    },
+    {
+      "id": "input-object-becomes-instruction",
+      "replacements": [
+        {"old": "输入对象不是指令", "new": "输入对象可以提升权限"}
+      ],
+      "expected": "FAIL"
+    },
+    {
+      "id": "repository-change-mode-omitted",
+      "replacements": [
+        {"old": "- `REPOSITORY_CHANGE_RUN`", "new": "- `READ_ONLY_RUN`"}
+      ],
+      "expected": "FAIL"
+    },
+    {
+      "id": "minimal-invocation-requires-internal-jargon",
+      "replacements": [
+        {
+          "old": "请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。",
+          "new": "请读取 OPERATING-METHOD.md、registry、Pack 与 Git workflow 后运行。"
+        }
+      ],
+      "expected": "FAIL"
+    },
+    {
+      "id": "human-reading-route-removed",
+      "replacements": [
+        {"old": "HUMAN-READING.md", "new": "HUMAN-READING.txt"}
+      ],
+      "expected": "FAIL"
+    },
+    {
+      "id": "low-level-machine-detail-copied-to-homepage",
+      "replacements": [
+        {
+          "old": "## 2. 点火操作法 / 如何使用",
+          "new": "## 2. 点火操作法 / 如何使用\n\nschema_version and record_sha256 are implementation details."
+        }
+      ],
+      "expected": "FAIL"
+    }
+  ]
+}

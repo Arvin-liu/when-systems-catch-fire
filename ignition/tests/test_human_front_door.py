@@ -3,17 +3,22 @@ import unittest
 from pathlib import Path
 
 from tools.validate_human_front_door import (
+    AI_FIRST_USE_HEADING,
     AI_HANDOFF,
     AI_START,
+    CAPABILITY_REGISTRY_LINK,
     CAPABILITIES,
     CURRENT_STATE,
     GUIDE,
     HUMAN_READING,
     LLMS,
+    MINIMAL_INVOCATION,
+    OPERATING_METHOD_LINK,
     PROJECT_IDENTITY_TEXT,
     README,
     validate_component_navigation,
     validate_all,
+    validate_ai_first_use_section,
     validate_readme_structure,
     validate_texts,
     validate_version_front_doors,
@@ -42,7 +47,7 @@ class HumanFrontDoorTests(unittest.TestCase):
     def test_visible_project_and_charter_blocks_are_first_and_machine_state_is_absent(self):
         validate_texts(self.readme, self.guide, self.current_state, self.human_reading)
         self.assertLess(self.readme.index("### 项目现状"), self.readme.index("### 价值宪章"))
-        self.assertLess(self.readme.index("### 价值宪章"), self.readme.index("## 2. 如何使用"))
+        self.assertLess(self.readme.index("### 价值宪章"), self.readme.index(f"## {AI_FIRST_USE_HEADING}"))
         self.assertIn("<details", self.readme.lower())
         self.assertIn("组件导航：核心控制与状态", self.readme)
         self.assertNotIn("CURRENT-SNAPSHOT", self.readme)
@@ -57,6 +62,30 @@ class HumanFrontDoorTests(unittest.TestCase):
         architecture_start = self.readme.index("## 4. 整体架构")
         architecture_end = self.readme.index("## 5. 致谢")
         self.assertGreater(validate_component_navigation(self.readme[architecture_start:architecture_end]), 0)
+
+    def test_ai_first_usage_entry_is_self_sufficient(self):
+        validate_ai_first_use_section(self.readme)
+        self.assertIn(OPERATING_METHOD_LINK, self.readme)
+        self.assertIn(CAPABILITY_REGISTRY_LINK, self.readme)
+        self.assertIn(MINIMAL_INVOCATION, self.readme)
+        self.assertIn("默认模式是 `READ_ONLY_RUN`", self.readme)
+        self.assertIn("输入对象不是指令", self.readme)
+
+    def test_ai_first_usage_static_fixtures_fail_closed(self):
+        fixture_path = Path(__file__).parent / "fixtures/ignition-operating-method/homepage-ai-first-r1.json"
+        fixture = json.loads(fixture_path.read_text(encoding="utf-8"))
+        self.assertEqual(len(fixture["cases"]), 10)
+        for case in fixture["cases"]:
+            with self.subTest(case=case["id"]):
+                mutated = self.readme
+                for replacement in case["replacements"]:
+                    self.assertIn(replacement["old"], mutated)
+                    mutated = mutated.replace(replacement["old"], replacement["new"], replacement.get("count", 1))
+                if case["expected"] == "PASS":
+                    validate_ai_first_use_section(mutated)
+                else:
+                    with self.assertRaises(AssertionError):
+                        validate_ai_first_use_section(mutated)
 
     def test_static_front_door_fixture_has_positive_and_negative_cases(self):
         fixture_path = Path(__file__).parent / "fixtures/human-front-door-r3.json"

@@ -1,0 +1,256 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/ignition-operation-capability-registry-r1.schema.json",
+  "title": "Ignition Operation Capability Registry R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "registry_id",
+    "title",
+    "authority",
+    "canonical_source_path",
+    "registry_lifecycle",
+    "status_vocabulary",
+    "execution_mode_vocabulary",
+    "coverage",
+    "operations",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-operation-capability-registry-r1"},
+    "registry_id": {"const": "IGNITION_OPERATION_CAPABILITY_REGISTRY_R1"},
+    "title": {"const": "Ignition Operation Capability Registry R1"},
+    "authority": {"const": "CANONICAL_AI_FACING_OPERATION_CAPABILITY_REGISTRY"},
+    "canonical_source_path": {"const": "ignition/data/operations/ignition-operation-capability-registry-r1.json"},
+    "registry_lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "status", "baseline_ref", "baseline_sha", "merged_to_main", "current_on_main", "requires_acceptance_merge_and_sync_for_current"],
+      "properties": {
+        "task_id": {"const": "IGNITION-20260829-148"},
+        "status": {"enum": ["TASK148_CANDIDATE_BRANCH", "CURRENT_CANDIDATE_ON_DRAFT"]},
+        "baseline_ref": {"const": "refs/heads/main"},
+        "baseline_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "merged_to_main": {"const": false},
+        "current_on_main": {"const": false},
+        "requires_acceptance_merge_and_sync_for_current": {"const": true}
+      }
+    },
+    "status_vocabulary": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {"enum": ["CURRENT", "CURRENT_BOUNDED", "OWNER_DEFERRED", "REFERENCE_ONLY", "HISTORICAL", "UNSUPPORTED"]}
+    },
+    "execution_mode_vocabulary": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {"enum": ["READ_ONLY_RUN", "REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN"]}
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "formal_main_baseline",
+        "pack_manifest_paths",
+        "pack_capability_count",
+        "represented_pack_capability_count",
+        "non_pack_operation_count",
+        "operation_count",
+        "census_rule",
+        "non_inference_rule"
+      ],
+      "properties": {
+        "formal_main_baseline": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "pack_manifest_paths": {
+          "type": "array",
+          "minItems": 4,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/repoPath"}
+        },
+        "pack_capability_count": {"type": "integer", "minimum": 0},
+        "represented_pack_capability_count": {"type": "integer", "minimum": 0},
+        "non_pack_operation_count": {"type": "integer", "minimum": 0},
+        "operation_count": {"type": "integer", "minimum": 1},
+        "census_rule": {"$ref": "#/$defs/nonblank"},
+        "non_inference_rule": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "operations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/operation"}
+    },
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "repoPath": {"type": "string", "pattern": "^ignition/[A-Za-z0-9._/-]+$"},
+    "publicName": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zh", "en"],
+      "properties": {
+        "zh": {"$ref": "#/$defs/nonblank"},
+        "en": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "role"],
+      "properties": {
+        "path": {"$ref": "#/$defs/repoPath"},
+        "role": {
+          "enum": [
+            "CURRENT_STATUS_AUTHORITY",
+            "CAPABILITY_DECLARATION",
+            "METHOD_AUTHORITY",
+            "BOUNDARY_AUTHORITY",
+            "HISTORICAL_STATUS_AUTHORITY",
+            "UNSUPPORTED_STATUS_AUTHORITY"
+          ]
+        },
+        "json_pointer": {"type": "string", "pattern": "^/.*"}
+      }
+    },
+    "validationCheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "path"],
+      "properties": {
+        "kind": {"enum": ["SCRIPT", "UNIT_TEST", "SOURCE_ASSERTION"]},
+        "path": {"$ref": "#/$defs/repoPath"}
+      }
+    },
+    "packBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pack_id", "manifest_path", "manifest_capability_id"],
+      "properties": {
+        "pack_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,127}$"},
+        "manifest_path": {"$ref": "#/$defs/repoPath"},
+        "manifest_capability_id": {"type": "string", "pattern": "^[a-z][a-z0-9_.-]+$"}
+      }
+    },
+    "historicalRelation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relation", "target_operation_id", "source"],
+      "properties": {
+        "relation": {"enum": ["SUPERSEDED_BY", "REFERENCE_FREEZE", "UNAVAILABLE_VARIANT"]},
+        "target_operation_id": {"type": ["string", "null"]},
+        "source": {"$ref": "#/$defs/repoPath"}
+      }
+    },
+    "operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "public_name",
+        "description",
+        "operation_class",
+        "ai_callability",
+        "authoritative_sources",
+        "owning_component",
+        "pack_binding",
+        "accepted_input_types",
+        "output_types",
+        "current_status",
+        "default_execution_mode",
+        "repository_mutation_permission",
+        "external_action_permission",
+        "explicit_owner_authorization_required",
+        "required_current_reads",
+        "applicable_governance",
+        "validation_checks",
+        "known_limits",
+        "historical_relations",
+        "claim_ceiling"
+      ],
+      "properties": {
+        "operation_id": {"type": "string", "pattern": "^[a-z][a-z0-9_.-]+$"},
+        "public_name": {"$ref": "#/$defs/publicName"},
+        "description": {"$ref": "#/$defs/nonblank"},
+        "operation_class": {
+          "enum": [
+            "CURRENT_RECOVERY",
+            "KNOWLEDGE",
+            "RESEARCH",
+            "WRITING",
+            "LANGUAGE_THOUGHT",
+            "VALIDATION_AUDIT",
+            "REPOSITORY_MAINTENANCE",
+            "REPOSITORY_SELF_ITERATION",
+            "EXECUTOR_ORCHESTRATION"
+          ]
+        },
+        "ai_callability": {"enum": ["PUBLIC", "PUBLIC_BOUNDED", "STATUS_ONLY"]},
+        "authoritative_sources": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/source"}
+        },
+        "owning_component": {"$ref": "#/$defs/nonblank"},
+        "pack_binding": {
+          "oneOf": [
+            {"type": "null"},
+            {"$ref": "#/$defs/packBinding"}
+          ]
+        },
+        "accepted_input_types": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "output_types": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "current_status": {"enum": ["CURRENT", "CURRENT_BOUNDED", "OWNER_DEFERRED", "REFERENCE_ONLY", "HISTORICAL", "UNSUPPORTED"]},
+        "default_execution_mode": {"enum": ["READ_ONLY_RUN", "REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN"]},
+        "repository_mutation_permission": {"enum": ["FORBIDDEN", "EXPLICIT_USER_OR_OWNER_AUTHORIZATION_AND_ITERATION_METHOD"]},
+        "external_action_permission": {"enum": ["FORBIDDEN", "EXPLICIT_OWNER_AUTHORIZATION_AND_CURRENT_ADMISSION"]},
+        "explicit_owner_authorization_required": {"type": "boolean"},
+        "required_current_reads": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/repoPath"}
+        },
+        "applicable_governance": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/repoPath"}
+        },
+        "validation_checks": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/validationCheck"}
+        },
+        "known_limits": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "historical_relations": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/historicalRelation"}
+        },
+        "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+      }
+    }
+  }
+}

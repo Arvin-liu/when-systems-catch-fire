@@ -37,7 +37,7 @@
     "facts": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["architecture", "packs", "federation", "foundation", "knowledge_experience", "fire_seeds", "human_surface", "iteration", "task_lineage", "formal_task_lifecycle", "open_obligations", "steering", "environmental_residuals"],
+      "required": ["architecture", "packs", "federation", "foundation", "knowledge_experience", "fire_seeds", "human_surface", "iteration", "operating_method", "task_lineage", "formal_task_lifecycle", "open_obligations", "steering", "environmental_residuals"],
       "properties": {
         "architecture": {
           "type": "object", "additionalProperties": false,
@@ -134,6 +134,17 @@
             "method_version": {"$ref": "#/$defs/nonblank"},
             "method_status": {"const": "Current"},
             "current_map_version": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "operating_method": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["identity", "version", "status", "source_path"],
+          "properties": {
+            "identity": {"const": "IGNITION_OPERATING_METHOD_R1"},
+            "version": {"const": "1.0.0"},
+            "status": {"const": "CURRENT_CANDIDATE_ON_DRAFT"},
+            "source_path": {"const": "ignition/OPERATING-METHOD.md"}
           }
         },
         "task_lineage": {

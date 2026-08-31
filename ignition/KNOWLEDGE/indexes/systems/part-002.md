@@ -6,6 +6,31 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M21 / data/external-research/088-external-source-atlas-medium.jsonl / M21 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M22 / data/external-research/088-external-source-atlas-medium.jsonl / M22 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M23 / data/external-research/088-external-source-atlas-medium.jsonl / M23 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M24 / data/external-research/088-external-source-atlas-medium.jsonl / M24 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M25 / data/external-research/088-external-source-atlas-medium.jsonl / M25 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M26 / data/external-research/088-external-source-atlas-medium.jsonl / M26 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -754,6 +779,11 @@
   - 可搜索名称：NFC-d058d620b72de09e / Foundation: remains authoritative for object status, evidence, downgrade, and claim ceiling.
   - 来源：`reports/architecture/121Q21R-multiscale-causal-fabric-validation.md`
   - 依赖：—；被引用：—
+- [Freeze object provenance and split source facts, claims, interpretations, mechanisms and questions.](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bd0abe015da00451 / Freeze object provenance and split source facts, claims, interpretations, mechanisms and questions.
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
 - [From Prediction to Prescription: Machine Learning and Causal Inference for the Heterogeneous Treatment Effect](../../../data/external-research/088-external-source-atlas-v2.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-0399be47032f1470 / From Prediction to Prescription: Machine Learning and Causal Inference for the Heterogeneous Treatment Effect
@@ -1038,6 +1068,46 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-998f0d87097ad15c / Ignition projection and architectural gap exposure
   - 来源：`reports/external-research/120-function-paradigm-atlas-report.md`
+  - 依赖：—；被引用：—
+- [IGNITION-129 Step 20 — Current architecture/state synchronization](../../ASSET-CARDS.md#asset-hr-d340adc528dc460f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-129 Step 20 — Current architecture/state synchronization / ignition-129-step20-current-sync
+  - 来源：`reports/operations/ignition-129-step20-current-sync.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-138 — Step 02 Deterministic Startup-Failure Reproduction](../../ASSET-CARDS.md#asset-hr-0a9930be185eaea8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-138 — Step 02 Deterministic Startup-Failure Reproduction / ignition-138-step02-filesystem-reproduction
+  - 来源：`reports/operations/ignition-138-step02-filesystem-reproduction.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-142 Step 05 — Offline Executor Conformance](../../ASSET-CARDS.md#asset-hr-8932d9fd7b23c049)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260827-142 Step 05 — Offline Executor Conformance / ignition-142-step05-offline-conformance
+  - 来源：`reports/operations/ignition-142-step05-offline-conformance.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-142 Step 09 — Codex Blocker Freeze](../../ASSET-CARDS.md#asset-hr-7dee237b2707a8c8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260827-142 Step 09 — Codex Blocker Freeze / ignition-142-step09-codex-blocker-audit
+  - 来源：`reports/operations/ignition-142-step09-codex-blocker-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-143 Step 04 — 可出版素材盘点](../../ASSET-CARDS.md#asset-hr-00eff8444211bc60)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260827-143 Step 04 — 可出版素材盘点 / ignition-143-step04-corpus-census
+  - 来源：`reports/operations/ignition-143-step04-corpus-census.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-143 Step 09 — Article B 对抗性编辑](../../ASSET-CARDS.md#asset-hr-cf1f447fcd9c2e4b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260827-143 Step 09 — Article B 对抗性编辑 / ignition-143-step09-article-b-editorial-review
+  - 来源：`reports/operations/ignition-143-step09-article-b-editorial-review.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-143 Step 16 — canonical 出版入口接入](../../ASSET-CARDS.md#asset-hr-92e68b43ea044168)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260827-143 Step 16 — canonical 出版入口接入 / ignition-143-step16-canonical-publication-integration
+  - 来源：`reports/operations/ignition-143-step16-canonical-publication-integration.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit](../../ASSET-CARDS.md#asset-hr-1ab0b7265d820f9b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit / ignition-144-step08-publication-entrypoint-audit
+  - 来源：`reports/operations/ignition-144-step08-publication-entrypoint-audit.md`
   - 依赖：—；被引用：—
 - [Illustrative organizational AI deployment fabric; model outputs are not independent external evidence.](../../../data/architecture/multiscale-causal-fabric/examples/ai-deployment.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2434,73 +2504,3 @@
   - 可搜索名称：NFC-bf6d676e0c853efc / Object D405 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝\(1+τ_rat
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D405；被引用：—
-- [Object D406 defines a mechanism_model within the point-fire framework. Core: 中文：M9的g_eff_macro = \(1-R_irreversible\)·g_ef](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-eaecafe45c681a14 / Object D406 defines a mechanism_model within the point-fire framework. Core: 中文：M9的g_eff_macro = \(1-R_irreversible\)·g_ef
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D311, D406；被引用：—
-- [Object D407 defines a mechanism_model within the point-fire framework. Core: 中文：M10的传染链有自限：僵尸化降低ḡ→降低溢出→传染减速。但自限点在全局僵尸化附近](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-43feee556b385436 / Object D407 defines a mechanism_model within the point-fire framework. Core: 中文：M10的传染链有自限：僵尸化降低ḡ→降低溢出→传染减速。但自限点在全局僵尸化附近
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D407；被引用：—
-- [Object D408 defines a mechanism_model within the point-fire framework. Core: 中文：M11的连续极限下Jensen项∝\(dΦ/dt\)²·τ_min/2。τ_min→](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7c0b4b19a54cbe7d / Object D408 defines a mechanism_model within the point-fire framework. Core: 中文：M11的连续极限下Jensen项∝\(dΦ/dt\)²·τ_min/2。τ_min→
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D394, D408；被引用：—
-- [Object D409 defines a mechanism_model within the point-fire framework. Core: 中文：M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D39](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1e800167d290aa25 / Object D409 defines a mechanism_model within the point-fire framework. Core: 中文：M12的大系统传染临界→n/2是容斥主导不可逆在传染维度的投影。D388和D39
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D388, D395, D409；被引用：—
-- [Object D410 defines a mechanism_model within the point-fire framework. Core: 中文：M13的四条不可逆线在\(p_max,n,K,τ_delay\)四维空间中划分3个有](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2d35e4be71a4c527 / Object D410 defines a mechanism_model within the point-fire framework. Core: 中文：M13的四条不可逆线在\(p_max,n,K,τ_delay\)四维空间中划分3个有
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D410；被引用：—
-- [Object D411 defines a mechanism_model within the point-fire framework. Core: 中文：M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统天然需要](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8f70d927b76b7eaf / Object D411 defines a mechanism_model within the point-fire framework. Core: 中文：M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统天然需要
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D411；被引用：—
-- [Object D412 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.2](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0809ebb83c709ce2 / Object D412 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw=1与D316转折点近似同步但不精确同步。a_excl·τ≈0.2
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D316, D412；被引用：—
-- [Object D413 defines a mechanism_model within the point-fire framework. Core: 中文：M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-74c835069d67893b / Object D413 defines a mechanism_model within the point-fire framework. Core: 中文：M2的遗迹衰减速率∝D301漂移速率。快速变化环境中旧秩序遗迹消失快——复活窗口
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D301, D413；被引用：—
-- [Object D414 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I=\(1+m\)/2在有限n时有O\(1/n\)修正。有限系统比平均场预测更集中](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f68460fd6c4659fb / Object D414 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I=\(1+m\)/2在有限n时有O\(1/n\)修正。有限系统比平均场预测更集中
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D331, D414；被引用：—
-- [Object D415 defines a mechanism_model within the point-fire framework. Core: 中文：M4的β_eff = 1/2 - ε\(T\)，ε∝\(kT/Φ_min\)²。大系统临](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e3bbdc062f04bbad / Object D415 defines a mechanism_model within the point-fire framework. Core: 中文：M4的β_eff = 1/2 - ε\(T\)，ε∝\(kT/Φ_min\)²。大系统临
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D415；被引用：—
-- [Object D416 defines a mechanism_model within the point-fire framework. Core: 中文：—降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-28ac63d8a9fa536c / Object D416 defines a mechanism_model within the point-fire framework. Core: 中文：—降低p_max的效应恰好被g_eff下降抵消。p_max=p*时良性循环无法启
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D416；被引用：—
-- [Object D417 defines a mechanism_model within the point-fire framework. Core: 中文：M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e70ab8fe7a8f1c48 / Object D417 defines a mechanism_model within the point-fire framework. Core: 中文：M6的吸引域深度×宽度²=常数。深度-宽度权衡：深而窄vs浅而宽。d=4是深且宽
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D285, D417；被引用：—
-- [Object D418 defines a mechanism_model within the point-fire framework. Core: 中文：M7的有效β = min\(β_intended, β_max\)，β_max∝√n](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-4e738cfb9f24cf77 / Object D418 defines a mechanism_model within the point-fire framework. Core: 中文：M7的有效β = min\(β_intended, β_max\)，β_max∝√n
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D418；被引用：—
-- [Object D419 defines a mechanism_model within the point-fire framework. Core: 中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D309\]\(docs/zh/func](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5bbe20bc4b728334 / Object D419 defines a mechanism_model within the point-fire framework. Core: 中文：M9的宏观僵尸态、实际不可逆、缓冲不可逆\(\[D309\]\(docs/zh/func
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D30, D309, D419；被引用：—

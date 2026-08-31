@@ -13,6 +13,8 @@ permissions:
 jobs:
   validate-current-state-sync:
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: .
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -22,6 +24,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install foundation dependencies
+        run: python3 -m pip install -r ignition/requirements-foundation.txt
       - name: Validate current-state synchronization
         working-directory: ignition
         run: python3 tools/validate_current_state_sync.py --check

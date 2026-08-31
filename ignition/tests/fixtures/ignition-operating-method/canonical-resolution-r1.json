@@ -1,0 +1,156 @@
+{
+  "schema_version": "ignition-current-canonical-resolution-fixtures-r1",
+  "authority": "TEST_FIXTURES_NOT_IDENTITY_AUTHORITY",
+  "cases": [
+    {
+      "case_id": "legacy_label_d1_resolves_current_but_stays_quarantined",
+      "reference": "D1",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "D1",
+        "canonical_title": "锁定强度函数",
+        "match_kind": "CANONICAL_ID",
+        "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+        "record_sha256": "e0bcfc66878f05f91a23b714c6b1b2b90adf67b2ddaad409b8706ce32d959b6e"
+      }
+    },
+    {
+      "case_id": "legacy_label_d2_resolves_current_but_stays_quarantined",
+      "reference": "D2",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "D2",
+        "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+        "record_sha256": "5933863765531580429c55667aa680fc53ad5510d1a1df5e450afa7f2dd44327"
+      }
+    },
+    {
+      "case_id": "legacy_label_d5_resolves_current_but_stays_quarantined",
+      "reference": "D5",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "D5",
+        "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+        "record_sha256": "8206d86e2888199fec2654a4e4e277227ae1eb00cfbb1e761b45635ddc8bab2d"
+      }
+    },
+    {
+      "case_id": "legacy_label_t7_resolves_current_but_stays_quarantined",
+      "reference": "T7",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "T7",
+        "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+        "record_sha256": "361babd8c891cb05c21a5fb5fe6ca08589b536663794fc9b53d7285c5e9f4a83"
+      }
+    },
+    {
+      "case_id": "legacy_label_a5_resolves_current_but_stays_quarantined",
+      "reference": "A5",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "A5",
+        "final_disposition": "QUARANTINE_UNTIL_DEFINED",
+        "record_sha256": "09dc50bd7f0bd83b8130bcee72c43b84dbf658e45d612f273bd5b5b80345ec43"
+      }
+    },
+    {
+      "case_id": "bare_d127_keeps_current_d127_identity",
+      "reference": "D127",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "D127",
+        "canonical_title": "认知路径积分函数",
+        "primary_identity": "STRUCTURAL_METAPHOR",
+        "final_disposition": "KEEP_AS_STRUCTURAL_METAPHOR",
+        "record_sha256": "c2a8e1ffc41b72de518df3ad6a0b8422d6b8a15824b5765911282a8731ba2724"
+      }
+    },
+    {
+      "case_id": "wrong_d127_zero_law_label_is_corrected_to_t2",
+      "reference": "D127 乘法归零律",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "T2",
+        "canonical_title": "乘法归零律",
+        "match_kind": "IDENTITY_CORRECTED_ALIAS",
+        "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
+        "record_sha256": "2abb649f843f7914faaeaecf2b682e48a4f0fae724d1f98aa5c32f908d46a850"
+      }
+    },
+    {
+      "case_id": "current_zero_law_title_resolves_t2",
+      "reference": "乘法归零律",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "T2",
+        "match_kind": "CURRENT_SEARCH_ALIAS",
+        "final_disposition": "KEEP_AS_ESTABLISHED_MATH"
+      }
+    },
+    {
+      "case_id": "current_nonfunction_claim_id_resolves_claim_registry",
+      "reference": "CLAIM-T2",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "CLAIM-T2",
+        "canonical_title": "For all a,b in Nat, if a=0 or b=0, then a*b=0.",
+        "registry_kind": "NONFUNCTION_CLAIM",
+        "identity_authority": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "final_disposition": "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT",
+        "record_sha256": "a02e5aa6aff35b60f28ca8cdd0beca0f02a0ea887efef594fec17ce8e6a03136"
+      }
+    },
+    {
+      "case_id": "current_nonfunction_claim_title_resolves_claim_registry",
+      "reference": "For all a,b in Nat, if a=0 or b=0, then a*b=0.",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "CLAIM-T2",
+        "registry_kind": "NONFUNCTION_CLAIM",
+        "identity_authority": "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "final_disposition": "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT"
+      }
+    },
+    {
+      "case_id": "wrong_d260_grand_unification_label_keeps_corrected_d260",
+      "reference": "D260 大一统不可能命题",
+      "expected": {
+        "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
+        "canonical_id": "D260",
+        "canonical_title": "偏差敏感度阈值函数",
+        "match_kind": "IDENTITY_CORRECTED_ALIAS",
+        "final_disposition": "KEEP_AS_TESTED_INDEX_OR_CLASSIFIER",
+        "record_sha256": "ed0425ecaf25c6523d4ee5f560e25664962d767a9bf4bbc3b6f6633a10c53100"
+      }
+    },
+    {
+      "case_id": "invented_remembered_id_fails_closed",
+      "reference": "D999999-remembered-function",
+      "expected": {
+        "resolution_status": "UNRESOLVED_LEGACY_REFERENCE",
+        "failure_reason": "NO_EXACT_CURRENT_CANONICAL_MAPPING",
+        "canonical_id": null
+      }
+    },
+    {
+      "case_id": "near_match_does_not_use_fuzzy_memory",
+      "reference": "D127 乘法清零律",
+      "expected": {
+        "resolution_status": "UNRESOLVED_LEGACY_REFERENCE",
+        "failure_reason": "NO_EXACT_CURRENT_CANONICAL_MAPPING",
+        "canonical_id": null
+      }
+    },
+    {
+      "case_id": "historical_file_path_is_not_identity",
+      "reference": "统一函数总表/0012-T2-乘法归零律.md",
+      "expected": {
+        "resolution_status": "UNRESOLVED_LEGACY_REFERENCE",
+        "failure_reason": "NO_EXACT_CURRENT_CANONICAL_MAPPING",
+        "canonical_id": null,
+        "historical_file_used_as_identity": false
+      }
+    }
+  ]
+}

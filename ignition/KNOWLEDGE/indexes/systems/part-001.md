@@ -1124,6 +1124,11 @@
   - 可搜索名称：NFC-7b1ab63aecbf4b2a / `EmbeddingEvidenceRecord`: independent evidence axes for external availability, retrieval, linkage, conflict exposure, j
   - 来源：`docs/architecture/adaptive-relational-network.md`
   - 依赖：—；被引用：—
+- [`epistemic_governance_kernel --projects / synchronization_obligation--> structural_governance_surface` — advisory struct](../../../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9f157714ecc99f09 / `epistemic_governance_kernel --projects / synchronization_obligation--> structural_governance_surface` — advisory struct
+  - 来源：`reports/operations/IGNITION-20260829-148-change-propagation-impact.md`
+  - 依赖：—；被引用：—
 - [`epistemic_relevance`：是否可能改变命题、对象、论证、机制或证据权限；](../../../docs/language-thought/translation-and-residue.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-920a498fb9fdf101 / `epistemic_relevance`：是否可能改变命题、对象、论证、机制或证据权限；
@@ -1208,6 +1213,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-d947976f377eeba2 / `mechanism_plausible`
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [`MECHANISM` — 来源提出或分析后形成的机制候选；](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-badaed5e16ab3199 / `MECHANISM` — 来源提出或分析后形成的机制候选；
+  - 来源：`OPERATING-METHOD.md`
   - 依赖：—；被引用：—
 - [`NetworkDiff.from_ref` and `NetworkDiff.to_ref` must reference a local `network_id`, `state_id`, `projection_id` or a de](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1694,6 +1704,11 @@
   - 可搜索名称：NFC-d746274ad8c82435 / authority_changes: \[迭代操作法 1.4.0\]\(./ITERATION.md\)、\[系统图 0.5.0\]\(./data/architecture/interactive-system-map.json\)、\[Charter S
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: `ignition/data/architecture/current-system-identity.json` remains the single Current identity authori](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-65f42dd3bcbc2380 / authority_changes: `ignition/data/architecture/current-system-identity.json` remains the single Current identity authori
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: the provider-neutral filesystem-domain contract, runtime-scratch lease/cleanup evidence, Codex R3 ada](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-07ce5e98c820e453 / authority_changes: the provider-neutral filesystem-domain contract, runtime-scratch lease/cleanup evidence, Codex R3 ada
@@ -1753,6 +1768,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bd7c9d142c446abc / Because the training targets are produced by reference solvers, the trained surrogate cannot exceed those solvers' accur
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [because this post-closure patch has no hard full-suite requirement and the](../../../agent-results/IGNITION-20260828-145-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-117efda600db0ea9 / because this post-closure patch has no hard full-suite requirement and the
+  - 来源：`agent-results/IGNITION-20260828-145-result.md`
   - 依赖：—；被引用：—
 - [Before projection hash: `b108f598999de7b208e2419013ef7ab221d05b39bb1cb00f166fdfd584c17837`](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2194,6 +2214,11 @@
   - 可搜索名称：NFC-f5c3edf7b6255a72 / Claim ceiling: independent validation not run because the required durable
   - 来源：`reports/operations/ignition-138-step10-amendment-01-independent-validation.md`
   - 依赖：—；被引用：—
+- [Claim ceiling: Repository-state change discipline only; no truth, evidence, causal, Owner-acceptance or publication infe](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-33f1e039100e1522 / Claim ceiling: Repository-state change discipline only; no truth, evidence, causal, Owner-acceptance or publication infe
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: Task140 repository-local admission, capability-lease, filesystem-domain and validator-freeze evidence onl](../../../reports/operations/ignition-140-step10-live-admission.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4cd178972131e1a0 / Claim ceiling: Task140 repository-local admission, capability-lease, filesystem-domain and validator-freeze evidence onl
@@ -2477,30 +2502,5 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M20 / data/external-research/088-external-source-atlas-medium.jsonl / M20 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M21 / data/external-research/088-external-source-atlas-medium.jsonl / M21 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M22 / data/external-research/088-external-source-atlas-medium.jsonl / M22 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M23 / data/external-research/088-external-source-atlas-medium.jsonl / M23 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M24 / data/external-research/088-external-source-atlas-medium.jsonl / M24 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M25 / data/external-research/088-external-source-atlas-medium.jsonl / M25 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

@@ -1234,6 +1234,11 @@
   - 可搜索名称：IMPLICIT-2F4EAA419810534F / # 故事化评分维度 / IMPLICIT-2F4EAA419810534F
   - 来源：`outputs/getbrain/storytelling-case-backlog-draft-20260707.md`
   - 依赖：—；被引用：—
+- [# 点火 Operation-specific Playbooks R1](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3EE47C25E1F44C6A / # 点火 Operation-specific Playbooks R1 / IMPLICIT-3EE47C25E1F44C6A
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
 - [# 点火迭代操作法 / Ignition Iteration Method](../../../ITERATION.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-71C30753AF7778B0 / # 点火迭代操作法 / Ignition Iteration Method / IMPLICIT-71C30753AF7778B0
@@ -1358,6 +1363,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-27AC2D3036E1E5F9 / ## 5. Safety Considerations / IMPLICIT-27AC2D3036E1E5F9
   - 来源：`reports/external-research/120-function-os-architecture-candidate-report.md`
+  - 依赖：—；被引用：—
+- [## 5. 能力不是权限，登记不是执行](../../../OPERATING-METHOD.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-438818EF61AF6C27 / ## 5. 能力不是权限，登记不是执行 / IMPLICIT-438818EF61AF6C27
+  - 来源：`OPERATING-METHOD.md`
   - 依赖：—；被引用：—
 - [## 6. Authentication / polite-pool configuration \(no secrets\)](../../../data/operations/iterations/110/openalex/PREREGISTRATION.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2134,6 +2144,11 @@
   - 可搜索名称：IMPLICIT-AADCA211EEBB32FC / ### 10. 84-Source Canonical Index / IMPLICIT-AADCA211EEBB32FC
   - 来源：`reports/external-research/121Q2R-final-report.md`
   - 依赖：—；被引用：—
+- [### 10.2 Candidate-new gate](../../../OPERATING-METHOD.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4012DF146061956B / ### 10.2 Candidate-new gate / IMPLICIT-4012DF146061956B
+  - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
 - [### 2. 课程叙述层：可产生张力，不自动产生史实](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4CD8B479C11DBE8C / ### 2. 课程叙述层：可产生张力，不自动产生史实 / IMPLICIT-4CD8B479C11DBE8C
@@ -2163,6 +2178,16 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1F41909AB41A1E5E / ### 4. 它不知道 Function OS 能否离开小世界 / IMPLICIT-1F41909AB41A1E5E
   - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
+  - 依赖：—；被引用：—
+- [### 8.3 `RESOLVE_OPERATION` 与 `CHECK_CAPABILITY_STATUS`](../../../OPERATING-METHOD.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5BB1541D62942CAF / ### 8.3 `RESOLVE_OPERATION` 与 `CHECK_CAPABILITY_STATUS` / IMPLICIT-5BB1541D62942CAF
+  - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
+- [### 8.5 `NORMALIZE_INPUT_AND_PROVENANCE` 到 `EXECUTE_OPERATION`](../../../OPERATING-METHOD.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-74043B64B742362B / ### 8.5 `NORMALIZE_INPUT_AND_PROVENANCE` 到 `EXECUTE_OPERATION` / IMPLICIT-74043B64B742362B
+  - 来源：`OPERATING-METHOD.md`
   - 依赖：—；被引用：—
 - [### 84-Source Canonical Index \(Corrected\)](../../../reports/external-research/121Q2V-verification-repair-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2477,30 +2502,5 @@
 - [### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\]\(docs/zh/cases/items/C-0555.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0521E651C0E10664 / ### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\]\(docs/zh/cases/items/C-0555.md\) / IMPLICIT-0521E651C0E10664
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\]\(docs/zh/cases/items/C-0556.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CF6FB94DB046D71A / ### \[#556｜衰老 — Φ线性增长→B指数衰减→Gompertz定律 / 衰老 - Φ线性增长 -> B指数衰减 -> Gompertz定律\]\(docs/zh/cases/items/C-0556.md\) / IMPLICIT-CF6FB94DB046D71A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#557｜癌症 — ε穿越门控面，发病率∝exp\(Φt\)指数增长\]\(docs/zh/cases/items/C-0557.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F1B3CD991152F628 / ### \[#557｜癌症 — ε穿越门控面，发病率∝exp\(Φt\)指数增长\]\(docs/zh/cases/items/C-0557.md\) / IMPLICIT-F1B3CD991152F628
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\]\(docs/zh/cases/items/C-0559.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1154A742469575BC / ### \[#559｜大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\]\(docs/zh/cases/items/C-0559.md\) / IMPLICIT-1154A742469575BC
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#565｜哈勃张力超指数衰减\]\(docs/zh/cases/items/C-0565.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C2960CD88850854C / ### \[#565｜哈勃张力超指数衰减\]\(docs/zh/cases/items/C-0565.md\) / IMPLICIT-C2960CD88850854C
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#580｜睡眠清除门控验证\]\(docs/zh/cases/items/C-0580.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EAF5E65C7B869665 / ### \[#580｜睡眠清除门控验证\]\(docs/zh/cases/items/C-0580.md\) / IMPLICIT-EAF5E65C7B869665
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

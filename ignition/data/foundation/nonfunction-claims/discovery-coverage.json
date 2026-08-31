@@ -5,19 +5,19 @@
     "every_tracked_path_accounted": true,
     "generated_and_prior_function_registries_excluded_explicitly": true
   },
-  "candidate_fragments": 30359,
-  "canonical_claims": 17635,
+  "candidate_fragments": 30598,
+  "canonical_claims": 17842,
   "coverage_status_counts": {
     "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 51,
-    "EXCLUDED_GENERATED_PROJECTION_EXCLUDED": 251,
+    "EXCLUDED_GENERATED_PROJECTION_EXCLUDED": 267,
     "EXCLUDED_KNOWLEDGE_SOURCE_EXPLICIT_ONLY": 7,
     "EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE": 4,
-    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 951,
+    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 1017,
     "EXCLUDED_NON_TEXT_SUFFIX": 4,
-    "EXCLUDED_PLATFORM_CODE_EXCLUDED": 868,
+    "EXCLUDED_PLATFORM_CODE_EXCLUDED": 903,
     "EXPLICIT_CANONICAL_IMPORT": 1,
     "SCANNED_NO_CANDIDATE": 519,
-    "SCANNED_REGISTERED": 2401
+    "SCANNED_REGISTERED": 2410
   },
-  "tracked_files": 5057
+  "tracked_files": 5183
 }

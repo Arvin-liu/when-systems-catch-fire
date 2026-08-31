@@ -179,10 +179,100 @@
   - 可搜索名称：GetNote external verification R1 / pointfire-getnote-external-verification-r1-20260813
   - 来源：`reports/external-research/pointfire-getnote-external-verification-r1-20260813.md`
   - 依赖：—；被引用：—
+- [IGNITION-140 Step 04 — Typed Observation Outcomes](../../ASSET-CARDS.md#asset-hr-67d1c79c98329e3c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-140 Step 04 — Typed Observation Outcomes / ignition-140-step04-typed-observation-outcomes
+  - 来源：`reports/operations/ignition-140-step04-typed-observation-outcomes.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation](../../ASSET-CARDS.md#asset-hr-b00bbd6f7fea949f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation / ignition-137-step01-hermes-timeout-reconciliation
+  - 来源：`reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-137 — Step 02 Timeout / Timestamp / Process Closeout R2](../../ASSET-CARDS.md#asset-hr-5c77edf677c622ff)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-137 — Step 02 Timeout / Timestamp / Process Closeout R2 / ignition-137-step02-timeout-process-closeout-r2
+  - 来源：`reports/operations/ignition-137-step02-timeout-process-closeout-r2.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260824-138 — Step 10 Independent OS Validation Gate](../../ASSET-CARDS.md#asset-hr-b2797cd81f454a5f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260824-138 — Step 10 Independent OS Validation Gate / ignition-138-step10-independent-validation-gate
+  - 来源：`reports/operations/ignition-138-step10-independent-validation-gate.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection](../../ASSET-CARDS.md#asset-hr-d0a5c8b7965cbf6f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection / ignition-139-step06-live-current-projection
+  - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260825-139 Step 10 — Single-live-attempt admission freeze](../../ASSET-CARDS.md#asset-hr-68fd7a8981b971f4)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260825-139 Step 10 — Single-live-attempt admission freeze / ignition-139-step10-live-admission
+  - 来源：`reports/operations/ignition-139-step10-live-admission.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260825-139 Step 11 — Single live boundary and fail-closed receipt](../../ASSET-CARDS.md#asset-hr-59aff2b58884bf4c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260825-139 Step 11 — Single live boundary and fail-closed receipt / ignition-139-step11-live-attempt
+  - 来源：`reports/operations/ignition-139-step11-live-attempt.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260825-139 Step 15 — Fresh clone, publication and witness gate](../../ASSET-CARDS.md#asset-hr-7964cf99efaf8400)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260825-139 Step 15 — Fresh clone, publication and witness gate / ignition-139-step15-fresh-clone-publication
+  - 来源：`reports/operations/ignition-139-step15-fresh-clone-publication.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate](../../ASSET-CARDS.md#asset-hr-44eb56d76a052dc0)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate / ignition-140-step16-fresh-clone-publication
+  - 来源：`reports/operations/ignition-140-step16-fresh-clone-publication.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260826-140 — Step 10 Dynamic Live Admission Freeze](../../ASSET-CARDS.md#asset-hr-b4c3a178d034780a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260826-140 — Step 10 Dynamic Live Admission Freeze / ignition-140-step10-live-admission
+  - 来源：`reports/operations/ignition-140-step10-live-admission.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260826-141 Step 16 — Fresh task-branch clone and publication gate](../../ASSET-CARDS.md#asset-hr-26ff2edbbc24babb)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260826-141 Step 16 — Fresh task-branch clone and publication gate / ignition-141-step16-fresh-clone-publication
+  - 来源：`reports/operations/ignition-141-step16-fresh-clone-publication.md`
+  - 依赖：—；被引用：—
 - [IGNITION-20260826-141 Step 16 — Post-publication projection gate repair](../../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-515e3c0bccdd8f30 / IGNITION-20260826-141 Step 16 — Post-publication projection gate repair
   - 来源：`reports/operations/ignition-141-step16-post-publication-gate-repair.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-142 Step 06 — Gemini Public Interface Audit](../../ASSET-CARDS.md#asset-hr-086dff9b702e2613)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260827-142 Step 06 — Gemini Public Interface Audit / ignition-142-step06-gemini-public-audit
+  - 来源：`reports/operations/ignition-142-step06-gemini-public-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure](../../ASSET-CARDS.md#asset-hr-e28559baf39d9944)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
+  - 可搜索名称：IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure / ignition-142-step10-reasoner-tool-closure
+  - 来源：`reports/operations/ignition-142-step10-reasoner-tool-closure.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-143 Step 07 — Article A 对抗性编辑](../../ASSET-CARDS.md#asset-hr-4ba367b053be5f75)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260827-143 Step 07 — Article A 对抗性编辑 / ignition-143-step07-article-a-editorial-review
+  - 来源：`reports/operations/ignition-143-step07-article-a-editorial-review.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-143 Step 11 — 三篇文章交叉编辑与最终审校](../../ASSET-CARDS.md#asset-hr-2cb62a01d2d98e56)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260827-143 Step 11 — 三篇文章交叉编辑与最终审校 / ignition-143-step11-cross-publication-editorial-review
+  - 来源：`reports/operations/ignition-143-step11-cross-publication-editorial-review.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计](../../ASSET-CARDS.md#asset-hr-a5389454f9d903de)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计 / ignition-143-step15-cross-publication-coherence
+  - 来源：`reports/operations/ignition-143-step15-cross-publication-coherence.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 00 — Task143 final baseline](../../ASSET-CARDS.md#asset-hr-ab65516db634d3e2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 00 — Task143 final baseline / ignition-144-step00-baseline-audit
+  - 来源：`reports/operations/ignition-144-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260828-144 Step 09 — Owner Production Brief Contract R1](../../ASSET-CARDS.md#asset-hr-1df2e57cdfc8ea82)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260828-144 Step 09 — Owner Production Brief Contract R1 / ignition-144-step09-production-brief-contract
+  - 来源：`reports/operations/ignition-144-step09-production-brief-contract.md`
   - 依赖：—；被引用：—
 - [IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-5a6642209467ff3a)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`

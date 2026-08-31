@@ -218,6 +218,9 @@ def validate() -> dict:
         errors.append("asset-card shard anchors are incomplete")
     if {row["human_anchor"] for row in layers} - explicit_anchors(HUMAN_ROOT / "READING-LAYERS.md"):
         errors.append("reading-layer anchors are incomplete")
+    layer_shard_anchors = set().union(*(explicit_anchors(path) for path in sorted((HUMAN_ROOT / "reading-layers").glob("part-*.md"))))
+    if {row["human_anchor"] for row in layers} - layer_shard_anchors:
+        errors.append("reading-layer shard anchors are incomplete")
     if {row["human_anchor"] for row in changes} - explicit_anchors(HUMAN_ROOT / "WHATS-NEW.md"):
         errors.append("What's New anchors are incomplete")
 

@@ -68,6 +68,24 @@ class CurrentStateSyncTests(unittest.TestCase):
         self.assertEqual(paths, sorted(paths))
         self.assertEqual(len(paths), len(set(paths)))
 
+    def test_operating_method_has_independent_derived_identity(self) -> None:
+        projection = facts_generator.build_projection(self.contract)
+        operating = projection["facts"]["operating_method"]
+        self.assertEqual(operating["identity"], "IGNITION_OPERATING_METHOD_R1")
+        self.assertEqual(operating["version"], "1.0.0")
+        self.assertEqual(operating["status"], "CURRENT_CANDIDATE_ON_DRAFT")
+        self.assertEqual(projection["facts"]["iteration"]["method_version"], "1.4.0")
+        self.assertNotEqual(
+            self.contract["current_operating_method"]["source_path"],
+            self.contract["current_method"]["source_path"],
+        )
+
+    def test_missing_operating_method_marker_fails_closed(self) -> None:
+        contract = copy.deepcopy(self.contract)
+        contract["current_operating_method"]["required_marker"] = "Candidate: `9.9.9`"
+        errors, _ = validator.validate_contract(contract)
+        self.assertTrue(any("operating method" in error for error in errors))
+
     def test_materiality_fingerprint_ignores_only_reciprocal_hash_fields(self) -> None:
         document = {
             "counts": {"function_machine": 1},

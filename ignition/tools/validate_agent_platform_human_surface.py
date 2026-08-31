@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the current Agent Platform/Federation human/AI surface projection.
+"""Validate the current Agent Platform/Federation and AI-first human surfaces.
 
 This is a read-only navigation and wording gate.  It does not adjudicate
 truth, causality, prose quality, Owner acceptance, or external validity.
@@ -24,9 +24,9 @@ SURFACE_RULES = {
         "EPISTEMICALLY_ACCEPTED=0",
     ),
     ".github/README.md": (
-        "Agent Platform R2",
-        "第一个大型 Domain Pack",
-        "EPISTEMICALLY_ACCEPTED=0",
+        "点火操作法 / 如何使用",
+        "Current 点火操作法",
+        "READ_ONLY_RUN",
     ),
     "ignition/AI-START-HERE.md": (
         "Agent Platform",

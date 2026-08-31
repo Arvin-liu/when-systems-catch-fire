@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ignition.local/schemas/operations/ignition-operation-playbooks-r1.schema.json",
+  "title": "Ignition Operation Playbooks R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract_id",
+    "canonical_source_path",
+    "registry_projection",
+    "lifecycle",
+    "category_audit",
+    "excluded_status_only",
+    "playbooks"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-operation-playbooks-r1"},
+    "contract_id": {"const": "IGNITION_OPERATION_PLAYBOOKS_R1"},
+    "canonical_source_path": {"const": "ignition/data/operations/ignition-operation-playbooks-r1.json"},
+    "registry_projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registry_path", "selection_rule", "derived_fields", "core_read_rule"],
+      "properties": {
+        "registry_path": {"const": "ignition/data/operations/ignition-operation-capability-registry-r1.json"},
+        "selection_rule": {"const": "CURRENT_OR_CURRENT_BOUNDED_AND_PUBLIC_OR_PUBLIC_BOUNDED"},
+        "derived_fields": {
+          "type": "array",
+          "const": ["public_name", "accepted_input_types", "output_types", "current_status", "default_execution_mode", "required_current_reads", "authoritative_sources", "applicable_governance", "validation_checks", "claim_ceiling"]
+        },
+        "core_read_rule": {"const": "UNIFIED_LIFECYCLE_CORE_PLUS_REGISTRY_OPERATION_FIELDS"}
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "status", "current_on_main"],
+      "properties": {
+        "task_id": {"const": "IGNITION-20260829-148"},
+        "status": {"const": "TASK148_CANDIDATE_BRANCH"},
+        "current_on_main": {"const": false}
+      }
+    },
+    "category_audit": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "items": {"$ref": "#/$defs/categoryAudit"}
+    },
+    "excluded_status_only": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/exclusion"}
+    },
+    "playbooks": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/playbook"}
+    }
+  },
+  "$defs": {
+    "nonblank": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": ".*\\S.*"
+    },
+    "stringList": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonblank"}
+    },
+    "categoryAudit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category_id", "coverage_status", "operation_ids", "rationale"],
+      "properties": {
+        "category_id": {
+          "enum": [
+            "knowledge_navigation_retrieval",
+            "object_analysis_collision",
+            "source_evidence_research",
+            "function_claim_governance",
+            "mechanism_model_mapping",
+            "synthesis_open_question_generation",
+            "writing_publication_transformation",
+            "translation_language_thought",
+            "validation_audit",
+            "repository_maintenance_self_iteration",
+            "executor_orchestration"
+          ]
+        },
+        "coverage_status": {
+          "enum": ["COVERED_CURRENT", "COVERED_BOUNDED", "PARTIAL_BOUNDED", "NO_DEDICATED_CURRENT_OPERATION", "STATUS_ONLY_NOT_CALLABLE"]
+        },
+        "operation_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/nonblank"}
+        },
+        "rationale": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "exclusion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation_id", "reason", "allowed_output"],
+      "properties": {
+        "operation_id": {"$ref": "#/$defs/nonblank"},
+        "reason": {"$ref": "#/$defs/nonblank"},
+        "allowed_output": {"const": "STATUS_AND_BOUNDARY_ONLY"}
+      }
+    },
+    "playbook": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation_id", "common_natural_language_intents", "execution_steps", "stop_conditions", "prohibitions"],
+      "properties": {
+        "operation_id": {"$ref": "#/$defs/nonblank"},
+        "common_natural_language_intents": {"$ref": "#/$defs/stringList"},
+        "execution_steps": {"$ref": "#/$defs/stringList"},
+        "stop_conditions": {"$ref": "#/$defs/stringList"},
+        "prohibitions": {"$ref": "#/$defs/stringList"}
+      }
+    }
+  }
+}

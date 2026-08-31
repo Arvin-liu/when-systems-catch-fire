@@ -131,6 +131,7 @@ def source_paths(contract: dict[str, Any]) -> list[Path]:
         sync.SCHEMA_PATH,
         sync.resolve_repo_path(contract["current_map"]["source_path"]),
         sync.resolve_repo_path(contract["current_method"]["source_path"]),
+        sync.resolve_repo_path(contract["current_operating_method"]["source_path"]),
         sync.resolve_repo_path("ignition/data/operations/project-components.json"),
         sync.resolve_repo_path("ignition/data/operations/change-propagation-topology.json"),
         sync.resolve_repo_path("ignition/data/agent-federation/executor-inventory-r1.json"),
@@ -283,6 +284,12 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
     method_match = re.search(r"^Current:\s*`([^`]+)`", method_text, re.MULTILINE)
     if not method_match:
         raise ValueError("cannot derive current method version")
+    operating_method = contract["current_operating_method"]
+    operating_method_text = sync.resolve_repo_path(operating_method["source_path"]).read_text(encoding="utf-8")
+    operating_identity_match = re.search(r"^Identity:\s*`([^`]+)`", operating_method_text, re.MULTILINE)
+    operating_version_match = re.search(r"^Candidate:\s*`([^`]+)`", operating_method_text, re.MULTILINE)
+    if not operating_identity_match or not operating_version_match:
+        raise ValueError("cannot derive current operating method identity and version")
 
     facts = {
         "architecture": {
@@ -359,6 +366,12 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
             "method_status": contract["current_method"]["status"],
             "current_map_version": map_layout["current_map_version"],
         },
+        "operating_method": {
+            "identity": operating_identity_match.group(1),
+            "version": operating_version_match.group(1),
+            "status": operating_method["status"],
+            "source_path": operating_method["source_path"],
+        },
         "task_lineage": {
             "current_task_id": task_lineage["current_task"]["task_id"],
             "current_task_status": task_lineage["current_task"]["execution_status"],
@@ -430,6 +443,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
     fire_seeds = facts["fire_seeds"]
     human = facts["human_surface"]
     iteration = facts["iteration"]
+    operating_method = facts["operating_method"]
     steering = facts["steering"]
     residuals = facts["environmental_residuals"]
     lines = [
@@ -438,7 +452,7 @@ def render_markdown(projection: dict[str, Any]) -> bytes:
         "",
         f"- Iteration identity: current formal task `{iteration['current_formal_task_id']}` (ordinal `{iteration['current_formal_task_ordinal']}`)；latest architecture-changing task `{iteration['latest_architecture_changing_task_id']}` (ordinal `{iteration['latest_architecture_task_ordinal']}`)；`current_iteration_boundary` `{projection['current_iteration_boundary']}` is a deprecated compatibility alias of the formal ordinal。",
         f"- Architecture registry: `{architecture['registry_components']}` components；`{architecture['visible_map_nodes']}` visible map nodes；`{architecture['hidden_components']}` hidden represented components；`{architecture['typed_topology_relations']}` typed relations；`{architecture['visible_typed_edges']}` visible typed edges。",
-        f"- Map/method: map `{architecture['current_map_version']}` Current（historical `{architecture['historical_map_version']}`）；layout `{architecture['layout_version']}`；semantic trunk `{architecture['semantic_trunk_version']}` with `{architecture['semantic_trunk_route_steps']}` bounded route stages；method `{iteration['method_version']}` `{iteration['method_status']}`。",
+        f"- Map/method: map `{architecture['current_map_version']}` Current（historical `{architecture['historical_map_version']}`）；layout `{architecture['layout_version']}`；semantic trunk `{architecture['semantic_trunk_version']}` with `{architecture['semantic_trunk_route_steps']}` bounded route stages；Iteration Method `{iteration['method_version']}` `{iteration['method_status']}`；Ignition Operating Method `{operating_method['identity']}` / `{operating_method['version']}` `{operating_method['status']}`。",
         f"- Packs: `{packs['count']}` packs；`{packs['capability_route_count']}` declared capability routes。",
         f"- Federation: `{federation['adapter_inventory_count']}` adapter inventory entries；live ceiling `{federation['live_invocation_ceiling']}`；local boundary `{federation['reference_executor_identity']}`。",
         f"- Live state dimensions: dispatch `{federation['live_state_dimensions']['live_dispatch_observation_status']}`；process `{federation['live_state_dimensions']['live_process_observation_status']}`；inference `{federation['live_state_dimensions']['inference_observation_status']}`；validated completion `{federation['live_state_dimensions']['validated_completion_status']}`；reconciliation blocker `{federation['live_state_dimensions']['reconciliation_blocker_status']}`；next eligible action `{federation['live_state_dimensions']['next_eligible_action']}`。",
