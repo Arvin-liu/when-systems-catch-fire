@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [if any\(parent_resolved == root or root in parent_resolved.parents for root in protected\):](../../../agent_federation/live_capture.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-673e0c6ce99c32ce / if any\(parent_resolved == root or root in parent_resolved.parents for root in protected\):
+  - 来源：`agent_federation/live_capture.py`
+  - 依赖：—；被引用：—
+- [if current_status == "CLOSED" and validated_completion_count < 1:](../../../agent_federation/task142_adversarial.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-27ba6bcb28ed3c77 / if current_status == "CLOSED" and validated_completion_count < 1:
+  - 来源：`agent_federation/task142_adversarial.py`
+  - 依赖：—；被引用：—
+- [if current_status == "OPEN" and validated_completion_count > 0:](../../../agent_federation/task142_adversarial.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e59e048a81b48685 / if current_status == "OPEN" and validated_completion_count > 0:
+  - 来源：`agent_federation/task142_adversarial.py`
+  - 依赖：—；被引用：—
+- [if decision and decision.get\("verdict"\) == "MATERIAL_REPAIR_REQUIRED":](../../../reos_vnext/kernel.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7C10A5864A563371 / if decision and decision.get\("verdict"\) == "MATERIAL_REPAIR_REQUIRED": / IMPLICIT-7C10A5864A563371
+  - 来源：`reos_vnext/kernel.py`
+  - 依赖：—；被引用：—
 - [if decision_record.get\("verdict"\) == "MATERIAL_REPAIR_REQUIRED" and not repair_ids and not decision_record.get\("residuals"\):](../../../reos_vnext/validation.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-77101720C3FADD52 / if decision_record.get\("verdict"\) == "MATERIAL_REPAIR_REQUIRED" and not repair_ids and not decision_record.get\("residuals"\): / IMPLICIT-77101720C3FADD52
@@ -974,6 +994,11 @@
   - 可搜索名称：NFC-5d49b960ff5f6fb9 / publication acceptance, validated live completion or epistemic acceptance is
   - 来源：`agent-results/IGNITION-20260828-146-result.md`
   - 依赖：—；被引用：—
+- [publication evidence only; no external truth, production readiness, Owner](../../../agent-results/IGNITION-20260829-148-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-279e4c258dbe2f5a / publication evidence only; no external truth, production readiness, Owner
+  - 来源：`agent-results/IGNITION-20260829-148-result.md`
+  - 依赖：—；被引用：—
 - [publication-contract evidence only. It does not establish validated live](../../../agent-results/IGNITION-20260827-142-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-72dcce9f0e676350 / publication-contract evidence only. It does not establish validated live
@@ -1634,6 +1659,11 @@
   - 可搜索名称：NFC-13743091cfedc2b0 / repeated same-context outputs are not independent evidence;
   - 来源：`reports/architecture/121Q13-attention-distribution-compression.md`
   - 依赖：—；被引用：—
+- [repository state only. It does not assert external truth, universal](../../../agent-results/IGNITION-20260829-148-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0f8f5f91f458f363 / repository state only. It does not assert external truth, universal
+  - 来源：`agent-results/IGNITION-20260829-148-result.md`
+  - 依赖：—；被引用：—
 - [Repository-local canonical Current advancement, deterministic projections, bounded regression evidence and pre-publicati](../../../agent-results/IGNITION-20260822-132-machine-receipt.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-70bd84a3c89f16b1 / Repository-local canonical Current advancement, deterministic projections, bounded regression evidence and pre-publicati
@@ -2004,6 +2034,11 @@
   - 可搜索名称：NFC-82d7a79365006fa5 / state = "FAILED" if any\(_event_type\(item\) in {"turn.failed", "error", "turn.error"} for item in events\) else "COMPLETED_
   - 来源：`agent_federation/adapters/codex.py`
   - 依赖：—；被引用：—
+- [state and no generated-output drift. The exact-head projection preflight,](../../../agent-results/IGNITION-20260829-148-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7e7b2c2d752ba1e2 / state and no generated-output drift. The exact-head projection preflight,
+  - 来源：`agent-results/IGNITION-20260829-148-result.md`
+  - 依赖：—；被引用：—
 - [state="RETURNED_UNVALIDATED",](../../../agent_federation/live_task137.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-c06b403a7bcdb332 / state="RETURNED_UNVALIDATED",
@@ -2088,6 +2123,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b5aa6f5fb0c51db4 / The 24-check deterministic projection preflight passed on both candidate/fresh preparation surfaces. Final function/nonf
   - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
+- [The accepted candidate head was independently reviewed, revalidated and](../../../agent-results/IGNITION-20260829-148-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ea8c398ee56fba47 / The accepted candidate head was independently reviewed, revalidated and
+  - 来源：`agent-results/IGNITION-20260829-148-result.md`
   - 依赖：—；被引用：—
 - [The adapter owns only the public OpenClaw CLI boundary. It does not start a](../../../agent_federation/adapters/openclaw.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-fd0adb3b840e307d / unvalidated_receipt: LiveExecutorReceipt \| None
   - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [Usage: openclaw agent \[options\]](../../../agent_federation/pilots.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1e272d97f2c66cfb / Usage: openclaw agent \[options\]
-  - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [Use this form for review evidence, reproducibility checks, red-team feedback, or gap reports. A negative finding is welc](../../../../.github/ISSUE_TEMPLATE/independent-review.yml)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-07cf7d18e996b259 / Use this form for review evidence, reproducibility checks, red-team feedback, or gap reports. A negative finding is welc
-  - 来源：`.github/ISSUE_TEMPLATE/independent-review.yml`
-  - 依赖：—；被引用：—
-- [USER_AGENT = "PointfireEvidencePilot/1.0 \(mailto:49422864+Arvin-liu@users.noreply.github.com\)"](../../../evidence-program/tools/run_crossref_verification.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d598613a606e8198 / USER_AGENT = "PointfireEvidencePilot/1.0 \(mailto:49422864+Arvin-liu@users.noreply.github.com\)"
-  - 来源：`evidence-program/tools/run_crossref_verification.py`
-  - 依赖：—；被引用：—
-- [V2 规范性审核 - 效率性协议 \(Efficiency Protocol\)](../../ASSET-CARDS.md#asset-hr-c32095e69516906c)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：V2 规范性审核 - 效率性协议 \(Efficiency Protocol\) / V2
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/V2.md`
-  - 依赖：—；被引用：—
-- [valid.append\(StructuredResultEvidence\(value, f"{path}.{key}", source_digest\)\)](../../../agent_federation/structured_result_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-ad073c5976214a62 / valid.append\(StructuredResultEvidence\(value, f"{path}.{key}", source_digest\)\)
-  - 来源：`agent_federation/structured_result_contract.py`
-  - 依赖：—；被引用：—
-- [valid.append\(StructuredResultEvidence\(value, path, None\)\)](../../../agent_federation/structured_result_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-c505fb55ae3b684f / valid.append\(StructuredResultEvidence\(value, path, None\)\)
-  - 来源：`agent_federation/structured_result_contract.py`
-  - 依赖：—；被引用：—
-- [valid: list\[StructuredResultEvidence\] = \[\]](../../../agent_federation/structured_result_contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a56ebb6812d14f8a / valid: list\[StructuredResultEvidence\] = \[\]
-  - 来源：`agent_federation/structured_result_contract.py`
-  - 依赖：—；被引用：—
-- [validate_current_projection_fresh\(current, expected\)](../../../agent_federation/task142_adversarial.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-57c9c93c57b3a2d0 / validate_current_projection_fresh\(current, expected\)
-  - 来源：`agent_federation/task142_adversarial.py`
   - 依赖：—；被引用：—

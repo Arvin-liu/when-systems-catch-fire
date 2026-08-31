@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [数学表达 / Expression: `F_{T34}\(x\) := T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln\(M_Planck/μ\)在μ=M_Pla](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ac05b5dd9e5f6a3c / 数学表达 / Expression: `F_{T34}\(x\) := T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln\(M_Planck/μ\)在μ=M_Pla
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D225, T34；被引用：—
 - [数学表达 / Expression: `Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q_evidence`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2f6c53baffa4ff90 / 数学表达 / Expression: `Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q_evidence`
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-ef1ebcad1fb256f6 / 相关函数：D585 欧亚枢纽函数、D586 北方之路函数、D587 共享-退出权同构函数、D588 对称性-共享协议函数、D589 通道不对称-贸易枢纽函数
   - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
   - 依赖：D585, D586, D587, D588；被引用：—
-- [相变序参量-门槛函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D199 / 相变序参量-门槛函数 / D199
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D211, D220, D270；被引用：NFC-1d5bbce2196b0f46, NFC-43c36efc7513c9bc, NFC-65cedcbf5b6f6671

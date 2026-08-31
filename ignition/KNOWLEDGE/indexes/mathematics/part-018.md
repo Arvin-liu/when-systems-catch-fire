@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [相变序参量-门槛函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D199 / 相变序参量-门槛函数 / D199
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D270；被引用：NFC-1d5bbce2196b0f46, NFC-43c36efc7513c9bc, NFC-65cedcbf5b6f6671
 - [相变序参量-门槛函数，相变序参量φ=门控面Λ的序参量。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-157B32E131A3B1EC / 相变序参量-门槛函数，相变序参量φ=门控面Λ的序参量。 / IMPLICIT-157B32E131A3B1EC
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-8a03e2e51652a5bc / 已迁移的历史函数来源/0375-D339-僵尸态救援函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D339；被引用：—
-- [已迁移的历史函数来源/0376-D340-正反馈饱和后振荡函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-994de709c878b46d / 已迁移的历史函数来源/0376-D340-正反馈饱和后振荡函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D340；被引用：—

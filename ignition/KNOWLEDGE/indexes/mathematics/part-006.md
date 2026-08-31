@@ -519,6 +519,11 @@
   - 可搜索名称：IGNITION-20260828-147 result / IGNITION-20260828-147-result
   - 来源：`agent-results/IGNITION-20260828-147-result.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260829-148 result — AI-first 点火操作法 R1](../../ASSET-CARDS.md#asset-hr-d5ef84223f92b8ef)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260829-148 result — AI-first 点火操作法 R1 / IGNITION-20260829-148-result
+  - 来源：`agent-results/IGNITION-20260829-148-result.md`
+  - 依赖：—；被引用：—
 - [IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC-EXACT-HEAD-ACCEPTANCE-AND-PAGES-CLOSEOUT-R1-20260727 将 PR #143（head `77fc5f95777a3b](../../../docs/VERSIONING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6a2e2859e974ccd4 / IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC-EXACT-HEAD-ACCEPTANCE-AND-PAGES-CLOSEOUT-R1-20260727 将 PR #143（head `77fc5f95777a3b
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-a46d9d800ad5ba5a / Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = \(bp-q\)/b 映射： - f* ↔ ε信号最优流速 v*
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D53；被引用：—
-- [Object D538 defines a optimization_problem within the point-fire framework. Core: 中文：潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-8e61a3f281a8e73f / Object D538 defines a optimization_problem within the point-fire framework. Core: 中文：潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\)
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D538；被引用：—

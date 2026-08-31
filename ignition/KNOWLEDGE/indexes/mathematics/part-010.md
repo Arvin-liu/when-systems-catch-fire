@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 民事保护,各维度退出权的乘积 is adjudicated as RELATION: 民事保护，各维度退出权的乘积。. This is a model-internal co](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D22 / Within the source-defined scope, 民事保护,各维度退出权的乘积 is adjudicated as RELATION: 民事保护，各维度退出权的乘积。. This is a model-internal co
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 法条净效应函数 is adjudicated as RELATION: 法条净效应，遮蔽模糊、退出成本增益、法条刚性的平衡。. This is a model-interna](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D20 / Within the source-defined scope, 法条净效应函数 is adjudicated as RELATION: 法条净效应，遮蔽模糊、退出成本增益、法条刚性的平衡。. This is a model-interna
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-64d98eed454893cb / \| \[D535\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D535\(h\) := \(β,σ,ε\) where β=biologica
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D535；被引用：—
-- [\| \[D538\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D538\(s\) := C\(s\)=1\[φ\(s\)>θ_a\], φ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-464a4ff404f42917 / \| \[D538\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D538\(s\) := C\(s\)=1\[φ\(s\)>θ_a\], φ
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D538；被引用：—

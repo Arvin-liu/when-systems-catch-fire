@@ -1050,6 +1050,8 @@
 - [Pilot Formal Audit](./cards/part-011.md#asset-hr-d4b5c8e581f06e23) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-D4B5C8E581F06E23`
 <a id="asset-hr-d5166569c3ff6750"></a>
 - [抽取审计](./cards/part-011.md#asset-hr-d5166569c3ff6750) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-D5166569C3FF6750`
+<a id="asset-hr-d5ef84223f92b8ef"></a>
+- [IGNITION-20260829-148 result — AI-first 点火操作法 R1](./cards/part-011.md#asset-hr-d5ef84223f92b8ef) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-D5EF84223F92B8EF`
 <a id="asset-hr-d6193a2d42722179"></a>
 - [IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule](./cards/part-011.md#asset-hr-d6193a2d42722179) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-D6193A2D42722179`
 <a id="asset-hr-d660dc784cc90282"></a>
@@ -1101,7 +1103,7 @@
 <a id="asset-hr-deb3e834ad440e87"></a>
 - [认知迁移编辑修订：Owner 决定与独立审查入口](./cards/part-011.md#asset-hr-deb3e834ad440e87) — `RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD` · `HR-DEB3E834AD440E87`
 <a id="asset-hr-e053e34801e5f2cc"></a>
-- [IGNITION-138 — Amendment-01 Step 06 Dynamic Admission](./cards/part-011.md#asset-hr-e053e34801e5f2cc) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E053E34801E5F2CC`
+- [IGNITION-138 — Amendment-01 Step 06 Dynamic Admission](./cards/part-012.md#asset-hr-e053e34801e5f2cc) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E053E34801E5F2CC`
 <a id="asset-hr-e107b962a716e63c"></a>
 - [IGNITION-20260826-141 Step 15 — targeted regression](./cards/part-012.md#asset-hr-e107b962a716e63c) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E107B962A716E63C`
 <a id="asset-hr-e14552c4c0658b5a"></a>
@@ -1201,6 +1203,6 @@
 <a id="asset-hr-fcbaa498cbeb783c"></a>
 - [080 Resume Instructions](./cards/part-012.md#asset-hr-fcbaa498cbeb783c) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FCBAA498CBEB783C`
 <a id="asset-hr-fd9206bee6e7782d"></a>
-- [学科理论核卡片：物理学](./cards/part-012.md#asset-hr-fd9206bee6e7782d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FD9206BEE6E7782D`
+- [学科理论核卡片：物理学](./cards/part-013.md#asset-hr-fd9206bee6e7782d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FD9206BEE6E7782D`
 <a id="asset-hr-ffcc6d11834eee16"></a>
 - [IGNITION-20260828-146 result](./cards/part-013.md#asset-hr-ffcc6d11834eee16) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FFCC6D11834EEE16`
