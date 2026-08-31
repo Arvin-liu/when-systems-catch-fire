@@ -1,0 +1,304 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/provider-adapter-contract-r0.schema.json",
+  "title": "Ignition provider-neutral adapter contract R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract_id",
+    "task_id",
+    "status",
+    "provider_neutral",
+    "formal_baseline_sha",
+    "upstream_freeze",
+    "provider_classes",
+    "required_provider_record_fields",
+    "authority_invariants",
+    "selection_authority",
+    "provider_record_policy",
+    "provider_records",
+    "global_admission_summary",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-149-provider-adapter-contract-r0"},
+    "contract_id": {"const": "IGNITION_PROVIDER_ADAPTER_CONTRACT_R0"},
+    "task_id": {"const": "IGNITION-20260831-149"},
+    "status": {"const": "SPIKE_CONTRACT_ESTABLISHED"},
+    "provider_neutral": {"const": true},
+    "formal_baseline_sha": {"$ref": "#/$defs/sha"},
+    "upstream_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifact_path", "artifact_sha256", "source_copied_into_ignition", "license_permission_interpreted_as_vendoring_permission"],
+      "properties": {
+        "artifact_path": {"const": "ignition/data/operations/iterations/149/step02-upstream-freeze.json"},
+        "artifact_sha256": {"$ref": "#/$defs/sha256"},
+        "source_copied_into_ignition": {"const": false},
+        "license_permission_interpreted_as_vendoring_permission": {"const": false}
+      }
+    },
+    "provider_classes": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"$ref": "#/$defs/providerClass"}
+    },
+    "required_provider_record_fields": {
+      "type": "array",
+      "minItems": 24,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonblank"}
+    },
+    "authority_invariants": {
+      "type": "array",
+      "const": [
+        "EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY",
+        "PROVIDER_CAPABILITY ≠ PERMISSION",
+        "PROVIDER_OUTPUT ≠ EXTERNAL_TRUTH",
+        "PROVIDER_LOCAL_POLICY ≠ IGNITION_GLOBAL_POLICY",
+        "ADAPTER_SPIKE_PASS ≠ CURRENT_CAPABILITY"
+      ]
+    },
+    "selection_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["owner", "provider_does_not_select_ignition_behavior", "selection_policy_artifact", "selection_inputs_must_be_evaluated_per_operation_and_environment", "provider_local_forced_routing_is_not_a_selection_input"],
+      "properties": {
+        "owner": {"const": "IGNITION"},
+        "provider_does_not_select_ignition_behavior": {"const": true},
+        "selection_policy_artifact": {"const": "CREATED_IN_STEP04"},
+        "selection_inputs_must_be_evaluated_per_operation_and_environment": {"const": true},
+        "provider_local_forced_routing_is_not_a_selection_input": {"const": true}
+      }
+    },
+    "provider_record_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_ids_are_not_exhaustive", "future_provider_classes_must_reuse_this_contract", "provider_records_are_candidates_not_current_capabilities", "no_implicit_permission_grant", "no_authenticated_channel_admission", "no_live_external_invocation_change", "no_provider_specific_architecture_truth_node", "no_upstream_source_copy_or_vendor_runtime", "provider_local_policy_inheritance"],
+      "properties": {
+        "provider_ids_are_not_exhaustive": {"const": true},
+        "future_provider_classes_must_reuse_this_contract": {"const": true},
+        "provider_records_are_candidates_not_current_capabilities": {"const": true},
+        "no_implicit_permission_grant": {"const": true},
+        "no_authenticated_channel_admission": {"const": true},
+        "no_live_external_invocation_change": {"const": true},
+        "no_provider_specific_architecture_truth_node": {"const": true},
+        "no_upstream_source_copy_or_vendor_runtime": {"const": true},
+        "provider_local_policy_inheritance": {"const": "FORBIDDEN"}
+      }
+    },
+    "provider_records": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/providerRecord"}
+    },
+    "global_admission_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "archify", "agent_reach", "authenticated_channels", "live_external_invocation", "current_integration", "production_readiness"],
+      "properties": {
+        "status": {"const": "PROVIDER_ADMISSION_CANDIDATE"},
+        "archify": {"$ref": "#/$defs/nonblank"},
+        "agent_reach": {"$ref": "#/$defs/nonblank"},
+        "authenticated_channels": {"const": "NO_AUTHENTICATED_CHANNEL_ADMISSION"},
+        "live_external_invocation": {"const": "LIVE_EXTERNAL_INVOCATION_UNCHANGED"},
+        "current_integration": {"const": "NOT_CURRENT_INTEGRATION"},
+        "production_readiness": {"const": "NOT_PRODUCTION_READY"}
+      }
+    },
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "providerClass": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_class", "role", "allowed_flow", "prohibited_flow"],
+      "properties": {
+        "provider_class": {"enum": ["DERIVED_VISUALIZATION_PROVIDER", "READ_ONLY_SOURCE_ACQUISITION_PROVIDER"]},
+        "role": {"$ref": "#/$defs/nonblank"},
+        "allowed_flow": {"$ref": "#/$defs/nonblank"},
+        "prohibited_flow": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "upstreamRepository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["slug", "url", "observed_ref", "starting_clue_sha", "starting_clue_matches_observed"],
+      "properties": {
+        "slug": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+        "url": {"type": "string", "format": "uri", "pattern": "^https://github\\.com/"},
+        "observed_ref": {"const": "refs/heads/main"},
+        "starting_clue_sha": {"$ref": "#/$defs/sha"},
+        "starting_clue_matches_observed": {"type": "boolean"}
+      }
+    },
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["spdx", "license_file", "license_sha256", "attribution_requirements"],
+      "properties": {
+        "spdx": {"const": "MIT"},
+        "license_file": {"const": "LICENSE"},
+        "license_sha256": {"$ref": "#/$defs/sha256"},
+        "attribution_requirements": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}}
+      }
+    },
+    "discoveryMethod": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "observed_at", "evidence_artifact", "source_copied_into_ignition"],
+      "properties": {
+        "method": {"const": "FRESH_GITHUB_PUBLIC_GIT_LS_REMOTE_AND_PUBLIC_METADATA"},
+        "observed_at": {"$ref": "#/$defs/nonblank"},
+        "evidence_artifact": {"const": "ignition/data/operations/iterations/149/step02-upstream-freeze.json"},
+        "source_copied_into_ignition": {"const": false}
+      }
+    },
+    "healthMethod": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["method", "result", "evidence", "credentials_accessed"],
+      "properties": {
+        "method": {"$ref": "#/$defs/nonblank"},
+        "result": {"enum": ["PASS", "BLOCKED_DEPENDENCY", "OBSERVED", "SKIPPED_UNSAFE_OR_UNAVAILABLE"]},
+        "evidence": {"$ref": "#/$defs/nonblank"},
+        "credentials_accessed": {"const": false}
+      }
+    },
+    "providerRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider_id", "provider_class", "upstream_repository", "pinned_revision", "license", "discovery_method", "health_check_method", "accepted_abstract_operations", "input_types", "output_types", "side_effect_class", "network_requirement", "authentication_requirement", "credential_exposure_class", "install_requirement", "current_environment_availability", "admission_status", "trust_boundary", "provenance_requirement", "validator_receipt", "failure_mode", "fallback_semantics", "provider_local_policy_not_inherited", "current_integration"
+      ],
+      "properties": {
+        "provider_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]{1,63}$"},
+        "provider_class": {"enum": ["DERIVED_VISUALIZATION_PROVIDER", "READ_ONLY_SOURCE_ACQUISITION_PROVIDER"]},
+        "upstream_repository": {"$ref": "#/$defs/upstreamRepository"},
+        "pinned_revision": {"$ref": "#/$defs/sha"},
+        "license": {"$ref": "#/$defs/license"},
+        "discovery_method": {"$ref": "#/$defs/discoveryMethod"},
+        "health_check_method": {"$ref": "#/$defs/healthMethod"},
+        "accepted_abstract_operations": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
+        "input_types": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
+        "output_types": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
+        "side_effect_class": {"enum": ["NONE", "DERIVED_ARTIFACT_ONLY", "READ_ONLY_NETWORK", "EXTERNAL_ACTION"]},
+        "network_requirement": {
+          "type": "object", "additionalProperties": false,
+          "required": ["classification", "required_for_accepted_operations", "optional_paths", "Ignition_network_authority"],
+          "properties": {
+            "classification": {"enum": ["NONE", "OPTIONAL", "REQUIRED"]},
+            "required_for_accepted_operations": {"type": "boolean"},
+            "optional_paths": {"type": "array", "items": {"$ref": "#/$defs/nonblank"}},
+            "Ignition_network_authority": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "authentication_requirement": {
+          "type": "object", "additionalProperties": false,
+          "required": ["required_for_accepted_operations", "supported_scope", "authenticated_channel_admission"],
+          "properties": {
+            "required_for_accepted_operations": {"oneOf": [{"type": "boolean"}, {"const": "CHANNEL_DEPENDENT"}]},
+            "supported_scope": {"$ref": "#/$defs/nonblank"},
+            "authenticated_channel_admission": {"const": "NOT_GRANTED"}
+          }
+        },
+        "credential_exposure_class": {"enum": ["NONE_EXPECTED", "CHANNEL_DEPENDENT_NO_AUTOMATIC_AUTH", "EXPLICIT_CREDENTIAL_INPUT_REQUIRED"]},
+        "install_requirement": {
+          "type": "object", "additionalProperties": false,
+          "required": ["classification", "details", "task_local_install_performed"],
+          "properties": {
+            "classification": {"$ref": "#/$defs/nonblank"},
+            "details": {"$ref": "#/$defs/nonblank"},
+            "task_local_install_performed": {"const": false}
+          }
+        },
+        "current_environment_availability": {
+          "type": "object", "additionalProperties": false,
+          "required": ["status", "scope", "evidence", "current_capability"],
+          "properties": {
+            "status": {"enum": ["AVAILABLE_FOR_RECORDED_SPIKE", "PARTIAL_ENVIRONMENT_OBSERVATION", "ENVIRONMENT_MISSING", "BLOCKED"]},
+            "scope": {"$ref": "#/$defs/nonblank"},
+            "evidence": {"$ref": "#/$defs/nonblank"},
+            "current_capability": {"const": false}
+          }
+        },
+        "admission_status": {"enum": ["NOT_ASSESSED", "SPIKE_ONLY", "ADMISSION_CANDIDATE", "NOT_ADMITTED", "BLOCKED"]},
+        "trust_boundary": {
+          "type": "object", "additionalProperties": false,
+          "required": ["provider_is_not_ignition_authority", "provider_capability_is_not_permission", "provider_output_is_not_external_truth", "provider_output_is_not_architecture_truth"],
+          "properties": {
+            "provider_is_not_ignition_authority": {"const": true},
+            "provider_capability_is_not_permission": {"const": true},
+            "provider_output_is_not_external_truth": {"const": true},
+            "provider_output_is_not_architecture_truth": {"const": true},
+            "ignition_owns_input_selection_and_acceptance": {"const": true},
+            "ignition_owns_source_scope_channel_selection_and_acceptance": {"const": true}
+          }
+        },
+        "provenance_requirement": {
+          "type": "object", "additionalProperties": false,
+          "required": ["required", "fields", "missing_provenance_result"],
+          "properties": {
+            "required": {"const": true},
+            "fields": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
+            "missing_provenance_result": {"const": "REJECT_AS_UNVALIDATED"}
+          }
+        },
+        "validator_receipt": {
+          "type": "object", "additionalProperties": false,
+          "required": ["required", "accepted_receipts", "receipt_must_bind", "current_receipt_path"],
+          "properties": {
+            "required": {"const": true},
+            "accepted_receipts": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}},
+            "receipt_must_bind": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
+            "current_receipt_path": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "failure_mode": {
+          "type": "object", "additionalProperties": false,
+          "required": ["known", "handling"],
+          "properties": {
+            "known": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}},
+            "handling": {"$ref": "#/$defs/nonblank"}
+          }
+        },
+        "fallback_semantics": {
+          "type": "object", "additionalProperties": false,
+          "required": ["allowed", "policy_owner", "fallback_candidates", "no_implicit_substitution"],
+          "properties": {
+            "allowed": {"const": true},
+            "policy_owner": {"const": "IGNITION_STEP04_PROVIDER_SELECTION_POLICY"},
+            "fallback_candidates": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}},
+            "no_implicit_substitution": {"const": true},
+            "fallback_must_preserve_operation_and_provenance_contract": {"const": true},
+            "fallback_must_preserve_operation_channel_and_provenance_contract": {"const": true}
+          }
+        },
+        "provider_local_policy_not_inherited": {
+          "type": "object", "additionalProperties": false,
+          "required": ["inherited", "rules_not_inherited"],
+          "properties": {
+            "inherited": {"const": false},
+            "rules_not_inherited": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonblank"}}
+          }
+        },
+        "current_integration": {
+          "type": "object", "additionalProperties": false,
+          "required": ["status", "operation_registry_entry", "pack_permission_change", "architecture_node_change", "live_external_invocation"],
+          "properties": {
+            "status": {"const": "NOT_CURRENT_INTEGRATION"},
+            "operation_registry_entry": {"const": false},
+            "pack_permission_change": {"const": false},
+            "architecture_node_change": {"const": false},
+            "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED"}
+          }
+        }
+      }
+    }
+  }
+}
