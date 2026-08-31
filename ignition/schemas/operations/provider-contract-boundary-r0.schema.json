@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/provider-contract-boundary-r0.schema.json",
+  "title": "Ignition Task149 minimal provider-neutral contract boundary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "contract_id",
+    "task_id",
+    "status",
+    "provider_neutral",
+    "formal_baseline_sha",
+    "provider_classes",
+    "required_provider_record_fields",
+    "admission_status_vocabulary",
+    "side_effect_class_vocabulary",
+    "authority_invariants",
+    "provider_records",
+    "provider_record_policy",
+    "architecture_boundary",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-149-step01-provider-contract-boundary-r0"},
+    "contract_id": {"const": "IGNITION_PROVIDER_ADAPTER_BOUNDARY_R0"},
+    "task_id": {"const": "IGNITION-20260831-149"},
+    "status": {"const": "MINIMAL_BOUNDARY_ESTABLISHED"},
+    "provider_neutral": {"const": true},
+    "formal_baseline_sha": {"$ref": "#/$defs/sha"},
+    "provider_classes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {"$ref": "#/$defs/providerClass"}
+    },
+    "required_provider_record_fields": {
+      "type": "array",
+      "minItems": 20,
+      "uniqueItems": true,
+      "items": {"$ref": "#/$defs/nonblank"}
+    },
+    "admission_status_vocabulary": {
+      "type": "array",
+      "const": ["NOT_ASSESSED", "SPIKE_ONLY", "ADMISSION_CANDIDATE", "NOT_ADMITTED", "BLOCKED"]
+    },
+    "side_effect_class_vocabulary": {
+      "type": "array",
+      "const": ["NONE", "DERIVED_ARTIFACT_ONLY", "READ_ONLY_NETWORK", "EXTERNAL_ACTION"]
+    },
+    "authority_invariants": {
+      "type": "array",
+      "const": [
+        "EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY",
+        "PROVIDER_CAPABILITY ≠ PERMISSION",
+        "PROVIDER_OUTPUT ≠ EXTERNAL_TRUTH",
+        "PROVIDER_LOCAL_POLICY ≠ IGNITION_GLOBAL_POLICY",
+        "ADAPTER_SPIKE_PASS ≠ CURRENT_CAPABILITY"
+      ]
+    },
+    "provider_records": {"type": "array", "maxItems": 0},
+    "provider_record_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "empty_until_step02_and_step03",
+        "no_vendor_runtime_integration",
+        "no_authenticated_channel_admission",
+        "no_live_external_invocation_change",
+        "no_provider_specific_architecture_node"
+      ],
+      "properties": {
+        "empty_until_step02_and_step03": {"const": true},
+        "no_vendor_runtime_integration": {"const": true},
+        "no_authenticated_channel_admission": {"const": true},
+        "no_live_external_invocation_change": {"const": true},
+        "no_provider_specific_architecture_node": {"const": true}
+      }
+    },
+    "architecture_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["existing_owner", "existing_adapter_boundary", "new_control_plane_authority", "new_architecture_layer", "identity_impact", "reason"],
+      "properties": {
+        "existing_owner": {"const": "Ignition OS / orchestration-governance layer"},
+        "existing_adapter_boundary": {"const": "External Agent Federation adapter boundary"},
+        "new_control_plane_authority": {"const": "NONE"},
+        "new_architecture_layer": {"const": "NONE"},
+        "identity_impact": {"const": "NONE"},
+        "reason": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "providerClass": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_class", "role", "allowed_flow", "prohibited_flow"],
+      "properties": {
+        "provider_class": {"enum": ["DERIVED_VISUALIZATION_PROVIDER", "READ_ONLY_SOURCE_ACQUISITION_PROVIDER"]},
+        "role": {"$ref": "#/$defs/nonblank"},
+        "allowed_flow": {"$ref": "#/$defs/nonblank"},
+        "prohibited_flow": {"$ref": "#/$defs/nonblank"}
+      }
+    }
+  }
+}
