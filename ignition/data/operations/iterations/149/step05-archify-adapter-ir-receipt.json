@@ -1,0 +1,79 @@
+{
+  "schema_version": "ignition-149-step05-archify-adapter-ir-r0",
+  "task_id": "IGNITION-20260831-149",
+  "step": "05",
+  "status": "IR_GENERATED",
+  "provider_id": "archify",
+  "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+  "formal_previous_commit": "a051ad31b72d5cbb8deeaf2007b0e09431f8a4ba",
+  "formal_baseline_sha": "14c2595d796494286caf31378173fd9dd027edcf",
+  "upstream_revision": "2bfb47132c057195d8dddb3e25ae966dd7c7a72e",
+  "upstream_schema_surface": {
+    "path": "archify/schemas/architecture.schema.json",
+    "sha256": "8c96140b6af8d93fb825a3c63e46b74176c9485185c978074ffe89e0f614576c",
+    "source_remains_external": true
+  },
+  "upstream_update_awareness": {
+    "command": "node scripts/check-update.mjs",
+    "status": "CURRENT_SILENT",
+    "output": "{\"status\":\"silent\",\"reason\":\"current\"}",
+    "recorded_separately_from_adapter_network": true
+  },
+  "source_inputs": [
+    {
+      "path": "ignition/data/architecture/overall-architecture.json",
+      "role": "canonical_architecture_input",
+      "sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+      "status": "CURRENT_CANONICAL_SOURCE"
+    },
+    {
+      "path": "ignition/data/architecture/interactive-system-map.json",
+      "role": "current_system_map_context_and_cross_check",
+      "sha256": "3824697a9c781c1ea825f7335bc9461e6fb693e70bb65c042309fd16da173313",
+      "status": "CURRENT_CANONICAL_SOURCE",
+      "map_version": "0.16.0"
+    }
+  ],
+  "adapter": {
+    "script": "ignition/tools/run_task149_archify_adapter.py",
+    "algorithm": "CANONICAL_GROUPS_NODES_EDGES_TO_ARCHIFY_COMPONENTS_CONNECTIONS",
+    "source_copy_or_vendor": false,
+    "provider_output_can_update_canonical_truth": false
+  },
+  "typed_ir": {
+    "path": "ignition/data/operations/iterations/149/archify-typed-ir-r0.json",
+    "sha256": "6cbe95b69181c6b662384e7f4fe90d21161fbef379d905cd7f38562cbf4bdf35",
+    "schema_version": 1,
+    "diagram_type": "architecture",
+    "component_count": 24,
+    "connection_count": 24,
+    "boundary_count": 8
+  },
+  "adapter_structural_validation": {
+    "status": "PASS",
+    "checks": [
+      "all canonical architecture nodes became typed components",
+      "all canonical architecture edges became typed connections",
+      "all connection endpoints resolve to typed components",
+      "all group boundaries wrap only typed components",
+      "canonical source paths and formal revision are retained in IR metadata"
+    ]
+  },
+  "archify_external_validation": {
+    "status": "PENDING_STEP06",
+    "validation_receipt": "NOT_YET_CREATED",
+    "delivery_receipt": "NOT_YET_CREATED",
+    "visual_check": "NOT_YET_RUN"
+  },
+  "boundary": {
+    "flow": "IGNITION_CANONICAL_DATA -> ADAPTER -> ARCHIFY_TYPED_IR",
+    "provider_role": "DERIVED_VISUALIZATION_PROVIDER",
+    "side_effect_class": "DERIVED_ARTIFACT_ONLY",
+    "network_used_by_adapter": false,
+    "authentication_used": false,
+    "permission_granted": false,
+    "current_integration": "NOT_CURRENT_INTEGRATION",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED"
+  },
+  "claim_ceiling": "The adapter deterministically generated a typed Archify-shaped IR from the recorded Ignition canonical inputs in this repository revision. It does not establish Archify validation/delivery success, visual usefulness, architecture truth, Current integration, production readiness, authenticated-channel admission or external truth."
+}

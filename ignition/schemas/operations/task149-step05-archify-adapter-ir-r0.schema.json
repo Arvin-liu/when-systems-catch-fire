@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task149-step05-archify-adapter-ir-r0.schema.json",
+  "title": "Task149 Step05 Archify adapter typed IR receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "status", "provider_id", "provider_class", "formal_previous_commit", "formal_baseline_sha", "upstream_revision", "upstream_schema_surface", "upstream_update_awareness", "source_inputs", "adapter", "typed_ir", "adapter_structural_validation", "archify_external_validation", "boundary", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-149-step05-archify-adapter-ir-r0"},
+    "task_id": {"const": "IGNITION-20260831-149"},
+    "step": {"const": "05"},
+    "status": {"const": "IR_GENERATED"},
+    "provider_id": {"const": "archify"},
+    "provider_class": {"const": "DERIVED_VISUALIZATION_PROVIDER"},
+    "formal_previous_commit": {"$ref": "#/$defs/sha"},
+    "formal_baseline_sha": {"$ref": "#/$defs/sha"},
+    "upstream_revision": {"$ref": "#/$defs/sha"},
+    "upstream_schema_surface": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "source_remains_external"],
+      "properties": {
+        "path": {"const": "archify/schemas/architecture.schema.json"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "source_remains_external": {"const": true}
+      }
+    },
+    "upstream_update_awareness": {
+      "type": "object", "additionalProperties": false,
+      "required": ["command", "status", "output", "recorded_separately_from_adapter_network"],
+      "properties": {
+        "command": {"const": "node scripts/check-update.mjs"},
+        "status": {"const": "CURRENT_SILENT"},
+        "output": {"const": "{\"status\":\"silent\",\"reason\":\"current\"}"},
+        "recorded_separately_from_adapter_network": {"const": true}
+      }
+    },
+    "source_inputs": {
+      "type": "array", "minItems": 2, "maxItems": 2,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["path", "role", "sha256", "status"],
+        "properties": {
+          "path": {"enum": ["ignition/data/architecture/overall-architecture.json", "ignition/data/architecture/interactive-system-map.json"]},
+          "role": {"$ref": "#/$defs/nonblank"},
+          "sha256": {"$ref": "#/$defs/sha256"},
+          "status": {"const": "CURRENT_CANONICAL_SOURCE"},
+          "map_version": {"$ref": "#/$defs/nonblank"}
+        }
+      }
+    },
+    "adapter": {
+      "type": "object", "additionalProperties": false,
+      "required": ["script", "algorithm", "source_copy_or_vendor", "provider_output_can_update_canonical_truth"],
+      "properties": {
+        "script": {"const": "ignition/tools/run_task149_archify_adapter.py"},
+        "algorithm": {"$ref": "#/$defs/nonblank"},
+        "source_copy_or_vendor": {"const": false},
+        "provider_output_can_update_canonical_truth": {"const": false}
+      }
+    },
+    "typed_ir": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "schema_version", "diagram_type", "component_count", "connection_count", "boundary_count"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/iterations/149/archify-typed-ir-r0.json"},
+        "sha256": {"$ref": "#/$defs/sha256"},
+        "schema_version": {"const": 1},
+        "diagram_type": {"const": "architecture"},
+        "component_count": {"type": "integer", "minimum": 1},
+        "connection_count": {"type": "integer", "minimum": 0},
+        "boundary_count": {"type": "integer", "minimum": 0}
+      }
+    },
+    "adapter_structural_validation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "checks"],
+      "properties": {
+        "status": {"const": "PASS"},
+        "checks": {"type": "array", "minItems": 5, "items": {"$ref": "#/$defs/nonblank"}}
+      }
+    },
+    "archify_external_validation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "validation_receipt", "delivery_receipt", "visual_check"],
+      "properties": {
+        "status": {"const": "PENDING_STEP06"},
+        "validation_receipt": {"const": "NOT_YET_CREATED"},
+        "delivery_receipt": {"const": "NOT_YET_CREATED"},
+        "visual_check": {"const": "NOT_YET_RUN"}
+      }
+    },
+    "boundary": {
+      "type": "object", "additionalProperties": false,
+      "required": ["flow", "provider_role", "side_effect_class", "network_used_by_adapter", "authentication_used", "permission_granted", "current_integration", "live_external_invocation"],
+      "properties": {
+        "flow": {"const": "IGNITION_CANONICAL_DATA -> ADAPTER -> ARCHIFY_TYPED_IR"},
+        "provider_role": {"const": "DERIVED_VISUALIZATION_PROVIDER"},
+        "side_effect_class": {"const": "DERIVED_ARTIFACT_ONLY"},
+        "network_used_by_adapter": {"const": false},
+        "authentication_used": {"const": false},
+        "permission_granted": {"const": false},
+        "current_integration": {"const": "NOT_CURRENT_INTEGRATION"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED"}
+      }
+    },
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}
