@@ -3124,7 +3124,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "f38a4908b03e9b04587a47abcbeef4074c8f155765066778de449b2225da00ef",
+      "source_sha256": "1a7d9b4347e0b00e236c181f34c87b5d907c87de3d94ce13f4604944ceeefb90",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"
@@ -4588,7 +4588,7 @@
       "title": "点火 Operation-specific Playbooks R1",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "9ce2752b1d40785020a9a8b9c620a026a564de049535c111911b326d6d0e223a",
+      "source_sha256": "dd2035d3b7615f0f6707886fd41976e2968e160544cd8293c169a42bbc57eeca",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
