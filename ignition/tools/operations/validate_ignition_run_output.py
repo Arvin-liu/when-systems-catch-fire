@@ -143,8 +143,13 @@ def validate_contract(contract: dict[str, Any] | None = None) -> list[str]:
     if document.get("instance_schema_path") != "ignition/schemas/operations/ignition-run-output-r1.schema.json":
         errors.append("instance schema path is missing or changed")
     lifecycle = document.get("lifecycle", {})
-    if lifecycle.get("task_id") != "IGNITION-20260829-148" or lifecycle.get("current_on_main") is not False:
-        errors.append("Task148 candidate lifecycle must not claim Current on main")
+    if lifecycle.get("task_id") != "IGNITION-20260829-148":
+        errors.append("output contract lifecycle task_id is not Task148")
+    if lifecycle.get("status") == "CURRENT":
+        if lifecycle.get("current_on_main") is not True:
+            errors.append("Current output contract must set current_on_main=true")
+    elif lifecycle.get("status") != "TASK148_CANDIDATE_BRANCH" or lifecycle.get("current_on_main") is not False:
+        errors.append("output contract lifecycle is neither a synchronized Current state nor a valid candidate state")
     actual_semantics = [
         (row.get("semantic_id"), row.get("json_pointer"))
         for row in document.get("semantic_fields", [])

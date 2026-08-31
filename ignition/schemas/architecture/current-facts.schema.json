@@ -143,7 +143,7 @@
           "properties": {
             "identity": {"const": "IGNITION_OPERATING_METHOD_R1"},
             "version": {"const": "1.0.0"},
-            "status": {"const": "CURRENT_CANDIDATE_ON_DRAFT"},
+            "status": {"const": "CURRENT"},
             "source_path": {"const": "ignition/OPERATING-METHOD.md"}
           }
         },

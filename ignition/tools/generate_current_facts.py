@@ -287,7 +287,7 @@ def build_projection(contract: dict[str, Any] | None = None) -> dict[str, Any]:
     operating_method = contract["current_operating_method"]
     operating_method_text = sync.resolve_repo_path(operating_method["source_path"]).read_text(encoding="utf-8")
     operating_identity_match = re.search(r"^Identity:\s*`([^`]+)`", operating_method_text, re.MULTILINE)
-    operating_version_match = re.search(r"^Candidate:\s*`([^`]+)`", operating_method_text, re.MULTILINE)
+    operating_version_match = re.search(r"^Current:\s*`([^`]+)`", operating_method_text, re.MULTILINE)
     if not operating_identity_match or not operating_version_match:
         raise ValueError("cannot derive current operating method identity and version")
 

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [提供跨域同构识别：不同类型叙事（文学、历史、个人、教育）改变理解的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-713a93804b41d776 / 提供跨域同构识别：不同类型叙事（文学、历史、个人、教育）改变理解的结构相似性（L1）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
 - [提供跨域同构识别：不同金融危机的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8d5ada6d58758a0f / 提供跨域同构识别：不同金融危机的结构相似性（L1）
@@ -94,6 +99,11 @@
   - 可搜索名称：NFC-bc3ae5037002d6da / 最近邻反事实：D595 是绩效/待遇/组织资源绑定架空退出权；D600 是代际/亲密关系中**正向支持**退化为控制。给一个富裕但无权无势的父母「为你好」式路径控制，D595 不触发、D600 触发 → 预测不同。不可约差异成立。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
   - 依赖：D595, D600；被引用：—
+- [本文件已随 `IGNITION-20260829-148` 通过普通合并进入正式 `main`，并经 post-merge Current closeout 完成同步；它现在是正式 main 上的 Current 操作法。统一输出合同、能力](../../../OPERATING-METHOD.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-89c2f59d2abb6044 / 本文件已随 `IGNITION-20260829-148` 通过普通合并进入正式 `main`，并经 post-merge Current closeout 完成同步；它现在是正式 main 上的 Current 操作法。统一输出合同、能力
+  - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
 - [本步把 full suite 前的 generated-output cleanliness 变成显式、只读、可机器判定的 preflight。`tools/run_projection_preflight.py --check` 从自身路](../../../reports/operations/ignition-135-step02-projection-preflight.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-32084ed04ec2bf41 / 本步把 full suite 前的 generated-output cleanliness 变成显式、只读、可机器判定的 preflight。`tools/run_projection_preflight.py --check` 从自身路

@@ -2,11 +2,11 @@
 
 Identity: `IGNITION_OPERATING_METHOD_R1`
 
-Candidate: `1.0.0`
+Current: `1.0.0`
 
-> Lifecycle: `CURRENT_CANDIDATE_ON_DRAFT`. This document is the canonical Current candidate on the Task148 branch; it is not Current on `main` until it is accepted, merged and synchronized.
+> Lifecycle: `CURRENT`. This document is the canonical Ignition Operating Method on formal `main` after Task148 ordinary merge and Current synchronization.
 >
-> Canonical candidate path: `ignition/OPERATING-METHOD.md`. Machine capability authority: [Ignition Operation Capability Registry R1](data/operations/ignition-operation-capability-registry-r1.json).
+> Canonical path: `ignition/OPERATING-METHOD.md`. Machine capability authority: [Ignition Operation Capability Registry R1](data/operations/ignition-operation-capability-registry-r1.json).
 
 ## 0. 这份方法负责什么
 
@@ -431,6 +431,6 @@ canonical 契约位于 [ignition-run-output-contract-r1.json](data/operations/ig
 
 ## 13. 本文状态与 claim ceiling
 
-本文件当前随 `IGNITION-20260829-148` 处于任务分支候选状态；它尚未进入正式 `main`，不得声称主分支已经拥有本操作法。统一输出合同也只是同一任务分支候选；版本、Current identity 与入口同步由本任务后续原子步骤补齐，并继续受同一 Draft-only 生命周期约束。
+本文件已随 `IGNITION-20260829-148` 通过普通合并进入正式 `main`，并经 post-merge Current closeout 完成同步；它现在是正式 main 上的 Current 操作法。统一输出合同、能力 Registry 和 operation playbooks 已作为同一任务的当前权威投影同步进入正式 `main`。本段只描述仓库本地生命周期，不把合并或同步升级为外部真值、生产就绪、Owner acceptance 或 epistemic acceptance。
 
 本文只建立 AI 使用入口的调用契约、authority priority、Current-first 纪律、operation playbooks、统一输出语义及与 `ITERATION.md` 的不可合并边界。它不授予仓库修改或外部行动权限，不建立新架构层或真值层，也不证明任何输入、分析、断言、模型、写作或现实结果正确。

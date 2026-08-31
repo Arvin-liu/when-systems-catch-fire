@@ -29,7 +29,7 @@
         "ignition/data/operations/iterations/148/step13-stranger-agent-adversarial-regression.json",
         "ignition/data/operations/iterations/148/step14-exact-head-draft-release.json"
       ],
-      "claim_ceiling": "Task148 repository-local Operating Method, capability registry, interface, deterministic projection, regression and release-candidate evidence only; the method remains CURRENT_CANDIDATE_ON_DRAFT and is not Current on formal main until accepted, ordinarily merged and synchronized, while no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
+      "claim_ceiling": "Task148 repository-local Operating Method, capability registry, interface, deterministic projection, regression, ordinary-merge and post-merge Current-synchronization evidence only; the method is Current on formal main while no external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance is inferred."
     },
     {
       "task_id": "IGNITION-20260828-147",

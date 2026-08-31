@@ -35,9 +35,9 @@ class IgnitionOperatingMethodFoundationTests(unittest.TestCase):
         candidate = self.source.replace(first, "__TEMP__", 1).replace(second, first, 1).replace("__TEMP__", second, 1)
         self.assertTrue(any("authority priority" in error for error in validator.validate(candidate)))
 
-    def test_candidate_cannot_claim_main_current(self) -> None:
-        candidate = self.source.replace("尚未进入正式 `main`".replace("`", chr(96)), "已经进入正式 main", 1)
-        self.assertTrue(any("尚未进入正式 main" in error for error in validator.validate(candidate)))
+    def test_current_method_cannot_revert_to_draft_only_text(self) -> None:
+        candidate = self.source.replace("正式 main 上的 Current 操作法", "任务分支候选操作法", 1)
+        self.assertTrue(any("正式 main 上的 Current 操作法" in error for error in validator.validate(candidate)))
 
     def test_legacy_reference_must_resolve_current_identity(self) -> None:
         candidate = self.source.replace(

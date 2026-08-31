@@ -73,7 +73,7 @@ class CurrentStateSyncTests(unittest.TestCase):
         operating = projection["facts"]["operating_method"]
         self.assertEqual(operating["identity"], "IGNITION_OPERATING_METHOD_R1")
         self.assertEqual(operating["version"], "1.0.0")
-        self.assertEqual(operating["status"], "CURRENT_CANDIDATE_ON_DRAFT")
+        self.assertEqual(operating["status"], "CURRENT")
         self.assertEqual(projection["facts"]["iteration"]["method_version"], "1.4.0")
         self.assertNotEqual(
             self.contract["current_operating_method"]["source_path"],

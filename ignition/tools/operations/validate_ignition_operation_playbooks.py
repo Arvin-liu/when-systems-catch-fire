@@ -138,8 +138,11 @@ def validate(document: dict[str, Any] | None = None, *, check_human_view: bool =
             if not playbook[field] or any(not value.strip() for value in playbook[field]):
                 errors.append(f"{operation_id}: {field} must contain nonblank entries")
 
-    if playbooks["lifecycle"]["current_on_main"]:
-        errors.append("Task148 candidate playbooks cannot claim Current on main")
+    lifecycle = playbooks["lifecycle"]
+    if lifecycle["status"] == "CURRENT" and lifecycle["current_on_main"] is not True:
+        errors.append("Current playbooks must set current_on_main=true")
+    if lifecycle["status"] != "CURRENT" and lifecycle["current_on_main"] is not False:
+        errors.append("candidate playbooks cannot claim Current on main")
     if check_human_view:
         expected = render_markdown(playbooks, registry)
         if not HUMAN_VIEW_PATH.is_file() or HUMAN_VIEW_PATH.read_text(encoding="utf-8") != expected:
@@ -156,7 +159,7 @@ def render_markdown(playbooks: dict[str, Any], registry: dict[str, Any]) -> str:
     lines = [
         "# 点火 Operation-specific Playbooks R1",
         "",
-        "> Generated human view. Canonical authored playbook source: `ignition/data/operations/ignition-operation-playbooks-r1.json`; capability fields are projected from `ignition/data/operations/ignition-operation-capability-registry-r1.json`. Both are Task148 branch candidates and are not Current on `main`.",
+        "> Generated human view. Canonical authored playbook source: `ignition/data/operations/ignition-operation-playbooks-r1.json`; capability fields are projected from `ignition/data/operations/ignition-operation-capability-registry-r1.json`. The synchronized Task148 playbooks are Current on formal `main`; this repository-local lifecycle state does not assert external truth or production readiness.",
         "",
         "## 选择规则",
         "",

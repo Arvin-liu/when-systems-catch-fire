@@ -79,7 +79,7 @@
   "current_operating_method": {
     "identity": "IGNITION_OPERATING_METHOD_R1",
     "source_path": "ignition/OPERATING-METHOD.md",
-    "status": "CURRENT_CANDIDATE_ON_DRAFT",
+    "status": "CURRENT",
     "version": "1.0.0"
   },
   "current_task": {
@@ -146,7 +146,7 @@
       }
     ]
   },
-  "generated_from_source_digest": "2489468e1647834c1ce80877c2772f5e2af74b868946e2c42066524774c8989d",
+  "generated_from_source_digest": "9720f48e0fd798fba73a4e1e52445fb51c08b4042e7c2634d086f55aa21da293",
   "identity": {
     "driver_role": "driver",
     "epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",

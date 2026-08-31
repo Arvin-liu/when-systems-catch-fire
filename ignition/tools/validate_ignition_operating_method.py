@@ -140,7 +140,7 @@ def validate(text: str | None = None) -> list[str]:
         "REFERENCE_ONLY",
         "HISTORICAL",
         "UNSUPPORTED",
-        "尚未进入正式 main",
+        "正式 main 上的 Current 操作法",
         "READ_ONLY_RUN — 默认",
         "REPOSITORY_CHANGE_RUN — 仅限明确修改点火",
         "EXTERNAL_ACTION_RUN — 明示请求加 Current admission",
@@ -186,16 +186,18 @@ def validate(text: str | None = None) -> list[str]:
     registry = load_json(REGISTRY_PATH)
     if registry["canonical_source_path"] != "ignition/data/operations/ignition-operation-capability-registry-r1.json":
         errors.append("method does not bind the canonical operation registry")
-    if registry["registry_lifecycle"]["current_on_main"]:
-        errors.append("candidate operation registry cannot be represented as Current on main")
+    registry_lifecycle = registry["registry_lifecycle"]
+    if registry_lifecycle.get("status") != "CURRENT" or registry_lifecycle.get("current_on_main") is not True:
+        errors.append("canonical operation registry is not Current on main")
     if set(registry["execution_mode_vocabulary"]) != {"READ_ONLY_RUN", "REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN"}:
         errors.append("Operating Method mode vocabulary differs from the capability registry")
 
     output_contract = load_json(OUTPUT_CONTRACT_PATH)
     if output_contract.get("canonical_source_path") != "ignition/data/operations/ignition-run-output-contract-r1.json":
         errors.append("method does not bind the canonical unified output contract")
-    if output_contract.get("lifecycle", {}).get("current_on_main"):
-        errors.append("candidate output contract cannot be represented as Current on main")
+    output_lifecycle = output_contract.get("lifecycle", {})
+    if output_lifecycle.get("status") != "CURRENT" or output_lifecycle.get("current_on_main") is not True:
+        errors.append("canonical output contract is not Current on main")
     actual_semantics = tuple(row.get("semantic_id") for row in output_contract.get("semantic_fields", []))
     if actual_semantics != OUTPUT_SEMANTICS:
         errors.append("unified output contract does not expose the fifteen required semantics in canonical order")

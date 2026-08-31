@@ -29,12 +29,12 @@
       "required": ["task_id", "status", "baseline_ref", "baseline_sha", "merged_to_main", "current_on_main", "requires_acceptance_merge_and_sync_for_current"],
       "properties": {
         "task_id": {"const": "IGNITION-20260829-148"},
-        "status": {"enum": ["TASK148_CANDIDATE_BRANCH", "CURRENT_CANDIDATE_ON_DRAFT"]},
+        "status": {"enum": ["TASK148_CANDIDATE_BRANCH", "CURRENT_CANDIDATE_ON_DRAFT", "CURRENT"]},
         "baseline_ref": {"const": "refs/heads/main"},
         "baseline_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
-        "merged_to_main": {"const": false},
-        "current_on_main": {"const": false},
-        "requires_acceptance_merge_and_sync_for_current": {"const": true}
+        "merged_to_main": {"type": "boolean"},
+        "current_on_main": {"type": "boolean"},
+        "requires_acceptance_merge_and_sync_for_current": {"type": "boolean"}
       }
     },
     "status_vocabulary": {

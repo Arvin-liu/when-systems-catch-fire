@@ -1,6 +1,6 @@
 # 点火 Operation-specific Playbooks R1
 
-> Generated human view. Canonical authored playbook source: `ignition/data/operations/ignition-operation-playbooks-r1.json`; capability fields are projected from `ignition/data/operations/ignition-operation-capability-registry-r1.json`. Both are Task148 branch candidates and are not Current on `main`.
+> Generated human view. Canonical authored playbook source: `ignition/data/operations/ignition-operation-playbooks-r1.json`; capability fields are projected from `ignition/data/operations/ignition-operation-capability-registry-r1.json`. The synchronized Task148 playbooks are Current on formal `main`; this repository-local lifecycle state does not assert external truth or production readiness.
 
 ## 选择规则
 

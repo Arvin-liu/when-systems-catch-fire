@@ -3,13 +3,13 @@
 
 - Iteration identity: current formal task `IGNITION-20260829-148` (ordinal `148`)；latest architecture-changing task `IGNITION-20260827-142` (ordinal `142`)；`current_iteration_boundary` `148` is a deprecated compatibility alias of the formal ordinal。
 - Architecture registry: `100` components；`87` visible map nodes；`13` hidden represented components；`140` typed relations；`92` visible typed edges。
-- Map/method: map `0.16.0` Current（historical `0.14.0`）；layout `2.0.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；Iteration Method `1.4.0` `Current`；Ignition Operating Method `IGNITION_OPERATING_METHOD_R1` / `1.0.0` `CURRENT_CANDIDATE_ON_DRAFT`。
+- Map/method: map `0.16.0` Current（historical `0.14.0`）；layout `2.0.0`；semantic trunk `semantic-trunk-r1` with `7` bounded route stages；Iteration Method `1.4.0` `Current`；Ignition Operating Method `IGNITION_OPERATING_METHOD_R1` / `1.0.0` `CURRENT`。
 - Packs: `4` packs；`10` declared capability routes。
 - Federation: `3` adapter inventory entries；live ceiling `LIVE_EXTERNAL_PROCESS_OBSERVED_NO_VALIDATED_COMPLETION`；local boundary `REFERENCE_EXECUTOR / CONFORMANCE_EXECUTOR / FALLBACK_MINIMAL`。
 - Live state dimensions: dispatch `OBSERVED`；process `OBSERVED`；inference `NOT_OBSERVED`；validated completion `NOT_VALIDATED`；reconciliation blocker `NONE`；next eligible action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`。
 - Live attempts: total `6`；validated `0`；unreconciled `0`；observation-incomplete `2`；obligation `OPEN`；next action `OWNER_DEFERRED_REQUIRES_EXPLICIT_REOPEN_AND_LOCAL_ENVIRONMENT_PREPARATION`；source `ignition/data/operations/iterations/141/live-current-projection-r3.json`。
-- Foundation: function identity cards `6041`；function quarantine/pending `4889`；non-function claims `17842`；non-function quarantine/pending `4992`。
-- Knowledge Experience: cards `601`；changes `494`；layered readings `520`；search records `24403`；aliases `1250`。
+- Foundation: function identity cards `6041`；function quarantine/pending `4889`；non-function claims `17851`；non-function quarantine/pending `4992`。
+- Knowledge Experience: cards `601`；changes `494`；layered readings `520`；search records `24412`；aliases `1250`。
 - Fire Seeds: `64` seeds/clusters；`585` source-census records。
 - Human Surface: `48` materiality entries（function `24` + non-function `24`）；`21` registered sync surfaces；`14` machine/human pairs。
 - Task lineage: current `IGNITION-20260829-148` `COMPLETED_WITH_OPEN_OBLIGATIONS`；125 file `HISTORICAL_UNEXECUTED`, requirements `REBASED_INTO_127`, canonical `HISTORICAL_UNEXECUTED_REBASED_INTO_127`；127 `COMPLETED_WITH_CLASSIFIED_RESIDUALS`。
