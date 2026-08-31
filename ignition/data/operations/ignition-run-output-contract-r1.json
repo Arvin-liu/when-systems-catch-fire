@@ -6,8 +6,8 @@
   "validator_path": "ignition/tools/operations/validate_ignition_run_output.py",
   "lifecycle": {
     "task_id": "IGNITION-20260829-148",
-    "status": "TASK148_CANDIDATE_BRANCH",
-    "current_on_main": false
+    "status": "CURRENT",
+    "current_on_main": true
   },
   "profiles": {
     "machine_audit": {

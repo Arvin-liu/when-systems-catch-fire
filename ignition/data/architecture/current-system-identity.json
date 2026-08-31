@@ -64,9 +64,9 @@
   },
   "current_operating_method": {
     "source_path": "ignition/OPERATING-METHOD.md",
-    "required_marker": "Candidate: `1.0.0`",
+    "required_marker": "Current: `1.0.0`",
     "identity_marker": "Identity: `IGNITION_OPERATING_METHOD_R1`",
-    "status": "CURRENT_CANDIDATE_ON_DRAFT"
+    "status": "CURRENT"
   },
   "current_facts_projection": {
     "json_path": "ignition/data/architecture/current-facts.json",

@@ -6,12 +6,12 @@
   "canonical_source_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
   "registry_lifecycle": {
     "task_id": "IGNITION-20260829-148",
-    "status": "CURRENT_CANDIDATE_ON_DRAFT",
+    "status": "CURRENT",
     "baseline_ref": "refs/heads/main",
     "baseline_sha": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
-    "merged_to_main": false,
-    "current_on_main": false,
-    "requires_acceptance_merge_and_sync_for_current": true
+    "merged_to_main": true,
+    "current_on_main": true,
+    "requires_acceptance_merge_and_sync_for_current": false
   },
   "status_vocabulary": [
     "CURRENT",
@@ -832,5 +832,5 @@
       "claim_ceiling": "Publication-surface structure and provenance validation only; no substantive acceptance, truth or deployment inference."
     }
   ],
-  "claim_ceiling": "Canonical Task148 candidate inventory of repository-declared operation capabilities and truthful Current, bounded, Owner-deferred, reference-only, historical and unsupported boundaries at baseline a1a1d102c3cd2fa12fc962b648b0eea62d8097cf. This registry grants no permission by itself, performs no action, and does not establish external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance. It is not Current on main until accepted, merged and synchronized."
+  "claim_ceiling": "Canonical Task148 Current inventory of repository-declared operation capabilities and truthful Current, bounded, Owner-deferred, reference-only, historical and unsupported boundaries at formal baseline a1a1d102c3cd2fa12fc962b648b0eea62d8097cf. This registry grants no permission by itself, performs no action, and does not establish external truth, production readiness, Owner acceptance, publication acceptance, validated live completion or epistemic acceptance. Current on main is a repository lifecycle state backed separately by remote-ref observation and the 1111 witness."
 }

@@ -65,6 +65,17 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     if errors:
         return errors
 
+    lifecycle = registry["registry_lifecycle"]
+    if lifecycle["status"] == "CURRENT":
+        if lifecycle["merged_to_main"] is not True or lifecycle["current_on_main"] is not True:
+            errors.append("Current registry lifecycle requires merged_to_main=true and current_on_main=true")
+        if lifecycle["requires_acceptance_merge_and_sync_for_current"] is not False:
+            errors.append("Current registry lifecycle cannot still require acceptance merge and synchronization")
+    elif lifecycle["merged_to_main"] is not False or lifecycle["current_on_main"] is not False:
+        errors.append("candidate registry lifecycle cannot claim merge or Current on main")
+    elif lifecycle["requires_acceptance_merge_and_sync_for_current"] is not True:
+        errors.append("candidate registry lifecycle must require acceptance merge and synchronization")
+
     if registry["canonical_source_path"] != str(REGISTRY_PATH.relative_to(REPO_ROOT)):
         errors.append("canonical_source_path does not identify the sole registry file")
     if set(registry["status_vocabulary"]) != EXPECTED_STATUSES:

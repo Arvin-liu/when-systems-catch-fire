@@ -539,6 +539,11 @@
   - 可搜索名称：NFC-10f418fa4616f873 / MemoryProjection,
   - 来源：`agent_federation/__init__.py`
   - 依赖：—；被引用：—
+- [method_boundary: the Operating Method governs how an Agent uses Ignition; the Iteration Method governs how Ignition chan](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c79fb4c7cd3b06e6 / method_boundary: the Operating Method governs how an Agent uses Ignition; the Iteration Method governs how Ignition chan
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [never promoted to an `AGENTIC_EXECUTOR` by the gate, and a long-term open](../../../docs/architecture/external-agent-federation-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5b8c5882ac875194 / never promoted to an `AGENTIC_EXECUTOR` by the gate, and a long-term open
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-57c9c93c57b3a2d0 / validate_current_projection_fresh\(current, expected\)
   - 来源：`agent_federation/task142_adversarial.py`
-  - 依赖：—；被引用：—
-- [validated = \[summary for summary, record in zip\(summaries, records\) if record\["process"\]\["state"\] == "COMPLETED_VALIDATE](../../../agent_federation/live_current_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3732530b8d5b730e / validated = \[summary for summary, record in zip\(summaries, records\) if record\["process"\]\["state"\] == "COMPLETED_VALIDATE
-  - 来源：`agent_federation/live_current_projection.py`
   - 依赖：—；被引用：—

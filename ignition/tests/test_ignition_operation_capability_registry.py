@@ -18,6 +18,11 @@ class IgnitionOperationCapabilityRegistryR1Tests(unittest.TestCase):
     def test_current_registry_passes(self) -> None:
         self.assertEqual(validate(copy.deepcopy(self.registry)), [])
 
+    def test_current_lifecycle_requires_merge_and_current_flags(self) -> None:
+        candidate = copy.deepcopy(self.registry)
+        candidate["registry_lifecycle"]["current_on_main"] = False
+        self.assertTrue(any("merged_to_main=true and current_on_main=true" in error for error in validate(candidate)))
+
     def test_duplicate_operation_id_fails_closed(self) -> None:
         candidate = copy.deepcopy(self.registry)
         candidate["operations"].append(copy.deepcopy(candidate["operations"][0]))

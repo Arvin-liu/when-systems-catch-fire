@@ -119,7 +119,7 @@
     "foundation": {
       "function_identity_cards": 6041,
       "function_quarantine_or_pending": 4889,
-      "nonfunction_claims": 17842,
+      "nonfunction_claims": 17851,
       "nonfunction_quarantine_or_pending": 4992
     },
     "human_surface": {
@@ -159,7 +159,7 @@
       "cards": 601,
       "changes": 494,
       "layered_readings": 520,
-      "search_records": 24403
+      "search_records": 24412
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -176,7 +176,7 @@
     "operating_method": {
       "identity": "IGNITION_OPERATING_METHOD_R1",
       "source_path": "ignition/OPERATING-METHOD.md",
-      "status": "CURRENT_CANDIDATE_ON_DRAFT",
+      "status": "CURRENT",
       "version": "1.0.0"
     },
     "packs": {
@@ -221,7 +221,7 @@
     },
     {
       "path": "ignition/OPERATING-METHOD.md",
-      "sha256": "dc91ddfd7f64ddc5cb598043230c1993fea9ab0aa125cca7e18ef1534555396e"
+      "sha256": "fe517924b0bdfee4a1b20d8ff58f03e12e1f315f3d3b440e4369a285d52f2f2c"
     },
     {
       "path": "ignition/data/agent-federation/executor-inventory-r1.json",
@@ -229,7 +229,7 @@
     },
     {
       "path": "ignition/data/architecture/current-system-identity.json",
-      "sha256": "c92be39e04a7fd12e99719ddcd12324a7f77da892f55277ed838026b9570bb0f"
+      "sha256": "5f9f0f4ac2e225b72e2a97515da7e88187f05da6df7786f5866f270fddda4761"
     },
     {
       "path": "ignition/data/architecture/interactive-system-map-layout.json",
@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "db3df381bd702ca830ec36e928a61622fe5c96bbc35412cf1b9639b3819a18ee"
+      "sha256": "87cca0f618096c3b3cb331fc7a9011f6ba0fc78f30ec7de280f186a90f775b55"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -249,11 +249,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "a4bb0ab6a22fcf3f6111b5c4825883c200beb745ec002f0d5a3ae6777a8fe096"
+      "sha256": "0a9a76fa93036046995b2cf6c9a334fcb935548fcf68a8b80fa2512360bd04d4"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "82c5cc60e1d2abe4621920db61fe842e678c1e09c3984f014b815b04ba0196d4"
+      "sha256": "7afef891194eca87173a414a9f579a3aaf52ba1a04e89301b5171b80a320277a"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -261,7 +261,7 @@
     },
     {
       "path": "ignition/data/operations/current-release-lifecycle-r1.json",
-      "sha256": "bd63e4dd02c5a0e3f60d249ffd1edfe11e64c7793f046156a2ccbe27d0f2f631"
+      "sha256": "d8de9acdc1b2d92c92c5cd8fa6cefb9ec216160e72f4e75b06330e4c0effeb0f"
     },
     {
       "path": "ignition/data/operations/current-task-lineage-status.json",
@@ -269,7 +269,7 @@
     },
     {
       "path": "ignition/data/operations/formal-task-lifecycle-r1.json",
-      "sha256": "543d123efe87060cde814e8ea62c39ecf66e17ef1e15e0a389b9787bff8e889f"
+      "sha256": "5b1d8467ef567f495216539a1f0c6683af63440f36eeda07a9b9d4a662368dd3"
     },
     {
       "path": "ignition/data/operations/iteration-boundary-semantics-r1.json",
@@ -333,11 +333,11 @@
     },
     {
       "path": "ignition/schemas/architecture/current-facts.schema.json",
-      "sha256": "358abd2e50ecde5cfa1fe0fe10bdfff861466ecac869d93a93446e853816134b"
+      "sha256": "7e8a8a28e76ca7db6ae1b15073247d90ec61300592db2a8022cf5588cf2b2bf7"
     },
     {
       "path": "ignition/schemas/architecture/current-system-identity.schema.json",
-      "sha256": "126b932e2f0b1c20d48762232abee1bffe9a462573e82de1e3079d0deadd9f18"
+      "sha256": "ce1287e23c6a16151c594d36c8c6621133e406219cf1b6b5c7d34b8c4a457663"
     },
     {
       "path": "ignition/schemas/operations/current-task-lineage-status-r1.schema.json",
@@ -353,7 +353,7 @@
     },
     {
       "path": "ignition/tools/generate_current_facts.py",
-      "sha256": "0180b24faa96dde9358fb488569fe49ddfdb7790f862ecf4688c5519f10f12bf"
+      "sha256": "95aeea7559839cf8b5bcded62ddec5c72341b87b426329fe36984af68c8992c8"
     },
     {
       "path": "ignition/tools/iteration_boundary.py",

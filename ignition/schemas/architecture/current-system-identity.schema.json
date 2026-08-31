@@ -106,9 +106,9 @@
       "required": ["source_path", "required_marker", "identity_marker", "status"],
       "properties": {
         "source_path": {"const": "ignition/OPERATING-METHOD.md"},
-        "required_marker": {"const": "Candidate: `1.0.0`"},
+        "required_marker": {"const": "Current: `1.0.0`"},
         "identity_marker": {"const": "Identity: `IGNITION_OPERATING_METHOD_R1`"},
-        "status": {"const": "CURRENT_CANDIDATE_ON_DRAFT"}
+        "status": {"const": "CURRENT"}
       }
     },
     "factsProjection": {

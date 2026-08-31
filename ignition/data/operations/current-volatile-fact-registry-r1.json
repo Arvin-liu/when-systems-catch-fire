@@ -93,7 +93,7 @@
       "freshness_rule": "Must be derived from the independent current_operating_method identity contract.",
       "null_behavior": "FAIL",
       "authority": "current-system-identity contract projected through Current Facts",
-      "claim_ceiling": "Repository method lifecycle only; CURRENT_CANDIDATE_ON_DRAFT does not assert main publication or Current status on main."
+      "claim_ceiling": "Repository method lifecycle only; CURRENT records a synchronized repository-local Current state and does not assert external truth, production readiness, Owner acceptance or epistemic acceptance."
     },
     {
       "fact_id": "current_task_id",
