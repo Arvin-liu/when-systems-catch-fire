@@ -1,0 +1,323 @@
+{
+  "schema_version": "ignition-149-step07-archify-architecture-delta-r0",
+  "task_id": "IGNITION-20260831-149",
+  "step": "07",
+  "status": "VALIDATED_WITHIN_RECORDED_ENVIRONMENT",
+  "provider_id": "archify",
+  "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+  "formal_previous_commit": "656e555711ada1dd3754a0b43b8ec73aacda1f9c",
+  "lineage": {
+    "before": {
+      "role": "TASK148_PRE_MERGE_ACCEPTED_MAIN_BASELINE",
+      "ref": "main_before_task148_merge",
+      "sha": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
+      "checkout_attestation": {
+        "checkout_kind": "fresh_full_clone_detached_at_sha",
+        "status_clean": true,
+        "non_shallow": true,
+        "fsck_full": "PASS",
+        "remote_main_observation": "14c2595d796494286caf31378173fd9dd027edcf"
+      }
+    },
+    "after": {
+      "role": "TASK148_POST_PUBLICATION_CURRENT_MAIN",
+      "ref": "main",
+      "sha": "14c2595d796494286caf31378173fd9dd027edcf",
+      "checkout_attestation": {
+        "checkout_kind": "fresh_full_clone_main",
+        "status_clean": true,
+        "non_shallow": true,
+        "fsck_full": "PASS",
+        "remote_main_observation": "14c2595d796494286caf31378173fd9dd027edcf"
+      }
+    },
+    "remote_main": {
+      "ref": "refs/heads/main",
+      "observed_sha": "14c2595d796494286caf31378173fd9dd027edcf",
+      "observation_method": "git ls-remote"
+    }
+  },
+  "source_inputs": {
+    "delta_input": {
+      "path": "ignition/data/architecture/overall-architecture.json",
+      "role": "canonical_overall_architecture_source",
+      "before_sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+      "after_sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+      "byte_identical": true,
+      "source_is_authored": true
+    },
+    "context_only": [
+      {
+        "path": "ignition/data/architecture/interactive-system-map.json",
+        "role": "canonical_context_only_not_archify_delta_input",
+        "before_sha256": "18f0f68f60d606976470368ee82fac2d35e2e96cd3739be9f5f43e8db9075d69",
+        "after_sha256": "3824697a9c781c1ea825f7335bc9461e6fb693e70bb65c042309fd16da173313",
+        "byte_identical": false,
+        "authored_facts_observed": [
+          {
+            "path": "/projection_authority/component_registry_version",
+            "before": "2.4.0",
+            "after": "2.6.0"
+          },
+          {
+            "path": "/component_coverage/registry_components",
+            "before": 99,
+            "after": 100
+          },
+          {
+            "path": "/component_coverage/hidden_components",
+            "before": 12,
+            "after": 13
+          },
+          {
+            "path": "/component_coverage/hidden_representatives/ignition_operating_method",
+            "before": null,
+            "after": "ai_guide"
+          }
+        ],
+        "not_promoted_to_archify_node_or_edge": true
+      }
+    ],
+    "source_scope_statement": "Archify Delta compares only the authored overall-architecture source. The interactive-system-map change is retained as a context-only source fact and is not treated as an overall-architecture component or relationship change."
+  },
+  "typed_snapshots": {
+    "before": {
+      "path": "ignition/data/operations/iterations/149/step07-archify-before-r0.json",
+      "sha256": "0ee0e9fad3b39c2da95da7e4941bc86f387bf1867bec76c02fa116dfd125e9e1",
+      "bytes": 18914,
+      "repository_revision": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
+      "component_count": 24,
+      "connection_count": 24,
+      "boundary_count": 8,
+      "sourced_component_count": 19
+    },
+    "after": {
+      "path": "ignition/data/operations/iterations/149/step07-archify-after-r0.json",
+      "sha256": "b3415845a682c9d8162a056da6402622505ce91f2c6658bf3f199fd9e6653049",
+      "bytes": 18914,
+      "repository_revision": "14c2595d796494286caf31378173fd9dd027edcf",
+      "component_count": 24,
+      "connection_count": 24,
+      "boundary_count": 8,
+      "sourced_component_count": 19
+    },
+    "adapter_script": "ignition/tools/run_task149_step07_archify_delta.py",
+    "geometry_profile": "REUSED_REVIEWED_COMPACT_ORTHOGONAL_SHOWCASE_R1",
+    "semantic_projection_source": "overall-architecture.json",
+    "provider_output_can_update_canonical_truth": false
+  },
+  "upstream": {
+    "repository": "tt-a1i/archify",
+    "ref": "refs/heads/main",
+    "revision": "2bfb47132c057195d8dddb3e25ae966dd7c7a72e",
+    "schema_path": "archify/schemas/architecture.schema.json",
+    "schema_sha256": "8c96140b6af8d93fb825a3c63e46b74176c9485185c978074ffe89e0f614576c",
+    "checkout_clean": true,
+    "non_shallow": true,
+    "fsck_full": "PASS",
+    "node_version": "v22.23.0",
+    "license": "MIT",
+    "source_copied_or_vendored": false
+  },
+  "commands": {
+    "before_validate": {
+      "command": "node bin/archify.mjs validate architecture <formal-worktree>/ignition/data/operations/iterations/149/step07-archify-before-r0.json --json --quality showcase --repo-root <before-checkout>",
+      "exit_code": 0,
+      "result_sha256": "4b09d4ce195a5cb5cbc21580657b459c543f3ebb0715e48709cbd3a7f7e072bd",
+      "status": "PASS",
+      "checks_passed": 9,
+      "check_count": 9,
+      "composition_profile": "showcase",
+      "composition_status": "pass",
+      "errors": 0,
+      "warnings": 0,
+      "repository_evidence_verified": true,
+      "repository_evidence_revision": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
+      "repository_evidence_reference_count": 19
+    },
+    "after_validate": {
+      "command": "node bin/archify.mjs validate architecture <formal-worktree>/ignition/data/operations/iterations/149/step07-archify-after-r0.json --json --quality showcase --repo-root <after-checkout>",
+      "exit_code": 0,
+      "result_sha256": "a936bb02730156bdbc3ad3d6101fce07a21e1c2db328628b46ee156c6b6faa83",
+      "status": "PASS",
+      "checks_passed": 9,
+      "check_count": 9,
+      "composition_profile": "showcase",
+      "composition_status": "pass",
+      "errors": 0,
+      "warnings": 0,
+      "repository_evidence_verified": true,
+      "repository_evidence_revision": "14c2595d796494286caf31378173fd9dd027edcf",
+      "repository_evidence_reference_count": 19
+    },
+    "before_deliver": {
+      "command": "node bin/archify.mjs deliver architecture <formal-worktree>/ignition/data/operations/iterations/149/step07-archify-before-r0.json <temporary-before.html> --json --quality showcase --repo-root <before-checkout>",
+      "exit_code": 0,
+      "result_sha256": "24f4073199c066787ca61772c98fe615c9f6987b1d9607a7f4fb899731252bb9",
+      "status": "PASS",
+      "specification_sha256": "0ee0e9fad3b39c2da95da7e4941bc86f387bf1867bec76c02fa116dfd125e9e1",
+      "artifact_sha256": "ef4300da593236c17955eb8abc4601f0e9c1943ea7632c2746c966a065c8e42b",
+      "artifact_bytes": 753375,
+      "checks_passed": 9,
+      "check_count": 9,
+      "composition_status": "pass",
+      "errors": 0,
+      "warnings": 0,
+      "repository_evidence_verified": true,
+      "repository_evidence_revision": "a1a1d102c3cd2fa12fc962b648b0eea62d8097cf",
+      "repository_evidence_reference_count": 19
+    },
+    "after_deliver": {
+      "command": "node bin/archify.mjs deliver architecture <formal-worktree>/ignition/data/operations/iterations/149/step07-archify-after-r0.json <temporary-after.html> --json --quality showcase --repo-root <after-checkout>",
+      "exit_code": 0,
+      "result_sha256": "86ebe7479927a0da0e8d35ab7ea324536079b80d2162525947f01e754cd2a912",
+      "status": "PASS",
+      "specification_sha256": "b3415845a682c9d8162a056da6402622505ce91f2c6658bf3f199fd9e6653049",
+      "artifact_sha256": "978008823b3941622a8ba21e751913f37d8c87310e28b46c5bca6f17db913017",
+      "artifact_bytes": 753375,
+      "checks_passed": 9,
+      "check_count": 9,
+      "composition_status": "pass",
+      "errors": 0,
+      "warnings": 0,
+      "repository_evidence_verified": true,
+      "repository_evidence_revision": "14c2595d796494286caf31378173fd9dd027edcf",
+      "repository_evidence_reference_count": 19
+    },
+    "architecture_delta": {
+      "command": "node bin/archify.mjs compare architecture <before-typed-ir.json> <after-typed-ir.json> <temporary-delta.html> --receipt <temporary-delta.receipt.json> --json --quality showcase --repo-root <after-checkout>",
+      "exit_code": 0,
+      "result_sha256": "f71fda76e29734912eafbe04f880f1ee6296e190017b6e5f9a13111b2cb5c413",
+      "receipt_sha256": "f71fda76e29734912eafbe04f880f1ee6296e190017b6e5f9a13111b2cb5c413",
+      "status": "PASS",
+      "completeness": "complete",
+      "proof_level": "revision-pinned",
+      "comparator_version": 1,
+      "canonical_version": 1,
+      "artifact_sha256": "53cf67bfba360df3db141215ef9a854491a026653389b2970ef9d2993d66ccdc",
+      "artifact_bytes": 2163627,
+      "checks_passed": 28,
+      "check_count": 28,
+      "base_composition_status": "pass",
+      "head_composition_status": "pass"
+    },
+    "visual_check": {
+      "before": {
+        "command": "node bin/archify.mjs visual-check <temporary-before.html> --json",
+        "exit_code": 0,
+        "result_sha256": "2bf9155b3763c1c09d7d8f43b7b508262e5a49a875192e908c7ecace13577dae",
+        "status": "PASS",
+        "visual_review": "pending",
+        "diagnostics_count": 0,
+        "containment": "pass",
+        "readability": "pass",
+        "viewer_chrome": "pass",
+        "captures": "pass"
+      },
+      "after": {
+        "command": "node bin/archify.mjs visual-check <temporary-after.html> --json",
+        "exit_code": 0,
+        "result_sha256": "f6ca141e01ce3d67ba921ea6ac1ff9ba4ec34ad32dad37a2a8c8666adb1ede27",
+        "status": "PASS",
+        "visual_review": "pending",
+        "diagnostics_count": 0,
+        "containment": "pass",
+        "readability": "pass",
+        "viewer_chrome": "pass",
+        "captures": "pass"
+      },
+      "delta": {
+        "command": "node bin/archify.mjs visual-check <temporary-delta.html> --json",
+        "exit_code": 1,
+        "result_sha256": "48952fa398dd68b91edc3bdfb6a9a8c5f6c6a8b00b21c235ea9c0fc9fafaefd3",
+        "status": "FAIL_VIEWPORT_CONTAINMENT",
+        "visual_review": "pending",
+        "diagnostics_count": 6,
+        "diagnostic_code": "viewer/viewport-overflow",
+        "containment": "fail",
+        "readability": "pass",
+        "viewer_chrome": "pass",
+        "captures": "pass",
+        "overflow_observed": {
+          "viewports": [
+            {"width": 1440, "height": 900, "theme": "light", "scroll_height": 1204},
+            {"width": 1600, "height": 1000, "theme": "light", "scroll_height": 1300},
+            {"width": 1920, "height": 1080, "theme": "light", "scroll_height": 1357},
+            {"width": 2048, "height": 1320, "theme": "light", "scroll_height": 1490},
+            {"width": 1440, "height": 900, "theme": "dark", "scroll_height": 1204},
+            {"width": 2048, "height": 1320, "theme": "dark", "scroll_height": 1490}
+          ]
+        }
+      }
+    }
+  },
+  "delta_output": {
+    "allowed_change_kinds": ["added", "removed", "changed", "moved", "rerouted"],
+    "actual_authored_facts": {
+      "components": {"added": 0, "removed": 0, "changed": 0, "moved": 0, "evidence_changed": 0},
+      "connections": {"added": 0, "removed": 0, "changed": 0, "rerouted": 0},
+      "boundaries": {"added": 0, "removed": 0, "changed": 0, "geometry_changed": 0},
+      "presentation_changed": false,
+      "provenance_changed": true,
+      "change_records": []
+    },
+    "input_semantic_hashes": {
+      "before": "67e8d6a57a5a04fcb72f966485eceed6e9c90d8e4ed985a37ec925cdc63c7c38",
+      "after": "79f3a35d1c83424d80f050f5bbf7f8736e8664833b2c52729173e3ea7df4c6aa"
+    },
+    "provider_limitations": [
+      "Authored Architecture IR only; no runtime impact, causality, risk, or mergeability is inferred.",
+      "Boundary identity is conservatively derived from kind + label.",
+      "The Delta viewer is a three-panel review artifact and failed automated viewport containment at all recorded viewports; the underlying before/after snapshots and Delta composition checks passed."
+    ],
+    "no_inference_fields_emitted": ["impact", "risk", "safety", "quality_improvement", "correctness", "merge_readiness"]
+  },
+  "artifacts": {
+    "before_html": {
+      "sha256": "ef4300da593236c17955eb8abc4601f0e9c1943ea7632c2746c966a065c8e42b",
+      "bytes": 753375,
+      "status": "NOT_COMMITTED",
+      "reason": "Self-contained provider viewer artifact retained only in the task-local spike directory."
+    },
+    "after_html": {
+      "sha256": "978008823b3941622a8ba21e751913f37d8c87310e28b46c5bca6f17db913017",
+      "bytes": 753375,
+      "status": "NOT_COMMITTED",
+      "reason": "Self-contained provider viewer artifact retained only in the task-local spike directory."
+    },
+    "delta_html": {
+      "sha256": "53cf67bfba360df3db141215ef9a854491a026653389b2970ef9d2993d66ccdc",
+      "bytes": 2163627,
+      "status": "NOT_COMMITTED",
+      "reason": "Self-contained three-panel provider viewer artifact is large and has a known viewport-containment residual; formal branch retains typed sources and exact receipts."
+    },
+    "screenshot_hashes": [
+      {"file": "before.visual-check.1440x900.light.png", "sha256": "22ff10d23b4bf77b72078b2a3a54acdfc6359d7666cd2332035a385e444c86d2"},
+      {"file": "before.visual-check.1440x900.dark.png", "sha256": "5d15f4559676721005c3820058afd95eab95e2afdb9a4b59920efff13ecb8b7f"},
+      {"file": "before.visual-check.2048x1320.light.png", "sha256": "ba5629ea1f94876ee54341ccde5cc5e9f8d6e844ef68d5ab6d8f6d9083646dda"},
+      {"file": "before.visual-check.2048x1320.dark.png", "sha256": "bd5e7ef1d6ea41d038fa26a48fb4ab680ceb9bbcbfcc819835a2bc030b8ad45e"},
+      {"file": "after.visual-check.1440x900.light.png", "sha256": "22ff10d23b4bf77b72078b2a3a54acdfc6359d7666cd2332035a385e444c86d2"},
+      {"file": "after.visual-check.1440x900.dark.png", "sha256": "5d15f4559676721005c3820058afd95eab95e2afdb9a4b59920efff13ecb8b7f"},
+      {"file": "after.visual-check.2048x1320.light.png", "sha256": "bf17381ed201af9e9998148745006682933c466bc8f4f396dad1c037ab6d9171"},
+      {"file": "after.visual-check.2048x1320.dark.png", "sha256": "45f1628bc75991bb863b672e447076742baf7579e7251d7bb181fb647b567ae4"},
+      {"file": "delta.visual-check.1440x900.light.png", "sha256": "4203d5cc163cf1419b0ed18b1a37980366ef336999e78b4be624090b21d784b8"},
+      {"file": "delta.visual-check.1440x900.dark.png", "sha256": "4203d5cc163cf1419b0ed18b1a37980366ef336999e78b4be624090b21d784b8"},
+      {"file": "delta.visual-check.2048x1320.light.png", "sha256": "6542d41655fbde1708ec3a47ab0e0d749bb83cde188183fe517191821151b395"},
+      {"file": "delta.visual-check.2048x1320.dark.png", "sha256": "6542d41655fbde1708ec3a47ab0e0d749bb83cde188183fe517191821151b395"}
+    ]
+  },
+  "boundaries": {
+    "external_provider_is_ignition_authority": false,
+    "provider_capability_is_permission": false,
+    "provider_output_is_external_truth": false,
+    "provider_local_policy_is_ignition_global_policy": false,
+    "adapter_spike_pass_is_current_capability": false,
+    "current_integration": "NOT_CURRENT_INTEGRATION",
+    "production_readiness": "NOT_PRODUCTION_READY",
+    "provider_permission_granted": false,
+    "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+    "live_external_invocation": "LIVE_EXTERNAL_INVOCATION_UNCHANGED",
+    "source_copied_or_vendored": false
+  },
+  "claim_ceiling": "This receipt proves only that pinned Archify received two lineage-bound typed projections, validated and delivered each snapshot, and produced a complete revision-pinned authored-IR Delta with the recorded viewer limitation. It does not establish architecture correctness, runtime impact, causality, risk, safety, quality improvement, merge readiness, external truth, Current capability, production readiness, permission, authenticated-channel admission, Owner acceptance or live external invocation."
+}

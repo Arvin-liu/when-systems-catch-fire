@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task149-step07-archify-architecture-delta-r0.schema.json",
+  "title": "Task149 Step07 Archify Architecture Delta receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "task_id", "step", "status", "provider_id", "provider_class",
+    "formal_previous_commit", "lineage", "source_inputs", "typed_snapshots", "upstream",
+    "commands", "delta_output", "artifacts", "boundaries", "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-149-step07-archify-architecture-delta-r0"},
+    "task_id": {"const": "IGNITION-20260831-149"},
+    "step": {"const": "07"},
+    "status": {"const": "VALIDATED_WITHIN_RECORDED_ENVIRONMENT"},
+    "provider_id": {"const": "archify"},
+    "provider_class": {"const": "DERIVED_VISUALIZATION_PROVIDER"},
+    "formal_previous_commit": {"$ref": "#/$defs/sha"},
+    "lineage": {"$ref": "#/$defs/lineage"},
+    "source_inputs": {"$ref": "#/$defs/sourceInputs"},
+    "typed_snapshots": {"$ref": "#/$defs/typedSnapshots"},
+    "upstream": {"$ref": "#/$defs/upstream"},
+    "commands": {"$ref": "#/$defs/commands"},
+    "delta_output": {"$ref": "#/$defs/deltaOutput"},
+    "artifacts": {"$ref": "#/$defs/artifacts"},
+    "boundaries": {"$ref": "#/$defs/boundaries"},
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "lineagePoint": {
+      "type": "object", "additionalProperties": false,
+      "required": ["role", "ref", "sha", "checkout_attestation"],
+      "properties": {
+        "role": {"$ref": "#/$defs/nonblank"}, "ref": {"$ref": "#/$defs/nonblank"}, "sha": {"$ref": "#/$defs/sha"},
+        "checkout_attestation": {
+          "type": "object", "additionalProperties": false,
+          "required": ["checkout_kind", "status_clean", "non_shallow", "fsck_full", "remote_main_observation"],
+          "properties": {
+            "checkout_kind": {"$ref": "#/$defs/nonblank"}, "status_clean": {"const": true}, "non_shallow": {"const": true},
+            "fsck_full": {"const": "PASS"}, "remote_main_observation": {"$ref": "#/$defs/sha"}
+          }
+        }
+      }
+    },
+    "lineage": {
+      "type": "object", "additionalProperties": false,
+      "required": ["before", "after", "remote_main"],
+      "properties": {
+        "before": {"$ref": "#/$defs/lineagePoint"}, "after": {"$ref": "#/$defs/lineagePoint"},
+        "remote_main": {
+          "type": "object", "additionalProperties": false,
+          "required": ["ref", "observed_sha", "observation_method"],
+          "properties": {"ref": {"const": "refs/heads/main"}, "observed_sha": {"$ref": "#/$defs/sha"}, "observation_method": {"const": "git ls-remote"}}
+        }
+      }
+    },
+    "sourceInputs": {
+      "type": "object", "additionalProperties": false,
+      "required": ["delta_input", "context_only", "source_scope_statement"],
+      "properties": {
+        "delta_input": {
+          "type": "object", "additionalProperties": false,
+          "required": ["path", "role", "before_sha256", "after_sha256", "byte_identical", "source_is_authored"],
+          "properties": {
+            "path": {"const": "ignition/data/architecture/overall-architecture.json"}, "role": {"const": "canonical_overall_architecture_source"},
+            "before_sha256": {"$ref": "#/$defs/sha256"}, "after_sha256": {"$ref": "#/$defs/sha256"}, "byte_identical": {"const": true}, "source_is_authored": {"const": true}
+          }
+        },
+        "context_only": {
+          "type": "array", "minItems": 1, "maxItems": 1,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["path", "role", "before_sha256", "after_sha256", "byte_identical", "authored_facts_observed", "not_promoted_to_archify_node_or_edge"],
+            "properties": {
+              "path": {"const": "ignition/data/architecture/interactive-system-map.json"}, "role": {"const": "canonical_context_only_not_archify_delta_input"},
+              "before_sha256": {"$ref": "#/$defs/sha256"}, "after_sha256": {"$ref": "#/$defs/sha256"}, "byte_identical": {"const": false},
+              "authored_facts_observed": {"type": "array", "minItems": 4}, "not_promoted_to_archify_node_or_edge": {"const": true}
+            }
+          }
+        },
+        "source_scope_statement": {"$ref": "#/$defs/nonblank"}
+      }
+    },
+    "typedSnapshot": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256", "bytes", "repository_revision", "component_count", "connection_count", "boundary_count", "sourced_component_count"],
+      "properties": {
+        "path": {"$ref": "#/$defs/nonblank"}, "sha256": {"$ref": "#/$defs/sha256"}, "bytes": {"type": "integer", "minimum": 1},
+        "repository_revision": {"$ref": "#/$defs/sha"}, "component_count": {"const": 24}, "connection_count": {"const": 24}, "boundary_count": {"const": 8}, "sourced_component_count": {"const": 19}
+      }
+    },
+    "typedSnapshots": {
+      "type": "object", "additionalProperties": false,
+      "required": ["before", "after", "adapter_script", "geometry_profile", "semantic_projection_source", "provider_output_can_update_canonical_truth"],
+      "properties": {
+        "before": {"$ref": "#/$defs/typedSnapshot"}, "after": {"$ref": "#/$defs/typedSnapshot"}, "adapter_script": {"$ref": "#/$defs/nonblank"},
+        "geometry_profile": {"$ref": "#/$defs/nonblank"}, "semantic_projection_source": {"const": "overall-architecture.json"}, "provider_output_can_update_canonical_truth": {"const": false}
+      }
+    },
+    "upstream": {
+      "type": "object", "additionalProperties": false,
+      "required": ["repository", "ref", "revision", "schema_path", "schema_sha256", "checkout_clean", "non_shallow", "fsck_full", "node_version", "license", "source_copied_or_vendored"],
+      "properties": {
+        "repository": {"const": "tt-a1i/archify"}, "ref": {"const": "refs/heads/main"}, "revision": {"$ref": "#/$defs/sha"}, "schema_path": {"const": "archify/schemas/architecture.schema.json"}, "schema_sha256": {"$ref": "#/$defs/sha256"}, "checkout_clean": {"const": true}, "non_shallow": {"const": true}, "fsck_full": {"const": "PASS"}, "node_version": {"$ref": "#/$defs/nonblank"}, "license": {"const": "MIT"}, "source_copied_or_vendored": {"const": false}
+      }
+    },
+    "passCommand": {
+      "type": "object", "additionalProperties": false,
+      "required": ["command", "exit_code", "result_sha256", "status", "checks_passed", "check_count", "composition_status", "errors", "warnings", "repository_evidence_verified", "repository_evidence_revision", "repository_evidence_reference_count"],
+      "properties": {
+        "command": {"$ref": "#/$defs/nonblank"}, "exit_code": {"const": 0}, "result_sha256": {"$ref": "#/$defs/sha256"}, "status": {"const": "PASS"}, "checks_passed": {"const": 9}, "check_count": {"const": 9}, "composition_profile": {"const": "showcase"}, "composition_status": {"const": "pass"}, "errors": {"const": 0}, "warnings": {"const": 0}, "repository_evidence_verified": {"const": true}, "repository_evidence_revision": {"$ref": "#/$defs/sha"}, "repository_evidence_reference_count": {"const": 19}, "specification_sha256": {"$ref": "#/$defs/sha256"}, "artifact_sha256": {"$ref": "#/$defs/sha256"}, "artifact_bytes": {"type": "integer", "minimum": 1}
+      }
+    },
+    "visualPass": {
+      "type": "object", "additionalProperties": false,
+      "required": ["command", "exit_code", "result_sha256", "status", "visual_review", "diagnostics_count", "containment", "readability", "viewer_chrome", "captures"],
+      "properties": {"command": {"$ref": "#/$defs/nonblank"}, "exit_code": {"const": 0}, "result_sha256": {"$ref": "#/$defs/sha256"}, "status": {"const": "PASS"}, "visual_review": {"const": "pending"}, "diagnostics_count": {"const": 0}, "containment": {"const": "pass"}, "readability": {"const": "pass"}, "viewer_chrome": {"const": "pass"}, "captures": {"const": "pass"}}
+    },
+    "visualFail": {
+      "type": "object", "additionalProperties": false,
+      "required": ["command", "exit_code", "result_sha256", "status", "visual_review", "diagnostics_count", "diagnostic_code", "containment", "readability", "viewer_chrome", "captures", "overflow_observed"],
+      "properties": {"command": {"$ref": "#/$defs/nonblank"}, "exit_code": {"const": 1}, "result_sha256": {"$ref": "#/$defs/sha256"}, "status": {"const": "FAIL_VIEWPORT_CONTAINMENT"}, "visual_review": {"const": "pending"}, "diagnostics_count": {"const": 6}, "diagnostic_code": {"const": "viewer/viewport-overflow"}, "containment": {"const": "fail"}, "readability": {"const": "pass"}, "viewer_chrome": {"const": "pass"}, "captures": {"const": "pass"}, "overflow_observed": {"type": "object"}}
+    },
+    "commands": {
+      "type": "object", "additionalProperties": false,
+      "required": ["before_validate", "after_validate", "before_deliver", "after_deliver", "architecture_delta", "visual_check"],
+      "properties": {
+        "before_validate": {"$ref": "#/$defs/passCommand"}, "after_validate": {"$ref": "#/$defs/passCommand"}, "before_deliver": {"$ref": "#/$defs/passCommand"}, "after_deliver": {"$ref": "#/$defs/passCommand"},
+        "architecture_delta": {
+          "type": "object", "additionalProperties": false,
+          "required": ["command", "exit_code", "result_sha256", "receipt_sha256", "status", "completeness", "proof_level", "comparator_version", "canonical_version", "artifact_sha256", "artifact_bytes", "checks_passed", "check_count", "base_composition_status", "head_composition_status"],
+          "properties": {"command": {"$ref": "#/$defs/nonblank"}, "exit_code": {"const": 0}, "result_sha256": {"$ref": "#/$defs/sha256"}, "receipt_sha256": {"$ref": "#/$defs/sha256"}, "status": {"const": "PASS"}, "completeness": {"const": "complete"}, "proof_level": {"const": "revision-pinned"}, "comparator_version": {"const": 1}, "canonical_version": {"const": 1}, "artifact_sha256": {"$ref": "#/$defs/sha256"}, "artifact_bytes": {"type": "integer", "minimum": 1}, "checks_passed": {"const": 28}, "check_count": {"const": 28}, "base_composition_status": {"const": "pass"}, "head_composition_status": {"const": "pass"}}
+        },
+        "visual_check": {"type": "object", "additionalProperties": false, "required": ["before", "after", "delta"], "properties": {"before": {"$ref": "#/$defs/visualPass"}, "after": {"$ref": "#/$defs/visualPass"}, "delta": {"$ref": "#/$defs/visualFail"}}}
+      }
+    },
+    "deltaOutput": {
+      "type": "object", "additionalProperties": false,
+      "required": ["allowed_change_kinds", "actual_authored_facts", "input_semantic_hashes", "provider_limitations", "no_inference_fields_emitted"],
+      "properties": {
+        "allowed_change_kinds": {"const": ["added", "removed", "changed", "moved", "rerouted"]},
+        "actual_authored_facts": {"type": "object", "additionalProperties": false, "required": ["components", "connections", "boundaries", "presentation_changed", "provenance_changed", "change_records"], "properties": {"components": {"type": "object"}, "connections": {"type": "object"}, "boundaries": {"type": "object"}, "presentation_changed": {"const": false}, "provenance_changed": {"const": true}, "change_records": {"const": []}}},
+        "input_semantic_hashes": {"type": "object", "additionalProperties": false, "required": ["before", "after"], "properties": {"before": {"$ref": "#/$defs/sha256"}, "after": {"$ref": "#/$defs/sha256"}}},
+        "provider_limitations": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/nonblank"}},
+        "no_inference_fields_emitted": {"const": ["impact", "risk", "safety", "quality_improvement", "correctness", "merge_readiness"]}
+      }
+    },
+    "artifact": {"type": "object", "additionalProperties": false, "required": ["sha256", "bytes", "status", "reason"], "properties": {"sha256": {"$ref": "#/$defs/sha256"}, "bytes": {"type": "integer", "minimum": 1}, "status": {"const": "NOT_COMMITTED"}, "reason": {"$ref": "#/$defs/nonblank"}}},
+    "artifacts": {"type": "object", "additionalProperties": false, "required": ["before_html", "after_html", "delta_html", "screenshot_hashes"], "properties": {"before_html": {"$ref": "#/$defs/artifact"}, "after_html": {"$ref": "#/$defs/artifact"}, "delta_html": {"$ref": "#/$defs/artifact"}, "screenshot_hashes": {"type": "array", "minItems": 12, "items": {"type": "object", "additionalProperties": false, "required": ["file", "sha256"], "properties": {"file": {"$ref": "#/$defs/nonblank"}, "sha256": {"$ref": "#/$defs/sha256"}}}}}},
+    "boundaries": {
+      "type": "object", "additionalProperties": false,
+      "required": ["external_provider_is_ignition_authority", "provider_capability_is_permission", "provider_output_is_external_truth", "provider_local_policy_is_ignition_global_policy", "adapter_spike_pass_is_current_capability", "current_integration", "production_readiness", "provider_permission_granted", "authenticated_channel_admission", "live_external_invocation", "source_copied_or_vendored"],
+      "properties": {"external_provider_is_ignition_authority": {"const": false}, "provider_capability_is_permission": {"const": false}, "provider_output_is_external_truth": {"const": false}, "provider_local_policy_is_ignition_global_policy": {"const": false}, "adapter_spike_pass_is_current_capability": {"const": false}, "current_integration": {"const": "NOT_CURRENT_INTEGRATION"}, "production_readiness": {"const": "NOT_PRODUCTION_READY"}, "provider_permission_granted": {"const": false}, "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_CHANNEL_ADMISSION"}, "live_external_invocation": {"const": "LIVE_EXTERNAL_INVOCATION_UNCHANGED"}, "source_copied_or_vendored": {"const": false}}
+    }
+  }
+}
