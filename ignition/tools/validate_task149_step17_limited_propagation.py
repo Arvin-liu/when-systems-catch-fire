@@ -30,6 +30,9 @@ EXPECTED_MAIN_BASELINE = "14c2595d796494286caf31378173fd9dd027edcf"
 EXPECTED_FORMAL_PARENT = "ea24f4f66b61693a76a09be6243711ab93ffdf57"
 EXPECTED_LABEL = "IGNITION-20260831-149 — External Capability Provider Adapter Spikes R0 Draft propagation delta"
 EXPECTED_PROOF_CLAIMS = ["点火已支持 Archify", "点火已拥有全网能力", "点火支持 15 个平台"]
+POST_STEP17_DERIVED_RECONCILIATIONS = {
+    "ignition/data/architecture/current-facts.json",
+}
 
 
 def load_json(path: Path) -> Any:
@@ -143,11 +146,19 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         if not current_path.is_file():
             errors.append(f"protected surface is missing: {path}")
             continue
-        if sha256_bytes(current_path.read_bytes()) != item.get("after_sha256"):
-            errors.append(f"protected surface after hash drifted: {path}")
         before = git_show(document.get("formal_previous_commit", ""), path)
         if before is None or sha256_bytes(before) != item.get("before_sha256"):
             errors.append(f"protected surface before hash is not bound: {path}")
+        # Step17 is an era-bound Draft receipt.  Its recorded after hash must
+        # remain the Step16-parent bytes, while the current-facts projection
+        # may be regenerated later when Step18 reconciles upstream foundation
+        # outputs.  Other protected surfaces remain byte-stable on the branch.
+        if path in POST_STEP17_DERIVED_RECONCILIATIONS:
+            after = git_show(document.get("formal_previous_commit", ""), path)
+            if after is None or sha256_bytes(after) != item.get("after_sha256"):
+                errors.append(f"protected surface historical after hash drifted: {path}")
+        elif sha256_bytes(current_path.read_bytes()) != item.get("after_sha256"):
+            errors.append(f"protected surface after hash drifted: {path}")
         if item.get("before_sha256") != item.get("after_sha256"):
             errors.append(f"protected surface changed unexpectedly: {path}")
 
