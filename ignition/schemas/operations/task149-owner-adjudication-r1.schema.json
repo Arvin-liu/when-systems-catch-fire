@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task149-owner-adjudication-r1.schema.json",
+  "title": "Task149 Owner Adjudication R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "review_task_id",
+    "record_type",
+    "status",
+    "recorded_at",
+    "owner_review_ref",
+    "formal_observation",
+    "owner_decision",
+    "merge_intent",
+    "explicit_non_intent",
+    "retained_evidence_and_residuals",
+    "authority_boundary",
+    "lifecycle_boundary",
+    "evidence_hashes",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-149-owner-adjudication-r1"},
+    "task_id": {"const": "IGNITION-20260831-149"},
+    "review_task_id": {"const": "IGNITION-20260901-149"},
+    "record_type": {"const": "owner_adjudication"},
+    "status": {"const": "OWNER_ADJUDICATION_RECORDED"},
+    "recorded_at": {"type": "string", "minLength": 1},
+    "owner_review_ref": {"const": "1111:agent-results/IGNITION-20260901-149-owner-review.json"},
+    "formal_observation": {"$ref": "#/$defs/formalObservation"},
+    "owner_decision": {"$ref": "#/$defs/ownerDecision"},
+    "merge_intent": {"const": "MERGE_EXPERIMENTAL_EVIDENCE_AND_PROVIDER_NEUTRAL_CONTRACT_ONLY"},
+    "explicit_non_intent": {"const": ["DO_NOT_ACTIVATE_PROVIDER", "DO_NOT_ADD_CURRENT_PROVIDER_CAPABILITY", "DO_NOT_ENABLE_AUTHENTICATED_CHANNELS", "DO_NOT_CHANGE_LIVE_EXTERNAL_INVOCATION"]},
+    "retained_evidence_and_residuals": {"$ref": "#/$defs/evidence"},
+    "authority_boundary": {"$ref": "#/$defs/authorityBoundary"},
+    "lifecycle_boundary": {"$ref": "#/$defs/lifecycleBoundary"},
+    "evidence_hashes": {"$ref": "#/$defs/hashSet"},
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  },
+  "$defs": {
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "decision": {"type": "object", "additionalProperties": false, "required": ["decision"], "properties": {"fit": {"enum": ["FIT_WITH_LIMITS"]}, "decision": {"enum": ["CONTINUE_EXPERIMENT", "DEFER"]}}},
+    "formalObservation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "base_main_sha", "pr_number", "pr_state", "pr_is_draft", "reviewed_formal_head_before_record", "historical_step16_next_action_preserved"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+        "base_main_sha": {"$ref": "#/$defs/sha"},
+        "pr_number": {"const": 199},
+        "pr_state": {"const": "OPEN"},
+        "pr_is_draft": {"const": true},
+        "reviewed_formal_head_before_record": {"$ref": "#/$defs/sha"},
+        "historical_step16_next_action_preserved": {"const": "AWAIT_OWNER_PROVIDER_ADAPTER_REVIEW"}
+      }
+    },
+    "ownerDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["archify", "agent_reach_public", "agent_reach_authenticated"],
+      "properties": {
+        "archify": {"type": "object", "additionalProperties": false, "required": ["fit", "decision"], "properties": {"fit": {"const": "FIT_WITH_LIMITS"}, "decision": {"const": "CONTINUE_EXPERIMENT"}}},
+        "agent_reach_public": {"type": "object", "additionalProperties": false, "required": ["fit", "decision"], "properties": {"fit": {"const": "FIT_WITH_LIMITS"}, "decision": {"const": "CONTINUE_EXPERIMENT"}}},
+        "agent_reach_authenticated": {"type": "object", "additionalProperties": false, "required": ["decision"], "properties": {"decision": {"const": "DEFER"}}}
+      }
+    },
+    "evidenceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["decision", "evidence_refs", "residuals"],
+      "properties": {
+        "validation": {"type": "string", "minLength": 1},
+        "decision": {"type": "string", "minLength": 1},
+        "evidence_refs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "residuals": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "authenticated_calls": {"const": 0},
+        "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_CHANNEL_ADMISSION"},
+        "automatic_admission_queue": {"const": false}
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["archify", "agent_reach_public", "agent_reach_authenticated"],
+      "properties": {
+        "archify": {"$ref": "#/$defs/evidenceRecord"},
+        "agent_reach_public": {"$ref": "#/$defs/evidenceRecord"},
+        "agent_reach_authenticated": {"$ref": "#/$defs/evidenceRecord"}
+      }
+    },
+    "authorityBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_formal_task_id", "current_provider_capability_added", "current_operation_registry_changed", "provider_output_is_external_truth", "provider_local_policy_is_ignition_global_policy", "adapter_spike_pass_is_current_capability", "authenticated_channel_admission", "authenticated_calls", "live_external_invocation", "owner_decision_is_not_general_current_acceptance"],
+      "properties": {
+        "current_formal_task_id": {"const": "IGNITION-20260829-148"},
+        "current_provider_capability_added": {"const": false},
+        "current_operation_registry_changed": {"const": false},
+        "provider_output_is_external_truth": {"const": false},
+        "provider_local_policy_is_ignition_global_policy": {"const": false},
+        "adapter_spike_pass_is_current_capability": {"const": false},
+        "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_CHANNEL_ADMISSION"},
+        "authenticated_calls": {"const": 0},
+        "live_external_invocation": {"const": "OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "owner_decision_is_not_general_current_acceptance": {"const": true}
+      }
+    },
+    "lifecycleBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ready_transition", "ready_authorized_by_this_record", "merge_transition", "merge_executed_by_this_record", "task150_creation", "task150_scope_if_a8_passes", "task150_final_stop", "phase_a_next_action"],
+      "properties": {
+        "ready_transition": {"const": "CONDITIONAL_ON_A6_ALL_GATES_PASS"},
+        "ready_authorized_by_this_record": {"const": false},
+        "merge_transition": {"const": "CONDITIONAL_ON_A6_AND_A7_EXACT_HEAD_PROOF"},
+        "merge_executed_by_this_record": {"const": false},
+        "task150_creation": {"const": "BLOCKED_UNTIL_A8_FRESH_MAIN_CLOSEOUT"},
+        "task150_scope_if_a8_passes": {"const": "ARCHIFY_ONLY"},
+        "task150_final_stop": {"const": "AWAIT_OWNER_ARCHIFY_BOUNDED_ADMISSION_REVIEW"},
+        "phase_a_next_action": {"const": "RUN_TASK149_READY_GATES"}
+      }
+    },
+    "hashSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_contract_sha256", "final_report_json_sha256", "final_report_human_sha256", "archify_validation_receipt_sha256", "agent_reach_acquisition_receipt_sha256"],
+      "properties": {
+        "provider_contract_sha256": {"$ref": "#/$defs/sha256"},
+        "final_report_json_sha256": {"$ref": "#/$defs/sha256"},
+        "final_report_human_sha256": {"$ref": "#/$defs/sha256"},
+        "archify_validation_receipt_sha256": {"$ref": "#/$defs/sha256"},
+        "agent_reach_acquisition_receipt_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    }
+  }
+}

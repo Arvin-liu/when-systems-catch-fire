@@ -28,6 +28,7 @@ PROFILE_PATH = ROOT / "data/operations/state-changelog-profile-r1.json"
 IDENTITY_PATH = ROOT / "data/architecture/current-system-identity.json"
 EXPECTED_MAIN_BASELINE = "14c2595d796494286caf31378173fd9dd027edcf"
 EXPECTED_FORMAL_PARENT = "ea24f4f66b61693a76a09be6243711ab93ffdf57"
+STEP17_PUBLISHED_COMMIT = "d78f041544a03f3c9958b2485d788310c9085e8e"
 EXPECTED_LABEL = "IGNITION-20260831-149 — External Capability Provider Adapter Spikes R0 Draft propagation delta"
 EXPECTED_PROOF_CLAIMS = ["点火已支持 Archify", "点火已拥有全网能力", "点火支持 15 个平台"]
 POST_STEP17_DERIVED_RECONCILIATIONS = {
@@ -37,6 +38,13 @@ POST_STEP17_DERIVED_RECONCILIATIONS = {
     # Experience rebuild changed its counts/links without changing the
     # Task149 provider decision or adding a Current capability.
     "ignition/KNOWLEDGE/README.md",
+}
+POST_STEP17_SOURCE_RECONCILIATIONS = {
+    # A4's line-level operational-materiality marker is a later correction to
+    # the unmerged Task149 Changelog entry. Keep the Step17 receipt immutable
+    # by validating its recorded after-bytes from the Step17 publication
+    # commit, while validating the current Changelog with its own profile.
+    "ignition/STATE-CHANGELOG.md",
 }
 
 
@@ -132,15 +140,22 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     text = STATE_CHANGELOG_PATH.read_text(encoding="utf-8")
     if f"## 2026-09-01 — {EXPECTED_LABEL}" not in text:
         errors.append("Task149 STATE-CHANGELOG delta is missing")
-    if sha256_bytes(STATE_CHANGELOG_PATH.read_bytes()) != delta.get("whole_file_after_sha256"):
-        errors.append("Task149 STATE-CHANGELOG whole-file after hash drifted")
+    historical_state_changelog = git_show(STEP17_PUBLISHED_COMMIT, "ignition/STATE-CHANGELOG.md")
+    if historical_state_changelog is None or sha256_bytes(historical_state_changelog) != delta.get("whole_file_after_sha256"):
+        errors.append("Task149 STATE-CHANGELOG historical after hash drifted")
     parent_changelog = git_show(document.get("formal_previous_commit", ""), "ignition/STATE-CHANGELOG.md")
     if parent_changelog is None or sha256_bytes(parent_changelog) != delta.get("whole_file_before_sha256"):
         errors.append("Task149 STATE-CHANGELOG whole-file before hash is not bound to Step16 parent")
     profile = load_json(PROFILE_PATH)
     if profile.get("entry_count") != 55 or profile.get("historical_entry_count") != 27:
         errors.append("state-changelog profile counts do not preserve the Task149 historical boundary")
-    profile_entry = next((item for item in profile.get("entries", []) if item.get("ordinal") == 55), None)
+    historical_profile_bytes = git_show(STEP17_PUBLISHED_COMMIT, "ignition/data/operations/state-changelog-profile-r1.json")
+    try:
+        historical_profile = json.loads(historical_profile_bytes.decode("utf-8")) if historical_profile_bytes is not None else {}
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        historical_profile = {}
+        errors.append("Step17 published state-changelog profile cannot be loaded")
+    profile_entry = next((item for item in historical_profile.get("entries", []) if item.get("ordinal") == 55), None)
     if profile_entry is None or profile_entry.get("profile") != "historical-current-r0" or profile_entry.get("section_sha256") != delta.get("section_sha256"):
         errors.append("Task149 STATE-CHANGELOG profile seal is missing or not historical")
     errors.extend(f"state-changelog: {error}" for error in validate_state_changelog())
@@ -162,6 +177,10 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
             after = git_show(document.get("formal_previous_commit", ""), path)
             if after is None or sha256_bytes(after) != item.get("after_sha256"):
                 errors.append(f"protected surface historical after hash drifted: {path}")
+        elif path in POST_STEP17_SOURCE_RECONCILIATIONS:
+            after = git_show(STEP17_PUBLISHED_COMMIT, path)
+            if after is None or sha256_bytes(after) != item.get("after_sha256"):
+                errors.append(f"protected source historical after hash drifted: {path}")
         elif sha256_bytes(current_path.read_bytes()) != item.get("after_sha256"):
             errors.append(f"protected surface after hash drifted: {path}")
         if item.get("before_sha256") != item.get("after_sha256"):
