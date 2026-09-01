@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -15,6 +16,7 @@ from jsonschema import Draft202012Validator
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
+REPO_ROOT = ROOT.parent
 AUDIT_PATH = ROOT / "data/operations/iterations/149/step01-remote-truth-audit.json"
 AUDIT_SCHEMA_PATH = ROOT / "schemas/operations/task149-step01-remote-truth-audit-r0.schema.json"
 CONTRACT_PATH = ROOT / "data/operations/iterations/149/step01-provider-contract-boundary-r0.json"
@@ -81,13 +83,19 @@ def validate(audit: dict[str, Any] | None = None, contract: dict[str, Any] | Non
         errors.append("live external invocation is not still OWNER_DEFERRED")
 
     for fingerprint in audit.get("source_fingerprints", []):
-        path = ROOT.parent / fingerprint["path"]
-        if not path.is_file():
-            errors.append(f"source fingerprint path missing: {fingerprint['path']}")
+        path = fingerprint["path"]
+        try:
+            baseline_bytes = subprocess.check_output(
+                ["git", "show", f"{EXPECTED_BASELINE}:{path}"],
+                cwd=REPO_ROOT,
+                stderr=subprocess.DEVNULL,
+            )
+        except (OSError, subprocess.CalledProcessError):
+            errors.append(f"source fingerprint baseline path missing: {path}")
             continue
-        digest = hashlib.sha256(path.read_bytes()).hexdigest()
+        digest = hashlib.sha256(baseline_bytes).hexdigest()
         if digest != fingerprint["sha256"]:
-            errors.append(f"source fingerprint drift: {fingerprint['path']}")
+            errors.append(f"source fingerprint drift at declared baseline: {path}")
     return errors
 
 

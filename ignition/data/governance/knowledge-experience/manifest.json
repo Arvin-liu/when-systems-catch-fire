@@ -108,7 +108,7 @@
     "data/governance/knowledge-experience/changes.jsonl": "4fce56343b6d5b347fd13bd92ed40bd99c6117d7ffe521d5ee6d18cebd39298c",
     "data/governance/knowledge-experience/coverage.json": "b9588e3ce157c129b0ae298c842f3a49ebb42cdb28d39ad9c1195b2bbc2faca3",
     "data/governance/knowledge-experience/layered-reading.jsonl": "1493e59995e5c5587e2de914c6f3adc96c9a740730ce77afbe6a6f1d28f9114a",
-    "data/governance/knowledge-experience/search-index.jsonl": "ce3bfd5768cabd48937f411e813a4f6f68b7a1c9ed38ea313391c3ffed5f43b7"
+    "data/governance/knowledge-experience/search-index.jsonl": "46d4f4086ccba5583ed9c11d4587db6ed0fc2685f4ad111f518beac953d15916"
   },
   "machine_human_pairs": [
     {
