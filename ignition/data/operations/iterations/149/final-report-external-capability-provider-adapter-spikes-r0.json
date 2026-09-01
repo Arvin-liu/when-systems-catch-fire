@@ -112,7 +112,7 @@
     "step13_tests": 8,
     "step14_tests": 8,
     "step15_tests": 9,
-    "step16_tests": 8,
+    "step16_tests": 9,
     "local_formal_task_tests": "ALL_TASK149_SPIKE_TESTS_PASS_WITH_RETAINED_RESIDUALS",
     "external_live_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"
   },
