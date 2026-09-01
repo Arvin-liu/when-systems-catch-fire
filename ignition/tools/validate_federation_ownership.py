@@ -34,6 +34,8 @@ REQUIRED_ADAPTER_BEHAVIORS = {
     "bypass_os_approval",
     "promote_vendor_completion_to_os_validation",
 }
+TASK149_HISTORICAL_EXCEPTION_ID = "HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY"
+TASK149_DRAFT_EXCEPTION_ID = "IGNITION-149-PROVIDER-ADAPTER-SPIKE"
 REQUIRED_EXCEPTION_FIELDS = {
     "exception_id", "capability_scope", "external_options_considered", "reproduction_steps",
     "observed_failure", "threshold_or_boundary", "least_privilege_impact", "reversibility",
@@ -101,6 +103,36 @@ def _validate_exception_record(index: int, exception: Any) -> None:
             valid = False
         if not valid:
             raise OwnershipValidationError(f"build_vs_integrate_exception[{index}].{field} must be non-empty")
+
+
+def _validate_task149_exception(exception: Mapping[str, Any]) -> None:
+    """Keep the Task149 path classification evidence-only and removable.
+
+    The provider-shaped filenames are retained so the experimental evidence can
+    be audited, but this record is not an authorization surface.  These checks
+    prevent the narrow path allowance from silently becoming a runtime bypass.
+    """
+    if exception.get("exception_id") == TASK149_DRAFT_EXCEPTION_ID:
+        raise OwnershipValidationError("Task149 Draft-only provider exception has expired and must be removed or replaced")
+    if exception.get("exception_id") != TASK149_HISTORICAL_EXCEPTION_ID:
+        return
+    required_tokens = {
+        "capability_scope": ("Task149", "evidence", "no provider runtime"),
+        "threshold_or_boundary": ("no provider runtime", "Current capability", "separately reviewed task"),
+        "least_privilege_impact": ("No executor", "credential", "external-action"),
+        "reversibility": ("removable", "deleted"),
+        "decision": ("ALLOW_HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY",),
+        "why_adapter_cannot_solve": ("no provider capability", "does not bypass"),
+        "minimal_build_scope": ("Task149", "no runtime loop", "authenticated integration"),
+        "sunset_or_review_condition": ("removable", "generic runtime bypass", "separate formally reviewed task"),
+    }
+    for field, tokens in required_tokens.items():
+        value = str(exception.get(field, ""))
+        if not all(token.casefold() in value.casefold() for token in tokens):
+            raise OwnershipValidationError(f"Task149 historical exception is not evidence-only in {field}")
+    protected_paths = exception.get("protected_paths", [])
+    if not isinstance(protected_paths, list) or not protected_paths:
+        raise OwnershipValidationError("Task149 historical exception must retain an explicit evidence path set")
 
 
 def _validate_reference_executor_freeze(
@@ -285,6 +317,8 @@ def validate_contracts(
         raise OwnershipValidationError("policy exceptions must be an array")
     for index, exception in enumerate(exceptions):
         _validate_exception_record(index, exception)
+        if isinstance(exception, Mapping):
+            _validate_task149_exception(exception)
 
     components = registry.get("components")
     if registry.get("schema_version") != "executor-component-ownership-r1" or not isinstance(components, list):
