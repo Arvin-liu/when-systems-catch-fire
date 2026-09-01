@@ -1,0 +1,297 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step04-viewport-residual-repair-r1.schema.json",
+  "title": "Task150 Step04 viewport residual repair and upstream blocker",
+  "description": "Records the bounded geometry repair and the residual caused by the Archify Delta review shell. The blocker is not converted into a Current admission.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "record_type",
+    "status",
+    "formal_previous_commit",
+    "canonical_source",
+    "adapter",
+    "baseline_reproduction",
+    "repair_validation",
+    "upstream_blocker",
+    "scope_freeze",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step04-viewport-residual-repair-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "04"},
+    "record_type": {"const": "VIEWPORT_RESIDUAL_REPAIR"},
+    "status": {"const": "UPSTREAM_BLOCKER_RECORDED"},
+    "formal_previous_commit": {"const": "658e8aeffa37a4286ad62a0debb49f7bd52b1ba7"},
+    "canonical_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "role", "sha256", "source_revision", "node_count", "edge_count"],
+      "properties": {
+        "path": {"const": "ignition/data/architecture/overall-architecture.json"},
+        "role": {"const": "CURRENT_CANONICAL_ARCHITECTURE_SOURCE"},
+        "sha256": {"const": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13"},
+        "source_revision": {"const": "d7372c27abe456b5b8c058675630d8038f91b448"},
+        "node_count": {"const": 24},
+        "edge_count": {"const": 24}
+      }
+    },
+    "adapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "ir_path",
+        "ir_sha256",
+        "provider_revision",
+        "viewBox",
+        "component_size",
+        "topology_unchanged",
+        "geometry_repair_only",
+        "forbidden_changes"
+      ],
+      "properties": {
+        "path": {"const": "ignition/tools/run_task150_bounded_visualization_adapter.py"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "ir_path": {"const": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json"},
+        "ir_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "provider_revision": {"const": "7a16d30322f5bd09c832386faa95d8c9a933f0c0"},
+        "viewBox": {"const": [1650, 420]},
+        "component_size": {"const": [190, 28]},
+        "topology_unchanged": {"const": true},
+        "geometry_repair_only": {"const": true},
+        "forbidden_changes": {
+          "const": [
+            "no upstream fork or source mutation",
+            "no CSS override or overflow hiding",
+            "no filler element, tiny-font or viewport-specific concealment",
+            "no topology, label, semantic relationship or architecture-truth rewrite"
+          ]
+        }
+      }
+    },
+    "baseline_reproduction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_receipts", "compare_artifact_sha256", "semantic_checks", "visual_check"],
+      "properties": {
+        "source_receipts": {
+          "const": [
+            "ignition/data/operations/iterations/149/step07-archify-before-r0.json",
+            "ignition/data/operations/iterations/149/step07-archify-after-r0.json"
+          ]
+        },
+        "compare_artifact_sha256": {"const": "aafd3b298856205d56997b475a593e6fea7b9cf90b51a3fb92adf3743fd808e9"},
+        "semantic_checks": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["total", "passed"],
+          "properties": {"total": {"const": 28}, "passed": {"const": 28}}
+        },
+        "visual_check": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "diagnostics", "residuals"],
+          "properties": {
+            "status": {"const": "FAIL"},
+            "diagnostics": {"const": 6},
+            "residuals": {"$ref": "#/$defs/baselineViewportArray"}
+          }
+        }
+      }
+    },
+    "repair_validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "archify_schema_sha256",
+        "candidate_validation",
+        "standalone_delivery",
+        "standalone_visual_check",
+        "delta_compare",
+        "delta_visual_check"
+      ],
+      "properties": {
+        "archify_schema_sha256": {"const": "8c96140b6af8d93fb825a3c63e46b74176c9485185c978074ffe89e0f614576c"},
+        "candidate_validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "diagnostics", "nodes", "edges"],
+          "properties": {
+            "status": {"const": "PASS"},
+            "diagnostics": {"const": 0},
+            "nodes": {"const": 24},
+            "edges": {"const": 24}
+          }
+        },
+        "standalone_delivery": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "artifact_sha256", "bytes", "quality"],
+          "properties": {
+            "status": {"const": "PASS"},
+            "artifact_sha256": {"const": "42b268b31c78aa5d7c8b85a8babec8f36ee16e89878c3e07ade396208a61b6f4"},
+            "bytes": {"const": 751906},
+            "quality": {"const": "showcase"}
+          }
+        },
+        "standalone_visual_check": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "visual_review", "observations"],
+          "properties": {
+            "status": {"const": "PASS"},
+            "visual_review": {"const": "PENDING_PERCEPTUAL_REVIEW"},
+            "observations": {"$ref": "#/$defs/standaloneViewportArray"}
+          }
+        },
+        "delta_compare": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "artifact_sha256", "bytes", "semantic_checks"],
+          "properties": {
+            "status": {"const": "PASS"},
+            "artifact_sha256": {"const": "0e7c34bb3913863a6275f5ef96442cdef4ca32ee89cfd4bef189309245cd49b3"},
+            "bytes": {"const": 2157341},
+            "semantic_checks": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["total", "passed"],
+              "properties": {"total": {"const": 28}, "passed": {"const": 28}}
+            }
+          }
+        },
+        "delta_visual_check": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "diagnostics", "diagnostic_code", "observations"],
+          "properties": {
+            "status": {"const": "FAIL_UPSTREAM_WRAPPER"},
+            "diagnostics": {"const": 3},
+            "diagnostic_code": {"const": "viewer/viewport-overflow"},
+            "observations": {"$ref": "#/$defs/repairedViewportArray"}
+          }
+        }
+      }
+    },
+    "upstream_blocker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["confirmed", "shell_metrics", "evidence", "resolution"],
+      "properties": {
+        "confirmed": {"const": true},
+        "shell_metrics": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "delta_canvas_min_height_px",
+            "proof_header_height_px",
+            "tools_height_px",
+            "review_strip_height_px",
+            "details_height_px",
+            "footer_height_px",
+            "observed_body_scroll_height_px"
+          ],
+          "properties": {
+            "delta_canvas_min_height_px": {"const": 520},
+            "proof_header_height_px": {"const": 181.6875},
+            "tools_height_px": {"const": 35},
+            "review_strip_height_px": {"const": 50},
+            "details_height_px": {"const": 75},
+            "footer_height_px": {"const": 14},
+            "observed_body_scroll_height_px": {"const": 1050}
+          }
+        },
+        "evidence": {
+          "const": [
+            "The Archify compare shell sets the Delta canvas to min-height: 520px.",
+            "The authored repaired SVG passes standalone containment, but the Delta shell still reports viewport overflow.",
+            "Reducing authored viewBox and geometry cannot remove the fixed upstream header, tools, review strip, canvas minimum, details and footer chrome.",
+            "No upstream fork, CSS override, overflow hiding or concealment workaround was used."
+          ]
+        },
+        "resolution": {"const": "DEFER_OWNER_OR_UPSTREAM_WRAPPER_FIX_REQUIRED_BEFORE_STEP11"}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["agent_reach", "authenticated_channels", "installation", "live_external_invocation", "current_admission"],
+      "properties": {
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channels": {"const": "NO_AUTHENTICATED_ADMISSION"},
+        "installation": {"const": "NO_INSTALL_OR_AUTO_UPGRADE"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "current_admission": {"const": "NOT_ADMITTED"}
+      }
+    },
+    "claim_ceiling": {
+      "const": "Task150 Step04 proves a geometry-only bounded derived-artifact repair and records an Archify Delta-shell viewport blocker. It does not prove perceptual quality, Owner acceptance, Current integration, a default renderer, architecture truth, production readiness, authenticated access, external truth or live external completion."
+    }
+  },
+  "$defs": {
+    "baselineViewport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["theme", "viewport", "scroll_height", "ok"],
+      "properties": {
+        "theme": {"enum": ["light", "dark"]},
+        "viewport": {"enum": ["1440x900", "1600x1000", "1920x1080", "2048x1320"]},
+        "scroll_height": {"type": "integer", "minimum": 1},
+        "ok": {"const": false}
+      }
+    },
+    "baselineViewportArray": {
+      "type": "array",
+      "const": [
+        {"theme":"light","viewport":"1440x900","scroll_height":1204,"ok":false},
+        {"theme":"light","viewport":"1600x1000","scroll_height":1300,"ok":false},
+        {"theme":"light","viewport":"1920x1080","scroll_height":1357,"ok":false},
+        {"theme":"light","viewport":"2048x1320","scroll_height":1490,"ok":false},
+        {"theme":"dark","viewport":"1440x900","scroll_height":1204,"ok":false},
+        {"theme":"dark","viewport":"2048x1320","scroll_height":1490,"ok":false}
+      ],
+      "items": {"$ref": "#/$defs/baselineViewport"}
+    },
+    "repairedViewport": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["theme", "viewport", "scroll_height", "ok"],
+      "properties": {
+        "theme": {"enum": ["light", "dark"]},
+        "viewport": {"enum": ["1440x900", "1600x1000", "1920x1080", "2048x1320"]},
+        "scroll_height": {"type": "integer", "minimum": 1},
+        "ok": {"type": "boolean"}
+      }
+    },
+    "repairedViewportArray": {
+      "type": "array",
+      "const": [
+        {"theme":"light","viewport":"1440x900","scroll_height":1050,"ok":false},
+        {"theme":"light","viewport":"1600x1000","scroll_height":1074,"ok":false},
+        {"theme":"light","viewport":"1920x1080","scroll_height":1080,"ok":true},
+        {"theme":"light","viewport":"2048x1320","scroll_height":1320,"ok":true},
+        {"theme":"dark","viewport":"1440x900","scroll_height":1050,"ok":false},
+        {"theme":"dark","viewport":"2048x1320","scroll_height":1320,"ok":true}
+      ],
+      "items": {"$ref": "#/$defs/repairedViewport"}
+    },
+    "standaloneViewportArray": {
+      "type": "array",
+      "const": [
+        {"theme":"light","viewport":"1440x900","scroll_height":900,"ok":true},
+        {"theme":"light","viewport":"1600x1000","scroll_height":1000,"ok":true},
+        {"theme":"light","viewport":"1920x1080","scroll_height":1080,"ok":true},
+        {"theme":"light","viewport":"2048x1320","scroll_height":1320,"ok":true},
+        {"theme":"dark","viewport":"1440x900","scroll_height":900,"ok":true},
+        {"theme":"dark","viewport":"2048x1320","scroll_height":1320,"ok":true}
+      ],
+      "items": {"$ref": "#/$defs/repairedViewport"}
+    }
+  }
+}
