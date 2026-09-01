@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "cee7e00f439b382cfc89218c33d0ac85fb258e84c2a37df5c3dbf2c01348d9b2",
+      "source_sha256": "ec3107561702224c1a2515d6f95174d1a8424a415a08e43ac98ee28b870195a4",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2270,7 +2270,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "8e78407035f5412411c3077962b1524ac022c17e7336478729f0fc01d9acb05e",
+      "source_sha256": "8c2097902026f81273df53fdff6276a677935ec8154c5a790667f5996e300db0",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2873,7 +2873,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "191419dfe909f5e55f9c9712d5572e0399062064414caa5519147db9bc65c35a",
+      "source_sha256": "b0eb0343c20c8a70b6fa4bb737f9f950796221df031764df023a822e5124e533",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"

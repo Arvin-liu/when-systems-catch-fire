@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "450bd5e50930e1557f553c81903882afb0ac182e6a920d27a191fa8ac476e66c"
+      "sha256": "1e6c7c32f79d79deef7ffd0429f213583e85b1d38d4af2dc495d292dd07c0976"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "8e24a3e7dc6c16bbe22e258112e102ac123fd07664a6cfc80049ede752ef5452"
+      "sha256": "a15689bd506ecc38c1984d7c29410f058d4fa6395c36bf102129be137aad1669"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",
