@@ -32,6 +32,11 @@ EXPECTED_LABEL = "IGNITION-20260831-149 — External Capability Provider Adapter
 EXPECTED_PROOF_CLAIMS = ["点火已支持 Archify", "点火已拥有全网能力", "点火支持 15 个平台"]
 POST_STEP17_DERIVED_RECONCILIATIONS = {
     "ignition/data/architecture/current-facts.json",
+    # The Knowledge Experience README is a generated projection of the same
+    # source corpus.  Step18's official self-correction and Knowledge
+    # Experience rebuild changed its counts/links without changing the
+    # Task149 provider decision or adding a Current capability.
+    "ignition/KNOWLEDGE/README.md",
 }
 
 
