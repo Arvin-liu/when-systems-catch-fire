@@ -1,0 +1,64 @@
+{
+  "schema_version": "ignition-150-step06-current-architecture-smoke-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "06",
+  "record_type": "CURRENT_ARCHITECTURE_SMOKE",
+  "status": "CURRENT_ARCHITECTURE_SMOKE_OBSERVED_NOT_ADMITTED",
+  "formal_previous_commit": "4f2de5f11fb06c7289705ddd043c3ae6ef5c21ba",
+  "fresh_source": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "remote": "https://github.com/Arvin-liu/when-systems-catch-fire.git",
+    "clone_mode": "FRESH_FULL_CLONE",
+    "revision": "d7372c27abe456b5b8c058675630d8038f91b448",
+    "checkout": "DETACHED_EXACT_COMMIT",
+    "worktree": "CLEAN",
+    "non_shallow": true,
+    "fsck_error_stream": "EMPTY_AFTER_COMPLETION",
+    "architecture_path": "ignition/data/architecture/overall-architecture.json",
+    "architecture_sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+    "system_map_path": "ignition/data/architecture/interactive-system-map.json",
+    "system_map_sha256": "3824697a9c781c1ea825f7335bc9461e6fb693e70bb65c042309fd16da173313"
+  },
+  "provider": {
+    "provider_id": "archify",
+    "revision": "7a16d30322f5bd09c832386faa95d8c9a933f0c0",
+    "package_version": "2.17.0-dev.0",
+    "schema_sha256": "8c96140b6af8d93fb825a3c63e46b74176c9485185c978074ffe89e0f614576c",
+    "role": "DERIVED_ARTIFACT_PROVIDER_NOT_AUTHORITY"
+  },
+  "adapter": {
+    "path": "ignition/tools/run_task150_bounded_visualization_adapter.py",
+    "sha256": "20f45aafe13ac43328f02627ecf3f49f74fe60cf24f0c907c1b315025760603e",
+    "version": "task150-bounded-visualization-adapter-r1",
+    "flow": "CANONICAL_SOURCE -> PROVIDER_ADAPTER -> DERIVED_ARTIFACT",
+    "ir_path": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json",
+    "ir_sha256": "02ee0e727af237b778fd0b88fbdb2a42eca0395b8eaed8d731636b3e4bb7b3c3",
+    "topology": {"nodes":24,"edges":24,"semantic_relationships_unchanged":true}
+  },
+  "runs": [
+    {"run":"one","ir_sha256":"02ee0e727af237b778fd0b88fbdb2a42eca0395b8eaed8d731636b3e4bb7b3c3","html_sha256":"42b268b31c78aa5d7c8b85a8babec8f36ee16e89878c3e07ade396208a61b6f4","svg_sha256":"34d1da4c0ed795502f1eeef3af3d82e8872953422f9ea7ce5b48549424e57952","validate":"PASS","deliver":"PASS","visual_check":"PASS","visual_review":"pending"},
+    {"run":"two","ir_sha256":"02ee0e727af237b778fd0b88fbdb2a42eca0395b8eaed8d731636b3e4bb7b3c3","html_sha256":"42b268b31c78aa5d7c8b85a8babec8f36ee16e89878c3e07ade396208a61b6f4","svg_sha256":"34d1da4c0ed795502f1eeef3af3d82e8872953422f9ea7ce5b48549424e57952","validate":"PASS","deliver":"PASS","visual_check":"PASS","visual_review":"pending"}
+  ],
+  "stability": {
+    "ir_equal": true,
+    "html_equal": true,
+    "svg_equal": true,
+    "observed_scope": "TWO_RUNS_SAME_INPUT_SAME_PROVIDER_REVISION",
+    "future_nondeterminism_claim": "NOT_CLAIMED"
+  },
+  "derived_artifacts": {
+    "html": {"path":"ignition/data/operations/iterations/150/derived-artifacts/task150-current-architecture.html","sha256":"42b268b31c78aa5d7c8b85a8babec8f36ee16e89878c3e07ade396208a61b6f4","bytes":751906},
+    "svg": {"path":"ignition/data/operations/iterations/150/derived-artifacts/task150-current-architecture.svg","sha256":"34d1da4c0ed795502f1eeef3af3d82e8872953422f9ea7ce5b48549424e57952","bytes":54708},
+    "quality": "showcase",
+    "provenance_receipt_fields": ["ignition_source_ref", "ignition_source_sha256", "archify_provider_revision", "adapter_version", "ir_sha256", "artifact_sha256"]
+  },
+  "scope_freeze": {
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channels": "NO_AUTHENTICATED_ADMISSION",
+    "installation": "NO_INSTALL_OR_AUTO_UPGRADE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "current_admission": "NOT_ADMITTED",
+    "delta_blocker": "INHERITED_STEP04_UPSTREAM_WRAPPER_BLOCKER"
+  },
+  "claim_ceiling": "Task150 Step06 records a fresh exact-source smoke, two observed stable derived outputs and their provenance bindings. It does not generalize bit-for-bit stability beyond the two runs, establish a Current capability, select a default renderer, prove perceptual quality or Owner acceptance, resolve the Step04 Delta-shell blocker, establish architecture truth, grant authenticated access, prove external truth or complete live external invocation."
+}
