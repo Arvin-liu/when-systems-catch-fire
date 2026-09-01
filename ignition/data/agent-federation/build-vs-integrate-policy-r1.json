@@ -50,5 +50,52 @@
     "remote_git",
     "device"
   ],
-  "exceptions": []
+  "exceptions": [
+    {
+      "exception_id": "IGNITION-149-PROVIDER-ADAPTER-SPIKE",
+      "capability_scope": "Task149 provider-neutral contract, provenance, health, read-only acquisition and derived-visualization adapter evidence only; no executor or provider runtime",
+      "external_options_considered": [
+        "Archify public interface at the pinned Task149 revision",
+        "Agent Reach public interface at the pinned Task149 revision",
+        "the existing Reference Executor as the bounded offline conformance surface",
+        "a custom renderer or source-acquisition implementation"
+      ],
+      "reproduction_steps": [
+        "Run Task149 Steps 01-17 from the Task148 Current baseline.",
+        "Run validate_federation_ownership.py --scan-git-diff against the Task149 Draft branch.",
+        "Observe that provider/channel-named contract, receipt, schema, validator and test paths are rejected without a scoped exception."
+      ],
+      "observed_failure": "The Reference Executor ownership gate rejects the Task149 provider-neutral adapter evidence paths by name; no provider runtime or permission failure is being repaired.",
+      "threshold_or_boundary": "This record ends at repository-local Task149 spike evidence. Any runtime implementation, authenticated channel, vendor import, permission expansion, Current promotion or production integration requires a new reviewed decision.",
+      "least_privilege_impact": "No executor, provider, channel, browser, credential, cookie, network, remote-Git or production authority is added; live external invocation remains unchanged.",
+      "reversibility": "Remove the Task149 spike paths and this record; the change creates no external configuration, installation or persistent provider state.",
+      "owner_review_ref": "IGNITION-20260831-149-DRAFT-PR-199; Owner provider-adapter review pending",
+      "decision": "ALLOW_SCOPED_ADAPTER_SPIKE_NO_RUNTIME_INTEGRATION",
+      "external_executor_or_adapter": "Archify and Agent Reach public upstream interfaces, observed through Ignition-owned provider-neutral records, validators and tests",
+      "contract_gap": "The frozen Reference Executor has no provider, source-acquisition or derived-visualization capability slot; Task149 records the contract seam without adding that capability to the executor.",
+      "why_adapter_cannot_solve": "The adapter can solve the scoped need, so no custom executor build is authorized; this exception exists only to account for the provider-shaped evidence paths.",
+      "minimal_build_scope": "Task149 contract schemas, immutable spike receipts, provenance adapter outputs, health/channel matrix, validators, tests and Draft report under iteration 149; no runtime loop, system install, vendor source or authenticated integration.",
+      "sunset_or_review_condition": "Expires at Task149 Draft review and must be removed or replaced before any Ready, merge, Current or runtime/authenticated capability admission.",
+      "protected_paths": [
+        "data/operations/iterations/149/",
+        "schemas/operations/provider-adapter-contract-r0.schema.json",
+        "schemas/operations/provider-contract-boundary-r0.schema.json",
+        "schemas/operations/provider-selection-authority-r0.schema.json",
+        "schemas/operations/task149-final-report-external-capability-provider-adapter-spikes-r0.schema.json",
+        "schemas/operations/task149-step08-provider-adjudication-r0.schema.json",
+        "schemas/operations/task149-step09-agent-reach-channel-capability-matrix-r0.schema.json",
+        "schemas/operations/task149-step14-authenticated-channel-fail-closed-r0.schema.json",
+        "tests/test_task149_provider_contract.py",
+        "tests/test_task149_provider_selection.py",
+        "tests/test_task149_step08_provider_adjudication.py",
+        "tests/test_task149_step09_agent_reach_channel_matrix.py",
+        "tests/test_task149_step14_authenticated_channel_fail_closed.py",
+        "tools/validate_task149_provider_contract.py",
+        "tools/validate_task149_provider_selection.py",
+        "tools/validate_task149_step08_provider_adjudication.py",
+        "tools/validate_task149_step09_agent_reach_channel_matrix.py",
+        "tools/validate_task149_step14_authenticated_channel_fail_closed.py"
+      ]
+    }
+  ]
 }
