@@ -1,0 +1,92 @@
+{
+  "schema_version": "ignition-149-step10-agent-reach-safety-isolation-r0",
+  "task_id": "IGNITION-20260831-149",
+  "step": "10",
+  "status": "ISOLATION_VALIDATED",
+  "observed_at": "2026-09-01T09:06:18+08:00",
+  "formal_previous_commit": "77b782a43da046ccae20446b0badd0160ad7a239",
+  "authorized_scope": [
+    "read-only public network acquisition spike",
+    "task-local ephemeral Agent Reach runtime paths",
+    "doctor and dry-run safety checks",
+    "bounded output capture and provenance recording"
+  ],
+  "forbidden_scope": [
+    "sudo",
+    "--system",
+    "system package installation",
+    "system configuration",
+    "firewall or security modification",
+    "browser automatic login",
+    "cookie or session import",
+    "private credential read",
+    "posting/commenting/liking/following",
+    "private repository write",
+    "Issue or PR creation",
+    "external account modification"
+  ],
+  "ephemeral_environment": {
+    "root_class": "REAL_PATH_TASK_LOCAL_EPHEMERAL",
+    "home_realpath_verified": true,
+    "xdg_config_realpath_verified": true,
+    "xdg_cache_realpath_verified": true,
+    "all_paths_symlink_free": true,
+    "path_attestation_sha256": "75dec97a6ea4d9fc9eacbebc1f38760c6efacc33f762bc15361ef689f09c1abf",
+    "before_file_count": 0,
+    "after_file_count": 0,
+    "before_file_list_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "after_file_list_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "persistent_agent_reach_config_written": false,
+    "credential_or_cookie_content_access": "NONE"
+  },
+  "commands": {
+    "doctor": {
+      "command": "agent-reach doctor --json",
+      "exit_code": 0,
+      "result_sha256": "e3121078405d05d8ad573c40bfaf463ea4adf55f3615ca50a505f242f0d8ecc2",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "READ_ONLY_OBSERVATION"
+    },
+    "install_dry_run": {
+      "command": "agent-reach install --dry-run --env local",
+      "exit_code": 0,
+      "result_sha256": "e4dec3782f0fd89798a1c0277b343a1d84a0ca6060a30e30a4043a3e6f11e76b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "NO_CHANGE_DRY_RUN",
+      "system_install_requested": false,
+      "system_changes_performed": false,
+      "output_explicitly_says_no_changes": true
+    }
+  },
+  "mutation_audit": {
+    "command_argv_forbidden_tokens_absent": true,
+    "sudo_invoked": false,
+    "system_flag_invoked": false,
+    "system_install_performed": false,
+    "system_config_written": false,
+    "firewall_or_security_changed": false,
+    "browser_login_invoked": false,
+    "cookie_or_session_read": false,
+    "private_credential_read": false,
+    "external_write_invoked": false,
+    "private_repository_write_invoked": false,
+    "upstream_repository_modified": false,
+    "formal_worktree_modified_during_isolation_check": false,
+    "control_worktree_modified_during_isolation_check": false
+  },
+  "cleanup": {
+    "task_local_telemetry_policy": "isolate_and_record_then_remove_or_quarantine",
+    "config_cache_home_clean_after_run": true,
+    "no_long_lived_credential_store_touched": true
+  },
+  "boundaries": {
+    "provider_local_policy_inherited": false,
+    "provider_output_is_external_truth": false,
+    "provider_capability_is_permission": false,
+    "current_integration": "NOT_CURRENT_INTEGRATION",
+    "production_readiness": "NOT_PRODUCTION_READY",
+    "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+    "live_external_invocation": "LIVE_EXTERNAL_INVOCATION_UNCHANGED"
+  },
+  "claim_ceiling": "This receipt proves only that the recorded Agent Reach doctor and dry-run commands executed inside real-path task-local ephemeral directories without system installation or configuration mutation, credential/session access or external writes. It does not prove any provider channel is globally available, authenticated, trusted, Current, production-ready or authorized."
+}
