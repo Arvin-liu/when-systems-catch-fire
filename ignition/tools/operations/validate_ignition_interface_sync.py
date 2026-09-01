@@ -34,6 +34,7 @@ ADDITIONAL_LOCATORS = {
 }
 
 MINIMAL_INVOCATION = "请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
+ITERATION_PATH_RE = re.compile(r"^data/operations/iterations/(?P<number>\d+)(?:/|$)")
 
 
 class InterfaceSyncError(ValueError):
@@ -168,20 +169,56 @@ def validate_semantics(registry: dict[str, Any]) -> None:
     require(start_text.index("OPERATING-METHOD.md") < start_text.index("ITERATION.md"), "COLD_START_ORDER_REVERSED")
 
 
+def historical_rewrite_violations(diff_output: str) -> list[str]:
+    """Return changed paths that rewrite historical evidence.
+
+    A successor iteration is allowed to add its own new evidence files.  The
+    guard still rejects modifications, deletions, renames, or copies in a
+    successor iteration, as well as every historical/archive path.  This
+    keeps the Task148 preservation check meaningful when a later task is
+    reviewed from the same baseline.
+    """
+    violations: list[str] = []
+    for line in diff_output.splitlines():
+        fields = line.split("\t")
+        if len(fields) < 2:
+            continue
+        status = fields[0]
+        status_code = status[:1]
+        for raw_path in fields[1:]:
+            path = raw_path.removeprefix("ignition/")
+            if "/historical/" in f"/{path}" or path.startswith("archive/"):
+                violations.append(raw_path)
+                continue
+            match = ITERATION_PATH_RE.match(path)
+            if not match:
+                continue
+            iteration_number = int(match.group("number"))
+            if iteration_number == 148:
+                continue
+            successor_addition = iteration_number > 148 and status_code == "A"
+            if not successor_addition:
+                violations.append(raw_path)
+    return violations
+
+
 def validate_no_historical_rewrite() -> None:
     completed = subprocess.run(
-        ["git", "-C", str(REPO_ROOT), "diff", "--name-only", FORMAL_BASELINE, "--"],
+        [
+            "git",
+            "-C",
+            str(REPO_ROOT),
+            "diff",
+            "--name-status",
+            "--find-renames",
+            FORMAL_BASELINE,
+            "--",
+        ],
         check=True,
         capture_output=True,
         text=True,
     )
-    violations: list[str] = []
-    for raw_path in completed.stdout.splitlines():
-        path = raw_path.removeprefix("ignition/")
-        if path.startswith("data/operations/iterations/") and not path.startswith("data/operations/iterations/148/"):
-            violations.append(raw_path)
-        elif "/historical/" in f"/{path}" or path.startswith("archive/"):
-            violations.append(raw_path)
+    violations = historical_rewrite_violations(completed.stdout)
     require(not violations, f"HISTORICAL_EVIDENCE_REWRITE:{sorted(violations)}")
 
 
