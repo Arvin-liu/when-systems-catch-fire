@@ -1,0 +1,14 @@
+{
+  "schema_version":"ignition-150-step10-license-drift-r1",
+  "task_id":"IGNITION-20260901-150",
+  "step":"10",
+  "record_type":"LICENSE_AND_UPSTREAM_DRIFT",
+  "status":"LICENSE_AND_DRIFT_ENVELOPE_PASS",
+  "formal_previous_commit":"ca5f0fcfd9575d3b9b97e2a71b03a45e26147a46",
+  "upstream_observation":{"repository":"tt-a1i/archify","revision":"7a16d30322f5bd09c832386faa95d8c9a933f0c0","package_version":"2.17.0-dev.0","node_engine":">=18","checkout":"FRESH_FULL_CLONE_EXACT_MAIN_HEAD","worktree":"CLEAN","non_shallow":true,"vendor_source":false},
+  "attribution":{"license":"MIT","license_path":"upstream/archify/LICENSE","license_sha256":"b799ab081703e7821ae5096d2c1abdf14bbdc75e8ea1c4045998c36ed6db9706","copyright_lines":["Copyright (c) 2026 tt-a1i (Archify)","Copyright (c) 2025 Cocoon AI"],"redistribution_requirement":"Include the MIT copyright and permission notice in copies or substantial portions.","recorded_in_ignition":true},
+  "compatibility_envelope":{"name":"TESTED_COMPATIBILITY_ENVELOPE_ONLY","provider_revision":"7a16d30322f5bd09c832386faa95d8c9a933f0c0","package_version":"2.17.0-dev.0","schema_sha256":"8c96140b6af8d93fb825a3c63e46b74176c9485185c978074ffe89e0f614576c","adapter_version":"task150-bounded-visualization-adapter-r1","node_requirement":">=18","tested_commands":["doctor","validate architecture","deliver architecture","compare architecture","visual-check"],"result":"PASS_AT_PINNED_REVISION_ONLY"},
+  "drift_policy":{"new_revision":"REQUIRE_FRESH_COMPATIBILITY_CHECK","automatic_update":false,"compatibility_check_before_use":true,"source_vendor_update":"FORBIDDEN_IN_TASK150","provider_selection_owner":"IGNITION","future_claim":"NO_FUTURE_VERSION_COMPATIBILITY_CLAIM"},
+  "scope_freeze":{"task150_scope":"ARCHIFY_ONLY","agent_reach":"NO_CHANGE","installation":"NO_INSTALL_OR_AUTO_UPGRADE","authenticated_channels":"NO_AUTHENTICATED_ADMISSION","live_external_invocation":"UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN","current_admission":"NOT_ADMITTED"},
+  "claim_ceiling":"Task150 Step10 proves only MIT attribution at one pinned Archify revision and a tested compatibility envelope with an explicit fresh-check-before-use drift policy. It does not claim future-version compatibility, vendor upstream source, establish a Current capability, select a default renderer, change Agent Reach, install software, admit authentication, resolve the Step04 Delta-shell blocker, establish architecture truth, prove external truth or complete live external invocation."
+}
