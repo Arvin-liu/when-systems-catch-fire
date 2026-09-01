@@ -58,6 +58,21 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("typed component count must cover every canonical architecture node")
     if document.get("typed_ir", {}).get("connection_count") != len(ir.get("connections", [])) or len(ir.get("connections", [])) != len(architecture.get("edges", [])):
         errors.append("typed connection count must cover every canonical architecture edge")
+    derived_layout = document.get("derived_layout", {})
+    if derived_layout.get("viewBox") != [1400, 800] or ir.get("meta", {}).get("viewBox") != [1400, 800]:
+        errors.append("Step05 must retain the validated compact 1400x800 viewBox")
+    if derived_layout.get("componentSize") != [190, 48]:
+        errors.append("Step05 must retain the validated 190x48 component size")
+    if derived_layout.get("explicitComponentPositionCount") != len(ir.get("components", [])):
+        errors.append("derived component-position count must match the typed IR")
+    if derived_layout.get("explicitConnectionGeometryCount") != len(ir.get("connections", [])):
+        errors.append("derived connection-geometry count must match the typed IR")
+    if any("pos" not in component or "size" not in component for component in ir.get("components", [])):
+        errors.append("every typed component must retain explicit derived geometry")
+    if any("labelAt" not in connection for connection in ir.get("connections", [])):
+        errors.append("every typed connection must retain an explicit derived label position")
+    if any("sublabel" in component for component in ir.get("components", [])):
+        errors.append("duplicate component sublabels must remain omitted from the compact IR")
     ids = [item.get("id") for item in ir.get("components", [])]
     if len(ids) != len(set(ids)) or not all(ids):
         errors.append("typed component IDs must be non-empty and unique")
@@ -66,6 +81,13 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("typed connection endpoints must resolve to typed components")
     if document.get("archify_external_validation", {}).get("status") != "PENDING_STEP06":
         errors.append("Step05 must not claim external Archify validation before Step06")
+    source_evidence = document.get("source_evidence", {})
+    if source_evidence.get("status") != "PARTIAL_BY_CANONICAL_TARGETS":
+        errors.append("source evidence coverage must remain explicit and bounded")
+    if source_evidence.get("verified_component_count", 0) < 1:
+        errors.append("at least one actual formal-repository file must be bound as source evidence")
+    if source_evidence.get("omitted_non_file_target_count") != len(source_evidence.get("omitted_non_file_targets", [])):
+        errors.append("omitted source-target count must match the omission ledger")
     boundary = document.get("boundary", {})
     if any(boundary.get(key) is not False for key in ("network_used_by_adapter", "authentication_used", "permission_granted")):
         errors.append("Step05 adapter must remain network/auth/permission side-effect free")

@@ -19,6 +19,39 @@
     "output": "{\"status\":\"silent\",\"reason\":\"current\"}",
     "recorded_separately_from_adapter_network": true
   },
+  "source_evidence": {
+    "status": "PARTIAL_BY_CANONICAL_TARGETS",
+    "verified_component_count": 19,
+    "omitted_non_file_target_count": 5,
+    "omitted_non_file_targets": [
+      {
+        "component_id": "source-functions",
+        "canonical_target": "统一函数总表/",
+        "reason": "TARGET_IS_DIRECTORY_MISSING_OR_NON_FILE"
+      },
+      {
+        "component_id": "validation-proof",
+        "canonical_target": "data/foundation/proofs/",
+        "reason": "TARGET_IS_DIRECTORY_MISSING_OR_NON_FILE"
+      },
+      {
+        "component_id": "validation-evidence",
+        "canonical_target": "data/foundation/evidence/",
+        "reason": "TARGET_IS_DIRECTORY_MISSING_OR_NON_FILE"
+      },
+      {
+        "component_id": "navigation-map",
+        "canonical_target": "docs/generated/ignition-system-map.svg",
+        "reason": "TARGET_IS_DIRECTORY_MISSING_OR_NON_FILE"
+      },
+      {
+        "component_id": "navigation-overall",
+        "canonical_target": "docs/generated/ignition-overall-architecture.svg",
+        "reason": "TARGET_IS_DIRECTORY_MISSING_OR_NON_FILE"
+      }
+    ],
+    "reason": "Only existing formal-repository files are passed to Archify repository evidence; directory or missing targets remain canonical labels without fabricated source bindings."
+  },
   "source_inputs": [
     {
       "path": "ignition/data/architecture/overall-architecture.json",
@@ -36,13 +69,29 @@
   ],
   "adapter": {
     "script": "ignition/tools/run_task149_archify_adapter.py",
-    "algorithm": "CANONICAL_GROUPS_NODES_EDGES_TO_ARCHIFY_COMPONENTS_CONNECTIONS",
+    "algorithm": "CANONICAL_GROUPS_NODES_EDGES_TO_ARCHIFY_COMPONENTS_CONNECTIONS_WITH_EXPLICIT_COMPACT_ORTHOGONAL_GEOMETRY",
     "source_copy_or_vendor": false,
     "provider_output_can_update_canonical_truth": false
   },
+  "derived_layout": {
+    "profile": "COMPACT_ORTHOGONAL_SHOWCASE_R1",
+    "viewBox": [
+      1400,
+      800
+    ],
+    "componentSize": [
+      190,
+      48
+    ],
+    "explicitComponentPositionCount": 24,
+    "explicitConnectionGeometryCount": 24,
+    "nodeContextSublabels": "OMITTED_DUPLICATE_OF_BOUNDARY_LABELS",
+    "semanticSourceUnchanged": true,
+    "visual_validation": "PENDING_STEP06"
+  },
   "typed_ir": {
     "path": "ignition/data/operations/iterations/149/archify-typed-ir-r0.json",
-    "sha256": "6cbe95b69181c6b662384e7f4fe90d21161fbef379d905cd7f38562cbf4bdf35",
+    "sha256": "fe2cb5f2c886b9e75cb5f9612f98416c7837afc3ce12d3433882ff2646a6e52f",
     "schema_version": 1,
     "diagram_type": "architecture",
     "component_count": 24,

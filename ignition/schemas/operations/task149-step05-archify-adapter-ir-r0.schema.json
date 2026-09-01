@@ -4,7 +4,7 @@
   "title": "Task149 Step05 Archify adapter typed IR receipt",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "task_id", "step", "status", "provider_id", "provider_class", "formal_previous_commit", "formal_baseline_sha", "upstream_revision", "upstream_schema_surface", "upstream_update_awareness", "source_inputs", "adapter", "typed_ir", "adapter_structural_validation", "archify_external_validation", "boundary", "claim_ceiling"],
+  "required": ["schema_version", "task_id", "step", "status", "provider_id", "provider_class", "formal_previous_commit", "formal_baseline_sha", "upstream_revision", "upstream_schema_surface", "upstream_update_awareness", "source_inputs", "source_evidence", "adapter", "derived_layout", "typed_ir", "adapter_structural_validation", "archify_external_validation", "boundary", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "ignition-149-step05-archify-adapter-ir-r0"},
     "task_id": {"const": "IGNITION-20260831-149"},
@@ -48,6 +48,28 @@
         }
       }
     },
+    "source_evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["status", "verified_component_count", "omitted_non_file_target_count", "omitted_non_file_targets", "reason"],
+      "properties": {
+        "status": {"const": "PARTIAL_BY_CANONICAL_TARGETS"},
+        "verified_component_count": {"type": "integer", "minimum": 1},
+        "omitted_non_file_target_count": {"type": "integer", "minimum": 0},
+        "omitted_non_file_targets": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["component_id", "canonical_target", "reason"],
+            "properties": {
+              "component_id": {"$ref": "#/$defs/nonblank"},
+              "canonical_target": {"$ref": "#/$defs/nonblank"},
+              "reason": {"const": "TARGET_IS_DIRECTORY_MISSING_OR_NON_FILE"}
+            }
+          }
+        },
+        "reason": {"$ref": "#/$defs/nonblank"}
+      }
+    },
     "adapter": {
       "type": "object", "additionalProperties": false,
       "required": ["script", "algorithm", "source_copy_or_vendor", "provider_output_can_update_canonical_truth"],
@@ -56,6 +78,20 @@
         "algorithm": {"$ref": "#/$defs/nonblank"},
         "source_copy_or_vendor": {"const": false},
         "provider_output_can_update_canonical_truth": {"const": false}
+      }
+    },
+    "derived_layout": {
+      "type": "object", "additionalProperties": false,
+      "required": ["profile", "viewBox", "componentSize", "explicitComponentPositionCount", "explicitConnectionGeometryCount", "nodeContextSublabels", "semanticSourceUnchanged", "visual_validation"],
+      "properties": {
+        "profile": {"const": "COMPACT_ORTHOGONAL_SHOWCASE_R1"},
+        "viewBox": {"const": [1400, 800]},
+        "componentSize": {"const": [190, 48]},
+        "explicitComponentPositionCount": {"type": "integer", "minimum": 1},
+        "explicitConnectionGeometryCount": {"type": "integer", "minimum": 1},
+        "nodeContextSublabels": {"const": "OMITTED_DUPLICATE_OF_BOUNDARY_LABELS"},
+        "semanticSourceUnchanged": {"const": true},
+        "visual_validation": {"const": "PENDING_STEP06"}
       }
     },
     "typed_ir": {
