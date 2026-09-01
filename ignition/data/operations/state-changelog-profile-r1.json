@@ -1,9 +1,9 @@
 {
   "schema_version": "state-changelog-profile-r1",
   "profile_contract": "CURRENT_STRICT_HISTORICAL_VERSIONED",
-  "entry_count": 54,
+  "entry_count": 55,
   "active_current_ordinals": [27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54],
-  "historical_entry_count": 26,
+  "historical_entry_count": 27,
   "legacy_profile_count": 6,
   "profiles": {
     "current-r1": {
@@ -91,6 +91,7 @@
     {"ordinal": 51, "date": "2026-08-28", "label": "IGNITION-20260828-147 — terminal README project identity and architecture navigation R3", "profile": "current-project-identity-r1", "section_sha256": "71a5638ab39a1287696809b93bfc0510149a97d855b97b2faae803e2d3bc5bf8"},
     {"ordinal": 52, "date": "2026-08-29", "label": "IGNITION-20260829-148 — AI-first Ignition Operating Method R1 Current candidate", "profile": "current-r1", "section_sha256": "3f2394643595456840b0eafd647b65123d63e45d54d54704d931b3c5cd87cc85"},
     {"ordinal": 53, "date": "2026-08-30", "label": "IGNITION-20260829-148 — terminal AI-first Ignition Operating Method R1 Draft candidate", "profile": "current-r1", "section_sha256": "5e6fe2b9251aaab97ad963e5647973df39c3aed88b87e088b781a772c1502a47"},
-    {"ordinal": 54, "date": "2026-08-31", "label": "IGNITION-20260829-148 — AI-first Ignition Operating Method R1 post-merge Current closeout", "profile": "current-r1", "section_sha256": "5bc65e5819b1a1324bd6c0204ba9a185df350f7c863d2d00af6a6df24a78acc6"}
+    {"ordinal": 54, "date": "2026-08-31", "label": "IGNITION-20260829-148 — AI-first Ignition Operating Method R1 post-merge Current closeout", "profile": "current-r1", "section_sha256": "5bc65e5819b1a1324bd6c0204ba9a185df350f7c863d2d00af6a6df24a78acc6"},
+    {"ordinal": 55, "date": "2026-09-01", "label": "IGNITION-20260831-149 — External Capability Provider Adapter Spikes R0 Draft propagation delta", "profile": "historical-current-r0", "section_sha256": "d2a0ac9a63d7f1a02a6a37b2522f1fcf61899fdbb48fd6c39770e1a2e655fb84"}
   ]
 }

@@ -51,6 +51,14 @@ class NonFunctionClaimClosureTests(unittest.TestCase):
         self.assertTrue(self.adjudicator.candidate("该机制导致普遍结果。"))
         self.assertFalse(self.adjudicator.candidate("ordinary navigation entry"))
 
+    def test_operational_state_record_marker_excludes_only_marked_lines(self):
+        source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8").splitlines()
+        marked_lines = {index for index, line in enumerate(source, 1) if self.adjudicator.OPERATIONAL_RECORD_ONLY_MARKER in line}
+        self.assertGreaterEqual(len(marked_lines), 6)
+        fragments, status = self.adjudicator.text_fragments("STATE-CHANGELOG.md")
+        self.assertIn(status, {"SCANNED_REGISTERED", "SCANNED_NO_CANDIDATE"})
+        self.assertTrue(marked_lines.isdisjoint({fragment["line"] for fragment in fragments}))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,358 @@
+{
+  "schema_version": "ignition-149-provider-adapter-contract-r0",
+  "contract_id": "IGNITION_PROVIDER_ADAPTER_CONTRACT_R0",
+  "task_id": "IGNITION-20260831-149",
+  "status": "SPIKE_CONTRACT_ESTABLISHED",
+  "research_scope": "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY",
+  "runtime_interface_status": "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE",
+  "provider_neutral": true,
+  "formal_baseline_sha": "2e563b904cdf1ad57949f649a93cfec0926094ca",
+  "upstream_freeze": {
+    "artifact_path": "ignition/data/operations/iterations/149/step02-upstream-freeze.json",
+    "artifact_sha256": "956fb9d77667cec8c346b19264fb7b76cd1ddaa911a661efc311c02fd8ff2ecf",
+    "source_copied_into_ignition": false,
+    "license_permission_interpreted_as_vendoring_permission": false
+  },
+  "provider_classes": [
+    {
+      "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+      "role": "Derive a bounded visualization artifact from Ignition-authored canonical data.",
+      "allowed_flow": "IGNITION_CANONICAL_DATA -> ADAPTER -> TYPED_IR -> VALIDATED_DERIVED_ARTIFACT",
+      "prohibited_flow": "PROVIDER_OUTPUT -> IGNITION_ARCHITECTURE_TRUTH"
+    },
+    {
+      "provider_class": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER",
+      "role": "Acquire explicitly requested read-only public source material or source metadata with provenance.",
+      "allowed_flow": "EXPLICIT_RESEARCH_INPUT -> PROVIDER_READ -> PROVENANCE_BOUND_RESULT",
+      "prohibited_flow": "PROVIDER_OUTPUT -> EXTERNAL_TRUTH_OR_IGNITION_AUTHORITY"
+    }
+  ],
+  "required_provider_record_fields": [
+    "provider_id",
+    "provider_class",
+    "upstream_repository",
+    "pinned_revision",
+    "license",
+    "discovery_method",
+    "health_check_method",
+    "accepted_abstract_operations",
+    "input_types",
+    "output_types",
+    "side_effect_class",
+    "network_requirement",
+    "authentication_requirement",
+    "credential_exposure_class",
+    "install_requirement",
+    "current_environment_availability",
+    "admission_status",
+    "trust_boundary",
+    "provenance_requirement",
+    "validator_receipt",
+    "failure_mode",
+    "fallback_semantics",
+    "provider_local_policy_not_inherited",
+    "current_integration"
+  ],
+  "authority_invariants": [
+    "EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY",
+    "PROVIDER_CAPABILITY ≠ PERMISSION",
+    "PROVIDER_OUTPUT ≠ EXTERNAL_TRUTH",
+    "PROVIDER_LOCAL_POLICY ≠ IGNITION_GLOBAL_POLICY",
+    "ADAPTER_SPIKE_PASS ≠ CURRENT_CAPABILITY"
+  ],
+  "selection_authority": {
+    "owner": "IGNITION",
+    "provider_does_not_select_ignition_behavior": true,
+    "selection_policy_artifact": "CREATED_IN_STEP04",
+    "selection_inputs_must_be_evaluated_per_operation_and_environment": true,
+    "provider_local_forced_routing_is_not_a_selection_input": true
+  },
+  "provider_record_policy": {
+    "provider_ids_are_not_exhaustive": true,
+    "future_provider_classes_must_reuse_this_contract": true,
+    "provider_records_are_candidates_not_current_capabilities": true,
+    "no_implicit_permission_grant": true,
+    "no_authenticated_channel_admission": true,
+    "no_live_external_invocation_change": true,
+    "no_provider_specific_architecture_truth_node": true,
+    "no_upstream_source_copy_or_vendor_runtime": true,
+    "provider_local_policy_inheritance": "FORBIDDEN"
+  },
+  "provider_records": [
+    {
+      "provider_id": "archify",
+      "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+      "upstream_repository": {
+        "slug": "tt-a1i/archify",
+        "url": "https://github.com/tt-a1i/archify",
+        "observed_ref": "refs/heads/main",
+        "starting_clue_sha": "5de7275fe87a66a19d52a4d9b0b3a4f2a5a90115",
+        "starting_clue_matches_observed": false
+      },
+      "pinned_revision": "2bfb47132c057195d8dddb3e25ae966dd7c7a72e",
+      "license": {
+        "spdx": "MIT",
+        "license_file": "LICENSE",
+        "license_sha256": "2f724fa953b4eaa8ec75fa56919ce474b57adce54d2456a3791510bc53735cbd",
+        "attribution_requirements": [
+          "Retain the Archify copyright notice in copies or substantial portions of copied software.",
+          "Retain the Cocoon AI copyright notice for the acknowledged original architecture-diagram-generator material.",
+          "Do not copy or vendor upstream source merely because the license permits it."
+        ]
+      },
+      "discovery_method": {
+        "method": "FRESH_GITHUB_PUBLIC_GIT_LS_REMOTE_AND_PUBLIC_METADATA",
+        "observed_at": "2026-09-01T07:09:15+08:00",
+        "evidence_artifact": "ignition/data/operations/iterations/149/step02-upstream-freeze.json",
+        "source_copied_into_ignition": false
+      },
+      "health_check_method": {
+        "method": "node archify/bin/archify.mjs doctor",
+        "result": "PASS",
+        "evidence": "15/15 checks passed with Node.js v22.23.0",
+        "credentials_accessed": false
+      },
+      "accepted_abstract_operations": [
+        "render_derived_visualization",
+        "validate_derived_artifact",
+        "deliver_derived_artifact"
+      ],
+      "input_types": [
+        "IGNITION_CANONICAL_ARCHITECTURE_JSON",
+        "IGNITION_CANONICAL_SYSTEM_MAP_JSON",
+        "ARCHIFY_TYPED_JSON_IR"
+      ],
+      "output_types": [
+        "VALIDATED_DERIVED_HTML_SVG_ARTIFACT",
+        "OPTIONAL_DERIVED_IMAGE_OR_VIDEO_ARTIFACT",
+        "VALIDATION_OR_DELIVERY_RECEIPT"
+      ],
+      "side_effect_class": "DERIVED_ARTIFACT_ONLY",
+      "network_requirement": {
+        "classification": "OPTIONAL",
+        "required_for_accepted_operations": false,
+        "optional_paths": ["documented_update_manifest_get"],
+        "Ignition_network_authority": "NONE"
+      },
+      "authentication_requirement": {
+        "required_for_accepted_operations": false,
+        "supported_scope": "PINNED_LOCAL_RENDER_VALIDATE_DELIVER_SPIKE",
+        "authenticated_channel_admission": "NOT_GRANTED"
+      },
+      "credential_exposure_class": "NONE_EXPECTED",
+      "install_requirement": {
+        "classification": "EXTERNAL_RUNTIME_DEPENDENCY",
+        "details": "Node.js >=18 and the external Archify runtime must be supplied by the environment; Ignition did not vendor or install it.",
+        "task_local_install_performed": false
+      },
+      "current_environment_availability": {
+        "status": "AVAILABLE_FOR_RECORDED_SPIKE",
+        "scope": "THE_PINNED_CHECKOUT_AND_RECORDED_NODE_ENVIRONMENT_ONLY",
+        "evidence": "Archify doctor PASS 15/15",
+        "current_capability": false
+      },
+      "admission_status": "ADMISSION_CANDIDATE",
+      "trust_boundary": {
+        "provider_is_not_ignition_authority": true,
+        "provider_capability_is_not_permission": true,
+        "provider_output_is_not_external_truth": true,
+        "provider_output_is_not_architecture_truth": true,
+        "ignition_owns_input_selection_and_acceptance": true
+      },
+      "provenance_requirement": {
+        "required": true,
+        "fields": [
+          "source_canonical_asset_paths_and_sha256",
+          "provider_id_and_pinned_revision",
+          "typed_ir_sha256",
+          "artifact_sha256",
+          "validation_or_delivery_receipt",
+          "warnings_errors_and_environment",
+          "visual_review_status_if_run"
+        ],
+        "missing_provenance_result": "REJECT_AS_UNVALIDATED"
+      },
+      "validator_receipt": {
+        "required": true,
+        "accepted_receipts": ["ARCHIFY_VALIDATE_RECEIPT", "ARCHIFY_DELIVERY_RECEIPT", "TASK_LOCAL_ADAPTER_VALIDATOR"],
+        "receipt_must_bind": ["provider_id", "pinned_revision", "input_sha256", "output_sha256", "validator_environment"],
+        "current_receipt_path": "NOT_YET_CREATED_STEP05_OR_LATER"
+      },
+      "failure_mode": {
+        "known": [
+          "invalid_or_schema_incompatible_typed_ir",
+          "renderer_or_delivery_failure",
+          "optional_update_manifest_unavailable",
+          "artifact_or_receipt_hash_mismatch"
+        ],
+        "handling": "FAIL_CLOSED_AND_KEEP_CANONICAL_DATA_AUTHORITATIVE"
+      },
+      "fallback_semantics": {
+        "allowed": true,
+        "policy_owner": "IGNITION_STEP04_PROVIDER_SELECTION_POLICY",
+        "fallback_candidates": ["NATIVE_OR_EXISTING_IGNITION_SURFACE", "ANOTHER_BOUNDed_DERIVED_VISUALIZATION_PROVIDER", "UNAVAILABLE"],
+        "no_implicit_substitution": true,
+        "fallback_must_preserve_operation_and_provenance_contract": true
+      },
+      "provider_local_policy_not_inherited": {
+        "inherited": false,
+        "rules_not_inherited": [
+          "upstream_update_or_install_behavior",
+          "upstream_visual_defaults_as_ignition_policy",
+          "upstream_source_or_repository_metadata_as_architecture_authority"
+        ]
+      },
+      "current_integration": {
+        "status": "NOT_CURRENT_INTEGRATION",
+        "operation_registry_entry": false,
+        "pack_permission_change": false,
+        "architecture_node_change": false,
+        "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED"
+      }
+    },
+    {
+      "provider_id": "agent-reach",
+      "provider_class": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER",
+      "upstream_repository": {
+        "slug": "Panniantong/Agent-Reach",
+        "url": "https://github.com/Panniantong/Agent-Reach",
+        "observed_ref": "refs/heads/main",
+        "starting_clue_sha": "06c202b03400a7d31886bf4399213706da1a0324",
+        "starting_clue_matches_observed": true
+      },
+      "pinned_revision": "06c202b03400a7d31886bf4399213706da1a0324",
+      "license": {
+        "spdx": "MIT",
+        "license_file": "LICENSE",
+        "license_sha256": "e94c131ac1c2f78cfd8f7e69da354c0ff58e4e54071697703d56856c036de402",
+        "attribution_requirements": [
+          "Retain the Agent Reach MIT notice and Copyright (c) 2025 Agent Eyes notice in copied software portions.",
+          "Keep attribution for separately selected upstream tools; Agent Reach documents that it routes to them rather than wrapping them.",
+          "Do not copy or vendor Agent Reach source merely because the license permits it."
+        ]
+      },
+      "discovery_method": {
+        "method": "FRESH_GITHUB_PUBLIC_GIT_LS_REMOTE_AND_PUBLIC_METADATA",
+        "observed_at": "2026-09-01T07:09:15+08:00",
+        "evidence_artifact": "ignition/data/operations/iterations/149/step02-upstream-freeze.json",
+        "source_copied_into_ignition": false
+      },
+      "health_check_method": {
+        "method": "PYTHONPATH=<ephemeral_checkout>/agent-reach python3 -m agent_reach.cli doctor --json",
+        "result": "BLOCKED_DEPENDENCY",
+        "evidence": "ModuleNotFoundError: No module named 'yaml'; no dependency installation attempted",
+        "credentials_accessed": false
+      },
+      "accepted_abstract_operations": [
+        "discover_read_only_source",
+        "read_public_source",
+        "resolve_provider_health"
+      ],
+      "input_types": [
+        "EXPLICIT_READ_ONLY_RESEARCH_INTENT",
+        "PUBLIC_SOURCE_QUERY",
+        "CHANNEL_CAPABILITY_REQUEST"
+      ],
+      "output_types": [
+        "PROVENANCE_BOUND_SOURCE_RECORD",
+        "CHANNEL_LEVEL_AVAILABILITY_RECORD",
+        "READ_ONLY_SOURCE_ACQUISITION_RECEIPT"
+      ],
+      "side_effect_class": "READ_ONLY_NETWORK",
+      "network_requirement": {
+        "classification": "REQUIRED",
+        "required_for_accepted_operations": true,
+        "optional_paths": [],
+        "Ignition_network_authority": "NONE; explicit authorization and channel policy remain required"
+      },
+      "authentication_requirement": {
+        "required_for_accepted_operations": "CHANNEL_DEPENDENT",
+        "supported_scope": "PUBLIC_READ_ONLY_CHANNELS_ONLY_FOR_THIS_SPIKE",
+        "authenticated_channel_admission": "NOT_GRANTED"
+      },
+      "credential_exposure_class": "CHANNEL_DEPENDENT_NO_AUTOMATIC_AUTH",
+      "install_requirement": {
+        "classification": "ENVIRONMENT_DEPENDENT_PYTHON_RUNTIME",
+        "details": "The pinned source imports PyYAML in the recorded environment; task-local installation would require explicit isolated setup and was not performed in Step02.",
+        "task_local_install_performed": false
+      },
+      "current_environment_availability": {
+        "status": "PARTIAL_ENVIRONMENT_OBSERVATION",
+        "scope": "INSTALLED_EXECUTABLE_MATRIX_IS_NOT_EQUIVALENT_TO_PINNED_SOURCE_ADMISSION",
+        "evidence": "Installed v1.5.0 doctor matrix was recorded separately; pinned-source doctor remained dependency-blocked",
+        "current_capability": false
+      },
+      "admission_status": "SPIKE_ONLY",
+      "trust_boundary": {
+        "provider_is_not_ignition_authority": true,
+        "provider_capability_is_not_permission": true,
+        "provider_output_is_not_external_truth": true,
+        "provider_output_is_not_architecture_truth": true,
+        "ignition_owns_source_scope_channel_selection_and_acceptance": true
+      },
+      "provenance_requirement": {
+        "required": true,
+        "fields": [
+          "request_and_source_url_or_locator",
+          "provider_id_and_pinned_revision",
+          "channel_and_backend_status",
+          "retrieval_timestamp",
+          "retrieved_content_or_metadata_sha256",
+          "read_only_and_authentication_status",
+          "validator_or_capture_receipt"
+        ],
+        "missing_provenance_result": "REJECT_AS_UNVALIDATED"
+      },
+      "validator_receipt": {
+        "required": true,
+        "accepted_receipts": ["TASK_LOCAL_SOURCE_ACQUISITION_RECEIPT", "TASK_LOCAL_PROVENANCE_VALIDATOR", "PROVIDER_HEALTH_RECEIPT"],
+        "receipt_must_bind": ["provider_id", "pinned_revision", "channel", "source_locator", "result_sha256", "auth_status"],
+        "current_receipt_path": "NOT_YET_CREATED_STEP09_OR_LATER"
+      },
+      "failure_mode": {
+        "known": [
+          "pinned_runtime_dependency_missing",
+          "channel_backend_unavailable_or_warn",
+          "authenticated_channel_not_admitted",
+          "source_unavailable_or_unverifiable",
+          "provider_output_lacks_provenance"
+        ],
+        "handling": "FAIL_CLOSED_OR_FALL_BACK_TO_ANOTHER_READ_ONLY_PROVIDER_WITH_EXPLICIT_CAPTURE"
+      },
+      "fallback_semantics": {
+        "allowed": true,
+        "policy_owner": "IGNITION_STEP04_PROVIDER_SELECTION_POLICY",
+        "fallback_candidates": ["NATIVE_PUBLIC_SOURCE_TOOL", "ANOTHER_BOUNDED_SOURCE_PROVIDER", "UNAVAILABLE"],
+        "no_implicit_substitution": true,
+        "fallback_must_preserve_operation_channel_and_provenance_contract": true
+      },
+      "provider_local_policy_not_inherited": {
+        "inherited": false,
+        "rules_not_inherited": [
+          "skill-level-must-use-this-provider routing rules",
+          "provider-local install or dependency policy",
+          "provider-local cookie/browser/session policy",
+          "provider-local channel preference or fallback order",
+          "provider-local authenticated access assumptions"
+        ]
+      },
+      "current_integration": {
+        "status": "NOT_CURRENT_INTEGRATION",
+        "operation_registry_entry": false,
+        "pack_permission_change": false,
+        "architecture_node_change": false,
+        "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED"
+      }
+    }
+  ],
+  "global_admission_summary": {
+    "status": "PROVIDER_ADMISSION_CANDIDATE",
+    "archify": "ADMISSION_CANDIDATE_WITHIN_RECORDED_SPIKE_ONLY",
+    "agent_reach": "SPIKE_ONLY_PINNED_SOURCE_DEPENDENCY_BLOCKED",
+    "authenticated_channels": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+    "live_external_invocation": "LIVE_EXTERNAL_INVOCATION_UNCHANGED",
+    "current_integration": "NOT_CURRENT_INTEGRATION",
+    "production_readiness": "NOT_PRODUCTION_READY"
+  },
+  "claim_ceiling": "Experimental provider-admission research contract only: bounded Task149 contract fields and candidate observations. It preserves Ignition ownership of operation selection, authority, permissions, truth boundary and provenance; it is not a Current runtime provider interface and does not establish a Current provider capability, authenticated channel admission, production readiness, external truth, Owner acceptance or live external invocation."
+}

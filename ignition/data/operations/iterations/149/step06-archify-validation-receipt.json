@@ -1,0 +1,148 @@
+{
+  "schema_version": "ignition-149-step06-archify-validation-r0",
+  "task_id": "IGNITION-20260831-149",
+  "step": "06",
+  "status": "VALIDATED_WITHIN_RECORDED_ENVIRONMENT",
+  "provider_id": "archify",
+  "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+  "formal_branch": "codex/ignition-149-external-capability-provider-adapter-spikes-r0-20260831",
+  "formal_commit": "c27bca66e154a68f6fa0d819edcdd02ee2414c6d",
+  "formal_baseline_sha": "14c2595d796494286caf31378173fd9dd027edcf",
+  "source_inputs": [
+    {
+      "path": "ignition/data/architecture/overall-architecture.json",
+      "role": "canonical_architecture_source",
+      "sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+      "status": "CURRENT_CANONICAL_SOURCE"
+    },
+    {
+      "path": "ignition/data/architecture/interactive-system-map.json",
+      "role": "current_system_map_context",
+      "sha256": "3824697a9c781c1ea825f7335bc9461e6fb693e70bb65c042309fd16da173313",
+      "status": "CURRENT_CANONICAL_SOURCE"
+    }
+  ],
+  "upstream": {
+    "repository": "tt-a1i/archify",
+    "ref": "refs/heads/main",
+    "revision": "2bfb47132c057195d8dddb3e25ae966dd7c7a72e",
+    "checkout_root": "/tmp/ignition149-upstreams.outU7e/archify/archify",
+    "checkout_clean": true,
+    "non_shallow": true,
+    "fsck_full": "PASS",
+    "node_version": "v22.23.0",
+    "license": "MIT",
+    "attribution_recorded": true,
+    "source_copied_or_vendored": false,
+    "global_install": false
+  },
+  "typed_ir": {
+    "path": "ignition/data/operations/iterations/149/archify-typed-ir-r0.json",
+    "sha256": "fe2cb5f2c886b9e75cb5f9612f98416c7837afc3ce12d3433882ff2646a6e52f",
+    "bytes": 18908,
+    "component_count": 24,
+    "connection_count": 24,
+    "boundary_count": 8
+  },
+  "commands": {
+    "validate": {
+      "command": "node bin/archify.mjs validate architecture ignition/data/operations/iterations/149/archify-typed-ir-r0.json --json --quality showcase --repo-root <formal-worktree>",
+      "exit_code": 0,
+      "result_sha256": "7e1b5d2942fe5ca9cad131e0f39a8370d56757f4c64523a3c895c81d30557aab",
+      "status": "PASS",
+      "schema_validation": "PASS_INCLUDED_IN_VALIDATE",
+      "showcase_validation": "PASS",
+      "checks_passed": 9,
+      "check_count": 9,
+      "composition_profile": "showcase",
+      "composition_status": "pass",
+      "errors": 0,
+      "warnings": 0,
+      "metrics": {
+        "proper_crossings": 0,
+        "ambiguous_corridors": 0,
+        "container_border_runs": 0,
+        "label_route_clearance_issues": 0,
+        "min_label_route_clearance": 6.4,
+        "desktop_readability_issues": 0,
+        "max_bends": 3,
+        "routes_over_suggested_bends": 5,
+        "max_stretch": 1.821,
+        "routes_over_suggested_stretch": 1,
+        "min_segment_px": 10,
+        "min_interior_segment_px": 40,
+        "short_segment_count": 9,
+        "short_endpoint_segment_count": 9,
+        "short_interior_segment_count": 0,
+        "micro_segment_count": 0
+      }
+    },
+    "deliver": {
+      "command": "node bin/archify.mjs deliver architecture ignition/data/operations/iterations/149/archify-typed-ir-r0.json <temporary-output.html> --json --quality showcase --repo-root <formal-worktree>",
+      "exit_code": 0,
+      "result_sha256": "b44cba55530c2f5996dc9b0e17a591510fe28427a900dcdddc18660cf3f8ac4e",
+      "status": "PASS",
+      "specification_sha256": "fe2cb5f2c886b9e75cb5f9612f98416c7837afc3ce12d3433882ff2646a6e52f",
+      "artifact_sha256": "978008823b3941622a8ba21e751913f37d8c87310e28b46c5bca6f17db913017",
+      "artifact_bytes": 753375,
+      "checks_passed": 9,
+      "check_count": 9,
+      "composition_profile": "showcase",
+      "composition_status": "pass",
+      "errors": 0,
+      "warnings": 0,
+      "repository_evidence_verified": true,
+      "repository_evidence_reference_count": 19,
+      "repository_evidence_revision": "14c2595d796494286caf31378173fd9dd027edcf"
+    },
+    "visual_check": {
+      "command": "node bin/archify.mjs visual-check <temporary-output.html> --json",
+      "exit_code": 0,
+      "result_sha256": "1d69f37fdd6b52f3da1d38cd63bcfdb422650833890826e842ee0dd3044d3a4d",
+      "status": "PASS",
+      "diagnostics_count": 0,
+      "containment_status": "pass",
+      "readability_status": "pass",
+      "viewer_chrome_status": "pass",
+      "captures_status": "pass",
+      "browser_status": "AVAILABLE",
+      "upstream_visual_review_field": "pending",
+      "local_screenshot_inspection": "PERFORMED",
+      "light_containment_viewports": [
+        {"width": 1440, "height": 900, "theme": "light", "ok": true, "scroll_height": 900, "inner_height": 900, "minimum_projected_node_text_px": 8.01935572656682, "dock_stage_gap": 10.21875},
+        {"width": 1600, "height": 1000, "theme": "light", "ok": true, "scroll_height": 1000, "inner_height": 1000, "minimum_projected_node_text_px": 8.290323498502303, "dock_stage_gap": 10.21875},
+        {"width": 1920, "height": 1080, "theme": "light", "ok": true, "scroll_height": 1080, "inner_height": 1080, "minimum_projected_node_text_px": 9.03225906451613, "dock_stage_gap": 10.21875},
+        {"width": 2048, "height": 1320, "theme": "light", "ok": true, "scroll_height": 1320, "inner_height": 1320, "minimum_projected_node_text_px": 9.03225906451613, "dock_stage_gap": 10.21875}
+      ],
+      "dark_capture_viewports": [
+        {"width": 1440, "height": 900, "theme": "dark", "ok": true, "scroll_height": 900, "inner_height": 900, "minimum_projected_node_text_px": 8.01935572656682, "dock_stage_gap": 10.21875},
+        {"width": 2048, "height": 1320, "theme": "dark", "ok": true, "scroll_height": 1320, "inner_height": 1320, "minimum_projected_node_text_px": 9.03225906451613, "dock_stage_gap": 10.21875}
+      ],
+      "screenshots": [
+        {"file": "task149-archify-derived.visual-check.1440x900.light.png", "sha256": "22ff10d23b4bf77b72078b2a3a54acdfc6359d7666cd2332035a385e444c86d2"},
+        {"file": "task149-archify-derived.visual-check.1440x900.dark.png", "sha256": "089fe0a5b4beaa24e415f0e6fc43af29eaa8319f73bb1135862594f0b9a996a5"},
+        {"file": "task149-archify-derived.visual-check.2048x1320.light.png", "sha256": "ba5629ea1f94876ee54341ccde5cc5e9f8d6e844ef68d5ab6d8f6d9083646dda"},
+        {"file": "task149-archify-derived.visual-check.2048x1320.dark.png", "sha256": "45f1628bc75991bb863b672e447076742baf7579e7251d7bb181fb647b567ae4"}
+      ]
+    }
+  },
+  "artifact": {
+    "path": "/tmp/ignition149-archify-spike.Nw1pKO/task149-archify-derived.html",
+    "sha256": "978008823b3941622a8ba21e751913f37d8c87310e28b46c5bca6f17db913017",
+    "bytes": 753375,
+    "status": "NOT_COMMITTED",
+    "reason": "The self-contained HTML includes the external provider viewer bundle; the formal branch keeps the typed source, bound receipts and screenshot summary without vendoring that artifact.",
+    "source_copied_or_vendored": false
+  },
+  "boundaries": {
+    "flow": "IGNITION_CANONICAL_DATA -> ADAPTER -> ARCHIFY_TYPED_IR -> DERIVED_ARTIFACT",
+    "provider_output_can_update_canonical_truth": false,
+    "architecture_truth_claim": "NOT_CLAIMED",
+    "current_integration": "NOT_CURRENT_INTEGRATION",
+    "production_readiness": "NOT_PRODUCTION_READY",
+    "provider_permission_granted": false,
+    "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED"
+  },
+  "claim_ceiling": "Pinned Archify schema/showcase validation, deterministic delivery and automated browser containment passed for this typed projection in the recorded Node.js and Chrome environment. This proves only a provider-bound derived visualization spike; it does not prove Ignition architecture correctness, external truth, Current capability, production readiness, permission, authenticated-channel admission, Owner acceptance or live external invocation."
+}

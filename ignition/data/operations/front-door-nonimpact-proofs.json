@@ -7,5 +7,18 @@
     "agent.handoff",
     "machine.llms"
   ],
-  "exemptions": []
+  "exemptions": [
+    {
+      "surface_id": "human.readme",
+      "iteration_id": "IGNITION-20260831-149",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "scope": "DRAFT_BRANCH_ONLY",
+      "reason": "Task149 is a provider adapter spike and not a capability activation. No supported Archify or Agent Reach capability, platform count, usage route, permission, Current integration or production claim is added to the human front door.",
+      "evidence_refs": [
+        "ignition/data/operations/iterations/149/step17-limited-propagation-r0.json",
+        "ignition/data/operations/iterations/149/External Capability Provider Adapter Spikes R0.md"
+      ],
+      "claim_ceiling": "Repository-local Draft provider-spike evidence only; this proof does not exempt a future Ready, merged or Current review from re-adjudicating the homepage."
+    }
+  ]
 }

@@ -6,6 +6,7 @@ from tools.operations.validate_ignition_interface_sync import (
     InterfaceSyncError,
     RECEIPT_PATH,
     REGISTRY_PATH,
+    historical_rewrite_violations,
     load_json,
     operation_method_surfaces,
     step11_introduction_commit,
@@ -61,6 +62,32 @@ class IgnitionInterfaceSyncTests(unittest.TestCase):
         validate_preserved_digests(
             self.receipt,
             revision=step11_introduction_commit(),
+        )
+
+    def test_successor_iteration_additions_are_not_historical_rewrites(self):
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/149/new-evidence.json\n"
+            ),
+            [],
+        )
+        self.assertEqual(
+            historical_rewrite_violations(
+                "M\tignition/data/operations/iterations/149/existing-evidence.json\n"
+            ),
+            ["ignition/data/operations/iterations/149/existing-evidence.json"],
+        )
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/147/new-evidence.json\n"
+            ),
+            ["ignition/data/operations/iterations/147/new-evidence.json"],
+        )
+        self.assertEqual(
+            historical_rewrite_violations(
+                "A\tignition/data/operations/iterations/149/historical/new.json\n"
+            ),
+            ["ignition/data/operations/iterations/149/historical/new.json"],
         )
 
 

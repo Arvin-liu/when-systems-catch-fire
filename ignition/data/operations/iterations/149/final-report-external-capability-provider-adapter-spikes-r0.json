@@ -1,0 +1,132 @@
+{
+  "schema_version": "ignition-149-final-report-external-capability-provider-adapter-spikes-r0",
+  "task_id": "IGNITION-20260831-149",
+  "step": "16",
+  "status": "FINAL_ADMISSION_RECOMMENDATION_COMPLETE",
+  "observed_at": "2026-09-01T10:15:00+08:00",
+  "formal_previous_commit": "c7ba9f9141469dbaf03cc42f7079f22a5b2fa145",
+  "report_title": "External Capability Provider Adapter Spikes R0",
+  "human_report_path": "ignition/data/operations/iterations/149/External Capability Provider Adapter Spikes R0.md",
+  "human_report_sha256": "d22fbb9ae30003ac68a15f5a83e6b0bfa082411a3cc37296fe9965eff9f86bae",
+  "overall_status": "PROVIDER_ADMISSION_CANDIDATE",
+  "recommendation_vocabulary": ["ADMIT_AS_CURRENT_BOUNDED_CANDIDATE", "CONTINUE_EXPERIMENT", "DEFER", "REJECT"],
+  "recommendations": {
+    "archify": {
+      "provider_id": "archify",
+      "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+      "recommendation": "CONTINUE_EXPERIMENT",
+      "future_role": "derived visualization provider",
+      "best_role": "DERIVED_VISUALIZATION_PROVIDER",
+      "actual_test_result": "validate PASS 9/9; deliver PASS with 19 formal source references; base visual-check PASS; authored Architecture Delta empty for components/connections/boundaries with provenance-only change",
+      "artifact_sha256": "978008823b3941622a8ba21e751913f37d8c87310e28b46c5bca6f17db913017",
+      "artifact_bytes": 753375,
+      "validation_receipts": {
+        "validate_result_sha256": "7e1b5d2942fe5ca9cad131e0f39a8370d56757f4c64523a3c895c81d30557aab",
+        "deliver_result_sha256": "b44cba55530c2f5996dc9b0e17a591510fe28427a900dcdddc18660cf3f8ac4e",
+        "visual_check_result_sha256": "1d69f37fdd6b52f3da1d38cd63bcfdb422650833890826e842ee0dd3044d3a4d",
+        "delta_receipt_sha256": "f71fda76e29734912eafbe04f880f1ee6296e190017b6e5f9a13111b2cb5c413",
+        "delta_artifact_sha256": "53cf67bfba360df3db141215ef9a854491a026653389b2970ef9d2993d66ccdc",
+        "delta_visual_check_sha256": "48952fa398dd68b91edc3bdfb6a9a8c5f6c6a8b00b21c235ea9c0fc9fafaefd3"
+      },
+      "dependency_license": "Node.js runtime and external viewer bundle; upstream MIT with attribution; no source copy or vendoring",
+      "known_limits": [
+        "Delta viewer has six recorded viewer/viewport-overflow diagnostics across the requested viewports",
+        "upstream visualReview remains pending",
+        "HTML artifact remains NOT_COMMITTED",
+        "derived artifact cannot update canonical architecture truth, runtime impact, correctness or merge readiness"
+      ],
+      "must_not_assume": ["architecture truth", "runtime impact", "correctness", "merge readiness", "external truth", "Current capability", "production readiness"],
+      "current_integration": "NOT_CURRENT_INTEGRATION",
+      "production_readiness": "NOT_PRODUCTION_READY",
+      "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION"
+    },
+    "agent_reach_public": {
+      "provider_id": "agent-reach-public",
+      "provider_class": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER",
+      "recommendation": "CONTINUE_EXPERIMENT",
+      "future_role": "read-only source acquisition provider",
+      "best_role": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER_FOR_PUBLIC_CHANNELS",
+      "actual_test_result": "15-channel doctor and 17-capability matrix; public web/RSS/Bilibili/V2EX bounded reads passed; YouTube metadata PASS_WITH_LIMITS; GitHub gh route AUTH_REQUIRED; Exa search ENVIRONMENT_MISSING",
+      "upstream_revision": "06c202b03400a7d31886bf4399213706da1a0324",
+      "version": "1.5.0",
+      "matrix_receipt_sha256": "e7aa7c20bd679e8d6a4603cfc97b105ca5051e4ce281f385be31687c3e4cb7fa",
+      "health_receipt_sha256": "1754d37175b634541db380116b6f1759f80e975ba3ed84c4f0b187bdc3cdb71c",
+      "acquisition_receipt_sha256": "5709944e678e7ecbc07fff3473a963cd59c7e99b0957696ed83df41c9355dc52",
+      "routing_receipt_sha256": "8a69ffa489ab1c3bf7dd355665a402c02c39950d146305f00eea3789cfde89fe",
+      "channel_matrix": {
+        "doctor_channels": 15,
+        "capability_records": 17,
+        "available_read_only_observations": ["web", "rss", "bilibili", "v2ex"],
+        "pass_with_limits": ["youtube metadata only"],
+        "auth_required": ["github read", "github search", "twitter/x", "reddit", "xiaohongshu", "instagram", "facebook", "xueqiu"],
+        "owner_approval_required": ["authenticated linkedin"],
+        "environment_missing": ["Exa public search", "full YouTube transcript", "Xiaoyuzhou transcript"],
+        "doctor_success_is_not_acquisition_success": true
+      },
+      "authenticated_boundary": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+      "native_provider_coexistence": "PARTIAL; native curl/public HTTP remains usable, web normalization works with different representation, selected Agent Reach GitHub route retains AUTH_REQUIRED; upper workflow unchanged",
+      "dependency_license": "Multi-backend optional dependencies; pinned source doctor blocked on missing PyYAML; upstream MIT with attribution; no source copy or system install",
+      "known_limits": [
+        "pinned source import is BLOCKED_DEPENDENCY on missing PyYAML",
+        "selected gh backend requires explicit auth even for tested public targets",
+        "Exa is not configured",
+        "provider-local routing/install/cookie/session rules are not Ignition global policy"
+      ],
+      "must_not_assume": ["global Internet authority", "external truth", "credentials", "authenticated availability", "permission", "Current capability", "production readiness"],
+      "current_integration": "NOT_CURRENT_INTEGRATION",
+      "production_readiness": "NOT_PRODUCTION_READY"
+    },
+    "agent_reach_authenticated": {
+      "provider_id": "agent-reach-authenticated",
+      "provider_class": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER",
+      "recommendation": "DEFER",
+      "future_role": "none until explicit channel admission",
+      "actual_test_result": "No authenticated acquisition run; Step14 five-channel fixture regression rejected unauthorized paths",
+      "authenticated_calls": 0,
+      "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+      "current_integration": "NOT_CURRENT_INTEGRATION",
+      "production_readiness": "NOT_PRODUCTION_READY",
+      "must_not_assume": ["backend health means authorization", "existing browser state means permission", "installed provider means credential admission"]
+    }
+  },
+  "evidence_refs": {
+    "upstream_freeze_sha256": "956fb9d77667cec8c346b19264fb7b76cd1ddaa911a661efc311c02fd8ff2ecf",
+    "provider_contract_sha256": "9abb57273e34f98271394099a6ecefa250def26992e1f31d83b8824857ca4649",
+    "safety_isolation_sha256": "85ec30ace4d40d7a763663d6275c7d4a04b3af99dc3104c618e4ef14a14911c5",
+    "auth_fail_closed_sha256": "a99027b69c0174761bf2ba12cedc02e5f5768cf893fd489ef5922c688dc3c356",
+    "authority_regression_sha256": "788f212157c8fc0e6625213c571899acf22d1fd7776a37c4885bd2935f7f00ed"
+  },
+  "test_summary": {
+    "step01_tests": 4,
+    "step02_tests": 4,
+    "step03_tests": 5,
+    "step04_tests": 5,
+    "step05_tests": 8,
+    "step06_tests": 7,
+    "step07_tests": 7,
+    "step08_tests": 7,
+    "step09_tests": 7,
+    "step10_tests": 6,
+    "step11_tests": 7,
+    "step12_tests": 8,
+    "step13_tests": 8,
+    "step14_tests": 8,
+    "step15_tests": 9,
+    "step16_tests": 9,
+    "local_formal_task_tests": "ALL_TASK149_SPIKE_TESTS_PASS_WITH_RETAINED_RESIDUALS",
+    "external_live_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"
+  },
+  "boundaries": {
+    "external_provider_is_ignition_authority": false,
+    "provider_capability_is_permission": false,
+    "provider_output_is_external_truth": false,
+    "provider_local_policy_is_ignition_global_policy": false,
+    "adapter_spike_pass_is_current_capability": false,
+    "current_integration": "NOT_CURRENT_INTEGRATION",
+    "production_readiness": "NOT_PRODUCTION_READY",
+    "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+    "live_external_invocation": "LIVE_EXTERNAL_INVOCATION_UNCHANGED"
+  },
+  "claim_ceiling": "This unified report establishes only implemented, provider-bound spikes and validation observations within the recorded environment. It recommends bounded future experiments; it does not activate a capability, grant permission, authorize credentials, establish external truth, make either provider a Current integration, declare production readiness, accept an Owner decision or complete live external invocation.",
+  "exact_next_action": "AWAIT_OWNER_PROVIDER_ADAPTER_REVIEW"
+}

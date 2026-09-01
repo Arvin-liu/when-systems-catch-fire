@@ -12,6 +12,7 @@ import argparse
 import copy
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -95,6 +96,20 @@ def _source_digests() -> dict[str, str]:
         f"ignition/{relative}": _sha256_bytes((ROOT / relative).read_bytes())
         for relative in SOURCE_DIGEST_PATHS
     }
+
+
+def _validated_source_digests(value: Any) -> dict[str, str]:
+    if not isinstance(value, dict):
+        raise StrangerAgentRegressionError("historical source_digests must be an object")
+    expected_keys = {f"ignition/{relative}" for relative in SOURCE_DIGEST_PATHS}
+    if set(value) != expected_keys:
+        raise StrangerAgentRegressionError("historical source_digests keys differ from the suite contract")
+    if any(
+        not isinstance(digest, str) or re.fullmatch(r"[0-9a-f]{64}", digest) is None
+        for digest in value.values()
+    ):
+        raise StrangerAgentRegressionError("historical source_digests contain a non-SHA256 value")
+    return dict(value)
 
 
 def _subset_errors(actual: Any, expected: Any, path: str = "$") -> list[str]:
@@ -510,7 +525,11 @@ def _validate_fixture(document: dict[str, Any]) -> list[str]:
     return errors
 
 
-def run_suite(fixture_document: dict[str, Any] | None = None) -> dict[str, Any]:
+def run_suite(
+    fixture_document: dict[str, Any] | None = None,
+    *,
+    source_digests: dict[str, str] | None = None,
+) -> dict[str, Any]:
     fixture = (
         copy.deepcopy(fixture_document)
         if fixture_document is not None
@@ -556,6 +575,11 @@ def run_suite(fixture_document: dict[str, Any] | None = None) -> dict[str, Any]:
         for row in results
         for error in row["errors"]
     ]
+    report_source_digests = (
+        _source_digests()
+        if source_digests is None
+        else _validated_source_digests(source_digests)
+    )
     report: dict[str, Any] = {
         "schema_version": "ignition-stranger-agent-adversarial-result-r1",
         "suite_id": "IGNITION_OPERATING_METHOD_R1_STRANGER_AGENT_ADVERSARIAL",
@@ -585,11 +609,26 @@ def run_suite(fixture_document: dict[str, Any] | None = None) -> dict[str, Any]:
             ),
         },
         "contracts_exercised": list(CONTRACT_PATHS),
-        "source_digests": _source_digests(),
+        "source_digests": report_source_digests,
         "claim_ceiling": "Task148 offline stranger-Agent contract-composition evidence only; PASS proves deterministic routing, fail-closed and source-boundary behavior for the seven fixtures, not external truth, live execution, repository mutation, production readiness, Owner acceptance, merge, Current-on-main or epistemic acceptance.",
     }
     report["receipt_sha256"] = _canonical_hash(report)
     return report
+
+
+def replay_historical_receipt(persisted: dict[str, Any]) -> dict[str, Any]:
+    """Re-run current behavior while preserving the receipt's source snapshot.
+
+    Task148's receipt is historical evidence.  Later Current closeout work can
+    legitimately change a contract source without rewriting that receipt.  A
+    replay therefore recomputes all cases and effects under the current code,
+    but retains the receipt's recorded source digests for its historical
+    identity.  The caller must report this as replay, not as a current-source
+    exact match.
+    """
+    return run_suite(
+        source_digests=_validated_source_digests(persisted.get("source_digests"))
+    )
 
 
 def main() -> int:
@@ -606,19 +645,24 @@ def main() -> int:
         print(f"IGNITION_STRANGER_AGENT_RECEIPT_MISSING path={RECEIPT_PATH}")
         return 1
     persisted = load_json(RECEIPT_PATH)
-    if persisted != report:
+    replay = replay_historical_receipt(persisted)
+    source_digests_changed = persisted.get("source_digests") != report["source_digests"]
+    comparison = replay if source_digests_changed else report
+    if persisted != comparison:
         print(
             "IGNITION_STRANGER_AGENT_RECEIPT_STALE "
-            f"expected={report['receipt_sha256']} actual={persisted.get('receipt_sha256')}"
+            f"expected={comparison['receipt_sha256']} actual={persisted.get('receipt_sha256')}"
         )
         return 1
     print(
         "IGNITION_STRANGER_AGENT_ADVERSARIAL_OK "
         f"cases={report['case_count']} passed={report['passed_case_count']} "
         f"effects={report['effect_summary']['effect_event_count']} "
-        f"receipt_sha256={report['receipt_sha256']}"
+        f"receipt_sha256={persisted['receipt_sha256']} "
+        f"source_mode={'HISTORICAL_RECEIPT_REPLAY' if source_digests_changed else 'CURRENT_SOURCE'} "
+        f"current_source_digests_changed={str(source_digests_changed).lower()}"
     )
-    return 0 if report["status"] == "PASS" else 1
+    return 0 if comparison["status"] == "PASS" else 1
 
 
 if __name__ == "__main__":

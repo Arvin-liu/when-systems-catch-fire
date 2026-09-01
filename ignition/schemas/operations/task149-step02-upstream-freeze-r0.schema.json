@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task149-step02-upstream-freeze-r0.schema.json",
+  "title": "Ignition Task149 Step02 upstream freeze",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "status", "observed_at", "agent_reach_backend", "formal_previous_commit", "ephemeral_checkout_root", "fresh_fetch_policy", "upstreams", "selection_and_admission_boundary", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-149-step02-upstream-freeze-r0"},
+    "task_id": {"const": "IGNITION-20260831-149"},
+    "step": {"const": "02"},
+    "status": {"const": "PASS_WITH_PINNED_UPSTREAMS"},
+    "observed_at": {"type": "string", "minLength": 1},
+    "agent_reach_backend": {"const": "GitHub via git ls-remote and gh CLI public metadata"},
+    "formal_previous_commit": {"$ref": "#/$defs/sha40"},
+    "ephemeral_checkout_root": {"type": "string", "minLength": 1},
+    "fresh_fetch_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository_ref", "pin_to_observed_sha", "starting_clues_are_authority", "source_copied_into_ignition", "system_install_performed", "credential_or_cookie_operation_performed"],
+      "properties": {
+        "repository_ref": {"const": "refs/heads/main"},
+        "pin_to_observed_sha": {"const": true},
+        "starting_clues_are_authority": {"const": false},
+        "source_copied_into_ignition": {"const": false},
+        "system_install_performed": {"const": false},
+        "credential_or_cookie_operation_performed": {"const": false}
+      }
+    },
+    "upstreams": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"$ref": "#/$defs/upstream"}},
+    "selection_and_admission_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_selection_owner", "provider_local_policy_inheritance", "authenticated_channel_admission", "live_external_invocation", "future_version_compatibility", "current_capability_status"],
+      "properties": {
+        "provider_selection_owner": {"type": "string", "minLength": 1},
+        "provider_local_policy_inheritance": {"const": "FORBIDDEN"},
+        "authenticated_channel_admission": {"const": "NOT_GRANTED"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED"},
+        "future_version_compatibility": {"const": "UNPROVEN"},
+        "current_capability_status": {"const": "NOT_CURRENT_INTEGRATION"}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1, "pattern": "\\S"}
+  },
+  "$defs": {
+    "sha40": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha64OrMarker": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "readSurface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "role"],
+      "properties": {"path": {"type": "string", "minLength": 1}, "sha256": {"$ref": "#/$defs/sha64OrMarker"}, "role": {"type": "string", "minLength": 1}}
+    },
+    "upstream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_candidate_id", "provider_class", "repository", "repository_url", "observed_ref", "observed_main_sha", "starting_clue_sha", "starting_clue_matches_observed", "upstream_checkout", "declared_version", "public_metadata", "read_surfaces", "license", "observed_contract", "health"],
+      "properties": {
+        "provider_candidate_id": {"enum": ["archify", "agent-reach"]},
+        "provider_class": {"enum": ["DERIVED_VISUALIZATION_PROVIDER", "READ_ONLY_SOURCE_ACQUISITION_PROVIDER"]},
+        "repository": {"type": "string", "minLength": 1},
+        "repository_url": {"type": "string", "format": "uri"},
+        "observed_ref": {"const": "refs/heads/main"},
+        "observed_main_sha": {"$ref": "#/$defs/sha40"},
+        "starting_clue_sha": {"$ref": "#/$defs/sha40"},
+        "starting_clue_matches_observed": {"type": "boolean"},
+        "upstream_checkout": {"$ref": "#/$defs/checkout"},
+        "declared_version": {"type": "string", "minLength": 1},
+        "public_metadata": {"$ref": "#/$defs/metadata"},
+        "read_surfaces": {"type": "array", "minItems": 7, "items": {"$ref": "#/$defs/readSurface"}},
+        "license": {"$ref": "#/$defs/license"},
+        "observed_contract": {"$ref": "#/$defs/observedContract"},
+        "health": {"type": "object", "minProperties": 1}
+      }
+    },
+    "checkout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["relative_path", "clean", "non_shallow", "fsck_passed"],
+      "properties": {"relative_path": {"type": "string", "minLength": 1}, "clean": {"const": true}, "non_shallow": {"const": true}, "fsck_passed": {"const": true}}
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["default_branch", "visibility", "archived", "github_license_spdx"],
+      "properties": {"default_branch": {"const": "main"}, "visibility": {"const": "public"}, "archived": {"const": false}, "github_license_spdx": {"const": "MIT"}}
+    },
+    "license": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["declared", "license_file", "license_sha256", "attribution_requirements", "rights_decision"],
+      "properties": {"declared": {"const": "MIT"}, "license_file": {"const": "LICENSE"}, "license_sha256": {"$ref": "#/$defs/sha64"}, "attribution_requirements": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 1}}, "rights_decision": {"const": "EXTERNAL_DEPENDENCY_ADAPTER_PREFERRED_NO_SOURCE_COPY"}}
+    },
+    "observedContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input", "output", "accepted_abstract_operations", "side_effect_observed", "network_notes", "authority_boundary"],
+      "properties": {"input": {"type": "string", "minLength": 1}, "output": {"type": "string", "minLength": 1}, "accepted_abstract_operations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}, "side_effect_observed": {"type": "string", "minLength": 1}, "network_notes": {"type": "string", "minLength": 1}, "authority_boundary": {"type": "string", "minLength": 1}}
+    },
+    "sha64": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

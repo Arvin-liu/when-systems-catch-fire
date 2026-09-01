@@ -46,6 +46,27 @@ class FederationOwnershipTests(unittest.TestCase):
         with self.assertRaises(OwnershipValidationError):
             validate_contracts(ownership, changed, registry)
 
+    def test_task149_exception_is_removable_evidence_classification(self) -> None:
+        policy = load("build-vs-integrate-policy-r1.json")
+        exceptions = policy["exceptions"]
+        self.assertEqual(len(exceptions), 1)
+        exception = exceptions[0]
+        self.assertEqual(exception["exception_id"], "HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY")
+        self.assertEqual(exception["decision"], "ALLOW_HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY")
+        self.assertIn("no provider runtime", exception["capability_scope"])
+        self.assertIn("separate formally reviewed task", exception["sunset_or_review_condition"])
+        self.assertIn("generic runtime bypass", exception["sunset_or_review_condition"])
+        validate_contracts(changed_paths=["data/operations/iterations/149/provider-adapter-contract-r0.json"])
+
+    def test_expired_task149_draft_exception_is_rejected(self) -> None:
+        ownership = load("os-executor-ownership-r1.json")
+        policy = load("build-vs-integrate-policy-r1.json")
+        registry = load("executor-component-ownership-r1.json")
+        changed = copy.deepcopy(policy)
+        changed["exceptions"][0]["exception_id"] = "IGNITION-149-PROVIDER-ADAPTER-SPIKE"
+        with self.assertRaises(OwnershipValidationError):
+            validate_contracts(ownership, changed, registry)
+
     def test_reference_freeze_negative_fixtures_are_rejected(self) -> None:
         result = check_reference_freeze_fixtures()
         self.assertEqual(result["status"], "PASS")

@@ -50,5 +50,52 @@
     "remote_git",
     "device"
   ],
-  "exceptions": []
+  "exceptions": [
+    {
+      "exception_id": "HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY",
+      "capability_scope": "Retain Task149 evidence, schemas, tests and validators as historical or experimental provider evidence only; no provider runtime",
+      "external_options_considered": [
+        "Archify public interface at the pinned Task149 revision",
+        "Agent Reach public interface at the pinned Task149 revision",
+        "the existing Reference Executor as the bounded offline conformance surface",
+        "a custom renderer or source-acquisition implementation"
+      ],
+      "reproduction_steps": [
+        "Run Task149 Steps 01-17 from the Task148 Current baseline.",
+        "Run validate_federation_ownership.py --scan-git-diff against the Task149 Draft branch.",
+        "Observe that provider/channel-named contract, receipt, schema, validator and test paths are rejected without a scoped exception."
+      ],
+      "observed_failure": "The unchanged Reference Executor ownership gate rejects the retained Task149 evidence, schema, test and validator paths by name; no provider runtime, permission or authentication failure is being repaired.",
+      "threshold_or_boundary": "This classification is limited to repository-local Task149 evidence and its validation surface. It grants no provider runtime, Current capability, external action, credential or session authority; any later provider admission requires a separately reviewed task.",
+      "least_privilege_impact": "No executor, provider, channel, browser, credential, cookie, network, remote-Git, external-action or production authority is added; live external invocation remains unchanged.",
+      "reversibility": "This removable classification and the retained Task149 evidence paths can be deleted without external configuration, installation or persistent provider state.",
+      "owner_review_ref": "IGNITION-20260901-149-OWNER-REVIEW; bounded Owner adjudication recorded in Arvin-liu/1111",
+      "decision": "ALLOW_HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY",
+      "external_executor_or_adapter": "Archify and Agent Reach are evidence subjects only; Ignition-owned provider-neutral records, validators and tests remain the carrier",
+      "contract_gap": "The frozen Reference Executor has no provider, source-acquisition or derived-visualization capability slot; Task149 records the research contract seam without adding that capability to the executor.",
+      "why_adapter_cannot_solve": "Not applicable to runtime integration: no provider capability is being authorized. The classification exists only to account for provider-shaped evidence paths and does not bypass the adapter boundary.",
+      "minimal_build_scope": "Task149 contract schemas, immutable spike receipts, provenance adapter outputs, health/channel matrix, validators, tests and experimental report under iteration 149; no runtime loop, system install, vendor source, authenticated integration or external action.",
+      "sunset_or_review_condition": "This removable historical or experimental classification may be deleted with the Task149 records. It must not become a generic runtime bypass; any later provider, Current capability, authenticated channel, credential/session or external-action admission requires a separate formally reviewed task.",
+      "protected_paths": [
+        "data/operations/iterations/149/",
+        "schemas/operations/provider-adapter-contract-r0.schema.json",
+        "schemas/operations/provider-contract-boundary-r0.schema.json",
+        "schemas/operations/provider-selection-authority-r0.schema.json",
+        "schemas/operations/task149-final-report-external-capability-provider-adapter-spikes-r0.schema.json",
+        "schemas/operations/task149-step08-provider-adjudication-r0.schema.json",
+        "schemas/operations/task149-step09-agent-reach-channel-capability-matrix-r0.schema.json",
+        "schemas/operations/task149-step14-authenticated-channel-fail-closed-r0.schema.json",
+        "tests/test_task149_provider_contract.py",
+        "tests/test_task149_provider_selection.py",
+        "tests/test_task149_step08_provider_adjudication.py",
+        "tests/test_task149_step09_agent_reach_channel_matrix.py",
+        "tests/test_task149_step14_authenticated_channel_fail_closed.py",
+        "tools/validate_task149_provider_contract.py",
+        "tools/validate_task149_provider_selection.py",
+        "tools/validate_task149_step08_provider_adjudication.py",
+        "tools/validate_task149_step09_agent_reach_channel_matrix.py",
+        "tools/validate_task149_step14_authenticated_channel_fail_closed.py"
+      ]
+    }
+  ]
 }

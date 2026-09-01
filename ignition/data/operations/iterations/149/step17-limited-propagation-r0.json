@@ -1,0 +1,242 @@
+{
+  "schema_version": "ignition-149-step17-limited-propagation-r0",
+  "task_id": "IGNITION-20260831-149",
+  "step": "17",
+  "status": "LIMITED_PROPAGATION_PASS",
+  "observed_at": "2026-09-01T10:15:44+08:00",
+  "formal_main_baseline": "14c2595d796494286caf31378173fd9dd027edcf",
+  "formal_previous_commit": "ea24f4f66b61693a76a09be6243711ab93ffdf57",
+  "branch_state": "DRAFT_ONLY_NOT_MAIN",
+  "changed_subjects": [
+    "provider-spike-evidence",
+    "draft-task-state",
+    "append-only-state-history",
+    "validation-contract"
+  ],
+  "surface_decisions": [
+    {
+      "surface_id": "human.readme",
+      "locator": ".github/README.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task149 is a provider adapter spike, not a capability activation. The homepage must not claim Archify support, whole-Internet capability or support for 15 platforms; no supported capability, platform count, usage route, permission or Current integration is added.",
+      "evidence_refs": ["ignition/data/operations/front-door-nonimpact-proofs.json", "ignition/data/operations/iterations/149/External Capability Provider Adapter Spikes R0.md"]
+    },
+    {
+      "surface_id": "human.reading",
+      "locator": "HUMAN-READING.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The provider spike adds repository-local evidence under the Task149 iteration record, not a new human reading conclusion or supported project capability.",
+      "evidence_refs": ["ignition/HUMAN-READING.md", "ignition/data/operations/iterations/149/External Capability Provider Adapter Spikes R0.md"]
+    },
+    {
+      "surface_id": "human.results",
+      "locator": "RESULTS/README.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task149 is not a publication or result-book change; the unified spike report remains in the iteration evidence directory and is not promoted into Results.",
+      "evidence_refs": ["ignition/RESULTS/README.md", "ignition/data/operations/iterations/149/External Capability Provider Adapter Spikes R0.md"]
+    },
+    {
+      "surface_id": "human.knowledge_experience",
+      "locator": "KNOWLEDGE/README.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The observed provider outputs are bounded acquisition and visualization evidence, not an accepted knowledge conclusion or a new Knowledge Experience asset.",
+      "evidence_refs": ["ignition/KNOWLEDGE/README.md", "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"]
+    },
+    {
+      "surface_id": "human.current_state",
+      "locator": "docs/project-current-state.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Formal Current remains Task148 on the recorded main baseline; a Draft provider spike cannot change the Current project state or its user-facing identity.",
+      "evidence_refs": ["ignition/docs/project-current-state.md", "ignition/data/architecture/current-system-identity.json"]
+    },
+    {
+      "surface_id": "human.summary",
+      "locator": "SUMMARY.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task149 does not change the repository summary or its Current capability description; only the bounded iteration evidence changes.",
+      "evidence_refs": ["ignition/SUMMARY.md", "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"]
+    },
+    {
+      "surface_id": "human.usage",
+      "locator": "docs/USAGE.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No provider usage route is supported or activated, and no permission or authenticated workflow is added to the user usage contract.",
+      "evidence_refs": ["ignition/docs/USAGE.md", "ignition/data/operations/iterations/149/provider-adapter-contract-r0.json"]
+    },
+    {
+      "surface_id": "human.ai_guide",
+      "locator": "docs/ai-assistant-usage-reference.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The AI-facing usage guide remains the Task148 Current interface; Task149 records an adapter experiment and does not add a callable operation or provider instruction.",
+      "evidence_refs": ["ignition/docs/ai-assistant-usage-reference.md", "ignition/data/operations/iterations/149/provider-adapter-contract-r0.json"]
+    },
+    {
+      "surface_id": "ai.start",
+      "locator": "AI-START-HERE.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Cold-start routing remains unchanged; provider selection is not exposed as a Current operation and no external action authority is introduced.",
+      "evidence_refs": ["ignition/AI-START-HERE.md", "ignition/data/operations/iterations/149/provider-selection-authority-r0.json"]
+    },
+    {
+      "surface_id": "agent.handoff",
+      "locator": "AI-HANDOFF.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Handoff semantics remain Task148 Current semantics; a provider spike does not change task ownership, authority routing or the next handoff action.",
+      "evidence_refs": ["ignition/AI-HANDOFF.md", "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"]
+    },
+    {
+      "surface_id": "machine.llms",
+      "locator": "llms.txt",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The machine-readable front door does not gain a provider capability, authenticated channel or new operation from this Draft-only spike.",
+      "evidence_refs": ["ignition/llms.txt", "ignition/data/operations/iterations/149/provider-adapter-contract-r0.json"]
+    },
+    {
+      "surface_id": "release.changelog",
+      "locator": "CHANGELOG.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Task149 is not a released version or Main publication; release history must not describe the Draft spike as a shipped capability.",
+      "evidence_refs": ["ignition/CHANGELOG.md", "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"]
+    },
+    {
+      "surface_id": "release.state_changelog",
+      "locator": "STATE-CHANGELOG.md",
+      "decision": "CHANGE",
+      "reason": "Iteration Method requires this Task149 branch to append its own structured, historical Draft delta without promoting the provider spike to Current.",
+      "evidence_refs": ["ignition/STATE-CHANGELOG.md", "ignition/data/operations/state-changelog-profile-r1.json"]
+    },
+    {
+      "surface_id": "release.versioning",
+      "locator": "docs/VERSIONING.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No released version, formal method version or Current version is changed by a Draft provider spike.",
+      "evidence_refs": ["ignition/docs/VERSIONING.md", "ignition/STATE-CHANGELOG.md"]
+    },
+    {
+      "surface_id": "method.operating",
+      "locator": "OPERATING-METHOD.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The Current Operating Method remains the authority for using Ignition; provider-local policy is not inserted into that method and no operation is activated.",
+      "evidence_refs": ["ignition/OPERATING-METHOD.md", "ignition/data/operations/iterations/149/provider-selection-authority-r0.json"]
+    },
+    {
+      "surface_id": "method.iteration",
+      "locator": "ITERATION.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "The Iteration Method contract is the governing procedure used by this step; Task149 supplies evidence under the contract and does not modify the method itself.",
+      "evidence_refs": ["ignition/ITERATION.md", "ignition/data/operations/iterations/149/step17-limited-propagation-r0.json"]
+    },
+    {
+      "surface_id": "method.task_template",
+      "locator": "templates/operations/task-command-template.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No task-command template or authority instruction is changed; provider adapter review remains a Task149-specific recorded next action.",
+      "evidence_refs": ["ignition/templates/operations/task-command-template.md", "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"]
+    },
+    {
+      "surface_id": "method.result_template",
+      "locator": "templates/operations/execution-result-template.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "No general result-contract change is needed; the Task149 result and provider boundaries remain in the iteration-specific report and receipts.",
+      "evidence_refs": ["ignition/templates/operations/execution-result-template.md", "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"]
+    },
+    {
+      "surface_id": "method.review_template",
+      "locator": "templates/operations/independent-review-template.md",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Independent review procedure is unchanged; the Draft PR must still be reviewed at exact head and no provider is admitted without the stated review boundary.",
+      "evidence_refs": ["ignition/templates/operations/independent-review-template.md", "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"]
+    },
+    {
+      "surface_id": "copyright_governance",
+      "locator": "data/governance/",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "Upstream licenses are recorded as provenance evidence only; Task149 adds no source copy, vendoring, copyright policy, or rights decision to Ignition governance.",
+      "evidence_refs": ["ignition/data/operations/iterations/149/step02-upstream-freeze.json", "ignition/data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"]
+    },
+    {
+      "surface_id": "machine.stage_snapshots",
+      "locator": "data/operations/stage-snapshots.json",
+      "decision": "NO_CHANGE_WITH_REASON",
+      "reason": "A provider spike is not a stage snapshot or Current identity transition; no snapshot is regenerated or promoted.",
+      "evidence_refs": ["ignition/data/operations/stage-snapshots.json", "ignition/data/architecture/current-system-identity.json"]
+    }
+  ],
+  "front_door_nonimpact_proof": {
+    "registry_path": "ignition/data/operations/front-door-nonimpact-proofs.json",
+    "surface_id": "human.readme",
+    "decision": "NO_CHANGE_WITH_REASON",
+    "scope": "DRAFT_BRANCH_ONLY",
+    "revalidation_boundary": "Re-adjudicate before Ready, acceptance, merge or any Current/Closed evaluation.",
+    "forbidden_claims": ["点火已支持 Archify", "点火已拥有全网能力", "点火支持 15 个平台"]
+  },
+  "state_changelog_delta": {
+    "path": "ignition/STATE-CHANGELOG.md",
+    "ordinal": 55,
+    "label": "IGNITION-20260831-149 — External Capability Provider Adapter Spikes R0 Draft propagation delta",
+    "profile": "historical-current-r0",
+    "section_sha256": "0c14fa4c4ab04d0f8ba5c85cb850f52f5f95c4f62030d76e5a95af0cbadf2c5a",
+    "whole_file_before_sha256": "b7229897d634c13838eef1a890999467665470d5dbdc5b84b34d207b990723a7",
+    "whole_file_after_sha256": "181ebcb1989f9652e4d5d9a05ddc166d5e54c906325a71db65c4b48725a74d25"
+  },
+  "protected_surface_fingerprints": [
+    {"path": ".github/README.md", "before_sha256": "1720c242aa9329ab5cfb4d79d62253fd4d9eed6b8bae23ea9e0e08116e4cd4a0", "after_sha256": "1720c242aa9329ab5cfb4d79d62253fd4d9eed6b8bae23ea9e0e08116e4cd4a0"},
+    {"path": "ignition/HUMAN-READING.md", "before_sha256": "fc27ad68d0f7efef80b20de5fe81e2223e5ed80c2be4cda186edb5a2669a827c", "after_sha256": "fc27ad68d0f7efef80b20de5fe81e2223e5ed80c2be4cda186edb5a2669a827c"},
+    {"path": "ignition/RESULTS/README.md", "before_sha256": "31f02481625673b3da272795d913748883b5c655150b66b8e18600bbbe1c905b", "after_sha256": "31f02481625673b3da272795d913748883b5c655150b66b8e18600bbbe1c905b"},
+    {"path": "ignition/KNOWLEDGE/README.md", "before_sha256": "d4b72e1c2b6a5fa804ead7e2066a5dbb414295c01b0a2547ad64218cf40bc023", "after_sha256": "d4b72e1c2b6a5fa804ead7e2066a5dbb414295c01b0a2547ad64218cf40bc023"},
+    {"path": "ignition/docs/project-current-state.md", "before_sha256": "837135e13d1c34d0b981bf9b0c42dada1bddb4b30753f8e139ba31d6ff5b4fb0", "after_sha256": "837135e13d1c34d0b981bf9b0c42dada1bddb4b30753f8e139ba31d6ff5b4fb0"},
+    {"path": "ignition/SUMMARY.md", "before_sha256": "f580cd9af7ed2a566b1969a520f3be63a8cb6811910ac6e56df66a1aa113d04e", "after_sha256": "f580cd9af7ed2a566b1969a520f3be63a8cb6811910ac6e56df66a1aa113d04e"},
+    {"path": "ignition/docs/USAGE.md", "before_sha256": "03700d8511e972f21b2e2a7385c987545136dbd0a5803762f36ecfe5577f8f46", "after_sha256": "03700d8511e972f21b2e2a7385c987545136dbd0a5803762f36ecfe5577f8f46"},
+    {"path": "ignition/docs/ai-assistant-usage-reference.md", "before_sha256": "564b85037fe41ddf981f56cc094c1e551b7bdb3a70701c17d940a0a534e55489", "after_sha256": "564b85037fe41ddf981f56cc094c1e551b7bdb3a70701c17d940a0a534e55489"},
+    {"path": "ignition/AI-START-HERE.md", "before_sha256": "eacdd28a8385ce85af245902330134905814a7122c6b35a413b339e4d4cad3da", "after_sha256": "eacdd28a8385ce85af245902330134905814a7122c6b35a413b339e4d4cad3da"},
+    {"path": "ignition/AI-HANDOFF.md", "before_sha256": "af82fbe94def5700e455b382a65e97ecf06bf7eb854ae430c354a26ae540f569", "after_sha256": "af82fbe94def5700e455b382a65e97ecf06bf7eb854ae430c354a26ae540f569"},
+    {"path": "ignition/llms.txt", "before_sha256": "397f0194794b20524a19c653d39e5b6560c11948dd536cc3bb05f05df965a0d5", "after_sha256": "397f0194794b20524a19c653d39e5b6560c11948dd536cc3bb05f05df965a0d5"},
+    {"path": "ignition/CHANGELOG.md", "before_sha256": "27e2dd3b82e719071400c04bbfd2a4b7c4ce9d0de8b3d65b0cfe9f7706575600", "after_sha256": "27e2dd3b82e719071400c04bbfd2a4b7c4ce9d0de8b3d65b0cfe9f7706575600"},
+    {"path": "ignition/docs/VERSIONING.md", "before_sha256": "2313efdd79649edb8fcc229db144ae01fe800bcb19b59ac51b205652946ee6de", "after_sha256": "2313efdd79649edb8fcc229db144ae01fe800bcb19b59ac51b205652946ee6de"},
+    {"path": "ignition/OPERATING-METHOD.md", "before_sha256": "fe517924b0bdfee4a1b20d8ff58f03e12e1f315f3d3b440e4369a285d52f2f2c", "after_sha256": "fe517924b0bdfee4a1b20d8ff58f03e12e1f315f3d3b440e4369a285d52f2f2c"},
+    {"path": "ignition/ITERATION.md", "before_sha256": "47dc3d6f52fd465427baf897c82272c92e3121ef2684f8f4a8b1f2007a59c6ca", "after_sha256": "47dc3d6f52fd465427baf897c82272c92e3121ef2684f8f4a8b1f2007a59c6ca"},
+    {"path": "ignition/templates/operations/task-command-template.md", "before_sha256": "f86c61c8732088c46402276cf763dc4d0e8516133d43526db96cb28934de969f", "after_sha256": "f86c61c8732088c46402276cf763dc4d0e8516133d43526db96cb28934de969f"},
+    {"path": "ignition/templates/operations/execution-result-template.md", "before_sha256": "73852008706da334fa7d314dec7dc40be7b6d4e1dcc11d9f77035d3b28a6a373", "after_sha256": "73852008706da334fa7d314dec7dc40be7b6d4e1dcc11d9f77035d3b28a6a373"},
+    {"path": "ignition/templates/operations/independent-review-template.md", "before_sha256": "2d7c67c53bb765b28d3b3ca329a08f468ac0c4621944705b1e46346f72ab3dc1", "after_sha256": "2d7c67c53bb765b28d3b3ca329a08f468ac0c4621944705b1e46346f72ab3dc1"},
+    {"path": "ignition/data/operations/stage-snapshots.json", "before_sha256": "50dda5d00c06305a357476bc153ce03289cda260b29e90a42a0edb335cfd8746", "after_sha256": "50dda5d00c06305a357476bc153ce03289cda260b29e90a42a0edb335cfd8746"},
+    {"path": "ignition/data/architecture/current-system-identity.json", "before_sha256": "5f9f0f4ac2e225b72e2a97515da7e88187f05da6df7786f5866f270fddda4761", "after_sha256": "5f9f0f4ac2e225b72e2a97515da7e88187f05da6df7786f5866f270fddda4761"},
+    {"path": "ignition/data/architecture/current-facts.json", "before_sha256": "08ab86411d3213274c88e81ade252c982a2056ae86fe861e1b3d4382a5ab9d16", "after_sha256": "08ab86411d3213274c88e81ade252c982a2056ae86fe861e1b3d4382a5ab9d16"},
+    {"path": "ignition/data/operations/current-snapshot-r1.json", "before_sha256": "87d015bba7226b2035b2c3f140fa430a217634458b61dedade9a33603c3a5f72", "after_sha256": "87d015bba7226b2035b2c3f140fa430a217634458b61dedade9a33603c3a5f72"},
+    {"path": "ignition/data/operations/ignition-operation-capability-registry-r1.json", "before_sha256": "35ec66971f66df89874b82f53ff1b1af1cf0d45d7fac131bbadfffa2485a3d22", "after_sha256": "35ec66971f66df89874b82f53ff1b1af1cf0d45d7fac131bbadfffa2485a3d22"},
+    {"path": "ignition/data/operations/ignition-operation-playbooks-r1.json", "before_sha256": "d141dced55c11e2e4265d9a07e2a5bd3c432b6f0f1fccb97e08fc0848c41c672", "after_sha256": "d141dced55c11e2e4265d9a07e2a5bd3c432b6f0f1fccb97e08fc0848c41c672"}
+  ],
+  "changed_evidence_paths": [
+    "ignition/STATE-CHANGELOG.md",
+    "ignition/data/operations/state-changelog-profile-r1.json",
+    "ignition/tools/validate_state_changelog.py",
+    "ignition/data/operations/front-door-nonimpact-proofs.json",
+    "ignition/data/operations/iterations/149/step17-limited-propagation-r0.json",
+    "ignition/schemas/operations/task149-step17-limited-propagation-r0.schema.json",
+    "ignition/tools/validate_task149_step17_limited_propagation.py",
+    "ignition/tests/test_task149_step17_limited_propagation.py"
+  ],
+  "supporting_registry_delta": {
+    "path": "ignition/data/operations/front-door-nonimpact-proofs.json",
+    "before_sha256": "66c783a019955d92eae34bf3a618fec63e83a1c9278ee1cc2e29914bf0e27df4",
+    "after_sha256": "e09eb7fe9de7fcf2c2579a4b0d2f00cfa2682be0ed50d4a88df6cf5128772cd1"
+  },
+  "task_state_boundary": {
+    "current_formal_task_id": "IGNITION-20260829-148",
+    "current_operating_method_status": "CURRENT",
+    "current_identity_changed": false,
+    "provider_spike_is_current_capability": false,
+    "provider_admission_status": "PROVIDER_ADMISSION_CANDIDATE",
+    "formal_task_state": "DRAFT_ONLY_NOT_MAIN",
+    "unique_next_action": "AWAIT_OWNER_PROVIDER_ADAPTER_REVIEW"
+  },
+  "safety_boundary": {
+    "authenticated_channel_admission": "NO_AUTHENTICATED_CHANNEL_ADMISSION",
+    "live_external_invocation": "LIVE_EXTERNAL_INVOCATION_UNCHANGED",
+    "system_mutation": false,
+    "secret_or_cookie_access": false,
+    "login": false,
+    "provider_vendoring": false,
+    "automatic_task150": false
+  },
+  "claim_ceiling": "Repository-local Task149 provider adapter spike propagation and recorded-environment evidence only; no provider capability, permission, Current integration, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred."
+}

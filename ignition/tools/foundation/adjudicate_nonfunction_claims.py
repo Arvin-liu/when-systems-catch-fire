@@ -194,6 +194,13 @@ CURRENT_SNAPSHOT_BLOCK = re.compile(
     re.DOTALL,
 )
 
+# Operation/state receipts can contain claim-like boundary prose while still
+# being valuable append-only history.  A source line carrying this explicit
+# marker remains in the operational record but is not a canonical nonfunction
+# claim source; this is a line-level, auditable exclusion rather than a broad
+# exclusion of the State Changelog.
+OPERATIONAL_RECORD_ONLY_MARKER = "[OPERATIONAL_RECORD_ONLY]"
+
 SIGNALS = re.compile(
     r"(?:theorem|lemma|axiom|law|principle|proof|proved|verified|validated|solved|"
     r"impossible|necessary|sufficient|universal|inevitable|always|never|caus(?:e|al)|"
@@ -372,6 +379,8 @@ def text_fragments(path: str) -> tuple[list[dict], str]:
             pass
     else:
         for line_no, line in enumerate(raw.splitlines(), 1):
+            if path == "STATE-CHANGELOG.md" and OPERATIONAL_RECORD_ONLY_MARKER in line:
+                continue
             line = " ".join(line.strip().split())
             if not line or len(line) > 12000:
                 continue

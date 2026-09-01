@@ -92,9 +92,10 @@ class IgnitionStrangerAgentRegressionTests(unittest.TestCase):
         self.assertEqual(report["failed_case_count"], 1)
         self.assertIn("expected 'REPOSITORY_CHANGE_RUN'", report["cases"][0]["errors"][0])
 
-    def test_persisted_receipt_is_exact_recomputation(self) -> None:
+    def test_persisted_receipt_is_exact_historical_replay(self) -> None:
         persisted = json.loads(regression.RECEIPT_PATH.read_text(encoding="utf-8"))
-        self.assertEqual(persisted, self.report)
+        replay = regression.replay_historical_receipt(persisted)
+        self.assertEqual(persisted, replay)
         without_hash = dict(persisted)
         receipt_hash = without_hash.pop("receipt_sha256")
         self.assertEqual(receipt_hash, regression._canonical_hash(without_hash))

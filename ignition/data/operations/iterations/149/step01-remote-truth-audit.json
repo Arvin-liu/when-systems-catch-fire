@@ -1,0 +1,165 @@
+{
+  "schema_version": "ignition-149-step01-remote-truth-audit-r0",
+  "task_id": "IGNITION-20260831-149",
+  "step": "01",
+  "status": "PASS",
+  "audit_mode": "CURRENT_MAIN_ONLY_WITH_MINIMAL_PROVIDER_BOUNDARY",
+  "formal_remote_observation": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "observed_sha": "14c2595d796494286caf31378173fd9dd027edcf",
+    "remote_ref_verified": true,
+    "clean_isolated_worktree": true,
+    "non_shallow_clone": true,
+    "fsck_passed": true
+  },
+  "task148_current_gate": {
+    "current_formal_task": "IGNITION-20260829-148",
+    "operating_method_identity": "IGNITION_OPERATING_METHOD_R1",
+    "operating_method_version": "1.0.0",
+    "operating_method_status": "CURRENT",
+    "capability_registry_current_on_main": true,
+    "live_external_invocation_status": "OWNER_DEFERRED",
+    "live_external_invocation_obligation": "OPEN",
+    "task149_allowed_to_start": true
+  },
+  "current_capability_census": {
+    "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "operation_count": 19,
+    "callable_playbook_count": 15,
+    "status_only_count": 4,
+    "provider_operation_ids": [],
+    "source_evidence_coverage": "PARTIAL_BOUNDED_NO_GENERAL_DIRECT_SOURCE_RETRIEVAL_OPERATION",
+    "pack_count": 4,
+    "pack_capability_count": 10,
+    "all_pack_network_permissions_false": true
+  },
+  "contract_gap_inventory": {
+    "visualization_provider_contract": {
+      "status": "NOT_FOUND",
+      "scope": "No Current provider-neutral visualization interface is registered.",
+      "evidence": ["ignition/data/operations/ignition-operation-capability-registry-r1.json", "ignition/data/architecture/interactive-system-map.json"],
+      "action": "Use the minimal boundary here, then complete the R0 contract in Step 03."
+    },
+    "renderer_provider": {
+      "status": "NOT_FOUND",
+      "scope": "Existing renderer modules are domain-specific projections, not an admitted provider.",
+      "evidence": ["ignition/tools/adaptive_relational_network/renderer.py", "ignition/tools/causal_fabric/renderer.py", "ignition/data/architecture/interactive-system-map.json"],
+      "action": "Keep rendering derived and source-bound; do not register a Current renderer yet."
+    },
+    "source_acquisition_contract": {
+      "status": "NOT_FOUND",
+      "scope": "No Current abstract read-only source-acquisition provider contract is registered.",
+      "evidence": ["ignition/data/operations/ignition-operation-capability-registry-r1.json", "ignition/data/external-research/104-provider-capability-matrix.json"],
+      "action": "Complete a provider-neutral contract and test only bounded acquisition in later steps."
+    },
+    "internet_research_provider_abstraction": {
+      "status": "NOT_FOUND",
+      "scope": "Current research coverage is bounded evidence-link validation and obligation coordination, not a general Internet layer.",
+      "evidence": ["ignition/data/operations/ignition-operation-playbooks-r1.json", "ignition/data/external-research/104-provider-capability-matrix.json"],
+      "action": "Do not promote Agent Reach or any local tool into a global Internet authority."
+    },
+    "provider_health_admission_registry": {
+      "status": "FOUND_EXECUTOR_ONLY",
+      "scope": "Health/admission records govern replaceable external Agent executors, not capability providers.",
+      "evidence": ["ignition/data/agent-federation/executor-inventory-r1.json", "ignition/data/agent-federation/federation-routing-policy-r1.json", "ignition/data/agent-federation/os-executor-ownership-r1.json"],
+      "action": "Reuse the fail-closed shape only where applicable; do not conflate executor and provider admission."
+    },
+    "tool_routing_abstraction": {
+      "status": "FOUND_EXECUTOR_ONLY",
+      "scope": "Federation routing selects external executors under OS policy; it is not provider selection for research or visualization.",
+      "evidence": ["ignition/data/agent-federation/federation-routing-policy-r1.json", "ignition/OPERATING-METHOD.md"],
+      "action": "Add a separate provider-selection authority in Step 04."
+    },
+    "executor_adapter_contract": {
+      "status": "FOUND_EXECUTOR_ONLY",
+      "scope": "Adapter SDK and external Agent adapters translate process/session boundaries and explicitly exclude provider integration.",
+      "evidence": ["ignition/docs/architecture/adapter-sdk-r1.md", "ignition/agent_federation/adapters/", "ignition/data/agent-federation/os-executor-ownership-r1.json"],
+      "action": "Do not extend the executor adapter contract by copying vendor provider/runtime behavior."
+    },
+    "historical_near_matches": [
+      {
+        "status": "HISTORICAL_NEAR_MATCH_NOT_CURRENT",
+        "scope": "Task104 external-research provider role notes and capability matrix.",
+        "evidence": ["ignition/docs/external-research/provider-contract.md", "ignition/data/external-research/104-provider-capability-matrix.json"],
+        "action": "Treat as historical provenance only; do not use its ACTIVE labels as Current operation admission."
+      },
+      {
+        "status": "FOUND_NOT_CURRENT",
+        "scope": "Existing domain renderers and external-research fetch helpers have implementation presence without a Current provider registry binding.",
+        "evidence": ["ignition/tools/adaptive_relational_network/renderer.py", "ignition/tools/causal_fabric/renderer.py", "ignition/scripts/external-research/fulltext_fetcher.py"],
+        "action": "Use only through a new bounded contract with explicit provenance and validator receipts."
+      }
+    ]
+  },
+  "minimal_contract": {
+    "path": "ignition/data/operations/iterations/149/step01-provider-contract-boundary-r0.json",
+    "schema_path": "ignition/schemas/operations/provider-contract-boundary-r0.schema.json",
+    "status": "MINIMAL_BOUNDARY_ESTABLISHED",
+    "provider_neutral": true,
+    "provider_record_count": 0,
+    "current_integration": "NONE",
+    "identity_impact": "NONE"
+  },
+  "authority_boundaries": [
+    "EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY",
+    "PROVIDER_CAPABILITY ≠ PERMISSION",
+    "PROVIDER_OUTPUT ≠ EXTERNAL_TRUTH",
+    "PROVIDER_LOCAL_POLICY ≠ IGNITION_GLOBAL_POLICY",
+    "ADAPTER_SPIKE_PASS ≠ CURRENT_CAPABILITY"
+  ],
+  "architecture_observation": {
+    "identity_epoch": "os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1",
+    "system_role": "Ignition OS / orchestration-governance layer",
+    "latest_architecture_changing_task": "IGNITION-20260827-142",
+    "current_map_version": "0.16.0",
+    "registry_components": 100,
+    "visible_map_nodes": 87,
+    "visible_map_edges": 92,
+    "provider_specific_node_count": 0,
+    "existing_provider_mentions_classification": "EXECUTOR_ADMISSION_OR_EXTERNAL_EXECUTOR_TELEMETRY_NOT_PROVIDER_CAPABILITY",
+    "architecture_identity_impact": "NONE"
+  },
+  "prohibited_inferences": [
+    "No external Agent live invocation is opened or changed by this audit.",
+    "No existing executor adapter is treated as a provider adapter.",
+    "No historical Task104 provider status is promoted to Current.",
+    "No provider output is treated as external truth or architecture authority.",
+    "No Pack network=false permission is widened by provider discovery.",
+    "No third-party source is copied, vendored or added to the formal repository."
+  ],
+  "source_fingerprints": [
+    {"path": ".github/README.md", "sha256": "1720c242aa9329ab5cfb4d79d62253fd4d9eed6b8bae23ea9e0e08116e4cd4a0"},
+    {"path": "ignition/OPERATING-METHOD.md", "sha256": "fe517924b0bdfee4a1b20d8ff58f03e12e1f315f3d3b440e4369a285d52f2f2c"},
+    {"path": "ignition/ITERATION.md", "sha256": "47dc3d6f52fd465427baf897c82272c92e3121ef2684f8f4a8b1f2007a59c6ca"},
+    {"path": "ignition/AI-START-HERE.md", "sha256": "eacdd28a8385ce85af245902330134905814a7122c6b35a413b339e4d4cad3da"},
+    {"path": "ignition/AI-HANDOFF.md", "sha256": "af82fbe94def5700e455b382a65e97ecf06bf7eb854ae430c354a26ae540f569"},
+    {"path": "ignition/llms.txt", "sha256": "397f0194794b20524a19c653d39e5b6560c11948dd536cc3bb05f05df965a0d5"},
+    {"path": "ignition/STATE-CHANGELOG.md", "sha256": "b7229897d634c13838eef1a890999467665470d5dbdc5b84b34d207b990723a7"},
+    {"path": "ignition/docs/project-current-state.md", "sha256": "837135e13d1c34d0b981bf9b0c42dada1bddb4b30753f8e139ba31d6ff5b4fb0"},
+    {"path": "ignition/data/operations/ignition-operation-capability-registry-r1.json", "sha256": "35ec66971f66df89874b82f53ff1b1af1cf0d45d7fac131bbadfffa2485a3d22"},
+    {"path": "ignition/data/operations/ignition-operation-playbooks-r1.json", "sha256": "d141dced55c11e2e4265d9a07e2a5bd3c432b6f0f1fccb97e08fc0848c41c672"},
+    {"path": "ignition/data/architecture/current-system-identity.json", "sha256": "5f9f0f4ac2e225b72e2a97515da7e88187f05da6df7786f5866f270fddda4761"},
+    {"path": "ignition/data/architecture/current-facts.json", "sha256": "08ab86411d3213274c88e81ade252c982a2056ae86fe861e1b3d4382a5ab9d16"},
+    {"path": "ignition/data/operations/current-snapshot-r1.json", "sha256": "87d015bba7226b2035b2c3f140fa430a217634458b61dedade9a33603c3a5f72"},
+    {"path": "ignition/packs/knowledge/manifest.json", "sha256": "6e5a77f25796ce189e73f02026be1b1544f4c3f736b1a67153134c1fa181bff1"},
+    {"path": "ignition/packs/maintenance/manifest.json", "sha256": "a4cc420eb74a773fd0f85e7d8e883b756e1ebdd8f2980a45524832235725e9e7"},
+    {"path": "ignition/packs/research/manifest.json", "sha256": "73f6f1e8f4c4c552ca88388294b5b5c3a5079403161e2ec848aaa58bac174875"},
+    {"path": "ignition/packs/writing/manifest.json", "sha256": "e4a751104a42b2ee72fdff660b2bf9b84fddd3016dae65e6ea4c49d40ba46d43"},
+    {"path": "ignition/data/agent-federation/os-executor-ownership-r1.json", "sha256": "f3d8c24d72e2aaab29a86794c9a7685a19b02ef0e042057c9e31b97ad354628b"},
+    {"path": "ignition/data/agent-federation/executor-inventory-r1.json", "sha256": "1db5fbe2f4535cdcc0878aac71fdec4e35be23705934e29eb73025c58a4a923a"},
+    {"path": "ignition/data/agent-federation/federation-routing-policy-r1.json", "sha256": "09715cc9288ba2a4e3a569c571684c6deff2b43d4eff8be0aec526e9c9b3cfe6"},
+    {"path": "ignition/data/agent-federation/build-vs-integrate-policy-r1.json", "sha256": "866adc2dd75eb5877b0127398cafe4fd696952111cda480167503120cc054611"},
+    {"path": "ignition/data/operations/open-obligation-registry-r1.json", "sha256": "9aa78f9835b646723b9fa8061a4720475da6c82e80bd749c65f3540996cdc7c7"},
+    {"path": "ignition/data/architecture/overall-architecture.json", "sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13"},
+    {"path": "ignition/data/architecture/interactive-system-map.json", "sha256": "3824697a9c781c1ea825f7335bc9461e6fb693e70bb65c042309fd16da173313"},
+    {"path": "ignition/data/operations/project-components.json", "sha256": "3d06c8e9755f5c0a0a533b4bda165c23dc22a60ca925ac44fda9e564e2eacabb"},
+    {"path": "ignition/data/operations/change-propagation-topology.json", "sha256": "efde6fb6d29caee917cd3e6a723b66dad2c63fe9e123b18753270b710b9e8085"},
+    {"path": "ignition/data/governance/licensing-rights-inventory.json", "sha256": "535623accbd322d1fd8269d795b500bf636460410c4197ae3e89bb3b7c4c3813"},
+    {"path": "ignition/data/governance/source-rights-registry.json", "sha256": "7929ec068dd5ef83424e11c044a0a3fd488500501b44402af94332aade4b4710"},
+    {"path": "ignition/docs/architecture/adapter-sdk-r1.md", "sha256": "4cc1bd066b02a2c4ce6f8a717220df614d34e227a0c579341094a4e4a8c143c1"},
+    {"path": "ignition/docs/external-research/provider-contract.md", "sha256": "cffcc9c8aaf2b1089038cf9e3ad889735b478cb80b682e9197c1191693818675"},
+    {"path": "ignition/data/external-research/104-provider-capability-matrix.json", "sha256": "762628f94f07da5efde71599ac0bbc55c7b1fce0cf3ae55aa472cbd0291756e0"}
+  ],
+  "claim_ceiling": "Task149 Step01 repository-local Current recovery, provider-surface gap audit and minimal provider-neutral contract boundary at formal main 14c2595d796494286caf31378173fd9dd027edcf only; no provider implementation, external truth, production readiness, Owner acceptance, validated live completion or epistemic acceptance is inferred."
+}

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/provider-selection-authority-r0.schema.json",
+  "title": "Task149 experimental provider-admission research selection authority R0 (not a Current runtime provider interface)",
+  "description": "An Ignition-owned research policy for evaluating provider candidates. It is not an executable or Current runtime provider interface.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "policy_id", "task_id", "status", "research_scope", "runtime_interface_status", "formal_baseline_sha", "contract_artifact", "authority_statement", "owner", "provider_neutral", "selection_inputs", "precedence_constraints", "selection_procedure", "provider_local_policy_test", "candidate_decisions", "output_contract", "current_impact", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-149-step04-provider-selection-authority-r0"},
+    "policy_id": {"const": "IGNITION_PROVIDER_SELECTION_AUTHORITY_R0"},
+    "task_id": {"const": "IGNITION-20260831-149"},
+    "status": {"const": "SELECTION_AUTHORITY_ESTABLISHED"},
+    "research_scope": {"const": "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY"},
+    "runtime_interface_status": {"const": "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE"},
+    "formal_baseline_sha": {"$ref": "#/$defs/sha"},
+    "contract_artifact": {
+      "type": "object", "additionalProperties": false,
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/iterations/149/provider-adapter-contract-r0.json"},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "authority_statement": {"const": "Ignition selects provider. Provider does not select Ignition behavior."},
+    "owner": {"const": "IGNITION"},
+    "provider_neutral": {"const": true},
+    "selection_inputs": {
+      "type": "array", "minItems": 9, "maxItems": 9,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["key", "required_consideration", "evaluation_role", "ordering"],
+        "properties": {
+          "key": {"enum": ["explicit_user_provider", "current_capability_and_admission", "current_environment_availability", "operation_fit", "least_privilege", "least_side_effect", "credential_requirement", "provenance_and_validation", "fallback_allowed"]},
+          "required_consideration": {"const": true},
+          "evaluation_role": {"$ref": "#/$defs/nonblank"},
+          "ordering": {"const": "CONTEXT_DEPENDENT"}
+        }
+      }
+    },
+    "precedence_constraints": {"type": "array", "minItems": 5, "items": {"$ref": "#/$defs/nonblank"}},
+    "selection_procedure": {
+      "type": "object", "additionalProperties": false,
+      "required": ["total_order_hardcoded_by_task", "steps", "selection_result_states"],
+      "properties": {
+        "total_order_hardcoded_by_task": {"const": false},
+        "steps": {"type": "array", "minItems": 6, "items": {"$ref": "#/$defs/nonblank"}},
+        "selection_result_states": {"type": "array", "minItems": 8, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}}
+      }
+    },
+    "provider_local_policy_test": {
+      "type": "object", "additionalProperties": false,
+      "required": ["fixture", "observed_scope", "ignition_interpretation", "global_inheritance", "allowed_alternatives", "decision"],
+      "properties": {
+        "fixture": {"$ref": "#/$defs/nonblank"},
+        "observed_scope": {"const": "AGENT_REACH_LOCAL_USAGE_CONVENTION"},
+        "ignition_interpretation": {"const": "NOT_A_GLOBAL_SELECTION_RULE"},
+        "global_inheritance": {"const": false},
+        "allowed_alternatives": {"type": "array", "minItems": 4, "items": {"$ref": "#/$defs/nonblank"}},
+        "decision": {"const": "REJECTED_PROVIDER_LOCAL_POLICY"}
+      }
+    },
+    "candidate_decisions": {
+      "type": "array", "minItems": 3,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["provider_id", "operation", "selection_result", "reason", "current_capability", "permission_granted", "authenticated_channel_admitted"],
+        "properties": {
+          "provider_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]{1,63}$"},
+          "operation": {"$ref": "#/$defs/nonblank"},
+          "selection_result": {"enum": ["SELECTED_FOR_RECORDED_SPIKE", "CONDITIONAL_CANDIDATE", "REJECTED_OPERATION_MISMATCH", "REJECTED_UNAVAILABLE", "REJECTED_AUTHENTICATION_NOT_ADMITTED", "REJECTED_PROVENANCE_OR_VALIDATION", "REJECTED_PROVIDER_LOCAL_POLICY", "UNAVAILABLE_NO_SAFE_PROVIDER"]},
+          "reason": {"$ref": "#/$defs/nonblank"},
+          "current_capability": {"const": false},
+          "permission_granted": {"const": false},
+          "authenticated_channel_admitted": {"const": false}
+        }
+      }
+    },
+    "output_contract": {
+      "type": "object", "additionalProperties": false,
+      "required": ["required_fields", "provider_output_is_not_external_truth", "provider_output_is_not_ignition_architecture_truth", "selection_receipt_is_not_a_current_promotion"],
+      "properties": {
+        "required_fields": {"type": "array", "minItems": 9, "uniqueItems": true, "items": {"$ref": "#/$defs/nonblank"}},
+        "provider_output_is_not_external_truth": {"const": true},
+        "provider_output_is_not_ignition_architecture_truth": {"const": true},
+        "selection_receipt_is_not_a_current_promotion": {"const": true}
+      }
+    },
+    "current_impact": {
+      "type": "object", "additionalProperties": false,
+      "required": ["new_operation_registry_entry", "pack_permission_change", "architecture_identity_change", "live_external_invocation", "authenticated_channel_admission", "production_readiness", "integration_status"],
+      "properties": {
+        "new_operation_registry_entry": {"const": false},
+        "pack_permission_change": {"const": false},
+        "architecture_identity_change": {"const": false},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED"},
+        "authenticated_channel_admission": {"const": "NOT_GRANTED"},
+        "production_readiness": {"const": "NOT_PRODUCTION_READY"},
+        "integration_status": {"const": "NOT_CURRENT_INTEGRATION"}
+      }
+    },
+    "claim_ceiling": {"$ref": "#/$defs/nonblank"}
+  },
+  "$defs": {
+    "nonblank": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

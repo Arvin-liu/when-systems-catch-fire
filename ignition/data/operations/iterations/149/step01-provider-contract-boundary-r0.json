@@ -1,0 +1,86 @@
+{
+  "schema_version": "ignition-149-step01-provider-contract-boundary-r0",
+  "contract_id": "IGNITION_PROVIDER_ADAPTER_BOUNDARY_R0",
+  "task_id": "IGNITION-20260831-149",
+  "status": "MINIMAL_BOUNDARY_ESTABLISHED",
+  "research_scope": "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY",
+  "runtime_interface_status": "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE",
+  "provider_neutral": true,
+  "formal_baseline_sha": "14c2595d796494286caf31378173fd9dd027edcf",
+  "provider_classes": [
+    {
+      "provider_class": "DERIVED_VISUALIZATION_PROVIDER",
+      "role": "Derive a bounded visualization artifact from Ignition-authored canonical data.",
+      "allowed_flow": "IGNITION_CANONICAL_DATA -> TYPED_IR -> VALIDATED_ARTIFACT",
+      "prohibited_flow": "PROVIDER_OUTPUT -> IGNITION_ARCHITECTURE_TRUTH"
+    },
+    {
+      "provider_class": "READ_ONLY_SOURCE_ACQUISITION_PROVIDER",
+      "role": "Acquire read-only source material or source metadata with explicit provenance.",
+      "allowed_flow": "EXPLICIT_RESEARCH_INPUT -> PROVIDER_READ -> PROVENANCE_BOUND_OUTPUT",
+      "prohibited_flow": "PROVIDER_OUTPUT -> EXTERNAL_TRUTH"
+    }
+  ],
+  "required_provider_record_fields": [
+    "provider_id",
+    "provider_class",
+    "upstream_repository",
+    "pinned_revision",
+    "license",
+    "discovery_method",
+    "health_check_method",
+    "accepted_abstract_operations",
+    "input_types",
+    "output_types",
+    "side_effect_class",
+    "network_requirement",
+    "authentication_requirement",
+    "credential_exposure_class",
+    "install_requirement",
+    "current_environment_availability",
+    "admission_status",
+    "trust_boundary",
+    "provenance_requirement",
+    "validator_receipt",
+    "failure_mode",
+    "fallback_semantics",
+    "provider_local_policy_not_inherited"
+  ],
+  "admission_status_vocabulary": [
+    "NOT_ASSESSED",
+    "SPIKE_ONLY",
+    "ADMISSION_CANDIDATE",
+    "NOT_ADMITTED",
+    "BLOCKED"
+  ],
+  "side_effect_class_vocabulary": [
+    "NONE",
+    "DERIVED_ARTIFACT_ONLY",
+    "READ_ONLY_NETWORK",
+    "EXTERNAL_ACTION"
+  ],
+  "authority_invariants": [
+    "EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY",
+    "PROVIDER_CAPABILITY ≠ PERMISSION",
+    "PROVIDER_OUTPUT ≠ EXTERNAL_TRUTH",
+    "PROVIDER_LOCAL_POLICY ≠ IGNITION_GLOBAL_POLICY",
+    "ADAPTER_SPIKE_PASS ≠ CURRENT_CAPABILITY"
+  ],
+  "provider_records": [],
+  "provider_record_policy": {
+    "empty_until_step02_and_step03": true,
+    "no_vendor_runtime_integration": true,
+    "no_authenticated_channel_admission": true,
+    "no_live_external_invocation_change": true,
+    "no_provider_specific_architecture_node": true
+  },
+  "architecture_boundary": {
+    "existing_owner": "Ignition OS / orchestration-governance layer",
+    "existing_adapter_boundary": "External Agent Federation adapter boundary",
+    "new_control_plane_authority": "NONE",
+    "new_architecture_layer": "NONE",
+    "identity_impact": "NONE",
+    "reason": "This is an unpopulated, task-local provider contract boundary; it does not add a control-plane component or truth source."
+  },
+  "claim_ceiling": "Experimental provider-admission research boundary and Current-source gap evidence only. It is not a Current runtime provider interface; no provider availability, integration, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+}
