@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/arch](../../../docs/operations/ignition-operation-playbooks-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7f7ee59cf2dd8519 / Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/arch
-  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
-  - 依赖：—；被引用：—
-- [Expected and empirical risk, high-probability rates, sample/width conditions, and a held-out Poisson illustration provid](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-571c1513fe6f1ddb / Expected and empirical risk, high-probability rates, sample/width conditions, and a held-out Poisson illustration provid
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Experiment / Run Manifest](../../../evidence-program/schemas/run-manifest.schema.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-1b76dd74a3596162 / Experiment / Run Manifest
-  - 来源：`evidence-program/schemas/run-manifest.schema.json`
-  - 依赖：—；被引用：—
 - [Experimental comparison](../../../docs/architecture/esi-experiment-protocol-r0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f5e632c1e81005b8 / Experimental comparison
@@ -2504,3 +2489,18 @@
   - 可搜索名称：NFC-d6603f237ef2dfd6 / M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ 1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须用指数
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D158, D260, D296；被引用：—
+- [M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar\(ΔΦᵢ\)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-29d7f3a627e02ab5 / M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar\(ΔΦᵢ\)。"坏消息成群来"不只预测恶化还放大"折腾有害"——双重打击。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D342；被引用：—
+- [M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个门控面平均代价∝Φ/n随n减小，但总代价守恒。类比：修复桥的总成本取决于损坏程度而非构件数——构件越多每个修复量越少但总量不变。守恒律：复活总代价=拐点处Φ值。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f675e32b00687934 / M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个门控面平均代价∝Φ/n随n减小，但总代价守恒。类比：修复桥的总成本取决于损坏程度而非构件数——构件越多每个修复量越少但总量不变。守恒律：复活总代价=拐点处Φ值。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [M3的D372与D328是同一现象不同表述。统一指标I_concentration = max\(ΔΦᵢ\)/ΣΔΦᵢ·\(1+ln\(n\)\)。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d6987e0351a19507 / M3的D372与D328是同一现象不同表述。统一指标I_concentration = max\(ΔΦᵢ\)/ΣΔΦᵢ·\(1+ln\(n\)\)。I→1完全集中，I→0完全分散。I随p_max/p̄单调递增——降p_max不只降Φ还降低集中性→容斥从
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D328, D372；被引用：—

@@ -4,26 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [\| `../data/collisions/20260711-disobedience-subjectivity.json` \| 机器可读数据（含双 SHA 字段与各发布文件 SHA-256） \|](../../../outputs/collisions/20260711-disobedience-subjectivity/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e62ade69a544faae / \| `../data/collisions/20260711-disobedience-subjectivity.json` \| 机器可读数据（含双 SHA 字段与各发布文件 SHA-256） \|
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/README.md`
-  - 依赖：—；被引用：—
-- [\| `ABSTAIN` \| reviewer 能否裁定？ \| 不强迫正/负结论，等待新证据或不同 scope \|](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f037ff4257f0042d / \| `ABSTAIN` \| reviewer 能否裁定？ \| 不强迫正/负结论，等待新证据或不同 scope \|
-  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
-  - 依赖：—；被引用：—
-- [\| `ADAPT_TO_CURRENT_KERNEL` \| typed action observation 与 validation result \| 重写为通用 `ActionRequest`、`ActionObservation`、`](../../../reports/architecture/task115-runtime-prior-art-adoption-r0.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3e160c339b7709ad / \| `ADAPT_TO_CURRENT_KERNEL` \| typed action observation 与 validation result \| 重写为通用 `ActionRequest`、`ActionObservation`、`
-  - 来源：`reports/architecture/task115-runtime-prior-art-adoption-r0.md`
-  - 依赖：—；被引用：—
-- [\| `ARCHITECTURE.md` \| `NO_CHANGE_WITH_REASON` \| Q24 installs an operation method, not a new architecture or truth layer.](../../../reports/operations/121Q24-current-state-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d55082f675085a1f / \| `ARCHITECTURE.md` \| `NO_CHANGE_WITH_REASON` \| Q24 installs an operation method, not a new architecture or truth layer.
-  - 来源：`reports/operations/121Q24-current-state-reconciliation.md`
-  - 依赖：—；被引用：—
 - [\| `census.jsonl` \| 去重后的资产记录、候选身份、双轴、十门状态和来源证据 \|](../../../docs/foundation/historical-function-census.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-8cbad188cd0a7013 / \| `census.jsonl` \| 去重后的资产记录、候选身份、双轴、十门状态和来源证据 \|
@@ -2502,5 +2482,25 @@
 - [中文：当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时 Φ_before = 1/ln\(μ/Λ_A\) + 1/ln\(μ/Λ_B\) → Φ_after = 1/ln\(μ/Λ_AB\)。合并条件：Λ_A\(μ\)和Λ_B\(μ\)在μ>μ_merge处](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-975185d8ef59f49c / 中文：当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时 Φ_before = 1/ln\(μ/Λ_A\) + 1/ln\(μ/Λ_B\) → Φ_after = 1/ln\(μ/Λ_AB\)。合并条件：Λ_A\(μ\)和Λ_B\(μ\)在μ>μ_merge处
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：收益-风险投影-网结构](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-08584eb73f0c1957 / 中文：收益-风险投影-网结构
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：收益-风险投影-网结构 English: Rule-based English rendering pending human review.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cf6ce1cde9afb87c / 中文：收益-风险投影-网结构 English: Rule-based English rendering pending human review.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-dae030750713b9bf / 中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [中文：智能分流验证倒U型最优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0ad26e6cff381b41 / 中文：智能分流验证倒U型最优
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

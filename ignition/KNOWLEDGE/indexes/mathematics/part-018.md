@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [相关函数：D585 欧亚枢纽函数、D586 北方之路函数、D587 共享-退出权同构函数、D588 对称性-共享协议函数、D589 通道不对称-贸易枢纽函数](../../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ef1ebcad1fb256f6 / 相关函数：D585 欧亚枢纽函数、D586 北方之路函数、D587 共享-退出权同构函数、D588 对称性-共享协议函数、D589 通道不对称-贸易枢纽函数
-  - 来源：`新故事/0001-S1-比刀剑更持久的，是共享观念.md`
-  - 依赖：D585, D586, D587, D588；被引用：—
 - [相变序参量-门槛函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D199 / 相变序参量-门槛函数 / D199
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-e06896efcac27c99 / 已迁移的历史函数来源/0374-D338-阶段2宽度-温度函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D338；被引用：—
+- [已迁移的历史函数来源/0375-D339-僵尸态救援函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8a03e2e51652a5bc / 已迁移的历史函数来源/0375-D339-僵尸态救援函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D339；被引用：—

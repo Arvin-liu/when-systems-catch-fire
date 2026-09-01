@@ -119,8 +119,8 @@
     "foundation": {
       "function_identity_cards": 6041,
       "function_quarantine_or_pending": 4889,
-      "nonfunction_claims": 17865,
-      "nonfunction_quarantine_or_pending": 4997
+      "nonfunction_claims": 17859,
+      "nonfunction_quarantine_or_pending": 4996
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -159,7 +159,7 @@
       "cards": 602,
       "changes": 495,
       "layered_readings": 521,
-      "search_records": 24427
+      "search_records": 24421
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "71bd8e213b0f82d6b1030afe6afbad57d64101d7b551e1ea2a385386e9a34b96"
+      "sha256": "450bd5e50930e1557f553c81903882afb0ac182e6a920d27a191fa8ac476e66c"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "d052cd94feb4604b5c9c7724dbcf1470acb701ea885a4a9836ffefbc5c7193e4"
+      "sha256": "52b8c089ad15d83cf9f6c188b803b2b622dfe7af72fafe5880556d8242c9155e"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",

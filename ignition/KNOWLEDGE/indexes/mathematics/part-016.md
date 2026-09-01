@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-388a1325ef260f86 / 基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）
-  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
-  - 依赖：—；被引用：—
 - [增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。](../../../docs/governance/meta-protocol-reviews/protocols/V3.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-939611815531bbfd / 增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-af096cabfa7eacf1 / 数学表达 / Expression: `F_{T26}\(x\) := 门控面从多到少的级联合并，每次统一减少Φ项数、增大Ω`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T26；被引用：—
+- [数学表达 / Expression: `F_{T28}\(x\) := g=exp\[-\(ln\(μ/M_Planck\)\)²/\(2σ²\)\]，A-B型统一、极值点处量子涨落自然为零`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e3f5d6752c0e0a7a / 数学表达 / Expression: `F_{T28}\(x\) := g=exp\[-\(ln\(μ/M_Planck\)\)²/\(2σ²\)\]，A-B型统一、极值点处量子涨落自然为零`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：T28；被引用：—

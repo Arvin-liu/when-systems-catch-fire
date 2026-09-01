@@ -6,11 +6,6 @@
 
 - [title: "认知规范破缺函数 / cognitive norm-breaking function"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-29EC0136CA46D781 / title: "认知规范破缺函数 / cognitive norm-breaking function" / IMPLICIT-29EC0136CA46D781 / IMPLICIT-8DEFCB279435DB6A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "认知规范破缺函数 / cognitive norm-breaking function"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8DEFCB279435DB6A / title: "认知规范破缺函数 / cognitive norm-breaking function" / IMPLICIT-8DEFCB279435DB6A / IMPLICIT-29EC0136CA46D781
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
@@ -2502,5 +2497,10 @@
 - [Within the source-defined scope, 正反馈饱和后振荡函数 is adjudicated as STATE_TRANSITION: M13的K^k饱和后p_max在稳态附近振荡，振幅∝√\(p_min·p_ss\)/](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D340 / Within the source-defined scope, 正反馈饱和后振荡函数 is adjudicated as STATE_TRANSITION: M13的K^k饱和后p_max在稳态附近振荡，振幅∝√\(p_min·p_ss\)/
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 死亡三重定义函数 is adjudicated as RELATION: 死亡分三个层次：生物学死亡（身体机能终止）→社会学死亡（社会关系中断）→存在论死亡（痕迹完全消失），](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D535 / Within the source-defined scope, 死亡三重定义函数 is adjudicated as RELATION: 死亡分三个层次：生物学死亡（身体机能终止）→社会学死亡（社会关系中断）→存在论死亡（痕迹完全消失），
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

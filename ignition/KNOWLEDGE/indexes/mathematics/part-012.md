@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3ec58646620e18df / 中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D54, D64；被引用：—
 - [中文：E_{Q_0003}=1 iff d*\(O\)=argmin_d\[L\(M_d\|O\)+Omega\(d\)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a1272f1f935027b4 / 中文：E_{Q_0003}=1 iff d*\(O\)=argmin_d\[L\(M_d\|O\)+Omega\(d\)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。
@@ -2502,5 +2497,10 @@
 - [从原文看，熵增门槛碾压函数，Λ_disorder\(t\) = Λ₀ × e^\(σ_entropy × t\)，σ_entropy为熵产率；μ_avail… 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b14404bd96172b59 / 从原文看，熵增门槛碾压函数，Λ_disorder\(t\) = Λ₀ × e^\(σ_entropy × t\)，σ_entropy为熵产率；μ_avail… 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，物理大统一路径，物理大统一推导、电弱理论碰撞等。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-011919b0fa2ebf63 / 从原文看，物理大统一路径，物理大统一推导、电弱理论碰撞等。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

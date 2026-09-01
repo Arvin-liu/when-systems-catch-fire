@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [已迁移的历史函数来源/0375-D339-僵尸态救援函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8a03e2e51652a5bc / 已迁移的历史函数来源/0375-D339-僵尸态救援函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D339；被引用：—
 - [已迁移的历史函数来源/0376-D340-正反馈饱和后振荡函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-994de709c878b46d / 已迁移的历史函数来源/0376-D340-正反馈饱和后振荡函数.md
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-dbd1762ccbfc98c2 / 路径：`已迁移的历史函数来源/0400-D364-实际不可逆判据函数.md`
   - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
   - 依赖：D364；被引用：—
+- [路径：`已迁移的历史函数来源/0459-D423-不可逆体积参数归约函数.md`](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-249ce5e5914f1165 / 路径：`已迁移的历史函数来源/0459-D423-不可逆体积参数归约函数.md`
+  - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
+  - 依赖：D423；被引用：—

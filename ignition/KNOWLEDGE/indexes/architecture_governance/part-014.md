@@ -4,26 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [版本、计数和 live ceiling 以 generated Current Snapshot、\[Current Facts\]\(./architecture/current-facts.md\)](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-edf9bbdfa6d5663a / 版本、计数和 live ceiling 以 generated Current Snapshot、\[Current Facts\]\(./architecture/current-facts.md\)
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [状态**: MAX_ADJUDICATION_COMPLETE_ARCHITECTURE_TRUTH_FREEZE_CANDIDATE](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-14034f9881225cea / 状态**: MAX_ADJUDICATION_COMPLETE_ARCHITECTURE_TRUTH_FREEZE_CANDIDATE
-  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
-  - 依赖：—；被引用：—
-- [状态含义：`SOURCE_REPORTS` 只表示输入笔记或课程这样说；`SUPPORTED_WITH_SCOPE` 表示有独立来源支持，但只到列明范围；`PARTIALLY_SUPPORTED` 表示核心方向有支撑、具体量词或细节不够；`](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2d38dd0ce6860aaf / 状态含义：`SOURCE_REPORTS` 只表示输入笔记或课程这样说；`SUPPORTED_WITH_SCOPE` 表示有独立来源支持，但只到列明范围；`PARTIALLY_SUPPORTED` 表示核心方向有支撑、具体量词或细节不够；`
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [状态标注：黄色协议 — 价值方向通过、推荐修订定义通过、事实度量 pending、不阻塞其他协议；等具体模型、数据或真实应用出现时再验证（不在此重新开启完整审核）。](../../../docs/governance/meta-protocol-reviews/protocols/V2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-579416a63f3b62d2 / 状态标注：黄色协议 — 价值方向通过、推荐修订定义通过、事实度量 pending、不阻塞其他协议；等具体模型、数据或真实应用出现时再验证（不在此重新开启完整审核）。
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/V2.md`
-  - 依赖：—；被引用：—
 - [状态沿可预测线性路径演化。](../../../docs/governance/meta-protocol-reviews/protocols/E1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-5ca406d52eee1a3b / 状态沿可预测线性路径演化。
@@ -2502,5 +2482,25 @@
 - [验证结论：** J⁺=1, J⁻=0 → 自组织在植物智能中成立](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-4410fb00c8c9e369 / 验证结论：** J⁺=1, J⁻=0 → 自组织在植物智能中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：** J⁺=1, J⁻=0 → 自组织在蚁群社会中成立](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-aec1079db7b8360f / 验证结论：** J⁺=1, J⁻=0 → 自组织在蚁群社会中成立
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [验证结论：`σ≈√e` 是最优配置吸引子](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5d50f8fb4776a01c / 验证结论：`σ≈√e` 是最优配置吸引子
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [验证脚本：outputs/audit 由 PRIVATE_PROVENANCE_WITHHELD](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-650c33bd18211985 / 验证脚本：outputs/audit 由 PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
+  - 依赖：—；被引用：—
+- [验证过程：** ChatGPT的参数配置达到纳什均衡，单方面改变参数不会提高性能。每个神经元根据输入信号调整激活状态，最终达到纳什均衡，单个神经元单方面改变参数不会提高性能。](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-84c08b250b1eaa5f / 验证过程：** ChatGPT的参数配置达到纳什均衡，单方面改变参数不会提高性能。每个神经元根据输入信号调整激活状态，最终达到纳什均衡，单个神经元单方面改变参数不会提高性能。
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

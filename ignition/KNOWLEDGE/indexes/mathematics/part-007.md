@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = \(bp-q\)/b 映射： - f* ↔ ε信号最优流速 v*](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a46d9d800ad5ba5a / Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = \(bp-q\)/b 映射： - f* ↔ ε信号最优流速 v*
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D53；被引用：—
 - [Object D538 defines a optimization_problem within the point-fire framework. Core: 中文：潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-8e61a3f281a8e73f / Object D538 defines a optimization_problem within the point-fire framework. Core: 中文：潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\)
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d63e14f178f29edb / This does not erase the default-interpreter observation retained in the residual ledger or rewrite the executor inventor
   - 来源：`reports/operations/ignition-134-step09-sympy-environment-contract.md`
+  - 依赖：—；被引用：—
+- [This formal result records task identity and lifecycle outcome only. It does](../../../agent-results/IGNITION-20260827-142-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a22282ccdb7fa53f / This formal result records task identity and lifecycle outcome only. It does
+  - 来源：`agent-results/IGNITION-20260827-142-result.md`
   - 依赖：—；被引用：—

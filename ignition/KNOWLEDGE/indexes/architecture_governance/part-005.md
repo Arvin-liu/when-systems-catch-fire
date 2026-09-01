@@ -4,16 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [def success\(self\) -> bool:](../../../agent_federation/live_task137.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CE3EF52547B95860 / def success\(self\) -> bool: / IMPLICIT-CE3EF52547B95860 / IMPLICIT-48041433C8C313DA
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [def successes\(self\) -> list:](../../../function-os-candidate/v0.2/function_os/n6_execution_trace.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-AB6CF41798386FAA / def successes\(self\) -> list: / IMPLICIT-AB6CF41798386FAA
-  - 来源：`function-os-candidate/v0.2/function_os/n6_execution_trace.py`
-  - 依赖：—；被引用：—
 - [def suggest\(self, validation_result: dict, spec: dict\) -> list:](../../../function-os-candidate/v0.2/function_os/n7_validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-0AA55E08FF6563CE / def suggest\(self, validation_result: dict, spec: dict\) -> list: / IMPLICIT-0AA55E08FF6563CE
@@ -1834,11 +1824,6 @@
   - 可搜索名称：NFC-5fa5c91ca8b57a3a / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Historical Task125 rem
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
-- [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Provider observations](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b3c5c7948b976bda / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Provider observations
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
 - [epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Smoke-test outputs, cl](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a8bc431a8e6cc778 / epistemic_state: `CURRENT_WITH_OPEN_OBLIGATIONS` and `EPISTEMICALLY_ACCEPTED=0` remain unchanged. Smoke-test outputs, cl
@@ -2503,4 +2488,19 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-29771f3b5a47f848 / Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/arch
   - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
+- [Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/arch](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7f7ee59cf2dd8519 / Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/arch
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
+- [Expected and empirical risk, high-probability rates, sample/width conditions, and a held-out Poisson illustration provid](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-571c1513fe6f1ddb / Expected and empirical risk, high-probability rates, sample/width conditions, and a held-out Poisson illustration provid
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Experiment / Run Manifest](../../../evidence-program/schemas/run-manifest.schema.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-1b76dd74a3596162 / Experiment / Run Manifest
+  - 来源：`evidence-program/schemas/run-manifest.schema.json`
   - 依赖：—；被引用：—

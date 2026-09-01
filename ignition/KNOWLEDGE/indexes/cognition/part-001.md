@@ -2034,11 +2034,6 @@
   - 可搜索名称：NFC-b4b563e12a5e62bd / delta: closes the bounded Agent Platform R2 night-shift candidate across Kernel/Runtime, Pack Registry/Bus, operational
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
-- [delta: Task149 records bounded, provider-neutral Archify and Agent Reach adapter-spike evidence, typed provenance, valid](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b69088986bec56f3 / delta: Task149 records bounded, provider-neutral Archify and Agent Reach adapter-spike evidence, typed provenance, valid
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
 - [delta: 在 R0 typed loop 之上增加真实本地文件/命令行动层、workspace path/symlink/special-file/allowlist 边界、execution packet/source-plan di](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7472f4fef793f23b / delta: 在 R0 typed loop 之上增加真实本地文件/命令行动层、workspace path/symlink/special-file/allowlist 边界、execution packet/source-plan di
@@ -2502,5 +2497,10 @@
 - [if any\(_path_overlap\(resolved, item\) for item in protected\):](../../../agent_federation/live_transport.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e8a3782274bb6e7d / if any\(_path_overlap\(resolved, item\) for item in protected\):
+  - 来源：`agent_federation/live_transport.py`
+  - 依赖：—；被引用：—
+- [if any\(_path_overlap\(resolved, root\) for root in self.protected_roots\):](../../../agent_federation/live_transport.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-57aafc0fa05dc486 / if any\(_path_overlap\(resolved, root\) for root in self.protected_roots\):
   - 来源：`agent_federation/live_transport.py`
   - 依赖：—；被引用：—

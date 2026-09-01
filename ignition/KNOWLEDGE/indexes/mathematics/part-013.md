@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [从原文看，物理大统一路径，物理大统一推导、电弱理论碰撞等。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-011919b0fa2ebf63 / 从原文看，物理大统一路径，物理大统一推导、电弱理论碰撞等。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
 - [从原文看，犹豫域双向压缩，遮蔽、退出权信号、退出成本、姿态的平衡。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d69173463542029b / 从原文看，犹豫域双向压缩，遮蔽、退出权信号、退出成本、姿态的平衡。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
@@ -2502,5 +2497,10 @@
 - [从这条案例看，中文：案例说明：犹豫域维度函数 English: Rule-based English rendering pending human r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-39dd12d40caf49aa / 从这条案例看，中文：案例说明：犹豫域维度函数 English: Rule-based English rendering pending human r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：犹豫域退化函数 English: Rule-based English rendering pending human r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a2591f9f8cc851a7 / 从这条案例看，中文：案例说明：犹豫域退化函数 English: Rule-based English rendering pending human r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
