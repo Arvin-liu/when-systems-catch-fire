@@ -18,7 +18,7 @@ ARTIFACT_PATH = ROOT / "data/operations/iterations/149/provider-selection-author
 SCHEMA_PATH = ROOT / "schemas/operations/provider-selection-authority-r0.schema.json"
 
 EXPECTED_BASELINE = "c9c385dc713e866fbc8b61823a893a09e3f9f71b"
-EXPECTED_CONTRACT_SHA = "97ba7694b5a1e6e06c28cc470da49c860a2c29f4f0713801db4c6016ace8421a"
+EXPECTED_CONTRACT_SHA = "9abb57273e34f98271394099a6ecefa250def26992e1f31d83b8824857ca4649"
 EXPECTED_KEYS = {
     "explicit_user_provider",
     "current_capability_and_admission",
@@ -30,6 +30,8 @@ EXPECTED_KEYS = {
     "provenance_and_validation",
     "fallback_allowed",
 }
+EXPECTED_RESEARCH_SCOPE = "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY"
+EXPECTED_RUNTIME_INTERFACE_STATUS = "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE"
 
 
 def load_json(path: Path) -> Any:
@@ -45,6 +47,10 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("selection policy must bind the exact Contract R0 artifact")
     if document.get("owner") != "IGNITION":
         errors.append("Ignition must own provider selection")
+    if document.get("research_scope") != EXPECTED_RESEARCH_SCOPE:
+        errors.append("selection policy must remain experimental provider-admission research only")
+    if document.get("runtime_interface_status") != EXPECTED_RUNTIME_INTERFACE_STATUS:
+        errors.append("selection policy must not be treated as a Current runtime provider interface")
     keys = {entry.get("key") for entry in document.get("selection_inputs", [])}
     if keys != EXPECTED_KEYS:
         errors.append("all nine required selection inputs must remain present")

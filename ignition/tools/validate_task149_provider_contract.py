@@ -20,6 +20,8 @@ SCHEMA_PATH = ROOT / "schemas/operations/provider-adapter-contract-r0.schema.jso
 EXPECTED_BASELINE = "2e563b904cdf1ad57949f649a93cfec0926094ca"
 EXPECTED_FREEZE_SHA = "956fb9d77667cec8c346b19264fb7b76cd1ddaa911a661efc311c02fd8ff2ecf"
 EXPECTED_CLASSES = {"DERIVED_VISUALIZATION_PROVIDER", "READ_ONLY_SOURCE_ACQUISITION_PROVIDER"}
+EXPECTED_RESEARCH_SCOPE = "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY"
+EXPECTED_RUNTIME_INTERFACE_STATUS = "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE"
 EXPECTED_INVARIANTS = [
     "EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY",
     "PROVIDER_CAPABILITY ≠ PERMISSION",
@@ -44,6 +46,10 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("contract must bind the exact Step02 freeze artifact")
     if document.get("provider_neutral") is not True:
         errors.append("provider-neutral marker must remain true")
+    if document.get("research_scope") != EXPECTED_RESEARCH_SCOPE:
+        errors.append("contract must remain explicitly experimental provider-admission research only")
+    if document.get("runtime_interface_status") != EXPECTED_RUNTIME_INTERFACE_STATUS:
+        errors.append("contract must not be treated as a Current runtime provider interface")
     classes = {entry.get("provider_class") for entry in document.get("provider_classes", [])}
     if classes != EXPECTED_CLASSES:
         errors.append("both required provider classes must remain present")

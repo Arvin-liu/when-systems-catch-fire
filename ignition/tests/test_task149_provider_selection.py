@@ -17,6 +17,10 @@ class Task149ProviderSelectionTests(unittest.TestCase):
         self.assertFalse(self.document["provider_local_policy_test"]["global_inheritance"])
         self.assertEqual(self.document["provider_local_policy_test"]["decision"], "REJECTED_PROVIDER_LOCAL_POLICY")
 
+    def test_selection_authority_is_research_only_not_current_runtime_interface(self):
+        self.assertEqual(self.document["research_scope"], "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY")
+        self.assertEqual(self.document["runtime_interface_status"], "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE")
+
     def test_selection_does_not_hardcode_total_order(self):
         self.assertFalse(self.document["selection_procedure"]["total_order_hardcoded_by_task"])
         self.assertTrue(all(item["ordering"] == "CONTEXT_DEPENDENT" for item in self.document["selection_inputs"]))

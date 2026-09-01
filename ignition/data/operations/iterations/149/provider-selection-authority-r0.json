@@ -3,10 +3,12 @@
   "policy_id": "IGNITION_PROVIDER_SELECTION_AUTHORITY_R0",
   "task_id": "IGNITION-20260831-149",
   "status": "SELECTION_AUTHORITY_ESTABLISHED",
+  "research_scope": "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY",
+  "runtime_interface_status": "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE",
   "formal_baseline_sha": "c9c385dc713e866fbc8b61823a893a09e3f9f71b",
   "contract_artifact": {
     "path": "ignition/data/operations/iterations/149/provider-adapter-contract-r0.json",
-    "sha256": "97ba7694b5a1e6e06c28cc470da49c860a2c29f4f0713801db4c6016ace8421a"
+    "sha256": "9abb57273e34f98271394099a6ecefa250def26992e1f31d83b8824857ca4649"
   },
   "authority_statement": "Ignition selects provider. Provider does not select Ignition behavior.",
   "owner": "IGNITION",
@@ -157,5 +159,5 @@
     "production_readiness": "NOT_PRODUCTION_READY",
     "integration_status": "NOT_CURRENT_INTEGRATION"
   },
-  "claim_ceiling": "Ignition-owned provider-selection authority and bounded candidate-selection rules only. This policy does not prove provider quality, Current integration, production readiness, authenticated-channel admission, external truth, Owner acceptance or live external invocation."
+  "claim_ceiling": "Experimental provider-admission research policy only: Ignition-owned provider-selection authority and bounded candidate-selection rules. This policy is not a Current runtime provider interface and does not prove provider quality, Current integration, production readiness, authenticated-channel admission, external truth, Owner acceptance or live external invocation."
 }

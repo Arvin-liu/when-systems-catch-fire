@@ -91,7 +91,7 @@
   },
   "evidence_refs": {
     "upstream_freeze_sha256": "956fb9d77667cec8c346b19264fb7b76cd1ddaa911a661efc311c02fd8ff2ecf",
-    "provider_contract_sha256": "97ba7694b5a1e6e06c28cc470da49c860a2c29f4f0713801db4c6016ace8421a",
+    "provider_contract_sha256": "9abb57273e34f98271394099a6ecefa250def26992e1f31d83b8824857ca4649",
     "safety_isolation_sha256": "85ec30ace4d40d7a763663d6275c7d4a04b3af99dc3104c618e4ef14a14911c5",
     "auth_fail_closed_sha256": "a99027b69c0174761bf2ba12cedc02e5f5768cf893fd489ef5922c688dc3c356",
     "authority_regression_sha256": "788f212157c8fc0e6625213c571899acf22d1fd7776a37c4885bd2935f7f00ed"

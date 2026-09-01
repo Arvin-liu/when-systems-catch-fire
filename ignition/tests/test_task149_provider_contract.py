@@ -22,6 +22,10 @@ class Task149ProviderContractTests(unittest.TestCase):
         for record in self.document["provider_records"]:
             self.assertFalse(record["provider_local_policy_not_inherited"]["inherited"])
 
+    def test_contract_is_research_only_not_current_runtime_interface(self):
+        self.assertEqual(self.document["research_scope"], "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY")
+        self.assertEqual(self.document["runtime_interface_status"], "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE")
+
     def test_future_provider_id_is_not_the_contract(self):
         mutated = copy.deepcopy(self.document)
         mutated["provider_records"][0]["provider_id"] = "future-provider"

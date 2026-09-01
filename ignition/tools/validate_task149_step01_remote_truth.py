@@ -29,6 +29,8 @@ BOUNDARIES = [
     "PROVIDER_LOCAL_POLICY ≠ IGNITION_GLOBAL_POLICY",
     "ADAPTER_SPIKE_PASS ≠ CURRENT_CAPABILITY",
 ]
+EXPECTED_RESEARCH_SCOPE = "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY"
+EXPECTED_RUNTIME_INTERFACE_STATUS = "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE"
 
 
 def load_json(path: Path) -> Any:
@@ -52,6 +54,10 @@ def validate(audit: dict[str, Any] | None = None, contract: dict[str, Any] | Non
         errors.append("Step01 must be bound to refs/heads/main")
     if contract.get("formal_baseline_sha") != EXPECTED_BASELINE:
         errors.append("minimal provider contract must use the Step01 formal baseline")
+    if contract.get("research_scope") != EXPECTED_RESEARCH_SCOPE:
+        errors.append("minimal provider boundary must remain experimental provider-admission research only")
+    if contract.get("runtime_interface_status") != EXPECTED_RUNTIME_INTERFACE_STATUS:
+        errors.append("minimal provider boundary must not be treated as a Current runtime provider interface")
     if audit.get("authority_boundaries") != BOUNDARIES or contract.get("authority_invariants") != BOUNDARIES:
         errors.append("provider authority boundaries are incomplete or reordered")
     if contract.get("provider_records") != []:

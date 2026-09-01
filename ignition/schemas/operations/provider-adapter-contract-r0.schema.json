@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/ignition/operations/provider-adapter-contract-r0.schema.json",
-  "title": "Ignition provider-neutral adapter contract R0",
+  "title": "Task149 experimental provider-admission research contract R0 (not a Current runtime provider interface)",
+  "description": "A provider-neutral research/admission contract for recorded Task149 evidence. It is not an executable or Current runtime provider interface.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -9,6 +10,8 @@
     "contract_id",
     "task_id",
     "status",
+    "research_scope",
+    "runtime_interface_status",
     "provider_neutral",
     "formal_baseline_sha",
     "upstream_freeze",
@@ -26,6 +29,8 @@
     "contract_id": {"const": "IGNITION_PROVIDER_ADAPTER_CONTRACT_R0"},
     "task_id": {"const": "IGNITION-20260831-149"},
     "status": {"const": "SPIKE_CONTRACT_ESTABLISHED"},
+    "research_scope": {"const": "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY"},
+    "runtime_interface_status": {"const": "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE"},
     "provider_neutral": {"const": true},
     "formal_baseline_sha": {"$ref": "#/$defs/sha"},
     "upstream_freeze": {

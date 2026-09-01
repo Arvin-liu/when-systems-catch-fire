@@ -3,6 +3,8 @@
   "contract_id": "IGNITION_PROVIDER_ADAPTER_BOUNDARY_R0",
   "task_id": "IGNITION-20260831-149",
   "status": "MINIMAL_BOUNDARY_ESTABLISHED",
+  "research_scope": "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY",
+  "runtime_interface_status": "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE",
   "provider_neutral": true,
   "formal_baseline_sha": "14c2595d796494286caf31378173fd9dd027edcf",
   "provider_classes": [
@@ -80,5 +82,5 @@
     "identity_impact": "NONE",
     "reason": "This is an unpopulated, task-local provider contract boundary; it does not add a control-plane component or truth source."
   },
-  "claim_ceiling": "Task-local provider-neutral contract boundary and Current-source gap evidence only; no provider availability, integration, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
+  "claim_ceiling": "Experimental provider-admission research boundary and Current-source gap evidence only. It is not a Current runtime provider interface; no provider availability, integration, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred."
 }

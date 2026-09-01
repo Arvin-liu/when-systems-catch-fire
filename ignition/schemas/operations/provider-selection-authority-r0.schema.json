@@ -1,15 +1,18 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/ignition/operations/provider-selection-authority-r0.schema.json",
-  "title": "Ignition provider selection authority R0",
+  "title": "Task149 experimental provider-admission research selection authority R0 (not a Current runtime provider interface)",
+  "description": "An Ignition-owned research policy for evaluating provider candidates. It is not an executable or Current runtime provider interface.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "policy_id", "task_id", "status", "formal_baseline_sha", "contract_artifact", "authority_statement", "owner", "provider_neutral", "selection_inputs", "precedence_constraints", "selection_procedure", "provider_local_policy_test", "candidate_decisions", "output_contract", "current_impact", "claim_ceiling"],
+  "required": ["schema_version", "policy_id", "task_id", "status", "research_scope", "runtime_interface_status", "formal_baseline_sha", "contract_artifact", "authority_statement", "owner", "provider_neutral", "selection_inputs", "precedence_constraints", "selection_procedure", "provider_local_policy_test", "candidate_decisions", "output_contract", "current_impact", "claim_ceiling"],
   "properties": {
     "schema_version": {"const": "ignition-149-step04-provider-selection-authority-r0"},
     "policy_id": {"const": "IGNITION_PROVIDER_SELECTION_AUTHORITY_R0"},
     "task_id": {"const": "IGNITION-20260831-149"},
     "status": {"const": "SELECTION_AUTHORITY_ESTABLISHED"},
+    "research_scope": {"const": "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY"},
+    "runtime_interface_status": {"const": "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE"},
     "formal_baseline_sha": {"$ref": "#/$defs/sha"},
     "contract_artifact": {
       "type": "object", "additionalProperties": false,

@@ -3,6 +3,8 @@
   "contract_id": "IGNITION_PROVIDER_ADAPTER_CONTRACT_R0",
   "task_id": "IGNITION-20260831-149",
   "status": "SPIKE_CONTRACT_ESTABLISHED",
+  "research_scope": "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY",
+  "runtime_interface_status": "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE",
   "provider_neutral": true,
   "formal_baseline_sha": "2e563b904cdf1ad57949f649a93cfec0926094ca",
   "upstream_freeze": {
@@ -352,5 +354,5 @@
     "current_integration": "NOT_CURRENT_INTEGRATION",
     "production_readiness": "NOT_PRODUCTION_READY"
   },
-  "claim_ceiling": "Provider-neutral Task149 contract fields and bounded candidate observations only: the contract preserves Ignition ownership of operation selection, authority, permissions, truth boundary and provenance. It does not establish a Current provider capability, authenticated channel admission, production readiness, external truth, Owner acceptance or live external invocation."
+  "claim_ceiling": "Experimental provider-admission research contract only: bounded Task149 contract fields and candidate observations. It preserves Ignition ownership of operation selection, authority, permissions, truth boundary and provenance; it is not a Current runtime provider interface and does not establish a Current provider capability, authenticated channel admission, production readiness, external truth, Owner acceptance or live external invocation."
 }

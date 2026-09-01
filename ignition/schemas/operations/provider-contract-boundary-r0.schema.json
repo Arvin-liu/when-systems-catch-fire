@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://example.invalid/ignition/operations/provider-contract-boundary-r0.schema.json",
-  "title": "Ignition Task149 minimal provider-neutral contract boundary",
+  "title": "Task149 experimental provider-admission research boundary R0 (not a Current runtime provider interface)",
+  "description": "The minimal provider-neutral research boundary for Task149 evidence. It is not an executable or Current runtime provider interface.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -9,6 +10,8 @@
     "contract_id",
     "task_id",
     "status",
+    "research_scope",
+    "runtime_interface_status",
     "provider_neutral",
     "formal_baseline_sha",
     "provider_classes",
@@ -26,6 +29,8 @@
     "contract_id": {"const": "IGNITION_PROVIDER_ADAPTER_BOUNDARY_R0"},
     "task_id": {"const": "IGNITION-20260831-149"},
     "status": {"const": "MINIMAL_BOUNDARY_ESTABLISHED"},
+    "research_scope": {"const": "EXPERIMENTAL_PROVIDER_ADMISSION_RESEARCH_ONLY"},
+    "runtime_interface_status": {"const": "NOT_A_CURRENT_RUNTIME_PROVIDER_INTERFACE"},
     "provider_neutral": {"const": true},
     "formal_baseline_sha": {"$ref": "#/$defs/sha"},
     "provider_classes": {
