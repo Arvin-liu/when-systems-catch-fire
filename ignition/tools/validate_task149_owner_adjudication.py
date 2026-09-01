@@ -28,6 +28,7 @@ EXPECTED_HEAD = "04cba7fe60ac73a13116b5b2acec5251c03cb308"
 EXPECTED_CONTRACT_SHA = "9abb57273e34f98271394099a6ecefa250def26992e1f31d83b8824857ca4649"
 EXPECTED_FINAL_REPORT_SHA = "921b9c53068825d0e212e1c522ec89a0bd74a44e2f7327e573cc7347439ee0ff"
 EXPECTED_HUMAN_REPORT_SHA = "d22fbb9ae30003ac68a15f5a83e6b0bfa082411a3cc37296fe9965eff9f86bae"
+EXPECTED_KNOWLEDGE_SEARCH_RECORDS = 24422
 EXPIRED_EXCEPTION = "IGNITION-149-PROVIDER-ADAPTER-SPIKE"
 REPLACEMENT_EXCEPTION = "HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY"
 TASK149_NONFUNCTION_IDS = {
@@ -88,7 +89,7 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("Current facts no longer identify Task148")
     if facts.get("facts", {}).get("foundation", {}).get("nonfunction_claims") != 17859:
         errors.append("Current facts nonfunction count drifted")
-    if facts.get("facts", {}).get("knowledge_experience", {}).get("search_records") != 24421:
+    if facts.get("facts", {}).get("knowledge_experience", {}).get("search_records") != EXPECTED_KNOWLEDGE_SEARCH_RECORDS:
         errors.append("Current facts Knowledge search count drifted")
 
     registry = load_json(REGISTRY_PATH)

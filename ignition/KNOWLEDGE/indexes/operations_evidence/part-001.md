@@ -1444,6 +1444,11 @@
   - 可搜索名称：IMPLICIT-8DB79D8289632A85 / ## Concurrent Operational Memory R2 / IMPLICIT-8DB79D8289632A85
   - 来源：`docs/architecture/os-control-plane-r2.md`
   - 依赖：—；被引用：—
+- [## Conditional lifecycle gate](../../../data/operations/iterations/149/Task149%20Owner%20Adjudication%20R1.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2BF09359AEBDB5CA / ## Conditional lifecycle gate / IMPLICIT-2BF09359AEBDB5CA
+  - 来源：`data/operations/iterations/149/Task149 Owner Adjudication R1.md`
+  - 依赖：—；被引用：—
 - [## Driver Console R3 integration](../../../docs/architecture/os-steering-intent-r1.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6EDB5ED2DD72EFCA / ## Driver Console R3 integration / IMPLICIT-6EDB5ED2DD72EFCA
@@ -2497,10 +2502,5 @@
 - [### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\]\(docs/zh/cases/items/C-0551.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-517D9EFA3F23FFE3 / ### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\]\(docs/zh/cases/items/C-0551.md\) / IMPLICIT-517D9EFA3F23FFE3
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\]\(docs/zh/cases/items/C-0555.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0521E651C0E10664 / ### \[#555｜费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0\]\(docs/zh/cases/items/C-0555.md\) / IMPLICIT-0521E651C0E10664
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

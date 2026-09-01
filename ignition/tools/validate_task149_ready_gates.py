@@ -56,6 +56,7 @@ TASK149_IDS = {
     "NFC-539e81e21c559678",
     "NFC-0e22bc9d70db50fa",
 }
+EXPECTED_KNOWLEDGE_SEARCH_RECORDS = 24422
 INVARIANTS = {
     "EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY",
     "PROVIDER_CAPABILITY ≠ PERMISSION",
@@ -234,7 +235,7 @@ def gate_nonfunction_materiality(errors: list[str]) -> None:
     if ids & TASK149_IDS:
         errors.append("nonfunction_claim_materiality_clean: Task149 operational IDs remain canonical")
     knowledge = load_json(ROOT / "data/governance/knowledge-experience/manifest.json")
-    if knowledge.get("counts", {}).get("search_records") != 24421:
+    if knowledge.get("counts", {}).get("search_records") != EXPECTED_KNOWLEDGE_SEARCH_RECORDS:
         errors.append("nonfunction_claim_materiality_clean: Knowledge search count drifted")
     owner = load_json(OWNER_RECORD_PATH)
     if owner.get("retained_evidence_and_residuals", {}).get("archify", {}).get("validation") != "PASS 9/9":
