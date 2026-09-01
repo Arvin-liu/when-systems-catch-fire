@@ -448,6 +448,7 @@
 {"first_line":9,"last_line":613,"mention_count":2,"path":"data/foundation/work-queues/080-semantic-review-queue.jsonl","role":"REFERENCE","stable_id":"A4"}
 {"first_line":27,"last_line":27,"mention_count":1,"path":"data/math-foundation/function-provenance-ledger.csv","role":"REFERENCE","stable_id":"A4"}
 {"first_line":26,"last_line":26,"mention_count":1,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"A4"}
+{"first_line":28,"last_line":28,"mention_count":1,"path":"data/operations/iterations/150/step11-capability-registry-candidate-gate.json","role":"REFERENCE","stable_id":"A4"}
 {"first_line":29,"last_line":29,"mention_count":1,"path":"docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md","role":"REFERENCE","stable_id":"A4"}
 {"first_line":45,"last_line":108,"mention_count":2,"path":"function-os-candidate/v0.2/benchmark/PREREGISTRATION.md","role":"REFERENCE","stable_id":"A4"}
 {"first_line":29,"last_line":29,"mention_count":1,"path":"outputs/audit/book-validation-case-table-formalization-audit-20260709.md","role":"REFERENCE","stable_id":"A4"}
@@ -1194,6 +1195,7 @@
 {"first_line":32,"last_line":32,"mention_count":1,"path":"FOUNDATION-64-PROPAGATION.jsonl","role":"REFERENCE","stable_id":"A8"}
 {"first_line":18,"last_line":558,"mention_count":12,"path":"analysis/corpus-relation/cluster_source_briefs/C000.md","role":"REFERENCE","stable_id":"A8"}
 {"first_line":3477,"last_line":8585,"mention_count":12,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"REFERENCE","stable_id":"A8"}
+{"first_line":109,"last_line":109,"mention_count":1,"path":"data/agent-federation/build-vs-integrate-policy-r1.json","role":"REFERENCE","stable_id":"A8"}
 {"first_line":54,"last_line":102,"mention_count":4,"path":"data/collisions/20260711-disobedience-subjectivity.json","role":"REFERENCE","stable_id":"A8"}
 {"first_line":22,"last_line":33,"mention_count":4,"path":"data/collisions/20260712-disobedience-audit-056.json","role":"REFERENCE","stable_id":"A8"}
 {"first_line":15,"last_line":15,"mention_count":1,"path":"data/external-research/120-function-paradigm-atlas/120-internal-function-asset-inventory.jsonl","role":"REFERENCE","stable_id":"A8"}
@@ -1222,6 +1224,7 @@
 {"first_line":6,"last_line":615,"mention_count":15,"path":"data/foundation/work-queues/080-semantic-review-queue.jsonl","role":"REFERENCE","stable_id":"A8"}
 {"first_line":31,"last_line":409,"mention_count":2,"path":"data/math-foundation/function-provenance-ledger.csv","role":"REFERENCE","stable_id":"A8"}
 {"first_line":30,"last_line":408,"mention_count":2,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"A8"}
+{"first_line":16,"last_line":16,"mention_count":1,"path":"data/operations/iterations/150/task150-draft-pr-body.md","role":"REFERENCE","stable_id":"A8"}
 {"first_line":23,"last_line":53,"mention_count":2,"path":"outputs/audit/cross-domain-candidate-function-review-20260708.md","role":"REFERENCE","stable_id":"A8"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md","role":"REFERENCE","stable_id":"A8"}
 {"first_line":18,"last_line":66,"mention_count":4,"path":"outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md","role":"REFERENCE","stable_id":"A8"}
