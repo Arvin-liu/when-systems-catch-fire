@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step03-renderer-independence-r1.schema.json",
+  "title": "Task150 Step03 renderer independence and provenance envelope",
+  "description": "Ignition-owned, provider-neutral boundary between authored canonical topology and a derived visualization artifact.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "record_type",
+    "status",
+    "formal_previous_commit",
+    "canonical_source",
+    "adapter_contract",
+    "provenance_manifest",
+    "authority_invariants",
+    "boundary",
+    "validation",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step03-renderer-independence-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "03"},
+    "record_type": {"const": "RENDERER_PROVIDER_INDEPENDENCE_CONTRACT"},
+    "status": {"const": "RENDERER_PROVIDER_INDEPENDENCE_ESTABLISHED"},
+    "formal_previous_commit": {"const": "037eaad775909cb85928ecff457e421aa1f8d041"},
+    "canonical_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "role", "sha256", "source_revision", "source_is_authored"],
+      "properties": {
+        "path": {"const": "ignition/data/architecture/overall-architecture.json"},
+        "role": {"const": "CURRENT_CANONICAL_ARCHITECTURE_SOURCE"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_revision": {"const": "d7372c27abe456b5b8c058675630d8038f91b448"},
+        "source_is_authored": {"const": true}
+      }
+    },
+    "adapter_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operation_id",
+        "ownership",
+        "allowed_flow",
+        "reverse_flow_forbidden",
+        "repository_scan",
+        "canonical_write",
+        "provider_binding",
+        "provider_allowed_fields",
+        "provider_forbidden_authorities",
+        "topology_reconciliation"
+      ],
+      "properties": {
+        "operation_id": {"const": "visualization.render_derived_system_view"},
+        "ownership": {"const": "IGNITION"},
+        "allowed_flow": {"const": "CANONICAL_SOURCE -> PROVIDER_ADAPTER -> DERIVED_ARTIFACT"},
+        "reverse_flow_forbidden": {"const": true},
+        "repository_scan": {"const": false},
+        "canonical_write": {"const": false},
+        "provider_binding": {"const": "PROVIDER_NEUTRAL_SLOT_ARCHIFY_OR_FUTURE_COMPATIBLE_PROVIDER"},
+        "provider_allowed_fields": {"const": ["geometry", "route", "theme", "layout"]},
+        "provider_forbidden_authorities": {
+          "const": [
+            "component_addition",
+            "component_deletion",
+            "semantic_relationship_change",
+            "architecture_truth",
+            "runtime_behavior",
+            "impact",
+            "risk",
+            "correctness"
+          ]
+        },
+        "topology_reconciliation": {"const": "EXACT_NODE_ID_SET_AND_EDGE_ENDPOINT_RELATION_MATCH_REQUIRED"}
+      }
+    },
+    "provenance_manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_path",
+        "source_revision",
+        "digest_algorithm",
+        "digest_formula",
+        "node_records",
+        "edge_records",
+        "missing_field_action",
+        "record_order"
+      ],
+      "properties": {
+        "source_path": {"const": "ignition/data/architecture/overall-architecture.json"},
+        "source_revision": {"const": "d7372c27abe456b5b8c058675630d8038f91b448"},
+        "digest_algorithm": {"const": "SHA-256"},
+        "digest_formula": {"const": "SHA256(source_path|kind|canonical_or_source_id|source_revision|canonical_source_sha256)"},
+        "node_records": {"type": "array", "minItems": 24, "maxItems": 24, "uniqueItems": true, "items": {"$ref": "#/$defs/provenanceRecord"}},
+        "edge_records": {"type": "array", "minItems": 24, "maxItems": 24, "uniqueItems": true, "items": {"$ref": "#/$defs/provenanceRecord"}},
+        "missing_field_action": {"const": "REJECT_AS_UNVALIDATED"},
+        "record_order": {"const": "CANONICAL_SOURCE_ORDER"
+        }
+      }
+    },
+    "authority_invariants": {
+      "const": [
+        "EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY",
+        "PROVIDER_CAPABILITY ≠ PERMISSION",
+        "PROVIDER_OUTPUT ≠ EXTERNAL_TRUTH",
+        "PROVIDER_LOCAL_POLICY ≠ IGNITION_GLOBAL_POLICY",
+        "ADAPTER_SPIKE_PASS ≠ CURRENT_CAPABILITY"
+      ]
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical_source_is_authority",
+        "derived_artifact_can_update_canonical_source",
+        "provider_can_add_topology",
+        "provider_can_delete_topology",
+        "provider_can_change_semantic_relationships",
+        "provider_can_decide_geometry_route_theme_layout",
+        "provider_can_decide_architecture_truth",
+        "provider_can_decide_runtime_behavior",
+        "provider_can_decide_impact_risk_correctness",
+        "provider_output_is_external_truth",
+        "current_integration",
+        "authenticated_channel_admission",
+        "live_external_invocation"
+      ],
+      "properties": {
+        "canonical_source_is_authority": {"const": true},
+        "derived_artifact_can_update_canonical_source": {"const": false},
+        "provider_can_add_topology": {"const": false},
+        "provider_can_delete_topology": {"const": false},
+        "provider_can_change_semantic_relationships": {"const": false},
+        "provider_can_decide_geometry_route_theme_layout": {"const": true},
+        "provider_can_decide_architecture_truth": {"const": false},
+        "provider_can_decide_runtime_behavior": {"const": false},
+        "provider_can_decide_impact_risk_correctness": {"const": false},
+        "provider_output_is_external_truth": {"const": false},
+        "current_integration": {"const": "NOT_CURRENT_INTEGRATION"},
+        "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_CHANNEL_ADMISSION"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema_path", "validator_path", "test_path", "checks"],
+      "properties": {
+        "schema_path": {"const": "ignition/schemas/operations/task150-step03-renderer-independence-r1.schema.json"},
+        "validator_path": {"const": "ignition/tools/validate_task150_step03_renderer_independence.py"},
+        "test_path": {"const": "ignition/tests/test_task150_step03_renderer_independence.py"},
+        "checks": {
+          "const": [
+            "canonical source identity and digest",
+            "exact one-way source-adapter-artifact flow",
+            "provider cannot scan repository or write canonical source",
+            "provider may choose only geometry route theme and layout",
+            "node and edge provenance records are complete and source-bound",
+            "provider topology and semantic drift fail closed",
+            "authority invariants and no-Current boundaries remain exact"
+          ]
+        }
+      }
+    },
+    "claim_ceiling": {
+      "const": "Task150 Step03 establishes an Ignition-owned source-to-derived-artifact boundary and provenance envelope only. It does not establish provider correctness, architecture truth, runtime behavior, impact/risk/correctness, Current integration, production readiness, Owner acceptance, authenticated access or live external completion."
+    }
+  },
+  "$defs": {
+    "provenanceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_path", "canonical_or_source_id", "source_revision", "provenance_digest"],
+      "properties": {
+        "source_path": {"const": "ignition/data/architecture/overall-architecture.json"},
+        "canonical_or_source_id": {"type": "string", "pattern": "^[a-z][a-z0-9-]+$"},
+        "source_revision": {"const": "d7372c27abe456b5b8c058675630d8038f91b448"},
+        "provenance_digest": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}
