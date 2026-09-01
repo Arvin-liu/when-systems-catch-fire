@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -33,11 +34,26 @@ EXPECTED_LABEL = "IGNITION-20260831-149 — External Capability Provider Adapter
 EXPECTED_PROOF_CLAIMS = ["点火已支持 Archify", "点火已拥有全网能力", "点火支持 15 个平台"]
 POST_STEP17_DERIVED_RECONCILIATIONS = {
     "ignition/data/architecture/current-facts.json",
+    "ignition/data/operations/current-snapshot-r1.json",
+    "ignition/AI-START-HERE.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/ARCHITECTURE.md",
+    "ignition/llms.txt",
+    "ignition/docs/project-current-state.md",
     # The Knowledge Experience README is a generated projection of the same
     # source corpus.  Step18's official self-correction and Knowledge
     # Experience rebuild changed its counts/links without changing the
     # Task149 provider decision or adding a Current capability.
     "ignition/KNOWLEDGE/README.md",
+}
+CURRENT_GENERATED_PROJECTION_CHECKS = {
+    "ignition/data/architecture/current-facts.json": ["tools/generate_current_facts.py", "--check"],
+    "ignition/data/operations/current-snapshot-r1.json": ["tools/build_current_snapshot.py", "--check"],
+    "ignition/AI-START-HERE.md": ["tools/current_surface_compiler.py", "--check", "--surface-id", "ai-cold-start"],
+    "ignition/AI-HANDOFF.md": ["tools/current_surface_compiler.py", "--check", "--surface-id", "ai-agents-handoff"],
+    "ignition/ARCHITECTURE.md": ["tools/current_surface_compiler.py", "--check", "--surface-id", "architecture"],
+    "ignition/llms.txt": ["tools/current_surface_compiler.py", "--check", "--surface-id", "machine-entry"],
+    "ignition/docs/project-current-state.md": ["tools/current_surface_compiler.py", "--check", "--surface-id", "project-current-state"],
 }
 POST_STEP17_SOURCE_RECONCILIATIONS = {
     # A4's line-level operational-materiality marker is a later correction to
@@ -183,6 +199,21 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
                 errors.append(f"protected source historical after hash drifted: {path}")
         elif sha256_bytes(current_path.read_bytes()) != item.get("after_sha256"):
             errors.append(f"protected surface after hash drifted: {path}")
+        if path in CURRENT_GENERATED_PROJECTION_CHECKS:
+            result = subprocess.run(
+                [sys.executable, *CURRENT_GENERATED_PROJECTION_CHECKS[path]],
+                cwd=ROOT,
+                env={
+                    **os.environ,
+                    "PYTHONPATH": os.pathsep.join(
+                        [str(ROOT), str(ROOT / "tools"), str(ROOT / "tools" / "foundation")]
+                    ),
+                },
+                text=True,
+                capture_output=True,
+            )
+            if result.returncode != 0:
+                errors.append(f"current generated projection is stale: {path}")
         if item.get("before_sha256") != item.get("after_sha256"):
             errors.append(f"protected surface changed unexpectedly: {path}")
 

@@ -43,6 +43,11 @@ FRONT_DOOR_PATHS = [
     "ignition/AI-HANDOFF.md",
     "ignition/llms.txt",
 ]
+CURRENT_GENERATED_FRONT_DOOR_PATHS = {
+    "ignition/AI-START-HERE.md",
+    "ignition/AI-HANDOFF.md",
+    "ignition/llms.txt",
+}
 TASK149_IDS = {
     "NFC-98a78fb43c197995",
     "NFC-b69088986bec56f3",
@@ -58,6 +63,11 @@ INVARIANTS = {
     "PROVIDER_LOCAL_POLICY ≠ IGNITION_GLOBAL_POLICY",
     "ADAPTER_SPIKE_PASS ≠ CURRENT_CAPABILITY",
 }
+CURRENT_SNAPSHOT_BLOCK = re.compile(
+    r"<!-- CURRENT-SNAPSHOT:BEGIN profile=(?:human|ai|machine) schema=current-snapshot-r1 -->\n"
+    r".*?<!-- CURRENT-SNAPSHOT:END -->\n?",
+    re.DOTALL,
+)
 
 
 def load_json(path: Path) -> Any:
@@ -79,6 +89,16 @@ def strings(value: Any) -> Iterator[str]:
 def command_output(args: list[str]) -> tuple[int, str]:
     result = subprocess.run(args, cwd=REPO_ROOT, text=True, capture_output=True)
     return result.returncode, result.stdout + result.stderr
+
+
+def generated_front_door_change_only(before: str, after: str) -> bool:
+    """Allow only compiler-owned Current Snapshot block refreshes."""
+
+    before_blocks = CURRENT_SNAPSHOT_BLOCK.findall(before)
+    after_blocks = CURRENT_SNAPSHOT_BLOCK.findall(after)
+    if not before_blocks or not after_blocks:
+        return False
+    return CURRENT_SNAPSHOT_BLOCK.sub("", before) == CURRENT_SNAPSHOT_BLOCK.sub("", after)
 
 
 def gate_no_current_provider_activation(errors: list[str]) -> None:
@@ -109,8 +129,29 @@ def gate_no_provider_homepage_claim(errors: list[str]) -> None:
     code, output = command_output(["git", "diff", "--name-only", BASE_SHA, "HEAD", "--", *FRONT_DOOR_PATHS])
     if code != 0:
         errors.append(f"no_provider_homepage_claim: git diff failed: {output.strip()}")
-    if output.strip():
-        errors.append(f"no_provider_homepage_claim: front-door paths changed: {output.strip().replace(chr(10), ', ')}")
+    changed_paths = [path for path in output.splitlines() if path.strip()]
+    unexpected_changes = []
+    for relative in changed_paths:
+        if relative not in CURRENT_GENERATED_FRONT_DOOR_PATHS:
+            unexpected_changes.append(relative)
+            continue
+        path = REPO_ROOT / relative
+        try:
+            before = subprocess.check_output(
+                ["git", "show", f"{BASE_SHA}:{relative}"],
+                cwd=REPO_ROOT,
+                text=True,
+            )
+        except (OSError, subprocess.CalledProcessError):
+            unexpected_changes.append(relative)
+            continue
+        if not path.is_file() or not generated_front_door_change_only(before, path.read_text(encoding="utf-8")):
+            unexpected_changes.append(relative)
+    if unexpected_changes:
+        errors.append(
+            "no_provider_homepage_claim: non-generated front-door paths changed: "
+            + ", ".join(unexpected_changes)
+        )
     forbidden = (
         "点火已支持 Archify",
         "点火已拥有全网能力",
