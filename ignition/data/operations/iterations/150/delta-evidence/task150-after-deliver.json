@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/tmp/ignition150-step07-delta.u3fNbp/after.json",
+  "output": "/tmp/ignition150-step07-delta.u3fNbp/after.html",
+  "specification": {
+    "sha256": "447a4ecf69096c9c388772e906960accb41f03486c24a9efee89cfbc28703bb5",
+    "bytes": 19250
+  },
+  "artifact": {
+    "sha256": "a3f9ce3252b80c8818960c6352c9a767db81969093660c542b3a976edb6bd686",
+    "bytes": 751906
+  },
+  "validation": {
+    "checksPassed": 9,
+    "checkCount": 9,
+    "compositionProfile": "showcase",
+    "compositionStatus": "pass",
+    "errors": 0,
+    "warnings": 0
+  },
+  "evidence": {
+    "verified": true,
+    "repository": "https://github.com/Arvin-liu/when-systems-catch-fire",
+    "revision": "14c2595d796494286caf31378173fd9dd027edcf",
+    "references": 19
+  }
+}
