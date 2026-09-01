@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [class ArtifactRefRecord:](../../../reos_vnext/contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6700b48ab59365b4 / class ArtifactRefRecord:
+  - 来源：`reos_vnext/contract.py`
+  - 依赖：—；被引用：—
+- [class EvidenceRequest:](../../../reos_vnext/contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4af0dc121c7d0dc1 / class EvidenceRequest:
+  - 来源：`reos_vnext/contract.py`
+  - 依赖：—；被引用：—
 - [Classic Problems Benchmark Dataset](../../../data/schemas/classic_problems_benchmark.schema.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-2d5cf18b4ed756c1 / Classic Problems Benchmark Dataset
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-5DA964F908072D5A / def _unsigned_dict\(self\) -> dict\[str, Any\]: / IMPLICIT-5DA964F908072D5A / IMPLICIT-B3260688335BF800
   - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def _unsigned_dict\(self\) -> dict\[str, Any\]:](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-B3260688335BF800 / def _unsigned_dict\(self\) -> dict\[str, Any\]: / IMPLICIT-B3260688335BF800 / IMPLICIT-5DA964F908072D5A
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def _unsigned_dict\(self\) -> dict\[str, Any\]:](../../../agent_federation/live_validation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-EF47DB1C90FED315 / def _unsigned_dict\(self\) -> dict\[str, Any\]: / IMPLICIT-EF47DB1C90FED315 / IMPLICIT-5DA964F908072D5A
-  - 来源：`agent_federation/live_validation.py`
   - 依赖：—；被引用：—

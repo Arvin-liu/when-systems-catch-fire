@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [This formal result records task identity and lifecycle outcome only. It does](../../../agent-results/IGNITION-20260827-142-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a22282ccdb7fa53f / This formal result records task identity and lifecycle outcome only. It does
+  - 来源：`agent-results/IGNITION-20260827-142-result.md`
+  - 依赖：—；被引用：—
 - [This is a local ARN validation rule for avoiding projection errors. It is not a universal theorem about temporal network](../../../docs/architecture/adaptive-relational-network.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5bf8034f285367b7 / This is a local ARN validation rule for avoiding projection errors. It is not a universal theorem about temporal network
@@ -2497,10 +2502,5 @@
 - [title: "认知自主性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E3F4DFAAE0B1EB44 / title: "认知自主性函数" / IMPLICIT-E3F4DFAAE0B1EB44
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "认知规范破缺函数 / cognitive norm-breaking function"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-29EC0136CA46D781 / title: "认知规范破缺函数 / cognitive norm-breaking function" / IMPLICIT-29EC0136CA46D781 / IMPLICIT-8DEFCB279435DB6A
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

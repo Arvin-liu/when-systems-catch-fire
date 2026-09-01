@@ -1484,6 +1484,11 @@
   - 可搜索名称：NFC-51f9eb82e46ec9ea / authority_changes: \[Durability / Lifecycle R3\]\(./docs/architecture/os-control-plane-r2.md#durability-and-lifecycle-r3\),
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [authority_changes: none. `EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY`, `PROVIDER_CAPABILITY ≠ PERMISSION`, `PROVIDER_OUTPUT](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3c5227edb0c17073 / authority_changes: none. `EXTERNAL_PROVIDER ≠ IGNITION_AUTHORITY`, `PROVIDER_CAPABILITY ≠ PERMISSION`, `PROVIDER_OUTPUT
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: R7 live-state semantics and FailureForensicsCapsule are repository-local Pointfire OS control-plane b](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-00f6a3240bc9abb5 / authority_changes: R7 live-state semantics and FailureForensicsCapsule are repository-local Pointfire OS control-plane b
@@ -2414,6 +2419,11 @@
   - 可搜索名称：NFC-e8034b37155ad1e4 / claim_ceiling: repository-local phase parking and publication-production evidence only; no external truth, production re
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [claim_ceiling: repository-local provider adapter spike implementation and recorded-environment validation evidence only;](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0e22bc9d70db50fa / claim_ceiling: repository-local provider adapter spike implementation and recorded-environment validation evidence only;
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [claim_ceiling: repository-local README information architecture, Current-surface contract decoupling and targeted regres](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d63e1abce77221e5 / claim_ceiling: repository-local README information architecture, Current-surface contract decoupling and targeted regres
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e55270e73de42d54 / claimed_n = sum\(1 for r in records if r.get\("crossref_verified"\)\)
   - 来源：`evidence-program/tools/run_crossref_verification.py`
-  - 依赖：—；被引用：—
-- [class ArtifactRefRecord:](../../../reos_vnext/contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6700b48ab59365b4 / class ArtifactRefRecord:
-  - 来源：`reos_vnext/contract.py`
-  - 依赖：—；被引用：—
-- [class EvidenceRequest:](../../../reos_vnext/contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4af0dc121c7d0dc1 / class EvidenceRequest:
-  - 来源：`reos_vnext/contract.py`
   - 依赖：—；被引用：—

@@ -6,6 +6,11 @@
 
 - [原始来源: PRIVATE_PROVENANCE_WITHHELD](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-44b6a58b61196706 / 原始来源: PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：T29；被引用：—
+- [原始来源: PRIVATE_PROVENANCE_WITHHELD](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6cb5b52dcab86296 / 原始来源: PRIVATE_PROVENANCE_WITHHELD
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：T30；被引用：—
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-1e16d61c944ff4ab / 基线函数：D597 量化指标替代真实价值（已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md）
   - 来源：`outputs/audit/cross-domain-candidate-function-review-20260708.md`
   - 依赖：D597；被引用：—
-- [基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）](../../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-388a1325ef260f86 / 基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）
-  - 来源：`outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md`
-  - 依赖：—；被引用：—

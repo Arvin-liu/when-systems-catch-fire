@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D535\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D535\(h\) := \(β,σ,ε\) where β=biologica](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-64d98eed454893cb / \| \[D535\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D535\(h\) := \(β,σ,ε\) where β=biologica
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D535；被引用：—
 - [\| \[D538\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D538\(s\) := C\(s\)=1\[φ\(s\)>θ_a\], φ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-464a4ff404f42917 / \| \[D538\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D538\(s\) := C\(s\)=1\[φ\(s\)>θ_a\], φ
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-5fb4a19187b3e572 / 中文：dim_H\(K_n\)=n，其中K_n包含单位线段所有方向，n=2已严格证明，n≥3极小点存在性通过T39验证
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：T39；被引用：—
-- [中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3ec58646620e18df / 中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D54, D64；被引用：—

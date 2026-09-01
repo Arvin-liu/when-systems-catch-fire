@@ -1814,6 +1814,11 @@
   - 可搜索名称：NFC-1f25f73295262ed9 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task143 baseline `75c06887f59fa948681017
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task148 Current baseline `14c2595d796494](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-98a78fb43c197995 / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal `main` remains the verified Task148 Current baseline `14c2595d796494
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal main baseline for this Task 128 branch is `681f86d79b1112af3c07e0f80](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-c25d9aafc850267f / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; formal main baseline for this Task 128 branch is `681f86d79b1112af3c07e0f80
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-7b48faa2fa1c5db2 / Object D525 defines a optimization_problem within the point-fire framework. Core: 中文：M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D525；被引用：—
-- [Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = \(bp-q\)/b 映射： - f* ↔ ε信号最优流速 v*](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a46d9d800ad5ba5a / Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = \(bp-q\)/b 映射： - f* ↔ ε信号最优流速 v*
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D53；被引用：—

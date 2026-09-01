@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [unvalidated_receipt: LiveExecutorReceipt \| None](../../../agent_federation/live_task137.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-fd0adb3b840e307d / unvalidated_receipt: LiveExecutorReceipt \| None
+  - 来源：`agent_federation/live_task137.py`
+  - 依赖：—；被引用：—
 - [Usage: openclaw agent \[options\]](../../../agent_federation/pilots.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1e272d97f2c66cfb / Usage: openclaw agent \[options\]

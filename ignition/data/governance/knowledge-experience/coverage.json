@@ -44,7 +44,7 @@
   "historical_aliases": 5,
   "historical_result_audit": {
     "CURRENT_OR_SCOPED_SOURCE": 417,
-    "MACHINE_ONLY": 23819,
+    "MACHINE_ONLY": 23825,
     "NOT_MEANINGFUL_PUBLIC_CHANGE": 34,
     "SOURCE_MISSING": 0,
     "STALE_OR_INTERMEDIATE": 34,
@@ -54,10 +54,10 @@
   "material_nonfunction_claim_cards": 69,
   "materiality_policy": "Every recovered result/article receives a card and three reading levels. Function cards cover the explicit task-98 correction set. Claim cards cover named rebound lineages and risk-class claims on current public surfaces. All remaining registry assets stay fully searchable and retain their machine authority.",
   "meaningful_changes": 495,
-  "nonfunction_claim_records": 17859,
+  "nonfunction_claim_records": 17865,
   "result_asset_cards": 521,
   "result_sources": 521,
   "schema_version": "1.0.0",
-  "search_records": 24421,
+  "search_records": 24427,
   "snapshot_date": "2026-07-30"
 }

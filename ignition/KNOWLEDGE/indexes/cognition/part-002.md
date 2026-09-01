@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [if any\(_path_overlap\(resolved, root\) for root in self.protected_roots\):](../../../agent_federation/live_transport.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-57aafc0fa05dc486 / if any\(_path_overlap\(resolved, root\) for root in self.protected_roots\):
+  - 来源：`agent_federation/live_transport.py`
+  - 依赖：—；被引用：—
 - [if any\(parent_resolved == root or root in parent_resolved.parents for root in protected\):](../../../agent_federation/live_capture.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-673e0c6ce99c32ce / if any\(parent_resolved == root or root in parent_resolved.parents for root in protected\):
@@ -2497,10 +2502,5 @@
 - [unvalidated,](../../../agent_federation/live_task137.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7332764ac967d1a7 / unvalidated,
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [unvalidated_receipt: LiveExecutorReceipt \| None](../../../agent_federation/live_task137.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fd0adb3b840e307d / unvalidated_receipt: LiveExecutorReceipt \| None
   - 来源：`agent_federation/live_task137.py`
   - 依赖：—；被引用：—
