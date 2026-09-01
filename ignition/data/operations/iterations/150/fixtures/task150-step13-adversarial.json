@@ -1,0 +1,53 @@
+{
+  "schema_version": "ignition-150-step13-adversarial-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "13",
+  "record_type": "ADVERSARIAL_AUTHORITY_REGRESSION_FIXTURES",
+  "status": "ADVERSARIAL_AUTHORITY_REGRESSION_PASS",
+  "formal_previous_commit": "669c32e9aee35c401681d3164ae2329da45e4761",
+  "control_previous_commit": "9489384e95c9c4981c3c71eefd4bf0aa93ce7715",
+  "fixture_execution": {
+    "mode": "READ_ONLY_FIXTURE_EVALUATION",
+    "provider_process_started": false,
+    "credentials_or_sessions_accessed": false,
+    "system_or_repository_mutation": false,
+    "expected_semantics": "Every authority-escalating mutation is rejected before admission."
+  },
+  "safe_baseline": {
+    "current_admission": "NOT_ADMITTED",
+    "default_renderer": "NOT_SELECTED",
+    "provider_is_ignition_authority": false,
+    "provider_capability_is_permission": false,
+    "provider_output_is_external_truth": false,
+    "provider_local_policy_is_ignition_global_policy": false,
+    "adapter_spike_pass_is_current_capability": false,
+    "authenticated_channel_admission": "NO_AUTHENTICATED_ADMISSION",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "provider_homepage_claim": false,
+    "topology_mutation": false
+  },
+  "cases": [
+    {"id": "promote_current_provider", "mutation": {"current_admission": "CURRENT_BOUNDED"}, "rejection_rule": "no_current_provider_activation", "expected_outcome": "FAIL_CLOSED_REJECT", "observed_result": "REJECTED"},
+    {"id": "provider_becomes_ignition_authority", "mutation": {"provider_is_ignition_authority": true}, "rejection_rule": "external_provider_is_not_ignition_authority", "expected_outcome": "FAIL_CLOSED_REJECT", "observed_result": "REJECTED"},
+    {"id": "provider_capability_becomes_permission", "mutation": {"provider_capability_is_permission": true}, "rejection_rule": "provider_capability_is_not_permission", "expected_outcome": "FAIL_CLOSED_REJECT", "observed_result": "REJECTED"},
+    {"id": "provider_output_becomes_external_truth", "mutation": {"provider_output_is_external_truth": true}, "rejection_rule": "provider_output_is_not_external_truth", "expected_outcome": "FAIL_CLOSED_REJECT", "observed_result": "REJECTED"},
+    {"id": "provider_policy_becomes_global_policy", "mutation": {"provider_local_policy_is_ignition_global_policy": true}, "rejection_rule": "provider_local_policy_is_not_ignition_global_policy", "expected_outcome": "FAIL_CLOSED_REJECT", "observed_result": "REJECTED"},
+    {"id": "adapter_pass_becomes_current_capability", "mutation": {"adapter_spike_pass_is_current_capability": true}, "rejection_rule": "adapter_spike_pass_is_not_current_capability", "expected_outcome": "FAIL_CLOSED_REJECT", "observed_result": "REJECTED"},
+    {"id": "authenticated_channel_admission", "mutation": {"authenticated_channel_admission": "ADMITTED"}, "rejection_rule": "no_authenticated_admission", "expected_outcome": "FAIL_CLOSED_REJECT", "observed_result": "REJECTED"},
+    {"id": "live_external_invocation_change", "mutation": {"live_external_invocation": "RUN"}, "rejection_rule": "live_external_invocation_unchanged", "expected_outcome": "FAIL_CLOSED_REJECT", "observed_result": "REJECTED"},
+    {"id": "provider_homepage_claim", "mutation": {"provider_homepage_claim": true}, "rejection_rule": "no_provider_homepage_claim", "expected_outcome": "FAIL_CLOSED_REJECT", "observed_result": "REJECTED"},
+    {"id": "topology_mutation", "mutation": {"topology_mutation": true}, "rejection_rule": "provider_cannot_mutate_topology", "expected_outcome": "FAIL_CLOSED_REJECT", "observed_result": "REJECTED"}
+  ],
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channels": "NO_AUTHENTICATED_ADMISSION",
+    "installation": "NO_INSTALL_OR_AUTO_UPGRADE",
+    "current_admission": "NOT_ADMITTED",
+    "default_renderer": "NOT_SELECTED",
+    "provider_homepage": "NO_CLAIM",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "task151": "FORBIDDEN"
+  },
+  "claim_ceiling": "Task150 Step13 proves only that the recorded authority, Current, permission, authentication, live-invocation, homepage and topology escalation mutations are rejected by a read-only fixture evaluator. It does not prove runtime security, provider quality, architecture truth, external truth, Owner acceptance, Current integration or live external completion."
+}

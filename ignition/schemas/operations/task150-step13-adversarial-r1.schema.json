@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step13-adversarial-r1.schema.json",
+  "title": "Task150 Step13 adversarial authority regression fixtures",
+  "description": "Fail-closed fixture cases for provider, Current, permission, authentication, live invocation, homepage and topology escalation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "control_previous_commit", "fixture_execution", "safe_baseline", "cases", "scope_freeze", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step13-adversarial-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "13"},
+    "record_type": {"const": "ADVERSARIAL_AUTHORITY_REGRESSION_FIXTURES"},
+    "status": {"const": "ADVERSARIAL_AUTHORITY_REGRESSION_PASS"},
+    "formal_previous_commit": {"const": "669c32e9aee35c401681d3164ae2329da45e4761"},
+    "control_previous_commit": {"const": "9489384e95c9c4981c3c71eefd4bf0aa93ce7715"},
+    "fixture_execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "provider_process_started", "credentials_or_sessions_accessed", "system_or_repository_mutation", "expected_semantics"],
+      "properties": {
+        "mode": {"const": "READ_ONLY_FIXTURE_EVALUATION"},
+        "provider_process_started": {"const": false},
+        "credentials_or_sessions_accessed": {"const": false},
+        "system_or_repository_mutation": {"const": false},
+        "expected_semantics": {"const": "Every authority-escalating mutation is rejected before admission."}
+      }
+    },
+    "safe_baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current_admission", "default_renderer", "provider_is_ignition_authority", "provider_capability_is_permission", "provider_output_is_external_truth", "provider_local_policy_is_ignition_global_policy", "adapter_spike_pass_is_current_capability", "authenticated_channel_admission", "live_external_invocation", "provider_homepage_claim", "topology_mutation"],
+      "properties": {
+        "current_admission": {"const": "NOT_ADMITTED"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "provider_is_ignition_authority": {"const": false},
+        "provider_capability_is_permission": {"const": false},
+        "provider_output_is_external_truth": {"const": false},
+        "provider_local_policy_is_ignition_global_policy": {"const": false},
+        "adapter_spike_pass_is_current_capability": {"const": false},
+        "authenticated_channel_admission": {"const": "NO_AUTHENTICATED_ADMISSION"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "provider_homepage_claim": {"const": false},
+        "topology_mutation": {"const": false}
+      }
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "mutation", "rejection_rule", "expected_outcome", "observed_result"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "mutation": {"type": "object", "minProperties": 1, "additionalProperties": true},
+          "rejection_rule": {"type": "string", "minLength": 1},
+          "expected_outcome": {"const": "FAIL_CLOSED_REJECT"},
+          "observed_result": {"const": "REJECTED"}
+        }
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "agent_reach", "authenticated_channels", "installation", "current_admission", "default_renderer", "provider_homepage", "live_external_invocation", "task151"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channels": {"const": "NO_AUTHENTICATED_ADMISSION"},
+        "installation": {"const": "NO_INSTALL_OR_AUTO_UPGRADE"},
+        "current_admission": {"const": "NOT_ADMITTED"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "provider_homepage": {"const": "NO_CLAIM"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "claim_ceiling": {"const": "Task150 Step13 proves only that the recorded authority, Current, permission, authentication, live-invocation, homepage and topology escalation mutations are rejected by a read-only fixture evaluator. It does not prove runtime security, provider quality, architecture truth, external truth, Owner acceptance, Current integration or live external completion."}
+  }
+}
