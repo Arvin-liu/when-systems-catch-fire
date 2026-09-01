@@ -96,6 +96,37 @@
         "tools/validate_task149_step09_agent_reach_channel_matrix.py",
         "tools/validate_task149_step14_authenticated_channel_fail_closed.py"
       ]
+    },
+    {
+      "exception_id": "TASK150_ARCHIFY_EXPERIMENTAL_EVIDENCE_NO_RUNTIME_AUTHORITY",
+      "capability_scope": "Retain Task150 Step08 Archify failure-fallback evidence and its validation surface as experimental evidence only; no runtime authority, external-agent runtime or provider capability",
+      "external_options_considered": [
+        "the pinned Archify public interface and read-only compare/visual-check commands",
+        "the existing Reference Executor as the bounded offline conformance surface",
+        "a custom Ignition renderer or runtime provider integration"
+      ],
+      "reproduction_steps": [
+        "Run Task150 Step08 provider-failure fallback validation from the Task149 A8 main baseline.",
+        "Run validate_federation_ownership.py --scan-git-diff against the Task150 Draft branch.",
+        "Observe that the provider-shaped Step08 evidence, schema, validator and test paths are protected by the existing ownership gate even though they contain no runtime loop."
+      ],
+      "observed_failure": "The unchanged Reference Executor ownership gate rejects the four Task150 Step08 provider-failure evidence and validation paths by filename; the exception accounts for evidence classification only and does not repair or authorize a provider runtime.",
+      "threshold_or_boundary": "This narrow allowance covers exactly four repository-local Task150 Step08 evidence paths. It grants no provider runtime, Current capability, external action, credential, session or authentication authority; any later provider admission requires a separate formally reviewed task.",
+      "least_privilege_impact": "No executor, provider, channel, browser, credential, cookie, network, remote-Git, external-action or production authority is added; live external invocation remains unchanged.",
+      "reversibility": "The exception and its four exact protected paths can be removed with the Task150 evidence after review without installation, external configuration or persistent provider state.",
+      "owner_review_ref": "IGNITION-20260901-150 Draft Owner review; final bounded decision DEFER with Owner visual acceptance pending",
+      "decision": "ALLOW_TASK150_ARCHIFY_EXPERIMENTAL_EVIDENCE_NO_RUNTIME_AUTHORITY",
+      "external_executor_or_adapter": "Archify is an evidence subject only; the Ignition-owned bounded fallback contract, validator and tests are the carrier",
+      "contract_gap": "The frozen Reference Executor has no provider-failure or derived-visualization capability slot, while the Task150 Step08 evidence paths must remain auditable without adding that capability.",
+      "why_adapter_cannot_solve": "This is not a runtime integration request. The adapter cannot make an evidence-only filename cease to match the ownership classifier; the narrow classification allowance does not bypass the adapter boundary.",
+      "minimal_build_scope": "Only the Task150 Step08 provider-failure receipt, schema, validator and focused test; no runtime loop, system install, vendor source, authenticated integration or external action.",
+      "sunset_or_review_condition": "Remove this exact evidence-only exception with the Task150 records when no longer needed. It must not become a generic runtime bypass; any provider, Current capability, authenticated channel, credential/session or external-action admission requires a separate formally reviewed task.",
+      "protected_paths": [
+        "data/operations/iterations/150/step08-provider-failure-fallback.json",
+        "schemas/operations/task150-step08-provider-failure-fallback-r1.schema.json",
+        "tests/test_task150_step08_provider_failure_fallback.py",
+        "tools/validate_task150_step08_provider_failure_fallback.py"
+      ]
     }
   ]
 }

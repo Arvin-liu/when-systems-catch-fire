@@ -26,6 +26,13 @@ authority, external-truth authority or production capability. Provider choice
 does not grant permission, and provider output does not change canonical
 architecture or semantic relationships.
 
+The repository path-classification snapshot was regenerated through the
+existing official generator so every tracked Task150 path is accounted for
+(3924 tracked / 3924 manifest paths). The ownership policy contains one narrow,
+removable exception for exactly the four Step08 provider-failure evidence and
+validation paths; it is evidence classification only and grants no runtime,
+provider, Current, authentication or external-action authority.
+
 ## Evidence and decision
 
 - Standalone authored visualization: containment PASS across the recorded
