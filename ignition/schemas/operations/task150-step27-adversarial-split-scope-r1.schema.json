@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step27-adversarial-split-scope-r1.schema.json",
+  "title": "Task150 Step27 adversarial split-scope regression",
+  "description": "Records read-only policy and exact-topology adversarial checks proving that the standalone base operation and the Architecture Delta extension remain independently gated.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "fixture", "canonical_binding", "case_results", "validation", "scope_freeze", "result", "next_step", "self_witness", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step27-adversarial-split-scope-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "27"},
+    "record_type": {"const": "ADVERSARIAL_SPLIT_SCOPE_REGRESSION"},
+    "status": {"const": "ADVERSARIAL_SPLIT_SCOPE_REGRESSION_PASS"},
+    "formal_previous_commit": {"const": "672a7a1a757a3741cd1c2643a29e5fc4470ab06a"},
+    "fixture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "case_count", "evaluation_mode", "provider_process_started", "credentials_or_sessions_accessed", "system_or_repository_mutation"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/iterations/150/fixtures/task150-step27-adversarial-split-scope.json"},
+        "sha256": {"const": "d9079c63ae87917124698bd52b06f7e84bccd2dc953cb1c80536fbfb74dd79b7"},
+        "case_count": {"const": 11},
+        "evaluation_mode": {"const": "READ_ONLY_IN_MEMORY_POLICY_AND_TOPOLOGY_MUTATION"},
+        "provider_process_started": {"const": false},
+        "credentials_or_sessions_accessed": {"const": false},
+        "system_or_repository_mutation": {"const": false}
+      }
+    },
+    "canonical_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_source", "canonical_source_sha256", "typed_ir", "typed_ir_sha256", "typed_ir_source_revision", "node_count", "edge_count", "topology_reconciliation", "provider_topology_authority"],
+      "properties": {
+        "canonical_source": {"const": "ignition/data/architecture/overall-architecture.json"},
+        "canonical_source_sha256": {"const": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13"},
+        "typed_ir": {"const": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json"},
+        "typed_ir_sha256": {"const": "2788796b4d329251cc67e502b6081b77542388b7f25f99470e400bf6722575ed"},
+        "typed_ir_source_revision": {"const": "68d5d30bda0d8eb9c715ac346ce6476a55c0e288"},
+        "node_count": {"const": 24},
+        "edge_count": {"const": 24},
+        "topology_reconciliation": {"const": "PASS_EXACT_NODE_AND_EDGE_SEQUENCE"},
+        "provider_topology_authority": {"const": false}
+      }
+    },
+    "case_results": {
+      "type": "array",
+      "minItems": 11,
+      "maxItems": 11,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "kind", "mutation", "inputs", "expected"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "kind": {"type": "string", "minLength": 1},
+          "mutation": {"type": "string", "minLength": 1},
+          "inputs": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string", "minLength": 1}},
+          "expected": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["base", "delta", "result"],
+            "properties": {
+              "base": {"type": "string", "minLength": 1},
+              "delta": {"type": "string", "minLength": 1},
+              "result": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fixture_hash", "case_count", "canonical_source_hash", "typed_ir_hash", "exact_topology", "topology_mutations", "standalone_delta_split", "provider_unavailable", "green_validator_truth_boundary", "aesthetic_boundary", "delta_auto_promotion", "provider_auto_upgrade", "provider_skill_authority", "side_effect_boundary", "registry_boundary", "default_renderer", "architecture_authority", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "task151"],
+      "properties": {
+        "fixture_hash": {"const": "PASS"},
+        "case_count": {"const": 11},
+        "canonical_source_hash": {"const": "PASS"},
+        "typed_ir_hash": {"const": "PASS"},
+        "exact_topology": {"const": "PASS_EXACT_24_NODES_24_EDGES"},
+        "topology_mutations": {"const": "PASS_REJECTED_3_OF_3"},
+        "standalone_delta_split": {"const": "PASS_BASE_INDEPENDENT_DELTA_DEFERRED"},
+        "provider_unavailable": {"const": "PASS_FAIL_CLOSED_NO_INSTALL_NO_SUBSTITUTION"},
+        "green_validator_truth_boundary": {"const": "PASS_NO_ARCHITECTURE_TRUTH_ESCALATION"},
+        "aesthetic_boundary": {"const": "PASS_FUNCTIONAL_ALLOWED_AESTHETIC_NOT_CLAIMED"},
+        "delta_auto_promotion": {"const": "PASS_SEPARATE_ADMISSION_REQUIRED"},
+        "provider_auto_upgrade": {"const": "PASS_COMPATIBILITY_CHECK_REQUIRED"},
+        "provider_skill_authority": {"const": "PASS_IGNITION_SELECTION_PREVAILS"},
+        "side_effect_boundary": {"const": "PASS_NO_PROCESS_CREDENTIAL_SESSION_OR_REPOSITORY_SIDE_EFFECT"},
+        "registry_boundary": {"const": "PASS_20_PROVIDER_NEUTRAL_BASE_ONLY"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "architecture_authority": {"const": false},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "base_operation", "architecture_delta", "owner_aesthetic_endorsement", "default_renderer", "architecture_authority", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "task151"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "base_operation": {"const": "CURRENT_BOUNDED_CANDIDATE"},
+        "architecture_delta": {"const": "EXPERIMENTAL_EXTENSION_DEFERRED"},
+        "owner_aesthetic_endorsement": {"const": "NOT_GRANTED_NOT_CLAIMED"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "architecture_authority": {"const": false},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "result": {"const": "TASK150_STEP27_ADVERSARIAL_SPLIT_SCOPE_REGRESSION_PASS"},
+    "next_step": {"const": "TASK150_STEP28_OWNER_ADJUDICATION_SCOPE_SPLIT"},
+    "self_witness": {"const": "NOT_EMBEDDED_BY_DESIGN"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}
