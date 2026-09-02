@@ -18,7 +18,7 @@ class IgnitionOperationPlaybooksTests(unittest.TestCase):
 
     def test_current_playbooks_and_generated_view_pass(self) -> None:
         self.assertEqual(validator.validate(copy.deepcopy(self.playbooks)), [])
-        self.assertEqual(len(self.playbooks["playbooks"]), 15)
+        self.assertEqual(len(self.playbooks["playbooks"]), 16)
         self.assertEqual(len(self.playbooks["excluded_status_only"]), 4)
         self.assertEqual(len(self.playbooks["category_audit"]), 11)
 
@@ -67,7 +67,7 @@ class IgnitionOperationPlaybooksTests(unittest.TestCase):
     def test_human_view_projects_required_playbook_fields(self) -> None:
         rendered = validator.render_markdown(self.playbooks, self.registry)
         self.assertEqual(rendered, validator.HUMAN_VIEW_PATH.read_text(encoding="utf-8"))
-        self.assertEqual(rendered.count("### `"), 15)
+        self.assertEqual(rendered.count("### `"), 16)
         for heading in (
             "用户常见意图：",
             "输入（registry-derived）：",
@@ -78,8 +78,8 @@ class IgnitionOperationPlaybooksTests(unittest.TestCase):
             "Stop conditions：",
             "不得做什么：",
         ):
-            self.assertEqual(rendered.count(heading), 15)
-        self.assertEqual(rendered.count("ignition/data/operations/ignition-run-output-contract-r1.json"), 15)
+            self.assertEqual(rendered.count(heading), 16)
+        self.assertEqual(rendered.count("ignition/data/operations/ignition-run-output-contract-r1.json"), 16)
 
     def test_authored_playbooks_do_not_duplicate_registry_fields(self) -> None:
         allowed = {

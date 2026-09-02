@@ -76,8 +76,8 @@
     {
       "category_id": "validation_audit",
       "coverage_status": "COVERED_BOUNDED",
-      "operation_ids": ["knowledge.validate_claim", "knowledge.validate_evidence_link", "maintenance.validate_checkpoint", "research.validate_reos_light", "writing.validate_publication_surface"],
-      "rationale": "Five public bounded validators cover claim, evidence, repository checkpoint, REOS LIGHT and publication surfaces without substantive authority upgrades."
+      "operation_ids": ["knowledge.validate_claim", "knowledge.validate_evidence_link", "maintenance.validate_checkpoint", "research.validate_reos_light", "visualization.render_derived_system_view", "writing.validate_publication_surface"],
+      "rationale": "Six public bounded validators cover claim, evidence, repository checkpoint, REOS LIGHT, derived visualization and publication surfaces without substantive authority upgrades."
     },
     {
       "category_id": "repository_maintenance_self_iteration",
@@ -205,6 +205,13 @@
       "execution_steps": ["Bind the REOS LIGHT run, case state and referenced obligations.", "Validate graph, states, review and typed handoff fields.", "Return structural PASS or a bounded failure state."],
       "stop_conditions": ["The run or case identity is missing.", "References, obligation graph or handoff bundle cannot be resolved."],
       "prohibitions": ["Do not convert generic SUCCESS into a valid research outcome.", "Do not infer proposition truth, external validity or publication status from structural validation."]
+    },
+    {
+      "operation_id": "visualization.render_derived_system_view",
+      "common_natural_language_intents": ["请生成这份当前架构的受约束派生系统视图。", "只读渲染当前系统图，但不要修改 canonical source。"],
+      "execution_steps": ["Freeze the exact canonical architecture snapshot and provider-neutral operation scope.", "Read the canonical source, current system map and declared provenance/compatibility boundaries.", "Run the bounded adapter with the tested immutable provider ref and validate topology, viewport containment and artifact digests.", "Return the standalone derived artifact and provenance receipt, or fail closed with PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT."],
+      "stop_conditions": ["Canonical source, topology or provenance cannot be bound.", "The provider is unavailable or its immutable compatibility ref is not verified; return PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT.", "Viewport containment, validation or delivery fails.", "The request asks for architecture analysis, repository mutation, external action or the deferred Architecture Delta extension rather than a derived view."],
+      "prohibitions": ["Do not add, delete, reorder or semantically change nodes or edges, and do not write back to the canonical architecture map.", "Do not install, auto-update or substitute an unadmitted provider, and do not treat provider validation as architecture authority.", "Do not auto-render for an architecture-analysis-only request or claim Current, production, aesthetic or external truth from the derived artifact."]
     },
     {
       "operation_id": "writing.apply_editorial_method",

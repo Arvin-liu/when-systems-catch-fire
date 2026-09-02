@@ -34,6 +34,25 @@
       }
     },
     {
+      "case_id": "bounded_visualization_request_routes_read_only",
+      "request": {
+        "request_envelope": {"user_request": "把当前点火系统结构生成一个可交互视图。"},
+        "input_objects": []
+      },
+      "operation_id": "visualization.render_derived_system_view",
+      "current_ref": "refs/heads/main@example-current",
+      "expected": {
+        "run_mode": "READ_ONLY_RUN",
+        "operation_status": "CURRENT_BOUNDED",
+        "operation_class": "VALIDATION_AUDIT",
+        "decision": "PROCEED_BOUNDED",
+        "stop_reason": null,
+        "mode_reason": "DEFAULT_OR_LEAST_AUTHORITY",
+        "playbook_source": "ignition/data/operations/ignition-operation-playbooks-r1.json",
+        "side_effects_authorized_by_plan": false
+      }
+    },
+    {
       "case_id": "owner_deferred_stops",
       "request": {
         "request_envelope": {"user_request": "请调用外部 Agent 执行只读任务。"},

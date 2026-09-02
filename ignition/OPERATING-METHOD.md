@@ -232,6 +232,8 @@ Agent 必须同时读取 `current_status`、`default_execution_mode`、repositor
 
 operation 的 `default_execution_mode` 必须与当前模式相容；不相容时停止为 `OPERATION_MODE_MISMATCH`，不能通过改写请求来迁就能力。
 
+对于“把当前点火系统结构生成一个可交互视图”这类明确要求派生图、而不是只要求架构分析的请求，Capability Registry 的稳定查找键是 `visualization.render_derived_system_view`，默认路由为 `READ_ONLY_RUN`，并且只能在其 `CURRENT_BOUNDED`、`PUBLIC_BOUNDED` 与 claim ceiling 内继续。它的 provider 是可替换的 tested implementation；provider 不可用时只返回 `PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT`，不得自动安装、替代、升级或把 provider 生成物写回 canonical source。只要求分析架构而没有图请求时，不得因 provider 可用而自动渲染。
+
 ### 8.4 `BUILD_MINIMAL_READ_PLAN`
 
 `MINIMAL_CURRENT_READS_NOT_FULL_REPOSITORY`
@@ -358,7 +360,7 @@ candidate-new 只属于本次 Run 的候选区；`registry_action` 固定为 `NO
 
 `PLAYBOOKS_ARE_DERIVED_FROM_CAPABILITY_REGISTRY`
 
-每个同时满足以下条件的顶层 operation 有且只有一个可调用 playbook：registry status 为 `CURRENT` 或 `CURRENT_BOUNDED`，且 `ai_callability` 为 `PUBLIC` 或 `PUBLIC_BOUNDED`。当前任务分支快照由真实 registry 派生出 15 个 playbooks；数量不是手写常量，registry 变化时一致性校验必须迫使 playbook 集同步变化。
+每个同时满足以下条件的顶层 operation 有且只有一个可调用 playbook：registry status 为 `CURRENT` 或 `CURRENT_BOUNDED`，且 `ai_callability` 为 `PUBLIC` 或 `PUBLIC_BOUNDED`。当前任务分支快照由真实 registry 派生出 16 个 playbooks；数量不是手写常量，registry 变化时一致性校验必须迫使 playbook 集同步变化。
 
 每个 playbook 只补充 operation-specific 的：
 
