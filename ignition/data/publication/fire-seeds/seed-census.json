@@ -3137,7 +3137,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "f741e296edf9d058a71ee0ffd5be14b969557b351060ed295f3b8630c4a2941f",
+      "source_sha256": "278442cda500ff22cc46b9f663930c479e9e78a40b5591d4b228c08c49d1c970",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"
@@ -3152,7 +3152,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "1e6c7c32f79d79deef7ffd0429f213583e85b1d38d4af2dc495d292dd07c0976",
+      "source_sha256": "7655a2326e7bde7d0d3e88c56ad2607bbf5344f725301582f6b2cf8ebe8bfefa",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -4089,7 +4089,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "cbbdabdbb46641ff8745df0edb59043d71883dab523066777301e663ae449066",
+      "source_sha256": "bdffad00b7eccb30928f9ff7ff5189df21d31de3bc7a15b55ddd525df097e21a",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
