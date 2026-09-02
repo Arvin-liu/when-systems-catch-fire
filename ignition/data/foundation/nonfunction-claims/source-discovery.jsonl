@@ -1990,6 +1990,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/150/step26-front-door-and-sync-surface-restraint.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/150/step27-adversarial-split-scope-regression.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/150/step28-owner-adjudication-scope-split.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/150/step29-exact-head-ready-gate.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/150/task150-archify-typed-ir-r1.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_AUTHORITATIVE_RECORD","exclusion_reason":"EXCLUDED_NON_AUTHORITATIVE_RECORD","path":"data/operations/iterations/150/task150-draft-pr-body.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE","exclusion_reason":"EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE","path":"data/operations/iterations/150/visual-evidence/architecture.visual-check.1440x900.dark.png"}
@@ -3261,6 +3262,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/task150-step26-front-door-and-sync-surface-restraint-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/task150-step27-adversarial-split-scope-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/task150-step28-owner-adjudication-scope-split-r1.schema.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"schemas/operations/task150-step29-exact-head-ready-gate-r1.schema.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_NON_TEXT_SUFFIX","exclusion_reason":"EXCLUDED_NON_TEXT_SUFFIX","path":"scripts/external-research/.env.example"}
 {"candidate_fragments":1,"canonical_claim_ids":["NFC-389f1b9e4ae4dcef"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"scripts/external-research/121_build_registry_and_logs.py"}
 {"candidate_fragments":1,"canonical_claim_ids":["NFC-7b7b8a7a3b10cac7"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"scripts/external-research/121_extract_all.py"}
@@ -3615,6 +3617,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task150_step26_front_door_and_sync_surface_restraint.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task150_step27_adversarial_split_scope.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task150_step28_owner_adjudication_scope_split.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task150_step29_exact_head_ready_gate.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task_identity_adversarial_fixtures.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task_identity_model.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task_identity_parser.py"}
@@ -3968,6 +3971,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_task150_step26_front_door_and_sync_surface_restraint.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_task150_step27_adversarial_split_scope.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_task150_step28_owner_adjudication_scope_split.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_task150_step29_exact_head_ready_gate.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_task_identity_model.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_task_identity_parser.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/validate_transition_grammar.py"}
