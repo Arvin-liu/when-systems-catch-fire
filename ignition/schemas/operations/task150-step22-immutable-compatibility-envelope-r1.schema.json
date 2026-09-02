@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step22-immutable-compatibility-envelope-r1.schema.json",
+  "title": "Task150 Step22 immutable provider compatibility envelope",
+  "description": "Exact-commit compatibility evidence for the provider-neutral standalone derived system view.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "task_id",
+    "step",
+    "record_type",
+    "status",
+    "formal_previous_commit",
+    "provider",
+    "compatibility_recheck",
+    "pin_policy",
+    "admission_boundary",
+    "result",
+    "next_step",
+    "self_witness",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step22-immutable-compatibility-envelope-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "22"},
+    "record_type": {"const": "IMMUTABLE_COMPATIBILITY_ENVELOPE"},
+    "status": {"const": "IMMUTABLE_COMPATIBILITY_ENVELOPE_PASS"},
+    "formal_previous_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "provider": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider_id",
+        "repository",
+        "remote_observation_ref",
+        "remote_observation_revision",
+        "tested_immutable_ref",
+        "ref_kind",
+        "release_tag_at_exact_ref",
+        "package_version",
+        "schema_path",
+        "schema_sha256",
+        "checkout_revision",
+        "checkout_clean",
+        "checkout_non_shallow",
+        "doctor",
+        "automatic_update",
+        "architecture_authority",
+        "provider_role"
+      ],
+      "properties": {
+        "provider_id": {"const": "archify"},
+        "repository": {"const": "tt-a1i/archify"},
+        "remote_observation_ref": {"const": "refs/heads/main"},
+        "remote_observation_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "tested_immutable_ref": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "ref_kind": {"const": "EXACT_COMMIT"},
+        "release_tag_at_exact_ref": {"const": "NONE_AT_EXACT_COMMIT"},
+        "package_version": {"const": "2.17.0-dev.1"},
+        "schema_path": {"const": "archify/schemas/architecture.schema.json"},
+        "schema_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "checkout_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "checkout_clean": {"const": true},
+        "checkout_non_shallow": {"const": true},
+        "doctor": {"const": "PASS"},
+        "automatic_update": {"const": false},
+        "architecture_authority": {"const": false},
+        "provider_role": {"const": "TESTED_OPTIONAL_PROVIDER_IMPLEMENTATION"}
+      }
+    },
+    "compatibility_recheck": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["formal_source_revision", "typed_ir_path", "typed_ir_sha256", "typed_ir_validation", "delivery", "visual_check", "same_output_as_step21", "step21_formal_receipt"],
+      "properties": {
+        "formal_source_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "typed_ir_path": {"const": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json"},
+        "typed_ir_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "typed_ir_validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "checks_passed", "checks_total", "composition_status", "composition_errors", "composition_warnings"],
+          "properties": {
+            "status": {"const": "PASS"},
+            "checks_passed": {"const": 9},
+            "checks_total": {"const": 9},
+            "composition_status": {"const": "pass"},
+            "composition_errors": {"const": 0},
+            "composition_warnings": {"const": 0}
+          }
+        },
+        "delivery": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "checks_passed", "checks_total", "composition_status", "composition_errors", "composition_warnings", "source_evidence_verified", "source_evidence_revision", "source_evidence_references", "specification_sha256", "artifact_sha256", "artifact_bytes"],
+          "properties": {
+            "status": {"const": "PASS"},
+            "checks_passed": {"const": 9},
+            "checks_total": {"const": 9},
+            "composition_status": {"const": "pass"},
+            "composition_errors": {"const": 0},
+            "composition_warnings": {"const": 0},
+            "source_evidence_verified": {"const": true},
+            "source_evidence_revision": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+            "source_evidence_references": {"const": 19},
+            "specification_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "artifact_bytes": {"const": 751906}
+          }
+        },
+        "visual_check": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "visual_review", "chrome", "diagnostics", "containment_status", "required_containment_viewports", "capture_status", "required_capture_screenshots", "readability_status", "viewer_chrome_status", "containment_failures", "readability_failures", "viewer_chrome_failures", "receipt_sha256", "contact_sheet_sha256", "artifact_sha256", "minimum_projected_node_text_px"],
+          "properties": {
+            "status": {"const": "PASS"},
+            "visual_review": {"const": "PENDING_PERCEPTUAL_REVIEW"},
+            "chrome": {"const": "AVAILABLE"},
+            "diagnostics": {"const": 0},
+            "containment_status": {"const": "PASS"},
+            "required_containment_viewports": {"const": 4},
+            "capture_status": {"const": "PASS"},
+            "required_capture_screenshots": {"const": 4},
+            "readability_status": {"const": "PASS"},
+            "viewer_chrome_status": {"const": "PASS"},
+            "containment_failures": {"const": 0},
+            "readability_failures": {"const": 0},
+            "viewer_chrome_failures": {"const": 0},
+            "receipt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "contact_sheet_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "minimum_projected_node_text_px": {"type": "number", "minimum": 6}
+          }
+        },
+        "same_output_as_step21": {"const": true},
+        "step21_formal_receipt": {"const": "ignition/data/operations/iterations/150/step21-fresh-standalone-evidence.json"}
+      }
+    },
+    "pin_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tested_provider_implementation", "tested_compatibility_ref", "tested_ref_is_immutable_exact_commit", "moving_main_is_not_compatibility_binding", "automatic_update", "future_version_requires_compatibility_check", "release_tag_or_exact_commit_required"],
+      "properties": {
+        "tested_provider_implementation": {"const": "ARCHIFY"},
+        "tested_compatibility_ref": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+        "tested_ref_is_immutable_exact_commit": {"const": true},
+        "moving_main_is_not_compatibility_binding": {"const": true},
+        "automatic_update": {"const": false},
+        "future_version_requires_compatibility_check": {"const": true},
+        "release_tag_or_exact_commit_required": {"const": true}
+      }
+    },
+    "admission_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation_id", "operation_definition_is_provider_neutral", "compatibility_gate", "base_operation_status", "current_capability", "registry_operation_count", "registry_write", "delta_extension", "delta_gate", "owner_aesthetic_endorsement", "default_renderer", "architecture_authority", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "task151"],
+      "properties": {
+        "operation_id": {"const": "visualization.render_derived_system_view"},
+        "operation_definition_is_provider_neutral": {"const": true},
+        "compatibility_gate": {"const": "PASS"},
+        "base_operation_status": {"const": "CURRENT_BOUNDED_CANDIDATE_PENDING_STEP23_REGISTRY_AND_LIFECYCLE"},
+        "current_capability": {"const": false},
+        "registry_operation_count": {"const": 19},
+        "registry_write": {"const": false},
+        "delta_extension": {"const": "EXPERIMENTAL_EXTENSION_DEFERRED"},
+        "delta_gate": {"const": "FAIL_DEFERRED"},
+        "owner_aesthetic_endorsement": {"const": "NOT_GRANTED_NOT_CLAIMED"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "architecture_authority": {"const": false},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "result": {"const": "TASK150_STEP22_IMMUTABLE_COMPATIBILITY_ENVELOPE_PASS"},
+    "next_step": {"const": "TASK150_STEP23_CANDIDATE_REGISTRY_ADMISSION"},
+    "self_witness": {"const": "NOT_EMBEDDED_BY_DESIGN"},
+    "claim_ceiling": {"type": "string"}
+  }
+}
