@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step25-delta-remains-experimental-deferred-r1.schema.json",
+  "title": "Task150 Step25 retained experimental Architecture Delta deferral",
+  "description": "Records the independent Delta gate, retained historical evidence and upstream wrapper blocker without reopening or promoting the Delta extension.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "evidence", "delta_gate", "preserved_boundaries", "validation", "scope_freeze", "result", "next_step", "self_witness", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step25-delta-remains-experimental-deferred-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "25"},
+    "record_type": {"const": "DELTA_REMAINS_EXPERIMENTAL_DEFERRED"},
+    "status": {"const": "DELTA_SCOPE_SPLIT_DEFERRED_PASS"},
+    "formal_previous_commit": {"const": "958292bf4fb438ef4458e0403774466bde5ccaf7"},
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["step04_blocker_receipt", "step07_delta_smoke_receipt", "step22_compatibility_receipt", "immutable_delta_artifacts"],
+      "properties": {
+        "step04_blocker_receipt": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "sha256", "status", "delta_visual_status", "diagnostics", "diagnostic_code", "blocker_confirmed", "historical_replay"],
+          "properties": {
+            "path": {"const": "ignition/data/operations/iterations/150/step04-viewport-residual-repair.json"},
+            "sha256": {"const": "9c80133dd55d0d771ea3538e5a8495b863b78c6d0a7abc2c9b8207c263ecb2ce"},
+            "status": {"const": "UPSTREAM_BLOCKER_RECORDED"},
+            "delta_visual_status": {"const": "FAIL_UPSTREAM_WRAPPER"},
+            "diagnostics": {"const": 3},
+            "diagnostic_code": {"const": "viewer/viewport-overflow"},
+            "blocker_confirmed": {"const": true},
+            "historical_replay": {"const": "NOT_REPLAYED_HISTORICAL_RECEIPT_LATER_IR_BOUNDARY"}
+          }
+        },
+        "step07_delta_smoke_receipt": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "sha256", "semantic_status", "semantic_checks_passed", "semantic_checks_total", "delta_visual_status", "diagnostics", "diagnostic_code", "historical_validator"],
+          "properties": {
+            "path": {"const": "ignition/data/operations/iterations/150/step07-architecture-delta-smoke.json"},
+            "sha256": {"const": "9d4e553b577374aeaa1f3c295ad5d0c936b17519241cad5a905ba79bf28d4a58"},
+            "semantic_status": {"const": "PASS_PROVENANCE_ONLY"},
+            "semantic_checks_passed": {"const": 28},
+            "semantic_checks_total": {"const": 28},
+            "delta_visual_status": {"const": "FAIL_UPSTREAM_WRAPPER"},
+            "diagnostics": {"const": 3},
+            "diagnostic_code": {"const": "viewer/viewport-overflow"},
+            "historical_validator": {"const": "PASS"}
+          }
+        },
+        "step22_compatibility_receipt": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["path", "sha256", "tested_immutable_provider_ref", "historical_delta_gate", "historical_registry_count", "historical_replay"],
+          "properties": {
+            "path": {"const": "ignition/data/operations/iterations/150/step22-immutable-compatibility-envelope.json"},
+            "sha256": {"const": "db7d5aa2efd64572e80c12b578b7b392a0307263f3a848039902f848f37d2bdd"},
+            "tested_immutable_provider_ref": {"const": "06dd052602dd9a369e4d034e24faef0917b5a60c"},
+            "historical_delta_gate": {"const": "FAIL_DEFERRED"},
+            "historical_registry_count": {"const": 19},
+            "historical_replay": {"const": "NOT_REPLAYED_HISTORICAL_REGISTRY_19_BOUNDARY"}
+          }
+        },
+        "immutable_delta_artifacts": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path", "sha256", "role"],
+            "properties": {
+              "path": {"type": "string", "minLength": 1},
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+              "role": {"enum": ["HISTORICAL_DELTA_MACHINE_RECEIPT", "HISTORICAL_DELTA_DERIVED_VIEW", "HISTORICAL_DELTA_VISUAL_RECEIPT"]}
+            }
+          }
+        }
+      }
+    },
+    "delta_gate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["extension", "base_gate_is_independent", "delta_does_not_block_base", "base_operation", "base_operation_status", "semantic_result", "visual_result", "diagnostics", "diagnostic_code", "blocker", "owner_or_upstream_fix_required", "delta_operation_registered", "automatic_promotion", "no_fork_or_upstream_modification", "future_provider_version_requires_new_gate"],
+      "properties": {
+        "extension": {"const": "EXPERIMENTAL_EXTENSION_DEFERRED"},
+        "base_gate_is_independent": {"const": true},
+        "delta_does_not_block_base": {"const": true},
+        "base_operation": {"const": "visualization.render_derived_system_view"},
+        "base_operation_status": {"const": "CURRENT_BOUNDED_CANDIDATE"},
+        "semantic_result": {"const": "PASS_28_OF_28_PROVENANCE_ONLY"},
+        "visual_result": {"const": "FAIL_UPSTREAM_WRAPPER"},
+        "diagnostics": {"const": 3},
+        "diagnostic_code": {"const": "viewer/viewport-overflow"},
+        "blocker": {"const": "UPSTREAM_COMPARE_WRAPPER_VIEWPORT_CONTAINMENT"},
+        "owner_or_upstream_fix_required": {"const": true},
+        "delta_operation_registered": {"const": false},
+        "automatic_promotion": {"const": false},
+        "no_fork_or_upstream_modification": {"const": true},
+        "future_provider_version_requires_new_gate": {"const": true}
+      }
+    },
+    "preserved_boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["step14_defer_preserved", "step15_draft_stop_preserved", "no_historical_evidence_rewritten", "default_renderer", "architecture_authority", "provider_authority", "owner_aesthetic_endorsement", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "task151"],
+      "properties": {
+        "step14_defer_preserved": {"const": true},
+        "step15_draft_stop_preserved": {"const": true},
+        "no_historical_evidence_rewritten": {"const": true},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "architecture_authority": {"const": false},
+        "provider_authority": {"const": false},
+        "owner_aesthetic_endorsement": {"const": "NOT_GRANTED_NOT_CLAIMED"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["step04_receipt_hash", "step07_validator", "step07_semantic_comparison", "step07_delta_visual_observation", "step22_receipt_hash", "immutable_delta_artifact_hashes", "step04_historical_replay", "step22_historical_replay", "current_registry_delta_scan", "upstream_mutation_scan", "automatic_promotion_scan"],
+      "properties": {
+        "step04_receipt_hash": {"const": "PASS"},
+        "step07_validator": {"const": "PASS"},
+        "step07_semantic_comparison": {"const": "PASS 28/28"},
+        "step07_delta_visual_observation": {"const": "FAIL_UPSTREAM_WRAPPER diagnostics=3"},
+        "step22_receipt_hash": {"const": "PASS"},
+        "immutable_delta_artifact_hashes": {"const": "PASS"},
+        "step04_historical_replay": {"const": "NOT_REPLAYED_HISTORICAL_RECEIPT_LATER_IR_BOUNDARY"},
+        "step22_historical_replay": {"const": "NOT_REPLAYED_HISTORICAL_REGISTRY_19_BOUNDARY"},
+        "current_registry_delta_scan": {"const": "PASS_NONE_REGISTERED"},
+        "upstream_mutation_scan": {"const": "PASS_NONE"},
+        "automatic_promotion_scan": {"const": "PASS_DISABLED"}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "architecture_delta", "installation", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "current_admission", "task151"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "architecture_delta": {"const": "EXPERIMENTAL_EXTENSION_DEFERRED"},
+        "installation": {"const": "NO_INSTALL_OR_AUTO_UPGRADE"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "current_admission": {"const": "BASE_INDEPENDENT_CANDIDATE_ONLY"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "result": {"const": "TASK150_STEP25_DELTA_REMAINS_EXPERIMENTAL_DEFERRED"},
+    "next_step": {"const": "TASK150_STEP26_FRONT_DOOR_AND_SYNC_SURFACE_RESTRAINT"},
+    "self_witness": {"const": "NOT_EMBEDDED_BY_DESIGN"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}
