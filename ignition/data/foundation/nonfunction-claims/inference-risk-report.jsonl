@@ -4463,6 +4463,7 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-3a5876130521285b","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","proof_audit":"FAIL","type_dimension_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-3a69b01948bc2d3e","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-3a6abd3be673000c","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","proof_audit":"FAIL","type_dimension_audit":"REQUIRES_HUMAN_REVIEW"}}
+{"blocked_by_disposition":true,"canonical_id":"NFC-3a6b74ecb14c0aa8","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-3a73ef94c9b235a6","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-3a742707aa68b83b","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","model_class_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-3a75bf406c5ae4dd","downstream_claim_count":0,"risk_gates":{"evidence_audit":"FAIL"}}
@@ -6883,6 +6884,7 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-602a2ca145677ca1","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-602b751d459383b5","downstream_claim_count":0,"risk_gates":{"evidence_audit":"FAIL","prediction_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-602c1057db8fdc1b","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","model_class_audit":"REQUIRES_HUMAN_REVIEW","quantifier_audit":"FAIL"}}
+{"blocked_by_disposition":true,"canonical_id":"NFC-602d708649d60467","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL","model_class_audit":"REQUIRES_HUMAN_REVIEW","quantifier_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-602e70118fb27e6b","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-603c6a074bc937e6","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","model_class_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-60429ca46e29d47b","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
@@ -8362,6 +8364,7 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-777640d03f719f40","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","model_class_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-777d9dfcb4a34a75","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","cross_domain_audit":"FAIL","definition_audit":"REQUIRES_HUMAN_REVIEW","type_dimension_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-777ef04f9ca51193","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
+{"blocked_by_disposition":true,"canonical_id":"NFC-778001aa85941d56","downstream_claim_count":0,"risk_gates":{"evidence_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-7790e798adc06be0","downstream_claim_count":0,"risk_gates":{"evidence_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-7797c269ef4b5307","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","model_class_audit":"REQUIRES_HUMAN_REVIEW","quantifier_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-7799b584feb8747d","downstream_claim_count":0,"risk_gates":{"evidence_audit":"FAIL"}}
@@ -8603,6 +8606,7 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-7b554de4538ab2a1","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-7b56fb002234a4c1","downstream_claim_count":0,"risk_gates":{"evidence_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-7b5845f6e0330292","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
+{"blocked_by_disposition":true,"canonical_id":"NFC-7b63bf032ad59cf8","downstream_claim_count":0,"risk_gates":{"evidence_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-7b646a52cf17326e","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-7b663f1bd1144d7e","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-7b67e81d80712ae5","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL"}}
@@ -10380,6 +10384,7 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-97685a1bf7ffa048","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-976b8464af918fd8","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-976eb2477b2e598f","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
+{"blocked_by_disposition":true,"canonical_id":"NFC-977aaa78e2086051","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-977c699a3bb86238","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-97820d7ee9bc2354","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-97843a268745d169","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
@@ -10976,6 +10981,7 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-a1454a8d9513630b","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-a145b2d0742616eb","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","proof_audit":"FAIL","type_dimension_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-a14cce8402a8e1f4","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","proof_audit":"FAIL","type_dimension_audit":"REQUIRES_HUMAN_REVIEW"}}
+{"blocked_by_disposition":true,"canonical_id":"NFC-a14f483170f68036","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-a1519e515fd02f43","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-a158944bcd0050c6","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-a15b8a95cc2b7c2b","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
@@ -11917,6 +11923,7 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-afa9f41c8ee6a9d8","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-afabaa20ab975902","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-afac4e3db164cadc","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
+{"blocked_by_disposition":true,"canonical_id":"NFC-afac521a866dba0b","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-afafff54af9ea43e","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-afb1ea0eee861e41","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","cross_domain_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","type_dimension_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-afb287ede8df5ffd","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL"}}
@@ -12562,6 +12569,7 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-b99810d7d4a70d6a","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-b99b60e46cff318a","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-b99ba3d69680034b","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","cross_domain_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","type_dimension_audit":"REQUIRES_HUMAN_REVIEW"}}
+{"blocked_by_disposition":true,"canonical_id":"NFC-b99eee244c75302b","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-b9a60c9966915c2b","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-b9a7fbe5667661fe","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-b9ab2e85ce2e060b","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
@@ -15960,6 +15968,7 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-ee07c30014c8ccce","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-ee0a4adc8af13bc3","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-ee0c3f96d5e0bd98","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL","evidence_audit":"FAIL"}}
+{"blocked_by_disposition":true,"canonical_id":"NFC-ee0cf88b573a5795","downstream_claim_count":0,"risk_gates":{"evidence_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-ee0db21234a3a3a9","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-ee109f8ad50cdfe0","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-ee1238bd0f5898b9","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
@@ -16517,7 +16526,6 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-f61b1edaacbc07af","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","proof_audit":"FAIL","type_dimension_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-f61c8540dc57332d","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-f61f60bdfda2d5f9","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
-{"blocked_by_disposition":true,"canonical_id":"NFC-f6218113360307f9","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-f623a5061f9a3b0b","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","proof_audit":"FAIL","type_dimension_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-f6244e8c48b6f51b","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-f62a7aefbdc9454c","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
@@ -16928,6 +16936,7 @@
 {"blocked_by_disposition":true,"canonical_id":"NFC-fc9d4f973c12b33a","downstream_claim_count":0,"risk_gates":{"evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-fc9db05d0e1d1977","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-fca621ec94bd66ac","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","model_class_audit":"REQUIRES_HUMAN_REVIEW","quantifier_audit":"FAIL"}}
+{"blocked_by_disposition":true,"canonical_id":"NFC-fcaa01ce9d26077d","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW","evidence_audit":"FAIL","internal_external_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-fcad6623ac41927b","downstream_claim_count":0,"risk_gates":{"definition_audit":"FAIL"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-fcada29394b73000","downstream_claim_count":0,"risk_gates":{"counterexample_audit":"REQUIRES_HUMAN_REVIEW","cross_domain_audit":"REQUIRES_HUMAN_REVIEW","definition_audit":"REQUIRES_HUMAN_REVIEW","type_dimension_audit":"REQUIRES_HUMAN_REVIEW"}}
 {"blocked_by_disposition":true,"canonical_id":"NFC-fcb25d19a60289b5","downstream_claim_count":0,"risk_gates":{"definition_audit":"REQUIRES_HUMAN_REVIEW"}}

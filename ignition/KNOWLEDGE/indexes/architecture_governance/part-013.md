@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [学科证据制度误配指把一个学科的证据标准硬套到另一个学科上。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4556934ed9c4df49 / 学科证据制度误配指把一个学科的证据标准硬套到另一个学科上。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代代码、实验、benchmark）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a289c454119a1f16 / 学科证据制度误配（用结构性推论替代代码、实验、benchmark）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代实验、量表、纵向研究）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e7a7fa825c1d3a77 / 学科证据制度误配（用结构性推论替代实验、量表、纵向研究）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体讨论）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d0677a28605419c1 / 学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析、历史语境分析、解释共同体讨论）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-16100ab4acc7023c / 学科证据制度误配（用结构性推论替代形式分析、媒介分析、观看情境分析）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代教育实验、长期追踪）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-3eb3e27455ac1b14 / 学科证据制度误配（用结构性推论替代教育实验、长期追踪）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配（用结构性推论替代文本细读、文学共同体讨论）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-852de08edd464ef8 / 学科证据制度误配（用结构性推论替代文本细读、文学共同体讨论）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [学科证据制度误配（用结构性推论替代计量检验）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-56bdd1353bd5f750 / 学科证据制度误配（用结构性推论替代计量检验）
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-e38495390dda9106 / 点火框架通常只能达到 L1-L3，L4-L5 需要外部调查、统计、田野、实验和反事实识别。
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [点火框架预测或解释了具体金融危机](../../../data/pending_claims.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a07ec973a0797bdc / 点火框架预测或解释了具体金融危机
-  - 来源：`data/pending_claims.csv`
-  - 依赖：—；被引用：—
-- [点火风险：** L0 来源身份丢失，L1 证据语气改变，L6 作者声音被同质化。](../../../docs/language-thought/dimensional-basis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-cd109c40a0e10bef / 点火风险：** L0 来源身份丢失，L1 证据语气改变，L6 作者声音被同质化。
-  - 来源：`docs/language-thought/dimensional-basis.md`
-  - 依赖：—；被引用：—
-- [热传导门槛扩散案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b437a7fd465ff09a / 热传导门槛扩散案例验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [版本、计数和 live ceiling 以 generated Current Snapshot、\[Current Facts\]\(./architecture/current-facts.md\)](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-edf9bbdfa6d5663a / 版本、计数和 live ceiling 以 generated Current Snapshot、\[Current Facts\]\(./architecture/current-facts.md\)
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [状态**: MAX_ADJUDICATION_COMPLETE_ARCHITECTURE_TRUTH_FREEZE_CANDIDATE](../../../reports/foundation-architecture/084-architecture-truth-freeze-readiness.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-14034f9881225cea / 状态**: MAX_ADJUDICATION_COMPLETE_ARCHITECTURE_TRUTH_FREEZE_CANDIDATE
-  - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
-  - 依赖：—；被引用：—
-- [状态含义：`SOURCE_REPORTS` 只表示输入笔记或课程这样说；`SUPPORTED_WITH_SCOPE` 表示有独立来源支持，但只到列明范围；`PARTIALLY_SUPPORTED` 表示核心方向有支撑、具体量词或细节不够；`](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2d38dd0ce6860aaf / 状态含义：`SOURCE_REPORTS` 只表示输入笔记或课程这样说；`SUPPORTED_WITH_SCOPE` 表示有独立来源支持，但只到列明范围；`PARTIALLY_SUPPORTED` 表示核心方向有支撑、具体量词或细节不够；`
-  - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [状态标注：黄色协议 — 价值方向通过、推荐修订定义通过、事实度量 pending、不阻塞其他协议；等具体模型、数据或真实应用出现时再验证（不在此重新开启完整审核）。](../../../docs/governance/meta-protocol-reviews/protocols/V2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-579416a63f3b62d2 / 状态标注：黄色协议 — 价值方向通过、推荐修订定义通过、事实度量 pending、不阻塞其他协议；等具体模型、数据或真实应用出现时再验证（不在此重新开启完整审核）。
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/V2.md`
   - 依赖：—；被引用：—

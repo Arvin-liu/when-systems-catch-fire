@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Return the standalone derived artifact and provenance receipt, or fail closed with PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIR](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b99eee244c75302b / Return the standalone derived artifact and provenance receipt, or fail closed with PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIR
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
+- [RETURNED_UNVALIDATED until independent OS validation.](../../../docs/architecture/os-steering-intent-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-dc8c2de8db498e0d / RETURNED_UNVALIDATED until independent OS validation.
+  - 来源：`docs/architecture/os-steering-intent-r1.md`
+  - 依赖：—；被引用：—
+- [Reusable program strings and model checkpoints are artifacts, but identity, packaging, signing, compatibility, and versi](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-0221ce942743397d / Reusable program strings and model checkpoints are artifacts, but identity, packaging, signing, compatibility, and versi
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [REV -.agreement not truth.-> PUB](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8e0c3848370fd6a5 / REV -.agreement not truth.-> PUB
+  - 来源：`docs/architecture/epistemic-governance-kernel-and-federated-planes.md`
+  - 依赖：—；被引用：—
+- [Review does not need to be favorable. A verified gap enters the project's gap-discovery, structural-correction, and reva](../../../docs/participate.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0d97c997982b003f / Review does not need to be favorable. A verified gap enters the project's gap-discovery, structural-correction, and reva
+  - 来源：`docs/participate.md`
+  - 依赖：—；被引用：—
 - [Review the exact remote commit. If the disposition or ceiling changes, propagate it through every dependency and all pub](../../../docs/foundation/future-claim-admission-protocol.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fcf36c112cbd954c / Review the exact remote commit. If the disposition or ceiling changes, propagate it through every dependency and all pub
@@ -58,6 +83,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-09da2c5bc483a13d / rows with explicit coverage evidence in this pass: 0
   - 来源：`outputs/research/ignition-next-collision-roadmap-20260712.md`
+  - 依赖：—；被引用：—
+- [Run the bounded adapter with the tested immutable provider ref and validate topology, viewport containment and artifact](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3a6b74ecb14c0aa8 / Run the bounded adapter with the tested immutable provider ref and validate topology, viewport containment and artifact
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
   - 依赖：—；被引用：—
 - [Run: `IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801`](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -1629,6 +1659,11 @@
   - 可搜索名称：NFC-030cd1774ac72f6d / The proposed diagnostic sequence checks representation compatibility first, parameter conflict and subspace overlap seco
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [The provider is unavailable or its immutable compatibility ref is not verified; return PROVIDER_UNAVAILABLE_IN_CURRENT_E](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-778001aa85941d56 / The provider is unavailable or its immutable compatibility ref is not verified; return PROVIDER_UNAVAILABLE_IN_CURRENT_E
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
 - [The public status remains `EPISTEMICALLY_ACCEPTED=0`; this bounded replay does not grant epistemic acceptance. Review pr](../../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-3c3fe8840720ea1c / The public status remains `EPISTEMICALLY_ACCEPTED=0`; this bounded replay does not grant epistemic acceptance. Review pr
@@ -2469,38 +2504,3 @@
   - 可搜索名称：NFC-2815fdb9ce5b52f3 / title: "定投P_sustain全局最大值（验证D34） / 定投P_sustain全局最大值\(验证D34\)"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D34；被引用：—
-- [title: "定投凯利保守性验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ae42d2227e342ed8 / title: "定投凯利保守性验证"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守 / 定投的结构保守性 - 每月5000, W=10万时f=5%, W=100万时f=0.5%, 自动递减永远保守"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-419192e4d06656a8 / title: "定投的结构保守性 — 每月5000，W=10万时f=5%，W=100万时f=0.5%，自动递减永远保守 / 定投的结构保守性 - 每月5000, W=10万时f=5%, W=100万时f=0.5%, 自动递减永远保守"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "容斥-耦合竞争Ising同构"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-87d4c008292cfae2 / title: "容斥-耦合竞争Ising同构"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "密码学碰撞验证案例"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3b54e7569bad8c12 / title: "密码学碰撞验证案例"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "导数连续性×双向动力学验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3618ec3f773d8596 / title: "导数连续性×双向动力学验证"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "小群体资源不易感验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-036771d26009407c / title: "小群体资源不易感验证"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [title: "小资金恐惧锁定向下螺旋（验证D67）"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-535a743ce27af1a6 / title: "小资金恐惧锁定向下螺旋（验证D67）"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D67；被引用：—

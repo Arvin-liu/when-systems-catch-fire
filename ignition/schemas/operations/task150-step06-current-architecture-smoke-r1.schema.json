@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step06-current-architecture-smoke-r1.schema.json",
+  "title": "Task150 Step06 Current architecture smoke",
+  "description": "Binds fresh Current-source smoke outputs to Ignition, the exact Archify revision and the bounded adapter without registering a Current operation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "fresh_source", "provider", "adapter", "runs", "stability", "derived_artifacts", "scope_freeze", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step06-current-architecture-smoke-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "06"},
+    "record_type": {"const": "CURRENT_ARCHITECTURE_SMOKE"},
+    "status": {"const": "CURRENT_ARCHITECTURE_SMOKE_OBSERVED_NOT_ADMITTED"},
+    "formal_previous_commit": {"const": "4f2de5f11fb06c7289705ddd043c3ae6ef5c21ba"},
+    "fresh_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "remote", "clone_mode", "revision", "checkout", "worktree", "non_shallow", "fsck_error_stream", "architecture_path", "architecture_sha256", "system_map_path", "system_map_sha256"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+        "remote": {"const": "https://github.com/Arvin-liu/when-systems-catch-fire.git"},
+        "clone_mode": {"const": "FRESH_FULL_CLONE"},
+        "revision": {"const": "d7372c27abe456b5b8c058675630d8038f91b448"},
+        "checkout": {"const": "DETACHED_EXACT_COMMIT"},
+        "worktree": {"const": "CLEAN"},
+        "non_shallow": {"const": true},
+        "fsck_error_stream": {"const": "EMPTY_AFTER_COMPLETION"},
+        "architecture_path": {"const": "ignition/data/architecture/overall-architecture.json"},
+        "architecture_sha256": {"const": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13"},
+        "system_map_path": {"const": "ignition/data/architecture/interactive-system-map.json"},
+        "system_map_sha256": {"const": "3824697a9c781c1ea825f7335bc9461e6fb693e70bb65c042309fd16da173313"}
+      }
+    },
+    "provider": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_id", "revision", "package_version", "schema_sha256", "role"],
+      "properties": {
+        "provider_id": {"const": "archify"},
+        "revision": {"const": "7a16d30322f5bd09c832386faa95d8c9a933f0c0"},
+        "package_version": {"const": "2.17.0-dev.0"},
+        "schema_sha256": {"const": "8c96140b6af8d93fb825a3c63e46b74176c9485185c978074ffe89e0f614576c"},
+        "role": {"const": "DERIVED_ARTIFACT_PROVIDER_NOT_AUTHORITY"}
+      }
+    },
+    "adapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "version", "flow", "ir_path", "ir_sha256", "topology"],
+      "properties": {
+        "path": {"const": "ignition/tools/run_task150_bounded_visualization_adapter.py"},
+        "sha256": {"const": "20f45aafe13ac43328f02627ecf3f49f74fe60cf24f0c907c1b315025760603e"},
+        "version": {"const": "task150-bounded-visualization-adapter-r1"},
+        "flow": {"const": "CANONICAL_SOURCE -> PROVIDER_ADAPTER -> DERIVED_ARTIFACT"},
+        "ir_path": {"const": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json"},
+        "ir_sha256": {"const": "02ee0e727af237b778fd0b88fbdb2a42eca0395b8eaed8d731636b3e4bb7b3c3"},
+        "topology": {"const": {"nodes":24,"edges":24,"semantic_relationships_unchanged":true}}
+      }
+    },
+    "runs": {
+      "type": "array",
+      "const": [
+        {"run":"one","ir_sha256":"02ee0e727af237b778fd0b88fbdb2a42eca0395b8eaed8d731636b3e4bb7b3c3","html_sha256":"42b268b31c78aa5d7c8b85a8babec8f36ee16e89878c3e07ade396208a61b6f4","svg_sha256":"34d1da4c0ed795502f1eeef3af3d82e8872953422f9ea7ce5b48549424e57952","validate":"PASS","deliver":"PASS","visual_check":"PASS","visual_review":"pending"},
+        {"run":"two","ir_sha256":"02ee0e727af237b778fd0b88fbdb2a42eca0395b8eaed8d731636b3e4bb7b3c3","html_sha256":"42b268b31c78aa5d7c8b85a8babec8f36ee16e89878c3e07ade396208a61b6f4","svg_sha256":"34d1da4c0ed795502f1eeef3af3d82e8872953422f9ea7ce5b48549424e57952","validate":"PASS","deliver":"PASS","visual_check":"PASS","visual_review":"pending"}
+      ],
+      "items": {"$ref": "#/$defs/run"}
+    },
+    "stability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ir_equal", "html_equal", "svg_equal", "observed_scope", "future_nondeterminism_claim"],
+      "properties": {
+        "ir_equal": {"const": true},
+        "html_equal": {"const": true},
+        "svg_equal": {"const": true},
+        "observed_scope": {"const": "TWO_RUNS_SAME_INPUT_SAME_PROVIDER_REVISION"},
+        "future_nondeterminism_claim": {"const": "NOT_CLAIMED"}
+      }
+    },
+    "derived_artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["html", "svg", "quality", "provenance_receipt_fields"],
+      "properties": {
+        "html": {"const": {"path":"ignition/data/operations/iterations/150/derived-artifacts/task150-current-architecture.html","sha256":"42b268b31c78aa5d7c8b85a8babec8f36ee16e89878c3e07ade396208a61b6f4","bytes":751906}},
+        "svg": {"const": {"path":"ignition/data/operations/iterations/150/derived-artifacts/task150-current-architecture.svg","sha256":"34d1da4c0ed795502f1eeef3af3d82e8872953422f9ea7ce5b48549424e57952","bytes":54708}},
+        "quality": {"const": "showcase"},
+        "provenance_receipt_fields": {"const": ["ignition_source_ref", "ignition_source_sha256", "archify_provider_revision", "adapter_version", "ir_sha256", "artifact_sha256"]}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["agent_reach", "authenticated_channels", "installation", "live_external_invocation", "current_admission", "delta_blocker"],
+      "properties": {
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channels": {"const": "NO_AUTHENTICATED_ADMISSION"},
+        "installation": {"const": "NO_INSTALL_OR_AUTO_UPGRADE"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "current_admission": {"const": "NOT_ADMITTED"},
+        "delta_blocker": {"const": "INHERITED_STEP04_UPSTREAM_WRAPPER_BLOCKER"}
+      }
+    },
+    "claim_ceiling": {"const": "Task150 Step06 records a fresh exact-source smoke, two observed stable derived outputs and their provenance bindings. It does not generalize bit-for-bit stability beyond the two runs, establish a Current capability, select a default renderer, prove perceptual quality or Owner acceptance, resolve the Step04 Delta-shell blocker, establish architecture truth, grant authenticated access, prove external truth or complete live external invocation."}
+  },
+  "$defs": {
+    "run": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["run", "ir_sha256", "html_sha256", "svg_sha256", "validate", "deliver", "visual_check", "visual_review"],
+      "properties": {
+        "run": {"enum": ["one", "two"]},
+        "ir_sha256": {"pattern": "^[0-9a-f]{64}$"},
+        "html_sha256": {"pattern": "^[0-9a-f]{64}$"},
+        "svg_sha256": {"pattern": "^[0-9a-f]{64}$"},
+        "validate": {"const": "PASS"},
+        "deliver": {"const": "PASS"},
+        "visual_check": {"const": "PASS"},
+        "visual_review": {"const": "pending"}
+      }
+    }
+  }
+}

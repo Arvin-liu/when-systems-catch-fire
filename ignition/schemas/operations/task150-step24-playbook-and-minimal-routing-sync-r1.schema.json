@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step24-playbook-and-minimal-routing-sync-r1.schema.json",
+  "title": "Task150 Step24 operation playbook and minimal routing synchronization",
+  "description": "Records the registry-derived playbook, bounded READ_ONLY_RUN route and required machine projection without broadening provider or front-door authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "capability_lookup", "request_route", "minimal_read_plan", "playbook_projection", "operating_method_projection", "lifecycle_fixture_projection", "routing_boundaries", "machine_front_door_assessment", "scope_freeze", "result", "next_step", "self_witness", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step24-playbook-and-minimal-routing-sync-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "24"},
+    "record_type": {"const": "PLAYBOOK_AND_MINIMAL_ROUTING_SYNC"},
+    "status": {"const": "PLAYBOOK_ROUTING_AND_PROJECTION_SYNC_PASS"},
+    "formal_previous_commit": {"const": "f71519b986fcb06be1bed41ee4284ab4557c0908"},
+    "capability_lookup": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "lookup_key", "operation_count", "matched", "operation_status", "ai_callability", "operation_definition_is_provider_neutral", "pack_binding", "default_execution_mode", "repository_mutation_permission", "external_action_permission"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/ignition-operation-capability-registry-r1.json"},
+        "sha256": {"const": "ec285324bbdff4a718f7ffd761a61f8d393b77b8e15967bfd2e207a6d9950ea4"},
+        "lookup_key": {"const": "visualization.render_derived_system_view"},
+        "operation_count": {"const": 20},
+        "matched": {"const": true},
+        "operation_status": {"const": "CURRENT_BOUNDED"},
+        "ai_callability": {"const": "PUBLIC_BOUNDED"},
+        "operation_definition_is_provider_neutral": {"const": true},
+        "pack_binding": {"const": null},
+        "default_execution_mode": {"const": "READ_ONLY_RUN"},
+        "repository_mutation_permission": {"const": "FORBIDDEN"},
+        "external_action_permission": {"const": "FORBIDDEN"}
+      }
+    },
+    "request_route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["user_request", "mode_classifier", "mode_classification", "run_mode", "operation_id", "operation_status", "decision", "architecture_analysis_only_auto_render", "side_effects_authorized_by_plan"],
+      "properties": {
+        "user_request": {"const": "把当前点火系统结构生成一个可交互视图。"},
+        "mode_classifier": {"const": "ignition/tools/operations/classify_ignition_run_mode.py"},
+        "mode_classification": {"const": "DEFAULT_OR_LEAST_AUTHORITY"},
+        "run_mode": {"const": "READ_ONLY_RUN"},
+        "operation_id": {"const": "visualization.render_derived_system_view"},
+        "operation_status": {"const": "CURRENT_BOUNDED"},
+        "decision": {"const": "PROCEED_BOUNDED"},
+        "architecture_analysis_only_auto_render": {"const": false},
+        "side_effects_authorized_by_plan": {"const": false}
+      }
+    },
+    "minimal_read_plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["planner", "current_ref", "core_read_count", "read_count", "reads", "core_prefix_is_preserved", "deduplicated", "canonical_source_included", "current_system_map_included", "compatibility_boundary_included", "output_contract_included"],
+      "properties": {
+        "planner": {"const": "ignition/tools/operations/plan_ignition_operation_run.py"},
+        "current_ref": {"const": "TASK150_STEP24_FORMAL_BRANCH_HEAD_f71519b986fcb06be1bed41ee4284ab4557c0908"},
+        "core_read_count": {"const": 6},
+        "read_count": {"const": 21},
+        "reads": {
+          "const": [
+            "ignition/OPERATING-METHOD.md",
+            "ignition/AI-START-HERE.md",
+            "ignition/data/architecture/current-facts.json",
+            "ignition/data/operations/current-snapshot-r1.json",
+            "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+            "ignition/data/operations/ignition-run-output-contract-r1.json",
+            "ignition/data/operations/ignition-operation-playbooks-r1.json",
+            "ignition/data/architecture/overall-architecture.json",
+            "ignition/data/architecture/interactive-system-map.json",
+            "ignition/schemas/operations/task150-step18-scope-split-admission-objects-r1.schema.json",
+            "ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json",
+            "ignition/schemas/operations/task150-step22-immutable-compatibility-envelope-r1.schema.json",
+            "ignition/data/operations/iterations/150/step22-immutable-compatibility-envelope.json",
+            "ignition/ITERATION.md",
+            "ignition/docs/foundation/claim-governance-and-function-identity.md",
+            "ignition/docs/foundation/future-claim-admission-protocol.md",
+            "ignition/tools/run_task150_bounded_visualization_adapter.py",
+            "ignition/tools/validate_task150_step21_fresh_standalone_evidence.py",
+            "ignition/tools/validate_task150_step22_immutable_compatibility_envelope.py",
+            "ignition/tests/test_task150_step21_fresh_standalone_evidence.py",
+            "ignition/tests/test_task150_step22_immutable_compatibility_envelope.py"
+          ]
+        },
+        "core_prefix_is_preserved": {"const": true},
+        "deduplicated": {"const": true},
+        "canonical_source_included": {"const": true},
+        "current_system_map_included": {"const": true},
+        "compatibility_boundary_included": {"const": true},
+        "output_contract_included": {"const": true}
+      }
+    },
+    "playbook_projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_path", "canonical_sha256", "generated_human_view", "generated_human_view_sha256", "playbook_count", "status_only_exclusion_count", "operation_playbook_present", "operation_playbook_fields_are_operation_specific_only", "generated_view_is_deterministic"],
+      "properties": {
+        "canonical_path": {"const": "ignition/data/operations/ignition-operation-playbooks-r1.json"},
+        "canonical_sha256": {"const": "a567e548225a280b22b620bc04bded91a3bdbcdbabc73ecf571801117be926fe"},
+        "generated_human_view": {"const": "ignition/docs/operations/ignition-operation-playbooks-r1.md"},
+        "generated_human_view_sha256": {"const": "1c983cfd4da8ff5a39aaecdb87bc1d041574f941d9a87253dab6a27c9a67f7f8"},
+        "playbook_count": {"const": 16},
+        "status_only_exclusion_count": {"const": 4},
+        "operation_playbook_present": {"const": true},
+        "operation_playbook_fields_are_operation_specific_only": {"const": true},
+        "generated_view_is_deterministic": {"const": true}
+      }
+    },
+    "operating_method_projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "playbook_count_statement", "provider_neutral_route_statement_present", "provider_unavailable_statement_present", "analysis_only_nonrender_statement_present"],
+      "properties": {
+        "path": {"const": "ignition/OPERATING-METHOD.md"},
+        "sha256": {"const": "139886003d2e6250e4d55ffe05e913b39d8ba562deadf6d4e5368e811ccd3072"},
+        "playbook_count_statement": {"const": "真实 registry 派生出 16 个 playbooks"},
+        "provider_neutral_route_statement_present": {"const": true},
+        "provider_unavailable_statement_present": {"const": true},
+        "analysis_only_nonrender_statement_present": {"const": true}
+      }
+    },
+    "lifecycle_fixture_projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "case_count", "bounded_visualization_route_case", "validator_result"],
+      "properties": {
+        "path": {"const": "ignition/tests/fixtures/ignition-operating-method/lifecycle-planning-r1.json"},
+        "sha256": {"const": "1436afdfd3bd88ca933d9889e2c65bd207c269337158af43d9ea7b2acee8743e"},
+        "case_count": {"const": 10},
+        "bounded_visualization_route_case": {"const": "bounded_visualization_request_routes_read_only"},
+        "validator_result": {"const": "PASS"}
+      }
+    },
+    "routing_boundaries": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider_unavailable_result", "automatic_provider_installation", "automatic_provider_substitution", "automatic_provider_update", "canonical_source_writeback", "unadmitted_provider_auto_selection", "repository_mutation", "external_action", "delta_included_in_base_route", "default_renderer", "architecture_authority", "external_truth", "production_readiness", "aesthetic_endorsement"],
+      "properties": {
+        "provider_unavailable_result": {"const": "PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT"},
+        "automatic_provider_installation": {"const": false},
+        "automatic_provider_substitution": {"const": false},
+        "automatic_provider_update": {"const": false},
+        "canonical_source_writeback": {"const": false},
+        "unadmitted_provider_auto_selection": {"const": false},
+        "repository_mutation": {"const": false},
+        "external_action": {"const": false},
+        "delta_included_in_base_route": {"const": false},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "architecture_authority": {"const": false},
+        "external_truth": {"const": false},
+        "production_readiness": {"const": false},
+        "aesthetic_endorsement": {"const": "NOT_CLAIMED"}
+      }
+    },
+    "machine_front_door_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["machine_entry", "decision", "reason", "no_archify_brand_promotion"],
+      "properties": {
+        "machine_entry": {"const": "ignition/llms.txt"},
+        "decision": {"const": "NO_CHANGE_WITH_REASON"},
+        "reason": {"type": "string", "minLength": 1},
+        "no_archify_brand_promotion": {"const": true}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "architecture_delta", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "task151"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "architecture_delta": {"const": "EXPERIMENTAL_EXTENSION_DEFERRED"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "result": {"const": "TASK150_STEP24_PLAYBOOK_AND_MINIMAL_ROUTING_SYNC_PASS"},
+    "next_step": {"const": "TASK150_STEP25_DELTA_REMAINS_EXPERIMENTAL_DEFERRED"},
+    "self_witness": {"const": "NOT_EMBEDDED_BY_DESIGN"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}

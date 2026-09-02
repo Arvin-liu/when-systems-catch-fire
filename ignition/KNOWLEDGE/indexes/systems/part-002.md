@@ -6,6 +6,16 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M19 / data/external-research/088-external-source-atlas-medium.jsonl / M19 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M20 / data/external-research/088-external-source-atlas-medium.jsonl / M20 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M21 / data/external-research/088-external-source-atlas-medium.jsonl / M21 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-05ff7ce0a1f4a050 / Object D402 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D359, D388, D402；被引用：—
-- [Object D404 defines a mechanism_model within the point-fire framework. Core: 中文：M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-104a1e37c31f6a15 / Object D404 defines a mechanism_model within the point-fire framework. Core: 中文：M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D404；被引用：—
-- [Object D405 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝\(1+τ_rat](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-bf6d676e0c853efc / Object D405 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝\(1+τ_rat
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D405；被引用：—

@@ -18,7 +18,7 @@ Only operations whose registry status is `CURRENT` or `CURRENT_BOUNDED` and whos
 | `synthesis_open_question_generation` | `PARTIAL_BOUNDED` | `knowledge.collide_object`, `research.coordinate_obligations` | Collision can expose bounded gaps and questions and REOS LIGHT can coordinate them; no unconstrained synthesis or discovery operation is registered. |
 | `writing_publication_transformation` | `COVERED_CURRENT` | `writing.apply_editorial_method`, `writing.validate_publication_surface` | The Current writing transformation and bounded publication-surface validator are both registered, while publication acceptance remains outside their authority. |
 | `translation_language_thought` | `COVERED_BOUNDED` | `language_thought.project_bounded_meaning` | The Current language-thought plane supports bounded meaning projection with framing delta and unmapped residue. |
-| `validation_audit` | `COVERED_BOUNDED` | `knowledge.validate_claim`, `knowledge.validate_evidence_link`, `maintenance.validate_checkpoint`, `research.validate_reos_light`, `writing.validate_publication_surface` | Five public bounded validators cover claim, evidence, repository checkpoint, REOS LIGHT and publication surfaces without substantive authority upgrades. |
+| `validation_audit` | `COVERED_BOUNDED` | `knowledge.validate_claim`, `knowledge.validate_evidence_link`, `maintenance.validate_checkpoint`, `research.validate_reos_light`, `visualization.render_derived_system_view`, `writing.validate_publication_surface` | Six public bounded validators cover claim, evidence, repository checkpoint, REOS LIGHT, derived visualization and publication surfaces without substantive authority upgrades. |
 | `repository_maintenance_self_iteration` | `COVERED_CURRENT` | `maintenance.inspect_repository`, `maintenance.validate_checkpoint`, `repository.apply_iteration_method` | Read-only maintenance is bounded and explicit Ignition self-change is Current only through the Iteration Method and its authorization gates. |
 | `executor_orchestration` | `STATUS_ONLY_NOT_CALLABLE` | `executor.reference_conformance`, `external.live_invocation` | The Reference Executor is REFERENCE_ONLY and live external invocation is OWNER_DEFERRED, so neither receives a callable playbook. |
 
@@ -743,6 +743,67 @@ Stop conditions：
 
 - Do not convert generic SUCCESS into a valid research outcome.
 - Do not infer proposition truth, external validity or publication status from structural validation.
+
+### `visualization.render_derived_system_view` — 生成受约束派生系统视图 / Render a bounded derived system view
+
+- Registry status: `CURRENT_BOUNDED`
+- Run mode: `READ_ONLY_RUN`
+- Repository permission: `FORBIDDEN`
+- External-action permission: `FORBIDDEN`
+
+用户常见意图：
+
+- 请生成这份当前架构的受约束派生系统视图。
+- 只读渲染当前系统图，但不要修改 canonical source。
+
+输入（registry-derived）：
+
+- `canonical architecture source`
+- `derived system view request`
+- `bounded visualization run`
+
+最小 Current read set：
+
+- Core lifecycle reads: `ignition/OPERATING-METHOD.md`, `ignition/AI-START-HERE.md`, `ignition/data/architecture/current-facts.json`, `ignition/data/operations/current-snapshot-r1.json`, `ignition/data/operations/ignition-operation-capability-registry-r1.json`, `ignition/data/operations/ignition-run-output-contract-r1.json`
+- Operation-specific required reads: `ignition/data/architecture/overall-architecture.json`, `ignition/data/architecture/interactive-system-map.json`, `ignition/schemas/operations/task150-step18-scope-split-admission-objects-r1.schema.json`, `ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json`, `ignition/schemas/operations/task150-step22-immutable-compatibility-envelope-r1.schema.json`
+- Expand with declared authority/governance/validator paths: `ignition/schemas/operations/task150-step18-scope-split-admission-objects-r1.schema.json`, `ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json`, `ignition/schemas/operations/task150-step22-immutable-compatibility-envelope-r1.schema.json`, `ignition/data/operations/iterations/150/step22-immutable-compatibility-envelope.json`, `ignition/ITERATION.md`, `ignition/docs/foundation/claim-governance-and-function-identity.md`, `ignition/docs/foundation/future-claim-admission-protocol.md`, `ignition/tools/run_task150_bounded_visualization_adapter.py`, `ignition/tools/validate_task150_step21_fresh_standalone_evidence.py`, `ignition/tools/validate_task150_step22_immutable_compatibility_envelope.py`, `ignition/tests/test_task150_step21_fresh_standalone_evidence.py`, `ignition/tests/test_task150_step22_immutable_compatibility_envelope.py`
+
+执行步骤：
+
+- Freeze the exact canonical architecture snapshot and provider-neutral operation scope.
+- Read the canonical source, current system map and declared provenance/compatibility boundaries.
+- Run the bounded adapter with the tested immutable provider ref and validate topology, viewport containment and artifact digests.
+- Return the standalone derived artifact and provenance receipt, or fail closed with PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT.
+
+必须检查的 authority：
+
+- `ignition/schemas/operations/task150-step18-scope-split-admission-objects-r1.schema.json`
+- `ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json`
+- `ignition/schemas/operations/task150-step22-immutable-compatibility-envelope-r1.schema.json`
+- `ignition/data/operations/iterations/150/step22-immutable-compatibility-envelope.json`
+- `ignition/ITERATION.md`
+- `ignition/docs/foundation/claim-governance-and-function-identity.md`
+- `ignition/docs/foundation/future-claim-admission-protocol.md`
+
+允许的最大输出：
+
+- `standalone derived system view artifact`
+- `provenance receipt`
+- `provider unavailable status`
+- Claim ceiling: Current bounded provider-neutral derived system view for declared technical use only; no canonical architecture truth, topology authority, default renderer, Delta promotion, aesthetic endorsement, external truth or production readiness.
+
+Stop conditions：
+
+- Canonical source, topology or provenance cannot be bound.
+- The provider is unavailable or its immutable compatibility ref is not verified; return PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT.
+- Viewport containment, validation or delivery fails.
+- The request asks for architecture analysis, repository mutation, external action or the deferred Architecture Delta extension rather than a derived view.
+
+不得做什么：
+
+- Do not add, delete, reorder or semantically change nodes or edges, and do not write back to the canonical architecture map.
+- Do not install, auto-update or substitute an unadmitted provider, and do not treat provider validation as architecture authority.
+- Do not auto-render for an architecture-analysis-only request or claim Current, production, aesthetic or external truth from the derived artifact.
 
 ### `writing.apply_editorial_method` — 应用之元写作法 / Apply the Zhiyuan Writing Method
 

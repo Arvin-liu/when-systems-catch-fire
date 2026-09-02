@@ -15,8 +15,8 @@ class IgnitionOperationLifecycleTests(unittest.TestCase):
     def setUp(self) -> None:
         self.fixtures = json.loads(planner.FIXTURE_PATH.read_text(encoding="utf-8"))
 
-    def test_all_nine_lifecycle_fixtures_pass(self) -> None:
-        self.assertEqual(len(self.fixtures["cases"]), 9)
+    def test_all_ten_lifecycle_fixtures_pass(self) -> None:
+        self.assertEqual(len(self.fixtures["cases"]), 10)
         self.assertEqual(planner.validate_fixtures(self.fixtures), [])
 
     def test_lifecycle_has_exact_fourteen_stages(self) -> None:
@@ -42,6 +42,17 @@ class IgnitionOperationLifecycleTests(unittest.TestCase):
         self.assertEqual(result["minimal_read_plan"][: len(planner.CORE_CURRENT_READS)], list(planner.CORE_CURRENT_READS))
         self.assertEqual(len(result["minimal_read_plan"]), len(set(result["minimal_read_plan"])))
         self.assertNotIn("ignition/RESULTS/CHRONOLOGY.md", result["minimal_read_plan"])
+
+    def test_bounded_visualization_request_routes_to_read_only_operation(self) -> None:
+        request = {"request_envelope": {"user_request": "把当前点火系统结构生成一个可交互视图。"}, "input_objects": []}
+        result = planner.plan_run(request, "visualization.render_derived_system_view", "refs/heads/main@example-current")
+        self.assertEqual(result["run_mode"], "READ_ONLY_RUN")
+        self.assertEqual(result["operation_status"], "CURRENT_BOUNDED")
+        self.assertEqual(result["decision"], "PROCEED_BOUNDED")
+        self.assertEqual(result["playbook_source"], planner.PLAYBOOKS_PATH)
+        self.assertIn("ignition/data/architecture/overall-architecture.json", result["minimal_read_plan"])
+        self.assertIn("ignition/data/architecture/interactive-system-map.json", result["minimal_read_plan"])
+        self.assertFalse(result["side_effects_authorized_by_plan"])
 
     def test_malformed_operation_or_current_ref_fails_closed(self) -> None:
         request = {"request_envelope": {"user_request": "请核查断言。"}, "input_objects": []}

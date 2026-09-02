@@ -4,6 +4,41 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [P_meta := ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E63B7C30949FE01C / P_meta := ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology / IMPLICIT-E63B7C30949FE01C / IMPLICIT-34DAE058B2385F56
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-34DAE058B2385F56 / P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology / IMPLICIT-34DAE058B2385F56 / IMPLICIT-3B9EB1F3157B12AC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3B9EB1F3157B12AC / P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology / IMPLICIT-3B9EB1F3157B12AC / IMPLICIT-34DAE058B2385F56
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BE16992822C3F95B / P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology / IMPLICIT-BE16992822C3F95B / IMPLICIT-34DAE058B2385F56
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [P_meta — 元协议投影算子](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-39300f47ccca2f89 / P_meta — 元协议投影算子
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [P_meta 元协议投影](../../../data/function_dependency.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-df26543601b76f12 / P_meta 元协议投影
+  - 来源：`data/function_dependency.csv`
+  - 依赖：—；被引用：—
+- [P_meta 元协议投影（元协议分析）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-810acb734e35c5ba / P_meta 元协议投影（元协议分析）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [P_sustain\(Ω\) = 1 - P_exit\(Ω\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-96D9F76707099695 / P_sustain\(Ω\) = 1 - P_exit\(Ω\) / IMPLICIT-96D9F76707099695
@@ -2467,40 +2502,5 @@
 - [提供跨域同构识别：不同学生动机形成的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1331c844b2e8ec0b / 提供跨域同构识别：不同学生动机形成的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：不同审美判断的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5f025e7947762168 / 提供跨域同构识别：不同审美判断的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：不同市场失灵的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b5f20445b97e3a7d / 提供跨域同构识别：不同市场失灵的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：不同战争的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0743164df71390ba / 提供跨域同构识别：不同战争的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：不同教育不平等的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-713af1386f167ed5 / 提供跨域同构识别：不同教育不平等的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：不同民主衰退的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-94e8a96a753b3113 / 提供跨域同构识别：不同民主衰退的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：不同涌现现象的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6e8a81176a88f045 / 提供跨域同构识别：不同涌现现象的结构相似性（L1）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [提供跨域同构识别：不同社会信任形成的结构相似性（L1）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1388fbfcbeb187a9 / 提供跨域同构识别：不同社会信任形成的结构相似性（L1）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—

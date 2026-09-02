@@ -49,7 +49,7 @@ class FederationOwnershipTests(unittest.TestCase):
     def test_task149_exception_is_removable_evidence_classification(self) -> None:
         policy = load("build-vs-integrate-policy-r1.json")
         exceptions = policy["exceptions"]
-        self.assertEqual(len(exceptions), 1)
+        self.assertEqual(len(exceptions), 2)
         exception = exceptions[0]
         self.assertEqual(exception["exception_id"], "HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY")
         self.assertEqual(exception["decision"], "ALLOW_HISTORICAL_OR_EXPERIMENTAL_PROVIDER_EVIDENCE_NO_RUNTIME_AUTHORITY")
@@ -57,6 +57,17 @@ class FederationOwnershipTests(unittest.TestCase):
         self.assertIn("separate formally reviewed task", exception["sunset_or_review_condition"])
         self.assertIn("generic runtime bypass", exception["sunset_or_review_condition"])
         validate_contracts(changed_paths=["data/operations/iterations/149/provider-adapter-contract-r0.json"])
+
+    def test_task150_exception_is_narrow_evidence_only_and_removable(self) -> None:
+        policy = load("build-vs-integrate-policy-r1.json")
+        exception = next(item for item in policy["exceptions"] if item["exception_id"] == "TASK150_ARCHIFY_EXPERIMENTAL_EVIDENCE_NO_RUNTIME_AUTHORITY")
+        self.assertEqual(exception["decision"], "ALLOW_TASK150_ARCHIFY_EXPERIMENTAL_EVIDENCE_NO_RUNTIME_AUTHORITY")
+        self.assertIn("Task150 Step08", exception["capability_scope"])
+        self.assertIn("no runtime", exception["capability_scope"])
+        self.assertIn("exactly four", exception["threshold_or_boundary"])
+        self.assertIn("generic runtime bypass", exception["sunset_or_review_condition"])
+        self.assertEqual(len(exception["protected_paths"]), 4)
+        validate_contracts(changed_paths=["data/operations/iterations/150/step08-provider-failure-fallback.json"])
 
     def test_expired_task149_draft_exception_is_rejected(self) -> None:
         ownership = load("os-executor-ownership-r1.json")

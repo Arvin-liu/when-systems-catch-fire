@@ -24,6 +24,9 @@
 - `REPOSITORY_CHANGE_RUN` — 只有当前请求明确要求修改点火自身时才进入，并转交[点火迭代操作法](../ignition/ITERATION.md)治理。
 - `EXTERNAL_ACTION_RUN` — 只有当前请求明确要求外部动作，且当前能力、授权与 admission 全部满足时才可能执行；模式名称本身不授予动作权限。
 
+在受支持环境中，点火也可以按 Capability Registry 生成受约束的派生系统视图；这是
+provider-neutral 的 bounded 结构阅读能力，不替代 canonical source、架构权威或真值判断。
+
 最小调用示例：
 
 > 请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。

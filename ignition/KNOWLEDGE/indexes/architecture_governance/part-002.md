@@ -369,6 +369,11 @@
   - 可搜索名称：NFC-10228456bd235e37 / `ignition/data/operations/iterations/128/step04-regression-evidence.json`.
   - 来源：`reports/operations/ignition-128-step04-regression.md`
   - 依赖：—；被引用：—
+- [`ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json`](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-fcaa01ce9d26077d / `ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json`
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
 - [`implementation_complete` 不等于 `project_synchronization_complete`。生产首页部署和实时读取必须分别验证，不能由仓库状态替代。](../../../AI-START-HERE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7af44cd48dff377a / `implementation_complete` 不等于 `project_synchronization_complete`。生产首页部署和实时读取必须分别验证，不能由仓库状态替代。
@@ -2497,10 +2502,5 @@
 - [class ArtifactRefRecord:](../../../reos_vnext/contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6700b48ab59365b4 / class ArtifactRefRecord:
-  - 来源：`reos_vnext/contract.py`
-  - 依赖：—；被引用：—
-- [class EvidenceRequest:](../../../reos_vnext/contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4af0dc121c7d0dc1 / class EvidenceRequest:
   - 来源：`reos_vnext/contract.py`
   - 依赖：—；被引用：—

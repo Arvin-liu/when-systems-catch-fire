@@ -1,0 +1,52 @@
+{
+  "schema_version": "ignition-150-step11-capability-registry-candidate-gate-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "11",
+  "record_type": "CAPABILITY_REGISTRY_CANDIDATE_GATE",
+  "status": "CANDIDATE_NOT_ADMITTED_UPSTREAM_BLOCKER",
+  "formal_previous_commit": "4b8b6351c9757fc858b59b4e3642c040ed8afc02",
+  "control_previous_commit": "9917b65491519c4352279cf354ff9a8752e9f60a",
+  "candidate": {
+    "provider_id": "archify",
+    "candidate_operation_id": "visualization.archify_bounded_derived_candidate",
+    "candidate_status": "EXPERIMENTAL_CANDIDATE_NOT_WRITTEN",
+    "registry_path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "registry_sha256_before": "35ec66971f66df89874b82f53ff1b1af1cf0d45d7fac131bbadfffa2485a3d22",
+    "registry_sha256_after": "35ec66971f66df89874b82f53ff1b1af1cf0d45d7fac131bbadfffa2485a3d22",
+    "operation_count_before": 19,
+    "operation_count_after": 19,
+    "registry_write_performed": false,
+    "operation_present_after": false
+  },
+  "gates": [
+    {"id": "no_current_provider_activation", "result": "PASS", "evidence": "Step02-Step10 scope freezes and candidate outputs remain not admitted to Current."},
+    {"id": "no_draft_exception_survives_ready", "result": "PASS", "evidence": "Task149 exception was removed/replaced before its Ready and merge lifecycle; Task150 introduces no replacement exception."},
+    {"id": "experimental_contract_not_runtime_authority", "result": "PASS", "evidence": "Step03 preserves provider-admission research contracts and all five authority invariants without runtime authority."},
+    {"id": "no_authenticated_admission", "result": "PASS", "evidence": "Steps08-10 retain NO_AUTHENTICATED_ADMISSION and no authenticated call or channel was admitted."},
+    {"id": "no_provider_homepage_claim", "result": "PASS", "evidence": "No Task150 change writes a root/front-door provider capability or homepage claim."},
+    {"id": "live_external_invocation_unchanged", "result": "PASS", "evidence": "Live external invocation remains OPEN / OWNER_DEFERRED / NOT_RUN."},
+    {"id": "nonfunction_claim_materiality_clean", "result": "PASS", "evidence": "Task149 A4 materiality and official Knowledge closure were completed before Task150; no operational/temp claim entered this candidate gate."},
+    {"id": "zero_background_current_claim", "result": "PASS", "evidence": "No formal Task150 artifact describes Archify as a Current provider, default renderer, permission source or truth authority."},
+    {"id": "delta_viewport_containment_zero_failure", "result": "FAIL", "evidence": "Step04 records three Delta viewport-overflow diagnostics caused by the upstream fixed wrapper; standalone containment does not clear the Delta gate."},
+    {"id": "owner_visual_acceptance", "result": "PENDING", "evidence": "Manual visual review and Owner aesthetic acceptance remain pending; no perceptual acceptance is inferred from automated checks."}
+  ],
+  "admission_decision": {
+    "decision": "NOT_REGISTERED",
+    "reason": "DELTA_VIEWPORT_UPSTREAM_WRAPPER_BLOCKER",
+    "candidate_registry_write": "NOT_PERFORMED",
+    "ready_or_merge_authorization": "NOT_GRANTED",
+    "next_admissible_state": "OWNER_OR_UPSTREAM_WRAPPER_FIX_AND_FRESH_REVIEW_REQUIRED"
+  },
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channels": "NO_AUTHENTICATED_ADMISSION",
+    "installation": "NO_INSTALL_OR_AUTO_UPGRADE",
+    "default_renderer": "NOT_SELECTED",
+    "current_admission": "NOT_ADMITTED",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "provider_homepage": "NO_CLAIM",
+    "successor_task": "NOT_CREATED"
+  },
+  "claim_ceiling": "Task150 Step11 proves only that the Archify-derived visualization candidate was evaluated against the registry-admission gates and deliberately not written because the Delta viewport blocker and Owner visual acceptance remain unresolved. It does not register a capability, establish Current status, select a default renderer, grant permission, admit authentication, change Agent Reach, prove architecture truth, prove external truth or authorize live external invocation."
+}

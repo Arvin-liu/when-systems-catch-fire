@@ -42,7 +42,7 @@
       "changes": 495,
       "layer_shards": 11,
       "layered_readings": 521,
-      "search_records": 24422,
+      "search_records": 24438,
       "subject_indexes": 60
     },
     "layered_reading_source_origins": 521,
@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "fc7b1f713a17711c81f484241db912a96e7a745a69a072a977e2fe494da711dd",
+      "source_sha256": "5bac68acaa10e00c6c747857c2cff0e6e586c6d7f014ea4e6fe9b77b186407e1",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2270,7 +2270,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "3cb92261935f582789a92db1cf35601b630871c17a6459f46fc69fb28ca0dc47",
+      "source_sha256": "ca384c8d815e7a68e1cb0ca78fd9fd666c4b777fc9d1df7c2d3a5d7e4f6e503b",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2347,7 +2347,7 @@
       "title": "COVERAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "9e3073e700b4a176e4a55df9b9525c64f8ea4fe38f1610422afe37901ba506b8",
+      "source_sha256": "49d9c402c88aa1b20bae258da03f93e5e4101b5c8f5e34d8b7c1ce969bb4c56d",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2373,7 +2373,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "e941e96e2b4582a77f7dc62da344ccebb5d39e2fbeef4bfef0b362444445e875",
+      "source_sha256": "96e373a762bb51e2f31c2688b9722506ecb08b5404a31b1651524b00406a4e88",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2399,7 +2399,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "29f1b070cf181718cb6a93cfeb327b35c42d9ef92c00dd3fe7f63e16eecdd809",
+      "source_sha256": "d7c3063369fd8b0539e3123907565ba86945047c99f65b8bd852751666e01a73",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-25",
@@ -2415,7 +2415,7 @@
       "title": "SEARCH",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "01413f38796d786fec122b7ec46f177e5ee7cd2fbef1cb3a8d21d74c3a94a8d0",
+      "source_sha256": "47a342f51c5631dbb7141b3c1a7e091345535449353587673c0634c0e5cdea0e",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2767,7 +2767,7 @@
       "title": "EVIDENCE-LINEAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "b44e0985bdf11c578c60780d661042f488c8c0d98720ae07421f4283363a889a",
+      "source_sha256": "c385b8a412f5a36fec62452b637828bb820070ee9c2a351c03c314cedf34a1ad",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2780,7 +2780,7 @@
       "title": "IMPACT-ANALYSIS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "ba5be6043ad8947b96967f43d5972d73b8724b315b92d40279e734a9dd6950fe",
+      "source_sha256": "49ea504d07b38fcd1fb0fce8febe090016fef31c07330d1e1c936488de8c1fc3",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2873,7 +2873,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "63807bad0c875dbc1ce18d0739365e588c7e4c437f89820bd42b92efa9c22ac4",
+      "source_sha256": "82f4177bd4870d5b2fc1b557659d64f54e4f66131139fe8594694d077ed31e69",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -3122,7 +3122,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "4b21e997ac1fb22e0b5c7fd571b5a180181ce410b272e6d698277fb57f00a0fe",
+      "source_sha256": "9d8e9284c32f6749441a5b5b366c123230ba23ddf760388039e7fd7b7dbb9cdf",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-06"
@@ -3137,7 +3137,7 @@
       "title": "identity-cards",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "f741e296edf9d058a71ee0ffd5be14b969557b351060ed295f3b8630c4a2941f",
+      "source_sha256": "16c4d2fbc76ee7837ce352d6e3f1997d62b4f29c94b1ca5ead8bbacde3f8af2f",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-08"
@@ -3152,7 +3152,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "1e6c7c32f79d79deef7ffd0429f213583e85b1d38d4af2dc495d292dd07c0976",
+      "source_sha256": "9cd54b9aa77efe2277953557ace683a71f2839eee8fc3eb519e52287bb140f95",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -4089,7 +4089,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "cbbdabdbb46641ff8745df0edb59043d71883dab523066777301e663ae449066",
+      "source_sha256": "92add40e92022b7c872d7b3491bd6e7e7d63c3892c46cda05fa10fe8fef1e8c1",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -4563,7 +4563,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "77251d84a511f1e56c5995fa83b12fdc3127aa6b35b0c19b8b09c449a16b669e",
+      "source_sha256": "74c54c459b651d2adb26d9da89b7117bd1a78b2b144b7f21b4b345d18cd59ee1",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-03",
@@ -4585,7 +4585,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "09afecb7251907ae7839096bf96bf230411a81b0fefb40ee776e153e888df719",
+      "source_sha256": "d64c188f1952a73af2e3cf49ac90b667603a5250fb7ebe62e4c786a93d0748a4",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-10",
@@ -4601,7 +4601,7 @@
       "title": "点火 Operation-specific Playbooks R1",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "5894afacbe701f27ab28da25a58e260e5547c0b9977a55b8295302d726b48ebf",
+      "source_sha256": "1c983cfd4da8ff5a39aaecdb87bc1d041574f941d9a87253dab6a27c9a67f7f8",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",

@@ -37,6 +37,18 @@ def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def git_bytes(commit: str, relative_path: str) -> bytes:
+    return subprocess.check_output(
+        ["git", "show", f"{commit}:{relative_path}"],
+        cwd=REPO_ROOT,
+        stderr=subprocess.DEVNULL,
+    )
+
+
+def git_json(commit: str, relative_path: str) -> Any:
+    return json.loads(git_bytes(commit, relative_path).decode("utf-8"))
+
+
 def validate(audit: dict[str, Any] | None = None, contract: dict[str, Any] | None = None) -> list[str]:
     audit = audit if audit is not None else load_json(AUDIT_PATH)
     contract = contract if contract is not None else load_json(CONTRACT_PATH)
@@ -63,10 +75,13 @@ def validate(audit: dict[str, Any] | None = None, contract: dict[str, Any] | Non
     if contract.get("provider_records") != []:
         errors.append("Step01 minimal contract must not contain provider records")
 
-    identity = load_json(ROOT / "data/architecture/current-system-identity.json")
-    facts = load_json(ROOT / "data/architecture/current-facts.json")
-    registry = load_json(ROOT / "data/operations/ignition-operation-capability-registry-r1.json")
-    playbooks = load_json(ROOT / "data/operations/ignition-operation-playbooks-r1.json")
+    # Step01 is a remote-truth receipt for the fresh post-Task148 baseline;
+    # later Task150 projections must not change what that historical audit
+    # observed.
+    identity = git_json(EXPECTED_BASELINE, "ignition/data/architecture/current-system-identity.json")
+    facts = git_json(EXPECTED_BASELINE, "ignition/data/architecture/current-facts.json")
+    registry = git_json(EXPECTED_BASELINE, "ignition/data/operations/ignition-operation-capability-registry-r1.json")
+    playbooks = git_json(EXPECTED_BASELINE, "ignition/data/operations/ignition-operation-playbooks-r1.json")
     if identity.get("current_formal_task_id") != "IGNITION-20260829-148":
         errors.append("Current identity no longer proves Task148 as the formal current task")
     if identity.get("current_operating_method", {}).get("identity_marker") != "Identity: `IGNITION_OPERATING_METHOD_R1`":

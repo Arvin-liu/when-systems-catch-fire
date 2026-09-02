@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-588\]\( \) \| \[心率累积耗损验证\]\( \) \| 较高静息心率与全因和心血管死亡风险相关；风险不是固定总心跳数命运，而是心率暴露](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f8854fb1c1aeb266 / \| \[C-588\]\( \) \| \[心率累积耗损验证\]\( \) \| 较高静息心率与全因和心血管死亡风险相关；风险不是固定总心跳数命运，而是心率暴露
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-589\]\( \) \| \[皮屑屏障-微生态失配验证\]\( \) \| 头屑强度由微生态、皮脂、屏障和炎症共同决定；消除路径是](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-db4461c604226879 / \| \[C-589\]\( \) \| \[皮屑屏障-微生态失配验证\]\( \) \| 头屑强度由微生态、皮脂、屏障和炎症共同决定；消除路径是
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-58\]\( \) \| \[恒大\]\( \) \| 已购房者事实上走不了（沉没成本），身体在系统内心已撤回 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6cc3dfcfce6d1ace / \| \[C-58\]\( \) \| \[恒大\]\( \) \| 已购房者事实上走不了（沉没成本），身体在系统内心已撤回 \|
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-2bf01497a9f8c707 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D111；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9df541862354af14 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d784f3c0e7c0ae2f / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—

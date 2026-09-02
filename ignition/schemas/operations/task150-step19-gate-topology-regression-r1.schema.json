@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step19-gate-topology-regression-r1.schema.json",
+  "title": "Task150 Step19 split gate topology regression",
+  "description": "Fail-closed regression proving standalone and Delta gate families are independent.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "historical_step11", "gate_topology", "regression_cases", "current_state", "result", "next_step", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step19-gate-topology-regression-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "19"},
+    "record_type": {"const": "SPLIT_GATE_TOPOLOGY_REGRESSION"},
+    "status": {"const": "SPLIT_GATE_TOPOLOGY_PASS_DELTA_REMAINS_DEFERRED"},
+    "formal_previous_commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "historical_step11": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "artifact_sha256", "combined_model_result", "historical_delta_gate", "retained_as_historical", "rewritten"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/iterations/150/step11-capability-registry-candidate-gate.json"},
+        "artifact_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "combined_model_result": {"const": "NOT_REGISTERED"},
+        "historical_delta_gate": {"const": "delta_viewport_containment_zero_failure = FAIL"},
+        "retained_as_historical": {"const": true},
+        "rewritten": {"const": false}
+      }
+    },
+    "gate_topology": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["base_operation", "delta_extension", "aesthetic_boundary", "combined_gate_model"],
+      "properties": {
+        "base_operation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["operation_id", "gate_family", "gate_ids", "all_gates_required", "standalone_viewport_gate_is_independent", "delta_gate_included", "owner_aesthetic_gate_included", "base_failure_result", "base_pass_result"],
+          "properties": {
+            "operation_id": {"const": "visualization.render_derived_system_view"},
+            "gate_family": {"const": "BASE_OPERATION_GATES"},
+            "gate_ids": {"type": "array", "minItems": 12, "uniqueItems": true, "items": {"type": "string"}},
+            "all_gates_required": {"const": true},
+            "standalone_viewport_gate_is_independent": {"const": true},
+            "delta_gate_included": {"const": false},
+            "owner_aesthetic_gate_included": {"const": false},
+            "base_failure_result": {"const": "DEFER"},
+            "base_pass_result": {"const": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE"}
+          }
+        },
+        "delta_extension": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["extension_id", "gate_family", "gate_ids", "current_result", "failure_result", "separate_admission_required", "base_gate_included", "base_pass_promotes_delta"],
+          "properties": {
+            "extension_id": {"const": "architecture_delta.before_delta_after"},
+            "gate_family": {"const": "DELTA_EXTENSION_GATES"},
+            "gate_ids": {"const": ["delta_viewport_containment_zero_failure"]},
+            "current_result": {"const": "FAIL_DEFERRED"},
+            "failure_result": {"const": "DEFER"},
+            "separate_admission_required": {"const": true},
+            "base_gate_included": {"const": false},
+            "base_pass_promotes_delta": {"const": false}
+          }
+        },
+        "aesthetic_boundary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["owner_aesthetic_endorsement_gate_in_base", "owner_aesthetic_endorsement", "functional_visual_admission_can_proceed_to_base_gates"],
+          "properties": {
+            "owner_aesthetic_endorsement_gate_in_base": {"const": false},
+            "owner_aesthetic_endorsement": {"const": "NOT_GRANTED"},
+            "functional_visual_admission_can_proceed_to_base_gates": {"const": true}
+          }
+        },
+        "combined_gate_model": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["used_for_current_admission", "historical_failure_preserved", "replacement"],
+          "properties": {
+            "used_for_current_admission": {"const": false},
+            "historical_failure_preserved": {"const": true},
+            "replacement": {"const": "INDEPENDENT_BASE_AND_DELTA_GATE_FAMILIES"}
+          }
+        }
+      }
+    },
+    "regression_cases": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "kind", "base_gate_results", "delta_gate_result", "expected_base_admission", "expected_delta_admission", "expected_registry_write", "expected_current_operation_count", "live_evidence"],
+        "properties": {
+          "id": {"type": "string"},
+          "kind": {"const": "POLICY_REGRESSION_FIXTURE"},
+          "base_gate_results": {"type": "object"},
+          "delta_gate_result": {"type": "string"},
+          "owner_aesthetic_endorsement": {"type": "string"},
+          "expected_base_admission": {"type": "string"},
+          "expected_delta_admission": {"type": "string"},
+          "expected_aesthetic_claim": {"type": "string"},
+          "expected_registry_write": {"type": "string"},
+          "expected_current_operation_count": {"type": "integer"},
+          "live_evidence": {"const": false}
+        }
+      }
+    },
+    "current_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registry_operation_count", "registry_write_in_step19", "base_operation_current", "delta_current", "default_renderer", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "task151"],
+      "properties": {
+        "registry_operation_count": {"const": 19},
+        "registry_write_in_step19": {"const": false},
+        "base_operation_current": {"const": false},
+        "delta_current": {"const": false},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "result": {"const": "TASK150_STEP19_GATE_TOPOLOGY_REGRESSION_PASS"},
+    "next_step": {"const": "TASK150_STEP20_FUNCTIONAL_VERSUS_AESTHETIC_BOUNDARY"},
+    "claim_ceiling": {"type": "string"}
+  }
+}

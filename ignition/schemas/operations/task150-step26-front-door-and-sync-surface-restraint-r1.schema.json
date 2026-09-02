@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step26-front-door-and-sync-surface-restraint-r1.schema.json",
+  "title": "Task150 Step26 front-door and synchronization-surface restraint",
+  "description": "Records the one required provider-neutral public usage entry and explicit no-change decisions for the remaining synchronization surfaces.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "synchronization_registry", "homepage", "surface_decisions", "public_expression", "validation", "scope_freeze", "result", "next_step", "self_witness", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step26-front-door-and-sync-surface-restraint-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "26"},
+    "record_type": {"const": "FRONT_DOOR_AND_SYNC_SURFACE_RESTRAINT"},
+    "status": {"const": "FRONT_DOOR_SYNC_PROVIDER_NEUTRAL_PASS"},
+    "formal_previous_commit": {"const": "11cbbf7bc7519730b16af9b5ee074b5b6b355ada"},
+    "synchronization_registry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "registry_version", "surface_count", "capability_addition_requires_usage_sync"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/synchronization-surfaces.json"},
+        "sha256": {"const": "c67508eba1b6ad37cfd723f06cb731877ca14a76bfa55e17bf17afc8d252eec9"},
+        "registry_version": {"const": "1.7.0"},
+        "surface_count": {"const": 21},
+        "capability_addition_requires_usage_sync": {"const": true}
+      }
+    },
+    "homepage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "before_sha256", "after_sha256", "decision", "allowed_statement", "provider_neutral", "no_archify_brand_promotion", "no_official_renderer_claim", "no_architecture_driven_by_archify_claim", "no_archify_validation_claim"],
+      "properties": {
+        "path": {"const": ".github/README.md"},
+        "before_sha256": {"const": "1720c242aa9329ab5cfb4d79d62253fd4d9eed6b8bae23ea9e0e08116e4cd4a0"},
+        "after_sha256": {"const": "f24f0039ae2fede1b06abc2fa37690e39786568a340a44d0c4c39fdadd1d82b7"},
+        "decision": {"const": "CHANGE_PROVIDER_NEUTRAL_USAGE_ENTRY"},
+        "allowed_statement": {"type": "string", "minLength": 1},
+        "provider_neutral": {"const": true},
+        "no_archify_brand_promotion": {"const": true},
+        "no_official_renderer_claim": {"const": true},
+        "no_architecture_driven_by_archify_claim": {"const": true},
+        "no_archify_validation_claim": {"const": true}
+      }
+    },
+    "surface_decisions": {
+      "type": "array",
+      "minItems": 21,
+      "maxItems": 21,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["surface_id", "locator", "decision", "reason"],
+        "properties": {
+          "surface_id": {"type": "string", "minLength": 1},
+          "locator": {"type": "string", "minLength": 1},
+          "decision": {"enum": ["CHANGE", "NO_CHANGE_WITH_REASON", "NOT_APPLICABLE"]},
+          "reason": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "public_expression": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["homepage_default", "provider_attribution_allowed_in", "forbidden_claims", "forbidden_claim_matches", "architecture_authority", "external_truth", "production_readiness", "owner_aesthetic_endorsement"],
+      "properties": {
+        "homepage_default": {"const": "NO_ARCHIFY_BRAND_PROMOTION"},
+        "provider_attribution_allowed_in": {"const": ["provider docs", "generated artifact receipt", "license/compatibility record"]},
+        "forbidden_claims": {"const": ["Archify 是点火官方 renderer", "点火架构由 Archify 驱动", "Archify验证了点火架构"]},
+        "forbidden_claim_matches": {"const": []},
+        "architecture_authority": {"const": false},
+        "external_truth": {"const": false},
+        "production_readiness": {"const": false},
+        "owner_aesthetic_endorsement": {"const": "NOT_GRANTED_NOT_CLAIMED"}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["synchronization_registry", "human_front_door_validator", "homepage_statement", "forbidden_homepage_claim_scan", "changed_surface_count", "unchanged_surface_decisions", "capability_registry", "default_renderer", "step24_machine_front_door"],
+      "properties": {
+        "synchronization_registry": {"const": "PASS version=1.7.0 surfaces=21"},
+        "human_front_door_validator": {"const": "PASS"},
+        "homepage_statement": {"const": "PASS_PROVIDER_NEUTRAL"},
+        "forbidden_homepage_claim_scan": {"const": "PASS_NONE"},
+        "changed_surface_count": {"const": 1},
+        "unchanged_surface_decisions": {"const": 20},
+        "capability_registry": {"const": "PASS_PROVIDER_NEUTRAL_NO_DELTA_OR_ARCHIFY_OPERATION_ID"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "step24_machine_front_door": {"const": "NO_CHANGE_WITH_REASON"}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "base_operation", "architecture_delta", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "task151"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "base_operation": {"const": "CURRENT_BOUNDED_CANDIDATE_ONLY"},
+        "architecture_delta": {"const": "EXPERIMENTAL_EXTENSION_DEFERRED"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "result": {"const": "TASK150_STEP26_FRONT_DOOR_AND_SYNC_SURFACE_RESTRAINT"},
+    "next_step": {"const": "TASK150_STEP27_ADVERSARIAL_SPLIT_SCOPE_REGRESSION"},
+    "self_witness": {"const": "NOT_EMBEDDED_BY_DESIGN"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}

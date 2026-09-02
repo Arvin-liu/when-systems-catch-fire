@@ -1,0 +1,158 @@
+{
+  "schema_version": "ignition-150-step20-functional-versus-aesthetic-boundary-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "20",
+  "record_type": "FUNCTIONAL_VERSUS_AESTHETIC_BOUNDARY",
+  "status": "BOUNDARY_DEFINED_AND_VALIDATED",
+  "formal_previous_commit": "4913e428094d22fb9356d9e132a6e1d2687b68a6",
+  "owner_decision": {
+    "decision": "REOPEN_TASK150_WITH_SCOPE_SPLIT",
+    "functional_visual_admission": "ALLOWED_TO_PROCEED",
+    "owner_aesthetic_endorsement": "NOT_GRANTED",
+    "aesthetic_endorsement_not_required_for_operation_scope": true,
+    "owner_rejected_visual": false,
+    "owner_visual_accepted": false
+  },
+  "operation": {
+    "operation_id": "visualization.render_derived_system_view",
+    "operation_definition_is_provider_neutral": true,
+    "ownership": "IGNITION",
+    "functional_boundary": {
+      "decision": "ALLOWED_TO_PROCEED",
+      "admission_state": "PROCEED_TO_FRESH_STANDALONE_EVIDENCE",
+      "current_status": "NOT_ADMITTED_PENDING_STEP21",
+      "criteria": [
+        {
+          "id": "declared_technical_readability",
+          "class": "FUNCTIONAL",
+          "status": "REQUIRES_STEP21_EVIDENCE"
+        },
+        {
+          "id": "viewport_containment",
+          "class": "FUNCTIONAL",
+          "status": "REQUIRES_STEP21_EVIDENCE"
+        },
+        {
+          "id": "topology_fidelity",
+          "class": "FUNCTIONAL",
+          "status": "REQUIRES_STEP21_EVIDENCE"
+        },
+        {
+          "id": "label_edge_collision_behavior",
+          "class": "FUNCTIONAL",
+          "status": "REQUIRES_STEP21_EVIDENCE"
+        },
+        {
+          "id": "provenance",
+          "class": "FUNCTIONAL",
+          "status": "REQUIRES_STEP21_EVIDENCE"
+        },
+        {
+          "id": "deterministic_bounded_generation",
+          "class": "FUNCTIONAL",
+          "status": "REQUIRES_STEP21_EVIDENCE"
+        },
+        {
+          "id": "failure_behavior",
+          "class": "FUNCTIONAL",
+          "status": "REQUIRES_STEP21_EVIDENCE"
+        }
+      ],
+      "required_evidence_step": "21",
+      "claim_ceiling": "Permission to perform a fresh bounded technical-use admission attempt only; no current capability, aesthetic, publication, branded or external-truth claim.",
+      "does_not_imply": [
+        "OWNER_AESTHETIC_ENDORSEMENT",
+        "OFFICIAL_IGNITION_VISUAL_STYLE",
+        "HOMEPAGE_OR_PUBLICATION_SUITABILITY",
+        "BRANDED_ASSET_SUITABILITY"
+      ]
+    },
+    "aesthetic_boundary": {
+      "decision": "NOT_GRANTED",
+      "claimed": false,
+      "required_for_current_technical_scope": false,
+      "criteria": [
+        {
+          "id": "official_ignition_visual_style",
+          "class": "AESTHETIC",
+          "status": "SEPARATE_GATE_NOT_RUN"
+        },
+        {
+          "id": "homepage_or_publication_suitability",
+          "class": "AESTHETIC",
+          "status": "SEPARATE_GATE_NOT_RUN"
+        },
+        {
+          "id": "branded_asset_suitability",
+          "class": "AESTHETIC",
+          "status": "SEPARATE_GATE_NOT_RUN"
+        },
+        {
+          "id": "owner_aesthetic_endorsement",
+          "class": "AESTHETIC",
+          "status": "NOT_GRANTED"
+        }
+      ],
+      "future_use_requires_separate_gate": true,
+      "future_use_gate_scope": [
+        "HOMEPAGE",
+        "PUBLICATION_HERO",
+        "BRANDED_ASSET"
+      ],
+      "claim_ceiling": "No aesthetic acceptance or rejection is recorded; future public, publication or branded use requires an independent Owner acceptance gate."
+    }
+  },
+  "boundary_matrix": [
+    {
+      "case": "functional_evidence_not_yet_proven_aesthetic_endorsement_absent",
+      "functional_result": "NOT_ADMITTED",
+      "aesthetic_result": "NOT_GRANTED",
+      "permitted_use": "NO_CURRENT_OR_PUBLIC_USE"
+    },
+    {
+      "case": "functional_evidence_passes_aesthetic_endorsement_absent",
+      "functional_result": "CURRENT_BOUNDED_CANDIDATE_ELIGIBLE",
+      "aesthetic_result": "NOT_GRANTED",
+      "permitted_use": "DECLARED_TECHNICAL_BOUNDED_USE_ONLY"
+    },
+    {
+      "case": "aesthetic_endorsement_present_without_functional_evidence",
+      "functional_result": "NOT_ADMITTED",
+      "aesthetic_result": "SEPARATE_ENDORSEMENT_ONLY",
+      "permitted_use": "NO_FUNCTIONAL_ADMISSION"
+    },
+    {
+      "case": "future_publication_or_branded_use",
+      "functional_result": "RELEVANT_FUNCTIONAL_GATE_REQUIRED",
+      "aesthetic_result": "SEPARATE_GATE_REQUIRED",
+      "permitted_use": "NOT_AVAILABLE_IN_STEP20"
+    }
+  ],
+  "forbidden_claim_labels": [
+    "OWNER_REJECTED_VISUAL",
+    "OWNER_VISUAL_ACCEPTED"
+  ],
+  "scope_boundaries": {
+    "architecture_delta": "EXPERIMENTAL_EXTENSION_DEFERRED",
+    "delta_viewport_gate": "FAIL_DEFERRED",
+    "current_registry_operation_count": 19,
+    "registry_write": false,
+    "default_renderer": "NOT_SELECTED",
+    "archify_architecture_authority": false,
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "task151": "FORBIDDEN"
+  },
+  "validation_contract": {
+    "functional_and_aesthetic_are_independent": true,
+    "functional_pass_without_aesthetic_does_not_create_aesthetic_claim": true,
+    "aesthetic_endorsement_without_functional_evidence_does_not_create_functional_admission": true,
+    "future_public_or_branded_use_requires_separate_aesthetic_gate": true,
+    "step20_does_not_claim_fresh_visual_evidence": true,
+    "step20_does_not_claim_current_integration": true
+  },
+  "result": "TASK150_STEP20_FUNCTIONAL_VERSUS_AESTHETIC_BOUNDARY_PASS",
+  "next_step": "TASK150_STEP21_FRESH_STANDALONE_EVIDENCE",
+  "claim_ceiling": "Step20 defines and validates the functional-versus-aesthetic boundary. It authorizes a fresh standalone evidence attempt but does not prove the Step21 visual result, provider compatibility, Current integration, Ready, merge, aesthetic endorsement, architecture truth, production readiness, authentication, external truth or live external completion."
+}

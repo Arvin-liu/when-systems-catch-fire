@@ -1219,6 +1219,16 @@
   - 可搜索名称：IMPLICIT-3E484684DBEAEAD5 / # Task 105 — Function OS v0.2 Core Capability Benchmark: Preregistration / IMPLICIT-3E484684DBEAEAD5
   - 来源：`function-os-candidate/v0.2/benchmark/PREREGISTRATION.md`
   - 依赖：—；被引用：—
+- [# Task150 Step19 — Gate topology regression](../../../data/operations/iterations/150/step19-gate-topology-regression.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-072C0C90D367A380 / # Task150 Step19 — Gate topology regression / IMPLICIT-072C0C90D367A380
+  - 来源：`data/operations/iterations/150/step19-gate-topology-regression.md`
+  - 依赖：—；被引用：—
+- [# Task150 Step20 — Functional visual admission versus aesthetic endorsement](../../../data/operations/iterations/150/step20-functional-versus-aesthetic-boundary.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1BE19931DF65DE05 / # Task150 Step20 — Functional visual admission versus aesthetic endorsement / IMPLICIT-1BE19931DF65DE05
+  - 来源：`data/operations/iterations/150/step20-functional-versus-aesthetic-boundary.md`
+  - 依赖：—；被引用：—
 - [# 元协议生成层（Meta-Protocol Generation Layer）](../../../docs/meta-protocols/README.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-028A32EBE119EED2 / # 元协议生成层（Meta-Protocol Generation Layer） / IMPLICIT-028A32EBE119EED2
@@ -1414,6 +1424,16 @@
   - 可搜索名称：IMPLICIT-456787C8B4474802 / ## Authority separation / IMPLICIT-456787C8B4474802
   - 来源：`reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md`
   - 依赖：—；被引用：—
+- [## Base operation](../../../data/operations/iterations/150/step18-scope-split-admission-objects.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5C30E6997278A66B / ## Base operation / IMPLICIT-5C30E6997278A66B
+  - 来源：`data/operations/iterations/150/step18-scope-split-admission-objects.md`
+  - 依赖：—；被引用：—
+- [## Base operation gates](../../../data/operations/iterations/150/step19-gate-topology-regression.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9BBEE82733B4D332 / ## Base operation gates / IMPLICIT-9BBEE82733B4D332
+  - 来源：`data/operations/iterations/150/step19-gate-topology-regression.md`
+  - 依赖：—；被引用：—
 - [## Baseline gate](../../../reports/operations/ignition-129-step00-steering-audit.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F6D9D7CB23D37475 / ## Baseline gate / IMPLICIT-F6D9D7CB23D37475
@@ -1449,6 +1469,11 @@
   - 可搜索名称：IMPLICIT-2BF09359AEBDB5CA / ## Conditional lifecycle gate / IMPLICIT-2BF09359AEBDB5CA
   - 来源：`data/operations/iterations/149/Task149 Owner Adjudication R1.md`
   - 依赖：—；被引用：—
+- [## Delta extension gates](../../../data/operations/iterations/150/step19-gate-topology-regression.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8200C534EE65EF51 / ## Delta extension gates / IMPLICIT-8200C534EE65EF51
+  - 来源：`data/operations/iterations/150/step19-gate-topology-regression.md`
+  - 依赖：—；被引用：—
 - [## Driver Console R3 integration](../../../docs/architecture/os-steering-intent-r1.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6EDB5ED2DD72EFCA / ## Driver Console R3 integration / IMPLICIT-6EDB5ED2DD72EFCA
@@ -1468,6 +1493,16 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A846131BDFD112F1 / ## Function OS 的边界也必须保留 / IMPLICIT-A846131BDFD112F1
   - 来源：`docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md`
+  - 依赖：—；被引用：—
+- [## Functional visual admission](../../../data/operations/iterations/150/step20-functional-versus-aesthetic-boundary.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3973F88D024D2B47 / ## Functional visual admission / IMPLICIT-3973F88D024D2B47
+  - 来源：`data/operations/iterations/150/step20-functional-versus-aesthetic-boundary.md`
+  - 依赖：—；被引用：—
+- [## Functional visual use versus aesthetic endorsement](../../../data/operations/iterations/150/step18-scope-split-admission-objects.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-764A7951AA340D35 / ## Functional visual use versus aesthetic endorsement / IMPLICIT-764A7951AA340D35
+  - 来源：`data/operations/iterations/150/step18-scope-split-admission-objects.md`
   - 依赖：—；被引用：—
 - [## Gates](../../../reports/operations/ignition-139-step07-current-state-sync.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2467,40 +2502,5 @@
 - [### \[#530｜负温度 — ε>1="超存活"态，弛豫释放能量\]\(docs/zh/cases/items/C-0530.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CA32279C8E8FA8C6 / ### \[#530｜负温度 — ε>1="超存活"态，弛豫释放能量\]\(docs/zh/cases/items/C-0530.md\) / IMPLICIT-CA32279C8E8FA8C6
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#532｜信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影\]\(docs/zh/cases/items/C-0532.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-999A4D92DC3485AE / ### \[#532｜信息熵vs热力学熵 — S_thermo=Φ在粗粒化下的投影\]\(docs/zh/cases/items/C-0532.md\) / IMPLICIT-999A4D92DC3485AE
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#533｜黑洞热力学 — S_BH=N_dof×⟨Φ\(视界\)⟩，面积律×对数律 / 黑洞热力学 - S_BH=N_dof x ⟨Φ\(视界\)⟩, 面积律 x 对数律\]\(docs/zh/cases/items/C-0533.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FAF05CCA73DDBCFA / ### \[#533｜黑洞热力学 — S_BH=N_dof×⟨Φ\(视界\)⟩，面积律×对数律 / 黑洞热力学 - S_BH=N_dof x ⟨Φ\(视界\)⟩, 面积律 x 对数律\]\(docs/zh/cases/items/C-0533.md\) / IMPLICIT-FAF05CCA73DDBCFA
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#540｜黑洞无毛 — 4维时空3方向ε>0，径向被门控否决\]\(docs/zh/cases/items/C-0540.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5083861B55787FCE / ### \[#540｜黑洞无毛 — 4维时空3方向ε>0，径向被门控否决\]\(docs/zh/cases/items/C-0540.md\) / IMPLICIT-5083861B55787FCE
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#544｜拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界\]\(docs/zh/cases/items/C-0544.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-62F3EFA9E723A33A / ### \[#544｜拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界\]\(docs/zh/cases/items/C-0544.md\) / IMPLICIT-62F3EFA9E723A33A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#546｜BEC — N个独立因子→1个共享因子，门控风险消除\]\(docs/zh/cases/items/C-0546.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4F36ED92B673C5CC / ### \[#546｜BEC — N个独立因子→1个共享因子，门控风险消除\]\(docs/zh/cases/items/C-0546.md\) / IMPLICIT-4F36ED92B673C5CC
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#548｜自旋液体 — 门控面对称性简并，无法选择进入哪个象限\]\(docs/zh/cases/items/C-0548.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5D54B747738B106B / ### \[#548｜自旋液体 — 门控面对称性简并，无法选择进入哪个象限\]\(docs/zh/cases/items/C-0548.md\) / IMPLICIT-5D54B747738B106B
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\]\(docs/zh/cases/items/C-0551.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-517D9EFA3F23FFE3 / ### \[#551｜恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大\]\(docs/zh/cases/items/C-0551.md\) / IMPLICIT-517D9EFA3F23FFE3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D404 defines a mechanism_model within the point-fire framework. Core: 中文：M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-104a1e37c31f6a15 / Object D404 defines a mechanism_model within the point-fire framework. Core: 中文：M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D404；被引用：—
+- [Object D405 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝\(1+τ_rat](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bf6d676e0c853efc / Object D405 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使频率下移，复杂度使频率上移。交叉n_cross∝\(1+τ_rat
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D405；被引用：—
 - [Object D406 defines a mechanism_model within the point-fire framework. Core: 中文：M9的g_eff_macro = \(1-R_irreversible\)·g_ef](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-eaecafe45c681a14 / Object D406 defines a mechanism_model within the point-fire framework. Core: 中文：M9的g_eff_macro = \(1-R_irreversible\)·g_ef
@@ -2492,15 +2502,5 @@
 - [\| \[C-586\]\( \) \| \[内源输出再输入污染验证\]\( \) \| 近亲、自交和连续克隆都可能体现系统把自身输出当输入源后的多样](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-69f1d3965a4029d6 / \| \[C-586\]\( \) \| \[内源输出再输入污染验证\]\( \) \| 近亲、自交和连续克隆都可能体现系统把自身输出当输入源后的多样
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-588\]\( \) \| \[心率累积耗损验证\]\( \) \| 较高静息心率与全因和心血管死亡风险相关；风险不是固定总心跳数命运，而是心率暴露](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f8854fb1c1aeb266 / \| \[C-588\]\( \) \| \[心率累积耗损验证\]\( \) \| 较高静息心率与全因和心血管死亡风险相关；风险不是固定总心跳数命运，而是心率暴露
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-589\]\( \) \| \[皮屑屏障-微生态失配验证\]\( \) \| 头屑强度由微生态、皮脂、屏障和炎症共同决定；消除路径是](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-db4461c604226879 / \| \[C-589\]\( \) \| \[皮屑屏障-微生态失配验证\]\( \) \| 头屑强度由微生态、皮脂、屏障和炎症共同决定；消除路径是
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

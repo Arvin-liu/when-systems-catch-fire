@@ -1,0 +1,29 @@
+{
+  "schema_version": "ignition-150-step09-environment-admission-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "09",
+  "record_type": "ENVIRONMENT_ADMISSION_NO_INSTALL",
+  "status": "ENVIRONMENT_ADMISSION_POLICY_PASS_NO_FORCED_INSTALL",
+  "formal_previous_commit": "eb649e6dbd9c3bd09e3a0a4bd36d03bc997b6e2b",
+  "environment_observation": {
+    "node": {"available":true,"path":"/Users/zhiyuan/.local/bin/node","version":"v22.23.0"},
+    "provider": {"id":"archify","available":true,"revision":"7a16d30322f5bd09c832386faa95d8c9a933f0c0","package_version":"2.17.0-dev.0","doctor":"PASS"}
+  },
+  "admission_policy": {
+    "present_provider":"RUN_BOUNDED_READ_ONLY",
+    "absent_provider":"PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT",
+    "absent_node":"PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT",
+    "alternate_provider":"ROUTE_ONLY_IF_EXPLICITLY_ADMITTED",
+    "automatic_system_install":false,
+    "skill_install":"EXPLICIT_REQUEST_ONLY",
+    "scope":"PROVIDER_SELECTION_IS_NOT_PERMISSION"
+  },
+  "simulated_admission_cases": [
+    {"id":"provider-present-node-present","provider_present":true,"node_present":true,"result":"RUN_BOUNDED_READ_ONLY","system_install":false},
+    {"id":"provider-absent","provider_present":false,"node_present":true,"result":"PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT","system_install":false},
+    {"id":"node-absent","provider_present":true,"node_present":false,"result":"PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT","system_install":false},
+    {"id":"both-absent","provider_present":false,"node_present":false,"result":"PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT","system_install":false}
+  ],
+  "scope_freeze": {"task150_scope":"ARCHIFY_ONLY","agent_reach":"NO_CHANGE","authenticated_channels":"NO_AUTHENTICATED_ADMISSION","installation":"NO_INSTALL_OR_AUTO_UPGRADE","live_external_invocation":"UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN","current_admission":"NOT_ADMITTED"},
+  "claim_ceiling":"Task150 Step09 proves only a bounded environment-admission policy and observation that the current host already has the pinned provider/runtime. It does not require or perform installation, establish a Current capability, authorize a provider, silently substitute another provider, change Agent Reach, admit authentication, resolve the Step04 Delta-shell blocker, establish architecture truth, prove external truth or complete live external invocation."
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "ignition-150-step07-fail-closed-fixtures-r1",
+  "task_id": "IGNITION-20260901-150",
+  "base_snapshot": "ignition/data/operations/iterations/150/delta-evidence/task150-before.json",
+  "policy": "EXACT_NODE_ID_SET_AND_EDGE_ENDPOINT_RELATION_MATCH_REQUIRED",
+  "fixtures": [
+    {"id":"extra-node","mutation":"ADD_COMPONENT","target_id":"task150-rogue-node","expected":"FAIL_TOPOLOGY_DRIFT"},
+    {"id":"extra-edge","mutation":"ADD_CONNECTION","target_id":"task150-rogue-edge","expected":"FAIL_TOPOLOGY_DRIFT"},
+    {"id":"geometry-moved","mutation":"MOVE_COMPONENT","target_id":"source-functions","expected":"PASS_TOPOLOGY_UNCHANGED_NOT_ARCHITECTURE_CHANGE"},
+    {"id":"provenance-only","mutation":"CHANGE_LINEAGE_METADATA","target_id":"meta.repository.revision","expected":"PASS_PROVENANCE_ONLY"}
+  ]
+}

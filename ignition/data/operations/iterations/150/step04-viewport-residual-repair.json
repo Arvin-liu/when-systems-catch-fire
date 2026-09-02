@@ -1,0 +1,121 @@
+{
+  "schema_version": "ignition-150-step04-viewport-residual-repair-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "04",
+  "record_type": "VIEWPORT_RESIDUAL_REPAIR",
+  "status": "UPSTREAM_BLOCKER_RECORDED",
+  "formal_previous_commit": "658e8aeffa37a4286ad62a0debb49f7bd52b1ba7",
+  "canonical_source": {
+    "path": "ignition/data/architecture/overall-architecture.json",
+    "role": "CURRENT_CANONICAL_ARCHITECTURE_SOURCE",
+    "sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+    "source_revision": "d7372c27abe456b5b8c058675630d8038f91b448",
+    "node_count": 24,
+    "edge_count": 24
+  },
+  "adapter": {
+    "path": "ignition/tools/run_task150_bounded_visualization_adapter.py",
+    "sha256": "20f45aafe13ac43328f02627ecf3f49f74fe60cf24f0c907c1b315025760603e",
+    "ir_path": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json",
+    "ir_sha256": "02ee0e727af237b778fd0b88fbdb2a42eca0395b8eaed8d731636b3e4bb7b3c3",
+    "provider_revision": "7a16d30322f5bd09c832386faa95d8c9a933f0c0",
+    "viewBox": [1650, 420],
+    "component_size": [190, 28],
+    "topology_unchanged": true,
+    "geometry_repair_only": true,
+    "forbidden_changes": [
+      "no upstream fork or source mutation",
+      "no CSS override or overflow hiding",
+      "no filler element, tiny-font or viewport-specific concealment",
+      "no topology, label, semantic relationship or architecture-truth rewrite"
+    ]
+  },
+  "baseline_reproduction": {
+    "source_receipts": [
+      "ignition/data/operations/iterations/149/step07-archify-before-r0.json",
+      "ignition/data/operations/iterations/149/step07-archify-after-r0.json"
+    ],
+    "compare_artifact_sha256": "aafd3b298856205d56997b475a593e6fea7b9cf90b51a3fb92adf3743fd808e9",
+    "semantic_checks": {"total": 28, "passed": 28},
+    "visual_check": {
+      "status": "FAIL",
+      "diagnostics": 6,
+      "residuals": [
+        {"theme":"light","viewport":"1440x900","scroll_height":1204,"ok":false},
+        {"theme":"light","viewport":"1600x1000","scroll_height":1300,"ok":false},
+        {"theme":"light","viewport":"1920x1080","scroll_height":1357,"ok":false},
+        {"theme":"light","viewport":"2048x1320","scroll_height":1490,"ok":false},
+        {"theme":"dark","viewport":"1440x900","scroll_height":1204,"ok":false},
+        {"theme":"dark","viewport":"2048x1320","scroll_height":1490,"ok":false}
+      ]
+    }
+  },
+  "repair_validation": {
+    "archify_schema_sha256": "8c96140b6af8d93fb825a3c63e46b74176c9485185c978074ffe89e0f614576c",
+    "candidate_validation": {"status":"PASS","diagnostics":0,"nodes":24,"edges":24},
+    "standalone_delivery": {
+      "status":"PASS",
+      "artifact_sha256":"42b268b31c78aa5d7c8b85a8babec8f36ee16e89878c3e07ade396208a61b6f4",
+      "bytes":751906,
+      "quality":"showcase"
+    },
+    "standalone_visual_check": {
+      "status":"PASS",
+      "visual_review":"PENDING_PERCEPTUAL_REVIEW",
+      "observations": [
+        {"theme":"light","viewport":"1440x900","scroll_height":900,"ok":true},
+        {"theme":"light","viewport":"1600x1000","scroll_height":1000,"ok":true},
+        {"theme":"light","viewport":"1920x1080","scroll_height":1080,"ok":true},
+        {"theme":"light","viewport":"2048x1320","scroll_height":1320,"ok":true},
+        {"theme":"dark","viewport":"1440x900","scroll_height":900,"ok":true},
+        {"theme":"dark","viewport":"2048x1320","scroll_height":1320,"ok":true}
+      ]
+    },
+    "delta_compare": {
+      "status":"PASS",
+      "artifact_sha256":"0e7c34bb3913863a6275f5ef96442cdef4ca32ee89cfd4bef189309245cd49b3",
+      "bytes":2157341,
+      "semantic_checks":{"total":28,"passed":28}
+    },
+    "delta_visual_check": {
+      "status":"FAIL_UPSTREAM_WRAPPER",
+      "diagnostics":3,
+      "diagnostic_code":"viewer/viewport-overflow",
+      "observations": [
+        {"theme":"light","viewport":"1440x900","scroll_height":1050,"ok":false},
+        {"theme":"light","viewport":"1600x1000","scroll_height":1074,"ok":false},
+        {"theme":"light","viewport":"1920x1080","scroll_height":1080,"ok":true},
+        {"theme":"light","viewport":"2048x1320","scroll_height":1320,"ok":true},
+        {"theme":"dark","viewport":"1440x900","scroll_height":1050,"ok":false},
+        {"theme":"dark","viewport":"2048x1320","scroll_height":1320,"ok":true}
+      ]
+    }
+  },
+  "upstream_blocker": {
+    "confirmed": true,
+    "shell_metrics": {
+      "delta_canvas_min_height_px": 520,
+      "proof_header_height_px": 181.6875,
+      "tools_height_px": 35,
+      "review_strip_height_px": 50,
+      "details_height_px": 75,
+      "footer_height_px": 14,
+      "observed_body_scroll_height_px": 1050
+    },
+    "evidence": [
+      "The Archify compare shell sets the Delta canvas to min-height: 520px.",
+      "The authored repaired SVG passes standalone containment, but the Delta shell still reports viewport overflow.",
+      "Reducing authored viewBox and geometry cannot remove the fixed upstream header, tools, review strip, canvas minimum, details and footer chrome.",
+      "No upstream fork, CSS override, overflow hiding or concealment workaround was used."
+    ],
+    "resolution": "DEFER_OWNER_OR_UPSTREAM_WRAPPER_FIX_REQUIRED_BEFORE_STEP11"
+  },
+  "scope_freeze": {
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channels": "NO_AUTHENTICATED_ADMISSION",
+    "installation": "NO_INSTALL_OR_AUTO_UPGRADE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "current_admission": "NOT_ADMITTED"
+  },
+  "claim_ceiling": "Task150 Step04 proves a geometry-only bounded derived-artifact repair and records an Archify Delta-shell viewport blocker. It does not prove perceptual quality, Owner acceptance, Current integration, a default renderer, architecture truth, production readiness, authenticated access, external truth or live external completion."
+}

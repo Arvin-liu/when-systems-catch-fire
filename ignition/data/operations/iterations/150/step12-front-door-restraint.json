@@ -1,0 +1,51 @@
+{
+  "schema_version": "ignition-150-step12-front-door-restraint-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "12",
+  "record_type": "FRONT_DOOR_RESTRAINT",
+  "status": "FRONT_DOOR_RESTRAINT_PASS_NO_HOMEPAGE_CLAIM",
+  "formal_previous_commit": "8194581147f0541488735de9a3a4ca139f60aa3a",
+  "control_previous_commit": "c6abebfb78a4d6766121646f53f9ad13202c7f5b",
+  "formal_observation": {
+    "baseline_ref": "d7372c27abe456b5b8c058675630d8038f91b448",
+    "task150_front_door_changed_paths": [],
+    "task150_root_readme_added": false,
+    "task150_readme_en_added": false,
+    "task150_product_added": false,
+    "checked_formal_front_doors": [
+      {"path": ".github/README.md", "sha256": "1720c242aa9329ab5cfb4d79d62253fd4d9eed6b8bae23ea9e0e08116e4cd4a0", "baseline_unchanged": true},
+      {"path": "ignition/AI-START-HERE.md", "sha256": "fc7b1f713a17711c81f484241db912a96e7a745a69a072a977e2fe494da711dd", "baseline_unchanged": true},
+      {"path": "ignition/OPERATING-METHOD.md", "sha256": "fe517924b0bdfee4a1b20d8ff58f03e12e1f315f3d3b440e4369a285d52f2f2c", "baseline_unchanged": true},
+      {"path": "ignition/formal/README.md", "sha256": "6380363b2dae3c1cb3bc2d4634ea49479a32c9222abd2a3e9f94c29701384402", "baseline_unchanged": true}
+    ]
+  },
+  "upstream_observation": {
+    "repository": "tt-a1i/archify",
+    "revision": "7a16d30322f5bd09c832386faa95d8c9a933f0c0",
+    "checkout": "FRESH_FULL_CLONE_EXACT_MAIN_HEAD",
+    "worktree": "CLEAN",
+    "front_doors": [
+      {"path": "README.md", "sha256": "6bd30006f63414b1083d3d86f3898f696e98d2ba3a10b772c93e160e4ed340d0", "modified_by_task150": false},
+      {"path": "README_EN.md", "sha256": "6bd30006f63414b1083d3d86f3898f696e98d2ba3a10b772c93e160e4ed340d0", "modified_by_task150": false},
+      {"path": "PRODUCT.md", "sha256": "a7aa3e4c06ab2000e400af6688a5e60593f0fd72abf7f49dda2cf72dcff43e43", "modified_by_task150": false}
+    ]
+  },
+  "claim_scan": {
+    "task150_added_provider_homepage_claim": false,
+    "task150_added_current_provider_claim": false,
+    "task150_added_default_renderer_claim": false,
+    "task150_added_public_capability_claim": false,
+    "human_front_door_acceptance": "NOT_INFERRED"
+  },
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channels": "NO_AUTHENTICATED_ADMISSION",
+    "current_admission": "NOT_ADMITTED",
+    "default_renderer": "NOT_SELECTED",
+    "provider_homepage": "NO_CLAIM",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "task151": "FORBIDDEN"
+  },
+  "claim_ceiling": "Task150 Step12 proves only that the formal and pinned upstream front-door surfaces were left unchanged and that Task150 added no Provider homepage, Current capability, default-renderer or public-availability claim. Existing general governance prose is not reclassified by this scan. It does not prove Owner acceptance, Current integration, production readiness, architecture truth, external truth or live external completion."
+}

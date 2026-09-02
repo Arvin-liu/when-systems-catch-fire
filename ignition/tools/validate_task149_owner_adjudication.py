@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -25,6 +26,11 @@ REGISTRY_PATH = ROOT / "data/operations/ignition-operation-capability-registry-r
 CLAIM_REGISTRY_PATH = ROOT / "data/foundation/nonfunction-claims/claim-registry.jsonl"
 
 EXPECTED_HEAD = "04cba7fe60ac73a13116b5b2acec5251c03cb308"
+# The Owner record was reviewed before the final Task149 refresh, but its
+# Current-state assertions describe the merged-main projection.  Keep that
+# historical projection pinned so later Task150 Current changes do not rewrite
+# the meaning of this record.
+TASK149_CURRENT_MAIN = "d7372c27abe456b5b8c058675630d8038f91b448"
 EXPECTED_CONTRACT_SHA = "9abb57273e34f98271394099a6ecefa250def26992e1f31d83b8824857ca4649"
 EXPECTED_FINAL_REPORT_SHA = "921b9c53068825d0e212e1c522ec89a0bd74a44e2f7327e573cc7347439ee0ff"
 EXPECTED_HUMAN_REPORT_SHA = "d22fbb9ae30003ac68a15f5a83e6b0bfa082411a3cc37296fe9965eff9f86bae"
@@ -47,6 +53,18 @@ def load_json(path: Path) -> Any:
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def git_bytes(commit: str, relative_path: str) -> bytes:
+    return subprocess.check_output(
+        ["git", "show", f"{commit}:{relative_path}"],
+        cwd=REPO_ROOT,
+        stderr=subprocess.DEVNULL,
+    )
+
+
+def git_json(commit: str, relative_path: str) -> Any:
+    return json.loads(git_bytes(commit, relative_path).decode("utf-8"))
 
 
 def validate(document: dict[str, Any] | None = None) -> list[str]:
@@ -84,7 +102,7 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     if final_report.get("exact_next_action") != "AWAIT_OWNER_PROVIDER_ADAPTER_REVIEW":
         errors.append("historical Step16 next action was rewritten")
 
-    facts = load_json(CURRENT_FACTS_PATH)
+    facts = git_json(TASK149_CURRENT_MAIN, "ignition/data/architecture/current-facts.json")
     if facts.get("current_formal_task_id") != "IGNITION-20260829-148":
         errors.append("Current facts no longer identify Task148")
     if facts.get("facts", {}).get("foundation", {}).get("nonfunction_claims") != 17859:
@@ -92,21 +110,30 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     if facts.get("facts", {}).get("knowledge_experience", {}).get("search_records") != EXPECTED_KNOWLEDGE_SEARCH_RECORDS:
         errors.append("Current facts Knowledge search count drifted")
 
-    registry = load_json(REGISTRY_PATH)
+    registry = git_json(TASK149_CURRENT_MAIN, "ignition/data/operations/ignition-operation-capability-registry-r1.json")
     if len(registry.get("operations", [])) != 19:
         errors.append("Current operation registry count changed")
     provider_like = [value for value in registry.values() if isinstance(value, str) and any(token in value.lower() for token in ("archify", "agent reach", "provider"))]
     if provider_like:
         errors.append("Current operation registry contains a provider-like string")
 
-    policy_path = ROOT / "data/agent-federation/build-vs-integrate-policy-r1.json"
-    policy_text = policy_path.read_text(encoding="utf-8")
+    policy_text = git_bytes(
+        TASK149_CURRENT_MAIN,
+        "ignition/data/agent-federation/build-vs-integrate-policy-r1.json",
+    ).decode("utf-8")
     if EXPIRED_EXCEPTION in policy_text:
         errors.append("expired Task149 draft exception survived")
     if REPLACEMENT_EXCEPTION not in policy_text:
         errors.append("replacement evidence-only exception is missing")
 
-    canonical_ids = {json.loads(line)["canonical_id"] for line in CLAIM_REGISTRY_PATH.read_text(encoding="utf-8").splitlines() if line.strip()}
+    canonical_ids = {
+        json.loads(line)["canonical_id"]
+        for line in git_bytes(
+            TASK149_CURRENT_MAIN,
+            "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        ).decode("utf-8").splitlines()
+        if line.strip()
+    }
     if canonical_ids & TASK149_NONFUNCTION_IDS:
         errors.append("Task149 operational record IDs remain canonical nonfunction claims")
 

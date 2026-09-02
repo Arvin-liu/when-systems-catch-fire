@@ -1,0 +1,65 @@
+{
+  "schema_version": "ignition-150-step23-candidate-registry-admission-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "23",
+  "record_type": "CANDIDATE_REGISTRY_ADMISSION",
+  "status": "CURRENT_BOUNDED_OPERATION_ADDED_CANDIDATE_ONLY",
+  "formal_previous_commit": "1a0f850af834ee88dc93ac23ec3881683991d6ac",
+  "registry": {
+    "path": "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "sha256_before": "35ec66971f66df89874b82f53ff1b1af1cf0d45d7fac131bbadfffa2485a3d22",
+    "sha256_after": "ec285324bbdff4a718f7ffd761a61f8d393b77b8e15967bfd2e207a6d9950ea4",
+    "operation_count_before": 19,
+    "operation_count_after": 20,
+    "non_pack_operation_count_after": 10,
+    "operation_present_after": true,
+    "registry_write_performed": true
+  },
+  "operation": {
+    "operation_id": "visualization.render_derived_system_view",
+    "current_status": "CURRENT_BOUNDED",
+    "operation_definition_is_provider_neutral": true,
+    "pack_binding": null,
+    "ai_callability": "PUBLIC_BOUNDED",
+    "default_execution_mode": "READ_ONLY_RUN",
+    "repository_mutation_permission": "FORBIDDEN",
+    "external_action_permission": "FORBIDDEN",
+    "explicit_owner_authorization_required": false,
+    "provider_implementation": "ARCHIFY_OPTIONAL_TESTED_IMPLEMENTATION",
+    "tested_compatibility_ref": "06dd052602dd9a369e4d034e24faef0917b5a60c"
+  },
+  "admission_boundary": {
+    "result": "ONE_PROVIDER_NEUTRAL_OPERATION_ADDED",
+    "entry_is_candidate_only_until_ready_merge_and_current_lifecycle": true,
+    "formal_ready": false,
+    "merged_to_main": false,
+    "current_on_main": false,
+    "default_renderer": "NOT_SELECTED",
+    "architecture_authority": false,
+    "delta_operation_registered": false,
+    "provider_specific_operation_registered": false,
+    "registry_count_is_expected_20": true
+  },
+  "validation": {
+    "registry_schema": "PASS",
+    "registry_semantic_validator": "PASS operations=20 pack_capabilities=10 statuses=6",
+    "operation_ids_sorted_and_unique": true,
+    "provider_neutral_id": true,
+    "read_only_and_no_side_effects": true,
+    "no_delta_registration": true,
+    "no_archify_provider_specific_id": true,
+    "no_automatic_current_promotion": true
+  },
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "OPEN_OWNER_DEFERRED_NOT_RUN",
+    "owner_aesthetic_endorsement": "NOT_GRANTED_NOT_CLAIMED",
+    "task151": "FORBIDDEN"
+  },
+  "result": "TASK150_STEP23_CANDIDATE_REGISTRY_ADMISSION_PASS",
+  "next_step": "TASK150_STEP24_PLAYBOOK_AND_MINIMAL_ROUTING_SYNC",
+  "self_witness": "NOT_EMBEDDED_BY_DESIGN",
+  "claim_ceiling": "Step23 adds one provider-neutral visualization.render_derived_system_view entry with CURRENT_BOUNDED status to the formal branch Registry at operation count 20. The entry remains a branch candidate until Ready, ordinary merge and Current lifecycle completion; this step does not make it Current on main, select a default renderer, promote Delta, grant provider or architecture authority, authorize external action, establish aesthetic endorsement or create Task151."
+}

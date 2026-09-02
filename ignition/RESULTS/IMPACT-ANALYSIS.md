@@ -266,7 +266,7 @@
 |`docs/narrative-output-layer.md`|14|0|否|
 |`docs/narrative-story-template.md`|7|0|否|
 |`docs/narrative-story-validation.md`|6|0|否|
-|`docs/operations/ignition-operation-playbooks-r1.md`|82|0|否|
+|`docs/operations/ignition-operation-playbooks-r1.md`|91|0|否|
 |`docs/operations/lifecycle-readme.md`|0|0|是|
 |`docs/operations/stage-snapshot-publication.md`|21|0|否|
 |`docs/p1-data-index-map-20260708.md`|16|0|否|

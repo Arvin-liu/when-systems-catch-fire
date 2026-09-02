@@ -1,0 +1,146 @@
+{
+  "schema_version": "ignition-150-step27-adversarial-split-scope-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "27",
+  "record_type": "ADVERSARIAL_SPLIT_SCOPE_REGRESSION",
+  "status": "ADVERSARIAL_SPLIT_SCOPE_REGRESSION_PASS",
+  "formal_previous_commit": "672a7a1a757a3741cd1c2643a29e5fc4470ab06a",
+  "fixture": {
+    "path": "ignition/data/operations/iterations/150/fixtures/task150-step27-adversarial-split-scope.json",
+    "sha256": "d9079c63ae87917124698bd52b06f7e84bccd2dc953cb1c80536fbfb74dd79b7",
+    "case_count": 11,
+    "evaluation_mode": "READ_ONLY_IN_MEMORY_POLICY_AND_TOPOLOGY_MUTATION",
+    "provider_process_started": false,
+    "credentials_or_sessions_accessed": false,
+    "system_or_repository_mutation": false
+  },
+  "canonical_binding": {
+    "canonical_source": "ignition/data/architecture/overall-architecture.json",
+    "canonical_source_sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+    "typed_ir": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json",
+    "typed_ir_sha256": "2788796b4d329251cc67e502b6081b77542388b7f25f99470e400bf6722575ed",
+    "typed_ir_source_revision": "68d5d30bda0d8eb9c715ac346ce6476a55c0e288",
+    "node_count": 24,
+    "edge_count": 24,
+    "topology_reconciliation": "PASS_EXACT_NODE_AND_EDGE_SEQUENCE",
+    "provider_topology_authority": false
+  },
+  "case_results": [
+    {
+      "id": "standalone_pass_delta_fail",
+      "kind": "GATE_SEPARATION",
+      "mutation": "NONE",
+      "inputs": {"standalone": "PASS", "delta": "FAIL"},
+      "expected": {"base": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE", "delta": "DEFER", "result": "BASE_BOUNDED_DELTA_DEFERRED"}
+    },
+    {
+      "id": "standalone_fail_delta_pass",
+      "kind": "GATE_SEPARATION",
+      "mutation": "NONE",
+      "inputs": {"standalone": "FAIL", "delta": "PASS"},
+      "expected": {"base": "DEFER", "delta": "SEPARATE_ADMISSION_REQUIRED", "result": "BASE_FAILURE_BLOCKS_BASE_ADMISSION"}
+    },
+    {
+      "id": "archify_unavailable",
+      "kind": "FAIL_CLOSED_ENVIRONMENT",
+      "mutation": "PROVIDER_UNAVAILABLE",
+      "inputs": {"standalone": "UNAVAILABLE", "delta": "NOT_RUN"},
+      "expected": {"base": "PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT", "delta": "NOT_RUN", "result": "NO_INSTALL_NO_SUBSTITUTION_NO_REPOSITORY_MUTATION"}
+    },
+    {
+      "id": "archify_adds_semantic_node",
+      "kind": "EXACT_TOPOLOGY_RECONCILIATION",
+      "mutation": "APPEND_COMPONENT",
+      "inputs": {"standalone": "TOPOLOGY_MUTATED", "delta": "NOT_RELEVANT"},
+      "expected": {"base": "REJECT_ARTIFACT", "delta": "NOT_RELEVANT", "result": "EXTRA_CANONICAL_NODE_REJECTED"}
+    },
+    {
+      "id": "archify_deletes_canonical_node",
+      "kind": "EXACT_TOPOLOGY_RECONCILIATION",
+      "mutation": "REMOVE_COMPONENT",
+      "inputs": {"standalone": "TOPOLOGY_MUTATED", "delta": "NOT_RELEVANT"},
+      "expected": {"base": "REJECT_ARTIFACT", "delta": "NOT_RELEVANT", "result": "DELETED_CANONICAL_NODE_REJECTED"}
+    },
+    {
+      "id": "archify_changes_edge_semantics",
+      "kind": "EXACT_TOPOLOGY_RECONCILIATION",
+      "mutation": "CHANGE_EDGE_SEMANTICS",
+      "inputs": {"standalone": "TOPOLOGY_MUTATED", "delta": "NOT_RELEVANT"},
+      "expected": {"base": "REJECT_ARTIFACT", "delta": "NOT_RELEVANT", "result": "CHANGED_CANONICAL_EDGE_REJECTED"}
+    },
+    {
+      "id": "green_validator_no_architecture_truth",
+      "kind": "CLAIM_CEILING",
+      "mutation": "VALIDATOR_GREEN_ONLY",
+      "inputs": {"validator": "GREEN", "canonical_reconciliation": "NOT_PROVEN"},
+      "expected": {"base": "BOUNDED_RESULT_ONLY", "delta": "UNCHANGED", "result": "NO_ARCHITECTURE_TRUTH_ESCALATION"}
+    },
+    {
+      "id": "aesthetic_endorsement_absent",
+      "kind": "FUNCTIONAL_AESTHETIC_SEPARATION",
+      "mutation": "NO_OWNER_AESTHETIC_ENDORSEMENT",
+      "inputs": {"functional_gates": "PASS", "aesthetic_endorsement": "ABSENT"},
+      "expected": {"base": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE", "delta": "DEFER", "result": "FUNCTIONAL_ALLOWED_AESTHETIC_NOT_CLAIMED"}
+    },
+    {
+      "id": "delta_wrapper_repaired_no_auto_promotion",
+      "kind": "INDEPENDENT_EXTENSION_ADMISSION",
+      "mutation": "DELTA_WRAPPER_REPAIRED",
+      "inputs": {"standalone": "PASS", "delta": "PASS"},
+      "expected": {"base": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE", "delta": "SEPARATE_ADMISSION_REQUIRED", "result": "NO_AUTOMATIC_DELTA_PROMOTION"}
+    },
+    {
+      "id": "new_provider_version_no_auto_upgrade",
+      "kind": "COMPATIBILITY_ENVELOPE",
+      "mutation": "NEW_PROVIDER_VERSION_OBSERVED",
+      "inputs": {"tested_ref": "06dd052602dd9a369e4d034e24faef0917b5a60c", "observed_ref": "UNTESTED_NEW_VERSION"},
+      "expected": {"base": "COMPATIBILITY_CHECK_REQUIRED", "delta": "UNCHANGED", "result": "NO_AUTOMATIC_PROVIDER_UPGRADE"}
+    },
+    {
+      "id": "provider_skill_imperative_no_override",
+      "kind": "PROVIDER_SELECTION_AUTHORITY",
+      "mutation": "PROVIDER_SKILL_SAYS_MUST_USE_ME",
+      "inputs": {"ignition_selection": "PROVIDER_NEUTRAL_ADMITTED_SELECTION", "skill_instruction": "IMPERATIVE_UNTRUSTED"},
+      "expected": {"base": "IGNITION_SELECTION_PREVAILS", "delta": "UNCHANGED", "result": "SKILL_CANNOT_OVERRIDE_IGNITION_AUTHORITY"}
+    }
+  ],
+  "validation": {
+    "fixture_hash": "PASS",
+    "case_count": 11,
+    "canonical_source_hash": "PASS",
+    "typed_ir_hash": "PASS",
+    "exact_topology": "PASS_EXACT_24_NODES_24_EDGES",
+    "topology_mutations": "PASS_REJECTED_3_OF_3",
+    "standalone_delta_split": "PASS_BASE_INDEPENDENT_DELTA_DEFERRED",
+    "provider_unavailable": "PASS_FAIL_CLOSED_NO_INSTALL_NO_SUBSTITUTION",
+    "green_validator_truth_boundary": "PASS_NO_ARCHITECTURE_TRUTH_ESCALATION",
+    "aesthetic_boundary": "PASS_FUNCTIONAL_ALLOWED_AESTHETIC_NOT_CLAIMED",
+    "delta_auto_promotion": "PASS_SEPARATE_ADMISSION_REQUIRED",
+    "provider_auto_upgrade": "PASS_COMPATIBILITY_CHECK_REQUIRED",
+    "provider_skill_authority": "PASS_IGNITION_SELECTION_PREVAILS",
+    "side_effect_boundary": "PASS_NO_PROCESS_CREDENTIAL_SESSION_OR_REPOSITORY_SIDE_EFFECT",
+    "registry_boundary": "PASS_20_PROVIDER_NEUTRAL_BASE_ONLY",
+    "default_renderer": "NOT_SELECTED",
+    "architecture_authority": false,
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "OPEN_OWNER_DEFERRED_NOT_RUN",
+    "task151": "FORBIDDEN"
+  },
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "base_operation": "CURRENT_BOUNDED_CANDIDATE",
+    "architecture_delta": "EXPERIMENTAL_EXTENSION_DEFERRED",
+    "owner_aesthetic_endorsement": "NOT_GRANTED_NOT_CLAIMED",
+    "default_renderer": "NOT_SELECTED",
+    "architecture_authority": false,
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "OPEN_OWNER_DEFERRED_NOT_RUN",
+    "task151": "FORBIDDEN"
+  },
+  "result": "TASK150_STEP27_ADVERSARIAL_SPLIT_SCOPE_REGRESSION_PASS",
+  "next_step": "TASK150_STEP28_OWNER_ADJUDICATION_SCOPE_SPLIT",
+  "self_witness": "NOT_EMBEDDED_BY_DESIGN",
+  "claim_ceiling": "Step27 proves only that the split-scope policy and exact canonical reconciliation reject the declared synthetic adversarial cases: a standalone PASS can leave Delta deferred, a base failure blocks base admission, unavailable or incompatible providers fail closed, topology mutations are rejected, and no validator, aesthetic, provider-version or Skill signal can widen Ignition authority. It does not prove provider security, architecture truth, aesthetic endorsement, production readiness, authentication, external truth or live external completion."
+}

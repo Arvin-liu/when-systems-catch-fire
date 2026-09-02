@@ -1,0 +1,113 @@
+{
+  "schema_version": "ignition-150-step25-delta-remains-experimental-deferred-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "25",
+  "record_type": "DELTA_REMAINS_EXPERIMENTAL_DEFERRED",
+  "status": "DELTA_SCOPE_SPLIT_DEFERRED_PASS",
+  "formal_previous_commit": "958292bf4fb438ef4458e0403774466bde5ccaf7",
+  "evidence": {
+    "step04_blocker_receipt": {
+      "path": "ignition/data/operations/iterations/150/step04-viewport-residual-repair.json",
+      "sha256": "9c80133dd55d0d771ea3538e5a8495b863b78c6d0a7abc2c9b8207c263ecb2ce",
+      "status": "UPSTREAM_BLOCKER_RECORDED",
+      "delta_visual_status": "FAIL_UPSTREAM_WRAPPER",
+      "diagnostics": 3,
+      "diagnostic_code": "viewer/viewport-overflow",
+      "blocker_confirmed": true,
+      "historical_replay": "NOT_REPLAYED_HISTORICAL_RECEIPT_LATER_IR_BOUNDARY"
+    },
+    "step07_delta_smoke_receipt": {
+      "path": "ignition/data/operations/iterations/150/step07-architecture-delta-smoke.json",
+      "sha256": "9d4e553b577374aeaa1f3c295ad5d0c936b17519241cad5a905ba79bf28d4a58",
+      "semantic_status": "PASS_PROVENANCE_ONLY",
+      "semantic_checks_passed": 28,
+      "semantic_checks_total": 28,
+      "delta_visual_status": "FAIL_UPSTREAM_WRAPPER",
+      "diagnostics": 3,
+      "diagnostic_code": "viewer/viewport-overflow",
+      "historical_validator": "PASS"
+    },
+    "step22_compatibility_receipt": {
+      "path": "ignition/data/operations/iterations/150/step22-immutable-compatibility-envelope.json",
+      "sha256": "db7d5aa2efd64572e80c12b578b7b392a0307263f3a848039902f848f37d2bdd",
+      "tested_immutable_provider_ref": "06dd052602dd9a369e4d034e24faef0917b5a60c",
+      "historical_delta_gate": "FAIL_DEFERRED",
+      "historical_registry_count": 19,
+      "historical_replay": "NOT_REPLAYED_HISTORICAL_REGISTRY_19_BOUNDARY"
+    },
+    "immutable_delta_artifacts": [
+      {
+        "path": "ignition/data/operations/iterations/150/delta-evidence/task150-delta-receipt.json",
+        "sha256": "a41f4486eb88454da4dd37adb6d85593a07146a39179c5760a9b6f4b5007f7b1",
+        "role": "HISTORICAL_DELTA_MACHINE_RECEIPT"
+      },
+      {
+        "path": "ignition/data/operations/iterations/150/delta-evidence/task150-delta.html",
+        "sha256": "0c03203600ea496e2d7b015c181b673f9e9e489b6c4141878c56551d3999390a",
+        "role": "HISTORICAL_DELTA_DERIVED_VIEW"
+      },
+      {
+        "path": "ignition/data/operations/iterations/150/delta-evidence/task150-delta-visual-check.json",
+        "sha256": "f5d96d9bd6f19c06f517804783cefdaddddaae55fa8d3316c5159ef586ba0d50",
+        "role": "HISTORICAL_DELTA_VISUAL_RECEIPT"
+      }
+    ]
+  },
+  "delta_gate": {
+    "extension": "EXPERIMENTAL_EXTENSION_DEFERRED",
+    "base_gate_is_independent": true,
+    "delta_does_not_block_base": true,
+    "base_operation": "visualization.render_derived_system_view",
+    "base_operation_status": "CURRENT_BOUNDED_CANDIDATE",
+    "semantic_result": "PASS_28_OF_28_PROVENANCE_ONLY",
+    "visual_result": "FAIL_UPSTREAM_WRAPPER",
+    "diagnostics": 3,
+    "diagnostic_code": "viewer/viewport-overflow",
+    "blocker": "UPSTREAM_COMPARE_WRAPPER_VIEWPORT_CONTAINMENT",
+    "owner_or_upstream_fix_required": true,
+    "delta_operation_registered": false,
+    "automatic_promotion": false,
+    "no_fork_or_upstream_modification": true,
+    "future_provider_version_requires_new_gate": true
+  },
+  "preserved_boundaries": {
+    "step14_defer_preserved": true,
+    "step15_draft_stop_preserved": true,
+    "no_historical_evidence_rewritten": true,
+    "default_renderer": "NOT_SELECTED",
+    "architecture_authority": false,
+    "provider_authority": false,
+    "owner_aesthetic_endorsement": "NOT_GRANTED_NOT_CLAIMED",
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "OPEN_OWNER_DEFERRED_NOT_RUN",
+    "task151": "FORBIDDEN"
+  },
+  "validation": {
+    "step04_receipt_hash": "PASS",
+    "step07_validator": "PASS",
+    "step07_semantic_comparison": "PASS 28/28",
+    "step07_delta_visual_observation": "FAIL_UPSTREAM_WRAPPER diagnostics=3",
+    "step22_receipt_hash": "PASS",
+    "immutable_delta_artifact_hashes": "PASS",
+    "step04_historical_replay": "NOT_REPLAYED_HISTORICAL_RECEIPT_LATER_IR_BOUNDARY",
+    "step22_historical_replay": "NOT_REPLAYED_HISTORICAL_REGISTRY_19_BOUNDARY",
+    "current_registry_delta_scan": "PASS_NONE_REGISTERED",
+    "upstream_mutation_scan": "PASS_NONE",
+    "automatic_promotion_scan": "PASS_DISABLED"
+  },
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "architecture_delta": "EXPERIMENTAL_EXTENSION_DEFERRED",
+    "installation": "NO_INSTALL_OR_AUTO_UPGRADE",
+    "agent_reach": "NO_CHANGE",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "OPEN_OWNER_DEFERRED_NOT_RUN",
+    "current_admission": "BASE_INDEPENDENT_CANDIDATE_ONLY",
+    "task151": "FORBIDDEN"
+  },
+  "result": "TASK150_STEP25_DELTA_REMAINS_EXPERIMENTAL_DEFERRED",
+  "next_step": "TASK150_STEP26_FRONT_DOOR_AND_SYNC_SURFACE_RESTRAINT",
+  "self_witness": "NOT_EMBEDDED_BY_DESIGN",
+  "claim_ceiling": "Step25 records the scope-split decision that the Architecture Delta extension remains EXPERIMENTAL_EXTENSION_DEFERRED because the historical semantic comparison is provenance-only while the compare wrapper retains three viewport-containment failures. It preserves the historical Step04, Step07 and Step22 evidence without replaying later-incompatible baselines, and does not block the independent provider-neutral base candidate. It does not promote Delta, select a renderer, grant provider or architecture authority, establish aesthetic endorsement, authorize authentication or live external action, establish external truth or create Task151."
+}
