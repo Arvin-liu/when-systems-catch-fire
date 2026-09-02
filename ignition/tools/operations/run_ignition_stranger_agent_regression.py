@@ -12,14 +12,19 @@ import argparse
 import copy
 import hashlib
 import json
+import os
 import re
+import subprocess
 import sys
+import tarfile
+import tempfile
 from pathlib import Path
 from typing import Any
 
 
 HERE = Path(__file__).resolve()
 ROOT = HERE.parents[2]
+REPO_ROOT = ROOT.parent
 sys.path.insert(0, str(HERE.parent))
 sys.path.insert(0, str(ROOT / "tools/foundation"))
 
@@ -38,6 +43,10 @@ FIXTURE_PATH = ROOT / "tests/fixtures/ignition-operating-method/stranger-agent-a
 UNIFIED_FIXTURE_PATH = ROOT / "tests/fixtures/ignition-operating-method/unified-output-r1.json"
 RECEIPT_PATH = ROOT / "data/operations/iterations/148/step13-stranger-agent-adversarial-regression.json"
 CURRENT_REF = "TASK148_STEP12_PARENT_3a8ffb04eb1263f105810479346ce8576309a58e"
+# The receipt was refreshed from this exact source tree.  CURRENT_REF is the
+# formal Current reference embedded in the evidence and predates the suite's
+# source files; it is therefore not itself sufficient to replay the receipt.
+HISTORICAL_SOURCE_COMMIT = "6f6919b4b183f0041448ced7c3e7234c7354c0a3"
 REQUIRED_CASE_IDS = (
     "A_NOTE_URL_DEFAULT_READ_ONLY",
     "B_EXPLICIT_PROTOCOL_CHANGE_ROUTES_ITERATION",
@@ -91,11 +100,15 @@ def _canonical_hash(document: dict[str, Any]) -> str:
     return _sha256_bytes(payload)
 
 
-def _source_digests() -> dict[str, str]:
+def _source_digests_for_root(ignition_root: Path) -> dict[str, str]:
     return {
-        f"ignition/{relative}": _sha256_bytes((ROOT / relative).read_bytes())
+        f"ignition/{relative}": _sha256_bytes((ignition_root / relative).read_bytes())
         for relative in SOURCE_DIGEST_PATHS
     }
+
+
+def _source_digests() -> dict[str, str]:
+    return _source_digests_for_root(ROOT)
 
 
 def _validated_source_digests(value: Any) -> dict[str, str]:
@@ -617,18 +630,76 @@ def run_suite(
 
 
 def replay_historical_receipt(persisted: dict[str, Any]) -> dict[str, Any]:
-    """Re-run current behavior while preserving the receipt's source snapshot.
+    """Replay the receipt against the exact historical source snapshot.
 
     Task148's receipt is historical evidence.  Later Current closeout work can
-    legitimately change a contract source without rewriting that receipt.  A
-    replay therefore recomputes all cases and effects under the current code,
-    but retains the receipt's recorded source digests for its historical
-    identity.  The caller must report this as replay, not as a current-source
-    exact match.
+    legitimately change a contract source, fixture, or canonical projection
+    without rewriting that receipt.  Re-running the current code while merely
+    copying old digests would therefore be a false historical replay.  This
+    function materializes the source tree whose bytes match the receipt's
+    recorded digests, runs that tree's own JSON emitter, and returns its
+    independently recomputed report.
     """
-    return run_suite(
-        source_digests=_validated_source_digests(persisted.get("source_digests"))
-    )
+    expected_digests = _validated_source_digests(persisted.get("source_digests"))
+    if persisted.get("current_ref") != CURRENT_REF:
+        raise StrangerAgentRegressionError("historical receipt Current ref differs from the Step13 contract")
+
+    with tempfile.TemporaryDirectory(prefix="ignition-stranger-agent-replay-") as temporary:
+        temporary_root = Path(temporary)
+        archive_path = temporary_root / "historical-source.tar"
+        materialized_root = temporary_root / "repository"
+        materialized_root.mkdir()
+        try:
+            subprocess.run(
+                [
+                    "git",
+                    "archive",
+                    "--format=tar",
+                    f"--output={archive_path}",
+                    HISTORICAL_SOURCE_COMMIT,
+                ],
+                cwd=REPO_ROOT,
+                check=True,
+                capture_output=True,
+            )
+            with tarfile.open(archive_path, mode="r") as archive:
+                archive.extractall(materialized_root)
+        except (OSError, subprocess.CalledProcessError, tarfile.TarError) as exc:
+            raise StrangerAgentRegressionError(
+                f"historical source materialization failed: {exc}"
+            ) from exc
+
+        historical_ignition_root = materialized_root / "ignition"
+        actual_digests = _source_digests_for_root(historical_ignition_root)
+        if actual_digests != expected_digests:
+            raise StrangerAgentRegressionError(
+                "historical source snapshot does not match the receipt's recorded digests"
+            )
+
+        runner = historical_ignition_root / "tools/operations/run_ignition_stranger_agent_regression.py"
+        result = subprocess.run(
+            [sys.executable, str(runner), "--emit-json"],
+            cwd=materialized_root,
+            env={**os.environ, "PYTHONPATH": str(historical_ignition_root)},
+            text=True,
+            capture_output=True,
+        )
+        if result.returncode != 0:
+            detail = (result.stderr or result.stdout).strip()
+            raise StrangerAgentRegressionError(
+                f"historical stranger-Agent emitter failed: {detail}"
+            )
+        try:
+            report = json.loads(result.stdout)
+        except json.JSONDecodeError as exc:
+            raise StrangerAgentRegressionError(
+                "historical stranger-Agent emitter did not return JSON"
+            ) from exc
+        if report.get("source_digests") != expected_digests:
+            raise StrangerAgentRegressionError(
+                "historical stranger-Agent report source digests drifted"
+            )
+        return report
 
 
 def main() -> int:

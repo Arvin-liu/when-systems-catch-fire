@@ -61,6 +61,13 @@ POST_STEP17_SOURCE_RECONCILIATIONS = {
     # by validating its recorded after-bytes from the Step17 publication
     # commit, while validating the current Changelog with its own profile.
     "ignition/STATE-CHANGELOG.md",
+    # These are Task149's historical source surfaces.  Task150 later adds a
+    # provider-neutral operation and refreshes the same files; replay them
+    # from the Step17 publication tree so the old receipt stays immutable.
+    ".github/README.md",
+    "ignition/OPERATING-METHOD.md",
+    "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+    "ignition/data/operations/ignition-operation-playbooks-r1.json",
 }
 
 

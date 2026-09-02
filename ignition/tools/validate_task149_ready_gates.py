@@ -16,6 +16,10 @@ HERE = Path(__file__).resolve()
 ROOT = HERE.parents[1]
 REPO_ROOT = ROOT.parent
 BASE_SHA = "14c2595d796494286caf31378173fd9dd027edcf"
+# Task149 Ready gates are an era-bound check.  The later Task150 branch is
+# allowed to change the live Current projections, so validate the last
+# Task149 merged-main tree rather than the working tree.
+TASK149_CURRENT_MAIN = "d7372c27abe456b5b8c058675630d8038f91b448"
 OWNER_RECORD_PATH = ROOT / "data/operations/iterations/149/task149-owner-adjudication-r1.json"
 FINAL_REPORT_PATH = ROOT / "data/operations/iterations/149/final-report-external-capability-provider-adapter-spikes-r0.json"
 CONTRACT_PATHS = [
@@ -92,6 +96,22 @@ def command_output(args: list[str]) -> tuple[int, str]:
     return result.returncode, result.stdout + result.stderr
 
 
+def git_bytes(commit: str, relative_path: str) -> bytes:
+    return subprocess.check_output(
+        ["git", "show", f"{commit}:{relative_path}"],
+        cwd=REPO_ROOT,
+        stderr=subprocess.DEVNULL,
+    )
+
+
+def git_json(commit: str, relative_path: str) -> Any:
+    return json.loads(git_bytes(commit, relative_path).decode("utf-8"))
+
+
+def repo_relative(path: Path) -> str:
+    return str(path.relative_to(REPO_ROOT))
+
+
 def generated_front_door_change_only(before: str, after: str) -> bool:
     """Allow only compiler-owned Current Snapshot block refreshes."""
 
@@ -103,10 +123,10 @@ def generated_front_door_change_only(before: str, after: str) -> bool:
 
 
 def gate_no_current_provider_activation(errors: list[str]) -> None:
-    identity = load_json(ROOT / "data/architecture/current-system-identity.json")
-    facts = load_json(ROOT / "data/architecture/current-facts.json")
-    registry = load_json(ROOT / "data/operations/ignition-operation-capability-registry-r1.json")
-    snapshot = load_json(ROOT / "data/operations/current-snapshot-r1.json")
+    identity = git_json(TASK149_CURRENT_MAIN, "ignition/data/architecture/current-system-identity.json")
+    facts = git_json(TASK149_CURRENT_MAIN, "ignition/data/architecture/current-facts.json")
+    registry = git_json(TASK149_CURRENT_MAIN, "ignition/data/operations/ignition-operation-capability-registry-r1.json")
+    snapshot = git_json(TASK149_CURRENT_MAIN, "ignition/data/operations/current-snapshot-r1.json")
     if identity.get("current_formal_task_id") != "IGNITION-20260829-148":
         errors.append("no_current_provider_activation: Current identity changed")
     if facts.get("current_formal_task_id") != "IGNITION-20260829-148":
@@ -114,10 +134,12 @@ def gate_no_current_provider_activation(errors: list[str]) -> None:
     operations = registry.get("operations", [])
     if len(operations) != 19:
         errors.append(f"no_current_provider_activation: operation count is {len(operations)}, expected 19")
-    for path, document in ((path, load_json(path)) for path in CURRENT_SURFACE_PATHS):
+    for path in CURRENT_SURFACE_PATHS:
+        relative = repo_relative(path)
+        document = git_json(TASK149_CURRENT_MAIN, relative)
         names = [value.lower() for value in strings(document)]
         if any("archify" in value or "agent reach" in value for value in names):
-            errors.append(f"no_current_provider_activation: provider name reached Current surface {path.relative_to(REPO_ROOT)}")
+            errors.append(f"no_current_provider_activation: provider name reached Current surface {relative}")
     owner = load_json(OWNER_RECORD_PATH)
     boundary = owner.get("authority_boundary", {})
     if boundary.get("current_provider_capability_added") is not False or boundary.get("current_operation_registry_changed") is not False:
@@ -127,7 +149,7 @@ def gate_no_current_provider_activation(errors: list[str]) -> None:
 
 
 def gate_no_provider_homepage_claim(errors: list[str]) -> None:
-    code, output = command_output(["git", "diff", "--name-only", BASE_SHA, "HEAD", "--", *FRONT_DOOR_PATHS])
+    code, output = command_output(["git", "diff", "--name-only", BASE_SHA, TASK149_CURRENT_MAIN, "--", *FRONT_DOOR_PATHS])
     if code != 0:
         errors.append(f"no_provider_homepage_claim: git diff failed: {output.strip()}")
     changed_paths = [path for path in output.splitlines() if path.strip()]
@@ -136,7 +158,6 @@ def gate_no_provider_homepage_claim(errors: list[str]) -> None:
         if relative not in CURRENT_GENERATED_FRONT_DOOR_PATHS:
             unexpected_changes.append(relative)
             continue
-        path = REPO_ROOT / relative
         try:
             before = subprocess.check_output(
                 ["git", "show", f"{BASE_SHA}:{relative}"],
@@ -146,7 +167,8 @@ def gate_no_provider_homepage_claim(errors: list[str]) -> None:
         except (OSError, subprocess.CalledProcessError):
             unexpected_changes.append(relative)
             continue
-        if not path.is_file() or not generated_front_door_change_only(before, path.read_text(encoding="utf-8")):
+        after_bytes = git_bytes(TASK149_CURRENT_MAIN, relative)
+        if not generated_front_door_change_only(before, after_bytes.decode("utf-8")):
             unexpected_changes.append(relative)
     if unexpected_changes:
         errors.append(
@@ -161,11 +183,11 @@ def gate_no_provider_homepage_claim(errors: list[str]) -> None:
         "Ignition supports Agent Reach",
     )
     for relative in FRONT_DOOR_PATHS:
-        path = REPO_ROOT / relative
-        if not path.is_file():
+        try:
+            text = git_bytes(TASK149_CURRENT_MAIN, relative).decode("utf-8")
+        except (OSError, subprocess.CalledProcessError, UnicodeDecodeError):
             errors.append(f"no_provider_homepage_claim: missing front-door path {relative}")
             continue
-        text = path.read_text(encoding="utf-8")
         if any(phrase.lower() in text.lower() for phrase in forbidden):
             errors.append(f"no_provider_homepage_claim: forbidden claim in {relative}")
         if re.search(r"(?i)(current|default|supported|production).{0,80}(archify|agent reach)", text):
@@ -210,12 +232,18 @@ def gate_no_authenticated_admission(errors: list[str]) -> None:
 
 
 def gate_live_external_invocation_unchanged(errors: list[str]) -> None:
-    obligation = load_json(ROOT / "data/operations/open-obligation-registry-r1.json").get("obligations", [None])[0] or {}
+    obligation = git_json(
+        TASK149_CURRENT_MAIN,
+        "ignition/data/operations/open-obligation-registry-r1.json",
+    ).get("obligations", [None])[0] or {}
     operation = next(
-        item for item in load_json(ROOT / "data/operations/ignition-operation-capability-registry-r1.json").get("operations", [])
+        item for item in git_json(
+            TASK149_CURRENT_MAIN,
+            "ignition/data/operations/ignition-operation-capability-registry-r1.json",
+        ).get("operations", [])
         if item.get("operation_id") == "external.live_invocation"
     )
-    facts = load_json(ROOT / "data/architecture/current-facts.json")
+    facts = git_json(TASK149_CURRENT_MAIN, "ignition/data/architecture/current-facts.json")
     if obligation.get("obligation_id") != "LIVE_EXTERNAL_INVOCATION" or obligation.get("current_status") != "OPEN" or obligation.get("current_owner_plane") != "OWNER_DEFERRED":
         errors.append("live_external_invocation_unchanged: open obligation status changed")
     if obligation.get("owner_deferral", {}).get("no_automatic_resume") is not True:
@@ -228,13 +256,26 @@ def gate_live_external_invocation_unchanged(errors: list[str]) -> None:
 
 
 def gate_nonfunction_materiality(errors: list[str]) -> None:
-    closure = load_json(ROOT / "data/foundation/nonfunction-claims/closure-summary.json")
+    closure = git_json(
+        TASK149_CURRENT_MAIN,
+        "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+    )
     if closure.get("canonical_claims") != 17859 or closure.get("explicit_quarantine_or_pending") != 4996:
         errors.append("nonfunction_claim_materiality_clean: closure counts drifted")
-    ids = {json.loads(line)["canonical_id"] for line in (ROOT / "data/foundation/nonfunction-claims/claim-registry.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()}
+    ids = {
+        json.loads(line)["canonical_id"]
+        for line in git_bytes(
+            TASK149_CURRENT_MAIN,
+            "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        ).decode("utf-8").splitlines()
+        if line.strip()
+    }
     if ids & TASK149_IDS:
         errors.append("nonfunction_claim_materiality_clean: Task149 operational IDs remain canonical")
-    knowledge = load_json(ROOT / "data/governance/knowledge-experience/manifest.json")
+    knowledge = git_json(
+        TASK149_CURRENT_MAIN,
+        "ignition/data/governance/knowledge-experience/manifest.json",
+    )
     if knowledge.get("counts", {}).get("search_records") != EXPECTED_KNOWLEDGE_SEARCH_RECORDS:
         errors.append("nonfunction_claim_materiality_clean: Knowledge search count drifted")
     owner = load_json(OWNER_RECORD_PATH)

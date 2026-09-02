@@ -7,6 +7,7 @@ import argparse
 import copy
 import hashlib
 import json
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -30,6 +31,10 @@ EXPECTED_ADAPTER_SHA = "20f45aafe13ac43328f02627ecf3f49f74fe60cf24f0c907c1b31502
 EXPECTED_IR_SHA = "02ee0e727af237b778fd0b88fbdb2a42eca0395b8eaed8d731636b3e4bb7b3c3"
 EXPECTED_HTML_SHA = "42b268b31c78aa5d7c8b85a8babec8f36ee16e89878c3e07ade396208a61b6f4"
 EXPECTED_SVG_SHA = "34d1da4c0ed795502f1eeef3af3d82e8872953422f9ea7ce5b48549424e57952"
+# Step06 records a two-run historical smoke.  Its bound HTML/SVG/IR bytes
+# must remain the Step06 publication bytes even after later Current projection
+# refreshes.
+STEP06_PUBLISHED_COMMIT = "2ce2e098d421256ff976a535ca3e0962f182ae72"
 
 
 def load_json(path: Path) -> Any:
@@ -38,6 +43,14 @@ def load_json(path: Path) -> Any:
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def git_bytes(commit: str, relative_path: str) -> bytes:
+    return subprocess.check_output(
+        ["git", "show", f"{commit}:{relative_path}"],
+        cwd=REPO_ROOT,
+        stderr=subprocess.DEVNULL,
+    )
 
 
 def validate(document: dict[str, Any] | None = None) -> list[str]:
@@ -49,17 +62,20 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
     if errors:
         return errors
     expected_files = {
-        CANONICAL_PATH: EXPECTED_CANONICAL_SHA,
-        ADAPTER_PATH: EXPECTED_ADAPTER_SHA,
-        IR_PATH: EXPECTED_IR_SHA,
-        HTML_PATH: EXPECTED_HTML_SHA,
-        SVG_PATH: EXPECTED_SVG_SHA,
+        "ignition/data/architecture/overall-architecture.json": EXPECTED_CANONICAL_SHA,
+        "ignition/tools/run_task150_bounded_visualization_adapter.py": EXPECTED_ADAPTER_SHA,
+        "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json": EXPECTED_IR_SHA,
+        "ignition/data/operations/iterations/150/derived-artifacts/task150-current-architecture.html": EXPECTED_HTML_SHA,
+        "ignition/data/operations/iterations/150/derived-artifacts/task150-current-architecture.svg": EXPECTED_SVG_SHA,
     }
-    for path, expected in expected_files.items():
-        if not path.is_file():
-            errors.append(f"missing bound smoke output: {path.relative_to(REPO_ROOT)}")
-        elif sha256(path) != expected:
-            errors.append(f"bound smoke output hash drifted: {path.relative_to(REPO_ROOT)}")
+    for relative, expected in expected_files.items():
+        try:
+            payload = git_bytes(STEP06_PUBLISHED_COMMIT, relative)
+        except (OSError, subprocess.CalledProcessError):
+            errors.append(f"missing bound smoke output: {relative}")
+            continue
+        if hashlib.sha256(payload).hexdigest() != expected:
+            errors.append(f"bound smoke output hash drifted: {relative}")
     source = document["fresh_source"]
     if source["revision"] != "d7372c27abe456b5b8c058675630d8038f91b448":
         errors.append("fresh source revision drifted")

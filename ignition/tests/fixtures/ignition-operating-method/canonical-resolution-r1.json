@@ -11,7 +11,7 @@
         "canonical_title": "锁定强度函数",
         "match_kind": "CANONICAL_ID",
         "final_disposition": "QUARANTINE_UNTIL_DEFINED",
-        "record_sha256": "e0bcfc66878f05f91a23b714c6b1b2b90adf67b2ddaad409b8706ce32d959b6e"
+        "record_sha256": "7c5dc3b5c49bd7f06be2448f8e56b0191a0572ba2f563b1bd7e15d6924991db6"
       }
     },
     {
@@ -21,7 +21,7 @@
         "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
         "canonical_id": "D2",
         "final_disposition": "QUARANTINE_UNTIL_DEFINED",
-        "record_sha256": "5933863765531580429c55667aa680fc53ad5510d1a1df5e450afa7f2dd44327"
+        "record_sha256": "f2b7a78059833ff5368834445597b00aa572627996ab68d62304b89f126d94e3"
       }
     },
     {
@@ -31,7 +31,7 @@
         "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
         "canonical_id": "D5",
         "final_disposition": "QUARANTINE_UNTIL_DEFINED",
-        "record_sha256": "8206d86e2888199fec2654a4e4e277227ae1eb00cfbb1e761b45635ddc8bab2d"
+        "record_sha256": "a8b37a428655b3ad69684cb6f5e866258313e2ef9ff6ea90134ed0ba6409c92d"
       }
     },
     {
@@ -41,7 +41,7 @@
         "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
         "canonical_id": "T7",
         "final_disposition": "QUARANTINE_UNTIL_DEFINED",
-        "record_sha256": "361babd8c891cb05c21a5fb5fe6ca08589b536663794fc9b53d7285c5e9f4a83"
+        "record_sha256": "fa64db20590e8aaf9594da5e5b9512a5b8545fe0c8ed78daf3594464fd51c1d3"
       }
     },
     {
@@ -51,7 +51,7 @@
         "resolution_status": "RESOLVED_CURRENT_CANONICAL_IDENTITY",
         "canonical_id": "A5",
         "final_disposition": "QUARANTINE_UNTIL_DEFINED",
-        "record_sha256": "09dc50bd7f0bd83b8130bcee72c43b84dbf658e45d612f273bd5b5b80345ec43"
+        "record_sha256": "d1633369c273379fc7740ecf71c3f1cb65c5f746eb16519e276cc417ca8354fc"
       }
     },
     {
@@ -63,7 +63,7 @@
         "canonical_title": "认知路径积分函数",
         "primary_identity": "STRUCTURAL_METAPHOR",
         "final_disposition": "KEEP_AS_STRUCTURAL_METAPHOR",
-        "record_sha256": "c2a8e1ffc41b72de518df3ad6a0b8422d6b8a15824b5765911282a8731ba2724"
+        "record_sha256": "3fc286ebdf0f7124d2119a1a2d4bf8d9209796d08f0725fdcf75400cee15383d"
       }
     },
     {
@@ -75,7 +75,7 @@
         "canonical_title": "乘法归零律",
         "match_kind": "IDENTITY_CORRECTED_ALIAS",
         "final_disposition": "KEEP_AS_ESTABLISHED_MATH",
-        "record_sha256": "2abb649f843f7914faaeaecf2b682e48a4f0fae724d1f98aa5c32f908d46a850"
+        "record_sha256": "e8aca6e6451d0669f262f840a1ddbb2f83c9420be3ba45fd662f200ac77e470d"
       }
     },
     {
