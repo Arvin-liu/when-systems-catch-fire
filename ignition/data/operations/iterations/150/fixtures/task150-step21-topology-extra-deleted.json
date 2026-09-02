@@ -1,0 +1,34 @@
+{
+  "schema_version": "ignition-150-step21-topology-extra-deleted-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "21",
+  "record_type": "EXACT_TOPOLOGY_ADVERSARIAL_FIXTURES",
+  "base_ir": "ignition/data/operations/iterations/150/task150-archify-typed-ir-r1.json",
+  "canonical_source": "ignition/data/architecture/overall-architecture.json",
+  "evaluation_mode": "READ_ONLY_IN_MEMORY_MUTATION",
+  "cases": [
+    {
+      "id": "extra_node",
+      "mutation": {
+        "action": "APPEND_COMPONENT",
+        "component_id": "adversarial-extra-node"
+      },
+      "expected": "EXACT_NODE_SET_REJECTED",
+      "observed": "REJECTED",
+      "rejection": "exact canonical node set mismatch"
+    },
+    {
+      "id": "deleted_node",
+      "mutation": {
+        "action": "REMOVE_COMPONENT",
+        "component_id": "navigation-machine"
+      },
+      "expected": "EXACT_NODE_SET_REJECTED",
+      "observed": "REJECTED",
+      "rejection": "exact canonical node set mismatch and dangling edge/boundary"
+    }
+  ],
+  "provider_validation_is_not_topology_authority": true,
+  "system_or_repository_mutation": false,
+  "claim_ceiling": "These fixtures prove only that Ignition's exact canonical node and edge reconciliation rejects an added or deleted derived component before admission. They do not prove provider security, architecture truth, Current integration, aesthetic endorsement, production readiness, authentication, external truth or live external completion."
+}
