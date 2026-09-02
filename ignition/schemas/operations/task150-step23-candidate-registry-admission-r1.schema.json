@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step23-candidate-registry-admission-r1.schema.json",
+  "title": "Task150 Step23 provider-neutral candidate Registry admission",
+  "description": "Records the one-operation Registry addition while preserving branch-only candidate and lifecycle boundaries.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "registry", "operation", "admission_boundary", "validation", "scope_freeze", "result", "next_step", "self_witness", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step23-candidate-registry-admission-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "23"},
+    "record_type": {"const": "CANDIDATE_REGISTRY_ADMISSION"},
+    "status": {"const": "CURRENT_BOUNDED_OPERATION_ADDED_CANDIDATE_ONLY"},
+    "formal_previous_commit": {"const": "1a0f850af834ee88dc93ac23ec3881683991d6ac"},
+    "registry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256_before", "sha256_after", "operation_count_before", "operation_count_after", "non_pack_operation_count_after", "operation_present_after", "registry_write_performed"],
+      "properties": {
+        "path": {"const": "ignition/data/operations/ignition-operation-capability-registry-r1.json"},
+        "sha256_before": {"const": "35ec66971f66df89874b82f53ff1b1af1cf0d45d7fac131bbadfffa2485a3d22"},
+        "sha256_after": {"const": "ec285324bbdff4a718f7ffd761a61f8d393b77b8e15967bfd2e207a6d9950ea4"},
+        "operation_count_before": {"const": 19},
+        "operation_count_after": {"const": 20},
+        "non_pack_operation_count_after": {"const": 10},
+        "operation_present_after": {"const": true},
+        "registry_write_performed": {"const": true}
+      }
+    },
+    "operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation_id", "current_status", "operation_definition_is_provider_neutral", "pack_binding", "ai_callability", "default_execution_mode", "repository_mutation_permission", "external_action_permission", "explicit_owner_authorization_required", "provider_implementation", "tested_compatibility_ref"],
+      "properties": {
+        "operation_id": {"const": "visualization.render_derived_system_view"},
+        "current_status": {"const": "CURRENT_BOUNDED"},
+        "operation_definition_is_provider_neutral": {"const": true},
+        "pack_binding": {"const": null},
+        "ai_callability": {"const": "PUBLIC_BOUNDED"},
+        "default_execution_mode": {"const": "READ_ONLY_RUN"},
+        "repository_mutation_permission": {"const": "FORBIDDEN"},
+        "external_action_permission": {"const": "FORBIDDEN"},
+        "explicit_owner_authorization_required": {"const": false},
+        "provider_implementation": {"const": "ARCHIFY_OPTIONAL_TESTED_IMPLEMENTATION"},
+        "tested_compatibility_ref": {"const": "06dd052602dd9a369e4d034e24faef0917b5a60c"}
+      }
+    },
+    "admission_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["result", "entry_is_candidate_only_until_ready_merge_and_current_lifecycle", "formal_ready", "merged_to_main", "current_on_main", "default_renderer", "architecture_authority", "delta_operation_registered", "provider_specific_operation_registered", "registry_count_is_expected_20"],
+      "properties": {
+        "result": {"const": "ONE_PROVIDER_NEUTRAL_OPERATION_ADDED"},
+        "entry_is_candidate_only_until_ready_merge_and_current_lifecycle": {"const": true},
+        "formal_ready": {"const": false},
+        "merged_to_main": {"const": false},
+        "current_on_main": {"const": false},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "architecture_authority": {"const": false},
+        "delta_operation_registered": {"const": false},
+        "provider_specific_operation_registered": {"const": false},
+        "registry_count_is_expected_20": {"const": true}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registry_schema", "registry_semantic_validator", "operation_ids_sorted_and_unique", "provider_neutral_id", "read_only_and_no_side_effects", "no_delta_registration", "no_archify_provider_specific_id", "no_automatic_current_promotion"],
+      "properties": {
+        "registry_schema": {"const": "PASS"},
+        "registry_semantic_validator": {"const": "PASS operations=20 pack_capabilities=10 statuses=6"},
+        "operation_ids_sorted_and_unique": {"const": true},
+        "provider_neutral_id": {"const": true},
+        "read_only_and_no_side_effects": {"const": true},
+        "no_delta_registration": {"const": true},
+        "no_archify_provider_specific_id": {"const": true},
+        "no_automatic_current_promotion": {"const": true}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "owner_aesthetic_endorsement", "task151"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "owner_aesthetic_endorsement": {"const": "NOT_GRANTED_NOT_CLAIMED"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "result": {"const": "TASK150_STEP23_CANDIDATE_REGISTRY_ADMISSION_PASS"},
+    "next_step": {"const": "TASK150_STEP24_PLAYBOOK_AND_MINIMAL_ROUTING_SYNC"},
+    "self_witness": {"const": "NOT_EMBEDDED_BY_DESIGN"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}

@@ -36,8 +36,8 @@
     ],
     "pack_capability_count": 10,
     "represented_pack_capability_count": 10,
-    "non_pack_operation_count": 9,
-    "operation_count": 19,
+    "non_pack_operation_count": 10,
+    "operation_count": 20,
     "census_rule": "Every capability declared by the four Current Pack manifests is represented exactly once; non-Pack entries require a Current, bounded, deferred, reference, historical or unsupported authority outside task-local history.",
     "non_inference_rule": "Implementation presence, a past test, a historical case, a Reference Executor feature or a Pack hook does not by itself establish a Current public operation or grant execution authority."
   },
@@ -744,6 +744,57 @@
       ],
       "historical_relations": [],
       "claim_ceiling": "REOS LIGHT structural validation only; no truth, external validity or publication status."
+    },
+    {
+      "operation_id": "visualization.render_derived_system_view",
+      "public_name": {"zh": "生成受约束派生系统视图", "en": "Render a bounded derived system view"},
+      "description": "Generate a provider-neutral, source-bound derived system view for declared technical readability while preserving canonical topology, provenance and failure boundaries.",
+      "operation_class": "VALIDATION_AUDIT",
+      "ai_callability": "PUBLIC_BOUNDED",
+      "authoritative_sources": [
+        {"path": "ignition/schemas/operations/task150-step18-scope-split-admission-objects-r1.schema.json", "role": "BOUNDARY_AUTHORITY"},
+        {"path": "ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json", "role": "BOUNDARY_AUTHORITY"},
+        {"path": "ignition/schemas/operations/task150-step22-immutable-compatibility-envelope-r1.schema.json", "role": "BOUNDARY_AUTHORITY"},
+        {"path": "ignition/data/operations/iterations/150/step22-immutable-compatibility-envelope.json", "role": "HISTORICAL_STATUS_AUTHORITY"}
+      ],
+      "owning_component": "Ignition Bounded Visualization Operation",
+      "pack_binding": null,
+      "accepted_input_types": ["canonical architecture source", "derived system view request", "bounded visualization run"],
+      "output_types": ["standalone derived system view artifact", "provenance receipt", "provider unavailable status"],
+      "current_status": "CURRENT_BOUNDED",
+      "default_execution_mode": "READ_ONLY_RUN",
+      "repository_mutation_permission": "FORBIDDEN",
+      "external_action_permission": "FORBIDDEN",
+      "explicit_owner_authorization_required": false,
+      "required_current_reads": [
+        "ignition/data/architecture/overall-architecture.json",
+        "ignition/data/architecture/interactive-system-map.json",
+        "ignition/schemas/operations/task150-step18-scope-split-admission-objects-r1.schema.json",
+        "ignition/schemas/operations/task150-step21-fresh-standalone-evidence-r1.schema.json",
+        "ignition/schemas/operations/task150-step22-immutable-compatibility-envelope-r1.schema.json"
+      ],
+      "applicable_governance": [
+        "ignition/ITERATION.md",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md",
+        "ignition/docs/foundation/future-claim-admission-protocol.md"
+      ],
+      "validation_checks": [
+        {"kind": "SCRIPT", "path": "ignition/tools/run_task150_bounded_visualization_adapter.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_task150_step21_fresh_standalone_evidence.py"},
+        {"kind": "SCRIPT", "path": "ignition/tools/validate_task150_step22_immutable_compatibility_envelope.py"},
+        {"kind": "UNIT_TEST", "path": "ignition/tests/test_task150_step21_fresh_standalone_evidence.py"},
+        {"kind": "UNIT_TEST", "path": "ignition/tests/test_task150_step22_immutable_compatibility_envelope.py"}
+      ],
+      "known_limits": [
+        "The operation produces a bounded derived artifact for declared technical use; it does not replace or write back to the canonical architecture source.",
+        "The provider is an optional tested implementation selected by Ignition; provider validation cannot add, delete or semantically mutate topology.",
+        "An unavailable provider returns PROVIDER_UNAVAILABLE_IN_CURRENT_ENVIRONMENT and cannot trigger installation, substitution or repository mutation.",
+        "A request for architecture analysis alone does not auto-render a derived view.",
+        "Delta, default-renderer selection, architecture truth, external truth, production readiness and aesthetic endorsement remain outside this operation.",
+        "The tested compatibility envelope is pinned to Archify exact commit 06dd052602dd9a369e4d034e24faef0917b5a60c; future provider versions require a new compatibility check."
+      ],
+      "historical_relations": [],
+      "claim_ceiling": "Current bounded provider-neutral derived system view for declared technical use only; no canonical architecture truth, topology authority, default renderer, Delta promotion, aesthetic endorsement, external truth or production readiness."
     },
     {
       "operation_id": "writing.apply_editorial_method",
