@@ -1,0 +1,114 @@
+{
+  "schema_version": "ignition-150-step17-owner-reopen-remote-truth-r1",
+  "task_id": "IGNITION-20260901-150",
+  "step": "17",
+  "record_type": "OWNER_REOPEN_REMOTE_TRUTH",
+  "status": "TASK150_STEP17_OWNER_REOPEN_REMOTE_TRUTH_PASS",
+  "observed_at": "2026-09-02T11:42:36+08:00",
+  "control_observation": {
+    "repository": "Arvin-liu/1111",
+    "amendment_branch": "relay/records/ignition-150-owner-reopen-scope-split-r1-20260902",
+    "amendment_sha": "8acf015e40e3bac97b0fdd9e150cc59811a22c28",
+    "amendment_remote_sha": "8acf015e40e3bac97b0fdd9e150cc59811a22c28",
+    "amendment_remote_equal": true,
+    "historical_defer_receipt_remains_valid": true,
+    "admission_object_refined_after_owner_review": true,
+    "no_evidence_rewritten": true
+  },
+  "formal_remote_observation": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "remote": "https://github.com/Arvin-liu/when-systems-catch-fire.git",
+    "base_ref": "refs/heads/main",
+    "base_sha": "d7372c27abe456b5b8c058675630d8038f91b448",
+    "formal_branch": "codex/ignition-150-archify-bounded-visualization-admission-r1",
+    "formal_branch_sha": "03203326defd862dc24352080722dadb94dc6721",
+    "formal_branch_remote_sha": "03203326defd862dc24352080722dadb94dc6721",
+    "formal_branch_remote_equal": true,
+    "pr_head_ref": "refs/pull/200/head",
+    "pr_head_sha": "03203326defd862dc24352080722dadb94dc6721",
+    "pr_merge_ref": "refs/pull/200/merge",
+    "pr_merge_sha": "35f933b7843bc20e3c156413f8692647e9475d53",
+    "main_remote_equal": true,
+    "base_is_ancestor_of_pr_head": true,
+    "formal_worktree": {
+      "path": "/Users/zhiyuan/Agent 工作区/when-systems-catch-fire-150-archify-bounded",
+      "head": "03203326defd862dc24352080722dadb94dc6721",
+      "clean": true,
+      "non_shallow": true
+    }
+  },
+  "pull_request_observation": {
+    "number": 200,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/200",
+    "title": "IGNITION-150: Archify bounded visualization admission (Draft)",
+    "state": "OPEN",
+    "is_draft": true,
+    "base_ref": "main",
+    "base_sha": "d7372c27abe456b5b8c058675630d8038f91b448",
+    "head_ref": "codex/ignition-150-archify-bounded-visualization-admission-r1",
+    "head_sha": "03203326defd862dc24352080722dadb94dc6721",
+    "mergeable": "MERGEABLE",
+    "merge_state_status": "CLEAN",
+    "review_decision": "UNSET",
+    "reviews_count": 0,
+    "issue_comments_count": 0,
+    "review_threads_count": 0,
+    "merged": false,
+    "checks": {
+      "all_observed_success": true,
+      "full_regression": "NOT_CLAIMED_FROM_PR_CHECKS",
+      "contexts": [
+        {"name": "validate-current-state-sync", "workflow_run": 33574486515, "conclusion": "SUCCESS"},
+        {"name": "foundation-validation / validate", "workflow_run": 33574486558, "job": 100075340855, "conclusion": "SUCCESS", "steps": 48},
+        {"name": "lifecycle-validation", "workflow_run": 33574486585, "conclusion": "SUCCESS"},
+        {"name": "layer-a-tests", "workflow_run": 33574486604, "conclusion": "SUCCESS"},
+        {"name": "q33-governance-validation / validate", "workflow_run": 33574486567, "conclusion": "SUCCESS"},
+        {"name": "preflight", "workflow_run": 33574486533, "conclusion": "SUCCESS"},
+        {"name": "layer-b-resolver", "workflow_run": 33574486604, "job": 100075508863, "conclusion": "SUCCESS"}
+      ]
+    }
+  },
+  "archify_remote_observation": {
+    "repository": "tt-a1i/archify",
+    "ref": "refs/heads/main",
+    "observed_sha": "06dd052602dd9a369e4d034e24faef0917b5a60c",
+    "git_ls_remote_sha": "06dd052602dd9a369e4d034e24faef0917b5a60c",
+    "checkout_sha": "06dd052602dd9a369e4d034e24faef0917b5a60c",
+    "checkout_clean": true,
+    "checkout_non_shallow": true,
+    "fsck_full": "PASS",
+    "commit_subject": "fix: ship third-party mark notices (#267)",
+    "previous_task150_step01_sha": "7a16d30322f5bd09c832386faa95d8c9a933f0c0",
+    "historical_task149_sha": "2bfb47132c057195d8dddb3e25ae966dd7c7a72e",
+    "provider_ref_drifted_since_step01": true,
+    "auto_upgrade": false,
+    "compatibility_recheck_required": true,
+    "source_modified": false,
+    "source_vendored": false
+  },
+  "scope_freeze": {
+    "task150_scope": "ARCHIFY_ONLY",
+    "agent_reach": "NO_CHANGE",
+    "agent_reach_admission": "NO_ADMISSION",
+    "agent_reach_install": "NO_INSTALL",
+    "agent_reach_auth": "NO_AUTH",
+    "authenticated_channel_admission": "NO_CHANGE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN",
+    "default_renderer": "NOT_SELECTED",
+    "archify_architecture_authority": false,
+    "task151": "FORBIDDEN"
+  },
+  "formal_edit_scope": {
+    "new_files_only": [
+      "ignition/data/operations/iterations/150/step17-owner-reopen-remote-truth.json",
+      "ignition/data/operations/iterations/150/step17-owner-reopen-remote-truth.md"
+    ],
+    "historical_step14_modified": false,
+    "historical_step15_modified": false,
+    "registry_modified": false,
+    "provider_modified": false
+  },
+  "result": "TASK150_STEP17_OWNER_REOPEN_REMOTE_TRUTH_PASS",
+  "next_step": "TASK150_STEP18_SCOPE_SPLIT_ADMISSION_OBJECTS",
+  "claim_ceiling": "This receipt proves only refreshed formal, control, PR and provider remote observations. It does not prove provider compatibility, standalone admission, Current integration, Ready, merge, Owner aesthetic endorsement, architecture truth, production readiness, authentication, external truth or live external completion."
+}
