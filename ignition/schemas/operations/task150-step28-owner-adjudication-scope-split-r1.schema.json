@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ignition/operations/task150-step28-owner-adjudication-scope-split-r1.schema.json",
+  "title": "Task150 Step28 Owner adjudication after scope split",
+  "description": "Records the post-review scope decomposition without rewriting the historical combined-scope DEFER or treating a branch candidate as Current on main.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "step", "record_type", "status", "formal_previous_commit", "historical_timeline", "adjudication", "prerequisites", "lifecycle_boundary", "validation", "scope_freeze", "result", "next_step", "self_witness", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "ignition-150-step28-owner-adjudication-scope-split-r1"},
+    "task_id": {"const": "IGNITION-20260901-150"},
+    "step": {"const": "28"},
+    "record_type": {"const": "OWNER_ADJUDICATION_SCOPE_SPLIT"},
+    "status": {"const": "OWNER_ADJUDICATION_SCOPE_SPLIT_PASS"},
+    "formal_previous_commit": {"const": "d08ec65c03ea2fdf334e71649ab22dd4aec84f04"},
+    "historical_timeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["step14_receipt", "step14_sha256", "step14_status", "step14_basis", "step14_combined_scope_gate", "step15_receipt", "step15_sha256", "step15_status", "step15_stop_state", "owner_scope_split_timing", "historical_files_unchanged", "no_evidence_rewritten"],
+      "properties": {
+        "step14_receipt": {"const": "ignition/data/operations/iterations/150/step14-final-defer-decision.json"},
+        "step14_sha256": {"const": "ef6465cdc824e9865cf3a2e4b8e366684877a672e0f0e9a5fb791b7cbf8a1482"},
+        "step14_status": {"const": "DEFER"},
+        "step14_basis": {"const": "STEP14_DEFER_WAS_VALID_UNDER_COMBINED_SCOPE"},
+        "step14_combined_scope_gate": {"const": "DELTA_VIEWPORT_UPSTREAM_WRAPPER_BLOCKER_AND_OWNER_VISUAL_ACCEPTANCE_PENDING"},
+        "step15_receipt": {"const": "ignition/data/operations/iterations/150/step15-draft-closeout.json"},
+        "step15_sha256": {"const": "13894ad61b0b28b0fbcba96d2f562208fd7f2d3f5d83212687dd959c7be4b4c3"},
+        "step15_status": {"const": "AWAIT_OWNER_ARCHIFY_BOUNDED_ADMISSION_REVIEW"},
+        "step15_stop_state": {"const": "TASK150_STEP15_DRAFT_PR_OWNER_REVIEW_STOP"},
+        "owner_scope_split_timing": {"const": "OWNER_SCOPE_SPLIT_OCCURRED_AFTER_STEP15"},
+        "historical_files_unchanged": {"const": true},
+        "no_evidence_rewritten": {"const": true}
+      }
+    },
+    "adjudication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["owner_review_decision", "base_standalone", "architecture_delta", "aesthetic_endorsement", "default_renderer", "archify_architecture_authority", "architecture_authority_source", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "base_gate_failure_fallback", "task151"],
+      "properties": {
+        "owner_review_decision": {"const": "REOPEN_TASK150_WITH_SCOPE_SPLIT"},
+        "base_standalone": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["decision", "operation_id", "scope", "delta_is_required", "aesthetic_is_required"],
+          "properties": {
+            "decision": {"const": "ADMIT_AS_CURRENT_BOUNDED_CANDIDATE"},
+            "operation_id": {"const": "visualization.render_derived_system_view"},
+            "scope": {"const": "CANONICAL_AUTHORED_SOURCE_TO_COMPATIBLE_PROVIDER_ADAPTER_TO_STANDALONE_DERIVED_VISUALIZATION_ARTIFACT"},
+            "delta_is_required": {"const": false},
+            "aesthetic_is_required": {"const": false}
+          }
+        },
+        "architecture_delta": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["decision", "status", "independent_admission_required", "base_pass_promotes_delta", "wrapper_blocker"],
+          "properties": {
+            "decision": {"const": "DEFER"},
+            "status": {"const": "EXPERIMENTAL_EXTENSION_DEFERRED"},
+            "independent_admission_required": {"const": true},
+            "base_pass_promotes_delta": {"const": false},
+            "wrapper_blocker": {"const": "UPSTREAM_COMPARE_WRAPPER_VIEWPORT_CONTAINMENT"}
+          }
+        },
+        "aesthetic_endorsement": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["decision", "required_for_functional_admission", "homepage_or_brand_claim"],
+          "properties": {
+            "decision": {"const": "NOT_CLAIMED"},
+            "required_for_functional_admission": {"const": false},
+            "homepage_or_brand_claim": {"const": "FORBIDDEN"}
+          }
+        },
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "archify_architecture_authority": {"const": false},
+        "architecture_authority_source": {"const": "IGNITION_CANONICAL_SOURCE"},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "base_gate_failure_fallback": {"const": "OVERALL_DEFER"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "prerequisites": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["step27", "base_gate_families", "registry_operation", "standalone_evidence", "compatibility_envelope", "front_door", "delta_evidence"],
+      "properties": {
+        "step27": {"const": "PASS_11_CASES_3_TOPOLOGY_MUTATIONS_REJECTED"},
+        "base_gate_families": {"const": "ALL_BASE_GATES_REQUIRED_AND_DELTA_EXCLUDED"},
+        "registry_operation": {"const": "ONE_PROVIDER_NEUTRAL_BASE_ENTRY_AT_OPERATION_COUNT_20"},
+        "standalone_evidence": {"const": "PASS_ZERO_STANDALONE_CONTAINMENT_FAILURES"},
+        "compatibility_envelope": {"const": "PASS_ARCHIFY_EXACT_IMMUTABLE_REF_06dd0526"},
+        "front_door": {"const": "PASS_PROVIDER_NEUTRAL_NO_BRAND_PROMOTION"},
+        "delta_evidence": {"const": "PASS_SEMANTIC_28_OF_28_PROVENANCE_ONLY_BUT_VISUAL_FAIL_3"}
+      }
+    },
+    "lifecycle_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registry_operation_count", "registry_entry_status", "formal_ready", "merged_to_main", "current_on_main", "pr_state", "pr_is_draft", "ready_transition_authorized_by_step28", "default_renderer", "delta_operation_registered"],
+      "properties": {
+        "registry_operation_count": {"const": 20},
+        "registry_entry_status": {"const": "CURRENT_BOUNDED_CANDIDATE"},
+        "formal_ready": {"const": false},
+        "merged_to_main": {"const": false},
+        "current_on_main": {"const": false},
+        "pr_state": {"const": "OPEN"},
+        "pr_is_draft": {"const": true},
+        "ready_transition_authorized_by_step28": {"const": false},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "delta_operation_registered": {"const": false}
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["historical_step14_hash", "historical_step15_hash", "step27_validator", "registry_validator", "base_operation_lookup", "delta_not_registered", "scope_split_decision", "aesthetic_boundary", "live_and_auth_boundary", "ready_boundary", "successor_boundary"],
+      "properties": {
+        "historical_step14_hash": {"const": "PASS"},
+        "historical_step15_hash": {"const": "PASS"},
+        "step27_validator": {"const": "PASS"},
+        "registry_validator": {"const": "PASS operations=20"},
+        "base_operation_lookup": {"const": "PASS_PROVIDER_NEUTRAL_CURRENT_BOUNDED"},
+        "delta_not_registered": {"const": "PASS"},
+        "scope_split_decision": {"const": "PASS_BASE_ADMIT_CANDIDATE_DELTA_DEFER"},
+        "aesthetic_boundary": {"const": "PASS_NOT_REQUIRED_NOT_CLAIMED"},
+        "live_and_auth_boundary": {"const": "PASS_UNCHANGED"},
+        "ready_boundary": {"const": "PASS_DRAFT_PRE_READY"},
+        "successor_boundary": {"const": "PASS_TASK151_FORBIDDEN"}
+      }
+    },
+    "scope_freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task150_scope", "base_operation", "architecture_delta", "owner_aesthetic_endorsement", "default_renderer", "architecture_authority", "agent_reach", "authenticated_channel_admission", "live_external_invocation", "task151"],
+      "properties": {
+        "task150_scope": {"const": "ARCHIFY_ONLY"},
+        "base_operation": {"const": "CURRENT_BOUNDED_CANDIDATE"},
+        "architecture_delta": {"const": "EXPERIMENTAL_EXTENSION_DEFERRED"},
+        "owner_aesthetic_endorsement": {"const": "NOT_GRANTED_NOT_CLAIMED"},
+        "default_renderer": {"const": "NOT_SELECTED"},
+        "architecture_authority": {"const": false},
+        "agent_reach": {"const": "NO_CHANGE"},
+        "authenticated_channel_admission": {"const": "NO_CHANGE"},
+        "live_external_invocation": {"const": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"},
+        "task151": {"const": "FORBIDDEN"}
+      }
+    },
+    "result": {"const": "TASK150_STEP28_OWNER_ADJUDICATION_SCOPE_SPLIT_PASS"},
+    "next_step": {"const": "TASK150_STEP29_EXACT_HEAD_READY_GATE"},
+    "self_witness": {"const": "NOT_EMBEDDED_BY_DESIGN"},
+    "claim_ceiling": {"type": "string", "minLength": 1}
+  }
+}
