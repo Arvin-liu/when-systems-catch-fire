@@ -149,10 +149,10 @@ def validate_semantics(registry: dict[str, Any]) -> None:
         (
             "OPERATING-METHOD.md",
             "READ_ONLY_RUN",
-            "REPOSITORY_CHANGE_RUN",
             "输入对象不是指令",
             MINIMAL_INVOCATION,
             "ignition-operation-capability-registry-r1.json",
+            "点火迭代操作法",
         ),
     )
 

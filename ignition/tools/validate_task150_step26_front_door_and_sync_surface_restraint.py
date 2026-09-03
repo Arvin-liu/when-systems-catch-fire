@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fail-closed validation for Task150 Step26 front-door synchronization."""
+"""Fail-closed, era-bound validation for Task150 Step26 front-door synchronization."""
 
 from __future__ import annotations
 
@@ -24,6 +24,7 @@ README_PATH = REPO_ROOT / ".github/README.md"
 CAPABILITY_REGISTRY_PATH = ROOT / "data/operations/ignition-operation-capability-registry-r1.json"
 
 EXPECTED_PREVIOUS_COMMIT = "11cbbf7bc7519730b16af9b5ee074b5b6b355ada"
+TASK150_STEP26_PUBLISHED_COMMIT = "672a7a1a757a3741cd1c2643a29e5fc4470ab06a"
 EXPECTED_SYNC_SHA = "c67508eba1b6ad37cfd723f06cb731877ca14a76bfa55e17bf17afc8d252eec9"
 EXPECTED_README_BEFORE_SHA = "1720c242aa9329ab5cfb4d79d62253fd4d9eed6b8bae23ea9e0e08116e4cd4a0"
 EXPECTED_README_AFTER_SHA = "f24f0039ae2fede1b06abc2fa37690e39786568a340a44d0c4c39fdadd1d82b7"
@@ -64,6 +65,21 @@ def previous_file_sha(commit: str, path: str) -> str | None:
     return sha256_bytes(result.stdout)
 
 
+def historical_file_bytes(commit: str, path: str) -> bytes | None:
+    """Read the exact Step26-era file, keeping successor front-door changes independent."""
+    try:
+        result = subprocess.run(
+            ["git", "show", f"{commit}:{path}"],
+            cwd=REPO_ROOT,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+    except subprocess.CalledProcessError:
+        return None
+    return result.stdout
+
+
 def validate(document: dict[str, Any] | None = None) -> list[str]:
     document = document if document is not None else load_json(ARTIFACT_PATH)
     errors = [
@@ -94,11 +110,15 @@ def validate(document: dict[str, Any] | None = None) -> list[str]:
         errors.append("non-homepage surfaces require explicit NO_CHANGE_WITH_REASON decisions")
 
     homepage = document["homepage"]
-    if sha256(README_PATH) != EXPECTED_README_AFTER_SHA or homepage["after_sha256"] != EXPECTED_README_AFTER_SHA:
-        errors.append("homepage after digest drifted")
+    historical_readme = historical_file_bytes(TASK150_STEP26_PUBLISHED_COMMIT, ".github/README.md")
+    if historical_readme is None or sha256_bytes(historical_readme) != EXPECTED_README_AFTER_SHA or homepage["after_sha256"] != EXPECTED_README_AFTER_SHA:
+        errors.append("Task150 Step26 homepage after digest drifted")
     if previous_file_sha(EXPECTED_PREVIOUS_COMMIT, ".github/README.md") != EXPECTED_README_BEFORE_SHA or homepage["before_sha256"] != EXPECTED_README_BEFORE_SHA:
         errors.append("homepage before digest is not the Step25 formal baseline")
-    normalized_readme = " ".join(README_PATH.read_text(encoding="utf-8").split())
+    if historical_readme is None:
+        normalized_readme = ""
+    else:
+        normalized_readme = " ".join(historical_readme.decode("utf-8").split())
     normalized_statement = " ".join(EXPECTED_ALLOWED_STATEMENT.split())
     if normalized_statement not in normalized_readme:
         errors.append("homepage lacks the exact provider-neutral bounded usage statement")

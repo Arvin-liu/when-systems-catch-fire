@@ -20,7 +20,7 @@
       "execution_capability": "automatic",
       "validation_capability": "local_automatic_validation",
       "authoritative_inputs": ["data/operations/project-components.json", "data/operations/change-propagation-topology.json", "data/architecture/interactive-system-map-layout.json"],
-      "generated_outputs": ["data/architecture/interactive-system-map.json", "docs/generated/ignition-system-architecture.svg"],
+      "generated_outputs": ["data/architecture/interactive-system-map.json", "docs/generated/ignition-system-architecture.svg", "docs/generated/ignition-system-architecture.html"],
       "producer_argv": ["python3", "tools/generate_interactive_system_map.py"],
       "validator_argv": ["python3", "tools/generate_interactive_system_map.py", "--check"]
     },

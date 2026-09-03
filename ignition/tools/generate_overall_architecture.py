@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Retired-name entry point for the single complete architecture generator.
+"""Compatibility entry point for the registry-derived machine projection.
 
-The former hand-authored conceptual SVG is not generated anymore. This
-entrypoint remains only so old validation commands fail over to the canonical,
-relation-driven projection rather than silently recreating a second graph.
+The homepage's stable public visualization is separately bound to the
+Task150-verified standalone artifact by
+``validate_homepage_architecture_projection.py``. This retired-name entrypoint
+keeps older validation commands on the canonical registry projection without
+creating a second authored architecture graph.
 """
 from __future__ import annotations
 

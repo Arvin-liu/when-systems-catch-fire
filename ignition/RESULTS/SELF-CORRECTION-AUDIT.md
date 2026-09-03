@@ -5,7 +5,7 @@
 |规则|状态|匹配数|
 |---|---|---:|
 |`proof_obligation`|`REVIEW`|42|
-|`empirical_obligation`|`REVIEW`|23|
+|`empirical_obligation`|`REVIEW`|24|
 |`cross_domain_mapping`|`REVIEW`|46|
 |`quantifier_inflation`|`REVIEW`|101|
 |`circular_reasoning`|`PASS`|0|

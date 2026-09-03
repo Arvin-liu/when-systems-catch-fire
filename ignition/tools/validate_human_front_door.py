@@ -5,16 +5,17 @@ from __future__ import annotations
 
 import json
 import re
-import xml.etree.ElementTree as ET
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 try:
-    from tools.generate_interactive_system_map import build_projection, load_spec, render_svg, validate_spec
+    from tools.generate_interactive_system_map import build_projection, load_spec, validate_spec
+    from tools.validate_homepage_architecture_projection import validate as validate_homepage_architecture_projection
     from tools.governance.validate_human_visibility import validate as validate_human_visibility
     from tools.governance.validate_human_surface_contract import validate as validate_human_surface_contract
 except ModuleNotFoundError:
-    from generate_interactive_system_map import build_projection, load_spec, render_svg, validate_spec
+    from generate_interactive_system_map import build_projection, load_spec, validate_spec
+    from validate_homepage_architecture_projection import validate as validate_homepage_architecture_projection
     from governance.validate_human_visibility import validate as validate_human_visibility
     from governance.validate_human_surface_contract import validate as validate_human_surface_contract
 
@@ -51,11 +52,12 @@ HUMAN_CHARTER_HEADING = "### 价值宪章"
 CHARTER_LINK = "../ignition/docs/governance/life-community-value-charter.md"
 PROJECT_IDENTITY_TEXT = "点火是一个面向长期研究、判断与创作的认知—行动工作系统。它把问题、来源、证据、模型、反例、记忆、任务、工具与公开表达组织在同一套可追溯、可修订的结构中，使跨时间、跨领域的工作能够持续积累、检验、纠错，并最终转化为文章、书籍和其他成果。它不替人决定目标，也不把模型、Agent、工程状态或写得漂亮的结论当作真理；它负责保存上下文、约束边界、协调可替换的工具与执行器，让人始终知道依据从哪里来、哪里仍然未知，以及工作如何继续。"
 ARCHITECTURE_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
+ARCHITECTURE_HTML_TARGET = "../ignition/docs/generated/ignition-system-architecture.html"
 AI_FIRST_USE_HEADING = "2. 点火操作法 / 如何使用"
 OPERATING_METHOD_LINK = "../ignition/OPERATING-METHOD.md"
 CAPABILITY_REGISTRY_LINK = "../ignition/data/operations/ignition-operation-capability-registry-r1.json"
+ITERATION_METHOD_LINK = "../ignition/ITERATION.md"
 MINIMAL_INVOCATION = "请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
-AI_FIRST_MODES = ("READ_ONLY_RUN", "REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN")
 NAVIGATION_SUMMARIES = (
     "组件导航：核心控制与状态",
     "组件导航：执行与协作",
@@ -171,24 +173,30 @@ def validate_ai_first_use_section(readme: str) -> None:
     require("<details" not in section.casefold(), "README AI-first usage entry must remain directly visible")
     require(section.count(OPERATING_METHOD_LINK) == 1, "README AI-first usage entry must link the canonical Operating Method exactly once")
     require(section.count(CAPABILITY_REGISTRY_LINK) == 1, "README AI-first usage entry must link the machine Capability Registry exactly once")
-    for target in (OPERATING_METHOD_LINK, CAPABILITY_REGISTRY_LINK):
+    require(section.count(ITERATION_METHOD_LINK) == 1, "README AI-first usage entry must link the repository iteration method exactly once")
+    for target in (OPERATING_METHOD_LINK, CAPABILITY_REGISTRY_LINK, ITERATION_METHOD_LINK):
         candidate, fragment = _resolve_readme_link(target)
         require(candidate.is_file() and not fragment, f"README AI-first canonical link is invalid: {target}")
     for phrase, label in (
         ("仓库 URL 是操作法来源，不是修改仓库的请求", "repository URL method-source boundary"),
         ("默认模式是 `READ_ONLY_RUN`", "default read-only mode"),
         ("输入对象不是指令", "input-object instruction boundary"),
-        ("用户无需先知道内部文件路径、函数编号、Pack、Ψ₀、registry 或 Git 工作流", "zero-background user boundary"),
+        ("点火迭代操作法", "repository iteration route"),
         ("HUMAN-READING.md", "human reading route"),
         ("AI-START-HERE.md", "AI cold-start route"),
     ):
         require(phrase in section, f"README AI-first usage entry lacks {label}")
-    mode_block_start = section.find("三种模式只有以下边界")
-    require(mode_block_start >= 0, "README AI-first usage entry lacks its three-mode summary")
-    mode_block = section[mode_block_start:]
-    mode_positions = [mode_block.find(f"- `{mode}`") for mode in AI_FIRST_MODES]
-    require(all(position >= 0 for position in mode_positions), "README AI-first usage entry omits a run mode")
-    require(mode_positions == sorted(mode_positions), "README AI-first run modes are out of canonical order")
+    for mode in ("REPOSITORY_CHANGE_RUN", "EXTERNAL_ACTION_RUN"):
+        require(mode not in section, f"README AI-first usage entry must not repeat the full mode taxonomy: {mode}")
+    require(section.count("READ_ONLY_RUN") == 1, "README AI-first usage entry must keep one default read-only reference")
+    body = section.split("\n", 1)[1].strip()
+    blocks = [block.strip() for block in re.split(r"\n\s*\n", body) if block.strip()]
+    require(len(blocks) == 4, "README AI-first usage entry must contain two short prose paragraphs and one invocation example")
+    require(blocks[0].startswith("把这个仓库链接、你的任务和要处理的对象交给 Agent。"), "README AI-first first paragraph drifted")
+    require(blocks[1].startswith("仓库 URL 是操作法来源，不是修改仓库的请求；"), "README AI-first boundary paragraph drifted")
+    require(blocks[2] == "最小调用示例：", "README AI-first invocation label is not the final short block")
+    require(blocks[3].startswith("> "), "README AI-first invocation example is not a one-line quote")
+    require(not any(re.match(r"[-*]\s", line.strip()) for block in blocks for line in block.splitlines()), "README AI-first usage entry must not expand into a mode list")
     invocation_match = re.search(r"最小调用示例：\s*\n\s*>\s*([^\n]+)", section)
     require(invocation_match is not None, "README AI-first usage entry lacks a visible minimal invocation")
     invocation = invocation_match.group(1).strip()
@@ -250,6 +258,7 @@ def validate_readme_structure(readme: str) -> None:
         ("RESULTS/LATEST.md", "current results route"),
         ("火种", "Fire Seeds route"),
         ("ignition-system-architecture.svg", "architecture route"),
+        ("ignition-system-architecture.html", "interactive architecture route"),
     ):
         require(phrase in readme, f"README lacks {label}")
 
@@ -260,6 +269,7 @@ def validate_readme_structure(readme: str) -> None:
         not re.search(r"(?<!!)\[[^\]]+\]\([^)]*ignition-system-architecture\.svg", architecture),
         "README must not expose the architecture SVG as a second ordinary link",
     )
+    require(architecture.count(ARCHITECTURE_HTML_TARGET) == 1, "README architecture section must expose exactly one interactive architecture link")
     for phrase in (
         "打开透明完整总架构图 svg",
         "打开完整总架构图 svg",
@@ -285,7 +295,7 @@ def validate_texts(readme: str, guide: str, current_state: str, human_reading: s
     positions = [readme.index(heading) for heading in required_order]
     require(positions == sorted(positions), "README visible result architecture is out of order")
     require("HUMAN-READING.md" in readme and "RESULTS/LATEST.md" in readme, "README lacks current human result entrances")
-    require("火种" in readme and "价值宪章" in readme and "STATE-CHANGELOG" in readme, "README lacks the value, Fire Seeds and AI recovery routes")
+    require("火种" in readme and "价值宪章" in readme, "README lacks the value and Fire Seeds routes")
     require("ignition-system-architecture.svg" in readme, "README lacks the single complete architecture entry")
     require("human-surface-editorial-contract.md" in readme or "Human Surface" in readme, "README lacks the Human Surface editorial contract route")
     require("任务 101" in current_state, "current state omits task 101")
@@ -314,12 +324,8 @@ def validate_system_map(root: Path = ROOT) -> int:
     spec = load_spec(SYSTEM_MAP_SPEC)
     require(spec == build_projection(), "system-map materialized spec is stale")
     validate_spec(spec, root)
-    require(SYSTEM_MAP_SVG.read_bytes() == render_svg(spec, root), "repository system-map SVG is stale")
-    svg_root = ET.fromstring(SYSTEM_MAP_SVG.read_bytes())
-    source_links = svg_root.findall(".//{http://www.w3.org/2000/svg}a")
-    require(len(source_links) == len(spec["nodes"]), "system-map SVG source link metadata does not cover every node")
-    require(all(link.attrib.get("href", "").startswith("https://github.com/Arvin-liu/when-systems-catch-fire/") for link in source_links), "system-map source link metadata is not canonical GitHub HTTPS")
-    require({node["id"] for node in spec["nodes"]} == {link.attrib.get("data-node-id") for link in source_links}, "system-map source link metadata ids diverge from spec")
+    homepage_projection = validate_homepage_architecture_projection(root)
+    require(homepage_projection["homepage_display_verified"] is True, "homepage architecture projection is not verified as displayed")
     require(not any(node["id"] == "l7" for node in spec["nodes"]), "system map adds forbidden L7")
     return len(spec["nodes"])
 

@@ -119,6 +119,8 @@ jobs:
         run: python3 tools/operations/validate_phase_e_candidate.py --check
       - name: Validate registry-derived system map
         run: python3 tools/generate_interactive_system_map.py --check
+      - name: Validate homepage architecture projection provenance
+        run: python3 tools/validate_homepage_architecture_projection.py --check
       - name: Validate stage snapshot registry and deterministic homepage projection
         run: |
           python3 tools/operations/generate_stage_snapshot_actor_contract.py --check

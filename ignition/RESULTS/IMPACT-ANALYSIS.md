@@ -56,7 +56,7 @@
 |`docs/architecture/hermes-adapter-r1.md`|4|0|否|
 |`docs/architecture/ignition-atlas.md`|4|0|否|
 |`docs/architecture/incremental-execution.md`|17|0|否|
-|`docs/architecture/interactive-system-map.md`|22|0|否|
+|`docs/architecture/interactive-system-map.md`|26|0|否|
 |`docs/architecture/iteration-boundary-archaeology-r1.md`|10|0|否|
 |`docs/architecture/iteration-boundary-semantics-r1.md`|5|0|否|
 |`docs/architecture/language-thought-logic-plane.md`|13|0|否|

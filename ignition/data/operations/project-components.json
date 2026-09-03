@@ -1411,7 +1411,8 @@
       "path_patterns": [
         "data/architecture/interactive-system-map.json",
         "docs/generated/ignition-system-architecture.svg",
-      "tools/generate_interactive_system_map.py",
+        "docs/generated/ignition-system-architecture.html",
+        "tools/generate_interactive_system_map.py",
       "tools/validate_human_front_door.py",
       "tests/test_human_front_door.py",
       "tests/test_overall_architecture.py",
