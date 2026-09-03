@@ -72,6 +72,7 @@ jobs:
         run: |
           python3 -c "import sys; sys.path.insert(0,'tools/propagation'); import system_map_audit as s; r=s.audit('.'); import sys; sys.exit(0 if r['decision'] in ('NO_IMPACT_JUSTIFIED',) or True else 1)"
           python3 tools/generate_interactive_system_map.py --check
+          python3 tools/validate_homepage_architecture_projection.py --check
 
       - name: Clean working-tree check after generation
         run: |

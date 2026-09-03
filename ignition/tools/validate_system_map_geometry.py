@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Validate the sole system map's geometry, accessibility and compactness."""
+"""Validate the registry-derived machine projection's geometry and compactness.
+
+The stable homepage SVG is a separate Task150-derived public projection; its
+provenance and bytes are checked by validate_homepage_architecture_projection.
+"""
 
 from __future__ import annotations
 
@@ -97,9 +101,7 @@ def approximate_text_width(value: str, default_width: float = 8.0) -> float:
 
 
 def parse_current_geometry(spec: dict[str, Any]) -> dict[str, Any]:
-    require(SVG_PATH.is_file(), f"generated SVG missing: {SVG_PATH}")
     rendered = render_svg(spec, ROOT)
-    require(SVG_PATH.read_bytes() == rendered, "generated SVG is stale relative to the current map projection")
     root = ET.fromstring(rendered)
     _, _, width, height = parse_viewbox(root)
     layout = spec["layout"]

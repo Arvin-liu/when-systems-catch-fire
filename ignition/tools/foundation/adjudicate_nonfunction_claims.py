@@ -41,6 +41,12 @@ PUBLIC_SURFACES = {
 }
 TEXT_SUFFIXES = {".md", ".txt", ".rst", ".json", ".jsonl", ".csv", ".yml", ".yaml", ".toml", ".py", ".sage", ".lean", ".js", ".jsx", ".ts", ".tsx", ".sh", ".html"}
 SELF_EXCLUDES = {
+    # Task 151 homepage projection outputs are provenance-bound generated
+    # records, not authoritative claim sources. Keep them in path accounting
+    # while preventing their boundary prose or embedded viewer code from
+    # re-entering the canonical claim registry.
+    "data/architecture/homepage-architecture-projection-r1.json",
+    "docs/generated/ignition-system-architecture.html",
     # The archive reader is a deterministic migration tool, not a claim source.
     "tools/foundation/legacy_table_migration.py",
     ".github/README.md",

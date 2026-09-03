@@ -7,6 +7,8 @@ import json
 import unittest
 from pathlib import Path
 
+from tools.validate_homepage_architecture_projection import validate as validate_homepage_architecture_projection
+
 
 ROOT = Path(__file__).resolve().parents[1]
 FIXTURE = ROOT / "tests/fixtures/overall-architecture-derived-expectation-r1.json"
@@ -50,13 +52,17 @@ class OverallArchitectureTest(unittest.TestCase):
     def test_conceptual_map_is_transparent_source_linked_and_bounded(self) -> None:
         spec = MODULE.json.loads(MODULE.SPEC_PATH.read_text(encoding="utf-8"))
         expected = MODULE.build_projection()
-        svg = MODULE.OUT.read_text(encoding="utf-8")
+        # Keep the registry-derived machine projection regression independent
+        # from the stable Task150-derived homepage visual.
+        svg = MODULE.render_svg(expected, ROOT).decode("utf-8")
         self.assertEqual(spec["title"], "点火唯一完整总架构图")
         self.assertIn("map-bg", svg)
         # The graph contract is derived from the canonical component registry,
         # propagation topology, and layout overlay.  No Current node/edge
         # count is duplicated as a test magic number.
         self.assert_canonical_projection(spec, svg, expected)
+        homepage = validate_homepage_architecture_projection(ROOT)
+        self.assertTrue(homepage["homepage_display_verified"])
 
     def test_unsynchronized_projection_fixture_fails_closed(self) -> None:
         fixture = json.loads(FIXTURE.read_text(encoding="utf-8"))
@@ -67,7 +73,8 @@ class OverallArchitectureTest(unittest.TestCase):
         spec = MODULE.json.loads(MODULE.SPEC_PATH.read_text(encoding="utf-8"))
         expected = MODULE.build_projection()
         synchronized = copy.deepcopy(expected)
-        self.assert_canonical_projection(synchronized, MODULE.OUT.read_text(encoding="utf-8"), expected)
+        machine_svg = MODULE.render_svg(expected, ROOT).decode("utf-8")
+        self.assert_canonical_projection(synchronized, machine_svg, expected)
 
         stale = copy.deepcopy(spec)
         mutation = fixture["unsynchronized_case"]["mutation"]
@@ -76,7 +83,7 @@ class OverallArchitectureTest(unittest.TestCase):
         else:
             self.fail(f"unknown fixture mutation: {mutation}")
         with self.assertRaises((AssertionError, ValueError)):
-            self.assert_canonical_projection(stale, MODULE.OUT.read_text(encoding="utf-8"), expected)
+            self.assert_canonical_projection(stale, machine_svg, expected)
 
 
 if __name__ == "__main__":

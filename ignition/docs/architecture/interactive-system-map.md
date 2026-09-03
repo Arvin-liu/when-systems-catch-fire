@@ -1,10 +1,11 @@
 # 点火仓库原生系统图
 
-状态：`0.16.0 Current registry-derived structural projection`；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
+状态：首页使用 Task150 已验证的 standalone derived visualization 作为公共架构投影；机器可读的 `0.16.0` Current registry-derived structural projection 仍作为独立 companion。两者均为派生视图，不替代 canonical source、架构权威或真值判断；`0.14.0`、`0.13.0`、`0.12.0`、`0.11.0`、`0.10.0`、`0.9.0`、`0.8.0`、`0.7.0`、`0.6.0`、`0.5.0`、`0.4.0` 与更早版本为 Historical。
 
 ## 打开与生成
 
-- [仓库内唯一完整总架构图 SVG](../generated/ignition-system-architecture.svg)
+- [首页公共架构投影 SVG](../generated/ignition-system-architecture.svg)
+- [首页交互式架构投影 HTML](../generated/ignition-system-architecture.html)
 - [机器可读投影](../../data/architecture/interactive-system-map.json)
 - [构件 registry](../../data/operations/project-components.json)
 - [类型化传播 topology](../../data/operations/change-propagation-topology.json)
@@ -12,7 +13,9 @@
 
 生成链：
 
-`project component registry + typed propagation topology + layout overlay → deterministic generator → materialized spec + repository SVG → .github/README.md / ordinary Markdown navigation`
+`project component registry + typed propagation topology + layout overlay → deterministic generator → materialized machine projection`
+
+`canonical overall architecture source + Task150 verified standalone evidence → source-digest gate → stable homepage SVG + stable homepage HTML`
 
 不要手改 materialized spec 或 SVG：
 
@@ -21,7 +24,7 @@ python3 tools/generate_interactive_system_map.py
 python3 tools/generate_interactive_system_map.py --check
 ```
 
-SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。SVG 源码保留指向 GitHub 仓库 canonical 文件的 link metadata；客户端是否把这些元数据显示成交互热点不由源文件保证，必要时可使用本页的文本入口。它是当前唯一完整总架构图，不再并列维护另一张图。
+稳定公共 SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，交互版位于同目录的 `ignition-system-architecture.html`，均通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。两种格式使用同一份 Task150 已验证的派生视觉内容；其 canonical-source digest、历史证据字节和首页路径由 `tools/validate_homepage_architecture_projection.py --check` 固定核验。HTML 的交互行为不把 provider 提升为架构权威，也不选择默认 renderer。
 
 ## 权威与边界
 

@@ -1,0 +1,58 @@
+{
+  "schema_version": "homepage-architecture-projection-r1",
+  "projection_id": "homepage-current-architecture",
+  "status": "CURRENT_DERIVED_PUBLIC_PROJECTION",
+  "canonical_source": {
+    "path": "data/architecture/overall-architecture.json",
+    "sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+    "authority": "IGNITION_CANONICAL_AUTHORED_SOURCE",
+    "task150_step21_receipt": "data/operations/iterations/150/step21-fresh-standalone-evidence.json",
+    "task150_recorded_sha256": "251df5de786c53374e3bf0488d90a95983a47e452860f15922d9432ed6f17f13",
+    "task150_formal_source_revision": "68d5d30bda0d8eb9c715ac346ce6476a55c0e288",
+    "formal_main_baseline": "8a95d393fbcae3de733f16e4b8f7e6c05e0d3a1b"
+  },
+  "task150_verified_artifacts": {
+    "svg": {
+      "path": "data/operations/iterations/150/derived-artifacts/task150-current-architecture.svg",
+      "sha256": "34d1da4c0ed795502f1eeef3af3d82e8872953422f9ea7ce5b48549424e57952",
+      "bytes": 54708
+    },
+    "html": {
+      "path": "data/operations/iterations/150/standalone-evidence/task150-step21-standalone.html",
+      "sha256": "da7947e408af2839e51fddc90871de30f84b1846ae1d14809a076a40d55daf45",
+      "bytes": 751906,
+      "embedded_svg_sha256": "021219edc0457a719bc07fb96bb1e2a831fdeb49b8e8352e9818b369400e1414",
+      "embedded_svg_bytes": 54707
+    },
+    "step21_receipt_sha256": "2650dc6ab9f2a447d42f0e854e0fd3a2428f4b0d80c0ad10a78bbe2225fdb045",
+    "step29_receipt_sha256": "b4ccb76cf3b9b774a77c1a65ae3cd23479537d11c11c8f5de675a497c5ca642d"
+  },
+  "published_outputs": {
+    "svg": {
+      "path": "docs/generated/ignition-system-architecture.svg",
+      "sha256": "a6261459164c2f1f8e0be289149197f81e7da4ae346db99b4c67e9dda6ce7c4b",
+      "bytes": 56910,
+      "source_artifact_sha256": "34d1da4c0ed795502f1eeef3af3d82e8872953422f9ea7ce5b48549424e57952",
+      "packaging_normalization": "ADD_STANDALONE_SVG_XMLNS_AND_EMBEDDED_CSS_ONLY"
+    },
+    "html": {
+      "path": "docs/generated/ignition-system-architecture.html",
+      "sha256": "da7947e408af2839e51fddc90871de30f84b1846ae1d14809a076a40d55daf45",
+      "bytes": 751906
+    }
+  },
+  "projection_contract": {
+    "nodes": 24,
+    "edges": 24,
+    "svg_view_box": "0 0 1650 420",
+    "format_pair_same_visual": true,
+    "derived_only": true,
+    "canonical_architecture_unchanged": true,
+    "provider_role": "TESTED_OPTIONAL_PROVIDER_IMPLEMENTATION",
+    "architecture_authority": "IGNITION_CANONICAL_AUTHORED_SOURCE",
+    "default_renderer": "NOT_SELECTED",
+    "agent_reach": "NO_CHANGE",
+    "live_external_invocation": "UNCHANGED_OPEN_OWNER_DEFERRED_NOT_RUN"
+  },
+  "claim_ceiling": "This record proves a stable homepage copy of the Task150-verified standalone derived visualization and its canonical-source digest gate. It does not change canonical architecture, admit a provider as a Current capability, select a default renderer, alter Agent Reach, invoke live external channels, establish external truth, or grant Owner acceptance."
+}

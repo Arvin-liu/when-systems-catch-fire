@@ -10,8 +10,14 @@ from __future__ import annotations
 import hashlib
 import json
 import re
-import xml.etree.ElementTree as ET
 from pathlib import Path
+
+try:
+    from tools.validate_homepage_architecture_projection import validate as validate_homepage_architecture_projection
+except ModuleNotFoundError:
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from validate_homepage_architecture_projection import validate as validate_homepage_architecture_projection
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -176,11 +182,10 @@ def validate() -> dict[str, int]:
     require(spec.get("projection_status") == "CURRENT_DERIVED_PROJECTION", "architecture graph is not a derived current projection")
     require(len(spec.get("edges", [])) > 0 and all(edge.get("relation_domain") for edge in spec.get("edges", [])), "architecture graph lacks typed relation edges")
     try:
-        svg_root = ET.fromstring(SYSTEM_MAP_SVG.read_bytes())
-        source_links = svg_root.findall(".//{http://www.w3.org/2000/svg}a")
-        require(len(source_links) == len(node_ids), "architecture SVG source link metadata does not cover every node")
-    except (ET.ParseError, OSError) as exc:
-        errors.append(f"architecture SVG cannot be parsed: {exc}")
+        projection = validate_homepage_architecture_projection(ROOT)
+        require(projection["homepage_display_verified"] is True, "homepage architecture projection is not verified as displayed")
+    except (AssertionError, OSError, ValueError, json.JSONDecodeError) as exc:
+        errors.append(f"homepage architecture projection is invalid: {exc}")
 
     for path in CURRENT_SURFACES:
         if not path.is_file():

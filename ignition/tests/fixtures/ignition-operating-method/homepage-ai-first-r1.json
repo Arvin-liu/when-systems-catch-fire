@@ -43,9 +43,9 @@
       "expected": "FAIL"
     },
     {
-      "id": "repository-change-mode-omitted",
+      "id": "iteration-method-link-omitted",
       "replacements": [
-        {"old": "- `REPOSITORY_CHANGE_RUN`", "new": "- `READ_ONLY_RUN`"}
+        {"old": "../ignition/ITERATION.md", "new": "../ignition/AI-START-HERE.md"}
       ],
       "expected": "FAIL"
     },

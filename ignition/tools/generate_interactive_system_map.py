@@ -7,10 +7,23 @@ import argparse
 import io
 import json
 import re
+import sys
 import textwrap
 import urllib.parse
 import xml.etree.ElementTree as ET
 from pathlib import Path
+
+# A production profile is constrained to its declared outputs. The generator
+# imports the homepage provenance validator, so keep Python bytecode caches
+# from becoming an undeclared side effect in an otherwise clean fixture.
+sys.dont_write_bytecode = True
+
+try:
+    from tools.validate_homepage_architecture_projection import materialize as materialize_homepage_projection
+    from tools.validate_homepage_architecture_projection import validate as validate_homepage_projection
+except ModuleNotFoundError:
+    from validate_homepage_architecture_projection import materialize as materialize_homepage_projection
+    from validate_homepage_architecture_projection import validate as validate_homepage_projection
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -507,17 +520,25 @@ def main() -> int:
     args = parser.parse_args()
     derived = build_projection()
     rendered = render_svg(derived, ROOT)
+    homepage_output = args.output.resolve() == DEFAULT_OUTPUT.resolve()
     if args.check:
         require(args.spec.is_file(), f"materialized system-map projection missing: {args.spec}")
         require(args.spec.read_bytes() == serialized_projection(derived), "materialized system-map projection is stale or hand-edited")
         require(args.output.is_file(), f"generated SVG missing: {args.output}")
-        require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator")
-        print(f"SYSTEM_MAP_DERIVED_OK nodes={len(derived['nodes'])} edges={len(derived['edges'])}")
+        if homepage_output:
+            validate_homepage_projection(ROOT)
+        else:
+            require(args.output.read_bytes() == rendered, "generated SVG is stale; run the generator")
+        suffix = " homepage_projection=PASS" if homepage_output else ""
+        print(f"SYSTEM_MAP_DERIVED_OK nodes={len(derived['nodes'])} edges={len(derived['edges'])}{suffix}")
         return 0
     args.spec.parent.mkdir(parents=True, exist_ok=True)
     args.spec.write_bytes(serialized_projection(derived))
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_bytes(rendered)
+    if homepage_output:
+        materialize_homepage_projection(ROOT)
+    else:
+        args.output.write_bytes(rendered)
     print(f"generated {args.spec.relative_to(ROOT)} and {args.output.relative_to(ROOT)}")
     return 0
 

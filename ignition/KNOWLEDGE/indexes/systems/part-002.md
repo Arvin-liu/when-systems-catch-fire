@@ -6,6 +6,26 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M15 / data/external-research/088-external-source-atlas-medium.jsonl / M15 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M16 / data/external-research/088-external-source-atlas-medium.jsonl / M16 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M17 / data/external-research/088-external-source-atlas-medium.jsonl / M17 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M18 / data/external-research/088-external-source-atlas-medium.jsonl / M18 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M19 / data/external-research/088-external-source-atlas-medium.jsonl / M19 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-1fb75a9aefaf751d / Object D397 defines a mechanism_model within the point-fire framework. Core: 中文：M14的D280两步策略是最小化T_escape的策略。最优分配：t_explo
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D280, D397；被引用：—
-- [Object D398 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw = \(a_excl·τ\)/\(Σpᵢpⱼ/ΣVar\)。R_tw>>](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-fc40588a456172b1 / Object D398 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw = \(a_excl·τ\)/\(Σpᵢpⱼ/ΣVar\)。R_tw>>
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D316, D398；被引用：—
-- [Object D399 defines a mechanism_model within the point-fire framework. Core: 中文：M2的快速漂移使复活代价快速变化。极小点向深处漂移（学习）→拐点Φ增大→复活代价](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7678270e8c44cf52 / Object D399 defines a mechanism_model within the point-fire framework. Core: 中文：M2的快速漂移使复活代价快速变化。极小点向深处漂移（学习）→拐点Φ增大→复活代价
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D399；被引用：—
-- [Object D401 defines a mechanism_model within the point-fire framework. Core: 中文：M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-5dfc7f9af07ad87b / Object D401 defines a mechanism_model within the point-fire framework. Core: 中文：M4的Φ是零温自由能。有限温F = Φ - n·kT·ln2。临界温度kT_c~
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D387, D401；被引用：—
-- [Object D402 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-05ff7ce0a1f4a050 / Object D402 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D388交点处K=1（确定性不可逆），D359临界K=√n（统计不可逆）。
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D359, D388, D402；被引用：—

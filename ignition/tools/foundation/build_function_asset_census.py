@@ -77,6 +77,10 @@ GENERATED_PREFIXES = (
     "tools/publication/",
 )
 GENERATED_EXACT_PATHS = {
+    # Task 151 homepage projection manifest is a provenance-bound generated
+    # record, not an upstream function-asset source. Excluding it prevents its
+    # claim-ceiling text from feeding the deterministic census back into itself.
+    "data/architecture/homepage-architecture-projection-r1.json",
     # Task 118 migration machinery is a deterministic archive reader/writer,
     # not a function-asset source.  Keeping it outside the census prevents the
     # migration implementation from feeding its own field names back into the

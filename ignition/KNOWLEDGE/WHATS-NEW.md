@@ -2372,7 +2372,7 @@
 
 - **类型：** `MODEL_OR_ARCHITECTURE`
 - **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
-- **变化：** 状态：0.16.0 Current registry-derived structural projection；0.14.0、0.13.0、0.12.0、0.11.0、0.10.0、0.9.0、0.8.0、0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
+- **变化：** 状态：首页使用 Task150 已验证的 standalone derived visualization 作为公共架构投影；机器可读的 0.16.0 Current registry-derived structural projection 仍作为独立 companion。两者均为派生视图，不替代 canonical source、架构权威或真值判断；0.14.0、0.13.0、0.12.0、0.11.0、0.10.0、0.9.0、0.8.0、0.7.0、0.6.0、0.5.0、0.4.0 与更早版本为 Historical。
 - **来源：** [interactive-system-map.md](../docs/architecture/interactive-system-map.md)
 - **资产卡：** [HR-DAF1CB45CCD7B5B6](./ASSET-CARDS.md#asset-hr-daf1cb45ccd7b5b6)
 
