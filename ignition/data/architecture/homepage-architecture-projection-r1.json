@@ -41,6 +41,20 @@
       "bytes": 751906
     }
   },
+  "public_delivery": {
+    "deployment": "GITHUB_PAGES_ACTIONS",
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "route": "/architecture/",
+    "expected_url": "https://arvin-liu.github.io/when-systems-catch-fire/architecture/",
+    "live_url": "https://arvin-liu.github.io/when-systems-catch-fire/architecture/",
+    "availability_status": "AWAITING_PAGES_DEPLOYMENT_OBSERVATION",
+    "source_path": "docs/generated/ignition-system-architecture.html",
+    "payload_path": "architecture/index.html",
+    "payload_sha256": "da7947e408af2839e51fddc90871de30f84b1846ae1d14809a076a40d55daf45",
+    "payload_bytes": 751906,
+    "identity": "EXACT_BYTE_COPY_OF_STABLE_HTML",
+    "claim_ceiling": "Workflow and payload binding only; live availability, stable HTML delivery and browser interaction require post-deployment HTTP and browser observations."
+  },
   "projection_contract": {
     "nodes": 24,
     "edges": 24,

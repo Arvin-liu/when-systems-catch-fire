@@ -217,7 +217,7 @@ def analyze_text(path: str, text: str) -> list[dict]:
             "model_failure_to_universal_impossibility": bool(re.search(r"模型.{0,24}(?:失败|不成立).{0,24}(?:所有|任何|普遍).{0,12}不可能", compact)),
             "conclusion_rebound": bool(re.search(r"(?:大一统|四力统一).{0,24}(?:已被证明不可能|普遍不可能|不可能定理)", compact)),
             "hidden_essential_content": "<details" in compact.lower(),
-            "retired_pages_surface": bool(re.search(r"arvin-liu\.github\.io/when-systems-catch-fire|\.github/workflows/pages\.yml|pages/system-map\.html", compact, re.I)),
+            "retired_pages_surface": bool(re.search(r"arvin-liu\.github\.io/when-systems-catch-fire/(?!architecture(?:/|$))|\.github/workflows/pages\.yml|pages/system-map\.html", compact, re.I)),
         }
         for rule, hit in checks.items():
             if hit:

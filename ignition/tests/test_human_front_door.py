@@ -133,7 +133,8 @@ class HumanFrontDoorTests(unittest.TestCase):
                 self.assertIn(path, self.readme)
 
     def test_retired_deployed_reader_is_absent(self):
-        for token in ("arvin-liu.github.io/when-systems-catch-fire", ".github/workflows/pages.yml", "pages/system-map.html"):
+        self.assertIn("arvin-liu.github.io/when-systems-catch-fire/architecture/", self.readme)
+        for token in (".github/workflows/pages.yml", "pages/system-map.html"):
             self.assertNotIn(token, self.readme)
             self.assertNotIn(token, self.human_reading)
 

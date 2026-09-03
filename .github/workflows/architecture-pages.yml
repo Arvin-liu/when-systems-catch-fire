@@ -1,0 +1,51 @@
+name: architecture-pages
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: architecture-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate the provenance-bound homepage projection
+        working-directory: ignition
+        run: python3 tools/validate_homepage_architecture_projection.py --check
+      - name: Build the exact architecture Pages payload
+        working-directory: ignition
+        run: python3 tools/build_architecture_pages_site.py --output-dir "$RUNNER_TEMP/architecture-pages-site"
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ runner.temp }}/architecture-pages-site
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy the architecture Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
