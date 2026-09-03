@@ -73,6 +73,8 @@ EXPECTED_NODE_IDS = {
 EXPECTED_EDGE_IDS = {f"canonical-edge-{index:02d}" for index in range(1, 25)}
 README_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
 README_HTML_TARGET = "../ignition/docs/generated/ignition-system-architecture.html"
+ARCHITECTURE_PAGES_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/"
+README_INTERACTION_HINT = "滚轮缩放 · 拖动画布 · 点击节点查看关系 · 搜索组件"
 STANDALONE_SVG_CSS = b"""<style>
   :root {
     --bg: #020617; --grid: #1e293b; --text: #ffffff; --text-muted: #94a3b8;
@@ -315,6 +317,38 @@ def _validate_html(path: Path, expected_sha: str, expected_svg: bytes) -> dict[s
     return {"sha256": sha256_bytes(data), "bytes": len(data), "embedded_svg_sha256": sha256_bytes(embedded), "nodes": len(node_ids), "edges": len(edge_ids)}
 
 
+def _validate_public_delivery(manifest: dict[str, Any], html_result: dict[str, Any]) -> dict[str, Any]:
+    public = manifest.get("public_delivery")
+    require(isinstance(public, dict), "homepage manifest lacks public delivery provenance")
+    expected = {
+        "deployment": "GITHUB_PAGES_ACTIONS",
+        "repository": "Arvin-liu/when-systems-catch-fire",
+        "route": "/architecture/",
+        "expected_url": ARCHITECTURE_PAGES_URL,
+        "live_url": ARCHITECTURE_PAGES_URL,
+        "availability_status": "AWAITING_PAGES_DEPLOYMENT_OBSERVATION",
+        "source_path": "docs/generated/ignition-system-architecture.html",
+        "payload_path": "architecture/index.html",
+        "payload_sha256": html_result["sha256"],
+        "payload_bytes": html_result["bytes"],
+        "identity": "EXACT_BYTE_COPY_OF_STABLE_HTML",
+    }
+    for key, value in expected.items():
+        require(public.get(key) == value, f"homepage public delivery field drifted: {key}")
+    require(
+        public.get("claim_ceiling")
+        == "Workflow and payload binding only; live availability, stable HTML delivery and browser interaction require post-deployment HTTP and browser observations.",
+        "homepage public delivery claim ceiling drifted",
+    )
+    return {
+        "url": public["live_url"],
+        "route": public["route"],
+        "status": public["availability_status"],
+        "payload_sha256": public["payload_sha256"],
+        "payload_bytes": public["payload_bytes"],
+    }
+
+
 def _validate_homepage_routes(root: Path) -> None:
     readme = shell_root(root) / ".github/README.md"
     require(readme.is_file(), "homepage README is missing")
@@ -325,7 +359,12 @@ def _validate_homepage_routes(root: Path) -> None:
     section = text[architecture.start() : architecture.end() + (next_heading.start() if next_heading else len(text))]
     images = re.findall(r"!\[[^\]]*\]\(([^)\s]+)(?:\s+[^)]*)?\)", section)
     require(images == [README_IMAGE_TARGET], "homepage does not embed the stable architecture SVG path")
-    require(section.count(README_HTML_TARGET) == 1, "homepage does not expose exactly one stable interactive architecture link")
+    linked_image = f"[![点火整体架构图]({README_IMAGE_TARGET})]({ARCHITECTURE_PAGES_URL})"
+    require(section.count(linked_image) == 1, "homepage architecture image must link to the live Pages viewer")
+    require(section.count(ARCHITECTURE_PAGES_URL) == 2, "homepage must expose exactly two Pages viewer entrypoints")
+    require(README_HTML_TARGET not in section, "homepage must not link to the repository HTML blob as the viewer")
+    require("raw.githack.com" not in section and "htmlpreview.github.io" not in section, "homepage must not use third-party HTML preview proxies")
+    require(README_INTERACTION_HINT in section, "homepage must expose the short interaction hint")
 
     def route_target(target: str) -> Path:
         direct = (readme.parent / target).resolve()
@@ -338,7 +377,6 @@ def _validate_homepage_routes(root: Path) -> None:
         return (root / target.removeprefix("../ignition/")).resolve()
 
     require(route_target(README_IMAGE_TARGET).is_file(), "homepage embedded SVG target is unreachable")
-    require(route_target(README_HTML_TARGET).is_file(), "homepage interactive HTML target is unreachable")
 
 
 def validate(root: Path = ROOT, *, require_git_lineage: bool | None = None) -> dict[str, Any]:
@@ -351,6 +389,7 @@ def validate(root: Path = ROOT, *, require_git_lineage: bool | None = None) -> d
     expected_svg = _standalone_svg_bytes(root_path(root, "ignition/data/operations/iterations/150/derived-artifacts/task150-current-architecture.svg").read_bytes())
     svg_result = _validate_svg(published_svg, PUBLISHED_SVG_SHA256)
     html_result = _validate_html(published_html, TASK150_HTML_SHA256, expected_svg)
+    public_delivery = _validate_public_delivery(manifest, html_result)
     require(manifest["published_outputs"]["svg"]["sha256"] == svg_result["sha256"], "homepage manifest SVG digest is stale")
     require(manifest["published_outputs"]["html"]["sha256"] == html_result["sha256"], "homepage manifest HTML digest is stale")
     require(manifest["published_outputs"]["svg"]["bytes"] == svg_result["bytes"], "homepage manifest SVG byte count is stale")
@@ -376,6 +415,7 @@ def validate(root: Path = ROOT, *, require_git_lineage: bool | None = None) -> d
         "formal_main_lineage_verified": provenance["formal_main_lineage_verified"],
         "svg": svg_result,
         "html": html_result,
+        "public_delivery": public_delivery,
         "homepage_display_verified": True,
         "default_renderer": manifest["projection_contract"]["default_renderer"],
         "agent_reach": manifest["projection_contract"]["agent_reach"],

@@ -32,9 +32,9 @@
 
 ## 4. 整体架构
 
-![点火整体架构图](../ignition/docs/generated/ignition-system-architecture.svg)
+[![点火整体架构图](../ignition/docs/generated/ignition-system-architecture.svg)](https://arvin-liu.github.io/when-systems-catch-fire/architecture/)
 
-这张图展示点火的整体结构；[打开交互式架构图](../ignition/docs/generated/ignition-system-architecture.html)，想了解具体组件，可展开下面的组件列表。
+这张图展示点火的整体结构；[打开交互式架构图](https://arvin-liu.github.io/when-systems-catch-fire/architecture/)。滚轮缩放 · 拖动画布 · 点击节点查看关系 · 搜索组件。想了解具体组件，可展开下面的组件列表。
 
 <details>
 <summary>组件导航：核心控制与状态</summary>

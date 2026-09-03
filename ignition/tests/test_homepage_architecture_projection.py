@@ -4,8 +4,12 @@
 from __future__ import annotations
 
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
+from tools.build_architecture_pages_site import EXPECTED_PUBLIC_URL, build
 from tools.validate_homepage_architecture_projection import (
+    ARCHITECTURE_PAGES_URL,
     PUBLISHED_SVG_SHA256,
     TASK150_HTML_SHA256,
     TASK150_SVG_SHA256,
@@ -26,6 +30,8 @@ class HomepageArchitectureProjectionTests(unittest.TestCase):
         self.assertEqual(result["agent_reach"], "NO_CHANGE")
         self.assertEqual(result["svg"]["nodes"], result["html"]["nodes"])
         self.assertEqual(result["svg"]["edges"], result["html"]["edges"])
+        self.assertEqual(result["public_delivery"]["url"], ARCHITECTURE_PAGES_URL)
+        self.assertEqual(result["public_delivery"]["status"], "AWAITING_PAGES_DEPLOYMENT_OBSERVATION")
 
     def test_published_svg_is_a_bounded_packaging_of_the_task150_svg(self) -> None:
         source = (ROOT / "data/operations/iterations/150/derived-artifacts/task150-current-architecture.svg").read_bytes()
@@ -37,6 +43,18 @@ class HomepageArchitectureProjectionTests(unittest.TestCase):
         self.assertEqual(_standalone_svg_bytes(source), published)
         self.assertNotIn(b"iterations/150/", published)
         self.assertNotIn(b"iterations/150/", html)
+
+    def test_pages_payload_is_an_exact_copy_of_stable_html(self) -> None:
+        with TemporaryDirectory() as directory:
+            result = build(Path(directory))
+            payload = Path(directory) / "architecture" / "index.html"
+            self.assertEqual(result["status"], "PASS")
+            self.assertEqual(result["public_url"], EXPECTED_PUBLIC_URL)
+            self.assertEqual(payload.read_bytes(), (ROOT / "docs/generated/ignition-system-architecture.html").read_bytes())
+            self.assertEqual(result["payload"]["sha256"], TASK150_HTML_SHA256)
+            self.assertEqual(result["payload"]["bytes"], payload.stat().st_size)
+            self.assertTrue((Path(directory) / "index.html").is_file())
+            self.assertTrue((Path(directory) / ".nojekyll").is_file())
 
 
 if __name__ == "__main__":

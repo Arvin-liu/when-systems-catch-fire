@@ -138,7 +138,8 @@ def validate() -> dict:
         ".github/workflows/foundation-validation.yml",
     ]
     forbidden = (
-        "arvin-liu.github.io/when-systems-catch-fire",
+        "arvin-liu.github.io/when-systems-catch-fire/system-map.html",
+        "arvin-liu.github.io/when-systems-catch-fire/generated/",
         ".github/workflows/pages.yml",
         "pages/system-map.html",
         "pages/generated/ignition-system-map.svg",

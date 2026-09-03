@@ -5,7 +5,8 @@
 ## 打开与生成
 
 - [首页公共架构投影 SVG](../generated/ignition-system-architecture.svg)
-- [首页交互式架构投影 HTML](../generated/ignition-system-architecture.html)
+- [首页交互式架构投影（GitHub Pages）](https://arvin-liu.github.io/when-systems-catch-fire/architecture/)
+- [仓库中的稳定交互式 HTML payload（source/provenance）](../generated/ignition-system-architecture.html)
 - [机器可读投影](../../data/architecture/interactive-system-map.json)
 - [构件 registry](../../data/operations/project-components.json)
 - [类型化传播 topology](../../data/operations/change-propagation-topology.json)
@@ -24,7 +25,7 @@ python3 tools/generate_interactive_system_map.py
 python3 tools/generate_interactive_system_map.py --check
 ```
 
-稳定公共 SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，交互版位于同目录的 `ignition-system-architecture.html`，均通过 README 和普通 Markdown 直接访问，不依赖独立部署站点。两种格式使用同一份 Task150 已验证的派生视觉内容；其 canonical-source digest、历史证据字节和首页路径由 `tools/validate_homepage_architecture_projection.py --check` 固定核验。HTML 的交互行为不把 provider 提升为架构权威，也不选择默认 renderer。
+稳定公共 SVG 现在位于 `docs/generated/ignition-system-architecture.svg`；仓库中的 `ignition-system-architecture.html` 是通过 Task150 source-digest gate 固定的稳定 HTML payload，供 provenance 和 byte comparison 使用，不是 GitHub blob 页面里的运行时 viewer。GitHub Pages Actions 会把这份 HTML 原样复制到 `architecture/index.html`，目标公共路由是 `https://arvin-liu.github.io/when-systems-catch-fire/architecture/`；只有部署 job 成功并经 HTTP 与浏览器观察后，才能把它称为已上线的 live interactive viewer。两种格式使用同一份 Task150 已验证的派生视觉内容；其 canonical-source digest、历史证据字节、Pages payload 关系和首页路径由 `tools/validate_homepage_architecture_projection.py --check` 固定核验。HTML 的交互行为不把 provider 提升为架构权威，也不选择默认 renderer。
 
 ## 权威与边界
 
@@ -63,7 +64,7 @@ blast-radius 规则见
 Writing、Human front-door 或 Pack registry。上述数字是仓库导航与生成器覆盖计数，
 不是现实系统规模、因果图或能力证明。
 
-本轮退役了独立阅读站及其专用工作流。旧部署工件和验证记录继续保留在 Git 历史与历史报告中，仅作历史证据。
+本轮不恢复旧的独立阅读站及其专用工作流；旧部署工件和验证记录继续保留在 Git 历史与历史报告中，仅作历史证据。当前 Pages workflow 只发布上述 provenance-bound architecture payload。
 
 ## Steering / Intent / Goal / Obligation R1
 

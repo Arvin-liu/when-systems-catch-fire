@@ -257,7 +257,7 @@ def source_fragments(path: str) -> list[str]:
         fragment = re.sub(r"<[^>]+>", " ", fragment)
         fragment = re.sub(r"[`*_]", "", fragment)
         fragment = re.sub(r"\s+", " ", fragment).strip()
-        if re.search(r"arvin-liu\.github\.io/when-systems-catch-fire|\.github/workflows/pages\.yml|pages/system-map\.html", fragment, re.I):
+        if re.search(r"arvin-liu\.github\.io/when-systems-catch-fire/(?!architecture(?:/|$))|\.github/workflows/pages\.yml|pages/system-map\.html", fragment, re.I):
             fragment = "来源含已退役的独立阅读站维护机制；历史细节保留在完整来源，不得恢复为当前表面。"
         if len(fragment) < 18 or fragment in cleaned:
             continue
