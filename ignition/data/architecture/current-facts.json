@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "4f313f47279ad4d951084720858311f72fa54e8a5384cdc838df9c3a9d34455d"
+      "sha256": "e56d7d366ceae6b41eccdaeb71d073327795a28e7d9b4423de7d6dc80222674c"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
