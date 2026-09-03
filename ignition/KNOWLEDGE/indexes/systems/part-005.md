@@ -1644,6 +1644,11 @@
   - 可搜索名称：NFC-19e1c526777343bb / 本案例不用于推出全国青年教师处境的普遍结论，只作为教育评价机制下职称硬门槛裹挟的局部个案。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [本轮不恢复旧的独立阅读站及其专用工作流；旧部署工件和验证记录继续保留在 Git 历史与历史报告中，仅作历史证据。当前 Pages workflow 只发布上述 provenance-bound architecture payload。](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2123c6f21ee242af / 本轮不恢复旧的独立阅读站及其专用工作流；旧部署工件和验证记录继续保留在 Git 历史与历史报告中，仅作历史证据。当前 Pages workflow 只发布上述 provenance-bound architecture payload。
+  - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
 - [本轮不提交大型版权语料，不复刻具体句子，不把某位作者的可识别指纹变成生成目标。以下只是阅读时要观察的机制压力；真正成品仍由文章自己的材料、作者位置和 claim 边界决定。](../../../docs/language-thought/chinese-literary-calibration.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d62caa41d0a050fa / 本轮不提交大型版权语料，不复刻具体句子，不把某位作者的可识别指纹变成生成目标。以下只是阅读时要观察的机制压力；真正成品仍由文章自己的材料、作者位置和 claim 边界决定。
@@ -1653,11 +1658,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-103f55fd2741386f / 本轮在结果性审计之前冻结了 14 个高风险项目表面，见 `data/language-thought/project-audit-population.json`。范围包括根入口、权威架构、当前状态、AI 冷启动、系统地图、之元写作法、两篇
   - 来源：`reports/operations/114-language-thought-project-audit.md`
-  - 依赖：—；被引用：—
-- [本轮退役了独立阅读站及其专用工作流。旧部署工件和验证记录继续保留在 Git 历史与历史报告中，仅作历史证据。](../../../docs/architecture/interactive-system-map.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-130cd0615c33fdf9 / 本轮退役了独立阅读站及其专用工作流。旧部署工件和验证记录继续保留在 Git 历史与历史报告中，仅作历史证据。
-  - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [本链不把任何箭头预设为因果；每个箭头都需要时序、反事实、比较案例和来源匹配。](../../../reports/publication/jin-rise-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2349,9 +2349,9 @@
   - 可搜索名称：NFC-2de17dd6a8269f8f / 秦统一\(P_fake高\)→真实偏好暴露后系统崩溃。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [稳定公共 SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，交互版位于同目录的 `ignition-system-architecture.html`，均通过 README](../../../docs/architecture/interactive-system-map.md)
+- [稳定公共 SVG 现在位于 `docs/generated/ignition-system-architecture.svg`；仓库中的 `ignition-system-architecture.html` 是通过 Task150 sou](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b45f6fbcb94a153e / 稳定公共 SVG 现在位于 `docs/generated/ignition-system-architecture.svg`，交互版位于同目录的 `ignition-system-architecture.html`，均通过 README
+  - 可搜索名称：NFC-f88fcafbb287ca99 / 稳定公共 SVG 现在位于 `docs/generated/ignition-system-architecture.svg`；仓库中的 `ignition-system-architecture.html` 是通过 Task150 sou
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优化路径。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)

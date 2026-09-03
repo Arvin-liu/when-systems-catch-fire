@@ -2737,7 +2737,7 @@
       "title": "CLAIM-DELTA",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "1b52b768f819d32318a842fb785b63fdc0732d9ad2ea8f7dedbed275d1f18678",
+      "source_sha256": "9ac9012550d4426cc54679c3a6424f6bda0232258f3d6b553d50ac8515df7dcb",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2767,7 +2767,7 @@
       "title": "EVIDENCE-LINEAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "d2df63bf9ac61b8d16b5a533140fd4532f409cbba4615da202a338a12a90c5be",
+      "source_sha256": "17a7be04c5e0d4795f178160e6bf188c739634726283e8baca8f2c8af9a0d2ae",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -3152,7 +3152,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "1d04979dbd0b9402c9bbd5860e91a09c10e30b4390cfea50b2a52543f9d0fd09",
+      "source_sha256": "a7d2cf14f6ea6c33a1db2c7900c44970c34c1b68fbb24fafa397c2698319b88d",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -3510,7 +3510,7 @@
       "title": "点火仓库原生系统图",
       "knowledge_status": "HISTORICAL_OR_SUPERSEDED_SOURCE",
       "subject": null,
-      "source_sha256": "735d808320ce413a71de676f002716ee8cfc8524f578a1d90f275a412f32d063",
+      "source_sha256": "e7b7eeae5021150507b9d7a147d6ada9779c2531288fca52e50cd85576b5e0c2",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-12"
@@ -4089,7 +4089,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "a7354539b421262acefd86107a17a0f59ad5ec0ee14e81ef9c7ba121370ee922",
+      "source_sha256": "1305295e8b57770b06b65810a9994afbb1f9ab31de16ff655d3d7b0b32bad685",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",

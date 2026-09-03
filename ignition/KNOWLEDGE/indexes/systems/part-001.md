@@ -1024,9 +1024,9 @@
   - 可搜索名称：NFC-4f9ef989426a16e1 / \[机器可读投影\]\(../../data/architecture/interactive-system-map.json\)
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
-- [\[首页交互式架构投影 HTML\]\(../generated/ignition-system-architecture.html\)](../../../docs/architecture/interactive-system-map.md)
+- [\[首页交互式架构投影（GitHub Pages）\]\(https://arvin-liu.github.io/when-systems-catch-fire/architecture/\)](../../../docs/architecture/interactive-system-map.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8ecab35f079fc5ac / \[首页交互式架构投影 HTML\]\(../generated/ignition-system-architecture.html\)
+  - 可搜索名称：NFC-2c731043f91f9ec6 / \[首页交互式架构投影（GitHub Pages）\]\(https://arvin-liu.github.io/when-systems-catch-fire/architecture/\)
   - 来源：`docs/architecture/interactive-system-map.md`
   - 依赖：—；被引用：—
 - [\[首页公共架构投影 SVG\]\(../generated/ignition-system-architecture.svg\)](../../../docs/architecture/interactive-system-map.md)
