@@ -644,6 +644,26 @@
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - **可搜索名称：** `Task 98 claim-governance implementation record`, `098-claim-governance-implementation`
 
+<a id="asset-hr-203efd4a1e416db5"></a>
+## 153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-203EFD4A1E416DB5` · [docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md](../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+- **为什么产生：** 此来源记录了什么：153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** Status: RESEARCHRECORD / ADVERSARIALAUDIT / NONCANONICAL
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-09-04: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力`, `more-meta-foundations-adversarial-audit-2026-09-04`
+
 <a id="asset-hr-20d143d91797ccdc"></a>
 ## Forty proof-obligation dossiers
 
@@ -703,6 +723,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`
 - **可搜索名称：** `IGNITION-20260822-134 — Residual Debt & Projection Hygiene R1`, `IGNITION-20260822-134-result`
+
+<a id="asset-hr-22bc98cea22051c8"></a>
+## 153 反证轮：通过消融后的最小模型
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-22BC98CEA22051C8` · [docs/governance/more-meta-foundations-minimal-model-2026-09-04.md](../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+- **为什么产生：** 此来源记录了什么：153 反证轮：通过消融后的最小模型？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** Status: RESEARCHRECORD / MINIMALMODEL / NONCANONICAL
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-09-04: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `153 反证轮：通过消融后的最小模型`, `more-meta-foundations-minimal-model-2026-09-04`
 
 <a id="asset-hr-23602e485d46c33b"></a>
 ## 080 Highest Model Escalation Summary
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260822-133 — Iteration Boundary Semantics R1`, `IGNITION-20260822-133-result`
-
-<a id="asset-hr-279683b750652ac6"></a>
-## 首批物理资产纠偏（2026-07-29）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-279683B750652AC6` · [docs/foundation/physics-asset-correction-20260729.md](../../docs/foundation/physics-asset-correction-20260729.md)
-- **为什么产生：** 此来源记录了什么：首批物理资产纠偏（2026-07-29）？
-- **当前状态：** `CURRENT_CORRECTION_RECORD`
-- **当前结果：** 本轮没有尝试解决四力统一、量子引力或所谓“七团乌云”。它只修正点火自身资产可以支持什么、不能支持什么。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D127`, `T2`, `D260`, `D182`, `D183`, `D184`, `D185`, `D186`, `D187`, `D188`, `D189`, `D190`
-- **来源与证据：** `docs/foundation/physics-asset-correction-20260729.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `首批物理资产纠偏（2026-07-29）`, `physics-asset-correction-20260729`
-
-<a id="asset-hr-27badcb5d09c98af"></a>
-## 22 本书籍验证案例候选（可读版）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-27BADCB5D09C98AF` · [outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md](../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
-- **为什么产生：** 此来源记录了什么：22 本书籍验证案例候选（可读版）？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`, `202`
-- **演化历史：** 2026-07-09: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `22 本书籍验证案例候选（可读版）`, `book-case-candidates`

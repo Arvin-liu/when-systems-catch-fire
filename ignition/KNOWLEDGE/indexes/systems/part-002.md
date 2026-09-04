@@ -6,6 +6,16 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M05 / data/external-research/088-external-source-atlas-medium.jsonl / M05 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M06 / data/external-research/088-external-source-atlas-medium.jsonl / M06 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M07 / data/external-research/088-external-source-atlas-medium.jsonl / M07 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-362ee6bb883793ca / Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D385；被引用：—
-- [Object D386 defines a mechanism_model within the point-fire framework. Core: 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentratio](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-82871d90a3e51135 / Object D386 defines a mechanism_model within the point-fire framework. Core: 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentratio
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D328, D372, D386；被引用：—
-- [Object D388 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D332与D295在\(p_max,n\)空间相交于p_max=p*且n=n_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1e4baf274d4fafef / Object D388 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D332与D295在\(p_max,n\)空间相交于p_max=p*且n=n_
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D295, D332, D388；被引用：—

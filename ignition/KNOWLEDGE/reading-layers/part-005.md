@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-617b14d24b6c52be"></a>
+## 22 本书验证候选案例 · 正式案例表入表审计 2026-07-09
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：22 本书验证候选案例 · 正式案例表入表审计 2026-07-09；任务：IGNITION-20260709-007。分支 case/book-validation-22-20260709。结论：0 条正式入表，22 条全部维持 candidateonly。；点火主仓库 main：Arvin-liu/when-systems-catch-fire@bb8144c76c956082eea183fb49d31b2a41e8a254（已确认 origin/main == 该 merge commit，PR#1 已合并）；1111 当前版本口径包：Arvin-liu/1111/project-context/、agent-results/IGNITION-20260709-005-、006-；22 本书候选数据：data/meta-protocols/book-validation-cases-20260709.json（count=22，均 status=candidateonly，formalcaseid=null）；可读候选清单：docs/meta-protocols/book-validation-22-cases-20260709.md、outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md
+- 完整阅读：[outputs/audit/book-validation-case-table-formalization-audit-20260709.md](../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+
+<a id="reading-hr-61e3d96daff155d9"></a>
+## IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate
+`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: PASS for the offline adversarial matrix. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate；Status: PASS for the offline adversarial matrix.；The matrix contains 15 required negative cases covering formal-task terminality, obligation closure, class separation, provider-neutral admission, public-auth attestation, billing authority, workspace and runtime-scratch boundaries, exact structured results, executor self-report, retry/stop policy, capture completeness, process/inference separation, and stal…；The matrix mutates in-memory copies only. It starts no executor, process, inference, UI action, network operation, or live attempt; it reads no secret content and changes no configuration or billing state. Natural targeted and full-suite receipts are recorded by the Step 18/19 publication evidence after the exact candidate commit is fixed.；Machine source: ignition/data/operations/iterations/142/step18-adversarial-matrix.json.；Claim ceiling: offline repository-local adversarial rejection evidence only. This does not claim a live validated completion, external truth, production readiness, Owner acceptance, or epistemic acceptance.
+- 完整阅读：[reports/operations/ignition-142-step18-adversarial-matrix.md](../../reports/operations/ignition-142-step18-adversarial-matrix.md)
+
+<a id="reading-hr-61f3531a51705a76"></a>
+## IGNITION-20260821-129 Step 00 — Steering gap audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：0064897c5537cc4a20eb7b03824841a9d6a608d6 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260821-129 Step 00 — Steering gap audit；Formal repository: Arvin-liu/when-systems-catch-fire；Task branch: codex/ignition-129-os-steering-intent-obligation-r1-20260821；Execution-time origin/main: 354be6c079945eb8349e0fee1de79395eb5f8d1c；Relay control tip: Arvin-liu/1111:origin/relay/current；0064897c5537cc4a20eb7b03824841a9d6a608d6
+- 完整阅读：[reports/operations/ignition-129-step00-steering-audit.md](../../reports/operations/ignition-129-step00-steering-audit.md)
+
 <a id="reading-hr-628b84a2327f5c52"></a>
 ## 碰撞证据链：不听话的人 × 点火两张表（20260711）
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Human Surface 编辑契约；状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0；本契约把“所有 Human Surface 必须经过之元写作法”变成长期制度。它不是第二套写作方法，也不是事实、证明、外部证据或 Owner 授权。它只规定：机器记录如何被翻译成面向人的入口，以及这次翻译必须留下哪些边界。；凡是面向人的项目入口、结果页、成果册、文章、案例、研究报告摘要、函数资产、非函数资产、写作片段、失败说明、负结果和公共回应，均属于 Human Surface。机器 JSON/JSONL、schema、测试日志和内部收据可以保持精确字段，但只要它们被转成面向人的页面，就必须经过本契约。；它是什么、为什么出现。 用目标读者能直接理解的语言说明对象、来源类型和阅读目的。；它可以做什么。 只写当前登记允许的用途，例如继续阅读、比较、复核、提出下一步问题或运行仓库内的受限流程。
 - 完整阅读：[docs/governance/human-surface-editorial-contract.md](../../docs/governance/human-surface-editorial-contract.md)
-
-<a id="reading-hr-771c2981fcc20396"></a>
-## 121Q13 Attention, Distribution, And Compression Report
-`CANDIDATE_OR_PENDING_SOURCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Status: READYASATTENTIONDISTRIBUTIONCONTROLCANDIDATE 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q13 Attention, Distribution, And Compression Report；Status: READYASATTENTIONDISTRIBUTIONCONTROLCANDIDATE；121Q13 adds three control surfaces on top of 121Q12:；Attention and attractor control: records IterationDelta and detects no-information-gain loops.；Distribution and decision collapse control: records samples, hypothesis distributions, and action collapse without promoting them to truth.；Compression integrity gate: audits whether high-frequency terms can expand, generate questions, reduce burden, and continue inquiry.
-- 完整阅读：[reports/architecture/121Q13-attention-distribution-compression.md](../../reports/architecture/121Q13-attention-distribution-compression.md)
-
-<a id="reading-hr-771c575b7e09f8bd"></a>
-## 121Q32I Phase D integrated validation closeout
-`CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: PHASEDVALIDATIONCLOSEDCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q32I Phase D integrated validation closeout；Status: PHASEDVALIDATIONCLOSEDCANDIDATEONLY；This report aggregates the already completed D1 unified validator, D2 end-to-end acceptance, and D3 local defensive rejection work. It is a repository-scoped validation artifact. The observed candidate identifier is 4dd038bd3caf5483c8bf3833a0382ed5bb3e2b8a; that identifier is not an attestation or a validity premise.；主题：Preserved history；主题：Integrated evidence；Phase A profile tests: 5/5 PASS; generator --check and profile validator PASS.
-- 完整阅读：[reports/operations/121Q32I-phase-d-validation-closeout.md](../../reports/operations/121Q32I-phase-d-validation-closeout.md)
-
-<a id="reading-hr-773e495bc5720013"></a>
-## Core system reclassification
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Y1 is a workflow orchestrator; JPLUS and JMINUS are internal evidence channels; the twelve protocols are heuristic or governance operators; the 64 combinations are a design space. None is a proof oracle. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Core system reclassification；Y1 is a workflow orchestrator; JPLUS and JMINUS are internal evidence channels; the twelve protocols are heuristic or governance operators; the 64 combinations are a design space. None is a proof oracle.
-- 完整阅读：[reports/foundation-architecture/core-system-reclassification-20260712.md](../../reports/foundation-architecture/core-system-reclassification-20260712.md)

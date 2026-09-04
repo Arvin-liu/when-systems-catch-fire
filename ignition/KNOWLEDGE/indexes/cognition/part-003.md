@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [transport_evidence: Mapping\[str, Any\],](../../../agent_federation/live_task137.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d154dcbdb886fa41 / transport_evidence: Mapping\[str, Any\],
+  - 来源：`agent_federation/live_task137.py`
+  - 依赖：—；被引用：—
+- [transport_evidence=transport_evidence,](../../../agent_federation/live_task137.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-a65010fbb7b65cef / transport_evidence=transport_evidence,
+  - 来源：`agent_federation/live_task137.py`
+  - 依赖：—；被引用：—
+- [trusts an executor's PASS as completion and never invokes a provider.](../../../agent_federation/task142_first_completion_validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d747b5e7294c2974 / trusts an executor's PASS as completion and never invokes a provider.
+  - 来源：`agent_federation/task142_first_completion_validator.py`
+  - 依赖：—；被引用：—
+- [truth, production readiness, Owner acceptance, publication acceptance,](../../../agent-results/IGNITION-20260828-144-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-c74fa47910b5b2d5 / truth, production readiness, Owner acceptance, publication acceptance,
+  - 来源：`agent-results/IGNITION-20260828-144-result.md`
+  - 依赖：—；被引用：—
+- [turn an unverified side effect into a safe automatic retry.](../../../agent_federation/approval_handoff.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-eabc668ba117f8c2 / turn an unverified side effect into a safe automatic retry.
+  - 来源：`agent_federation/approval_handoff.py`
+  - 依赖：—；被引用：—
 - [typed observation fields so a public probe/transport code is never presented](../../../agent_federation/live_current_projection.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-043578e387a5e686 / typed observation fields so a public probe/transport code is never presented
@@ -594,6 +619,11 @@
   - 可搜索名称：NFC-202361688ad4583d / \|Auditor\|检查来源、规则、依赖、边界、独立性、差异和反弹。\|审计通过不等于现实真理或法律结论。\|
   - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
   - 依赖：—；被引用：—
+- [\|authority source\|Owner Intent、Charter、Approval decision 的显式来源\|识别谁在什么范围内可以批准、拒绝或暂停。\|不能推出事实正确、理解全部后果或对所有受影响者有同一价值判断。\|](../../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cbcd26703470fd7c / \|authority source\|Owner Intent、Charter、Approval decision 的显式来源\|识别谁在什么范围内可以批准、拒绝或暂停。\|不能推出事实正确、理解全部后果或对所有受影响者有同一价值判断。\|
+  - 来源：`docs/governance/more-meta-foundations-minimal-model-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [\|Consequence visibility\|风险承担者、沉默主体、维护者或未来选项受到影响时。\|Charter Gate 的 beneficiaries / risk bearers / silent subjects / residu](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-60d52af1db449344 / \|Consequence visibility\|风险承担者、沉默主体、维护者或未来选项受到影响时。\|Charter Gate 的 beneficiaries / risk bearers / silent subjects / residu
@@ -964,6 +994,11 @@
   - 可搜索名称：NFC-47beffc3f8ced634 / 中文：高维认知必然多轨 English: Rule-based English rendering pending human review.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [为什么现在不行动，具体阻塞是哪一个证据、权限、后果或状态条件？](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-08642f281099fb71 / 为什么现在不行动，具体阻塞是哪一个证据、权限、后果或状态条件？
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [人为什么会产生偏见？这是心理学和认知科学中的经典问题，涉及认知、情感、社会等多重因素。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5d1a5085976f30b9 / 人为什么会产生偏见？这是心理学和认知科学中的经典问题，涉及认知、情感、社会等多重因素。
@@ -1318,6 +1353,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-686b383dc793a86d / 已完成且不新增 Agent 能力，也不把仓库内生产证据解释成 Owner acceptance、外部出版或认识论接受。
   - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
+- [当前 `approval-decision-r1` 明确支持第 1 项的一部分；Stage Snapshot 支持特定发布场景的第 2 项；第 3–5 项没有一个通用 joined predicate。由于本轮没有实际 high-conse](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f0f434d1e2845540 / 当前 `approval-decision-r1` 明确支持第 1 项的一部分；Stage Snapshot 支持特定发布场景的第 2 项；第 3–5 项没有一个通用 joined predicate。由于本轮没有实际 high-conse
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
   - 依赖：—；被引用：—
 - [当前角色与实体证据](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`

@@ -1,9 +1,9 @@
 {
   "counts": {
     "function_human": 24,
-    "function_machine": 6056,
+    "function_machine": 6067,
     "nonfunction_human": 24,
-    "nonfunction_machine": 18093
+    "nonfunction_machine": 18208
   },
   "entries": [
     {
@@ -43,7 +43,7 @@
       "asset_kind": "FUNCTION_ASSET",
       "human_path": "docs/human/function-assets/entries/a1.md",
       "machine_id": "A1",
-      "machine_record_sha256": "dd9020caa78a4b43cc71f2ef071c7b5c0aae091128d26ac72c229e29a33ad816",
+      "machine_record_sha256": "b2e969450a8b232fe19c717fe8531daafc454f9407dff65837d36355d19a853f",
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "FOUNDATION-64-PROPAGATION.jsonl",
@@ -54,7 +54,7 @@
       "asset_kind": "FUNCTION_ASSET",
       "human_path": "docs/human/function-assets/entries/a2.md",
       "machine_id": "A2",
-      "machine_record_sha256": "5fdd6617ea67cbb847acafc444b8570be1792555bad6c0be7d88b04166fa067d",
+      "machine_record_sha256": "c2fea1a125ef6a1750c3bd13c2faf081ff3c71139bdd3e6f3a2c5e5d90e1c5c8",
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "analysis/corpus-relation/cluster_source_briefs/C000.md",

@@ -4,6 +4,34 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e852e881d1527cdc"></a>
+## IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate
+`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Task141 terminality, independent obligation carry-forward, the provider-neutral admission contract, offline conformance, the fresh census, the exact validator and the no-blind-retry policy all pass. The fresh census has no live-selectable family: Codex is technical-only and policy-excluded, while… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate；Status: PASSFAILCLOSED.；Task141 terminality, independent obligation carry-forward, the provider-neutral admission contract, offline conformance, the fresh census, the exact validator and the no-blind-retry policy all pass. The fresh census has no live-selectable family: Codex is technical-only and policy-excluded, while Gemini, Hermes and OpenClaw retain explicit technical blockers…；The gate therefore returns SKIPPEDUNSAFEORUNAVAILABLE with liveauthorized=false. No synthetic fixture was created for an executor, no auth/billing/configuration boundary was opened, and neither of the two permitted live-attempt slots was consumed. Historical live counts remain 6 attempts / 0 validated completions / 0 unreconciled / 2 observation-incomplete.；Machine evidence is ignition/data/operations/iterations/142/step12-pre-live-gate.json, validated by ignition/tools/validatetask142prelivegate.py. Steps 13 and 14 will preserve this closed decision as explicit no-invocation records.；Claim ceiling: fail-closed pre-live admission evidence only; no live completion is claimed.
+- 完整阅读：[reports/operations/ignition-142-step12-pre-live-gate.md](../../reports/operations/ignition-142-step12-pre-live-gate.md)
+
+<a id="reading-hr-ea120e5d0d0fa5ff"></a>
+## MF-0001~0005 Codespace 救援复核
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：正式表自举相关文件：0024-T14-自举元函数层级.md、0190-D141-自举元函数.md、0001-Ψ₀元函数完整数学定义.md 等。 其中 D141-自举元函数.md 内含 Jn^+(FD141)=1、Jn^-(FD141)=0、Converged(FD141)⇔... 等表述，但这是对 D141 自身函数做正反向收敛检查，并非把 MF-0001~0005 定义为 MF-0000 的内部子通道构件。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：MF-0001~0005 Codespace 救援复核；救援函数表：PRIVATE_PROVENANCE_WITHHELD；正式函数表目录：PRIVATE_PROVENANCE_WITHHELD；主题：抽取内容（来自救援函数表 Section 0 内部元算子表）；在正式函数表目录中搜索以下关键词，命中情况：；计算 J⁺ / 计算 J⁻：0 文件
+- 完整阅读：[outputs/audit/mf-0001-0005-rescue-review-20260708.md](../../outputs/audit/mf-0001-0005-rescue-review-20260708.md)
+
+<a id="reading-hr-ea1ccd6bb1e44892"></a>
+## IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The new deterministic capture matrix contains 16 cases and all cases pass. It separates two states that the old outer-tool path conflated: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix；The new deterministic capture matrix contains 16 cases and all cases pass. It separates two states that the old outer-tool path conflated:；a complete host capsule with a bounded/truncated model-facing view is；independently recoverable; and；an incomplete capsule (durable cap, spool failure, or privacy rejection)；must remain OBSERVATIONINCOMPLETE and require reconciliation.
+- 完整阅读：[reports/operations/ignition-139-step04-context-loss-fault-matrix.md](../../reports/operations/ignition-139-step04-context-loss-fault-matrix.md)
+
+<a id="reading-hr-ea8833ef83822509"></a>
+## IGNITION-20260828-144 Step 11 — cross-surface split-brain audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The current machine sources agree on Task144 as the active presentation-only closure task and Task142 as the latest architecture-changing task. The phase state, Owner production-brief template, deferred backlog, formal lifecycle, open-obligation registry and release lifecycle agree on their respe… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260828-144 Step 11 — cross-surface split-brain audit；The current machine sources agree on Task144 as the active presentation-only closure task and Task142 as the latest architecture-changing task. The phase state, Owner production-brief template, deferred backlog, formal lifecycle, open-obligation registry and release lifecycle agree on their respective boundaries.；Seven Current Snapshot surfaces were checked. None exposes the historical RUNDYNAMICEXECUTORADMISSION value as a current pointer; historical occurrences remain preserved as historical evidence. The Results Book has one registry and one canonical README entrypoint. All six Task143 registry rows and the three article manifest entries retain the smoke-test/non-…；Step 11 therefore records no deterministic closure blocker. The remaining LIVEEXTERNALINVOCATION obligation is open but independently Owner-deferred, not a Task144 engineering blocker.
+- 完整阅读：[reports/operations/ignition-144-step11-cross-surface-audit.md](../../reports/operations/ignition-144-step11-cross-surface-audit.md)
+
 <a id="reading-hr-eabed7bd3564479d"></a>
 ## IGNITION-20260829-148 typed change-propagation impact report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`

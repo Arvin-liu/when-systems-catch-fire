@@ -1144,6 +1144,11 @@
   - 可搜索名称：NFC-d92ad0aae84300e5 / `COMPLETED_VALIDATED`, Goal completion or external truth.
   - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
+- [`COUNTERMODEL`：对一个没有外部后果、可随时撤销的本地格式化动作，立即行动和短暂 pause 都不改变风险或未来选项。此域中没有必要引入 `O` 才能做安全选择。反例不否认高后果动作需要 stop/rollback，只否认“所有](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5bd6601935b1aa75 / `COUNTERMODEL`：对一个没有外部后果、可随时撤销的本地格式化动作，立即行动和短暂 pause 都不改变风险或未来选项。此域中没有必要引入 `O` 才能做安全选择。反例不否认高后果动作需要 stop/rollback，只否认“所有
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [`data/collisions/20260711-disobedience-subjectivity.json`（命令点名）→ 047 既有 `outputs/candidates/json/candidates-decision.jso](../../../outputs/collisions/20260711-disobedience-subjectivity/validation-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4648c07387ff28dd / `data/collisions/20260711-disobedience-subjectivity.json`（命令点名）→ 047 既有 `outputs/candidates/json/candidates-decision.jso
@@ -1188,6 +1193,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-fff9c3364217c4d8 / `LIVE_READONLY_VALIDATED_COMPLETION`. A reasoner runtime or ordinary tool is
   - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
+- [`N` remains a Charter-originated value boundary that cannot be derived from evidence or topology, but is not proven as a](../../../agent-results/IGNITION-20260904-154-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a4de5241ab4582c0 / `N` remains a Charter-originated value boundary that cannot be derived from evidence or topology, but is not proven as a
+  - 来源：`agent-results/IGNITION-20260904-154-result.md`
   - 依赖：—；被引用：—
 - [`NO_CHANGE_WITH_REASON` decisions and evidence:](../../../templates/operations/task-command-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
@@ -1503,6 +1513,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F74294207589ACB3 / APP不Agent化必死：d_relative\(t\)=d_得到大脑\(t\)/d_竞品\(t\)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f\(P_infra\)≈0的乘法归零 / IMPLICIT-F74294207589ACB3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Arbitration gaps remain object-specific and context-dependent; no universal precedence or new meta-arbitration layer is](../../../agent-results/IGNITION-20260904-154-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c67065ecbac0de49 / Arbitration gaps remain object-specific and context-dependent; no universal precedence or new meta-arbitration layer is
+  - 来源：`agent-results/IGNITION-20260904-154-result.md`
   - 依赖：—；被引用：—
 - [are recovery accelerators and never a second truth source.](../../../agent-results/IGNITION-20260820-127-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-8767559c777a088a / Gateway, inspect OpenClaw state, copy OpenClaw memory, or expose OpenClaw's
   - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [Gateway、channel、私有数据库、daemon、长期会话或配置/secret；未声明的](../../../docs/architecture/external-agent-federation-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a4dc8e3d399b87d3 / Gateway、channel、私有数据库、daemon、长期会话或配置/secret；未声明的
-  - 来源：`docs/architecture/external-agent-federation-r1.md`
-  - 依赖：—；被引用：—
-- [H^t, attention distributions, ponder times, remainders and update counts expose stepwise trace candidates, but no standa](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bdd0b625fc572d4c / H^t, attention distributions, ponder times, remainders and update counts expose stepwise trace candidates, but no standa
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [handle.write\(json.dumps\(validated, ensure_ascii=False, sort_keys=True, separators=\(",", ":"\)\) + "\\n"\)](../../../agent_federation/live_reconciliation_events.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0ebd124bd5cb9b05 / handle.write\(json.dumps\(validated, ensure_ascii=False, sort_keys=True, separators=\(",", ":"\)\) + "\\n"\)
-  - 来源：`agent_federation/live_reconciliation_events.py`
   - 依赖：—；被引用：—

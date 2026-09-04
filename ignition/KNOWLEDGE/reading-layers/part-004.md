@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-4b5539f6a578f48d"></a>
+## 输入材料快照 · 赛课机制下的教师生存困境
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：输入材料快照 · 赛课机制下的教师生存困境；本轮工作副本：inputs/collisions/20260708-teacher-competition/source.md；原始上传路径：PRIVATE_PROVENANCE_WITHHELD；赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放；文章以「赛课」机制为对象，揭示其将教师专业成长转化为可量化竞赛，层层绑定职称、绩效、学校业绩与教研资源，造成教师身心代价与真实教学被挤压。含 7 条机制链、多教师个案表格、系统性钝化与「教室作为避风港」结尾。提出了量化竞赛转化、多层利益绑定、表演化生产、评价失衡、身心外部化、避风港等多个可判定结构点。；是（仅用本地 Markdown 正文，未访问网页，未用公众号推广语/图片链接作核心材料）。
+- 完整阅读：[outputs/collisions/20260708-teacher-competition/source-snapshot.md](../../outputs/collisions/20260708-teacher-competition/source-snapshot.md)
+
+<a id="reading-hr-4ba367b053be5f75"></a>
+## IGNITION-20260827-143 Step 07 — Article A 对抗性编辑
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Article A 通过编辑复核并修订为 REVIEWEDCURRENTR1。它现在明确是一篇以 Task142 为案例的仓库内方法文章，而不是对所有项目的生命周期规范。修订没有改变案例事实或开放义务的状态。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-143 Step 07 — Article A 对抗性编辑；Article A 通过编辑复核并修订为 REVIEWEDCURRENTR1。它现在明确是一篇以 Task142 为案例的仓库内方法文章，而不是对所有项目的生命周期规范。修订没有改变案例事实或开放义务的状态。；“这不是给‘不够成功’找一个新标签”改为明确针对本仓库的 lifecycle 判断，避免把局部设计写成普遍心理解释。；将“系统叙事”和“成熟终态”改为“这个项目的叙事”和“对这个仓库而言的可用终态”，降低普遍化风险。；保留历史动作与当前动作的区分，因为它是本文和 Task143 Owner-deferred 停放之间的实际连接；没有把 Owner-deferred 写成完成或失败。；文章具备标题、deck、引入、完整论证、结尾和来源与边界说明；当前正文约 4,300 个中文字符，满足本轮完整稿目标。编辑结论只表示文章适合进入本轮 publication production，不表示其中的生命周期设计已获得外部验证。
+- 完整阅读：[reports/operations/ignition-143-step07-article-a-editorial-review.md](../../reports/operations/ignition-143-step07-article-a-editorial-review.md)
+
+<a id="reading-hr-4d31b64808a19248"></a>
+## IGNITION-20260826-140 Step 13 — Targeted regression and projection closure
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The targeted live/Current/identity/release/privacy suite completed naturally with 91 tests, 0 failures, 0 errors and 0 skips. It includes the typed Observation/Reconciliation Plane tests added in Task140 and the existing transport, execution, ledger, Current, release and privacy gates. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260826-140 Step 13 — Targeted regression and projection closure；The targeted live/Current/identity/release/privacy suite completed naturally with 91 tests, 0 failures, 0 errors and 0 skips. It includes the typed Observation/Reconciliation Plane tests added in Task140 and the existing transport, execution, ledger, Current, release and privacy gates.；The first run was not relabeled as green: it naturally reported 4 failures. Those failures were stale test contracts for the six-record ledger and the new ARCHITECTURECHANGED Task140 identity, plus one Task139 release-candidate source binding. The tests and the canonical task-identity source were repaired to match current semantics, then the identical suite…；The repository's projection preflight then completed with 25/25 checks passing, releaseadmission=true, sideeffectdetected=false and the preflight contract explicitly bound to Task140. Deterministic source projections were regenerated to fixed point: Function assets 5944, Nonfunction claims 17172, Knowledge Experience 414 cards / 315 changes / 332 layered / 2…；Current remains fail-closed: six attempts, zero validated completions, zero unreconciled attempts, two observation-incomplete records, and an OPEN LIVEEXTERNALINVOCATION obligation. Step13 started no live process and did not authorize a same-family retry or a second family without a safe admission.；Machine evidence: step13-targeted-regression.json, live-current-projection-r2.json, step12-independent-validation.json.
+- 完整阅读：[reports/operations/ignition-140-step13-targeted-regression.md](../../reports/operations/ignition-140-step13-targeted-regression.md)
+
 <a id="reading-hr-4db4d409044421b2"></a>
 ## IGNITION-20260822-132 Step 07 — Publication Witness Task-ID Binding
 `HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：The shared public probe produced 14 candidates: 5 Agentic Executor records (4 installed), 4 reasoner runtimes, 3 tools and 2 UI surfaces. No inference, UI action, installation, configuration or billing operation occurred. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260827-142 Step 11 — Fresh Executor Census R2；The shared public probe produced 14 candidates: 5 Agentic Executor records (4 installed), 4 reasoner runtimes, 3 tools and 2 UI surfaces. No inference, UI action, installation, configuration or billing operation occurred.；Deterministic ranking uses only the ten admission checks and stable family/ID tie-breakers. Codex is the sole technically admitted Agentic Executor, but its Task140 same-family blind-retry policy blocker remains active. Gemini, Hermes and OpenClaw each retain explicit technical blockers; Copilot is not installed. Reasoners, tools and UI surfaces are excluded…；Machine evidence is ignition/data/operations/iterations/142/local-executor-census-r2.json plus ignition/data/operations/iterations/142/step11-fresh-census.json. The canonical census is validated through ignition/agentfederation/localexecutorcensus.py and ignition/tools/validatelocalexecutorcensus.py.；Claim ceiling: fresh public observation, classification, admission checks, policy exclusion and deterministic why-executor trace only; no live completion or external truth is claimed.
 - 完整阅读：[reports/operations/ignition-142-step11-fresh-census.md](../../reports/operations/ignition-142-step11-fresh-census.md)
-
-<a id="reading-hr-617b14d24b6c52be"></a>
-## 22 本书验证候选案例 · 正式案例表入表审计 2026-07-09
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：22 本书验证候选案例 · 正式案例表入表审计 2026-07-09；任务：IGNITION-20260709-007。分支 case/book-validation-22-20260709。结论：0 条正式入表，22 条全部维持 candidateonly。；点火主仓库 main：Arvin-liu/when-systems-catch-fire@bb8144c76c956082eea183fb49d31b2a41e8a254（已确认 origin/main == 该 merge commit，PR#1 已合并）；1111 当前版本口径包：Arvin-liu/1111/project-context/、agent-results/IGNITION-20260709-005-、006-；22 本书候选数据：data/meta-protocols/book-validation-cases-20260709.json（count=22，均 status=candidateonly，formalcaseid=null）；可读候选清单：docs/meta-protocols/book-validation-22-cases-20260709.md、outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md
-- 完整阅读：[outputs/audit/book-validation-case-table-formalization-audit-20260709.md](../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
-
-<a id="reading-hr-61e3d96daff155d9"></a>
-## IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate
-`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: PASS for the offline adversarial matrix. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate；Status: PASS for the offline adversarial matrix.；The matrix contains 15 required negative cases covering formal-task terminality, obligation closure, class separation, provider-neutral admission, public-auth attestation, billing authority, workspace and runtime-scratch boundaries, exact structured results, executor self-report, retry/stop policy, capture completeness, process/inference separation, and stal…；The matrix mutates in-memory copies only. It starts no executor, process, inference, UI action, network operation, or live attempt; it reads no secret content and changes no configuration or billing state. Natural targeted and full-suite receipts are recorded by the Step 18/19 publication evidence after the exact candidate commit is fixed.；Machine source: ignition/data/operations/iterations/142/step18-adversarial-matrix.json.；Claim ceiling: offline repository-local adversarial rejection evidence only. This does not claim a live validated completion, external truth, production readiness, Owner acceptance, or epistemic acceptance.
-- 完整阅读：[reports/operations/ignition-142-step18-adversarial-matrix.md](../../reports/operations/ignition-142-step18-adversarial-matrix.md)
-
-<a id="reading-hr-61f3531a51705a76"></a>
-## IGNITION-20260821-129 Step 00 — Steering gap audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：0064897c5537cc4a20eb7b03824841a9d6a608d6 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260821-129 Step 00 — Steering gap audit；Formal repository: Arvin-liu/when-systems-catch-fire；Task branch: codex/ignition-129-os-steering-intent-obligation-r1-20260821；Execution-time origin/main: 354be6c079945eb8349e0fee1de79395eb5f8d1c；Relay control tip: Arvin-liu/1111:origin/relay/current；0064897c5537cc4a20eb7b03824841a9d6a608d6
-- 完整阅读：[reports/operations/ignition-129-step00-steering-audit.md](../../reports/operations/ignition-129-step00-steering-audit.md)

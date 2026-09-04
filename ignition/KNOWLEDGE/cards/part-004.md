@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-279683b750652ac6"></a>
+## 首批物理资产纠偏（2026-07-29）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-279683B750652AC6` · [docs/foundation/physics-asset-correction-20260729.md](../../docs/foundation/physics-asset-correction-20260729.md)
+- **为什么产生：** 此来源记录了什么：首批物理资产纠偏（2026-07-29）？
+- **当前状态：** `CURRENT_CORRECTION_RECORD`
+- **当前结果：** 本轮没有尝试解决四力统一、量子引力或所谓“七团乌云”。它只修正点火自身资产可以支持什么、不能支持什么。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D127`, `T2`, `D260`, `D182`, `D183`, `D184`, `D185`, `D186`, `D187`, `D188`, `D189`, `D190`
+- **来源与证据：** `docs/foundation/physics-asset-correction-20260729.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `首批物理资产纠偏（2026-07-29）`, `physics-asset-correction-20260729`
+
+<a id="asset-hr-27badcb5d09c98af"></a>
+## 22 本书籍验证案例候选（可读版）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-27BADCB5D09C98AF` · [outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md](../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
+- **为什么产生：** 此来源记录了什么：22 本书籍验证案例候选（可读版）？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`, `202`
+- **演化历史：** 2026-07-09: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `22 本书籍验证案例候选（可读版）`, `book-case-candidates`
+
 <a id="asset-hr-290e2cb3b336dd6a"></a>
 ## Count reconciliation
 
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `函数资产作者指南`, `function-asset-authoring-guide`
-
-<a id="asset-hr-3ded720d598ae407"></a>
-## Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3DED720D598AE407` · [reports/architecture/current-state-drift-audit-r1.md](../../reports/architecture/current-state-drift-audit-r1.md)
-- **为什么产生：** 此来源记录了什么：Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 基线：d60ec8687fb1cc6b972e831a8f0dcd348ba0e83e
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/architecture/current-state-drift-audit-r1.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-08-17: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00`, `current-state-drift-audit-r1`
-
-<a id="asset-hr-3dfbbb5a261064e9"></a>
-## v0.2 CP/SB 编号前计数差异诊断
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3DFBBB5A261064E9` · [outputs/audit/v0.2-id-preflight-discrepancy-20260707.md](../../outputs/audit/v0.2-id-preflight-discrepancy-20260707.md)
-- **为什么产生：** 此来源记录了什么：v0.2 CP/SB 编号前计数差异诊断？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 如果 CP=34、SB=30 且无重复、无误识别，则下一步应：
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `outputs/audit/v0.2-id-preflight-discrepancy-20260707.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-07: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `v0.2 CP/SB 编号前计数差异诊断`, `v0.2-id-preflight-discrepancy-20260707`

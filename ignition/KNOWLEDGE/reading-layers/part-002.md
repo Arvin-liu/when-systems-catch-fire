@@ -11,6 +11,13 @@
 - 5 分钟：主题：Task 98 claim-governance implementation record；Formal repository start: f07413d56a45285a0f0db5b3848cb4a1a37777e2；Control repository commit: fc3805eb6f6e48f4d46b3c60ed15e92ee3f245be；Task 97 evidence head: 01e18b382259509c5680cd126e82c61a7e861ff3 (78/78 manifest entries replayed)；Change class: Foundation schema/data/tooling + claim-governance policy + historical correction + public current-state synchronization；Claim ceiling: repository governance and assessment of the current Ignition model only; no new external physics result
 - 完整阅读：[reports/foundation-architecture/098-claim-governance-implementation.md](../../reports/foundation-architecture/098-claim-governance-implementation.md)
 
+<a id="reading-hr-203efd4a1e416db5"></a>
+## 153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: RESEARCHRECORD / ADVERSARIALAUDIT / NONCANONICAL 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力；Status: RESEARCHRECORD / ADVERSARIALAUDIT / NONCANONICAL；Task: IGNITION-20260904-154 Predecessor: IGNITION-20260904-153, candidate head 08c837cd5d74b9ac14dcea7288c77786e10e3bac Baseline: when-systems-catch-fire main@212322d41db79bce2dbd116166d3f1ad226291f3 Scope: 只反证 153 的 ORTHOGONALDUALFOUNDATION / NONEWCANONICALLAYER 候选综合；不修改现有治理合同、运行时、权限、schema、registry 或 Current 身份。；这里被反证的是“P/O/N/A 与五源 role topology 构成一个最小且正交的双基础”这一强命题，不是对当前 Charter、Claim Ceiling、Kernel、Approval、Runtime、Stage Snapshot 或 OS Steering 合同的否定。逐项消融显示：；P、O 和 A 都可以被现有合同或已有跨合同关系重新承载；它们没有显示出必须作为新 primitive 才能提供的独立判定。；N 保留了一个不能从证据逻辑推出的规范边界，但它是 Charter 的价值约束，不是由本轮材料证明的通用基础 primitive。
+- 完整阅读：[docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md](../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+
 <a id="reading-hr-20d143d91797ccdc"></a>
 ## Forty proof-obligation dossiers
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
@@ -31,6 +38,13 @@
 - 1 分钟：Task ID: IGNITION-20260822-134 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260822-134 — Residual Debt & Projection Hygiene R1；Task ID: IGNITION-20260822-134；Formal task ordinal: 134；Latest architecture task: IGNITION-20260821-129; architecture task ordinal: 129.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；The canonical Current source is terminal and repository-local RELEASEREADY. currentiterationboundary=134 is only the deprecated compatibility alias of the formal ordinal; it is not an independent truth source. The task remains PRESENTATIONONLY, the map remains 0.12.0 Current with 0.11.0 Historical, and CURRENTWITHOPENOBLIGATIONS / EPISTEMICALLYACCEPTED=0 rem…
 - 完整阅读：[agent-results/IGNITION-20260822-134-result.md](../../agent-results/IGNITION-20260822-134-result.md)
+
+<a id="reading-hr-22bc98cea22051c8"></a>
+## 153 反证轮：通过消融后的最小模型
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Status: RESEARCHRECORD / MINIMALMODEL / NONCANONICAL 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：153 反证轮：通过消融后的最小模型；Status: RESEARCHRECORD / MINIMALMODEL / NONCANONICAL；Task: IGNITION-20260904-154 Predecessor: IGNITION-20260904-153, candidate head 08c837cd5d74b9ac14dcea7288c77786e10e3bac Scope: 记录 153 候选被反证后仍有用的最小审计表示；不把任何表示提升为新协议、schema、registry、权限或 Current。；严格最小的 canonical 选择是：EXISTINGFEDERATEDCONTRACTSONLY。；对研究和 review 仍有用、但不能制度化的最小视图是：；EXISTINGFEDERATEDCONTRACTS + CROSSCONTRACTREVIEWMAP
+- 完整阅读：[docs/governance/more-meta-foundations-minimal-model-2026-09-04.md](../../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
 
 <a id="reading-hr-23602e485d46c33b"></a>
 ## 080 Highest Model Escalation Summary
@@ -339,17 +353,3 @@
 - 1 分钟：Task ID: IGNITION-20260828-147 Formal task ordinal: 147 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260828-147 result；Task ID: IGNITION-20260828-147 Formal task ordinal: 147；Task147 completes the bounded repository-local README project-identity and architecture-navigation repair. The formal task is terminal as COMPLETEDWITHOPENOBLIGATIONS: the exact Owner-supplied ### 项目现状 paragraph is present without work-status additions; ## 1. 项目与价值 contains only the two direct human blocks ### 项目现状 and ### 价值宪章; and the architecture section…；The raw/transparent SVG secondary entry and href/link-metadata/registry/topology/layout or rendered-hotspot machine explanations are absent from the README. The component navigation contains 22 links whose targets were checked against the current architecture registry, map specification and canonical documentation; the map itself was not changed.；The homepage remains humanstaticsummary / nogeneratedsnapshot. Current Snapshot, task lineage, live and architecture counts, detailed engineering explanations and machine state remain in the linked Current surfaces. Rebuilding Current projections does not rewrite or re-inject the README identity or component menu.；Affected Human Front Door, Human Surface, Current projection, compiler, Current state, ordinal, map-freeze and related unit-test gates passed naturally: 42 tests, 0 failures, 0 errors and 0 skips. The authorized narrow task does not require the long full suite.
 - 完整阅读：[agent-results/IGNITION-20260828-147-result.md](../../agent-results/IGNITION-20260828-147-result.md)
-
-<a id="reading-hr-3611a9bf0615b4e7"></a>
-## Foundation documentation
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Foundation documentation；076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。；函数、模型、定理、公式、律或判定器还必须读取：；旧表是不可变来源；data/foundation/function-assets/corrections.jsonl 是 task 98 首批纠偏权威覆盖。task 99 的 identity-cards.jsonl 为每个发现项提供现行处置；自动 census 仍只是候选，quarantine 也不因登记、编号或测试而获得真值。；task 100 的 data/foundation/nonfunction-claims/claim-registry.jsonl 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 quarantine，不表示证明、外部证据、原创性、同行评审或复现完成。
-- 完整阅读：[docs/foundation/README.md](../../docs/foundation/README.md)
-
-<a id="reading-hr-3697fef2b08e4800"></a>
-## IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1
-`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
-- 1 分钟：Task ID: IGNITION-20260825-139 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1；Task ID: IGNITION-20260825-139；Formal task ordinal: 139；Latest architecture-changing task: IGNITION-20260823-136; architecture task ordinal: 136.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；Task139 terminalizes the repository-local durable live-observation and Current projection continuation. CURRENTWITHOPENOBLIGATIONS remains current, EPISTEMICALLYACCEPTED=0 remains unchanged, and the live external invocation obligation remains open because no validated external completion was observed. This result records durable capture contracts, append-onl…
-- 完整阅读：[agent-results/IGNITION-20260825-139-result.md](../../agent-results/IGNITION-20260825-139-result.md)
