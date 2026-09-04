@@ -6,21 +6,21 @@
 
 - [第 001 片](./mathematics/part-001.md)：1—500；"""A tiny read-only workspace whose lifecycle is explicit and disposable.""" → ## 纯数学函数与推导 / Pure Mathematical Function and Derivation
 - [第 002 片](./mathematics/part-002.md)：501—1000；## 纯数学函数与推导 / Pure Mathematical Function and Derivation → PRIVATE_PROVENANCE_WITHHELD
-- [第 003 片](./mathematics/part-003.md)：1001—1500；PRIVATE_PROVENANCE_WITHHELD → authority_changes: formal Task148 lifecycle advances from `IN_PROGRESS` to terminal `COMPLETED_WITH_OPEN_OBLIGATIONS`, a
-- [第 004 片](./mathematics/part-004.md)：1501—2000；authority_changes: none beyond the repository lifecycle transition from Draft candidate to synchronized repository-local → Formal semantics, proof sketches, four-language code and five benchmark families provide substantial bounded validation
-- [第 005 片](./mathematics/part-005.md)：2001—2500；Formal soundness proofs and a 10KLOC implementation evaluation jointly validate the bounded verifier. → If upstream objects D_{D61} exist, compose F_{D61}=N\(⊕_{g∈D_{D61}} g\); otherwise treat F_{D61} as an axiom seed.
-- [第 006 片](./mathematics/part-006.md)：2501—3000；If upstream objects D_{D62} exist, compose F_{D62}=N\(⊕_{g∈D_{D62}} g\); otherwise treat F_{D62} as an axiom seed. → Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = \(bp-q\)/b 映射： - f* ↔ ε信号最优流速 v*
-- [第 007 片](./mathematics/part-007.md)：3001—3500；Object D538 defines a optimization_problem within the point-fire framework. Core: 中文：潜意识内容S通过觉知阈值θ_a进入意识域C：C\(x\)=1\[φ\(S\(x\) → This formal result records task identity and lifecycle outcome only. It does
-- [第 008 片](./mathematics/part-008.md)：3501—4000；This is a local ARN validation rule for avoiding projection errors. It is not a universal theorem about temporal network → title: "认知规范破缺函数 / cognitive norm-breaking function"
-- [第 009 片](./mathematics/part-009.md)：4001—4500；title: "认知规范破缺函数 / cognitive norm-breaking function" → Within the source-defined scope, 死亡三重定义函数 is adjudicated as RELATION: 死亡分三个层次：生物学死亡（身体机能终止）→社会学死亡（社会关系中断）→存在论死亡（痕迹完全消失），
-- [第 010 片](./mathematics/part-010.md)：4501—5000；Within the source-defined scope, 民事保护,各维度退出权的乘积 is adjudicated as RELATION: 民事保护，各维度退出权的乘积。. This is a model-internal co → \| \[D535\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D535\(h\) := \(β,σ,ε\) where β=biologica
-- [第 011 片](./mathematics/part-011.md)：5001—5500；\| \[D538\]\( \) \| \[三重死亡与执念逃避函数族\]\( \) \| F_D538\(s\) := C\(s\)=1\[φ\(s\)>θ_a\], φ → 中文：dK/dt = K×E\[r\] - \(B_occupy/B₀\)×R_return - α_fear×K。小资金炒股不只是"数学上负期望"（D-X53），还会激活D64恐惧锁定，形成投资域向下螺旋。跟D54（认知域向下螺旋）结构同构。
-- [第 012 片](./mathematics/part-012.md)：5501—6000；中文：E_{Q_0003}=1 iff d*\(O\)=argmin_d\[L\(M_d\|O\)+Omega\(d\)\]。维度是模型对观测的最小充分坐标数，是解释工具的压缩参数；不能由此推出经验世界不存在，只能推出“宇宙本体=某一维度集合”不是必要前提。 → 从原文看，物理大统一路径，物理大统一推导、电弱理论碰撞等。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-- [第 013 片](./mathematics/part-013.md)：6001—6500；从原文看，犹豫域双向压缩，遮蔽、退出权信号、退出成本、姿态的平衡。 更像是一个用于把局部现象拉到跨域统一结构上的函数。 → 从这条案例看，中文：案例说明：犹豫域退化函数 English: Rule-based English rendering pending human r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-- [第 014 片](./mathematics/part-014.md)：6501—7000；从这条案例看，中文：案例说明：理财的几何本质——收益投影拉宽×风险投影压窄 English: Rule-based English rendering… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 原始来源: PRIVATE_PROVENANCE_WITHHELD
-- [第 015 片](./mathematics/part-015.md)：7001—7500；原始来源: PRIVATE_PROVENANCE_WITHHELD → 基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）
-- [第 016 片](./mathematics/part-016.md)：7501—8000；增加生命共同体适应能力、问题解决能力和未来选择空间的可检验变化；须可逆优先、小规模试验、风险隔离、可停止、有失败反馈，且不以创新为由制造不可控外部风险。 → 数学表达 / Expression: `F_{T28}\(x\) := g=exp\[-\(ln\(μ/M_Planck\)\)²/\(2σ²\)\]，A-B型统一、极值点处量子涨落自然为零`
-- [第 017 片](./mathematics/part-017.md)：8001—8500；数学表达 / Expression: `F_{T34}\(x\) := T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln\(M_Planck/μ\)在μ=M_Pla → 相关函数：D585 欧亚枢纽函数、D586 北方之路函数、D587 共享-退出权同构函数、D588 对称性-共享协议函数、D589 通道不对称-贸易枢纽函数
-- [第 018 片](./mathematics/part-018.md)：8501—9000；相变序参量-门槛函数 → 已迁移的历史函数来源/0375-D339-僵尸态救援函数.md
-- [第 019 片](./mathematics/part-019.md)：9001—9500；已迁移的历史函数来源/0376-D340-正反馈饱和后振荡函数.md → 路径：`已迁移的历史函数来源/0459-D423-不可逆体积参数归约函数.md`
-- [第 020 片](./mathematics/part-020.md)：9501—9708；身处其中，她意识到，青年教师没办法不参加比赛，除非不需要养家糊口。赛课所关联的职称评定，会影响绩效、考评、退休金、医保等——那是一笔很大的经济账。 → （函数表版本、案例表版本、P1 数据版本、是否校验通过）
+- [第 003 片](./mathematics/part-003.md)：1001—1500；PRIVATE_PROVENANCE_WITHHELD → architecture_boundary: component registry `2.4.0`, typed topology `1.13.0`, layout-derived map `0.16.0` Current and iden
+- [第 004 片](./mathematics/part-004.md)：1501—2000；Are the Gödel incompleteness theorems limitative results for the neurosciences? → Fisher信息-门控距离函数
+- [第 005 片](./mathematics/part-005.md)：2001—2500；Fisher健康度函数 → If upstream objects D_{D47} exist, compose F_{D47}=N\(⊕_{g∈D_{D47}} g\); otherwise treat F_{D47} as an axiom seed.
+- [第 006 片](./mathematics/part-006.md)：2501—3000；If upstream objects D_{D48} exist, compose F_{D48}=N\(⊕_{g∈D_{D48}} g\); otherwise treat F_{D48} as an axiom seed. → Object D400 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I_concentration正是D387配分函数的序参量——磁化强度m的
+- [第 007 片](./mathematics/part-007.md)：3001—3500；Object D403 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√ → The theorem controls representation or approximation capacity, not optimization error, finite-sample generalization, net
+- [第 008 片](./mathematics/part-008.md)：3501—4000；The title and recovered annotation assert that two oppositely monotone functions *necessarily* produce an inverted-U pro → title: "良性循环逃逸速度函数"
+- [第 009 片](./mathematics/part-009.md)：4001—4500；title: "艺术创作逻辑跨时空同构函数" → Within the source-defined scope, 有效信息倒U型定理 is adjudicated as FORMAL_PROPOSITION: 有效信息 = 带宽 × 分辨率 的组合： I_eff\(σ\) = H\(σ\) ×
+- [第 010 片](./mathematics/part-010.md)：4501—5000；Within the source-defined scope, 有限温临界指数修正函数 is adjudicated as METRIC: M4的β_eff = 1/2 - ε\(T\)，ε∝\(kT/Φ_min\)²。大系统临界行为更接近平均场 → \| \[D416\]\( \) \| \[K=1-p_max=p*等价证明函数 \\\| M5的K=1对应正反馈恰好自持\]\(<./0452-D416-K
+- [第 011 片](./mathematics/part-011.md)：5001—5500；\| \[D417\]\( \) \| \[δ_c-稳定性裕度统一函数\]\( \) \| F_{D417}\(x\) := M6的吸引域深度×宽度² → 两个框架都是迭代扩张系统，数学形式同构但驱动逻辑相反。
+- [第 012 片](./mathematics/part-012.md)：5501—6000；两个系统在结构上相似，但尚未证明同构。 → 从原文看，因果光锥统一函数，信息传播速度限制导致的因果约束在物理系统、认知系统、社会系统中展现统一结构。因果光锥不是物理特有，而是信息传播受限系统的… 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+- [第 013 片](./mathematics/part-013.md)：6001—6500；从原文看，坏觉概率，P_bad = σ\(H·p_prior - \(1-H\)·p\)。 更像是一个用于把局部现象拉到跨域统一结构上的函数。 → 从这条案例看，中文：案例说明：拓扑绝缘体 — 体态3D门控否决，表面=2D门控边界。核心函数：\[D158\]\(docs/zh/functions/item… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+- [第 014 片](./mathematics/part-014.md)：6501—7000；从这条案例看，中文：案例说明：拜占庭公民有真实退出权，但拆了旧认同未建新认同 关键发现：第3步未满足 English: Rule-based Engli… 更像是在验证“退出权、认同和函数映射”之间的对应关系。 → 历史规律的判定 → **pending**（需要史料考证和解释共同体共识）
+- [第 015 片](./mathematics/part-015.md)：7001—7500；历史规律的判定（需要史料考证和解释共同体共识） → 哥德尔不完备定理的边界在哪里？**（公理系统完备性）
+- [第 016 片](./mathematics/part-016.md)：7501—8000；哥德尔不完备定理的边界（未完全厘清） → 数学表达 / Expression: `F_{D327}\(x\) := M14的K_benign≈α_exclusion时良性恶性周期震荡：良性增长→p_max↓→容斥减弱→恶性增长→p_max↑→良性被压→恶性受限→良性再增长。震荡周期T_
+- [第 017 片](./mathematics/part-017.md)：8001—8500；数学表达 / Expression: `F_{D328}\(x\) := M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max\(ΔΦᵢ\)·\(1+ln\(Σe^{ΔΦᵢ}/max\(ΔΦᵢ\)\)\)。极端异质性下ΔΦ_total → 物理学：四种基本力统一、量子引力、暗物质暗能量本质
+- [第 018 片](./mathematics/part-018.md)：8501—9000；物理学：四种基本力统一、量子引力、暗物质暗能量本质 → 已迁移的历史函数来源/0315-D279-干预时机悖论函数.md
+- [第 019 片](./mathematics/part-019.md)：9001—9500；已迁移的历史函数来源/0316-D280-容斥干预两步策略函数.md → 语言—思维逻辑平面
+- [第 020 片](./mathematics/part-020.md)：9501—9772；误差抵消优化函数：解释了多阶段突破的数学机制\\n4. → （函数表版本、案例表版本、P1 数据版本、是否校验通过）

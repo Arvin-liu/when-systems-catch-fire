@@ -135,7 +135,8 @@
 |`docs/getbrain-operation-guide-20260708.docx`|0|0|是|
 |`docs/getbrain-operation-guide-20260708.md`|26|0|否|
 |`docs/getnote-collision-workflow-final-20260708.md`|30|0|否|
-|`docs/governance/README.md`|4|0|否|
+|`docs/governance/README.md`|5|0|否|
+|`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`|71|0|否|
 |`docs/governance/charter-system-r1.md`|31|0|否|
 |`docs/governance/charter-system-r1.schema.json`|0|0|是|
 |`docs/governance/charter-system-registry.json`|0|0|是|
@@ -162,8 +163,10 @@
 |`docs/governance/meta-protocol-reviews/protocols/V2.md`|14|0|否|
 |`docs/governance/meta-protocol-reviews/protocols/V3.md`|11|0|否|
 |`docs/governance/meta-protocol-reviews/protocols/V4.md`|10|0|否|
+|`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`|51|0|否|
 |`docs/governance/non-sycophancy-output-protocol.md`|15|0|否|
 |`docs/governance/self-correction-engine.md`|11|0|否|
+|`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`|57|0|否|
 |`docs/human/function-assets/README.md`|0|0|是|
 |`docs/human/function-assets/bulk-explanation.md`|0|0|是|
 |`docs/human/function-assets/entries/a0.md`|0|0|是|
@@ -414,6 +417,7 @@
 |`reports/foundation-architecture/unresolved-obligations-20260712.md`|2|0|否|
 |`reports/foundation-architecture/validation-summary-20260712.md`|1|0|否|
 |`reports/governance/121Q8-final-report.md`|6|0|否|
+|`reports/governance/task-IGNITION-20260904-153.md`|37|0|否|
 |`reports/math-foundation/blockers-20260712.md`|1|0|否|
 |`reports/math-foundation/full-object-inventory-20260712.md`|24|0|否|
 |`reports/math-foundation/local-note-sync-report-20260712.md`|6|0|否|
