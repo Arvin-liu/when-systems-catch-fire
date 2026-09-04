@@ -4,6 +4,86 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D48} exist, compose F_{D48}=N\(⊕_{g∈D_{D48}} g\); otherwise treat F_{D48} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7d4932b812af636e / If upstream objects D_{D48} exist, compose F_{D48}=N\(⊕_{g∈D_{D48}} g\); otherwise treat F_{D48} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D48；被引用：—
+- [If upstream objects D_{D49} exist, compose F_{D49}=N\(⊕_{g∈D_{D49}} g\); otherwise treat F_{D49} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ca165eeeca5b088a / If upstream objects D_{D49} exist, compose F_{D49}=N\(⊕_{g∈D_{D49}} g\); otherwise treat F_{D49} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D49；被引用：—
+- [If upstream objects D_{D4} exist, compose F_{D4}=N\(⊕_{g∈D_{D4}} g\); otherwise treat F_{D4} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-74148f005e15386a / If upstream objects D_{D4} exist, compose F_{D4}=N\(⊕_{g∈D_{D4}} g\); otherwise treat F_{D4} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D4；被引用：—
+- [If upstream objects D_{D50} exist, compose F_{D50}=N\(⊕_{g∈D_{D50}} g\); otherwise treat F_{D50} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3e5c233a1fb6307a / If upstream objects D_{D50} exist, compose F_{D50}=N\(⊕_{g∈D_{D50}} g\); otherwise treat F_{D50} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D50；被引用：—
+- [If upstream objects D_{D51} exist, compose F_{D51}=N\(⊕_{g∈D_{D51}} g\); otherwise treat F_{D51} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-53e00a3edff69f8a / If upstream objects D_{D51} exist, compose F_{D51}=N\(⊕_{g∈D_{D51}} g\); otherwise treat F_{D51} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D51；被引用：—
+- [If upstream objects D_{D52} exist, compose F_{D52}=N\(⊕_{g∈D_{D52}} g\); otherwise treat F_{D52} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e1cdd7dc34877c38 / If upstream objects D_{D52} exist, compose F_{D52}=N\(⊕_{g∈D_{D52}} g\); otherwise treat F_{D52} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D52；被引用：—
+- [If upstream objects D_{D53} exist, compose F_{D53}=N\(⊕_{g∈D_{D53}} g\); otherwise treat F_{D53} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bc5bf327f3ae55ec / If upstream objects D_{D53} exist, compose F_{D53}=N\(⊕_{g∈D_{D53}} g\); otherwise treat F_{D53} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D53；被引用：—
+- [If upstream objects D_{D54} exist, compose F_{D54}=N\(⊕_{g∈D_{D54}} g\); otherwise treat F_{D54} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-89bee09c41cf40c8 / If upstream objects D_{D54} exist, compose F_{D54}=N\(⊕_{g∈D_{D54}} g\); otherwise treat F_{D54} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D54；被引用：—
+- [If upstream objects D_{D55} exist, compose F_{D55}=N\(⊕_{g∈D_{D55}} g\); otherwise treat F_{D55} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e23bbcf4a92ef07f / If upstream objects D_{D55} exist, compose F_{D55}=N\(⊕_{g∈D_{D55}} g\); otherwise treat F_{D55} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D55；被引用：—
+- [If upstream objects D_{D56} exist, compose F_{D56}=N\(⊕_{g∈D_{D56}} g\); otherwise treat F_{D56} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8833460b8b4548f0 / If upstream objects D_{D56} exist, compose F_{D56}=N\(⊕_{g∈D_{D56}} g\); otherwise treat F_{D56} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D56；被引用：—
+- [If upstream objects D_{D57} exist, compose F_{D57}=N\(⊕_{g∈D_{D57}} g\); otherwise treat F_{D57} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-91a2b10d57cfd9a9 / If upstream objects D_{D57} exist, compose F_{D57}=N\(⊕_{g∈D_{D57}} g\); otherwise treat F_{D57} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D57；被引用：—
+- [If upstream objects D_{D58} exist, compose F_{D58}=N\(⊕_{g∈D_{D58}} g\); otherwise treat F_{D58} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8304e1778d7ec0b4 / If upstream objects D_{D58} exist, compose F_{D58}=N\(⊕_{g∈D_{D58}} g\); otherwise treat F_{D58} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D58；被引用：—
+- [If upstream objects D_{D59} exist, compose F_{D59}=N\(⊕_{g∈D_{D59}} g\); otherwise treat F_{D59} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b01168b175dd20ed / If upstream objects D_{D59} exist, compose F_{D59}=N\(⊕_{g∈D_{D59}} g\); otherwise treat F_{D59} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D59；被引用：—
+- [If upstream objects D_{D5} exist, compose F_{D5}=N\(⊕_{g∈D_{D5}} g\); otherwise treat F_{D5} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-41b455eed852b5a7 / If upstream objects D_{D5} exist, compose F_{D5}=N\(⊕_{g∈D_{D5}} g\); otherwise treat F_{D5} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D5；被引用：—
+- [If upstream objects D_{D60} exist, compose F_{D60}=N\(⊕_{g∈D_{D60}} g\); otherwise treat F_{D60} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a86b93a87d60d485 / If upstream objects D_{D60} exist, compose F_{D60}=N\(⊕_{g∈D_{D60}} g\); otherwise treat F_{D60} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D60；被引用：—
+- [If upstream objects D_{D61} exist, compose F_{D61}=N\(⊕_{g∈D_{D61}} g\); otherwise treat F_{D61} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ae28f9a588905bee / If upstream objects D_{D61} exist, compose F_{D61}=N\(⊕_{g∈D_{D61}} g\); otherwise treat F_{D61} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D61；被引用：—
 - [If upstream objects D_{D62} exist, compose F_{D62}=N\(⊕_{g∈D_{D62}} g\); otherwise treat F_{D62} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-722fdd8b844c4ba2 / If upstream objects D_{D62} exist, compose F_{D62}=N\(⊕_{g∈D_{D62}} g\); otherwise treat F_{D62} as an axiom seed.
@@ -899,6 +979,11 @@
   - 可搜索名称：NFC-dcb5d81cdbc5f5e9 / Life\(S\)=1 iff M_self*Boundary*Energy*Reproduction_active*Selection > theta_life。生命式系统至少要有自维持、边界、能量/资源代谢、主动复制或变体生成、选择反馈；被
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D124；被引用：—
+- [Lifecycle and canonical recommendation](../../../reports/governance/task-IGNITION-20260904-153.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-97d078faf628e431 / Lifecycle and canonical recommendation
+  - 来源：`reports/governance/task-IGNITION-20260904-153.md`
+  - 依赖：—；被引用：—
 - [Lifecycle and external boundary](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-68954a926ba98c92 / Lifecycle and external boundary
@@ -2419,88 +2504,3 @@
   - 可搜索名称：NFC-f7809df04d70495f / Object D400 defines a mechanism_model within the point-fire framework. Core: 中文：M3的I_concentration正是D387配分函数的序参量——磁化强度m的
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D386, D387, D400；被引用：—
-- [Object D403 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-c3445b4cbb5085a1 / Object D403 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D389, D403；被引用：—
-- [Object D41 defines a formal_proposition within the point-fire framework. Core: 中文：t_critical=\(1/\(m_β×α_C×C̄/θ_C\)\)×ln\(ε₀/](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-89cd020ae8a82815 / Object D41 defines a formal_proposition within the point-fire framework. Core: 中文：t_critical=\(1/\(m_β×α_C×C̄/θ_C\)\)×ln\(ε₀/
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D41；被引用：—
-- [Object D42 defines a formal_proposition within the point-fire framework. Core: 中文：H_narrative = σ\(ε_sense×ε_aware - ε_ac](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-89b54f26aad6b156 / Object D42 defines a formal_proposition within the point-fire framework. Core: 中文：H_narrative = σ\(ε_sense×ε_aware - ε_ac
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D42；被引用：—
-- [Object D43 defines a formal_proposition within the point-fire framework. Core: 中文：P_survive = 1 - \(1-D_immune\) × \(1-R_pe](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-5fb6f5f2b5091fed / Object D43 defines a formal_proposition within the point-fire framework. Core: 中文：P_survive = 1 - \(1-D_immune\) × \(1-R_pe
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D43；被引用：—
-- [Object D44 defines a formal_proposition within the point-fire framework. Core: 中文：M_certainty = ν × \(1 - π/π₀\). Annotati](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-669882f03a53b8da / Object D44 defines a formal_proposition within the point-fire framework. Core: 中文：M_certainty = ν × \(1 - π/π₀\). Annotati
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D44；被引用：—
-- [Object D45 defines a formal_proposition within the point-fire framework. Core: 中文：中间稳态存在 ⟺ 至少一条正反馈回路存在负反馈抵消. Annotation:](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-09bdd5604899982c / Object D45 defines a formal_proposition within the point-fire framework. Core: 中文：中间稳态存在 ⟺ 至少一条正反馈回路存在负反馈抵消. Annotation:
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D45；被引用：—
-- [Object D46 defines a formal_proposition within the point-fire framework. Core: 中文：P\(grid_k \| L\) = f\(H_total, C_exit, D_i](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-5d459241beadd0df / Object D46 defines a formal_proposition within the point-fire framework. Core: 中文：P\(grid_k \| L\) = f\(H_total, C_exit, D_i
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D46；被引用：—
-- [Object D47 defines a formal_proposition within the point-fire framework. Core: 中文：dW/dt = -θ_resist×\(dE/dt\)/E² - dε_awar](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-84275f873c6ae027 / Object D47 defines a formal_proposition within the point-fire framework. Core: 中文：dW/dt = -θ_resist×\(dE/dt\)/E² - dε_awar
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D47；被引用：—
-- [Object D472 defines a optimization_problem within the point-fire framework. Core: 中文：E_{Q_0003}=1 iff d*\(O\)=argmin_d\[L\(M](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7cc8a5bf166d25d5 / Object D472 defines a optimization_problem within the point-fire framework. Core: 中文：E_{Q_0003}=1 iff d*\(O\)=argmin_d\[L\(M
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D472；被引用：—
-- [Object D474 defines a optimization_problem within the point-fire framework. Core: 中文：Life\(S\)=1 iff M_self*Boundary*Energ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-ca44591fd5e87cf8 / Object D474 defines a optimization_problem within the point-fire framework. Core: 中文：Life\(S\)=1 iff M_self*Boundary*Energ
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D474；被引用：—
-- [Object D475 defines a optimization_problem within the point-fire framework. Core: 中文：classify_A\(p\) in {provable, refutab](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8760696592211c31 / Object D475 defines a optimization_problem within the point-fire framework. Core: 中文：classify_A\(p\) in {provable, refutab
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D475；被引用：—
-- [Object D48 defines a formal_proposition within the point-fire framework. Core: 中文：t_critical = \(1/\(m_β×α_C×C̄/θ_C\)\) × ln](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-6c58b2d831c68878 / Object D48 defines a formal_proposition within the point-fire framework. Core: 中文：t_critical = \(1/\(m_β×α_C×C̄/θ_C\)\) × ln
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D48；被引用：—
-- [Object D49 defines a formal_proposition within the point-fire framework. Core: 中文：P₁\(不足\), P₂\(窗口\), P₃\(过度\)，D_immune为关键调节器.](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-10caf4afa66f7844 / Object D49 defines a formal_proposition within the point-fire framework. Core: 中文：P₁\(不足\), P₂\(窗口\), P₃\(过度\)，D_immune为关键调节器.
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D49；被引用：—
-- [Object D50 defines a formal_proposition within the point-fire framework. Core: 中文：N_output = ⌈α × dim\(domain\) × \(1-overl](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-990072449e45539c / Object D50 defines a formal_proposition within the point-fire framework. Core: 中文：N_output = ⌈α × dim\(domain\) × \(1-overl
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D50；被引用：—
-- [Object D523 defines a optimization_problem within the point-fire framework. Core: 中文：dim_H\(K_n\)=n，其中K_n包含单位线段所有方向，n=2已严格](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-126ddc5e7c1d50f2 / Object D523 defines a optimization_problem within the point-fire framework. Core: 中文：dim_H\(K_n\)=n，其中K_n包含单位线段所有方向，n=2已严格
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D523, T39；被引用：—
-- [Object D525 defines a optimization_problem within the point-fire framework. Core: 中文：M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7b48faa2fa1c5db2 / Object D525 defines a optimization_problem within the point-fire framework. Core: 中文：M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D525；被引用：—
-- [Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = \(bp-q\)/b 映射： - f* ↔ ε信号最优流速 v*](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a46d9d800ad5ba5a / Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = \(bp-q\)/b 映射： - f* ↔ ε信号最优流速 v*
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D53；被引用：—

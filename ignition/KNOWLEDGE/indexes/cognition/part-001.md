@@ -949,6 +949,11 @@
   - 可搜索名称：NFC-18cc2bc1fc3bf8cb / \[#97｜高维认知必然多轨\]\(docs/zh/cases/items/C-0097.md\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
+- [\[`accountable-cognition-boundary-map-2026-09-04.md`\]\(./accountable-cognition-boundary-map-2026-09-04.md\) — 中性的角色拓扑、13 个能](../../../docs/governance/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2c87b81f18aa4929 / \[`accountable-cognition-boundary-map-2026-09-04.md`\]\(./accountable-cognition-boundary-map-2026-09-04.md\) — 中性的角色拓扑、13 个能
+  - 来源：`docs/governance/README.md`
+  - 依赖：—；被引用：—
 - [\[`OPERATING-METHOD.md`\]\(../OPERATING-METHOD.md\) 是外部用户和 Agent **使用点火完成任务**的规范入口，独立身份为 `IGNITION_OPERATING_METHOD_R1 / 1.0](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-89ebadf1f7ec16ef / \[`OPERATING-METHOD.md`\]\(../OPERATING-METHOD.md\) 是外部用户和 Agent **使用点火完成任务**的规范入口，独立身份为 `IGNITION_OPERATING_METHOD_R1 / 1.0
@@ -1069,6 +1074,11 @@
   - 可搜索名称：NFC-c7045030fb2d09cd / `0.3.0` 修复 0.2.0 仍把方法写成 L6 外接出版工具的问题：之元写作法与点火是维护者声明的同源认知运动在不同约束下形成的候选投影。之元写作法操作上仍位于 L6，却同时承担公共表达和反馈返回接口。review `47138331
   - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—
+- [`A=G` 只表示 gate 或 envelope 可以约束/停止/验证，不表示 gate 变成 Owner；`A=D` 只表示技术委托，不表示价值授权或责任转移。](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-57ce2394cec8ee6c / `A=G` 只表示 gate 或 envelope 可以约束/停止/验证，不表示 gate 变成 Owner；`A=D` 只表示技术委托，不表示价值授权或责任转移。
+  - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [`ABSTAIN` belongs to reviewer authority. It is separate from the 1241 terminal decisions and records that a scoped revie](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bd0d2a2c6e9a3453 / `ABSTAIN` belongs to reviewer authority. It is separate from the 1241 terminal decisions and records that a scoped revie
@@ -1144,6 +1154,11 @@
   - 可搜索名称：NFC-335c2c47664b21aa / `docs/architecture/external-agent-federation-r1.md`、`agent_federation/` 与 `data/agent-federation/`：Task 122 的 OS/executo
   - 来源：`AI-HANDOFF.md`
   - 依赖：—；被引用：—
+- [`epistemic source`：主张、证据、观察和不确定性从哪里来；](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e0e34dd70344b9c4 / `epistemic source`：主张、证据、观察和不确定性从哪里来；
+  - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [`external_agent_federation --documents / repository_dependency--> openclaw_adapter` — observed CLI boundary only; no Gat](../../../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6b087b1cd3ae5d83 / `external_agent_federation --documents / repository_dependency--> openclaw_adapter` — observed CLI boundary only; no Gat
@@ -1163,6 +1178,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-74f81fa8b92a8997 / `I_iso\(A,B\)`：是否与现有条目同构。
   - 来源：`docs/agent-trigger-phrases-20260708.md`
+  - 依赖：—；被引用：—
+- [`INFERENCE`：对“谁有权要求这项行动”而言，明确 Human Owner / Charter authority 是必要来源；对“这项判断是否正确、证据是否充分、后果是否可接受、是否能回滚、是否有人能 contest”而言，Hum](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b3523f81d8bef2aa / `INFERENCE`：对“谁有权要求这项行动”而言，明确 Human Owner / Charter authority 是必要来源；对“这项判断是否正确、证据是否充分、后果是否可接受、是否能回滚、是否有人能 contest”而言，Hum
+  - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
   - 依赖：—；被引用：—
 - [`LIVE_READONLY_VALIDATED_COMPLETION`. A reasoner runtime or ordinary tool is](../../../docs/architecture/external-agent-federation-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1184,6 +1204,11 @@
   - 可搜索名称：NFC-6fb9736619b965a0 / `NOT_VALIDATED`, and reconciliation is not blocked. It cannot emit the old
   - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
+- [`OBSERVATION`：B 文档确认当前仓库已经把 Human Owner、Agent、CI、policy/gate、service account、repository、artifacts/evidence、logs/audit tr](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b8077ba546e2603a / `OBSERVATION`：B 文档确认当前仓库已经把 Human Owner、Agent、CI、policy/gate、service account、repository、artifacts/evidence、logs/audit tr
+  - 来源：`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [`OPEN / OWNER_DEFERRED`, with six historical attempts, zero validated](../../../agent-results/IGNITION-20260828-146-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3bb7b21fe1178bc1 / `OPEN / OWNER_DEFERRED`, with six historical attempts, zero validated
@@ -1198,6 +1223,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-0106842f9646158b / `P_meta` 元协议投影：叙事作为元协议，组织角色、价值和行动可能性
   - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
+  - 依赖：—；被引用：—
+- [`P` \(provenance-bounded assertion\) is the strongest shared explanation for Evidence and Claim Ceiling; `O` \(option prese](../../../agent-results/IGNITION-20260904-153-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-67b0550a45635b8e / `P` \(provenance-bounded assertion\) is the strongest shared explanation for Evidence and Claim Ceiling; `O` \(option prese
+  - 来源：`agent-results/IGNITION-20260904-153-result.md`
   - 依赖：—；被引用：—
 - [`Pack ≠ truth authority`：Pack 的 validator、hook 和 receipt 不能升级 truth、Owner 或 epistemic authority。](../../../docs/architecture/agent-platform-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1214,6 +1244,11 @@
   - 可搜索名称：NFC-f7f507eafee40536 / `pilot ≠ general intelligence`：离线 pilot 只说明这次仓库 fixture 的观察结果。
   - 来源：`docs/architecture/agent-platform-r2.md`
   - 依赖：—；被引用：—
+- [`PROPOSAL（human / Agent / external input） → provenance-bound evidence → bounded inference → scoped evaluation / dissent](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-8073fc46f4608915 / `PROPOSAL（human / Agent / external input） → provenance-bound evidence → bounded inference → scoped evaluation / dissent
+  - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [`repository_synchronization_complete`: every registry-required repository surface has a validated decision and evidence,](../../../ITERATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-9c0460578b93a38c / `repository_synchronization_complete`: every registry-required repository surface has a validated decision and evidence,
@@ -1228,6 +1263,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1620b4d7a9f111f4 / `STATE-CHANGELOG.md` 是 AI 优先的状态增量导航；它必须与 canonical current-state、registry、claim 和 evidence 资产交叉核对，不能成为第二套真相源。
   - 来源：`docs/AGENT-GUIDE.md`
+  - 依赖：—；被引用：—
+- [`stop / rollback source`：谁能在什么证据下停止、撤回、降级或回滚。](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0579424c16e2913c / `stop / rollback source`：谁能在什么证据下停止、撤回、降级或回滚。
+  - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
   - 依赖：—；被引用：—
 - [`tests/fixtures/federation/openclaw-agent-json-response.json`.](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1343,6 +1383,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c5cfd77205ff11b2 / Affected Human Front Door, Human Surface, Current projection, compiler, Current state, ordinal, map-freeze and related u
   - 来源：`agent-results/IGNITION-20260828-147-result.md`
+  - 依赖：—；被引用：—
+- [Agent / CI / service account / runtime 可以产生技术结果，但不能仅凭结果成为 Owner、truth authority 或最终责任引用。](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e009ae7ace06d57f / Agent / CI / service account / runtime 可以产生技术结果，但不能仅凭结果成为 Owner、truth authority 或最终责任引用。
+  - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
   - 依赖：—；被引用：—
 - [Agent agreement、模型互评或重复回答不能作为 `EVIDENCE / SOURCES`；它们最多是需要独立核验的 observation。validator 不接纳 `AGENT_CONSENSUS` 或 `MODEL_MEM](../../../OPERATING-METHOD.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1534,6 +1579,11 @@
   - 可搜索名称：NFC-de342ea7da9d841b / attempts, zero validated completions, zero unreconciled attempts and two
   - 来源：`agent-results/IGNITION-20260827-142-result.md`
   - 依赖：—；被引用：—
+- [Attention / Distribution control 已明确“每个 gap 变新层”“CI success 变理论 success”“同源 Agent 输出变独立证据”是项目级吸引子。](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d4017a4ad8f35e0f / Attention / Distribution control 已明确“每个 gap 变新层”“CI success 变理论 success”“同源 Agent 输出变独立证据”是项目级吸引子。
+  - 来源：`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [Attention And Attractor Control Plane](../../ASSET-CARDS.md#asset-hr-9be719cb6ef0fd88)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：Attention And Attractor Control Plane / attention-attractor-control-plane
@@ -1628,6 +1678,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-bbb53ca7a262c824 / checks\["external_surface_clear"\] = set\(external_surface_evidence\) == set\(_SURFACE_KEYS\) and all\(value is False for value
   - 来源：`agent_federation/live_validation.py`
+  - 依赖：—；被引用：—
+- [CI、repository、logs 和 artifacts 可以让结果更可复核，但没有一个格子能成为 `N=B`。责任承载者必须由显式治理合同指定。](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6cf4bb4e03c67dee / CI、repository、logs 和 artifacts 可以让结果更可复核，但没有一个格子能成为 `N=B`。责任承载者必须由显式治理合同指定。
+  - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
   - 依赖：—；被引用：—
 - [Claim ceiling: `candidate_zhiyuan_writing_method_0_3_0_whole_project_expression_feedback_projection_implemented / reposi](../../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2448,59 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0ebd124bd5cb9b05 / handle.write\(json.dumps\(validated, ensure_ascii=False, sort_keys=True, separators=\(",", ":"\)\) + "\\n"\)
   - 来源：`agent_federation/live_reconciliation_events.py`
-  - 依赖：—；被引用：—
-- [handoff_eligibility=HandoffEligibility\(True, "OS validator verified the read-only fixture observation"\),](../../../agent_federation/pilots.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-09e200ac54febb66 / handoff_eligibility=HandoffEligibility\(True, "OS validator verified the read-only fixture observation"\),
-  - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [handoff_id="pilot-c-incapable-handoff-001", source_receipt=_validated_receipt\(reference.executor_id, envelope.federation](../../../agent_federation/pilots.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8fe739a0acee9de7 / handoff_id="pilot-c-incapable-handoff-001", source_receipt=_validated_receipt\(reference.executor_id, envelope.federation
-  - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [handoff、failover、独立 validation、receipt 和 pointer-only memory。OpenClaw、](../../../docs/architecture/agent-platform-r2.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6f7fed7fe57e0c8d / handoff、failover、独立 validation、receipt 和 pointer-only memory。OpenClaw、
-  - 来源：`docs/architecture/agent-platform-r2.md`
-  - 依赖：—；被引用：—
-- [Hermes Adapter R1](../../ASSET-CARDS.md#asset-hr-7b64b7be18a79532)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：Hermes Adapter R1 / hermes-adapter-r1
-  - 来源：`docs/architecture/hermes-adapter-r1.md`
-  - 依赖：—；被引用：—
-- [Historical compatibility audit passes for seven Task123–130 receipts; old boundary values remain captured historical evi](../../../agent-results/IGNITION-20260822-133-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e7c96703f6df9ce8 / Historical compatibility audit passes for seven Task123–130 receipts; old boundary values remain captured historical evi
-  - 来源：`agent-results/IGNITION-20260822-133-result.md`
-  - 依赖：—；被引用：—
-- [historical six attempts, zero validated completions, zero unreconciled records](../../../agent-results/IGNITION-20260827-143-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3c59a9aeec46006e / historical six attempts, zero validated completions, zero unreconciled records
-  - 来源：`agent-results/IGNITION-20260827-143-result.md`
-  - 依赖：—；被引用：—
-- [HOME and temporary files point at the disposable workspace, never at](../../../agent_federation/live_child_guard.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a2ae195adc771e7c / HOME and temporary files point at the disposable workspace, never at
-  - 来源：`agent_federation/live_child_guard.py`
-  - 依赖：—；被引用：—
-- [I_iso\(A,B\)：T40 仅信息/决策权对称，未覆盖价值来源—决策权分离。不实质同构（新）。J⁻=0。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-82d07ede8e709801 / I_iso\(A,B\)：T40 仅信息/决策权对称，未覆盖价值来源—决策权分离。不实质同构（新）。J⁻=0。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
-  - 依赖：T40；被引用：—
-- [I_iso\(A,B\)：与 EXIT 族同属「退出权被约束」，但原语是「正向支持退化」，EXIT 族未覆盖该方向；与 D595 不同构（D595 是绩效绑定，非代际资源绑定）。I_iso=不实质同构（新）。J⁻=0。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cf50f00e0ff4bcb5 / I_iso\(A,B\)：与 EXIT 族同属「退出权被约束」，但原语是「正向支持退化」，EXIT 族未覆盖该方向；与 D595 不同构（D595 是绩效绑定，非代际资源绑定）。I_iso=不实质同构（新）。J⁻=0。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
-  - 依赖：D595；被引用：—
-- [if any\(_path_overlap\(resolved, item\) for item in protected\):](../../../agent_federation/live_transport.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e8a3782274bb6e7d / if any\(_path_overlap\(resolved, item\) for item in protected\):
-  - 来源：`agent_federation/live_transport.py`
-  - 依赖：—；被引用：—
-- [if any\(_path_overlap\(resolved, root\) for root in self.protected_roots\):](../../../agent_federation/live_transport.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-57aafc0fa05dc486 / if any\(_path_overlap\(resolved, root\) for root in self.protected_roots\):
-  - 来源：`agent_federation/live_transport.py`
   - 依赖：—；被引用：—

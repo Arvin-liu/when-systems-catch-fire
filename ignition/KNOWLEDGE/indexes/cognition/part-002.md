@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [handoff_eligibility=HandoffEligibility\(True, "OS validator verified the read-only fixture observation"\),](../../../agent_federation/pilots.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-09e200ac54febb66 / handoff_eligibility=HandoffEligibility\(True, "OS validator verified the read-only fixture observation"\),
+  - 来源：`agent_federation/pilots.py`
+  - 依赖：—；被引用：—
+- [handoff_id="pilot-c-incapable-handoff-001", source_receipt=_validated_receipt\(reference.executor_id, envelope.federation](../../../agent_federation/pilots.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8fe739a0acee9de7 / handoff_id="pilot-c-incapable-handoff-001", source_receipt=_validated_receipt\(reference.executor_id, envelope.federation
+  - 来源：`agent_federation/pilots.py`
+  - 依赖：—；被引用：—
+- [handoff、failover、独立 validation、receipt 和 pointer-only memory。OpenClaw、](../../../docs/architecture/agent-platform-r2.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6f7fed7fe57e0c8d / handoff、failover、独立 validation、receipt 和 pointer-only memory。OpenClaw、
+  - 来源：`docs/architecture/agent-platform-r2.md`
+  - 依赖：—；被引用：—
+- [Hermes Adapter R1](../../ASSET-CARDS.md#asset-hr-7b64b7be18a79532)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Hermes Adapter R1 / hermes-adapter-r1
+  - 来源：`docs/architecture/hermes-adapter-r1.md`
+  - 依赖：—；被引用：—
+- [Historical compatibility audit passes for seven Task123–130 receipts; old boundary values remain captured historical evi](../../../agent-results/IGNITION-20260822-133-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e7c96703f6df9ce8 / Historical compatibility audit passes for seven Task123–130 receipts; old boundary values remain captured historical evi
+  - 来源：`agent-results/IGNITION-20260822-133-result.md`
+  - 依赖：—；被引用：—
+- [historical six attempts, zero validated completions, zero unreconciled records](../../../agent-results/IGNITION-20260827-143-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-3c59a9aeec46006e / historical six attempts, zero validated completions, zero unreconciled records
+  - 来源：`agent-results/IGNITION-20260827-143-result.md`
+  - 依赖：—；被引用：—
+- [HOME and temporary files point at the disposable workspace, never at](../../../agent_federation/live_child_guard.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a2ae195adc771e7c / HOME and temporary files point at the disposable workspace, never at
+  - 来源：`agent_federation/live_child_guard.py`
+  - 依赖：—；被引用：—
+- [Human Owner 是 authority / responsibility 的必要来源之一，但不是证据、理解、正确性和可回滚性的充分条件。](../../../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-953c4dbdf2916eae / Human Owner 是 authority / responsibility 的必要来源之一，但不是证据、理解、正确性和可回滚性的充分条件。
+  - 来源：`docs/governance/accountable-cognition-boundary-map-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [I_iso\(A,B\)：T40 仅信息/决策权对称，未覆盖价值来源—决策权分离。不实质同构（新）。J⁻=0。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-82d07ede8e709801 / I_iso\(A,B\)：T40 仅信息/决策权对称，未覆盖价值来源—决策权分离。不实质同构（新）。J⁻=0。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
+  - 依赖：T40；被引用：—
+- [I_iso\(A,B\)：与 EXIT 族同属「退出权被约束」，但原语是「正向支持退化」，EXIT 族未覆盖该方向；与 D595 不同构（D595 是绩效绑定，非代际资源绑定）。I_iso=不实质同构（新）。J⁻=0。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-cf50f00e0ff4bcb5 / I_iso\(A,B\)：与 EXIT 族同属「退出权被约束」，但原语是「正向支持退化」，EXIT 族未覆盖该方向；与 D595 不同构（D595 是绩效绑定，非代际资源绑定）。I_iso=不实质同构（新）。J⁻=0。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
+  - 依赖：D595；被引用：—
+- [if any\(_path_overlap\(resolved, item\) for item in protected\):](../../../agent_federation/live_transport.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e8a3782274bb6e7d / if any\(_path_overlap\(resolved, item\) for item in protected\):
+  - 来源：`agent_federation/live_transport.py`
+  - 依赖：—；被引用：—
+- [if any\(_path_overlap\(resolved, root\) for root in self.protected_roots\):](../../../agent_federation/live_transport.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-57aafc0fa05dc486 / if any\(_path_overlap\(resolved, root\) for root in self.protected_roots\):
+  - 来源：`agent_federation/live_transport.py`
+  - 依赖：—；被引用：—
 - [if any\(parent_resolved == root or root in parent_resolved.parents for root in protected\):](../../../agent_federation/live_capture.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-673e0c6ce99c32ce / if any\(parent_resolved == root or root in parent_resolved.parents for root in protected\):
@@ -419,6 +479,16 @@
   - 可搜索名称：IGNITION-20260828-144 Step 05 — engineering phase closure state / ignition-144-step05-phase-closure-state
   - 来源：`reports/operations/ignition-144-step05-phase-closure-state.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260904-153 result](../../ASSET-CARDS.md#asset-hr-d8a0357e2c935df1)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260904-153 result / IGNITION-20260904-153-result
+  - 来源：`agent-results/IGNITION-20260904-153-result.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260904-153 任务报告：价值—认识论推导审计与可追责认知边界](../../ASSET-CARDS.md#asset-hr-f6ad2195b7f7cae6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：IGNITION-20260904-153 任务报告：价值—认识论推导审计与可追责认知边界 / task-IGNITION-20260904-153
+  - 来源：`reports/governance/task-IGNITION-20260904-153.md`
+  - 依赖：—；被引用：—
 - [incomplete\), and an attempt identity can never be overwritten or reused.](../../../agent_federation/live_attempt_ledger.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd90cd03af1893f8 / incomplete\), and an attempt identity can never be overwritten or reused.
@@ -543,6 +613,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b800b6d10f3ff4db / Map position, visual proximity, evolution stage, dependency, and sourcing decision do not prove fact, isomorphism, natur
   - 来源：`reports/releases/121Q15-q12-q14-cumulative-preflight.md`
+  - 依赖：—；被引用：—
+- [mappings for Human Owner\(s\), Codex / Agents, CI, policy / gate, service account, repository, evidence/artifacts, logs/au](../../../reports/governance/task-IGNITION-20260904-153.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5043ae6957130efd / mappings for Human Owner\(s\), Codex / Agents, CI, policy / gate, service account, repository, evidence/artifacts, logs/au
+  - 来源：`reports/governance/task-IGNITION-20260904-153.md`
   - 依赖：—；被引用：—
 - [MEMORY_PROJECTION_TYPES = frozenset\({"EPISODIC", "FAILURE", "APPROVAL", "ROLLBACK", "UNRESOLVED_CONTINUATION"}\)](../../../agent_federation/convergence.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
@@ -2214,6 +2289,11 @@
   - 可搜索名称：NFC-f86694bd3f8612e7 / The new source domain is `agent_platform.federation`; it is forbidden from directly generating Knowledge, Writing, Human
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [The operational loop separates epistemic source, authority source, execution source, accountability sink and stop/rollba](../../../agent-results/IGNITION-20260904-153-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4e3618b5601fd566 / The operational loop separates epistemic source, authority source, execution source, accountability sink and stop/rollba
+  - 来源：`agent-results/IGNITION-20260904-153-result.md`
+  - 依赖：—；被引用：—
 - [The public GPT-to-Babel-to-JavaScript execution/refinement pipeline compiles task/state/feedback and prior skills into r](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-f1c2d5318e9334e5 / The public GPT-to-Babel-to-JavaScript execution/refinement pipeline compiles task/state/feedback and prior skills into r
@@ -2423,84 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-eabc668ba117f8c2 / turn an unverified side effect into a safe automatic retry.
   - 来源：`agent_federation/approval_handoff.py`
-  - 依赖：—；被引用：—
-- [typed observation fields so a public probe/transport code is never presented](../../../agent_federation/live_current_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-043578e387a5e686 / typed observation fields so a public probe/transport code is never presented
-  - 来源：`agent_federation/live_current_projection.py`
-  - 依赖：—；被引用：—
-- [typed=schema_version in {TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA, LIVE_CURRENT_PROJECTION_SCHEMA},](../../../agent_federation/live_current_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-28006ec963415aed / typed=schema_version in {TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA, LIVE_CURRENT_PROJECTION_SCHEMA},
-  - 来源：`agent_federation/live_current_projection.py`
-  - 依赖：—；被引用：—
-- [TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA = "live-current-projection-r2"](../../../agent_federation/live_current_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a4347a2c72da3aa5 / TYPED_R2_LIVE_CURRENT_PROJECTION_SCHEMA = "live-current-projection-r2"
-  - 来源：`agent_federation/live_current_projection.py`
-  - 依赖：—；被引用：—
-- [unreconciled = \[summary for summary in summaries if summary\["reconciliation_status"\] in {"OPEN", "REQUIRES_RECONCILIATIO](../../../agent_federation/live_current_projection.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-83706c3a21d30fa6 / unreconciled = \[summary for summary in summaries if summary\["reconciliation_status"\] in {"OPEN", "REQUIRES_RECONCILIATIO
-  - 来源：`agent_federation/live_current_projection.py`
-  - 依赖：—；被引用：—
-- [unresolved residue.](../../../docs/architecture/attention-attractor-control-plane.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bae37595dee73964 / unresolved residue.
-  - 来源：`docs/architecture/attention-attractor-control-plane.md`
-  - 依赖：—；被引用：—
-- [unresolveds: Sequence\[str\] = \(\),](../../../agent_federation/approval_handoff.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4f85c5e1ead27950 / unresolveds: Sequence\[str\] = \(\),
-  - 来源：`agent_federation/approval_handoff.py`
-  - 依赖：—；被引用：—
-- [unresolveds: tuple\[str, ...\]](../../../agent_federation/contracts.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c1e07d18dc8de611 / unresolveds: tuple\[str, ...\]
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [unresolveds=\(\) if terminal_state == "FAILED" else \("OS_VALIDATION_NOT_PERFORMED",\),](../../../agent_federation/adapters/codex.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9b958e25e747970b / unresolveds=\(\) if terminal_state == "FAILED" else \("OS_VALIDATION_NOT_PERFORMED",\),
-  - 来源：`agent_federation/adapters/codex.py`
-  - 依赖：—；被引用：—
-- [unresolveds=\(\),](../../../agent_federation/pilots.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1c4a8c6a7b2ccc99 / unresolveds=\(\),
-  - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [unresolveds=tuple\(dict.fromkeys\(\(*source_receipt.unresolveds, *unresolveds\)\)\),](../../../agent_federation/approval_handoff.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0c6149ce7fef931a / unresolveds=tuple\(dict.fromkeys\(\(*source_receipt.unresolveds, *unresolveds\)\)\),
-  - 来源：`agent_federation/approval_handoff.py`
-  - 依赖：—；被引用：—
-- [unresolveds=tuple\(unresolveds\),](../../../agent_federation/contracts.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a166cf1ed090aa86 / unresolveds=tuple\(unresolveds\),
-  - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [unresolveds=unresolveds,](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-4e8f4336707743f9 / unresolveds=unresolveds,
-  - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [unvalidated = _receipt\(](../../../agent_federation/live_task137.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-5f7d1e99a375d314 / unvalidated = _receipt\(
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [unvalidated = LiveExecutorReceipt.from_dict\(unvalidated.to_dict\(\)\)](../../../agent_federation/live_task137.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bb3dcedfb6226075 / unvalidated = LiveExecutorReceipt.from_dict\(unvalidated.to_dict\(\)\)
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [unvalidated,](../../../agent_federation/live_task137.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7332764ac967d1a7 / unvalidated,
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [unvalidated_receipt: LiveExecutorReceipt \| None](../../../agent_federation/live_task137.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fd0adb3b840e307d / unvalidated_receipt: LiveExecutorReceipt \| None
-  - 来源：`agent_federation/live_task137.py`
   - 依赖：—；被引用：—

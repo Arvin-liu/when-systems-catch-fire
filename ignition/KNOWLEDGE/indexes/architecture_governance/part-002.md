@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [_issue\(issues, "UNKNOWN_REF", f"{item_path}.result_artifact_ids", "result artifact is unknown"\)](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9d285d849ca3bb13 / _issue\(issues, "UNKNOWN_REF", f"{item_path}.result_artifact_ids", "result artifact is unknown"\)
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [_issue\(issues, "UNKNOWN_REF", f"{item_path}.{name}", "claim artifact reference is unknown"\)](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-34d09f657f7a446a / _issue\(issues, "UNKNOWN_REF", f"{item_path}.{name}", "claim artifact reference is unknown"\)
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
+- [_strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)](../../../reos_vnext/validation.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3e436859091f4829 / _strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)
+  - 来源：`reos_vnext/validation.py`
+  - 依赖：—；被引用：—
 - [_strings\(results, f"{item_path}.result_artifact_ids", issues\)](../../../reos_vnext/validation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5def4e4dd74b6776 / _strings\(results, f"{item_path}.result_artifact_ids", issues\)
@@ -389,6 +404,31 @@
   - 可搜索名称：NFC-eb877ca0698841da / `inference_observation_status` to `OBSERVED`. The R3 Current projection now
   - 来源：`ARCHITECTURE.md`
   - 依赖：—；被引用：—
+- [`INFERENCE`：`P` 可以说明“某个事实主张没有足够来源”，却不能仅凭这一点推出“不得把他人当作代价”。后一个判断需要 `N` 类规范前提或等价的 Charter commitment。把“应该诚实地表达不确定”推成“应该保护所有](../../../docs/governance/value-epistemology-derivation-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f4d2e34f2f1a8d80 / `INFERENCE`：`P` 可以说明“某个事实主张没有足够来源”，却不能仅凭这一点推出“不得把他人当作代价”。后一个判断需要 `N` 类规范前提或等价的 Charter commitment。把“应该诚实地表达不确定”推成“应该保护所有
+  - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [`INFERENCE`：A 的最小候选解释不是一个总原理，而是：](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c63d562da4c2f221 / `INFERENCE`：A 的最小候选解释不是一个总原理，而是：
+  - 来源：`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [`INFERENCE`：Evidence / Claim Ceiling 主要落在 `P`；Negative Capability / Degradation 主要落在 `O`；Ownership 主要落在 `A`；Failure Budg](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8957c27aa09d927c / `INFERENCE`：Evidence / Claim Ceiling 主要落在 `P`；Negative Capability / Degradation 主要落在 `O`；Ownership 主要落在 `A`；Failure Budg
+  - 来源：`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [`INFERENCE`：目前没有证据可以把四个候选基础进一步压缩成一个“总原理”而不丢失层级。尤其：](../../../docs/governance/value-epistemology-derivation-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c6b40cb65d0fc550 / `INFERENCE`：目前没有证据可以把四个候选基础进一步压缩成一个“总原理”而不丢失层级。尤其：
+  - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [`INFERENCE`：若一定要找更小共同项，最有证据的共同项是 `P` 与 `O` 的组合；`N` 和 `A` 来自价值/治理边界，不能被这两个认识论项吞并。](../../../docs/governance/value-epistemology-derivation-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0febea26e19cd8de / `INFERENCE`：若一定要找更小共同项，最有证据的共同项是 `P` 与 `O` 的组合；`N` 和 `A` 来自价值/治理边界，不能被这两个认识论项吞并。
+  - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [`INPUT_OBJECT` — 作为来源对象、事实/断言载体和待处理材料；](../../../OPERATING-METHOD.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-001c1aac8d0db7ad / `INPUT_OBJECT` — 作为来源对象、事实/断言载体和待处理材料；
@@ -494,6 +534,16 @@
   - 可搜索名称：NFC-7c0585d28c8e39af / `NONE` for capability, permission, authorization, truth, Owner, epistemic
   - 来源：`reports/operations/ignition-126-progress.md`
   - 依赖：—；被引用：—
+- [`OBSERVATION`：价值宪章把生命共同体、反局部掠夺、长期与再生、未知主体、维护者可持续性和商业互惠写为规范性前提；同一文件明确价值判断、事实证据、语义审核和 governance approval 是四类不同问题。见 \[价值宪章\]](../../../docs/governance/value-epistemology-derivation-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-218fc66441b9576b / `OBSERVATION`：价值宪章把生命共同体、反局部掠夺、长期与再生、未知主体、维护者可持续性和商业互惠写为规范性前提；同一文件明确价值判断、事实证据、语义审核和 governance approval 是四类不同问题。见 \[价值宪章\]
+  - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [`OBSERVATION`：针对 12 个协议的现行规范性审核给出的结果是 12 项 `CONDITIONAL_ACCEPTANCE`，独立人类复核、事实验证、governance approval、ratification 和 forma](../../../docs/governance/value-epistemology-derivation-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e4ffa24e3812ffcc / `OBSERVATION`：针对 12 个协议的现行规范性审核给出的结果是 12 项 `CONDITIONAL_ACCEPTANCE`，独立人类复核、事实验证、governance approval、ratification 和 forma
+  - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [`open_obligation_registry_r1 --projects / repository_dependency--> current_state` — repository-local obligation status a](../../../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-607d23035675d9e3 / `open_obligation_registry_r1 --projects / repository_dependency--> current_state` — repository-local obligation status a
@@ -553,6 +603,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-b55d616c34092c32 / `project_synchronization_complete` is the all-required-Current/Closed condition, not a blanket pre-merge acceptance gate
   - 来源：`ITERATION.md`
+  - 依赖：—；被引用：—
+- [`PROPOSAL`: if the pressure diagnostics recur, first extend an existing contract or human review record in a narrowly sc](../../../reports/governance/task-IGNITION-20260904-153.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b67fa4330b5404fc / `PROPOSAL`: if the pressure diagnostics recur, first extend an existing contract or human review record in a narrowly sc
+  - 来源：`reports/governance/task-IGNITION-20260904-153.md`
   - 依赖：—；被引用：—
 - [`python3 ignition/tools/generate_current_facts.py --check` — PASS.](../../../reports/operations/ignition-130-step00-current-surface-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -859,6 +914,11 @@
   - 可搜索名称：NFC-d08312377f11fc83 / A neural operator is a finite-parameter map between infinite-dimensional function spaces built from pointwise lifting, r
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
+- [A nominal Owner or signature can exist without demonstrated comprehension, contestability or practical consequence-beari](../../../reports/governance/task-IGNITION-20260904-153.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0a562efd2deb5b7c / A nominal Owner or signature can exist without demonstrated comprehension, contestability or practical consequence-beari
+  - 来源：`reports/governance/task-IGNITION-20260904-153.md`
+  - 依赖：—；被引用：—
 - [A one-dimensional Poisson experiment with 800 polynomial inputs and analytical solutions, split 400/400, illustrates fin](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5d1b7cc51a292ab4 / A one-dimensional Poisson experiment with 800 polynomial inputs and analytical solutions, split 400/400, illustrates fin
@@ -909,6 +969,11 @@
   - 可搜索名称：NFC-f4ec637aa44ec700 / A single-model failure never supports universal impossibility, and a renamed structural or meta label cannot restore a w
   - 来源：`ITERATION.md`
   - 依赖：—；被引用：—
+- [a six-row derivation matrix for Evidence, Uncertainty / Claim Ceiling, Negative Capability, Ownership, Failure Budget an](../../../reports/governance/task-IGNITION-20260904-153.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b05b339815a5acff / a six-row derivation matrix for Evidence, Uncertainty / Claim Ceiling, Negative Capability, Ownership, Failure Budget an
+  - 来源：`reports/governance/task-IGNITION-20260904-153.md`
+  - 依赖：—；被引用：—
 - [a starting carrier that may be bodily, conceptual, numerical, verbal, material, mnemonic or unresolved;](../../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a0d578f2d1ac1cad / a starting carrier that may be bodily, conceptual, numerical, verbal, material, mnemonic or unresolved;
@@ -948,6 +1013,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2bee4ec0daecd0be / a. For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, o
   - 来源：`LICENSES/active/CC-BY-NC-SA-4.0.md`
+  - 依赖：—；被引用：—
+- [Abstention can be either corrigible restraint or avoidance; the current surfaces lack one universal deadline/opportunity](../../../reports/governance/task-IGNITION-20260904-153.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-94da3ff550cb2d0d / Abstention can be either corrigible restraint or avoidance; the current surfaces lack one universal deadline/opportunity
+  - 来源：`reports/governance/task-IGNITION-20260904-153.md`
   - 依赖：—；被引用：—
 - [acceptance, general intelligence or epistemic acceptance.](../../../reports/architecture/os-control-plane-r2-gap-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1929,6 +1999,11 @@
   - 可搜索名称：NFC-2e7914b0c8d135f6 / channel/device state and unvalidated effects are prohibited fields.
   - 来源：`reports/operations/ignition-126-progress.md`
   - 依赖：—；被引用：—
+- [Charter 已明确它是最高规范性边界，但价值、事实、语义审核和 governance approval 分开；其具体冲突程序要求记录影响、异议、试行、回滚和底线。](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-48e77ff03c6b238f / Charter 已明确它是最高规范性边界，但价值、事实、语义审核和 governance approval 分开；其具体冲突程序要求记录影响、异议、试行、回滚和底线。
+  - 来源：`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [Charter 是 normative/action authority；价值准入不变成事实真值。](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f9a3657f1f1c5c0b / Charter 是 normative/action authority；价值准入不变成事实真值。
@@ -2428,79 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-60deb9780a4e83e4 / claim_ceiling: repository-local task terminality, obligation independence, provider-neutral admission, deterministic reg
   - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local Task144 engineering closure, Owner production handoff and terminality evidence only; no](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-43f1c6ef54a37ba8 / claim_ceiling: repository-local Task144 engineering closure, Owner production handoff and terminality evidence only; no
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local Task146 Human Front Door simplification, Current-surface contract decoupling, determinis](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-be7108240d0b1ef1 / claim_ceiling: repository-local Task146 Human Front Door simplification, Current-surface contract decoupling, determinis
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization and bou](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-d30fb0c9849dd998 / claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization and bou
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization, target](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ae3089d399ee5018 / claim_ceiling: repository-local Task147 project identity, human architecture navigation, Current synchronization, target
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local Task148 implementation, deterministic Current projection, declared-relation closure, off](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-425d1ee39ae0be4d / claim_ceiling: repository-local Task148 implementation, deterministic Current projection, declared-relation closure, off
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: repository-local Task148 post-merge Current synchronization, deterministic projections and publication-co](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-44ffb4c3a459c26f / claim_ceiling: repository-local Task148 post-merge Current synchronization, deterministic projections and publication-co
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bb586cd973539003 / claim_ceiling: Task139 repository-local durable live-capture, append-only attempt-ledger, deterministic Current projecti
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: Task140 repository-local architecture registration, typed observation, reconciliation and bounded live-ad](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-108fd04a680ba380 / claim_ceiling: Task140 repository-local architecture registration, typed observation, reconciliation and bounded live-ad
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: Task140 repository-local terminal architecture/current and fail-closed live-observation evidence only; no](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a0c1dd9cb95e8996 / claim_ceiling: Task140 repository-local terminal architecture/current and fail-closed live-observation evidence only; no
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: Task141 repository-local Live State Semantics, Structured Result Reliability, sanitized failure forensics](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-87ee9905723e8c1b / claim_ceiling: Task141 repository-local Live State Semantics, Structured Result Reliability, sanitized failure forensics
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish extern](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cd7cc4e938e6b72a / claim_ceiling: this is repository-local dispatch, failure and reconciliation evidence only. It does not establish extern
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [claim_ids = _validate_claims\(case.get\("claim_candidates"\), artifact_ids, "$.case.claim_candidates", issues\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-836bb32c0a071020 / claim_ids = _validate_claims\(case.get\("claim_candidates"\), artifact_ids, "$.case.claim_candidates", issues\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [claimed = r.get\("crossref_verified", False\)](../../../evidence-program/tools/run_crossref_verification.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-39b5204e4ced9cdc / claimed = r.get\("crossref_verified", False\)
-  - 来源：`evidence-program/tools/run_crossref_verification.py`
-  - 依赖：—；被引用：—
-- [claimed_n = sum\(1 for r in records if r.get\("crossref_verified"\)\)](../../../evidence-program/tools/run_crossref_verification.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e55270e73de42d54 / claimed_n = sum\(1 for r in records if r.get\("crossref_verified"\)\)
-  - 来源：`evidence-program/tools/run_crossref_verification.py`
-  - 依赖：—；被引用：—
-- [class ArtifactRefRecord:](../../../reos_vnext/contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6700b48ab59365b4 / class ArtifactRefRecord:
-  - 来源：`reos_vnext/contract.py`
   - 依赖：—；被引用：—

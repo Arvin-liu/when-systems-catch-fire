@@ -4,6 +4,51 @@
 
 ## 2026
 
+<a id="change-src-hr-f6ad2195b7f7cae6"></a>
+### 2026-09-04 · IGNITION-20260904-153 任务报告：价值—认识论推导审计与可追责认知边界
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: RESEARCHCOMPLETE / DRAFTPRPENDINGREVIEW / NONCURRENT
+- **来源：** [task-IGNITION-20260904-153.md](../reports/governance/task-IGNITION-20260904-153.md)
+- **资产卡：** [HR-F6AD2195B7F7CAE6](./ASSET-CARDS.md#asset-hr-f6ad2195b7f7cae6)
+
+<a id="change-src-hr-d8a0357e2c935df1"></a>
+### 2026-09-04 · IGNITION-20260904-153 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task ID: IGNITION-20260904-153
+- **来源：** [IGNITION-20260904-153-result.md](../agent-results/IGNITION-20260904-153-result.md)
+- **资产卡：** [HR-D8A0357E2C935DF1](./ASSET-CARDS.md#asset-hr-d8a0357e2c935df1)
+
+<a id="change-src-hr-d78b5bc05fef6fa7"></a>
+### 2026-09-04 · 更元基础综合：价值—认识论与可追责认知的双基础审计
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: RESEARCHRECORD / CANDIDATESYNTHESIS / NONCANONICAL
+- **来源：** [more-meta-foundations-synthesis-2026-09-04.md](../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
+- **资产卡：** [HR-D78B5BC05FEF6FA7](./ASSET-CARDS.md#asset-hr-d78b5bc05fef6fa7)
+
+<a id="change-src-hr-c55e8fbd08caa1b8"></a>
+### 2026-09-04 · 价值—认识论推导审计：六类元协议前提
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: RESEARCHRECORD / CANDIDATEAUDIT / NONCANONICAL
+- **来源：** [value-epistemology-derivation-audit-2026-09-04.md](../docs/governance/value-epistemology-derivation-audit-2026-09-04.md)
+- **资产卡：** [HR-C55E8FBD08CAA1B8](./ASSET-CARDS.md#asset-hr-c55e8fbd08caa1b8)
+
+<a id="change-src-hr-ba9bec749ec25f91"></a>
+### 2026-09-04 · 可追责认知边界图：角色拓扑与 authority–execution–accountability loop
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: RESEARCHRECORD / CANDIDATEMAP / NONCANONICAL
+- **来源：** [accountable-cognition-boundary-map-2026-09-04.md](../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
+- **资产卡：** [HR-BA9BEC749EC25F91](./ASSET-CARDS.md#asset-hr-ba9bec749ec25f91)
+
 <a id="change-src-hr-eabed7bd3564479d"></a>
 ### 2026-08-29 · IGNITION-20260829-148 typed change-propagation impact report
 

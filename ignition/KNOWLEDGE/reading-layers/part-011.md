@@ -4,6 +4,34 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-eabed7bd3564479d"></a>
+## IGNITION-20260829-148 typed change-propagation impact report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260829-148 typed change-propagation impact report；Closure complete: true；Closure hash: fc273554be492455c273b17cc8011a4906de6354c5294495bd089aab1c28b3fa；Fixpoint iterations: 2；Seeds: aiguide, currentstate, formaltasklifecycler1, foundation, historicalreports, humanknowledgesurfaces, ignitionoperatingmethod, iterationmanifestcontract, l6, nol7, openobligationregistryr1, projectcomponentregistry, propagationcalculator, systemmapprojection；Resolved components: 35
+- 完整阅读：[reports/operations/IGNITION-20260829-148-change-propagation-impact.md](../../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
+
+<a id="reading-hr-ebcda7ca000d3bac"></a>
+## 121Q2R Final Report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Generated: 2026-07-14T17:04:01Z 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q2R Final Report；主题：STATUS: COMPLETE — FORCED STOP per Step 017；Generated: 2026-07-14T17:04:01Z；主题：1. Execution Identity；Actual model: qclaw/pool-glm-5.2-night；Reasoning level: high (adaptive, but operating at high for this task)
+- 完整阅读：[reports/external-research/121Q2R-final-report.md](../../reports/external-research/121Q2R-final-report.md)
+
+<a id="reading-hr-ebd5091c3be06f0a"></a>
+## 121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: REALHISTORYOPERATIONALPROOFREGENERATEDWITHPATHSTATEANDREFERENCECONTRACT 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation；Status: REALHISTORYOPERATIONALPROOFREGENERATEDWITHPATHSTATEANDREFERENCECONTRACT；Before ARN operational hardening: 1f3815538cf56d0f35cc06c6b2396fadf33a34a2；After ARN path-state and reference closure: recorded in data/architecture/adaptive-relational-network/real-history/deterministic-replay.json；before-projection.json；after-projection.json
+- 完整阅读：[reports/architecture/121Q23C-operational-arn-real-history-validation.md](../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
+
+<a id="reading-hr-ebfbf26abf72ff4c"></a>
+## IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计；Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。；Task143 的 phase-closure、publication-production 和新 canonical 出版入口在 Current/Handoff/AI surfaces 中可恢复；；Task142 的 LIVEEXTERNALINVOCATION 历史 6 次 attempt、0 次 validated completion、0 次 unreconciled、2 次 observation-incomplete 没有被新出版成果改写；；obligation registry 的当前动作仍是 OWNERDEFERREDREQUIRESEXPLICITREOPENANDLOCALENVIRONMENTPREPARATION，历史 projection 的 dynamic admission 动作仍被保留；；本轮没有新增组件、typed topology relation、map version、executor live attempt、安装、配置、认证、计费或环境手术；
+- 完整阅读：[reports/operations/ignition-143-step17-current-state-sync.md](../../reports/operations/ignition-143-step17-current-state-sync.md)
+
 <a id="reading-hr-ecc4e92db835c50c"></a>
 ## REOS vNext LIGHT pilot R1 — public-safe synthesis
 `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -87,6 +115,13 @@
 - 1 分钟：Status: 121Q14MAPPROJECTIONOVERLAY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：Status: 121Q14MAPPROJECTIONOVERLAY；The Ignition Atlas is a set of versioned derived maps. It is not a new source of truth.；Registries, matrices, schemas, source records, tests, and repository artifacts remain the authority. A map is a projection from those sources for a declared observer, decision question, value recipient, time, and coordinate system.；主题：What A Map Adds；A matrix says which objects relate. A graph says what connects. A map additionally declares:；which decision is being supported;
 - 完整阅读：[docs/architecture/ignition-atlas.md](../../docs/architecture/ignition-atlas.md)
+
+<a id="reading-hr-f6ad2195b7f7cae6"></a>
+## IGNITION-20260904-153 任务报告：价值—认识论推导审计与可追责认知边界
+`CANDIDATE_OR_PENDING_SOURCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: RESEARCHCOMPLETE / DRAFTPRPENDINGREVIEW / NONCURRENT 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260904-153 任务报告：价值—认识论推导审计与可追责认知边界；Status: RESEARCHCOMPLETE / DRAFTPRPENDINGREVIEW / NONCURRENT；Task command source: Arvin-liu/1111:agent-commands/IGNITION-20260904-153.md；Task command blob SHA: 28ac3eadf865e3f6dd2455b58f7e3181c5f15103；Formal repository: Arvin-liu/when-systems-catch-fire；Baseline formal main: 212322d41db79bce2dbd116166d3f1ad226291f3
+- 完整阅读：[reports/governance/task-IGNITION-20260904-153.md](../../reports/governance/task-IGNITION-20260904-153.md)
 
 <a id="reading-hr-f8c21cd0cd6a1f34"></a>
 ## 生命共同体价值审查（life-community-value-audit）
