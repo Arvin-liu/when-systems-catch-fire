@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 527 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 531 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5372,6 +5372,19 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [IGNITION-20260904-154 任务报告：153 反证轮与最小模型](../reports/governance/task-IGNITION-20260904-154.md)
+
+- **结果 ID：** `HR-406FF91CF5A2D28C`
+- **日期：** 2026-09-04
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：IGNITION-20260904-154 任务报告：153 反证轮与最小模型？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: RESEARCHCOMPLETE / DRAFTPRPENDINGREVIEW / NONCURRENT
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [IGNITION-20260904-153 任务报告：价值—认识论推导审计与可追责认知边界](../reports/governance/task-IGNITION-20260904-153.md)
 
 - **结果 ID：** `HR-F6AD2195B7F7CAE6`
@@ -5411,6 +5424,32 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [153 反证轮：通过消融后的最小模型](../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+
+- **结果 ID：** `HR-22BC98CEA22051C8`
+- **日期：** 2026-09-04
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：153 反证轮：通过消融后的最小模型？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: RESEARCHRECORD / MINIMALMODEL / NONCANONICAL
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力](../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+
+- **结果 ID：** `HR-203EFD4A1E416DB5`
+- **日期：** 2026-09-04
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: RESEARCHRECORD / ADVERSARIALAUDIT / NONCANONICAL
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [可追责认知边界图：角色拓扑与 authority–execution–accountability loop](../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
 
 - **结果 ID：** `HR-BA9BEC749EC25F91`
@@ -5419,6 +5458,19 @@
 - **问题：** 此来源记录了什么：可追责认知边界图：角色拓扑与 authority–execution–accountability loop？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: RESEARCHRECORD / CANDIDATEMAP / NONCANONICAL
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260904-154 result](../agent-results/IGNITION-20260904-154-result.md)
+
+- **结果 ID：** `HR-829A141E1A4A0574`
+- **日期：** 2026-09-04
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260904-154 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task ID: IGNITION-20260904-154
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

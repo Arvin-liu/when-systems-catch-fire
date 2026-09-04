@@ -20,6 +20,7 @@
     "agent-results/IGNITION-20260828-147-result.md": "2026-08-28",
     "agent-results/IGNITION-20260829-148-result.md": "2026-09-01",
     "agent-results/IGNITION-20260904-153-result.md": "2026-09-04",
+    "agent-results/IGNITION-20260904-154-result.md": "2026-09-05",
     "docs/architecture/adapter-sdk-r1.md": "2026-08-16",
     "docs/architecture/adaptive-relational-network.md": "2026-07-16",
     "docs/architecture/agent-platform-r2.md": "2026-08-16",
@@ -109,6 +110,8 @@
     "docs/governance/meta-protocol-reviews/protocols/V2.md": "2026-07-11",
     "docs/governance/meta-protocol-reviews/protocols/V3.md": "2026-07-11",
     "docs/governance/meta-protocol-reviews/protocols/V4.md": "2026-07-11",
+    "docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md": "2026-09-05",
+    "docs/governance/more-meta-foundations-minimal-model-2026-09-04.md": "2026-09-05",
     "docs/governance/more-meta-foundations-synthesis-2026-09-04.md": "2026-09-04",
     "docs/governance/non-sycophancy-output-protocol.md": "2026-07-15",
     "docs/governance/self-correction-engine.md": "2026-07-29",
@@ -320,6 +323,7 @@
     "reports/foundation-architecture/validation-summary-20260712.md": "2026-07-13",
     "reports/governance/121Q8-final-report.md": "2026-07-15",
     "reports/governance/task-IGNITION-20260904-153.md": "2026-09-04",
+    "reports/governance/task-IGNITION-20260904-154.md": "2026-09-05",
     "reports/math-foundation/blockers-20260712.md": "2026-07-12",
     "reports/math-foundation/full-object-inventory-20260712.md": "2026-07-12",
     "reports/math-foundation/local-note-sync-report-20260712.md": "2026-07-12",
@@ -529,7 +533,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 527,
+  "entry_count": 531,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

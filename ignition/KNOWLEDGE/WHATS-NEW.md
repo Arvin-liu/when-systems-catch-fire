@@ -49,6 +49,42 @@
 - **来源：** [accountable-cognition-boundary-map-2026-09-04.md](../docs/governance/accountable-cognition-boundary-map-2026-09-04.md)
 - **资产卡：** [HR-BA9BEC749EC25F91](./ASSET-CARDS.md#asset-hr-ba9bec749ec25f91)
 
+<a id="change-src-hr-829a141e1a4a0574"></a>
+### 2026-09-04 · IGNITION-20260904-154 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task ID: IGNITION-20260904-154
+- **来源：** [IGNITION-20260904-154-result.md](../agent-results/IGNITION-20260904-154-result.md)
+- **资产卡：** [HR-829A141E1A4A0574](./ASSET-CARDS.md#asset-hr-829a141e1a4a0574)
+
+<a id="change-src-hr-406ff91cf5a2d28c"></a>
+### 2026-09-04 · IGNITION-20260904-154 任务报告：153 反证轮与最小模型
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: RESEARCHCOMPLETE / DRAFTPRPENDINGREVIEW / NONCURRENT
+- **来源：** [task-IGNITION-20260904-154.md](../reports/governance/task-IGNITION-20260904-154.md)
+- **资产卡：** [HR-406FF91CF5A2D28C](./ASSET-CARDS.md#asset-hr-406ff91cf5a2d28c)
+
+<a id="change-src-hr-22bc98cea22051c8"></a>
+### 2026-09-04 · 153 反证轮：通过消融后的最小模型
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: RESEARCHRECORD / MINIMALMODEL / NONCANONICAL
+- **来源：** [more-meta-foundations-minimal-model-2026-09-04.md](../docs/governance/more-meta-foundations-minimal-model-2026-09-04.md)
+- **资产卡：** [HR-22BC98CEA22051C8](./ASSET-CARDS.md#asset-hr-22bc98cea22051c8)
+
+<a id="change-src-hr-203efd4a1e416db5"></a>
+### 2026-09-04 · 153 反证轮：双基础最小性、A 的归属与跨合同诊断承载力
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: RESEARCHRECORD / ADVERSARIALAUDIT / NONCANONICAL
+- **来源：** [more-meta-foundations-adversarial-audit-2026-09-04.md](../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+- **资产卡：** [HR-203EFD4A1E416DB5](./ASSET-CARDS.md#asset-hr-203efd4a1e416db5)
+
 <a id="change-src-hr-eabed7bd3564479d"></a>
 ### 2026-08-29 · IGNITION-20260829-148 typed change-propagation impact report
 
