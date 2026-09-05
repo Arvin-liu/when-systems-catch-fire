@@ -161,6 +161,15 @@ MACHINE_EXCLUDE_PREFIXES = (
     "KNOWLEDGE/",
     "docs/human/",
     "data/publication/fire-seeds/",
+    # Task155 research-only blind-test records are evidence for a
+    # non-canonical study, not authoritative claim sources. Keep them in
+    # source discovery as excluded paths so repository accounting remains
+    # complete without feeding their labels into the claim registry.
+    "data/research/cross-contract-blind-test-2026-09-05/",
+    "docs/governance/cross-contract-failure-casebook-2026-09-05.md",
+    "docs/governance/cross-contract-historical-blind-test-2026-09-05.md",
+    "reports/governance/task-IGNITION-20260905-155.md",
+    "agent-results/IGNITION-20260905-155-result.md",
 )
 # Task 107 (R1 20260731) generator-input boundary: these prefixes are governed
 # records, narrative/reference surfaces, benchmark candidate data/code or analysis

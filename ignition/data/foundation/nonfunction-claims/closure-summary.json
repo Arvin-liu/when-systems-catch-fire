@@ -2,7 +2,7 @@
   "active_conclusion_rebounds": 0,
   "assertion_type_distribution": {
     "DESCRIPTIVE": 450,
-    "EMPIRICAL": 4763,
+    "EMPIRICAL": 4764,
     "INTERPRETIVE": 2951,
     "MATHEMATICAL": 2458,
     "METAPHYSICAL": 834,
@@ -10,12 +10,12 @@
     "UNRESOLVED": 6570
   },
   "blocked_conclusion_rebounds": 1,
-  "candidate_fragments": 30967,
-  "canonical_claims": 18208,
+  "candidate_fragments": 30968,
+  "canonical_claims": 18209,
   "claim_class_distribution": {
     "CROSS_DOMAIN_CORRESPONDENCE": 2497,
     "DESCRIPTIVE_REPOSITORY_CLAIM": 450,
-    "EMPIRICAL_OR_LITERATURE_CLAIM": 2317,
+    "EMPIRICAL_OR_LITERATURE_CLAIM": 2318,
     "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 770,
     "INTERPRETATION_OR_FRAMEWORK_CLAIM": 454,
     "LAW_OR_PRINCIPLE_CLAIM": 197,
@@ -34,7 +34,7 @@
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
     "HISTORICAL_ONLY": 7468,
     "PENDING_EMPIRICAL_TEST": 887,
-    "PENDING_LITERATURE_ADJUDICATION": 1062,
+    "PENDING_LITERATURE_ADJUDICATION": 1063,
     "PENDING_PROOF": 672,
     "QUARANTINED_AMBIGUOUS": 2414,
     "REJECTED_FALSE_OR_INVALID": 1,
@@ -46,14 +46,14 @@
     "WITHDRAWN_UNSUPPORTED": 1
   },
   "existing_claims_mapped": 678,
-  "explicit_quarantine_or_pending": 5038,
+  "explicit_quarantine_or_pending": 5039,
   "explicitly_unresolved_dependency_edges": 52,
   "external_evidence_distribution": {
-    "E0": 10734,
+    "E0": 10735,
     "E1": 7474
   },
   "mathematical_maturity_distribution": {
-    "M0": 15502,
+    "M0": 15503,
     "M1": 2701,
     "M3": 1,
     "M4": 3,
@@ -64,7 +64,7 @@
   "registry_closed": true,
   "source_base_commit": "ebe723fbf544f3fa1a87706e82493319d9f0af7e",
   "source_coverage_distribution": {
-    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 53,
+    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 64,
     "EXCLUDED_GENERATED_PROJECTION_EXCLUDED": 267,
     "EXCLUDED_KNOWLEDGE_SOURCE_EXPLICIT_ONLY": 7,
     "EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE": 16,
@@ -76,5 +76,5 @@
     "SCANNED_REGISTERED": 2420
   },
   "task_id": "IGNITION-CORPUS-WIDE-NONFUNCTION-CLAIM-ADJUDICATION-AND-EVIDENCE-LINEAGE-CLOSURE-R1-20260729",
-  "tracked_files_accounted": 5433
+  "tracked_files_accounted": 5444
 }

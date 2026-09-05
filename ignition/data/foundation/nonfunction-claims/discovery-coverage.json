@@ -5,10 +5,10 @@
     "every_tracked_path_accounted": true,
     "generated_and_prior_function_registries_excluded_explicitly": true
   },
-  "candidate_fragments": 30967,
-  "canonical_claims": 18208,
+  "candidate_fragments": 30968,
+  "canonical_claims": 18209,
   "coverage_status_counts": {
-    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 53,
+    "EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY": 64,
     "EXCLUDED_GENERATED_PROJECTION_EXCLUDED": 267,
     "EXCLUDED_KNOWLEDGE_SOURCE_EXPLICIT_ONLY": 7,
     "EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE": 16,
@@ -19,5 +19,5 @@
     "SCANNED_NO_CANDIDATE": 519,
     "SCANNED_REGISTERED": 2420
   },
-  "tracked_files": 5433
+  "tracked_files": 5444
 }
