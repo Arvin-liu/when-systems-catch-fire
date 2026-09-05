@@ -21,10 +21,10 @@
   },
   "fixture_instance_count": 96,
   "generator": "ignition/tools/research/cross_contract_prospective_experiment.py",
-  "generator_version": "task156-research-scorer-1.0.0",
+  "generator_version": "task156-research-scorer-2.0.0",
   "invalid_fixture_rule": "If required packet keys or source-contract references are malformed, retain the row and classify INVALID_FIXTURE; do not delete after freeze.",
   "novel_recombination_pairs": 39,
   "pair_count": 48,
   "schema_version": "1.0.0",
-  "seed": "IGNITION-20260905-156/frozen-pair-specs-v1"
+  "seed": "IGNITION-20260905-156/frozen-pair-specs-v2-amended-metamorphic-suite"
 }

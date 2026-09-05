@@ -66,6 +66,34 @@ class CrossContractProspectiveExperimentTests(unittest.TestCase):
             finally:
                 MODULE.RESEARCH = old_research
 
+    def test_metamorphic_suite_is_explicit_and_violation_free(self) -> None:
+        packets, answers, _, _ = MODULE.make_corpus()
+        score_rows = MODULE.score_packets(packets)
+        score_map = MODULE.output_map(score_rows)
+        results = [MODULE.classification_for(score_map, answer) for answer in sorted(answers, key=lambda item: item["fixture_id"])]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            MODULE.write_bytes(root / "blind-packets.jsonl", MODULE.jsonl_bytes(packets))
+            old_research = MODULE.RESEARCH
+            MODULE.RESEARCH = root
+            try:
+                metamorphic = MODULE.metamorphic_rows(results)
+            finally:
+                MODULE.RESEARCH = old_research
+        self.assertEqual([], [row for row in metamorphic if not row["passed"]])
+        self.assertGreaterEqual(len(metamorphic), 6 * 4)
+        self.assertTrue(
+            {
+                "repair_exact_missing_junction_flips_flag_to_no_flag",
+                "binding_change_flips_only_covering_models",
+                "irrelevant_evidence_does_not_upgrade_claim_scope",
+                "valid_signature_does_not_repair_consequence_gap",
+                "rollback_label_does_not_repair_irreversible_effect",
+                "safe_authorized_alternative_may_change_abstention",
+                "deadline_passage_does_not_create_new_failure",
+            }.issubset({row["property"] for row in metamorphic})
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

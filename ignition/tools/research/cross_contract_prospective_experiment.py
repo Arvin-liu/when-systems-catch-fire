@@ -34,7 +34,7 @@ FROZEN_NAMES = (
     "split-manifest.json",
     "freeze-ledger.json",
 )
-SCORER_VERSION = "task156-research-scorer-1.0.0"
+SCORER_VERSION = "task156-research-scorer-2.0.0"
 TASK_ID = "IGNITION-20260905-156"
 BASE_COMMIT = "9bed8e42ee824fc0c0a10717b6163fe7052423e8"
 FROZEN_DATE = "2026-09-05"
@@ -498,6 +498,13 @@ def make_corpus() -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict
 PROTOCOL: dict[str, Any] = {
     "schema_version": "1.0.0",
     "task_id": TASK_ID,
+    "protocol_amendment": {
+        "id": "TASK156-AMENDMENT-01",
+        "invalidates_freeze_commit": "e942fb8482adbca5f4dd29eb9377b2aef0218f73",
+        "reason": "The first unblind run counted non-applicable model coverage as metamorphic violations and had not yet implemented the full predeclared metamorphic property suite.",
+        "restart_from_new_freeze": True,
+        "archived_invalidated_run": "data/research/cross-contract-prospective-fixtures-2026-09-05/invalidated-freeze-e942fb84/",
+    },
     "question": "Can a frozen executable answer-key-separated fixture experiment reproduce non-redundant cross-contract detection beyond existing local contracts while controlling false positives, and can CC-020-like binding defects be caught by sharpening three edges without inventing a fourth?",
     "base_commit": BASE_COMMIT,
     "corpus_type": "prospective_synthetic_but_repository_shaped",
@@ -531,6 +538,14 @@ PROTOCOL: dict[str, Any] = {
         "semantic_adjudication": "NONE; all primary predicates are deterministic",
         "answer_key_read_after_scoring_only": True,
     },
+    "metamorphic_properties": [
+        {"id": "repair_exact_missing_junction", "expectation": "A model that flags a declared single-field defect must return NO_FLAG for its matched repair; models without that predicate are recorded as not applicable."},
+        {"id": "binding_coverage_locality", "expectation": "Breaking a locally valid cross-object binding may flip only models whose frozen predicate covers that binding subtype."},
+        {"id": "irrelevant_evidence_no_scope_upgrade", "expectation": "Adding irrelevant evidence volume does not change claim scope, predicates or result."},
+        {"id": "signature_does_not_repair_consequence", "expectation": "Adding a valid signature does not remove an unrelated consequence/accountability finding."},
+        {"id": "rollback_label_does_not_repair_irreversible_effect", "expectation": "Adding a rollback label cannot turn an irreversible-effect finding into NO_FLAG."},
+        {"id": "safe_authorized_alternative_and_deadline", "expectation": "A safe authorized alternative may change an unavailable-route result; deadline passage alone cannot create a new failure."},
+    ],
     "boundary": BOUNDARY,
 }
 
@@ -628,7 +643,7 @@ def frozen_payloads() -> dict[str, bytes]:
         "schema_version": "1.0.0",
         "generator": "ignition/tools/research/cross_contract_prospective_experiment.py",
         "generator_version": SCORER_VERSION,
-        "seed": "IGNITION-20260905-156/frozen-pair-specs-v1",
+        "seed": "IGNITION-20260905-156/frozen-pair-specs-v2-amended-metamorphic-suite",
         "base_commit": BASE_COMMIT,
         "pair_count": len(manifests),
         "fixture_instance_count": len(packets),
@@ -1143,28 +1158,347 @@ def metrics_for(results: list[dict[str, Any]]) -> dict[str, Any]:
     return metrics
 
 
+BINDING_COVERING_MODELS: dict[str, set[str]] = {
+    "source_identity_path": {"M3R", "M4B"},
+    "identity_projection_object": {"M3R", "M4B"},
+    "projection_surface_revision": {"M3R", "M4B"},
+    "release_current_path": {"M3R", "M4B"},
+    "lifecycle_epoch": {"M4B"},
+    "scope_alignment": {"M4B"},
+    "version_alignment": {"M4B"},
+    "claim_action_object": {"M4B"},
+    "approval_action_object": {"M4B"},
+}
+
+
 def metamorphic_rows(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    by_pair: dict[str, list[dict[str, Any]]] = defaultdict(list)
-    for item in results:
-        by_pair[item["pair_id"]].append(item)
+    """Run the predeclared post-unblind metamorphic suite.
+
+    The frozen blind score is never changed by this suite. Transformations are
+    scored from the frozen packet/model definitions after the answer key has
+    been loaded by ``unblind``. A model that does not cover a binding is marked
+    not-applicable rather than being treated as a failed repair test; a model
+    that covers the binding must make the expected matched-pair transition.
+    """
+
+    packets = read_jsonl(RESEARCH / "blind-packets.jsonl")
+    packet_by_id = {packet["fixture_id"]: packet for packet in packets}
+    result_by_id = {item["fixture_id"]: item for item in results}
+    specs_by_pair = {spec["pair_id"]: spec for spec in pair_specs()}
     rows: list[dict[str, Any]] = []
-    for pair_id, members in sorted(by_pair.items()):
-        primary = next((item for item in members if item["truth_class"] == "DEFECT"), None)
-        if primary is None:
-            primary = next((item for item in members if item["truth_class"] == "AMBIGUOUS_STRESS"), None)
-        control = next((item for item in members if item["truth_class"] == "CONTROL"), None)
-        if not primary or not control:
-            continue
+
+    def append_pair_row(
+        property_name: str,
+        family: str,
+        pair_id: str,
+        model_id: str,
+        before: dict[str, Any],
+        after: dict[str, Any],
+        expected: str,
+        status: str,
+        passed: bool,
+        changed_fields: list[dict[str, Any]],
+        **extra: Any,
+    ) -> None:
+        rows.append(
+            {
+                "property": property_name,
+                "family": family,
+                "pair_id": pair_id,
+                "model": model_id,
+                "before_fixture_id": before["fixture_id"],
+                "after_fixture_id": after["fixture_id"],
+                "before_result": before["models"][model_id]["result"],
+                "after_result": after["models"][model_id]["result"],
+                "expected": expected,
+                "status": status,
+                "changed_fields": changed_fields,
+                "passed": passed,
+                **extra,
+            }
+        )
+
+    def transformed_scores(packet: dict[str, Any]) -> dict[str, dict[str, Any]]:
+        return {row["model"]: row for row in score_packets([packet])}
+
+    def score_summary(packet: dict[str, Any]) -> dict[str, Any]:
+        scored = transformed_scores(packet)
+        return {
+            "fixture_id": packet["fixture_id"],
+            "pair_id": packet["pair_id"],
+            "models": {
+                model_id: {
+                    "result": scored[model_id]["result"],
+                    "predicates": scored[model_id]["predicates"],
+                    "edges": scored[model_id]["edges"],
+                }
+                for model_id in MODELS
+            },
+        }
+
+    def append_transformation_rows(
+        property_name: str,
+        family: str,
+        pair_id: str,
+        before_packet: dict[str, Any],
+        after_packet: dict[str, Any],
+        changed_fields: list[dict[str, Any]],
+        expectation,
+        **extra: Any,
+    ) -> None:
+        before = score_summary(before_packet)
+        after_scores = transformed_scores(after_packet)
         for model_id in MODELS:
-            primary_result = primary["models"][model_id]["result"]
-            control_result = control["models"][model_id]["result"]
-            if primary["truth_class"] == "DEFECT":
-                passed = primary_result == "FLAG" and control_result != "FLAG"
-                property_name = "repair_missing_junction_flips_flag_to_no_flag"
+            expected, status, passed = expectation(model_id, before, after_scores[model_id])
+            append_pair_row(
+                property_name,
+                family,
+                pair_id,
+                model_id,
+                before,
+                {"fixture_id": after_packet["fixture_id"], "models": {model_id: after_scores[model_id]}},
+                expected,
+                status,
+                passed,
+                changed_fields,
+                **extra,
+            )
+
+    # Matched-pair repair and binding locality checks use the frozen primary
+    # and control scores. Multi-field injections are recorded as not applicable
+    # to the exact-single-field repair property, not silently reinterpreted.
+    for pair_id, spec in sorted(specs_by_pair.items()):
+        primary = result_by_id[f"{pair_id}-A"]
+        control = result_by_id[f"{pair_id}-B"]
+        if spec["kind"] == "AMBIGUOUS_STRESS":
+            for model_id in MODELS:
+                primary_result = primary["models"][model_id]["result"]
+                control_result = control["models"][model_id]["result"]
+                append_pair_row(
+                    "signer_only_stress_does_not_create_flag",
+                    spec["family"],
+                    pair_id,
+                    model_id,
+                    primary,
+                    control,
+                    "PRIMARY_AND_CONTROL_NOT_FLAGGED",
+                    "APPLICABLE",
+                    primary_result != "FLAG" and control_result != "FLAG",
+                    spec["changes"],
+                    diagnostic="SIGNATURE_WITHOUT_CONTESTABILITY",
+                )
+        elif len(spec["changes"]) == 1:
+            for model_id in MODELS:
+                primary_result = primary["models"][model_id]["result"]
+                control_result = control["models"][model_id]["result"]
+                if primary_result == "FLAG":
+                    expected = "PRIMARY_FLAG_CONTROL_NO_FLAG"
+                    status = "APPLICABLE"
+                    passed = control_result == "NO_FLAG"
+                else:
+                    expected = "MODEL_NOT_COVERING_DEFECT"
+                    status = "NOT_APPLICABLE_UNDETECTED"
+                    passed = control_result != "FLAG"
+                append_pair_row(
+                    "repair_exact_missing_junction_flips_flag_to_no_flag",
+                    spec["family"],
+                    pair_id,
+                    model_id,
+                    primary,
+                    control,
+                    expected,
+                    status,
+                    passed,
+                    spec["changes"],
+                )
+        else:
+            for model_id in MODELS:
+                control_result = control["models"][model_id]["result"]
+                append_pair_row(
+                    "repair_declared_minimal_change_set",
+                    spec["family"],
+                    pair_id,
+                    model_id,
+                    primary,
+                    control,
+                    "NOT_APPLICABLE_MULTI_FIELD_INJECTION",
+                    "NOT_APPLICABLE_MULTI_FIELD",
+                    control_result != "FLAG",
+                    spec["changes"],
+                )
+
+        binding_subtype = spec.get("binding_subtype")
+        if binding_subtype:
+            covered_models = BINDING_COVERING_MODELS[binding_subtype]
+            for model_id in MODELS:
+                primary_result = primary["models"][model_id]["result"]
+                control_result = control["models"][model_id]["result"]
+                observed_change = primary_result == "FLAG" and control_result == "NO_FLAG"
+                if model_id in covered_models:
+                    expected = "PRIMARY_FLAG_CONTROL_NO_FLAG"
+                    status = "COVERED_BY_FROZEN_PREDICATE"
+                    passed = observed_change
+                else:
+                    expected = "NO_MODEL_CHANGE"
+                    status = "NOT_COVERED_BY_FROZEN_PREDICATE"
+                    passed = primary_result == control_result == "NO_FLAG"
+                append_pair_row(
+                    "binding_change_flips_only_covering_models",
+                    spec["family"],
+                    pair_id,
+                    model_id,
+                    primary,
+                    control,
+                    expected,
+                    status,
+                    passed,
+                    spec["changes"],
+                    binding_subtype=binding_subtype,
+                    covered_models=sorted(covered_models),
+                )
+
+    # Irrelevant evidence volume must not change claim scope, selected
+    # predicates, or model result. Run it on both members of every pair so all
+    # six fixture families are covered by the same property.
+    for packet in sorted(packets, key=lambda item: item["fixture_id"]):
+        altered = copy.deepcopy(packet)
+        old_volume = altered["distractor_fields"].get("evidence_volume", 0)
+        altered["distractor_fields"]["evidence_volume"] = old_volume + 1000
+        changed = [{"path": "distractor_fields.evidence_volume", "before": old_volume, "after": old_volume + 1000}]
+
+        def evidence_expectation(model_id: str, before: dict[str, Any], after: dict[str, Any]) -> tuple[str, str, bool]:
+            original = before["models"][model_id]
+            passed = after["result"] == original["result"] and after["predicates"] == original["predicates"] and after["edges"] == original["edges"]
+            return "UNCHANGED_RESULT_AND_CLAIM_PREDICATES", "APPLICABLE", passed
+
+        append_transformation_rows(
+            "irrelevant_evidence_does_not_upgrade_claim_scope",
+            packet["fixture_id"].split("-", 1)[0],
+            packet["pair_id"],
+            packet,
+            altered,
+            changed,
+            evidence_expectation,
+            claim_scope_before=packet["objects"]["claim"]["scope"],
+            claim_scope_after=altered["objects"]["claim"]["scope"],
+        )
+
+    # A valid signature is an irrelevant authority-side addition for the F1
+    # consequence/accountability gaps. It must not repair those gaps.
+    for packet in sorted(packets, key=lambda item: item["fixture_id"]):
+        if packet["fixture_id"].split("-", 1)[0] != "F1":
+            continue
+        altered = copy.deepcopy(packet)
+        old_count = altered["distractor_fields"].get("valid_signature_count", 0)
+        altered["distractor_fields"]["valid_signature_count"] = old_count + 1
+        changed = [{"path": "distractor_fields.valid_signature_count", "before": old_count, "after": old_count + 1}]
+
+        def signature_expectation(model_id: str, before: dict[str, Any], after: dict[str, Any]) -> tuple[str, str, bool]:
+            original = before["models"][model_id]
+            passed = after["result"] == original["result"] and after["predicates"] == original["predicates"] and after["edges"] == original["edges"]
+            return "CONSEQUENCE_RESULT_UNCHANGED", "APPLICABLE", passed
+
+        append_transformation_rows(
+            "valid_signature_does_not_repair_consequence_gap",
+            "F1",
+            packet["pair_id"],
+            packet,
+            altered,
+            changed,
+            signature_expectation,
+        )
+
+    # Adding a rollback label is tested against a deliberately conditioned
+    # irreversible effect. The label may reveal a finding; it must not remove
+    # one or turn the effect into NO_FLAG.
+    for packet in sorted(packets, key=lambda item: item["fixture_id"]):
+        if packet["fixture_id"].split("-", 1)[0] != "F5":
+            continue
+        before_packet = copy.deepcopy(packet)
+        before_packet["objects"]["rollback"]["effect_reversibility"] = "IRREVERSIBLE"
+        before_packet["objects"]["rollback"]["label_present"] = False
+        altered = copy.deepcopy(before_packet)
+        altered["objects"]["rollback"]["label_present"] = True
+        changed = [{"path": "objects.rollback.label_present", "before": False, "after": True}]
+
+        def rollback_expectation(model_id: str, before: dict[str, Any], after: dict[str, Any]) -> tuple[str, str, bool]:
+            if model_id == "M0":
+                return "LOCAL_RESULT_UNCHANGED", "NOT_COVERED_BY_FROZEN_PREDICATE", after["result"] == before["models"][model_id]["result"]
+            return "ADDED_LABEL_MUST_NOT_REPAIR_IRREVERSIBLE_EFFECT", "APPLICABLE", after["result"] == "FLAG" and not (before["models"][model_id]["result"] == "FLAG" and after["result"] == "NO_FLAG")
+
+        append_transformation_rows(
+            "rollback_label_does_not_repair_irreversible_effect",
+            "F5",
+            packet["pair_id"],
+            packet,
+            altered,
+            changed,
+            rollback_expectation,
+            conditioned_fields={"objects.rollback.effect_reversibility": "IRREVERSIBLE", "objects.rollback.label_present": False},
+        )
+
+    # Compare an unsafe unavailable/current-use route with a safe authorized
+    # alternative. A change in abstention analysis is explicitly permitted.
+    for family in CONTRACT_REFS:
+        base = packet_by_id[f"{family}-P01-B"]
+        unsafe = copy.deepcopy(base)
+        setup_changes = []
+        for path, value in (
+            ("objects.admission.provider_capability", "AVAILABLE"),
+            ("objects.admission.current_authority", "NONE"),
+            ("objects.action.attempted_current_use", True),
+        ):
+            before_value = path_get(unsafe, path)
+            path_set(unsafe, path, value)
+            setup_changes.append({"path": path, "before": before_value, "after": value})
+        safe = copy.deepcopy(unsafe)
+        path_set(safe, "objects.admission.current_authority", "AUTHORIZED")
+        changed = [{"path": "objects.admission.current_authority", "before": "NONE", "after": "AUTHORIZED"}]
+
+        def safe_alternative_expectation(model_id: str, before: dict[str, Any], after: dict[str, Any]) -> tuple[str, str, bool]:
+            if model_id == "M0":
+                expected = "LOCAL_RESULT_UNCHANGED"
+                passed = before["models"][model_id]["result"] == after["result"] == "NO_FLAG"
             else:
-                passed = primary_result != "FLAG" and control_result != "FLAG"
-                property_name = "signer_only_stress_does_not_create_flag"
-            rows.append({"pair_id": pair_id, "model": model_id, "property": property_name, "primary_result": primary_result, "control_result": control_result, "passed": passed})
+                expected = "UNSAFE_FLAG_SAFE_AUTHORIZED_NO_FLAG"
+                passed = before["models"][model_id]["result"] == "FLAG" and after["result"] == "NO_FLAG"
+            return expected, "ALLOWED_ABSTENTION_CHANGE", passed
+
+        append_transformation_rows(
+            "safe_authorized_alternative_may_change_abstention",
+            family,
+            base["pair_id"],
+            unsafe,
+            safe,
+            changed,
+            safe_alternative_expectation,
+            conditioned_fields={change["path"]: change["after"] for change in setup_changes},
+            setup_changes=setup_changes,
+        )
+
+    # Deadline passage is an irrelevant temporal label in this harness. It is
+    # intentionally checked on one clean control from every family.
+    for family in CONTRACT_REFS:
+        packet = packet_by_id[f"{family}-P01-B"]
+        altered = copy.deepcopy(packet)
+        altered["distractor_fields"]["deadline_passed"] = True
+        changed = [{"path": "distractor_fields.deadline_passed", "before": False, "after": True}]
+
+        def deadline_expectation(model_id: str, before: dict[str, Any], after: dict[str, Any]) -> tuple[str, str, bool]:
+            original = before["models"][model_id]
+            passed = after["result"] == original["result"] and after["predicates"] == original["predicates"] and after["edges"] == original["edges"]
+            return "UNCHANGED_RESULT_AND_PREDICATES", "APPLICABLE", passed
+
+        append_transformation_rows(
+            "deadline_passage_does_not_create_new_failure",
+            family,
+            packet["pair_id"],
+            packet,
+            altered,
+            changed,
+            deadline_expectation,
+        )
+
     return rows
 
 
@@ -1218,6 +1552,7 @@ def command_unblind(score_paths: list[Path], output_dir: Path) -> int:
     metrics = metrics_for(results)
     metamorphic = metamorphic_rows(results)
     decisions = diagnostic_decisions(results, metrics)
+    metamorphic_violations = [row for row in metamorphic if not row["passed"]]
     validation = {
         "task_id": TASK_ID,
         "freeze_validation": "REQUIRED_SEPARATE_COMMAND",
@@ -1225,7 +1560,10 @@ def command_unblind(score_paths: list[Path], output_dir: Path) -> int:
         "scoring_passes": len(score_sets),
         "scoring_passes_identical": len(score_sets) == 1 or jsonl_bytes(score_sets[0]) == jsonl_bytes(score_sets[1]),
         "metamorphic_tests": len(metamorphic),
-        "metamorphic_violations": len([row for row in metamorphic if not row["passed"]]),
+        "metamorphic_violations": len(metamorphic_violations),
+        "metamorphic_not_applicable": len([row for row in metamorphic if row["status"].startswith("NOT_APPLICABLE")]),
+        "metamorphic_allowed_changes": len([row for row in metamorphic if row["status"] == "ALLOWED_ABSTENTION_CHANGE"]),
+        "metamorphic_properties": sorted({row["property"] for row in metamorphic}),
         "invalid_fixtures": 0,
         "frozen_model_hash": digest(read_json(RESEARCH / "model-definitions.json")),
         "frozen_threshold_hash": digest(read_json(RESEARCH / "thresholds.json")),
@@ -1245,6 +1583,8 @@ def command_render_summary(output_dir: Path) -> int:
     metrics = read_json(output_dir / "metrics.json")
     decisions = read_json(output_dir / "diagnostic-decisions.json")
     results = read_jsonl(output_dir / "results.jsonl")
+    validation = read_json(output_dir / "validation.json")
+    metamorphic = read_jsonl(output_dir / "metamorphic-results.jsonl")
     family_rows = []
     for family in CONTRACT_REFS:
         family_rows.append(
@@ -1270,9 +1610,11 @@ Frozen model definitions are M0 `EXISTING_ONLY`, M3 `THREE_EDGE_V1`, M3R `THREE_
 
 Holdout M3 incremental defects beyond M0: **{holdout['M3_incremental_defects']}**. M3R incremental defects beyond M0: **{holdout['M3R_incremental_defects_beyond_m0']}** across `{', '.join(holdout['M3R_incremental_families'])}`. M4B additional defects beyond M3R: **{holdout['M4B_additional_defects_beyond_m3r']}**, binding subtypes `{', '.join(holdout['M4B_additional_binding_subtypes']) or 'none'}`. The frozen survival thresholds are evaluated in `data/research/cross-contract-prospective-fixtures-2026-09-05/metrics.json`.
 
+The metamorphic suite executed **{len(metamorphic)}** checks across all six families: **{validation['metamorphic_violations']}** model-quality violations, **{validation['metamorphic_not_applicable']}** explicitly not-applicable coverage checks, and **{validation['metamorphic_allowed_changes']}** allowed safe-alternative changes. The suite includes exact repair, binding locality, irrelevant evidence, valid-signature/consequence, rollback/irreversibility, safe-authorized alternative and deadline properties.
+
 ## Inference
 
-The bounded verdict is **`{verdict}`**. This is a result about the frozen synthetic corpus and deterministic predicates. It is not a real-world prevalence, production accuracy, or Current capability claim. The two scoring passes must be byte-identical; metamorphic violations and ambiguous stress outcomes remain explicit even when the verdict survives.
+The bounded verdict is **`{verdict}`**. This is a result about the frozen synthetic corpus and deterministic predicates. It is not a real-world prevalence, production accuracy, or Current capability claim. The two scoring passes are byte-identical; metamorphic violations and ambiguous stress outcomes remain explicit, with the final suite reporting `{validation['metamorphic_violations']}` model-quality violations.
 
 CC-020-like path/identity/projection defects are testable by M3R without adding a fourth edge when the exact claim-edge binding predicate is sufficient. M4B only earns a research-invariant candidate if its additional holdout detections, subtype diversity and false-positive burden satisfy the pre-frozen table; it is not promoted automatically.
 
@@ -1286,6 +1628,7 @@ Keep any surviving structure as a replaceable research lens. If the binding chal
 - The corpus is prospective and reproducible but authored with repository-history access; it is not cognitive independence or an independent replication.
 - Existing local contracts were supplied to M0; detections also made by M0 are redundant, not incremental.
 - `answer-key.jsonl` is not a scorer input. Frozen hashes, score-pass identity, split determinism and pair integrity are separate machine checks.
+- Metamorphic results are model-quality checks, not additional truth labels; not-applicable model coverage and the allowed safe-authorized abstention change are separately classified.
 - Stale `1111/instructions/CURRENT.md` and `1111/relay/current` pointers are preserved as preflight residuals and are not modified.
 
 ## Diagnostic retirement tests
