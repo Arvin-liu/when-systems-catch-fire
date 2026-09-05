@@ -1,0 +1,14 @@
+{
+  "schema_version": "research-only/cross-contract-exclusion-ledger-r1",
+  "task_id": "IGNITION-20260905-155",
+  "status": "FROZEN_WITH_CORPUS",
+  "excluded_cases": [],
+  "exclusion_policy": [
+    "source not locatable",
+    "event and outcome ordering cannot be established",
+    "duplicate event lineage",
+    "outside the pre-Task153 cutoff",
+    "synthetic or schema-shaped example without a real repository event"
+  ],
+  "notes": "No selected case was removed after manifest freeze. Task153 and Task154 artifacts were excluded from the empirical corpus by rule, even though they supplied the review vocabulary and experiment design. Task152 is the latest eligible historical event and has an outcome-source limitation recorded during unblinding."
+}
