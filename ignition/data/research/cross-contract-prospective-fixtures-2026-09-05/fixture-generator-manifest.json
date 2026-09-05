@@ -1,0 +1,30 @@
+{
+  "answer_key_separate_from_blind_packets": true,
+  "base_commit": "9bed8e42ee824fc0c0a10717b6163fe7052423e8",
+  "cross_object_family_pairs": 46,
+  "distractor_pairs": 46,
+  "family_counts": {
+    "F1": 8,
+    "F2": 8,
+    "F3": 8,
+    "F4": 8,
+    "F5": 8,
+    "F6": 8
+  },
+  "family_genealogy": {
+    "F1": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
+    "F2": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
+    "F3": "CC-020 supplied the identity/projection split-brain challenge; fixtures add novel lifecycle and scope junctions while keeping each local object valid.",
+    "F4": "The claim-to-action shape is derived from current claim ceiling and evidence-lineage contracts; it is not a replay of a historical CC case.",
+    "F5": "The rollback shape comes from existing reversible local-file controls and durability recovery contracts, with synthetic irreversible and stop-path combinations.",
+    "F6": "The authorization shape stress-tests the weak signer/contestability label; four cases intentionally omit a consequence failure so the label cannot be manufactured."
+  },
+  "fixture_instance_count": 96,
+  "generator": "ignition/tools/research/cross_contract_prospective_experiment.py",
+  "generator_version": "task156-research-scorer-1.0.0",
+  "invalid_fixture_rule": "If required packet keys or source-contract references are malformed, retain the row and classify INVALID_FIXTURE; do not delete after freeze.",
+  "novel_recombination_pairs": 39,
+  "pair_count": 48,
+  "schema_version": "1.0.0",
+  "seed": "IGNITION-20260905-156/frozen-pair-specs-v1"
+}

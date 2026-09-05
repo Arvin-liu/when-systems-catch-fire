@@ -72,6 +72,8 @@ GENERATED_PREFIXES = (
     # Task155 research-only blind-test corpus is evidence for a non-canonical
     # study and must not feed the function-asset census.
     "data/research/cross-contract-blind-test-2026-09-05/",
+    # Task156 prospective fixture corpus is likewise research-only evidence.
+    "data/research/cross-contract-prospective-fixtures-2026-09-05/",
     # Task141 live-state semantics and structured-result receipts are
     # provenance-only operation records. They must not become function-asset
     # discovery input or make the census depend on receipt wording/order.
@@ -194,6 +196,15 @@ GENERATED_EXACT_PATHS = {
     "docs/governance/cross-contract-historical-blind-test-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-155.md",
     "agent-results/IGNITION-20260905-155-result.md",
+    # Task156 research harness, narrative records and result are bounded
+    # evidence, not function-asset discovery sources.
+    "tools/research/cross_contract_prospective_experiment.py",
+    "tests/test_cross_contract_prospective_experiment.py",
+    "docs/governance/cross-contract-prospective-fixture-experiment-2026-09-05.md",
+    "docs/governance/junction-invariant-candidate-assessment-2026-09-05.md",
+    "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
+    "reports/governance/task-IGNITION-20260905-156.md",
+    "agent-results/IGNITION-20260905-156-result.md",
 }
 SCANNER_VERSION = "2.0.0"
 SNAPSHOT = "function-census-v2-20260729"

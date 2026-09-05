@@ -145,6 +145,15 @@ SELF_EXCLUDES = {
     "reports/operations/ignition-141-step15-targeted-regression.md",
     "reports/operations/ignition-141-step15-candidate-full-regression.md",
     "reports/operations/ignition-141-step16-fresh-clone-publication.md",
+    # Task156 research harness and its narrative records are bounded evidence,
+    # not authoritative claim sources.
+    "tools/research/cross_contract_prospective_experiment.py",
+    "tests/test_cross_contract_prospective_experiment.py",
+    "docs/governance/cross-contract-prospective-fixture-experiment-2026-09-05.md",
+    "docs/governance/junction-invariant-candidate-assessment-2026-09-05.md",
+    "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
+    "reports/governance/task-IGNITION-20260905-156.md",
+    "agent-results/IGNITION-20260905-156-result.md",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
@@ -166,10 +175,16 @@ MACHINE_EXCLUDE_PREFIXES = (
     # source discovery as excluded paths so repository accounting remains
     # complete without feeding their labels into the claim registry.
     "data/research/cross-contract-blind-test-2026-09-05/",
+    "data/research/cross-contract-prospective-fixtures-2026-09-05/",
     "docs/governance/cross-contract-failure-casebook-2026-09-05.md",
     "docs/governance/cross-contract-historical-blind-test-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-155.md",
     "agent-results/IGNITION-20260905-155-result.md",
+    "docs/governance/cross-contract-prospective-fixture-experiment-2026-09-05.md",
+    "docs/governance/junction-invariant-candidate-assessment-2026-09-05.md",
+    "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
+    "reports/governance/task-IGNITION-20260905-156.md",
+    "agent-results/IGNITION-20260905-156-result.md",
 )
 # Task 107 (R1 20260731) generator-input boundary: these prefixes are governed
 # records, narrative/reference surfaces, benchmark candidate data/code or analysis
