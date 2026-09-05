@@ -331,7 +331,6 @@
       "genealogy": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
       "historical_lineage": "CC-026",
       "metamorphic_field_paths": [
-        "objects.admission.lifecycle",
         "objects.action.attempted_current_use"
       ],
       "novel_recombination": true,

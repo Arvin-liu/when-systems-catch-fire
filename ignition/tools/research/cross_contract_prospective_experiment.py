@@ -34,7 +34,7 @@ FROZEN_NAMES = (
     "split-manifest.json",
     "freeze-ledger.json",
 )
-SCORER_VERSION = "task156-research-scorer-2.0.0"
+SCORER_VERSION = "task156-research-scorer-3.0.0"
 TASK_ID = "IGNITION-20260905-156"
 BASE_COMMIT = "9bed8e42ee824fc0c0a10717b6163fe7052423e8"
 FROZEN_DATE = "2026-09-05"
@@ -210,7 +210,7 @@ def pair_specs() -> list[dict[str, Any]]:
     add("F2", 3, "JUNCTION_DEFECT", "PROVENANCE_WITHOUT_CEILING", [{"path": "objects.admission.provider_capability", "value": "AVAILABLE"}, {"path": "objects.admission.current_authority", "value": "NONE"}, {"path": "objects.action.attempted_current_use", "value": True}], "Do not convert provider capability into Current authority.", novel=True)
     add("F2", 4, "LOCAL_BASELINE", "PROVENANCE_WITHOUT_CEILING", [{"path": "local_contracts.3.status", "value": "FAIL"}], "Repair the object-split-local predicate.", novel=True)
     add("F2", 5, "JUNCTION_DEFECT", "PROVENANCE_WITHOUT_CEILING", [{"path": "objects.admission.scope_rank", "value": 3}], "Reject a combined gate that promotes a wider Delta scope than the Base admission.", novel=True)
-    add("F2", 6, "JUNCTION_DEFECT", "PROVENANCE_WITHOUT_CEILING", [{"path": "objects.admission.lifecycle", "value": "DRAFT"}, {"path": "objects.action.attempted_current_use", "value": True}], "Keep a Draft/non-intent object out of an admitted action path.", novel=True)
+    add("F2", 6, "JUNCTION_DEFECT", "PROVENANCE_WITHOUT_CEILING", [{"path": "objects.action.attempted_current_use", "value": True}], "Keep a Draft/non-intent object out of an admitted action path.", novel=True)
     add("F2", 7, "JUNCTION_DEFECT", "PROVENANCE_WITHOUT_CEILING", [{"path": "objects.admission.provider_capability", "value": "AVAILABLE"}, {"path": "objects.admission.current_authority", "value": "NONE"}, {"path": "objects.action.attempted_current_use", "value": True}], "Do not convert provider capability into Current authority.", novel=True)
     add("F2", 8, "JUNCTION_DEFECT", "PROVENANCE_WITHOUT_CEILING", [{"path": "objects.admission.object_level_split_present", "value": False}], "Require separate Base and Delta admission objects.", novel=True)
 
@@ -401,6 +401,8 @@ def base_packet(spec: dict[str, Any], member: str) -> dict[str, Any]:
             "consequence": {
                 "effect_state": "KNOWN",
                 "technical_receipt_complete": True,
+                "reconciliation_status": "CLOSED",
+                "reconciliation_obligation_id": None,
                 "observer_present": True,
                 "reconciliation_owner_id": "reconciliation-owner-1",
                 "retry_policy": "PROHIBITED",
@@ -432,6 +434,12 @@ def base_packet(spec: dict[str, Any], member: str) -> dict[str, Any]:
         # F1 pairs all share the same unresolved-effect context. The paired
         # change then alters exactly one accountability junction field.
         packet["objects"]["consequence"]["effect_state"] = "UNKNOWN"
+        packet["objects"]["consequence"]["reconciliation_status"] = "OPEN"
+        packet["objects"]["consequence"]["reconciliation_obligation_id"] = f"obligation-{pair_id.lower()}"
+    if pair_id == "F2-P06":
+        # The matched control is a safe Draft state; only attempting Current
+        # use turns it into the junction defect.
+        packet["objects"]["admission"]["lifecycle"] = "DRAFT"
     if not spec["distractor_fields_present"]:
         packet["distractor_fields"] = {"display_label": "bounded fixture"}
     return packet
@@ -499,11 +507,12 @@ PROTOCOL: dict[str, Any] = {
     "schema_version": "1.0.0",
     "task_id": TASK_ID,
     "protocol_amendment": {
-        "id": "TASK156-AMENDMENT-01",
-        "invalidates_freeze_commit": "e942fb8482adbca5f4dd29eb9377b2aef0218f73",
-        "reason": "The first unblind run counted non-applicable model coverage as metamorphic violations and had not yet implemented the full predeclared metamorphic property suite.",
+        "id": "TASK156-AMENDMENT-02",
+        "invalidates_freeze_commit": "f521ffa67de43285e140e1a2ace7aae0730d958a",
+        "supersedes": "TASK156-AMENDMENT-01",
+        "reason": "The second run corrected metamorphic coverage but did not yet materialize the required counterfactual-minimality record, lineage-share threshold, safe Draft control, or explicit open-obligation fields.",
         "restart_from_new_freeze": True,
-        "archived_invalidated_run": "data/research/cross-contract-prospective-fixtures-2026-09-05/invalidated-freeze-e942fb84/",
+        "archived_invalidated_run": "data/research/cross-contract-prospective-fixtures-2026-09-05/invalidated-freeze-f521ffa6/",
     },
     "question": "Can a frozen executable answer-key-separated fixture experiment reproduce non-redundant cross-contract detection beyond existing local contracts while controlling false positives, and can CC-020-like binding defects be caught by sharpening three edges without inventing a fourth?",
     "base_commit": BASE_COMMIT,
@@ -546,6 +555,11 @@ PROTOCOL: dict[str, Any] = {
         {"id": "rollback_label_does_not_repair_irreversible_effect", "expectation": "Adding a rollback label cannot turn an irreversible-effect finding into NO_FLAG."},
         {"id": "safe_authorized_alternative_and_deadline", "expectation": "A safe authorized alternative may change an unavailable-route result; deadline passage alone cannot create a new failure."},
     ],
+    "counterfactual_minimality": {
+        "required_for_every_incremental_detection": True,
+        "local_contract_mutation_allowed": False,
+        "default_decision": "REVIEW_ONLY_NO_LOCAL_MUTATION",
+    },
     "boundary": BOUNDARY,
 }
 
@@ -643,7 +657,7 @@ def frozen_payloads() -> dict[str, bytes]:
         "schema_version": "1.0.0",
         "generator": "ignition/tools/research/cross_contract_prospective_experiment.py",
         "generator_version": SCORER_VERSION,
-        "seed": "IGNITION-20260905-156/frozen-pair-specs-v2-amended-metamorphic-suite",
+        "seed": "IGNITION-20260905-156/frozen-pair-specs-v3-amendment-02",
         "base_commit": BASE_COMMIT,
         "pair_count": len(manifests),
         "fixture_instance_count": len(packets),
@@ -998,8 +1012,9 @@ def command_score(output: Path) -> int:
         return 1
     packets = read_jsonl(packets_path)
     model_document = read_json(model_path)
-    if [model["id"] for model in model_document["models"]] != list(MODELS):
-        print("MODEL_DEFINITION_ORDER_OR_ID_DRIFT", file=sys.stderr)
+    expected_model_document = {"schema_version": "1.0.0", "task_id": TASK_ID, "models": list(MODELS.values())}
+    if model_document != expected_model_document:
+        print("MODEL_DEFINITION_DRIFT", file=sys.stderr)
         return 1
     errors = validate_packet_separation(packets)
     if errors:
@@ -1106,12 +1121,32 @@ def metrics_for(results: list[dict[str, Any]]) -> dict[str, Any]:
                 "specificity_descriptive": rate(len(controls) - flagged_controls, len(controls)),
                 "control_false_positives": flagged_controls,
             }
+        metrics["family_metrics"][family]["by_split"] = {}
+        for split in ("calibration", "holdout"):
+            split_subset = [item for item in results if item["family"] == family and item["split"] == split]
+            split_defects = [item for item in split_subset if item["truth_class"] == "DEFECT"]
+            split_controls = [item for item in split_subset if item["truth_class"] == "CONTROL"]
+            metrics["family_metrics"][family]["by_split"][split] = {}
+            for model_id in MODELS:
+                flagged_defects = len([item for item in split_defects if item["models"][model_id]["result"] == "FLAG"])
+                flagged_controls = len([item for item in split_controls if item["models"][model_id]["result"] == "FLAG"])
+                metrics["family_metrics"][family]["by_split"][split][model_id] = {
+                    "defects": len(split_defects),
+                    "controls": len(split_controls),
+                    "sensitivity_descriptive": rate(flagged_defects, len(split_defects)),
+                    "specificity_descriptive": rate(len(split_controls) - flagged_controls, len(split_controls)),
+                    "control_false_positives": flagged_controls,
+                }
 
     holdout = [item for item in results if item["split"] == "holdout"]
     m3r_incremental = [item for item in holdout if item["truth_class"] == "DEFECT" and item["models"]["M0"]["result"] != "FLAG" and item["models"]["M3R"]["result"] == "FLAG"]
     m4b_incremental = [item for item in holdout if item["truth_class"] == "DEFECT" and item["models"]["M3R"]["result"] != "FLAG" and item["models"]["M4B"]["result"] == "FLAG"]
     m3_incremental = [item for item in holdout if item["truth_class"] == "DEFECT" and item["models"]["M0"]["result"] != "FLAG" and item["models"]["M3"]["result"] == "FLAG"]
+    m3r_gain_beyond_m3 = [item for item in holdout if item["truth_class"] == "DEFECT" and item["models"]["M3"]["result"] != "FLAG" and item["models"]["M3R"]["result"] == "FLAG"]
     m3r_incremental_families = sorted({item["family"] for item in m3r_incremental})
+    m3r_family_counts = Counter(item["family"] for item in m3r_incremental)
+    m3r_family_shares = {family: rate(count, len(m3r_incremental)) for family, count in sorted(m3r_family_counts.items())}
+    m3r_max_family_share = max(m3r_family_shares.values(), default=None)
     # The answer annotation is not copied into blind scoring; after unblind it
     # is safe to use the fixture manifest's subtype map for this metric.
     subtype_by_pair = {item["pair_id"]: item.get("binding_subtype") for item in read_json(RESEARCH / "fixture-manifest.json")["pairs"]}
@@ -1125,6 +1160,7 @@ def metrics_for(results: list[dict[str, Any]]) -> dict[str, Any]:
         and len(m3r_incremental_families) >= signal_rule["holdout_incremental_families_min"]
         and (metrics["models"]["M3R"]["holdout"]["matched_control_false_positive_rate"] or 0) <= signal_rule["matched_control_false_positive_rate_max"]
         and (metrics["models"]["M3R"]["holdout"]["incremental_exact_actionability_rate"] or 0) >= signal_rule["incremental_exact_actionability_min"]
+        and (m3r_max_family_share or 0) <= signal_rule["max_share_from_one_historical_lineage_inspired_family"]
     )
     binding_survives = (
         len(m4b_incremental) >= binding_rule["additional_holdout_binding_defects_min"]
@@ -1136,7 +1172,11 @@ def metrics_for(results: list[dict[str, Any]]) -> dict[str, Any]:
     metrics["holdout_survival"] = {
         "M3_incremental_defects": len(m3_incremental),
         "M3R_incremental_defects_beyond_m0": len(m3r_incremental),
+        "M3R_gain_beyond_M3": len(m3r_gain_beyond_m3),
         "M3R_incremental_families": m3r_incremental_families,
+        "M3R_incremental_family_counts": dict(sorted(m3r_family_counts.items())),
+        "M3R_incremental_family_shares": m3r_family_shares,
+        "M3R_max_historical_lineage_family_share": m3r_max_family_share,
         "M4B_additional_defects_beyond_m3r": len(m4b_incremental),
         "M4B_additional_binding_subtypes": m4b_subtypes,
         "M4B_additional_control_false_positives_vs_m3r": m4b_fp - m3r_fp,
@@ -1534,6 +1574,49 @@ def diagnostic_decisions(results: list[dict[str, Any]], metrics: dict[str, Any])
     return decisions
 
 
+def counterfactual_minimality_rows(results: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Record the required local-predicate counterfactual without overclaiming.
+
+    An incremental detection is not evidence that a cross-contract lens is
+    necessary. This report therefore marks the alternative as requiring a new
+    local predicate and keeps the invariant decision at review-only; no local
+    production contract is mutated to manufacture a comparison.
+    """
+
+    packet_by_id = {packet["fixture_id"]: packet for packet in read_jsonl(RESEARCH / "blind-packets.jsonl")}
+    specs_by_pair = {spec["pair_id"]: spec for spec in pair_specs()}
+    rows: list[dict[str, Any]] = []
+    for item in sorted(results, key=lambda value: (value["fixture_id"], value["family"])):
+        if item["truth_class"] != "DEFECT":
+            continue
+        spec = specs_by_pair[item["pair_id"]]
+        packet = packet_by_id[item["fixture_id"]]
+        m0_result = item["models"]["M0"]["result"]
+        for model_id in ("M3", "M3R", "M4B"):
+            model = item["models"][model_id]
+            if m0_result == "FLAG" or model["result"] != "FLAG":
+                continue
+            rows.append(
+                {
+                    "fixture_id": item["fixture_id"],
+                    "pair_id": item["pair_id"],
+                    "family": item["family"],
+                    "split": item["split"],
+                    "model": model_id,
+                    "incremental_beyond_m0": True,
+                    "detected_predicates": model["predicates"],
+                    "declared_junction_fields": spec["changes"],
+                    "local_contract_statuses": [contract["status"] for contract in packet["local_contracts"]],
+                    "same_failure_caught_by_existing_local_predicate": False,
+                    "one_narrow_local_predicate_alternative": "POSSIBLE_IN_PRINCIPLE_BUT_NOT_EXPERIMENTALLY_COMPARED",
+                    "counterfactual_status": "REQUIRES_NEW_LOCAL_PREDICATE",
+                    "invariant_candidate_eligibility": "REVIEW_ONLY",
+                    "reason": "M0 local contracts are PASS; comparing a newly added local predicate would mutate a contract and is outside this research-only run.",
+                }
+            )
+    return rows
+
+
 def command_unblind(score_paths: list[Path], output_dir: Path) -> int:
     answer_path = RESEARCH / "answer-key.jsonl"
     answers = read_jsonl(answer_path)
@@ -1551,6 +1634,7 @@ def command_unblind(score_paths: list[Path], output_dir: Path) -> int:
     results = [classification_for(row_map, answer) for answer in sorted(answers, key=lambda item: item["fixture_id"])]
     metrics = metrics_for(results)
     metamorphic = metamorphic_rows(results)
+    counterfactuals = counterfactual_minimality_rows(results)
     decisions = diagnostic_decisions(results, metrics)
     metamorphic_violations = [row for row in metamorphic if not row["passed"]]
     validation = {
@@ -1564,6 +1648,8 @@ def command_unblind(score_paths: list[Path], output_dir: Path) -> int:
         "metamorphic_not_applicable": len([row for row in metamorphic if row["status"].startswith("NOT_APPLICABLE")]),
         "metamorphic_allowed_changes": len([row for row in metamorphic if row["status"] == "ALLOWED_ABSTENTION_CHANGE"]),
         "metamorphic_properties": sorted({row["property"] for row in metamorphic}),
+        "counterfactual_minimality_rows": len(counterfactuals),
+        "counterfactual_invariant_decision": "REVIEW_ONLY_NO_LOCAL_MUTATION",
         "invalid_fixtures": 0,
         "frozen_model_hash": digest(read_json(RESEARCH / "model-definitions.json")),
         "frozen_threshold_hash": digest(read_json(RESEARCH / "thresholds.json")),
@@ -1572,6 +1658,7 @@ def command_unblind(score_paths: list[Path], output_dir: Path) -> int:
     write_bytes(output_dir / "results.jsonl", jsonl_bytes(results))
     write_json(output_dir / "metrics.json", metrics)
     write_bytes(output_dir / "metamorphic-results.jsonl", jsonl_bytes(metamorphic))
+    write_bytes(output_dir / "counterfactual-minimality.jsonl", jsonl_bytes(counterfactuals))
     write_json(output_dir / "diagnostic-decisions.json", decisions)
     write_json(output_dir / "validation.json", validation)
     print(f"UNBLIND_OK results={len(results)} metamorphic={len(metamorphic)} violations={validation['metamorphic_violations']}")
@@ -1585,6 +1672,7 @@ def command_render_summary(output_dir: Path) -> int:
     results = read_jsonl(output_dir / "results.jsonl")
     validation = read_json(output_dir / "validation.json")
     metamorphic = read_jsonl(output_dir / "metamorphic-results.jsonl")
+    counterfactuals = read_jsonl(output_dir / "counterfactual-minimality.jsonl")
     family_rows = []
     for family in CONTRACT_REFS:
         family_rows.append(
@@ -1612,6 +1700,8 @@ Holdout M3 incremental defects beyond M0: **{holdout['M3_incremental_defects']}*
 
 The metamorphic suite executed **{len(metamorphic)}** checks across all six families: **{validation['metamorphic_violations']}** model-quality violations, **{validation['metamorphic_not_applicable']}** explicitly not-applicable coverage checks, and **{validation['metamorphic_allowed_changes']}** allowed safe-alternative changes. The suite includes exact repair, binding locality, irrelevant evidence, valid-signature/consequence, rollback/irreversibility, safe-authorized alternative and deadline properties.
 
+Counterfactual minimality recorded **{len(counterfactuals)}** incremental detections. Each is marked `REQUIRES_NEW_LOCAL_PREDICATE / REVIEW_ONLY`: M0's local contracts were `PASS`, and this run did not mutate a local contract to claim that the junction lens is necessary.
+
 ## Inference
 
 The bounded verdict is **`{verdict}`**. This is a result about the frozen synthetic corpus and deterministic predicates. It is not a real-world prevalence, production accuracy, or Current capability claim. The two scoring passes are byte-identical; metamorphic violations and ambiguous stress outcomes remain explicit, with the final suite reporting `{validation['metamorphic_violations']}` model-quality violations.
@@ -1629,6 +1719,7 @@ Keep any surviving structure as a replaceable research lens. If the binding chal
 - Existing local contracts were supplied to M0; detections also made by M0 are redundant, not incremental.
 - `answer-key.jsonl` is not a scorer input. Frozen hashes, score-pass identity, split determinism and pair integrity are separate machine checks.
 - Metamorphic results are model-quality checks, not additional truth labels; not-applicable model coverage and the allowed safe-authorized abstention change are separately classified.
+- Counterfactual minimality is unresolved by design: a new narrow local predicate could be a competing explanation, so the candidate remains a review lens rather than an invariant claim.
 - Stale `1111/instructions/CURRENT.md` and `1111/relay/current` pointers are preserved as preflight residuals and are not modified.
 
 ## Diagnostic retirement tests

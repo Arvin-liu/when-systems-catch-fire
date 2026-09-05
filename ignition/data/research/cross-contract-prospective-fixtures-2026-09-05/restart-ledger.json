@@ -1,14 +1,29 @@
 {
   "schema_version": "1.0.0",
   "task_id": "IGNITION-20260905-156",
-  "protocol_amendment": "TASK156-AMENDMENT-01",
-  "invalidated_freeze_commit": "e942fb8482adbca5f4dd29eb9377b2aef0218f73",
-  "invalidated_freeze_ledger_sha256": "a18f8a4eaed4150eb34ff2cf7caea10d20ed18f36277f9a103752000a4720e7d",
-  "invalidated_score_run_sha256": "406f17fd30a0b817576d95217cf773d52495fe31a8771d365e542117afb59c38",
-  "invalidated_metamorphic_result_sha256": "d231348c4d75150039438d22ba003318c552039347cf25de7868a87454b99d86",
-  "invalidated_metamorphic_violations": 57,
-  "invalidated_run_preserved_at": "data/research/cross-contract-prospective-fixtures-2026-09-05/invalidated-freeze-e942fb84/",
-  "invalidation_reason": "The first unblind run used a partial metamorphic suite and counted models that did not cover a defect as repair violations. The old freeze is retained for audit only and is not a Task156 result.",
-  "restart_requirement": "The amended protocol requires a new freeze, a new freeze commit, two new clean-state blind scoring passes, and a new unblind result.",
+  "current_protocol_amendment": "TASK156-AMENDMENT-02",
+  "invalidated_runs": [
+    {
+      "protocol_amendment": "TASK156-AMENDMENT-01",
+      "freeze_commit": "e942fb8482adbca5f4dd29eb9377b2aef0218f73",
+      "freeze_ledger_sha256": "a18f8a4eaed4150eb34ff2cf7caea10d20ed18f36277f9a103752000a4720e7d",
+      "score_run_sha256": "406f17fd30a0b817576d95217cf773d52495fe31a8771d365e542117afb59c38",
+      "metamorphic_result_sha256": "d231348c4d75150039438d22ba003318c552039347cf25de7868a87454b99d86",
+      "metamorphic_violations": 57,
+      "preserved_at": "data/research/cross-contract-prospective-fixtures-2026-09-05/invalidated-freeze-e942fb84/",
+      "reason": "Partial metamorphic suite counted non-applicable model coverage as violations."
+    },
+    {
+      "protocol_amendment": "TASK156-AMENDMENT-02",
+      "freeze_commit": "f521ffa67de43285e140e1a2ace7aae0730d958a",
+      "freeze_ledger_sha256": "c802e661ce7d385f7b171c07ef06a90115175990023d73b1ad3b103b716bd48c",
+      "score_run_sha256": "08959d50a54123c2a6aa0ced44ad8f26a699ea2655a35a0932f7f4dd7268dd91",
+      "metamorphic_result_sha256": "601d7daec631e9ea6ca62974ea09c237afcd10d4763cc3111a7fed8b93404b65",
+      "metamorphic_violations": 0,
+      "preserved_at": "data/research/cross-contract-prospective-fixtures-2026-09-05/invalidated-freeze-f521ffa6/",
+      "reason": "Metamorphic suite was corrected, but counterfactual minimality, lineage-share enforcement, safe Draft/open-obligation design had not yet been materialized."
+    }
+  ],
+  "restart_requirement": "The current amended protocol requires a new freeze commit, two new clean-state blind scoring passes, and a new unblind result after all required metrics and counterfactual records are present.",
   "boundary": "Research-only provenance record; no production governance, validator, gate, runtime, authority, capability, lifecycle or canonical-layer change."
 }

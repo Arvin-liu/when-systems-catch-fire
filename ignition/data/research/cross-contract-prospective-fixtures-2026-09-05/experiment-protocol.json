@@ -15,6 +15,11 @@
   ],
   "boundary": "Research-only synthetic fixture evidence; no production validator, gate, runtime, authority, capability, lifecycle or canonical-layer change.",
   "corpus_type": "prospective_synthetic_but_repository_shaped",
+  "counterfactual_minimality": {
+    "default_decision": "REVIEW_ONLY_NO_LOCAL_MUTATION",
+    "local_contract_mutation_allowed": false,
+    "required_for_every_incremental_detection": true
+  },
   "families": [
     {
       "genealogy": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
@@ -155,11 +160,12 @@
   ],
   "minimum_pairs": 48,
   "protocol_amendment": {
-    "archived_invalidated_run": "data/research/cross-contract-prospective-fixtures-2026-09-05/invalidated-freeze-e942fb84/",
-    "id": "TASK156-AMENDMENT-01",
-    "invalidates_freeze_commit": "e942fb8482adbca5f4dd29eb9377b2aef0218f73",
-    "reason": "The first unblind run counted non-applicable model coverage as metamorphic violations and had not yet implemented the full predeclared metamorphic property suite.",
-    "restart_from_new_freeze": true
+    "archived_invalidated_run": "data/research/cross-contract-prospective-fixtures-2026-09-05/invalidated-freeze-f521ffa6/",
+    "id": "TASK156-AMENDMENT-02",
+    "invalidates_freeze_commit": "f521ffa67de43285e140e1a2ace7aae0730d958a",
+    "reason": "The second run corrected metamorphic coverage but did not yet materialize the required counterfactual-minimality record, lineage-share threshold, safe Draft control, or explicit open-obligation fields.",
+    "restart_from_new_freeze": true,
+    "supersedes": "TASK156-AMENDMENT-01"
   },
   "question": "Can a frozen executable answer-key-separated fixture experiment reproduce non-redundant cross-contract detection beyond existing local contracts while controlling false positives, and can CC-020-like binding defects be caught by sharpening three edges without inventing a fourth?",
   "schema_version": "1.0.0",
