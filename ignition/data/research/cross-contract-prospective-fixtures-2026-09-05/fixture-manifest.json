@@ -1,0 +1,1168 @@
+{
+  "boundaries": {
+    "historical_records_replayed": false,
+    "live_external_effects": false,
+    "research_only": true
+  },
+  "pairs": [
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F1",
+      "fixture_ids": [
+        "F1-P01-A",
+        "F1-P01-B"
+      ],
+      "genealogy": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
+      "historical_lineage": "CC-012",
+      "metamorphic_field_paths": [
+        "local_contracts.0.status"
+      ],
+      "novel_recombination": false,
+      "pair_id": "F1-P01",
+      "source_contracts": [
+        "agent_runtime/contracts.py",
+        "tools/validate_dispatch_reconciliation.py",
+        "tools/validate_live_observation_semantics.py",
+        "data/operations/iterations/139/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F1",
+      "fixture_ids": [
+        "F1-P02-A",
+        "F1-P02-B"
+      ],
+      "genealogy": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
+      "historical_lineage": "CC-012",
+      "metamorphic_field_paths": [
+        "local_contracts.1.status"
+      ],
+      "novel_recombination": false,
+      "pair_id": "F1-P02",
+      "source_contracts": [
+        "agent_runtime/contracts.py",
+        "tools/validate_dispatch_reconciliation.py",
+        "tools/validate_live_observation_semantics.py",
+        "data/operations/iterations/139/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F1",
+      "fixture_ids": [
+        "F1-P03-A",
+        "F1-P03-B"
+      ],
+      "genealogy": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
+      "historical_lineage": "CC-012",
+      "metamorphic_field_paths": [
+        "local_contracts.2.status"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F1-P03",
+      "source_contracts": [
+        "agent_runtime/contracts.py",
+        "tools/validate_dispatch_reconciliation.py",
+        "tools/validate_live_observation_semantics.py",
+        "data/operations/iterations/139/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F1",
+      "fixture_ids": [
+        "F1-P04-A",
+        "F1-P04-B"
+      ],
+      "genealogy": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
+      "historical_lineage": "CC-012",
+      "metamorphic_field_paths": [
+        "objects.consequence.stop_path_present"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F1-P04",
+      "source_contracts": [
+        "agent_runtime/contracts.py",
+        "tools/validate_dispatch_reconciliation.py",
+        "tools/validate_live_observation_semantics.py",
+        "data/operations/iterations/139/"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F1",
+      "fixture_ids": [
+        "F1-P05-A",
+        "F1-P05-B"
+      ],
+      "genealogy": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
+      "historical_lineage": "CC-012",
+      "metamorphic_field_paths": [
+        "objects.consequence.observer_present"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F1-P05",
+      "source_contracts": [
+        "agent_runtime/contracts.py",
+        "tools/validate_dispatch_reconciliation.py",
+        "tools/validate_live_observation_semantics.py",
+        "data/operations/iterations/139/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F1",
+      "fixture_ids": [
+        "F1-P06-A",
+        "F1-P06-B"
+      ],
+      "genealogy": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
+      "historical_lineage": "CC-012",
+      "metamorphic_field_paths": [
+        "objects.consequence.reconciliation_owner_id"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F1-P06",
+      "source_contracts": [
+        "agent_runtime/contracts.py",
+        "tools/validate_dispatch_reconciliation.py",
+        "tools/validate_live_observation_semantics.py",
+        "data/operations/iterations/139/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F1",
+      "fixture_ids": [
+        "F1-P07-A",
+        "F1-P07-B"
+      ],
+      "genealogy": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
+      "historical_lineage": "CC-012",
+      "metamorphic_field_paths": [
+        "objects.consequence.retry_policy"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F1-P07",
+      "source_contracts": [
+        "agent_runtime/contracts.py",
+        "tools/validate_dispatch_reconciliation.py",
+        "tools/validate_live_observation_semantics.py",
+        "data/operations/iterations/139/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F1",
+      "fixture_ids": [
+        "F1-P08-A",
+        "F1-P08-B"
+      ],
+      "genealogy": "CC-012 supplied the consequence/accountability shape; fixtures recombine observer, ownership, stop and retry fields across new receipt variants.",
+      "historical_lineage": "CC-012",
+      "metamorphic_field_paths": [
+        "objects.consequence.stop_path_present"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F1-P08",
+      "source_contracts": [
+        "agent_runtime/contracts.py",
+        "tools/validate_dispatch_reconciliation.py",
+        "tools/validate_live_observation_semantics.py",
+        "data/operations/iterations/139/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": "lifecycle_epoch",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F2",
+      "fixture_ids": [
+        "F2-P01-A",
+        "F2-P01-B"
+      ],
+      "genealogy": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
+      "historical_lineage": "CC-026",
+      "metamorphic_field_paths": [
+        "objects.admission.lifecycle_epoch"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F2-P01",
+      "source_contracts": [
+        "agent_federation/contracts.py",
+        "tools/validate_task150_step18_scope_split_admission_objects.py",
+        "tools/validate_task150_step19_gate_topology_regression.py",
+        "data/operations/iterations/150/"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F2",
+      "fixture_ids": [
+        "F2-P02-A",
+        "F2-P02-B"
+      ],
+      "genealogy": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
+      "historical_lineage": "CC-026",
+      "metamorphic_field_paths": [
+        "local_contracts.1.status"
+      ],
+      "novel_recombination": false,
+      "pair_id": "F2-P02",
+      "source_contracts": [
+        "agent_federation/contracts.py",
+        "tools/validate_task150_step18_scope_split_admission_objects.py",
+        "tools/validate_task150_step19_gate_topology_regression.py",
+        "data/operations/iterations/150/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F2",
+      "fixture_ids": [
+        "F2-P03-A",
+        "F2-P03-B"
+      ],
+      "genealogy": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
+      "historical_lineage": "CC-026",
+      "metamorphic_field_paths": [
+        "objects.admission.provider_capability",
+        "objects.admission.current_authority",
+        "objects.action.attempted_current_use"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F2-P03",
+      "source_contracts": [
+        "agent_federation/contracts.py",
+        "tools/validate_task150_step18_scope_split_admission_objects.py",
+        "tools/validate_task150_step19_gate_topology_regression.py",
+        "data/operations/iterations/150/"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F2",
+      "fixture_ids": [
+        "F2-P04-A",
+        "F2-P04-B"
+      ],
+      "genealogy": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
+      "historical_lineage": "CC-026",
+      "metamorphic_field_paths": [
+        "local_contracts.3.status"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F2-P04",
+      "source_contracts": [
+        "agent_federation/contracts.py",
+        "tools/validate_task150_step18_scope_split_admission_objects.py",
+        "tools/validate_task150_step19_gate_topology_regression.py",
+        "data/operations/iterations/150/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F2",
+      "fixture_ids": [
+        "F2-P05-A",
+        "F2-P05-B"
+      ],
+      "genealogy": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
+      "historical_lineage": "CC-026",
+      "metamorphic_field_paths": [
+        "objects.admission.scope_rank"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F2-P05",
+      "source_contracts": [
+        "agent_federation/contracts.py",
+        "tools/validate_task150_step18_scope_split_admission_objects.py",
+        "tools/validate_task150_step19_gate_topology_regression.py",
+        "data/operations/iterations/150/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F2",
+      "fixture_ids": [
+        "F2-P06-A",
+        "F2-P06-B"
+      ],
+      "genealogy": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
+      "historical_lineage": "CC-026",
+      "metamorphic_field_paths": [
+        "objects.action.attempted_current_use"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F2-P06",
+      "source_contracts": [
+        "agent_federation/contracts.py",
+        "tools/validate_task150_step18_scope_split_admission_objects.py",
+        "tools/validate_task150_step19_gate_topology_regression.py",
+        "data/operations/iterations/150/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F2",
+      "fixture_ids": [
+        "F2-P07-A",
+        "F2-P07-B"
+      ],
+      "genealogy": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
+      "historical_lineage": "CC-026",
+      "metamorphic_field_paths": [
+        "objects.admission.provider_capability",
+        "objects.admission.current_authority",
+        "objects.action.attempted_current_use"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F2-P07",
+      "source_contracts": [
+        "agent_federation/contracts.py",
+        "tools/validate_task150_step18_scope_split_admission_objects.py",
+        "tools/validate_task150_step19_gate_topology_regression.py",
+        "data/operations/iterations/150/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F2",
+      "fixture_ids": [
+        "F2-P08-A",
+        "F2-P08-B"
+      ],
+      "genealogy": "CC-026 supplied the Base/Delta scope-coupling shape; fixtures vary provider, lifecycle and object-level admission without copying its historical records.",
+      "historical_lineage": "CC-026",
+      "metamorphic_field_paths": [
+        "objects.admission.object_level_split_present"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F2-P08",
+      "source_contracts": [
+        "agent_federation/contracts.py",
+        "tools/validate_task150_step18_scope_split_admission_objects.py",
+        "tools/validate_task150_step19_gate_topology_regression.py",
+        "data/operations/iterations/150/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": "source_identity_path",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F3",
+      "fixture_ids": [
+        "F3-P01-A",
+        "F3-P01-B"
+      ],
+      "genealogy": "CC-020 supplied the identity/projection split-brain challenge; fixtures add novel lifecycle and scope junctions while keeping each local object valid.",
+      "historical_lineage": "CC-020",
+      "metamorphic_field_paths": [
+        "objects.identity.source_path"
+      ],
+      "novel_recombination": false,
+      "pair_id": "F3-P01",
+      "source_contracts": [
+        "tools/validate_current_state_sync.py",
+        "tools/validate_current_release_lifecycle.py",
+        "tools/validate_post_publication_current.py",
+        "tools/validate_release_candidate_task_identity.py"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": "identity_projection_object",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F3",
+      "fixture_ids": [
+        "F3-P02-A",
+        "F3-P02-B"
+      ],
+      "genealogy": "CC-020 supplied the identity/projection split-brain challenge; fixtures add novel lifecycle and scope junctions while keeping each local object valid.",
+      "historical_lineage": "CC-020",
+      "metamorphic_field_paths": [
+        "objects.projection.object_id"
+      ],
+      "novel_recombination": false,
+      "pair_id": "F3-P02",
+      "source_contracts": [
+        "tools/validate_current_state_sync.py",
+        "tools/validate_current_release_lifecycle.py",
+        "tools/validate_post_publication_current.py",
+        "tools/validate_release_candidate_task_identity.py"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": "projection_surface_revision",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F3",
+      "fixture_ids": [
+        "F3-P03-A",
+        "F3-P03-B"
+      ],
+      "genealogy": "CC-020 supplied the identity/projection split-brain challenge; fixtures add novel lifecycle and scope junctions while keeping each local object valid.",
+      "historical_lineage": "CC-020",
+      "metamorphic_field_paths": [
+        "objects.surface.source_revision"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F3-P03",
+      "source_contracts": [
+        "tools/validate_current_state_sync.py",
+        "tools/validate_current_release_lifecycle.py",
+        "tools/validate_post_publication_current.py",
+        "tools/validate_release_candidate_task_identity.py"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": "release_current_path",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F3",
+      "fixture_ids": [
+        "F3-P04-A",
+        "F3-P04-B"
+      ],
+      "genealogy": "CC-020 supplied the identity/projection split-brain challenge; fixtures add novel lifecycle and scope junctions while keeping each local object valid.",
+      "historical_lineage": "CC-020",
+      "metamorphic_field_paths": [
+        "objects.release.source_path"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F3-P04",
+      "source_contracts": [
+        "tools/validate_current_state_sync.py",
+        "tools/validate_current_release_lifecycle.py",
+        "tools/validate_post_publication_current.py",
+        "tools/validate_release_candidate_task_identity.py"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": "lifecycle_epoch",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F3",
+      "fixture_ids": [
+        "F3-P05-A",
+        "F3-P05-B"
+      ],
+      "genealogy": "CC-020 supplied the identity/projection split-brain challenge; fixtures add novel lifecycle and scope junctions while keeping each local object valid.",
+      "historical_lineage": "CC-020",
+      "metamorphic_field_paths": [
+        "objects.surface.lifecycle_epoch"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F3-P05",
+      "source_contracts": [
+        "tools/validate_current_state_sync.py",
+        "tools/validate_current_release_lifecycle.py",
+        "tools/validate_post_publication_current.py",
+        "tools/validate_release_candidate_task_identity.py"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": "scope_alignment",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F3",
+      "fixture_ids": [
+        "F3-P06-A",
+        "F3-P06-B"
+      ],
+      "genealogy": "CC-020 supplied the identity/projection split-brain challenge; fixtures add novel lifecycle and scope junctions while keeping each local object valid.",
+      "historical_lineage": "CC-020",
+      "metamorphic_field_paths": [
+        "objects.admission.scope"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F3-P06",
+      "source_contracts": [
+        "tools/validate_current_state_sync.py",
+        "tools/validate_current_release_lifecycle.py",
+        "tools/validate_post_publication_current.py",
+        "tools/validate_release_candidate_task_identity.py"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": "lifecycle_epoch",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F3",
+      "fixture_ids": [
+        "F3-P07-A",
+        "F3-P07-B"
+      ],
+      "genealogy": "CC-020 supplied the identity/projection split-brain challenge; fixtures add novel lifecycle and scope junctions while keeping each local object valid.",
+      "historical_lineage": "CC-020",
+      "metamorphic_field_paths": [
+        "objects.projection.lifecycle_epoch"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F3-P07",
+      "source_contracts": [
+        "tools/validate_current_state_sync.py",
+        "tools/validate_current_release_lifecycle.py",
+        "tools/validate_post_publication_current.py",
+        "tools/validate_release_candidate_task_identity.py"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": "version_alignment",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F3",
+      "fixture_ids": [
+        "F3-P08-A",
+        "F3-P08-B"
+      ],
+      "genealogy": "CC-020 supplied the identity/projection split-brain challenge; fixtures add novel lifecycle and scope junctions while keeping each local object valid.",
+      "historical_lineage": "CC-020",
+      "metamorphic_field_paths": [
+        "objects.admission.version"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F3-P08",
+      "source_contracts": [
+        "tools/validate_current_state_sync.py",
+        "tools/validate_current_release_lifecycle.py",
+        "tools/validate_post_publication_current.py",
+        "tools/validate_release_candidate_task_identity.py"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F4",
+      "fixture_ids": [
+        "F4-P01-A",
+        "F4-P01-B"
+      ],
+      "genealogy": "The claim-to-action shape is derived from current claim ceiling and evidence-lineage contracts; it is not a replay of a historical CC case.",
+      "historical_lineage": "Task155 claim-ceiling map",
+      "metamorphic_field_paths": [
+        "local_contracts.0.status"
+      ],
+      "novel_recombination": false,
+      "pair_id": "F4-P01",
+      "source_contracts": [
+        "tools/foundation/validate_claim_governance.py",
+        "tools/foundation/validate_nonfunction_claim_closure.py",
+        "data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "data/foundation/nonfunction-claims/evidence-lineage.jsonl"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F4",
+      "fixture_ids": [
+        "F4-P02-A",
+        "F4-P02-B"
+      ],
+      "genealogy": "The claim-to-action shape is derived from current claim ceiling and evidence-lineage contracts; it is not a replay of a historical CC case.",
+      "historical_lineage": "Task155 claim-ceiling map",
+      "metamorphic_field_paths": [
+        "local_contracts.1.status"
+      ],
+      "novel_recombination": false,
+      "pair_id": "F4-P02",
+      "source_contracts": [
+        "tools/foundation/validate_claim_governance.py",
+        "tools/foundation/validate_nonfunction_claim_closure.py",
+        "data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "data/foundation/nonfunction-claims/evidence-lineage.jsonl"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F4",
+      "fixture_ids": [
+        "F4-P03-A",
+        "F4-P03-B"
+      ],
+      "genealogy": "The claim-to-action shape is derived from current claim ceiling and evidence-lineage contracts; it is not a replay of a historical CC case.",
+      "historical_lineage": "Task155 claim-ceiling map",
+      "metamorphic_field_paths": [
+        "local_contracts.2.status"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F4-P03",
+      "source_contracts": [
+        "tools/foundation/validate_claim_governance.py",
+        "tools/foundation/validate_nonfunction_claim_closure.py",
+        "data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "data/foundation/nonfunction-claims/evidence-lineage.jsonl"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F4",
+      "fixture_ids": [
+        "F4-P04-A",
+        "F4-P04-B"
+      ],
+      "genealogy": "The claim-to-action shape is derived from current claim ceiling and evidence-lineage contracts; it is not a replay of a historical CC case.",
+      "historical_lineage": "Task155 claim-ceiling map",
+      "metamorphic_field_paths": [
+        "local_contracts.3.status"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F4-P04",
+      "source_contracts": [
+        "tools/foundation/validate_claim_governance.py",
+        "tools/foundation/validate_nonfunction_claim_closure.py",
+        "data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "data/foundation/nonfunction-claims/evidence-lineage.jsonl"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F4",
+      "fixture_ids": [
+        "F4-P05-A",
+        "F4-P05-B"
+      ],
+      "genealogy": "The claim-to-action shape is derived from current claim ceiling and evidence-lineage contracts; it is not a replay of a historical CC case.",
+      "historical_lineage": "Task155 claim-ceiling map",
+      "metamorphic_field_paths": [
+        "objects.claim.ceiling_rank"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F4-P05",
+      "source_contracts": [
+        "tools/foundation/validate_claim_governance.py",
+        "tools/foundation/validate_nonfunction_claim_closure.py",
+        "data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "data/foundation/nonfunction-claims/evidence-lineage.jsonl"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F4",
+      "fixture_ids": [
+        "F4-P06-A",
+        "F4-P06-B"
+      ],
+      "genealogy": "The claim-to-action shape is derived from current claim ceiling and evidence-lineage contracts; it is not a replay of a historical CC case.",
+      "historical_lineage": "Task155 claim-ceiling map",
+      "metamorphic_field_paths": [
+        "objects.action.required_scope_rank"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F4-P06",
+      "source_contracts": [
+        "tools/foundation/validate_claim_governance.py",
+        "tools/foundation/validate_nonfunction_claim_closure.py",
+        "data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "data/foundation/nonfunction-claims/evidence-lineage.jsonl"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": "claim_action_object",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F4",
+      "fixture_ids": [
+        "F4-P07-A",
+        "F4-P07-B"
+      ],
+      "genealogy": "The claim-to-action shape is derived from current claim ceiling and evidence-lineage contracts; it is not a replay of a historical CC case.",
+      "historical_lineage": "Task155 claim-ceiling map",
+      "metamorphic_field_paths": [
+        "objects.action.claim_id"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F4-P07",
+      "source_contracts": [
+        "tools/foundation/validate_claim_governance.py",
+        "tools/foundation/validate_nonfunction_claim_closure.py",
+        "data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "data/foundation/nonfunction-claims/evidence-lineage.jsonl"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": "claim_action_object",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F4",
+      "fixture_ids": [
+        "F4-P08-A",
+        "F4-P08-B"
+      ],
+      "genealogy": "The claim-to-action shape is derived from current claim ceiling and evidence-lineage contracts; it is not a replay of a historical CC case.",
+      "historical_lineage": "Task155 claim-ceiling map",
+      "metamorphic_field_paths": [
+        "objects.action.claim_id",
+        "objects.action.required_scope_rank"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F4-P08",
+      "source_contracts": [
+        "tools/foundation/validate_claim_governance.py",
+        "tools/foundation/validate_nonfunction_claim_closure.py",
+        "data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "data/foundation/nonfunction-claims/evidence-lineage.jsonl"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F5",
+      "fixture_ids": [
+        "F5-P01-A",
+        "F5-P01-B"
+      ],
+      "genealogy": "The rollback shape comes from existing reversible local-file controls and durability recovery contracts, with synthetic irreversible and stop-path combinations.",
+      "historical_lineage": "Task155 consequence/rollback map",
+      "metamorphic_field_paths": [
+        "objects.rollback.effect_reversibility"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F5-P01",
+      "source_contracts": [
+        "tools/validate_execution_contract.py",
+        "tools/validate_durability_recovery.py",
+        "tools/validate_durability_snapshot.py",
+        "data/operations/iterations/134/"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F5",
+      "fixture_ids": [
+        "F5-P02-A",
+        "F5-P02-B"
+      ],
+      "genealogy": "The rollback shape comes from existing reversible local-file controls and durability recovery contracts, with synthetic irreversible and stop-path combinations.",
+      "historical_lineage": "Task155 consequence/rollback map",
+      "metamorphic_field_paths": [
+        "local_contracts.1.status"
+      ],
+      "novel_recombination": false,
+      "pair_id": "F5-P02",
+      "source_contracts": [
+        "tools/validate_execution_contract.py",
+        "tools/validate_durability_recovery.py",
+        "tools/validate_durability_snapshot.py",
+        "data/operations/iterations/134/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F5",
+      "fixture_ids": [
+        "F5-P03-A",
+        "F5-P03-B"
+      ],
+      "genealogy": "The rollback shape comes from existing reversible local-file controls and durability recovery contracts, with synthetic irreversible and stop-path combinations.",
+      "historical_lineage": "Task155 consequence/rollback map",
+      "metamorphic_field_paths": [
+        "local_contracts.2.status"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F5-P03",
+      "source_contracts": [
+        "tools/validate_execution_contract.py",
+        "tools/validate_durability_recovery.py",
+        "tools/validate_durability_snapshot.py",
+        "data/operations/iterations/134/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F5",
+      "fixture_ids": [
+        "F5-P04-A",
+        "F5-P04-B"
+      ],
+      "genealogy": "The rollback shape comes from existing reversible local-file controls and durability recovery contracts, with synthetic irreversible and stop-path combinations.",
+      "historical_lineage": "Task155 consequence/rollback map",
+      "metamorphic_field_paths": [
+        "local_contracts.3.status"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F5-P04",
+      "source_contracts": [
+        "tools/validate_execution_contract.py",
+        "tools/validate_durability_recovery.py",
+        "tools/validate_durability_snapshot.py",
+        "data/operations/iterations/134/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F5",
+      "fixture_ids": [
+        "F5-P05-A",
+        "F5-P05-B"
+      ],
+      "genealogy": "The rollback shape comes from existing reversible local-file controls and durability recovery contracts, with synthetic irreversible and stop-path combinations.",
+      "historical_lineage": "Task155 consequence/rollback map",
+      "metamorphic_field_paths": [
+        "objects.rollback.effect_reversibility"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F5-P05",
+      "source_contracts": [
+        "tools/validate_execution_contract.py",
+        "tools/validate_durability_recovery.py",
+        "tools/validate_durability_snapshot.py",
+        "data/operations/iterations/134/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F5",
+      "fixture_ids": [
+        "F5-P06-A",
+        "F5-P06-B"
+      ],
+      "genealogy": "The rollback shape comes from existing reversible local-file controls and durability recovery contracts, with synthetic irreversible and stop-path combinations.",
+      "historical_lineage": "Task155 consequence/rollback map",
+      "metamorphic_field_paths": [
+        "objects.rollback.restores_consequence"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F5-P06",
+      "source_contracts": [
+        "tools/validate_execution_contract.py",
+        "tools/validate_durability_recovery.py",
+        "tools/validate_durability_snapshot.py",
+        "data/operations/iterations/134/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F5",
+      "fixture_ids": [
+        "F5-P07-A",
+        "F5-P07-B"
+      ],
+      "genealogy": "The rollback shape comes from existing reversible local-file controls and durability recovery contracts, with synthetic irreversible and stop-path combinations.",
+      "historical_lineage": "Task155 consequence/rollback map",
+      "metamorphic_field_paths": [
+        "objects.rollback.preimage_status"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F5-P07",
+      "source_contracts": [
+        "tools/validate_execution_contract.py",
+        "tools/validate_durability_recovery.py",
+        "tools/validate_durability_snapshot.py",
+        "data/operations/iterations/134/"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F5",
+      "fixture_ids": [
+        "F5-P08-A",
+        "F5-P08-B"
+      ],
+      "genealogy": "The rollback shape comes from existing reversible local-file controls and durability recovery contracts, with synthetic irreversible and stop-path combinations.",
+      "historical_lineage": "Task155 consequence/rollback map",
+      "metamorphic_field_paths": [
+        "objects.consequence.stop_path_present"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F5-P08",
+      "source_contracts": [
+        "tools/validate_execution_contract.py",
+        "tools/validate_durability_recovery.py",
+        "tools/validate_durability_snapshot.py",
+        "data/operations/iterations/134/"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": "approval_action_object",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F6",
+      "fixture_ids": [
+        "F6-P01-A",
+        "F6-P01-B"
+      ],
+      "genealogy": "The authorization shape stress-tests the weak signer/contestability label; four cases intentionally omit a consequence failure so the label cannot be manufactured.",
+      "historical_lineage": "Task155 signer/contestability diagnostic",
+      "metamorphic_field_paths": [
+        "objects.action.approval_id"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F6-P01",
+      "source_contracts": [
+        "tools/validate_owner_editorial_authority.py",
+        "tools/validate_external_attestation.py",
+        "tools/validate_federation_ownership.py",
+        "data/governance/owner-editorial-authority-r1.json"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F6",
+      "fixture_ids": [
+        "F6-P02-A",
+        "F6-P02-B"
+      ],
+      "genealogy": "The authorization shape stress-tests the weak signer/contestability label; four cases intentionally omit a consequence failure so the label cannot be manufactured.",
+      "historical_lineage": "Task155 signer/contestability diagnostic",
+      "metamorphic_field_paths": [
+        "local_contracts.1.status"
+      ],
+      "novel_recombination": false,
+      "pair_id": "F6-P02",
+      "source_contracts": [
+        "tools/validate_owner_editorial_authority.py",
+        "tools/validate_external_attestation.py",
+        "tools/validate_federation_ownership.py",
+        "data/governance/owner-editorial-authority-r1.json"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F6",
+      "fixture_ids": [
+        "F6-P03-A",
+        "F6-P03-B"
+      ],
+      "genealogy": "The authorization shape stress-tests the weak signer/contestability label; four cases intentionally omit a consequence failure so the label cannot be manufactured.",
+      "historical_lineage": "Task155 signer/contestability diagnostic",
+      "metamorphic_field_paths": [
+        "objects.authority.scope_rank"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F6-P03",
+      "source_contracts": [
+        "tools/validate_owner_editorial_authority.py",
+        "tools/validate_external_attestation.py",
+        "tools/validate_federation_ownership.py",
+        "data/governance/owner-editorial-authority-r1.json"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F6",
+      "fixture_ids": [
+        "F6-P04-A",
+        "F6-P04-B"
+      ],
+      "genealogy": "The authorization shape stress-tests the weak signer/contestability label; four cases intentionally omit a consequence failure so the label cannot be manufactured.",
+      "historical_lineage": "Task155 signer/contestability diagnostic",
+      "metamorphic_field_paths": [
+        "objects.action.scope_rank"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F6-P04",
+      "source_contracts": [
+        "tools/validate_owner_editorial_authority.py",
+        "tools/validate_external_attestation.py",
+        "tools/validate_federation_ownership.py",
+        "data/governance/owner-editorial-authority-r1.json"
+      ],
+      "split": "holdout"
+    },
+    {
+      "binding_subtype": "approval_action_object",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F6",
+      "fixture_ids": [
+        "F6-P05-A",
+        "F6-P05-B"
+      ],
+      "genealogy": "The authorization shape stress-tests the weak signer/contestability label; four cases intentionally omit a consequence failure so the label cannot be manufactured.",
+      "historical_lineage": "Task155 signer/contestability diagnostic",
+      "metamorphic_field_paths": [
+        "objects.action.approval_id"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F6-P05",
+      "source_contracts": [
+        "tools/validate_owner_editorial_authority.py",
+        "tools/validate_external_attestation.py",
+        "tools/validate_federation_ownership.py",
+        "data/governance/owner-editorial-authority-r1.json"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": "approval_action_object",
+      "cross_object_family": true,
+      "distractor_fields_present": true,
+      "family": "F6",
+      "fixture_ids": [
+        "F6-P06-A",
+        "F6-P06-B"
+      ],
+      "genealogy": "The authorization shape stress-tests the weak signer/contestability label; four cases intentionally omit a consequence failure so the label cannot be manufactured.",
+      "historical_lineage": "Task155 signer/contestability diagnostic",
+      "metamorphic_field_paths": [
+        "objects.authority.approval_id"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F6-P06",
+      "source_contracts": [
+        "tools/validate_owner_editorial_authority.py",
+        "tools/validate_external_attestation.py",
+        "tools/validate_federation_ownership.py",
+        "data/governance/owner-editorial-authority-r1.json"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": false,
+      "distractor_fields_present": false,
+      "family": "F6",
+      "fixture_ids": [
+        "F6-P07-A",
+        "F6-P07-B"
+      ],
+      "genealogy": "The authorization shape stress-tests the weak signer/contestability label; four cases intentionally omit a consequence failure so the label cannot be manufactured.",
+      "historical_lineage": "Task155 signer/contestability diagnostic",
+      "metamorphic_field_paths": [
+        "objects.authority.contestability_present"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F6-P07",
+      "source_contracts": [
+        "tools/validate_owner_editorial_authority.py",
+        "tools/validate_external_attestation.py",
+        "tools/validate_federation_ownership.py",
+        "data/governance/owner-editorial-authority-r1.json"
+      ],
+      "split": "calibration"
+    },
+    {
+      "binding_subtype": null,
+      "cross_object_family": false,
+      "distractor_fields_present": false,
+      "family": "F6",
+      "fixture_ids": [
+        "F6-P08-A",
+        "F6-P08-B"
+      ],
+      "genealogy": "The authorization shape stress-tests the weak signer/contestability label; four cases intentionally omit a consequence failure so the label cannot be manufactured.",
+      "historical_lineage": "Task155 signer/contestability diagnostic",
+      "metamorphic_field_paths": [
+        "objects.authority.revocation_path_present"
+      ],
+      "novel_recombination": true,
+      "pair_id": "F6-P08",
+      "source_contracts": [
+        "tools/validate_owner_editorial_authority.py",
+        "tools/validate_external_attestation.py",
+        "tools/validate_federation_ownership.py",
+        "data/governance/owner-editorial-authority-r1.json"
+      ],
+      "split": "calibration"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "task_id": "IGNITION-20260905-156"
+}

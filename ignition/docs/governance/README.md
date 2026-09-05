@@ -33,6 +33,13 @@ Task `IGNITION-20260905-155` 是对交叉合同复核图的历史盲测，仍为
 - [`cross-contract-failure-casebook-2026-09-05.md`](./cross-contract-failure-casebook-2026-09-05.md) — 逐案 pre-outcome 与 unblinded evidence cards；机器冻结与结果数据位于 `data/research/cross-contract-blind-test-2026-09-05/`。
 - 任务报告见 [`reports/governance/task-IGNITION-20260905-155.md`](../../reports/governance/task-IGNITION-20260905-155.md)，结果见 [`agent-results/IGNITION-20260905-155-result.md`](../../agent-results/IGNITION-20260905-155-result.md)。
 
+Task `IGNITION-20260905-156` 是对交叉合同 junction invariant 的前瞻性、answer-key-separated fixture 复现，仍为 `RESEARCH_ONLY / NON_CANONICAL / NON_CURRENT`：
+
+- [`cross-contract-prospective-fixture-experiment-2026-09-05.md`](./cross-contract-prospective-fixture-experiment-2026-09-05.md) — 48 对 / 96 instances、F1–F6 六类、M0/M3/M3R/M4B 冻结模型、双次 clean-state blind scoring、holdout metrics、metamorphic 与 counterfactual minimality 结果；M4B 仅保留为 bounded research invariant candidate。
+- [`junction-invariant-candidate-assessment-2026-09-05.md`](./junction-invariant-candidate-assessment-2026-09-05.md) — M3R 与现有字段 binding challenger 的阈值比较；不新增 canonical layer、authority、truth state、validator、gate 或 runtime。
+- [`cross-contract-prospective-casebook-2026-09-05.md`](./cross-contract-prospective-casebook-2026-09-05.md) — 每个 prospective paired fixture 的 primary/control、family genealogy、四模型结果与稳定 flip；机器冻结、盲评分、解盲和 minimality 记录位于 `data/research/cross-contract-prospective-fixtures-2026-09-05/`。
+- 任务报告见 [`reports/governance/task-IGNITION-20260905-156.md`](../../reports/governance/task-IGNITION-20260905-156.md)，结果见 [`agent-results/IGNITION-20260905-156-result.md`](../../agent-results/IGNITION-20260905-156-result.md)。
+
 ### 治理与宪章文档目录
 
 | 文档 | 角色 |

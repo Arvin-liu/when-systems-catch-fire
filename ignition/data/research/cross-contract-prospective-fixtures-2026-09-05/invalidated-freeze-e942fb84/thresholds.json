@@ -1,0 +1,31 @@
+{
+  "any_cross_contract_signal_survival": {
+    "holdout_incremental_families_min": 3,
+    "holdout_incremental_true_detections_min": 6,
+    "incremental_exact_actionability_min": 0.8,
+    "matched_control_false_positive_rate_max": 0.1,
+    "max_share_from_one_historical_lineage_inspired_family": 0.5
+  },
+  "binding_challenger_survival": {
+    "additional_holdout_binding_defects_min": 3,
+    "additional_holdout_control_false_positives_max": 1,
+    "distinct_binding_subtypes_min": 2,
+    "new_authority_or_truth_state_allowed": false,
+    "trivial_stale_digest_only_allowed": false
+  },
+  "post_hoc_changes": {
+    "answer_key": "FORBIDDEN",
+    "case_exclusion": "FORBIDDEN; classify INVALID_FIXTURE under predeclared rule",
+    "model_semantics": "FORBIDDEN",
+    "thresholds": "FORBIDDEN"
+  },
+  "schema_version": "1.0.0",
+  "verdict_taxonomy": [
+    "NO_REPRODUCIBLE_INCREMENT",
+    "REVIEW_LENS_ONLY",
+    "THREE_EDGE_SIGNAL_REPRODUCED",
+    "REFINED_THREE_EDGE_SIGNAL_REPRODUCED",
+    "BINDING_CHALLENGER_SUPPORTED_AS_RESEARCH_INVARIANT_CANDIDATE",
+    "EXPERIMENT_INVALID"
+  ]
+}

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Claim ceiling: this audit records repository-local baseline evidence only. It](../../../reports/operations/ignition-137-step00-baseline-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9ad103c39a99509d / Claim ceiling: this audit records repository-local baseline evidence only. It
+  - 来源：`reports/operations/ignition-137-step00-baseline-audit.md`
+  - 依赖：—；被引用：—
+- [Claim ceiling: this capsule is repository-local continuity and resume evidence only. It does not establish production re](../../../reports/operations/ignition-143-resume-capsule.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-fc8dfae9e3db196e / Claim ceiling: this capsule is repository-local continuity and resume evidence only. It does not establish production re
+  - 来源：`reports/operations/ignition-143-resume-capsule.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: this is bounded read-only reconciliation evidence. It does not](../../../reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-aa76b1085a2beffe / Claim ceiling: this is bounded read-only reconciliation evidence. It does not
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-13A16F3F80BC03CB / def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]: / IMPLICIT-13A16F3F80BC03CB / IMPLICIT-4203A5B6669F05B9
   - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]:](../../../agent_federation/live_bridge.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4203A5B6669F05B9 / def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]: / IMPLICIT-4203A5B6669F05B9 / IMPLICIT-13A16F3F80BC03CB
-  - 来源：`agent_federation/live_bridge.py`
-  - 依赖：—；被引用：—
-- [def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]:](../../../agent_federation/live_filesystem.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-4C90342117EEA2B3 / def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]: / IMPLICIT-4C90342117EEA2B3 / IMPLICIT-13A16F3F80BC03CB
-  - 来源：`agent_federation/live_filesystem.py`
   - 依赖：—；被引用：—

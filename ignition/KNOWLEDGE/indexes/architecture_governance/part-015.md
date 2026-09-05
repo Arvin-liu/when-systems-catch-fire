@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [身体社会学补充线可继续扩到 Crossley 等作者，但需要逐本拆分后再入表。](../../../outputs/research/role-identity-subjectivity-reading-list-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-06f2381d0a2114b2 / 身体社会学补充线可继续扩到 Crossley 等作者，但需要逐本拆分后再入表。
+  - 来源：`outputs/research/role-identity-subjectivity-reading-list-20260712.md`
+  - 依赖：—；被引用：—
+- [输入基线由 `data/governance/self-correction/config.json` 锁定。生成器读取当前工作树、任务 100 claim registry/dependency graph/evidence lineag](../../../docs/governance/self-correction-engine.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-b9500dedb71f7ab9 / 输入基线由 `data/governance/self-correction/config.json` 锁定。生成器读取当前工作树、任务 100 claim registry/dependency graph/evidence lineag
+  - 来源：`docs/governance/self-correction-engine.md`
+  - 依赖：—；被引用：—
 - [输入材料：`inputs/collisions/20260708-cross-domain-smoke-test/{social,science,history}.md`](../../../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e0d91fd81e9816fe / 输入材料：`inputs/collisions/20260708-cross-domain-smoke-test/{social,science,history}.md`

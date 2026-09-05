@@ -25073,6 +25073,7 @@
 {"first_line":23,"last_line":23,"mention_count":1,"path":"docs/foundation/future-claim-admission-protocol.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":114,"last_line":114,"mention_count":1,"path":"docs/foundation/task-107-incident-report.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":15,"last_line":15,"mention_count":1,"path":"docs/foundation/task-107-semantic-diff.json","role":"REFERENCE","stable_id":"M0"}
+{"first_line":38,"last_line":38,"mention_count":1,"path":"docs/governance/README.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":52,"last_line":52,"mention_count":1,"path":"docs/publication/zhiyuan-writing-method.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":54,"last_line":54,"mention_count":1,"path":"reports/architecture/121Q12-baseline-audit.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md","role":"REFERENCE","stable_id":"M0"}
@@ -25644,6 +25645,7 @@
 {"first_line":85,"last_line":88,"mention_count":2,"path":"docs/editorial/articles/012-support-becomes-path-control.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":294,"last_line":306,"mention_count":2,"path":"docs/editorial/source-manifest.json","role":"REFERENCE","stable_id":"M3"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"docs/foundation/claim-governance-and-function-identity.md","role":"REFERENCE","stable_id":"M3"}
+{"first_line":38,"last_line":38,"mention_count":1,"path":"docs/governance/README.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":7,"last_line":29,"mention_count":3,"path":"outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md","role":"REFERENCE","stable_id":"M3"}
 {"first_line":33,"last_line":33,"mention_count":1,"path":"outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md","role":"REFERENCE","stable_id":"M3"}

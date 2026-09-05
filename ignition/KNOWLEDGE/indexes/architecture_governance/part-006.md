@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [evidence_regimes.json](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-03dc7d73218ec950 / evidence_regimes.json
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [evidence_regimes.schema.json](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4928fd625db4938a / evidence_regimes.schema.json
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
 - [evidence_regimes（12 条）— 确认工程学证据制度范围](../../../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-56f8633d43c644e7 / evidence_regimes（12 条）— 确认工程学证据制度范围
@@ -2492,15 +2502,5 @@
 - [link: "已迁移的历史案例来源/0779-C-0784-亲子共读一本书.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cb16a5af84a3a6c7 / link: "已迁移的历史案例来源/0779-C-0784-亲子共读一本书.md"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [link: "已迁移的历史案例来源/0780-C-0785-宠物项目：记录家族史、食物、味道.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c11e03e73f2ce56e / link: "已迁移的历史案例来源/0780-C-0785-宠物项目：记录家族史、食物、味道.md"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [link: "已迁移的历史案例来源/0781-C-0786-写地方偏方、食物、手艺.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8a0fc202d323b8d4 / link: "已迁移的历史案例来源/0781-C-0786-写地方偏方、食物、手艺.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

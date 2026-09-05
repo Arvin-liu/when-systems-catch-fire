@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-594\]\( \) \| \[梦境离线生成整合验证\]\( \) \| 睡眠中外部输入权重下降，内部生成模型重放高权重残差，降低记忆和情绪](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9393bb7df2258cb1 / \| \[C-594\]\( \) \| \[梦境离线生成整合验证\]\( \) \| 睡眠中外部输入权重下降，内部生成模型重放高权重残差，降低记忆和情绪
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-595\]\( \) \| \[OrcaRouter多模型并行扇出验证\]\( \) \| OrcaRo](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-77adf9b59c1f0371 / \| \[C-595\]\( \) \| \[OrcaRouter多模型并行扇出验证\]\( \) \| OrcaRo
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-598\]\( \) \| \[单体模型到模型网络相变验证\]\( \) \| 性能突破来自模型网络编排，而不是单体模型继续堆参](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4126c23ce660fd8a / \| \[C-598\]\( \) \| \[单体模型到模型网络相变验证\]\( \) \| 性能突破来自模型网络编排，而不是单体模型继续堆参
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1340579f7838a376 / 下表把当前路径、primitive 能做的工作与不能自动解决的部分分开。`priority` 不是普遍 precedence；当前 OS Steering 已明确在不可比时保留候选、理由、reconciliation 与 human rev
   - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
-  - 依赖：—；被引用：—
-- [不主张 Human Owner 单独足以保证证据、理解、同意、正确性、可逆性或公平后果；](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c07aca54f9a7bd33 / 不主张 Human Owner 单独足以保证证据、理解、同意、正确性、可逆性或公平后果；
-  - 来源：`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`
-  - 依赖：—；被引用：—
-- [不主张六类在项目外普遍必要；](../../../docs/governance/value-epistemology-derivation-audit-2026-09-04.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-af92d1148bce1d43 / 不主张六类在项目外普遍必要；
-  - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
   - 依赖：—；被引用：—

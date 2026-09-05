@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [不主张 Human Owner 单独足以保证证据、理解、同意、正确性、可逆性或公平后果；](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c07aca54f9a7bd33 / 不主张 Human Owner 单独足以保证证据、理解、同意、正确性、可逆性或公平后果；
+  - 来源：`docs/governance/more-meta-foundations-synthesis-2026-09-04.md`
+  - 依赖：—；被引用：—
+- [不主张六类在项目外普遍必要；](../../../docs/governance/value-epistemology-derivation-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-af92d1148bce1d43 / 不主张六类在项目外普遍必要；
+  - 来源：`docs/governance/value-epistemology-derivation-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [不主张生命共同体价值可以从证据或不确定性逻辑演绎；](../../../docs/governance/value-epistemology-derivation-audit-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d2c335922e898fd1 / 不主张生命共同体价值可以从证据或不确定性逻辑演绎；
@@ -2492,15 +2502,5 @@
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a6410668481b8eb2 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-266bf47796808c54 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1977b6042ae34f81 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

@@ -1,0 +1,47 @@
+{
+  "base_commit": "9bed8e42ee824fc0c0a10717b6163fe7052423e8",
+  "boundary": "Research-only synthetic fixture evidence; no production validator, gate, runtime, authority, capability, lifecycle or canonical-layer change.",
+  "calibration_pairs": 36,
+  "fixture_instance_count": 96,
+  "freeze_status": "FROZEN_BEFORE_BLINDED_SCORING",
+  "frozen_artifacts": {
+    "answer-key.jsonl": "83cfc510f9acf7f15b6a0a53e5052ee66c91be3b2fe4d98d0d4f66a5f11678d6",
+    "blind-packets.jsonl": "f2e3ebe92b9f840cd2f3428cf6cca7cf5188aac1094859ab242934031fa91a47",
+    "experiment-protocol.json": "8f1870e18b7b3125a2c431dcfbc793052c34cea7a0ad1ba8f4d7070f6b957c22",
+    "fixture-generator-manifest.json": "380aa2c115de0efe3ca27602dc03523a876465355877c98d1188d1cb4b6452ec",
+    "fixture-manifest.json": "bb820167d4b53b34739b4596a30ff5291cb5a4324793c2126496f41d2b1d7b03",
+    "model-definitions.json": "329bfab3e99be3bf83cea87e165af11182e04595a4e6f6e26d6704158125e4cc",
+    "split-manifest.json": "ed3b775facd3b0bc32767afe6fcad08d37f065b343c8f7d5b25d61b8e77e012e",
+    "thresholds.json": "c3ceac57acedcd12fac8f7c1be1fd8b426d8fdd4cb3196b090403cb2bd26085b"
+  },
+  "frozen_at": "2026-09-05",
+  "holdout_pairs": 12,
+  "models_frozen": [
+    "M0",
+    "M3",
+    "M3R",
+    "M4B"
+  ],
+  "pair_count": 48,
+  "preflight_residuals": [
+    {
+      "action": "PRESERVED_UNCHANGED",
+      "path": "1111/instructions/CURRENT.md",
+      "status": "KNOWN_STALE_POINTER"
+    },
+    {
+      "action": "PRESERVED_UNCHANGED",
+      "path": "1111/relay/current",
+      "status": "KNOWN_STALE_POINTER"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "scoring_input_exclusion": "The scorer command reads blind-packets.jsonl and model-definitions.json only; answer-key.jsonl is read only by unblind/metrics commands.",
+  "separate_digests": {
+    "answer_key": "83cfc510f9acf7f15b6a0a53e5052ee66c91be3b2fe4d98d0d4f66a5f11678d6",
+    "blind_and_answer_key_differ": true,
+    "blind_packets": "f2e3ebe92b9f840cd2f3428cf6cca7cf5188aac1094859ab242934031fa91a47"
+  },
+  "task_id": "IGNITION-20260905-156",
+  "thresholds_frozen": true
+}
