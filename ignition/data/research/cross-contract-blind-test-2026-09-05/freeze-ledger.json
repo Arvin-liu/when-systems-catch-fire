@@ -1,7 +1,7 @@
 {
   "schema_version": "research-only/cross-contract-freeze-ledger-r1",
   "task_id": "IGNITION-20260905-155",
-  "status": "BLIND_PHASE_FROZEN",
+  "status": "UNBLINDED_RESULTS_RECORDED",
   "hash_algorithm": "SHA-256",
   "frozen_at": "2026-09-05T00:00:00+08:00",
   "formal_baseline": {
@@ -40,6 +40,24 @@
     "later_outcome_payload_in_blind_inputs": false,
     "cognitive_independence": false,
     "temporal_blinding_only": true
+  },
+  "blind_phase_commit": "6618f0b8d5dee9a63e2970c470da95eefc59f4f4",
+  "unblind_phase": {
+    "results_path": "results.jsonl",
+    "results_sha256": "e4c028646685db1a4d66551c65b033e6eadfc81df42562102b1b84d8f6ff9b66",
+    "casebook_path": "../../../docs/governance/cross-contract-failure-casebook-2026-09-05.md",
+    "outcome_sources_read_after_blind_commit": true,
+    "classification_counts": {
+      "INCREMENTAL_TRUE_POSITIVE": 2,
+      "REDUNDANT_TRUE_POSITIVE": 9,
+      "FALSE_POSITIVE": 2,
+      "TRUE_NEGATIVE_CONTROL_PASS": 10,
+      "MISS_FALSE_NEGATIVE": 1,
+      "UNDECIDABLE": 3
+    },
+    "holdout_incremental_cases": ["CC-012", "CC-026"],
+    "holdout_incremental_count": 2,
+    "unblind_note": "The authoring agent had repository-history access during corpus construction; this remains a temporal/data-level blind test rather than an independent cognitive replication."
   },
   "preflight_residuals": [
     {
