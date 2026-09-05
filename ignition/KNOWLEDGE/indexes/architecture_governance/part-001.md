@@ -1909,6 +1909,11 @@
   - 可搜索名称：NFC-ce5b5e084c3e3145 / \[`cross-contract-failure-casebook-2026-09-05.md`\]\(./cross-contract-failure-casebook-2026-09-05.md\) — 逐案 pre-outcome 与 un
   - 来源：`docs/governance/README.md`
   - 依赖：—；被引用：—
+- [\[`cross-contract-prospective-fixture-experiment-2026-09-05.md`\]\(./cross-contract-prospective-fixture-experiment-2026-09-](../../../docs/governance/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-aa96bdc3259293b9 / \[`cross-contract-prospective-fixture-experiment-2026-09-05.md`\]\(./cross-contract-prospective-fixture-experiment-2026-09-
+  - 来源：`docs/governance/README.md`
+  - 依赖：—；被引用：—
 - [\[`current-facts.json`\]\(data/architecture/current-facts.json\) 为准：点火是 OS /](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e85572a856471dd2 / \[`current-facts.json`\]\(data/architecture/current-facts.json\) 为准：点火是 OS /
@@ -1918,6 +1923,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-9ce8603ebf51a52d / \[`evidence-registry.jsonl`\]\(../../data/language-thought/evidence-registry.jsonl\)：研究来源与主张上限
   - 来源：`docs/language-thought/README.md`
+  - 依赖：—；被引用：—
+- [\[`junction-invariant-candidate-assessment-2026-09-05.md`\]\(./junction-invariant-candidate-assessment-2026-09-05.md\) — M3R](../../../docs/governance/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6ad8ed2ad32a8905 / \[`junction-invariant-candidate-assessment-2026-09-05.md`\]\(./junction-invariant-candidate-assessment-2026-09-05.md\) — M3R
+  - 来源：`docs/governance/README.md`
   - 依赖：—；被引用：—
 - [\[C-0730｜宋徽宗文化工程案例\]\(../已迁移的历史案例来源/0725-C-0730-宋徽宗文化工程案例.md\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2492,15 +2502,5 @@
 - [_issue\(issues, "ARTIFACT_PROVENANCE", f"{item_path}.provenance", "artifact provenance is required"\)](../../../reos_vnext/validation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-003960da26e472ee / _issue\(issues, "ARTIFACT_PROVENANCE", f"{item_path}.provenance", "artifact provenance is required"\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_issue\(issues, "CANONICAL_CLAIM_MASQUERADE", f"{item_path}.canonical_status", "claim candidates are never canonical"\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b1085d939ccb1131 / _issue\(issues, "CANONICAL_CLAIM_MASQUERADE", f"{item_path}.canonical_status", "claim candidates are never canonical"\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_issue\(issues, "DUPLICATE_ID", f"{item_path}.artifact_id", "artifact id is not unique"\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9ed0757543b7dace / _issue\(issues, "DUPLICATE_ID", f"{item_path}.artifact_id", "artifact id is not unique"\)
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—

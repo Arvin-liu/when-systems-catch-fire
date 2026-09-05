@@ -1,0 +1,131 @@
+{
+  "models": [
+    {
+      "description": "Use only packet-local contract statuses and their explicitly named object-local predicates.",
+      "edges": [
+        "local_contract"
+      ],
+      "id": "M0",
+      "name": "EXISTING_ONLY",
+      "predicates": [
+        {
+          "action": "DEFER_TO_LOCAL_CONTRACT_REPAIR",
+          "id": "m0.local_contract_failure",
+          "observable": "any local_contracts[*].status == FAIL"
+        },
+        {
+          "action": "REQUIRE_LOCAL_REVIEW",
+          "id": "m0.local_contract_unknown",
+          "observable": "any local_contracts[*].status == UNKNOWN and no FAIL"
+        }
+      ]
+    },
+    {
+      "description": "M0 plus exactly the frozen claim, authority and consequence edges; no binding-specific predicate.",
+      "edges": [
+        "claim",
+        "authority",
+        "consequence"
+      ],
+      "id": "M3",
+      "name": "THREE_EDGE_V1",
+      "predicates": [
+        {
+          "action": "BLOCK_ACTION_UNTIL_CLAIM_CEILING_IS_ALIGNED",
+          "id": "m3.claim_ceiling",
+          "observable": "claim.provenance_status == VALID and claim.ceiling_rank < action.required_scope_rank"
+        },
+        {
+          "action": "BLOCK_ADMISSION_UNTIL_SCOPE_AND_APPROVAL_ALIGN",
+          "id": "m3.authority_scope",
+          "observable": "authority.scope_rank != action.scope_rank or admission.scope_rank != action.scope_rank or approver missing"
+        },
+        {
+          "action": "KEEP_DRAFT_NON_INTENT_OBJECT_OUT_OF_ACTION_PATH",
+          "id": "m3.admission_lifecycle",
+          "observable": "admission.lifecycle == DRAFT and action attempts Current use"
+        },
+        {
+          "action": "KEEP_PROVIDER_CAPABILITY_OUTSIDE_CURRENT_AUTHORITY",
+          "id": "m3.admission_authority",
+          "observable": "provider capability is AVAILABLE, Current authority is NONE, and action attempts Current use"
+        },
+        {
+          "action": "REQUIRE_SEPARATE_ADMISSION_OBJECTS",
+          "id": "m3.admission_object_split",
+          "observable": "admission.object_level_split_present is false"
+        },
+        {
+          "action": "OPEN_RECONCILIATION_WITH_NAMED_OBSERVER_AND_OWNER",
+          "id": "m3.consequence_unknown_owner",
+          "observable": "effect_state == UNKNOWN and observer or reconciliation owner is absent"
+        },
+        {
+          "action": "PROHIBIT_RETRY_UNTIL_EFFECT_IS_RECONCILED",
+          "id": "m3.consequence_retry",
+          "observable": "effect_state == UNKNOWN and retry_policy == PERMITTED"
+        },
+        {
+          "action": "REQUIRE_OBSERVABLE_STOP_PATH",
+          "id": "m3.consequence_stop",
+          "observable": "effect_state == UNKNOWN and stop_path_present is false"
+        },
+        {
+          "action": "BLOCK_REVERSIBILITY_CLAIM_AND_REQUIRE_SAFE_STOP",
+          "id": "m3.rollback",
+          "observable": "rollback label exists but effect is irreversible, preimage incomplete, restoration false, or stop path absent"
+        }
+      ]
+    },
+    {
+      "description": "M3 plus a pre-frozen refinement of the claim edge for source/identity/projection/public-surface binding; it remains reducible to claim provenance and ceiling.",
+      "edges": [
+        "claim",
+        "authority",
+        "consequence"
+      ],
+      "id": "M3R",
+      "name": "THREE_EDGE_REFINED",
+      "predicates": [
+        {
+          "action": "BLOCK_PROJECTION_UNTIL_CLAIM_SOURCE_IDENTITY_AND_SURFACE_ALIGN",
+          "id": "m3r.claim_source_identity_projection_binding",
+          "observable": "individually VALID source, identity, projection, surface and release records must agree on source path, object identity and source revision"
+        }
+      ],
+      "refinement": "m3r.claim_source_identity_projection_binding"
+    },
+    {
+      "binding_predicates": [
+        {
+          "action": "BLOCK_PROJECTION_OR_ADMISSION_UNTIL_EXISTING_BINDING_FIELDS_ALIGN",
+          "id": "m4b.binding_tuple_alignment",
+          "observable": "source, identity, projection, surface, release and admission binding tuples agree on object_id/version/scope/lifecycle_epoch"
+        },
+        {
+          "action": "BLOCK_ACTION_UNTIL_EXISTING_CLAIM_REFERENCE_ALIGN",
+          "id": "m4b.claim_action_object_binding",
+          "observable": "action.claim_id == claim.object_id"
+        },
+        {
+          "action": "BLOCK_ACTION_UNTIL_EXISTING_APPROVAL_REFERENCE_ALIGN",
+          "id": "m4b.approval_action_object_binding",
+          "observable": "action.approval_id == authority.approval_id"
+        }
+      ],
+      "description": "M3R plus a neutral binding/integrity challenger over existing object_id/version/scope/lifecycle_epoch fields and claim/approval references.",
+      "edges": [
+        "claim",
+        "authority",
+        "consequence",
+        "binding/integrity"
+      ],
+      "id": "M4B",
+      "name": "THREE_EDGE_PLUS_BINDING_CHALLENGER",
+      "no_new_authority_or_truth_state": true,
+      "refinement": "m3r.claim_source_identity_projection_binding"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "task_id": "IGNITION-20260905-156"
+}

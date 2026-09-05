@@ -1,0 +1,26 @@
+{
+  "answer_key_loaded": true,
+  "boundary": "Research-only synthetic fixture evidence; no production validator, gate, runtime, authority, capability, lifecycle or canonical-layer change.",
+  "freeze_validation": "REQUIRED_SEPARATE_COMMAND",
+  "frozen_model_hash": "0fbdced20181897d3faefea04b9f0ea9da933723606f8c21fe7428db8f42ce71",
+  "frozen_threshold_hash": "2e509a21b354947fd36193d941d4e318fe37b61210495e7fb58da7b88e3d90f7",
+  "invalid_fixtures": 0,
+  "metamorphic_allowed_changes": 24,
+  "metamorphic_not_applicable": 67,
+  "metamorphic_properties": [
+    "binding_change_flips_only_covering_models",
+    "deadline_passage_does_not_create_new_failure",
+    "irrelevant_evidence_does_not_upgrade_claim_scope",
+    "repair_declared_minimal_change_set",
+    "repair_exact_missing_junction_flips_flag_to_no_flag",
+    "rollback_label_does_not_repair_irreversible_effect",
+    "safe_authorized_alternative_may_change_abstention",
+    "signer_only_stress_does_not_create_flag",
+    "valid_signature_does_not_repair_consequence_gap"
+  ],
+  "metamorphic_tests": 808,
+  "metamorphic_violations": 0,
+  "scoring_passes": 2,
+  "scoring_passes_identical": true,
+  "task_id": "IGNITION-20260905-156"
+}
