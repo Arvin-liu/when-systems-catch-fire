@@ -111,7 +111,15 @@ Completed local checks include:
 - final unblind, metrics, metamorphic and counterfactual generation;
 - `git diff --check`.
 
-The final report must also retain exact affected projection checks and normal Draft-PR CI outcomes after the formal branch is pushed. Those remote observations are a separate evidence plane and cannot upgrade this report's research status. No full repository regression, Current transition, merge, Ready promotion or Owner acceptance is claimed.
+Formal remote evidence was observed on the exact initial submitted candidate head before this report-recording commit:
+
+- Draft PR [#206](https://github.com/Arvin-liu/when-systems-catch-fire/pull/206) is `OPEN + DRAFT`, with base `work/IGNITION-20260905-155@9bed8e42ee824fc0c0a10717b6163fe7052423e8` and initial candidate head `work/IGNITION-20260905-156@92f2a1f4bb04ba1fdf26901e767908f977a11b16`.
+- `foundation-validation` run `33967225384`, job `101309362262`, completed `success` with 49 completed steps.
+- `architecture-pages` run `33967225387`: build job `101309362294` completed `success`; deploy job `101309466377` was `skipped` because the PR is Draft.
+- `repository-path-accounting-preflight` run `33967225386`, job `101309362260`, completed `success`.
+- `q33-governance-validation` run `33967225481`, job `101309362401`, completed `success`.
+
+These remote observations are a separate evidence plane and cannot upgrade this report's research status. The commit that records these observations advances the formal branch; the resulting branch head and its own exact CI binding are recorded in the independent relay receipt. No full repository regression, Current transition, merge, Ready promotion or Owner acceptance is claimed.
 
 The stale 1111 pointers remain an explicit residual. The two invalidated freezes and their 57-violation first-run diagnostic are retained rather than erased. No post-final-freeze threshold, model definition, answer key or holdout-selection change was made.
 
