@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 646 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 649 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -1054,7 +1054,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-F29753586C28F9EC`
-- 关联断言：['NFC-2c87b81f18aa4929', 'NFC-8fa71c6c67c6c449', 'NFC-c3f93d8d30a6615a', 'NFC-d6438ba169ea4479', 'NFC-f1eed00833aaf221']
+- 关联断言：['NFC-2c87b81f18aa4929', 'NFC-8fa71c6c67c6c449', 'NFC-c3f93d8d30a6615a', 'NFC-ce5b5e084c3e3145', 'NFC-d6438ba169ea4479', 'NFC-f1eed00833aaf221']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -1086,6 +1086,22 @@
 
 - 状态：`ADDED`
 - Delta：`CD-67A15D7F22AA6EBB`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/cross-contract-failure-casebook-2026-09-05.md`
+
+- 状态：`ADDED`
+- Delta：`CD-6FEDA73AD0A92E35`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/cross-contract-historical-blind-test-2026-09-05.md`
+
+- 状态：`ADDED`
+- Delta：`CD-F66948587186B587`
 - 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
@@ -3335,6 +3351,14 @@
 - 状态：`ADDED`
 - Delta：`CD-406FF91CF5A2D28C`
 - 关联断言：['NFC-0423fcb1f50f1085', 'NFC-0794604d957a7023', 'NFC-0e980abf7e66502d', 'NFC-11e5f96bd8f81186', 'NFC-12f1aaa7c270babe', 'NFC-1fbfee10453cb8ee', 'NFC-39ff93d4ae1a1a2a', 'NFC-46d58a9af97f063f', 'NFC-5d0a5d9d58e10a28', 'NFC-7cf528ba41a82fd0', 'NFC-8c7833b6c4d30b8f', 'NFC-8eedb68d923135a0', 'NFC-9264dc95fde82010', 'NFC-9d8102b2511a0663', 'NFC-a658762685e446dc', 'NFC-bc9298cd1414fe3d', 'NFC-c599d37b562d103f', 'NFC-cf6b526e1468f05d', 'NFC-d67fa4f70540e270', 'NFC-dcf720e27f64cf37']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/governance/task-IGNITION-20260905-155.md`
+
+- 状态：`ADDED`
+- Delta：`CD-05A2F9197127A521`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

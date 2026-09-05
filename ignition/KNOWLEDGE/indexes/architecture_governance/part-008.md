@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Repository-local candidate state is `CURRENT` for all four capability names and boundaries across README, the expanded g](../../../reports/operations/121Q25-front-door-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-120e666f58917006 / Repository-local candidate state is `CURRENT` for all four capability names and boundaries across README, the expanded g
+  - 来源：`reports/operations/121Q25-front-door-audit.md`
+  - 依赖：—；被引用：—
 - [Repository-local validation reports implementation consistency and repository synchronization closure. It always reports](../../../reports/operations/121Q25B-whole-project-synchronization-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f3d864a3678e7e4d / Repository-local validation reports implementation consistency and repository synchronization closure. It always reports
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-7dfb814e756cfc91 / title: "D41充分条件归零验证"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D41；被引用：—
-- [title: "D69自举激活归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-44c28cf281e40796 / title: "D69自举激活归零验证"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D69；被引用：—

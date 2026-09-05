@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "已迁移的历史案例来源/0782-C-0787-和孩子聊热点事件.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-68bc6829da985a82 / link: "已迁移的历史案例来源/0782-C-0787-和孩子聊热点事件.md"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [link: "已迁移的历史案例来源/0783-C-0788-博士期间换十个选题.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-079a8b4df0a1177a / link: "已迁移的历史案例来源/0783-C-0788-博士期间换十个选题.md"
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9263f50f5c1a81fd / Repository objects cannot self-claim Accepted, Merged or Current or cite their own current HEAD as their validity premis
   - 来源：`docs/architecture/incremental-execution.md`
-  - 依赖：—；被引用：—
-- [Repository-local candidate state is `CURRENT` for all four capability names and boundaries across README, the expanded g](../../../reports/operations/121Q25-front-door-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-120e666f58917006 / Repository-local candidate state is `CURRENT` for all four capability names and boundaries across README, the expanded g
-  - 来源：`reports/operations/121Q25-front-door-audit.md`
   - 依赖：—；被引用：—

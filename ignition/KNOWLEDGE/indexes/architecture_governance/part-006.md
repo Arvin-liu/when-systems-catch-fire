@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [evidence_regimes（12 条）— 确认工程学证据制度范围](../../../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-56f8633d43c644e7 / evidence_regimes（12 条）— 确认工程学证据制度范围
+  - 来源：`outputs/audit/p1-collision-workflow-smoke-test-20260708.md`
+  - 依赖：—；被引用：—
 - [evidence_regimes（12 条，EVID-001~）](../../../docs/p1-machine-data-collision-workflow-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-5679e367f65c812c / evidence_regimes（12 条，EVID-001~）
@@ -2497,10 +2502,5 @@
 - [link: "已迁移的历史案例来源/0781-C-0786-写地方偏方、食物、手艺.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8a0fc202d323b8d4 / link: "已迁移的历史案例来源/0781-C-0786-写地方偏方、食物、手艺.md"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [link: "已迁移的历史案例来源/0782-C-0787-和孩子聊热点事件.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-68bc6829da985a82 / link: "已迁移的历史案例来源/0782-C-0787-和孩子聊热点事件.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "D69自举激活归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-44c28cf281e40796 / title: "D69自举激活归零验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D69；被引用：—
 - [title: "D86乘法归零验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fcc70954e8e552a7 / title: "D86乘法归零验证"
@@ -2497,10 +2502,5 @@
 - [\| \[C-595\]\( \) \| \[OrcaRouter多模型并行扇出验证\]\( \) \| OrcaRo](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-77adf9b59c1f0371 / \| \[C-595\]\( \) \| \[OrcaRouter多模型并行扇出验证\]\( \) \| OrcaRo
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-598\]\( \) \| \[单体模型到模型网络相变验证\]\( \) \| 性能突破来自模型网络编排，而不是单体模型继续堆参](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4126c23ce660fd8a / \| \[C-598\]\( \) \| \[单体模型到模型网络相变验证\]\( \) \| 性能突破来自模型网络编排，而不是单体模型继续堆参
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
