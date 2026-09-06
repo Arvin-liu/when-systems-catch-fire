@@ -1,0 +1,138 @@
+{
+  "allowed_primary_verdict_set": [
+    "NO_SEMANTIC_LEAP_DETECTED / CURRENT_BASIS_SURVIVES_THIS_TEST",
+    "REPRESENTATIONAL_LOCK_IN_SUPPORTED_AS_RESEARCH_FINDING",
+    "GENERATOR_LOCK_IN_SUPPORTED_AS_RESEARCH_FINDING",
+    "MIXED_LOCK_IN_SUPPORTED_AS_RESEARCH_FINDING",
+    "BASIS_REFACTOR_REQUIRED_AS_RESEARCH_CANDIDATE",
+    "NEW_AXIS_SUPPORTED_AS_RESEARCH_CANDIDATE",
+    "NON_CARTESIAN_REPRESENTATION_SUPPORTED_AS_RESEARCH_CANDIDATE",
+    "NEW_GENERATION_OPERATOR_SUPPORTED_AS_RESEARCH_CANDIDATE",
+    "META_PROTOCOL_REPLACEMENT_SUPPORTED_AS_RESEARCH_CANDIDATE",
+    "UNDERDETERMINED"
+  ],
+  "axis_disposition": "V/S/E-LIKE FACTORS REDISCOVERED; FAKE AXES REJECTED; NO NEW AXIS",
+  "basis_free_summary": {
+    "anonymous_factors": [
+      "BF-X01",
+      "BF-X02",
+      "BF-X03",
+      "BF-X04",
+      "BF-X05",
+      "BF-X06"
+    ],
+    "cognitive_independence": false,
+    "cross_pass_support": {
+      "BF-X01": 6,
+      "BF-X02": 6,
+      "BF-X03": 6,
+      "BF-X04": 6,
+      "BF-X05": 6,
+      "BF-X06": 6
+    },
+    "factor_support_across_packets": {
+      "BF-X01": 467,
+      "BF-X02": 687,
+      "BF-X03": 917,
+      "BF-X04": 1013,
+      "BF-X05": 574,
+      "BF-X06": 861
+    },
+    "factor_time_slice_count": {
+      "BF-X01": 2,
+      "BF-X02": 2,
+      "BF-X03": 2,
+      "BF-X04": 2,
+      "BF-X05": 2,
+      "BF-X06": 2
+    },
+    "factor_time_slices": {
+      "BF-X01": [
+        "2026-08",
+        "2026-09"
+      ],
+      "BF-X02": [
+        "2026-08",
+        "2026-09"
+      ],
+      "BF-X03": [
+        "2026-08",
+        "2026-09"
+      ],
+      "BF-X04": [
+        "2026-08",
+        "2026-09"
+      ],
+      "BF-X05": [
+        "2026-08",
+        "2026-09"
+      ],
+      "BF-X06": [
+        "2026-08",
+        "2026-09"
+      ]
+    },
+    "independent_corpus_family_count": 6,
+    "independent_pass_count": 6,
+    "interpretation": "Three factors recur as existing directional/relational/change lenses; evidence, authority and generation recur as cross-cutting metadata candidates. No independent semantic increment is established at discovery stage.",
+    "task_id": "IGNITION-20260907-160"
+  },
+  "candidate_count": 6,
+  "candidate_v2_pass_count": 0,
+  "claim_ceiling": "RESEARCH_ONLY / repository-local evidence; no canonical, lifecycle, production, external-truth, Owner or epistemic acceptance",
+  "competing_basis_disposition": "NO_MODEL_MEETS_NEW_BASIS_CANDIDATE_THRESHOLD",
+  "generator_plasticity_disposition": "GENERATOR_LOCK_IN_SUPPORTED_AS_RESEARCH_FINDING",
+  "historical_64_absorption": "DESCRIPTIVE_ONLY_WITHOUT_GENERATIVE_SUBSUMPTION",
+  "lifecycle_ceiling": "OPEN + DRAFT; NO READY / MERGE / CURRENT",
+  "new_supported_candidate_count": 0,
+  "new_supported_candidate_types": [],
+  "primary_verdict": "MIXED_LOCK_IN_SUPPORTED_AS_RESEARCH_FINDING",
+  "residual_top_findings": [
+    {
+      "count": 650,
+      "family": "transition-over-state"
+    },
+    {
+      "count": 179,
+      "family": "evidence-authority-cross-cut"
+    },
+    {
+      "count": 121,
+      "family": "cross-object-binding"
+    },
+    {
+      "count": 34,
+      "family": "unexplained-by-current-factor-lens"
+    },
+    {
+      "count": 16,
+      "family": "generator-projection-feedback"
+    }
+  ],
+  "shadow_mutator_disposition": "DISTINGUISHES_NULL_CONTROLS_AND_REPLAYS_HISTORICAL_CONTROLS; DOES NOT SELF-DECLARE LEAP",
+  "task_id": "IGNITION-20260907-160",
+  "unresolved_residuals": [
+    "cognitive independence",
+    "external truth",
+    "independent human adjudication",
+    "full semantic model judgment"
+  ],
+  "v2_replay": {
+    "clean_clone": {
+      "clean_before_run": true,
+      "clone_head": "76e44213904928f9f0be8ba131b86529e44e7682",
+      "clone_source": "https://github.com/Arvin-liu/when-systems-catch-fire.git",
+      "post_run_status": "",
+      "run1_run2_byte_identical": true,
+      "run1_sha256": "9215aebb5d6aa1509eb943104cecefdaf2aa0a17071f96b8b8b6b45f6d33abeb",
+      "run2_sha256": "9215aebb5d6aa1509eb943104cecefdaf2aa0a17071f96b8b8b6b45f6d33abeb"
+    },
+    "historical_positive_consistency": true,
+    "n02_n03_preserved_non_leap": true,
+    "source_head": "76e44213904928f9f0be8ba131b86529e44e7682",
+    "status": "V2_REPLAY_STABLE",
+    "task159_local_run1_sha256": "9215aebb5d6aa1509eb943104cecefdaf2aa0a17071f96b8b8b6b45f6d33abeb",
+    "task159_local_run2_sha256": "9215aebb5d6aa1509eb943104cecefdaf2aa0a17071f96b8b8b6b45f6d33abeb",
+    "task_id": "IGNITION-20260907-160"
+  }
+}

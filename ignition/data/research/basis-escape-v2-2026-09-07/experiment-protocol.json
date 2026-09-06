@@ -1,0 +1,55 @@
+{
+  "blinding": "DATA_LEVEL_BLIND / NOT_COGNITIVELY_INDEPENDENT",
+  "candidate_gate": {
+    "ablation_loss_required": true,
+    "challenger_must_fail": true,
+    "engineering_false_positive_ceiling": 0,
+    "minimum_independent_families": 3,
+    "minimum_time_slices": 2,
+    "mixed_holdout_required": true,
+    "v2_must_pass": true
+  },
+  "comparison_metrics": [
+    "semantic_expressibility",
+    "lossless_coverage",
+    "holdout_residual_burden",
+    "exception_count",
+    "family_recurrence",
+    "question_language_gain",
+    "new_falsifier_gain",
+    "generative_operator_gain",
+    "ablation_loss",
+    "migration_challenger",
+    "complexity",
+    "transfer_stability",
+    "C7_false_positive_burden"
+  ],
+  "formal_base": {
+    "ref": "work/IGNITION-20260907-159",
+    "sha_at_freeze": "76e44213904928f9f0be8ba131b86529e44e7682"
+  },
+  "frozen_order": [
+    "hypotheses",
+    "corpus_universe",
+    "exclusions",
+    "sanitization",
+    "split",
+    "candidate_gate",
+    "v2_calling",
+    "metrics",
+    "verdict_rules"
+  ],
+  "mode": "BASIS_ESCAPE_V2 / META_LEVEL_PLASTICITY / BASIS_FREE_INDUCTION / COUNTERFACTUAL_ABSORPTION / RESIDUAL_CLUSTERING / COMPETING_BASIS / RESEARCH_ONLY",
+  "no_live_external_action": true,
+  "no_production_mutation": true,
+  "schema_version": "ignition-160-basis-escape-v2-protocol-r1",
+  "source_command": {
+    "commit": "f6fc4438e711e928cce29d07ed54b7395434b7c8",
+    "content_sha256": "e8155ff841bf4ee95eafddd4f5b2e081890e73a08c364011cd7108ae564b23d0",
+    "git_blob_sha": "57aeb34cc5fea2202bd87e5998bd7851f7753a9f",
+    "path": "agent-commands/IGNITION-20260907-160.md",
+    "repository": "Arvin-liu/1111"
+  },
+  "task_id": "IGNITION-20260907-160",
+  "v2_criteria_source": "Task159 frozen semantic-leap-signature-v2.json; L1-L6 and challenger priority unchanged"
+}

@@ -1,0 +1,8 @@
+{
+  "candidate_v2_pass_count": 0,
+  "formal_base": "76e44213904928f9f0be8ba131b86529e44e7682",
+  "new_supported_candidate_count": 0,
+  "primary_verdict": "MIXED_LOCK_IN_SUPPORTED_AS_RESEARCH_FINDING",
+  "state": "OPEN_DRAFT_RESEARCH_COMPLETE_PENDING_REMOTE_CI_AND_INDEPENDENT_1111_RECEIPT",
+  "task_id": "IGNITION-20260907-160"
+}
