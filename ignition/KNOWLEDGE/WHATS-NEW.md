@@ -4,6 +4,69 @@
 
 ## 2026
 
+<a id="change-src-hr-ea13f7ea325dac81"></a>
+### 2026-09-06 · Historical Basis-Leaps Reconstruction — IGNITION-20260906-158
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: research-only; DETECTORNOTVALIDATED / UNDERDETERMINED; no canonical, production, authority, capability, lifecycle, external-truth, or Owner-acceptance change.
+- **来源：** [ignition-historical-basis-leaps-reconstruction-2026-09-06.md](../docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md)
+- **资产卡：** [HR-EA13F7EA325DAC81](./ASSET-CARDS.md#asset-hr-ea13f7ea325dac81)
+
+<a id="change-src-hr-dc27e4d07f0cf3f5"></a>
+### 2026-09-06 · Task report IGNITION-20260906-158
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Completion state at local analysis: PENDINGDRAFTANDREMOTECI.
+- **来源：** [task-IGNITION-20260906-158.md](../reports/governance/task-IGNITION-20260906-158.md)
+- **资产卡：** [HR-DC27E4D07F0CF3F5](./ASSET-CARDS.md#asset-hr-dc27e4d07f0cf3f5)
+
+<a id="change-src-hr-d88fd2b435abc1cd"></a>
+### 2026-09-06 · Generator Plasticity Audit — IGNITION-20260906-158
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
+- **变化：** Status: research-only audit. The phrase GENERATORLOCKINSUPPORTEDASRESEARCHFINDING is retained inside the bounded machine audit, but it is not a validated causal verdict because the historical detector failed its pre-registered negative holdout.
+- **来源：** [ignition-generator-plasticity-audit-2026-09-06.md](../docs/governance/ignition-generator-plasticity-audit-2026-09-06.md)
+- **资产卡：** [HR-D88FD2B435ABC1CD](./ASSET-CARDS.md#asset-hr-d88fd2b435abc1cd)
+
+<a id="change-src-hr-c2813f07a6d9b6ac"></a>
+### 2026-09-06 · IGNITION-20260906-158 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** status: PENDINGDRAFTANDREMOTECI verdict: DETECTORNOTVALIDATED / UNDERDETERMINED formalbase: 212322d41db79bce2dbd116166d3f1ad226291f3 commandblobsha: 918dce85cc18f6e653422b162c593af6b33d60a8 commandcontentsha256: 513146ae504d794d6a1440c86b3d534d6ed0ba90f4e12c4946a943682461c8f9
+- **来源：** [IGNITION-20260906-158-result.md](../agent-results/IGNITION-20260906-158-result.md)
+- **资产卡：** [HR-C2813F07A6D9B6AC](./ASSET-CARDS.md#asset-hr-c2813f07a6d9b6ac)
+
+<a id="change-src-hr-70a0b0d3dd83948a"></a>
+### 2026-09-06 · Representation Residual Casebook — IGNITION-20260906-158
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** The entries below are repeated research residuals observed while comparing the existing static representation, repository generators, and historical controls. A residual family is a review lens, not a canonical failure class, schema, obligation, or production requirement.
+- **来源：** [representation-residual-casebook-2026-09-06.md](../docs/governance/representation-residual-casebook-2026-09-06.md)
+- **资产卡：** [HR-70A0B0D3DD83948A](./ASSET-CARDS.md#asset-hr-70a0b0d3dd83948a)
+
+<a id="change-src-hr-69f642bbe7b8fc10"></a>
+### 2026-09-06 · Meta-Protocol 64 Basis-Escape Experiment — IGNITION-20260906-158
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This is a frozen research protocol and replay record. It is not a new meta-protocol, schema, registry, validator, runtime capability, or canonical layer.
+- **来源：** [meta-protocol-64-basis-escape-experiment-2026-09-06.md](../docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md)
+- **资产卡：** [HR-69F642BBE7B8FC10](./ASSET-CARDS.md#asset-hr-69f642bbe7b8fc10)
+
+<a id="change-src-hr-2cd469bfb4cab0c7"></a>
+### 2026-09-06 · Basis Competition and Next-Leap Assessment — IGNITION-20260906-158
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This is a comparative research assessment, not an authorization to replace the current basis or create a successor task.
+- **来源：** [basis-competition-and-next-leap-assessment-2026-09-06.md](../docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md)
+- **资产卡：** [HR-2CD469BFB4CAB0C7](./ASSET-CARDS.md#asset-hr-2cd469bfb4cab0c7)
+
 <a id="change-src-hr-eabed7bd3564479d"></a>
 ### 2026-08-29 · IGNITION-20260829-148 typed change-propagation impact report
 

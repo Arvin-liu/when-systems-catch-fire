@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def _unsigned_dict\(self\) -> dict\[str, Any\]:](../../../agent_federation/contracts.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B3260688335BF800 / def _unsigned_dict\(self\) -> dict\[str, Any\]: / IMPLICIT-B3260688335BF800 / IMPLICIT-5DA964F908072D5A
+  - 来源：`agent_federation/contracts.py`
+  - 依赖：—；被引用：—
 - [def _unsigned_dict\(self\) -> dict\[str, Any\]:](../../../agent_federation/live_validation.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-EF47DB1C90FED315 / def _unsigned_dict\(self\) -> dict\[str, Any\]: / IMPLICIT-EF47DB1C90FED315 / IMPLICIT-5DA964F908072D5A
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-48041433C8C313DA / def success\(self\) -> bool: / IMPLICIT-48041433C8C313DA / IMPLICIT-CE3EF52547B95860
   - 来源：`agent_federation/live_execution.py`
-  - 依赖：—；被引用：—
-- [def success\(self\) -> bool:](../../../agent_federation/live_task137.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-CE3EF52547B95860 / def success\(self\) -> bool: / IMPLICIT-CE3EF52547B95860 / IMPLICIT-48041433C8C313DA
-  - 来源：`agent_federation/live_task137.py`
   - 依赖：—；被引用：—
