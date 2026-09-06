@@ -1,0 +1,137 @@
+{
+  "frozen_before_holdout_scoring": true,
+  "post_freeze_additions": 0,
+  "predicates": [
+    {
+      "family": "F1",
+      "id": "ml.f1.claim_action_ref",
+      "kind": "ref_equal",
+      "left": "action.claim_ref",
+      "right": "claim.object_id"
+    },
+    {
+      "family": "F1",
+      "field": "scope",
+      "id": "ml.f1.claim_action_scope",
+      "kind": "binding_field_equal",
+      "nodes": [
+        "claim",
+        "action"
+      ]
+    },
+    {
+      "family": "F2",
+      "field": "scope",
+      "id": "ml.f2.approval_scope",
+      "kind": "binding_field_equal",
+      "nodes": [
+        "approval",
+        "action"
+      ]
+    },
+    {
+      "family": "F3",
+      "field": "lifecycle_epoch",
+      "id": "ml.f3.epoch_projection",
+      "kind": "binding_field_equal",
+      "nodes": [
+        "claim",
+        "projection"
+      ]
+    },
+    {
+      "family": "F3",
+      "field": "lifecycle_epoch",
+      "id": "ml.f3.epoch_admission",
+      "kind": "binding_field_equal",
+      "nodes": [
+        "claim",
+        "admission"
+      ]
+    },
+    {
+      "family": "F3",
+      "field": "lifecycle_epoch",
+      "id": "ml.f3.epoch_release",
+      "kind": "binding_field_equal",
+      "nodes": [
+        "claim",
+        "release"
+      ]
+    },
+    {
+      "family": "F4",
+      "id": "ml.f4.base_delta_scope",
+      "kind": "scope_equal_unless_isolated",
+      "nodes": [
+        "base",
+        "delta"
+      ]
+    },
+    {
+      "family": "F5",
+      "id": "ml.f5.source_identity_ref",
+      "kind": "ref_equal",
+      "left": "source.identity_ref",
+      "right": "identity.object_id"
+    },
+    {
+      "family": "F5",
+      "id": "ml.f5.projection_surface_ref",
+      "kind": "ref_equal",
+      "left": "surface.projection_ref",
+      "right": "projection.object_id"
+    },
+    {
+      "family": "F5",
+      "field": "lifecycle_epoch",
+      "id": "ml.f5.surface_epoch",
+      "kind": "binding_field_equal",
+      "nodes": [
+        "claim",
+        "surface"
+      ]
+    },
+    {
+      "family": "F6",
+      "id": "ml.f6.release_admission_ref",
+      "kind": "ref_equal",
+      "left": "release.admission_ref",
+      "right": "admission.object_id"
+    },
+    {
+      "family": "F6",
+      "id": "ml.f6.provider_reference",
+      "kind": "ref_equal",
+      "left": "admission.provider_ref",
+      "right": "provider.object_id"
+    },
+    {
+      "family": "F6",
+      "id": "ml.f6.provider_current",
+      "kind": "provider_current"
+    },
+    {
+      "family": "F7",
+      "id": "ml.f7.owner_ref",
+      "kind": "ref_equal",
+      "left": "obligation.owner_ref",
+      "right": "owner.object_id"
+    },
+    {
+      "family": "F7",
+      "id": "ml.f7.observer_ref",
+      "kind": "ref_equal",
+      "left": "obligation.observer_ref",
+      "right": "observer.object_id"
+    },
+    {
+      "family": "F7",
+      "id": "ml.f7.rollback",
+      "kind": "rollback_contract"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "shared_junction_helper": false,
+  "task_id": "IGNITION-20260906-157"
+}

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [下表把当前路径、primitive 能做的工作与不能自动解决的部分分开。`priority` 不是普遍 precedence；当前 OS Steering 已明确在不可比时保留候选、理由、reconciliation 与 human rev](../../../docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1340579f7838a376 / 下表把当前路径、primitive 能做的工作与不能自动解决的部分分开。`priority` 不是普遍 precedence；当前 OS Steering 已明确在不可比时保留候选、理由、reconciliation 与 human rev
+  - 来源：`docs/governance/more-meta-foundations-adversarial-audit-2026-09-04.md`
+  - 依赖：—；被引用：—
 - [不主张 Human Owner 单独足以保证证据、理解、同意、正确性、可逆性或公平后果；](../../../docs/governance/more-meta-foundations-synthesis-2026-09-04.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-c07aca54f9a7bd33 / 不主张 Human Owner 单独足以保证证据、理解、同意、正确性、可逆性或公平后果；
@@ -2497,10 +2502,5 @@
 - [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-89a3629e36d68194 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a6410668481b8eb2 / 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

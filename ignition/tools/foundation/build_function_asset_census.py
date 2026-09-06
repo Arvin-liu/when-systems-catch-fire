@@ -74,6 +74,9 @@ GENERATED_PREFIXES = (
     "data/research/cross-contract-blind-test-2026-09-05/",
     # Task156 prospective fixture corpus is likewise research-only evidence.
     "data/research/cross-contract-prospective-fixtures-2026-09-05/",
+    # Task157 junction-vs-local-predicates corpus is bounded research-only
+    # evidence and must not feed the canonical function-asset census.
+    "data/research/junction-vs-local-predicates-2026-09-06/",
     # Task141 live-state semantics and structured-result receipts are
     # provenance-only operation records. They must not become function-asset
     # discovery input or make the census depend on receipt wording/order.
@@ -205,6 +208,15 @@ GENERATED_EXACT_PATHS = {
     "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-156.md",
     "agent-results/IGNITION-20260905-156-result.md",
+    # Task157 research harness, narrative records and result are bounded
+    # evidence, not function-asset discovery sources.
+    "tools/research/junction_vs_local_predicates_task157.py",
+    "tests/test_junction_vs_local_predicates_task157.py",
+    "docs/governance/junction-invariant-vs-local-predicates-competition-2026-09-06.md",
+    "docs/governance/junction-binding-minimality-and-maintenance-2026-09-06.md",
+    "docs/governance/junction-vs-local-predicates-casebook-2026-09-06.md",
+    "reports/governance/task-IGNITION-20260906-157.md",
+    "agent-results/IGNITION-20260906-157-result.md",
 }
 SCANNER_VERSION = "2.0.0"
 SNAPSHOT = "function-census-v2-20260729"

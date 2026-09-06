@@ -1,0 +1,59 @@
+{
+  "candidate_id": "MJ-T157-typed-existing-fields-v1",
+  "existing_fields_only": true,
+  "new_authority_state": false,
+  "new_capability": false,
+  "new_lifecycle_state": false,
+  "new_truth_state": false,
+  "relation_groups": [
+    [
+      "claim",
+      "source",
+      "identity",
+      "projection",
+      "surface",
+      "release",
+      "admission"
+    ],
+    [
+      "claim",
+      "action"
+    ],
+    [
+      "approval",
+      "action"
+    ],
+    [
+      "base",
+      "delta"
+    ],
+    [
+      "effect",
+      "obligation",
+      "owner",
+      "observer",
+      "rollback"
+    ],
+    [
+      "release",
+      "admission",
+      "provider"
+    ]
+  ],
+  "research_only": true,
+  "schema_version": "1.0.0",
+  "strict_digest_only": false,
+  "tuple_dimensions": [
+    "subject_id",
+    "version",
+    "scope",
+    "lifecycle_epoch"
+  ],
+  "typed_compatibility": {
+    "lifecycle_epoch": "exact",
+    "scope": "exact",
+    "subject_id": "exact",
+    "surface_revision": "delay_allowed_only_at_existing_boundary",
+    "version": "exact_or_predeclared_v1_to_v2_transition"
+  }
+}

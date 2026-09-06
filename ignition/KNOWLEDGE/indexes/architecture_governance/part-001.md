@@ -2369,6 +2369,11 @@
   - 可搜索名称：NFC-6974325bcde7d0df / \[item\["artifact_id"\] for item in case\["artifact_refs"\]\],
   - 来源：`reos_vnext/kernel.py`
   - 依赖：—；被引用：—
+- [\[junction-invariant-vs-local-predicates-competition-2026-09-06.md\]\(./junction-invariant-vs-local-predicates-competition-](../../../docs/governance/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-48dcd156642a1573 / \[junction-invariant-vs-local-predicates-competition-2026-09-06.md\]\(./junction-invariant-vs-local-predicates-competition-
+  - 来源：`docs/governance/README.md`
+  - 依赖：—；被引用：—
 - [\[Lee, Scheinberg, and Agrawal, “Do Language Models Show Structural Priming Across Different Domains?”\]\(https://aclanthol](../../../docs/architecture/esi-literature-boundary-r0.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b28d0fe8dc2dd771 / \[Lee, Scheinberg, and Agrawal, “Do Language Models Show Structural Priming Across Different Domains?”\]\(https://aclanthol
@@ -2497,10 +2502,5 @@
 - [_issue\(issues, "ARTIFACT_IDENTITY", f"{item_path}.sha256", "artifact must carry a sha256 identity"\)](../../../reos_vnext/validation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6ee170888ceea6e1 / _issue\(issues, "ARTIFACT_IDENTITY", f"{item_path}.sha256", "artifact must carry a sha256 identity"\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_issue\(issues, "ARTIFACT_PROVENANCE", f"{item_path}.provenance", "artifact provenance is required"\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-003960da26e472ee / _issue\(issues, "ARTIFACT_PROVENANCE", f"{item_path}.provenance", "artifact provenance is required"\)
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—

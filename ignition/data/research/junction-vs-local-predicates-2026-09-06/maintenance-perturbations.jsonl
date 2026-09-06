@@ -1,0 +1,8 @@
+{"id":"P01","junction_adapters_affected":1,"local_sites_affected":3,"perturbation":"add_lifecycle_epoch_field"}
+{"id":"P02","junction_adapters_affected":1,"local_sites_affected":2,"perturbation":"rename_projection_surface_reference"}
+{"id":"P03","junction_adapters_affected":1,"local_sites_affected":1,"perturbation":"add_new_release_admission_consumer"}
+{"id":"P04","junction_adapters_affected":1,"local_sites_affected":2,"perturbation":"valid_v1_to_v2_migration"}
+{"id":"P05","junction_adapters_affected":1,"local_sites_affected":4,"perturbation":"new_multi_hop_family"}
+{"id":"P06","junction_adapters_affected":0,"local_sites_affected":1,"perturbation":"local_rule_drift_at_one_site"}
+{"id":"P07","junction_adapters_affected":1,"local_sites_affected":2,"perturbation":"scope_isolation_exception"}
+{"id":"P08","junction_adapters_affected":1,"local_sites_affected":2,"perturbation":"reconciliation_owner_reference"}

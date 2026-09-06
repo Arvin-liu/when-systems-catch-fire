@@ -1,0 +1,73 @@
+{
+  "base_commit": "ad0e8f3e6c80eee5f27d05bd4b29653b2d936aae",
+  "blind_scoring": {
+    "byte_identical_required": true,
+    "forbidden_inputs": [
+      "answer-key.jsonl",
+      "results.jsonl",
+      "metrics.json",
+      "post_outcome_evidence"
+    ],
+    "input_files": [
+      "blind-packets.jsonl",
+      "model-definitions.json",
+      "local-predicate-registry-research.json",
+      "junction-candidate.json"
+    ],
+    "passes_required": 2,
+    "scorer_output_fields": [
+      "fixture_id",
+      "model_id",
+      "decision",
+      "reason_code",
+      "references",
+      "predicate_ids",
+      "actionability",
+      "bounded_confidence"
+    ]
+  },
+  "boundary": "Research-only synthetic fixture evidence. No production validator, gate, runtime, authority, capability, lifecycle or canonical-layer change.",
+  "controls": [
+    "valid_upgrade",
+    "same_digest_distinct_tuple",
+    "allowed_surface_delay",
+    "fail_closed_abstention",
+    "no_safe_alternative",
+    "irreversible_correct_charter",
+    "valid_signer_no_concrete_defect",
+    "irrelevant_evidence",
+    "label_only",
+    "alias_migration",
+    "base_delta_isolated",
+    "unknown_contract"
+  ],
+  "corpus": {
+    "calibration_pairs": 48,
+    "families": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8"
+    ],
+    "family_count": 8,
+    "holdout_in_family_pairs": 24,
+    "holdout_transfer_pairs": 24,
+    "instances": 192,
+    "minimum_holdout_pairs": 36,
+    "minimum_transfer_pairs": 15,
+    "pair_members_stay_together": true,
+    "pairs": 96
+  },
+  "schema_version": "1.0.0",
+  "splits": {
+    "calibration": "first six deterministic pairs per family",
+    "holdout_in_family": "pairs seven through nine per family",
+    "holdout_transfer": "pairs ten through twelve per family with novel composition",
+    "new_ml_predicates_after_freeze": false
+  },
+  "task_id": "IGNITION-20260906-157"
+}

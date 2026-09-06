@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Claim ceiling: this audit establishes only a source-bounded repository baseline and requirement rebase. It does not esta](../../../reports/operations/ignition-127-step00-rebase-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6265dcb043856241 / Claim ceiling: this audit establishes only a source-bounded repository baseline and requirement rebase. It does not esta
+  - 来源：`reports/operations/ignition-127-step00-rebase-audit.md`
+  - 依赖：—；被引用：—
 - [Claim ceiling: this audit records repository-local baseline evidence only. It](../../../reports/operations/ignition-137-step00-baseline-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9ad103c39a99509d / Claim ceiling: this audit records repository-local baseline evidence only. It
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-A690AEC87491F0F2 / def _strings\(values: Sequence\[str\], field: str\) -> tuple\[str, ...\]: / IMPLICIT-A690AEC87491F0F2
   - 来源：`agent_federation/convergence.py`
-  - 依赖：—；被引用：—
-- [def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]:](../../../agent_federation/contracts.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-13A16F3F80BC03CB / def _strings\(values: Sequence\[str\], field: str, *, nonempty: bool = False\) -> tuple\[str, ...\]: / IMPLICIT-13A16F3F80BC03CB / IMPLICIT-4203A5B6669F05B9
-  - 来源：`agent_federation/contracts.py`
   - 依赖：—；被引用：—

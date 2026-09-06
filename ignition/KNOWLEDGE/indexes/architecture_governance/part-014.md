@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [本登记表不替代外部学科证据；](../../../docs/pending_claims_register.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5720edfa9588488f / 本登记表不替代外部学科证据；
+  - 来源：`docs/pending_claims_register.md`
+  - 依赖：—；被引用：—
 - [本目录是 22 本书籍验证案例的**候选暂存**，不直接进入历史案例来源。](../../../outputs/book-collisions/20260709-22-book-validation/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd5880b4ac4a470b / 本目录是 22 本书籍验证案例的**候选暂存**，不直接进入历史案例来源。
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a4766ee42204efbe / 跨语言比较需要一个共同参照，却不能假装存在完全中性的语言外中介。本项目使用 `normalized_meaning_candidate`：它是一条有 provenance、有版本、可被反驳的比较候选。新证据或母语审校者可以修改它，旧版本仍保
   - 来源：`docs/language-thought/translation-and-residue.md`
-  - 依赖：—；被引用：—
-- [路径依赖分化验证](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2aa9ee7b66e1aad7 / 路径依赖分化验证
-  - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—

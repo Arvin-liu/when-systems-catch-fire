@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 653 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 657 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -1054,7 +1054,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-F29753586C28F9EC`
-- 关联断言：['NFC-2c87b81f18aa4929', 'NFC-6ad8ed2ad32a8905', 'NFC-8fa71c6c67c6c449', 'NFC-aa96bdc3259293b9', 'NFC-c3f93d8d30a6615a', 'NFC-ce5b5e084c3e3145', 'NFC-d6438ba169ea4479', 'NFC-f1eed00833aaf221']
+- 关联断言：['NFC-2c87b81f18aa4929', 'NFC-48dcd156642a1573', 'NFC-6ad8ed2ad32a8905', 'NFC-8fa71c6c67c6c449', 'NFC-aa96bdc3259293b9', 'NFC-c3f93d8d30a6615a', 'NFC-ce5b5e084c3e3145', 'NFC-d6438ba169ea4479', 'NFC-f1eed00833aaf221']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -1146,10 +1146,34 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/governance/junction-binding-minimality-and-maintenance-2026-09-06.md`
+
+- 状态：`ADDED`
+- Delta：`CD-4A6AD5DF1F95EE7C`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/governance/junction-invariant-candidate-assessment-2026-09-05.md`
 
 - 状态：`ADDED`
 - Delta：`CD-50F536B540C5DE3C`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/junction-invariant-vs-local-predicates-competition-2026-09-06.md`
+
+- 状态：`ADDED`
+- Delta：`CD-EB317BA7F7BA335C`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/junction-vs-local-predicates-casebook-2026-09-06.md`
+
+- 状态：`ADDED`
+- Delta：`CD-CE8E23F0155FD25A`
 - 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
@@ -3390,6 +3414,14 @@
 
 - 状态：`ADDED`
 - Delta：`CD-3F5B2483D9080AF0`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/governance/task-IGNITION-20260906-157.md`
+
+- 状态：`ADDED`
+- Delta：`CD-EFBF3CB8A34FB335`
 - 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
