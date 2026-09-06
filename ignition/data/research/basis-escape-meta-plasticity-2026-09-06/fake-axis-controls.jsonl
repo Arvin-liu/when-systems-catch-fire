@@ -1,0 +1,2 @@
+{"construction":"deterministic extension bucket","disposition":"SURFACE_CORRELATE_REJECTED","fake_axis":"file_extension","reason":"explains repository packaging but not cross-family residuals","selected_as_basis":false}
+{"construction":"stable hash bucket","disposition":"RANDOM_CONTROL_REJECTED","fake_axis":"sha256_mod_4","reason":"no causal or cross-family residual compression","selected_as_basis":false}

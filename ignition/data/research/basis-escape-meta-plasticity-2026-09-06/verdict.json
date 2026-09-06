@@ -1,0 +1,91 @@
+{
+  "allowed_primary_verdict_set": [
+    "TRUE_EPISTEMIC_FIXED_POINT",
+    "REPRESENTATIONAL_LOCK_IN",
+    "GENERATOR_LOCK_IN",
+    "MIXED_REPRESENTATIONAL_AND_GENERATOR_LOCK_IN",
+    "BASIS_REFACTOR_REQUIRED",
+    "NEW_AXIS_CANDIDATE",
+    "NEW_GENERATION_OPERATOR_CANDIDATE",
+    "META_PROTOCOL_REPLACEMENT_CANDIDATE",
+    "DETECTOR_NOT_VALIDATED",
+    "UNDERDETERMINED"
+  ],
+  "authority_status": "NO_AUTHORITY_OR_CAPABILITY_CHANGE",
+  "basis_free_rediscovery": {
+    "cognitive_independence": false,
+    "cross_family_factors": [
+      "authority_agency",
+      "evidence_grounding",
+      "generation_validation",
+      "normative_direction",
+      "relational_boundary",
+      "temporal_change"
+    ],
+    "factor_support_across_all_files": {
+      "authority_agency": 1500,
+      "evidence_grounding": 1792,
+      "generation_validation": 1508,
+      "normative_direction": 806,
+      "relational_boundary": 1261,
+      "temporal_change": 1810
+    },
+    "independent_family_count": 5,
+    "interpretation": "Repeated V/S/E-like factors recur, but evidence/authority/provenance/generation factors are cross-cutting and not established as an independent fourth axis.",
+    "non_vse_cross_family": [
+      "authority_agency",
+      "evidence_grounding",
+      "generation_validation"
+    ],
+    "rediscovered_vse_like": [
+      "normative_direction",
+      "relational_boundary",
+      "temporal_change"
+    ],
+    "task_id": "IGNITION-20260906-158"
+  },
+  "caveats": [
+    "The same Codex process produced detector, answer key and unblind analysis; cognitive independence is not claimed.",
+    "Historical control selection is purposeful and not a population estimate.",
+    "Counterfactual 64 absorption is a bounded review proxy, not a replay of an actually available historical reviewer.",
+    "Task153-157 artifacts were excluded from basis-free induction and used only as late comparison context.",
+    "Mandatory stop condition triggered: negative holdout false positive exceeded the frozen ceiling, so current-lock-in claims are downgraded to descriptive evidence."
+  ],
+  "detector_validation": {
+    "caveat": "The detector reads Git trigger material and is data-level blind only; it is not cognitive independence.",
+    "detector_validated": false,
+    "dimensions": [
+      "representation_change",
+      "compression_or_reinterpretation",
+      "generator_mutation",
+      "ontology_mutation",
+      "new_falsifiers",
+      "irreducibility_from_ordinary_extension"
+    ],
+    "holdout": {
+      "negative_false_positives": 1,
+      "negative_total": 2,
+      "positive_detected": 2,
+      "positive_total": 2
+    },
+    "name": "HISTORICAL_LEAP_SIGNATURE_V1",
+    "negative_controls_flagged": 2,
+    "negative_controls_total": 4,
+    "operational_proxy": "representation_change AND ontology_mutation AND (generator_mutation OR backward_reinterpretation)",
+    "positive_controls_detected": 4,
+    "positive_controls_total": 4,
+    "status": "RESEARCH_ONLY_FROZEN_AFTER_REPLAY"
+  },
+  "epistemic_status": "RESEARCH_ONLY / NOT_EPISTEMICALLY_ACCEPTED",
+  "h1": "not adjudicated: the historical detector failed its pre-registered negative holdout gate",
+  "h2": "descriptive-only signal: the bounded 64-enabled proxy absorbs some operation differences, but this cannot support a lock-in claim while the detector is unvalidated",
+  "h3": "descriptive-only signal: the current default pipeline has no obvious basis-mutation route, but generator lock-in is not a validated causal verdict",
+  "h4": "not adjudicated: mixed-lock-in selection is prohibited by the detector stop condition",
+  "lifecycle_ceiling": "OPEN_DRAFT_REVIEW_PENDING",
+  "meta_protocol_replacement_candidate": false,
+  "new_axis_candidate": false,
+  "new_generation_operator_candidate": false,
+  "primary_verdict": "DETECTOR_NOT_VALIDATED",
+  "secondary_verdict": "UNDERDETERMINED",
+  "task_id": "IGNITION-20260906-158"
+}

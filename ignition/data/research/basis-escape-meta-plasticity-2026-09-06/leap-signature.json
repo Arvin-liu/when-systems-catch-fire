@@ -1,0 +1,25 @@
+{
+  "caveat": "The detector reads Git trigger material and is data-level blind only; it is not cognitive independence.",
+  "detector_validated": false,
+  "dimensions": [
+    "representation_change",
+    "compression_or_reinterpretation",
+    "generator_mutation",
+    "ontology_mutation",
+    "new_falsifiers",
+    "irreducibility_from_ordinary_extension"
+  ],
+  "holdout": {
+    "negative_false_positives": 1,
+    "negative_total": 2,
+    "positive_detected": 2,
+    "positive_total": 2
+  },
+  "name": "HISTORICAL_LEAP_SIGNATURE_V1",
+  "negative_controls_flagged": 2,
+  "negative_controls_total": 4,
+  "operational_proxy": "representation_change AND ontology_mutation AND (generator_mutation OR backward_reinterpretation)",
+  "positive_controls_detected": 4,
+  "positive_controls_total": 4,
+  "status": "RESEARCH_ONLY_FROZEN_AFTER_REPLAY"
+}

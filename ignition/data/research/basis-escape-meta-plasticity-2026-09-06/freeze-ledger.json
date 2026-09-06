@@ -1,5 +1,6 @@
 {
-  "answer_key_present": false,
+  "answer_key_present": true,
+  "answer_key_sha256": "91c7afd9b7176c2a4b174b5e44280625a2f2381e970ca9e24e440aa895904b25",
   "blind_output_sha256": "071a7dd963242b6e24df114156e9128b62c87923375595db0e9bb64d06267b50",
   "command_blob_sha": "918dce85cc18f6e653422b162c593af6b33d60a8",
   "command_content_sha256": "513146ae504d794d6a1440c86b3d534d6ed0ba90f4e12c4946a943682461c8f9",
@@ -9,6 +10,7 @@
   "invalidations": [],
   "negative_count": 4,
   "positive_count": 4,
-  "status": "BLIND_OUTPUTS_EMITTED",
-  "task_id": "IGNITION-20260906-158"
+  "status": "UNBLINDED_AND_ANALYSIS_READY",
+  "task_id": "IGNITION-20260906-158",
+  "unblind_result_sha256": "a54de4802103f53f72264b04f3c2038b18e0bfddc52cbd7d2b9b53948347637c"
 }

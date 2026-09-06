@@ -52,7 +52,9 @@ FAMILY_RULES = {
 FORBIDDEN_BASIS_INPUT = re.compile(
     r"(?:meta-protocol|protocols-canonical|(?:^|[-_/])64(?:[-_/]|$)|"
     r"(?:^|[-_/])V[1-4](?:[-_/]|$)|(?:^|[-_/])S[1-4](?:[-_/]|$)|"
-    r"(?:^|[-_/])E[1-4](?:[-_/]|$)|IGNITION-2026090[4-6]-15[3-7])",
+    r"(?:^|[-_/])E[1-4](?:[-_/]|$)|IGNITION-2026090[4-6]-15[3-7]|"
+    r"(?:^|/)tools/research/|(?:^|/)data/research/|"
+    r"IGNITION-20260906-158)",
     re.I,
 )
 
@@ -410,7 +412,7 @@ def corpus() -> tuple[dict, list[dict]]:
     for path in all_paths:
         logical = path[len("ignition/"):] if path.startswith("ignition/") else path
         if FORBIDDEN_BASIS_INPUT.search(logical):
-            excluded.append({"path": path, "reason": "basis-free-forbidden-prior-or-task153-157"})
+            excluded.append({"path": path, "reason": "basis-free-forbidden-protocol-or-research-surface"})
             continue
         family = family_for(path)
         if family:
@@ -419,7 +421,7 @@ def corpus() -> tuple[dict, list[dict]]:
         "schema_version": "ignition-158-basis-free-corpus-manifest-r1",
         "task_id": TASK,
         "basis_free": True,
-        "forbidden_inputs": "V/S/E labels, 64 matrix, meta-protocol docs, Task153-157 research surfaces",
+        "forbidden_inputs": "V/S/E labels, 64 matrix, meta-protocol docs, prior-task and current-task research surfaces",
         "blinding": "DATA_LEVEL_BLIND / NOT_COGNITIVELY_INDEPENDENT",
         "families": {family: {"path_count": len(paths), "paths_sha256": digest(paths), "sample_paths": paths[:24]} for family, paths in sorted(grouped.items())},
         "excluded_path_count": len(excluded),
@@ -577,17 +579,18 @@ def competition_and_verdict() -> None:
     })
     detector = read_json(OUT / "leap-signature.json")
     induction_summary = read_json(OUT / "basis-free-induction-summary.json")
+    detector_validated = bool(detector.get("detector_validated"))
     verdict = {
         "task_id": TASK,
-        "primary_verdict": "MIXED_REPRESENTATIONAL_AND_GENERATOR_LOCK_IN",
-        "secondary_verdict": "NO_NEW_BASIS_YET",
+        "primary_verdict": "MIXED_REPRESENTATIONAL_AND_GENERATOR_LOCK_IN" if detector_validated else "DETECTOR_NOT_VALIDATED",
+        "secondary_verdict": "NO_NEW_BASIS_YET" if detector_validated else "UNDERDETERMINED",
         "allowed_primary_verdict_set": ["TRUE_EPISTEMIC_FIXED_POINT", "REPRESENTATIONAL_LOCK_IN", "GENERATOR_LOCK_IN", "MIXED_REPRESENTATIONAL_AND_GENERATOR_LOCK_IN", "BASIS_REFACTOR_REQUIRED", "NEW_AXIS_CANDIDATE", "NEW_GENERATION_OPERATOR_CANDIDATE", "META_PROTOCOL_REPLACEMENT_CANDIDATE", "DETECTOR_NOT_VALIDATED", "UNDERDETERMINED"],
         "detector_validation": detector,
         "basis_free_rediscovery": induction_summary,
-        "h1": "not selected: detector and residual audit do not support a clean fixed-point conclusion",
-        "h2": "bounded support: static V/S/E/64 mapping absorbs some historical operation differences without preserving their new generation/verification ability",
-        "h3": "supported: current default pipeline has no auditable basis-mutation route and repeatedly routes anomalies to local records/validators/projections",
-        "h4": "selected because both bounded representational absorption and generator lock-in evidence survive the controls",
+        "h1": "not adjudicated: the historical detector failed its pre-registered negative holdout gate",
+        "h2": "descriptive-only signal: the bounded 64-enabled proxy absorbs some operation differences, but this cannot support a lock-in claim while the detector is unvalidated",
+        "h3": "descriptive-only signal: the current default pipeline has no obvious basis-mutation route, but generator lock-in is not a validated causal verdict",
+        "h4": "not adjudicated: mixed-lock-in selection is prohibited by the detector stop condition",
         "new_axis_candidate": False,
         "new_generation_operator_candidate": False,
         "meta_protocol_replacement_candidate": False,
@@ -599,6 +602,7 @@ def competition_and_verdict() -> None:
             "Historical control selection is purposeful and not a population estimate.",
             "Counterfactual 64 absorption is a bounded review proxy, not a replay of an actually available historical reviewer.",
             "Task153-157 artifacts were excluded from basis-free induction and used only as late comparison context.",
+            "Mandatory stop condition triggered: negative holdout false positive exceeded the frozen ceiling, so current-lock-in claims are downgraded to descriptive evidence.",
         ],
     }
     write_json(OUT / "verdict.json", verdict)
