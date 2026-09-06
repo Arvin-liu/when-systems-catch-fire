@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-a492aafc18415614"></a>
+## 121Q28T｜之元写作法 0.3.0 Current 收口
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：PR 58 在合并前重新满足全部精确门禁：HEAD 为 19a013719a8e98319004c3b7ad9d0d4b29405351，review 4714216621 接受该精确 HEAD，Foundation、Function OS 与 Pages 三条精确 HEAD CI 成功，PR 可合并且无漂移。随后使用普通 merge commit 合并，merge commit 为 83f15484385d256ea22e443cf2938717cfdd58a0；accepted HEAD 已验证为 main 祖先。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q28T｜之元写作法 0.3.0 Current 收口；PR #58 在合并前重新满足全部精确门禁：HEAD 为 19a013719a8e98319004c3b7ad9d0d4b29405351，review 4714216621 接受该精确 HEAD，Foundation、Function OS 与 Pages 三条精确 HEAD CI 成功，PR 可合并且无漂移。随后使用普通 merge commit 合并，merge commit 为 83f15484385d256ea22e443cf2938717cfdd58a0；accepted HEAD 已验证为 main 祖先。；本收口不改变 0.3.0 方法本体，只把生命周期从 accepted candidate 推进到 Current：之元写作法是点火同源认知结构的 L6 公共表达与反馈投影；“同源”是维护者声明的设计来源及有边界的结构对应，不是脑科学事实、形式同一、因果证明或新架构层。反馈只有在来源、主体、范围和解释限制可追踪时，才可作为候选 source／gap 返回既有项目流程，不能直接成为真值。；同步闭包覆盖方法正文、后台规格、内部范例、ARCHITECTURE、README、项目现状、SUMMARY、USAGE、AI 入口、Agent 交接、机器入口、版本与变更记录。121Q28、121Q28R、121Q28S 继续作为追加式纠错历史，不被覆盖；121Q27 故事不重写、不覆盖、不发布。；精确 final-main HEAD、三组最终工作流与生产 Pages 的无缓存实页观察由 GitHub 和 1111 独立回执承载，避免在同一 tracked commit 中制造自指 HEAD。
+- 完整阅读：[reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md](../../reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md)
+
+<a id="reading-hr-a53421dea2f6cdca"></a>
+## 099 Function Asset Registry Closure
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Task 99 reuses the task-98 governance layer and expands discovery to executable declarations and searchable formula candidates. The result is a one-record-per-discovery identity-card registry, an obligation ledger, dependency closure, counterexample registry, public-claim lineage and explicit qua… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：099 Function Asset Registry Closure；Task 99 reuses the task-98 governance layer and expands discovery to executable declarations and searchable formula candidates. The result is a one-record-per-discovery identity-card registry, an obligation ledger, dependency closure, counterexample registry, public-claim lineage and explicit quarantine queue.；The repository status is registry closed by adjudication or explicit quarantine, not all content proved. Python functions retained as algorithms are repository-scoped implementations. Registered historical objects retain their earlier source-text identity classification but remain quarantined or downgraded when definition, typing, proof or external evidence…；Exact distributions are generated in data/foundation/function-assets/closure-summary.json; this report intentionally avoids hand-maintained count authority.
+- 完整阅读：[reports/foundation-architecture/099-function-asset-registry-closure.md](../../reports/foundation-architecture/099-function-asset-registry-closure.md)
+
+<a id="reading-hr-a5389454f9d903de"></a>
+## IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Step 15 通过。三篇完整文章、Book Project R1 和两篇成熟样章已经形成一个可继续人工编辑的出版组合；它们共享必要的证据边界，但没有把同一段论证拆成多个标题。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计；Step 15 通过。三篇完整文章、Book Project R1 和两篇成熟样章已经形成一个可继续人工编辑的出版组合；它们共享必要的证据边界，但没有把同一段论证拆成多个标题。；Book Project R1 已链接两篇样章，且素材—章节映射、四层证据策略和与既有十二章成果册的重复审计都已写入书籍项目。本步没有新增平行成果系统，也没有把样章或文章提升为外部真值、生产就绪、Owner 接受或 EPISTEMICALLYACCEPTED。；三篇文章的 checkeditorialquality.py 单文件检查均为 PASS：正文行数分别为 46、45、48；列表/表格比为 0、0、0.125；ID 主导段均为 0；均有来源与边界附录及来源链接。；validatefireseeds.py 通过：64 entries、64 clusters、40 条内容火种、24 条方法火种、393 个来源。；validatehumanvisibility.py 通过：25 个 Human Surface、14 个 machine/human pairs、20 个 two-click destinations。
+- 完整阅读：[reports/operations/ignition-143-step15-cross-publication-coherence.md](../../reports/operations/ignition-143-step15-cross-publication-coherence.md)
+
 <a id="reading-hr-a5759af803aebc01"></a>
 ## 数学地基规则
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
@@ -332,24 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：两张表全量碰撞报告（two-tables-full-collision-report）；函数总表：619 文件，最高编号 0609（D599）；INDEX 标注函数总数 617。；案例总表：805 文件，最高编号 0804（C-0809）。；全量查重方式：对 M1–M9 逐条在函数总表做关键词+锚点检索（家庭/身份/价值感/沉没/托举/管理成本/支持/角色/父母/服从 轴 grep），并对命中的 D595–D599、D583、T40、D245 逐篇精读确认实质同构。；查重结论：家庭/身份/价值感/托举/管理成本轴函数表零命中；退出权/自我模型/指标替代价值轴强相关。；新函数 3 条：M3、M4、M5（≤5 ✅）。
 - 完整阅读：[outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md](../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
-
-<a id="reading-hr-bc1eabaeeba58eb1"></a>
-## IGNITION-20260827-142 Step 13 — Live Attempt A
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: SKIPPEDUNSAFEORUNAVAILABLE. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260827-142 Step 13 — Live Attempt A；Status: SKIPPEDUNSAFEORUNAVAILABLE.；Attempt A was not created or started. The Step 12 gate found zero live-selectable Agentic Executor families: Codex is policy-excluded and the other installed Agentic candidates are technically blocked. This is a no-invocation adjudication, not a live failure or an inferred result.；No process, inference, auth/config/billing operation, UI action or workspace mutation occurred. Historical live counts remain 6 attempts / 0 validated completions / 0 unreconciled / 2 observation-incomplete.；Machine evidence is ignition/data/operations/iterations/142/step13-live-attempt-a.json, validated by ignition/tools/validatetask142liveattemptadjudication.py.
-- 完整阅读：[reports/operations/ignition-142-step13-live-attempt-a.md](../../reports/operations/ignition-142-step13-live-attempt-a.md)
-
-<a id="reading-hr-bcc48ae7649ea4fe"></a>
-## 材料分层图（source-layer-map）
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：来源：57｜李丹阳 × 脱不花：不听话的人（Get 笔记整理稿，作者之元，2026-07-11） 全文读取：完成（713 行 / 137161 字节 / SHA256 ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497） 附件命令文件 SHA256：218ec306ce1c8e6a8a437cb3d929ac788dd6d771e683489d4309a0c8f011f208 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：材料分层图（source-layer-map）；来源：57｜李丹阳 × 脱不花：不听话的人（Get 笔记整理稿，作者之元，2026-07-11） 全文读取：完成（713 行 / 137161 字节 / SHA256 ee4819880dbbf258a15eb96d572762bc10f16fef8de85f4c41b9dcdfe49fa497） 附件命令文件 SHA256：218ec306ce1c8e6a8a437cb3d929ac788dd6d771e683489d4309a0c8f011f208；分层目的：区分「可核对事件 / 当事人解释 / 访谈者解释 / 整理稿概括 / 需外部证据」。；禁止把整理稿概括层(D)当成独立证据；禁止把访谈者解释(C)直接当事实。；主题：A. 可核对事件层（访谈中具体、可回指的事件）；A1. 五年级数学考 86 分，被父亲打；从此形成「丢分=丢脸」「分数=人格价值」的内隐耦合。
-- 完整阅读：[outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md](../../outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md)
-
-<a id="reading-hr-bcee4731c5f039a7"></a>
-## IGNITION-20260824-138 — Step 05 Runtime Scratch Adversarial Matrix
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The R3 filesystem boundary was exercised against the required negative and positive cases. The task workspace must have no write bits; a scratch parent inside the task workspace, formal repository or control repository is rejected before process start. Symlink escape is rejected. The domain contr… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260824-138 — Step 05 Runtime Scratch Adversarial Matrix；The R3 filesystem boundary was exercised against the required negative and positive cases. The task workspace must have no write bits; a scratch parent inside the task workspace, formal repository or control repository is rejected before process start. Symlink escape is rejected. The domain contract rejects auth/config mutation, secret materialization and se…；The positive path proves a helper write occurs in the transient scratch domain, the workspace digest and permissions remain unchanged, the repo.read ceiling stays narrow, and normal cleanup returns CLEANED. Cleanup failure is recorded as FAILED; unknown or left-behind process groups remain REQUIRESRECONCILIATION and are not silently deleted. Safe argv constr…；Matrix evidence is distributed across the provider-neutral domain tests, deterministic filesystem harness, bounded transport tests, child guard tests, Codex R3 adapter tests and the dedicated safety-matrix tests. No case uses skip, xfail, ignore, workspace chmod widening or a dangerous bypass.；The live-bridge targeted set ran 88 tests with zero failures, errors or skips.；Claim ceiling: adversarial filesystem/permission policy and deterministic adapter/transport evidence only; no real Codex inference, validated live completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.
-- 完整阅读：[reports/operations/ignition-138-step05-runtime-scratch-adversarial-matrix.md](../../reports/operations/ignition-138-step05-runtime-scratch-adversarial-matrix.md)

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [结论：后续碰撞流程可通过编号、标题、机制关键词三种方式召回 C-0809。](../../../outputs/audit/c0809-index-visibility-check-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6ce75ae1379f6f93 / 结论：后续碰撞流程可通过编号、标题、机制关键词三种方式召回 C-0809。
+  - 来源：`outputs/audit/c0809-index-visibility-check-20260708.md`
+  - 依赖：—；被引用：—
 - [罗马帝国衰亡的具体因果判定：**pending**（需要史料考证和解释共同体共识）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b4860c8e5be9f00f / 罗马帝国衰亡的具体因果判定：**pending**（需要史料考证和解释共同体共识）

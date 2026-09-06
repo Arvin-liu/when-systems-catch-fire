@@ -924,6 +924,11 @@
   - 可搜索名称：NFC-6962bc572cfa40aa / Generalizing experimental results by mechanisms* — `10.1007/s10654-020-00687-4`
   - 来源：`data/external-research/088-FINAL-REPORT.md`
   - 依赖：—；被引用：—
+- [Generator Plasticity Audit — IGNITION-20260906-158](../../ASSET-CARDS.md#asset-hr-d88fd2b435abc1cd)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_OR_SUPERSEDED_SOURCE`
+  - 可搜索名称：Generator Plasticity Audit — IGNITION-20260906-158 / ignition-generator-plasticity-audit-2026-09-06
+  - 来源：`docs/governance/ignition-generator-plasticity-audit-2026-09-06.md`
+  - 依赖：—；被引用：—
 - [Git 是历史权威；引擎不删除旧证据、不改写提交。撤回、降级、隔离和修订继续使用现行 supersession lineage，`history.jsonl` 只提供当前引擎的追加投影。图传播只表示仓库复核范围，不是现实因果。](../../../docs/governance/self-correction-engine.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9b719fe5ebf7d7eb / Git 是历史权威；引擎不删除旧证据、不改写提交。撤回、降级、隔离和修订继续使用现行 supersession lineage，`history.jsonl` 只提供当前引擎的追加投影。图传播只表示仓库复核范围，不是现实因果。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-e241194b02a32bbc / Object D396 defines a mechanism_model within the point-fire framework. Core: 中文：M13的D382与D295在参数空间形成两条不可逆线。交点以下正反馈不可逆先到，
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D295, D382, D396；被引用：—
-- [Object D397 defines a mechanism_model within the point-fire framework. Core: 中文：M14的D280两步策略是最小化T_escape的策略。最优分配：t_explo](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1fb75a9aefaf751d / Object D397 defines a mechanism_model within the point-fire framework. Core: 中文：M14的D280两步策略是最小化T_escape的策略。最优分配：t_explo
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D280, D397；被引用：—

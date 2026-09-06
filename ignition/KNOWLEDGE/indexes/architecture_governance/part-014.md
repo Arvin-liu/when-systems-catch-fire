@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部临床证据和医学指南。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d4cc514450d16f91 / 点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部临床证据和医学指南。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部教育实验、长期追踪和个体评估。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-c753feaece768f33 / 点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部教育实验、长期追踪和个体评估。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架通常只能达到 L1-L3，L4-L5 需要外部计量检验和反事实推断。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-c70714ba22dc8bbd / 点火框架通常只能达到 L1-L3，L4-L5 需要外部计量检验和反事实推断。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架通常只能达到 L1-L3，L4-L5 需要外部设计、测试、仿真、制造和安全验证。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-5ab265e479f36318 / 点火框架通常只能达到 L1-L3，L4-L5 需要外部设计、测试、仿真、制造和安全验证。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [点火框架通常只能达到 L1-L3，L4-L5 需要外部调查、统计、田野、实验和反事实识别。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-e38495390dda9106 / 点火框架通常只能达到 L1-L3，L4-L5 需要外部调查、统计、田野、实验和反事实识别。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [点火框架预测或解释了具体金融危机](../../../data/pending_claims.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-a07ec973a0797bdc / 点火框架预测或解释了具体金融危机
@@ -2477,30 +2502,5 @@
 - [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在心智中成立](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-b4f516b3d11a95bf / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在心智中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在植物智能中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-672b3fdcf231feb6 / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在植物智能中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 纳什均衡在蚁群社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-f8b55f9037da9e0b / 验证结论：** J⁺=1, J⁻=0 → 纳什均衡在蚁群社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在ChatGPT中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a3f3ce13bc18d844 / 验证结论：** J⁺=1, J⁻=0 → 自组织在ChatGPT中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在人类社会中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6612e4e7300a41bb / 验证结论：** J⁺=1, J⁻=0 → 自组织在人类社会中成立
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [验证结论：** J⁺=1, J⁻=0 → 自组织在博弈论中成立](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ba1fc092766ccc23 / 验证结论：** J⁺=1, J⁻=0 → 自组织在博弈论中成立
   - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

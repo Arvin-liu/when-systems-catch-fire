@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-699df907d9234853"></a>
+## 跨域候选函数批次收口审计
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-699DF907D9234853` · [outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md](../../outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md)
+- **为什么产生：** 此来源记录了什么：跨域候选函数批次收口审计？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 时间：2026-07-08 16:38 (GMT+8) 仓库：when-systems-catch-fire（分支 main） 审计性质：轻量验收 + 批次收口（不新增函数、不新增案例、不修改 data/schema）
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D597`, `D599`, `D312`
+- **来源与证据：** `outputs/audit/cross-domain-candidate-function-closeout-audit-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `跨域候选函数批次收口审计`, `cross-domain-candidate-function-closeout-audit-20260708`
+
 <a id="asset-hr-69ae0aeb92225add"></a>
 ## 088 阶段1：087 计数与分母审计
 
@@ -23,6 +43,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `088 阶段1：087 计数与分母审计`, `088-087-count-and-denominator-audit`
+
+<a id="asset-hr-69f642bbe7b8fc10"></a>
+## Meta-Protocol 64 Basis-Escape Experiment — IGNITION-20260906-158
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-69F642BBE7B8FC10` · [docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md](../../docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md)
+- **为什么产生：** 此来源记录了什么：Meta-Protocol 64 Basis-Escape Experiment — IGNITION-20260906-158？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** This is a frozen research protocol and replay record. It is not a new meta-protocol, schema, registry, validator, runtime capability, or canonical layer.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-09-06: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `Meta-Protocol 64 Basis-Escape Experiment — IGNITION-20260906-158`, `meta-protocol-64-basis-escape-experiment-2026-09-06`
 
 <a id="asset-hr-6a9b73c834a5af36"></a>
 ## IGNITION-20260823-136 — Live External Executor Bridge R1
@@ -183,6 +223,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Non-Sycophancy Output Protocol`, `non-sycophancy-output-protocol`
+
+<a id="asset-hr-70a0b0d3dd83948a"></a>
+## Representation Residual Casebook — IGNITION-20260906-158
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-70A0B0D3DD83948A` · [docs/governance/representation-residual-casebook-2026-09-06.md](../../docs/governance/representation-residual-casebook-2026-09-06.md)
+- **为什么产生：** 此来源记录了什么：Representation Residual Casebook — IGNITION-20260906-158？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** The entries below are repeated research residuals observed while comparing the existing static representation, repository generators, and historical controls. A residual family is a review lens, not a canonical failure class, schema, obligation, or production requirement.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/representation-residual-casebook-2026-09-06.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-09-06: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `Representation Residual Casebook — IGNITION-20260906-158`, `representation-residual-casebook-2026-09-06`
 
 <a id="asset-hr-70edc5860a2e57c8"></a>
 ## 扩展注释 · 赛课机制下的教师生存困境
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `Federation Router R1`, `federation-router-r1`
-
-<a id="asset-hr-7dee237b2707a8c8"></a>
-## IGNITION-20260827-142 Step 09 — Codex Blocker Freeze
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7DEE237B2707A8C8` · [reports/operations/ignition-142-step09-codex-blocker-audit.md](../../reports/operations/ignition-142-step09-codex-blocker-audit.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260827-142 Step 09 — Codex Blocker Freeze？
-- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
-- **当前结果：** The fresh public probe resolved codex-cli 0.144.4, received exit 0 from --version and exec --help, and observed public login-status exit 0. JSON, output-schema, ephemeral, read-only sandbox and user-config/rules isolation flags remain present. The existing Codex adapter, filesystem-domain repair…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-142-step09-codex-blocker-audit.md`, `142-STEP09-CODEX-BLOCKER-AUDIT`
-- **演化历史：** 2026-08-27: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260827-142 Step 09 — Codex Blocker Freeze`, `ignition-142-step09-codex-blocker-audit`
-
-<a id="asset-hr-7dfd6b8ed7333b2a"></a>
-## 跨域 smoke test — 自然科学碰撞报告
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7DFD6B8ED7333B2A` · [outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md](../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
-- **为什么产生：** 此来源记录了什么：跨域 smoke test — 自然科学碰撞报告？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** inputs/collisions/20260708-cross-domain-smoke-test/science.md（高通量筛选 p 值考核）
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D597`, `D173`
-- **来源与证据：** `outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`, `202`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `跨域 smoke test — 自然科学碰撞报告`, `collision-report`
-
-<a id="asset-hr-7e853c8821f44f01"></a>
-## IGNITION-20260824-137 — Step 06 Codex Adapter R2 Exact Output Contract
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7E853C8821F44F01` · [reports/operations/ignition-137-step06-codex-exact-output-contract.md](../../reports/operations/ignition-137-step06-codex-exact-output-contract.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260824-137 — Step 06 Codex Adapter R2 Exact Output Contract？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Strict Task137 envelopes now cause the Codex adapter to pass literal argv with --json, --ephemeral, --ignore-user-config, --ignore-rules, --sandbox read-only, an externally materialized read-only --output-schema, and explicit disposable --cd. The adapter does not use shell interpolation, --output…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-137-step06-codex-exact-output-contract.md`, `137-STEP06-CODEX-EXACT-OUTPUT-CONTRACT`
-- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260824-137 — Step 06 Codex Adapter R2 Exact Output Contract`, `ignition-137-step06-codex-exact-output-contract`

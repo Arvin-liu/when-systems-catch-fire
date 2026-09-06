@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-3697fef2b08e4800"></a>
+## IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1
+`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
+- 1 分钟：Task ID: IGNITION-20260825-139 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1；Task ID: IGNITION-20260825-139；Formal task ordinal: 139；Latest architecture-changing task: IGNITION-20260823-136; architecture task ordinal: 136.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；Task139 terminalizes the repository-local durable live-observation and Current projection continuation. CURRENTWITHOPENOBLIGATIONS remains current, EPISTEMICALLYACCEPTED=0 remains unchanged, and the live external invocation obligation remains open because no validated external completion was observed. This result records durable capture contracts, append-onl…
+- 完整阅读：[agent-results/IGNITION-20260825-139-result.md](../../agent-results/IGNITION-20260825-139-result.md)
+
 <a id="reading-hr-369f261001c4ece1"></a>
 ## 121Q25 Human Front-Door Audit
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Article A 通过编辑复核并修订为 REVIEWEDCURRENTR1。它现在明确是一篇以 Task142 为案例的仓库内方法文章，而不是对所有项目的生命周期规范。修订没有改变案例事实或开放义务的状态。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260827-143 Step 07 — Article A 对抗性编辑；Article A 通过编辑复核并修订为 REVIEWEDCURRENTR1。它现在明确是一篇以 Task142 为案例的仓库内方法文章，而不是对所有项目的生命周期规范。修订没有改变案例事实或开放义务的状态。；“这不是给‘不够成功’找一个新标签”改为明确针对本仓库的 lifecycle 判断，避免把局部设计写成普遍心理解释。；将“系统叙事”和“成熟终态”改为“这个项目的叙事”和“对这个仓库而言的可用终态”，降低普遍化风险。；保留历史动作与当前动作的区分，因为它是本文和 Task143 Owner-deferred 停放之间的实际连接；没有把 Owner-deferred 写成完成或失败。；文章具备标题、deck、引入、完整论证、结尾和来源与边界说明；当前正文约 4,300 个中文字符，满足本轮完整稿目标。编辑结论只表示文章适合进入本轮 publication production，不表示其中的生命周期设计已获得外部验证。
 - 完整阅读：[reports/operations/ignition-143-step07-article-a-editorial-review.md](../../reports/operations/ignition-143-step07-article-a-editorial-review.md)
-
-<a id="reading-hr-4d31b64808a19248"></a>
-## IGNITION-20260826-140 Step 13 — Targeted regression and projection closure
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：The targeted live/Current/identity/release/privacy suite completed naturally with 91 tests, 0 failures, 0 errors and 0 skips. It includes the typed Observation/Reconciliation Plane tests added in Task140 and the existing transport, execution, ledger, Current, release and privacy gates. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260826-140 Step 13 — Targeted regression and projection closure；The targeted live/Current/identity/release/privacy suite completed naturally with 91 tests, 0 failures, 0 errors and 0 skips. It includes the typed Observation/Reconciliation Plane tests added in Task140 and the existing transport, execution, ledger, Current, release and privacy gates.；The first run was not relabeled as green: it naturally reported 4 failures. Those failures were stale test contracts for the six-record ledger and the new ARCHITECTURECHANGED Task140 identity, plus one Task139 release-candidate source binding. The tests and the canonical task-identity source were repaired to match current semantics, then the identical suite…；The repository's projection preflight then completed with 25/25 checks passing, releaseadmission=true, sideeffectdetected=false and the preflight contract explicitly bound to Task140. Deterministic source projections were regenerated to fixed point: Function assets 5944, Nonfunction claims 17172, Knowledge Experience 414 cards / 315 changes / 332 layered / 2…；Current remains fail-closed: six attempts, zero validated completions, zero unreconciled attempts, two observation-incomplete records, and an OPEN LIVEEXTERNALINVOCATION obligation. Step13 started no live process and did not authorize a same-family retry or a second family without a safe admission.；Machine evidence: step13-targeted-regression.json, live-current-projection-r2.json, step12-independent-validation.json.
-- 完整阅读：[reports/operations/ignition-140-step13-targeted-regression.md](../../reports/operations/ignition-140-step13-targeted-regression.md)

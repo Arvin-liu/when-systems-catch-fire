@@ -7,7 +7,7 @@
 
 **引导问题：** 对象、运算、定义域、证明和反例究竟完成到哪一步？
 
-当前检索覆盖 9708 项，重点卡片 135 项。 [打开本主题完整索引](./indexes/mathematics.md)
+当前检索覆盖 9709 项，重点卡片 136 项。 [打开本主题完整索引](./indexes/mathematics.md)
 
 - [认知路径积分函数](./ASSET-CARDS.md#asset-d127) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → structured inference or procedure.
 - [经典确定性函数](./ASSET-CARDS.md#asset-d182) — `KEEP_AS_TOY_MODEL`；Identity: PARAMETRIC_MATHEMATICAL_MODEL. Definition scope: r=mu/Lambda in \(0,1\) union \(1,infinity\) → relation over source entities.
@@ -27,7 +27,7 @@
 - [点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。](./ASSET-CARDS.md#asset-nfc-61546854af53780b) — `QUARANTINED_AMBIGUOUS`；- 点火没有证明“大一统普遍不可能”。模型失败、哥德尔类比、跨域相似或旧编号不能充当普遍 no-go theorem。
 - [函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等](./ASSET-CARDS.md#asset-nfc-71e297ca6132aac6) — `QUARANTINED_AMBIGUOUS`；函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等于验证。T2、D127、D182—D190、D260 仍以
 - [原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**](./ASSET-CARDS.md#asset-nfc-777640d03f719f40) — `HISTORICAL_ONLY`；- 原始命题: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减，大统一在数学上不可能。T33从"冲突"升级为"必要张力"。 **扩展注释 / Extended Annotation**
-- 其余 117 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `MATHEMATICS`。
+- 其余 118 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `MATHEMATICS`。
 
 <a id="subject-physics"></a>
 ## 物理与统一问题
@@ -61,7 +61,7 @@
 
 **引导问题：** 跨尺度表示、概率动力学和关系网络能描述什么，不能证明什么？
 
-当前检索覆盖 4198 项，重点卡片 96 项。 [打开本主题完整索引](./indexes/systems.md)
+当前检索覆盖 4199 项，重点卡片 97 项。 [打开本主题完整索引](./indexes/systems.md)
 
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
 - [Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0,](./ASSET-CARDS.md#asset-nfc-08dd51bd4230ce81) — `ACCEPTED_AS_DEFINITION`；Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earli
@@ -81,14 +81,14 @@
 - [121Q22 Probabilistic System Dynamics Validation](./ASSET-CARDS.md#asset-hr-0ef2189bb50603b7) — `CANDIDATE_OR_PENDING_SOURCE`；Status: 121Q22READYASPROBABILISTICSYSTEMDYNAMICSCANDIDATE
 - [Mechanism Adjudication Plane](./ASSET-CARDS.md#asset-hr-0ef7472961a343e5) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`；Status: 121Q12OPERATIONOVERLAY
 - [赛课机制第一批回填索引可见性验证](./ASSET-CARDS.md#asset-hr-0fe03d4a4ca70a91) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；D595 条目文件 + INDEX 均命中，机制表达式可被检索 ✓
-- 其余 78 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `SYSTEMS`。
+- 其余 79 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `SYSTEMS`。
 
 <a id="subject-cognition"></a>
 ## 认知、Agent 与行动
 
 **引导问题：** 认知类比、行动选择和现实反馈怎样保留边界与失败条件？
 
-当前检索覆盖 2658 项，重点卡片 77 项。 [打开本主题完整索引](./indexes/cognition.md)
+当前检索覆盖 2659 项，重点卡片 78 项。 [打开本主题完整索引](./indexes/cognition.md)
 
 - [认知路径积分函数](./ASSET-CARDS.md#asset-d127) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → structured inference or procedure.
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
@@ -108,14 +108,14 @@
 - [External Agent Federation R1 — disposable pilots](./ASSET-CARDS.md#asset-hr-3011881d0fe50e03) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`；The Step 10 pilots compare protocol compatibility, not intelligence. Pilot A uses one repo.read envelope against the existing bounded Reference Execut
 - [OpenClaw Adapter R1](./ASSET-CARDS.md#asset-hr-3078ad77a2ea0d78) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`；OpenClawAdapter is a narrow External Agent Federation boundary over the observed public openclaw agent CLI. The Step 00 probe recorded JSON output, UT
 - [IGNITION-20260826-140 Step 09 — Fresh local executor census and dynamic selection](./ASSET-CARDS.md#asset-hr-31c369073213a9e3) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`；PASS: the host was re-attested at 2026-08-25T18:44:54Z using only PATH/bundle presence, public version/help surfaces and Codex public auth-status exit
-- 其余 59 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `COGNITION`。
+- 其余 60 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `COGNITION`。
 
 <a id="subject-architecture-governance"></a>
 ## 架构、治理与自我纠错
 
 **引导问题：** 知识资产怎样被登记、裁决、修订、隔离并保持机器与人类表面一致？
 
-当前检索覆盖 18462 项，重点卡片 273 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
+当前检索覆盖 18468 项，重点卡片 279 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
 
 - [哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](./ASSET-CARDS.md#asset-nfc-00b4be17fb8dc706) — `ACCEPTED_AS_DEFINITION`；哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
@@ -135,7 +135,7 @@
 - [“物理大一统不可能”已经撤回，不能通过改名为结构性边界推论而恢复。](./ASSET-CARDS.md#asset-nfc-70a1ec2c42864627) — `ACCEPTED_AS_DEFINITION`；- “物理大一统不可能”已经撤回，不能通过改名为结构性边界推论而恢复。
 - [函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等](./ASSET-CARDS.md#asset-nfc-71e297ca6132aac6) — `QUARANTINED_AMBIGUOUS`；函数类资产交接必须保留十二类主身份、M0—M7、E0—E7、十门结果、六层裁决、claim ceiling、证明/实证义务、依赖影响和最终处置。task 99 identity card 优先于自动 census；quarantine 不等于验证。T2、D127、D182—D190、D260 仍以
 - [方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、](./ASSET-CARDS.md#asset-nfc-77109cb5f560bd28) — `ACCEPTED_AS_DEFINITION`；方法 `1.3.0` 与系统图 `0.13.0`、`0.12.0`、`0.10.0`、`0.7.0`、`0.6.0`、`0.5.0` 为 Historical，方法 `1.2.0` 与系统图 `0.1.0`、`0.2.0`、`0.3.0`、`0.4.0` 为更早 Historical。当前方法要求从
-- 其余 255 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `ARCHITECTURE_GOVERNANCE`。
+- 其余 261 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `ARCHITECTURE_GOVERNANCE`。
 
 <a id="subject-writing-publication"></a>
 ## 文章、写作与公共表达
@@ -169,7 +169,7 @@
 
 **引导问题：** 候选、验证、合并和 Current 怎样分离并留下可复算证据？
 
-当前检索覆盖 12410 项，重点卡片 429 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
+当前检索覆盖 12413 项，重点卡片 432 项。 [打开本主题完整索引](./indexes/operations_evidence.md)
 
 - [门控面合并统一函数](./ASSET-CARDS.md#asset-d183) — `REWRITE_AND_RETEST`；Identity: RELATION_OR_CONSTRAINT. Definition scope: Positive scale ratios excluding one, plus an independently defined merge map → relation over sourc
 - [相对论门槛函数](./ASSET-CARDS.md#asset-d185) — `KEEP_AS_STRUCTURAL_METAPHOR`；Identity: STRUCTURAL_METAPHOR. Definition scope: UNSPECIFIED_IN_SOURCE → scalar-like score with unspecified units.
@@ -189,4 +189,4 @@
 - [事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选](./ASSET-CARDS.md#asset-nfc-8b5cd2066783ecf6) — `RETAINED_AS_STRUCTURAL_METAPHOR`；事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选
 - [`agent_runtime/`：R1 本地行动层、R2 Pack Registry/Bus、Pack-aware routing、Reasoner Gateway、Profile 投影、Operational Memory 与 Super](./ASSET-CARDS.md#asset-nfc-91ea4c56fdc6c482) — `RETAINED_AS_STRUCTURAL_METAPHOR`；- `agent_runtime/`：R1 本地行动层、R2 Pack Registry/Bus、Pack-aware routing、Reasoner Gateway、Profile 投影、Operational Memory 与 Supervisor。
 - [D220 完全统一不可能定理](./ASSET-CARDS.md#asset-nfc-996c4e8631d40356) — `HISTORICAL_ONLY`；### D220 完全统一不可能定理
-- 其余 411 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `OPERATIONS_EVIDENCE`。
+- 其余 414 张重点卡片可在[资产卡总表](./ASSET-CARDS.md)搜索主题标记 `OPERATIONS_EVIDENCE`。

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/arch](../../../docs/operations/ignition-operation-playbooks-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7f7ee59cf2dd8519 / Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/arch
+  - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
+  - 依赖：—；被引用：—
 - [Expand with declared authority/governance/validator paths: `ignition/schemas/operations/task150-step18-scope-split-admis](../../../docs/operations/ignition-operation-playbooks-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-977aaa78e2086051 / Expand with declared authority/governance/validator paths: `ignition/schemas/operations/task150-step18-scope-split-admis
@@ -813,6 +818,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2e3cbf174290d4dd / High preprint ratio**: Over 60% of sources are arXiv preprints with unknown peer review status. While preprints are valu
   - 来源：`reports/external-research/120-source-quality-and-template-risk-audit.md`
+  - 依赖：—；被引用：—
+- [Historical Basis-Leaps Reconstruction — IGNITION-20260906-158](../../ASSET-CARDS.md#asset-hr-ea13f7ea325dac81)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Historical Basis-Leaps Reconstruction — IGNITION-20260906-158 / ignition-historical-basis-leaps-reconstruction-2026-09-06
+  - 来源：`docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md`
   - 依赖：—；被引用：—
 - [Historical evidence cards: unchanged ✓](../../../reports/external-research/121Q3-night-final-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-420457134bbe34a7 / M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max 0.8几乎不可能逃逸。D279干预时机悖论的精确化。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D279；被引用：—
-- [M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/\(1+a_excl·τ\)·\(1+Σpᵢpⱼ/ΣVar\(ΔΦᵢ\)\)——趋势和波动的双重双重加速。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-21b1fead66c03313 / M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（一阶）。联合效果：趋势加速×波动加速=总加速∝1/\(1+a_excl·τ\)·\(1+Σpᵢpⱼ/ΣVar\(ΔΦᵢ\)\)——趋势和波动的双重双重加速。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D348, D370；被引用：—
-- [M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ 1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须用指数](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d6603f237ef2dfd6 / M1的ΔΦ通过P_survival=e^{-Φ}传导。ΔΦ 1时P变化≈e^{-ΔΦ}（指数区），0.1<ΔΦ<1为过渡区。非线性阈值ΔΦ_c≈0.3——低于此值D158线性近似可用，高于此值必须用指数
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158, D260, D296；被引用：—

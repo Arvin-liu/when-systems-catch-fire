@@ -524,6 +524,11 @@
   - 可搜索名称：IGNITION-20260829-148 result — AI-first 点火操作法 R1 / IGNITION-20260829-148-result
   - 来源：`agent-results/IGNITION-20260829-148-result.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260906-158 result](../../ASSET-CARDS.md#asset-hr-c2813f07a6d9b6ac)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：IGNITION-20260906-158 result / IGNITION-20260906-158-result
+  - 来源：`agent-results/IGNITION-20260906-158-result.md`
+  - 依赖：—；被引用：—
 - [IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC-EXACT-HEAD-ACCEPTANCE-AND-PAGES-CLOSEOUT-R1-20260727 将 PR #143（head `77fc5f95777a3b](../../../docs/VERSIONING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6a2e2859e974ccd4 / IGNITION-HOMEPAGE-USAGE-CHARTER-SYNC-EXACT-HEAD-ACCEPTANCE-AND-PAGES-CLOSEOUT-R1-20260727 将 PR #143（head `77fc5f95777a3b
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-7b48faa2fa1c5db2 / Object D525 defines a optimization_problem within the point-fire framework. Core: 中文：M≅∪_i M_i，每个M_i配备8种标准几何之一，Perelman用
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D525；被引用：—
-- [Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = \(bp-q\)/b 映射： - f* ↔ ε信号最优流速 v*](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-a46d9d800ad5ba5a / Object D53 defines a mechanism_model within the point-fire framework. Core: 中文：凯利公式 f* = \(bp-q\)/b 映射： - f* ↔ ε信号最优流速 v*
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D53；被引用：—

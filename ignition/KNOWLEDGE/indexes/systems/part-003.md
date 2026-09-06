@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D397 defines a mechanism_model within the point-fire framework. Core: 中文：M14的D280两步策略是最小化T_escape的策略。最优分配：t_explo](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1fb75a9aefaf751d / Object D397 defines a mechanism_model within the point-fire framework. Core: 中文：M14的D280两步策略是最小化T_escape的策略。最优分配：t_explo
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D280, D397；被引用：—
 - [Object D398 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw = \(a_excl·τ\)/\(Σpᵢpⱼ/ΣVar\)。R_tw>>](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-fc40588a456172b1 / Object D398 defines a mechanism_model within the point-fire framework. Core: 中文：M1的R_tw = \(a_excl·τ\)/\(Σpᵢpⱼ/ΣVar\)。R_tw>>
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-35bdae6c3f841720 / \| \[C-521\]\( \) \| \[Yukawa层级验证 — 8维系统
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D148；被引用：—
-- [\| \[C-542\]\( \) \| \[高温超导 — 多门控面共振，Tc远高于单机制预言\]\(<./0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4bb759a50a08a40a / \| \[C-542\]\( \) \| \[高温超导 — 多门控面共振，Tc远高于单机制预言\]\(<./0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158；被引用：—

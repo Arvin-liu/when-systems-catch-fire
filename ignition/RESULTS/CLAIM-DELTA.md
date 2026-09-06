@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 639 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 645 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -1058,6 +1058,14 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2CD469BFB4CAB0C7`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/governance/charter-system-r1.md`
 
 - 状态：`ADDED`
@@ -1106,6 +1114,22 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/governance/ignition-generator-plasticity-audit-2026-09-06.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D88FD2B435ABC1CD`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md`
+
+- 状态：`ADDED`
+- Delta：`CD-EA13F7EA325DAC81`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/governance/knowledge-experience-layer.md`
 
 - 状态：`ADDED`
@@ -1135,6 +1159,14 @@
 - 状态：`ADDED`
 - Delta：`CD-B3910E7A27E481AC`
 - 关联断言：['NFC-05db27ab692f1ef4', 'NFC-0d52d7c00bcc03ae', 'NFC-137826a3b73d7890', 'NFC-16b147eb9f71a2ab', 'NFC-23771b4e47609df9', 'NFC-25e241e3d1b30aad', 'NFC-2a31a1e49015849d', 'NFC-2d9089927f7bb3e9', 'NFC-2eebb0731353ddc7', 'NFC-37daf80eb812d995', 'NFC-38bf709c8438f6f0', 'NFC-407f72d07635e9f9', 'NFC-431a6f6ad565bfe8', 'NFC-47dce0a7c6347def', 'NFC-52a525ee435677ab', 'NFC-54f744cff07f001a', 'NFC-56f9bfc8944ba5ef', 'NFC-5ba3db00e541e591', 'NFC-66af78e839c6603e', 'NFC-69ffbfd88f638f79']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md`
+
+- 状态：`ADDED`
+- Delta：`CD-69F642BBE7B8FC10`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -1271,6 +1303,14 @@
 - 状态：`ADDED`
 - Delta：`CD-70403729FEF8B50E`
 - 关联断言：['NFC-0ea86f2954cc7341', 'NFC-1c19cd09bbb6b2f2', 'NFC-30860c73bae4cdc4', 'NFC-3526c8e9700749f4', 'NFC-3fd25bfb572d5890', 'NFC-43be1441ffcaf882', 'NFC-5f27bc8321217208', 'NFC-70c5179dc9f8883e', 'NFC-9f7f82915c00fd31', 'NFC-a34513656a810d49', 'NFC-c7c5c1d70c5dec44', 'NFC-d2589a6ab402dab6', 'NFC-d28c031bbae7ca82', 'NFC-ee8250fb76e094b3', 'NFC-fb861b1fd669e156']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/representation-residual-casebook-2026-09-06.md`
+
+- 状态：`ADDED`
+- Delta：`CD-70A0B0D3DD83948A`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -3279,6 +3319,14 @@
 - 状态：`ADDED`
 - Delta：`CD-5B54A4719D10BBC2`
 - 关联断言：['NFC-1c1b10b3c32c5a2a', 'NFC-74f620dddfe3ca18', 'NFC-793fc5ff84c3ebaf', 'NFC-7b9864e6a60444b0', 'NFC-91d8f3a743b8053e', 'NFC-d15c15a0e6340185']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/governance/task-IGNITION-20260906-158.md`
+
+- 状态：`ADDED`
+- Delta：`CD-DC27E4D07F0CF3F5`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

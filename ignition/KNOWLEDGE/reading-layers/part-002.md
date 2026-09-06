@@ -179,6 +179,13 @@
 - 5 分钟：主题：IGNITION-20260827-143 Step 11 — 三篇文章交叉编辑与最终审校；三篇文章均通过最终编辑审校，状态为 REVIEWEDCURRENTR1。交叉检查确认它们共享的是必要的证据边界，而不是同一篇文章被拆成三个标题：；Article A 写“两个生命周期时钟”以及 Task142 的任务—义务拆分；；Article B 写“支持如何变成路径控制”的实质性内部候选模型；；Article C 写树冠、温度对象与因果范围的具体公开 replay。；三篇文章可以共同进入同一出版组合，但各自都有独立的读者问题、素材和收束句。
 - 完整阅读：[reports/operations/ignition-143-step11-cross-publication-editorial-review.md](../../reports/operations/ignition-143-step11-cross-publication-editorial-review.md)
 
+<a id="reading-hr-2cd469bfb4cab0c7"></a>
+## Basis Competition and Next-Leap Assessment — IGNITION-20260906-158
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：This is a comparative research assessment, not an authorization to replace the current basis or create a successor task. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Basis Competition and Next-Leap Assessment — IGNITION-20260906-158；This is a comparative research assessment, not an authorization to replace the current basis or create a successor task.；主题：Candidate comparison；No model meets the frozen new-basis candidate threshold. In particular, the record lacks the combination of validated historical detection, independent basis-free rediscovery, holdout superiority, ablation loss, and a falsifier required by the protocol. newaxiscandidate, newgenerationoperatorcandidate, and metaprotocolreplacementcandidate are all false.；主题：Next-leap assessment；There is no validated “next leap” to promote. The strongest bounded research leads are:
+- 完整阅读：[docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md](../../docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md)
+
 <a id="reading-hr-2cf0c16a60d1a3af"></a>
 ## 104 来源质量审计
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Foundation documentation；076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。；函数、模型、定理、公式、律或判定器还必须读取：；旧表是不可变来源；data/foundation/function-assets/corrections.jsonl 是 task 98 首批纠偏权威覆盖。task 99 的 identity-cards.jsonl 为每个发现项提供现行处置；自动 census 仍只是候选，quarantine 也不因登记、编号或测试而获得真值。；task 100 的 data/foundation/nonfunction-claims/claim-registry.jsonl 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 quarantine，不表示证明、外部证据、原创性、同行评审或复现完成。
 - 完整阅读：[docs/foundation/README.md](../../docs/foundation/README.md)
-
-<a id="reading-hr-3697fef2b08e4800"></a>
-## IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1
-`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
-- 1 分钟：Task ID: IGNITION-20260825-139 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1；Task ID: IGNITION-20260825-139；Formal task ordinal: 139；Latest architecture-changing task: IGNITION-20260823-136; architecture task ordinal: 136.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；Task139 terminalizes the repository-local durable live-observation and Current projection continuation. CURRENTWITHOPENOBLIGATIONS remains current, EPISTEMICALLYACCEPTED=0 remains unchanged, and the live external invocation obligation remains open because no validated external completion was observed. This result records durable capture contracts, append-onl…
-- 完整阅读：[agent-results/IGNITION-20260825-139-result.md](../../agent-results/IGNITION-20260825-139-result.md)

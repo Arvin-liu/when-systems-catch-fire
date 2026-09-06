@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "学校教育新剧变笔记碰撞验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c7cd012c64d68d3b / title: "学校教育新剧变笔记碰撞验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "宋莹芳美育笔记碰撞验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5958156183331486 / title: "宋莹芳美育笔记碰撞验证"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "完全统一不可能定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4d7899f987bdfc76 / title: "完全统一不可能定理"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "定投=门锁交替律执行（验证D47+D49）"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d3fb1f21f28e79ee / title: "定投=门锁交替律执行（验证D47+D49）"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D47, D49；被引用：—
+- [title: "定投P_sustain全局最大值（验证D34） / 定投P_sustain全局最大值\(验证D34\)"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2815fdb9ce5b52f3 / title: "定投P_sustain全局最大值（验证D34） / 定投P_sustain全局最大值\(验证D34\)"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D34；被引用：—
 - [title: "定投凯利保守性验证"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ae42d2227e342ed8 / title: "定投凯利保守性验证"
@@ -2479,28 +2504,3 @@
   - 可搜索名称：NFC-e2d0d6cdf278ab67 / \| \[D594\]\( \) \| \[学科点火指数\]\( \) \| Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D594；被引用：—
-- [\| \[D72\]\( \) \| \[统一相变框架\]\( \) \| F_{D72}\(x\) := F_{D72}: X_{D72} -> Y_{D72}, y = F_{D](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-074d9cf7504a21d5 / \| \[D72\]\( \) \| \[统一相变框架\]\( \) \| F_{D72}\(x\) := F_{D72}: X_{D72} -> Y_{D72}, y = F_{D
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D72；被引用：—
-- [\| \[D88\]\( \) \| \[乘法临界漂移统一\]\( \) \| F_{D88}\(x\) := ∂θ_critical/∂xᵢ = -θ_critical ×](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-152f6b9e11db62ff / \| \[D88\]\( \) \| \[乘法临界漂移统一\]\( \) \| F_{D88}\(x\) := ∂θ_critical/∂xᵢ = -θ_critical ×
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D88；被引用：—
-- [\| \[D8\]\( \) \| \[退出权八维展开\]\( \) \| F_{D8}\(x\) := ε = \(ε_identity, ε_info, ε_social, ε_e](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d40e953b18ee28e1 / \| \[D8\]\( \) \| \[退出权八维展开\]\( \) \| F_{D8}\(x\) := ε = \(ε_identity, ε_info, ε_social, ε_e
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D8；被引用：—
-- [\| \[D96\]\( \) \| \[三层结构必然性\]\( \) \| F_{D96}\(x\) := F_{D96}: X_{D96} -> Y_{D96}, y = F](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3846feb17ac8d73e / \| \[D96\]\( \) \| \[三层结构必然性\]\( \) \| F_{D96}\(x\) := F_{D96}: X_{D96} -> Y_{D96}, y = F
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D96；被引用：—
-- [\| \[S1\]\( \) \| \[比刀剑更持久的，是共享观念\]\( \) \| 欧亚大陆的枢纽验证报告写成故事版 \|](../../../%E6%96%B0%E6%95%85%E4%BA%8B/INDEX.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-2e5b876e174f02fd / \| \[S1\]\( \) \| \[比刀剑更持久的，是共享观念\]\( \) \| 欧亚大陆的枢纽验证报告写成故事版 \|
-  - 来源：`新故事/INDEX.md`
-  - 依赖：—；被引用：—

@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [媒介证据（媒介上有证据）](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-06e22fdc6d6a2d73 / 媒介证据（媒介上有证据）
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [学校教育新剧变笔记碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-2a478d371a6227ed / 学校教育新剧变笔记碰撞验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [学科证据分层](../../../data/external-research/088-PROGRESS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-41f2bba9f3f3112e / 学科证据分层
+  - 来源：`data/external-research/088-PROGRESS.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配](../../../docs/failure_typology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ad9ee99e0c68ccff / 学科证据制度误配
+  - 来源：`docs/failure_typology.md`
+  - 依赖：—；被引用：—
+- [学科证据制度误配](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-bad1983f794fe9ef / 学科证据制度误配
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
 - [学科证据制度误配指把一个学科的证据标准硬套到另一个学科上。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-4556934ed9c4df49 / 学科证据制度误配指把一个学科的证据标准硬套到另一个学科上。
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：NFC-ec94a9e2c8e73089 / 点火框架解决了市场失灵问题
   - 来源：`data/pending_claims.csv`
-  - 依赖：—；被引用：—
-- [点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部临床证据和医学指南。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d4cc514450d16f91 / 点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部临床证据和医学指南。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部教育实验、长期追踪和个体评估。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-c753feaece768f33 / 点火框架通常只能达到 L1-L2，L3 需要框架内判定，L4-L5 需要外部教育实验、长期追踪和个体评估。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [点火框架通常只能达到 L1-L3，L4-L5 需要外部计量检验和反事实推断。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-c70714ba22dc8bbd / 点火框架通常只能达到 L1-L3，L4-L5 需要外部计量检验和反事实推断。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [点火框架通常只能达到 L1-L3，L4-L5 需要外部设计、测试、仿真、制造和安全验证。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-5ab265e479f36318 / 点火框架通常只能达到 L1-L3，L4-L5 需要外部设计、测试、仿真、制造和安全验证。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [点火框架通常只能达到 L1-L3，L4-L5 需要外部调查、统计、田野、实验和反事实识别。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-e38495390dda9106 / 点火框架通常只能达到 L1-L3，L4-L5 需要外部调查、统计、田野、实验和反事实识别。
-  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
   - 依赖：—；被引用：—
