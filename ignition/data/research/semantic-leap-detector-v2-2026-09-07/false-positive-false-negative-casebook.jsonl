@@ -1,0 +1,2 @@
+{"event_id":"N02_INCREMENTAL_REGISTRY","reason":"registry expansion is semantically conservative","v1":"LEAP","v2":"NON_LEAP"}
+{"event_id":"N03_CANONICAL_PROTOCOL_MIGRATION","reason":"canonical materialization adds no object language","v1":"LEAP","v2":"NON_LEAP"}
