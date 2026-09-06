@@ -67,6 +67,13 @@
 - 5 分钟：主题：IGNITION-20260828-144 Step 12 — targeted closure regression；The offline closure suite completed naturally. Fourteen standalone validators passed except the release-candidate identity gate, which failed closed because the current Task144 progress.jsonl binding was missing. The targeted unittest set then completed with 77 tests / 4 failures / 0 errors / 0 skips. The failures were deterministic identity/projection resid…；No external inference, live process, executor qualification or new capability was started. No skip, xfail, ignore or expected-failure mechanism was added, and the failure evidence is preserved for bounded Repair Cycle A.；Machine receipt: ignition/data/operations/iterations/144/step12-targeted-regression.json.；Claim ceiling: repository-local targeted regression failure evidence only; this does not establish validated live completion, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance.
 - 完整阅读：[reports/operations/ignition-144-step12-targeted-regression.md](../../reports/operations/ignition-144-step12-targeted-regression.md)
 
+<a id="reading-hr-0718b15aa86c2d20"></a>
+## Task160｜Basis Escape V2
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task160｜Basis Escape V2；Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.；This is a research-only, repository-local result from exact Formal base 76e44213904928f9f0be8ba131b86529e44e7682. It does not alter the 12-element protocol, the 64 matrix, Ψ₀/Pmeta, canonical layers, validators, lifecycle, production readiness, external truth, Owner acceptance or epistemic status.；Command commit/blob/content SHA-256: f6fc4438e711e928cce29d07ed54b7395434b7c8 / 57aeb34cc5fea2202bd87e5998bd7851f7753a9f / e8155ff841bf4ee95eafddd4f5b2e081890e73a08c364011cd7108ae564b23d0；Corpus: total tracked universe 4046, used 2937, excluded 1109; basis-free packets 1015; C7 engineering negatives 1922；Split: discovery 802, holdout 213; C8 mixed-theoretical holdout is derived in c8-mixed-holdout-manifest.json; rule frozen before induction
+- 完整阅读：[docs/governance/meta-protocol-64-absorption-vs-generativity-2026-09-07.md](../../docs/governance/meta-protocol-64-absorption-vs-generativity-2026-09-07.md)
+
 <a id="reading-hr-077438a238642315"></a>
 ## Epistemic Governance Kernel and Federated Planes
 `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Status: candidate derived representation. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Multiscale Causal Fabric / 多尺度因果织体；Status: candidate derived representation.；The Multiscale Causal Fabric (MCF) is a versioned modeling and navigation structure across the existing L0-L6 architecture. It is not L7, not a new truth layer, not a replacement for Foundation, and not proof that the universe is literally a graph or network.；MCF exists because the repository already has local causal components but lacks a shared object model for time, scale, propagation, feedback, entropy, irreversibility, projection, diff, and residue.；PSD extension: docs/architecture/probabilistic-system-dynamics.md adds probability semantics and system-dynamics records for cases where a fabric needs stochastic evolution, partial observation, calibration, transition laws, or explicit system boundaries. PSD is a derived operational extension to MCF, not a replacement for MCF and not a new truth layer.；Charter Gate decides whether an action or publication remains normatively allowed.
 - 完整阅读：[docs/architecture/multiscale-causal-fabric.md](../../docs/architecture/multiscale-causal-fabric.md)
-
-<a id="reading-hr-1faefff9c300160f"></a>
-## S4 规范性审核 - 网络协议 (Network Protocol)
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：价值：分布式协作、多中心治理、冗余、知识共享与局部失效隔离，提升系统韧性。条件：仅当责任可追溯、无隐形中心垄断、且局部失效可隔离时才有价值。伤害：当责任消失、隐形中心垄断、信息传染或网络效应锁定时，会伤害共同体。不可缺少的约束：责任可追溯、防止隐形中心、反锁定、局部失效隔离、多中心。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：S4 规范性审核 - 网络协议 (Network Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；系统由节点—边网络构成，交互通过连接发生。；未处理'隐形中心'与'网络效应锁定'，易退化为平台垄断（歧义/滥用风险）。
-- 完整阅读：[docs/governance/meta-protocol-reviews/protocols/S4.md](../../docs/governance/meta-protocol-reviews/protocols/S4.md)

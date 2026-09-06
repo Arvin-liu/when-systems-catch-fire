@@ -6,11 +6,11 @@
     "EXTERNAL_RESEARCH": 27,
     "FOUNDATION_AND_ADJUDICATION": 73,
     "ITERATION_AND_AUDIT": 190,
-    "OTHER_REPOSITORY_RESULT": 183
+    "OTHER_REPOSITORY_RESULT": 194
   },
   "claim_ceiling": "Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.",
-  "human_records": 529,
+  "human_records": 540,
   "schema_version": "1.0.0",
   "snapshot_date": "2026-07-29",
-  "source_documents": 529
+  "source_documents": 540
 }

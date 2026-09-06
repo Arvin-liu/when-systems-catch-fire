@@ -1,0 +1,27 @@
+{
+  "basis_free_packet_count": 1015,
+  "c7_strong_negative_count": 1922,
+  "candidate_freeze_digest": "b7257596117756d0cf1552fef42da69f6bd5bff482399fee0354995df4c41ad8",
+  "candidate_freeze_status": "FROZEN",
+  "command_blob_sha": "57aeb34cc5fea2202bd87e5998bd7851f7753a9f",
+  "command_commit": "f6fc4438e711e928cce29d07ed54b7395434b7c8",
+  "command_content_sha256": "e8155ff841bf4ee95eafddd4f5b2e081890e73a08c364011cd7108ae564b23d0",
+  "excluded_count": 1109,
+  "formal_base_sha": "76e44213904928f9f0be8ba131b86529e44e7682",
+  "freeze_digest": "bf19fae65f1dcbf4325bf9affc1b8e41638f16e26fbd7f94e72676fc5f957e4a",
+  "frozen_file_hashes": {
+    "basis-free-packets/all.jsonl": "ba2a00e9e36b25cda690acaa332d09c7fe87a999c25b25c70d1b85ceaae206d5",
+    "corpus-split-manifest.json": "f95a66aa643691301a354b05a47b373d9123b5ad465cc93473bdddec36e52ab9",
+    "corpus-universe.jsonl": "00b0e241d01e202de50759fe753a0e212af52f36a3fcda46604f098d1c7ba146",
+    "exclusion-ledger.jsonl": "af4533951bf8572a253b190df70e703ca8452d0382fff7ef99d9e4191c7debf8",
+    "experiment-protocol.json": "bdab80e97dab7f4ba2b4dfd9aced7729b463fa517a1ce59e30cd51c44dd8d0bc",
+    "hypothesis-freeze.json": "701d56855cca713a0c1eccdd1916f0f0918a3497c06f275b52eafc3511cf2c6c",
+    "research-boundary-check.json": "50ea09ea2c6320730f2d1432b8dba7cd0571c3ba395ec29dd1a39fbf30656b4c",
+    "sanitization-ledger.jsonl": "eab5bcd431cf6b2c5da9dc6f4b7cedb66e648e709d7f1e732a9c02d6eac11fa8"
+  },
+  "invalidations": [],
+  "status": "FROZEN_BEFORE_INDUCTION",
+  "task_id": "IGNITION-20260907-160",
+  "total_universe_count": 4046,
+  "used_count": 2937
+}

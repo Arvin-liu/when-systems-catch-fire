@@ -1,0 +1,18 @@
+{
+  "task_id": "IGNITION-20260907-160",
+  "status": "PASS_AFTER_SCOPED_REPAIR",
+  "frozen_boundary_input_unchanged": true,
+  "initial_observation": "official function census reported CENSUS_OUT_OF_DATE after research artifacts were materialized",
+  "repair": {
+    "function_census": "added exact task-scoped research-only exclusions for Task159 and Task160 artifacts",
+    "nonfunction_claim_discovery": "added exact task-scoped research-only exclusions while retaining source-discovery accounting",
+    "canonical_eligibility_semantics_changed": false
+  },
+  "official_checks": {
+    "repository_path_classification": "PASS",
+    "function_asset_census": "PASS",
+    "nonfunction_claim_generation": "PASS",
+    "nonfunction_claim_closure": "PASS"
+  },
+  "scope": "research-only source accounting; no canonical protocol, validator, lifecycle state, or runtime semantics changed"
+}

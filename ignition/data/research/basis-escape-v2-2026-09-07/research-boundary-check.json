@@ -1,0 +1,8 @@
+{
+  "canonical_eligibility_semantics_changed": false,
+  "official_function_census_task160_exclusion": "not modified; this run uses task-scoped source-discovery accounting",
+  "official_path_accounting": "non-authoritative data/research category",
+  "own_output_excluded_from_basis_free_input": true,
+  "own_output_path": "ignition/data/research/basis-escape-v2-2026-09-07/",
+  "task_id": "IGNITION-20260907-160"
+}

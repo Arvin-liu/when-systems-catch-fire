@@ -137,11 +137,14 @@
 |`docs/getnote-collision-workflow-final-20260708.md`|30|0|否|
 |`docs/governance/README.md`|4|0|否|
 |`docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md`|0|0|是|
+|`docs/governance/basis-escape-v2-2026-09-07.md`|0|0|是|
+|`docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md`|0|0|是|
 |`docs/governance/charter-system-r1.md`|31|0|否|
 |`docs/governance/charter-system-r1.schema.json`|0|0|是|
 |`docs/governance/charter-system-registry.json`|0|0|是|
 |`docs/governance/current-state-sync-invariant.md`|8|0|否|
 |`docs/governance/external-input-non-republication-principle.md`|4|0|否|
+|`docs/governance/generator-meta-plasticity-v2-2026-09-07.md`|0|0|是|
 |`docs/governance/human-surface-editorial-contract.md`|4|0|否|
 |`docs/governance/ignition-generator-plasticity-audit-2026-09-06.md`|0|0|是|
 |`docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md`|0|0|是|
@@ -149,6 +152,7 @@
 |`docs/governance/licensing-model-candidate.md`|3|0|否|
 |`docs/governance/licensing-rights-inventory.md`|3|0|否|
 |`docs/governance/life-community-value-charter.md`|56|0|否|
+|`docs/governance/meta-protocol-64-absorption-vs-generativity-2026-09-07.md`|0|0|是|
 |`docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md`|0|0|是|
 |`docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md`|76|0|否|
 |`docs/governance/meta-protocol-reviews/README.md`|9|0|否|
@@ -166,9 +170,11 @@
 |`docs/governance/meta-protocol-reviews/protocols/V2.md`|14|0|否|
 |`docs/governance/meta-protocol-reviews/protocols/V3.md`|11|0|否|
 |`docs/governance/meta-protocol-reviews/protocols/V4.md`|10|0|否|
+|`docs/governance/next-semantic-leap-assessment-2026-09-07.md`|0|0|是|
 |`docs/governance/non-sycophancy-output-protocol.md`|15|0|否|
 |`docs/governance/representation-residual-casebook-2026-09-06.md`|0|0|是|
 |`docs/governance/self-correction-engine.md`|11|0|否|
+|`docs/governance/semantic-leap-detector-v2-2026-09-07.md`|0|0|是|
 |`docs/human/function-assets/README.md`|0|0|是|
 |`docs/human/function-assets/bulk-explanation.md`|0|0|是|
 |`docs/human/function-assets/entries/a0.md`|0|0|是|
@@ -420,6 +426,8 @@
 |`reports/foundation-architecture/validation-summary-20260712.md`|1|0|否|
 |`reports/governance/121Q8-final-report.md`|6|0|否|
 |`reports/governance/task-IGNITION-20260906-158.md`|0|0|是|
+|`reports/governance/task-IGNITION-20260907-159.md`|0|0|是|
+|`reports/governance/task-IGNITION-20260907-160.md`|0|0|是|
 |`reports/math-foundation/blockers-20260712.md`|1|0|否|
 |`reports/math-foundation/full-object-inventory-20260712.md`|24|0|否|
 |`reports/math-foundation/local-note-sync-report-20260712.md`|6|0|否|

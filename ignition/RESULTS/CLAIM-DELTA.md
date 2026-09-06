@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 645 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 653 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -1066,6 +1066,22 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/governance/basis-escape-v2-2026-09-07.md`
+
+- 状态：`ADDED`
+- Delta：`CD-68D7CBB9AEAE7042`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md`
+
+- 状态：`ADDED`
+- Delta：`CD-5957E8D26E8521D9`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/governance/charter-system-r1.md`
 
 - 状态：`ADDED`
@@ -1103,6 +1119,14 @@
 - 状态：`ADDED`
 - Delta：`CD-43BF10109AF2485E`
 - 关联断言：['NFC-0d645836858d6b9b', 'NFC-5206c675f0bb0004', 'NFC-73869a0d1537936d', 'NFC-9bfc8899663208e3']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/generator-meta-plasticity-v2-2026-09-07.md`
+
+- 状态：`ADDED`
+- Delta：`CD-40A77C9AAF81E52D`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -1159,6 +1183,14 @@
 - 状态：`ADDED`
 - Delta：`CD-B3910E7A27E481AC`
 - 关联断言：['NFC-05db27ab692f1ef4', 'NFC-0d52d7c00bcc03ae', 'NFC-137826a3b73d7890', 'NFC-16b147eb9f71a2ab', 'NFC-23771b4e47609df9', 'NFC-25e241e3d1b30aad', 'NFC-2a31a1e49015849d', 'NFC-2d9089927f7bb3e9', 'NFC-2eebb0731353ddc7', 'NFC-37daf80eb812d995', 'NFC-38bf709c8438f6f0', 'NFC-407f72d07635e9f9', 'NFC-431a6f6ad565bfe8', 'NFC-47dce0a7c6347def', 'NFC-52a525ee435677ab', 'NFC-54f744cff07f001a', 'NFC-56f9bfc8944ba5ef', 'NFC-5ba3db00e541e591', 'NFC-66af78e839c6603e', 'NFC-69ffbfd88f638f79']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/meta-protocol-64-absorption-vs-generativity-2026-09-07.md`
+
+- 状态：`ADDED`
+- Delta：`CD-0718B15AA86C2D20`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -1298,6 +1330,14 @@
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
+## `docs/governance/next-semantic-leap-assessment-2026-09-07.md`
+
+- 状态：`ADDED`
+- Delta：`CD-FA8811C92D24BF67`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
 ## `docs/governance/non-sycophancy-output-protocol.md`
 
 - 状态：`ADDED`
@@ -1319,6 +1359,14 @@
 - 状态：`ADDED`
 - Delta：`CD-07EAA526C5114401`
 - 关联断言：['NFC-21d61a1cafae09f2', 'NFC-4495d501a8239800', 'NFC-5cfd5a01213d6683', 'NFC-715b4a207b34ed6b', 'NFC-82c3d076ace5ba28', 'NFC-9b719fe5ebf7d7eb', 'NFC-a6e597f3e7c505d0', 'NFC-acb9517ff4506712', 'NFC-b9500dedb71f7ab9', 'NFC-c85fae3aad888ff0', 'NFC-f4deae225aa48fde']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `docs/governance/semantic-leap-detector-v2-2026-09-07.md`
+
+- 状态：`ADDED`
+- Delta：`CD-49B7518940381732`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
@@ -3326,6 +3374,22 @@
 
 - 状态：`ADDED`
 - Delta：`CD-DC27E4D07F0CF3F5`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/governance/task-IGNITION-20260907-159.md`
+
+- 状态：`ADDED`
+- Delta：`CD-CDA7771B389C6CEC`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/governance/task-IGNITION-20260907-160.md`
+
+- 状态：`ADDED`
+- Delta：`CD-8BBA307108EF807A`
 - 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
