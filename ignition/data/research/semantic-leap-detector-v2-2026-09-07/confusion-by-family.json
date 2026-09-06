@@ -1,0 +1,9 @@
+{
+  "borderline_undecidable": 2,
+  "v1_false_positives": [
+    "N02_INCREMENTAL_REGISTRY",
+    "N03_CANONICAL_PROTOCOL_MIGRATION"
+  ],
+  "v2_positive_holdout_recall": 1.0,
+  "v2_strong_negative_false_positives": 0
+}
