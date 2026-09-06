@@ -25073,7 +25073,7 @@
 {"first_line":23,"last_line":23,"mention_count":1,"path":"docs/foundation/future-claim-admission-protocol.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":114,"last_line":114,"mention_count":1,"path":"docs/foundation/task-107-incident-report.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":15,"last_line":15,"mention_count":1,"path":"docs/foundation/task-107-semantic-diff.json","role":"REFERENCE","stable_id":"M0"}
-{"first_line":38,"last_line":38,"mention_count":1,"path":"docs/governance/README.md","role":"REFERENCE","stable_id":"M0"}
+{"first_line":38,"last_line":58,"mention_count":2,"path":"docs/governance/README.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":52,"last_line":52,"mention_count":1,"path":"docs/publication/zhiyuan-writing-method.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":54,"last_line":54,"mention_count":1,"path":"reports/architecture/121Q12-baseline-audit.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":23,"last_line":23,"mention_count":1,"path":"reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md","role":"REFERENCE","stable_id":"M0"}

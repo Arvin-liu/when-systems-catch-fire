@@ -1,0 +1,76 @@
+{
+  "answer_basis": "Frozen existing fields and references only; no external truth or provider output was consulted.",
+  "models": {
+    "M0": {
+      "control_count": 24,
+      "control_false_positives": 0,
+      "defect_count": 22,
+      "families": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "flagged_defects": 0,
+      "post_freeze_new_predicates": 0
+    },
+    "MH": {
+      "control_count": 24,
+      "control_false_positives": 0,
+      "defect_count": 22,
+      "families": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "flagged_defects": 22,
+      "post_freeze_new_predicates": 0
+    },
+    "MJ": {
+      "control_count": 24,
+      "control_false_positives": 0,
+      "defect_count": 22,
+      "families": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "flagged_defects": 22,
+      "post_freeze_new_predicates": 0
+    },
+    "ML": {
+      "control_count": 24,
+      "control_false_positives": 0,
+      "defect_count": 22,
+      "families": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "flagged_defects": 16,
+      "post_freeze_new_predicates": 0
+    }
+  },
+  "question": "Does MJ generalize without hidden extra facts or post-freeze local predicates?",
+  "schema_version": "1.0.0",
+  "task_id": "IGNITION-20260906-157"
+}

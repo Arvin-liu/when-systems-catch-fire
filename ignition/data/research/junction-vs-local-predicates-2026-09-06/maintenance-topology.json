@@ -1,4 +1,5 @@
 {
+  "central_blast_radius_retained": true,
   "junction_candidate": {
     "relation_groups": 6,
     "shared_helper": true,
@@ -14,7 +15,7 @@
     "relation_sites": 16,
     "shared_helper": false
   },
-  "pre_score_status": "FROZEN",
+  "maintenance_perturbations": 8,
   "schema_version": "1.0.0",
   "task_id": "IGNITION-20260906-157"
 }
