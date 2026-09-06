@@ -161,6 +161,17 @@ MACHINE_EXCLUDE_PREFIXES = (
     "KNOWLEDGE/",
     "docs/human/",
     "data/publication/fire-seeds/",
+    # Task158 research-only basis-escape records are evidence for a
+    # non-canonical study, not authoritative claim sources. Keep them in
+    # source discovery accounting while excluding them from claim admission.
+    "data/research/basis-escape-meta-plasticity-2026-09-06/",
+    "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",
+    "docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md",
+    "docs/governance/representation-residual-casebook-2026-09-06.md",
+    "docs/governance/ignition-generator-plasticity-audit-2026-09-06.md",
+    "docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md",
+    "reports/governance/task-IGNITION-20260906-158.md",
+    "agent-results/IGNITION-20260906-158-result.md",
 )
 # Task 107 (R1 20260731) generator-input boundary: these prefixes are governed
 # records, narrative/reference surfaces, benchmark candidate data/code or analysis

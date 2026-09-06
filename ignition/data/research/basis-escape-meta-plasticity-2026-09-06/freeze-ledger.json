@@ -1,0 +1,13 @@
+{
+  "answer_key_present": false,
+  "command_blob_sha": "918dce85cc18f6e653422b162c593af6b33d60a8",
+  "command_content_sha256": "513146ae504d794d6a1440c86b3d534d6ed0ba90f4e12c4946a943682461c8f9",
+  "control_count": 8,
+  "formal_base_sha": "212322d41db79bce2dbd116166d3f1ad226291f3",
+  "history_preserved": true,
+  "invalidations": [],
+  "negative_count": 4,
+  "positive_count": 4,
+  "status": "FROZEN_BEFORE_DETECTOR",
+  "task_id": "IGNITION-20260906-158"
+}
