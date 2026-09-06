@@ -23,7 +23,12 @@
     "docs/governance/junction-invariant-candidate-assessment-2026-09-05.md",
     "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-156.md",
-    "agent-results/IGNITION-20260905-156-result.md"
+    "agent-results/IGNITION-20260905-156-result.md",
+    "docs/governance/junction-invariant-vs-local-predicates-competition-2026-09-06.md",
+    "docs/governance/junction-binding-minimality-and-maintenance-2026-09-06.md",
+    "docs/governance/junction-vs-local-predicates-casebook-2026-09-06.md",
+    "reports/governance/task-IGNITION-20260906-157.md",
+    "agent-results/IGNITION-20260906-157-result.md"
   ],
   "claim_ceiling": "Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.",
   "machine_human_pairs": [

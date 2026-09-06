@@ -1,0 +1,23 @@
+{
+  "answer_key_frozen_after_this_record": true,
+  "boundary": "Research-only synthetic fixture evidence. No production validator, gate, runtime, authority, capability, lifecycle or canonical-layer change.",
+  "calibration_before_holdout": true,
+  "freeze_date": "2026-09-06",
+  "freeze_label": "T157-FREEZE-1",
+  "hypotheses": {
+    "H0": "Existing object-local contracts alone explain the observed defects and controls.",
+    "H1": "A shared junction invariant yields incremental holdout detection including novel compositions with bounded control false positives.",
+    "H2": "A frozen local-predicate patchwork is sufficient and generalizes without repeated relation-specific additions."
+  },
+  "models": [
+    "M0",
+    "ML",
+    "MJ",
+    "MH"
+  ],
+  "post_freeze_junction_dimensions": 0,
+  "post_freeze_local_predicate_additions": 0,
+  "question": "Does a minimal typed junction binding over existing fields generalize beyond a frozen local-predicate patchwork on fresh paired fixtures without importing new authority, truth, capability or lifecycle semantics?",
+  "schema_version": "1.0.0",
+  "task_id": "IGNITION-20260906-157"
+}

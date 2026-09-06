@@ -55,3 +55,4 @@ Task `IGNITION-20260905-156` 是对交叉合同 junction invariant 的前瞻性�
 | `meta-protocol-reviews/` | 元协议规范评审 |
 
 > 边界：Charter System R1 为 `CURRENT` 但 `non-Activated`——其元治理权威仅约束"宪章如何被治理"，不激活任何能力 / 运行时 / 执行器；其 `publication_status=UNPUBLISHED`，不构成任何已发布快照（`HOMEPAGE_VISIBLE != CAPABILITY_AVAILABLE`）。
+- [junction-invariant-vs-local-predicates-competition-2026-09-06.md](./junction-invariant-vs-local-predicates-competition-2026-09-06.md) — Task157 的 96 对 / 192 instances、八类 family、M0/ML/MJ/MH 双次盲评分、transfer、消融、维护扰动与变形测试；仅保留为 bounded research candidate，不新增 canonical layer、authority、truth state、validator、gate 或 runtime。

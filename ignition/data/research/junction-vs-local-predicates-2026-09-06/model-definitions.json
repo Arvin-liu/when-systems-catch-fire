@@ -1,0 +1,26 @@
+{
+  "M0": {
+    "description": "Object-local status records only.",
+    "name": "EXISTING_ONLY",
+    "shared_junction_helper": false
+  },
+  "MH": {
+    "candidate": "junction-candidate.json",
+    "description": "MJ plus the frozen ML registry; diagnostic only.",
+    "name": "HYBRID_PROBE",
+    "predicate_registry": "local-predicate-registry-research.json",
+    "shared_junction_helper": true
+  },
+  "MJ": {
+    "candidate": "junction-candidate.json",
+    "description": "M0 plus one typed research candidate over existing fields and references.",
+    "name": "JUNCTION_INVARIANT_TYPED",
+    "shared_junction_helper": true
+  },
+  "ML": {
+    "description": "M0 plus frozen direct family predicates; no shared tuple helper.",
+    "name": "LOCAL_PREDICATE_PATCHWORK",
+    "predicate_registry": "local-predicate-registry-research.json",
+    "shared_junction_helper": false
+  }
+}

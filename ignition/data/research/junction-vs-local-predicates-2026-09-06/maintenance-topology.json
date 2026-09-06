@@ -1,0 +1,20 @@
+{
+  "junction_candidate": {
+    "relation_groups": 6,
+    "shared_helper": true,
+    "tuple_dimensions": [
+      "subject_id",
+      "version",
+      "scope",
+      "lifecycle_epoch"
+    ]
+  },
+  "local_patchwork": {
+    "predicate_count": 16,
+    "relation_sites": 16,
+    "shared_helper": false
+  },
+  "pre_score_status": "FROZEN",
+  "schema_version": "1.0.0",
+  "task_id": "IGNITION-20260906-157"
+}

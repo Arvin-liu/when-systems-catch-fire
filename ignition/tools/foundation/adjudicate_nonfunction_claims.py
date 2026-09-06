@@ -176,6 +176,9 @@ MACHINE_EXCLUDE_PREFIXES = (
     # complete without feeding their labels into the claim registry.
     "data/research/cross-contract-blind-test-2026-09-05/",
     "data/research/cross-contract-prospective-fixtures-2026-09-05/",
+    # Task157 junction-vs-local-predicates corpus is bounded research-only
+    # evidence, not an authoritative claim source.
+    "data/research/junction-vs-local-predicates-2026-09-06/",
     "docs/governance/cross-contract-failure-casebook-2026-09-05.md",
     "docs/governance/cross-contract-historical-blind-test-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-155.md",
@@ -185,6 +188,13 @@ MACHINE_EXCLUDE_PREFIXES = (
     "docs/governance/cross-contract-prospective-casebook-2026-09-05.md",
     "reports/governance/task-IGNITION-20260905-156.md",
     "agent-results/IGNITION-20260905-156-result.md",
+    "tools/research/junction_vs_local_predicates_task157.py",
+    "tests/test_junction_vs_local_predicates_task157.py",
+    "docs/governance/junction-invariant-vs-local-predicates-competition-2026-09-06.md",
+    "docs/governance/junction-binding-minimality-and-maintenance-2026-09-06.md",
+    "docs/governance/junction-vs-local-predicates-casebook-2026-09-06.md",
+    "reports/governance/task-IGNITION-20260906-157.md",
+    "agent-results/IGNITION-20260906-157-result.md",
 )
 # Task 107 (R1 20260731) generator-input boundary: these prefixes are governed
 # records, narrative/reference surfaces, benchmark candidate data/code or analysis
