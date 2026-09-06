@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 529 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 540 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5367,6 +5367,149 @@
 - **问题：** 此来源记录了什么：IGNITION-121Q6C 执行结果？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task160｜Basis Escape V2](../reports/governance/task-IGNITION-20260907-160.md)
+
+- **结果 ID：** `HR-8BBA307108EF807A`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Task160｜Basis Escape V2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260907-159](../reports/governance/task-IGNITION-20260907-159.md)
+
+- **结果 ID：** `HR-CDA7771B389C6CEC`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：IGNITION-20260907-159？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Primary verdict: SEMANTICLEAPDETECTORV2VALIDATEDFORRESEARCHREPLAY.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Semantic Leap Detector V2 (Task159)](../docs/governance/semantic-leap-detector-v2-2026-09-07.md)
+
+- **结果 ID：** `HR-49B7518940381732`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Semantic Leap Detector V2 (Task159)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: research-only replay instrument. It does not change canonical protocol meaning, Current state, authority, capability, production readiness, or acceptance.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task160｜Basis Escape V2](../docs/governance/next-semantic-leap-assessment-2026-09-07.md)
+
+- **结果 ID：** `HR-FA8811C92D24BF67`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Task160｜Basis Escape V2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task160｜Basis Escape V2](../docs/governance/meta-protocol-64-absorption-vs-generativity-2026-09-07.md)
+
+- **结果 ID：** `HR-0718B15AA86C2D20`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Task160｜Basis Escape V2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task160｜Basis Escape V2](../docs/governance/generator-meta-plasticity-v2-2026-09-07.md)
+
+- **结果 ID：** `HR-40A77C9AAF81E52D`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Task160｜Basis Escape V2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task160｜Basis Escape V2](../docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md)
+
+- **结果 ID：** `HR-5957E8D26E8521D9`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Task160｜Basis Escape V2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task160｜Basis Escape V2](../docs/governance/basis-escape-v2-2026-09-07.md)
+
+- **结果 ID：** `HR-68D7CBB9AEAE7042`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Task160｜Basis Escape V2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task160｜Basis Escape V2](../agent-results/IGNITION-20260907-160-result.md)
+
+- **结果 ID：** `HR-232C314ACDD088B8`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Task160｜Basis Escape V2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260907-160 progress](../agent-results/IGNITION-20260907-160-progress.md)
+
+- **结果 ID：** `HR-F03C0E16CBB5B9F8`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260907-160 progress？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task159 result](../agent-results/IGNITION-20260907-159-result.md)
+
+- **结果 ID：** `HR-A2D31113DB51B1D6`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Task159 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** SEMANTICLEAPDETECTORV2VALIDATEDFORRESEARCHREPLAY for the frozen local-history corpus. N02 and N03 are NONLEAP because their OldBasis-to-NewRepresentation mappings preserve object language, operations, and question space. No lifecycle, canonical, provider, or publication action occurred.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

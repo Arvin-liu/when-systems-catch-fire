@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-1faefff9c300160f"></a>
+## S4 规范性审核 - 网络协议 (Network Protocol)
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：价值：分布式协作、多中心治理、冗余、知识共享与局部失效隔离，提升系统韧性。条件：仅当责任可追溯、无隐形中心垄断、且局部失效可隔离时才有价值。伤害：当责任消失、隐形中心垄断、信息传染或网络效应锁定时，会伤害共同体。不可缺少的约束：责任可追溯、防止隐形中心、反锁定、局部失效隔离、多中心。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：S4 规范性审核 - 网络协议 (Network Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；系统由节点—边网络构成，交互通过连接发生。；未处理'隐形中心'与'网络效应锁定'，易退化为平台垄断（歧义/滥用风险）。
+- 完整阅读：[docs/governance/meta-protocol-reviews/protocols/S4.md](../../docs/governance/meta-protocol-reviews/protocols/S4.md)
+
 <a id="reading-hr-1fc7367092e0045c"></a>
 ## Task 98 claim-governance implementation record
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
@@ -31,6 +38,13 @@
 - 1 分钟：Task ID: IGNITION-20260822-134 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260822-134 — Residual Debt & Projection Hygiene R1；Task ID: IGNITION-20260822-134；Formal task ordinal: 134；Latest architecture task: IGNITION-20260821-129; architecture task ordinal: 129.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；The canonical Current source is terminal and repository-local RELEASEREADY. currentiterationboundary=134 is only the deprecated compatibility alias of the formal ordinal; it is not an independent truth source. The task remains PRESENTATIONONLY, the map remains 0.12.0 Current with 0.11.0 Historical, and CURRENTWITHOPENOBLIGATIONS / EPISTEMICALLYACCEPTED=0 rem…
 - 完整阅读：[agent-results/IGNITION-20260822-134-result.md](../../agent-results/IGNITION-20260822-134-result.md)
+
+<a id="reading-hr-232c314acdd088b8"></a>
+## Task160｜Basis Escape V2
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
+- 1 分钟：Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task160｜Basis Escape V2；Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.；This is a research-only, repository-local result from exact Formal base 76e44213904928f9f0be8ba131b86529e44e7682. It does not alter the 12-element protocol, the 64 matrix, Ψ₀/Pmeta, canonical layers, validators, lifecycle, production readiness, external truth, Owner acceptance or epistemic status.；Command commit/blob/content SHA-256: f6fc4438e711e928cce29d07ed54b7395434b7c8 / 57aeb34cc5fea2202bd87e5998bd7851f7753a9f / e8155ff841bf4ee95eafddd4f5b2e081890e73a08c364011cd7108ae564b23d0；Corpus: total tracked universe 4046, used 2937, excluded 1109; basis-free packets 1015; C7 engineering negatives 1922；Split: discovery 802, holdout 213; C8 mixed-theoretical holdout is derived in c8-mixed-holdout-manifest.json; rule frozen before induction
+- 完整阅读：[agent-results/IGNITION-20260907-160-result.md](../../agent-results/IGNITION-20260907-160-result.md)
 
 <a id="reading-hr-23602e485d46c33b"></a>
 ## 080 Highest Model Escalation Summary
@@ -339,17 +353,3 @@
 - 1 分钟：The AI entry surfaces now give one recovery rule: the engineering phase is closing on the frozen Task142 architecture baseline, while the external executor line remains Owner-deferred with no automatic resume or new live attempt. Task143's articles, Book Project and samples are explicitly smoke-t… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260828-144 Step 07 — AI cold-start / handoff sync；The AI entry surfaces now give one recovery rule: the engineering phase is closing on the frozen Task142 architecture baseline, while the external executor line remains Owner-deferred with no automatic resume or new live attempt. Task143's articles, Book Project and samples are explicitly smoke-test outputs awaiting Owner review and not granted publication a…；Formal writing and book production require an Owner-selected production brief. An Agent may parse, research, draft and edit within that brief, but cannot select a topic, initiate a book or accept publication. The root operating boundary, AI cold-start, AI handoff and machine entry all carry this rule; the generated Current Snapshot remains the source for vol…
 - 完整阅读：[reports/operations/ignition-144-step07-ai-cold-start-handoff.md](../../reports/operations/ignition-144-step07-ai-cold-start-handoff.md)
-
-<a id="reading-hr-3548680b422987dd"></a>
-## IGNITION-20260828-147 result
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`
-- 1 分钟：Task ID: IGNITION-20260828-147 Formal task ordinal: 147 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260828-147 result；Task ID: IGNITION-20260828-147 Formal task ordinal: 147；Task147 completes the bounded repository-local README project-identity and architecture-navigation repair. The formal task is terminal as COMPLETEDWITHOPENOBLIGATIONS: the exact Owner-supplied ### 项目现状 paragraph is present without work-status additions; ## 1. 项目与价值 contains only the two direct human blocks ### 项目现状 and ### 价值宪章; and the architecture section…；The raw/transparent SVG secondary entry and href/link-metadata/registry/topology/layout or rendered-hotspot machine explanations are absent from the README. The component navigation contains 22 links whose targets were checked against the current architecture registry, map specification and canonical documentation; the map itself was not changed.；The homepage remains humanstaticsummary / nogeneratedsnapshot. Current Snapshot, task lineage, live and architecture counts, detailed engineering explanations and machine state remain in the linked Current surfaces. Rebuilding Current projections does not rewrite or re-inject the README identity or component menu.；Affected Human Front Door, Human Surface, Current projection, compiler, Current state, ordinal, map-freeze and related unit-test gates passed naturally: 42 tests, 0 failures, 0 errors and 0 skips. The authorized narrow task does not require the long full suite.
-- 完整阅读：[agent-results/IGNITION-20260828-147-result.md](../../agent-results/IGNITION-20260828-147-result.md)
-
-<a id="reading-hr-3611a9bf0615b4e7"></a>
-## Foundation documentation
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Foundation documentation；076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。；函数、模型、定理、公式、律或判定器还必须读取：；旧表是不可变来源；data/foundation/function-assets/corrections.jsonl 是 task 98 首批纠偏权威覆盖。task 99 的 identity-cards.jsonl 为每个发现项提供现行处置；自动 census 仍只是候选，quarantine 也不因登记、编号或测试而获得真值。；task 100 的 data/foundation/nonfunction-claims/claim-registry.jsonl 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 quarantine，不表示证明、外部证据、原创性、同行评审或复现完成。
-- 完整阅读：[docs/foundation/README.md](../../docs/foundation/README.md)

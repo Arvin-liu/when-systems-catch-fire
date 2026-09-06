@@ -4,6 +4,48 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-7537e6849db277e0"></a>
+## IGNITION-20260824-138 — Step 04 Codex Live Adapter R3
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The Codex adapter now has an explicit R3 mode in which the disposable task workspace remains read-only and --sandbox read-only remains bound in the literal argv. Runtime HOME, TMPDIR, CODEXHOME and XDG cache/config/runtime paths are redirected to one empty, attempt-specific writable scratch lease… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260824-138 — Step 04 Codex Live Adapter R3；The Codex adapter now has an explicit R3 mode in which the disposable task workspace remains read-only and --sandbox read-only remains bound in the literal argv. Runtime HOME, TMPDIR, CODEXHOME and XDG cache/config/runtime paths are redirected to one empty, attempt-specific writable scratch lease. The lease is separate from the task workspace, formal reposit…；The adapter keeps --ephemeral, --ignore-user-config, --ignore-rules, --skip-git-repo-check, the one-level child guard and the repo.read permission ceiling. Dangerous bypass flags and widened workspace/effect contracts remain rejected. Existing login state is represented only by an opaque auth:// reference; no credential content is read or materialized.；The R3 dispatch accepts completion only when the transport returns a runtime-scratch receipt whose attempt binding, empty-start digest, transient content policy and CLEANED status are all proved. The adapter also records workspace before/after digests and the provider-neutral three-domain contract. Missing scratch lifecycle support or failed cleanup is fail-…；The deterministic R3 adapter test used a local fake public CLI, not a model or provider inference. It wrote a helper marker only into scratch; the task workspace digest and modes remained unchanged, all scratch content was cleaned, and the public JSONL event parsed successfully. The test also proves that an R3 adapter refuses a transport without scratch life…；The live-bridge targeted set ran 83 tests with zero failures, errors or skips.
+- 完整阅读：[reports/operations/ignition-138-step04-codex-adapter-r3.md](../../reports/operations/ignition-138-step04-codex-adapter-r3.md)
+
+<a id="reading-hr-75430bb574c9c15b"></a>
+## 认知迁移编辑修订：可恢复 before/after 范例
+`HISTORICAL_COMPLETION_RECORD` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: OWNERACCEPTEDOPTIONALEXPERIMENTALMODULE 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：认知迁移编辑修订：可恢复 before/after 范例；Status: OWNERACCEPTEDOPTIONALEXPERIMENTALMODULE；Module version: 0.1.0；The before passages are recoverable from current formal main e5c6d1d0b75dae41b414474bc22747816cd00c78. The examples use different text types. Neither source work is modified by this module. They do not measure reader cognition, literary quality, knowledge transfer, or effectiveness.；主题：Example A — historical interpretive essay；Source: docs/publication/works/when-an-emperor-manufactures-heaven.md.
+- 完整阅读：[docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md](../../docs/publication/zhiyuan-writing-cognitive-migration-editorial-revision-examples.md)
+
+<a id="reading-hr-75acdd1f73f32af7"></a>
+## Full migration coverage
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Every deduplicated formal object has an object, claim, argument, source, mapping and open proof-obligation record. Every formal case and candidate case has an evidence record. Pending claims remain pending. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Full migration coverage；Every deduplicated formal object has an object, claim, argument, source, mapping and open proof-obligation record. Every formal case and candidate case has an evidence record. Pending claims remain pending.
+- 完整阅读：[reports/foundation-architecture/full-migration-coverage-20260712.md](../../reports/foundation-architecture/full-migration-coverage-20260712.md)
+
+<a id="reading-hr-75b56a91c97f20be"></a>
+## Future non-function claim admission protocol
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This protocol is the mandatory entry path for a new theorem, law, principle, mechanism, causal judgment, impossibility result, cross-domain correspondence, prediction, empirical assertion, ontology claim, interpretation rule or public summary. It extends the task 98–99 function-asset governance;… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Future non-function claim admission protocol；This protocol is the mandatory entry path for a new theorem, law, principle, mechanism, causal judgment, impossibility result, cross-domain correspondence, prediction, empirical assertion, ontology claim, interpretation rule or public summary. It extends the task 98–99 function-asset governance; it does not replace function identity cards.；Admission means that a claim has a traceable record and a permitted wording. It does not mean that the claim is true, novel, peer reviewed or independently replicated.；主题：1. Submit one atomic claim；One record must state one proposition. Split conjunctions whose parts can have different truth values. Supply:；a stable candidate ID and title;
+- 完整阅读：[docs/foundation/future-claim-admission-protocol.md](../../docs/foundation/future-claim-admission-protocol.md)
+
+<a id="reading-hr-75c11de1d71e9e27"></a>
+## IGNITION-20260826-140 Step 15 — Candidate natural full regression
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The exact Task140 candidate head 86a188e4fc86037086f8d1ba7de0fd9130cd5249 completed the natural isolated full regression with 1227 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 3070.464s runtime / 3071.522s elapsed, with no watchdog, arbitrary timeout or process kill.… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260826-140 Step 15 — Candidate natural full regression；The exact Task140 candidate head 86a188e4fc86037086f8d1ba7de0fd9130cd5249 completed the natural isolated full regression with 1227 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 3070.464s runtime / 3071.522s elapsed, with no watchdog, arbitrary timeout or process kill. The isolated dependency contract passed with Python 3.14.6, Sy…；The machine receipt preserves both natural attempts. The first run was not relabeled as green: it completed with 1201 tests, 19 failures, 1 error and 0 skips because the canonical component registry overlap repair had not yet been reflected in the generated component execution profiles. The profiles were regenerated, their focused 45-test closure passed, and…；The successful capture remains external to the formal repository:；stdout SHA-256: 447c8fc9507588ab4eeb13077bbcdf408820fbc00ace54050da628e460c64124;；stderr SHA-256: f9b5f13dc70dc9c38421298bd5316682b79ee584bda8020c4788982a27fe8f8e.
+- 完整阅读：[reports/operations/ignition-140-step15-candidate-full-regression.md](../../reports/operations/ignition-140-step15-candidate-full-regression.md)
+
+<a id="reading-hr-76c6925c9fcdf852"></a>
+## Human Surface 编辑契约
+`CURRENT_SCOPED_SOURCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- 1 分钟：状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Human Surface 编辑契约；状态：CURRENTWITHOPENOBLIGATIONS · 版本：1.0.0 · 写作方法：之元写作法 0.5.0；本契约把“所有 Human Surface 必须经过之元写作法”变成长期制度。它不是第二套写作方法，也不是事实、证明、外部证据或 Owner 授权。它只规定：机器记录如何被翻译成面向人的入口，以及这次翻译必须留下哪些边界。；凡是面向人的项目入口、结果页、成果册、文章、案例、研究报告摘要、函数资产、非函数资产、写作片段、失败说明、负结果和公共回应，均属于 Human Surface。机器 JSON/JSONL、schema、测试日志和内部收据可以保持精确字段，但只要它们被转成面向人的页面，就必须经过本契约。；它是什么、为什么出现。 用目标读者能直接理解的语言说明对象、来源类型和阅读目的。；它可以做什么。 只写当前登记允许的用途，例如继续阅读、比较、复核、提出下一步问题或运行仓库内的受限流程。
+- 完整阅读：[docs/governance/human-surface-editorial-contract.md](../../docs/governance/human-surface-editorial-contract.md)
+
 <a id="reading-hr-771c2981fcc20396"></a>
 ## 121Q13 Attention, Distribution, And Compression Report
 `CANDIDATE_OR_PENDING_SOURCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
@@ -311,45 +353,3 @@
 - 1 分钟：inputs/collisions/20260708-smoke-test/ 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）；inputs/collisions/20260708-smoke-test/；task.md（P1 接入烟雾测试任务说明）；outputs/collisions/20260708-smoke-test/；collision-report.md；source-snapshot.md
 - 完整阅读：[outputs/audit/p1-collision-workflow-smoke-test-20260708.md](../../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
-
-<a id="reading-hr-8b3081462a058d1a"></a>
-## Effectual Action Plane
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: 121Q12OPERATIONOVERLAY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Effectual Action Plane；Status: 121Q12OPERATIONOVERLAY；The Effectual Action Plane is a cross-layer operating surface for choosing a next action when the goal, metric, path, or available resources are still unstable. It does not create truth, proof, or final project identity.；When the project does not yet know exactly what it should become next, the plane asks:；Given the current code, data, AI budget, maintainer time, economic conditions, cooperation relationships, and open gaps, what small action can make the next state clearer?；This differs from causal planning. Causal planning starts from a stable goal and selects means. Effectual action starts from current means and selects a reversible action whose loss is affordable and whose result changes the state.
-- 完整阅读：[docs/architecture/effectual-action-plane.md](../../docs/architecture/effectual-action-plane.md)
-
-<a id="reading-hr-8b777f70fc22bb69"></a>
-## Owner observation seed: OWNER-OBS-ESI-001
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：公共仓库只保留一个去身份化的摘要：一个外部模型在阅读公开架构和治理材料 后，曾在后续回答中主动把工程判断与真值判断分开、保留部分未知并抵抗没有 证据支持的升级。这里没有私人正文、截图、聊天上下文、平台内容、账号或本机 路径。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Owner observation seed: OWNER-OBS-ESI-001；公共仓库只保留一个去身份化的摘要：一个外部模型在阅读公开架构和治理材料 后，曾在后续回答中主动把工程判断与真值判断分开、保留部分未知并抵抗没有 证据支持的升级。这里没有私人正文、截图、聊天上下文、平台内容、账号或本机 路径。；这条记录的身份是 OWNERSUPPLIED / NOTINDEPENDENTLYREPLICATED / NOTCAUSALPROOF / CANDIDATEESISIGNAL。它的用途是帮助设计盲测案例，不是 作为 ESI 已成立的样本，也不是因果证明。替代解释包括 in-context learning、 task inference、structural priming、术语/风格模仿、默认谨慎和上下文模仿。；机器字段与隐私声明见 owner-observation-esi-001.json。
-- 完整阅读：[docs/architecture/owner-observation-esi-001.md](../../docs/architecture/owner-observation-esi-001.md)
-
-<a id="reading-hr-8b858103d6938d81"></a>
-## Agent Runtime R1：真实行动层
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：本页记录任务 120 的当前工程边界。R0 的 generic kernel、typed loop、checkpoint/resume 和非知识 pilot 继续保留为历史与回归基线；R1 只增加一个受声明 workspace policy 约束的本地执行面。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Agent Runtime R1：真实行动层；本页记录任务 120 的当前工程边界。R0 的 generic kernel、typed loop、checkpoint/resume 和非知识 pilot 继续保留为历史与回归基线；R1 只增加一个受声明 workspace policy 约束的本地执行面。；WorkspacePolicy 是一次 run 的边界。路径只能是 workspace 内的 canonical relative path；symlink component、special file、parent traversal、越过读写根的路径和未 allowlist 的 executable 都 fail closed。命令使用 literal argv、shell=False、stdin 关闭、显式超时和 bounded stdout/stderr；R1 没有删除、远程 Git mutation、package install、sudo、network automation 或 system settings action。；主题：Durable action protocol；每个 action 先由完整 packet digest 和 source plan hash 固定，再产生 approval request（若 action class 需要），然后取得 execution lease。journal 在副作用前写入 PREPARED，在执行前写入 EXECUTING，只有获得 typed result 后才写入 COMPLETED。重启时：；已记录 postimage 且当前 workspace 匹配时，写入 RECONCILED，不重跑；
-- 完整阅读：[docs/architecture/agent-runtime-r1.md](../../docs/architecture/agent-runtime-r1.md)
-
-<a id="reading-hr-8c7e1c2721f6e7fd"></a>
-## map-agent-delivery-operations
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `COGNITION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Observer: maintainer coordinating AI execution, validation, PR review, and command-bus receipt 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：map-agent-delivery-operations；Observer: maintainer coordinating AI execution, validation, PR review, and command-bus receipt；Decision question: Which delivery steps should remain human/accountable, which can be automated, and which are rented infrastructure?；Value recipient / affected subject: user, maintainer, reviewers, and future agents；Claim ceiling: derivedoperationsnavigationview；主题：Unmapped Residue
-- 完整阅读：[reports/atlas/maps/map-agent-delivery-operations.md](../../reports/atlas/maps/map-agent-delivery-operations.md)
-
-<a id="reading-hr-8d16219ed78008e0"></a>
-## IGNITION-20260822-132 — Canonical Current Advancement & Release Transaction R1
-`HISTORICAL_COMPLETION_RECORD` · `COGNITION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Task ID: IGNITION-20260822-132 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-132 — Canonical Current Advancement & Release Transaction R1；Task ID: IGNITION-20260822-132；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；This is the formal repository result for the Task132 canonical-Current advancement and release-transaction implementation. No Owner intermediate relay was used. The result records repository-local implementation, deterministic projection, bounded regression and pre-publication candidate evidence. It does not assert formal main publication; the exact release…；主题：Identity closure；Canonical Current formal task: IGNITION-20260822-132; terminal status COMPLETEDWITHCLASSIFIEDRESIDUALS; currenttaskterminal=true.
-- 完整阅读：[agent-results/IGNITION-20260822-132-result.md](../../agent-results/IGNITION-20260822-132-result.md)
-
-<a id="reading-hr-8d592a920b9edd0e"></a>
-## 12 元协议规范性审核（外部治理记录）
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：原定义： 选择使系统延续时间最大（或延续概率最高）的行动。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：12 元协议规范性审核（外部治理记录）；任务：IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：V1 = IGNITION-20260709-040；V2–E4 = IGNITION-20260709-042；本目录说明：本记录回答“协议应受到什么价值边界约束”，不等于数学形式化、经验验证、独立人类复核、治理批准或正式协议晋级已经完成。；原样接受（ACCEPTASIS）：0
-- 完整阅读：[docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md](../../docs/governance/meta-protocol-reviews/12-meta-protocol-normative-review.md)

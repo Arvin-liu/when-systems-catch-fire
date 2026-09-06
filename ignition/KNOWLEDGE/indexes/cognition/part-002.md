@@ -419,6 +419,11 @@
   - 可搜索名称：IGNITION-20260828-144 Step 05 — engineering phase closure state / ignition-144-step05-phase-closure-state
   - 来源：`reports/operations/ignition-144-step05-phase-closure-state.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260907-160 progress](../../ASSET-CARDS.md#asset-hr-f03c0e16cbb5b9f8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：IGNITION-20260907-160 progress / IGNITION-20260907-160-progress
+  - 来源：`agent-results/IGNITION-20260907-160-progress.md`
+  - 依赖：—；被引用：—
 - [incomplete\), and an attempt identity can never be overwritten or reused.](../../../agent_federation/live_attempt_ledger.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd90cd03af1893f8 / incomplete\), and an attempt identity can never be overwritten or reused.
@@ -2109,6 +2114,16 @@
   - 可搜索名称：NFC-a066faae3c3e9d8e / Task136 terminalizes the repository-local Live External Executor Bridge R1 as `RELEASE_READY`. `CURRENT_WITH_OPEN_OBLIGA
   - 来源：`agent-results/IGNITION-20260823-136-result.md`
   - 依赖：—；被引用：—
+- [Task159 result](../../ASSET-CARDS.md#asset-hr-a2d31113db51b1d6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task159 result / IGNITION-20260907-159-result
+  - 来源：`agent-results/IGNITION-20260907-159-result.md`
+  - 依赖：—；被引用：—
+- [Task160｜Basis Escape V2](../../ASSET-CARDS.md#asset-hr-232c314acdd088b8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task160｜Basis Escape V2 / IGNITION-20260907-160-result
+  - 来源：`agent-results/IGNITION-20260907-160-result.md`
+  - 依赖：—；被引用：—
 - [terminal_state="COMPLETED_VALIDATED",](../../../agent_federation/pilots.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3d2713b4350057f8 / terminal_state="COMPLETED_VALIDATED",
@@ -2487,20 +2502,5 @@
 - [unvalidated = _receipt\(](../../../agent_federation/live_task137.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5f7d1e99a375d314 / unvalidated = _receipt\(
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [unvalidated = LiveExecutorReceipt.from_dict\(unvalidated.to_dict\(\)\)](../../../agent_federation/live_task137.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-bb3dcedfb6226075 / unvalidated = LiveExecutorReceipt.from_dict\(unvalidated.to_dict\(\)\)
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [unvalidated,](../../../agent_federation/live_task137.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7332764ac967d1a7 / unvalidated,
-  - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [unvalidated_receipt: LiveExecutorReceipt \| None](../../../agent_federation/live_task137.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-fd0adb3b840e307d / unvalidated_receipt: LiveExecutorReceipt \| None
   - 来源：`agent_federation/live_task137.py`
   - 依赖：—；被引用：—

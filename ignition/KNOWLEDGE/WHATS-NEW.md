@@ -4,6 +4,105 @@
 
 ## 2026
 
+<a id="change-src-hr-fa8811c92d24bf67"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [next-semantic-leap-assessment-2026-09-07.md](../docs/governance/next-semantic-leap-assessment-2026-09-07.md)
+- **资产卡：** [HR-FA8811C92D24BF67](./ASSET-CARDS.md#asset-hr-fa8811c92d24bf67)
+
+<a id="change-src-hr-f03c0e16cbb5b9f8"></a>
+### 2026-09-07 · IGNITION-20260907-160 progress
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT.
+- **来源：** [IGNITION-20260907-160-progress.md](../agent-results/IGNITION-20260907-160-progress.md)
+- **资产卡：** [HR-F03C0E16CBB5B9F8](./ASSET-CARDS.md#asset-hr-f03c0e16cbb5b9f8)
+
+<a id="change-src-hr-cda7771b389c6cec"></a>
+### 2026-09-07 · IGNITION-20260907-159
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Primary verdict: SEMANTICLEAPDETECTORV2VALIDATEDFORRESEARCHREPLAY.
+- **来源：** [task-IGNITION-20260907-159.md](../reports/governance/task-IGNITION-20260907-159.md)
+- **资产卡：** [HR-CDA7771B389C6CEC](./ASSET-CARDS.md#asset-hr-cda7771b389c6cec)
+
+<a id="change-src-hr-a2d31113db51b1d6"></a>
+### 2026-09-07 · Task159 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** SEMANTICLEAPDETECTORV2VALIDATEDFORRESEARCHREPLAY for the frozen local-history corpus. N02 and N03 are NONLEAP because their OldBasis-to-NewRepresentation mappings preserve object language, operations, and question space. No lifecycle, canonical, provider, or publication action occurred.
+- **来源：** [IGNITION-20260907-159-result.md](../agent-results/IGNITION-20260907-159-result.md)
+- **资产卡：** [HR-A2D31113DB51B1D6](./ASSET-CARDS.md#asset-hr-a2d31113db51b1d6)
+
+<a id="change-src-hr-8bba307108ef807a"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [task-IGNITION-20260907-160.md](../reports/governance/task-IGNITION-20260907-160.md)
+- **资产卡：** [HR-8BBA307108EF807A](./ASSET-CARDS.md#asset-hr-8bba307108ef807a)
+
+<a id="change-src-hr-68d7cbb9aeae7042"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [basis-escape-v2-2026-09-07.md](../docs/governance/basis-escape-v2-2026-09-07.md)
+- **资产卡：** [HR-68D7CBB9AEAE7042](./ASSET-CARDS.md#asset-hr-68d7cbb9aeae7042)
+
+<a id="change-src-hr-5957e8d26e8521d9"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [basis-free-induction-and-residual-casebook-2026-09-07.md](../docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md)
+- **资产卡：** [HR-5957E8D26E8521D9](./ASSET-CARDS.md#asset-hr-5957e8d26e8521d9)
+
+<a id="change-src-hr-49b7518940381732"></a>
+### 2026-09-07 · Semantic Leap Detector V2 (Task159)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** Status: research-only replay instrument. It does not change canonical protocol meaning, Current state, authority, capability, production readiness, or acceptance.
+- **来源：** [semantic-leap-detector-v2-2026-09-07.md](../docs/governance/semantic-leap-detector-v2-2026-09-07.md)
+- **资产卡：** [HR-49B7518940381732](./ASSET-CARDS.md#asset-hr-49b7518940381732)
+
+<a id="change-src-hr-40a77c9aaf81e52d"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [generator-meta-plasticity-v2-2026-09-07.md](../docs/governance/generator-meta-plasticity-v2-2026-09-07.md)
+- **资产卡：** [HR-40A77C9AAF81E52D](./ASSET-CARDS.md#asset-hr-40a77c9aaf81e52d)
+
+<a id="change-src-hr-232c314acdd088b8"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [IGNITION-20260907-160-result.md](../agent-results/IGNITION-20260907-160-result.md)
+- **资产卡：** [HR-232C314ACDD088B8](./ASSET-CARDS.md#asset-hr-232c314acdd088b8)
+
+<a id="change-src-hr-0718b15aa86c2d20"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [meta-protocol-64-absorption-vs-generativity-2026-09-07.md](../docs/governance/meta-protocol-64-absorption-vs-generativity-2026-09-07.md)
+- **资产卡：** [HR-0718B15AA86C2D20](./ASSET-CARDS.md#asset-hr-0718b15aa86c2d20)
+
 <a id="change-src-hr-ea13f7ea325dac81"></a>
 ### 2026-09-06 · Historical Basis-Leaps Reconstruction — IGNITION-20260906-158
 
