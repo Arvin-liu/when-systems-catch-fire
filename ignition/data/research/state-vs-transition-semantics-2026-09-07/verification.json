@@ -1,0 +1,15 @@
+{
+  "answer_key_not_loaded_in_blind_packets": true,
+  "formal_base": {
+    "ref": "work/IGNITION-20260907-160",
+    "sha": "9ceb4c4eb84203bee2b62dcdbe0d5c1c09707438"
+  },
+  "freeze_status": "FROZEN",
+  "instance_count": 288,
+  "pair_count": 144,
+  "passed": true,
+  "same_facts_for_pair_members": true,
+  "score_runs_byte_identical": true,
+  "task159_signature_exact": true,
+  "task_id": "IGNITION-20260907-161"
+}
