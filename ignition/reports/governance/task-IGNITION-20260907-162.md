@@ -6,7 +6,11 @@ The controlling specification is `Arvin-liu/1111/agent-commands/IGNITION-2026090
 
 The command was executed as research-only work. The required `instructions/CURRENT.md` and `relay/current` pointers were missing in the exact base and remain untouched, recorded as `STALE_CONTROL_POINTER / PREFLIGHT_RESIDUAL`. No canonical runtime, canonical validator, Current/relay surface, Ready transition, merge, Owner acceptance, production claim, external action, or Task163 was performed.
 
-The result remains `RESEARCH_ONLY_DRAFT_PENDING`; final branch/PR/CI observations are appended to this report after publication.
+The result remains `RESEARCH_ONLY_DRAFT_PENDING`.
+
+## Formal publication receipt
+
+Formal Draft PR #212 was created at `https://github.com/Arvin-liu/when-systems-catch-fire/pull/212`. At the first exact-head observation, it was OPEN and DRAFT with base `work/IGNITION-20260907-161` at `5ccb15d45cec259d5397f1843278fd98011105aa` and head `work/IGNITION-20260907-162` at `e94a067f94f572afe886a422354a3257ce03b116`. The first exact-head Actions snapshot showed `foundation-validation` run 876, `repository-path-accounting-preflight` run 270, and `architecture-pages` run 33 all `in_progress`. This is a pending CI observation, not acceptance.
 
 ## Explicit answers to the command questions
 

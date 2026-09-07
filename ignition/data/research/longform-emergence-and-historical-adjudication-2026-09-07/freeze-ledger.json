@@ -24,6 +24,22 @@
     "repository": "Arvin-liu/when-systems-catch-fire",
     "state": "open"
   },
+  "formal_publication": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "pr_number": 212,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/212",
+    "state": "open",
+    "draft": true,
+    "base_ref": "work/IGNITION-20260907-161",
+    "base_sha": "5ccb15d45cec259d5397f1843278fd98011105aa",
+    "head_ref": "work/IGNITION-20260907-162",
+    "head_sha_at_first_observation": "e94a067f94f572afe886a422354a3257ce03b116",
+    "initial_exact_head_ci": {
+      "foundation-validation": {"run_number": 876, "status": "in_progress"},
+      "repository-path-accounting-preflight": {"run_number": 270, "status": "in_progress"},
+      "architecture-pages": {"run_number": 33, "status": "in_progress"}
+    }
+  },
   "history_track_frozen": true,
   "hypotheses_frozen_before_source_discovery": true,
   "source_selection_frozen_before_source_discovery": true,
