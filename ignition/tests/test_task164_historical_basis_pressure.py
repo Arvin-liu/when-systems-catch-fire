@@ -59,6 +59,17 @@ class Task164HistoricalBasisPressureTests(unittest.TestCase):
         stop = json.loads((OUT / "stage-b-stop.json").read_text(encoding="utf-8"))
         self.assertEqual(stop["status"], "NOT_RUN_STAGE_A_STOP")
 
+    def test_checkpoint_chronology_is_monotone(self):
+        rows = [json.loads(line) for line in (OUT / "checkpoint-manifest.jsonl").read_text(encoding="utf-8").splitlines()]
+        grouped = {}
+        for row in rows:
+            grouped.setdefault(row["blind_epoch_id"], []).append(row)
+        for epoch_rows in grouped.values():
+            epoch_rows.sort(key=lambda row: row["checkpoint_index"])
+            positions = [row["chronology_position_in_full_history"] for row in epoch_rows]
+            self.assertEqual(positions, sorted(positions))
+            self.assertEqual([row["checkpoint_index"] for row in epoch_rows], list(range(len(epoch_rows))))
+
     def test_frozen_artifacts_are_self_consistent(self):
         ledger = json.loads((OUT / "freeze-ledger.json").read_text(encoding="utf-8"))
         for name, expected in ledger["frozen_file_hashes"].items():
