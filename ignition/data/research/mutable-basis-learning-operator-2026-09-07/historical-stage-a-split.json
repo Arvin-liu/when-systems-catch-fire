@@ -1,0 +1,31 @@
+{
+  "calibration_packets": [
+    "HP-001",
+    "HP-005",
+    "HP-006",
+    "HP-015",
+    "HP-016",
+    "HP-017",
+    "HP-018"
+  ],
+  "holdout_packets": [
+    "HP-002",
+    "HP-003",
+    "HP-004",
+    "HP-007",
+    "HP-008",
+    "HP-009",
+    "HP-010",
+    "HP-011",
+    "HP-012",
+    "HP-013",
+    "HP-014"
+  ],
+  "positive_holdout_packets": [
+    "HP-002",
+    "HP-003",
+    "HP-004"
+  ],
+  "split_frozen_before_operator_run": true,
+  "task_id": "IGNITION-20260907-163"
+}
