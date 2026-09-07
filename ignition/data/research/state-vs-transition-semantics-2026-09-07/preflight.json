@@ -1,0 +1,69 @@
+{
+  "command_source": {
+    "blob": "610febea27a1e4cb62d9c32da4b19a9113a243ec",
+    "commit": "59003ae23c56a2f0c4ac6389d5235c938cd5f5fd",
+    "content_sha256": "9f1df434d39aa379fac5eb2254b250530720e994176526da3c971ee0e84d06de",
+    "path": "agent-commands/IGNITION-20260907-161.md",
+    "repository": "Arvin-liu/1111",
+    "source_url": "https://github.com/Arvin-liu/1111/blob/59003ae23c56a2f0c4ac6389d5235c938cd5f5fd/agent-commands/IGNITION-20260907-161.md"
+  },
+  "control_pointers": {
+    "instructions/CURRENT.md": {
+      "action": "preserve missing or stale pointer; no create/update/redirect",
+      "exists": false,
+      "preserved": true
+    },
+    "relay/current": {
+      "action": "preserve missing or stale pointer; no create/update/redirect",
+      "exists": false,
+      "preserved": true
+    }
+  },
+  "forbidden_actions": [
+    "no canonical runtime or validator integration",
+    "no Ready, merge, Current, Owner acceptance, or external action",
+    "no use of Task160 transition residuals as positive labels",
+    "no answer-key access during blind scoring"
+  ],
+  "formal_pr": {
+    "base_ref": "work/IGNITION-20260907-159",
+    "base_sha_observed": "76e44213904928f9f0be8ba131b86529e44e7682",
+    "draft": true,
+    "head_sha_observed": "9ceb4c4eb84203bee2b62dcdbe0d5c1c09707438",
+    "merged": false,
+    "number": 210,
+    "observation": "GitHub connector preflight observation",
+    "state": "open"
+  },
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "mode": [
+    "STATE_VS_TRANSITION",
+    "COMPETING_SEMANTICS",
+    "PROSPECTIVE_FIXTURES",
+    "TRANSFER_HOLDOUT",
+    "V2_SEMANTIC_LEAP_GATE",
+    "RESEARCH_ONLY"
+  ],
+  "new_branch": {
+    "must_be_created_from": "9ceb4c4eb84203bee2b62dcdbe0d5c1c09707438",
+    "name": "work/IGNITION-20260907-161",
+    "remote_sha_at_preflight": null
+  },
+  "required_base": {
+    "local_matches": true,
+    "local_ref_used": "origin/work/IGNITION-20260907-160",
+    "local_sha": "9ceb4c4eb84203bee2b62dcdbe0d5c1c09707438",
+    "ref": "work/IGNITION-20260907-160",
+    "remote_task160_matches": true,
+    "remote_task160_sha": "9ceb4c4eb84203bee2b62dcdbe0d5c1c09707438",
+    "sha": "9ceb4c4eb84203bee2b62dcdbe0d5c1c09707438"
+  },
+  "task_id": "IGNITION-20260907-161",
+  "worktree": {
+    "clean_before_task161_implementation": true,
+    "current_status_is_clean_except_planned_tool": true,
+    "note": "The tool file itself is the only planned pre-commit addition; initial preflight was clean.",
+    "status_lines_at_snapshot": [],
+    "unexpected_changes": []
+  }
+}

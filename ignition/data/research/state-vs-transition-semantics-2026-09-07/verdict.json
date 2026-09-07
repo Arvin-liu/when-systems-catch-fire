@@ -1,0 +1,30 @@
+{
+  "allowed_primary_verdict_set": [
+    "STATE_LOCAL_SUFFICIENCY_SUPPORTED",
+    "TRANSITION_REVIEW_LAYER_SUPPORTED_NO_SEMANTIC_LEAP",
+    "FIRST_CLASS_TRANSITION_SEMANTICS_SUPPORTED_AS_RESEARCH_CANDIDATE",
+    "NON_CARTESIAN_PATH_SEMANTICS_SUPPORTED_AS_RESEARCH_CANDIDATE",
+    "MIXED_NO_PROMOTION",
+    "BOTH_FAIL",
+    "UNDERDETERMINED"
+  ],
+  "canonical_promotion": false,
+  "current_or_owner_acceptance": false,
+  "epistemic_status": "DETECTOR_NOT_VALIDATED",
+  "lifecycle_status": "COMPLETED_DRAFT_REVIEW_PENDING",
+  "primary_verdict": "UNDERDETERMINED",
+  "ready_or_merge": false,
+  "research_candidate_verdict": "FIRST_CLASS_TRANSITION_SEMANTICS_SUPPORTED_AS_RESEARCH_CANDIDATE",
+  "research_only": true,
+  "residuals": [
+    "STALE_CONTROL_POINTER / PREFLIGHT_RESIDUAL",
+    "historical residuals remain unadjudicated discovery leads",
+    "non-Cartesian path semantics are not separately supported",
+    "synthetic fixture and oracle co-design lacks independent adjudication",
+    "canonical validation and remote full CI are not yet observed"
+  ],
+  "task162_started": false,
+  "task_id": "IGNITION-20260907-161",
+  "under_determined": true,
+  "v2_gate_passed": true
+}
