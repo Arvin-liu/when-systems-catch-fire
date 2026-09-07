@@ -1,0 +1,25 @@
+{
+  "freeze_type": "SOURCE_SELECTION_PROTOCOL_BEFORE_DISCOVERY",
+  "frozen_at": "2026-09-07T13:56:33+08:00",
+  "manifest_digest_after_selection": "a2404ea9a161ef3a7eb0ee5c30aeb4670fec42752d13ffdf9f5a06a2f9f9a26a",
+  "no_answer_guided_selection": true,
+  "notes": [
+    "The null digests are intentional pre-discovery placeholders and must be filled only after the manifest and search ledger are complete.",
+    "No external candidate, Task161 answer key, or Task159-161 score was used to choose sources."
+  ],
+  "protocol_file": "source-search-protocol.json",
+  "search_result_digest_after_selection": "3f100a7fd39a4e3ec3dfc0a325eb4ddf316a489d28cb5c25eefeeebdc9dd5de4",
+  "selected_word_count": 4474674,
+  "selected_work_count": 22,
+  "selection_completed_at": "2026-09-07",
+  "selection_exclusions_are_logged": true,
+  "selection_order": [
+    "domain_bucket_order from protocol",
+    "fixed source order from protocol",
+    "catalog result order by canonical URL",
+    "first eligible source per unfilled quota slot"
+  ],
+  "selection_status": "FROZEN_BEFORE_SOURCE_DISCOVERY",
+  "source_order_is_deterministic": true,
+  "task_id": "IGNITION-20260907-162"
+}

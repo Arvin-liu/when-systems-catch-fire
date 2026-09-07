@@ -1,0 +1,11 @@
+{
+  "disagreement_digest": "946b390faa31d8c9b5f84d80b74dc88b8f33a7b3b1916f320ae56f9489380518",
+  "final_label_digest": "7088193f6b9eba3984b19e2d9569bc5646e06126aeca07509a141048bca46b90",
+  "packets_digest": "615ce7640754efea1149dde7ef30b961a8dd896f05e3e92cbf2c5f54fbb36ada",
+  "pass_1_digest": "ec8827f4387ac450d944663ec67695a753420b617b6c00e457d5019f397635fb",
+  "pass_2_digest": "3c9e852ab0586172c19c91a38bfa04a723ff28051ffa944fcf69cd8eb826def7",
+  "procedural_status": "PROCEDURAL_SEPARATION_ONLY / NOT_COGNITIVE_INDEPENDENCE",
+  "status": "FROZEN",
+  "task161_models_loaded": false,
+  "task_id": "IGNITION-20260907-162"
+}
