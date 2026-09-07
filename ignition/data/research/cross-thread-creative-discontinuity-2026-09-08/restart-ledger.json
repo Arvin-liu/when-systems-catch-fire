@@ -1,0 +1,8 @@
+{
+  "blind_run_1_sha256": "aa735f093c6a2fa841c5b39287c41f0ed6de3b76cd74f1d8c466ba96037b0ac4",
+  "blind_run_2_sha256": "aa735f093c6a2fa841c5b39287c41f0ed6de3b76cd74f1d8c466ba96037b0ac4",
+  "byte_identical": true,
+  "deterministic_replay": true,
+  "replay_policy": "rerun from frozen files; no answer-key read in blind path",
+  "task_id": "IGNITION-20260908-165"
+}

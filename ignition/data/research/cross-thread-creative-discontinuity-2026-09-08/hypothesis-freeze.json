@@ -1,0 +1,16 @@
+{
+  "brain_simulation": false,
+  "capability_equivalence": "ability and failure-boundary equivalence, never word match",
+  "hypothesis": "A field of unrelated questions may expose a problem rewrite more often than a single-thread or nearest-only context, but random concatenation may explain the same output.",
+  "levels": {
+    "L0": "ordinary association or restatement",
+    "L1": "new fact, answer, or local explanation",
+    "L2": "problem language or object relation is rewritten",
+    "L3": "a new repeatable cognitive operation is specified and survives transfer and falsification"
+  },
+  "only_l3_is_candidate": true,
+  "premise_ceiling": "owner-supplied research premise only; not a brain fact",
+  "procedural_separation_ceiling": "same-run packet construction, proposer, and answer key would be PROCEDURAL_SEPARATION_ONLY / NOT_COGNITIVE_INDEPENDENCE",
+  "status": "FROZEN_BEFORE_BLIND_RUN",
+  "task_id": "IGNITION-20260908-165"
+}

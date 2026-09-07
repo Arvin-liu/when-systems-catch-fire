@@ -1,0 +1,24 @@
+{
+  "answer_key_separate_from_blind": true,
+  "canonical_surface_changed": false,
+  "current_pointer_changed": false,
+  "frozen_before_blind_run": true,
+  "frozen_file_hashes": {
+    "candidate-kill-conditions.jsonl": "a4e917be43f3b442b778bb3953191d00f1732750e3c1a75a6326b9455ec3f43f",
+    "collision-policy-freeze.json": "e21cb796c61a09d9555051ed5cec34440421fcea02c1ef8e7bad4ccb310e5ff2",
+    "command-freeze.json": "de1d0b8ec5d7b614143c9008f00d03124708ea22ba0776d212de383af7fd4899",
+    "condition-budget-freeze.json": "9b7c72523bb755f7c9878ecb98a06c0eec5b7895f298c4e565d6d59707903332",
+    "creative-discontinuity-gate-v1.json": "bf2e4ad3c3a51c4fa74e1f9334b59783a346944bd75428c21288894c7d208c11",
+    "dormant-question-pool.jsonl": "ba931508d48d59807f5da11e5f3504b7753b6b8bdc707ec11fc3dc206c5a0786",
+    "historical-blind-packets.jsonl": "35303ade71c8de6d75c43b4b241f93b198c86c053b8b0ba6eb6a974a6c778b78",
+    "historical-negative-controls.jsonl": "88a2184e96b1298467c8d666dcf6047fea66a8d24542cf43e2d268be4c41a7b3",
+    "historical-positive-answer-key.jsonl": "79eab6acd3b52f5de2d85bae47aca5b246e2cb990d7f8d3cd6b70964befa67ac",
+    "hypothesis-freeze.json": "b7557c4da91f87752c4c83c9a938b0370a7a96cce4b2295dd99389078c3fb440",
+    "live-friction-manifest.jsonl": "b7ac573a791102deb9e0e6bbdd9b5a7621ffb9f4831fa5d85ebc80f031af32db",
+    "thread-field-manifest.jsonl": "4c9b9d24edb1dc35a6f3f332aee66ff0937a690d61ce67029af19e4d22d79fc0",
+    "thread-selection-protocol.json": "d9bc3fdbc1f4a299820101ce7209205578371b692fcf5ac5f57310ba38aa0144"
+  },
+  "post_event_material_in_blind": false,
+  "state_changelog_changed": false,
+  "task_id": "IGNITION-20260908-165"
+}

@@ -1,0 +1,81 @@
+{
+  "baseline_projection_preflight": {
+    "check_count": 24,
+    "clean_tree_gate_pass": true,
+    "command": "python3 ignition/tools/run_projection_preflight.py --check --require-clean",
+    "failed_checks": [
+      "function_asset_census",
+      "nonfunction_claim_projection",
+      "current_facts",
+      "current_snapshot",
+      "current_surface_project_current_state",
+      "current_surface_ai_cold_start",
+      "current_surface_ai_agents_handoff",
+      "current_surface_machine_entry",
+      "current_surface_architecture",
+      "current_surface_state_changelog",
+      "current_surface_semantics",
+      "current_surface_determinism",
+      "durability_projection_hygiene"
+    ],
+    "result": "FAIL",
+    "returncode": 1,
+    "side_effect_detected": false,
+    "status": "CAPTURED",
+    "stdout_sha256": "af195b95844f57c7d49a669cb259d1c453c2b4c5361183c5fd271910d1ffcf13",
+    "worktree_after": {
+      "clean": true,
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracked_content_sha256": "390b28bf79ee2e3ed68711001d4d9dffaef6012355bca1d7f7d9eb732f776b5e",
+      "tracked_path_count": 4306
+    },
+    "worktree_before": {
+      "clean": true,
+      "status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tracked_content_sha256": "390b28bf79ee2e3ed68711001d4d9dffaef6012355bca1d7f7d9eb732f776b5e",
+      "tracked_path_count": 4306
+    }
+  },
+  "commit": "b3b128f46a625f728870ded1a975f3c2f0db53ce",
+  "content_sha256": "dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a",
+  "control_pointer_residuals": [
+    {
+      "action": "preserved; not repaired by this research-only task",
+      "path": "instructions/CURRENT.md",
+      "sha256": null,
+      "status": "STALE_CONTROL_POINTER / PREFLIGHT_RESIDUAL"
+    },
+    {
+      "action": "preserved; not repaired by this research-only task",
+      "path": "relay/current",
+      "sha256": null,
+      "status": "STALE_CONTROL_POINTER / PREFLIGHT_RESIDUAL"
+    }
+  ],
+  "fetched_and_frozen_before_execution": true,
+  "formal_base": {
+    "ref": "work/IGNITION-20260907-164",
+    "sha": "ba6641d200000ad4ebaa764e4ed94d79f32fb2df"
+  },
+  "formal_branch": "work/IGNITION-20260908-165",
+  "git_blob_sha": "065f02e04e3a0c8e55c398954a761c66901f74b5",
+  "lifecycle_ceiling": [
+    "research-only",
+    "Formal PR remains OPEN+DRAFT",
+    "no main change",
+    "no Current pointer repair",
+    "no canonical 12/64/Psi0 change",
+    "no production/runtime/validator change",
+    "no Owner or epistemic acceptance",
+    "no successor task creation"
+  ],
+  "path": "agent-commands/IGNITION-20260908-165.md",
+  "receipt_branch": "work/IGNITION-20260908-165-receipt",
+  "repository": "Arvin-liu/1111",
+  "state_changelog": {
+    "changed": false,
+    "reason": "Draft-only research branch; formal main lifecycle history is not edited"
+  },
+  "task_id": "IGNITION-20260908-165",
+  "url": "https://github.com/Arvin-liu/1111/blob/b3b128f46a625f728870ded1a975f3c2f0db53ce/agent-commands/IGNITION-20260908-165.md"
+}
