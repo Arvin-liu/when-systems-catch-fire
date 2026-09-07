@@ -1,0 +1,49 @@
+{
+  "digest": "03ba1a94ada28574ef4c5e1c563707dc4b26fd2767eaed680cdecb373e61c359",
+  "discovery_domains": [
+    "computer_science_distributed_protocols",
+    "economics_institutions_organization",
+    "engineering_safety_control",
+    "history_social_systems",
+    "mathematics_formal_systems",
+    "natural_sciences_biology_evolution",
+    "philosophy_logic_science"
+  ],
+  "discovery_fraction_target": 0.75,
+  "discovery_work_ids": [
+    "GUT-4280",
+    "GUT-1497",
+    "GUT-49445",
+    "GUT-7142",
+    "GUT-815",
+    "GUT-4705",
+    "GUT-42602",
+    "GUT-2009",
+    "GUT-2300",
+    "GUT-57493",
+    "GUT-15491",
+    "RFC-9110",
+    "NIST-800-37R2",
+    "OPENSTAX-CALC-V1",
+    "NIST-800-53R5",
+    "OPENSTAX-ECON-3E"
+  ],
+  "holdout_domains": [
+    "cognition_psychology",
+    "computer_science_distributed_protocols",
+    "ecology_complex_systems",
+    "economics_institutions_organization",
+    "engineering_safety_control",
+    "history_social_systems"
+  ],
+  "holdout_work_ids": [
+    "OPENSTAX-PSYCH-2E",
+    "RFC-9000",
+    "GUT-27513",
+    "GUT-3300",
+    "GUT-66078",
+    "GUT-1232"
+  ],
+  "split_rule": "hash-ordered source list, deterministic domain coverage then fill",
+  "task_id": "IGNITION-20260907-162"
+}

@@ -1,0 +1,13 @@
+{
+  "confirmed_clean_or_negative_count": 72,
+  "confirmed_defect_count": 67,
+  "epistemic_status": "HISTORICAL_UNDERDETERMINED unless all command thresholds are met",
+  "final_label_counts": {
+    "CONFIRMED_DEFECT": 67,
+    "STRONG_NEGATIVE": 72,
+    "UNDECIDABLE": 261
+  },
+  "score_file": "historical-ms-mt-scores.jsonl",
+  "task_id": "IGNITION-20260907-162",
+  "undecidable_count": 261
+}

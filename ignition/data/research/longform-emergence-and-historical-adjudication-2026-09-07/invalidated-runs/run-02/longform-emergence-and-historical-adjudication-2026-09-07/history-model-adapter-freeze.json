@@ -1,0 +1,11 @@
+{
+  "loaded_after_history_label_freeze": true,
+  "models": {
+    "MS": "M0 plus A/B neutral facts",
+    "MT": "M0 plus the exact same neutral facts A-H; no MT-only facts"
+  },
+  "no_parameter_change": true,
+  "same_facts_hard_constraint": true,
+  "task161_model_definitions_sha256": "ea12f8da31d343ef3bfc4d3da88542fcab55de46ecfbb452672d923ceb519999",
+  "task_id": "IGNITION-20260907-162"
+}
