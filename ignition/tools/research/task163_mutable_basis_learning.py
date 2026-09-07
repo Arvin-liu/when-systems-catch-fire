@@ -629,9 +629,7 @@ def replay_state(state: dict[str, Any], prior_extractions: list[dict[str, Any]])
     }
 
 
-def run_blind() -> list[dict[str, Any]]:
-    verify_frozen_inputs()
-    packets = sorted(read_jsonl(OUT / "historical-temporal-packets.jsonl"), key=lambda row: row["sequence"])
+def _run_blind_pass(packets: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
     state = initial_representation()
     prior_extractions: list[dict[str, Any]] = []
     residual_seen: dict[str, set[str]] = defaultdict(set)
@@ -690,11 +688,29 @@ def run_blind() -> list[dict[str, Any]]:
             )
         prior_extractions.append(extraction)
 
+    return rows, mutation_rows, replay_rows, generations
+
+
+def run_blind() -> list[dict[str, Any]]:
+    verify_frozen_inputs()
+    # Re-read the frozen packet file and rebuild all mutable state for each pass.
+    # Writing one computed list twice would only demonstrate serialization
+    # stability, not a replay of the operator.
+    packets_one = sorted(read_jsonl(OUT / "historical-temporal-packets.jsonl"), key=lambda row: row["sequence"])
+    packets_two = sorted(read_jsonl(OUT / "historical-temporal-packets.jsonl"), key=lambda row: row["sequence"])
+    first = _run_blind_pass(packets_one)
+    second = _run_blind_pass(packets_two)
+    if first != second:
+        raise RuntimeError("isolated historical blind replays diverged")
+    rows, mutation_rows, replay_rows, generations = first
+    second_rows, _, _, _ = second
     write_jsonl(OUT / "historical-blind-run-1.jsonl", rows)
-    write_jsonl(OUT / "historical-blind-run-2.jsonl", rows)
+    write_jsonl(OUT / "historical-blind-run-2.jsonl", second_rows)
     write_jsonl(OUT / "mutation-proposals.jsonl", mutation_rows)
     write_jsonl(OUT / "mutation-replay-results.jsonl", replay_rows)
     write_jsonl(OUT / "representation-generations.jsonl", generations)
+    if (OUT / "historical-blind-run-1.jsonl").read_bytes() != (OUT / "historical-blind-run-2.jsonl").read_bytes():
+        raise RuntimeError("isolated historical blind replay bytes differ")
     return rows
 
 
