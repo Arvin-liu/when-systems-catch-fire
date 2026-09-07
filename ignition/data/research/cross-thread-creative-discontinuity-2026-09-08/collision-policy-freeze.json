@@ -1,0 +1,16 @@
+{
+  "allowed_questions": [
+    "Does B give A a previously impossible question?",
+    "Does B expose an object, relation, or operation absent from A?",
+    "Does B make validation one-sided or incomplete?",
+    "Does B compress manual steps into a reusable operation?",
+    "If B is deleted, would the result still arise from A?",
+    "Can the result migrate to a third or fourth unrelated domain?"
+  ],
+  "candidate_names_assigned_after_freeze": true,
+  "default_recording": "binary; ternary only when uncertain is explicitly recorded",
+  "minimal_contact": "source references, domain, one bounded excerpt digest, and the six question outcomes",
+  "no_commonality_prompt": true,
+  "policy_id": "COLLISION_POLICY_FREEZE_V1",
+  "task_id": "IGNITION-20260908-165"
+}
