@@ -1,0 +1,1 @@
+{"reason":"Stage A failed; no external material or mutation coupling is authorized.","stage_a_failed_gates":["true_leap_pre_boundary_at_least_3_of_4","p02_p03_p04_pre_boundary_at_least_2_of_3","every_positive_boundary_reconstructed","remove_largest_source_family_keeps_two_true_signals","null_proxy_not_equivalent"],"status":"NOT_RUN_STAGE_A_STOP","task_id":"IGNITION-20260907-164"}

@@ -1,0 +1,34 @@
+{
+  "commit": "ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5",
+  "content_sha256": "e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3",
+  "control_pointer_residuals": [
+    {
+      "path": "instructions/CURRENT.md",
+      "sha256": null,
+      "status": "absent_and_preserved"
+    },
+    {
+      "path": "relay/current",
+      "sha256": null,
+      "status": "absent_and_preserved"
+    }
+  ],
+  "fetched_and_frozen_before_execution": true,
+  "formal_base": {
+    "ref": "work/IGNITION-20260907-163",
+    "sha": "644c93cd5cd0c7d4ed490f95795897df3bcd8826"
+  },
+  "formal_preflight": {
+    "base_ref": "work/IGNITION-20260907-162",
+    "draft": true,
+    "head_ref": "work/IGNITION-20260907-163",
+    "head_sha": "644c93cd5cd0c7d4ed490f95795897df3bcd8826",
+    "pr_number": 213,
+    "state": "OPEN"
+  },
+  "git_blob_sha": "18ba43e3a7d6aab3a8bdc794b2767db2e861b78a",
+  "path": "agent-commands/IGNITION-20260907-164.md",
+  "repository": "Arvin-liu/1111",
+  "task_id": "IGNITION-20260907-164",
+  "url": "https://github.com/Arvin-liu/1111/blob/ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5/agent-commands/IGNITION-20260907-164.md"
+}

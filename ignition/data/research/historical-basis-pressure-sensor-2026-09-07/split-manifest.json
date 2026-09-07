@@ -1,0 +1,26 @@
+{
+  "calibration_negatives": [
+    "N02_INCREMENTAL_REGISTRY",
+    "N05_VALIDATOR_EXPANSION"
+  ],
+  "calibration_positive": [
+    "P01_FUNCTION_CASE_REFRAME"
+  ],
+  "historical_positive_holdout": [
+    "P02_SECTION_ZERO_BOOTSTRAP",
+    "P03_DUAL_CHANNEL_BOOTSTRAP"
+  ],
+  "holdout_negatives": [
+    "N03_CANONICAL_PROTOCOL_MIGRATION",
+    "N04_PAGES_PROJECTION",
+    "N06_KNOWLEDGE_PROJECTION_REFRESH",
+    "N07_PROVIDER_ADAPTER_REFACTOR",
+    "N08_GENERATED_PROJECTION_REFRESH",
+    "N09_KNOWLEDGE_MATERIALIZATION"
+  ],
+  "task_id": "IGNITION-20260907-164",
+  "thresholds_frozen_before_holdout_unblind": true,
+  "transfer_positive_holdout": [
+    "P04_META_PROTOCOL_64"
+  ]
+}

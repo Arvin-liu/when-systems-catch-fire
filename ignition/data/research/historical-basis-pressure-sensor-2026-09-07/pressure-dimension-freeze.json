@@ -1,0 +1,47 @@
+{
+  "change_point_rule": {
+    "high_requires_active_dimensions": 3,
+    "high_requires_persistence": 2,
+    "high_requires_source_families": 2,
+    "minimum_checkpoints": 6,
+    "pre_boundary_signal_must_occur_before_final_checkpoint": true
+  },
+  "dimension_definitions": {
+    "CONTRADICTORY_PREDICTION_BURDEN": "prediction/expectation language with contradiction or inconsistency",
+    "CROSS_SOURCE_COLLISION": "collision, conflict, contradiction, overlap, duplicate, and clash markers across families",
+    "DUPLICATED_STRUCTURE_PRESSURE": "repeated structural markers plus repeated changed paths/path stems",
+    "FALSIFIER_DEFICIT": "failure/contradiction burden not matched by checking or validation markers",
+    "LOCAL_PATCH_BURDEN": "patch, fix, repair, backfill, exception, workaround, compatibility, and legacy markers",
+    "QUESTION_LANGUAGE_DEFICIT": "question and temporary question-language markers",
+    "REINTERPRETATION_CHURN": "rewrite, reclassification, normalization, rebuild, refresh, rerun, rename, and migration markers",
+    "UNRESOLVED_RESIDUAL_BURDEN": "unresolved, missing, failed, blocked, unknown, or not-enough markers"
+  },
+  "dimensions": [
+    "UNRESOLVED_RESIDUAL_BURDEN",
+    "LOCAL_PATCH_BURDEN",
+    "REINTERPRETATION_CHURN",
+    "QUESTION_LANGUAGE_DEFICIT",
+    "FALSIFIER_DEFICIT",
+    "CROSS_SOURCE_COLLISION",
+    "CONTRADICTORY_PREDICTION_BURDEN",
+    "DUPLICATED_STRUCTURE_PRESSURE"
+  ],
+  "engineering_volume_is_covariate_only": [
+    "changed_file_count",
+    "line_change_count",
+    "commit_density",
+    "corpus_unit_count",
+    "corpus_word_count",
+    "path_name_churn",
+    "generated_output_churn"
+  ],
+  "no_manual_total_score": true,
+  "normalization": {
+    "active_threshold": 0.67,
+    "persistence_checkpoints": 2,
+    "positive_slope_threshold": 0.05,
+    "within_epoch": "min_max_rank_over_all_frozen_checkpoints"
+  },
+  "status": "FROZEN_BEFORE_BLIND_UNBLIND",
+  "task_id": "IGNITION-20260907-164"
+}
