@@ -34,8 +34,8 @@
         "event_id": "P01_FUNCTION_CASE_REFRAME",
         "full_replay_survival": false,
         "label": "TRUE_LEAP",
-        "observed_capability_signals": [
-          "COMPOSITIONAL_GENERATION"
+        "observed_anonymous_structural_signals": [
+          "STRUCTURE_C"
         ],
         "packet_id": "HP-001",
         "required_capability": "OBJECT_LANGUAGE_CHANGE",
@@ -47,8 +47,8 @@
         "event_id": "P02_SECTION_ZERO_BOOTSTRAP",
         "full_replay_survival": false,
         "label": "TRUE_LEAP",
-        "observed_capability_signals": [
-          "OBJECT_LANGUAGE_CHANGE"
+        "observed_anonymous_structural_signals": [
+          "STRUCTURE_D"
         ],
         "packet_id": "HP-002",
         "required_capability": "SELF_REFERENCE",
@@ -60,8 +60,8 @@
         "event_id": "P03_DUAL_CHANNEL_BOOTSTRAP",
         "full_replay_survival": false,
         "label": "TRUE_LEAP",
-        "observed_capability_signals": [
-          "OBJECT_LANGUAGE_CHANGE"
+        "observed_anonymous_structural_signals": [
+          "STRUCTURE_D"
         ],
         "packet_id": "HP-003",
         "required_capability": "INDEPENDENT_COUNTERCHECK",
@@ -73,8 +73,8 @@
         "event_id": "P04_META_PROTOCOL_64",
         "full_replay_survival": false,
         "label": "TRUE_LEAP",
-        "observed_capability_signals": [
-          "OBJECT_LANGUAGE_CHANGE"
+        "observed_anonymous_structural_signals": [
+          "STRUCTURE_D"
         ],
         "packet_id": "HP-004",
         "required_capability": "COMPOSITIONAL_GENERATION",
@@ -86,8 +86,8 @@
         "event_id": "N01_KB_116_NOTE_SYNC",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [
-          "COMPOSITIONAL_GENERATION"
+        "observed_anonymous_structural_signals": [
+          "STRUCTURE_C"
         ],
         "packet_id": "HP-005",
         "required_capability": "NONE",
@@ -99,8 +99,8 @@
         "event_id": "N02_INCREMENTAL_REGISTRY",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [
-          "COMPOSITIONAL_GENERATION"
+        "observed_anonymous_structural_signals": [
+          "STRUCTURE_C"
         ],
         "packet_id": "HP-006",
         "required_capability": "NONE",
@@ -112,10 +112,10 @@
         "event_id": "N03_CANONICAL_PROTOCOL_MIGRATION",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [
-          "COMPOSITIONAL_GENERATION",
-          "INDEPENDENT_COUNTERCHECK",
-          "OBJECT_LANGUAGE_CHANGE"
+        "observed_anonymous_structural_signals": [
+          "STRUCTURE_B",
+          "STRUCTURE_C",
+          "STRUCTURE_D"
         ],
         "packet_id": "HP-007",
         "required_capability": "NONE",
@@ -127,7 +127,7 @@
         "event_id": "N04_PAGES_PROJECTION",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-008",
         "required_capability": "NONE",
         "split": "holdout"
@@ -138,7 +138,7 @@
         "event_id": "N05_SOURCE_FIRST_SEEN",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-009",
         "required_capability": "NONE",
         "split": "holdout"
@@ -149,7 +149,7 @@
         "event_id": "N06_HUMAN_CLAIM_BROWSER",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-010",
         "required_capability": "NONE",
         "split": "holdout"
@@ -160,7 +160,7 @@
         "event_id": "N07_TASK157_PROJECTIONS",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-011",
         "required_capability": "NONE",
         "split": "holdout"
@@ -171,7 +171,7 @@
         "event_id": "N08_TASK156_RESULTS",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-012",
         "required_capability": "NONE",
         "split": "holdout"
@@ -182,7 +182,7 @@
         "event_id": "N09_CURRENT_FACTS",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-013",
         "required_capability": "NONE",
         "split": "holdout"
@@ -193,7 +193,7 @@
         "event_id": "N10_NONFUNCTION_REFRESH",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-014",
         "required_capability": "NONE",
         "split": "holdout"
@@ -204,7 +204,7 @@
         "event_id": "N11_ARCHIFY_ADAPT",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-015",
         "required_capability": "NONE",
         "split": "calibration"
@@ -215,7 +215,7 @@
         "event_id": "N12_VALIDATOR_ADD",
         "full_replay_survival": false,
         "label": "NON_LEAP",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-016",
         "required_capability": "NONE",
         "split": "calibration"
@@ -226,7 +226,7 @@
         "event_id": "B01_CURRENT_SYNC",
         "full_replay_survival": false,
         "label": "BORDERLINE",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-017",
         "required_capability": "UNDECIDABLE",
         "split": "calibration"
@@ -237,7 +237,7 @@
         "event_id": "B02_PROVIDER_FALLBACK",
         "full_replay_survival": false,
         "label": "BORDERLINE",
-        "observed_capability_signals": [],
+        "observed_anonymous_structural_signals": [],
         "packet_id": "HP-018",
         "required_capability": "UNDECIDABLE",
         "split": "calibration"

@@ -43,6 +43,8 @@ class Task163MutableBasisLearningTests(unittest.TestCase):
             r"(?:IGNITION[-_ ]?2026090[4-7][-_ ]?15[3-9]|TASK[-_ ]?15[3-9])"
             r"|(?:P0[1-4]|N0[1-9]|N1[0-2]|B0[1-2])[_-][A-Z0-9_-]+"
             r"|\b(?:TRUE_LEAP|NON_LEAP|BORDERLINE)\b"
+            r"|\b(?:OBJECT_LANGUAGE_CHANGE|SELF_REFERENCE|INDEPENDENT_COUNTERCHECK|COMPOSITIONAL_GENERATION)\b"
+            r"|\b(?:object[-_ ]language|self[-_ ]reference|independent[-_ ]counter[-_ ]check|compositional[-_ ]generation)\b"
             r"|\b(?:V\s*[×x]\s*S\s*[×x]\s*E|V/S/E|BF-X\*|EL-X\*|P_meta|Ψ_?0)\b"
             r"|\b64\b"
             r"|\b(?:transition\s+semantics|first[-_ ]class\s+transition|junction\s+invariant|binding\s+invariant)\b"
@@ -51,6 +53,7 @@ class Task163MutableBasisLearningTests(unittest.TestCase):
             self.assertFalse(row["answer_key_read"])
             self.assertFalse(row["post_event_lookahead_used"])
             self.assertFalse(row["candidate_vocab_exposed"])
+            self.assertIn("anonymous_structural_signals", row)
             self.assertFalse(forbidden.search(json.dumps(row, ensure_ascii=False)), row["packet_id"])
 
     def test_qualification_gate_and_stage_b_sentinels(self):

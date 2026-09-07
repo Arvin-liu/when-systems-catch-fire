@@ -249,6 +249,8 @@ FORBIDDEN_IN_BLIND = re.compile(
     r"(?:IGNITION[-_ ]?2026090[4-7][-_ ]?15[3-9]|TASK[-_ ]?15[3-9])"
     r"|(?:P0[1-4]|N0[1-9]|N1[0-2]|B0[1-2])[_-][A-Z0-9_-]+"
     r"|\b(?:TRUE_LEAP|NON_LEAP|BORDERLINE)\b"
+    r"|\b(?:OBJECT_LANGUAGE_CHANGE|SELF_REFERENCE|INDEPENDENT_COUNTERCHECK|COMPOSITIONAL_GENERATION)\b"
+    r"|\b(?:object[-_ ]language|self[-_ ]reference|independent[-_ ]counter[-_ ]check|compositional[-_ ]generation)\b"
     r"|\b(?:V\s*[×x]\s*S\s*[×x]\s*E|V/S/E|BF-X\*|EL-X\*|P_meta|Ψ_?0)\b"
     r"|\b64\b"
     r"|\b(?:transition\s+semantics|first[-_ ]class\s+transition|junction\s+invariant|binding\s+invariant)\b"
@@ -260,6 +262,8 @@ REDACTION_PATTERNS = [
     re.compile(r"(?ix)TASK[-_ ]?15[3-9]"),
     re.compile(r"(?ix)\b(?:P0[1-4]|N0[1-9]|N1[0-2]|B0[1-2])[_-][A-Z0-9_-]+"),
     re.compile(r"(?ix)\b(?:TRUE_LEAP|NON_LEAP|BORDERLINE)\b"),
+    re.compile(r"(?ix)\b(?:OBJECT_LANGUAGE_CHANGE|SELF_REFERENCE|INDEPENDENT_COUNTERCHECK|COMPOSITIONAL_GENERATION)\b"),
+    re.compile(r"(?ix)\b(?:object[-_ ]language|self[-_ ]reference|independent[-_ ]counter[-_ ]check|compositional[-_ ]generation)\b"),
     re.compile(r"(?ix)\b(?:V\s*[×x]\s*S\s*[×x]\s*E|V/S/E|BF-X\*|EL-X\*|P_meta|Ψ_?0)\b"),
     re.compile(r"(?ix)\b64\b"),
     re.compile(r"(?ix)\b(?:transition\s+semantics|first[-_ ]class\s+transition|junction\s+invariant|binding\s+invariant)\b"),
@@ -514,15 +518,18 @@ def extract_structure(packet: dict[str, Any]) -> dict[str, Any]:
     revision = len(re.findall(r"(?i)\b(?:revise|revision|change|replace|update|correct|repair|rebuild)\b", text))
     identity = len(re.findall(r"(?i)\b(?:same|itself|they|them|identity|bind|refer(?:s|ence)?)\b", text))
     contradiction = len(re.findall(r"(?i)\b(?:contradict|inconsistent|fail(?:s|ed|ure)?|cannot|not enough|missing)\b", text))
+    # These identifiers are intentionally anonymous.  The blind operator must
+    # not emit answer-key capability names or turn capability equivalence into
+    # a label/signature lookup.
     signals: list[str] = []
     if re.search(r"(?i)\b(?:itself|recursive|recursion|self-reference)\b", text):
-        signals.append("SELF_REFERENCE")
+        signals.append("STRUCTURE_A")
     if re.search(r"(?i)\b(?:reverse|counterexample|falsif|adversarial|against)\w*\b", text):
-        signals.append("INDEPENDENT_COUNTERCHECK")
+        signals.append("STRUCTURE_B")
     if re.search(r"(?i)\b(?:compose|composition|combine|combination|grammar|protocol)\w*\b", text):
-        signals.append("COMPOSITIONAL_GENERATION")
+        signals.append("STRUCTURE_C")
     if re.search(r"(?i)\b(?:function|type|category|class|ontology)\w*\b", text):
-        signals.append("OBJECT_LANGUAGE_CHANGE")
+        signals.append("STRUCTURE_D")
     residuals: list[dict[str, Any]] = []
 
     def add_residual(kind: str, loss: str, ref_index: int = 0) -> None:
@@ -567,7 +574,7 @@ def extract_structure(packet: dict[str, Any]) -> dict[str, Any]:
         "revision_marker_count": revision,
         "identity_marker_count": identity,
         "contradiction_marker_count": contradiction,
-        "capability_signals": sorted(set(signals)),
+        "anonymous_structural_signals": sorted(set(signals)),
         "residuals": residuals,
         "local_exception_burden": contrast + contradiction,
         "text_sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
@@ -650,7 +657,7 @@ def run_blind() -> list[dict[str, Any]]:
                 key: value for key, value in extraction.items() if key != "residuals"
             },
             "residuals": extraction["residuals"],
-            "capability_signals": extraction["capability_signals"],
+            "anonymous_structural_signals": extraction["anonymous_structural_signals"],
             "trigger_reasons": trigger_reasons,
             "mutation_proposal": proposal,
             "basis_mutation_signal": bool(proposal and replay["survives_full_replay"]),
@@ -699,7 +706,7 @@ def qualify() -> dict[str, Any]:
     event_results: list[dict[str, Any]] = []
     for row in blind_one:
         answer = answer_by_packet[row["packet_id"]]
-        observed = set(row["capability_signals"])
+        observed = set(row["anonymous_structural_signals"])
         required = answer["required_capability"]
         capability_equivalent = (
             required not in {"NONE", "UNDECIDABLE"}
@@ -713,7 +720,7 @@ def qualify() -> dict[str, Any]:
                 "event_id": answer["event_id"],
                 "label": answer["label"],
                 "split": answer["split"],
-                "observed_capability_signals": sorted(observed),
+                "observed_anonymous_structural_signals": sorted(observed),
                 "required_capability": required,
                 "capability_equivalent_basis_mutation": capability_equivalent,
                 "basis_mutation_signal": row["basis_mutation_signal"],
