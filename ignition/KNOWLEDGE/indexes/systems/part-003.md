@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D380 defines a mechanism_model within the point-fire framework. Core: 中文：M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-176f262e0f04d75d / Object D380 defines a mechanism_model within the point-fire framework. Core: 中文：M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D380；被引用：—
+- [Object D381 defines a mechanism_model within the point-fire framework. Core: 中文：M12的溢出消耗免疫使传染临界从n/2降至n_eff/2 = n/2 - ΣΔg](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6b587219db6c1797 / Object D381 defines a mechanism_model within the point-fire framework. Core: 中文：M12的溢出消耗免疫使传染临界从n/2降至n_eff/2 = n/2 - ΣΔg
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D381；被引用：—
+- [Object D382 defines a mechanism_model within the point-fire framework. Core: 中文：M13的K·τ_delay 1时自激振荡主导（延](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6cc7f81ab60438c5 / Object D382 defines a mechanism_model within the point-fire framework. Core: 中文：M13的K·τ_delay 1时自激振荡主导（延
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D382；被引用：—
+- [Object D383 defines a mechanism_model within the point-fire framework. Core: 中文：M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-36e5087a7344ff6a / Object D383 defines a mechanism_model within the point-fire framework. Core: 中文：M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D280, D383；被引用：—
+- [Object D384 defines a mechanism_model within the point-fire framework. Core: 中文：M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6dc09e0a9d7ae504 / Object D384 defines a mechanism_model within the point-fire framework. Core: 中文：M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D348, D370, D384；被引用：—
+- [Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-362ee6bb883793ca / Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D385；被引用：—
 - [Object D386 defines a mechanism_model within the point-fire framework. Core: 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentratio](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-82871d90a3e51135 / Object D386 defines a mechanism_model within the point-fire framework. Core: 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentratio
@@ -834,6 +864,11 @@
   - 可搜索名称：NFC-aeca83150bac1150 / Rebuilt source/root-cause changes
   - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
   - 依赖：—；被引用：—
+- [recorded propagation-only blocker and is not repaired here because the command](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e0ea33251905462c / recorded propagation-only blocker and is not repaired here because the command
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
+  - 依赖：—；被引用：—
 - [Records branching, convergence, common causes, common effects, competing paths, redundant paths, and bottlenecks.](../../../docs/architecture/multiscale-causal-fabric.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-85ac8a9097795456 / Records branching, convergence, common causes, common effects, competing paths, redundant paths, and bottlenecks.
@@ -963,6 +998,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-569ab93850ae3b6b / Representative multi-jurisdiction copyright rule registry for Q33 risk projection. Covers WIPO treaties, US, EU, UK, CA,
   - 来源：`data/architecture/interactive-system-map.json`
+  - 依赖：—；被引用：—
+- [Reproduction and root-cause finding](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bac34c1ccfd6508e / Reproduction and root-cause finding
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
   - 依赖：—；被引用：—
 - [require\(system_map.get\("map_version"\) == "0.5.0", "current map version is not 0.5.0"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2462,45 +2502,5 @@
 - [\| \[C-0732\]\( \) \| \[哥德尔不完备性历史系统实例化案例\]\( \) \| 历史系统可以在内部逻辑上](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c36b5200df1ee385 / \| \[C-0732\]\( \) \| \[哥德尔不完备性历史系统实例化案例\]\( \) \| 历史系统可以在内部逻辑上
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0751\]\( \) \| \[安然公司\]\( \) \| 该案例展示了元协议缺失如何直接导致系统性失效。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1f764c23c5087d6f / \| \[C-0751\]\( \) \| \[安然公司\]\( \) \| 该案例展示了元协议缺失如何直接导致系统性失效。 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0792\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D585《认知复杂度收敛》，用](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-54899ec13d079e64 / \| \[C-0792\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D585《认知复杂度收敛》，用
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D585；被引用：—
-- [\| \[C-169\]\( \) \| \[财商乘数四因子结构（验证D65财富域）\]\( \) \| 财富增长由认](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-228c5fc32ea8687a / \| \[C-169\]\( \) \| \[财商乘数四因子结构（验证D65财富域）\]\( \) \| 财富增长由认
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D65；被引用：—
-- [\| \[C-180\]\( \) \| \[退出权剥夺导致决策结构退化——三支→二支\]\( \) \| 三支决](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d19e10b3d69739e0 / \| \[C-180\]\( \) \| \[退出权剥夺导致决策结构退化——三支→二支\]\( \) \| 三支决
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A7；被引用：—
-- [\| \[C-181\]\( \) \| \[因果光锥×马拉松×高山滑雪\]\( \) \| 因果光锥×马拉松×高山滑雪——不可逆路径的统一数](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ca74527c45a7f8cb / \| \[C-181\]\( \) \| \[因果光锥×马拉松×高山滑雪\]\( \) \| 因果光锥×马拉松×高山滑雪——不可逆路径的统一数
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-188\]\( \) \| \[两代退出机制×互观同质性遮蔽\]\( \) \| 两代退出机制×互观同质性遮蔽——AI-ε安](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5ce59563add00d9f / \| \[C-188\]\( \) \| \[两代退出机制×互观同质性遮蔽\]\( \) \| 两代退出机制×互观同质性遮蔽——AI-ε安
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-212\]\( \) \| \[直觉是碰出来的不是算出来的\]\( \) \| 直觉是碰出来的不是算出来的——多轨碰撞的生成机制](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-44e43346be844162 / \| \[C-212\]\( \) \| \[直觉是碰出来的不是算出来的\]\( \) \| 直觉是碰出来的不是算出来的——多轨碰撞的生成机制
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-218\]\( \) \| \[变量位置决定推导方向\]\( \) \| 变量位置决定推导方向——Ψ在右侧时永远问不出"AI能不能有意识"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a223882e3db8658 / \| \[C-218\]\( \) \| \[变量位置决定推导方向\]\( \) \| 变量位置决定推导方向——Ψ在右侧时永远问不出"AI能不能有意识"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

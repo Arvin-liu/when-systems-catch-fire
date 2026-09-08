@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 时间尺度同构函数 is adjudicated as RELATION: 时间尺度同构函数，不同系统在时间维度展现相同的演化模式。时间尺度同构不是时间长短相同，而是演化路径的](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D178 / Within the source-defined scope, 时间尺度同构函数 is adjudicated as RELATION: 时间尺度同构函数，不同系统在时间维度展现相同的演化模式。时间尺度同构不是时间长短相同，而是演化路径的
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 显态粘性函数 is adjudicated as RELATION: 显态粘性函数,μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D173 / Within the source-defined scope, 显态粘性函数 is adjudicated as RELATION: 显态粘性函数,μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 智慧干预效力函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D60 / Within the source-defined scope, 智慧干预效力函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-9ce92267492ded50 / \| \[D386\]\( \) \| \[容斥集中性统一函数\]\( \) \| F_{D386}\(x\) := M3的D372与D328是同一现象不同表述。统一
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D328, D372, D386；被引用：—
-- [\| \[D387\]\( \) \| \[容斥-耦合配分函数\]\( \) \| F_{D387}\(x\) := M4的Ising同构意味着配分函数Z = Σ e](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e2b64b1667d2873d / \| \[D387\]\( \) \| \[容斥-耦合配分函数\]\( \) \| F_{D387}\(x\) := M4的Ising同构意味着配分函数Z = Σ e
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D387；被引用：—
-- [\| \[D389\]\( \) \| \[不归点-吸引域边界统一函数\]\( \) \| F_{D389}\(x\) := M6的δ_c恰好是D29](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9d7ed6497f2a48c2 / \| \[D389\]\( \) \| \[不归点-吸引域边界统一函数\]\( \) \| F_{D389}\(x\) := M6的δ_c恰好是D29
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D292, D389；被引用：—

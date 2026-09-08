@@ -1064,6 +1064,11 @@
   - 可搜索名称：NFC-62c0ef5e2c8b99f2 / `ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。 / - `ASSERTION_INFLATION_GUARD` 是仓库级常驻不变量：工程、写作、总结、成果册、系统图、重复引用、跨域对应、模型美感和 Agent 共识都不能自动抬升断言地位；长期风险“从自我克制滑向大断言”必须持续登记和检查。
   - 来源：`AI-START-HERE.md`
   - 依赖：—；被引用：—
+- [`BASIS_LEARNING_OPERATOR_NOT_VALIDATED`,](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-12b4eaafe643dd3e / `BASIS_LEARNING_OPERATOR_NOT_VALIDATED`,
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
+  - 依赖：—；被引用：—
 - [`before-projection.json`](../../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9361bf16cdd7f8c9 / `before-projection.json`
@@ -1379,6 +1384,11 @@
   - 可搜索名称：NFC-18c5775aebb82c08 / `TemporalActivation.target_ref` now rejects layer, state, perturbation, evidence and network IDs;
   - 来源：`reports/architecture/121Q23-adaptive-relational-network-validation.md`
   - 依赖：—；被引用：—
+- [`tracked_text_files_scanned` changed from 4209 to 4210 because the Task167](../../../agent-results/IGNITION-20260908-168-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-47a3517987898338 / `tracked_text_files_scanned` changed from 4209 to 4210 because the Task167
+  - 来源：`agent-results/IGNITION-20260908-168-result.md`
+  - 依赖：—；被引用：—
 - [`TransitionLaw` for deterministic, stochastic, and hybrid dynamics;](../../../reports/architecture/121Q22-probability-system-gap-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-5e7431484afd826a / `TransitionLaw` for deterministic, stochastic, and hybrid dynamics;
@@ -1504,6 +1514,11 @@
   - 可搜索名称：NFC-29831b59acb852f8 / A13. 亲密关系方法：目标对齐机制、需求 0–10 打分（9+ 必优先、6.5− 可灵活）、事后复盘、卧室/卫生间不谈工作。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/source-layer-map.md`
   - 依赖：A13；被引用：—
+- [accounting miss was caused by this newly added result file; the official path](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-b55e26b53a91aab4 / accounting miss was caused by this newly added result file; the official path
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
+  - 依赖：—；被引用：—
 - [Across six case-study families, generated estimators are commonly 1-5x slower than hand-coded estimators but can be orde](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7257d3461fa589a1 / Across six case-study families, generated estimators are commonly 1-5x slower than hand-coded estimators but can be orde
@@ -1803,6 +1818,16 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-45e3d31ea2afd1cf / Because Stage A failed, Stage B was not run. No Task162 longform induction output was reused as a generator input; no ex
   - 来源：`docs/governance/mutable-basis-learning-operator-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [because the controlling command does not authorize unrelated Foundation](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fac25371e6a9850c / because the controlling command does not authorize unrelated Foundation
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
+  - 依赖：—；被引用：—
+- [because the Foundation gate failed first. This is a delta from Task166's](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-bb3647085be99c99 / because the Foundation gate failed first. This is a delta from Task166's
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
   - 依赖：—；被引用：—
 - [because the observed `agent --help` did not prove those operations.](../../../docs/architecture/openclaw-adapter-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2477,30 +2502,5 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M04 / data/external-research/088-external-source-atlas-medium.jsonl / M04 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M05 / data/external-research/088-external-source-atlas-medium.jsonl / M05 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M06 / data/external-research/088-external-source-atlas-medium.jsonl / M06 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M07 / data/external-research/088-external-source-atlas-medium.jsonl / M07 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M08 / data/external-research/088-external-source-atlas-medium.jsonl / M08 / M01
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M09 / data/external-research/088-external-source-atlas-medium.jsonl / M09 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

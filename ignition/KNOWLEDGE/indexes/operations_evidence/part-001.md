@@ -1674,6 +1674,11 @@
   - 可搜索名称：IMPLICIT-450DF8C5163A6219 / ## Phase 5: Function OS Nine Nodes / IMPLICIT-450DF8C5163A6219
   - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
   - 依赖：—；被引用：—
+- [## Pre-generation diagnosis](../../../agent-results/IGNITION-20260908-168-result.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A5ECF577E5729FEE / ## Pre-generation diagnosis / IMPLICIT-A5ECF577E5729FEE
+  - 来源：`agent-results/IGNITION-20260908-168-result.md`
+  - 依赖：—；被引用：—
 - [## Priority and arbitration](../../../docs/architecture/os-steering-intent-r1.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C8B3BF4C07A2894F / ## Priority and arbitration / IMPLICIT-C8B3BF4C07A2894F
@@ -2497,10 +2502,5 @@
 - [### \[#496｜文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大\]\(docs/zh/cases/items/C-0496.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EE7DA1394055769D / ### \[#496｜文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大\]\(docs/zh/cases/items/C-0496.md\) / IMPLICIT-EE7DA1394055769D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3\(obscuration降低\) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致\]\(docs/zh/cases/items/C-0515.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-703EBE8FDEF12CB4 / ### \[#515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3\(obscuration降低\) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致\]\(docs/zh/cases/items/C-0515.md\) / IMPLICIT-703EBE8FDEF12CB4
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

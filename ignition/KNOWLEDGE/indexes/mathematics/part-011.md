@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D387\]\( \) \| \[容斥-耦合配分函数\]\( \) \| F_{D387}\(x\) := M4的Ising同构意味着配分函数Z = Σ e](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e2b64b1667d2873d / \| \[D387\]\( \) \| \[容斥-耦合配分函数\]\( \) \| F_{D387}\(x\) := M4的Ising同构意味着配分函数Z = Σ e
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D387；被引用：—
+- [\| \[D389\]\( \) \| \[不归点-吸引域边界统一函数\]\( \) \| F_{D389}\(x\) := M6的δ_c恰好是D29](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9d7ed6497f2a48c2 / \| \[D389\]\( \) \| \[不归点-吸引域边界统一函数\]\( \) \| F_{D389}\(x\) := M6的δ_c恰好是D29
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D292, D389；被引用：—
 - [\| \[D393\]\( \) \| \[溢出-传染通道统一函数\]\( \) \| F_{D393}\(x\) := M10的溢出是传染的物理通道。统一传](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b6ca4ec96c5f697c / \| \[D393\]\( \) \| \[溢出-传染通道统一函数\]\( \) \| F_{D393}\(x\) := M10的溢出是传染的物理通道。统一传
@@ -2492,15 +2502,5 @@
 - [中文：$$P_{transition} = \\sigma\\left\(\\prod_{i=1}^{n} f_i - \\theta\\right\)$$ - $f_i$：第i个驱动因子（ε, A, D, \|M_cog\|, ...） - $\\theta](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f13381d3d78377c7 / 中文：$$P_{transition} = \\sigma\\left\(\\prod_{i=1}^{n} f_i - \\theta\\right\)$$ - $f_i$：第i个驱动因子（ε, A, D, \|M_cog\|, ...） - $\\theta
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：0.618不是神秘数字，而是跨域统一定理的自然产物——当系统存在多个竞争门控面时，唯一极小点μ*的位置由门控面的相对强度决定。这解释了为什么黄金分割在如此多看似无关的领域都有效。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e2982630087456ee / 中文：0.618不是神秘数字，而是跨域统一定理的自然产物——当系统存在多个竞争门控面时，唯一极小点μ*的位置由门控面的相对强度决定。这解释了为什么黄金分割在如此多看似无关的领域都有效。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [中文：10 条定投推导函数可被统一函数表吸收，说明门锁交替律在财富域不是比喻，而是可落到执行链上的稳定结构。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-780665e5dc9de1d3 / 中文：10 条定投推导函数可被统一函数表吸收，说明门锁交替律在财富域不是比喻，而是可落到执行链上的稳定结构。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

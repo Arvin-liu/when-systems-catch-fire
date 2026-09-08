@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D260 defines a mechanism_model within the point-fire framework. Core: 中文：M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/\(1-pᵢ\)在pᵢ=0.5时=1（单位敏感](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-2820e2d6c1bd1f95 / Object D260 defines a mechanism_model within the point-fire framework. Core: 中文：M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/\(1-pᵢ\)在pᵢ=0.5时=1（单位敏感
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D260；被引用：—
 - [Object D387 defines a mechanism_model within the point-fire framework. Core: 中文：M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-ee69fb4687a717c7 / Object D387 defines a mechanism_model within the point-fire framework. Core: 中文：M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ
@@ -528,6 +533,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-11472a69a417c679 / PLE repeatedly unfolds enabled guarded definitions and is sound, complete for the paper's equational-proof relation, and
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [possible PR lifecycle transition. No historical Method 1.4 product,](../../../agent-results/IGNITION-20260908-168-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-27f2089d76dced5b / possible PR lifecycle transition. No historical Method 1.4 product,
+  - 来源：`agent-results/IGNITION-20260908-168-result.md`
   - 依赖：—；被引用：—
 - [PR #56 / 121Q24 已在验收后合并：迭代操作法与同步验证契约是当前仓库操作能力。它约束状态改变任务怎样记录 gap、claim ceiling、同步矩阵、验证和回执，但不证明任何结论的真理、价值、因果、完整性或正确性。](../../../docs/VERSIONING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7ff1d830a74c852c / The seven-layer architecture, separated registries, nine status axes, gates, deterministic migration, compatibility view
   - 来源：`reports/foundation-architecture/architecture-rebuild-summary-20260712.md`
-  - 依赖：—；被引用：—
-- [The six function entries remain bounded by their existing identity labels, M/E records and claim ceilings. The five non-](../../../reports/operations/ignition-134-step06-human-surface-semantic-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e9d43b41f1ff6f49 / The six function entries remain bounded by their existing identity labels, M/E records and claim ceilings. The five non-
-  - 来源：`reports/operations/ignition-134-step06-human-surface-semantic-audit.md`
-  - 依赖：—；被引用：—
-- [The source gives a precise function/operator ontology across Banach spaces, finite parameter vectors, discrete observati](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-715e1326448ff4c6 / The source gives a precise function/operator ontology across Banach spaces, finite parameter vectors, discrete observati
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

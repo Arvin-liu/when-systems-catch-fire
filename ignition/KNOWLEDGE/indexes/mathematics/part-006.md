@@ -974,6 +974,11 @@
   - 可搜索名称：NFC-dcb5d81cdbc5f5e9 / Life\(S\)=1 iff M_self*Boundary*Energy*Reproduction_active*Selection > theta_life。生命式系统至少要有自维持、边界、能量/资源代谢、主动复制或变体生成、选择反馈；被
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D124；被引用：—
+- [Lifecycle and epistemic boundary](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-32fc4d42ef1e0ebf / Lifecycle and epistemic boundary
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
+  - 依赖：—；被引用：—
 - [Lifecycle and external boundary](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-68954a926ba98c92 / Lifecycle and external boundary
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-61902d9e697a1c72 / Object D236 defines a formal_proposition within the point-fire framework. Core: 中文：N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ\(μ\)
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D236；被引用：—
-- [Object D260 defines a mechanism_model within the point-fire framework. Core: 中文：M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/\(1-pᵢ\)在pᵢ=0.5时=1（单位敏感](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2820e2d6c1bd1f95 / Object D260 defines a mechanism_model within the point-fire framework. Core: 中文：M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/\(1-pᵢ\)在pᵢ=0.5时=1（单位敏感
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D260；被引用：—

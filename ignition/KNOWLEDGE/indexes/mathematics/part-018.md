@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [理论族：数理逻辑, 模型论, 证明论, 递归论, 开放系统边界, 形式化限制](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-7edda6f5676791ed / 理论族：数理逻辑, 模型论, 证明论, 递归论, 开放系统边界, 形式化限制
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
+- [理论族：科学本体论, 过程本体论, 实体—关系—事件模型, 层级本体, 领域本体工程](../../../data/external-research/089-external-source-atlas.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-4fbc8ca23af8e758 / 理论族：科学本体论, 过程本体论, 实体—关系—事件模型, 层级本体, 领域本体工程
+  - 来源：`data/external-research/089-external-source-atlas.md`
+  - 依赖：—；被引用：—
 - [理论预测被实验确认](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-78c42628a34004ef / 理论预测被实验确认
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-87d229bd031349cc / 已迁移的历史函数来源/0333-D297-基本常数-容斥约束函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D297；被引用：—
-- [已迁移的历史函数来源/0334-D298-鲁棒系统设计原则函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-56747046629bb334 / 已迁移的历史函数来源/0334-D298-鲁棒系统设计原则函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D298；被引用：—
-- [已迁移的历史函数来源/0335-D299-良性-恶性共存函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-53e514ac8739a2e1 / 已迁移的历史函数来源/0335-D299-良性-恶性共存函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D299；被引用：—

@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [社会科学：所有社会因果的具体判定](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-1ea101a0b4342e0e / 社会科学：所有社会因果的具体判定
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [社会系统：邻里积分制中的拍照打卡；](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1f66a0a47380f1e5 / 社会系统：邻里积分制中的拍照打卡；
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [社会系统：邻里积分制中的荣誉阶层；](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6be07a00f7ce42cb / 社会系统：邻里积分制中的荣誉阶层；
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [社会阶层固化的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e0b21330a981ed20 / 社会阶层固化的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [秦统一\(P_fake高\)→真实偏好暴露后系统崩溃。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2de17dd6a8269f8f / 秦统一\(P_fake高\)→真实偏好暴露后系统崩溃。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [稳定公共 SVG 现在位于 `docs/generated/ignition-system-architecture.svg`；仓库中的 `ignition-system-architecture.html` 是通过 Task150 sou](../../../docs/architecture/interactive-system-map.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f88fcafbb287ca99 / 稳定公共 SVG 现在位于 `docs/generated/ignition-system-architecture.svg`；仓库中的 `ignition-system-architecture.html` 是通过 Task150 sou
+  - 来源：`docs/architecture/interactive-system-map.md`
+  - 依赖：—；被引用：—
+- [突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优化路径。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a1b58f7f9ea835ac / 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优化路径。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [竞争机制：A 基层凝聚中心；B 后勤/机动/地理中心；C 辽中枢和内部叛乱中心；D 投附/联盟/制度吸收中心；E 多因素交互、无单一主因。](../../../reports/publication/jin-rise-point-fire-analysis.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-97bbeaea4390bc0c / 竞争机制：A 基层凝聚中心；B 后勤/机动/地理中心；C 辽中枢和内部叛乱中心；D 投附/联盟/制度吸收中心；E 多因素交互、无单一主因。
+  - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
+  - 依赖：—；被引用：—
 - [简介：从战场中的一次后退进入系统自我生产证据、局部理性与整体毁灭、局部保护和稳定成本，最终返回历史解释如何被胜利结果反写。](../../../docs/publication/zhiyuan-writing-showcase.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-1723970e8f08623c / 简介：从战场中的一次后退进入系统自我生产证据、局部理性与整体毁灭、局部保护和稳定成本，最终返回历史解释如何被胜利结果反写。

@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 572 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 574 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5445,6 +5445,32 @@
 - **问题：** 此来源记录了什么：跨线程认知碰撞协议 — IGNITION-20260908-165？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260908-168 result](../agent-results/IGNITION-20260908-168-result.md)
+
+- **结果 ID：** `HR-B056E11CC7FD672F`
+- **日期：** 2026-09-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260908-168 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This bounded mainline-closure execution is controlled by Arvin-liu/1111@6a4d2b1dae17ab0f19715a6bf7fee135dcc04873, agent-commands/IGNITION-20260908-168.md.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260908-167 result](../agent-results/IGNITION-20260908-167-result.md)
+
+- **结果 ID：** `HR-89BEE83CF7869F76`
+- **日期：** 2026-09-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260908-167 result？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** MAINLINEINTEGRATIONSTILLBLOCKED
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

@@ -1124,6 +1124,11 @@
   - 可搜索名称：NFC-080b3376e77c1b5c / `agent_runtime_r0 --validates / repository_dependency--> nonknowledge_pilot` — repository pilot evidence only; no genera
   - 来源：`reports/operations/IGNITION-20260815-120-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [`BASIS_PRESSURE_SENSOR_NOT_VALIDATED`, and](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-ea7f0fd916b36d04 / `BASIS_PRESSURE_SENSOR_NOT_VALIDATED`, and
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
+  - 依赖：—；被引用：—
 - [`CHANGE` decisions and evidence:](../../../templates/operations/task-command-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-dd94a122f2c55256 / `CHANGE` decisions and evidence:
@@ -1138,6 +1143,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4648c07387ff28dd / `data/collisions/20260711-disobedience-subjectivity.json`（命令点名）→ 047 既有 `outputs/candidates/json/candidates-decision.jso
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/validation-report.md`
+  - 依赖：—；被引用：—
+- [`DETECTOR_NOT_VALIDATED / UNDERDETERMINED`,](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-49bd90e3f593074f / `DETECTOR_NOT_VALIDATED / UNDERDETERMINED`,
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
   - 依赖：—；被引用：—
 - [`docs/architecture/external-agent-federation-r1.md`、`agent_federation/` 与 `data/agent-federation/`：Task 122 的 OS/executo](../../../AI-HANDOFF.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -1159,6 +1169,11 @@
   - 可搜索名称：NFC-dd7a2a771a7d0d5c / `external_agent_federation --validates / repository_dependency--> reference_executor` — conformance/fallback evidence on
   - 来源：`reports/operations/IGNITION-20260829-148-change-propagation-impact.md`
   - 依赖：—；被引用：—
+- [`GENERATIVE_LEAD_ONLY / NOT_VALIDATED`. This engineering investigation does](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6ecdaa4d13ec4404 / `GENERATIVE_LEAD_ONLY / NOT_VALIDATED`. This engineering investigation does
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
+  - 依赖：—；被引用：—
 - [`I_iso\(A,B\)`：是否与现有条目同构。](../../../docs/agent-trigger-phrases-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-74f81fa8b92a8997 / `I_iso\(A,B\)`：是否与现有条目同构。
@@ -1178,6 +1193,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-f1ba09b5e027bc7a / `NO_EXTERNAL_TRUTH_ASSERTION`
   - 来源：`agent-results/IGNITION-20260829-148-result.md`
+  - 依赖：—；被引用：—
+- [`NO_VALIDATED_CREATIVE_DISCONTINUITY_FOUND` with Stage B](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-8c8842939d7ba744 / `NO_VALIDATED_CREATIVE_DISCONTINUITY_FOUND` with Stage B
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
   - 依赖：—；被引用：—
 - [`NOT_VALIDATED`, and reconciliation is not blocked. It cannot emit the old](../../../docs/architecture/external-agent-federation-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1203,6 +1223,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ba200a28951a65c5 / `Pack ≠ truth authority`：Pack 的 validator、hook 和 receipt 不能升级 truth、Owner 或 epistemic authority。
   - 来源：`docs/architecture/agent-platform-r2.md`
+  - 依赖：—；被引用：—
+- [`PASS`, with no unresolved paths. The remote job skipped the propagation step](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b7ee3e404a19cb76 / `PASS`, with no unresolved paths. The remote job skipped the propagation step
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
   - 依赖：—；被引用：—
 - [`PEND-014/015/016 社会科学`：涉及「社会信任/阶层固化/集体行动」的推断须 pending。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a4dc8e3d399b87d3 / Gateway、channel、私有数据库、daemon、长期会话或配置/secret；未声明的
   - 来源：`docs/architecture/external-agent-federation-r1.md`
-  - 依赖：—；被引用：—
-- [Governance report: IGNITION-20260907-161](../../ASSET-CARDS.md#asset-hr-e7d18e3a634ad513)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Governance report: IGNITION-20260907-161 / task-IGNITION-20260907-161
-  - 来源：`reports/governance/task-IGNITION-20260907-161.md`
-  - 依赖：—；被引用：—
-- [Governance report: IGNITION-20260907-163](../../ASSET-CARDS.md#asset-hr-f9cf8e83465264a9)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Governance report: IGNITION-20260907-163 / task-IGNITION-20260907-163
-  - 来源：`reports/governance/task-IGNITION-20260907-163.md`
-  - 依赖：—；被引用：—
-- [H^t, attention distributions, ponder times, remainders and update counts expose stepwise trace candidates, but no standa](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-bdd0b625fc572d4c / H^t, attention distributions, ponder times, remainders and update counts expose stepwise trace candidates, but no standa
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [handle.write\(json.dumps\(validated, ensure_ascii=False, sort_keys=True, separators=\(",", ":"\)\) + "\\n"\)](../../../agent_federation/live_reconciliation_events.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0ebd124bd5cb9b05 / handle.write\(json.dumps\(validated, ensure_ascii=False, sort_keys=True, separators=\(",", ":"\)\) + "\\n"\)
-  - 来源：`agent_federation/live_reconciliation_events.py`
-  - 依赖：—；被引用：—
-- [handoff_eligibility=HandoffEligibility\(True, "OS validator verified the read-only fixture observation"\),](../../../agent_federation/pilots.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-09e200ac54febb66 / handoff_eligibility=HandoffEligibility\(True, "OS validator verified the read-only fixture observation"\),
-  - 来源：`agent_federation/pilots.py`
   - 依赖：—；被引用：—

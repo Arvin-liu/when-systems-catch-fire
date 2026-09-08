@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-c56dd758323901b9"></a>
+## IGNITION-20260821-130 — Terminal Result
+`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
+- 1 分钟：Status: COMPLETEDWITHCLASSIFIEDRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260821-130 — Terminal Result；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；This is the formal Task 130 release-candidate result. It records the Current Surface Compiler, single-source volatile-fact registry, deterministic snapshot, typed semantic gate, lifecycle state, residual classification and fresh-clone evidence. No Owner middle relay was used.；Each Step 00–13 is one commit, one task-branch push and one exact remote-SHA verification. Step 13’s self SHA is recorded by the post-commit 1111 receipt rather than inside its own commit.；主题：Current and release boundary；Canonical current task: IGNITION-20260821-130, COMPLETEDWITHCLASSIFIEDRESIDUALS, terminal, PRESENTATIONONLY.
+- 完整阅读：[agent-results/IGNITION-20260821-130-result.md](../../agent-results/IGNITION-20260821-130-result.md)
+
+<a id="reading-hr-c5a76b2115839837"></a>
+## 121Q23 Relational Network Gap Audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: PARTIALRELATIONALASSETSWITHOUTADAPTIVERELATIONALNETWORK 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q23 Relational Network Gap Audit；Status: PARTIALRELATIONALASSETSWITHOUTADAPTIVERELATIONALNETWORK；The repository contains many relation-like assets: Foundation registries, function dependencies, Q12-Q14 control overlays, Atlas maps, MCF causal relations, PSD system state relations, evidence regimes, value boundaries, agent/resource records and publication risk relations. These are not yet one adaptive relational network substrate.；主题：Distinctions Preserved；A matrix or registry is not a network.；A map is a projection, not a truth source.
+- 完整阅读：[reports/architecture/121Q23-relational-network-gap-audit.md](../../reports/architecture/121Q23-relational-network-gap-audit.md)
+
 <a id="reading-hr-c629630ad15b68cb"></a>
 ## 任务 102 知识体验层缺口与覆盖审计
 `CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
@@ -339,17 +353,3 @@
 - 1 分钟：--- title: "v0.2 总结与收口" date: "2026-07-07" --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：用途：汇总任务 A-I 成果、pending 清单、风险清单、后续整理任务和 tag 建议。；注意：本文是 v0.2 总结与收口文件，不代表点火框架已经完成，也不代表可以立即进入 v0.3。；--- title: "v0.2 总结与收口" date: "2026-07-07" ---；v0.2 是点火项目从“公开原型”进入“结构基础设施建设”的阶段。；v0.1 主要展示点火框架能做什么：跨域结构性推论、函数化表达、案例生成、同构检测。；v0.2 的重点不是继续扩张理论，而是建立边界、证据制度、失败类型、benchmark 测试机制和故事化发布队列。
 - 完整阅读：[outputs/getbrain/v0.2-summary-and-closure-20260707.md](../../outputs/getbrain/v0.2-summary-and-closure-20260707.md)
-
-<a id="reading-hr-d90e753541f60132"></a>
-## IGNITION-20260824-138 — Step 07 Synthetic Fixture / Answer Freeze
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Task138 now has a new disposable fixture family, separate from Task137 dispatch and attempt identities. Its seven-row table applies the deterministic rule eligible == true and score = 60, then sorts by (score, id). With the frozen synthetic nonce abcdef0123456789abcdef01, Pointfire computes the i… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260824-138 — Step 07 Synthetic Fixture / Answer Freeze；Task138 now has a new disposable fixture family, separate from Task137 dispatch and attempt identities. Its seven-row table applies the deterministic rule eligible == true and score >= 60, then sorts by (score, id). With the frozen synthetic nonce abcdef0123456789abcdef01, Pointfire computes the independent answer selectedids=[item-a,item-d,item-f,item-c] an…；The fixture contains only README.txt, nonce.txt and table.json. It is made mode 0555 with read-only files before dispatch. A strict JSON Schema file is created outside the task workspace, mode 0444, with SHA-256 060ba4499607b008aa9111390662782787fbf1ce6426c16188a7195b5fbfba58; it requires exactly nonce, selectedids, count and workspacedigestclaim, and disall…；The independent validator recomputes the rule from the fixture, checks exact keys/types/values, the digest claim, file set, read-only guard and unchanged tree. Correct and wrong-answer fixtures both pass their intended validator outcomes. No inference was started.；Claim ceiling: Task138 synthetic fixture and independent answer-contract evidence only; no live result, validated completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.
-- 完整阅读：[reports/operations/ignition-138-step07-fixture-answer-freeze.md](../../reports/operations/ignition-138-step07-fixture-answer-freeze.md)
-
-<a id="reading-hr-da202c53b7387f68"></a>
-## 类型化变更传播闭包 / Typed Change-Propagation Closure
-`HISTORICAL_OR_SUPERSEDED_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3.0 are Historical after the 0727 homepage/usage/charter-system-map sync closeout made system map 0.4.0 Current; method 1.2.0 and map 0.2.0 are Historical, map 0.1.0 earlier Historical. Q32I retains this typed-propagat… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：类型化变更传播闭包 / Typed Change-Propagation Closure；Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3.0 are Historical after the 0727 homepage/usage/charter-system-map sync closeout made system map 0.4.0 Current; method 1.2.0 and map 0.2.0 are Historical, map 0.1.0 earlier Historical. Q32I retains this typed-propagation authority.；主题：The missing executable layer；The synchronization registry can derive which entrances and rendered surfaces require a decision. It does not identify every project component that changed, the typed declared relations along which an assessment must travel, or the map projection that follows. This candidate adds that computation without turning repository reachability into scientific causal…；The authority chain is:；change seeds → canonical project component registry → typed propagation topology + synchronization registry → deterministic fixpoint → component/surface decisions → system-map impact delta + residue → manifest closure binding
-- 完整阅读：[docs/architecture/typed-change-propagation.md](../../docs/architecture/typed-change-propagation.md)

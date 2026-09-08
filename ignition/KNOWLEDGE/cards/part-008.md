@@ -904,6 +904,26 @@
 - **主题：** `SYSTEMS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260827-142 Step 05 — Offline Executor Conformance`, `ignition-142-step05-offline-conformance`
 
+<a id="asset-hr-89bee83cf7869f76"></a>
+## IGNITION-20260908-167 result
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-89BEE83CF7869F76` · [agent-results/IGNITION-20260908-167-result.md](../../agent-results/IGNITION-20260908-167-result.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260908-167 result？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** MAINLINEINTEGRATIONSTILLBLOCKED
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `agent-results/IGNITION-20260908-167-result.md`, `202`
+- **演化历史：** 2026-09-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`
+- **可搜索名称：** `IGNITION-20260908-167 result`, `IGNITION-20260908-167-result`
+
 <a id="asset-hr-89dd15e48f99dbc5"></a>
 ## IGNITION-20260827-142 Step 15 — Independent Exact Validator
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Effectual Action Plane`, `effectual-action-plane`
-
-<a id="asset-hr-8b777f70fc22bb69"></a>
-## Owner observation seed: OWNER-OBS-ESI-001
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-8B777F70FC22BB69` · [docs/architecture/owner-observation-esi-001.md](../../docs/architecture/owner-observation-esi-001.md)
-- **为什么产生：** 此来源记录了什么：Owner observation seed: OWNER-OBS-ESI-001？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 公共仓库只保留一个去身份化的摘要：一个外部模型在阅读公开架构和治理材料 后，曾在后续回答中主动把工程判断与真值判断分开、保留部分未知并抵抗没有 证据支持的升级。这里没有私人正文、截图、聊天上下文、平台内容、账号或本机 路径。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/architecture/owner-observation-esi-001.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-08-20: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Owner observation seed: OWNER-OBS-ESI-001`, `owner-observation-esi-001`

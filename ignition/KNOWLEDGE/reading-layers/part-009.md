@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-ad56863677cc6ac6"></a>
+## IGNITION-20260826-140 Step 12 — Independent live-attempt validation
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Step12 independently validated the exact Task140 binding across task, dispatch, attempt, executor family and capability lease. The canonical record is sequence 5 with a complete durable capture and a cleaned process group. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260826-140 Step 12 — Independent live-attempt validation；Step12 independently validated the exact Task140 binding across task, dispatch, attempt, executor family and capability lease. The canonical record is sequence 5 with a complete durable capture and a cleaned process group.；The typed boundary is explicit:；The legacy record's return code is retained with the scope LIVEPROCESSRETURNCODEOBSERVED; it is not a public-probe return code. The read-only fixture digest is unchanged. Current now derives six attempts, zero validated completions, zero unreconciled attempts and two observation-incomplete records. The live obligation remains OPEN because a process observati…；The frozen policy forbids same-family blind retry. The fresh census had no second safe executor family admitted, so no second live attempt was authorized. There is no LIVEREADONLYVALIDATEDCOMPLETION; the task must remain fail-closed at this boundary.；Machine evidence: step12-independent-validation.json, step11-live-attempt.json, live-observation-events-r1.jsonl, live-current-projection-r2.json.
+- 完整阅读：[reports/operations/ignition-140-step12-independent-validation.md](../../reports/operations/ignition-140-step12-independent-validation.md)
+
 <a id="reading-hr-ad59534793e1d1d7"></a>
 ## 新故事索引表（2026年07月06日03时06分，故事总数 1）
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -73,6 +80,13 @@
 - 1 分钟：复核对象：NF-X1 指标排名隐性分层、NF-X2 刷分博弈、NF-X3 指标驱动噪声累积 来源：outputs/collisions/20260708-cross-domain-smoke-test/、outputs/audit/cross-domain-smoke-test-audit-20260708.md 基线函数：D597 量化指标替代真实价值（已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md） 判定框架：Ψ₀ 六维（C / M / Iiso / Lmeta / Gδ / Pmeta） 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：复核对象：NF-X1 指标排名隐性分层、NF-X2 刷分博弈、NF-X3 指标驱动噪声累积 来源：outputs/collisions/20260708-cross-domain-smoke-test/、outputs/audit/cross-domain-smoke-test-audit-20260708.md 基线函数：D597 量化指标替代真实价值（已迁移的历史函数来源/0607-D597-量化指标替代真实价值.md） 判定框架：Ψ₀ 六维（C / M / Iiso / Lmeta / Gδ / Pmeta）；主题：查重结果（全函数表 618 条）；模糊相关命中（已逐条核对边界，均非同构）：；「分层」命中 D94（向下兼容长期损耗，兼容成本）、D154（分层编码优于扁平化，信息保真中继）、D17（情绪信号分层）等——均不描述"量化排名制造隐性社会/组织分层"。；「博弈」命中 A8（决策维度）、D107/D114（变量闭包）——均不描述"拆真实活动刷分"的激励博弈。；「反馈回路」命中 D312（正反馈噪声放大，数学 δpmax·K^k）、D326（正反馈饱和，物理下界）——均为数学/物理噪声机制，非评价系统内的低质累积。
 - 完整阅读：[outputs/audit/cross-domain-candidate-function-review-20260708.md](../../outputs/audit/cross-domain-candidate-function-review-20260708.md)
+
+<a id="reading-hr-b056e11cc7fd672f"></a>
+## IGNITION-20260908-168 result
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
+- 1 分钟：This bounded mainline-closure execution is controlled by Arvin-liu/1111@6a4d2b1dae17ab0f19715a6bf7fee135dcc04873, agent-commands/IGNITION-20260908-168.md. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260908-168 result；主题：Controlling command；This bounded mainline-closure execution is controlled by Arvin-liu/1111@6a4d2b1dae17ab0f19715a6bf7fee135dcc04873, agent-commands/IGNITION-20260908-168.md.；Command blob: cc51de40a9ff06279d7f5f68e3a6c70f66c62734；Command content SHA-256: b5ab7fda21e3aa1bd06a8ab79f35543b810c012f27ad4121283cbe3bca0637cf；Formal repository: Arvin-liu/when-systems-catch-fire
+- 完整阅读：[agent-results/IGNITION-20260908-168-result.md](../../agent-results/IGNITION-20260908-168-result.md)
 
 <a id="reading-hr-b092188d0137e398"></a>
 ## IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit
@@ -339,17 +353,3 @@
 - 1 分钟：Status: 121Q13CONTROLOVERLAY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Distribution And Decision Collapse Control Plane；Status: 121Q13CONTROLOVERLAY；This control plane treats AI and human judgments on open-ended questions as context-conditioned samples, not as final answers or fact evidence.；model and model version when available;；prompt and context hashes;；sampling conditions such as role, memory state, temperature, and ordering when available;
 - 完整阅读：[docs/architecture/distribution-collapse-control-plane.md](../../docs/architecture/distribution-collapse-control-plane.md)
-
-<a id="reading-hr-c56dd758323901b9"></a>
-## IGNITION-20260821-130 — Terminal Result
-`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
-- 1 分钟：Status: COMPLETEDWITHCLASSIFIEDRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260821-130 — Terminal Result；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；This is the formal Task 130 release-candidate result. It records the Current Surface Compiler, single-source volatile-fact registry, deterministic snapshot, typed semantic gate, lifecycle state, residual classification and fresh-clone evidence. No Owner middle relay was used.；Each Step 00–13 is one commit, one task-branch push and one exact remote-SHA verification. Step 13’s self SHA is recorded by the post-commit 1111 receipt rather than inside its own commit.；主题：Current and release boundary；Canonical current task: IGNITION-20260821-130, COMPLETEDWITHCLASSIFIEDRESIDUALS, terminal, PRESENTATIONONLY.
-- 完整阅读：[agent-results/IGNITION-20260821-130-result.md](../../agent-results/IGNITION-20260821-130-result.md)
-
-<a id="reading-hr-c5a76b2115839837"></a>
-## 121Q23 Relational Network Gap Audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: PARTIALRELATIONALASSETSWITHOUTADAPTIVERELATIONALNETWORK 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q23 Relational Network Gap Audit；Status: PARTIALRELATIONALASSETSWITHOUTADAPTIVERELATIONALNETWORK；The repository contains many relation-like assets: Foundation registries, function dependencies, Q12-Q14 control overlays, Atlas maps, MCF causal relations, PSD system state relations, evidence regimes, value boundaries, agent/resource records and publication risk relations. These are not yet one adaptive relational network substrate.；主题：Distinctions Preserved；A matrix or registry is not a network.；A map is a projection, not a truth source.
-- 完整阅读：[reports/architecture/121Q23-relational-network-gap-audit.md](../../reports/architecture/121Q23-relational-network-gap-audit.md)

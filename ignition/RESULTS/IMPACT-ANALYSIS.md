@@ -202,8 +202,6 @@
 |`docs/human/function-assets/entries/a0.md`|0|0|是|
 |`docs/human/function-assets/entries/a0004.md`|0|0|是|
 |`docs/human/function-assets/entries/a0036.md`|0|0|是|
-|`docs/human/function-assets/entries/a01.md`|0|0|是|
-|`docs/human/function-assets/entries/a02.md`|0|0|是|
 |`docs/human/function-assets/entries/a1.md`|0|0|是|
 |`docs/human/function-assets/entries/a2.md`|0|0|是|
 |`docs/human/function-assets/entries/d109.md`|0|0|是|

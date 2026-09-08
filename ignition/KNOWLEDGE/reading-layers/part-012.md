@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-f25c6ad93d4e6b1c"></a>
+## IGNITION-140 Step 07 — Canonical Reconciliation Events
+`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Three reconciliation events were appended to the separate live-reconciliation-events-r1.jsonl chain. Each event binds an attempt ID, task ID, executor, immutable prior ledger record hash, and typed state digest; the event chain has three records and a valid hash chain. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-140 Step 07 — Canonical Reconciliation Events；Three reconciliation events were appended to the separate live-reconciliation-events-r1.jsonl chain. Each event binds an attempt ID, task ID, executor, immutable prior ledger record hash, and typed state digest; the event chain has three records and a valid hash chain.；The historical Task139 attempt ledger was not rewritten. The overlay changes the deterministic Current view from five attempts / three unreconciled to five attempts / zero unreconciled, while preserving two observation-incomplete attempts as historical evidence. Current therefore exposes RUNDYNAMICEXECUTORADMISSION; it does not expose a validated completion.；The three effective states are:；Hermes136: TERMINALUNRECOVERABLEEFFECTUNKNOWN;；Codex138 second: TERMINALUNRECOVERABLEOBSERVATIONINCOMPLETE;
+- 完整阅读：[reports/operations/ignition-140-step07-canonical-reconciliation-events.md](../../reports/operations/ignition-140-step07-canonical-reconciliation-events.md)
+
+<a id="reading-hr-f29753586c28f9ec"></a>
+## Governance License Scope
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：SPDX-License-Identifier: CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Governance License Scope；SPDX-License-Identifier: CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0；The life-community value charter and general governance principle texts are licensed under CC BY-SA 4.0. Governance reports, inventories, and explanatory documents are licensed under CC BY-NC-SA 4.0 unless a file says otherwise. Third-party material and unclear-rights content remain excluded.；主题：治理文档索引 / Governance Index；本目录收录点火的治理与宪章文档。下表标记各文档的当前生命周期状态；状态边界遵循 charter-system-r1.md 的不变式：任一文档可为 CURRENT 而不必 ACTIVATED，且 PUBLISHEDSNAPSHOT != ACCEPTED/CURRENT/ACTIVATED。；主题：当前治理系统（CURRENT）
+- 完整阅读：[docs/governance/README.md](../../docs/governance/README.md)
+
 <a id="reading-hr-f369ae0cee850786"></a>
 ## GetNote 1329 pipeline as an internal pressure test
 `CANDIDATE_OR_PENDING_SOURCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`

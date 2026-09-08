@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-b056e11cc7fd672f"></a>
+### 2026-09-08 · IGNITION-20260908-168 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This bounded mainline-closure execution is controlled by Arvin-liu/1111@6a4d2b1dae17ab0f19715a6bf7fee135dcc04873, agent-commands/IGNITION-20260908-168.md.
+- **来源：** [IGNITION-20260908-168-result.md](../agent-results/IGNITION-20260908-168-result.md)
+- **资产卡：** [HR-B056E11CC7FD672F](./ASSET-CARDS.md#asset-hr-b056e11cc7fd672f)
+
 <a id="change-src-hr-aebc74306f6c98e0"></a>
 ### 2026-09-08 · 历史创造性不连续性回放 — IGNITION-20260908-165
 
@@ -12,6 +21,15 @@
 - **变化：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
 - **来源：** [historical-creative-discontinuity-replay-2026-09-08.md](../docs/governance/historical-creative-discontinuity-replay-2026-09-08.md)
 - **资产卡：** [HR-AEBC74306F6C98E0](./ASSET-CARDS.md#asset-hr-aebc74306f6c98e0)
+
+<a id="change-src-hr-89bee83cf7869f76"></a>
+### 2026-09-08 · IGNITION-20260908-167 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** MAINLINEINTEGRATIONSTILLBLOCKED
+- **来源：** [IGNITION-20260908-167-result.md](../agent-results/IGNITION-20260908-167-result.md)
+- **资产卡：** [HR-89BEE83CF7869F76](./ASSET-CARDS.md#asset-hr-89bee83cf7869f76)
 
 <a id="change-src-hr-86f21d4ffffb5629"></a>
 ### 2026-09-08 · 跨线程认知碰撞协议 — IGNITION-20260908-165

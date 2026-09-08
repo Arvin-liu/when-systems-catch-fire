@@ -6,6 +6,31 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M05 / data/external-research/088-external-source-atlas-medium.jsonl / M05 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M06 / data/external-research/088-external-source-atlas-medium.jsonl / M06 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M07 / data/external-research/088-external-source-atlas-medium.jsonl / M07 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M08 / data/external-research/088-external-source-atlas-medium.jsonl / M08 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M09 / data/external-research/088-external-source-atlas-medium.jsonl / M09 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M10 / data/external-research/088-external-source-atlas-medium.jsonl / M10 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -748,6 +773,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-333289d0f1e12e77 / Failure handling:** network/non-200 outcomes are recorded explicitly and never
   - 来源：`evidence-program/preregistration/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION.protocol.md`
+  - 依赖：—；被引用：—
+- [failure was not reproducible at the exact current head. No root cause was](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-74e9982ca8037a52 / failure was not reproducible at the exact current head. No root cause was
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
   - 依赖：—；被引用：—
 - [Family assignments were mostly accurate because they were tied to the source registry.](../../../data/external-research/121-fulltext-resolver/121-template-risk-reaudit.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2474,33 +2504,3 @@
   - 可搜索名称：NFC-bf82f9437ca70052 / Object D379 defines a mechanism_model within the point-fire framework. Core: 中文：M10的溢出量∝ḡ·p_max·ΔC_i/n，方向系数∝p_max/p̄。p_m
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D379；被引用：—
-- [Object D380 defines a mechanism_model within the point-fire framework. Core: 中文：M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-176f262e0f04d75d / Object D380 defines a mechanism_model within the point-fire framework. Core: 中文：M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D380；被引用：—
-- [Object D381 defines a mechanism_model within the point-fire framework. Core: 中文：M12的溢出消耗免疫使传染临界从n/2降至n_eff/2 = n/2 - ΣΔg](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6b587219db6c1797 / Object D381 defines a mechanism_model within the point-fire framework. Core: 中文：M12的溢出消耗免疫使传染临界从n/2降至n_eff/2 = n/2 - ΣΔg
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D381；被引用：—
-- [Object D382 defines a mechanism_model within the point-fire framework. Core: 中文：M13的K·τ_delay 1时自激振荡主导（延](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-6cc7f81ab60438c5 / Object D382 defines a mechanism_model within the point-fire framework. Core: 中文：M13的K·τ_delay 1时自激振荡主导（延
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D382；被引用：—
-- [Object D383 defines a mechanism_model within the point-fire framework. Core: 中文：M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-36e5087a7344ff6a / Object D383 defines a mechanism_model within the point-fire framework. Core: 中文：M14的高确定性逃逸需要慢速推进，低确定性可快速但可能逃错方向。最优策略：初期低
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D280, D383；被引用：—
-- [Object D384 defines a mechanism_model within the point-fire framework. Core: 中文：M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6dc09e0a9d7ae504 / Object D384 defines a mechanism_model within the point-fire framework. Core: 中文：M1的D370与D348不同构：D370是方差修正（二阶），D348是均值修正（
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D348, D370, D384；被引用：—
-- [Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-362ee6bb883793ca / Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D385；被引用：—

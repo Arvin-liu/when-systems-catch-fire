@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-d90e753541f60132"></a>
+## IGNITION-20260824-138 — Step 07 Synthetic Fixture / Answer Freeze
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Task138 now has a new disposable fixture family, separate from Task137 dispatch and attempt identities. Its seven-row table applies the deterministic rule eligible == true and score = 60, then sorts by (score, id). With the frozen synthetic nonce abcdef0123456789abcdef01, Pointfire computes the i… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260824-138 — Step 07 Synthetic Fixture / Answer Freeze；Task138 now has a new disposable fixture family, separate from Task137 dispatch and attempt identities. Its seven-row table applies the deterministic rule eligible == true and score >= 60, then sorts by (score, id). With the frozen synthetic nonce abcdef0123456789abcdef01, Pointfire computes the independent answer selectedids=[item-a,item-d,item-f,item-c] an…；The fixture contains only README.txt, nonce.txt and table.json. It is made mode 0555 with read-only files before dispatch. A strict JSON Schema file is created outside the task workspace, mode 0444, with SHA-256 060ba4499607b008aa9111390662782787fbf1ce6426c16188a7195b5fbfba58; it requires exactly nonce, selectedids, count and workspacedigestclaim, and disall…；The independent validator recomputes the rule from the fixture, checks exact keys/types/values, the digest claim, file set, read-only guard and unchanged tree. Correct and wrong-answer fixtures both pass their intended validator outcomes. No inference was started.；Claim ceiling: Task138 synthetic fixture and independent answer-contract evidence only; no live result, validated completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.
+- 完整阅读：[reports/operations/ignition-138-step07-fixture-answer-freeze.md](../../reports/operations/ignition-138-step07-fixture-answer-freeze.md)
+
+<a id="reading-hr-da202c53b7387f68"></a>
+## 类型化变更传播闭包 / Typed Change-Propagation Closure
+`HISTORICAL_OR_SUPERSEDED_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3.0 are Historical after the 0727 homepage/usage/charter-system-map sync closeout made system map 0.4.0 Current; method 1.2.0 and map 0.2.0 are Historical, map 0.1.0 earlier Historical. Q32I retains this typed-propagat… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：类型化变更传播闭包 / Typed Change-Propagation Closure；Status: 121Q32THISTORICAL. Iteration method 1.3.0 and interactive system map 0.3.0 are Historical after the 0727 homepage/usage/charter-system-map sync closeout made system map 0.4.0 Current; method 1.2.0 and map 0.2.0 are Historical, map 0.1.0 earlier Historical. Q32I retains this typed-propagation authority.；主题：The missing executable layer；The synchronization registry can derive which entrances and rendered surfaces require a decision. It does not identify every project component that changed, the typed declared relations along which an assessment must travel, or the map projection that follows. This candidate adds that computation without turning repository reachability into scientific causal…；The authority chain is:；change seeds → canonical project component registry → typed propagation topology + synchronization registry → deterministic fixpoint → component/surface decisions → system-map impact delta + residue → manifest closure binding
+- 完整阅读：[docs/architecture/typed-change-propagation.md](../../docs/architecture/typed-change-propagation.md)
+
 <a id="reading-hr-da6eae8e6291205c"></a>
 ## IGNITION-20260824-137 — Step 05 Synthetic Read-Only Fixture
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -339,17 +353,3 @@
 - 1 分钟：Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260907-160 progress；Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT.；Task160 remains research-only; exact-head and lifecycle ceilings are preserved.
 - 完整阅读：[agent-results/IGNITION-20260907-160-progress.md](../../agent-results/IGNITION-20260907-160-progress.md)
-
-<a id="reading-hr-f25c6ad93d4e6b1c"></a>
-## IGNITION-140 Step 07 — Canonical Reconciliation Events
-`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Three reconciliation events were appended to the separate live-reconciliation-events-r1.jsonl chain. Each event binds an attempt ID, task ID, executor, immutable prior ledger record hash, and typed state digest; the event chain has three records and a valid hash chain. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-140 Step 07 — Canonical Reconciliation Events；Three reconciliation events were appended to the separate live-reconciliation-events-r1.jsonl chain. Each event binds an attempt ID, task ID, executor, immutable prior ledger record hash, and typed state digest; the event chain has three records and a valid hash chain.；The historical Task139 attempt ledger was not rewritten. The overlay changes the deterministic Current view from five attempts / three unreconciled to five attempts / zero unreconciled, while preserving two observation-incomplete attempts as historical evidence. Current therefore exposes RUNDYNAMICEXECUTORADMISSION; it does not expose a validated completion.；The three effective states are:；Hermes136: TERMINALUNRECOVERABLEEFFECTUNKNOWN;；Codex138 second: TERMINALUNRECOVERABLEOBSERVATIONINCOMPLETE;
-- 完整阅读：[reports/operations/ignition-140-step07-canonical-reconciliation-events.md](../../reports/operations/ignition-140-step07-canonical-reconciliation-events.md)
-
-<a id="reading-hr-f29753586c28f9ec"></a>
-## Governance License Scope
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：SPDX-License-Identifier: CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Governance License Scope；SPDX-License-Identifier: CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0；The life-community value charter and general governance principle texts are licensed under CC BY-SA 4.0. Governance reports, inventories, and explanatory documents are licensed under CC BY-NC-SA 4.0 unless a file says otherwise. Third-party material and unclear-rights content remain excluded.；主题：治理文档索引 / Governance Index；本目录收录点火的治理与宪章文档。下表标记各文档的当前生命周期状态；状态边界遵循 charter-system-r1.md 的不变式：任一文档可为 CURRENT 而不必 ACTIVATED，且 PUBLISHEDSNAPSHOT != ACCEPTED/CURRENT/ACTIVATED。；主题：当前治理系统（CURRENT）
-- 完整阅读：[docs/governance/README.md](../../docs/governance/README.md)

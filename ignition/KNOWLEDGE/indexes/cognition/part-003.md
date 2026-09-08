@@ -4,6 +4,51 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1\(轨道逐步关闭\), H从0.2 -> 0.6 -> 0.9\(组织规范obscuration增强\), τ_decoherence从50 -](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-53480F5B54FF30A4 / title: "退相干验证 — 新员工入职6个月：r_cross从0.8→0.3→0.1（轨道逐步关闭），H从0.2→0.6→0.9（组织规范遮蔽增强），τ_decoherence从50→8→1.5（退相干加速）。6个月后只剩单轨=完全退相干=认知僵化 / 退相干验证 - 新员工入职6个月: r_cross从0.8 -> 0.3 -> 0.1\(轨道逐步关闭\), H从0.2 -> 0.6 -> 0.9\(组织规范obscuration增强\), τ_decoherence从50 - / IMPLICIT-53480F5B54FF30A4
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8725C345FC0FA5E6 / title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle" / IMPLICIT-8725C345FC0FA5E6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-634a6cd7a8d04b1c / title: "门控-路径积分同构与极小熵原理 / gate / path-integral isomorphism and minimum-entropy principle"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "高维认知必然多轨"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5540325757863ba9 / title: "高维认知必然多轨"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [Transition residual casebook](../../ASSET-CARDS.md#asset-hr-6c25b5c1573d9f0b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Transition residual casebook / transition-residual-casebook-2026-09-07
+  - 来源：`docs/governance/transition-residual-casebook-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [Transition semantic irreducibility and compile-away](../../ASSET-CARDS.md#asset-hr-cebe69c6d8db2c70)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Transition semantic irreducibility and compile-away / transition-semantic-irreducibility-and-compile-away-2026-09-07
+  - 来源：`docs/governance/transition-semantic-irreducibility-and-compile-away-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [transport_evidence = _transport_evidence\(observation.process, observed_at=observed_at, timeout_seconds=envelope.timeout_](../../../agent_federation/live_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-05c1bd16a8c51715 / transport_evidence = _transport_evidence\(observation.process, observed_at=observed_at, timeout_seconds=envelope.timeout_
+  - 来源：`agent_federation/live_execution.py`
+  - 依赖：—；被引用：—
+- [transport_evidence,](../../../agent_federation/live_execution.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d420fcc2ca17de16 / transport_evidence,
+  - 来源：`agent_federation/live_execution.py`
+  - 依赖：—；被引用：—
+- [transport_evidence: Mapping\[str, Any\],](../../../agent_federation/live_task137.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d154dcbdb886fa41 / transport_evidence: Mapping\[str, Any\],
+  - 来源：`agent_federation/live_task137.py`
+  - 依赖：—；被引用：—
 - [transport_evidence=transport_evidence,](../../../agent_federation/live_task137.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-a65010fbb7b65cef / transport_evidence=transport_evidence,
@@ -13,6 +58,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d747b5e7294c2974 / trusts an executor's PASS as completion and never invokes a provider.
   - 来源：`agent_federation/task142_first_completion_validator.py`
+  - 依赖：—；被引用：—
+- [truth, grant Owner acceptance, or authorize a material run.](../../../agent-results/IGNITION-20260908-167-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-29343b8a62b83d29 / truth, grant Owner acceptance, or authorize a material run.
+  - 来源：`agent-results/IGNITION-20260908-167-result.md`
   - 依赖：—；被引用：—
 - [truth, production readiness, Owner acceptance, publication acceptance,](../../../agent-results/IGNITION-20260828-144-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`

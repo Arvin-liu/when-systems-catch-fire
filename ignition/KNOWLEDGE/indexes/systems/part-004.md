@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[C-0751\]\( \) \| \[安然公司\]\( \) \| 该案例展示了元协议缺失如何直接导致系统性失效。 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1f764c23c5087d6f / \| \[C-0751\]\( \) \| \[安然公司\]\( \) \| 该案例展示了元协议缺失如何直接导致系统性失效。 \|
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-0792\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D585《认知复杂度收敛》，用](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-54899ec13d079e64 / \| \[C-0792\]\( \) \| \[青蒿素从《肘后备急方》提炼\]\( \) \| 该案例对应 D585《认知复杂度收敛》，用
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D585；被引用：—
+- [\| \[C-169\]\( \) \| \[财商乘数四因子结构（验证D65财富域）\]\( \) \| 财富增长由认](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-228c5fc32ea8687a / \| \[C-169\]\( \) \| \[财商乘数四因子结构（验证D65财富域）\]\( \) \| 财富增长由认
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D65；被引用：—
+- [\| \[C-180\]\( \) \| \[退出权剥夺导致决策结构退化——三支→二支\]\( \) \| 三支决](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d19e10b3d69739e0 / \| \[C-180\]\( \) \| \[退出权剥夺导致决策结构退化——三支→二支\]\( \) \| 三支决
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：A7；被引用：—
+- [\| \[C-181\]\( \) \| \[因果光锥×马拉松×高山滑雪\]\( \) \| 因果光锥×马拉松×高山滑雪——不可逆路径的统一数](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ca74527c45a7f8cb / \| \[C-181\]\( \) \| \[因果光锥×马拉松×高山滑雪\]\( \) \| 因果光锥×马拉松×高山滑雪——不可逆路径的统一数
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-188\]\( \) \| \[两代退出机制×互观同质性遮蔽\]\( \) \| 两代退出机制×互观同质性遮蔽——AI-ε安](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5ce59563add00d9f / \| \[C-188\]\( \) \| \[两代退出机制×互观同质性遮蔽\]\( \) \| 两代退出机制×互观同质性遮蔽——AI-ε安
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-212\]\( \) \| \[直觉是碰出来的不是算出来的\]\( \) \| 直觉是碰出来的不是算出来的——多轨碰撞的生成机制](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-44e43346be844162 / \| \[C-212\]\( \) \| \[直觉是碰出来的不是算出来的\]\( \) \| 直觉是碰出来的不是算出来的——多轨碰撞的生成机制
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-218\]\( \) \| \[变量位置决定推导方向\]\( \) \| 变量位置决定推导方向——Ψ在右侧时永远问不出"AI能不能有意识"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4a223882e3db8658 / \| \[C-218\]\( \) \| \[变量位置决定推导方向\]\( \) \| 变量位置决定推导方向——Ψ在右侧时永远问不出"AI能不能有意识"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [\| \[C-260\]\( \) \| \[r_cross=0不导致Ψ=0\]\( \) \| 暂无内容 / No content](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d96bd39889a2335b / \| \[C-260\]\( \) \| \[r_cross=0不导致Ψ=0\]\( \) \| 暂无内容 / No content
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ada79205a7d3b129 / 历史学界通过史料考证、比较研究、跨学科分析等方法研究中国王朝周期问题。主流观点认为是多因导致，包括制度缺陷、经济压力、军事冲突、文化传统等。
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [历史学界通过史料考证、比较研究、跨学科分析等方法研究罗马帝国衰亡问题。主流观点认为是多因导致，包括政治腐败、经济衰退、军事压力、文化变迁等。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e314b4d4797ecfff / 历史学界通过史料考证、比较研究、跨学科分析等方法研究罗马帝国衰亡问题。主流观点认为是多因导致，包括政治腐败、经济衰退、军事压力、文化变迁等。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [历史学：所有历史因果的具体判定](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e662d281681f3faa / 历史学：所有历史因果的具体判定
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [历史系统可以在内部逻辑上保持自洽，但无法预测外部冲击；当外部冲击导致原有价值体系归零时，系统呈现哥德尔不完备性式的历史实例化。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ab2c2dda6e989474 / 历史系统可以在内部逻辑上保持自洽，但无法预测外部冲击；当外部冲击导致原有价值体系归零时，系统呈现哥德尔不完备性式的历史实例化。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [原始 `IMPLEMENTATION_DEFECT` 分类被保留为历史基线，但 `Prediction` 中的“系统可能会](../../../RESULTS/LATEST.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-98bc127007f94411 / 原始 `IMPLEMENTATION_DEFECT` 分类被保留为历史基线，但 `Prediction` 中的“系统可能会
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
-- [原始上传路径：`PRIVATE_PROVENANCE_WITHHELD](../../../outputs/collisions/20260708-teacher-competition/source-snapshot.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-cb1a309b037eefef / 原始上传路径：`PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`outputs/collisions/20260708-teacher-competition/source-snapshot.md`
-  - 依赖：—；被引用：—
-- [原始材料：`inputs/collisions/20260708-teacher-competition/source.md`（Get 笔记《赛课机制下的教师生存困境》）](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-33d7d7b4fd0cac63 / 原始材料：`inputs/collisions/20260708-teacher-competition/source.md`（Get 笔记《赛课机制下的教师生存困境》）
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—
-- [原始输入已经明确写出的观点、术语、机制或问题必须留在 `INPUT_DERIVED_FINDINGS / SOURCE_DERIVED`；即使它与 canonical asset 一致，也不能重新计为本轮点火发现。真正的点火增量只能是碰撞之](../../../OPERATING-METHOD.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-aed4c99bd7e09946 / 原始输入已经明确写出的观点、术语、机制或问题必须留在 `INPUT_DERIVED_FINDINGS / SOURCE_DERIVED`；即使它与 canonical asset 一致，也不能重新计为本轮点火发现。真正的点火增量只能是碰撞之
-  - 来源：`OPERATING-METHOD.md`
-  - 依赖：—；被引用：—
-- [原定义无反锁定与责任追溯机制（缺少停止条件）。](../../../docs/governance/meta-protocol-reviews/protocols/S4.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-63019766e9b1538c / 原定义无反锁定与责任追溯机制（缺少停止条件）。
-  - 来源：`docs/governance/meta-protocol-reviews/protocols/S4.md`
   - 依赖：—；被引用：—
