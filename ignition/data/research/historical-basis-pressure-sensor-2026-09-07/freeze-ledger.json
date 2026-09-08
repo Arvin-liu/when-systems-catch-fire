@@ -1,0 +1,29 @@
+{
+  "answer_key_is_not_a_blind_input": true,
+  "command_blob_sha": "18ba43e3a7d6aab3a8bdc794b2767db2e861b78a",
+  "command_commit": "ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5",
+  "command_content_sha256": "e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3",
+  "epoch_count": 12,
+  "formal_base_ref": "work/IGNITION-20260907-163",
+  "formal_base_sha": "644c93cd5cd0c7d4ed490f95795897df3bcd8826",
+  "frozen_file_hashes": {
+    "blind-checkpoint-inputs.jsonl": "622c5cd505d62062d0dfd46206c956ca40d76ec2ed7f271ec512f24cd172695b",
+    "blind-epoch-manifest.jsonl": "73ddb56f7f17e03b2503565a94a355e4db40d442d6df62aebd0f392a5a88c08e",
+    "checkpoint-manifest.jsonl": "622c5cd505d62062d0dfd46206c956ca40d76ec2ed7f271ec512f24cd172695b",
+    "chronological-source-stream.jsonl": "3c6b2558ec389a671976ddca45b0a75e4fd74ff120c1c4fc5ee8dd71d428a131",
+    "command-freeze.json": "13d7bfaa18261d70ea551c4908e2d865cfc9d287f9ad33b1960b6324280be136",
+    "epoch-boundary-manifest.jsonl": "185d800539470becb2b2765b3799c1cefcfee8c0f13a3771ccaa73eee7dd40c2",
+    "experiment-protocol.json": "b8adb37e40c89acd14b6742e1a6f19c048eba63d46264278530e3167c704e971",
+    "historical-basis-state-freeze.jsonl": "a2420e9a0f1626e697e1e9c710c9ef82728e1fe3bbd9ccacf443921d0420c458",
+    "leakage-ledger.jsonl": "429f3e72aefd177dbb8e90deb75fb34625877593bbc5a0347efe7946213629ef",
+    "negative-control-manifest.jsonl": "956240668dd8e8466ec587471c922aa9550bcb238f25b009efc3918e2fda6563",
+    "positive-answer-key.jsonl": "f2b4c3eeab740d33eff24a1f6170abc6475771486a2aba8496cb09d4e6c81419",
+    "pressure-dimension-freeze.json": "eb1faae0a2790574e6e9a7a27cd568ce84831b2bb2be6e626aca3425736db71a",
+    "split-manifest.json": "e332029b43df96d9f5f45e4f0c50063495ae9ed12673c123f1016f4f18f58818"
+  },
+  "negative_epoch_count": 8,
+  "positive_epoch_count": 4,
+  "stage_b_not_started": true,
+  "status": "FROZEN_BEFORE_BLIND_SCORING",
+  "task_id": "IGNITION-20260907-164"
+}

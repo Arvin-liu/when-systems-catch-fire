@@ -1,0 +1,33 @@
+{
+  "answer_key_file": "historical-answer-key.jsonl (not created in freeze stage)",
+  "blindness": "DATA_LEVEL_BLIND / NOT_COGNITIVELY_INDEPENDENT",
+  "forbidden_basis_free_inputs": [
+    "V1-V4 / S1-S4 / E1-E4",
+    "Value / Structure / Evolution as prior labels",
+    "64 combo IDs",
+    "meta-protocol as target answer",
+    "Task153-157 research documents"
+  ],
+  "formal_base": {
+    "ref": "main",
+    "sha_at_freeze": "212322d41db79bce2dbd116166d3f1ad226291f3"
+  },
+  "frozen_before_outcome": true,
+  "mode": "META_LEVEL_PLASTICITY / BASIS_ESCAPE / HISTORICAL_REPLAY / COUNTERFACTUAL_FALSIFICATION / RESEARCH_ONLY",
+  "no_live_external_action": true,
+  "no_production_mutation": true,
+  "primary_gates": {
+    "candidate_gate": "no candidate unless 3 independent corpus families, basis-free rediscovery, holdout gain, ablation loss and falsifier are all present",
+    "negative_holdout_false_positive_ceiling": "at most 0 of 2 negative holdouts detected",
+    "positive_detection": "blind detector emits basis_change_signal=true from pre-state plus trigger packet only",
+    "positive_holdout_floor": "at least 1 of 2 positive holdouts detected"
+  },
+  "schema_version": "ignition-158-experiment-protocol-r1",
+  "source_command": {
+    "content_sha256": "513146ae504d794d6a1440c86b3d534d6ed0ba90f4e12c4946a943682461c8f9",
+    "git_blob_sha": "918dce85cc18f6e653422b162c593af6b33d60a8",
+    "path": "agent-commands/IGNITION-20260906-158.md",
+    "repository": "Arvin-liu/1111"
+  },
+  "task_id": "IGNITION-20260906-158"
+}

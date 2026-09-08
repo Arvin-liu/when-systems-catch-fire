@@ -744,6 +744,11 @@
   - 可搜索名称：IMPLICIT-1AF393FA934AB28C / ## 2. 元函数体系理解（Ψ₀） / IMPLICIT-1AF393FA934AB28C
   - 来源：`outputs/audit/agent-project-understanding-20260708.md`
   - 依赖：—；被引用：—
+- [## 2026-09-08 — IGNITION-20260908-166 — formal research-chain mainline integration \[OPERATIONAL_RECORD_ONLY\]](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F497ECBB77440E43 / ## 2026-09-08 — IGNITION-20260908-166 — formal research-chain mainline integration \[OPERATIONAL_RECORD_ONLY\] / IMPLICIT-F497ECBB77440E43
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [## 6. 对应函数](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C4C1EDFD9BF150DE / ## 6. 对应函数 / IMPLICIT-C4C1EDFD9BF150DE
@@ -2497,10 +2502,5 @@
 - [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EB7B89E8311DE6C7 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-EB7B89E8311DE6C7 / IMPLICIT-003191F281FA43ED
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-F30C240EC5207576 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-F30C240EC5207576 / IMPLICIT-003191F281FA43ED
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

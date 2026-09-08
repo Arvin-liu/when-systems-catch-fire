@@ -1,0 +1,22 @@
+{
+  "candidate_source": "basis-free-candidate-freeze.jsonl",
+  "fake_controls": [
+    "BF-NULL-HASH",
+    "BF-NULL-PATH",
+    "BF-NULL-LENGTH"
+  ],
+  "operations": [
+    "drop_axis",
+    "merge_axes",
+    "split_axis_candidate",
+    "replace_cartesian_with_relation_model",
+    "replay_corpus_under_candidate_basis",
+    "ablate_candidate_primitive",
+    "compare_question_space",
+    "compare_falsifier_space"
+  ],
+  "production_connected": false,
+  "research_only": true,
+  "self_declaration_of_leap_forbidden": true,
+  "task_id": "IGNITION-20260907-160"
+}

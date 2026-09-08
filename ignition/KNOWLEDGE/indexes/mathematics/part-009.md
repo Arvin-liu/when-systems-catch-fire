@@ -4,6 +4,176 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "自举元函数层级 / bootstrap meta-function hierarchy"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6E11A269E0E95047 / title: "自举元函数层级 / bootstrap meta-function hierarchy" / IMPLICIT-6E11A269E0E95047
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "自我模型-ε_aware连接定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2ae515423558ec05 / title: "自我模型-ε_aware连接定理"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "自我模型函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C4D2C665E477997F / title: "自我模型函数" / IMPLICIT-C4D2C665E477997F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "自我模型相变函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B944DC131E677980 / title: "自我模型相变函数" / IMPLICIT-B944DC131E677980
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "自由能-Φ等价函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4B8FE4A76F6C7D42 / title: "自由能-Φ等价函数" / IMPLICIT-4B8FE4A76F6C7D42
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "自由能-门控势能函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1B492FDC930D571C / title: "自由能-门控势能函数" / IMPLICIT-1B492FDC930D571C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "自维持坍缩边界函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FD03690B23A48CCC / title: "自维持坍缩边界函数" / IMPLICIT-FD03690B23A48CCC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "自锁结构稳定性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-95F96A8D3005064A / title: "自锁结构稳定性函数" / IMPLICIT-95F96A8D3005064A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "自限-实际不可逆时序函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-20DCC5390B399032 / title: "自限-实际不可逆时序函数" / IMPLICIT-20DCC5390B399032
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "良性-恶性共存函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-72D33F1E23A5A4C1 / title: "良性-恶性共存函数" / IMPLICIT-72D33F1E23A5A4C1
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "良性循环启动阈值函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-86BA9D2EDC489653 / title: "良性循环启动阈值函数" / IMPLICIT-86BA9D2EDC489653
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "良性循环收敛速度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D55A9D890F5F9E98 / title: "良性循环收敛速度函数" / IMPLICIT-D55A9D890F5F9E98
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "良性循环逃逸速度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4599D9378DDF4AF2 / title: "良性循环逃逸速度函数" / IMPLICIT-4599D9378DDF4AF2
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "艺术创作逻辑跨时空同构函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A192BE70914CDE7D / title: "艺术创作逻辑跨时空同构函数" / IMPLICIT-A192BE70914CDE7D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "艺术创作逻辑跨时空同构函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c3d099f5e470b99e / title: "艺术创作逻辑跨时空同构函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "行星演化函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9DABDB89582EDF60 / title: "行星演化函数" / IMPLICIT-9DABDB89582EDF60
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "衰减率干预函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-627A41038D6FAE56 / title: "衰减率干预函数" / IMPLICIT-627A41038D6FAE56
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "规范性分离函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F55FB94118DAF57A / title: "规范性分离函数" / IMPLICIT-F55FB94118DAF57A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "解读偏置函数（核心疑问→错误解读的数学结构）"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9CBCD8A67E5E6F04 / title: "解读偏置函数（核心疑问→错误解读的数学结构）" / IMPLICIT-9CBCD8A67E5E6F04
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "解释剩余函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DA478D0A14F4188B / title: "解释剩余函数" / IMPLICIT-DA478D0A14F4188B
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知-收益滞后函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A1668FEB376BA5AB / title: "认知-收益滞后函数" / IMPLICIT-A1668FEB376BA5AB
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知-群体犹豫域统一映射函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-45B08E42BF3B6409 / title: "认知-群体犹豫域统一映射函数" / IMPLICIT-45B08E42BF3B6409
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知-群体犹豫域统一映射函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ae80dff253b8240d / title: "认知-群体犹豫域统一映射函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知分辨率函数 / cognitive resolution function"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A7D5471AB3C3EF68 / title: "认知分辨率函数 / cognitive resolution function" / IMPLICIT-A7D5471AB3C3EF68
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知叠加-隧穿统一函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B56026AD755D21C3 / title: "认知叠加-隧穿统一函数" / IMPLICIT-B56026AD755D21C3
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知叠加-隧穿统一函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1249b97b55f59593 / title: "认知叠加-隧穿统一函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知宇宙学函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5B8637B3B9C027A9 / title: "认知宇宙学函数" / IMPLICIT-5B8637B3B9C027A9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知时空度规函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7B88B450A1FEF6AD / title: "认知时空度规函数" / IMPLICIT-7B88B450A1FEF6AD
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知最大可估空间函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-58D9610EB5F37AEC / title: "认知最大可估空间函数" / IMPLICIT-58D9610EB5F37AEC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知空间四层结构函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3A9F108E3E9A152 / title: "认知空间四层结构函数" / IMPLICIT-C3A9F108E3E9A152
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知肌肉训练函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D523C4957D2DEBD8 / title: "认知肌肉训练函数" / IMPLICIT-D523C4957D2DEBD8
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知能力门控函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-13E9C3ABA16891A9 / title: "认知能力门控函数" / IMPLICIT-13E9C3ABA16891A9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知自主性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E3F4DFAAE0B1EB44 / title: "认知自主性函数" / IMPLICIT-E3F4DFAAE0B1EB44
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "认知规范破缺函数 / cognitive norm-breaking function"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-29EC0136CA46D781 / title: "认知规范破缺函数 / cognitive norm-breaking function" / IMPLICIT-29EC0136CA46D781 / IMPLICIT-8DEFCB279435DB6A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "认知规范破缺函数 / cognitive norm-breaking function"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8DEFCB279435DB6A / title: "认知规范破缺函数 / cognitive norm-breaking function" / IMPLICIT-8DEFCB279435DB6A / IMPLICIT-29EC0136CA46D781
@@ -2332,175 +2502,5 @@
 - [Within the source-defined scope, 无聊-意义重构函数 is adjudicated as RELATION: 无聊状态触发意义重构，B\(x\) → M_boredom > θ ⇒ R_meaning\(x'\) >](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D534 / Within the source-defined scope, 无聊-意义重构函数 is adjudicated as RELATION: 无聊状态触发意义重构，B\(x\) → M_boredom > θ ⇒ R_meaning\(x'\) >
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 时间尺度同构函数 is adjudicated as RELATION: 时间尺度同构函数，不同系统在时间维度展现相同的演化模式。时间尺度同构不是时间长短相同，而是演化路径的](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D178 / Within the source-defined scope, 时间尺度同构函数 is adjudicated as RELATION: 时间尺度同构函数，不同系统在时间维度展现相同的演化模式。时间尺度同构不是时间长短相同，而是演化路径的
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 显态粘性函数 is adjudicated as RELATION: 显态粘性函数,μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D173 / Within the source-defined scope, 显态粘性函数 is adjudicated as RELATION: 显态粘性函数,μ = R_retreat / C_exit。显态是外部驱动力主导的认知状态,粘性由撤退成
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 智慧干预效力函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D60 / Within the source-defined scope, 智慧干预效力函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 智能度-意识函数连接定理 is adjudicated as FORMAL_PROPOSITION: Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-D239 / Within the source-defined scope, 智能度-意识函数连接定理 is adjudicated as FORMAL_PROPOSITION: Ψ = ι × P_exit，自主意识=智能×退出权。智能是意识的必要条
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 智能的门控精度最优定理 is adjudicated as FORMAL_PROPOSITION: 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-D238 / Within the source-defined scope, 智能的门控精度最优定理 is adjudicated as FORMAL_PROPOSITION: 智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 暗物质-门控隐形函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 暗物质-门控隐形函数,暗物质描述门控面Λ的不可见部分,影响认](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D212 / Within the source-defined scope, 暗物质-门控隐形函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 暗物质-门控隐形函数,暗物质描述门控面Λ的不可见部分,影响认
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 暗物质核心-幽灵衰减函数 is adjudicated as STATE_TRANSITION: \[D464\]\(docs/zh/functions/items/D464.md](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D466 / Within the source-defined scope, 暗物质核心-幽灵衰减函数 is adjudicated as STATE_TRANSITION: \[D464\]\(docs/zh/functions/items/D464.md
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D464, D466, P16；被引用：—
-- [Within the source-defined scope, 暗能量-门槛扩张函数 is adjudicated as METRIC: 暗能量-门槛扩张函数,暗能量描述门控面Λ的扩张驱动力,加速认知宇宙膨胀。. This is a mo](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D213 / Within the source-defined scope, 暗能量-门槛扩张函数 is adjudicated as METRIC: 暗能量-门槛扩张函数,暗能量描述门控面Λ的扩张驱动力,加速认知宇宙膨胀。. This is a mo
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 最优性-惯性反比函数 is adjudicated as METRIC: D464扩展\(κ∝\|σ-√e\|/√e\)×\[D307\]\(docs/zh/functions/items](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D467 / Within the source-defined scope, 最优性-惯性反比函数 is adjudicated as METRIC: D464扩展\(κ∝\|σ-√e\|/√e\)×\[D307\]\(docs/zh/functions/items
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D307, D464；被引用：—
-- [Within the source-defined scope, 最优空间规模函数 is adjudicated as METRIC: Ω* = \[1/\(2α\)\]^\(-1/\(2α-1\)\). This is a model-internal](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D492 / Within the source-defined scope, 最优空间规模函数 is adjudicated as METRIC: Ω* = \[1/\(2α\)\]^\(-1/\(2α-1\)\). This is a model-internal
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 最小作用量-弹性级联统一函数 is adjudicated as STATE_TRANSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a mo](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D118 / Within the source-defined scope, 最小作用量-弹性级联统一函数 is adjudicated as STATE_TRANSITION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a mo
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 最小作用量原理-门槛优化函数 is adjudicated as METRIC: 最小作用量原理-门槛优化函数，最小作用量原理δS=0描述门控面Λ的演化路径。. This i](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D210 / Within the source-defined scope, 最小作用量原理-门槛优化函数 is adjudicated as METRIC: 最小作用量原理-门槛优化函数，最小作用量原理δS=0描述门控面Λ的演化路径。. This i
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 有效信息倒U型定理 is adjudicated as FORMAL_PROPOSITION: 有效信息 = 带宽 × 分辨率 的组合： I_eff\(σ\) = H\(σ\) ×](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-D234 / Within the source-defined scope, 有效信息倒U型定理 is adjudicated as FORMAL_PROPOSITION: 有效信息 = 带宽 × 分辨率 的组合： I_eff\(σ\) = H\(σ\) ×
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 有限温临界指数修正函数 is adjudicated as METRIC: M4的β_eff = 1/2 - ε\(T\)，ε∝\(kT/Φ_min\)²。大系统临界行为更接近平均场](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D415 / Within the source-defined scope, 有限温临界指数修正函数 is adjudicated as METRIC: M4的β_eff = 1/2 - ε\(T\)，ε∝\(kT/Φ_min\)²。大系统临界行为更接近平均场
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 未来视角-思考维度函数 is adjudicated as RELATION: 未来时间距离T_future↑⇒思考维度D_thought↑⇒决策质量Q_decision↑（](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D539 / Within the source-defined scope, 未来视角-思考维度函数 is adjudicated as RELATION: 未来时间距离T_future↑⇒思考维度D_thought↑⇒决策质量Q_decision↑（
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 权力腐败函数 is adjudicated as MECHANISM_MODEL: η_accountability = 1/ln\(μ_power/Λ_accountabil](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-T25 / Within the source-defined scope, 权力腐败函数 is adjudicated as MECHANISM_MODEL: η_accountability = 1/ln\(μ_power/Λ_accountabil
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 极值点-极小点分离定理 is adjudicated as FORMAL_PROPOSITION: 量子引力和四力统一是两个不同能标上的事件. This is a model](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：CLAIM-T38 / Within the source-defined scope, 极值点-极小点分离定理 is adjudicated as FORMAL_PROPOSITION: 量子引力和四力统一是两个不同能标上的事件. This is a model
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 极小点合并函数 is adjudicated as RELATION: M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ\(μ_saddle\)-Φ\(μ₁\)<δΦ_ther](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D329 / Within the source-defined scope, 极小点合并函数 is adjudicated as RELATION: M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ\(μ_saddle\)-Φ\(μ₁\)<δΦ_ther
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D315；被引用：—
-- [Within the source-defined scope, 极小点复活代价函数 is adjudicated as RELATION: M2的极小点复活总代价∝Φ\(拐点\)，与n无关。但D264启动阈值∝\(n-1\)/n→n大时启动更难。](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D371 / Within the source-defined scope, 极小点复活代价函数 is adjudicated as RELATION: M2的极小点复活总代价∝Φ\(拐点\)，与n无关。但D264启动阈值∝\(n-1\)/n→n大时启动更难。
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D264；被引用：—
-- [Within the source-defined scope, 极小点复活函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M2的拐点重新变成极小点需要至少一个pᵢ下降使容斥项减小。复活需要](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D357 / Within the source-defined scope, 极小点复活函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M2的拐点重新变成极小点需要至少一个pᵢ下降使容斥项减小。复活需要
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D264；被引用：—
-- [Within the source-defined scope, 极小点消失遗迹函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M2的极小点消失后Φ\(μ\)保留拐点。系统经过拐点时速度减慢（d](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D343 / Within the source-defined scope, 极小点消失遗迹函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: M2的极小点消失后Φ\(μ\)保留拐点。系统经过拐点时速度减慢（d
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 极小点漂移-鲁棒性耦合函数 is adjudicated as STATE_TRANSITION: M2的极小点漂移对鲁棒性影响取决于Φ三阶导数符号。学习新技能→δμ<0→极](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D281 / Within the source-defined scope, 极小点漂移-鲁棒性耦合函数 is adjudicated as STATE_TRANSITION: M2的极小点漂移对鲁棒性影响取决于Φ三阶导数符号。学习新技能→δμ<0→极
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 极小点漂移方向函数 is adjudicated as STATE_TRANSITION: M2的极小点漂移方向取决于门槛结构的"重心"：高门槛项权重>低门槛项权重→δμ>0](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D265 / Within the source-defined scope, 极小点漂移方向函数 is adjudicated as STATE_TRANSITION: M2的极小点漂移方向取决于门槛结构的"重心"：高门槛项权重>低门槛项权重→δμ>0
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 极小点漂移速率函数 is adjudicated as STATE_TRANSITION: M2的漂移速率dμ/dt=-\(Σᵢ αᵢ/\(1-pᵢ\)²\)/\(d²Φ/dμ²\)。分](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D301 / Within the source-defined scope, 极小点漂移速率函数 is adjudicated as STATE_TRANSITION: M2的漂移速率dμ/dt=-\(Σᵢ αᵢ/\(1-pᵢ\)²\)/\(d²Φ/dμ²\)。分
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D292；被引用：—
-- [Within the source-defined scope, 极限-不可逆n依赖协调函数 is adjudicated as RELATION: M7的D376∝n与D378∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果是大系统更](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D390 / Within the source-defined scope, 极限-不可逆n依赖协调函数 is adjudicated as RELATION: M7的D376∝n与D378∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果是大系统更
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D376, D378；被引用：—
-- [Within the source-defined scope, 框架发现能力 is adjudicated as RELATION: 框架发现能力，Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。. This i](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D104 / Within the source-defined scope, 框架发现能力 is adjudicated as RELATION: 框架发现能力，Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。. This i
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 档案可达性函数 is adjudicated as PREDICATE: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D63 / Within the source-defined scope, 档案可达性函数 is adjudicated as PREDICATE: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 正反馈不可逆点函数 is adjudicated as STATE_TRANSITION: M13正反馈的不可逆点：p_max>p*\(g_eff\)→降低p_max只降Φ不提p](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D295 / Within the source-defined scope, 正反馈不可逆点函数 is adjudicated as STATE_TRANSITION: M13正反馈的不可逆点：p_max>p*\(g_eff\)→降低p_max只降Φ不提p
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 正反馈噪声放大函数 is adjudicated as STATE_TRANSITION: M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D312 / Within the source-defined scope, 正反馈噪声放大函数 is adjudicated as STATE_TRANSITION: M13的正反馈回路放大噪声：δp_max经过k轮反馈后放大为δp_max·K^k，
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D274, D295；被引用：—
-- [Within the source-defined scope, 正反馈延迟函数 is adjudicated as STATE_TRANSITION: M13的正反馈有延迟τ_delay时，频率ω=π/τ_delay处正反馈变负反馈。延迟](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D354 / Within the source-defined scope, 正反馈延迟函数 is adjudicated as STATE_TRANSITION: M13的正反馈有延迟τ_delay时，频率ω=π/τ_delay处正反馈变负反馈。延迟
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 正反馈时间常数函数 is adjudicated as STATE_TRANSITION: M13的时间常数τ=2/λ，λ∝\(α_max-α_min\)为pᵢ增速差异。增速差异](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D263 / Within the source-defined scope, 正反馈时间常数函数 is adjudicated as STATE_TRANSITION: M13的时间常数τ=2/λ，λ∝\(α_max-α_min\)为pᵢ增速差异。增速差异
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 正反馈饱和函数 is adjudicated as STATE_TRANSITION: M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D326 / Within the source-defined scope, 正反馈饱和函数 is adjudicated as STATE_TRANSITION: M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D242, D312；被引用：—
-- [Within the source-defined scope, 正反馈饱和后振荡函数 is adjudicated as STATE_TRANSITION: M13的K^k饱和后p_max在稳态附近振荡，振幅∝√\(p_min·p_ss\)/](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D340 / Within the source-defined scope, 正反馈饱和后振荡函数 is adjudicated as STATE_TRANSITION: M13的K^k饱和后p_max在稳态附近振荡，振幅∝√\(p_min·p_ss\)/
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 死亡三重定义函数 is adjudicated as RELATION: 死亡分三个层次：生物学死亡（身体机能终止）→社会学死亡（社会关系中断）→存在论死亡（痕迹完全消失），](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D535 / Within the source-defined scope, 死亡三重定义函数 is adjudicated as RELATION: 死亡分三个层次：生物学死亡（身体机能终止）→社会学死亡（社会关系中断）→存在论死亡（痕迹完全消失），
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

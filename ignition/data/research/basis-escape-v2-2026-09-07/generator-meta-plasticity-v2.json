@@ -1,0 +1,47 @@
+{
+  "basis_mutation_operations": {
+    "merge_axes": {
+      "observed_in_default_pipeline": false,
+      "paths": []
+    },
+    "preserve_identity_while_changing_ontology": {
+      "observed_in_default_pipeline": false,
+      "paths": []
+    },
+    "replace_cartesian_with_relation_model": {
+      "observed_in_default_pipeline": false,
+      "paths": []
+    },
+    "rerun_corpus_under_competing_basis": {
+      "observed_in_default_pipeline": false,
+      "paths": []
+    },
+    "retire_basis_axis": {
+      "observed_in_default_pipeline": false,
+      "paths": []
+    },
+    "split_axis_candidate": {
+      "observed_in_default_pipeline": false,
+      "paths": []
+    }
+  },
+  "current_default_pipeline": [
+    "source",
+    "classify",
+    "evidence/claim",
+    "registry",
+    "validation",
+    "projection",
+    "publication/governance"
+  ],
+  "default_basis_change_destination": "ABSENT_OR_RESEARCH_ONLY",
+  "interpretation": "The default path visibly grows fields, registries and projections; it does not expose a stable ordinary basis-retire/merge/split/competing-basis route. This supports a bounded generator blind-spot finding, not a new production operator.",
+  "pipeline_evidence": [
+    "ignition/tools/foundation/build_function_asset_census.py",
+    "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
+    "ignition/tools/governance/build_knowledge_experience.py",
+    "ignition/tools/publication/build_fire_seed_census.py"
+  ],
+  "shadow_mutator_isolated": true,
+  "task_id": "IGNITION-20260907-160"
+}

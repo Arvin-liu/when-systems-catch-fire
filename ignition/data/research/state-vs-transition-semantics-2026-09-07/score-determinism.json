@@ -1,0 +1,11 @@
+{
+  "answer_key_loaded_during_score": false,
+  "byte_identical": true,
+  "clone_heads": [
+    "b5d3d7e47822e4dbd310f09fd8b060611ecf8b21",
+    "b5d3d7e47822e4dbd310f09fd8b060611ecf8b21"
+  ],
+  "expected_head": "b5d3d7e47822e4dbd310f09fd8b060611ecf8b21",
+  "score_sha256": "ed9f5ef629d88d6c3df215b90a20f0702d5a2fb9ee86966f448edd4c7ac41900",
+  "status": "BYTE_IDENTICAL"
+}

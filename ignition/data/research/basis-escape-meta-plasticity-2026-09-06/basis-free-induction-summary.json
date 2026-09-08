@@ -1,0 +1,32 @@
+{
+  "cognitive_independence": false,
+  "cross_family_factors": [
+    "authority_agency",
+    "evidence_grounding",
+    "generation_validation",
+    "normative_direction",
+    "relational_boundary",
+    "temporal_change"
+  ],
+  "factor_support_across_all_files": {
+    "authority_agency": 1500,
+    "evidence_grounding": 1792,
+    "generation_validation": 1508,
+    "normative_direction": 806,
+    "relational_boundary": 1261,
+    "temporal_change": 1810
+  },
+  "independent_family_count": 5,
+  "interpretation": "Repeated V/S/E-like factors recur, but evidence/authority/provenance/generation factors are cross-cutting and not established as an independent fourth axis.",
+  "non_vse_cross_family": [
+    "authority_agency",
+    "evidence_grounding",
+    "generation_validation"
+  ],
+  "rediscovered_vse_like": [
+    "normative_direction",
+    "relational_boundary",
+    "temporal_change"
+  ],
+  "task_id": "IGNITION-20260906-158"
+}

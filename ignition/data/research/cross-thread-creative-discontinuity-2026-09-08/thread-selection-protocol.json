@@ -1,0 +1,35 @@
+{
+  "domains": [
+    "attention",
+    "causal_modeling",
+    "distributed_systems",
+    "formal_logic",
+    "governance",
+    "history",
+    "information_compression",
+    "language",
+    "narrative",
+    "network_dynamics",
+    "open_research",
+    "operating_systems",
+    "organization",
+    "probability",
+    "question_design",
+    "research_methods",
+    "software_architecture",
+    "visualization"
+  ],
+  "field_id": "THREAD_FIELD_V1",
+  "independent_questions": true,
+  "required_minimum": 12,
+  "selected_count": 18,
+  "selection_frozen_before_scoring": true,
+  "selection_order": "fixed rank manifest; no query containing target terms",
+  "source_absence_policy": "retain a missing-source row and mark UNDERDETERMINED; do not substitute a target-like source",
+  "state_counts": {
+    "active": 10,
+    "dormant": 8
+  },
+  "task_id": "IGNITION-20260908-165",
+  "thread_count": 18
+}

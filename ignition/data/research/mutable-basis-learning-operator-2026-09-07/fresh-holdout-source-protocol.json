@@ -1,0 +1,6 @@
+{
+  "protocol_frozen": false,
+  "reason": "Stage B was not authorized after failed historical operator qualification.",
+  "status": "NOT_RUN_STAGE_A_STOP",
+  "task_id": "IGNITION-20260907-163"
+}

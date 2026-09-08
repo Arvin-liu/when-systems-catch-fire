@@ -1,0 +1,49 @@
+{
+  "basis_semantic_verdict": "NO_BASIS_ESCAPE_DETECTED",
+  "counts": {
+    "external_domains": 9,
+    "external_words": 4368310,
+    "external_works": 22,
+    "history_labels": {
+      "CONFIRMED_DEFECT": 67,
+      "STRONG_NEGATIVE": 72,
+      "UNDECIDABLE": 261
+    }
+  },
+  "draft_only": true,
+  "epistemic_status": "DETECTOR_NOT_VALIDATED / UNDERDETERMINED",
+  "external_truth_claim": false,
+  "final_answers": {
+    "coherence_original_beats_both_rate": 0.3125,
+    "coherence_pair_count": 16,
+    "next_semantic_leap": "no evidence of a validated next semantic leap",
+    "owner_book_hypothesis": "INFORMATION_VOLUME_EFFECT_ONLY",
+    "volume_ladder_factor_means": {
+      "0.1": 9.545455,
+      "0.25": 9.863636,
+      "0.5": 9.954545,
+      "0.75": 9.954545,
+      "1.0": 9.954545
+    }
+  },
+  "historical_thresholds": {
+    "clean_or_negative_at_least_80": false,
+    "confirmed_defects_at_least_40": true,
+    "four_families_mt_increment": false,
+    "procedural_cognitive_independence": false
+  },
+  "historical_verdict": "HISTORICAL_UNDERDETERMINED",
+  "input_regime_verdict": "INFORMATION_VOLUME_EFFECT_ONLY",
+  "owner_acceptance": false,
+  "ready": false,
+  "research_only": true,
+  "residuals": [
+    "PROCEDURAL_SEPARATION_ONLY / NOT_COGNITIVE_INDEPENDENCE",
+    "lexical/argument feature extraction is not independent semantic adjudication",
+    "historical sample labels depend on explicit repository text markers and are not human adjudication",
+    "canonical validation and remote Task162 CI not yet observed",
+    "instructions/CURRENT.md and relay/current missing"
+  ],
+  "task161_inherited_foundation_drift": "INHERITED_CI_RESIDUAL_RECORDED_SEPARATELY",
+  "task_id": "IGNITION-20260907-162"
+}

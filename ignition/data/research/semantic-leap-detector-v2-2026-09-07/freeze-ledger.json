@@ -1,0 +1,22 @@
+{
+  "files": {
+    "answer-key.jsonl": "de5102fc58e88e010f44d32c2109cea7e76f299f679ed1bf1bb5e3d6f12dab3a",
+    "blind-packets.jsonl": "7dd2a521572576c3ac534ce3067037007f4236b447008fa9a15d40099abef21c",
+    "confusion-by-family.json": "c42fd1a9dfd080e3b247489805d408ceebbb4e7e6feba6002d745c43ee74c436",
+    "event-split-manifest.json": "4385ad65d3c6cd35d6b573e55efdfb10323e2a81f76c2acec60a814d63145592",
+    "event-universe.jsonl": "1c2213771b8e3a99fdb2ec5ae1844e69459c441b8e3514a2f5c6ab6ba0396116",
+    "experiment-protocol.json": "7ae073e871b4c9747e1d21a35ae7f677431ceffd8bc450e17cc870797b52fa3e",
+    "false-positive-false-negative-casebook.jsonl": "c01a846d050d30b85be42914c0e57b01c9b070e38d2e9eef77a5a1a695000b37",
+    "hypothesis-freeze.json": "32599a66dbfa73723912324e1761e750e5654c3a6630f680416607495dee7576",
+    "non-leap-challenger-results.jsonl": "434906b72b081a4b2544617441d207bcfce40116ff909276dc1a2703ce983510",
+    "semantic-conservative-mappings.jsonl": "1d2fc3a709200f0ff596554f74c57692dc0f57080be6b5ae3d2fc5ceba9d3253",
+    "semantic-leap-signature-v2.json": "eb53b18121cfd6b6fa3791ce77ede5dc1f614fac39ab6e1a296b8440ce15cc04",
+    "unblind-results.jsonl": "94ced7b278adc00f99ef0ea580d478cd42575d35a71abe160415ca94c8933c25",
+    "v1-score.jsonl": "3c3a77ed69463a3ce95f8eed5a2b20abfaa4f5af04791ec3c8a8c9e92d1e4e7c",
+    "v2-ablation-results.jsonl": "5ff2df7f6864bd31d8bc55adf6690d5d38956ed966cfbfc15a8bb71d44fa4260",
+    "v2-score-run-1.jsonl": "9215aebb5d6aa1509eb943104cecefdaf2aa0a17071f96b8b8b6b45f6d33abeb",
+    "v2-score-run-2.jsonl": "9215aebb5d6aa1509eb943104cecefdaf2aa0a17071f96b8b8b6b45f6d33abeb",
+    "verdict.json": "32a34c3efe6825a30e330308deb6b46eec4f64d82e288c8b89cf6b3d4ae0d8db"
+  },
+  "status": "FROZEN"
+}

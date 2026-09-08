@@ -1,0 +1,16 @@
+{
+  "ablation_count": 8,
+  "ablations": "a8720ea343993fd9e69b3de582aeb05b6bcb64c4eb74df224cef80a93ced6965",
+  "boundary_check": false,
+  "compile_away": "cff840968b18d64aabfe7ece45c597c949ef3d6f4fe2d86f70fcc82fb0ac7a63",
+  "maintenance": "5d4e654e333b690dea580a146ff5d21835d346d02c2d29275da4cfcc26b2a969",
+  "maintenance_count": 8,
+  "metamorphic": "f453279c202e0fe4266695bc8d7c23bcf715917c5ee270c6e08e74561bb5dfff",
+  "metrics": "10b1ac9de46f754ac4be165f5ab79335e892fdfb34791ad667c059a5997e4a21",
+  "old_check_failures": "9e2be2ff1435e4aff52894ad53e069680d76e215fc87da823008ea34595639b9",
+  "overreach_controls": "49fff58c6dd9525ce6ef00105be37a9d8b8f279e9a061749870aa52201316120",
+  "question_count": 6,
+  "question_language": "6d695a585b7c2515f45e498fde8a2984753aade6b1f1c7adcdfedd0199599ef6",
+  "task_id": "IGNITION-20260907-161",
+  "v2_score": "cc13699a10334e32a70433ce070ff3ddbbd3a3d61f6efe62bf4ca1d1aa3699a1"
+}

@@ -4,6 +4,474 @@
 
 ## 2026
 
+<a id="change-src-hr-b056e11cc7fd672f"></a>
+### 2026-09-08 · IGNITION-20260908-168 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This bounded mainline-closure execution is controlled by Arvin-liu/1111@6a4d2b1dae17ab0f19715a6bf7fee135dcc04873, agent-commands/IGNITION-20260908-168.md.
+- **来源：** [IGNITION-20260908-168-result.md](../agent-results/IGNITION-20260908-168-result.md)
+- **资产卡：** [HR-B056E11CC7FD672F](./ASSET-CARDS.md#asset-hr-b056e11cc7fd672f)
+
+<a id="change-src-hr-aebc74306f6c98e0"></a>
+### 2026-09-08 · 历史创造性不连续性回放 — IGNITION-20260908-165
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **来源：** [historical-creative-discontinuity-replay-2026-09-08.md](../docs/governance/historical-creative-discontinuity-replay-2026-09-08.md)
+- **资产卡：** [HR-AEBC74306F6C98E0](./ASSET-CARDS.md#asset-hr-aebc74306f6c98e0)
+
+<a id="change-src-hr-89bee83cf7869f76"></a>
+### 2026-09-08 · IGNITION-20260908-167 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** MAINLINEINTEGRATIONSTILLBLOCKED
+- **来源：** [IGNITION-20260908-167-result.md](../agent-results/IGNITION-20260908-167-result.md)
+- **资产卡：** [HR-89BEE83CF7869F76](./ASSET-CARDS.md#asset-hr-89bee83cf7869f76)
+
+<a id="change-src-hr-86f21d4ffffb5629"></a>
+### 2026-09-08 · 跨线程认知碰撞协议 — IGNITION-20260908-165
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **来源：** [cross-thread-cognitive-collision-2026-09-08.md](../docs/governance/cross-thread-cognitive-collision-2026-09-08.md)
+- **资产卡：** [HR-86F21D4FFFFB5629](./ASSET-CARDS.md#asset-hr-86f21d4ffffb5629)
+
+<a id="change-src-hr-844a2312fd98066e"></a>
+### 2026-09-08 · 问题空间重写消融 — IGNITION-20260908-165
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **来源：** [problem-space-rewrite-ablation-2026-09-08.md](../docs/governance/problem-space-rewrite-ablation-2026-09-08.md)
+- **资产卡：** [HR-844A2312FD98066E](./ASSET-CARDS.md#asset-hr-844a2312fd98066e)
+
+<a id="change-src-hr-4ec1ffa8540c9ee2"></a>
+### 2026-09-08 · 治理报告：IGNITION-20260908-165
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **来源：** [task-IGNITION-20260908-165.md](../reports/governance/task-IGNITION-20260908-165.md)
+- **资产卡：** [HR-4EC1FFA8540C9EE2](./ASSET-CARDS.md#asset-hr-4ec1ffa8540c9ee2)
+
+<a id="change-src-hr-329cc92e5bdc90c8"></a>
+### 2026-09-08 · Agent result: IGNITION-20260908-165
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 已严格执行固定命令 b3b128f46a625f728870ded1a975f3c2f0db53ce（blob 065f02e04e3a0c8e55c398954a761c66901f74b5，内容 SHA-256 dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a），Formal 基线为 work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32fb2df。
+- **来源：** [IGNITION-20260908-165-result.md](../agent-results/IGNITION-20260908-165-result.md)
+- **资产卡：** [HR-329CC92E5BDC90C8](./ASSET-CARDS.md#asset-hr-329cc92e5bdc90c8)
+
+<a id="change-src-hr-30fdf00cdb08a566"></a>
+### 2026-09-08 · 休眠问题池与再激活 — IGNITION-20260908-165
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **来源：** [dormant-question-pool-and-reactivation-2026-09-08.md](../docs/governance/dormant-question-pool-and-reactivation-2026-09-08.md)
+- **资产卡：** [HR-30FDF00CDB08A566](./ASSET-CARDS.md#asset-hr-30fdf00cdb08a566)
+
+<a id="change-src-hr-1125ea8d76940b5f"></a>
+### 2026-09-08 · 下一步认识论能力评估 — IGNITION-20260908-165
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **来源：** [next-epistemic-capability-assessment-2026-09-08.md](../docs/governance/next-epistemic-capability-assessment-2026-09-08.md)
+- **资产卡：** [HR-1125EA8D76940B5F](./ASSET-CARDS.md#asset-hr-1125ea8d76940b5f)
+
+<a id="change-src-hr-fd61253709a198c4"></a>
+### 2026-09-07 · Agent result: IGNITION-20260907-162
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Completed the requested research-only longform corpus, information-volume/coherence ablation, basis-free induction, and procedural historical adjudication package from the exact command source 8ab1aac0cdedd4874c798f4593614335cdd79e76 / blob df58765e5c21cf3b0aba15f804ce461b4b1c542e / content SHA-2…
+- **来源：** [IGNITION-20260907-162-result.md](../agent-results/IGNITION-20260907-162-result.md)
+- **资产卡：** [HR-FD61253709A198C4](./ASSET-CARDS.md#asset-hr-fd61253709a198c4)
+
+<a id="change-src-hr-fd1a98871b9b5c54"></a>
+### 2026-09-07 · Next basis assessment — Task163
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** The current execution does not establish a new basis, a surviving current basis, or generator lock-in. It establishes only that this R1 implementation cannot yet qualify as a historical basis-learning replay instrument under the frozen evidence boundary.
+- **来源：** [next-basis-assessment-2026-09-07.md](../docs/governance/next-basis-assessment-2026-09-07.md)
+- **资产卡：** [HR-FD1A98871B9B5C54](./ASSET-CARDS.md#asset-hr-fd1a98871b9b5c54)
+
+<a id="change-src-hr-fbfb831e55a2a3a0"></a>
+### 2026-09-07 · Fixed-feature versus mutable-basis comparison — Task163
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: NOTRUNSTAGEASTOP.
+- **来源：** [fixed-vs-mutable-generator-comparison-2026-09-07.md](../docs/governance/fixed-vs-mutable-generator-comparison-2026-09-07.md)
+- **资产卡：** [HR-FBFB831E55A2A3A0](./ASSET-CARDS.md#asset-hr-fbfb831e55a2a3a0)
+
+<a id="change-src-hr-fa8811c92d24bf67"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [next-semantic-leap-assessment-2026-09-07.md](../docs/governance/next-semantic-leap-assessment-2026-09-07.md)
+- **资产卡：** [HR-FA8811C92D24BF67](./ASSET-CARDS.md#asset-hr-fa8811c92d24bf67)
+
+<a id="change-src-hr-f9cf8e83465264a9"></a>
+### 2026-09-07 · Governance report: IGNITION-20260907-163
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This was a research-only execution of Arvin-liu/1111/agent-commands/IGNITION-20260907-163.md at command commit 73cde2ab84d829bb0990f63d957e2152b1a330e4, blob 521d468829425a210cc763df72456f2c28753d02, complete-content SHA-256 f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1.
+- **来源：** [task-IGNITION-20260907-163.md](../reports/governance/task-IGNITION-20260907-163.md)
+- **资产卡：** [HR-F9CF8E83465264A9](./ASSET-CARDS.md#asset-hr-f9cf8e83465264a9)
+
+<a id="change-src-hr-f03c0e16cbb5b9f8"></a>
+### 2026-09-07 · IGNITION-20260907-160 progress
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT.
+- **来源：** [IGNITION-20260907-160-progress.md](../agent-results/IGNITION-20260907-160-progress.md)
+- **资产卡：** [HR-F03C0E16CBB5B9F8](./ASSET-CARDS.md#asset-hr-f03c0e16cbb5b9f8)
+
+<a id="change-src-hr-e7d18e3a634ad513"></a>
+### 2026-09-07 · Governance report: IGNITION-20260907-161
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
+- **来源：** [task-IGNITION-20260907-161.md](../reports/governance/task-IGNITION-20260907-161.md)
+- **资产卡：** [HR-E7D18E3A634AD513](./ASSET-CARDS.md#asset-hr-e7d18e3a634ad513)
+
+<a id="change-src-hr-d5d49675f693ee46"></a>
+### 2026-09-07 · Sensitivity versus mutation-generator diagnosis — IGNITION-20260907-164
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d…
+- **来源：** [sensitivity-vs-mutation-generator-diagnosis-2026-09-07.md](../docs/governance/sensitivity-vs-mutation-generator-diagnosis-2026-09-07.md)
+- **资产卡：** [HR-D5D49675F693EE46](./ASSET-CARDS.md#asset-hr-d5d49675f693ee46)
+
+<a id="change-src-hr-d328b83e8acb36d8"></a>
+### 2026-09-07 · Agent result: IGNITION-20260907-164
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Executed the pinned research-only command at ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 (blob 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a, content SHA-256 e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3) from Formal base work/IGNITION-20260907-163@644c93cd5cd0c7d4ed490f95795897df3bcd8…
+- **来源：** [IGNITION-20260907-164-result.md](../agent-results/IGNITION-20260907-164-result.md)
+- **资产卡：** [HR-D328B83E8ACB36D8](./ASSET-CARDS.md#asset-hr-d328b83e8acb36d8)
+
+<a id="change-src-hr-cebe69c6d8db2c70"></a>
+### 2026-09-07 · Transition semantic irreducibility and compile-away
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
+- **来源：** [transition-semantic-irreducibility-and-compile-away-2026-09-07.md](../docs/governance/transition-semantic-irreducibility-and-compile-away-2026-09-07.md)
+- **资产卡：** [HR-CEBE69C6D8DB2C70](./ASSET-CARDS.md#asset-hr-cebe69c6d8db2c70)
+
+<a id="change-src-hr-cda7771b389c6cec"></a>
+### 2026-09-07 · IGNITION-20260907-159
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Primary verdict: SEMANTICLEAPDETECTORV2VALIDATEDFORRESEARCHREPLAY.
+- **来源：** [task-IGNITION-20260907-159.md](../reports/governance/task-IGNITION-20260907-159.md)
+- **资产卡：** [HR-CDA7771B389C6CEC](./ASSET-CARDS.md#asset-hr-cda7771b389c6cec)
+
+<a id="change-src-hr-cc59ba840b050653"></a>
+### 2026-09-07 · Basis-pressure sensor qualification — IGNITION-20260907-164
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d…
+- **来源：** [basis-pressure-sensor-qualification-2026-09-07.md](../docs/governance/basis-pressure-sensor-qualification-2026-09-07.md)
+- **资产卡：** [HR-CC59BA840B050653](./ASSET-CARDS.md#asset-hr-cc59ba840b050653)
+
+<a id="change-src-hr-c9fad80505e44281"></a>
+### 2026-09-07 · Historical basis-pressure reconstruction — IGNITION-20260907-164
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d…
+- **来源：** [historical-basis-pressure-reconstruction-2026-09-07.md](../docs/governance/historical-basis-pressure-reconstruction-2026-09-07.md)
+- **资产卡：** [HR-C9FAD80505E44281](./ASSET-CARDS.md#asset-hr-c9fad80505e44281)
+
+<a id="change-src-hr-be4be8d31cea1114"></a>
+### 2026-09-07 · IGNITION-20260907-162: external longform corpus selection
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
+- **变化：** Status: FROZENBEFORESOURCEDISCOVERY for the selection protocol; the final eligible corpus is research evidence only. The controlling machine records are under ignition/data/research/longform-emergence-and-historical-adjudication-2026-09-07/.
+- **来源：** [external-longform-corpus-selection-2026-09-07.md](../docs/governance/external-longform-corpus-selection-2026-09-07.md)
+- **资产卡：** [HR-BE4BE8D31CEA1114](./ASSET-CARDS.md#asset-hr-be4be8d31cea1114)
+
+<a id="change-src-hr-aaa1067fb3ef6d76"></a>
+### 2026-09-07 · State versus transition semantics competition
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
+- **来源：** [state-vs-transition-semantics-competition-2026-09-07.md](../docs/governance/state-vs-transition-semantics-competition-2026-09-07.md)
+- **资产卡：** [HR-AAA1067FB3EF6D76](./ASSET-CARDS.md#asset-hr-aaa1067fb3ef6d76)
+
+<a id="change-src-hr-a2d31113db51b1d6"></a>
+### 2026-09-07 · Task159 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** SEMANTICLEAPDETECTORV2VALIDATEDFORRESEARCHREPLAY for the frozen local-history corpus. N02 and N03 are NONLEAP because their OldBasis-to-NewRepresentation mappings preserve object language, operations, and question space. No lifecycle, canonical, provider, or publication action occurred.
+- **来源：** [IGNITION-20260907-159-result.md](../agent-results/IGNITION-20260907-159-result.md)
+- **资产卡：** [HR-A2D31113DB51B1D6](./ASSET-CARDS.md#asset-hr-a2d31113db51b1d6)
+
+<a id="change-src-hr-9c6cccd9238910af"></a>
+### 2026-09-07 · IGNITION-20260907-162: convergence and next-leap assessment
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** The final machine verdict is:
+- **来源：** [external-history-convergence-and-next-leap-assessment-2026-09-07.md](../docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md)
+- **资产卡：** [HR-9C6CCCD9238910AF](./ASSET-CARDS.md#asset-hr-9c6cccd9238910af)
+
+<a id="change-src-hr-99eeb7f92b2b668a"></a>
+### 2026-09-07 · Agent result: IGNITION-20260907-161
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
+- **来源：** [IGNITION-20260907-161-result.md](../agent-results/IGNITION-20260907-161-result.md)
+- **资产卡：** [HR-99EEB7F92B2B668A](./ASSET-CARDS.md#asset-hr-99eeb7f92b2b668a)
+
+<a id="change-src-hr-8bba307108ef807a"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [task-IGNITION-20260907-160.md](../reports/governance/task-IGNITION-20260907-160.md)
+- **资产卡：** [HR-8BBA307108EF807A](./ASSET-CARDS.md#asset-hr-8bba307108ef807a)
+
+<a id="change-src-hr-83eb7775f0e63a9a"></a>
+### 2026-09-07 · IGNITION-20260907-162: independent historical adjudication
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** The historical track uses repository history as a separate source channel from the external longform corpus. It is a procedural blind-separation exercise and is not claimed to be cognitively independent or human-adjudicated.
+- **来源：** [independent-historical-adjudication-2026-09-07.md](../docs/governance/independent-historical-adjudication-2026-09-07.md)
+- **资产卡：** [HR-83EB7775F0E63A9A](./ASSET-CARDS.md#asset-hr-83eb7775f0e63a9a)
+
+<a id="change-src-hr-7d1c593d80794fdb"></a>
+### 2026-09-07 · Agent result: IGNITION-20260907-163
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Completed the research-only Task163 Stage A package from the pinned command source 73cde2ab84d829bb0990f63d957e2152b1a330e4 / blob 521d468829425a210cc763df72456f2c28753d02 / content SHA-256 f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1.
+- **来源：** [IGNITION-20260907-163-result.md](../agent-results/IGNITION-20260907-163-result.md)
+- **资产卡：** [HR-7D1C593D80794FDB](./ASSET-CARDS.md#asset-hr-7d1c593d80794fdb)
+
+<a id="change-src-hr-73527fbd5e45faa1"></a>
+### 2026-09-07 · Longform causal-chain basis learning — Task163
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: NOTRUNSTAGEASTOP.
+- **来源：** [longform-causal-chain-basis-learning-2026-09-07.md](../docs/governance/longform-causal-chain-basis-learning-2026-09-07.md)
+- **资产卡：** [HR-73527FBD5E45FAA1](./ASSET-CARDS.md#asset-hr-73527fbd5e45faa1)
+
+<a id="change-src-hr-6c25b5c1573d9f0b"></a>
+### 2026-09-07 · Transition residual casebook
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
+- **来源：** [transition-residual-casebook-2026-09-07.md](../docs/governance/transition-residual-casebook-2026-09-07.md)
+- **资产卡：** [HR-6C25B5C1573D9F0B](./ASSET-CARDS.md#asset-hr-6c25b5c1573d9f0b)
+
+<a id="change-src-hr-68d7cbb9aeae7042"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [basis-escape-v2-2026-09-07.md](../docs/governance/basis-escape-v2-2026-09-07.md)
+- **资产卡：** [HR-68D7CBB9AEAE7042](./ASSET-CARDS.md#asset-hr-68d7cbb9aeae7042)
+
+<a id="change-src-hr-5957e8d26e8521d9"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [basis-free-induction-and-residual-casebook-2026-09-07.md](../docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md)
+- **资产卡：** [HR-5957E8D26E8521D9](./ASSET-CARDS.md#asset-hr-5957e8d26e8521d9)
+
+<a id="change-src-hr-4ad08e43386acc2f"></a>
+### 2026-09-07 · Early-ignition historical replay — Task163
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This is the Stage A historical qualification record for the research-only R1 operator.
+- **来源：** [early-ignition-historical-replay-2026-09-07.md](../docs/governance/early-ignition-historical-replay-2026-09-07.md)
+- **资产卡：** [HR-4AD08E43386ACC2F](./ASSET-CARDS.md#asset-hr-4ad08e43386acc2f)
+
+<a id="change-src-hr-49b7518940381732"></a>
+### 2026-09-07 · Semantic Leap Detector V2 (Task159)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_SCOPED_SOURCE`
+- **变化：** Status: research-only replay instrument. It does not change canonical protocol meaning, Current state, authority, capability, production readiness, or acceptance.
+- **来源：** [semantic-leap-detector-v2-2026-09-07.md](../docs/governance/semantic-leap-detector-v2-2026-09-07.md)
+- **资产卡：** [HR-49B7518940381732](./ASSET-CARDS.md#asset-hr-49b7518940381732)
+
+<a id="change-src-hr-40a77c9aaf81e52d"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [generator-meta-plasticity-v2-2026-09-07.md](../docs/governance/generator-meta-plasticity-v2-2026-09-07.md)
+- **资产卡：** [HR-40A77C9AAF81E52D](./ASSET-CARDS.md#asset-hr-40a77c9aaf81e52d)
+
+<a id="change-src-hr-3ef891412912b7e1"></a>
+### 2026-09-07 · IGNITION-20260907-162: information volume and logical coherence
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This is a research-only ablation of longform input. It asks whether more ordered text and preserved logical/section order have distinguishable effects in the frozen measurement, without treating lexical counts as semantic validation.
+- **来源：** [information-volume-and-logical-coherence-experiment-2026-09-07.md](../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
+- **资产卡：** [HR-3EF891412912B7E1](./ASSET-CARDS.md#asset-hr-3ef891412912b7e1)
+
+<a id="change-src-hr-3bc48ce92df8d91a"></a>
+### 2026-09-07 · Governance report: IGNITION-20260907-164
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d…
+- **来源：** [task-IGNITION-20260907-164.md](../reports/governance/task-IGNITION-20260907-164.md)
+- **资产卡：** [HR-3BC48CE92DF8D91A](./ASSET-CARDS.md#asset-hr-3bc48ce92df8d91a)
+
+<a id="change-src-hr-343f0375cf2be38c"></a>
+### 2026-09-07 · Next-basis learning assessment — IGNITION-20260907-164
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d…
+- **来源：** [next-basis-learning-assessment-2026-09-07.md](../docs/governance/next-basis-learning-assessment-2026-09-07.md)
+- **资产卡：** [HR-343F0375CF2BE38C](./ASSET-CARDS.md#asset-hr-343f0375cf2be38c)
+
+<a id="change-src-hr-232c314acdd088b8"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [IGNITION-20260907-160-result.md](../agent-results/IGNITION-20260907-160-result.md)
+- **资产卡：** [HR-232C314ACDD088B8](./ASSET-CARDS.md#asset-hr-232c314acdd088b8)
+
+<a id="change-src-hr-2048d95801ce57ed"></a>
+### 2026-09-07 · Task163 mutable basis-learning operator
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
+- **变化：** Status: research-only, Draft-only, and stopped at the historical qualification gate. This package does not change canonical protocol meaning, the 64 matrix, runtime behavior, validators, provider semantics, authority, Current state, production readiness, or Owner acceptance.
+- **来源：** [mutable-basis-learning-operator-2026-09-07.md](../docs/governance/mutable-basis-learning-operator-2026-09-07.md)
+- **资产卡：** [HR-2048D95801CE57ED](./ASSET-CARDS.md#asset-hr-2048d95801ce57ed)
+
+<a id="change-src-hr-0ef43e8a763273a8"></a>
+### 2026-09-07 · IGNITION-20260907-162: basis-free longform induction
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This document records the external-track induction after the source and hypothesis freezes. Candidate identifiers remain anonymous in the machine record so that later historical reconciliation cannot be treated as an answer-guided source choice.
+- **来源：** [basis-free-longform-induction-2026-09-07.md](../docs/governance/basis-free-longform-induction-2026-09-07.md)
+- **资产卡：** [HR-0EF43E8A763273A8](./ASSET-CARDS.md#asset-hr-0ef43e8a763273a8)
+
+<a id="change-src-hr-0cb75e532e63f776"></a>
+### 2026-09-07 · Governance report: IGNITION-20260907-162
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-162.md at command commit 8ab1aac0cdedd4874c798f4593614335cdd79e76, blob df58765e5c21cf3b0aba15f804ce461b4b1c542e, complete-content SHA-256 e4e61e12ca3798b72b714c0fc2e9cf1ec0b1224529dee138c9740a0fc2b4b65a. The Formal…
+- **来源：** [task-IGNITION-20260907-162.md](../reports/governance/task-IGNITION-20260907-162.md)
+- **资产卡：** [HR-0CB75E532E63F776](./ASSET-CARDS.md#asset-hr-0cb75e532e63f776)
+
+<a id="change-src-hr-0718b15aa86c2d20"></a>
+### 2026-09-07 · Task160｜Basis Escape V2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **来源：** [meta-protocol-64-absorption-vs-generativity-2026-09-07.md](../docs/governance/meta-protocol-64-absorption-vs-generativity-2026-09-07.md)
+- **资产卡：** [HR-0718B15AA86C2D20](./ASSET-CARDS.md#asset-hr-0718b15aa86c2d20)
+
+<a id="change-src-hr-ea13f7ea325dac81"></a>
+### 2026-09-06 · Historical Basis-Leaps Reconstruction — IGNITION-20260906-158
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** Status: research-only; DETECTORNOTVALIDATED / UNDERDETERMINED; no canonical, production, authority, capability, lifecycle, external-truth, or Owner-acceptance change.
+- **来源：** [ignition-historical-basis-leaps-reconstruction-2026-09-06.md](../docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md)
+- **资产卡：** [HR-EA13F7EA325DAC81](./ASSET-CARDS.md#asset-hr-ea13f7ea325dac81)
+
+<a id="change-src-hr-dc27e4d07f0cf3f5"></a>
+### 2026-09-06 · Task report IGNITION-20260906-158
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Completion state at local analysis: PENDINGDRAFTANDREMOTECI.
+- **来源：** [task-IGNITION-20260906-158.md](../reports/governance/task-IGNITION-20260906-158.md)
+- **资产卡：** [HR-DC27E4D07F0CF3F5](./ASSET-CARDS.md#asset-hr-dc27e4d07f0cf3f5)
+
+<a id="change-src-hr-d88fd2b435abc1cd"></a>
+### 2026-09-06 · Generator Plasticity Audit — IGNITION-20260906-158
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_OR_SUPERSEDED_SOURCE`
+- **变化：** Status: research-only audit. The phrase GENERATORLOCKINSUPPORTEDASRESEARCHFINDING is retained inside the bounded machine audit, but it is not a validated causal verdict because the historical detector failed its pre-registered negative holdout.
+- **来源：** [ignition-generator-plasticity-audit-2026-09-06.md](../docs/governance/ignition-generator-plasticity-audit-2026-09-06.md)
+- **资产卡：** [HR-D88FD2B435ABC1CD](./ASSET-CARDS.md#asset-hr-d88fd2b435abc1cd)
+
+<a id="change-src-hr-c2813f07a6d9b6ac"></a>
+### 2026-09-06 · IGNITION-20260906-158 result
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** status: PENDINGDRAFTANDREMOTECI verdict: DETECTORNOTVALIDATED / UNDERDETERMINED formalbase: 212322d41db79bce2dbd116166d3f1ad226291f3 commandblobsha: 918dce85cc18f6e653422b162c593af6b33d60a8 commandcontentsha256: 513146ae504d794d6a1440c86b3d534d6ed0ba90f4e12c4946a943682461c8f9
+- **来源：** [IGNITION-20260906-158-result.md](../agent-results/IGNITION-20260906-158-result.md)
+- **资产卡：** [HR-C2813F07A6D9B6AC](./ASSET-CARDS.md#asset-hr-c2813f07a6d9b6ac)
+
+<a id="change-src-hr-70a0b0d3dd83948a"></a>
+### 2026-09-06 · Representation Residual Casebook — IGNITION-20260906-158
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** The entries below are repeated research residuals observed while comparing the existing static representation, repository generators, and historical controls. A residual family is a review lens, not a canonical failure class, schema, obligation, or production requirement.
+- **来源：** [representation-residual-casebook-2026-09-06.md](../docs/governance/representation-residual-casebook-2026-09-06.md)
+- **资产卡：** [HR-70A0B0D3DD83948A](./ASSET-CARDS.md#asset-hr-70a0b0d3dd83948a)
+
+<a id="change-src-hr-69f642bbe7b8fc10"></a>
+### 2026-09-06 · Meta-Protocol 64 Basis-Escape Experiment — IGNITION-20260906-158
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This is a frozen research protocol and replay record. It is not a new meta-protocol, schema, registry, validator, runtime capability, or canonical layer.
+- **来源：** [meta-protocol-64-basis-escape-experiment-2026-09-06.md](../docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md)
+- **资产卡：** [HR-69F642BBE7B8FC10](./ASSET-CARDS.md#asset-hr-69f642bbe7b8fc10)
+
+<a id="change-src-hr-2cd469bfb4cab0c7"></a>
+### 2026-09-06 · Basis Competition and Next-Leap Assessment — IGNITION-20260906-158
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **变化：** This is a comparative research assessment, not an authorization to replace the current basis or create a successor task.
+- **来源：** [basis-competition-and-next-leap-assessment-2026-09-06.md](../docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md)
+- **资产卡：** [HR-2CD469BFB4CAB0C7](./ASSET-CARDS.md#asset-hr-2cd469bfb4cab0c7)
+
 <a id="change-src-hr-eabed7bd3564479d"></a>
 ### 2026-08-29 · IGNITION-20260829-148 typed change-propagation impact report
 

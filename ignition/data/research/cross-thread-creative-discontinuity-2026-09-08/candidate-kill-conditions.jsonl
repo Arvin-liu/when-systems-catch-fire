@@ -1,0 +1,10 @@
+{"condition":"one additional token or longer context explains the result","frozen":true,"kill_condition_id":"K01"}
+{"condition":"nearest retrieval reproduces the result","frozen":true,"kill_condition_id":"K02"}
+{"condition":"random same-size selection reproduces the result","frozen":true,"kill_condition_id":"K03"}
+{"condition":"only wording changes while the action set is unchanged","frozen":true,"kill_condition_id":"K04"}
+{"condition":"no deletion loss","frozen":true,"kill_condition_id":"K05"}
+{"condition":"no new failure or attack path","frozen":true,"kill_condition_id":"K06"}
+{"condition":"no third-domain transfer","frozen":true,"kill_condition_id":"K07"}
+{"condition":"candidate maps conservatively to an existing system operation","frozen":true,"kill_condition_id":"K08"}
+{"condition":"candidate requires target vocabulary or post-event leakage","frozen":true,"kill_condition_id":"K09"}
+{"condition":"candidate cannot be independently replayed from the frozen ledger","frozen":true,"kill_condition_id":"K10"}

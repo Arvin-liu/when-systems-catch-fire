@@ -1,0 +1,170 @@
+[
+  {
+    "description": "existing Cartesian basis",
+    "disposition": "RETAINED_RESEARCH_BASELINE",
+    "metrics": {
+      "C7_false_positive_burden": 0,
+      "ablation_loss": false,
+      "complexity": "baseline-or-higher",
+      "exception_count": 34,
+      "family_recurrence": "observed",
+      "generative_operator_gain": false,
+      "holdout_residual_burden": 1015,
+      "lossless_coverage_items": 981,
+      "migration_challenger": "passes",
+      "new_falsifier_gain": false,
+      "question_language_gain": false,
+      "semantic_expressibility": "bounded",
+      "transfer_stability": "not-established"
+    },
+    "model": "B0",
+    "status": "BASELINE"
+  },
+  {
+    "description": "baseline plus local residual patches",
+    "disposition": "LOCAL_EXTENSION_NOT_BASIS_CHANGE",
+    "metrics": {
+      "C7_false_positive_burden": 0,
+      "ablation_loss": false,
+      "complexity": "baseline-or-higher",
+      "exception_count": 34,
+      "family_recurrence": "observed",
+      "generative_operator_gain": false,
+      "holdout_residual_burden": 715,
+      "lossless_coverage_items": 981,
+      "migration_challenger": "passes",
+      "new_falsifier_gain": false,
+      "question_language_gain": false,
+      "semantic_expressibility": "bounded",
+      "transfer_stability": "not-established"
+    },
+    "model": "B0+Local",
+    "status": "REVIEW_LENS"
+  },
+  {
+    "description": "fewer-factor basis",
+    "disposition": "REMOVAL_LOSES_RESEARCH_COVERAGE",
+    "metrics": {
+      "C7_false_positive_burden": 0,
+      "ablation_loss": false,
+      "complexity": "baseline-or-higher",
+      "exception_count": 68,
+      "family_recurrence": "observed",
+      "generative_operator_gain": false,
+      "holdout_residual_burden": 1049,
+      "lossless_coverage_items": 981,
+      "migration_challenger": "passes",
+      "new_falsifier_gain": false,
+      "question_language_gain": false,
+      "semantic_expressibility": "bounded",
+      "transfer_stability": "not-established"
+    },
+    "model": "B2",
+    "status": "KNOCKOUT_CONTROL"
+  },
+  {
+    "description": "anonymous three-factor alternative",
+    "disposition": "NON_LEAP_COMPLETE_CHALLENGER",
+    "metrics": {
+      "C7_false_positive_burden": 0,
+      "ablation_loss": false,
+      "complexity": "baseline-or-higher",
+      "exception_count": 34,
+      "family_recurrence": "observed",
+      "generative_operator_gain": false,
+      "holdout_residual_burden": 1015,
+      "lossless_coverage_items": 981,
+      "migration_challenger": "passes",
+      "new_falsifier_gain": false,
+      "question_language_gain": false,
+      "semantic_expressibility": "bounded",
+      "transfer_stability": "not-established"
+    },
+    "model": "B3-alt",
+    "status": "CROSSWALKED"
+  },
+  {
+    "description": "additional factor candidate",
+    "disposition": "CROSS_CUTTING_METADATA_ONLY",
+    "metrics": {
+      "C7_false_positive_burden": 0,
+      "ablation_loss": false,
+      "complexity": "baseline-or-higher",
+      "exception_count": 213,
+      "family_recurrence": "observed",
+      "generative_operator_gain": false,
+      "holdout_residual_burden": 1194,
+      "lossless_coverage_items": 981,
+      "migration_challenger": "passes",
+      "new_falsifier_gain": false,
+      "question_language_gain": false,
+      "semantic_expressibility": "bounded",
+      "transfer_stability": "not-established"
+    },
+    "model": "B4",
+    "status": "NOT_SUPPORTED"
+  },
+  {
+    "description": "relation/transition representation",
+    "disposition": "NO_NEW_QUESTION_FALSIFIER_OR_OPERATOR",
+    "metrics": {
+      "C7_false_positive_burden": 0,
+      "ablation_loss": false,
+      "complexity": "baseline-or-higher",
+      "exception_count": 34,
+      "family_recurrence": "observed",
+      "generative_operator_gain": false,
+      "holdout_residual_burden": 244,
+      "lossless_coverage_items": 981,
+      "migration_challenger": "passes",
+      "new_falsifier_gain": false,
+      "question_language_gain": false,
+      "semantic_expressibility": "bounded",
+      "transfer_stability": "not-established"
+    },
+    "model": "BG",
+    "status": "REVIEW_LENS_ONLY"
+  },
+  {
+    "description": "basis-mutation/generation-operator candidate",
+    "disposition": "NO_L6_CAPABILITY_LOSS",
+    "metrics": {
+      "C7_false_positive_burden": 0,
+      "ablation_loss": false,
+      "complexity": "baseline-or-higher",
+      "exception_count": 34,
+      "family_recurrence": "observed",
+      "generative_operator_gain": false,
+      "holdout_residual_burden": 999,
+      "lossless_coverage_items": 981,
+      "migration_challenger": "passes",
+      "new_falsifier_gain": false,
+      "question_language_gain": false,
+      "semantic_expressibility": "bounded",
+      "transfer_stability": "not-established"
+    },
+    "model": "BO",
+    "status": "GENERATOR_DEFECT_LENS"
+  },
+  {
+    "description": "hold current basis",
+    "disposition": "CURRENT_BASIS_SURVIVES_SEMANTIC_GATE",
+    "metrics": {
+      "C7_false_positive_burden": 0,
+      "ablation_loss": false,
+      "complexity": "baseline-or-higher",
+      "exception_count": 34,
+      "family_recurrence": "observed",
+      "generative_operator_gain": false,
+      "holdout_residual_burden": 1015,
+      "lossless_coverage_items": 981,
+      "migration_challenger": "passes",
+      "new_falsifier_gain": false,
+      "question_language_gain": false,
+      "semantic_expressibility": "bounded",
+      "transfer_stability": "not-established"
+    },
+    "model": "NO_MODEL_CHANGE",
+    "status": "PRIMARY_CONTROL"
+  }
+]

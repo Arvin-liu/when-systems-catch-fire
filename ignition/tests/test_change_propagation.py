@@ -2,6 +2,7 @@ import copy
 import hashlib
 import json
 import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -33,6 +34,39 @@ def _git(repo: Path, *args: str) -> str:
 # this era instead of the live (drifted) registry so post-era surfaces do not
 # spuriously break closures that were complete in their own era.
 Q32_ERA_REF = "0a13c246172c0338bf8dda5dc08db5a574a8b23f"
+
+
+# Task167 regression fixtures: these are the three Method 1.4 products invoked
+# by the Foundation workflow.  They deliberately keep distinct persisted
+# product identities so a future workflow edit cannot silently make one
+# request validate another request's report or closure.
+METHOD_14_ERA_REF = "f59b9f359ea16a346e07e9621049468417b66423"
+METHOD_14_REQUESTS = (
+    {
+        "label": "A",
+        "request": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-request.json",
+        "output": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-closure.json",
+        "report": "reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md",
+        "map_delta": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-system-map-delta.json",
+        "residue": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726-residue.json",
+    },
+    {
+        "label": "B",
+        "request": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-request.json",
+        "output": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-closure.json",
+        "report": "reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md",
+        "map_delta": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-system-map-delta.json",
+        "residue": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-residue.json",
+    },
+    {
+        "label": "C",
+        "request": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-request.json",
+        "output": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-closure.json",
+        "report": "reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-change-propagation-impact.md",
+        "map_delta": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-system-map-delta.json",
+        "residue": "data/operations/propagation/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-NORMALIZED-SCHEMA-AND-AUTOMATION-VARIANT-NARROW-REPAIR-R2-20260726-residue.json",
+    },
+)
 
 
 def _make_repo() -> Path:
@@ -237,6 +271,93 @@ class ChangePropagationTests(unittest.TestCase):
         self.assertEqual(first["closure_hash"], second["closure_hash"])
         self.assertEqual(first["typed_paths"], second["typed_paths"])
         self.assertTrue(first["fixpoint"]["reached"])
+
+    def test_task167_method_14_checks_are_reentrant_isolated_and_fail_closed(self):
+        """Repeated and permuted checks preserve identity, read-only state and stale detection."""
+
+        def run_check(spec, *, report_override=None, product_overrides=None):
+            product_overrides = product_overrides or {}
+            command = [
+                sys.executable,
+                "tools/operations/compute_change_propagation.py",
+                "--request",
+                spec["request"],
+                "--output",
+                str(product_overrides.get("output", spec["output"])),
+                "--report",
+                str(report_override or product_overrides.get("report", spec["report"])),
+                "--map-delta",
+                str(product_overrides.get("map_delta", spec["map_delta"])),
+                "--residue",
+                str(product_overrides.get("residue", spec["residue"])),
+                "--era-ref",
+                METHOD_14_ERA_REF,
+                "--head-ref",
+                METHOD_14_ERA_REF,
+                "--check",
+            ]
+            return subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+
+        product_paths = sorted({
+            path
+            for spec in METHOD_14_REQUESTS
+            for path in (spec["output"], spec["report"], spec["map_delta"], spec["residue"])
+        })
+        before_bytes = {path: (ROOT / path).read_bytes() for path in product_paths}
+        before_status = _git(REPO_ROOT, "status", "--porcelain=v1")
+
+        by_label = {spec["label"]: spec for spec in METHOD_14_REQUESTS}
+        observations = {}
+        for order in (("A", "B", "C"), ("C", "B", "A"), ("B", "A", "C")):
+            for label in order:
+                result = run_check(by_label[label])
+                self.assertEqual(result.returncode, 0, result.stderr or result.stdout)
+                observations.setdefault(label, []).append(result.stdout)
+
+        for label in ("A", "B", "C"):
+            for _ in range(3):
+                result = run_check(by_label[label])
+                self.assertEqual(result.returncode, 0, result.stderr or result.stdout)
+                observations[label].append(result.stdout)
+            self.assertEqual(len(set(observations[label])), 1, label)
+            self.assertEqual(json.loads(observations[label][0])["status"], "PASS")
+
+        with tempfile.TemporaryDirectory(prefix="ignition167-products-") as temp_dir:
+            temp = Path(temp_dir)
+            a = by_label["A"]
+            a_paths = {}
+            for key in ("output", "report", "map_delta", "residue"):
+                destination = temp / key
+                destination.write_bytes((ROOT / a[key]).read_bytes())
+                a_paths[key] = destination
+
+            tampered = json.loads(a_paths["output"].read_text(encoding="utf-8"))
+            tampered["closure_hash"] = "0" * 64
+            a_paths["output"].write_text(
+                json.dumps(tampered, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+                encoding="utf-8",
+            )
+            stale = run_check(a, product_overrides=a_paths)
+            self.assertNotEqual(stale.returncode, 0)
+            self.assertIn("stale propagation product", stale.stderr)
+
+            b = by_label["B"]
+            b_paths = {}
+            for key in ("output", "map_delta", "residue"):
+                destination = temp / f"b-{key}"
+                destination.write_bytes((ROOT / b[key]).read_bytes())
+                b_paths[key] = destination
+            isolation = run_check(
+                b,
+                report_override=a_paths["report"],
+                product_overrides=b_paths,
+            )
+            self.assertNotEqual(isolation.returncode, 0)
+            self.assertIn("stale propagation product", isolation.stderr)
+
+        self.assertEqual(before_status, _git(REPO_ROOT, "status", "--porcelain=v1"))
+        for path, original in before_bytes.items():
+            self.assertEqual(original, (ROOT / path).read_bytes(), path)
 
     def test_substantive_causal_candidate_cannot_auto_propagate(self):
         topology = copy.deepcopy(TOPOLOGY_DOC)

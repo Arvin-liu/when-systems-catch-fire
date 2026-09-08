@@ -1599,6 +1599,11 @@
   - 可搜索名称：NFC-035fe2e306d66bd1 / Baseline:** the registry's own `crossref_verified` / `crossref_title` / `crossref_year` assertion.
   - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-CROSSREF-DOI-VERIFICATION/RESULT.md`
   - 依赖：—；被引用：—
+- [Basis Competition and Next-Leap Assessment — IGNITION-20260906-158](../../ASSET-CARDS.md#asset-hr-2cd469bfb4cab0c7)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Basis Competition and Next-Leap Assessment — IGNITION-20260906-158 / basis-competition-and-next-leap-assessment-2026-09-06
+  - 来源：`docs/governance/basis-competition-and-next-leap-assessment-2026-09-06.md`
+  - 依赖：—；被引用：—
 - [become `UNSAFE_TO_PROBE`. A stale or tampered lease is never a healthy route.](../../../docs/architecture/os-control-plane-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-eba6e99e2d83c06d / become `UNSAFE_TO_PROBE`. A stale or tampered lease is never a healthy route.
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e55270e73de42d54 / claimed_n = sum\(1 for r in records if r.get\("crossref_verified"\)\)
   - 来源：`evidence-program/tools/run_crossref_verification.py`
-  - 依赖：—；被引用：—
-- [class ArtifactRefRecord:](../../../reos_vnext/contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6700b48ab59365b4 / class ArtifactRefRecord:
-  - 来源：`reos_vnext/contract.py`
   - 依赖：—；被引用：—

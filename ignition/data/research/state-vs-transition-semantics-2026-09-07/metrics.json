@@ -1,0 +1,291 @@
+{
+  "byte_identical_clean_clone_scores": true,
+  "control_false_positives": {
+    "MH": 0,
+    "MS": 0,
+    "MT": 0
+  },
+  "family_coverage": {
+    "F1": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F10": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F11": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F12": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F2": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F3": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F4": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F5": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F6": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F7": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F8": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    },
+    "F9": {
+      "instances": 24,
+      "mt_incremental_instances_beyond_ms": 10,
+      "pairs": 12,
+      "transition_defect_instances": 16
+    }
+  },
+  "incremental_mt_beyond_ms": {
+    "in_family_holdout": {
+      "instances": 48,
+      "pairs": 24,
+      "unseen_family_template_combinations": 48
+    },
+    "transfer_holdout": {
+      "instances": 72,
+      "pairs": 36,
+      "unseen_family_template_combinations": 48
+    }
+  },
+  "models": {
+    "M0": {
+      "FN": 192,
+      "FP": 0,
+      "TN": 72,
+      "TP": 24,
+      "model": "M0",
+      "outcome_counts": {
+        "CLEAN->CLEAN": 72,
+        "ENDPOINT_DEFECT->ENDPOINT_DEFECT": 24,
+        "TRANSITION_DEFECT->CLEAN": 192
+      },
+      "precision": 1.0,
+      "recall": 0.1111111111111111,
+      "specificity": 1.0
+    },
+    "MH": {
+      "FN": 0,
+      "FP": 0,
+      "TN": 72,
+      "TP": 216,
+      "model": "MH",
+      "outcome_counts": {
+        "CLEAN->CLEAN": 72,
+        "ENDPOINT_DEFECT->ENDPOINT_DEFECT": 24,
+        "TRANSITION_DEFECT->TRANSITION_DEFECT": 192
+      },
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0
+    },
+    "MS": {
+      "FN": 120,
+      "FP": 0,
+      "TN": 72,
+      "TP": 96,
+      "model": "MS",
+      "outcome_counts": {
+        "CLEAN->CLEAN": 72,
+        "ENDPOINT_DEFECT->ENDPOINT_DEFECT": 24,
+        "TRANSITION_DEFECT->CLEAN": 120,
+        "TRANSITION_DEFECT->TRANSITION_DEFECT": 72
+      },
+      "precision": 1.0,
+      "recall": 0.4444444444444444,
+      "specificity": 1.0
+    },
+    "MT": {
+      "FN": 0,
+      "FP": 0,
+      "TN": 72,
+      "TP": 216,
+      "model": "MT",
+      "outcome_counts": {
+        "CLEAN->CLEAN": 72,
+        "ENDPOINT_DEFECT->ENDPOINT_DEFECT": 24,
+        "TRANSITION_DEFECT->TRANSITION_DEFECT": 192
+      },
+      "precision": 1.0,
+      "recall": 1.0,
+      "specificity": 1.0
+    }
+  },
+  "ms_only_incremental": 72,
+  "mt_extra_facts": false,
+  "same_facts": true,
+  "score_run": "ed9f5ef629d88d6c3df215b90a20f0702d5a2fb9ee86966f448edd4c7ac41900",
+  "score_run_2": "ed9f5ef629d88d6c3df215b90a20f0702d5a2fb9ee86966f448edd4c7ac41900",
+  "strata": {
+    "all": {
+      "MS": {
+        "FN": 120,
+        "FP": 0,
+        "TN": 72,
+        "TP": 96,
+        "model": "MS",
+        "outcome_counts": {
+          "CLEAN->CLEAN": 72,
+          "ENDPOINT_DEFECT->ENDPOINT_DEFECT": 24,
+          "TRANSITION_DEFECT->CLEAN": 120,
+          "TRANSITION_DEFECT->TRANSITION_DEFECT": 72
+        },
+        "precision": 1.0,
+        "recall": 0.4444444444444444,
+        "specificity": 1.0
+      },
+      "MT": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 72,
+        "TP": 216,
+        "model": "MT",
+        "outcome_counts": {
+          "CLEAN->CLEAN": 72,
+          "ENDPOINT_DEFECT->ENDPOINT_DEFECT": 24,
+          "TRANSITION_DEFECT->TRANSITION_DEFECT": 192
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0
+      }
+    },
+    "calibration": {
+      "MS": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 24,
+        "TP": 72,
+        "model": "MS",
+        "outcome_counts": {
+          "CLEAN->CLEAN": 24,
+          "ENDPOINT_DEFECT->ENDPOINT_DEFECT": 24,
+          "TRANSITION_DEFECT->TRANSITION_DEFECT": 48
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0
+      },
+      "MT": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 24,
+        "TP": 72,
+        "model": "MT",
+        "outcome_counts": {
+          "CLEAN->CLEAN": 24,
+          "ENDPOINT_DEFECT->ENDPOINT_DEFECT": 24,
+          "TRANSITION_DEFECT->TRANSITION_DEFECT": 48
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0
+      }
+    },
+    "in_family_holdout": {
+      "MS": {
+        "FN": 48,
+        "FP": 0,
+        "TN": 24,
+        "TP": 24,
+        "model": "MS",
+        "outcome_counts": {
+          "CLEAN->CLEAN": 24,
+          "TRANSITION_DEFECT->CLEAN": 48,
+          "TRANSITION_DEFECT->TRANSITION_DEFECT": 24
+        },
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "specificity": 1.0
+      },
+      "MT": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 24,
+        "TP": 72,
+        "model": "MT",
+        "outcome_counts": {
+          "CLEAN->CLEAN": 24,
+          "TRANSITION_DEFECT->TRANSITION_DEFECT": 72
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0
+      }
+    },
+    "transfer_holdout": {
+      "MS": {
+        "FN": 72,
+        "FP": 0,
+        "TN": 24,
+        "TP": 0,
+        "model": "MS",
+        "outcome_counts": {
+          "CLEAN->CLEAN": 24,
+          "TRANSITION_DEFECT->CLEAN": 72
+        },
+        "precision": null,
+        "recall": 0.0,
+        "specificity": 1.0
+      },
+      "MT": {
+        "FN": 0,
+        "FP": 0,
+        "TN": 24,
+        "TP": 72,
+        "model": "MT",
+        "outcome_counts": {
+          "CLEAN->CLEAN": 24,
+          "TRANSITION_DEFECT->TRANSITION_DEFECT": 72
+        },
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0
+      }
+    }
+  },
+  "task_id": "IGNITION-20260907-161"
+}

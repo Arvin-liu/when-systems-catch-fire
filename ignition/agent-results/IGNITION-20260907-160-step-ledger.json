@@ -1,0 +1,29 @@
+{
+  "failures_and_repairs": [
+    {
+      "failure": "prior GitHub visibility anomaly",
+      "repair": "correct Formal repository discovered; no design or threshold change"
+    }
+  ],
+  "residuals": [
+    "cognitive independence",
+    "external truth",
+    "independent human adjudication",
+    "full semantic model judgment"
+  ],
+  "steps": [
+    "command frozen",
+    "Task159 exact base and PR preflight verified",
+    "freeze and sanitized split",
+    "clean-clone V2 replay",
+    "historical absorption",
+    "six basis-free passes",
+    "axis/fake controls",
+    "residual clustering",
+    "competing basis",
+    "shadow mutator",
+    "candidate V2 scoring",
+    "verdict and docs"
+  ],
+  "task_id": "IGNITION-20260907-160"
+}

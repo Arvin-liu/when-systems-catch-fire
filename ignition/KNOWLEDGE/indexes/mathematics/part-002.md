@@ -6,6 +6,11 @@
 
 - [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F30C240EC5207576 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-F30C240EC5207576 / IMPLICIT-003191F281FA43ED
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [## 纯数学函数与推导 / Pure Mathematical Function and Derivation](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F4958006382E7D18 / ## 纯数学函数与推导 / Pure Mathematical Function and Derivation / IMPLICIT-F4958006382E7D18 / IMPLICIT-003191F281FA43ED
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-4de570554977a2ab / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D506；被引用：—
-- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-707f1a4a48710712 / PRIVATE_PROVENANCE_WITHHELD
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D507；被引用：—

@@ -1,0 +1,15 @@
+{
+  "command_blob_sha": "fa0adaada18a18e0cef907d6698c7f50a25850c6",
+  "command_content_sha256": "0dc884235062000192888e1575679677e8b2d7bf670c6969be8fec09f1be731b",
+  "freeze_order": [
+    "universe",
+    "split",
+    "answer_key",
+    "criteria",
+    "scorer",
+    "holdout",
+    "unblind"
+  ],
+  "research_only": true,
+  "task_id": "IGNITION-20260907-159"
+}
