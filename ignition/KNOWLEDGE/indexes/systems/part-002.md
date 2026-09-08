@@ -6,6 +6,31 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M10 / data/external-research/088-external-source-atlas-medium.jsonl / M10 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M11 / data/external-research/088-external-source-atlas-medium.jsonl / M11 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M12 / data/external-research/088-external-source-atlas-medium.jsonl / M12 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M13 / data/external-research/088-external-source-atlas-medium.jsonl / M13 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M14 / data/external-research/088-external-source-atlas-medium.jsonl / M14 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M15 / data/external-research/088-external-source-atlas-medium.jsonl / M15 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -151,22 +176,7 @@
   - 依赖：—；被引用：—
 - [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P01 / data/foundation/core-systems/protocol-roles.jsonl / P01 / P02
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P02 / data/foundation/core-systems/protocol-roles.jsonl / P02 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P03 / data/foundation/core-systems/protocol-roles.jsonl / P03 / P01
-  - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
-  - 依赖：—；被引用：—
-- [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P04 / data/foundation/core-systems/protocol-roles.jsonl / P04 / P01
+  - 可搜索名称：P01 / data/foundation/core-systems/protocol-roles.jsonl / P01 / P05
   - 来源：`data/foundation/core-systems/protocol-roles.jsonl`
   - 依赖：—；被引用：—
 - [data/foundation/core-systems/protocol-roles.jsonl](../../../data/foundation/core-systems/protocol-roles.jsonl)
@@ -358,6 +368,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-6331f11ba72a283e / Direct, source-specific evidence for a learned generator followed by deterministic cAST parsing and Python AST/source em
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Do the external factors map to an existing basis or a new lost question?** After the external freeze they map conservati](../../../reports/governance/task-IGNITION-20260907-162.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b28f50d180b325d / Do the external factors map to an existing basis or a new lost question?** After the external freeze they map conservati
+  - 来源：`reports/governance/task-IGNITION-20260907-162.md`
   - 依赖：—；被引用：—
 - [docs/architecture/mechanism-adjudication-plane.md](../../../AI-HANDOFF.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1449,6 +1464,16 @@
   - 可搜索名称：NFC-1f39f60d28c1b59f / Long reflective periods keep hindsight, mechanism and uncertainty in one controlled movement; mechanical short-sentence
   - 来源：`data/language-thought/audit-findings.jsonl`
   - 依赖：—；被引用：—
+- [Longform causal-chain basis learning — Task163](../../ASSET-CARDS.md#asset-hr-73527fbd5e45faa1)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Longform causal-chain basis learning — Task163 / longform-causal-chain-basis-learning-2026-09-07
+  - 来源：`docs/governance/longform-causal-chain-basis-learning-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [Longform causal-chain basis learning — Task163](../../../docs/governance/longform-causal-chain-basis-learning-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3ba8f1c7d7a0ef09 / Longform causal-chain basis learning — Task163
+  - 来源：`docs/governance/longform-causal-chain-basis-learning-2026-09-07.md`
+  - 依赖：—；被引用：—
 - [LoRA modules are composable: different modules for different tasks can be swapped at deployment. Multiple LoRA modules c](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-035.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0ebb6716e0744306 / LoRA modules are composable: different modules for different tasks can be swapped at deployment. Multiple LoRA modules c
@@ -1603,6 +1628,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fafe7a5ef6cc001b / M9的实际不可逆=理论可逆但重建时间超过剩余寿命：τ_rebuild > T_remaining。条件：n²·p̄/β > 1/\(Σαᵢ\)——n大p̄高β低时几乎必然实际不可逆。大系统高负担弱改革的组合=实际不可逆。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [Machine evidence is under `ignition/data/research/mutable-basis-learning-operator-2026-09-07/`; the independent receipt](../../../reports/governance/task-IGNITION-20260907-163.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-24a3d0a8aadf4284 / Machine evidence is under `ignition/data/research/mutable-basis-learning-operator-2026-09-07/`; the independent receipt
+  - 来源：`reports/governance/task-IGNITION-20260907-163.md`
   - 依赖：—；被引用：—
 - [Mail-storm hemostasis: foundation-validation.yml paths filter \(12 dependency groups\) + concurrency cancel-in-progress +](../../../data/ops/121q7/121q7-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -1874,6 +1904,11 @@
   - 可搜索名称：NFC-cae4a32e93c3eb0f / New evidence pyramid
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
+- [Next basis assessment — Task163](../../ASSET-CARDS.md#asset-hr-fd1a98871b9b5c54)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Next basis assessment — Task163 / next-basis-assessment-2026-09-07
+  - 来源：`docs/governance/next-basis-assessment-2026-09-07.md`
+  - 依赖：—；被引用：—
 - [next_read: read \[`current-system-identity.json`\]\(./data/architecture/current-system-identity.json\), \[`current-facts.md`\]](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6e34a47c04919243 / next_read: read \[`current-system-identity.json`\]\(./data/architecture/current-system-identity.json\), \[`current-facts.md`\]
@@ -1913,6 +1948,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bad3d49020191b0e / No Git diff, path match, dependency, traversal, visual edge or zero-residue closure is reported as scientific causal ide
   - 来源：`reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md`
+  - 依赖：—；被引用：—
+- [no independent causal ablation or holdout was established](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/candidate-ablation-results.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-8b8c6e5f4495c7f7 / no independent causal ablation or holdout was established
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/candidate-ablation-results.jsonl`
   - 依赖：—；被引用：—
 - [No internet install was necessary because installed candidates were found, and](../../../reports/operations/ignition-138-step00-local-executor-census.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1973,6 +2013,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-bdb0219afb3ea9e9 / not invoked because its workspace/channel boundary remains unsafe.
   - 来源：`docs/architecture/external-agent-federation-r1.md`
+  - 依赖：—；被引用：—
+- [O/S/B/R causal-chain ablation;](../../../docs/governance/longform-causal-chain-basis-learning-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-49837778ce98b50c / O/S/B/R causal-chain ablation;
+  - 来源：`docs/governance/longform-causal-chain-basis-learning-2026-09-07.md`
   - 依赖：—；被引用：—
 - [Object D100 defines a mechanism_model within the point-fire framework. Core: 中文：P_track^AI = 1 + \(ε_aware^AI θ_track\)^+。](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
@@ -2459,48 +2504,3 @@
   - 可搜索名称：NFC-362ee6bb883793ca / Object D385 defines a mechanism_model within the point-fire framework. Core: 中文：M2的复活总代价∝Φ\(拐点\)与n无关的原因：Φ\(拐点\)是全局量已包含n信息。每个
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D385；被引用：—
-- [Object D386 defines a mechanism_model within the point-fire framework. Core: 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentratio](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-82871d90a3e51135 / Object D386 defines a mechanism_model within the point-fire framework. Core: 中文：M3的D372与D328是同一现象不同表述。统一指标I_concentratio
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D328, D372, D386；被引用：—
-- [Object D388 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D332与D295在\(p_max,n\)空间相交于p_max=p*且n=n_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1e4baf274d4fafef / Object D388 defines a mechanism_model within the point-fire framework. Core: 中文：M5的D332与D295在\(p_max,n\)空间相交于p_max=p*且n=n_
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D295, D332, D388；被引用：—
-- [Object D389 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/\(1-pᵢ\)²，δ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7d770b8202cd7601 / Object D389 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c恰好是D292吸引域的边界。吸引域深度∝Σαᵢ²/\(1-pᵢ\)²，δ
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D292, D389；被引用：—
-- [Object D390 defines a mechanism_model within the point-fire framework. Core: 中文：M7的D376∝n与D378∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-61c765127ff12215 / Object D390 defines a mechanism_model within the point-fire framework. Core: 中文：M7的D376∝n与D378∝n²不矛盾：容量增长线性但不可逆增长超线性→净效果
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D376, D378, D390；被引用：—
-- [Object D391 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使有效τ_buffer增大→共振频率降低。ω_res_effect](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-e042ce8b1ab8f5f9 / Object D391 defines a mechanism_model within the point-fire framework. Core: 中文：M8的感知延迟使有效τ_buffer增大→共振频率降低。ω_res_effect
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D391；被引用：—
-- [Object D392 defines a mechanism_model within the point-fire framework. Core: 中文：M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-80c6598c193d6d8f / Object D392 defines a mechanism_model within the point-fire framework. Core: 中文：M9的R以指数趋近1，w₂以1/√n趋近0。R先满（n≈100时R≈0.95），
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D311, D392；被引用：—
-- [Object D394 defines a mechanism_model within the point-fire framework. Core: 中文：M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-28586d069f459a5b / Object D394 defines a mechanism_model within the point-fire framework. Core: 中文：M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D342, D380, D394；被引用：—
-- [Object D395 defines a mechanism_model within the point-fire framework. Core: 中文：M12的n_eff/2 = n/2 - ḡ·p_max/δg_spread。n越](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-0c6bd5526479aaf2 / Object D395 defines a mechanism_model within the point-fire framework. Core: 中文：M12的n_eff/2 = n/2 - ḡ·p_max/δg_spread。n越
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D395；被引用：—
-- [Object D396 defines a mechanism_model within the point-fire framework. Core: 中文：M13的D382与D295在参数空间形成两条不可逆线。交点以下正反馈不可逆先到，](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e241194b02a32bbc / Object D396 defines a mechanism_model within the point-fire framework. Core: 中文：M13的D382与D295在参数空间形成两条不可逆线。交点以下正反馈不可逆先到，
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D295, D382, D396；被引用：—

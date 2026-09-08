@@ -6,6 +6,11 @@
 
 - [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-707f1a4a48710712 / PRIVATE_PROVENANCE_WITHHELD
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D507；被引用：—
+- [PRIVATE_PROVENANCE_WITHHELD](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ff9e6f8b060f02e5 / PRIVATE_PROVENANCE_WITHHELD
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D508；被引用：—
@@ -2084,6 +2089,11 @@
   - 可搜索名称：NFC-a5f172357c079e54 / A candidate structural-correspondence relation; strict isomorphism is rejected until a bijection, inverse and preservati
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—
+- [A future study would need independently frozen semantic adjudication, fresh negative controls, a complete canonical vali](../../../docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-8d4456b46cc61a7d / A future study would need independently frozen semantic adjudication, fresh negative controls, a complete canonical vali
+  - 来源：`docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md`
+  - 依赖：—；被引用：—
 - [A layer-selection operator choosing the first governed stopping layer; it is not a proof of convergence.](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-eb280eebd0d8ca60 / A layer-selection operator choosing the first governed stopping layer; it is not a proof of convergence.
@@ -2243,6 +2253,21 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-2ee19c4a19490e2c / affordance, not mechanism proof
   - 来源：`data/architecture/adaptive-relational-network/examples/ai-external-knowledge-vs-internal-integration.json`
+  - 依赖：—；被引用：—
+- [After external freeze, each candidate was conservatively cross-walked to existing broad ordered/causal/constraint/eviden](../../../docs/governance/basis-free-longform-induction-2026-09-07.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4c62753281cc837d / After external freeze, each candidate was conservatively cross-walked to existing broad ordered/causal/constraint/eviden
+  - 来源：`docs/governance/basis-free-longform-induction-2026-09-07.md`
+  - 依赖：—；被引用：—
+- [Agent result: IGNITION-20260907-164](../../ASSET-CARDS.md#asset-hr-d328b83e8acb36d8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Agent result: IGNITION-20260907-164 / IGNITION-20260907-164-result
+  - 来源：`agent-results/IGNITION-20260907-164-result.md`
+  - 依赖：—；被引用：—
+- [Agent result: IGNITION-20260908-165](../../ASSET-CARDS.md#asset-hr-329cc92e5bdc90c8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Agent result: IGNITION-20260908-165 / IGNITION-20260908-165-result
+  - 来源：`agent-results/IGNITION-20260908-165-result.md`
   - 依赖：—；被引用：—
 - [AI 可以整理、分类、生成待审形式化、运行受限后端和发现可重放反例；不能因为公式存在、工作流 closed、案例命中或关键词出现就宣布真理、定理、同构或因果。最终结果按\[统一输出契约\]\(../data/operations/ignition](../../../docs/AI-USAGE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0cf6cb3970c142cf / At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
   - 来源：`CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [attempt-specific scratch lifecycle.](../../../reports/operations/ignition-138-step02-filesystem-reproduction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f2c7030a5cd50e13 / attempt-specific scratch lifecycle.
-  - 来源：`reports/operations/ignition-138-step02-filesystem-reproduction.md`
-  - 依赖：—；被引用：—
-- [authority_changes: \[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[函数资产\]\(./docs/human/funct](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-619066387ab384c0 / authority_changes: \[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[函数资产\]\(./docs/human/funct
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [authority_changes: Current/task-lineage/lifecycle, Owner editorial authority and the existing Results Book boundary rema](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-34b1dd929d0bd27e / authority_changes: Current/task-lineage/lifecycle, Owner editorial authority and the existing Results Book boundary rema
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [authority_changes: formal Task Lifecycle, Open Obligation Registry and Executor Admission remain repository-local bounde](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-edc6ae0c0a101b95 / authority_changes: formal Task Lifecycle, Open Obligation Registry and Executor Admission remain repository-local bounde
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [authority_changes: formal Task148 lifecycle advances from `IN_PROGRESS` to terminal `COMPLETED_WITH_OPEN_OBLIGATIONS`, a](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-32151e937124e1cd / authority_changes: formal Task148 lifecycle advances from `IN_PROGRESS` to terminal `COMPLETED_WITH_OPEN_OBLIGATIONS`, a
-  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

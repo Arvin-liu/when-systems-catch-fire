@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [attempt-specific scratch lifecycle.](../../../reports/operations/ignition-138-step02-filesystem-reproduction.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f2c7030a5cd50e13 / attempt-specific scratch lifecycle.
+  - 来源：`reports/operations/ignition-138-step02-filesystem-reproduction.md`
+  - 依赖：—；被引用：—
+- [authority_changes: \[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[函数资产\]\(./docs/human/funct](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-619066387ab384c0 / authority_changes: \[Human Surface 编辑契约\]\(./docs/governance/human-surface-editorial-contract.md\)、\[函数资产\]\(./docs/human/funct
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [authority_changes: Current/task-lineage/lifecycle, Owner editorial authority and the existing Results Book boundary rema](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-34b1dd929d0bd27e / authority_changes: Current/task-lineage/lifecycle, Owner editorial authority and the existing Results Book boundary rema
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [authority_changes: formal Task Lifecycle, Open Obligation Registry and Executor Admission remain repository-local bounde](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-edc6ae0c0a101b95 / authority_changes: formal Task Lifecycle, Open Obligation Registry and Executor Admission remain repository-local bounde
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [authority_changes: formal Task148 lifecycle advances from `IN_PROGRESS` to terminal `COMPLETED_WITH_OPEN_OBLIGATIONS`, a](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-32151e937124e1cd / authority_changes: formal Task148 lifecycle advances from `IN_PROGRESS` to terminal `COMPLETED_WITH_OPEN_OBLIGATIONS`, a
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [authority_changes: none beyond the repository lifecycle transition from Draft candidate to synchronized repository-local](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a852c4e3c40e80e0 / authority_changes: none beyond the repository lifecycle transition from Draft candidate to synchronized repository-local
@@ -34,6 +59,11 @@
   - 可搜索名称：D533 / Banach算子不变子空间函数 / D533
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D451, D541, T39；被引用：NFC-5d63a48694a89956, NFC-5dbfe141bae8b4d2, NFC-afafff54af9ea43e, NFC-b9ec817d61ae13f8
+- [Basis-pressure sensor qualification — IGNITION-20260907-164](../../ASSET-CARDS.md#asset-hr-cc59ba840b050653)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：Basis-pressure sensor qualification — IGNITION-20260907-164 / basis-pressure-sensor-qualification-2026-09-07
+  - 来源：`docs/governance/basis-pressure-sensor-qualification-2026-09-07.md`
+  - 依赖：—；被引用：—
 - [Before apply performs any producer, validator, output, cache, or recovery write, the unified production validator comple](../../../docs/architecture/incremental-execution.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-139020b88d33626b / Before apply performs any producer, validator, output, cache, or recovery write, the unified production validator comple
@@ -478,6 +508,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2747ee8720af8d6e / Continue to Step 001. The gap is real, but the claim ceiling is narrow: ARN is a representation candidate, not ontology,
   - 来源：`reports/architecture/121Q23-relational-network-gap-audit.md`
+  - 依赖：—；被引用：—
+- [Controlling specification and lifecycle](../../../reports/governance/task-IGNITION-20260907-162.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-30225595c98bf05e / Controlling specification and lifecycle
+  - 来源：`reports/governance/task-IGNITION-20260907-162.md`
   - 依赖：—；被引用：—
 - [Cook 1971 *The complexity of theorem-proving* — `10.1145/800157.805047`](../../../data/external-research/088-FINAL-REPORT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
@@ -1844,6 +1879,11 @@
   - 可搜索名称：NFC-0c6188eaa8818dcf / Define a repeatable, evidence-backed gate for deciding when a protocol may be recommended for formal promotion to `forma
   - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
+- [deletion is a method sensitivity observation, not V2 semantic capability proof](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/candidate-deletion-conditions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a379453029e7f83a / deletion is a method sensitivity observation, not V2 semantic capability proof
+  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/candidate-deletion-conditions.jsonl`
+  - 依赖：—；被引用：—
 - [delta: advances canonical Current from the stale post-Task131 source state to terminal Task132 and binds the content-own](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-c6e46c3a65bacda7 / delta: advances canonical Current from the stale post-Task131 source state to terminal Task132 and binds the content-own
@@ -2013,6 +2053,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-880a86c451100d8f / domain_id（需分配，如 ER-数学、ER-物理等）
   - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
+  - 依赖：—；被引用：—
+- [Draft-only research branch; formal main lifecycle history is not edited](../../../data/research/cross-thread-creative-discontinuity-2026-09-08/command-freeze.json)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-586d91cee72fa43c / Draft-only research branch; formal main lifecycle history is not edited
+  - 来源：`data/research/cross-thread-creative-discontinuity-2026-09-08/command-freeze.json`
   - 依赖：—；被引用：—
 - [Durability / Lifecycle R3](../../../ARCHITECTURE.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
@@ -2458,49 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-937b78086b20a094 / for field in \("capability_lease_digest", "workspace_digest_before", "workspace_digest_after", "runtime_scratch_lifecycle
   - 来源：`agent_federation/live_attempt_ledger.py`
-  - 依赖：—；被引用：—
-- [Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s](../../../agent-results/IGNITION-20260822-133-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-300eb09a94965b6e / Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s
-  - 来源：`agent-results/IGNITION-20260822-133-result.md`
-  - 依赖：—；被引用：—
-- [Formal baseline `main` was `e04752d20d071bac8f0c4a1e5cff20fb3004dae1`. The formal repository has no publication-witness](../../../agent-results/IGNITION-20260822-132-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-acbeccf65816f0a3 / Formal baseline `main` was `e04752d20d071bac8f0c4a1e5cff20fb3004dae1`. The formal repository has no publication-witness
-  - 来源：`agent-results/IGNITION-20260822-132-result.md`
-  - 依赖：—；被引用：—
-- [Formal branch: `agent/claim-governance-physics-correction-function-census-r1-20260729`](../../../reports/foundation-architecture/098-remote-truth-and-gap.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6954cf86ef7faffc / Formal branch: `agent/claim-governance-physics-correction-function-census-r1-20260729`
-  - 来源：`reports/foundation-architecture/098-remote-truth-and-gap.md`
-  - 依赖：—；被引用：—
-- [Formal charter text, Function OS code, frozen assets, legacy tables, historical evidence cards, license terms, and the 1](../../../reports/readme/121Q19-readme-frontdoor-validation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-775e138c41ced468 / Formal charter text, Function OS code, frozen assets, legacy tables, historical evidence cards, license terms, and the 1
-  - 来源：`reports/readme/121Q19-readme-frontdoor-validation.md`
-  - 依赖：—；被引用：—
-- [formal objects + 22 candidate-only records + 34 pending claims = 678 scoped claim entities. The separate evidence regist](../../../reports/foundation-architecture/count-reconciliation-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-96c0aef2b68634a6 / formal objects + 22 candidate-only records + 34 pending claims = 678 scoped claim entities. The separate evidence regist
-  - 来源：`reports/foundation-architecture/count-reconciliation-20260712.md`
-  - 依赖：—；被引用：—
-- [Formal proof workspace](../../../formal/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-758efad1cf8dc133 / Formal proof workspace
-  - 来源：`formal/README.md`
-  - 依赖：—；被引用：—
-- [Formal proofs validate the idealized semantics, but important assumptions, proof sketches and the absence of implementat](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-e052368fe61ec56d / Formal proofs validate the idealized semantics, but important assumptions, proof sketches and the absence of implementat
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Formal proofs, exact implementation branch, multiple benchmark families and effort/timing comparisons provide substantia](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-104f7dd216c097b5 / Formal proofs, exact implementation branch, multiple benchmark families and effort/timing comparisons provide substantia
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Formal semantics, proof sketches, four-language code and five benchmark families provide substantial bounded validation](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-7864286abb505ebc / Formal semantics, proof sketches, four-language code and five benchmark families provide substantial bounded validation
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

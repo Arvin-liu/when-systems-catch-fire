@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 540 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 572 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5372,6 +5372,149 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [治理报告：IGNITION-20260908-165](../reports/governance/task-IGNITION-20260908-165.md)
+
+- **结果 ID：** `HR-4EC1FFA8540C9EE2`
+- **日期：** 2026-09-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：治理报告：IGNITION-20260908-165？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [问题空间重写消融 — IGNITION-20260908-165](../docs/governance/problem-space-rewrite-ablation-2026-09-08.md)
+
+- **结果 ID：** `HR-844A2312FD98066E`
+- **日期：** 2026-09-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：问题空间重写消融 — IGNITION-20260908-165？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [下一步认识论能力评估 — IGNITION-20260908-165](../docs/governance/next-epistemic-capability-assessment-2026-09-08.md)
+
+- **结果 ID：** `HR-1125EA8D76940B5F`
+- **日期：** 2026-09-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：下一步认识论能力评估 — IGNITION-20260908-165？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [历史创造性不连续性回放 — IGNITION-20260908-165](../docs/governance/historical-creative-discontinuity-replay-2026-09-08.md)
+
+- **结果 ID：** `HR-AEBC74306F6C98E0`
+- **日期：** 2026-09-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：历史创造性不连续性回放 — IGNITION-20260908-165？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [休眠问题池与再激活 — IGNITION-20260908-165](../docs/governance/dormant-question-pool-and-reactivation-2026-09-08.md)
+
+- **结果 ID：** `HR-30FDF00CDB08A566`
+- **日期：** 2026-09-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：休眠问题池与再激活 — IGNITION-20260908-165？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [跨线程认知碰撞协议 — IGNITION-20260908-165](../docs/governance/cross-thread-cognitive-collision-2026-09-08.md)
+
+- **结果 ID：** `HR-86F21D4FFFFB5629`
+- **日期：** 2026-09-08
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：跨线程认知碰撞协议 — IGNITION-20260908-165？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent result: IGNITION-20260908-165](../agent-results/IGNITION-20260908-165-result.md)
+
+- **结果 ID：** `HR-329CC92E5BDC90C8`
+- **日期：** 2026-09-08
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Agent result: IGNITION-20260908-165？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 已严格执行固定命令 b3b128f46a625f728870ded1a975f3c2f0db53ce（blob 065f02e04e3a0c8e55c398954a761c66901f74b5，内容 SHA-256 dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a），Formal 基线为 work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32fb2df。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Governance report: IGNITION-20260907-164](../reports/governance/task-IGNITION-20260907-164.md)
+
+- **结果 ID：** `HR-3BC48CE92DF8D91A`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Governance report: IGNITION-20260907-164？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Governance report: IGNITION-20260907-163](../reports/governance/task-IGNITION-20260907-163.md)
+
+- **结果 ID：** `HR-F9CF8E83465264A9`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Governance report: IGNITION-20260907-163？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This was a research-only execution of Arvin-liu/1111/agent-commands/IGNITION-20260907-163.md at command commit 73cde2ab84d829bb0990f63d957e2152b1a330e4, blob 521d468829425a210cc763df72456f2c28753d02, complete-content SHA-256 f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Governance report: IGNITION-20260907-162](../reports/governance/task-IGNITION-20260907-162.md)
+
+- **结果 ID：** `HR-0CB75E532E63F776`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Governance report: IGNITION-20260907-162？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-162.md at command commit 8ab1aac0cdedd4874c798f4593614335cdd79e76, blob df58765e5c21cf3b0aba15f804ce461b4b1c542e, complete-content SHA-256 e4e61e12ca3798b72b714c0fc2e9cf1ec0b1224529dee138c9740a0fc2b4b65a. The Formal…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Governance report: IGNITION-20260907-161](../reports/governance/task-IGNITION-20260907-161.md)
+
+- **结果 ID：** `HR-E7D18E3A634AD513`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Governance report: IGNITION-20260907-161？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Task160｜Basis Escape V2](../reports/governance/task-IGNITION-20260907-160.md)
 
 - **结果 ID：** `HR-8BBA307108EF807A`
@@ -5393,6 +5536,58 @@
 - **问题：** 此来源记录了什么：IGNITION-20260907-159？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Primary verdict: SEMANTICLEAPDETECTORV2VALIDATEDFORRESEARCHREPLAY.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Transition semantic irreducibility and compile-away](../docs/governance/transition-semantic-irreducibility-and-compile-away-2026-09-07.md)
+
+- **结果 ID：** `HR-CEBE69C6D8DB2C70`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Transition semantic irreducibility and compile-away？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Transition residual casebook](../docs/governance/transition-residual-casebook-2026-09-07.md)
+
+- **结果 ID：** `HR-6C25B5C1573D9F0B`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Transition residual casebook？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [State versus transition semantics competition](../docs/governance/state-vs-transition-semantics-competition-2026-09-07.md)
+
+- **结果 ID：** `HR-AAA1067FB3EF6D76`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：State versus transition semantics competition？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Sensitivity versus mutation-generator diagnosis — IGNITION-20260907-164](../docs/governance/sensitivity-vs-mutation-generator-diagnosis-2026-09-07.md)
+
+- **结果 ID：** `HR-D5D49675F693EE46`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Sensitivity versus mutation-generator diagnosis — IGNITION-20260907-164？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -5424,6 +5619,45 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [Next-basis learning assessment — IGNITION-20260907-164](../docs/governance/next-basis-learning-assessment-2026-09-07.md)
+
+- **结果 ID：** `HR-343F0375CF2BE38C`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Next-basis learning assessment — IGNITION-20260907-164？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Next basis assessment — Task163](../docs/governance/next-basis-assessment-2026-09-07.md)
+
+- **结果 ID：** `HR-FD1A98871B9B5C54`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Next basis assessment — Task163？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The current execution does not establish a new basis, a surviving current basis, or generator lock-in. It establishes only that this R1 implementation cannot yet qualify as a historical basis-learning replay instrument under the frozen evidence boundary.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task163 mutable basis-learning operator](../docs/governance/mutable-basis-learning-operator-2026-09-07.md)
+
+- **结果 ID：** `HR-2048D95801CE57ED`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Task163 mutable basis-learning operator？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: research-only, Draft-only, and stopped at the historical qualification gate. This package does not change canonical protocol meaning, the 64 matrix, runtime behavior, validators, provider semantics, authority, Current state, production readiness, or Owner acceptance.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Task160｜Basis Escape V2](../docs/governance/meta-protocol-64-absorption-vs-generativity-2026-09-07.md)
 
 - **结果 ID：** `HR-0718B15AA86C2D20`
@@ -5437,6 +5671,58 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [Longform causal-chain basis learning — Task163](../docs/governance/longform-causal-chain-basis-learning-2026-09-07.md)
+
+- **结果 ID：** `HR-73527FBD5E45FAA1`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Longform causal-chain basis learning — Task163？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: NOTRUNSTAGEASTOP.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260907-162: information volume and logical coherence](../docs/governance/information-volume-and-logical-coherence-experiment-2026-09-07.md)
+
+- **结果 ID：** `HR-3EF891412912B7E1`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：IGNITION-20260907-162: information volume and logical coherence？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a research-only ablation of longform input. It asks whether more ordered text and preserved logical/section order have distinguishable effects in the frozen measurement, without treating lexical counts as semantic validation.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260907-162: independent historical adjudication](../docs/governance/independent-historical-adjudication-2026-09-07.md)
+
+- **结果 ID：** `HR-83EB7775F0E63A9A`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：IGNITION-20260907-162: independent historical adjudication？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The historical track uses repository history as a separate source channel from the external longform corpus. It is a procedural blind-separation exercise and is not claimed to be cognitively independent or human-adjudicated.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Historical basis-pressure reconstruction — IGNITION-20260907-164](../docs/governance/historical-basis-pressure-reconstruction-2026-09-07.md)
+
+- **结果 ID：** `HR-C9FAD80505E44281`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Historical basis-pressure reconstruction — IGNITION-20260907-164？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Task160｜Basis Escape V2](../docs/governance/generator-meta-plasticity-v2-2026-09-07.md)
 
 - **结果 ID：** `HR-40A77C9AAF81E52D`
@@ -5445,6 +5731,84 @@
 - **问题：** 此来源记录了什么：Task160｜Basis Escape V2？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Fixed-feature versus mutable-basis comparison — Task163](../docs/governance/fixed-vs-mutable-generator-comparison-2026-09-07.md)
+
+- **结果 ID：** `HR-FBFB831E55A2A3A0`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Fixed-feature versus mutable-basis comparison — Task163？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: NOTRUNSTAGEASTOP.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260907-162: external longform corpus selection](../docs/governance/external-longform-corpus-selection-2026-09-07.md)
+
+- **结果 ID：** `HR-BE4BE8D31CEA1114`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：IGNITION-20260907-162: external longform corpus selection？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: FROZENBEFORESOURCEDISCOVERY for the selection protocol; the final eligible corpus is research evidence only. The controlling machine records are under ignition/data/research/longform-emergence-and-historical-adjudication-2026-09-07/.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260907-162: convergence and next-leap assessment](../docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md)
+
+- **结果 ID：** `HR-9C6CCCD9238910AF`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：IGNITION-20260907-162: convergence and next-leap assessment？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The final machine verdict is:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Early-ignition historical replay — Task163](../docs/governance/early-ignition-historical-replay-2026-09-07.md)
+
+- **结果 ID：** `HR-4AD08E43386ACC2F`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Early-ignition historical replay — Task163？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is the Stage A historical qualification record for the research-only R1 operator.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Basis-pressure sensor qualification — IGNITION-20260907-164](../docs/governance/basis-pressure-sensor-qualification-2026-09-07.md)
+
+- **结果 ID：** `HR-CC59BA840B050653`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：Basis-pressure sensor qualification — IGNITION-20260907-164？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260907-162: basis-free longform induction](../docs/governance/basis-free-longform-induction-2026-09-07.md)
+
+- **结果 ID：** `HR-0EF43E8A763273A8`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `REPOSITORY_HISTORY_SOURCE`
+- **问题：** 此来源记录了什么：IGNITION-20260907-162: basis-free longform induction？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This document records the external-track induction after the source and hypothesis freezes. Candidate identifiers remain anonymous in the machine record so that later historical reconciliation cannot be treated as an answer-guided source choice.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -5471,6 +5835,58 @@
 - **问题：** 此来源记录了什么：Task160｜Basis Escape V2？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent result: IGNITION-20260907-164](../agent-results/IGNITION-20260907-164-result.md)
+
+- **结果 ID：** `HR-D328B83E8ACB36D8`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Agent result: IGNITION-20260907-164？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Executed the pinned research-only command at ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 (blob 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a, content SHA-256 e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3) from Formal base work/IGNITION-20260907-163@644c93cd5cd0c7d4ed490f95795897df3bcd8…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent result: IGNITION-20260907-163](../agent-results/IGNITION-20260907-163-result.md)
+
+- **结果 ID：** `HR-7D1C593D80794FDB`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Agent result: IGNITION-20260907-163？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Completed the research-only Task163 Stage A package from the pinned command source 73cde2ab84d829bb0990f63d957e2152b1a330e4 / blob 521d468829425a210cc763df72456f2c28753d02 / content SHA-256 f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent result: IGNITION-20260907-162](../agent-results/IGNITION-20260907-162-result.md)
+
+- **结果 ID：** `HR-FD61253709A198C4`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Agent result: IGNITION-20260907-162？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Completed the requested research-only longform corpus, information-volume/coherence ablation, basis-free induction, and procedural historical adjudication package from the exact command source 8ab1aac0cdedd4874c798f4593614335cdd79e76 / blob df58765e5c21cf3b0aba15f804ce461b4b1c542e / content SHA-2…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent result: IGNITION-20260907-161](../agent-results/IGNITION-20260907-161-result.md)
+
+- **结果 ID：** `HR-99EEB7F92B2B668A`
+- **日期：** 2026-09-07
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：Agent result: IGNITION-20260907-161？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

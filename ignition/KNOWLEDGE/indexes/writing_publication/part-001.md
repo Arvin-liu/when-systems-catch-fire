@@ -124,6 +124,11 @@
   - 可搜索名称：NFC-3ee61ae38bde2672 / `永昭·虚遐` remains a bounded example of optional embodied anchoring, prospective loading, lower-level preservation, a doubl
   - 来源：`reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md`
   - 依赖：—；被引用：—
+- [cache a public projection](../../../data/research/state-vs-transition-semantics-2026-09-07/maintenance-perturbations.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-b0335ee67607473d / cache a public projection
+  - 来源：`data/research/state-vs-transition-semantics-2026-09-07/maintenance-perturbations.jsonl`
+  - 依赖：—；被引用：—
 - [Candidate: Ignition Iteration Method 1.4.0 adds fail-closed continuous stage snapshot publication. A schema-backed regis](../../../CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-a0940ee425760d97 / Candidate: Ignition Iteration Method 1.4.0 adds fail-closed continuous stage snapshot publication. A schema-backed regis

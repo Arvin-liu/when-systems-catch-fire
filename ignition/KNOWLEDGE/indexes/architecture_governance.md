@@ -6,16 +6,16 @@
 
 - [第 001 片](./architecture_governance/part-001.md)：1—500；"""121-validator.py — Validate 121 fulltext artifacts by actually reading files. → _strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)
 - [第 002 片](./architecture_governance/part-002.md)：501—1000；_strings\(results, f"{item_path}.result_artifact_ids", issues\) → claimed_n = sum\(1 for r in records if r.get\("crossref_verified"\)\)
-- [第 003 片](./architecture_governance/part-003.md)：1001—1500；class ArtifactRefRecord: → def _unsigned_dict\(self\) -> dict\[str, Any\]:
-- [第 004 片](./architecture_governance/part-004.md)：1501—2000；def _unsigned_dict\(self\) -> dict\[str, Any\]: → def success\(self\) -> bool:
-- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def success\(self\) -> bool: → Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/arch
-- [第 006 片](./architecture_governance/part-006.md)：2501—3000；Expand with declared authority/governance/validator paths: `ignition/packs/knowledge/manifest.json`, `ignition/data/arch → M14的K_benign≈α_exclusion时良性恶性周期震荡：良性增长→p_max↓→容斥减弱→恶性增长→p_max↑→良性被压→恶性受限→良性再增长。震荡周期T_osc∝2π/√\(K_benign·α_exclusion\)，振幅∝\|
-- [第 007 片](./architecture_governance/part-007.md)：3001—3500；M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max 0.8几乎不可能逃逸。D279干预时机悖论的精确化。 → return _append\(document, "evidence_requests", request\)
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；return _case_mutation\(args, record_artifact\) → title: "厕所空间验证"
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；title: "反向投影覆盖" → \| \[D147\]\( \) \| \[乘法临界漂移统一\]\( \) \| F_{D147}\(x\) := F_{D147}: X_{D147} -> Y_{D1
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| \[D162\]\( \) \| \[定投凯利保守性验证\]\( \) \| F_{D162}\(x\) := F_{D162}: X_{D162} -> Y_ → 中文：五个可检验实验方案： **实验1：退出选项引入实验** - 设计：两组AI，实验组被赋予"可以不回答"选项，对照组必须回答 - 测量：引入退出选项前后的校准曲线、拒绝一致性、探索行为 - 预言：实验组在首次成功拒绝后，三个指标显著变化
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；中文：五个相变统一为同一相变的五个投影。 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 如果 benchmark 结果是“结构增益 + `pending`”，可作为结构性推论样本，但不能写成“已解决”。
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；如果 soft input 试图影响 permission、authorization、truth、M/E、claim ceiling、 → 点火框架可提供结构解释，不替代心理学实证
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；点火框架可提出结构假设，需社会科学实证验证 → 验证结论：** J⁺=1, J⁻=0 → 涌现在开源开发中成立
-- [第 015 片](./architecture_governance/part-015.md)：7001—7056；验证结论：** J⁺=1, J⁻=0 → 涌现在心智中成立 → （证据不足、需外部验证、待人工复核）
+- [第 003 片](./architecture_governance/part-003.md)：1001—1500；class ArtifactRefRecord: → def _timestamp_or_marker\(value: Any, field: str, *, allow_not_applicable: bool = False\) -> None:
+- [第 004 片](./architecture_governance/part-004.md)：1501—2000；def _trace\(self, inputs\): → def sha256_bytes\(value: bytes\) -> str:
+- [第 005 片](./architecture_governance/part-005.md)：2001—2500；def sha256_file\(path: Path\) -> str: → Exact arXiv v2 and official ICML/PMLR identity/hash/size, all-23-page visual/full-text, complete official source/history
+- [第 006 片](./architecture_governance/part-006.md)：2501—3000；Exact canonical AAAI-26 hash/size, all-9-page visual/full-text and official repository/history audit confirmed a bounded → link: "已迁移的历史案例来源/0782-C-0787-和孩子聊热点事件.md"
+- [第 007 片](./architecture_governance/part-007.md)：3001—3500；link: "已迁移的历史案例来源/0783-C-0788-博士期间换十个选题.md" → REOS vNext LIGHT pilot R1 — public-safe synthesis
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；REOS vNext minimal kernel R1 — frozen contract → This report is an engineering/publication artifact only. It does not imply
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；This report is repository-local Current-State synchronization and deterministic navigation evidence → \| \[C-45\]\( \) \| \[南非转型\]\( \) \| 政治认同经退出权验证但经济认同未建立 \|
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| \[C-46\]\( \) \| \[欧盟\]\( \) \| 成员国有真实退出权（英国脱欧=验证），但只点了经济认同 \| → 与任务 E：让证据制度库成为可执行的 `pending` 与降级协议。
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；与已知数据不冲突 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 可用于碰撞：`title`（匹配对象名）、`domain`、`claim_level_max`（最高可声明层级）、`pending_required`、`related_failure_types`、`related_evidence_re
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；可观察变化：** `在修` 被写成 `修好了`；无终点活动被包装成完成任务；过去推断变成现在事实。 → 来源、依赖、反向依赖和证据谱系；
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；来源为营销稿/博客/二手科普而非原始文献 → 重整化群门槛标度案例验证。
+- [第 015 片](./architecture_governance/part-015.md)：7001—7142；重算轴覆盖（与执行报告一致，证实 250 分母正确） → （证据不足、需外部验证、待人工复核）

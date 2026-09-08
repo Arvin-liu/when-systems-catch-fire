@@ -193,6 +193,13 @@
 - 5 分钟：主题：IGNITION-20260828-144 Step 17 — fresh task-clone natural full regression；The remote task branch was freshly cloned and bound before execution. The remote branch SHA, fresh clone HEAD, and tested head were all ff8b93efbd0acf02a6875d09a459062f3e1f77b3; the clone was clean before and after the run. Its 25-check projection preflight passed with no side effect.；The fresh clone then completed the canonical isolated natural full regression without a watchdog or arbitrary timeout: 1278 tests / 0 failures / 0 errors / 0 skips. Runtime was 2985.122 seconds and elapsed time was 2986.406 seconds. The isolated dependency preflight passed with SymPy 1.14.0, z3-solver 4.16.0.0, and jsonschema 4.26.0. The runner capture is re…；No external executor, live invocation, qualification attempt, article body, or book body was started or changed. This is fresh-clone repository-local evidence only; formal-main publication, fresh remote-main observation, independent 1111 witness, Owner acceptance, publication acceptance, validated live completion, and epistemic acceptance remain separate gat…
 - 完整阅读：[reports/operations/ignition-144-step17-fresh-task-full-regression.md](../../reports/operations/ignition-144-step17-fresh-task-full-regression.md)
 
+<a id="reading-hr-0cb75e532e63f776"></a>
+## Governance report: IGNITION-20260907-162
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-162.md at command commit 8ab1aac0cdedd4874c798f4593614335cdd79e76, blob df58765e5c21cf3b0aba15f804ce461b4b1c542e, complete-content SHA-256 e4e61e12ca3798b72b714c0fc2e9cf1ec0b1224529dee138c9740a0fc2b4b65a. The Formal… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Governance report: IGNITION-20260907-162；主题：Controlling specification and lifecycle；The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-162.md at command commit 8ab1aac0cdedd4874c798f4593614335cdd79e76, blob df58765e5c21cf3b0aba15f804ce461b4b1c542e, complete-content SHA-256 e4e61e12ca3798b72b714c0fc2e9cf1ec0b1224529dee138c9740a0fc2b4b65a. The Formal base is Arvin-liu/when-systems-catch-fire branch work/IGNITION-…；The command was executed as research-only work. The required instructions/CURRENT.md and relay/current pointers were missing in the exact base and remain untouched, recorded as STALECONTROLPOINTER / PREFLIGHTRESIDUAL. No canonical runtime, canonical validator, Current/relay surface, Ready transition, merge, Owner acceptance, production claim, external action…；The result remains RESEARCHONLYDRAFTPENDING.；主题：Formal publication receipt
+- 完整阅读：[reports/governance/task-IGNITION-20260907-162.md](../../reports/governance/task-IGNITION-20260907-162.md)
+
 <a id="reading-hr-0dc8e1b43354e8da"></a>
 ## IGNITION-138 — Step 00 Amendment-01 Local Executor Census
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
@@ -228,6 +235,13 @@
 - 5 分钟：主题：121Q22 Probabilistic System Dynamics Validation；Status: 121Q22READYASPROBABILISTICSYSTEMDYNAMICSCANDIDATE；Foundation decides evidence status and claim ceiling.；MCF organizes causal representation.；PSD describes deterministic or stochastic system evolution under declared boundaries.；Function OS can execute specified PSD checks but does not decide truth.
 - 完整阅读：[reports/architecture/121Q22-probabilistic-system-dynamics-validation.md](../../reports/architecture/121Q22-probabilistic-system-dynamics-validation.md)
 
+<a id="reading-hr-0ef43e8a763273a8"></a>
+## IGNITION-20260907-162: basis-free longform induction
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This document records the external-track induction after the source and hypothesis freezes. Candidate identifiers remain anonymous in the machine record so that later historical reconciliation cannot be treated as an answer-guided source choice. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260907-162: basis-free longform induction；This document records the external-track induction after the source and hypothesis freezes. Candidate identifiers remain anonymous in the machine record so that later historical reconciliation cannot be treated as an answer-guided source choice.；主题：Candidate generation；Ten candidates, EL-X01 through EL-X10, were generated from generic feature keys after the final corpus was frozen. Their observable keys were, respectively:；This table is a post-freeze descriptive unblinding. It does not assert that any row is a new semantic axis. Feature counts use normalized lexical stems and ordered cue pairs; they are deliberately conservative and are not a semantic parser.；主题：Recurrence and holdout
+- 完整阅读：[docs/governance/basis-free-longform-induction-2026-09-07.md](../../docs/governance/basis-free-longform-induction-2026-09-07.md)
+
 <a id="reading-hr-0ef7472961a343e5"></a>
 ## Mechanism Adjudication Plane
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -248,6 +262,13 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：新增案例候选 · P1 接入烟雾测试；本任务为 smoke test，明确限定「不得新增案例」「不得回填正式案例表」。；输入材料本身是本次工程操作的复盘，案例表已有更直接对应的救援流程案例（Codespace 救援闭环），不构成必须新增的独立案例。；即使作为案例，也应先查重、再决定是否入表；smoke test 阶段不做此判断。
 - 完整阅读：[outputs/collisions/20260708-smoke-test/new-cases.md](../../outputs/collisions/20260708-smoke-test/new-cases.md)
+
+<a id="reading-hr-1125ea8d76940b5f"></a>
+## 下一步认识论能力评估 — IGNITION-20260908-165
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：下一步认识论能力评估 — IGNITION-20260908-165；命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32fb2df 边界：研究只、Draft 只；不改变 Current、canonical、生产运行时、validator 或 Own…；结论：NOVALIDATEDCREATIVEDISCONTINUITYFOUND。本次没有证明跨线程操作器，也没有发现达到高门槛的候选。公共先例搜索没有被触发，因为没有候选越过高门槛；这不等于不存在先例。；剩余事项是：补足 P00 的历史边界、引入真正独立的 proposer/answer-key 分离、验证第三域迁移和删除损失，并在独立授权前保持研究只。不得把本分支推进为 Current、Ready、merge、生产或后续任务。
+- 完整阅读：[docs/governance/next-epistemic-capability-assessment-2026-09-08.md](../../docs/governance/next-epistemic-capability-assessment-2026-09-08.md)
 
 <a id="reading-hr-1255e91e43370b8e"></a>
 ## 085: Backlog Prioritization
@@ -332,24 +353,3 @@
 - 1 分钟：Observer: maintainer and reviewer deciding how claims can move toward publication 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：map-epistemic-architecture；Observer: maintainer and reviewer deciding how claims can move toward publication；Decision question: Which architecture surfaces constrain evidence, execution, validation, and publication?；Value recipient / affected subject: readers, maintainers, and subjects affected by claims；Claim ceiling: derivednavigationview；主题：Unmapped Residue
 - 完整阅读：[reports/atlas/maps/map-epistemic-architecture.md](../../reports/atlas/maps/map-epistemic-architecture.md)
-
-<a id="reading-hr-1d52767df2986dd5"></a>
-## 121Q25D current closeout
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：PR 57 merged the independently accepted Q25C exact candidate through an ordinary merge commit. The first main-sourced Foundation, Function OS and Pages runs succeeded, production Pages deployed from main, and a cache-bypassed live fetch exposed MCF, PSD, ARN, the iteration method, direct architec… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q25D current closeout；PR #57 merged the independently accepted Q25C exact candidate through an ordinary merge commit. The first main-sourced Foundation, Function OS and Pages runs succeeded, production Pages deployed from main, and a cache-bypassed live fetch exposed MCF, PSD, ARN, the iteration method, direct architecture links and candidate-derived/non-truth-layer boundaries.；Q25 and Q25C are current repository capabilities. Q25B remains superseded non-ready candidate history. Method 1.1.0 derives whole-project propagation from the synchronization surface registry, evaluates blockers per lifecycle gate and requires individual external attestations. It is an operation discipline, not a truth layer or proof of substantive correctne…；Exact final closeout HEAD, final workflow run IDs and final live observation belong in merged PR #57 and the independent 1111 Q25D receipt, avoiding a self-referential tracked-file contract.
-- 完整阅读：[reports/operations/121Q25D-current-closeout.md](../../reports/operations/121Q25D-current-closeout.md)
-
-<a id="reading-hr-1df2e57cdfc8ea82"></a>
-## IGNITION-20260828-144 Step 09 — Owner Production Brief Contract R1
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The repository now has a deliberately empty production-brief template. It accepts either a structured brief or one sentence of Owner language, with fields for article/book kind, Owner-selected topic or direction, purpose, audience and optional source, avoidance, length and publication constraints. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260828-144 Step 09 — Owner Production Brief Contract R1；The repository now has a deliberately empty production-brief template. It accepts either a structured brief or one sentence of Owner language, with fields for article/book kind, Owner-selected topic or direction, purpose, audience and optional source, avoidance, length and publication constraints.；The template remains AWAITINGOWNERPRODUCTIONBRIEF: it creates no topic, does not initiate a book, and does not authorize publication. Parsing an Owner brief may preserve and structure the Owner's intent, but model ranking, clustering, an existing draft or a Results Book entry cannot substitute for Owner authority.
-- 完整阅读：[reports/operations/ignition-144-step09-production-brief-contract.md](../../reports/operations/ignition-144-step09-production-brief-contract.md)
-
-<a id="reading-hr-1ee77928279485fa"></a>
-## Multiscale Causal Fabric / 多尺度因果织体
-`CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Status: candidate derived representation. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Multiscale Causal Fabric / 多尺度因果织体；Status: candidate derived representation.；The Multiscale Causal Fabric (MCF) is a versioned modeling and navigation structure across the existing L0-L6 architecture. It is not L7, not a new truth layer, not a replacement for Foundation, and not proof that the universe is literally a graph or network.；MCF exists because the repository already has local causal components but lacks a shared object model for time, scale, propagation, feedback, entropy, irreversibility, projection, diff, and residue.；PSD extension: docs/architecture/probabilistic-system-dynamics.md adds probability semantics and system-dynamics records for cases where a fabric needs stochastic evolution, partial observation, calibration, transition laws, or explicit system boundaries. PSD is a derived operational extension to MCF, not a replacement for MCF and not a new truth layer.；Charter Gate decides whether an action or publication remains normatively allowed.
-- 完整阅读：[docs/architecture/multiscale-causal-fabric.md](../../docs/architecture/multiscale-causal-fabric.md)
