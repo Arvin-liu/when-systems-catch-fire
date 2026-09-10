@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "80ee901b0f0994c1c8ce979363fd99301e3cf9b4f65d7cbdf51f12b30b08fbf4",
+      "source_sha256": "3db15e0a9fd9d7d9f67cc5fc8105d7126519e31d7432ae77e76017143805c7bb",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2270,7 +2270,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "8946ee1141eed515fa4f1e0b2bf640ddaf01446ab683433ec87dedc38081600a",
+      "source_sha256": "834f8fa1f669628de3185dd62f2c11df6bf2e809e6d8b56dd6ca205366f372f6",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2873,7 +2873,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "e79b2026831ea40b74cff38198ba3a75e2723d60760d3fb367f42e11d142653e",
+      "source_sha256": "4ea94fd4613bf4b6a922ee3788aea36a49db534d4fe54e762c145c264a8d83c0",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -5148,7 +5148,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "a2fdcf843fb5bcba1db42e2132d2be13f178db3d0a109d8ed8c0511d8c73c89a",
+      "source_sha256": "a5ada56642e37937cd96d60188a3e72c8165ca7f4b7551310074b1090ab3134d",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-03",
@@ -5170,7 +5170,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "ab1cdd3aa3476102311371390af2e2124e3e5584be0e6acc75b2e9faef729361",
+      "source_sha256": "01e67d95a2bcd192aae37b9e29c62721a8d9ea8a461d7e0532522e41dbf7f2cf",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-10",

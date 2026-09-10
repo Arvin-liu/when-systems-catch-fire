@@ -283,14 +283,18 @@ def run_check(repo_root: str) -> List[str]:
         oq_text = fh.read()
     problems += check_open_question_resolved(oq_text)
 
-    # Modes 4 & 5: verdicts distinct in README + RESULTS/LATEST.
-    readme = os.path.join(REPOSITORY_ROOT, ".github", "README.md")
-    latest = os.path.join(repo_root, "RESULTS", "LATEST.md")
-    with open(readme, "r", encoding="utf-8") as fh:
-        readme_text = fh.read()
-    with open(latest, "r", encoding="utf-8") as fh:
-        latest_text = fh.read()
-    problems += check_verdicts_distinct(readme_text, latest_text)
+    # Modes 4 & 5: verdicts remain distinct in the preserved formal results
+    # book.  RESULTS/LATEST is intentionally a thin Current route and must
+    # not be forced to duplicate historical verdict prose.
+    verdict_source = os.path.join(
+        repo_root,
+        "PUBLICATIONS",
+        "pointfire-results-book",
+        "09-正式仓库最新成果.md",
+    )
+    with open(verdict_source, "r", encoding="utf-8") as fh:
+        verdict_source_text = fh.read()
+    problems += check_verdicts_distinct(verdict_source_text, "")
 
     # Mode 6: editorial lifecycle.
     manifest = os.path.join(repo_root, "docs", "editorial", "source-manifest.json")
