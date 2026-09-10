@@ -764,11 +764,6 @@
   - 可搜索名称：IMPLICIT-8E18FCDA81068DA5 / ## Task 122 current External Agent Federation R1 projection / IMPLICIT-8E18FCDA81068DA5
   - 来源：`docs/project-current-state.md`
   - 依赖：—；被引用：—
-- [## 任务 122：External Agent Federation R1](../../../RESULTS/LATEST.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-56097D0A4729FA87 / ## 任务 122：External Agent Federation R1 / IMPLICIT-56097D0A4729FA87
-  - 来源：`RESULTS/LATEST.md`
-  - 依赖：—；被引用：—
 - [### \[#175｜电力级联失效×认知平方衰减×AI共震——跨域同构\]\(docs/zh/cases/items/C-0175.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-85764D40F89B6026 / ### \[#175｜电力级联失效×认知平方衰减×AI共震——跨域同构\]\(docs/zh/cases/items/C-0175.md\) / IMPLICIT-85764D40F89B6026
@@ -1634,10 +1629,20 @@
   - 可搜索名称：NFC-00f1d1a8bb777ba1 / Bind the lease after the unvalidated receipt is constructed, without
   - 来源：`agent_federation/live_task137.py`
   - 依赖：—；被引用：—
+- [Bounded execution facts](../../../agent-results/IGNITION-20260910-169-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9580ed1da8f6bedf / Bounded execution facts
+  - 来源：`agent-results/IGNITION-20260910-169-result.md`
+  - 依赖：—；被引用：—
 - [Bridge and live-boundary evidence](../../../agent-results/IGNITION-20260823-136-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-6cfda5b7442165e2 / Bridge and live-boundary evidence
   - 来源：`agent-results/IGNITION-20260823-136-result.md`
+  - 依赖：—；被引用：—
+- [Browser acceptance facts](../../../agent-results/IGNITION-20260910-169-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7046aa5a0f885181 / Browser acceptance facts
+  - 来源：`agent-results/IGNITION-20260910-169-result.md`
   - 依赖：—；被引用：—
 - [C-4 孝文帝汉化（认知/社会）](../../../outputs/audit/two-tables-entry-format-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-8767559c777a088a / Gateway, inspect OpenClaw state, copy OpenClaw memory, or expose OpenClaw's
   - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [Gateway、channel、私有数据库、daemon、长期会话或配置/secret；未声明的](../../../docs/architecture/external-agent-federation-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a4dc8e3d399b87d3 / Gateway、channel、私有数据库、daemon、长期会话或配置/secret；未声明的
-  - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—
