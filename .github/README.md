@@ -20,7 +20,7 @@
 
 最小调用示例：
 
-> 请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。
+> 请从[这个仓库](https://github.com/Arvin-liu/when-systems-catch-fire)获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。
 
 ## 3. 结果与火种
 
