@@ -6,6 +6,9 @@ from tools.validate_human_front_door import (
     AI_FIRST_USE_HEADING,
     AI_HANDOFF,
     AI_START,
+    ARCHITECTURE_PAGES_PRESENTATION_URL,
+    ARCHITECTURE_PAGES_URL,
+    ARCHITECTURE_INTERACTION_HINT,
     CAPABILITY_REGISTRY_LINK,
     CAPABILITIES,
     CURRENT_STATE,
@@ -110,9 +113,11 @@ class HumanFrontDoorTests(unittest.TestCase):
                 elif case["mutation"] == "drift-project-identity":
                     mutated = mutated.replace("点火是一个面向长期研究", "点火是一个面向短期研究", 1)
                 elif case["mutation"] == "insert-raw-svg-link":
-                    mutated = mutated.replace("这张图展示点火的整体结构", "[查看原始 SVG](../ignition/docs/generated/ignition-system-architecture.svg)\n\n这张图展示点火的整体结构", 1)
+                    entry = f"[全屏打开交互式架构图]({ARCHITECTURE_PAGES_PRESENTATION_URL}) · [阅读模式]({ARCHITECTURE_PAGES_URL}) · {ARCHITECTURE_INTERACTION_HINT}。\n\n"
+                    mutated = mutated.replace(entry, "[查看原始 SVG](../ignition/docs/generated/ignition-system-architecture.svg)\n\n" + entry, 1)
                 elif case["mutation"] == "insert-machine-architecture-explanation":
-                    mutated = mutated.replace("这张图展示点火的整体结构", "SVG href link metadata\n\n这张图展示点火的整体结构", 1)
+                    entry = f"[全屏打开交互式架构图]({ARCHITECTURE_PAGES_PRESENTATION_URL}) · [阅读模式]({ARCHITECTURE_PAGES_URL}) · {ARCHITECTURE_INTERACTION_HINT}。\n\n"
+                    mutated = mutated.replace(entry, "SVG href link metadata\n\n" + entry, 1)
                 elif case["mutation"] == "open-component-group":
                     mutated = mutated.replace("<details>\n<summary>组件导航：核心控制与状态", "<details open>\n<summary>组件导航：核心控制与状态", 1)
                 elif case["mutation"] == "noncanonical-component-link":
@@ -139,7 +144,7 @@ class HumanFrontDoorTests(unittest.TestCase):
             self.assertNotIn(token, self.human_reading)
 
     def test_physics_correction_is_visible(self):
-        self.assertRegex(self.readme, r"没有证明.{0,20}大一统普遍不可能|撤回.{0,40}大一统")
+        self.assertIn("研究仍保持研究候选或负结果，不升级为系统能力或认识论结论", self.readme)
 
     def test_three_ai_front_doors_share_version_truth(self):
         validate_version_front_doors(self.ai_start, self.ai_handoff, self.llms)

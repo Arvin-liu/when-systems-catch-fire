@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-ad2106fa45b1e5a9"></a>
+## IGNITION-20260826-141 Step 16 — Post-publication projection gate repair
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The first independent clean preflight against the newly published remote-main clone did not pass. It reported five deterministic projection failures: nonfunction claims, Knowledge Experience generation/validation, durability hygiene and repository path classification. No side effect was detected. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260826-141 Step 16 — Post-publication projection gate repair；The first independent clean preflight against the newly published remote-main clone did not pass. It reported five deterministic projection failures: nonfunction claims, Knowledge Experience generation/validation, durability hygiene and repository path classification. No side effect was detected.；The cause was ordering, not a live or full-suite regression. The step16-projection-preflight.json receipt was created after path-manifest generation, and the final Step16 progress/result records were added after the nonfunction and Knowledge projections were generated. The final tracked tree therefore contained one path absent from the manifest and stale det…；The repair regenerates the path manifest only after all formal Step16 records exist, then rebuilds nonfunction claims, Knowledge Experience, Current Facts, Current Snapshot, compiler-owned Current surfaces and Fire Seeds before rerunning the clean preflight. No new live process is authorized or started.；This audit does not self-witness the publication SHA. The exact remote-main ref, fresh clone HEAD and post-repair gate belong to the independent 1111 publication witness.
+- 完整阅读：[reports/operations/ignition-141-step16-post-publication-gate-repair.md](../../reports/operations/ignition-141-step16-post-publication-gate-repair.md)
+
 <a id="reading-hr-ad56863677cc6ac6"></a>
 ## IGNITION-20260826-140 Step 12 — Independent live-attempt validation
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：选择产出/投入效率最大（单位资源产出最高）的行动。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：V2 规范性审核 - 效率性协议 (Efficiency Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；选择产出/投入效率最大（单位资源产出最高）的行动。；未定义成本的边界，默认只算直接投入，容易把生命、生态、代际与主体性代价排除在外（歧义）。
 - 完整阅读：[docs/governance/meta-protocol-reviews/protocols/V2.md](../../docs/governance/meta-protocol-reviews/protocols/V2.md)
-
-<a id="reading-hr-c322de3c7799a555"></a>
-## Distribution And Decision Collapse Control Plane
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: 121Q13CONTROLOVERLAY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Distribution And Decision Collapse Control Plane；Status: 121Q13CONTROLOVERLAY；This control plane treats AI and human judgments on open-ended questions as context-conditioned samples, not as final answers or fact evidence.；model and model version when available;；prompt and context hashes;；sampling conditions such as role, memory state, temperature, and ordering when available;
-- 完整阅读：[docs/architecture/distribution-collapse-control-plane.md](../../docs/architecture/distribution-collapse-control-plane.md)

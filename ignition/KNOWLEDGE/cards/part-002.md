@@ -224,26 +224,6 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-b8317ad5cc6c3230`, `使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意`, `- 使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意义、target form 与 framing delta。发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。`
 
-<a id="asset-nfc-b84ff0d36d4df547"></a>
-## 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b84ff0d36d4df547` · [RESULTS/LATEST.md](../../RESULTS/LATEST.md)
-- **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
-- **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** 响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/LATEST.md`
-- **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
-- **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
-- **下一步：** No open obligation was recorded.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-b84ff0d36d4df547`, `响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。`, `响应哈希、adjudication、Evidence Program 投影和生命周期证据位于 task-110 机器记录。`
-
 <a id="asset-nfc-bd6c757f496eff1d"></a>
 ## `RESULTS/` 把机器注册表、报告和历史资产投影为可直接阅读的结果。它不复制或提高证据权限；每个结论仍受来源、成熟度、处置和 claim ceiling 约束。
 
@@ -603,26 +583,6 @@
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
 - **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-fa7f908615d24682`, `公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。`, `- 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。`
-
-<a id="asset-nfc-ffa78acc808beedc"></a>
-## 不能推出四力统一或物理学大一统不可能。
-
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ffa78acc808beedc` · [RESULTS/LATEST.md](../../RESULTS/LATEST.md)
-- **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
-- **当前状态：** `QUARANTINED_AMBIGUOUS`
-- **当前结果：** - 不能推出四力统一或物理学大一统不可能。
-- **双成熟度：** 数学 `M0`；外部证据 `E0`
-- **假设与表述上限：** Unresolved historical or current claim candidate; it cannot appear as current knowledge.
-- **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/LATEST.md`
-- **演化历史：** Lineage: PHYSICS_UNIFICATION_NOGO；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
-- **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
-- **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
-- **主题：** `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `NFC-ffa78acc808beedc`, `不能推出四力统一或物理学大一统不可能。`, `- 不能推出四力统一或物理学大一统不可能。`
 
 <a id="asset-hr-004ccfbca43a4293"></a>
 ## External Agent Interface Audit R1
@@ -1003,3 +963,43 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260826-141 Step 08 — Fresh local executor census`, `ignition-141-step08-local-executor-census`
+
+<a id="asset-hr-09324a8008a3bd3d"></a>
+## Codespace 救援两张表差异审计
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-09324A8008A3BD3D` · [outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md](../../outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md)
+- **为什么产生：** 此来源记录了什么：Codespace 救援两张表差异审计？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 两张表（函数总表 / 案例总表）本质上属于点火项目 Arvin-liu/when-systems-catch-fire 的核心资产，不应长期分裂到独立仓库维护。LIANGZHANGBIAO / Unified-Case-Table / Unified-Function-Table 仅作为 Codespace 救援缓存，不作为长期维护主线。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D141`, `D430`
+- **来源与证据：** `outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Codespace 救援两张表差异审计`, `codespace-rescue-two-tables-diff-audit-20260708`
+
+<a id="asset-hr-094a86ef6aa2a143"></a>
+## 任务 114 项目级语言—思维风险审计
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-094A86EF6AA2A143` · [reports/operations/114-language-thought-project-audit.md](../../reports/operations/114-language-thought-project-audit.md)
+- **为什么产生：** 此来源记录了什么：任务 114 项目级语言—思维风险审计？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 本轮在结果性审计之前冻结了 14 个高风险项目表面，见 data/language-thought/project-audit-population.json。范围包括根入口、权威架构、当前状态、AI 冷启动、系统地图、之元写作法、两篇现行作品、人工／机器书架以及只能由生成器更新的阅读与知识表面。冻结范围之外的仓库文件没有因为“文风统一”而被批量重写。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/114-language-thought-project-audit.md`, `114-LANGUAGE-THOUGHT-PROJECT-AUDIT`
+- **演化历史：** 2026-08-02: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `任务 114 项目级语言—思维风险审计`, `114-language-thought-project-audit`

@@ -59,9 +59,9 @@ SURFACE_RULES = {
         "EPISTEMICALLY_ACCEPTED",
     ),
     "ignition/RESULTS/LATEST.md": (
-        "Agent Platform R2",
-        "第一个大型 Domain Pack",
-        "EPISTEMICALLY_ACCEPTED",
+        "Current Facts",
+        "下一步认识论能力评估",
+        "Knowledge",
     ),
     "ignition/PUBLICATIONS/pointfire-results-book/09-正式仓库最新成果.md": (
         "Agent Platform R2",

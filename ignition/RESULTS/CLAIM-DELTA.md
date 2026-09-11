@@ -86,7 +86,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-5A5163509582639A`
-- 关联断言：['NFC-040ae203ddf1ff4d', 'NFC-0d0708efec4a8376', 'NFC-0e0cffa5c2d19c78', 'NFC-1340e0c7e2990ae9', 'NFC-13e33c8ff28e8039', 'NFC-16a1f3c79eb30a37', 'NFC-2317bfa11d8dac26', 'NFC-2a02b1b55e7a2ac6', 'NFC-2abc13ac95cefd41', 'NFC-391f80f6063292f1', 'NFC-3e2731dada5cce5b', 'NFC-4b5388413f74775a', 'NFC-4bffdeb0ab79df8e', 'NFC-522277bf0a74860d', 'NFC-5bd59b098b36728a', 'NFC-5c0ba19d774f59a7', 'NFC-5d6af947b4ca7c9c', 'NFC-5fd09d872bdc2ae3', 'NFC-602e70118fb27e6b', 'NFC-68c529e86146b9e7']（仅显示前 20 项）
+- 关联断言：['NFC-ade964e00a430154']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 
