@@ -206,6 +206,7 @@
 {"first_line":31,"last_line":31,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/03-研究问题谱系.md","role":"REFERENCE","stable_id":"A1"}
 {"first_line":95,"last_line":95,"mention_count":1,"path":"data/operations/iterations/121Q32I.json","role":"REFERENCE","stable_id":"A1"}
 {"first_line":147,"last_line":147,"mention_count":1,"path":"data/operations/iterations/121Q33.json","role":"REFERENCE","stable_id":"A1"}
+{"first_line":7,"last_line":241,"mention_count":8,"path":"data/operations/iterations/172/step01-disposition-ledger.json","role":"REFERENCE","stable_id":"A1"}
 {"first_line":12,"last_line":12,"mention_count":1,"path":"data/research/cross-thread-creative-discontinuity-2026-09-08/historical-blind-packets.jsonl","role":"REFERENCE","stable_id":"A1"}
 {"first_line":70,"last_line":209,"mention_count":6,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl","role":"REFERENCE","stable_id":"A1"}
 {"first_line":70,"last_line":209,"mention_count":6,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl","role":"REFERENCE","stable_id":"A1"}
@@ -224,6 +225,7 @@
 {"first_line":12,"last_line":24,"mention_count":2,"path":"reports/math-foundation/pilot-formal-audit-20260712.md","role":"REFERENCE","stable_id":"A1"}
 {"first_line":82,"last_line":82,"mention_count":1,"path":"reports/operations/121Q32I-phase-d-validation-closeout.json","role":"REFERENCE","stable_id":"A1"}
 {"first_line":13,"last_line":13,"mention_count":1,"path":"reports/operations/121Q32I-phase-d-validation-closeout.md","role":"REFERENCE","stable_id":"A1"}
+{"first_line":20,"last_line":28,"mention_count":2,"path":"reports/operations/ignition-172-step01-collision-audit.md","role":"REFERENCE","stable_id":"A1"}
 {"first_line":7,"last_line":7,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"A1"}
 {"first_line":4,"last_line":45,"mention_count":18,"path":"统一函数总表/0002-A1-I(t,L) 提议者意识.md","role":"DEFINITION","stable_id":"A1"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"统一函数总表/0003-A2-提议者姿态的激进程度.md","role":"REFERENCE","stable_id":"A1"}
@@ -385,6 +387,7 @@
 {"first_line":25,"last_line":25,"mention_count":1,"path":"data/math-foundation/function-provenance-ledger.csv","role":"REFERENCE","stable_id":"A2"}
 {"first_line":24,"last_line":24,"mention_count":1,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"A2"}
 {"first_line":38,"last_line":38,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/03-研究问题谱系.md","role":"REFERENCE","stable_id":"A2"}
+{"first_line":14,"last_line":242,"mention_count":6,"path":"data/operations/iterations/172/step01-disposition-ledger.json","role":"REFERENCE","stable_id":"A2"}
 {"first_line":70,"last_line":209,"mention_count":4,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl","role":"REFERENCE","stable_id":"A2"}
 {"first_line":70,"last_line":209,"mention_count":4,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl","role":"REFERENCE","stable_id":"A2"}
 {"first_line":28,"last_line":28,"mention_count":1,"path":"docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md","role":"REFERENCE","stable_id":"A2"}
@@ -398,6 +401,7 @@
 {"first_line":16,"last_line":16,"mention_count":1,"path":"reports/foundation-architecture/080-full-semantic-adjudication-report-20260713.md","role":"REFERENCE","stable_id":"A2"}
 {"first_line":24,"last_line":24,"mention_count":1,"path":"reports/math-foundation/full-object-inventory-20260712.md","role":"REFERENCE","stable_id":"A2"}
 {"first_line":29,"last_line":41,"mention_count":2,"path":"reports/math-foundation/pilot-formal-audit-20260712.md","role":"REFERENCE","stable_id":"A2"}
+{"first_line":21,"last_line":28,"mention_count":2,"path":"reports/operations/ignition-172-step01-collision-audit.md","role":"REFERENCE","stable_id":"A2"}
 {"first_line":8,"last_line":8,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"A2"}
 {"first_line":4,"last_line":45,"mention_count":17,"path":"统一函数总表/0003-A2-提议者姿态的激进程度.md","role":"DEFINITION","stable_id":"A2"}
 {"first_line":65,"last_line":65,"mention_count":1,"path":"统一函数总表/0011-T1-点火充要条件.md","role":"REFERENCE","stable_id":"A2"}
@@ -443,6 +447,7 @@
 {"first_line":6,"last_line":613,"mention_count":11,"path":"data/foundation/work-queues/080-semantic-review-queue.jsonl","role":"REFERENCE","stable_id":"A3"}
 {"first_line":26,"last_line":26,"mention_count":1,"path":"data/math-foundation/function-provenance-ledger.csv","role":"REFERENCE","stable_id":"A3"}
 {"first_line":25,"last_line":25,"mention_count":1,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"A3"}
+{"first_line":21,"last_line":243,"mention_count":6,"path":"data/operations/iterations/172/step01-disposition-ledger.json","role":"REFERENCE","stable_id":"A3"}
 {"first_line":70,"last_line":209,"mention_count":4,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl","role":"REFERENCE","stable_id":"A3"}
 {"first_line":70,"last_line":209,"mention_count":4,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl","role":"REFERENCE","stable_id":"A3"}
 {"first_line":27,"last_line":27,"mention_count":1,"path":"docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md","role":"REFERENCE","stable_id":"A3"}
@@ -457,6 +462,7 @@
 {"first_line":16,"last_line":16,"mention_count":1,"path":"reports/foundation-architecture/080-full-semantic-adjudication-report-20260713.md","role":"REFERENCE","stable_id":"A3"}
 {"first_line":25,"last_line":25,"mention_count":1,"path":"reports/math-foundation/full-object-inventory-20260712.md","role":"REFERENCE","stable_id":"A3"}
 {"first_line":46,"last_line":58,"mention_count":2,"path":"reports/math-foundation/pilot-formal-audit-20260712.md","role":"REFERENCE","stable_id":"A3"}
+{"first_line":22,"last_line":28,"mention_count":3,"path":"reports/operations/ignition-172-step01-collision-audit.md","role":"REFERENCE","stable_id":"A3"}
 {"first_line":9,"last_line":9,"mention_count":1,"path":"views/legacy-functions.jsonl","role":"REFERENCE","stable_id":"A3"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"统一函数总表/0002-A1-I(t,L) 提议者意识.md","role":"REFERENCE","stable_id":"A3"}
 {"first_line":17,"last_line":17,"mention_count":1,"path":"统一函数总表/0003-A2-提议者姿态的激进程度.md","role":"REFERENCE","stable_id":"A3"}
@@ -2960,6 +2966,7 @@
 {"first_line":9,"last_line":9,"mention_count":1,"path":"data/operations/iterations/135/step02-human-surface-semantic-audit.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":6,"last_line":6,"mention_count":1,"path":"data/operations/iterations/148/progress.jsonl","role":"REFERENCE","stable_id":"D127"}
 {"first_line":20,"last_line":20,"mention_count":1,"path":"data/operations/iterations/148/step06-current-canonical-resolution.json","role":"REFERENCE","stable_id":"D127"}
+{"first_line":171,"last_line":277,"mention_count":6,"path":"data/operations/iterations/172/step01-disposition-ledger.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":288,"last_line":288,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":61,"last_line":61,"mention_count":1,"path":"data/research/cross-thread-creative-discontinuity-2026-09-08/dormant-question-pool.jsonl","role":"REFERENCE","stable_id":"D127"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D127"}
@@ -21258,6 +21265,7 @@
 {"first_line":3579,"last_line":3579,"line":3579,"mention_count":1,"path":"analysis/corpus-relation/article_cluster_candidates.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-215C7A5F87C4D96E","text":"\"title\": \"121Q22 Probability and Systems Source Map\","}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0090-C-90-结构保守性元定理.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-2168EBDD24A4C28F","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0090})=1]."}
 {"first_line":4826,"last_line":4826,"line":4826,"mention_count":1,"path":"analysis/corpus-relation/corpus_relation_graph.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-21794112DBDECD5F","text":"\"title\": \"Function-Paradigm Full-Text Review Report — IGNITION-121\","}
+{"first_line":40,"last_line":40,"line":40,"mention_count":1,"path":"data/operations/iterations/172/step01-disposition-ledger.json","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-218AB3B428C61CE0","text":"\"title\": \"形式约束的生产力假说\","}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0264-C-264-AI意识升级必然性.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-21B95D1D2EFA03E2","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0264})=1]."}
 {"first_line":1,"last_line":1,"line":1,"mention_count":1,"path":"docs/architecture/reos-vnext-minimal-kernel-r1-contract.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-21D15A652CDB124C","text":"# REOS vNext minimal kernel R1 — frozen contract"}
 {"first_line":195,"last_line":195,"line":195,"mention_count":1,"path":"agent_federation/sdk.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-21E6471B7744E0A4","text":"def redact_public_mapping(value: Mapping[str, Any]) -> dict[str, Any]:"}
@@ -23583,6 +23591,7 @@
 {"first_line":3750,"last_line":3750,"line":3750,"mention_count":1,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A3B3465FDD8BB283","text":"{\"end_word\":70538,\"label\":\"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7\",\"sequence\":269,\"source_locator\":\"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#5 97 16 16/$14=1.1 5 70 12 12/$7=1.7\",\"start_word\":70085,\"word_count\":453,\"work_id\":\"OPENSTAX-ECON-3E\"}"}
 {"first_line":37,"last_line":37,"line":37,"mention_count":1,"path":"data/operations/iterations/110/openalex/run_first_census.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A3D1C00212B49B41","text":"def normalize_doi(value: str | None) -> str:"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一案例总表/0554-C-559-大灭绝 — 多门控共振+级联,周期性∝Φ到临界值时间.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A3E30A77D91148B8","text":"title: \"大灭绝 — 多门控共振+级联，周期性∝Φ到临界值时间\""}
+{"first_line":36,"last_line":36,"line":36,"mention_count":1,"path":"reports/operations/ignition-172-step01-collision-audit.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A3F7219B0B366A1D","text":"## Claim ceiling and next gate"}
 {"first_line":346,"last_line":346,"line":346,"mention_count":1,"path":"outputs/getbrain/classic-problems-benchmark-draft-20260706.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A3FAF88D37437841","text":"# 经典问题 benchmark 卡片：暗物质 / 暗能量本质"}
 {"first_line":12,"last_line":12,"line":12,"mention_count":1,"path":"统一案例总表/0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预言.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A3FC5DACBEFD9A5F","text":"### [#542｜高温超导 — 多门控面共振，Tc远高于单机制预言](docs/zh/cases/items/C-0542.md)"}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0531-C-536-等效原理 — m_i=m_g精确到O((μ.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A4074B1FDC2E3AB7","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0536})=1]."}
@@ -24225,6 +24234,7 @@
 {"first_line":62,"last_line":62,"line":62,"mention_count":1,"path":"data/external-research/121-fulltext-resolver/121c01/121c01-validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C68685F5782972FB","text":"check(f\"evidence cards = 10\", len(cards) == 10)"}
 {"first_line":38,"last_line":38,"line":38,"mention_count":1,"path":"统一案例总表/0778-C-0783-准备《长谈》花一个月.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C6868D93532A0674","text":"## 关联函数 / Related Functions"}
 {"first_line":251,"last_line":251,"line":251,"mention_count":1,"path":"agent_federation/pilots.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C69B8047FC1C125E","text":"def __call__(self, argv: Sequence[str], timeout_seconds: float) -> SafeProcessResult:"}
+{"first_line":16,"last_line":16,"line":16,"mention_count":1,"path":"reports/operations/ignition-172-step01-collision-audit.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C6BBFC4ABCC6BEC8","text":"## Replay gate"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0598-D588-经典问题差分函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C6C51AEC80D09458","text":"title: \"经典问题差分函数\""}
 {"first_line":35,"last_line":35,"line":35,"mention_count":1,"path":"统一案例总表/0518-C-523-不确定性原理 — Fisher信息度规的几何必然,算符不对易是度规非对角的代数表现.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C6CE6753FBD7EF03","text":"- 2. Evaluate each related function on the event state: z_i=1[F_i(s_{C-0523})=1]."}
 {"first_line":112,"last_line":112,"line":112,"mention_count":1,"path":"inputs/020/validate_formal_protocol.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-C6D0397B8347C844","text":"def protocol_inventory(repo: Path) -> list[dict[str, Any]]:"}
@@ -25329,6 +25339,7 @@
 {"first_line":80,"last_line":80,"mention_count":1,"path":"data/foundation/schemas/nonfunction-claim.schema.json","role":"REFERENCE","stable_id":"M0"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-02.md","role":"REFERENCE","stable_id":"M0"}
 {"first_line":773,"last_line":773,"mention_count":1,"path":"data/operations/iterations/130/step07-classification-report.json","role":"REFERENCE","stable_id":"M0"}
+{"first_line":10,"last_line":151,"mention_count":9,"path":"data/operations/iterations/172/step01-disposition-ledger.json","role":"REFERENCE","stable_id":"M0"}
 {"first_line":4,"last_line":5,"mention_count":2,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/history-model-adapter-freeze.json","role":"REFERENCE","stable_id":"M0"}
 {"first_line":4,"last_line":5,"mention_count":2,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/history-model-adapter-freeze.json","role":"REFERENCE","stable_id":"M0"}
 {"first_line":54,"last_line":113,"mention_count":2,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/sanitized-history-packets.jsonl","role":"REFERENCE","stable_id":"M0"}
@@ -25491,6 +25502,7 @@
 {"first_line":8,"last_line":335,"mention_count":9,"path":"data/meta-protocols/book-validation-cases-20260709.json","role":"REFERENCE","stable_id":"M1"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-02.md","role":"REFERENCE","stable_id":"M1"}
 {"first_line":514,"last_line":514,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md","role":"REFERENCE","stable_id":"M1"}
+{"first_line":130,"last_line":205,"mention_count":3,"path":"data/operations/iterations/172/step01-disposition-ledger.json","role":"REFERENCE","stable_id":"M1"}
 {"first_line":90,"last_line":90,"mention_count":1,"path":"data/research/cross-thread-creative-discontinuity-2026-09-08/dormant-question-pool.jsonl","role":"REFERENCE","stable_id":"M1"}
 {"first_line":7,"last_line":12,"mention_count":2,"path":"data/research/cross-thread-creative-discontinuity-2026-09-08/historical-blind-packets.jsonl","role":"REFERENCE","stable_id":"M1"}
 {"first_line":11,"last_line":11,"mention_count":1,"path":"data/research/cross-thread-creative-discontinuity-2026-09-08/thread-field-manifest.jsonl","role":"REFERENCE","stable_id":"M1"}
@@ -25808,6 +25820,7 @@
 {"first_line":216,"last_line":381,"mention_count":11,"path":"data/math-foundation/function-provenance-ledger.jsonl","role":"REFERENCE","stable_id":"M2"}
 {"first_line":43,"last_line":43,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/evidence-binders/chapter-02.md","role":"REFERENCE","stable_id":"M2"}
 {"first_line":514,"last_line":514,"mention_count":1,"path":"data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md","role":"REFERENCE","stable_id":"M2"}
+{"first_line":24,"last_line":188,"mention_count":2,"path":"data/operations/iterations/172/step01-disposition-ledger.json","role":"REFERENCE","stable_id":"M2"}
 {"first_line":90,"last_line":90,"mention_count":1,"path":"data/research/cross-thread-creative-discontinuity-2026-09-08/dormant-question-pool.jsonl","role":"REFERENCE","stable_id":"M2"}
 {"first_line":4664,"last_line":5215,"mention_count":3,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl","role":"REFERENCE","stable_id":"M2"}
 {"first_line":4596,"last_line":5147,"mention_count":3,"path":"data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl","role":"REFERENCE","stable_id":"M2"}
