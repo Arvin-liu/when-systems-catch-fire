@@ -1,9 +1,9 @@
 {
   "counts": {
     "function_human": 24,
-    "function_machine": 6151,
+    "function_machine": 6154,
     "nonfunction_human": 24,
-    "nonfunction_machine": 17966
+    "nonfunction_machine": 17973
   },
   "entries": [
     {
@@ -43,7 +43,7 @@
       "asset_kind": "FUNCTION_ASSET",
       "human_path": "docs/human/function-assets/entries/a1.md",
       "machine_id": "A1",
-      "machine_record_sha256": "2d070b60d40da2bf45629fd982b4aeaf02a06edbb6dd46ac70ed5fbc24e69028",
+      "machine_record_sha256": "4f9d690bf2368eaaf727e4501de2fed6e39829a7a80cd8045fe6eaa2fa5dac7a",
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "FOUNDATION-64-PROPAGATION.jsonl",
@@ -54,7 +54,7 @@
       "asset_kind": "FUNCTION_ASSET",
       "human_path": "docs/human/function-assets/entries/a2.md",
       "machine_id": "A2",
-      "machine_record_sha256": "55f62af62b36feb4a170e73c9a123eea12a57fa68a350cdd693fd7895ca5496d",
+      "machine_record_sha256": "62804b8ae6e07b42a8031502ab869cac3dc0e8874e63d67ec864d72bd11ed26c",
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "analysis/corpus-relation/cluster_source_briefs/C000.md",
@@ -76,7 +76,7 @@
       "asset_kind": "FUNCTION_ASSET",
       "human_path": "docs/human/function-assets/entries/d127.md",
       "machine_id": "D127",
-      "machine_record_sha256": "9d647156deb21b7d026207b524485b7cc02b1a214249da50aced8fe84621b165",
+      "machine_record_sha256": "50d5fdd0e82be46d111fa557b8ac0a4e6b27028ec86e05ad632340dc10c12b89",
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
