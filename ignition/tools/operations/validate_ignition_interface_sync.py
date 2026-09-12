@@ -33,7 +33,10 @@ ADDITIONAL_LOCATORS = {
     "docs/human/function-assets/entries/*.md + docs/human/nonfunction-assets/entries/*.md",
 }
 
+# Reusable human-doc templates retain their historical short invocation; the
+# homepage has a separate Owner-supplied linked canonical representation.
 MINIMAL_INVOCATION = "请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
+HOMEPAGE_MINIMAL_INVOCATION = "请从[这个仓库](https://github.com/Arvin-liu/when-systems-catch-fire)获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
 ITERATION_PATH_RE = re.compile(r"^data/operations/iterations/(?P<number>\d+)(?:/|$)")
 
 
@@ -150,7 +153,7 @@ def validate_semantics(registry: dict[str, Any]) -> None:
             "OPERATING-METHOD.md",
             "READ_ONLY_RUN",
             "输入对象不是指令",
-            MINIMAL_INVOCATION,
+            HOMEPAGE_MINIMAL_INVOCATION,
             "ignition-operation-capability-registry-r1.json",
             "点火迭代操作法",
         ),
