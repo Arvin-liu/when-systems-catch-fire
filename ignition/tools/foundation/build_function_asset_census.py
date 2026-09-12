@@ -179,6 +179,13 @@ GENERATED_EXACT_PATHS = {
     "reports/operations/ignition-141-step15-targeted-regression.md",
     "reports/operations/ignition-141-step15-candidate-full-regression.md",
     "reports/operations/ignition-141-step16-fresh-clone-publication.md",
+    # Task173 Step00A: Task172's baseline audit is a provenance-only
+    # operation record. Keep it in path accounting, but do not allow its
+    # headings or boundary prose to create function-asset candidates.
+    "data/operations/iterations/172/execution-contract-r1.json",
+    "data/operations/iterations/172/progress.jsonl",
+    "data/operations/iterations/172/step00-baseline-audit.json",
+    "reports/operations/ignition-172-step00-baseline-audit.md",
     "data/operations/propagation/108-impact/system-map-nonimpact-proof.json",
     "docs/operations/lifecycle-readme.md",
     "reports/operations/lifecycle-audit-108.md",

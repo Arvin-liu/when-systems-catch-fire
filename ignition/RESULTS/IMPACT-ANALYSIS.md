@@ -665,6 +665,7 @@
 |`reports/operations/ignition-144-step17-fresh-task-full-regression.md`|2|0|否|
 |`reports/operations/ignition-144-step18-formal-main-publication.md`|0|0|是|
 |`reports/operations/ignition-144-step19-terminality.md`|1|0|否|
+|`reports/operations/ignition-172-step00-baseline-audit.md`|0|0|是|
 |`reports/operations/lifecycle-audit-108.md`|0|0|是|
 |`reports/publication/jin-rise-point-fire-analysis.md`|67|0|否|
 |`reports/publication/song-huizong-taoism-point-fire-analysis.md`|33|0|否|

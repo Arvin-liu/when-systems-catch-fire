@@ -559,6 +559,7 @@
     "reports/operations/ignition-144-step17-fresh-task-full-regression.md": "2026-08-28",
     "reports/operations/ignition-144-step18-formal-main-publication.md": "2026-08-28",
     "reports/operations/ignition-144-step19-terminality.md": "2026-08-28",
+    "reports/operations/ignition-172-step00-baseline-audit.md": "2026-09-12",
     "reports/operations/lifecycle-audit-108.md": "2026-08-01",
     "reports/publication/jin-rise-point-fire-analysis.md": "2026-07-16",
     "reports/publication/song-huizong-taoism-point-fire-analysis.md": "2026-08-02",
@@ -577,7 +578,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 575,
+  "entry_count": 576,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

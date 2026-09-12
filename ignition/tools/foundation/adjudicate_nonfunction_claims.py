@@ -145,6 +145,10 @@ SELF_EXCLUDES = {
     "reports/operations/ignition-141-step15-targeted-regression.md",
     "reports/operations/ignition-141-step15-candidate-full-regression.md",
     "reports/operations/ignition-141-step16-fresh-clone-publication.md",
+    # Task173 Step00A: Task172's baseline audit is a provenance-only
+    # operation record, not a claim-source surface. Preserve path/source
+    # accounting without admitting its boundary prose as canonical claims.
+    "reports/operations/ignition-172-step00-baseline-audit.md",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",

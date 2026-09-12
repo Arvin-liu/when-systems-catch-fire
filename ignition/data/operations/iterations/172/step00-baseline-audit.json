@@ -224,6 +224,97 @@
     },
     "step00_decision": "Record the drift as a baseline residual; do not hand-edit or silently treat the projection as Current canonical truth."
   },
+  "step00a_scan_input_freeze": {
+    "status": "FROZEN_BEFORE_OFFICIAL_GENERATORS",
+    "recorded_before_official_generators": true,
+    "source_head": "8d4e359a9fdd36e8da136bd4e406aab81f65b803",
+    "worktree_clean_before_freeze": true,
+    "combined_git_file_inventory_count": 4362,
+    "untracked_file_count": 0,
+    "combined_git_file_inventory_sha256": "513d012375682788cba0d378a09784447d7c77f8f0c0017e36be65e64ab829a1",
+    "task172_step00_added_paths": [
+      "ignition/data/operations/iterations/172/execution-contract-r1.json",
+      "ignition/data/operations/iterations/172/progress.jsonl",
+      "ignition/data/operations/iterations/172/step00-baseline-audit.json",
+      "ignition/reports/operations/ignition-172-step00-baseline-audit.md"
+    ],
+    "pre_freeze_records": [
+      "ignition/data/operations/iterations/172/progress.jsonl::STEP-00A-IN_PROGRESS",
+      "ignition/data/operations/iterations/172/step00-baseline-audit.json::step00a_scan_input_freeze"
+    ],
+    "post_freeze_rule": "Do not add or modify any new scan-sensitive Formal path until Step00A generator and fixed-point verification are complete; record final CI only in PR metadata.",
+    "generator_boundary_repair": {
+      "status": "APPLIED_AND_VERIFIED",
+      "reason": "The official generators correctly exposed that this Step00 operation report contains claim-like boundary prose, but Task173 requires operation records to remain provenance-only and not become canonical function or nonfunction assets.",
+      "exact_path": "reports/operations/ignition-172-step00-baseline-audit.md",
+      "function_operation_record_paths": [
+        "data/operations/iterations/172/execution-contract-r1.json",
+        "data/operations/iterations/172/progress.jsonl",
+        "data/operations/iterations/172/step00-baseline-audit.json"
+      ],
+      "function_rule_path": "ignition/tools/foundation/build_function_asset_census.py",
+      "nonfunction_rule_path": "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
+      "knowledge_rule_path": "ignition/data/governance/knowledge-experience/config.json",
+      "decision": "Use exact-path exclusions only for the Task172 operation records/report; retain repository path accounting, source-discovery accounting and the human-results ledger, do not broad-exclude reports/operations, and do not edit canonical T2 or CLAIM-T2 records.",
+      "post_fix_expected": "No Task172 operation-record-derived function or nonfunction canonical rows and no Task172 report-derived Knowledge Experience result card; the canonical T2 record remains byte-identical to the base-derived record."
+    }
+  },
+  "step00a_local_acceptance": {
+    "status": "PASS_LOCAL_PENDING_REMOTE_EXACT_HEAD_CI",
+    "formal_head_before_step00a_commit": "8d4e359a9fdd36e8da136bd4e406aab81f65b803",
+    "repository_path_accounting": {
+      "tracked": 4362,
+      "manifest": 4362,
+      "checks_total": 10,
+      "checks_passed": 10,
+      "checks_failed": 0
+    },
+    "foundation_validation": {
+      "checks_total": 63,
+      "checks_passed": 63,
+      "checks_failed": 0,
+      "status": "ALL_FOUNDATION_VALID"
+    },
+    "function_asset_census": {
+      "deduplicated_assets": 6151,
+      "source_occurrence_records": 29559,
+      "deterministic_check": "PASS"
+    },
+    "nonfunction_claim_closure": {
+      "canonical_claims": 17966,
+      "dependency_edges": 5642,
+      "deterministic_check": "PASS"
+    },
+    "knowledge_experience": {
+      "cards": 653,
+      "changes": 548,
+      "layered_reading": 574,
+      "search_records": 24691,
+      "two_pass_determinism": "PASS"
+    },
+    "current_state_sync": {
+      "status": "PASS",
+      "metrics": 16,
+      "impact": "PRESENTATION_ONLY"
+    },
+    "fire_seeds": {
+      "entries": 64,
+      "source_count": 639,
+      "status": "PASS"
+    },
+    "t2_preservation": {
+      "base_identity_card_record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+      "worktree_identity_card_record_sha256": "29eb5d75e327f540a9cb033c41651a65d6184af827d288066b03cf0a968838b0",
+      "identity_card_noncanonical_fields_byte_equal_to_base": true,
+      "operation_record_source_anchors": [],
+      "claim_t2_record_sha256": "a02e5aa6aff35b60f28ca8cdd0beca0f02a0ea887efef594fec17ce8e6a03136",
+      "claim_t2_registry_changed": false
+    },
+    "deferred_residuals": [
+      "The README front-door minimal invocation validator fails identically on base 428d1885d0cb3de40ed492dbf028708ea0129c00 and the current worktree; no README or homepage change is in scope.",
+      "The pre-existing T2 semantic fixture hash drift remains reserved for Step00B; Step00A made no T2 fixture or canonical-record change."
+    ]
+  },
   "operation_read_only_confirmation": {
     "operation_id": "knowledge.collide_object",
     "current_status": "CURRENT_BOUNDED",
