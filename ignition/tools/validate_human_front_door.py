@@ -59,7 +59,7 @@ AI_FIRST_USE_HEADING = "2. 点火操作法 / 如何使用"
 OPERATING_METHOD_LINK = "../ignition/OPERATING-METHOD.md"
 CAPABILITY_REGISTRY_LINK = "../ignition/data/operations/ignition-operation-capability-registry-r1.json"
 ITERATION_METHOD_LINK = "../ignition/ITERATION.md"
-MINIMAL_INVOCATION = "请从这个仓库获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
+MINIMAL_INVOCATION = "请从[这个仓库](https://github.com/Arvin-liu/when-systems-catch-fire)获取 Current 点火操作法，按操作法跑一遍我附上的对象，并返回结果。"
 NAVIGATION_SUMMARIES = (
     "组件导航：核心控制与状态",
     "组件导航：执行与协作",
@@ -203,8 +203,9 @@ def validate_ai_first_use_section(readme: str) -> None:
     require(invocation_match is not None, "README AI-first usage entry lacks a visible minimal invocation")
     invocation = invocation_match.group(1).strip()
     require(invocation == MINIMAL_INVOCATION, "README minimal invocation changed or requires internal knowledge")
+    visible_invocation = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", invocation)
     for token in ("OPERATING-METHOD.md", "Capability Registry", "函数编号", "Pack", "Ψ", "registry", "Git", "worktree", "branch", "commit", "PR"):
-        require(token.casefold() not in invocation.casefold(), f"README minimal invocation exposes internal jargon: {token}")
+        require(token.casefold() not in visible_invocation.casefold(), f"README minimal invocation exposes internal jargon: {token}")
     for token in ("schema_version", "record_sha256", "canonical_id", "CURRENT_CANONICAL_REGISTRY_FIRST"):
         require(token not in section, f"README AI-first usage entry copies low-level implementation detail: {token}")
 
