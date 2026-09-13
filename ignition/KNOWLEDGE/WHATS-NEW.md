@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-f8412af8d8458685"></a>
+### 2026-09-13 · IGNITION-172 Step04 — Gate R routing schema and precision pilot
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Gate T exact-head CI is complete for parent 6d704d570827bf8d6ebb65fb65bcdd236056b4d3. This step freezes a bounded routing sidecar and a precision-oriented pilot; it does not perform mass taxonomy routing or scholarly corpus admission.
+- **来源：** [ignition-172-20260913-step04-gate-r-routing.md](../reports/operations/ignition-172-20260913-step04-gate-r-routing.md)
+- **资产卡：** [HR-F8412AF8D8458685](./ASSET-CARDS.md#asset-hr-f8412af8d8458685)
+
 <a id="change-src-hr-90ed509023725da0"></a>
 ### 2026-09-13 · IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock
 

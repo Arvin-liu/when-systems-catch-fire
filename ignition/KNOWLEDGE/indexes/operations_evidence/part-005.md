@@ -1679,6 +1679,11 @@
   - 可搜索名称：IGNITION-140 Step 07 — Canonical Reconciliation Events / ignition-140-step07-canonical-reconciliation-events
   - 来源：`reports/operations/ignition-140-step07-canonical-reconciliation-events.md`
   - 依赖：—；被引用：—
+- [IGNITION-172 Step04 — Gate R routing schema and precision pilot](../../ASSET-CARDS.md#asset-hr-f8412af8d8458685)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-172 Step04 — Gate R routing schema and precision pilot / ignition-172-20260913-step04-gate-r-routing
+  - 来源：`reports/operations/ignition-172-20260913-step04-gate-r-routing.md`
+  - 依赖：—；被引用：—
 - [IGNITION-20260815-120 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-9099adc0ce6c7e7c)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-20260815-120 typed change-propagation impact report / IGNITION-20260815-120-change-propagation-impact
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-018252cbca715f7b / O₁\(x,y\) := D177\(参数空间同构\)**
   - 来源：`docs/phi_meta_law.md`
   - 依赖：D177；被引用：—
-- [O₁₀\(x,y\) := D179-energy\(能量尺度同构\)**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-d190df70147d8208 / O₁₀\(x,y\) := D179-energy\(能量尺度同构\)**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：D179；被引用：—

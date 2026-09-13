@@ -10,7 +10,7 @@
 - [认知、Agent 与行动](./indexes/cognition.md) — 1330 条主归属记录
 - [架构、治理与自我纠错](./indexes/architecture_governance.md) — 7121 条主归属记录
 - [文章、写作与公共表达](./indexes/writing_publication.md) — 143 条主归属记录
-- [迭代、验证与证据工程](./indexes/operations_evidence.md) — 3203 条主归属记录
+- [迭代、验证与证据工程](./indexes/operations_evidence.md) — 3204 条主归属记录
 
 ## 不确定搜哪个主题
 

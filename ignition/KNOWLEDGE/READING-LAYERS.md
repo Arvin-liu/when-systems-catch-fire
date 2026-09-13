@@ -1128,6 +1128,8 @@
 - [IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit](./reading-layers/part-012.md#reading-hr-f5fb13bfbfdfa4c8) — `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-f664e539ab663124"></a>
 - [Ignition Atlas](./reading-layers/part-012.md#reading-hr-f664e539ab663124) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+<a id="reading-hr-f8412af8d8458685"></a>
+- [IGNITION-172 Step04 — Gate R routing schema and precision pilot](./reading-layers/part-012.md#reading-hr-f8412af8d8458685) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-f8c21cd0cd6a1f34"></a>
 - [生命共同体价值审查（life-community-value-audit）](./reading-layers/part-012.md#reading-hr-f8c21cd0cd6a1f34) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-f92361487a1aad76"></a>

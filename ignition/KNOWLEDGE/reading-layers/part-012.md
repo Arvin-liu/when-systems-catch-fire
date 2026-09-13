@@ -95,6 +95,13 @@
 - 5 分钟：Status: 121Q14MAPPROJECTIONOVERLAY；The Ignition Atlas is a set of versioned derived maps. It is not a new source of truth.；Registries, matrices, schemas, source records, tests, and repository artifacts remain the authority. A map is a projection from those sources for a declared observer, decision question, value recipient, time, and coordinate system.；主题：What A Map Adds；A matrix says which objects relate. A graph says what connects. A map additionally declares:；which decision is being supported;
 - 完整阅读：[docs/architecture/ignition-atlas.md](../../docs/architecture/ignition-atlas.md)
 
+<a id="reading-hr-f8412af8d8458685"></a>
+## IGNITION-172 Step04 — Gate R routing schema and precision pilot
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Gate T exact-head CI is complete for parent 6d704d570827bf8d6ebb65fb65bcdd236056b4d3. This step freezes a bounded routing sidecar and a precision-oriented pilot; it does not perform mass taxonomy routing or scholarly corpus admission. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step04 — Gate R routing schema and precision pilot；Gate T exact-head CI is complete for parent 6d704d570827bf8d6ebb65fb65bcdd236056b4d3. This step freezes a bounded routing sidecar and a precision-oriented pilot; it does not perform mass taxonomy routing or scholarly corpus admission.；Primary taxonomy authority: 24 fields / 245 disciplines / 2178 subdisciplines.；Pilot: 250 function assets + 500 nonfunction claims = 750 rows.；Classification states: {'CLASSIFIED': 182, 'MULTIDISCIPLINARY': 26, 'OUTOFUNESCOSCOPE': 103, 'UNRESOLVED': 439}.；All 750 rows remain PILOTMANUALREVIEWREQUIRED.
+- 完整阅读：[reports/operations/ignition-172-20260913-step04-gate-r-routing.md](../../reports/operations/ignition-172-20260913-step04-gate-r-routing.md)
+
 <a id="reading-hr-f8c21cd0cd6a1f34"></a>
 ## 生命共同体价值审查（life-community-value-audit）
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
