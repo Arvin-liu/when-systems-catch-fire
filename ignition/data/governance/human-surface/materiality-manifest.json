@@ -1,9 +1,9 @@
 {
   "counts": {
     "function_human": 24,
-    "function_machine": 6154,
+    "function_machine": 6155,
     "nonfunction_human": 24,
-    "nonfunction_machine": 17973
+    "nonfunction_machine": 17974
   },
   "entries": [
     {
@@ -76,7 +76,7 @@
       "asset_kind": "FUNCTION_ASSET",
       "human_path": "docs/human/function-assets/entries/d127.md",
       "machine_id": "D127",
-      "machine_record_sha256": "50d5fdd0e82be46d111fa557b8ac0a4e6b27028ec86e05ad632340dc10c12b89",
+      "machine_record_sha256": "584394297ab96559b4da3055d11d9bbce2643cb93d3493acb46d23fa29120945",
       "machine_source": "data/foundation/function-assets/census.jsonl",
       "selection_reason": "materiality policy: representative, boundary-sensitive, or disposition-sensitive record",
       "source_path": "AI-HANDOFF.md",
