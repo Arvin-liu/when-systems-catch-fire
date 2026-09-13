@@ -149,6 +149,10 @@ SELF_EXCLUDES = {
     # operation record, not a claim-source surface. Preserve path/source
     # accounting without admitting its boundary prose as canonical claims.
     "reports/operations/ignition-172-step00-baseline-audit.md",
+    # Task172 Gate R is a bounded routing sidecar. Its operation report is a
+    # generated projection, not a canonical claim source; keeping it out of
+    # discovery prevents the sidecar from changing the authority it hashes.
+    "reports/operations/ignition-172-20260913-step04-gate-r-routing.md",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",

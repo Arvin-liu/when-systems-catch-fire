@@ -203,6 +203,10 @@ GENERATED_EXACT_PATHS = {
     "data/foundation/knowledge-corpus-admission-policy.json",
     "reports/architecture/agent-platform-r2-gap-audit.md",
     "reports/operations/ignition-121-nightshift-progress.md",
+    # Task172 Gate R is a bounded routing sidecar. Its operation report is a
+    # generated projection, not a function-asset source; excluding it keeps
+    # the sidecar from changing the authority it hashes.
+    "reports/operations/ignition-172-20260913-step04-gate-r-routing.md",
     # Task158 research-only narrative and receipt records are not
     # function-asset sources; source-discovery accounting still retains them.
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",

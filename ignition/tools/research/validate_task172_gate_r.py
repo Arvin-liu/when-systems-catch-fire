@@ -11,6 +11,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from tools.foundation.knowledge_corpus_admission import admission_for_path
 from tools.research.validate_task172_gate_t import validate as validate_gate_t
 
 
@@ -71,6 +72,8 @@ def validate(repo_root: Path) -> None:
     assert formal.get("pull_request") == 218, "wrong Draft PR binding"
     assert formal.get("state") == "OPEN + DRAFT + unmerged", "PR lifecycle ceiling drift"
     assert freeze.get("scan_inputs") == {"primary_pdf_persisted": False, "ocr_persisted": False, "full_corpus_retrieval": False, "mass_formal_routing": False}, "scan or retrieval boundary drift"
+    gate_r_admission = admission_for_path("data/research/task172-gate-r-routing/precision-pilot.json")
+    assert gate_r_admission.classification == "GENERATED_PROJECTION_EXCLUDED" and not gate_r_admission.auto_discovery, "Gate R sidecar crossed into Foundation admission"
 
     taxonomy = {"fields": 24, "primary_disciplines": 245, "primary_subdisciplines": 2178}
     assert freeze.get("taxonomy_authority", {}).get("fields") == taxonomy["fields"], "taxonomy field drift"

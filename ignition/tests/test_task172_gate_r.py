@@ -8,6 +8,7 @@ import unittest
 from pathlib import Path
 
 from tools.research.validate_task172_gate_r import EXPECTED_PARENT_HEAD, validate
+from tools.foundation.knowledge_corpus_admission import admission_for_path
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -41,6 +42,11 @@ class Task172GateRTests(unittest.TestCase):
         }.items():
             digest = hashlib.sha256((GATE_R / raw).read_bytes()).hexdigest()
             self.assertEqual(receipt["outputs"][key], digest, key)
+
+    def test_sidecar_is_excluded_from_foundation_admission(self):
+        admission = admission_for_path("data/research/task172-gate-r-routing/precision-pilot.json")
+        self.assertEqual(admission.classification, "GENERATED_PROJECTION_EXCLUDED")
+        self.assertFalse(admission.auto_discovery)
 
 
 if __name__ == "__main__":
