@@ -53,6 +53,8 @@ jobs:
       - run: python3 tools/foundation/validate_nonfunction_claim_closure.py
       - name: Validate Task172 Gate T UNESCO taxonomy authority lock
         run: python3 tools/research/validate_task172_gate_t.py --repo-root .
+      - name: Validate Task172 Gate R routing schema and precision pilot
+        run: python3 tools/research/validate_task172_gate_r.py --repo-root .
       - name: Validate human result census and self-correction products
         run: |
           python3 tools/governance/build_human_results.py --check

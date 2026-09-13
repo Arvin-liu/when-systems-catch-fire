@@ -1,0 +1,37 @@
+{
+  "authority_inputs": {
+    "function_authority_sha256": "c4348d85737ca5496d4ba203e1b66dd3ae3dc061b40c327f950775fd5677cebe",
+    "nonfunction_authority_sha256": "5838ee4a0907e18937fe301cb375f64482b12c6165eae54d22fda8b49137b763"
+  },
+  "command_source": {
+    "blob_sha": "98fd25bd1886cf8675992413d6c55d1e09b4502f",
+    "path": "agent-commands/IGNITION-20260913-176.md",
+    "ref": "b1fc45fb",
+    "repository": "Arvin-liu/1111"
+  },
+  "decision": "GATE_R_SCHEMA_AND_PRECISION_PILOT_ONLY; GATE_C_REQUIRED_BEFORE_MASS_INGESTION",
+  "direction_lock": "IGNITION-20260913-176",
+  "formal_pre_freeze": {
+    "branch": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+    "head": "6d704d570827bf8d6ebb65fb65bcdd236056b4d3",
+    "pull_request": 218,
+    "state": "OPEN + DRAFT + unmerged"
+  },
+  "freeze_event": "SCAN_INPUT_FREEZE_REUSE",
+  "scan_inputs": {
+    "full_corpus_retrieval": false,
+    "mass_formal_routing": false,
+    "ocr_persisted": false,
+    "primary_pdf_persisted": false
+  },
+  "schema": "task172-gate-r-source-freeze-v1",
+  "taxonomy_authority": {
+    "fields": 24,
+    "gate_t_ledger_sha256": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f",
+    "gate_t_parse_sha256": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a",
+    "gate_t_receipt_sha256": "f52622f3ccdc7eaf9ce465ace42b62be92265ed93f5607d4d5a9c143014db9d5",
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178,
+    "source": "1988 UNESCO primary document locked by Gate T"
+  }
+}

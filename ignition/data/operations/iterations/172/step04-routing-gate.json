@@ -1,0 +1,37 @@
+{
+  "audit_sha256": "8b39a3505170172c9a25dea286efaab3d6a8ec31b529ff027eb81f193f23faf4",
+  "command_source": {
+    "blob_sha": "98fd25bd1886cf8675992413d6c55d1e09b4502f",
+    "path": "agent-commands/IGNITION-20260913-176.md",
+    "ref": "b1fc45fb",
+    "repository": "Arvin-liu/1111"
+  },
+  "decision": "GATE_R_PASS_FOR_SCHEMA_AND_PRECISION_PILOT; GATE_C_REQUIRED_BEFORE_MASS_INGESTION",
+  "evidence_projection": "ROUTING_ONLY_NO_EVIDENCE_PROMOTION",
+  "pilot": {
+    "full_routing_promotion": false,
+    "function_assets": 250,
+    "hard_check_violations": 0,
+    "live_retrieval": false,
+    "manual_review_required": 750,
+    "nonfunction_claims": 500,
+    "total": 750
+  },
+  "pilot_sha256": "b93fd6ee51be169946266609b0c013f849db773e9e456d0f1a6ec32926b50bb1",
+  "schema": "task172-step04-routing-gate-v1",
+  "schema_sha256": "5ece3a3e3b22d080782485d27d0b46c45224b6fe035ba247095841a2d11fdb92",
+  "source_exact_head": "6d704d570827bf8d6ebb65fb65bcdd236056b4d3",
+  "state_counts": {
+    "CLASSIFIED": 182,
+    "MULTIDISCIPLINARY": 26,
+    "OUT_OF_UNESCO_SCOPE": 103,
+    "UNRESOLVED": 439
+  },
+  "step": "Task172 Step04 / Gate R",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  },
+  "vocabulary_sha256": "5612622cedaef67fd8b5a19ddf4d40b2939d07ef78bb530301176b2e399a9b95"
+}
