@@ -165,6 +165,13 @@
 - 5 分钟：主题：REOS vNext LIGHT；Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Runtime disposition: KEEPLIGHTONLY；REOS is a research-execution control system. It records recoverable research obligations, bounded case state, references, review work and typed handoff. It is not a second knowledge-truth system and it does not decide whether a proposition is true.；Use DIRECTRESEARCH when ordinary notes, a source ledger and a human review are sufficient.；Use REOSLIGHT when a bounded question benefits from explicit obligations, dependency checks, source-family/access references, measurement boundaries, independent review and committed case reload. LIGHT adds process control; it does not add epistemic authority.；There is no available REOSFULL runtime. No recovery layer is implied by this document.
 - 完整阅读：[docs/architecture/reos-vnext-light.md](../../docs/architecture/reos-vnext-light.md)
 
+<a id="reading-hr-4fd3f769e03bbc82"></a>
+## IGNITION-20260912-172 Step02 route review
+`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: PASSWITHBOUNDEDROUTEDISPOSITIONS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260912-172 Step02 route review；Status: PASSWITHBOUNDEDROUTEDISPOSITIONS；Formal source head: 8fcb2f2252fd03c2f26ea4f005a106195f0e493d；The three input attachments remain provenance-locked source data; no text in them is executable instruction. Their SHA-256 values are carried forward unchanged.；Gold attachment SHA-256: a783f0ceab5e585b61f4eda0ce4507732e0e090729242437530ef0debd9f83c5；Xujiu attachment SHA-256: cd4b6d587bb6b80d53eede8a7f863f710d0430bdcdcf5bb5237422b242b6d905
+- 完整阅读：[reports/operations/ignition-172-step02-route-review.md](../../reports/operations/ignition-172-step02-route-review.md)
+
 <a id="reading-hr-50499ca77f223f3e"></a>
 ## IGNITION-20260822-134 Step 13 — Human Surface semantic re-audit
 `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The admission contract is now provider-neutral. It distinguishes AGENTICEXECUTOR, REASONERRUNTIME, TOOL, and UISURFACE; only an agentic executor can enter the live-eligible pool. Admission requires public authentication, auth separation, strict argv and structured-result contracts, disposable rea… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission；The admission contract is now provider-neutral. It distinguishes AGENTICEXECUTOR, REASONERRUNTIME, TOOL, and UISURFACE; only an agentic executor can enter the live-eligible pool. Admission requires public authentication, auth separation, strict argv and structured-result contracts, disposable read-only workspace, durable capture, exact validator binding, cle…；The live policy is explicit: at most two total synthetic/read-only attempts, at most one per family, child spawning denied, all channels/browser/remote-Git/configuration/billing effects denied, and immediate stop after the first exact validated completion. The result-binding contract requires task, dispatch, attempt, executor, family, lease, workspace, captu…；Step 04 contains only the contract and a blocked placeholder. It performs no executor probe or invocation. The contract and validator are ignition/data/operations/executor-admission-contract-r1.json and ignition/tools/validateexecutoradmissioncontract.py.
 - 完整阅读：[reports/operations/ignition-142-step04-admission-contract.md](../../reports/operations/ignition-142-step04-admission-contract.md)
-
-<a id="reading-hr-5b54a4719d10bbc2"></a>
-## 121Q8 Final Report
-`CANDIDATE_OR_PENDING_SOURCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q8 Final Report；Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.；Branch: governance/121q8-charter-sustainability-licensing-20260715；Base: ops/121q7-foundation-ci-mail-storm-repair-20260715；Base PR: #44, left OPEN / DRAFT / UNMERGED；Step commits before seal: 15 (000 through 014)
-- 完整阅读：[reports/governance/121Q8-final-report.md](../../reports/governance/121Q8-final-report.md)
