@@ -1134,6 +1134,11 @@
   - 可搜索名称：IMPLICIT-31A2FA637782B1E3 / # IGNITION-20260828-144 Step 15 — engineering closure gate / IMPLICIT-31A2FA637782B1E3
   - 来源：`reports/operations/ignition-144-step15-engineering-closure-gate.md`
   - 依赖：—；被引用：—
+- [# IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock](../../../reports/operations/ignition-172-20260913-step03-unesco-gate-t.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3431731D8EB2EE00 / # IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock / IMPLICIT-3431731D8EB2EE00
+  - 来源：`reports/operations/ignition-172-20260913-step03-unesco-gate-t.md`
+  - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-ED434DF2C7C50934 / # IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report / IMPLICIT-ED434DF2C7C50934
@@ -1528,6 +1533,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-764A7951AA340D35 / ## Functional visual use versus aesthetic endorsement / IMPLICIT-764A7951AA340D35
   - 来源：`data/operations/iterations/150/step18-scope-split-admission-objects.md`
+  - 依赖：—；被引用：—
+- [## Gate disposition](../../../reports/operations/ignition-172-20260913-step03-unesco-gate-t.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BBDD5C695B799DC9 / ## Gate disposition / IMPLICIT-BBDD5C695B799DC9
+  - 来源：`reports/operations/ignition-172-20260913-step03-unesco-gate-t.md`
   - 依赖：—；被引用：—
 - [## Gates](../../../reports/operations/ignition-139-step07-current-state-sync.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2492,15 +2502,5 @@
 - [### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\]\(docs/zh/cases/items/C-0479.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-55F97A2C54803449 / ### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\]\(docs/zh/cases/items/C-0479.md\) / IMPLICIT-55F97A2C54803449
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\]\(docs/zh/cases/items/C-0489.m](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D3DF479A75624C0D / ### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\]\(docs/zh/cases/items/C-0489.m / IMPLICIT-D3DF479A75624C0D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\]\(docs/zh/cases/items/C-0](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AD2EE0C6AA9CAD49 / ### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\]\(docs/zh/cases/items/C-0 / IMPLICIT-AD2EE0C6AA9CAD49
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

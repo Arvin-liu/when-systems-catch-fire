@@ -2418,6 +2418,10 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/research/state-vs-transition-semantics-2026-09-07/v2-semantic-leap-score.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/research/state-vs-transition-semantics-2026-09-07/verdict.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/research/state-vs-transition-semantics-2026-09-07/verification.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/research/task172-gate-t-unesco-1988/build-receipt.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/research/task172-gate-t-unesco-1988/discrepancy-ledger.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/research/task172-gate-t-unesco-1988/primary-1988-parse.json"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/research/task172-gate-t-unesco-1988/source-freeze.json"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"data/research/unesco-coverage-evidence-map.json"}
 {"candidate_fragments":1,"canonical_claim_ids":["NFC-2d5cf18b4ed756c1"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"data/schemas/classic_problems_benchmark.schema.json"}
 {"candidate_fragments":2,"canonical_claim_ids":["NFC-4e97aa34295c21f3","NFC-f8c5cffe3dc03476"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"data/schemas/evidence_regimes.schema.json"}
@@ -3327,6 +3331,7 @@
 {"candidate_fragments":2,"canonical_claim_ids":["NFC-04bb73c6552454bb","NFC-a5dc5912b99820e3"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"reports/operations/ignition-144-step17-fresh-task-full-regression.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"SCANNED_NO_CANDIDATE","exclusion_reason":null,"path":"reports/operations/ignition-144-step18-formal-main-publication.md"}
 {"candidate_fragments":1,"canonical_claim_ids":["NFC-fca621ec94bd66ac"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"reports/operations/ignition-144-step19-terminality.md"}
+{"candidate_fragments":2,"canonical_claim_ids":["NFC-7f609174ce67a7f0","NFC-b16cb191bdd8eecc"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"reports/operations/ignition-172-20260913-step03-unesco-gate-t.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","exclusion_reason":"EXCLUDED_GENERATED_OR_FUNCTION_ASSET_REGISTRY","path":"reports/operations/ignition-172-step00-baseline-audit.md"}
 {"candidate_fragments":7,"canonical_claim_ids":["NFC-13e6b3c63110987b","NFC-5344e3363c14cd17","NFC-5c006523a84b4e77","NFC-7de2e846b9d95640","NFC-7f9a07f51ac57980","NFC-962f4d10182c80dc","NFC-a349e70adaf5d7eb"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"reports/operations/ignition-172-step01-collision-audit.md"}
 {"candidate_fragments":1,"canonical_claim_ids":["NFC-716255067ba6e347"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"reports/operations/ignition-172-step02-route-review.md"}
@@ -3988,6 +3993,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task163_mutable_basis_learning.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task164_historical_basis_pressure.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task165_cross_thread_collision.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task172_gate_t.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task_identity_adversarial_fixtures.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task_identity_model.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tests/test_task_identity_parser.py"}
@@ -4142,6 +4148,7 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/research/task163_mutable_basis_learning.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/research/task164_historical_basis_pressure.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/research/task165_cross_thread_collision.py"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/research/validate_task172_gate_t.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/run_control_plane_r2_pilot.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/run_cross_executor_driver_pilot.py"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":"tools/run_durability_lifecycle_pilot.py"}

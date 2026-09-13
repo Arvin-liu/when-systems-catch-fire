@@ -263,6 +263,13 @@
 - 5 分钟：主题：IGNITION-20260815-120 typed change-propagation impact report；Closure complete: true；Closure hash: 92235c362eb55b43028bd3418e25d8120ec8bde477e5b9f274405e72f49d62dc；Fixpoint iterations: 2；Seeds: agentkernelr0, agentruntimer0, currentstate, foundation, historicalreports, humanknowledgesurfaces, incrementalexecution, l6, projectcomponentregistry, propagationcalculator, propagationtopology, systemmapprojection；Resolved components: 29
 - 完整阅读：[reports/operations/IGNITION-20260815-120-change-propagation-impact.md](../../reports/operations/IGNITION-20260815-120-change-propagation-impact.md)
 
+<a id="reading-hr-90ed509023725da0"></a>
+## IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock
+`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: GATETPASSFORAUTHORITYLOCK; MASSINGESTIONREMAINSGATEDBYGATERANDGATEC 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock；Status: GATETPASSFORAUTHORITYLOCK; MASSINGESTIONREMAINSGATEDBYGATERANDGATEC；This is the next Formal logical step after the Task172 Step02/Foundation exact-head checkpoint. The command direction is Arvin-liu/1111@b1fc45fb, agent-commands/IGNITION-20260913-176.md, blob 98fd25bd1886cf8675992413d6c55d1e09b4502f. The Formal pre-freeze head was 9dc446517ccc02b5e5d8ca383f0aed28ab7e4afc; PR #218 remains OPEN + DRAFT + unmerged.；主题：Source and rights boundary；Primary authority: UNESCO, Proposed International Standard Nomenclature for Fields of Science and Technology, UNESCO/NS/ROU/257 rev.1 / SC-88/WS-80, 1988. The recovered scanned PDF is bound by SHA-256 78f37a0efdd34647e35d408fae8d958d4bf10021275b153c11b3539dceadbefa. PDF and bulk OCR remain outside Formal. Formal persists only minimum code, label, hierarchy,…；The scan-sensitive inputs were frozen before this step in data/research/task172-gate-t-unesco-1988/source-freeze.json. The generated closure is reproducible from the frozen primary-scan hashes, coordinate-bound repairs, and visual row anchors; the second scratch build produced GATETSECONDRUNNODIFF.
+- 完整阅读：[reports/operations/ignition-172-20260913-step03-unesco-gate-t.md](../../reports/operations/ignition-172-20260913-step03-unesco-gate-t.md)
+
 <a id="reading-hr-91e80e0c69fb56f2"></a>
 ## 认识论结构诱导（ESI）R0
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Task142 is now terminal as COMPLETEDWITHOPENOBLIGATIONS. The formal task scope is complete after Steps 00–19; the independent LIVEEXTERNALINVOCATION obligation remains OPEN because no exact-bound LIVEREADONLYVALIDATEDCOMPLETION was formed. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260827-142 Step 19 — Publication transaction and terminal state；Task142 is now terminal as COMPLETEDWITHOPENOBLIGATIONS. The formal task scope is complete after Steps 00–19; the independent LIVEEXTERNALINVOCATION obligation remains OPEN because no exact-bound LIVEREADONLYVALIDATEDCOMPLETION was formed.；This is the lifecycle correction: an open long-lived obligation is carried by its own registry and does not keep a completed formal task INPROGRESS.；主题：Publication boundary；The release target is refs/heads/main.；Publication authority is REMOTEREFOBSERVATION.
 - 完整阅读：[reports/operations/ignition-142-step19-publication-and-terminality.md](../../reports/operations/ignition-142-step19-publication-and-terminality.md)
-
-<a id="reading-hr-95f4d0b3d4dd2b7d"></a>
-## 逻辑地基规则
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：非纯数学对象的最小结构为 Premises + Declared Inference Rules - Conclusion。无法形成演绎时保留 DEFEASIBLESUPPORT、HIDDENPREMISE 或 PENDING。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：形式语言：明确项、谓词、关系、量词、变量绑定和作用域。；默认核心：经典一阶逻辑只用于已声明的演绎核心，不扩张到不一致证据聚合。；非经典声明：构造、模态、时序、规范、概率、可废止逻辑必须显式选型。；推理类型：演绎、归纳、溯因、类比和因果推理分别记录，不把支持写成蕴涵。；条件检查：必要、充分、充要条件分别编码，禁止肯定后件。；反模型：无效演绎给出满足前提而使结论为假的具体模型与复现方式。
-- 完整阅读：[docs/foundation/logic/README.md](../../docs/foundation/logic/README.md)

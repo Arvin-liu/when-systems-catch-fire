@@ -324,6 +324,26 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260815-120 typed change-propagation impact report`, `IGNITION-20260815-120-change-propagation-impact`
 
+<a id="asset-hr-90ed509023725da0"></a>
+## IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-90ED509023725DA0` · [reports/operations/ignition-172-20260913-step03-unesco-gate-t.md](../../reports/operations/ignition-172-20260913-step03-unesco-gate-t.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock？
+- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
+- **当前结果：** Status: GATETPASSFORAUTHORITYLOCK; MASSINGESTIONREMAINSGATEDBYGATERANDGATEC
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-172-20260913-step03-unesco-gate-t.md`, `172-20260913-STEP03-UNESCO-GATE-T`
+- **演化历史：** 2026-09-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock`, `ignition-172-20260913-step03-unesco-gate-t`
+
 <a id="asset-hr-91e80e0c69fb56f2"></a>
 ## 认识论结构诱导（ESI）R0
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `121Q2W Final Consistency Seal Report`, `121Q2W-final-consistency-seal-report`
-
-<a id="asset-hr-9e6a888145f934b6"></a>
-## IGNITION-130 Step 11 — residual reclassification
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9E6A888145F934B6` · [reports/operations/ignition-130-step11-residual-reclassification.md](../../reports/operations/ignition-130-step11-residual-reclassification.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-130 Step 11 — residual reclassification？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Task 129’s terminal receipt remains the source record. The following items are retained as historical or environmental residuals; none is a new Task 130 Current Surface regression.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-130-step11-residual-reclassification.md`, `130-STEP11-RESIDUAL-RECLASSIFICATION`
-- **演化历史：** 2026-08-21: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-130 Step 11 — residual reclassification`, `ignition-130-step11-residual-reclassification`

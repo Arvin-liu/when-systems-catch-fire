@@ -54,6 +54,11 @@
   - 可搜索名称：NFC-afb1ea0eee861e41 / `124`, `126`, `127`, `128`, and `129` in later Current identity projections. Most
   - 来源：`docs/architecture/iteration-boundary-archaeology-r1.md`
   - 依赖：—；被引用：—
+- [`245` is the count of four-digit discipline headings recovered from the 1988 primary scan, with the explicitly recorded](../../../reports/operations/ignition-172-20260913-step03-unesco-gate-t.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7f609174ce67a7f0 / `245` is the count of four-digit discipline headings recovered from the 1988 primary scan, with the explicitly recorded
+  - 来源：`reports/operations/ignition-172-20260913-step03-unesco-gate-t.md`
+  - 依赖：—；被引用：—
 - [`A_intervention^\(2\)\(d\) ∝ p*\(√d-1\)/d`，在 `d≈4` 时最大；这意味着 `d=4` 同时对应“最稳定”与“最可修复”的双重最优。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-780b90ae1edaf7b6 / `A_intervention^\(2\)\(d\) ∝ p*\(√d-1\)/d`，在 `d≈4` 时最大；这意味着 `d=4` 同时对应“最稳定”与“最可修复”的双重最优。
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-4af0dc121c7d0dc1 / class EvidenceRequest:
   - 来源：`reos_vnext/contract.py`
-  - 依赖：—；被引用：—
-- [Classic Problems Benchmark Dataset](../../../data/schemas/classic_problems_benchmark.schema.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-2d5cf18b4ed756c1 / Classic Problems Benchmark Dataset
-  - 来源：`data/schemas/classic_problems_benchmark.schema.json`
   - 依赖：—；被引用：—

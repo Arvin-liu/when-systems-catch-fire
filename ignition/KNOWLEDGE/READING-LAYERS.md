@@ -676,6 +676,8 @@
 - [认知迁移编辑修订：来源与边界记录](./reading-layers/part-007.md#reading-hr-9094b2cb638397a8) — `HISTORICAL_COMPLETION_RECORD` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-9099adc0ce6c7e7c"></a>
 - [IGNITION-20260815-120 typed change-propagation impact report](./reading-layers/part-007.md#reading-hr-9099adc0ce6c7e7c) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+<a id="reading-hr-90ed509023725da0"></a>
+- [IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock](./reading-layers/part-007.md#reading-hr-90ed509023725da0) — `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-91e80e0c69fb56f2"></a>
 - [认识论结构诱导（ESI）R0](./reading-layers/part-007.md#reading-hr-91e80e0c69fb56f2) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-91f57f34641602bd"></a>
@@ -701,7 +703,7 @@
 <a id="reading-hr-95778013d10e2cf0"></a>
 - [IGNITION-20260827-142 Step 19 — Publication transaction and terminal state](./reading-layers/part-007.md#reading-hr-95778013d10e2cf0) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-95f4d0b3d4dd2b7d"></a>
-- [逻辑地基规则](./reading-layers/part-007.md#reading-hr-95f4d0b3d4dd2b7d) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+- [逻辑地基规则](./reading-layers/part-008.md#reading-hr-95f4d0b3d4dd2b7d) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-97478cb8dceeba3a"></a>
 - [IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix](./reading-layers/part-008.md#reading-hr-97478cb8dceeba3a) — `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-97dacc897de7d3d3"></a>
@@ -801,7 +803,7 @@
 <a id="reading-hr-ab65516db634d3e2"></a>
 - [IGNITION-20260828-144 Step 00 — Task143 final baseline](./reading-layers/part-008.md#reading-hr-ab65516db634d3e2) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ab7862b612e34394"></a>
-- [元协议版本迭代维护审计 2026-07-09](./reading-layers/part-008.md#reading-hr-ab7862b612e34394) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- [元协议版本迭代维护审计 2026-07-09](./reading-layers/part-009.md#reading-hr-ab7862b612e34394) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-abbbd65bf096449d"></a>
 - [Iteration Identity Model R1](./reading-layers/part-009.md#reading-hr-abbbd65bf096449d) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ac9e178219fcc8d0"></a>
@@ -901,7 +903,7 @@
 <a id="reading-hr-c190ac76ad5f8440"></a>
 - [121Q3 Night Final Report](./reading-layers/part-009.md#reading-hr-c190ac76ad5f8440) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-c1e3cb3130d2df76"></a>
-- [IGNITION-20260822-134 Step 12 — Residual adversarial matrix](./reading-layers/part-009.md#reading-hr-c1e3cb3130d2df76) — `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- [IGNITION-20260822-134 Step 12 — Residual adversarial matrix](./reading-layers/part-010.md#reading-hr-c1e3cb3130d2df76) — `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-c2813f07a6d9b6ac"></a>
 - [IGNITION-20260906-158 result](./reading-layers/part-010.md#reading-hr-c2813f07a6d9b6ac) — `CANDIDATE_OR_PENDING_SOURCE` · `MATHEMATICS`, `COGNITION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-c32095e69516906c"></a>
@@ -1001,7 +1003,7 @@
 <a id="reading-hr-d821031f6e382fd7"></a>
 - [121Q9 Final Release Candidate](./reading-layers/part-010.md#reading-hr-d821031f6e382fd7) — `CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d8277885e64bf9e8"></a>
-- [IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure](./reading-layers/part-010.md#reading-hr-d8277885e64bf9e8) — `HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- [IGNITION-20260822-134 Step 13 — Current identity migration and hygiene closure](./reading-layers/part-011.md#reading-hr-d8277885e64bf9e8) — `HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d882bcf095baaddd"></a>
 - [IGNITION-20260822-134 Step 03 — Current path manifest contract audit](./reading-layers/part-011.md#reading-hr-d882bcf095baaddd) — `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d88fd2b435abc1cd"></a>
@@ -1101,7 +1103,7 @@
 <a id="reading-hr-ebfbf26abf72ff4c"></a>
 - [IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计](./reading-layers/part-011.md#reading-hr-ebfbf26abf72ff4c) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ecc4e92db835c50c"></a>
-- [REOS vNext LIGHT pilot R1 — public-safe synthesis](./reading-layers/part-011.md#reading-hr-ecc4e92db835c50c) — `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- [REOS vNext LIGHT pilot R1 — public-safe synthesis](./reading-layers/part-012.md#reading-hr-ecc4e92db835c50c) — `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ed60006ec664c67a"></a>
 - [IGNITION-20260826-140 Step 13 — Adversarial / negative matrix](./reading-layers/part-012.md#reading-hr-ed60006ec664c67a) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ef6e1d0860ae3fef"></a>

@@ -1,0 +1,26 @@
+{
+  "deterministic": true,
+  "output_counts": {
+    "disciplines": 245,
+    "fields": 24,
+    "subdisciplines": 2178
+  },
+  "output_hashes": {
+    "discipline_codes_sha256": "934aa11aea592233c07674c74ed01a87bdc2f802821846716a57564d6e00b983",
+    "subdiscipline_codes_sha256": "a90e9f07f614c7866ffd4d400909a92e5af32f58a510f0f8759ae9fffb1f9313"
+  },
+  "primary_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+  "raw_print_anomaly_count": 13,
+  "rights_boundary": "minimum code/label/hierarchy/provenance only",
+  "schema": "task172-gate-t-build-receipt-v2",
+  "source_inputs": {
+    "cyta_codes_sha256": "8928358267d6c8aa80bd5d0b9192f482334c530ef8159553ad68f2da6d49d92f",
+    "cyta_html_sha256": "c2521905fafff3befe41ca5c4240b90002bdfb8bc68cecbe67a1860d76e49976",
+    "dynamic_rows_sha256": "d2e1d4eb86ef20a229e8b2b394f4824b84812445b60678eb07d72aca3c68bd72",
+    "local_4digit_sha256": "73fd50b62afd1cb5f04ad0977cfbe0d43480a078a9790f5aec4016472f7849a4",
+    "primary_ocr_sha256": "0a836597b0ef9f63cd2d7320623d5f87f224bbbc5428896a478141acccf25f0c",
+    "primary_pdf_sha256": "78f37a0efdd34647e35d408fae8d958d4bf10021275b153c11b3539dceadbefa",
+    "skos_disciplines_sha256": "765b3e66e2e2a6040d204c4c5434107a573c5d1b7265114ad9a5a8929c7ae53f",
+    "skos_labels_sha256": "7ce45f8707c80ce74936a02247d8b026cb27a66f1b6c760f6382c06cf420c845"
+  }
+}
