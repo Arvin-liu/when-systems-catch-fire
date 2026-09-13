@@ -2,7 +2,7 @@
   "active_conclusion_rebounds": 0,
   "assertion_type_distribution": {
     "DESCRIPTIVE": 438,
-    "EMPIRICAL": 4645,
+    "EMPIRICAL": 4646,
     "INTERPRETIVE": 2936,
     "MATHEMATICAL": 2395,
     "METAPHYSICAL": 822,
@@ -10,12 +10,12 @@
     "UNRESOLVED": 6559
   },
   "blocked_conclusion_rebounds": 1,
-  "candidate_fragments": 31026,
-  "canonical_claims": 17973,
+  "candidate_fragments": 31027,
+  "canonical_claims": 17974,
   "claim_class_distribution": {
     "CROSS_DOMAIN_CORRESPONDENCE": 2481,
     "DESCRIPTIVE_REPOSITORY_CLAIM": 438,
-    "EMPIRICAL_OR_LITERATURE_CLAIM": 2222,
+    "EMPIRICAL_OR_LITERATURE_CLAIM": 2223,
     "IMPOSSIBILITY_OR_UNIVERSAL_CLAIM": 750,
     "INTERPRETATION_OR_FRAMEWORK_CLAIM": 455,
     "LAW_OR_PRINCIPLE_CLAIM": 196,
@@ -32,7 +32,7 @@
   "disposition_distribution": {
     "ACCEPTED_AS_DEFINITION": 3777,
     "ACCEPTED_AS_PROVED_MATHEMATICAL_RESULT": 1,
-    "HISTORICAL_ONLY": 7447,
+    "HISTORICAL_ONLY": 7448,
     "PENDING_EMPIRICAL_TEST": 889,
     "PENDING_LITERATURE_ADJUDICATION": 1028,
     "PENDING_PROOF": 658,
@@ -50,10 +50,10 @@
   "explicitly_unresolved_dependency_edges": 50,
   "external_evidence_distribution": {
     "E0": 10520,
-    "E1": 7453
+    "E1": 7454
   },
   "mathematical_maturity_distribution": {
-    "M0": 15330,
+    "M0": 15331,
     "M1": 2638,
     "M3": 1,
     "M4": 3,
@@ -68,13 +68,13 @@
     "EXCLUDED_GENERATED_PROJECTION_EXCLUDED": 269,
     "EXCLUDED_KNOWLEDGE_SOURCE_EXPLICIT_ONLY": 7,
     "EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE": 16,
-    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 1118,
+    "EXCLUDED_NON_AUTHORITATIVE_RECORD": 1119,
     "EXCLUDED_NON_TEXT_SUFFIX": 4,
     "EXCLUDED_PLATFORM_CODE_EXCLUDED": 1058,
     "EXPLICIT_CANONICAL_IMPORT": 1,
     "SCANNED_NO_CANDIDATE": 727,
-    "SCANNED_REGISTERED": 2462
+    "SCANNED_REGISTERED": 2463
   },
   "task_id": "IGNITION-CORPUS-WIDE-NONFUNCTION-CLAIM-ADJUDICATION-AND-EVIDENCE-LINEAGE-CLOSURE-R1-20260729",
-  "tracked_files_accounted": 5795
+  "tracked_files_accounted": 5797
 }

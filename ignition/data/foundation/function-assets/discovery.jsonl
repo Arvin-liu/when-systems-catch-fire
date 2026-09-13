@@ -2967,6 +2967,7 @@
 {"first_line":6,"last_line":6,"mention_count":1,"path":"data/operations/iterations/148/progress.jsonl","role":"REFERENCE","stable_id":"D127"}
 {"first_line":20,"last_line":20,"mention_count":1,"path":"data/operations/iterations/148/step06-current-canonical-resolution.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":171,"last_line":277,"mention_count":6,"path":"data/operations/iterations/172/step01-disposition-ledger.json","role":"REFERENCE","stable_id":"D127"}
+{"first_line":10,"last_line":145,"mention_count":4,"path":"data/operations/iterations/172/step02-route-review.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":288,"last_line":288,"mention_count":1,"path":"data/operations/residual-ledger-r1.json","role":"REFERENCE","stable_id":"D127"}
 {"first_line":61,"last_line":61,"mention_count":1,"path":"data/research/cross-thread-creative-discontinuity-2026-09-08/dormant-question-pool.jsonl","role":"REFERENCE","stable_id":"D127"}
 {"first_line":17,"last_line":62,"mention_count":2,"path":"docs/editorial/MANIFEST.md","role":"REFERENCE","stable_id":"D127"}
@@ -23581,6 +23582,7 @@
 {"first_line":89,"last_line":89,"line":89,"mention_count":1,"path":"data/operations/iterations/112/publication/tools/build_ledger.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A315AE3FD42826A9","text":"def ceiling(row: dict[str, object], cls: str, validity: str) -> str:"}
 {"first_line":67,"last_line":67,"line":67,"mention_count":1,"path":"统一案例总表/0626-C-631-退出权空间案例11.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A31CA3BF31DA143C","text":"- 数学表达 / Expression: `C_{C-631}(s_{C-631}) = (Σ_i 1[F_i(s)=1]) / |I|`"}
 {"first_line":75,"last_line":75,"line":75,"mention_count":1,"path":"data/external-research/105-intervention-control/105-evidence-validator.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A331A71FC741176B","text":"\"pass\": len(fabricated) == 0"}
+{"first_line":27,"last_line":27,"line":27,"mention_count":1,"path":"reports/operations/ignition-172-step02-route-review.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A346E21B7D63A3F2","text":"## Exact-head integration gate"}
 {"first_line":29,"last_line":29,"line":29,"mention_count":1,"path":"统一案例总表/0730-C-0735-安然公司.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A34D2499E97901BD","text":"## 纯数学函数与推导 / Pure Mathematical Function and Derivation"}
 {"first_line":6,"last_line":6,"line":6,"mention_count":1,"path":"统一函数总表/0454-D418-强干预-去容斥等价函数.md","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A359A3CFB3ADC293","text":"title: \"强干预-去容斥等价函数\""}
 {"first_line":368,"last_line":368,"line":368,"mention_count":1,"path":"agent_federation/contracts.py","role":"IMPLICIT_CANDIDATE","stable_id":"IMPLICIT-A35C8F453D650212","text":"def from_dict(cls, data: Mapping[str, Any]) -> \"FederatedTaskEnvelope\":"}
