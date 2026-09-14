@@ -444,6 +444,11 @@
   - 可搜索名称：IGNITION-172 Step05 — Gate C scholarly admission policy / ignition-172-20260913-step05-gate-c-scholarly
   - 来源：`reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md`
   - 依赖：—；被引用：—
+- [IGNITION-172 Step06 — full nonfunction claim routing overlay](../../ASSET-CARDS.md#asset-hr-bc0fd3372f5d0546)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-172 Step06 — full nonfunction claim routing overlay / ignition-172-20260914-step06-nonfunction-routing
+  - 来源：`reports/operations/ignition-172-20260914-step06-nonfunction-routing.md`
+  - 依赖：—；被引用：—
 - [IGNITION-172 Step08 — UNESCO/provider metadata pilot](../../ASSET-CARDS.md#asset-hr-a9335c325605b8e4)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-172 Step08 — UNESCO/provider metadata pilot / ignition-172-20260914-step08-scholarly-pilot
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-70d5a3d429fefd71 / Object D223 defines a formal_proposition within the point-fire framework. Core: 中文：D221：热寂=完全统一=Ω→1=无物理；D222：dΦ/dt≤0，Φ单调
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D221, D222, D223；被引用：—
-- [Object D228 defines a mechanism_model within the point-fire framework. Core: 中文：A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f3616bb318ced719 / Object D228 defines a mechanism_model within the point-fire framework. Core: 中文：A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D228, T33；被引用：—

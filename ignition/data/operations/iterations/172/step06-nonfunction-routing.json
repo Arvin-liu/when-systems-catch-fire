@@ -1,0 +1,81 @@
+{
+  "asset_kind": "NONFUNCTION_CLAIM",
+  "authority": {
+    "path": "data/foundation/nonfunction-claims/claim-registry.jsonl",
+    "rows": 17976,
+    "sha256": "5838ee4a0907e18937fe301cb375f64482b12c6165eae54d22fda8b49137b763"
+  },
+  "canonical_mutation": false,
+  "command_sources": [
+    {
+      "path": "agent-commands/IGNITION-20260912-172.md",
+      "ref": "b7c27fab",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-175.md",
+      "ref": "ebc75f9c",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-176.md",
+      "ref": "b1fc45fb",
+      "repository": "Arvin-liu/1111"
+    }
+  ],
+  "decision": "STEP06_FULL_NONFUNCTION_CLAIM_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQUIRED; NO_CANONICAL_MUTATION",
+  "field_counts": {
+    "12": 3745,
+    "22": 662,
+    "23": 6,
+    "24": 131,
+    "32": 82,
+    "33": 504,
+    "52": 10,
+    "53": 202,
+    "54": 25,
+    "55": 660,
+    "56": 462,
+    "57": 251,
+    "58": 126,
+    "59": 849,
+    "61": 682,
+    "62": 2463,
+    "63": 302,
+    "71": 21,
+    "72": 699
+  },
+  "hard_check_intent": {
+    "canonical_semantics_changed": 0,
+    "cap_violation": 0,
+    "duplicate": 0,
+    "missing": 0,
+    "negative_positive_route": 0,
+    "orphan": 0,
+    "source_fingerprint_mismatch": 0
+  },
+  "manual_review_required": 17976,
+  "negative_boundary_rows": 9867,
+  "network": false,
+  "overlay": {
+    "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
+    "rows": 17976,
+    "sha256": "fdd904120e076caa0652f531a0b6a528032c5da3338c370936d915bd16231b8a"
+  },
+  "report_sha256": "e3dc437d73a67a12407423e85877e4f36d6f9a2c562438dd0b162e6f46e4e6c9",
+  "schema": "task172-full-routing-operation-v1",
+  "source_exact_head": "c0ca5b97bb00493b72c74443607f1d8ec9f5266c",
+  "source_freeze_sha256": "c7c5124552a75fd8f2eb9f03d8eb3f4497825300b342388f51fbc6a2c1cdf2b9",
+  "state_counts": {
+    "CLASSIFIED": 7670,
+    "MULTIDISCIPLINARY": 2106,
+    "OUT_OF_UNESCO_SCOPE": 1879,
+    "UNRESOLVED": 6321
+  },
+  "step": "Task172 Step06",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

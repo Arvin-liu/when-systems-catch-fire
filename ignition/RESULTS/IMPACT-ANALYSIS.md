@@ -669,6 +669,7 @@
 |`reports/operations/ignition-172-20260913-step04-gate-r-routing.md`|0|0|是|
 |`reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md`|0|0|是|
 |`reports/operations/ignition-172-20260914-step05-function-routing.md`|0|0|是|
+|`reports/operations/ignition-172-20260914-step06-nonfunction-routing.md`|0|0|是|
 |`reports/operations/ignition-172-20260914-step08-scholarly-pilot.md`|0|0|是|
 |`reports/operations/ignition-172-step00-baseline-audit.md`|0|0|是|
 |`reports/operations/ignition-172-step01-collision-audit.md`|7|0|否|

@@ -226,9 +226,12 @@ GENERATED_EXACT_PATHS = {
     # pre-step source set; these files are provenance/tooling, not inputs.
     "data/operations/iterations/172/step05-function-routing.json",
     "reports/operations/ignition-172-20260914-step05-function-routing.md",
+    "data/operations/iterations/172/step06-nonfunction-routing.json",
+    "reports/operations/ignition-172-20260914-step06-nonfunction-routing.md",
     "tools/research/build_task172_full_routing.py",
     "tools/research/validate_task172_full_routing.py",
     "tests/test_task172_step05_routing.py",
+    "tests/test_task172_step06_routing.py",
     # Task158 research-only narrative and receipt records are not
     # function-asset sources; source-discovery accounting still retains them.
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",

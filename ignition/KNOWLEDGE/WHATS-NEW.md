@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-bc0fd3372f5d0546"></a>
+### 2026-09-14 · IGNITION-172 Step06 — full nonfunction claim routing overlay
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This logical step is based on the exact frozen parent c0ca5b97bb00493b72c74443607f1d8ec9f5266c on the existing Task172 branch and Draft PR 218.
+- **来源：** [ignition-172-20260914-step06-nonfunction-routing.md](../reports/operations/ignition-172-20260914-step06-nonfunction-routing.md)
+- **资产卡：** [HR-BC0FD3372F5D0546](./ASSET-CARDS.md#asset-hr-bc0fd3372f5d0546)
+
 <a id="change-src-hr-a9335c325605b8e4"></a>
 ### 2026-09-14 · IGNITION-172 Step08 — UNESCO/provider metadata pilot
 

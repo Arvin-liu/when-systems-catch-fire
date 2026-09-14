@@ -162,9 +162,12 @@ SELF_EXCLUDES = {
     # harness.  Keep provenance/tooling outside the canonical claim registry.
     "data/operations/iterations/172/step05-function-routing.json",
     "reports/operations/ignition-172-20260914-step05-function-routing.md",
+    "data/operations/iterations/172/step06-nonfunction-routing.json",
+    "reports/operations/ignition-172-20260914-step06-nonfunction-routing.md",
     "tools/research/build_task172_full_routing.py",
     "tools/research/validate_task172_full_routing.py",
     "tests/test_task172_step05_routing.py",
+    "tests/test_task172_step06_routing.py",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",

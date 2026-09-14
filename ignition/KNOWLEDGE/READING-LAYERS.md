@@ -878,6 +878,8 @@
 - [IGNITION-20260817-124 — OS Control Plane R2 progress](./reading-layers/part-009.md#reading-hr-bb7bae0c9846bcb2) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bbf31ff3f05d22fe"></a>
 - [两张表全量碰撞报告（two-tables-full-collision-report）](./reading-layers/part-009.md#reading-hr-bbf31ff3f05d22fe) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+<a id="reading-hr-bc0fd3372f5d0546"></a>
+- [IGNITION-172 Step06 — full nonfunction claim routing overlay](./reading-layers/part-009.md#reading-hr-bc0fd3372f5d0546) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bc1eabaeeba58eb1"></a>
 - [IGNITION-20260827-142 Step 13 — Live Attempt A](./reading-layers/part-009.md#reading-hr-bc1eabaeeba58eb1) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bcc48ae7649ea4fe"></a>
@@ -901,7 +903,7 @@
 <a id="reading-hr-bfebf52fdf8637e3"></a>
 - [IGNITION-20260825-139 Step 12 — Independent binding and Current projection](./reading-layers/part-009.md#reading-hr-bfebf52fdf8637e3) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-c023e21ce9a8a6d4"></a>
-- [Probabilistic System Dynamics / 概率—系统动力学](./reading-layers/part-009.md#reading-hr-c023e21ce9a8a6d4) — `CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- [Probabilistic System Dynamics / 概率—系统动力学](./reading-layers/part-010.md#reading-hr-c023e21ce9a8a6d4) — `CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-c0254716ff47346d"></a>
 - [得到大脑输出索引](./reading-layers/part-010.md#reading-hr-c0254716ff47346d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
 <a id="reading-hr-c0e9f4990481c808"></a>
@@ -1001,7 +1003,7 @@
 <a id="reading-hr-d77d1e13245bc9a4"></a>
 - [九轴状态系统](./reading-layers/part-010.md#reading-hr-d77d1e13245bc9a4) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d790a75d59747779"></a>
-- [IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync](./reading-layers/part-010.md#reading-hr-d790a75d59747779) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- [IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync](./reading-layers/part-011.md#reading-hr-d790a75d59747779) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d7c4ca0bba65194f"></a>
 - [IGNITION-20260816-123 架构真相同步 R1 夜班进度](./reading-layers/part-011.md#reading-hr-d7c4ca0bba65194f) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d7cc969a8b1b7ce4"></a>
@@ -1101,7 +1103,7 @@
 <a id="reading-hr-ea8833ef83822509"></a>
 - [IGNITION-20260828-144 Step 11 — cross-surface split-brain audit](./reading-layers/part-011.md#reading-hr-ea8833ef83822509) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-eabed7bd3564479d"></a>
-- [IGNITION-20260829-148 typed change-propagation impact report](./reading-layers/part-011.md#reading-hr-eabed7bd3564479d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- [IGNITION-20260829-148 typed change-propagation impact report](./reading-layers/part-012.md#reading-hr-eabed7bd3564479d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ebcda7ca000d3bac"></a>
 - [121Q2R Final Report](./reading-layers/part-012.md#reading-hr-ebcda7ca000d3bac) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ebd5091c3be06f0a"></a>

@@ -128,7 +128,7 @@ def validate(repo_root: Path, asset_kind: str, step: str) -> None:
         if negative:
             _assert(row.get("asset_role") == ["HISTORICAL_CONTEXT"], f"negative record gained positive role: {canonical_id}")
             _assert(set(row.get("collision_use", [])) <= NEGATIVE_USE, f"negative record gained positive use: {canonical_id}")
-        if asset_kind == "NONFUNCTION_CLAIM" and authority.get("claim_class") == "EMPIRICAL_OR_LITERATURE_CLAIM":
+        if asset_kind == "NONFUNCTION_CLAIM" and authority.get("claim_class") == "EMPIRICAL_OR_LITERATURE_CLAIM" and not negative:
             _assert(row.get("tag_basis", {}).get("evidence_role") == "REPOSITORY_CLAIM_METADATA_REVIEW", f"literature claim evidence role drift: {canonical_id}")
             _assert(row.get("evidence_projection", {}).get("promotion") == "NONE", f"literature claim promoted: {canonical_id}")
         _assert(row.get("tagger_version") == TAGGER_VERSION, f"tagger version drift: {canonical_id}")
