@@ -59,6 +59,10 @@ jobs:
         run: python3 tools/research/validate_task172_gate_c.py --repo-root .
       - name: Test Task172 Gate C scholarly admission policy
         run: python3 -m unittest tests.test_task172_gate_c -v
+      - name: Validate Task172 Step05 full function routing overlay
+        run: python3 tools/research/validate_task172_full_routing.py --repo-root . --asset-kind FUNCTION_ASSET --step 05
+      - name: Test Task172 Step05 full function routing overlay
+        run: python3 -m unittest tests.test_task172_step05_routing -v
       - name: Validate Task172 Step08 UNESCO/provider metadata pilot
         run: python3 tools/research/validate_task172_step08.py --repo-root .
       - name: Test Task172 Step08 UNESCO/provider metadata pilot

@@ -13,6 +13,15 @@
 - **来源：** [ignition-172-20260914-step08-scholarly-pilot.md](../reports/operations/ignition-172-20260914-step08-scholarly-pilot.md)
 - **资产卡：** [HR-A9335C325605B8E4](./ASSET-CARDS.md#asset-hr-a9335c325605b8e4)
 
+<a id="change-src-hr-5bd3902ec1ba8dce"></a>
+### 2026-09-14 · IGNITION-172 Step05 — full function asset routing overlay
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This logical step is based on the exact frozen parent 63211a5fbbed6ed4ee2b393140c79d3037208b07 on the existing Task172 branch and Draft PR 218.
+- **来源：** [ignition-172-20260914-step05-function-routing.md](../reports/operations/ignition-172-20260914-step05-function-routing.md)
+- **资产卡：** [HR-5BD3902EC1BA8DCE](./ASSET-CARDS.md#asset-hr-5bd3902ec1ba8dce)
+
 <a id="change-src-hr-f8412af8d8458685"></a>
 ### 2026-09-13 · IGNITION-172 Step04 — Gate R routing schema and precision pilot
 

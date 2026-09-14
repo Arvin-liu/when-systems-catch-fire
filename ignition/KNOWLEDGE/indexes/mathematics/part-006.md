@@ -434,6 +434,11 @@
   - 可搜索名称：IGNITION-142 Step 17 — architecture impact / ignition-142-step17-architecture-impact
   - 来源：`reports/operations/ignition-142-step17-architecture-impact.md`
   - 依赖：—；被引用：—
+- [IGNITION-172 Step05 — full function asset routing overlay](../../ASSET-CARDS.md#asset-hr-5bd3902ec1ba8dce)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-172 Step05 — full function asset routing overlay / ignition-172-20260914-step05-function-routing
+  - 来源：`reports/operations/ignition-172-20260914-step05-function-routing.md`
+  - 依赖：—；被引用：—
 - [IGNITION-172 Step05 — Gate C scholarly admission policy](../../ASSET-CARDS.md#asset-hr-9a9f6a65046403f2)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-172 Step05 — Gate C scholarly admission policy / ignition-172-20260913-step05-gate-c-scholarly
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-f3616bb318ced719 / Object D228 defines a mechanism_model within the point-fire framework. Core: 中文：A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D228, T33；被引用：—
-- [Object D236 defines a formal_proposition within the point-fire framework. Core: 中文：N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ\(μ\)](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-61902d9e697a1c72 / Object D236 defines a formal_proposition within the point-fire framework. Core: 中文：N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ\(μ\)
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D236；被引用：—

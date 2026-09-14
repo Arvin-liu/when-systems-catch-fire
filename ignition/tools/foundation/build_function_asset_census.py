@@ -87,6 +87,9 @@ GENERATED_PREFIXES = (
     # candidates, receipts, crosswalk and dedupe ledger are provenance for
     # the bounded pilot, not function-asset discovery inputs.
     "data/external-research/unesco-general-knowledge-r1/",
+    # Task172 Steps05/06 are generated routing projections. Their canonical-ID
+    # keyed rows must never become new function discovery input.
+    "data/research/task172-routing-r1/",
     # Task141 live-state semantics and structured-result receipts are
     # provenance-only operation records. They must not become function-asset
     # discovery input or make the census depend on receipt wording/order.
@@ -218,6 +221,14 @@ GENERATED_EXACT_PATHS = {
     # Task172 Gate C is a generated policy projection, not a function source.
     "data/operations/iterations/172/step05-scholarly-gate.json",
     "reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md",
+    # Task172 Step05 is a generated routing projection and its implementation
+    # harness.  Keep the scan-sensitive authority closed over the frozen
+    # pre-step source set; these files are provenance/tooling, not inputs.
+    "data/operations/iterations/172/step05-function-routing.json",
+    "reports/operations/ignition-172-20260914-step05-function-routing.md",
+    "tools/research/build_task172_full_routing.py",
+    "tools/research/validate_task172_full_routing.py",
+    "tests/test_task172_step05_routing.py",
     # Task158 research-only narrative and receipt records are not
     # function-asset sources; source-discovery accounting still retains them.
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",

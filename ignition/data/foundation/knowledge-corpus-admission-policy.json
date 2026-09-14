@@ -54,6 +54,7 @@
         "data/foundation/migrations/",
         "data/research/task172-gate-r-routing/",
         "data/research/task172-gate-c-scholarly-admission/",
+        "data/research/task172-routing-r1/",
         "data/governance/",
         "data/publication/fire-seeds/",
         "data/operations/durability/",

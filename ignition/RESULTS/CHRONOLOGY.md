@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 582 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 583 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -4507,6 +4507,19 @@
 - **问题：** 此来源记录了什么：IGNITION-172 Step08 — UNESCO/provider metadata pilot？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** This logical step follows Gate T, Gate R and the Gate C policy/provider lock. The frozen parent is 36a1ed4c0e5b91598b5a4fada4bec1539ccc106b on the existing Task172 branch and Draft PR 218.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-172 Step05 — full function asset routing overlay](../reports/operations/ignition-172-20260914-step05-function-routing.md)
+
+- **结果 ID：** `HR-5BD3902EC1BA8DCE`
+- **日期：** 2026-09-14
+- **来源任务/运行：** `172-20260914-STEP05-FUNCTION-ROUTING`
+- **问题：** 此来源记录了什么：IGNITION-172 Step05 — full function asset routing overlay？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This logical step is based on the exact frozen parent 63211a5fbbed6ed4ee2b393140c79d3037208b07 on the existing Task172 branch and Draft PR 218.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

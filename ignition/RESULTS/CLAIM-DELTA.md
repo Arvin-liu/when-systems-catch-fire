@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 687 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 688 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -5310,6 +5310,14 @@
 
 - 状态：`ADDED`
 - Delta：`CD-9A9F6A65046403F2`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260914-step05-function-routing.md`
+
+- 状态：`ADDED`
+- Delta：`CD-5BD3902EC1BA8DCE`
 - 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.

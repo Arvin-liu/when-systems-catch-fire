@@ -158,6 +158,13 @@ SELF_EXCLUDES = {
     # repository path accounting.
     "data/operations/iterations/172/step05-scholarly-gate.json",
     "reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md",
+    # Task172 Step05 is a generated routing projection and its implementation
+    # harness.  Keep provenance/tooling outside the canonical claim registry.
+    "data/operations/iterations/172/step05-function-routing.json",
+    "reports/operations/ignition-172-20260914-step05-function-routing.md",
+    "tools/research/build_task172_full_routing.py",
+    "tools/research/validate_task172_full_routing.py",
+    "tests/test_task172_step05_routing.py",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
@@ -191,6 +198,9 @@ MACHINE_EXCLUDE_PREFIXES = (
     # the bounded pilot, not canonical claim/evidence sources. Keep the
     # directory accounted for without admitting provider metadata as claims.
     "data/external-research/unesco-general-knowledge-r1/",
+    # Task172 Steps05/06 are generated routing projections, not canonical
+    # claim sources. Keep their rows outside claim admission.
+    "data/research/task172-routing-r1/",
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",
     "docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md",
     "docs/governance/representation-residual-casebook-2026-09-06.md",
