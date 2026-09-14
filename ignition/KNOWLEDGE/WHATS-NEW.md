@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-a9335c325605b8e4"></a>
+### 2026-09-14 · IGNITION-172 Step08 — UNESCO/provider metadata pilot
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This logical step follows Gate T, Gate R and the Gate C policy/provider lock. The frozen parent is 36a1ed4c0e5b91598b5a4fada4bec1539ccc106b on the existing Task172 branch and Draft PR 218.
+- **来源：** [ignition-172-20260914-step08-scholarly-pilot.md](../reports/operations/ignition-172-20260914-step08-scholarly-pilot.md)
+- **资产卡：** [HR-A9335C325605B8E4](./ASSET-CARDS.md#asset-hr-a9335c325605b8e4)
+
 <a id="change-src-hr-f8412af8d8458685"></a>
 ### 2026-09-13 · IGNITION-172 Step04 — Gate R routing schema and precision pilot
 

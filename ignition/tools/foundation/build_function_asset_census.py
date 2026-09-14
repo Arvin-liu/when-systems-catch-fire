@@ -83,6 +83,10 @@ GENERATED_PREFIXES = (
     # generated projection and must not feed its policy wording into the
     # canonical function-asset census.
     "data/research/task172-gate-c-scholarly-admission/",
+    # Task172 Step08 is a metadata-only scholarly provider pilot. Its
+    # candidates, receipts, crosswalk and dedupe ledger are provenance for
+    # the bounded pilot, not function-asset discovery inputs.
+    "data/external-research/unesco-general-knowledge-r1/",
     # Task141 live-state semantics and structured-result receipts are
     # provenance-only operation records. They must not become function-asset
     # discovery input or make the census depend on receipt wording/order.

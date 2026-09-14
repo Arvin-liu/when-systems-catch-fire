@@ -186,6 +186,11 @@ MACHINE_EXCLUDE_PREFIXES = (
     "data/research/semantic-leap-detector-v2-2026-09-07/",
     # Task172 Gate C sidecar is generated policy provenance, not a claim source.
     "data/research/task172-gate-c-scholarly-admission/",
+    # Task172 Step08 is a metadata-only scholarly provider pilot. Its
+    # candidates, receipts, crosswalk and dedupe ledger are provenance for
+    # the bounded pilot, not canonical claim/evidence sources. Keep the
+    # directory accounted for without admitting provider metadata as claims.
+    "data/external-research/unesco-general-knowledge-r1/",
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",
     "docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md",
     "docs/governance/representation-residual-casebook-2026-09-06.md",

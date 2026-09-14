@@ -1,0 +1,790 @@
+{
+  "abstract_or_fulltext_persistence": false,
+  "authority": "live provider request receipt; normalized metadata only; provider bodies discarded",
+  "candidate_count": 365,
+  "candidate_count_by_provider": {
+    "Crossref": 120,
+    "OpenAIRE": 120,
+    "OpenAlex": 120,
+    "PubMed E-utilities": 5
+  },
+  "correction_retraction_policy": "flagged records remain linked metadata candidates and require manual review",
+  "license_policy": "OA status is not a license; unknown rights remain metadata-only",
+  "provider_failure_is_not_no_literature": true,
+  "provider_requests": [
+    {
+      "completed_at": "2026-09-14T01:40:25Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:40:24Z",
+      "response_bytes": 11433,
+      "response_sha256": "8dd10fc76ed3a0a8664d2988c54c442fa52f470f246f90585662ddf5b5facc06",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Applications+of+logic&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:29Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:40:27Z",
+      "response_bytes": 89316,
+      "response_sha256": "8a760af935bd43757dc5ddd6550ee0349e1cb3b9ba5666eff427ff45619bbc26",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Applications+of+logic&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:31Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:40:30Z",
+      "response_bytes": 11010,
+      "response_sha256": "a0f699068b891cb5c7d40720d94eda614748a03b4e526bd9208844e6a3c7fc86",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Algebra&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:35Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:40:33Z",
+      "response_bytes": 147289,
+      "response_sha256": "2602e6bd59eddd79f53ee4b1a0434eaf99e952bbe801117592a649aaa0c88e23",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Algebra&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:37Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:40:36Z",
+      "response_bytes": 14559,
+      "response_sha256": "e62e3bbc18ef45091351e80d699fff76a69b30ba90a5d72f7351e7f1a79f4848",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Cosmology+and+cosmogony&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:41Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:40:39Z",
+      "response_bytes": 53827,
+      "response_sha256": "27e872b4235bf266dc221b684d5acad656a736510413dc121f4f39cf1b8895eb",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Cosmology+and+cosmogony&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:43Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:40:42Z",
+      "response_bytes": 19883,
+      "response_sha256": "6f414248e40726496a7f137b1695a82b23295f6ae6d6c0d5af43388110afac31",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Acoustics&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:47Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:40:44Z",
+      "response_bytes": 119201,
+      "response_sha256": "121e760ebf6166f51fe8369e87015c6254bf0622b58b1088b5224a8ecd9c9c93",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Acoustics&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:49Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:40:48Z",
+      "response_bytes": 15686,
+      "response_sha256": "6d83f07871a02250ead71d4f7fd53703b43bda4593ac0673adcbb6eda1d3df47",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Analytical+Chemistry&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:53Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:40:51Z",
+      "response_bytes": 116154,
+      "response_sha256": "25f9732a86d71891801226e9a8affe8e9234e330e4f11bcf767f9cc8eb9f4e27",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Analytical+Chemistry&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:56Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:40:54Z",
+      "response_bytes": 17956,
+      "response_sha256": "32b0b3a9357687906180375da6ed035d7c05b32af6c348b884b12b3d123004e8",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Animal+biology+%28Zoology%29&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:40:59Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:40:57Z",
+      "response_bytes": 32325,
+      "response_sha256": "39353772bfb5f95cd19263f7f9a3f2375d5908c38564c68038e8782b8306607d",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Animal+biology+%28Zoology%29&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:01Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:41:00Z",
+      "response_bytes": 11126,
+      "response_sha256": "c0ecb235ffc9f592bf41595d95b4c5bafef2a54df4521fee593eededca4884c6",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Atmospheric+sciences&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:05Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:41:03Z",
+      "response_bytes": 199846,
+      "response_sha256": "ea053c043e5e286af2414b8c1a5202da7af5dd93ff03bfa5aa585ed13c16d51d",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Atmospheric+sciences&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:07Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:41:06Z",
+      "response_bytes": 17025,
+      "response_sha256": "6be20a4aeef58e85be9167c141c0b646a7d7c2eabb22aa1c059ea4d59dde3022",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Agricultural+chemistry&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:11Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:41:09Z",
+      "response_bytes": 47070,
+      "response_sha256": "39250f8fc38718ac50d224de6aac5a91dd25f230efc4157517e6684159e1d6be",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Agricultural+chemistry&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:13Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:41:12Z",
+      "response_bytes": 12540,
+      "response_sha256": "83d78e81532abcfa5532ec4f0e4a0390bef8ea15caf1131367303b770da6fe0f",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Clinical+Sciences&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:17Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:41:15Z",
+      "response_bytes": 51041,
+      "response_sha256": "0504f4514a522c49beaa87a80b284698c32e7442522324b9a9ca513cc49cd07c",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Clinical+Sciences&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:18Z",
+      "http_status": 200,
+      "provider": "PubMed E-utilities",
+      "requested_at": "2026-09-14T01:41:18Z",
+      "response_bytes": 1242,
+      "response_sha256": "819de649d2ee49697a4b2fb4b1d9a7072e9dd18c6770ba26ac18b368191d2aa1",
+      "status": "HTTP_SUCCESS",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Clinical+Sciences&retmode=json&retmax=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:19Z",
+      "http_status": 200,
+      "provider": "PubMed E-utilities",
+      "requested_at": "2026-09-14T01:41:18Z",
+      "response_bytes": 8906,
+      "response_sha256": "c0ad21a1379134ec5f8edeea0d673034b0dfe7cc8d58fbeea12f24ca06d2ab1f",
+      "status": "HTTP_SUCCESS",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=42732645%2C42732644%2C42732634%2C42732621%2C42732619&retmode=json"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:21Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:41:20Z",
+      "response_bytes": 12038,
+      "response_sha256": "ef71a39676d88bf2ddd42d83110e2fc4451ac20b1e974c040a8d62bb44bb1833",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Aeronautical+technology+and+engineering&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:25Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:41:23Z",
+      "response_bytes": 63310,
+      "response_sha256": "0e33dfd39ca12401d6a285bad1ef3df5cc3e0a67bc0a16389b38cff841964813",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Aeronautical+technology+and+engineering&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:27Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:41:26Z",
+      "response_bytes": 10940,
+      "response_sha256": "04320c8879651933f2bc33523a9e6c67fd264ce9c2bcd0663b1efa6803f2d46c",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Cultural+anthropology&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:31Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:41:29Z",
+      "response_bytes": 59736,
+      "response_sha256": "81451eba38170fe1bc1867107e99213955eefe66626b80901a75e920a4c11752",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Cultural+anthropology&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:33Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:41:32Z",
+      "response_bytes": 51047,
+      "response_sha256": "3e9e2c481e161011b560d4b807ea10d634912bb9024fa6f7326684f8862487c7",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Fertility&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:38Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:41:35Z",
+      "response_bytes": 78762,
+      "response_sha256": "9743374f2aac5e8bdb18f44a1947aa7167d344f82e2f301ca44085e2bc72e250",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Fertility&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:40Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:41:39Z",
+      "response_bytes": 30343,
+      "response_sha256": "0e48d6cb6fffc98401dd63945fae67375b656fbe5dde2465f7ce7f83fd47db86",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Domestic+fiscal+policy+and+public+finance&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:44Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:41:42Z",
+      "response_bytes": 150504,
+      "response_sha256": "82a3eb2910e29c9c42613683d501aa35cd6deb3c46ed9250e37a0ec775330436",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Domestic+fiscal+policy+and+public+finance&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:46Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:41:45Z",
+      "response_bytes": 11047,
+      "response_sha256": "71f97a3fbf06b1cc813d71c62ede74f905f4a249fe950539446ddc92e43e6fb8",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Economic+Geography&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:51Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:41:48Z",
+      "response_bytes": 217877,
+      "response_sha256": "0311cc3d94e525ae99ac51290faef20037bf372c39fb24dcc60eb4f8244ff10f",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Economic+Geography&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:52Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:41:52Z",
+      "response_bytes": 11516,
+      "response_sha256": "05a403dc69e7b1c5ff37f463d1f1715dc1f80ad90c2e8f7b907f752c289fd7a3",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Biographies&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:56Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:41:54Z",
+      "response_bytes": 146198,
+      "response_sha256": "d63510ae5cb944e068f99a8190d39a6849e00151b2b878abb8c9c73c682037c3",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Biographies&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:41:58Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:41:57Z",
+      "response_bytes": 8453,
+      "response_sha256": "13753cb17d0083d5d3faf84acf7e82e0fe5de2e4fea0b73c809c32ee522b7841",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Canon+law&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:02Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:42:00Z",
+      "response_bytes": 53363,
+      "response_sha256": "83f15457e7f1f589895d128f41721ee33a0e32e192e981c7a25647a7c0bd2b67",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Canon+law&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:05Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:42:03Z",
+      "response_bytes": 8971,
+      "response_sha256": "2952ed90702c3cbc6f18ff12d9ce6fac8e6cc904569090e1a41136f65afe1db2",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Applied+linguistics&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:09Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:42:06Z",
+      "response_bytes": 62646,
+      "response_sha256": "9fa404fe970588e280f17b1a33b527c61e4c647da071dba108eeaeba1a955a1a",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Applied+linguistics&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:11Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:42:10Z",
+      "response_bytes": 11589,
+      "response_sha256": "414fca4dbe7c7b2aa714240bc56bf282eb6e8ce1c4f49838c3e23d8c87ffdbe6",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Educational+theory+and+methods&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:15Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:42:12Z",
+      "response_bytes": 63470,
+      "response_sha256": "6f535776bf4825a104a6f69cc8190b7e080a0fa4a4b2310a467bb8cf76e7907e",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Educational+theory+and+methods&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:17Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:42:16Z",
+      "response_bytes": 9934,
+      "response_sha256": "019c348343d0526c25cbd5d5c75ca7f6cb45936033bfe423edc64ad54d5c2d26",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=International+relations&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:21Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:42:19Z",
+      "response_bytes": 67961,
+      "response_sha256": "ecd7e730eee32426840f42a526c33bdafadb702af7f34c9cce5d829052e902b6",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=International+relations&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:23Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:42:22Z",
+      "response_bytes": 9850,
+      "response_sha256": "9380175c3c18bfc8f52d01e52b4911187216f8609e3e8cc2a83de1dbff8e4a8f",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Abnormal+psychology&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:27Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:42:24Z",
+      "response_bytes": 69089,
+      "response_sha256": "c863f44d16d363e3bc594d133172e61afb8a2070237bb291f520ee862da726c3",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Abnormal+psychology&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:29Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:42:28Z",
+      "response_bytes": 25990,
+      "response_sha256": "a7b922e8b9b3efce0d755d97e87a3f1dd1e6088b8e111b34fa5525bcf5543f71",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Architecture&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:32Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:42:30Z",
+      "response_bytes": 45856,
+      "response_sha256": "37cd9a0e82b6d4dd9faac0f2fad6f902ca793f4f974c8150630cf2e8845ed17f",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Architecture&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:34Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:42:33Z",
+      "response_bytes": 9519,
+      "response_sha256": "ce712d948cdfeea8d8358418c2df6aa4089ec9caae179d84c84deeee5d80ce75",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Cultural+sociology&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:38Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:42:36Z",
+      "response_bytes": 59101,
+      "response_sha256": "0101b2997e13e7d66c9948fe372fb47cb267aa42c57163f5cd3f5f47a825958b",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Cultural+sociology&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:40Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:42:39Z",
+      "response_bytes": 9452,
+      "response_sha256": "cab06798a6298adfe453180608318bd78a921cc1b47a285cbbe2940adb49e4b3",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Classical+ethics&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:44Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:42:42Z",
+      "response_bytes": 184305,
+      "response_sha256": "288246b9cba495c8af34a3f362bd8b0a4cbd1398404409595e78488854394728",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Classical+ethics&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:47Z",
+      "http_status": 200,
+      "provider": "OpenAlex",
+      "requested_at": "2026-09-14T01:42:45Z",
+      "response_bytes": 10012,
+      "response_sha256": "e7963a9c8a7a6f002939d67d36debf37268b295bc36403a47bd317089f1d9c71",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openalex.org/works?search=Philosophy+of+knowledge&per-page=5&select=id,doi,title,publication_year,publication_date,type,authorships,primary_location,open_access,is_retracted,cited_by_count,ids"
+    },
+    {
+      "completed_at": "2026-09-14T01:42:51Z",
+      "http_status": 200,
+      "provider": "OpenAIRE",
+      "requested_at": "2026-09-14T01:42:48Z",
+      "response_bytes": 47392,
+      "response_sha256": "6afe83b24f18e1635c056aee905b3f9ee211a3c7de6eed6c53439e99695ea65d",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.openaire.eu/search/publications?keywords=Philosophy+of+knowledge&size=5"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:31Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:30Z",
+      "response_bytes": 2298,
+      "response_sha256": "4f3973044d180d4b072a667028c08ded4de64fdfbd687ce0624322a92bb6542d",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Applications+of+logic&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:34Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:32Z",
+      "response_bytes": 5504,
+      "response_sha256": "321d783001401727dda37f9990aae8648ed5e561744f400bbca7e7eb539393a7",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Algebra&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:36Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:35Z",
+      "response_bytes": 1488,
+      "response_sha256": "963a42fa46be76a07d0d149c8d9ba67b6d51970a96ba46c8f19222573b2ec23c",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Cosmology+and+cosmogony&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:38Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:37Z",
+      "response_bytes": 2982,
+      "response_sha256": "012291c7e5d56175dc2c4ffff3773dda01ff4975b5800e5faee22569c2948158",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Acoustics&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:41Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:39Z",
+      "response_bytes": 1686,
+      "response_sha256": "2c0387f56f58bdce5e14f025e9dfcc3b24e78dbdc117dcbffb9dc6adae73e18c",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Analytical+Chemistry&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:43Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:41Z",
+      "response_bytes": 1490,
+      "response_sha256": "b1d7279d44c6d43c307532200abc6198ecabc3db0fee4a9a1799f6f4d04d0699",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Animal+biology+%28Zoology%29&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:46Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:44Z",
+      "response_bytes": 1174,
+      "response_sha256": "28790b2aac9f76e8f4325ff6b212c804f2fc5450b9ae5119b4c11210b67eef7e",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Atmospheric+sciences&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:49Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:46Z",
+      "response_bytes": 5401,
+      "response_sha256": "3100cca197b8d2a4d38ed7c826e0eba529160db217aa544d4efcfe2696c8712d",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Agricultural+chemistry&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:51Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:49Z",
+      "response_bytes": 1461,
+      "response_sha256": "14f0e9a7518acd7a3c4d4e01305f3f8f518167b8eeb5c2d6369c03fcfa2aa240",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Clinical+Sciences&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:53Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:51Z",
+      "response_bytes": 9167,
+      "response_sha256": "c16e59678f40e6fc1c3ef85b8717c8e3cebbed1b9013b923b3dc0803af21a3c0",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Aeronautical+technology+and+engineering&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:55Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:54Z",
+      "response_bytes": 2251,
+      "response_sha256": "5f836bbeae04c351246dc5970554588614bce9a7438cdf59cd76592387d0e697",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Cultural+anthropology&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:46:58Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:56Z",
+      "response_bytes": 2337,
+      "response_sha256": "b8207dfe218f5c4fda97cb6590301e6ff09c5e5685112163685f7579947d89ce",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Fertility&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:00Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:46:58Z",
+      "response_bytes": 2011,
+      "response_sha256": "8ef9052b2f18ef6a2adea25fee88b8a2b72d7c490f8c59bae5ba6622633a133d",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Domestic+fiscal+policy+and+public+finance&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:02Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:01Z",
+      "response_bytes": 2157,
+      "response_sha256": "f04d101e41c2586c265c2704dc5315075d12d37d887a6719be42c0182bbcef15",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Economic+Geography&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:05Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:03Z",
+      "response_bytes": 1817,
+      "response_sha256": "46f8307393189d594693b94754cdb7d36d43853b1216c815500492d2d24739dd",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Biographies&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:07Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:05Z",
+      "response_bytes": 1527,
+      "response_sha256": "b5ba633ea61c3802317048a8f70534277d6238df0ee76f6749be8a1bb9efce92",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Canon+law&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:10Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:08Z",
+      "response_bytes": 2108,
+      "response_sha256": "3c6c4a3c84ef21c12ef8c4ff1f2ba5cd0ee3c8d94c04a3afa699dde090bb64e4",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Applied+linguistics&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:12Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:10Z",
+      "response_bytes": 2925,
+      "response_sha256": "8ed9aa8577dfa5c7a778f5df5d83a7da88e8976eb5e7608fbec5fb43cfeb7772",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Educational+theory+and+methods&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:14Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:12Z",
+      "response_bytes": 2416,
+      "response_sha256": "ced24c98c6e9c830b21d7846e39df275c0687ff163b1d164172d64f8f57ca938",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=International+relations&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:17Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:15Z",
+      "response_bytes": 2000,
+      "response_sha256": "f6112a6aab4d5a2b7ee81f9f4cb8b2df353e110c43975756a0b7a3c176787480",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Abnormal+psychology&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:18Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:17Z",
+      "response_bytes": 1412,
+      "response_sha256": "f0db209664e43edbfdd79a153d71ca823fbee43138a535f539560b324dff0726",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Architecture&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:20Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:19Z",
+      "response_bytes": 3973,
+      "response_sha256": "3194481f54847be5d49808ead99b36975418a98856f25f5394eab30e9c0faa6b",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Cultural+sociology&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:22Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:21Z",
+      "response_bytes": 2256,
+      "response_sha256": "fb4c9c095a1741bf3a37b03aaf76b315ff7e79441938d3ac2940f4580b440789",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Classical+ethics&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    },
+    {
+      "completed_at": "2026-09-14T01:47:25Z",
+      "http_status": 200,
+      "provider": "Crossref",
+      "requested_at": "2026-09-14T01:47:23Z",
+      "response_bytes": 1513,
+      "response_sha256": "b2ceb75564a5b43d268bbdeffcfdc60069ef43d6e0b91c7c428bcbf0cb023a2d",
+      "status": "HTTP_SUCCESS",
+      "url": "https://api.crossref.org/works?query.bibliographic=Philosophy+of+knowledge&rows=5&select=DOI,title,author,published,container-title,type,URL,license,relation"
+    }
+  ],
+  "raw_response_persistence": false,
+  "repair_note": "Crossref select field update was rejected with HTTP 400; request was replayed with documented safe fields and no update field.",
+  "request_count": 74,
+  "retrieved_at": "2026-09-14T01:42:52Z",
+  "schema": "task172-step08-provider-request-receipt-v1",
+  "source_exact_head": "36a1ed4c0e5b91598b5a4fada4bec1539ccc106b",
+  "target_count": 24,
+  "targets_with_candidates": [
+    "11",
+    "12",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "31",
+    "32",
+    "33",
+    "51",
+    "52",
+    "53",
+    "54",
+    "55",
+    "56",
+    "57",
+    "58",
+    "59",
+    "61",
+    "62",
+    "63",
+    "71",
+    "72"
+  ],
+  "user_agent": "agent-reach/1.5.0 task172-step08-readonly (+metadata-pilot)"
+}

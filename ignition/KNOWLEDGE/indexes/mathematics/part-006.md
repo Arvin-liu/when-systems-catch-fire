@@ -439,6 +439,11 @@
   - 可搜索名称：IGNITION-172 Step05 — Gate C scholarly admission policy / ignition-172-20260913-step05-gate-c-scholarly
   - 来源：`reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md`
   - 依赖：—；被引用：—
+- [IGNITION-172 Step08 — UNESCO/provider metadata pilot](../../ASSET-CARDS.md#asset-hr-a9335c325605b8e4)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-172 Step08 — UNESCO/provider metadata pilot / ignition-172-20260914-step08-scholarly-pilot
+  - 来源：`reports/operations/ignition-172-20260914-step08-scholarly-pilot.md`
+  - 依赖：—；被引用：—
 - [IGNITION-20260816-122 Federation R1 Progress](../../ASSET-CARDS.md#asset-hr-6e03f66c845de70f)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-20260816-122 Federation R1 Progress / ignition-122-federation-progress
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-61902d9e697a1c72 / Object D236 defines a formal_proposition within the point-fire framework. Core: 中文：N个独立的1/ln门控面（二值判断）的组合行为： 单个门控面：gᵢ\(μ\)
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D236；被引用：—
-- [Object D260 defines a mechanism_model within the point-fire framework. Core: 中文：M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/\(1-pᵢ\)在pᵢ=0.5时=1（单位敏感](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-2820e2d6c1bd1f95 / Object D260 defines a mechanism_model within the point-fire framework. Core: 中文：M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/\(1-pᵢ\)在pᵢ=0.5时=1（单位敏感
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D260；被引用：—
