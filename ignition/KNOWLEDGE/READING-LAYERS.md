@@ -1110,6 +1110,8 @@
 - [121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation](./reading-layers/part-012.md#reading-hr-ebd5091c3be06f0a) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ebfbf26abf72ff4c"></a>
 - [IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计](./reading-layers/part-012.md#reading-hr-ebfbf26abf72ff4c) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+<a id="reading-hr-ecb9a4b8ee1483ca"></a>
+- [IGNITION-172 Step07 — Knowledge Experience routing index](./reading-layers/part-012.md#reading-hr-ecb9a4b8ee1483ca) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ecc4e92db835c50c"></a>
 - [REOS vNext LIGHT pilot R1 — public-safe synthesis](./reading-layers/part-012.md#reading-hr-ecc4e92db835c50c) — `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ed60006ec664c67a"></a>

@@ -32,6 +32,13 @@
 - 5 分钟：主题：IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计；Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。；Task143 的 phase-closure、publication-production 和新 canonical 出版入口在 Current/Handoff/AI surfaces 中可恢复；；Task142 的 LIVEEXTERNALINVOCATION 历史 6 次 attempt、0 次 validated completion、0 次 unreconciled、2 次 observation-incomplete 没有被新出版成果改写；；obligation registry 的当前动作仍是 OWNERDEFERREDREQUIRESEXPLICITREOPENANDLOCALENVIRONMENTPREPARATION，历史 projection 的 dynamic admission 动作仍被保留；；本轮没有新增组件、typed topology relation、map version、executor live attempt、安装、配置、认证、计费或环境手术；
 - 完整阅读：[reports/operations/ignition-143-step17-current-state-sync.md](../../reports/operations/ignition-143-step17-current-state-sync.md)
 
+<a id="reading-hr-ecb9a4b8ee1483ca"></a>
+## IGNITION-172 Step07 — Knowledge Experience routing index
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This logical step is based on exact frozen parent 294a2b095a30354797686db4d10430304f3309ae on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 294a2b095a30354797686db4d10430304f3309ae on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17976 nonfunction records = 24133 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
+
 <a id="reading-hr-ecc4e92db835c50c"></a>
 ## REOS vNext LIGHT pilot R1 — public-safe synthesis
 `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`

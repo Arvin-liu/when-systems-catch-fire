@@ -1,0 +1,47 @@
+{
+  "claim_ceiling": "Bounded repository-local routing and exact authority validation only; no new claim, evidence, truth, causality, novelty or registry admission.",
+  "counts": {
+    "facet_names": [
+      "by_asset_role",
+      "by_classification_state",
+      "by_collision_use",
+      "by_topic",
+      "by_unesco_discipline",
+      "by_unesco_field"
+    ],
+    "facet_value_counts": {
+      "by_asset_role": 5,
+      "by_classification_state": 4,
+      "by_collision_use": 8,
+      "by_topic": 0,
+      "by_unesco_discipline": 0,
+      "by_unesco_field": 19
+    },
+    "function_records": 6157,
+    "nonfunction_records": 17976,
+    "records": 24133
+  },
+  "generated_outputs": {
+    "KNOWLEDGE/TAGS.md": "467feaf7cef2af00909e4ac93628fbeb39ecbcec817f5e5be3a090deee72e7a9",
+    "data/operations/iterations/172/step07-routing-index.json": "3c34265f22163408b84ac626167d862a225e3c2cb468e9c2add82021e737db26",
+    "data/research/task172-routing-r1/step07-routing-index-build-receipt.json": "65862b44dde7bf230f3e0c309edb51ebdbf83c84f0bf890985ec5f0abd7b3aef",
+    "data/research/task172-routing-r1/step07-routing-index-source-freeze.json": "cc91ad31296eff7170cbb8757c0dbfc9d629d60fc84bbdcfef15d30ed249372a",
+    "data/research/task172-routing-r1/step07-routing-index.json": "668bc29fedecb358d9a98a93f137ceb7a7d3a66ca303b7a0db3f9f9b8b382501",
+    "data/research/task172-routing-r1/step07-routing-pilot.json": "e172d2eab7d1a50c6ec29749afd4c93b70d869bc8b114d4b6733cefbb2bca949",
+    "reports/operations/ignition-172-20260915-step07-routing-index.md": "0e3a964065a2ca0d19140b7b246cf1ba9a582c072618b352488b64abc41e8af9"
+  },
+  "machine_human_pairs": [
+    {
+      "human": "KNOWLEDGE/TAGS.md",
+      "machine": "data/research/task172-routing-r1/step07-routing-index.json"
+    },
+    {
+      "human": "reports/operations/ignition-172-20260915-step07-routing-index.md",
+      "machine": "data/research/task172-routing-r1/step07-routing-pilot.json"
+    }
+  ],
+  "schema": "task172-step07-routing-index-manifest-v1",
+  "source_exact_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "source_freeze_sha256": "cc91ad31296eff7170cbb8757c0dbfc9d629d60fc84bbdcfef15d30ed249372a",
+  "step": "Task172 Step07"
+}

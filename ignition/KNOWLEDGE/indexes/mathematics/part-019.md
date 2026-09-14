@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0343-D307-σ_opt微观起源函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a4fcf776202d858e / 已迁移的历史函数来源/0343-D307-σ_opt微观起源函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D307；被引用：—
 - [已迁移的历史函数来源/0344-D308-阶段过渡滞后函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6c27545cfe8e9a48 / 已迁移的历史函数来源/0344-D308-阶段过渡滞后函数.md
@@ -2498,9 +2503,4 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：赛课机制第一批小批量回填审计 / teacher-competition-small-batch-backfill-audit-20260708
   - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [赞美、点击、传播、情绪共鸣和多模型一致只能是传播／体验数据，不能证明事实、因果、价值或方法有效。](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9378fffbd29a1a87 / 赞美、点击、传播、情绪共鸣和多模型一致只能是传播／体验数据，不能证明事实、因果、价值或方法有效。
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—

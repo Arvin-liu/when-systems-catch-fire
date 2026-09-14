@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [因果光锥统一函数](../../../data/foundation/formal-objects/objects.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-55d667e2afea5515 / 因果光锥统一函数
+  - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
 - [因果光锥统一函数，信息传播速度限制导致的因果约束在物理系统、认知系统、社会系统中展现统一结构。因果光锥不是物理特有，而是信息传播受限系统的普适约束。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2b4233bdb1a1d561 / 因果光锥统一函数，信息传播速度限制导致的因果约束在物理系统、认知系统、社会系统中展现统一结构。因果光锥不是物理特有，而是信息传播受限系统的普适约束。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-82d2ad786ef66479 / 数学表达 / Expression: `F_{D403}\(x\) := M6的δ_c对应配分函数中耦合-容斥相变的临界场强h_c。h_c∝T_c∝ḡ·√n→δ_c∝1/\(ḡ·√n\)——与D389完全一致。δ_c就是统计力学相变的临界场强。`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D389, D403；被引用：—
-- [数学表达 / Expression: `F_{D404}\(x\) := M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bcb39883447cb0ce / 数学表达 / Expression: `F_{D404}\(x\) := M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。`
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D404；被引用：—

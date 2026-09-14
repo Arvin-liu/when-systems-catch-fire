@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-ecb9a4b8ee1483ca"></a>
+### 2026-09-15 · IGNITION-172 Step07 — Knowledge Experience routing index
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This logical step is based on exact frozen parent 294a2b095a30354797686db4d10430304f3309ae on the existing Task172 branch and Draft PR 218.
+- **来源：** [ignition-172-20260915-step07-routing-index.md](../reports/operations/ignition-172-20260915-step07-routing-index.md)
+- **资产卡：** [HR-ECB9A4B8EE1483CA](./ASSET-CARDS.md#asset-hr-ecb9a4b8ee1483ca)
+
 <a id="change-src-hr-bc0fd3372f5d0546"></a>
 ### 2026-09-14 · IGNITION-172 Step06 — full nonfunction claim routing overlay
 

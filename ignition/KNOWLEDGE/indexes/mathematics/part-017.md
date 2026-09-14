@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [数学表达 / Expression: `F_{D404}\(x\) := M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-bcb39883447cb0ce / 数学表达 / Expression: `F_{D404}\(x\) := M7的n*∝β/\(p̄·Σαᵢ\)依赖干预力度β，n_c由系统内在参数决定。β够大时n*<n_c——强干预使大系统在容斥主导不可逆之前就恢复。`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D404；被引用：—
 - [数学表达 / Expression: `F_{D406}\(x\) := M9的g_eff_macro = \(1-R_irreversible\)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1c0a368505aa10a1 / 数学表达 / Expression: `F_{D406}\(x\) := M9的g_eff_macro = \(1-R_irreversible\)·g_eff。R→1时g_eff_macro→0但>0。与D311微观僵尸态完全同构——宏观僵尸态是
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-bf8cfcffece93dc9 / 生命共同体价值宪章是规范边界，不是事实、数学或授权证据。
   - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [生命共同体价值宪章：\[../life-community-value-charter.md\]\(../life-community-value-charter.md\)](../../../docs/governance/meta-protocol-reviews/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-e24171d955e30622 / 生命共同体价值宪章：\[../life-community-value-charter.md\]\(../life-community-value-charter.md\)
-  - 来源：`docs/governance/meta-protocol-reviews/README.md`
   - 依赖：—；被引用：—

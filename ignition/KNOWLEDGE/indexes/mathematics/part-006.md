@@ -449,6 +449,11 @@
   - 可搜索名称：IGNITION-172 Step06 — full nonfunction claim routing overlay / ignition-172-20260914-step06-nonfunction-routing
   - 来源：`reports/operations/ignition-172-20260914-step06-nonfunction-routing.md`
   - 依赖：—；被引用：—
+- [IGNITION-172 Step07 — Knowledge Experience routing index](../../ASSET-CARDS.md#asset-hr-ecb9a4b8ee1483ca)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-172 Step07 — Knowledge Experience routing index / ignition-172-20260915-step07-routing-index
+  - 来源：`reports/operations/ignition-172-20260915-step07-routing-index.md`
+  - 依赖：—；被引用：—
 - [IGNITION-172 Step08 — UNESCO/provider metadata pilot](../../ASSET-CARDS.md#asset-hr-a9335c325605b8e4)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-172 Step08 — UNESCO/provider metadata pilot / ignition-172-20260914-step08-scholarly-pilot
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-4561b997408794af / Object D205 defines a mechanism_model within the point-fire framework. Core: 中文：涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。. Annotation:
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D186, D205；被引用：—
-- [Object D223 defines a formal_proposition within the point-fire framework. Core: 中文：D221：热寂=完全统一=Ω→1=无物理；D222：dΦ/dt≤0，Φ单调](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-70d5a3d429fefd71 / Object D223 defines a formal_proposition within the point-fire framework. Core: 中文：D221：热寂=完全统一=Ω→1=无物理；D222：dΦ/dt≤0，Φ单调
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D221, D222, D223；被引用：—

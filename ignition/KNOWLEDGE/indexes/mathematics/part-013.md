@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从原文看，强相互作用门控函数,强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD→∞\(渐近自由\)。强相互作用是门控面Λ_… 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b7b1283ae457f12a / 从原文看，强相互作用门控函数,强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD→∞\(渐近自由\)。强相互作用是门控面Λ_… 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从原文看，情绪信号的分层结构。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-91707dd192b19171 / 从原文看，情绪信号的分层结构。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-5d54064bb744174e / 从这条案例看，中文：案例说明：智慧城市的名义vs实际——名义μ增长被Λ同步上升抵消。核心函数：\[D160\]\(docs/zh/functions/item… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D160；被引用：—
-- [从这条案例看，中文：案例说明：暗物质方向 — Φ对牛顿引力修正，sigmoid映射可能修正量级。核心函数：\[D158\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f8ac21c24d2e700a / 从这条案例看，中文：案例说明：暗物质方向 — Φ对牛顿引力修正，sigmoid映射可能修正量级。核心函数：\[D158\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158；被引用：—

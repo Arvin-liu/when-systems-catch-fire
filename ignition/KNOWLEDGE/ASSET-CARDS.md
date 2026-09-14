@@ -1268,6 +1268,8 @@
 - [121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation](./cards/part-013.md#asset-hr-ebd5091c3be06f0a) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-EBD5091C3BE06F0A`
 <a id="asset-hr-ebfbf26abf72ff4c"></a>
 - [IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计](./cards/part-013.md#asset-hr-ebfbf26abf72ff4c) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-EBFBF26ABF72FF4C`
+<a id="asset-hr-ecb9a4b8ee1483ca"></a>
+- [IGNITION-172 Step07 — Knowledge Experience routing index](./cards/part-013.md#asset-hr-ecb9a4b8ee1483ca) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-ECB9A4B8EE1483CA`
 <a id="asset-hr-ecc4e92db835c50c"></a>
 - [REOS vNext LIGHT pilot R1 — public-safe synthesis](./cards/part-013.md#asset-hr-ecc4e92db835c50c) — `RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD` · `HR-ECC4E92DB835C50C`
 <a id="asset-hr-ed60006ec664c67a"></a>
@@ -1301,7 +1303,7 @@
 <a id="asset-hr-f92361487a1aad76"></a>
 - [项目本体版本升级审计 2026-07-09](./cards/part-013.md#asset-hr-f92361487a1aad76) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F92361487A1AAD76`
 <a id="asset-hr-f974b5a400509d56"></a>
-- [IGNITION-137 Step 11 — Hermes retry decision](./cards/part-013.md#asset-hr-f974b5a400509d56) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F974B5A400509D56`
+- [IGNITION-137 Step 11 — Hermes retry decision](./cards/part-014.md#asset-hr-f974b5a400509d56) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F974B5A400509D56`
 <a id="asset-hr-f9cf8e83465264a9"></a>
 - [Governance report: IGNITION-20260907-163](./cards/part-014.md#asset-hr-f9cf8e83465264a9) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F9CF8E83465264A9`
 <a id="asset-hr-f9fe7eee273643e9"></a>

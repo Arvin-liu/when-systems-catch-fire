@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性 English: Rule-based…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-5fb50ba25b7355f3 / 中文：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性 English: Rule-based…
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：A8, A9；被引用：—
 - [中文：A-A型合并（第一步）：两个同向门控面在μ*以上趋同→项数减少→Ω↑ A-B型共振（第二步）：两个反向门控面在μ*处梯度平衡→项数不变但Φ极小→Ω↑但幅度小 共振统一的数学结构： g_A\(μ*\) × ln\(μ*/Λ_GUT\)/σ_A²](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-60df2c70644651bb / 中文：A-A型合并（第一步）：两个同向门控面在μ*以上趋同→项数减少→Ω↑ A-B型共振（第二步）：两个反向门控面在μ*处梯度平衡→项数不变但Φ极小→Ω↑但幅度小 共振统一的数学结构： g_A\(μ*\) × ln\(μ*/Λ_GUT\)/σ_A²
@@ -2497,10 +2502,5 @@
 - [从原文看，应约者退出的成本，八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step\(C_exit\(i\) -… 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ed63fa9b2adead56 / 从原文看，应约者退出的成本，八维度（经济/社会/身份/信息/时间/地理/生态/身体）连续值。n_lock = Σᵢ step\(C_exit\(i\) -… 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从原文看，强相互作用门控函数,强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD→∞\(渐近自由\)。强相互作用是门控面Λ_… 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b7b1283ae457f12a / 从原文看，强相互作用门控函数,强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD→∞\(渐近自由\)。强相互作用是门控面Λ_… 更像是一个用于把局部现象拉到跨域统一结构上的函数。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

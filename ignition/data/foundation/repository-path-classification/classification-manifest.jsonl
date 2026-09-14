@@ -35,6 +35,7 @@
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/READING-LAYERS.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/README.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/SEARCH.md"}
+{"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/TAGS.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/WHATS-NEW.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/cards/part-001.md"}
 {"category": "REFERENCE_OR_KNOWLEDGE", "matched_rule": "REFERENCE_OR_KNOWLEDGE", "path": "ignition/KNOWLEDGE/cards/part-002.md"}
@@ -2041,6 +2042,7 @@
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/172/step05-function-routing.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/172/step05-scholarly-gate.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/172/step06-nonfunction-routing.json"}
+{"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/172/step07-routing-index.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/iterations/172/step08-scholarly-pilot.json"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/lifecycle-events.jsonl"}
 {"category": "RECEIPT_HISTORY_OPERATIONS", "matched_rule": "RECEIPT_HISTORY_OPERATIONS", "path": "ignition/data/operations/merged-iteration-ledger.jsonl"}
@@ -2455,6 +2457,12 @@
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/research/task172-routing-r1/step05-function-routing-source-freeze.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/research/task172-routing-r1/step06-nonfunction-routing-build-receipt.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/research/task172-routing-r1/step06-nonfunction-routing-source-freeze.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/research/task172-routing-r1/step07-routing-index-build-receipt.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/research/task172-routing-r1/step07-routing-index-manifest.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/research/task172-routing-r1/step07-routing-index-source-freeze.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/research/task172-routing-r1/step07-routing-index.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/research/task172-routing-r1/step07-routing-pilot-queries.json"}
+{"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/research/task172-routing-r1/step07-routing-pilot.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/research/unesco-coverage-evidence-map.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/schemas/classic_problems_benchmark.schema.json"}
 {"category": "GOVERNED_MACHINE_RECORD", "matched_rule": "GOVERNED_MACHINE_RECORD", "path": "ignition/data/schemas/evidence_regimes.schema.json"}
@@ -3370,6 +3378,7 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-172-20260914-step05-function-routing.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-172-20260914-step06-nonfunction-routing.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-172-20260914-step08-scholarly-pilot.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-172-20260915-step07-routing-index.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-172-step00-baseline-audit.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-172-step01-collision-audit.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/operations/ignition-172-step02-route-review.md"}
@@ -4036,6 +4045,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task172_gate_t.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task172_step05_routing.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task172_step06_routing.py"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task172_step07_routing.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task172_step08.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task_identity_adversarial_fixtures.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/test_task_identity_model.py"}
@@ -4186,6 +4196,7 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/build_task172_full_routing.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/build_task172_gate_c.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/build_task172_gate_r.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/build_task172_routing_index.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/build_task172_step08_pilot.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/task158_basis_escape.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/task159_semantic_leap_detector.py"}
@@ -4195,10 +4206,12 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/task163_mutable_basis_learning.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/task164_historical_basis_pressure.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/task165_cross_thread_collision.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/task172_routing.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/validate_task172_full_routing.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/validate_task172_gate_c.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/validate_task172_gate_r.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/validate_task172_gate_t.py"}
+{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/validate_task172_routing_index.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/research/validate_task172_step08.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/run_control_plane_r2_pilot.py"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": "ignition/tools/run_cross_executor_driver_pilot.py"}

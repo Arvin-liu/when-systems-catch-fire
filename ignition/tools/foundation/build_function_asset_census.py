@@ -228,10 +228,18 @@ GENERATED_EXACT_PATHS = {
     "reports/operations/ignition-172-20260914-step05-function-routing.md",
     "data/operations/iterations/172/step06-nonfunction-routing.json",
     "reports/operations/ignition-172-20260914-step06-nonfunction-routing.md",
+    # Task172 Step07 is a generated bounded-routing projection and harness;
+    # keep it outside function-asset discovery.
+    "data/operations/iterations/172/step07-routing-index.json",
+    "reports/operations/ignition-172-20260915-step07-routing-index.md",
+    "tools/research/build_task172_routing_index.py",
+    "tools/research/validate_task172_routing_index.py",
+    "tools/research/task172_routing.py",
     "tools/research/build_task172_full_routing.py",
     "tools/research/validate_task172_full_routing.py",
     "tests/test_task172_step05_routing.py",
     "tests/test_task172_step06_routing.py",
+    "tests/test_task172_step07_routing.py",
     # Task158 research-only narrative and receipt records are not
     # function-asset sources; source-discovery accounting still retains them.
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",

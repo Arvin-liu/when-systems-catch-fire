@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 放大不确定性-两步策略自洽函数 is adjudicated as ARGUMENT_SCHEMA: M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D411 / Within the source-defined scope, 放大不确定性-两步策略自洽函数 is adjudicated as ARGUMENT_SCHEMA: M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 整数划分倒数和函数 is adjudicated as RELATION: ∀ℕ⁺有限划分，∃i, ∃S⊂A_i满足∑_{x∈S}1/x>1. This is a model](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D526 / Within the source-defined scope, 整数划分倒数和函数 is adjudicated as RELATION: ∀ℕ⁺有限划分，∃i, ∃S⊂A_i满足∑_{x∈S}1/x>1. This is a model
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-cba1776488e3b631 / \| \[D382\]\( \) \| \[低通滤波-自激振荡竞争函数\]\( \) \| F_{D382}\(x\) := M13的K·τ_dela
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D382；被引用：—
-- [\| \[D384\]\( \) \| \[双重打击-双重加速同构函数\]\( \) \| F_{D384}\(x\) := M1的D370与D348](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f202ea5f81d826e3 / \| \[D384\]\( \) \| \[双重打击-双重加速同构函数\]\( \) \| F_{D384}\(x\) := M1的D370与D348
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D348, D370, D384；被引用：—

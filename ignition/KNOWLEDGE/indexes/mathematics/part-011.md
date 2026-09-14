@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D384\]\( \) \| \[双重打击-双重加速同构函数\]\( \) \| F_{D384}\(x\) := M1的D370与D348](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f202ea5f81d826e3 / \| \[D384\]\( \) \| \[双重打击-双重加速同构函数\]\( \) \| F_{D384}\(x\) := M1的D370与D348
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D348, D370, D384；被引用：—
 - [\| \[D385\]\( \) \| \[复活代价n无关性起源函数\]\( \) \| F_{D385}\(x\) := M2的复活总代价∝Φ\(拐点\)与](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-88220015a2472a81 / \| \[D385\]\( \) \| \[复活代价n无关性起源函数\]\( \) \| F_{D385}\(x\) := M2的复活总代价∝Φ\(拐点\)与
@@ -2497,10 +2502,5 @@
 - [中文：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-cc17fcb1ab3bf5b3 / 中文：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：A8, A9；被引用：—
-- [中文：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性 English: Rule-based…](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5fb50ba25b7355f3 / 中文：\[A8\]\(docs/zh/functions/items/A8.md\)/A9从推论升级到公理——层间边界的相对性 English: Rule-based…
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：A8, A9；被引用：—

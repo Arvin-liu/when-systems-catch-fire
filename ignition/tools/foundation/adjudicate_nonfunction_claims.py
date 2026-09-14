@@ -164,10 +164,18 @@ SELF_EXCLUDES = {
     "reports/operations/ignition-172-20260914-step05-function-routing.md",
     "data/operations/iterations/172/step06-nonfunction-routing.json",
     "reports/operations/ignition-172-20260914-step06-nonfunction-routing.md",
+    # Task172 Step07 is a generated bounded-routing projection and harness;
+    # it must not become a new canonical claim source.
+    "data/operations/iterations/172/step07-routing-index.json",
+    "reports/operations/ignition-172-20260915-step07-routing-index.md",
+    "tools/research/build_task172_routing_index.py",
+    "tools/research/validate_task172_routing_index.py",
+    "tools/research/task172_routing.py",
     "tools/research/build_task172_full_routing.py",
     "tools/research/validate_task172_full_routing.py",
     "tests/test_task172_step05_routing.py",
     "tests/test_task172_step06_routing.py",
+    "tests/test_task172_step07_routing.py",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",

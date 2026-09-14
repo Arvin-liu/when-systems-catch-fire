@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原始命题: 元同构律跨文明验证函数 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-12415d1c23c7c4ca / 原始命题: 元同构律跨文明验证函数 **扩展注释 / Extended Annotation**
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：—；被引用：—
 - [原始命题: 六大影响力原则与点火框架P_meta元协议的映射。互惠、承诺一致、社会认同等原则作为元协议实例，影响决策门控面。](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6c83eb765a1866d8 / 原始命题: 六大影响力原则与点火框架P_meta元协议的映射。互惠、承诺一致、社会认同等原则作为元协议实例，影响决策门控面。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：D179 / 因果光锥统一函数 / D179
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
   - 依赖：D180, D91；被引用：Y1, NFC-0c916667739dd129, NFC-1af787b2e2a733e1, NFC-28c35812932fc693
-- [因果光锥统一函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-55d667e2afea5515 / 因果光锥统一函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D223 defines a formal_proposition within the point-fire framework. Core: 中文：D221：热寂=完全统一=Ω→1=无物理；D222：dΦ/dt≤0，Φ单调](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：NFC-70d5a3d429fefd71 / Object D223 defines a formal_proposition within the point-fire framework. Core: 中文：D221：热寂=完全统一=Ω→1=无物理；D222：dΦ/dt≤0，Φ单调
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D221, D222, D223；被引用：—
 - [Object D228 defines a mechanism_model within the point-fire framework. Core: 中文：A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f3616bb318ced719 / Object D228 defines a mechanism_model within the point-fire framework. Core: 中文：A-B型门控面的方向冲突是Φ极小点存在的数学机制，不是缺陷。冲突=张力的制造者=
@@ -2497,10 +2502,5 @@
 - [The retrieval and merge recipe is concrete, but identity, output, compatibility, effect and lifecycle contracts are inco](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-08b4833286ba7f0e / The retrieval and merge recipe is concrete, but identity, output, compatibility, effect and lifecycle contracts are inco
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [The review gives a precise ontology for function spaces, operators, latent carriers, parameterized artifacts, distributi](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-8526d9499f54baaf / The review gives a precise ontology for function spaces, operators, latent carriers, parameterized artifacts, distributi
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

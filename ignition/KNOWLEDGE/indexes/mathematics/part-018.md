@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [生命共同体价值宪章：\[../life-community-value-charter.md\]\(../life-community-value-charter.md\)](../../../docs/governance/meta-protocol-reviews/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-e24171d955e30622 / 生命共同体价值宪章：\[../life-community-value-charter.md\]\(../life-community-value-charter.md\)
+  - 来源：`docs/governance/meta-protocol-reviews/README.md`
+  - 依赖：—；被引用：—
 - [生命共同体价值宪章：未改（仅做应用层审查，结论有条件通过）](../../../outputs/collisions/20260711-disobedience-subjectivity/candidate-decision-summary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-020c569e0ba948d6 / 生命共同体价值宪章：未改（仅做应用层审查，结论有条件通过）
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-9cc0542705052ca6 / 已迁移的历史函数来源/0342-D306-去容斥条件函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D306；被引用：—
-- [已迁移的历史函数来源/0343-D307-σ_opt微观起源函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-a4fcf776202d858e / 已迁移的历史函数来源/0343-D307-σ_opt微观起源函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D307；被引用：—
