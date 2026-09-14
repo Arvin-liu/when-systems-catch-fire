@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从原文看，投资相关函数，定投天然具备结构保守性，是巴菲特模式的精确实现。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ba816d371e1231e8 / 从原文看，投资相关函数，定投天然具备结构保守性，是巴菲特模式的精确实现。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从原文看，投资相关函数，炒股遮蔽会跨域放大，炒股存在临界资金Kcritical，普通人炒股长期负期望。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c57c53eb5f3fc417 / 从原文看，投资相关函数，炒股遮蔽会跨域放大，炒股存在临界资金Kcritical，普通人炒股长期负期望。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
@@ -2497,10 +2502,5 @@
 - [从这条案例看，中文：案例说明：最优配置→P_recover高但P_innovate低→缓慢退化 关键发现：最优配置→P_recover高但P_innov… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-68f60f962ff29cb8 / 从这条案例看，中文：案例说明：最优配置→P_recover高但P_innovate低→缓慢退化 关键发现：最优配置→P_recover高但P_innov… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-724e2ee824f34b05 / 从这条案例看，中文：案例说明：最弱维度=曲率奇点统一验证 — 8维系统ε₇=0.05：g₇₇=400（度规最大），R_cog在ε₇方向最大（曲率发散），… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

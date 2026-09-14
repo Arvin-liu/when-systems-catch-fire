@@ -13,6 +13,15 @@
 - **来源：** [ignition-172-20260913-step04-gate-r-routing.md](../reports/operations/ignition-172-20260913-step04-gate-r-routing.md)
 - **资产卡：** [HR-F8412AF8D8458685](./ASSET-CARDS.md#asset-hr-f8412af8d8458685)
 
+<a id="change-src-hr-9a9f6a65046403f2"></a>
+### 2026-09-13 · IGNITION-172 Step05 — Gate C scholarly admission policy
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Gate C is a policy lock downstream of Gate T and Gate R at Formal head 998b5654248b41a8982d0674bf0368b400b65eec. It freezes scholarly-admission semantics, provider roles, rights handling, correction/retraction handling, conservative deduplication, and a synthetic cross-domain pilot. It does not e…
+- **来源：** [ignition-172-20260913-step05-gate-c-scholarly.md](../reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md)
+- **资产卡：** [HR-9A9F6A65046403F2](./ASSET-CARDS.md#asset-hr-9a9f6a65046403f2)
+
 <a id="change-src-hr-90ed509023725da0"></a>
 ### 2026-09-13 · IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock
 

@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-ebfbf26abf72ff4c"></a>
+## IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计；Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。；Task143 的 phase-closure、publication-production 和新 canonical 出版入口在 Current/Handoff/AI surfaces 中可恢复；；Task142 的 LIVEEXTERNALINVOCATION 历史 6 次 attempt、0 次 validated completion、0 次 unreconciled、2 次 observation-incomplete 没有被新出版成果改写；；obligation registry 的当前动作仍是 OWNERDEFERREDREQUIRESEXPLICITREOPENANDLOCALENVIRONMENTPREPARATION，历史 projection 的 dynamic admission 动作仍被保留；；本轮没有新增组件、typed topology relation、map version、executor live attempt、安装、配置、认证、计费或环境手术；
+- 完整阅读：[reports/operations/ignition-143-step17-current-state-sync.md](../../reports/operations/ignition-143-step17-current-state-sync.md)
+
 <a id="reading-hr-ecc4e92db835c50c"></a>
 ## REOS vNext LIGHT pilot R1 — public-safe synthesis
 `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`

@@ -153,6 +153,11 @@ SELF_EXCLUDES = {
     # generated projection, not a canonical claim source; keeping it out of
     # discovery prevents the sidecar from changing the authority it hashes.
     "reports/operations/ignition-172-20260913-step04-gate-r-routing.md",
+    # Task172 Gate C is a generated policy projection, not a canonical claim
+    # source. Keep its operation/report out of claim discovery while retaining
+    # repository path accounting.
+    "data/operations/iterations/172/step05-scholarly-gate.json",
+    "reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
@@ -179,6 +184,8 @@ MACHINE_EXCLUDE_PREFIXES = (
     # Task159 semantic-detector research records are comparison inputs only;
     # preserve source accounting while excluding claim admission.
     "data/research/semantic-leap-detector-v2-2026-09-07/",
+    # Task172 Gate C sidecar is generated policy provenance, not a claim source.
+    "data/research/task172-gate-c-scholarly-admission/",
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",
     "docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md",
     "docs/governance/representation-residual-casebook-2026-09-06.md",

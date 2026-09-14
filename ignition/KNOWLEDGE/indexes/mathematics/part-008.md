@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The source gives a precise function/operator ontology across Banach spaces, finite parameter vectors, discrete observati](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-715e1326448ff4c6 / The source gives a precise function/operator ontology across Banach spaces, finite parameter vectors, discrete observati
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [The source says “任一因子=0→乘积=0” and applies it to the point-fire framework product. It does not declare `Nat`, restrict th](../../../reports/foundation-architecture/T2-proof-equivalence-audit-20260713.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e9f9143662b561af / The source says “任一因子=0→乘积=0” and applies it to the point-fire framework product. It does not declare `Nat`, restrict th
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-6E11A269E0E95047 / title: "自举元函数层级 / bootstrap meta-function hierarchy" / IMPLICIT-6E11A269E0E95047
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自我模型-ε_aware连接定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2ae515423558ec05 / title: "自我模型-ε_aware连接定理"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

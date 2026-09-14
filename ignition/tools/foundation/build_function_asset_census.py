@@ -79,6 +79,10 @@ GENERATED_PREFIXES = (
     # Task159 semantic-detector research records are comparison inputs only;
     # they must remain outside function discovery to avoid answer backflow.
     "data/research/semantic-leap-detector-v2-2026-09-07/",
+    # Task172 Gate C is a policy-only scholarly-admission sidecar. It is a
+    # generated projection and must not feed its policy wording into the
+    # canonical function-asset census.
+    "data/research/task172-gate-c-scholarly-admission/",
     # Task141 live-state semantics and structured-result receipts are
     # provenance-only operation records. They must not become function-asset
     # discovery input or make the census depend on receipt wording/order.
@@ -207,6 +211,9 @@ GENERATED_EXACT_PATHS = {
     # generated projection, not a function-asset source; excluding it keeps
     # the sidecar from changing the authority it hashes.
     "reports/operations/ignition-172-20260913-step04-gate-r-routing.md",
+    # Task172 Gate C is a generated policy projection, not a function source.
+    "data/operations/iterations/172/step05-scholarly-gate.json",
+    "reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md",
     # Task158 research-only narrative and receipt records are not
     # function-asset sources; source-discovery accounting still retains them.
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",

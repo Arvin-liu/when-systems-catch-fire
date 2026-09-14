@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-c190ac76ad5f8440"></a>
+## 121Q3 Night Final Report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Steps 004-007, 010-018, 021-023 were executed as batched commits (11 commits for 25 steps). This deviates from the 'one commit per step' requirement. Amend/rebase is prohibited, so this cannot be retroactively fixed. All 25 step-ledger entries are present and correct. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q3 Night Final Report；主题：Status: COMPLETEWITHDEVIATIONS；主题：Execution Identity；Model: qclaw/pool-glm-5.2-night；Model switch: None；Branch: records/ignition-121q3-gap-functionos-asset-mapping-20260715
+- 完整阅读：[reports/external-research/121Q3-night-final-report.md](../../reports/external-research/121Q3-night-final-report.md)
+
 <a id="reading-hr-c1e3cb3130d2df76"></a>
 ## IGNITION-20260822-134 Step 12 — Residual adversarial matrix
 `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：点火是 OS，不是另一个 OpenClaw、Hermes 或 Codex。它维护目标、价值、 任务契约、权限、长期状态、Pack、记忆、验证、handoff、provenance 和结果 吸收；外部智能体是可替换执行器。适配器只翻译可观察边界，不复制外部 Agent 的运行时。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：External Agent Federation R1 — ownership boundary；点火是 OS，不是另一个 OpenClaw、Hermes 或 Codex。它维护目标、价值、 任务契约、权限、长期状态、Pack、记忆、验证、handoff、provenance 和结果 吸收；外部智能体是可替换执行器。适配器只翻译可观察边界，不复制外部 Agent 的运行时。；本页与 CURRENTSTATESYNCINVARIANT 的当前身份保持一致：点火是 driver / orchestration-governance layer，Knowledge 是第一个大型 Domain Pack，默认决策是 integrate 而不是重造。当前计数、地图版本 0.16.0（0.14.0 Historical、0.13.0 及之前为更早 Historical）和 live ceiling 以 current-facts.json 为准；真实 live invocation 仍可在安全边界无法满足时明确 SKIPPED。；Task 126 的 Structural Governance Surface 是 Federation 可选择读取的 advisory cross-cutting overlay。它只暴露声明的 claim ceiling、unknowns、source pointers 和实验臂元数据；它不改变 capability、permission、authorization、truth、Owner 状态或 EPISTEMICALLYACCEPTED。完整边界见 soft-context-exposure-contract-r0.json。；Task 127 的 Durability / Lifecycle R3 仍由 Ignition OS / driver 持有：Federation 只接收声明的 workspace、policy、capability 和 reconciliation 边界，不拥有 snapshot、 migration、namespace、Pack lifecycle、revocation、accounting、recovery 或 DR authority。 若 external dispatch 不确定，OS 只记录 REQUIRESRECONCILIATION，禁止通过任何 adapter 自动重放；repository-local continuity pilot 不是 live executor success、p…；Task 129 的 Steering / Intent / Goal / Obligation R1 只向 Federation 发放经过边界收窄的 IntentCapsule：capsule 携带成功标准、权限上限、blocker、时间引用、report contract 和 最小 context 引用，不携带 canonical registry 写权限。外部 executor 的 report、telemetry 或 PASS 不能写回 canonical Intent，也不能推断 Goal completion；独立 Completion Contract 和 OS reconciliation 仍是必要条件。
 - 完整阅读：[docs/architecture/external-agent-federation-r1.md](../../docs/architecture/external-agent-federation-r1.md)
-
-<a id="reading-hr-d821031f6e382fd7"></a>
-## 121Q9 Final Release Candidate
-`CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: COMPLETEPENDINGGPTVERIFICATION. Do not merge until explicitly approved. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q9 Final Release Candidate；Status: COMPLETEPENDINGGPTVERIFICATION. Do not merge until explicitly approved.；Main base SHA: 771349da3e241cdff29eaf3cf880ae2ce158549f；PR #45 content head: 5a9a860dc7fc0c0d4536586f5ff27f5180838e52；Step 003 content head: 0b0b821239cb93bacf70bbc54c0dc157e4d8d0cf；Final seal commit will follow this report as Step 004.
-- 完整阅读：[reports/release/121Q9-final-release-candidate.md](../../reports/release/121Q9-final-release-candidate.md)

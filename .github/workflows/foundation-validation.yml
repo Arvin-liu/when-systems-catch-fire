@@ -55,6 +55,10 @@ jobs:
         run: python3 tools/research/validate_task172_gate_t.py --repo-root .
       - name: Validate Task172 Gate R routing schema and precision pilot
         run: python3 tools/research/validate_task172_gate_r.py --repo-root .
+      - name: Validate Task172 Gate C scholarly admission policy
+        run: python3 tools/research/validate_task172_gate_c.py --repo-root .
+      - name: Test Task172 Gate C scholarly admission policy
+        run: python3 -m unittest tests.test_task172_gate_c -v
       - name: Validate human result census and self-correction products
         run: |
           python3 tools/governance/build_human_results.py --check

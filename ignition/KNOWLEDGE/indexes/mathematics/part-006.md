@@ -434,6 +434,11 @@
   - 可搜索名称：IGNITION-142 Step 17 — architecture impact / ignition-142-step17-architecture-impact
   - 来源：`reports/operations/ignition-142-step17-architecture-impact.md`
   - 依赖：—；被引用：—
+- [IGNITION-172 Step05 — Gate C scholarly admission policy](../../ASSET-CARDS.md#asset-hr-9a9f6a65046403f2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-172 Step05 — Gate C scholarly admission policy / ignition-172-20260913-step05-gate-c-scholarly
+  - 来源：`reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md`
+  - 依赖：—；被引用：—
 - [IGNITION-20260816-122 Federation R1 Progress](../../ASSET-CARDS.md#asset-hr-6e03f66c845de70f)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-20260816-122 Federation R1 Progress / ignition-122-federation-progress
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-2820e2d6c1bd1f95 / Object D260 defines a mechanism_model within the point-fire framework. Core: 中文：M1的ΔΦ敏感度dΔΦ/dpᵢ=pᵢ/\(1-pᵢ\)在pᵢ=0.5时=1（单位敏感
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D260；被引用：—
-- [Object D387 defines a mechanism_model within the point-fire framework. Core: 中文：M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-ee69fb4687a717c7 / Object D387 defines a mechanism_model within the point-fire framework. Core: 中文：M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D387；被引用：—

@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-9e4e9fae33d82afe"></a>
+## 121Q2W Final Consistency Seal Report
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9E4E9FAE33D82AFE` · [reports/external-research/121Q2W-final-consistency-seal-report.md](../../reports/external-research/121Q2W-final-consistency-seal-report.md)
+- **为什么产生：** 此来源记录了什么：121Q2W Final Consistency Seal Report？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/external-research/121Q2W-final-consistency-seal-report.md`, `121Q2W-FINAL-CONSISTENCY-SEAL-REPORT`
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q2W Final Consistency Seal Report`, `121Q2W-final-consistency-seal-report`
+
 <a id="asset-hr-9e6a888145f934b6"></a>
 ## IGNITION-130 Step 11 — residual reclassification
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260824-138 — Amendment 01 live Codex receipt reconciliation`, `ignition-138-step08-amendment-01-live-codex-reconciliation`
-
-<a id="asset-hr-b22454ba8f3e5429"></a>
-## IGNITION-137 Step 09 — one real Codex synthetic/read-only attempt
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B22454BA8F3E5429` · [reports/operations/ignition-137-step09-live-codex-attempt.md](../../reports/operations/ignition-137-step09-live-codex-attempt.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-137 Step 09 — one real Codex synthetic/read-only attempt？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The single authorized Codex live dispatch ran at 2026-08-24 06:16:05 UTC with a fresh codex-cli 0.144.4 lease, repo.read ceiling, disposable fixture, strict output schema, 900-second deadline, depth-one child guard, --skip-git-repo-check, read-only sandbox, and no new billing authority.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-137-step09-live-codex-attempt.md`, `137-STEP09-LIVE-CODEX-ATTEMPT`
-- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-137 Step 09 — one real Codex synthetic/read-only attempt`, `ignition-137-step09-live-codex-attempt`

@@ -1,0 +1,54 @@
+{
+  "admission_ceiling": {
+    "abstract_persistence_by_default": false,
+    "accepted_identifiers": [
+      "DOI",
+      "PROVIDER_STABLE_ID"
+    ],
+    "fulltext_persistence_by_default": false,
+    "live_retrieval_in_gate_c": false,
+    "mass_formal_ingestion_authorized_in_gate_c": false,
+    "metadata_rows_admitted_in_gate_c": 0,
+    "required_route_provenance": [
+      "unesco_field_code",
+      "unesco_discipline_code_or_explicitly_unresolved",
+      "taxonomy_version",
+      "query_or_seed",
+      "provider_id",
+      "fetched_at",
+      "record_hash"
+    ],
+    "stable_identifier_required": true
+  },
+  "authority": "policy lock only; it does not establish external scholarly truth or admit corpus rows",
+  "corpus_identities": [
+    "GENERAL_KNOWLEDGE_REFERENCE",
+    "SCHOLARLY_METADATA"
+  ],
+  "identity_rules": {
+    "general_knowledge_reference": "bounded source navigation and bibliographic linkout; not evidence by presence",
+    "provider_failure": "provider failure is not evidence that no literature exists",
+    "scholarly_metadata": "metadata and provenance record only; not an empirical or proof conclusion",
+    "unresolved_route": "retain unresolved route and manual review; do not coerce a field or discipline"
+  },
+  "mode": "METADATA_ONLY",
+  "promotion_boundary": {
+    "manual_review_required_before_any_future_admission": true,
+    "metadata_is_not_evidence": true,
+    "metadata_is_not_proof": true,
+    "metadata_is_not_replication": true,
+    "no_external_truth_claim": true
+  },
+  "schema": "task172-gate-c-scholarly-admission-policy-v1",
+  "taxonomy_authority": {
+    "discrepancies_retained": {
+      "local_inventory_disciplines": 250,
+      "secondary_subdisciplines": 2183,
+      "skos_mirror_disciplines": 248
+    },
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178,
+    "source": "1988 UNESCO primary document locked by Gate T"
+  }
+}

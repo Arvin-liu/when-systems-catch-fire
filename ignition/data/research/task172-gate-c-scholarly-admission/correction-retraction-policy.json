@@ -1,0 +1,27 @@
+{
+  "admission_behavior": {
+    "correction_or_retraction_relation": "metadata-only quarantine until reviewed",
+    "original_record": "retained for audit and linked lineage",
+    "positive_evidence": "never granted by correction or retraction metadata",
+    "tombstone_policy": "tombstone or quarantine is reversible and preserves stable identifiers"
+  },
+  "authority": "correction and retraction metadata changes record disposition; they never create positive evidence",
+  "default_status": "UNKNOWN",
+  "rules": {
+    "CORRECTED": "retain original metadata, link the correction, and flag the original for manual review",
+    "EXPRESSION_OF_CONCERN": "retain provenance and block positive evidence use pending manual review",
+    "NOT_OBSERVED": "no provider relation observed; do not infer that no relation exists",
+    "RETRACTED": "retain provenance, quarantine or tombstone positive-use eligibility, and link the retraction notice",
+    "UNKNOWN": "rights and correction state are unresolved; no positive evidence promotion",
+    "UPDATED": "retain the prior version and link the update; do not silently overwrite historical metadata"
+  },
+  "schema": "task172-gate-c-correction-retraction-policy-v1",
+  "statuses": [
+    "NOT_OBSERVED",
+    "CORRECTED",
+    "RETRACTED",
+    "EXPRESSION_OF_CONCERN",
+    "UPDATED",
+    "UNKNOWN"
+  ]
+}

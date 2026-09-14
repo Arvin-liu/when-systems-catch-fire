@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0347-D311-僵尸态函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-30c04fc697f447f7 / 已迁移的历史函数来源/0347-D311-僵尸态函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D311；被引用：—
 - [已迁移的历史函数来源/0348-D312-正反馈噪声放大函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-56e140c0d417731d / 已迁移的历史函数来源/0348-D312-正反馈噪声放大函数.md
@@ -2499,8 +2504,3 @@
   - 可搜索名称：D140 / 距离衰减统一函数 / D140 / D139
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
   - 依赖：D180, D91；被引用：NFC-06c45a1d8caff77d, NFC-2433705d83e42a1a, NFC-435464285c1c68b2, NFC-7362f1be14265525
-- [距离衰减统一函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ac0dc39ffaa5e79d / 距离衰减统一函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—

@@ -784,6 +784,26 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `121Q4 Final Report: Function OS v0.1 Symbolic Reference Implementation`, `121Q4-final-report`
 
+<a id="asset-hr-9a9f6a65046403f2"></a>
+## IGNITION-172 Step05 — Gate C scholarly admission policy
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9A9F6A65046403F2` · [reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md](../../reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-172 Step05 — Gate C scholarly admission policy？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Gate C is a policy lock downstream of Gate T and Gate R at Formal head 998b5654248b41a8982d0674bf0368b400b65eec. It freezes scholarly-admission semantics, provider roles, rights handling, correction/retraction handling, conservative deduplication, and a synthetic cross-domain pilot. It does not e…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md`, `172-20260913-STEP05-GATE-C-SCHOLARLY`
+- **演化历史：** 2026-09-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-172 Step05 — Gate C scholarly admission policy`, `ignition-172-20260913-step05-gate-c-scholarly`
+
 <a id="asset-hr-9aaea8346e63b9a2"></a>
 ## IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `121Q9 Cumulative Baseline`, `121Q9-cumulative-baseline`
-
-<a id="asset-hr-9e4e9fae33d82afe"></a>
-## 121Q2W Final Consistency Seal Report
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9E4E9FAE33D82AFE` · [reports/external-research/121Q2W-final-consistency-seal-report.md](../../reports/external-research/121Q2W-final-consistency-seal-report.md)
-- **为什么产生：** 此来源记录了什么：121Q2W Final Consistency Seal Report？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/external-research/121Q2W-final-consistency-seal-report.md`, `121Q2W-FINAL-CONSISTENCY-SEAL-REPORT`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `121Q2W Final Consistency Seal Report`, `121Q2W-final-consistency-seal-report`
