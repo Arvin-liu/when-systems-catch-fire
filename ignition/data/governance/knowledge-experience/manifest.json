@@ -145,6 +145,6 @@
     "data/foundation/nonfunction-claims/claim-registry.jsonl": "5838ee4a0907e18937fe301cb375f64482b12c6165eae54d22fda8b49137b763",
     "data/governance/human-results/result-ledger.jsonl": "ced6de9695b4586a20d45cad43ffc3906749197cb99a6f2ab74052774cbaaed7",
     "data/governance/knowledge-experience/config.json": "adae2adb4283bd190767111dbcf5033ae1f7877099c1cf1526554b381df775c1",
-    "data/governance/knowledge-experience/source-first-seen.json": "f74c26b58b0ca6918e5ebc203eec4f19a9f300116bff1e86325fbeada27458c8"
+    "data/governance/knowledge-experience/source-first-seen.json": "0fdece17d79f74e43d8e80f1efda6f925857481ba5553e52999cd7c085cf7bde"
   }
 }
