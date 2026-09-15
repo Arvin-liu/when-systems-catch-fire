@@ -1,0 +1,38 @@
+{
+  "admission_status": "METADATA_ADMITTED_MANUAL_REVIEW_REQUIRED",
+  "content_boundary": {
+    "abstract_or_fulltext_persisted": false,
+    "metadata_only": true,
+    "raw_provider_response_persisted": false
+  },
+  "corpus_identity": [
+    "GENERAL_KNOWLEDGE_REFERENCE",
+    "SCHOLARLY_METADATA"
+  ],
+  "counts": {
+    "field_disciplines": 11,
+    "global_links_after_field": 136,
+    "global_physical_records_after_field": 136,
+    "new_physical_records": 88,
+    "selected_links": 88
+  },
+  "coverage_status": "READY_FOR_MANUAL_REVIEW",
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "evidence_boundary": {
+    "evidence_promotion": false,
+    "proof_promotion": false,
+    "replication_promotion": false
+  },
+  "field_code": "12",
+  "field_label": "MATHEMATICS",
+  "formal_parent_head": "8e231b6ab54804f8a80cc8a5230f45932176ceb9",
+  "iteration": 172,
+  "schema": "task172-step09-field-operation-v1",
+  "source_freeze_sha256": "151b2a8cb7b6ed553ded9fe5ebc3295853caee6cb53295546b14b63f89d2e0df",
+  "step": "09",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

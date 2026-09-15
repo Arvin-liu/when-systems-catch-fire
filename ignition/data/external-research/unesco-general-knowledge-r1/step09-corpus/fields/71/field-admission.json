@@ -1,0 +1,127 @@
+{
+  "content_boundary": {
+    "abstract_or_fulltext_persisted": false,
+    "metadata_only": true,
+    "raw_provider_response_persisted": false
+  },
+  "corpus_identity": [
+    "GENERAL_KNOWLEDGE_REFERENCE",
+    "SCHOLARLY_METADATA"
+  ],
+  "coverage": [
+    {
+      "discipline_code": "7101",
+      "discipline_label": "Classical ethics",
+      "field_code": "71",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 16
+    },
+    {
+      "discipline_code": "7102",
+      "discipline_label": "Ethics of individuals",
+      "field_code": "71",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 16
+    },
+    {
+      "discipline_code": "7103",
+      "discipline_label": "Group ethics",
+      "field_code": "71",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 18
+    },
+    {
+      "discipline_code": "7104",
+      "discipline_label": "Prospective ethics",
+      "field_code": "71",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 21
+    },
+    {
+      "discipline_code": "7199",
+      "discipline_label": "Other specialities related to ethics (specify)",
+      "field_code": "71",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 20
+    }
+  ],
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_boundary": {
+    "evidence_promotion": false,
+    "proof_promotion": false,
+    "replication_promotion": false
+  },
+  "evidence_promotion": false,
+  "field_code": "71",
+  "field_label": "ETHICS",
+  "formal_parent_head": "5030f1dd9e01a6530155e86c2120fb587b2c1146",
+  "formal_write": true,
+  "global_physical_record_count_after_field": 1737,
+  "manual_review_required": true,
+  "metadata_only": true,
+  "new_physical_record_count": 34,
+  "physical_record_ids": [
+    "scholarly-metadata-057d01a5e796a1fb846a9a29",
+    "scholarly-metadata-0ca6c93beec3f032f45e87b8",
+    "scholarly-metadata-1bb070a663b33a5fe4f0b111",
+    "scholarly-metadata-20b5e4d394558f115a67f97b",
+    "scholarly-metadata-23efc1f630c495ab97bba40e",
+    "scholarly-metadata-29e8a0ac7fc391812db2ae19",
+    "scholarly-metadata-30bcd383e454d9bd170b25e4",
+    "scholarly-metadata-3a840f287a41214de9abdeb2",
+    "scholarly-metadata-400198e090040516b37cf85a",
+    "scholarly-metadata-40c7b5319719ffd7947fc0db",
+    "scholarly-metadata-4218476f87c48fef90ce9c72",
+    "scholarly-metadata-449650114aa513073b505a37",
+    "scholarly-metadata-51a609ccd12b00d096bc38c3",
+    "scholarly-metadata-5412120f609c8a548d709c2b",
+    "scholarly-metadata-5e2385611e7fc9a91fc7cd37",
+    "scholarly-metadata-63420465c550daeea587db7d",
+    "scholarly-metadata-78adf410bcac46e84202b12e",
+    "scholarly-metadata-7c4305771ea8692ef7fcbd25",
+    "scholarly-metadata-7f2a348dac6306546b379646",
+    "scholarly-metadata-87cbba246c65ea5bc9380015",
+    "scholarly-metadata-8fed48ef70a8f77e1a3e94e4",
+    "scholarly-metadata-966cfb050d916bf607755de8",
+    "scholarly-metadata-9a281590260d5ab2487de072",
+    "scholarly-metadata-a49c0c3aec2e7642114ccd93",
+    "scholarly-metadata-b660d96edb516105c6c1c15a",
+    "scholarly-metadata-b697fb3d77a99c85ff10111e",
+    "scholarly-metadata-bf90a53590e64386fd47418e",
+    "scholarly-metadata-c17dab2326fb88a717829726",
+    "scholarly-metadata-c22b39eaf77cd505b76b23db",
+    "scholarly-metadata-c33c4333da964b699bc68b9f",
+    "scholarly-metadata-c6515071f5a3c72a268e8959",
+    "scholarly-metadata-c99773a586677dbf525b039b",
+    "scholarly-metadata-daff53c03e448345fb324f6f",
+    "scholarly-metadata-dbcb6ff0562c70913486b098",
+    "scholarly-metadata-e0a73ac1d2c4f3af834bb3d2",
+    "scholarly-metadata-e1ab30179e2aba52ce363a4d",
+    "scholarly-metadata-e64f31eab55dec2d25383267",
+    "scholarly-metadata-f34187323453276e8899cc51",
+    "scholarly-metadata-fe8335b6b6c2003bc96a92e0"
+  ],
+  "policy_ref": "data/external-research/unesco-general-knowledge-r1/step09-corpus/corpus-policy.json",
+  "schema": "task172-step09-field-admission-v1",
+  "selected_link_count": 40,
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [def _transport_evidence\(process: Any, *, observed_at: str, timeout_seconds: float\) -> dict\[str, Any\]:](../../../agent_federation/live_execution.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-7F91AEB86D9109DB / def _transport_evidence\(process: Any, *, observed_at: str, timeout_seconds: float\) -> dict\[str, Any\]: / IMPLICIT-7F91AEB86D9109DB
+  - 来源：`agent_federation/live_execution.py`
+  - 依赖：—；被引用：—
+- [def _tree_digest\(root: Path\) -> str:](../../../agent_federation/live_filesystem_harness.py)
+  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
+  - 可搜索名称：IMPLICIT-B6E96D46D3A396D8 / def _tree_digest\(root: Path\) -> str: / IMPLICIT-B6E96D46D3A396D8
+  - 来源：`agent_federation/live_filesystem_harness.py`
+  - 依赖：—；被引用：—
 - [def _tree_has_symlink\(path: Path\) -> bool:](../../../agent_federation/live_filesystem.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-704CA175838F0C19 / def _tree_has_symlink\(path: Path\) -> bool: / IMPLICIT-704CA175838F0C19
@@ -2492,15 +2502,5 @@
 - [def sha256_json\(obj\) -> str:](../../../function-os-candidate/v0.2/benchmark/oracle/reference.py)
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-BF750A8446B7A9E0 / def sha256_json\(obj\) -> str: / IMPLICIT-BF750A8446B7A9E0
-  - 来源：`function-os-candidate/v0.2/benchmark/oracle/reference.py`
-  - 依赖：—；被引用：—
-- [def sha256_json\(value: Any\) -> str:](../../../reos_vnext/validation.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-77B47268A3598742 / def sha256_json\(value: Any\) -> str: / IMPLICIT-77B47268A3598742
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [def sha256_text\(text: str\) -> str:](../../../function-os-candidate/v0.2/benchmark/oracle/reference.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-403A3B7539F0C735 / def sha256_text\(text: str\) -> str: / IMPLICIT-403A3B7539F0C735
   - 来源：`function-os-candidate/v0.2/benchmark/oracle/reference.py`
   - 依赖：—；被引用：—

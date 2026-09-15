@@ -1,0 +1,60 @@
+{
+  "authority": {
+    "asset_kind": "FUNCTION_ASSET",
+    "path": "data/foundation/function-assets/identity-cards.jsonl",
+    "row_count": 6158,
+    "sha256": "2b5a83c0e5ffe5c8199d4d8fa831b5e15832c9559614ce21b9a3d643cf6f3c16"
+  },
+  "command_sources": [
+    {
+      "path": "agent-commands/IGNITION-20260912-172.md",
+      "ref": "b7c27fab",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-175.md",
+      "ref": "ebc75f9c",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-176.md",
+      "ref": "b1fc45fb",
+      "repository": "Arvin-liu/1111"
+    }
+  ],
+  "decision": "STEP05_FULL_FUNCTION_ASSET_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQUIRED; NO_CANONICAL_MUTATION",
+  "derived_outputs": {
+    "overlay_path": "data/research/task172-routing-r1/function-routing-overlay.jsonl",
+    "overlay_sha256": "f02c32f203b126032e1ca7da26964cf27949a3badd38adb1f3a681daa71a42b9"
+  },
+  "direction_locks": [
+    "IGNITION-20260913-175",
+    "IGNITION-20260913-176",
+    "IGNITION-20260912-172"
+  ],
+  "formal_pre_freeze": {
+    "branch": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+    "head": "13ec32014e29db8d8d1590c41ca0d4cde694736d",
+    "pull_request": 218,
+    "state": "OPEN + DRAFT + unmerged"
+  },
+  "freeze_event": "SCAN_INPUT_FREEZE_REUSE",
+  "immutability": "routing projection cannot mutate canonical identity, M/E, disposition, claim ceiling or evidence status",
+  "routing_preconditions": {
+    "gate_c_receipt_sha256": "9b8c85a5456023a65395f014d353f06280e64d6fac8ba333545415af64d197d6",
+    "gate_r_schema_sha256": "5ece3a3e3b22d080782485d27d0b46c45224b6fe035ba247095841a2d11fdb92",
+    "gate_r_vocabulary_sha256": "5612622cedaef67fd8b5a19ddf4d40b2939d07ef78bb530301176b2e399a9b95",
+    "mass_formal_taxonomy_write": true,
+    "scholarly_corpus_admission": "metadata_only_policy_locked"
+  },
+  "schema": "task172-full-routing-source-freeze-v1",
+  "step": "Task172 Step05",
+  "taxonomy_authority": {
+    "discrepancy_ledger_sha256": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f",
+    "fields": 24,
+    "parse_sha256": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a",
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178,
+    "source": "1988 UNESCO primary document locked by Gate T"
+  }
+}

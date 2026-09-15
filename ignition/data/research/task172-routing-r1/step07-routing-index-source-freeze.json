@@ -1,0 +1,82 @@
+{
+  "command_sources": [
+    {
+      "path": "agent-commands/IGNITION-20260912-172.md",
+      "ref": "b7c27fab",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260912-172-R1.md",
+      "ref": "ebc75f9c",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260912-173.md",
+      "ref": "c3d57032",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260912-174.md",
+      "ref": "22e09e3d",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-175.md",
+      "ref": "ebc75f9c",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-176.md",
+      "ref": "b1fc45fb",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-177.md",
+      "ref": "22cbe6f7",
+      "repository": "Arvin-liu/1111"
+    }
+  ],
+  "decision": "STEP07_ROUTING_INDEX_READY; READ_ONLY; EXACT_VALIDATION_REQUIRED; NO_CANONICAL_MUTATION",
+  "derived_outputs": {
+    "index_sha256": "75947acad6f8e38630c679211460c2cc876c050a971b40146dac186f76d993a4",
+    "pilot_sha256": "e172d2eab7d1a50c6ec29749afd4c93b70d869bc8b114d4b6733cefbb2bca949",
+    "report_sha256": "0c9d010afa72c89c73f0cc2ab9eac3f85c80a89514a29d9eaaa7a77eb3c89ee5",
+    "tags_sha256": "2b474fa60489c0f81bb42da6f62f1321a3494d248fefc77da993b7412a41ea37"
+  },
+  "direction_locks": [
+    "IGNITION-20260913-175",
+    "IGNITION-20260913-176",
+    "IGNITION-20260913-177"
+  ],
+  "formal_pre_freeze": {
+    "branch": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+    "head": "13ec32014e29db8d8d1590c41ca0d4cde694736d",
+    "pull_request": 218,
+    "state": "OPEN + DRAFT + unmerged"
+  },
+  "freeze_event": "SCAN_INPUT_FREEZE_REUSE",
+  "inputs": {
+    "function_overlay": {
+      "path": "data/research/task172-routing-r1/function-routing-overlay.jsonl",
+      "rows": 6158,
+      "sha256": "f02c32f203b126032e1ca7da26964cf27949a3badd38adb1f3a681daa71a42b9"
+    },
+    "nonfunction_overlay": {
+      "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
+      "rows": 17982,
+      "sha256": "1f16a976f30e68298a7418c7d4b26df4846e9bb3b9f610c051d535d7aaa6bc06"
+    },
+    "pilot_queries": {
+      "path": "data/research/task172-routing-r1/step07-routing-pilot-queries.json",
+      "sha256": "842f21d294819cfe7989a8a0416c56ac59285e69dce00bbdc424bbb5f2aabb8a"
+    }
+  },
+  "schema": "task172-step07-routing-index-source-freeze-v1",
+  "step": "Task172 Step07",
+  "taxonomy_authority": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178,
+    "source": "1988 UNESCO primary document locked by Gate T"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "admission_status": "METADATA_ADMITTED_MANUAL_REVIEW_REQUIRED",
+  "content_boundary": {
+    "abstract_or_fulltext_persisted": false,
+    "metadata_only": true,
+    "raw_provider_response_persisted": false
+  },
+  "corpus_identity": [
+    "GENERAL_KNOWLEDGE_REFERENCE",
+    "SCHOLARLY_METADATA"
+  ],
+  "counts": {
+    "field_disciplines": 4,
+    "global_links_after_field": 1752,
+    "global_physical_records_after_field": 1615,
+    "new_physical_records": 25,
+    "selected_links": 32
+  },
+  "coverage_status": "READY_FOR_MANUAL_REVIEW",
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "evidence_boundary": {
+    "evidence_promotion": false,
+    "proof_promotion": false,
+    "replication_promotion": false
+  },
+  "field_code": "62",
+  "field_label": "SCIENCES OF ARTS & LETTERS",
+  "formal_parent_head": "c0e58f64d07f3fee3389593d4d90426c7ddfe71e",
+  "iteration": 172,
+  "schema": "task172-step09-field-operation-v1",
+  "source_freeze_sha256": "abc32742fbbcf2e84b101f54ad04f20d62eb41f39d23c323656e416a93938bfe",
+  "step": "09",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

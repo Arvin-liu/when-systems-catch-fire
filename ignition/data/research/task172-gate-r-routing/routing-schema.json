@@ -1,0 +1,50 @@
+{
+  "authority": "canonical-ID keyed routing sidecar; canonical registries remain authority",
+  "caps": {
+    "asset_role": 3,
+    "collision_use": 4,
+    "topic": 5,
+    "unesco_discipline_codes": 3,
+    "unesco_field_codes": 2
+  },
+  "classification_state": [
+    "CLASSIFIED",
+    "MULTIDISCIPLINARY",
+    "OUT_OF_UNESCO_SCOPE",
+    "UNRESOLVED"
+  ],
+  "facets": {
+    "asset_role": "bounded retrieval role, not evidence status",
+    "collision_use": "bounded collision operation, not a conclusion",
+    "domain": [
+      "unesco_field_codes",
+      "unesco_discipline_codes",
+      "classification_state"
+    ],
+    "evidence_projection": "read-only projection of canonical authority; no promotion",
+    "topic": "optional bounded topic labels"
+  },
+  "immutability": [
+    "source_record_sha equals the current authority record fingerprint",
+    "routing cannot mutate canonical identity, M/E, disposition, ceiling or evidence status",
+    "ambiguous and internal records remain UNRESOLVED or OUT_OF_UNESCO_SCOPE",
+    "model suggestions remain frozen suggestions requiring review"
+  ],
+  "key": [
+    "canonical_id",
+    "asset_kind"
+  ],
+  "required_fields": [
+    "canonical_id",
+    "asset_kind",
+    "domain",
+    "asset_role",
+    "collision_use",
+    "topic",
+    "evidence_projection",
+    "source_record_sha",
+    "tagger_version",
+    "review_state"
+  ],
+  "schema": "task172-gate-r-routing-schema-v1"
+}

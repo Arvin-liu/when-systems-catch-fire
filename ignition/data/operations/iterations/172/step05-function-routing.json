@@ -1,0 +1,79 @@
+{
+  "asset_kind": "FUNCTION_ASSET",
+  "authority": {
+    "path": "data/foundation/function-assets/identity-cards.jsonl",
+    "rows": 6158,
+    "sha256": "2b5a83c0e5ffe5c8199d4d8fa831b5e15832c9559614ce21b9a3d643cf6f3c16"
+  },
+  "canonical_mutation": false,
+  "command_sources": [
+    {
+      "path": "agent-commands/IGNITION-20260912-172.md",
+      "ref": "b7c27fab",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-175.md",
+      "ref": "ebc75f9c",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-176.md",
+      "ref": "b1fc45fb",
+      "repository": "Arvin-liu/1111"
+    }
+  ],
+  "decision": "STEP05_FULL_FUNCTION_ASSET_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQUIRED; NO_CANONICAL_MUTATION",
+  "field_counts": {
+    "12": 709,
+    "22": 136,
+    "23": 3,
+    "24": 29,
+    "32": 8,
+    "33": 170,
+    "52": 35,
+    "53": 66,
+    "54": 2,
+    "55": 277,
+    "56": 95,
+    "57": 47,
+    "58": 7,
+    "59": 39,
+    "61": 198,
+    "62": 35,
+    "63": 11,
+    "71": 14
+  },
+  "hard_check_intent": {
+    "canonical_semantics_changed": 0,
+    "cap_violation": 0,
+    "duplicate": 0,
+    "missing": 0,
+    "negative_positive_route": 0,
+    "orphan": 0,
+    "source_fingerprint_mismatch": 0
+  },
+  "manual_review_required": 6158,
+  "negative_boundary_rows": 4885,
+  "network": false,
+  "overlay": {
+    "path": "data/research/task172-routing-r1/function-routing-overlay.jsonl",
+    "rows": 6158,
+    "sha256": "f02c32f203b126032e1ca7da26964cf27949a3badd38adb1f3a681daa71a42b9"
+  },
+  "report_sha256": "05759ca5ed96dcc6d1532e528161b2bf60413af96d8d731c44a34a0209c60595",
+  "schema": "task172-full-routing-operation-v1",
+  "source_exact_head": "13ec32014e29db8d8d1590c41ca0d4cde694736d",
+  "source_freeze_sha256": "03f45f2ef3e6d0bf55545f70511fa2ddc1bb975fbe8990e1b7e6446ea0c2fac8",
+  "state_counts": {
+    "CLASSIFIED": 1315,
+    "MULTIDISCIPLINARY": 283,
+    "OUT_OF_UNESCO_SCOPE": 4560
+  },
+  "step": "Task172 Step05",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

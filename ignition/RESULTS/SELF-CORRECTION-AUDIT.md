@@ -7,7 +7,7 @@
 |`proof_obligation`|`REVIEW`|39|
 |`empirical_obligation`|`REVIEW`|29|
 |`cross_domain_mapping`|`REVIEW`|45|
-|`quantifier_inflation`|`REVIEW`|94|
+|`quantifier_inflation`|`REVIEW`|118|
 |`circular_reasoning`|`PASS`|0|
 |`analogy_as_isomorphism`|`PASS`|1|
 |`model_failure_to_universal_impossibility`|`PASS`|11|

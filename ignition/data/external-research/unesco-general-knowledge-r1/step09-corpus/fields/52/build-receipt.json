@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 8,
+    "global_links_after_field": 1184,
+    "global_physical_records_after_field": 1101,
+    "new_physical_records": 56,
+    "selected_links": 64
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "52",
+  "field_label": "DEMOGRAPHY",
+  "formal_parent_head": "64dc1faa35ed4d3fb43fb3aa738edb2d2f8883c1",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "71be6ba14eaeaeb7cd26bb742c3b1f7cd4f5f797a1701f4e8d0a129f052c0bd9",
+    "field_admission": "ee485bf09aa3c6aeec2e6e1ffe6ef5fa1e81ffd0396843fabcfd42b356026016",
+    "manifest": "15f4c3eee9614491d9cdf30c50bba2d7d93da436bc57830027cf2bf99f2344ca",
+    "operation": "191919722f604ddd5a614429c9bf7b33a2b75a39ce63748001a9f97087e2a4be",
+    "physical_records": "6bb2c97a68c11b4d034508768d85ae4f28ce3f841d7488cb4f7c577d75954764",
+    "report": "59aaf816cbbe6aaa49e6459ef0b91df0d3a23771fe0110af627d55133a3d91dc",
+    "source_freeze": "4c0962d7f2242b5a4de56726961f091884981d19e6335a61fa21fd6d1090157a"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "4c0962d7f2242b5a4de56726961f091884981d19e6335a61fa21fd6d1090157a",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

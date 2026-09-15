@@ -1,0 +1,63 @@
+{
+  "counts": {
+    "facet_names": [
+      "by_asset_role",
+      "by_classification_state",
+      "by_collision_use",
+      "by_topic",
+      "by_unesco_discipline",
+      "by_unesco_field"
+    ],
+    "facet_value_counts": {
+      "by_asset_role": 5,
+      "by_classification_state": 4,
+      "by_collision_use": 8,
+      "by_topic": 0,
+      "by_unesco_discipline": 0,
+      "by_unesco_field": 19
+    },
+    "function_records": 6158,
+    "nonfunction_records": 17982,
+    "records": 24140
+  },
+  "decision": "STEP07_ROUTING_INDEX_READY; READ_ONLY; EXACT_VALIDATION_REQUIRED; NO_CANONICAL_MUTATION",
+  "deterministic": true,
+  "inputs": {
+    "function_overlay": {
+      "path": "data/research/task172-routing-r1/function-routing-overlay.jsonl",
+      "rows": 6158,
+      "sha256": "f02c32f203b126032e1ca7da26964cf27949a3badd38adb1f3a681daa71a42b9"
+    },
+    "nonfunction_overlay": {
+      "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
+      "rows": 17982,
+      "sha256": "1f16a976f30e68298a7418c7d4b26df4846e9bb3b9f610c051d535d7aaa6bc06"
+    },
+    "pilot_queries": {
+      "path": "data/research/task172-routing-r1/step07-routing-pilot-queries.json",
+      "sha256": "842f21d294819cfe7989a8a0416c56ac59285e69dce00bbdc424bbb5f2aabb8a"
+    }
+  },
+  "network": false,
+  "operation_id": "knowledge.collide_object",
+  "outputs": {
+    "KNOWLEDGE/TAGS.md": "2b474fa60489c0f81bb42da6f62f1321a3494d248fefc77da993b7412a41ea37",
+    "data/operations/iterations/172/step07-routing-index.json": "3322b9b94332123bccd22e539286f362f3040b5f8b466b0231609ceaf1423e2a",
+    "data/research/task172-routing-r1/step07-routing-index-source-freeze.json": "5fdc130bbbae21e2c09e1add1680c90b917bd0299d7ed3140a290be1e771e811",
+    "data/research/task172-routing-r1/step07-routing-index.json": "75947acad6f8e38630c679211460c2cc876c050a971b40146dac186f76d993a4",
+    "data/research/task172-routing-r1/step07-routing-pilot.json": "e172d2eab7d1a50c6ec29749afd4c93b70d869bc8b114d4b6733cefbb2bca949",
+    "reports/operations/ignition-172-20260915-step07-routing-index.md": "0c9d010afa72c89c73f0cc2ab9eac3f85c80a89514a29d9eaaa7a77eb3c89ee5"
+  },
+  "pilot_hard_checks": {
+    "all_selected_exact": true,
+    "fallback_reasons_explicit": true,
+    "invalid_id_count": 0,
+    "max_candidate_universe": 800,
+    "max_selected": 50
+  },
+  "registry_write": false,
+  "repository_mutation": false,
+  "schema": "task172-step07-routing-index-build-receipt-v1",
+  "source_exact_head": "13ec32014e29db8d8d1590c41ca0d4cde694736d",
+  "step": "Task172 Step07"
+}

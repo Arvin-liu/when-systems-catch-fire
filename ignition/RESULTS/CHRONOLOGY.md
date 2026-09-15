@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 575 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 609 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -2050,6 +2050,45 @@
 - **问题：** 此来源记录了什么：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260912-172 Step02 route review](../reports/operations/ignition-172-step02-route-review.md)
+
+- **结果 ID：** `HR-4FD3F769E03BBC82`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `172-STEP02-ROUTE-REVIEW`
+- **问题：** 此来源记录了什么：IGNITION-20260912-172 Step02 route review？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: PASSWITHBOUNDEDROUTEDISPOSITIONS
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260912-172 Step01 collision audit](../reports/operations/ignition-172-step01-collision-audit.md)
+
+- **结果 ID：** `HR-88377C1093ADF0BD`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `172-STEP01-COLLISION-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260912-172 Step01 collision audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: PASSWITHBOUNDEDDISPOSITIONS
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260912-172 Step 00 baseline audit](../reports/operations/ignition-172-step00-baseline-audit.md)
+
+- **结果 ID：** `HR-4ED55B471F27CDF6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `172-STEP00-BASELINE-AUDIT`
+- **问题：** 此来源记录了什么：IGNITION-20260912-172 Step 00 baseline audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: PASSWITHBASELINERESIDUAL
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -4455,6 +4494,409 @@
 - **问题：** 此来源记录了什么：点火 Operation-specific Playbooks R1？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Only operations whose registry status is CURRENT or CURRENTBOUNDED and whose AI callability is PUBLIC or PUBLICBOUNDED receive a callable playbook. Required inputs, outputs, status, mode, read set, authorities, validators and claim ceiling below are derived from the registry rather than copied as…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 72: PHILOSOPHY](../reports/operations/ignition-172-20260915-step09-field-72.md)
+
+- **结果 ID：** `HR-E209CF9B12FF43A0`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-72`
+- **问题：** 此来源记录了什么：Task172 Step09 field 72: PHILOSOPHY？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 71: ETHICS](../reports/operations/ignition-172-20260915-step09-field-71.md)
+
+- **结果 ID：** `HR-9FA397EF4FDA55C6`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-71`
+- **问题：** 此来源记录了什么：Task172 Step09 field 71: ETHICS？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 63: SOCIOLOGY](../reports/operations/ignition-172-20260915-step09-field-63.md)
+
+- **结果 ID：** `HR-13E9B3B4578E1C4D`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-63`
+- **问题：** 此来源记录了什么：Task172 Step09 field 63: SOCIOLOGY？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 62: SCIENCES OF ARTS & LETTERS](../reports/operations/ignition-172-20260915-step09-field-62.md)
+
+- **结果 ID：** `HR-CF438096338B88F8`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-62`
+- **问题：** 此来源记录了什么：Task172 Step09 field 62: SCIENCES OF ARTS & LETTERS？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 61: PSYCHOLOGY](../reports/operations/ignition-172-20260915-step09-field-61.md)
+
+- **结果 ID：** `HR-05CC949076737494`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-61`
+- **问题：** 此来源记录了什么：Task172 Step09 field 61: PSYCHOLOGY？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 59: POLITICAL SCIENCE](../reports/operations/ignition-172-20260915-step09-field-59.md)
+
+- **结果 ID：** `HR-4915734264BB9DE0`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-59`
+- **问题：** 此来源记录了什么：Task172 Step09 field 59: POLITICAL SCIENCE？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 58: PEDAGOGY](../reports/operations/ignition-172-20260915-step09-field-58.md)
+
+- **结果 ID：** `HR-04EA1BF3FFC2D56A`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-58`
+- **问题：** 此来源记录了什么：Task172 Step09 field 58: PEDAGOGY？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 57: LINGUISTICS](../reports/operations/ignition-172-20260915-step09-field-57.md)
+
+- **结果 ID：** `HR-04914B1570918AE6`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-57`
+- **问题：** 此来源记录了什么：Task172 Step09 field 57: LINGUISTICS？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 56: JURIDICAL SCIENCES & LAW](../reports/operations/ignition-172-20260915-step09-field-56.md)
+
+- **结果 ID：** `HR-3B8D996F1E9886E9`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-56`
+- **问题：** 此来源记录了什么：Task172 Step09 field 56: JURIDICAL SCIENCES & LAW？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 55: HISTORY](../reports/operations/ignition-172-20260915-step09-field-55.md)
+
+- **结果 ID：** `HR-8C4659F4DD8045EE`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-55`
+- **问题：** 此来源记录了什么：Task172 Step09 field 55: HISTORY？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 54: GEOGRAPHY](../reports/operations/ignition-172-20260915-step09-field-54.md)
+
+- **结果 ID：** `HR-BAB21171893C54E0`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-54`
+- **问题：** 此来源记录了什么：Task172 Step09 field 54: GEOGRAPHY？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 53: ECONOMIC SCIENCES](../reports/operations/ignition-172-20260915-step09-field-53.md)
+
+- **结果 ID：** `HR-817CDCCCF68A5582`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-53`
+- **问题：** 此来源记录了什么：Task172 Step09 field 53: ECONOMIC SCIENCES？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 52: DEMOGRAPHY](../reports/operations/ignition-172-20260915-step09-field-52.md)
+
+- **结果 ID：** `HR-513A4899383EBC1D`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-52`
+- **问题：** 此来源记录了什么：Task172 Step09 field 52: DEMOGRAPHY？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 51: ANTHROPOLOGY](../reports/operations/ignition-172-20260915-step09-field-51.md)
+
+- **结果 ID：** `HR-B13564480E093AD5`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-51`
+- **问题：** 此来源记录了什么：Task172 Step09 field 51: ANTHROPOLOGY？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 33: TECHNOLOGICAL SCIENCES](../reports/operations/ignition-172-20260915-step09-field-33.md)
+
+- **结果 ID：** `HR-5797C2119CCE6FAA`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-33`
+- **问题：** 此来源记录了什么：Task172 Step09 field 33: TECHNOLOGICAL SCIENCES？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 32: MEDICAL SCIENCES](../reports/operations/ignition-172-20260915-step09-field-32.md)
+
+- **结果 ID：** `HR-964DCDEC208DA025`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-32`
+- **问题：** 此来源记录了什么：Task172 Step09 field 32: MEDICAL SCIENCES？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 31: AGRICULTURAL SCIENCES](../reports/operations/ignition-172-20260915-step09-field-31.md)
+
+- **结果 ID：** `HR-429865BA2FB29659`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-31`
+- **问题：** 此来源记录了什么：Task172 Step09 field 31: AGRICULTURAL SCIENCES？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 25: EARTH AND SPACE SCIENCES](../reports/operations/ignition-172-20260915-step09-field-25.md)
+
+- **结果 ID：** `HR-8C5918A5FC43E2C6`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-25`
+- **问题：** 此来源记录了什么：Task172 Step09 field 25: EARTH AND SPACE SCIENCES？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 24: LIFE SCIENCES](../reports/operations/ignition-172-20260915-step09-field-24.md)
+
+- **结果 ID：** `HR-CADD18CB2328CED3`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-24`
+- **问题：** 此来源记录了什么：Task172 Step09 field 24: LIFE SCIENCES？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 23: CHEMISTRY](../reports/operations/ignition-172-20260915-step09-field-23.md)
+
+- **结果 ID：** `HR-7149C661BB0AF806`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-23`
+- **问题：** 此来源记录了什么：Task172 Step09 field 23: CHEMISTRY？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 22: PHYSICS](../reports/operations/ignition-172-20260915-step09-field-22.md)
+
+- **结果 ID：** `HR-96EC40A0B9C9F87D`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-22`
+- **问题：** 此来源记录了什么：Task172 Step09 field 22: PHYSICS？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS](../reports/operations/ignition-172-20260915-step09-field-21.md)
+
+- **结果 ID：** `HR-A5172A2B53CEC20B`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-21`
+- **问题：** 此来源记录了什么：Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 12: MATHEMATICS](../reports/operations/ignition-172-20260915-step09-field-12.md)
+
+- **结果 ID：** `HR-CFB1D9D7C981B639`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-12`
+- **问题：** 此来源记录了什么：Task172 Step09 field 12: MATHEMATICS？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step09 field 11: LOGIC](../reports/operations/ignition-172-20260915-step09-field-11.md)
+
+- **结果 ID：** `HR-0D982954AA1AA3E9`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-11`
+- **问题：** 此来源记录了什么：Task172 Step09 field 11: LOGIC？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-172 Step07 — Knowledge Experience routing index](../reports/operations/ignition-172-20260915-step07-routing-index.md)
+
+- **结果 ID：** `HR-ECB9A4B8EE1483CA`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP07-ROUTING-INDEX`
+- **问题：** 此来源记录了什么：IGNITION-172 Step07 — Knowledge Experience routing index？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This logical step is based on exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-172 Step08 — UNESCO/provider metadata pilot](../reports/operations/ignition-172-20260914-step08-scholarly-pilot.md)
+
+- **结果 ID：** `HR-A9335C325605B8E4`
+- **日期：** 2026-09-14
+- **来源任务/运行：** `172-20260914-STEP08-SCHOLARLY-PILOT`
+- **问题：** 此来源记录了什么：IGNITION-172 Step08 — UNESCO/provider metadata pilot？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This logical step follows Gate T, Gate R and the Gate C policy/provider lock. The frozen parent is 36a1ed4c0e5b91598b5a4fada4bec1539ccc106b on the existing Task172 branch and Draft PR 218.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-172 Step06 — full nonfunction claim routing overlay](../reports/operations/ignition-172-20260914-step06-nonfunction-routing.md)
+
+- **结果 ID：** `HR-BC0FD3372F5D0546`
+- **日期：** 2026-09-14
+- **来源任务/运行：** `172-20260914-STEP06-NONFUNCTION-ROUTING`
+- **问题：** 此来源记录了什么：IGNITION-172 Step06 — full nonfunction claim routing overlay？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This logical step is based on the exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-172 Step05 — full function asset routing overlay](../reports/operations/ignition-172-20260914-step05-function-routing.md)
+
+- **结果 ID：** `HR-5BD3902EC1BA8DCE`
+- **日期：** 2026-09-14
+- **来源任务/运行：** `172-20260914-STEP05-FUNCTION-ROUTING`
+- **问题：** 此来源记录了什么：IGNITION-172 Step05 — full function asset routing overlay？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This logical step is based on the exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-172 Step05 — Gate C scholarly admission policy](../reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md)
+
+- **结果 ID：** `HR-9A9F6A65046403F2`
+- **日期：** 2026-09-13
+- **来源任务/运行：** `172-20260913-STEP05-GATE-C-SCHOLARLY`
+- **问题：** 此来源记录了什么：IGNITION-172 Step05 — Gate C scholarly admission policy？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Gate C is a policy lock downstream of Gate T and Gate R at Formal head 998b5654248b41a8982d0674bf0368b400b65eec. It freezes scholarly-admission semantics, provider roles, rights handling, correction/retraction handling, conservative deduplication, and a synthetic cross-domain pilot. It does not e…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-172 Step04 — Gate R routing schema and precision pilot](../reports/operations/ignition-172-20260913-step04-gate-r-routing.md)
+
+- **结果 ID：** `HR-F8412AF8D8458685`
+- **日期：** 2026-09-13
+- **来源任务/运行：** `172-20260913-STEP04-GATE-R-ROUTING`
+- **问题：** 此来源记录了什么：IGNITION-172 Step04 — Gate R routing schema and precision pilot？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Gate T exact-head CI is complete for parent 6d704d570827bf8d6ebb65fb65bcdd236056b4d3. This step freezes a bounded routing sidecar and a precision-oriented pilot; it does not perform mass taxonomy routing or scholarly corpus admission.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock](../reports/operations/ignition-172-20260913-step03-unesco-gate-t.md)
+
+- **结果 ID：** `HR-90ED509023725DA0`
+- **日期：** 2026-09-13
+- **来源任务/运行：** `172-20260913-STEP03-UNESCO-GATE-T`
+- **问题：** 此来源记录了什么：IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: GATETPASSFORAUTHORITYLOCK; MASSINGESTIONREMAINSGATEDBYGATERANDGATEC
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

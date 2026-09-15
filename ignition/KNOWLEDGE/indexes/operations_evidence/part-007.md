@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：案例说明：维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BE6D82E6E5ED2FB7 / 中文：案例说明：维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\) / IMPLICIT-BE6D82E6E5ED2FB7
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene\(t\) = σ\(Q_unresolved\(t\) × \(1-D_immune\(t\)\)\) × W\(t\) × η_delivery - Q_unresolved × \(1-D_immune\)：疑问未解但退化免疫未锁死——种子可激活条件 - W\(t\)：窗口宽度（D-X54）——时机条件 - η_delivery ∈](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DF5F4AA4482FBEEF / 中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene\(t\) = σ\(Q_unresolved\(t\) × \(1-D_immune\(t\)\)\) × W\(t\) × η_delivery - Q_unresolved × \(1-D_immune\)：疑问未解但退化免疫未锁死——种子可激活条件 - W\(t\)：窗口宽度（D-X54）——时机条件 - η_delivery ∈ / IMPLICIT-DF5F4AA4482FBEEF
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3E813E681FA10CA1 / 中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-3E813E681FA10CA1
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln\(μ/Λ_EW\)。统一度Ω_after > Ω_before。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2D2F752E1B7D42E5 / 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln\(μ/Λ_EW\)。统一度Ω_after > Ω_before。 / IMPLICIT-2D2F752E1B7D42E5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：相变序参量φ=门控面Λ的序参量。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FCE597834442D685 / 中文：相变序参量φ=门控面Λ的序参量。 / IMPLICIT-FCE597834442D685
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：该案例围绕 =0不导致Ψ=0 展开。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3ECE357BD54366BB / 中文：该案例围绕 =0不导致Ψ=0 展开。 / IMPLICIT-3ECE357BD54366BB
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：该案例围绕 =0不导致Ψ=0 展开。 English: Rule-based English rendering pending human revie…](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5F6B03A37EB47946 / 中文：该案例围绕 =0不导致Ψ=0 展开。 English: Rule-based English rendering pending human revie… / IMPLICIT-5F6B03A37EB47946
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：跑步训练σ=1.2→Ω太小→P_exit低；API成本σ=2.0→Ω太大→P_exit低。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AA3A53DA4DC5E3D5 / 中文：跑步训练σ=1.2→Ω太小→P_exit低；API成本σ=2.0→Ω太大→P_exit低。 / IMPLICIT-AA3A53DA4DC5E3D5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H\(σ\) = ½ln\(2πeσ²\) Fisher信息（分辨率）： I_Fisher\(σ\) = 1/σ²（高斯分布的Fisher信息） σ递减时：](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-001A56A0D7E4C3D6 / 中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H\(σ\) = ½ln\(2πeσ²\) Fisher信息（分辨率）： I_Fisher\(σ\) = 1/σ²（高斯分布的Fisher信息） σ递减时： / IMPLICIT-001A56A0D7E4C3D6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选](../../ASSET-CARDS.md#asset-nfc-8b5cd2066783ecf6)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8b5cd2066783ecf6 / 事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选 / 事件、内容合并、终端化投影、annotated tag 和全新克隆 resolver 分层确认；不以旧候选
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [仅凭表面相似就判定同构；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d1410beba2af6d4b / 仅凭表面相似就判定同构；

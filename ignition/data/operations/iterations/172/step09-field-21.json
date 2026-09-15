@@ -1,0 +1,38 @@
+{
+  "admission_status": "METADATA_ADMITTED_MANUAL_REVIEW_REQUIRED",
+  "content_boundary": {
+    "abstract_or_fulltext_persisted": false,
+    "metadata_only": true,
+    "raw_provider_response_persisted": false
+  },
+  "corpus_identity": [
+    "GENERAL_KNOWLEDGE_REFERENCE",
+    "SCHOLARLY_METADATA"
+  ],
+  "counts": {
+    "field_disciplines": 7,
+    "global_links_after_field": 192,
+    "global_physical_records_after_field": 187,
+    "new_physical_records": 51,
+    "selected_links": 56
+  },
+  "coverage_status": "READY_FOR_MANUAL_REVIEW",
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "evidence_boundary": {
+    "evidence_promotion": false,
+    "proof_promotion": false,
+    "replication_promotion": false
+  },
+  "field_code": "21",
+  "field_label": "ASTRONOMY AND ASTROPHYSICS",
+  "formal_parent_head": "0c302410797be9ee8058eb6115bcf28ac66176c5",
+  "iteration": 172,
+  "schema": "task172-step09-field-operation-v1",
+  "source_freeze_sha256": "b0eb733a63f253d72acb27016e8e3eb42c1a193b01182320a15c355cb5f667c8",
+  "step": "09",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

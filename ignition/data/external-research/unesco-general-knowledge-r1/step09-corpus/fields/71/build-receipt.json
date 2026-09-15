@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 5,
+    "global_links_after_field": 1888,
+    "global_physical_records_after_field": 1737,
+    "new_physical_records": 34,
+    "selected_links": 40
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "71",
+  "field_label": "ETHICS",
+  "formal_parent_head": "5030f1dd9e01a6530155e86c2120fb587b2c1146",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "b37f1209b576555921b23746b5f1ff8b4dc295e0612ebcd63c1c29b9b4b06924",
+    "field_admission": "7cd35c83e4ad14f7c17ca96e816945c0f8b7d9640c88ef7f0fffeb805d342d82",
+    "manifest": "c716e82f2af7767476f133a7d48a45d34d681557196aa6eb568ee427a548c94b",
+    "operation": "abbd38fe9089afca3bc618c8d6804c6f8b2b7ec097c3df8dbb285741b8c969b8",
+    "physical_records": "eb28f78c7e3142f81ae8ea50dd02d6b85577fa5366d8256a0b0104f94cc0b8a9",
+    "report": "9fa73988259dabe5373f86d5f0a5f535ebebdb669c55b389112b8be2e9b7d937",
+    "source_freeze": "bf87440ac6bd70f1ff1575d58f0b60e7a3dd97d849d04745cdc6405638870034"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "bf87440ac6bd70f1ff1575d58f0b60e7a3dd97d849d04745cdc6405638870034",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

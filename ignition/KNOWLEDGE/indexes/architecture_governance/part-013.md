@@ -4,6 +4,66 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [同构对：`D311 ≅ D312`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0b681e782f2f0d73 / 同构对：`D311 ≅ D312`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D311, D312；被引用：—
+- [同构对：`D331 ≅ D334 ≅ D337 ≅ D339 ≅ D340`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ec9f6c08769d7a12 / 同构对：`D331 ≅ D334 ≅ D337 ≅ D339 ≅ D340`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D331, D334, D337, D339；被引用：—
+- [同构对：`D351 ≅ D352 ≅ D355 ≅ D357 ≅ D360 ≅ D363`](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-aeb67277ff2ec89c / 同构对：`D351 ≅ D352 ≅ D355 ≅ D357 ≅ D360 ≅ D363`
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D351, D352, D355, D357；被引用：—
+- [同质组合与异质组合权衡验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-556ad0ebf42b244e / 同质组合与异质组合权衡验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [后续 UNESCO 学科深跑时，每个学科都需要先建立证据制度卡片。证据制度库提供了统一的模板和标准，确保不同学科的深跑质量一致。同时，证据制度库可以帮助识别高风险领域，避免误判。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b80805727b372754 / 后续 UNESCO 学科深跑时，每个学科都需要先建立证据制度卡片。证据制度库提供了统一的模板和标准，确保不同学科的深跑质量一致。同时，证据制度库可以帮助识别高风险领域，避免误判。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [后续扩展到更多学科前，应先完成证据制度库；](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-db38ebda18875c2a / 后续扩展到更多学科前，应先完成证据制度库；
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
+- [后续每个学科深跑前，应先建立或引用对应证据制度卡片。](../../../docs/evidence_regime_library.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-cea7659fe6076c3d / 后续每个学科深跑前，应先建立或引用对应证据制度卡片。
+  - 来源：`docs/evidence_regime_library.md`
+  - 依赖：—；被引用：—
+- [后续需要的证据或验证](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-fe5624b616a8b8f3 / 后续需要的证据或验证
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [后续需要的证据或验证。](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-ef2bb7ae38431ee1 / 后续需要的证据或验证。
+  - 来源：`docs/discipline_kernel_pilot.md`
+  - 依赖：—；被引用：—
+- [后续需要的证据或验证；](../../../docs/classic_problems_benchmark.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-accf5c55a962c74f / 后续需要的证据或验证；
+  - 来源：`docs/classic_problems_benchmark.md`
+  - 依赖：—；被引用：—
+- [否。E1 限定低耦合可预测域并设非线性退出；E2 须配预防/沙盒/上限；E3 区分良/恶性循环；E4 防强制同质化与过早收敛。四者按情境互补，无任一被设为绝对优先。PASS。](../../../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f2adf28ddd577708 / 否。E1 限定低耦合可预测域并设非线性退出；E2 须配预防/沙盒/上限；E3 区分良/恶性循环；E4 防强制同质化与过早收敛。四者按情境互补，无任一被设为绝对优先。PASS。
+  - 来源：`docs/governance/meta-protocol-reviews/cross-protocol-red-team.md`
+  - 依赖：—；被引用：—
+- [吴军财富规划笔记碰撞验证](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b319f0e40323d51e / 吴军财富规划笔记碰撞验证
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
 - [周公制礼\(dim=2\)→八百年；#3秦统一\(dim=2\)→15年亡\(但通过H压制犹豫域\)。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f0901491c4f5d55c / 周公制礼\(dim=2\)→八百年；#3秦统一\(dim=2\)→15年亡\(但通过H压制犹豫域\)。
@@ -2443,64 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-683304dbddb9780f / 某领域规律被跨域复制；
   - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [查阅证据制度库；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a95659711a465d73 / 查阅证据制度库；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [标准化的文献 dict 或 None](../../../scripts/external-research/openalex_client.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-0c8e98b787fd265c / 标准化的文献 dict 或 None
-  - 来源：`scripts/external-research/openalex_client.py`
-  - 依赖：—；被引用：—
-- [标注 pending** — 写明证据等级；](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e2c7038d8d07a391 / 标注 pending** — 写明证据等级；
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [标注证据不足（缺字段显式标"缺失"/"pending"）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7a758edd247ec41e / 标注证据不足（缺字段显式标"缺失"/"pending"）。
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
-  - 依赖：—；被引用：—
-- [校验：效率提升伴随主体性损失外部化 → 黄色协议关注点（V2 事实 pending 保持）。](../../../outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-86b679af27db0c93 / 校验：效率提升伴随主体性损失外部化 → 黄色协议关注点（V2 事实 pending 保持）。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md`
-  - 依赖：—；被引用：—
-- [核心字段名（从"核心字段"节列表中提取：L_level_recommended、evidence_required_min、evidence_required_strong、pending_conditions、forbidden_clai](../../../outputs/audit/p1-extraction-feasibility-audit-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-30581ddc85ee924f / 核心字段名（从"核心字段"节列表中提取：L_level_recommended、evidence_required_min、evidence_required_strong、pending_conditions、forbidden_clai
-  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
-  - 依赖：—；被引用：—
-- [核心案例：六大影响力原则与点火框架P_meta元协议的映射。互惠、承诺一致、社会认同等原则作为元协议实例，影响决策门控面。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-bdee566904db953c / 核心案例：六大影响力原则与点火框架P_meta元协议的映射。互惠、承诺一致、社会认同等原则作为元协议实例，影响决策门控面。
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
-  - 依赖：—；被引用：—
-- [核心案例：数据主义与点火框架Φ元统一律的碰撞。万物数据化→Φ从正值趋向零的暂态，验证了宇宙是Φ加速衰减的终极案例。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-01675d472c138179 / 核心案例：数据主义与点火框架Φ元统一律的碰撞。万物数据化→Φ从正值趋向零的暂态，验证了宇宙是Φ加速衰减的终极案例。
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
-  - 依赖：—；被引用：—
-- [核心案例：有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-50e9ec09d7113245 / 核心案例：有限游戏vs无限游戏与点火框架元协议组合的碰撞。有限游戏追求延续性（V₁），无限游戏追求创新性（V₃），验证了元协议价值取决于组合搭配。
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
-  - 依赖：—；被引用：—
-- [核心案例：规模法则与点火框架σ_opt=√e收敛验证。规模越大越好是伪命题，最优规模取决于目标元协议，验证了规模价值的哥德尔盲区。](../../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-cd24c70e8581b001 / 核心案例：规模法则与点火框架σ_opt=√e收敛验证。规模越大越好是伪命题，最优规模取决于目标元协议，验证了规模价值的哥德尔盲区。
-  - 来源：`outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md`
-  - 依赖：—；被引用：—
-- [框架内判定写成外部验证。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：NFC-bc652709fdc6d144 / 框架内判定写成外部验证。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [案例不能从单一材料推出普遍结论（边界条件强制约束）。](../../../docs/two-tables-entry-writing-standard-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0495cb9a528317a7 / 案例不能从单一材料推出普遍结论（边界条件强制约束）。
-  - 来源：`docs/two-tables-entry-writing-standard-20260709.md`
   - 依赖：—；被引用：—

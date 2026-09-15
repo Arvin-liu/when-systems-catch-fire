@@ -1,0 +1,64 @@
+{
+  "asset_kind": "FUNCTION_ASSET",
+  "canonical_mutation": false,
+  "command_sources": [
+    {
+      "path": "agent-commands/IGNITION-20260912-172.md",
+      "ref": "b7c27fab",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-175.md",
+      "ref": "ebc75f9c",
+      "repository": "Arvin-liu/1111"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260913-176.md",
+      "ref": "b1fc45fb",
+      "repository": "Arvin-liu/1111"
+    }
+  ],
+  "counts": {
+    "expected_rows": 6158,
+    "negative_boundary_rows": 4885,
+    "rows": 6158
+  },
+  "decision": "STEP05_FULL_FUNCTION_ASSET_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQUIRED; NO_CANONICAL_MUTATION",
+  "deterministic": true,
+  "hard_check_intent": {
+    "canonical_semantics_changed": 0,
+    "cap_violation": 0,
+    "duplicate": 0,
+    "missing": 0,
+    "negative_positive_route": 0,
+    "orphan": 0,
+    "source_fingerprint_mismatch": 0
+  },
+  "inputs": {
+    "authority": "2b5a83c0e5ffe5c8199d4d8fa831b5e15832c9559614ce21b9a3d643cf6f3c16",
+    "discipline_count": "245",
+    "field_count": "24",
+    "field_labels_sha256": "fa35ba2caaef0119b5f53bee2a27a07b1ccda066591b1805b5ceeb4415828d22",
+    "gate_c_build_receipt": "9b8c85a5456023a65395f014d353f06280e64d6fac8ba333545415af64d197d6",
+    "gate_r_schema": "5ece3a3e3b22d080782485d27d0b46c45224b6fe035ba247095841a2d11fdb92",
+    "gate_r_vocabulary": "5612622cedaef67fd8b5a19ddf4d40b2939d07ef78bb530301176b2e399a9b95",
+    "gate_t_discrepancy_ledger": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f",
+    "gate_t_parse": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a"
+  },
+  "manual_review_required": 6158,
+  "network": false,
+  "outputs": {
+    "operation": "c7d943dfa46c83764187a06365fa7de4dbd626e88e5a57ff30d9bf6479230fb5",
+    "overlay": "f02c32f203b126032e1ca7da26964cf27949a3badd38adb1f3a681daa71a42b9",
+    "report": "05759ca5ed96dcc6d1532e528161b2bf60413af96d8d731c44a34a0209c60595",
+    "source_freeze": "03f45f2ef3e6d0bf55545f70511fa2ddc1bb975fbe8990e1b7e6446ea0c2fac8"
+  },
+  "schema": "task172-full-routing-build-receipt-v1",
+  "source_exact_head": "13ec32014e29db8d8d1590c41ca0d4cde694736d",
+  "state_counts": {
+    "CLASSIFIED": 1315,
+    "MULTIDISCIPLINARY": 283,
+    "OUT_OF_UNESCO_SCOPE": 4560
+  },
+  "step": "Task172 Step05"
+}

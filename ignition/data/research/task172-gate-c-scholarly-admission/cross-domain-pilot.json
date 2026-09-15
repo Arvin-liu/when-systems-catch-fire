@@ -1,0 +1,120 @@
+{
+  "abstract_fulltext_persisted": false,
+  "authority": "synthetic policy simulation; no live retrieval and no corpus admission",
+  "corpus_admission": false,
+  "domains": [
+    {
+      "domain_id": "natural_science",
+      "sample_field_codes": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25"
+      ],
+      "target_per_domain": 5
+    },
+    {
+      "domain_id": "engineering_medicine",
+      "sample_field_codes": [
+        "31",
+        "32",
+        "33"
+      ],
+      "target_per_domain": 5
+    },
+    {
+      "domain_id": "social_science",
+      "sample_field_codes": [
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "61",
+        "63"
+      ],
+      "target_per_domain": 5
+    },
+    {
+      "domain_id": "humanities_law_arts_philosophy",
+      "sample_field_codes": [
+        "56",
+        "57",
+        "58",
+        "62",
+        "71",
+        "72"
+      ],
+      "target_per_domain": 5
+    }
+  ],
+  "field_sample_is_not_coverage_claim": true,
+  "live_retrieval": false,
+  "metadata_rows_admitted": 0,
+  "mode": "POLICY_SIMULATION_ONLY",
+  "schema": "task172-gate-c-cross-domain-policy-pilot-v1",
+  "selection_slots": [
+    "overview",
+    "foundational",
+    "recent",
+    "method",
+    "critical"
+  ],
+  "status": "POLICY_PILOT_PASS_NO_CORPUS_ADMISSION",
+  "synthetic_cases": [
+    {
+      "case_id": "doi-less-provider-id",
+      "expected": "metadata-only candidate; retain provider namespace; no content",
+      "input": "stable provider ID but no DOI"
+    },
+    {
+      "case_id": "correction-relation",
+      "expected": "retain original, link correction, manual review, no positive evidence",
+      "input": "provider reports CORRECTED"
+    },
+    {
+      "case_id": "retraction-relation",
+      "expected": "quarantine or tombstone positive-use eligibility; retain lineage",
+      "input": "provider reports RETRACTED"
+    },
+    {
+      "case_id": "rights-unknown",
+      "expected": "metadata only; block abstract and full text",
+      "input": "metadata present and rights unknown"
+    },
+    {
+      "case_id": "doi-duplicate",
+      "expected": "merge identity references; preserve provider provenance",
+      "input": "two providers share one normalized DOI"
+    },
+    {
+      "case_id": "title-collision",
+      "expected": "retain separately; unresolved collision; no silent merge",
+      "input": "same normalized title but different author or year"
+    },
+    {
+      "case_id": "provider-failure",
+      "expected": "record provider-health failure; do not infer no literature",
+      "input": "provider timeout or quota response"
+    },
+    {
+      "case_id": "quota-bias",
+      "expected": "do not downgrade or exclude the domain; use another declared provider or remain unresolved",
+      "input": "one domain exhausts a provider quota"
+    }
+  ],
+  "target_range_per_domain": [
+    5,
+    12
+  ],
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

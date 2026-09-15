@@ -4,17 +4,18 @@
 
 ## 主题索引
 
-- [数学与形式化](./indexes/mathematics.md) — 9737 条主归属记录
-- [物理与统一问题](./indexes/physics.md) — 479 条主归属记录
-- [系统论与机制建模](./indexes/systems.md) — 2696 条主归属记录
+- [数学与形式化](./indexes/mathematics.md) — 9768 条主归属记录
+- [物理与统一问题](./indexes/physics.md) — 481 条主归属记录
+- [系统论与机制建模](./indexes/systems.md) — 2697 条主归属记录
 - [认知、Agent 与行动](./indexes/cognition.md) — 1330 条主归属记录
-- [架构、治理与自我纠错](./indexes/architecture_governance.md) — 7111 条主归属记录
+- [架构、治理与自我纠错](./indexes/architecture_governance.md) — 7123 条主归属记录
 - [文章、写作与公共表达](./indexes/writing_publication.md) — 143 条主归属记录
-- [迭代、验证与证据工程](./indexes/operations_evidence.md) — 3195 条主归属记录
+- [迭代、验证与证据工程](./indexes/operations_evidence.md) — 3205 条主归属记录
 
 ## 不确定搜哪个主题
 
 - 先看[知识地图](./MAP.md)的研究问题。
 - 旧结论、旧编号或撤回说法先查[演化与旧称](./EVOLUTION.md)。
 - 完整机器索引位于 [`search-index.jsonl`](../data/governance/knowledge-experience/search-index.jsonl)，可按 title、aliases、status、dependencies、reverse_dependencies 和 history 查询。
+- Task172 的正交 facet 路由入口见[受控标签说明](./TAGS.md)及其 compact routing index；它只缩小 `knowledge.collide_object` 候选集，不能覆盖 canonical registry 裁决。
 - 函数与断言的全量机器权威仍分别是 identity cards 与 claim registry；搜索层不会覆盖其裁决。

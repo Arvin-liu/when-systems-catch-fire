@@ -1,0 +1,110 @@
+{
+  "content_boundary": {
+    "abstract_or_fulltext_persisted": false,
+    "metadata_only": true,
+    "raw_provider_response_persisted": false
+  },
+  "corpus_identity": [
+    "GENERAL_KNOWLEDGE_REFERENCE",
+    "SCHOLARLY_METADATA"
+  ],
+  "coverage": [
+    {
+      "discipline_code": "5801",
+      "discipline_label": "Educational theory and methods",
+      "field_code": "58",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 16
+    },
+    {
+      "discipline_code": "5802",
+      "discipline_label": "Organization and planning of education",
+      "field_code": "58",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 16
+    },
+    {
+      "discipline_code": "5803",
+      "discipline_label": "Teacher training and employment",
+      "field_code": "58",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 16
+    },
+    {
+      "discipline_code": "5899",
+      "discipline_label": "Other specialities pedagogical (specify)",
+      "field_code": "58",
+      "provider_failure_is_not_no_literature": true,
+      "selected_count": 8,
+      "status": "READY_FOR_MANUAL_REVIEW",
+      "target_count": 8,
+      "unique_identity_count": 19
+    }
+  ],
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_boundary": {
+    "evidence_promotion": false,
+    "proof_promotion": false,
+    "replication_promotion": false
+  },
+  "evidence_promotion": false,
+  "field_code": "58",
+  "field_label": "PEDAGOGY",
+  "formal_parent_head": "594bb7e53c367b7ee9c1e20b43796f4590503967",
+  "formal_write": true,
+  "global_physical_record_count_after_field": 1396,
+  "manual_review_required": true,
+  "metadata_only": true,
+  "new_physical_record_count": 28,
+  "physical_record_ids": [
+    "scholarly-metadata-05f93d9c4c3a791d961f6a3a",
+    "scholarly-metadata-09317304a6e3c0796b4abeb7",
+    "scholarly-metadata-1ab05435a74d23b3278fc746",
+    "scholarly-metadata-204a51423bf0bb484ef2518b",
+    "scholarly-metadata-20e6c7adeba8c0b9116c96ac",
+    "scholarly-metadata-29e8a0ac7fc391812db2ae19",
+    "scholarly-metadata-30dfeb594d6cd96077ebc586",
+    "scholarly-metadata-33f9df42ee13b4f4c3fbf11c",
+    "scholarly-metadata-40c7b5319719ffd7947fc0db",
+    "scholarly-metadata-54d8d20b19096c1e0520e721",
+    "scholarly-metadata-66b0ac11848ab23b7ae34336",
+    "scholarly-metadata-674fc4c0c64bf807021736ad",
+    "scholarly-metadata-6ccfbaa2be57ca4e75b804b5",
+    "scholarly-metadata-7091195e8f437d2faa7ff140",
+    "scholarly-metadata-80564c4e77e724a5756904b9",
+    "scholarly-metadata-8317416b63139833cfbf2bfb",
+    "scholarly-metadata-87cbba246c65ea5bc9380015",
+    "scholarly-metadata-8868cb94ad4285316af8bc9d",
+    "scholarly-metadata-90aee6058e2f36cefab074e9",
+    "scholarly-metadata-97991e2b8f83ace4aefbec63",
+    "scholarly-metadata-99ced5e910a1c9962c912bc4",
+    "scholarly-metadata-a3560a582bc869a2047b52e7",
+    "scholarly-metadata-a49c0c3aec2e7642114ccd93",
+    "scholarly-metadata-b52c7846148c460ea1f0738a",
+    "scholarly-metadata-b63845781f97e545e3aebafa",
+    "scholarly-metadata-bdeb93a53fa18e49b3ac4491",
+    "scholarly-metadata-c51e2fd91299e7d097e5c688",
+    "scholarly-metadata-cf448b565af1886b8eb934c1",
+    "scholarly-metadata-d25215af836dbf9e4b472a4f",
+    "scholarly-metadata-e0081064effee754bb58e414",
+    "scholarly-metadata-fa9397c8db0e532f3e9011c4",
+    "scholarly-metadata-fbf3a30ac641c42e7f035306"
+  ],
+  "policy_ref": "data/external-research/unesco-general-knowledge-r1/step09-corpus/corpus-policy.json",
+  "schema": "task172-step09-field-admission-v1",
+  "selected_link_count": 32,
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

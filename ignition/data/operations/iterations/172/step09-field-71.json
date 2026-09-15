@@ -1,0 +1,38 @@
+{
+  "admission_status": "METADATA_ADMITTED_MANUAL_REVIEW_REQUIRED",
+  "content_boundary": {
+    "abstract_or_fulltext_persisted": false,
+    "metadata_only": true,
+    "raw_provider_response_persisted": false
+  },
+  "corpus_identity": [
+    "GENERAL_KNOWLEDGE_REFERENCE",
+    "SCHOLARLY_METADATA"
+  ],
+  "counts": {
+    "field_disciplines": 5,
+    "global_links_after_field": 1888,
+    "global_physical_records_after_field": 1737,
+    "new_physical_records": 34,
+    "selected_links": 40
+  },
+  "coverage_status": "READY_FOR_MANUAL_REVIEW",
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "evidence_boundary": {
+    "evidence_promotion": false,
+    "proof_promotion": false,
+    "replication_promotion": false
+  },
+  "field_code": "71",
+  "field_label": "ETHICS",
+  "formal_parent_head": "5030f1dd9e01a6530155e86c2120fb587b2c1146",
+  "iteration": 172,
+  "schema": "task172-step09-field-operation-v1",
+  "source_freeze_sha256": "bf87440ac6bd70f1ff1575d58f0b60e7a3dd97d849d04745cdc6405638870034",
+  "step": "09",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}
