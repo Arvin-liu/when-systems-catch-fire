@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-91f57f34641602bd"></a>
+## Task 98 remote truth and gap lock
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- 1 分钟：Gap: the existing Foundation separated formal object types and status axes, but did not provide the requested ten-class function identity, independent mathematical/external evidence axes, ten claim-governance gates, a whole-history deterministic census, an anti-rebound withdrawal ledger or author… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task 98 remote truth and gap lock；Formal main start: f07413d56a45285a0f0db5b3848cb4a1a37777e2；Control commit: fc3805eb6f6e48f4d46b3c60ed15e92ee3f245be；Task 97 receipt head: 01e18b382259509c5680cd126e82c61a7e861ff3；Task 97 manifest replay: 78/78 SHA-256 entries passed；Formal branch: agent/claim-governance-physics-correction-function-census-r1-20260729
+- 完整阅读：[reports/foundation-architecture/098-remote-truth-and-gap.md](../../reports/foundation-architecture/098-remote-truth-and-gap.md)
+
 <a id="reading-hr-925728869f151733"></a>
 ## Soft Context Exposure Contract R0
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Step 15 通过。三篇完整文章、Book Project R1 和两篇成熟样章已经形成一个可继续人工编辑的出版组合；它们共享必要的证据边界，但没有把同一段论证拆成多个标题。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计；Step 15 通过。三篇完整文章、Book Project R1 和两篇成熟样章已经形成一个可继续人工编辑的出版组合；它们共享必要的证据边界，但没有把同一段论证拆成多个标题。；Book Project R1 已链接两篇样章，且素材—章节映射、四层证据策略和与既有十二章成果册的重复审计都已写入书籍项目。本步没有新增平行成果系统，也没有把样章或文章提升为外部真值、生产就绪、Owner 接受或 EPISTEMICALLYACCEPTED。；三篇文章的 checkeditorialquality.py 单文件检查均为 PASS：正文行数分别为 46、45、48；列表/表格比为 0、0、0.125；ID 主导段均为 0；均有来源与边界附录及来源链接。；validatefireseeds.py 通过：64 entries、64 clusters、40 条内容火种、24 条方法火种、393 个来源。；validatehumanvisibility.py 通过：25 个 Human Surface、14 个 machine/human pairs、20 个 two-click destinations。
 - 完整阅读：[reports/operations/ignition-143-step15-cross-publication-coherence.md](../../reports/operations/ignition-143-step15-cross-publication-coherence.md)
-
-<a id="reading-hr-a5759af803aebc01"></a>
-## 数学地基规则
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：特别规则：A 只表示声明理论内的假设/公理；T 只有链接可检查证明工件时才是 THEOREM。legacy ID 永久保留，但 legacy 标签不支配新类型。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：对象与类型：先区分集合、关系、函数、谓词、算子、状态转移、概率模型和自然语言候选。；集合与映射：每个映射声明源集合、目标集合、全/偏、确定/随机、单值/多值。；函数规则：FUNCTION 只允许单值映射；未定义点必须以偏函数或失败类型显式表示。；变量与量纲：变量、参数、单位、量纲和无量纲化过程分字段记录；量纲错误阻断发布。；命名层级：公理只在声明系统中成立；定义不是真值；引理/命题/定理/猜想/反例各有不同门禁。；方法边界：数值实验、符号计算和有限验证可找错或提供支持，不能代替无限域普遍证明。
-- 完整阅读：[docs/foundation/mathematics/README.md](../../docs/foundation/mathematics/README.md)

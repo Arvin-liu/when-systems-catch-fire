@@ -61,10 +61,10 @@
     "rows": 6158,
     "sha256": "f02c32f203b126032e1ca7da26964cf27949a3badd38adb1f3a681daa71a42b9"
   },
-  "report_sha256": "10764210eb6739f6a0f087635db56fe736b2b544b1562bbbb549c5e5bef4281b",
+  "report_sha256": "7b0e72fc04175db7ae0ca8648cc5b9840e34ed445741dfe0f6cbbcf173c156f2",
   "schema": "task172-full-routing-operation-v1",
-  "source_exact_head": "bd471ff9ee75c98241de1433ac915bf4d327b6e6",
-  "source_freeze_sha256": "61e8c76c14e003b84de4fbf240d9f1d016ae6aac257bf1998baf0f4f651f8c16",
+  "source_exact_head": "01201809e8229d770143261c5859e27a89070e3b",
+  "source_freeze_sha256": "f7da47ddfef140e57ccece29fdb38579fa8a6c77bdd76b78645bedcfd8fec2cd",
   "state_counts": {
     "CLASSIFIED": 1315,
     "MULTIDISCIPLINARY": 283,

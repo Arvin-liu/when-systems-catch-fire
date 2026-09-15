@@ -32,6 +32,13 @@
 - 5 分钟：主题：121Q9 Global Validation；Status: PASS locally for cumulative release candidate Step 003.；Passed locally using .venv-foundation:；tools/foundation/adjudicatecore.py --check；tools/foundation/migratelegacy.py --check；tools/foundation/validatefoundation.py
 - 完整阅读：[reports/release/121Q9-global-validation.md](../../reports/release/121Q9-global-validation.md)
 
+<a id="reading-hr-04914b1570918ae6"></a>
+## Task172 Step09 field 57: LINGUISTICS
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 57: LINGUISTICS；Formal parent freeze: 01201809e8229d770143261c5859e27a89070e3b；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 6；Selected metadata links: 48
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-57.md](../../reports/operations/ignition-172-20260915-step09-field-57.md)
+
 <a id="reading-hr-049665d816ca48a6"></a>
 ## IGNITION-20260824-138 — Step 06 Capability / Auth / Billing Re-attestation
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：V4 规范性审核 - 可持续性协议 (Sustainability Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；选择长期极限效用或长期稳定性最大的行动。；'长期极限效用/稳定性'未界定尺度与主体，易退化为维持任何现状（歧义/适用边界）。
 - 完整阅读：[docs/governance/meta-protocol-reviews/protocols/V4.md](../../docs/governance/meta-protocol-reviews/protocols/V4.md)
-
-<a id="reading-hr-1c6a8f5e8b981082"></a>
-## 121B Fulltext Batch Report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121B Fulltext Batch Report；主题：Task: IGNITION-20260709-121B；主题：Date: 2026-07-14；主题：Model: qclaw/pool-glm-5.2-night | Thinking: high；主题：Executive Summary；121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure reasons, and 30 provisional reviews were downgraded from FULLT…
-- 完整阅读：[reports/external-research/121b-fulltext-batch-report.md](../../reports/external-research/121b-fulltext-batch-report.md)

@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-45480c716d721c81"></a>
+## 121Q25B Whole-Project Synchronization Contract
+`HISTORICAL_OR_SUPERSEDED_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: superseded non-ready method 1.1.0 Draft candidate on PR 57. Q25C preserves this history and repairs its lifecycle deadlock. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q25B Whole-Project Synchronization Contract；Status: superseded non-ready method 1.1.0 Draft candidate on PR #57. Q25C preserves this history and repairs its lifecycle deadlock.；主题：Reproduced defect；The prior validator loaded only reports/operations/121Q24-completion-seal.json and passed that object while iterating every manifest. Seal checks ran only when task IDs matched, so Q25 could pass without any Q25 manifest/seal comparison. The generic validator now resolves each manifest's declared seal path, or infers -completion-seal.json for method 1.0.0 co…；data/operations/synchronization-surfaces.json is the canonical topology of synchronization obligations. It does not store substantive capability truth. Method 1.1.0 manifests declare transition subjects/dimensions, a registry-derived closure and separated completion states.；Repository-local validation reports implementation consistency and repository synchronization closure. It always reports live external truth as false. External Pages production verification remains a post-merge obligation.
+- 完整阅读：[reports/operations/121Q25B-whole-project-synchronization-contract.md](../../reports/operations/121Q25B-whole-project-synchronization-contract.md)
+
 <a id="reading-hr-4597e4725744281a"></a>
 ## 新增注释 · P1 接入烟雾测试
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Migration is additive. Old tables remain byte-identical. Roll back by removing generated foundation registries and views; no legacy content must be rewritten. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Migration and rollback；Migration is additive. Old tables remain byte-identical. Roll back by removing generated foundation registries and views; no legacy content must be rewritten.
 - 完整阅读：[reports/foundation-architecture/migration-and-rollback-20260712.md](../../reports/foundation-architecture/migration-and-rollback-20260712.md)
-
-<a id="reading-hr-589863c3bd7ff8fd"></a>
-## IGNITION-20260824-137 — Step 03 Codex Live Eligibility Re-attestation
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The current public Codex CLI was re-observed on the disposable probe surface: codex-cli 0.144.4, with exec --help digest 9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19. The public boundary includes --json, --output-schema, --ephemeral, --ignore-user-config, --ignore-rules, --san… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260824-137 — Step 03 Codex Live Eligibility Re-attestation；The current public Codex CLI was re-observed on the disposable probe surface: codex-cli 0.144.4, with exec --help digest 9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19. The public boundary includes --json, --output-schema, --ephemeral, --ignore-user-config, --ignore-rules, --sandbox read-only, and explicit --cd. The public resume help was a…；Login status reported presence without exposing a token. No auth file contents, session database, prompt history, or provider telemetry was read. There is no public cancel flag; cancellation is the OS transport's bounded process-group SIGTERM/SIGKILL path. No new billing/provider authority was created.；The fresh 15-minute LiveCapabilityLease is live-codex-137-lease, with digest c3a1c9d4e6d364832ad331768d4a0c6a7237b0d93e48d7e6735b242a9ab82d47, and its eligibility is ELIGIBLEFORLIVEREADONLY. The adapter now requires the observed output-schema flag and records a digest of the observed executable when available. Targeted adapter/preflight tests passed: 6 / 0 /…；Claim ceiling: this is a current public-interface eligibility observation. It does not claim that a real dispatch will return, validate, or complete.
-- 完整阅读：[reports/operations/ignition-137-step03-codex-live-eligibility.md](../../reports/operations/ignition-137-step03-codex-live-eligibility.md)

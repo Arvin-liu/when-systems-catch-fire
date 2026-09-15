@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [犹豫域维度函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D73 / 犹豫域维度函数 / D73
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D1, D90；被引用：NFC-2a06f612569696e3, NFC-3a12029809bee633, NFC-45087f1d2744ac60, NFC-461e19b120193d9f
 - [犹豫域退化函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D77 / 犹豫域退化函数 / D77
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-7c59f508952a7514 / 已迁移的历史函数来源/0323-D287-容斥主导实验签名函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D287；被引用：—
-- [已迁移的历史函数来源/0324-D288-g_eff有限时间崩溃函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-73df962921ff21da / 已迁移的历史函数来源/0324-D288-g_eff有限时间崩溃函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D288；被引用：—

@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-4e500eb8be311cb7"></a>
+## 机制抽取（mechanism-extraction）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4E500EB8BE311CB7` · [outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md](../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
+- **为什么产生：** 此来源记录了什么：机制抽取（mechanism-extraction）？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D595`, `D599`, `D583`, `T40`, `D245`, `D598`, `D597`
+- **来源与证据：** `outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`, `202`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`
+- **可搜索名称：** `机制抽取（mechanism-extraction）`, `mechanism-extraction`
+
 <a id="asset-hr-4ec1ffa8540c9ee2"></a>
 ## 治理报告：IGNITION-20260908-165
 
@@ -710,7 +730,7 @@
 - **身份/来源：** `RESULT_OR_ARTICLE` · `HR-5BD3902EC1BA8DCE` · [reports/operations/ignition-172-20260914-step05-function-routing.md](../../reports/operations/ignition-172-20260914-step05-function-routing.md)
 - **为什么产生：** 此来源记录了什么：IGNITION-172 Step05 — full function asset routing overlay？
 - **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** This logical step is based on the exact frozen parent bd471ff9ee75c98241de1433ac915bf4d327b6e6 on the existing Task172 branch and Draft PR 218.
+- **当前结果：** This logical step is based on the exact frozen parent 01201809e8229d770143261c5859e27a89070e3b on the existing Task172 branch and Draft PR 218.
 - **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
 - **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 - **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `跨域 smoke test — 社会学碰撞报告`, `collision-report`
-
-<a id="asset-hr-615330c2f4c14260"></a>
-## IGNITION-20260827-142 Step 11 — Fresh Executor Census R2
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-615330C2F4C14260` · [reports/operations/ignition-142-step11-fresh-census.md](../../reports/operations/ignition-142-step11-fresh-census.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260827-142 Step 11 — Fresh Executor Census R2？
-- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
-- **当前结果：** The shared public probe produced 14 candidates: 5 Agentic Executor records (4 installed), 4 reasoner runtimes, 3 tools and 2 UI surfaces. No inference, UI action, installation, configuration or billing operation occurred.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-142-step11-fresh-census.md`, `142-STEP11-FRESH-CENSUS`
-- **演化历史：** 2026-08-27: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260827-142 Step 11 — Fresh Executor Census R2`, `ignition-142-step11-fresh-census`

@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 6,
+    "global_links_after_field": 1480,
+    "global_physical_records_after_field": 1368,
+    "new_physical_records": 45,
+    "selected_links": 48
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "57",
+  "field_label": "LINGUISTICS",
+  "formal_parent_head": "01201809e8229d770143261c5859e27a89070e3b",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "7a083a34058f5aef96396ece03f33a4b9cfebf84644895494645df40769687b7",
+    "field_admission": "904411111f9bd3941a4fc4ea9f42d993bdd75e9d3e2c404815aa0a01c950bb2b",
+    "manifest": "0059727216cf675181679d78fbed5706a8b3368d12997b178254c05c5a29e3f4",
+    "operation": "8c621323a8c8180f92a5c50b07582e6f8b3c6062fb60a199c7d021c6c487d80a",
+    "physical_records": "fd9807998ea0f6433f1c424f513fcdf0d62db73eada6c9de1edc39f6981c025b",
+    "report": "59ff336ddd7f52cb00a08b595af0ab26e1fc7fd7fd4cf9cfd333aa5974ca5cf9",
+    "source_freeze": "388878b63f0d12f41ac890b875b2e2cd8f7e64a232d087b1a0899cf5d78018a4"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "388878b63f0d12f41ac890b875b2e2cd8f7e64a232d087b1a0899cf5d78018a4",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

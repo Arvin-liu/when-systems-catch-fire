@@ -23,12 +23,12 @@
   },
   "generated_outputs": {
     "KNOWLEDGE/TAGS.md": "2b474fa60489c0f81bb42da6f62f1321a3494d248fefc77da993b7412a41ea37",
-    "data/operations/iterations/172/step07-routing-index.json": "8d8692e09fa210a96bfb955d42d86abf20cb65f594ca2be42db485e6a8277f92",
-    "data/research/task172-routing-r1/step07-routing-index-build-receipt.json": "9684e6c2446aa6f2853a3ecc6c2b8224423f5ee462d5c11db398477871658a2e",
-    "data/research/task172-routing-r1/step07-routing-index-source-freeze.json": "3c3282864584a0e243f5ec92699f36793ac5ffdca8839a689ab5d8c9cbeedb42",
-    "data/research/task172-routing-r1/step07-routing-index.json": "11a9bc2c7462759b96e1d77aa021cfe6459cb8ab798241ab7a850159afa5d7b4",
+    "data/operations/iterations/172/step07-routing-index.json": "2a01f670d20c2980f17df4b6a2a1fd35dcb31e2e6b0ddc4f04e5c7633896cfda",
+    "data/research/task172-routing-r1/step07-routing-index-build-receipt.json": "1362a0c5f51b3794ef813ac4e660cec083eb49bd52cb81290e87305106e81d79",
+    "data/research/task172-routing-r1/step07-routing-index-source-freeze.json": "b8d35bb45b3a716d7778938773d3973e3dbd9c9ec1c862a4d6cf9fe8f34b1ada",
+    "data/research/task172-routing-r1/step07-routing-index.json": "03007f5fcd778a611b17270651f22d61ac6f27ee32dc76205cc2da4b9bd1d0b4",
     "data/research/task172-routing-r1/step07-routing-pilot.json": "e172d2eab7d1a50c6ec29749afd4c93b70d869bc8b114d4b6733cefbb2bca949",
-    "reports/operations/ignition-172-20260915-step07-routing-index.md": "8da75229ad994ba6441f813c3795ddebb602b3cae7328e0ecaffd2bdd1c1d52b"
+    "reports/operations/ignition-172-20260915-step07-routing-index.md": "03ecfbe250b2f5ca726df3f40ee997c92d800bf9491bac580f3b8d4d5126fd2b"
   },
   "machine_human_pairs": [
     {
@@ -41,7 +41,7 @@
     }
   ],
   "schema": "task172-step07-routing-index-manifest-v1",
-  "source_exact_head": "bd471ff9ee75c98241de1433ac915bf4d327b6e6",
-  "source_freeze_sha256": "3c3282864584a0e243f5ec92699f36793ac5ffdca8839a689ab5d8c9cbeedb42",
+  "source_exact_head": "01201809e8229d770143261c5859e27a89070e3b",
+  "source_freeze_sha256": "b8d35bb45b3a716d7778938773d3973e3dbd9c9ec1c862a4d6cf9fe8f34b1ada",
   "step": "Task172 Step07"
 }
