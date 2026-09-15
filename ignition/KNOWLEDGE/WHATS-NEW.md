@@ -9,7 +9,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This logical step is based on exact frozen parent 788e087949f88b244fefef08cd727aa410fe4cd4 on the existing Task172 branch and Draft PR 218.
+- **变化：** This logical step is based on exact frozen parent 40f4ba68414ec86e401806d07ab6d322192aac2c on the existing Task172 branch and Draft PR 218.
 - **来源：** [ignition-172-20260915-step07-routing-index.md](../reports/operations/ignition-172-20260915-step07-routing-index.md)
 - **资产卡：** [HR-ECB9A4B8EE1483CA](./ASSET-CARDS.md#asset-hr-ecb9a4b8ee1483ca)
 
@@ -40,6 +40,15 @@
 - **来源：** [ignition-172-20260915-step09-field-22.md](../reports/operations/ignition-172-20260915-step09-field-22.md)
 - **资产卡：** [HR-96EC40A0B9C9F87D](./ASSET-CARDS.md#asset-hr-96ec40a0b9c9f87d)
 
+<a id="change-src-hr-7149c661bb0af806"></a>
+### 2026-09-15 · Task172 Step09 field 23: CHEMISTRY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-23.md](../reports/operations/ignition-172-20260915-step09-field-23.md)
+- **资产卡：** [HR-7149C661BB0AF806](./ASSET-CARDS.md#asset-hr-7149c661bb0af806)
+
 <a id="change-src-hr-0d982954aa1aa3e9"></a>
 ### 2026-09-15 · Task172 Step09 field 11: LOGIC
 
@@ -54,7 +63,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This logical step is based on the exact frozen parent 788e087949f88b244fefef08cd727aa410fe4cd4 on the existing Task172 branch and Draft PR 218.
+- **变化：** This logical step is based on the exact frozen parent 40f4ba68414ec86e401806d07ab6d322192aac2c on the existing Task172 branch and Draft PR 218.
 - **来源：** [ignition-172-20260914-step06-nonfunction-routing.md](../reports/operations/ignition-172-20260914-step06-nonfunction-routing.md)
 - **资产卡：** [HR-BC0FD3372F5D0546](./ASSET-CARDS.md#asset-hr-bc0fd3372f5d0546)
 

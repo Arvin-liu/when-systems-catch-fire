@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-94decfed90ce354c"></a>
+## 赛课机制碰撞候选回填复核
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：上一轮 4 条不采纳项经 Ψ₀ + P1 复核全部合理： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：本报告为「回填复核」，不直接回填正式两张表。判定器：全量两张表查重 + P1 七类机器数据 + 点火元函数 Ψ₀ 新增判定。；上一轮碰撞目录：outputs/collisions/20260708-teacher-competition/；原始材料：inputs/collisions/20260708-teacher-competition/source.md（Get 笔记《赛课机制下的教师生存困境》）；校验器结果：python3 tools/validatedata.py → ALLP1DATAVALID；Ψ₀ 元函数基准：已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md（六大组件：C / M / Iiso / Lmeta / Gδ / Pmeta）；全量两张表查重：已迁移的历史函数来源/（614 文件）、已迁移的历史案例来源/（802 文件），按 18 个重点关键词检索。
+- 完整阅读：[outputs/audit/teacher-competition-backfill-review-20260708.md](../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+
 <a id="reading-hr-9516507750851228"></a>
 ## IGNITION-106: GAP-001 接口就绪度评估
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：This logical step follows Gate T, Gate R and the Gate C policy/provider lock. The frozen parent is 36a1ed4c0e5b91598b5a4fada4bec1539ccc106b on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-172 Step08 — UNESCO/provider metadata pilot；This logical step follows Gate T, Gate R and the Gate C policy/provider lock. The frozen parent is 36a1ed4c0e5b91598b5a4fada4bec1539ccc106b on the existing Task172 branch and Draft PR #218.；Gate T authority: the 1988 UNESCO primary parse, 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines. The 248 mirror, 250 local inventory and 2183 historical secondary counts remain discrepancy values, not silent substitutes.；Pilot scope: one Gate T four-digit discipline seed from each of the 24 fields; provider requests were bounded to OpenAlex, Crossref and OpenAIRE, with PubMed E-utilities only for the medical field.；Crosswalk status: QUERYSEEDONLYNODIRECTPROVIDEREQUIVALENCE; provider taxonomy identifiers are not copied into UNESCO identity, and every target remains manual-review-required.；Results: 365 sanitized metadata candidates admitted as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA; no content body was persisted, no scientific relevance was adjudicated, and no evidence/proof/replication promotion occurred.
 - 完整阅读：[reports/operations/ignition-172-20260914-step08-scholarly-pilot.md](../../reports/operations/ignition-172-20260914-step08-scholarly-pilot.md)
-
-<a id="reading-hr-a960756efab9d50a"></a>
-## 第57期故事验收报告
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：状态：PASSWITHBOUNDARIES；只使用 D600 / D601 / D602 与 C-0810 / C-0811 作为正式基础。；D603 / D604 未写成已进入 main 的事实。；M8 保留 pending，没有借故事偷升格。；跨域节点使用 Hedy Lamarr，而不是动机高度不可核验的名人拼盘。；正文基本不出现内部编号，编号与判定保留在附录和 ledger。
-- 完整阅读：[outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md](../../outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md)

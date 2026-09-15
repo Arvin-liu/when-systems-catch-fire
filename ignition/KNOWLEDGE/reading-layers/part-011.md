@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-d660dc784cc90282"></a>
+## Incremental Execution and Selective Materialization
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Historical status: 121Q32I / method 1.3.0 Closed, now superseded by Current 1.4.0. Method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical. Q32I passed the exact-head, ordinary-merge and external checks required by its historical contract; task 101 late… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Incremental Execution and Selective Materialization；Historical status: 121Q32I / method 1.3.0 Closed, now superseded by Current 1.4.0. Method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical. Q32I passed the exact-head, ordinary-merge and external checks required by its historical contract; task 101 later retired the separate deployed reading surface without deletin…；主题：Purpose and authority；Q32I adds a repository-level execution layer after Current typed change propagation. Its authority chain is:；change request -> propagation closure -> component profiles -> deterministic planner -> NonImpactProof / rebuild decisions -> structured executor -> unified validator -> rollback or recovery evidence；This chain governs declared repository dependency and materialization. It does not identify real-world causality, prove that the registries exhaust the project, or add L7.
+- 完整阅读：[docs/architecture/incremental-execution.md](../../docs/architecture/incremental-execution.md)
+
 <a id="reading-hr-d6bbd09179294577"></a>
 ## 失败类型学初稿
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Task ID: IGNITION-20260822-135 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260822-135 — Full Regression Closure & Test Environment R1；Task ID: IGNITION-20260822-135；Formal task ordinal: 135；Latest architecture-changing task: IGNITION-20260821-129; architecture task ordinal: 129.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；The canonical Current source is terminal and repository-local RELEASEREADY. currentiterationboundary=135 remains only the deprecated compatibility alias of the formal ordinal. Task135 is PRESENTATIONONLY; the map remains 0.12.0 Current with 0.11.0 Historical, the identity epoch is unchanged, CURRENTWITHOPENOBLIGATIONS remains in force, and EPISTEMICALLYACCEP…
 - 完整阅读：[agent-results/IGNITION-20260822-135-result.md](../../agent-results/IGNITION-20260822-135-result.md)
-
-<a id="reading-hr-e852e881d1527cdc"></a>
-## IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate
-`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Task141 terminality, independent obligation carry-forward, the provider-neutral admission contract, offline conformance, the fresh census, the exact validator and the no-blind-retry policy all pass. The fresh census has no live-selectable family: Codex is technical-only and policy-excluded, while… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate；Status: PASSFAILCLOSED.；Task141 terminality, independent obligation carry-forward, the provider-neutral admission contract, offline conformance, the fresh census, the exact validator and the no-blind-retry policy all pass. The fresh census has no live-selectable family: Codex is technical-only and policy-excluded, while Gemini, Hermes and OpenClaw retain explicit technical blockers…；The gate therefore returns SKIPPEDUNSAFEORUNAVAILABLE with liveauthorized=false. No synthetic fixture was created for an executor, no auth/billing/configuration boundary was opened, and neither of the two permitted live-attempt slots was consumed. Historical live counts remain 6 attempts / 0 validated completions / 0 unreconciled / 2 observation-incomplete.；Machine evidence is ignition/data/operations/iterations/142/step12-pre-live-gate.json, validated by ignition/tools/validatetask142prelivegate.py. Steps 13 and 14 will preserve this closed decision as explicit no-invocation records.；Claim ceiling: fail-closed pre-live admission evidence only; no live completion is claimed.
-- 完整阅读：[reports/operations/ignition-142-step12-pre-live-gate.md](../../reports/operations/ignition-142-step12-pre-live-gate.md)

@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-ddb5c91e38c8934a"></a>
+## IGNITION-137 Step 14 — adversarial / fault matrix
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-DDB5C91E38C8934A` · [reports/operations/ignition-137-step14-fault-matrix.md](../../reports/operations/ignition-137-step14-fault-matrix.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-137 Step 14 — adversarial / fault matrix？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The inherited live fault matrix exercised 27 cases and returned allfailclosed=true: stale leases, executor/permission/workspace widening, workspace mutations, malformed results, wrong answers, duplicate dispatch/receipts, timeout/cancellation uncertainty, capability revocation and drift, privacy…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-137-step14-fault-matrix.md`, `137-STEP14-FAULT-MATRIX`
+- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-137 Step 14 — adversarial / fault matrix`, `ignition-137-step14-fault-matrix`
+
 <a id="asset-hr-de57c4f1ec87eada"></a>
 ## 121Q28R 之元写作法 0.2.0 修订审计
 
@@ -750,7 +770,7 @@
 - **身份/来源：** `RESULT_OR_ARTICLE` · `HR-ECB9A4B8EE1483CA` · [reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
 - **为什么产生：** 此来源记录了什么：IGNITION-172 Step07 — Knowledge Experience routing index？
 - **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** This logical step is based on exact frozen parent 788e087949f88b244fefef08cd727aa410fe4cd4 on the existing Task172 branch and Draft PR 218.
+- **当前结果：** This logical step is based on exact frozen parent 40f4ba68414ec86e401806d07ab6d322192aac2c on the existing Task172 branch and Draft PR 218.
 - **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
 - **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 - **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260826-140 Step 03 — Observation / Reconciliation Plane registration`, `ignition-140-step03-observation-plane-registration`
-
-<a id="asset-hr-f5fb13bfbfdfa4c8"></a>
-## IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F5FB13BFBFDFA4C8` · [reports/operations/ignition-127-step00-rebase-audit.md](../../reports/operations/ignition-127-step00-rebase-audit.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit？
-- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
-- **当前结果：** Status: COMPLETED (repository-local audit only)
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `T16`
-- **来源与证据：** `reports/operations/ignition-127-step00-rebase-audit.md`, `127-STEP00-REBASE-AUDIT`
-- **演化历史：** 2026-08-20: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit`, `ignition-127-step00-rebase-audit`

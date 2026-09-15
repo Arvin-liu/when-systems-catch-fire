@@ -1,6 +1,6 @@
 # IGNITION-172 Step06 — full nonfunction claim routing overlay
 
-This logical step is based on the exact frozen parent `788e087949f88b244fefef08cd727aa410fe4cd4` on the existing Task172 branch and Draft PR #218.
+This logical step is based on the exact frozen parent `40f4ba68414ec86e401806d07ab6d322192aac2c` on the existing Task172 branch and Draft PR #218.
 
 - Authority: `data/foundation/nonfunction-claims/claim-registry.jsonl`; `17980` canonical rows, one routing row per canonical ID.
 - Taxonomy: 1988 UNESCO primary lock, 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines. The overlay never invents a four-digit equivalence; empty discipline facets remain explicit unresolved routing information.
