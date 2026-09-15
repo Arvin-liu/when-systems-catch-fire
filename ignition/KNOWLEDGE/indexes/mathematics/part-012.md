@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：$$P_{transition} = \\sigma\\left\(\\prod_{i=1}^{n} f_i - \\theta\\right\)$$ - $f_i$：第i个驱动因子（ε, A, D, \|M_cog\|, ...） - $\\theta](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f13381d3d78377c7 / 中文：$$P_{transition} = \\sigma\\left\(\\prod_{i=1}^{n} f_i - \\theta\\right\)$$ - $f_i$：第i个驱动因子（ε, A, D, \|M_cog\|, ...） - $\\theta
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [中文：0.618不是神秘数字，而是跨域统一定理的自然产物——当系统存在多个竞争门控面时，唯一极小点μ*的位置由门控面的相对强度决定。这解释了为什么黄金分割在如此多看似无关的领域都有效。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e2982630087456ee / 中文：0.618不是神秘数字，而是跨域统一定理的自然产物——当系统存在多个竞争门控面时，唯一极小点μ*的位置由门控面的相对强度决定。这解释了为什么黄金分割在如此多看似无关的领域都有效。
@@ -2497,10 +2502,5 @@
 - [从原文看，应约者感知到的退出权，是真实退出权经过感知函数过滤后的结果。相变四路径。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f03c3b09fe194fb4 / 从原文看，应约者感知到的退出权，是真实退出权经过感知函数过滤后的结果。相变四路径。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从原文看，应约者感知退出权的退化，受遮蔽影响。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9daef6633ff6ccd7 / 从原文看，应约者感知退出权的退化，受遮蔽影响。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

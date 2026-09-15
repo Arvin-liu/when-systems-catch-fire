@@ -304,6 +304,26 @@
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `121Q28T｜之元写作法 0.3.0 Current 收口`, `121Q28T-zhiyuan-writing-method-merge-current-closeout-audit`
 
+<a id="asset-hr-a5172a2b53cec20b"></a>
+## Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-A5172A2B53CEC20B` · [reports/operations/ignition-172-20260915-step09-field-21.md](../../reports/operations/ignition-172-20260915-step09-field-21.md)
+- **为什么产生：** 此来源记录了什么：Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-172-20260915-step09-field-21.md`, `172-20260915-STEP09-FIELD-21`
+- **演化历史：** 2026-09-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS`, `ignition-172-20260915-step09-field-21`
+
 <a id="asset-hr-a53421dea2f6cdca"></a>
 ## 099 Function Asset Registry Closure
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`
 - **可搜索名称：** `IGNITION-20260908-168 result`, `IGNITION-20260908-168-result`
-
-<a id="asset-hr-b092188d0137e398"></a>
-## IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B092188D0137E398` · [reports/operations/ignition-140-step00-baseline-audit.md](../../reports/operations/ignition-140-step00-baseline-audit.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The formal baseline was independently refreshed from origin/main and git ls-remote: both are ff0adcc2bd736217691bc7c24db82df7577d12e8. The supplied Documents directory is not a Git worktree; this task uses the clean isolated branch codex/ignition-140-observation-plane-reconciliation-live-completi…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-140-step00-baseline-audit.md`, `140-STEP00-BASELINE-AUDIT`
-- **演化历史：** 2026-08-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit`, `ignition-140-step00-baseline-audit`

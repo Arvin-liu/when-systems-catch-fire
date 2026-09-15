@@ -2044,6 +2044,11 @@
   - 可搜索名称：Task172 Step09 field 12: MATHEMATICS / ignition-172-20260915-step09-field-12
   - 来源：`reports/operations/ignition-172-20260915-step09-field-12.md`
   - 依赖：—；被引用：—
+- [Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS](../../ASSET-CARDS.md#asset-hr-a5172a2b53cec20b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS / ignition-172-20260915-step09-field-21
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-21.md`
+  - 依赖：—；被引用：—
 - [Task:** `IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731`](../../../docs/foundation/task-107-incident-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-337b55cb63f246c6 / Task:** `IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731`
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-3105c1372a644df8 / The release adds one coherent OS-owned Steering / Intent / Goal / Obligation plane across intent provenance, goal lifecy
   - 来源：`agent-results/IGNITION-20260821-129-result.md`
-  - 依赖：—；被引用：—
-- [The repository status is `registry closed by adjudication or explicit quarantine`, not `all content proved`. Python func](../../../reports/foundation-architecture/099-function-asset-registry-closure.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-20ebb8fe331114bf / The repository status is `registry closed by adjudication or explicit quarantine`, not `all content proved`. Python func
-  - 来源：`reports/foundation-architecture/099-function-asset-registry-closure.md`
   - 依赖：—；被引用：—

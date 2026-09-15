@@ -6,6 +6,11 @@
 
 - [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-00B936301892F1DB / title: "自主意识函数 / autonomous consciousness function" / IMPLICIT-00B936301892F1DB / IMPLICIT-9172D280A45CB270
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9172D280A45CB270 / title: "自主意识函数 / autonomous consciousness function" / IMPLICIT-9172D280A45CB270 / IMPLICIT-00B936301892F1DB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
@@ -2499,8 +2504,3 @@
   - 可搜索名称：CLAIM-D469 / Within the source-defined scope, 振荡优化函数 is adjudicated as RELATION: \[D468\]\(docs/zh/functions/items/D468.md\)×M14碰撞——吸引子-陷
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：D468；被引用：—
-- [Within the source-defined scope, 提议者信誉绑定 is adjudicated as RELATION: 提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。. This is a model-inte](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D7 / Within the source-defined scope, 提议者信誉绑定 is adjudicated as RELATION: 提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。. This is a model-inte
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—

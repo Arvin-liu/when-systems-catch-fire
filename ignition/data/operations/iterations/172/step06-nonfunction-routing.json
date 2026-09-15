@@ -2,8 +2,8 @@
   "asset_kind": "NONFUNCTION_CLAIM",
   "authority": {
     "path": "data/foundation/nonfunction-claims/claim-registry.jsonl",
-    "rows": 17978,
-    "sha256": "42612a8d876170d45283fa54ab7865ab341ed59d2eb21c476515a0c8246b6d44"
+    "rows": 17979,
+    "sha256": "833d40167fd7e9e3202fe9d989c85e62e4736b648fc697cb7d4ef31ed762e2b8"
   },
   "canonical_mutation": false,
   "command_sources": [
@@ -54,22 +54,22 @@
     "orphan": 0,
     "source_fingerprint_mismatch": 0
   },
-  "manual_review_required": 17978,
-  "negative_boundary_rows": 9869,
+  "manual_review_required": 17979,
+  "negative_boundary_rows": 9870,
   "network": false,
   "overlay": {
     "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
-    "rows": 17978,
-    "sha256": "1bc9561db1920a610e8841ae936c8da9af391cae010ca3579762a37c90c6cded"
+    "rows": 17979,
+    "sha256": "49633c25033b8f3a07cf347c91e6e3d50dd8c371430642bb41e948db21447099"
   },
-  "report_sha256": "8f4d518952ab9e6af207929f9e834e138ed71c9ab588767e60d20b9e79b824e1",
+  "report_sha256": "0a8c5c49b83a73337e43cc1b1d3c8704ebc2e11360bb65a6365d74942614df11",
   "schema": "task172-full-routing-operation-v1",
-  "source_exact_head": "8e231b6ab54804f8a80cc8a5230f45932176ceb9",
-  "source_freeze_sha256": "e3fc54b2b982a5a2a6b34b04fd1f13052ade9b8917573a30ccc03957ffea4801",
+  "source_exact_head": "0c302410797be9ee8058eb6115bcf28ac66176c5",
+  "source_freeze_sha256": "3ef30a61e9c67fcb1ff1c1617fbf4ee2dcacb3c6166f48560580bd04b5776d72",
   "state_counts": {
     "CLASSIFIED": 7671,
     "MULTIDISCIPLINARY": 2106,
-    "OUT_OF_UNESCO_SCOPE": 1880,
+    "OUT_OF_UNESCO_SCOPE": 1881,
     "UNRESOLVED": 6321
   },
   "step": "Task172 Step06",

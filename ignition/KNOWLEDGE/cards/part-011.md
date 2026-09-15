@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-b092188d0137e398"></a>
+## IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B092188D0137E398` · [reports/operations/ignition-140-step00-baseline-audit.md](../../reports/operations/ignition-140-step00-baseline-audit.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The formal baseline was independently refreshed from origin/main and git ls-remote: both are ff0adcc2bd736217691bc7c24db82df7577d12e8. The supplied Documents directory is not a Git worktree; this task uses the clean isolated branch codex/ignition-140-observation-plane-reconciliation-live-completi…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-140-step00-baseline-audit.md`, `140-STEP00-BASELINE-AUDIT`
+- **演化历史：** 2026-08-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit`, `ignition-140-step00-baseline-audit`
+
 <a id="asset-hr-b16fc8b1ad9d6b20"></a>
 ## v0.2 结构缺漏审计
 
@@ -370,7 +390,7 @@
 - **身份/来源：** `RESULT_OR_ARTICLE` · `HR-BC0FD3372F5D0546` · [reports/operations/ignition-172-20260914-step06-nonfunction-routing.md](../../reports/operations/ignition-172-20260914-step06-nonfunction-routing.md)
 - **为什么产生：** 此来源记录了什么：IGNITION-172 Step06 — full nonfunction claim routing overlay？
 - **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** This logical step is based on the exact frozen parent 8e231b6ab54804f8a80cc8a5230f45932176ceb9 on the existing Task172 branch and Draft PR 218.
+- **当前结果：** This logical step is based on the exact frozen parent 0c302410797be9ee8058eb6115bcf28ac66176c5 on the existing Task172 branch and Draft PR 218.
 - **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
 - **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 - **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `Historical basis-pressure reconstruction — IGNITION-20260907-164`, `historical-basis-pressure-reconstruction-2026-09-07`
-
-<a id="asset-hr-ca887c40042191e7"></a>
-## 新增案例候选 · 赛课机制下的教师生存困境
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CA887C40042191E7` · [outputs/collisions/20260708-teacher-competition/new-cases.md](../../outputs/collisions/20260708-teacher-competition/new-cases.md)
-- **为什么产生：** 此来源记录了什么：新增案例候选 · 赛课机制下的教师生存困境？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 注：三个案例均来自单篇一线访谈，非随机抽样；涉及普遍性表述须 pending（evidenceregimes EVID-011/004）。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `outputs/collisions/20260708-teacher-competition/new-cases.md`, `202`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `新增案例候选 · 赛课机制下的教师生存困境`, `new-cases`

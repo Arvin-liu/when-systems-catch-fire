@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 提议者信誉绑定 is adjudicated as RELATION: 提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。. This is a model-inte](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D7 / Within the source-defined scope, 提议者信誉绑定 is adjudicated as RELATION: 提议者姿态与信誉绑定，意识、退出成本、历史一致性决定姿态。. This is a model-inte
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 提议者姿态的激进程度 is adjudicated as METRIC: 提议者姿态的激进程度，0为完全平等，1为完全压制。退化免疫D_immune = F_form × \(](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-A2 / Within the source-defined scope, 提议者姿态的激进程度 is adjudicated as METRIC: 提议者姿态的激进程度，0为完全平等，1为完全压制。退化免疫D_immune = F_form × \(
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-4297c151a8da2bd3 / \| \[D369\]\( \) \| \[震荡阻尼-分支步长联合函数\]\( \) \| F_{D369}\(x\) := M14的阻尼影响步长：高
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D369；被引用：—
-- [\| \[D36\]\( \) \| \[逆Weibull寿命验证函数\]\( \) \| F_{D36}\(x\) := F\(t\) = exp\(-\(](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b2ef676baf994b37 / \| \[D36\]\( \) \| \[逆Weibull寿命验证函数\]\( \) \| F_{D36}\(x\) := F\(t\) = exp\(-\(
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D36；被引用：—

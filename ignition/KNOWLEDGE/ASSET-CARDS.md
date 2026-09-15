@@ -932,6 +932,8 @@
 - [IGNITION-20260827-142 Step 02 — Independent Open-Obligation Registry](./cards/part-010.md#asset-hr-a488097fe88e905e) — `RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD` · `HR-A488097FE88E905E`
 <a id="asset-hr-a492aafc18415614"></a>
 - [121Q28T｜之元写作法 0.3.0 Current 收口](./cards/part-010.md#asset-hr-a492aafc18415614) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-A492AAFC18415614`
+<a id="asset-hr-a5172a2b53cec20b"></a>
+- [Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS](./cards/part-010.md#asset-hr-a5172a2b53cec20b) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-A5172A2B53CEC20B`
 <a id="asset-hr-a53421dea2f6cdca"></a>
 - [099 Function Asset Registry Closure](./cards/part-010.md#asset-hr-a53421dea2f6cdca) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-A53421DEA2F6CDCA`
 <a id="asset-hr-a5389454f9d903de"></a>
@@ -1001,7 +1003,7 @@
 <a id="asset-hr-b056e11cc7fd672f"></a>
 - [IGNITION-20260908-168 result](./cards/part-010.md#asset-hr-b056e11cc7fd672f) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-B056E11CC7FD672F`
 <a id="asset-hr-b092188d0137e398"></a>
-- [IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit](./cards/part-010.md#asset-hr-b092188d0137e398) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-B092188D0137E398`
+- [IGNITION-20260826-140 Step 00 — Fresh baseline and Task139 semantic audit](./cards/part-011.md#asset-hr-b092188d0137e398) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-B092188D0137E398`
 <a id="asset-hr-b16fc8b1ad9d6b20"></a>
 - [v0.2 结构缺漏审计](./cards/part-011.md#asset-hr-b16fc8b1ad9d6b20) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-B16FC8B1AD9D6B20`
 <a id="asset-hr-b1aad6dbbdf235c8"></a>
@@ -1101,7 +1103,7 @@
 <a id="asset-hr-c9fad80505e44281"></a>
 - [Historical basis-pressure reconstruction — IGNITION-20260907-164](./cards/part-011.md#asset-hr-c9fad80505e44281) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-C9FAD80505E44281`
 <a id="asset-hr-ca887c40042191e7"></a>
-- [新增案例候选 · 赛课机制下的教师生存困境](./cards/part-011.md#asset-hr-ca887c40042191e7) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-CA887C40042191E7`
+- [新增案例候选 · 赛课机制下的教师生存困境](./cards/part-012.md#asset-hr-ca887c40042191e7) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-CA887C40042191E7`
 <a id="asset-hr-cbd98f3c6861aa2b"></a>
 - [IGNITION-131 Step 00 — Release publication paradox audit](./cards/part-012.md#asset-hr-cbd98f3c6861aa2b) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-CBD98F3C6861AA2B`
 <a id="asset-hr-cc59ba840b050653"></a>
@@ -1201,7 +1203,7 @@
 <a id="asset-hr-de57c4f1ec87eada"></a>
 - [121Q28R 之元写作法 0.2.0 修订审计](./cards/part-012.md#asset-hr-de57c4f1ec87eada) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-DE57C4F1EC87EADA`
 <a id="asset-hr-de79d1279206415f"></a>
-- [ESI R0 人类阅读入口](./cards/part-012.md#asset-hr-de79d1279206415f) — `RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE` · `HR-DE79D1279206415F`
+- [ESI R0 人类阅读入口](./cards/part-013.md#asset-hr-de79d1279206415f) — `RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE` · `HR-DE79D1279206415F`
 <a id="asset-hr-de9bf5c4104738d3"></a>
 - [v0.2 函数依赖图初稿](./cards/part-013.md#asset-hr-de9bf5c4104738d3) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-DE9BF5C4104738D3`
 <a id="asset-hr-deb3e834ad440e87"></a>
@@ -1301,7 +1303,7 @@
 <a id="asset-hr-f664e539ab663124"></a>
 - [Ignition Atlas](./cards/part-013.md#asset-hr-f664e539ab663124) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-F664E539AB663124`
 <a id="asset-hr-f8412af8d8458685"></a>
-- [IGNITION-172 Step04 — Gate R routing schema and precision pilot](./cards/part-013.md#asset-hr-f8412af8d8458685) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F8412AF8D8458685`
+- [IGNITION-172 Step04 — Gate R routing schema and precision pilot](./cards/part-014.md#asset-hr-f8412af8d8458685) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F8412AF8D8458685`
 <a id="asset-hr-f8c21cd0cd6a1f34"></a>
 - [生命共同体价值审查（life-community-value-audit）](./cards/part-014.md#asset-hr-f8c21cd0cd6a1f34) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-F8C21CD0CD6A1F34`
 <a id="asset-hr-f92361487a1aad76"></a>

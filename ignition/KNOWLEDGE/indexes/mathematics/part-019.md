@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0339-D303-容斥-耦合竞争动态演化函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f9f77f05053cc8c2 / 已迁移的历史函数来源/0339-D303-容斥-耦合竞争动态演化函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D303；被引用：—
 - [已迁移的历史函数来源/0340-D304-弱混合角-容斥约束函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-985ae647ca43d0a7 / 已迁移的历史函数来源/0340-D304-弱混合角-容斥约束函数.md
@@ -2499,8 +2504,3 @@
   - 可搜索名称：D207 / 费米-狄拉克 / D207
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D181, D211, D220, D270；被引用：NFC-79dc865dbd8fa6e5, NFC-7b1cc8fa4931ba59, NFC-8d986e053e9f2dbb
-- [资金量-恐惧锁定正反馈函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D67 / 资金量-恐惧锁定正反馈函数 / D67
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D1, D90；被引用：NFC-2c51d7be16d72297, NFC-53476587b9c02798, NFC-535a743ce27af1a6, NFC-70689e2a1ed27124

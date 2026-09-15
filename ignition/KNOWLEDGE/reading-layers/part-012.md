@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-ea13f7ea325dac81"></a>
+## Historical Basis-Leaps Reconstruction — IGNITION-20260906-158
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Status: research-only; DETECTORNOTVALIDATED / UNDERDETERMINED; no canonical, production, authority, capability, lifecycle, external-truth, or Owner-acceptance change. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Historical Basis-Leaps Reconstruction — IGNITION-20260906-158；Status: research-only; DETECTORNOTVALIDATED / UNDERDETERMINED; no canonical, production, authority, capability, lifecycle, external-truth, or Owner-acceptance change.；主题：Provenance and scope；This reconstruction executes the command source Arvin-liu/1111:agent-commands/IGNITION-20260906-158.md.；source Git blob: 918dce85cc18f6e653422b162c593af6b33d60a8；source content SHA-256: 513146ae504d794d6a1440c86b3d534d6ed0ba90f4e12c4946a943682461c8f9
+- 完整阅读：[docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md](../../docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md)
+
 <a id="reading-hr-ea1ccd6bb1e44892"></a>
 ## IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -49,8 +56,8 @@
 <a id="reading-hr-ecb9a4b8ee1483ca"></a>
 ## IGNITION-172 Step07 — Knowledge Experience routing index
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on exact frozen parent 8e231b6ab54804f8a80cc8a5230f45932176ceb9 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 8e231b6ab54804f8a80cc8a5230f45932176ceb9 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17978 nonfunction records = 24135 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 1 分钟：This logical step is based on exact frozen parent 0c302410797be9ee8058eb6115bcf28ac66176c5 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 0c302410797be9ee8058eb6115bcf28ac66176c5 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17979 nonfunction records = 24136 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
 - 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
 
 <a id="reading-hr-ecc4e92db835c50c"></a>

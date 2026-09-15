@@ -17,8 +17,8 @@
       "by_unesco_field": 19
     },
     "function_records": 6157,
-    "nonfunction_records": 17978,
-    "records": 24135
+    "nonfunction_records": 17979,
+    "records": 24136
   },
   "decision": "STEP07_ROUTING_INDEX_READY; READ_ONLY; EXACT_VALIDATION_REQUIRED; NO_CANONICAL_MUTATION",
   "deterministic": true,
@@ -30,8 +30,8 @@
     },
     "nonfunction_overlay": {
       "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
-      "rows": 17978,
-      "sha256": "1bc9561db1920a610e8841ae936c8da9af391cae010ca3579762a37c90c6cded"
+      "rows": 17979,
+      "sha256": "49633c25033b8f3a07cf347c91e6e3d50dd8c371430642bb41e948db21447099"
     },
     "pilot_queries": {
       "path": "data/research/task172-routing-r1/step07-routing-pilot-queries.json",
@@ -41,12 +41,12 @@
   "network": false,
   "operation_id": "knowledge.collide_object",
   "outputs": {
-    "KNOWLEDGE/TAGS.md": "31485b649418b7ce877b0baa7e17122f1774f70c037d43829958de6b954cc55e",
-    "data/operations/iterations/172/step07-routing-index.json": "70af09cfef572b6d9b679f7cd73b5a213ef1cfd0132e1783c20d962694f3b98d",
-    "data/research/task172-routing-r1/step07-routing-index-source-freeze.json": "6f76584bb495fa773073ce6c3753d465e3ccd46a913594ce230c5b974c1d36d4",
-    "data/research/task172-routing-r1/step07-routing-index.json": "10ab604230b57c187c4e3cd5dd90f96344d3d219cc562eeac36e3aaeb7e09c4e",
+    "KNOWLEDGE/TAGS.md": "4305bbe0dd6497a5fcefd1f377ff4c7413dcff0c4bec74140eaf784d6b48686e",
+    "data/operations/iterations/172/step07-routing-index.json": "a707e84c498197b653736983ed29786139195e21067d4a450343928b3cb7ba9f",
+    "data/research/task172-routing-r1/step07-routing-index-source-freeze.json": "b2c7a6ceaa99d7bc70e6a9d160aa3f755d76203ef81be48668b9481f970714ae",
+    "data/research/task172-routing-r1/step07-routing-index.json": "1e3afb1148bae27452d72116fcf21d3e26cef245016f7a7acfb187cc541f05eb",
     "data/research/task172-routing-r1/step07-routing-pilot.json": "e172d2eab7d1a50c6ec29749afd4c93b70d869bc8b114d4b6733cefbb2bca949",
-    "reports/operations/ignition-172-20260915-step07-routing-index.md": "86d1a116b1432029bcb8e9cec119038601a4c3dcbc85175b1843f689978d1dc3"
+    "reports/operations/ignition-172-20260915-step07-routing-index.md": "a6fe33d64f1712cc1cc937ffc67ef93f249270db6509b252cd61d225d4a7e134"
   },
   "pilot_hard_checks": {
     "all_selected_exact": true,
@@ -58,6 +58,6 @@
   "registry_write": false,
   "repository_mutation": false,
   "schema": "task172-step07-routing-index-build-receipt-v1",
-  "source_exact_head": "8e231b6ab54804f8a80cc8a5230f45932176ceb9",
+  "source_exact_head": "0c302410797be9ee8058eb6115bcf28ac66176c5",
   "step": "Task172 Step07"
 }

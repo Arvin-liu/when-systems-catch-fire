@@ -2,7 +2,7 @@
 
 这是 `knowledge.collide_object` 的薄人类入口。它是检索与碰撞路由元数据，不是正确性、重要性、成熟度、证据、公开资格或领域权威。旧的七个 Knowledge subjects 仍然有效；这里的 UNESCO 分面与其正交。
 
-机器索引：[`step07-routing-index.json`](../data/research/task172-routing-r1/step07-routing-index.json)。当前索引包含 24135 条 canonical-ID 路由记录；返回候选后必须回读 authority registry 做 fingerprint exact validation。
+机器索引：[`step07-routing-index.json`](../data/research/task172-routing-r1/step07-routing-index.json)。当前索引包含 24136 条 canonical-ID 路由记录；返回候选后必须回读 authority registry 做 fingerprint exact validation。
 
 ## 受控 collision-use 标签
 
@@ -39,13 +39,13 @@
 ### `COUNTEREXAMPLE`
 
 - 含义/可做什么：retrieve a negative or competing case for boundary testing。
-- 当前记录数：16314；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
+- 当前记录数：16315；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `EVIDENCE_CHECK`
 
 - 含义/可做什么：retrieve an asset whose evidence boundary needs checking。
-- 当前记录数：16474；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
+- 当前记录数：16475；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `METHOD_TRANSFER`
@@ -75,7 +75,7 @@
 ### `HISTORICAL_CONTEXT`
 
 - 含义/可做什么：retrieve historical or withdrawn context without positive promotion。
-- 当前记录数：14753；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
+- 当前记录数：14754；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ## UNESCO 分面

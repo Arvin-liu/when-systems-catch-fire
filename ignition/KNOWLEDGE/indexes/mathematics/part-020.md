@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [资金量-恐惧锁定正反馈函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D67 / 资金量-恐惧锁定正反馈函数 / D67
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D1, D90；被引用：NFC-2c51d7be16d72297, NFC-53476587b9c02798, NFC-535a743ce27af1a6, NFC-70689e2a1ed27124
 - [赛课成绩也不只属于老师个人。它属于学校，也属于区里。李清淼拿奖后，校长会在全体大会上宣读，学校公众号的相关文章也会按等次排列——一等奖的照片一定放在前面，第二名比第四名位置更显眼。这些奖项是「教研强校」的证明，也是教研员向上汇报的业绩。](../../../inputs/collisions/20260708-teacher-competition/source.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4ef282c6ad117e9a / 赛课成绩也不只属于老师个人。它属于学校，也属于区里。李清淼拿奖后，校长会在全体大会上宣读，学校公众号的相关文章也会按等次排列——一等奖的照片一定放在前面，第二名比第四名位置更显眼。这些奖项是「教研强校」的证明，也是教研员向上汇报的业绩。

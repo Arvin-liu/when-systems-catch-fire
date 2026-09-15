@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-aa71cb6d79bb27ed"></a>
+## AI entrypoint audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：AI-START-HERE.md, AI-HANDOFF.md, docs/AI-USAGE.md and docs/AI-PROMPT-TEMPLATES.md point agents to the same machine-readable authority and validation commands. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：AI entrypoint audit；AI-START-HERE.md, AI-HANDOFF.md, docs/AI-USAGE.md and docs/AI-PROMPT-TEMPLATES.md point agents to the same machine-readable authority and validation commands.
+- 完整阅读：[reports/foundation-architecture/ai-entrypoint-audit-20260712.md](../../reports/foundation-architecture/ai-entrypoint-audit-20260712.md)
+
 <a id="reading-hr-aaa1067fb3ef6d76"></a>
 ## State versus transition semantics competition
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -280,8 +287,8 @@
 <a id="reading-hr-bc0fd3372f5d0546"></a>
 ## IGNITION-172 Step06 — full nonfunction claim routing overlay
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on the exact frozen parent 8e231b6ab54804f8a80cc8a5230f45932176ceb9 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step06 — full nonfunction claim routing overlay；This logical step is based on the exact frozen parent 8e231b6ab54804f8a80cc8a5230f45932176ceb9 on the existing Task172 branch and Draft PR #218.；Authority: data/foundation/nonfunction-claims/claim-registry.jsonl; 17978 canonical rows, one routing row per canonical ID.；Taxonomy: 1988 UNESCO primary lock, 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines. The overlay never invents a four-digit equivalence; empty discipline facets remain explicit unresolved routing information.；Classification states: {'CLASSIFIED': 7671, 'MULTIDISCIPLINARY': 2106, 'OUTOFUNESCOSCOPE': 1880, 'UNRESOLVED': 6321}. Field tags are the conservative Gate R classifier projection; unresolved and out-of-scope rows remain retained and auditable.；Routing use: 9869 negative/quarantined/withdrawn boundary rows are restricted to historical/negative review routes. 11883 rows have field facets; field counts are {'12': 3746, '22': 662, '23': 6, '24': 131, '32': 82, '33': 504, '52': 10, '53': 202, '54': 25, '55': 660, '56': 462, '57': 251, '58': 126, '59': 849, '61': 682, '62': 2463, '63': 302, '71': 21, '7…
+- 1 分钟：This logical step is based on the exact frozen parent 0c302410797be9ee8058eb6115bcf28ac66176c5 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step06 — full nonfunction claim routing overlay；This logical step is based on the exact frozen parent 0c302410797be9ee8058eb6115bcf28ac66176c5 on the existing Task172 branch and Draft PR #218.；Authority: data/foundation/nonfunction-claims/claim-registry.jsonl; 17979 canonical rows, one routing row per canonical ID.；Taxonomy: 1988 UNESCO primary lock, 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines. The overlay never invents a four-digit equivalence; empty discipline facets remain explicit unresolved routing information.；Classification states: {'CLASSIFIED': 7671, 'MULTIDISCIPLINARY': 2106, 'OUTOFUNESCOSCOPE': 1881, 'UNRESOLVED': 6321}. Field tags are the conservative Gate R classifier projection; unresolved and out-of-scope rows remain retained and auditable.；Routing use: 9870 negative/quarantined/withdrawn boundary rows are restricted to historical/negative review routes. 11883 rows have field facets; field counts are {'12': 3746, '22': 662, '23': 6, '24': 131, '32': 82, '33': 504, '52': 10, '53': 202, '54': 25, '55': 660, '56': 462, '57': 251, '58': 126, '59': 849, '61': 682, '62': 2463, '63': 302, '71': 21, '7…
 - 完整阅读：[reports/operations/ignition-172-20260914-step06-nonfunction-routing.md](../../reports/operations/ignition-172-20260914-step06-nonfunction-routing.md)
 
 <a id="reading-hr-bc1eabaeeba58eb1"></a>
@@ -346,10 +353,3 @@
 - 1 分钟：状态：COMPLETEDWITHCLASSIFIEDRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260820-127 执行结果；状态：COMPLETEDWITHCLASSIFIEDRESIDUALS；本任务执行的是 IGNITION-127，不是旧 IGNITION-125。旧 125 已记录为 DEFERREDREBASEDINTO127；未执行旧文件，也未复制旧文件作为权威任务。；仓库：Arvin-liu/when-systems-catch-fire；起始正式 main：c5cec3a212dbf42564985b71c0fcec3b1fb1e564；任务分支：codex/ignition-127-os-durability-lifecycle-r3-rebased-20260820
 - 完整阅读：[agent-results/IGNITION-20260820-127-result.md](../../agent-results/IGNITION-20260820-127-result.md)
-
-<a id="reading-hr-bfe8f79290fb0e20"></a>
-## 121Q15 Q12-Q14 Cumulative Preflight
-`CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: PREFLIGHTREADYFORMAINMERGE 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q15 Q12-Q14 Cumulative Preflight；Status: PREFLIGHTREADYFORMAINMERGE；Current main before merge: 8189dde91d0adbb7957c8aa642bc76d14afe6534；PR #47 head: 338cfff999e26dce623c6c55d810587db4a668ba；PR #48 head: 5297fe6c4c3aa36519b2e0a4d751be43dee09441；PR #49 head before this seal: 4ae4167b12af1567d0a06b2e5d4bc070d3272712
-- 完整阅读：[reports/releases/121Q15-q12-q14-cumulative-preflight.md](../../reports/releases/121Q15-q12-q14-cumulative-preflight.md)

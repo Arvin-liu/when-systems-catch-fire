@@ -774,6 +774,8 @@
 - [IGNITION-20260827-142 Step 02 — Independent Open-Obligation Registry](./reading-layers/part-008.md#reading-hr-a488097fe88e905e) — `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-a492aafc18415614"></a>
 - [121Q28T｜之元写作法 0.3.0 Current 收口](./reading-layers/part-008.md#reading-hr-a492aafc18415614) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+<a id="reading-hr-a5172a2b53cec20b"></a>
+- [Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS](./reading-layers/part-008.md#reading-hr-a5172a2b53cec20b) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-a53421dea2f6cdca"></a>
 - [099 Function Asset Registry Closure](./reading-layers/part-008.md#reading-hr-a53421dea2f6cdca) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-a5389454f9d903de"></a>
@@ -801,7 +803,7 @@
 <a id="reading-hr-a9a90af4c17ea1f8"></a>
 - [赛课机制下的教师生存困境碰撞报告](./reading-layers/part-008.md#reading-hr-a9a90af4c17ea1f8) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`
 <a id="reading-hr-aa71cb6d79bb27ed"></a>
-- [AI entrypoint audit](./reading-layers/part-008.md#reading-hr-aa71cb6d79bb27ed) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- [AI entrypoint audit](./reading-layers/part-009.md#reading-hr-aa71cb6d79bb27ed) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-aaa1067fb3ef6d76"></a>
 - [State versus transition semantics competition](./reading-layers/part-009.md#reading-hr-aaa1067fb3ef6d76) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-aab6acea79423520"></a>
@@ -901,7 +903,7 @@
 <a id="reading-hr-bf69e7f307f0b285"></a>
 - [IGNITION-20260820-127 执行结果](./reading-layers/part-009.md#reading-hr-bf69e7f307f0b285) — `HISTORICAL_COMPLETION_RECORD` · `COGNITION`
 <a id="reading-hr-bfe8f79290fb0e20"></a>
-- [121Q15 Q12-Q14 Cumulative Preflight](./reading-layers/part-009.md#reading-hr-bfe8f79290fb0e20) — `CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
+- [121Q15 Q12-Q14 Cumulative Preflight](./reading-layers/part-010.md#reading-hr-bfe8f79290fb0e20) — `CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bfebf52fdf8637e3"></a>
 - [IGNITION-20260825-139 Step 12 — Independent binding and Current projection](./reading-layers/part-010.md#reading-hr-bfebf52fdf8637e3) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-c023e21ce9a8a6d4"></a>
@@ -1001,7 +1003,7 @@
 <a id="reading-hr-d6bbd09179294577"></a>
 - [失败类型学初稿](./reading-layers/part-010.md#reading-hr-d6bbd09179294577) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d6dc7edfc015e4c7"></a>
-- [《公元1117年：宋徽宗为什么崇信道教？》来源与边界](./reading-layers/part-010.md#reading-hr-d6dc7edfc015e4c7) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`
+- [《公元1117年：宋徽宗为什么崇信道教？》来源与边界](./reading-layers/part-011.md#reading-hr-d6dc7edfc015e4c7) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`
 <a id="reading-hr-d75690d278464805"></a>
 - [STEP03 blinded baseline versus governed replay](./reading-layers/part-011.md#reading-hr-d75690d278464805) — `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d77d1e13245bc9a4"></a>
@@ -1101,7 +1103,7 @@
 <a id="reading-hr-ea120e5d0d0fa5ff"></a>
 - [MF-0001~0005 Codespace 救援复核](./reading-layers/part-011.md#reading-hr-ea120e5d0d0fa5ff) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ea13f7ea325dac81"></a>
-- [Historical Basis-Leaps Reconstruction — IGNITION-20260906-158](./reading-layers/part-011.md#reading-hr-ea13f7ea325dac81) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- [Historical Basis-Leaps Reconstruction — IGNITION-20260906-158](./reading-layers/part-012.md#reading-hr-ea13f7ea325dac81) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-ea1ccd6bb1e44892"></a>
 - [IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix](./reading-layers/part-012.md#reading-hr-ea1ccd6bb1e44892) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ea8833ef83822509"></a>

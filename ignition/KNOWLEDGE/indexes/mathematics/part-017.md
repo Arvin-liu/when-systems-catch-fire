@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [数学表达 / Expression: `F_{D393}\(x\) := M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲\(D379\)→低p缓冲<g_critical\(D309\)→低p僵尸化→总g_eff下降→更多溢出。正反](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a353868b6f5342ab / 数学表达 / Expression: `F_{D393}\(x\) := M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲\(D379\)→低p缓冲<g_critical\(D309\)→低p僵尸化→总g_eff下降→更多溢出。正反
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D309, D379, D393；被引用：—
 - [数学表达 / Expression: `F_{D394}\(x\) := M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-56bdad0586b2668a / 数学表达 / Expression: `F_{D394}\(x\) := M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但极限情况下等价：无限长时间慢性消耗=无限多次小波动累积。统一：慢性消耗是波动累积
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-66af78e839c6603e / 生命共同体不限于地球；
   - 来源：`docs/governance/life-community-value-charter.md`
-  - 依赖：—；被引用：—
-- [生命共同体价值审查（life-community-value-audit）](../../../outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-4340885c8b9d796e / 生命共同体价值审查（life-community-value-audit）
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md`
   - 依赖：—；被引用：—

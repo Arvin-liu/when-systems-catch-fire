@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通\(η≈0.15\)好40%但丢失50%… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-96c6ffbfa3b18820 / 从这条案例看，中文：案例说明：无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通\(η≈0.15\)好40%但丢失50%… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识。核心函数：\[D240\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9960ad3e5733d192 / 从这条案例看，中文：案例说明：无智能无意识 — ι=0⟹Ψ=0，纯1/ln或纯随机系统没有意识。核心函数：\[D240\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2497,10 +2502,5 @@
 - [原始命题: 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-53eb81c9964b6b0a / 原始命题: 万有理论门槛函数,万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ μ_ToE时合并为Λ_ToE
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—
-- [原始命题: 两个反向单调函数相乘必然生成倒U型，最优在f₁'/f₁ = -f₂'/f₂处。 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ae71e192750e6fbd / 原始命题: 两个反向单调函数相乘必然生成倒U型，最优在f₁'/f₁ = -f₂'/f₂处。 **扩展注释 / Extended Annotation**
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：—；被引用：—

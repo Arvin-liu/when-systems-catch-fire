@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-bfe8f79290fb0e20"></a>
+## 121Q15 Q12-Q14 Cumulative Preflight
+`CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: PREFLIGHTREADYFORMAINMERGE 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q15 Q12-Q14 Cumulative Preflight；Status: PREFLIGHTREADYFORMAINMERGE；Current main before merge: 8189dde91d0adbb7957c8aa642bc76d14afe6534；PR #47 head: 338cfff999e26dce623c6c55d810587db4a668ba；PR #48 head: 5297fe6c4c3aa36519b2e0a4d751be43dee09441；PR #49 head before this seal: 4ae4167b12af1567d0a06b2e5d4bc070d3272712
+- 完整阅读：[reports/releases/121Q15-q12-q14-cumulative-preflight.md](../../reports/releases/121Q15-q12-q14-cumulative-preflight.md)
+
 <a id="reading-hr-bfebf52fdf8637e3"></a>
 ## IGNITION-20260825-139 Step 12 — Independent binding and Current projection
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：--- title: "失败类型学初稿生成" author: "之元" date: "2026-07-07" --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：范围：材料错误、边界选错、尺度错配、函数过度泛化、同构误判、证据等级不足、AI 过度解释、L2 推论误写成 L5 结论、学科证据制度误配、观察者位置错误、把局部机制误写成全局规律、把历史叙事误写成因果定律；用途：定义点火框架失败类型、触发条件、影响函数和失败案例反向修正机制。；注意：本文是失败类型学初稿，不代表已经执行函数合并、删除、降级、案例标注或自动化修正。；--- title: "失败类型学初稿生成" author: "之元" date: "2026-07-07" ---；收到。现在开始执行任务 F：失败类型学初稿。；基于任务 A-E 的结构性输出，我将把点火框架的失败方式系统化，形成可用于反证、修正和边界控制的失败类型学。
 - 完整阅读：[outputs/getbrain/failure-typology-draft-20260706.md](../../outputs/getbrain/failure-typology-draft-20260706.md)
-
-<a id="reading-hr-d6dc7edfc015e4c7"></a>
-## 《公元1117年：宋徽宗为什么崇信道教？》来源与边界
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`
-- 1 分钟：这是一份得到大脑中的结构化笔记，包含较长的第三方课程原文。它是本轮写作的起始承载点和问题入口，不是独立的历史证据集合。课程里的叙述、笑话、类比、数字和解释不能因为被笔记收录就自动获得史料地位。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：《公元1117年：宋徽宗为什么崇信道教？》来源与边界；输入标题：公元1117年：宋徽宗为什么崇信道教？-2026年07月29日-来自【得到大脑】.md；来源类别：externalinput；来源模式：FULLLOCALNOTEHASHMATCH；SHA-256：506904a3923bf5aac9f65c8311c512d2ba70b4c1073802b02647ce294fab433f；进入任务：IGNITION task 113，控制提交 d15ce70bef67b439ec2e99d1aeb1e792b4e6e9ef
-- 完整阅读：[docs/publication/cases/song-huizong-taoism-1117-source.md](../../docs/publication/cases/song-huizong-taoism-1117-source.md)

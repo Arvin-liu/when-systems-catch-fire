@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-f8412af8d8458685"></a>
+## IGNITION-172 Step04 — Gate R routing schema and precision pilot
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F8412AF8D8458685` · [reports/operations/ignition-172-20260913-step04-gate-r-routing.md](../../reports/operations/ignition-172-20260913-step04-gate-r-routing.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-172 Step04 — Gate R routing schema and precision pilot？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Gate T exact-head CI is complete for parent 6d704d570827bf8d6ebb65fb65bcdd236056b4d3. This step freezes a bounded routing sidecar and a precision-oriented pilot; it does not perform mass taxonomy routing or scholarly corpus admission.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-172-20260913-step04-gate-r-routing.md`, `172-20260913-STEP04-GATE-R-ROUTING`
+- **演化历史：** 2026-09-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-172 Step04 — Gate R routing schema and precision pilot`, `ignition-172-20260913-step04-gate-r-routing`
+
 <a id="asset-hr-f8c21cd0cd6a1f34"></a>
 ## 生命共同体价值审查（life-community-value-audit）
 

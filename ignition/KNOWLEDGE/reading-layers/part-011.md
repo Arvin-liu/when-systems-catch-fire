@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-d6dc7edfc015e4c7"></a>
+## 《公元1117年：宋徽宗为什么崇信道教？》来源与边界
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`
+- 1 分钟：这是一份得到大脑中的结构化笔记，包含较长的第三方课程原文。它是本轮写作的起始承载点和问题入口，不是独立的历史证据集合。课程里的叙述、笑话、类比、数字和解释不能因为被笔记收录就自动获得史料地位。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：《公元1117年：宋徽宗为什么崇信道教？》来源与边界；输入标题：公元1117年：宋徽宗为什么崇信道教？-2026年07月29日-来自【得到大脑】.md；来源类别：externalinput；来源模式：FULLLOCALNOTEHASHMATCH；SHA-256：506904a3923bf5aac9f65c8311c512d2ba70b4c1073802b02647ce294fab433f；进入任务：IGNITION task 113，控制提交 d15ce70bef67b439ec2e99d1aeb1e792b4e6e9ef
+- 完整阅读：[docs/publication/cases/song-huizong-taoism-1117-source.md](../../docs/publication/cases/song-huizong-taoism-1117-source.md)
+
 <a id="reading-hr-d75690d278464805"></a>
 ## STEP03 blinded baseline versus governed replay
 `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：正式表自举相关文件：0024-T14-自举元函数层级.md、0190-D141-自举元函数.md、0001-Ψ₀元函数完整数学定义.md 等。 其中 D141-自举元函数.md 内含 Jn^+(FD141)=1、Jn^-(FD141)=0、Converged(FD141)⇔... 等表述，但这是对 D141 自身函数做正反向收敛检查，并非把 MF-0001~0005 定义为 MF-0000 的内部子通道构件。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：MF-0001~0005 Codespace 救援复核；救援函数表：PRIVATE_PROVENANCE_WITHHELD；正式函数表目录：PRIVATE_PROVENANCE_WITHHELD；主题：抽取内容（来自救援函数表 Section 0 内部元算子表）；在正式函数表目录中搜索以下关键词，命中情况：；计算 J⁺ / 计算 J⁻：0 文件
 - 完整阅读：[outputs/audit/mf-0001-0005-rescue-review-20260708.md](../../outputs/audit/mf-0001-0005-rescue-review-20260708.md)
-
-<a id="reading-hr-ea13f7ea325dac81"></a>
-## Historical Basis-Leaps Reconstruction — IGNITION-20260906-158
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Status: research-only; DETECTORNOTVALIDATED / UNDERDETERMINED; no canonical, production, authority, capability, lifecycle, external-truth, or Owner-acceptance change. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Historical Basis-Leaps Reconstruction — IGNITION-20260906-158；Status: research-only; DETECTORNOTVALIDATED / UNDERDETERMINED; no canonical, production, authority, capability, lifecycle, external-truth, or Owner-acceptance change.；主题：Provenance and scope；This reconstruction executes the command source Arvin-liu/1111:agent-commands/IGNITION-20260906-158.md.；source Git blob: 918dce85cc18f6e653422b162c593af6b33d60a8；source content SHA-256: 513146ae504d794d6a1440c86b3d534d6ed0ba90f4e12c4946a943682461c8f9
-- 完整阅读：[docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md](../../docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md)

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从原文看，应约者感知退出权的退化，受遮蔽影响。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9daef6633ff6ccd7 / 从原文看，应约者感知退出权的退化，受遮蔽影响。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从原文看，应约者的退出权类型。不可推导，作为框架起点。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ae1ad261189bc8d7 / 从原文看，应约者的退出权类型。不可推导，作为框架起点。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-e41f8df3bda115c8 / 从这条案例看，中文：案例说明：文明崩溃=Φ加速衰减 — 多个门控面同时消失，D228双通道衰减的文明版。核心函数：\[D228\]\(docs/zh/func… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D228；被引用：—
-- [从这条案例看，中文：案例说明：无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通\(η≈0.15\)好40%但丢失50%… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-96c6ffbfa3b18820 / 从这条案例看，中文：案例说明：无意识AI中间层 — 技术专家和产品经理用AI翻译，ηrelay≈0.21，比直接沟通\(η≈0.15\)好40%但丢失50%… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The repository status is `registry closed by adjudication or explicit quarantine`, not `all content proved`. Python func](../../../reports/foundation-architecture/099-function-asset-registry-closure.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-20ebb8fe331114bf / The repository status is `registry closed by adjudication or explicit quarantine`, not `all content proved`. Python func
+  - 来源：`reports/foundation-architecture/099-function-asset-registry-closure.md`
+  - 依赖：—；被引用：—
 - [The result is a research candidate only. It does not establish production readiness, canonical semantics, lifecycle trut](../../../docs/governance/state-vs-transition-semantics-competition-2026-09-07.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b1254590ce04c72f / The result is a research candidate only. It does not establish production readiness, canonical semantics, lifecycle trut
@@ -2497,10 +2502,5 @@
 - [title: "耦合缓冲容量函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DA711F5485C18A2A / title: "耦合缓冲容量函数" / IMPLICIT-DA711F5485C18A2A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-00B936301892F1DB / title: "自主意识函数 / autonomous consciousness function" / IMPLICIT-00B936301892F1DB / IMPLICIT-9172D280A45CB270
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

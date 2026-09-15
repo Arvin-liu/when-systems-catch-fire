@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [四象限相变路径函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D242 / 四象限相变路径函数 / D242
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D181, D211, D220, D270；被引用：CLAIM-D244, CLAIM-D326, NFC-232fdbe16e7169d9, NFC-236dd81c6fcaceea
 - [回到开头的物件、称呼、动作或问题，让读者意识到这不是两件互不相干的事。](../../../docs/narrative-story-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7057209359d627fb / 回到开头的物件、称呼、动作或问题，让读者意识到这不是两件互不相干的事。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-2241e6bb20bceee8 / 数学表达 / Expression: `F_{D387}\(x\) := M4的Ising同构意味着配分函数Z = Σ e^{-β_H·H}，H = -ḡ·Σsᵢsⱼ + Σpᵢ·sᵢ，sᵢ=±1。ḡ对应Ising的J，pᵢ对应外场h。临界温度
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D387；被引用：—
-- [数学表达 / Expression: `F_{D393}\(x\) := M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲\(D379\)→低p缓冲<g_critical\(D309\)→低p僵尸化→总g_eff下降→更多溢出。正反](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a353868b6f5342ab / 数学表达 / Expression: `F_{D393}\(x\) := M10的溢出是传染的物理通道。统一传染链：高p恶化→溢出消耗低p缓冲\(D379\)→低p缓冲<g_critical\(D309\)→低p僵尸化→总g_eff下降→更多溢出。正反
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D309, D379, D393；被引用：—
