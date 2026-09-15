@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D331\]\( \) \| \[p*涨落函数\]\( \) \| F_{D331}\(x\) := M4的p*在有限n时有统计涨落δp*/p*∝1/√n。n小时涨落大](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b585ac563b5a3d26 / \| \[D331\]\( \) \| \[p*涨落函数\]\( \) \| F_{D331}\(x\) := M4的p*在有限n时有统计涨落δp*/p*∝1/√n。n小时涨落大
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D331；被引用：—
 - [\| \[D333\]\( \) \| \[维度回复阻尼函数\]\( \) \| F_{D333}\(x\) := M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/\(1-p](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-33959688236a9041 / \| \[D333\]\( \) \| \[维度回复阻尼函数\]\( \) \| F_{D333}\(x\) := M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/\(1-p
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-fec3ea8272d49872 / 两张表主权已回到 `when-systems-catch-fire`**：函数表在 `已迁移的历史函数来源/`，案例表在 `已迁移的历史案例来源/`。
   - 来源：`docs/getbrain-operation-guide-20260708.md`
-  - 依赖：—；被引用：—
-- [两张表单条条目结构审计与统一模板草案](../../ASSET-CARDS.md#asset-hr-b7cf68ed12ba8b82)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：两张表单条条目结构审计与统一模板草案 / two-tables-entry-format-audit-20260709
-  - 来源：`outputs/audit/two-tables-entry-format-audit-20260709.md`
   - 依赖：—；被引用：—

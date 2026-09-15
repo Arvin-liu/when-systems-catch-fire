@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 恐惧锁定稳态函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D64 / Within the source-defined scope, 恐惧锁定稳态函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 情绪信号分层函数 is adjudicated as RELATION: 情绪信号的分层结构。. This is a model-internal controlled pr](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D17 / Within the source-defined scope, 情绪信号分层函数 is adjudicated as RELATION: 情绪信号的分层结构。. This is a model-internal controlled pr
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-3398a3173227ab95 / \| \[D32\]\( \) \| \[认知-群体犹豫域统一映射函数\]\( \) \| F_{D32}\(x\) := ε_group = ⟨π⟩
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D32；被引用：—
-- [\| \[D331\]\( \) \| \[p*涨落函数\]\( \) \| F_{D331}\(x\) := M4的p*在有限n时有统计涨落δp*/p*∝1/√n。n小时涨落大](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b585ac563b5a3d26 / \| \[D331\]\( \) \| \[p*涨落函数\]\( \) \| F_{D331}\(x\) := M4的p*在有限n时有统计涨落δp*/p*∝1/√n。n小时涨落大
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D331；被引用：—

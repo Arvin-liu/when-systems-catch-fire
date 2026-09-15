@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [哥德尔不完备性是根本性约束：任何有限公理系统都存在不可证命题**](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c8dd89c21f0f07f2 / 哥德尔不完备性是根本性约束：任何有限公理系统都存在不可证命题**
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
 - [商业创新：**\\n - 创新在边缘（关联9）\\n - 创业团队规范破缺（关联10）\\n - 创业者三阶段（关联11）\\n - 阶段1大胆尝试（关联12）\\n\\n### 跨域验证结论\\n\\n**核心发现：** 4个新增函数在5个差异极大的领域](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6b538bd285f67729 / 商业创新：**\\n - 创新在边缘（关联9）\\n - 创业团队规范破缺（关联10）\\n - 创业者三阶段（关联11）\\n - 阶段1大胆尝试（关联12）\\n\\n### 跨域验证结论\\n\\n**核心发现：** 4个新增函数在5个差异极大的领域
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-207c37679681e5cf / 数学表达 / Expression: `F_{D352}\(x\) := M11的w₂决定共振频率ω_resonance∝1/w₂。窄缓冲区→高频共振。w₂缩窄（D324 n增大）使系统从"怕低频共振"变成"怕高频共振"——复杂系统的脆弱频率随
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D324, D352；被引用：—
-- [数学表达 / Expression: `F_{D355}\(x\) := M14的共存震荡中随机偏移δK∝√\(kT_eff\)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝\(ΔK/δK\)²·T_osc](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-875dc591b59a486c / 数学表达 / Expression: `F_{D355}\(x\) := M14的共存震荡中随机偏移δK∝√\(kT_eff\)·T_osc。偏移累积为随机游走，最终方向由累积符号决定。预期决定时间T_decision∝\(ΔK/δK\)²·T_osc
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D355；被引用：—

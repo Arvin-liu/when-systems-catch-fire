@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [调度-执行接口效率函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D130 / 调度-执行接口效率函数 / D130
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D180, D91；被引用：NFC-4816b5b00468385e, NFC-f4c2445da2adf68d
 - [调度-执行接口，AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-ea351ecf28001d34 / 调度-执行接口，AI编码能力完整推导，给出CAI涌现四阶段不可跳跃定理。

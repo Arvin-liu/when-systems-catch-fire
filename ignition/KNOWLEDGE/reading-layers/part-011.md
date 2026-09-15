@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-d328ae24912155e2"></a>
+## 之元写作法成果
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`
+- 1 分钟：本索引是当前成果入口，收录由之元写作法 0.5.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录同时保留历史接受时实际使用的方法版本与当前 revision；旧作品不会被回填成新版本。任务 114 的语言修订使用语言—思维逻辑平面，不改写旧接受哈希。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：本索引是当前成果入口，收录由之元写作法 0.5.0或其历史版本生成、具备可追溯来源链和点火分析链、并已进入相应审查状态的公共表达成果。每项记录同时保留历史接受时实际使用的方法版本与当前 revision；旧作品不会被回填成新版本。任务 114 的语言修订使用语言—思维逻辑平面，不改写旧接受哈希。；首页只显示按 registry 排序的最近三条；全部成果保留在本页。新增成果必须同时建立正式作品、起始案例来源链、点火分析和机器 registry 记录，不得只手工添加一条链接。来源受版权或隐私限制时，只公开 provenance 记录，不复制受限全文。；这类成果说明个人认知结构的一部分可以被提炼为可描述、可调用、可审计、可追溯来源的方法，并可由他人或 AI 使用。它不证明方法普遍最优，不表示调用者复制了之元本人，也不让文学感染力提高事实、因果或价值主张的等级。；主题：《当天意有了接口：宋徽宗与会自我证明的皇权》；状态：PUBLISHEDWITHEXPLICITLIMITATIONS；排序时间：2026-08-02 简介：先让《瑞鹤图》中的鹤从宫门上空飞过，再追问宫廷怎样报告、登记和解释这件事；天意继而经过称号、道门章疏、制度、园林、图像和受影响者，成为可以被组织的公共接口。文章最后把问题收回到谁能让这个接口报告坏消息。
+- 完整阅读：[docs/publication/zhiyuan-writing-showcase.md](../../docs/publication/zhiyuan-writing-showcase.md)
+
 <a id="reading-hr-d328b83e8acb36d8"></a>
 ## Agent result: IGNITION-20260907-164
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`
@@ -346,10 +353,3 @@
 - 1 分钟：Status: READYASMULTISCALECAUSALFABRICCANDIDATE 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q21R Multiscale Causal Fabric Validation；Status: READYASMULTISCALECAUSALFABRICCANDIDATE；Q12: effectual action can select small actions that change a fabric; mechanism adjudication can compare candidate paths and set claim ceilings.；Q13: attractor, distribution, narrative provenance, and compression checks are used to prevent "causal network" from becoming a label without information gain.；Q14: Atlas may project fabric views, but map position, edge presence, stage, visual proximity, and centrality are not proof.；Charter Gate: responsibility and burden projections must record beneficiaries, risk bearers, silent subjects, irreversibility, and rollback limits.
 - 完整阅读：[reports/architecture/121Q21R-multiscale-causal-fabric-validation.md](../../reports/architecture/121Q21R-multiscale-causal-fabric-validation.md)
-
-<a id="reading-hr-e5c82087cc19191e"></a>
-## 121Q14 Baseline And Latent Map Audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：121Q14 starts from 121Q13 Draft PR 48 head 5297fe6c4c3aa36519b2e0a4d751be43dee09441. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q14 Baseline And Latent Map Audit；Status: BASELINEAUDITED；121Q14 starts from 121Q13 Draft PR #48 head 5297fe6c4c3aa36519b2e0a4d751be43dee09441.；PR #48: open, draft, unmerged, mergeable.；121Q13 Foundation remote run 29410550418: success.；121Q13 Function OS remote run 29410552324: success.
-- 完整阅读：[reports/atlas/121Q14-baseline-latent-map-audit.md](../../reports/atlas/121Q14-baseline-latent-map-audit.md)

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [原始命题: --- kind: "function" seq: 610 id: "D600" raw_id: "D600" title: "资源托举退化为路径控制" source: "IGNITION-20260709-047 collis](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-11f3a0cd14dba324 / 原始命题: --- kind: "function" seq: 610 id: "D600" raw_id: "D600" title: "资源托举退化为路径控制" source: "IGNITION-20260709-047 collis
+  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
+  - 依赖：D600；被引用：—
 - [原始命题: --- kind: "function" seq: 611 id: "D601" raw_id: "D601" title: "角色覆盖主体身份" source: "IGNITION-20260709-047 collision](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-34ed61e2be638726 / 原始命题: --- kind: "function" seq: 611 id: "D601" raw_id: "D601" title: "角色覆盖主体身份" source: "IGNITION-20260709-047 collision
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-edfef58b4545a9da / 哥德尔不完备性定理：任何包含算术的一致形式系统都存在无法在该系统内证明的命题。
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [哥德尔不完备性是根本性约束：任何有限公理系统都存在不可证命题**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c8dd89c21f0f07f2 / 哥德尔不完备性是根本性约束：任何有限公理系统都存在不可证命题**
-  - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

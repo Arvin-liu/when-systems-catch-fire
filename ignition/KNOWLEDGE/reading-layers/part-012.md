@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e5c82087cc19191e"></a>
+## 121Q14 Baseline And Latent Map Audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：121Q14 starts from 121Q13 Draft PR 48 head 5297fe6c4c3aa36519b2e0a4d751be43dee09441. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q14 Baseline And Latent Map Audit；Status: BASELINEAUDITED；121Q14 starts from 121Q13 Draft PR #48 head 5297fe6c4c3aa36519b2e0a4d751be43dee09441.；PR #48: open, draft, unmerged, mergeable.；121Q13 Foundation remote run 29410550418: success.；121Q13 Function OS remote run 29410552324: success.
+- 完整阅读：[reports/atlas/121Q14-baseline-latent-map-audit.md](../../reports/atlas/121Q14-baseline-latent-map-audit.md)
+
 <a id="reading-hr-e628768805f5eb1d"></a>
 ## Counterexample replay audit
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -126,8 +133,8 @@
 <a id="reading-hr-ecb9a4b8ee1483ca"></a>
 ## IGNITION-172 Step07 — Knowledge Experience routing index
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on exact frozen parent d90766d43ea7337b60f6b849c4fe9f26fabf902f on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent d90766d43ea7337b60f6b849c4fe9f26fabf902f on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17981 nonfunction records = 24138 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 1 分钟：This logical step is based on exact frozen parent 7204011c624919e738b493341d06f50450f4c480 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 7204011c624919e738b493341d06f50450f4c480 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17981 nonfunction records = 24138 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
 - 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
 
 <a id="reading-hr-ecc4e92db835c50c"></a>

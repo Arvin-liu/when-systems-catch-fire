@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "缓冲消耗速度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B5ED0B920231AF7F / title: "缓冲消耗速度函数" / IMPLICIT-B5ED0B920231AF7F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "缓冲溢出方向函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A96F6BF352EA737F / title: "缓冲溢出方向函数" / IMPLICIT-A96F6BF352EA737F
@@ -2497,10 +2502,5 @@
 - [Within the source-defined scope, 形式系统外推边界函数 is adjudicated as MECHANISM_MODEL: classify_A\(p\) in {provable, refutable, in](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D475 / Within the source-defined scope, 形式系统外推边界函数 is adjudicated as MECHANISM_MODEL: classify_A\(p\) in {provable, refutable, in
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 恐惧锁定稳态函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D64 / Within the source-defined scope, 恐惧锁定稳态函数 is adjudicated as RELATION: 书籍碰撞函数，书籍碰撞案例验证。. This is a model-internal control
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

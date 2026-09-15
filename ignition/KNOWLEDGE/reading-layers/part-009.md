@@ -333,6 +333,13 @@
 - 5 分钟：主题：IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit；Status: BASELINEREPRODUCED；The refreshed control ref is Arvin-liu/1111:origin/relay/current@3fc8a329eb4f581d1940688046bdc16f4594417d. The isolated formal worktree starts from Arvin-liu/when-systems-catch-fire:main@517510aed545ff440c3464536ba2964c94e5f560 and was clean before the audit.；主题：Current path manifest；ignition/tools/foundation/validaterepositorypathclassification.py explicitly defines classification-manifest.jsonl as a generated snapshot of the deterministic live engine. Its --check mode compares the live Git path set to the committed manifest and fails closed on missing, stale, duplicate, category-drift, unresolved, and anti-backflow violations. The clea…；The observed baseline is:
 - 完整阅读：[reports/operations/ignition-134-step00-residual-archaeology.md](../../reports/operations/ignition-134-step00-residual-archaeology.md)
 
+<a id="reading-hr-bab21171893c54e0"></a>
+## Task172 Step09 field 54: GEOGRAPHY
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 54: GEOGRAPHY；Formal parent freeze: 7204011c624919e738b493341d06f50450f4c480；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 5；Selected metadata links: 40
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-54.md](../../reports/operations/ignition-172-20260915-step09-field-54.md)
+
 <a id="reading-hr-bb7bae0c9846bcb2"></a>
 ## IGNITION-20260817-124 — OS Control Plane R2 progress
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：两张表全量碰撞报告（two-tables-full-collision-report）；函数总表：619 文件，最高编号 0609（D599）；INDEX 标注函数总数 617。；案例总表：805 文件，最高编号 0804（C-0809）。；全量查重方式：对 M1–M9 逐条在函数总表做关键词+锚点检索（家庭/身份/价值感/沉没/托举/管理成本/支持/角色/父母/服从 轴 grep），并对命中的 D595–D599、D583、T40、D245 逐篇精读确认实质同构。；查重结论：家庭/身份/价值感/托举/管理成本轴函数表零命中；退出权/自我模型/指标替代价值轴强相关。；新函数 3 条：M3、M4、M5（≤5 ✅）。
 - 完整阅读：[outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md](../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
-
-<a id="reading-hr-bc0fd3372f5d0546"></a>
-## IGNITION-172 Step06 — full nonfunction claim routing overlay
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on the exact frozen parent d90766d43ea7337b60f6b849c4fe9f26fabf902f on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step06 — full nonfunction claim routing overlay；This logical step is based on the exact frozen parent d90766d43ea7337b60f6b849c4fe9f26fabf902f on the existing Task172 branch and Draft PR #218.；Authority: data/foundation/nonfunction-claims/claim-registry.jsonl; 17981 canonical rows, one routing row per canonical ID.；Taxonomy: 1988 UNESCO primary lock, 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines. The overlay never invents a four-digit equivalence; empty discipline facets remain explicit unresolved routing information.；Classification states: {'CLASSIFIED': 7672, 'MULTIDISCIPLINARY': 2107, 'OUTOFUNESCOSCOPE': 1881, 'UNRESOLVED': 6321}. Field tags are the conservative Gate R classifier projection; unresolved and out-of-scope rows remain retained and auditable.；Routing use: 9872 negative/quarantined/withdrawn boundary rows are restricted to historical/negative review routes. 11886 rows have field facets; field counts are {'12': 3746, '22': 663, '23': 6, '24': 132, '32': 82, '33': 504, '52': 10, '53': 202, '54': 25, '55': 660, '56': 462, '57': 251, '58': 126, '59': 849, '61': 682, '62': 2463, '63': 302, '71': 21, '7…
-- 完整阅读：[reports/operations/ignition-172-20260914-step06-nonfunction-routing.md](../../reports/operations/ignition-172-20260914-step06-nonfunction-routing.md)

@@ -896,12 +896,14 @@
 - [MF-0001~0005 补入审计记录（2026-07-08）](./reading-layers/part-009.md#reading-hr-b9ed64291673acbc) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ba75dd3140d0b0a0"></a>
 - [IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit](./reading-layers/part-009.md#reading-hr-ba75dd3140d0b0a0) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+<a id="reading-hr-bab21171893c54e0"></a>
+- [Task172 Step09 field 54: GEOGRAPHY](./reading-layers/part-009.md#reading-hr-bab21171893c54e0) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bb7bae0c9846bcb2"></a>
 - [IGNITION-20260817-124 — OS Control Plane R2 progress](./reading-layers/part-009.md#reading-hr-bb7bae0c9846bcb2) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bbf31ff3f05d22fe"></a>
 - [两张表全量碰撞报告（two-tables-full-collision-report）](./reading-layers/part-009.md#reading-hr-bbf31ff3f05d22fe) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bc0fd3372f5d0546"></a>
-- [IGNITION-172 Step06 — full nonfunction claim routing overlay](./reading-layers/part-009.md#reading-hr-bc0fd3372f5d0546) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- [IGNITION-172 Step06 — full nonfunction claim routing overlay](./reading-layers/part-010.md#reading-hr-bc0fd3372f5d0546) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bc1eabaeeba58eb1"></a>
 - [IGNITION-20260827-142 Step 13 — Live Attempt A](./reading-layers/part-010.md#reading-hr-bc1eabaeeba58eb1) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bcc48ae7649ea4fe"></a>
@@ -1001,7 +1003,7 @@
 <a id="reading-hr-d2f7959438110a91"></a>
 - [经典问题 benchmark 卡片：叙事为什么能改变人的理解](./reading-layers/part-010.md#reading-hr-d2f7959438110a91) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d328ae24912155e2"></a>
-- [之元写作法成果](./reading-layers/part-010.md#reading-hr-d328ae24912155e2) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`
+- [之元写作法成果](./reading-layers/part-011.md#reading-hr-d328ae24912155e2) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`
 <a id="reading-hr-d328b83e8acb36d8"></a>
 - [Agent result: IGNITION-20260907-164](./reading-layers/part-011.md#reading-hr-d328b83e8acb36d8) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`
 <a id="reading-hr-d340adc528dc460f"></a>
@@ -1101,7 +1103,7 @@
 <a id="reading-hr-e5b132f83f5707d0"></a>
 - [121Q21R Multiscale Causal Fabric Validation](./reading-layers/part-011.md#reading-hr-e5b132f83f5707d0) — `CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-e5c82087cc19191e"></a>
-- [121Q14 Baseline And Latent Map Audit](./reading-layers/part-011.md#reading-hr-e5c82087cc19191e) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- [121Q14 Baseline And Latent Map Audit](./reading-layers/part-012.md#reading-hr-e5c82087cc19191e) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-e628768805f5eb1d"></a>
 - [Counterexample replay audit](./reading-layers/part-012.md#reading-hr-e628768805f5eb1d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-e7a557e011cab937"></a>
