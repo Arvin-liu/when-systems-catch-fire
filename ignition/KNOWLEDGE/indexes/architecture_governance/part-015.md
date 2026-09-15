@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [需要代码、实验、benchmark、可复现评测。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-17a0dfc53e525260 / 需要代码、实验、benchmark、可复现评测。
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [需要单独深挖的协议：V2、V3（仅事实度量验证，非重新审核）。**](../../../docs/governance/meta-protocol-reviews/cross-protocol-red-team.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a830904b698f0175 / 需要单独深挖的协议：V2、V3（仅事实度量验证，非重新审核）。**

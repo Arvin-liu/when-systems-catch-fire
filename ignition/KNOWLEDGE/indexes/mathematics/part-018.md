@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [生命共同体价值宪章](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-72d40daf5b112964 / 生命共同体价值宪章
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
+- [生命共同体价值宪章是规范边界，不是事实、数学或授权证据。](../../../docs/project-current-state.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-bf8cfcffece93dc9 / 生命共同体价值宪章是规范边界，不是事实、数学或授权证据。
+  - 来源：`docs/project-current-state.md`
+  - 依赖：—；被引用：—
 - [生命共同体价值宪章：\[../life-community-value-charter.md\]\(../life-community-value-charter.md\)](../../../docs/governance/meta-protocol-reviews/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-e24171d955e30622 / 生命共同体价值宪章：\[../life-community-value-charter.md\]\(../life-community-value-charter.md\)
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-985ae647ca43d0a7 / 已迁移的历史函数来源/0340-D304-弱混合角-容斥约束函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D304；被引用：—
-- [已迁移的历史函数来源/0341-D305-维度偏离退化路径函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-269a7fbaf244427d / 已迁移的历史函数来源/0341-D305-维度偏离退化路径函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D305；被引用：—
-- [已迁移的历史函数来源/0342-D306-去容斥条件函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9cc0542705052ca6 / 已迁移的历史函数来源/0342-D306-去容斥条件函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D306；被引用：—

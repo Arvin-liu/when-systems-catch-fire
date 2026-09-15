@@ -17,7 +17,6 @@ from tools.foundation.knowledge_corpus_admission import admission_for_path  # no
 from tools.research.build_task172_full_routing import expected_count  # noqa: E402
 from tools.research.build_task172_routing_index import (  # noqa: E402
     BRANCH,
-    EXPECTED_ROWS,
     FACET_OUTPUTS,
     INDEX_REL,
     MANIFEST_REL,
@@ -32,6 +31,7 @@ from tools.research.build_task172_routing_index import (  # noqa: E402
     TAGS_REL,
     build_index,
     build_pilot,
+    expected_rows,
     read_json,
     read_jsonl,
     render_report,
@@ -88,14 +88,15 @@ def validate(repo_root: Path) -> None:
     _assert(manifest.get("step") == "Task172 Step07", "manifest step drift")
 
     index = read_json(repo_root / INDEX_REL)
+    counts = expected_rows(repo_root)
     _assert(index == build_index(repo_root, source_head), "Step07 index is not deterministic")
     _assert(index.get("source_exact_head") == source_head, "index source head drift")
     _assert(index.get("branch") == BRANCH and index.get("pull_request") == 218, "branch/PR binding drift")
     _assert(index.get("operation_id") == "knowledge.collide_object", "operation binding drift")
     _assert(index.get("run_mode") == "READ_ONLY_RUN", "run mode drift")
-    _assert(index.get("stats", {}).get("records") == sum(EXPECTED_ROWS.values()), "index total row count drift")
-    _assert(index.get("stats", {}).get("function_records") == expected_count("FUNCTION_ASSET"), "function index count drift")
-    _assert(index.get("stats", {}).get("nonfunction_records") == expected_count("NONFUNCTION_CLAIM"), "nonfunction index count drift")
+    _assert(index.get("stats", {}).get("records") == sum(counts.values()), "index total row count drift")
+    _assert(index.get("stats", {}).get("function_records") == expected_count("FUNCTION_ASSET", repo_root), "function index count drift")
+    _assert(index.get("stats", {}).get("nonfunction_records") == expected_count("NONFUNCTION_CLAIM", repo_root), "nonfunction index count drift")
     _assert(index.get("side_effects") == {"repository_mutation": False, "external_action": False, "registry_write": False}, "index side-effect boundary drift")
     _validate_facets(index)
 
@@ -117,8 +118,8 @@ def validate(repo_root: Path) -> None:
     _assert(freeze.get("formal_pre_freeze", {}).get("branch") == BRANCH, "source-freeze branch drift")
     _assert(freeze.get("formal_pre_freeze", {}).get("pull_request") == 218, "source-freeze PR drift")
     _assert(freeze.get("formal_pre_freeze", {}).get("state") == "OPEN + DRAFT + unmerged", "lifecycle ceiling drift")
-    _assert(freeze.get("inputs", {}).get("function_overlay", {}).get("rows") == EXPECTED_ROWS["FUNCTION_ASSET"], "function source count drift")
-    _assert(freeze.get("inputs", {}).get("nonfunction_overlay", {}).get("rows") == EXPECTED_ROWS["NONFUNCTION_CLAIM"], "nonfunction source count drift")
+    _assert(freeze.get("inputs", {}).get("function_overlay", {}).get("rows") == counts["FUNCTION_ASSET"], "function source count drift")
+    _assert(freeze.get("inputs", {}).get("nonfunction_overlay", {}).get("rows") == counts["NONFUNCTION_CLAIM"], "nonfunction source count drift")
     for rel in (FUNCTION_OVERLAY_REL, NONFUNCTION_OVERLAY_REL, QUERIES_REL):
         key = "function_overlay" if rel == FUNCTION_OVERLAY_REL else "nonfunction_overlay" if rel == NONFUNCTION_OVERLAY_REL else "pilot_queries"
         _assert(freeze.get("inputs", {}).get(key, {}).get("sha256") == sha256(repo_root / rel), f"frozen input hash drift: {rel}")

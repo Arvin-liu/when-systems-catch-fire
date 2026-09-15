@@ -75,6 +75,10 @@ jobs:
         run: python3 tools/research/validate_task172_step08.py --repo-root .
       - name: Test Task172 Step08 UNESCO/provider metadata pilot
         run: python3 -m unittest tests.test_task172_step08 -v
+      - name: Validate Task172 Step09 UNESCO field corpus
+        run: python3 tools/research/validate_task172_step09.py --repo-root .
+      - name: Test Task172 Step09 UNESCO field corpus
+        run: python3 -m unittest tests.test_task172_step09 -v
       - name: Validate human result census and self-correction products
         run: |
           python3 tools/governance/build_human_results.py --check

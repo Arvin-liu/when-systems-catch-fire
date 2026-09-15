@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-d77d1e13245bc9a4"></a>
+## 九轴状态系统
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 是相互独立的枚举轴。schema 与验证器禁止将 CLOSED、CONVERGED、MULTICASE、MACHINECHECKEDPROOF 等单轴状态传播成其他轴的成功。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：workflow、semantic、formal、logic、proof、evidence、scope、provenance、migration 是相互独立的枚举轴。schema 与验证器禁止将 CLOSED、CONVERGED、MULTICASE、MACHINECHECKEDPROOF 等单轴状态传播成其他轴的成功。；formal 支持 UNFORMALIZED、FORMALIZATIONINCOMPLETE、WELLTYPED、TYPEERROR、SEMANTICALLYUNDEFINED、DIMENSIONERROR、COUNTEREXAMPLEFOUND、FORMALLYREFUTED。logic 支持 NOTASSESSED、VALIDDEDUCTION、INVALIDINFERENCE、DEFEASIBLESUPPORT、COUNTERMODELFOUND、HIDDENPREMISE、CIRCULAR、INCONSISTENTPREMISES、NOTAPPLICABLE。proof 与 evidence 的完整建议枚举见任务命令和 schema 演进记录。；分类状态另行使用 PROVISIONAL / ADJUDICATED / CONTESTED，不得与九轴混算。迁移覆盖率的分母是 622 个 legacy registry 对象；语义审定覆盖率只计算 ADJUDICATED，当前为 621/622。
+- 完整阅读：[docs/foundation/status-system.md](../../docs/foundation/status-system.md)
+
 <a id="reading-hr-d790a75d59747779"></a>
 ## IGNITION-20260824-138 Step 12 — Current / Human / AI surface sync
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The new deterministic capture matrix contains 16 cases and all cases pass. It separates two states that the old outer-tool path conflated: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix；The new deterministic capture matrix contains 16 cases and all cases pass. It separates two states that the old outer-tool path conflated:；a complete host capsule with a bounded/truncated model-facing view is；independently recoverable; and；an incomplete capsule (durable cap, spool failure, or privacy rejection)；must remain OBSERVATIONINCOMPLETE and require reconciliation.
 - 完整阅读：[reports/operations/ignition-139-step04-context-loss-fault-matrix.md](../../reports/operations/ignition-139-step04-context-loss-fault-matrix.md)
-
-<a id="reading-hr-ea8833ef83822509"></a>
-## IGNITION-20260828-144 Step 11 — cross-surface split-brain audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The current machine sources agree on Task144 as the active presentation-only closure task and Task142 as the latest architecture-changing task. The phase state, Owner production-brief template, deferred backlog, formal lifecycle, open-obligation registry and release lifecycle agree on their respe… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260828-144 Step 11 — cross-surface split-brain audit；The current machine sources agree on Task144 as the active presentation-only closure task and Task142 as the latest architecture-changing task. The phase state, Owner production-brief template, deferred backlog, formal lifecycle, open-obligation registry and release lifecycle agree on their respective boundaries.；Seven Current Snapshot surfaces were checked. None exposes the historical RUNDYNAMICEXECUTORADMISSION value as a current pointer; historical occurrences remain preserved as historical evidence. The Results Book has one registry and one canonical README entrypoint. All six Task143 registry rows and the three article manifest entries retain the smoke-test/non-…；Step 11 therefore records no deterministic closure blocker. The remaining LIVEEXTERNALINVOCATION obligation is open but independently Owner-deferred, not a Task144 engineering blocker.
-- 完整阅读：[reports/operations/ignition-144-step11-cross-surface-audit.md](../../reports/operations/ignition-144-step11-cross-surface-audit.md)

@@ -103,8 +103,16 @@ def authority_for_kind(repo_root: Path, asset_kind: str) -> tuple[Path, list[dic
     return path, rows
 
 
-def expected_count(asset_kind: str) -> int:
-    return 6157 if asset_kind == "FUNCTION_ASSET" else 17976
+def expected_count(asset_kind: str, repo_root: Path | None = None) -> int:
+    if asset_kind == "FUNCTION_ASSET":
+        return 6157
+    if asset_kind == "NONFUNCTION_CLAIM" and repo_root is not None:
+        # The nonfunction registry is a scan-sensitive authority source. Its
+        # row count can legitimately change when a new governed report enters
+        # the repository, so routing must close over the current registry
+        # rather than preserve a stale historical count.
+        return len(read_jsonl(repo_root / NONFUNCTION_AUTHORITY_REL))
+    raise ValueError("repo_root is required to resolve the current nonfunction authority count")
 
 
 def source_path_for_kind(asset_kind: str) -> str:
@@ -328,8 +336,8 @@ def make_artifacts(repo_root: Path, asset_kind: str, step: str, source_head: str
     if (step, asset_kind) not in {("05", "FUNCTION_ASSET"), ("06", "NONFUNCTION_CLAIM")}:
         raise SystemExit("step/asset-kind pairing must be 05/FUNCTION_ASSET or 06/NONFUNCTION_CLAIM")
     rows, authority_path, input_hashes = build_rows(repo_root, asset_kind)
-    if len(rows) != expected_count(asset_kind):
-        raise SystemExit(f"unexpected {asset_kind} count: {len(rows)} != {expected_count(asset_kind)}")
+    if len(rows) != expected_count(asset_kind, repo_root):
+        raise SystemExit(f"unexpected {asset_kind} count: {len(rows)} != {expected_count(asset_kind, repo_root)}")
     paths = paths_for(asset_kind, step)
     overlay = repo_root / paths["overlay"]
     write_jsonl(overlay, rows)
@@ -397,7 +405,7 @@ Decision: `STEP{step}_FULL_{asset_kind}_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQ
         "source_exact_head": source_head,
         "command_sources": COMMAND_SOURCES,
         "inputs": input_hashes,
-        "counts": {"rows": len(rows), "expected_rows": expected_count(asset_kind), "negative_boundary_rows": negative_count},
+        "counts": {"rows": len(rows), "expected_rows": expected_count(asset_kind, repo_root), "negative_boundary_rows": negative_count},
         "state_counts": dict(sorted(state_counts.items())),
         "hard_check_intent": operation["hard_check_intent"],
         "deterministic": True,
@@ -429,7 +437,7 @@ def check_artifacts(repo_root: Path, asset_kind: str, step: str) -> None:
         raise SystemExit("TASK172_FULL_ROUTING_CHECK_FAILED: output receipt hash drift")
     if receipt.get("inputs") != input_hashes:
         raise SystemExit("TASK172_FULL_ROUTING_CHECK_FAILED: input hash drift")
-    if len(rows) != expected_count(asset_kind) or receipt.get("counts", {}).get("rows") != len(rows):
+    if len(rows) != expected_count(asset_kind, repo_root) or receipt.get("counts", {}).get("rows") != len(rows):
         raise SystemExit("TASK172_FULL_ROUTING_CHECK_FAILED: row count drift")
     print(f"TASK172_FULL_ROUTING_DETERMINISTIC_OK step={step} asset_kind={asset_kind} rows={len(rows)} authority={authority_path}")
 

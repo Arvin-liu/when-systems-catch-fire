@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-3254690d89efc00d"></a>
+## Pointfire seven-track external cross-domain replay — repaired governed pass
+`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Pointfire seven-track external cross-domain replay — repaired governed pass；Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS；This report records the first governed pass of the preregistered external replay. It is a source-scoped research result and not a declaration of universal external validity, causal identification, or epistemic acceptance.；主题：Frozen question and scope；Question: 在城市尺度，增加树冠覆盖是否能稳定降低夏季近地面热暴露？在什么条件下这一关系不能被解释为因果？；The scope is urban or urbanized settings during summer or a comparable warm season. Land-surface temperature, near-surface air temperature, and human heat exposure are kept as separate measurement targets. A source family is an original study, cohort, experiment, or independent official dataset; multiple papers or pages describing the same underlying study d…
+- 完整阅读：[reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md](../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)
+
 <a id="reading-hr-329cc92e5bdc90c8"></a>
 ## Agent result: IGNITION-20260908-165
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`
@@ -346,10 +353,3 @@
 - 1 分钟：宪章 PR 9（docs/life-community-value-charter-20260711）尚未合并。本任务未基于旧 main 发布，也未重复创建第二份宪章文件，而是以宪章分支为基线建立堆叠分支，将 12 个协议的外部治理记录叠加其上。在 9 合并前，本 PR（10）的基线是宪章分支；宪章合并后，本 PR 应重新基于合并后的 main（或由审查者处理）。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：元协议规范性审核发布审计 — IGNITION-20260709-043；任务：12 元协议规范性审核外部治理记录入库与统一发布；基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）；发布分支：docs/meta-protocol-normative-reviews-20260711；验证脚本：outputs/audit 由 PRIVATE_PROVENANCE_WITHHELD；主题：二、验证清单（23 项，全部通过）
 - 完整阅读：[outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md](../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
-
-<a id="reading-hr-46cd997d4826e649"></a>
-## IGNITION-140 Step 06 — Evidence Exhaustion Audit
-`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The bounded read-only recovery audit checked the declared public sources for the three old open reconciliation lines. All nine declared source files were present. No private session database, credential, hidden reasoning, or provider telemetry was read. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-140 Step 06 — Evidence Exhaustion Audit；The bounded read-only recovery audit checked the declared public sources for the three old open reconciliation lines. All nine declared source files were present. No private session database, credential, hidden reasoning, or provider telemetry was read.；Hermes136 has no attempt PID/PGID, durable disposable workspace, session pointer, raw public output, or matching public artifact in the bounded search. Its state is therefore terminalized as TERMINALUNRECOVERABLEEFFECTUNKNOWN; this does not prove cancellation, success, failure, or no external effect.；Codex138 second is a confirmed started attempt, but the durable evidence path contains no capture, return code, session pointer, structured result, lease receipt, or validator result. It is terminalized as TERMINALUNRECOVERABLEOBSERVATIONINCOMPLETE, while effect knowledge stays UNKNOWN.；Task139 is different: its public transport record is conclusive for the process boundary. It has two public probes, zero live dispatch calls, no live inference start, and no capture capsule because Pointfire failed closed before process start. It is closed as CLOSEDNOLIVEDISPATCH; that label is not a claim that an external effect was observed absent, and its…；No historical record was rewritten and no retry was started. The next step may append canonical reconciliation events and then perform fresh dynamic executor admission.
-- 完整阅读：[reports/operations/ignition-140-step06-evidence-exhaustion-audit.md](../../reports/operations/ignition-140-step06-evidence-exhaustion-audit.md)

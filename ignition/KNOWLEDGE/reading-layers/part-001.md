@@ -200,6 +200,13 @@
 - 5 分钟：主题：Governance report: IGNITION-20260907-162；主题：Controlling specification and lifecycle；The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-162.md at command commit 8ab1aac0cdedd4874c798f4593614335cdd79e76, blob df58765e5c21cf3b0aba15f804ce461b4b1c542e, complete-content SHA-256 e4e61e12ca3798b72b714c0fc2e9cf1ec0b1224529dee138c9740a0fc2b4b65a. The Formal base is Arvin-liu/when-systems-catch-fire branch work/IGNITION-…；The command was executed as research-only work. The required instructions/CURRENT.md and relay/current pointers were missing in the exact base and remain untouched, recorded as STALECONTROLPOINTER / PREFLIGHTRESIDUAL. No canonical runtime, canonical validator, Current/relay surface, Ready transition, merge, Owner acceptance, production claim, external action…；The result remains RESEARCHONLYDRAFTPENDING.；主题：Formal publication receipt
 - 完整阅读：[reports/governance/task-IGNITION-20260907-162.md](../../reports/governance/task-IGNITION-20260907-162.md)
 
+<a id="reading-hr-0d982954aa1aa3e9"></a>
+## Task172 Step09 field 11: LOGIC
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 11: LOGIC；Formal parent freeze: 05e0278ecab7a0f90952ce5f29e5262a702b8e24；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 6；Selected metadata links: 48
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-11.md](../../reports/operations/ignition-172-20260915-step09-field-11.md)
+
 <a id="reading-hr-0dc8e1b43354e8da"></a>
 ## IGNITION-138 — Step 00 Amendment-01 Local Executor Census
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121B Fulltext Batch Report；主题：Task: IGNITION-20260709-121B；主题：Date: 2026-07-14；主题：Model: qclaw/pool-glm-5.2-night | Thinking: high；主题：Executive Summary；121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure reasons, and 30 provisional reviews were downgraded from FULLT…
 - 完整阅读：[reports/external-research/121b-fulltext-batch-report.md](../../reports/external-research/121b-fulltext-batch-report.md)
-
-<a id="reading-hr-1c89ea0a4c2a0aa1"></a>
-## map-epistemic-architecture
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Observer: maintainer and reviewer deciding how claims can move toward publication 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：map-epistemic-architecture；Observer: maintainer and reviewer deciding how claims can move toward publication；Decision question: Which architecture surfaces constrain evidence, execution, validation, and publication?；Value recipient / affected subject: readers, maintainers, and subjects affected by claims；Claim ceiling: derivednavigationview；主题：Unmapped Residue
-- 完整阅读：[reports/atlas/maps/map-epistemic-architecture.md](../../reports/atlas/maps/map-epistemic-architecture.md)

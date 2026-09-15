@@ -2034,6 +2034,11 @@
   - 可搜索名称：NFC-a281b9fe980b43cf / Task142 is now terminal as `COMPLETED_WITH_OPEN_OBLIGATIONS`. The formal task scope is complete after Steps 00–19; the i
   - 来源：`reports/operations/ignition-142-step19-publication-and-terminality.md`
   - 依赖：—；被引用：—
+- [Task172 Step09 field 11: LOGIC](../../ASSET-CARDS.md#asset-hr-0d982954aa1aa3e9)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task172 Step09 field 11: LOGIC / ignition-172-20260915-step09-field-11
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-11.md`
+  - 依赖：—；被引用：—
 - [Task:** `IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731`](../../../docs/foundation/task-107-incident-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-337b55cb63f246c6 / Task:** `IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731`
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b1254590ce04c72f / The result is a research candidate only. It does not establish production readiness, canonical semantics, lifecycle trut
   - 来源：`docs/governance/state-vs-transition-semantics-competition-2026-09-07.md`
-  - 依赖：—；被引用：—
-- [The retrieval and merge recipe is concrete, but identity, output, compatibility, effect and lifecycle contracts are inco](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-08b4833286ba7f0e / The retrieval and merge recipe is concrete, but identity, output, compatibility, effect and lifecycle contracts are inco
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

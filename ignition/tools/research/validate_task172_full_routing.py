@@ -97,7 +97,7 @@ def validate(repo_root: Path, asset_kind: str, step: str) -> None:
     _assert(admission_for_path(str(paths["overlay"])).classification == "GENERATED_PROJECTION_EXCLUDED", "routing overlay crossed Knowledge admission")
 
     _assert(rows == regenerated, "second deterministic generation differs")
-    _assert(len(rows) == expected_count(asset_kind), f"row count drift: {len(rows)}")
+    _assert(len(rows) == expected_count(asset_kind, repo_root), f"row count drift: {len(rows)}")
     ids = [row.get("canonical_id") for row in rows]
     _assert(len(ids) == len(set(ids)), "duplicate canonical IDs")
     authority_rows = {row["canonical_id"]: row for row in read_jsonl(authority_path)}

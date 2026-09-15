@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 提议者消耗函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 提议者消耗函数，纯消耗型 vs 可持续型。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：CLAIM-D75 / Within the source-defined scope, 提议者消耗函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 提议者消耗函数，纯消耗型 vs 可持续型。. This is a
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 操作类型维度降低函数 is adjudicated as RELATION: 三框架操作类型在维度上形成降低链条：并行验证（点火）→ 对比操作（Science Earth）→](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D518 / Within the source-defined scope, 操作类型维度降低函数 is adjudicated as RELATION: 三框架操作类型在维度上形成降低链条：并行验证（点火）→ 对比操作（Science Earth）→
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 放大不确定性-两步策略自洽函数 is adjudicated as ARGUMENT_SCHEMA: M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D411 / Within the source-defined scope, 放大不确定性-两步策略自洽函数 is adjudicated as ARGUMENT_SCHEMA: M14的正反馈放大不确定性→自动满足两步策略的高不确定性条件。K>1系统
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-ffcbb46a6e52e2fc / \| \[D370\]\( \) \| \[ΔΦ交叉相关-波动累积联合函数\]\( \) \| F_{D370}\(x\) := M1的容斥交
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D342, D370；被引用：—
-- [\| \[D373\]\( \) \| \[p*临界标度函数\]\( \) \| F_{D373}\(x\) := M4的K=√n临界附近标度律：涨落方差∝1/\\\|K-√](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-06cd519b18d30ab3 / \| \[D373\]\( \) \| \[p*临界标度函数\]\( \) \| F_{D373}\(x\) := M4的K=√n临界附近标度律：涨落方差∝1/\\\|K-√
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D373；被引用：—
-- [\| \[D382\]\( \) \| \[低通滤波-自激振荡竞争函数\]\( \) \| F_{D382}\(x\) := M13的K·τ_dela](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-cba1776488e3b631 / \| \[D382\]\( \) \| \[低通滤波-自激振荡竞争函数\]\( \) \| F_{D382}\(x\) := M13的K·τ_dela
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D382；被引用：—

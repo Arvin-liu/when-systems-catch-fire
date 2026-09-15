@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [赛课机制是一个**多层利益绑定 + 量化指标替代真实价值 + 退出权受限**的复合结构，与点火框架中「退出权函数族」「指标化扭曲」「系统性钝化」可部分同构，但现有两张表缺少直接对应条目。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-316407426c39e999 / 赛课机制是一个**多层利益绑定 + 量化指标替代真实价值 + 退出权受限**的复合结构，与点火框架中「退出权函数族」「指标化扭曲」「系统性钝化」可部分同构，但现有两张表缺少直接对应条目。
+  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
+  - 依赖：—；被引用：—
+- [赛课机制第一批小批量回填审计](../../ASSET-CARDS.md#asset-hr-782e1e02d09b5cb2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：赛课机制第一批小批量回填审计 / teacher-competition-small-batch-backfill-audit-20260708
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
 - [赞美、点击、传播、情绪共鸣和多模型一致只能是传播／体验数据，不能证明事实、因果、价值或方法有效。](../../../docs/publication/zhiyuan-writing-method.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9378fffbd29a1a87 / 赞美、点击、传播、情绪共鸣和多模型一致只能是传播／体验数据，不能证明事实、因果、价值或方法有效。

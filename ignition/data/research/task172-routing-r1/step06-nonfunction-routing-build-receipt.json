@@ -19,9 +19,9 @@
     }
   ],
   "counts": {
-    "expected_rows": 17976,
-    "negative_boundary_rows": 9867,
-    "rows": 17976
+    "expected_rows": 17978,
+    "negative_boundary_rows": 9869,
+    "rows": 17978
   },
   "decision": "STEP06_FULL_NONFUNCTION_CLAIM_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQUIRED; NO_CANONICAL_MUTATION",
   "deterministic": true,
@@ -35,7 +35,7 @@
     "source_fingerprint_mismatch": 0
   },
   "inputs": {
-    "authority": "5838ee4a0907e18937fe301cb375f64482b12c6165eae54d22fda8b49137b763",
+    "authority": "55f9a443417ccb8699e468fed90236b205145ebc1a5b5019d6687c44c55dcd61",
     "discipline_count": "245",
     "field_count": "24",
     "field_labels_sha256": "fa35ba2caaef0119b5f53bee2a27a07b1ccda066591b1805b5ceeb4415828d22",
@@ -45,20 +45,20 @@
     "gate_t_discrepancy_ledger": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f",
     "gate_t_parse": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a"
   },
-  "manual_review_required": 17976,
+  "manual_review_required": 17978,
   "network": false,
   "outputs": {
-    "operation": "fd04a4416353ff1ece34616d024ad514fd51054fe76290b698500a9b99f7ed94",
-    "overlay": "fdd904120e076caa0652f531a0b6a528032c5da3338c370936d915bd16231b8a",
-    "report": "e3dc437d73a67a12407423e85877e4f36d6f9a2c562438dd0b162e6f46e4e6c9",
-    "source_freeze": "c7c5124552a75fd8f2eb9f03d8eb3f4497825300b342388f51fbc6a2c1cdf2b9"
+    "operation": "b2e56757d729081802551bd2f3e7b1403ef887dafb5f68f2ef1652d50b709402",
+    "overlay": "5e8040514e31fcad64b6b808ce5eeeb39139b7b746af700892802085a70d5b4c",
+    "report": "25087f92e83abc12ec8c1103fa0e2e2cc8285928e8b0efd1286001b041ea3e5e",
+    "source_freeze": "bfee2aeceb6ca1b5529d9d0a7b736985da413ddc0bd820f5c1fe1fa81b70e92f"
   },
   "schema": "task172-full-routing-build-receipt-v1",
-  "source_exact_head": "c0ca5b97bb00493b72c74443607f1d8ec9f5266c",
+  "source_exact_head": "05e0278ecab7a0f90952ce5f29e5262a702b8e24",
   "state_counts": {
-    "CLASSIFIED": 7670,
+    "CLASSIFIED": 7671,
     "MULTIDISCIPLINARY": 2106,
-    "OUT_OF_UNESCO_SCOPE": 1879,
+    "OUT_OF_UNESCO_SCOPE": 1880,
     "UNRESOLVED": 6321
   },
   "step": "Task172 Step06"

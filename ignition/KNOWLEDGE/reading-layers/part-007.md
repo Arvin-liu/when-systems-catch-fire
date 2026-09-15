@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-81c5f5f4c67de686"></a>
+## C-0809 表演化假课与量化指标消解温度索引可见性验证
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：| C-0809 | 表演化假课与量化指标消解温度 | 指标化评价使可量化项替代真实价值，表演态排除临场生成。 | 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：C-0809 表演化假课与量化指标消解温度索引可见性验证；索引文件：已迁移的历史案例来源/INDEX.md；C-0809 出现在 INDEX 第 811 行：；| C-0809 | 表演化假课与量化指标消解温度 | 指标化评价使可量化项替代真实价值，表演态排除临场生成。 |；案例总数已同步：792 → 793（INDEX 头部计数）；结论：后续碰撞流程可通过编号、标题、机制关键词三种方式召回 C-0809。
+- 完整阅读：[outputs/audit/c0809-index-visibility-check-20260708.md](../../outputs/audit/c0809-index-visibility-check-20260708.md)
+
 <a id="reading-hr-821405558993dacd"></a>
 ## 121Q23 Adaptive Relational Network Validation
 `CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：上一轮 4 条不采纳项经 Ψ₀ + P1 复核全部合理： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：本报告为「回填复核」，不直接回填正式两张表。判定器：全量两张表查重 + P1 七类机器数据 + 点火元函数 Ψ₀ 新增判定。；上一轮碰撞目录：outputs/collisions/20260708-teacher-competition/；原始材料：inputs/collisions/20260708-teacher-competition/source.md（Get 笔记《赛课机制下的教师生存困境》）；校验器结果：python3 tools/validatedata.py → ALLP1DATAVALID；Ψ₀ 元函数基准：已迁移的历史函数来源/0001-Ψ₀元函数完整数学定义.md（六大组件：C / M / Iiso / Lmeta / Gδ / Pmeta）；全量两张表查重：已迁移的历史函数来源/（614 文件）、已迁移的历史案例来源/（802 文件），按 18 个重点关键词检索。
 - 完整阅读：[outputs/audit/teacher-competition-backfill-review-20260708.md](../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-
-<a id="reading-hr-9516507750851228"></a>
-## IGNITION-106: GAP-001 接口就绪度评估
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：PROVISIONALINTERFACERECOMMENDATIONPENDINGCONSTITUTIONALREVIEW 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-106: GAP-001 接口就绪度评估；PROVISIONALINTERFACERECOMMENDATIONPENDINGCONSTITUTIONALREVIEW；✅ 来源数量充足 (31条, ≥16)；✅ 学科覆盖完整 (18/18 SOURCEPRESENT)；⚠️ 全文审阅: 6条 (原8条降级2条)；⚠️ Claim support: 6条 CONFIRMED, 2条 UNRESOLVED, 23条 NOTASSESSED
-- 完整阅读：[reports/external-research/106-gap001-interface-readiness.md](../../reports/external-research/106-gap001-interface-readiness.md)

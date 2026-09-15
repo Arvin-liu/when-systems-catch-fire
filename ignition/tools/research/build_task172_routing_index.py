@@ -22,6 +22,7 @@ import sys
 
 sys.path.insert(0, str(ROOT))
 from tools.research.task172_routing import retrieve_candidates  # noqa: E402
+from tools.research.build_task172_full_routing import expected_count  # noqa: E402
 
 
 ROUTING = ROOT / "data/research/task172-routing-r1"
@@ -48,7 +49,11 @@ COMMAND_SOURCES = [
     {"repository": "Arvin-liu/1111", "ref": "22cbe6f7", "path": "agent-commands/IGNITION-20260913-177.md"},
 ]
 TAXONOMY = {"fields": 24, "primary_disciplines": 245, "primary_subdisciplines": 2178}
-EXPECTED_ROWS = {"FUNCTION_ASSET": 6157, "NONFUNCTION_CLAIM": 17976}
+def expected_rows(repo_root: Path) -> dict[str, int]:
+    return {
+        "FUNCTION_ASSET": expected_count("FUNCTION_ASSET", repo_root),
+        "NONFUNCTION_CLAIM": expected_count("NONFUNCTION_CLAIM", repo_root),
+    }
 FACET_OUTPUTS = {
     "unesco_field_codes": "by_unesco_field",
     "unesco_discipline_codes": "by_unesco_discipline",
@@ -135,7 +140,8 @@ def compact_row(row: dict[str, Any]) -> dict[str, Any]:
 
 def build_index(repo_root: Path, source_head: str) -> dict[str, Any]:
     rows = overlay_rows(repo_root)
-    expected_total = sum(EXPECTED_ROWS.values())
+    counts = expected_rows(repo_root)
+    expected_total = sum(counts.values())
     if len(rows) != expected_total:
         raise ValueError(f"routing overlay row count drift: {len(rows)} != {expected_total}")
     refs = [f"{row['asset_kind']}:{row['canonical_id']}" for row in rows]
@@ -175,8 +181,8 @@ def build_index(repo_root: Path, source_head: str) -> dict[str, Any]:
             "authority_is_index": False,
         },
         "source_overlays": [
-            {"asset_kind": "FUNCTION_ASSET", "path": str(FUNCTION_OVERLAY_REL), "sha256": sha256(repo_root / FUNCTION_OVERLAY_REL), "rows": EXPECTED_ROWS["FUNCTION_ASSET"]},
-            {"asset_kind": "NONFUNCTION_CLAIM", "path": str(NONFUNCTION_OVERLAY_REL), "sha256": sha256(repo_root / NONFUNCTION_OVERLAY_REL), "rows": EXPECTED_ROWS["NONFUNCTION_CLAIM"]},
+            {"asset_kind": "FUNCTION_ASSET", "path": str(FUNCTION_OVERLAY_REL), "sha256": sha256(repo_root / FUNCTION_OVERLAY_REL), "rows": counts["FUNCTION_ASSET"]},
+            {"asset_kind": "NONFUNCTION_CLAIM", "path": str(NONFUNCTION_OVERLAY_REL), "sha256": sha256(repo_root / NONFUNCTION_OVERLAY_REL), "rows": counts["NONFUNCTION_CLAIM"]},
         ],
         "taxonomy": {
             "source": "1988 UNESCO primary document locked by Gate T",
@@ -312,6 +318,7 @@ def generated_hashes(repo_root: Path, paths: list[Path]) -> dict[str, str]:
 
 def write_artifacts(repo_root: Path, source_head: str) -> None:
     require_parent(repo_root, source_head)
+    counts = expected_rows(repo_root)
     index = build_index(repo_root, source_head)
     write_json(repo_root / INDEX_REL, index)
     pilot = build_pilot(repo_root)
@@ -330,8 +337,8 @@ def write_artifacts(repo_root: Path, source_head: str) -> None:
         "direction_locks": ["IGNITION-20260913-175", "IGNITION-20260913-176", "IGNITION-20260913-177"],
         "command_sources": COMMAND_SOURCES,
         "inputs": {
-            "function_overlay": {"path": str(FUNCTION_OVERLAY_REL), "sha256": sha256(repo_root / FUNCTION_OVERLAY_REL), "rows": EXPECTED_ROWS["FUNCTION_ASSET"]},
-            "nonfunction_overlay": {"path": str(NONFUNCTION_OVERLAY_REL), "sha256": sha256(repo_root / NONFUNCTION_OVERLAY_REL), "rows": EXPECTED_ROWS["NONFUNCTION_CLAIM"]},
+            "function_overlay": {"path": str(FUNCTION_OVERLAY_REL), "sha256": sha256(repo_root / FUNCTION_OVERLAY_REL), "rows": counts["FUNCTION_ASSET"]},
+            "nonfunction_overlay": {"path": str(NONFUNCTION_OVERLAY_REL), "sha256": sha256(repo_root / NONFUNCTION_OVERLAY_REL), "rows": counts["NONFUNCTION_CLAIM"]},
             "pilot_queries": {"path": str(QUERIES_REL), "sha256": sha256(repo_root / QUERIES_REL)},
         },
         "taxonomy_authority": {"source": "1988 UNESCO primary document locked by Gate T", **TAXONOMY},

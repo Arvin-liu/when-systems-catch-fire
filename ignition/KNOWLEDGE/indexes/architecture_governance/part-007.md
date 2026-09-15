@@ -874,6 +874,11 @@
   - 可搜索名称：NFC-5cf37ccf4c034004 / No process, inference, auth/config/billing operation, UI action or workspace mutation occurred. Historical live counts r
   - 来源：`reports/operations/ignition-142-step13-live-attempt-a.md`
   - 依赖：—；被引用：—
+- [No provider taxonomy equivalence, scientific relevance validation, external truth, canonical Foundation admission, epist](../../../reports/operations/ignition-172-20260915-step09-field-11.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8d8a02c65b93c0b1 / No provider taxonomy equivalence, scientific relevance validation, external truth, canonical Foundation admission, epist
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-11.md`
+  - 依赖：—；被引用：—
 - [No Ready, merge, Current promotion, Owner acceptance, production readiness, external truth, epistemic acceptance, canoni](../../../reports/governance/task-IGNITION-20260907-164.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-57d674bd382edcff / No Ready, merge, Current promotion, Owner acceptance, production readiness, external truth, epistemic acceptance, canoni
@@ -2498,9 +2503,4 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
   - 可搜索名称：REOS vNext LIGHT pilot R1 — public-safe synthesis / reos-vnext-light-pilot-r1
   - 来源：`reports/research/reos-vnext-light-pilot-r1.md`
-  - 依赖：—；被引用：—
-- [REOS vNext minimal kernel R1 — frozen contract](../../ASSET-CARDS.md#asset-hr-33ad343f3a815941)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-  - 可搜索名称：REOS vNext minimal kernel R1 — frozen contract / reos-vnext-minimal-kernel-r1-contract
-  - 来源：`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`
   - 依赖：—；被引用：—

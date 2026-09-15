@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0341-D305-维度偏离退化路径函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-269a7fbaf244427d / 已迁移的历史函数来源/0341-D305-维度偏离退化路径函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D305；被引用：—
+- [已迁移的历史函数来源/0342-D306-去容斥条件函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9cc0542705052ca6 / 已迁移的历史函数来源/0342-D306-去容斥条件函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D306；被引用：—
 - [已迁移的历史函数来源/0343-D307-σ_opt微观起源函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-a4fcf776202d858e / 已迁移的历史函数来源/0343-D307-σ_opt微观起源函数.md
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4ef282c6ad117e9a / 赛课成绩也不只属于老师个人。它属于学校，也属于区里。李清淼拿奖后，校长会在全体大会上宣读，学校公众号的相关文章也会按等次排列——一等奖的照片一定放在前面，第二名比第四名位置更显眼。这些奖项是「教研强校」的证明，也是教研员向上汇报的业绩。
   - 来源：`inputs/collisions/20260708-teacher-competition/source.md`
-  - 依赖：—；被引用：—
-- [赛课机制是一个**多层利益绑定 + 量化指标替代真实价值 + 退出权受限**的复合结构，与点火框架中「退出权函数族」「指标化扭曲」「系统性钝化」可部分同构，但现有两张表缺少直接对应条目。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-316407426c39e999 / 赛课机制是一个**多层利益绑定 + 量化指标替代真实价值 + 退出权受限**的复合结构，与点火框架中「退出权函数族」「指标化扭曲」「系统性钝化」可部分同构，但现有两张表缺少直接对应条目。
-  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
-  - 依赖：—；被引用：—
-- [赛课机制第一批小批量回填审计](../../ASSET-CARDS.md#asset-hr-782e1e02d09b5cb2)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：赛课机制第一批小批量回填审计 / teacher-competition-small-batch-backfill-audit-20260708
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
   - 依赖：—；被引用：—

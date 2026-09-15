@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-1c89ea0a4c2a0aa1"></a>
+## map-epistemic-architecture
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Observer: maintainer and reviewer deciding how claims can move toward publication 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：map-epistemic-architecture；Observer: maintainer and reviewer deciding how claims can move toward publication；Decision question: Which architecture surfaces constrain evidence, execution, validation, and publication?；Value recipient / affected subject: readers, maintainers, and subjects affected by claims；Claim ceiling: derivednavigationview；主题：Unmapped Residue
+- 完整阅读：[reports/atlas/maps/map-epistemic-architecture.md](../../reports/atlas/maps/map-epistemic-architecture.md)
+
 <a id="reading-hr-1d52767df2986dd5"></a>
 ## 121Q25D current closeout
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：No Task142 live process was authorized or started, so LIVEEXTERNALINVOCATION remains OPEN; the independent exact validator is ready but has no live result to adjudicate. The blocker is refined to the concrete current matrix: no safe live family, Gemini public auth/adapter gaps, Hermes structured-… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260827-142 Step 16 — Open-Obligation Re-adjudication；No Task142 live process was authorized or started, so LIVEEXTERNALINVOCATION remains OPEN; the independent exact validator is ready but has no live result to adjudicate. The blocker is refined to the concrete current matrix: no safe live family, Gemini public auth/adapter gaps, Hermes structured-result/auth gaps, OpenClaw workspace/channel/auth/cleanup/struc…；No new obligation is manufactured, the next eligible action remains RUNDYNAMICEXECUTORADMISSION, and the historical counts remain exactly 6 attempts / 0 validated completions / 0 unreconciled / 2 observation-incomplete. Task141's terminal status remains independent and unchanged.；Machine evidence is ignition/data/operations/iterations/142/step16-obligation-adjudication.json; the canonical registry update is ignition/data/operations/open-obligation-registry-r1.json, validated by ignition/tools/validatetask142obligationadjudication.py and ignition/tools/validateopenobligationregistry.py.；Claim ceiling: independent open-obligation adjudication only; no live completion is claimed.
 - 完整阅读：[reports/operations/ignition-142-step16-obligation-adjudication.md](../../reports/operations/ignition-142-step16-obligation-adjudication.md)
-
-<a id="reading-hr-3254690d89efc00d"></a>
-## Pointfire seven-track external cross-domain replay — repaired governed pass
-`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Pointfire seven-track external cross-domain replay — repaired governed pass；Status: OWNERACCEPTEDBOUNDEDREPLAYRESULTWITHEXPLICITRESIDUALS；This report records the first governed pass of the preregistered external replay. It is a source-scoped research result and not a declaration of universal external validity, causal identification, or epistemic acceptance.；主题：Frozen question and scope；Question: 在城市尺度，增加树冠覆盖是否能稳定降低夏季近地面热暴露？在什么条件下这一关系不能被解释为因果？；The scope is urban or urbanized settings during summer or a comparable warm season. Land-surface temperature, near-surface air temperature, and human heat exposure are kept as separate measurement targets. A source family is an original study, cohort, experiment, or independent official dataset; multiple papers or pages describing the same underlying study d…
-- 完整阅读：[reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md](../../reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md)

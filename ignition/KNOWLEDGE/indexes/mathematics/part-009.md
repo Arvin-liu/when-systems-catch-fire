@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B2FBDAEC3BE1FE33 / title: "自主意识函数 / autonomous consciousness function" / IMPLICIT-B2FBDAEC3BE1FE33 / IMPLICIT-00B936301892F1DB
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-621b85d0ba9997c4 / title: "自主意识函数 / autonomous consciousness function"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [title: "自主意识涌现的临界条件"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d96360ec6fc08083 / title: "自主意识涌现的临界条件"
@@ -2492,15 +2502,5 @@
 - [Within the source-defined scope, 提议者姿态的激进程度 is adjudicated as METRIC: 提议者姿态的激进程度，0为完全平等，1为完全压制。退化免疫D_immune = F_form × \(](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-A2 / Within the source-defined scope, 提议者姿态的激进程度 is adjudicated as METRIC: 提议者姿态的激进程度，0为完全平等，1为完全压制。退化免疫D_immune = F_form × \(
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 提议者消耗函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 提议者消耗函数，纯消耗型 vs 可持续型。. This is a](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：CLAIM-D75 / Within the source-defined scope, 提议者消耗函数 is adjudicated as NATURAL_LANGUAGE_CANDIDATE: 提议者消耗函数，纯消耗型 vs 可持续型。. This is a
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 操作类型维度降低函数 is adjudicated as RELATION: 三框架操作类型在维度上形成降低链条：并行验证（点火）→ 对比操作（Science Earth）→](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D518 / Within the source-defined scope, 操作类型维度降低函数 is adjudicated as RELATION: 三框架操作类型在维度上形成降低链条：并行验证（点火）→ 对比操作（Science Earth）→
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

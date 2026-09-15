@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The retrieval and merge recipe is concrete, but identity, output, compatibility, effect and lifecycle contracts are inco](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-08b4833286ba7f0e / The retrieval and merge recipe is concrete, but identity, output, compatibility, effect and lifecycle contracts are inco
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [The review gives a precise ontology for function spaces, operators, latent carriers, parameterized artifacts, distributi](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-8526d9499f54baaf / The review gives a precise ontology for function spaces, operators, latent carriers, parameterized artifacts, distributi
@@ -178,6 +183,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-d63e14f178f29edb / This does not erase the default-interpreter observation retained in the residual ledger or rewrite the executor inventor
   - 来源：`reports/operations/ignition-134-step09-sympy-environment-contract.md`
+  - 依赖：—；被引用：—
+- [This field is admitted only as `GENERAL_KNOWLEDGE_REFERENCE / SCHOLARLY_METADATA`. Provider responses were normalized to](../../../reports/operations/ignition-172-20260915-step09-field-11.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-71d2648db992eeef / This field is admitted only as `GENERAL_KNOWLEDGE_REFERENCE / SCHOLARLY_METADATA`. Provider responses were normalized to
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-11.md`
   - 依赖：—；被引用：—
 - [This formal result records task identity and lifecycle outcome only. It does](../../../agent-results/IGNITION-20260827-142-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9172D280A45CB270 / title: "自主意识函数 / autonomous consciousness function" / IMPLICIT-9172D280A45CB270 / IMPLICIT-00B936301892F1DB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B2FBDAEC3BE1FE33 / title: "自主意识函数 / autonomous consciousness function" / IMPLICIT-B2FBDAEC3BE1FE33 / IMPLICIT-00B936301892F1DB
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "自主意识函数 / autonomous consciousness function"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-621b85d0ba9997c4 / title: "自主意识函数 / autonomous consciousness function"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

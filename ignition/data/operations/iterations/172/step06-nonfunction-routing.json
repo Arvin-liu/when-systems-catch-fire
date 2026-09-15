@@ -2,8 +2,8 @@
   "asset_kind": "NONFUNCTION_CLAIM",
   "authority": {
     "path": "data/foundation/nonfunction-claims/claim-registry.jsonl",
-    "rows": 17976,
-    "sha256": "5838ee4a0907e18937fe301cb375f64482b12c6165eae54d22fda8b49137b763"
+    "rows": 17978,
+    "sha256": "55f9a443417ccb8699e468fed90236b205145ebc1a5b5019d6687c44c55dcd61"
   },
   "canonical_mutation": false,
   "command_sources": [
@@ -25,7 +25,7 @@
   ],
   "decision": "STEP06_FULL_NONFUNCTION_CLAIM_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQUIRED; NO_CANONICAL_MUTATION",
   "field_counts": {
-    "12": 3745,
+    "12": 3746,
     "22": 662,
     "23": 6,
     "24": 131,
@@ -54,22 +54,22 @@
     "orphan": 0,
     "source_fingerprint_mismatch": 0
   },
-  "manual_review_required": 17976,
-  "negative_boundary_rows": 9867,
+  "manual_review_required": 17978,
+  "negative_boundary_rows": 9869,
   "network": false,
   "overlay": {
     "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
-    "rows": 17976,
-    "sha256": "fdd904120e076caa0652f531a0b6a528032c5da3338c370936d915bd16231b8a"
+    "rows": 17978,
+    "sha256": "5e8040514e31fcad64b6b808ce5eeeb39139b7b746af700892802085a70d5b4c"
   },
-  "report_sha256": "e3dc437d73a67a12407423e85877e4f36d6f9a2c562438dd0b162e6f46e4e6c9",
+  "report_sha256": "25087f92e83abc12ec8c1103fa0e2e2cc8285928e8b0efd1286001b041ea3e5e",
   "schema": "task172-full-routing-operation-v1",
-  "source_exact_head": "c0ca5b97bb00493b72c74443607f1d8ec9f5266c",
-  "source_freeze_sha256": "c7c5124552a75fd8f2eb9f03d8eb3f4497825300b342388f51fbc6a2c1cdf2b9",
+  "source_exact_head": "05e0278ecab7a0f90952ce5f29e5262a702b8e24",
+  "source_freeze_sha256": "bfee2aeceb6ca1b5529d9d0a7b736985da413ddc0bd820f5c1fe1fa81b70e92f",
   "state_counts": {
-    "CLASSIFIED": 7670,
+    "CLASSIFIED": 7671,
     "MULTIDISCIPLINARY": 2106,
-    "OUT_OF_UNESCO_SCOPE": 1879,
+    "OUT_OF_UNESCO_SCOPE": 1880,
     "UNRESOLVED": 6321
   },
   "step": "Task172 Step06",
