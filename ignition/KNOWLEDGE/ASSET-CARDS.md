@@ -944,6 +944,8 @@
 - [IGNITION-20260822-134 Step 08 — Residual sealing and baseline preservation](./cards/part-010.md#asset-hr-9e9cc07c265f9ae3) — `RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD` · `HR-9E9CC07C265F9AE3`
 <a id="asset-hr-9e9fe4af5f59921c"></a>
 - [IGNITION-20260828-144 Step 15 — engineering closure gate](./cards/part-010.md#asset-hr-9e9fe4af5f59921c) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9E9FE4AF5F59921C`
+<a id="asset-hr-9fa397ef4fda55c6"></a>
+- [Task172 Step09 field 71: ETHICS](./cards/part-010.md#asset-hr-9fa397ef4fda55c6) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9FA397EF4FDA55C6`
 <a id="asset-hr-9fad496317a3b73c"></a>
 - [Semantic adjudication verification](./cards/part-010.md#asset-hr-9fad496317a3b73c) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-9FAD496317A3B73C`
 <a id="asset-hr-9fe0a1492c44c9b3"></a>
@@ -1001,7 +1003,7 @@
 <a id="asset-hr-ab65516db634d3e2"></a>
 - [IGNITION-20260828-144 Step 00 — Task143 final baseline](./cards/part-010.md#asset-hr-ab65516db634d3e2) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-AB65516DB634D3E2`
 <a id="asset-hr-ab7862b612e34394"></a>
-- [元协议版本迭代维护审计 2026-07-09](./cards/part-010.md#asset-hr-ab7862b612e34394) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-AB7862B612E34394`
+- [元协议版本迭代维护审计 2026-07-09](./cards/part-011.md#asset-hr-ab7862b612e34394) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-AB7862B612E34394`
 <a id="asset-hr-abbbd65bf096449d"></a>
 - [Iteration Identity Model R1](./cards/part-011.md#asset-hr-abbbd65bf096449d) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-ABBBD65BF096449D`
 <a id="asset-hr-ac9e178219fcc8d0"></a>
@@ -1101,7 +1103,7 @@
 <a id="asset-hr-c023e21ce9a8a6d4"></a>
 - [Probabilistic System Dynamics / 概率—系统动力学](./cards/part-011.md#asset-hr-c023e21ce9a8a6d4) — `RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE` · `HR-C023E21CE9A8A6D4`
 <a id="asset-hr-c0254716ff47346d"></a>
-- [得到大脑输出索引](./cards/part-011.md#asset-hr-c0254716ff47346d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C0254716FF47346D`
+- [得到大脑输出索引](./cards/part-012.md#asset-hr-c0254716ff47346d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C0254716FF47346D`
 <a id="asset-hr-c0e9f4990481c808"></a>
 - [121Q21R Causal Asset Audit](./cards/part-012.md#asset-hr-c0e9f4990481c808) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-C0E9F4990481C808`
 <a id="asset-hr-c190ac76ad5f8440"></a>
@@ -1201,7 +1203,7 @@
 <a id="asset-hr-d6dc7edfc015e4c7"></a>
 - [《公元1117年：宋徽宗为什么崇信道教？》来源与边界](./cards/part-012.md#asset-hr-d6dc7edfc015e4c7) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-D6DC7EDFC015E4C7`
 <a id="asset-hr-d75690d278464805"></a>
-- [STEP03 blinded baseline versus governed replay](./cards/part-012.md#asset-hr-d75690d278464805) — `RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD` · `HR-D75690D278464805`
+- [STEP03 blinded baseline versus governed replay](./cards/part-013.md#asset-hr-d75690d278464805) — `RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD` · `HR-D75690D278464805`
 <a id="asset-hr-d77d1e13245bc9a4"></a>
 - [九轴状态系统](./cards/part-013.md#asset-hr-d77d1e13245bc9a4) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-D77D1E13245BC9A4`
 <a id="asset-hr-d790a75d59747779"></a>
@@ -1301,7 +1303,7 @@
 <a id="asset-hr-ea13f7ea325dac81"></a>
 - [Historical Basis-Leaps Reconstruction — IGNITION-20260906-158](./cards/part-013.md#asset-hr-ea13f7ea325dac81) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-EA13F7EA325DAC81`
 <a id="asset-hr-ea1ccd6bb1e44892"></a>
-- [IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix](./cards/part-013.md#asset-hr-ea1ccd6bb1e44892) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-EA1CCD6BB1E44892`
+- [IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix](./cards/part-014.md#asset-hr-ea1ccd6bb1e44892) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-EA1CCD6BB1E44892`
 <a id="asset-hr-ea8833ef83822509"></a>
 - [IGNITION-20260828-144 Step 11 — cross-surface split-brain audit](./cards/part-014.md#asset-hr-ea8833ef83822509) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-EA8833EF83822509`
 <a id="asset-hr-eabed7bd3564479d"></a>

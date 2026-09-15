@@ -3,7 +3,7 @@
   "authority": {
     "path": "data/foundation/nonfunction-claims/claim-registry.jsonl",
     "rows": 17982,
-    "sha256": "d82b3ecff2843c5bc79434116e0c22e354ec12bf4af81b62596db063fa3dea8e"
+    "sha256": "c16b2660221c847e28c8b689143e23bbf02c564b5f9a4c0c9e6f5980bf6470ec"
   },
   "canonical_mutation": false,
   "command_sources": [
@@ -60,12 +60,12 @@
   "overlay": {
     "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
     "rows": 17982,
-    "sha256": "80c24f798127c488ed588eb0ebf0bc6f15edf0e523ae3f6fbe3d96e69a333d5b"
+    "sha256": "38bc836da2024f1df711bb661f6041158435a03422f2a0f859b9285bf58837f4"
   },
-  "report_sha256": "99459bef7da259f4fcba4245f99d9a6ed904f9c312ebfd4f600ee66fdca62375",
+  "report_sha256": "a6ef96ae0ceff1df12621f0d170c4cb06f2708a5687557bb3792380ef7eb504c",
   "schema": "task172-full-routing-operation-v1",
-  "source_exact_head": "6eebc5337eb8e586c2ba88731eb7c508a5dac24b",
-  "source_freeze_sha256": "cdd828b96150dc1b26191295e8811f6919b62f2b1d5e7e4962c4f3232351e816",
+  "source_exact_head": "5030f1dd9e01a6530155e86c2120fb587b2c1146",
+  "source_freeze_sha256": "5b04fcfe31629e894e07c6ef7471eeda0dbea4f7e6d369452ada1eb4a3aa9954",
   "state_counts": {
     "CLASSIFIED": 7673,
     "MULTIDISCIPLINARY": 2107,

@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e2a9200ebcc66ab2"></a>
+## Approval Bridge, Handoff and Failover R1
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The OS approval bridge computes a strict intersection between the Ignition ApprovalPolicy, the requested capability ceiling, and any external approval gate. DENY always blocks. REQUIREOWNER and DELEGATED wait for an explicit Owner decision; an external executor's APPROVED observation never replac… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Approval Bridge, Handoff and Failover R1；The OS approval bridge computes a strict intersection between the Ignition ApprovalPolicy, the requested capability ceiling, and any external approval gate. DENY always blocks. REQUIREOWNER and DELEGATED wait for an explicit Owner decision; an external executor's APPROVED observation never replaces that authority. If the external agent reports a pending gate…；buildhandoffbundle contains only public goal/work/acceptance text, validated completed actions, pending work, capability ceiling, workspace refs, artifact hashes, validator-linked memory capsule refs, pointer-only external session refs and unresolveds. It refuses to label unvalidated executor claims as validated work. accepthandoff requires a different execu…；Failover reasons are machine-enumerated in data/agent-federation/failover-reasons-r1.json. Automatic failover is allowed only for a read-only task or validated/replayable side effects with a verified receipt and a target that already has the same capability ceiling. Unknown side effects, an unverified receipt, approval blocks and capability mismatches remain…
+- 完整阅读：[docs/architecture/approval-handoff-failover-r1.md](../../docs/architecture/approval-handoff-failover-r1.md)
+
 <a id="reading-hr-e2f338166075887b"></a>
 ## IGNITION-139 Step 05 — Historical Attempt Import
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -189,8 +196,8 @@
 <a id="reading-hr-ecb9a4b8ee1483ca"></a>
 ## IGNITION-172 Step07 — Knowledge Experience routing index
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on exact frozen parent 6eebc5337eb8e586c2ba88731eb7c508a5dac24b on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 6eebc5337eb8e586c2ba88731eb7c508a5dac24b on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6158 function records + 17982 nonfunction records = 24140 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 1 分钟：This logical step is based on exact frozen parent 5030f1dd9e01a6530155e86c2120fb587b2c1146 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 5030f1dd9e01a6530155e86c2120fb587b2c1146 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6158 function records + 17982 nonfunction records = 24140 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
 - 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
 
 <a id="reading-hr-ecc4e92db835c50c"></a>
@@ -346,10 +353,3 @@
 - 1 分钟：Generated: 2026-07-14T17:22:03Z Parent HEAD at report generation: a4b0a90826d97d17d7751953d24a5901d090debb Note: Final HEAD will be confirmed after Step 008 commit/push. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q2V Verification Repair Report；主题：STATUS: COMPLETE — All 8 steps executed；Generated: 2026-07-14T17:22:03Z Parent HEAD at report generation: a4b0a90826d97d17d7751953d24a5901d090debb Note: Final HEAD will be confirmed after Step 008 commit/push.；主题：Execution Identity；Model: qclaw/pool-glm-5.2-night；Model switch: None
 - 完整阅读：[reports/external-research/121Q2V-verification-repair-report.md](../../reports/external-research/121Q2V-verification-repair-report.md)
-
-<a id="reading-hr-fbfb831e55a2a3a0"></a>
-## Fixed-feature versus mutable-basis comparison — Task163
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Status: NOTRUNSTAGEASTOP. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Fixed-feature versus mutable-basis comparison — Task163；Status: NOTRUNSTAGEASTOP.；The F0 fixed-feature baseline and M1 mutable-basis pipeline were not compared because M1 did not qualify on the required historical replay gate. It would be invalid to infer generator lock-in from a comparison involving an unqualified operator.；The run therefore contains no result for cross-book residual compression, fresh-holdout causal reconstruction, question/falsifier yield, compile-away rate, local patch burden, complexity, or permutation stability. The Stage B comparison file is a stop sentinel, not a zero score.
-- 完整阅读：[docs/governance/fixed-vs-mutable-generator-comparison-2026-09-07.md](../../docs/governance/fixed-vs-mutable-generator-comparison-2026-09-07.md)

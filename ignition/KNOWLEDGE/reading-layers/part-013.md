@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-fbfb831e55a2a3a0"></a>
+## Fixed-feature versus mutable-basis comparison — Task163
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Status: NOTRUNSTAGEASTOP. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Fixed-feature versus mutable-basis comparison — Task163；Status: NOTRUNSTAGEASTOP.；The F0 fixed-feature baseline and M1 mutable-basis pipeline were not compared because M1 did not qualify on the required historical replay gate. It would be invalid to infer generator lock-in from a comparison involving an unqualified operator.；The run therefore contains no result for cross-book residual compression, fresh-holdout causal reconstruction, question/falsifier yield, compile-away rate, local patch burden, complexity, or permutation stability. The Stage B comparison file is a stop sentinel, not a zero score.
+- 完整阅读：[docs/governance/fixed-vs-mutable-generator-comparison-2026-09-07.md](../../docs/governance/fixed-vs-mutable-generator-comparison-2026-09-07.md)
+
 <a id="reading-hr-fcbaa498cbeb783c"></a>
 ## 080 Resume Instructions
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`

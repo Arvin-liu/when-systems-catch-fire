@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-a488097fe88e905e"></a>
+## IGNITION-20260827-142 Step 02 — Independent Open-Obligation Registry
+`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：LIVEEXTERNALINVOCATION now has an independent machine source at ignition/data/operations/open-obligation-registry-r1.json. It records the obligation ID, kind, opening task, current OPEN status, owner plane, blocker, next eligible action, carry-forward task, exact terminal condition, and evidence… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-142 Step 02 — Independent Open-Obligation Registry；LIVEEXTERNALINVOCATION now has an independent machine source at ignition/data/operations/open-obligation-registry-r1.json. It records the obligation ID, kind, opening task, current OPEN status, owner plane, blocker, next eligible action, carry-forward task, exact terminal condition, and evidence references.；The registry is linked from the formal lifecycle and task-lineage sources, but neither lifecycle source derives task terminality from the registry. Task141 can therefore be terminal with COMPLETEDWITHOPENOBLIGATIONS while the registry remains open. The registry validator cross-checks only the live projection’s validated-completion count and next action; it d…；The Current projection will consume these two authorities as separate fields. The ceiling remains repository-local: no validated completion, external truth, production readiness, Owner acceptance, or epistemic acceptance is inferred.
+- 完整阅读：[reports/operations/ignition-142-step02-obligation-registry.md](../../reports/operations/ignition-142-step02-obligation-registry.md)
+
 <a id="reading-hr-a492aafc18415614"></a>
 ## 121Q28T｜之元写作法 0.3.0 Current 收口
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q32I typed change-propagation impact report；Closure complete: true；Closure hash: be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705；Fixpoint iterations: 2；Seeds: aiguide, currentstate, historicalreports, incrementalexecution, iteration, iterationmanifestcontract, nol7, pagespipeline, projectcomponentregistry, propagationcalculator, propagationtopology, readme, summary, systemmaplayout, systemmapprojection, usage；Resolved components: 19
 - 完整阅读：[reports/operations/121Q32I-change-propagation-impact.md](../../reports/operations/121Q32I-change-propagation-impact.md)
-
-<a id="reading-hr-b55587d4d61d4426"></a>
-## 第57期故事结构图
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`
-- 1 分钟：结论：PARTIALISOMORPHISM，可进入正文，但必须带边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：回返节点：D600 资源托举退化为路径控制；组织层收束：D602 价值创造权与决策权错配与回收；主题：为什么不是“李丹阳 × 乔布斯 × 马斯克”；创业者神话容易把“角色覆盖主体”偷换成“强人风格差异”。；公开材料中的动机、组织细节和亲密关系约束高度混杂，不适合在本任务里拿来做精确同构。；这组候选更像名人并列，不像事件—事件碰撞。
-- 完整阅读：[outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md](../../outputs/stories/20260712-disobedience-subjectivity/story-structure-map.md)
