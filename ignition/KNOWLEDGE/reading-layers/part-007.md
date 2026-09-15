@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-8079a8712f2b03bc"></a>
+## Ψ₀ 判定矩阵（psi0-decision-matrix）
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Ψ₀ 判定矩阵（psi0-decision-matrix）；对每个候选执行六组件：C(x,y) 因果结构、M(Bn) 自举收敛、Iiso(A,B) 同构、Lmeta 上位概念判定、Gδ 不可判定/缺口、Pmeta 元协议投影。；判定同时保留：正向通道 / 反向通道 / 反例 / pending / 退出条件。禁止把 J⁺=1 写成数学证明或外部事实证明。；主题：F-new-1｜资源托举退化为路径控制（M3）；C(x,y)：提供资源+安全 → 资源附带路径条件 → 退出成本↑ → 决策空间绑定。因果链明确、可复述。J⁺=1。；M(Bn)：机制在 A2/A3/A4 稳定复现，可收敛。J⁺=1。
+- 完整阅读：[outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md](../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+
 <a id="reading-hr-814cd0e9847c82e3"></a>
 ## 121Q22 Probability and Systems Source Map
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The old tables are byte-preserved and mapped to generated compatibility views. Legacy IDs remain stable; new truth/status authority is data/foundation. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Legacy compatibility report；The old tables are byte-preserved and mapped to generated compatibility views. Legacy IDs remain stable; new truth/status authority is data/foundation.
 - 完整阅读：[reports/foundation-architecture/legacy-compatibility-report-20260712.md](../../reports/foundation-architecture/legacy-compatibility-report-20260712.md)
-
-<a id="reading-hr-933d6ba7d34f8014"></a>
-## 121C01: First Batch GLM-5.2 Max Semantic Review Report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Task: IGNITION-20260709-121C01 Reviewer: qclaw/pool-glm-5.2 (reasoning: high) Note: Task specified max reasoning; subagent environment supports high only. Main session supports max. Date: 2026-07-14 Baseline: 66c6efdf673dc486fbf10373edbcf2eab67a528c (121B HEAD) Status: 121C01MAXSEMANTICBATCHCOMPL… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121C01: First Batch GLM-5.2 Max Semantic Review Report；Task: IGNITION-20260709-121C01 Reviewer: qclaw/pool-glm-5.2 (reasoning: high) Note: Task specified max reasoning; subagent environment supports high only. Main session supports max. Date: 2026-07-14 Baseline: 66c6efdf673dc486fbf10373edbcf2eab67a528c (121B HEAD) Status: 121C01MAXSEMANTICBATCHCOMPLETEEVIDENCEACCUMULATING；主题：Phase 0: Status Axis Reconciliation；主题：Two Independent Status Axes Established；contentaccessstatus: LOCATED (84) → DOWNLOADED (79) → EXTRACTEDFULL (72) / EXTRACTEDPARTIAL (7) → ANCHORVERIFIED (30); FAILEDLEGALOANOTFOUND (5)；semanticreviewstatus: NOTREVIEWED (49) → PROVISIONALNONMAXREVIEW (30) → MAXREVIEWINPROGRESS (10) → MAXREVIEWCOMPLETE (0 after this batch); INSUFFICIENTCONTENT (0)
-- 完整阅读：[reports/external-research/121c01-max-semantic-review-batch-01.md](../../reports/external-research/121c01-max-semantic-review-batch-01.md)

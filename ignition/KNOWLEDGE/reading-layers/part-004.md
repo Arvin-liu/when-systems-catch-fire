@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-460ef60e3cf27dca"></a>
+## 元协议规范性审核发布审计 — IGNITION-20260709-043
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：宪章 PR 9（docs/life-community-value-charter-20260711）尚未合并。本任务未基于旧 main 发布，也未重复创建第二份宪章文件，而是以宪章分支为基线建立堆叠分支，将 12 个协议的外部治理记录叠加其上。在 9 合并前，本 PR（10）的基线是宪章分支；宪章合并后，本 PR 应重新基于合并后的 main（或由审查者处理）。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：元协议规范性审核发布审计 — IGNITION-20260709-043；任务：12 元协议规范性审核外部治理记录入库与统一发布；基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）；发布分支：docs/meta-protocol-normative-reviews-20260711；验证脚本：outputs/audit 由 PRIVATE_PROVENANCE_WITHHELD；主题：二、验证清单（23 项，全部通过）
+- 完整阅读：[outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md](../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)
+
 <a id="reading-hr-46cd997d4826e649"></a>
 ## IGNITION-140 Step 06 — Evidence Exhaustion Audit
 `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The one authorized Step11 boundary was attempted and durably appended as ledger sequence 4 (8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d). The fresh public Codex lease and strict OS capability intersection were admitted, and the OS coordinator prepared/accepted the dispatch. T… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260825-139 Step 11 — Single live boundary and fail-closed receipt；The one authorized Step11 boundary was attempted and durably appended as ledger sequence 4 (8ebe46858519650684d476609cea03f09340d5afb18bee1a9260a7e107851e9d). The fresh public Codex lease and strict OS capability intersection were admitted, and the OS coordinator prepared/accepted the dispatch. The adapter then failed closed during its runtime filesystem-dom…；The host receipt therefore records OBSERVATIONINCOMPLETE, incomplete evidence, no structured result, validator UNKNOWN, and REQUIRESRECONCILIATION. The transport call ledger shows exactly two public probes and zero live dispatch calls. No blind retry was made.；The failure was reproduced read-only with the same adapter setup: the broad persistent user-document root contained an unrelated symlinked tool environment, so the filesystem contract rejected the attempt with filesystem domain contains a symlink/path escape. The candidate has since been tightened for future admission to use a bounded symlink-free note root…；One important epistemic boundary is preserved in the machine artifact: the first runner's fallback low-level returncode: 0 is not treated as a live process result because livedispatchcalls=0; it is the last public-probe transport value retained while closing the incomplete host observation. No capture capsule or structured result was initialized, so no exter…；Machine evidence: step11-live-attempt.json, the append-only live-attempt-ledger.jsonl, and runtask139singleliveattempt.py.
 - 完整阅读：[reports/operations/ignition-139-step11-live-attempt.md](../../reports/operations/ignition-139-step11-live-attempt.md)
-
-<a id="reading-hr-5a6642209467ff3a"></a>
-## IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report；Closure complete: true；Closure hash: 3332a4e7b8ed9e69b9c2ecfcbd6984d75ee4a8bae2aa77da2ddead4ba4d550d0；Fixpoint iterations: 2；Seeds: aiguide, currentstate, historicalreports, incrementalexecution, iteration, pagespipeline, projectcomponentregistry, propagationcalculator, propagationtopology, readme, stagesnapshotpublication, summary, sync, systemmapprojection, usage；Resolved components: 16
-- 完整阅读：[reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md](../../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)

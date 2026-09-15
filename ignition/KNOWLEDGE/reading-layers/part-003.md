@@ -284,6 +284,13 @@
 - 5 分钟：本规范是 Foundation 的现行认识论边界。它管理项目如何命名、计算、测试、展示和撤回断言；它不把治理规则本身伪装成外部科学结论。；形式化不等于证实；可计算不等于真实；内部自洽不等于外部成立。；AI 生成的编号、名称、公式或通过的内部测试不赋予真值。；数学事实、模型定义、算法规则、结构隐喻和经验断言必须分层。；局部模型失败不能推广为全称不可能；必要条件不能冒充充分条件。；定义不能预埋待证明结论；内部指标不能未经表示映射直接解释为现实对象。
 - 完整阅读：[docs/foundation/claim-governance-and-function-identity.md](../../docs/foundation/claim-governance-and-function-identity.md)
 
+<a id="reading-hr-429865ba2fb29659"></a>
+## Task172 Step09 field 31: AGRICULTURAL SCIENCES
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 31: AGRICULTURAL SCIENCES；Formal parent freeze: f576b166d1ff2d7e76d6348cd6152b9145dc9860；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 10；Selected metadata links: 80
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-31.md](../../reports/operations/ignition-172-20260915-step09-field-31.md)
+
 <a id="reading-hr-42c319dffa9ac5fd"></a>
 ## 首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：新增注释 · P1 接入烟雾测试；救援仓库不作为主线：临时仓库（LIANGZHANGBIAO / Unified-）仅作 Codespace 救援缓存，主线始终在点火主仓库 when-systems-catch-fire。；差异审计优先：在合并任何来源前，先对来源与主仓库做差异审计，区分「重叠 / 独有增量 / 缺失」，避免盲目整体合并。；只回填增量：仅把差异审计确认的主线独有增量（本次为 MF-0001~0005 五个内部结构件）补回主线，不整体搬运临时仓库。；案例无增量不回灌：救援案例表经审计为正式表旧子集（578/806 重叠，0 增量），故不回灌案例表。；凭证保留：删除临时环境前，保留本机 Codespace-Rescue/ 与远端 rescue 分支作为可回查凭证。
 - 完整阅读：[outputs/collisions/20260708-smoke-test/notes.md](../../outputs/collisions/20260708-smoke-test/notes.md)
-
-<a id="reading-hr-460ef60e3cf27dca"></a>
-## 元协议规范性审核发布审计 — IGNITION-20260709-043
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：宪章 PR 9（docs/life-community-value-charter-20260711）尚未合并。本任务未基于旧 main 发布，也未重复创建第二份宪章文件，而是以宪章分支为基线建立堆叠分支，将 12 个协议的外部治理记录叠加其上。在 9 合并前，本 PR（10）的基线是宪章分支；宪章合并后，本 PR 应重新基于合并后的 main（或由审查者处理）。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：元协议规范性审核发布审计 — IGNITION-20260709-043；任务：12 元协议规范性审核外部治理记录入库与统一发布；基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）；发布分支：docs/meta-protocol-normative-reviews-20260711；验证脚本：outputs/audit 由 PRIVATE_PROVENANCE_WITHHELD；主题：二、验证清单（23 项，全部通过）
-- 完整阅读：[outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md](../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)

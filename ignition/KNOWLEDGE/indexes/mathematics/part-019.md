@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0333-D297-基本常数-容斥约束函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-87d229bd031349cc / 已迁移的历史函数来源/0333-D297-基本常数-容斥约束函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D297；被引用：—
 - [已迁移的历史函数来源/0334-D298-鲁棒系统设计原则函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-56747046629bb334 / 已迁移的历史函数来源/0334-D298-鲁棒系统设计原则函数.md
@@ -2497,10 +2502,5 @@
 - [调用证据制度库（数学）：需要公理系统内可复核证明，被数学界同行审查通过。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-96eae0fa6f4ff5ca / 调用证据制度库（数学）：需要公理系统内可复核证明，被数学界同行审查通过。
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [调用证据制度库（物理学）：需要理论自洽、数学形式、实验路径和观测验证。](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-83f14852f6a1fd87 / 调用证据制度库（物理学）：需要理论自洽、数学形式、实验路径和观测验证。
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—

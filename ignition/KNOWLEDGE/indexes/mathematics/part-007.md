@@ -2074,6 +2074,11 @@
   - 可搜索名称：Task172 Step09 field 25: EARTH AND SPACE SCIENCES / ignition-172-20260915-step09-field-25
   - 来源：`reports/operations/ignition-172-20260915-step09-field-25.md`
   - 依赖：—；被引用：—
+- [Task172 Step09 field 31: AGRICULTURAL SCIENCES](../../ASSET-CARDS.md#asset-hr-429865ba2fb29659)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task172 Step09 field 31: AGRICULTURAL SCIENCES / ignition-172-20260915-step09-field-31
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-31.md`
+  - 依赖：—；被引用：—
 - [Task:** `IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731`](../../../docs/foundation/task-107-incident-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-337b55cb63f246c6 / Task:** `IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731`
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-25cf70384dbe9483 / The plane keeps public probes, transport wrappers, live-process lifecycle,
   - 来源：`docs/architecture/external-agent-federation-r1.md`
-  - 依赖：—；被引用：—
-- [The planner resolves real changed paths through the component registry and typed topology. Every registered component re](../../../docs/architecture/incremental-execution.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5e94f580746486a2 / The planner resolves real changed paths through the component registry and typed topology. Every registered component re
-  - 来源：`docs/architecture/incremental-execution.md`
   - 依赖：—；被引用：—

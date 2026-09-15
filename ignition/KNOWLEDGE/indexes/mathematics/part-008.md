@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The planner resolves real changed paths through the component registry and typed topology. Every registered component re](../../../docs/architecture/incremental-execution.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5e94f580746486a2 / The planner resolves real changed paths through the component registry and typed topology. Every registered component re
+  - 来源：`docs/architecture/incremental-execution.md`
+  - 依赖：—；被引用：—
 - [The preflight created a disposable synthetic read-only fixture, observed its write guard, exercised public Codex version](../../../reports/operations/ignition-140-step10-live-admission.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c5a542cb38e8a8ce / The preflight created a disposable synthetic read-only fixture, observed its write guard, exercised public Codex version
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FD1424D514090A7C / title: "群体智能函数" / IMPLICIT-FD1424D514090A7C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "群体智能函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1dc4bf4f318b7895 / title: "群体智能函数"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

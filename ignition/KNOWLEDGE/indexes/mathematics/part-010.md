@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 慢性消耗-波动累积同构检验 is adjudicated as RELATION: M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D394 / Within the source-defined scope, 慢性消耗-波动累积同构检验 is adjudicated as RELATION: M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D342, D380；被引用：—
 - [Within the source-defined scope, 执念-逃避-逃避的逃避函数 is adjudicated as RELATION: f\(执念,逃避\) = σ\(θ_escape - ε_fixation\) × R_escap](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D540 / Within the source-defined scope, 执念-逃避-逃避的逃避函数 is adjudicated as RELATION: f\(执念,逃避\) = σ\(θ_escape - ε_fixation\) × R_escap
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-5cec8da646cc9646 / \| \[D34\]\( \) \| \[充分条件三层函数\]\( \) \| F_{D34}\(x\) := P_sustain = I × \(1-Posture_deg\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D34；被引用：—
-- [\| \[D352\]\( \) \| \[阶段2宽度-共振频率函数\]\( \) \| F_{D352}\(x\) := M11的w₂决定共振频率ω_r](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4a9d3c2fed009425 / \| \[D352\]\( \) \| \[阶段2宽度-共振频率函数\]\( \) \| F_{D352}\(x\) := M11的w₂决定共振频率ω_r
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D324, D352；被引用：—

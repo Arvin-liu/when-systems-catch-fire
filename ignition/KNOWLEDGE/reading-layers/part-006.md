@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-70146813777bcdb5"></a>
+## 078 truth audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：PARTIALSEMANTICADJUDICATION. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：078 truth audit；PARTIALSEMANTICADJUDICATION.；The 078 621/622 number is not an independently verified semantic-review rate. Code inspection of adjudicatecore.py shows that all 622 registry classifications pass through one generator: 74 IDs use explicit dictionaries/branches and 548 use title, expression, keyword, or default regex branches. The resulting records then describe themselves as source-text re…；079 therefore records:；migration coverage: 622/622;；preclassification coverage: 622/622;
+- 完整阅读：[reports/foundation-architecture/078-truth-audit-20260713.md](../../reports/foundation-architecture/078-truth-audit-20260713.md)
+
 <a id="reading-hr-70403729fef8b50e"></a>
 ## Non-Sycophancy Output Protocol
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Status: COMPLETED WITH CLASSIFIED RESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260822-132 Step 12 — Targeted and Bounded Regression Closure；Status: COMPLETED WITH CLASSIFIED RESIDUALS；The current/release identity suite passed 95 tests. The Steering, Durability, Federation and soft-governance suite ran 202 tests: 201 passed and one reproduced the known projection-manifest residual (missing=194). The Human/front-door/map/sync suite ran 98 tests: 95 passed; the three remaining failures are the known 11 Human Surface hash drifts, a legacy 81-…；Independent bounded checks passed: task identity model, Current volatile registry, release transaction protocol, 13-case release fault matrix, iteration sync, map geometry and fixtures, owner-observation privacy, and changed-file secret/local-path scan (zero matches). Current lineage, lifecycle, facts, Snapshot, compiler, semantic and state-sync checks also…；The complete unittest discover run was bounded to 30 seconds and timed out while a test was migrating 12 records into a temporary protocols-canonical.json. It is recorded as TIMEOUTCLASSIFIED, not as a full-suite pass.；No validator semantics were weakened and no historical manifest, Human Surface entry, map source, or append-only historical State Changelog entry was rewritten to manufacture green output. The formal candidate remains repository-local and is still not published from this step.
 - 完整阅读：[reports/operations/ignition-132-step12-regression-closure.md](../../reports/operations/ignition-132-step12-regression-closure.md)
-
-<a id="reading-hr-8079a8712f2b03bc"></a>
-## Ψ₀ 判定矩阵（psi0-decision-matrix）
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Ψ₀ 判定矩阵（psi0-decision-matrix）；对每个候选执行六组件：C(x,y) 因果结构、M(Bn) 自举收敛、Iiso(A,B) 同构、Lmeta 上位概念判定、Gδ 不可判定/缺口、Pmeta 元协议投影。；判定同时保留：正向通道 / 反向通道 / 反例 / pending / 退出条件。禁止把 J⁺=1 写成数学证明或外部事实证明。；主题：F-new-1｜资源托举退化为路径控制（M3）；C(x,y)：提供资源+安全 → 资源附带路径条件 → 退出成本↑ → 决策空间绑定。因果链明确、可复述。J⁺=1。；M(Bn)：机制在 A2/A3/A4 稳定复现，可收敛。J⁺=1。
-- 完整阅读：[outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md](../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)

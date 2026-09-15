@@ -35,7 +35,7 @@
     "source_fingerprint_mismatch": 0
   },
   "inputs": {
-    "authority": "78570bf56c57cf773731329f1c02f2c629f27e2e3c95709c8c9ea7d7f8454517",
+    "authority": "2fb2c1330822ef89e56303a0e21709e465048b5c74d00e4dccf38019d66ffdc8",
     "discipline_count": "245",
     "field_count": "24",
     "field_labels_sha256": "fa35ba2caaef0119b5f53bee2a27a07b1ccda066591b1805b5ceeb4415828d22",
@@ -48,13 +48,13 @@
   "manual_review_required": 17981,
   "network": false,
   "outputs": {
-    "operation": "fdc7ce00f779d05754e8afb4ac60a1a70bd6902056be0f44e737559dc0919494",
-    "overlay": "1061e8bacf46e27d5940bdacc4ae46145a8dfadb9b8dcb002c6dbe660aa09801",
-    "report": "55aeeef4d0d2bfd8a75e200b7eb39606199e299d275b62883d4f48ef4a8dd245",
-    "source_freeze": "376265419c5384f0aee754d389768096814dce0ea8912bdc547b4c7e7adba1d7"
+    "operation": "0401ccf4c29f7bc49c968dd01765af22ea451386b4706d3fa965474f2e3d95e6",
+    "overlay": "e49a5341f18c97783fa77f6235b65ee7e96e96b245c654bb03403beb16b304c9",
+    "report": "d9953b5a1abecf882135c95491b201db8f0241a3243f56a367fcfe0b7e7f4c23",
+    "source_freeze": "82ecaf26f3cf7928dd0fb51b6676d190a526ce5bb0a6fa33fcc92377e8875bb9"
   },
   "schema": "task172-full-routing-build-receipt-v1",
-  "source_exact_head": "89d52640a5659796ae89e490261371a47d8c77f9",
+  "source_exact_head": "f576b166d1ff2d7e76d6348cd6152b9145dc9860",
   "state_counts": {
     "CLASSIFIED": 7672,
     "MULTIDISCIPLINARY": 2107,

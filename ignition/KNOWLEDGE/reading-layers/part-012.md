@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e7e1eaa5ed0b5e25"></a>
+## Agent Platform R2 gap audit — IGNITION-20260816-121 Step 00
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This is a repository-scoped baseline audit performed from a fresh worktree at 2becca3ffd93d6ca1e147a75c159e476f4686f5d. It records engineering structure, deterministic projections, and open implementation work. It does not establish external validity, general intelligence, production readiness, O… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Agent Platform R2 gap audit — IGNITION-20260816-121 Step 00；This is a repository-scoped baseline audit performed from a fresh worktree at 2becca3ffd93d6ca1e147a75c159e476f4686f5d. It records engineering structure, deterministic projections, and open implementation work. It does not establish external validity, general intelligence, production readiness, Owner acceptance, or EPISTEMICALLYACCEPTED.；The task branch is codex/ignition-121-agent-platform-r2-nightshift-20260816. Formal main was not modified during Step 00.；主题：Baseline evidence；The previous R1 commit changed 91 generated or knowledge-facing files. Its projection delta included 132 new function-census records, a net 39-record nonfunction registry change, 8,004 additions and 7,833 removals in the Knowledge Experience search index, and 161 additions and 148 removals in the Fire Seed census. This is the measured evidence for the blast-…；主题：Current platform shape
+- 完整阅读：[reports/architecture/agent-platform-r2-gap-audit.md](../../reports/architecture/agent-platform-r2-gap-audit.md)
+
 <a id="reading-hr-e815f8ad25cfc77e"></a>
 ## IGNITION 059 next collision roadmap
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -84,8 +91,8 @@
 <a id="reading-hr-ecb9a4b8ee1483ca"></a>
 ## IGNITION-172 Step07 — Knowledge Experience routing index
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on exact frozen parent 89d52640a5659796ae89e490261371a47d8c77f9 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 89d52640a5659796ae89e490261371a47d8c77f9 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17981 nonfunction records = 24138 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 1 分钟：This logical step is based on exact frozen parent f576b166d1ff2d7e76d6348cd6152b9145dc9860 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent f576b166d1ff2d7e76d6348cd6152b9145dc9860 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17981 nonfunction records = 24138 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
 - 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
 
 <a id="reading-hr-ecc4e92db835c50c"></a>

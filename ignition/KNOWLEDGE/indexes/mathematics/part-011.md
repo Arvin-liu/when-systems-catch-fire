@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D352\]\( \) \| \[阶段2宽度-共振频率函数\]\( \) \| F_{D352}\(x\) := M11的w₂决定共振频率ω_r](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4a9d3c2fed009425 / \| \[D352\]\( \) \| \[阶段2宽度-共振频率函数\]\( \) \| F_{D352}\(x\) := M11的w₂决定共振频率ω_r
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D324, D352；被引用：—
 - [\| \[D355\]\( \) \| \[共存震荡分支函数\]\( \) \| F_{D355}\(x\) := M14的共存震荡中随机偏移δK∝√\(kT_eff\)·T](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e58246fc0438e12b / \| \[D355\]\( \) \| \[共存震荡分支函数\]\( \) \| F_{D355}\(x\) := M14的共存震荡中随机偏移δK∝√\(kT_eff\)·T
@@ -2499,8 +2504,3 @@
   - 可搜索名称：D397 / 两步策略最优性证明函数 / D397
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D361, D430, D431, D450；被引用：NFC-02ccdbb700b38bfc, NFC-1fb75a9aefaf751d, NFC-4a6d0a12c770246c, NFC-555e277abaea35f5
-- [两步策略最优性证明函数](../../../data/foundation/formal-objects/objects.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-85bba53ce4841ecf / 两步策略最优性证明函数
-  - 来源：`data/foundation/formal-objects/objects.jsonl`
-  - 依赖：—；被引用：—

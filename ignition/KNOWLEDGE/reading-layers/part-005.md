@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-5a6642209467ff3a"></a>
+## IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report；Closure complete: true；Closure hash: 3332a4e7b8ed9e69b9c2ecfcbd6984d75ee4a8bae2aa77da2ddead4ba4d550d0；Fixpoint iterations: 2；Seeds: aiguide, currentstate, historicalreports, incrementalexecution, iteration, pagespipeline, projectcomponentregistry, propagationcalculator, propagationtopology, readme, stagesnapshotpublication, summary, sync, systemmapprojection, usage；Resolved components: 16
+- 完整阅读：[reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md](../../reports/operations/IGNITION-ITERATION-METHOD-1.4-change-propagation-impact.md)
+
 <a id="reading-hr-5af412f645a35de0"></a>
 ## IGNITION-20260827-142 Step 04 — Provider-Neutral Executor Admission
 `HISTORICAL_COMPLETION_RECORD` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：某个学习者把一个旧项目拆成三层：主线仓库、临时救援仓库、本地备份目录。后来发现真正有价值的新增内容只存在于临时仓库中的五个内部结构件，而案例材料只是主线旧子集。于是他没有直接合并临时仓库，而是先做差异审计，再把五个结构件补回主线仓库，最后删除临时环境并保留救援分支作为凭证。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：输入材料快照 · P1 接入烟雾测试；原始输入留存，便于回查。来源：inputs/collisions/20260708-smoke-test/task.md；一个小型本地案例是否应该进入函数表或案例表。；某个学习者把一个旧项目拆成三层：主线仓库、临时救援仓库、本地备份目录。后来发现真正有价值的新增内容只存在于临时仓库中的五个内部结构件，而案例材料只是主线旧子集。于是他没有直接合并临时仓库，而是先做差异审计，再把五个结构件补回主线仓库，最后删除临时环境并保留救援分支作为凭证。；inputs/collisions/20260708-smoke-test/task.md；只测试 P1 机器数据接入碰撞流程是否能跑通。输出结构化结果，但不得回填正式两张表。
 - 完整阅读：[outputs/collisions/20260708-smoke-test/source-snapshot.md](../../outputs/collisions/20260708-smoke-test/source-snapshot.md)
-
-<a id="reading-hr-70146813777bcdb5"></a>
-## 078 truth audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：PARTIALSEMANTICADJUDICATION. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：078 truth audit；PARTIALSEMANTICADJUDICATION.；The 078 621/622 number is not an independently verified semantic-review rate. Code inspection of adjudicatecore.py shows that all 622 registry classifications pass through one generator: 74 IDs use explicit dictionaries/branches and 548 use title, expression, keyword, or default regex branches. The resulting records then describe themselves as source-text re…；079 therefore records:；migration coverage: 622/622;；preclassification coverage: 622/622;
-- 完整阅读：[reports/foundation-architecture/078-truth-audit-20260713.md](../../reports/foundation-architecture/078-truth-audit-20260713.md)

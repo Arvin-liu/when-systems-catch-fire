@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-933d6ba7d34f8014"></a>
+## 121C01: First Batch GLM-5.2 Max Semantic Review Report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Task: IGNITION-20260709-121C01 Reviewer: qclaw/pool-glm-5.2 (reasoning: high) Note: Task specified max reasoning; subagent environment supports high only. Main session supports max. Date: 2026-07-14 Baseline: 66c6efdf673dc486fbf10373edbcf2eab67a528c (121B HEAD) Status: 121C01MAXSEMANTICBATCHCOMPL… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121C01: First Batch GLM-5.2 Max Semantic Review Report；Task: IGNITION-20260709-121C01 Reviewer: qclaw/pool-glm-5.2 (reasoning: high) Note: Task specified max reasoning; subagent environment supports high only. Main session supports max. Date: 2026-07-14 Baseline: 66c6efdf673dc486fbf10373edbcf2eab67a528c (121B HEAD) Status: 121C01MAXSEMANTICBATCHCOMPLETEEVIDENCEACCUMULATING；主题：Phase 0: Status Axis Reconciliation；主题：Two Independent Status Axes Established；contentaccessstatus: LOCATED (84) → DOWNLOADED (79) → EXTRACTEDFULL (72) / EXTRACTEDPARTIAL (7) → ANCHORVERIFIED (30); FAILEDLEGALOANOTFOUND (5)；semanticreviewstatus: NOTREVIEWED (49) → PROVISIONALNONMAXREVIEW (30) → MAXREVIEWINPROGRESS (10) → MAXREVIEWCOMPLETE (0 after this batch); INSUFFICIENTCONTENT (0)
+- 完整阅读：[reports/external-research/121c01-max-semantic-review-batch-01.md](../../reports/external-research/121c01-max-semantic-review-batch-01.md)
+
 <a id="reading-hr-93a3986ac21ea580"></a>
 ## IGNITION-139 Step 03 — Durable capture before model context
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The existing Supervisor R0 was run with two dependency-ready children, ready-a and ready-b, whose write targets do not overlap. Both were accepted and the episode reached EPISODECOMPLETEDVALIDATED, but the trace was strictly ready-a → ready-b and the maximum observed concurrency was 1. The curren… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：OS Control Plane R2 gap audit — IGNITION-20260817-124；主题：Baseline identity；Formal repository: Arvin-liu/when-systems-catch-fire；Execution baseline: origin/main=266426d7110af9ee921a020a46c3a0347aa364e9；Control source: Arvin-liu/1111, origin/relay/current=c06c556cf6e98e8d4f0b004a8c15cd19a64b3cae；Task branch: codex/ignition-124-os-control-plane-r2-20260817
 - 完整阅读：[reports/architecture/os-control-plane-r2-gap-audit.md](../../reports/architecture/os-control-plane-r2-gap-audit.md)
-
-<a id="reading-hr-a932eb17267d9709"></a>
-## 之元写作法
-`CURRENT_SCOPED_SOURCE` · `WRITING_PUBLICATION`
-- 1 分钟：English: Zhiyuan Writing Method 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：English: Zhiyuan Writing Method；Version: 0.5.0 current; 0.4.0 and 0.3.0 remain historical merged versions.；Status: CURRENTMERGEDL6CAPABILITY；Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.5.0 makes the method a target-language publication consumer of the project-wide Language–Thought Logic Plane; it does not add L7 or raise any L0-L5 claim.；本方法以“之元”命名，因为它不是从通用写作教材拼接而来，而是从维护者之元的作品、心智运动、反馈和失败反例中蒸馏、提炼并总结出的个人写作方法。名称标记其真实来源和心智风格谱系。；“之元写作法”是方法名称；“心智层级跃迁”是其自 0.3.0 起的核心生成运动之一。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存、信息增益停止，以及公共表达与反馈返回点火的双向契约共同定义。
-- 完整阅读：[docs/publication/zhiyuan-writing-method.md](../../docs/publication/zhiyuan-writing-method.md)

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [数学表达 / Expression: `F_{D373}\(x\) := M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4767551889089918 / 数学表达 / Expression: `F_{D373}\(x\) := M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√n\|。临界指数β=1/2（平均场），γ=1。与Ising模型同构——容斥-耦合竞争临界点是
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D373；被引用：—
 - [数学表达 / Expression: `F_{D382}\(x\) := M13的K·τ_delay 1时自激振荡主导（延迟有害），=1为临界。弱正反馈系统中延迟可以有益（过滤噪声），强正反馈系统中延迟必然有害（](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-851dcc6d36222d6f / 数学表达 / Expression: `F_{D382}\(x\) := M13的K·τ_delay 1时自激振荡主导（延迟有害），=1为临界。弱正反馈系统中延迟可以有益（过滤噪声），强正反馈系统中延迟必然有害（
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-059607c1aa857458 / 理由：经全量查重，函数表无「指标替代真实价值」等价机制；D244 实际与指标化无关，原查重假设不成立；NF-002 提供清晰新增因果结构（C 维度通过），可稳定收敛（M 通过），无同构（I_iso 通过）。
   - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
   - 依赖：D244；被引用：—
-- [理由：经全量查重，函数表无「群体钝化稳态」等价机制；D364/D423 为通用不可逆判据，与 NF-004 弱同构但不重复；NF-004 提供清晰新增因果结构（C 维度通过），可稳定收敛（M 通过），边界清晰（I_iso 通过）。上一轮复核](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-06b6c8200512de4a / 理由：经全量查重，函数表无「群体钝化稳态」等价机制；D364/D423 为通用不可逆判据，与 NF-004 弱同构但不重复；NF-004 提供清晰新增因果结构（C 维度通过），可稳定收敛（M 通过），边界清晰（I_iso 通过）。上一轮复核
-  - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
-  - 依赖：D364, D423；被引用：—
