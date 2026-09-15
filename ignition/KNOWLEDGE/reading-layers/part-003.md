@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-314d6d340fda2a7b"></a>
+## IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh
+`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The 11 source revisions approved in Step 06 were written into the materiality manifest and the corresponding human-entry 来源指纹 fields. The operation changed no human explanation, machine-record fingerprint, disposition, M/E field, or claim ceiling. No source hash was recomputed for an entry outsid… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh；The 11 source revisions approved in Step 06 were written into the materiality manifest and the corresponding human-entry 来源指纹 fields. The operation changed no human explanation, machine-record fingerprint, disposition, M/E field, or claim ceiling. No source hash was recomputed for an entry outside the audited set.；The bounded materiality projection was then refreshed for the current registry count (nonfunctionmachine=16240, 48 retained entries, 4 withdrawn entries). Its deterministic check passed, the Human Surface contract passed, and an independent cross-check confirmed that all 11 manifest hashes, source bytes, and human-entry source fingerprints agree.；The five source paths now have these current fingerprints: AI-HANDOFF.md=d174ce365bba3747255f50a6f9c3b415098fabfeaae490b8d64c8893bacfde1a, ARCHITECTURE.md=bb1861533f57d8e7dd361446ef242dd6dd98dc9c59d03b183bc5f1686ce0e752, docs/project-current-state.md=b8e727cefb42026c834e12de2f495efbd219071b312aff02af04d7d8d9691ad7, llms.txt=4b3f95276294ac47c0ef817853c6acf985…；Claim ceiling: repository-local Human Surface fingerprint and materiality-projection evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.
+- 完整阅读：[reports/operations/ignition-134-step07-human-surface-fingerprint-refresh.md](../../reports/operations/ignition-134-step07-human-surface-fingerprint-refresh.md)
+
 <a id="reading-hr-31c369073213a9e3"></a>
 ## IGNITION-20260826-140 Step 09 — Fresh local executor census and dynamic selection
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Codex is integrated as an external coding executor through its observed public codex exec --json JSONL surface. The adapter assembles literal argv with: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Codex Adapter R1；Codex is integrated as an external coding executor through its observed public codex exec --json JSONL surface. The adapter assembles literal argv with:；read-only is the default federation sandbox. A workspace-write adapter instance must be constructed explicitly; the adapter never uses --dangerously-bypass-approvals-and-sandbox or bypasses hook trust. The effective permission is the intersection of the Ignition envelope, OS policy, Codex sandbox and Codex approval policy. A deny on any boundary cannot be ex…；JSONL events are reduced to public progress, a bounded final summary and an optional pointer-only codex-thread-id. Prompt, hidden reasoning, token usage and Codex internal history are not imported into OS state. Codex's completion event maps to COMPLETEDUNVALIDATED; the receipt remains REQUIRESRECONCILIATION until Ignition validators establish evidence.；Step 06 intentionally used a captured JSONL fixture and injected runner. LIVESMOKENOTRUN: this task is already executing in Codex, so no nested Codex invocation was allowed to modify a formal repository.；Official CLI reference: .
 - 完整阅读：[docs/architecture/codex-adapter-r1.md](../../docs/architecture/codex-adapter-r1.md)
-
-<a id="reading-hr-44a1c398c470bbf4"></a>
-## 121Q28S 之元写作法 0.3.0 全项目整合审计
-`CANDIDATE_OR_PENDING_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q28S 之元写作法 0.3.0 全项目整合审计；Status: READYFORGPTVERIFICATIONCANDIDATEONLY；Claim ceiling: candidatezhiyuanwritingmethod030wholeprojectexpressionfeedbackprojectionimplemented / repositorysynchronizationcompletependingindependentreview；主题：Remote truth and append-only history；origin/main: b396c136b47d8fd60ca513a531cb96ce65293d20；existing branch / Draft PR: docs/121q28-embodied-cognitive-leap-writing-method-20260716 / #58
-- 完整阅读：[reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md](../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)

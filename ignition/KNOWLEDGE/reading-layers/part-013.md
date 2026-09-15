@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-fd61253709a198c4"></a>
+## Agent result: IGNITION-20260907-162
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Completed the requested research-only longform corpus, information-volume/coherence ablation, basis-free induction, and procedural historical adjudication package from the exact command source 8ab1aac0cdedd4874c798f4593614335cdd79e76 / blob df58765e5c21cf3b0aba15f804ce461b4b1c542e / content SHA-2… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Agent result: IGNITION-20260907-162；Completed the requested research-only longform corpus, information-volume/coherence ablation, basis-free induction, and procedural historical adjudication package from the exact command source 8ab1aac0cdedd4874c798f4593614335cdd79e76 / blob df58765e5c21cf3b0aba15f804ce461b4b1c542e / content SHA-256 e4e61e12ca3798b72b714c0fc2e9cf1ec0b1224529dee138c9740a0fc2b4…；Final research findings: 22 eligible works, 4,368,310 words, nine domains, 18 book-scale works; volume ladder 9.545455 → 9.863636 → 9.954545 → 9.954545 → 9.954545; O/S/F original-order advantage 5/16 (0.3125); historical labels 67 defect / 72 strong negative / 261 undecidable; MS/MT precision 0.507812 / 0.482014; zero of ten anonymous candidates pass the Tas…；Verdict: INFORMATIONVOLUMEEFFECTONLY; historical result HISTORICALUNDERDETERMINED; basis result NOBASISESCAPEDETECTED; epistemic status DETECTORNOTVALIDATED / UNDERDETERMINED. The package is research-only, Draft-only, not Ready, not Current, not merged, and not Owner-accepted. Missing instructions/CURRENT.md and relay/current are preserved as STALECONTROLPOI…；Formal Draft PR #212 is OPEN and DRAFT at first published head e94a067f94f572afe886a422354a3257ce03b116, targeting work/IGNITION-20260907-161@5ccb15d45cec259d5397f1843278fd98011105aa; its first exact-head Actions snapshot was still in progress. The independent 1111 receipt PR is created only after the final Formal head and CI observation are recorded.
+- 完整阅读：[agent-results/IGNITION-20260907-162-result.md](../../agent-results/IGNITION-20260907-162-result.md)
+
 <a id="reading-hr-fd9206bee6e7782d"></a>
 ## 学科理论核卡片：物理学
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`

@@ -4,7 +4,7 @@
 
 ## 主题索引
 
-- [数学与形式化](./indexes/mathematics.md) — 9763 条主归属记录
+- [数学与形式化](./indexes/mathematics.md) — 9764 条主归属记录
 - [物理与统一问题](./indexes/physics.md) — 481 条主归属记录
 - [系统论与机制建模](./indexes/systems.md) — 2697 条主归属记录
 - [认知、Agent 与行动](./indexes/cognition.md) — 1330 条主归属记录

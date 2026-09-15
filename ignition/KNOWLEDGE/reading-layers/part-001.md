@@ -74,6 +74,13 @@
 - 5 分钟：主题：点火从知识治理系统向智能体运行时抽层；任务 IGNITION-20260815-119 的 R0 完成了领域切割和依赖解耦；任务 121 的 R2 在这个 generic boundary 上接入 Pack、Memory、Supervisor、Gateway、Profile 和 真实离线维护 pilot，仍不做全仓物理大搬家。完整总架构图 SVG 继续由 registry、 typed topology 和 layout 确定性生成；SVG 源码可以保留指向 canonical 目标的 link metadata， 但不承诺 GitHub 渲染页面提供交互热点；本页是 R0 基础边界的 Human Surface，机器边界以 agentization-boundary-r0.json 和其 schema 为准，R2 总说明见 agent-platf…；Generic Kernel 只提供身份、状态、能力、授权、审计、checkpoint、handoff、resume lineage、记忆事件和不变量契约。；Agent Runtime R0 只编排 Observe → Frame → Plan → Authorize → Act → Validate → Remember → Continue/Stop，并把领域工作交给可加载的 Domain Pack。；Knowledge Domain Pack 是第一个 Domain Pack：它承载 Foundation、claims、formal/evidence/proof/scope/provenance、M/E、functions/non-functions、Knowledge Experience、Results 和 epistemic correction 等知识对象与验证入口。；REOS vNext LIGHT 仅作为边界清楚的 research Pack；之元写作法与出版面仅作为 writing/publication Pack。R0 不把课程内容或旧知识树物理搬入 Kernel。
 - 完整阅读：[docs/architecture/agentization-boundary-r0.md](../../docs/architecture/agentization-boundary-r0.md)
 
+<a id="reading-hr-05cc949076737494"></a>
+## Task172 Step09 field 61: PSYCHOLOGY
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 61: PSYCHOLOGY；Formal parent freeze: 66234e27368edb618886ac5e2b26e2fd890067ed；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 15；Selected metadata links: 120
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-61.md](../../reports/operations/ignition-172-20260915-step09-field-61.md)
+
 <a id="reading-hr-0701995cf1f17938"></a>
 ## IGNITION-20260828-144 Step 12 — targeted closure regression
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The existing Results Book remains the sole canonical publication entrypoint. There is one public RESULT-REGISTRY.jsonl and one Results Book README; no parallel results system or second registry was created. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260828-144 Step 08 — Results Book / publication entrypoint audit；The existing Results Book remains the sole canonical publication entrypoint. There is one public RESULT-REGISTRY.jsonl and one Results Book README; no parallel results system or second registry was created.；The audit checked the Results Book README, the Task143 portfolio and the Book Project R1 links. All 32 internal links resolve, all 95 registry narrative paths exist, and the six Task143 smoke-test rows retain the exact tuple SMOKETESTOUTPUT / OWNERREVIEWPENDING / PUBLICATIONACCEPTANCENOTGRANTED.；This is entrypoint and link-integrity evidence. It does not turn repository artifacts into Owner-selected production or external publication acceptance.
 - 完整阅读：[reports/operations/ignition-144-step08-publication-entrypoint-audit.md](../../reports/operations/ignition-144-step08-publication-entrypoint-audit.md)
-
-<a id="reading-hr-1bf6463b42d7824f"></a>
-## 生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：data/operations/merged-iteration-ledger.jsonl 在 main 上呈现： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）；审计对象：data/operations/lifecycle-events.jsonl、data/operations/derived-lifecycle-view.json、data/operations/current-truth-projection.json、tools/propagation/lifecycleevents.py、tagvalidator.py、terminalizationallowlist.py、terminalizationgenerator.py、schemas/operations/lifecycle-event.schema.json；生成方式：tools/propagation/derivedlifecycleview.py（确定性，可重放）；审计时间基准：origin/main = 77352d27bc997ff9418de017f622f0c72dd634e3（任务 107 普通合并）；主题：1. 基线矛盾（任务 108 之前）；data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
-- 完整阅读：[reports/operations/lifecycle-audit-108.md](../../reports/operations/lifecycle-audit-108.md)

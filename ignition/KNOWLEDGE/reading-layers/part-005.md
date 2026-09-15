@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-5797c2119cce6faa"></a>
+## Task172 Step09 field 33: TECHNOLOGICAL SCIENCES
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 33: TECHNOLOGICAL SCIENCES；Formal parent freeze: 6803817d2f05b35d6c2e2bae95768b0911dc8de3；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 30；Selected metadata links: 240
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-33.md](../../reports/operations/ignition-172-20260915-step09-field-33.md)
+
 <a id="reading-hr-57b4f559431d6912"></a>
 ## 121Q32 typed change-propagation impact report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -70,8 +77,8 @@
 <a id="reading-hr-5bd3902ec1ba8dce"></a>
 ## IGNITION-172 Step05 — full function asset routing overlay
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on the exact frozen parent 42181c77898b012980e4bc9265e7ac4db127ab41 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step05 — full function asset routing overlay；This logical step is based on the exact frozen parent 42181c77898b012980e4bc9265e7ac4db127ab41 on the existing Task172 branch and Draft PR #218.；Authority: data/foundation/function-assets/identity-cards.jsonl; 6158 canonical rows, one routing row per canonical ID.；Taxonomy: 1988 UNESCO primary lock, 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines. The overlay never invents a four-digit equivalence; empty discipline facets remain explicit unresolved routing information.；Classification states: {'CLASSIFIED': 1315, 'MULTIDISCIPLINARY': 283, 'OUTOFUNESCOSCOPE': 4560}. Field tags are the conservative Gate R classifier projection; unresolved and out-of-scope rows remain retained and auditable.；Routing use: 4885 negative/quarantined/withdrawn boundary rows are restricted to historical/negative review routes. 1881 rows have field facets; field counts are {'12': 709, '22': 136, '23': 3, '24': 29, '32': 8, '33': 170, '52': 35, '53': 66, '54': 2, '55': 277, '56': 95, '57': 47, '58': 7, '59': 39, '61': 198, '62': 35, '63': 11, '71': 14}.
+- 1 分钟：This logical step is based on the exact frozen parent 66234e27368edb618886ac5e2b26e2fd890067ed on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step05 — full function asset routing overlay；This logical step is based on the exact frozen parent 66234e27368edb618886ac5e2b26e2fd890067ed on the existing Task172 branch and Draft PR #218.；Authority: data/foundation/function-assets/identity-cards.jsonl; 6158 canonical rows, one routing row per canonical ID.；Taxonomy: 1988 UNESCO primary lock, 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines. The overlay never invents a four-digit equivalence; empty discipline facets remain explicit unresolved routing information.；Classification states: {'CLASSIFIED': 1315, 'MULTIDISCIPLINARY': 283, 'OUTOFUNESCOSCOPE': 4560}. Field tags are the conservative Gate R classifier projection; unresolved and out-of-scope rows remain retained and auditable.；Routing use: 4885 negative/quarantined/withdrawn boundary rows are restricted to historical/negative review routes. 1881 rows have field facets; field counts are {'12': 709, '22': 136, '23': 3, '24': 29, '32': 8, '33': 170, '52': 35, '53': 66, '54': 2, '55': 277, '56': 95, '57': 47, '58': 7, '59': 39, '61': 198, '62': 35, '63': 11, '71': 14}.
 - 完整阅读：[reports/operations/ignition-172-20260914-step05-function-routing.md](../../reports/operations/ignition-172-20260914-step05-function-routing.md)
 
 <a id="reading-hr-5bdd4bcb216b40fe"></a>
@@ -346,10 +353,3 @@
 - 1 分钟：This is a frozen research protocol and replay record. It is not a new meta-protocol, schema, registry, validator, runtime capability, or canonical layer. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Meta-Protocol 64 Basis-Escape Experiment — IGNITION-20260906-158；This is a frozen research protocol and replay record. It is not a new meta-protocol, schema, registry, validator, runtime capability, or canonical layer.；主题：What was tested；The existing matrix is documented as V×S×E = 4×4×4 = 64; its repository description says that each combination provides a reality case and an inference shape, and explicitly does not establish empirical exhaustiveness. This experiment tested whether historical changes that appear to escape a prior basis can be reconstructed without using the existing V1–V4 /…；The matrix and its meanings were read as existing comparison material only. No entry, axis, Psi-zero meaning, meta-protocol meaning, or canonical table was edited.；主题：Frozen hypotheses
 - 完整阅读：[docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md](../../docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md)
-
-<a id="reading-hr-6a9b73c834a5af36"></a>
-## IGNITION-20260823-136 — Live External Executor Bridge R1
-`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
-- 1 分钟：Task ID: IGNITION-20260823-136 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260823-136 — Live External Executor Bridge R1；Task ID: IGNITION-20260823-136；Formal task ordinal: 136；Latest architecture-changing task: IGNITION-20260823-136; architecture task ordinal: 136.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；Task136 terminalizes the repository-local Live External Executor Bridge R1 as RELEASEREADY. CURRENTWITHOPENOBLIGATIONS remains current, EPISTEMICALLYACCEPTED=0 remains unchanged, and LIVEEXTERNALINVOCATION remains an explicit open obligation. This result records repository-local implementation, bounded live-attempt observation, deterministic projection closu…
-- 完整阅读：[agent-results/IGNITION-20260823-136-result.md](../../agent-results/IGNITION-20260823-136-result.md)

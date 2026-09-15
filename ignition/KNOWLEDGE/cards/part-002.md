@@ -784,6 +784,26 @@
 - **主题：** `PHYSICS`, `SYSTEMS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `点火从知识治理系统向智能体运行时抽层`, `agentization-boundary-r0`
 
+<a id="asset-hr-05cc949076737494"></a>
+## Task172 Step09 field 61: PSYCHOLOGY
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-05CC949076737494` · [reports/operations/ignition-172-20260915-step09-field-61.md](../../reports/operations/ignition-172-20260915-step09-field-61.md)
+- **为什么产生：** 此来源记录了什么：Task172 Step09 field 61: PSYCHOLOGY？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-172-20260915-step09-field-61.md`, `172-20260915-STEP09-FIELD-61`
+- **演化历史：** 2026-09-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Task172 Step09 field 61: PSYCHOLOGY`, `ignition-172-20260915-step09-field-61`
+
 <a id="asset-hr-0701995cf1f17938"></a>
 ## IGNITION-20260828-144 Step 12 — targeted closure regression
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Core strong-claim audit`, `core-strong-claim-audit-20260713`
-
-<a id="asset-hr-0911d8b98cfd3922"></a>
-## IGNITION-20260826-141 Step 08 — Fresh local executor census
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-0911D8B98CFD3922` · [reports/operations/ignition-141-step08-local-executor-census.md](../../reports/operations/ignition-141-step08-local-executor-census.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260826-141 Step 08 — Fresh local executor census？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** PASS: 14 candidates were re-attested through public metadata only: 5 Agentic Executor records (4 installed), 4 reasoner runtimes, 3 tools and 2 UI-only bundles. No inference, auth-content read, UI action, installation, configuration or billing operation occurred.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-141-step08-local-executor-census.md`, `141-STEP08-LOCAL-EXECUTOR-CENSUS`
-- **演化历史：** 2026-08-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260826-141 Step 08 — Fresh local executor census`, `ignition-141-step08-local-executor-census`

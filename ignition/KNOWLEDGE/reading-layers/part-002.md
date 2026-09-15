@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-1bf6463b42d7824f"></a>
+## 生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：data/operations/merged-iteration-ledger.jsonl 在 main 上呈现： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）；审计对象：data/operations/lifecycle-events.jsonl、data/operations/derived-lifecycle-view.json、data/operations/current-truth-projection.json、tools/propagation/lifecycleevents.py、tagvalidator.py、terminalizationallowlist.py、terminalizationgenerator.py、schemas/operations/lifecycle-event.schema.json；生成方式：tools/propagation/derivedlifecycleview.py（确定性，可重放）；审计时间基准：origin/main = 77352d27bc997ff9418de017f622f0c72dd634e3（任务 107 普通合并）；主题：1. 基线矛盾（任务 108 之前）；data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
+- 完整阅读：[reports/operations/lifecycle-audit-108.md](../../reports/operations/lifecycle-audit-108.md)
+
 <a id="reading-hr-1c328f9ffe6aee1f"></a>
 ## V4 规范性审核 - 可持续性协议 (Sustainability Protocol)
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：休眠问题池与再激活 — IGNITION-20260908-165；命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32fb2df 边界：研究只、Draft 只；不改变 Current、canonical、生产运行时、validator 或 Own…；休眠池记录数：120。池中每条记录保留来源路径、blob、源行号和原始未解决标记；本任务没有把问题改写成干净的待办或补齐缺失答案。；运行了 full、active-only、休眠相关性排序和休眠低分随机四种消融。结果只报告 L2/L3 结构代理计数，不宣称注意力、记忆或大脑因果。
 - 完整阅读：[docs/governance/dormant-question-pool-and-reactivation-2026-09-08.md](../../docs/governance/dormant-question-pool-and-reactivation-2026-09-08.md)
-
-<a id="reading-hr-314d6d340fda2a7b"></a>
-## IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh
-`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The 11 source revisions approved in Step 06 were written into the materiality manifest and the corresponding human-entry 来源指纹 fields. The operation changed no human explanation, machine-record fingerprint, disposition, M/E field, or claim ceiling. No source hash was recomputed for an entry outsid… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh；The 11 source revisions approved in Step 06 were written into the materiality manifest and the corresponding human-entry 来源指纹 fields. The operation changed no human explanation, machine-record fingerprint, disposition, M/E field, or claim ceiling. No source hash was recomputed for an entry outside the audited set.；The bounded materiality projection was then refreshed for the current registry count (nonfunctionmachine=16240, 48 retained entries, 4 withdrawn entries). Its deterministic check passed, the Human Surface contract passed, and an independent cross-check confirmed that all 11 manifest hashes, source bytes, and human-entry source fingerprints agree.；The five source paths now have these current fingerprints: AI-HANDOFF.md=d174ce365bba3747255f50a6f9c3b415098fabfeaae490b8d64c8893bacfde1a, ARCHITECTURE.md=bb1861533f57d8e7dd361446ef242dd6dd98dc9c59d03b183bc5f1686ce0e752, docs/project-current-state.md=b8e727cefb42026c834e12de2f495efbd219071b312aff02af04d7d8d9691ad7, llms.txt=4b3f95276294ac47c0ef817853c6acf985…；Claim ceiling: repository-local Human Surface fingerprint and materiality-projection evidence only; no external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.
-- 完整阅读：[reports/operations/ignition-134-step07-human-surface-fingerprint-refresh.md](../../reports/operations/ignition-134-step07-human-surface-fingerprint-refresh.md)
