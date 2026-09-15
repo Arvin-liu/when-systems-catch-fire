@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-890a09f2962945d8"></a>
+## IGNITION-20260822-132 Step 00 — Canonical Current stale-source reproduction
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-890A09F2962945D8` · [reports/operations/ignition-132-step00-canonical-current-audit.md](../../reports/operations/ignition-132-step00-canonical-current-audit.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260822-132 Step 00 — Canonical Current stale-source reproduction？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Status: BASELINEREPRODUCED
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-132-step00-canonical-current-audit.md`, `132-STEP00-CANONICAL-CURRENT-AUDIT`
+- **演化历史：** 2026-08-22: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260822-132 Step 00 — Canonical Current stale-source reproduction`, `ignition-132-step00-canonical-current-audit`
+
 <a id="asset-hr-8932d9fd7b23c049"></a>
 ## IGNITION-20260827-142 Step 05 — Offline Executor Conformance
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260822-134 Step 06 — Human Surface 11-drift semantic audit`, `ignition-134-step06-human-surface-semantic-audit`
-
-<a id="asset-hr-9ace99cd3f0ef0d5"></a>
-## IGNITION-20260825-139 Step 14 — Candidate natural full regression
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9ACE99CD3F0EF0D5` · [reports/operations/ignition-139-step14-candidate-full-regression.md](../../reports/operations/ignition-139-step14-candidate-full-regression.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260825-139 Step 14 — Candidate natural full regression？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** PASS on the repaired exact candidate head 9a3b4a5561cf389b4f8af91274391096f39f65c2:
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-139-step14-candidate-full-regression.md`, `139-STEP14-CANDIDATE-FULL-REGRESSION`
-- **演化历史：** 2026-08-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260825-139 Step 14 — Candidate natural full regression`, `ignition-139-step14-candidate-full-regression`

@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e7a557e011cab937"></a>
+## 第57期故事样稿｜当一个名字变成接口
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`
+- 1 分钟：--- storyid: STORY-20260712-disobedience-subjectivity title: 第57期故事样稿｜当一个名字变成接口 focusfunctions: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：第57期故事样稿｜当一个名字变成接口；这原本是亲切的。一个母婴品牌做大了，名字像商标一样被记住，听上去甚至有点像胜利。可脱不花在那场长谈里忽然停下来，说了一句很轻的话: 好像越来越少的人叫你李丹阳了。；这句话之所以扎人，不是因为它冒犯，而是因为它太准确。一个人当然可以同时是母亲、妻子、创业者、内容创作者，也可以心甘情愿地把很多时间给家庭、公司和别人。问题不在于她有没有这些角色。问题在于，当外部世界只通过这些角色来认识她时，她的名字会慢慢退到后面，退成一个只有领奖、签字、身份证明时才被想起来的东西。；李丹阳讲自己小时候的故事，几乎没有夸张的地方。五年级数学考了八十六分，回家挨打。中学时代，她会给父亲写一封近乎忏悔的信，解释这次分数、退步幅度、下一步怎么补救。高考志愿，本来想学新闻，最后改读临床医学。毕业后的工作和房子，父亲甚至也已经规划好了。听上去这像一种尽责的托举: 长辈把风险替你算过了，把路替你铺好了，把弯路替你挡掉了。；但她后来才慢慢明白，托举和控制之间，并不是隔着一堵墙，只隔着一个条件: 这些资源是不是必须和某一条被指定的人生路径一起领取。你可以把它理解成关爱，也可以把它理解成安排。区别只在于，离开这条路的时候，你要付出多大的代价。；所以她第一次真正“不听话”，不是因为想反叛，而是因为她终于要替自己决定一件事。她坚持结婚，不回老家做那份已经替她准备好的工作。那一刻并不壮烈。它甚至不像很多英雄叙事那样响亮。它更像一个人第一次承认: 原来我可以不顺着那条已经被命名为“为你好”的路往下走。
+- 完整阅读：[outputs/stories/20260712-disobedience-subjectivity/story-longform.md](../../outputs/stories/20260712-disobedience-subjectivity/story-longform.md)
+
 <a id="reading-hr-e7ceb44d380bbb46"></a>
 ## IGNITION-20260827-143 Step 19 — Terminality and publication boundary
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -112,8 +119,8 @@
 <a id="reading-hr-ecb9a4b8ee1483ca"></a>
 ## IGNITION-172 Step07 — Knowledge Experience routing index
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on exact frozen parent 89e7832cd29691707a76d8347776867a5ad315c3 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 89e7832cd29691707a76d8347776867a5ad315c3 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17981 nonfunction records = 24138 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 1 分钟：This logical step is based on exact frozen parent 64dc1faa35ed4d3fb43fb3aa738edb2d2f8883c1 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 64dc1faa35ed4d3fb43fb3aa738edb2d2f8883c1 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17981 nonfunction records = 24138 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
 - 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
 
 <a id="reading-hr-ecc4e92db835c50c"></a>

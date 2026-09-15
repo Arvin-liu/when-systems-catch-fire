@@ -683,6 +683,7 @@
 |`reports/operations/ignition-172-20260915-step09-field-32.md`|2|0|否|
 |`reports/operations/ignition-172-20260915-step09-field-33.md`|2|0|否|
 |`reports/operations/ignition-172-20260915-step09-field-51.md`|2|0|否|
+|`reports/operations/ignition-172-20260915-step09-field-52.md`|2|0|否|
 |`reports/operations/ignition-172-step00-baseline-audit.md`|0|0|是|
 |`reports/operations/ignition-172-step01-collision-audit.md`|7|0|否|
 |`reports/operations/ignition-172-step02-route-review.md`|1|0|否|

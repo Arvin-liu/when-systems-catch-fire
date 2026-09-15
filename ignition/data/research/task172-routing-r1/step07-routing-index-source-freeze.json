@@ -38,9 +38,9 @@
   ],
   "decision": "STEP07_ROUTING_INDEX_READY; READ_ONLY; EXACT_VALIDATION_REQUIRED; NO_CANONICAL_MUTATION",
   "derived_outputs": {
-    "index_sha256": "820f182ce5d7b6144fe83afe0f1d29f6168c2991893e7d0e9a4d31695ef03fbb",
+    "index_sha256": "79a81c0a8550662bd8bcb4220c2745b5668c46ea7a095c224ee737f2a4001996",
     "pilot_sha256": "e172d2eab7d1a50c6ec29749afd4c93b70d869bc8b114d4b6733cefbb2bca949",
-    "report_sha256": "d6188239457fe0fe92dfeb222082de98e30cb332f5ae32608002d3098acead1f",
+    "report_sha256": "0b2c1f256dd9b6813a5b24f0484aef407d693b262f674c19147d0ad2626b58c8",
     "tags_sha256": "5140e2ad233a86f4ba44612a0af36d0680d1dd50747e549195fcc89eb6ff7a99"
   },
   "direction_locks": [
@@ -50,7 +50,7 @@
   ],
   "formal_pre_freeze": {
     "branch": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
-    "head": "89e7832cd29691707a76d8347776867a5ad315c3",
+    "head": "64dc1faa35ed4d3fb43fb3aa738edb2d2f8883c1",
     "pull_request": 218,
     "state": "OPEN + DRAFT + unmerged"
   },
@@ -64,7 +64,7 @@
     "nonfunction_overlay": {
       "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
       "rows": 17981,
-      "sha256": "b78cea328259eedc17ccc6552fe69945ea8f059aae4d4a1aa926d6fa2d182329"
+      "sha256": "2010d299397edd819682120c84678417640aa3753834a5b436655357e935e418"
     },
     "pilot_queries": {
       "path": "data/research/task172-routing-r1/step07-routing-pilot-queries.json",

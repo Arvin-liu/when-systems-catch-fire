@@ -200,6 +200,13 @@
 - 5 分钟：主题：IGNITION-20260827-142 result；Task ID: IGNITION-20260827-142 Formal task ordinal: 142；Task142 Steps 00–19 complete the formal task scope. The formal task is terminal as COMPLETEDWITHOPENOBLIGATIONS: terminality is decided by the task's own scope and terminal contract, while the independent LIVEEXTERNALINVOCATION obligation remains OPEN.；No new live process was started. The carried live boundary remains six attempts, zero validated completions, zero unreconciled attempts and two observation-incomplete records; the next eligible action is a fresh dynamic executor-admission decision.；This formal result records task identity and lifecycle outcome only. It does not self-witness a publication SHA; ordinary fast-forward publication, remote-ref observation, fresh-clone regression and the independent 1111 receipt are separate observations.；The claim ceiling is repository-local task lifecycle, executor-admission and publication-contract evidence only. It does not establish validated live completion, external truth, production readiness, Owner acceptance or epistemic acceptance.
 - 完整阅读：[agent-results/IGNITION-20260827-142-result.md](../../agent-results/IGNITION-20260827-142-result.md)
 
+<a id="reading-hr-513a4899383ebc1d"></a>
+## Task172 Step09 field 52: DEMOGRAPHY
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 52: DEMOGRAPHY；Formal parent freeze: 64dc1faa35ed4d3fb43fb3aa738edb2d2f8883c1；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 8；Selected metadata links: 64
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-52.md](../../reports/operations/ignition-172-20260915-step09-field-52.md)
+
 <a id="reading-hr-52173a553c421e11"></a>
 ## 跨协议一致性红队（外部治理记录）
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Date: 2026-07-13 Task: IGNITION-20260709-083 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：083 Quality Window Report；Date: 2026-07-13 Task: IGNITION-20260709-083；617 adjudication records divided into 6 audit windows. Each window independently assessed for source file existence, anchor coverage, template occupancy, strong assertion gaps, correction queue hits, and escalation routing distribution.；主题：W1: Records 1-100；主题：W2: Records 101-200；主题：W3: Records 201-300
 - 完整阅读：[reports/foundation-architecture/083-quality-window-report.md](../../reports/foundation-architecture/083-quality-window-report.md)
-
-<a id="reading-hr-5957e8d26e8521d9"></a>
-## Task160｜Basis Escape V2
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Task160｜Basis Escape V2；Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.；This is a research-only, repository-local result from exact Formal base 76e44213904928f9f0be8ba131b86529e44e7682. It does not alter the 12-element protocol, the 64 matrix, Ψ₀/Pmeta, canonical layers, validators, lifecycle, production readiness, external truth, Owner acceptance or epistemic status.；Command commit/blob/content SHA-256: f6fc4438e711e928cce29d07ed54b7395434b7c8 / 57aeb34cc5fea2202bd87e5998bd7851f7753a9f / e8155ff841bf4ee95eafddd4f5b2e081890e73a08c364011cd7108ae564b23d0；Corpus: total tracked universe 4046, used 2937, excluded 1109; basis-free packets 1015; C7 engineering negatives 1922；Split: discovery 802, holdout 213; C8 mixed-theoretical holdout is derived in c8-mixed-holdout-manifest.json; rule frozen before induction
-- 完整阅读：[docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md](../../docs/governance/basis-free-induction-and-residual-casebook-2026-09-07.md)

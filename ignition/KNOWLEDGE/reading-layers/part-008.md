@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-9302fb0a7da093e8"></a>
+## IGNITION-20260825-139 Step 08 — Live-observation semantic gate
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：PASS: all 12 deterministic semantic fixtures produced their expected fail-closed outcome. Eight adversarial cases failed as required; four positive cases passed only when the boundary was explicit. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260825-139 Step 08 — Live-observation semantic gate；PASS: all 12 deterministic semantic fixtures produced their expected fail-closed outcome. Eight adversarial cases failed as required; four positive cases passed only when the boundary was explicit.；The gate binds the canonical Task139 ledger and Current projection before running fixtures. It therefore rejects the split-brain claim that the Task138 second Codex dispatch was forbidden, rejects success language over an incomplete capsule, and rejects exit code zero without independent validator PASS. The exact-binding positive case requires task, executor…；主题：Covered boundaries；Historical Task138 wording remains allowed only under explicit historical classification.；Duplicate dispatch/attempt identities cannot overwrite the append-only ledger.
+- 完整阅读：[reports/operations/ignition-139-step08-live-observation-semantic-gate.md](../../reports/operations/ignition-139-step08-live-observation-semantic-gate.md)
+
 <a id="reading-hr-930fdb2770ec5121"></a>
 ## Legacy compatibility report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：验证全部通过（15/15）。文档已就绪，待提交、推送并创建 PR，不自动合并。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：审计：生命共同体价值宪章 README 入口；任务编号：IGNITION-20260709-041；正式仓库：Arvin-liu/when-systems-catch-fire；工作树：PRIVATE_PROVENANCE_WITHHELD；分支：docs/life-community-value-charter-20260711；基线 base SHA：9463459edab4803c2452ae52d0f1ca2733cdc008（执行时最新 origin/main）
 - 完整阅读：[outputs/audit/life-community-value-charter-readme-audit-20260711.md](../../outputs/audit/life-community-value-charter-readme-audit-20260711.md)
-
-<a id="reading-hr-a7d98664e45d4ecb"></a>
-## IGNITION-139 Step 00 — Baseline and observation-path audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The formal worktree starts from the independently checked origin/main baseline 12205be8ad94916a39253e0eba2106bf5da9da12. No live inference was started. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-139 Step 00 — Baseline and observation-path audit；The formal worktree starts from the independently checked origin/main baseline 12205be8ad94916a39253e0eba2106bf5da9da12. No live inference was started.；The existing Current preflight was green before implementation: task-lineage, Current-state sync, volatile-fact registry, Current semantic gate, and two-pass Current projection determinism all passed. The focused live/ledger/Current test set ran 36 tests with 0 failures, 0 errors, and 0 skips.；主题：Historical fact that must become canonical；The Task138 second Codex dispatch was a real attempt. Its host result exceeded the available model context, and the receipt could not be recovered. Return code, structured result, lease receipt, and validator input were unavailable. The correct ceiling is therefore ATTEMPTHAPPENEDOBSERVATIONINCOMPLETE / REQUIRESRECONCILIATION; it is neither success nor a kno…；The current identity contract still described that same invocation as forbidden because no auth-source route was available. This is the Step139 split-brain to repair. Historical Task136–138 source records remain append-only and are not rewritten.
-- 完整阅读：[reports/operations/ignition-139-step00-baseline-audit.md](../../reports/operations/ignition-139-step00-baseline-audit.md)
