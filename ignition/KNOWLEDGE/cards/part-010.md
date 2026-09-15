@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-9cf03227a0396b4c"></a>
+## 121Q12 Baseline Audit
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9CF03227A0396B4C` · [reports/architecture/121Q12-baseline-audit.md](../../reports/architecture/121Q12-baseline-audit.md)
+- **为什么产生：** 此来源记录了什么：121Q12 Baseline Audit？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** This audit starts the effectual-action and mechanism-adjudication overlay from the verified post-121Q11 main state. It does not renumber, replace, or reinterpret the existing L0-L6 architecture.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/architecture/121Q12-baseline-audit.md`, `121Q12-BASELINE-AUDIT`
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q12 Baseline Audit`, `121Q12-baseline-audit`
+
 <a id="asset-hr-9db313b3faf86fd3"></a>
 ## IGNITION-20260826-140 — Step 08 Current State Sync
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `跨域候选函数复核`, `cross-domain-candidate-function-review-20260708`
-
-<a id="asset-hr-b056e11cc7fd672f"></a>
-## IGNITION-20260908-168 result
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-B056E11CC7FD672F` · [agent-results/IGNITION-20260908-168-result.md](../../agent-results/IGNITION-20260908-168-result.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260908-168 result？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** This bounded mainline-closure execution is controlled by Arvin-liu/1111@6a4d2b1dae17ab0f19715a6bf7fee135dcc04873, agent-commands/IGNITION-20260908-168.md.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `agent-results/IGNITION-20260908-168-result.md`, `202`
-- **演化历史：** 2026-09-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`
-- **可搜索名称：** `IGNITION-20260908-168 result`, `IGNITION-20260908-168-result`

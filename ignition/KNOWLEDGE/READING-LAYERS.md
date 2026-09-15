@@ -708,6 +708,8 @@
 - [IGNITION-20260827-142 Step 19 — Publication transaction and terminal state](./reading-layers/part-008.md#reading-hr-95778013d10e2cf0) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-95f4d0b3d4dd2b7d"></a>
 - [逻辑地基规则](./reading-layers/part-008.md#reading-hr-95f4d0b3d4dd2b7d) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+<a id="reading-hr-96ec40a0b9c9f87d"></a>
+- [Task172 Step09 field 22: PHYSICS](./reading-layers/part-008.md#reading-hr-96ec40a0b9c9f87d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-97478cb8dceeba3a"></a>
 - [IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix](./reading-layers/part-008.md#reading-hr-97478cb8dceeba3a) — `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-97dacc897de7d3d3"></a>
@@ -801,7 +803,7 @@
 <a id="reading-hr-a960756efab9d50a"></a>
 - [第57期故事验收报告](./reading-layers/part-008.md#reading-hr-a960756efab9d50a) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-a9a90af4c17ea1f8"></a>
-- [赛课机制下的教师生存困境碰撞报告](./reading-layers/part-008.md#reading-hr-a9a90af4c17ea1f8) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`
+- [赛课机制下的教师生存困境碰撞报告](./reading-layers/part-009.md#reading-hr-a9a90af4c17ea1f8) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`
 <a id="reading-hr-aa71cb6d79bb27ed"></a>
 - [AI entrypoint audit](./reading-layers/part-009.md#reading-hr-aa71cb6d79bb27ed) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-aaa1067fb3ef6d76"></a>
@@ -901,7 +903,7 @@
 <a id="reading-hr-bef5d05d5390fd53"></a>
 - [IGNITION-20260822-134 Step 11 — Current projection closure](./reading-layers/part-009.md#reading-hr-bef5d05d5390fd53) — `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bf69e7f307f0b285"></a>
-- [IGNITION-20260820-127 执行结果](./reading-layers/part-009.md#reading-hr-bf69e7f307f0b285) — `HISTORICAL_COMPLETION_RECORD` · `COGNITION`
+- [IGNITION-20260820-127 执行结果](./reading-layers/part-010.md#reading-hr-bf69e7f307f0b285) — `HISTORICAL_COMPLETION_RECORD` · `COGNITION`
 <a id="reading-hr-bfe8f79290fb0e20"></a>
 - [121Q15 Q12-Q14 Cumulative Preflight](./reading-layers/part-010.md#reading-hr-bfe8f79290fb0e20) — `CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bfebf52fdf8637e3"></a>
@@ -1001,7 +1003,7 @@
 <a id="reading-hr-d660dc784cc90282"></a>
 - [Incremental Execution and Selective Materialization](./reading-layers/part-010.md#reading-hr-d660dc784cc90282) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d6bbd09179294577"></a>
-- [失败类型学初稿](./reading-layers/part-010.md#reading-hr-d6bbd09179294577) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- [失败类型学初稿](./reading-layers/part-011.md#reading-hr-d6bbd09179294577) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d6dc7edfc015e4c7"></a>
 - [《公元1117年：宋徽宗为什么崇信道教？》来源与边界](./reading-layers/part-011.md#reading-hr-d6dc7edfc015e4c7) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`
 <a id="reading-hr-d75690d278464805"></a>
@@ -1101,7 +1103,7 @@
 <a id="reading-hr-e852e881d1527cdc"></a>
 - [IGNITION-20260827-142 Step 12 — Pre-Live Admission Gate](./reading-layers/part-011.md#reading-hr-e852e881d1527cdc) — `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ea120e5d0d0fa5ff"></a>
-- [MF-0001~0005 Codespace 救援复核](./reading-layers/part-011.md#reading-hr-ea120e5d0d0fa5ff) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- [MF-0001~0005 Codespace 救援复核](./reading-layers/part-012.md#reading-hr-ea120e5d0d0fa5ff) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ea13f7ea325dac81"></a>
 - [Historical Basis-Leaps Reconstruction — IGNITION-20260906-158](./reading-layers/part-012.md#reading-hr-ea13f7ea325dac81) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-ea1ccd6bb1e44892"></a>

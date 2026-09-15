@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-bf69e7f307f0b285"></a>
+## IGNITION-20260820-127 执行结果
+`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
+- 1 分钟：状态：COMPLETEDWITHCLASSIFIEDRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260820-127 执行结果；状态：COMPLETEDWITHCLASSIFIEDRESIDUALS；本任务执行的是 IGNITION-127，不是旧 IGNITION-125。旧 125 已记录为 DEFERREDREBASEDINTO127；未执行旧文件，也未复制旧文件作为权威任务。；仓库：Arvin-liu/when-systems-catch-fire；起始正式 main：c5cec3a212dbf42564985b71c0fcec3b1fb1e564；任务分支：codex/ignition-127-os-durability-lifecycle-r3-rebased-20260820
+- 完整阅读：[agent-results/IGNITION-20260820-127-result.md](../../agent-results/IGNITION-20260820-127-result.md)
+
 <a id="reading-hr-bfe8f79290fb0e20"></a>
 ## 121Q15 Q12-Q14 Cumulative Preflight
 `CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Historical status: 121Q32I / method 1.3.0 Closed, now superseded by Current 1.4.0. Method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical. Q32I passed the exact-head, ordinary-merge and external checks required by its historical contract; task 101 late… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Incremental Execution and Selective Materialization；Historical status: 121Q32I / method 1.3.0 Closed, now superseded by Current 1.4.0. Method 1.2.0 and system map 0.2.0 are Historical; method 1.1.0 and map 0.1.0 are earlier Historical. Q32I passed the exact-head, ordinary-merge and external checks required by its historical contract; task 101 later retired the separate deployed reading surface without deletin…；主题：Purpose and authority；Q32I adds a repository-level execution layer after Current typed change propagation. Its authority chain is:；change request -> propagation closure -> component profiles -> deterministic planner -> NonImpactProof / rebuild decisions -> structured executor -> unified validator -> rollback or recovery evidence；This chain governs declared repository dependency and materialization. It does not identify real-world causality, prove that the registries exhaust the project, or add L7.
 - 完整阅读：[docs/architecture/incremental-execution.md](../../docs/architecture/incremental-execution.md)
-
-<a id="reading-hr-d6bbd09179294577"></a>
-## 失败类型学初稿
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：--- title: "失败类型学初稿生成" author: "之元" date: "2026-07-07" --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：范围：材料错误、边界选错、尺度错配、函数过度泛化、同构误判、证据等级不足、AI 过度解释、L2 推论误写成 L5 结论、学科证据制度误配、观察者位置错误、把局部机制误写成全局规律、把历史叙事误写成因果定律；用途：定义点火框架失败类型、触发条件、影响函数和失败案例反向修正机制。；注意：本文是失败类型学初稿，不代表已经执行函数合并、删除、降级、案例标注或自动化修正。；--- title: "失败类型学初稿生成" author: "之元" date: "2026-07-07" ---；收到。现在开始执行任务 F：失败类型学初稿。；基于任务 A-E 的结构性输出，我将把点火框架的失败方式系统化，形成可用于反证、修正和边界控制的失败类型学。
-- 完整阅读：[outputs/getbrain/failure-typology-draft-20260706.md](../../outputs/getbrain/failure-typology-draft-20260706.md)

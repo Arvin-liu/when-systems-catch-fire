@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-ea120e5d0d0fa5ff"></a>
+## MF-0001~0005 Codespace 救援复核
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：正式表自举相关文件：0024-T14-自举元函数层级.md、0190-D141-自举元函数.md、0001-Ψ₀元函数完整数学定义.md 等。 其中 D141-自举元函数.md 内含 Jn^+(FD141)=1、Jn^-(FD141)=0、Converged(FD141)⇔... 等表述，但这是对 D141 自身函数做正反向收敛检查，并非把 MF-0001~0005 定义为 MF-0000 的内部子通道构件。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：MF-0001~0005 Codespace 救援复核；救援函数表：PRIVATE_PROVENANCE_WITHHELD；正式函数表目录：PRIVATE_PROVENANCE_WITHHELD；主题：抽取内容（来自救援函数表 Section 0 内部元算子表）；在正式函数表目录中搜索以下关键词，命中情况：；计算 J⁺ / 计算 J⁻：0 文件
+- 完整阅读：[outputs/audit/mf-0001-0005-rescue-review-20260708.md](../../outputs/audit/mf-0001-0005-rescue-review-20260708.md)
+
 <a id="reading-hr-ea13f7ea325dac81"></a>
 ## Historical Basis-Leaps Reconstruction — IGNITION-20260906-158
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
@@ -56,8 +63,8 @@
 <a id="reading-hr-ecb9a4b8ee1483ca"></a>
 ## IGNITION-172 Step07 — Knowledge Experience routing index
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on exact frozen parent 0c302410797be9ee8058eb6115bcf28ac66176c5 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 0c302410797be9ee8058eb6115bcf28ac66176c5 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17979 nonfunction records = 24136 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 1 分钟：This logical step is based on exact frozen parent 788e087949f88b244fefef08cd727aa410fe4cd4 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 788e087949f88b244fefef08cd727aa410fe4cd4 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17980 nonfunction records = 24137 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
 - 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
 
 <a id="reading-hr-ecc4e92db835c50c"></a>

@@ -2049,6 +2049,11 @@
   - 可搜索名称：Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS / ignition-172-20260915-step09-field-21
   - 来源：`reports/operations/ignition-172-20260915-step09-field-21.md`
   - 依赖：—；被引用：—
+- [Task172 Step09 field 22: PHYSICS](../../ASSET-CARDS.md#asset-hr-96ec40a0b9c9f87d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task172 Step09 field 22: PHYSICS / ignition-172-20260915-step09-field-22
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-22.md`
+  - 依赖：—；被引用：—
 - [Task:** `IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731`](../../../docs/foundation/task-107-incident-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-337b55cb63f246c6 / Task:** `IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731`
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-16a159618402cf8e / The registry is linked from the formal lifecycle and task-lineage sources, but neither lifecycle source derives task ter
   - 来源：`reports/operations/ignition-142-step02-obligation-registry.md`
-  - 依赖：—；被引用：—
-- [The release adds one coherent OS-owned Steering / Intent / Goal / Obligation plane across intent provenance, goal lifecy](../../../agent-results/IGNITION-20260821-129-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-3105c1372a644df8 / The release adds one coherent OS-owned Steering / Intent / Goal / Obligation plane across intent provenance, goal lifecy
-  - 来源：`agent-results/IGNITION-20260821-129-result.md`
   - 依赖：—；被引用：—

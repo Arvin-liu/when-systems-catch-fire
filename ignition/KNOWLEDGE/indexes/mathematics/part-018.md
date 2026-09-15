@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [生命共同体不限于地球；](../../../docs/governance/life-community-value-charter.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-66af78e839c6603e / 生命共同体不限于地球；
+  - 来源：`docs/governance/life-community-value-charter.md`
+  - 依赖：—；被引用：—
 - [生命共同体价值审查（life-community-value-audit）](../../../outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-4340885c8b9d796e / 生命共同体价值审查（life-community-value-audit）
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-6b0e135ea3415c5c / 已迁移的历史函数来源/0337-D301-极小点漂移速率函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D301；被引用：—
-- [已迁移的历史函数来源/0338-D302-容斥渐近发散函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-c9735cb67d686089 / 已迁移的历史函数来源/0338-D302-容斥渐近发散函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D302；被引用：—

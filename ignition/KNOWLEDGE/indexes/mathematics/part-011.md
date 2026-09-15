@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D369\]\( \) \| \[震荡阻尼-分支步长联合函数\]\( \) \| F_{D369}\(x\) := M14的阻尼影响步长：高](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4297c151a8da2bd3 / \| \[D369\]\( \) \| \[震荡阻尼-分支步长联合函数\]\( \) \| F_{D369}\(x\) := M14的阻尼影响步长：高
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D369；被引用：—
 - [\| \[D36\]\( \) \| \[逆Weibull寿命验证函数\]\( \) \| F_{D36}\(x\) := F\(t\) = exp\(-\(](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-b2ef676baf994b37 / \| \[D36\]\( \) \| \[逆Weibull寿命验证函数\]\( \) \| F_{D36}\(x\) := F\(t\) = exp\(-\(
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-1256aa238b8c6c5f / 中文："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换…
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—
-- [中文："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整。核心函数：\[D111\]\(docs/zh/functions](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9fd8023ad0fe66f4 / 中文："先防守后进攻"数学必然 — 模拟8步资源投入：前3步β>0.3（级联防御，补门槛附近维度），后5步β<0.1（贪心优化，补弹性最高维度）。无需人为切换，β随系统状态自动调整。核心函数：\[D111\]\(docs/zh/functions
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D111；被引用：—

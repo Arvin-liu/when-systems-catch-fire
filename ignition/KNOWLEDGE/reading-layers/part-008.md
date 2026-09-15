@@ -25,6 +25,13 @@
 - 5 分钟：形式语言：明确项、谓词、关系、量词、变量绑定和作用域。；默认核心：经典一阶逻辑只用于已声明的演绎核心，不扩张到不一致证据聚合。；非经典声明：构造、模态、时序、规范、概率、可废止逻辑必须显式选型。；推理类型：演绎、归纳、溯因、类比和因果推理分别记录，不把支持写成蕴涵。；条件检查：必要、充分、充要条件分别编码，禁止肯定后件。；反模型：无效演绎给出满足前提而使结论为假的具体模型与复现方式。
 - 完整阅读：[docs/foundation/logic/README.md](../../docs/foundation/logic/README.md)
 
+<a id="reading-hr-96ec40a0b9c9f87d"></a>
+## Task172 Step09 field 22: PHYSICS
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 22: PHYSICS；Formal parent freeze: 788e087949f88b244fefef08cd727aa410fe4cd4；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 15；Selected metadata links: 120
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-22.md](../../reports/operations/ignition-172-20260915-step09-field-22.md)
+
 <a id="reading-hr-97478cb8dceeba3a"></a>
 ## IGNITION-20260822-132 Step 08 — Adversarial / Negative Fixture Matrix
 `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：状态：PASSWITHBOUNDARIES；只使用 D600 / D601 / D602 与 C-0810 / C-0811 作为正式基础。；D603 / D604 未写成已进入 main 的事实。；M8 保留 pending，没有借故事偷升格。；跨域节点使用 Hedy Lamarr，而不是动机高度不可核验的名人拼盘。；正文基本不出现内部编号，编号与判定保留在附录和 ledger。
 - 完整阅读：[outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md](../../outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md)
-
-<a id="reading-hr-a9a90af4c17ea1f8"></a>
-## 赛课机制下的教师生存困境碰撞报告
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`
-- 1 分钟：文章以「赛课」机制为对象，揭示其如何将教师专业成长转化为可量化竞赛，并层层绑定职称、绩效、学校业绩与教研资源，最终造成教师身心代价与真实教学被挤压。核心机制链： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：赛课机制下的教师生存困境碰撞报告；本地 Markdown 文件：inputs/collisions/20260708-teacher-competition/source.md；来源：Get 笔记文章《赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放》；作者：之元；日期：2026-07-08；是否使用网页链接：否（仅用本地快照，符合「默认得到大脑读不了网页链接」原则）；正文规模：288 行 / 约 37KB，含表格与多教师个案。
-- 完整阅读：[outputs/collisions/20260708-teacher-competition/collision-report.md](../../outputs/collisions/20260708-teacher-competition/collision-report.md)
