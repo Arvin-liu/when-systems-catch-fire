@@ -1,9 +1,9 @@
 # IGNITION-172 Step07 — Knowledge Experience routing index
 
-This logical step is based on exact frozen parent `c2ddfe4f40d943e214984db8dd5e1379f41ab4db` on the existing Task172 branch and Draft PR #218.
+This logical step is based on exact frozen parent `bd471ff9ee75c98241de1433ac915bf4d327b6e6` on the existing Task172 branch and Draft PR #218.
 
 - The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.
-- Coverage: 6157 function records + 17981 nonfunction records = 24138 routing records.
+- Coverage: 6158 function records + 17982 nonfunction records = 24140 routing records.
 - Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.
 - Operation binding: `knowledge.collide_object` remains `CURRENT_BOUNDED + READ_ONLY_RUN`; the router has no repository, registry or network write permission.
 - Candidate policy: bounded facet retrieval → transparent widening/fallback → exact Current authority fingerprint validation. Fallback is never silent.

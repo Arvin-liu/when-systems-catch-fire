@@ -1439,6 +1439,11 @@
   - 可搜索名称：Task160｜Basis Escape V2 / next-semantic-leap-assessment-2026-09-07
   - 来源：`docs/governance/next-semantic-leap-assessment-2026-09-07.md`
   - 依赖：—；被引用：—
+- [Task172 Step09 field 56: JURIDICAL SCIENCES & LAW](../../../reports/operations/ignition-172-20260915-step09-field-56.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d64e6d8b63082205 / Task172 Step09 field 56: JURIDICAL SCIENCES & LAW
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-56.md`
+  - 依赖：—；被引用：—
 - [Tasks, adapters, routers, memory, composition mode and experimental conditions are operationally explicit, but semantic,](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-3e48742e55a92254 / Tasks, adapters, routers, memory, composition mode and experimental conditions are operationally explicit, but semantic,
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-19c27386c7e7f30e / This report aggregates the already completed D1 unified validator, D2 end-to-end acceptance, and D3 local defensive reje
   - 来源：`reports/operations/121Q32I-phase-d-validation-closeout.md`
   - 依赖：D1, D2, D3；被引用：—
-- [This report is an engineering/publication artifact only. It does not imply](../../../reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3d0b07f598e8886a / This report is an engineering/publication artifact only. It does not imply
-  - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
-  - 依赖：—；被引用：—

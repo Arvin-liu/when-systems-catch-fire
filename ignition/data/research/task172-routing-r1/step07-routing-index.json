@@ -7196,6 +7196,7 @@
         "FUNCTION_ASSET:IMPLICIT-5FA5FC22EE630E05",
         "FUNCTION_ASSET:IMPLICIT-5FEE289B7A3C0AFE",
         "FUNCTION_ASSET:IMPLICIT-600394BA212CA2EE",
+        "FUNCTION_ASSET:IMPLICIT-6005D475B0366BC3",
         "FUNCTION_ASSET:IMPLICIT-6013765694603C3F",
         "FUNCTION_ASSET:IMPLICIT-603BE263C00AA1D1",
         "FUNCTION_ASSET:IMPLICIT-605BBB62119DE80D",
@@ -17977,6 +17978,7 @@
         "NONFUNCTION_CLAIM:NFC-d64522bd6b0c9ee7",
         "NONFUNCTION_CLAIM:NFC-d647a6ba84393d0d",
         "NONFUNCTION_CLAIM:NFC-d64d911ccf1e0f0c",
+        "NONFUNCTION_CLAIM:NFC-d64e6d8b63082205",
         "NONFUNCTION_CLAIM:NFC-d64f48d5198b0e91",
         "NONFUNCTION_CLAIM:NFC-d650e5880145fb96",
         "NONFUNCTION_CLAIM:NFC-d655edd4d98e8fbb",
@@ -24814,6 +24816,7 @@
         "FUNCTION_ASSET:IMPLICIT-5F50FF1B20F94115",
         "FUNCTION_ASSET:IMPLICIT-5F98A86BFF425EF9",
         "FUNCTION_ASSET:IMPLICIT-5FA5FC22EE630E05",
+        "FUNCTION_ASSET:IMPLICIT-6005D475B0366BC3",
         "FUNCTION_ASSET:IMPLICIT-605BBB62119DE80D",
         "FUNCTION_ASSET:IMPLICIT-60D538CB6C68E0C5",
         "FUNCTION_ASSET:IMPLICIT-610B84EA029BD6F1",
@@ -31980,6 +31983,7 @@
         "NONFUNCTION_CLAIM:NFC-d647a6ba84393d0d",
         "NONFUNCTION_CLAIM:NFC-d648c313313b7eb5",
         "NONFUNCTION_CLAIM:NFC-d64d911ccf1e0f0c",
+        "NONFUNCTION_CLAIM:NFC-d64e6d8b63082205",
         "NONFUNCTION_CLAIM:NFC-d65348fe4bd9bedf",
         "NONFUNCTION_CLAIM:NFC-d653f6850209aefa",
         "NONFUNCTION_CLAIM:NFC-d660c3cfe7f38ba6",
@@ -56702,6 +56706,7 @@
         "FUNCTION_ASSET:IMPLICIT-5FA5FC22EE630E05",
         "FUNCTION_ASSET:IMPLICIT-5FEE289B7A3C0AFE",
         "FUNCTION_ASSET:IMPLICIT-600394BA212CA2EE",
+        "FUNCTION_ASSET:IMPLICIT-6005D475B0366BC3",
         "FUNCTION_ASSET:IMPLICIT-6013765694603C3F",
         "FUNCTION_ASSET:IMPLICIT-603BE263C00AA1D1",
         "FUNCTION_ASSET:IMPLICIT-605BBB62119DE80D",
@@ -68801,6 +68806,7 @@
         "NONFUNCTION_CLAIM:NFC-d64522bd6b0c9ee7",
         "NONFUNCTION_CLAIM:NFC-d647a6ba84393d0d",
         "NONFUNCTION_CLAIM:NFC-d64d911ccf1e0f0c",
+        "NONFUNCTION_CLAIM:NFC-d64e6d8b63082205",
         "NONFUNCTION_CLAIM:NFC-d64f48d5198b0e91",
         "NONFUNCTION_CLAIM:NFC-d650e5880145fb96",
         "NONFUNCTION_CLAIM:NFC-d65125954c7a36a6",
@@ -73021,6 +73027,7 @@
         "FUNCTION_ASSET:IMPLICIT-5FA5FC22EE630E05",
         "FUNCTION_ASSET:IMPLICIT-5FEE289B7A3C0AFE",
         "FUNCTION_ASSET:IMPLICIT-600394BA212CA2EE",
+        "FUNCTION_ASSET:IMPLICIT-6005D475B0366BC3",
         "FUNCTION_ASSET:IMPLICIT-6013765694603C3F",
         "FUNCTION_ASSET:IMPLICIT-603BE263C00AA1D1",
         "FUNCTION_ASSET:IMPLICIT-605BBB62119DE80D",
@@ -85245,6 +85252,7 @@
         "NONFUNCTION_CLAIM:NFC-d64522bd6b0c9ee7",
         "NONFUNCTION_CLAIM:NFC-d647a6ba84393d0d",
         "NONFUNCTION_CLAIM:NFC-d64d911ccf1e0f0c",
+        "NONFUNCTION_CLAIM:NFC-d64e6d8b63082205",
         "NONFUNCTION_CLAIM:NFC-d64f48d5198b0e91",
         "NONFUNCTION_CLAIM:NFC-d650e5880145fb96",
         "NONFUNCTION_CLAIM:NFC-d653f6850209aefa",
@@ -94067,6 +94075,7 @@
         "FUNCTION_ASSET:IMPLICIT-5FA5FC22EE630E05",
         "FUNCTION_ASSET:IMPLICIT-5FEE289B7A3C0AFE",
         "FUNCTION_ASSET:IMPLICIT-600394BA212CA2EE",
+        "FUNCTION_ASSET:IMPLICIT-6005D475B0366BC3",
         "FUNCTION_ASSET:IMPLICIT-6013765694603C3F",
         "FUNCTION_ASSET:IMPLICIT-603BE263C00AA1D1",
         "FUNCTION_ASSET:IMPLICIT-605BBB62119DE80D",
@@ -104848,6 +104857,7 @@
         "NONFUNCTION_CLAIM:NFC-d64522bd6b0c9ee7",
         "NONFUNCTION_CLAIM:NFC-d647a6ba84393d0d",
         "NONFUNCTION_CLAIM:NFC-d64d911ccf1e0f0c",
+        "NONFUNCTION_CLAIM:NFC-d64e6d8b63082205",
         "NONFUNCTION_CLAIM:NFC-d64f48d5198b0e91",
         "NONFUNCTION_CLAIM:NFC-d650e5880145fb96",
         "NONFUNCTION_CLAIM:NFC-d655edd4d98e8fbb",
@@ -115586,6 +115596,7 @@
         "FUNCTION_ASSET:IMPLICIT-5632111310E10A3D",
         "FUNCTION_ASSET:IMPLICIT-58DC5E3580D81C21",
         "FUNCTION_ASSET:IMPLICIT-5F2BFCC6A0B03046",
+        "FUNCTION_ASSET:IMPLICIT-6005D475B0366BC3",
         "FUNCTION_ASSET:IMPLICIT-61688DC46EDB42B3",
         "FUNCTION_ASSET:IMPLICIT-63FAE8AD62F6660D",
         "FUNCTION_ASSET:IMPLICIT-667134AC3C5255BF",
@@ -116030,6 +116041,7 @@
         "NONFUNCTION_CLAIM:NFC-d57536ce17685145",
         "NONFUNCTION_CLAIM:NFC-d5c0e49d806ddeb8",
         "NONFUNCTION_CLAIM:NFC-d5c63e3e83316bb3",
+        "NONFUNCTION_CLAIM:NFC-d64e6d8b63082205",
         "NONFUNCTION_CLAIM:NFC-d783afda19ea8643",
         "NONFUNCTION_CLAIM:NFC-d878c3132631eb46",
         "NONFUNCTION_CLAIM:NFC-d8c549d964736354",
@@ -174135,6 +174147,26 @@
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": []
+    },
+    {
+      "asset_kind": "FUNCTION_ASSET",
+      "asset_role": [
+        "HISTORICAL_CONTEXT"
+      ],
+      "canonical_id": "IMPLICIT-6005D475B0366BC3",
+      "classification_state": "CLASSIFIED",
+      "collision_use": [
+        "COUNTEREXAMPLE",
+        "EVIDENCE_CHECK",
+        "HISTORICAL_CONTEXT"
+      ],
+      "routing_confidence": 0.85,
+      "source_record_sha": "322da8b26552e78979894ed99969801bbcaa5101714949a2c1a721a1de659f5a",
+      "topic": [],
+      "unesco_discipline_codes": [],
+      "unesco_field_codes": [
+        "56"
+      ]
     },
     {
       "asset_kind": "FUNCTION_ASSET",
@@ -389449,7 +389481,7 @@
         "HISTORICAL_CONTEXT"
       ],
       "routing_confidence": 0.85,
-      "source_record_sha": "31f028936fec1a20fdc1c23dc5cf25aa900c83bf43a93c8edeb56e472017dc7f",
+      "source_record_sha": "3f0aa7cfb9aa5cba8a9a62af310b3a1dcfbb8b478ae780abd1fb22757b906f31",
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": [
@@ -424695,7 +424727,7 @@
         "HISTORICAL_CONTEXT"
       ],
       "routing_confidence": 0.0,
-      "source_record_sha": "9b12f22a42b247cb7b043c00f00538c8bca2417016b3818b36916d7e62a771ee",
+      "source_record_sha": "2b7f544a30817d8cb10c32c70dc21a942fb6f171272de2f7116224ea76c0f1b6",
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": []
@@ -515750,6 +515782,26 @@
       "asset_role": [
         "HISTORICAL_CONTEXT"
       ],
+      "canonical_id": "NFC-d64e6d8b63082205",
+      "classification_state": "CLASSIFIED",
+      "collision_use": [
+        "COUNTEREXAMPLE",
+        "EVIDENCE_CHECK",
+        "HISTORICAL_CONTEXT"
+      ],
+      "routing_confidence": 0.85,
+      "source_record_sha": "e0d3db63209f7da7ecc045f9397894c081db935b7036ac19cafbf076046e259d",
+      "topic": [],
+      "unesco_discipline_codes": [],
+      "unesco_field_codes": [
+        "56"
+      ]
+    },
+    {
+      "asset_kind": "NONFUNCTION_CLAIM",
+      "asset_role": [
+        "HISTORICAL_CONTEXT"
+      ],
       "canonical_id": "NFC-d64f48d5198b0e91",
       "classification_state": "UNRESOLVED",
       "collision_use": [
@@ -568807,19 +568859,19 @@
     "registry_write": false,
     "repository_mutation": false
   },
-  "source_exact_head": "c2ddfe4f40d943e214984db8dd5e1379f41ab4db",
+  "source_exact_head": "bd471ff9ee75c98241de1433ac915bf4d327b6e6",
   "source_overlays": [
     {
       "asset_kind": "FUNCTION_ASSET",
       "path": "data/research/task172-routing-r1/function-routing-overlay.jsonl",
-      "rows": 6157,
-      "sha256": "e42f4740b0a6bbad1e9f98eb7bd05278948907786cf50e54d4671f085208097e"
+      "rows": 6158,
+      "sha256": "f02c32f203b126032e1ca7da26964cf27949a3badd38adb1f3a681daa71a42b9"
     },
     {
       "asset_kind": "NONFUNCTION_CLAIM",
       "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
-      "rows": 17981,
-      "sha256": "1ab61aa6143eb714962a1870925c4b868c7e79f2ceff56ce0cfbdab993c813ae"
+      "rows": 17982,
+      "sha256": "10c20d5a370e4b1518d48817e7f0f8f51d61f3c3af37195572fef0cb06d6be1f"
     }
   ],
   "stats": {
@@ -568839,9 +568891,9 @@
       "by_unesco_discipline": 0,
       "by_unesco_field": 19
     },
-    "function_records": 6157,
-    "nonfunction_records": 17981,
-    "records": 24138
+    "function_records": 6158,
+    "nonfunction_records": 17982,
+    "records": 24140
   },
   "step": "Task172 Step07",
   "taxonomy": {

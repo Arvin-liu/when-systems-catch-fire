@@ -104,13 +104,13 @@ def authority_for_kind(repo_root: Path, asset_kind: str) -> tuple[Path, list[dic
 
 
 def expected_count(asset_kind: str, repo_root: Path | None = None) -> int:
-    if asset_kind == "FUNCTION_ASSET":
-        return 6157
+    if asset_kind == "FUNCTION_ASSET" and repo_root is not None:
+        # Both Foundation registries are scan-sensitive authority sources. A
+        # governed report may legitimately add a quarantined discovery row,
+        # so routing must close over the current registry rather than preserve
+        # a stale historical count.
+        return len(read_jsonl(repo_root / FUNCTION_AUTHORITY_REL))
     if asset_kind == "NONFUNCTION_CLAIM" and repo_root is not None:
-        # The nonfunction registry is a scan-sensitive authority source. Its
-        # row count can legitimately change when a new governed report enters
-        # the repository, so routing must close over the current registry
-        # rather than preserve a stale historical count.
         return len(read_jsonl(repo_root / NONFUNCTION_AUTHORITY_REL))
     raise ValueError("repo_root is required to resolve the current nonfunction authority count")
 
