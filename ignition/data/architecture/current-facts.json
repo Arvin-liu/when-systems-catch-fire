@@ -61,7 +61,7 @@
     },
     "fire_seeds": {
       "seed_count": 64,
-      "source_census_count": 669
+      "source_census_count": 670
     },
     "formal_task_lifecycle": {
       "authority": "FORMAL_TASK_LIFECYCLE",
@@ -155,11 +155,11 @@
       "method_version": "1.4.0"
     },
     "knowledge_experience": {
-      "aliases": 1411,
-      "cards": 682,
-      "changes": 577,
-      "layered_readings": 603,
-      "search_records": 24743
+      "aliases": 1413,
+      "cards": 683,
+      "changes": 578,
+      "layered_readings": 604,
+      "search_records": 24744
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "fbaddfe2a434308230b930a45932fb204bab5e5c24dac007e6cbc1c28228aded"
+      "sha256": "e704a8bde2dd65c206cfe6aa6f9e589ef4252221d1d6e2f429ceaa0a9ef17f2e"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "a258745215e93525a7433e0cdb3100c304dab3f0d58d457eb97a462beab8a96f"
+      "sha256": "04b0b9af3632f6ccba762f2793b321ab4454c94e5e86ab3057c9f9d52e50c046"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
@@ -313,7 +313,7 @@
     },
     {
       "path": "ignition/data/publication/fire-seeds/seed-census.json",
-      "sha256": "f5b76f80f359310e50217dd00949c5a45b78f919125b7490291cfa7d9f747d36"
+      "sha256": "a501f848a8ffcdc0e845661ccd1d358c59d6b2b1f5591055d44ba564ffbc6c52"
     },
     {
       "path": "ignition/packs/knowledge/manifest.json",

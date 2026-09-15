@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "维度最优漂移函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-858DB201D1DF5D3F / title: "维度最优漂移函数" / IMPLICIT-858DB201D1DF5D3F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "维度稳定性裕度函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-335B880B93E4005D / title: "维度稳定性裕度函数" / IMPLICIT-335B880B93E4005D
@@ -2499,8 +2504,3 @@
   - 可搜索名称：CLAIM-D225 / Within the source-defined scope, 引力B型必要性定理 is adjudicated as FORMAL_PROPOSITION: 引力的B型门控不是偶然属性，是Φ极小点存在的必要条件。若引力为A型，Φ单调递减
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：T33；被引用：—
-- [Within the source-defined scope, 弱容斥-不可逆边界函数 is adjudicated as RELATION: M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D360 / Within the source-defined scope, 弱容斥-不可逆边界函数 is adjudicated as RELATION: M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D310；被引用：—

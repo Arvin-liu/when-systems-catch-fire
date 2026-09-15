@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0320-D284-σ_opt跨域常数函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-cbdcf8264fe55d79 / 已迁移的历史函数来源/0320-D284-σ_opt跨域常数函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D284；被引用：—
 - [已迁移的历史函数来源/0321-D285-干预机会面积函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-1c59965aeb858074 / 已迁移的历史函数来源/0321-D285-干预机会面积函数.md
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-d1bde9fbd7f31f06 / 读 \[开放问题\]\(./RESULTS/OPEN-QUESTIONS.md\)，区分完成的治理工作与尚未完成的科学、数学和实证工作。
   - 来源：`HUMAN-READING.md`
   - 依赖：—；被引用：—
-- [读取任务说明 → 2. 确认输入材料完整（本地正文，非仅 URL）→ 3. 跑 `validate_data.py` 确认 `ALL_P1_DATA_VALID` → 4. 加载 P1 七类数据 → 5. 读函数表 → 6. 读案例表 →](../../../outputs/audit/agent-project-understanding-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5b302a8b6233f89c / 读取任务说明 → 2. 确认输入材料完整（本地正文，非仅 URL）→ 3. 跑 `validate_data.py` 确认 `ALL_P1_DATA_VALID` → 4. 加载 P1 七类数据 → 5. 读函数表 → 6. 读案例表 →
-  - 来源：`outputs/audit/agent-project-understanding-20260708.md`
-  - 依赖：P1；被引用：—

@@ -1,6 +1,6 @@
 # IGNITION-172 Step05 — full function asset routing overlay
 
-This logical step is based on the exact frozen parent `66234e27368edb618886ac5e2b26e2fd890067ed` on the existing Task172 branch and Draft PR #218.
+This logical step is based on the exact frozen parent `c0e58f64d07f3fee3389593d4d90426c7ddfe71e` on the existing Task172 branch and Draft PR #218.
 
 - Authority: `data/foundation/function-assets/identity-cards.jsonl`; `6158` canonical rows, one routing row per canonical ID.
 - Taxonomy: 1988 UNESCO primary lock, 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines. The overlay never invents a four-digit equivalence; empty discipline facets remain explicit unresolved routing information.

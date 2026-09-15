@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 弱容斥-不可逆边界函数 is adjudicated as RELATION: M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D360 / Within the source-defined scope, 弱容斥-不可逆边界函数 is adjudicated as RELATION: M5的弱容斥主导区是否在不可逆线之前取决于n。n小时弱容斥=不可逆（无窗口），n大时有"容斥主
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D310；被引用：—
 - [Within the source-defined scope, 弱容斥窗口-逃逸速度联合函数 is adjudicated as METRIC: M5的弱容斥窗口内逃逸速度v_escape\(弱容斥\)=v_escape\(耦合主导\)·\(1-f](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D374 / Within the source-defined scope, 弱容斥窗口-逃逸速度联合函数 is adjudicated as METRIC: M5的弱容斥窗口内逃逸速度v_escape\(弱容斥\)=v_escape\(耦合主导\)·\(1-f
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-abd235269731d33b / \| \[D321\]\( \) \| \[d_opt-σ_opt联合演化函数\]\( \) \| F_{D321}\(x\) :=
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D321；被引用：—
-- [\| \[D324\]\( \) \| \[阶段2宽度标度函数\]\( \) \| F_{D324}\(x\) := M11的w₂∝\(√n-1\)/\(n·ḡ\)。n→∞时](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e7020f956020b845 / \| \[D324\]\( \) \| \[阶段2宽度标度函数\]\( \) \| F_{D324}\(x\) := M11的w₂∝\(√n-1\)/\(n·ḡ\)。n→∞时
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D324；被引用：—

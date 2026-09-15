@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [命题已经被翻译成公认数学语言，并给出形式化或可复核证明。](../../../docs/claim_levels.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2249c313c1b1db50 / 命题已经被翻译成公认数学语言，并给出形式化或可复核证明。
+  - 来源：`docs/claim_levels.md`
+  - 依赖：—；被引用：—
 - [哥德尔不完备定理](../../../data/foundation/evidence/evidence.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-684acce6b6e07a01 / 哥德尔不完备定理
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-302a6fcc00539a5d / 数学表达 / Expression: `F_{D328}\(x\) := M1的不同门控面ΔΦᵢ差异大时，总ΔΦ由最大ΔΦ主导：ΔΦ_total≈max\(ΔΦᵢ\)·\(1+ln\(Σe^{ΔΦᵢ}/max\(ΔΦᵢ\)\)\)。极端异质性下ΔΦ_total
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D280, D328；被引用：—
-- [数学表达 / Expression: `F_{D329}\(x\) := M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ\(μ_saddle\)-Φ\(μ₁\)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-82f5f84ec3e0c9dc / 数学表达 / Expression: `F_{D329}\(x\) := M2的两个极小点在门槛参数变化时可以合并。合并条件：Φ\(μ_saddle\)-Φ\(μ₁\)<δΦ_thermal。合并后系统从双稳态变为单稳态——失去"退路"。合并方向：浅极
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D315, D329；被引用：—

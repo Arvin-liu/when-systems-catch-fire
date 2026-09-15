@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e31b1dff732ad215"></a>
+## 120 — Function OS Architecture Candidate Report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high) 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：120 — Function OS Architecture Candidate Report；主题：IGNITION-20260709-120；Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high)；This report presents the Function OS candidate architecture, mapping external research paradigms to potential ignition architecture nodes. The Function OS is a conceptual overlay — not a proposed implementation — that identifies what a complete "function operating system" for ignition would require.；主题：2. Architecture: Nine Nodes；主题：Node Status Summary
+- 完整阅读：[reports/external-research/120-function-os-architecture-candidate-report.md](../../reports/external-research/120-function-os-architecture-candidate-report.md)
+
 <a id="reading-hr-e323136676310783"></a>
 ## IGNITION-20260828-144 Step 18 — formal main publication transaction
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -175,8 +182,8 @@
 <a id="reading-hr-ecb9a4b8ee1483ca"></a>
 ## IGNITION-172 Step07 — Knowledge Experience routing index
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on exact frozen parent 66234e27368edb618886ac5e2b26e2fd890067ed on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 66234e27368edb618886ac5e2b26e2fd890067ed on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6158 function records + 17982 nonfunction records = 24140 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 1 分钟：This logical step is based on exact frozen parent c0e58f64d07f3fee3389593d4d90426c7ddfe71e on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent c0e58f64d07f3fee3389593d4d90426c7ddfe71e on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6158 function records + 17982 nonfunction records = 24140 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
 - 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
 
 <a id="reading-hr-ecc4e92db835c50c"></a>
@@ -346,10 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：080 Resume Instructions；branch: records/ignition-080-full-semantic-adjudication-20260713；status: PARTIALRESUMABLESOURCETEXTADJUDICATION；nextpendingstableid: T13；nextpendingbatch: 2；queuefile: data/foundation/work-queues/080-semantic-review-queue.jsonl
 - 完整阅读：[reports/foundation-architecture/080-resume-instructions-20260713.md](../../reports/foundation-architecture/080-resume-instructions-20260713.md)
-
-<a id="reading-hr-fd1a98871b9b5c54"></a>
-## Next basis assessment — Task163
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：The current execution does not establish a new basis, a surviving current basis, or generator lock-in. It establishes only that this R1 implementation cannot yet qualify as a historical basis-learning replay instrument under the frozen evidence boundary. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Next basis assessment — Task163；The current execution does not establish a new basis, a surviving current basis, or generator lock-in. It establishes only that this R1 implementation cannot yet qualify as a historical basis-learning replay instrument under the frozen evidence boundary.；No candidate reached freeze, so there is no candidate that can be mapped to the formal basis or judged with Task159 L2/L3/L4/L6. Fake-mutation and null-corpus Stage B controls were not run; the 12 neutral mutation trials were syntax trials with no semantic claim.；The next scientifically useful step, if explicitly authorized as a new run, is to obtain independently adjudicated prospective trigger material for the pre-event windows and requalify the operator without changing thresholds after seeing holdout results. Continuing basis-escape discovery with the unqualified operator would violate the command's stop rule. Th…
-- 完整阅读：[docs/governance/next-basis-assessment-2026-09-07.md](../../docs/governance/next-basis-assessment-2026-09-07.md)

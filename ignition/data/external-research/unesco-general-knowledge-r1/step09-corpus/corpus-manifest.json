@@ -19,14 +19,15 @@
     "57",
     "58",
     "59",
-    "61"
+    "61",
+    "62"
   ],
   "corpus_identity": [
     "GENERAL_KNOWLEDGE_REFERENCE",
     "SCHOLARLY_METADATA"
   ],
   "decision": "STEP09_PARTIAL_FIELD_WAVE_FROZEN; REMAINING_FIELDS_PENDING; METADATA_ONLY; MANUAL_REVIEW_REQUIRED",
-  "discipline_link_count": 1720,
+  "discipline_link_count": 1752,
   "evidence_promotion": false,
   "field_admission_refs": [
     "data/external-research/unesco-general-knowledge-r1/step09-corpus/fields/11/field-admission.json",
@@ -48,11 +49,12 @@
     "data/external-research/unesco-general-knowledge-r1/step09-corpus/fields/57/field-admission.json",
     "data/external-research/unesco-general-knowledge-r1/step09-corpus/fields/58/field-admission.json",
     "data/external-research/unesco-general-knowledge-r1/step09-corpus/fields/59/field-admission.json",
-    "data/external-research/unesco-general-knowledge-r1/step09-corpus/fields/61/field-admission.json"
+    "data/external-research/unesco-general-knowledge-r1/step09-corpus/fields/61/field-admission.json",
+    "data/external-research/unesco-general-knowledge-r1/step09-corpus/fields/62/field-admission.json"
   ],
   "formal_write": true,
-  "last_field_code": "61",
-  "last_field_parent_head": "66234e27368edb618886ac5e2b26e2fd890067ed",
+  "last_field_code": "62",
+  "last_field_parent_head": "c0e58f64d07f3fee3389593d4d90426c7ddfe71e",
   "metadata_only": true,
   "operation_refs": [
     "data/operations/iterations/172/step09-field-11.json",
@@ -74,15 +76,15 @@
     "data/operations/iterations/172/step09-field-57.json",
     "data/operations/iterations/172/step09-field-58.json",
     "data/operations/iterations/172/step09-field-59.json",
-    "data/operations/iterations/172/step09-field-61.json"
+    "data/operations/iterations/172/step09-field-61.json",
+    "data/operations/iterations/172/step09-field-62.json"
   ],
   "pending_fields": [
-    "62",
     "63",
     "71",
     "72"
   ],
-  "physical_record_count": 1590,
+  "physical_record_count": 1615,
   "policy_ref": "data/external-research/unesco-general-knowledge-r1/step09-corpus/corpus-policy.json",
   "same_physical_record_once": true,
   "schema": "task172-step09-corpus-manifest-v1",

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [历史纠偏：** 本文保留历史候选。哥德尔类比、不同能标或门控模型失败不支持物理学或数学问题的“不可能”结论；涉及四力统一和量子引力的条目只能保持开放问题/候选类比，现行权威见 `docs/foundation/physics-asset-c](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d4085a8a153794f4 / 历史纠偏：** 本文保留历史候选。哥德尔类比、不同能标或门控模型失败不支持物理学或数学问题的“不可能”结论；涉及四力统一和量子引力的条目只能保持开放问题/候选类比，现行权威见 `docs/foundation/physics-asset-c
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [历史规律的争议（是否有规律）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-29b3c129c00d0b39 / 历史规律的争议（是否有规律）
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f6deb78bb3df27c9 / 命名层级**：公理只在声明系统中成立；定义不是真值；引理/命题/定理/猜想/反例各有不同门禁。
   - 来源：`docs/foundation/mathematics/README.md`
-  - 依赖：—；被引用：—
-- [命题已经被翻译成公认数学语言，并给出形式化或可复核证明。](../../../docs/claim_levels.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2249c313c1b1db50 / 命题已经被翻译成公认数学语言，并给出形式化或可复核证明。
-  - 来源：`docs/claim_levels.md`
   - 依赖：—；被引用：—

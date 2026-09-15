@@ -3,7 +3,7 @@
     "asset_kind": "NONFUNCTION_CLAIM",
     "path": "data/foundation/nonfunction-claims/claim-registry.jsonl",
     "row_count": 17982,
-    "sha256": "c70b6ec588b015d8eaada892fe31311694c528ec655852bb5192901d531340ab"
+    "sha256": "5f90c3dff9cad7ec450aaeaa9b37530e3059e1f25fdc02c69ffd5926f2c5defc"
   },
   "command_sources": [
     {
@@ -25,7 +25,7 @@
   "decision": "STEP06_FULL_NONFUNCTION_CLAIM_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQUIRED; NO_CANONICAL_MUTATION",
   "derived_outputs": {
     "overlay_path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
-    "overlay_sha256": "6d3e83362c79bff40e1b5077c95a9f6a12877f6b8719ef0390fce1119c0f7b5e"
+    "overlay_sha256": "4d2717bff23f9ae43d9879a069970ac27713df02644e65d444b1816bf7141652"
   },
   "direction_locks": [
     "IGNITION-20260913-175",
@@ -34,7 +34,7 @@
   ],
   "formal_pre_freeze": {
     "branch": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
-    "head": "66234e27368edb618886ac5e2b26e2fd890067ed",
+    "head": "c0e58f64d07f3fee3389593d4d90426c7ddfe71e",
     "pull_request": 218,
     "state": "OPEN + DRAFT + unmerged"
   },

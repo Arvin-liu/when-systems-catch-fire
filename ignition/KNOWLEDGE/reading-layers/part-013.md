@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-fd1a98871b9b5c54"></a>
+## Next basis assessment — Task163
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：The current execution does not establish a new basis, a surviving current basis, or generator lock-in. It establishes only that this R1 implementation cannot yet qualify as a historical basis-learning replay instrument under the frozen evidence boundary. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Next basis assessment — Task163；The current execution does not establish a new basis, a surviving current basis, or generator lock-in. It establishes only that this R1 implementation cannot yet qualify as a historical basis-learning replay instrument under the frozen evidence boundary.；No candidate reached freeze, so there is no candidate that can be mapped to the formal basis or judged with Task159 L2/L3/L4/L6. Fake-mutation and null-corpus Stage B controls were not run; the 12 neutral mutation trials were syntax trials with no semantic claim.；The next scientifically useful step, if explicitly authorized as a new run, is to obtain independently adjudicated prospective trigger material for the pre-event windows and requalify the operator without changing thresholds after seeing holdout results. Continuing basis-escape discovery with the unqualified operator would violate the command's stop rule. Th…
+- 完整阅读：[docs/governance/next-basis-assessment-2026-09-07.md](../../docs/governance/next-basis-assessment-2026-09-07.md)
+
 <a id="reading-hr-fd61253709a198c4"></a>
 ## Agent result: IGNITION-20260907-162
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`

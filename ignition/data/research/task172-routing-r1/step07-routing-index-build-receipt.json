@@ -31,7 +31,7 @@
     "nonfunction_overlay": {
       "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
       "rows": 17982,
-      "sha256": "6d3e83362c79bff40e1b5077c95a9f6a12877f6b8719ef0390fce1119c0f7b5e"
+      "sha256": "4d2717bff23f9ae43d9879a069970ac27713df02644e65d444b1816bf7141652"
     },
     "pilot_queries": {
       "path": "data/research/task172-routing-r1/step07-routing-pilot-queries.json",
@@ -42,11 +42,11 @@
   "operation_id": "knowledge.collide_object",
   "outputs": {
     "KNOWLEDGE/TAGS.md": "2b474fa60489c0f81bb42da6f62f1321a3494d248fefc77da993b7412a41ea37",
-    "data/operations/iterations/172/step07-routing-index.json": "716795a46f591cd62e370afb22c681ce86fc4688c5c0b542dec7fe85e01b8174",
-    "data/research/task172-routing-r1/step07-routing-index-source-freeze.json": "f1f3cb6aa0cdffbf47db8ba73b55e0078eb218338d7c921e3ed0599fefbb8d11",
-    "data/research/task172-routing-r1/step07-routing-index.json": "237ffca44077dcbbfc13c3ae94f2a849218a7c88f268874c37f462fd3152d9c8",
+    "data/operations/iterations/172/step07-routing-index.json": "0cb7ae00f5c5c48e77157209b4ece59a8d8e8a9ecbe79b38c871809aaa365db9",
+    "data/research/task172-routing-r1/step07-routing-index-source-freeze.json": "63667f2897129e87e55bff3a01a2403b384a0d541f7638753052977318f3bb3d",
+    "data/research/task172-routing-r1/step07-routing-index.json": "53b7182c1aad8e9490e3ff88447497b8390c338417b14a1f42dc73804105d10c",
     "data/research/task172-routing-r1/step07-routing-pilot.json": "e172d2eab7d1a50c6ec29749afd4c93b70d869bc8b114d4b6733cefbb2bca949",
-    "reports/operations/ignition-172-20260915-step07-routing-index.md": "a59c953ab8399b17e812f40851ea7463589327e5fea62f65e82f490072d8afb5"
+    "reports/operations/ignition-172-20260915-step07-routing-index.md": "bb18726607e8e49c270cc3c394b2d1995462feabfd8710c4028953cb75e85060"
   },
   "pilot_hard_checks": {
     "all_selected_exact": true,
@@ -58,6 +58,6 @@
   "registry_write": false,
   "repository_mutation": false,
   "schema": "task172-step07-routing-index-build-receipt-v1",
-  "source_exact_head": "66234e27368edb618886ac5e2b26e2fd890067ed",
+  "source_exact_head": "c0e58f64d07f3fee3389593d4d90426c7ddfe71e",
   "step": "Task172 Step07"
 }
