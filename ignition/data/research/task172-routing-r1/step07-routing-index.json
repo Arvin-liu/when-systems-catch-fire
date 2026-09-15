@@ -10387,6 +10387,7 @@
         "NONFUNCTION_CLAIM:NFC-10972fcd66abc2af",
         "NONFUNCTION_CLAIM:NFC-109898c28f1bfff0",
         "NONFUNCTION_CLAIM:NFC-1098d2fa3e7326ac",
+        "NONFUNCTION_CLAIM:NFC-10b387976d05e05f",
         "NONFUNCTION_CLAIM:NFC-10b78453e0c49d4b",
         "NONFUNCTION_CLAIM:NFC-10bad5beb5843c2e",
         "NONFUNCTION_CLAIM:NFC-10c4393c8f5c21b9",
@@ -33778,6 +33779,7 @@
         "NONFUNCTION_CLAIM:NFC-108f69c93e741ae2",
         "NONFUNCTION_CLAIM:NFC-10a47415edd54fec",
         "NONFUNCTION_CLAIM:NFC-10a9c4f4117d92ae",
+        "NONFUNCTION_CLAIM:NFC-10b387976d05e05f",
         "NONFUNCTION_CLAIM:NFC-10c269ecda82f309",
         "NONFUNCTION_CLAIM:NFC-10cb922603f1a21c",
         "NONFUNCTION_CLAIM:NFC-10e5779f4282580f",
@@ -60029,6 +60031,7 @@
         "NONFUNCTION_CLAIM:NFC-10972fcd66abc2af",
         "NONFUNCTION_CLAIM:NFC-109898c28f1bfff0",
         "NONFUNCTION_CLAIM:NFC-1098d2fa3e7326ac",
+        "NONFUNCTION_CLAIM:NFC-10b387976d05e05f",
         "NONFUNCTION_CLAIM:NFC-10b78453e0c49d4b",
         "NONFUNCTION_CLAIM:NFC-10bad5beb5843c2e",
         "NONFUNCTION_CLAIM:NFC-10c269ecda82f309",
@@ -76427,6 +76430,7 @@
         "NONFUNCTION_CLAIM:NFC-109898c28f1bfff0",
         "NONFUNCTION_CLAIM:NFC-1098d2fa3e7326ac",
         "NONFUNCTION_CLAIM:NFC-10a47415edd54fec",
+        "NONFUNCTION_CLAIM:NFC-10b387976d05e05f",
         "NONFUNCTION_CLAIM:NFC-10b78453e0c49d4b",
         "NONFUNCTION_CLAIM:NFC-10bad5beb5843c2e",
         "NONFUNCTION_CLAIM:NFC-10c4032a58f36e13",
@@ -97254,6 +97258,7 @@
         "NONFUNCTION_CLAIM:NFC-10972fcd66abc2af",
         "NONFUNCTION_CLAIM:NFC-109898c28f1bfff0",
         "NONFUNCTION_CLAIM:NFC-1098d2fa3e7326ac",
+        "NONFUNCTION_CLAIM:NFC-10b387976d05e05f",
         "NONFUNCTION_CLAIM:NFC-10b78453e0c49d4b",
         "NONFUNCTION_CLAIM:NFC-10bad5beb5843c2e",
         "NONFUNCTION_CLAIM:NFC-10c4393c8f5c21b9",
@@ -113369,6 +113374,7 @@
         "NONFUNCTION_CLAIM:NFC-0a6f5747377f58b8",
         "NONFUNCTION_CLAIM:NFC-0da61c3eadfb9c56",
         "NONFUNCTION_CLAIM:NFC-0e42b5989240e5e3",
+        "NONFUNCTION_CLAIM:NFC-10b387976d05e05f",
         "NONFUNCTION_CLAIM:NFC-15f5796bb20e2f92",
         "NONFUNCTION_CLAIM:NFC-1702fc730fe65e1d",
         "NONFUNCTION_CLAIM:NFC-174fb8c25468f523",
@@ -121199,6 +121205,7 @@
         "NONFUNCTION_CLAIM:NFC-0f529083eb0f994f",
         "NONFUNCTION_CLAIM:NFC-0f82be0f540e61c7",
         "NONFUNCTION_CLAIM:NFC-10514922a49de3f2",
+        "NONFUNCTION_CLAIM:NFC-10b387976d05e05f",
         "NONFUNCTION_CLAIM:NFC-10d141da100e08e6",
         "NONFUNCTION_CLAIM:NFC-110b83d737d2c523",
         "NONFUNCTION_CLAIM:NFC-119a925faa2e837f",
@@ -267397,6 +267404,27 @@
       "asset_role": [
         "HISTORICAL_CONTEXT"
       ],
+      "canonical_id": "NFC-10b387976d05e05f",
+      "classification_state": "MULTIDISCIPLINARY",
+      "collision_use": [
+        "COUNTEREXAMPLE",
+        "EVIDENCE_CHECK",
+        "HISTORICAL_CONTEXT"
+      ],
+      "routing_confidence": 0.6,
+      "source_record_sha": "813d1dd7742837f3aa16013a9253fb9d724e31068718eff6743b7c6ddcfdb124",
+      "topic": [],
+      "unesco_discipline_codes": [],
+      "unesco_field_codes": [
+        "24",
+        "72"
+      ]
+    },
+    {
+      "asset_kind": "NONFUNCTION_CLAIM",
+      "asset_role": [
+        "HISTORICAL_CONTEXT"
+      ],
       "canonical_id": "NFC-10b78453e0c49d4b",
       "classification_state": "UNRESOLVED",
       "collision_use": [
@@ -389421,7 +389449,7 @@
         "HISTORICAL_CONTEXT"
       ],
       "routing_confidence": 0.85,
-      "source_record_sha": "be599e880115f5e31cecc380471175d2eaccd0465378385222ed2c76bfe1de31",
+      "source_record_sha": "95ba70759996f20eb2e755a8bd3ee5a0b4cb06ed97f63e9b3c9bbba0f33fdd97",
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": [
@@ -424667,7 +424695,7 @@
         "HISTORICAL_CONTEXT"
       ],
       "routing_confidence": 0.0,
-      "source_record_sha": "ac0472b28f7f7b75c6e692d0afcfff30bec9d2ae8486e7505e0cbe2d641b0c33",
+      "source_record_sha": "d7029e6ff23a5c4c18c7c4785ca35d111a2262d68d48f32fb13f93c48bb34d5a",
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": []
@@ -568779,7 +568807,7 @@
     "registry_write": false,
     "repository_mutation": false
   },
-  "source_exact_head": "40f4ba68414ec86e401806d07ab6d322192aac2c",
+  "source_exact_head": "dbfe98e2837dbf50ba893aa6a2f136323539209d",
   "source_overlays": [
     {
       "asset_kind": "FUNCTION_ASSET",
@@ -568790,8 +568818,8 @@
     {
       "asset_kind": "NONFUNCTION_CLAIM",
       "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
-      "rows": 17980,
-      "sha256": "de419f56bf2274275ed540db833c2e7c7821b5146e96e83a23905890d7554685"
+      "rows": 17981,
+      "sha256": "27289fb1029c7bfc8a3ec77b16e63c513e4d23fe8baafccece65c20c7b6d46fc"
     }
   ],
   "stats": {
@@ -568812,8 +568840,8 @@
       "by_unesco_field": 19
     },
     "function_records": 6157,
-    "nonfunction_records": 17980,
-    "records": 24137
+    "nonfunction_records": 17981,
+    "records": 24138
   },
   "step": "Task172 Step07",
   "taxonomy": {

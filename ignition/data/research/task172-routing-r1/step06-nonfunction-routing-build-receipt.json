@@ -19,9 +19,9 @@
     }
   ],
   "counts": {
-    "expected_rows": 17980,
-    "negative_boundary_rows": 9871,
-    "rows": 17980
+    "expected_rows": 17981,
+    "negative_boundary_rows": 9872,
+    "rows": 17981
   },
   "decision": "STEP06_FULL_NONFUNCTION_CLAIM_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQUIRED; NO_CANONICAL_MUTATION",
   "deterministic": true,
@@ -35,7 +35,7 @@
     "source_fingerprint_mismatch": 0
   },
   "inputs": {
-    "authority": "83bb98c6a9eebc90806c3134598c0ded41d6b3adcfd267c1c7651de3ab773496",
+    "authority": "14c8d69b9d5cce7cad65103219bcf7d91a88754cf75f1ad122d10026429d0d77",
     "discipline_count": "245",
     "field_count": "24",
     "field_labels_sha256": "fa35ba2caaef0119b5f53bee2a27a07b1ccda066591b1805b5ceeb4415828d22",
@@ -45,19 +45,19 @@
     "gate_t_discrepancy_ledger": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f",
     "gate_t_parse": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a"
   },
-  "manual_review_required": 17980,
+  "manual_review_required": 17981,
   "network": false,
   "outputs": {
-    "operation": "3a02f791058d7f14fa0067332371c04119effae898d0467dda6617faf7cb2ddb",
-    "overlay": "de419f56bf2274275ed540db833c2e7c7821b5146e96e83a23905890d7554685",
-    "report": "73bbd31aec5118e5b6c87e336f113b8a0fd4eaddd8f088e6dbe973a8b3eefa94",
-    "source_freeze": "542d20125ad67c8c974133ef3f1fdf8a6394cf0b4adb256b79a7900d45040a96"
+    "operation": "a644c5854220244d4f0c07e412e8c7894a19dedb293917609053c0783f6d955f",
+    "overlay": "27289fb1029c7bfc8a3ec77b16e63c513e4d23fe8baafccece65c20c7b6d46fc",
+    "report": "3682471ce2b44bfe1c01cf56520f8998b17313c6ca35fc570c2cc91132b18429",
+    "source_freeze": "702d24f4eaca17fc80099c129b8559fc6d81f2449dd7fe3cae4a2c91d56ea0e7"
   },
   "schema": "task172-full-routing-build-receipt-v1",
-  "source_exact_head": "40f4ba68414ec86e401806d07ab6d322192aac2c",
+  "source_exact_head": "dbfe98e2837dbf50ba893aa6a2f136323539209d",
   "state_counts": {
     "CLASSIFIED": 7672,
-    "MULTIDISCIPLINARY": 2106,
+    "MULTIDISCIPLINARY": 2107,
     "OUT_OF_UNESCO_SCOPE": 1881,
     "UNRESOLVED": 6321
   },

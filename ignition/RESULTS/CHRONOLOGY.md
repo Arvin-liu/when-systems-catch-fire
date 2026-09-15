@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 590 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 591 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -4499,6 +4499,19 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [Task172 Step09 field 24: LIFE SCIENCES](../reports/operations/ignition-172-20260915-step09-field-24.md)
+
+- **结果 ID：** `HR-CADD18CB2328CED3`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP09-FIELD-24`
+- **问题：** 此来源记录了什么：Task172 Step09 field 24: LIFE SCIENCES？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Task172 Step09 field 23: CHEMISTRY](../reports/operations/ignition-172-20260915-step09-field-23.md)
 
 - **结果 ID：** `HR-7149C661BB0AF806`
@@ -4571,7 +4584,7 @@
 - **来源任务/运行：** `172-20260915-STEP07-ROUTING-INDEX`
 - **问题：** 此来源记录了什么：IGNITION-172 Step07 — Knowledge Experience routing index？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** This logical step is based on exact frozen parent 40f4ba68414ec86e401806d07ab6d322192aac2c on the existing Task172 branch and Draft PR 218.
+- **来源摘要：** This logical step is based on exact frozen parent dbfe98e2837dbf50ba893aa6a2f136323539209d on the existing Task172 branch and Draft PR 218.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -4597,7 +4610,7 @@
 - **来源任务/运行：** `172-20260914-STEP06-NONFUNCTION-ROUTING`
 - **问题：** 此来源记录了什么：IGNITION-172 Step06 — full nonfunction claim routing overlay？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** This logical step is based on the exact frozen parent 40f4ba68414ec86e401806d07ab6d322192aac2c on the existing Task172 branch and Draft PR 218.
+- **来源摘要：** This logical step is based on the exact frozen parent dbfe98e2837dbf50ba893aa6a2f136323539209d on the existing Task172 branch and Draft PR 218.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

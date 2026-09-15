@@ -18,17 +18,17 @@
       "by_unesco_field": 19
     },
     "function_records": 6157,
-    "nonfunction_records": 17980,
-    "records": 24137
+    "nonfunction_records": 17981,
+    "records": 24138
   },
   "generated_outputs": {
-    "KNOWLEDGE/TAGS.md": "ca1a6f8f3bc4b43b6825e854254455658164ccb9f5b6e2e3b5c2a272a870dff0",
-    "data/operations/iterations/172/step07-routing-index.json": "292f0e36f212de06d835530e22604d3737694f7076d21a993dbe3977561ca6d0",
-    "data/research/task172-routing-r1/step07-routing-index-build-receipt.json": "0ea50cdb94cd550233961cf9d9146a5298c6dd16d560eaef67b3ef3a35436d61",
-    "data/research/task172-routing-r1/step07-routing-index-source-freeze.json": "d31c7786f9e04ecf8dcc7162e83f0f06caa5d59b51eaf9255bfcefbd8811ccd6",
-    "data/research/task172-routing-r1/step07-routing-index.json": "adba365f4e3b65857061a67468ecfa007ac5891afe3705b013359c11136909ee",
+    "KNOWLEDGE/TAGS.md": "5140e2ad233a86f4ba44612a0af36d0680d1dd50747e549195fcc89eb6ff7a99",
+    "data/operations/iterations/172/step07-routing-index.json": "ce43f4ddb98e85ec3a17a0a86af1e82d0b25891d08d8dbdd847f62777f82bb80",
+    "data/research/task172-routing-r1/step07-routing-index-build-receipt.json": "355a2162644470f29983bf524c7fe9a51b1f13c0e7b4b660cedd6e465134cf7f",
+    "data/research/task172-routing-r1/step07-routing-index-source-freeze.json": "bebc30e0a005a9781412adf4b45e719ac08e7cda931e82ce2d4a97c55d6eaf57",
+    "data/research/task172-routing-r1/step07-routing-index.json": "9b3aafadd78d6fbbdd254f9019f638adb9a1e446c3fc6ed0d53f916c159152e5",
     "data/research/task172-routing-r1/step07-routing-pilot.json": "e172d2eab7d1a50c6ec29749afd4c93b70d869bc8b114d4b6733cefbb2bca949",
-    "reports/operations/ignition-172-20260915-step07-routing-index.md": "299a1ebb7f931331c6ca20bc09124d745ebdc63e71cccdb40e98d0e330aabbd1"
+    "reports/operations/ignition-172-20260915-step07-routing-index.md": "b74fc5b3bd67b1550483310e20592182702282826d92f35e3b8a699b6e63bc1c"
   },
   "machine_human_pairs": [
     {
@@ -41,7 +41,7 @@
     }
   ],
   "schema": "task172-step07-routing-index-manifest-v1",
-  "source_exact_head": "40f4ba68414ec86e401806d07ab6d322192aac2c",
-  "source_freeze_sha256": "d31c7786f9e04ecf8dcc7162e83f0f06caa5d59b51eaf9255bfcefbd8811ccd6",
+  "source_exact_head": "dbfe98e2837dbf50ba893aa6a2f136323539209d",
+  "source_freeze_sha256": "bebc30e0a005a9781412adf4b45e719ac08e7cda931e82ce2d4a97c55d6eaf57",
   "step": "Task172 Step07"
 }

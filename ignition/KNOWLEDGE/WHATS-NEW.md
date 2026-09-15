@@ -9,7 +9,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This logical step is based on exact frozen parent 40f4ba68414ec86e401806d07ab6d322192aac2c on the existing Task172 branch and Draft PR 218.
+- **变化：** This logical step is based on exact frozen parent dbfe98e2837dbf50ba893aa6a2f136323539209d on the existing Task172 branch and Draft PR 218.
 - **来源：** [ignition-172-20260915-step07-routing-index.md](../reports/operations/ignition-172-20260915-step07-routing-index.md)
 - **资产卡：** [HR-ECB9A4B8EE1483CA](./ASSET-CARDS.md#asset-hr-ecb9a4b8ee1483ca)
 
@@ -21,6 +21,15 @@
 - **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
 - **来源：** [ignition-172-20260915-step09-field-12.md](../reports/operations/ignition-172-20260915-step09-field-12.md)
 - **资产卡：** [HR-CFB1D9D7C981B639](./ASSET-CARDS.md#asset-hr-cfb1d9d7c981b639)
+
+<a id="change-src-hr-cadd18cb2328ced3"></a>
+### 2026-09-15 · Task172 Step09 field 24: LIFE SCIENCES
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-24.md](../reports/operations/ignition-172-20260915-step09-field-24.md)
+- **资产卡：** [HR-CADD18CB2328CED3](./ASSET-CARDS.md#asset-hr-cadd18cb2328ced3)
 
 <a id="change-src-hr-a5172a2b53cec20b"></a>
 ### 2026-09-15 · Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS
@@ -63,7 +72,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This logical step is based on the exact frozen parent 40f4ba68414ec86e401806d07ab6d322192aac2c on the existing Task172 branch and Draft PR 218.
+- **变化：** This logical step is based on the exact frozen parent dbfe98e2837dbf50ba893aa6a2f136323539209d on the existing Task172 branch and Draft PR 218.
 - **来源：** [ignition-172-20260914-step06-nonfunction-routing.md](../reports/operations/ignition-172-20260914-step06-nonfunction-routing.md)
 - **资产卡：** [HR-BC0FD3372F5D0546](./ASSET-CARDS.md#asset-hr-bc0fd3372f5d0546)
 
