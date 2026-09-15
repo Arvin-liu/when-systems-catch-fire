@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e28559baf39d9944"></a>
+## IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure
+`HISTORICAL_COMPLETION_RECORD` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The fresh public scan re-observed four reasoner runtimes, three deterministic tools and two UI surfaces. Ollama 0.32.7, LM Studio CLI commit 6041ae0, MLX DSpark and the absent bundled llama-server remain REASONERRUNTIME; gh, git and jq remain TOOL; Claude Desktop and QwenWorkCN remain UISURFACE. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure；The fresh public scan re-observed four reasoner runtimes, three deterministic tools and two UI surfaces. Ollama 0.32.7, LM Studio CLI commit 6041ae0, MLX DSpark and the absent bundled llama-server remain REASONERRUNTIME; gh, git and jq remain TOOL; Claude Desktop and QwenWorkCN remain UISURFACE.；The machine rule is explicit: only AGENTICEXECUTOR can enter the live validated-completion path. A reasoner runtime's generated answer, a deterministic tool result or a UI interaction cannot close the external-Agent obligation. No wrapper was found or created, no model was invoked, and no UI action occurred.；Machine evidence is ignition/data/operations/iterations/142/step10-reasoner-tool-closure.json, validated by ignition/tools/validatetask142classseparation.py.；Claim ceiling: fresh class separation and public metadata only; no inference or validated completion is claimed.
+- 完整阅读：[reports/operations/ignition-142-step10-reasoner-tool-closure.md](../../reports/operations/ignition-142-step10-reasoner-tool-closure.md)
+
 <a id="reading-hr-e2a9200ebcc66ab2"></a>
 ## Approval Bridge, Handoff and Failover R1
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -196,8 +203,8 @@
 <a id="reading-hr-ecb9a4b8ee1483ca"></a>
 ## IGNITION-172 Step07 — Knowledge Experience routing index
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on exact frozen parent 5030f1dd9e01a6530155e86c2120fb587b2c1146 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 5030f1dd9e01a6530155e86c2120fb587b2c1146 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6158 function records + 17982 nonfunction records = 24140 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 1 分钟：This logical step is based on exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6158 function records + 17982 nonfunction records = 24140 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
 - 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
 
 <a id="reading-hr-ecc4e92db835c50c"></a>
@@ -346,10 +353,3 @@
 - 1 分钟：Repair Cycle A addressed one deterministic identity/projection root cause: task-identity-model-r1.json still pointed the release-candidate role at the superseded Task143 execution contract. The required Task144 progress binding was recorded in the preceding Step12 evidence commit. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260828-144 Step 13 — bounded Repair Cycle A；Repair Cycle A addressed one deterministic identity/projection root cause: task-identity-model-r1.json still pointed the release-candidate role at the superseded Task143 execution contract. The required Task144 progress binding was recorded in the preceding Step12 evidence commit.；The identical offline closure command set then completed naturally with 77 tests / 0 failures / 0 errors / 0 skips, and all 14 standalone validators passed. No live process, external inference, executor qualification, adapter or new capability was started. No skip, xfail, ignore or expected-failure mechanism was added.；Machine receipt: ignition/data/operations/iterations/144/step13-repair-cycle-a.json.；Two bounded repair cycles remain available, but no further cycle is authorized without a new deterministic closure blocker. Claim ceiling: repository-local repair and regression evidence only; this does not establish validated live completion, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance.
 - 完整阅读：[reports/operations/ignition-144-step13-repair-cycle-a.md](../../reports/operations/ignition-144-step13-repair-cycle-a.md)
-
-<a id="reading-hr-fb9a21e0eb12989e"></a>
-## 121Q2V Verification Repair Report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Generated: 2026-07-14T17:22:03Z Parent HEAD at report generation: a4b0a90826d97d17d7751953d24a5901d090debb Note: Final HEAD will be confirmed after Step 008 commit/push. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q2V Verification Repair Report；主题：STATUS: COMPLETE — All 8 steps executed；Generated: 2026-07-14T17:22:03Z Parent HEAD at report generation: a4b0a90826d97d17d7751953d24a5901d090debb Note: Final HEAD will be confirmed after Step 008 commit/push.；主题：Execution Identity；Model: qclaw/pool-glm-5.2-night；Model switch: None
-- 完整阅读：[reports/external-research/121Q2V-verification-repair-report.md](../../reports/external-research/121Q2V-verification-repair-report.md)

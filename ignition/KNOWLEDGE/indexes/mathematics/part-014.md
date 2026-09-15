@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：战后德国人有真实退出权，社会市场经济认同经退出权验证 关键发现：第5步跑通 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-40d144d6a5424c1d / 从这条案例看，中文：案例说明：战后德国人有真实退出权，社会市场经济认同经退出权验证 关键发现：第5步跑通 English: Rule-based Eng… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：扁平化vs分层编码 — 10人团队CEO直接BL对全员ηflat=0.08，加VP中间层ηlayered=0.211，效率… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9bd9b774bf4972f2 / 从这条案例看，中文：案例说明：扁平化vs分层编码 — 10人团队CEO直接BL对全员ηflat=0.08，加VP中间层ηlayered=0.211，效率… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-48253c749eba18eb / 历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明简单规则经局部交互产生全局复杂行为的普遍命题，当前仅保留为历史候选。
   - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [历史是否有规律？**（历史哲学）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c534dc2659df3717 / 历史是否有规律？**（历史哲学）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—

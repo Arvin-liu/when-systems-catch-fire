@@ -48,13 +48,13 @@
   "manual_review_required": 6158,
   "network": false,
   "outputs": {
-    "operation": "eb3976292b4210012d7925f72047c6d808b019b30432a57464a1f2a58b4d8e64",
+    "operation": "c7d943dfa46c83764187a06365fa7de4dbd626e88e5a57ff30d9bf6479230fb5",
     "overlay": "f02c32f203b126032e1ca7da26964cf27949a3badd38adb1f3a681daa71a42b9",
-    "report": "63201cd766b2b0b39bab086c132baae36e34adb3f1cef5d71eef7e398af6511b",
-    "source_freeze": "a21f14bb23d5470624b6bb444476ba2618a028cedf18689d05f9a8319ff3dfb0"
+    "report": "05759ca5ed96dcc6d1532e528161b2bf60413af96d8d731c44a34a0209c60595",
+    "source_freeze": "03f45f2ef3e6d0bf55545f70511fa2ddc1bb975fbe8990e1b7e6446ea0c2fac8"
   },
   "schema": "task172-full-routing-build-receipt-v1",
-  "source_exact_head": "5030f1dd9e01a6530155e86c2120fb587b2c1146",
+  "source_exact_head": "13ec32014e29db8d8d1590c41ca0d4cde694736d",
   "state_counts": {
     "CLASSIFIED": 1315,
     "MULTIDISCIPLINARY": 283,

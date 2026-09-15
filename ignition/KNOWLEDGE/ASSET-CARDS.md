@@ -1258,6 +1258,8 @@
 - [085: Architecture Structure Freeze Report](./cards/part-013.md#asset-hr-e1d441f85e9b4b63) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E1D441F85E9B4B63`
 <a id="asset-hr-e1fc77026a23a989"></a>
 - [IGNITION-128 Step 04 — deterministic rebuild and regression](./cards/part-013.md#asset-hr-e1fc77026a23a989) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E1FC77026A23A989`
+<a id="asset-hr-e209cf9b12ff43a0"></a>
+- [Task172 Step09 field 72: PHILOSOPHY](./cards/part-013.md#asset-hr-e209cf9b12ff43a0) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-E209CF9B12FF43A0`
 <a id="asset-hr-e28559baf39d9944"></a>
 - [IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure](./cards/part-013.md#asset-hr-e28559baf39d9944) — `RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD` · `HR-E28559BAF39D9944`
 <a id="asset-hr-e2a9200ebcc66ab2"></a>
@@ -1301,7 +1303,7 @@
 <a id="asset-hr-ea120e5d0d0fa5ff"></a>
 - [MF-0001~0005 Codespace 救援复核](./cards/part-013.md#asset-hr-ea120e5d0d0fa5ff) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-EA120E5D0D0FA5FF`
 <a id="asset-hr-ea13f7ea325dac81"></a>
-- [Historical Basis-Leaps Reconstruction — IGNITION-20260906-158](./cards/part-013.md#asset-hr-ea13f7ea325dac81) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-EA13F7EA325DAC81`
+- [Historical Basis-Leaps Reconstruction — IGNITION-20260906-158](./cards/part-014.md#asset-hr-ea13f7ea325dac81) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-EA13F7EA325DAC81`
 <a id="asset-hr-ea1ccd6bb1e44892"></a>
 - [IGNITION-139 Step 04 — Context-loss and oversized-output fault matrix](./cards/part-014.md#asset-hr-ea1ccd6bb1e44892) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-EA1CCD6BB1E44892`
 <a id="asset-hr-ea8833ef83822509"></a>

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [诺特定理验证 — 5维对称系统\(fi相同\),∑ηi=5×0.25=1.25恒定。打破对称后\(1维门槛提高\),∑ηi仍=1.25但分布不均](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ac3a47b6054cd2bf / 诺特定理验证 — 5维对称系统\(fi相同\),∑ηi=5×0.25=1.25恒定。打破对称后\(1维门槛提高\),∑ηi仍=1.25但分布不均
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
 - [读 \[任务 110 的独立复制结果\]\(./evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md\)，先确认 1](../../../HUMAN-READING.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-c168359ba1209aa8 / 读 \[任务 110 的独立复制结果\]\(./evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md\)，先确认 1

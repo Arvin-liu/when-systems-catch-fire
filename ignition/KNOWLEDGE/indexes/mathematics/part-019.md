@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0317-D281-极小点漂移-鲁棒性耦合函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b8ebed4eec601f58 / 已迁移的历史函数来源/0317-D281-极小点漂移-鲁棒性耦合函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D281；被引用：—
 - [已迁移的历史函数来源/0318-D282-Φ二阶近似函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-f8cc76a575a7424d / 已迁移的历史函数来源/0318-D282-Φ二阶近似函数.md
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-db9f0bd184a2e1a0 / 请明确区分“当前仓库能力”“候选派生表示”和“已证明的科学理论”。
   - 来源：`docs/ai-assistant-usage-reference.md`
-  - 依赖：—；被引用：—
-- [诺特定理验证 — 5维对称系统\(fi相同\),∑ηi=5×0.25=1.25恒定。打破对称后\(1维门槛提高\),∑ηi仍=1.25但分布不均](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ac3a47b6054cd2bf / 诺特定理验证 — 5维对称系统\(fi相同\),∑ηi=5×0.25=1.25恒定。打破对称后\(1维门槛提高\),∑ηi仍=1.25但分布不均
-  - 来源：`data/foundation/evidence/evidence.jsonl`
   - 依赖：—；被引用：—

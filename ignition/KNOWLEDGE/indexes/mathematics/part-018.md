@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [物理学：量子引力、四种基本力统一、暗物质 / 暗能量本质](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-658239f65463d6a7 / 物理学：量子引力、四种基本力统一、暗物质 / 暗能量本质
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [特别规则：A 只表示声明理论内的假设/公理；T 只有链接可检查证明工件时才是 THEOREM。legacy ID 永久保留，但 legacy 标签不支配新类型。](../../../docs/foundation/mathematics/README.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-007d214615bfcc56 / 特别规则：A 只表示声明理论内的假设/公理；T 只有链接可检查证明工件时才是 THEOREM。legacy ID 永久保留，但 legacy 标签不支配新类型。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-291da27e9c2c63ba / 已迁移的历史函数来源/0316-D280-容斥干预两步策略函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D280；被引用：—
-- [已迁移的历史函数来源/0317-D281-极小点漂移-鲁棒性耦合函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b8ebed4eec601f58 / 已迁移的历史函数来源/0317-D281-极小点漂移-鲁棒性耦合函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D281；被引用：—

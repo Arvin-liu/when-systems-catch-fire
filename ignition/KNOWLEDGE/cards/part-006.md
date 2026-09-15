@@ -810,7 +810,7 @@
 - **身份/来源：** `RESULT_OR_ARTICLE` · `HR-5BD3902EC1BA8DCE` · [reports/operations/ignition-172-20260914-step05-function-routing.md](../../reports/operations/ignition-172-20260914-step05-function-routing.md)
 - **为什么产生：** 此来源记录了什么：IGNITION-172 Step05 — full function asset routing overlay？
 - **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** This logical step is based on the exact frozen parent 5030f1dd9e01a6530155e86c2120fb587b2c1146 on the existing Task172 branch and Draft PR 218.
+- **当前结果：** This logical step is based on the exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218.
 - **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
 - **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 - **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The merge recipe is machine-operational but lacks typed callable, effect and lifecycle contracts.](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
+  - 可搜索名称：NFC-c2c562d9bb01f690 / The merge recipe is machine-operational but lacks typed callable, effect and lifecycle contracts.
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [The multi-stage checkpoint-to-latent-to-generated-LoRA lifecycle makes provenance necessary, but the paper provides only](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-adeb4ef16a5192ad / The multi-stage checkpoint-to-latent-to-generated-LoRA lifecycle makes provenance necessary, but the paper provides only
@@ -2497,10 +2502,5 @@
 - [title: "维度回复非线性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-771E863CC6E190AC / title: "维度回复非线性函数" / IMPLICIT-771E863CC6E190AC
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "维度坐标化边界函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-5CE937404A223125 / title: "维度坐标化边界函数" / IMPLICIT-5CE937404A223125
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

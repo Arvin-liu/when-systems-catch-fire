@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [历史是否有规律？**（历史哲学）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c534dc2659df3717 / 历史是否有规律？**（历史哲学）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/\(1-p\)` 偏差敏感度评分。物理断言和评分函数分别处理。](../../ASSET-CARDS.md#asset-nfc-0b7defaef4efab24)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0b7defaef4efab24 / 历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/\(1-p\)` 偏差敏感度评分。物理断言和评分函数分别处理。 / - 历史笔记把 D260 与大一统不可能命题相连；formal main 中 D260 实际为 `p/\(1-p\)` 偏差敏感度评分。物理断言和评分函数分别处理。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-64f2c51406fee12a / 含义**: 084 完成了 353 个最高风险对象的语义裁决和证明义务定界，形成可作为项目现行真值覆盖层的决策 registry。这不等于完成 353 个数学证明、物理实验或经验验证。
   - 来源：`reports/foundation-architecture/084-architecture-truth-freeze-readiness.md`
   - 依赖：—；被引用：—
-- [吸引子-陷阱等价函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D468 / 吸引子-陷阱等价函数 / D468
-  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
-  - 依赖：D451, D467, D541；被引用：D469, CLAIM-D469, NFC-050b2d767dd0a4ee, NFC-284164118fdb63d1

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D318\]\( \) \| \[容斥主导尺度函数\]\( \) \| F_{D318}\(x\) := M5的容斥从可忽略变主导的临界尺度μ_c由max\(pᵢ](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ff6c2ab3c17106cc / \| \[D318\]\( \) \| \[容斥主导尺度函数\]\( \) \| F_{D318}\(x\) := M5的容斥从可忽略变主导的临界尺度μ_c由max\(pᵢ
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D293, D318；被引用：—
 - [\| \[D320\]\( \) \| \[容斥加速跨域标度函数\]\( \) \| F_{D320}\(x\) := M7的容斥加速度a_excl∝n²·σ²·](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-52f0595f79f3b82f / \| \[D320\]\( \) \| \[容斥加速跨域标度函数\]\( \) \| F_{D320}\(x\) := M7的容斥加速度a_excl∝n²·σ²·
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-ed8ed97b353575af / 与易混淆函数的区别：D467 是惯性结构，无「承认失效→主动刹车」；D603 的预测是「高执行+允许失效 → 可刹车」，D467 不提供此预测。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D467, D603；被引用：—
-- [与易混淆函数的区别：T40 是元协议层「决策权↔信息权对称」定理；D602 是具体组织情境中「价值创造权↔决策权错配与回收」的推论层函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ace62535baa0ba69 / 与易混淆函数的区别：T40 是元协议层「决策权↔信息权对称」定理；D602 是具体组织情境中「价值创造权↔决策权错配与回收」的推论层函数。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D602, T40；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [吸引子-陷阱等价函数](../../../FOUNDATION-64-PROPAGATION.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D468 / 吸引子-陷阱等价函数 / D468
+  - 来源：`FOUNDATION-64-PROPAGATION.jsonl`
+  - 依赖：D451, D467, D541；被引用：D469, CLAIM-D469, NFC-050b2d767dd0a4ee, NFC-284164118fdb63d1
 - [周期扰动阶段响应函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D322 / 周期扰动阶段响应函数 / D322
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-4f2904734c6174c4 / 数学表达 / Expression: `F_{D325}\(x\) := M12的僵尸态中自发涨落δg_eff∝√\(kT_eff/n\)。涨落踢出僵尸态的概率∝e^{-n\(g_critical-g_eff\)²/kT_eff}——n越大概率越小。小
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D325；被引用：—
-- [数学表达 / Expression: `F_{D326}\(x\) := M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/\(1+\(K^k-1\)·p_min/p_max\)，K^k·p_min≈p_max时饱和](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b8815b38abe32682 / 数学表达 / Expression: `F_{D326}\(x\) := M13的正反馈K^k饱和来自p_max的物理下界p_min>0。K^k有效值=K^k/\(1+\(K^k-1\)·p_min/p_max\)，K^k·p_min≈p_max时饱和
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D242, D312, D326；被引用：—
