@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-a5389454f9d903de"></a>
+## IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Step 15 通过。三篇完整文章、Book Project R1 和两篇成熟样章已经形成一个可继续人工编辑的出版组合；它们共享必要的证据边界，但没有把同一段论证拆成多个标题。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计；Step 15 通过。三篇完整文章、Book Project R1 和两篇成熟样章已经形成一个可继续人工编辑的出版组合；它们共享必要的证据边界，但没有把同一段论证拆成多个标题。；Book Project R1 已链接两篇样章，且素材—章节映射、四层证据策略和与既有十二章成果册的重复审计都已写入书籍项目。本步没有新增平行成果系统，也没有把样章或文章提升为外部真值、生产就绪、Owner 接受或 EPISTEMICALLYACCEPTED。；三篇文章的 checkeditorialquality.py 单文件检查均为 PASS：正文行数分别为 46、45、48；列表/表格比为 0、0、0.125；ID 主导段均为 0；均有来源与边界附录及来源链接。；validatefireseeds.py 通过：64 entries、64 clusters、40 条内容火种、24 条方法火种、393 个来源。；validatehumanvisibility.py 通过：25 个 Human Surface、14 个 machine/human pairs、20 个 two-click destinations。
+- 完整阅读：[reports/operations/ignition-143-step15-cross-publication-coherence.md](../../reports/operations/ignition-143-step15-cross-publication-coherence.md)
+
 <a id="reading-hr-a5759af803aebc01"></a>
 ## 数学地基规则
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：MF-0001~0005 是 Codespace 救援函数表中 Section 0 自举元函数（MF-0000）的 5 个内部子通道/判定器，在差异审计（codespace-rescue-two-tables-diff-audit-20260708.md）中被识别为救援函数表独有增量（救援 476 / 正式 612 / 重叠 471 / 救援独有 5）。复核报告（mf-0001-0005-rescue-review-20260708.md）确认： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：MF-0001~0005 补入审计记录（2026-07-08）；MF-0001~0005 是 Codespace 救援函数表中 Section 0 自举元函数（MF-0000）的 5 个内部子通道/判定器，在差异审计（codespace-rescue-two-tables-diff-audit-20260708.md）中被识别为救援函数表独有增量（救援 476 / 正式 612 / 重叠 471 / 救援独有 5）。复核报告（mf-0001-0005-rescue-review-20260708.md）确认：；正式函数表目录搜索 5 个关键词（正向自举通道/反向自举通道/正反互斥判定器/自举嵌套判定器/自举收敛判定器）全部 0 命中；；D141（0190-D141-自举元函数.md）仅对自身函数做正反向收敛检查，并未以独立条目或等价命名定义这 5 个内部子通道；；因此这 5 个是 MF-0000 的内部结构件，而非普通重复函数，具备独立结构价值，应补入 Section 0。；已迁移的历史函数来源/ 下新增 5 个独立条目（采用 0000- 前缀以归入 Section 0 内部层，不与 D/A/T 层编号撞车）：
 - 完整阅读：[outputs/audit/mf-0001-0005-integration-audit-20260708.md](../../outputs/audit/mf-0001-0005-integration-audit-20260708.md)
-
-<a id="reading-hr-ba75dd3140d0b0a0"></a>
-## IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: BASELINEREPRODUCED 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit；Status: BASELINEREPRODUCED；The refreshed control ref is Arvin-liu/1111:origin/relay/current@3fc8a329eb4f581d1940688046bdc16f4594417d. The isolated formal worktree starts from Arvin-liu/when-systems-catch-fire:main@517510aed545ff440c3464536ba2964c94e5f560 and was clean before the audit.；主题：Current path manifest；ignition/tools/foundation/validaterepositorypathclassification.py explicitly defines classification-manifest.jsonl as a generated snapshot of the deterministic live engine. Its --check mode compares the live Git path set to the committed manifest and fails closed on missing, stale, duplicate, category-drift, unresolved, and anti-backflow violations. The clea…；The observed baseline is:
-- 完整阅读：[reports/operations/ignition-134-step00-residual-archaeology.md](../../reports/operations/ignition-134-step00-residual-archaeology.md)

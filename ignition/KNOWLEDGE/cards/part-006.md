@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-4e1f3584adabcbab"></a>
+## IGNITION-20260824-138 — Step 00 Baseline Audit
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4E1F3584ADABCBAB` · [reports/operations/ignition-138-step00-baseline-audit.md](../../reports/operations/ignition-138-step00-baseline-audit.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260824-138 — Step 00 Baseline Audit？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The live control ref was refreshed before this task. origin/relay/current is 556dda03ec5019480e79d474910abe836f6f099e, which points to the IGNITION-138 task material at 6c7e01c5. The formal repository was fetched with --all --prune; its verified origin/main, remote refs/heads/main, and the new is…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-138-step00-baseline-audit.md`, `138-STEP00-BASELINE-AUDIT`
+- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260824-138 — Step 00 Baseline Audit`, `ignition-138-step00-baseline-audit`
+
 <a id="asset-hr-4e500eb8be311cb7"></a>
 ## 机制抽取（mechanism-extraction）
 
@@ -730,7 +750,7 @@
 - **身份/来源：** `RESULT_OR_ARTICLE` · `HR-5BD3902EC1BA8DCE` · [reports/operations/ignition-172-20260914-step05-function-routing.md](../../reports/operations/ignition-172-20260914-step05-function-routing.md)
 - **为什么产生：** 此来源记录了什么：IGNITION-172 Step05 — full function asset routing overlay？
 - **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** This logical step is based on the exact frozen parent 01201809e8229d770143261c5859e27a89070e3b on the existing Task172 branch and Draft PR 218.
+- **当前结果：** This logical step is based on the exact frozen parent 594bb7e53c367b7ee9c1e20b43796f4590503967 on the existing Task172 branch and Draft PR 218.
 - **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
 - **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 - **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-135 Step 02 — deterministic projection preflight`, `ignition-135-step02-projection-preflight`
-
-<a id="asset-hr-6106e26409ecfa79"></a>
-## 跨域 smoke test — 社会学碰撞报告
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-6106E26409ECFA79` · [outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md](../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
-- **为什么产生：** 此来源记录了什么：跨域 smoke test — 社会学碰撞报告？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** inputs/collisions/20260708-cross-domain-smoke-test/social.md（邻里积分制）
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D597`, `D173`, `D595`, `D94`
-- **来源与证据：** `outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`, `202`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `跨域 smoke test — 社会学碰撞报告`, `collision-report`

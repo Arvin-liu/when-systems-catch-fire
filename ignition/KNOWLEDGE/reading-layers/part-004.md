@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-44eb56d76a052dc0"></a>
+## IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The exact pushed Task140 Step15 tip 64b0ac92d343af9f1ba66d91123bf4ca5a5bb62a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3370 tracked paths and was clean before and aft… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate；主题：Fresh task-branch clone；The exact pushed Task140 Step15 tip 64b0ac92d343af9f1ba66d91123bf4ca5a5bb62a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3370 tracked paths and was clean before and after validation.；The clone passed the independent 25-check deterministic projection preflight: failedchecks=[], releaseadmission=true, sideeffectdetected=false, and the clean-tree gate passed. Its natural isolated full regression then completed with 1227 tests, 0 failures, 0 errors and 0 skips in 3032.893s runtime / 3034.208s elapsed. Python 3.14.6, SymPy 1.14.0, z3-solver 4…；The fresh-clone full-suite capture remains external to the formal repository:；stdout SHA-256: 97fa565750566bd885c5cd275f5ba6b2260282299d4174ec0cbcef287f2890e4;
+- 完整阅读：[reports/operations/ignition-140-step16-fresh-clone-publication.md](../../reports/operations/ignition-140-step16-fresh-clone-publication.md)
+
 <a id="reading-hr-45480c716d721c81"></a>
 ## 121Q25B Whole-Project Synchronization Contract
 `HISTORICAL_OR_SUPERSEDED_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q32 typed change-propagation impact report；Closure complete: true；Closure hash: 57b18c57dcefd521e9399be167f511017de785d8971af93177f25df8926ab7f1；Fixpoint iterations: 2；Seeds: aiguide, currentstate, historicalreports, iteration, iterationmanifestcontract, mcf, nol7, pagespipeline, projectcomponentregistry, propagationcalculator, propagationtopology, readme, summary, sync, systemmaplayout, systemmapprojection, usage；Resolved components: 19
 - 完整阅读：[reports/operations/121Q32-change-propagation-impact.md](../../reports/operations/121Q32-change-propagation-impact.md)
-
-<a id="reading-hr-57b8850420df5865"></a>
-## Migration and rollback
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Migration is additive. Old tables remain byte-identical. Roll back by removing generated foundation registries and views; no legacy content must be rewritten. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Migration and rollback；Migration is additive. Old tables remain byte-identical. Roll back by removing generated foundation registries and views; no legacy content must be rewritten.
-- 完整阅读：[reports/foundation-architecture/migration-and-rollback-20260712.md](../../reports/foundation-architecture/migration-and-rollback-20260712.md)

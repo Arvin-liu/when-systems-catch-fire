@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-d1de2bd2a70dc6c1"></a>
+## Adaptive Relational Network / 自适应关系网络
+`CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Status: candidate derived representation. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Adaptive Relational Network / 自适应关系网络；Status: candidate derived representation.；Adaptive Relational Network (ARN) represents heterogeneous, non-causal, multilayer, temporally activated and higher-order relations plus their perturbation and reconfiguration episodes. It is not a new truth layer and does not replace Foundation, Atlas, MCF, PSD, Function OS, Q12-Q14 or Charter Gate.；Network representation is not ontology.；Adjacency, similarity, centrality, community or embedding distance is not truth, value, importance or causality.；Causal claims delegate to MCF.
+- 完整阅读：[docs/architecture/adaptive-relational-network.md](../../docs/architecture/adaptive-relational-network.md)
+
 <a id="reading-hr-d1fa676bb432b571"></a>
 ## 跨域候选函数小批量回填审计
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The exact pushed Task141 task-branch tip 6f30c9aff2b64141d4a96e32a57deb64eb89b97a was independently cloned from the remote task branch. The fresh clone had 3436 tracked paths, no copied venv or cache, and passed the clean 25-check projection preflight. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260826-141 result；The exact pushed Task141 task-branch tip 6f30c9aff2b64141d4a96e32a57deb64eb89b97a was independently cloned from the remote task branch. The fresh clone had 3436 tracked paths, no copied venv or cache, and passed the clean 25-check projection preflight.；Its natural isolated full regression passed 1260 tests, 0 failures, 0 errors and 0 skips in 2948.043s runtime / 2949.650s elapsed. No watchdog, arbitrary timeout, process kill or generated-output drift occurred. The preflight and full-suite capture digests are recorded in IGNITION-20260826-141-machine-receipt.json.；No new live process was started. Canonical live history remains six attempts, zero validated completions, zero unreconciled attempts and two observation-incomplete records; the validated-completion obligation remains open and same-family retry remains unauthorized.；Formal main publication is an ordinary-fast-forward gate observed separately; this result does not self-witness its publication SHA or claim Owner, production-readiness, external-truth or epistemic acceptance.
 - 完整阅读：[agent-results/IGNITION-20260826-141-result.md](../../agent-results/IGNITION-20260826-141-result.md)
-
-<a id="reading-hr-e46a02fee84ab9b4"></a>
-## 121Q14 Dynamic Atlas Report
-`CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`
-- 1 分钟：Status: READYASDYNAMICATLASCANDIDATE 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q14 Dynamic Atlas Report；Status: READYASDYNAMICATLASCANDIDATE；121Q14 adds a versioned Ignition Atlas overlay. It projects existing repository matrices, registries, architecture, validation, sustainability, and operation surfaces into maps for declared observers and decision questions.；The atlas does not replace matrices or registries. It does not create a second canonical truth source. It does not create a permanent total map.；map-maintainer-sustainability-economics: shows retained maintainer judgment, rented AI/CI infrastructure, validator automation, sponsorship, commercial reciprocity, and hosting.；map-epistemic-architecture: shows Charter Gate, L0-L6, Function OS, Q12 dual loop, and Q13 controls as a structural landscape.
-- 完整阅读：[reports/atlas/121Q14-dynamic-atlas.md](../../reports/atlas/121Q14-dynamic-atlas.md)

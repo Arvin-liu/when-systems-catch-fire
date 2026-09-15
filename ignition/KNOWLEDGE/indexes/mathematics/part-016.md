@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [哥德尔不完备定理的边界（未完全厘清）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-165dd1159bdfa6cf / 哥德尔不完备定理的边界（未完全厘清）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族和当前模型失败都不是物理学 no-go theorem。未来若提出新的有界数学命题，必须重新定义模型类、统一、假设、量词、反例域和证明工件；它不能继承已撤回断言的结论权限。](../../../docs/physics_boundary.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-845cba7755cdf51e / 哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族和当前模型失败都不是物理学 no-go theorem。未来若提出新的有界数学命题，必须重新定义模型类、统一、假设、量词、反例域和证明工件；它不能继承已撤回断言的结论权限。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-49fad7cccb670cfa / 数学表达 / Expression: `F_{D333}\(x\) := M6的d_eff在4附近振荡时阻尼γ∝Σαᵢ/\(1-pᵢ\)²。γ>0衰减→d=4稳定吸引子；γ >0（强阻尼），社会系统γ≈0
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D333；被引用：—
-- [数学表达 / Expression: `F_{D335}\(x\) := M8的\(d_opt,σ_opt\)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（D306）。社](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-bf6f3e7c280a6047 / 数学表达 / Expression: `F_{D335}\(x\) := M8的\(d_opt,σ_opt\)平衡点在σ σ_opt时不稳定——过分散的系统无法自发回到最优配置。σ>σ_opt的恢复需要外部干预（D306）。社
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D306, D335；被引用：—

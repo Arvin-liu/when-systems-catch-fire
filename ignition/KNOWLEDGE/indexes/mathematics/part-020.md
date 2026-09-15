@@ -6,6 +6,11 @@
 
 - [调度-执行接口](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D131 / 调度-执行接口 / D131 / D132
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D180, D91；被引用：NFC-b8eb1e27aa77687b, NFC-ccfe54d4f43f74e1, NFC-e365de4964435a26
+- [调度-执行接口](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
   - 可搜索名称：D132 / 调度-执行接口 / D132 / D131
   - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
   - 依赖：D180, D91；被引用：NFC-15813a70a7079b93, NFC-5772f9a23a0b7e68, NFC-7ac3974d39edb380

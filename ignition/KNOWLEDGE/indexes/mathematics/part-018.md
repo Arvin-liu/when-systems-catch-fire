@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [犹豫域双向压缩](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_PENDING`
+  - 可搜索名称：D24 / 犹豫域双向压缩 / D24
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：A5, A7, D1, D90；被引用：NFC-19b4028d4f087db1, NFC-5f3a6b30a95b55bb, NFC-b15e0892af9aa66d
 - [犹豫域维度函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D73 / 犹豫域维度函数 / D73
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-27ad58f60d836d4c / 已迁移的历史函数来源/0322-D286-p--分布形态函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D286；被引用：—
-- [已迁移的历史函数来源/0323-D287-容斥主导实验签名函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-7c59f508952a7514 / 已迁移的历史函数来源/0323-D287-容斥主导实验签名函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D287；被引用：—

@@ -36,16 +36,16 @@
   },
   "knowledge_experience": {
     "manifest_counts": {
-      "aliases": 1405,
+      "aliases": 1407,
       "card_shards": 14,
-      "cards": 679,
-      "changes": 574,
-      "layer_shards": 12,
-      "layered_readings": 600,
-      "search_records": 24740,
+      "cards": 680,
+      "changes": 575,
+      "layer_shards": 13,
+      "layered_readings": 601,
+      "search_records": 24741,
       "subject_indexes": 60
     },
-    "layered_reading_source_origins": 600,
+    "layered_reading_source_origins": 601,
     "layered_reading_status_counts": {
       "CANDIDATE_OR_PENDING_SOURCE": 30,
       "CURRENT_CORRECTION_RECORD": 7,
@@ -53,7 +53,7 @@
       "CURRENT_SCOPED_SOURCE": 8,
       "HISTORICAL_COMPLETION_RECORD": 69,
       "HISTORICAL_OR_SUPERSEDED_SOURCE": 7,
-      "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE": 378
+      "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE": 379
     }
   },
   "candidate_count": 64,
@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "122720f04f63c5b0a4b39c0c386e2897008a44c4040dd8a9ec2c764bf4105ce0",
+      "source_sha256": "048c4b308434a450a34157d05a2dcc207de414086cb1c21c5a329f9417de9867",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2270,7 +2270,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "f03079f946619aa458703761759390566f5fb1095b0382ab39c9034e1091720c",
+      "source_sha256": "ef5d75dd0e9ab4332350c5b7c7bc8f5fb18069f6b9327604e8039e8f61716580",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2334,7 +2334,7 @@
       "title": "ASSET-CARDS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "27e04dca42b2eb01f0bfc10afb92a295b5bc8ffc67b8354ddfa520878868fcb4",
+      "source_sha256": "ed04422291b85fbdf576683f48302887adebda1e4eb23a5c2a17441cc065b9aa",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2347,7 +2347,7 @@
       "title": "COVERAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "82bd7d97af6ebcbb01ab580915ed222a6ba1e7f3bd20ac6c165148488c1a4125",
+      "source_sha256": "f810e2113d432f10e4a75cf8e9ad0d3e52abe11176693f9de5352278aaff6c55",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2373,7 +2373,7 @@
       "title": "MAP",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "6773609ea6450bda6ec35d2113c2ab7672f7c9f71c6a90486a9cf3a6655c6819",
+      "source_sha256": "7807d93606fe6445618fc64256b07e17183b416adeb221b41d38ee30cad0fa76",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2386,7 +2386,7 @@
       "title": "READING-LAYERS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "0bb4e6da7941b4bfe9baeba906396acb0d860edcdf1a420b70b34ccb6c9fb823",
+      "source_sha256": "12463271a9d6afee9bd15c6ff4ec9600a7fe8c197a399a9395873c9680aa1198",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2399,7 +2399,7 @@
       "title": "README",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "9f3a75e1bb0f8ed3531cd8a1b0051f24bf254e5c98b086efeff74e7f0b1a3807",
+      "source_sha256": "10b8482a5c337c2c063dc7e303841f340e9d89c633d1542e7a22246e76e7969f",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "CF-25",
@@ -2415,7 +2415,7 @@
       "title": "SEARCH",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "5ed088138fafa30db496b9c506934df878ace6daee954de0b79c3596ab0ccd1a",
+      "source_sha256": "d0780657fe334d98290b0c565f2cc7ee483aaacec64210a0dcb2345d4f60ce60",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2441,7 +2441,7 @@
       "title": "WHATS-NEW",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "63277de30a975781b84f8e3bc852ff93078b4ec85f1c8ff5d7ffd6a2ec02ab85",
+      "source_sha256": "092a4e00ed1ff3bd191d6165835ce41664bf5166e768673e2743a34d7c6b8ab3",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "INDEX_OR_GENERATED_PROJECTION",
@@ -2737,7 +2737,7 @@
       "title": "CHRONOLOGY",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "aa0e14c0b27b1227a0c164e125ee3a96d1e1d1126f79949a6de333f731c86c31",
+      "source_sha256": "3eda3e4cf2437e9121ae44cf8f6c2a3da922ca9ced4e8652b01ca40427b0abf3",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2750,7 +2750,7 @@
       "title": "CLAIM-DELTA",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "2fc34d040a1b4c352466da3976284050212d30e2bf3ec43ac803deaa2c73ecdc",
+      "source_sha256": "5696205f80088a32c8a49cb5c7fb20cea24b4a1c6be7c7a25012b04d505b8b07",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2780,7 +2780,7 @@
       "title": "EVIDENCE-LINEAGE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "fc2f0134575107536a65f272506080464feff7ed96db377a24fc028c84960bb9",
+      "source_sha256": "6130a662b7674e235b34ac64e06512b0efdc016dd6cb35715b82fc231633389d",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2793,7 +2793,7 @@
       "title": "IMPACT-ANALYSIS",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "76c876e2b7663314c1f2c414d05efb3f63436ec2f7217244db8bcaa10f96dd6b",
+      "source_sha256": "68a6864fe6ce2b8e2ed43024cda4cd11a3c3ea1ad18ba530c1d3f94061c986d2",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -2870,7 +2870,7 @@
       "title": "SELF-CORRECTION-AUDIT",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "f4d8d4e69c4ee6dcdbf61530bf5da376e0e24324e99229c8c093fea95672473e",
+      "source_sha256": "87e8178cce4c7c8d48d78263e4c6b8704808a84e8cd67de5e9feadb62960da35",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "CF-40",
@@ -2886,7 +2886,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "e8746cd6f5017b010d8f12b72d07e464f5a654777f2aedd6abfcf37e7c1bc5c5",
+      "source_sha256": "8c7ed46ca66cc29dc078529bf12a4e3bbff7b032676908703e2cdda47cd0bee6",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -3321,7 +3321,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "ebcd3519a04f5db780c7c968ad4311ea06f4d669fe1244a1cfb3e59592b486bb",
+      "source_sha256": "c3257c2b8c5d33369c72ed62029a9fae70078a968c528cd2a07c3b3bbcc0b408",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -4258,7 +4258,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "6408e540fe467cf6f3c5d6dfa8dd79b0e58c728d72782da7b79b4b0c5726f674",
+      "source_sha256": "11aa05d1c62be3280349ba319cb0264d36a66c72d9ec3fcaa5cc821f9460eb4f",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",
@@ -10563,7 +10563,7 @@
       "title": "IGNITION-172 Step05 — full function asset routing overlay",
       "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
       "subject": null,
-      "source_sha256": "7b0e72fc04175db7ae0ca8648cc5b9840e34ed445741dfe0f6cbbcf173c156f2",
+      "source_sha256": "9ef09d5fa08ceeeab852ae113796f16e5c672f4472d5bf8427f9ed63c08a59bd",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
@@ -10576,7 +10576,7 @@
       "title": "IGNITION-172 Step06 — full nonfunction claim routing overlay",
       "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
       "subject": null,
-      "source_sha256": "c74edc5bdc85eab5d7eeae3ef791ffb940f53bc48421ee7a6670d355729d67fc",
+      "source_sha256": "60507805fea40b2558761e3bbcfbe27135fdf59f03c3937599b92f6b288dab2f",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
@@ -10602,7 +10602,7 @@
       "title": "IGNITION-172 Step07 — Knowledge Experience routing index",
       "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
       "subject": null,
-      "source_sha256": "03ecfbe250b2f5ca726df3f40ee997c92d800bf9491bac580f3b8d4d5126fd2b",
+      "source_sha256": "a7569311ffbbdf342a842c0c50a2d3b0a01c772e14bcb3c7f25bf77e944cec4a",
       "disposition": "EXCLUDED_NONCONTENT",
       "seed_ids": [],
       "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
@@ -10831,6 +10831,19 @@
     },
     {
       "source_id": "ORIGIN-0648",
+      "source_path": "reports/operations/ignition-172-20260915-step09-field-58.md",
+      "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
+      "title": "Task172 Step09 field 58: PEDAGOGY",
+      "knowledge_status": "SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE",
+      "subject": null,
+      "source_sha256": "390cce152f2f3d6c2fae8edebc23a9c696a4025b83e0a6184fbd89229bf978e0",
+      "disposition": "EXCLUDED_NONCONTENT",
+      "seed_ids": [],
+      "review_basis": "EXECUTION_OR_RECEIPT_RECORD",
+      "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
+    },
+    {
+      "source_id": "ORIGIN-0649",
       "source_path": "reports/operations/ignition-172-step01-collision-audit.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260912-172 Step01 collision audit",
@@ -10843,7 +10856,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0649",
+      "source_id": "ORIGIN-0650",
       "source_path": "reports/operations/ignition-172-step02-route-review.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "IGNITION-20260912-172 Step02 route review",
@@ -10856,7 +10869,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0650",
+      "source_id": "ORIGIN-0651",
       "source_path": "reports/operations/lifecycle-audit-108.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）",
@@ -10869,7 +10882,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0651",
+      "source_id": "ORIGIN-0652",
       "source_path": "reports/publication/jin-rise-point-fire-analysis.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "1. 标题与机器可读前言",
@@ -10884,7 +10897,7 @@
       "review_note": "由正文继续阅读路径直接回链到内容或方法火种。"
     },
     {
-      "source_id": "ORIGIN-0652",
+      "source_id": "ORIGIN-0653",
       "source_path": "reports/publication/song-huizong-taoism-point-fire-analysis.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "任务 113：宋徽宗道教笔记的点火分析",
@@ -10897,7 +10910,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0653",
+      "source_id": "ORIGIN-0654",
       "source_path": "reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "认知迁移编辑修订：Owner 决定与独立审查入口",
@@ -10910,7 +10923,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0654",
+      "source_id": "ORIGIN-0655",
       "source_path": "reports/reality/121Q16-action-selection.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q16 Action Selection",
@@ -10923,7 +10936,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0655",
+      "source_id": "ORIGIN-0656",
       "source_path": "reports/reality/121Q16-sustainability-signal-pilot.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q16 Sustainability Signal Pilot",
@@ -10936,7 +10949,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0656",
+      "source_id": "ORIGIN-0657",
       "source_path": "reports/release/121Q10-emergent-state-license-finalization.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q10 Emergent Current State and License Text Finalization",
@@ -10949,7 +10962,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0657",
+      "source_id": "ORIGIN-0658",
       "source_path": "reports/release/121Q9-cumulative-baseline.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q9 Cumulative Baseline",
@@ -10962,7 +10975,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0658",
+      "source_id": "ORIGIN-0659",
       "source_path": "reports/release/121Q9-final-release-candidate.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q9 Final Release Candidate",
@@ -10975,7 +10988,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0659",
+      "source_id": "ORIGIN-0660",
       "source_path": "reports/release/121Q9-global-validation.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q9 Global Validation",
@@ -10988,7 +11001,7 @@
       "review_note": "执行、发布或审计收据；其内容边界已由相关人类入口承接。"
     },
     {
-      "source_id": "ORIGIN-0660",
+      "source_id": "ORIGIN-0661",
       "source_path": "reports/releases/121Q15-q12-q14-cumulative-preflight.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q15 Q12-Q14 Cumulative Preflight",
@@ -11001,7 +11014,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0661",
+      "source_id": "ORIGIN-0662",
       "source_path": "reports/research/121Q22-probability-systems-source-map.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q22 Probability and Systems Source Map",
@@ -11014,7 +11027,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0662",
+      "source_id": "ORIGIN-0663",
       "source_path": "reports/research/121Q23-network-theory-source-map.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "121Q23 Network Theory Source Map",
@@ -11027,7 +11040,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0663",
+      "source_id": "ORIGIN-0664",
       "source_path": "reports/research/reos-vnext-light-pilot-r1.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "REOS vNext LIGHT pilot R1 — public-safe synthesis",
@@ -11043,7 +11056,7 @@
       "review_note": "由正文继续阅读路径直接回链到内容或方法火种。"
     },
     {
-      "source_id": "ORIGIN-0664",
+      "source_id": "ORIGIN-0665",
       "source_path": "reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "Pointfire seven-track current-main maintenance integration R1",
@@ -11056,7 +11069,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0665",
+      "source_id": "ORIGIN-0666",
       "source_path": "新故事/0001-S1-比刀剑更持久的，是共享观念.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "比刀剑更持久的，是共享观念",
@@ -11069,7 +11082,7 @@
       "review_note": "已纳入本轮语料普查，但当前没有足够的新增人类入口增量。"
     },
     {
-      "source_id": "ORIGIN-0666",
+      "source_id": "ORIGIN-0667",
       "source_path": "新故事/INDEX.md",
       "source_kind": "KNOWLEDGE_EXPERIENCE_LAYERED_READING",
       "title": "新故事索引表（2026年07月06日03时06分，故事总数 1）",
@@ -11083,11 +11096,11 @@
     }
   ],
   "source_census_summary": {
-    "source_count": 666,
-    "knowledge_experience_source_origins": 600,
+    "source_count": 667,
+    "knowledge_experience_source_origins": 601,
     "supplemental_source_count": 66,
     "disposition_counts": {
-      "EXCLUDED_NONCONTENT": 262,
+      "EXCLUDED_NONCONTENT": 263,
       "MERGED_INTO_SEED": 24,
       "NO_SEED_DELTA": 341,
       "SEED_CREATED": 39

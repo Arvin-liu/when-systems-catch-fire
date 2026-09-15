@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-09324a8008a3bd3d"></a>
+## Codespace 救援两张表差异审计
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-09324A8008A3BD3D` · [outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md](../../outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md)
+- **为什么产生：** 此来源记录了什么：Codespace 救援两张表差异审计？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 两张表（函数总表 / 案例总表）本质上属于点火项目 Arvin-liu/when-systems-catch-fire 的核心资产，不应长期分裂到独立仓库维护。LIANGZHANGBIAO / Unified-Case-Table / Unified-Function-Table 仅作为 Codespace 救援缓存，不作为长期维护主线。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D141`, `D430`
+- **来源与证据：** `outputs/audit/codespace-rescue-two-tables-diff-audit-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Codespace 救援两张表差异审计`, `codespace-rescue-two-tables-diff-audit-20260708`
+
 <a id="asset-hr-094a86ef6aa2a143"></a>
 ## 任务 114 项目级语言—思维风险审计
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `元协议规范性审核（外部治理记录）`, `README`
-
-<a id="asset-hr-2605b1957ccb9e09"></a>
-## 两张表版本同步维护审计（2026-07-09 00:30）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-2605B1957CCB9E09` · [outputs/audit/two-tables-version-sync-audit-20260708.md](../../outputs/audit/two-tables-version-sync-audit-20260708.md)
-- **为什么产生：** 此来源记录了什么：两张表版本同步维护审计（2026-07-09 00:30）？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 符合任务「只有 README / 两张表入口文件 / INDEX·总览文件 / 审计文件 发生变化」的约束。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D595`, `D599`, `D596`, `D597`, `D598`
-- **来源与证据：** `outputs/audit/two-tables-version-sync-audit-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `两张表版本同步维护审计（2026-07-09 00:30）`, `two-tables-version-sync-audit-20260708`

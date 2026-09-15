@@ -583,6 +583,7 @@
     "reports/operations/ignition-172-20260915-step09-field-55.md": "2026-09-15",
     "reports/operations/ignition-172-20260915-step09-field-56.md": "2026-09-15",
     "reports/operations/ignition-172-20260915-step09-field-57.md": "2026-09-15",
+    "reports/operations/ignition-172-20260915-step09-field-58.md": "2026-09-15",
     "reports/operations/ignition-172-step00-baseline-audit.md": "2026-09-12",
     "reports/operations/ignition-172-step01-collision-audit.md": "2026-09-13",
     "reports/operations/ignition-172-step02-route-review.md": "2026-09-13",
@@ -604,7 +605,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 602,
+  "entry_count": 603,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-6b1889db66759f9d"></a>
+## IGNITION-20260827-142 Step 01 — Independent Task Terminality
+`HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Task141 is now explicitly COMPLETEDWITHOPENOBLIGATIONS and terminal=true. The formal lifecycle source records that its Step00–16 scope and publication are complete, while naming LIVEEXTERNALINVOCATION as an independently open obligation. CURRENTWITHOPENOBLIGATIONS and EPISTEMICALLYACCEPTED=0 rema… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-142 Step 01 — Independent Task Terminality；Task141 is now explicitly COMPLETEDWITHOPENOBLIGATIONS and terminal=true. The formal lifecycle source records that its Step00–16 scope and publication are complete, while naming LIVEEXTERNALINVOCATION as an independently open obligation. CURRENTWITHOPENOBLIGATIONS and EPISTEMICALLYACCEPTED=0 remain unchanged.；The new enum value is deliberately narrow. It does not redefine classified residual completion, and it does not close, validate, or otherwise weaken the open obligation. The validator enforces task scope/status terminality independently of obligation status; this is the first half of the decoupling.；The independent source is ignition/data/operations/formal-task-lifecycle-r1.json, validated by ignition/tools/validateformaltasklifecycle.py. Step 02 will add the separate obligation registry and carry-forward validator.
+- 完整阅读：[reports/operations/ignition-142-step01-terminality-semantics.md](../../reports/operations/ignition-142-step01-terminality-semantics.md)
+
 <a id="reading-hr-6c25b5c1573d9f0b"></a>
 ## Transition residual casebook
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：FederationRouter is a vendor-neutral selection boundary. It evaluates observable ExecutorDescriptor records against a data policy and an OS RoutingRequest in this order: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Federation Router R1；FederationRouter is a vendor-neutral selection boundary. It evaluates observable ExecutorDescriptor records against a data policy and an OS RoutingRequest in this order:；explicit Owner/Profile pin priority;；declared capability and policy permission ceiling;；approval/effect compatibility;；availability and health;
 - 完整阅读：[docs/architecture/federation-router-r1.md](../../docs/architecture/federation-router-r1.md)
-
-<a id="reading-hr-7dee237b2707a8c8"></a>
-## IGNITION-20260827-142 Step 09 — Codex Blocker Freeze
-`HISTORICAL_COMPLETION_RECORD` · `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The fresh public probe resolved codex-cli 0.144.4, received exit 0 from --version and exec --help, and observed public login-status exit 0. JSON, output-schema, ephemeral, read-only sandbox and user-config/rules isolation flags remain present. The existing Codex adapter, filesystem-domain repair… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260827-142 Step 09 — Codex Blocker Freeze；The fresh public probe resolved codex-cli 0.144.4, received exit 0 from --version and exec --help, and observed public login-status exit 0. JSON, output-schema, ephemeral, read-only sandbox and user-config/rules isolation flags remain present. The existing Codex adapter, filesystem-domain repair evidence and offline conformance harness support technical admi…；Technical admission is not live authorization. Task140's malformed-result record remains a real non-completion, but its exact instance-level root-cause closure is not established strongly enough to authorize a new same-family run. The explicit policy blocker TASK140ROOTCAUSENOTCONFIRMEDSAMEFAMILYRETRYFORBIDDEN is therefore retained. No Codex process or infer…；Machine evidence is ignition/data/operations/iterations/142/step09-codex-blocker-audit.json, validated by ignition/tools/validatetask142publicexecutoraudit.py.；Claim ceiling: technical re-attestation plus a no-blind-retry policy decision only; no live completion is claimed.
-- 完整阅读：[reports/operations/ignition-142-step09-codex-blocker-audit.md](../../reports/operations/ignition-142-step09-codex-blocker-audit.md)

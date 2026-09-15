@@ -17,7 +17,7 @@
     "function_authority": "2b5a83c0e5ffe5c8199d4d8fa831b5e15832c9559614ce21b9a3d643cf6f3c16",
     "gate_t_ledger": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f",
     "gate_t_parse": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a",
-    "nonfunction_authority": "20989eb2b19cc30415ef307b1257bb85b875cd8f89bbb5a1f297763a19091c1a"
+    "nonfunction_authority": "76024af0625b2d3250987af8551edd86de9f437d719329d9d4a25c2ad2f02d9d"
   },
   "live_retrieval": false,
   "manual_review_rows": 750,
@@ -27,7 +27,7 @@
     "precision_audit": "8b39a3505170172c9a25dea286efaab3d6a8ec31b529ff027eb81f193f23faf4",
     "precision_pilot": "b93fd6ee51be169946266609b0c013f849db773e9e456d0f1a6ec32926b50bb1",
     "routing_schema": "5ece3a3e3b22d080782485d27d0b46c45224b6fe035ba247095841a2d11fdb92",
-    "source_freeze": "d687072e073aae580dd4754dd88c2fc08e6e63ea3784a543f24b4b7d15ed99c3"
+    "source_freeze": "fd97972cf6b3c5a45ed7b8b90ec6fbd28fb5ae26e20162ecb88d0d926660aaf0"
   },
   "schema": "task172-gate-r-build-receipt-v1",
   "source_exact_head": "6d704d570827bf8d6ebb65fb65bcdd236056b4d3",
