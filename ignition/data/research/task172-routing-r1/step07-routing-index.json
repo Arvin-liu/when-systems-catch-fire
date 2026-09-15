@@ -389449,7 +389449,7 @@
         "HISTORICAL_CONTEXT"
       ],
       "routing_confidence": 0.85,
-      "source_record_sha": "95ba70759996f20eb2e755a8bd3ee5a0b4cb06ed97f63e9b3c9bbba0f33fdd97",
+      "source_record_sha": "838bbabb1faea1b462d896e9fe075c921a8c0f59d2d8fce1933cae6f0bf8fdc1",
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": [
@@ -424695,7 +424695,7 @@
         "HISTORICAL_CONTEXT"
       ],
       "routing_confidence": 0.0,
-      "source_record_sha": "d7029e6ff23a5c4c18c7c4785ca35d111a2262d68d48f32fb13f93c48bb34d5a",
+      "source_record_sha": "5c50744a738c5cfe650f640fe33130f1eaf12ac9573aecff1edbc8276b1f6318",
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": []
@@ -568807,7 +568807,7 @@
     "registry_write": false,
     "repository_mutation": false
   },
-  "source_exact_head": "dbfe98e2837dbf50ba893aa6a2f136323539209d",
+  "source_exact_head": "89d52640a5659796ae89e490261371a47d8c77f9",
   "source_overlays": [
     {
       "asset_kind": "FUNCTION_ASSET",
@@ -568819,7 +568819,7 @@
       "asset_kind": "NONFUNCTION_CLAIM",
       "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
       "rows": 17981,
-      "sha256": "27289fb1029c7bfc8a3ec77b16e63c513e4d23fe8baafccece65c20c7b6d46fc"
+      "sha256": "1061e8bacf46e27d5940bdacc4ae46145a8dfadb9b8dcb002c6dbe660aa09801"
     }
   ],
   "stats": {

@@ -6,7 +6,7 @@
   "index": {
     "path": "data/research/task172-routing-r1/step07-routing-index.json",
     "rows": 24138,
-    "sha256": "9b3aafadd78d6fbbdd254f9019f638adb9a1e446c3fc6ed0d53f916c159152e5"
+    "sha256": "8d1036a90f43c4b3a3a37b6c38f23be0d74936f8eecec7c949efc2f2276886e8"
   },
   "knowledge_entrypoints": {
     "human_tags": "KNOWLEDGE/TAGS.md",
@@ -22,7 +22,7 @@
     "sha256": "e172d2eab7d1a50c6ec29749afd4c93b70d869bc8b114d4b6733cefbb2bca949"
   },
   "registry_write": false,
-  "report_sha256": "b74fc5b3bd67b1550483310e20592182702282826d92f35e3b8a699b6e63bc1c",
+  "report_sha256": "e5dc1139de9275f89caa4a2edaf96fe91918453fc46cc6ab5fa89ecdf9afdabe",
   "repository_mutation": false,
   "required_sequence": [
     "derive bounded query facets",
@@ -32,7 +32,7 @@
     "report candidate universe, facet reasons, exact status and fallback warning"
   ],
   "schema": "task172-step07-routing-index-operation-v1",
-  "source_exact_head": "dbfe98e2837dbf50ba893aa6a2f136323539209d",
-  "source_freeze_sha256": "bebc30e0a005a9781412adf4b45e719ac08e7cda931e82ce2d4a97c55d6eaf57",
+  "source_exact_head": "89d52640a5659796ae89e490261371a47d8c77f9",
+  "source_freeze_sha256": "c63173eb85404c96dfe840cc6bb2055481e4b47fd3506bc3f7e524e10a29452e",
   "step": "Task172 Step07"
 }
