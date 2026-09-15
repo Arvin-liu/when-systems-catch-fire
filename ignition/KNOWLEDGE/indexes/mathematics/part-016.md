@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [四层不得互相替代。公式不等于证明，案例不等于定理，converged 不等于外部真实。](../../../docs/math-foundation/00-project-ontology.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f08f06618c52ba98 / 四层不得互相替代。公式不等于证明，案例不等于定理，converged 不等于外部真实。
+  - 来源：`docs/math-foundation/00-project-ontology.md`
+  - 依赖：—；被引用：—
 - [四种基本力统一 → **pending**（需要外部物理理论和实验验证）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-67429b31f87f1cc2 / 四种基本力统一 → **pending**（需要外部物理理论和实验验证）
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-9eac756dca572ce4 / 数学表达 / Expression: `F_{D369}\(x\) := M14的阻尼影响步长：高阻尼→步长小→决定慢但方向确定；低阻尼→步长大→决定快但方向随机。T_decision∝\|K_benign-α_exclusion\|·T_osc。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D369；被引用：—
-- [数学表达 / Expression: `F_{D370}\(x\) := M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar\(ΔΦᵢ\)。"坏消息成群来"不只预](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b348754575ba09a2 / 数学表达 / Expression: `F_{D370}\(x\) := M1的容斥交叉相关增强D342波动累积：交叉相关项Cov∝pᵢpⱼ使总方差增大→波动累积更严重。增强因子∝1+Σᵢ<ⱼpᵢpⱼ/ΣVar\(ΔΦᵢ\)。"坏消息成群来"不只预
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D342, D370；被引用：—

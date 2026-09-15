@@ -46,6 +46,13 @@
 - 5 分钟：形式语言：明确项、谓词、关系、量词、变量绑定和作用域。；默认核心：经典一阶逻辑只用于已声明的演绎核心，不扩张到不一致证据聚合。；非经典声明：构造、模态、时序、规范、概率、可废止逻辑必须显式选型。；推理类型：演绎、归纳、溯因、类比和因果推理分别记录，不把支持写成蕴涵。；条件检查：必要、充分、充要条件分别编码，禁止肯定后件。；反模型：无效演绎给出满足前提而使结论为假的具体模型与复现方式。
 - 完整阅读：[docs/foundation/logic/README.md](../../docs/foundation/logic/README.md)
 
+<a id="reading-hr-964dcdec208da025"></a>
+## Task172 Step09 field 32: MEDICAL SCIENCES
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 32: MEDICAL SCIENCES；Formal parent freeze: 145cdb68e46f46eb8413e073f986450e9bc64285；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 15；Selected metadata links: 120
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-32.md](../../reports/operations/ignition-172-20260915-step09-field-32.md)
+
 <a id="reading-hr-96ec40a0b9c9f87d"></a>
 ## Task172 Step09 field 22: PHYSICS
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：--- title: "点火框架经典问题测试" author: "之元" date: "2026-07-07" --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：任务：G，经典问题 benchmark 初稿；用途：测试点火框架在各学科经典问题上的结构增益、重述风险、失败风险和 pending 条件。；注意：本文是初稿，不代表经典问题 benchmark 已最终完成。原稿中存在计数待复核与待补条目，索引文档会单独标注。；2026-07-29 历史纠偏： 本文保留历史候选。哥德尔类比、不同能标或门控模型失败不支持物理学或数学问题的“不可能”结论；涉及四力统一和量子引力的条目只能保持开放问题/候选类比，现行权威见 docs/foundation/physics-asset-correction-20260729.md。；--- title: "点火框架经典问题测试" author: "之元" date: "2026-07-07" ---；收到。现在开始执行任务 G：经典问题 benchmark 初稿。
 - 完整阅读：[outputs/getbrain/classic-problems-benchmark-draft-20260706.md](../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-
-<a id="reading-hr-a904c867936c20d9"></a>
-## OS Control Plane R2 gap audit — IGNITION-20260817-124
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The existing Supervisor R0 was run with two dependency-ready children, ready-a and ready-b, whose write targets do not overlap. Both were accepted and the episode reached EPISODECOMPLETEDVALIDATED, but the trace was strictly ready-a → ready-b and the maximum observed concurrency was 1. The curren… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：OS Control Plane R2 gap audit — IGNITION-20260817-124；主题：Baseline identity；Formal repository: Arvin-liu/when-systems-catch-fire；Execution baseline: origin/main=266426d7110af9ee921a020a46c3a0347aa364e9；Control source: Arvin-liu/1111, origin/relay/current=c06c556cf6e98e8d4f0b004a8c15cd19a64b3cae；Task branch: codex/ignition-124-os-control-plane-r2-20260817
-- 完整阅读：[reports/architecture/os-control-plane-r2-gap-audit.md](../../reports/architecture/os-control-plane-r2-gap-audit.md)

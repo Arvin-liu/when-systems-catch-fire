@@ -714,6 +714,8 @@
 - [IGNITION-20260827-142 Step 19 — Publication transaction and terminal state](./reading-layers/part-008.md#reading-hr-95778013d10e2cf0) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-95f4d0b3d4dd2b7d"></a>
 - [逻辑地基规则](./reading-layers/part-008.md#reading-hr-95f4d0b3d4dd2b7d) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+<a id="reading-hr-964dcdec208da025"></a>
+- [Task172 Step09 field 32: MEDICAL SCIENCES](./reading-layers/part-008.md#reading-hr-964dcdec208da025) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-96ec40a0b9c9f87d"></a>
 - [Task172 Step09 field 22: PHYSICS](./reading-layers/part-008.md#reading-hr-96ec40a0b9c9f87d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-97478cb8dceeba3a"></a>
@@ -801,7 +803,7 @@
 <a id="reading-hr-a8550987d2a41dab"></a>
 - [经典问题 benchmark 卡片：黎曼猜想](./reading-layers/part-008.md#reading-hr-a8550987d2a41dab) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-a904c867936c20d9"></a>
-- [OS Control Plane R2 gap audit — IGNITION-20260817-124](./reading-layers/part-008.md#reading-hr-a904c867936c20d9) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- [OS Control Plane R2 gap audit — IGNITION-20260817-124](./reading-layers/part-009.md#reading-hr-a904c867936c20d9) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-a932eb17267d9709"></a>
 - [之元写作法](./reading-layers/part-009.md#reading-hr-a932eb17267d9709) — `CURRENT_SCOPED_SOURCE` · `WRITING_PUBLICATION`
 <a id="reading-hr-a9335c325605b8e4"></a>
@@ -901,7 +903,7 @@
 <a id="reading-hr-bd43dc0d8b91689f"></a>
 - [回填计划 · P1 接入烟雾测试](./reading-layers/part-009.md#reading-hr-bd43dc0d8b91689f) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bd65d2af1b1afed8"></a>
-- [IGNITION-128 Step 00 — Current-State semantic audit](./reading-layers/part-009.md#reading-hr-bd65d2af1b1afed8) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- [IGNITION-128 Step 00 — Current-State semantic audit](./reading-layers/part-010.md#reading-hr-bd65d2af1b1afed8) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bda837b6080acf95"></a>
 - [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](./reading-layers/part-010.md#reading-hr-bda837b6080acf95) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-be4be8d31cea1114"></a>
@@ -1001,7 +1003,7 @@
 <a id="reading-hr-d4b5c8e581f06e23"></a>
 - [Pilot Formal Audit](./reading-layers/part-010.md#reading-hr-d4b5c8e581f06e23) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d5166569c3ff6750"></a>
-- [抽取审计](./reading-layers/part-010.md#reading-hr-d5166569c3ff6750) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- [抽取审计](./reading-layers/part-011.md#reading-hr-d5166569c3ff6750) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d5d49675f693ee46"></a>
 - [Sensitivity versus mutation-generator diagnosis — IGNITION-20260907-164](./reading-layers/part-011.md#reading-hr-d5d49675f693ee46) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-d5ef84223f92b8ef"></a>
@@ -1101,7 +1103,7 @@
 <a id="reading-hr-e7d18e3a634ad513"></a>
 - [Governance report: IGNITION-20260907-161](./reading-layers/part-011.md#reading-hr-e7d18e3a634ad513) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-e7d89c150adba4ae"></a>
-- [IGNITION-20260824-137 — Step 07 Independent OS Validation R2](./reading-layers/part-011.md#reading-hr-e7d89c150adba4ae) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- [IGNITION-20260824-137 — Step 07 Independent OS Validation R2](./reading-layers/part-012.md#reading-hr-e7d89c150adba4ae) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-e7e1eaa5ed0b5e25"></a>
 - [Agent Platform R2 gap audit — IGNITION-20260816-121 Step 00](./reading-layers/part-012.md#reading-hr-e7e1eaa5ed0b5e25) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-e815f8ad25cfc77e"></a>

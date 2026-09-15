@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-f3d97a665e74558a"></a>
+## 迭代生命周期模型（事件溯源 · 任务 108 引入）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-F3D97A665E74558A` · [docs/operations/lifecycle-readme.md](../../docs/operations/lifecycle-readme.md)
+- **为什么产生：** 此来源记录了什么：迭代生命周期模型（事件溯源 · 任务 108 引入）？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 本目录与 data/operations/ 下的生命周期文件定义了点火仓库的迭代终态模型。 它在任务 108 中取代"一行可变终态记录"的循环模型，改为追加式、事件溯源的不可变事件 + 不可伪造标注终端 tag。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/operations/lifecycle-readme.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-08-01: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `迭代生命周期模型（事件溯源 · 任务 108 引入）`, `lifecycle-readme`
+
 <a id="asset-hr-f3fa077147eb3592"></a>
 ## IGNITION-20260828-144 Step 19 — terminal engineering closure
 

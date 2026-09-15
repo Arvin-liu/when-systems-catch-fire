@@ -1,6 +1,6 @@
 # IGNITION-172 Step07 — Knowledge Experience routing index
 
-This logical step is based on exact frozen parent `f576b166d1ff2d7e76d6348cd6152b9145dc9860` on the existing Task172 branch and Draft PR #218.
+This logical step is based on exact frozen parent `145cdb68e46f46eb8413e073f986450e9bc64285` on the existing Task172 branch and Draft PR #218.
 
 - The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.
 - Coverage: 6157 function records + 17981 nonfunction records = 24138 routing records.

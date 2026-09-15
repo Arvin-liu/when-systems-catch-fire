@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-9be719cb6ef0fd88"></a>
+## Attention And Attractor Control Plane
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-9BE719CB6EF0FD88` · [docs/architecture/attention-attractor-control-plane.md](../../docs/architecture/attention-attractor-control-plane.md)
+- **为什么产生：** 此来源记录了什么：Attention And Attractor Control Plane？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** Status: 121Q13CONTROLOVERLAY
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/architecture/attention-attractor-control-plane.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `Attention And Attractor Control Plane`, `attention-attractor-control-plane`
+
 <a id="asset-hr-9bf38326d66a104a"></a>
 ## 两张表条目模板固化审计
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `历史创造性不连续性回放 — IGNITION-20260908-165`, `historical-creative-discontinuity-replay-2026-09-08`
-
-<a id="asset-hr-aee11399d5cfd399"></a>
-## 跨域 smoke test — 跨域同构汇总
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-AEE11399D5CFD399` · [outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md](../../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
-- **为什么产生：** 此来源记录了什么：跨域 smoke test — 跨域同构汇总？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 验证「不同领域材料 → 统一两张表」流程是否跑得通，并确认框架能否识别跨域同构。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D597`, `D94`
-- **来源与证据：** `outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md`, `202`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `跨域 smoke test — 跨域同构汇总`, `cross-domain-synthesis`

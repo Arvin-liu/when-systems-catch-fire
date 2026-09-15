@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：政治认同经退出权验证但经济认同未建立 关键发现：第4步部分跑通 English: Rule-based English r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d76f77e6490e734d / 从这条案例看，中文：案例说明：政治认同经退出权验证但经济认同未建立 关键发现：第4步部分跑通 English: Rule-based English r… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：教学相长的共生外部注入——师生互为外部注入打破各自的死锁。核心函数：\[D166\]\(docs/zh/functions/it… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-28935b40fbbc050f / 从这条案例看，中文：案例说明：教学相长的共生外部注入——师生互为外部注入打破各自的死锁。核心函数：\[D166\]\(docs/zh/functions/it… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-44f83dab43a98977 / 原始命题: D228已修正T33，从"冲突"升级为"必要张力"。D225是T33修正的数学论证。已对撞，无新发现。 **扩展注释 / Extended Annotation**
   - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
   - 依赖：D225, D228, T33；被引用：—
-- [原始命题: g=exp\[-\(ln\(μ/M_Planck\)\)²/\(2σ²\)\]，A-B型统一、极值点处量子涨落自然为零 **扩展注释 / Extended Annotation**](../../../reports/math-foundation/pilot-formal-audit-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ee0c3f96d5e0bd98 / 原始命题: g=exp\[-\(ln\(μ/M_Planck\)\)²/\(2σ²\)\]，A-B型统一、极值点处量子涨落自然为零 **扩展注释 / Extended Annotation**
-  - 来源：`reports/math-foundation/pilot-formal-audit-20260712.md`
-  - 依赖：—；被引用：—

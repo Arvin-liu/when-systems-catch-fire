@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-bd65d2af1b1afed8"></a>
+## IGNITION-128 Step 00 — Current-State semantic audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Formal baseline: origin/main@681f86d79b1112af3c07e0f8091335860c237ef2. Control source: 1111 relay/current@3b6d27441395492cf633e53d3d1e985d0b2ec933. The formal main fetch and baseline equality check passed before this audit. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-128 Step 00 — Current-State semantic audit；Formal baseline: origin/main@681f86d79b1112af3c07e0f8091335860c237ef2. Control source: 1111 relay/current@3b6d27441395492cf633e53d3d1e985d0b2ec933. The formal main fetch and baseline equality check passed before this audit.；The search covered repository text and machine records for DEFERREDPENDINGREBASE, Task 125, IGNITION-125, Task 127, IGNITION-127, DEFERREDREBASEDINTO127, and COMPLETEDWITHCLASSIFIEDRESIDUALS. It recorded 24 old pending-status hits, 22 Task 125 hits, 5 IGNITION-125 hits, 57 Task 127 hits, and 4 IGNITION-127 hits.；Only four Human/AI Current entry surfaces still state the stale pending status: ignition/docs/project-current-state.md, ignition/AI-START-HERE.md, ignition/AI-HANDOFF.md, and ignition/llms.txt. The homepage, current identity, current-facts and map surfaces contain the R3 identity but need to be checked against the new canonical task-lineage/status source.；The Task 126 progress/receipt, Task 127 audit/progress/receipt, append-only STATE-CHANGELOG.md, and generated Knowledge/Foundation projections are explicitly preserved. Their old wording is historical source evidence or a derived projection, not permission to describe the same state as Current. The unrelated historical IGNITION-125 follow-up queue/report is…；The full path-level classification is recorded in ignition/data/operations/iterations/128/step00-audit-ledger.json.
+- 完整阅读：[reports/operations/ignition-128-step00-current-state-audit.md](../../reports/operations/ignition-128-step00-current-state-audit.md)
+
 <a id="reading-hr-bda837b6080acf95"></a>
 ## IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Pmeta2(x) := Symmetry(Decision(x), Information(x)) 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Pilot Formal Audit；076 correction notice: this is a preserved 075 heuristic pilot, not an object-level proof audit. Its 110 selections mix A/MF/T/high-risk D/normal D and the first 12 BC candidates, omit Ψ₀/Y1 and all PEND claims, and are not the same statistical population as the 714-row ledger. “类型错误” and “反例信号” below are keyword triggers; none satisfies the replayable count…；判定维度：对象类型、定义域/值域占位、变量/单位、散文伪公式、类型错误、反例、案例-证明混淆、框架内收敛误写为外部真理。；主题：A1 I(t,L) 提议者意识 / I(t,L) proposer awareness；原始命题: 提议者是否有意识，二值变量。不可推导，作为框架起点。 扩展注释 / Extended Annotation；原始来源: PRIVATE_PROVENANCE_WITHHELD
 - 完整阅读：[reports/math-foundation/pilot-formal-audit-20260712.md](../../reports/math-foundation/pilot-formal-audit-20260712.md)
-
-<a id="reading-hr-d5166569c3ff6750"></a>
-## 抽取审计
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：元协议文件（1902 内）：12 篇（V1–V4 / S1–S4 / E1–E4 各 1）；22 本候选是否全部映射到最终收敛报告：是（22/22）；未分配 C 编号：是（formalcaseid 全为 null）
-- 完整阅读：[outputs/book-collisions/20260709-22-book-validation/extraction-audit.md](../../outputs/book-collisions/20260709-22-book-validation/extraction-audit.md)

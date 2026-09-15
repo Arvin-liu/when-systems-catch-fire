@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-d5166569c3ff6750"></a>
+## 抽取审计
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：元协议文件（1902 内）：12 篇（V1–V4 / S1–S4 / E1–E4 各 1）；22 本候选是否全部映射到最终收敛报告：是（22/22）；未分配 C 编号：是（formalcaseid 全为 null）
+- 完整阅读：[outputs/book-collisions/20260709-22-book-validation/extraction-audit.md](../../outputs/book-collisions/20260709-22-book-validation/extraction-audit.md)
+
 <a id="reading-hr-d5d49675f693ee46"></a>
 ## Sensitivity versus mutation-generator diagnosis — IGNITION-20260907-164
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df43… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Governance report: IGNITION-20260907-161；Task IGNITION-20260907-161 is a research-only prospective comparison. The controlling specification is Arvin-liu/1111/agent-commands/IGNITION-20260907-161.md at command commit 59003ae23c56a2f0c4ac6389d5235c938cd5f5fd, blob 610febea27a1e4cb62d9c32da4b19a9113a243ec, complete content SHA-256 9f1df434d39aa379fac5eb2254b250530720e994176526da3c971ee0e84d06de. Form…；The exact primary verdict is IGNITION-20260907-161. Formal review remains Draft only. The synthetic threshold candidate verdict is FIRSTCLASSTRANSITIONSEMANTICSSUPPORTEDASRESEARCHCANDIDATE, while the epistemic validity status is DETECTORNOTVALIDATED.；This branch is not Ready, merged, Current, canonical, production-validated, or Owner-accepted.；主题：Evidence pointers；Command source: https://github.com/Arvin-liu/1111/blob/59003ae23c56a2f0c4ac6389d5235c938cd5f5fd/agent-commands/IGNITION-20260907-161.md
 - 完整阅读：[reports/governance/task-IGNITION-20260907-161.md](../../reports/governance/task-IGNITION-20260907-161.md)
-
-<a id="reading-hr-e7d89c150adba4ae"></a>
-## IGNITION-20260824-137 — Step 07 Independent OS Validation R2
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：LiveIndependentValidator now accepts an executor result only in RETURNEDUNVALIDATED state and emits a separate ignition-137-independent-validation-receipt-r2. That receipt binds the task, dispatch, attempt, executor, adapter, capability-lease digest, workspace reference and before/after digests,… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260824-137 — Step 07 Independent OS Validation R2；LiveIndependentValidator now accepts an executor result only in RETURNEDUNVALIDATED state and emits a separate ignition-137-independent-validation-receipt-r2. That receipt binds the task, dispatch, attempt, executor, adapter, capability-lease digest, workspace reference and before/after digests, result digest, executor receipt digest, and its own validator r…；Validation independently checks lease integrity/freshness, permission intersection, strict four-key output, the fixture's recomputed answer, unchanged workspace, read-only/no-forbidden external surface evidence, receipt integrity, and exact child depth one. A validation PASS is possible only after every check passes; executor PASS text or exit code alone can…；Targeted tests passed: 13 tests / 0 failures / 0 errors / 0 skips. Stale lease, forged/wrong/copy-reused result, wrong workspace, and executor substitution fixtures all fail closed.；Claim ceiling: this is an independent synthetic validator contract. It does not itself prove that a real external process has run.
-- 完整阅读：[reports/operations/ignition-137-step07-independent-os-validation-r2.md](../../reports/operations/ignition-137-step07-independent-os-validation-r2.md)

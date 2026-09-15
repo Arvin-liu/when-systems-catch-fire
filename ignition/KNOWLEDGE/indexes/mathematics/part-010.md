@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 慢性-急性消耗比较函数 is adjudicated as RELATION: M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢性低消耗×高不](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D380 / Within the source-defined scope, 慢性-急性消耗比较函数 is adjudicated as RELATION: M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢性低消耗×高不
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 慢性消耗-波动累积同构检验 is adjudicated as RELATION: M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D394 / Within the source-defined scope, 慢性消耗-波动累积同构检验 is adjudicated as RELATION: M11的D380与D342不同构——D342是时间域累积效应，D380是频率域穿透效应。但
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-1f3e5d51beb02e43 / \| \[D349\]\( \) \| \[过分散相图函数\]\( \) \| F_{D349}\(x\) := M8的σ>σ_opt时系统进入"维度饥渴"状态——需要更多维
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D349；被引用：—
-- [\| \[D34\]\( \) \| \[充分条件三层函数\]\( \) \| F_{D34}\(x\) := P_sustain = I × \(1-Posture_deg\)](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5cec8da646cc9646 / \| \[D34\]\( \) \| \[充分条件三层函数\]\( \) \| F_{D34}\(x\) := P_sustain = I × \(1-Posture_deg\)
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D34；被引用：—

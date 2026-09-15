@@ -2079,6 +2079,11 @@
   - 可搜索名称：Task172 Step09 field 31: AGRICULTURAL SCIENCES / ignition-172-20260915-step09-field-31
   - 来源：`reports/operations/ignition-172-20260915-step09-field-31.md`
   - 依赖：—；被引用：—
+- [Task172 Step09 field 32: MEDICAL SCIENCES](../../ASSET-CARDS.md#asset-hr-964dcdec208da025)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task172 Step09 field 32: MEDICAL SCIENCES / ignition-172-20260915-step09-field-32
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-32.md`
+  - 依赖：—；被引用：—
 - [Task:** `IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731`](../../../docs/foundation/task-107-incident-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-337b55cb63f246c6 / Task:** `IGNITION-FOUNDATION-DRIFT-REPAIR-UNIVERSAL-DISCOVERY-PREFLIGHT-AND-PROPAGATION-CI-PROOF-R1-20260731`
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-0f42c004e74378bc / The plane is not L7 or a truth-functional logic.
   - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [The plane keeps public probes, transport wrappers, live-process lifecycle,](../../../docs/architecture/external-agent-federation-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-25cf70384dbe9483 / The plane keeps public probes, transport wrappers, live-process lifecycle,
-  - 来源：`docs/architecture/external-agent-federation-r1.md`
   - 依赖：—；被引用：—

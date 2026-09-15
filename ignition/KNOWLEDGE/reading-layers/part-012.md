@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e7d89c150adba4ae"></a>
+## IGNITION-20260824-137 — Step 07 Independent OS Validation R2
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：LiveIndependentValidator now accepts an executor result only in RETURNEDUNVALIDATED state and emits a separate ignition-137-independent-validation-receipt-r2. That receipt binds the task, dispatch, attempt, executor, adapter, capability-lease digest, workspace reference and before/after digests,… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260824-137 — Step 07 Independent OS Validation R2；LiveIndependentValidator now accepts an executor result only in RETURNEDUNVALIDATED state and emits a separate ignition-137-independent-validation-receipt-r2. That receipt binds the task, dispatch, attempt, executor, adapter, capability-lease digest, workspace reference and before/after digests, result digest, executor receipt digest, and its own validator r…；Validation independently checks lease integrity/freshness, permission intersection, strict four-key output, the fixture's recomputed answer, unchanged workspace, read-only/no-forbidden external surface evidence, receipt integrity, and exact child depth one. A validation PASS is possible only after every check passes; executor PASS text or exit code alone can…；Targeted tests passed: 13 tests / 0 failures / 0 errors / 0 skips. Stale lease, forged/wrong/copy-reused result, wrong workspace, and executor substitution fixtures all fail closed.；Claim ceiling: this is an independent synthetic validator contract. It does not itself prove that a real external process has run.
+- 完整阅读：[reports/operations/ignition-137-step07-independent-os-validation-r2.md](../../reports/operations/ignition-137-step07-independent-os-validation-r2.md)
+
 <a id="reading-hr-e7e1eaa5ed0b5e25"></a>
 ## Agent Platform R2 gap audit — IGNITION-20260816-121 Step 00
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -91,8 +98,8 @@
 <a id="reading-hr-ecb9a4b8ee1483ca"></a>
 ## IGNITION-172 Step07 — Knowledge Experience routing index
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on exact frozen parent f576b166d1ff2d7e76d6348cd6152b9145dc9860 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent f576b166d1ff2d7e76d6348cd6152b9145dc9860 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17981 nonfunction records = 24138 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 1 分钟：This logical step is based on exact frozen parent 145cdb68e46f46eb8413e073f986450e9bc64285 on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 145cdb68e46f46eb8413e073f986450e9bc64285 on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6157 function records + 17981 nonfunction records = 24138 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
 - 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
 
 <a id="reading-hr-ecc4e92db835c50c"></a>

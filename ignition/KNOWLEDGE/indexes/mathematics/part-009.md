@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "群体智能函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FD1424D514090A7C / title: "群体智能函数" / IMPLICIT-FD1424D514090A7C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "群体智能函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1dc4bf4f318b7895 / title: "群体智能函数"
@@ -2499,8 +2504,3 @@
   - 可搜索名称：CLAIM-D243 / Within the source-defined scope, 感知退出权瓶颈函数 is adjudicated as RELATION: P_exit = f\(ε_aware, C_exit, R_perceived\)（D9展开） AI
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：D9；被引用：—
-- [Within the source-defined scope, 慢性-急性消耗比较函数 is adjudicated as RELATION: M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢性低消耗×高不](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D380 / Within the source-defined scope, 慢性-急性消耗比较函数 is adjudicated as RELATION: M11的慢性vs急性：总危险度=消耗量×不可重建性。急性高消耗×低不可重建性；慢性低消耗×高不
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—

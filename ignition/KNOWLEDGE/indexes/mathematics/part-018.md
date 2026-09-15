@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [理由：经全量查重，函数表无「指标替代真实价值」等价机制；D244 实际与指标化无关，原查重假设不成立；NF-002 提供清晰新增因果结构（C 维度通过），可稳定收敛（M 通过），无同构（I_iso 通过）。](../../../outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-059607c1aa857458 / 理由：经全量查重，函数表无「指标替代真实价值」等价机制；D244 实际与指标化无关，原查重假设不成立；NF-002 提供清晰新增因果结构（C 维度通过），可稳定收敛（M 通过），无同构（I_iso 通过）。
+  - 来源：`outputs/audit/nf-002-quantified-metric-backfill-audit-20260708.md`
+  - 依赖：D244；被引用：—
 - [理由：经全量查重，函数表无「群体钝化稳态」等价机制；D364/D423 为通用不可逆判据，与 NF-004 弱同构但不重复；NF-004 提供清晰新增因果结构（C 维度通过），可稳定收敛（M 通过），边界清晰（I_iso 通过）。上一轮复核](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-06b6c8200512de4a / 理由：经全量查重，函数表无「群体钝化稳态」等价机制；D364/D423 为通用不可逆判据，与 NF-004 弱同构但不重复；NF-004 提供清晰新增因果结构（C 维度通过），可稳定收敛（M 通过），边界清晰（I_iso 通过）。上一轮复核
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-fcdfb40b53d4660b / 已迁移的历史函数来源/0331-D295-正反馈不可逆点函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D295；被引用：—
-- [已迁移的历史函数来源/0332-D296-Φ近似阶数选择函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-aa5629e8f5bc2245 / 已迁移的历史函数来源/0332-D296-Φ近似阶数选择函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D296；被引用：—
