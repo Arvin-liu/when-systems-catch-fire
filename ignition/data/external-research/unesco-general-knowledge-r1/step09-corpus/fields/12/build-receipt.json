@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 11,
+    "global_links_after_field": 136,
+    "global_physical_records_after_field": 136,
+    "new_physical_records": 88,
+    "selected_links": 88
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "12",
+  "field_label": "MATHEMATICS",
+  "formal_parent_head": "8e231b6ab54804f8a80cc8a5230f45932176ceb9",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "c9f019db2c296ef5725813d27247cb5fd24d7c271961c7c6ac8bf0baa1265ae0",
+    "field_admission": "e0dc4d94ebd9e3d8394604f711fc32f44f6679d4921697c456830bad3c530832",
+    "manifest": "fa406173d5b3566448a600baa0d2f31072d5b61c3e011f3d426b93d538e15fb5",
+    "operation": "15550cbf8e48b5515e0b38d012049c83f2943e373499b20d530736e6f719c4f5",
+    "physical_records": "8fb8e67d17c6a8f49cf81d74b2ec14106b7dd859ba24876dc75d2ab169468c7a",
+    "report": "a3324ff548729d191e50c0198741561f4f9d7d9f63367b76a50f4d59c3fe9947",
+    "source_freeze": "151b2a8cb7b6ed553ded9fe5ebc3295853caee6cb53295546b14b63f89d2e0df"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "151b2a8cb7b6ed553ded9fe5ebc3295853caee6cb53295546b14b63f89d2e0df",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}
