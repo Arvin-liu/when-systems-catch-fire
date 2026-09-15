@@ -9,7 +9,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This logical step is based on exact frozen parent c0e58f64d07f3fee3389593d4d90426c7ddfe71e on the existing Task172 branch and Draft PR 218.
+- **变化：** This logical step is based on exact frozen parent 6eebc5337eb8e586c2ba88731eb7c508a5dac24b on the existing Task172 branch and Draft PR 218.
 - **来源：** [ignition-172-20260915-step07-routing-index.md](../reports/operations/ignition-172-20260915-step07-routing-index.md)
 - **资产卡：** [HR-ECB9A4B8EE1483CA](./ASSET-CARDS.md#asset-hr-ecb9a4b8ee1483ca)
 
@@ -166,6 +166,15 @@
 - **来源：** [ignition-172-20260915-step09-field-56.md](../reports/operations/ignition-172-20260915-step09-field-56.md)
 - **资产卡：** [HR-3B8D996F1E9886E9](./ASSET-CARDS.md#asset-hr-3b8d996f1e9886e9)
 
+<a id="change-src-hr-13e9b3b4578e1c4d"></a>
+### 2026-09-15 · Task172 Step09 field 63: SOCIOLOGY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-63.md](../reports/operations/ignition-172-20260915-step09-field-63.md)
+- **资产卡：** [HR-13E9B3B4578E1C4D](./ASSET-CARDS.md#asset-hr-13e9b3b4578e1c4d)
+
 <a id="change-src-hr-0d982954aa1aa3e9"></a>
 ### 2026-09-15 · Task172 Step09 field 11: LOGIC
 
@@ -207,7 +216,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This logical step is based on the exact frozen parent c0e58f64d07f3fee3389593d4d90426c7ddfe71e on the existing Task172 branch and Draft PR 218.
+- **变化：** This logical step is based on the exact frozen parent 6eebc5337eb8e586c2ba88731eb7c508a5dac24b on the existing Task172 branch and Draft PR 218.
 - **来源：** [ignition-172-20260914-step06-nonfunction-routing.md](../reports/operations/ignition-172-20260914-step06-nonfunction-routing.md)
 - **资产卡：** [HR-BC0FD3372F5D0546](./ASSET-CARDS.md#asset-hr-bc0fd3372f5d0546)
 
@@ -225,7 +234,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This logical step is based on the exact frozen parent c0e58f64d07f3fee3389593d4d90426c7ddfe71e on the existing Task172 branch and Draft PR 218.
+- **变化：** This logical step is based on the exact frozen parent 6eebc5337eb8e586c2ba88731eb7c508a5dac24b on the existing Task172 branch and Draft PR 218.
 - **来源：** [ignition-172-20260914-step05-function-routing.md](../reports/operations/ignition-172-20260914-step05-function-routing.md)
 - **资产卡：** [HR-5BD3902EC1BA8DCE](./ASSET-CARDS.md#asset-hr-5bd3902ec1ba8dce)
 

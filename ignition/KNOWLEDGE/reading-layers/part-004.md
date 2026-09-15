@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-44878ef802b3ea38"></a>
+## Codex Adapter R1
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- 1 分钟：Codex is integrated as an external coding executor through its observed public codex exec --json JSONL surface. The adapter assembles literal argv with: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Codex Adapter R1；Codex is integrated as an external coding executor through its observed public codex exec --json JSONL surface. The adapter assembles literal argv with:；read-only is the default federation sandbox. A workspace-write adapter instance must be constructed explicitly; the adapter never uses --dangerously-bypass-approvals-and-sandbox or bypasses hook trust. The effective permission is the intersection of the Ignition envelope, OS policy, Codex sandbox and Codex approval policy. A deny on any boundary cannot be ex…；JSONL events are reduced to public progress, a bounded final summary and an optional pointer-only codex-thread-id. Prompt, hidden reasoning, token usage and Codex internal history are not imported into OS state. Codex's completion event maps to COMPLETEDUNVALIDATED; the receipt remains REQUIRESRECONCILIATION until Ignition validators establish evidence.；Step 06 intentionally used a captured JSONL fixture and injected runner. LIVESMOKENOTRUN: this task is already executing in Codex, so no nested Codex invocation was allowed to modify a formal repository.；Official CLI reference: .
+- 完整阅读：[docs/architecture/codex-adapter-r1.md](../../docs/architecture/codex-adapter-r1.md)
+
 <a id="reading-hr-44a1c398c470bbf4"></a>
 ## 121Q28S 之元写作法 0.3.0 全项目整合审计
 `CANDIDATE_OR_PENDING_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Live138CompletionValidator was deliberately not run for attempt-138-live-02. The host tool did not leave a recoverable structured result, return code, lease receipt, or durable output capture. Reconstructing the frozen answer would not turn it into an external executor result, so no synthetic res… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260824-138 — Amendment 01 independent validation gate；Live138CompletionValidator was deliberately not run for attempt-138-live-02. The host tool did not leave a recoverable structured result, return code, lease receipt, or durable output capture. Reconstructing the frozen answer would not turn it into an external executor result, so no synthetic result was passed to the validator.；LIVEREADONLYVALIDATEDCOMPLETION=false and LIVEEXTERNALINVOCATION=REMAINSOPEN. This is a negative evidence record, not a child-failure classification.；Claim ceiling: independent validation not run because the required durable structured result was absent; no external truth, production readiness, Owner acceptance, publication, or epistemic acceptance is inferred.
 - 完整阅读：[reports/operations/ignition-138-step10-amendment-01-independent-validation.md](../../reports/operations/ignition-138-step10-amendment-01-independent-validation.md)
-
-<a id="reading-hr-575fd55d43af78d9"></a>
-## External Agent Federation Core R1
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The federation core is a vendor-neutral socket between the Ignition OS and an external executor. ExecutorDescriptor describes observable compatibility; FederatedTaskEnvelope carries OS-owned goal, policy, workspace, validation, budget and handoff rules; FederatedProgressEvent carries public order… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：External Agent Federation Core R1；The federation core is a vendor-neutral socket between the Ignition OS and an external executor. ExecutorDescriptor describes observable compatibility; FederatedTaskEnvelope carries OS-owned goal, policy, workspace, validation, budget and handoff rules; FederatedProgressEvent carries public ordered progress; FederatedResultReceipt carries claims plus indepen…；ExternalSessionRef is always pointeronly. An executor's internal history, prompt, hidden reasoning, token usage, memory database or session UI is not canonical Ignition state. Receipt digests cover the unsigned public record and are checked during construction and replay.；The typed records live in agentfederation/contracts.py. The public record schema is federation-core-r1.schema.json. The FederatedExecutor protocol only asks for probe, describe, dispatch, status, cancel and optional-capability resume; it does not prescribe an internal agent loop.
-- 完整阅读：[docs/architecture/federation-core-r1.md](../../docs/architecture/federation-core-r1.md)

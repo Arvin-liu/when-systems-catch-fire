@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-fcbaa498cbeb783c"></a>
+## 080 Resume Instructions
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：080 Resume Instructions；branch: records/ignition-080-full-semantic-adjudication-20260713；status: PARTIALRESUMABLESOURCETEXTADJUDICATION；nextpendingstableid: T13；nextpendingbatch: 2；queuefile: data/foundation/work-queues/080-semantic-review-queue.jsonl
+- 完整阅读：[reports/foundation-architecture/080-resume-instructions-20260713.md](../../reports/foundation-architecture/080-resume-instructions-20260713.md)
+
 <a id="reading-hr-fd1a98871b9b5c54"></a>
 ## Next basis assessment — Task163
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`

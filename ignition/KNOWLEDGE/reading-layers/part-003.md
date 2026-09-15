@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-30fdf00cdb08a566"></a>
+## 休眠问题池与再激活 — IGNITION-20260908-165
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：休眠问题池与再激活 — IGNITION-20260908-165；命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32fb2df 边界：研究只、Draft 只；不改变 Current、canonical、生产运行时、validator 或 Own…；休眠池记录数：120。池中每条记录保留来源路径、blob、源行号和原始未解决标记；本任务没有把问题改写成干净的待办或补齐缺失答案。；运行了 full、active-only、休眠相关性排序和休眠低分随机四种消融。结果只报告 L2/L3 结构代理计数，不宣称注意力、记忆或大脑因果。
+- 完整阅读：[docs/governance/dormant-question-pool-and-reactivation-2026-09-08.md](../../docs/governance/dormant-question-pool-and-reactivation-2026-09-08.md)
+
 <a id="reading-hr-314d6d340fda2a7b"></a>
 ## IGNITION-20260822-134 Step 07 — Human Surface fingerprint refresh
 `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：--- title: "证据制度库初稿生成" author: "之元" date: "2026-07-07" --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：范围：数学、物理学、历史学、社会科学、经济学、工程学、医学、法学、文学、艺术、教育学、AI / 计算机科学；用途：定义不同学科命题成立标准、推荐断言等级、pending 条件和高风险边界。；注意：本文是证据制度库初稿，不代表已经完成所有 UNESCO 学科的证据制度细化。；2026-07-29 历史纠偏： 本文为保留的历史初稿。其“结构性边界推论”用语不得用于恢复已撤回的“大一统普遍不可能”断言；现行断言治理与 M/E 双轴见 docs/foundation/claim-governance-and-function-identity.md。；--- title: "证据制度库初稿生成" author: "之元" date: "2026-07-07" ---；收到。现在开始执行任务 E：证据制度库初稿。
 - 完整阅读：[outputs/getbrain/evidence-regime-library-draft-20260706.md](../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
-
-<a id="reading-hr-44878ef802b3ea38"></a>
-## Codex Adapter R1
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
-- 1 分钟：Codex is integrated as an external coding executor through its observed public codex exec --json JSONL surface. The adapter assembles literal argv with: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Codex Adapter R1；Codex is integrated as an external coding executor through its observed public codex exec --json JSONL surface. The adapter assembles literal argv with:；read-only is the default federation sandbox. A workspace-write adapter instance must be constructed explicitly; the adapter never uses --dangerously-bypass-approvals-and-sandbox or bypasses hook trust. The effective permission is the intersection of the Ignition envelope, OS policy, Codex sandbox and Codex approval policy. A deny on any boundary cannot be ex…；JSONL events are reduced to public progress, a bounded final summary and an optional pointer-only codex-thread-id. Prompt, hidden reasoning, token usage and Codex internal history are not imported into OS state. Codex's completion event maps to COMPLETEDUNVALIDATED; the receipt remains REQUIRESRECONCILIATION until Ignition validators establish evidence.；Step 06 intentionally used a captured JSONL fixture and injected runner. LIVESMOKENOTRUN: this task is already executing in Codex, so no nested Codex invocation was allowed to modify a formal repository.；Official CLI reference: .
-- 完整阅读：[docs/architecture/codex-adapter-r1.md](../../docs/architecture/codex-adapter-r1.md)
