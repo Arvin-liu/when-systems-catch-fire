@@ -34,7 +34,7 @@
   ],
   "formal_pre_freeze": {
     "branch": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
-    "head": "594bb7e53c367b7ee9c1e20b43796f4590503967",
+    "head": "42181c77898b012980e4bc9265e7ac4db127ab41",
     "pull_request": 218,
     "state": "OPEN + DRAFT + unmerged"
   },

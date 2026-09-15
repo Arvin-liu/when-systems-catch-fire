@@ -326,6 +326,8 @@
 - [121Q22 Probability and System Dynamics Gap Audit](./reading-layers/part-004.md#reading-hr-48973e3aa76b6fae) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-4910d221a74d1112"></a>
 - [E2 规范性审核 - 非线性演化协议 \(Nonlinear-Evolution Protocol\)](./reading-layers/part-004.md#reading-hr-4910d221a74d1112) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+<a id="reading-hr-4915734264bb9de0"></a>
+- [Task172 Step09 field 59: POLITICAL SCIENCE](./reading-layers/part-004.md#reading-hr-4915734264bb9de0) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-49b7518940381732"></a>
 - [Semantic Leap Detector V2 \(Task159\)](./reading-layers/part-004.md#reading-hr-49b7518940381732) — `CURRENT_SCOPED_SOURCE` · `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-49dd491e1cd0cf42"></a>
@@ -401,7 +403,7 @@
 <a id="reading-hr-5797c2119cce6faa"></a>
 - [Task172 Step09 field 33: TECHNOLOGICAL SCIENCES](./reading-layers/part-004.md#reading-hr-5797c2119cce6faa) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-57b4f559431d6912"></a>
-- [121Q32 typed change-propagation impact report](./reading-layers/part-004.md#reading-hr-57b4f559431d6912) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- [121Q32 typed change-propagation impact report](./reading-layers/part-005.md#reading-hr-57b4f559431d6912) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-57b8850420df5865"></a>
 - [Migration and rollback](./reading-layers/part-005.md#reading-hr-57b8850420df5865) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-589863c3bd7ff8fd"></a>
@@ -501,7 +503,7 @@
 <a id="reading-hr-6a9b73c834a5af36"></a>
 - [IGNITION-20260823-136 — Live External Executor Bridge R1](./reading-layers/part-005.md#reading-hr-6a9b73c834a5af36) — `HISTORICAL_COMPLETION_RECORD` · `COGNITION`
 <a id="reading-hr-6af7b035edaef185"></a>
-- [IGNITION-20260826-140 Step 02 — Task139 architecture-impact correction](./reading-layers/part-005.md#reading-hr-6af7b035edaef185) — `CURRENT_CORRECTION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- [IGNITION-20260826-140 Step 02 — Task139 architecture-impact correction](./reading-layers/part-006.md#reading-hr-6af7b035edaef185) — `CURRENT_CORRECTION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-6b1889db66759f9d"></a>
 - [IGNITION-20260827-142 Step 01 — Independent Task Terminality](./reading-layers/part-006.md#reading-hr-6b1889db66759f9d) — `HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-6c25b5c1573d9f0b"></a>
@@ -601,7 +603,7 @@
 <a id="reading-hr-7d4413587f58d270"></a>
 - [扩展注释 · P1 接入烟雾测试](./reading-layers/part-006.md#reading-hr-7d4413587f58d270) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-7dd95da5201b6ec1"></a>
-- [Federation Router R1](./reading-layers/part-006.md#reading-hr-7dd95da5201b6ec1) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- [Federation Router R1](./reading-layers/part-007.md#reading-hr-7dd95da5201b6ec1) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-7dee237b2707a8c8"></a>
 - [IGNITION-20260827-142 Step 09 — Codex Blocker Freeze](./reading-layers/part-007.md#reading-hr-7dee237b2707a8c8) — `HISTORICAL_COMPLETION_RECORD` · `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-7dfd6b8ed7333b2a"></a>
@@ -701,7 +703,7 @@
 <a id="reading-hr-9099adc0ce6c7e7c"></a>
 - [IGNITION-20260815-120 typed change-propagation impact report](./reading-layers/part-007.md#reading-hr-9099adc0ce6c7e7c) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-90ed509023725da0"></a>
-- [IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock](./reading-layers/part-007.md#reading-hr-90ed509023725da0) — `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- [IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock](./reading-layers/part-008.md#reading-hr-90ed509023725da0) — `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-91e80e0c69fb56f2"></a>
 - [认识论结构诱导（ESI）R0](./reading-layers/part-008.md#reading-hr-91e80e0c69fb56f2) — `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-91f57f34641602bd"></a>
@@ -801,7 +803,7 @@
 <a id="reading-hr-a5172a2b53cec20b"></a>
 - [Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS](./reading-layers/part-008.md#reading-hr-a5172a2b53cec20b) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-a53421dea2f6cdca"></a>
-- [099 Function Asset Registry Closure](./reading-layers/part-008.md#reading-hr-a53421dea2f6cdca) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- [099 Function Asset Registry Closure](./reading-layers/part-009.md#reading-hr-a53421dea2f6cdca) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-a5389454f9d903de"></a>
 - [IGNITION-20260827-143 Step 15 — 跨出版成果一致性审计](./reading-layers/part-009.md#reading-hr-a5389454f9d903de) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-a5759af803aebc01"></a>
@@ -901,7 +903,7 @@
 <a id="reading-hr-b7cf68ed12ba8b82"></a>
 - [两张表单条条目结构审计与统一模板草案](./reading-layers/part-009.md#reading-hr-b7cf68ed12ba8b82) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-b9ed64291673acbc"></a>
-- [MF-0001~0005 补入审计记录（2026-07-08）](./reading-layers/part-009.md#reading-hr-b9ed64291673acbc) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- [MF-0001~0005 补入审计记录（2026-07-08）](./reading-layers/part-010.md#reading-hr-b9ed64291673acbc) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ba75dd3140d0b0a0"></a>
 - [IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit](./reading-layers/part-010.md#reading-hr-ba75dd3140d0b0a0) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 <a id="reading-hr-bab21171893c54e0"></a>
@@ -1001,7 +1003,7 @@
 <a id="reading-hr-d0d9de18fd9e9bde"></a>
 - [085: 084 Truth Status Correction](./reading-layers/part-010.md#reading-hr-d0d9de18fd9e9bde) — `CURRENT_CORRECTION_RECORD` · `SYSTEMS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d17946ac354300d6"></a>
-- [IGNITION-143 Resume Capsule](./reading-layers/part-010.md#reading-hr-d17946ac354300d6) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- [IGNITION-143 Resume Capsule](./reading-layers/part-011.md#reading-hr-d17946ac354300d6) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-d1de2bd2a70dc6c1"></a>
 - [Adaptive Relational Network / 自适应关系网络](./reading-layers/part-011.md#reading-hr-d1de2bd2a70dc6c1) — `CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-d1fa676bb432b571"></a>
@@ -1101,7 +1103,7 @@
 <a id="reading-hr-e323136676310783"></a>
 - [IGNITION-20260828-144 Step 18 — formal main publication transaction](./reading-layers/part-011.md#reading-hr-e323136676310783) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-e3529305643dda11"></a>
-- [IGNITION-20260826-141 result](./reading-layers/part-011.md#reading-hr-e3529305643dda11) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
+- [IGNITION-20260826-141 result](./reading-layers/part-012.md#reading-hr-e3529305643dda11) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
 <a id="reading-hr-e46a02fee84ab9b4"></a>
 - [121Q14 Dynamic Atlas Report](./reading-layers/part-012.md#reading-hr-e46a02fee84ab9b4) — `CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`
 <a id="reading-hr-e4827916294ebf56"></a>
@@ -1201,6 +1203,6 @@
 <a id="reading-hr-fd61253709a198c4"></a>
 - [Agent result: IGNITION-20260907-162](./reading-layers/part-012.md#reading-hr-fd61253709a198c4) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
 <a id="reading-hr-fd9206bee6e7782d"></a>
-- [学科理论核卡片：物理学](./reading-layers/part-012.md#reading-hr-fd9206bee6e7782d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- [学科理论核卡片：物理学](./reading-layers/part-013.md#reading-hr-fd9206bee6e7782d) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 <a id="reading-hr-ffcc6d11834eee16"></a>
 - [IGNITION-20260828-146 result](./reading-layers/part-013.md#reading-hr-ffcc6d11834eee16) — `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`

@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-fd9206bee6e7782d"></a>
+## 学科理论核卡片：物理学
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `PHYSICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：--- title: "学科理论核试跑" author: "之元" date: "2026-07-06" --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：任务：D，UNESCO 学科理论核二次细化试跑；用途：验证“学科理论核卡片”模板是否可用于后续学科深跑。；注意：本文是三门学科的试跑样本，不代表已经完成 UNESCO 36 大类、24 位、4 位或 5260 学科全量细化。；2026-07-29 历史纠偏： 本文为保留的得到大脑历史输出，其中把“物理大一统不可能”改称“结构性边界推论”的处理已被 task 98 撤回。现行权威是 docs/foundation/physics-asset-correction-20260729.md：当前门控模型未完成四力统一，物理问题保持开放，局部模型失败不推出普遍不可能。；--- title: "学科理论核试跑" author: "之元" date: "2026-07-06" ---；收到。现在开始执行任务 D：UNESCO 学科理论核二次细化试跑（物理学、数学、历史学三门学科）。
+- 完整阅读：[outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md](../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+
 <a id="reading-hr-ffcc6d11834eee16"></a>
 ## IGNITION-20260828-146 result
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`

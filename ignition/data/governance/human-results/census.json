@@ -5,12 +5,12 @@
     "ARTICLE_OR_PUBLICATION": 13,
     "EXTERNAL_RESEARCH": 27,
     "FOUNDATION_AND_ADJUDICATION": 73,
-    "ITERATION_AND_AUDIT": 218,
+    "ITERATION_AND_AUDIT": 219,
     "OTHER_REPOSITORY_RESULT": 229
   },
   "claim_ceiling": "Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.",
-  "human_records": 603,
+  "human_records": 604,
   "schema_version": "1.0.0",
   "snapshot_date": "2026-07-29",
-  "source_documents": 603
+  "source_documents": 604
 }
