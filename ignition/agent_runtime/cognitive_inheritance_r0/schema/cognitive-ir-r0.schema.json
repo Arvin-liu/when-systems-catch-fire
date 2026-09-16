@@ -119,6 +119,7 @@
       "additionalProperties": false,
       "required": [
         "stable_id",
+        "schema_version",
         "object_type",
         "label",
         "content",
@@ -131,6 +132,7 @@
       ],
       "properties": {
         "stable_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9:._-]+$"},
+        "schema_version": {"const": "cognitive-ir-r0"},
         "object_type": {
           "enum": [
             "OBJECT",
@@ -165,9 +167,10 @@
     "relation": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["stable_id", "relation_type", "from", "to", "provenance", "uncertainty", "claim_boundary"],
+      "required": ["stable_id", "schema_version", "relation_type", "from", "to", "provenance", "uncertainty", "claim_boundary"],
       "properties": {
         "stable_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9:._-]+$"},
+        "schema_version": {"const": "cognitive-ir-r0"},
         "relation_type": {
           "enum": [
             "SUPPORTS",

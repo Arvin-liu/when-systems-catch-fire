@@ -38,6 +38,7 @@
     "objects": [
       {
         "stable_id": "ir:b:model:task172-freeze",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "COGNITIVE_MODEL",
         "label": "Task172 operational freeze frame",
         "content": {"frame": "dependency-ordered repository derivation with scan input freeze and exact-head acceptance"},
@@ -50,6 +51,7 @@
       },
       {
         "stable_id": "ir:b:failure:future-capability-boundary",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "FAILURE",
         "label": "Future capability work lacks an independent evaluation boundary",
         "content": {"failure": "A repository freeze can demonstrate structural closure without specifying how an independent evaluator will test successor reconstruction or continuation."},
@@ -62,6 +64,7 @@
       },
       {
         "stable_id": "ir:b:observation:scan-freeze",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "OBSERVATION",
         "label": "Scan-sensitive inputs were frozen before official generators",
         "content": {"freeze_status": "FINAL_SCAN_INPUT_FREEZE_RECORDED", "business_source_head": "03a2b33cced830418cc310a59b519fca8d10f2fa", "next_generation_work_started": false},
@@ -74,6 +77,7 @@
       },
       {
         "stable_id": "ir:b:method:dependency-ordered-fixed-point",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "METHOD",
         "label": "Dependency-ordered fixed-point closure",
         "content": {"steps": ["freeze scan inputs", "run official dependency-ordered generators", "rerun to second-run no diff", "verify exact head CI", "verify clean clone"], "replayable": true},
@@ -86,6 +90,7 @@
       },
       {
         "stable_id": "ir:b:evidence:exact-head-ci",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "EVIDENCE",
         "label": "Exact-head CI and clean-clone evidence",
         "content": {"baseline_exact_head": "68565f2afb50989d2c2b0d346d774e3388702743", "workflows": 7, "all_success": true, "clean_clone": true, "fixed_point": true, "run_ids": [35072438208, 35072438199, 35072438216, 35072438207, 35072438251, 35072438222, 35072438232]},
@@ -98,6 +103,7 @@
       },
       {
         "stable_id": "ir:b:boundary:no-capability-inheritance",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "BOUNDARY",
         "label": "Pre-capability-inheritance ceiling",
         "content": {"claim_ceiling": "Frozen pre-capability-inheritance repository comparison baseline only; no capability inheritance, RSI, MetaRSI, self-training, truth, evidence, or epistemic acceptance is asserted."},
@@ -110,6 +116,7 @@
       },
       {
         "stable_id": "ir:b:unknown:cognitive-transfer",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "UNKNOWN",
         "label": "Cognitive transfer from baseline is unknown",
         "content": {"unknown": "Whether a successor can select and apply the frozen method in a new bounded task without hidden builder context."},
@@ -122,10 +129,10 @@
       }
     ],
     "relations": [
-      {"stable_id": "ir:b:rel:failure-triggered-transition", "relation_type": "TRIGGERED_TRANSITION", "from": {"stable_id": "ir:b:failure:future-capability-boundary", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:b:method:dependency-ordered-fixed-point", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step13-final-freeze.json"], "source_kind": "DERIVED_OBSERVATION", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "R0 boundary"}, "uncertainty": {"status": "OBSERVED", "confidence": 0.8, "basis": ["transition record"], "open_questions": []}, "claim_boundary": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["failure motivates explicit boundary"], "forbidden_inferences": ["failure proves capability"]}},
-      {"stable_id": "ir:b:rel:method-tested-by-evidence", "relation_type": "TESTED_BY", "from": {"stable_id": "ir:b:method:dependency-ordered-fixed-point", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:b:evidence:exact-head-ci", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["https://github.com/Arvin-liu/when-systems-catch-fire/pull/218"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "seven workflow runs"}, "uncertainty": {"status": "SUPPORTED", "confidence": 1.0, "basis": ["run records"], "open_questions": []}, "claim_boundary": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["mechanical method evidence"], "forbidden_inferences": ["independent cognitive evaluation"]}},
-      {"stable_id": "ir:b:rel:baseline-bounded", "relation_type": "BOUNDED_BY", "from": {"stable_id": "ir:b:model:task172-freeze", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:b:boundary:no-capability-inheritance", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step13-final-freeze.json"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-15", "locator": "claim_ceiling"}, "uncertainty": {"status": "KNOWN", "confidence": 1.0, "basis": ["explicit ceiling"], "open_questions": []}, "claim_boundary": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["baseline boundary"], "forbidden_inferences": ["inheritance success"]}},
-      {"stable_id": "ir:b:rel:transfer-unknown", "relation_type": "UNKNOWN_RELATION", "from": {"stable_id": "ir:b:unknown:cognitive-transfer", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:b:model:task172-freeze", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json"], "source_kind": "UNKNOWN", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "independent evaluation pending"}, "uncertainty": {"status": "UNKNOWN", "confidence": null, "basis": ["not evaluated"], "open_questions": ["transfer fidelity"]}, "claim_boundary": {"authority_status": "UNKNOWN", "allowed_claims": ["unknown relation retained"], "forbidden_inferences": ["unknown is success"]}}
+      {"stable_id": "ir:b:rel:failure-triggered-transition", "schema_version": "cognitive-ir-r0", "relation_type": "TRIGGERED_TRANSITION", "from": {"stable_id": "ir:b:failure:future-capability-boundary", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:b:method:dependency-ordered-fixed-point", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step13-final-freeze.json"], "source_kind": "DERIVED_OBSERVATION", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "R0 boundary"}, "uncertainty": {"status": "OBSERVED", "confidence": 0.8, "basis": ["transition record"], "open_questions": []}, "claim_boundary": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["failure motivates explicit boundary"], "forbidden_inferences": ["failure proves capability"]}},
+      {"stable_id": "ir:b:rel:method-tested-by-evidence", "schema_version": "cognitive-ir-r0", "relation_type": "TESTED_BY", "from": {"stable_id": "ir:b:method:dependency-ordered-fixed-point", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:b:evidence:exact-head-ci", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["https://github.com/Arvin-liu/when-systems-catch-fire/pull/218"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "seven workflow runs"}, "uncertainty": {"status": "SUPPORTED", "confidence": 1.0, "basis": ["run records"], "open_questions": []}, "claim_boundary": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["mechanical method evidence"], "forbidden_inferences": ["independent cognitive evaluation"]}},
+      {"stable_id": "ir:b:rel:baseline-bounded", "schema_version": "cognitive-ir-r0", "relation_type": "BOUNDED_BY", "from": {"stable_id": "ir:b:model:task172-freeze", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:b:boundary:no-capability-inheritance", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step13-final-freeze.json"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-15", "locator": "claim_ceiling"}, "uncertainty": {"status": "KNOWN", "confidence": 1.0, "basis": ["explicit ceiling"], "open_questions": []}, "claim_boundary": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["baseline boundary"], "forbidden_inferences": ["inheritance success"]}},
+      {"stable_id": "ir:b:rel:transfer-unknown", "schema_version": "cognitive-ir-r0", "relation_type": "UNKNOWN_RELATION", "from": {"stable_id": "ir:b:unknown:cognitive-transfer", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:b:model:task172-freeze", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json"], "source_kind": "UNKNOWN", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "independent evaluation pending"}, "uncertainty": {"status": "UNKNOWN", "confidence": null, "basis": ["not evaluated"], "open_questions": ["transfer fidelity"]}, "claim_boundary": {"authority_status": "UNKNOWN", "allowed_claims": ["unknown relation retained"], "forbidden_inferences": ["unknown is success"]}}
     ],
     "transition_refs": [{"stable_id": "transition-b-engineering-baseline-r0", "ref_kind": "TRANSITION"}],
     "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step13-final-freeze.json", "https://github.com/Arvin-liu/when-systems-catch-fire/pull/218"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-15", "locator": "Task172 Step13 to baseline"},

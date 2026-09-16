@@ -51,6 +51,7 @@
     "objects": [
       {
         "stable_id": "ir:a:model:relay-candidate",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "COGNITIVE_MODEL",
         "label": "Task172 relay candidate frame",
         "content": {"frame": "candidate dispositions without comparable executable retrieval metrics"},
@@ -63,6 +64,7 @@
       },
       {
         "stable_id": "ir:a:object:rest-fixture",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "OBJECT",
         "label": "Rest evidence boundary fixture",
         "content": {"fixture_kind": "REAL_CONTENT_RESEARCH", "source_body_republished": false},
@@ -75,6 +77,7 @@
       },
       {
         "stable_id": "ir:a:observation:source-provenance",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "OBSERVATION",
         "label": "Provenance-locked rest input",
         "content": {"input_id": "got-brain-03-rest", "sha256": "6d92ac39669875a0d2a0c5aeb887df319a712d1886313c394da5f50daf4202d1", "bytes": 14540, "lines": 221, "final_newline": false, "unique_exact_local_hit": true, "copy_byte_match": true},
@@ -87,6 +90,7 @@
       },
       {
         "stable_id": "ir:a:observation:exact-retrieval",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "OBSERVATION",
         "label": "Exact canonical retrieval observation",
         "content": {"case_id": "rest-evidence-boundary", "candidate_count": 801, "selected_count": 50, "valid_canonical_ids": 50, "invalid_or_orphan_ids": 0, "fallback": false, "duplicate_candidate_rate": 0.0, "exact_validation_rate": 1.0, "unresolved_rate": 0.0, "retrieval_time_ms": 939.995, "peak_memory_bytes_approx": 986054656, "a_metrics": "NOT_MEASURED", "disposition": "INCONCLUSIVE"},
@@ -99,6 +103,7 @@
       },
       {
         "stable_id": "ir:a:evidence:repository-record",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "EVIDENCE",
         "label": "Task172 repository record evidence",
         "content": {"evidence_kind": "REPOSITORY_RECORD", "supports_only": ["provenance", "reported mechanical observations"]},
@@ -111,6 +116,7 @@
       },
       {
         "stable_id": "ir:a:method:separate-correctness-from-comparison",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "METHOD",
         "label": "Separate exact validation from performance comparison",
         "content": {"steps": ["bind source hash", "validate canonical IDs", "retain missing comparison metrics", "emit inconclusive disposition"]},
@@ -123,6 +129,7 @@
       },
       {
         "stable_id": "ir:a:boundary:no-performance-claim",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "BOUNDARY",
         "label": "No A/B performance claim",
         "content": {"rule": "A metrics are NOT_MEASURED; B is bounded exact retrieval; comparative performance remains INCONCLUSIVE."},
@@ -135,6 +142,7 @@
       },
       {
         "stable_id": "ir:a:unknown:successor-continuation",
+        "schema_version": "cognitive-ir-r0",
         "object_type": "UNKNOWN",
         "label": "Successor continuation is unknown",
         "content": {"unknown": "Whether an independent successor can reconstruct and continue the method without builder context."},
@@ -147,10 +155,10 @@
       }
     ],
     "relations": [
-      {"stable_id": "ir:a:rel:source-derived-observation", "relation_type": "DERIVED_FROM", "from": {"stable_id": "ir:a:observation:source-provenance", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:a:evidence:repository-record", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step00-baseline-audit.json"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-12", "locator": "input provenance"}, "uncertainty": {"status": "SUPPORTED", "confidence": 1.0, "basis": ["source record pointer"], "open_questions": []}, "claim_boundary": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["source linkage"], "forbidden_inferences": ["source content truth"]}},
-      {"stable_id": "ir:a:rel:retrieval-tested-by-method", "relation_type": "TESTED_BY", "from": {"stable_id": "ir:a:observation:exact-retrieval", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:a:method:separate-correctness-from-comparison", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step11-ab-replay.json"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-12", "locator": "b_current_path"}, "uncertainty": {"status": "OBSERVED", "confidence": 0.9, "basis": ["replay record"], "open_questions": []}, "claim_boundary": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["method and observation are linked"], "forbidden_inferences": ["method is independently effective"]}},
-      {"stable_id": "ir:a:rel:retrieval-bounded", "relation_type": "BOUNDED_BY", "from": {"stable_id": "ir:a:observation:exact-retrieval", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:a:boundary:no-performance-claim", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step11-ab-replay.json#boundary_findings"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-12", "locator": "generalized_performance_claim"}, "uncertainty": {"status": "KNOWN", "confidence": 1.0, "basis": ["explicit boundary"], "open_questions": []}, "claim_boundary": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["claim ceiling binding"], "forbidden_inferences": ["performance improvement"]}},
-      {"stable_id": "ir:a:rel:continuation-unknown", "relation_type": "UNKNOWN_RELATION", "from": {"stable_id": "ir:a:unknown:successor-continuation", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:a:method:separate-correctness-from-comparison", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json"], "source_kind": "UNKNOWN", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "independent evaluation pending"}, "uncertainty": {"status": "UNKNOWN", "confidence": null, "basis": ["not evaluated"], "open_questions": ["successor fidelity"]}, "claim_boundary": {"authority_status": "UNKNOWN", "allowed_claims": ["unknown relation retained"], "forbidden_inferences": ["unknown is success"]}}
+      {"stable_id": "ir:a:rel:source-derived-observation", "schema_version": "cognitive-ir-r0", "relation_type": "DERIVED_FROM", "from": {"stable_id": "ir:a:observation:source-provenance", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:a:evidence:repository-record", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step00-baseline-audit.json"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-12", "locator": "input provenance"}, "uncertainty": {"status": "SUPPORTED", "confidence": 1.0, "basis": ["source record pointer"], "open_questions": []}, "claim_boundary": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["source linkage"], "forbidden_inferences": ["source content truth"]}},
+      {"stable_id": "ir:a:rel:retrieval-tested-by-method", "schema_version": "cognitive-ir-r0", "relation_type": "TESTED_BY", "from": {"stable_id": "ir:a:observation:exact-retrieval", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:a:method:separate-correctness-from-comparison", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step11-ab-replay.json"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-12", "locator": "b_current_path"}, "uncertainty": {"status": "OBSERVED", "confidence": 0.9, "basis": ["replay record"], "open_questions": []}, "claim_boundary": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["method and observation are linked"], "forbidden_inferences": ["method is independently effective"]}},
+      {"stable_id": "ir:a:rel:retrieval-bounded", "schema_version": "cognitive-ir-r0", "relation_type": "BOUNDED_BY", "from": {"stable_id": "ir:a:observation:exact-retrieval", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:a:boundary:no-performance-claim", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step11-ab-replay.json#boundary_findings"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-12", "locator": "generalized_performance_claim"}, "uncertainty": {"status": "KNOWN", "confidence": 1.0, "basis": ["explicit boundary"], "open_questions": []}, "claim_boundary": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["claim ceiling binding"], "forbidden_inferences": ["performance improvement"]}},
+      {"stable_id": "ir:a:rel:continuation-unknown", "schema_version": "cognitive-ir-r0", "relation_type": "UNKNOWN_RELATION", "from": {"stable_id": "ir:a:unknown:successor-continuation", "ref_kind": "OBJECT"}, "to": {"stable_id": "ir:a:method:separate-correctness-from-comparison", "ref_kind": "OBJECT"}, "provenance": {"source_refs": ["ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json"], "source_kind": "UNKNOWN", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "independent evaluation pending"}, "uncertainty": {"status": "UNKNOWN", "confidence": null, "basis": ["not evaluated"], "open_questions": ["successor fidelity"]}, "claim_boundary": {"authority_status": "UNKNOWN", "allowed_claims": ["unknown relation retained"], "forbidden_inferences": ["unknown is success"]}}
     ],
     "transition_refs": [{"stable_id": "transition-a-content-rest-r0", "ref_kind": "TRANSITION"}],
     "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step00-baseline-audit.json", "ignition/data/operations/iterations/172/step11-ab-replay.json"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-12", "locator": "Task172 rest fixture"},
