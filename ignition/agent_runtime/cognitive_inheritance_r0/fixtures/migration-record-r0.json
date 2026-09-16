@@ -9,6 +9,13 @@
   "adapter": {"operation": "BACKWARD_READABLE_ADAPTER", "deterministic": true, "destructive_rewrite": false, "unknown_relation_policy": "PRESERVE_AS_UNKNOWN_RELATION"},
   "preserved_fields": ["stable_id", "object_type", "content", "provenance", "uncertainty", "claim_boundary", "unknown relation"],
   "rejected_operations": ["silent field deletion", "unknown relation coercion", "model or weight mutation"],
+  "proposed_new_relation_workflow": {
+    "proposal_status": "PROPOSAL_REQUIRED",
+    "candidate_relation": "TRANSFERS_TO",
+    "required_inputs": ["repeated cross-fixture evidence", "independent evaluator rationale", "backward-readable migration"],
+    "review_gate": "Do not replace UNKNOWN_RELATION until a separately frozen evaluator round accepts the proposed relation.",
+    "fallback": "PRESERVE_UNKNOWN_RELATION"
+  },
   "lineage": [{"lineage_id": "lineage:cognitive-ir:r0a-to-r0b", "source_schema": "cognitive-ir-r0a", "target_schema": "cognitive-ir-r0b", "operation": "BACKWARD_READABLE_ADAPTER", "destructive_rewrite": false}],
   "rollback": {"available": true, "procedure": "Retain the R0a source record and discard only the derived R0b adapter output; no source rewrite is required."},
   "status": "READY_FOR_INDEPENDENT_EVALUATION",

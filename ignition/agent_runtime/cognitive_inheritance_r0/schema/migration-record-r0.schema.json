@@ -15,6 +15,7 @@
     "adapter",
     "preserved_fields",
     "rejected_operations",
+    "proposed_new_relation_workflow",
     "lineage",
     "rollback",
     "status",
@@ -41,6 +42,18 @@
     },
     "preserved_fields": {"type": "array", "minItems": 5, "items": {"type": "string", "minLength": 3}},
     "rejected_operations": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 10}},
+    "proposed_new_relation_workflow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposal_status", "candidate_relation", "required_inputs", "review_gate", "fallback"],
+      "properties": {
+        "proposal_status": {"enum": ["UNRESOLVED", "PROPOSAL_REQUIRED", "ACCEPTED_IN_FUTURE_VERSION"]},
+        "candidate_relation": {"type": "string", "minLength": 3},
+        "required_inputs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 3}},
+        "review_gate": {"type": "string", "minLength": 20},
+        "fallback": {"const": "PRESERVE_UNKNOWN_RELATION"}
+      }
+    },
     "lineage": {
       "type": "array",
       "minItems": 1,

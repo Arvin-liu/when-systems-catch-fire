@@ -2,6 +2,7 @@
   "fixture_id": "fixture-b-engineering-pre-capability-baseline",
   "fixture_kind": "REAL_ENGINEERING_GOVERNANCE_TRANSITION",
   "task_id": "IGNITION-20260916-179",
+  "human_readable_output": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze-human.md",
   "real_source_binding": {
     "prior_task": "IGNITION-20260912-172",
     "freeze_record": "ignition/data/operations/iterations/172/step13-final-freeze.json",
@@ -14,6 +15,11 @@
     "clean_clone_verified": true,
     "new_generation_started": false
   },
+  "provenance_map": [
+    {"source": "ignition/data/operations/iterations/172/step13-final-freeze.json", "fields": ["scan input freeze", "fixed point", "business source head", "claim ceiling"], "authority": "Task172 freeze record"},
+    {"source": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/218", "fields": ["exact-head CI", "clean clone", "PR lifecycle"], "authority": "verified PR metadata"}
+  ],
+  "open_obligations": ["Run a successor without Builder chat context.", "Test a new bounded continuation rather than replay only.", "Do not treat structural closure as cognitive inheritance."],
   "ci_evidence": [
     {"workflow": "foundation-validation", "run_id": 35072438208, "conclusion": "success"},
     {"workflow": "repository-path-accounting-preflight", "run_id": 35072438199, "conclusion": "success"},

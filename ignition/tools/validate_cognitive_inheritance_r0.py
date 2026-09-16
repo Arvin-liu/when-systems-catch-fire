@@ -100,6 +100,11 @@ def validate_transition(transition: dict[str, Any], ir_package: dict[str, Any], 
 
 
 def validate_real_source_bindings(root: Path, content_fixture: dict[str, Any], engineering_fixture: dict[str, Any]) -> None:
+    for fixture in (content_fixture, engineering_fixture):
+        human_path = root.parent / fixture["human_readable_output"]
+        require(human_path.is_file(), f"missing human-readable output: {human_path}")
+        require(fixture["provenance_map"], f"missing provenance map: {fixture['fixture_id']}")
+        require(fixture["open_obligations"], f"missing open obligations: {fixture['fixture_id']}")
     content_binding = content_fixture["real_source_binding"]
     require(content_binding["sha256"] == "6d92ac39669875a0d2a0c5aeb887df319a712d1886313c394da5f50daf4202d1", "content source hash drift")
     require(content_binding["body_republished"] is False, "content body was republished")
@@ -201,6 +206,21 @@ def validate_all(repo_root: Path) -> dict[str, Any]:
     require(evaluation["experiment_status"] == FINAL_STATE, "evaluation status drift")
     require(evaluation["final_verdict"]["cognitive_inheritance_verdict"] == "NOT_EVALUATED_BY_BUILDER", "evaluation package contains a Builder inheritance verdict")
     require(evaluation["final_verdict"]["owner_acceptance"] == "NOT_REQUESTED", "Owner acceptance was inferred")
+    expected_metrics = {
+        "reconstruction_fidelity",
+        "continuation_correctness",
+        "provenance_resolution_rate",
+        "structural_compression_ratio",
+        "inheritance_lag",
+        "migration_cost",
+        "regression_retention",
+        "governance_overhead",
+        "evaluator_disagreement",
+        "schema_pressure",
+        "boundary_retention",
+    }
+    actual_metrics = {metric["metric_id"] for metric in evaluation["metrics"]}
+    require(actual_metrics == expected_metrics, "R0 metric instrumentation set is incomplete or widened")
 
     all_json = list(r0.rglob("*.json"))
     for path in all_json:

@@ -43,6 +43,14 @@
   "metrics": [
     {"metric_id": "reconstruction_fidelity", "name": "Reconstruction fidelity", "unit": "frozen evaluator score", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
     {"metric_id": "continuation_correctness", "name": "Continuation correctness", "unit": "frozen evaluator result", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "provenance_resolution_rate", "name": "Provenance resolution rate", "unit": "fraction of references resolved", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "structural_compression_ratio", "name": "Structural compression ratio", "unit": "package size / source context size", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "inheritance_lag", "name": "Inheritance lag", "unit": "steps or time to executable state", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "migration_cost", "name": "Migration cost", "unit": "changed contracts, code and data", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "regression_retention", "name": "Regression retention", "unit": "retained bounded behaviors", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "governance_overhead", "name": "Governance overhead", "unit": "evaluation cost / effective task cost", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "evaluator_disagreement", "name": "Evaluator disagreement", "unit": "disagreement between evaluators", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
+    {"metric_id": "schema_pressure", "name": "Schema pressure", "unit": "unknown or migration requests / artifacts", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false},
     {"metric_id": "boundary_retention", "name": "Boundary and unknown retention", "unit": "frozen evaluator result", "measurement_status": "NOT_YET_MEASURED", "builder_may_measure": false}
   ],
   "prohibited_shortcuts": [

@@ -2,6 +2,7 @@
   "fixture_id": "fixture-a-content-rest-evidence-boundary",
   "fixture_kind": "REAL_CONTENT_RESEARCH",
   "task_id": "IGNITION-20260916-179",
+  "human_readable_output": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest-human.md",
   "real_source_binding": {
     "label": "《大脑高效休息法》",
     "source_record": "ignition/data/operations/iterations/172/step00-baseline-audit.json",
@@ -18,6 +19,11 @@
     "copy_byte_match": true,
     "body_republished": false
   },
+  "provenance_map": [
+    {"source": "ignition/data/operations/iterations/172/step00-baseline-audit.json", "fields": ["source hash", "byte count", "line count", "local exact-hit status"], "authority": "repository provenance record"},
+    {"source": "ignition/data/operations/iterations/172/step11-ab-replay.json", "fields": ["candidate count", "canonical validation", "fallback", "comparability disposition"], "authority": "repository replay record"}
+  ],
+  "open_obligations": ["Run blind-first successor reconstruction.", "Measure continuation correctness on a bounded new case.", "Keep the missing A comparison metrics unresolved."],
   "retrieval_observation": {
     "source_record": "ignition/data/operations/iterations/172/step11-ab-replay.json",
     "case_id": "rest-evidence-boundary",
