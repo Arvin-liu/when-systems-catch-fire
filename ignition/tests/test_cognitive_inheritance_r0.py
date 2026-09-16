@@ -48,9 +48,19 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
     def test_change_allowlist_is_exact_outside_the_r0_artifact_subtree(self) -> None:
         self.assertTrue(is_allowed_changed_path(".github/workflows/q33-governance-validation.yml"))
         self.assertTrue(is_allowed_changed_path("ignition/tests/test_federation_ownership.py"))
+        self.assertTrue(is_allowed_changed_path("ignition/data/foundation/nonfunction-claims/source-discovery.jsonl"))
+        self.assertTrue(is_allowed_changed_path("ignition/docs/foundation/nonfunction-claim-adjudication-index.md"))
         self.assertTrue(is_allowed_changed_path("ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json"))
         self.assertFalse(is_allowed_changed_path(".github/workflows/unrelated.yml"))
+        self.assertFalse(is_allowed_changed_path("ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"))
         self.assertFalse(is_allowed_changed_path("ignition/data/agent-federation/build-vs-integrate-policy-r1.json.bak"))
+
+    def test_r0_paths_are_excluded_from_canonical_claim_discovery(self) -> None:
+        result = validate_all(ROOT)
+        discovery = result["foundation_nonfunction_discovery"]
+        self.assertGreater(discovery["tracked_paths"], 0)
+        self.assertEqual(discovery["candidate_fragments"], 0)
+        self.assertEqual(discovery["canonical_claim_ids"], 0)
 
     def test_evaluator_package_is_not_builder_verdict(self) -> None:
         package = load_json(R0 / "packages" / "independent-evaluation-package.json")

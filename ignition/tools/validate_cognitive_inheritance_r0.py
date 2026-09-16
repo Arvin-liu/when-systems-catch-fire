@@ -41,6 +41,10 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/tools/validate_cognitive_inheritance_r0.py",
     "ignition/tests/test_cognitive_inheritance_r0.py",
     "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+    "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+    "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+    "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
     ".github/workflows/foundation-validation.yml",
     ".github/workflows/current-state-sync-validation.yml",
     ".github/workflows/iteration-lifecycle-validation.yml",
@@ -157,6 +161,49 @@ def validate_changed_paths(root: Path) -> None:
     require(not unexpected, f"R0 changed protected or out-of-scope paths: {unexpected}")
 
 
+def validate_foundation_discovery_boundary(root: Path, r0: Path) -> int:
+    repo_root = root.parent
+    expected_pathspecs = [
+        r0.relative_to(repo_root).as_posix(),
+        (root / "tests/test_cognitive_inheritance_r0.py").relative_to(repo_root).as_posix(),
+        (root / "tools/validate_cognitive_inheritance_r0.py").relative_to(repo_root).as_posix(),
+    ]
+    tracked = subprocess.run(
+        ["git", "ls-files", "--", *expected_pathspecs],
+        cwd=repo_root,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    require(tracked.returncode == 0, f"cannot enumerate tracked R0 paths: {tracked.stderr.strip()}")
+    root_from_repo = Path(root.relative_to(repo_root).as_posix())
+    expected = {Path(path).relative_to(root_from_repo).as_posix() for path in tracked.stdout.splitlines() if path}
+    require(expected, "R0 tracked path inventory is empty")
+
+    discovery_path = root / "data/foundation/nonfunction-claims/source-discovery.jsonl"
+    actual: dict[str, dict[str, Any]] = {}
+    try:
+        lines = discovery_path.read_text(encoding="utf-8").splitlines()
+    except OSError as exc:
+        raise ValidationFailure(f"cannot read Foundation source discovery: {exc}") from exc
+    for line in lines:
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError as exc:
+            raise ValidationFailure(f"invalid Foundation source-discovery JSONL: {exc}") from exc
+        path = record.get("path")
+        if path in expected:
+            require(path not in actual, f"Foundation source discovery duplicates {path}")
+            actual[path] = record
+
+    require(set(actual) == expected, f"Foundation source discovery does not cover exact R0 inventory: missing={sorted(expected - set(actual))}, extra={sorted(set(actual) - expected)}")
+    for path, record in actual.items():
+        require(record["coverage_status"] == "EXCLUDED_PLATFORM_CODE_EXCLUDED", f"R0 path entered Foundation claim discovery: {path}")
+        require(record["candidate_fragments"] == 0, f"R0 path produced Foundation claim fragments: {path}")
+        require(record["canonical_claim_ids"] == [], f"R0 path gained canonical claim IDs: {path}")
+    return len(expected)
+
+
 def is_allowed_changed_path(path: str) -> bool:
     """Keep the R0 change boundary exact except for its one artifact subtree."""
     return path in ALLOWED_CHANGED_FILES or path.startswith(ALLOWED_CHANGED_PREFIXES)
@@ -239,6 +286,7 @@ def validate_all(repo_root: Path) -> dict[str, Any]:
     all_json = list(r0.rglob("*.json"))
     for path in all_json:
         validate_no_forbidden_fields(read_json(path))
+    foundation_discovery_paths = validate_foundation_discovery_boundary(root, r0)
     validate_changed_paths(root)
 
     return {
@@ -250,6 +298,11 @@ def validate_all(repo_root: Path) -> dict[str, Any]:
         "independent_evaluation": "NOT_RUN",
         "builder_verdict": "NOT_EVALUATED_BY_BUILDER",
         "foundation_canonical_mutation": "NONE",
+        "foundation_nonfunction_discovery": {
+            "tracked_paths": foundation_discovery_paths,
+            "candidate_fragments": 0,
+            "canonical_claim_ids": 0,
+        },
         "model_rsi_or_weight_training": "NOT_PRESENT",
         "checked_json_files": len(all_json),
     }
