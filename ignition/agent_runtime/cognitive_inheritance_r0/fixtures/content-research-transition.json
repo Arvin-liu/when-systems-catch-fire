@@ -1,0 +1,34 @@
+{
+  "schema_version": "cognitive-transition-r0",
+  "transition_id": "transition-a-content-rest-r0",
+  "task_id": "IGNITION-20260916-179",
+  "previous_cognitive_model": {"stable_id": "ir:a:model:relay-candidate", "ref_kind": "OBJECT"},
+  "observed_anomaly_or_failure": [
+    {"stable_id": "ir:a:observation:exact-retrieval", "ref_kind": "OBJECT"},
+    {"stable_id": "ir:a:boundary:no-performance-claim", "ref_kind": "OBJECT"}
+  ],
+  "reframing": {
+    "previous_frame": "Treat a bounded relay candidate set as if it were a comparable retrieval result.",
+    "new_frame": "Represent source identity, exact canonical validation, and missing comparison measurements as separate typed objects.",
+    "boundary": "Correctness observations may be retained while unmeasured comparison and successor fidelity remain unresolved."
+  },
+  "new_representation": [
+    {"stable_id": "ir:a:observation:source-provenance", "ref_kind": "OBJECT"},
+    {"stable_id": "ir:a:observation:exact-retrieval", "ref_kind": "OBJECT"},
+    {"stable_id": "ir:a:unknown:successor-continuation", "ref_kind": "OBJECT"}
+  ],
+  "new_method": [{"stable_id": "ir:a:method:separate-correctness-from-comparison", "ref_kind": "OBJECT"}],
+  "evaluation": {
+    "evaluation_package_ref": {"stable_id": "independent-evaluation-package-r0", "ref_kind": "PACKAGE"},
+    "mechanical_checks": ["source hash and bytes are recorded", "canonical IDs are counted", "A metrics remain NOT_MEASURED", "unknown successor fidelity is retained"],
+    "independent_evaluation_status": "NOT_RUN",
+    "evaluator_role": "INDEPENDENT_EVALUATOR_REQUIRED"
+  },
+  "disposition": "ADOPT",
+  "migration_lineage": [{"lineage_id": "lineage:transition-a-content-rest", "source_ref": {"stable_id": "ir:a:object:rest-fixture", "ref_kind": "OBJECT"}, "target_ref": {"stable_id": "ir-package-content-rest-r0", "ref_kind": "PACKAGE"}, "operation": "BOUNDARY_AWARE_REPRESENTATION", "destructive_rewrite": false}],
+  "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step11-ab-replay.json", "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json"], "source_kind": "DERIVED_OBSERVATION", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "fixture-a"},
+  "claim_ceiling": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["the representation preserves a bounded mechanical transition"], "forbidden_inferences": ["structured success is cognitive inheritance", "the builder evaluated continuation"]},
+  "builder_verdict": "NOT_EVALUATED_BY_BUILDER",
+  "final_state": "READY_FOR_INDEPENDENT_EVALUATION",
+  "unknowns": ["successor reconstruction fidelity", "continuation correctness", "whether the method transfers beyond this fixture"]
+}
