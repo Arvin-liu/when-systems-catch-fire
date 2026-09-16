@@ -4,6 +4,41 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-f974b5a400509d56"></a>
+## IGNITION-137 Step 11 — Hermes retry decision
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Hermes live-hermes-136 remains RECONCILIATIONREMAINSOPEN. Because Step 01 did not prove RECONCILEDNOOBSERVEDSIDEEFFECT and did not establish a complete transport/deadline cause, the task’s retry conditions are not all satisfied. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-137 Step 11 — Hermes retry decision；Hermes live-hermes-136 remains RECONCILIATIONREMAINSOPEN. Because Step 01 did not prove RECONCILEDNOOBSERVEDSIDEEFFECT and did not establish a complete transport/deadline cause, the task’s retry conditions are not all satisfied.；Decision: NOTRUNNOJUSTIFIEDRETRY. The old Hermes receipt is untouched, no resume/continue/channel action was sent, and no second Hermes dispatch was created. OpenClaw remains NOTRUNSAFETYBOUNDARYUNRESOLVED with its workspace/channel/read-only blockers preserved.；This preserves the no-blind-retry invariant even though the Codex attempt did not produce a validated completion.
+- 完整阅读：[reports/operations/ignition-137-step11-hermes-retry-decision.md](../../reports/operations/ignition-137-step11-hermes-retry-decision.md)
+
+<a id="reading-hr-f9cf8e83465264a9"></a>
+## Governance report: IGNITION-20260907-163
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：This was a research-only execution of Arvin-liu/1111/agent-commands/IGNITION-20260907-163.md at command commit 73cde2ab84d829bb0990f63d957e2152b1a330e4, blob 521d468829425a210cc763df72456f2c28753d02, complete-content SHA-256 f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Governance report: IGNITION-20260907-163；主题：Lifecycle and provenance；This was a research-only execution of Arvin-liu/1111/agent-commands/IGNITION-20260907-163.md at command commit 73cde2ab84d829bb0990f63d957e2152b1a330e4, blob 521d468829425a210cc763df72456f2c28753d02, complete-content SHA-256 f4834b50cf26688e03e5655134d0d12019b8548093752f33b2454869b26a48a1.；Formal began at work/IGNITION-20260907-162@5c66ac502ca331d72c1362000ff5231503dde7ea, with PR #212 rechecked OPEN + DRAFT and targeting work/IGNITION-20260907-161. A separate worktree was created for work/IGNITION-20260907-163. Missing instructions/CURRENT.md and relay/current were preserved as STALECONTROLPOINTER / PREFLIGHTRESIDUAL.；Was a historical basis-learning operator reconstructed? No. R1 produced 0/4 capability-equivalent basis-mutation signals and did not qualify.；Where did it fail? The >=3/4 true-leap gate, the P02/P03/P04 >=2/3 gate, and the requirement for at least one true holdout hit all failed. The operator was frozen before the blind runs and the two runs were byte-identical.
+- 完整阅读：[reports/governance/task-IGNITION-20260907-163.md](../../reports/governance/task-IGNITION-20260907-163.md)
+
+<a id="reading-hr-f9fe7eee273643e9"></a>
+## 121Q12 Effectual-Mechanism Dual-Loop Report
+`CANDIDATE_OR_PENDING_SOURCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Status: READYFORGPTVERIFICATION 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q12 Effectual-Mechanism Dual-Loop Report；Status: READYFORGPTVERIFICATION；121Q12 adds a cross-layer operation overlay:；Effectual Action Plane: chooses bounded next actions when goals, metrics, resources, or paths are unstable.；Mechanism Adjudication Plane: constrains how results may be interpreted after observation and validation.；The overlay does not add a truth layer and does not change L0-L6. Charter Gate remains above action choice, execution, validation, publication, and feedback.
+- 完整阅读：[reports/architecture/121Q12-effectual-mechanism-dual-loop.md](../../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
+
+<a id="reading-hr-fa8811c92d24bf67"></a>
+## Task160｜Basis Escape V2
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task160｜Basis Escape V2；Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.；This is a research-only, repository-local result from exact Formal base 76e44213904928f9f0be8ba131b86529e44e7682. It does not alter the 12-element protocol, the 64 matrix, Ψ₀/Pmeta, canonical layers, validators, lifecycle, production readiness, external truth, Owner acceptance or epistemic status.；Command commit/blob/content SHA-256: f6fc4438e711e928cce29d07ed54b7395434b7c8 / 57aeb34cc5fea2202bd87e5998bd7851f7753a9f / e8155ff841bf4ee95eafddd4f5b2e081890e73a08c364011cd7108ae564b23d0；Corpus: total tracked universe 4046, used 2937, excluded 1109; basis-free packets 1015; C7 engineering negatives 1922；Split: discovery 802, holdout 213; C8 mixed-theoretical holdout is derived in c8-mixed-holdout-manifest.json; rule frozen before induction
+- 完整阅读：[docs/governance/next-semantic-leap-assessment-2026-09-07.md](../../docs/governance/next-semantic-leap-assessment-2026-09-07.md)
+
+<a id="reading-hr-faa569e781de6cb0"></a>
+## IGNITION-20260828-144 Step 13 — bounded Repair Cycle A
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Repair Cycle A addressed one deterministic identity/projection root cause: task-identity-model-r1.json still pointed the release-candidate role at the superseded Task143 execution contract. The required Task144 progress binding was recorded in the preceding Step12 evidence commit. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260828-144 Step 13 — bounded Repair Cycle A；Repair Cycle A addressed one deterministic identity/projection root cause: task-identity-model-r1.json still pointed the release-candidate role at the superseded Task143 execution contract. The required Task144 progress binding was recorded in the preceding Step12 evidence commit.；The identical offline closure command set then completed naturally with 77 tests / 0 failures / 0 errors / 0 skips, and all 14 standalone validators passed. No live process, external inference, executor qualification, adapter or new capability was started. No skip, xfail, ignore or expected-failure mechanism was added.；Machine receipt: ignition/data/operations/iterations/144/step13-repair-cycle-a.json.；Two bounded repair cycles remain available, but no further cycle is authorized without a new deterministic closure blocker. Claim ceiling: repository-local repair and regression evidence only; this does not establish validated live completion, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance.
+- 完整阅读：[reports/operations/ignition-144-step13-repair-cycle-a.md](../../reports/operations/ignition-144-step13-repair-cycle-a.md)
+
 <a id="reading-hr-fb9a21e0eb12989e"></a>
 ## 121Q2V Verification Repair Report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`

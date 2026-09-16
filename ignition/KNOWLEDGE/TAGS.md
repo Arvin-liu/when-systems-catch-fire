@@ -2,20 +2,20 @@
 
 这是 `knowledge.collide_object` 的薄人类入口。它是检索与碰撞路由元数据，不是正确性、重要性、成熟度、证据、公开资格或领域权威。旧的七个 Knowledge subjects 仍然有效；这里的 UNESCO 分面与其正交。
 
-机器索引：[`step07-routing-index.json`](../data/research/task172-routing-r1/step07-routing-index.json)。当前索引包含 24140 条 canonical-ID 路由记录；返回候选后必须回读 authority registry 做 fingerprint exact validation。
+机器索引：[`step07-routing-index.json`](../data/research/task172-routing-r1/step07-routing-index.json)。当前索引包含 24161 条 canonical-ID 路由记录；返回候选后必须回读 authority registry 做 fingerprint exact validation。
 
 ## 受控 collision-use 标签
 
 ### `EXPLAIN`
 
 - 含义/可做什么：retrieve assets useful for bounded explanation; never a truth claim。
-- 当前记录数：4565；示例：`FUNCTION_ASSET:D107`, `FUNCTION_ASSET:D11`, `FUNCTION_ASSET:D114`。
+- 当前记录数：4568；示例：`FUNCTION_ASSET:D107`, `FUNCTION_ASSET:D11`, `FUNCTION_ASSET:D114`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `COMPARE`
 
 - 含义/可做什么：place governed assets side by side for a stated comparison。
-- 当前记录数：1535；示例：`NONFUNCTION_CLAIM:CLAIM-BC-20260709-001`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-002`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-005`。
+- 当前记录数：1538；示例：`NONFUNCTION_CLAIM:CLAIM-BC-20260709-001`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-002`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-005`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `ANALOGY_SOURCE`
@@ -27,25 +27,25 @@
 ### `MECHANISM_TEST`
 
 - 含义/可做什么：retrieve an asset for mechanism-boundary inspection。
-- 当前记录数：1561；示例：`NONFUNCTION_CLAIM:CLAIM-BC-20260709-003`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-006`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-012`。
+- 当前记录数：1562；示例：`NONFUNCTION_CLAIM:CLAIM-BC-20260709-003`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-006`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-012`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `CAUSAL_CHALLENGE`
 
 - 含义/可做什么：retrieve an asset for causal-claim challenge, not causal proof。
-- 当前记录数：1561；示例：`NONFUNCTION_CLAIM:CLAIM-BC-20260709-003`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-006`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-012`。
+- 当前记录数：1562；示例：`NONFUNCTION_CLAIM:CLAIM-BC-20260709-003`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-006`, `NONFUNCTION_CLAIM:CLAIM-BC-20260709-012`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `COUNTEREXAMPLE`
 
 - 含义/可做什么：retrieve a negative or competing case for boundary testing。
-- 当前记录数：16319；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
+- 当前记录数：16332；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `EVIDENCE_CHECK`
 
 - 含义/可做什么：retrieve an asset whose evidence boundary needs checking。
-- 当前记录数：16479；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
+- 当前记录数：16493；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `METHOD_TRANSFER`
@@ -57,7 +57,7 @@
 ### `BOUNDARY_TEST`
 
 - 含义/可做什么：retrieve an asset for scope, ceiling or failure-condition review。
-- 当前记录数：2927；示例：`FUNCTION_ASSET:D182`, `FUNCTION_ASSET:D183`, `FUNCTION_ASSET:D184`。
+- 当前记录数：2932；示例：`FUNCTION_ASSET:D182`, `FUNCTION_ASSET:D183`, `FUNCTION_ASSET:D184`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `NORMATIVE_CHECK`
@@ -75,7 +75,7 @@
 ### `HISTORICAL_CONTEXT`
 
 - 含义/可做什么：retrieve historical or withdrawn context without positive promotion。
-- 当前记录数：14758；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
+- 当前记录数：14770；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ## UNESCO 分面

@@ -48,7 +48,7 @@
   "report_sha256": "04bb5f54bd641d7311123681ce9ceec51a5b3167bc8495272e82e810a29d1155",
   "schema": "task172-step05-scholarly-gate-v1",
   "source_exact_head": "998b5654248b41a8982d0674bf0368b400b65eec",
-  "source_freeze_sha256": "9b199c22799863079883e645a365970dc04f3a3c64d7c96eb947907979254757",
+  "source_freeze_sha256": "0c60b1d453c150087a111dbc5a97bf754c4048678f5c879ebd3ef1b0be3d38d1",
   "step": "Task172 Step05 / Gate C",
   "taxonomy": {
     "fields": 24,

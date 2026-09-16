@@ -9,7 +9,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This logical step is based on exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218.
+- **变化：** This logical step is based on exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218.
 - **来源：** [ignition-172-20260915-step07-routing-index.md](../reports/operations/ignition-172-20260915-step07-routing-index.md)
 - **资产卡：** [HR-ECB9A4B8EE1483CA](./ASSET-CARDS.md#asset-hr-ecb9a4b8ee1483ca)
 
@@ -49,6 +49,15 @@
 - **来源：** [ignition-172-20260915-step09-field-24.md](../reports/operations/ignition-172-20260915-step09-field-24.md)
 - **资产卡：** [HR-CADD18CB2328CED3](./ASSET-CARDS.md#asset-hr-cadd18cb2328ced3)
 
+<a id="change-src-hr-c66547aa41dfc55f"></a>
+### 2026-09-15 · Task172 Step12 — final candidate disposition
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The 11 surviving Step01 candidates were re-audited against the Step02 route review and Step11 replay. The result is deliberately 0 new canonical additions.
+- **来源：** [ignition-172-20260915-step12-final-disposition.md](../reports/operations/ignition-172-20260915-step12-final-disposition.md)
+- **资产卡：** [HR-C66547AA41DFC55F](./ASSET-CARDS.md#asset-hr-c66547aa41dfc55f)
+
 <a id="change-src-hr-bab21171893c54e0"></a>
 ### 2026-09-15 · Task172 Step09 field 54: GEOGRAPHY
 
@@ -76,6 +85,15 @@
 - **来源：** [ignition-172-20260915-step09-field-21.md](../reports/operations/ignition-172-20260915-step09-field-21.md)
 - **资产卡：** [HR-A5172A2B53CEC20B](./ASSET-CARDS.md#asset-hr-a5172a2b53cec20b)
 
+<a id="change-src-hr-a13879f03cb48a28"></a>
+### 2026-09-15 · Task172 Step10 — global corpus QA
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: PASSWITHEXPLICITDEFICITS
+- **来源：** [ignition-172-20260915-step10-global-corpus-qa.md](../reports/operations/ignition-172-20260915-step10-global-corpus-qa.md)
+- **资产卡：** [HR-A13879F03CB48A28](./ASSET-CARDS.md#asset-hr-a13879f03cb48a28)
+
 <a id="change-src-hr-9fa397ef4fda55c6"></a>
 ### 2026-09-15 · Task172 Step09 field 71: ETHICS
 
@@ -84,6 +102,15 @@
 - **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
 - **来源：** [ignition-172-20260915-step09-field-71.md](../reports/operations/ignition-172-20260915-step09-field-71.md)
 - **资产卡：** [HR-9FA397EF4FDA55C6](./ASSET-CARDS.md#asset-hr-9fa397ef4fda55c6)
+
+<a id="change-src-hr-9c2eb035ebedff6a"></a>
+### 2026-09-15 · IGNITION-20260915-178 — Task172 final closeout
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This receipt records the state observed before Task178 writes. It is not a claim about external truth or CI beyond the named exact head and checks.
+- **来源：** [IGNITION-20260915-178-result.md](../agent-results/IGNITION-20260915-178-result.md)
+- **资产卡：** [HR-9C2EB035EBEDFF6A](./ASSET-CARDS.md#asset-hr-9c2eb035ebedff6a)
 
 <a id="change-src-hr-96ec40a0b9c9f87d"></a>
 ### 2026-09-15 · Task172 Step09 field 22: PHYSICS
@@ -157,6 +184,15 @@
 - **来源：** [ignition-172-20260915-step09-field-52.md](../reports/operations/ignition-172-20260915-step09-field-52.md)
 - **资产卡：** [HR-513A4899383EBC1D](./ASSET-CARDS.md#asset-hr-513a4899383ebc1d)
 
+<a id="change-src-hr-4ac39dba80c596a5"></a>
+### 2026-09-15 · Task172 Step11 — three-input A/B replay
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The three provenance-locked input bytes were available by their recorded SHA-256 values. A is the frozen Step01 relay baseline; B is the current read-only routing overlay plus compact index and exact canonical validation.
+- **来源：** [ignition-172-20260915-step11-ab-replay.md](../reports/operations/ignition-172-20260915-step11-ab-replay.md)
+- **资产卡：** [HR-4AC39DBA80C596A5](./ASSET-CARDS.md#asset-hr-4ac39dba80c596a5)
+
 <a id="change-src-hr-4915734264bb9de0"></a>
 ### 2026-09-15 · Task172 Step09 field 59: POLITICAL SCIENCE
 
@@ -183,6 +219,15 @@
 - **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
 - **来源：** [ignition-172-20260915-step09-field-56.md](../reports/operations/ignition-172-20260915-step09-field-56.md)
 - **资产卡：** [HR-3B8D996F1E9886E9](./ASSET-CARDS.md#asset-hr-3b8d996f1e9886e9)
+
+<a id="change-src-hr-2f64159284453379"></a>
+### 2026-09-15 · Task172 Step13 — final closeout freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This report records the pre-freeze scan-sensitive input set for the final official derivation chain. The Step10, Step11, and Step12 machine records and reports are present before the freeze. Their hashes, the primary UNESCO parse/discrepancy inputs, the 24-field corpus, and the Step07 routing inp…
+- **来源：** [ignition-172-20260915-step13-final-freeze.md](../reports/operations/ignition-172-20260915-step13-final-freeze.md)
+- **资产卡：** [HR-2F64159284453379](./ASSET-CARDS.md#asset-hr-2f64159284453379)
 
 <a id="change-src-hr-13e9b3b4578e1c4d"></a>
 ### 2026-09-15 · Task172 Step09 field 63: SOCIOLOGY
@@ -234,7 +279,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This logical step is based on the exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218.
+- **变化：** This logical step is based on the exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218.
 - **来源：** [ignition-172-20260914-step06-nonfunction-routing.md](../reports/operations/ignition-172-20260914-step06-nonfunction-routing.md)
 - **资产卡：** [HR-BC0FD3372F5D0546](./ASSET-CARDS.md#asset-hr-bc0fd3372f5d0546)
 
@@ -252,7 +297,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This logical step is based on the exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218.
+- **变化：** This logical step is based on the exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218.
 - **来源：** [ignition-172-20260914-step05-function-routing.md](../reports/operations/ignition-172-20260914-step05-function-routing.md)
 - **资产卡：** [HR-5BD3902EC1BA8DCE](./ASSET-CARDS.md#asset-hr-5bd3902ec1ba8dce)
 

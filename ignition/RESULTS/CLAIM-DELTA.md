@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 714 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 718 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -5535,6 +5535,38 @@
 - 状态：`ADDED`
 - Delta：`CD-E209CF9B12FF43A0`
 - 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step10-global-corpus-qa.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A13879F03CB48A28`
+- 关联断言：['NFC-04497693b11fac5d', 'NFC-323ee4d85918a396', 'NFC-40684839a7a46cea', 'NFC-5afb9d48e96ec2cb', 'NFC-c56264b31c7b674f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step11-ab-replay.md`
+
+- 状态：`ADDED`
+- Delta：`CD-4AC39DBA80C596A5`
+- 关联断言：['NFC-15fafeb2231f4ef8', 'NFC-41dd20ec13ca51b3', 'NFC-7c38b165cc8903fb']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step12-final-disposition.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C66547AA41DFC55F`
+- 关联断言：['NFC-7f4d4f5f7712a141', 'NFC-fe6340543198f1cc']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step13-final-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2F64159284453379`
+- 关联断言：['NFC-8976c814b456b343']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

@@ -696,6 +696,10 @@
 |`reports/operations/ignition-172-20260915-step09-field-63.md`|2|0|否|
 |`reports/operations/ignition-172-20260915-step09-field-71.md`|2|0|否|
 |`reports/operations/ignition-172-20260915-step09-field-72.md`|2|0|否|
+|`reports/operations/ignition-172-20260915-step10-global-corpus-qa.md`|5|0|否|
+|`reports/operations/ignition-172-20260915-step11-ab-replay.md`|3|0|否|
+|`reports/operations/ignition-172-20260915-step12-final-disposition.md`|2|0|否|
+|`reports/operations/ignition-172-20260915-step13-final-freeze.md`|1|0|否|
 |`reports/operations/ignition-172-step00-baseline-audit.md`|0|0|是|
 |`reports/operations/ignition-172-step01-collision-audit.md`|7|0|否|
 |`reports/operations/ignition-172-step02-route-review.md`|1|0|否|

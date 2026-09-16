@@ -4,6 +4,34 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-a2d31113db51b1d6"></a>
+## Task159 result
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：SEMANTICLEAPDETECTORV2VALIDATEDFORRESEARCHREPLAY for the frozen local-history corpus. N02 and N03 are NONLEAP because their OldBasis-to-NewRepresentation mappings preserve object language, operations, and question space. No lifecycle, canonical, provider, or publication action occurred. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：SEMANTICLEAPDETECTORV2VALIDATEDFORRESEARCHREPLAY for the frozen local-history corpus. N02 and N03 are NONLEAP because their OldBasis-to-NewRepresentation mappings preserve object language, operations, and question space. No lifecycle, canonical, provider, or publication action occurred.
+- 完整阅读：[agent-results/IGNITION-20260907-159-result.md](../../agent-results/IGNITION-20260907-159-result.md)
+
+<a id="reading-hr-a2e1d8a6ec4e2cf4"></a>
+## IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The existing literal-argv, explicit-cwd, bounded stdout/stderr and process-group transport now accepts an attempt-specific RuntimeScratchLease. The lease is created as an empty 0700 directory, records only metadata digests (relative names, types, modes and sizes; never runtime file contents), and… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260824-138 — Step 03 Bounded Process Transport Scratch Lifecycle；The existing literal-argv, explicit-cwd, bounded stdout/stderr and process-group transport now accepts an attempt-specific RuntimeScratchLease. The lease is created as an empty 0700 directory, records only metadata digests (relative names, types, modes and sizes; never runtime file contents), and carries an explicit owner, TTL and fail-closed cleanup policy.；When a lease is supplied, transport requires explicit HOME/TMPDIR (and any additional declared runtime keys) overrides. Every override must resolve inside scratch; parent-agent values remain filtered by the existing env allowlist. The task cwd is still supplied independently and is never made writable by this layer.；Normal process-group termination cleans the scratch and returns a runtime-scratch-receipt-r1 with runtimescratchref=ATTEMPTRUNTIMESCRATCH and contentpersisted=false. A cleanup exception returns runtimescratchcleanupstatus=FAILED; UNKNOWN or CHILDLEFTBEHIND process groups return REQUIRESRECONCILIATION and do not delete a possibly active child domain. Prefligh…；The transport regression set ran 14 tests, and the combined live bridge targeted set ran 55 tests, all with zero failures, errors and skips. Coverage includes literal argv, timeout and signal escalation, child-left-behind, bounded output, scratch helper writes, task workspace preservation, cleanup failure, unknown-group reconciliation, env escape, protected-…；Claim ceiling: provider-neutral bounded transport and runtime-scratch lifecycle evidence only; no Codex adapter completion, validated live result, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.
+- 完整阅读：[reports/operations/ignition-138-step03-live-process-transport-scratch-lifecycle.md](../../reports/operations/ignition-138-step03-live-process-transport-scratch-lifecycle.md)
+
+<a id="reading-hr-a2f6b1bf53bb9239"></a>
+## Local Note Sync Report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：files=141, latestmtime=2026-07-09 17:36:06, sampledtotalsizebytes=135155 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Local Note Sync Report；076 correction notice: this is a preserved 075 filesystem snapshot. A fresh read-only check found PRIVATE_PROVENANCE_WITHHELD；PRIVATE_PROVENANCE_WITHHELD；PRIVATE_PROVENANCE_WITHHELD；PRIVATE_PROVENANCE_WITHHELD；files=141, latestmtime=2026-07-09 17:36:06, sampledtotalsizebytes=135155
+- 完整阅读：[reports/math-foundation/local-note-sync-report-20260712.md](../../reports/math-foundation/local-note-sync-report-20260712.md)
+
+<a id="reading-hr-a3102269fa5cb3fd"></a>
+## 不采纳项 · P1 接入烟雾测试
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：不采纳项 · P1 接入烟雾测试；内容：将 LIANGZHANGBIAO / Unified- 临时仓库整体合并进主线。；不采纳理由：临时仓库含主线旧子集与冗余 README，整体合并会引入重复、噪声与版本混乱。；可能风险：覆盖主线既有条目、产生编号冲突、丢失主线权威性。；是否需要复查：否（已由差异审计结论支撑）。；内容：把救援案例表（578 例）作为新增案例批量入表。
+- 完整阅读：[outputs/collisions/20260708-smoke-test/rejected.md](../../outputs/collisions/20260708-smoke-test/rejected.md)
+
 <a id="reading-hr-a488097fe88e905e"></a>
 ## IGNITION-20260827-142 Step 02 — Independent Open-Obligation Registry
 `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -325,31 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：新增注释 · 赛课机制下的教师生存困境；主题：可作为现有函数/案例注释的内容；主题：注释 N1（挂接退出权函数族 FUNC-L1-EXIT）；对应条目：退出权函数族（A4 应约者感知退出权 / A9 退出概率 / D499 退出权时间衰减）。；注释内容：赛课机制中「职称硬门槛 + 资历豁免 + 多锻炼劝说」构成一种隐性退出权剥夺——个体法律上可拒绝，但待遇绑定使实际退出成本无限高，退出概率趋零。这补入退出权函数族的「结构性不可拒绝」子类。；来源：source.md §职称绑定的无奈裹挟
 - 完整阅读：[outputs/collisions/20260708-teacher-competition/notes.md](../../outputs/collisions/20260708-teacher-competition/notes.md)
-
-<a id="reading-hr-b42fdd29bfb492b0"></a>
-## 故事化评分维度
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`
-- 1 分钟：--- title: "故事化案例优先级规划" author: "之元" date: "2026-07-07" --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：任务：H，故事化案例 backlog 初稿；用途：排列哪些案例适合优先故事化、哪些适合中期故事化、哪些需要暂缓；用于连接公开表达、风险边界、pending 条件和失败类型。；注意：本文是故事化案例 backlog 初稿，不是完整故事正文，不代表这些案例已经可以直接公开发布。；--- title: "故事化案例优先级规划" author: "之元" date: "2026-07-07" ---；好,我现在开始执行任务H:故事化案例backlog初稿。；先拉取一下已有的案例表,了解当前案例储备情况。好,我现在开始执行任务H:故事化案例backlog初稿。
-- 完整阅读：[outputs/getbrain/storytelling-case-backlog-draft-20260707.md](../../outputs/getbrain/storytelling-case-backlog-draft-20260707.md)
-
-<a id="reading-hr-b45bab5b6a15098b"></a>
-## IGNITION-20260822-132 Step 09 — Canonical Current Migration
-`HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The canonical source now records IGNITION-20260822-132 as the current formal task with COMPLETEDWITHCLASSIFIEDRESIDUALS and terminal=true. The content-owned lifecycle is RELEASEREADY and terminal. Current Facts, Current Snapshot, and all compiler-owned Current surfaces were regenerated from that… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-132 Step 09 — Canonical Current Migration；The canonical source now records IGNITION-20260822-132 as the current formal task with COMPLETEDWITHCLASSIFIEDRESIDUALS and terminal=true. The content-owned lifecycle is RELEASEREADY and terminal. Current Facts, Current Snapshot, and all compiler-owned Current surfaces were regenerated from that source.；The migration preserves Task130 as the previous canonical Current source, Task131 as the immediate historical formal predecessor, the existing 125→127 requirement lineage, Task129 as the latest architecture-changing task, identity epoch os-control-plane-r4-steering-intent-r1, and map 0.12.0. The append-only State Changelog explicitly records that Task131 com…；Publication remains separate: lifecycle readiness is not publication, the authority remains REMOTEREFOBSERVATION, the embedded publication assertion remains NONE, and no exact release SHA is written into the formal repository.；Validation passed: task lineage, lifecycle, current-facts determinism, Current Snapshot determinism, Current State sync, release-candidate identity gate, and 20 focused tests.；Claim ceiling: canonical repository-local Current migration and content-owned release readiness only; no remote publication, external truth, production readiness, Owner acceptance, or epistemic acceptance is inferred.
-- 完整阅读：[reports/operations/ignition-132-step09-canonical-current-migration.md](../../reports/operations/ignition-132-step09-canonical-current-migration.md)
-
-<a id="reading-hr-b4c3a178d034780a"></a>
-## IGNITION-20260826-140 — Step 10 Dynamic Live Admission Freeze
-`HISTORICAL_COMPLETION_RECORD` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The admission gate revalidated the Task140 census and selected the currently admitted family from local-executor-census-r1.json; it did not bind the task contract to a brand before census. The current selection is Codex CLI (external.codex, codex-cli 0.144.4) because its public login-status probe… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260826-140 — Step 10 Dynamic Live Admission Freeze；The admission gate revalidated the Task140 census and selected the currently admitted family from local-executor-census-r1.json; it did not bind the task contract to a brand before census. The current selection is Codex CLI (external.codex, codex-cli 0.144.4) because its public login-status probe returned exit 0 and all ten bounded admission checks passed. T…；The preflight created a disposable synthetic read-only fixture, observed its write guard, exercised public Codex version/help through the bounded transport, froze a capability lease with effective capability repo.read, built the strict JSONL/output-schema argv, verified isolated attempt runtime scratch and host durable-capture support, proved the auth source…；No live executor process or model inference was started: inferencestarted=false, probecalls=2, capture/live dispatch calls were not made, the formal and control repositories were not used as a child workspace, and no auth content, configuration, billing or installation state was changed.；The frozen attempt policy allows at most two different executor families, at most one attempt per family, forbids blind retry, and stops immediately after the first exact LIVEREADONLYVALIDATEDCOMPLETION. The current projection remains five attempts, zero validated completions, zero unreconciled attempts and two observation-incomplete records, with unknown ex…；Claim ceiling: Task140 repository-local admission, capability-lease, filesystem-domain and validator-freeze evidence only; no live result, validated completion, external truth, production readiness, Owner acceptance or epistemic acceptance is inferred.
-- 完整阅读：[reports/operations/ignition-140-step10-live-admission.md](../../reports/operations/ignition-140-step10-live-admission.md)
-
-<a id="reading-hr-b543950ddea47bd7"></a>
-## 121Q32I typed change-propagation impact report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q32I typed change-propagation impact report；Closure complete: true；Closure hash: be079995b291e41dcb4c9b8ffdd1997e05f9eef5763da91c9584f4ef8169f705；Fixpoint iterations: 2；Seeds: aiguide, currentstate, historicalreports, incrementalexecution, iteration, iterationmanifestcontract, nol7, pagespipeline, projectcomponentregistry, propagationcalculator, propagationtopology, readme, summary, systemmaplayout, systemmapprojection, usage；Resolved components: 19
-- 完整阅读：[reports/operations/121Q32I-change-propagation-impact.md](../../reports/operations/121Q32I-change-propagation-impact.md)

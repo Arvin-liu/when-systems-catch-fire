@@ -34,14 +34,14 @@
   ],
   "formal_pre_freeze": {
     "branch": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
-    "head": "13ec32014e29db8d8d1590c41ca0d4cde694736d",
+    "head": "03a2b33cced830418cc310a59b519fca8d10f2fa",
     "pull_request": 218,
     "state": "OPEN + DRAFT + unmerged"
   },
   "freeze_event": "SCAN_INPUT_FREEZE_REUSE",
   "immutability": "routing projection cannot mutate canonical identity, M/E, disposition, claim ceiling or evidence status",
   "routing_preconditions": {
-    "gate_c_receipt_sha256": "9b8c85a5456023a65395f014d353f06280e64d6fac8ba333545415af64d197d6",
+    "gate_c_receipt_sha256": "cfdb2634101fd0f7bdee61ac8db02f44be40338e28022ff9e6a496b1649421ae",
     "gate_r_schema_sha256": "5ece3a3e3b22d080782485d27d0b46c45224b6fe035ba247095841a2d11fdb92",
     "gate_r_vocabulary_sha256": "5612622cedaef67fd8b5a19ddf4d40b2939d07ef78bb530301176b2e399a9b95",
     "mass_formal_taxonomy_write": true,

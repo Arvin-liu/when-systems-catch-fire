@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 609 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 614 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -4499,6 +4499,58 @@
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - **处置：** `HUMAN_INDEX_ONLY`
 
+### [Task172 Step13 — final closeout freeze](../reports/operations/ignition-172-20260915-step13-final-freeze.md)
+
+- **结果 ID：** `HR-2F64159284453379`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP13-FINAL-FREEZE`
+- **问题：** 此来源记录了什么：Task172 Step13 — final closeout freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This report records the pre-freeze scan-sensitive input set for the final official derivation chain. The Step10, Step11, and Step12 machine records and reports are present before the freeze. Their hashes, the primary UNESCO parse/discrepancy inputs, the 24-field corpus, and the Step07 routing inp…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step12 — final candidate disposition](../reports/operations/ignition-172-20260915-step12-final-disposition.md)
+
+- **结果 ID：** `HR-C66547AA41DFC55F`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP12-FINAL-DISPOSITION`
+- **问题：** 此来源记录了什么：Task172 Step12 — final candidate disposition？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The 11 surviving Step01 candidates were re-audited against the Step02 route review and Step11 replay. The result is deliberately 0 new canonical additions.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step11 — three-input A/B replay](../reports/operations/ignition-172-20260915-step11-ab-replay.md)
+
+- **结果 ID：** `HR-4AC39DBA80C596A5`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP11-AB-REPLAY`
+- **问题：** 此来源记录了什么：Task172 Step11 — three-input A/B replay？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The three provenance-locked input bytes were available by their recorded SHA-256 values. A is the frozen Step01 relay baseline; B is the current read-only routing overlay plus compact index and exact canonical validation.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task172 Step10 — global corpus QA](../reports/operations/ignition-172-20260915-step10-global-corpus-qa.md)
+
+- **结果 ID：** `HR-A13879F03CB48A28`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `172-20260915-STEP10-GLOBAL-CORPUS-QA`
+- **问题：** 此来源记录了什么：Task172 Step10 — global corpus QA？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: PASSWITHEXPLICITDEFICITS
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
 ### [Task172 Step09 field 72: PHILOSOPHY](../reports/operations/ignition-172-20260915-step09-field-72.md)
 
 - **结果 ID：** `HR-E209CF9B12FF43A0`
@@ -4818,7 +4870,7 @@
 - **来源任务/运行：** `172-20260915-STEP07-ROUTING-INDEX`
 - **问题：** 此来源记录了什么：IGNITION-172 Step07 — Knowledge Experience routing index？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** This logical step is based on exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218.
+- **来源摘要：** This logical step is based on exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -4844,7 +4896,7 @@
 - **来源任务/运行：** `172-20260914-STEP06-NONFUNCTION-ROUTING`
 - **问题：** 此来源记录了什么：IGNITION-172 Step06 — full nonfunction claim routing overlay？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** This logical step is based on the exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218.
+- **来源摘要：** This logical step is based on the exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -4857,7 +4909,7 @@
 - **来源任务/运行：** `172-20260914-STEP05-FUNCTION-ROUTING`
 - **问题：** 此来源记录了什么：IGNITION-172 Step05 — full function asset routing overlay？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** This logical step is based on the exact frozen parent 13ec32014e29db8d8d1590c41ca0d4cde694736d on the existing Task172 branch and Draft PR 218.
+- **来源摘要：** This logical step is based on the exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
@@ -5809,6 +5861,19 @@
 - **问题：** 此来源记录了什么：IGNITION-121Q6C 执行结果？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** 执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260915-178 — Task172 final closeout](../agent-results/IGNITION-20260915-178-result.md)
+
+- **结果 ID：** `HR-9C2EB035EBEDFF6A`
+- **日期：** 2026-09-15
+- **来源任务/运行：** `202`
+- **问题：** 此来源记录了什么：IGNITION-20260915-178 — Task172 final closeout？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This receipt records the state observed before Task178 writes. It is not a claim about external truth or CI beyond the named exact head and checks.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

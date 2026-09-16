@@ -2,8 +2,8 @@
   "asset_kind": "NONFUNCTION_CLAIM",
   "authority": {
     "path": "data/foundation/nonfunction-claims/claim-registry.jsonl",
-    "rows": 17982,
-    "sha256": "7933d44f1831ddd035c23dc25d4ad4b7dfa4efc8f582de5baed475579b5f2d9c"
+    "rows": 18003,
+    "sha256": "9bdab7b3f037d209c800092fe33ab7ea10c339c9e3016dc771c8c9ef423b77f7"
   },
   "canonical_mutation": false,
   "command_sources": [
@@ -25,7 +25,7 @@
   ],
   "decision": "STEP06_FULL_NONFUNCTION_CLAIM_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQUIRED; NO_CANONICAL_MUTATION",
   "field_counts": {
-    "12": 3746,
+    "12": 3749,
     "22": 663,
     "23": 6,
     "24": 132,
@@ -34,13 +34,13 @@
     "52": 10,
     "53": 202,
     "54": 25,
-    "55": 660,
-    "56": 463,
-    "57": 251,
+    "55": 661,
+    "56": 464,
+    "57": 252,
     "58": 126,
-    "59": 849,
-    "61": 682,
-    "62": 2463,
+    "59": 851,
+    "61": 683,
+    "62": 2471,
     "63": 302,
     "71": 21,
     "72": 700
@@ -54,23 +54,23 @@
     "orphan": 0,
     "source_fingerprint_mismatch": 0
   },
-  "manual_review_required": 17982,
-  "negative_boundary_rows": 9873,
+  "manual_review_required": 18003,
+  "negative_boundary_rows": 9885,
   "network": false,
   "overlay": {
     "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
-    "rows": 17982,
-    "sha256": "1f16a976f30e68298a7418c7d4b26df4846e9bb3b9f610c051d535d7aaa6bc06"
+    "rows": 18003,
+    "sha256": "f93672dd1acd9bade575271f11c529f7914a6064315396d97567d2e48785b06c"
   },
-  "report_sha256": "f4d7b0b4db081f8f2912c2b628693cc7d688606d34be8deaf2c1aca93c4d229d",
+  "report_sha256": "984d3051a12dcaa431d727ece880963d4e37d21cca54aa02f26bc876a99283b9",
   "schema": "task172-full-routing-operation-v1",
-  "source_exact_head": "13ec32014e29db8d8d1590c41ca0d4cde694736d",
-  "source_freeze_sha256": "02e3775536eeeccf1df91412a36a292a4575a6fceb635fa5b566d625e16f9bb9",
+  "source_exact_head": "03a2b33cced830418cc310a59b519fca8d10f2fa",
+  "source_freeze_sha256": "4c1efbdb69ac7ac576f81258f66ecfea369fe039ac15d2a9b256d1b01b46f603",
   "state_counts": {
-    "CLASSIFIED": 7673,
-    "MULTIDISCIPLINARY": 2107,
-    "OUT_OF_UNESCO_SCOPE": 1881,
-    "UNRESOLVED": 6321
+    "CLASSIFIED": 7684,
+    "MULTIDISCIPLINARY": 2110,
+    "OUT_OF_UNESCO_SCOPE": 1885,
+    "UNRESOLVED": 6324
   },
   "step": "Task172 Step06",
   "taxonomy": {

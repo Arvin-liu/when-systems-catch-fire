@@ -319,6 +319,13 @@
 - 5 分钟：主题：Object classification；Classification is conservative. Names containing function do not establish totality, single-valuedness, a domain or codomain. Strong labels remain unverified until a proof artifact is linked.
 - 完整阅读：[reports/foundation-architecture/object-classification-20260712.md](../../reports/foundation-architecture/object-classification-20260712.md)
 
+<a id="reading-hr-2f64159284453379"></a>
+## Task172 Step13 — final closeout freeze
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：This report records the pre-freeze scan-sensitive input set for the final official derivation chain. The Step10, Step11, and Step12 machine records and reports are present before the freeze. Their hashes, the primary UNESCO parse/discrepancy inputs, the 24-field corpus, and the Step07 routing inp… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step13 — final closeout freeze；This report records the pre-freeze scan-sensitive input set for the final official derivation chain. The Step10, Step11, and Step12 machine records and reports are present before the freeze. Their hashes, the primary UNESCO parse/discrepancy inputs, the 24-field corpus, and the Step07 routing inputs are recorded in data/operations/iterations/172/step13-final…；The freeze semantics are conservative: 2026-07-30 in Knowledge Experience and 2026-07-29 in Human Results are versioned fixed-epoch/source-history labels, not wall-clock build or evaluation timestamps. Operation/research Markdown is intentionally Human-Result navigation and is also source-scanned by the nonfunction claim closure as bounded source wording; th…；This is the pre-capability-inheritance comparison baseline boundary. It does not authorize Capability Inheritance, MetaRSI, RSI², self-training, or a new control plane.
+- 完整阅读：[reports/operations/ignition-172-20260915-step13-final-freeze.md](../../reports/operations/ignition-172-20260915-step13-final-freeze.md)
+
 <a id="reading-hr-2ffed40e044f68aa"></a>
 ## STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q28 肉身锚定的心智层级跃迁写作法审计；Status: READYFORGPTVERIFICATIONCANDIDATEONLY；repository: Arvin-liu/when-systems-catch-fire；starting origin/main: b396c136b47d8fd60ca513a531cb96ce65293d20；isolated branch: docs/121q28-embodied-cognitive-leap-writing-method-20260716；open-work conflict: no open PR or branch targeted the same Q28 method paths at task start; older open publication PRs #17-#21 remain separate historical candidates and were not modified.
 - 完整阅读：[reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md](../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
-
-<a id="reading-hr-3078ad77a2ea0d78"></a>
-## OpenClaw Adapter R1
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
-- 1 分钟：OpenClawAdapter is a narrow External Agent Federation boundary over the observed public openclaw agent CLI. The Step 00 probe recorded JSON output, UTF-8 message-file input, session-key/session-id pointers, and a bounded timeout. The adapter therefore uses: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：OpenClaw Adapter R1；OpenClawAdapter is a narrow External Agent Federation boundary over the observed public openclaw agent CLI. The Step 00 probe recorded JSON output, UTF-8 message-file input, session-key/session-id pointers, and a bounded timeout. The adapter therefore uses:；The command is assembled as literal argv with shell=False; task text never passes through shell interpolation. Gateway, channel, browser, device, private SQLite/session databases, OpenClaw memory, and the OpenClaw internal plan/tool loop remain OpenClaw-owned and are not copied into the Ignition OS. The adapter reports no progress, cancellation, or native re…；An executor-reported completion becomes COMPLETEDUNVALIDATED progress and a REQUIRESRECONCILIATION receipt until Ignition validators establish evidence. External session IDs are pointer-only references. Step 04 intentionally used captured JSON fixtures and injected runners; LIVESMOKENOTRUN because no external inference, channel action, configuration change,…；Official machine-facing reference: .
-- 完整阅读：[docs/architecture/openclaw-adapter-r1.md](../../docs/architecture/openclaw-adapter-r1.md)

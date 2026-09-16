@@ -9,5 +9,5 @@
 - [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0399}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-06.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
 - [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → overlay projection digest
-- [第 006 片](./operations_evidence/part-006.md)：2501—3000；O₁\(x,y\) := D177\(参数空间同构\)** → 中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt
-- [第 007 片](./operations_evidence/part-007.md)：3001—3205；中文：案例说明：维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\) → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 006 片](./operations_evidence/part-006.md)：2501—3000；O₁\(x,y\) := D177\(参数空间同构\)** → 中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ
+- [第 007 片](./operations_evidence/part-007.md)：3001—3210；中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

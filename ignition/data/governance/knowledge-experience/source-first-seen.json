@@ -31,6 +31,7 @@
     "agent-results/IGNITION-20260908-167-result.md": "2026-09-08",
     "agent-results/IGNITION-20260908-168-result.md": "2026-09-08",
     "agent-results/IGNITION-20260910-169-result.md": "2026-09-10",
+    "agent-results/IGNITION-20260915-178-result.md": "2026-09-15",
     "docs/architecture/adapter-sdk-r1.md": "2026-08-16",
     "docs/architecture/adaptive-relational-network.md": "2026-07-16",
     "docs/architecture/agent-platform-r2.md": "2026-08-16",
@@ -590,6 +591,10 @@
     "reports/operations/ignition-172-20260915-step09-field-63.md": "2026-09-15",
     "reports/operations/ignition-172-20260915-step09-field-71.md": "2026-09-15",
     "reports/operations/ignition-172-20260915-step09-field-72.md": "2026-09-15",
+    "reports/operations/ignition-172-20260915-step10-global-corpus-qa.md": "2026-09-15",
+    "reports/operations/ignition-172-20260915-step11-ab-replay.md": "2026-09-15",
+    "reports/operations/ignition-172-20260915-step12-final-disposition.md": "2026-09-15",
+    "reports/operations/ignition-172-20260915-step13-final-freeze.md": "2026-09-15",
     "reports/operations/ignition-172-step00-baseline-audit.md": "2026-09-12",
     "reports/operations/ignition-172-step01-collision-audit.md": "2026-09-13",
     "reports/operations/ignition-172-step02-route-review.md": "2026-09-13",
@@ -611,7 +616,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 609,
+  "entry_count": 614,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

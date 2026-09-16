@@ -1,0 +1,128 @@
+{
+  "schema": "task172-step10-global-corpus-qa-v1",
+  "task_id": "IGNITION-20260912-172",
+  "closeout_task_id": "IGNITION-20260915-178",
+  "observed_formal_commit_head": "03a2b33cced830418cc310a59b519fca8d10f2fa",
+  "verdict": "PASS_WITH_EXPLICIT_DEFICITS",
+  "claim_ceiling": "Repository-local corpus integrity and metadata governance only; no external truth, scholarly evidence, scientific relevance, provider taxonomy equivalence, or epistemic acceptance is inferred.",
+  "taxonomy": {
+    "primary_authority": "data/research/task172-gate-t-unesco-1988/primary-1988-parse.json",
+    "primary_parse_sha256": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a",
+    "fields_expected": 24,
+    "fields_covered": 24,
+    "field_coverage": "24/24",
+    "primary_four_digit_disciplines_expected": 245,
+    "primary_four_digit_disciplines_covered": 245,
+    "discipline_coverage": "245/245",
+    "primary_six_digit_subdisciplines": 2178,
+    "mirror_only_or_local_only_codes_mixed_into_primary": 0,
+    "missing_primary_taxonomy_anchors": 0,
+    "invalid_hierarchy": 0,
+    "unknown_primary_link_discipline_codes": 0,
+    "taxonomy_discrepancy_ledger_sha256": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f"
+  },
+  "coverage": {
+    "corpus_manifest_sha256": "4c791ab2fc52812a0cfaf83b50adc3d79e6db55e07241fc863abdba22e5fc94f",
+    "physical_records": 1802,
+    "discipline_links": 1960,
+    "links_per_primary_discipline": {
+      "min": 8,
+      "max": 8,
+      "all_disciplines_have_eight_links": true
+    },
+    "field_link_counts": {
+      "11": 48,
+      "12": 88,
+      "21": 56,
+      "22": 120,
+      "23": 64,
+      "24": 168,
+      "25": 104,
+      "31": 80,
+      "32": 120,
+      "33": 240,
+      "51": 32,
+      "52": 64,
+      "53": 104,
+      "54": 40,
+      "55": 56,
+      "56": 48,
+      "57": 48,
+      "58": 32,
+      "59": 88,
+      "61": 120,
+      "62": 32,
+      "63": 96,
+      "71": 40,
+      "72": 72
+    },
+    "orphan_physical_record_links": 0
+  },
+  "dedupe": {
+    "physical_records_sha256": "74035cf3a2bd4d1589574128e0dfc4c3b69931f4fe47abfbae09f0fa3b5023ba",
+    "discipline_links_sha256": "bb7bac3870a2c1a00a205c21b5890f8c0aa2922fcd4ca4156bb0e76cacdb66bf",
+    "duplicate_physical_record_ids": 0,
+    "duplicate_identity_keys": 0,
+    "discipline_link_key_duplicates": 0,
+    "many_to_many_links_preserved": true,
+    "repeated_title_year_groups_not_identity_duplicates": 46,
+    "identity_policy": "Normalized identity and provider provenance are retained; title/year collisions alone do not merge records or assert content equivalence."
+  },
+  "metadata_rights": {
+    "policy_sha256": "eacd29acdc15009c886afda9b2abcb5d4e4414992762ef8b99d3fca92f4ad1ba",
+    "metadata_only": true,
+    "abstract_or_fulltext_persisted": false,
+    "raw_provider_response_persisted": false,
+    "banned_content_key_hits": 0,
+    "evidence_promotion": false,
+    "proof_promotion": false,
+    "replication_promotion": false,
+    "records_missing_language": 1802,
+    "records_missing_rights_status": 1802,
+    "records_with_license_signals": 399,
+    "oa_status_is_not_content_license": true,
+    "rights_finding": "EXPLICIT_DEFICIT: license/OA signals are retained as metadata only; they do not authorize content archiving or evidence use."
+  },
+  "correction_retraction": {
+    "status_counts": {
+      "NOT_OBSERVED": 1793,
+      "UPDATED": 9,
+      "CORRECTED": 0,
+      "RETRACTED": 0,
+      "UNKNOWN": 0
+    },
+    "updated_records_remain_in_history": true,
+    "retracted_or_corrected_records_promoted_as_ordinary_positive_evidence": 0,
+    "manual_review_required_for_update_relation": true,
+    "finding": "The corpus preserves update signals and does not promote metadata rows to evidence; no silent deletion occurred."
+  },
+  "cross_domain_fairness": {
+    "selection_policy": "Deterministic metadata heuristic; 5-12 records per discipline is a target, not a hard quota.",
+    "discipline_selection_is_uniform_by_link_count": true,
+    "provider_record_distribution": {
+      "Crossref": 798,
+      "OpenAlex": 524,
+      "OpenAIRE": 405,
+      "PubMed E-utilities": 75
+    },
+    "records_missing_region": 1802,
+    "records_missing_language": 1802,
+    "regional_bias_measurement": "NOT_MEASURED",
+    "language_bias_measurement": "NOT_MEASURED",
+    "low_doi_humanities_law_arts_philosophy_bias_measurement": "NOT_MEASURED",
+    "fairness_finding": "EXPLICIT_DEFICIT: provider availability, language, region, DOI, and title/year metadata do not support a reliable cross-domain bias estimate in this metadata-only snapshot."
+  },
+  "data_quality_warnings": [
+    "68 records have no title in the persisted metadata.",
+    "3 records have unavailable publication year/date; one uses the sentinel year 9999 and must not be interpreted as a real publication year.",
+    "1203 records have no publication_date field.",
+    "Provider failure or missing metadata is not evidence that a field has no literature."
+  ],
+  "blocking_systemic_issue": false,
+  "inputs": {
+    "target_disciplines_sha256": "3b8f0cc2568b41ab0f8796f44fe090a0b26fc37be6b7eaa31a7b7a41b4680d56",
+    "target_disciplines_role": "one four-digit query seed per field; not the 245-row primary authority",
+    "step09_corpus_manifest": "data/external-research/unesco-general-knowledge-r1/step09-corpus/corpus-manifest.json",
+    "step09_corpus_policy": "data/external-research/unesco-general-knowledge-r1/step09-corpus/corpus-policy.json"
+  }
+}

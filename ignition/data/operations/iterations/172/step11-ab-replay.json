@@ -1,0 +1,139 @@
+{
+  "schema": "task172-step11-ab-replay-v1",
+  "task_id": "IGNITION-20260912-172",
+  "closeout_task_id": "IGNITION-20260915-178",
+  "run_mode": "READ_ONLY_RUN",
+  "input_binding": {
+    "gold": {
+      "label": "《我播种黄金》",
+      "input_sha256": "a783f0ceab5e585b61f4eda0ce4507732e0e090729242437530ef0debd9f83c5",
+      "availability": "LOCAL_PROVENANCE_LOCKED_BYTES_AVAILABLE"
+    },
+    "xujiu": {
+      "label": "《叙旧》",
+      "input_sha256": "cd4b6d587bb6b80d53eede8a7f863f710d0430bdcdcf5bb5237422b242b6d905",
+      "availability": "LOCAL_PROVENANCE_LOCKED_BYTES_AVAILABLE"
+    },
+    "rest": {
+      "label": "《大脑高效休息法》",
+      "input_sha256": "6d92ac39669875a0d2a0c5aeb887df319a712d1886313c394da5f50daf4202d1",
+      "availability": "LOCAL_PROVENANCE_LOCKED_BYTES_AVAILABLE"
+    }
+  },
+  "a_baseline": {
+    "definition": "FROZEN_STEP01_RELAY_BASELINE",
+    "source_artifact": "data/operations/iterations/172/step01-disposition-ledger.json",
+    "source_sha256": "558da274e1d6453954ab7d8e573663c2e36037179dd907edb9ad5e57b20d8c32",
+    "candidate_counts": {
+      "gold": 5,
+      "xujiu": 3,
+      "rest": 3
+    },
+    "retrieval_metrics": {
+      "valid_canonical_ids": "NOT_MEASURED",
+      "invalid_or_orphan_ids": "NOT_MEASURED",
+      "fallback_frequency": "NOT_MEASURED",
+      "duplicate_rate": "NOT_MEASURED",
+      "exact_validation_rate": "NOT_MEASURED",
+      "unresolved_rate": "NOT_MEASURED",
+      "execution_time": "NOT_MEASURED",
+      "peak_memory": "NOT_MEASURED"
+    },
+    "non_comparability_reason": "The frozen relay reports explicitly record bounded candidate dispositions but do not execute a full current-registry retrieval with canonical-ID validation, fallback accounting, or timing. No old-path metrics were fabricated."
+  },
+  "b_current_path": {
+    "definition": "CURRENT_ROUTING_OVERLAY_PLUS_COMPACT_INDEX_PLUS_EXACT_CANONICAL_VALIDATION_PLUS_EXPLICIT_FALLBACK",
+    "router": "ignition/tools/research/task172_routing.py:retrieve_candidates",
+    "pilot_queries": "data/research/task172-routing-r1/step07-routing-pilot-queries.json",
+    "pilot_queries_sha256": "842f21d294819cfe7989a8a0416c56ac59285e69dce00bbdc424bbb5f2aabb8a",
+    "compact_routing_index": "data/research/task172-routing-r1/step07-routing-index.json",
+    "compact_routing_index_sha256": "f9a4aba91ceb0729fb100d8c8aa2e0e2cb28737208b92b5b0aa13d2bf07bb3bd",
+    "routing_rows": {
+      "function": 6158,
+      "nonfunction": 18003,
+      "compact_index": 24161
+    },
+    "cases": [
+      {
+        "case_id": "gold-structural-analogy",
+        "input_tags": {
+          "asset_kinds": ["FUNCTION_ASSET", "NONFUNCTION_CLAIM"],
+          "unesco_field_codes": ["55", "62"],
+          "asset_role": ["ANALOGY_SOURCE"],
+          "collision_use": ["COMPARE"]
+        },
+        "candidate_count": 194,
+        "selected_count": 50,
+        "valid_canonical_ids": 50,
+        "invalid_or_orphan_ids": 0,
+        "fallback": false,
+        "duplicate_candidate_rate": 0.0,
+        "exact_canonical_validation_rate": 1.0,
+        "unresolved_rate": 0.0,
+        "retrieval_time_ms": 943.108,
+        "peak_memory_bytes_approx": 985088000,
+        "memory_measurement": "fresh child process, resource.getrusage ru_maxrss on macOS; not comparable to A",
+        "false_repo_lacks_incidence": "NOT_MEASURED",
+        "disposition": "INCONCLUSIVE",
+        "disposition_reason": "B demonstrates bounded exact retrieval, but A has no comparable executable retrieval measurement."
+      },
+      {
+        "case_id": "xujiu-literary-context",
+        "input_tags": {
+          "asset_kinds": ["FUNCTION_ASSET", "NONFUNCTION_CLAIM"],
+          "unesco_field_codes": ["55", "62"],
+          "asset_role": ["NARRATIVE_CASE"],
+          "collision_use": ["EXPLAIN"]
+        },
+        "candidate_count": 223,
+        "selected_count": 50,
+        "valid_canonical_ids": 50,
+        "invalid_or_orphan_ids": 0,
+        "fallback": false,
+        "duplicate_candidate_rate": 0.0,
+        "exact_canonical_validation_rate": 1.0,
+        "unresolved_rate": 0.0,
+        "retrieval_time_ms": 924.076,
+        "peak_memory_bytes_approx": 985350144,
+        "memory_measurement": "fresh child process, resource.getrusage ru_maxrss on macOS; not comparable to A",
+        "false_repo_lacks_incidence": "NOT_MEASURED",
+        "disposition": "INCONCLUSIVE",
+        "disposition_reason": "B demonstrates bounded exact retrieval, but A has no comparable executable retrieval measurement."
+      },
+      {
+        "case_id": "rest-evidence-boundary",
+        "input_tags": {
+          "asset_kinds": ["FUNCTION_ASSET", "NONFUNCTION_CLAIM"],
+          "unesco_field_codes": ["61"],
+          "asset_role": [],
+          "collision_use": ["EVIDENCE_CHECK", "MECHANISM_TEST"]
+        },
+        "candidate_count": 801,
+        "selected_count": 50,
+        "valid_canonical_ids": 50,
+        "invalid_or_orphan_ids": 0,
+        "fallback": false,
+        "duplicate_candidate_rate": 0.0,
+        "exact_canonical_validation_rate": 1.0,
+        "unresolved_rate": 0.0,
+        "retrieval_time_ms": 939.995,
+        "peak_memory_bytes_approx": 986054656,
+        "memory_measurement": "fresh child process, resource.getrusage ru_maxrss on macOS; not comparable to A",
+        "false_repo_lacks_incidence": "NOT_MEASURED",
+        "disposition": "INCONCLUSIVE",
+        "disposition_reason": "B demonstrates bounded exact retrieval, but A has no comparable executable retrieval measurement."
+      }
+    ]
+  },
+  "boundary_findings": {
+    "scholarly_metadata_records_in_b_routing_index": 0,
+    "scholarly_metadata_records": 1802,
+    "scholarly_material_promotion": 0,
+    "literature_or_interpretive_material_promoted_to_empirical_truth": 0,
+    "known_step01_duplicate_or_already_covered_candidates": 2,
+    "known_duplicates_in_b_selected_ids": 0,
+    "fallback_is_explicit": true,
+    "generalized_performance_claim": false,
+    "engineering_result": "B_REPLAY_EXECUTED_BOUNDED_EXACT_VALIDATION_PASS; A_B_COMPARATIVE_PERFORMANCE_INCONCLUSIVE"
+  }
+}

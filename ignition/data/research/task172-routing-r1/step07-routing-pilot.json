@@ -2242,7 +2242,7 @@
         ]
       },
       "result": {
-        "candidate_universe_size": 800,
+        "candidate_universe_size": 801,
         "coverage_warning": null,
         "derived_query_facets": {
           "collision_use": [
@@ -3183,7 +3183,7 @@
     "all_selected_exact": true,
     "fallback_reasons_explicit": true,
     "invalid_id_count": 0,
-    "max_candidate_universe": 800,
+    "max_candidate_universe": 801,
     "max_selected": 50
   },
   "pilot_scope": "bounded routing transparency only; not a replay adjudication",

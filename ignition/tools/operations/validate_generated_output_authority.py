@@ -22,6 +22,8 @@ historical_sealed_record). Free-string generators are rejected by the schema.
 Exit 0 on full pass, exit 1 on any failure.
 """
 
+from __future__ import annotations
+
 import argparse
 import hashlib
 import json
