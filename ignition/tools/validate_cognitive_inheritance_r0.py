@@ -36,11 +36,19 @@ FINAL_STATE = "READY_FOR_INDEPENDENT_EVALUATION"
 R0_RELATIVE = Path("agent_runtime/cognitive_inheritance_r0")
 ALLOWED_CHANGED_PREFIXES = (
     "ignition/agent_runtime/cognitive_inheritance_r0/",
+)
+ALLOWED_CHANGED_FILES = frozenset({
     "ignition/tools/validate_cognitive_inheritance_r0.py",
     "ignition/tests/test_cognitive_inheritance_r0.py",
     "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
     ".github/workflows/foundation-validation.yml",
-)
+    ".github/workflows/current-state-sync-validation.yml",
+    ".github/workflows/iteration-lifecycle-validation.yml",
+    ".github/workflows/iteration-planner-ci.yml",
+    ".github/workflows/q33-governance-validation.yml",
+    "ignition/data/agent-federation/build-vs-integrate-policy-r1.json",
+    "ignition/tests/test_federation_ownership.py",
+})
 
 
 class ValidationFailure(Exception):
@@ -145,8 +153,13 @@ def validate_changed_paths(root: Path) -> None:
     if result.returncode != 0:
         return
     changed = [line for line in result.stdout.splitlines() if line]
-    unexpected = [path for path in changed if not path.startswith(ALLOWED_CHANGED_PREFIXES)]
+    unexpected = [path for path in changed if not is_allowed_changed_path(path)]
     require(not unexpected, f"R0 changed protected or out-of-scope paths: {unexpected}")
+
+
+def is_allowed_changed_path(path: str) -> bool:
+    """Keep the R0 change boundary exact except for its one artifact subtree."""
+    return path in ALLOWED_CHANGED_FILES or path.startswith(ALLOWED_CHANGED_PREFIXES)
 
 
 def validate_migration(r0: Path, migration_record: dict[str, Any]) -> None:

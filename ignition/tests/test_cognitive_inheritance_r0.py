@@ -16,6 +16,7 @@ from agent_runtime.cognitive_inheritance_r0.src.contracts import (  # noqa: E402
 )
 from tools.validate_cognitive_inheritance_r0 import (  # noqa: E402
     FINAL_STATE,
+    is_allowed_changed_path,
     validate_all,
 )
 
@@ -43,6 +44,13 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
     def test_forbidden_private_surface_is_rejected(self) -> None:
         with self.assertRaises(ValueError):
             validate_no_forbidden_fields({"object": {"hidden_chain_of_thought": "not persisted"}})
+
+    def test_change_allowlist_is_exact_outside_the_r0_artifact_subtree(self) -> None:
+        self.assertTrue(is_allowed_changed_path(".github/workflows/q33-governance-validation.yml"))
+        self.assertTrue(is_allowed_changed_path("ignition/tests/test_federation_ownership.py"))
+        self.assertTrue(is_allowed_changed_path("ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json"))
+        self.assertFalse(is_allowed_changed_path(".github/workflows/unrelated.yml"))
+        self.assertFalse(is_allowed_changed_path("ignition/data/agent-federation/build-vs-integrate-policy-r1.json.bak"))
 
     def test_evaluator_package_is_not_builder_verdict(self) -> None:
         package = load_json(R0 / "packages" / "independent-evaluation-package.json")
