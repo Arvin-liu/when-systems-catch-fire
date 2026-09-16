@@ -79,6 +79,10 @@ jobs:
         run: python3 tools/research/validate_task172_step09.py --repo-root .
       - name: Test Task172 Step09 UNESCO field corpus
         run: python3 -m unittest tests.test_task172_step09 -v
+      - name: Validate Cognitive Inheritance & Evolution Architecture R0
+        run: python3 tools/validate_cognitive_inheritance_r0.py --repo-root .
+      - name: Test Cognitive Inheritance & Evolution Architecture R0
+        run: python3 -m unittest tests.test_cognitive_inheritance_r0 -v
       - name: Validate human result census and self-correction products
         run: |
           python3 tools/governance/build_human_results.py --check
