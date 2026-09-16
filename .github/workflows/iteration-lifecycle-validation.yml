@@ -7,7 +7,7 @@ name: iteration-lifecycle-validation
 
 on:
   pull_request:
-    branches: [main]
+    branches: [main, "work/IGNITION-20260912-172-knowledge-routing-universal-corpus"]
   push:
     branches: [main]
   workflow_dispatch:
