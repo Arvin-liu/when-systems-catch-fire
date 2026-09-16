@@ -38,6 +38,7 @@ ALLOWED_CHANGED_PREFIXES = (
     "ignition/agent_runtime/cognitive_inheritance_r0/",
     "ignition/tools/validate_cognitive_inheritance_r0.py",
     "ignition/tests/test_cognitive_inheritance_r0.py",
+    "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
     ".github/workflows/foundation-validation.yml",
 )
 
