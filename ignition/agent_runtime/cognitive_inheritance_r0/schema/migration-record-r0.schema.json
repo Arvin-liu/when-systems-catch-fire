@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/ignition/agent_runtime/cognitive_inheritance_r0/schema/migration-record-r0.schema.json",
+  "title": "Cognitive IR Migration Record R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "migration_id",
+    "task_id",
+    "source_schema_version",
+    "target_schema_version",
+    "source_record_ref",
+    "target_record_ref",
+    "adapter",
+    "preserved_fields",
+    "rejected_operations",
+    "lineage",
+    "rollback",
+    "status",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "migration-record-r0"},
+    "migration_id": {"const": "migration-cognitive-ir-r0a-to-r0b"},
+    "task_id": {"const": "IGNITION-20260916-179"},
+    "source_schema_version": {"const": "cognitive-ir-r0a"},
+    "target_schema_version": {"const": "cognitive-ir-r0b"},
+    "source_record_ref": {"type": "string", "minLength": 3},
+    "target_record_ref": {"type": "string", "minLength": 3},
+    "adapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation", "deterministic", "destructive_rewrite", "unknown_relation_policy"],
+      "properties": {
+        "operation": {"const": "BACKWARD_READABLE_ADAPTER"},
+        "deterministic": {"const": true},
+        "destructive_rewrite": {"const": false},
+        "unknown_relation_policy": {"const": "PRESERVE_AS_UNKNOWN_RELATION"}
+      }
+    },
+    "preserved_fields": {"type": "array", "minItems": 5, "items": {"type": "string", "minLength": 3}},
+    "rejected_operations": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 10}},
+    "lineage": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["lineage_id", "source_schema", "target_schema", "operation", "destructive_rewrite"],
+        "properties": {
+          "lineage_id": {"type": "string", "minLength": 3},
+          "source_schema": {"const": "cognitive-ir-r0a"},
+          "target_schema": {"const": "cognitive-ir-r0b"},
+          "operation": {"const": "BACKWARD_READABLE_ADAPTER"},
+          "destructive_rewrite": {"const": false}
+        }
+      }
+    },
+    "rollback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["available", "procedure"],
+      "properties": {
+        "available": {"const": true},
+        "procedure": {"type": "string", "minLength": 20}
+      }
+    },
+    "status": {"const": "READY_FOR_INDEPENDENT_EVALUATION"},
+    "claim_ceiling": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "text"],
+      "properties": {
+        "status": {"const": "MIGRATION_CONTRACT_ONLY"},
+        "text": {"type": "string", "minLength": 30}
+      }
+    }
+  }
+}
