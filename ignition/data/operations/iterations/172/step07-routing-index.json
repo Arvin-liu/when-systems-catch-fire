@@ -6,7 +6,7 @@
   "index": {
     "path": "data/research/task172-routing-r1/step07-routing-index.json",
     "rows": 24161,
-    "sha256": "f9a4aba91ceb0729fb100d8c8aa2e0e2cb28737208b92b5b0aa13d2bf07bb3bd"
+    "sha256": "239d66351135a3c43ce0a30e6e60fbab55db8f2ae7292f75d855763ed86e113b"
   },
   "knowledge_entrypoints": {
     "human_tags": "KNOWLEDGE/TAGS.md",
@@ -33,6 +33,6 @@
   ],
   "schema": "task172-step07-routing-index-operation-v1",
   "source_exact_head": "03a2b33cced830418cc310a59b519fca8d10f2fa",
-  "source_freeze_sha256": "842e95c14e0cece9cdfb916eb0b38f3d0e5b1f5483b81aea39469346d94a8ffb",
+  "source_freeze_sha256": "8afb65c8cd5b5202a56c8719a2e1b64280d298425a54df96c12907d1092ccb25",
   "step": "Task172 Step07"
 }

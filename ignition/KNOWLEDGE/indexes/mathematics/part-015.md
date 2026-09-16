@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明感知→调整→循环递归机制具有普适性，当前仅保留为历史候选。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3cb99b907341dc67 / 历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明感知→调整→循环递归机制具有普适性，当前仅保留为历史候选。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
 - [历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明所谓最优策略普遍形成稳定态，当前仅保留为历史候选。](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-ec7e317fecb9431e / 历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明所谓最优策略普遍形成稳定态，当前仅保留为历史候选。
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-d2213c04cc436efc / 向量方向×空间函数三元投影验证
   - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [否。`已迁移的历史函数来源/` 与 `已迁移的历史案例来源/` 未被读取全量正文，更未被修改。](../../../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a0e4f7d5ecb6fe80 / 否。`已迁移的历史函数来源/` 与 `已迁移的历史案例来源/` 未被读取全量正文，更未被修改。
+  - 来源：`outputs/audit/p1-collision-workflow-smoke-test-20260708.md`
   - 依赖：—；被引用：—

@@ -120,7 +120,7 @@
       "function_identity_cards": 6158,
       "function_quarantine_or_pending": 5006,
       "nonfunction_claims": 18003,
-      "nonfunction_quarantine_or_pending": 4995
+      "nonfunction_quarantine_or_pending": 4996
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "501a70046c736260aa15610fdb5d21e12d82982a8c9e5202b45ea8c530febf3c"
+      "sha256": "620648a1ec84cacb95166f9db12cb2216146ff8deb15494c06c5faa5575b6ffb"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -253,7 +253,7 @@
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "0246a195267f56bdd82b2f86a48ba40a21721fa1150ea044e228109342c9d140"
+      "sha256": "488a779ac98711c543b1a8ce5234628c286c687d00c371bdaa128a192ab946c8"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",

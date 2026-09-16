@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [否。`已迁移的历史函数来源/` 与 `已迁移的历史案例来源/` 未被读取全量正文，更未被修改。](../../../outputs/audit/p1-collision-workflow-smoke-test-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a0e4f7d5ecb6fe80 / 否。`已迁移的历史函数来源/` 与 `已迁移的历史案例来源/` 未被读取全量正文，更未被修改。
-  - 来源：`outputs/audit/p1-collision-workflow-smoke-test-20260708.md`
-  - 依赖：—；被引用：—
 - [否。`已迁移的历史函数来源/` 与 `已迁移的历史案例来源/` 零改动。](../../../outputs/audit/teacher-competition-first-real-collision-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-d4e43aba486dcf47 / 否。`已迁移的历史函数来源/` 与 `已迁移的历史案例来源/` 零改动。
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-3632aee4b7ed36b1 / 数学表达 / Expression: `F_{D320}\(x\) := M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n大σ中→a_excl中，社会n大σ大→a_excl大。a_excl\(社会\)
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D320；被引用：—
+- [数学表达 / Expression: `F_{D321}\(x\) := M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4dfad282163a3ed7 / 数学表达 / Expression: `F_{D321}\(x\) := M8的d_opt漂移时σ_opt跟着动：d_opt右移（学习升级）时σ_opt先升后降——初期新门控面增加分散度，后期门控面成熟降低分散度。σ_opt响应滞后于d_opt
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D321；被引用：—

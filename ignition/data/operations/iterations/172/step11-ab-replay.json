@@ -47,7 +47,7 @@
     "pilot_queries": "data/research/task172-routing-r1/step07-routing-pilot-queries.json",
     "pilot_queries_sha256": "842f21d294819cfe7989a8a0416c56ac59285e69dce00bbdc424bbb5f2aabb8a",
     "compact_routing_index": "data/research/task172-routing-r1/step07-routing-index.json",
-    "compact_routing_index_sha256": "f9a4aba91ceb0729fb100d8c8aa2e0e2cb28737208b92b5b0aa13d2bf07bb3bd",
+    "compact_routing_index_sha256": "239d66351135a3c43ce0a30e6e60fbab55db8f2ae7292f75d855763ed86e113b",
     "routing_rows": {
       "function": 6158,
       "nonfunction": 18003,

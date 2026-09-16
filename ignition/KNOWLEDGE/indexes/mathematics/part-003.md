@@ -2394,11 +2394,6 @@
   - 可搜索名称：NFC-224d6bb77fa4c047 / All 40 records previously labelled `UNPROVED_PROPOSITION` now have individual dossiers in `data/foundation/proofs/079-pr
   - 来源：`reports/foundation-architecture/40-proof-obligation-triage-20260713.md`
   - 依赖：—；被引用：—
-- [All Step10–12 source artifacts are now present before the final scan-input freeze. The remaining work is the official de](../../../agent-results/IGNITION-20260915-178-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-317964d78fafa063 / All Step10–12 source artifacts are now present before the final scan-input freeze. The remaining work is the official de
-  - 来源：`agent-results/IGNITION-20260915-178-result.md`
-  - 依赖：—；被引用：—
 - [allowlisting and negative novelty/proof checks.](../../../reports/operations/ignition-126-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-04f37cbce3aa8c41 / allowlisting and negative novelty/proof checks.
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-8930fc0f9a1044e0 / Assumption-scoped proofs and broad held-out numerical studies provide complementary validation surfaces.
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a](../../../CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0cf6cb3970c142cf / At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
+  - 来源：`CHANGELOG.md`
   - 依赖：—；被引用：—

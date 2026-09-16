@@ -5566,7 +5566,7 @@
 
 - 状态：`ADDED`
 - Delta：`CD-2F64159284453379`
-- 关联断言：['NFC-8976c814b456b343']
+- 关联断言：['NFC-36ecac2730323a4a']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

@@ -14,7 +14,7 @@
     {"path": "data/external-research/unesco-general-knowledge-r1/step09-corpus/physical-records.jsonl", "sha256": "74035cf3a2bd4d1589574128e0dfc4c3b69931f4fe47abfbae09f0fa3b5023ba"},
     {"path": "data/external-research/unesco-general-knowledge-r1/step09-corpus/discipline-links.jsonl", "sha256": "bb7bac3870a2c1a00a205c21b5890f8c0aa2922fcd4ca4156bb0e76cacdb66bf"},
     {"path": "data/research/task172-routing-r1/step07-routing-pilot-queries.json", "sha256": "842f21d294819cfe7989a8a0416c56ac59285e69dce00bbdc424bbb5f2aabb8a"},
-    {"path": "data/research/task172-routing-r1/step07-routing-index.json", "sha256": "75947acad6f8e38630c679211460c2cc876c050a971b40146dac186f76d993a4"},
+    {"path": "data/research/task172-routing-r1/step07-routing-index.json", "sha256": "239d66351135a3c43ce0a30e6e60fbab55db8f2ae7292f75d855763ed86e113b"},
     {"path": "data/operations/iterations/172/step01-disposition-ledger.json", "sha256": "558da274e1d6453954ab7d8e573663c2e36037179dd907edb9ad5e57b20d8c32"}
   ],
   "generator_sources": [

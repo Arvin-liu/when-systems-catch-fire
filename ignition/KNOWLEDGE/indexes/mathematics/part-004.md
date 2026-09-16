@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a](../../../CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0cf6cb3970c142cf / At that candidate commit, method 1.2.0 and map 0.2.0 remained Current and review was pending; the newer closeout entry a
-  - 来源：`CHANGELOG.md`
-  - 依赖：—；被引用：—
 - [attempt-specific scratch lifecycle.](../../../reports/operations/ignition-138-step02-filesystem-reproduction.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-f2c7030a5cd50e13 / attempt-specific scratch lifecycle.
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-937b78086b20a094 / for field in \("capability_lease_digest", "workspace_digest_before", "workspace_digest_after", "runtime_scratch_lifecycle
   - 来源：`agent_federation/live_attempt_ledger.py`
+  - 依赖：—；被引用：—
+- [Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s](../../../agent-results/IGNITION-20260822-133-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-300eb09a94965b6e / Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s
+  - 来源：`agent-results/IGNITION-20260822-133-result.md`
   - 依赖：—；被引用：—

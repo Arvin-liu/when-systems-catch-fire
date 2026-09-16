@@ -1751,7 +1751,7 @@
   - 依赖：—；被引用：—
 - [The freeze semantics are conservative: `2026-07-30` in Knowledge Experience and `2026-07-29` in Human Results are versio](../../../reports/operations/ignition-172-20260915-step13-final-freeze.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8976c814b456b343 / The freeze semantics are conservative: `2026-07-30` in Knowledge Experience and `2026-07-29` in Human Results are versio
+  - 可搜索名称：NFC-36ecac2730323a4a / The freeze semantics are conservative: `2026-07-30` in Knowledge Experience and `2026-07-29` in Human Results are versio
   - 来源：`reports/operations/ignition-172-20260915-step13-final-freeze.md`
   - 依赖：—；被引用：—
 - [The fresh public probe resolved `codex-cli 0.144.4`, received exit 0 from `--version` and `exec --help`, and observed pu](../../../reports/operations/ignition-142-step09-codex-blocker-audit.md)

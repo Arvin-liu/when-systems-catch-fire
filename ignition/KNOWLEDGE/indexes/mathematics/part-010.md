@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [Within the source-defined scope, 幽灵超指数衰减函数 is adjudicated as STATE_TRANSITION: D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D464 / Within the source-defined scope, 幽灵超指数衰减函数 is adjudicated as STATE_TRANSITION: D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D384, P17；被引用：—
 - [Within the source-defined scope, 幽灵跳变阻尼函数 is adjudicated as RELATION: \[D469\]\(docs/zh/functions/items/D469.md\)×D464深入碰撞——](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D470 / Within the source-defined scope, 幽灵跳变阻尼函数 is adjudicated as RELATION: \[D469\]\(docs/zh/functions/items/D469.md\)×D464深入碰撞——
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-f6ff4f2c7fed2abe / \| \[D313\]\( \) \| \[共存稳态条件函数\]\( \) \| F_{D313}\(x\) := M14的良性-恶性共存\(D299\)能持续的条件：良性子
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D274, D299, D313；被引用：—
+- [\| \[D314\]\( \) \| \[ΔΦ-P传导非线性阈值函数\]\( \) \| F_{D314}\(x\) := M1的ΔΦ通过P_sur](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-8c2461b17c14ae96 / \| \[D314\]\( \) \| \[ΔΦ-P传导非线性阈值函数\]\( \) \| F_{D314}\(x\) := M1的ΔΦ通过P_sur
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158, D260, D296, D314；被引用：—

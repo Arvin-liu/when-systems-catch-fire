@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [\| \[D314\]\( \) \| \[ΔΦ-P传导非线性阈值函数\]\( \) \| F_{D314}\(x\) := M1的ΔΦ通过P_sur](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8c2461b17c14ae96 / \| \[D314\]\( \) \| \[ΔΦ-P传导非线性阈值函数\]\( \) \| F_{D314}\(x\) := M1的ΔΦ通过P_sur
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158, D260, D296, D314；被引用：—
 - [\| \[D315\]\( \) \| \[多极小点竞争函数\]\( \) \| F_{D315}\(x\) := M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-dc0d8c819914eba1 / \| \[D315\]\( \) \| \[多极小点竞争函数\]\( \) \| F_{D315}\(x\) := M2的Φ\(μ\)在多个门控面参数差异大时可出现多个极小点
@@ -2502,5 +2497,10 @@
 - [与已知定理不冲突](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a517085fb7973130 / 与已知定理不冲突
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [与已知实验数据不冲突](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f53a592ddedc5f35 / 与已知实验数据不冲突
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—

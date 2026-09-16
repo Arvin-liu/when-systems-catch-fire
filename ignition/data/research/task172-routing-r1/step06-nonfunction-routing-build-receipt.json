@@ -20,7 +20,7 @@
   ],
   "counts": {
     "expected_rows": 18003,
-    "negative_boundary_rows": 9885,
+    "negative_boundary_rows": 9886,
     "rows": 18003
   },
   "decision": "STEP06_FULL_NONFUNCTION_CLAIM_ROUTING_OVERLAY_READY; MANUAL_REVIEW_REQUIRED; NO_CANONICAL_MUTATION",
@@ -35,7 +35,7 @@
     "source_fingerprint_mismatch": 0
   },
   "inputs": {
-    "authority": "9bdab7b3f037d209c800092fe33ab7ea10c339c9e3016dc771c8c9ef423b77f7",
+    "authority": "b8d9f009553729f97cf82bf70771795f3ba912259e866808cb99341a00a077ed",
     "discipline_count": "245",
     "field_count": "24",
     "field_labels_sha256": "fa35ba2caaef0119b5f53bee2a27a07b1ccda066591b1805b5ceeb4415828d22",
@@ -48,18 +48,18 @@
   "manual_review_required": 18003,
   "network": false,
   "outputs": {
-    "operation": "70e265adf6febf441f693a941fd6b41ac6e5f43543956ea3e6eab783b79e78e8",
-    "overlay": "f93672dd1acd9bade575271f11c529f7914a6064315396d97567d2e48785b06c",
-    "report": "984d3051a12dcaa431d727ece880963d4e37d21cca54aa02f26bc876a99283b9",
-    "source_freeze": "4c1efbdb69ac7ac576f81258f66ecfea369fe039ac15d2a9b256d1b01b46f603"
+    "operation": "e7480b7f348d7ef081bd8da5a339c6239b807cce47e04f16289954c31b1e95d9",
+    "overlay": "55367d68fd8e16dcad8ed91c97a9502ed2225d73c429e3d42fc793cf2908270a",
+    "report": "220c5d026cfdadf509dd23ac60bd915731795f7b085629ab80763ee322252278",
+    "source_freeze": "a5e6c42ddf028348a3066b0185557fc55ec591cfe4da50eb7dc71dab83809762"
   },
   "schema": "task172-full-routing-build-receipt-v1",
   "source_exact_head": "03a2b33cced830418cc310a59b519fca8d10f2fa",
   "state_counts": {
-    "CLASSIFIED": 7684,
+    "CLASSIFIED": 7683,
     "MULTIDISCIPLINARY": 2110,
     "OUT_OF_UNESCO_SCOPE": 1885,
-    "UNRESOLVED": 6324
+    "UNRESOLVED": 6325
   },
   "step": "Task172 Step06"
 }

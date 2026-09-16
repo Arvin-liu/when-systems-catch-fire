@@ -9,7 +9,7 @@
 ### `EXPLAIN`
 
 - 含义/可做什么：retrieve assets useful for bounded explanation; never a truth claim。
-- 当前记录数：4568；示例：`FUNCTION_ASSET:D107`, `FUNCTION_ASSET:D11`, `FUNCTION_ASSET:D114`。
+- 当前记录数：4567；示例：`FUNCTION_ASSET:D107`, `FUNCTION_ASSET:D11`, `FUNCTION_ASSET:D114`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `COMPARE`
@@ -39,13 +39,13 @@
 ### `COUNTEREXAMPLE`
 
 - 含义/可做什么：retrieve a negative or competing case for boundary testing。
-- 当前记录数：16332；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
+- 当前记录数：16333；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `EVIDENCE_CHECK`
 
 - 含义/可做什么：retrieve an asset whose evidence boundary needs checking。
-- 当前记录数：16493；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
+- 当前记录数：16494；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `METHOD_TRANSFER`
@@ -57,7 +57,7 @@
 ### `BOUNDARY_TEST`
 
 - 含义/可做什么：retrieve an asset for scope, ceiling or failure-condition review。
-- 当前记录数：2932；示例：`FUNCTION_ASSET:D182`, `FUNCTION_ASSET:D183`, `FUNCTION_ASSET:D184`。
+- 当前记录数：2931；示例：`FUNCTION_ASSET:D182`, `FUNCTION_ASSET:D183`, `FUNCTION_ASSET:D184`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ### `NORMATIVE_CHECK`
@@ -75,7 +75,7 @@
 ### `HISTORICAL_CONTEXT`
 
 - 含义/可做什么：retrieve historical or withdrawn context without positive promotion。
-- 当前记录数：14770；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
+- 当前记录数：14771；示例：`FUNCTION_ASSET:A0`, `FUNCTION_ASSET:A0004`, `FUNCTION_ASSET:A0036`。
 - 不适用：不能把命中标签写成事实、因果、证据支持、证明或 canonical promotion。
 
 ## UNESCO 分面

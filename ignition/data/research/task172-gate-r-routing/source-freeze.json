@@ -1,7 +1,7 @@
 {
   "authority_inputs": {
     "function_authority_sha256": "2b5a83c0e5ffe5c8199d4d8fa831b5e15832c9559614ce21b9a3d643cf6f3c16",
-    "nonfunction_authority_sha256": "9bdab7b3f037d209c800092fe33ab7ea10c339c9e3016dc771c8c9ef423b77f7"
+    "nonfunction_authority_sha256": "b8d9f009553729f97cf82bf70771795f3ba912259e866808cb99341a00a077ed"
   },
   "command_source": {
     "blob_sha": "98fd25bd1886cf8675992413d6c55d1e09b4502f",

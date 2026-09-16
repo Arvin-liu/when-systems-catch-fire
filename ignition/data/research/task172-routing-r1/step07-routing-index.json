@@ -581,7 +581,6 @@
         "NONFUNCTION_CLAIM:NFC-4354c4dd75b0cb30",
         "NONFUNCTION_CLAIM:NFC-43e9d5818d564a4e",
         "NONFUNCTION_CLAIM:NFC-44083fb1a47e5e87",
-        "NONFUNCTION_CLAIM:NFC-441a834fc57a9ba0",
         "NONFUNCTION_CLAIM:NFC-44961f40675d62e7",
         "NONFUNCTION_CLAIM:NFC-44a907424d2927b4",
         "NONFUNCTION_CLAIM:NFC-44c956761e2391e2",
@@ -1151,6 +1150,7 @@
         "NONFUNCTION_CLAIM:NFC-ade964e00a430154",
         "NONFUNCTION_CLAIM:NFC-ae40f626dca596c0",
         "NONFUNCTION_CLAIM:NFC-ae6a4cd8d714e912",
+        "NONFUNCTION_CLAIM:NFC-ae7dd015db115a5c",
         "NONFUNCTION_CLAIM:NFC-af089a75b012e6d1",
         "NONFUNCTION_CLAIM:NFC-af325ea56d01a0b3",
         "NONFUNCTION_CLAIM:NFC-af4a939b2e92ca61",
@@ -2347,6 +2347,7 @@
         "NONFUNCTION_CLAIM:NFC-31f53eb5fe3a9618",
         "NONFUNCTION_CLAIM:NFC-3208b93de7fa74cb",
         "NONFUNCTION_CLAIM:NFC-3252ea1bf7612dd8",
+        "NONFUNCTION_CLAIM:NFC-325efd7625dd86f3",
         "NONFUNCTION_CLAIM:NFC-326eaada193ae81d",
         "NONFUNCTION_CLAIM:NFC-328f2a184cb197f9",
         "NONFUNCTION_CLAIM:NFC-32967d5e4d3b4ed3",
@@ -3167,7 +3168,6 @@
         "NONFUNCTION_CLAIM:NFC-73f565e3d2517839",
         "NONFUNCTION_CLAIM:NFC-7408aa904694b2ea",
         "NONFUNCTION_CLAIM:NFC-7409fb17e6b92bbe",
-        "NONFUNCTION_CLAIM:NFC-740aa290eb882880",
         "NONFUNCTION_CLAIM:NFC-740e26039d13c931",
         "NONFUNCTION_CLAIM:NFC-743bb570f64eca86",
         "NONFUNCTION_CLAIM:NFC-74405a9924cee7b3",
@@ -11919,6 +11919,7 @@
         "NONFUNCTION_CLAIM:NFC-36cdb9b494e8a7a1",
         "NONFUNCTION_CLAIM:NFC-36dd2c540fa8d56e",
         "NONFUNCTION_CLAIM:NFC-36debf6dfdcec6a0",
+        "NONFUNCTION_CLAIM:NFC-36ecac2730323a4a",
         "NONFUNCTION_CLAIM:NFC-36f2ccf6bce439c7",
         "NONFUNCTION_CLAIM:NFC-370508d261417ffe",
         "NONFUNCTION_CLAIM:NFC-37105e08d8711492",
@@ -15076,7 +15077,6 @@
         "NONFUNCTION_CLAIM:NFC-8944e76a044982b3",
         "NONFUNCTION_CLAIM:NFC-8951f83ad4613fcf",
         "NONFUNCTION_CLAIM:NFC-895f3f18ce1f4770",
-        "NONFUNCTION_CLAIM:NFC-8976c814b456b343",
         "NONFUNCTION_CLAIM:NFC-8977140342204b91",
         "NONFUNCTION_CLAIM:NFC-8977f2439375a589",
         "NONFUNCTION_CLAIM:NFC-897aec44dd579147",
@@ -15754,6 +15754,7 @@
         "NONFUNCTION_CLAIM:NFC-9c512f25b874dab0",
         "NONFUNCTION_CLAIM:NFC-9c5468c6f6f37cfa",
         "NONFUNCTION_CLAIM:NFC-9c591a788e6666ed",
+        "NONFUNCTION_CLAIM:NFC-9c5b832e1a33eb99",
         "NONFUNCTION_CLAIM:NFC-9c69b1ffad302ab7",
         "NONFUNCTION_CLAIM:NFC-9c6b87cb1acba4be",
         "NONFUNCTION_CLAIM:NFC-9c6ffe04fddddcbd",
@@ -20215,7 +20216,6 @@
         "NONFUNCTION_CLAIM:NFC-2f6c3f542f93e749",
         "NONFUNCTION_CLAIM:NFC-30b41cfca7634d0c",
         "NONFUNCTION_CLAIM:NFC-30edb0aee7dd09de",
-        "NONFUNCTION_CLAIM:NFC-317964d78fafa063",
         "NONFUNCTION_CLAIM:NFC-3183c86b959f87a7",
         "NONFUNCTION_CLAIM:NFC-32099ff811b71c26",
         "NONFUNCTION_CLAIM:NFC-3220c1bbc93dc030",
@@ -27379,7 +27379,6 @@
         "NONFUNCTION_CLAIM:NFC-3173c19de9277855",
         "NONFUNCTION_CLAIM:NFC-3174573d77926519",
         "NONFUNCTION_CLAIM:NFC-3175815df6ffb55b",
-        "NONFUNCTION_CLAIM:NFC-317964d78fafa063",
         "NONFUNCTION_CLAIM:NFC-31799dd5cd3ea497",
         "NONFUNCTION_CLAIM:NFC-3183c86b959f87a7",
         "NONFUNCTION_CLAIM:NFC-31879983f18f091b",
@@ -27408,6 +27407,7 @@
         "NONFUNCTION_CLAIM:NFC-32471111278c605a",
         "NONFUNCTION_CLAIM:NFC-325424798d4295b4",
         "NONFUNCTION_CLAIM:NFC-325d6b63fd8ad5ce",
+        "NONFUNCTION_CLAIM:NFC-325efd7625dd86f3",
         "NONFUNCTION_CLAIM:NFC-3266d5604a429544",
         "NONFUNCTION_CLAIM:NFC-326eaada193ae81d",
         "NONFUNCTION_CLAIM:NFC-32737fce98d59cbc",
@@ -27530,6 +27530,7 @@
         "NONFUNCTION_CLAIM:NFC-36d6ed832d75d462",
         "NONFUNCTION_CLAIM:NFC-36dbc83c988fac6a",
         "NONFUNCTION_CLAIM:NFC-36dc476e0cfd4ba0",
+        "NONFUNCTION_CLAIM:NFC-36ecac2730323a4a",
         "NONFUNCTION_CLAIM:NFC-36f2ccf6bce439c7",
         "NONFUNCTION_CLAIM:NFC-36f5387afb31bded",
         "NONFUNCTION_CLAIM:NFC-37105e08d8711492",
@@ -29240,7 +29241,6 @@
         "NONFUNCTION_CLAIM:NFC-73ef99c5c9e579a0",
         "NONFUNCTION_CLAIM:NFC-73f3f09c5e5fab65",
         "NONFUNCTION_CLAIM:NFC-7409fb17e6b92bbe",
-        "NONFUNCTION_CLAIM:NFC-740aa290eb882880",
         "NONFUNCTION_CLAIM:NFC-740e26039d13c931",
         "NONFUNCTION_CLAIM:NFC-74148f005e15386a",
         "NONFUNCTION_CLAIM:NFC-743448250f277be3",
@@ -29854,7 +29854,6 @@
         "NONFUNCTION_CLAIM:NFC-8930fc0f9a1044e0",
         "NONFUNCTION_CLAIM:NFC-894fc15dc534aabf",
         "NONFUNCTION_CLAIM:NFC-8969726a07b17e5a",
-        "NONFUNCTION_CLAIM:NFC-8976c814b456b343",
         "NONFUNCTION_CLAIM:NFC-8977140342204b91",
         "NONFUNCTION_CLAIM:NFC-8978fa434df0c502",
         "NONFUNCTION_CLAIM:NFC-8979dfde1ea8c695",
@@ -40703,7 +40702,6 @@
         "NONFUNCTION_CLAIM:NFC-43ed9ee882071037",
         "NONFUNCTION_CLAIM:NFC-43feee556b385436",
         "NONFUNCTION_CLAIM:NFC-441127f3ba52b7aa",
-        "NONFUNCTION_CLAIM:NFC-441a834fc57a9ba0",
         "NONFUNCTION_CLAIM:NFC-442c1d1bd3752a4e",
         "NONFUNCTION_CLAIM:NFC-44961f40675d62e7",
         "NONFUNCTION_CLAIM:NFC-449684116f7d8aa1",
@@ -41473,6 +41471,7 @@
         "NONFUNCTION_CLAIM:NFC-adfb6b834c7fda2e",
         "NONFUNCTION_CLAIM:NFC-ae53c461a00a2c88",
         "NONFUNCTION_CLAIM:NFC-ae59de0a5949184c",
+        "NONFUNCTION_CLAIM:NFC-ae7dd015db115a5c",
         "NONFUNCTION_CLAIM:NFC-ae8fc883b7ec1992",
         "NONFUNCTION_CLAIM:NFC-aebb542f6c24e785",
         "NONFUNCTION_CLAIM:NFC-af4a939b2e92ca61",
@@ -45897,6 +45896,7 @@
         "NONFUNCTION_CLAIM:NFC-9c3ce24baa0bb2cc",
         "NONFUNCTION_CLAIM:NFC-9c4dbf792ce6fa24",
         "NONFUNCTION_CLAIM:NFC-9c591a788e6666ed",
+        "NONFUNCTION_CLAIM:NFC-9c5b832e1a33eb99",
         "NONFUNCTION_CLAIM:NFC-9c84e744bb559c3c",
         "NONFUNCTION_CLAIM:NFC-9c86bddc245c1ade",
         "NONFUNCTION_CLAIM:NFC-9c941a5eedee2ff9",
@@ -49390,7 +49390,6 @@
         "NONFUNCTION_CLAIM:NFC-30edb0aee7dd09de",
         "NONFUNCTION_CLAIM:NFC-310d37809c7ed938",
         "NONFUNCTION_CLAIM:NFC-31514f9c554d0927",
-        "NONFUNCTION_CLAIM:NFC-317964d78fafa063",
         "NONFUNCTION_CLAIM:NFC-3183c86b959f87a7",
         "NONFUNCTION_CLAIM:NFC-31b0bf20b8a4299d",
         "NONFUNCTION_CLAIM:NFC-32099ff811b71c26",
@@ -49576,7 +49575,6 @@
         "NONFUNCTION_CLAIM:NFC-43e82f8f519ea33c",
         "NONFUNCTION_CLAIM:NFC-43e9d5818d564a4e",
         "NONFUNCTION_CLAIM:NFC-44083fb1a47e5e87",
-        "NONFUNCTION_CLAIM:NFC-441a834fc57a9ba0",
         "NONFUNCTION_CLAIM:NFC-4474804562e3cc34",
         "NONFUNCTION_CLAIM:NFC-44961f40675d62e7",
         "NONFUNCTION_CLAIM:NFC-44a74aec4414a843",
@@ -50581,6 +50579,7 @@
         "NONFUNCTION_CLAIM:NFC-ade964e00a430154",
         "NONFUNCTION_CLAIM:NFC-ae40f626dca596c0",
         "NONFUNCTION_CLAIM:NFC-ae6a4cd8d714e912",
+        "NONFUNCTION_CLAIM:NFC-ae7dd015db115a5c",
         "NONFUNCTION_CLAIM:NFC-ae7f8d72c2f0417c",
         "NONFUNCTION_CLAIM:NFC-aed5ca38418e6797",
         "NONFUNCTION_CLAIM:NFC-af089a75b012e6d1",
@@ -53423,7 +53422,6 @@
         "NONFUNCTION_CLAIM:NFC-4354c4dd75b0cb30",
         "NONFUNCTION_CLAIM:NFC-43e9d5818d564a4e",
         "NONFUNCTION_CLAIM:NFC-44083fb1a47e5e87",
-        "NONFUNCTION_CLAIM:NFC-441a834fc57a9ba0",
         "NONFUNCTION_CLAIM:NFC-44961f40675d62e7",
         "NONFUNCTION_CLAIM:NFC-44a907424d2927b4",
         "NONFUNCTION_CLAIM:NFC-44c956761e2391e2",
@@ -53993,6 +53991,7 @@
         "NONFUNCTION_CLAIM:NFC-ade964e00a430154",
         "NONFUNCTION_CLAIM:NFC-ae40f626dca596c0",
         "NONFUNCTION_CLAIM:NFC-ae6a4cd8d714e912",
+        "NONFUNCTION_CLAIM:NFC-ae7dd015db115a5c",
         "NONFUNCTION_CLAIM:NFC-af089a75b012e6d1",
         "NONFUNCTION_CLAIM:NFC-af325ea56d01a0b3",
         "NONFUNCTION_CLAIM:NFC-af4a939b2e92ca61",
@@ -61842,6 +61841,7 @@
         "NONFUNCTION_CLAIM:NFC-36debf6dfdcec6a0",
         "NONFUNCTION_CLAIM:NFC-36e049226d919413",
         "NONFUNCTION_CLAIM:NFC-36e5087a7344ff6a",
+        "NONFUNCTION_CLAIM:NFC-36ecac2730323a4a",
         "NONFUNCTION_CLAIM:NFC-36f2ccf6bce439c7",
         "NONFUNCTION_CLAIM:NFC-36f5387afb31bded",
         "NONFUNCTION_CLAIM:NFC-370508d261417ffe",
@@ -65486,7 +65486,6 @@
         "NONFUNCTION_CLAIM:NFC-895f3f18ce1f4770",
         "NONFUNCTION_CLAIM:NFC-89661ce5cba311b2",
         "NONFUNCTION_CLAIM:NFC-8968c1a919da9262",
-        "NONFUNCTION_CLAIM:NFC-8976c814b456b343",
         "NONFUNCTION_CLAIM:NFC-8977140342204b91",
         "NONFUNCTION_CLAIM:NFC-8977f2439375a589",
         "NONFUNCTION_CLAIM:NFC-8978fa434df0c502",
@@ -66267,6 +66266,7 @@
         "NONFUNCTION_CLAIM:NFC-9c512f25b874dab0",
         "NONFUNCTION_CLAIM:NFC-9c5468c6f6f37cfa",
         "NONFUNCTION_CLAIM:NFC-9c591a788e6666ed",
+        "NONFUNCTION_CLAIM:NFC-9c5b832e1a33eb99",
         "NONFUNCTION_CLAIM:NFC-9c69b1ffad302ab7",
         "NONFUNCTION_CLAIM:NFC-9c6b87cb1acba4be",
         "NONFUNCTION_CLAIM:NFC-9c6ffe04fddddcbd",
@@ -78051,6 +78051,7 @@
         "NONFUNCTION_CLAIM:NFC-32471111278c605a",
         "NONFUNCTION_CLAIM:NFC-324eb747337ccaeb",
         "NONFUNCTION_CLAIM:NFC-3257f95c45007b7b",
+        "NONFUNCTION_CLAIM:NFC-325efd7625dd86f3",
         "NONFUNCTION_CLAIM:NFC-32601a753786c890",
         "NONFUNCTION_CLAIM:NFC-3266d5604a429544",
         "NONFUNCTION_CLAIM:NFC-327e15ff9aa41084",
@@ -78257,6 +78258,7 @@
         "NONFUNCTION_CLAIM:NFC-36cdb9b494e8a7a1",
         "NONFUNCTION_CLAIM:NFC-36dd2c540fa8d56e",
         "NONFUNCTION_CLAIM:NFC-36debf6dfdcec6a0",
+        "NONFUNCTION_CLAIM:NFC-36ecac2730323a4a",
         "NONFUNCTION_CLAIM:NFC-36f2ccf6bce439c7",
         "NONFUNCTION_CLAIM:NFC-370508d261417ffe",
         "NONFUNCTION_CLAIM:NFC-37105e08d8711492",
@@ -80960,7 +80962,6 @@
         "NONFUNCTION_CLAIM:NFC-73f3f09c5e5fab65",
         "NONFUNCTION_CLAIM:NFC-73f72d8bd106c02a",
         "NONFUNCTION_CLAIM:NFC-73f9c033f720d844",
-        "NONFUNCTION_CLAIM:NFC-740aa290eb882880",
         "NONFUNCTION_CLAIM:NFC-74148f005e15386a",
         "NONFUNCTION_CLAIM:NFC-741967093cca0a05",
         "NONFUNCTION_CLAIM:NFC-7423881f86a5bf72",
@@ -81928,7 +81929,6 @@
         "NONFUNCTION_CLAIM:NFC-8951f83ad4613fcf",
         "NONFUNCTION_CLAIM:NFC-895f3f18ce1f4770",
         "NONFUNCTION_CLAIM:NFC-8969726a07b17e5a",
-        "NONFUNCTION_CLAIM:NFC-8976c814b456b343",
         "NONFUNCTION_CLAIM:NFC-8977140342204b91",
         "NONFUNCTION_CLAIM:NFC-8977f2439375a589",
         "NONFUNCTION_CLAIM:NFC-897aec44dd579147",
@@ -82717,6 +82717,7 @@
         "NONFUNCTION_CLAIM:NFC-9c512f25b874dab0",
         "NONFUNCTION_CLAIM:NFC-9c5468c6f6f37cfa",
         "NONFUNCTION_CLAIM:NFC-9c591a788e6666ed",
+        "NONFUNCTION_CLAIM:NFC-9c5b832e1a33eb99",
         "NONFUNCTION_CLAIM:NFC-9c69b1ffad302ab7",
         "NONFUNCTION_CLAIM:NFC-9c6b87cb1acba4be",
         "NONFUNCTION_CLAIM:NFC-9c6ffe04fddddcbd",
@@ -89454,7 +89455,6 @@
         "NONFUNCTION_CLAIM:NFC-3105c1372a644df8",
         "NONFUNCTION_CLAIM:NFC-310aa6caf348c6c6",
         "NONFUNCTION_CLAIM:NFC-31405049f7fb315e",
-        "NONFUNCTION_CLAIM:NFC-317964d78fafa063",
         "NONFUNCTION_CLAIM:NFC-3183c86b959f87a7",
         "NONFUNCTION_CLAIM:NFC-3193ba1c0e9a2251",
         "NONFUNCTION_CLAIM:NFC-31f1b9e24c951356",
@@ -98873,6 +98873,7 @@
         "NONFUNCTION_CLAIM:NFC-36cdb9b494e8a7a1",
         "NONFUNCTION_CLAIM:NFC-36dd2c540fa8d56e",
         "NONFUNCTION_CLAIM:NFC-36debf6dfdcec6a0",
+        "NONFUNCTION_CLAIM:NFC-36ecac2730323a4a",
         "NONFUNCTION_CLAIM:NFC-36f2ccf6bce439c7",
         "NONFUNCTION_CLAIM:NFC-370508d261417ffe",
         "NONFUNCTION_CLAIM:NFC-37105e08d8711492",
@@ -102030,7 +102031,6 @@
         "NONFUNCTION_CLAIM:NFC-8944e76a044982b3",
         "NONFUNCTION_CLAIM:NFC-8951f83ad4613fcf",
         "NONFUNCTION_CLAIM:NFC-895f3f18ce1f4770",
-        "NONFUNCTION_CLAIM:NFC-8976c814b456b343",
         "NONFUNCTION_CLAIM:NFC-8977140342204b91",
         "NONFUNCTION_CLAIM:NFC-8977f2439375a589",
         "NONFUNCTION_CLAIM:NFC-897aec44dd579147",
@@ -102708,6 +102708,7 @@
         "NONFUNCTION_CLAIM:NFC-9c512f25b874dab0",
         "NONFUNCTION_CLAIM:NFC-9c5468c6f6f37cfa",
         "NONFUNCTION_CLAIM:NFC-9c591a788e6666ed",
+        "NONFUNCTION_CLAIM:NFC-9c5b832e1a33eb99",
         "NONFUNCTION_CLAIM:NFC-9c69b1ffad302ab7",
         "NONFUNCTION_CLAIM:NFC-9c6b87cb1acba4be",
         "NONFUNCTION_CLAIM:NFC-9c6ffe04fddddcbd",
@@ -110073,7 +110074,6 @@
         "NONFUNCTION_CLAIM:NFC-31078d331e5790d7",
         "NONFUNCTION_CLAIM:NFC-3123275a55010806",
         "NONFUNCTION_CLAIM:NFC-31592bd7220a7681",
-        "NONFUNCTION_CLAIM:NFC-317964d78fafa063",
         "NONFUNCTION_CLAIM:NFC-31799dd5cd3ea497",
         "NONFUNCTION_CLAIM:NFC-3183c86b959f87a7",
         "NONFUNCTION_CLAIM:NFC-319cc45a7fd205d1",
@@ -115148,6 +115148,7 @@
         "NONFUNCTION_CLAIM:NFC-35b945d5f14601c7",
         "NONFUNCTION_CLAIM:NFC-35e28dd86a8149d0",
         "NONFUNCTION_CLAIM:NFC-3666c1bc47594302",
+        "NONFUNCTION_CLAIM:NFC-36ecac2730323a4a",
         "NONFUNCTION_CLAIM:NFC-36f9361f3c980f29",
         "NONFUNCTION_CLAIM:NFC-37bd7645ad113fae",
         "NONFUNCTION_CLAIM:NFC-37d4cd5e1ea140dc",
@@ -115348,7 +115349,6 @@
         "NONFUNCTION_CLAIM:NFC-87b7f350c0fba379",
         "NONFUNCTION_CLAIM:NFC-8936ceb6994026c2",
         "NONFUNCTION_CLAIM:NFC-8968c1a919da9262",
-        "NONFUNCTION_CLAIM:NFC-8976c814b456b343",
         "NONFUNCTION_CLAIM:NFC-897aec44dd579147",
         "NONFUNCTION_CLAIM:NFC-89ea9a4dff56fb23",
         "NONFUNCTION_CLAIM:NFC-8b639fc897c5e2ee",
@@ -119040,6 +119040,7 @@
         "NONFUNCTION_CLAIM:NFC-31a5c1bad1c53590",
         "NONFUNCTION_CLAIM:NFC-31ba7a6ed1fb4eea",
         "NONFUNCTION_CLAIM:NFC-31d67cb62a263e72",
+        "NONFUNCTION_CLAIM:NFC-325efd7625dd86f3",
         "NONFUNCTION_CLAIM:NFC-328f2a184cb197f9",
         "NONFUNCTION_CLAIM:NFC-32b4c965a4a8562b",
         "NONFUNCTION_CLAIM:NFC-32ba61617e4b55f7",
@@ -119646,7 +119647,6 @@
         "NONFUNCTION_CLAIM:NFC-73b9ca25343307b8",
         "NONFUNCTION_CLAIM:NFC-73d37109de031788",
         "NONFUNCTION_CLAIM:NFC-73f32b34aca07f9f",
-        "NONFUNCTION_CLAIM:NFC-740aa290eb882880",
         "NONFUNCTION_CLAIM:NFC-740e26039d13c931",
         "NONFUNCTION_CLAIM:NFC-74405a9924cee7b3",
         "NONFUNCTION_CLAIM:NFC-74405e2eac228948",
@@ -309492,25 +309492,6 @@
     {
       "asset_kind": "NONFUNCTION_CLAIM",
       "asset_role": [
-        "METHOD_TRANSFER"
-      ],
-      "canonical_id": "NFC-317964d78fafa063",
-      "classification_state": "CLASSIFIED",
-      "collision_use": [
-        "BOUNDARY_TEST",
-        "EXPLAIN"
-      ],
-      "routing_confidence": 0.85,
-      "source_record_sha": "db50740db81aaa663f95b93849afc7dfa4320ec78bcfb7234e5973809bddbfdc",
-      "topic": [],
-      "unesco_discipline_codes": [],
-      "unesco_field_codes": [
-        "12"
-      ]
-    },
-    {
-      "asset_kind": "NONFUNCTION_CLAIM",
-      "asset_role": [
         "HISTORICAL_CONTEXT"
       ],
       "canonical_id": "NFC-31799dd5cd3ea497",
@@ -310589,6 +310570,24 @@
       "unesco_discipline_codes": [],
       "unesco_field_codes": [
         "72"
+      ]
+    },
+    {
+      "asset_kind": "NONFUNCTION_CLAIM",
+      "asset_role": [
+        "EVIDENCE_CHECK"
+      ],
+      "canonical_id": "NFC-325efd7625dd86f3",
+      "classification_state": "CLASSIFIED",
+      "collision_use": [
+        "EVIDENCE_CHECK"
+      ],
+      "routing_confidence": 0.6,
+      "source_record_sha": "2bf6d192932d40df185b87508c991caf2651082f9bce1c2ef3c12dd4d2145443",
+      "topic": [],
+      "unesco_discipline_codes": [],
+      "unesco_field_codes": [
+        "62"
       ]
     },
     {
@@ -316463,6 +316462,26 @@
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": []
+    },
+    {
+      "asset_kind": "NONFUNCTION_CLAIM",
+      "asset_role": [
+        "HISTORICAL_CONTEXT"
+      ],
+      "canonical_id": "NFC-36ecac2730323a4a",
+      "classification_state": "CLASSIFIED",
+      "collision_use": [
+        "COUNTEREXAMPLE",
+        "EVIDENCE_CHECK",
+        "HISTORICAL_CONTEXT"
+      ],
+      "routing_confidence": 0.85,
+      "source_record_sha": "4ffbd974dbf6ce25156056ed0140e8b7a593854f61ca8eae9fde64736d8531c3",
+      "topic": [],
+      "unesco_discipline_codes": [],
+      "unesco_field_codes": [
+        "55"
+      ]
     },
     {
       "asset_kind": "NONFUNCTION_CLAIM",
@@ -333120,23 +333139,6 @@
       ],
       "routing_confidence": 0.2,
       "source_record_sha": "4dd9a8e6fc84e5c586cde67ecbabe0d545a64752c29f6c8a81f8d5bed20848c0",
-      "topic": [],
-      "unesco_discipline_codes": [],
-      "unesco_field_codes": []
-    },
-    {
-      "asset_kind": "NONFUNCTION_CLAIM",
-      "asset_role": [
-        "ANALOGY_SOURCE"
-      ],
-      "canonical_id": "NFC-441a834fc57a9ba0",
-      "classification_state": "OUT_OF_UNESCO_SCOPE",
-      "collision_use": [
-        "BOUNDARY_TEST",
-        "COMPARE"
-      ],
-      "routing_confidence": 0.2,
-      "source_record_sha": "e49bbe63a52ad64c57fdf2f0b4dae4778f8f2d74587063ea9194bb3b741a8754",
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": []
@@ -392753,24 +392755,6 @@
       "asset_role": [
         "EVIDENCE_CHECK"
       ],
-      "canonical_id": "NFC-740aa290eb882880",
-      "classification_state": "CLASSIFIED",
-      "collision_use": [
-        "EVIDENCE_CHECK"
-      ],
-      "routing_confidence": 0.6,
-      "source_record_sha": "aeb01d1e6a4286ac9356073f192eec7b8a96eb919573dab30791ebbba54b6d49",
-      "topic": [],
-      "unesco_discipline_codes": [],
-      "unesco_field_codes": [
-        "62"
-      ]
-    },
-    {
-      "asset_kind": "NONFUNCTION_CLAIM",
-      "asset_role": [
-        "EVIDENCE_CHECK"
-      ],
       "canonical_id": "NFC-740e26039d13c931",
       "classification_state": "CLASSIFIED",
       "collision_use": [
@@ -419457,26 +419441,6 @@
       "asset_role": [
         "HISTORICAL_CONTEXT"
       ],
-      "canonical_id": "NFC-8976c814b456b343",
-      "classification_state": "CLASSIFIED",
-      "collision_use": [
-        "COUNTEREXAMPLE",
-        "EVIDENCE_CHECK",
-        "HISTORICAL_CONTEXT"
-      ],
-      "routing_confidence": 0.85,
-      "source_record_sha": "72edf244b1ad0ce447faf5583d0fffe8107fe3d10664dcf2e0c7db6c6ad8caa3",
-      "topic": [],
-      "unesco_discipline_codes": [],
-      "unesco_field_codes": [
-        "55"
-      ]
-    },
-    {
-      "asset_kind": "NONFUNCTION_CLAIM",
-      "asset_role": [
-        "HISTORICAL_CONTEXT"
-      ],
       "canonical_id": "NFC-8977140342204b91",
       "classification_state": "CLASSIFIED",
       "collision_use": [
@@ -442225,6 +442189,24 @@
       ],
       "routing_confidence": 0.2,
       "source_record_sha": "fec3a813faa6f74096844b750c1405fd295ac00ba56c359dac28e649451934e3",
+      "topic": [],
+      "unesco_discipline_codes": [],
+      "unesco_field_codes": []
+    },
+    {
+      "asset_kind": "NONFUNCTION_CLAIM",
+      "asset_role": [
+        "HISTORICAL_CONTEXT"
+      ],
+      "canonical_id": "NFC-9c5b832e1a33eb99",
+      "classification_state": "UNRESOLVED",
+      "collision_use": [
+        "COUNTEREXAMPLE",
+        "EVIDENCE_CHECK",
+        "HISTORICAL_CONTEXT"
+      ],
+      "routing_confidence": 0.2,
+      "source_record_sha": "62ba9cf55fedf0f35c460bf9bbea91bfb60e3889e5a6dad9582ef2cdbc662f33",
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": []
@@ -465618,6 +465600,23 @@
       ],
       "routing_confidence": 0.2,
       "source_record_sha": "495b1bbf1a552dc9e38fa17bbe2721cae2cca92694491f9ae0a19a7997108d2c",
+      "topic": [],
+      "unesco_discipline_codes": [],
+      "unesco_field_codes": []
+    },
+    {
+      "asset_kind": "NONFUNCTION_CLAIM",
+      "asset_role": [
+        "ANALOGY_SOURCE"
+      ],
+      "canonical_id": "NFC-ae7dd015db115a5c",
+      "classification_state": "OUT_OF_UNESCO_SCOPE",
+      "collision_use": [
+        "BOUNDARY_TEST",
+        "COMPARE"
+      ],
+      "routing_confidence": 0.2,
+      "source_record_sha": "82b9825fd6e827aa1eca2ec142a61a0c3f7759ff824b0ca00106bcd52b5082cf",
       "topic": [],
       "unesco_discipline_codes": [],
       "unesco_field_codes": []
@@ -569380,7 +569379,7 @@
       "asset_kind": "NONFUNCTION_CLAIM",
       "path": "data/research/task172-routing-r1/nonfunction-routing-overlay.jsonl",
       "rows": 18003,
-      "sha256": "f93672dd1acd9bade575271f11c529f7914a6064315396d97567d2e48785b06c"
+      "sha256": "55367d68fd8e16dcad8ed91c97a9502ed2225d73c429e3d42fc793cf2908270a"
     }
   ],
   "stats": {

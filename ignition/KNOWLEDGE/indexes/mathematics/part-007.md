@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [Object D203 defines a mechanism_model within the point-fire framework. Core: 中文：配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。. Annotation](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-8906fc57b7dfd80b / Object D203 defines a mechanism_model within the point-fire framework. Core: 中文：配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。. Annotation
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D203, T17；被引用：—
 - [Object D205 defines a mechanism_model within the point-fire framework. Core: 中文：涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。. Annotation:](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4561b997408794af / Object D205 defines a mechanism_model within the point-fire framework. Core: 中文：涨落-耗散定理⟨x²⟩∝χ描述门控面Λ的涨落与响应。. Annotation:
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-d23614f47b4cf1fc / The lifecycle may reference an open obligation, but obligation liveness cannot
   - 来源：`docs/architecture/os-control-plane-r2.md`
+  - 依赖：—；被引用：—
+- [The maintainer is part of the life community the project claims to protect. Public value and maintainer survival are not](../../../SUSTAINABILITY.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1eb5b1f7fdfffad6 / The maintainer is part of the life community the project claims to protect. Public value and maintainer survival are not
+  - 来源：`SUSTAINABILITY.md`
   - 依赖：—；被引用：—

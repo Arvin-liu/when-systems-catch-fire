@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s](../../../agent-results/IGNITION-20260822-133-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-300eb09a94965b6e / Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s
-  - 来源：`agent-results/IGNITION-20260822-133-result.md`
-  - 依赖：—；被引用：—
 - [Formal baseline `main` was `e04752d20d071bac8f0c4a1e5cff20fb3004dae1`. The formal repository has no publication-witness](../../../agent-results/IGNITION-20260822-132-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-acbeccf65816f0a3 / Formal baseline `main` was `e04752d20d071bac8f0c4a1e5cff20fb3004dae1`. The formal repository has no publication-witness
@@ -2504,3 +2499,8 @@
   - 可搜索名称：NFC-74148f005e15386a / If upstream objects D_{D4} exist, compose F_{D4}=N\(⊕_{g∈D_{D4}} g\); otherwise treat F_{D4} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D4；被引用：—
+- [If upstream objects D_{D50} exist, compose F_{D50}=N\(⊕_{g∈D_{D50}} g\); otherwise treat F_{D50} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3e5c233a1fb6307a / If upstream objects D_{D50} exist, compose F_{D50}=N\(⊕_{g∈D_{D50}} g\); otherwise treat F_{D50} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D50；被引用：—

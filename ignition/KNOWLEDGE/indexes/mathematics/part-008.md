@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [The maintainer is part of the life community the project claims to protect. Public value and maintainer survival are not](../../../SUSTAINABILITY.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1eb5b1f7fdfffad6 / The maintainer is part of the life community the project claims to protect. Public value and maintainer survival are not
-  - 来源：`SUSTAINABILITY.md`
-  - 依赖：—；被引用：—
 - [The matrix contains 15 required negative cases covering formal-task terminality, obligation closure, class separation, p](../../../reports/operations/ignition-142-step18-adversarial-matrix.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c99e9f1af6e35839 / The matrix contains 15 required negative cases covering formal-task terminality, obligation closure, class separation, p
@@ -2502,5 +2497,10 @@
 - [title: "维度回复力函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2A5FC175308BCFBA / title: "维度回复力函数" / IMPLICIT-2A5FC175308BCFBA
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度回复阻尼函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0CA06FCDA1FD5DB9 / title: "维度回复阻尼函数" / IMPLICIT-0CA06FCDA1FD5DB9
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
