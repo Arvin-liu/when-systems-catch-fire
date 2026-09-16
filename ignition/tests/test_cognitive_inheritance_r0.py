@@ -50,9 +50,11 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertTrue(is_allowed_changed_path("ignition/tests/test_federation_ownership.py"))
         self.assertTrue(is_allowed_changed_path("ignition/data/foundation/nonfunction-claims/source-discovery.jsonl"))
         self.assertTrue(is_allowed_changed_path("ignition/docs/foundation/nonfunction-claim-adjudication-index.md"))
+        self.assertTrue(is_allowed_changed_path("ignition/data/architecture/current-facts.json"))
         self.assertTrue(is_allowed_changed_path("ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json"))
         self.assertFalse(is_allowed_changed_path(".github/workflows/unrelated.yml"))
         self.assertFalse(is_allowed_changed_path("ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"))
+        self.assertFalse(is_allowed_changed_path("ignition/data/architecture/current-system-identity.json"))
         self.assertFalse(is_allowed_changed_path("ignition/data/agent-federation/build-vs-integrate-policy-r1.json.bak"))
 
     def test_r0_paths_are_excluded_from_canonical_claim_discovery(self) -> None:

@@ -45,6 +45,7 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
     "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
     "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+    "ignition/data/architecture/current-facts.json",
     ".github/workflows/foundation-validation.yml",
     ".github/workflows/current-state-sync-validation.yml",
     ".github/workflows/iteration-lifecycle-validation.yml",
