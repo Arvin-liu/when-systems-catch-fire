@@ -4506,7 +4506,7 @@
 - **来源任务/运行：** `172-20260915-STEP13-FINAL-FREEZE`
 - **问题：** 此来源记录了什么：Task172 Step13 — final closeout freeze？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
-- **来源摘要：** This report records the pre-freeze scan-sensitive input set for the final official derivation chain. The Step10, Step11, and Step12 machine records and reports are present before the freeze. Their hashes, the primary UNESCO parse/discrepancy inputs, the 24-field corpus, and the Step07 routing inp…
+- **来源摘要：** Status: FINALSCANINPUTFREEZERECORDED
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

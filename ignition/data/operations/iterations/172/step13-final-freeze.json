@@ -2,8 +2,9 @@
   "schema": "task172-step13-final-freeze-v1",
   "task_id": "IGNITION-20260912-172",
   "closeout_task_id": "IGNITION-20260915-178",
-  "freeze_status": "PRE_FREEZE_ARTIFACT_RECORDED_BEFORE_OFFICIAL_DERIVATION_CHAIN",
+  "freeze_status": "FINAL_SCAN_INPUT_FREEZE_RECORDED",
   "business_source_head_observed": "03a2b33cced830418cc310a59b519fca8d10f2fa",
+  "actual_final_business_head": "03a2b33cced830418cc310a59b519fca8d10f2fa",
   "scan_sensitive_inputs": [
     {"path": "data/research/task172-gate-t-unesco-1988/primary-1988-parse.json", "sha256": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a"},
     {"path": "data/research/task172-gate-t-unesco-1988/discrepancy-ledger.json", "sha256": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f"},
@@ -37,6 +38,19 @@
     "interpretation": "INTENDED_FIXED_EPOCH / SOURCE_EVENT_TIME; not BUILD_TIME or EVALUATION_TIME"
   },
   "next_generation_work_started": false,
+  "official_derivation_chain": {
+    "status": "FIXED_POINT_COMPLETE_PENDING_FINAL_EXACT_HEAD_CI_AND_CLEAN_CLONE",
+    "second_run_no_diff": true,
+    "canonical_registries_stable": true,
+    "routing_overlays_stable": true,
+    "knowledge_experience_stable": true,
+    "human_results_stable": true,
+    "self_correction_stable": true,
+    "fire_seeds_stable": true,
+    "current_projections_stable": true,
+    "source_first_seen_provenance_stable": true,
+    "path_accounting_stable": true
+  },
   "ready_merge_or_auto_merge": false,
   "claim_ceiling": "Frozen pre-capability-inheritance repository comparison baseline only; no capability inheritance, RSI, MetaRSI, self-training, truth, evidence, or epistemic acceptance is asserted."
 }

@@ -225,7 +225,7 @@
 
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** This report records the pre-freeze scan-sensitive input set for the final official derivation chain. The Step10, Step11, and Step12 machine records and reports are present before the freeze. Their hashes, the primary UNESCO parse/discrepancy inputs, the 24-field corpus, and the Step07 routing inp…
+- **变化：** Status: FINALSCANINPUTFREEZERECORDED
 - **来源：** [ignition-172-20260915-step13-final-freeze.md](../reports/operations/ignition-172-20260915-step13-final-freeze.md)
 - **资产卡：** [HR-2F64159284453379](./ASSET-CARDS.md#asset-hr-2f64159284453379)
 
