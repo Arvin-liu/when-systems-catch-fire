@@ -1,0 +1,24 @@
+{
+  "authority": "deduplication is record identity hygiene, not evidence adjudication",
+  "collision_rules": {
+    "conflicting_metadata": "retain conflicting values with provenance; never choose silently",
+    "same_normalized_doi": "merge identity references, preserve every provider provenance record",
+    "same_provider_id": "merge only inside the provider namespace, preserve cross-provider distinctions",
+    "same_title_author_year": "candidate duplicate only; require manual review before merge",
+    "unresolved_collision": "retain records separately and mark the collision unresolved"
+  },
+  "non_dedupe_claim": "a deduplicated bibliographic identity is not a validated conclusion and does not upgrade evidence maturity",
+  "normalization": {
+    "author": "use first author only for the third-level collision key",
+    "doi": "lowercase, trim URL/prefix punctuation, preserve the normalized DOI string",
+    "provider_id": "retain provider namespace and exact stable identifier",
+    "title": "Unicode normalize, lowercase, collapse whitespace and punctuation conservatively",
+    "year": "use the declared publication year; do not manufacture a year"
+  },
+  "precedence": [
+    "NORMALIZED_DOI",
+    "PROVIDER_STABLE_ID_WITH_PROVIDER_NAMESPACE",
+    "EXACT_NORMALIZED_TITLE_FIRST_AUTHOR_YEAR"
+  ],
+  "schema": "task172-gate-c-conservative-dedupe-policy-v1"
+}

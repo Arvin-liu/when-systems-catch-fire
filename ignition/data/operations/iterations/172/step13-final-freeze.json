@@ -1,0 +1,56 @@
+{
+  "schema": "task172-step13-final-freeze-v1",
+  "task_id": "IGNITION-20260912-172",
+  "closeout_task_id": "IGNITION-20260915-178",
+  "freeze_status": "FINAL_SCAN_INPUT_FREEZE_RECORDED",
+  "business_source_head_observed": "03a2b33cced830418cc310a59b519fca8d10f2fa",
+  "actual_final_business_head": "03a2b33cced830418cc310a59b519fca8d10f2fa",
+  "scan_sensitive_inputs": [
+    {"path": "data/research/task172-gate-t-unesco-1988/primary-1988-parse.json", "sha256": "e0d60570fee4ee6b62333384bd4bf19850a2710c84d9987fd7192daf37804b2a"},
+    {"path": "data/research/task172-gate-t-unesco-1988/discrepancy-ledger.json", "sha256": "7e48062ff94074b2315da8de413c55408b5f5126c1a433f63dd05f1a51f3364f"},
+    {"path": "data/external-research/unesco-general-knowledge-r1/target-disciplines.json", "sha256": "3b8f0cc2568b41ab0f8796f44fe090a0b26fc37be6b7eaa31a7b7a41b4680d56"},
+    {"path": "data/external-research/unesco-general-knowledge-r1/step09-corpus/corpus-manifest.json", "sha256": "4c791ab2fc52812a0cfaf83b50adc3d79e6db55e07241fc863abdba22e5fc94f"},
+    {"path": "data/external-research/unesco-general-knowledge-r1/step09-corpus/corpus-policy.json", "sha256": "eacd29acdc15009c886afda9b2abcb5d4e4414992762ef8b99d3fca92f4ad1ba"},
+    {"path": "data/external-research/unesco-general-knowledge-r1/step09-corpus/physical-records.jsonl", "sha256": "74035cf3a2bd4d1589574128e0dfc4c3b69931f4fe47abfbae09f0fa3b5023ba"},
+    {"path": "data/external-research/unesco-general-knowledge-r1/step09-corpus/discipline-links.jsonl", "sha256": "bb7bac3870a2c1a00a205c21b5890f8c0aa2922fcd4ca4156bb0e76cacdb66bf"},
+    {"path": "data/research/task172-routing-r1/step07-routing-pilot-queries.json", "sha256": "842f21d294819cfe7989a8a0416c56ac59285e69dce00bbdc424bbb5f2aabb8a"},
+    {"path": "data/research/task172-routing-r1/step07-routing-index.json", "sha256": "239d66351135a3c43ce0a30e6e60fbab55db8f2ae7292f75d855763ed86e113b"},
+    {"path": "data/operations/iterations/172/step01-disposition-ledger.json", "sha256": "558da274e1d6453954ab7d8e573663c2e36037179dd907edb9ad5e57b20d8c32"}
+  ],
+  "generator_sources": [
+    "tools/governance/build_human_results.py",
+    "tools/governance/run_self_correction.py",
+    "tools/governance/build_knowledge_experience.py",
+    "tools/governance/validate_human_visibility.py",
+    "tools/governance/validate_knowledge_experience.py",
+    "tools/publication/build_fire_seed_census.py",
+    "tools/governance/build_claim_browsers.py",
+    "tools/generate_overall_architecture.py"
+  ],
+  "policy_sources": [
+    "data/external-research/unesco-general-knowledge-r1/step09-corpus/corpus-policy.json",
+    "data/governance/knowledge-experience/config.json",
+    "data/governance/human-results/config.json"
+  ],
+  "fixed_epoch_semantics": {
+    "knowledge_experience_snapshot_date": "2026-07-30",
+    "human_results_snapshot_date": "2026-07-29",
+    "interpretation": "INTENDED_FIXED_EPOCH / SOURCE_EVENT_TIME; not BUILD_TIME or EVALUATION_TIME"
+  },
+  "next_generation_work_started": false,
+  "official_derivation_chain": {
+    "status": "FIXED_POINT_COMPLETE_PENDING_FINAL_EXACT_HEAD_CI_AND_CLEAN_CLONE",
+    "second_run_no_diff": true,
+    "canonical_registries_stable": true,
+    "routing_overlays_stable": true,
+    "knowledge_experience_stable": true,
+    "human_results_stable": true,
+    "self_correction_stable": true,
+    "fire_seeds_stable": true,
+    "current_projections_stable": true,
+    "source_first_seen_provenance_stable": true,
+    "path_accounting_stable": true
+  },
+  "ready_merge_or_auto_merge": false,
+  "claim_ceiling": "Frozen pre-capability-inheritance repository comparison baseline only; no capability inheritance, RSI, MetaRSI, self-training, truth, evidence, or epistemic acceptance is asserted."
+}

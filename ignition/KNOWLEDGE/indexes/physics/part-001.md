@@ -814,6 +814,16 @@
   - 可搜索名称：NFC-278d05610ba609bd / T34说Φ_QG在M_Planck附近无稳定极小点。D225说B型是极小点存在的必要条件。在M_Planck处，引力的B型项1/ln\(M_Planck/μ\)在μ=M_Planck处发散——B型项太强了，把极小点推走了。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D225, T34；被引用：—
+- [Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS](../../../reports/operations/ignition-172-20260915-step09-field-21.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3d5c5cec87dce0f5 / Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-21.md`
+  - 依赖：—；被引用：—
+- [Task172 Step09 field 22: PHYSICS](../../../reports/operations/ignition-172-20260915-step09-field-22.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7098e7614c973274 / Task172 Step09 field 22: PHYSICS
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-22.md`
+  - 依赖：—；被引用：—
 - [The approach verifies selected arithmetic, typeclass-law, higher-order, SAT/unification and deterministic-parallelism pr](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-da4a13535c5ce39c / The approach verifies selected arithmetic, typeclass-law, higher-order, SAT/unification and deterministic-parallelism pr

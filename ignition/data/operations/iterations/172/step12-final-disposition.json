@@ -1,0 +1,44 @@
+{
+  "schema": "task172-step12-final-disposition-v1",
+  "task_id": "IGNITION-20260912-172",
+  "closeout_task_id": "IGNITION-20260915-178",
+  "source_step01": "data/operations/iterations/172/step01-disposition-ledger.json",
+  "source_step02": "data/operations/iterations/172/step02-route-review.json",
+  "source_step11": "data/operations/iterations/172/step11-ab-replay.json",
+  "candidate_total_reaudited": 11,
+  "candidate_coverage": "11/11",
+  "new_canonical_additions": 0,
+  "new_source_records": 0,
+  "registry_actions": 0,
+  "maturity_changes": 0,
+  "claim_ceiling_changes": 0,
+  "disposition_counts": {
+    "DUPLICATE_OR_ALREADY_COVERED": 2,
+    "SOURCE_DERIVED_ONLY": 0,
+    "LITERARY_OR_INTERPRETIVE_SEED": 5,
+    "RESEARCH_HYPOTHESIS_CANDIDATE": 2,
+    "EXTERNAL_EVIDENCE_REVIEW_REQUIRED": 2,
+    "GOVERNANCE_GAP_CANDIDATE": 0,
+    "OVERSTATED_OR_UNSUPPORTED": 0,
+    "UNRESOLVED_INPUT_LIMITATION": 0
+  },
+  "candidate_disposition_policy": "Retain the Step01/02 bounded dispositions; do not promote a book, metadata row, or routing result to evidence, proof, maturity, Current capability, or external truth.",
+  "step11_comparative_disposition": "INCONCLUSIVE",
+  "residual_increments": [
+    {
+      "residual_id": "R172-STEP10-METADATA-BOUNDARY",
+      "status": "OPEN_EXPLICIT",
+      "description": "Language and rights fields are absent across the metadata-only corpus; provider/OA signals cannot establish content rights or cross-domain fairness.",
+      "canonical_addition": false
+    },
+    {
+      "residual_id": "R172-STEP11-SCHOLARLY-ROUTING-SEPARATION",
+      "status": "OPEN_EXPLICIT",
+      "description": "The scholarly metadata corpus is intentionally not in the function/nonfunction compact routing index; a scholarly retrieval benchmark was not claimed.",
+      "canonical_addition": false
+    }
+  ],
+  "final_disposition": "ZERO_NEW_CANONICAL_ADDITIONS; ALL_SURVIVING_CANDIDATES_RETAIN_BOUNDED_NONPROMOTING_DISPOSITIONS",
+  "no_forced_addition": true,
+  "claim_ceiling": "Repository-local bounded disposition and residual accounting only; no external truth, scholarly evidence, scientific relevance, or capability inheritance is inferred."
+}

@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 30,
+    "global_links_after_field": 1088,
+    "global_physical_records_after_field": 1021,
+    "new_physical_records": 231,
+    "selected_links": 240
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "33",
+  "field_label": "TECHNOLOGICAL SCIENCES",
+  "formal_parent_head": "6803817d2f05b35d6c2e2bae95768b0911dc8de3",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "00948444183a61ab69f0abb1fcbfa7b722864acc900aa3a82a69ad89be68a784",
+    "field_admission": "2eaed3ee8217b12c017a34e07985c9bba69ae67e52b6a40fcdd3bb82838cc716",
+    "manifest": "75150f700d175bac23dbc4a64d477d4ada887d94a653d1d85199899c4e4856bb",
+    "operation": "99e9459cf6c1afcbad0d45b975020587008afc5171141e408d9d546125228e3f",
+    "physical_records": "6f4d32c148ab59f164ab5f2ed3e77ce5331a9bd09c115b6aacab4cdac3ae99b3",
+    "report": "c0da6a9025c86a94f9ff78ff7a2b4fe80719acac2df2144c913b8144a3e682d4",
+    "source_freeze": "23bfc30d403a3050bf304b2fd55da0738d6947503199e38ad5f6b537ebff2bb7"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "23bfc30d403a3050bf304b2fd55da0738d6947503199e38ad5f6b537ebff2bb7",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

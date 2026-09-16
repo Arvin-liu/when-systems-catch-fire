@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 680 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 718 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -5287,6 +5287,310 @@
 - 状态：`ADDED`
 - Delta：`CD-F3FA077147EB3592`
 - 关联断言：['NFC-fca621ec94bd66ac']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260913-step03-unesco-gate-t.md`
+
+- 状态：`ADDED`
+- Delta：`CD-90ED509023725DA0`
+- 关联断言：['NFC-7f609174ce67a7f0', 'NFC-b16cb191bdd8eecc']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260913-step04-gate-r-routing.md`
+
+- 状态：`ADDED`
+- Delta：`CD-F8412AF8D8458685`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md`
+
+- 状态：`ADDED`
+- Delta：`CD-9A9F6A65046403F2`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260914-step05-function-routing.md`
+
+- 状态：`ADDED`
+- Delta：`CD-5BD3902EC1BA8DCE`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260914-step06-nonfunction-routing.md`
+
+- 状态：`ADDED`
+- Delta：`CD-BC0FD3372F5D0546`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260914-step08-scholarly-pilot.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A9335C325605B8E4`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step07-routing-index.md`
+
+- 状态：`ADDED`
+- Delta：`CD-ECB9A4B8EE1483CA`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-11.md`
+
+- 状态：`ADDED`
+- Delta：`CD-0D982954AA1AA3E9`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-12.md`
+
+- 状态：`ADDED`
+- Delta：`CD-CFB1D9D7C981B639`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-21.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A5172A2B53CEC20B`
+- 关联断言：['NFC-3d5c5cec87dce0f5', 'NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-22.md`
+
+- 状态：`ADDED`
+- Delta：`CD-96EC40A0B9C9F87D`
+- 关联断言：['NFC-7098e7614c973274', 'NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-23.md`
+
+- 状态：`ADDED`
+- Delta：`CD-7149C661BB0AF806`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-24.md`
+
+- 状态：`ADDED`
+- Delta：`CD-CADD18CB2328CED3`
+- 关联断言：['NFC-10b387976d05e05f', 'NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-25.md`
+
+- 状态：`ADDED`
+- Delta：`CD-8C5918A5FC43E2C6`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-31.md`
+
+- 状态：`ADDED`
+- Delta：`CD-429865BA2FB29659`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-32.md`
+
+- 状态：`ADDED`
+- Delta：`CD-964DCDEC208DA025`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-33.md`
+
+- 状态：`ADDED`
+- Delta：`CD-5797C2119CCE6FAA`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-51.md`
+
+- 状态：`ADDED`
+- Delta：`CD-B13564480E093AD5`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-52.md`
+
+- 状态：`ADDED`
+- Delta：`CD-513A4899383EBC1D`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-53.md`
+
+- 状态：`ADDED`
+- Delta：`CD-817CDCCCF68A5582`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-54.md`
+
+- 状态：`ADDED`
+- Delta：`CD-BAB21171893C54E0`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-55.md`
+
+- 状态：`ADDED`
+- Delta：`CD-8C4659F4DD8045EE`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-56.md`
+
+- 状态：`ADDED`
+- Delta：`CD-3B8D996F1E9886E9`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1', 'NFC-d64e6d8b63082205']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-57.md`
+
+- 状态：`ADDED`
+- Delta：`CD-04914B1570918AE6`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-58.md`
+
+- 状态：`ADDED`
+- Delta：`CD-04EA1BF3FFC2D56A`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-59.md`
+
+- 状态：`ADDED`
+- Delta：`CD-4915734264BB9DE0`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-61.md`
+
+- 状态：`ADDED`
+- Delta：`CD-05CC949076737494`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-62.md`
+
+- 状态：`ADDED`
+- Delta：`CD-CF438096338B88F8`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-63.md`
+
+- 状态：`ADDED`
+- Delta：`CD-13E9B3B4578E1C4D`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-71.md`
+
+- 状态：`ADDED`
+- Delta：`CD-9FA397EF4FDA55C6`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step09-field-72.md`
+
+- 状态：`ADDED`
+- Delta：`CD-E209CF9B12FF43A0`
+- 关联断言：['NFC-71d2648db992eeef', 'NFC-8d8a02c65b93c0b1']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step10-global-corpus-qa.md`
+
+- 状态：`ADDED`
+- Delta：`CD-A13879F03CB48A28`
+- 关联断言：['NFC-04497693b11fac5d', 'NFC-323ee4d85918a396', 'NFC-40684839a7a46cea', 'NFC-5afb9d48e96ec2cb', 'NFC-c56264b31c7b674f']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step11-ab-replay.md`
+
+- 状态：`ADDED`
+- Delta：`CD-4AC39DBA80C596A5`
+- 关联断言：['NFC-15fafeb2231f4ef8', 'NFC-41dd20ec13ca51b3', 'NFC-7c38b165cc8903fb']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step12-final-disposition.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C66547AA41DFC55F`
+- 关联断言：['NFC-7f4d4f5f7712a141', 'NFC-fe6340543198f1cc']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-20260915-step13-final-freeze.md`
+
+- 状态：`ADDED`
+- Delta：`CD-2F64159284453379`
+- 关联断言：['NFC-36ecac2730323a4a']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-step00-baseline-audit.md`
+
+- 状态：`ADDED`
+- Delta：`CD-4ED55B471F27CDF6`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-step01-collision-audit.md`
+
+- 状态：`ADDED`
+- Delta：`CD-88377C1093ADF0BD`
+- 关联断言：['NFC-13e6b3c63110987b', 'NFC-5344e3363c14cd17', 'NFC-5c006523a84b4e77', 'NFC-7de2e846b9d95640', 'NFC-7f9a07f51ac57980', 'NFC-962f4d10182c80dc', 'NFC-a349e70adaf5d7eb']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/operations/ignition-172-step02-route-review.md`
+
+- 状态：`ADDED`
+- Delta：`CD-4FD3F769E03BBC82`
+- 关联断言：['NFC-716255067ba6e347']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

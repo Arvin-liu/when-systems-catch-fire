@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 6,
+    "global_links_after_field": 1432,
+    "global_physical_records_after_field": 1323,
+    "new_physical_records": 43,
+    "selected_links": 48
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "56",
+  "field_label": "JURIDICAL SCIENCES & LAW",
+  "formal_parent_head": "bd471ff9ee75c98241de1433ac915bf4d327b6e6",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "ae379b52f277af373fe882c44c8df7fe46f2233514ae0249d641e78ca201aa12",
+    "field_admission": "0921eacf0ffcb4969edfb03fe19fd2a878f08fb3259aa76335ec40cec504d8db",
+    "manifest": "f63721460c3e6c8073beb047dda134871a7cadf6f807458913cc389dac6f6da5",
+    "operation": "8b2af7c23bf0a5e62ca0aa41fc7879f02405c5539d4fa619dc6cbcbbb522f505",
+    "physical_records": "ae24bac328f1ade0a8fa3172d68b57a5ecd7c015556cd9ca66f93eeb86795d21",
+    "report": "01b7c700f61d7a53e1863251e773577a1ba0a0c6020b66a1b678e8d705ae05fc",
+    "source_freeze": "6c000c138d4dcfe46794244538bf47a4ed91a2d7fdb135d7debb609fb1cec698"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "6c000c138d4dcfe46794244538bf47a4ed91a2d7fdb135d7debb609fb1cec698",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

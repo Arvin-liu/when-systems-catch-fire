@@ -1124,6 +1124,11 @@
   - 可搜索名称：NFC-ea7f0fd916b36d04 / `BASIS_PRESSURE_SENSOR_NOT_VALIDATED`, and
   - 来源：`agent-results/IGNITION-20260908-167-result.md`
   - 依赖：—；被引用：—
+- [`branch`: `work/IGNITION-20260912-172-knowledge-routing-universal-corpus`](../../../agent-results/IGNITION-20260915-178-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-3f25c5e11642311e / `branch`: `work/IGNITION-20260912-172-knowledge-routing-universal-corpus`
+  - 来源：`agent-results/IGNITION-20260915-178-result.md`
+  - 依赖：—；被引用：—
 - [`CHANGE` decisions and evidence:](../../../templates/operations/task-command-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-dd94a122f2c55256 / `CHANGE` decisions and evidence:
@@ -1148,6 +1153,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-335c2c47664b21aa / `docs/architecture/external-agent-federation-r1.md`、`agent_federation/` 与 `data/agent-federation/`：Task 122 的 OS/executo
   - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [`exact_head_workflows`: `foundation-validation` run `34973021016` \(`validate` failed at human projection check\); `archit](../../../agent-results/IGNITION-20260915-178-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8cf06e5f81a4e037 / `exact_head_workflows`: `foundation-validation` run `34973021016` \(`validate` failed at human projection check\); `archit
+  - 来源：`agent-results/IGNITION-20260915-178-result.md`
   - 依赖：—；被引用：—
 - [`external_agent_federation --documents / repository_dependency--> openclaw_adapter` — observed CLI boundary only; no Gat](../../../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-844b1c595262819c / G_δ：女性群体普遍率不可判定（E5 pending）。保留 pending。
   - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
-  - 依赖：—；被引用：—
-- [G_δ：跨代际普遍性不可判定（E2 pending）。保留 pending。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9c90ab69168e7c90 / G_δ：跨代际普遍性不可判定（E2 pending）。保留 pending。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
-  - 依赖：—；被引用：—
-- [Gateway, inspect OpenClaw state, copy OpenClaw memory, or expose OpenClaw's](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-8767559c777a088a / Gateway, inspect OpenClaw state, copy OpenClaw memory, or expose OpenClaw's
-  - 来源：`agent_federation/adapters/openclaw.py`
   - 依赖：—；被引用：—

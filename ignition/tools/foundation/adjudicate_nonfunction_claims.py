@@ -145,6 +145,37 @@ SELF_EXCLUDES = {
     "reports/operations/ignition-141-step15-targeted-regression.md",
     "reports/operations/ignition-141-step15-candidate-full-regression.md",
     "reports/operations/ignition-141-step16-fresh-clone-publication.md",
+    # Task173 Step00A: Task172's baseline audit is a provenance-only
+    # operation record, not a claim-source surface. Preserve path/source
+    # accounting without admitting its boundary prose as canonical claims.
+    "reports/operations/ignition-172-step00-baseline-audit.md",
+    # Task172 Gate R is a bounded routing sidecar. Its operation report is a
+    # generated projection, not a canonical claim source; keeping it out of
+    # discovery prevents the sidecar from changing the authority it hashes.
+    "reports/operations/ignition-172-20260913-step04-gate-r-routing.md",
+    # Task172 Gate C is a generated policy projection, not a canonical claim
+    # source. Keep its operation/report out of claim discovery while retaining
+    # repository path accounting.
+    "data/operations/iterations/172/step05-scholarly-gate.json",
+    "reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md",
+    # Task172 Step05 is a generated routing projection and its implementation
+    # harness.  Keep provenance/tooling outside the canonical claim registry.
+    "data/operations/iterations/172/step05-function-routing.json",
+    "reports/operations/ignition-172-20260914-step05-function-routing.md",
+    "data/operations/iterations/172/step06-nonfunction-routing.json",
+    "reports/operations/ignition-172-20260914-step06-nonfunction-routing.md",
+    # Task172 Step07 is a generated bounded-routing projection and harness;
+    # it must not become a new canonical claim source.
+    "data/operations/iterations/172/step07-routing-index.json",
+    "reports/operations/ignition-172-20260915-step07-routing-index.md",
+    "tools/research/build_task172_routing_index.py",
+    "tools/research/validate_task172_routing_index.py",
+    "tools/research/task172_routing.py",
+    "tools/research/build_task172_full_routing.py",
+    "tools/research/validate_task172_full_routing.py",
+    "tests/test_task172_step05_routing.py",
+    "tests/test_task172_step06_routing.py",
+    "tests/test_task172_step07_routing.py",
 }
 MACHINE_EXCLUDE_PREFIXES = (
     "data/foundation/nonfunction-claims/",
@@ -171,6 +202,16 @@ MACHINE_EXCLUDE_PREFIXES = (
     # Task159 semantic-detector research records are comparison inputs only;
     # preserve source accounting while excluding claim admission.
     "data/research/semantic-leap-detector-v2-2026-09-07/",
+    # Task172 Gate C sidecar is generated policy provenance, not a claim source.
+    "data/research/task172-gate-c-scholarly-admission/",
+    # Task172 Step08 is a metadata-only scholarly provider pilot. Its
+    # candidates, receipts, crosswalk and dedupe ledger are provenance for
+    # the bounded pilot, not canonical claim/evidence sources. Keep the
+    # directory accounted for without admitting provider metadata as claims.
+    "data/external-research/unesco-general-knowledge-r1/",
+    # Task172 Steps05/06 are generated routing projections, not canonical
+    # claim sources. Keep their rows outside claim admission.
+    "data/research/task172-routing-r1/",
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",
     "docs/governance/meta-protocol-64-basis-escape-experiment-2026-09-06.md",
     "docs/governance/representation-residual-casebook-2026-09-06.md",

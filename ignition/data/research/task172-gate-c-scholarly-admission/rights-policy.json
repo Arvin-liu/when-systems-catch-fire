@@ -1,0 +1,24 @@
+{
+  "authority": "copyright and license boundary for metadata-only scholarly admission",
+  "content_rules": {
+    "explicit_license_and_scope_required_for_content": true,
+    "metadata_rights_are_separate_from_content_rights": true,
+    "oa_status_is_not_a_license": true,
+    "publisher_page_linkout_does_not_grant_republication": true,
+    "unknown_rights_block_abstract_and_fulltext": true
+  },
+  "metadata": {
+    "abstract_persistence_default": false,
+    "factual_bibliographic_metadata_allowed": true,
+    "fulltext_persistence_default": false,
+    "provider_linkout_allowed": true,
+    "stable_identifier_allowed": true
+  },
+  "mode": "METADATA_ONLY",
+  "operational_disposition": {
+    "explicit_license_and_scope": "content remains outside Gate C and requires a later scoped admission decision",
+    "license_present_but_scope_unclear": "retain metadata only; manual rights review",
+    "rights_unknown": "retain metadata only; block content persistence"
+  },
+  "schema": "task172-gate-c-rights-policy-v1"
+}

@@ -52,6 +52,9 @@
         "data/foundation/function-assets/",
         "data/foundation/nonfunction-claims/",
         "data/foundation/migrations/",
+        "data/research/task172-gate-r-routing/",
+        "data/research/task172-gate-c-scholarly-admission/",
+        "data/research/task172-routing-r1/",
         "data/governance/",
         "data/publication/fire-seeds/",
         "data/operations/durability/",
@@ -61,8 +64,12 @@
       ],
       "exact_paths": [
         "data/foundation/knowledge-corpus-admission-policy.json",
+        "data/operations/iterations/172/step05-scholarly-gate.json",
         "reports/architecture/agent-platform-r2-gap-audit.md",
-        "reports/operations/ignition-121-nightshift-progress.md"
+        "reports/operations/ignition-121-nightshift-progress.md",
+        "reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md",
+        "reports/operations/ignition-172-20260914-step08-scholarly-pilot.md",
+        "data/operations/iterations/172/step08-scholarly-pilot.json"
       ]
     },
     {

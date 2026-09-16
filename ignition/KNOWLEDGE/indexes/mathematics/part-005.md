@@ -409,6 +409,11 @@
   - 可搜索名称：A6 / H\(t,L\) 遮蔽函数\(双源\) / A6
   - 来源：`analysis/corpus-relation/cluster_source_briefs/C000.md`
   - 依赖：A1, A3, A8；被引用：D146, D2, D23, D3
+- [H3: `build_human_results.py` intentionally discovers operation/research reports as `HUMAN_INDEX_ONLY` source navigation.](../../../agent-results/IGNITION-20260915-178-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-9f733df6366b68ea / H3: `build_human_results.py` intentionally discovers operation/research reports as `HUMAN_INDEX_ONLY` source navigation.
+  - 来源：`agent-results/IGNITION-20260915-178-result.md`
+  - 依赖：—；被引用：—
 - [H_分类升级函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D42 / H_分类升级函数 / D42
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-3e5c233a1fb6307a / If upstream objects D_{D50} exist, compose F_{D50}=N\(⊕_{g∈D_{D50}} g\); otherwise treat F_{D50} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D50；被引用：—
-- [If upstream objects D_{D51} exist, compose F_{D51}=N\(⊕_{g∈D_{D51}} g\); otherwise treat F_{D51} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-53e00a3edff69f8a / If upstream objects D_{D51} exist, compose F_{D51}=N\(⊕_{g∈D_{D51}} g\); otherwise treat F_{D51} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D51；被引用：—

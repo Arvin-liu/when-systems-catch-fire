@@ -79,6 +79,17 @@ GENERATED_PREFIXES = (
     # Task159 semantic-detector research records are comparison inputs only;
     # they must remain outside function discovery to avoid answer backflow.
     "data/research/semantic-leap-detector-v2-2026-09-07/",
+    # Task172 Gate C is a policy-only scholarly-admission sidecar. It is a
+    # generated projection and must not feed its policy wording into the
+    # canonical function-asset census.
+    "data/research/task172-gate-c-scholarly-admission/",
+    # Task172 Step08 is a metadata-only scholarly provider pilot. Its
+    # candidates, receipts, crosswalk and dedupe ledger are provenance for
+    # the bounded pilot, not function-asset discovery inputs.
+    "data/external-research/unesco-general-knowledge-r1/",
+    # Task172 Steps05/06 are generated routing projections. Their canonical-ID
+    # keyed rows must never become new function discovery input.
+    "data/research/task172-routing-r1/",
     # Task141 live-state semantics and structured-result receipts are
     # provenance-only operation records. They must not become function-asset
     # discovery input or make the census depend on receipt wording/order.
@@ -179,6 +190,13 @@ GENERATED_EXACT_PATHS = {
     "reports/operations/ignition-141-step15-targeted-regression.md",
     "reports/operations/ignition-141-step15-candidate-full-regression.md",
     "reports/operations/ignition-141-step16-fresh-clone-publication.md",
+    # Task173 Step00A: Task172's baseline audit is a provenance-only
+    # operation record. Keep it in path accounting, but do not allow its
+    # headings or boundary prose to create function-asset candidates.
+    "data/operations/iterations/172/execution-contract-r1.json",
+    "data/operations/iterations/172/progress.jsonl",
+    "data/operations/iterations/172/step00-baseline-audit.json",
+    "reports/operations/ignition-172-step00-baseline-audit.md",
     "data/operations/propagation/108-impact/system-map-nonimpact-proof.json",
     "docs/operations/lifecycle-readme.md",
     "reports/operations/lifecycle-audit-108.md",
@@ -196,6 +214,32 @@ GENERATED_EXACT_PATHS = {
     "data/foundation/knowledge-corpus-admission-policy.json",
     "reports/architecture/agent-platform-r2-gap-audit.md",
     "reports/operations/ignition-121-nightshift-progress.md",
+    # Task172 Gate R is a bounded routing sidecar. Its operation report is a
+    # generated projection, not a function-asset source; excluding it keeps
+    # the sidecar from changing the authority it hashes.
+    "reports/operations/ignition-172-20260913-step04-gate-r-routing.md",
+    # Task172 Gate C is a generated policy projection, not a function source.
+    "data/operations/iterations/172/step05-scholarly-gate.json",
+    "reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md",
+    # Task172 Step05 is a generated routing projection and its implementation
+    # harness.  Keep the scan-sensitive authority closed over the frozen
+    # pre-step source set; these files are provenance/tooling, not inputs.
+    "data/operations/iterations/172/step05-function-routing.json",
+    "reports/operations/ignition-172-20260914-step05-function-routing.md",
+    "data/operations/iterations/172/step06-nonfunction-routing.json",
+    "reports/operations/ignition-172-20260914-step06-nonfunction-routing.md",
+    # Task172 Step07 is a generated bounded-routing projection and harness;
+    # keep it outside function-asset discovery.
+    "data/operations/iterations/172/step07-routing-index.json",
+    "reports/operations/ignition-172-20260915-step07-routing-index.md",
+    "tools/research/build_task172_routing_index.py",
+    "tools/research/validate_task172_routing_index.py",
+    "tools/research/task172_routing.py",
+    "tools/research/build_task172_full_routing.py",
+    "tools/research/validate_task172_full_routing.py",
+    "tests/test_task172_step05_routing.py",
+    "tests/test_task172_step06_routing.py",
+    "tests/test_task172_step07_routing.py",
     # Task158 research-only narrative and receipt records are not
     # function-asset sources; source-discovery accounting still retains them.
     "docs/governance/ignition-historical-basis-leaps-reconstruction-2026-09-06.md",

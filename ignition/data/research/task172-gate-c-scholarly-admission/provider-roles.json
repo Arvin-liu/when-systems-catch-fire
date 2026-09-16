@@ -1,0 +1,71 @@
+{
+  "authority": "provider roles are bounded retrieval/provenance capabilities, never evidence promotion",
+  "failure_semantics": "provider failure, timeout, quota, denial, or empty response produces a provider-health event and does not become a no-literature conclusion",
+  "independence_rule": "one provider cannot silently substitute for another provider's identifier, rights, correction, or retraction role",
+  "roles": [
+    {
+      "allowed_uses": [
+        "candidate discovery",
+        "stable work identifiers",
+        "concept and venue metadata",
+        "broad recall probing"
+      ],
+      "forbidden_uses": [
+        "treating coverage as exhaustive",
+        "treating a work record as evidence",
+        "inferring no literature from a failed request"
+      ],
+      "no_evidence_promotion": true,
+      "provider_id": "OpenAlex",
+      "role": "BROAD_METADATA_DISCOVERY"
+    },
+    {
+      "allowed_uses": [
+        "DOI normalization",
+        "registration metadata",
+        "license and link metadata",
+        "update and relation metadata"
+      ],
+      "forbidden_uses": [
+        "treating registration as peer review",
+        "treating a DOI as proof of a claim",
+        "assuming license scope from a missing field"
+      ],
+      "no_evidence_promotion": true,
+      "provider_id": "Crossref",
+      "role": "DOI_REGISTRATION_AND_UPDATE_PROVENANCE"
+    },
+    {
+      "allowed_uses": [
+        "research-product relations",
+        "repository and project metadata",
+        "open-access status as a discovery signal"
+      ],
+      "forbidden_uses": [
+        "treating OA status as a license grant",
+        "treating relation metadata as evidence",
+        "using provider coverage as a completeness claim"
+      ],
+      "no_evidence_promotion": true,
+      "provider_id": "OpenAIRE",
+      "role": "OPEN_RESEARCH_RELATION_DISCOVERY"
+    },
+    {
+      "allowed_uses": [
+        "biomedical index metadata",
+        "publication type",
+        "correction and retraction relations",
+        "stable index identifiers"
+      ],
+      "forbidden_uses": [
+        "generalizing biomedical index coverage to all fields",
+        "treating indexing as claim validation",
+        "using an absent record as no-literature evidence"
+      ],
+      "no_evidence_promotion": true,
+      "provider_id": "PubMed E-utilities",
+      "role": "BIOMEDICAL_INDEX_AND_CORRECTION_RELATIONS"
+    }
+  ],
+  "schema": "task172-gate-c-provider-roles-v1"
+}

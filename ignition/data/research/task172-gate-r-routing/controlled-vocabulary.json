@@ -1,0 +1,34 @@
+{
+  "asset_role": [
+    "METHOD_TRANSFER",
+    "EVIDENCE_CHECK",
+    "ANALOGY_SOURCE",
+    "HISTORICAL_CONTEXT",
+    "NARRATIVE_CASE"
+  ],
+  "authority": "routing aid only; not truth, proof, maturity, publication or evidence",
+  "classification_states": [
+    "CLASSIFIED",
+    "MULTIDISCIPLINARY",
+    "OUT_OF_UNESCO_SCOPE",
+    "UNRESOLVED"
+  ],
+  "collision_use": [
+    "EXPLAIN",
+    "COMPARE",
+    "ANALOGY_SOURCE",
+    "MECHANISM_TEST",
+    "CAUSAL_CHALLENGE",
+    "COUNTEREXAMPLE",
+    "EVIDENCE_CHECK",
+    "METHOD_TRANSFER",
+    "BOUNDARY_TEST",
+    "NORMATIVE_CHECK",
+    "NARRATIVE_CASE",
+    "HISTORICAL_CONTEXT"
+  ],
+  "internal_boundary": "repository governance, CI, runtime, bookkeeping and Owner surfaces are OUT_OF_UNESCO_SCOPE or UNRESOLVED",
+  "negative_boundary": "REJECT/QUARANTINE/WITHDRAWN records cannot acquire positive evidence-use tags",
+  "schema": "task172-gate-r-controlled-vocabulary-v1",
+  "topic": []
+}

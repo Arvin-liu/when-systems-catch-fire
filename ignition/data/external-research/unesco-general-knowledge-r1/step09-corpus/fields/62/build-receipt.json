@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 4,
+    "global_links_after_field": 1752,
+    "global_physical_records_after_field": 1615,
+    "new_physical_records": 25,
+    "selected_links": 32
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "62",
+  "field_label": "SCIENCES OF ARTS & LETTERS",
+  "formal_parent_head": "c0e58f64d07f3fee3389593d4d90426c7ddfe71e",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "91182f62539d9a71310c0cbaa575b559968215049aa67103c5ebabab81207c23",
+    "field_admission": "d5fac4fcea54dc4255c030a55a6b320f7f95a2189dcb77f343bb7d5e769a7f7f",
+    "manifest": "7a42659173c1693906e3370ea6c8fd9369a08974efa37d000776786e26984a55",
+    "operation": "a2d559c37c26e7d04feb6b98d3521fef9d4ab822050b532a6a633c827f7e44b7",
+    "physical_records": "4f525c0af93d3ea2695160adc5089a8a5591ec1ae6ef2f5ee69f83568ed51967",
+    "report": "7410be65b320adb84f943f6916591b12ff059d4615487f152bcdaa470687fdb5",
+    "source_freeze": "abc32742fbbcf2e84b101f54ad04f20d62eb41f39d23c323656e416a93938bfe"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "abc32742fbbcf2e84b101f54ad04f20d62eb41f39d23c323656e416a93938bfe",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

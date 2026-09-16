@@ -1,0 +1,289 @@
+{
+  "authority_order": [
+    {
+      "rank": 1,
+      "role": "canonical authority for Task172",
+      "source": "1988 UNESCO primary scan"
+    },
+    {
+      "rank": 2,
+      "role": "metadata and provenance cross-check only",
+      "source": "BARTOC linked representation"
+    },
+    {
+      "rank": 3,
+      "role": "machine-readable representation cross-check only",
+      "source": "SKOS mirror / SPARQL"
+    },
+    {
+      "rank": 4,
+      "role": "legacy inventory under reconciliation",
+      "source": "Formal local inventory"
+    },
+    {
+      "rank": 5,
+      "role": "secondary subdiscipline cross-check only",
+      "source": "CyTA six-digit mirror"
+    },
+    {
+      "rank": 6,
+      "role": "not used to overwrite primary",
+      "source": "CSIC/historical variants"
+    }
+  ],
+  "counts": {
+    "cyta_secondary_mirror": {
+      "subdisciplines": 2232
+    },
+    "formal_local_inventory": {
+      "disciplines": 250,
+      "fields": 24
+    },
+    "primary_1988_scan": {
+      "disciplines": 245,
+      "fields": 24,
+      "specialties": 0,
+      "subdisciplines": 2178
+    },
+    "primary_scan_vs_historical_secondary": {
+      "decision": "do not force the secondary 2183 into the primary set; retain the five-row discrepancy for audit",
+      "delta_primary_minus_secondary": -5,
+      "historical_secondary_reported_subdisciplines": 2183,
+      "primary_scan_normalized_subdisciplines": 2178,
+      "source_absent_from_primary_scan_exact": [
+        "1210.99",
+        "2415.01",
+        "2415.02",
+        "3206.12",
+        "3206.13"
+      ],
+      "status": "SECONDARY_COUNT_NOT_PRIMARY_CLOSURE"
+    },
+    "secondary_evidence_corroboration": {
+      "primary_1988_disciplines": 245,
+      "primary_1988_subdisciplines": 2183,
+      "role": "corroboration, not authority",
+      "source": "EPI historical comparison table"
+    },
+    "skos_mirror_observed": {
+      "disciplines": 248,
+      "fields": 24,
+      "subdisciplines": 2232
+    }
+  },
+  "decision": "GATE_T_PASS_FOR_AUTHORITY_LOCK; MASS_INGESTION_REMAINS_GATED_BY_GATE_R_AND_GATE_C",
+  "discipline_differences": {
+    "identities": {
+      "primary_equals_local_minus_plus": {
+        "minus": [
+          "2290",
+          "2390",
+          "2391",
+          "2490",
+          "6115",
+          "7100"
+        ],
+        "plus": [
+          "6101"
+        ]
+      },
+      "primary_equals_skos_minus": [
+        "2290",
+        "2390",
+        "2490"
+      ]
+    },
+    "local_minus_primary_exact": [
+      "2290",
+      "2390",
+      "2391",
+      "2490",
+      "6115",
+      "7100"
+    ],
+    "primary_minus_local_exact": [
+      "6101"
+    ],
+    "primary_minus_skos_exact": [],
+    "skos_minus_primary_exact": [
+      "2290",
+      "2390",
+      "2490"
+    ]
+  },
+  "license_and_provenance": {
+    "bartoc_metadata": "metadata rights are kept separate from the linked UNESCO work",
+    "decision": "minimum-code persistence only; scholarly/corpus admission remains separately gated",
+    "primary_document": "citation and minimum code/label/hierarchy provenance retained; scanned PDF/OCR/full text not persisted in Formal without work-specific permission",
+    "skos_mirror": "credits/legal notice points to UNESCO copyright indications; no reusable-data grant was established"
+  },
+  "schema": "task172-gate-t-discrepancy-ledger-v2",
+  "sources": [
+    {
+      "archive_url": "https://web.archive.org/web/20050513190653id_/http://unesdoc.unesco.org:80/images/0008/000829/082946eb.pdf",
+      "document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+      "pdf_sha256": "78f37a0efdd34647e35d408fae8d958d4bf10021275b153c11b3539dceadbefa",
+      "role": "primary",
+      "url": "http://unesdoc.unesco.org/images/0008/000829/082946eb.pdf"
+    },
+    {
+      "license_note": "BARTOC metadata and linked UNESCO representation are not assumed to license the primary document",
+      "name": "BARTOC",
+      "role": "registry_cross_check",
+      "url": "https://bartoc.org/en/node/1041"
+    },
+    {
+      "credits_url": "https://skos.um.es/unesco6/credits.php",
+      "license_note": "credits defer to UNESCO copyright indications; no blanket bulk-copy license observed",
+      "name": "SKOS UNESCO6",
+      "role": "machine_mirror",
+      "url": "https://skos.um.es/unesco6/"
+    },
+    {
+      "license_note": "used only for cross-check; not authority",
+      "name": "CyTA",
+      "role": "secondary_mirror",
+      "url": "https://www.cyta.com.ar/biblioteca/bddoc/bdlibros/taxo_unesco/taxo_unesco_en.htm"
+    }
+  ],
+  "subdiscipline_differences_against_cyta": {
+    "interpretation": {
+      "2178": "primary scan normalized six-digit count; 2232 current mirror rows are not treated as 1988 truth",
+      "2183": "historical secondary comparison-table count retained as corroboration only; it is five above the page-level primary scan census",
+      "245": "direct primary 1988 scan count; independently corroborated by the historical comparison table",
+      "248": "SKOS mirror discipline count; exact extras are 2290, 2390, 2490, a representation/variant difference, not a primary overwrite",
+      "250": "Formal local inventory count; it carries six local extras relative to primary and lacks primary 6101",
+      "raw_anomalies": "print defects are preserved with raw token plus normalized parent/sequence decision",
+      "suffix_codes": "present in the current secondary mirror but absent from the frozen 1988 scan; chronology is recorded conservatively as mirror/later-variant, not attributed to CSIC without a primary citation"
+    },
+    "mirror_minus_primary_exact": [
+      "1210.99",
+      "2205.09",
+      "2207.90",
+      "2209.90",
+      "2210.90",
+      "2210.91",
+      "2210.93",
+      "2211.90",
+      "2211.91",
+      "2290.01",
+      "2302.90",
+      "2302.91",
+      "2306.90",
+      "2306.91",
+      "2390.01",
+      "2401.90",
+      "2401.91",
+      "2407.90",
+      "2409.90",
+      "2409.91",
+      "2409.92",
+      "2414.90",
+      "2415.01",
+      "2415.02",
+      "2417.90",
+      "2417.91",
+      "2417.92",
+      "2420.91",
+      "2490.01",
+      "2490.02",
+      "2510.90",
+      "2510.91",
+      "2510.92",
+      "3103.90",
+      "3103.91",
+      "3104.90",
+      "3206.12",
+      "3206.13",
+      "3302.90",
+      "3303.90",
+      "3305.90",
+      "3307.90",
+      "3307.91",
+      "3307.92",
+      "3307.93",
+      "3309.90",
+      "3309.91",
+      "3309.92",
+      "3309.93",
+      "3309.95",
+      "3315.90",
+      "3321.90",
+      "5310.90",
+      "5310.91",
+      "5312.90",
+      "5506.90",
+      "5907.90"
+    ],
+    "mirror_only_discipline_blocks": [
+      "2290.01",
+      "2390.01",
+      "2490.01",
+      "2490.02"
+    ],
+    "mirror_only_non_suffix": [
+      "2205.09"
+    ],
+    "mirror_only_source_absent_verified": [
+      "1210.99",
+      "2415.01",
+      "2415.02",
+      "3206.12",
+      "3206.13"
+    ],
+    "mirror_only_suffix_variants": [
+      "2207.90",
+      "2209.90",
+      "2210.90",
+      "2210.91",
+      "2210.93",
+      "2211.90",
+      "2211.91",
+      "2302.90",
+      "2302.91",
+      "2306.90",
+      "2306.91",
+      "2401.90",
+      "2401.91",
+      "2407.90",
+      "2409.90",
+      "2409.91",
+      "2409.92",
+      "2414.90",
+      "2417.90",
+      "2417.91",
+      "2417.92",
+      "2420.91",
+      "2510.90",
+      "2510.91",
+      "2510.92",
+      "3103.90",
+      "3103.91",
+      "3104.90",
+      "3302.90",
+      "3303.90",
+      "3305.90",
+      "3307.90",
+      "3307.91",
+      "3307.92",
+      "3307.93",
+      "3309.90",
+      "3309.91",
+      "3309.92",
+      "3309.93",
+      "3309.95",
+      "3315.90",
+      "3321.90",
+      "5310.90",
+      "5310.91",
+      "5312.90",
+      "5506.90",
+      "5907.90"
+    ],
+    "primary_minus_mirror_exact": [
+      "2205.11",
+      "3206.14",
+      "3206.15"
+    ]
+  }
+}
