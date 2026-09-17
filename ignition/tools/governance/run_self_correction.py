@@ -8,6 +8,7 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 from collections import deque
 from pathlib import Path
 
@@ -15,6 +16,12 @@ import jsonschema
 
 
 ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from tools.foundation.knowledge_corpus_admission import admission_for_path  # noqa: E402
+
+
 REPO_ROOT = ROOT.parent
 CONFIG_PATH = ROOT / "data/governance/self-correction/config.json"
 OUT = ROOT / "data/governance/self-correction"
@@ -86,6 +93,8 @@ def changed_paths(base: str) -> list[str]:
 
 
 def is_knowledge_path(path: str, config: dict) -> bool:
+    if admission_for_path(path).classification == "EVALUATION_EVIDENCE_ONLY":
+        return False
     if any(path == item or path.startswith(item) for item in config["generated_exclusions"]):
         return False
     return any(path == prefix or path.startswith(prefix) for prefix in config["knowledge_prefixes"])

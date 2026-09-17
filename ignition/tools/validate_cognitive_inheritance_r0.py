@@ -36,10 +36,23 @@ FINAL_STATE = "READY_FOR_INDEPENDENT_EVALUATION"
 R0_RELATIVE = Path("agent_runtime/cognitive_inheritance_r0")
 ALLOWED_CHANGED_PREFIXES = (
     "ignition/agent_runtime/cognitive_inheritance_r0/",
+    # Evaluation-plane work is a separate, non-canonical evidence surface.
+    # Keep it eligible as auditable task output without admitting it to R0.
+    "ignition/evaluation/",
+    "ignition/reports/evaluations/",
 )
 ALLOWED_CHANGED_FILES = frozenset({
     "ignition/tools/validate_cognitive_inheritance_r0.py",
     "ignition/tests/test_cognitive_inheritance_r0.py",
+    "ignition/tests/test_target_repository_preflight_r0_1.py",
+    "ignition/tests/test_evaluation_plane_r0_1.py",
+    "ignition/tests/test_knowledge_corpus_admission.py",
+    "ignition/tools/foundation/validate_repository_path_classification.py",
+    "ignition/tools/validate_knowledge_corpus_admission.py",
+    "ignition/tools/governance/run_self_correction.py",
+    "ignition/data/governance/self-correction/config.json",
+    "ignition/data/foundation/schemas/repository-path-classification.schema.json",
+    "ignition/data/foundation/knowledge-corpus-admission-policy.json",
     "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
     "ignition/data/foundation/nonfunction-claims/closure-summary.json",
     "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
@@ -47,6 +60,11 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
     "ignition/data/architecture/current-facts.json",
     "ignition/data/governance/self-correction/claim-delta.jsonl",
+    "ignition/data/governance/self-correction/impact-analysis.jsonl",
+    "ignition/data/governance/self-correction/history.jsonl",
+    "ignition/data/governance/self-correction/summary.json",
+    "ignition/RESULTS/CLAIM-DELTA.md",
+    "ignition/RESULTS/IMPACT-ANALYSIS.md",
     "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
     "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
     "ignition/data/governance/knowledge-experience/manifest.json",
@@ -212,7 +230,7 @@ def validate_foundation_discovery_boundary(root: Path, r0: Path) -> int:
 
 
 def is_allowed_changed_path(path: str) -> bool:
-    """Keep the R0 change boundary exact except for its one artifact subtree."""
+    """Keep R0 changes bounded while recognizing the typed evaluation surface."""
     return path in ALLOWED_CHANGED_FILES or path.startswith(ALLOWED_CHANGED_PREFIXES)
 
 

@@ -1,0 +1,64 @@
+{
+  "schema_version": "evaluation-evidence-r0.1",
+  "artifact_id": "IGNITION-20260917-181-task180-adjudication-input",
+  "artifact_kind": "ADJUDICATION_RECEIPT",
+  "task_id": "IGNITION-20260917-181",
+  "source": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06",
+    "path": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/verdict.json",
+    "sha256": "5ede3f80c7ac4f471e2a40bfea9c707cbb07dad2c98da6ebb8e40da6edca5410",
+    "git_blob_sha": "35b57b34edefa2c0ccc2b2eb0928deff15d7be2e"
+  },
+  "status": "FROZEN_TASK180_INPUT; TASK181 DID NOT RUN EVALUATION OR OWNER ADJUDICATION",
+  "promotion": {"automatic": false, "state": "NO_AUTOMATIC_PROMOTION", "canonicalized": false},
+  "claim_ceiling": "Task180 reports bounded repository-local method-transfer evidence for two supplied cases. It does not establish general cognitive inheritance, R1 readiness, model improvement, external truth, or epistemic acceptance.",
+  "evidence_refs": [
+    {"repository": "Arvin-liu/when-systems-catch-fire", "ref": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06", "path": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/verdict.json", "git_blob_sha": "35b57b34edefa2c0ccc2b2eb0928deff15d7be2e", "sha256": "5ede3f80c7ac4f471e2a40bfea9c707cbb07dad2c98da6ebb8e40da6edca5410", "role": "primary evaluator verdict"},
+    {"repository": "Arvin-liu/when-systems-catch-fire", "ref": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06", "path": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/unblind-comparison.json", "git_blob_sha": "0522b305b8488b46e3408a88fb6c7a163b04d1f8", "sha256": "7ab0f9aa5a65012e41c3d70c419d5c023563d7dc95ae48629a0a8a00f5c0a095", "role": "unblind comparison and reconstruction accounting"},
+    {"repository": "Arvin-liu/when-systems-catch-fire", "ref": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06", "path": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/negative-controls.json", "git_blob_sha": "bdaaa84bb27bf7ae9918269e7ef61a4c24240627", "sha256": "35e4f893957423d56cb1275d2e5d42ada0baa3edc8a101b2964b9706cab523bf", "role": "frozen negative controls"},
+    {"repository": "Arvin-liu/when-systems-catch-fire", "ref": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06", "path": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/continuation-content.json", "git_blob_sha": "3fad3ba494dc9856b591a1f35a3537635c7bcf65", "sha256": "781e5d43a8a2cfec346a9043f6346fdc25acd1e940dd856d2c83e6b07a1071ea", "role": "content continuation record"},
+    {"repository": "Arvin-liu/when-systems-catch-fire", "ref": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06", "path": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/continuation-engineering.json", "git_blob_sha": "657c4d9ed644cc5f5dc4f0a489bc1ec4fd2c645e", "sha256": "f8eb4af957ee0a0bc49de6e624b2188906397093ade69346f1be61b9919218e3", "role": "engineering continuation record"},
+    {"repository": "Arvin-liu/when-systems-catch-fire", "ref": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06", "path": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/post-e2-contamination-addendum.json", "git_blob_sha": "41d21439c85694458967e486baa2949d8a2191f3", "sha256": "b3a94b9c52df826cd88b2e6f8faaf4da767ab2d3c6b5e8fb50b91563cfb09067", "role": "post-E2 contamination disclosure"},
+    {"repository": "Arvin-liu/when-systems-catch-fire", "ref": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06", "path": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/blind-evaluation-log.json", "git_blob_sha": "8ca00f834f85127ed409e6e4c443f8e02628cff8", "sha256": "015bdefee0c89c8d42fb7c8d9e81079e0a8cd14afbd1c4d5b51e6fb0193c4450", "role": "blind checkpoint and evaluator event log"},
+    {"repository": "Arvin-liu/when-systems-catch-fire", "ref": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06", "path": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/e0-remote-and-evaluator-freeze.json", "git_blob_sha": "6d3d0ad821551e5bebef4c5403200a78237f117d", "sha256": "a1fb007e38e2a67f389d6baa845d19f03d8074e5fb8ed4e7b0e5d6e5e969dc5b", "role": "initial evaluator freeze and source-access record"},
+    {"repository": "Arvin-liu/when-systems-catch-fire", "ref": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06", "path": "ignition/reports/evaluations/ignition-179-independent-evaluation-r0/metrics.json", "git_blob_sha": "482d66c7c110688d590a1badb79d58e4826af9f6", "sha256": "11df8b570ed053d11c1d0b3974a06ebee98f1be288647b47ea32b5e989ed2ca7", "role": "metric and coverage report"}
+  ],
+  "finding_summary": {
+    "evaluator_verdict": "R0_INHERITANCE_EVIDENCE_PARTIAL",
+    "reconstruction_fidelity": {
+      "status": "PARTIAL",
+      "identity_and_relation_coverage": "15/15 object ID/type/label entries and 8/8 relation ID/type/endpoint entries identified",
+      "field_comparison": {"exact": 7, "semantically_equivalent": 9, "partial": 4, "missing": 5, "compared": 25},
+      "limitations": ["Most matches may result from direct extraction rather than reconstruction.", "Provenance and uncertainty detail are partial.", "Engineering clean-clone assertion remains unresolved from authorized metadata-only evidence."]
+    },
+    "continuation_correctness": {
+      "status": "PASS_FOR_TWO_SUPPLIED_CASES_ONLY",
+      "cases": ["CONTENT-CONT-01", "ENGINEERING-CONT-01"],
+      "limitations": ["One evaluator generated and judged both records.", "The supplied cases do not test broad transfer or generalization."]
+    },
+    "non_equivalence_control": {"status": "PASS", "controls_passed": 8, "controls_total": 8, "limitation": "One evaluator's boundary handling in this protocol only."},
+    "packet_defect": "PD-01: the successor packet was self-revealing and exposed complete fixture structures, methods, unknowns, and claim ceilings.",
+    "scan_isolation_failure": {
+      "path_accounting": {"tracked": 4615, "manifest": 4602, "unclassified": 13},
+      "foundation": ["function census out-of-date", "nonfunction discovery/closure drift after evaluator-only files entered repository discovery"]
+    },
+    "contamination_events": [
+      {"id": "BC-01", "timing": "BEFORE_E1_BLIND_CHECKPOINT", "effect": "Wrong-repository PR pull-list displayed unrelated historical PR text; Task179 narrative, transition, and human files were not exposed; not used as evaluation evidence."},
+      {"id": "BC-02", "timing": "AFTER_E2_VERDICT_COMMIT", "effect": "PR #219 and #218 bodies were exposed after blind records/verdict; no body-derived claim imported or used to revise evidence; session independence is qualified."}
+    ]
+  },
+  "authority_summary": {
+    "task181_command_frozen_owner_gpt_disposition": "ADOPT_PROVISIONALLY",
+    "bounded_basis": "Bounded method-transfer evidence only.",
+    "general_cognitive_inheritance": "NOT_ESTABLISHED",
+    "r1": "NOT_AUTHORIZED",
+    "source_verdict_owner_gpt_adjudication_field": "NOT_YET_RUN",
+    "handling": "Preserve both the command-frozen disposition and the verdict artifact field; Task181 does not claim to have performed a new Owner/GPT adjudication."
+  },
+  "ci_snapshot": [
+    {"workflow": "architecture-pages", "run_id": 35191224296, "conclusion": "SUCCESS"},
+    {"workflow": "repository-path-accounting-preflight", "run_id": 35191224309, "conclusion": "FAILURE"},
+    {"workflow": "foundation-validation", "run_id": 35191224321, "conclusion": "FAILURE"}
+  ]
+}
