@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 
 from evaluation.tools import task_branch_guard_r0_2 as guard  # noqa: E402
@@ -19,6 +19,7 @@ REPO_URL = "https://github.com/Arvin-liu/when-systems-catch-fire.git"
 TASK_ID = "IGNITION-20260918-182-R2"
 SUCCESSOR_BRANCH = "work/IGNITION-20260918-182-r2-heldout-successor-r0-2-retry"
 BUILDER_BRANCH = "work/IGNITION-20260917-181-cognitive-inheritance-r0-1-isolation-protocol"
+HISTORICAL_TRIAL_BRANCH = "work/IGNITION-20260917-182-heldout-successor-r0-1-trial"
 
 
 def run_git(root: Path, *args: str) -> str:
@@ -118,6 +119,10 @@ class Task182BranchAuthorizationR02Tests(unittest.TestCase):
 
     def test_historical_main_write_fails_closed(self) -> None:
         run_git(self.root, "checkout", "main")
+        self.assertEqual(guard.preflight(self.root), "FAIL_BRANCH_UNAUTHORIZED")
+
+    def test_historical_task182_trial_branch_write_fails_closed(self) -> None:
+        run_git(self.root, "checkout", "-b", HISTORICAL_TRIAL_BRANCH)
         self.assertEqual(guard.preflight(self.root), "FAIL_BRANCH_UNAUTHORIZED")
 
     def test_unapproved_push_ref_fails_closed(self) -> None:

@@ -1,4 +1,14 @@
 #!/bin/sh
 set -eu
 repo_root=$(git rev-parse --show-toplevel)
-exec python3 "$repo_root/ignition/evaluation/tools/task_branch_guard_r0_2.py" --operation PUSH --remote "$1" --url "$2"
+guard="$repo_root/ignition/evaluation/tools/task_branch_guard_r0_2.py"
+if [ -f "$guard" ]; then
+  exec python3 "$guard" --operation PUSH --remote "$1" --url "$2"
+fi
+# Legacy fixtures can reject writes but cannot authorize the R0.2 successor branch.
+legacy_guard="$repo_root/ignition/evaluation/tools/target_repository_preflight_r0_1.py"
+if [ -f "$legacy_guard" ]; then
+  exec python3 "$legacy_guard" --pre-push "$1" "$2"
+fi
+printf '%s\n' FAIL_AUTHORIZATION_RECEIPT >&2
+exit 1

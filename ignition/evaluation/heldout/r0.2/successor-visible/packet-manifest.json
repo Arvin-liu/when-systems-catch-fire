@@ -1,0 +1,204 @@
+{
+  "case_ids": [
+    "coastal-meter-study-r02-01",
+    "harbor-export-policy-r02-01"
+  ],
+  "cognitive_evidence_surface": {
+    "files": [
+      {
+        "bytes": 892,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/README.md",
+        "sha256": "0c9be575aa8175828b49c1186b948a42b240377a410c9323a20dbf67c159bc30"
+      },
+      {
+        "bytes": 1029,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/bootstrap.md",
+        "sha256": "e254a2da25d15405cf943087f0c5a06b54392b1fc551091af72b4aa64efedead"
+      },
+      {
+        "bytes": 936,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/cases/coastal-meter-study-r02-01/provenance.json",
+        "sha256": "58f7b84915adae9bf55cddc14bf416fbda8bd5339249e3d645c0b004ae0c2687"
+      },
+      {
+        "bytes": 963,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/cases/coastal-meter-study-r02-01/raw-source.md",
+        "sha256": "db80603f526043fa8b3a82600fb4772e1f24607342a4e64097a18bb2f395c818"
+      },
+      {
+        "bytes": 890,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/cases/harbor-export-policy-r02-01/provenance.json",
+        "sha256": "619120be693ff85e2e603953a8c978af26f99414a03c588d358d7cc59331a0a1"
+      },
+      {
+        "bytes": 1373,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/cases/harbor-export-policy-r02-01/raw-contract.json",
+        "sha256": "ded7bdbd0aa0e1cf56021785bd5f83dc6833694ffbce90f5390ed23e67731b77"
+      },
+      {
+        "bytes": 963,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/method-contract.md",
+        "sha256": "79c8e5eb0776bfe22d762d86be8ea2db86ff554f73f0c1b941c7681590611094"
+      },
+      {
+        "bytes": 3600,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/packet-manifest-r0.2.schema.json",
+        "sha256": "06f88c276ebb85e0748b282aa1d56a31b438cdde4c6d6ace56394e2dc9df43da"
+      },
+      {
+        "bytes": 964,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/provider-neutral-capability-interface.json",
+        "sha256": "554e2ea75434ed4775ffa1d108f9078a28f1d7b8fdfe6613277ff2ba6914626a"
+      },
+      {
+        "bytes": 3013,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/successor-output-r0.2.schema.json",
+        "sha256": "c0ffa00778c4c67afb9042a8de71507f3b154d8b7d283137245826a0076afca7"
+      },
+      {
+        "bytes": 2848,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/successor-read-ledger-r0.2.schema.json",
+        "sha256": "347203df938ec4a9e7a65964e2d74010744b32ce74ed8ced2154e45826cf58ac"
+      },
+      {
+        "bytes": 3275,
+        "path": "ignition/evaluation/heldout/r0.2/successor-visible/task-contract.md",
+        "sha256": "bed320564baba4e6ad320d49d92b03eec21b7869e0f5eea22004e26c81284b22"
+      }
+    ],
+    "read_policy": "ALLOWLISTED_CONTENT_MAY_BE_READ_AND_USED; RECORD_EVERY_READ",
+    "surface_id": "COGNITIVE_EVIDENCE_SURFACE"
+  },
+  "evaluator_sealed_surface": {
+    "builder_authored_answer_key": false,
+    "builder_authored_evaluator_criteria": false,
+    "path": "ignition/evaluation/heldout/r0.2/evaluator-sealed",
+    "physically_separate_from": "ignition/evaluation/heldout/r0.2/successor-visible",
+    "successor_access": "PROHIBITED"
+  },
+  "isolation_kind": "PROCEDURAL_SURFACE_SEPARATION_NOT_CRYPTOGRAPHIC_SECRECY",
+  "manifest_path": "ignition/evaluation/heldout/r0.2/successor-visible/packet-manifest.json",
+  "operational_control_surface": {
+    "components": [
+      {
+        "allowed_status_codes": [
+          "PASS_BRANCH_AUTHORIZED",
+          "FAIL_TASK_BRANCH_MISMATCH",
+          "FAIL_WRONG_REPOSITORY",
+          "FAIL_WRONG_REMOTE",
+          "FAIL_BRANCH_UNAUTHORIZED",
+          "FAIL_BASE_ANCESTRY",
+          "FAIL_AUTHOR_IDENTITY",
+          "FAIL_PUSH_DESTINATION",
+          "FAIL_FORCE_PUSH",
+          "FAIL_HOOK_CONFIGURATION",
+          "FAIL_UNEXPLAINED_WORKTREE",
+          "FAIL_AUTHORIZATION_RECEIPT"
+        ],
+        "bytes": 484,
+        "component_id": "git-pre-commit-hook",
+        "component_type": "HOOK_ENTRYPOINT",
+        "path": "ignition/evaluation/hooks/pre-commit",
+        "permitted_actions": [
+          "EXECUTE",
+          "OBSERVE_STATUS"
+        ],
+        "sha256": "f83b822232146f6ed43078c8dee31a9719589a8a03f14172155611ff26debd4a",
+        "successor_access": "EXECUTE_STATUS_ONLY"
+      },
+      {
+        "allowed_status_codes": [
+          "PASS_BRANCH_AUTHORIZED",
+          "FAIL_TASK_BRANCH_MISMATCH",
+          "FAIL_WRONG_REPOSITORY",
+          "FAIL_WRONG_REMOTE",
+          "FAIL_BRANCH_UNAUTHORIZED",
+          "FAIL_BASE_ANCESTRY",
+          "FAIL_AUTHOR_IDENTITY",
+          "FAIL_PUSH_DESTINATION",
+          "FAIL_FORCE_PUSH",
+          "FAIL_HOOK_CONFIGURATION",
+          "FAIL_UNEXPLAINED_WORKTREE",
+          "FAIL_AUTHORIZATION_RECEIPT"
+        ],
+        "bytes": 537,
+        "component_id": "git-pre-push-hook",
+        "component_type": "HOOK_ENTRYPOINT",
+        "path": "ignition/evaluation/hooks/pre-push",
+        "permitted_actions": [
+          "EXECUTE",
+          "OBSERVE_STATUS"
+        ],
+        "sha256": "1594e72110690ce9e1c09e2e8801481e2db3f6762c47d280b81f415b7f35698b",
+        "successor_access": "EXECUTE_STATUS_ONLY"
+      },
+      {
+        "allowed_status_codes": [
+          "PASS_READ_LEDGER_CLEAN",
+          "FAIL_READ_LEDGER_CONTAMINATED",
+          "FAIL_READ_LEDGER_INVALID"
+        ],
+        "bytes": 5473,
+        "component_id": "successor-read-ledger-validator",
+        "component_type": "STATUS_VALIDATOR",
+        "path": "ignition/evaluation/tools/validate_successor_read_ledger_r0_2.py",
+        "permitted_actions": [
+          "EXECUTE",
+          "OBSERVE_STATUS"
+        ],
+        "sha256": "1ef7f9ded85e4ec6bb56d511f1cea4d9dc22a23b6579a63d17a94edeb5d56f25",
+        "successor_access": "EXECUTE_STATUS_ONLY"
+      },
+      {
+        "allowed_status_codes": [],
+        "bytes": 2298,
+        "component_id": "task-authorization-schema",
+        "component_type": "GUARD_DEPENDENCY",
+        "path": "ignition/evaluation/operational-control/r0.2/task-branch-authorization-r0.2.schema.json",
+        "permitted_actions": [],
+        "sha256": "f4d79a5c0b14350373203569dc287b9e15ca68831390c82ca93a424d8df05c8c",
+        "successor_access": "PROHIBITED"
+      },
+      {
+        "allowed_status_codes": [
+          "PASS_BRANCH_AUTHORIZED",
+          "FAIL_TASK_BRANCH_MISMATCH",
+          "FAIL_WRONG_REPOSITORY",
+          "FAIL_WRONG_REMOTE",
+          "FAIL_BRANCH_UNAUTHORIZED",
+          "FAIL_BASE_ANCESTRY",
+          "FAIL_AUTHOR_IDENTITY",
+          "FAIL_PUSH_DESTINATION",
+          "FAIL_FORCE_PUSH",
+          "FAIL_HOOK_CONFIGURATION",
+          "FAIL_UNEXPLAINED_WORKTREE",
+          "FAIL_AUTHORIZATION_RECEIPT"
+        ],
+        "bytes": 13121,
+        "component_id": "task-branch-guard",
+        "component_type": "EXECUTION_TOOL",
+        "path": "ignition/evaluation/tools/task_branch_guard_r0_2.py",
+        "permitted_actions": [
+          "EXECUTE",
+          "OBSERVE_STATUS"
+        ],
+        "sha256": "3a706d73328e81492ce8ad715ab46a5c025ab113f398f49488043ebae30f73b5",
+        "successor_access": "EXECUTE_STATUS_ONLY"
+      },
+      {
+        "allowed_status_codes": [],
+        "bytes": 826,
+        "component_id": "task182-r2-authorization-template",
+        "component_type": "BUILDER_PROVISIONING_TEMPLATE",
+        "path": "ignition/evaluation/operational-control/r0.2/task182-r2-branch-authorization-template.json",
+        "permitted_actions": [],
+        "sha256": "b3d70902679214794280377ef73d68dd05e015542e4c568c7c42f6cfa617516f",
+        "successor_access": "PROHIBITED"
+      }
+    ],
+    "read_policy": "EXECUTE_ONLY; STATUS_ONLY; SOURCE_AND_RECEIPT_CONTENT_READ_PROHIBITED",
+    "surface_id": "OPERATIONAL_CONTROL_SURFACE"
+  },
+  "schema_version": "heldout-successor-packet-manifest-r0.2",
+  "task_id": "IGNITION-20260918-182-R2"
+}

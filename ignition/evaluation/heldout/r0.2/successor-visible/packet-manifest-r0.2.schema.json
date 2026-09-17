@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evaluation/heldout/r0.2/successor-visible/packet-manifest-r0.2.schema.json",
+  "title": "Held-out Successor Packet Manifest R0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "task_id", "isolation_kind", "manifest_path", "cognitive_evidence_surface", "operational_control_surface", "evaluator_sealed_surface", "case_ids"],
+  "properties": {
+    "schema_version": {"const": "heldout-successor-packet-manifest-r0.2"},
+    "task_id": {"const": "IGNITION-20260918-182-R2"},
+    "isolation_kind": {"const": "PROCEDURAL_SURFACE_SEPARATION_NOT_CRYPTOGRAPHIC_SECRECY"},
+    "manifest_path": {"const": "ignition/evaluation/heldout/r0.2/successor-visible/packet-manifest.json"},
+    "cognitive_evidence_surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "read_policy", "files"],
+      "properties": {
+        "surface_id": {"const": "COGNITIVE_EVIDENCE_SURFACE"},
+        "read_policy": {"type": "string"},
+        "files": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/file"}}
+      }
+    },
+    "operational_control_surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["surface_id", "read_policy", "components"],
+      "properties": {
+        "surface_id": {"const": "OPERATIONAL_CONTROL_SURFACE"},
+        "read_policy": {"type": "string"},
+        "components": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["component_id", "component_type", "path", "successor_access", "permitted_actions", "allowed_status_codes", "bytes", "sha256"],
+            "properties": {
+              "component_id": {"type": "string", "minLength": 1},
+              "component_type": {"type": "string", "minLength": 1},
+              "path": {"type": "string", "minLength": 1},
+              "successor_access": {"enum": ["EXECUTE_STATUS_ONLY", "PROHIBITED"]},
+              "permitted_actions": {"type": "array", "items": {"enum": ["EXECUTE", "OBSERVE_STATUS"]}},
+              "allowed_status_codes": {"type": "array", "items": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]+$"}},
+              "bytes": {"type": "integer", "minimum": 0},
+              "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+            }
+          }
+        }
+      }
+    },
+    "evaluator_sealed_surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "successor_access", "physically_separate_from", "builder_authored_answer_key", "builder_authored_evaluator_criteria"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "successor_access": {"const": "PROHIBITED"},
+        "physically_separate_from": {"type": "string", "minLength": 1},
+        "builder_authored_answer_key": {"const": false},
+        "builder_authored_evaluator_criteria": {"const": false}
+      }
+    },
+    "case_ids": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "minLength": 1}}
+  },
+  "$defs": {
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "bytes", "sha256"],
+      "properties": {
+        "path": {"type": "string", "minLength": 1},
+        "bytes": {"type": "integer", "minimum": 0},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

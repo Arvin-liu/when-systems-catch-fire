@@ -1,0 +1,39 @@
+{
+  "document_id": "HARBOR-ARCHIVE-EXPORT-PROCEDURE-HA17-REV-B",
+  "document_type": "synthetic procedure excerpt",
+  "revision": "B",
+  "scope": "one approved export batch from the Harbor Archive staging workspace",
+  "requirements": [
+    {
+      "id": "R1",
+      "text": "Remove direct personal identifiers before the export package leaves the staging workspace."
+    },
+    {
+      "id": "R2",
+      "text": "Keep the consent source register separate from the exported package."
+    },
+    {
+      "id": "R3",
+      "text": "Require approval from both the Records Lead and the Data Steward when a category is not listed in the batch request."
+    },
+    {
+      "id": "R4",
+      "text": "Write the batch identifier and approval references to the export audit record."
+    },
+    {
+      "id": "R5",
+      "text": "After the receiving team confirms arrival, delete the temporary package from the staging workspace and record a deletion acknowledgement."
+    },
+    {
+      "id": "R6",
+      "text": "Escalate an approval dispute to the Records Lead within two working days."
+    }
+  ],
+  "explicitly_unspecified": [
+    "the legal basis for processing",
+    "the maximum retention period after receipt",
+    "the retry procedure when arrival confirmation is absent",
+    "the technical encryption profile for transfer",
+    "delegation rules for either approver"
+  ]
+}

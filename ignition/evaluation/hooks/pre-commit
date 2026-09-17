@@ -1,4 +1,14 @@
 #!/bin/sh
 set -eu
 repo_root=$(git rev-parse --show-toplevel)
-exec python3 "$repo_root/ignition/evaluation/tools/task_branch_guard_r0_2.py" --operation COMMIT
+guard="$repo_root/ignition/evaluation/tools/task_branch_guard_r0_2.py"
+if [ -f "$guard" ]; then
+  exec python3 "$guard" --operation COMMIT
+fi
+# A copied R0.1 isolation fixture contains only the legacy preflight tool.
+legacy_guard="$repo_root/ignition/evaluation/tools/target_repository_preflight_r0_1.py"
+if [ -f "$legacy_guard" ]; then
+  exec python3 "$legacy_guard"
+fi
+printf '%s\n' FAIL_AUTHORIZATION_RECEIPT >&2
+exit 1
