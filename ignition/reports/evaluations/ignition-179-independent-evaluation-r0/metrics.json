@@ -155,9 +155,10 @@
         "builder_r0_artifact_files_changed": 0,
         "foundation_canonical_files_changed": 0,
         "current_canonical_files_changed": 0,
-        "evaluator_report_files_added": 10,
+        "evaluator_report_files_added": 11,
         "evaluator_validator_and_test_files_added": 2,
-        "migration_performed": false
+        "migration_performed": false,
+        "report_file_count_includes_post_e2_contamination_addendum": true
       },
       "limitations": [
         "The evaluator branch adds reports and evaluator-only checking code; it performs no R0 contract migration.",

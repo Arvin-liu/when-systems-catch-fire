@@ -31,6 +31,7 @@ REQUIRED_JSON = (
     "negative-controls.json",
     "metrics.json",
     "verdict.json",
+    "post-e2-contamination-addendum.json",
 )
 ARTIFACTS_WITHOUT_TASK_ID = {
     "blind-content-reconstruction.json",
@@ -231,7 +232,17 @@ def validate_artifacts() -> dict[str, Any]:
     require(verdict.get("owner_gpt_adjudication") == "NOT_YET_RUN", "verdict prematurely claims adjudication")
     require(verdict.get("builder_and_canonical_mutations", {}).get("task179_r0_artifacts") == "NONE", "verdict records Builder artifact mutation")
     require(verdict.get("blinding_contamination", {}).get("status") == "BLINDING_CONTAMINATION", "verdict omits contamination status")
+    require(verdict.get("conversation_independence_declaration", {}).get("builder_narrative_read_before_blind_checkpoint") is False, "verdict misstates pre-checkpoint narrative exposure")
+    require(verdict.get("conversation_independence_declaration", {}).get("builder_narrative_exposed_after_e2") is True, "verdict omits post-E2 narrative exposure")
+    require(verdict.get("conversation_independence_declaration", {}).get("builder_narrative_used_as_evaluation_evidence") is False, "verdict imports post-E2 narrative as evidence")
     require(verdict.get("evaluated_head") == EVALUATED_HEAD, "verdict target head mismatch")
+
+    addendum = data["post-e2-contamination-addendum.json"]
+    require(addendum.get("records_commit") == "4b58c5ac1a5b00ecba2827c8f73d84846ad1581a", "post-E2 addendum is not anchored to E2")
+    require(addendum.get("event", {}).get("e1_blind_checkpoint_changed") is False, "post-E2 event claims to alter E1")
+    require(addendum.get("execution_correction", {}).get("corrected_via_base_update") is True, "PR220 base correction is not recorded")
+    require(addendum.get("execution_correction", {}).get("pr218_modified") is False, "addendum records a PR218 mutation")
+    require(addendum.get("execution_correction", {}).get("pr219_modified") is False, "addendum records a PR219 mutation")
 
     return {
         "status": "PASS",

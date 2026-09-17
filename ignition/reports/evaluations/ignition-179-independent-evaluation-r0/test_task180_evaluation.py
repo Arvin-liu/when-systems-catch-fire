@@ -45,7 +45,14 @@ class Task180EvaluationTests(unittest.TestCase):
         criterion_ids = {record["criterion_id"] for record in verdict["frozen_criterion_dispositions"]}
         self.assertEqual(criterion_ids, VALIDATOR.CRITERIA)
         self.assertEqual(verdict["blinding_contamination"]["status"], "BLINDING_CONTAMINATION")
+        self.assertTrue(verdict["conversation_independence_declaration"]["builder_narrative_exposed_after_e2"])
         self.assertEqual(verdict["owner_gpt_adjudication"], "NOT_YET_RUN")
+
+    def test_post_e2_exposure_is_disclosed_without_rewriting_checkpoint(self) -> None:
+        addendum = VALIDATOR.read_json("post-e2-contamination-addendum.json")
+        self.assertFalse(addendum["event"]["e1_blind_checkpoint_changed"])
+        self.assertFalse(addendum["event"]["body_claims_used_to_resolve_unknowns"])
+        self.assertTrue(addendum["execution_correction"]["corrected_via_base_update"])
 
 
 if __name__ == "__main__":

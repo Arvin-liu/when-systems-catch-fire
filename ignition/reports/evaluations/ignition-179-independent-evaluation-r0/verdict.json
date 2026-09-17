@@ -4,9 +4,11 @@
   "role": "INDEPENDENT_EVALUATOR",
   "conversation_independence_declaration": {
     "separate_from_builder_authoring_context": true,
-    "builder_narrative_read": false,
-    "basis": "The Task180 command, ordered blind packet, and explicitly allowed post-checkpoint sources only.",
-    "qualification": "Limited non-target historical PR-text contamination is disclosed below; this is not a claim of perfect blinding."
+    "builder_narrative_read_before_blind_checkpoint": false,
+    "builder_narrative_exposed_after_e2": true,
+    "builder_narrative_used_as_evaluation_evidence": false,
+    "basis": "The E1 blind results used the ordered packet; the E2 verdict used the authorized unblind materials and frozen Task180 evidence.",
+    "qualification": "Two contamination events are disclosed below. The later PR-body exposure occurred after E2 was committed, was not used as evidence, and further qualifies this evaluator session."
   },
   "evaluated_repository": "Arvin-liu/when-systems-catch-fire",
   "evaluated_head": "12e133c6d58a5e22437e42bb75fd912607bb4540",
@@ -21,10 +23,28 @@
   "blinding_contamination": {
     "status": "BLINDING_CONTAMINATION",
     "scope": "LIMITED_NON_TARGET_HISTORICAL_PR_TEXT",
-    "exposure": "A wrong-repository pull-list response displayed unrelated old PR bodies (#115 Task168 receipt, #114 Task167 receipt, partial #16 and truncated surrounding entries).",
-    "task179_builder_narrative_exposed": false,
-    "transition_or_human_files_exposed": false,
-    "case_specific_unblind_material_exposed": false,
+    "task179_builder_narrative_exposed_before_blind_checkpoint": false,
+    "events": [
+      {
+        "id": "BC-01",
+        "timing": "BEFORE_E1_BLIND_CHECKPOINT",
+        "exposure": "A wrong-repository pull-list response displayed unrelated old PR bodies (#115 Task168 receipt, #114 Task167 receipt, partial #16 and truncated surrounding entries).",
+        "task179_builder_narrative_exposed": false,
+        "transition_or_human_files_exposed": false,
+        "case_specific_unblind_material_exposed": false,
+        "used_as_evaluation_evidence": false
+      },
+      {
+        "id": "BC-02",
+        "timing": "AFTER_E2_VERDICT_COMMIT",
+        "exposure": "A GitHub PR metadata read returned the full PR #219 Builder body and PR #218 Task172 handoff body along with status fields.",
+        "task179_builder_narrative_exposed": true,
+        "task172_handoff_exposed": true,
+        "used_to_revise_blind_or_unblind_evidence": false,
+        "used_to_resolve_existing_unknowns": false,
+        "impact": "The E1 blind records and E2 evaluation result predate this exposure. No body-derived claim was imported; session-level independence is further qualified."
+      }
+    ],
     "impact": "Cold-start independence is qualified; no claim of perfect blinding."
   },
   "frozen_criterion_dispositions": [
@@ -103,8 +123,39 @@
       "id": "PD-04",
       "finding": "An earlier wrong-repository pull-list response exposed unrelated historical PR narrative text before the blind checkpoint.",
       "impact": "The evaluation records limited blinding contamination; Task179 Builder narrative and case-specific unblind artifacts were not exposed."
+    },
+    {
+      "id": "PD-05",
+      "finding": "After E2, a metadata-oriented PR retrieval unexpectedly included the full PR #219 Builder narrative and PR #218 handoff body.",
+      "impact": "This did not inform the frozen E1 or E2 findings, but it further qualifies session-level independence and is recorded in the post-E2 addendum."
+    },
+    {
+      "id": "PD-06",
+      "finding": "The repository path-accounting gate does not classify the evaluator-only report and tool files allowed by this task; the E2 exact-head preflight reported 12 missing tracked paths.",
+      "impact": "The repository-path-accounting-preflight and lifecycle-validation workflow failed at the same manifest check. The generated Foundation path-classification snapshot was left unchanged under the evaluator write boundary; lifecycle checks after Layer A did not run in that workflow."
     }
   ],
+  "post_e2_execution_correction": {
+    "initial_pr220_base_recorded_at_e0": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+    "required_pr220_base": "work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0",
+    "corrected_after_e2": true,
+    "evaluator_head_unchanged_by_base_correction": "4b58c5ac1a5b00ecba2827c8f73d84846ad1581a",
+    "pr218_or_pr219_modified": false
+  },
+  "e2_exact_head_workflow_snapshot": {
+    "head": "4b58c5ac1a5b00ecba2827c8f73d84846ad1581a",
+    "runs": [
+      {"workflow": "foundation-validation", "run_id": 35190529632, "status_at_snapshot": "IN_PROGRESS"},
+      {"workflow": "architecture-pages", "run_id": 35190529609, "conclusion": "SUCCESS"},
+      {"workflow": "current-state-sync-validation", "run_id": 35190529740, "conclusion": "SUCCESS"},
+      {"workflow": "iteration-lifecycle-validation", "run_id": 35190529688, "conclusion": "FAILURE"},
+      {"workflow": "repository-path-accounting-preflight", "run_id": 35190529625, "conclusion": "FAILURE"},
+      {"workflow": "q33-governance-validation", "run_id": 35190529716, "conclusion": "SUCCESS"},
+      {"workflow": "iteration-planner-ci", "run_id": 35190529603, "conclusion": "SUCCESS"}
+    ],
+    "shared_failure": "Path-accounting manifest:all-tracked-accounted; tracked=4614, manifest=4602, missing=12. The lifecycle job stopped at its Layer A preflight before lifecycle tests.",
+    "generated_manifest_left_unchanged": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
+  },
   "unknowns": [
     "Whether the R0 package enables reconstruction beyond direct field extraction.",
     "Whether the bounded methods transfer to broader content or engineering tasks.",
@@ -125,5 +176,5 @@
     "model_rsi_or_weight_training": "NONE"
   },
   "owner_gpt_adjudication": "NOT_YET_RUN",
-  "evaluation_lifecycle": "RESULT_FROZEN_PENDING_FINAL_MECHANICAL_VALIDATION_AND_DRAFT_PR_HANDOFF"
+  "evaluation_lifecycle": "E2_RESULT_RETAINED_WITH_POST_E2_CONTAMINATION_AND_BASE_CORRECTION_ADDENDUM_PENDING_FINAL_VALIDATION"
 }
