@@ -1,0 +1,33 @@
+{
+  "schema_version": "cognitive-ir-r0a",
+  "package_id": "migration-fixture-r0a",
+  "task_id": "IGNITION-20260916-179",
+  "status": "READY_FOR_INDEPENDENT_EVALUATION",
+  "objects": [
+    {
+      "stable_id": "migration:object:unknown",
+      "object_type": "UNKNOWN",
+      "label": "Unknown relation carrier",
+      "content": {"note": "Preserve this object while the schema evolves."},
+      "provenance": {"source_refs": ["ignition/agent_runtime/cognitive_inheritance_r0/fixtures/migration-r0a.json"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "migration fixture"},
+      "uncertainty": {"status": "UNKNOWN", "confidence": null, "basis": ["fixture intentionally leaves the relationship unresolved"], "open_questions": ["future schema interpretation"]},
+      "claim_boundary": {"authority_status": "UNKNOWN", "allowed_claims": ["the unknown is retained"], "forbidden_inferences": ["unknown is success"]},
+      "allowed_use": ["migration test"],
+      "lifecycle": "UNRESOLVED"
+    }
+  ],
+  "relations": [
+    {
+      "stable_id": "migration:relation:unknown",
+      "relation_type": "UNKNOWN_RELATION",
+      "from": {"stable_id": "migration:object:unknown", "ref_kind": "OBJECT"},
+      "to": {"stable_id": "migration:object:unknown", "ref_kind": "OBJECT"},
+      "provenance": {"source_refs": ["ignition/agent_runtime/cognitive_inheritance_r0/fixtures/migration-r0a.json"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "unknown relation"},
+      "uncertainty": {"status": "UNKNOWN", "confidence": null, "basis": ["fixture intentionally leaves the relationship unresolved"], "open_questions": ["future schema interpretation"]},
+      "claim_boundary": {"authority_status": "UNKNOWN", "allowed_claims": ["the unknown relation is retained"], "forbidden_inferences": ["unknown is support"]}
+    }
+  ],
+  "transition_refs": [],
+  "provenance": {"source_refs": ["ignition/agent_runtime/cognitive_inheritance_r0/fixtures/migration-r0a.json"], "source_kind": "REPOSITORY_RECORD", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "minimum migration fixture"},
+  "claim_ceiling": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["adapter preservation behavior"], "forbidden_inferences": ["migration proves inheritance"]}
+}

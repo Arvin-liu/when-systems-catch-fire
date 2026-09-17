@@ -2255,7 +2255,7 @@
       "title": "AI-START-HERE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "eeea8bb9fad7fd266e24299457d784690b5f728444573486b0aa476fc2ae1946",
+      "source_sha256": "7c28357fb463f8dd1a2756deff28a2daabf3f490e03b88e613beda9a27d7d215",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-17"
@@ -2270,7 +2270,7 @@
       "title": "ARCHITECTURE",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "9210820cb8ae10f37fa68d548082a10cb0ef6f044de38167383416bc7f73c1bd",
+      "source_sha256": "50364f9859c5212181dc63855e8f151b5cb393ef46e13db68d185cf22dc2c059",
       "disposition": "SEED_CREATED",
       "seed_ids": [
         "FS-03"
@@ -2886,7 +2886,7 @@
       "title": "STATE-CHANGELOG",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "8b4bbd58187436ca23a93a362459a95b6f20e897d5c6905c41e7fe2b51061476",
+      "source_sha256": "39aba7c33fb4af3053ef158b9c76801b963ac887db8f138186a4a18c7a19a6c1",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-23"
@@ -3334,7 +3334,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "620648a1ec84cacb95166f9db12cb2216146ff8deb15494c06c5faa5575b6ffb",
+      "source_sha256": "8ccbb962f5005b25157512662d5b10be96bea1484aa2b47d212ed67b2de564ce",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -4271,7 +4271,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "b7ddf1d3f09d400b9031b39936be6cd113104dbeb2982d0ab5effccb446caf35",
+      "source_sha256": "e1c89de6a8093ef8fe9f6db5026afecfd0ffa20ec8843625983e9ef8f27c50ed",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",

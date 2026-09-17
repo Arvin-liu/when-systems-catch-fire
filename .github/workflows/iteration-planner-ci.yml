@@ -6,6 +6,7 @@ on:
   pull_request:
     branches:
       - main
+      - work/IGNITION-20260912-172-knowledge-routing-universal-corpus
 defaults:
   run:
     working-directory: ignition

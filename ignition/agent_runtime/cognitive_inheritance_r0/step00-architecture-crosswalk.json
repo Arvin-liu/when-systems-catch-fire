@@ -1,0 +1,178 @@
+{
+  "schema_version": "cognitive-inheritance-step00-crosswalk-r0",
+  "task_id": "IGNITION-20260916-179",
+  "baseline": {
+    "identifier": "PRE_CAPABILITY_INHERITANCE_BASELINE",
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "exact_head": "68565f2afb50989d2c2b0d346d774e3388702743",
+    "pr": 218,
+    "pr_lifecycle": "OPEN + DRAFT + unmerged",
+    "command_repository": "Arvin-liu/1111",
+    "command_path": "agent-commands/IGNITION-20260916-179.md",
+    "command_ref": "main",
+    "new_branch": "work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0",
+    "stacked_base": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus"
+  },
+  "classification_vocabulary": [
+    "ALREADY_PRESENT",
+    "PARTIAL_GAP",
+    "REAL_GAP",
+    "NOT_APPLICABLE",
+    "CONFLICTS_WITH_GOVERNANCE",
+    "RESEARCH_ONLY"
+  ],
+  "crosswalk": [
+    {
+      "candidate": "Current identity, Current Facts/Snapshot and task lifecycle",
+      "existing_authority": [
+        "ignition/data/architecture/current-system-identity.json",
+        "ignition/data/operations/current-snapshot-r1.json",
+        "ignition/data/operations/formal-task-lifecycle-r1.json"
+      ],
+      "classification": "ALREADY_PRESENT",
+      "r0_action": "Reference only; do not create a second Current authority."
+    },
+    {
+      "candidate": "Foundation function/nonfunction canonical authority and claim ceilings",
+      "existing_authority": [
+        "ignition/data/foundation/function-assets/identity-cards.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "ignition/docs/foundation/claim-governance-and-function-identity.md"
+      ],
+      "classification": "ALREADY_PRESENT",
+      "r0_action": "Store references and ceilings only; never promote IR rows into canonical claims."
+    },
+    {
+      "candidate": "Knowledge Experience, Human Results, Fire Seeds and generated projections",
+      "existing_authority": [
+        "ignition/data/governance/knowledge-experience/manifest.json",
+        "ignition/tools/governance/build_knowledge_experience.py",
+        "ignition/data/publication/fire-seeds/"
+      ],
+      "classification": "ALREADY_PRESENT",
+      "r0_action": "Keep R0 artifacts platform provenance and out of generated Knowledge inputs."
+    },
+    {
+      "candidate": "Routing overlays, compact index and Task172 exact-ID validation",
+      "existing_authority": [
+        "ignition/tools/research/task172_routing.py",
+        "ignition/data/research/task172-routing-r1/step07-routing-index.json",
+        "ignition/data/operations/iterations/172/step11-ab-replay.json"
+      ],
+      "classification": "ALREADY_PRESENT",
+      "r0_action": "Use as provenance-bound fixture evidence; do not rebuild or bulk-edit."
+    },
+    {
+      "candidate": "Task/context recovery, checkpoint/resume and handoff lineage",
+      "existing_authority": [
+        "ignition/agent_runtime/",
+        "ignition/schemas/agent-runtime/resume-capsule.schema.json",
+        "ignition/docs/architecture/agent-platform-r2.md"
+      ],
+      "classification": "PARTIAL_GAP",
+      "r0_action": "Add successor package with explicit cognitive-object and obligation pointers."
+    },
+    {
+      "candidate": "Skills, tools, provider adapters and external executor capabilities",
+      "existing_authority": [
+        "ignition/agent_federation/",
+        "ignition/data/agent-federation/",
+        "ignition/schemas/agent-federation/"
+      ],
+      "classification": "PARTIAL_GAP",
+      "r0_action": "Add a model/provider-neutral observable capability interface; do not bind a model name."
+    },
+    {
+      "candidate": "Iteration lifecycle, direction locks, fixed-point and exact-head gates",
+      "existing_authority": [
+        "ignition/ITERATION.md",
+        "ignition/tools/operations/compute_change_propagation.py",
+        ".github/workflows/foundation-validation.yml"
+      ],
+      "classification": "ALREADY_PRESENT",
+      "r0_action": "Reuse as mechanical evaluation evidence; no duplicate scheduler or gate."
+    },
+    {
+      "candidate": "Provenance/source-first-seen and historical migration lineage",
+      "existing_authority": [
+        "ignition/data/operations/",
+        "ignition/schemas/ignition-provenance-entry.schema.json",
+        "ignition/tools/foundation/migrate_legacy.py"
+      ],
+      "classification": "PARTIAL_GAP",
+      "r0_action": "Add typed cognitive migration lineage and explicit backward-readable adapter."
+    },
+    {
+      "candidate": "Observable object/method/uncertainty/counterexample representation",
+      "existing_authority": [
+        "ignition/data/foundation/",
+        "ignition/evidence-program/",
+        "ignition/schemas/"
+      ],
+      "classification": "REAL_GAP",
+      "r0_action": "Create minimal versioned Cognitive IR R0 with UNKNOWN and UNKNOWN_RELATION."
+    },
+    {
+      "candidate": "Cognitive Transition Record with adopt/reject/coexist/unresolved",
+      "existing_authority": [
+        "ignition/data/operations/iterations/",
+        "ignition/schemas/operations/"
+      ],
+      "classification": "REAL_GAP",
+      "r0_action": "Create an explicit transition record; a code diff alone is insufficient."
+    },
+    {
+      "candidate": "Independent evaluator plane and blind-first package",
+      "existing_authority": [
+        "ignition/evidence-program/",
+        "ignition/schemas/epistemic-governance/",
+        "ignition/tools/"
+      ],
+      "classification": "PARTIAL_GAP",
+      "r0_action": "Freeze a Builder/Evaluator/Adjudicator contract outside Builder write surface."
+    },
+    {
+      "candidate": "Harness subtraction and complexity retirement budget",
+      "existing_authority": [
+        "ignition/data/operations/",
+        "ignition/docs/architecture/os-control-plane-r2.md"
+      ],
+      "classification": "REAL_GAP",
+      "r0_action": "Require consumer, replacement, downgrade/merge/delete and replay conditions."
+    },
+    {
+      "candidate": "Model-independent capability calibration and rediscovery",
+      "existing_authority": [
+        "ignition/data/agent-federation/capability-taxonomy-r1.json",
+        "ignition/data/operations/ignition-operation-capability-registry-r1.json"
+      ],
+      "classification": "PARTIAL_GAP",
+      "r0_action": "Add only R0 interface metadata; calibration remains not-yet-measured."
+    },
+    {
+      "candidate": "Model-RSI, weight training or self-improvement claim",
+      "existing_authority": [],
+      "classification": "CONFLICTS_WITH_GOVERNANCE",
+      "r0_action": "Forbidden in R0; no training, weight edit or capability-improvement claim."
+    }
+  ],
+  "protected_authorities": [
+    "Foundation canonical registries",
+    "Current identity/facts/snapshot",
+    "formal task lifecycle",
+    "Knowledge Experience generated outputs",
+    "Human Results and Fire Seeds projections",
+    "Owner authority and epistemic acceptance",
+    "Independent evaluator acceptance criteria during a frozen round"
+  ],
+  "minimal_gap_list": [
+    "versioned typed Cognitive IR with explicit UNKNOWN",
+    "Cognitive Transition Record with preserved lineage",
+    "non-writable evaluator package and blind-first packet",
+    "successor handoff package without chat history",
+    "complexity budget with retirement conditions",
+    "provider/model-neutral Capability Interface",
+    "R0a to R0b migration fixture with no silent destructive rewrite"
+  ],
+  "claim_ceiling": "Repository-local architecture contract and mechanical conformance only; no cognitive inheritance success, model improvement, external validity, Owner acceptance or epistemic promotion."
+}

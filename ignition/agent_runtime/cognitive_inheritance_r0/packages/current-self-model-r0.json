@@ -1,0 +1,35 @@
+{
+  "schema_version": "current-self-model-r0",
+  "model_id": "CURRENT_SELF_MODEL_R0",
+  "task_id": "IGNITION-20260916-179",
+  "status": "READY_FOR_INDEPENDENT_EVALUATION",
+  "provisional": true,
+  "representation_phenotype": {
+    "carriers": ["files", "JSON", "JSONL", "schemas", "Python validators", "Agents", "prompts", "Skills", "workflows", "taxonomies", "routing overlays", "Git commits", "provider bindings"],
+    "carrier_boundary": "A carrier is replaceable and its existence is not itself a method, capability, evidence or truth.",
+    "observable_only": true
+  },
+  "cognitive_method": {
+    "observable_slots": ["frame the object", "decompose the task", "retrieve by provenance", "separate observation/evidence/analogy/hypothesis", "preserve uncertainty", "expose counterexamples and boundaries", "select an action", "record evaluation and revision"],
+    "hidden_state_policy": "No hidden reasoning or private chain is stored in R0 artifacts.",
+    "method_claim_ceiling": "These slots describe auditable artifacts and do not prove cognition or capability."
+  },
+  "cognitive_evolution": {
+    "required_record_fields": ["anomaly_or_failure", "reframing", "alternative_model", "independent_evaluation", "disposition", "migration_lineage", "rollback", "retirement"],
+    "allowed_dispositions": ["ADOPT", "REJECT", "COEXIST", "UNRESOLVED"],
+    "transition_boundary": "A code diff without an observable transition record is not treated as cognitive evolution.",
+    "independent_evaluation_required": true
+  },
+  "planes": [
+    {"plane_id": "EXTERNAL_INTELLIGENCE", "description": "Replaceable external models and Agents."},
+    {"plane_id": "CAPABILITY_INTERFACE", "description": "Observable provider-neutral contracts."},
+    {"plane_id": "HARNESS_ORCHESTRATION", "description": "Task decomposition, routing, tools, Skills, context and bounded parallelism."},
+    {"plane_id": "STRUCTURED_COGNITIVE_SUBSTRATE", "description": "Typed objects, relations, evidence, boundaries, history, obligations and lineage."},
+    {"plane_id": "OUTPUT_STRUCTURALIZATION", "description": "Converts observable output into typed artifacts without creating evidence or truth."},
+    {"plane_id": "INDEPENDENT_EVALUATION", "description": "Freezes acceptance rules outside the Builder write surface."},
+    {"plane_id": "EVOLUTION", "description": "Proposes reinterpretation, replacement, coexistence, rollback or retirement with lineage."}
+  ],
+  "protected_authorities": ["Foundation canonical registries", "Current identity/facts/snapshot", "formal task lifecycle", "Knowledge Experience and Human Results projections", "Fire Seeds", "Owner authority", "independent evaluator acceptance criteria"],
+  "unknowns": ["Whether a successor can reconstruct the method", "Whether continuation is correct", "Whether any capability transfers beyond structural replay", "External validity"],
+  "claim_ceiling": "Provisional repository-local self-model and mechanical artifact contract only; no cognitive inheritance, model improvement, truth or epistemic acceptance."
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "cognitive-transition-r0",
+  "transition_id": "transition-b-engineering-baseline-r0",
+  "task_id": "IGNITION-20260916-179",
+  "previous_cognitive_model": {"stable_id": "ir:b:model:task172-freeze", "ref_kind": "OBJECT"},
+  "observed_anomaly_or_failure": [{"stable_id": "ir:b:failure:future-capability-boundary", "ref_kind": "OBJECT"}],
+  "reframing": {
+    "previous_frame": "Treat a fixed-point and exact-head repository freeze as the complete acceptance boundary.",
+    "new_frame": "Treat structural closure as a baseline carrier and freeze a separate evaluator plane for successor reconstruction and continuation.",
+    "boundary": "The baseline demonstrates repository mechanics only; cognitive transfer and capability inheritance remain unmeasured."
+  },
+  "new_representation": [{"stable_id": "ir:b:evidence:exact-head-ci", "ref_kind": "OBJECT"}, {"stable_id": "ir:b:unknown:cognitive-transfer", "ref_kind": "OBJECT"}],
+  "new_method": [{"stable_id": "ir:b:method:dependency-ordered-fixed-point", "ref_kind": "OBJECT"}],
+  "evaluation": {
+    "evaluation_package_ref": {"stable_id": "independent-evaluation-package-r0", "ref_kind": "PACKAGE"},
+    "mechanical_checks": ["exact baseline head is recorded", "seven required workflow runs are success", "second run reports no diff", "clean clone is reported", "claim ceiling denies inheritance"],
+    "independent_evaluation_status": "NOT_RUN",
+    "evaluator_role": "INDEPENDENT_EVALUATOR_REQUIRED"
+  },
+  "disposition": "ADOPT",
+  "migration_lineage": [{"lineage_id": "lineage:transition-b-engineering-baseline", "source_ref": {"stable_id": "ir:b:model:task172-freeze", "ref_kind": "OBJECT"}, "target_ref": {"stable_id": "ir-package-engineering-baseline-r0", "ref_kind": "PACKAGE"}, "operation": "BASELINE_TO_EVALUATION_BOUNDARY", "destructive_rewrite": false}],
+  "provenance": {"source_refs": ["ignition/data/operations/iterations/172/step13-final-freeze.json", "https://github.com/Arvin-liu/when-systems-catch-fire/pull/218"], "source_kind": "DERIVED_OBSERVATION", "retrievability": "REPOSITORY_ONLY", "first_seen": "2026-09-16", "locator": "fixture-b"},
+  "claim_ceiling": {"authority_status": "PLATFORM_PROVENANCE", "allowed_claims": ["the package preserves a bounded engineering transition"], "forbidden_inferences": ["structural success is cognitive inheritance", "builder is the independent evaluator"]},
+  "builder_verdict": "NOT_EVALUATED_BY_BUILDER",
+  "final_state": "READY_FOR_INDEPENDENT_EVALUATION",
+  "unknowns": ["successor reconstruction fidelity", "continuation correctness", "transfer beyond repository replay", "external validity"]
+}

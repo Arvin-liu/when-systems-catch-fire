@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/ignition/agent_runtime/cognitive_inheritance_r0/schema/capability-interface-r0.schema.json",
+  "title": "Provider-Neutral Capability Interface R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "interface_id", "provider_model_neutral", "capabilities", "claim_ceiling"],
+  "properties": {
+    "schema_version": {"const": "capability-interface-r0"},
+    "interface_id": {"const": "cognitive-capability-interface-r0"},
+    "provider_model_neutral": {"const": true},
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/capability"}
+    },
+    "claim_ceiling": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "text"],
+      "properties": {
+        "status": {"const": "INTERFACE_ONLY"},
+        "text": {"type": "string", "minLength": 30}
+      }
+    }
+  },
+  "$defs": {
+    "capability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "capability_id",
+        "operation",
+        "observable_contract",
+        "inputs",
+        "outputs",
+        "required_tools",
+        "context_assumptions",
+        "validation_fixture",
+        "known_limitations",
+        "provider_model_binding",
+        "calibration",
+        "rediscovery"
+      ],
+      "properties": {
+        "capability_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$"},
+        "operation": {"enum": ["SERIALIZE", "VALIDATE", "RECORD_TRANSITION", "RECONSTRUCT_SUCCESSOR"]},
+        "observable_contract": {"type": "string", "minLength": 20},
+        "inputs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 3}},
+        "outputs": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 3}},
+        "required_tools": {"type": "array", "items": {"type": "string", "minLength": 3}},
+        "context_assumptions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 3}},
+        "validation_fixture": {"type": "string", "minLength": 3},
+        "known_limitations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 3}},
+        "provider_model_binding": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["provider", "model", "binding_status"],
+          "properties": {
+            "provider": {"const": "UNBOUND"},
+            "model": {"const": "UNBOUND"},
+            "binding_status": {"const": "NOT_BOUND_IN_R0"}
+          }
+        },
+        "calibration": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "evidence_refs", "measured_at"],
+          "properties": {
+            "status": {"enum": ["NOT_YET_MEASURED", "MECHANICAL_ONLY", "INDEPENDENTLY_EVALUATED"]},
+            "evidence_refs": {"type": "array", "items": {"type": "string", "minLength": 3}},
+            "measured_at": {"type": ["string", "null"]}
+          }
+        },
+        "rediscovery": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["trigger_conditions", "reprobe_required", "expiry_policy"],
+          "properties": {
+            "trigger_conditions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 3}},
+            "reprobe_required": {"const": true},
+            "expiry_policy": {"type": "string", "minLength": 10}
+          }
+        }
+      }
+    }
+  }
+}

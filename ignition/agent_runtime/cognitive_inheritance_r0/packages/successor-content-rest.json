@@ -1,0 +1,30 @@
+{
+  "schema_version": "successor-package-r0",
+  "package_id": "successor-content-rest-r0",
+  "task_id": "IGNITION-20260916-179",
+  "package_kind": "CONTENT_RESEARCH_SUCCESSOR",
+  "status": "READY_FOR_INDEPENDENT_EVALUATION",
+  "source_transition_ref": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-transition.json",
+  "source_fixture_ref": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json",
+  "baseline_ref": "PRE_CAPABILITY_INHERITANCE_BASELINE@68565f2afb50989d2c2b0d346d774e3388702743",
+  "reconstruction_contract": {
+    "start_without_chat_history": true,
+    "required_inputs": ["source provenance record", "retrieval observation", "no-performance boundary", "unknown successor-continuation"],
+    "steps": ["reconstruct the source binding", "separate observed exact validation from unmeasured comparison", "produce a bounded continuation proposal", "record counterexample and unresolved questions"],
+    "output_requirements": ["typed objects and relations", "provenance references", "claim ceiling", "explicit unknowns", "independent-evaluation handoff"],
+    "forbidden_assumptions": ["the source body is available from this package", "A/B metrics are comparable", "structured output proves cognitive inheritance", "the Builder can issue the final verdict"]
+  },
+  "open_obligations": [
+    "Independent evaluator must run the blind-first reconstruction.",
+    "Independent evaluator must test continuation on a bounded new case.",
+    "Any external validity or capability claim remains unknown until separately authorized and evaluated."
+  ],
+  "capability_interface_ref": "ignition/agent_runtime/cognitive_inheritance_r0/packages/capability-interface-r0.json",
+  "handoff": {
+    "builder_status": "MECHANICAL_PACKAGE_COMPLETE",
+    "builder_final_verdict": "NOT_EVALUATED_BY_BUILDER",
+    "independent_evaluator_required": true,
+    "stop_condition": "READY_FOR_INDEPENDENT_EVALUATION"
+  },
+  "claim_ceiling": "A successor package is a reconstruction contract and not evidence that cognition, capability or inheritance transferred."
+}

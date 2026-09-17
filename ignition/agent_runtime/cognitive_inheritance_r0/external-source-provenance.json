@@ -1,0 +1,53 @@
+{
+  "schema_version": "cognitive-inheritance-external-source-provenance-r0",
+  "retrieved_on": "2026-09-16",
+  "sources": [
+    {
+      "source_id": "paper:metarsi-v1:arxiv-2609.06396v2",
+      "provenance_class": "PAPER_CLAIM",
+      "title": "MetaRSI / RSI2: A Meta-Recursive Self-Improving System for Recursive Self-Improving Systems Themselves",
+      "url": "https://arxiv.org/html/2609.06396v2",
+      "abstract_url": "https://arxiv.org/abs/2609.06396",
+      "version": "v2",
+      "claims_used_as_reference": [
+        "A Loop Kernel is described as Observe -> Diagnose -> Propose -> Validate -> Execute -> Select -> Export.",
+        "Data-RSI, Harness-RSI and Model-RSI are typed operators with disjoint write surfaces; the paper keeps verifier, evaluator, gate and ledger outside those surfaces.",
+        "Horizontal orchestration composes operators while vertical optimization rewrites an operator policy; these are distinct deltas.",
+        "The paper distinguishes an amplifier of existing latent competence from a source of genuinely external information.",
+        "The paper states that fixed measurement surfaces must not be quietly rewritten to raise a promotion score."
+      ],
+      "not_adopted": [
+        "Model-RSI and weight training",
+        "MetaRSI capability or performance claims",
+        "Any paper benchmark result as evidence about Ignition"
+      ],
+      "source_status": "PRIMARY_SOURCE_READ"
+    },
+    {
+      "source_id": "repo:cosmosmind-ai:rsi-harness:33c4f8dfac4359987f2e814e187de67c332498de",
+      "provenance_class": "REPO_IMPLEMENTED_MECHANISM",
+      "title": "RSI-Harness / RSIH",
+      "repository": "CosmosMind-ai/RSI-Harness",
+      "url": "https://github.com/CosmosMind-ai/RSI-Harness",
+      "pinned_commit": "33c4f8dfac4359987f2e814e187de67c332498de",
+      "commit_url": "https://github.com/CosmosMind-ai/RSI-Harness/commit/33c4f8dfac4359987f2e814e187de67c332498de",
+      "implemented_mechanisms_used_as_reference": [
+        "A versioned Genome bundles a harness configuration across named components.",
+        "Component field ownership is mutually exclusive and out-of-bounds writes fail at load time.",
+        "The harness-rsi Genome reads observable session history and generates a deliverable Genome only after user confirmation.",
+        "Configuration is a patch with inherit-by-default semantics rather than a hidden replacement."
+      ],
+      "source_status": "PINNED_PUBLIC_REPOSITORY_COMMIT_READ"
+    }
+  ],
+  "media_paraphrase": [],
+  "pointfire_analogy": [
+    {
+      "analogy_id": "local:r0:structured-carrier-not-cognition",
+      "statement": "R0 treats a typed artifact package as a carrier that can help a successor reconstruct an explicit task, method and boundary; the carrier is not itself cognition or proof.",
+      "authority": "Pointfire analogy authored for this R0 package",
+      "status": "LOCAL_ANALOGY_ONLY"
+    }
+  ],
+  "claim_boundary": "Primary sources inform design vocabulary and explicit boundaries only. They do not upgrade Pointfire capability, M/E, claim ceilings, Current, Foundation truth, or epistemic acceptance."
+}
