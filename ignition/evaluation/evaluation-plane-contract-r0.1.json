@@ -1,0 +1,34 @@
+{
+  "schema_version": "evaluation-plane-contract-r0.1",
+  "contract_id": "EVALUATION_EVIDENCE_ISOLATION_R0_1",
+  "object_type": "EVALUATION_EVIDENCE",
+  "path_prefixes": [
+    "ignition/evaluation/",
+    "ignition/reports/evaluations/"
+  ],
+  "artifact_kinds": [
+    "EVALUATION_RESULT",
+    "EVALUATOR_METHOD",
+    "BLIND_CHECKPOINT",
+    "CONTAMINATION_DISCLOSURE",
+    "ADJUDICATION_RECEIPT",
+    "HELD_OUT_SUCCESSOR_RESULT"
+  ],
+  "visibility_and_discovery": {
+    "repository_path_accounting": "INCLUDED_TYPED_AS_EVALUATION_EVIDENCE",
+    "source_first_seen_and_provenance": "INCLUDED",
+    "function_asset_discovery": "EXCLUDED",
+    "nonfunction_claim_discovery": "EXCLUDED_WITH_AUDIT_ROW",
+    "canonical_candidate_generation": "EXCLUDED"
+  },
+  "promotion_boundary": {
+    "automatic_promotion": false,
+    "from": "EVALUATION_EVIDENCE",
+    "to": "ADJUDICATION_CANDIDATE_ONLY",
+    "requires_explicit_authorized_transition": true,
+    "authorization_reference_must_be_verified_by_existing_authority": true,
+    "canonicalization_by_this_contract": false,
+    "downstream": "Existing Foundation or Knowledge admission gates remain mandatory after separate adjudication."
+  },
+  "claim_ceiling": "Evaluation-plane classification and repository-local auditability only; no external truth, evidence maturity, canonical claim, Knowledge object, Fire Seed, Current state, Owner acceptance, or epistemic acceptance is inferred."
+}

@@ -24,6 +24,7 @@ def main() -> int:
         "KNOWLEDGE_SOURCE_EXPLICIT_ONLY",
         "PLATFORM_CODE_EXCLUDED",
         "GENERATED_PROJECTION_EXCLUDED",
+        "EVALUATION_EVIDENCE_ONLY",
         "HISTORICAL_PROVENANCE_ONLY",
     }
     if set(policy.get("classes", {})) != required_classes:
@@ -35,6 +36,7 @@ def main() -> int:
         "schemas": admission_for_path("schemas/agent-runtime/r1-run-state.schema.json").classification == "PLATFORM_CODE_EXCLUDED" and not admission_for_path("schemas/agent-runtime/r1-run-state.schema.json").auto_discovery,
         "explicit_docs": admission_for_path("docs/architecture/agent-runtime-r1.md").explicit and admission_for_path("docs/architecture/agent-runtime-r1.md").auto_discovery,
         "historical": admission_for_path("reports/operations/old-audit.md").classification == "HISTORICAL_PROVENANCE_ONLY" and admission_for_path("reports/operations/old-audit.md").provenance_only,
+        "evaluation_evidence": admission_for_path("reports/evaluations/fixture/result.json").classification == "EVALUATION_EVIDENCE_ONLY" and admission_for_path("reports/evaluations/fixture/result.json").provenance_only and not admission_for_path("reports/evaluations/fixture/result.json").auto_discovery,
     }
     if not all(assertions.values()):
         raise SystemExit("admission policy path assertions failed: " + json.dumps(assertions, sort_keys=True))
