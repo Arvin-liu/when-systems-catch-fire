@@ -1,0 +1,372 @@
+{
+  "artifact": "unblind-comparison.json",
+  "phase": "UNBLIND_COMPARISON",
+  "task_id": "IGNITION-20260917-180",
+  "evaluated_head": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+  "blind_checkpoint": {
+    "commit": "cf37d6d33707870514c3e62249ac3b8cbebf2526",
+    "message": "task180 blind: freeze independent reconstructions before unblinding",
+    "remote_push_verified": true,
+    "branch_ref": "eval/IGNITION-20260917-180-cognitive-inheritance-r0-independent-evaluation"
+  },
+  "reviewed_sources": [
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-transition.json",
+      "blob_sha": "075b25cee76442ac0866b8d361df614b141e0766",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-transition.json",
+      "blob_sha": "1b3adf530b6cfc6ab16e5537e679abaf54692c3f",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest-human.md",
+      "blob_sha": "2ce149fd07cc52aa9ab30938ad87ec4816028a4f",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze-human.md",
+      "blob_sha": "49639ebe2c446978d4e4e9bd0a4fc19c8309e51d",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json",
+      "blob_sha": "05cf08af054eb4d96186c5763ce33d497399a815",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/independent-evaluation-package.json",
+      "blob_sha": "8f7b80eb1b3c3da4abfdbfc367e3e2f40fa4a99d",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/capability-interface-r0.json",
+      "blob_sha": "6d14b7b27ab309f121060ad113a746d0dbcc71f0",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/complexity-budget-r0.json",
+      "blob_sha": "cde95fdfd69a823940ab63c6368e5a1114a7e0c6",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-ir-r0.schema.json",
+      "blob_sha": "37703e3c56ce36ccdba36ecd1581c0e820c097c4",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-transition-r0.schema.json",
+      "blob_sha": "4a61863c919c74354f5d3b6699a9f42a4a78e7b2",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/schema/independent-evaluation-package-r0.schema.json",
+      "blob_sha": "81d511a0d6079f21faaed5604af4cd37a11fdc92",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/schema/migration-record-r0.schema.json",
+      "blob_sha": "a32abea16fd8671ea4b2a8b44b679d879c4f5009",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/migration-r0a.json",
+      "blob_sha": "2dd59b5a9eeb354e56c57aa7cad3b39b2abedf40",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/migration-r0b.expected.json",
+      "blob_sha": "f7ab23e8303093798b8c17b6f6627ff20777ced6",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/migration-record-r0.json",
+      "blob_sha": "75f461a1c213a1168f1c0e72d34fa2f2f520f4ad",
+      "ref": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "path": "ignition/data/operations/iterations/172/step00-baseline-audit.json",
+      "blob_sha": "ed8e8b8d5ad0945d11e6bf840530449df3fa0d52",
+      "ref": "68565f2afb50989d2c2b0d346d774e3388702743"
+    },
+    {
+      "path": "ignition/data/operations/iterations/172/step11-ab-replay.json",
+      "blob_sha": "bcf0a0c4be868be108ad0fc22078238685aac4e0",
+      "ref": "68565f2afb50989d2c2b0d346d774e3388702743"
+    },
+    {
+      "path": "ignition/data/operations/iterations/172/step12-final-disposition.json",
+      "blob_sha": "4efceb3d6976ed8d8e8346aa86503b2d1c6bdef3",
+      "ref": "68565f2afb50989d2c2b0d346d774e3388702743"
+    },
+    {
+      "path": "ignition/data/operations/iterations/172/step13-final-freeze.json",
+      "blob_sha": "ead76cb647a6f1fe9710ce623212d1e818006cf8",
+      "ref": "68565f2afb50989d2c2b0d346d774e3388702743"
+    },
+    {
+      "path": "ignition/reports/operations/ignition-172-20260915-step13-final-freeze.md",
+      "blob_sha": "f6348b39c36166df7e11259bbbe541d1fe2abd22",
+      "ref": "68565f2afb50989d2c2b0d346d774e3388702743"
+    },
+    {
+      "path": "ignition/agent-results/IGNITION-20260915-178-result.md",
+      "blob_sha": "3fe682dafe1fb3f7508dc98e5f41e6f00c55c3b3",
+      "ref": "68565f2afb50989d2c2b0d346d774e3388702743"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "CONTENT-REST-01",
+      "transition": {
+        "id": "transition-a-content-rest-r0",
+        "previous_model": "ir:a:model:relay-candidate",
+        "anomaly": [
+          "ir:a:observation:exact-retrieval",
+          "ir:a:boundary:no-performance-claim"
+        ],
+        "reframing": "Separate source identity, exact canonical validation and missing comparison metrics; retain correctness observations while comparison and successor fidelity remain unresolved.",
+        "new_representation": [
+          "ir:a:observation:source-provenance",
+          "ir:a:observation:exact-retrieval",
+          "ir:a:unknown:successor-continuation"
+        ],
+        "new_method": [
+          "ir:a:method:separate-correctness-from-comparison"
+        ],
+        "disposition": "ADOPT",
+        "independent_evaluation_status": "NOT_RUN"
+      },
+      "human_confirmation": "The human fixture states 801 candidates, 50 selected, 50 valid canonical IDs, zero invalid/orphan, no fallback; result remains INCONCLUSIVE because A lacks comparable executable retrieval metrics. It states the source body is not copied.",
+      "field_comparison": [
+        {
+          "field": "object_identity",
+          "classification": "EXACT",
+          "expected_count": 8,
+          "matched_count": 8,
+          "source": "content-research-rest.json ir_package.objects",
+          "note": "IDs, object types and labels match; these were directly present in the permitted fixture."
+        },
+        {
+          "field": "relation_identity_and_direction",
+          "classification": "EXACT",
+          "expected_count": 4,
+          "matched_count": 4,
+          "source": "content-research-rest.json ir_package.relations",
+          "note": "All four stable IDs, relation types and from/to endpoints match exactly; directly present in the fixture."
+        },
+        {
+          "field": "provenance_binding",
+          "classification": "PARTIAL",
+          "source": "Task172 step00 and step11 records",
+          "note": "The source SHA, 14,540 bytes, 221 lines, source pointer, relay/workbench paths and replay case were carried. Step00 confirms the source hash/size/line count and exact local hit/copy match. The blind record omitted local_readable and the relay_observed_sha256 plus its whitespace-normalization disposition; source body was not opened."
+        },
+        {
+          "field": "claim_ceiling",
+          "classification": "EXACT",
+          "source": "fixture ir_package.claim_ceiling and Task180 frozen contract",
+          "note": "Platform-provenance boundary and exclusions of inheritance, comparative gain, external validity and epistemic acceptance are preserved."
+        },
+        {
+          "field": "unknown_retention",
+          "classification": "SEMANTICALLY_EQUIVALENT",
+          "source": "fixture unknown object, package obligations and Task172 replay",
+          "note": "A metrics remain NOT_MEASURED; successor continuation and source/body claims remain unresolved. Additional explicit unknowns were bounded and labeled."
+        },
+        {
+          "field": "forbidden_inference_retention",
+          "classification": "SEMANTICALLY_EQUIVALENT",
+          "source": "fixture claim boundaries, transition and human fixture",
+          "note": "No performance, scientific-truth, cognitive-inheritance or source-content claim was added."
+        },
+        {
+          "field": "method_ordering",
+          "classification": "EXACT",
+          "source": "ir:a:method:separate-correctness-from-comparison",
+          "note": "Bind source hash, validate canonical IDs, retain missing comparison metrics, emit INCONCLUSIVE in the same order."
+        },
+        {
+          "field": "counterexample_and_boundary_preservation",
+          "classification": "SEMANTICALLY_EQUIVALENT",
+          "source": "step11 disposition and human fixture",
+          "note": "The 50/50 exact-ID result is kept separate from A/B performance and source truth; the overclaim trap is appropriate."
+        },
+        {
+          "field": "obligations",
+          "classification": "SEMANTICALLY_EQUIVALENT",
+          "source": "fixture open_obligations and transition unknowns",
+          "note": "Independent reconstruction, new bounded continuation and missing A metrics remain open."
+        },
+        {
+          "field": "per_object_uncertainty_and_provenance_detail",
+          "classification": "PARTIAL",
+          "source": "content fixture ir_package.objects/relations",
+          "note": "Top-level uncertainty states and key source refs were retained, but per-object confidence, basis, first_seen, source_kind, retrievability, locators and all allowed/forbidden-use fields were not reproduced."
+        },
+        {
+          "field": "transition_framing_and_disposition",
+          "classification": "MISSING",
+          "source": "content-research-transition.json",
+          "note": "The prior/new frame and ADOPT disposition were not available in the blind packet; they were intentionally not guessed."
+        },
+        {
+          "field": "migration_lineage",
+          "classification": "MISSING",
+          "source": "content-research-transition.json",
+          "note": "The non-destructive BOUNDARY_AWARE_REPRESENTATION lineage was hidden until after the checkpoint and is absent from the blind record."
+        }
+      ],
+      "provenance_crosscheck": {
+        "source_hash_matches_step00": true,
+        "byte_and_line_counts_match": true,
+        "step11_case_fields_match": true,
+        "relay_transport_difference": "Task172 records a different relay mirror hash and labels it NON_AUTHORITATIVE_TRANSPORT_WHITESPACE_NORMALIZATION_ONE_BLANK_LINE_AND_FINAL_NEWLINE.",
+        "source_body_content_read": false
+      }
+    },
+    {
+      "case_id": "ENGINEERING-BASELINE-01",
+      "transition": {
+        "id": "transition-b-engineering-baseline-r0",
+        "previous_model": "ir:b:model:task172-freeze",
+        "anomaly": [
+          "ir:b:failure:future-capability-boundary"
+        ],
+        "reframing": "Treat structural closure as a baseline carrier and freeze a separate evaluator plane; the baseline is repository mechanics only, while transfer and capability inheritance remain unmeasured.",
+        "new_representation": [
+          "ir:b:evidence:exact-head-ci",
+          "ir:b:unknown:cognitive-transfer"
+        ],
+        "new_method": [
+          "ir:b:method:dependency-ordered-fixed-point"
+        ],
+        "disposition": "ADOPT",
+        "independent_evaluation_status": "NOT_RUN"
+      },
+      "human_confirmation": "The human fixture describes Task172 Step13 as the PRE_CAPABILITY_INHERITANCE_BASELINE, exact head 68565f2..., seven successful required workflows and clean clone at the recorded observation; it preserves the no-capability/no-truth ceiling.",
+      "field_comparison": [
+        {
+          "field": "object_identity",
+          "classification": "EXACT",
+          "expected_count": 7,
+          "matched_count": 7,
+          "source": "engineering-baseline-freeze.json ir_package.objects",
+          "note": "All seven IDs, types and labels match; directly present in the permitted fixture."
+        },
+        {
+          "field": "relation_identity_and_direction",
+          "classification": "EXACT",
+          "expected_count": 4,
+          "matched_count": 4,
+          "source": "engineering-baseline-freeze.json ir_package.relations",
+          "note": "All four stable IDs, types and endpoints match exactly; directly present in the fixture."
+        },
+        {
+          "field": "provenance_binding",
+          "classification": "PARTIAL",
+          "source": "Task172 Step13 JSON/report, Task178 result and PR #218 metadata",
+          "note": "Baseline SHA, PR #218, seven run IDs and live OPEN/DRAFT/unmerged status were carried and rechecked. Step13 confirms the 03a2... business-source head and a second-run no-diff fixed point. The blind record did not enumerate the ten frozen scan-input hashes. The fixture's clean_clone_verified=true is not independently resolved by the inspected Step13 files or metadata-only PR fields; Task178 records that clean-clone validation remained before release at its earlier 03a2... observation. This is time-scoped uncertainty, not proof the later 68565... baseline lacks a clean clone."
+        },
+        {
+          "field": "claim_ceiling",
+          "classification": "EXACT",
+          "source": "engineering fixture and Task172 freeze",
+          "note": "Repository-local comparison only; no capability inheritance, RSI/MetaRSI, self-training, truth, evidence or epistemic acceptance."
+        },
+        {
+          "field": "unknown_retention",
+          "classification": "SEMANTICALLY_EQUIVALENT",
+          "source": "fixture unknown object, transition and Task180 contract",
+          "note": "Whether a successor can apply the method beyond replay remains unknown."
+        },
+        {
+          "field": "forbidden_inference_retention",
+          "classification": "SEMANTICALLY_EQUIVALENT",
+          "source": "fixture method/boundary, transition and evaluation package",
+          "note": "CI and fixed point are not cognition, model improvement, truth or evaluator acceptance."
+        },
+        {
+          "field": "method_ordering",
+          "classification": "SEMANTICALLY_EQUIVALENT",
+          "source": "package reconstruction_contract and fixture method",
+          "note": "Baseline identity, scan-input freeze, dependency-ordered derivation, second-run no-diff, exact-head CI, clean clone, then evaluator handoff are represented in order with bounded details."
+        },
+        {
+          "field": "counterexample_and_boundary_preservation",
+          "classification": "SEMANTICALLY_EQUIVALENT",
+          "source": "Task172 Step13 and Task178 source record",
+          "note": "A previous Foundation failure at head 03a2... is not conflated with the later 68565... baseline; an unavailable current rerun is not rewritten as either baseline invalidity or current success."
+        },
+        {
+          "field": "obligations",
+          "classification": "SEMANTICALLY_EQUIVALENT",
+          "source": "fixture open_obligations, transition unknowns and package",
+          "note": "New bounded continuation, independent reconstruction and no inference from structural closure remain open."
+        },
+        {
+          "field": "per_object_uncertainty_and_provenance_detail",
+          "classification": "PARTIAL",
+          "source": "engineering fixture ir_package.objects/relations",
+          "note": "Object and relation identity and top-level uncertainty are present; per-object source kind, confidence/basis, locator and all allowed/forbidden fields were not reproduced."
+        },
+        {
+          "field": "scan_input_hash_enumeration",
+          "classification": "MISSING",
+          "source": "Task172 step13-final-freeze.json",
+          "note": "The exact scan-input list was only recoverable after unblinding and was not in the permitted fixture packet."
+        },
+        {
+          "field": "transition_framing_and_disposition",
+          "classification": "MISSING",
+          "source": "engineering-baseline-transition.json",
+          "note": "The prior/new frame and ADOPT disposition were hidden until after the checkpoint and were not guessed."
+        },
+        {
+          "field": "migration_lineage",
+          "classification": "MISSING",
+          "source": "engineering-baseline-transition.json",
+          "note": "The BASELINE_TO_EVALUATION_BOUNDARY lineage was hidden until after the checkpoint."
+        }
+      ],
+      "provenance_crosscheck": {
+        "baseline_exact_head_matches_pr218": true,
+        "pr218_current_lifecycle": "OPEN + DRAFT + unmerged",
+        "live_pr218_exact_head_workflows": "7/7 completed success",
+        "step13_second_run_no_diff": true,
+        "step13_business_source_head": "03a2b33cced830418cc310a59b519fca8d10f2fa",
+        "clean_clone_historical_claim": "NOT_INDEPENDENTLY_RESOLVED_WITHOUT_PR_NARRATIVE"
+      }
+    }
+  ],
+  "source_resolution": {
+    "provenance_map_references_total": 4,
+    "resolved": 4,
+    "scope": "unique source fields in the two fixture provenance_map arrays: Step00 JSON, Step11 JSON, Step13 JSON and PR #218 metadata",
+    "limitation": "This counts resolvable reference targets, not verification of every claim. The PR metadata-only view does not expose the clean-clone assertion; the source body was not opened."
+  },
+  "model_context": {
+    "current_self_model": "CURRENT_SELF_MODEL_R0 is explicitly provisional; its observable method slots and seven planes align with this exercise but are not an authority for correctness.",
+    "evaluator_package": "frozen criteria remain unchanged; Builder verdict stays NOT_EVALUATED_BY_BUILDER.",
+    "capability_interface": "all four provider/model bindings are UNBOUND and not calibrated; interface is not capability evidence.",
+    "complexity_budget": "R0 components are BOUNDED; the budget is accounting/retirement data only."
+  },
+  "protocol_defects": [
+    {
+      "id": "PROTOCOL_DEFECT",
+      "finding": "Both source fixtures embed a complete IR object and relation graph, source references, method, unknown and claim ceiling. The successor packages also state the reconstruction steps and forbidden assumptions.",
+      "impact": "Exact field recovery is mostly direct extraction. It does not distinguish reconstruction from copying and weakens RECONSTRUCTION_FIDELITY."
+    },
+    {
+      "id": "PROTOCOL_DEFECT",
+      "finding": "The content source body is not in the packet and was not opened; only provenance/transport metadata and a bounded replay observation are available.",
+      "impact": "Scientific or substantive content validity cannot be tested in this protocol."
+    },
+    {
+      "id": "PROTOCOL_DEFECT",
+      "finding": "The engineering fixture marks clean_clone_verified=true while the directly inspected Step13 record/report show the freeze awaiting clean-clone/final-CI validation at that record time; Task178 describes an earlier 03a2... start where clean-clone validation remained. PR #218 metadata and current exact-head runs do not disclose a clean-clone receipt.",
+      "impact": "Historical clean-clone evidence is unresolved within the authorized evidence surface. Do not call it false or verified."
+    }
+  ],
+  "direct_vs_recovered": "The object IDs, relation graph, source pointers, method steps, boundaries and explicit unknowns were present in the permitted successor packages/source fixtures. The post-checkpoint transitions add predecessor/anomaly/reframing/disposition/migration lineage; these fields were correctly left unknown in the blind records. The two continuation responses are the only evidence here that requires applying the bounded method to new observations."
+}

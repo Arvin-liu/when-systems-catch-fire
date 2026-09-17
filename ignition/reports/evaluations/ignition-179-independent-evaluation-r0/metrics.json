@@ -1,0 +1,227 @@
+{
+  "artifact": "metrics.json",
+  "task_id": "IGNITION-20260917-180",
+  "evaluated_builder_head": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+  "frozen_metrics_source": {
+    "path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/independent-evaluation-package.json",
+    "blob_sha": "8f7b80eb1b3c3da4abfdbfc367e3e2f40fa4a99d"
+  },
+  "measurement_principles": [
+    "Report observable counts and exact denominators only where the artifact defines them.",
+    "Do not invent composite scores, pass thresholds, time measurements, or effective-task denominators.",
+    "Repository byte counts and record-step counts are narrow mechanical proxies, not measures of cognition."
+  ],
+  "metrics": [
+    {
+      "metric_id": "reconstruction_fidelity",
+      "measurement_status": "MEASURED_AS_FIELD_CLASSIFICATIONS_NO_COMPOSITE_SCORE",
+      "unit": "field classification counts",
+      "value": {
+        "classification_counts_across_both_cases": {
+          "EXACT": 7,
+          "SEMANTICALLY_EQUIVALENT": 9,
+          "PARTIAL": 4,
+          "MISSING": 5,
+          "INCORRECT": 0,
+          "UNJUSTIFIED_ADDITION": 0
+        },
+        "by_case": {
+          "CONTENT-REST-01": {
+            "field_count": 12,
+            "EXACT": 4,
+            "SEMANTICALLY_EQUIVALENT": 4,
+            "PARTIAL": 2,
+            "MISSING": 2,
+            "INCORRECT": 0,
+            "UNJUSTIFIED_ADDITION": 0
+          },
+          "ENGINEERING-BASELINE-01": {
+            "field_count": 13,
+            "EXACT": 3,
+            "SEMANTICALLY_EQUIVALENT": 5,
+            "PARTIAL": 2,
+            "MISSING": 3,
+            "INCORRECT": 0,
+            "UNJUSTIFIED_ADDITION": 0
+          }
+        },
+        "criterion_disposition": "PARTIAL"
+      },
+      "limitations": [
+        "Objects, relations, source pointers, methods and boundaries were directly present in the blind packet, so matching counts do not establish reconstruction rather than copying.",
+        "The comparison classes are evidence summaries, not a frozen numeric scoring rubric."
+      ]
+    },
+    {
+      "metric_id": "continuation_correctness",
+      "measurement_status": "MEASURED_CASEWISE_QUALITATIVE_DISPOSITION",
+      "unit": "bounded case checklist evidence",
+      "value": {
+        "CONTENT-CONT-01": {
+          "disposition": "PASS_WITHIN_SUPPLIED_CASE",
+          "required_behavior_observed": [
+            "States only the observed exact-ID, orphan, fallback and retrieval-time facts.",
+            "Rejects faster-than-A, external-truth and capability claims.",
+            "Requests matched A metrics and authorized source-body review as needed.",
+            "Includes provenance limits, unknowns, a claim ceiling and an overclaim counterexample."
+          ]
+        },
+        "ENGINEERING-CONT-01": {
+          "disposition": "PASS_WITHIN_SUPPLIED_CASE",
+          "required_behavior_observed": [
+            "Preserves the frozen baseline identity while separating historical 7/7 evidence from current 6-success-plus-1-unavailable status.",
+            "Classifies runner outage as UNAVAILABLE, not success or a content failure.",
+            "Does not mutate the baseline and limits the next action to a same-head Foundation retry after availability returns.",
+            "Retains unknowns, forbidden inferences, provenance, claim ceiling and an overclaim counterexample."
+          ]
+        },
+        "criterion_disposition": "PASS",
+        "scope": "Only the two exact bounded observations supplied by Task180; not a generalization test."
+      },
+      "limitations": [
+        "One evaluator produced and judged both continuations; no second-rater agreement or external replication is available.",
+        "No numeric pass threshold was added."
+      ]
+    },
+    {
+      "metric_id": "provenance_resolution_rate",
+      "measurement_status": "MEASURED_REFERENCE_TARGET_RESOLUTION_ONLY",
+      "unit": "resolved provenance-map references / total provenance-map references",
+      "value": {
+        "resolved": 4,
+        "total": 4,
+        "ratio": 1.0,
+        "scope": "The four unique references named by the two fixture provenance_map arrays: Task172 Step00 JSON, Step11 JSON, Step13 JSON and PR #218 metadata."
+      },
+      "limitations": [
+        "Reference-target resolution does not verify every claim at the target.",
+        "The metadata-only PR view does not resolve the historical clean-clone assertion; source truth and substantive validity are outside this count."
+      ]
+    },
+    {
+      "metric_id": "structural_compression_ratio",
+      "measurement_status": "BOUNDED_FILE_SIZE_PROXY",
+      "unit": "successor package Git blob bytes / corresponding source fixture Git blob bytes",
+      "value": {
+        "CONTENT-REST-01": {
+          "package_path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/successor-content-rest.json",
+          "package_blob_sha": "f50c939cf5f4605f8c7b4f606d3a68e522e871ef",
+          "package_bytes": 2111,
+          "source_fixture_path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json",
+          "source_fixture_blob_sha": "f145eacdb546c714b818f5765c570b6df5e10d83",
+          "source_fixture_bytes": 16861,
+          "ratio": 0.1252001661
+        },
+        "ENGINEERING-BASELINE-01": {
+          "package_path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/successor-engineering-baseline.json",
+          "package_blob_sha": "8d9ae3f0e1bbeca06de6624629a49a1b41f8bdd4",
+          "package_bytes": 2262,
+          "source_fixture_path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json",
+          "source_fixture_blob_sha": "634411e50d8ede0616965c04e15616b00e1d2a8d",
+          "source_fixture_bytes": 15632,
+          "ratio": 0.144703173
+        }
+      },
+      "limitations": [
+        "This is exact file-size arithmetic using each matching fixture as the source-context denominator.",
+        "It does not measure semantic information compression, reconstruction effort, or model capability."
+      ]
+    },
+    {
+      "metric_id": "inheritance_lag",
+      "measurement_status": "MEASURED_BOUNDED_METHOD_STEPS_ONLY",
+      "unit": "method_applied entries in the continuation record",
+      "value": {
+        "CONTENT-CONT-01": {
+          "observable_method_steps": 5,
+          "source": "continuation-content.json method_applied"
+        },
+        "ENGINEERING-CONT-01": {
+          "observable_method_steps": 6,
+          "source": "continuation-engineering.json method_applied"
+        }
+      },
+      "limitations": [
+        "No packet-to-output timestamps were captured, so elapsed lag is not measured.",
+        "These are explicitly written bounded record steps, not a measure of general inheritance latency or hidden reasoning."
+      ]
+    },
+    {
+      "metric_id": "migration_cost",
+      "measurement_status": "MEASURED_REPOSITORY_LOCAL_DELTA_ONLY",
+      "unit": "changed repository-local files by surface",
+      "value": {
+        "builder_r0_contract_files_changed": 0,
+        "builder_r0_artifact_files_changed": 0,
+        "foundation_canonical_files_changed": 0,
+        "current_canonical_files_changed": 0,
+        "evaluator_report_files_added": 10,
+        "evaluator_validator_and_test_files_added": 2,
+        "migration_performed": false
+      },
+      "limitations": [
+        "The evaluator branch adds reports and evaluator-only checking code; it performs no R0 contract migration.",
+        "This does not estimate model migration cost."
+      ]
+    },
+    {
+      "metric_id": "regression_retention",
+      "measurement_status": "MEASURED_BOUNDED_BASELINE_CHECKS",
+      "unit": "existing R0 validator and bounded test outcomes",
+      "value": {
+        "checked_task179_head": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+        "task179_validator": "PASS",
+        "task179_validator_checked_json_files": 21,
+        "r0_and_federation_ownership_tests_passed": 16,
+        "r0_and_federation_ownership_tests_failed": 0,
+        "execution_environment": "fresh clean clone at exact Task179 head, separate from evaluator branch"
+      },
+      "limitations": [
+        "This retains only the named bounded validator and test behaviors; it is not a whole-repository semantic regression claim.",
+        "The evaluator branch exact-head Actions and final clean-clone results are recorded in the final Draft PR handoff after E2."
+      ]
+    },
+    {
+      "metric_id": "governance_overhead",
+      "measurement_status": "NOT_MEASURABLE_WITH_CURRENT_PROTOCOL",
+      "unit": "evaluation cost / effective task cost",
+      "reason": "No reliable evaluation-cost measure or effective-task-cost denominator was frozen or recorded."
+    },
+    {
+      "metric_id": "evaluator_disagreement",
+      "measurement_status": "NOT_MEASURED_SINGLE_EVALUATOR",
+      "unit": "disagreement between independent evaluators",
+      "reason": "There was one evaluator; no second independent score exists."
+    },
+    {
+      "metric_id": "schema_pressure",
+      "measurement_status": "NOT_MEASURABLE_WITH_CURRENT_PROTOCOL",
+      "unit": "unknown or migration requests / artifacts",
+      "value": {
+        "observed_blind_comparison_gaps": {
+          "CONTENT-REST-01": 2,
+          "ENGINEERING-BASELINE-01": 3
+        },
+        "total_comparison_gaps": 5,
+        "schema_change_requests": 0
+      },
+      "reason": "The five unblind comparison gaps are missing fields in the blind packet, not schema-change requests. The protocol defines no valid request denominator."
+    },
+    {
+      "metric_id": "boundary_retention",
+      "measurement_status": "MEASURED_REQUIRED_RECORD_FIELDS_AND_CONTROL_DISPOSITIONS",
+      "unit": "presence of required boundary groups and negative-control outcomes",
+      "value": {
+        "continuation_records_with_unknowns_forbidden_inferences_counterexample_claim_ceiling_provenance_and_obligations": 2,
+        "continuation_records_total": 2,
+        "negative_controls_rejected": 8,
+        "negative_controls_total": 8,
+        "negative_controls_failed": 0,
+        "criterion_disposition": "PASS"
+      },
+      "limitations": [
+        "This checks the contents of this evaluation's two records and eight controls; it is not general boundary-following capability evidence."
+      ]
+    }
+  ]
+}

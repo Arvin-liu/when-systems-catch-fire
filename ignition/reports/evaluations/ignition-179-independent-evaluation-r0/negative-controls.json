@@ -1,0 +1,60 @@
+{
+  "artifact": "negative-controls.json",
+  "task_id": "IGNITION-20260917-180",
+  "controls": [
+    {
+      "id": "NEC-01",
+      "claim": "Schema validation passed, therefore cognitive inheritance is proven.",
+      "disposition": "REJECTED",
+      "rationale": "Schema validation establishes only mechanical conformance to a schema. A conditional claim may say the package satisfied the checked schema/version."
+    },
+    {
+      "id": "NEC-02",
+      "claim": "Exact-head CI is green, therefore successor cognition is correct.",
+      "disposition": "REJECTED",
+      "rationale": "CI is repository-local mechanical evidence. It does not test independent reconstruction or continuation. A conditional claim may say the required workflows passed on the exact SHA."
+    },
+    {
+      "id": "NEC-03",
+      "claim": "A successor can parse the package, therefore model capability improved.",
+      "disposition": "REJECTED",
+      "rationale": "Parsing proves only observable format handling; no before/after capability calibration or model comparison was measured."
+    },
+    {
+      "id": "NEC-04",
+      "claim": "Structured provenance is equivalent to external evidence.",
+      "disposition": "REJECTED",
+      "rationale": "Provenance can bind a record to a reference/hash and support source identity. It does not establish source truth, independent review or claim validity."
+    },
+    {
+      "id": "NEC-05",
+      "claim": "A fixed point proves truth or epistemic acceptance.",
+      "disposition": "REJECTED",
+      "rationale": "Second-run no-diff supports derivation stability under the recorded inputs. It is not truth, external validity or Owner/GPT acceptance."
+    },
+    {
+      "id": "NEC-06",
+      "claim": "The evaluator may relax a frozen criterion after seeing a failure.",
+      "disposition": "REJECTED",
+      "rationale": "Changing a sealed criterion retroactively invalidates this round. A prospective revision requires Owner authority and a new frozen replay; the observed result stays recorded."
+    },
+    {
+      "id": "NEC-07",
+      "claim": "Missing information may be silently filled from prior chat memory.",
+      "disposition": "REJECTED",
+      "rationale": "Unknown and not-recoverable fields must remain explicit. Prior Builder/Owner context cannot replace packet evidence; contamination must be disclosed, not used to fill gaps."
+    },
+    {
+      "id": "NEC-08",
+      "claim": "A successful continuation authorizes Model-RSI or weight training.",
+      "disposition": "REJECTED",
+      "rationale": "This task's authority ceiling forbids R1, MetaRSI, Model-RSI and weight training. Continuation success does not expand scope."
+    }
+  ],
+  "summary": {
+    "passed_controls": 8,
+    "failed_controls": 0,
+    "interpretation": "All eight prohibited equivalences are rejected; conditional mechanical/repository claims are stated without widening the frozen ceiling."
+  },
+  "scope_boundary": "This control result measures evaluator boundary handling in this protocol only; it is not evidence of general model capability."
+}
