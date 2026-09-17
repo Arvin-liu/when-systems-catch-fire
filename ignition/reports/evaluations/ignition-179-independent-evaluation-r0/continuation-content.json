@@ -1,0 +1,79 @@
+{
+  "artifact": "continuation-content.json",
+  "case_id": "CONTENT-CONT-01",
+  "phase": "BOUNDED_CONTINUATION",
+  "input_observation": {
+    "selected_exact_ids": 50,
+    "valid_exact_ids": 50,
+    "invalid_orphan_ids": 0,
+    "fallback": false,
+    "retrieval_time_ms": 710,
+    "A_baseline_executable_metrics": "UNAVAILABLE",
+    "external_evidence_review": "NOT_RUN",
+    "source_body_available": false
+  },
+  "outcome": "BOUNDED_CONTINUATION_CORRECT",
+  "safe_assertions": [
+    "For CONTENT-CONT-01, the supplied observation reports 50 selected exact IDs and 50 valid exact IDs, with zero invalid/orphan IDs and no fallback.",
+    "The supplied record reports retrieval_time_ms=710 for this observation only.",
+    "The observation is an operational exact-ID validation result, not a source-content finding."
+  ],
+  "cannot_assert": [
+    "Cannot claim it was faster than A: A baseline executable metrics are unavailable and no comparable protocol/resource baseline is supplied.",
+    "Cannot claim scientific truth, external evidence support or substantive validity because the source body is unavailable and external review was not run.",
+    "Cannot claim model capability improvement, cognitive inheritance, generalization or Owner acceptance.",
+    "Cannot compare 710 ms to the earlier 939.995 ms Task172 B observation without a matched case/protocol."
+  ],
+  "faster_than_A": {
+    "decision": "NO",
+    "reason": "A executable metrics are unavailable; there is no valid denominator or matched comparison."
+  },
+  "capability_or_external_truth": {
+    "decision": "NO",
+    "reason": "The data are one bounded observation; source_body_available=false and external_evidence_review=NOT_RUN."
+  },
+  "next_evidence_needed": [
+    "A executable baseline measured on a matched case, candidate universe, validation procedure and resource environment.",
+    "If substantive claims are to be evaluated, authorized source-body access plus independent source/evidence review bound to the source hash.",
+    "A separately frozen successor evaluation with repeated bounded cases if a transfer/generalization claim is proposed."
+  ],
+  "overclaim_counterexample": {
+    "invalid_claim": "50/50 exact IDs and 710 ms proves the method is faster than A and validates the source claims.",
+    "why_invalid": [
+      "No A metrics exist.",
+      "No source body or external review exists.",
+      "A single bounded retrieval observation does not establish capability transfer."
+    ]
+  },
+  "provenance": {
+    "observation_origin": "Task180 §7.1 supplied bounded input",
+    "source_record": "NOT_PROVIDED_FOR_THIS_NEW_CASE",
+    "old_fixture_hash_reused": false,
+    "claim_ceiling": "Repository/task-supplied mechanical observation only."
+  },
+  "explicit_unknowns": [
+    "A comparison metrics and baseline are unavailable.",
+    "Source identity/content binding for CONTENT-CONT-01 is not supplied; do not inherit the old fixture hash.",
+    "External review and source truth are unassessed.",
+    "Whether performance or method generalizes is unknown."
+  ],
+  "forbidden_inferences": [
+    "A/B speedup",
+    "source-content truth",
+    "external validity",
+    "capability improvement",
+    "cognitive inheritance",
+    "Owner acceptance"
+  ],
+  "method_applied": [
+    "record exact selected/valid/orphan/fallback fields",
+    "keep A comparison unavailable",
+    "separate observation from source truth",
+    "state the narrow claim ceiling",
+    "request only evidence needed for a matched comparison"
+  ],
+  "unresolved_obligations": [
+    "Provide comparable A metrics if a performance comparison is requested.",
+    "Keep source-content questions open until source-body access and independent review are available."
+  ]
+}

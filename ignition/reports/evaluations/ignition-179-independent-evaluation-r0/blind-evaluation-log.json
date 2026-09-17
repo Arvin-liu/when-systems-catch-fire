@@ -1,0 +1,66 @@
+{
+  "artifact": "blind-evaluation-log.json",
+  "checkpoint_id": "E1_BLIND_RECONSTRUCTION_FREEZE",
+  "task_id": "IGNITION-20260917-180",
+  "role": "INDEPENDENT_EVALUATOR",
+  "task_only_read": {
+    "path": "Arvin-liu/1111@d3fc657df8ab312ef15a644cd28096b5e8924a5e:agent-commands/IGNITION-20260916-179.md",
+    "blob_sha": "ac153f5e7656221df4612a5e1a5701691bea5edd"
+  },
+  "blind_packet_inputs": [
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/successor-content-rest.json",
+      "blob_sha": "f50c939cf5f4605f8c7b4f606d3a68e522e871ef"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest.json",
+      "blob_sha": "f145eacdb546c714b818f5765c570b6df5e10d83"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/packages/successor-engineering-baseline.json",
+      "blob_sha": "8d9ae3f0e1bbeca06de6624629a49a1b41f8bdd4"
+    },
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze.json",
+      "blob_sha": "634411e50d8ede0616965c04e15616b00e1d2a8d"
+    }
+  ],
+  "sequence": {
+    "remote_preflight_complete": true,
+    "task_only_complete": true,
+    "successor_packages_and_source_fixtures_read": true,
+    "blind_reconstructions_written": true,
+    "unblind_material_read_before_checkpoint": false,
+    "blind_checkpoint_commit_expected": "task180 blind: freeze independent reconstructions before unblinding"
+  },
+  "unblind_material_not_read": [
+    "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-transition.json",
+    "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-transition.json",
+    "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/content-research-rest-human.md",
+    "ignition/agent_runtime/cognitive_inheritance_r0/fixtures/engineering-baseline-freeze-human.md",
+    "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json",
+    "ignition/agent_runtime/cognitive_inheritance_r0/packages/independent-evaluation-package.json",
+    "Task179 historical commit explanations"
+  ],
+  "contamination": {
+    "status": "BLINDING_CONTAMINATION",
+    "scope": "LIMITED_NON_TARGET_HISTORICAL_PR_TEXT",
+    "event": "Wrong-repository pull-list response from Arvin-liu/1111 displayed unrelated old PR bodies (#115 Task168 receipt, #114 Task167 receipt, partial #16 and truncated surrounding collection).",
+    "task179_builder_narrative_exposed": false,
+    "transition_or_human_files_exposed": false,
+    "case_specific_unblind_material_exposed": false,
+    "impact": "Cold-start independence is qualified; no claim of perfect blinding."
+  },
+  "protocol_defects": [
+    {
+      "id": "PROTOCOL_DEFECT",
+      "finding": "Both allowed source fixtures embed complete IR object and relation lists, provenance pointers, method sequence, unknowns and claim ceiling; successor packages also state reconstruction steps and forbidden assumptions.",
+      "effect": "Object/relation/provenance/method fidelity can be achieved by direct extraction. The packet does not isolate whether those fields are independently reconstructed or merely copied; reflect this limitation in criterion disposition."
+    }
+  ],
+  "no_hidden_chain_of_thought": true,
+  "private_email_used": false,
+  "global_git_identity_changed": false,
+  "e0_commit": "9278e7692642fc8365ec6c89a905e25efb3663c0",
+  "unblind_authorization": "AFTER_E1_REMOTE_PUSH_VERIFICATION_ONLY"
+}
