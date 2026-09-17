@@ -1,0 +1,228 @@
+{
+  "schema_version": "successor-output-r0.1",
+  "case_id": "engineering-governance-01",
+  "source_sha256": "574ff4d65923dd956323fbb048c995318c31c7c7ffaafdc641b57f18d0d095fb",
+  "observations": [
+    {
+      "id": "source-provenance",
+      "kind": "OBSERVATION",
+      "statement": "The supplied raw object is raw-contract.json (569 bytes; SHA256 574ff4d65923dd956323fbb048c995318c31c7c7ffaafdc641b57f18d0d095fb). Supplied provenance binds it to Arvin-liu/when-systems-catch-fire at ref 12e133c6d58a5e22437e42bb75fd912607bb4540, path ignition/data/operations/durability/namespace-contract-r1.json, blob 8995de6a995f5e84b985717ca0c29e31e3c8d229, and describes it as a repository-local governance object whose policy status is not independent external truth.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:entire object",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/provenance.json:/source_repository",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/provenance.json:/source_ref",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/provenance.json:/source_path",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/provenance.json:/source_git_blob_sha",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/provenance.json:/source_sha256",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/provenance.json:/scope"
+      ],
+      "uncertainty": "OBSERVED"
+    },
+    {
+      "id": "contract-shape",
+      "kind": "OBSERVATION",
+      "statement": "The supplied JSON declares schema_version ignition-durability-namespace-r1, default_policy DENY_CROSS_NAMESPACE, four principal types, ten binding fields, one cross-namespace rule token, and four prohibited-capability tokens.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/schema_version",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/default_policy",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/principal_types",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/binding_fields",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/cross_namespace_rule",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/prohibited_capabilities"
+      ],
+      "uncertainty": "OBSERVED"
+    },
+    {
+      "id": "default-policy-claim",
+      "kind": "CLAIM",
+      "statement": "Source-reported contract declaration: the default policy token is DENY_CROSS_NAMESPACE.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/default_policy"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "binding-and-principal-claim",
+      "kind": "CLAIM",
+      "statement": "Source-reported contract declaration: binding fields are principal_id, workspace_id, episode_id, run_id, memory_scope, pack_activation_scope, executor_lease_scope, snapshot_scope, soft_context_scope, namespace_id; principal types are OWNER, OPERATOR, SYSTEM, EXECUTOR.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/binding_fields",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/principal_types"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "delegation-and-prohibition-claim",
+      "kind": "CLAIM",
+      "statement": "Source-reported contract declaration: cross-namespace rule token EXPLICIT_DELEGATION_WITH_SCOPE_EXPIRY_ISSUER_APPROVAL_POLICY_DIGEST; prohibited-capability tokens oauth, sso, account_provisioning, implicit_cross_namespace_read.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/cross_namespace_rule",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/prohibited_capabilities"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "contract-interpretation",
+      "kind": "OBSERVATION",
+      "statement": "Interpretation (not a source fact): the object expresses a deny-by-default namespace-governance rule and names context fields and delegation conditions, but does not demonstrate runtime enforcement.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/default_policy",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/cross_namespace_rule",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/provenance.json:/scope"
+      ],
+      "uncertainty": "INFERRED"
+    },
+    {
+      "id": "enforcement-hypothesis",
+      "kind": "CLAIM",
+      "statement": "Hypothesis (unverified): a runtime intended to follow this contract might check the listed context and explicit-delegation conditions for each cross-namespace request; the object does not specify that algorithm or demonstrate the checks exist.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/binding_fields",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/cross_namespace_rule"
+      ],
+      "uncertainty": "HYPOTHESIS"
+    }
+  ],
+  "objects": [
+    {
+      "id": "namespace-contract",
+      "kind": "OBJECT",
+      "statement": "The supplied repository-local namespace governance JSON object.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:entire object",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/provenance.json:/scope"
+      ],
+      "uncertainty": "OBSERVED"
+    },
+    {
+      "id": "default-policy",
+      "kind": "OBJECT",
+      "statement": "The declared default-policy value DENY_CROSS_NAMESPACE.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/default_policy"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "binding-fields",
+      "kind": "OBJECT",
+      "statement": "The ten declared identity, workspace, episode, run, memory, activation, lease, snapshot, context, and namespace binding fields.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/binding_fields"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "principal-types",
+      "kind": "OBJECT",
+      "statement": "The declared principal type set OWNER, OPERATOR, SYSTEM, EXECUTOR.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/principal_types"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "delegation-rule",
+      "kind": "OBJECT",
+      "statement": "The declared cross-namespace rule token requiring explicit delegation with scope expiry, issuer approval, and policy digest.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/cross_namespace_rule"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "prohibited-capabilities",
+      "kind": "OBJECT",
+      "statement": "The declared prohibited-capability set oauth, sso, account_provisioning, implicit_cross_namespace_read.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/prohibited_capabilities"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    }
+  ],
+  "relations": [
+    {
+      "id": "eg-r1",
+      "from_id": "namespace-contract",
+      "relation_type": "DECLARES_DEFAULT_POLICY",
+      "to_id": "default-policy",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/default_policy"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "eg-r2",
+      "from_id": "namespace-contract",
+      "relation_type": "LISTS_BINDING_FIELDS",
+      "to_id": "binding-fields",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/binding_fields"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "eg-r3",
+      "from_id": "namespace-contract",
+      "relation_type": "LISTS_PRINCIPAL_TYPES",
+      "to_id": "principal-types",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/principal_types"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "eg-r4",
+      "from_id": "namespace-contract",
+      "relation_type": "DECLARES_CROSS_NAMESPACE_RULE",
+      "to_id": "delegation-rule",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/cross_namespace_rule"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "eg-r5",
+      "from_id": "namespace-contract",
+      "relation_type": "LISTS_PROHIBITED_CAPABILITIES",
+      "to_id": "prohibited-capabilities",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json:/prohibited_capabilities"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    }
+  ],
+  "unknowns": [
+    "The contract does not specify what checks enforce binding fields or where checks execute (raw-contract.json:/binding_fields; provenance.json:/scope).",
+    "Issuer authority, approval scope, expiry format and clock, policy-digest algorithm, and failure behavior are unspecified (raw-contract.json:/cross_namespace_rule).",
+    "The mapping from principal types to allowed actions and the lifecycle of namespace identities are not supplied (raw-contract.json:/principal_types; /binding_fields).",
+    "No implementation, negative test, runtime observation, or deployment evidence is supplied; enforcement remains unknown (provenance.json:/scope).",
+    "No transition target is supplied and no transition is proposed; the target remains unresolved."
+  ],
+  "boundaries": [
+    "This is one repository-local governance object bound by supplied provenance; its policy status is not independent external truth (provenance.json:/scope).",
+    "This record describes document declarations only; it does not assert that a runtime or external service enforces them (raw-contract.json:entire object).",
+    "No transition suggestion, canonical promotion, or external compliance conclusion is made."
+  ],
+  "obligations": [
+    "Keep declared policy tokens distinct from observed runtime behavior.",
+    "Any follow-on assessment requires separately authorized implementation and test evidence bound to a designated ref.",
+    "Preserve unresolved semantics for fields, approvals, expiry, digest, enforcement points, and failure behavior until specified."
+  ],
+  "proposed_continuation": {
+    "proposal": "PROPOSAL (not executed): if separately authorized, compare the declared fields and cross-namespace rule with a designated implementation and targeted tests, reporting only bound code and test observations.",
+    "prerequisites": [
+      "Explicit authorization for a follow-on implementation review.",
+      "A designated repository ref, implementation path, and relevant test scope.",
+      "A defined interpretation of issuer approval, scope expiry, policy digest, and expected failure behavior."
+    ],
+    "stop_condition": "Stop if implementation or tests are not bound to the supplied ref, rule semantics remain undefined, or answering requires unapproved files or external claims."
+  },
+  "claim_ceiling": "This record states only what the supplied JSON contract and provenance declare. It does not establish implemented enforcement, security, compliance, actual isolation, or external truth.",
+  "forbidden_inferences": [
+    "Do not infer from DENY_CROSS_NAMESPACE that all cross-namespace requests are actually denied.",
+    "Do not infer that prohibited capabilities are absent from or disabled in any deployed system.",
+    "Do not infer a security guarantee, compliance status, correct policy implementation, causal effect, or generalization.",
+    "Do not infer novelty, capability improvement, cognitive inheritance, evaluator correctness, Owner acceptance, or authorization to promote a canonical state."
+  ]
+}

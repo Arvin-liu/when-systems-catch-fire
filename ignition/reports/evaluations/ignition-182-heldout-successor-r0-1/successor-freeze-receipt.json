@@ -1,0 +1,18 @@
+{
+  "base_sha": "7cab7541895620d68d5bce2d16c46871ebd03ac0",
+  "packet_manifest_sha256": "cdc54e1600de691fadc01b630f086c4bb81c8b0c606d0a92b8df656dbe679295",
+  "successor_output_sha256s": {
+    "content-research-01-successor.json": "82247f882de63924c1ae9833f49034664d6d36a37f903be6b5fa5b8acb93addc",
+    "engineering-governance-01-successor.json": "6a08f941b3b461e2207b155aa8ff6694adcdd8e5576304bf2717cea2f0aed3b3"
+  },
+  "read_ledger_sha256": "48cd3b344110ad30345cdb97a9ad93792aaaa3ca6026002267910f7c0bd6fe32",
+  "read_count": 23,
+  "out_of_scope_read_count": 0,
+  "mechanical_validation_result": {
+    "json_parse": "PASS",
+    "successor_output_draft_2020_12_schema": "PASS",
+    "read_ledger_schema": "PASS",
+    "relation_reference_check": "PASS"
+  },
+  "trial_status": "SUCCESSOR_OUTPUTS_VALIDATED_PRE_EVALUATION"
+}

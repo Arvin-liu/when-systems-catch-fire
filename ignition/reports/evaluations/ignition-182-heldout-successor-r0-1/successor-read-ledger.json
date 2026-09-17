@@ -1,0 +1,123 @@
+{
+  "schema_version": "successor-read-ledger-r0.1",
+  "task_id": "IGNITION-20260917-182",
+  "allowed_manifest_sha256": "cdc54e1600de691fadc01b630f086c4bb81c8b0c606d0a92b8df656dbe679295",
+  "reads": [
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/packet-manifest.json",
+      "purpose": "ALLOWLISTED; establish successor-visible file allowlist; expected digest matched.",
+      "content_sha256": "cdc54e1600de691fadc01b630f086c4bb81c8b0c606d0a92b8df656dbe679295"
+    },
+    {
+      "path": "ignition/evaluation/schemas/successor-read-ledger-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; constrain this ledger structure.",
+      "content_sha256": "9998a01d501681912864678c9926184200246f6f118bcc5bf89b962ca2d05597"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/bootstrap.md",
+      "purpose": "ALLOWLISTED; successor bootstrap instructions.",
+      "content_sha256": "627a8e0e8fa1917471b4386de16fc0982adf4d3399771e31c289af242ea08179"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/task-contract.md",
+      "purpose": "ALLOWLISTED; successor role, scope, and output obligations.",
+      "content_sha256": "0c6eec951b0103aa1bafb110dcb46b5c7a20cb139842b86ab1c51b580a2505d2"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/method-contract.md",
+      "purpose": "ALLOWLISTED; observable method constraints.",
+      "content_sha256": "3e0eda9527514a0f8b41c8f5ea2f8606b8c4dba3833463a2f31b53c86686af69"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/provider-neutral-capability-interface.json",
+      "purpose": "ALLOWLISTED; provider-neutral capability interface.",
+      "content_sha256": "de71802414f8a04bfd33d1440d26d806173cbc2579e05f882af817e650ee37e6"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; successor record structure.",
+      "content_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/provenance.json",
+      "purpose": "ALLOWLISTED; content-research case provenance.",
+      "content_sha256": "010f6d41a86b00e2e94009fa1c9a84d045f733d3ec423d26fd87a0371ae0f375"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md",
+      "purpose": "ALLOWLISTED; content-research supplied raw object.",
+      "content_sha256": "71c41b99518dcfe6feab12a84e7411806b18a9c65f6ab47d4ba012ed74205d9a"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/provenance.json",
+      "purpose": "ALLOWLISTED; engineering-governance case provenance.",
+      "content_sha256": "e75828e421970014cb8c6c978e01d100eaf2fadc4a4a155766f42bb301bee5b2"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json",
+      "purpose": "ALLOWLISTED; engineering-governance supplied raw object.",
+      "content_sha256": "574ff4d65923dd956323fbb048c995318c31c7c7ffaafdc641b57f18d0d095fb"
+    },
+    {
+      "path": "ignition/evaluation/schemas/evaluation-evidence-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; evaluation evidence boundary and structure only.",
+      "content_sha256": "f605b03cf9fd2d572a7c078487dd18c09bb8a3d56fd13c0e9aaaa0e324c964c7"
+    },
+    {
+      "path": "ignition/evaluation/schemas/evaluation-promotion-transition-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; promotion transition boundary and structure only.",
+      "content_sha256": "4d9296caf83bf4cd544772888569e583ae61761116b50c67c4c401cdd542b91e"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; load the verified output schema for mechanical validation.",
+      "content_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+    },
+    {
+      "path": "ignition/evaluation/schemas/successor-read-ledger-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; load the verified ledger schema for mechanical validation.",
+      "content_sha256": "9998a01d501681912864678c9926184200246f6f118bcc5bf89b962ca2d05597"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; repeat schema load while diagnosing local generation assertion.",
+      "content_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+    },
+    {
+      "path": "ignition/evaluation/schemas/successor-read-ledger-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; repeat ledger-schema load while diagnosing local generation assertion.",
+      "content_sha256": "9998a01d501681912864678c9926184200246f6f118bcc5bf89b962ca2d05597"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/packet-manifest.json",
+      "purpose": "ALLOWLISTED; re-read manifest to resolve the exact listed ledger-schema digest.",
+      "content_sha256": "cdc54e1600de691fadc01b630f086c4bb81c8b0c606d0a92b8df656dbe679295"
+    },
+    {
+      "path": "ignition/evaluation/schemas/successor-read-ledger-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; verify ledger digest and validate the corrected ledger.",
+      "content_sha256": "9998a01d501681912864678c9926184200246f6f118bcc5bf89b962ca2d05597"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; load verified successor output schema for final mechanical validation.",
+      "content_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+    },
+    {
+      "path": "ignition/evaluation/schemas/successor-read-ledger-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; load verified read-ledger schema for final mechanical validation.",
+      "content_sha256": "9998a01d501681912864678c9926184200246f6f118bcc5bf89b962ca2d05597"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; load verified successor output schema for final mechanical validation.",
+      "content_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+    },
+    {
+      "path": "ignition/evaluation/schemas/successor-read-ledger-r0.1.schema.json",
+      "purpose": "ALLOWLISTED; load verified read-ledger schema for final mechanical validation.",
+      "content_sha256": "9998a01d501681912864678c9926184200246f6f118bcc5bf89b962ca2d05597"
+    }
+  ],
+  "out_of_scope_read_count": 0
+}

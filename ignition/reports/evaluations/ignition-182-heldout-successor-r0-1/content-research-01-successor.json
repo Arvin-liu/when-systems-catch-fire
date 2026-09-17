@@ -1,0 +1,346 @@
+{
+  "schema_version": "successor-output-r0.1",
+  "case_id": "content-research-01",
+  "source_sha256": "71c41b99518dcfe6feab12a84e7411806b18a9c65f6ab47d4ba012ed74205d9a",
+  "observations": [
+    {
+      "id": "source-provenance",
+      "kind": "OBSERVATION",
+      "statement": "The supplied raw object is raw-source-excerpt.md (2087 bytes; SHA256 71c41b99518dcfe6feab12a84e7411806b18a9c65f6ab47d4ba012ed74205d9a). Supplied provenance binds it to Arvin-liu/when-systems-catch-fire at ref 12e133c6d58a5e22437e42bb75fd912607bb4540, path ignition/inputs/collisions/20260708-teacher-competition/source.md, blob 1d67b74e971e073f2d330379ce34b2022eefb792, full-source SHA256 dc15a6d6ddd78b72e28d4ae6ebaa129481b783a82da5c473cf5def3a18bfb2b2, and 37777 source bytes; it identifies this extract as source lines 9-22.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:entire object",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/provenance.json:/source_repository",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/provenance.json:/source_ref",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/provenance.json:/source_path",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/provenance.json:/source_git_blob_sha",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/provenance.json:/source_sha256",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/provenance.json:/bounded_extract"
+      ],
+      "uncertainty": "OBSERVED"
+    },
+    {
+      "id": "excerpt-layout",
+      "kind": "OBSERVATION",
+      "statement": "The bounded extract contains an opening narrative, a definition of 磨课, four named teacher rows, and a closing paragraph about reviewer disagreement and detailed rehearsal.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1-L14"
+      ],
+      "uncertainty": "OBSERVED"
+    },
+    {
+      "id": "core-time-claim",
+      "kind": "CLAIM",
+      "statement": "Source-reported claim: the 赛课 mechanism, presented under labels such as professional growth and learning through competition, increasingly squeezes teachers' core teaching time and can consume personal life through demands for a perfect class.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "evaluation-link-claim",
+      "kind": "CLAIM",
+      "statement": "Source-reported claim: the evaluation system is linked to professional titles, performance, school results, and teaching-research resources.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "rehearsal-definition",
+      "kind": "CLAIM",
+      "statement": "Source-reported definition: 磨课 is repeated tryout, rejection, and revision before a 40-minute public lesson; the source says multiple frontline teachers' experiences illustrate the workload.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L3-L5"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "lin-example",
+      "kind": "CLAIM",
+      "statement": "Source-reported example: the row for 林麂 describes a north China public primary-school Chinese teacher with nearly ten years' experience, ten district-level rehearsal rounds, frame-by-frame video review, tryouts across classes of different levels, and verbatim scripting of transitions and evaluation phrases.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L9"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "fu-example",
+      "kind": "CLAIM",
+      "statement": "Source-reported example: the row for 傅铭 describes a Jiangsu secondary-school Chinese teacher rehearsing a silent class three or four dozen times and adjusting gestures, pacing, process, and the entry point for a classical-Chinese lesson.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L10"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "lu-example",
+      "kind": "CLAIM",
+      "statement": "Source-reported example: the row for 卢叶 describes conflicting review advice from a researcher and district leaders, requests to combine opposed designs, and a resulting lesson said to have lost the teacher's style.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L11"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "li-example",
+      "kind": "CLAIM",
+      "statement": "Source-reported example: the row for 李清淼 describes five mentors with differing opinions; reviewed details include board-writing size, color and motion, appearance, hairstyle, and position, while a three-minute introduction was recorded over two and a half days.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L12"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "review-variation",
+      "kind": "CLAIM",
+      "statement": "Source-reported claim: standards vary by reviewer; the same lesson may be called 哗众取宠 by one reviewer and 有新意 by another, and the source says teachers refine quantifiable details to satisfy reviewers.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L14"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "interpretive-synthesis",
+      "kind": "OBSERVATION",
+      "statement": "Interpretation (not a source fact): the extract assembles individual accounts to frame rehearsal as costly and feedback as unstable; the extract alone does not estimate prevalence or comparative workload.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L3-L14"
+      ],
+      "uncertainty": "INFERRED"
+    },
+    {
+      "id": "feedback-strain-hypothesis",
+      "kind": "CLAIM",
+      "statement": "Hypothesis (not established): repeated rehearsal combined with conflicting advice may contribute to self-doubt for the described teachers; the extract does not test that pathway or establish causality.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L11-L14"
+      ],
+      "uncertainty": "HYPOTHESIS"
+    }
+  ],
+  "objects": [
+    {
+      "id": "saike-mechanism",
+      "kind": "OBJECT",
+      "statement": "The 赛课 (quality public-lesson competition) mechanism named in the extract.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1",
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L3"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "moke-process",
+      "kind": "METHOD",
+      "statement": "The source's 磨课 process: repeated tryout, rejection, and revision of a 40-minute public lesson before delivery.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L3-L5"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "core-teaching-time",
+      "kind": "OBJECT",
+      "statement": "Teachers' core teaching time, which the source claims is squeezed.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "teacher-personal-time",
+      "kind": "OBJECT",
+      "statement": "Teachers' personal life/time, which the source says is consumed by perfect-class demands.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "evaluation-system",
+      "kind": "OBJECT",
+      "statement": "The evaluation system described as linked to titles, performance, school results, and teaching-research resources.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "reported-stakes",
+      "kind": "OBJECT",
+      "statement": "The reported stakes: professional title, performance, school results, and teaching-research resources.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "teacher-lin",
+      "kind": "OBJECT",
+      "statement": "The table's account attributed to 林麂; identity and account are not independently verified here.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L9"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "teacher-fu",
+      "kind": "OBJECT",
+      "statement": "The table's account attributed to 傅铭; identity and account are not independently verified here.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L10"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "teacher-lu",
+      "kind": "OBJECT",
+      "statement": "The table's account attributed to 卢叶; identity and account are not independently verified here.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L11"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "teacher-li",
+      "kind": "OBJECT",
+      "statement": "The table's account attributed to 李清淼; identity and account are not independently verified here.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L12"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "reviewer-feedback",
+      "kind": "OBJECT",
+      "statement": "Reviewers' differing evaluations and detailed feedback as described in the extract.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L11-L14"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "same-open-lesson",
+      "kind": "OBJECT",
+      "statement": "A lesson in the source's example of differing reviewer judgments.",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L14"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    }
+  ],
+  "relations": [
+    {
+      "id": "cr-r1",
+      "from_id": "saike-mechanism",
+      "relation_type": "SOURCE_CLAIMS_SQUEEZES",
+      "to_id": "core-teaching-time",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "cr-r2",
+      "from_id": "evaluation-system",
+      "relation_type": "SOURCE_REPORTS_LINKED_TO",
+      "to_id": "reported-stakes",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "cr-r3",
+      "from_id": "saike-mechanism",
+      "relation_type": "SOURCE_CLAIMS_CONSUMES",
+      "to_id": "teacher-personal-time",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L1"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "cr-r4",
+      "from_id": "teacher-lin",
+      "relation_type": "SOURCE_REPORTS_PERFORMED",
+      "to_id": "moke-process",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L9"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "cr-r5",
+      "from_id": "teacher-fu",
+      "relation_type": "SOURCE_REPORTS_PERFORMED",
+      "to_id": "moke-process",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L10"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "cr-r6",
+      "from_id": "teacher-lu",
+      "relation_type": "SOURCE_REPORTS_RECEIVED_CONFLICTING_FEEDBACK",
+      "to_id": "reviewer-feedback",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L11"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "cr-r7",
+      "from_id": "teacher-li",
+      "relation_type": "SOURCE_REPORTS_RECEIVED_DETAILED_FEEDBACK",
+      "to_id": "reviewer-feedback",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L12"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    },
+    {
+      "id": "cr-r8",
+      "from_id": "reviewer-feedback",
+      "relation_type": "SOURCE_REPORTS_DIFFERING_JUDGMENTS_OF",
+      "to_id": "same-open-lesson",
+      "source_locators": [
+        "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md:L14"
+      ],
+      "uncertainty": "SOURCE_REPORTED"
+    }
+  ],
+  "unknowns": [
+    "Interview records, dates, sampling methods, and corroborating source locators for the four accounts are absent (raw-source-excerpt.md:L7-L14; provenance.json:/scope).",
+    "Frequency across teachers, subjects, districts, and schools is not established by this bounded extract (raw-source-excerpt.md:L1-L14).",
+    "Workload is not measured and the extract does not establish that the mechanism caused the reported time effects (raw-source-excerpt.md:L1-L14).",
+    "Participant identities, consent status, and accuracy of attributed accounts are not independently established (provenance.json:/scope)."
+  ],
+  "boundaries": [
+    "Scope is limited to the supplied 2087-byte extract and provenance; the original 37777-byte source was not read or independently verified (provenance.json:/source_bytes; /bounded_extract).",
+    "Participant details and effects remain source-reported claims, not verified facts (raw-source-excerpt.md:L7-L14; provenance.json:/scope).",
+    "No transition suggestion is made; no target state or authorization is supplied, so any target remains unresolved."
+  ],
+  "obligations": [
+    "Keep material statements bound to excerpt locators and distinguish source statements from interpretation and hypothesis.",
+    "Before broader conclusions, obtain separately authorized evidence for source authenticity, methods, attribution, and scope.",
+    "Do not convert this record into a canonical, capability, causality, or inheritance finding."
+  ],
+  "proposed_continuation": {
+    "proposal": "PROPOSAL (not executed): if separately authorized, prepare a claim-to-evidence verification plan for the bounded accounts, preserving the examples as source-reported until supporting records and sampling context are available.",
+    "prerequisites": [
+      "Explicit authorization for a follow-on source-verification task.",
+      "A designated source and method record for the listed accounts.",
+      "A scope that permits checking attribution and sampling without generalizing beyond collected evidence."
+    ],
+    "stop_condition": "Stop if source or methodology records are unavailable, attribution cannot be bound, or conclusions would require extrapolation beyond verified material."
+  },
+  "claim_ceiling": "This record captures what the supplied bounded extract and provenance state. It does not verify the accounts, workload, prevalence, causality, educational outcomes, or external truth.",
+  "forbidden_inferences": [
+    "Do not infer that named accounts are authentic, representative, independently verified, or consented.",
+    "Do not infer causal effects on teacher welfare, teaching quality, student outcomes, or educational systems.",
+    "Do not treat reviewer disagreement or detailed rehearsal as proof of a general mechanism across schools.",
+    "Do not infer novelty, generalization, capability improvement, cognitive inheritance, evaluator correctness, Owner acceptance, or authorization to transition or canonicalize."
+  ]
+}
