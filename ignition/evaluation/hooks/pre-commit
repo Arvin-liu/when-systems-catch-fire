@@ -1,4 +1,4 @@
 #!/bin/sh
 set -eu
 repo_root=$(git rev-parse --show-toplevel)
-exec python3 "$repo_root/ignition/evaluation/tools/target_repository_preflight_r0_1.py"
+exec python3 "$repo_root/ignition/evaluation/tools/task_branch_guard_r0_2.py" --operation COMMIT
