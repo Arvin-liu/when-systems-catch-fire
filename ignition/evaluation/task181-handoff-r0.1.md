@@ -1,6 +1,6 @@
 # IGNITION-20260917-181 — Cognitive Inheritance R0.1 Isolation Handoff
 
-**Lifecycle:** `IN_PROGRESS`
+**Lifecycle:** `READY_FOR_HELD_OUT_SUCCESSOR_TRIAL`
 
 ## Frozen subject and branch
 
@@ -8,8 +8,8 @@
 - Base branch: `work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0`
 - Exact base: `12e133c6d58a5e22437e42bb75fd912607bb4540`
 - Task branch: `work/IGNITION-20260917-181-cognitive-inheritance-r0-1-isolation-protocol`
-- Final head: pending final commit and exact-head CI
-- Draft PR: pending push and creation
+- Final head: this handoff commit; resolve its exact SHA from PR #221
+- Draft PR: [#221](https://github.com/Arvin-liu/when-systems-catch-fire/pull/221), open and Draft
 
 ## Bootstrap Guard R0.1
 
@@ -67,10 +67,8 @@ Task179 base: path classification has 4,602 tracked paths and 4,602 manifest
 rows; Foundation function census has 6,158 rows and scans 4,279 text files;
 nonfunction closure has 18,003 claims and accounts for 6,033 discovery sources.
 
-After final generation, record path manifest totals, function census hash/count,
-nonfunction claim hash/count, audit-row delta, semantic closure invariants,
-Knowledge Experience/self-correction/Fire Seeds/Human Visibility/Claim Browser
-results, second-pass fixed point, and full-history clean-clone result below.
+The final generated surfaces, audit delta, semantic invariants, validation
+results, second-pass fixed point, and clean-clone evidence are recorded below.
 
 ### Final gate evidence
 
@@ -83,8 +81,14 @@ results, second-pass fixed point, and full-history clean-clone result below.
 - Fire Seeds: 64 entries (40 content / 24 methodology), 678 source paths / 612 layered origins; census check and validator PASS.
 - Human Visibility, Claim Browsers, overall architecture, knowledge admission, evaluation-plane receipt validation, and the 14-file held-out packet manifest PASS. Packet manifest SHA256: `cdc54e1600de691fadc01b630f086c4bb81c8b0c606d0a92b8df656dbe679295`.
 - Second generator/check pass: path classification, function census/adjudication, nonfunction claims, self-correction, Knowledge Experience, Fire Seeds, Claim Browsers, and overall architecture all PASS.
-- Full-history clean clone: pending.
-- Exact-head workflow IDs/conclusions: pending.
+- Full-history clean clone: detached at implementation head
+  `8f495b3aed76d22701cf4e3bc2fd4bcbf96704f1`; not shallow; worktree clean;
+  evaluation-plane validator, R0 validator, path-accounting check, held-out
+  manifest check, and 26/26 targeted tests PASS. The final handoff commit changes
+  this receipt only; exact final-head checkouts and workflow conclusions are
+  recorded in PR #221.
+- Exact-head workflow evidence: see PR #221 Checks and the linked final handoff
+  evidence in its description. The branch remains Draft at this lifecycle.
 
 ## Complexity and limits
 
