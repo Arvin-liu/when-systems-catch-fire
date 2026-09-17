@@ -117,7 +117,12 @@
       "path": "ignition/evaluation/schemas/successor-read-ledger-r0.1.schema.json",
       "purpose": "ALLOWLISTED; load verified read-ledger schema for final mechanical validation.",
       "content_sha256": "9998a01d501681912864678c9926184200246f6f118bcc5bf89b962ca2d05597"
+    },
+    {
+      "path": "ignition/evaluation/hooks/pre-push [path inferred from configured hooksPath]",
+      "purpose": "OUT_OF_SCOPE; configured hooksPath is ignition/evaluation/hooks and git push returned FAIL_TASK_BRANCH_MISMATCH. content_sha256 is the digest of the captured rejection output, not hook-file bytes; hook source was not read for hashing.",
+      "content_sha256": "54fd5bd3ce48464bab4e4ae377bd1bc17c022767d970fe174b5d238b3ad50ceb"
     }
   ],
-  "out_of_scope_read_count": 0
+  "out_of_scope_read_count": 1
 }
