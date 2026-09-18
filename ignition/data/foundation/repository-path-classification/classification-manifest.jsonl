@@ -3972,6 +3972,7 @@
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/foundation/fixtures/nonfunction_claim_gate_cases.jsonl"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/foundation/fixtures/repository-path-classification/bad-authoritative-mislabel.manifest.jsonl"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/foundation/fixtures/repository-path-classification/bad-duplicate.manifest.jsonl"}
+{"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/foundation/fixtures/task186_research_surface_isolation.json"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/foundation/test_claim_governance.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/foundation/test_foundation.py"}
 {"category": "TEST_FIXTURE", "matched_rule": "TEST_FIXTURE", "path": "ignition/tests/foundation/test_function_asset_closure.py"}
