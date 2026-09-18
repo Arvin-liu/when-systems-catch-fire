@@ -22,8 +22,10 @@ Foundation function/nonfunction discovery and Knowledge admission. Task187
 adds no promotion mapping or source registration for Current or Fire Seeds.
 The PR changes no Foundation function or nonfunction candidate rows,
 Knowledge canonical files, Fire Seeds, Current facts, or Current projections.
-Its only generated Foundation-side update is the
-repository-path-classification snapshot required to account for new paths.
+The initial Step07 path pass updated the repository-path-classification
+snapshot. A later full Foundation gate found that the newly added paths had
+not yet been incorporated into generated nonfunction source discovery; the
+follow-up and its derived-only repair are recorded below.
 
 ## Fixed-point verification
 
@@ -47,3 +49,19 @@ PATH_CLASSIFICATION_CHECKS=10/10
 R0.3_ISOLATION_TESTS=4/4
 FOUNDATION_CANDIDATE_KNOWLEDGE_CURRENT_FIRE_SEEDS_MUTATIONS=NONE
 ```
+
+## Full Foundation gate follow-up
+
+The Step09 clean-clone gate identified 37 new Task187 paths missing from the
+generated nonfunction source-discovery table. The existing Knowledge
+admission policy already types these paths as `EVALUATION_EVIDENCE_ONLY`,
+with automatic discovery disabled. The official deterministic generator
+added one discovery row per path, each with status
+`EXCLUDED_EVALUATION_EVIDENCE_ONLY`, zero candidate fragments, and no
+canonical claim IDs. It updated only the generated source-discovery,
+discovery-coverage, closure-summary, and human-index projections; the
+canonical nonfunction claim registry and candidate rows did not change.
+
+The R0.3 isolation regression now checks every Task187 R0.3 packet, control,
+hook, test, tool, and report path against both the typed path manifest and
+the generated nonfunction exclusion rows.
