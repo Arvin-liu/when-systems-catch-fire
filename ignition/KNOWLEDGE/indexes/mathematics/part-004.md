@@ -2359,6 +2359,16 @@
   - 可搜索名称：External Agent Interface Audit R1 / external-agent-interface-audit-r1
   - 来源：`reports/architecture/external-agent-interface-audit-r1.md`
   - 依赖：—；被引用：—
+- [External cognitive architecture / MetaRSI primary-source research — Task186](../../ASSET-CARDS.md#asset-hr-878c653e8befdc32)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：External cognitive architecture / MetaRSI primary-source research — Task186 / external-cognitive-architecture-research-report
+  - 来源：`reports/external-research/IGNITION-20260918-186/external-cognitive-architecture-research-report.md`
+  - 依赖：—；被引用：—
+- [External source policy — IGNITION-20260918-186](../../ASSET-CARDS.md#asset-hr-81d727f0fb4e0466)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：External source policy — IGNITION-20260918-186 / external-source-policy
+  - 来源：`reports/external-research/IGNITION-20260918-186/external-source-policy.md`
+  - 依赖：—；被引用：—
 - [External sources are boundary references and modeling inputs only; they are not upgraded into proved Ignition assets.](../../../data/architecture/probabilistic-system-dynamics/source-ledger.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a9262e10685414a2 / External sources are boundary references and modeling inputs only; they are not upgraded into proved Ignition assets.
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-3b7070d6f0e4e4ae / For any function, model, theorem, formula, law, decision rule or cross-domain claim, apply `docs/foundation/claim-govern
   - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [for field in \("capability_lease_digest", "workspace_digest_before", "workspace_digest_after", "runtime_scratch_lifecycle](../../../agent_federation/live_attempt_ledger.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-937b78086b20a094 / for field in \("capability_lease_digest", "workspace_digest_before", "workspace_digest_after", "runtime_scratch_lifecycle
-  - 来源：`agent_federation/live_attempt_ledger.py`
-  - 依赖：—；被引用：—
-- [Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s](../../../agent-results/IGNITION-20260822-133-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-300eb09a94965b6e / Formal baseline `main` is `5ed99d148dfb49e6c2ff729a345d2499d4b76021`. The formal repository has no publication-witness s
-  - 来源：`agent-results/IGNITION-20260822-133-result.md`
   - 依赖：—；被引用：—

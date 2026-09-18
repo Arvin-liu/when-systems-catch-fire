@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [阶段4 来源（74 条，全部 crossref_verified=true，零伪造）](../../../data/external-research/088-PROGRESS.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-382a6fcf3cf76c3e / 阶段4 来源（74 条，全部 crossref_verified=true，零伪造）
+  - 来源：`data/external-research/088-PROGRESS.md`
+  - 依赖：—；被引用：—
 - [阶段4 部分条目为书评/综述或近期预印本，peer_review_status 已标注；注入补丁时作原始方法证据强度较弱，已降权。](../../../data/external-research/088-FINAL-REPORT.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-c50cdab68baa4024 / 阶段4 部分条目为书评/综述或近期预印本，peer_review_status 已标注；注入补丁时作原始方法证据强度较弱，已降权。

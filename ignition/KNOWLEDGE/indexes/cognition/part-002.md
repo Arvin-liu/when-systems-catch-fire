@@ -1014,6 +1014,11 @@
   - 可搜索名称：NFC-095e1d0039246a62 / permission/truth/Owner authority，Supervisor 不改变 child scope；主 episode 和
   - 来源：`docs/architecture/agentization-boundary-r0.md`
   - 依赖：—；被引用：—
+- [Persistent memory: retrieval, storage, and method inheritance](../../ASSET-CARDS.md#asset-hr-c2139b347da84ab9)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Persistent memory: retrieval, storage, and method inheritance / persistent-memory-report
+  - 来源：`reports/external-research/IGNITION-20260918-186/persistent-memory-report.md`
+  - 依赖：—；被引用：—
 - [Phase A — projection repair](../../../agent-results/IGNITION-20260915-178-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-6bae0969d9cae89a / Phase A — projection repair
@@ -1774,6 +1779,11 @@
   - 可搜索名称：NFC-d33d88d95af66dc3 / reference is  .
   - 来源：`reports/architecture/external-agent-interface-audit-r1.md`
   - 依赖：—；被引用：—
+- [Reflexion and Self-Refine crosswalk](../../ASSET-CARDS.md#asset-hr-d472a3138013ab9f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Reflexion and Self-Refine crosswalk / reflection-family-report
+  - 来源：`reports/external-research/IGNITION-20260918-186/reflection-family-report.md`
+  - 依赖：—；被引用：—
 - [refs = tuple\(\(*receipt.validation_refs, *\(item.ref for item in receipt.artifact_refs\)\)\)](../../../agent_federation/convergence.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6a0bf9ca15d33f8d / refs = tuple\(\(*receipt.validation_refs, *\(item.ref for item in receipt.artifact_refs\)\)\)
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-afc4d38bbd59403f / This result proves repository-local semantic implementation, deterministic projection, bounded regression evidence and c
   - 来源：`agent-results/IGNITION-20260822-133-result.md`
-  - 依赖：—；被引用：—
-- [title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-34C556C9FFC62BCE / title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用" / IMPLICIT-34C556C9FFC62BCE
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B00AD01AD1BE4FE8 / title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)" / IMPLICIT-B00AD01AD1BE4FE8
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

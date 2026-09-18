@@ -1,6 +1,6 @@
 # Claim Delta
 
-本轮识别 718 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
+本轮识别 746 个新增、删除或修改的知识资产。关联断言来自现行 claim registry；无关联项必须人工确认是否需要新增登记。
 
 ## `AI-HANDOFF.md`
 
@@ -886,14 +886,6 @@
 
 - 状态：`ADDED`
 - Delta：`CD-0A190293CA8A50AE`
-- 关联断言：['NONE_DISCOVERED']
-- 人类结果义务：`True`
-- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
-
-## `docs/foundation/nonfunction-claim-adjudication-index.md`
-
-- 状态：`ADDED`
-- Delta：`CD-ADDCB11C670AD242`
 - 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
@@ -3071,6 +3063,238 @@
 - 状态：`ADDED`
 - Delta：`CD-933D6BA7D34F8014`
 - 关联断言：['NFC-04c18c91d6b9d7ce', 'NFC-147000fb2d1c7268', 'NFC-23018b52d4456c53', 'NFC-2de8997174d4434c', 'NFC-345da3f7311b86d5', 'NFC-3e111d5a3fcf6467', 'NFC-429162fe595605ea', 'NFC-43ed9ee882071037', 'NFC-4646b63c7f3e67b5', 'NFC-4790652cf608aae8', 'NFC-5998e89248b47b7c', 'NFC-5ce62cae14f01df9', 'NFC-679a1d7c2a8f8ccc', 'NFC-6f2f091519649f8d', 'NFC-74e24d46793b192b', 'NFC-760ac7168e7aa124', 'NFC-7978682e6023c4a6', 'NFC-7a5507be7c7038cf', 'NFC-85e07304e7b89f4b', 'NFC-87bfb6c70f23ead4']（仅显示前 20 项）
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/anti-accumulation-mechanisms.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-92F13945E21353E4`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/anti-accumulation-report.md`
+
+- 状态：`ADDED`
+- Delta：`CD-8EE247E92588E8A3`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/dspy-harness-optimization-crosswalk.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-F4DAD391FA35ADC0`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/dspy-harness-report.md`
+
+- 状态：`ADDED`
+- Delta：`CD-3EE6138697704DFD`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/external-cognitive-architecture-research-report.md`
+
+- 状态：`ADDED`
+- Delta：`CD-878C653E8BEFDC32`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/external-mechanism-vocabulary.json`
+
+- 状态：`ADDED`
+- Delta：`CD-D50DF0621AAF362E`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/external-source-policy.md`
+
+- 状态：`ADDED`
+- Delta：`CD-81D727F0FB4E0466`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/external-system-mechanism-matrix.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-F94255864E8F7236`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/independent-evaluation-external-map.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-C31B0D95FDB1520F`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/independent-evaluation-report.md`
+
+- 状态：`ADDED`
+- Delta：`CD-F5829CD3B280ED82`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/inheritance-distinction-framework.json`
+
+- 状态：`ADDED`
+- Delta：`CD-6F72601CFDC6A521`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/inheritance-distinction-report.md`
+
+- 状态：`ADDED`
+- Delta：`CD-AE799F48C6336BD8`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/metarsi-mechanism-map.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-AE69C071B15F10BC`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/metarsi-paper-repo-crosscheck.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-65571816E6898FFB`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/metarsi-paper-repo-crosscheck.md`
+
+- 状态：`ADDED`
+- Delta：`CD-BF5ED91947580A9E`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/metarsi-primary-source-report.md`
+
+- 状态：`ADDED`
+- Delta：`CD-B8397BDB03A54B29`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/metarsi-source-freeze.json`
+
+- 状态：`ADDED`
+- Delta：`CD-DC75BA5137136982`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/minimal-experiment-candidates.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-51CAB34443373085`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/minimal-experiment-candidates.md`
+
+- 状态：`ADDED`
+- Delta：`CD-3ECF45675D1CA390`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/persistent-memory-mechanism-map.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-4BD43FF3BF9A80FB`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/persistent-memory-report.md`
+
+- 状态：`ADDED`
+- Delta：`CD-C2139B347DA84AB9`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-24ED4BF53A5E1519`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.md`
+
+- 状态：`ADDED`
+- Delta：`CD-3F2F25545922E419`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/reflection-family-crosswalk.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-9E39C23881BE83A4`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/reflection-family-report.md`
+
+- 状态：`ADDED`
+- Delta：`CD-D472A3138013AB9F`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/research-questions.md`
+
+- 状态：`ADDED`
+- Delta：`CD-E2A8E3BD4062C2C6`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/skill-inheritance-crosswalk.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-5E929235FEF52FA6`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/skill-inheritance-report.md`
+
+- 状态：`ADDED`
+- Delta：`CD-91034D3772FE1036`
+- 关联断言：['NONE_DISCOVERED']
+- 人类结果义务：`True`
+- 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
+
+## `reports/external-research/IGNITION-20260918-186/source-freeze.jsonl`
+
+- 状态：`ADDED`
+- Delta：`CD-A24E2A3E6E7F643D`
+- 关联断言：['NONE_DISCOVERED']
 - 人类结果义务：`True`
 - 边界：Repository change and linked-registry scope only; no truth or maturity upgrade.
 

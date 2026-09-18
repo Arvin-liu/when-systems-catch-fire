@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0312-D276-D158预测失效阈值函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-3c8677824acb70b6 / 已迁移的历史函数来源/0312-D276-D158预测失效阈值函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D158, D276；被引用：—
+- [已迁移的历史函数来源/0313-D277-统一健康指标函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-123f744171867bf1 / 已迁移的历史函数来源/0313-D277-统一健康指标函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D277；被引用：—
+- [已迁移的历史函数来源/0314-D278-缓冲峰值余量函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-b23291f7cfe8d777 / 已迁移的历史函数来源/0314-D278-缓冲峰值余量函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D278；被引用：—
 - [已迁移的历史函数来源/0315-D279-干预时机悖论函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-0e8ab7e56c7b2205 / 已迁移的历史函数来源/0315-D279-干预时机悖论函数.md
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4665ae141c69ce8a / 该登记表用于集中记录数学、物理学、历史学、经济学、社会科学、医学、法律、AI、文学艺术等领域中必须保持 pending 的强结论，避免公开表达时把结构性推论误写成外部证明、事实结论、专业建议或最终定论。
   - 来源：`docs/v0.2_summary.md`
-  - 依赖：—；被引用：—
-- [该链只证明某个版本的来源、分析、方法与作品可被共同审计。作品被接受不证明来源命题为真、分析完成因果识别、方法普遍有效或 AI 复制了作者；受限原始材料只保留 provenance，不因成果展示而重新公开。](../../../ARCHITECTURE.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-93f319fe36a77a61 / 该链只证明某个版本的来源、分析、方法与作品可被共同审计。作品被接受不证明来源命题为真、分析完成因果识别、方法普遍有效或 AI 复制了作者；受限原始材料只保留 provenance，不因成果展示而重新公开。
-  - 来源：`ARCHITECTURE.md`
-  - 依赖：—；被引用：—
-- [语言—思维逻辑平面](../../ASSET-CARDS.md#asset-hr-cf318764b78d8743)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
-  - 可搜索名称：语言—思维逻辑平面 / language-thought-logic-plane
-  - 来源：`docs/architecture/language-thought-logic-plane.md`
-  - 依赖：—；被引用：—
-- [误差抵消优化函数：解释了多阶段突破的数学机制\\n4.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9b38a92a052d6718 / 误差抵消优化函数：解释了多阶段突破的数学机制\\n4.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

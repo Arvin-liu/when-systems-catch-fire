@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-68d7cbb9aeae7042"></a>
+## Task160｜Basis Escape V2
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task160｜Basis Escape V2；Primary verdict: MIXEDLOCKINSUPPORTEDASRESEARCHFINDING.；This is a research-only, repository-local result from exact Formal base 76e44213904928f9f0be8ba131b86529e44e7682. It does not alter the 12-element protocol, the 64 matrix, Ψ₀/Pmeta, canonical layers, validators, lifecycle, production readiness, external truth, Owner acceptance or epistemic status.；Command commit/blob/content SHA-256: f6fc4438e711e928cce29d07ed54b7395434b7c8 / 57aeb34cc5fea2202bd87e5998bd7851f7753a9f / e8155ff841bf4ee95eafddd4f5b2e081890e73a08c364011cd7108ae564b23d0；Corpus: total tracked universe 4046, used 2937, excluded 1109; basis-free packets 1015; C7 engineering negatives 1922；Split: discovery 802, holdout 213; C8 mixed-theoretical holdout is derived in c8-mixed-holdout-manifest.json; rule frozen before induction
+- 完整阅读：[docs/governance/basis-escape-v2-2026-09-07.md](../../docs/governance/basis-escape-v2-2026-09-07.md)
+
+<a id="reading-hr-68fd7a8981b971f4"></a>
+## IGNITION-20260825-139 Step 10 — Single-live-attempt admission freeze
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：PASS: the only currently admitted candidate is external.codex, and Step10 froze one bounded dispatch envelope without starting inference. The fresh Codex lease came from two real public probes (codex --version and codex exec --help), with no secret content read and no configuration or billing cha… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260825-139 Step 10 — Single-live-attempt admission freeze；PASS: the only currently admitted candidate is external.codex, and Step10 froze one bounded dispatch envelope without starting inference. The fresh Codex lease came from two real public probes (codex --version and codex exec --help), with no secret content read and no configuration or billing change.；The lease is lease-ignition-139-codex-live-01 for codex-cli 0.144.4, with binary digest 134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477 and interface digest 9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19. Capability admission is the strict OS/executor intersection: effective capability repo.read only. The envelope is bound…；主题：Boundary evidence；The task workspace is read-only and separate from attempt runtime scratch.；Host durable capture is available, with the capture parent separate from the
+- 完整阅读：[reports/operations/ignition-139-step10-live-admission.md](../../reports/operations/ignition-139-step10-live-admission.md)
+
+<a id="reading-hr-694db9c100ff4eac"></a>
+## 任务 113：宋徽宗道教笔记的点火分析
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`
+- 1 分钟：这不是对原笔记的摘要，而是一次受证据边界约束的材料运行。运行的目标不是替徽宗的内心作证，也不是给“道教导致亡国”找一条漂亮因果链；目标是找出材料中最难被同一解释容纳的残余，再让文章承担这个残余。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：任务 113：宋徽宗道教笔记的点火分析；控制仓库：Arvin-liu/1111；任务控制提交：d15ce70bef67b439ec2e99d1aeb1e792b4e6e9ef；正式仓库：Arvin-liu/when-systems-catch-fire；点火执行基线：1b3545a252c542129424a240d3c7eb3b5af808af（最新远端 origin/main，不是任务 112 终止标签）；来源模式：FULLLOCALNOTEHASHMATCH
+- 完整阅读：[reports/publication/song-huizong-taoism-point-fire-analysis.md](../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
+
 <a id="reading-hr-699df907d9234853"></a>
 ## 跨域候选函数批次收口审计
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：本日志追加记录强断言如何被撤回、分拆或降级；它不删除原始证据。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：本日志追加记录强断言如何被撤回、分拆或降级；它不删除原始证据。；主题：2026-07-29 · Task 98；登记 D127 身份冲突：formal main 的 D127 是认知路径积分类比；乘法归零资产是 T2。；将 T2 从无条件普遍律改写为明确载体上的零吸收命题，并加入零因子环与矩阵反例边界。；对 D182—D190 逐条分拆可保留标量数学与不受支持的物理机制；D188 的物理投影标为失效。；登记 D260 身份冲突，并把 p/(1-p) 数学性质与未经校准的“可控/失控”阈值解释分开。
 - 完整阅读：[docs/foundation/historical-correction-log.md](../../docs/foundation/historical-correction-log.md)
-
-<a id="reading-hr-7b29778a2b189cd1"></a>
-## IGNITION-106: 105 证据纠错报告
-`CURRENT_CORRECTION_RECORD` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：保留: 6条 | 降级: 2条 (S10 PDF编码失败, S13 AEA需JS) CONFIRMED: 6条 | UNRESOLVED: 2条 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-106: 105 证据纠错报告；模型: qclaw/pool-glm-5.2；推理级别: max (adaptive)；GPT 查证发现 105 存在两个确定性缺陷：；虚假 18/18 覆盖：4 个学科 sourcecount=0；验证器未读取覆盖矩阵，"10/10 PASS"不成立
-- 完整阅读：[reports/external-research/106-105-evidence-correction-report.md](../../reports/external-research/106-105-evidence-correction-report.md)
-
-<a id="reading-hr-7b3bc86f58f00477"></a>
-## Unresolved obligations
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：622 item-level proof obligations remain open. Missing controlled semantics, types, boundaries, external evidence and proof artifacts must be repaired incrementally. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Unresolved obligations；622 item-level proof obligations remain open. Missing controlled semantics, types, boundaries, external evidence and proof artifacts must be repaired incrementally.
-- 完整阅读：[reports/foundation-architecture/unresolved-obligations-20260712.md](../../reports/foundation-architecture/unresolved-obligations-20260712.md)
-
-<a id="reading-hr-7b64b7be18a79532"></a>
-## Hermes Adapter R1
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Hermes Agent's observed stable non-interactive surface is -z/--oneshot PROMPT. It prints only a final text response; it is not a structured event stream. The adapter therefore exposes a deliberately degraded, read-only bridge and declares only repo.read: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Hermes Adapter R1；Hermes Agent's observed stable non-interactive surface is -z/--oneshot PROMPT. It prints only a final text response; it is not a structured event stream. The adapter therefore exposes a deliberately degraded, read-only bridge and declares only repo.read:；The task body is a bounded canonical JSON description embedded as one argv value. The adapter never passes --yolo or --accept-hooks, never enables a Gateway/channel/send command, and does not read Hermes config, memory, sessions, skills, provider state or auth. An optional constructor-supplied resume value is an external pointer and is passed only through th…；Because Hermes one-shot approvals are auto-bypassed and final stdout is text, the bridge rejects every capability/effect except an explicit low-risk repo.read envelope. It reports no progress or cancellation and maps a successful final response to COMPLETEDUNVALIDATED; receipts remain REQUIRESRECONCILIATION until Ignition validators establish evidence.；Step 05 used a captured final-text fixture and injected process runner. LIVESMOKENOTRUN: no inference, memory read, provider/config/auth change, Gateway, message, installation or upgrade was performed.；Official CLI reference: .
-- 完整阅读：[docs/architecture/hermes-adapter-r1.md](../../docs/architecture/hermes-adapter-r1.md)

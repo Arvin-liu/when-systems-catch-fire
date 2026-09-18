@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Object D373 defines a mechanism_model within the point-fire framework. Core: 中文：M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-6dde9351dfa1e655 / Object D373 defines a mechanism_model within the point-fire framework. Core: 中文：M4的K=√n临界附近标度律：涨落方差∝1/\|K-√n\|，关联时间∝1/\|K-√
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D373；被引用：—
+- [Object D374 defines a mechanism_model within the point-fire framework. Core: 中文：M5的弱容斥窗口内逃逸速度v_escape\(弱容斥\)=v_escape\(耦合主导](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f0b41360d925e35b / Object D374 defines a mechanism_model within the point-fire framework. Core: 中文：M5的弱容斥窗口内逃逸速度v_escape\(弱容斥\)=v_escape\(耦合主导
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D289, D332, D374；被引用：—
+- [Object D375 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-4f6f0233d69d3834 / Object D375 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D3, D305, D375；被引用：—
+- [Object D376 defines a mechanism_model within the point-fire framework. Core: 中文：M7的联合效应极限∝-ln\(P_min\)∝n——n越大极限越高→大系统能承受更多](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-adfb6b834c7fda2e / Object D376 defines a mechanism_model within the point-fire framework. Core: 中文：M7的联合效应极限∝-ln\(P_min\)∝n——n越大极限越高→大系统能承受更多
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D364, D376；被引用：—
+- [Object D377 defines a mechanism_model within the point-fire framework. Core: 中文：M8的总响应时间τ_total = τ_perceive + τ_σ。小偏离时瓶](../../../data/foundation/adjudications/084-max-decisions.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-f5c00579c46b23b5 / Object D377 defines a mechanism_model within the point-fire framework. Core: 中文：M8的总响应时间τ_total = τ_perceive + τ_σ。小偏离时瓶
+  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
+  - 依赖：D377；被引用：—
 - [Object D378 defines a mechanism_model within the point-fire framework. Core: 中文：M9的R_irreversible ≈ 1 - e^{-n²·p̄·Σαᵢ/β}](../../../data/foundation/adjudications/084-max-decisions.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7de15d9700137441 / Object D378 defines a mechanism_model within the point-fire framework. Core: 中文：M9的R_irreversible ≈ 1 - e^{-n²·p̄·Σαᵢ/β}
@@ -423,6 +448,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-f6b2c5969428a3ba / Pessimistic Causal Reinforcement Learning with Mediators for Confounded Offline Data
   - 来源：`data/external-research/105-intervention-control/105-intervention-control-source-pack.jsonl`
+  - 依赖：—；被引用：—
+- [Pointfire crosswalk against external mechanisms](../../ASSET-CARDS.md#asset-hr-3f2f25545922e419)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Pointfire crosswalk against external mechanisms / pointfire-external-crosswalk
+  - 来源：`reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.md`
   - 依赖：—；被引用：—
 - [Positive labels are bound to object, criterion, version, evidence, and boundary in `data/architecture/calibration/121q12](../../../reports/architecture/121Q12-effectual-mechanism-dual-loop.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1028,6 +1058,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-747e1a2e90a4edab / Requires real-world response beyond repository artifacts.
   - 来源：`data/atlas/generated/ignition-atlas-121q14.json`
+  - 依赖：—；被引用：—
+- [Research questions — IGNITION-20260918-186](../../ASSET-CARDS.md#asset-hr-e2a8e3bd4062c2c6)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Research questions — IGNITION-20260918-186 / research-questions
+  - 来源：`reports/external-research/IGNITION-20260918-186/research-questions.md`
   - 依赖：—；被引用：—
 - [research-only; no canonical, production, authority, Current, Owner, external-truth, or epistemic acceptance claim](../../../data/research/mutable-basis-learning-operator-2026-09-07/verdict.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-194ca7d3d7d07416 / \| 116 \| GAP-012 因果识别 \| MEDIUM \| 8 \| 2 \|
   - 来源：`reports/external-research/104-dual-088-reconciliation.md`
-  - 依赖：—；被引用：—
-- [\| 4 真实文献试投影 \| 088-external-source-atlas-v2.jsonl（74 条全部 Crossref 验真） \| ✅ \|](../../../data/external-research/088-PROGRESS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-e53ed29fb44c9f67 / \| 4 真实文献试投影 \| 088-external-source-atlas-v2.jsonl（74 条全部 Crossref 验真） \| ✅ \|
-  - 来源：`data/external-research/088-PROGRESS.md`
-  - 依赖：—；被引用：—
-- [\| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-830c947db8c4ca4b / \| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0692\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aaaacf8046a27d5e / \| \[C-0692\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0694\]\( \) \| \[关联案例（道德自居-认知偏差）\]\( \) \| 道德自居机制通过Sigmoid](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-881f7aa78cc5a998 / \| \[C-0694\]\( \) \| \[关联案例（道德自居-认知偏差）\]\( \) \| 道德自居机制通过Sigmoid
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0700\]\( \) \| \[因果光锥×马拉松×高山滑雪\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5a01c8409c0fca57 / \| \[C-0700\]\( \) \| \[因果光锥×马拉松×高山滑雪\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0704\]\( \) \| \[因果光锥×马拉松×高山滑雪\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e4d876f436cbce87 / \| \[C-0704\]\( \) \| \[因果光锥×马拉松×高山滑雪\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0709\]\( \) \| \[空降CEO失败机制\]\( \) \| 罗恩·约翰逊17个月后销售额暴跌32%，股价腰斩 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d78e22dd972e34d0 / \| \[C-0709\]\( \) \| \[空降CEO失败机制\]\( \) \| 罗恩·约翰逊17个月后销售额暴跌32%，股价腰斩 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

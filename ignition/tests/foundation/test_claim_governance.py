@@ -3,9 +3,13 @@ import math
 import subprocess
 import sys
 import unittest
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "tools/foundation"))
+import build_function_asset_census
+from knowledge_corpus_admission import admission_for_path
 
 
 class ClaimGovernanceTests(unittest.TestCase):
@@ -18,6 +22,28 @@ class ClaimGovernanceTests(unittest.TestCase):
 
     def test_census_is_deterministic(self):
         self.run_ok(sys.executable, "tools/foundation/build_function_asset_census.py", "--check")
+
+    def test_task186_research_report_is_accounted_but_not_a_function_source(self):
+        fixture = json.loads((ROOT / "tests/foundation/fixtures/task186_research_surface_isolation.json").read_text(encoding="utf-8"))
+        path = fixture["external_research_report_path"]
+        admission = admission_for_path(path)
+        self.assertEqual(admission.classification, fixture["admission_classification"])
+        self.assertTrue(admission.provenance_only)
+        self.assertFalse(admission.auto_discovery)
+
+        manifest_path = ROOT / "data/foundation/repository-path-classification/classification-manifest.jsonl"
+        manifest = [json.loads(line) for line in manifest_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+        row = next((item for item in manifest if item["path"] == "ignition/" + path), None)
+        self.assertIsNotNone(row)
+        self.assertEqual(row["category"], fixture["path_manifest_category"])
+
+        tracked_path = ("ignition/" + path + "\0").encode("utf-8")
+        with mock.patch.object(
+            build_function_asset_census.subprocess,
+            "check_output",
+            return_value=tracked_path,
+        ), mock.patch.object(build_function_asset_census, "migration_paths", return_value=[]):
+            self.assertNotIn(path, build_function_asset_census.tracked_text_files())
 
     def test_identity_examples_cover_ten_types(self):
         rows = [json.loads(line) for line in (ROOT / "tests/foundation/fixtures/function_identity_examples.jsonl").read_text().splitlines() if line.strip()]

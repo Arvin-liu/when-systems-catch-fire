@@ -1,0 +1,57 @@
+{
+  "task": "IGNITION-20260918-186",
+  "accessed_at": "2026-09-18",
+  "paper_source_id": "MRSI-PAPER-V2",
+  "paper": {
+    "title": "MetaRSI / RSI2: A Meta-Recursive Self-Improving System for Recursive Self-Improving Systems Themselves",
+    "paper_label": "MetaRSI-v1",
+    "authors": [
+      "Zihan Tan", "Leixin Sun", "Zitong Shi", "Yitao Liu", "Jiajun Wu", "Nathaniel Brooks", "Jiaru Qian",
+      "Xiaoran Shang", "Suyuan Huang", "Yi Ding", "Yangxu Liao", "Mukai Li", "Qiushi Sun", "Shudong Liu",
+      "Xuankun Rong", "Xiaohang Yu", "Zhuo Chen", "Hejia Geng", "Chenxin Li", "Aozhou Wang", "Zengji Tu",
+      "Robert Tang", "Yuxin Zhan", "Eric Jiang", "Yuxin Wu", "Jianqing Zhang", "Xiao Liang", "Fang Wu",
+      "Haochi Zhang", "Alexander Marlow", "Guancheng Wan"
+    ],
+    "version": "arXiv:2609.06396v2",
+    "updated": "2026-09-09",
+    "url": "https://arxiv.org/html/2609.06396v2",
+    "license": "CC BY 4.0"
+  },
+  "official_page_source_id": "MRSI-COSMOS-PAGE",
+  "official_page_note": "CosmosMind page is dated 2026-09-03, uses the MetaRSI-v1 name, and is unversioned. The arXiv v2 is the fixed paper source; full-text identity between page and v2 is not asserted.",
+  "repository_source_id": "RSIH-GITHUB-33C4",
+  "repository": {
+    "name": "CosmosMind-ai/RSI-Harness",
+    "commit": "33c4f8dfac4359987f2e814e187de67c332498de",
+    "url": "https://github.com/CosmosMind-ai/RSI-Harness/commit/33c4f8dfac4359987f2e814e187de67c332498de",
+    "license": "Not declared in frozen root or package metadata inspected",
+    "package": "rsih 0.1.0; private=true; Pi agent dependencies pinned to 0.84.3",
+    "status_note": "README describes an executable Genome configuration layer and its harness-rsi Genome; README says the repository has no benchmark, data-generation, training, or evaluation code."
+  },
+  "hugging_face_source_id": "RSIH-HF-SNAPSHOT",
+  "hugging_face": {
+    "snapshot": "a861001d54c456e9b7eabc57a40296cd4e3b0205",
+    "url": "https://huggingface.co/CosmosMind/RSI-Harness/tree/a861001d54c456e9b7eabc57a40296cd4e3b0205",
+    "metadata_note": "config={} and no model weights present in the inspected snapshot metadata; it is not a Model-RSI checkpoint."
+  },
+  "paper_sections_frozen": [
+    "§1 and §2: scope, capability ceiling, and prior-work positioning",
+    "§3: target triple, evidence compiler, perishable signal, protected measurement, budgets",
+    "§4.1-4.7: kernel, Data-RSI, Harness-RSI, Model-RSI, transitions, two-axis scheduler, MetaRSI, release boundary",
+    "§5: reported experiments and provider-interface versus writable-weight routes",
+    "§6.7-6.8 and Appendix E: refutable-law framing, loop-level claims, record gates"
+  ],
+  "method_boundary": {
+    "paper_claims_are_not_reproduced": true,
+    "repository_code_was_not_executed": true,
+    "model_training_not_run": true,
+    "benchmark_results_not_independently_verified": true,
+    "no_external_system_integrated": true
+  },
+  "title_and_scope_mismatch": "The versioned arXiv title includes RSI2; the paper figure/section label and the unversioned official page use MetaRSI-v1. The frozen repository is named RSI-Harness and its inspected implementation is not assumed to contain the full paper framework.",
+  "unresolved_questions": [
+    "Whether the complete experimental artifact reproduces each v2 claim is outside this read-only source inspection.",
+    "No explicit expiry/refresh interval for a persistent self-knowledge or capability profile was found in the frozen v2 text inspected; its perishable learning signal is a separate object.",
+    "The official webpage does not expose an immutable revision or full-text equivalence marker."
+  ]
+}

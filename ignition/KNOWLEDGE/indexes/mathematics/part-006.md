@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D4} exist, compose F_{D4}=N\(⊕_{g∈D_{D4}} g\); otherwise treat F_{D4} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-74148f005e15386a / If upstream objects D_{D4} exist, compose F_{D4}=N\(⊕_{g∈D_{D4}} g\); otherwise treat F_{D4} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D4；被引用：—
+- [If upstream objects D_{D50} exist, compose F_{D50}=N\(⊕_{g∈D_{D50}} g\); otherwise treat F_{D50} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3e5c233a1fb6307a / If upstream objects D_{D50} exist, compose F_{D50}=N\(⊕_{g∈D_{D50}} g\); otherwise treat F_{D50} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D50；被引用：—
 - [If upstream objects D_{D51} exist, compose F_{D51}=N\(⊕_{g∈D_{D51}} g\); otherwise treat F_{D51} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-53e00a3edff69f8a / If upstream objects D_{D51} exist, compose F_{D51}=N\(⊕_{g∈D_{D51}} g\); otherwise treat F_{D51} as an axiom seed.
@@ -2024,6 +2034,11 @@
   - 可搜索名称：NFC-a1d84ed2a4d12786 / MetaGPT EMNLP full-text and proof audit: norm-weighted static task-vector composition supports bounded representation, c
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—
+- [MetaRSI primary-source report](../../ASSET-CARDS.md#asset-hr-b8397bdb03a54b29)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：MetaRSI primary-source report / metarsi-primary-source-report
+  - 来源：`reports/external-research/IGNITION-20260918-186/metarsi-primary-source-report.md`
+  - 依赖：—；被引用：—
 - [Method 1.1.0 and map 0.1.0 remain Current. This candidate adds no L7, truth layer, causal proof, completeness proof or b](../../../reports/operations/121Q32-typed-change-propagation-and-self-updating-system-map-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-22c58aaea5af9ad7 / Method 1.1.0 and map 0.1.0 remain Current. This candidate adds no L7, truth layer, causal proof, completeness proof or b
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-1574130dc36ee02b / Object D190 defines a mechanism_model within the point-fire framework. Core: 中文：万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ<μ_ToE时四
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D190；被引用：—
-- [Object D191 defines a mechanism_model within the point-fire framework. Core: 中文：规范破缺真空选择=陷阱选择。. Annotation: 认知规范破缺函数，规范破](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ce7efd548b67fcb1 / Object D191 defines a mechanism_model within the point-fire framework. Core: 中文：规范破缺真空选择=陷阱选择。. Annotation: 认知规范破缺函数，规范破
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D191, D467, D468；被引用：—
-- [Object D199 defines a mechanism_model within the point-fire framework. Core: 中文：相变序参量φ=门控面Λ的序参量。. Annotation: 相变序参量-门槛函数](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-65cedcbf5b6f6671 / Object D199 defines a mechanism_model within the point-fire framework. Core: 中文：相变序参量φ=门控面Λ的序参量。. Annotation: 相变序参量-门槛函数
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D150, D199；被引用：—
-- [Object D203 defines a mechanism_model within the point-fire framework. Core: 中文：配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。. Annotation](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-8906fc57b7dfd80b / Object D203 defines a mechanism_model within the point-fire framework. Core: 中文：配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。. Annotation
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D203, T17；被引用：—

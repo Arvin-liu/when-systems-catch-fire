@@ -44,6 +44,24 @@ class KnowledgeCorpusAdmissionTests(unittest.TestCase):
         self.assertTrue(admission.provenance_only)
         self.assertTrue(admission.auto_discovery)
 
+    def test_evaluation_evidence_is_provenance_only_and_not_discovered(self) -> None:
+        for path in (
+            "reports/evaluations/task/result.json",
+            "reports/evaluations/task/validator.py",
+            "reports/evaluations/task/contamination-disclosure.md",
+        ):
+            admission = admission_for_path(path)
+            self.assertEqual(admission.classification, "EVALUATION_EVIDENCE_ONLY")
+            self.assertTrue(admission.provenance_only)
+            self.assertFalse(admission.auto_discovery)
+
+    def test_task186_external_research_requires_explicit_admission(self) -> None:
+        fixture = json.loads((ROOT / "tests/foundation/fixtures/task186_research_surface_isolation.json").read_text(encoding="utf-8"))
+        admission = admission_for_path(fixture["external_research_report_path"])
+        self.assertEqual(admission.classification, fixture["admission_classification"])
+        self.assertTrue(admission.provenance_only)
+        self.assertFalse(admission.auto_discovery)
+
     def test_current_projection_has_no_platform_only_rows(self) -> None:
         result = __import__("subprocess").run(
             ["python3", "tools/validate_knowledge_corpus_admission.py"],

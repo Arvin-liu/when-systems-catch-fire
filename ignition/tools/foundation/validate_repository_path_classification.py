@@ -52,6 +52,9 @@ UNRESOLVED = "UNRESOLVED"
 # Ordered rule list: (category, (prefix, ...)).  First match wins.
 # Order matters: the operations exception must precede the broad ``data/`` rule.
 RULES: list[tuple[str, tuple[str, ...]]] = [
+    # Evaluation artifacts are first-class, provenance-visible repository
+    # records. They are not Foundation assertion or function-discovery inputs.
+    ("EVALUATION_EVIDENCE", ("evaluation/", "reports/evaluations/")),
     # 1. Authoritative assertion / function discovery inputs (restricted allowlist).
     ("AUTHORITATIVE_CLAIM_INPUT", AUTHORITATIVE_PREFIXES),
     # 2. Operations / receipt / history records.
@@ -84,6 +87,7 @@ RULES: list[tuple[str, tuple[str, ...]]] = [
 
 # Categories that must never feed Foundation assertion discovery.
 NON_AUTHORITATIVE_CATEGORIES = {
+    "EVALUATION_EVIDENCE",
     "GOVERNED_MACHINE_RECORD",
     "GENERATED_PROJECTION",
     "EVIDENCE_OR_BENCHMARK",

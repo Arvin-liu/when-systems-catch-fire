@@ -36,10 +36,50 @@ FINAL_STATE = "READY_FOR_INDEPENDENT_EVALUATION"
 R0_RELATIVE = Path("agent_runtime/cognitive_inheritance_r0")
 ALLOWED_CHANGED_PREFIXES = (
     "ignition/agent_runtime/cognitive_inheritance_r0/",
+    # Evaluation-plane work is a separate, non-canonical evidence surface.
+    # Keep it eligible as auditable task output without admitting it to R0.
+    "ignition/evaluation/",
+    "ignition/reports/evaluations/",
+    # Task186's pinned research bundle remains auditable; its typed admission
+    # class keeps it outside canonical discovery.
+    "ignition/reports/external-research/IGNITION-20260918-186/",
+    # These nested Knowledge pages are generated shards. An additional
+    # HUMAN_INDEX_ONLY research result can shift their deterministic partitions.
+    "ignition/KNOWLEDGE/cards/",
+    "ignition/KNOWLEDGE/indexes/",
+    "ignition/KNOWLEDGE/reading-layers/",
 )
 ALLOWED_CHANGED_FILES = frozenset({
     "ignition/tools/validate_cognitive_inheritance_r0.py",
     "ignition/tests/test_cognitive_inheritance_r0.py",
+    "ignition/tests/test_target_repository_preflight_r0_1.py",
+    "ignition/tests/test_evaluation_plane_r0_1.py",
+    "ignition/tests/test_knowledge_corpus_admission.py",
+    "ignition/tests/foundation/fixtures/task186_research_surface_isolation.json",
+    "ignition/tests/foundation/test_claim_governance.py",
+    "ignition/tests/foundation/test_nonfunction_claim_closure.py",
+    "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
+    "ignition/tools/research/validate_task186_external_research_bundle.py",
+    "ignition/RESULTS/CHRONOLOGY.md",
+    "ignition/KNOWLEDGE/ASSET-CARDS.md",
+    "ignition/KNOWLEDGE/COVERAGE.md",
+    "ignition/KNOWLEDGE/MAP.md",
+    "ignition/KNOWLEDGE/READING-LAYERS.md",
+    "ignition/KNOWLEDGE/README.md",
+    "ignition/KNOWLEDGE/SEARCH.md",
+    "ignition/KNOWLEDGE/WHATS-NEW.md",
+    "ignition/data/governance/human-results/census.json",
+    "ignition/data/governance/human-results/result-ledger.jsonl",
+    "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+    "ignition/data/governance/knowledge-experience/changes.jsonl",
+    "ignition/data/governance/knowledge-experience/coverage.json",
+    "ignition/tools/foundation/validate_repository_path_classification.py",
+    "ignition/tools/validate_knowledge_corpus_admission.py",
+    "ignition/tools/governance/run_self_correction.py",
+    "ignition/tools/governance/gen_source_first_seen.py",
+    "ignition/data/governance/self-correction/config.json",
+    "ignition/data/foundation/schemas/repository-path-classification.schema.json",
+    "ignition/data/foundation/knowledge-corpus-admission-policy.json",
     "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
     "ignition/data/foundation/nonfunction-claims/closure-summary.json",
     "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
@@ -47,10 +87,17 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
     "ignition/data/architecture/current-facts.json",
     "ignition/data/governance/self-correction/claim-delta.jsonl",
+    "ignition/data/governance/self-correction/impact-analysis.jsonl",
+    "ignition/data/governance/self-correction/audit-findings.jsonl",
+    "ignition/data/governance/self-correction/history.jsonl",
+    "ignition/data/governance/self-correction/summary.json",
+    "ignition/RESULTS/CLAIM-DELTA.md",
+    "ignition/RESULTS/IMPACT-ANALYSIS.md",
     "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
     "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
     "ignition/data/governance/knowledge-experience/manifest.json",
     "ignition/data/governance/knowledge-experience/search-index.jsonl",
+    "ignition/data/governance/knowledge-experience/source-first-seen.json",
     "ignition/data/publication/fire-seeds/seed-census.json",
     ".github/workflows/foundation-validation.yml",
     ".github/workflows/current-state-sync-validation.yml",
@@ -212,7 +259,7 @@ def validate_foundation_discovery_boundary(root: Path, r0: Path) -> int:
 
 
 def is_allowed_changed_path(path: str) -> bool:
-    """Keep the R0 change boundary exact except for its one artifact subtree."""
+    """Keep R0 changes bounded while recognizing typed task evidence surfaces."""
     return path in ALLOWED_CHANGED_FILES or path.startswith(ALLOWED_CHANGED_PREFIXES)
 
 

@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [该链只证明某个版本的来源、分析、方法与作品可被共同审计。作品被接受不证明来源命题为真、分析完成因果识别、方法普遍有效或 AI 复制了作者；受限原始材料只保留 provenance，不因成果展示而重新公开。](../../../ARCHITECTURE.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-93f319fe36a77a61 / 该链只证明某个版本的来源、分析、方法与作品可被共同审计。作品被接受不证明来源命题为真、分析完成因果识别、方法普遍有效或 AI 复制了作者；受限原始材料只保留 provenance，不因成果展示而重新公开。
+  - 来源：`ARCHITECTURE.md`
+  - 依赖：—；被引用：—
+- [语言—思维逻辑平面](../../ASSET-CARDS.md#asset-hr-cf318764b78d8743)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_SCOPED_SOURCE`
+  - 可搜索名称：语言—思维逻辑平面 / language-thought-logic-plane
+  - 来源：`docs/architecture/language-thought-logic-plane.md`
+  - 依赖：—；被引用：—
+- [误差抵消优化函数：解释了多阶段突破的数学机制\\n4.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9b38a92a052d6718 / 误差抵消优化函数：解释了多阶段突破的数学机制\\n4.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [说明：查重全 unique，但因「缺形式化函数引用 + 单材料证据」两道硬门槛，全部暂缓，不强行入表。](../../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-3b24b50e522f17b8 / 说明：查重全 unique，但因「缺形式化函数引用 + 单材料证据」两道硬门槛，全部暂缓，不强行入表。

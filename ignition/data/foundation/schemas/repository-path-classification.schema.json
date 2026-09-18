@@ -15,6 +15,7 @@
     "category": {
       "type": "string",
       "enum": [
+        "EVALUATION_EVIDENCE",
         "AUTHORITATIVE_CLAIM_INPUT",
         "GOVERNED_MACHINE_RECORD",
         "GENERATED_PROJECTION",
