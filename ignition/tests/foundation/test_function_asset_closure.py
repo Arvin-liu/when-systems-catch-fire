@@ -39,6 +39,19 @@ class FunctionAssetClosureTests(unittest.TestCase):
         self.assertTrue(self.builder.implicit_candidate("fixture.md", "Φ(x) = x / (1 + x)"))
         self.assertFalse(self.builder.implicit_candidate("fixture.md", "ordinary prose"))
 
+    def test_task185_research_surface_is_not_function_discovery_input(self):
+        prefix = "data/operations/iterations/185/research/"
+        raw = subprocess.check_output(
+            ["git", "ls-files", "--cached", "--others", "--exclude-standard", "-z"],
+            cwd=self.builder.GIT_ROOT,
+        ).decode("utf-8")
+        tracked = [
+            item[len("ignition/"):] if item.startswith("ignition/") else item
+            for item in raw.split("\0") if item
+        ]
+        self.assertTrue(any(path.startswith(prefix) for path in tracked))
+        self.assertFalse(any(path.startswith(prefix) for path in self.builder.tracked_text_files()))
+
     def test_task99_identity_examples_cover_twelve(self):
         path = ROOT / "tests/foundation/fixtures/function_asset_identity_task99.jsonl"
         rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]

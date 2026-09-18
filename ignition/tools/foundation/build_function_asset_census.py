@@ -94,6 +94,10 @@ GENERATED_PREFIXES = (
     # provenance-only operation records. They must not become function-asset
     # discovery input or make the census depend on receipt wording/order.
     "data/operations/iterations/141/",
+    # Task185 internal cognitive archaeology is a non-authoritative research
+    # surface. Keep its paths accounted for elsewhere without scanning report
+    # prose into the function-asset candidate census.
+    "data/operations/iterations/185/research/",
     ".github/",
     "tools/publication/",
 )

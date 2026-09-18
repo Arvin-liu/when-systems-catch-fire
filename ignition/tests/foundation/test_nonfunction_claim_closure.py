@@ -4,6 +4,7 @@ import subprocess
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -50,6 +51,37 @@ class NonFunctionClaimClosureTests(unittest.TestCase):
         self.assertTrue(self.adjudicator.candidate("This theorem proves a universal result."))
         self.assertTrue(self.adjudicator.candidate("该机制导致普遍结果。"))
         self.assertFalse(self.adjudicator.candidate("ordinary navigation entry"))
+
+    def test_path_exclusions_are_decided_without_opening_source(self):
+        class ForbiddenSource:
+            def __init__(self, suffix):
+                self.suffix = suffix
+
+            def is_file(self):
+                raise AssertionError("path-level exclusion must precede file inspection")
+
+            def read_text(self, *args, **kwargs):
+                raise AssertionError("path-level exclusion must precede source reads")
+
+        cases = [
+            (
+                "data/operations/iterations/185/research/internal-cognitive-archaeology-final-report.md",
+                "EXCLUDED_NON_AUTHORITATIVE_RECORD",
+            ),
+            ("evaluation/heldout/sentinel.json", "EXCLUDED_EVALUATION_EVIDENCE_ONLY"),
+            (
+                "data/governance/human-results/result-ledger.jsonl",
+                "EXCLUDED_GENERATED_PROJECTION_EXCLUDED",
+            ),
+            ("data/foundation/claims/claims.jsonl", "EXPLICIT_CANONICAL_IMPORT"),
+        ]
+        for path, expected_status in cases:
+            with self.subTest(path=path):
+                source = ForbiddenSource(Path(path).suffix)
+                with patch.object(self.adjudicator, "repo_path", return_value=source):
+                    fragments, status = self.adjudicator.text_fragments(path)
+                self.assertEqual([], fragments)
+                self.assertEqual(expected_status, status)
 
     def test_operational_state_record_marker_excludes_only_marked_lines(self):
         source = (ROOT / "STATE-CHANGELOG.md").read_text(encoding="utf-8").splitlines()

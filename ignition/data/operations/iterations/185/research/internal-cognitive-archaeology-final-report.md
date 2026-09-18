@@ -85,6 +85,14 @@ Task185 Step00–Step10 have separate commits and fast-forward pushes on the exi
 
 The final local path-accounting generator reached a fixed point: two consecutive `--generate` runs produced manifest SHA-256 `9a830d768b44a0da41bca61142774fa28f791a2ca122d0cc1976bb7cf1b7923c`; `--check` passed all 10/10 checks and `--self-test` returned `SELF_TEST_OK paths=4655`. The local sparse checkout intentionally excludes `ignition/evaluation/heldout/**` and omits unrelated JSONL inputs. The generic R0 validator and Knowledge Experience validation/determinism checks were attempted but stopped at missing sparse inputs (`ignition/data/foundation/nonfunction-claims/source-discovery.jsonl` and `ignition/data/governance/human-results/result-ledger.jsonl`); no such input was opened or expanded into the worktree. Task185-specific JSONL parsing, uniqueness, required-field, evidence-reference, and path-accounting checks were run on the research artifacts. The repo-wide exact-head CI is the source of full-checkout validation evidence.
 
+## Post-Step11 exact-head CI finding and bounded repair
+
+The first finalization check at `67d461705325b86d13f78a439c10b8504f30da14` had three successful workflows (`repository-path-accounting-preflight`, `architecture-pages`, and `q33-governance-validation`) and a failed `foundation-validation`. The failure reported stale function-asset census projections (`discovery.jsonl`, `census.jsonl`, `audit-queue.jsonl`, `census-summary.json`) and nonfunction discovery drift: `listed=6063`, `tracked=6086`, plus stale `source-discovery.jsonl`, `closure-summary.json`, `discovery-coverage.json`, and the adjudication index. The difference of 23 paths is exactly the Task185 research bundle under `data/operations/iterations/185/research/`.
+
+This is recorded as `RESEARCH_SURFACE_DISCOVERY_LEAK`: Task185 research paths affected generic discovery/census surfaces even though the nonfunction records were typed as non-authoritative and were not eligible for claim promotion. The bounded repair applies the existing nonfunction path/admission exclusions before source access, adds the exact Task185 research prefix to the function census's existing non-authoritative source exclusions, and adds regressions for both properties. The official nonfunction generator now accounts for all 6086 tracked paths; its 23 Task185 rows are all `EXCLUDED_NON_AUTHORITATIVE_RECORD` with zero candidate fragments and zero canonical claim IDs. Function-census `--check` passes with the existing generated projections unchanged. Only the four nonfunction discovery/accounting projections named above were regenerated; canonical claim inputs and Function/Current canonical state remain unchanged.
+
+The full nonfunction closure suite passed 7/7 after regeneration. The local FunctionAsset suite passed its five non-lineage checks, including both generator determinism checks and the new Task185 path exclusion test; its closure validator could not complete because the partial clone could not lazily fetch a historical promisor blob over the current GitHub TLS connection. That local infrastructure failure is not treated as a pass; final exact-head CI remains the decisive full-history validation.
+
 ## Handoff and explicit ceilings
 
 `NO_CANONICAL_PROMOTION_PERFORMED`
@@ -95,4 +103,4 @@ The final local path-accounting generator reached a fixed point: two consecutive
 
 Task182-R1 unfinished branch/worktree/output and held-out case-specific payload were not read. Task186 was not used. Successor/Evaluator were not run. Foundation/Current canonical state was not modified; no claim was promoted. Task185 concludes at internal research only, with the existing PR remaining Draft and unmerged for Owner/GPT adjudication.
 
-**Final stop state:** `INTERNAL_COGNITIVE_ARCHAEOLOGY_COMPLETE`
+**Terminal stop target (conditional):** `INTERNAL_COGNITIVE_ARCHAEOLOGY_COMPLETE` may be asserted only after the final exact-head CI succeeds and PR #224 metadata is refreshed; at this report revision, that CI follow-up is pending.
