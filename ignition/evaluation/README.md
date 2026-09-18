@@ -36,3 +36,8 @@ ledger bytes at `PRE_FINAL_VALIDATION_CLOSED`, and binds the final validator
 status in a deterministic receipt outside the ledger. R0.2 artifacts remain
 historical. See `r0.3-ledger-closure-protocol.md`, the R0.3 packet schemas,
 and `tools/finalize_successor_read_ledger_r0_3.py`.
+
+R0.3 uses a versioned task authorization schema, branch guard, and hook path
+for the new held-out trial. Its source and finite status vocabulary are
+operational controls, not cognitive evidence; see
+`operational-control/r0.3/README.md`.
