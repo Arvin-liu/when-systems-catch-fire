@@ -17,6 +17,7 @@ produce wrong dates.
 
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import subprocess
@@ -30,19 +31,20 @@ DATE_RE = re.compile(r"20\d{2}-\d{2}-\d{2}")
 
 
 def require_full_history() -> None:
-    if (ROOT / ".git").is_dir():
-        proc = subprocess.run(
-            ["git", "rev-parse", "--is-shallow-repository"],
-            cwd=ROOT,
-            text=True,
-            capture_output=True,
-            check=False,
+    proc = subprocess.run(
+        ["git", "rev-parse", "--is-shallow-repository"],
+        cwd=ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if proc.returncode != 0 or proc.stdout.strip() not in {"true", "false"}:
+        sys.exit("REFUSE: cannot verify full Git history for source-first-seen.json generation")
+    if proc.stdout.strip() == "true":
+        sys.exit(
+            "REFUSE: source-first-seen.json must be generated from a FULL clone. "
+            "Run `git fetch --unshallow` first."
         )
-        if proc.stdout.strip() == "true":
-            sys.exit(
-                "REFUSE: source-first-seen.json must be generated from a FULL clone. "
-                "Run `git fetch --unshallow` first."
-            )
 
 
 def first_seen(path: str) -> str | None:
@@ -59,14 +61,31 @@ def first_seen(path: str) -> str | None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--only-missing",
+        action="store_true",
+        help="Preserve the existing full-history map and compute only ledger sources absent from it.",
+    )
+    args = parser.parse_args()
     require_full_history()
     if not LEDGER.is_file():
         sys.exit(f"missing ledger: {LEDGER}")
     rows = [json.loads(line) for line in LEDGER.read_text(encoding="utf-8").splitlines() if line.strip()]
     sources = sorted({row["source"] for row in rows})
-    entries: dict[str, str] = {}
+    if args.only_missing:
+        if not OUT.is_file():
+            sys.exit("REFUSE: --only-missing requires an existing full-history source-first-seen.json")
+        existing = json.loads(OUT.read_text(encoding="utf-8"))
+        if not isinstance(existing, dict) or existing.get("history_requirement") != "FULL" or not isinstance(existing.get("entries"), dict):
+            sys.exit("REFUSE: --only-missing requires a valid existing full-history source-first-seen.json")
+        entries: dict[str, str] = dict(existing["entries"])
+    else:
+        entries = {}
     missing = []
     for source in sources:
+        if source in entries:
+            continue
         date = first_seen(source)
         if date:
             entries[source] = date
