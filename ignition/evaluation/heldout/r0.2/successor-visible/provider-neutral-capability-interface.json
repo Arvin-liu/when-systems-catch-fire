@@ -1,0 +1,23 @@
+{
+  "schema_version": "successor-provider-neutral-capability-interface-r0.2",
+  "provider_model_neutral": true,
+  "capabilities": [
+    {
+      "id": "record.serialize",
+      "observable_contract": "Serialize a typed case record deterministically while preserving locators, uncertainty, boundaries, and unknowns.",
+      "claim_ceiling": "Serialization conformance only."
+    },
+    {
+      "id": "record.validate",
+      "observable_contract": "Report schema conformance for a supplied record without adding source claims.",
+      "claim_ceiling": "Schema conformance only."
+    },
+    {
+      "id": "task.structuralize",
+      "observable_contract": "Represent one bounded source using cited observations, objects, relations, unknowns, obligations, and a proposed continuation.",
+      "claim_ceiling": "A structured record does not establish source truth or cognitive inheritance."
+    }
+  ],
+  "provider_binding": "UNBOUND",
+  "calibration": "NOT_MEASURED"
+}

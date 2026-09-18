@@ -1,0 +1,59 @@
+{
+  "authority": {
+    "command_blob_sha": "baed4ede38b22de2885510d36fed17595e3354d4",
+    "command_path": "agent-commands/IGNITION-20260918-182-R1.md",
+    "command_ref": "ca1f8c1780001aaef07f6e82c87b67b5d14ce237",
+    "command_repository_full_name": "Arvin-liu/1111"
+  },
+  "cognitive_conclusion": {
+    "evaluator_for_r2": "NOT_RUN",
+    "general_cognitive_inheritance": "NOT_ESTABLISHED",
+    "owner_gpt_adjudication_for_retry": "NOT_RUN",
+    "r0_1_successor_cognitive_outcome": "NOT_ADJUDICATED_FROM_CONTAMINATED_TRIAL"
+  },
+  "direct_trigger": {
+    "classification": "PROTOCOL_AND_EXECUTION_SUBSTRATE_DESIGN_DEFECT",
+    "reported_hook_path": "ignition/evaluation/hooks",
+    "reported_push_status": "FAIL_TASK_BRANCH_MISMATCH",
+    "root_cause": "The R0.1 preflight helper is Builder-branch-specific and rejects a distinct Task182 successor branch. Operational hook execution was incorrectly treated as an out-of-scope cognitive read.",
+    "successor_cognition_failure": "NOT_INFERRED"
+  },
+  "disclosure_correction": {
+    "correction": "False as a claim of remote non-reachability: S1 candidate 5aecee5d4b6becaa954e5882d6869a292d393725 is the direct parent of remote disclosure commit 985ad8953a0eb7777817bee86ef086a739303f45.",
+    "original_claim": "S1 candidate remains local and was not pushed.",
+    "unresolved": [
+      "Which exact push operation first made the S1 candidate remotely reachable.",
+      "Whether a separate remote ref ever pointed directly to the S1 candidate."
+    ]
+  },
+  "forensic_handling": {
+    "branch_must_be_preserved": true,
+    "builder_note": "The R1 Builder used the remote parent fields to adjudicate ancestry and authored two synthetic R0.2 sources independently. The prior trial cases and successor records do not enter the R0.2 packet.",
+    "contamination_branch_disposition": "PERMANENTLY_QUARANTINED_AS_CLEAN_TRIAL_EVIDENCE",
+    "deletion_attempted": false,
+    "eligible_as_clean_retry": false,
+    "original_case_ids_reused": false,
+    "prior_outputs_used_to_construct_r0_2_cases": false,
+    "rewrite_amend_or_force_push_attempted": false
+  },
+  "remote_ancestry": {
+    "api_response_scope_note": "The commit endpoint also returned diff fields. Only the commit parent metadata was used for ancestry adjudication; prior successor record content was not used to author the new synthetic cases.",
+    "branch_tip_sha": "985ad8953a0eb7777817bee86ef086a739303f45",
+    "contamination_branch": "work/IGNITION-20260917-182-heldout-successor-r0-1-trial",
+    "disclosure_commit_parent_sha": "5aecee5d4b6becaa954e5882d6869a292d393725",
+    "disclosure_commit_sha": "985ad8953a0eb7777817bee86ef086a739303f45",
+    "evidence_limit": "This proves remote reachability through ancestry. It does not identify which push command made the commit reachable or establish a separate branch ref at the S1 candidate.",
+    "evidence_method": [
+      "GitHub branch ref for the named contamination branch",
+      "GitHub commit metadata for disclosure commit 985ad8953a0eb7777817bee86ef086a739303f45",
+      "GitHub commit metadata for S1 candidate 5aecee5d4b6becaa954e5882d6869a292d393725"
+    ],
+    "remote_reachability": "S1_CANDIDATE_IS_ANCESTOR_OF_REMOTE_CONTAMINATION_BRANCH_TIP",
+    "repository_full_name": "Arvin-liu/when-systems-catch-fire",
+    "s1_candidate_parent_sha": "7cab7541895620d68d5bce2d16c46871ebd03ac0",
+    "s1_candidate_sha": "5aecee5d4b6becaa954e5882d6869a292d393725",
+    "task181_base_sha": "7cab7541895620d68d5bce2d16c46871ebd03ac0"
+  },
+  "schema_version": "task182-contamination-adjudication-r0.2",
+  "trial_status": "PROTOCOL_CONTAMINATED"
+}

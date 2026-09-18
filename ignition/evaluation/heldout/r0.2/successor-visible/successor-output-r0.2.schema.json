@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evaluation/heldout/r0.2/successor-visible/successor-output-r0.2.schema.json",
+  "title": "Held-out Successor Observable Record R0.2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "case_id", "source_sha256", "observations", "objects", "relations", "unknowns", "boundaries", "obligations", "proposed_continuation", "claim_ceiling", "forbidden_inferences"],
+  "properties": {
+    "schema_version": {"const": "successor-output-r0.2"},
+    "case_id": {"type": "string", "minLength": 1},
+    "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "observations": {"type": "array", "items": {"$ref": "#/$defs/grounded"}},
+    "objects": {"type": "array", "items": {"$ref": "#/$defs/grounded"}},
+    "relations": {"type": "array", "items": {"$ref": "#/$defs/relation"}},
+    "unknowns": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "boundaries": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "obligations": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "proposed_continuation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposal", "prerequisites", "stop_condition"],
+      "properties": {
+        "proposal": {"type": "string", "minLength": 1},
+        "prerequisites": {"type": "array", "items": {"type": "string"}},
+        "stop_condition": {"type": "string", "minLength": 1}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "forbidden_inferences": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "grounded": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "kind", "statement", "source_locators", "uncertainty"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["OBJECT", "CLAIM", "OBSERVATION", "DECISION", "METHOD", "OBLIGATION", "UNKNOWN"]},
+        "statement": {"type": "string", "minLength": 1},
+        "source_locators": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "uncertainty": {"enum": ["OBSERVED", "SOURCE_REPORTED", "INFERRED", "HYPOTHESIS", "UNKNOWN", "NOT_MEASURED"]}
+      }
+    },
+    "relation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "from_id", "relation_type", "to_id", "source_locators", "uncertainty"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "from_id": {"type": "string", "minLength": 1},
+        "relation_type": {"type": "string", "minLength": 1},
+        "to_id": {"type": "string", "minLength": 1},
+        "source_locators": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "uncertainty": {"enum": ["OBSERVED", "SOURCE_REPORTED", "INFERRED", "HYPOTHESIS", "UNKNOWN", "NOT_MEASURED"]}
+      }
+    }
+  }
+}

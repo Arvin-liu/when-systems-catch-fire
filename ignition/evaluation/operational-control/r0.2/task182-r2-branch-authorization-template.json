@@ -1,0 +1,14 @@
+{
+  "template_version": "task-branch-authorization-template-r0.2",
+  "task_id": "IGNITION-20260918-182-R2",
+  "authorized_branch": "work/IGNITION-20260918-182-r2-heldout-successor-r0-2-retry",
+  "authorized_base_head_source": "EXACT_FINAL_HEAD_FROM_TASK182_R1_HANDOFF",
+  "expected_push_remote": "origin",
+  "expected_push_url": "https://github.com/Arvin-liu/when-systems-catch-fire.git",
+  "public_noreply_identity": {
+    "login": "Arvin-liu",
+    "email": "49422864+Arvin-liu@users.noreply.github.com"
+  },
+  "allowed_operation_class": "TASK_BRANCH_COMMIT_AND_PUSH",
+  "provisioning_boundary": "A Builder or Owner must create the real receipt from the active Task182-R2 command and exact final Task182-R1 head before the successor starts. This template is not an authorization receipt and must be rejected by the guard."
+}

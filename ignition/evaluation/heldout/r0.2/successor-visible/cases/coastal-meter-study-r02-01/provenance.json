@@ -1,0 +1,26 @@
+{
+  "case_id": "coastal-meter-study-r02-01",
+  "locators": [
+    {
+      "id": "scope",
+      "locator": "heading:Scope"
+    },
+    {
+      "id": "reported-observations",
+      "locator": "heading:Observations reported in the note"
+    },
+    {
+      "id": "author-boundary",
+      "locator": "heading:Boundary recorded by the author"
+    }
+  ],
+  "schema_version": "heldout-case-provenance-r0.2",
+  "source_bytes": 963,
+  "source_identity": {
+    "record_id": "NORTH-INLET-COMPARISON-NOTE-2026-04-12",
+    "source_kind": "BUILDER_AUTHORED_SYNTHETIC",
+    "source_path": "ignition/evaluation/heldout/r0.2/successor-visible/cases/coastal-meter-study-r02-01/raw-source.md"
+  },
+  "source_scope": "The synthetic note reports a limited set of paired readings, one visual observation, and explicit absences. It makes no causal or calibration finding.",
+  "source_sha256": "db80603f526043fa8b3a82600fb4772e1f24607342a4e64097a18bb2f395c818"
+}
