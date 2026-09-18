@@ -25,10 +25,13 @@ def main() -> int:
         "PLATFORM_CODE_EXCLUDED",
         "GENERATED_PROJECTION_EXCLUDED",
         "EVALUATION_EVIDENCE_ONLY",
+        "EXTERNAL_RESEARCH_EVIDENCE_ONLY",
         "HISTORICAL_PROVENANCE_ONLY",
     }
     if set(policy.get("classes", {})) != required_classes:
         raise SystemExit("admission policy class vocabulary drift")
+    if policy.get("schema_version") != "1.2.0":
+        raise SystemExit("admission policy schema version drift")
     assertions = {
         "runtime": admission_for_path("agent_runtime/r1_runtime.py").classification == "PLATFORM_CODE_EXCLUDED" and not admission_for_path("agent_runtime/r1_runtime.py").auto_discovery,
         "kernel": admission_for_path("agent_kernel/contracts.py").classification == "PLATFORM_CODE_EXCLUDED" and not admission_for_path("agent_kernel/contracts.py").auto_discovery,
@@ -37,6 +40,7 @@ def main() -> int:
         "explicit_docs": admission_for_path("docs/architecture/agent-runtime-r1.md").explicit and admission_for_path("docs/architecture/agent-runtime-r1.md").auto_discovery,
         "historical": admission_for_path("reports/operations/old-audit.md").classification == "HISTORICAL_PROVENANCE_ONLY" and admission_for_path("reports/operations/old-audit.md").provenance_only,
         "evaluation_evidence": admission_for_path("reports/evaluations/fixture/result.json").classification == "EVALUATION_EVIDENCE_ONLY" and admission_for_path("reports/evaluations/fixture/result.json").provenance_only and not admission_for_path("reports/evaluations/fixture/result.json").auto_discovery,
+        "task186_external_research": admission_for_path("reports/external-research/IGNITION-20260918-186/fixture-report.md").classification == "EXTERNAL_RESEARCH_EVIDENCE_ONLY" and admission_for_path("reports/external-research/IGNITION-20260918-186/fixture-report.md").provenance_only and not admission_for_path("reports/external-research/IGNITION-20260918-186/fixture-report.md").auto_discovery,
     }
     if not all(assertions.values()):
         raise SystemExit("admission policy path assertions failed: " + json.dumps(assertions, sort_keys=True))

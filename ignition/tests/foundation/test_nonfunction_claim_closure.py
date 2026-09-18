@@ -3,6 +3,7 @@ import json
 import subprocess
 import sys
 import unittest
+from unittest import mock
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -58,6 +59,41 @@ class NonFunctionClaimClosureTests(unittest.TestCase):
         fragments, status = self.adjudicator.text_fragments("STATE-CHANGELOG.md")
         self.assertIn(status, {"SCANNED_REGISTERED", "SCANNED_NO_CANDIDATE"})
         self.assertTrue(marked_lines.isdisjoint({fragment["line"] for fragment in fragments}))
+
+    def test_task186_research_and_evaluation_exclusions_are_recorded_before_source_reads(self):
+        fixture = json.loads((ROOT / "tests/foundation/fixtures/task186_research_surface_isolation.json").read_text(encoding="utf-8"))
+        cases = (
+            (fixture["external_research_report_path"], fixture["admission_classification"], fixture["nonfunction_coverage_status"]),
+            (fixture["evaluation_plane_fixture_path"], fixture["evaluation_admission_classification"], fixture["evaluation_nonfunction_coverage_status"]),
+        )
+        for path, expected_class, expected_status in cases:
+            admission = self.adjudicator.admission_for_path(path)
+            self.assertEqual(admission.classification, expected_class)
+            self.assertTrue(admission.provenance_only)
+            self.assertFalse(admission.auto_discovery)
+            with mock.patch.object(self.adjudicator, "repo_path", side_effect=AssertionError("excluded sources must not be opened")):
+                fragments, status = self.adjudicator.text_fragments(path)
+            self.assertEqual(fragments, [])
+            self.assertEqual(status, expected_status)
+
+        patches = (
+            mock.patch.object(self.adjudicator, "tracked_paths", return_value=[path for path, _, _ in cases]),
+            mock.patch.object(self.adjudicator, "load_jsonl", return_value=[]),
+            mock.patch.object(
+                self.adjudicator,
+                "repo_path",
+                side_effect=AssertionError("excluded sources must not be opened"),
+            ),
+        )
+        with patches[0], patches[1], patches[2]:
+            outputs = self.adjudicator.build()
+        rows = [json.loads(line) for line in outputs[self.adjudicator.OUT / "source-discovery.jsonl"].splitlines() if line.strip()]
+        by_path = {row["path"]: row for row in rows}
+        for path, _, expected_status in cases:
+            self.assertEqual(by_path[path]["coverage_status"], expected_status)
+            self.assertEqual(by_path[path]["exclusion_reason"], expected_status)
+            self.assertEqual(by_path[path]["candidate_fragments"], 0)
+            self.assertEqual(by_path[path]["canonical_claim_ids"], [])
 
 
 if __name__ == "__main__":

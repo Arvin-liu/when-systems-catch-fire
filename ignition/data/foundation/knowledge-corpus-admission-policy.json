@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "policy_id": "KNOWLEDGE_CORPUS_ADMISSION_R1",
   "default_classification": "KNOWLEDGE_SOURCE_ELIGIBLE",
   "classes": {
@@ -23,6 +23,11 @@
       "auto_discovery": false,
       "provenance_only": true,
       "meaning": "Evaluation-plane artifacts remain path-accounted and provenance-visible but cannot become automatic Knowledge or Foundation discovery inputs."
+    },
+    "EXTERNAL_RESEARCH_EVIDENCE_ONLY": {
+      "auto_discovery": false,
+      "provenance_only": true,
+      "meaning": "Task186 external research outputs remain human-readable, research-readable and path-accounted, but cannot become automatic Knowledge or Foundation discovery inputs."
     },
     "HISTORICAL_PROVENANCE_ONLY": {
       "auto_discovery": true,
@@ -97,6 +102,13 @@
         "docs/architecture/agent-platform-r2.md",
         "packs/knowledge/README.md"
       ]
+    },
+    {
+      "classification": "EXTERNAL_RESEARCH_EVIDENCE_ONLY",
+      "prefixes": [
+        "reports/external-research/IGNITION-20260918-186/"
+      ],
+      "exact_paths": []
     },
     {
       "classification": "HISTORICAL_PROVENANCE_ONLY",
