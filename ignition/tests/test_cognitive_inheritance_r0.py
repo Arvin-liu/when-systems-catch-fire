@@ -60,6 +60,8 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertTrue(is_allowed_changed_path("ignition/data/governance/human-results/result-ledger.jsonl"))
         self.assertFalse(is_allowed_changed_path("ignition/RESULTS/RESEARCH-AND-ARTICLES.md"))
         self.assertTrue(is_allowed_changed_path("ignition/data/governance/knowledge-experience/asset-cards.jsonl"))
+        self.assertTrue(is_allowed_changed_path("ignition/data/governance/knowledge-experience/config.json"))
+        self.assertTrue(is_allowed_changed_path("ignition/data/governance/knowledge-experience/coverage.json"))
         self.assertTrue(is_allowed_changed_path("ignition/data/governance/knowledge-experience/layered-reading.jsonl"))
         self.assertTrue(is_allowed_changed_path("ignition/data/governance/knowledge-experience/manifest.json"))
         self.assertTrue(is_allowed_changed_path("ignition/data/governance/knowledge-experience/search-index.jsonl"))
@@ -72,7 +74,8 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertFalse(is_allowed_changed_path("ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"))
         self.assertFalse(is_allowed_changed_path("ignition/data/architecture/current-system-identity.json"))
         self.assertTrue(is_allowed_changed_path("ignition/data/governance/self-correction/impact-analysis.jsonl"))
-        self.assertFalse(is_allowed_changed_path("ignition/data/governance/knowledge-experience/coverage.json"))
+        self.assertFalse(is_allowed_changed_path("ignition/data/governance/knowledge-experience/source-first-seen.json"))
+        self.assertFalse(is_allowed_changed_path("ignition/KNOWLEDGE/COVERAGE.md"))
         self.assertFalse(is_allowed_changed_path("ignition/data/publication/fire-seeds/CHANGELOG.jsonl"))
         self.assertFalse(is_allowed_changed_path("ignition/data/agent-federation/build-vs-integrate-policy-r1.json.bak"))
 

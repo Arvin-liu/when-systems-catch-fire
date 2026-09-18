@@ -71,6 +71,10 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/data/governance/human-results/census.json",
     "ignition/data/governance/human-results/result-ledger.jsonl",
     "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+    # Task187 evaluation reports are explicitly excluded from Knowledge
+    # Experience; allow the exact source policy and its generated coverage.
+    "ignition/data/governance/knowledge-experience/config.json",
+    "ignition/data/governance/knowledge-experience/coverage.json",
     "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
     "ignition/data/governance/knowledge-experience/manifest.json",
     "ignition/data/governance/knowledge-experience/search-index.jsonl",

@@ -9,6 +9,7 @@ from pathlib import Path
 IGNITION_ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = IGNITION_ROOT.parent
 sys.path.insert(0, str(IGNITION_ROOT / "tools" / "foundation"))
+sys.path.insert(0, str(IGNITION_ROOT))
 
 import validate_repository_path_classification as path_classification  # noqa: E402
 
@@ -62,6 +63,22 @@ class Task187R03EvaluationIsolationTests(unittest.TestCase):
         rule = next(row for row in policy["rules"] if row["classification"] == "EVALUATION_EVIDENCE_ONLY")
         self.assertEqual(set(rule["prefixes"]), {"evaluation/", "reports/evaluations/"})
 
+    def test_task187_reports_are_excluded_from_knowledge_experience(self) -> None:
+        report_sources = {
+            path.removeprefix("ignition/")
+            for path in task187_evaluation_paths()
+            if path.startswith("ignition/reports/evaluations/") and path.endswith(".md")
+        }
+        config_path = IGNITION_ROOT / "data/governance/knowledge-experience/config.json"
+        config = json.loads(config_path.read_text(encoding="utf-8"))
+        excluded = set(config["excluded_generated_result_sources"])
+        from tools.governance.build_knowledge_experience import knowledge_result_rows
+
+        knowledge_sources = {row["source"] for row in knowledge_result_rows(config)}
+        self.assertEqual(len(report_sources), 5)
+        self.assertTrue(report_sources.issubset(excluded))
+        self.assertTrue(report_sources.isdisjoint(knowledge_sources))
+
     def test_nonfunction_discovery_keeps_every_task187_path_excluded(self) -> None:
         discovery_path = IGNITION_ROOT / "data/foundation/nonfunction-claims/source-discovery.jsonl"
         discovery = {
@@ -78,16 +95,19 @@ class Task187R03EvaluationIsolationTests(unittest.TestCase):
                 self.assertEqual(row["candidate_fragments"], 0)
                 self.assertEqual(row["canonical_claim_ids"], [])
 
-    def test_task187_does_not_modify_canonical_candidate_or_publication_surfaces(self) -> None:
-        changed = subprocess.check_output(
+    def test_task187_does_not_promote_candidate_or_publication_content(self) -> None:
+        committed = subprocess.check_output(
             ["git", "diff", "--name-only", "047fb0ef0b4a734e42efb4a29b4e70b831ef0be4", "HEAD"],
             cwd=REPO_ROOT,
             text=True,
         ).splitlines()
+        working = subprocess.check_output(
+            ["git", "diff", "--name-only"], cwd=REPO_ROOT, text=True
+        ).splitlines()
+        changed = set(committed) | set(working)
         protected_prefixes = (
             "ignition/data/foundation/function-assets/",
             "ignition/KNOWLEDGE/",
-            "ignition/data/publication/fire-seeds/",
             "ignition/data/operations/current-state/",
         )
         derived_nonfunction_accounting = {
@@ -103,8 +123,50 @@ class Task187R03EvaluationIsolationTests(unittest.TestCase):
         ]
         self.assertFalse(
             [path for path in changed if path.startswith(protected_prefixes)] + changed_canonical_claim_paths,
-            "Task187 must not update canonical candidate or publication surfaces",
+            "Task187 must not update canonical candidate or publication content",
         )
+
+        fire_seed_census = "ignition/data/publication/fire-seeds/seed-census.json"
+        fire_seed_human = "ignition/PUBLICATIONS/pointfire-results-book/12-火种：点火跑出来的发现、问题与写作种子.md"
+        changed_fire_seed_paths = {
+            path for path in changed if path.startswith("ignition/data/publication/fire-seeds/")
+        }
+        self.assertLessEqual(changed_fire_seed_paths, {fire_seed_census})
+        self.assertNotIn(fire_seed_human, changed)
+
+        if fire_seed_census in changed:
+            baseline = json.loads(
+                subprocess.check_output(
+                    ["git", "show", f"047fb0ef0b4a734e42efb4a29b4e70b831ef0be4:{fire_seed_census}"],
+                    cwd=REPO_ROOT,
+                )
+            )
+            current = json.loads((REPO_ROOT / fire_seed_census).read_text(encoding="utf-8"))
+
+            def without_source_hashes(census: dict) -> dict:
+                normalized = json.loads(json.dumps(census))
+                for row in normalized["source_census"]:
+                    row.pop("source_sha256", None)
+                return normalized
+
+            self.assertEqual(without_source_hashes(current), without_source_hashes(baseline))
+            self.assertTrue(
+                {
+                    path.removeprefix("ignition/")
+                    for path in task187_evaluation_paths()
+                    if path.startswith("ignition/reports/evaluations/") and path.endswith(".md")
+                }.isdisjoint({row["source_path"] for row in current["source_census"]})
+            )
+            seed_sources = {
+                source for seed in current["seeds"] for source in seed["source_links"]
+            }
+            self.assertTrue(
+                {
+                    path.removeprefix("ignition/")
+                    for path in task187_evaluation_paths()
+                    if path.startswith("ignition/reports/evaluations/") and path.endswith(".md")
+                }.isdisjoint(seed_sources)
+            )
 
 
 if __name__ == "__main__":
