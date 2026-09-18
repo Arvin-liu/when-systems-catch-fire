@@ -3291,6 +3291,7 @@
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-187-r0-3-protocol-repair/packet-manifest-r0.3.sha256"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-187-r0-3-protocol-repair/r0-2-invalid-reproduction.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-187-r0-3-protocol-repair/r0-2-invalid-reproduction.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-187-r0-3-protocol-repair/r0-3-trial-handoff.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-187-r0-3-protocol-repair/task182-r2-failure-receipt-r0.2.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-187-r0-3-protocol-repair/task182-r2-failure-receipt-r0.2.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/104-dual-088-reconciliation.md"}
