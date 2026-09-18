@@ -87,6 +87,7 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/data/architecture/current-facts.json",
     "ignition/data/governance/self-correction/claim-delta.jsonl",
     "ignition/data/governance/self-correction/impact-analysis.jsonl",
+    "ignition/data/governance/self-correction/audit-findings.jsonl",
     "ignition/data/governance/self-correction/history.jsonl",
     "ignition/data/governance/self-correction/summary.json",
     "ignition/RESULTS/CLAIM-DELTA.md",
