@@ -3286,6 +3286,7 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/atlas/maps/map-epistemic-architecture.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/atlas/maps/map-maintainer-sustainability-economics.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-182-protocol-repair-r1/task182-contamination-adjudication.json"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-187-r0-3-protocol-repair/complexity-budget.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-187-r0-3-protocol-repair/evaluation-plane-isolation-fixed-point.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-187-r0-3-protocol-repair/packet-manifest-r0.3.sha256"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-187-r0-3-protocol-repair/r0-2-invalid-reproduction.json"}
