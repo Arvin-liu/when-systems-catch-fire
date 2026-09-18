@@ -40,6 +40,9 @@ ALLOWED_CHANGED_PREFIXES = (
     # Keep it eligible as auditable task output without admitting it to R0.
     "ignition/evaluation/",
     "ignition/reports/evaluations/",
+    # Task185's internal archaeology bundle is research-only; keep this exact
+    # iteration subtree auditable without opening the R0 canonical allowlist.
+    "ignition/data/operations/iterations/185/research/",
 )
 ALLOWED_CHANGED_FILES = frozenset({
     "ignition/tools/validate_cognitive_inheritance_r0.py",
@@ -77,6 +80,11 @@ ALLOWED_CHANGED_FILES = frozenset({
     ".github/workflows/q33-governance-validation.yml",
     "ignition/data/agent-federation/build-vs-integrate-policy-r1.json",
     "ignition/tests/test_federation_ownership.py",
+    # Exact helper/test paths for Task185's research-surface discovery guard.
+    "ignition/tests/foundation/test_function_asset_closure.py",
+    "ignition/tests/foundation/test_nonfunction_claim_closure.py",
+    "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
+    "ignition/tools/foundation/build_function_asset_census.py",
 })
 
 

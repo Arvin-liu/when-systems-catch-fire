@@ -93,6 +93,10 @@ This is recorded as `RESEARCH_SURFACE_DISCOVERY_LEAK`: Task185 research paths af
 
 The full nonfunction closure suite passed 7/7 after regeneration. The local FunctionAsset suite passed its five non-lineage checks, including both generator determinism checks and the new Task185 path exclusion test; its closure validator could not complete because the partial clone could not lazily fetch a historical promisor blob over the current GitHub TLS connection. That local infrastructure failure is not treated as a pass; final exact-head CI remains the decisive full-history validation.
 
+The next exact-head run at `2445b0fd991b70b959af9760b584d30bd2c5a2b3` passed the Foundation generator, function-asset closure, and nonfunction closure checks, then failed only at the inherited R0 validator's changed-path gate. A local invocation reproduced `R0 changed protected or out-of-scope paths`; the rejected set was exactly the 23 Task185 research files plus the two regression-test paths and two generator paths from the bounded repair. R0's schema, source-binding, and Foundation-discovery checks had passed before this final gate. The second bounded repair adds only `iterations/185/research/` and those four exact support paths to that noncanonical changed-path allowlist, with tests that a neighboring Task185 subtree and canonical claim paths remain rejected. This preserves the R0 data/evidence authority boundary while allowing this explicitly research-only branch surface; the final exact-head CI remains pending.
+
+After that allowlist change, the local R0 mechanical validator passed (`foundation_canonical_mutation=NONE`, `independent_evaluation=NOT_RUN`, 28 scoped discovery paths, zero candidate fragments/claim IDs), and its exact-allowlist regression passed. These local results do not substitute for final exact-head CI.
+
 ## Handoff and explicit ceilings
 
 `NO_CANONICAL_PROMOTION_PERFORMED`
