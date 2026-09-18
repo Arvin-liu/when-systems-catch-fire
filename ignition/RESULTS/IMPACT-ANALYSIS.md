@@ -115,7 +115,6 @@
 |`docs/foundation/logic/README.md`|7|0|否|
 |`docs/foundation/mathematics/README.md`|6|0|否|
 |`docs/foundation/migration.md`|0|0|是|
-|`docs/foundation/nonfunction-claim-adjudication-index.md`|0|0|是|
 |`docs/foundation/physics-asset-correction-20260729.md`|15|0|否|
 |`docs/foundation/public-claim-ceiling-guidance.md`|3|0|否|
 |`docs/foundation/registry-contract.md`|2|0|否|

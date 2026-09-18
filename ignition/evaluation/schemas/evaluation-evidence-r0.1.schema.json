@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evaluation/schemas/evaluation-evidence-r0.1.schema.json",
+  "title": "Evaluation Evidence R0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "artifact_id",
+    "artifact_kind",
+    "task_id",
+    "source",
+    "status",
+    "promotion",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {"const": "evaluation-evidence-r0.1"},
+    "artifact_id": {"type": "string", "minLength": 1},
+    "artifact_kind": {
+      "enum": [
+        "EVALUATION_RESULT",
+        "EVALUATOR_METHOD",
+        "BLIND_CHECKPOINT",
+        "CONTAMINATION_DISCLOSURE",
+        "ADJUDICATION_RECEIPT",
+        "HELD_OUT_SUCCESSOR_RESULT"
+      ]
+    },
+    "task_id": {"type": "string", "minLength": 1},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repository", "ref", "path", "sha256"],
+      "properties": {
+        "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+        "ref": {"type": "string", "minLength": 1},
+        "path": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "git_blob_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"}
+      }
+    },
+    "status": {"type": "string", "minLength": 1},
+    "promotion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["automatic", "state", "canonicalized"],
+      "properties": {
+        "automatic": {"const": false},
+        "state": {"enum": ["NO_AUTOMATIC_PROMOTION", "ADJUDICATION_CANDIDATE_ONLY"]},
+        "canonicalized": {"const": false}
+      }
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["repository", "ref", "path", "git_blob_sha", "sha256", "role"],
+        "properties": {
+          "repository": {"const": "Arvin-liu/when-systems-catch-fire"},
+          "ref": {"type": "string", "minLength": 1},
+          "path": {"type": "string", "minLength": 1},
+          "git_blob_sha": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "role": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "finding_summary": {"type": "object"},
+    "authority_summary": {"type": "object"},
+    "ci_snapshot": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["workflow", "run_id", "conclusion"],
+        "properties": {
+          "workflow": {"type": "string", "minLength": 1},
+          "run_id": {"type": "integer", "minimum": 1},
+          "conclusion": {"enum": ["SUCCESS", "FAILURE", "CANCELLED", "SKIPPED", "UNAVAILABLE"]}
+        }
+      }
+    }
+  }
+}

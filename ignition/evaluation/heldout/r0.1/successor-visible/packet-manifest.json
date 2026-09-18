@@ -1,0 +1,77 @@
+{
+  "files": [
+    {
+      "bytes": 1434,
+      "path": "ignition/evaluation/evaluation-plane-contract-r0.1.json",
+      "sha256": "0e4ffa29f2a48cebb6ac7e8d6095091cc3e71cf4bb244c92654f0621e68507fa"
+    },
+    {
+      "bytes": 1087,
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/README.md",
+      "sha256": "25a424466383fdf0bf23d8896dba03d886f7c91ecb9a676a6d05071624269005"
+    },
+    {
+      "bytes": 755,
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/bootstrap.md",
+      "sha256": "627a8e0e8fa1917471b4386de16fc0982adf4d3399771e31c289af242ea08179"
+    },
+    {
+      "bytes": 729,
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/provenance.json",
+      "sha256": "010f6d41a86b00e2e94009fa1c9a84d045f733d3ec423d26fd87a0371ae0f375"
+    },
+    {
+      "bytes": 2087,
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/cases/content-research-01/raw-source-excerpt.md",
+      "sha256": "71c41b99518dcfe6feab12a84e7411806b18a9c65f6ab47d4ba012ed74205d9a"
+    },
+    {
+      "bytes": 674,
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/provenance.json",
+      "sha256": "e75828e421970014cb8c6c978e01d100eaf2fadc4a4a155766f42bb301bee5b2"
+    },
+    {
+      "bytes": 569,
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/cases/engineering-governance-01/raw-contract.json",
+      "sha256": "574ff4d65923dd956323fbb048c995318c31c7c7ffaafdc641b57f18d0d095fb"
+    },
+    {
+      "bytes": 886,
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/method-contract.md",
+      "sha256": "3e0eda9527514a0f8b41c8f5ea2f8606b8c4dba3833463a2f31b53c86686af69"
+    },
+    {
+      "bytes": 1023,
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/provider-neutral-capability-interface.json",
+      "sha256": "de71802414f8a04bfd33d1440d26d806173cbc2579e05f882af817e650ee37e6"
+    },
+    {
+      "bytes": 2989,
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+      "sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+    },
+    {
+      "bytes": 1276,
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/task-contract.md",
+      "sha256": "0c6eec951b0103aa1bafb110dcb46b5c7a20cb139842b86ab1c51b580a2505d2"
+    },
+    {
+      "bytes": 2994,
+      "path": "ignition/evaluation/schemas/evaluation-evidence-r0.1.schema.json",
+      "sha256": "f605b03cf9fd2d572a7c078487dd18c09bb8a3d56fd13c0e9aaaa0e324c964c7"
+    },
+    {
+      "bytes": 1286,
+      "path": "ignition/evaluation/schemas/evaluation-promotion-transition-r0.1.schema.json",
+      "sha256": "4d9296caf83bf4cd544772888569e583ae61761116b50c67c4c401cdd542b91e"
+    },
+    {
+      "bytes": 1114,
+      "path": "ignition/evaluation/schemas/successor-read-ledger-r0.1.schema.json",
+      "sha256": "9998a01d501681912864678c9926184200246f6f118bcc5bf89b962ca2d05597"
+    }
+  ],
+  "isolation_kind": "PROCEDURAL_ALLOWLIST_NOT_CRYPTOGRAPHIC_SECRECY",
+  "schema_version": "heldout-successor-packet-manifest-r0.1",
+  "task_id": "IGNITION-20260917-182"
+}
