@@ -40,6 +40,9 @@ ALLOWED_CHANGED_PREFIXES = (
     # Keep it eligible as auditable task output without admitting it to R0.
     "ignition/evaluation/",
     "ignition/reports/evaluations/",
+    # Task186's pinned research bundle remains auditable; its typed admission
+    # class keeps it outside canonical discovery.
+    "ignition/reports/external-research/IGNITION-20260918-186/",
 )
 ALLOWED_CHANGED_FILES = frozenset({
     "ignition/tools/validate_cognitive_inheritance_r0.py",
@@ -47,6 +50,11 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/tests/test_target_repository_preflight_r0_1.py",
     "ignition/tests/test_evaluation_plane_r0_1.py",
     "ignition/tests/test_knowledge_corpus_admission.py",
+    "ignition/tests/foundation/fixtures/task186_research_surface_isolation.json",
+    "ignition/tests/foundation/test_claim_governance.py",
+    "ignition/tests/foundation/test_nonfunction_claim_closure.py",
+    "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
+    "ignition/tools/research/validate_task186_external_research_bundle.py",
     "ignition/tools/foundation/validate_repository_path_classification.py",
     "ignition/tools/validate_knowledge_corpus_admission.py",
     "ignition/tools/governance/run_self_correction.py",
@@ -230,7 +238,7 @@ def validate_foundation_discovery_boundary(root: Path, r0: Path) -> int:
 
 
 def is_allowed_changed_path(path: str) -> bool:
-    """Keep R0 changes bounded while recognizing the typed evaluation surface."""
+    """Keep R0 changes bounded while recognizing typed task evidence surfaces."""
     return path in ALLOWED_CHANGED_FILES or path.startswith(ALLOWED_CHANGED_PREFIXES)
 
 
