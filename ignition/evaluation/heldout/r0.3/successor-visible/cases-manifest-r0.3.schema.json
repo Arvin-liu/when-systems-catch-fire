@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/evaluation/heldout/r0.3/successor-visible/cases-manifest-r0.3.schema.json",
+  "title": "R0.3 Synthetic Held-Out Case Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "authoring_task_id", "successor_trial_task_id", "case_set_id", "provenance_policy", "case_count", "cases"],
+  "properties": {
+    "schema_version": {"const": "heldout-successor-case-manifest-r0.3"},
+    "authoring_task_id": {"const": "IGNITION-20260918-187"},
+    "successor_trial_task_id": {"const": "IGNITION-20260918-182-R3"},
+    "case_set_id": {"const": "IGNITION-20260918-187-R0.3-HELDOUT-CASES"},
+    "provenance_policy": {"type": "string", "minLength": 1},
+    "case_count": {"const": 2},
+    "cases": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {"$ref": "#/$defs/case"},
+      "uniqueItems": true
+    }
+  },
+  "$defs": {
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["case_id", "category", "source_path", "source_sha256", "provenance_path", "provenance_sha256", "source_kind", "synthetic", "real_personal_data_used", "contains_gold_ir", "contains_expected_relations", "contains_expected_continuation", "contains_evaluator_answer"],
+      "properties": {
+        "case_id": {"enum": ["IGNITION-20260918-187-EXP-01", "IGNITION-20260918-187-GOV-01"]},
+        "category": {"enum": ["CONTENT_EXPERIENCE_RESEARCH", "ENGINEERING_GOVERNANCE"]},
+        "source_path": {"type": "string", "pattern": "^ignition/evaluation/heldout/r0\\.3/successor-visible/cases/[^/]+\\.md$"},
+        "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "provenance_path": {"type": "string", "pattern": "^ignition/evaluation/heldout/r0\\.3/successor-visible/cases/provenance/[^/]+\\.json$"},
+        "provenance_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "source_kind": {"const": "ORIGINAL_SYNTHETIC_AUTHORING"},
+        "synthetic": {"const": true},
+        "real_personal_data_used": {"const": false},
+        "contains_gold_ir": {"const": false},
+        "contains_expected_relations": {"const": false},
+        "contains_expected_continuation": {"const": false},
+        "contains_evaluator_answer": {"const": false}
+      }
+    }
+  }
+}
