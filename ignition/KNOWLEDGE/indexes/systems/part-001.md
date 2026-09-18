@@ -1659,6 +1659,11 @@
   - 可搜索名称：NFC-2c2e837c6ae506b9 / Answer: no. The repository contains many local causal components, downgrade gates, map boundaries, mechanism adjudicatio
   - 来源：`reports/architecture/121Q21R-causal-asset-audit.md`
   - 依赖：—；被引用：—
+- [Anti-accumulation mechanisms and their limits](../../ASSET-CARDS.md#asset-hr-8ee247e92588e8a3)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Anti-accumulation mechanisms and their limits / anti-accumulation-report
+  - 来源：`reports/external-research/IGNITION-20260918-186/anti-accumulation-report.md`
+  - 依赖：—；被引用：—
 - [AO\[Action / iteration / mechanism overlays\]](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-5c6c3a7fcf9edc2d / AO\[Action / iteration / mechanism overlays\]
@@ -2497,10 +2502,5 @@
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M01 / data/external-research/088-external-source-atlas-medium.jsonl / M01 / M02
-  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
-  - 依赖：—；被引用：—
-- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：M02 / data/external-research/088-external-source-atlas-medium.jsonl / M02 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—

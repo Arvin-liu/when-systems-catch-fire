@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-80C4CA8ED525C020 / 中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ / IMPLICIT-80C4CA8ED525C020
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-57E4B558EB78D577 / 中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) / IMPLICIT-57E4B558EB78D577 / IMPLICIT-F3383A2BBF7459EC

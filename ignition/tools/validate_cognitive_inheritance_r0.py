@@ -43,6 +43,11 @@ ALLOWED_CHANGED_PREFIXES = (
     # Task186's pinned research bundle remains auditable; its typed admission
     # class keeps it outside canonical discovery.
     "ignition/reports/external-research/IGNITION-20260918-186/",
+    # These nested Knowledge pages are generated shards. An additional
+    # HUMAN_INDEX_ONLY research result can shift their deterministic partitions.
+    "ignition/KNOWLEDGE/cards/",
+    "ignition/KNOWLEDGE/indexes/",
+    "ignition/KNOWLEDGE/reading-layers/",
 )
 ALLOWED_CHANGED_FILES = frozenset({
     "ignition/tools/validate_cognitive_inheritance_r0.py",
@@ -55,6 +60,19 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/tests/foundation/test_nonfunction_claim_closure.py",
     "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
     "ignition/tools/research/validate_task186_external_research_bundle.py",
+    "ignition/RESULTS/CHRONOLOGY.md",
+    "ignition/KNOWLEDGE/ASSET-CARDS.md",
+    "ignition/KNOWLEDGE/COVERAGE.md",
+    "ignition/KNOWLEDGE/MAP.md",
+    "ignition/KNOWLEDGE/READING-LAYERS.md",
+    "ignition/KNOWLEDGE/README.md",
+    "ignition/KNOWLEDGE/SEARCH.md",
+    "ignition/KNOWLEDGE/WHATS-NEW.md",
+    "ignition/data/governance/human-results/census.json",
+    "ignition/data/governance/human-results/result-ledger.jsonl",
+    "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+    "ignition/data/governance/knowledge-experience/changes.jsonl",
+    "ignition/data/governance/knowledge-experience/coverage.json",
     "ignition/tools/foundation/validate_repository_path_classification.py",
     "ignition/tools/validate_knowledge_corpus_admission.py",
     "ignition/tools/governance/run_self_correction.py",
