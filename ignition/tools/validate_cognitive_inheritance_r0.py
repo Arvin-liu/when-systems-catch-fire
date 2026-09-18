@@ -75,6 +75,9 @@ ALLOWED_CHANGED_FILES = frozenset({
     # Experience; allow the exact source policy and its generated coverage.
     "ignition/data/governance/knowledge-experience/config.json",
     "ignition/data/governance/knowledge-experience/coverage.json",
+    # This provenance-only map still covers every human-results ledger source;
+    # Task187 evaluation reports remain excluded from Knowledge Experience.
+    "ignition/data/governance/knowledge-experience/source-first-seen.json",
     "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
     "ignition/data/governance/knowledge-experience/manifest.json",
     "ignition/data/governance/knowledge-experience/search-index.jsonl",

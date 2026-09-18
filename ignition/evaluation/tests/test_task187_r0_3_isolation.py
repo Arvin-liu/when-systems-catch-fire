@@ -79,6 +79,25 @@ class Task187R03EvaluationIsolationTests(unittest.TestCase):
         self.assertTrue(report_sources.issubset(excluded))
         self.assertTrue(report_sources.isdisjoint(knowledge_sources))
 
+        # The Task102 map tracks every human-results ledger source for
+        # clone-independent dates; these reports remain excluded from the
+        # generated Knowledge Experience content products.
+        first_seen_path = IGNITION_ROOT / "data/governance/knowledge-experience/source-first-seen.json"
+        first_seen = json.loads(first_seen_path.read_text(encoding="utf-8"))["entries"]
+        self.assertTrue(report_sources.issubset(first_seen))
+        for relative_path in (
+            "data/governance/knowledge-experience/asset-cards.jsonl",
+            "data/governance/knowledge-experience/layered-reading.jsonl",
+            "data/governance/knowledge-experience/search-index.jsonl",
+        ):
+            rows = [
+                json.loads(line)
+                for line in (IGNITION_ROOT / relative_path).read_text(encoding="utf-8").splitlines()
+                if line.strip()
+            ]
+            generated_sources = {row.get("canonical_source") for row in rows}
+            self.assertTrue(report_sources.isdisjoint(generated_sources), relative_path)
+
     def test_nonfunction_discovery_keeps_every_task187_path_excluded(self) -> None:
         discovery_path = IGNITION_ROOT / "data/foundation/nonfunction-claims/source-discovery.jsonl"
         discovery = {
