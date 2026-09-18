@@ -65,6 +65,11 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/data/governance/self-correction/summary.json",
     "ignition/RESULTS/CLAIM-DELTA.md",
     "ignition/RESULTS/IMPACT-ANALYSIS.md",
+    # These are deterministic, navigation-only products over reports; their
+    # records retain the HUMAN_INDEX_ONLY disposition and do not change R0.
+    "ignition/RESULTS/CHRONOLOGY.md",
+    "ignition/data/governance/human-results/census.json",
+    "ignition/data/governance/human-results/result-ledger.jsonl",
     "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
     "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
     "ignition/data/governance/knowledge-experience/manifest.json",
