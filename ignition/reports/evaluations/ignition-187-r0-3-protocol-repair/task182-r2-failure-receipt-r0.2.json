@@ -1,0 +1,39 @@
+{
+  "schema_version": "ignition-187-task182-r2-failure-receipt-r0.1",
+  "authoring_task_id": "IGNITION-20260918-187",
+  "subject_task_id": "IGNITION-20260918-182-R2",
+  "authority": {
+    "source_repository_full_name": "Arvin-liu/1111",
+    "source_path": "agent-commands/IGNITION-20260918-187.md",
+    "source_ref": "main",
+    "source_blob_sha": "92d0719c2c9d25f4d51c97f62fecd4fa87c37a6c"
+  },
+  "evidence_scope": "OWNER_GPT_MINIMUM_FAILURE_SUMMARY_ONLY",
+  "private_case_records_opened": false,
+  "private_read_ledger_opened": false,
+  "private_packet_manifest_opened": false,
+  "supplied_facts": {
+    "manifest_sha256": "MATCHED",
+    "authorization_guard_install": "SUCCEEDED",
+    "authorization_guard_check": "SUCCEEDED",
+    "first_commit_guard": "FAIL_UNEXPLAINED_WORKTREE",
+    "staging_three_specified_evidence_items_then_commit_guard": "SUCCEEDED",
+    "successor_records_schema": "PASS",
+    "read_ledger_schema": "PASS",
+    "manifest_listed_read_ledger_validator": "FAIL_READ_LEDGER_INVALID",
+    "protocol_contaminated_flag": false,
+    "commit_created": false,
+    "push_performed": false,
+    "pull_request_created": false
+  },
+  "trial_disposition": "NOT_COMPLETED",
+  "root_cause_classification": {
+    "R0_2_IMPLEMENTATION_BUG": "NOT_DEMONSTRATED_BY_SYNTHETIC_REPRODUCTION",
+    "R0_2_PROTOCOL_SELF_REFERENCE": "REPRODUCED_CONDITIONALLY_IF_FINAL_VALIDATOR_INVOCATION_AND_STATUS_MUST_BE_IN_CERTIFIED_LEDGER",
+    "SUCCESSOR_BOOKKEEPING_ERROR": "NOT_ESTABLISHED_WITHOUT_PRIVATE_LEDGER",
+    "UNRESOLVED_WITHOUT_PRIVATE_LEDGER": "RETAINED_FOR_THE_ACTUAL_TASK182_R2_INVALID_RESULT"
+  },
+  "synthetic_protocol_self_reference": "REPRODUCED_CONDITIONALLY_IF_FINAL_VALIDATOR_INVOCATION_AND_STATUS_MUST_BE_IN_CERTIFIED_LEDGER",
+  "actual_private_ledger_root_cause": "UNRESOLVED_WITHOUT_PRIVATE_LEDGER",
+  "inheritance_evidence": "NO_INHERITANCE_EVIDENCE_ADMITTED_FROM_FAILED_R0_2_TRIAL"
+}

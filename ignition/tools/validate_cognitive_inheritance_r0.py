@@ -65,7 +65,19 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/data/governance/self-correction/summary.json",
     "ignition/RESULTS/CLAIM-DELTA.md",
     "ignition/RESULTS/IMPACT-ANALYSIS.md",
+    # These are deterministic, navigation-only products over reports; their
+    # records retain the HUMAN_INDEX_ONLY disposition and do not change R0.
+    "ignition/RESULTS/CHRONOLOGY.md",
+    "ignition/data/governance/human-results/census.json",
+    "ignition/data/governance/human-results/result-ledger.jsonl",
     "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+    # Task187 evaluation reports are explicitly excluded from Knowledge
+    # Experience; allow the exact source policy and its generated coverage.
+    "ignition/data/governance/knowledge-experience/config.json",
+    "ignition/data/governance/knowledge-experience/coverage.json",
+    # This provenance-only map still covers every human-results ledger source;
+    # Task187 evaluation reports remain excluded from Knowledge Experience.
+    "ignition/data/governance/knowledge-experience/source-first-seen.json",
     "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
     "ignition/data/governance/knowledge-experience/manifest.json",
     "ignition/data/governance/knowledge-experience/search-index.jsonl",

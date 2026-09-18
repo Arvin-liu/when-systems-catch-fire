@@ -2,6 +2,11 @@
   "claim_ceiling": "Repository navigation, source-faithful summary and governance projection only; no truth, proof, evidence, maturity or lifecycle upgrade.",
   "excluded_generated_result_sources": [
     "docs/architecture/current-facts.md",
+    "reports/evaluations/ignition-187-r0-3-protocol-repair/complexity-budget.md",
+    "reports/evaluations/ignition-187-r0-3-protocol-repair/evaluation-plane-isolation-fixed-point.md",
+    "reports/evaluations/ignition-187-r0-3-protocol-repair/r0-2-invalid-reproduction.md",
+    "reports/evaluations/ignition-187-r0-3-protocol-repair/r0-3-trial-handoff.md",
+    "reports/evaluations/ignition-187-r0-3-protocol-repair/task182-r2-failure-receipt-r0.2.md",
     "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "excluded_timeline_asset_ids": [

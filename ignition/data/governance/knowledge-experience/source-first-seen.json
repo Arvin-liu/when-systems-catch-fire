@@ -280,6 +280,11 @@
     "reports/atlas/maps/map-agent-delivery-operations.md": "2026-07-15",
     "reports/atlas/maps/map-epistemic-architecture.md": "2026-07-15",
     "reports/atlas/maps/map-maintainer-sustainability-economics.md": "2026-07-15",
+    "reports/evaluations/ignition-187-r0-3-protocol-repair/complexity-budget.md": "2026-09-19",
+    "reports/evaluations/ignition-187-r0-3-protocol-repair/evaluation-plane-isolation-fixed-point.md": "2026-09-19",
+    "reports/evaluations/ignition-187-r0-3-protocol-repair/r0-2-invalid-reproduction.md": "2026-09-18",
+    "reports/evaluations/ignition-187-r0-3-protocol-repair/r0-3-trial-handoff.md": "2026-09-19",
+    "reports/evaluations/ignition-187-r0-3-protocol-repair/task182-r2-failure-receipt-r0.2.md": "2026-09-19",
     "reports/external-research/104-dual-088-reconciliation.md": "2026-07-13",
     "reports/external-research/104-gap-patch-evidence-readiness.md": "2026-07-13",
     "reports/external-research/104-source-quality-audit.md": "2026-07-13",
@@ -616,7 +621,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 614,
+  "entry_count": 619,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }
