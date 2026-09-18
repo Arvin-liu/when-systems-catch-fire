@@ -1,0 +1,815 @@
+{
+  "schema_version": "ignition-task185-source-universe-r0",
+  "task": "IGNITION-20260918-185",
+  "step": "Step00",
+  "observed_at_utc": "2026-09-18 09:54:35 UTC",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "control_repository": "Arvin-liu/1111",
+  "commands": [
+    {
+      "path": "agent-commands/IGNITION-20260918-185-R1.md",
+      "ref": "main",
+      "blob_sha": "7a194d3895c6b9a50b27ecbec17f15a33b1f4223",
+      "role": "recovery procedure"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260918-185.md",
+      "ref": "main",
+      "blob_sha": "215e00b1c9fd15d83506c13930d54be0ea70995f",
+      "role": "research scope and steps"
+    }
+  ],
+  "anchor": {
+    "task181_exact_head": "7cab7541895620d68d5bce2d16c46871ebd03ac0",
+    "exact_tree_sha": "7e5cedd3c571d3d05fa51355c83848ebf1dadbcb",
+    "task181_pr": 221,
+    "task185_branch": "research/IGNITION-20260918-185-cognitive-architecture-archaeology-gap-map",
+    "task185_pr": 224,
+    "task185_initial_head": "7cab7541895620d68d5bce2d16c46871ebd03ac0",
+    "task185_pr_state": {
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    "task185_base_branch": "work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0",
+    "task185_base_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+  },
+  "history_scope": {
+    "meaning": "Commits reachable from the frozen Task181 exact head only; no unrelated concurrent branch histories fetched.",
+    "reachable_commit_count": 2278,
+    "oldest_reachable_commit": {
+      "sha": "df7e9fad699b3b777ca414a83f04a77b49743c6c",
+      "date": "2026-06-04",
+      "subject": "Initial commit"
+    },
+    "exact_head_commit": {
+      "sha": "7cab7541895620d68d5bce2d16c46871ebd03ac0",
+      "date": "2026-09-17",
+      "subject": "docs(task181): finalize held-out successor handoff"
+    },
+    "shallow": false
+  },
+  "related_pr_branches": [
+    {
+      "task": "Task172",
+      "pr": 218,
+      "state": "open",
+      "draft": true,
+      "base": "main",
+      "base_sha": "428d1885d0cb3de40ed492dbf028708ea0129c00",
+      "head": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+      "head_sha": "68565f2afb50989d2c2b0d346d774e3388702743"
+    },
+    {
+      "task": "Task179",
+      "pr": 219,
+      "state": "open",
+      "draft": true,
+      "base": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+      "base_sha": "68565f2afb50989d2c2b0d346d774e3388702743",
+      "head": "work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0",
+      "head_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540"
+    },
+    {
+      "task": "Task180",
+      "pr": 220,
+      "state": "open",
+      "draft": true,
+      "base": "work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0",
+      "base_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+      "head": "eval/IGNITION-20260917-180-cognitive-inheritance-r0-independent-evaluation",
+      "head_sha": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06"
+    },
+    {
+      "task": "Task181",
+      "pr": 221,
+      "state": "open",
+      "draft": true,
+      "base": "work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0",
+      "base_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+      "head": "work/IGNITION-20260917-181-cognitive-inheritance-r0-1-isolation-protocol",
+      "head_sha": "7cab7541895620d68d5bce2d16c46871ebd03ac0"
+    },
+    {
+      "task": "Task185",
+      "pr": 224,
+      "state": "open",
+      "draft": true,
+      "base": "work/IGNITION-20260916-179-cognitive-inheritance-evolution-r0",
+      "base_sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+      "head": "research/IGNITION-20260918-185-cognitive-architecture-archaeology-gap-map",
+      "head_sha": "7cab7541895620d68d5bce2d16c46871ebd03ac0"
+    }
+  ],
+  "selected_commit_refs": [
+    {
+      "task": "Task172",
+      "sha": "8d4e359a9fdd36e8da136bd4e406aab81f65b803",
+      "date": "2026-09-12",
+      "subject": "task172 step00: freeze baseline and input provenance"
+    },
+    {
+      "task": "Task172",
+      "sha": "05e0278ecab7a0f90952ce5f29e5262a702b8e24",
+      "date": "2026-09-15",
+      "subject": "implement task172 step07 routing index"
+    },
+    {
+      "task": "Task172-closeout",
+      "sha": "aad39dcedcd11c8bfdc5d5fa99805222372a794f",
+      "date": "2026-09-16",
+      "subject": "IGNITION-20260915-178: close Task172 baseline"
+    },
+    {
+      "task": "Task179",
+      "sha": "43b3ca8a573ff8d43d49c1f84cb706f47b4fbdb4",
+      "date": "2026-09-16",
+      "subject": "docs: add cognitive inheritance R0 architecture crosswalk"
+    },
+    {
+      "task": "Task179",
+      "sha": "861e77b1a1d62f7c37a0aa663ea249c1fa210cce",
+      "date": "2026-09-17",
+      "subject": "feat: add cognitive inheritance R0 contracts"
+    },
+    {
+      "task": "Task179",
+      "sha": "12e133c6d58a5e22437e42bb75fd912607bb4540",
+      "date": "2026-09-17",
+      "subject": "Task179 exact head"
+    },
+    {
+      "task": "Task180",
+      "sha": "81c8ccc48d9db9a2932f178e2cc3cf32bcd26a06",
+      "date": "2026-09-17",
+      "subject": "PR #220 independent-evaluation head; no evaluator data is reproduced"
+    },
+    {
+      "task": "Task181",
+      "sha": "b3df6c8cfbe3264c72d956058c3ba3d2d1f650f2",
+      "date": "2026-09-17",
+      "subject": "isolate cognitive inheritance evaluation plane"
+    },
+    {
+      "task": "Task181",
+      "sha": "8f495b3aed76d22701cf4e3bc2fd4bcbf96704f1",
+      "date": "2026-09-17",
+      "subject": "align generated results allowlist paths"
+    },
+    {
+      "task": "Task181",
+      "sha": "7cab7541895620d68d5bce2d16c46871ebd03ac0",
+      "date": "2026-09-17",
+      "subject": "finalize held-out successor handoff"
+    }
+  ],
+  "tree_snapshot": {
+    "tracked_path_count": 4632,
+    "nonheldout_path_count": 4617,
+    "directory_counts": {
+      "ignition/data/foundation": 136,
+      "ignition/data/governance": 39,
+      "ignition/data/architecture": 82,
+      "ignition/data/research": 326,
+      "ignition/docs": 321,
+      "ignition/tools": 377,
+      "ignition/tests": 352,
+      "ignition/evaluation_outside_heldout": 13,
+      "ignition/agent_runtime": 72,
+      "ignition/reports": 384
+    },
+    "method": "git ls-tree path metadata; held-out subtree excluded from the per-directory snapshot. No held-out payload, gold, or evaluator-sealed file content was opened."
+  },
+  "keyword_discovery": {
+    "original_families": [
+      "cognition / cognitive",
+      "epistemic",
+      "structural induction",
+      "metacognition",
+      "decision integrity",
+      "analogy / transportability",
+      "failure memory",
+      "anomaly",
+      "counterfactual",
+      "evidence",
+      "observation",
+      "reasoning",
+      "self-correction",
+      "knowledge experience",
+      "routing",
+      "capability",
+      "inheritance",
+      "evolution",
+      "reflection",
+      "world feedback",
+      "obligation",
+      "boundary",
+      "provenance"
+    ],
+    "searched_terms": [
+      "cognit",
+      "epistem",
+      "induct",
+      "metacogn",
+      "decision",
+      "analogy",
+      "transport",
+      "failure",
+      "anomal",
+      "counterfactual",
+      "eviden",
+      "observ",
+      "reason",
+      "self-correct",
+      "knowledge",
+      "rout",
+      "capability",
+      "inherit",
+      "evolut",
+      "reflect",
+      "feedback",
+      "obligation",
+      "boundary",
+      "provenance",
+      "agent",
+      "orchestrat"
+    ],
+    "commit_subject_matches": 442,
+    "method": "case-insensitive extended-regex matching over commit subjects reachable from exact Task181 head",
+    "evidentiary_limit": "discovery only; a name or keyword match is not proof that two mechanisms are equivalent"
+  },
+  "visible_tags_observed_count": 94,
+  "visible_tags_observed": [
+    {
+      "name": "archive/121q34-i1-frozen-head",
+      "object_sha": "3790cd770d86fdec74b6614fe11d6119baf25f30",
+      "peeled_commit_sha": "06749dd118df7ade715b53f360e8177b09cdab49",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q34-repair-r1-frozen-head",
+      "object_sha": "e3ee4a658fc2c81cd9714125eb807adf2813cd54",
+      "peeled_commit_sha": "61c696f7cf74fed5525ec7da6cf8a7c4b544e5a8",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q35-i1r-frozen-head",
+      "object_sha": "eeba2238cb901e7371789e09f736b8d27cc8458c",
+      "peeled_commit_sha": "ea1408e6525ceac8ea0c9c5377aca269579d6ff4",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q35-repair-r1-frozen-head",
+      "object_sha": "3bb0be3d6c28fe654c39f32be32fc63f04e2aacb",
+      "peeled_commit_sha": "167f254e637259d57b7ce09623de982dda527f54",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q36-int-i1-frozen-head",
+      "object_sha": "c58918aea03447608822f2f72a033bbf188f1399",
+      "peeled_commit_sha": "02a87221b86cf39217f8c6b3c63e0737a0e2de98",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q36-int-repair-r1-frozen-head",
+      "object_sha": "1fc33f73c5a341aa3dda23f8a7f9e3ac6b6768d0",
+      "peeled_commit_sha": "e4ca5350a3c68e61031e3205eaca9f2665799a08",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q36-obs-i1-frozen-head",
+      "object_sha": "00094dd6b4e0fa9f04fe9bb04bc77f83695665d0",
+      "peeled_commit_sha": "a8eab57bf2a2465c48d5d624e22681a1ad1bc20c",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q36-obs-repair-r1-frozen-head",
+      "object_sha": "dc30ef1cab4b177baa5407aa9e717c77c11769f0",
+      "peeled_commit_sha": "9087e494c782b405b5bbdb0d1ae4bd1707792d95",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q37-i1-frozen-head",
+      "object_sha": "dfa9ef7ee3ebad0de65afd45c065e79dcf330e05",
+      "peeled_commit_sha": "927cae48f3c65d3c23543dac4b9262704fabb6f1",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q37-repair-r1-frozen-head",
+      "object_sha": "efb177df1596609dec0c6bdf63f9b4c676cc96cf",
+      "peeled_commit_sha": "7a01b1958c3f6b6eff559be85ec5e47eecff313c",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q38-i1-frozen-head",
+      "object_sha": "8765f5d656b5b4a42b1e97492ec78d61c298b325",
+      "peeled_commit_sha": "312a3282381bd0cb6dcc5fa629cbd058eacd9a56",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q38-repair-r1-frozen-head",
+      "object_sha": "ba7e8146c983a58b48044f3cee84b9f40f6c5e64",
+      "peeled_commit_sha": "d5cf0f0846206d3c47463f66697d2d8bf7d4aca3",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q39-i1-frozen-head",
+      "object_sha": "2955874e607bed63336f3f5ab9bb9e93beded674",
+      "peeled_commit_sha": "824ff7f713303b18bca94b05de3f4b6530ffff51",
+      "annotated": true
+    },
+    {
+      "name": "archive/121q39-repair-r1-frozen-head",
+      "object_sha": "1b25aa9ace391ab0badf3ad7c9e7c76b965a71af",
+      "peeled_commit_sha": "99ab601a48dd45972b238e468bc8e3002d648c98",
+      "annotated": true
+    },
+    {
+      "name": "archive/adaptive-relational-runtime-r1-scaffold-frozen-head",
+      "object_sha": "b22c2c2870f9f408e43b8c71bdea88367e250717",
+      "peeled_commit_sha": "a0d6c46cd55ef2dde49d13f958b230f71f619e73",
+      "annotated": true
+    },
+    {
+      "name": "archive/adaptive-relational-runtime-r2-human-front-door-sync-r1-frozen-head",
+      "object_sha": "b22bf6fa31d79ec141b5f0227f8a5dc9f5e29e85",
+      "peeled_commit_sha": "81e6054baf5dd0df0422c0fd42f21854073d75dd",
+      "annotated": true
+    },
+    {
+      "name": "archive/adaptive-relational-runtime-r2-positive-routing-ci-repair-r1-frozen-head",
+      "object_sha": "b494c18dc1c44dbd0508ac7ee6d478956622eca0",
+      "peeled_commit_sha": "5771d6c1174cc5c3ae72d1441c1c26b49951d79b",
+      "annotated": true
+    },
+    {
+      "name": "archive/adaptive-relational-runtime-r2-positive-routing-repair-r1-frozen-head",
+      "object_sha": "9930133535314eab290f006880022fc2d22513e9",
+      "peeled_commit_sha": "1908878c051de15e5934d38e017d469c0430cc83",
+      "annotated": true
+    },
+    {
+      "name": "archive/adaptive-relational-runtime-r2-q33-era-resolver-repair-r1-frozen-head",
+      "object_sha": "b885f37ac5f2aade47f65413e22712c76d5e6fb0",
+      "peeled_commit_sha": "a08e802a6fea51ebf884419e4825a4b32d79773e",
+      "annotated": true
+    },
+    {
+      "name": "archive/adaptive-relational-runtime-r2-real-object-pilot-frozen-head",
+      "object_sha": "75ae400e7557e658e955624f893ebffbeb83547d",
+      "peeled_commit_sha": "bfe90c65a80619e6c6c81586a2befb15796b93bb",
+      "annotated": true
+    },
+    {
+      "name": "archive/adaptive-relational-runtime-r3-r4-metric-semantics-observability-closure-r1-frozen-head",
+      "object_sha": "03a0348c4d0ec03471d290b9e61a103df3b0633f",
+      "peeled_commit_sha": "f236543dadcaf79ba9dba750fa21bd8b5c65a33a",
+      "annotated": true
+    },
+    {
+      "name": "archive/adaptive-relational-runtime-r3-waic-corpus-scale-r1-frozen-head",
+      "object_sha": "cc66aed0699d3891eb6ce32ab91c93ac46adb824",
+      "peeled_commit_sha": "a95072bf3ee31b12236c0d8015b1672283f18692",
+      "annotated": true
+    },
+    {
+      "name": "archive/adaptive-relational-runtime-r4-metric-disclosure-relay-receipt-r1-frozen-head",
+      "object_sha": "56f22c02387996bd63392beb214cb8c20bf42d6c",
+      "peeled_commit_sha": "27af5f99e13d8217961cbc803520c648ce791c68",
+      "annotated": true
+    },
+    {
+      "name": "archive/adaptive-relational-runtime-r4-waic-self-reflection-r1-frozen-head",
+      "object_sha": "537ccc551b36f951c09d7612c6b8fe901dd26ddb",
+      "peeled_commit_sha": "1d30f64d3e18e137c306e550c4b9ebe30b151734",
+      "annotated": true
+    },
+    {
+      "name": "archive/d2-i1-frozen-head",
+      "object_sha": "4f6232637e27f56092ebdfd1048a5bd62d8a36ff",
+      "peeled_commit_sha": "f638442a2ac28f2e5b4d3911e19c074c2ee003cb",
+      "annotated": true
+    },
+    {
+      "name": "archive/d2-repair-r1-frozen-head",
+      "object_sha": "89cf14be6aa79c300aecdbc8ac15dae9db079b38",
+      "peeled_commit_sha": "1904628103d8c23133107d501a22e3f17d08221d",
+      "annotated": true
+    },
+    {
+      "name": "archive/d2-repair-r2-frozen-head",
+      "object_sha": "9f64f0a078ff1f6ac9ae74171836809b0ed719c0",
+      "peeled_commit_sha": "ea447ed7f6331f8ed5e58526f4c2341d3a41d6a6",
+      "annotated": true
+    },
+    {
+      "name": "archive/d2-repair-r3-frozen-head",
+      "object_sha": "17617837ac44f11ecc535279c8c7aa1303b0ae7e",
+      "peeled_commit_sha": "36ee4f58b21541aadd33211818234bb7d58b3e01",
+      "annotated": true
+    },
+    {
+      "name": "archive/decision-integrity-i1-frozen-head",
+      "object_sha": "2561003ffdb9f9c23383104220388aec0c308a3b",
+      "peeled_commit_sha": "b3f27e4c3d614b95af4b112e3564fcf0e3d9f68e",
+      "annotated": true
+    },
+    {
+      "name": "archive/decision-integrity-repair-r1-frozen-head",
+      "object_sha": "fb27c36a0c5cc82e3247115188597c2904242d30",
+      "peeled_commit_sha": "25bd2ca3e14a2693e3c9fac49a2547e1aa7ca9a8",
+      "annotated": true
+    },
+    {
+      "name": "archive/decision-integrity-repair-r2-frozen-head",
+      "object_sha": "a061abcfd41c0477f31871998cf675c414b34366",
+      "peeled_commit_sha": "1a51d1b3fd1bab4eb1c80a7429e0b629bcae69a9",
+      "annotated": true
+    },
+    {
+      "name": "archive/decision-integrity-repair-r3-frozen-head",
+      "object_sha": "bf82f73205ef591cd46a3ce23e4235b703510329",
+      "peeled_commit_sha": "d98a33472ba10de15dbfeb11d2e72fdfa7daeb23",
+      "annotated": true
+    },
+    {
+      "name": "archive/f15-d1-i1-frozen-head",
+      "object_sha": "5196cae68307b2c6445e970a37c7ce9eed5d524d",
+      "peeled_commit_sha": "8db9e5abeaa32ffa73eb778bfbd5574a2aefe301",
+      "annotated": true
+    },
+    {
+      "name": "archive/f15-d1-repair-r1-frozen-head",
+      "object_sha": "518eeb7a6d249fc8e9ac4ee1d6c5ce99cc9a599b",
+      "peeled_commit_sha": "f0f7d7ff9dda620d59ad1dd1b504bcd503fe5c09",
+      "annotated": true
+    },
+    {
+      "name": "archive/f15-d1-repair-r2-frozen-head",
+      "object_sha": "826adaf892e846053911ca04f2f82441a0723219",
+      "peeled_commit_sha": "95405ae791dc0359c2ab6597bfd7c50224c2c59c",
+      "annotated": true
+    },
+    {
+      "name": "archive/f15-d1-repair-r3-frozen-head",
+      "object_sha": "06d67a5e93154d61b0d0b07a18bd683067f16987",
+      "peeled_commit_sha": "7f7bceb5b4671af492d503b452b0fa40ba8f3287",
+      "annotated": true
+    },
+    {
+      "name": "archive/ignition-r5a-life-integrity-charter-candidate-r1-frozen-head",
+      "object_sha": "618e487c424af269ef391faacc4b0f3401f2b0c0",
+      "peeled_commit_sha": "0e9d1e5823b41b7e9375e5f634388371b9b024ac",
+      "annotated": true
+    },
+    {
+      "name": "archive/ignition-run-promote-evolve-r1-production-draft-frozen-head",
+      "object_sha": "2753dc3875a148d6b0e86aa164d4c60113482501",
+      "peeled_commit_sha": "6723cdfaf52873516c564c324066361b257cdf52",
+      "annotated": true
+    },
+    {
+      "name": "archive/lab-121q36-temporal-causality-night",
+      "object_sha": "dfd28724b0e8ae8e257efdde2307872d77d0d8b6",
+      "peeled_commit_sha": "0529baaa354a99eae91621f2a70c9b5b53454208",
+      "annotated": true
+    },
+    {
+      "name": "archive/lab-121q37-analogy-audit-night",
+      "object_sha": "6acc1a1ffb14c8805e9d14482b0ba4b102c6f190",
+      "peeled_commit_sha": "178c3b1226deb887b8bf620fac80c15fd97d5fc4",
+      "annotated": true
+    },
+    {
+      "name": "archive/lab-121q38-structural-retrieval-night",
+      "object_sha": "ca3e558323565bb8e2b31041773131c3abc49771",
+      "peeled_commit_sha": "b9dae182da28614f04b0d3c5c124f5ec3b621e9f",
+      "annotated": true
+    },
+    {
+      "name": "archive/lab-121q39-failure-memory-night",
+      "object_sha": "b3211410fa7b3a75ebfe6a945a5203f8e1f50f5f",
+      "peeled_commit_sha": "95d637fcd5a33791e1cf69deec49d36389b9aeb0",
+      "annotated": true
+    },
+    {
+      "name": "archive/q41-i1-frozen-head",
+      "object_sha": "3c65a1dd0381311b2a2b9e7ac08175bc8309b327",
+      "peeled_commit_sha": "d09bd6fe964d8879e1b5027aa28cb2e010363c05",
+      "annotated": true
+    },
+    {
+      "name": "archive/q41-repair-r1-frozen-head",
+      "object_sha": "06b7baaf8251134e9679cef791820eaf864c3cc6",
+      "peeled_commit_sha": "da9c4e2a6b8c0f757aa676814fda7c86d4ac2558",
+      "annotated": true
+    },
+    {
+      "name": "archive/q41-repair-r2-frozen-head",
+      "object_sha": "18a18a3ea88d9f4a4af91cd11667c7398a4b551a",
+      "peeled_commit_sha": "e92e7d3eadbb67da288077052f635e3c052bd3a1",
+      "annotated": true
+    },
+    {
+      "name": "archive/q41-repair-r3-frozen-head",
+      "object_sha": "b307c8843a06f9c79feaeb5105b75daaae9ec4f3",
+      "peeled_commit_sha": "e803f3406ab46fc0353f8b7b8572595abcc62470",
+      "annotated": true
+    },
+    {
+      "name": "archive/q42-i1-frozen-head",
+      "object_sha": "acd67b6b22d6876870305d133927f05e36af1503",
+      "peeled_commit_sha": "98998bb1e3db67230954c1436d8effbcb87027af",
+      "annotated": true
+    },
+    {
+      "name": "archive/q42-repair-r1-frozen-head",
+      "object_sha": "972c3a60920b5b4bbfcddaf1ea82b27f40feba2c",
+      "peeled_commit_sha": "2f7777b26e1d52c5e6fff44fbf3d079cb38bdb98",
+      "annotated": true
+    },
+    {
+      "name": "archive/q42-repair-r2-frozen-head",
+      "object_sha": "b5786af0f7d889eb3de705d97419c16b66ae4a23",
+      "peeled_commit_sha": "3283ef6e76788b30a467467083f0d5ad7086b5a0",
+      "annotated": true
+    },
+    {
+      "name": "archive/q42-repair-r3-frozen-head",
+      "object_sha": "10c1afbf3ba038d3fdc586b40d3b9028be69444d",
+      "peeled_commit_sha": "c043b8f9050a4a5b7d11f5bd3df30f346aaad1da",
+      "annotated": true
+    },
+    {
+      "name": "archive/q43-i1-frozen-head",
+      "object_sha": "720c856f88eefb08d52a9dd3ac6356bf54867a77",
+      "peeled_commit_sha": "3756cd6453135a333771243ffa6eb3d4f86344a0",
+      "annotated": true
+    },
+    {
+      "name": "archive/q43-repair-r1-frozen-head",
+      "object_sha": "2be61c9e68ee6e7f8336e83d5187ff956bb94e3e",
+      "peeled_commit_sha": "5efbce81e96d90d5ebd246891e4762928365d6b8",
+      "annotated": true
+    },
+    {
+      "name": "archive/q43-repair-r2-frozen-head",
+      "object_sha": "f0d3cd83f98ad6407e65ca442f9e79d145c45440",
+      "peeled_commit_sha": "e5181c83efba68f847b55e13c7b5a1ee1fd6888e",
+      "annotated": true
+    },
+    {
+      "name": "archive/q43-repair-r3-frozen-head",
+      "object_sha": "7f3a1d25c974e9f8b1a0d7cec5532ab8e97c826d",
+      "peeled_commit_sha": "25c240835c8d753405cb4f3d34448462a56f2e42",
+      "annotated": true
+    },
+    {
+      "name": "archive/q44-i1-frozen-head",
+      "object_sha": "b4364ac3282c51f9fd67031fe77cb5082e44f0f2",
+      "peeled_commit_sha": "e603e4503b424cea7c85639ec83f96b7e1bc7efb",
+      "annotated": true
+    },
+    {
+      "name": "archive/q44-repair-r1-frozen-head",
+      "object_sha": "1ee265649d4d8180e2be21c3cda4337ce9c34b91",
+      "peeled_commit_sha": "4d15ccaf2e574248c0e224c05716c3af46203a39",
+      "annotated": true
+    },
+    {
+      "name": "archive/q44-repair-r2-frozen-head",
+      "object_sha": "94e273100a1b357f60717c18528a8eed49c43127",
+      "peeled_commit_sha": "7532b4b34cf841c09faab8c835c5fc7f896d30d8",
+      "annotated": true
+    },
+    {
+      "name": "archive/q44-repair-r3-frozen-head",
+      "object_sha": "95220543234885a54e2527f6b1fed5caf2a82328",
+      "peeled_commit_sha": "045bf233e2d22124c903eeff33df42e1b091a1a1",
+      "annotated": true
+    },
+    {
+      "name": "archive/scientific-context-protocol-i1-frozen-head",
+      "object_sha": "2aa23ab24520994e50cedfbfd5181049ba317ea7",
+      "peeled_commit_sha": "77adc367b560a1e004884fe96b470fa7615e5493",
+      "annotated": true
+    },
+    {
+      "name": "archive/scientific-context-protocol-repair-r1-frozen-head",
+      "object_sha": "2b3141d5c92ec578549ae699b18d5ce1b140b4ae",
+      "peeled_commit_sha": "50cdf4ca95337d5adbd900140c53dfc3aaf422f4",
+      "annotated": true
+    },
+    {
+      "name": "archive/scientific-context-protocol-repair-r2-frozen-head",
+      "object_sha": "226b5c55ede097e2bd1c9d507db5b2d79f3e9c64",
+      "peeled_commit_sha": "20e598d75d8c40ed3e8af6aa1de14320c1cd0d3a",
+      "annotated": true
+    },
+    {
+      "name": "archive/scientific-context-protocol-repair-r3-frozen-head",
+      "object_sha": "b92f052b02a0bf687a9761c9540735d902ea2953",
+      "peeled_commit_sha": "833c3e5f25c25c8f225ade19e6b3111f1a60e695",
+      "annotated": true
+    },
+    {
+      "name": "archive/scientific-metacognition-i1-frozen-head",
+      "object_sha": "3c20d6ba3ebce2f8fdc9fc3c0b7a7d3e1707a3c6",
+      "peeled_commit_sha": "2b18e1f2d11511dc758734338e7c715566d01394",
+      "annotated": true
+    },
+    {
+      "name": "archive/scientific-metacognition-repair-r1-frozen-head",
+      "object_sha": "7eadeb2a17c31c9d7d82535a4be0bc4fa653bc53",
+      "peeled_commit_sha": "183f4343a036d0dbb20ae7df9dd96be97bcd3fc3",
+      "annotated": true
+    },
+    {
+      "name": "archive/scientific-metacognition-repair-r2-frozen-head",
+      "object_sha": "b95591873a93341beb04adad697bdd6e83a822a5",
+      "peeled_commit_sha": "25f937ea8d53b4b14f31fc9c8779995f3c516bac",
+      "annotated": true
+    },
+    {
+      "name": "archive/scientific-metacognition-repair-r3-frozen-head",
+      "object_sha": "81504f4cc8af785c5b80889e28bf3ec35be07342",
+      "peeled_commit_sha": "371b550fc608a423a72975afe116cd10b173a47e",
+      "annotated": true
+    },
+    {
+      "name": "archive/symbolic-sphere-i1-frozen-head",
+      "object_sha": "b0e1cb56714515cf6f989085ed663af697200016",
+      "peeled_commit_sha": "213dced90f1e9b1f1992a148ee10fc0844917490",
+      "annotated": true
+    },
+    {
+      "name": "archive/symbolic-sphere-repair-r1-frozen-head",
+      "object_sha": "5f5bf26443595d2f1c766d6ddea57a812d77af3a",
+      "peeled_commit_sha": "4ec769768d31c1fd0d7a6c066d235b4064606652",
+      "annotated": true
+    },
+    {
+      "name": "archive/symbolic-sphere-repair-r2-frozen-head",
+      "object_sha": "38e4671d6f918a68146f3e015be878723dd53602",
+      "peeled_commit_sha": "68ea9bf4d9987a9ec6c4d3a14ec6f9899618ee04",
+      "annotated": true
+    },
+    {
+      "name": "archive/symbolic-sphere-repair-r3-frozen-head",
+      "object_sha": "c535498f0f64014741c17c7aab7f5157cb8dcbcb",
+      "peeled_commit_sha": "01c8414797ab458b703a63a595f9af691a91fe9e",
+      "annotated": true
+    },
+    {
+      "name": "current-state-2026-07-15",
+      "object_sha": "6f4e6d32c1de455e000781e861fb264933246317",
+      "peeled_commit_sha": "8189dde91d0adbb7957c8aa642bc76d14afe6534",
+      "annotated": true
+    },
+    {
+      "name": "current-state-2026-07-15-atlas",
+      "object_sha": "ba807b35df9517d067d3e76dbbfe7289d0deddac",
+      "peeled_commit_sha": "94119ac126b3d06c3ef3f0b41d7c50e7092a755c",
+      "annotated": true
+    },
+    {
+      "name": "ignition/iterations/106/terminal-r1",
+      "object_sha": "d44151048a3859947ae3904c1c9ed2b43ff975a0",
+      "peeled_commit_sha": "af988422030069b8fee1df7ec75670e0541a55ab",
+      "annotated": true
+    },
+    {
+      "name": "ignition/iterations/107/terminal-r1",
+      "object_sha": "361e6f96305d1c2ffb5e117e79e54cf7ec2b841e",
+      "peeled_commit_sha": "77352d27bc997ff9418de017f622f0c72dd634e3",
+      "annotated": true
+    },
+    {
+      "name": "ignition/iterations/108/terminal-r1",
+      "object_sha": "0a9638e8eb2e242d4aaf316f2e09a0e72ba3e040",
+      "peeled_commit_sha": "8d8d30837c5ddc49f1085ae03df06a12c77a772e",
+      "annotated": true
+    },
+    {
+      "name": "ignition/iterations/109/terminal-r1",
+      "object_sha": "65d25997b67af170f644f7da344b0e36dca3d287",
+      "peeled_commit_sha": "b52b245469966fea3b663bd3f328b1ee941e76aa",
+      "annotated": true
+    },
+    {
+      "name": "ignition/iterations/110/terminal-r1",
+      "object_sha": "02422984400aabb6dbecb703893962c0838fd510",
+      "peeled_commit_sha": "f82c19e319a81130beb6bb5484de7ba861ed924c",
+      "annotated": true
+    },
+    {
+      "name": "ignition/iterations/111/terminal-r1",
+      "object_sha": "91de7433db0cef4800bb64a59b703a6305bc30ce",
+      "peeled_commit_sha": "9b15d359c54694d851c38df6ab3c7ae42544a51b",
+      "annotated": true
+    },
+    {
+      "name": "ignition/iterations/111/terminal-r1-recovery-1",
+      "object_sha": "67c9dd380d0beed66808dc86134d7c9738984c0c",
+      "peeled_commit_sha": "9b15d359c54694d851c38df6ab3c7ae42544a51b",
+      "annotated": true
+    },
+    {
+      "name": "ignition/iterations/112/terminal-r1",
+      "object_sha": "8edeadd20a2e07825127ae677bd9fb917b5169b1",
+      "peeled_commit_sha": "a7b16d0781ed8f804d0015a5485d14c9afca4ecf",
+      "annotated": true
+    },
+    {
+      "name": "ignition/iterations/113/terminal-r1",
+      "object_sha": "284d8c3a63968065e1c7070d0537118e880f1f51",
+      "peeled_commit_sha": "828e1ac5c6c069d34cadc78219b8754e881b893e",
+      "annotated": true
+    },
+    {
+      "name": "ignition/iterations/114/terminal-r1",
+      "object_sha": "199a1945a9fb046b4f8edb9f904bcba42113c363",
+      "peeled_commit_sha": "61510ed26a1285e1746777c9eacd568cb3038a50",
+      "annotated": true
+    },
+    {
+      "name": "legacy-lab-q34-discovery-commitment-night-12026-07-17",
+      "object_sha": "c7b2933f13f74ecdb51be93adcc2051693d7934c",
+      "peeled_commit_sha": "d4b6ae59984fbfdc5968fdf52f8e2470a59e1790",
+      "annotated": true
+    },
+    {
+      "name": "legacy-lab-q35-agent-duty-night-12026-07-17",
+      "object_sha": "5cfa14d73ffcf049a2b2651a91a1301ca7778d12",
+      "peeled_commit_sha": "1be68d94ad6676dc03f68d32f47ea9ac8e3c0838",
+      "annotated": true
+    },
+    {
+      "name": "pre-q33-i2-main-12026-07-21",
+      "object_sha": "76583539c4a17eda2b12b6a8bcf876ec2fd2610a",
+      "peeled_commit_sha": "cf321f92014268af40cf9aa9231fe8a4f814b031",
+      "annotated": true
+    },
+    {
+      "name": "pre-q33-main-12026-07-20",
+      "object_sha": "c4be804648e34fabab9d945cab9284b012c25870",
+      "peeled_commit_sha": "f54577a9084d0ac6e374341d96836c5d52bc3b8c",
+      "annotated": true
+    },
+    {
+      "name": "q33-i2-merged-closeout-12026-07-21",
+      "object_sha": "ffd8cf1f74da9f442ef3ce6f6fc7b632af40f24d",
+      "peeled_commit_sha": "81edff4039619b8343a82cb1b84785c8a9f6a990",
+      "annotated": true
+    },
+    {
+      "name": "q33-i2-reviewed-closeout-12026-07-21",
+      "object_sha": "01444bbe3933b29a38891d78971278711ab633d6",
+      "peeled_commit_sha": "5d4842a2708927152afc341b3f442546ddfa99c4",
+      "annotated": true
+    },
+    {
+      "name": "q33-merged-12026-07-20",
+      "object_sha": "885aa00ada3e8cbe02bf576a5c42b5968f0df407",
+      "peeled_commit_sha": "cf321f92014268af40cf9aa9231fe8a4f814b031",
+      "annotated": true
+    },
+    {
+      "name": "q33-reviewed-candidate-12026-07-20",
+      "object_sha": "df99e4c80c61e63d5810735ea4f38a006f1d520b",
+      "peeled_commit_sha": "9290c83fd642f4fca8cd2f32e5fdb5d61a46372a",
+      "annotated": true
+    },
+    {
+      "name": "reality-loop-001-start-2026-07-15",
+      "object_sha": "2123af2d9a364d69ac784976e0a8d7b222c3bfbe",
+      "peeled_commit_sha": "73a40c730e930ed6b7e392f896bba5f3b79f32d2",
+      "annotated": true
+    },
+    {
+      "name": "v0.1-public-prototype",
+      "object_sha": "ba2fd70b29b085ac6e2a984e4ba798470956ac20",
+      "peeled_commit_sha": "3ecf5480ec2776b1914ad1df87053f22494978b7",
+      "annotated": true
+    },
+    {
+      "name": "v0.2-p1-machine-readable-data",
+      "object_sha": "7f80c11ed93a4f4ee60fa75e9ad83f1d92cd3325",
+      "peeled_commit_sha": "09804c6ede7a8289ef56143850de03ad6faf12ad",
+      "annotated": true
+    },
+    {
+      "name": "v0.2-structural-infrastructure",
+      "object_sha": "3747767bc8bca512d8bc36dea7ed68410940f35d",
+      "peeled_commit_sha": "4eb5f680a1cebdd139f3a1bf8cb05f0c097d697a",
+      "annotated": true
+    }
+  ],
+  "source_boundaries": {
+    "branch_query": "Only directly relevant PR branches #218–#221 and the existing Task185 branch were read; no global branch enumeration was performed.",
+    "parallel_lane": "The other in-progress lane remains unqueried and unknown.",
+    "heldout": "The held-out subtree was excluded from sparse checkout and content search; no case-specific payload, gold, or evaluator-sealed file was opened.",
+    "task186": "No Task186 report was fetched, read, or used as evidence.",
+    "execution": "No Successor or Evaluator was run; no Foundation/Current canonical authority or claim was changed."
+  }
+}
