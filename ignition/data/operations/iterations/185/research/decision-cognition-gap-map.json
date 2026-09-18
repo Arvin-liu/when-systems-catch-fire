@@ -1,0 +1,204 @@
+{
+  "schema_version": "task185-decision-cognition-gap-map-r0",
+  "task_id": "IGNITION-20260918-185",
+  "status": "RESEARCH_ONLY_NONCANONICAL",
+  "evidence_scope": {
+    "frozen_research_start": "7cab7541895620d68d5bce2d16c46871ebd03ac0",
+    "method": "Compare bounded decision records, derived causal/probabilistic representations, Task179 method/budget artifacts, and framing contracts by consumer and authority; keyword matches alone are not equivalence evidence.",
+    "negative_result_ceiling": "A REAL_GAP means no general mechanism was demonstrated in the inspected Task185 evidence scope; it is not a proof that no relevant artifact exists anywhere in repository history.",
+    "excluded_authorities": [
+      "Task182-R1 unfinished branch, worktree, output, and held-out case-specific payload",
+      "Task186 report",
+      "Successor or Evaluator execution",
+      "Foundation/Current canonical mutation or promotion"
+    ]
+  },
+  "central_question": {
+    "question": "Does Ignition currently have a mechanism that distinguishes the cognitive investment appropriate for carrying an umbrella from that for marriage, employment, or migration decisions?",
+    "answer": "Not as a demonstrated general mechanism in this evidence scope. The repository contains ingredients and one bounded decision record (explicit alternatives, affordable loss, rollback, and a 30-day observation window), plus derived causal representations. It does not show a reusable decision-stakes/causal-reach classifier connected to an attention, time, or reasoning-budget rule. The umbrella-versus-life-decision contrast is therefore not evidenced as a capability.",
+    "qualification": "This is a scoped archaeology conclusion, not a claim about hidden model cognition or an exhaustive absence proof. Task179 complexity-budget entries cap schema/runtime surface and are not a human or model cognitive-effort allocator."
+  },
+  "classification_legend": {
+    "ALREADY_PRESENT": "A reusable mechanism with the required consumer and boundary is evidenced.",
+    "PARTIAL": "Relevant fields or a bounded/domain-specific mechanism exist, but the requested general decision capability is incomplete.",
+    "HISTORICAL_PRECURSOR": "An older or adjacent mechanism informs the capability but does not implement it in the current target sense.",
+    "REAL_GAP": "No mechanism connecting the required inputs to the required decision behavior was demonstrated in the scoped evidence.",
+    "NOT_APPLICABLE": "The capability does not apply to the inspected system boundary.",
+    "UNRESOLVED": "Available evidence cannot support a stable classification."
+  },
+  "items": [
+    {
+      "capability_id": "DECISION_STAKES_CLASSIFICATION",
+      "classification": "PARTIAL",
+      "observed_mechanism": "A 121Q16 action record distinguishes candidate actions, records a decision threshold, sets an affordable-loss envelope, and bounds public outreach, cost, private-data exposure, and rollback.",
+      "evidence_refs": [
+        "ignition/data/reality/121q16-decision-collapse.json@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/architecture/mechanism-adjudication-plane.md@7cab7541895620d68d5bce2d16c46871ebd03ac0"
+      ],
+      "missing_mechanism": "No reusable stakes taxonomy or procedure is evidenced that classifies ordinary low-consequence acts separately from decisions with durable personal, social, financial, or livelihood consequences and routes them to different deliberation requirements.",
+      "why_it_matters": "Without an explicit stakes boundary, a single action threshold or generic checklist can under- or over-allocate deliberation.",
+      "minimal_experiment": "A future owner-authorized, synthetic tabletop comparison could apply the same blank decision record to an umbrella choice and fictional marriage, job, and migration choices, then inspect whether the record names distinct stakes and required safeguards. Do not use live personal decisions or run a successor/evaluator.",
+      "authority_ceiling": "One bounded historical record is evidence of a local pattern, not proof of a general decision capability."
+    },
+    {
+      "capability_id": "CAUSAL_RADIUS_AND_DOWNSTREAM_REACH",
+      "classification": "PARTIAL",
+      "observed_mechanism": "The derived Multiscale Causal Fabric describes propagation bounds, mediator chains, temporal order, reachability/horizon boundaries, intervention and counterfactual status, and uncertainty.",
+      "evidence_refs": [
+        "ignition/docs/architecture/multiscale-causal-fabric.md@7cab7541895620d68d5bce2d16c46871ebd03ac0"
+      ],
+      "missing_mechanism": "The causal representation is not shown connected to a decision object that estimates downstream reach and allocates deliberation, consultation, or verification in proportion to that reach.",
+      "why_it_matters": "A causal map can describe propagation without telling a decision process how much care to spend before acting.",
+      "minimal_experiment": "On synthetic scenarios only, record the predicted reachability boundary and separately state what action, if any, that boundary changes; reject any inference that a causal cone itself proves causation.",
+      "authority_ceiling": "Derived causal representation; not a validated decision allocator or causal proof."
+    },
+    {
+      "capability_id": "REVERSIBILITY",
+      "classification": "PARTIAL",
+      "observed_mechanism": "The 121Q16 pilot is described as low-cost and reversible, with a pre-merge Draft-PR rollback path; Task179 transition/migration records include rollback lineage.",
+      "evidence_refs": [
+        "ignition/data/reality/121q16-decision-collapse.json@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540",
+        "ignition/agent_runtime/cognitive_inheritance_r0/packages/complexity-budget-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"
+      ],
+      "missing_mechanism": "A general decision-level reversibility assessment, including who can reverse an action, at what cost, after what delay, and which consequences remain irreversible, is not evidenced.",
+      "why_it_matters": "A nominal rollback may reverse repository state while leaving social, financial, or opportunity consequences in place.",
+      "minimal_experiment": "For synthetic choices, distinguish technical rollback from real-world consequence reversibility and list residual irreversible effects; do not enact any action.",
+      "authority_ceiling": "Bounded rollback examples and schema slots do not establish reliable assessment behavior."
+    },
+    {
+      "capability_id": "DURATION_AND_DECISION_HORIZON",
+      "classification": "PARTIAL",
+      "observed_mechanism": "121Q16/121Q17 specify a 30-day, activation-gated observation window and explicit rules for interpreting exposure and zero signal.",
+      "evidence_refs": [
+        "ignition/data/reality/121q16-observation-plan.json@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/data/reality/121q17-observation-state.json@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/architecture/multiscale-causal-fabric.md@7cab7541895620d68d5bce2d16c46871ebd03ac0"
+      ],
+      "missing_mechanism": "An observation duration is not a general decision-horizon field: the evidence does not show a common rule relating duration of consequences, delayed feedback, or commitment horizon to deliberation depth.",
+      "why_it_matters": "Short-lived and long-lived consequences can require different evidence windows and follow-up obligations.",
+      "minimal_experiment": "On synthetic cases, separate decision commitment duration, consequence horizon, and evidence-observation window, then check that none is substituted for another.",
+      "authority_ceiling": "The cited window belongs to one signal-observation design; it does not establish general temporal decision reasoning."
+    },
+    {
+      "capability_id": "FUTURE_OPTION_LOCK_IN",
+      "classification": "PARTIAL",
+      "observed_mechanism": "The bounded decision record compares alternatives; Task179 transition contracts preserve alternatives/rollback; the derived causal/entropy representation includes irreversibility-related descriptors.",
+      "evidence_refs": [
+        "ignition/data/reality/121q16-decision-collapse.json@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/architecture/multiscale-causal-fabric.md@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"
+      ],
+      "missing_mechanism": "No explicit measure or decision rule is evidenced for options foreclosed, option value lost, or the time at which a choice makes alternatives unavailable.",
+      "why_it_matters": "A choice can be technically reversible yet still close future options or impose path dependence.",
+      "minimal_experiment": "For synthetic alternatives, list preserved, delayed, and foreclosed options before and after each hypothetical choice; keep the list descriptive until independently justified.",
+      "authority_ceiling": "Irreversibility fields and alternative lists are ingredients, not a validated option-value model."
+    },
+    {
+      "capability_id": "UNCERTAINTY_AS_DECISION_INPUT",
+      "classification": "PARTIAL",
+      "observed_mechanism": "Cognitive IR and causal/probabilistic architecture preserve unknowns, uncertainty, evidence boundary, and calibration window; mechanism adjudication records alternatives and claim ceilings.",
+      "evidence_refs": [
+        "ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-ir-r0.schema.json@12e133c6d58a5e22437e42bb75fd912607bb4540",
+        "ignition/docs/architecture/multiscale-causal-fabric.md@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/architecture/probabilistic-system-dynamics.md@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/architecture/mechanism-adjudication-plane.md@7cab7541895620d68d5bce2d16c46871ebd03ac0"
+      ],
+      "missing_mechanism": "The inspected evidence does not connect uncertainty type or calibration quality to a general decision-specific request for more evidence, consultation, delay, or bounded action.",
+      "why_it_matters": "Recording uncertainty is not the same as using it to choose a safer next step.",
+      "minimal_experiment": "Use synthetic cases with matched stakes and different uncertainty profiles; record whether the stated next evidence request changes and why.",
+      "authority_ceiling": "Typed uncertainty and calibration contracts do not show that a model notices or acts on uncertainty reliably."
+    },
+    {
+      "capability_id": "LOSS_CEILING",
+      "classification": "PARTIAL",
+      "observed_mechanism": "121Q16 supplies a concrete affordable-loss envelope (commit count, scope, no paid services/private-data exposure, no pre-review outreach, rollback); claim ceilings separately bound epistemic statements.",
+      "evidence_refs": [
+        "ignition/data/reality/121q16-decision-collapse.json@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/architecture/mechanism-adjudication-plane.md@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/architecture/multiscale-causal-fabric.md@7cab7541895620d68d5bce2d16c46871ebd03ac0"
+      ],
+      "missing_mechanism": "No general procedure is evidenced for stating a decision's plausible loss ceiling across affected parties and consequence classes. Epistemic claim ceiling must not be confused with an affordable-loss ceiling.",
+      "why_it_matters": "A bounded project cost does not bound harm to other people or durable personal consequences.",
+      "minimal_experiment": "For fictional choices, separately record resource loss, third-party exposure, irreversible harm, and evidential claim ceiling; do not combine unlike quantities into one score.",
+      "authority_ceiling": "One project-specific affordable-loss record is not a general safety guarantee."
+    },
+    {
+      "capability_id": "COGNITIVE_BUDGET_PROPORTIONALITY",
+      "classification": "REAL_GAP",
+      "observed_mechanism": "Task179 complexity budget limits schema families, runtime dependencies, persistent authorities, and provider bindings, with consumer and retirement conditions. This is an implementation/schema-surface budget, not deliberation time or reasoning allocation.",
+      "evidence_refs": [
+        "ignition/agent_runtime/cognitive_inheritance_r0/packages/complexity-budget-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540",
+        "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540",
+        "ignition/data/reality/121q16-decision-collapse.json@7cab7541895620d68d5bce2d16c46871ebd03ac0"
+      ],
+      "missing_mechanism": "No demonstrated mapping turns stakes, causal reach, irreversibility, uncertainty, and option lock-in into a proportional cognitive budget (time, evidence breadth, consultation, or verification), with a minimum floor and a bounded ceiling.",
+      "why_it_matters": "Without such a mapping, the architecture cannot substantiate the requested umbrella-versus-life-decision distinction; adding more schemas would not close this behavioral gap.",
+      "minimal_experiment": "A future owner-authorized synthetic tabletop could compare deliberation traces as structured decision records only (not hidden chain of thought), checking whether higher-consequence cases trigger specified extra evidence/consultation steps while low-stakes reversible cases remain bounded. Do not execute in Task185.",
+      "authority_ceiling": "Gap conclusion is limited to inspected artifacts; it authorizes no R1, MetaRSI, Model-RSI, or canonical implementation."
+    },
+    {
+      "capability_id": "OPTION_SPACE_EXPANSION",
+      "classification": "PARTIAL",
+      "observed_mechanism": "121Q16 records three candidate actions and reasons for selection; mechanism adjudication asks for candidate paths, strongest alternatives, counterfactuals, discriminating tests, and falsifiers; Task179 makes alternatives an observable method slot.",
+      "evidence_refs": [
+        "ignition/data/reality/121q16-decision-collapse.json@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/architecture/mechanism-adjudication-plane.md@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"
+      ],
+      "missing_mechanism": "No general, tested procedure is shown for expanding options when stakes or causal radius rise, or for checking whether an apparent option set omits delay, consultation, staged commitment, or no-action paths.",
+      "why_it_matters": "A record can compare only the alternatives it contains; an incomplete set can make a premature choice look exhaustive.",
+      "minimal_experiment": "On synthetic vignettes, independently enumerate no-action, reversible trial, information-gathering, staged commitment, and direct-action options; record omissions rather than auto-selecting.",
+      "authority_ceiling": "Explicit alternatives in one record and a method slot do not establish reliable search or option-set completeness."
+    },
+    {
+      "capability_id": "EXIT_PATH_AND_REVERSIBLE_EXPERIMENT",
+      "classification": "PARTIAL",
+      "observed_mechanism": "121Q16 identifies a bounded pilot, activation conditions, rollback, and a time-limited observation plan; R0 migration contracts retain rollback/retirement lineage.",
+      "evidence_refs": [
+        "ignition/data/reality/121q16-decision-collapse.json@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/data/reality/121q16-observation-plan.json@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/agent_runtime/cognitive_inheritance_r0/packages/complexity-budget-r0.json@12e133c6d58a5e22437e42bb75fd912607bb4540"
+      ],
+      "missing_mechanism": "There is no demonstrated cross-domain rule that requires a proportionate exit condition, review trigger, and residual-harm check for consequential decisions.",
+      "why_it_matters": "A reversible experiment is useful only when the stopping rule and limits of rollback are explicit before commitment.",
+      "minimal_experiment": "For fictional cases, pre-register a stop/review condition, a rollback owner, and non-reversible residue; check the record without carrying out the trial.",
+      "authority_ceiling": "The bounded pilot is a precedent, not a universal decision protocol."
+    },
+    {
+      "capability_id": "PRE_AI_VS_POST_AI_EPISTEMIC_DELTA",
+      "classification": "REAL_GAP",
+      "observed_mechanism": "The language-thought plane tracks translation framing deltas, unmapped residue, provenance, and version; the scoped decision artifacts preserve source refs and claim boundaries.",
+      "evidence_refs": [
+        "ignition/docs/architecture/language-thought-logic-plane.md@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/data/reality/121q16-decision-collapse.json@7cab7541895620d68d5bce2d16c46871ebd03ac0"
+      ],
+      "missing_mechanism": "No paired decision record was demonstrated that preserves a pre-AI baseline, AI contribution, human edits, new evidence, confidence/option changes, and post-AI epistemic delta. Language translation framing deltas are not a substitute for AI-influence provenance.",
+      "why_it_matters": "Without a baseline and contribution lineage, changes in belief or salience can be misattributed to independent evidence or to the decision maker.",
+      "minimal_experiment": "A future, consented synthetic exercise could compare a frozen pre-assistance record with a post-assistance record and annotate only observable changes and their sources; no private reasoning trace is needed or authorized.",
+      "authority_ceiling": "This is a scoped research gap, not evidence of AI-caused belief change in any person."
+    },
+    {
+      "capability_id": "FRAMING_AND_SALIENCE_INFLUENCE_TRACKING",
+      "classification": "PARTIAL",
+      "observed_mechanism": "The language-thought plane carries declared framing deltas and unmapped residue; the governance kernel includes language-framing residue; non-sycophancy guidance constrains use of a proponent's emotional framing or expected conclusion.",
+      "evidence_refs": [
+        "ignition/docs/architecture/language-thought-logic-plane.md@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/architecture/epistemic-governance-kernel-and-federated-planes.md@7cab7541895620d68d5bce2d16c46871ebd03ac0",
+        "ignition/docs/governance/non-sycophancy-output-protocol.md@7cab7541895620d68d5bce2d16c46871ebd03ac0"
+      ],
+      "missing_mechanism": "The inspected framing contracts address linguistic transformation and response discipline, not a decision-level ledger of salience shifts, omitted alternatives, attention allocation, or which framing changed the selected action.",
+      "why_it_matters": "A decision can preserve factual provenance while still being steered by asymmetric salience or emotional emphasis.",
+      "minimal_experiment": "For fictional cases, present neutral and differently framed descriptions with facts held constant; record changes in cited reasons/options, without inferring hidden mental states or treating a framing effect as causal proof.",
+      "authority_ceiling": "Declared framing fields and behavioral guidance do not establish measured influence tracking or immunity to framing."
+    }
+  ],
+  "cross_cutting_conclusion": {
+    "distinction": "Representation, evidence/claim ceilings, a bounded affordable-loss decision, and a schema complexity budget are distinct mechanisms. They must not be collapsed into a single decision-cognition capability.",
+    "no_aggregate_score": true,
+    "no_canonical_change": true,
+    "no_successor_or_evaluator_run": true,
+    "no_authorization_expansion": true
+  }
+}
