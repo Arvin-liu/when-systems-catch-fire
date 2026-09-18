@@ -3269,6 +3269,8 @@
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/IGNITION-20260918-186/metarsi-source-freeze.json"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/IGNITION-20260918-186/persistent-memory-mechanism-map.jsonl"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/IGNITION-20260918-186/persistent-memory-report.md"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.jsonl"}
+{"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/IGNITION-20260918-186/reflection-family-crosswalk.jsonl"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/IGNITION-20260918-186/reflection-family-report.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/IGNITION-20260918-186/research-questions.md"}
