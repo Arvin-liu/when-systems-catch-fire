@@ -291,6 +291,13 @@
 - 5 分钟：主题：新增案例候选 · P1 接入烟雾测试；本任务为 smoke test，明确限定「不得新增案例」「不得回填正式案例表」。；输入材料本身是本次工程操作的复盘，案例表已有更直接对应的救援流程案例（Codespace 救援闭环），不构成必须新增的独立案例。；即使作为案例，也应先查重、再决定是否入表；smoke test 阶段不做此判断。
 - 完整阅读：[outputs/collisions/20260708-smoke-test/new-cases.md](../../outputs/collisions/20260708-smoke-test/new-cases.md)
 
+<a id="reading-hr-10b604a45ebe510b"></a>
+## R0.4 independent evaluator disposition
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Role: R0.4INDEPENDENTEVALUATOR 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：R0.4 independent evaluator disposition；Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Role: R0.4INDEPENDENTEVALUATOR；Protocol: R04PROTOCOLEVIDENCEVALID；Bounded method transfer: PARTIALINTWOR04HELDOUTCASES；General claim: GENERALCOGNITIVEINHERITANCENOTESTABLISHED；Architecture lifecycle: R1NOTAUTHORIZEDBYEVALUATOR
+- 完整阅读：[reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md](../../reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md)
+
 <a id="reading-hr-1125ea8d76940b5f"></a>
 ## 下一步认识论能力评估 — IGNITION-20260908-165
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The title and recovered annotation assert that two oppositely monotone functions necessarily produce an inverted-U product. The conservative controlled proposition is therefore universal over positive differentiable functions on a common real interval. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：T16 counterexample-equivalence audit；The title and recovered annotation assert that two oppositely monotone functions necessarily produce an inverted-U product. The conservative controlled proposition is therefore universal over positive differentiable functions on a common real interval.；The 078 example uses f1(x)=exp(x) and f2(x)=exp(-2x) on the reals. The first is strictly increasing, the second strictly decreasing, while the product exp(-x) is strictly decreasing and has no interior inverted-U maximum. It satisfies the stated monotonicity premises and directly refutes the unrestricted universal claim.；It does not refute a future strengthened theorem with explicit endpoint, curvature, coercivity, or derivative-crossing assumptions. The displayed ratio equality is at most a stationarity condition after positivity and differentiability assumptions; it does not establish existence or maximality by itself.
 - 完整阅读：[reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md](../../reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md)
-
-<a id="reading-hr-1a22e43401f5a00c"></a>
-## IGNITION-138 Step 13 — Targeted regression and preflight
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：PASS: the exact Task138 targeted suite completed naturally with 333 tests, 0 failures, 0 errors, and 0 skips in 128.180s. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-138 Step 13 — Targeted regression and preflight；PASS: the exact Task138 targeted suite completed naturally with 333 tests, 0 failures, 0 errors, and 0 skips in 128.180s.；The suite covered the live bridge and runtime-scratch boundary, Codex and federation dispatch, residual and Current-state gates, release/lifecycle bindings, human-surface and privacy gates, repository path accounting, and Foundation generator reconciliation. No new real Codex child invocation was started in this step. The task still has exactly one real Code…；主题：Deterministic repair trail；The first post-Step12 run exposed four genuine stale-projection/accounting failures. Step12 prose had changed generator inputs, so the canonical nonfunction claim outputs, material human source fingerprints, and repository path manifest were stale or incomplete. The canonical nonfunction adjudicator, human claim browser builder, and repository path classific…；The following run then exposed three Current Facts failures. The regenerated nonfunction registry changed the declared Current Facts inputs. Current Facts, Current Snapshot, and all seven compiler-owned Current Snapshot blocks were regenerated. The final natural run passed all 333 tests.
-- 完整阅读：[reports/operations/ignition-138-step13-targeted-regression.md](../../reports/operations/ignition-138-step13-targeted-regression.md)

@@ -4,6 +4,41 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-f5fb13bfbfdfa4c8"></a>
+## IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit
+`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: COMPLETED (repository-local audit only) 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-127 Step 00 — Fresh baseline and 125→127 rebase audit；Status: COMPLETED (repository-local audit only)；Execution started from formal origin/main@c5cec3a212dbf42564985b71c0fcec3b1fb1e564 in the isolated task branch codex/ignition-127-os-durability-lifecycle-r3-rebased-20260820. The control source was freshly fetched from origin/relay/current@cfd50804. The relay checkout and the old 125 command remained read-only. IGNITION-125 was not executed; its requirements…；主题：What 126 changes in the rebase；The final 126 baseline already contains the R2 Event Ledger/CAS/replay spine, concurrent scheduler and queue controls, durable dispatch/reconciliation, operational memory, Pack registry/bus, executor federation and health leases, Driver Console, and the advisory Structural Governance Surface/ESI contract. Therefore 127 adds durable lifecycle semantics around…；The 126 soft-governance state is intentionally treated as advisory context. Persistence, migration and recovery must preserve CANDIDATEESISIGNAL, ADVISORYONLY, the existing claim ceiling, and the absence of permission/truth/M/E/Owner/safety authority.
+- 完整阅读：[reports/operations/ignition-127-step00-rebase-audit.md](../../reports/operations/ignition-127-step00-rebase-audit.md)
+
+<a id="reading-hr-f664e539ab663124"></a>
+## Ignition Atlas
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Status: 121Q14MAPPROJECTIONOVERLAY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：Status: 121Q14MAPPROJECTIONOVERLAY；The Ignition Atlas is a set of versioned derived maps. It is not a new source of truth.；Registries, matrices, schemas, source records, tests, and repository artifacts remain the authority. A map is a projection from those sources for a declared observer, decision question, value recipient, time, and coordinate system.；主题：What A Map Adds；A matrix says which objects relate. A graph says what connects. A map additionally declares:；which decision is being supported;
+- 完整阅读：[docs/architecture/ignition-atlas.md](../../docs/architecture/ignition-atlas.md)
+
+<a id="reading-hr-f8412af8d8458685"></a>
+## IGNITION-172 Step04 — Gate R routing schema and precision pilot
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Gate T exact-head CI is complete for parent 6d704d570827bf8d6ebb65fb65bcdd236056b4d3. This step freezes a bounded routing sidecar and a precision-oriented pilot; it does not perform mass taxonomy routing or scholarly corpus admission. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step04 — Gate R routing schema and precision pilot；Gate T exact-head CI is complete for parent 6d704d570827bf8d6ebb65fb65bcdd236056b4d3. This step freezes a bounded routing sidecar and a precision-oriented pilot; it does not perform mass taxonomy routing or scholarly corpus admission.；Primary taxonomy authority: 24 fields / 245 disciplines / 2178 subdisciplines.；Pilot: 250 function assets + 500 nonfunction claims = 750 rows.；Classification states: {'CLASSIFIED': 182, 'MULTIDISCIPLINARY': 26, 'OUTOFUNESCOSCOPE': 103, 'UNRESOLVED': 439}.；All 750 rows remain PILOTMANUALREVIEWREQUIRED.
+- 完整阅读：[reports/operations/ignition-172-20260913-step04-gate-r-routing.md](../../reports/operations/ignition-172-20260913-step04-gate-r-routing.md)
+
+<a id="reading-hr-f8c21cd0cd6a1f34"></a>
+## 生命共同体价值审查（life-community-value-audit）
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：生命共同体价值审查（life-community-value-audit）；依据 docs/governance/life-community-value-charter.md。同时防止两个极端：A. 整体利益无限压倒个体；B. 主体性误解为个人意志绝对优先。；主题：极端 A 防护（不得用整体名义无限压倒个体）；M3（托举退化）、M4（角色覆盖）、M1（听话）都揭示：家庭/组织/社会以「为你好」「维持关系」名义压缩个体真实退出权与自主选择。；本碰撞明确反对把「家庭延续」「组织效率」「女性懂事」作为无限压倒个体主体性的理由。；价值宪章边界「整体利益不得无限压倒个体」在本材料中得到正向印证。
+- 完整阅读：[outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md](../../outputs/collisions/20260711-disobedience-subjectivity/life-community-value-audit.md)
+
+<a id="reading-hr-f92361487a1aad76"></a>
+## 项目本体版本升级审计 2026-07-09
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：protocols=12 combinations=64 bookcases=22) 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：项目本体版本升级审计 2026-07-09；第三步：在第二步（元协议生成层数据/文档）基础上，对点火项目本体做整体版本升级。指令：IGNITION-20260709-003。；1111/agent-commands/IGNITION-20260709-003-project-body-version-upgrade.md；第二步结果（commit 974b121e，分支 version/meta-protocols-20260709）；1111/reports/ignition-version-iteration-blueprint-20260709.md；1111/2026-07-09 1735/、1111/2026-07-09 1902/
+- 完整阅读：[outputs/audit/project-body-version-upgrade-audit-20260709.md](../../outputs/audit/project-body-version-upgrade-audit-20260709.md)
+
 <a id="reading-hr-f974b5a400509d56"></a>
 ## IGNITION-137 Step 11 — Hermes retry decision
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`

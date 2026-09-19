@@ -289,6 +289,11 @@
     "reports/evaluations/ignition-188-r0-4-protocol-repair/evaluation-plane-isolation-fixed-point.md": "2026-09-19",
     "reports/evaluations/ignition-188-r0-4-protocol-repair/r0-3-case-exposure-defect.md": "2026-09-19",
     "reports/evaluations/ignition-188-r0-4-protocol-repair/task182-r3-minimum-failure-facts-r0.4.md": "2026-09-19",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/blind-case-evaluation.md": "2026-09-19",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/cross-case-method-transfer.md": "2026-09-19",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md": "2026-09-19",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.md": "2026-09-19",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.md": "2026-09-19",
     "reports/external-research/104-dual-088-reconciliation.md": "2026-07-13",
     "reports/external-research/104-gap-patch-evidence-readiness.md": "2026-07-13",
     "reports/external-research/104-source-quality-audit.md": "2026-07-13",
@@ -625,7 +630,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 623,
+  "entry_count": 628,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }
