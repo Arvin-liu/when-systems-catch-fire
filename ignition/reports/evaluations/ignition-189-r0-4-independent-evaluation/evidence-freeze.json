@@ -1,0 +1,53 @@
+{
+  "freeze_kind": "R0_4_SUCCESSOR_EVIDENCE_BYTE_FREEZE",
+  "evaluator_timestamp_utc": "2026-09-19T15:14:20Z",
+  "successor_worktree_branch": "work/IGNITION-20260919-188-r4-heldout-successor-r0-4-trial",
+  "successor_head": "57366c84aac62080fda386e8ca34d40e59ccf9f2",
+  "successor_head_to_branch_commit_count": 0,
+  "successor_status_porcelain": [
+    "A  ignition/reports/evaluations/ignition-188-heldout-successor-r0-4/successor-output-r0.4.json",
+    "A  ignition/reports/evaluations/ignition-188-heldout-successor-r0-4/successor-read-ledger-r0.4.json"
+  ],
+  "successor_status_scope": "EXPECTED_STAGED_TRIAL_EVIDENCE_ONLY",
+  "successor_remote_branch_lookup": {
+    "remote": "origin",
+    "ref": "refs/heads/work/IGNITION-20260919-188-r4-heldout-successor-r0-4-trial",
+    "result": "NO_MATCHING_REF_RETURNED_BY_GIT_LS_REMOTE_AT_FREEZE",
+    "interpretation": "DOES_NOT_CLAIM_HISTORICAL_PUSH_ABSENCE_BEYOND_THIS_MECHANICAL_LOOKUP"
+  },
+  "packet_manifest": {
+    "path": "ignition/evaluation/heldout/r0.4/successor-visible/packet-manifest-r0.4.json",
+    "sha256": "bc702b24b546997c40182246cc6b890fe321d661692fb6e13aa3a0410adfbbea"
+  },
+  "case_manifest": {
+    "path": "ignition/evaluation/heldout/r0.4/successor-visible/cases-manifest-r0.4.json",
+    "sha256": "4e96ad3b10a365f71194cb882d82ead928788f93594a49a8a6e2ed093e966e14"
+  },
+  "artifacts": [
+    {
+      "name": "successor-output-r0.4.json",
+      "source_path": "ignition/reports/evaluations/ignition-188-heldout-successor-r0-4/successor-output-r0.4.json",
+      "copy_path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/frozen-successor-evidence/successor-output-r0.4.json",
+      "source_sha256": "390a27ee86271eaaf9d1abb6692d33875bfeafa0f4634c0728fbd9ae6a498878",
+      "copy_sha256": "390a27ee86271eaaf9d1abb6692d33875bfeafa0f4634c0728fbd9ae6a498878",
+      "source_and_copy_byte_equal": true
+    },
+    {
+      "name": "successor-read-ledger-r0.4.json",
+      "source_path": "ignition/reports/evaluations/ignition-188-heldout-successor-r0-4/successor-read-ledger-r0.4.json",
+      "copy_path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/frozen-successor-evidence/successor-read-ledger-r0.4.json",
+      "source_sha256": "341cf53c38e7f9adff02ccd8cff142ab86955f970a0f85af41812e2c31c938d0",
+      "copy_sha256": "341cf53c38e7f9adff02ccd8cff142ab86955f970a0f85af41812e2c31c938d0",
+      "source_and_copy_byte_equal": true
+    },
+    {
+      "name": "successor-ledger-validation-receipt-r0.4.json",
+      "source_path": ".git/ignition/successor-ledger-validation-receipt-r0.4.json",
+      "copy_path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/frozen-successor-evidence/successor-ledger-validation-receipt-r0.4.json",
+      "source_sha256": "dde5cd45d4f2655c111558fc5d7ef35d45c180426f12355370d4c93a7e8f5b05",
+      "copy_sha256": "dde5cd45d4f2655c111558fc5d7ef35d45c180426f12355370d4c93a7e8f5b05",
+      "source_and_copy_byte_equal": true
+    }
+  ],
+  "semantic_evaluation_performed": false
+}

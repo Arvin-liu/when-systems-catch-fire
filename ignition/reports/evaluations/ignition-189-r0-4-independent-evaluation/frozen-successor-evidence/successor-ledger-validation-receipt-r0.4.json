@@ -1,0 +1,24 @@
+{
+  "closed_entry_count": 22,
+  "closed_summary": {
+    "cognitive_reads": 18,
+    "contaminated_entries": 0,
+    "operational_executions": 2,
+    "operational_status_observations": 2,
+    "prohibited_cognitive_reads": 0
+  },
+  "evidence_scope": "CERTIFIED_LEDGER_SCOPE",
+  "final_validator_scope": "FINAL_VALIDATOR_OUTSIDE_CERTIFIED_LEDGER_SCOPE",
+  "ledger_sha256": "341cf53c38e7f9adff02ccd8cff142ab86955f970a0f85af41812e2c31c938d0",
+  "ledger_state": "PRE_FINAL_VALIDATION_CLOSED",
+  "manifest_sha256": "bc702b24b546997c40182246cc6b890fe321d661692fb6e13aa3a0410adfbbea",
+  "protocol_version": "r0.4",
+  "read_ledger_schema_sha256": "02d2d504f4a5f2e5d5f333546e8bcd0c47c7b9a1e0f898e7610f270e4e65328e",
+  "receipt_kind": "DETERMINISTIC_LOCAL_ATTESTATION_NOT_SIGNATURE",
+  "receipt_sha256": "00e609468e758ec3a32d5baaede43f3fec0785589ba4852e67134da6005ae429",
+  "schema_version": "successor-ledger-validation-receipt-r0.4",
+  "task_id": "IGNITION-20260919-188-R0.4",
+  "validator_component_id": "final-read-ledger-validator-r0.4",
+  "validator_source_sha256": "9d11ab497fd9949fe3162a9c66815e922a050a9b5e7badccceb0c9ade41d365a",
+  "validator_status": "PASS_READ_LEDGER_CLEAN"
+}
