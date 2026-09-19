@@ -1,0 +1,83 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "evidence_kind": "INDEPENDENT_EVALUATOR_DISPOSITION",
+  "task_id": "IGNITION-20260919-189-R0.4",
+  "role": "R0.4_INDEPENDENT_EVALUATOR",
+  "protocol_disposition": "R0_4_PROTOCOL_EVIDENCE_VALID",
+  "bounded_method_transfer": "PARTIAL_IN_TWO_R0_4_HELD_OUT_CASES",
+  "general_claim": "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+  "architecture_lifecycle": "R1_NOT_AUTHORIZED_BY_EVALUATOR",
+  "owner_gpt_adjudication": "OWNER_GPT_ADJUDICATION_NOT_RUN",
+  "blind_semantic_checkpoint": "02889bfd1dd5f201b70a7084f48769ca87a290d5",
+  "evidence_inputs": {
+    "protocol_integrity": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.json",
+    "blind_case_evaluation": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/blind-case-evaluation.jsonl",
+    "cross_case_method_transfer": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/cross-case-method-transfer.json",
+    "negative_control_audit": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.jsonl",
+    "frozen_successor_evidence": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/frozen-successor-evidence/"
+  },
+  "protocol_finding": {
+    "disposition": "PROTOCOL_INTEGRITY_PASS",
+    "ledger_state": "PRE_FINAL_VALIDATION_CLOSED",
+    "trial_disposition": "CLEAN",
+    "validator_status": "PASS_READ_LEDGER_CLEAN",
+    "prohibited_cognitive_reads": 0,
+    "contaminated_entries": 0,
+    "frozen_bytes_unchanged_during_validation": true
+  },
+  "case_findings": [
+    {
+      "case_id": "IGNITION-20260919-188-EXP-01",
+      "criterion_dispositions": {
+        "SOURCE_FIDELITY": "PASS",
+        "OBSERVATION_INTERPRETATION_SEPARATION": "PASS",
+        "UNKNOWN_PRESERVATION": "PASS",
+        "EVIDENCE_ESCALATION": "PASS",
+        "NO_SILENT_GAP_FILL": "PASS",
+        "MULTIPLE_INTERPRETATION_PRESERVATION": "PASS",
+        "CLAIM_CEILING": "PASS"
+      },
+      "bounded_summary": "The account preserves the event counts, missing capture, absent visitor explanations, position confounding, aggregate limits, and synthetic ceiling; it frames the recorded relationship as descriptive rather than causal."
+    },
+    {
+      "case_id": "IGNITION-20260919-188-GOV-01",
+      "criterion_dispositions": {
+        "SOURCE_FIDELITY": "PASS",
+        "OBSERVATION_INTERPRETATION_SEPARATION": "PASS",
+        "UNKNOWN_PRESERVATION": "PASS",
+        "EVIDENCE_ESCALATION": "PASS",
+        "NO_SILENT_GAP_FILL": "PASS",
+        "MULTIPLE_INTERPRETATION_PRESERVATION": "PARTIAL",
+        "CLAIM_CEILING": "PASS"
+      },
+      "bounded_summary": "The account preserves schema facts, manual-review uncertainty, rollback limits, status-versus-proof distinction, ordering gap, and synthetic ceiling; it does not explicitly enumerate multiple plausible explanations for the review queue or ordering gap."
+    }
+  ],
+  "negative_control_finding": {
+    "control_count": 10,
+    "triggered": 0,
+    "unresolved": 0,
+    "not_triggered": 10,
+    "interpretation": "Negative-control absence is not treated as a general inheritance claim."
+  },
+  "authority_boundaries": {
+    "owner_acceptance": "NOT_PERFORMED",
+    "canonical_promotion": "NONE",
+    "foundation_mutation": "NONE",
+    "knowledge_current_or_fire_seed_promotion": "NONE",
+    "external_metrsi_comparison": "NOT_PERFORMED",
+    "r1": "NOT_AUTHORIZED_BY_EVALUATOR"
+  },
+  "limitations": [
+    "Evidence is bounded to two original synthetic R0.4 held-out cases.",
+    "The method-transfer disposition is partial because one case-specific criterion is partial.",
+    "This evaluator disposition is not Owner/GPT adjudication and does not establish general cognitive inheritance."
+  ],
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "provenance": {
+    "source_paths_visible_in_artifact": true,
+    "historical_evaluator_or_prior_successor_outputs_used": false,
+    "evaluator_sealed_surface_read": false
+  }
+}
