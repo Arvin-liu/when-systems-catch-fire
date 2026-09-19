@@ -2737,7 +2737,7 @@
       "title": "CHRONOLOGY",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "95cf055d96addeef81b927d9c0be4dd1f32c6164c7a053a8b0470607a5ed6f94",
+      "source_sha256": "2f8bbb1dcb21579a473c91f4ea94a1a98d33ef28af48078664165ed348769a9f",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "SUPPLEMENTAL_HUMAN_CORPUS_TRIAGE",
@@ -3334,7 +3334,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "3c531fe540b7eb54c691bbefb79fb1c41b858bf2e934463cdb2d19c447f7c6bf",
+      "source_sha256": "59ceba7dd587b404ee3878ac58f5ce6110ec48afcb91b7b13127f7752a9c6cdd",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -4271,7 +4271,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "dc6f679626ab8dadbca5efede8ba20034eaf58860e11010a67345edf53136043",
+      "source_sha256": "ef18fa83426b23834590276e7ff1d5383d9b4a138918c3c1a527097b2a029837",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",

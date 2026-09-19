@@ -11,6 +11,11 @@
     "reports/evaluations/ignition-188-r0-4-protocol-repair/evaluation-plane-isolation-fixed-point.md",
     "reports/evaluations/ignition-188-r0-4-protocol-repair/r0-3-case-exposure-defect.md",
     "reports/evaluations/ignition-188-r0-4-protocol-repair/task182-r3-minimum-failure-facts-r0.4.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/blind-case-evaluation.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/cross-case-method-transfer.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.md",
     "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "excluded_timeline_asset_ids": [

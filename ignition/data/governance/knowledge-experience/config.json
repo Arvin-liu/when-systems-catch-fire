@@ -54,6 +54,11 @@
     "reports/evaluations/ignition-187-r0-3-protocol-repair/r0-2-invalid-reproduction.md",
     "reports/evaluations/ignition-187-r0-3-protocol-repair/r0-3-trial-handoff.md",
     "reports/evaluations/ignition-187-r0-3-protocol-repair/task182-r2-failure-receipt-r0.2.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/blind-case-evaluation.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/cross-case-method-transfer.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.md",
     "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "subjects": [
