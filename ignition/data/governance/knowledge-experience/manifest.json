@@ -109,7 +109,7 @@
     "data/governance/knowledge-experience/alias-index.jsonl": "a974170ff14d0008bb835b4be1d8d37ebac58ef83032a894aa726c42bba36f6e",
     "data/governance/knowledge-experience/asset-cards.jsonl": "ff40cac9d6a925cad5f59e4ed8b3432ea96fc7c743dda530fc45b3580b954fb6",
     "data/governance/knowledge-experience/changes.jsonl": "eaa22953677cfb7b38fe0365d9cfd9308eb69f81002bfeb3ad2b589780b1621f",
-    "data/governance/knowledge-experience/coverage.json": "d3778f39891a1b7258a534e6f0e0c597879e14c83ecc57eeef97c6177a64fd50",
+    "data/governance/knowledge-experience/coverage.json": "09c9e0bb008679b9af9ac6f13d081840c94f5d734e3b3d924d2dd636dc2b7e71",
     "data/governance/knowledge-experience/layered-reading.jsonl": "ebb61d644e72678a3d8a925fb5722563fc78c2a9366a0a991511785fa017f6a7",
     "data/governance/knowledge-experience/search-index.jsonl": "5835252c4e4cfe888e206a878738480fdcf7cc88865e6bb6b755527a4c209ee8"
   },
@@ -144,8 +144,8 @@
   "source_inputs": {
     "data/foundation/function-assets/identity-cards.jsonl": "2b5a83c0e5ffe5c8199d4d8fa831b5e15832c9559614ce21b9a3d643cf6f3c16",
     "data/foundation/nonfunction-claims/claim-registry.jsonl": "b8d9f009553729f97cf82bf70771795f3ba912259e866808cb99341a00a077ed",
-    "data/governance/human-results/result-ledger.jsonl": "609e636e5866fb85ce0062416166bade29ba0b193d57374c906f215b5c18d01c",
-    "data/governance/knowledge-experience/config.json": "995c3604a6c95ee861502230ffcf73d3a109cf177654641724709ddae692023a",
-    "data/governance/knowledge-experience/source-first-seen.json": "cb13ad5901f4b8e96f6d6efcd6c5349750d5068f7418b9e8516c0f7b280b67fe"
+    "data/governance/human-results/result-ledger.jsonl": "dd4be1833cdbf6ebbf773a36055fddad29415afe05bbf1c2e0c47c4f1080ef1d",
+    "data/governance/knowledge-experience/config.json": "2880b771d3ae7106535505b3fe592628834cc4d45eddce63497fe0384235fd8c",
+    "data/governance/knowledge-experience/source-first-seen.json": "eb6251a493cf8bb1cdc483648a84b7844403d02bd790855da7ceae97fe3cec97"
   }
 }

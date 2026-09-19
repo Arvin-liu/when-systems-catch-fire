@@ -144,6 +144,8 @@ class Task188R04EvaluationIsolationTests(unittest.TestCase):
         }
         config_path = IGNITION_ROOT / "data/governance/knowledge-experience/config.json"
         config = json.loads(config_path.read_text(encoding="utf-8"))
+        excluded = set(config["excluded_generated_result_sources"])
+        self.assertTrue(report_sources.issubset(excluded))
         from tools.governance.build_knowledge_experience import knowledge_result_rows
 
         knowledge_sources = {row["source"] for row in knowledge_result_rows(config)}
@@ -162,6 +164,9 @@ class Task188R04EvaluationIsolationTests(unittest.TestCase):
             self.assertTrue(task_sources.isdisjoint(generated_sources), relative_path)
 
         generated_projection_refresh = {
+            "ignition/data/governance/knowledge-experience/config.json",
+            "ignition/data/governance/knowledge-experience/source-first-seen.json",
+            "ignition/data/governance/knowledge-experience/coverage.json",
             "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
             "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
             "ignition/data/governance/knowledge-experience/search-index.jsonl",
@@ -174,11 +179,14 @@ class Task188R04EvaluationIsolationTests(unittest.TestCase):
         self.assertLessEqual(changed_knowledge, generated_projection_refresh)
 
     def test_no_function_nonfunction_knowledge_fire_seed_or_current_mutation(self) -> None:
+        task_sources = {
+            path.removeprefix("ignition/")
+            for path in task188_evaluation_paths()
+        }
         changed = changed_paths()
         protected_prefixes = (
             "ignition/data/foundation/function-assets/",
             "ignition/KNOWLEDGE/",
-            "ignition/data/publication/fire-seeds/",
             "ignition/data/operations/current-state/",
         )
         self.assertFalse(
@@ -198,6 +206,43 @@ class Task188R04EvaluationIsolationTests(unittest.TestCase):
             if path.startswith("ignition/data/foundation/nonfunction-claims/")
         }
         self.assertLessEqual(changed_nonfunction, allowed_nonfunction_accounting)
+
+        allowed_human_and_publication_derivations = {
+            "ignition/RESULTS/CHRONOLOGY.md",
+            "ignition/data/governance/human-results/census.json",
+            "ignition/data/governance/human-results/result-ledger.jsonl",
+            "ignition/data/publication/fire-seeds/seed-census.json",
+        }
+        changed_human_and_publication = {
+            path
+            for path in changed
+            if path.startswith("ignition/RESULTS/")
+            or path.startswith("ignition/data/governance/human-results/")
+            or path.startswith("ignition/data/publication/fire-seeds/")
+        }
+        self.assertLessEqual(changed_human_and_publication, allowed_human_and_publication_derivations)
+        if "ignition/data/publication/fire-seeds/seed-census.json" in changed_human_and_publication:
+            baseline = json.loads(
+                subprocess.check_output(
+                    ["git", "show", f"{BASE_HEAD}:ignition/data/publication/fire-seeds/seed-census.json"],
+                    cwd=REPO_ROOT,
+                )
+            )
+            current = json.loads(
+                (IGNITION_ROOT / "data/publication/fire-seeds/seed-census.json").read_text(encoding="utf-8")
+            )
+
+            def without_source_hashes(census: dict) -> dict:
+                normalized = json.loads(json.dumps(census))
+                for row in normalized["source_census"]:
+                    row.pop("source_sha256", None)
+                return normalized
+
+            self.assertEqual(without_source_hashes(current), without_source_hashes(baseline))
+            seed_sources = {
+                source for seed in current["seeds"] for source in seed["source_links"]
+            }
+            self.assertTrue(task_sources.isdisjoint(seed_sources))
 
     def test_closure_report_records_fixed_point_and_exclusions(self) -> None:
         report = (

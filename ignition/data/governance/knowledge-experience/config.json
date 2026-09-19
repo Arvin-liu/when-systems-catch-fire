@@ -45,6 +45,10 @@
   ],
   "excluded_generated_result_sources": [
     "docs/architecture/current-facts.md",
+    "reports/evaluations/ignition-188-r0-4-protocol-repair/complexity-budget-r0.4.md",
+    "reports/evaluations/ignition-188-r0-4-protocol-repair/evaluation-plane-isolation-fixed-point.md",
+    "reports/evaluations/ignition-188-r0-4-protocol-repair/r0-3-case-exposure-defect.md",
+    "reports/evaluations/ignition-188-r0-4-protocol-repair/task182-r3-minimum-failure-facts-r0.4.md",
     "reports/evaluations/ignition-187-r0-3-protocol-repair/complexity-budget.md",
     "reports/evaluations/ignition-187-r0-3-protocol-repair/evaluation-plane-isolation-fixed-point.md",
     "reports/evaluations/ignition-187-r0-3-protocol-repair/r0-2-invalid-reproduction.md",

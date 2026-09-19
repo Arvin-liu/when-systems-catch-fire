@@ -14,14 +14,20 @@ not create a parallel admission or promotion framework.
 - The official nonfunction generator records one
   `EXCLUDED_EVALUATION_EVIDENCE_ONLY` row per R0.4 path with zero candidate
   fragments and zero canonical claim IDs.
-- R0.4 report sources are not in the Knowledge result rows or generated
-  canonical source lists. No Fire Seed or Current path is registered.
+- The four R0.4 Markdown reports are visible in the generated human-results
+  ledger as `HUMAN_INDEX_ONLY` and are explicitly listed in
+  `excluded_generated_result_sources`; they are not in Knowledge result rows
+  or generated canonical source lists.
+- Fire Seed census hashes may follow the existing generated nonfunction index
+  and chronology hashes, but normalized seed content and source links remain
+  unchanged. No R0.4 source is a Fire Seed or Current path.
 
 The Knowledge machine projections were refreshed only because the official
-nonfunction generator changed the source hash of its existing generated index.
-That refresh is a derived hash propagation; it adds zero R0.4 sources to the
-Knowledge result rows or canonical source lists. Human `KNOWLEDGE/` surfaces,
-the Knowledge admission configuration, Fire Seeds, Current facts, and Current
+nonfunction generator changed the source hash of its existing generated index;
+the Knowledge configuration was also updated with the explicit R0.4 exclusion
+list. These are governed provenance/derived projections: they add zero R0.4
+sources to Knowledge result rows or canonical source lists. Human
+`KNOWLEDGE/` surfaces, Fire Seed content and links, Current facts, and Current
 projections remain unchanged.
 
 ## Fixed point
@@ -44,7 +50,8 @@ R0_4_NONFUNCTION_CANDIDATES=0
 NONFUNCTION_CLAIM_GENERATION_DETERMINISTIC=PASS
 KNOWLEDGE_RESULT_SOURCES_R0_4=0
 R0_4_CANONICAL_SOURCE_ADMISSIONS=0
-KNOWLEDGE_PROJECTION_REFRESH=DERIVED_NONFUNCTION_INDEX_HASH_ONLY
+KNOWLEDGE_PROJECTION_REFRESH=DERIVED_INDEX_AND_EXCLUSION_PROVENANCE
+FIRE_SEED_CONTENT_LINKS_R0_4=0
 R0_4_ISOLATION_TESTS=7/7
 SECOND_GENERATION_BYTE_FIXED_POINT=PASS
 FOUNDATION_CANDIDATE_KNOWLEDGE_CURRENT_FIRE_SEEDS_MUTATIONS=NONE
