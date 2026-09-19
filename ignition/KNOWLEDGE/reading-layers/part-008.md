@@ -4,13 +4,6 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
-<a id="reading-hr-8f3c2449dfb9208b"></a>
-## 121Q25C Lifecycle-Gate Deadlock Repair
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Q25B correctly separated completion states but incorrectly required projectsynchronizationcomplete for Accepted. Because Pages can be deployed from main only after merge, this made acceptance and merge mutually unreachable. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q25C Lifecycle-Gate Deadlock Repair；Q25B correctly separated completion states but incorrectly required projectsynchronizationcomplete for Accepted. Because Pages can be deployed from main only after merge, this made acceptance and merge mutually unreachable.；Q25C evaluates each triggered surface's blocks list at Ready, Accepted, Merged, Current and Closed. The Pages homepage is post-merge and blocks only Current/Closed. It may remain pending through independent acceptance and merge, while Current/Closed continue to require main deployment and live fetch.；Every triggered external surface now has an individual attestation record. A global true value cannot hide a missing, pending, duplicate, unknown or wrong-authority surface entry. Repository evidence must resolve to an existing path; external evidence uses a typed external: : form. Local validation always reports live external truth false.；Q25B is preserved as superseded non-ready history. Q25C is the sole final Ready method candidate on PR #57. This report proves only the repository contract and tests; it does not attest production Pages or make method 1.1.0 current.
-- 完整阅读：[reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md](../../reports/operations/121Q25C-lifecycle-gate-deadlock-repair.md)
-
 <a id="reading-hr-8f6026df1ef643fe"></a>
 ## E1 规范性审核 - 线性演化协议 (Linear-Evolution Protocol)
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -353,3 +346,10 @@
 - 1 分钟：Status: PASSWITHEXPLICITDEFICITS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Task172 Step10 — global corpus QA；Status: PASSWITHEXPLICITDEFICITS；This is a repository-local integrity and metadata-governance audit. It does not promote scholarly metadata to evidence, establish external truth, or treat a provider taxonomy as UNESCO authority.；UNESCO primary authority: 24/24 fields, 245/245 four-digit disciplines, and 2,178 primary six-digit subdisciplines.；Every primary four-digit discipline has 8 metadata links; minimum and maximum are both 8.；Global corpus: 1,802 physical metadata records and 1,960 many-to-many discipline links.
 - 完整阅读：[reports/operations/ignition-172-20260915-step10-global-corpus-qa.md](../../reports/operations/ignition-172-20260915-step10-global-corpus-qa.md)
+
+<a id="reading-hr-a1afc24be5e25028"></a>
+## IGNITION-20260827-142 Step 08 — OpenClaw Public Interface Audit
+`HISTORICAL_COMPLETION_RECORD` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The fresh public probe resolved OpenClaw 2026.7.1-2 (0790d9f) and received exit 0 from --version and agent --help. The public surface exposes JSON, local execution, explicit session, message-file and timeout options, while also exposing channel and delivery controls. The existing adapter remains… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-142 Step 08 — OpenClaw Public Interface Audit；The fresh public probe resolved OpenClaw 2026.7.1-2 (0790d9f) and received exit 0 from --version and agent --help. The public surface exposes JSON, local execution, explicit session, message-file and timeout options, while also exposing channel and delivery controls. The existing adapter remains a translation-only boundary; no agent loop was added.；OpenClaw remains blocked because the disposable workspace and no-channel/no-browser boundary, auth-source separation, process cleanup and strict structured-result binding were not proven by public metadata alone. The gateway, channel, browser and agent were not started; the auth presence signal was recorded without reading its content.；Machine evidence is ignition/data/operations/iterations/142/step08-openclaw-public-audit.json, validated by ignition/tools/validatetask142publicexecutoraudit.py.；Claim ceiling: fresh public metadata, adapter classification and blocker evidence only; no live completion is claimed.
+- 完整阅读：[reports/operations/ignition-142-step08-openclaw-public-audit.md](../../reports/operations/ignition-142-step08-openclaw-public-audit.md)

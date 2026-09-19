@@ -404,26 +404,6 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `新增案例候选 · P1 接入烟雾测试`, `new-cases`
 
-<a id="asset-hr-10b604a45ebe510b"></a>
-## R0.4 independent evaluator disposition
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-10B604A45EBE510B` · [reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md](../../reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md)
-- **为什么产生：** 此来源记录了什么：R0.4 independent evaluator disposition？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Role: R0.4INDEPENDENTEVALUATOR
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md`, `189-R0-4-INDEPENDENT-EVALUATION`
-- **演化历史：** 2026-09-19: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `R0.4 independent evaluator disposition`, `independent-evaluation-report`
-
 <a id="asset-hr-1125ea8d76940b5f"></a>
 ## 下一步认识论能力评估 — IGNITION-20260908-165
 
@@ -1003,3 +983,23 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Agent 碰撞阶段收口审计（2026-07-08 23:55）`, `agent-collision-phase-closeout-20260708`
+
+<a id="asset-hr-259784cecbb2dc49"></a>
+## 121Q13 Baseline And Overlap Audit
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-259784CECBB2DC49` · [reports/architecture/121Q13-baseline-overlap-audit.md](../../reports/architecture/121Q13-baseline-overlap-audit.md)
+- **为什么产生：** 此来源记录了什么：121Q13 Baseline And Overlap Audit？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 121Q13 starts from 121Q12 Draft PR 47 head 338cfff999e26dce623c6c55d810587db4a668ba.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/architecture/121Q13-baseline-overlap-audit.md`, `121Q13-BASELINE-OVERLAP-AUDIT`
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q13 Baseline And Overlap Audit`, `121Q13-baseline-overlap-audit`

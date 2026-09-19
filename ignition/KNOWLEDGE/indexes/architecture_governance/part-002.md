@@ -1659,11 +1659,6 @@
   - 可搜索名称：NFC-dd12a20e9ef96b0c / Bingham et al. exact full JMLR paper, all-page visual review and publication-near Pyro 0.3.1 source audit: named Python
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—
-- [Blind R0.4 case evaluation](../../ASSET-CARDS.md#asset-hr-a32e39dfa1a9ee8f)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Blind R0.4 case evaluation / blind-case-evaluation
-  - 来源：`reports/evaluations/ignition-189-r0-4-independent-evaluation/blind-case-evaluation.md`
-  - 依赖：—；被引用：—
 - [Boundaries and evidence](../../../docs/architecture/os-control-plane-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-9cfab0fc6695025d / Boundaries and evidence
@@ -2502,5 +2497,10 @@
 - [class ArtifactRefRecord:](../../../reos_vnext/contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6700b48ab59365b4 / class ArtifactRefRecord:
+  - 来源：`reos_vnext/contract.py`
+  - 依赖：—；被引用：—
+- [class EvidenceRequest:](../../../reos_vnext/contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4af0dc121c7d0dc1 / class EvidenceRequest:
   - 来源：`reos_vnext/contract.py`
   - 依赖：—；被引用：—

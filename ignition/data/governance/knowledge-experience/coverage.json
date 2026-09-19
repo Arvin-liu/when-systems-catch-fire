@@ -11,6 +11,11 @@
     "reports/evaluations/ignition-188-r0-4-protocol-repair/evaluation-plane-isolation-fixed-point.md",
     "reports/evaluations/ignition-188-r0-4-protocol-repair/r0-3-case-exposure-defect.md",
     "reports/evaluations/ignition-188-r0-4-protocol-repair/task182-r3-minimum-failure-facts-r0.4.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/blind-case-evaluation.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/cross-case-method-transfer.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.md",
+    "reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.md",
     "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "excluded_timeline_asset_ids": [
@@ -53,21 +58,21 @@
   "function_registry_records": 6158,
   "historical_aliases": 5,
   "historical_result_audit": {
-    "CURRENT_OR_SCOPED_SOURCE": 506,
+    "CURRENT_OR_SCOPED_SOURCE": 501,
     "MACHINE_ONLY": 24082,
     "NOT_MEANINGFUL_PUBLIC_CHANGE": 34,
     "SOURCE_MISSING": 0,
     "STALE_OR_INTERMEDIATE": 34,
     "SUPERSEDED_OR_WITHDRAWN": 77
   },
-  "layered_reading_records": 617,
+  "layered_reading_records": 612,
   "material_nonfunction_claim_cards": 67,
   "materiality_policy": "Every recovered result/article receives a card and three reading levels. Function cards cover the explicit task-98 correction set. Claim cards cover named rebound lineages and risk-class claims on current public surfaces. All remaining registry assets stay fully searchable and retain their machine authority.",
-  "meaningful_changes": 591,
+  "meaningful_changes": 586,
   "nonfunction_claim_records": 18003,
-  "result_asset_cards": 617,
-  "result_sources": 617,
+  "result_asset_cards": 612,
+  "result_sources": 612,
   "schema_version": "1.0.0",
-  "search_records": 24778,
+  "search_records": 24773,
   "snapshot_date": "2026-07-30"
 }

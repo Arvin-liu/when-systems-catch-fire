@@ -4,13 +4,6 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
-<a id="reading-hr-3069e59a51d869c3"></a>
-## 121Q28 肉身锚定的心智层级跃迁写作法审计
-`CANDIDATE_OR_PENDING_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q28 肉身锚定的心智层级跃迁写作法审计；Status: READYFORGPTVERIFICATIONCANDIDATEONLY；repository: Arvin-liu/when-systems-catch-fire；starting origin/main: b396c136b47d8fd60ca513a531cb96ce65293d20；isolated branch: docs/121q28-embodied-cognitive-leap-writing-method-20260716；open-work conflict: no open PR or branch targeted the same Q28 method paths at task start; older open publication PRs #17-#21 remain separate historical candidates and were not modified.
-- 完整阅读：[reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md](../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
-
 <a id="reading-hr-3078ad77a2ea0d78"></a>
 ## OpenClaw Adapter R1
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
@@ -353,3 +346,10 @@
 - 1 分钟：本原则适用于所有从项目外部获得的材料，包括但不限于： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：External Input Non-Republication Principle；12026年7月19日（人类纪元；对应公元2026年7月19日）— Q33 正式候选构件；外部输入材料不得被复述、重新发布或再分发。；本原则适用于所有从项目外部获得的材料，包括但不限于：；任何受版权保护且未明确授权本项目使用的原文；来源引用：记录原始来源、作者、时间、渠道和版权状态
 - 完整阅读：[docs/governance/external-input-non-republication-principle.md](../../docs/governance/external-input-non-republication-principle.md)
+
+<a id="reading-hr-4419fea9529c829c"></a>
+## 121Q31T｜交互系统总图与双来源写作素材池合并收口审计
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：PR 60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main。合并前重新核验了 PR HEAD、base、mergeability、精确 HEAD CI、Q29R 哈希、9 组／41 节点／35 边、L0—L6、全部 target 与证据边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q31T｜交互系统总图与双来源写作素材池合并收口审计；PR #60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main。合并前重新核验了 PR HEAD、base、mergeability、精确 HEAD CI、Q29R 哈希、9 组／41 节点／35 边、L0—L6、全部 target 与证据边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。；本收口将之元写作法 0.4.0 和系统图 0.1.0 更新为 Current。0.3.0 保留为历史已合并版本；Q29R 和第一条成果 registry 继续绑定真实生成版本 0.3.0。externalinput | ignitionincrement 成为当前素材类型，但内部增量仍不是独立外部证据，不因结构化、模型化或重复 AI 处理提高证据等级。结构对应中的 candidate 继续表示认识论边界。；系统图继续是同一机器 spec 生成的 9 组、41 节点、35 边导航投影，严格保持 L0—L6。README、Pages 和独立交互页共用同一 SVG；图不构成 L7、真值层、因果证明、严格同构或项目完备性证明。Q29R 正文和受限来源均未修改或重发。；final main 的 Foundation、Function OS、Pages 生产部署，以及首页、交互页、SVG、全部 41 节点和 Q29R 线上哈希的无缓存实况证据，由 GitHub Actions 与 1111 结果回执承载。121Q31 候选记录保持原样；本文件和 121Q31T manifest／seal 只追加收口事实。
+- 完整阅读：[reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md](../../reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md)

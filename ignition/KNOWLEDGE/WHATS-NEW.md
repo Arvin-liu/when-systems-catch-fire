@@ -4,51 +4,6 @@
 
 ## 2026
 
-<a id="change-src-hr-e40d8f942099b046"></a>
-### 2026-09-19 · Negative-control audit
-
-- **类型：** `AUDIT_OR_ADJUDICATION`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Stage: Step04
-- **来源：** [negative-control-audit.md](../reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.md)
-- **资产卡：** [HR-E40D8F942099B046](./ASSET-CARDS.md#asset-hr-e40d8f942099b046)
-
-<a id="change-src-hr-d112271f2699f37a"></a>
-### 2026-09-19 · Cross-case R0.4 method transfer
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Stage: Step03, after the blind semantic checkpoint 02889bfd1dd5f201b70a7084f48769ca87a290d5
-- **来源：** [cross-case-method-transfer.md](../reports/evaluations/ignition-189-r0-4-independent-evaluation/cross-case-method-transfer.md)
-- **资产卡：** [HR-D112271F2699F37A](./ASSET-CARDS.md#asset-hr-d112271f2699f37a)
-
-<a id="change-src-hr-b139478a5176f244"></a>
-### 2026-09-19 · R0.4 protocol integrity
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Stage: Step01, before semantic evaluation
-- **来源：** [protocol-integrity.md](../reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.md)
-- **资产卡：** [HR-B139478A5176F244](./ASSET-CARDS.md#asset-hr-b139478a5176f244)
-
-<a id="change-src-hr-a32e39dfa1a9ee8f"></a>
-### 2026-09-19 · Blind R0.4 case evaluation
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Stage: Step02, blind semantic checkpoint
-- **来源：** [blind-case-evaluation.md](../reports/evaluations/ignition-189-r0-4-independent-evaluation/blind-case-evaluation.md)
-- **资产卡：** [HR-A32E39DFA1A9EE8F](./ASSET-CARDS.md#asset-hr-a32e39dfa1a9ee8f)
-
-<a id="change-src-hr-10b604a45ebe510b"></a>
-### 2026-09-19 · R0.4 independent evaluator disposition
-
-- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
-- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **变化：** Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Role: R0.4INDEPENDENTEVALUATOR
-- **来源：** [independent-evaluation-report.md](../reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md)
-- **资产卡：** [HR-10B604A45EBE510B](./ASSET-CARDS.md#asset-hr-10b604a45ebe510b)
-
 <a id="change-src-hr-ecb9a4b8ee1483ca"></a>
 ### 2026-09-15 · IGNITION-172 Step07 — Knowledge Experience routing index
 

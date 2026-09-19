@@ -4,27 +4,6 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
-<a id="reading-hr-cc59ba840b050653"></a>
-## Basis-pressure sensor qualification — IGNITION-20260907-164
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Basis-pressure sensor qualification — IGNITION-20260907-164；Command: Arvin-liu/1111/agent-commands/IGNITION-20260907-164.md@ef5ac179529bb0dc44c7d1111ca1ea63ef4c89e5 Command blob: 18ba43e3a7d6aab3a8bdc794b2767db2e861b78a Command SHA-256: e25ac0171db94709d0a0c65fa51c8f425b935c191a17e8210336e6ed943db1f3 Formal base: work/IGNITION-20260907-163@644c93cd5cd0c7d4ed490f95795897df3bcd8826 Lifecycle ceiling: research-only, Dra…；Status: FAIL True-leap pre-boundary hits: 2/4 P02/P03/P04 holdout hits: 1/3 Strong-negative false positives: 0 Failed gates: trueleappreboundaryatleast3of4, p02p03p04preboundaryatleast2of3, everypositiveboundaryreconstructed, removelargestsourcefamilykeepstwotruesignals, nullproxynotequivalent Null-proxy match: True；Frozen pressure dimensions:；CONTRADICTORYPREDICTIONBURDEN: prediction/expectation language with contradiction or inconsistency；CROSSSOURCECOLLISION: collision, conflict, contradiction, overlap, duplicate, and clash markers across families
-- 完整阅读：[docs/governance/basis-pressure-sensor-qualification-2026-09-07.md](../../docs/governance/basis-pressure-sensor-qualification-2026-09-07.md)
-
-<a id="reading-hr-cc88abdd459a3602"></a>
-## Strong-term audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Theorem, law, isomorphism and causality wording in legacy titles is preserved as historical text and downgraded to unverified claim status in the registry. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Strong-term audit；Theorem, law, isomorphism and causality wording in legacy titles is preserved as historical text and downgraded to unverified claim status in the registry.
-- 完整阅读：[reports/foundation-architecture/strong-term-audit-20260712.md](../../reports/foundation-architecture/strong-term-audit-20260712.md)
-
-<a id="reading-hr-cd008d2b8134b963"></a>
-## 点火 Operation-specific Playbooks R1
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Only operations whose registry status is CURRENT or CURRENTBOUNDED and whose AI callability is PUBLIC or PUBLICBOUNDED receive a callable playbook. Required inputs, outputs, status, mode, read set, authorities, validators and claim ceiling below are derived from the registry rather than copied as… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：点火 Operation-specific Playbooks R1；Generated human view. Canonical authored playbook source: ignition/data/operations/ignition-operation-playbooks-r1.json; capability fields are projected from ignition/data/operations/ignition-operation-capability-registry-r1.json. The synchronized Task148 playbooks are Current on formal main; this repository-local lifecycle state does not assert external tru…；Only operations whose registry status is CURRENT or CURRENTBOUNDED and whose AI callability is PUBLIC or PUBLICBOUNDED receive a callable playbook. Required inputs, outputs, status, mode, read set, authorities, validators and claim ceiling below are derived from the registry rather than copied as a second truth source.；主题：foundation.resolvecurrentasset — 解析 Current canonical 资产 / Resolve a Current canonical asset；Registry status: CURRENTBOUNDED；Run mode: READONLYRUN
-- 完整阅读：[docs/operations/ignition-operation-playbooks-r1.md](../../docs/operations/ignition-operation-playbooks-r1.md)
-
 <a id="reading-hr-cda7771b389c6cec"></a>
 ## IGNITION-20260907-159
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
@@ -87,13 +66,6 @@
 - 1 分钟：本文件纠正 084 报告中对生成机制和命题真值的不准确描述。所有纠正基于 084-max-decisions.jsonl 的机器可读真值重算，不修改 084 原始文件。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：085: 084 Truth Status Correction；本文件纠正 084 报告中对生成机制和命题真值的不准确描述。所有纠正基于 084-max-decisions.jsonl 的机器可读真值重算，不修改 084 原始文件。；"353 条 GLM-5.2 max 独立语义裁决"；"PRIMARY/ADVERSARIAL/RECONCILED 完整率 100%"；084 的 353 条记录 100% 由 process084batch.py 的确定性规则代码分支生成，具体机制：；正确口径：DETERMINISTICRULEBASEDHEURISTICGATEOUTPUT
 - 完整阅读：[reports/foundation-architecture/085-084-truth-status-correction.md](../../reports/foundation-architecture/085-084-truth-status-correction.md)
-
-<a id="reading-hr-d112271f2699f37a"></a>
-## Cross-case R0.4 method transfer
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Stage: Step03, after the blind semantic checkpoint 02889bfd1dd5f201b70a7084f48769ca87a290d5 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Cross-case R0.4 method transfer；Artifact type: EVALUATIONEVIDENCE Task: IGNITION-20260919-189-R0.4 Stage: Step03, after the blind semantic checkpoint 02889bfd1dd5f201b70a7084f48769ca87a290d5；Bounded result: METHODTRANSFEREVIDENCE=PARTIALINTWOR04HELDOUTCASES；The same source-bounded discipline appears in both cases: recorded observations are separated from interpretations, unknowns stay visible, and stronger-claim evidence requests are tied to the object. EXP-01 asks for complete event capture, controlled wording/position variation, usability evidence, and instrumentation checks. GOV-01 asks for record-level reco…；The method is not fully uniform. EXP-01 explicitly preserves multiple alternative explanations for the observed association. GOV-01 avoids selecting an explanation for the three manual-review records or the ordering gap, but does not explicitly enumerate multiple plausible explanations for those unresolved points. That case-specific partial limits the transf…；The responses share the four schema-required fields, but a mechanical content-copy signal was not found: there are zero exact shared sentences across the two accounts. Their unresolved questions and evidence requests are specific to the kiosk event stream versus the audit-log migration.
-- 完整阅读：[reports/evaluations/ignition-189-r0-4-independent-evaluation/cross-case-method-transfer.md](../../reports/evaluations/ignition-189-r0-4-independent-evaluation/cross-case-method-transfer.md)
 
 <a id="reading-hr-d17946ac354300d6"></a>
 ## IGNITION-143 Resume Capsule
@@ -353,3 +325,31 @@
 - 1 分钟：Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q28R 之元写作法 0.2.0 修订审计；Status: READYFORGPTVERIFICATIONCANDIDATEONLY；Claim ceiling: candidatecognitivelevelleapmethod020implemented / repositorysynchronizationcompletependingindependentreview；origin/main: b396c136b47d8fd60ca513a531cb96ce65293d20；existing branch: docs/121q28-embodied-cognitive-leap-writing-method-20260716；existing Draft PR: #58, kept OPEN / DRAFT / unmerged
 - 完整阅读：[reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md](../../reports/operations/121Q28R-cognitive-level-leap-writing-method-audit.md)
+
+<a id="reading-hr-de79d1279206415f"></a>
+## ESI R0 人类阅读入口
+`CURRENT_SCOPED_SOURCE` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：状态：CURRENTWITHOPENOBLIGATIONS · 这不是事实、权限或真值入口。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：状态：CURRENTWITHOPENOBLIGATIONS · 这不是事实、权限或真值入口。；我们正在测试一个候选现象：模型最近看到的结构化上下文，可能影响它下一次回答的组织方式。当前材料只支持把它当作一个需要控制实验的 CANDIDATEESISIGNAL；它不是已经证明的机制，也不是新的法律、真理层或安全层。；结构化上下文是“软”的：最多提供可比较的阅读线索、实验路由偏好、遥测或解释辅助。权限、授权、真值、M/E、Owner 状态、外部副作用、安全放行和 EPISTEMICALLYACCEPTED 仍由各自硬来源与门禁决定。；这页把机器边界翻译成人能先读懂的入口。它解释为什么要把原始结构、术语、文风和结构破坏控制分开：只重复词语或模仿语气，不等于保留了边界。它也把文献、合成夹具和 Owner 提供的公开安全观察放在不同证据位置，避免把它们合成一条更强的故事。；读者可以用它来选择回到候选定义、过渡语法、盲评协议、合成证据夹具和离线评分结果，检查一条回答是否保留未知、区分工程与真值、抵抗撤回反弹，并把术语泄漏与边界行为分开记录。它可以帮助提出反例、设计下一步和发现需要人工复核的地方。；它不是脑控、洗脑、永久训练或模型权重更新的证据。
+- 完整阅读：[docs/architecture/esi-human-surface-r0.md](../../docs/architecture/esi-human-surface-r0.md)
+
+<a id="reading-hr-de9bf5c4104738d3"></a>
+## v0.2 函数依赖图初稿
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
+- 1 分钟：--- title: "函数依赖图初稿生成" author: "之元" date: "2026-07-06" --- 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：用途：作为点火项目 v0.2 的函数层级、函数依赖、重复函数识别和层级错位审计输入，由 Codex 整理进入 GitHub。；注意：本文是初稿，不代表已经执行函数合并、删除、重命名或层级修正。所有实际修改须经人类维护者复核。；--- title: "函数依赖图初稿生成" author: "之元" date: "2026-07-06" ---；收到。我已经拿到了两张索引表的完整内容。现在开始执行任务 C：生成函数依赖图初稿。；基于索引表中的 602 条函数和 790 条案例，我将构建函数依赖关系的初步框架。；基于点火框架的元函数结构和索引表中的函数分布，定义 7 个层级：
+- 完整阅读：[outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
+
+<a id="reading-hr-deb3e834ad440e87"></a>
+## 认知迁移编辑修订：Owner 决定与独立审查入口
+`HISTORICAL_COMPLETION_RECORD` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: OWNERACCEPTEDRETAINASOPTIONALEXPERIMENTALMODULEWITHEXPLICITRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：认知迁移编辑修订：Owner 决定与独立审查入口；Status: OWNERACCEPTEDRETAINASOPTIONALEXPERIMENTALMODULEWITHEXPLICITRESIDUALS；Current formal main baseline: e5c6d1d0b75dae41b414474bc22747816cd00c78；Current 之元写作法: 0.5.0 and unchanged.；Experimental module: 认知迁移编辑修订 / Cognitive-Migration Editorial Revision, version 0.1.0.；Retain the module as a separate optional experimental module. It is published as a separate module and is not a new current method version.
+- 完整阅读：[reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md](../../reports/publication/zhiyuan-writing-cognitive-migration-editorial-revision-review.md)
+
+<a id="reading-hr-e053e34801e5f2cc"></a>
+## IGNITION-138 — Amendment-01 Step 06 Dynamic Admission
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The census found five installed Agent candidates but admitted none at the initial boundary. A read-only public re-attestation then selected Codex CLI because its current surface is the most independently enforceable: JSONL and output-schema results, --ephemeral, --sandbox read-only, ignored user… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-138 — Amendment-01 Step 06 Dynamic Admission；The census found five installed Agent candidates but admitted none at the initial boundary. A read-only public re-attestation then selected Codex CLI because its current surface is the most independently enforceable: JSONL and output-schema results, --ephemeral, --sandbox read-only, ignored user config/rules, explicit disposable --cd, the Pointfire child-dep…；Gemini CLI was explicitly rechecked and remains a real AGENTICEXECUTOR candidate, not a reasoner or a tool. Its headless JSON/plan surface is strong, but the current public CLI has no separate auth-source or ephemeral-home boundary. Passing the real ~/.gemini home would not satisfy the read-only auth/config contract, so it remains blocked. Plain gh remains T…；The new adapter path binds CODEXHOME to an existing auth reference while binding HOME, TMPDIR, and XDG runtime paths to the attempt-specific writable scratch. It never reads auth contents or copies them into scratch. Metadata before/after is observed without content reads; any change fails closed. The synthetic task workspace remains an independent read-only…；The previous Codex attempt is allowed as the one repaired same-family exception because it was a confirmed pre-inference startup failure with no session, no structured result, no timeout/effect uncertainty, unchanged workspace and a concrete repair. This is not a blind retry. Task138 still has at most three real external invocations and will stop at the firs…；Machine receipt: ignition/data/operations/iterations/138/step06-amendment-01-dynamic-admission.json.
+- 完整阅读：[reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md](../../reports/operations/ignition-138-step06-amendment-01-dynamic-admission.md)

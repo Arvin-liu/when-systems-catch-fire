@@ -4,13 +4,6 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
-<a id="reading-hr-55b610ce1cd160c8"></a>
-## IGNITION-20260826-141 Step 15 — Candidate natural full regression
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：The repaired isolated candidate head 429364bc8f5b9a07652f41303fd7d2106a24aaf5 completed the exact natural full regression with 1260 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 2983.884s runtime / 2984.920s elapsed, with no watchdog, arbitrary timeout or process kill… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260826-141 Step 15 — Candidate natural full regression；The repaired isolated candidate head 429364bc8f5b9a07652f41303fd7d2106a24aaf5 completed the exact natural full regression with 1260 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 2983.884s runtime / 2984.920s elapsed, with no watchdog, arbitrary timeout or process kill. The isolated dependency contract passed with Python 3.14.6, S…；The machine receipt preserves both natural attempts. The first run was not relabeled as green: it completed with 1260 tests, 2 failures, 0 errors and 0 skips. The failures identified two concrete stale bindings: the full regression contract still named Task140, and the system-map geometry contract still named map version 0.14.0 after the Task141 current map…；The captures remain external to the formal repository and are preserved by digest in the machine receipt:；first attempt stdout SHA-256: d0f1d35419064923c62db5d79d4414ba1f54dc7d32b3e446bf7de3e281859d3f;；first attempt stderr SHA-256: 7a67106b8b2053dbc0e7fdc610f6a9c2936a1da9dc8cd3872459ea85a771c807;
-- 完整阅读：[reports/operations/ignition-141-step15-candidate-full-regression.md](../../reports/operations/ignition-141-step15-candidate-full-regression.md)
-
 <a id="reading-hr-565a18c0c443c350"></a>
 ## 新增函数候选 · 赛课机制下的教师生存困境
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -353,3 +346,10 @@
 - 1 分钟：PASS: the only currently admitted candidate is external.codex, and Step10 froze one bounded dispatch envelope without starting inference. The fresh Codex lease came from two real public probes (codex --version and codex exec --help), with no secret content read and no configuration or billing cha… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260825-139 Step 10 — Single-live-attempt admission freeze；PASS: the only currently admitted candidate is external.codex, and Step10 froze one bounded dispatch envelope without starting inference. The fresh Codex lease came from two real public probes (codex --version and codex exec --help), with no secret content read and no configuration or billing change.；The lease is lease-ignition-139-codex-live-01 for codex-cli 0.144.4, with binary digest 134063e133f0b4244fa3b251acf973d4fe4b4aeeacbdc135211bf480f59f1477 and interface digest 9f86f0115238ddde2514587e5f95b0ab0aa6b89495e5912878d49ad26038aa19. Capability admission is the strict OS/executor intersection: effective capability repo.read only. The envelope is bound…；主题：Boundary evidence；The task workspace is read-only and separate from attempt runtime scratch.；Host durable capture is available, with the capture parent separate from the
 - 完整阅读：[reports/operations/ignition-139-step10-live-admission.md](../../reports/operations/ignition-139-step10-live-admission.md)
+
+<a id="reading-hr-694db9c100ff4eac"></a>
+## 任务 113：宋徽宗道教笔记的点火分析
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`
+- 1 分钟：这不是对原笔记的摘要，而是一次受证据边界约束的材料运行。运行的目标不是替徽宗的内心作证，也不是给“道教导致亡国”找一条漂亮因果链；目标是找出材料中最难被同一解释容纳的残余，再让文章承担这个残余。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：任务 113：宋徽宗道教笔记的点火分析；控制仓库：Arvin-liu/1111；任务控制提交：d15ce70bef67b439ec2e99d1aeb1e792b4e6e9ef；正式仓库：Arvin-liu/when-systems-catch-fire；点火执行基线：1b3545a252c542129424a240d3c7eb3b5af808af（最新远端 origin/main，不是任务 112 终止标签）；来源模式：FULLLOCALNOTEHASHMATCH
+- 完整阅读：[reports/publication/song-huizong-taoism-point-fire-analysis.md](../../reports/publication/song-huizong-taoism-point-fire-analysis.md)

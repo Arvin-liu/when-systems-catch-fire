@@ -4,13 +4,6 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
-<a id="reading-hr-4419fea9529c829c"></a>
-## 121Q31T｜交互系统总图与双来源写作素材池合并收口审计
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：PR 60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main。合并前重新核验了 PR HEAD、base、mergeability、精确 HEAD CI、Q29R 哈希、9 组／41 节点／35 边、L0—L6、全部 target 与证据边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q31T｜交互系统总图与双来源写作素材池合并收口审计；PR #60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main。合并前重新核验了 PR HEAD、base、mergeability、精确 HEAD CI、Q29R 哈希、9 组／41 节点／35 边、L0—L6、全部 target 与证据边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。；本收口将之元写作法 0.4.0 和系统图 0.1.0 更新为 Current。0.3.0 保留为历史已合并版本；Q29R 和第一条成果 registry 继续绑定真实生成版本 0.3.0。externalinput | ignitionincrement 成为当前素材类型，但内部增量仍不是独立外部证据，不因结构化、模型化或重复 AI 处理提高证据等级。结构对应中的 candidate 继续表示认识论边界。；系统图继续是同一机器 spec 生成的 9 组、41 节点、35 边导航投影，严格保持 L0—L6。README、Pages 和独立交互页共用同一 SVG；图不构成 L7、真值层、因果证明、严格同构或项目完备性证明。Q29R 正文和受限来源均未修改或重发。；final main 的 Foundation、Function OS、Pages 生产部署，以及首页、交互页、SVG、全部 41 节点和 Q29R 线上哈希的无缓存实况证据，由 GitHub Actions 与 1111 结果回执承载。121Q31 候选记录保持原样；本文件和 121Q31T manifest／seal 只追加收口事实。
-- 完整阅读：[reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md](../../reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md)
-
 <a id="reading-hr-448288b011711aef"></a>
 ## 证据制度卡片：数学
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
@@ -353,3 +346,10 @@
 - 1 分钟：Status: PARTIALUNVERIFIEDCOUNTS. Recomputed: 622 formal objects, 806 formal cases, 22 candidate cases, 34 pending claims. The 075 values 608, 546 and 714 were heuristic row hits, not proof results. Verified replayable legacy counterexamples: 0. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：075 truth audit；Status: PARTIALUNVERIFIEDCOUNTS. Recomputed: 622 formal objects, 806 formal cases, 22 candidate cases, 34 pending claims. The 075 values 608, 546 and 714 were heuristic row hits, not proof results. Verified replayable legacy counterexamples: 0.
 - 完整阅读：[reports/foundation-architecture/075-truth-audit-20260712.md](../../reports/foundation-architecture/075-truth-audit-20260712.md)
+
+<a id="reading-hr-55b610ce1cd160c8"></a>
+## IGNITION-20260826-141 Step 15 — Candidate natural full regression
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The repaired isolated candidate head 429364bc8f5b9a07652f41303fd7d2106a24aaf5 completed the exact natural full regression with 1260 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 2983.884s runtime / 2984.920s elapsed, with no watchdog, arbitrary timeout or process kill… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260826-141 Step 15 — Candidate natural full regression；The repaired isolated candidate head 429364bc8f5b9a07652f41303fd7d2106a24aaf5 completed the exact natural full regression with 1260 tests, 0 failures, 0 errors and 0 skips. The runner completed naturally in 2983.884s runtime / 2984.920s elapsed, with no watchdog, arbitrary timeout or process kill. The isolated dependency contract passed with Python 3.14.6, S…；The machine receipt preserves both natural attempts. The first run was not relabeled as green: it completed with 1260 tests, 2 failures, 0 errors and 0 skips. The failures identified two concrete stale bindings: the full regression contract still named Task140, and the system-map geometry contract still named map version 0.14.0 after the Task141 current map…；The captures remain external to the formal repository and are preserved by digest in the machine receipt:；first attempt stdout SHA-256: d0f1d35419064923c62db5d79d4414ba1f54dc7d32b3e446bf7de3e281859d3f;；first attempt stderr SHA-256: 7a67106b8b2053dbc0e7fdc610f6a9c2936a1da9dc8cd3872459ea85a771c807;
+- 完整阅读：[reports/operations/ignition-141-step15-candidate-full-regression.md](../../reports/operations/ignition-141-step15-candidate-full-regression.md)
