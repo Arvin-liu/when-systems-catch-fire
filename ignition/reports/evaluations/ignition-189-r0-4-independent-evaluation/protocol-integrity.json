@@ -1,0 +1,72 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "evidence_kind": "PROTOCOL_INTEGRITY_ATTESTATION",
+  "task_id": "IGNITION-20260919-189-R0.4",
+  "evaluation_stage": "STEP01_PROTOCOL_INTEGRITY",
+  "disposition": "PROTOCOL_INTEGRITY_PASS",
+  "semantic_evaluation_performed": false,
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "owner_gpt_adjudication": "NOT_RUN",
+  "frozen_successor_evidence": {
+    "freeze_metadata": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/evidence-freeze.json",
+    "successor_head": "57366c84aac62080fda386e8ca34d40e59ccf9f2",
+    "successor_branch": "work/IGNITION-20260919-188-r4-heldout-successor-r0-4-trial",
+    "byte_identical_copies": true,
+    "sha256": {
+      "successor-output-r0.4.json": "390a27ee86271eaaf9d1abb6692d33875bfeafa0f4634c0728fbd9ae6a498878",
+      "successor-read-ledger-r0.4.json": "341cf53c38e7f9adff02ccd8cff142ab86955f970a0f85af41812e2c31c938d0",
+      "successor-ledger-validation-receipt-r0.4.json": "dde5cd45d4f2655c111558fc5d7ef35d45c180426f12355370d4c93a7e8f5b05"
+    }
+  },
+  "mechanical_validation": {
+    "packet_manifest_sha256": "bc702b24b546997c40182246cc6b890fe321d661692fb6e13aa3a0410adfbbea",
+    "case_manifest_sha256": "4e96ad3b10a365f71194cb882d82ead928788f93594a49a8a6e2ed093e966e14",
+    "successor_output_schema": "PASS",
+    "successor_read_ledger_schema": "PASS",
+    "receipt_schema": "PASS",
+    "packet_manifest_schema": "PASS",
+    "case_manifest_schema": "PASS",
+    "finalizer_status": "PASS_READ_LEDGER_CLEAN",
+    "frozen_copy_sha_unchanged_before_after_finalizer": true,
+    "finalizer_source_sha256": "9d11ab497fd9949fe3162a9c66815e922a050a9b5e7badccceb0c9ade41d365a",
+    "receipt_read_ledger_schema_sha256": "02d2d504f4a5f2e5d5f333546e8bcd0c47c7b9a1e0f898e7610f270e4e65328e",
+    "checks": {
+      "allowlisted_cognitive_digests": true,
+      "case_specific_channel_only": true,
+      "operational_rows_status_only": true,
+      "no_prohibited_cognitive_reads": true,
+      "no_sealed_surface_paths": true,
+      "summary_and_closure_consistent": true,
+      "ledger_state_pre_final_validation_closed": true,
+      "trial_disposition_clean": true,
+      "receipt_task_binding": true,
+      "receipt_ledger_binding": true,
+      "receipt_manifest_binding": true,
+      "receipt_finalizer_binding": true,
+      "receipt_outside_certified_packet": true
+    }
+  },
+  "ledger_audit": {
+    "entry_count": 22,
+    "cognitive_reads": 18,
+    "operational_executions": 2,
+    "operational_status_observations": 2,
+    "prohibited_cognitive_reads": 0,
+    "contaminated_entries": 0,
+    "case_specific_paths": [
+      "ignition/evaluation/heldout/r0.4/successor-visible/cases/IGNITION-20260919-188-EXP-01.md",
+      "ignition/evaluation/heldout/r0.4/successor-visible/cases/provenance/IGNITION-20260919-188-EXP-01.json",
+      "ignition/evaluation/heldout/r0.4/successor-visible/cases/IGNITION-20260919-188-GOV-01.md",
+      "ignition/evaluation/heldout/r0.4/successor-visible/cases/provenance/IGNITION-20260919-188-GOV-01.json"
+    ],
+    "operational_content_exposure": "NO",
+    "final_validator_writeback": "NONE_OBSERVED; CERTIFIED_LEDGER_SHA_UNCHANGED"
+  },
+  "provenance": {
+    "source_scope": "Task188 exact-head R0.4 successor-visible packet plus frozen local Successor evidence",
+    "source_paths_visible_in_artifact": true,
+    "evaluator_sealed_surface_read": false,
+    "historical_evaluator_or_prior_successor_output_read_for_this_step": false
+  }
+}
