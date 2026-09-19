@@ -1,0 +1,38 @@
+{
+  "protocol_under_test": "r0.3",
+  "manifest_sha256": "5c17afa2ff93bf2f58a3f2a0f00ca67a3b1459848ddf1682aab0463c435e368c",
+  "fixtures": {
+    "allowlisted_cognitive_non_case_clean": {
+      "expected_status": "PASS_READ_LEDGER_CLEAN",
+      "row_disposition": "CLEAN",
+      "schema_valid": true,
+      "status": "PASS_READ_LEDGER_CLEAN"
+    },
+    "allowlisted_heldout_case_clean_claim": {
+      "expected_status": "FAIL_READ_LEDGER_INVALID",
+      "row_disposition": "CLEAN",
+      "schema_valid": true,
+      "status": "FAIL_READ_LEDGER_INVALID"
+    },
+    "allowlisted_heldout_case_forced_contaminated": {
+      "expected_status": "FAIL_READ_LEDGER_CONTAMINATED",
+      "row_disposition": "CONTAMINATED",
+      "schema_valid": true,
+      "status": "FAIL_READ_LEDGER_CONTAMINATED"
+    },
+    "operational_status_case_specific": {
+      "expected_status": "FAIL_READ_LEDGER_CONTAMINATED",
+      "row_disposition": "CONTAMINATED",
+      "schema_valid": true,
+      "status": "FAIL_READ_LEDGER_CONTAMINATED"
+    },
+    "unlisted_cognitive_read": {
+      "expected_status": "FAIL_READ_LEDGER_CONTAMINATED",
+      "row_disposition": "CONTAMINATED",
+      "schema_valid": true,
+      "status": "FAIL_READ_LEDGER_CONTAMINATED"
+    }
+  },
+  "verdict": "R0_3_CASE_EXPOSURE_SEMANTIC_DEFECT_CONFIRMED",
+  "private_task182_r3_evidence_read": false
+}
