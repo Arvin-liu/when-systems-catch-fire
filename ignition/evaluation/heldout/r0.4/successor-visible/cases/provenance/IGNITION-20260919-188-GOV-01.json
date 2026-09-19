@@ -1,0 +1,15 @@
+{
+  "case_id": "IGNITION-20260919-188-GOV-01",
+  "authoring_task_id": "IGNITION-20260919-188",
+  "successor_trial_task_id": "IGNITION-20260919-188-R0.4",
+  "source_kind": "ORIGINAL_SYNTHETIC_AUTHORING",
+  "synthetic": true,
+  "real_personal_data_used": false,
+  "contains_gold_ir": false,
+  "contains_expected_relations": false,
+  "contains_expected_continuation": false,
+  "contains_evaluator_answer": false,
+  "provenance_pinned": true,
+  "pin_method": "source_sha256 recorded in the case manifest",
+  "source_sha256": "1509c3c52169b2be051fec9f3356726c2e5fb33b4d1e08d4db26b51a4afbdcc6"
+}

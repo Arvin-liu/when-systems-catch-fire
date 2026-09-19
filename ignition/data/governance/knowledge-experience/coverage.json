@@ -7,6 +7,10 @@
     "reports/evaluations/ignition-187-r0-3-protocol-repair/r0-2-invalid-reproduction.md",
     "reports/evaluations/ignition-187-r0-3-protocol-repair/r0-3-trial-handoff.md",
     "reports/evaluations/ignition-187-r0-3-protocol-repair/task182-r2-failure-receipt-r0.2.md",
+    "reports/evaluations/ignition-188-r0-4-protocol-repair/complexity-budget-r0.4.md",
+    "reports/evaluations/ignition-188-r0-4-protocol-repair/evaluation-plane-isolation-fixed-point.md",
+    "reports/evaluations/ignition-188-r0-4-protocol-repair/r0-3-case-exposure-defect.md",
+    "reports/evaluations/ignition-188-r0-4-protocol-repair/task182-r3-minimum-failure-facts-r0.4.md",
     "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "excluded_timeline_asset_ids": [
