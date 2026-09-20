@@ -1,0 +1,33 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step03",
+  "synthetic": true,
+  "personal_data": false,
+  "sources": [
+    {
+      "source_ref": "synthetic://ignition-190/positive-a",
+      "source_text": "IGNITION-190 synthetic positive A\nmethod=contrastive-probe-r0\noutcome=distinguishable-observation\n",
+      "sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+      "pinned": true
+    },
+    {
+      "source_ref": "synthetic://ignition-190/positive-b",
+      "source_text": "IGNITION-190 synthetic positive B\nmethod=reversible-checklist-r0\noutcome=bounded-failure\n",
+      "sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+      "pinned": true
+    },
+    {
+      "source_ref": "synthetic://ignition-190/negative-a",
+      "source_text": "IGNITION-190 synthetic negative A\nmethod=unlinked-candidate\noutcome=unbound-result\n",
+      "sha256": "1d1a56d3de36c27ec8279d3fd15845b351048c7d93eb6abbed413c629b7fe521",
+      "pinned": true
+    },
+    {
+      "source_ref": "synthetic://ignition-190/negative-b",
+      "source_text": "IGNITION-190 synthetic negative B\nnarrative-only=no-exact-provenance\n",
+      "sha256": "32846fe5edc1e0b96da523fb62a7b5e47b6d1aed2b5f26862f927a9621d2caea",
+      "pinned": true
+    }
+  ]
+}

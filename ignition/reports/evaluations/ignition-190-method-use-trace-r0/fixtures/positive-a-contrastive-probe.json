@@ -1,0 +1,219 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "positive-a-contrastive-probe",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-190/positive-a",
+      "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+      "exact_locator": "synthetic://ignition-190/positive-a#candidate",
+      "summary": "A candidate method proposes comparing competing explanations with one discriminating probe.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "candidate_ref": "method:contrastive-probe-r0"
+    },
+    {
+      "segment_id": "selection",
+      "segment_kind": "SELECTION_RATIONALE",
+      "source_ref": "synthetic://ignition-190/positive-a",
+      "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+      "exact_locator": "synthetic://ignition-190/positive-a#selection",
+      "summary": "The method was selected because the case contains two plausible explanations and a reversible probe is available.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "selected_candidate_ref": "method:contrastive-probe-r0",
+      "rationale": "The candidate directly separates the two stated explanations while preserving unknowns.",
+      "alternatives_considered": [
+        "template replay without a probe",
+        "single observation summary"
+      ]
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-190/positive-a",
+      "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+      "exact_locator": "synthetic://ignition-190/positive-a#context",
+      "summary": "The context is a synthetic bounded comparison with limited observations and no external data.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "context_ref": "selection",
+      "constraints": [
+        "synthetic-only inputs",
+        "reversible probe",
+        "no causal claim from one observation"
+      ]
+    },
+    {
+      "segment_id": "use",
+      "segment_kind": "METHOD_USE_EVENT",
+      "source_ref": "synthetic://ignition-190/positive-a",
+      "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+      "exact_locator": "synthetic://ignition-190/positive-a#use",
+      "summary": "The selected contrastive probe was applied to the synthetic input in one ordered use event.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "used_candidate_ref": "method:contrastive-probe-r0",
+      "input_ref": "context",
+      "expected_observation": "The probe should produce an observation that differs under the two candidate explanations.",
+      "use_order": 1
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-190/positive-a",
+      "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+      "exact_locator": "synthetic://ignition-190/positive-a#outcome",
+      "summary": "The probe produced a distinguishable synthetic observation while leaving causal attribution unresolved.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "use_segment_ref": "use",
+      "outcome_type": "OBSERVED_OUTCOME",
+      "observed_outcome": "The observed pattern separated the two synthetic predictions for this bounded fixture.",
+      "confounders": [
+        "synthetic measurement noise",
+        "single-probe order"
+      ],
+      "causal_attribution": "NOT_ESTABLISHED"
+    },
+    {
+      "segment_id": "revision",
+      "segment_kind": "REVISION_OR_DISPOSITION",
+      "source_ref": "synthetic://ignition-190/positive-a",
+      "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+      "exact_locator": "synthetic://ignition-190/positive-a#revision",
+      "summary": "No method revision was required for the bounded observation, pending independent reconstruction.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "revision_type": "NO_REVISION",
+      "revision_rationale": "The recorded result did not expose a method defect within the synthetic scope.",
+      "disposition": "NO_REVISION",
+      "target_candidate_ref": "method:contrastive-probe-r0",
+      "rollback_ref": null
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

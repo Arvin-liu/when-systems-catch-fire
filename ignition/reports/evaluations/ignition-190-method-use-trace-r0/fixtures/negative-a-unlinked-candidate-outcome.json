@@ -1,0 +1,81 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "negative-a-unlinked-candidate-outcome",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-190/negative-a",
+      "source_sha256": "1d1a56d3de36c27ec8279d3fd15845b351048c7d93eb6abbed413c629b7fe521",
+      "exact_locator": "synthetic://ignition-190/negative-a#candidate",
+      "summary": "A candidate is named but no selection or use link is recorded.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "candidate_ref": "method:unlinked-candidate"
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-190/negative-a",
+      "source_sha256": "1d1a56d3de36c27ec8279d3fd15845b351048c7d93eb6abbed413c629b7fe521",
+      "exact_locator": "synthetic://ignition-190/negative-a#outcome",
+      "summary": "An outcome is narrated without a bound use event.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "use_segment_ref": "missing-use",
+      "outcome_type": "OBSERVED_OUTCOME",
+      "observed_outcome": "A synthetic result is present but its method lineage is unbound.",
+      "confounders": [
+        "unrecorded context"
+      ],
+      "causal_attribution": "UNKNOWN"
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}
