@@ -1,0 +1,21 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step06",
+  "transfer_case_id": "TRANSFER-01",
+  "condition_id": "FACTS_ONLY",
+  "synthetic": true,
+  "personal_data": false,
+  "case_source_ref": "synthetic://ignition-190/transfer/case-source",
+  "case_source_sha256": "86a6c180fc6f2d7b3eba827b6192294131132628b043864b1dfcf03515e18c3b",
+  "facts": "TRANSFER-01 synthetic source facts\nAt checkpoint P0, channel left=6 and channel right=6.\nAfter gate alpha, channel left=6 and channel right=4.\nA replay using the same recorded input at gate alpha reports left=6 and right=6.\nAt gate beta, the right-channel reading is missing.\nNo timing, operator, device, or causal explanation is supplied.\n",
+  "task_ref": "transfer-case/case-source.md#Future-task",
+  "method_trace_supplied": false,
+  "method_name_supplied": false,
+  "evaluator_expected_labels_included": false,
+  "run_status": "DESIGN_ONLY_NOT_RUN",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

@@ -6,7 +6,7 @@
   "synthetic": true,
   "personal_data": false,
   "case_source_ref": "synthetic://ignition-190/ablation/method-vs-facts-case-01",
-  "case_source_sha256": "4f2d6f7b5f46a5a5f7d0f6c3e07d53b0ef6ff772e6b7c6b1f07c2b4c7b2d4c6a",
+  "case_source_sha256": "37dd16edaaa47a1281acb41a9b37b2938ace85d70bea1be50c672ffcb0d177cc",
   "case_facts": "A synthetic table has four rows. Row A records signal 4 and review 1. Row B records signal 4 and review 1. Row C records signal 2 and review 0. Row D has a missing review value. The packet supplies no external explanation for the difference.",
   "run_status": "NOT_RUN",
   "successor_status": "NOT_RUN",

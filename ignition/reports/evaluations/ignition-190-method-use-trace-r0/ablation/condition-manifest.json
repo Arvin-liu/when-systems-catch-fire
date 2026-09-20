@@ -44,5 +44,6 @@
     "canonical promotion"
   ],
   "canonical_claim_ids": [],
-  "canonical_promotion": "NONE"
+  "canonical_promotion": "NONE",
+  "source_sha256": "37dd16edaaa47a1281acb41a9b37b2938ace85d70bea1be50c672ffcb0d177cc"
 }

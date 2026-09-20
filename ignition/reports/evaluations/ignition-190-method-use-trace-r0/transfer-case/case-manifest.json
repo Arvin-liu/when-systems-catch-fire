@@ -1,0 +1,22 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step06",
+  "transfer_case_id": "TRANSFER-01",
+  "synthetic": true,
+  "personal_data": false,
+  "case_source_path": "transfer-case/case-source.md",
+  "case_source_sha256": "86a6c180fc6f2d7b3eba827b6192294131132628b043864b1dfcf03515e18c3b",
+  "method_trace_path": "transfer-case/method-trace-condition.json",
+  "method_trace_source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+  "facts_only_path": "transfer-case/facts-only-condition.json",
+  "method_trace_condition": "same facts plus the source-bound transfer-method-history-01 trace",
+  "facts_only_condition": "same facts without any method-use chain or method label",
+  "evaluator_expected_labels_included": false,
+  "run_status": "DESIGN_ONLY_NOT_RUN",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN",
+  "cross_model_transfer": "NOT_RUN",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

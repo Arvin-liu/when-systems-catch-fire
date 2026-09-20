@@ -1,0 +1,225 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "transfer-method-history-01",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-190/transfer/method-history",
+      "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+      "exact_locator": "synthetic://ignition-190/transfer/method-history#candidate",
+      "summary": "A method compares two live explanations by replaying a bounded input and observing a discriminating difference.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic source pinned in this task-local transfer manifest"
+        ],
+        "open_questions": [
+          "independent future reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "bounded synthetic method-use reconstruction and application design"
+        ],
+        "forbidden_inferences": [
+          "unique wording requirement",
+          "causation",
+          "capability",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "candidate_ref": "method:two-hypothesis-replay-probe-r0"
+    },
+    {
+      "segment_id": "selection",
+      "segment_kind": "SELECTION_RATIONALE",
+      "source_ref": "synthetic://ignition-190/transfer/method-history",
+      "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+      "exact_locator": "synthetic://ignition-190/transfer/method-history#selection",
+      "summary": "The method is selected when an observation changes and a replay can separate an input-dependent effect from an observation artifact.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic source pinned in this task-local transfer manifest"
+        ],
+        "open_questions": [
+          "independent future reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "bounded synthetic method-use reconstruction and application design"
+        ],
+        "forbidden_inferences": [
+          "unique wording requirement",
+          "causation",
+          "capability",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "selected_candidate_ref": "method:two-hypothesis-replay-probe-r0",
+      "rationale": "The replay probe is reversible, source-bound, and preserves an unknown when the replay is incomplete.",
+      "alternatives_considered": [
+        "single snapshot interpretation",
+        "template explanation without replay"
+      ]
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-190/transfer/method-history",
+      "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+      "exact_locator": "synthetic://ignition-190/transfer/method-history#context",
+      "summary": "The source context is a synthetic channel comparison with one missing reading and no external causal information.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic source pinned in this task-local transfer manifest"
+        ],
+        "open_questions": [
+          "independent future reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "bounded synthetic method-use reconstruction and application design"
+        ],
+        "forbidden_inferences": [
+          "unique wording requirement",
+          "causation",
+          "capability",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "context_ref": "selection",
+      "constraints": [
+        "synthetic-only facts",
+        "replay input must be held constant",
+        "missing readings stay unresolved"
+      ]
+    },
+    {
+      "segment_id": "use",
+      "segment_kind": "METHOD_USE_EVENT",
+      "source_ref": "synthetic://ignition-190/transfer/method-history",
+      "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+      "exact_locator": "synthetic://ignition-190/transfer/method-history#use",
+      "summary": "The replay probe was applied to a generic synthetic input in one ordered use event.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic source pinned in this task-local transfer manifest"
+        ],
+        "open_questions": [
+          "independent future reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "bounded synthetic method-use reconstruction and application design"
+        ],
+        "forbidden_inferences": [
+          "unique wording requirement",
+          "causation",
+          "capability",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "used_candidate_ref": "method:two-hypothesis-replay-probe-r0",
+      "input_ref": "context",
+      "expected_observation": "A replay-consistent result should separate an input-dependent change from a readout artifact.",
+      "use_order": 1
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-190/transfer/method-history",
+      "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+      "exact_locator": "synthetic://ignition-190/transfer/method-history#outcome",
+      "summary": "The generic replay produced a distinguishable observation while the source did not establish causation.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic source pinned in this task-local transfer manifest"
+        ],
+        "open_questions": [
+          "independent future reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "bounded synthetic method-use reconstruction and application design"
+        ],
+        "forbidden_inferences": [
+          "unique wording requirement",
+          "causation",
+          "capability",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "use_segment_ref": "use",
+      "outcome_type": "OBSERVED_OUTCOME",
+      "observed_outcome": "The replay changed the observed comparison in the bounded synthetic source.",
+      "confounders": [
+        "synthetic replay timing",
+        "unmeasured instrumentation"
+      ],
+      "causal_attribution": "NOT_ESTABLISHED"
+    },
+    {
+      "segment_id": "revision",
+      "segment_kind": "REVISION_OR_DISPOSITION",
+      "source_ref": "synthetic://ignition-190/transfer/method-history",
+      "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+      "exact_locator": "synthetic://ignition-190/transfer/method-history#revision",
+      "summary": "The generic source retained the method with no revision pending independent reconstruction.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic source pinned in this task-local transfer manifest"
+        ],
+        "open_questions": [
+          "independent future reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "bounded synthetic method-use reconstruction and application design"
+        ],
+        "forbidden_inferences": [
+          "unique wording requirement",
+          "causation",
+          "capability",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "revision_type": "NO_REVISION",
+      "revision_rationale": "The bounded source did not identify a method defect, while unresolved confounders remain visible.",
+      "disposition": "NO_REVISION",
+      "target_candidate_ref": "method:two-hypothesis-replay-probe-r0",
+      "rollback_ref": null
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}
