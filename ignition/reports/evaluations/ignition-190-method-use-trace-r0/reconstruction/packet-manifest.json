@@ -1,0 +1,30 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step04",
+  "packet_id": "ignition-190-blind-method-use-reconstruction-r0",
+  "packet_path": "reconstruction/successor-visible-packet.json",
+  "case_ids": [
+    "TRACE-01",
+    "TRACE-02",
+    "TRACE-03",
+    "TRACE-04"
+  ],
+  "successor_visible": true,
+  "evaluator_expected_labels_included": false,
+  "required_output_fields": [
+    "candidate",
+    "selection_rationale",
+    "context_constraints",
+    "use_event",
+    "outcome_or_failure",
+    "revision_or_disposition",
+    "missing_links",
+    "false_positive_risk",
+    "unresolved_or_confounders"
+  ],
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}
