@@ -18,7 +18,7 @@ Every recovered result/article receives a card and three reading levels. Functio
 |`MACHINE_ONLY`|24082|仍可全量搜索、可回到 canonical registry，但未达到本轮重点卡片 materiality policy。|
 |`SOURCE_MISSING`|0|索引指向不存在来源；必须为零，否则 CI 阻断。|
 |`SUPERSEDED_OR_WITHDRAWN`|77|来源自身带历史、替代或撤回信号；保留演化链，不作为当前结论。|
-|`NOT_MEANINGFUL_PUBLIC_CHANGE`|34|不是有意义的公共知识变化，不进入 What's New。|
+|`NOT_MEANINGFUL_PUBLIC_CHANGE`|35|不是有意义的公共知识变化，不进入 What's New。|
 
 ## 不应误读
 
