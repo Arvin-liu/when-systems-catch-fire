@@ -10,14 +10,14 @@ The audit uses the bounded rule:
 
 ## Verdict
 
-- `DIRECTLY_REPRESENTABLE`: 3 slots
+- `DIRECTLY_REPRESENTABLE`: 2 slots
 - `REPRESENTABLE_WITH_ADAPTER`: 6 slots
-- `MISSING`: 3 slots
+- `MISSING`: 4 slots
 - `AMBIGUOUS`: 0 slots
 - Sufficiency verdict: `EXISTING_SCHEMAS_INSUFFICIENT_FOR_AUDITABLE_METHOD_USE_CHAIN_WITHOUT_A_NARROW_ADAPTER`
-- Proposed response: one task-local, noncanonical adapter/schema only; no global cognitive registry, universal method ontology, second provenance service, or parallel state machine.
+- Response: one task-local, noncanonical adapter/schema only; no global cognitive registry, universal method ontology, second provenance service, or parallel state machine.
 
-The missing slots are selection rationale, selection-scoped context/constraints/alternatives, and revision rationale. The adapter-needed slots are the explicit use event, source/fingerprint binding at segment grain, expected-vs-observed distinction, causal/confounder boundary, explicit no-revision branch, and ordered rollback/reconstruction references. Existing R0 fields remain the authority-bearing source records; the adapter only makes a trace reconstructable and testable.
+The missing slots are selection rationale, selection-scoped context/constraints/alternatives, the method-use event, and revision rationale. The adapter-needed slots are source/fingerprint binding at segment grain, expected-vs-observed distinction, causal/confounder boundary, explicit no-revision branch, and ordered rollback/reconstruction references. Existing R0 fields remain the authority-bearing source records; the adapter only makes a trace reconstructable and testable.
 
 ## Existing field surfaces audited
 
