@@ -4,6 +4,105 @@
 
 ## 2026
 
+<a id="change-src-hr-c386d0cc5aa6970d"></a>
+### 2026-09-20 · Method vs facts/skill/template ablation design R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a synthetic/offline design only. It has not run a model, Successor, Evaluator, provider comparison, cross-model trial, or score aggregation.
+- **来源：** [ablation-design.md](../reports/evaluations/ignition-190-method-use-trace-r0/ablation/ablation-design.md)
+- **资产卡：** [HR-C386D0CC5AA6970D](./ASSET-CARDS.md#asset-hr-c386d0cc5aa6970d)
+
+<a id="change-src-hr-ac2c8f7dc1615a92"></a>
+### 2026-09-20 · Blind Method-Use Reconstruction R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** For each neutral case in successor-visible-packet.json, reconstruct only what the packet supports:
+- **来源：** [reconstruction-task.md](../reports/evaluations/ignition-190-method-use-trace-r0/reconstruction/reconstruction-task.md)
+- **资产卡：** [HR-AC2C8F7DC1615A92](./ASSET-CARDS.md#asset-hr-ac2c8f7dc1615a92)
+
+<a id="change-src-hr-8e3a02adaf192eb8"></a>
+### 2026-09-20 · Complexity, retirement, and protocol freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** review candidate; it is not executed and does not delete historical evidence.
+- **来源：** [protocol-freeze.md](../reports/evaluations/ignition-190-method-use-trace-r0/protocol-freeze.md)
+- **资产卡：** [HR-8E3A02ADAF192EB8](./ASSET-CARDS.md#asset-hr-8e3a02adaf192eb8)
+
+<a id="change-src-hr-8a4c70c40c2dd98d"></a>
+### 2026-09-20 · Evaluation/research isolation and fixed point
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** All Task190 files are under the task-local prefix ignition/reports/evaluations/ignition-190-method-use-trace-r0/. The path-accounting manifest lists every file, including the Step09 manifest, receipt, and isolation note. Every entry is typed RESEARCHEVALUATIONONLY, provenance-visible, excluded fr…
+- **来源：** [isolation-and-fixed-point.md](../reports/evaluations/ignition-190-method-use-trace-r0/isolation-and-fixed-point.md)
+- **资产卡：** [HR-8A4C70C40C2DD98D](./ASSET-CARDS.md#asset-hr-8a4c70c40c2dd98d)
+
+<a id="change-src-hr-83b56400443ecc6f"></a>
+### 2026-09-20 · Step01 mechanical erratum
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The Step01 JSONL contains 2 DIRECTLYREPRESENTABLE, 6 REPRESENTABLEWITHADAPTER, 4 MISSING, and 0 AMBIGUOUS records. The first Step01 Markdown receipt stated 3/6/3 by arithmetic typo. This correction is applied as a single immutable follow-up tree update in the Step02 commit; no history is rewritte…
+- **来源：** [step01-mechanical-erratum.md](../reports/evaluations/ignition-190-method-use-trace-r0/step01-mechanical-erratum.md)
+- **资产卡：** [HR-83B56400443ECC6F](./ASSET-CARDS.md#asset-hr-83b56400443ecc6f)
+
+<a id="change-src-hr-82d271579f2ef74f"></a>
+### 2026-09-20 · TRANSFER-01 — synthetic bounded transfer case
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** TRANSFER-01 synthetic source facts At checkpoint P0, channel left=6 and channel right=6. After gate alpha, channel left=6 and channel right=4. A replay using the same recorded input at gate alpha reports left=6 and right=6. At gate beta, the right-channel reading is missing. No timing, operator,…
+- **来源：** [case-source.md](../reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-source.md)
+- **资产卡：** [HR-82D271579F2EF74F](./ASSET-CARDS.md#asset-hr-82d271579f2ef74f)
+
+<a id="change-src-hr-77b7e868d9702919"></a>
+### 2026-09-20 · Transfer-case boundary
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** TRANSFER-01 is one new bounded synthetic case, distinct from the two R0.4 held-out cases. It contains only source facts, a method-trace condition, and a facts-only condition. It does not contain evaluator expected labels, scoring rubrics, a provider comparison, a real-world knowledge task, or a c…
+- **来源：** [README.md](../reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/README.md)
+- **资产卡：** [HR-77B7E868D9702919](./ASSET-CARDS.md#asset-hr-77b7e868d9702919)
+
+<a id="change-src-hr-76cd92eb611c7cb4"></a>
+### 2026-09-20 · IGNITION-20260920-190 Step00 receipt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The Owner/GPT adjudication is frozen mechanically in the JSON artifact. The three evidence heads are recorded with exact source paths and SHA-256 digests. Task189's command-literal path was resolved to the exact-head tree path with the existing ignition/ prefix; no content was substituted.
+- **来源：** [step00-receipt.md](../reports/evaluations/ignition-190-method-use-trace-r0/step00-receipt.md)
+- **资产卡：** [HR-76CD92EB611C7CB4](./ASSET-CARDS.md#asset-hr-76cd92eb611c7cb4)
+
+<a id="change-src-hr-69bd64e36b0a14eb"></a>
+### 2026-09-20 · Sealed evaluator package
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This directory is outside the successor-visible packet. Its criteria are frozen for a future independent evaluator and bind the reconstruction, ablation, and TRANSFER-01 transfer surfaces. The package is not executed in Task190.
+- **来源：** [README.md](../reports/evaluations/ignition-190-method-use-trace-r0/evaluator-sealed/README.md)
+- **资产卡：** [HR-69BD64E36B0A14EB](./ASSET-CARDS.md#asset-hr-69bd64e36b0a14eb)
+
+<a id="change-src-hr-696937f472ec1c98"></a>
+### 2026-09-20 · Method-Use Trace R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Step01 found that existing R0, Cognitive IR, Transition, provenance, observation, failure, and self-correction contracts carry the source material but do not provide a reconstructable, ordered candidate-to-use-to-revision event chain. This file defines one task-local adapter surface. It is not a…
+- **来源：** [method-use-trace-r0.md](../reports/evaluations/ignition-190-method-use-trace-r0/method-use-trace-r0.md)
+- **资产卡：** [HR-696937F472EC1C98](./ASSET-CARDS.md#asset-hr-696937f472ec1c98)
+
+<a id="change-src-hr-401374879615c5ff"></a>
+### 2026-09-20 · Method-Use Trace R0 existing-schema sufficiency audit
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This audit precedes any Method Registry or new global ontology. It compares the twelve required method-use chain slots against the exact Task189-head schemas and adjacent existing observation/failure/provenance/self-correction contracts.
+- **来源：** [method-use-schema-sufficiency.md](../reports/evaluations/ignition-190-method-use-trace-r0/method-use-schema-sufficiency.md)
+- **资产卡：** [HR-401374879615C5FF](./ASSET-CARDS.md#asset-hr-401374879615c5ff)
+
 <a id="change-src-hr-ecb9a4b8ee1483ca"></a>
 ### 2026-09-15 · IGNITION-172 Step07 — Knowledge Experience routing index
 

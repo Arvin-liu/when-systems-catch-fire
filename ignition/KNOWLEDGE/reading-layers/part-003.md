@@ -284,6 +284,13 @@
 - 5 分钟：主题：Schema and integrity audit；Nine JSON Schemas and a standard-library integrity validator cover identities, references, counts, status axes, replay contracts and non-destructive migration.
 - 完整阅读：[reports/foundation-architecture/schema-and-integrity-audit-20260712.md](../../reports/foundation-architecture/schema-and-integrity-audit-20260712.md)
 
+<a id="reading-hr-401374879615c5ff"></a>
+## Method-Use Trace R0 existing-schema sufficiency audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This audit precedes any Method Registry or new global ontology. It compares the twelve required method-use chain slots against the exact Task189-head schemas and adjacent existing observation/failure/provenance/self-correction contracts. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Method-Use Trace R0 existing-schema sufficiency audit；This audit precedes any Method Registry or new global ontology. It compares the twelve required method-use chain slots against the exact Task189-head schemas and adjacent existing observation/failure/provenance/self-correction contracts.；The audit uses the bounded rule:；Existing schema + minimal adapter is preferred over a new global ontology.；DIRECTLYREPRESENTABLE: 2 slots；REPRESENTABLEWITHADAPTER: 6 slots
+- 完整阅读：[reports/evaluations/ignition-190-method-use-trace-r0/method-use-schema-sufficiency.md](../../reports/evaluations/ignition-190-method-use-trace-r0/method-use-schema-sufficiency.md)
+
 <a id="reading-hr-4021615f6416219a"></a>
 ## 121Q10 Emergent Current State and License Text Finalization
 `CANDIDATE_OR_PENDING_SOURCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：本原则适用于所有从项目外部获得的材料，包括但不限于： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：External Input Non-Republication Principle；12026年7月19日（人类纪元；对应公元2026年7月19日）— Q33 正式候选构件；外部输入材料不得被复述、重新发布或再分发。；本原则适用于所有从项目外部获得的材料，包括但不限于：；任何受版权保护且未明确授权本项目使用的原文；来源引用：记录原始来源、作者、时间、渠道和版权状态
 - 完整阅读：[docs/governance/external-input-non-republication-principle.md](../../docs/governance/external-input-non-republication-principle.md)
-
-<a id="reading-hr-4419fea9529c829c"></a>
-## 121Q31T｜交互系统总图与双来源写作素材池合并收口审计
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：PR 60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main。合并前重新核验了 PR HEAD、base、mergeability、精确 HEAD CI、Q29R 哈希、9 组／41 节点／35 边、L0—L6、全部 target 与证据边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q31T｜交互系统总图与双来源写作素材池合并收口审计；PR #60 的 accepted HEAD b01429144f78305ead32455873e79a11661f04e1 经 review 4718884255 接受，并以 merge commit ed30d3c30966ce28b54652f2ece27bc1bde02658 合入 main。合并前重新核验了 PR HEAD、base、mergeability、精确 HEAD CI、Q29R 哈希、9 组／41 节点／35 边、L0—L6、全部 target 与证据边界；accepted HEAD 是 merge commit 和 post-merge main 的祖先。；本收口将之元写作法 0.4.0 和系统图 0.1.0 更新为 Current。0.3.0 保留为历史已合并版本；Q29R 和第一条成果 registry 继续绑定真实生成版本 0.3.0。externalinput | ignitionincrement 成为当前素材类型，但内部增量仍不是独立外部证据，不因结构化、模型化或重复 AI 处理提高证据等级。结构对应中的 candidate 继续表示认识论边界。；系统图继续是同一机器 spec 生成的 9 组、41 节点、35 边导航投影，严格保持 L0—L6。README、Pages 和独立交互页共用同一 SVG；图不构成 L7、真值层、因果证明、严格同构或项目完备性证明。Q29R 正文和受限来源均未修改或重发。；final main 的 Foundation、Function OS、Pages 生产部署，以及首页、交互页、SVG、全部 41 节点和 Q29R 线上哈希的无缓存实况证据，由 GitHub Actions 与 1111 结果回执承载。121Q31 候选记录保持原样；本文件和 121Q31T manifest／seal 只追加收口事实。
-- 完整阅读：[reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md](../../reports/operations/121Q31T-interactive-system-map-and-writing-pool-merge-current-closeout-audit.md)
