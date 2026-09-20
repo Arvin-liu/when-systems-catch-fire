@@ -79,6 +79,8 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertFalse(is_allowed_changed_path("ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"))
         self.assertFalse(is_allowed_changed_path("ignition/data/architecture/current-system-identity.json"))
         self.assertTrue(is_allowed_changed_path("ignition/data/governance/self-correction/impact-analysis.jsonl"))
+        self.assertTrue(is_allowed_changed_path("ignition/data/governance/self-correction/audit-findings.jsonl"))
+        self.assertTrue(is_allowed_changed_path("ignition/RESULTS/SELF-CORRECTION-AUDIT.md"))
         self.assertFalse(is_allowed_changed_path("ignition/data/governance/knowledge-experience/source-first-seen.json.bak"))
         self.assertFalse(is_allowed_changed_path("ignition/KNOWLEDGE/UNEXPECTED.md"))
         self.assertFalse(is_allowed_changed_path("ignition/data/publication/fire-seeds/CHANGELOG.jsonl"))

@@ -83,6 +83,8 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/data/governance/knowledge-experience/search-index.jsonl",
     "ignition/data/governance/knowledge-experience/alias-index.jsonl",
     "ignition/data/governance/knowledge-experience/changes.jsonl",
+    "ignition/data/governance/self-correction/audit-findings.jsonl",
+    "ignition/RESULTS/SELF-CORRECTION-AUDIT.md",
     # Task190 generated Knowledge markdown remains navigation-only and is not canonical admission.
     "ignition/KNOWLEDGE/ASSET-CARDS.md",
     "ignition/KNOWLEDGE/COVERAGE.md",
