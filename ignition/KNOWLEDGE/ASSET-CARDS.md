@@ -1403,8 +1403,8 @@
 <a id="asset-hr-fd1a98871b9b5c54"></a>
 - [Next basis assessment — Task163](./cards/part-014.md#asset-hr-fd1a98871b9b5c54) — `RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `HR-FD1A98871B9B5C54`
 <a id="asset-hr-fd61253709a198c4"></a>
-- [Agent result: IGNITION-20260907-162](indexes/architecture_governance/part-015.md#asset-hr-fd61253709a198c4) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FD61253709A198C4`
+- [Agent result: IGNITION-20260907-162](./cards/part-015.md#asset-hr-fd61253709a198c4) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FD61253709A198C4`
 <a id="asset-hr-fd9206bee6e7782d"></a>
-- [学科理论核卡片：物理学](indexes/architecture_governance/part-015.md#asset-hr-fd9206bee6e7782d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FD9206BEE6E7782D`
+- [学科理论核卡片：物理学](./cards/part-015.md#asset-hr-fd9206bee6e7782d) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FD9206BEE6E7782D`
 <a id="asset-hr-ffcc6d11834eee16"></a>
-- [IGNITION-20260828-146 result](indexes/architecture_governance/part-015.md#asset-hr-ffcc6d11834eee16) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FFCC6D11834EEE16`
+- [IGNITION-20260828-146 result](./cards/part-015.md#asset-hr-ffcc6d11834eee16) — `RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `HR-FFCC6D11834EEE16`
