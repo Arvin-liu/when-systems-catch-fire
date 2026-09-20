@@ -294,6 +294,18 @@
     "reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md": "2026-09-19",
     "reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.md": "2026-09-19",
     "reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.md": "2026-09-19",
+    "reports/evaluations/ignition-190-method-use-trace-r0/ablation/ablation-design.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/evaluator-sealed/README.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/isolation-and-fixed-point.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/method-use-schema-sufficiency.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/method-use-trace-r0.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/protocol-freeze.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/reconstruction/reconstruction-task.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/step00-receipt.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/step01-mechanical-erratum.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/step10-preflight.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/README.md": "2026-09-20",
+    "reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-source.md": "2026-09-20",
     "reports/external-research/104-dual-088-reconciliation.md": "2026-07-13",
     "reports/external-research/104-gap-patch-evidence-readiness.md": "2026-07-13",
     "reports/external-research/104-source-quality-audit.md": "2026-07-13",
@@ -630,7 +642,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 628,
+  "entry_count": 640,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

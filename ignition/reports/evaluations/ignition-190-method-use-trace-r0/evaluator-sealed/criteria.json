@@ -1,0 +1,109 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step07",
+  "package_id": "ignition-190-method-use-trace-evaluator-r0",
+  "criteria_version": "method-use-trace-evaluator-r0",
+  "sealed": true,
+  "visibility": "EVALUATOR_ONLY",
+  "successor_visible": false,
+  "builder_execution": "NOT_RUN",
+  "evaluator_execution": "NOT_RUN",
+  "source_surfaces": {
+    "reconstruction_packet": "../reconstruction/successor-visible-packet.json",
+    "ablation_manifest": "../ablation/condition-manifest.json",
+    "transfer_case": "../transfer-case/case-manifest.json"
+  },
+  "reconstruction_criteria": [
+    {
+      "criterion_id": "R-EXACT-LINK-RECOVERY",
+      "requirement": "recover candidate to selection to context to use to outcome/failure to revision/disposition links with exact source refs and fingerprints",
+      "failure_mode": "missing or invented link"
+    },
+    {
+      "criterion_id": "R-MISSING-LINK-DETECTION",
+      "requirement": "mark absent selection, use, provenance, or revision links as unresolved",
+      "failure_mode": "silent gap fill"
+    },
+    {
+      "criterion_id": "R-FALSE-POSITIVE-COMPLETION",
+      "requirement": "do not convert a candidate, outcome, or polished narrative into a complete history",
+      "failure_mode": "false-positive completion"
+    },
+    {
+      "criterion_id": "R-SOURCE-FIDELITY",
+      "requirement": "preserve exact source reference, source SHA-256, locator, and synthetic boundary",
+      "failure_mode": "source substitution"
+    },
+    {
+      "criterion_id": "R-UNCERTAINTY-PRESERVATION",
+      "requirement": "retain confounders, open questions, and claim ceiling without causal or capability overclaim",
+      "failure_mode": "uncertainty collapse"
+    }
+  ],
+  "ablation_criteria": [
+    {
+      "criterion_id": "A-FACTS-ONLY-BOUNDARY",
+      "requirement": "do not call facts-only reconstruction method inheritance"
+    },
+    {
+      "criterion_id": "A-BROKEN-TRACE-BOUNDARY",
+      "requirement": "do not complete broken trace links from plausibility"
+    },
+    {
+      "criterion_id": "A-METHOD-TRACE-STRUCTURE",
+      "requirement": "determine whether method trace condition supplies observable chain structure beyond facts-only"
+    },
+    {
+      "criterion_id": "A-SOURCE-BOUND-USE",
+      "requirement": "identify whether any method slot used is bound to supplied trace source"
+    }
+  ],
+  "transfer_criteria": [
+    {
+      "criterion_id": "T-SOURCE-BOUND-SELECTION",
+      "requirement": "method selection in TRANSFER-01 is trace-bound and context-appropriate"
+    },
+    {
+      "criterion_id": "T-APPLICATION-LINEAGE",
+      "requirement": "application records expected observation, observed outcome or failure, unknowns, and evidence needed"
+    },
+    {
+      "criterion_id": "T-NON-TEMPLATE-REASONING",
+      "requirement": "reasoning is not accepted merely because it repeats template wording"
+    },
+    {
+      "criterion_id": "T-CLAIM-CEILING",
+      "requirement": "synthetic case does not support general inheritance, capability, causation, R1, or canonical truth"
+    }
+  ],
+  "allowed_bounded_dispositions": {
+    "reconstruction": [
+      "METHOD_USE_RECONSTRUCTION_SUPPORTED",
+      "METHOD_USE_RECONSTRUCTION_PARTIAL",
+      "METHOD_USE_RECONSTRUCTION_NOT_SUPPORTED"
+    ],
+    "transfer": [
+      "BOUNDED_METHOD_TRANSFER_SUPPORTED",
+      "BOUNDED_METHOD_TRANSFER_PARTIAL",
+      "BOUNDED_METHOD_TRANSFER_NOT_SUPPORTED"
+    ]
+  },
+  "fixed_ceiling": [
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED",
+    "CROSS_MODEL_TRANSFER_NOT_RUN",
+    "SUCCESSOR_NOT_RUN",
+    "EVALUATOR_NOT_RUN",
+    "NO_CANONICAL_PROMOTION"
+  ],
+  "prohibited_actions": [
+    "rewrite protected packet",
+    "read evaluator-sealed criteria from Successor surface",
+    "promote evaluator output automatically",
+    "run Model-RSI",
+    "run weight training"
+  ],
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

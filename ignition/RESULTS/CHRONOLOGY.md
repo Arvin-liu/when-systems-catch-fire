@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 628 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 640 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,162 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [TRANSFER-01 — synthetic bounded transfer case](../reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-source.md)
+
+- **结果 ID：** `HR-82D271579F2EF74F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：TRANSFER-01 — synthetic bounded transfer case？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** TRANSFER-01 synthetic source facts At checkpoint P0, channel left=6 and channel right=6. After gate alpha, channel left=6 and channel right=4. A replay using the same recorded input at gate alpha reports left=6 and right=6. At gate beta, the right-channel reading is missing. No timing, operator,…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Transfer-case boundary](../reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/README.md)
+
+- **结果 ID：** `HR-77B7E868D9702919`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：Transfer-case boundary？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** TRANSFER-01 is one new bounded synthetic case, distinct from the two R0.4 held-out cases. It contains only source facts, a method-trace condition, and a facts-only condition. It does not contain evaluator expected labels, scoring rubrics, a provider comparison, a real-world knowledge task, or a c…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step10 preflight and handoff](../reports/evaluations/ignition-190-method-use-trace-r0/step10-preflight.md)
+
+- **结果 ID：** `HR-7040BA2FDD013AB9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：Step10 preflight and handoff？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is the final Builder / Research-Experiment Preparation step. The branch starts from Task189 exact head ca641a87ad7bc16d18a65f37cbe37b9a5cb733c8, targets stacked Draft base eval/IGNITION-20260919-189-r0-4-independent-evaluation, and keeps all Task190 surfaces research/evaluation-only.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step01 mechanical erratum](../reports/evaluations/ignition-190-method-use-trace-r0/step01-mechanical-erratum.md)
+
+- **结果 ID：** `HR-83B56400443ECC6F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：Step01 mechanical erratum？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The Step01 JSONL contains 2 DIRECTLYREPRESENTABLE, 6 REPRESENTABLEWITHADAPTER, 4 MISSING, and 0 AMBIGUOUS records. The first Step01 Markdown receipt stated 3/6/3 by arithmetic typo. This correction is applied as a single immutable follow-up tree update in the Step02 commit; no history is rewritte…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260920-190 Step00 receipt](../reports/evaluations/ignition-190-method-use-trace-r0/step00-receipt.md)
+
+- **结果 ID：** `HR-76CD92EB611C7CB4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：IGNITION-20260920-190 Step00 receipt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The Owner/GPT adjudication is frozen mechanically in the JSON artifact. The three evidence heads are recorded with exact source paths and SHA-256 digests. Task189's command-literal path was resolved to the exact-head tree path with the existing ignition/ prefix; no content was substituted.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Blind Method-Use Reconstruction R0](../reports/evaluations/ignition-190-method-use-trace-r0/reconstruction/reconstruction-task.md)
+
+- **结果 ID：** `HR-AC2C8F7DC1615A92`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：Blind Method-Use Reconstruction R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** For each neutral case in successor-visible-packet.json, reconstruct only what the packet supports:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Complexity, retirement, and protocol freeze](../reports/evaluations/ignition-190-method-use-trace-r0/protocol-freeze.md)
+
+- **结果 ID：** `HR-8E3A02ADAF192EB8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：Complexity, retirement, and protocol freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** review candidate; it is not executed and does not delete historical evidence.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Method-Use Trace R0](../reports/evaluations/ignition-190-method-use-trace-r0/method-use-trace-r0.md)
+
+- **结果 ID：** `HR-696937F472EC1C98`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：Method-Use Trace R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Step01 found that existing R0, Cognitive IR, Transition, provenance, observation, failure, and self-correction contracts carry the source material but do not provide a reconstructable, ordered candidate-to-use-to-revision event chain. This file defines one task-local adapter surface. It is not a…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Method-Use Trace R0 existing-schema sufficiency audit](../reports/evaluations/ignition-190-method-use-trace-r0/method-use-schema-sufficiency.md)
+
+- **结果 ID：** `HR-401374879615C5FF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：Method-Use Trace R0 existing-schema sufficiency audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This audit precedes any Method Registry or new global ontology. It compares the twelve required method-use chain slots against the exact Task189-head schemas and adjacent existing observation/failure/provenance/self-correction contracts.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Evaluation/research isolation and fixed point](../reports/evaluations/ignition-190-method-use-trace-r0/isolation-and-fixed-point.md)
+
+- **结果 ID：** `HR-8A4C70C40C2DD98D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：Evaluation/research isolation and fixed point？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All Task190 files are under the task-local prefix ignition/reports/evaluations/ignition-190-method-use-trace-r0/. The path-accounting manifest lists every file, including the Step09 manifest, receipt, and isolation note. Every entry is typed RESEARCHEVALUATIONONLY, provenance-visible, excluded fr…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Sealed evaluator package](../reports/evaluations/ignition-190-method-use-trace-r0/evaluator-sealed/README.md)
+
+- **结果 ID：** `HR-69BD64E36B0A14EB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：Sealed evaluator package？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This directory is outside the successor-visible packet. Its criteria are frozen for a future independent evaluator and bind the reconstruction, ablation, and TRANSFER-01 transfer surfaces. The package is not executed in Task190.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Method vs facts/skill/template ablation design R0](../reports/evaluations/ignition-190-method-use-trace-r0/ablation/ablation-design.md)
+
+- **结果 ID：** `HR-C386D0CC5AA6970D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `190-METHOD-USE-TRACE-R0`
+- **问题：** 此来源记录了什么：Method vs facts/skill/template ablation design R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a synthetic/offline design only. It has not run a model, Successor, Evaluator, provider comparison, cross-model trial, or score aggregation.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

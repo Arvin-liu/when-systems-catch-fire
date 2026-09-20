@@ -1,0 +1,12 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "negative-b-narrative-only",
+  "is_synthetic": true,
+  "narrative": "A polished narrative says a method was chosen and improved the result, but it has no exact source fingerprint, ordered use event, or observed-outcome provenance.",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

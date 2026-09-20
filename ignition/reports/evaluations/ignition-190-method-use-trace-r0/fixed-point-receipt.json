@@ -1,0 +1,34 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step09",
+  "inventory_path": "path-accounting-manifest.json",
+  "inventory_sha256": "225c1b09e26b77c62f88ff8e6a179d3b8d7a9384cd0cc949d96c435b18ffe198",
+  "two_pass_generator_receipt": {
+    "pass_1": {
+      "input_tree_head": "f74996ea33cf242650e47228ac88a7a8d4c41081",
+      "output_sha256": "225c1b09e26b77c62f88ff8e6a179d3b8d7a9384cd0cc949d96c435b18ffe198",
+      "status": "PASS"
+    },
+    "pass_2": {
+      "input_tree_head": "f74996ea33cf242650e47228ac88a7a8d4c41081",
+      "output_sha256": "225c1b09e26b77c62f88ff8e6a179d3b8d7a9384cd0cc949d96c435b18ffe198",
+      "status": "PASS"
+    },
+    "diff": "NONE",
+    "fixed_point": "PASS"
+  },
+  "typed_isolation": {
+    "all_task190_files_path_accounted": true,
+    "research_evaluation_only": true,
+    "foundation_candidate_fragments": 0,
+    "canonical_claim_ids": [],
+    "knowledge_canonical_admission": "NONE",
+    "fire_seeds_promotion": "NONE",
+    "current_mutation": "NONE"
+  },
+  "independent_validation_binding": "This receipt independently binds the frozen inventory bytes; it does not mutate a certified ledger during validation.",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN",
+  "canonical_promotion": "NONE"
+}

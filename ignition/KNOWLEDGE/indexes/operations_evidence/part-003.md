@@ -1469,6 +1469,11 @@
   - 可搜索名称：NFC-0532c427e1d01490 / benchmark 通过"结构增益 + 重述 + 失败 + pending"四类结果，测试点火框架是否真的有结构增益。如果点火框架只是重述，说明没有新增解释力；如果点火框架发生失败，说明边界选错或同构误判；如果点火框架只能 pending，
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
+- [Blind Method-Use Reconstruction R0](../../ASSET-CARDS.md#asset-hr-ac2c8f7dc1615a92)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Blind Method-Use Reconstruction R0 / reconstruction-task
+  - 来源：`reports/evaluations/ignition-190-method-use-trace-r0/reconstruction/reconstruction-task.md`
+  - 依赖：—；被引用：—
 - [blocked = \[p for p in providers if p.get\("status"\) == "BLOCKED"\]](../../../data/external-research/121-fulltext-resolver/121-validator.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E5D289A8FC58C0BD / blocked = \[p for p in providers if p.get\("status"\) == "BLOCKED"\] / IMPLICIT-E5D289A8FC58C0BD
@@ -2497,10 +2502,5 @@
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：T10410 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json / T10410 / A5007698196
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T10482 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json / T10482 / A5007698196
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json`
   - 依赖：—；被引用：—

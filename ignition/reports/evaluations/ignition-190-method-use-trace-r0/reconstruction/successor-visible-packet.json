@@ -1,0 +1,562 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step04",
+  "packet_id": "ignition-190-blind-method-use-reconstruction-r0",
+  "successor_visible": true,
+  "synthetic": true,
+  "personal_data": false,
+  "evaluator_expected_labels_included": false,
+  "cases": [
+    {
+      "case_id": "TRACE-01",
+      "case_kind": "synthetic reconstruction input",
+      "artifact_type": "EVALUATION_EVIDENCE",
+      "schema_version": "method-use-trace-r0",
+      "task_id": "IGNITION-20260920-190",
+      "trace_id": "reconstruction-case-01",
+      "is_synthetic": true,
+      "segments": [
+        {
+          "segment_id": "candidate",
+          "segment_kind": "METHOD_CANDIDATE",
+          "source_ref": "synthetic://ignition-190/positive-a",
+          "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+          "exact_locator": "synthetic://ignition-190/positive-a#candidate",
+          "summary": "A candidate method proposes comparing competing explanations with one discriminating probe.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "candidate_ref": "method:contrastive-probe-r0"
+        },
+        {
+          "segment_id": "selection",
+          "segment_kind": "SELECTION_RATIONALE",
+          "source_ref": "synthetic://ignition-190/positive-a",
+          "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+          "exact_locator": "synthetic://ignition-190/positive-a#selection",
+          "summary": "The method was selected because the case contains two plausible explanations and a reversible probe is available.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "selected_candidate_ref": "method:contrastive-probe-r0",
+          "rationale": "The candidate directly separates the two stated explanations while preserving unknowns.",
+          "alternatives_considered": [
+            "template replay without a probe",
+            "single observation summary"
+          ]
+        },
+        {
+          "segment_id": "context",
+          "segment_kind": "CONTEXT",
+          "source_ref": "synthetic://ignition-190/positive-a",
+          "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+          "exact_locator": "synthetic://ignition-190/positive-a#context",
+          "summary": "The context is a synthetic bounded comparison with limited observations and no external data.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "context_ref": "selection",
+          "constraints": [
+            "synthetic-only inputs",
+            "reversible probe",
+            "no causal claim from one observation"
+          ]
+        },
+        {
+          "segment_id": "use",
+          "segment_kind": "METHOD_USE_EVENT",
+          "source_ref": "synthetic://ignition-190/positive-a",
+          "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+          "exact_locator": "synthetic://ignition-190/positive-a#use",
+          "summary": "The selected contrastive probe was applied to the synthetic input in one ordered use event.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "used_candidate_ref": "method:contrastive-probe-r0",
+          "input_ref": "context",
+          "expected_observation": "The probe should produce an observation that differs under the two candidate explanations.",
+          "use_order": 1
+        },
+        {
+          "segment_id": "outcome",
+          "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+          "source_ref": "synthetic://ignition-190/positive-a",
+          "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+          "exact_locator": "synthetic://ignition-190/positive-a#outcome",
+          "summary": "The probe produced a distinguishable synthetic observation while leaving causal attribution unresolved.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "use_segment_ref": "use",
+          "outcome_type": "OBSERVED_OUTCOME",
+          "observed_outcome": "The observed pattern separated the two synthetic predictions for this bounded fixture.",
+          "confounders": [
+            "synthetic measurement noise",
+            "single-probe order"
+          ],
+          "causal_attribution": "NOT_ESTABLISHED"
+        },
+        {
+          "segment_id": "revision",
+          "segment_kind": "REVISION_OR_DISPOSITION",
+          "source_ref": "synthetic://ignition-190/positive-a",
+          "source_sha256": "2de866f88994314f503cfde7eb49289d778b5df61ef642b9fa7c471a3f5ec9c5",
+          "exact_locator": "synthetic://ignition-190/positive-a#revision",
+          "summary": "No method revision was required for the bounded observation, pending independent reconstruction.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "revision_type": "NO_REVISION",
+          "revision_rationale": "The recorded result did not expose a method defect within the synthetic scope.",
+          "disposition": "NO_REVISION",
+          "target_candidate_ref": "method:contrastive-probe-r0",
+          "rollback_ref": null
+        }
+      ],
+      "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+      "authority_status": "RESEARCH_ONLY",
+      "canonical_claim_ids": [],
+      "canonical_promotion": "NONE",
+      "successor_status": "NOT_RUN",
+      "evaluator_status": "NOT_RUN"
+    },
+    {
+      "case_id": "TRACE-02",
+      "case_kind": "synthetic reconstruction input",
+      "artifact_type": "EVALUATION_EVIDENCE",
+      "schema_version": "method-use-trace-r0",
+      "task_id": "IGNITION-20260920-190",
+      "trace_id": "reconstruction-case-02",
+      "is_synthetic": true,
+      "segments": [
+        {
+          "segment_id": "candidate",
+          "segment_kind": "METHOD_CANDIDATE",
+          "source_ref": "synthetic://ignition-190/positive-b",
+          "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+          "exact_locator": "synthetic://ignition-190/positive-b#candidate",
+          "summary": "A candidate method proposes a reversible checklist before accepting a synthetic state transition.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "candidate_ref": "method:reversible-checklist-r0"
+        },
+        {
+          "segment_id": "selection",
+          "segment_kind": "SELECTION_RATIONALE",
+          "source_ref": "synthetic://ignition-190/positive-b",
+          "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+          "exact_locator": "synthetic://ignition-190/positive-b#selection",
+          "summary": "The method was selected because the synthetic transition may be hard to reverse and the checklist is bounded.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "selected_candidate_ref": "method:reversible-checklist-r0",
+          "rationale": "The candidate exposes preconditions and a rollback point before the transition.",
+          "alternatives_considered": [
+            "commit immediately",
+            "narrative confidence statement"
+          ]
+        },
+        {
+          "segment_id": "context",
+          "segment_kind": "CONTEXT",
+          "source_ref": "synthetic://ignition-190/positive-b",
+          "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+          "exact_locator": "synthetic://ignition-190/positive-b#context",
+          "summary": "The context is a synthetic migration with one missing precondition and a declared rollback point.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "context_ref": "selection",
+          "constraints": [
+            "synthetic-only inputs",
+            "rollback must be recorded",
+            "missing precondition remains unresolved"
+          ]
+        },
+        {
+          "segment_id": "use",
+          "segment_kind": "METHOD_USE_EVENT",
+          "source_ref": "synthetic://ignition-190/positive-b",
+          "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+          "exact_locator": "synthetic://ignition-190/positive-b#use",
+          "summary": "The checklist was applied and its precondition check was recorded before the synthetic transition.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "used_candidate_ref": "method:reversible-checklist-r0",
+          "input_ref": "context",
+          "expected_observation": "The checklist should expose whether the precondition is present before committing the transition.",
+          "use_order": 1
+        },
+        {
+          "segment_id": "outcome",
+          "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+          "source_ref": "synthetic://ignition-190/positive-b",
+          "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+          "exact_locator": "synthetic://ignition-190/positive-b#outcome",
+          "summary": "The precondition check failed; no causal conclusion is made about why the synthetic input was incomplete.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "use_segment_ref": "use",
+          "outcome_type": "FAILURE",
+          "observed_outcome": "The required precondition was absent, so the transition was not accepted in this synthetic run.",
+          "confounders": [
+            "synthetic fixture omission",
+            "check ordering"
+          ],
+          "causal_attribution": "UNKNOWN"
+        },
+        {
+          "segment_id": "revision",
+          "segment_kind": "REVISION_OR_DISPOSITION",
+          "source_ref": "synthetic://ignition-190/positive-b",
+          "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+          "exact_locator": "synthetic://ignition-190/positive-b#revision",
+          "summary": "The method is marked for revision or rejection after the bounded failure.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "revision_type": "REVISE",
+          "revision_rationale": "The failure shows that the checklist needs an explicit missing-precondition branch before reuse.",
+          "disposition": "REVISE",
+          "target_candidate_ref": "method:reversible-checklist-r0",
+          "rollback_ref": "synthetic://ignition-190/positive-b#rollback"
+        }
+      ],
+      "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+      "authority_status": "RESEARCH_ONLY",
+      "canonical_claim_ids": [],
+      "canonical_promotion": "NONE",
+      "successor_status": "NOT_RUN",
+      "evaluator_status": "NOT_RUN"
+    },
+    {
+      "case_id": "TRACE-03",
+      "case_kind": "synthetic reconstruction input",
+      "artifact_type": "EVALUATION_EVIDENCE",
+      "schema_version": "method-use-trace-r0",
+      "task_id": "IGNITION-20260920-190",
+      "trace_id": "reconstruction-case-03",
+      "is_synthetic": true,
+      "segments": [
+        {
+          "segment_id": "candidate",
+          "segment_kind": "METHOD_CANDIDATE",
+          "source_ref": "synthetic://ignition-190/negative-a",
+          "source_sha256": "1d1a56d3de36c27ec8279d3fd15845b351048c7d93eb6abbed413c629b7fe521",
+          "exact_locator": "synthetic://ignition-190/negative-a#candidate",
+          "summary": "A candidate is named but no selection or use link is recorded.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "candidate_ref": "method:unlinked-candidate"
+        },
+        {
+          "segment_id": "outcome",
+          "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+          "source_ref": "synthetic://ignition-190/negative-a",
+          "source_sha256": "1d1a56d3de36c27ec8279d3fd15845b351048c7d93eb6abbed413c629b7fe521",
+          "exact_locator": "synthetic://ignition-190/negative-a#outcome",
+          "summary": "An outcome is narrated without a bound use event.",
+          "uncertainty": {
+            "status": "OBSERVED",
+            "basis": [
+              "source is supplied inside this successor-visible synthetic packet"
+            ],
+            "open_questions": [
+              "which links are absent or unresolved"
+            ]
+          },
+          "claim_ceiling": {
+            "authority_status": "OBSERVATION_ONLY",
+            "allowed_claims": [
+              "reconstruction of recorded synthetic lineage"
+            ],
+            "forbidden_inferences": [
+              "missing history may not be invented",
+              "method capability",
+              "causation",
+              "general cognitive inheritance"
+            ]
+          },
+          "use_segment_ref": "missing-use",
+          "outcome_type": "OBSERVED_OUTCOME",
+          "observed_outcome": "A synthetic result is present but its method lineage is unbound.",
+          "confounders": [
+            "unrecorded context"
+          ],
+          "causal_attribution": "UNKNOWN"
+        }
+      ],
+      "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+      "authority_status": "RESEARCH_ONLY",
+      "canonical_claim_ids": [],
+      "canonical_promotion": "NONE",
+      "successor_status": "NOT_RUN",
+      "evaluator_status": "NOT_RUN"
+    },
+    {
+      "case_id": "TRACE-04",
+      "case_kind": "synthetic reconstruction input",
+      "artifact_type": "EVALUATION_EVIDENCE",
+      "schema_version": "method-use-trace-r0",
+      "task_id": "IGNITION-20260920-190",
+      "trace_id": "reconstruction-case-04",
+      "is_synthetic": true,
+      "narrative": "A polished narrative says a method was chosen and improved the result, but it has no exact source fingerprint, ordered use event, or observed-outcome provenance.",
+      "source_ref": "synthetic://ignition-190/negative-b",
+      "source_sha256": "32846fe5edc1e0b96da523fb62a7b5e47b6d1aed2b5f26862f927a9621d2caea",
+      "exact_locator": "synthetic://ignition-190/negative-b#narrative",
+      "canonical_claim_ids": [],
+      "canonical_promotion": "NONE",
+      "successor_status": "NOT_RUN",
+      "evaluator_status": "NOT_RUN"
+    }
+  ],
+  "excluded_paths": [
+    "../evaluator-sealed/criteria.json",
+    "../evaluator-sealed/disposition-enum.json"
+  ],
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

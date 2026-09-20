@@ -1,0 +1,27 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step07",
+  "package_id": "ignition-190-method-use-trace-evaluator-r0",
+  "sealed": true,
+  "visibility": "EVALUATOR_ONLY",
+  "successor_visible": false,
+  "sealed_payload": "evaluator-sealed/criteria.json",
+  "sealed_payload_sha256": "4a8b1d98ffeaee39265a3d7786177caf0a47a51d51bb51b75f9695266e6d7085",
+  "seal_statement": "Criteria are sealed for future independent evaluation; this preparation task does not execute them.",
+  "allowed_outputs": {
+    "reconstruction": [
+      "METHOD_USE_RECONSTRUCTION_SUPPORTED",
+      "METHOD_USE_RECONSTRUCTION_PARTIAL",
+      "METHOD_USE_RECONSTRUCTION_NOT_SUPPORTED"
+    ],
+    "transfer": [
+      "BOUNDED_METHOD_TRANSFER_SUPPORTED",
+      "BOUNDED_METHOD_TRANSFER_PARTIAL",
+      "BOUNDED_METHOD_TRANSFER_NOT_SUPPORTED"
+    ]
+  },
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "evaluator_execution": "NOT_RUN"
+}

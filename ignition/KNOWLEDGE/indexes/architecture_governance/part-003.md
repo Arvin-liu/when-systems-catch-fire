@@ -104,6 +104,11 @@
   - 可搜索名称：NFC-6b7a3571ef1726e3 / completion, production readiness, external truth, Owner acceptance or
   - 来源：`reports/operations/ignition-138-step04-codex-adapter-r3.md`
   - 依赖：—；被引用：—
+- [Complexity, retirement, and protocol freeze](../../ASSET-CARDS.md#asset-hr-8e3a02adaf192eb8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Complexity, retirement, and protocol freeze / protocol-freeze
+  - 来源：`reports/evaluations/ignition-190-method-use-trace-r0/protocol-freeze.md`
+  - 依赖：—；被引用：—
 - [Compression Integrity Gate](../../ASSET-CARDS.md#asset-hr-d27de59030e9f44a)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：Compression Integrity Gate / compression-integrity-gate
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-FD7F21DC1210DE34 / def _trace\(self, inputs\): / IMPLICIT-FD7F21DC1210DE34
   - 来源：`function-os-candidate/v0.2/tests/test_n6_robust.py`
-  - 依赖：—；被引用：—
-- [def _transport\(**kwargs: Any\) -> LiveProcessTransport:](../../../agent_federation/live_capture_fault_matrix.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-2A731F1265E6D4D3 / def _transport\(**kwargs: Any\) -> LiveProcessTransport: / IMPLICIT-2A731F1265E6D4D3
-  - 来源：`agent_federation/live_capture_fault_matrix.py`
   - 依赖：—；被引用：—

@@ -1,0 +1,45 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step03",
+  "fixtures": [
+    {
+      "fixture_id": "positive-a-contrastive-probe",
+      "path": "fixtures/positive-a-contrastive-probe.json",
+      "kind": "KNOWN_POSITIVE",
+      "expected_structural_sufficiency": "PASS",
+      "validator_expectation": "VALID"
+    },
+    {
+      "fixture_id": "positive-b-reversible-checklist-failure",
+      "path": "fixtures/positive-b-reversible-checklist-failure.json",
+      "kind": "KNOWN_POSITIVE",
+      "expected_structural_sufficiency": "PASS",
+      "validator_expectation": "VALID"
+    },
+    {
+      "fixture_id": "negative-a-unlinked-candidate-outcome",
+      "path": "fixtures/negative-a-unlinked-candidate-outcome.json",
+      "kind": "KNOWN_NEGATIVE",
+      "expected_structural_sufficiency": "FAIL",
+      "validator_expectation": "INVALID_MISSING_SELECTION_AND_USE_LINK"
+    },
+    {
+      "fixture_id": "negative-b-narrative-only",
+      "path": "fixtures/negative-b-narrative-only.json",
+      "kind": "KNOWN_NEGATIVE",
+      "expected_structural_sufficiency": "FAIL",
+      "validator_expectation": "INVALID_NO_EXACT_SOURCE_OR_ORDERED_CHAIN"
+    }
+  ],
+  "fixture_constraints": [
+    "synthetic",
+    "no real personal data",
+    "expected labels are structural sufficiency only",
+    "none is the future bounded transfer case"
+  ],
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

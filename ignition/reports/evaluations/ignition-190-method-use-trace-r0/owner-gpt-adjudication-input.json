@@ -1,0 +1,134 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step00",
+  "model": "5.6 Terra",
+  "reasoning_effort": "medium",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "branch": "work/IGNITION-20260920-190-method-use-trace-r0",
+  "starting_head": "ca641a87ad7bc16d18a65f37cbe37b9a5cb733c8",
+  "stacked_draft_base": "eval/IGNITION-20260919-189-r0-4-independent-evaluation",
+  "control_command": {
+    "repository": "Arvin-liu/1111",
+    "ref": "main",
+    "path": "agent-commands/IGNITION-20260920-190.md",
+    "content_sha256": "da57ff0548eb565a9e1e34d8735e0407ccdfb26c116fcfa71089341ea3f91389"
+  },
+  "evidence_heads": [
+    {
+      "source_id": "Task185_internal_archaeology",
+      "head": "15178ecfefe9d02dfb7e818c4dcb57cedc5b9a2b",
+      "role": "ACCEPT_AS_RESEARCH_INPUT",
+      "source_paths": [
+        {
+          "path": "ignition/data/operations/iterations/185/research/internal-cognitive-archaeology-final-report.md",
+          "sha256": "b6b4dd644e1c0fe9c54fea76ce1505bfe7155d83af10e5f9722cba13c4f64182"
+        },
+        {
+          "path": "ignition/data/operations/iterations/185/research/cognitive-inheritance-gap-map.md",
+          "sha256": "38d05f2c541f73d92ed2bade6a1c76e33034a2ad7fa46418e91ea05cff994860"
+        },
+        {
+          "path": "ignition/data/operations/iterations/185/research/minimal-cognitive-kernel-candidate.md",
+          "sha256": "553ad613e9582dffa575ba33bf55b6e3395dc39a970b96e644fce53570cab880"
+        }
+      ],
+      "use_boundary": "adjudication input only; no canonical promotion"
+    },
+    {
+      "source_id": "Task186_external_architecture_research",
+      "head": "0d1d3cdabdc674d7bc196d7a1a64345ff4c27c56",
+      "role": "ACCEPT_AS_RESEARCH_INPUT_ONLY",
+      "source_paths": [
+        {
+          "path": "ignition/reports/external-research/IGNITION-20260918-186/external-cognitive-architecture-research-report.md",
+          "sha256": "0eb0eca66a098d21436018eca02d12ec2625795d7665f6352b131986e392fa10"
+        },
+        {
+          "path": "ignition/reports/external-research/IGNITION-20260918-186/pointfire-external-crosswalk.md",
+          "sha256": "ba974d8e1fab201a2caa21b8fd3a38e33c992f13d123ad55ff3b8026c42d09ac"
+        },
+        {
+          "path": "ignition/reports/external-research/IGNITION-20260918-186/inheritance-distinction-report.md",
+          "sha256": "7311fb74d37c235bf63965d4f5bb82bc6d99fd5daffaaf2a82f17eecd68ff725"
+        },
+        {
+          "path": "ignition/reports/external-research/IGNITION-20260918-186/minimal-experiment-candidates.md",
+          "sha256": "884e97af3b7f6931967da671e744b8c1a4d30023e2390fa2877be783e314c096"
+        },
+        {
+          "path": "ignition/reports/external-research/IGNITION-20260918-186/anti-accumulation-report.md",
+          "sha256": "d6f458265a01e95c25a09e2e9ab821ea0c8090633e94ee33cef08d0813d6eb2c"
+        }
+      ],
+      "use_boundary": "research input only; no external system integration"
+    },
+    {
+      "source_id": "Task189_r0_4_independent_evaluation",
+      "head": "ca641a87ad7bc16d18a65f37cbe37b9a5cb733c8",
+      "role": "R0_4_INDEPENDENT_EVALUATION_INPUT",
+      "source_paths": [
+        {
+          "path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md",
+          "sha256": "b93a21d0f0e721f01f4c8d0e668cfbc0e3b29932e3c3414220e19523364f0f05"
+        },
+        {
+          "path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-verdict.json",
+          "sha256": "84dcfcf938606a060e0a97d9021575ac49daa68be66ec372f8814b7eb32c57af"
+        },
+        {
+          "path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/blind-case-evaluation.md",
+          "sha256": "882d7a828098dd50280637f75df1e7637d99ed6b08f8346bc302d4983ccdefb4"
+        },
+        {
+          "path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/cross-case-method-transfer.md",
+          "sha256": "b64e914229afb801f0cfe9b1cc3cd437935d6ac1041ca6a23fa4d7471bbb661c"
+        },
+        {
+          "path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.md",
+          "sha256": "86b47d87930e80af6537049b49c77bfcd44224ad28f4df6da2e29b6041770bfb"
+        },
+        {
+          "path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.md",
+          "sha256": "e9fff42c557bf942b4981dc2ec747240346b29672d0b7b613bbea7d1ef0da11b"
+        }
+      ],
+      "use_boundary": "adjudication input only; frozen evaluator evidence is not rerun"
+    }
+  ],
+  "task189_command_path_resolution": {
+    "command_literal": "reports/evaluations/ignition-189-r0-4-independent-evaluation/",
+    "exact_head_tree_path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/",
+    "result": "resolved_by_exact_head_tree_without_content_substitution"
+  },
+  "r0_4_evaluator_final_head": {
+    "report_path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md",
+    "verdict_path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-verdict.json",
+    "blind_semantic_checkpoint": "02889bfd1dd5f201b70a7084f48769ca87a290d5",
+    "evaluator_disposition": "R0_4_PROTOCOL_EVIDENCE_VALID",
+    "bounded_method_transfer": "PARTIAL_IN_TWO_R0_4_HELD_OUT_CASES"
+  },
+  "frozen_owner_gpt_disposition": {
+    "R0_4_PROTOCOL_DISPOSITION": "ADOPT_PROVISIONALLY_AS_EXPERIMENTAL_EVALUATION_BASELINE",
+    "R0_4_HELD_OUT_METHOD_TRANSFER": "ACCEPT_PARTIAL_EVIDENCE_IN_TWO_SYNTHETIC_HELD_OUT_CASES",
+    "GENERAL_COGNITIVE_INHERITANCE": "NOT_ESTABLISHED",
+    "COGNITIVE_INHERITANCE_R1": "NOT_AUTHORIZED",
+    "TASK185_INTERNAL_ARCHAEOLOGY": "ACCEPT_AS_RESEARCH_INPUT",
+    "TASK186_EXTERNAL_ARCHITECTURE_RESEARCH": "ACCEPT_AS_RESEARCH_INPUT_ONLY",
+    "TASK186_EXTERNAL_SYSTEM_INTEGRATION": "NO_EXTERNAL_SYSTEM_INTEGRATION",
+    "NEXT_EXPERIMENT": "AUTHORIZE_METHOD_USE_TRACE_R0",
+    "CROSS_MODEL_TRANSFER": "DEFERRED",
+    "MODEL_RSI": "NOT_AUTHORIZED",
+    "WEIGHT_TRAINING": "NOT_AUTHORIZED"
+  },
+  "authority_and_stop": {
+    "builder_role": "BUILDER_RESEARCH_EXPERIMENT_PREPARATION",
+    "successor": "NOT_RUN",
+    "evaluator": "NOT_RUN",
+    "r1": "NOT_AUTHORIZED",
+    "cross_model_real_trial": "NOT_RUN",
+    "canonical_promotion": "NONE",
+    "canonical_claim_ids": [],
+    "current_mutation": "NONE"
+  }
+}

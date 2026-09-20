@@ -1,0 +1,219 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "positive-b-reversible-checklist-failure",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-190/positive-b",
+      "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+      "exact_locator": "synthetic://ignition-190/positive-b#candidate",
+      "summary": "A candidate method proposes a reversible checklist before accepting a synthetic state transition.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "candidate_ref": "method:reversible-checklist-r0"
+    },
+    {
+      "segment_id": "selection",
+      "segment_kind": "SELECTION_RATIONALE",
+      "source_ref": "synthetic://ignition-190/positive-b",
+      "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+      "exact_locator": "synthetic://ignition-190/positive-b#selection",
+      "summary": "The method was selected because the synthetic transition may be hard to reverse and the checklist is bounded.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "selected_candidate_ref": "method:reversible-checklist-r0",
+      "rationale": "The candidate exposes preconditions and a rollback point before the transition.",
+      "alternatives_considered": [
+        "commit immediately",
+        "narrative confidence statement"
+      ]
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-190/positive-b",
+      "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+      "exact_locator": "synthetic://ignition-190/positive-b#context",
+      "summary": "The context is a synthetic migration with one missing precondition and a declared rollback point.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "context_ref": "selection",
+      "constraints": [
+        "synthetic-only inputs",
+        "rollback must be recorded",
+        "missing precondition remains unresolved"
+      ]
+    },
+    {
+      "segment_id": "use",
+      "segment_kind": "METHOD_USE_EVENT",
+      "source_ref": "synthetic://ignition-190/positive-b",
+      "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+      "exact_locator": "synthetic://ignition-190/positive-b#use",
+      "summary": "The checklist was applied and its precondition check was recorded before the synthetic transition.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "used_candidate_ref": "method:reversible-checklist-r0",
+      "input_ref": "context",
+      "expected_observation": "The checklist should expose whether the precondition is present before committing the transition.",
+      "use_order": 1
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-190/positive-b",
+      "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+      "exact_locator": "synthetic://ignition-190/positive-b#outcome",
+      "summary": "The precondition check failed; no causal conclusion is made about why the synthetic input was incomplete.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "use_segment_ref": "use",
+      "outcome_type": "FAILURE",
+      "observed_outcome": "The required precondition was absent, so the transition was not accepted in this synthetic run.",
+      "confounders": [
+        "synthetic fixture omission",
+        "check ordering"
+      ],
+      "causal_attribution": "UNKNOWN"
+    },
+    {
+      "segment_id": "revision",
+      "segment_kind": "REVISION_OR_DISPOSITION",
+      "source_ref": "synthetic://ignition-190/positive-b",
+      "source_sha256": "9bbe95d9f32ef07a6031311bb1bb19edfb6903505963243582e6d9591f34559a",
+      "exact_locator": "synthetic://ignition-190/positive-b#revision",
+      "summary": "The method is marked for revision or rejection after the bounded failure.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic fixture source pinned in the adjacent source manifest"
+        ],
+        "open_questions": [
+          "future independent reconstruction"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "synthetic method-use structural lineage only"
+        ],
+        "forbidden_inferences": [
+          "method capability",
+          "causation",
+          "general cognitive inheritance",
+          "R1 authorization"
+        ]
+      },
+      "revision_type": "REVISE",
+      "revision_rationale": "The failure shows that the checklist needs an explicit missing-precondition branch before reuse.",
+      "disposition": "REVISE",
+      "target_candidate_ref": "method:reversible-checklist-r0",
+      "rollback_ref": "synthetic://ignition-190/positive-b#rollback"
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

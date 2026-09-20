@@ -1,0 +1,70 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step10",
+  "branch": "work/IGNITION-20260920-190-method-use-trace-r0",
+  "starting_head": "ca641a87ad7bc16d18a65f37cbe37b9a5cb733c8",
+  "stacked_draft_base": "eval/IGNITION-20260919-189-r0-4-independent-evaluation",
+  "steps": [
+    {
+      "step": "Step00",
+      "commit": "a3010d8dc0bc20e4bd1fc7e9cc13e38281091197",
+      "push": "FAST_FORWARD"
+    },
+    {
+      "step": "Step01",
+      "commit": "a44c122f38e81b9a8c4b4a85427568601fea0780",
+      "push": "FAST_FORWARD"
+    },
+    {
+      "step": "Step02",
+      "commit": "d54ad610017736e85fada86c0ae4662be4cd6804",
+      "push": "FAST_FORWARD"
+    },
+    {
+      "step": "Step03",
+      "commit": "25eea61c1e8f542a53d937e8cac2806d1ca79fd3",
+      "push": "FAST_FORWARD"
+    },
+    {
+      "step": "Step04",
+      "commit": "72270a268ec4d92f9f1bffa9e5322c27b8c0dc8d",
+      "push": "FAST_FORWARD"
+    },
+    {
+      "step": "Step05",
+      "commit": "531a394b553a629515e9a719c08af136d92e0f77",
+      "push": "FAST_FORWARD"
+    },
+    {
+      "step": "Step06",
+      "commit": "fecfdc54b376da4a0ddbedb5863aa1715f65f8f2",
+      "push": "FAST_FORWARD"
+    },
+    {
+      "step": "Step07",
+      "commit": "5cd2599d16c2266994e77b9ce8c6947dd8a9c533",
+      "push": "FAST_FORWARD"
+    },
+    {
+      "step": "Step08",
+      "commit": "f74996ea33cf242650e47228ac88a7a8d4c41081",
+      "push": "FAST_FORWARD"
+    },
+    {
+      "step": "Step09",
+      "commit": "6fd2c2e571415a2dec5d2494b04682bf2e71e099",
+      "push": "FAST_FORWARD"
+    },
+    {
+      "step": "Step10",
+      "commit": "RECORDED_BY_THIS_COMMIT_AND_FINAL_PR_HEAD",
+      "push": "FAST_FORWARD"
+    }
+  ],
+  "exact_head_rule": "Each numbered step was committed once and the branch ref was moved once with force=false.",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}
