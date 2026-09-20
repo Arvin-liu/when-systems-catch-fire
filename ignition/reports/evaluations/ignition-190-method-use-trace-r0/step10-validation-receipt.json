@@ -1,0 +1,57 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step10",
+  "pre_step10_head": "6fd2c2e571415a2dec5d2494b04682bf2e71e099",
+  "branch": "work/IGNITION-20260920-190-method-use-trace-r0",
+  "local_checks": {
+    "task_local_validator_self_test": "PASS",
+    "positive_fixture_a": "PASS",
+    "positive_fixture_b": "PASS",
+    "negative_fixture_a_expected_invalid": "PASS",
+    "negative_fixture_b_expected_invalid": "PASS",
+    "path_accounting_two_pass_fixed_point": "PASS",
+    "foundation_local_gate": "NOT_COMPLETED_DIRECTLY_GITHUB_TLS_BLOCKED",
+    "fresh_full_history_clone": "NOT_COMPLETED_DIRECTLY_GITHUB_TLS_BLOCKED",
+    "r0_4_regressions": "DEFERRED_TO_EXACT_HEAD_CI"
+  },
+  "clone_attempts": [
+    {
+      "command": "git -c http.version=HTTP/1.1 clone --branch work/IGNITION-20260920-190-method-use-trace-r0 https://github.com/Arvin-liu/when-systems-catch-fire.git <tempdir>",
+      "result": "LibreSSL SSL_connect: SSL_ERROR_SYSCALL"
+    },
+    {
+      "command": "git ls-remote ssh://git@ssh.github.com:443/Arvin-liu/when-systems-catch-fire.git refs/heads/work/IGNITION-20260920-190-method-use-trace-r0",
+      "result": "Connection closed by fdfe:dcba:9876::13 port 443"
+    }
+  ],
+  "ci_requirement": {
+    "workflow_checkout": "actions/checkout@v4 with fetch-depth: 0",
+    "exact_head_ref": "github.event.pull_request.head.sha",
+    "required_workflows": [
+      "repository-path-accounting-preflight",
+      "foundation-validation",
+      "architecture-pages"
+    ],
+    "q33_workflow": "not triggered by Task190 report-only paths unless exact-head PR filter expands; no evaluator is run by this task"
+  },
+  "post_step10_additional_paths": [
+    "step-ledger.json",
+    "step10-validation-receipt.json",
+    "step10-preflight.md"
+  ],
+  "final_state_pending_ci": "READY_FOR_METHOD_USE_TRACE_SUCCESSOR_TRIAL_AFTER_EXACT_HEAD_CI",
+  "fixed_declarations": [
+    "R0_4_PROTOCOL_ADOPTED_PROVISIONALLY_AS_EXPERIMENTAL_BASELINE",
+    "PARTIAL_BOUNDED_METHOD_TRANSFER_EVIDENCE_ACCEPTED",
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED",
+    "CROSS_MODEL_TRANSFER_NOT_RUN",
+    "SUCCESSOR_NOT_RUN",
+    "EVALUATOR_NOT_RUN",
+    "NO_CANONICAL_PROMOTION",
+    "NO_EXTERNAL_SYSTEM_INTEGRATION"
+  ],
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}
