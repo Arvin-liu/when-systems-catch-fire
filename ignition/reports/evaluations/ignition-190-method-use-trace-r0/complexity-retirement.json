@@ -1,0 +1,52 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step08",
+  "protocol_versions": {
+    "R0.1": "HISTORICAL_PROTOCOL_EVIDENCE",
+    "R0.2": "HISTORICAL_PROTOCOL_EVIDENCE",
+    "R0.3": "HISTORICAL_PROTOCOL_EVIDENCE",
+    "R0.4": "CURRENT_EXPERIMENTAL_EVALUATION_BASELINE"
+  },
+  "task190_layer": "METHOD_USE_EXPERIMENT_LAYER_ONLY",
+  "new_evaluation_protocol_version": "NONE",
+  "consolidation_candidate": "EVALUATION_PROTOCOL_VERSION_CONSOLIDATION_CANDIDATE",
+  "new_surface_count": {
+    "task_local_schema": 1,
+    "task_local_validator": 1,
+    "global_schemas_added": 0,
+    "global_ontologies_added": 0,
+    "parallel_state_machines_added": 0,
+    "second_provenance_services_added": 0,
+    "canonical_claim_ids_added": 0
+  },
+  "new_schema": {
+    "path": "schema/method-use-trace-r0.schema.json",
+    "exact_consumer": "future Method-Use Trace successor-visible reconstruction and independent evaluator preparation",
+    "why_adapter_alone_is_insufficient": [
+      "four chain slots are missing as explicit required fields: selection rationale, selection-scoped context/alternatives, method-use event, and revision rationale",
+      "six additional slots require cross-segment source-bound links and ordered reconstruction constraints",
+      "existing content objects and generic relations do not enforce candidate to selection to use to outcome to revision order"
+    ],
+    "narrowness": "task-local noncanonical evidence adapter; no global registry or ontology",
+    "retirement_condition": "Retire only after an authorized existing-schema consumer can round-trip all twelve slots with exact source fingerprints, missing-link controls, rollback/reconstruction refs, and no added global state machine; preserve historical artifacts and require independent review.",
+    "rollback": "delete only from a future authorized branch by a reversible commit; no deletion or rewrite is performed in Task190"
+  },
+  "helper": {
+    "path": "tools/validate_method_use_trace_r0.py",
+    "consumer": "offline fixture, blind-packet, ablation-manifest, and transfer-case structural checks",
+    "retirement_condition": "Retire when the existing-schema consumer provides equivalent deterministic checks and the trace fixtures round-trip without this helper."
+  },
+  "boundaries": [
+    "R0_4_PROTOCOL_ADOPTED_PROVISIONALLY_AS_EXPERIMENTAL_BASELINE",
+    "PARTIAL_BOUNDED_METHOD_TRANSFER_EVIDENCE_ACCEPTED",
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED",
+    "NO_R0_5_PROTOCOL_CREATED",
+    "NO_HISTORICAL_PROTOCOL_DELETED"
+  ],
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}
