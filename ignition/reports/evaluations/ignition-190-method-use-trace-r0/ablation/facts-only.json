@@ -1,0 +1,39 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step05",
+  "ablation_case_id": "METHOD-ABLATION-01",
+  "synthetic": true,
+  "personal_data": false,
+  "case_source_ref": "synthetic://ignition-190/ablation/method-vs-facts-case-01",
+  "case_source_sha256": "4f2d6f7b5f46a5a5f7d0f6c3e07d53b0ef6ff772e6b7c6b1f07c2b4c7b2d4c6a",
+  "case_facts": "A synthetic table has four rows. Row A records signal 4 and review 1. Row B records signal 4 and review 1. Row C records signal 2 and review 0. Row D has a missing review value. The packet supplies no external explanation for the difference.",
+  "run_status": "NOT_RUN",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN",
+  "provider_comparison": "NOT_RUN",
+  "cross_model_transfer": "NOT_RUN",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "condition_id": "FACTS_ONLY",
+  "condition_label": "FACTS_ONLY",
+  "supplied_material": [
+    "case facts",
+    "task prompt",
+    "source fingerprint"
+  ],
+  "withheld_material": [
+    "method candidate",
+    "selection rationale",
+    "method-use event",
+    "outcome/revision chain",
+    "skill artifact"
+  ],
+  "task_prompt": "Describe the observed facts, separate observation from interpretation, and state what evidence would be needed before a stronger claim.",
+  "expected_measurements": [
+    "chain reconstruction",
+    "missing-link detection",
+    "source/provenance fidelity",
+    "uncertainty preservation"
+  ]
+}

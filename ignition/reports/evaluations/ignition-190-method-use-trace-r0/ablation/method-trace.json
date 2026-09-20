@@ -1,0 +1,39 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step05",
+  "ablation_case_id": "METHOD-ABLATION-01",
+  "synthetic": true,
+  "personal_data": false,
+  "case_source_ref": "synthetic://ignition-190/ablation/method-vs-facts-case-01",
+  "case_source_sha256": "4f2d6f7b5f46a5a5f7d0f6c3e07d53b0ef6ff772e6b7c6b1f07c2b4c7b2d4c6a",
+  "case_facts": "A synthetic table has four rows. Row A records signal 4 and review 1. Row B records signal 4 and review 1. Row C records signal 2 and review 0. Row D has a missing review value. The packet supplies no external explanation for the difference.",
+  "run_status": "NOT_RUN",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN",
+  "provider_comparison": "NOT_RUN",
+  "cross_model_transfer": "NOT_RUN",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "condition_id": "METHOD_TRACE",
+  "condition_label": "METHOD_TRACE",
+  "supplied_material": [
+    "same case facts",
+    "one source-bound method-use trace",
+    "task prompt"
+  ],
+  "withheld_material": [
+    "evaluator criteria",
+    "future transfer answer",
+    "provider/model identity"
+  ],
+  "trace_ref": "../fixtures/positive-a-contrastive-probe.json",
+  "task_prompt": "Reconstruct the supplied method-use chain, apply only the recorded method slot to the facts, separate observation from interpretation, and state evidence needed for a stronger claim.",
+  "expected_measurements": [
+    "exact link recovery",
+    "method-vs-facts distinction",
+    "source/provenance fidelity",
+    "uncertainty preservation",
+    "bounded application of recorded method slot"
+  ]
+}

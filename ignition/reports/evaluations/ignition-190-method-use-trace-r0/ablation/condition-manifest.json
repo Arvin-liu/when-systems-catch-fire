@@ -1,0 +1,48 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step05",
+  "manifest_id": "ignition-190-method-ablation-r0",
+  "frozen": true,
+  "synthetic": true,
+  "personal_data": false,
+  "run_status": "DESIGN_ONLY_NOT_RUN",
+  "conditions": [
+    {
+      "condition_id": "FACTS_ONLY",
+      "path": "ablation/facts-only.json",
+      "role": "baseline without method-use chain"
+    },
+    {
+      "condition_id": "METHOD_TRACE",
+      "path": "ablation/method-trace.json",
+      "role": "complete source-bound method-use chain"
+    },
+    {
+      "condition_id": "BROKEN_METHOD_TRACE_CONTROL",
+      "path": "ablation/broken-method-trace-control.json",
+      "role": "missing-link control"
+    },
+    {
+      "condition_id": "SKILL_ONLY",
+      "path": "ablation/skill-only-not-applicable.json",
+      "role": "NOT_APPLICABLE"
+    }
+  ],
+  "comparison_targets": [
+    "whether a chain is reconstructed correctly",
+    "whether missing links are detected rather than filled",
+    "whether method-use evidence is distinguished from facts",
+    "whether source-bound method slots are used on a new synthetic packet",
+    "whether uncertainty and claim ceilings are preserved"
+  ],
+  "prohibited_actions": [
+    "run Successor",
+    "run Evaluator",
+    "cross-model provider comparison",
+    "weight training",
+    "canonical promotion"
+  ],
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}
