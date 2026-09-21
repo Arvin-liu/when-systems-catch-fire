@@ -1,0 +1,106 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-197",
+  "step": "Step03",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "criteria_sha256": "4a8b1d98ffeaee39265a3d7786177caf0a47a51d51bb51b75f9695266e6d7085",
+  "evaluation_input_freeze_checkpoint": "8b90854dc20a58415dfbf5e0984aa596450db5ea",
+  "conditions_are_single_run_nonrandomized_without_repeats": true,
+  "condition_evaluations": [
+    {
+      "task_id": "IGNITION-20260921-192",
+      "condition_id": "FACTS_ONLY",
+      "criteria": {
+        "A-FACTS-ONLY-BOUNDARY": {
+          "result": "PASS",
+          "evidence": "frozen-successor-evidence/192-ablation-facts-only/successor-response.json#/method_history_supported_by_input and #/missing_method_links",
+          "finding": "The response stays with supplied row facts, separates interpretation, preserves Row D missingness, and does not invent method history."
+        },
+        "A-BROKEN-TRACE-BOUNDARY": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/192-ablation-facts-only/successor-response.json#/input_scope",
+          "finding": "This condition does not supply a broken trace control."
+        },
+        "A-METHOD-TRACE-STRUCTURE": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/192-ablation-facts-only/successor-response.json#/input_scope",
+          "finding": "No method-use chain is supplied in FACTS_ONLY."
+        },
+        "A-SOURCE-BOUND-USE": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/192-ablation-facts-only/successor-response.json#/method_history_supported_by_input",
+          "finding": "No method slot is available to apply."
+        }
+      },
+      "condition_finding": "Facts-only reasoning remained a bounded factual account and did not call itself method inheritance."
+    },
+    {
+      "task_id": "IGNITION-20260921-193",
+      "condition_id": "METHOD_TRACE",
+      "criteria": {
+        "A-FACTS-ONLY-BOUNDARY": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/193-ablation-method-trace/successor-response.json#/exact_source_refs",
+          "finding": "This condition intentionally supplies a source-bound method trace."
+        },
+        "A-BROKEN-TRACE-BOUNDARY": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/193-ablation-method-trace/successor-response.json#/exact_source_refs",
+          "finding": "This condition is the complete-trace condition, not the missing-link control."
+        },
+        "A-METHOD-TRACE-STRUCTURE": {
+          "result": "PASS",
+          "evidence": "frozen-successor-evidence/193-ablation-method-trace/successor-response.json#/reconstructed_method_chain",
+          "finding": "Candidate, selection, context, use, outcome, and revision are recovered as a source-bound chain beyond the facts-only surface."
+        },
+        "A-SOURCE-BOUND-USE": {
+          "result": "PASS",
+          "evidence": "frozen-successor-evidence/193-ablation-method-trace/successor-response.json#/exact_source_refs and #/application_to_case",
+          "finding": "The method slot is bound to the positive-a fixture and is applied only as a bounded design; no unobserved application outcome is invented."
+        }
+      },
+      "condition_finding": "The method-trace condition supplied observable chain structure and a bounded application design while preserving Row D, unknowns, and the non-capability ceiling."
+    },
+    {
+      "task_id": "IGNITION-20260921-194",
+      "condition_id": "BROKEN_METHOD_TRACE_CONTROL",
+      "criteria": {
+        "A-FACTS-ONLY-BOUNDARY": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/194-ablation-broken-trace/successor-response.json#/source_refs",
+          "finding": "This condition supplies a broken candidate/outcome excerpt rather than facts alone."
+        },
+        "A-BROKEN-TRACE-BOUNDARY": {
+          "result": "PASS",
+          "evidence": "frozen-successor-evidence/194-ablation-broken-trace/successor-response.json#/missing_links and #/unsupported_inferences",
+          "finding": "Selection and use remain explicitly missing; candidate plus outcome is not completed into a use or causal chain."
+        },
+        "A-METHOD-TRACE-STRUCTURE": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/194-ablation-broken-trace/successor-response.json#/missing_links",
+          "finding": "The control deliberately withholds a complete method trace."
+        },
+        "A-SOURCE-BOUND-USE": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/194-ablation-broken-trace/successor-response.json#/unsupported_inferences",
+          "finding": "No method slot is accepted as used; source-bound candidate and outcome observations are retained separately."
+        }
+      },
+      "condition_finding": "The broken control preserved the missing selection/use links and explicitly blocked false-positive completion."
+    }
+  ],
+  "descriptive_condition_contrast": {
+    "result": "DESCRIPTIVE_CONDITION_CONTRAST",
+    "observed_difference": "In these three single executions, FACTS_ONLY reports facts and unknowns, METHOD_TRACE reports a complete source-bound chain plus bounded application design, and BROKEN_METHOD_TRACE_CONTROL preserves missing links.",
+    "causal_claim": "NOT_PERMITTED",
+    "effect_size": "NOT_COMPUTED",
+    "probability_or_general_superiority": "NOT_COMPUTED",
+    "limitation": "Conditions were non-randomized, single-run, and not repeated; observed differences may include model stochasticity and condition-surface differences."
+  },
+  "claim_ceiling": [
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED_BY_EVALUATOR",
+    "CROSS_MODEL_TRANSFER_NOT_RUN",
+    "NO_CANONICAL_PROMOTION"
+  ]
+}
