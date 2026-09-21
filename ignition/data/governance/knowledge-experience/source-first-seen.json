@@ -306,6 +306,13 @@
     "reports/evaluations/ignition-190-method-use-trace-r0/step10-preflight.md": "2026-09-20",
     "reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/README.md": "2026-09-20",
     "reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-source.md": "2026-09-20",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md": "2026-09-21",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md": "2026-09-21",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evidence-freeze.md": "2026-09-21",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/independent-evaluation-report.md": "2026-09-21",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/negative-control-audit.md": "2026-09-21",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/reconstruction-evaluation.md": "2026-09-21",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/transfer-evaluation.md": "2026-09-21",
     "reports/external-research/104-dual-088-reconciliation.md": "2026-07-13",
     "reports/external-research/104-gap-patch-evidence-readiness.md": "2026-07-13",
     "reports/external-research/104-source-quality-audit.md": "2026-07-13",
@@ -642,7 +649,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 640,
+  "entry_count": 647,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

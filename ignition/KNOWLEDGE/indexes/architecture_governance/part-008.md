@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Released experiments show close numerical agreement between interpreted and directly compiled paths, exact-gradient cali](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-56f5c80d798378b4 / Released experiments show close numerical agreement between interpreted and directly compiled paths, exact-gradient cali
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [Remaining content work queue](../../ASSET-CARDS.md#asset-hr-52a1b14648bb866b)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Remaining content work queue / remaining-content-work-queue-20260713
@@ -1123,6 +1128,16 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Step01 mechanical erratum / step01-mechanical-erratum
   - 来源：`reports/evaluations/ignition-190-method-use-trace-r0/step01-mechanical-erratum.md`
+  - 依赖：—；被引用：—
+- [Step02 — Blind Reconstruction Evaluation](../../ASSET-CARDS.md#asset-hr-f879d14abdc1495b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Step02 — Blind Reconstruction Evaluation / reconstruction-evaluation
+  - 来源：`reports/evaluations/ignition-197-method-use-trace-independent-evaluation/reconstruction-evaluation.md`
+  - 依赖：—；被引用：—
+- [Step07 — Evaluation Evidence Isolation](../../ASSET-CARDS.md#asset-hr-13fb358eb5baed98)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Step07 — Evaluation Evidence Isolation / evaluation-isolation
+  - 来源：`reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md`
   - 依赖：—；被引用：—
 - [Step12 independently validated the exact Task140 binding across task, dispatch,](../../../reports/operations/ignition-140-step12-independent-validation.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a68495953ae263cc / This is an operations gap, not a new truth layer.
   - 来源：`reports/operations/121Q24-current-state-reconciliation.md`
-  - 依赖：—；被引用：—
-- [This is entrypoint and link-integrity evidence. It does not turn repository](../../../reports/operations/ignition-144-step08-publication-entrypoint-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-99e7aaff5db07c00 / This is entrypoint and link-integrity evidence. It does not turn repository
-  - 来源：`reports/operations/ignition-144-step08-publication-entrypoint-audit.md`
-  - 依赖：—；被引用：—
-- [This is evidence that Pointfire's internal source, claim, review, ceiling, suspension and publication hand-offs were exe](../../../docs/architecture/getnote-1329-epistemic-governance-pressure-test.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-565c57d6b27c4b37 / This is evidence that Pointfire's internal source, claim, review, ceiling, suspension and publication hand-offs were exe
-  - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
-  - 依赖：—；被引用：—
-- [This is not evidence of either success or failure of the child. The exact](../../../reports/operations/ignition-138-step08-amendment-01-live-codex-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6544efc9ec719432 / This is not evidence of either success or failure of the child. The exact
-  - 来源：`reports/operations/ignition-138-step08-amendment-01-live-codex-reconciliation.md`
   - 依赖：—；被引用：—

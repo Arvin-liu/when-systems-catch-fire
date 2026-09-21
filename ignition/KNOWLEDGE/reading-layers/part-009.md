@@ -4,6 +4,41 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-9c2eb035ebedff6a"></a>
+## IGNITION-20260915-178 — Task172 final closeout
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This receipt records the state observed before Task178 writes. It is not a claim about external truth or CI beyond the named exact head and checks. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260915-178 — Task172 final closeout；主题：Baseline receipt (read-only start)；actualstarthead: 03a2b33cced830418cc310a59b519fca8d10f2fa；pr: #218 — IGNITION-20260912-172: knowledge routing and UNESCO corpus；prstate: OPEN, DRAFT, unmerged；branch: work/IGNITION-20260912-172-knowledge-routing-universal-corpus
+- 完整阅读：[agent-results/IGNITION-20260915-178-result.md](../../agent-results/IGNITION-20260915-178-result.md)
+
+<a id="reading-hr-9c6cccd9238910af"></a>
+## IGNITION-20260907-162: convergence and next-leap assessment
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- 1 分钟：The final machine verdict is: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260907-162: convergence and next-leap assessment；主题：Combined decision；The final machine verdict is:；input regime: INFORMATIONVOLUMEEFFECTONLY;；historical track: HISTORICALUNDERDETERMINED;；basis/semantic verdict: NOBASISESCAPEDETECTED;
+- 完整阅读：[docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md](../../docs/governance/external-history-convergence-and-next-leap-assessment-2026-09-07.md)
+
+<a id="reading-hr-9ce0dfb3a119bc53"></a>
+## S1 规范性审核 - 封闭边界协议 (Closed-Boundary Protocol)
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：系统在封闭或强边界内演化，外部输入/退出/迁移受限。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：S1 规范性审核 - 封闭边界协议 (Closed-Boundary Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；系统在封闭或强边界内演化，外部输入/退出/迁移受限。；'封闭'程度未分级，易被用作永久封锁的借口（歧义/适用边界）。
+- 完整阅读：[docs/governance/meta-protocol-reviews/protocols/S1.md](../../docs/governance/meta-protocol-reviews/protocols/S1.md)
+
+<a id="reading-hr-9cf03227a0396b4c"></a>
+## 121Q12 Baseline Audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This audit starts the effectual-action and mechanism-adjudication overlay from the verified post-121Q11 main state. It does not renumber, replace, or reinterpret the existing L0-L6 architecture. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q12 Baseline Audit；Status: BASELINEAUDITED；This audit starts the effectual-action and mechanism-adjudication overlay from the verified post-121Q11 main state. It does not renumber, replace, or reinterpret the existing L0-L6 architecture.；主题：Verified Start Point；Repository: Arvin-liu/when-systems-catch-fire；Main HEAD: 8189dde91d0adbb7957c8aa642bc76d14afe6534
+- 完整阅读：[reports/architecture/121Q12-baseline-audit.md](../../reports/architecture/121Q12-baseline-audit.md)
+
+<a id="reading-hr-9db313b3faf86fd3"></a>
+## IGNITION-20260826-140 — Step 08 Current State Sync
+`HISTORICAL_COMPLETION_RECORD` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Task140 is now the canonical Current formal task and latest architecture-changing task. The identity epoch is os-control-plane-r6-live-observation-reconciliation-r1, the formal ordinal is 140, the compatibility boundary alias is 140, and the registry-derived map is 0.14.0 Current. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260826-140 — Step 08 Current State Sync；Task140 is now the canonical Current formal task and latest architecture-changing task. The identity epoch is os-control-plane-r6-live-observation-reconciliation-r1, the formal ordinal is 140, the compatibility boundary alias is 140, and the registry-derived map is 0.14.0 Current.；The Current projection is sourced from the Task139 append-only attempt ledger plus the Task140 reconciliation-event overlay. It records five attempts, zero validated completions, zero unreconciled attempts and two observation-incomplete records. The next action is RUNDYNAMICEXECUTORADMISSION; no blind retry is admitted. The public/transport returncode: 0 for…；The three historical reconciliation events are hash-chained at 02027b3ebeb6a946333bc7ff807594083cb638753a81c267aa1601a5884cb10b. Hermes136 retains unknown external effect after evidence exhaustion, Codex138 second retains unknown effect as terminal observation-incomplete, and Task139 closes only its conclusive pre-dispatch boundary. Reconciliation closure is…；All 11 registered architecture-sync surfaces are marked CHANGE with path-bound evidence. The identity contract and map changed; the append-only State Changelog records the Task140 transition. Deterministic Current Facts, Current Snapshot, map derivation and all seven current-surface compiler checks pass. The focused Task140 gate ran 43 tests with 0 failures,…；Claim ceiling: repository-local architecture identity, typed observation, reconciliation and Current-surface synchronization evidence only. This receipt does not establish validated live completion, external truth, production readiness, Owner acceptance, formal publication or epistemic acceptance.
+- 完整阅读：[reports/operations/ignition-140-step08-current-state-sync.md](../../reports/operations/ignition-140-step08-current-state-sync.md)
+
 <a id="reading-hr-9e39d8c09bf33c74"></a>
 ## 121Q9 Cumulative Baseline
 `CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
@@ -277,6 +312,13 @@
 - 5 分钟：主题：IGNITION-084 Max Adjudication Report；任务 ID: IGNITION-20260709-084；模型: qclaw/pool-glm-5.2；开始时间: 2026-07-13T16:18:00+08:00；完成时间: 2026-07-13T16:25:00+08:00；状态: MAXADJUDICATIONCOMPLETEARCHITECTURETRUTHFREEZECANDIDATE
 - 完整阅读：[reports/foundation-architecture/084-max-adjudication-report.md](../../reports/foundation-architecture/084-max-adjudication-report.md)
 
+<a id="reading-hr-acc9d516addef2a9"></a>
+## Step06 — Independent Method-Use Trace R0 Verdict
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Repository: Arvin-liu/when-systems-catch-fire Exact base: 65862bf1f5a4e6880ac16698fc059d522350457b Successor evidence freeze: c87ba4d94d04a5ee443b45cfa28eef167dbb01b4 Evaluation input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Step06 — Independent Method-Use Trace R0 Verdict；Repository: Arvin-liu/when-systems-catch-fire Exact base: 65862bf1f5a4e6880ac16698fc059d522350457b Successor evidence freeze: c87ba4d94d04a5ee443b45cfa28eef167dbb01b4 Evaluation input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea；Reconstruction: METHODUSERECONSTRUCTIONSUPPORTED；Bounded transfer: BOUNDEDMETHODTRANSFERSUPPORTED；Ablation: DESCRIPTIVECONDITIONCONTRAST only；Negative controls: all ten NOTTRIGGERED
+- 完整阅读：[reports/evaluations/ignition-197-method-use-trace-independent-evaluation/independent-evaluation-report.md](../../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/independent-evaluation-report.md)
+
 <a id="reading-hr-ad2106fa45b1e5a9"></a>
 ## IGNITION-20260826-141 Step 16 — Post-publication projection gate repair
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -311,45 +353,3 @@
 - 1 分钟：机器完整表：data/foundation/nonfunction-claims/。未来断言入口：docs/foundation/future-claim-admission-protocol.md。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：本索引是任务 100 的生成视图。注册表闭合只表示每个可复现发现的候选已有显式处置或隔离；不表示语料为真、定理已证明、外部证据充分、通过同行评审或获得独立复现。；主题：高风险队列（机器完整表的有限视图）；任务 98—99 已人工裁决的函数身份优先于本轮自动发现；依赖只继承其 M/E 和断言上限，不继承外部真实性。；类比不是同构；同构必须给出对象、映射、双射与结构保持证明。；一个模型类失败不能推出所有统一理论都不可能。物理学大一统仍是开放研究问题。；本地测试和生成器确定性只验证登记与门禁，不验证自然、社会、生命、意识或 AI 的外部断言。
 - 完整阅读：[docs/foundation/nonfunction-claim-adjudication-index.md](../../docs/foundation/nonfunction-claim-adjudication-index.md)
-
-<a id="reading-hr-adeed1d734c70a83"></a>
-## D598 final adjudication
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak repair channels and adaptation as a directional mechanism leading toward group-level desensitization. The source itself limits the claim: it does not say every high-pressure organi… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：D598 final adjudication；D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak repair channels and adaptation as a directional mechanism leading toward group-level desensitization. The source itself limits the claim: it does not say every high-pressure organization exhibits the effect, and cross-industry generality remai…；Final 079 type: MECHANISMMODEL.；It is not a FUNCTION or PARTIALFUNCTION because the displayed multiplicative score does not declare a set-theoretic domain, codomain, units, calibrated scales, identification strategy, or a unique executable measurement rule. It is not an established CAUSALMODEL because the source provides no intervention semantics, identification assumptions, or independent…；The controlled proposition and exact source locator are stored in 079-independent-semantic-review.jsonl. D598 is complete for semantic classification but remains empirically unvalidated.
-- 完整阅读：[reports/foundation-architecture/D598-final-adjudication-20260713.md](../../reports/foundation-architecture/D598-final-adjudication-20260713.md)
-
-<a id="reading-hr-ae709c73eb8cce73"></a>
-## S3 规范性审核 - 层级协议 (Hierarchy Protocol)
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：价值：责任清晰、应急协调、专业分工与大规模复杂任务，是有效组织的工具。条件：仅当权力可问责、层级可撤销、决策可复核且底层有申诉与退出机制时才有价值。伤害：当层级不可问责、不可撤销、把服从当价值或剥夺底层权利时，会伤害共同体。不可缺少的约束：权力可问责、层级可撤销、决策可复核、申诉与退出、服从非价值。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：S3 规范性审核 - 层级协议 (Hierarchy Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；系统由层级结构组织，上下层存在控制或信息梯度。；'层级'未限定权责关系，易把服从本身当成价值（歧义/滥用风险）。
-- 完整阅读：[docs/governance/meta-protocol-reviews/protocols/S3.md](../../docs/governance/meta-protocol-reviews/protocols/S3.md)
-
-<a id="reading-hr-aebc74306f6c98e0"></a>
-## 历史创造性不连续性回放 — IGNITION-20260908-165
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：历史创造性不连续性回放 — IGNITION-20260908-165；命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32fb2df 边界：研究只、Draft 只；不改变 Current、canonical、生产运行时、validator 或 Own…；Stage A 为 UNDERDETERMINED：可数的四个精确正例中 C3 能力等价命中 0/4，holdout 命中 0/3；P00 保留为 HISTORICALBOUNDARYGAP，没有被补造边界。；Stage A 失败或未定并不停止本任务；按照命令继续执行了 Stage B。没有把同一运行产生的 proposer、packet 和 answer key 解释成认知独立性。；失败门槛：threeoffivescoreablepositivehits, twoofthreeholdoutpositivehits, c3beatsc0c1c2bynettwo, nol3falsepositiven02n03n09, allstrongnegativel3fpleone, randomcollisionnotequivalent, p00boundaryscoreable。；强负例 L3 假阳性：3；C3 相对 C0/C1/C2 的配对净差：{'C0': 12, 'C1': 0, 'C2': 0}；C3-C4 结构分数差：0.5。这些数字是本地结构代理结果，不是外部验证。
-- 完整阅读：[docs/governance/historical-creative-discontinuity-replay-2026-09-08.md](../../docs/governance/historical-creative-discontinuity-replay-2026-09-08.md)
-
-<a id="reading-hr-aee11399d5cfd399"></a>
-## 跨域 smoke test — 跨域同构汇总
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：验证「不同领域材料 → 统一两张表」流程是否跑得通，并确认框架能否识别跨域同构。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：跨域 smoke test — 跨域同构汇总；验证「不同领域材料 → 统一两张表」流程是否跑得通，并确认框架能否识别跨域同构。；结论：三个完全不同领域命中同一个核心函数 D597，证明框架的跨域同构识别能力通过 smoke test。；主题：跨域复现的新候选函数（3 个）；以下机制在三个领域均出现，但现有表无精确等价条目，标记为待复核候选：；NF-X1 指标排名隐性分层：当量化积分与公共资格/晋升/荣誉挂钩，积分高低被默认等同贡献大小，制造新的隐性社会/组织分层。三领域均出现（荣誉阶层/续资助分层/职称层级）。现有表仅 D94 提及组织层级但不覆盖此机制。
-- 完整阅读：[outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md](../../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
-
-<a id="reading-hr-aefff65e1fe80eef"></a>
-## 起始案例来源链｜公元1115年：金朝崛起为什么这么快？
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
-- 1 分钟：原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：起始案例来源链｜公元1115年：金朝崛起为什么这么快？；原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。；笔记把用户综合与节目原文放在同一文件中，两者不能当作两份独立史证。；文末书目是外部核验队列；“列入参考文献”不等于本项目已逐项打开、定位或确认支持。；传统兵力数、“统一崩溃阈值”、“百次冲锋”和全球罕见性等说法仍需外部历史核验。；1127 年是北宋政权覆亡，不是整个宋朝终结；南宋延续。
-- 完整阅读：[docs/publication/cases/jin-rise-case-source.md](../../docs/publication/cases/jin-rise-case-source.md)
-
-<a id="reading-hr-b00bbd6f7fea949f"></a>
-## IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The Task136 attempt was inspected without dispatching Hermes again. Its public receipt is live-hermes-136 / live-hermes-136-initial, with TIMEDOUTEFFECTUNKNOWN, equal historical workspace digests, no public events, no session pointer, and cancelstate=UNKNOWN. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation；The Task136 attempt was inspected without dispatching Hermes again. Its public receipt is live-hermes-136 / live-hermes-136-initial, with TIMEDOUTEFFECTUNKNOWN, equal historical workspace digests, no public events, no session pointer, and cancelstate=UNKNOWN.；The receipt does not contain the attempt PID, process-group ID, or a durable disposable-workspace path. A metadata-only process inventory found long-lived Hermes service processes, but there is no safe binding from those processes to live-hermes-136; they were not touched. A bounded public search found no matching attempt output or adapter/temp artifact. The…；The correct reconciliation result is therefore RECONCILIATIONREMAINSOPEN. The old receipt was not rewritten, no new Hermes dispatch was created, and no blind retry is authorized. This open Hermes lineage does not block a separately bound Codex dispatch, provided that Codex uses a new dispatchid and attemptid.；Claim ceiling: this is bounded read-only reconciliation evidence. It does not prove that the Hermes attempt had no effect, that cancellation succeeded, or that any external executor completed.
-- 完整阅读：[reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md](../../reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md)

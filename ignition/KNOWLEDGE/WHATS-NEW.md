@@ -4,6 +4,69 @@
 
 ## 2026
 
+<a id="change-src-hr-f879d14abdc1495b"></a>
+### 2026-09-21 · Step02 — Blind Reconstruction Evaluation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea Successor evidence freeze: c87ba4d94d04a5ee443b45cfa28eef167dbb01b4
+- **来源：** [reconstruction-evaluation.md](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/reconstruction-evaluation.md)
+- **资产卡：** [HR-F879D14ABDC1495B](./ASSET-CARDS.md#asset-hr-f879d14abdc1495b)
+
+<a id="change-src-hr-acc9d516addef2a9"></a>
+### 2026-09-21 · Step06 — Independent Method-Use Trace R0 Verdict
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Repository: Arvin-liu/when-systems-catch-fire Exact base: 65862bf1f5a4e6880ac16698fc059d522350457b Successor evidence freeze: c87ba4d94d04a5ee443b45cfa28eef167dbb01b4 Evaluation input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea
+- **来源：** [independent-evaluation-report.md](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/independent-evaluation-report.md)
+- **资产卡：** [HR-ACC9D516ADDEF2A9](./ASSET-CARDS.md#asset-hr-acc9d516addef2a9)
+
+<a id="change-src-hr-5f93fd28b705e6c8"></a>
+### 2026-09-21 · Step04 — TRANSFER-01 Condition Contrast
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea
+- **来源：** [transfer-evaluation.md](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/transfer-evaluation.md)
+- **资产卡：** [HR-5F93FD28B705E6C8](./ASSET-CARDS.md#asset-hr-5f93fd28b705e6c8)
+
+<a id="change-src-hr-592ed6ca175524cb"></a>
+### 2026-09-21 · Step05 — Negative-Control Audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** All ten audited controls are NOTTRIGGERED in the frozen Successor outputs.
+- **来源：** [negative-control-audit.md](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/negative-control-audit.md)
+- **资产卡：** [HR-592ED6CA175524CB](./ASSET-CARDS.md#asset-hr-592ed6ca175524cb)
+
+<a id="change-src-hr-4135ee13a9f3b4f4"></a>
+### 2026-09-21 · IGNITION-20260921-197 Successor Evidence Freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: SUCCESSOREVIDENCEFREEZECHECKPOINT
+- **来源：** [evidence-freeze.md](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evidence-freeze.md)
+- **资产卡：** [HR-4135EE13A9F3B4F4](./ASSET-CARDS.md#asset-hr-4135ee13a9f3b4f4)
+
+<a id="change-src-hr-13fb358eb5baed98"></a>
+### 2026-09-21 · Step07 — Evaluation Evidence Isolation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** All evaluator-authored JSON/JSONL records are typed EVALUATIONEVIDENCE, path-accounted, provenance-visible, and contain zero canonical claim IDs. Markdown files are projections/documentation of those records. The 18 copied Successor files remain byte-preserved source evidence under frozen-success…
+- **来源：** [evaluation-isolation.md](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md)
+- **资产卡：** [HR-13FB358EB5BAED98](./ASSET-CARDS.md#asset-hr-13fb358eb5baed98)
+
+<a id="change-src-hr-10f8ca7fdfd72ce7"></a>
+### 2026-09-21 · Step03 — Ablation Condition Contrast
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea Criteria: Task190 sealed method-use-trace-evaluator-r0
+- **来源：** [ablation-evaluation.md](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md)
+- **资产卡：** [HR-10F8CA7FDFD72CE7](./ASSET-CARDS.md#asset-hr-10f8ca7fdfd72ce7)
+
 <a id="change-src-hr-c386d0cc5aa6970d"></a>
 ### 2026-09-20 · Method vs facts/skill/template ablation design R0
 

@@ -4,6 +4,48 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-adeed1d734c70a83"></a>
+## D598 final adjudication
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak repair channels and adaptation as a directional mechanism leading toward group-level desensitization. The source itself limits the claim: it does not say every high-pressure organi… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：D598 final adjudication；D598's complete legacy body was recovered and read. It describes prolonged high pressure, low refusal capacity, weak repair channels and adaptation as a directional mechanism leading toward group-level desensitization. The source itself limits the claim: it does not say every high-pressure organization exhibits the effect, and cross-industry generality remai…；Final 079 type: MECHANISMMODEL.；It is not a FUNCTION or PARTIALFUNCTION because the displayed multiplicative score does not declare a set-theoretic domain, codomain, units, calibrated scales, identification strategy, or a unique executable measurement rule. It is not an established CAUSALMODEL because the source provides no intervention semantics, identification assumptions, or independent…；The controlled proposition and exact source locator are stored in 079-independent-semantic-review.jsonl. D598 is complete for semantic classification but remains empirically unvalidated.
+- 完整阅读：[reports/foundation-architecture/D598-final-adjudication-20260713.md](../../reports/foundation-architecture/D598-final-adjudication-20260713.md)
+
+<a id="reading-hr-ae709c73eb8cce73"></a>
+## S3 规范性审核 - 层级协议 (Hierarchy Protocol)
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：价值：责任清晰、应急协调、专业分工与大规模复杂任务，是有效组织的工具。条件：仅当权力可问责、层级可撤销、决策可复核且底层有申诉与退出机制时才有价值。伤害：当层级不可问责、不可撤销、把服从当价值或剥夺底层权利时，会伤害共同体。不可缺少的约束：权力可问责、层级可撤销、决策可复核、申诉与退出、服从非价值。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：S3 规范性审核 - 层级协议 (Hierarchy Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；系统由层级结构组织，上下层存在控制或信息梯度。；'层级'未限定权责关系，易把服从本身当成价值（歧义/滥用风险）。
+- 完整阅读：[docs/governance/meta-protocol-reviews/protocols/S3.md](../../docs/governance/meta-protocol-reviews/protocols/S3.md)
+
+<a id="reading-hr-aebc74306f6c98e0"></a>
+## 历史创造性不连续性回放 — IGNITION-20260908-165
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：历史创造性不连续性回放 — IGNITION-20260908-165；命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32fb2df 边界：研究只、Draft 只；不改变 Current、canonical、生产运行时、validator 或 Own…；Stage A 为 UNDERDETERMINED：可数的四个精确正例中 C3 能力等价命中 0/4，holdout 命中 0/3；P00 保留为 HISTORICALBOUNDARYGAP，没有被补造边界。；Stage A 失败或未定并不停止本任务；按照命令继续执行了 Stage B。没有把同一运行产生的 proposer、packet 和 answer key 解释成认知独立性。；失败门槛：threeoffivescoreablepositivehits, twoofthreeholdoutpositivehits, c3beatsc0c1c2bynettwo, nol3falsepositiven02n03n09, allstrongnegativel3fpleone, randomcollisionnotequivalent, p00boundaryscoreable。；强负例 L3 假阳性：3；C3 相对 C0/C1/C2 的配对净差：{'C0': 12, 'C1': 0, 'C2': 0}；C3-C4 结构分数差：0.5。这些数字是本地结构代理结果，不是外部验证。
+- 完整阅读：[docs/governance/historical-creative-discontinuity-replay-2026-09-08.md](../../docs/governance/historical-creative-discontinuity-replay-2026-09-08.md)
+
+<a id="reading-hr-aee11399d5cfd399"></a>
+## 跨域 smoke test — 跨域同构汇总
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：验证「不同领域材料 → 统一两张表」流程是否跑得通，并确认框架能否识别跨域同构。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：跨域 smoke test — 跨域同构汇总；验证「不同领域材料 → 统一两张表」流程是否跑得通，并确认框架能否识别跨域同构。；结论：三个完全不同领域命中同一个核心函数 D597，证明框架的跨域同构识别能力通过 smoke test。；主题：跨域复现的新候选函数（3 个）；以下机制在三个领域均出现，但现有表无精确等价条目，标记为待复核候选：；NF-X1 指标排名隐性分层：当量化积分与公共资格/晋升/荣誉挂钩，积分高低被默认等同贡献大小，制造新的隐性社会/组织分层。三领域均出现（荣誉阶层/续资助分层/职称层级）。现有表仅 D94 提及组织层级但不覆盖此机制。
+- 完整阅读：[outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md](../../outputs/collisions/20260708-cross-domain-smoke-test/cross-domain-synthesis.md)
+
+<a id="reading-hr-aefff65e1fe80eef"></a>
+## 起始案例来源链｜公元1115年：金朝崛起为什么这么快？
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+- 1 分钟：原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：起始案例来源链｜公元1115年：金朝崛起为什么这么快？；原始材料包含第三方课程内容，本仓库只公开来源记录、哈希、分析边界和派生成果，不复制或公开原始全文。SHA-256 用于确认后续分析所对应的输入版本，不表示原文中的历史断言已经核验。；笔记把用户综合与节目原文放在同一文件中，两者不能当作两份独立史证。；文末书目是外部核验队列；“列入参考文献”不等于本项目已逐项打开、定位或确认支持。；传统兵力数、“统一崩溃阈值”、“百次冲锋”和全球罕见性等说法仍需外部历史核验。；1127 年是北宋政权覆亡，不是整个宋朝终结；南宋延续。
+- 完整阅读：[docs/publication/cases/jin-rise-case-source.md](../../docs/publication/cases/jin-rise-case-source.md)
+
+<a id="reading-hr-b00bbd6f7fea949f"></a>
+## IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The Task136 attempt was inspected without dispatching Hermes again. Its public receipt is live-hermes-136 / live-hermes-136-initial, with TIMEDOUTEFFECTUNKNOWN, equal historical workspace digests, no public events, no session pointer, and cancelstate=UNKNOWN. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260824-137 — Step 01 Hermes Timeout Reconciliation；The Task136 attempt was inspected without dispatching Hermes again. Its public receipt is live-hermes-136 / live-hermes-136-initial, with TIMEDOUTEFFECTUNKNOWN, equal historical workspace digests, no public events, no session pointer, and cancelstate=UNKNOWN.；The receipt does not contain the attempt PID, process-group ID, or a durable disposable-workspace path. A metadata-only process inventory found long-lived Hermes service processes, but there is no safe binding from those processes to live-hermes-136; they were not touched. A bounded public search found no matching attempt output or adapter/temp artifact. The…；The correct reconciliation result is therefore RECONCILIATIONREMAINSOPEN. The old receipt was not rewritten, no new Hermes dispatch was created, and no blind retry is authorized. This open Hermes lineage does not block a separately bound Codex dispatch, provided that Codex uses a new dispatchid and attemptid.；Claim ceiling: this is bounded read-only reconciliation evidence. It does not prove that the Hermes attempt had no effect, that cancellation succeeded, or that any external executor completed.
+- 完整阅读：[reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md](../../reports/operations/ignition-137-step01-hermes-timeout-reconciliation.md)
+
 <a id="reading-hr-b03fab6963dcb9e5"></a>
 ## 跨域候选函数复核
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
@@ -311,45 +353,3 @@
 - 1 分钟：This is a synthetic/offline design only. It has not run a model, Successor, Evaluator, provider comparison, cross-model trial, or score aggregation. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Method vs facts/skill/template ablation design R0；This is a synthetic/offline design only. It has not run a model, Successor, Evaluator, provider comparison, cross-model trial, or score aggregation.；All conditions use the same bounded synthetic facts. The only deliberate change is the supplied artifact surface.；主题：Observable comparisons；The future evaluator may compare exact link recovery, missing-link detection, false-positive completion, source/provenance fidelity, uncertainty preservation, and whether the method-trace condition supplies an observable structural aid beyond facts-only. No total score is defined. A valid method trace is not proof of capability, causation, transfer, or inher…；CROSSMODELTRANSFERNOTRUN
 - 完整阅读：[reports/evaluations/ignition-190-method-use-trace-r0/ablation/ablation-design.md](../../reports/evaluations/ignition-190-method-use-trace-r0/ablation/ablation-design.md)
-
-<a id="reading-hr-c56dd758323901b9"></a>
-## IGNITION-20260821-130 — Terminal Result
-`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
-- 1 分钟：Status: COMPLETEDWITHCLASSIFIEDRESIDUALS 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260821-130 — Terminal Result；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；This is the formal Task 130 release-candidate result. It records the Current Surface Compiler, single-source volatile-fact registry, deterministic snapshot, typed semantic gate, lifecycle state, residual classification and fresh-clone evidence. No Owner middle relay was used.；Each Step 00–13 is one commit, one task-branch push and one exact remote-SHA verification. Step 13’s self SHA is recorded by the post-commit 1111 receipt rather than inside its own commit.；主题：Current and release boundary；Canonical current task: IGNITION-20260821-130, COMPLETEDWITHCLASSIFIEDRESIDUALS, terminal, PRESENTATIONONLY.
-- 完整阅读：[agent-results/IGNITION-20260821-130-result.md](../../agent-results/IGNITION-20260821-130-result.md)
-
-<a id="reading-hr-c5a76b2115839837"></a>
-## 121Q23 Relational Network Gap Audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: PARTIALRELATIONALASSETSWITHOUTADAPTIVERELATIONALNETWORK 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q23 Relational Network Gap Audit；Status: PARTIALRELATIONALASSETSWITHOUTADAPTIVERELATIONALNETWORK；The repository contains many relation-like assets: Foundation registries, function dependencies, Q12-Q14 control overlays, Atlas maps, MCF causal relations, PSD system state relations, evidence regimes, value boundaries, agent/resource records and publication risk relations. These are not yet one adaptive relational network substrate.；主题：Distinctions Preserved；A matrix or registry is not a network.；A map is a projection, not a truth source.
-- 完整阅读：[reports/architecture/121Q23-relational-network-gap-audit.md](../../reports/architecture/121Q23-relational-network-gap-audit.md)
-
-<a id="reading-hr-c629630ad15b68cb"></a>
-## 任务 102 知识体验层缺口与覆盖审计
-`CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：状态：候选实现审计；不自证 Accepted、Merged 或 Current。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：任务 102 知识体验层缺口与覆盖审计；状态：候选实现审计；不自证 Accepted、Merged 或 Current。；任务 101 的人类层（2026-07 历史快照，非当前总数）已经提供 README、HUMAN-READING.md、RESULTS/ 与当时约 166 条历史结果记录，但仍存在五个可复现缺口：没有按知识变化组织的时间线；没有按研究问题组织的知识地图；没有统一资产卡；没有长文 1/5/完整三层；没有覆盖旧称、来源、历史、依赖、反向依赖和 supersession 的全量探索入口。；任务 102 用同一份配置和生成器建立 KNOWLEDGE/ 人类表面与 data/governance/knowledge-experience/ 机器表面。所有恢复的结果/文章来源都获得卡片与三层阅读；函数和断言 registry 全量进入搜索；任务 98 的重点函数以及公共高风险/结论回弹断言获得详细卡片。；覆盖计数以 coverage.json 为准，生成文件摘要与配对以 manifest.json 为准。正文中的数字只用于解释候选范围，不替代 exact-head 重算。；第一次读者路径和 README 两步可达；
-- 完整阅读：[reports/operations/102-knowledge-experience-audit.md](../../reports/operations/102-knowledge-experience-audit.md)
-
-<a id="reading-hr-c66547aa41dfc55f"></a>
-## Task172 Step12 — final candidate disposition
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：The 11 surviving Step01 candidates were re-audited against the Step02 route review and Step11 replay. The result is deliberately 0 new canonical additions. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Task172 Step12 — final candidate disposition；The 11 surviving Step01 candidates were re-audited against the Step02 route review and Step11 replay. The result is deliberately 0 new canonical additions.；The two duplicate/already-covered candidates remain linked to existing authority. Literary material remains interpretive/narrative only. Research hypotheses and external-evidence-review items remain queues, not evidence. Step11’s A/B comparative verdict is INCONCLUSIVE because the frozen A reports do not contain comparable executable retrieval metrics, while…；The machine record is data/operations/iterations/172/step12-final-disposition.json.
-- 完整阅读：[reports/operations/ignition-172-20260915-step12-final-disposition.md](../../reports/operations/ignition-172-20260915-step12-final-disposition.md)
-
-<a id="reading-hr-c7aaddf58550aae5"></a>
-## 120 — Function Paradigm Atlas Report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`
-- 1 分钟：Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high) Branch: records/ignition-120-function-paradigm-atlas-20260713 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：120 — Function Paradigm Atlas Report；主题：IGNITION-20260709-120；Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high) Branch: records/ignition-120-function-paradigm-atlas-20260713；主题：1. Executive Summary；This report documents the collection and analysis of 84 academic sources across 10 function paradigm families, the generation of function paradigm cards, internal asset inventory, and adjudication of 6 candidate architecture gaps (GAP-015 through GAP-020). All 6 candidates were adjudicated as FIELDENHANCEMENTONLY due to insufficient fulltext evidence (0 FULL…；主题：2. Source Collection
-- 完整阅读：[reports/external-research/120-function-paradigm-atlas-report.md](../../reports/external-research/120-function-paradigm-atlas-report.md)
-
-<a id="reading-hr-c893a4870d083875"></a>
-## Agent Platform R2 — 点火工程脊柱与边界
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：本页是 R2 的人类架构说明。它回答“这套工程接口怎样分工、为什么存在、怎样 找到机器证据、不能推出什么、还缺什么”；机器契约仍以 registry、schema、 manifest、测试和 receipt 为准。本页不新增 L7，不替代 Foundation、claim/evidence registry、Value Charter、Results Book 或唯一完整系统图。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Agent Platform R2 — 点火工程脊柱与边界；本页是 R2 的人类架构说明。它回答“这套工程接口怎样分工、为什么存在、怎样 找到机器证据、不能推出什么、还缺什么”；机器契约仍以 registry、schema、 manifest、测试和 receipt 为准。本页不新增 L7，不替代 Foundation、claim/evidence registry、Value Charter、Results Book 或唯一完整系统图。；点火当前主干是一个有界、可审计、可恢复的 Agent Platform 原型；知识治理是 它的第一个大型 Domain Pack，而不是整个系统本体。当前公开上限仍为 CURRENTWITHOPENOBLIGATIONS，EPISTEMICALLYACCEPTED=0。；当前身份 contract/facts 见 current-system-identity.json 和 current-facts.json：点火是 OS / orchestration-governance layer 与 driver，OpenClaw、Hermes、Codex 是外部可替换 executors，当前唯一完整系统图为 0.8.0（0.7.0 Historical）。默认策略是 integrate public boundary；本地行动层只保留 Reference / Conformance / Fallback。；Kernel 保存领域无关 identity、state、capability、approval、audit、；checkpoint、handoff、resume lineage 和 non-escalation contract；不导入 Knowledge、Research、Writing 或具体 provider。
-- 完整阅读：[docs/architecture/agent-platform-r2.md](../../docs/architecture/agent-platform-r2.md)

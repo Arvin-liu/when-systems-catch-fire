@@ -291,6 +291,13 @@
 - 5 分钟：主题：新增案例候选 · P1 接入烟雾测试；本任务为 smoke test，明确限定「不得新增案例」「不得回填正式案例表」。；输入材料本身是本次工程操作的复盘，案例表已有更直接对应的救援流程案例（Codespace 救援闭环），不构成必须新增的独立案例。；即使作为案例，也应先查重、再决定是否入表；smoke test 阶段不做此判断。
 - 完整阅读：[outputs/collisions/20260708-smoke-test/new-cases.md](../../outputs/collisions/20260708-smoke-test/new-cases.md)
 
+<a id="reading-hr-10f8ca7fdfd72ce7"></a>
+## Step03 — Ablation Condition Contrast
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea Criteria: Task190 sealed method-use-trace-evaluator-r0 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Step03 — Ablation Condition Contrast；Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea Criteria: Task190 sealed method-use-trace-evaluator-r0；This is a descriptive contrast across three independent, single, non-randomized, non-repeated executions. It is not a causal ablation result; no effect size, probability, or general superiority is inferred.；FACTSONLY reports the four-row synthetic facts, separates interpretation from observation, keeps Row D’s review missing, and states that no method history is supported by input.；METHODTRACE recovers the candidate → selection → context → use → outcome → revision structure from the supplied positive-a source, then applies only the recorded contrastive-probe slot as a bounded design. It does not claim that the new probe ran or that the method caused anything.；BROKENMETHODTRACECONTROL preserves the candidate and outcome as separate source-backed observations, marks selection and use missing, and rejects candidate-plus-outcome completion.
+- 完整阅读：[reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md](../../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md)
+
 <a id="reading-hr-1125ea8d76940b5f"></a>
 ## 下一步认识论能力评估 — IGNITION-20260908-165
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
@@ -333,23 +340,16 @@
 - 5 分钟：主题：Task172 Step09 field 63: SOCIOLOGY；Formal parent freeze: 6eebc5337eb8e586c2ba88731eb7c508a5dac24b；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 12；Selected metadata links: 96
 - 完整阅读：[reports/operations/ignition-172-20260915-step09-field-63.md](../../reports/operations/ignition-172-20260915-step09-field-63.md)
 
+<a id="reading-hr-13fb358eb5baed98"></a>
+## Step07 — Evaluation Evidence Isolation
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：All evaluator-authored JSON/JSONL records are typed EVALUATIONEVIDENCE, path-accounted, provenance-visible, and contain zero canonical claim IDs. Markdown files are projections/documentation of those records. The 18 copied Successor files remain byte-preserved source evidence under frozen-success… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Step07 — Evaluation Evidence Isolation；All evaluator-authored JSON/JSONL records are typed EVALUATIONEVIDENCE, path-accounted, provenance-visible, and contain zero canonical claim IDs. Markdown files are projections/documentation of those records. The 18 copied Successor files remain byte-preserved source evidence under frozen-successor-evidence/.；No Foundation function/nonfunction claim, Knowledge canonical, Fire Seed, Current state, external MetaRSI integration, Model-RSI, or training output is generated or promoted.；The only post-Step06 change is mechanical Markdown trailing-whitespace cleanup plus this isolation receipt; semantic verdict content and frozen Successor bytes are unchanged. Final two-pass fixed-point and exact-head validation is reserved for Step08.
+- 完整阅读：[reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md](../../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md)
+
 <a id="reading-hr-1437a5c9924f3c9e"></a>
 ## IGNITION-121Q6C 执行结果
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
 - 1 分钟：执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007） 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-121Q6C 执行结果；执行者：QClaw（Hy3） 状态：121Q6C 完成（Step 000–007）；补齐原 121Q6 未完成的 Step 019–024：35 项资产桥接审计、只读导入器、资产 E2E、Function OS 专属 CI（py3.10/3.11/3.12）、严格验证、最终报告/seal。；121Q6 真实状态：协议 25 步，实际仅到 Step 018（+closure），PR #41 真实 22 commits（自报 21）；ledger 缺 017/重 018；run-state 仍 INPROGRESS。已用 121q6-reconciliation-overlay.json 只读记录，未改旧文件。；Function OS v0.2：163/163 测试通过，eval/exec 零，已跟踪缓存零。；35 项内部资产未改标签、未谎称迁移；导入器为只读 draft 生成器（需人工合法化）。
 - 完整阅读：[agent-results/IGNITION-121Q6C-result.md](../../agent-results/IGNITION-121Q6C-result.md)
-
-<a id="reading-hr-191c775bce185353"></a>
-## T16 counterexample-equivalence audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The title and recovered annotation assert that two oppositely monotone functions necessarily produce an inverted-U product. The conservative controlled proposition is therefore universal over positive differentiable functions on a common real interval. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：T16 counterexample-equivalence audit；The title and recovered annotation assert that two oppositely monotone functions necessarily produce an inverted-U product. The conservative controlled proposition is therefore universal over positive differentiable functions on a common real interval.；The 078 example uses f1(x)=exp(x) and f2(x)=exp(-2x) on the reals. The first is strictly increasing, the second strictly decreasing, while the product exp(-x) is strictly decreasing and has no interior inverted-U maximum. It satisfies the stated monotonicity premises and directly refutes the unrestricted universal claim.；It does not refute a future strengthened theorem with explicit endpoint, curvature, coercivity, or derivative-crossing assumptions. The displayed ratio equality is at most a stationarity condition after positivity and differentiability assumptions; it does not establish existence or maximality by itself.
-- 完整阅读：[reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md](../../reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md)
-
-<a id="reading-hr-1a22e43401f5a00c"></a>
-## IGNITION-138 Step 13 — Targeted regression and preflight
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：PASS: the exact Task138 targeted suite completed naturally with 333 tests, 0 failures, 0 errors, and 0 skips in 128.180s. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-138 Step 13 — Targeted regression and preflight；PASS: the exact Task138 targeted suite completed naturally with 333 tests, 0 failures, 0 errors, and 0 skips in 128.180s.；The suite covered the live bridge and runtime-scratch boundary, Codex and federation dispatch, residual and Current-state gates, release/lifecycle bindings, human-surface and privacy gates, repository path accounting, and Foundation generator reconciliation. No new real Codex child invocation was started in this step. The task still has exactly one real Code…；主题：Deterministic repair trail；The first post-Step12 run exposed four genuine stale-projection/accounting failures. Step12 prose had changed generator inputs, so the canonical nonfunction claim outputs, material human source fingerprints, and repository path manifest were stale or incomplete. The canonical nonfunction adjudicator, human claim browser builder, and repository path classific…；The following run then exposed three Current Facts failures. The regenerated nonfunction registry changed the declared Current Facts inputs. Current Facts, Current Snapshot, and all seven compiler-owned Current Snapshot blocks were regenerated. The final natural run passed all 333 tests.
-- 完整阅读：[reports/operations/ignition-138-step13-targeted-regression.md](../../reports/operations/ignition-138-step13-targeted-regression.md)
