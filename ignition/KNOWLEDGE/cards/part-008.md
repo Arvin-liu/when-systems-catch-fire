@@ -4,106 +4,6 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
-<a id="asset-hr-70a0b0d3dd83948a"></a>
-## Representation Residual Casebook — IGNITION-20260906-158
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-70A0B0D3DD83948A` · [docs/governance/representation-residual-casebook-2026-09-06.md](../../docs/governance/representation-residual-casebook-2026-09-06.md)
-- **为什么产生：** 此来源记录了什么：Representation Residual Casebook — IGNITION-20260906-158？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** The entries below are repeated research residuals observed while comparing the existing static representation, repository generators, and historical controls. A residual family is a review lens, not a canonical failure class, schema, obligation, or production requirement.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/representation-residual-casebook-2026-09-06.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-09-06: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Representation Residual Casebook — IGNITION-20260906-158`, `representation-residual-casebook-2026-09-06`
-
-<a id="asset-hr-70edc5860a2e57c8"></a>
-## 扩展注释 · 赛课机制下的教师生存困境
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-70EDC5860A2E57C8` · [outputs/collisions/20260708-teacher-competition/expanded-notes.md](../../outputs/collisions/20260708-teacher-competition/expanded-notes.md)
-- **为什么产生：** 此来源记录了什么：扩展注释 · 赛课机制下的教师生存困境？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D499`, `D244`, `D173`
-- **来源与证据：** `outputs/collisions/20260708-teacher-competition/expanded-notes.md`, `202`
-- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`
-- **可搜索名称：** `扩展注释 · 赛课机制下的教师生存困境`, `expanded-notes`
-
-<a id="asset-hr-70fddc78f6837470"></a>
-## Claim argument evidence audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-70FDDC78F6837470` · [reports/foundation-architecture/claim-argument-evidence-audit-20260712.md](../../reports/foundation-architecture/claim-argument-evidence-audit-20260712.md)
-- **为什么产生：** 此来源记录了什么：Claim argument evidence audit？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Claims, arguments and evidence now have separate registries. Legacy prose is not silently promoted to a valid argument or proof.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/claim-argument-evidence-audit-20260712.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-12: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Claim argument evidence audit`, `claim-argument-evidence-audit-20260712`
-
-<a id="asset-hr-7142e033279e204a"></a>
-## 083 Max Queue Readiness Report
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7142E033279E204A` · [reports/foundation-architecture/083-max-queue-readiness.md](../../reports/foundation-architecture/083-max-queue-readiness.md)
-- **为什么产生：** 此来源记录了什么：083 Max Queue Readiness Report？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Date: 2026-07-13 Task: IGNITION-20260709-083
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/foundation-architecture/083-max-queue-readiness.md`, `083-MAX-QUEUE-READINESS`
-- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `083 Max Queue Readiness Report`, `083-max-queue-readiness`
-
-<a id="asset-hr-7149c661bb0af806"></a>
-## Task172 Step09 field 23: CHEMISTRY
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-7149C661BB0AF806` · [reports/operations/ignition-172-20260915-step09-field-23.md](../../reports/operations/ignition-172-20260915-step09-field-23.md)
-- **为什么产生：** 此来源记录了什么：Task172 Step09 field 23: CHEMISTRY？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-172-20260915-step09-field-23.md`, `172-20260915-STEP09-FIELD-23`
-- **演化历史：** 2026-09-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Task172 Step09 field 23: CHEMISTRY`, `ignition-172-20260915-step09-field-23`
-
 <a id="asset-hr-715f3951a2b86789"></a>
 ## Charter System R1 — Architecture (Accepted / Current, on main, non-Activated)
 
@@ -1003,3 +903,103 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260822-132 Step 12 — Targeted and Bounded Regression Closure`, `ignition-132-step12-regression-closure`
+
+<a id="asset-hr-8079a8712f2b03bc"></a>
+## Ψ₀ 判定矩阵（psi0-decision-matrix）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-8079A8712F2B03BC` · [outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md](../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+- **为什么产生：** 此来源记录了什么：Ψ₀ 判定矩阵（psi0-decision-matrix）？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D595`, `D245`, `T40`, `D583`, `D598`, `D597`
+- **来源与证据：** `outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`, `202`
+- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Ψ₀ 判定矩阵（psi0-decision-matrix）`, `psi0-decision-matrix`
+
+<a id="asset-hr-814cd0e9847c82e3"></a>
+## 121Q22 Probability and Systems Source Map
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-814CD0E9847C82E3` · [reports/research/121Q22-probability-systems-source-map.md](../../reports/research/121Q22-probability-systems-source-map.md)
+- **为什么产生：** 此来源记录了什么：121Q22 Probability and Systems Source Map？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** These sources are used as modeling references and boundary checks. They are not imported as proved Ignition claims.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/research/121Q22-probability-systems-source-map.md`, `121Q22-PROBABILITY-SYSTEMS-SOURCE-MAP`
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `121Q22 Probability and Systems Source Map`, `121Q22-probability-systems-source-map`
+
+<a id="asset-hr-817cdcccf68a5582"></a>
+## Task172 Step09 field 53: ECONOMIC SCIENCES
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-817CDCCCF68A5582` · [reports/operations/ignition-172-20260915-step09-field-53.md](../../reports/operations/ignition-172-20260915-step09-field-53.md)
+- **为什么产生：** 此来源记录了什么：Task172 Step09 field 53: ECONOMIC SCIENCES？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-172-20260915-step09-field-53.md`, `172-20260915-STEP09-FIELD-53`
+- **演化历史：** 2026-09-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Task172 Step09 field 53: ECONOMIC SCIENCES`, `ignition-172-20260915-step09-field-53`
+
+<a id="asset-hr-81c5f5f4c67de686"></a>
+## C-0809 表演化假课与量化指标消解温度索引可见性验证
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-81C5F5F4C67DE686` · [outputs/audit/c0809-index-visibility-check-20260708.md](../../outputs/audit/c0809-index-visibility-check-20260708.md)
+- **为什么产生：** 此来源记录了什么：C-0809 表演化假课与量化指标消解温度索引可见性验证？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** | C-0809 | 表演化假课与量化指标消解温度 | 指标化评价使可量化项替代真实价值，表演态排除临场生成。 |
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D597`, `D173`, `D595`, `D596`, `D598`
+- **来源与证据：** `outputs/audit/c0809-index-visibility-check-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `C-0809 表演化假课与量化指标消解温度索引可见性验证`, `c0809-index-visibility-check-20260708`
+
+<a id="asset-hr-821405558993dacd"></a>
+## 121Q23 Adaptive Relational Network Validation
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-821405558993DACD` · [reports/architecture/121Q23-adaptive-relational-network-validation.md](../../reports/architecture/121Q23-adaptive-relational-network-validation.md)
+- **为什么产生：** 此来源记录了什么：121Q23 Adaptive Relational Network Validation？
+- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **当前结果：** Status: 121Q23GREADYFORGPTFINALACCEPTANCEASOPERATIONALARNCANDIDATE
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/architecture/121Q23-adaptive-relational-network-validation.md`, `121Q23-ADAPTIVE-RELATIONAL-NETWORK-VALIDATION`
+- **演化历史：** 2026-07-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q23 Adaptive Relational Network Validation`, `121Q23-adaptive-relational-network-validation`

@@ -4,126 +4,6 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
-<a id="asset-hr-cf1f447fcd9c2e4b"></a>
-## IGNITION-20260827-143 Step 09 — Article B 对抗性编辑
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CF1F447FCD9C2E4B` · [reports/operations/ignition-143-step09-article-b-editorial-review.md](../../reports/operations/ignition-143-step09-article-b-editorial-review.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260827-143 Step 09 — Article B 对抗性编辑？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Article B 通过编辑复核并修订为 REVIEWEDCURRENTR1。它保留了实质性非 meta 文章的身份：正文讨论的是点火碰撞提出的“支持如何变成路径控制”问题，而不是介绍点火仓库如何工作。D600 仍被明确写成内部候选模型，不能被文章的完成度抬升为外部因果结论。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D600`
-- **来源与证据：** `reports/operations/ignition-143-step09-article-b-editorial-review.md`, `143-STEP09-ARTICLE-B-EDITORIAL-REVIEW`
-- **演化历史：** 2026-08-27: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260827-143 Step 09 — Article B 对抗性编辑`, `ignition-143-step09-article-b-editorial-review`
-
-<a id="asset-hr-cf318764b78d8743"></a>
-## 语言—思维逻辑平面
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CF318764B78D8743` · [docs/architecture/language-thought-logic-plane.md](../../docs/architecture/language-thought-logic-plane.md)
-- **为什么产生：** 此来源记录了什么：语言—思维逻辑平面？
-- **当前状态：** `CURRENT_SCOPED_SOURCE`
-- **当前结果：** English: Language–Thought Logic Plane
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/architecture/language-thought-logic-plane.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-08-02: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `语言—思维逻辑平面`, `language-thought-logic-plane`
-
-<a id="asset-hr-cf438096338b88f8"></a>
-## Task172 Step09 field 62: SCIENCES OF ARTS & LETTERS
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CF438096338B88F8` · [reports/operations/ignition-172-20260915-step09-field-62.md](../../reports/operations/ignition-172-20260915-step09-field-62.md)
-- **为什么产生：** 此来源记录了什么：Task172 Step09 field 62: SCIENCES OF ARTS & LETTERS？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-172-20260915-step09-field-62.md`, `172-20260915-STEP09-FIELD-62`
-- **演化历史：** 2026-09-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Task172 Step09 field 62: SCIENCES OF ARTS & LETTERS`, `ignition-172-20260915-step09-field-62`
-
-<a id="asset-hr-cfb1d9d7c981b639"></a>
-## Task172 Step09 field 12: MATHEMATICS
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CFB1D9D7C981B639` · [reports/operations/ignition-172-20260915-step09-field-12.md](../../reports/operations/ignition-172-20260915-step09-field-12.md)
-- **为什么产生：** 此来源记录了什么：Task172 Step09 field 12: MATHEMATICS？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-172-20260915-step09-field-12.md`, `172-20260915-STEP09-FIELD-12`
-- **演化历史：** 2026-09-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Task172 Step09 field 12: MATHEMATICS`, `ignition-172-20260915-step09-field-12`
-
-<a id="asset-hr-d0a5c8b7965cbf6f"></a>
-## IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-D0A5C8B7965CBF6F` · [reports/operations/ignition-139-step06-live-current-projection.md](../../reports/operations/ignition-139-step06-live-current-projection.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The public live-attempt status is now derived from the append-only ledger at ignition/data/operations/iterations/139/live-attempt-ledger.jsonl. The projection contains no raw provider output, private session data, or model context.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-139-step06-live-current-projection.md`, `139-STEP06-LIVE-CURRENT-PROJECTION`
-- **演化历史：** 2026-08-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260825-139 Step 06 — Deterministic Live Current Projection`, `ignition-139-step06-live-current-projection`
-
-<a id="asset-hr-d0d9de18fd9e9bde"></a>
-## 085: 084 Truth Status Correction
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-D0D9DE18FD9E9BDE` · [reports/foundation-architecture/085-084-truth-status-correction.md](../../reports/foundation-architecture/085-084-truth-status-correction.md)
-- **为什么产生：** 此来源记录了什么：085: 084 Truth Status Correction？
-- **当前状态：** `CURRENT_CORRECTION_RECORD`
-- **当前结果：** 本文件纠正 084 报告中对生成机制和命题真值的不准确描述。所有纠正基于 084-max-decisions.jsonl 的机器可读真值重算，不修改 084 原始文件。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `T4`, `T18`
-- **来源与证据：** `reports/foundation-architecture/085-084-truth-status-correction.md`, `085-084-TRUTH-STATUS-CORRECTION`
-- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `085: 084 Truth Status Correction`, `085-084-truth-status-correction`
-
 <a id="asset-hr-d17946ac354300d6"></a>
 ## IGNITION-143 Resume Capsule
 
@@ -1003,3 +883,123 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `085: Architecture Structure Freeze Report`, `085-architecture-structure-freeze`
+
+<a id="asset-hr-e1fc77026a23a989"></a>
+## IGNITION-128 Step 04 — deterministic rebuild and regression
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-E1FC77026A23A989` · [reports/operations/ignition-128-step04-regression.md](../../reports/operations/ignition-128-step04-regression.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-128 Step 04 — deterministic rebuild and regression？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The current-facts JSON and Markdown projections were rebuilt twice. Their two passes were byte-identical (3fd2156c... and c2cebc4b...), and the generator check passed. The canonical lineage validator, integrated CURRENTSTATESYNC validator, 17 scoped tests, four negative fixture classes, Human vis…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-128-step04-regression.md`, `128-STEP04-REGRESSION`
+- **演化历史：** 2026-08-21: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-128 Step 04 — deterministic rebuild and regression`, `ignition-128-step04-regression`
+
+<a id="asset-hr-e209cf9b12ff43a0"></a>
+## Task172 Step09 field 72: PHILOSOPHY
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-E209CF9B12FF43A0` · [reports/operations/ignition-172-20260915-step09-field-72.md](../../reports/operations/ignition-172-20260915-step09-field-72.md)
+- **为什么产生：** 此来源记录了什么：Task172 Step09 field 72: PHILOSOPHY？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-172-20260915-step09-field-72.md`, `172-20260915-STEP09-FIELD-72`
+- **演化历史：** 2026-09-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Task172 Step09 field 72: PHILOSOPHY`, `ignition-172-20260915-step09-field-72`
+
+<a id="asset-hr-e28559baf39d9944"></a>
+## IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-E28559BAF39D9944` · [reports/operations/ignition-142-step10-reasoner-tool-closure.md](../../reports/operations/ignition-142-step10-reasoner-tool-closure.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure？
+- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
+- **当前结果：** The fresh public scan re-observed four reasoner runtimes, three deterministic tools and two UI surfaces. Ollama 0.32.7, LM Studio CLI commit 6041ae0, MLX DSpark and the absent bundled llama-server remain REASONERRUNTIME; gh, git and jq remain TOOL; Claude Desktop and QwenWorkCN remain UISURFACE.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-142-step10-reasoner-tool-closure.md`, `142-STEP10-REASONER-TOOL-CLOSURE`
+- **演化历史：** 2026-08-27: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260827-142 Step 10 — Reasoner, Tool and UI Class Closure`, `ignition-142-step10-reasoner-tool-closure`
+
+<a id="asset-hr-e2a9200ebcc66ab2"></a>
+## Approval Bridge, Handoff and Failover R1
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-E2A9200EBCC66AB2` · [docs/architecture/approval-handoff-failover-r1.md](../../docs/architecture/approval-handoff-failover-r1.md)
+- **为什么产生：** 此来源记录了什么：Approval Bridge, Handoff and Failover R1？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** The OS approval bridge computes a strict intersection between the Ignition ApprovalPolicy, the requested capability ceiling, and any external approval gate. DENY always blocks. REQUIREOWNER and DELEGATED wait for an explicit Owner decision; an external executor's APPROVED observation never replac…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/architecture/approval-handoff-failover-r1.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-08-16: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Approval Bridge, Handoff and Failover R1`, `approval-handoff-failover-r1`
+
+<a id="asset-hr-e2f338166075887b"></a>
+## IGNITION-139 Step 05 — Historical Attempt Import
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-E2F338166075887B` · [reports/operations/ignition-139-step05-historical-attempt-import.md](../../reports/operations/ignition-139-step05-historical-attempt-import.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-139 Step 05 — Historical Attempt Import？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The four historical live attempts are now represented by the append-only LiveAttemptLedger. Source receipts remain unchanged.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-139-step05-historical-attempt-import.md`, `139-STEP05-HISTORICAL-ATTEMPT-IMPORT`
+- **演化历史：** 2026-08-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-139 Step 05 — Historical Attempt Import`, `ignition-139-step05-historical-attempt-import`
+
+<a id="asset-hr-e31b1dff732ad215"></a>
+## 120 — Function OS Architecture Candidate Report
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-E31B1DFF732AD215` · [reports/external-research/120-function-os-architecture-candidate-report.md](../../reports/external-research/120-function-os-architecture-candidate-report.md)
+- **为什么产生：** 此来源记录了什么：120 — Function OS Architecture Candidate Report？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Date: 2026-07-13 Executor: QClaw (qclaw/pool-glm-5.2-night, reasoning: high)
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/external-research/120-function-os-architecture-candidate-report.md`, `120-FUNCTION-OS-ARCHITECTURE-CANDIDATE-REPORT`
+- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `120 — Function OS Architecture Candidate Report`, `120-function-os-architecture-candidate-report`

@@ -1289,11 +1289,6 @@
   - 可搜索名称：NFC-72776244b2c4a8c8 / Step Evidence
   - 来源：`reports/architecture/121Q12-effectual-mechanism-dual-loop.md`
   - 依赖：—；被引用：—
-- [Step06 — Independent Method-Use Trace R0 Verdict](../../ASSET-CARDS.md#asset-hr-acc9d516addef2a9)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Step06 — Independent Method-Use Trace R0 Verdict / independent-evaluation-report
-  - 来源：`reports/evaluations/ignition-197-method-use-trace-independent-evaluation/independent-evaluation-report.md`
-  - 依赖：—；被引用：—
 - [STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration](../../ASSET-CARDS.md#asset-hr-2ffed40e044f68aa)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：STEP08 MCF / PSD / ARN / Function OS baseline-relative calibration / STEP08-PREREGISTRATION
@@ -2502,5 +2497,10 @@
 - [\| \[C-0704\]\( \) \| \[因果光锥×马拉松×高山滑雪\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e4d876f436cbce87 / \| \[C-0704\]\( \) \| \[因果光锥×马拉松×高山滑雪\]\( \) \| 待补：当前报告只给出编号或统计结论，未找到
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [\| \[C-0709\]\( \) \| \[空降CEO失败机制\]\( \) \| 罗恩·约翰逊17个月后销售额暴跌32%，股价腰斩 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d78e22dd972e34d0 / \| \[C-0709\]\( \) \| \[空降CEO失败机制\]\( \) \| 罗恩·约翰逊17个月后销售额暴跌32%，股价腰斩 \|
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

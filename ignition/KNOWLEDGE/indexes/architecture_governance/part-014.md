@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [条有 `CONTRADICTORY_EVIDENCE` 标记](../../../data/external-research/104-evidence-tier-schema.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-9ad45e6b777a8d26 / 条有 `CONTRADICTORY_EVIDENCE` 标记
-  - 来源：`data/external-research/104-evidence-tier-schema.md`
-  - 依赖：—；被引用：—
-- [来源、依赖、反向依赖和证据谱系；](../../../docs/governance/knowledge-experience-layer.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-d52275ae7b6f64d7 / 来源、依赖、反向依赖和证据谱系；
-  - 来源：`docs/governance/knowledge-experience-layer.md`
-  - 依赖：—；被引用：—
-- [来源为营销稿/博客/二手科普而非原始文献](../../../data/external-research/093-scope-guard.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-24d04e7cf30258a6 / 来源为营销稿/博客/二手科普而非原始文献
-  - 来源：`data/external-research/093-scope-guard.md`
-  - 依赖：—；被引用：—
 - [来源元数据与链接见 \[来源与边界页\]\(../../docs/publication/cases/song-huizong-taoism-1117-source.md\)。本分析使用的主要定位如下：](../../../reports/publication/song-huizong-taoism-point-fire-analysis.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-8f974c0ad7b8358b / 来源元数据与链接见 \[来源与边界页\]\(../../docs/publication/cases/song-huizong-taoism-1117-source.md\)。本分析使用的主要定位如下：
@@ -2503,4 +2488,19 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：CLAIM-PEND-013 / 金融危机为何发生
   - 来源：`data/foundation/claims/claims.jsonl`
+  - 依赖：—；被引用：—
+- [金辽战争的一些叙述，为这种时刻留下了观察窗口：撤动、指挥中枢受压、信息混乱和局部退却，可能彼此放大。但具体战役的兵力、伤亡和先后次序仍需史料考订；所谓统一的“崩溃百分比”，也不能当作穿越时代的定律。我们不能从一段有力的故事断定某场战役就是这](../../../docs/publication/works/when-an-army-believes-its-own-back.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-132f1c23e27af91e / 金辽战争的一些叙述，为这种时刻留下了观察窗口：撤动、指挥中枢受压、信息混乱和局部退却，可能彼此放大。但具体战役的兵力、伤亡和先后次序仍需史料考订；所谓统一的“崩溃百分比”，也不能当作穿越时代的定律。我们不能从一段有力的故事断定某场战役就是这
+  - 来源：`docs/publication/works/when-an-army-believes-its-own-back.md`
+  - 依赖：—；被引用：—
+- [链接笔记统一归集管理](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-6c0d19973dce3765 / 链接笔记统一归集管理
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [锁定基线为 `428ad50cf4438f027d5b8992d6e362d76037a3bd`。基线 README 底部有 4 个承载实质导航的 ` ` 区块；独立 Pages 产品由 workflow、Jekyll 布局](../../../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3f1cd25d361c07dc / 锁定基线为 `428ad50cf4438f027d5b8992d6e362d76037a3bd`。基线 README 底部有 4 个承载实质导航的 ` ` 区块；独立 Pages 产品由 workflow、Jekyll 布局
+  - 来源：`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`
   - 依赖：—；被引用：—

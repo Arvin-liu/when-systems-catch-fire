@@ -404,26 +404,6 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `新增案例候选 · P1 接入烟雾测试`, `new-cases`
 
-<a id="asset-hr-10f8ca7fdfd72ce7"></a>
-## Step03 — Ablation Condition Contrast
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-10F8CA7FDFD72CE7` · [reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md](../../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md)
-- **为什么产生：** 此来源记录了什么：Step03 — Ablation Condition Contrast？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea Criteria: Task190 sealed method-use-trace-evaluator-r0
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md`, `197-METHOD-USE-TRACE-INDEPENDENT-EVALUATION`
-- **演化历史：** 2026-09-21: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Step03 — Ablation Condition Contrast`, `ablation-evaluation`
-
 <a id="asset-hr-1125ea8d76940b5f"></a>
 ## 下一步认识论能力评估 — IGNITION-20260908-165
 
@@ -543,26 +523,6 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Task172 Step09 field 63: SOCIOLOGY`, `ignition-172-20260915-step09-field-63`
-
-<a id="asset-hr-13fb358eb5baed98"></a>
-## Step07 — Evaluation Evidence Isolation
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-13FB358EB5BAED98` · [reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md](../../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md)
-- **为什么产生：** 此来源记录了什么：Step07 — Evaluation Evidence Isolation？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** All evaluator-authored JSON/JSONL records are typed EVALUATIONEVIDENCE, path-accounted, provenance-visible, and contain zero canonical claim IDs. Markdown files are projections/documentation of those records. The 18 copied Successor files remain byte-preserved source evidence under frozen-success…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md`, `197-METHOD-USE-TRACE-INDEPENDENT-EVALUATION`
-- **演化历史：** 2026-09-21: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Step07 — Evaluation Evidence Isolation`, `evaluation-isolation`
 
 <a id="asset-hr-1437a5c9924f3c9e"></a>
 ## IGNITION-121Q6C 执行结果
@@ -1003,3 +963,43 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `12 元协议投影（12-meta-protocol-projection）`, `12-meta-protocol-projection`
+
+<a id="asset-hr-252ed61cfaf40f35"></a>
+## Agent 碰撞阶段收口审计（2026-07-08 23:55）
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-252ED61CFAF40F35` · [outputs/audit/agent-collision-phase-closeout-20260708.md](../../outputs/audit/agent-collision-phase-closeout-20260708.md)
+- **为什么产生：** 此来源记录了什么：Agent 碰撞阶段收口审计（2026-07-08 23:55）？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 对当前 Get 笔记碰撞准备阶段做封版整理，固化工作流、得到大脑操作指南、碰撞模板，并确认本阶段未越界（未改表、未新增、仓库干净）。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D5`, `D597`, `D599`
+- **来源与证据：** `outputs/audit/agent-collision-phase-closeout-20260708.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Agent 碰撞阶段收口审计（2026-07-08 23:55）`, `agent-collision-phase-closeout-20260708`
+
+<a id="asset-hr-259784cecbb2dc49"></a>
+## 121Q13 Baseline And Overlap Audit
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-259784CECBB2DC49` · [reports/architecture/121Q13-baseline-overlap-audit.md](../../reports/architecture/121Q13-baseline-overlap-audit.md)
+- **为什么产生：** 此来源记录了什么：121Q13 Baseline And Overlap Audit？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** 121Q13 starts from 121Q12 Draft PR 47 head 338cfff999e26dce623c6c55d810587db4a668ba.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/architecture/121Q13-baseline-overlap-audit.md`, `121Q13-BASELINE-OVERLAP-AUDIT`
+- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `121Q13 Baseline And Overlap Audit`, `121Q13-baseline-overlap-audit`

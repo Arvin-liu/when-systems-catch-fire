@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [只作启发、不得当成证据的材料：](../../../templates/publication/zhiyuan-writing-spec.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-66234d4cde31c8ac / 只作启发、不得当成证据的材料：
-  - 来源：`templates/publication/zhiyuan-writing-spec.md`
-  - 依赖：—；被引用：—
-- [只凭单篇报道推导普遍教育规律；](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-fc267d6095e63f0d / 只凭单篇报道推导普遍教育规律；
-  - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
-  - 依赖：—；被引用：—
-- [只建立 schema，不生成实际数据。](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-dfeb8a2bd7d079bc / 只建立 schema，不生成实际数据。
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
 - [只提供阅读/实验上下文，不增加 L7，不改变 capability、permission 或 epistemic status。](../../../docs/project-current-state.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-eb762a96b3a5834d / 只提供阅读/实验上下文，不增加 L7，不改变 capability、permission 或 epistemic status。
@@ -2503,4 +2488,19 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ee3ccae201365201 / 条有 `CLAIM_SUPPORT_CONFIRMED`（需全文内容验证）
   - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [条有 `CONTRADICTORY_EVIDENCE` 标记](../../../data/external-research/104-evidence-tier-schema.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-9ad45e6b777a8d26 / 条有 `CONTRADICTORY_EVIDENCE` 标记
+  - 来源：`data/external-research/104-evidence-tier-schema.md`
+  - 依赖：—；被引用：—
+- [来源、依赖、反向依赖和证据谱系；](../../../docs/governance/knowledge-experience-layer.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-d52275ae7b6f64d7 / 来源、依赖、反向依赖和证据谱系；
+  - 来源：`docs/governance/knowledge-experience-layer.md`
+  - 依赖：—；被引用：—
+- [来源为营销稿/博客/二手科普而非原始文献](../../../data/external-research/093-scope-guard.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-24d04e7cf30258a6 / 来源为营销稿/博客/二手科普而非原始文献
+  - 来源：`data/external-research/093-scope-guard.md`
   - 依赖：—；被引用：—

@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [\| \[C-0709\]\( \) \| \[空降CEO失败机制\]\( \) \| 罗恩·约翰逊17个月后销售额暴跌32%，股价腰斩 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d78e22dd972e34d0 / \| \[C-0709\]\( \) \| \[空降CEO失败机制\]\( \) \| 罗恩·约翰逊17个月后销售额暴跌32%，股价腰斩 \|
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
 - [\| \[C-0710\]\( \) \| \[小国君主制保留机制\]\( \) \| 摩纳哥人均GDP 17.8万美元，列支敦士登40万美元 \|](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-12861279fc3a7e8d / \| \[C-0710\]\( \) \| \[小国君主制保留机制\]\( \) \| 摩纳哥人均GDP 17.8万美元，列支敦士登40万美元 \|
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-a98dd633b1609dce / 历史学是中等风险领域。历史因果不能写成单因决定论。史料不足、解释争议大、缺少互证时必须 pending。
   - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [历史学用于测试因果、材料、边界和叙事结构。](../../../docs/discipline_kernel_pilot.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-831298eadea223e4 / 历史学用于测试因果、材料、边界和叙事结构。
+  - 来源：`docs/discipline_kernel_pilot.md`
   - 依赖：—；被引用：—

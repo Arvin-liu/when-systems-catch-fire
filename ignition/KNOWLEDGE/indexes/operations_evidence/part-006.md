@@ -519,21 +519,6 @@
   - 可搜索名称：STEP03 blinded baseline versus governed replay / BASELINE-VS-GOVERNED
   - 来源：`reports/external-research/pointfire-seven-track-replay-r1/BASELINE-VS-GOVERNED.md`
   - 依赖：—；被引用：—
-- [Step03 — Ablation Condition Contrast](../../ASSET-CARDS.md#asset-hr-10f8ca7fdfd72ce7)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Step03 — Ablation Condition Contrast / ablation-evaluation
-  - 来源：`reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md`
-  - 依赖：—；被引用：—
-- [Step04 — TRANSFER-01 Condition Contrast](../../ASSET-CARDS.md#asset-hr-5f93fd28b705e6c8)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Step04 — TRANSFER-01 Condition Contrast / transfer-evaluation
-  - 来源：`reports/evaluations/ignition-197-method-use-trace-independent-evaluation/transfer-evaluation.md`
-  - 依赖：—；被引用：—
-- [Step05 — Negative-Control Audit](../../ASSET-CARDS.md#asset-hr-592ed6ca175524cb)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Step05 — Negative-Control Audit / negative-control-audit
-  - 来源：`reports/evaluations/ignition-197-method-use-trace-independent-evaluation/negative-control-audit.md`
-  - 依赖：—；被引用：—
 - [Step08 must establish the semantic-negative and observation-projection gates.](../../../reports/operations/ignition-139-step07-current-state-sync.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9519130f38124099 / Step08 must establish the semantic-negative and observation-projection gates.
@@ -2502,5 +2487,20 @@
 - [中文：Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8260E3912F40EDA7 / 中文：Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)} / IMPLICIT-8260E3912F40EDA7
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-95A13B84298DF511 / 中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。 / IMPLICIT-95A13B84298DF511
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7C728EA9580D3100 / 中文：Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。 / IMPLICIT-7C728EA9580D3100
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D0BE2DCD374A0018 / 中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 / IMPLICIT-D0BE2DCD374A0018
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

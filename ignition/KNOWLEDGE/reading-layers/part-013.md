@@ -4,48 +4,6 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
-<a id="reading-hr-ebfbf26abf72ff4c"></a>
-## IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计；Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。；Task143 的 phase-closure、publication-production 和新 canonical 出版入口在 Current/Handoff/AI surfaces 中可恢复；；Task142 的 LIVEEXTERNALINVOCATION 历史 6 次 attempt、0 次 validated completion、0 次 unreconciled、2 次 observation-incomplete 没有被新出版成果改写；；obligation registry 的当前动作仍是 OWNERDEFERREDREQUIRESEXPLICITREOPENANDLOCALENVIRONMENTPREPARATION，历史 projection 的 dynamic admission 动作仍被保留；；本轮没有新增组件、typed topology relation、map version、executor live attempt、安装、配置、认证、计费或环境手术；
-- 完整阅读：[reports/operations/ignition-143-step17-current-state-sync.md](../../reports/operations/ignition-143-step17-current-state-sync.md)
-
-<a id="reading-hr-ecb9a4b8ee1483ca"></a>
-## IGNITION-172 Step07 — Knowledge Experience routing index
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This logical step is based on exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6158 function records + 18003 nonfunction records = 24161 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
-- 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
-
-<a id="reading-hr-ecc4e92db835c50c"></a>
-## REOS vNext LIGHT pilot R1 — public-safe synthesis
-`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: OWNERACCEPTEDBOUNDEDREOSLIGHTCAPABILITYWITHEXPLICITRESIDUALS Architecture disposition: KEEPLIGHTONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：REOS vNext LIGHT pilot R1 — public-safe synthesis；Status: OWNERACCEPTEDBOUNDEDREOSLIGHTCAPABILITYWITHEXPLICITRESIDUALS Architecture disposition: KEEPLIGHTONLY；This is a public-safe method and process result. It does not publish private relay paths, reviewer/session identifiers, local worktree paths, raw private receipts or private environment details.；主题：Question and frozen boundary；In adults self-studying a fixed set of unfamiliar factual items, with total learning time and retrieval count held equal, does spaced retrieval versus one massed session increase mean proportion correct on a seven-day delayed test?；The frozen boundary was:
-- 完整阅读：[reports/research/reos-vnext-light-pilot-r1.md](../../reports/research/reos-vnext-light-pilot-r1.md)
-
-<a id="reading-hr-ed60006ec664c67a"></a>
-## IGNITION-20260826-140 Step 13 — Adversarial / negative matrix
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The required fail-closed matrix completed with 20 cases, 17 negative and 3 positive, all PASS. It started 0 live processes. The matrix exercises the architecture-impact correction, typed probe/transport/process scope, durable capture and completion gates, reconciliation unknown ceiling, executor-… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260826-140 Step 13 — Adversarial / negative matrix；The required fail-closed matrix completed with 20 cases, 17 negative and 3 positive, all PASS. It started 0 live processes. The matrix exercises the architecture-impact correction, typed probe/transport/process scope, durable capture and completion gates, reconciliation unknown ceiling, executor-kind admission, one-attempt-per-family retry policy, Task125 hi…；The negative cases reject probe return 0 masquerading as a live process return, completion without a live dispatch, terminal unknown upgraded to success, open-reconciliation retry, exit 0 without a result or validator, wrong result/validator binding, workspace mutation, incomplete capture, raw private ledger output, gh promoted to an Agent, reasoner runtime…；Machine evidence: step13-adversarial-matrix.json.；The matrix is synthetic and repository-local. It did not start a live process, does not establish a validated completion, and does not infer external truth, production readiness, Owner acceptance or epistemic acceptance.
-- 完整阅读：[reports/operations/ignition-140-step13-adversarial-matrix.md](../../reports/operations/ignition-140-step13-adversarial-matrix.md)
-
-<a id="reading-hr-ef6e1d0860ae3fef"></a>
-## 事实 Pending 总表（外部治理记录）
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONALACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：事实 Pending 总表（外部治理记录）；任务：IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONALACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。；主题：V2（黄色协议）— 全成本效率度量待验证；全成本效率的边界：效率提升在何种范围、何种尺度上才算“净正”，需明确边界。
-- 完整阅读：[docs/governance/meta-protocol-reviews/factual-pending-register.md](../../docs/governance/meta-protocol-reviews/factual-pending-register.md)
-
-<a id="reading-hr-f03c0e16cbb5b9f8"></a>
-## IGNITION-20260907-160 progress
-`CANDIDATE_OR_PENDING_SOURCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260907-160 progress；Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT.；Task160 remains research-only; exact-head and lifecycle ceilings are preserved.
-- 完整阅读：[agent-results/IGNITION-20260907-160-progress.md](../../agent-results/IGNITION-20260907-160-progress.md)
-
 <a id="reading-hr-f25c6ad93d4e6b1c"></a>
 ## IGNITION-140 Step 07 — Canonical Reconciliation Events
 `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
@@ -115,13 +73,6 @@
 - 1 分钟：Gate T exact-head CI is complete for parent 6d704d570827bf8d6ebb65fb65bcdd236056b4d3. This step freezes a bounded routing sidecar and a precision-oriented pilot; it does not perform mass taxonomy routing or scholarly corpus admission. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-172 Step04 — Gate R routing schema and precision pilot；Gate T exact-head CI is complete for parent 6d704d570827bf8d6ebb65fb65bcdd236056b4d3. This step freezes a bounded routing sidecar and a precision-oriented pilot; it does not perform mass taxonomy routing or scholarly corpus admission.；Primary taxonomy authority: 24 fields / 245 disciplines / 2178 subdisciplines.；Pilot: 250 function assets + 500 nonfunction claims = 750 rows.；Classification states: {'CLASSIFIED': 182, 'MULTIDISCIPLINARY': 26, 'OUTOFUNESCOSCOPE': 103, 'UNRESOLVED': 439}.；All 750 rows remain PILOTMANUALREVIEWREQUIRED.
 - 完整阅读：[reports/operations/ignition-172-20260913-step04-gate-r-routing.md](../../reports/operations/ignition-172-20260913-step04-gate-r-routing.md)
-
-<a id="reading-hr-f879d14abdc1495b"></a>
-## Step02 — Blind Reconstruction Evaluation
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea Successor evidence freeze: c87ba4d94d04a5ee443b45cfa28eef167dbb01b4 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Step02 — Blind Reconstruction Evaluation；Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea Successor evidence freeze: c87ba4d94d04a5ee443b45cfa28eef167dbb01b4；Overall disposition: METHODUSERECONSTRUCTIONSUPPORTED；TRACE-01 recovers the complete positive chain with exact positive-a locators and fingerprints. It retains synthetic noise, probe order, and the absence of causal attribution.；TRACE-02 recovers the complete positive-b chain, including the failure and REVISE disposition. The missing precondition, rollback execution, ordering, and causation remain bounded uncertainties.；TRACE-03 correctly reports only the named candidate and unbound outcome. Selection, context, use, and revision are marked missing; missing-use is not treated as a use event.
-- 完整阅读：[reports/evaluations/ignition-197-method-use-trace-independent-evaluation/reconstruction-evaluation.md](../../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/reconstruction-evaluation.md)
 
 <a id="reading-hr-f8c21cd0cd6a1f34"></a>
 ## 生命共同体价值审查（life-community-value-audit）

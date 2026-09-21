@@ -16,6 +16,13 @@
     "reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md",
     "reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.md",
     "reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evidence-freeze.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/independent-evaluation-report.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/negative-control-audit.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/reconstruction-evaluation.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/transfer-evaluation.md",
     "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "excluded_timeline_asset_ids": [
@@ -59,21 +66,21 @@
   "function_registry_records": 6158,
   "historical_aliases": 5,
   "historical_result_audit": {
-    "CURRENT_OR_SCOPED_SOURCE": 519,
+    "CURRENT_OR_SCOPED_SOURCE": 512,
     "MACHINE_ONLY": 24082,
     "NOT_MEANINGFUL_PUBLIC_CHANGE": 35,
     "SOURCE_MISSING": 0,
     "STALE_OR_INTERMEDIATE": 35,
     "SUPERSEDED_OR_WITHDRAWN": 77
   },
-  "layered_reading_records": 631,
+  "layered_reading_records": 624,
   "material_nonfunction_claim_cards": 67,
   "materiality_policy": "Every recovered result/article receives a card and three reading levels. Function cards cover the explicit task-98 correction set. Claim cards cover named rebound lineages and risk-class claims on current public surfaces. All remaining registry assets stay fully searchable and retain their machine authority.",
-  "meaningful_changes": 604,
+  "meaningful_changes": 597,
   "nonfunction_claim_records": 18003,
-  "result_asset_cards": 631,
-  "result_sources": 631,
+  "result_asset_cards": 624,
+  "result_sources": 624,
   "schema_version": "1.0.0",
-  "search_records": 24792,
+  "search_records": 24785,
   "snapshot_date": "2026-07-30"
 }

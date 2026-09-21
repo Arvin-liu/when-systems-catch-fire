@@ -9,5 +9,5 @@
 - [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0399}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-05.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
 - [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → outputs/getbrain/v0.2-function-dependency-graph-20260706.md
-- [第 006 片](./operations_evidence/part-006.md)：2501—3000；outputs/getbrain/v0.2-function-dependency-graph-20260706.md → 中文：Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)}
-- [第 007 片](./operations_evidence/part-007.md)：3001—3220；中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。 → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 006 片](./operations_evidence/part-006.md)：2501—3000；outputs/getbrain/v0.2-function-dependency-graph-20260706.md → 中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。
+- [第 007 片](./operations_evidence/part-007.md)：3001—3217；中文：Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复} → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

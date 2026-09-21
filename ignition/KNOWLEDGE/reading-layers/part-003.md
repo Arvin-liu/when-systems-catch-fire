@@ -4,20 +4,6 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
-<a id="reading-hr-301b77606275333c"></a>
-## IGNITION-20260822-135 Step 01 — Canonical full regression runner
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：The repository now has one explicit orchestration wrapper, ignition/tools/runfullregression.py, and one machine-readable contract at ignition/data/operations/full-regression-runner-r1.json. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-135 Step 01 — Canonical full regression runner；The repository now has one explicit orchestration wrapper, ignition/tools/runfullregression.py, and one machine-readable contract at ignition/data/operations/full-regression-runner-r1.json.；The wrapper derives the formal repository from its own file path and confirms the Git toplevel. It invokes the existing unittest suite from the explicit application root ignition, with PYTHONPATH entries for the application, test modules and legacy foundation helper modules. This resolves the runner's working-directory boundary without changing test meaning…；The runner performs a read-only exact-version dependency preflight from ignition/requirements-foundation.txt; it never installs packages or changes global configuration. It captures stdout/stderr and their SHA-256 digests, parses test/failure/error/skip counts, records the candidate HEAD, and compares clean Git status before and after the suite. Any precondi…；The supported natural window is at least 14,400 seconds. The runner has no kill timeout and marks a process complete only after normal subprocess return. A short test may finish sooner; the contract is the maximum observation window available to the caller, not an artificial kill threshold.；Contract/parser/dependency-read-only tests pass. This step establishes orchestration semantics only. It does not run the 47-minute full suite and does not claim that the current candidate is green.
-- 完整阅读：[reports/operations/ignition-135-step01-full-regression-runner.md](../../reports/operations/ignition-135-step01-full-regression-runner.md)
-
-<a id="reading-hr-3069e59a51d869c3"></a>
-## 121Q28 肉身锚定的心智层级跃迁写作法审计
-`CANDIDATE_OR_PENDING_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q28 肉身锚定的心智层级跃迁写作法审计；Status: READYFORGPTVERIFICATIONCANDIDATEONLY；repository: Arvin-liu/when-systems-catch-fire；starting origin/main: b396c136b47d8fd60ca513a531cb96ce65293d20；isolated branch: docs/121q28-embodied-cognitive-leap-writing-method-20260716；open-work conflict: no open PR or branch targeted the same Q28 method paths at task start; older open publication PRs #17-#21 remain separate historical candidates and were not modified.
-- 完整阅读：[reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md](../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
-
 <a id="reading-hr-3078ad77a2ea0d78"></a>
 ## OpenClaw Adapter R1
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
@@ -340,16 +326,30 @@
 - 5 分钟：主题：IGNITION-20260828-144 Step 14 — bounded Repair Cycles B/C；Repair Cycle A is the only cycle used. The repaired identity/projection closure suite passed naturally with 77 tests / 0 failures / 0 errors / 0 skips and 14/14 standalone validators, so Repair Cycles B and C are both recorded as NOTNEEDED.；No additional code repair, capability, adapter, external inference, live process or qualification attempt was started. The remaining two repair slots are not a reason to manufacture work; they remain available only if a later step exposes a new deterministic closure blocker.；Machine receipt: ignition/data/operations/iterations/144/step14-repair-cycles-b-c.json.；Claim ceiling: repository-local bounded repair disposition only; this does not establish validated live completion, external truth, production readiness, Owner acceptance, publication acceptance or epistemic acceptance.
 - 完整阅读：[reports/operations/ignition-144-step14-repair-cycles-b-c.md](../../reports/operations/ignition-144-step14-repair-cycles-b-c.md)
 
-<a id="reading-hr-4135ee13a9f3b4f4"></a>
-## IGNITION-20260921-197 Successor Evidence Freeze
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Status: SUCCESSOREVIDENCEFREEZECHECKPOINT 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260921-197 Successor Evidence Freeze；Status: SUCCESSOREVIDENCEFREEZECHECKPOINT；Repository: Arvin-liu/when-systems-catch-fire；Exact base: 65862bf1f5a4e6880ac16698fc059d522350457b；The six local Successor bundles were mechanically discovered and frozen before any Task190 evaluator-sealed material was read. Each destination contains exactly the three source files successor-response.json, read-manifest.json, and freeze-sha256.txt. Source bundles were copied byte-for-byte.；The six Successor branches all had exact base 65862bf1f5a4e6880ac16698fc059d522350457b, no commits ahead of base, no remote Successor branch ref, and only their own three local evidence files present. The read manifests matched the allowlists in the governing Task191–196 commands; prohibited/evaluator-sealed reads were zero or explicitly absent.
-- 完整阅读：[reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evidence-freeze.md](../../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evidence-freeze.md)
-
 <a id="reading-hr-4172fa0da3a40b1e"></a>
 ## 断言治理与函数身份规范
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - 1 分钟：本规范是 Foundation 的现行认识论边界。它管理项目如何命名、计算、测试、展示和撤回断言；它不把治理规则本身伪装成外部科学结论。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：本规范是 Foundation 的现行认识论边界。它管理项目如何命名、计算、测试、展示和撤回断言；它不把治理规则本身伪装成外部科学结论。；形式化不等于证实；可计算不等于真实；内部自洽不等于外部成立。；AI 生成的编号、名称、公式或通过的内部测试不赋予真值。；数学事实、模型定义、算法规则、结构隐喻和经验断言必须分层。；局部模型失败不能推广为全称不可能；必要条件不能冒充充分条件。；定义不能预埋待证明结论；内部指标不能未经表示映射直接解释为现实对象。
 - 完整阅读：[docs/foundation/claim-governance-and-function-identity.md](../../docs/foundation/claim-governance-and-function-identity.md)
+
+<a id="reading-hr-429865ba2fb29659"></a>
+## Task172 Step09 field 31: AGRICULTURAL SCIENCES
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task172 Step09 field 31: AGRICULTURAL SCIENCES；Formal parent freeze: f576b166d1ff2d7e76d6348cd6152b9145dc9860；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 10；Selected metadata links: 80
+- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-31.md](../../reports/operations/ignition-172-20260915-step09-field-31.md)
+
+<a id="reading-hr-42c319dffa9ac5fd"></a>
+## 首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：首个真实小材料碰撞。验证 P1 机器数据接入碰撞工作流在真实材料上的表现：流程可跑、候选可生成、约束可落地。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）；首个真实小材料碰撞。验证 P1 机器数据接入碰撞工作流在真实材料上的表现：流程可跑、候选可生成、约束可落地。；本地 Markdown：inputs/collisions/20260708-teacher-competition/source.md（37KB，Get 笔记文章）。；未读取网页链接，未用公众号推广语/图片链接作核心材料。；python3 tools/validatedata.py 输出 ALLP1DATAVALID。；classicproblemsbenchmark：命中 CP-025（教育不平等，pending），作上层锚点。
+- 完整阅读：[outputs/audit/teacher-competition-first-real-collision-audit-20260708.md](../../outputs/audit/teacher-competition-first-real-collision-audit-20260708.md)
+
+<a id="reading-hr-43bf10109af2485e"></a>
+## External Input Non-Republication Principle
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：本原则适用于所有从项目外部获得的材料，包括但不限于： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：External Input Non-Republication Principle；12026年7月19日（人类纪元；对应公元2026年7月19日）— Q33 正式候选构件；外部输入材料不得被复述、重新发布或再分发。；本原则适用于所有从项目外部获得的材料，包括但不限于：；任何受版权保护且未明确授权本项目使用的原文；来源引用：记录原始来源、作者、时间、渠道和版权状态
+- 完整阅读：[docs/governance/external-input-non-republication-principle.md](../../docs/governance/external-input-non-republication-principle.md)
