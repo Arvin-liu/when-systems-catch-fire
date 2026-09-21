@@ -624,6 +624,26 @@
 - **主题：** `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260827-143 Step 04 — 可出版素材盘点`, `ignition-143-step04-corpus-census`
 
+<a id="asset-hr-026324ff85eb49af"></a>
+## Step09 — Path Accounting and Fixed Point
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-026324FF85EB49AF` · [reports/evaluations/ignition-198-replicated-method-use-trial-r0/step09-path-accounting.md](../../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step09-path-accounting.md)
+- **为什么产生：** 此来源记录了什么：Step09 — Path Accounting and Fixed Point？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The Task198 preparation surface is confined to the task-local path prefix in path-accounting.json. The declared inventory covers the three fresh cases, the six condition/replicate packets, the sealed criteria and evaluator package, the future-only task manifest, the protocol freeze, their validat…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-198-replicated-method-use-trial-r0/step09-path-accounting.md`, `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **演化历史：** 2026-09-21: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Step09 — Path Accounting and Fixed Point`, `step09-path-accounting`
+
 <a id="asset-hr-03bc02f942aee639"></a>
 ## Full Object Inventory
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260827-142 Step 06 — Gemini Public Interface Audit`, `ignition-142-step06-gemini-public-audit`
-
-<a id="asset-hr-08f0792e76d0f0cb"></a>
-## Core strong-claim audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-08F0792E76D0F0CB` · [reports/foundation-architecture/core-strong-claim-audit-20260713.md](../../reports/foundation-architecture/core-strong-claim-audit-20260713.md)
-- **为什么产生：** 此来源记录了什么：Core strong-claim audit？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 原文件保存该项结果的完整问题、过程与边界。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D598`
-- **来源与证据：** `reports/foundation-architecture/core-strong-claim-audit-20260713.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Core strong-claim audit`, `core-strong-claim-audit-20260713`

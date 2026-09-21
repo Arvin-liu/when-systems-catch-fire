@@ -1119,6 +1119,11 @@
   - 可搜索名称：NFC-15da504639e77fb6 / Step 4：匹配证据制度
   - 来源：`docs/publication_risk_checklist.md`
   - 依赖：—；被引用：—
+- [Step00 — Owner/GPT Adjudication Freeze](../../ASSET-CARDS.md#asset-hr-c6c43a5f2896c3f2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Step00 — Owner/GPT Adjudication Freeze / step00-owner-gpt-adjudication-receipt
+  - 来源：`reports/evaluations/ignition-198-replicated-method-use-trial-r0/step00-owner-gpt-adjudication-receipt.md`
+  - 依赖：—；被引用：—
 - [Step01 mechanical erratum](../../ASSET-CARDS.md#asset-hr-83b56400443ecc6f)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Step01 mechanical erratum / step01-mechanical-erratum
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-565c57d6b27c4b37 / This is evidence that Pointfire's internal source, claim, review, ceiling, suspension and publication hand-offs were exe
   - 来源：`docs/architecture/getnote-1329-epistemic-governance-pressure-test.md`
-  - 依赖：—；被引用：—
-- [This is not evidence of either success or failure of the child. The exact](../../../reports/operations/ignition-138-step08-amendment-01-live-codex-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-6544efc9ec719432 / This is not evidence of either success or failure of the child. The exact
-  - 来源：`reports/operations/ignition-138-step08-amendment-01-live-codex-reconciliation.md`
   - 依赖：—；被引用：—

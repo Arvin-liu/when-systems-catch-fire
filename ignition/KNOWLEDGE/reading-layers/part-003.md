@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-3011881d0fe50e03"></a>
+## External Agent Federation R1 — disposable pilots
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：The Step 10 pilots compare protocol compatibility, not intelligence. Pilot A uses one repo.read envelope against the existing bounded Reference Executor view and every adapter marked AVAILABLE by the Step 00 inventory. The fixture is a disposable local directory containing a deliberately incorrec… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：External Agent Federation R1 — disposable pilots；The Step 10 pilots compare protocol compatibility, not intelligence. Pilot A uses one repo.read envelope against the existing bounded Reference Executor view and every adapter marked AVAILABLE by the Step 00 inventory. The fixture is a disposable local directory containing a deliberately incorrect manifest hash and a broken Markdown link. The formal reposito…；The vendor rows use captured public CLI boundaries injected into the existing adapters. This preserves the adapter contract tests without invoking a model, reading private session state, starting a daemon, changing provider/auth configuration, sending messages, or consuming external quota. Therefore each vendor row records NOTRUNLIVEEXTERNALINVOCATION; this…；Pilot B constructs a public handoff from a Reference Executor receipt, then requires the Codex adapter fixture to re-observe the workspace and artifact reference. The target executor receipt remains unvalidated until the OS-owned fixture validator independently checks the same two deterministic issues.；Pilot C injects timeout, malformed output, unsupported capability, stale receipt, duplicate progress/dispatch, forged completion, forged approval, incapable handoff and unknown-side-effect cases. Automatic recovery is shown only for the bounded read-only timeout case. Unknown or unverified effects remain REQUIRESRECONCILIATION; no adapter swap widens capabil…；The checked-in machine result is data/agent-federation/federation-pilot-results-r1.json. It proves only this deterministic protocol and failure-boundary fixture. It does not establish model quality, production autonomy, external approval, real-world effects or universal safety.
+- 完整阅读：[docs/architecture/federation-pilots-r1.md](../../docs/architecture/federation-pilots-r1.md)
+
+<a id="reading-hr-301b77606275333c"></a>
+## IGNITION-20260822-135 Step 01 — Canonical full regression runner
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The repository now has one explicit orchestration wrapper, ignition/tools/runfullregression.py, and one machine-readable contract at ignition/data/operations/full-regression-runner-r1.json. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260822-135 Step 01 — Canonical full regression runner；The repository now has one explicit orchestration wrapper, ignition/tools/runfullregression.py, and one machine-readable contract at ignition/data/operations/full-regression-runner-r1.json.；The wrapper derives the formal repository from its own file path and confirms the Git toplevel. It invokes the existing unittest suite from the explicit application root ignition, with PYTHONPATH entries for the application, test modules and legacy foundation helper modules. This resolves the runner's working-directory boundary without changing test meaning…；The runner performs a read-only exact-version dependency preflight from ignition/requirements-foundation.txt; it never installs packages or changes global configuration. It captures stdout/stderr and their SHA-256 digests, parses test/failure/error/skip counts, records the candidate HEAD, and compares clean Git status before and after the suite. Any precondi…；The supported natural window is at least 14,400 seconds. The runner has no kill timeout and marks a process complete only after normal subprocess return. A short test may finish sooner; the contract is the maximum observation window available to the caller, not an artificial kill threshold.；Contract/parser/dependency-read-only tests pass. This step establishes orchestration semantics only. It does not run the 47-minute full suite and does not claim that the current candidate is green.
+- 完整阅读：[reports/operations/ignition-135-step01-full-regression-runner.md](../../reports/operations/ignition-135-step01-full-regression-runner.md)
+
+<a id="reading-hr-3069e59a51d869c3"></a>
+## 121Q28 肉身锚定的心智层级跃迁写作法审计
+`CANDIDATE_OR_PENDING_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q28 肉身锚定的心智层级跃迁写作法审计；Status: READYFORGPTVERIFICATIONCANDIDATEONLY；repository: Arvin-liu/when-systems-catch-fire；starting origin/main: b396c136b47d8fd60ca513a531cb96ce65293d20；isolated branch: docs/121q28-embodied-cognitive-leap-writing-method-20260716；open-work conflict: no open PR or branch targeted the same Q28 method paths at task start; older open publication PRs #17-#21 remain separate historical candidates and were not modified.
+- 完整阅读：[reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md](../../reports/operations/121Q28-embodied-cognitive-leap-writing-method-audit.md)
+
 <a id="reading-hr-3078ad77a2ea0d78"></a>
 ## OpenClaw Adapter R1
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
@@ -332,24 +353,3 @@
 - 1 分钟：本规范是 Foundation 的现行认识论边界。它管理项目如何命名、计算、测试、展示和撤回断言；它不把治理规则本身伪装成外部科学结论。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：本规范是 Foundation 的现行认识论边界。它管理项目如何命名、计算、测试、展示和撤回断言；它不把治理规则本身伪装成外部科学结论。；形式化不等于证实；可计算不等于真实；内部自洽不等于外部成立。；AI 生成的编号、名称、公式或通过的内部测试不赋予真值。；数学事实、模型定义、算法规则、结构隐喻和经验断言必须分层。；局部模型失败不能推广为全称不可能；必要条件不能冒充充分条件。；定义不能预埋待证明结论；内部指标不能未经表示映射直接解释为现实对象。
 - 完整阅读：[docs/foundation/claim-governance-and-function-identity.md](../../docs/foundation/claim-governance-and-function-identity.md)
-
-<a id="reading-hr-429865ba2fb29659"></a>
-## Task172 Step09 field 31: AGRICULTURAL SCIENCES
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Task172 Step09 field 31: AGRICULTURAL SCIENCES；Formal parent freeze: f576b166d1ff2d7e76d6348cd6152b9145dc9860；Discovery preparation parent: 294a2b095a30354797686db4d10430304f3309ae；UNESCO authority: 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines；Field disciplines: 10；Selected metadata links: 80
-- 完整阅读：[reports/operations/ignition-172-20260915-step09-field-31.md](../../reports/operations/ignition-172-20260915-step09-field-31.md)
-
-<a id="reading-hr-42c319dffa9ac5fd"></a>
-## 首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：首个真实小材料碰撞。验证 P1 机器数据接入碰撞工作流在真实材料上的表现：流程可跑、候选可生成、约束可落地。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：首个真实小材料碰撞审计 · 赛课机制下的教师生存困境（2026-07-08）；首个真实小材料碰撞。验证 P1 机器数据接入碰撞工作流在真实材料上的表现：流程可跑、候选可生成、约束可落地。；本地 Markdown：inputs/collisions/20260708-teacher-competition/source.md（37KB，Get 笔记文章）。；未读取网页链接，未用公众号推广语/图片链接作核心材料。；python3 tools/validatedata.py 输出 ALLP1DATAVALID。；classicproblemsbenchmark：命中 CP-025（教育不平等，pending），作上层锚点。
-- 完整阅读：[outputs/audit/teacher-competition-first-real-collision-audit-20260708.md](../../outputs/audit/teacher-competition-first-real-collision-audit-20260708.md)
-
-<a id="reading-hr-43bf10109af2485e"></a>
-## External Input Non-Republication Principle
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：本原则适用于所有从项目外部获得的材料，包括但不限于： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：External Input Non-Republication Principle；12026年7月19日（人类纪元；对应公元2026年7月19日）— Q33 正式候选构件；外部输入材料不得被复述、重新发布或再分发。；本原则适用于所有从项目外部获得的材料，包括但不限于：；任何受版权保护且未明确授权本项目使用的原文；来源引用：记录原始来源、作者、时间、渠道和版权状态
-- 完整阅读：[docs/governance/external-input-non-republication-principle.md](../../docs/governance/external-input-non-republication-principle.md)

@@ -324,6 +324,11 @@
   - 可搜索名称：IMPLICIT-DCD595A104850EA5 / require\(manifest.get\("task_id"\) == TASK_ID, "publication manifest task identity mismatch"\) / IMPLICIT-DCD595A104850EA5
   - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
   - 依赖：—；被引用：—
+- [Step03 — Method History and Broken Controls](../../ASSET-CARDS.md#asset-hr-4b47f8918982152b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Step03 — Method History and Broken Controls / step03-method-trace-freeze
+  - 来源：`reports/evaluations/ignition-198-replicated-method-use-trial-r0/step03-method-trace-freeze.md`
+  - 依赖：—；被引用：—
 - [Targeted regression, clean projection preflight, exact-candidate natural full regression and fresh-clone natural full re](../../../reports/operations/ignition-142-step19-publication-and-terminality.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6fa54ca534ecc2c9 / Targeted regression, clean projection preflight, exact-candidate natural full regression and fresh-clone natural full re

@@ -4,6 +4,186 @@
 
 ## 2026
 
+<a id="change-src-hr-ffc42fd42bfd7145"></a>
+### 2026-09-21 · REPL-CASE-03 — Shadow-map fold
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Synthetic source facts. All names, cells, ticks, and observations in this case are invented for bounded experimental preparation. No external knowledge is required.
+- **来源：** [facts.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-03/facts.md)
+- **资产卡：** [HR-FFC42FD42BFD7145](./ASSET-CARDS.md#asset-hr-ffc42fd42bfd7145)
+
+<a id="change-src-hr-f03c23c4c688f1d5"></a>
+### 2026-09-21 · Future Successor Conversation — partial-lineage replicate A
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **来源：** [task-prompt.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/task-prompt.md)
+- **资产卡：** [HR-F03C23C4C688F1D5](./ASSET-CARDS.md#asset-hr-f03c23c4c688f1d5)
+
+<a id="change-src-hr-c6c43a5f2896c3f2"></a>
+### 2026-09-21 · Step00 — Owner/GPT Adjudication Freeze
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task: IGNITION-20260921-198
+- **来源：** [step00-owner-gpt-adjudication-receipt.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step00-owner-gpt-adjudication-receipt.md)
+- **资产卡：** [HR-C6C43A5F2896C3F2](./ASSET-CARDS.md#asset-hr-c6c43a5f2896c3f2)
+
+<a id="change-src-hr-bae0185688dada2c"></a>
+### 2026-09-21 · Step08 — Protocol and Complexity Freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task198 is a replication preparation under the existing Method-Use Trace R0 schema. It does not create an R0.5 protocol, a second method-use schema, a new case schema, or a new condition schema. The three fresh cases and their FACTSONLY, METHODTRACE, and BROKENMETHODTRACECONTROL packets are data…
+- **来源：** [step08-protocol-complexity-freeze.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step08-protocol-complexity-freeze.md)
+- **资产卡：** [HR-BAE0185688DADA2C](./ASSET-CARDS.md#asset-hr-bae0185688dada2c)
+
+<a id="change-src-hr-adbdff8862b240f3"></a>
+### 2026-09-21 · Step06 — Evaluator-Sealed Package
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This directory is evaluator-only preparation material. It is not in any Successor packet allowlist and contains no Successor response, score, verdict, or result.
+- **来源：** [README.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/evaluator-sealed/README.md)
+- **资产卡：** [HR-ADBDFF8862B240F3](./ASSET-CARDS.md#asset-hr-adbdff8862b240f3)
+
+<a id="change-src-hr-a57e28858231ff65"></a>
+### 2026-09-21 · REPL-CASE-02 — Windowed acknowledgement spool
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Synthetic source facts. All names, batches, ticks, and observations in this case are invented for bounded experimental preparation. No external knowledge is required.
+- **来源：** [facts.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-02/facts.md)
+- **资产卡：** [HR-A57E28858231FF65](./ASSET-CARDS.md#asset-hr-a57e28858231ff65)
+
+<a id="change-src-hr-9c17fb16f12f713f"></a>
+### 2026-09-21 · Future Successor Conversation — method replicate A
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **来源：** [task-prompt.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-a/task-prompt.md)
+- **资产卡：** [HR-9C17FB16F12F713F](./ASSET-CARDS.md#asset-hr-9c17fb16f12f713f)
+
+<a id="change-src-hr-9572018fd75b8de3"></a>
+### 2026-09-21 · Step01 — Historical Task190 Transfer Hash Anomaly Quarantine
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task198 fixes the historical status of the Task190 TRANSFER-01 manifest anomaly as:
+- **来源：** [historical-anomaly-receipt.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/historical-anomaly-receipt.md)
+- **资产卡：** [HR-9572018FD75B8DE3](./ASSET-CARDS.md#asset-hr-9572018fd75b8de3)
+
+<a id="change-src-hr-8ff477888a762198"></a>
+### 2026-09-21 · Step07 — Future Successor Task Manifest
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a frozen preparation manifest, not an execution command. It defines the six future same-model Successor conversation slots for Task198:
+- **来源：** [step07-future-task-manifest.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step07-future-task-manifest.md)
+- **资产卡：** [HR-8FF477888A762198](./ASSET-CARDS.md#asset-hr-8ff477888a762198)
+
+<a id="change-src-hr-8edbe11be3055537"></a>
+### 2026-09-21 · Future Successor Conversation — method replicate B
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **来源：** [task-prompt.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-b/task-prompt.md)
+- **资产卡：** [HR-8EDBE11BE3055537](./ASSET-CARDS.md#asset-hr-8edbe11be3055537)
+
+<a id="change-src-hr-8cd6f21eff6f134d"></a>
+### 2026-09-21 · Future Successor Conversation — facts replicate A
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **来源：** [task-prompt.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-a/task-prompt.md)
+- **资产卡：** [HR-8CD6F21EFF6F134D](./ASSET-CARDS.md#asset-hr-8cd6f21eff6f134d)
+
+<a id="change-src-hr-80784b6d49ec9d2a"></a>
+### 2026-09-21 · Future Successor Conversation — partial-lineage replicate B
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **来源：** [task-prompt.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-b/task-prompt.md)
+- **资产卡：** [HR-80784B6D49EC9D2A](./ASSET-CARDS.md#asset-hr-80784b6d49ec9d2a)
+
+<a id="change-src-hr-745e8f1eee641911"></a>
+### 2026-09-21 · Step05 — Predeclared Replicate Interpretation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The evaluator criteria are sealed before any Task198 Successor conversation or Evaluator execution:
+- **来源：** [replicated-method-use-criteria.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/criteria/replicated-method-use-criteria.md)
+- **资产卡：** [HR-745E8F1EEE641911](./ASSET-CARDS.md#asset-hr-745e8f1eee641911)
+
+<a id="change-src-hr-4b47f8918982152b"></a>
+### 2026-09-21 · Step03 — Method History and Broken Controls
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task198 reuses the Task190 Method-Use Trace R0 schema and validator exactly:
+- **来源：** [step03-method-trace-freeze.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step03-method-trace-freeze.md)
+- **资产卡：** [HR-4B47F8918982152B](./ASSET-CARDS.md#asset-hr-4b47f8918982152b)
+
+<a id="change-src-hr-4a36c51023ff28f7"></a>
+### 2026-09-21 · Step04 — Six Successor-Visible Packets
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Six isolated, future-only packets are prepared:
+- **来源：** [step04-case-order-receipt.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step04-case-order-receipt.md)
+- **资产卡：** [HR-4A36C51023FF28F7](./ASSET-CARDS.md#asset-hr-4a36c51023ff28f7)
+
+<a id="change-src-hr-4a1e0b4af6c33af9"></a>
+### 2026-09-21 · REPL-CASE-01 — Mirror-latch relay
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Synthetic source facts. All names, tokens, counters, and observations in this case are invented for bounded experimental preparation. No external knowledge is required.
+- **来源：** [facts.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-01/facts.md)
+- **资产卡：** [HR-4A1E0B4AF6C33AF9](./ASSET-CARDS.md#asset-hr-4a1e0b4af6c33af9)
+
+<a id="change-src-hr-4611947d00b2fdc0"></a>
+### 2026-09-21 · Step02 — Three Fresh Synthetic Replicated Cases
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The Task198 case manifest freezes three new, bounded, synthetic sources:
+- **来源：** [step02-case-freeze.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step02-case-freeze.md)
+- **资产卡：** [HR-4611947D00B2FDC0](./ASSET-CARDS.md#asset-hr-4611947d00b2fdc0)
+
+<a id="change-src-hr-2c3858044e4c55ad"></a>
+### 2026-09-21 · Future Successor Conversation — facts replicate B
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **来源：** [task-prompt.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-b/task-prompt.md)
+- **资产卡：** [HR-2C3858044E4C55AD](./ASSET-CARDS.md#asset-hr-2c3858044e4c55ad)
+
+<a id="change-src-hr-23214f941beb27c8"></a>
+### 2026-09-21 · Task198 Method Family History — bounded replay contrast
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a task-local synthetic method-family history for the replicated preparation. It reuses Method-Use Trace R0; it is not a new schema, registry, ontology, capability claim, or causal model.
+- **来源：** [method-family-history.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-family/method-family-history.md)
+- **资产卡：** [HR-23214F941BEB27C8](./ASSET-CARDS.md#asset-hr-23214f941beb27c8)
+
+<a id="change-src-hr-026324ff85eb49af"></a>
+### 2026-09-21 · Step09 — Path Accounting and Fixed Point
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The Task198 preparation surface is confined to the task-local path prefix in path-accounting.json. The declared inventory covers the three fresh cases, the six condition/replicate packets, the sealed criteria and evaluator package, the future-only task manifest, the protocol freeze, their validat…
+- **来源：** [step09-path-accounting.md](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step09-path-accounting.md)
+- **资产卡：** [HR-026324FF85EB49AF](./ASSET-CARDS.md#asset-hr-026324ff85eb49af)
+
 <a id="change-src-hr-c386d0cc5aa6970d"></a>
 ### 2026-09-20 · Method vs facts/skill/template ablation design R0
 
