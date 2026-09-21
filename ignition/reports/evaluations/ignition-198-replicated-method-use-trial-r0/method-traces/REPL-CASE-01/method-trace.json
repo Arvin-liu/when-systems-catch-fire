@@ -1,0 +1,143 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "replicated-repl-case-01-method-use-r0",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#candidate",
+      "summary": "A bounded replay contrast holds a synthetic input constant and compares a local discriminating observation.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": ["synthetic method-family history pinned for Task198"],
+        "open_questions": ["replicated execution has not run"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "candidate_ref": "method:bounded-replay-contrast-r0"
+    },
+    {
+      "segment_id": "selection",
+      "segment_kind": "SELECTION_RATIONALE",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#repl-case-01",
+      "summary": "The relay context permits a bounded replay while preserving two unrecorded route measurements.",
+      "uncertainty": {
+        "status": "HYPOTHESIS",
+        "basis": ["selection rule in the synthetic method-family history"],
+        "open_questions": ["whether a discriminating lane observation can be completed"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "selected_candidate_ref": "method:bounded-replay-contrast-r0",
+      "rationale": "The K7 input is repeatable, while lane divergence can be compared without treating the missing R reading as known.",
+      "alternatives_considered": ["single snapshot comparison", "counter-only explanation without replay"]
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#repl-case-01",
+      "summary": "The context is a synthetic two-lane relay with a token input and incomplete route measurements.",
+      "uncertainty": {
+        "status": "NOT_MEASURED",
+        "basis": ["case facts identify absent pre-input and internal route readings"],
+        "open_questions": ["pre-input R counter", "internal route decision"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "context_ref": "selection",
+      "constraints": ["synthetic case facts only", "hold token K7 constant", "missing readings remain unresolved", "no causal attribution"]
+    },
+    {
+      "segment_id": "use",
+      "segment_kind": "METHOD_USE_EVENT",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#repl-case-01",
+      "summary": "The replay probe is applied to the relay counters and selector marker in one bounded use event.",
+      "uncertainty": {
+        "status": "HYPOTHESIS",
+        "basis": ["application constraint in the synthetic method-family history"],
+        "open_questions": ["whether the missing route readings can be captured"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "used_candidate_ref": "method:bounded-replay-contrast-r0",
+      "input_ref": "context",
+      "expected_observation": "A replay-consistent lane difference with an independently captured pre-input R value would discriminate the local explanations.",
+      "use_order": 1
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-198/REPL-CASE-01/facts",
+      "source_sha256": "4a00553d17cb8ff4c651db383dfda8e975e14e883e60643dfbc238d5de2937a4",
+      "exact_locator": "cases/REPL-CASE-01/facts.md#record-gaps",
+      "summary": "The case records lane divergence but not the measurements needed for a discriminating observation.",
+      "uncertainty": {
+        "status": "INCONCLUSIVE",
+        "basis": ["pre-input R counter and internal route read are absent"],
+        "open_questions": ["which local explanation accounts for the lane values"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "use_segment_ref": "use",
+      "outcome_type": "NO_DISCRIMINATING_OBSERVATION",
+      "observed_outcome": "Lane L changed from 4 to 5 and lane R was 8 after K7, but the pre-input R value and route decision were not recorded.",
+      "confounders": ["missing pre-input R measurement", "missing internal route-decision read"],
+      "causal_attribution": "NOT_ESTABLISHED"
+    },
+    {
+      "segment_id": "revision",
+      "segment_kind": "REVISION_OR_DISPOSITION",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#revision-boundary",
+      "summary": "The relay trace remains unresolved because its discriminating measurement was not captured.",
+      "uncertainty": {
+        "status": "INCONCLUSIVE",
+        "basis": ["the bounded observation requirement was not met"],
+        "open_questions": ["future capture of the missing route measurements"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "revision_type": "UNRESOLVED",
+      "revision_rationale": "The trace retains the missing route measurements and does not force a disposition from lane values alone.",
+      "disposition": "UNRESOLVED",
+      "target_candidate_ref": "method:bounded-replay-contrast-r0",
+      "rollback_ref": null
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}
