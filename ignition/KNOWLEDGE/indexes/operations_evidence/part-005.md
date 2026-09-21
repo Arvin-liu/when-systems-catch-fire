@@ -1229,6 +1229,36 @@
   - 可搜索名称：Function-Paradigm Full-Text Review Report — IGNITION-121 / 121-function-paradigm-fulltext-review-report
   - 来源：`reports/external-research/121-function-paradigm-fulltext-review-report.md`
   - 依赖：—；被引用：—
+- [Future Successor Conversation — facts replicate A](../../ASSET-CARDS.md#asset-hr-8cd6f21eff6f134d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Future Successor Conversation — facts replicate A / task-prompt
+  - 来源：`reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-a/task-prompt.md`
+  - 依赖：—；被引用：—
+- [Future Successor Conversation — facts replicate B](../../ASSET-CARDS.md#asset-hr-2c3858044e4c55ad)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Future Successor Conversation — facts replicate B / task-prompt
+  - 来源：`reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-b/task-prompt.md`
+  - 依赖：—；被引用：—
+- [Future Successor Conversation — method replicate A](../../ASSET-CARDS.md#asset-hr-9c17fb16f12f713f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Future Successor Conversation — method replicate A / task-prompt
+  - 来源：`reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-a/task-prompt.md`
+  - 依赖：—；被引用：—
+- [Future Successor Conversation — method replicate B](../../ASSET-CARDS.md#asset-hr-8edbe11be3055537)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Future Successor Conversation — method replicate B / task-prompt
+  - 来源：`reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-b/task-prompt.md`
+  - 依赖：—；被引用：—
+- [Future Successor Conversation — partial-lineage replicate A](../../ASSET-CARDS.md#asset-hr-f03c23c4c688f1d5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Future Successor Conversation — partial-lineage replicate A / task-prompt
+  - 来源：`reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/task-prompt.md`
+  - 依赖：—；被引用：—
+- [Future Successor Conversation — partial-lineage replicate B](../../ASSET-CARDS.md#asset-hr-80784b6d49ec9d2a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Future Successor Conversation — partial-lineage replicate B / task-prompt
+  - 来源：`reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-b/task-prompt.md`
+  - 依赖：—；被引用：—
 - [G_δ\(财务决策\) = 1](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C03181F47FC0FCEE / G_δ\(财务决策\) = 1 / IMPLICIT-C03181F47FC0FCEE / IMPLICIT-C4E76573DDEB0C6B
@@ -2473,34 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-440D713FA4108EBB / original_verified = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "ORIGINAL_SUCCESS_VERIFIED"\) / IMPLICIT-440D713FA4108EBB
   - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
-  - 依赖：—；被引用：—
-- [Outcome**: Did the prediction hold? If not, what failed?](../../../docs/falsifiability/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6639c6be08d8960a / Outcome**: Did the prediction hold? If not, what failed?
-  - 来源：`docs/falsifiability/README.md`
-  - 依赖：—；被引用：—
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D570 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / D570 / T100
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：NFC-00f68294b8e6ce4d
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T100 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T100 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：NFC-8eb2dd5da70992ac
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T61 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T61 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T70 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T70 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T71 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T71 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：—；被引用：—

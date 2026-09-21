@@ -1,0 +1,66 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "step": "Step00",
+  "task_nature": "BUILDER_EXPERIMENTAL_DESIGN_PREPARATION",
+  "model": "5.6 Terra",
+  "reasoning_effort": "medium",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "control_command": {
+    "repository": "Arvin-liu/1111",
+    "ref": "main",
+    "ref_head": "9eb7c8d2eb34858131daa2a2660516456e1e2497",
+    "path": "agent-commands/IGNITION-20260921-198.md",
+    "content_sha256": "bd776aed51a24f6aa16c69d6e90ebe4a56dc15c83186f3c85173ed2d8a9cf46e"
+  },
+  "starting_head": "76bb9b566bffc8fd92e6a84026a336bd96d8a534",
+  "branch": "work/IGNITION-20260921-198-replicated-method-use-trial-r0",
+  "draft_base": "eval/IGNITION-20260921-197-method-use-trace-independent-evaluation",
+  "task197_evidence_refs": {
+    "exact_head": "76bb9b566bffc8fd92e6a84026a336bd96d8a534",
+    "report_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/independent-evaluation-report.md",
+    "report_sha256": "9d08a8d1eef35156708fe34f482687295e3ac7f5ffd87f7db90733cef99af361",
+    "verdict_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/independent-evaluation-verdict.json",
+    "verdict_sha256": "8b774773c4002b3f2dfe2db4156e258190f096d9e03ed40a5ef2f8237c0195bf",
+    "evidence_freeze_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evidence-freeze.json",
+    "evidence_freeze_sha256": "3f076cbac2f4fd24addc94a70131beab6f83511254aabc06e47679330df3b7d2",
+    "evaluation_input_freeze_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-input-freeze.json",
+    "evaluation_input_freeze_sha256": "fc920160333d8a92266c944ff1667c7b48789059342e2379733fc8f204acc896",
+    "evaluation_isolation_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.json",
+    "evaluation_isolation_sha256": "cffb7dcbad265dc4c3e563673d88ab5fb854d451f8e8d94c65e69123d136220c",
+    "report_exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+    "successor_evidence_freeze_checkpoint": "c87ba4d94d04a5ee443b45cfa28eef167dbb01b4",
+    "evaluation_input_freeze_checkpoint": "8b90854dc20a58415dfbf5e0984aa596450db5ea"
+  },
+  "sealed_criteria": {
+    "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/evaluator-sealed/criteria.json",
+    "sha256": "4a8b1d98ffeaee39265a3d7786177caf0a47a51d51bb51b75f9695266e6d7085"
+  },
+  "frozen_owner_gpt_adjudication": {
+    "TASK197_EVIDENCE_VALIDITY": "ACCEPT",
+    "METHOD_USE_RECONSTRUCTION": "ACCEPT_BOUNDED_SUPPORTED_EVIDENCE",
+    "BOUNDED_METHOD_TRANSFER": "ACCEPT_SUPPORTED_EVIDENCE_FOR_TRANSFER_01",
+    "ABLATION_INTERPRETATION": "DESCRIPTIVE_CONDITION_CONTRAST_ONLY",
+    "CAUSAL_EFFECT_OF_METHOD_TRACE": "NOT_ESTABLISHED",
+    "GENERAL_COGNITIVE_INHERITANCE": "NOT_ESTABLISHED",
+    "COGNITIVE_INHERITANCE_R1": "NOT_AUTHORIZED",
+    "CROSS_MODEL_TRANSFER": "DEFERRED_PENDING_REPLICATION",
+    "R0_4_EVALUATION_PROTOCOL": "RETAIN_AS_CURRENT_EXPERIMENTAL_BASELINE",
+    "METHOD_USE_TRACE_R0": "RETAIN_AS_CURRENT_RESEARCH_ARTIFACT",
+    "NEXT_EXPERIMENT": "AUTHORIZE_REPLICATED_SAME_MODEL_MULTI_CASE_CONDITION_TRIAL",
+    "MODEL_RSI": "NOT_AUTHORIZED",
+    "WEIGHT_TRAINING": "NOT_AUTHORIZED",
+    "CANONICAL_PROMOTION": "NOT_AUTHORIZED"
+  },
+  "authority_boundary": {
+    "builder_role": "BUILDER_EXPERIMENTAL_DESIGN_PREPARATION",
+    "successor": "NOT_RUN",
+    "evaluator": "NOT_RUN",
+    "cross_model_trial": "NOT_RUN",
+    "model_rsi": "NOT_RUN",
+    "weight_training": "NOT_RUN",
+    "canonical_claim_ids": [],
+    "canonical_promotion": "NONE",
+    "pr_lifecycle": "OPEN_DRAFT_UNMERGED"
+  }
+}

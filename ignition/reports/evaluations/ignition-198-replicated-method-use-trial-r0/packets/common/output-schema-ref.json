@@ -1,0 +1,14 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "output_record_schema": "REUSED_EXISTING_R0.1_SUCCESSOR_OUTPUT",
+  "schema_path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+  "schema_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
+  "record_format": "one JSON object per case in successor-response.jsonl",
+  "records_per_conversation": 3,
+  "case_ids": ["REPL-CASE-01", "REPL-CASE-02", "REPL-CASE-03"],
+  "same_schema_across_conditions": true,
+  "new_method_use_schema": false,
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

@@ -1,0 +1,67 @@
+{
+  "artifact_type": "PROTOCOL_AND_COMPLEXITY_FREEZE",
+  "task_id": "IGNITION-20260921-198",
+  "step": "Step08",
+  "source_commit": "76bb9b566bffc8fd92e6a84026a336bd96d8a534",
+  "status": "FROZEN_PREPARATION_ONLY",
+  "current_owner_adjudication_boundary": {
+    "task197_bounded_evidence": "ACCEPT",
+    "method_use_reconstruction": "BOUNDED_SUPPORTED",
+    "transfer_01_bounded_method_transfer": "SUPPORTED",
+    "ablation": "DESCRIPTIVE_CONDITION_CONTRAST_ONLY",
+    "causal_method_trace_effect": "NOT_ESTABLISHED",
+    "general_cognitive_inheritance": "NOT_ESTABLISHED",
+    "r1": "NOT_AUTHORIZED",
+    "cross_model_transfer": "DEFERRED"
+  },
+  "protocol_freeze": {
+    "replication_protocol": "Method-Use Trace R0 replication under the Task198 packet and evaluator contracts",
+    "new_r0_5_protocol": "NONE",
+    "new_method_use_schema": "NONE",
+    "second_method_use_schema": "PROHIBITED",
+    "new_case_schema": "NONE",
+    "new_condition_schema": "NONE",
+    "method_trace_schema": {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/schema/method-use-trace-r0.schema.json",
+      "sha256": "e53532c8338c76d83b72c79edbb3780800d190ce9338c194c7ba2f03eec69e8b",
+      "use": "REUSE_EXISTING_SCHEMA_EXACTLY"
+    },
+    "method_trace_validator": {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/tools/validate_method_use_trace_r0.py",
+      "sha256": "7adcd2c56acb520b26e2f9e126f0ac258ec5f794582e08c0e2c993fcb4f527a5",
+      "use": "REUSE_EXISTING_VALIDATOR_EXACTLY"
+    },
+    "r0_4_baseline_role": "Historical baseline for read accounting, local-only trial boundaries, operational separation, and no-promotion discipline. Task198 does not rename itself R0.4, mutate R0.4 files, or import R0.4 as a second method-use schema.",
+    "replication_change_surface": "Only fresh synthetic case bytes, packet manifests, neutral broken controls, predeclared criteria, evaluator sealing, and future-task bookkeeping are added. The response shape remains the existing R0.1 successor output schema."
+  },
+  "r0_4_baseline_pins": [
+    {
+      "path": "ignition/evaluation/r0.4-ledger-closure-protocol.md",
+      "sha256": "121f3ccd203a3f6f03f39598d1b3a446d7ff616ef8cf7e3e1bf680c7207fba2e",
+      "role": "historical_protocol_baseline"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/packet-manifest-r0.4.json",
+      "sha256": "bc702b24b546997c40182246cc6b890fe321d661692fb6e13aa3a0410adfbbea",
+      "role": "historical_packet_boundary_baseline"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.4/successor-visible/successor-output-r0.4.schema.json",
+      "sha256": "06f1261f915071fb6e5af85f7463da0c92a6983c0c72eaee0a7bfe74df9d3a2f",
+      "role": "historical_response_baseline"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md",
+      "sha256": "b93a21d0f0e721f01f4c8d0e668cfbc0e3b29932e3c3414220e19523364f0f05",
+      "role": "historical_bounded_evaluation_baseline"
+    }
+  ],
+  "future_decision_gates": {
+    "before_any_successor_execution": "Owner/GPT must issue a separate exact task command; this preparation manifest alone is not authority.",
+    "after_replicated_trial": "Use only the Step05 sealed dispositions and Step06 sealed evaluator package; do not convert association into causal effect.",
+    "before_cross_model_work": "Require a separately authorized design and preserve CROSS_MODEL_TRANSFER=DEFERRED until then.",
+    "before_r1": "Require a separately authorized Owner decision; R1 remains not authorized.",
+    "before_canonical_promotion": "Require a separate promotion authority; no Task198 preparation artifact is canonical evidence."
+  },
+  "terminal_stop": "READY_FOR_REPLICATED_METHOD_USE_SUCCESSOR_TRIALS"
+}

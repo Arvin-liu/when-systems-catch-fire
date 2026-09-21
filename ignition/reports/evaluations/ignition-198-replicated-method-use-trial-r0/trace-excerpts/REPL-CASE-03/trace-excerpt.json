@@ -1,0 +1,52 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "replicated-repl-case-03-excerpt-r0",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#candidate",
+      "summary": "A bounded replay contrast is named in the synthetic source record.",
+      "uncertainty": {"status": "OBSERVED", "basis": ["synthetic source record"], "open_questions": ["independent run"]},
+      "claim_ceiling": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["bounded synthetic lineage"], "forbidden_inferences": ["causation", "capability", "inheritance"]},
+      "candidate_ref": "method:bounded-replay-contrast-r0"
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-198/REPL-CASE-03/facts",
+      "source_sha256": "b7ff2806fe4321a6f406d7f3e708607a712dbca091144818b1fdb88034eadfde",
+      "exact_locator": "cases/REPL-CASE-03/facts.md#system-record",
+      "summary": "The record describes primary and shadow cells with a read channel.",
+      "uncertainty": {"status": "OBSERVED", "basis": ["cell and read states are recorded"], "open_questions": ["read-channel source"]},
+      "claim_ceiling": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["bounded synthetic context"], "forbidden_inferences": ["causation", "capability", "inheritance"]},
+      "context_ref": "candidate",
+      "constraints": ["synthetic facts only", "retain read-channel boundary"]
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-198/REPL-CASE-03/facts",
+      "source_sha256": "b7ff2806fe4321a6f406d7f3e708607a712dbca091144818b1fdb88034eadfde",
+      "exact_locator": "cases/REPL-CASE-03/facts.md#recorded-observations",
+      "summary": "The repeated fold yields recorded cell values and a delayed read.",
+      "uncertainty": {"status": "INCONCLUSIVE", "basis": ["read-channel source is absent"], "open_questions": ["cell or channel source"]},
+      "claim_ceiling": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["bounded synthetic observation"], "forbidden_inferences": ["causation", "capability", "inheritance"]},
+      "outcome_type": "OBSERVED_OUTCOME",
+      "observed_outcome": "The repeated fold records P=8 and S=6 while the read channel changes by tick.",
+      "confounders": ["no direct read-channel source measurement"],
+      "causal_attribution": "NOT_ESTABLISHED"
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

@@ -1,0 +1,52 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "replicated-repl-case-02-excerpt-r0",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#candidate",
+      "summary": "A bounded replay contrast is named in the synthetic source record.",
+      "uncertainty": {"status": "OBSERVED", "basis": ["synthetic source record"], "open_questions": ["independent run"]},
+      "claim_ceiling": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["bounded synthetic lineage"], "forbidden_inferences": ["causation", "capability", "inheritance"]},
+      "candidate_ref": "method:bounded-replay-contrast-r0"
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-198/REPL-CASE-02/facts",
+      "source_sha256": "f3e22b89dc238794083118552f0b5a2b8c490fc960298ddf55e1a1c7f720cdab",
+      "exact_locator": "cases/REPL-CASE-02/facts.md#system-record",
+      "summary": "The record describes a queue, acknowledgement register, and watchdog.",
+      "uncertainty": {"status": "OBSERVED", "basis": ["delivery and watchdog states are recorded"], "open_questions": ["acknowledgement boundary"]},
+      "claim_ceiling": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["bounded synthetic context"], "forbidden_inferences": ["causation", "capability", "inheritance"]},
+      "context_ref": "candidate",
+      "constraints": ["synthetic facts only", "retain watchdog state"]
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-198/REPL-CASE-02/facts",
+      "source_sha256": "f3e22b89dc238794083118552f0b5a2b8c490fc960298ddf55e1a1c7f720cdab",
+      "exact_locator": "cases/REPL-CASE-02/facts.md#recorded-observations",
+      "summary": "The second run reaches watchdog expiry without an acknowledgement.",
+      "uncertainty": {"status": "OBSERVED", "basis": ["watchdog expiry is recorded"], "open_questions": ["missing event boundary"]},
+      "claim_ceiling": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["bounded synthetic observation"], "forbidden_inferences": ["causation", "capability", "inheritance"]},
+      "outcome_type": "FAILURE",
+      "observed_outcome": "Three deliveries were recorded but the acknowledgement register stayed empty.",
+      "confounders": ["unmeasured register-write boundary"],
+      "causal_attribution": "NOT_ESTABLISHED"
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

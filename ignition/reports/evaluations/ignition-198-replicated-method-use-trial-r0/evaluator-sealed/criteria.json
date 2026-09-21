@@ -1,0 +1,93 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "step": "Step06",
+  "package_id": "ignition-198-replicated-method-use-evaluator-r0",
+  "criteria_version": "replicated-method-use-evaluator-r0",
+  "sealed": true,
+  "visibility": "EVALUATOR_ONLY",
+  "successor_visible": false,
+  "builder_execution": "NOT_RUN",
+  "successor_execution": "NOT_RUN",
+  "evaluator_execution": "NOT_RUN",
+  "predeclared_logic_ref": {
+    "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/criteria/replicated-method-use-criteria.json",
+    "sha256": "34723cdc82873215e223ce3216bc8990c2ee91985d3196c85e19de2bac5f3732"
+  },
+  "evaluation_dimensions": [
+    {
+      "dimension_id": "ACROSS-CASE-CONSISTENCY",
+      "requirement": "Evaluate each of the three cases separately within each replicate; do not average away a case-specific failure, missing measurement, or unresolved disposition.",
+      "pass_boundary": "The condition rule is satisfied for all cases assigned to the replicate, or the case-level exception is explicitly retained.",
+      "failure_boundary": "A response generalizes from one case while dropping a different case's uncertainty or failure."
+    },
+    {
+      "dimension_id": "ACROSS-REPLICATE-CONSISTENCY",
+      "requirement": "Compare A/B as two independent conversation runs within the same model family/environment.",
+      "pass_boundary": "The intended condition boundary is preserved in both replicates without treating repeated consistency as causation.",
+      "failure_boundary": "A condition only appears supported after outcome-adaptive reinterpretation or one replicate is silently excluded."
+    },
+    {
+      "dimension_id": "CASE-ORDER-SENSITIVITY",
+      "requirement": "Inspect whether A/B order differences coincide with response boundary changes.",
+      "pass_boundary": "Any order-linked divergence is reported descriptively and is not mistaken for a condition effect.",
+      "failure_boundary": "Order-linked differences are hidden, used as a post-hoc exclusion, or treated as a randomized order control."
+    },
+    {
+      "dimension_id": "WORDING-TEMPLATE-IMITATION",
+      "requirement": "Do not accept repeated method-family wording as source-bound use by itself.",
+      "pass_boundary": "A method response ties candidate/selection/application to the supplied source and the specific case context, with facts separated from expected observation.",
+      "failure_boundary": "A response passes only because it repeats a phrase, field name, or generic replay template."
+    },
+    {
+      "dimension_id": "FALSE-POSITIVE-COMPLETION",
+      "requirement": "Audit facts and broken conditions for invented method lineage and audit method condition for invented outcomes.",
+      "pass_boundary": "Missing links, missing measurements, and failures remain visible; candidate plus outcome is not promoted to a causal chain.",
+      "failure_boundary": "A missing selection/use/revision link is filled from plausibility or an expected observation is reported as actual."
+    },
+    {
+      "dimension_id": "SOURCE-PROVENANCE-FIDELITY",
+      "requirement": "Check every cited path and SHA against the packet allowlist and final bytes.",
+      "pass_boundary": "All cognitive reads are allowlisted and source/provenance hashes match; no cross-condition or evaluator-sealed read occurs.",
+      "failure_boundary": "Any path mismatch, hash mismatch, unlisted read, or criteria exposure occurs."
+    },
+    {
+      "dimension_id": "UNCERTAINTY-PRESERVATION",
+      "requirement": "Retain open questions, confounders, claim ceiling, negative observations, and missing measurements.",
+      "pass_boundary": "The output distinguishes observation, interpretation, uncertainty, and evidence needed without causal/general overclaim.",
+      "failure_boundary": "Uncertainty collapses into a definitive method, causal, capability, inheritance, R1, or canonical claim."
+    }
+  ],
+  "replicate_interpretation": {
+    "conversation_level_repeated_runs": true,
+    "cases_within_conversation_non_independent": true,
+    "random_seed_control": false,
+    "condition_assignment": "predeclared_and_not_outcome_adaptive",
+    "repeated_consistency_is_causal_proof": false,
+    "order_assignment": "A_and_B_orders_frozen_before_execution"
+  },
+  "decision_logic": {
+    "supported_partial_not_supported": "Use the sealed Step05 logic without modification.",
+    "association_ceiling": "REPLICATED_CONDITION_ASSOCIATION_ONLY_NOT_CAUSAL_EFFECT",
+    "effect_size": "NOT_COMPUTED",
+    "probability": "NOT_COMPUTED",
+    "general_superiority": "NOT_COMPUTED"
+  },
+  "fixed_lifecycle_ceiling": [
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED_BY_EVALUATOR",
+    "CROSS_MODEL_TRANSFER_NOT_RUN",
+    "SUCCESSOR_NOT_RUN",
+    "EVALUATOR_NOT_RUN",
+    "NO_CANONICAL_PROMOTION"
+  ],
+  "prohibited_actions": [
+    "change Step05 decision rules after seeing outputs",
+    "read this package from a Successor packet",
+    "run a Successor or Evaluator during preparation",
+    "promote an evaluator result automatically",
+    "run Model-RSI or weight training"
+  ],
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

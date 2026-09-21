@@ -1,0 +1,15 @@
+{
+  "artifact_type": "SUCCESSOR_READ_MANIFEST_CONTRACT",
+  "task_id": "IGNITION-20260921-198",
+  "status": "FUTURE_TEMPLATE_NOT_RUN",
+  "read_manifest_path": "read-manifest.json",
+  "required_read_fields": ["path", "sha256", "read_channel", "read_status"],
+  "allowed_read_channels": ["cognitive_packet_read"],
+  "allowed_status": "READ",
+  "required_scope": "record every packet allowlist read exactly once with final-byte SHA-256",
+  "unlisted_read": "PROHIBITED_AND_HARD_STOP",
+  "evaluator_criteria_read": "PROHIBITED",
+  "external_search": "PROHIBITED",
+  "operational_mutation": "PROHIBITED",
+  "successor_status": "NOT_RUN"
+}

@@ -1,0 +1,143 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "replicated-repl-case-03-method-use-r0",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#candidate",
+      "summary": "A bounded replay contrast holds a synthetic input constant and compares a local discriminating observation.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": ["synthetic method-family history pinned for Task198"],
+        "open_questions": ["replicated execution has not run"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "candidate_ref": "method:bounded-replay-contrast-r0"
+    },
+    {
+      "segment_id": "selection",
+      "segment_kind": "SELECTION_RATIONALE",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#repl-case-03",
+      "summary": "The shadow-map context permits a reset replay while preserving the separated read channel.",
+      "uncertainty": {
+        "status": "HYPOTHESIS",
+        "basis": ["selection rule in the synthetic method-family history"],
+        "open_questions": ["whether the read-channel source can be directly observed"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "selected_candidate_ref": "method:bounded-replay-contrast-r0",
+      "rationale": "The fold input can be repeated after reset and the primary, shadow, and read-channel records can be compared by tick.",
+      "alternatives_considered": ["delayed snapshot interpretation", "read-channel explanation without reset replay"]
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#repl-case-03",
+      "summary": "The context is a synthetic primary/shadow cell pair with an immediate-read channel.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": ["case facts record both cells, marker, and read-channel values"],
+        "open_questions": ["the read-channel source between ticks 8 and 11"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "context_ref": "selection",
+      "constraints": ["synthetic case facts only", "hold fold=2 constant", "keep primary/shadow/read channels separate", "no causal attribution"]
+    },
+    {
+      "segment_id": "use",
+      "segment_kind": "METHOD_USE_EVENT",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#repl-case-03",
+      "summary": "The replay probe is applied to the primary, shadow, and delayed read-channel records.",
+      "uncertainty": {
+        "status": "HYPOTHESIS",
+        "basis": ["application constraint in the synthetic method-family history"],
+        "open_questions": ["whether the delayed read source can be measured directly"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "used_candidate_ref": "method:bounded-replay-contrast-r0",
+      "input_ref": "context",
+      "expected_observation": "A repeated P/S state with a direct read-channel source measurement would discriminate shadow lag from a channel-source difference.",
+      "use_order": 1
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-198/REPL-CASE-03/facts",
+      "source_sha256": "b7ff2806fe4321a6f406d7f3e708607a712dbca091144818b1fdb88034eadfde",
+      "exact_locator": "cases/REPL-CASE-03/facts.md#recorded-observations",
+      "summary": "The repeated fold yields the same primary/shadow state while the read channel changes by tick.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": ["reset replay repeats P=8 and S=6 at tick 8"],
+        "open_questions": ["the direct source of the tick-11 read"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "use_segment_ref": "use",
+      "outcome_type": "OBSERVED_OUTCOME",
+      "observed_outcome": "After reset and the repeated fold, P=8 and S=6 at tick 8; the read channel was 6 at tick 8 and 8 at tick 11.",
+      "confounders": ["no direct read-channel source measurement between ticks 8 and 11", "synthetic timing boundary"],
+      "causal_attribution": "NOT_ESTABLISHED"
+    },
+    {
+      "segment_id": "revision",
+      "segment_kind": "REVISION_OR_DISPOSITION",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#revision-boundary",
+      "summary": "The repeated bounded observation is retained without a causal or capability conclusion.",
+      "uncertainty": {
+        "status": "INCONCLUSIVE",
+        "basis": ["the read-channel source remains unmeasured"],
+        "open_questions": ["future direct measurement of the read-channel source"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "revision_type": "NO_REVISION",
+      "revision_rationale": "The bounded repeated observation is retained, while the unmeasured read-channel source remains an explicit confounder.",
+      "disposition": "NO_REVISION",
+      "target_candidate_ref": "method:bounded-replay-contrast-r0",
+      "rollback_ref": null
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

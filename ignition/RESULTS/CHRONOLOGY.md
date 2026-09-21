@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 647 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 668 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,279 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step10 — Final Builder Preflight and Handoff](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step10-preflight.md)
+
+- **结果 ID：** `HR-D1698155402C8DE4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step10 — Final Builder Preflight and Handoff？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task198 starts from Task197 exact head 76bb9b566bffc8fd92e6a84026a336bd96d8a534 and targets the stacked Draft base eval/IGNITION-20260921-197-method-use-trace-independent-evaluation.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step09 — Path Accounting and Fixed Point](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step09-path-accounting.md)
+
+- **结果 ID：** `HR-026324FF85EB49AF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step09 — Path Accounting and Fixed Point？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The Task198 preparation surface is confined to the task-local path prefix in path-accounting.json. The declared inventory covers the three fresh cases, the six condition/replicate packets, the sealed criteria and evaluator package, the future-only task manifest, the protocol freeze, their validat…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step08 — Protocol and Complexity Freeze](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step08-protocol-complexity-freeze.md)
+
+- **结果 ID：** `HR-BAE0185688DADA2C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step08 — Protocol and Complexity Freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task198 is a replication preparation under the existing Method-Use Trace R0 schema. It does not create an R0.5 protocol, a second method-use schema, a new case schema, or a new condition schema. The three fresh cases and their FACTSONLY, METHODTRACE, and BROKENMETHODTRACECONTROL packets are data…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step07 — Future Successor Task Manifest](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step07-future-task-manifest.md)
+
+- **结果 ID：** `HR-8FF477888A762198`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step07 — Future Successor Task Manifest？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a frozen preparation manifest, not an execution command. It defines the six future same-model Successor conversation slots for Task198:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step04 — Six Successor-Visible Packets](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step04-case-order-receipt.md)
+
+- **结果 ID：** `HR-4A36C51023FF28F7`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step04 — Six Successor-Visible Packets？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Six isolated, future-only packets are prepared:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step03 — Method History and Broken Controls](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step03-method-trace-freeze.md)
+
+- **结果 ID：** `HR-4B47F8918982152B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step03 — Method History and Broken Controls？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task198 reuses the Task190 Method-Use Trace R0 schema and validator exactly:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step02 — Three Fresh Synthetic Replicated Cases](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step02-case-freeze.md)
+
+- **结果 ID：** `HR-4611947D00B2FDC0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step02 — Three Fresh Synthetic Replicated Cases？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The Task198 case manifest freezes three new, bounded, synthetic sources:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step00 — Owner/GPT Adjudication Freeze](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step00-owner-gpt-adjudication-receipt.md)
+
+- **结果 ID：** `HR-C6C43A5F2896C3F2`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step00 — Owner/GPT Adjudication Freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task: IGNITION-20260921-198
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Future Successor Conversation — method replicate B](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-b/task-prompt.md)
+
+- **结果 ID：** `HR-8EDBE11BE3055537`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Future Successor Conversation — method replicate B？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Future Successor Conversation — method replicate A](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-a/task-prompt.md)
+
+- **结果 ID：** `HR-9C17FB16F12F713F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Future Successor Conversation — method replicate A？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Future Successor Conversation — facts replicate B](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-b/task-prompt.md)
+
+- **结果 ID：** `HR-2C3858044E4C55AD`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Future Successor Conversation — facts replicate B？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Future Successor Conversation — facts replicate A](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-a/task-prompt.md)
+
+- **结果 ID：** `HR-8CD6F21EFF6F134D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Future Successor Conversation — facts replicate A？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Future Successor Conversation — partial-lineage replicate B](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-b/task-prompt.md)
+
+- **结果 ID：** `HR-80784B6D49EC9D2A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Future Successor Conversation — partial-lineage replicate B？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Future Successor Conversation — partial-lineage replicate A](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/task-prompt.md)
+
+- **结果 ID：** `HR-F03C23C4C688F1D5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Future Successor Conversation — partial-lineage replicate A？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task198 Method Family History — bounded replay contrast](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-family/method-family-history.md)
+
+- **结果 ID：** `HR-23214F941BEB27C8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Task198 Method Family History — bounded replay contrast？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a task-local synthetic method-family history for the replicated preparation. It reuses Method-Use Trace R0; it is not a new schema, registry, ontology, capability claim, or causal model.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step01 — Historical Task190 Transfer Hash Anomaly Quarantine](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/historical-anomaly-receipt.md)
+
+- **结果 ID：** `HR-9572018FD75B8DE3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step01 — Historical Task190 Transfer Hash Anomaly Quarantine？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task198 fixes the historical status of the Task190 TRANSFER-01 manifest anomaly as:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step06 — Evaluator-Sealed Package](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/evaluator-sealed/README.md)
+
+- **结果 ID：** `HR-ADBDFF8862B240F3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step06 — Evaluator-Sealed Package？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This directory is evaluator-only preparation material. It is not in any Successor packet allowlist and contains no Successor response, score, verdict, or result.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step05 — Predeclared Replicate Interpretation](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/criteria/replicated-method-use-criteria.md)
+
+- **结果 ID：** `HR-745E8F1EEE641911`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：Step05 — Predeclared Replicate Interpretation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The evaluator criteria are sealed before any Task198 Successor conversation or Evaluator execution:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [REPL-CASE-03 — Shadow-map fold](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-03/facts.md)
+
+- **结果 ID：** `HR-FFC42FD42BFD7145`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：REPL-CASE-03 — Shadow-map fold？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Synthetic source facts. All names, cells, ticks, and observations in this case are invented for bounded experimental preparation. No external knowledge is required.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [REPL-CASE-02 — Windowed acknowledgement spool](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-02/facts.md)
+
+- **结果 ID：** `HR-A57E28858231FF65`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：REPL-CASE-02 — Windowed acknowledgement spool？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Synthetic source facts. All names, batches, ticks, and observations in this case are invented for bounded experimental preparation. No external knowledge is required.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [REPL-CASE-01 — Mirror-latch relay](../reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-01/facts.md)
+
+- **结果 ID：** `HR-4A1E0B4AF6C33AF9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `198-REPLICATED-METHOD-USE-TRIAL-R0`
+- **问题：** 此来源记录了什么：REPL-CASE-01 — Mirror-latch relay？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Synthetic source facts. All names, tokens, counters, and observations in this case are invented for bounded experimental preparation. No external knowledge is required.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

@@ -1,0 +1,52 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "replicated-repl-case-01-excerpt-r0",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#candidate",
+      "summary": "A bounded replay contrast is named in the synthetic source record.",
+      "uncertainty": {"status": "OBSERVED", "basis": ["synthetic source record"], "open_questions": ["independent run"]},
+      "claim_ceiling": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["bounded synthetic lineage"], "forbidden_inferences": ["causation", "capability", "inheritance"]},
+      "candidate_ref": "method:bounded-replay-contrast-r0"
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-198/REPL-CASE-01/facts",
+      "source_sha256": "4a00553d17cb8ff4c651db383dfda8e975e14e883e60643dfbc238d5de2937a4",
+      "exact_locator": "cases/REPL-CASE-01/facts.md#system-record",
+      "summary": "The record describes a two-lane relay with a token input.",
+      "uncertainty": {"status": "NOT_MEASURED", "basis": ["two route readings are absent"], "open_questions": ["route state"]},
+      "claim_ceiling": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["bounded synthetic context"], "forbidden_inferences": ["causation", "capability", "inheritance"]},
+      "context_ref": "candidate",
+      "constraints": ["synthetic facts only", "retain missing readings"]
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-198/REPL-CASE-01/facts",
+      "source_sha256": "4a00553d17cb8ff4c651db383dfda8e975e14e883e60643dfbc238d5de2937a4",
+      "exact_locator": "cases/REPL-CASE-01/facts.md#record-gaps",
+      "summary": "The record contains lane values and missing route measurements.",
+      "uncertainty": {"status": "INCONCLUSIVE", "basis": ["pre-input R is absent"], "open_questions": ["lane explanation"]},
+      "claim_ceiling": {"authority_status": "OBSERVATION_ONLY", "allowed_claims": ["bounded synthetic observation"], "forbidden_inferences": ["causation", "capability", "inheritance"]},
+      "outcome_type": "NO_DISCRIMINATING_OBSERVATION",
+      "observed_outcome": "Lane values are recorded but the pre-input R value is absent.",
+      "confounders": ["missing pre-input R measurement"],
+      "causal_attribution": "NOT_ESTABLISHED"
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

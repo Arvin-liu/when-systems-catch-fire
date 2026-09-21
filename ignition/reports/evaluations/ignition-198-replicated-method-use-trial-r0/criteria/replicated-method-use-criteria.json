@@ -1,0 +1,146 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "step": "Step05",
+  "criteria_id": "replicated-method-use-r0",
+  "criteria_version": "replicated-method-use-r0",
+  "sealed": true,
+  "visibility": "EVALUATOR_ONLY",
+  "successor_visible": false,
+  "builder_execution": "NOT_RUN",
+  "evaluator_execution": "NOT_RUN",
+  "successor_execution": "NOT_RUN",
+  "output_record_schema": {
+    "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+    "sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
+    "reuse_status": "EXISTING_SCHEMA_REUSED"
+  },
+  "method_trace_schema": {
+    "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/schema/method-use-trace-r0.schema.json",
+    "sha256": "e53532c8338c76d83b72c79edbb3780800d190ce9338c194c7ba2f03eec69e8b",
+    "reuse_status": "METHOD_USE_TRACE_R0_REUSED_NO_SECOND_SCHEMA"
+  },
+  "replicate_unit": {
+    "unit": "conversation",
+    "cases_per_conversation": 3,
+    "case_role": "repeated_observation_within_conversation",
+    "independence_statement": "The three cases within one conversation are not independent samples.",
+    "replicate_ids": ["FACTS_A", "FACTS_B", "METHOD_A", "METHOD_B", "BROKEN_A", "BROKEN_B"],
+    "case_order_is_predeclared": true,
+    "order_is_outcome_adaptive": false,
+    "random_seed_control": false
+  },
+  "per_replicate_checks": [
+    {
+      "criterion_id": "FACTS-NO-INHERITED-METHOD",
+      "condition": "FACTS_ONLY",
+      "requirement": "Do not invent a source-bound inherited method.",
+      "pass_rule": "For all three cases, method_selected normalizes to null or unavailable; no supplied method lineage is asserted as inherited; observations, unknowns, and evidence-needed remain grounded in the facts/provenance allowlist.",
+      "fail_rule": "A facts replicate asserts a source-bound method selection, method history, or inherited method not present in its allowlist."
+    },
+    {
+      "criterion_id": "FACTS-BOUNDARY-PRESERVATION",
+      "condition": "FACTS_ONLY",
+      "requirement": "Keep facts, interpretations, unknowns, and additional evidence separate.",
+      "pass_rule": "All three case records preserve missing measurements and do not turn interpretation into observation or causal claim.",
+      "fail_rule": "A facts replicate fills a missing measurement, collapses uncertainty, or presents an interpretation as a recorded fact."
+    },
+    {
+      "criterion_id": "METHOD-SOURCE-BOUND-SELECTION",
+      "condition": "METHOD_TRACE",
+      "requirement": "Selection is bound to the supplied trace source and is context-appropriate.",
+      "pass_rule": "For all three cases, the response identifies the supplied candidate/selection with trace source locator and matching SHA, and gives a case-specific rationale rather than a wording-only match.",
+      "fail_rule": "A method replicate invents selection, substitutes an unlisted source, or accepts template wording without source-bound evidence."
+    },
+    {
+      "criterion_id": "METHOD-APPLICATION-LINEAGE",
+      "condition": "METHOD_TRACE",
+      "requirement": "Apply the trace without merging expected observation with actual case facts.",
+      "pass_rule": "For all three cases, expected discriminating observation, actual observation/failure, missing data, confounders, and evidence needed remain separately stated.",
+      "fail_rule": "A method replicate presents an expected observation as observed, drops a known failure/missing measurement, or writes a causal/general conclusion."
+    },
+    {
+      "criterion_id": "BROKEN-MISSING-LINK-PRESERVATION",
+      "condition": "BROKEN_METHOD_TRACE_CONTROL",
+      "requirement": "Keep missing selection/use links missing.",
+      "pass_rule": "For all three cases, the response marks absent selection/use/revision lineage as unknown, unavailable, or unresolved and does not manufacture the omitted links.",
+      "fail_rule": "A broken-control replicate completes an omitted link from plausibility, filename, wording, or case values."
+    },
+    {
+      "criterion_id": "BROKEN-NO-FALSE-POSITIVE-COMPLETION",
+      "condition": "BROKEN_METHOD_TRACE_CONTROL",
+      "requirement": "Do not convert candidate plus outcome into a causal method-use chain.",
+      "pass_rule": "The response keeps candidate, context, and outcome separate and retains uncertainty/claim ceiling.",
+      "fail_rule": "A broken-control replicate treats a candidate and outcome as proof of use, causation, or inherited method."
+    },
+    {
+      "criterion_id": "ALL-SOURCE-FIDELITY",
+      "condition": "ALL",
+      "requirement": "Preserve packet source/provenance fidelity and read boundaries.",
+      "pass_rule": "Every cited packet path is allowlisted with the recorded final-byte SHA; no unlisted read or cross-condition material is used.",
+      "fail_rule": "Any path/SHA mismatch, unlisted read, cross-condition read, or criteria exposure occurs."
+    },
+    {
+      "criterion_id": "ALL-CEILING-PRESERVATION",
+      "condition": "ALL",
+      "requirement": "Preserve uncertainty and fixed claim ceiling.",
+      "pass_rule": "No response claims causal method effect, general cognitive inheritance, R1 authorization, cross-model transfer, or canonical promotion.",
+      "fail_rule": "Any prohibited causal, capability, inheritance, R1, cross-model, or canonical claim is made."
+    }
+  ],
+  "replication_disposition_rules": {
+    "SUPPORTED": {
+      "code": "REPLICATED_METHOD_USE_SIGNAL_SUPPORTED",
+      "rule": [
+        "METHOD_A and METHOD_B pass METHOD-SOURCE-BOUND-SELECTION and METHOD-APPLICATION-LINEAGE for all three cases.",
+        "FACTS_A and FACTS_B pass FACTS-NO-INHERITED-METHOD and FACTS-BOUNDARY-PRESERVATION for all three cases.",
+        "BROKEN_A and BROKEN_B pass BROKEN-MISSING-LINK-PRESERVATION and BROKEN-NO-FALSE-POSITIVE-COMPLETION for all three cases.",
+        "ALL-SOURCE-FIDELITY and ALL-CEILING-PRESERVATION pass for every replicate.",
+        "No protocol contamination occurs."
+      ]
+    },
+    "PARTIAL": {
+      "code": "REPLICATED_METHOD_USE_SIGNAL_PARTIAL",
+      "rule": [
+        "SUPPORTED is not satisfied.",
+        "No protocol contamination, systematic false-positive completion, or systematic inherited-method claim occurs.",
+        "At least four of six conversation-level replicate boundaries preserve their intended condition boundary across all three cases; this is a mechanical adequacy rule, not a probability or effect estimate."
+      ]
+    },
+    "NOT_SUPPORTED": {
+      "code": "REPLICATED_METHOD_USE_SIGNAL_NOT_SUPPORTED",
+      "rule": [
+        "A method condition cannot repeat source-bound use; or",
+        "FACTS_ONLY or BROKEN_METHOD_TRACE_CONTROL shows systematic false-positive method completion; or",
+        "protocol evidence is insufficient to compare the conditions; or",
+        "protocol contamination occurs."
+      ]
+    }
+  },
+  "fixed_interpretation_ceiling": "REPLICATED_CONDITION_ASSOCIATION_ONLY_NOT_CAUSAL_EFFECT",
+  "not_computed": [
+    "probability",
+    "effect_size",
+    "confidence_interval",
+    "general_superiority",
+    "causal_effect",
+    "general_cognitive_inheritance"
+  ],
+  "fixed_lifecycle_ceiling": [
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED_BY_EVALUATOR",
+    "CROSS_MODEL_TRANSFER_NOT_RUN",
+    "SUCCESSOR_NOT_RUN",
+    "EVALUATOR_NOT_RUN",
+    "NO_CANONICAL_PROMOTION"
+  ],
+  "prohibited_actions": [
+    "read evaluator-sealed criteria from a Successor packet",
+    "run a Successor or Evaluator during preparation",
+    "rewrite Task190 or Task197 frozen evidence",
+    "promote a replicate disposition automatically",
+    "run Model-RSI or weight training"
+  ],
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

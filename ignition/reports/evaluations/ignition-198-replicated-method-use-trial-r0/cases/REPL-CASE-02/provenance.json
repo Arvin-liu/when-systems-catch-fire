@@ -1,0 +1,21 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "case_id": "REPL-CASE-02",
+  "synthetic": true,
+  "personal_data": false,
+  "external_knowledge_required": false,
+  "source_path": "cases/REPL-CASE-02/facts.md",
+  "source_sha256": "f3e22b89dc238794083118552f0b5a2b8c490fc960298ddf55e1a1c7f720cdab",
+  "provenance_scope": "task-local synthetic facts and record gaps",
+  "construction_note": "Constructed as a queue-and-watchdog structure with a negative acknowledgement observation and no embedded method history.",
+  "design_constraints_satisfied": [
+    "distinct queue-and-watchdog structure",
+    "negative observation is recorded without explanation",
+    "unmeasured event boundary remains explicit"
+  ],
+  "evaluator_labels_included": false,
+  "method_answer_embedded_in_facts": false,
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

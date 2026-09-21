@@ -1,0 +1,43 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "step": "Step04",
+  "packet_id": "IGNITION-20260921-198-BROKEN-A",
+  "condition": "BROKEN_METHOD_TRACE_CONTROL",
+  "replicate": "A",
+  "local_only": true,
+  "case_order_seed": "IGNITION-20260921-198:A-order:v1",
+  "case_order": ["REPL-CASE-03", "REPL-CASE-01", "REPL-CASE-02"],
+  "task_prompt_path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/task-prompt.md",
+  "output_contract": {
+    "response_path": "successor-response.jsonl",
+    "read_manifest_path": "read-manifest.json",
+    "freeze_path": "freeze-sha256.txt",
+    "response_contract_path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/response-contract.json",
+    "read_manifest_contract_path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/read-manifest-contract.json",
+    "freeze_contract_path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/freeze-contract.txt"
+  },
+  "read_allowlist": [
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/task-prompt.md", "sha256": "0b8ef9ae66dcc1113be445ce70bfe4aeb5a7fad871e74e432cc78f178ca0c7e3", "role": "instruction"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/output-schema-ref.json", "sha256": "279285bd8da1bfcc799d86425380fd6ef920b7368c6b909736f0ca431e4cb8de", "role": "output_contract"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/response-contract.json", "sha256": "d59fe0748aad1abf12424ead1c036847425855df0f62ab108d36e2774e393cff", "role": "output_contract"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/read-manifest-contract.json", "sha256": "b8d92913c8ed5f76b9257ad9acc1a4478ded26620bc996ca80de6f7cbbb9c587", "role": "read_contract"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/freeze-contract.txt", "sha256": "eef98801f4a00c9fc78976831bb9c71b67dd074054ebcafc312de6a88f34d5c3", "role": "freeze_contract"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-01/facts.md", "sha256": "4a00553d17cb8ff4c651db383dfda8e975e14e883e60643dfbc238d5de2937a4", "role": "case_facts"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-01/provenance.json", "sha256": "a7c7a551b62c57e7b4d260f463a938a04d7e79dc67aeeb055a153e38d5d27a3e", "role": "case_provenance"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-02/facts.md", "sha256": "f3e22b89dc238794083118552f0b5a2b8c490fc960298ddf55e1a1c7f720cdab", "role": "case_facts"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-02/provenance.json", "sha256": "3200209c87847a07c1e11d6db9dac9129f4a59db1cb41b42c4530bf45839add8", "role": "case_provenance"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-03/facts.md", "sha256": "b7ff2806fe4321a6f406d7f3e708607a712dbca091144818b1fdb88034eadfde", "role": "case_facts"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-03/provenance.json", "sha256": "f26aa5bd0b5c8c93a41d47a4513502ac7d2b2604149840090161e6cd88420fda", "role": "case_provenance"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/trace-excerpts/REPL-CASE-01/trace-excerpt.json", "sha256": "45c90ccea25d9efb2948910572bd733717febfec4ac61bae9bd510fd1df1f4e7", "role": "partial_lineage_excerpt"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/trace-excerpts/REPL-CASE-02/trace-excerpt.json", "sha256": "e0d663afec7312c78f2c0bd9e90f8d11d2aea7dc0eb8680386872320b53b7829", "role": "partial_lineage_excerpt"},
+    {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/trace-excerpts/REPL-CASE-03/trace-excerpt.json", "sha256": "4e2fc14fa712df0f5307f4b2d1d5a762d69dee2519ef807eb156f8ad5d0fbc82", "role": "partial_lineage_excerpt"}
+  ],
+  "excluded_condition_prefixes": ["method-family/", "method-traces/"],
+  "future_branch_template": "work/IGNITION-20260921-198-successor-broken-{replicate}",
+  "normal_terminal_state": "SUCCESSOR_TRIAL_LOCAL_ONLY_COMPLETE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

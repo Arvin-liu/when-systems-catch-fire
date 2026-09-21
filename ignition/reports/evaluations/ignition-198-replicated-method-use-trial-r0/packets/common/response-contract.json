@@ -1,0 +1,20 @@
+{
+  "artifact_type": "SUCCESSOR_RESPONSE_CONTRACT",
+  "task_id": "IGNITION-20260921-198",
+  "status": "FUTURE_TEMPLATE_NOT_RUN",
+  "response_path": "successor-response.jsonl",
+  "format": "newline-delimited JSON",
+  "record_count": 3,
+  "case_order": "the packet manifest order",
+  "record_schema_ref": "../common/output-schema-ref.json",
+  "required_record_boundary": "observations, interpretations, uncertainties, additional evidence, and claim ceiling remain separate",
+  "forbidden_claims": [
+    "causal effect of METHOD_TRACE",
+    "general cognitive inheritance",
+    "R1 authorization",
+    "cross-model transfer",
+    "canonical promotion"
+  ],
+  "commit_or_push": "PROHIBITED_FOR_FUTURE_SUCCESSOR_CONVERSATION",
+  "successor_status": "NOT_RUN"
+}

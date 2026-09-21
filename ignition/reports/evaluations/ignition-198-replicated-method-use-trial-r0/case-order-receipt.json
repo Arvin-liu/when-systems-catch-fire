@@ -1,0 +1,31 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "step": "Step04",
+  "algorithm": "sort SHA256(seed + '|' + case_id) ascending",
+  "generated_before_successor_or_evaluator": true,
+  "orders": {
+    "A": {
+      "seed": "IGNITION-20260921-198:A-order:v1",
+      "case_order": ["REPL-CASE-03", "REPL-CASE-01", "REPL-CASE-02"],
+      "sort_keys": {
+        "REPL-CASE-03": "756d58d62f47b1bffedc32aa9e86009fd3994ded28a8b0b5e1e7388ba3960e94",
+        "REPL-CASE-01": "ba3f6902160b86e5b76e5068a362bcc93a27df28255f54e53d9e53bd8629bf3c",
+        "REPL-CASE-02": "bab95e5969a7e3efb6049a7cdf4f0c4d13600160c639e1f1ffc7eb361b27fad2"
+      }
+    },
+    "B": {
+      "seed": "IGNITION-20260921-198:B-order:v1",
+      "case_order": ["REPL-CASE-01", "REPL-CASE-02", "REPL-CASE-03"],
+      "sort_keys": {
+        "REPL-CASE-01": "80eaced5c0453b7be997da22f5fe0e557a69d4fba04ac0f642b96615a7fb89d3",
+        "REPL-CASE-02": "c2e4da59e3b61ee915447291ea0d91f641e2978be7a8f5e072358241a777ca38",
+        "REPL-CASE-03": "e139983a5b0bf3e76e54600b3e9ccab1e61b6a034626d409b4a7c86a78e8286f"
+      }
+    }
+  },
+  "orders_differ": true,
+  "adaptive_reordering": false,
+  "conversation_is_replicate_unit": true,
+  "within_conversation_cases_are_independent_samples": false
+}

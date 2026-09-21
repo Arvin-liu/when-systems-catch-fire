@@ -1,0 +1,21 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "case_id": "REPL-CASE-03",
+  "synthetic": true,
+  "personal_data": false,
+  "external_knowledge_required": false,
+  "source_path": "cases/REPL-CASE-03/facts.md",
+  "source_sha256": "b7ff2806fe4321a6f406d7f3e708607a712dbca091144818b1fdb88034eadfde",
+  "provenance_scope": "task-local synthetic facts and record gaps",
+  "construction_note": "Constructed as a primary/shadow cell structure with repeated fold observations and a separated read channel.",
+  "design_constraints_satisfied": [
+    "distinct primary-and-shadow structure",
+    "repeated bounded observation is available",
+    "read-channel boundary remains explicit"
+  ],
+  "evaluator_labels_included": false,
+  "method_answer_embedded_in_facts": false,
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

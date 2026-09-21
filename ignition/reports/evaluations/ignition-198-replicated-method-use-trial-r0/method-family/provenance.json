@@ -1,0 +1,18 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "method_family_id": "bounded-replay-contrast-r0",
+  "source_path": "method-family/method-family-history.md",
+  "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+  "synthetic": true,
+  "personal_data": false,
+  "external_knowledge_required": false,
+  "schema_reused": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/schema/method-use-trace-r0.schema.json",
+  "validator_reused": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/tools/validate_method_use_trace_r0.py",
+  "direct_case_answers_embedded": false,
+  "evaluator_labels_included": false,
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

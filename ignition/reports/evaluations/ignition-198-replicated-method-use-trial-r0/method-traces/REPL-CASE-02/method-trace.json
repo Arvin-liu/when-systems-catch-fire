@@ -1,0 +1,143 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "replicated-repl-case-02-method-use-r0",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#candidate",
+      "summary": "A bounded replay contrast holds a synthetic input constant and compares a local discriminating observation.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": ["synthetic method-family history pinned for Task198"],
+        "open_questions": ["replicated execution has not run"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "candidate_ref": "method:bounded-replay-contrast-r0"
+    },
+    {
+      "segment_id": "selection",
+      "segment_kind": "SELECTION_RATIONALE",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#repl-case-02",
+      "summary": "The spool context permits a bounded batch replay while preserving the acknowledgement boundary.",
+      "uncertainty": {
+        "status": "HYPOTHESIS",
+        "basis": ["selection rule in the synthetic method-family history"],
+        "open_questions": ["whether the acknowledgement boundary can be observed"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "selected_candidate_ref": "method:bounded-replay-contrast-r0",
+      "rationale": "Batch B3 is repeatable and the watchdog supplies a bounded window for locating the acknowledgement divergence.",
+      "alternatives_considered": ["single delivery snapshot", "acknowledgement explanation without a bounded replay"]
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#repl-case-02",
+      "summary": "The context is a synthetic queue with an acknowledgement register and a four-tick watchdog.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": ["case facts record delivery, register, and watchdog states"],
+        "open_questions": ["where the missing acknowledgement event was blocked"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "context_ref": "selection",
+      "constraints": ["synthetic case facts only", "hold batch B3 constant", "retain watchdog expiry as failure", "no causal attribution"]
+    },
+    {
+      "segment_id": "use",
+      "segment_kind": "METHOD_USE_EVENT",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#repl-case-02",
+      "summary": "The replay probe is applied to payload delivery, acknowledgement, and watchdog state in one bounded use event.",
+      "uncertainty": {
+        "status": "HYPOTHESIS",
+        "basis": ["application constraint in the synthetic method-family history"],
+        "open_questions": ["whether the failure occurs before or after register write"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "used_candidate_ref": "method:bounded-replay-contrast-r0",
+      "input_ref": "context",
+      "expected_observation": "A bounded replay with an event-boundary read would distinguish an acknowledgement pre-write block from a post-write read failure.",
+      "use_order": 1
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-198/REPL-CASE-02/facts",
+      "source_sha256": "f3e22b89dc238794083118552f0b5a2b8c490fc960298ddf55e1a1c7f720cdab",
+      "exact_locator": "cases/REPL-CASE-02/facts.md#recorded-observations",
+      "summary": "The second batch replay reaches watchdog expiry without a recorded acknowledgement.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": ["run two records delivery, empty register, and watchdog expiry"],
+        "open_questions": ["the event boundary of the missing acknowledgement"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "use_segment_ref": "use",
+      "outcome_type": "FAILURE",
+      "observed_outcome": "Run two delivered three payload items but the acknowledgement register stayed empty and the watchdog expired at tick 4.",
+      "confounders": ["unmeasured register-write boundary", "no later acknowledgement event"],
+      "causal_attribution": "NOT_ESTABLISHED"
+    },
+    {
+      "segment_id": "revision",
+      "segment_kind": "REVISION_OR_DISPOSITION",
+      "source_ref": "synthetic://ignition-198/method-family/history",
+      "source_sha256": "f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe",
+      "exact_locator": "method-family-history.md#revision-boundary",
+      "summary": "The spool application retains the failure and requires a revised event-boundary observation.",
+      "uncertainty": {
+        "status": "INCONCLUSIVE",
+        "basis": ["the bounded run failed before the discriminating observation"],
+        "open_questions": ["future capture of the acknowledgement boundary"]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": ["bounded synthetic method-use reconstruction and application design"],
+        "forbidden_inferences": ["causal method effect", "capability", "general cognitive inheritance", "R1 authorization", "canonical promotion"]
+      },
+      "revision_type": "REVISE",
+      "revision_rationale": "The watchdog failure is retained and the application needs a direct event-boundary measurement before stronger interpretation.",
+      "disposition": "REVISE",
+      "target_candidate_ref": "method:bounded-replay-contrast-r0",
+      "rollback_ref": null
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

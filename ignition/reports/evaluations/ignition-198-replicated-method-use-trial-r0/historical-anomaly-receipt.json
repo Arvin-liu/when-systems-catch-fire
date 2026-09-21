@@ -1,0 +1,43 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "step": "Step01",
+  "fixed_status": "TASK190_TRANSFER_HASH_ANOMALY_HISTORICAL_ONLY",
+  "source_task": "IGNITION-20260920-190",
+  "disclosing_task": "IGNITION-20260921-197",
+  "historical_artifact": {
+    "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-manifest.json",
+    "artifact_sha256": "7d03abd21f969e75737848e6f3ca21516f7af59f29321289277fb97a50594d22",
+    "case_id": "TRANSFER-01",
+    "declared_case_source_sha256": "86a6c180fc6f2d7b3eba827b6192294131132628b043864b1dfcf03515e18c3b",
+    "actual_exact_base_case_source_sha256": "d84b69036c76553e066a04f035b2f1208d10ee092da04194df34cddfb4c1e466",
+    "case_source_path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-source.md",
+    "case_source_artifact_sha256": "d84b69036c76553e066a04f035b2f1208d10ee092da04194df34cddfb4c1e466"
+  },
+  "disposition": {
+    "status": "RETAINED_AND_DISCLOSED",
+    "historical_artifact": true,
+    "retroactive_mutation": "PROHIBITED",
+    "inheritance_evidence_invalidation_beyond_disclosed_scope": "NONE",
+    "old_evidence_repaired": false,
+    "new_experiment_dependency": "MUST_NOT_REUSE_TRANSFER_01_AS_A_NEW_CASE"
+  },
+  "new_experiment_hash_rule": {
+    "requirement": "Compute every manifest and source hash directly from final committed bytes.",
+    "source_manifest_equality": "MUST_HOLD",
+    "provenance_manifest_equality": "MUST_HOLD",
+    "mismatch_action": "HARD_FAIL_BEFORE_SUCCESSOR_OR_EVALUATOR",
+    "task198_case_ids": [
+      "REPL-CASE-01",
+      "REPL-CASE-02",
+      "REPL-CASE-03"
+    ]
+  },
+  "authority_boundary": {
+    "successor_status": "NOT_RUN",
+    "evaluator_status": "NOT_RUN",
+    "cross_model_transfer": "NOT_RUN",
+    "canonical_claim_ids": [],
+    "canonical_promotion": "NONE"
+  }
+}
