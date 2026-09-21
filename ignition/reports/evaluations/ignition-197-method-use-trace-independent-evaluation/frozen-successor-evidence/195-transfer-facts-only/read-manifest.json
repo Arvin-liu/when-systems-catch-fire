@@ -1,0 +1,46 @@
+{
+  "manifest_version": 1,
+  "artifact_type": "READ_MANIFEST",
+  "task_id": "IGNITION-20260921-195",
+  "transfer_case_id": "TRANSFER-01",
+  "condition_id": "FACTS_ONLY",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "worktree_path": "/Users/zhiyuan/Documents/Codex/2026-09-21/github-plugin-github-openai-curated-remote-6",
+  "branch": "work/IGNITION-20260921-195-transfer-facts-only",
+  "read_scope": "Exactly the two listed experiment inputs; all other experiment and evaluation inputs excluded.",
+  "allowed_inputs": [
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-source.md",
+      "read": true,
+      "read_mode": "git show HEAD:<path>",
+      "sha256": "d84b69036c76553e066a04f035b2f1208d10ee092da04194df34cddfb4c1e466"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/facts-only-condition.json",
+      "read": true,
+      "read_mode": "git show HEAD:<path>",
+      "sha256": "4deb863904ee4dadbb55e7a2e8da064cfea2286446b4eaa714d5d51a42a1bd55"
+    }
+  ],
+  "not_read": [
+    "method-trace-condition",
+    "ablation",
+    "fixtures",
+    "reconstruction",
+    "evaluator-sealed",
+    "other experimental conditions",
+    "Task185/186/189 reports",
+    "old Successor/Evaluator output"
+  ],
+  "controls": {
+    "repo_wide_search": false,
+    "web_search": false,
+    "external_research": false,
+    "self_evaluation": false,
+    "tracked_input_mutation": false,
+    "commit": false,
+    "push": false,
+    "pull_request": false,
+    "canonical_promotion": false
+  }
+}

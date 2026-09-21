@@ -1,0 +1,39 @@
+{
+  "artifact_type": "SUCCESSOR_READ_MANIFEST",
+  "task_id": "IGNITION-20260921-194",
+  "base_commit": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "branch": "work/IGNITION-20260921-194-ablation-broken-trace",
+  "read_mode": "READ_ONLY_ALLOWLIST",
+  "observed_reads": [
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/broken-method-trace-control.json",
+      "sha256": "31003a0f1b66e369d19c217b6f242106484f5721412e9f936a109ebfded0bfb8",
+      "role": "condition control",
+      "read_only": true
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/negative-a-unlinked-candidate-outcome.json",
+      "sha256": "a0b0c0f69157d93727385306b1e2b3bbb383f88a657a32cd4fb3815e7d66dd38",
+      "role": "allowed negative fixture",
+      "read_only": true
+    }
+  ],
+  "forbidden_surfaces_not_read": [
+    "FACTS_ONLY",
+    "complete METHOD_TRACE",
+    "positive fixtures",
+    "transfer",
+    "reconstruction",
+    "evaluator-sealed",
+    "Task185/186/189 reports",
+    "old Successor/Evaluator output"
+  ],
+  "repo_wide_search": "NOT_RUN",
+  "self_evaluation": "NOT_RUN",
+  "tracked_inputs_modified": false,
+  "local_outputs": [
+    "ignition/reports/evaluations/local-successor-trials/ignition-194-ablation-broken-trace/successor-response.json",
+    "ignition/reports/evaluations/local-successor-trials/ignition-194-ablation-broken-trace/read-manifest.json",
+    "ignition/reports/evaluations/local-successor-trials/ignition-194-ablation-broken-trace/freeze-sha256.txt"
+  ]
+}

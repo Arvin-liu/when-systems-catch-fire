@@ -1,0 +1,76 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-195",
+  "transfer_case_id": "TRANSFER-01",
+  "condition_id": "FACTS_ONLY",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "observations": [
+    {
+      "id": "O1",
+      "statement": "At checkpoint P0, channel left=6 and channel right=6.",
+      "evidence": "case-source.md"
+    },
+    {
+      "id": "O2",
+      "statement": "After gate alpha, channel left=6 and channel right=4.",
+      "evidence": "case-source.md"
+    },
+    {
+      "id": "O3",
+      "statement": "A replay using the same recorded input at gate alpha reports left=6 and right=6.",
+      "evidence": "case-source.md"
+    },
+    {
+      "id": "O4",
+      "statement": "At gate beta, the right-channel reading is missing.",
+      "evidence": "case-source.md"
+    },
+    {
+      "id": "O5",
+      "statement": "No timing, operator, device, or causal explanation is supplied.",
+      "evidence": "case-source.md"
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "I1",
+      "statement": "The direct post-alpha reading and the replay-at-alpha reading disagree on the right channel while agreeing on the left channel.",
+      "status": "interpretation_only"
+    },
+    {
+      "id": "I2",
+      "statement": "The right-channel discrepancy is an unresolved observation; the supplied facts do not identify its cause or establish a causal mechanism.",
+      "status": "no_causal_claim"
+    },
+    {
+      "id": "I3",
+      "statement": "Gate beta cannot be assessed because its right-channel reading is missing.",
+      "status": "gate_beta_missing_reading"
+    }
+  ],
+  "proposed_next_test_or_evidence": {
+    "test_or_evidence": "Repeat the gate-alpha observation and the replay using the same recorded input with the run context documented, then obtain a complete right-channel reading at gate beta.",
+    "discriminating_observation": "Whether the right-channel discrepancy recurs under documented matched context, and whether gate beta yields a valid right-channel reading.",
+    "evidence_needed": [
+      "Raw left- and right-channel readings at P0, after gate alpha, during replay at gate alpha, and at gate beta",
+      "Timing and run-boundary records for the direct and replay observations",
+      "Operator, device, and relevant acquisition/configuration metadata",
+      "Provenance and identity of the recorded input used for replay",
+      "The missing gate-beta right-channel reading or an explicit measurement failure record"
+    ],
+    "method_boundary": "No method history is available; no inherited method name, procedure, or expected answer is selected or invented."
+  },
+  "unknowns": [
+    "The gate-beta right-channel value and whether the missing value reflects a measurement failure or an unavailable record",
+    "Why the direct and replay right-channel readings differ",
+    "Whether timing, operator, device, or acquisition context differed between direct and replay observations",
+    "Whether the recorded input and replay context are sufficiently comparable",
+    "Any causal mechanism linking the observed values"
+  ],
+  "method_source_available": false,
+  "method_selected": null,
+  "claim_ceiling": "Facts-only bounded observational reasoning. No inherited method or procedure, causal mechanism, general cognitive inheritance, R1 readiness, or evaluator conclusion is claimed.",
+  "gate_beta_right_channel_reading": "MISSING",
+  "self_evaluation": "NOT_RUN",
+  "canonical_promotion": "NONE"
+}

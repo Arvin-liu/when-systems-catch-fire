@@ -1,0 +1,98 @@
+{
+  "artifact_type": "LOCAL_SUCCESSOR_RESPONSE",
+  "task_id": "IGNITION-20260921-194",
+  "condition_id": "BROKEN_METHOD_TRACE_CONTROL",
+  "condition_label": "BROKEN_METHOD_TRACE_CONTROL",
+  "base_commit": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "branch": "work/IGNITION-20260921-194-ablation-broken-trace",
+  "supported_links": [
+    {
+      "link_id": "condition-to-allowed-fixture",
+      "from": "condition:BROKEN_METHOD_TRACE_CONTROL",
+      "to": "trace:negative-a-unlinked-candidate-outcome",
+      "status": "SUPPORTED",
+      "basis": "The ablation control explicitly names the allowed fixture through trace_ref."
+    },
+    {
+      "link_id": "candidate-to-source",
+      "from": "segment:candidate",
+      "to": "synthetic://ignition-190/negative-a#candidate",
+      "status": "SUPPORTED",
+      "source_sha256": "1d1a56d3de36c27ec8279d3fd15845b351048c7d93eb6abbed413c629b7fe521",
+      "basis": "The candidate segment supplies source_ref, source_sha256, and exact_locator."
+    },
+    {
+      "link_id": "outcome-to-source",
+      "from": "segment:outcome",
+      "to": "synthetic://ignition-190/negative-a#outcome",
+      "status": "SUPPORTED",
+      "source_sha256": "1d1a56d3de36c27ec8279d3fd15845b351048c7d93eb6abbed413c629b7fe521",
+      "basis": "The outcome segment supplies source_ref, source_sha256, and exact_locator."
+    }
+  ],
+  "missing_links": [
+    {
+      "link_type": "selection",
+      "status": "MISSING",
+      "from": "segment:candidate",
+      "to": "selection_event",
+      "basis": "The fixture states that no selection link is recorded."
+    },
+    {
+      "link_type": "use",
+      "status": "MISSING",
+      "from": "segment:candidate",
+      "to": "segment:outcome",
+      "basis": "The outcome has use_segment_ref=missing-use and is narrated without a bound use event."
+    }
+  ],
+  "unsupported_inferences": [
+    "The candidate was selected.",
+    "The candidate was used.",
+    "The candidate caused the observed outcome.",
+    "A complete method-use trace exists.",
+    "The candidate demonstrates method capability.",
+    "General cognitive inheritance is established.",
+    "R1 authorization is present."
+  ],
+  "false_positive_risks": [
+    "Treating the co-presence of a named candidate and an observed outcome as a use or causal chain.",
+    "Treating use_segment_ref=missing-use as a bound use event instead of an explicit missing link.",
+    "Treating shared source provenance as evidence that the candidate produced the outcome.",
+    "Filling the absent selection or use history with a plausible reconstruction.",
+    "Promoting an observation-only synthetic trace artifact into capability or inheritance evidence."
+  ],
+  "source_refs": [
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/broken-method-trace-control.json",
+      "sha256": "31003a0f1b66e369d19c217b6f242106484f5721412e9f936a109ebfded0bfb8",
+      "role": "condition control"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/negative-a-unlinked-candidate-outcome.json",
+      "sha256": "a0b0c0f69157d93727385306b1e2b3bbb383f88a657a32cd4fb3815e7d66dd38",
+      "role": "allowed negative fixture"
+    }
+  ],
+  "unknowns": [
+    "Whether a future independent reconstruction can identify a selection event.",
+    "Whether a future independent reconstruction can identify a use event.",
+    "Any binding between the candidate and the outcome beyond their separate source-backed observations.",
+    "The unrecorded context listed as a confounder.",
+    "Any causal attribution for the observed outcome."
+  ],
+  "claim_ceiling": {
+    "authority_status": "RESEARCH_ONLY",
+    "ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+    "allowed_claims": [
+      "synthetic method-use structural lineage only"
+    ],
+    "forbidden_inferences": [
+      "method capability",
+      "causation",
+      "general cognitive inheritance",
+      "R1 authorization"
+    ]
+  },
+  "self_evaluation": "NOT_RUN"
+}

@@ -1,0 +1,11 @@
+IGNITION-20260921-194
+condition_id=BROKEN_METHOD_TRACE_CONTROL
+base_commit=65862bf1f5a4e6880ac16698fc059d522350457b
+branch=work/IGNITION-20260921-194-ablation-broken-trace
+
+input/ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/broken-method-trace-control.json 31003a0f1b66e369d19c217b6f242106484f5721412e9f936a109ebfded0bfb8
+input/ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/negative-a-unlinked-candidate-outcome.json a0b0c0f69157d93727385306b1e2b3bbb383f88a657a32cd4fb3815e7d66dd38
+output/successor-response.json 62bea05ee46b83e80086c74f1a9d684713bd98450e4559cfc877af64634a0f9c
+output/read-manifest.json 94f556b00163b0df8c93b412e59ddfc1dd5066787e84956082c03307e10d9913
+
+NO_COMMIT NO_PUSH NO_PR SELF_EVALUATION_NOT_RUN

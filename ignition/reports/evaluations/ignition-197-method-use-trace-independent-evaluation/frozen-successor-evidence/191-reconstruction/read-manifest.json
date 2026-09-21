@@ -1,0 +1,47 @@
+{
+  "artifact_type": "LOCAL_SUCCESSOR_READ_MANIFEST",
+  "task_id": "IGNITION-20260921-191",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "branch": "work/IGNITION-20260921-191-method-use-reconstruction-successor",
+  "worktree_path": "/tmp/ignition-191-method-use-reconstruction-successor-worktree",
+  "allowed_input_root": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/reconstruction",
+  "allowed_input_reads": [
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/reconstruction/packet-manifest.json",
+      "sha256": "8f751989f64564a4d5c20880e4a3b6ba28626399106f285eecba7f697578356b",
+      "read_from": "exact base HEAD",
+      "content_read": true
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/reconstruction/reconstruction-task.md",
+      "sha256": "b3d0e491cf9e629d5bbc3dbe93863e13402fcc87b6045ba70ceab5e6b210f9eb",
+      "read_from": "exact base HEAD",
+      "content_read": true
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/reconstruction/successor-visible-packet.json",
+      "sha256": "619a4e926c8e6e01ba85adbcf33de98e8fb3ce4db4357fc91e64004f6dadd35a",
+      "read_from": "exact base HEAD",
+      "content_read": true
+    }
+  ],
+  "prohibited_path_content_read_counts": {
+    "evaluator-sealed/**": 0,
+    "ablation/**": 0,
+    "transfer/**": 0,
+    "Task185/**": 0,
+    "Task186/**": 0,
+    "Task189/**": 0,
+    "historical Successor/Evaluator outputs": 0
+  },
+  "repo_wide_search": "NOT_PERFORMED",
+  "git_grep": "NOT_PERFORMED",
+  "web_search": "NOT_PERFORMED",
+  "formal_tracked_inputs_modified": false,
+  "commit": "NOT_CREATED",
+  "push": "NOT_PERFORMED",
+  "pull_request": "NOT_CREATED",
+  "self_evaluation": "NOT_RUN",
+  "output_directory": "ignition/reports/evaluations/local-successor-trials/ignition-191-reconstruction",
+  "output_freeze_required": true
+}

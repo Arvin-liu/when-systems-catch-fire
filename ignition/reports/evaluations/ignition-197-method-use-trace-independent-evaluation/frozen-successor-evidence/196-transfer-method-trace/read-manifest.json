@@ -1,0 +1,61 @@
+{
+  "task_id": "IGNITION-20260921-196",
+  "transfer_case_id": "TRANSFER-01",
+  "condition_id": "METHOD_TRACE",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "worktree": {
+    "path": "/Users/zhiyuan/Documents/Codex/2026-09-21/github-plugin-github-openai-curated-remote-7",
+    "branch": "work/IGNITION-20260921-196-transfer-method-trace",
+    "head": "65862bf1f5a4e6880ac16698fc059d522350457b",
+    "sparse_read_boundary": "Only the two allowlisted Formal input paths below were materialized and read."
+  },
+  "control_method": {
+    "repository": "Arvin-liu/1111",
+    "path": "agent-commands/IGNITION-20260921-196-TRANSFER-METHOD.md",
+    "ref": "3e48bc9ff3fc24782a2e5e59b5f93a362c4951e6",
+    "git_blob_sha": "e11635370d596a295b562e27ecc6fbddfa407c01",
+    "read_as": "governing command"
+  },
+  "allowed_reads": [
+    {
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-source.md",
+      "ref": "65862bf1f5a4e6880ac16698fc059d522350457b",
+      "git_blob_sha": "45e869bf72d057c5ab1e49592f6e6b21790cf371",
+      "role": "TRANSFER-01 case source",
+      "status": "READ"
+    },
+    {
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/method-trace-condition.json",
+      "ref": "65862bf1f5a4e6880ac16698fc059d522350457b",
+      "git_blob_sha": "b7f47e44b598fdbebde1294ab59dfdc62ee3f89a",
+      "role": "METHOD_TRACE supplied method history",
+      "status": "READ"
+    }
+  ],
+  "prohibited_reads": [
+    "facts-only-condition",
+    "ablation",
+    "fixtures",
+    "reconstruction",
+    "evaluator-sealed",
+    "Task185/186/189 reports",
+    "old Successor/Evaluator output"
+  ],
+  "read_policy": {
+    "repo_wide_search": "NOT_RUN",
+    "git_grep": "NOT_RUN",
+    "web_search": "NOT_RUN",
+    "self_evaluation": "NOT_RUN",
+    "tracked_inputs_modified": false,
+    "commit": "NONE",
+    "push": "NONE",
+    "pull_request": "NONE"
+  },
+  "freeze_scope": [
+    "successor-response.json",
+    "read-manifest.json",
+    "the two allowlisted input files by their exact-base Git blob SHA"
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "task_id": "IGNITION-20260921-196",
+  "transfer_case_id": "TRANSFER-01",
+  "condition_id": "METHOD_TRACE",
+  "trial_type": "LOCAL_BOUNDED_SUCCESSOR_METHOD_APPLICATION",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "candidate": {
+    "candidate_ref": "method:two-hypothesis-replay-probe-r0",
+    "method_name": "two-hypothesis-replay-probe-r0"
+  },
+  "selection_rationale": {
+    "summary": "The supplied facts contain a changed gate-alpha observation and a replay using the same recorded input. A bounded replay probe is therefore directly relevant: it compares two live explanations while keeping the input fixed, preserves the missing gate-beta reading as unknown, and does not require external knowledge.",
+    "source_bound_rationale": "The supplied method history says to select this probe when an observation changes and replay can separate an input-dependent effect from a readout artifact.",
+    "alternatives_considered": [
+      "single snapshot interpretation",
+      "template explanation without replay"
+    ]
+  },
+  "context_constraints": {
+    "source_facts": [
+      "At checkpoint P0, channel left=6 and channel right=6.",
+      "After gate alpha, channel left=6 and channel right=4.",
+      "A replay using the same recorded input at gate alpha reports left=6 and right=6.",
+      "At gate beta, the right-channel reading is missing.",
+      "No timing, operator, device, or causal explanation is supplied."
+    ],
+    "constraints": [
+      "synthetic-only facts",
+      "replay input must be held constant",
+      "missing readings stay unresolved",
+      "no external causal explanation may be added",
+      "the result is observation-only and research-only"
+    ]
+  },
+  "expected_discriminating_observation": {
+    "probe": "Hold the recorded gate-alpha input constant and compare the original post-alpha reading with the replay reading channel by channel.",
+    "replay_consistent_case": "If the replay reproduced right=4 while left remained 6, the changed right-channel observation would be replay-consistent under this bounded probe.",
+    "non_reproduced_case": "If the replay returned right=6 while the original post-alpha reading was right=4, the right-channel change would not be reproduced by the same recorded input, providing the intended observation-level discrimination from the replay.",
+    "unknown_preservation": "Neither branch establishes causation; an incomplete or missing reading remains unresolved."
+  },
+  "application": {
+    "input": "The supplied gate-alpha observation and its supplied same-recorded-input replay.",
+    "steps": [
+      "Use P0=(left=6,right=6) only as the supplied checkpoint reference.",
+      "Hold the recorded gate-alpha input constant.",
+      "Compare the original after-alpha observation with the replay result separately for left and right.",
+      "Do not fill in or infer the missing gate-beta right-channel reading."
+    ],
+    "comparison": {
+      "original_after_gate_alpha": {
+        "left": 6,
+        "right": 4
+      },
+      "same_recorded_input_replay": {
+        "left": 6,
+        "right": 6
+      },
+      "replay_minus_original": {
+        "left": 0,
+        "right": 2
+      }
+    }
+  },
+  "observed_outcome_or_failure": {
+    "outcome_type": "OBSERVED_OUTCOME_WITH_UNRESOLVED_LIMITATION",
+    "observed_outcome": "The same-input replay preserved left=6 but returned right=6 instead of the original after-alpha right=4. The right-channel change was therefore not reproduced by the supplied replay, while the left channel was replay-consistent.",
+    "bounded_interpretation": "This is a discriminating observation at the comparison/readout level only. It does not identify whether the right-channel difference arose from an input-dependent effect, a readout artifact, timing, instrumentation, or another unprovided state.",
+    "failure_or_limitation": "The gate-beta right-channel reading is missing, so the probe cannot be extended to beta or used to resolve that missing observation.",
+    "confounders": [
+      "synthetic replay timing",
+      "unmeasured instrumentation"
+    ],
+    "causal_attribution": "NOT_ESTABLISHED"
+  },
+  "unknowns": [
+    "Whether the original right=4 was a channel-state change or a readout artifact.",
+    "Whether the supplied replay controlled all state relevant to the right-channel observation beyond the recorded input.",
+    "Timing and ordering details for the original and replay observations.",
+    "Operator, device, and instrumentation details, which are not supplied.",
+    "The right-channel reading at gate beta.",
+    "Independent future reconstruction of the supplied method history."
+  ],
+  "additional_evidence_needed": [
+    "An independently repeated same-input gate-alpha replay with the relevant timing and instrumentation recorded.",
+    "Independent verification of the right-channel readout for the original and replay observations.",
+    "A valid gate-beta right-channel reading before making any beta comparison.",
+    "An independently bounded reconstruction of the method history."
+  ],
+  "revision_or_disposition": {
+    "revision_type": "NO_REVISION",
+    "disposition": "RETAIN_FOR_BOUNDED_REPLAY_ONLY",
+    "rationale": "The supplied method is applicable and produced the intended bounded comparison, but the missing beta reading and listed confounders remain unresolved. This trial does not justify a method revision or any broader claim.",
+    "rollback_ref": null
+  },
+  "source_bound_lineage": {
+    "control_method": {
+      "repository": "Arvin-liu/1111",
+      "path": "agent-commands/IGNITION-20260921-196-TRANSFER-METHOD.md",
+      "ref": "3e48bc9ff3fc24782a2e5e59b5f93a362c4951e6",
+      "git_blob_sha": "e11635370d596a295b562e27ecc6fbddfa407c01"
+    },
+    "formal_base": {
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "ref": "65862bf1f5a4e6880ac16698fc059d522350457b",
+      "local_branch": "work/IGNITION-20260921-196-transfer-method-trace"
+    },
+    "case_source": {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-source.md",
+      "ref": "65862bf1f5a4e6880ac16698fc059d522350457b",
+      "git_blob_sha": "45e869bf72d057c5ab1e49592f6e6b21790cf371",
+      "role": "TRANSFER-01 synthetic facts and future-task boundary"
+    },
+    "method_condition": {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/method-trace-condition.json",
+      "ref": "65862bf1f5a4e6880ac16698fc059d522350457b",
+      "git_blob_sha": "b7f47e44b598fdbebde1294ab59dfdc62ee3f89a",
+      "task_id": "IGNITION-20260920-190",
+      "trace_id": "transfer-method-history-01",
+      "role": "supplied method history, selection rationale, constraints, expected observation, outcome limits, and claim ceiling"
+    },
+    "method_history_segments": [
+      {
+        "segment_id": "candidate",
+        "source_ref": "synthetic://ignition-190/transfer/method-history",
+        "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+        "exact_locator": "synthetic://ignition-190/transfer/method-history#candidate"
+      },
+      {
+        "segment_id": "selection",
+        "source_ref": "synthetic://ignition-190/transfer/method-history",
+        "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+        "exact_locator": "synthetic://ignition-190/transfer/method-history#selection"
+      },
+      {
+        "segment_id": "context",
+        "source_ref": "synthetic://ignition-190/transfer/method-history",
+        "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+        "exact_locator": "synthetic://ignition-190/transfer/method-history#context"
+      },
+      {
+        "segment_id": "use",
+        "source_ref": "synthetic://ignition-190/transfer/method-history",
+        "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+        "exact_locator": "synthetic://ignition-190/transfer/method-history#use"
+      },
+      {
+        "segment_id": "outcome",
+        "source_ref": "synthetic://ignition-190/transfer/method-history",
+        "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+        "exact_locator": "synthetic://ignition-190/transfer/method-history#outcome"
+      },
+      {
+        "segment_id": "revision",
+        "source_ref": "synthetic://ignition-190/transfer/method-history",
+        "source_sha256": "b67080e941e02bc1c6202e7259093f68cdf267b55cfeda7776184a30d7e4ea91",
+        "exact_locator": "synthetic://ignition-190/transfer/method-history#revision"
+      }
+    ],
+    "lineage_statement": "All case facts in this response are bound to case-source.md at the exact base. All method claims and the application boundary are bound to the six listed segments of method-trace-condition.json. No other Formal experimental condition or evaluator-sealed input was read."
+  },
+  "claim_ceiling": {
+    "authority_status": "RESEARCH_ONLY",
+    "ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+    "allowed_claims": [
+      "bounded synthetic method-use reconstruction and application design"
+    ],
+    "forbidden_inferences": [
+      "unique wording requirement",
+      "causation",
+      "capability",
+      "general cognitive inheritance",
+      "R1 authorization"
+    ],
+    "canonical_claim_ids": [],
+    "canonical_promotion": "NONE",
+    "general_cognitive_inheritance": "NOT_ESTABLISHED",
+    "r1_authorization": "NOT_AUTHORIZED",
+    "self_evaluation": "NOT_RUN"
+  },
+  "execution_boundary": {
+    "tracked_inputs_modified": false,
+    "commit": "NONE",
+    "push": "NONE",
+    "pull_request": "NONE",
+    "terminal_marker": "TRANSFER_METHOD_TRACE_SUCCESSOR_COMPLETE"
+  }
+}
