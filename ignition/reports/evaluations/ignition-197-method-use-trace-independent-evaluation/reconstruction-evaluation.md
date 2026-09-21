@@ -1,6 +1,6 @@
 # Step02 — Blind Reconstruction Evaluation
 
-Input freeze: `8b90854dc20a58415dfbf5e0984aa596450db5ea`  
+Input freeze: `8b90854dc20a58415dfbf5e0984aa596450db5ea`
 Successor evidence freeze: `c87ba4d94d04a5ee443b45cfa28eef167dbb01b4`
 
 Overall disposition: `METHOD_USE_RECONSTRUCTION_SUPPORTED`

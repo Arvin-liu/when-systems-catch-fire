@@ -1,0 +1,50 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-197",
+  "step": "Step07",
+  "evaluation_root": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation",
+  "evaluator_authored_typed_evidence": [
+    "evidence-freeze.json",
+    "evaluation-input-freeze.json",
+    "reconstruction-evaluation.jsonl",
+    "ablation-evaluation.json",
+    "transfer-evaluation.json",
+    "negative-control-audit.jsonl",
+    "independent-evaluation-verdict.json"
+  ],
+  "evaluator_authored_projection_docs": [
+    "evidence-freeze.md",
+    "reconstruction-evaluation.md",
+    "ablation-evaluation.md",
+    "transfer-evaluation.md",
+    "negative-control-audit.md",
+    "independent-evaluation-report.md",
+    "evaluation-isolation.md"
+  ],
+  "frozen_source_evidence_root": "frozen-successor-evidence",
+  "frozen_source_evidence_file_count": 18,
+  "path_accounting": {
+    "unexpected_paths": [],
+    "absolute_user_paths_in_evaluator_authored_metadata": false,
+    "successor_source_bytes_modified": false,
+    "protected_task190_inputs_modified": false,
+    "foundation_canonical_paths_modified": false,
+    "current_canonical_paths_modified": false
+  },
+  "semantic_content_unchanged_after_step06": true,
+  "mechanical_format_cleanup_only_after_step06": true,
+  "official_generators_used": [],
+  "canonical_claim_ids": [],
+  "automatic_foundation_function_claims": "EXCLUDED",
+  "automatic_knowledge_canonical": "EXCLUDED",
+  "fire_seeds": "EXCLUDED",
+  "promotion": "NONE",
+  "fixed_point_status": "PENDING_FINAL_EXACT_HEAD_VALIDATION",
+  "claim_ceiling": [
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED_BY_EVALUATOR",
+    "CROSS_MODEL_TRANSFER_NOT_RUN",
+    "OWNER_GPT_ADJUDICATION_NOT_RUN",
+    "NO_CANONICAL_PROMOTION"
+  ]
+}

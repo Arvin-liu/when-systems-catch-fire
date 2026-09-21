@@ -1,6 +1,6 @@
 # Step03 — Ablation Condition Contrast
 
-Input freeze: `8b90854dc20a58415dfbf5e0984aa596450db5ea`  
+Input freeze: `8b90854dc20a58415dfbf5e0984aa596450db5ea`
 Criteria: Task190 sealed `method-use-trace-evaluator-r0`
 
 This is a descriptive contrast across three independent, single, non-randomized, non-repeated executions. It is not a causal ablation result; no effect size, probability, or general superiority is inferred.

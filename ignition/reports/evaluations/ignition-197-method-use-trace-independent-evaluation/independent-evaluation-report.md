@@ -1,8 +1,8 @@
 # Step06 — Independent Method-Use Trace R0 Verdict
 
-Repository: `Arvin-liu/when-systems-catch-fire`  
-Exact base: `65862bf1f5a4e6880ac16698fc059d522350457b`  
-Successor evidence freeze: `c87ba4d94d04a5ee443b45cfa28eef167dbb01b4`  
+Repository: `Arvin-liu/when-systems-catch-fire`
+Exact base: `65862bf1f5a4e6880ac16698fc059d522350457b`
+Successor evidence freeze: `c87ba4d94d04a5ee443b45cfa28eef167dbb01b4`
 Evaluation input freeze: `8b90854dc20a58415dfbf5e0984aa596450db5ea`
 
 ## Verdicts
@@ -22,10 +22,10 @@ Evidence validity is clean at the protocol boundary: six bundles are frozen, cop
 
 ## Fixed ceiling
 
-`GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED`  
-`R1_NOT_AUTHORIZED_BY_EVALUATOR`  
-`CROSS_MODEL_TRANSFER_NOT_RUN`  
-`OWNER_GPT_ADJUDICATION_NOT_RUN`  
+`GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED`
+`R1_NOT_AUTHORIZED_BY_EVALUATOR`
+`CROSS_MODEL_TRANSFER_NOT_RUN`
+`OWNER_GPT_ADJUDICATION_NOT_RUN`
 `NO_CANONICAL_PROMOTION`
 
 No Owner/GPT adjudication, external MetaRSI integration, Model-RSI, training, or canonical claim promotion was run or authorized. This PR remains Open, Draft, and unmerged.
