@@ -1,0 +1,97 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE_FREEZE",
+  "task_id": "IGNITION-20260921-197",
+  "repository": "Arvin-liu/when-systems-catch-fire",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "freeze_checkpoint": "SUCCESSOR_EVIDENCE_FREEZE_CHECKPOINT",
+  "source_copy_byte_equality": true,
+  "no_absolute_user_path_in_evaluator_authored_artifacts": true,
+  "trials": [
+    {
+      "task_id": "IGNITION-20260921-191",
+      "branch": "work/IGNITION-20260921-191-method-use-reconstruction-successor",
+      "source_bundle_path": "ignition/reports/evaluations/local-successor-trials/ignition-191-reconstruction",
+      "destination_bundle_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/frozen-successor-evidence/191-reconstruction",
+      "files": {
+        "successor-response.json": "3716157409ad4cd0f7108c33ac9f019fd9f4e9be8c076ecc7fa115a54adc4316",
+        "read-manifest.json": "cb633a9c5359d37441e5a18345e75016ef2a74da9030f9d3e6ef77cb31d34016",
+        "freeze-sha256.txt": "96f9ba8038f1d11c455771a801d89808c5d7cf81e2d67ff7b980e40071dfc55f"
+      },
+      "freeze_verification": "TRIAL_EVIDENCE_FROZEN",
+      "read_manifest_boundary": "CLEAN",
+      "successor_commit_push": false
+    },
+    {
+      "task_id": "IGNITION-20260921-192",
+      "branch": "work/IGNITION-20260921-192-ablation-facts-only",
+      "source_bundle_path": "ignition/reports/evaluations/local-successor-trials/ignition-192-ablation-facts-only",
+      "destination_bundle_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/frozen-successor-evidence/192-ablation-facts-only",
+      "files": {
+        "successor-response.json": "ed7470740eeb3603a57fb4a347580a6f97ae8f8909db6fedc09259917c91a023",
+        "read-manifest.json": "8afed8f5ff5f82a84424fe3d18bd339f82aba95d341c5847e2933bb3ee6834cb",
+        "freeze-sha256.txt": "46c64bb1082e0fc3067306fd6fe6fd77e2432ab9ee94aed61fbffebc0eb719aa"
+      },
+      "freeze_verification": "TRIAL_EVIDENCE_FROZEN",
+      "read_manifest_boundary": "CLEAN",
+      "successor_commit_push": false
+    },
+    {
+      "task_id": "IGNITION-20260921-193",
+      "branch": "work/IGNITION-20260921-193-ablation-method-trace",
+      "source_bundle_path": "ignition/reports/evaluations/local-successor-trials/ignition-193-ablation-method-trace",
+      "destination_bundle_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/frozen-successor-evidence/193-ablation-method-trace",
+      "files": {
+        "successor-response.json": "9b78b651ffb67f594d77253c5bec3cfa525137b9bd0307f6e208a2ab709e6f6a",
+        "read-manifest.json": "2d7f1a36909df97fc37e87e408000aa862e0f4a5790bf842b00e5f8f64d167ba",
+        "freeze-sha256.txt": "288a4ed54ef789e3cc11e58d6fd0e6c27c290b27affdcd6823d3d7eeb8aba2a4"
+      },
+      "freeze_verification": "TRIAL_EVIDENCE_FROZEN",
+      "read_manifest_boundary": "CLEAN",
+      "successor_commit_push": false
+    },
+    {
+      "task_id": "IGNITION-20260921-194",
+      "branch": "work/IGNITION-20260921-194-ablation-broken-trace",
+      "source_bundle_path": "ignition/reports/evaluations/local-successor-trials/ignition-194-ablation-broken-trace",
+      "destination_bundle_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/frozen-successor-evidence/194-ablation-broken-trace",
+      "files": {
+        "successor-response.json": "62bea05ee46b83e80086c74f1a9d684713bd98450e4559cfc877af64634a0f9c",
+        "read-manifest.json": "94f556b00163b0df8c93b412e59ddfc1dd5066787e84956082c03307e10d9913",
+        "freeze-sha256.txt": "c89cda554cf886ae979d14ac0cf442d71cef9da49594f6b8d70f22dd83b32795"
+      },
+      "freeze_verification": "TRIAL_EVIDENCE_FROZEN",
+      "read_manifest_boundary": "CLEAN",
+      "successor_commit_push": false
+    },
+    {
+      "task_id": "IGNITION-20260921-195",
+      "branch": "work/IGNITION-20260921-195-transfer-facts-only",
+      "source_bundle_path": "ignition/reports/evaluations/local-successor-trials/ignition-195-transfer-facts-only",
+      "destination_bundle_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/frozen-successor-evidence/195-transfer-facts-only",
+      "files": {
+        "successor-response.json": "08f7d8f3f6cfffc56de697d9921fe1ec8f46e4652f0ca8c7143417ef9e911592",
+        "read-manifest.json": "dba3f6a89a018ba7f3261a03410866e8deaf6fe97b8f2caa071ec284ad81c32c",
+        "freeze-sha256.txt": "c0304aa54cad9bfc3ec049ff73bb9bfbc33152426929b6aa0292b4b7eab52c17"
+      },
+      "freeze_verification": "TRIAL_EVIDENCE_FROZEN",
+      "read_manifest_boundary": "CLEAN",
+      "successor_commit_push": false
+    },
+    {
+      "task_id": "IGNITION-20260921-196",
+      "branch": "work/IGNITION-20260921-196-transfer-method-trace",
+      "source_bundle_path": "ignition/reports/evaluations/local-successor-trials/ignition-196-transfer-method-trace",
+      "destination_bundle_path": "ignition/reports/evaluations/ignition-197-method-use-trace-independent-evaluation/frozen-successor-evidence/196-transfer-method-trace",
+      "files": {
+        "successor-response.json": "2ab26d2fc1ff017f850425fc2d60d96ce3c53d1050c580e0f7dabe7cbf148109",
+        "read-manifest.json": "6e22c70db8e8a8902aa2fc91eb5593436c076b53897ae8f374c0bf6f78dae83b",
+        "freeze-sha256.txt": "b41e6c00f4e94159738c23124b12f374a21e35f7e07b5b5363d0e8e0559d38d9"
+      },
+      "freeze_verification": "TRIAL_EVIDENCE_FROZEN",
+      "read_manifest_boundary": "CLEAN",
+      "successor_commit_push": false
+    }
+  ],
+  "all_six_clean_frozen": true,
+  "semantic_evaluation_authorized_after_this_checkpoint": true
+}

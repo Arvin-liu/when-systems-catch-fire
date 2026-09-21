@@ -1,0 +1,131 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-197",
+  "step": "Step01",
+  "repository": "Arvin-liu/when-systems-catch-fire",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "successor_evidence_freeze_checkpoint": "c87ba4d94d04a5ee443b45cfa28eef167dbb01b4",
+  "evaluator_sealed_package": {
+    "README.md": {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/evaluator-sealed/README.md",
+      "sha256": "9413dccf58583fd31186c8eff010e217bdd3584ad5de9377d2d49e0681f995b5"
+    },
+    "criteria.json": {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/evaluator-sealed/criteria.json",
+      "sha256": "4a8b1d98ffeaee39265a3d7786177caf0a47a51d51bb51b75f9695266e6d7085"
+    },
+    "package-manifest.json": {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/evaluator-sealed/package-manifest.json",
+      "sha256": "1688215b3851ad505a3e0c0a3b262751f99e2cba713c8e90e784b4541106f865"
+    }
+  },
+  "experimental_inputs": [
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/reconstruction/packet-manifest.json",
+      "sha256": "8f751989f64564a4d5c20880e4a3b6ba28626399106f285eecba7f697578356b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/reconstruction/reconstruction-task.md",
+      "sha256": "b3d0e491cf9e629d5bbc3dbe93863e13402fcc87b6045ba70ceab5e6b210f9eb"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/reconstruction/successor-visible-packet.json",
+      "sha256": "619a4e926c8e6e01ba85adbcf33de98e8fb3ce4db4357fc91e64004f6dadd35a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/condition-manifest.json",
+      "sha256": "f57fc7aaf775c155ca388f69bf470523b6c8b7ef30880d545773bf57953a1e91"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/ablation-design.md",
+      "sha256": "1dca0aee73eb258af7a797adcf71d1bc39c15cb16a313c23799e8370ca59d432"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/facts-only.json",
+      "sha256": "209ecadcd877bfad692542220d2d5550379ce31fdc33db72c9103920d9bf0642"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/method-trace.json",
+      "sha256": "ad13e187498370d7dc16ff3e5ff9c6259f672fbe577eac7abe7bf7d5ae1db4ca"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/broken-method-trace-control.json",
+      "sha256": "31003a0f1b66e369d19c217b6f242106484f5721412e9f936a109ebfded0bfb8"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/fixture-manifest.json",
+      "sha256": "c855a24a2bcbc856c2dfc17c25bca47226764f82110d2009034f29638c1d26c9"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/synthetic-source-manifest.json",
+      "sha256": "c509d933b04dd17bd9e5504becb1997a7cc9ad5d1a43056d9850388473109de9"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-a-contrastive-probe.json",
+      "sha256": "41aace7a531f171b11994900d396f00a58042d447d84dad82a7a01c59e76ce01"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-b-reversible-checklist-failure.json",
+      "sha256": "14cb7ab0904a3faa60c29048979cbd11d27d28ce9097f2bdbfe8ff6a9fbd77d7"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/negative-a-unlinked-candidate-outcome.json",
+      "sha256": "a0b0c0f69157d93727385306b1e2b3bbb383f88a657a32cd4fb3815e7d66dd38"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/negative-b-narrative-only.json",
+      "sha256": "348684b79a280099cdbf47f3b932934134e9d5c6e4de1f871df165a5089d4f19"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/README.md",
+      "sha256": "64d4bfb1d66cd3abcca8ed2fb9179f59c9d29f278a91a9790dc4d99b546799dc"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-manifest.json",
+      "sha256": "7d03abd21f969e75737848e6f3ca21516f7af59f29321289277fb97a50594d22"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-source.md",
+      "sha256": "d84b69036c76553e066a04f035b2f1208d10ee092da04194df34cddfb4c1e466"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/facts-only-condition.json",
+      "sha256": "4deb863904ee4dadbb55e7a2e8da064cfea2286446b4eaa714d5d51a42a1bd55"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/method-trace-condition.json",
+      "sha256": "cea0854dded66e6f428a93466681777a9d827a34b39e7d9cfa60a737565f8324"
+    }
+  ],
+  "method_use_schema_and_validator": [
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/schema/method-use-trace-r0.schema.json",
+      "sha256": "e53532c8338c76d83b72c79edbb3780800d190ce9338c194c7ba2f03eec69e8b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/method-use-trace-r0.md",
+      "sha256": "50e9ce822a527d29190834302b8ed650e3cefd4388d32e639e0ea187ec76d03c"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/tools/validate_method_use_trace_r0.py",
+      "sha256": "7adcd2c56acb520b26e2f9e126f0ac258ec5f794582e08c0e2c993fcb4f527a5"
+    }
+  ],
+  "validator_checks": {
+    "self_test": "METHOD_USE_TRACE_R0_SELF_TEST_OK",
+    "positive_a": "VALID",
+    "positive_b": "VALID",
+    "negative_a": "EXPECTED_INVALID",
+    "negative_b": "EXPECTED_INVALID"
+  },
+  "known_input_metadata_anomaly": {
+    "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-manifest.json",
+    "declared_case_source_sha256": "86a6c180fc6f2d7b3eba827b6192294131132628b043864b1dfcf03515e18c3b",
+    "actual_case_source_sha256": "d84b69036c76553e066a04f035b2f1208d10ee092da04194df34cddfb4c1e466",
+    "status": "DECLARED_HASH_MISMATCH_RETAINED_AS_FROZEN_INPUT_ANOMALY"
+  },
+  "criteria_read_after_freeze_checkpoint": true,
+  "semantic_evaluation_started": false,
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

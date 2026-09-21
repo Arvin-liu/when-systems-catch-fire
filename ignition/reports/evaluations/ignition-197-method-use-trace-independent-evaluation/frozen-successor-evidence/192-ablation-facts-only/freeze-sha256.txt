@@ -1,0 +1,7 @@
+freeze_scope: ignition-192-ablation-facts-only local outputs
+exact_base: 65862bf1f5a4e6880ac16698fc059d522350457b
+condition_id: FACTS_ONLY
+input/ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/facts-only.json: 209ecadcd877bfad692542220d2d5550379ce31fdc33db72c9103920d9bf0642
+output/successor-response.json: ed7470740eeb3603a57fb4a347580a6f97ae8f8909db6fedc09259917c91a023
+output/read-manifest.json: 8afed8f5ff5f82a84424fe3d18bd339f82aba95d341c5847e2933bb3ee6834cb
+freeze_rule: After this file was written, the three local output files were not modified.

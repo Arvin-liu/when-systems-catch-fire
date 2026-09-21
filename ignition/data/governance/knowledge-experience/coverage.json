@@ -16,6 +16,13 @@
     "reports/evaluations/ignition-189-r0-4-independent-evaluation/independent-evaluation-report.md",
     "reports/evaluations/ignition-189-r0-4-independent-evaluation/negative-control-audit.md",
     "reports/evaluations/ignition-189-r0-4-independent-evaluation/protocol-integrity.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evidence-freeze.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/independent-evaluation-report.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/negative-control-audit.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/reconstruction-evaluation.md",
+    "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/transfer-evaluation.md",
     "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "excluded_timeline_asset_ids": [

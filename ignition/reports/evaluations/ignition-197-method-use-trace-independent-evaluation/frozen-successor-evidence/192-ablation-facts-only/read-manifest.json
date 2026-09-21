@@ -1,0 +1,22 @@
+{
+  "manifest_type": "SUCCESSOR_READ_MANIFEST",
+  "condition_id": "FACTS_ONLY",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "local_branch": "work/IGNITION-20260921-192-ablation-facts-only",
+  "worktree": "/Users/zhiyuan/Documents/Codex/2026-09-21/github-plugin-github-openai-curated-remote-3/formal-successor",
+  "allowed_reads": [
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/facts-only.json",
+      "sha256": "209ecadcd877bfad692542220d2d5550379ce31fdc33db72c9103920d9bf0642",
+      "read_count": 1,
+      "read_scope": "full JSON input",
+      "read_from": "exact base"
+    }
+  ],
+  "other_condition_read_count": 0,
+  "prohibited_paths_read_count": 0,
+  "prohibited_paths_materialized": false,
+  "repo_wide_search_performed": false,
+  "web_search_performed": false,
+  "read_scope_statement": "Only the allowlisted FACTS_ONLY input was read."
+}

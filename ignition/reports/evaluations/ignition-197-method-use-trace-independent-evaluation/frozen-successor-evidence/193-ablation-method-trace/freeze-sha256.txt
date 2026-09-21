@@ -1,0 +1,2 @@
+9b78b651ffb67f594d77253c5bec3cfa525137b9bd0307f6e208a2ab709e6f6a  successor-response.json
+2d7f1a36909df97fc37e87e408000aa862e0f4a5790bf842b00e5f8f64d167ba  read-manifest.json

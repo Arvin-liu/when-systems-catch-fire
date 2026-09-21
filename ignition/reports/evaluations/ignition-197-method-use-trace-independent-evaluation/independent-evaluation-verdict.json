@@ -1,0 +1,58 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-197",
+  "step": "Step06",
+  "repository": "Arvin-liu/when-systems-catch-fire",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "criteria_sha256": "4a8b1d98ffeaee39265a3d7786177caf0a47a51d51bb51b75f9695266e6d7085",
+  "successor_evidence_freeze_checkpoint": "c87ba4d94d04a5ee443b45cfa28eef167dbb01b4",
+  "evaluation_input_freeze_checkpoint": "8b90854dc20a58415dfbf5e0984aa596450db5ea",
+  "reconstruction": {
+    "disposition": "METHOD_USE_RECONSTRUCTION_SUPPORTED",
+    "basis": "All four TRACE cases passed exact-link recovery, missing-link detection, false-positive completion, source fidelity, and uncertainty preservation.",
+    "scope": "Bounded reconstruction of recorded synthetic lineage only."
+  },
+  "bounded_transfer": {
+    "disposition": "BOUNDED_METHOD_TRANSFER_SUPPORTED",
+    "basis": "The METHOD_TRACE condition passed all four sealed transfer criteria; FACTS_ONLY correctly supplied no method selection and retained the missing beta reading.",
+    "residual": "The transfer case manifest contains a disclosed case-source SHA declaration mismatch; exact-base bytes and Git blob lineage remain independently verified."
+  },
+  "ablation": {
+    "finding_type": "DESCRIPTIVE_CONDITION_CONTRAST",
+    "facts_only": "bounded facts/unknowns without method history",
+    "method_trace": "observable source-bound chain and bounded application design",
+    "broken_control": "missing selection/use links preserved",
+    "causal_winner": "NOT_CLAIMED",
+    "single_run_nonrandomized_no_repeats": true,
+    "effect_size": "NOT_COMPUTED",
+    "probability_or_general_superiority": "NOT_COMPUTED"
+  },
+  "evidence_validity": {
+    "six_bundles_frozen": true,
+    "all_read_boundaries_clean": true,
+    "protocol_contamination": false,
+    "invalid_frozen_evidence": false,
+    "successor_commit_or_push": false,
+    "criteria_and_input_freeze_valid": true,
+    "metadata_anomaly_disclosed": true,
+    "source_copy_byte_equality": true
+  },
+  "negative_controls": {
+    "all_ten": "NOT_TRIGGERED",
+    "unresolved": []
+  },
+  "fixed_claim_and_lifecycle_ceiling": [
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED_BY_EVALUATOR",
+    "CROSS_MODEL_TRANSFER_NOT_RUN",
+    "OWNER_GPT_ADJUDICATION_NOT_RUN",
+    "NO_CANONICAL_PROMOTION"
+  ],
+  "canonical_claim_ids": [],
+  "owner_gpt_adjudication": "NOT_RUN",
+  "external_metrsi_integration": "NOT_RUN",
+  "model_rsi": "NOT_RUN",
+  "weight_training": "NOT_RUN",
+  "evaluator_authority": "BOUNDED_EVIDENCE_ONLY",
+  "pr_lifecycle": "OPEN_DRAFT_UNMERGED"
+}

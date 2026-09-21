@@ -1,0 +1,200 @@
+{
+  "artifact_type": "LOCAL_SUCCESSOR_RESPONSE",
+  "task_id": "IGNITION-20260921-193",
+  "condition_id": "METHOD_TRACE",
+  "base": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+    "local_branch": "work/IGNITION-20260921-193-ablation-method-trace"
+  },
+  "exact_source_refs": [
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/method-trace.json",
+      "ref": "65862bf1f5a4e6880ac16698fc059d522350457b",
+      "git_blob_sha": "8dded53d66bb04ea37e9f23e780655b7aa0cf120",
+      "content_sha256": "ad13e187498370d7dc16ff3e5ff9c6259f672fbe577eac7abe7bf7d5ae1db4ca"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-a-contrastive-probe.json",
+      "ref": "65862bf1f5a4e6880ac16698fc059d522350457b",
+      "git_blob_sha": "29ac1e309168e7e2e31b6749d90a2ed3af986be6",
+      "content_sha256": "41aace7a531f171b11994900d396f00a58042d447d84dad82a7a01c59e76ce01"
+    }
+  ],
+  "reconstructed_method_chain": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-a-contrastive-probe.json",
+      "exact_locator": "synthetic://ignition-190/positive-a#candidate",
+      "recorded_method_slot": "method:contrastive-probe-r0",
+      "recorded_observation": "Compare competing explanations with one discriminating probe.",
+      "bounded_interpretation": "This is a source-bound method candidate, not evidence of method capability."
+    },
+    {
+      "segment_id": "selection",
+      "segment_kind": "SELECTION_RATIONALE",
+      "source_ref": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-a-contrastive-probe.json",
+      "exact_locator": "synthetic://ignition-190/positive-a#selection",
+      "recorded_observation": "The candidate was selected because two plausible explanations and a reversible probe were available.",
+      "recorded_rationale": "The candidate directly separates the two stated explanations while preserving unknowns.",
+      "alternatives_considered": [
+        "template replay without a probe",
+        "single observation summary"
+      ],
+      "bounded_interpretation": "Selection is reconstructed as a task-local choice; it does not establish that the method is generally effective."
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-a-contrastive-probe.json",
+      "exact_locator": "synthetic://ignition-190/positive-a#context",
+      "recorded_observation": "The context is a synthetic bounded comparison with limited observations and no external data.",
+      "constraints": [
+        "synthetic-only inputs",
+        "reversible probe",
+        "no causal claim from one observation"
+      ],
+      "bounded_interpretation": "The supplied case is kept within its stated facts; missing values and absent explanations remain unresolved."
+    },
+    {
+      "segment_id": "use",
+      "segment_kind": "METHOD_USE_EVENT",
+      "source_ref": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-a-contrastive-probe.json",
+      "exact_locator": "synthetic://ignition-190/positive-a#use",
+      "recorded_observation": "The selected contrastive probe was applied in one ordered use event.",
+      "use_order": 1,
+      "expected_observation": "The probe should produce an observation that differs under the two candidate explanations.",
+      "bounded_interpretation": "For the supplied case, the probe is specified below as a design only; it was not run and no result is imputed."
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-a-contrastive-probe.json",
+      "exact_locator": "synthetic://ignition-190/positive-a#outcome",
+      "recorded_observation": "The source fixture records a distinguishable synthetic observation while leaving causal attribution unresolved.",
+      "confounders": [
+        "synthetic measurement noise",
+        "single-probe order"
+      ],
+      "causal_attribution": "NOT_ESTABLISHED",
+      "bounded_interpretation": "This source-fixture outcome is not reused as the outcome of the supplied ablation case."
+    },
+    {
+      "segment_id": "revision",
+      "segment_kind": "REVISION_OR_DISPOSITION",
+      "source_ref": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-a-contrastive-probe.json",
+      "exact_locator": "synthetic://ignition-190/positive-a#revision",
+      "recorded_observation": "No method revision was required within the bounded source observation, pending independent reconstruction.",
+      "revision_type": "NO_REVISION",
+      "disposition": "NO_REVISION",
+      "bounded_interpretation": "No revision is inferred for the new case because its probe was not run."
+    }
+  ],
+  "application_to_case": {
+    "case_source_ref": "synthetic://ignition-190/ablation/method-vs-facts-case-01",
+    "case_source_sha256": "37dd16edaaa47a1281acb41a9b37b2938ace85d70bea1be50c672ffcb0d177cc",
+    "recorded_method_slot": "method:contrastive-probe-r0",
+    "application_status": "BOUNDED_DESIGN_ONLY_NOT_RUN",
+    "provisional_competing_explanations": [
+      {
+        "id": "H_signal_linked",
+        "status": "PROVISIONAL_CASE_MODEL_NOT_SOURCE_ASSERTED",
+        "statement": "The review value may track the observed signal value in this small table.",
+        "prediction": "A controlled, otherwise-comparable observation should preserve the signal-review alignment."
+      },
+      {
+        "id": "H_unobserved_factor_or_selection",
+        "status": "PROVISIONAL_CASE_MODEL_NOT_SOURCE_ASSERTED",
+        "statement": "The alignment in the observed rows may instead reflect an unobserved factor, selection, or measurement noise rather than signal alone.",
+        "prediction": "A matched contrast holding signal fixed while varying a pre-specified alternative factor may produce a different review value."
+      }
+    ],
+    "probe": {
+      "probe_type": "REVERSIBLE_CONTRASTIVE_PROBE",
+      "use_order": 1,
+      "design": "Obtain one new paired observation with the same signal value and the same review measurement, varying only a pre-specified alternative factor; do not alter the existing rows and do not impute Row D.",
+      "discriminating_readout": [
+        "If the matched pair preserves the review value, the signal-linked explanation remains compatible but is not proven.",
+        "If the matched pair diverges in review, a signal-only explanation is weakened and the alternative factor remains to be identified.",
+        "Either result is observational and does not establish causation."
+      ],
+      "case_boundary": "The supplied facts do not identify the alternative factor or provide the new paired observation, so this is a probe specification rather than a performed probe."
+    },
+    "chain_mapping": {
+      "candidate": "Use only method:contrastive-probe-r0 as the recorded method slot.",
+      "selection": "Select it because the source trace records competing explanations and a reversible discriminating probe; do not treat that selection as a capability claim.",
+      "context": "Keep the table synthetic, bounded, and limited to the supplied rows; retain the missing review and absent external explanation.",
+      "use": "Specify one ordered reversible paired contrast; no external data, replay, or uncontrolled inference is added.",
+      "outcome": "No application outcome is observed because the probe was not run.",
+      "revision": "No method revision is made; additional evidence is required before disposition."
+    },
+    "actual_probe_outcome": {
+      "status": "NOT_RUN",
+      "observed_outcome": null,
+      "reason": "The allowed inputs contain the case facts and a recorded method trace only; no new probe measurement is supplied."
+    }
+  },
+  "observed_facts": [
+    "The case is synthetic and contains four rows.",
+    "Row A records signal 4 and review 1.",
+    "Row B records signal 4 and review 1.",
+    "Row C records signal 2 and review 0.",
+    "Row D has a missing review value.",
+    "The case supplies no external explanation for the difference.",
+    "The allowed method-trace artifact reports run_status=NOT_RUN, successor_status=NOT_RUN, and evaluator_status=NOT_RUN.",
+    "The source fixture records one ordered contrastive-probe use event and marks causal attribution as NOT_ESTABLISHED."
+  ],
+  "interpretations": [
+    {
+      "statement": "Rows A, B, and C are compatible with a signal-linked explanation, but the supplied table does not distinguish that explanation from an unobserved-factor, selection, or noise explanation.",
+      "status": "INTERPRETATION_NOT_OBSERVATION"
+    },
+    {
+      "statement": "Rows A and B repeat the same signal-review pairing; they do not provide a fixed-signal contrast with a changed alternative factor.",
+      "status": "INTERPRETATION_NOT_OBSERVATION"
+    },
+    {
+      "statement": "The missing review value for Row D prevents completing a comparison and must not be filled by inference.",
+      "status": "BOUNDED_INTERPRETATION"
+    },
+    {
+      "statement": "A reversible contrastive probe is a bounded way to separate provisional explanations, but a single probe would still not establish causation or general method capability.",
+      "status": "BOUNDED_INTERPRETATION"
+    }
+  ],
+  "unknowns": [
+    "The case facts do not name the two competing explanations or the factor that would distinguish them.",
+    "Row D's review value is missing; the supplied facts do not provide a provenance-backed value to use.",
+    "The signal value and other relevant attributes for Row D are not specified in the supplied case sentence.",
+    "No new paired probe observation, replicate, or alternate probe order is supplied.",
+    "The effects of measurement noise and single-probe order remain unresolved.",
+    "No independent reconstruction of the method-use chain is available in the allowed inputs."
+  ],
+  "additional_evidence_needed": [
+    "Pre-register two explicit competing explanations and the prediction each makes for the paired probe.",
+    "Collect one provenance-backed, reversible paired observation that holds signal fixed and varies only the pre-specified alternative factor.",
+    "Record the actual review outcome for the new observation without imputing Row D.",
+    "Repeat the contrast with more than one probe order or additional matched pairs to examine order and measurement-noise confounding.",
+    "Perform an independent reconstruction of the candidate-selection-context-use-outcome-revision links."
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "claim_ceiling_detail": {
+    "authority_status": "RESEARCH_ONLY",
+    "allowed_claims": [
+      "bounded reconstruction of the source-bound method-use chain",
+      "bounded specification of a contrastive application to the supplied synthetic facts"
+    ],
+    "forbidden_inferences": [
+      "method capability",
+      "causation",
+      "general cognitive inheritance",
+      "R1 authorization",
+      "canonical promotion"
+    ]
+  },
+  "self_evaluation": {
+    "status": "NOT_RUN",
+    "reason": "This successor response is not an evaluator output and no self-evaluation was performed."
+  }
+}

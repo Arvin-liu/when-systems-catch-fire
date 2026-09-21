@@ -1,0 +1,9 @@
+TRANSFER-01 METHOD_TRACE local successor freeze
+task_id=IGNITION-20260921-196
+exact_base=65862bf1f5a4e6880ac16698fc059d522350457b
+freeze_scope=successor-response.json read-manifest.json plus the two allowlisted exact-base inputs
+
+d84b69036c76553e066a04f035b2f1208d10ee092da04194df34cddfb4c1e466  ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-source.md
+cea0854dded66e6f428a93466681777a9d827a34b39e7d9cfa60a737565f8324  ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/method-trace-condition.json
+2ab26d2fc1ff017f850425fc2d60d96ce3c53d1050c580e0f7dabe7cbf148109  ignition/reports/evaluations/local-successor-trials/ignition-196-transfer-method-trace/successor-response.json
+6e22c70db8e8a8902aa2fc91eb5593436c076b53897ae8f374c0bf6f78dae83b  ignition/reports/evaluations/local-successor-trials/ignition-196-transfer-method-trace/read-manifest.json

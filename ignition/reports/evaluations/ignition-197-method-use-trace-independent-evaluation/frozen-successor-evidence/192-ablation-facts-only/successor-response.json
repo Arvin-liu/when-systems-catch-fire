@@ -1,0 +1,66 @@
+{
+  "artifact_type": "LOCAL_SUCCESSOR_RESPONSE",
+  "condition_id": "FACTS_ONLY",
+  "condition_label": "FACTS_ONLY",
+  "task_id": "IGNITION-20260920-190",
+  "step": "Step05",
+  "ablation_case_id": "METHOD-ABLATION-01",
+  "input_scope": {
+    "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/facts-only.json",
+    "sha256": "209ecadcd877bfad692542220d2d5550379ce31fdc33db72c9103920d9bf0642",
+    "synthetic": true,
+    "personal_data": false,
+    "source_ref": "synthetic://ignition-190/ablation/method-vs-facts-case-01",
+    "source_sha256": "37dd16edaaa47a1281acb41a9b37b2938ace85d70bea1be50c672ffcb0d177cc"
+  },
+  "observed_facts": [
+    "The supplied case_facts describes a synthetic table with four rows.",
+    "Row A is stated to have signal 4 and review 1.",
+    "Row B is stated to have signal 4 and review 1.",
+    "Row C is stated to have signal 2 and review 0.",
+    "Row D is stated to have a missing review value; no signal value for Row D is stated in the supplied case_facts sentence.",
+    "The supplied case_facts states that the packet supplies no external explanation for the difference.",
+    "The input lists the run, successor, evaluator, provider-comparison, and cross-model-transfer statuses as NOT_RUN.",
+    "The input lists no canonical claim IDs and canonical promotion as NONE.",
+    "The supplied material is limited to case facts, a task prompt, and a source fingerprint."
+  ],
+  "interpretations": [
+    {
+      "statement": "Rows A and B match on the two values explicitly supplied; Row C has lower supplied signal and review values.",
+      "boundary": "This compares the stated values only and does not explain their cause."
+    },
+    {
+      "statement": "Row D cannot be compared on review because its review value is missing; no value is imputed.",
+      "boundary": "The supplied material does not provide enough information to characterize Row D beyond the stated missing review value."
+    },
+    {
+      "statement": "The material supports a bounded description of the supplied records, not a causal or procedural explanation.",
+      "boundary": "This is an interpretation of the stated scope and withheld-material declarations."
+    }
+  ],
+  "unknowns": [
+    "The reason for the differences among rows.",
+    "Whether any method candidate was considered, selected, or used.",
+    "Any selection rationale or method-use event.",
+    "Any outcome or revision chain connecting an input to a result.",
+    "Whether a skill artifact exists or what it contains.",
+    "Whether the repeated values in Rows A and B have any meaning beyond the supplied values.",
+    "Any evaluator conclusion, transfer result, general inheritance result, or R1 readiness."
+  ],
+  "additional_evidence_needed": [
+    "A provenance-preserving copy or read receipt for the underlying table, bound to the supplied source reference and fingerprint, if source fidelity must be established.",
+    "Explicit records of any candidate considered, the selection rationale, and a time-linked use event if a procedural claim is proposed.",
+    "A traceable outcome/revision chain linking the relevant input, action, result, and revisions if a chain claim is proposed.",
+    "The relevant artifact and an independent comparison protocol if a skill-artifact or transfer claim is proposed.",
+    "Pre-registered, independent evaluation evidence with controls and held-out cases if a stronger causal or inheritance claim is proposed."
+  ],
+  "method_history_supported_by_input": false,
+  "missing_method_links": [
+    "method candidate",
+    "selection rationale",
+    "method-use event",
+    "outcome/revision chain",
+    "skill artifact"
+  ],
+  "claim_ceiling": "The input supports only a bounded FACTS_ONLY account of the supplied synthetic row values, the missing review value for Row D, and the stated absence of an external explanation. It does not support a method history, method-use, causal, transfer, method-inheritance, evaluator, canonical-promotion, general cognitive-inheritance, or R1-readiness claim."
+}

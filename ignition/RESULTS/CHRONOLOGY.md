@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 640 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 647 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,97 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step04 — TRANSFER-01 Condition Contrast](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/transfer-evaluation.md)
+
+- **结果 ID：** `HR-5F93FD28B705E6C8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `197-METHOD-USE-TRACE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Step04 — TRANSFER-01 Condition Contrast？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step02 — Blind Reconstruction Evaluation](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/reconstruction-evaluation.md)
+
+- **结果 ID：** `HR-F879D14ABDC1495B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `197-METHOD-USE-TRACE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Step02 — Blind Reconstruction Evaluation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea Successor evidence freeze: c87ba4d94d04a5ee443b45cfa28eef167dbb01b4
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step05 — Negative-Control Audit](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/negative-control-audit.md)
+
+- **结果 ID：** `HR-592ED6CA175524CB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `197-METHOD-USE-TRACE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Step05 — Negative-Control Audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All ten audited controls are NOTTRIGGERED in the frozen Successor outputs.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step06 — Independent Method-Use Trace R0 Verdict](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/independent-evaluation-report.md)
+
+- **结果 ID：** `HR-ACC9D516ADDEF2A9`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `197-METHOD-USE-TRACE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Step06 — Independent Method-Use Trace R0 Verdict？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Repository: Arvin-liu/when-systems-catch-fire Exact base: 65862bf1f5a4e6880ac16698fc059d522350457b Successor evidence freeze: c87ba4d94d04a5ee443b45cfa28eef167dbb01b4 Evaluation input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260921-197 Successor Evidence Freeze](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evidence-freeze.md)
+
+- **结果 ID：** `HR-4135EE13A9F3B4F4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `197-METHOD-USE-TRACE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：IGNITION-20260921-197 Successor Evidence Freeze？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: SUCCESSOREVIDENCEFREEZECHECKPOINT
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step07 — Evaluation Evidence Isolation](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/evaluation-isolation.md)
+
+- **结果 ID：** `HR-13FB358EB5BAED98`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `197-METHOD-USE-TRACE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Step07 — Evaluation Evidence Isolation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All evaluator-authored JSON/JSONL records are typed EVALUATIONEVIDENCE, path-accounted, provenance-visible, and contain zero canonical claim IDs. Markdown files are projections/documentation of those records. The 18 copied Successor files remain byte-preserved source evidence under frozen-success…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Step03 — Ablation Condition Contrast](../reports/evaluations/ignition-197-method-use-trace-independent-evaluation/ablation-evaluation.md)
+
+- **结果 ID：** `HR-10F8CA7FDFD72CE7`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `197-METHOD-USE-TRACE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Step03 — Ablation Condition Contrast？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Input freeze: 8b90854dc20a58415dfbf5e0984aa596450db5ea Criteria: Task190 sealed method-use-trace-evaluator-r0
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

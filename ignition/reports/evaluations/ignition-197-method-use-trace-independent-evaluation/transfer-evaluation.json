@@ -1,0 +1,90 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-197",
+  "step": "Step04",
+  "transfer_case_id": "TRANSFER-01",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "criteria_sha256": "4a8b1d98ffeaee39265a3d7786177caf0a47a51d51bb51b75f9695266e6d7085",
+  "evaluation_input_freeze_checkpoint": "8b90854dc20a58415dfbf5e0984aa596450db5ea",
+  "condition_evaluations": [
+    {
+      "task_id": "IGNITION-20260921-195",
+      "condition_id": "FACTS_ONLY",
+      "criteria": {
+        "T-SOURCE-BOUND-SELECTION": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/195-transfer-facts-only/successor-response.json#/method_source_available and #/method_selected",
+          "finding": "No method history is supplied; the response correctly selects no method."
+        },
+        "T-APPLICATION-LINEAGE": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/195-transfer-facts-only/successor-response.json#/proposed_next_test_or_evidence",
+          "finding": "There is no supplied method slot to apply."
+        },
+        "T-NON-TEMPLATE-REASONING": {
+          "result": "NOT_APPLICABLE",
+          "evidence": "frozen-successor-evidence/195-transfer-facts-only/successor-response.json#/observations and #/interpretations",
+          "finding": "The facts-only condition is not evaluated as method-trace reasoning."
+        },
+        "T-CLAIM-CEILING": {
+          "result": "PASS",
+          "evidence": "frozen-successor-evidence/195-transfer-facts-only/successor-response.json#/claim_ceiling",
+          "finding": "No inherited method, causal mechanism, inheritance, R1, or evaluator conclusion is claimed."
+        }
+      },
+      "facts_only_boundary_checks": {
+        "FACTS_ONLY_NO_INHERITED_METHOD": "PASS",
+        "FACTS_ONLY_GATE_BETA_MISSING_RETAINED": "PASS"
+      },
+      "condition_finding": "The facts-only response reports observations, interpretations, next evidence, and the missing gate-beta right-channel reading without inventing a method."
+    },
+    {
+      "task_id": "IGNITION-20260921-196",
+      "condition_id": "METHOD_TRACE",
+      "criteria": {
+        "T-SOURCE-BOUND-SELECTION": {
+          "result": "PASS",
+          "evidence": "frozen-successor-evidence/196-transfer-method-trace/successor-response.json#/candidate and #/selection_rationale and #/source_bound_lineage/method_history_segments",
+          "finding": "The candidate and selection rationale come from the supplied transfer method history and match the changed gate-alpha observation plus same-input replay context."
+        },
+        "T-APPLICATION-LINEAGE": {
+          "result": "PASS",
+          "evidence": "frozen-successor-evidence/196-transfer-method-trace/successor-response.json#/expected_discriminating_observation and #/application and #/observed_outcome_or_failure and #/additional_evidence_needed",
+          "finding": "The response records expected observation, channel-specific observed comparison, missing beta reading, confounders, and evidence needed."
+        },
+        "T-NON-TEMPLATE-REASONING": {
+          "result": "PASS",
+          "evidence": "frozen-successor-evidence/196-transfer-method-trace/successor-response.json#/application/comparison and #/observed_outcome_or_failure/bounded_interpretation",
+          "finding": "The application is context-specific: it computes left=0/right=2 replay-minus-original, distinguishes replay consistency, and does not merely repeat template wording."
+        },
+        "T-CLAIM-CEILING": {
+          "result": "PASS",
+          "evidence": "frozen-successor-evidence/196-transfer-method-trace/successor-response.json#/claim_ceiling and #/execution_boundary",
+          "finding": "Causation, capability, inheritance, R1, canonical promotion, and self-evaluation are explicitly excluded."
+        }
+      },
+      "condition_finding": "The method-trace response preserves source-bound lineage and applies the replay probe to TRANSFER-01 in a bounded, observation-only way."
+    }
+  ],
+  "input_metadata_anomaly": {
+    "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/transfer-case/case-manifest.json",
+    "declared_case_source_sha256": "86a6c180fc6f2d7b3eba827b6192294131132628b043864b1dfcf03515e18c3b",
+    "actual_exact_base_case_source_sha256": "d84b69036c76553e066a04f035b2f1208d10ee092da04194df34cddfb4c1e466",
+    "disposition": "RETAINED_AND_DISCLOSED",
+    "why_not_contaminating": "The actual case-source bytes and the method-condition blob are independently bound to exact base in the Successor manifests/response lineage; no source substitution was made."
+  },
+  "disposition": "BOUNDED_METHOD_TRANSFER_SUPPORTED",
+  "descriptive_condition_contrast": {
+    "result": "DESCRIPTIVE_CONDITION_CONTRAST",
+    "observed_difference": "FACTS_ONLY reports no method selection and proposes evidence from facts; METHOD_TRACE selects the supplied replay-probe slot and applies it to the same facts with explicit lineage.",
+    "causal_claim": "NOT_PERMITTED",
+    "limitation": "The two conditions are single, non-randomized, non-repeated executions; this contrast cannot show that method trace caused an improvement or establish general transfer."
+  },
+  "claim_ceiling": [
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED_BY_EVALUATOR",
+    "CROSS_MODEL_TRANSFER_NOT_RUN",
+    "OWNER_GPT_ADJUDICATION_NOT_RUN",
+    "NO_CANONICAL_PROMOTION"
+  ]
+}

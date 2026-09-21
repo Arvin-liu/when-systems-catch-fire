@@ -1,0 +1,53 @@
+{
+  "artifact_type": "SUCCESSOR_READ_MANIFEST",
+  "task_id": "IGNITION-20260921-193",
+  "condition_id": "METHOD_TRACE",
+  "repository": "Arvin-liu/when-systems-catch-fire",
+  "exact_base": "65862bf1f5a4e6880ac16698fc059d522350457b",
+  "local_branch": "work/IGNITION-20260921-193-ablation-method-trace",
+  "checkout": {
+    "mode": "BLOB_FILTERED_SPARSE",
+    "sparse_paths": [
+      "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/method-trace.json",
+      "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-a-contrastive-probe.json"
+    ]
+  },
+  "allowed_reads": [
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/method-trace.json",
+      "purpose": "METHOD_TRACE condition task prompt and supplied case facts",
+      "git_blob_sha": "8dded53d66bb04ea37e9f23e780655b7aa0cf120",
+      "content_sha256": "ad13e187498370d7dc16ff3e5ff9c6259f672fbe577eac7abe7bf7d5ae1db4ca"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/fixtures/positive-a-contrastive-probe.json",
+      "purpose": "explicitly referenced positive-a source-bound method-use fixture",
+      "git_blob_sha": "29ac1e309168e7e2e31b6749d90a2ed3af986be6",
+      "content_sha256": "41aace7a531f171b11994900d396f00a58042d447d84dad82a7a01c59e76ce01"
+    }
+  ],
+  "read_scope": {
+    "status": "CLEAN",
+    "only_method_trace_condition_and_explicit_positive_a_fixture_read": true,
+    "repo_wide_search_performed": false,
+    "evaluator_sealed_read": false,
+    "other_experimental_condition_read": false,
+    "self_evaluation_performed": false
+  },
+  "prohibited_material_not_read": [
+    "FACTS_ONLY",
+    "BROKEN control",
+    "transfer",
+    "reconstruction",
+    "evaluator-sealed",
+    "Task185/186/189 reports",
+    "old Successor/Evaluator output"
+  ],
+  "lifecycle": {
+    "commit": false,
+    "push": false,
+    "pull_request": false,
+    "tracked_inputs_modified": false,
+    "freeze_after_creation": true
+  }
+}
