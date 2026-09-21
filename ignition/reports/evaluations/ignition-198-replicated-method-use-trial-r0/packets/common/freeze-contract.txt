@@ -1,0 +1,8 @@
+task_id=IGNITION-20260921-198
+status=FUTURE_TEMPLATE_NOT_RUN
+freeze_file=freeze-sha256.txt
+freeze_scope=successor-response.jsonl read-manifest.json and packet allowlist bytes
+freeze_rule=compute SHA-256 directly from final bytes after the conversation
+freeze_rule=mismatch or unlisted read is a hard stop
+successor_status=NOT_RUN
+evaluator_status=NOT_RUN
