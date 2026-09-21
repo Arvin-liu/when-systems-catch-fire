@@ -1,0 +1,35 @@
+{
+  "artifact_type": "TASK_PATH_ACCOUNTING_AND_FIXED_POINT",
+  "task_id": "IGNITION-20260921-198",
+  "step": "Step09",
+  "source_commit": "76bb9b566bffc8fd92e6a84026a336bd96d8a534",
+  "status": "PATH_ACCOUNTING_FROZEN",
+  "accounting_scope": {
+    "definition": "All paths introduced by the Task198 preparation relative to the exact Task197 source commit, including this Step09 artifact set while it is uncommitted.",
+    "required_prefix": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/",
+    "expected_path_count": 73,
+    "sorted_newline_path_inventory_sha256": "8e1b0979a0d9367c7219efb8c9993b1e8f4e5f59012aceb7b9e6225eac019355",
+    "declared_step09_paths": [
+      "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/path-accounting.json",
+      "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/path-accounting.sha256",
+      "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/step09-path-accounting.md",
+      "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/tools/validate_step09_path_accounting.py"
+    ],
+    "outside_scope_paths": [],
+    "canonical_claim_ids": [],
+    "canonical_promotion_artifacts": [],
+    "foundation_mutations": [],
+    "current_state_mutations": [],
+    "fire_seeds_mutations": [],
+    "model_rsi_or_metarsi_artifacts": [],
+    "weight_training_artifacts": []
+  },
+  "fixed_point": {
+    "pass_1": "Compute the sorted path inventory from the exact source-to-HEAD diff plus only the declared Step09 files present in the working tree; verify count, prefix, and inventory digest.",
+    "pass_2": "After the single Step09 commit, recompute the same inventory from the source-to-HEAD diff; require byte-for-byte equality with pass_1 and a clean working tree.",
+    "ledger_bytes_are_not_self_certifying": "The fixed-point digest covers path names only. The JSON sidecar covers the finalized accounting bytes, avoiding a self-referential content hash.",
+    "unregistered_path": "HARD_STOP"
+  },
+  "canonical_boundary": "Preparation evidence only; no canonical claim, Foundation, Current, Fire Seeds, R1, MetaRSI, Model-RSI, training, or promotion write is authorized.",
+  "terminal_stop": "READY_FOR_REPLICATED_METHOD_USE_SUCCESSOR_TRIALS"
+}
