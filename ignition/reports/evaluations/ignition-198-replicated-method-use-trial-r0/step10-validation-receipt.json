@@ -1,0 +1,96 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "step": "Step10",
+  "pre_step10_head": "1a0db6b42e35dbab097c5045eb5852bc7e57c354",
+  "branch": "work/IGNITION-20260921-198-replicated-method-use-trial-r0",
+  "stacked_draft_base": {
+    "branch": "eval/IGNITION-20260921-197-method-use-trace-independent-evaluation",
+    "head": "76bb9b566bffc8fd92e6a84026a336bd96d8a534"
+  },
+  "command_control": {
+    "repository": "Arvin-liu/1111",
+    "ref": "9eb7c8d2eb34858131daa2a2660516456e1e2497",
+    "path": "agent-commands/IGNITION-20260921-198.md",
+    "sha256": "bd776aed51a24f6aa16c69d6e90ebe4a56dc15c83186f3c85173ed2d8a9cf46e"
+  },
+  "local_checks": {
+    "task198_step02_to_step09_validators": "PASS",
+    "step09_fixed_point_at_pre_step10_head": "PASS",
+    "fresh_full_history_clone": {
+      "head": "1a0db6b42e35dbab097c5045eb5852bc7e57c354",
+      "is_shallow": false,
+      "working_tree": "CLEAN",
+      "git_fsck_full_no_reflogs": "PASS"
+    },
+    "official_repository_path_classification_generator": "PASS",
+    "official_repository_path_classification_check": "PASS",
+    "repository_path_classification_rows": 4885,
+    "task198_r0_4_finalizer_and_step00_regressions": "PASS_19_TESTS",
+    "task188_r0_4_isolation_suite": "24_PASS_2_PREEXISTING_BASELINE_FAILURES",
+    "task188_r0_4_isolation_residuals": [
+      {
+        "test": "test_no_function_nonfunction_knowledge_fire_seed_or_current_mutation",
+        "reason": "The historical test compares against its hard-coded Task188 BASE_HEAD and sees older Knowledge projection changes; Task197-to-Task198 protected-surface diff is empty."
+      },
+      {
+        "test": "test_r0_4_is_absent_from_knowledge_canonical_surfaces",
+        "reason": "The historical test's baseline comparison includes pre-Task198 Knowledge projection files and an older generated projection set; no Task198 path changes those surfaces."
+      }
+    ],
+    "task197_to_task198_protected_surface_diff": [],
+    "git_diff_check": "PASS"
+  },
+  "post_step10_additional_paths": [
+    "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/step-ledger.json",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/step10-preflight.md",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/step10-validation-receipt.json"
+  ],
+  "generated_governance_projection": {
+    "path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "generator": "ignition/tools/foundation/validate_repository_path_classification.py --generate",
+    "classification": "EVALUATION_EVIDENCE for the Task198 report tree",
+    "canonical_claim_ids": [],
+    "promotion": "NONE",
+    "final_byte_sha256": "fcad6415c8e30242461c8437338f454d706bce5faec89943e42b9f3470835a53"
+  },
+  "ci_requirement": {
+    "required_workflows": [
+      "repository-path-accounting-preflight",
+      "foundation-validation",
+      "architecture-pages"
+    ],
+    "checkout_contract": "actions/checkout@v4 with fetch-depth: 0",
+    "foundation_exact_head_contract": "github.event.pull_request.head.sha",
+    "q33_workflow": "NOT_TRIGGERED_BY_TASK198_REPORT_PATHS",
+    "ci_run_ids": [],
+    "status_before_final_push": "PENDING_FINAL_STEP10_HEAD"
+  },
+  "draft_pr": {
+    "number": 230,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/230",
+    "base": "eval/IGNITION-20260921-197-method-use-trace-independent-evaluation",
+    "head": "work/IGNITION-20260921-198-replicated-method-use-trial-r0",
+    "status": "OPEN_DRAFT_UNMERGED",
+    "merge_authority": "NOT_GRANTED"
+  },
+  "fixed_declarations": [
+    "TASK197_BOUNDED_EVIDENCE_ACCEPT",
+    "METHOD_USE_RECONSTRUCTION_BOUNDED_SUPPORTED",
+    "TRANSFER_01_BOUNDED_METHOD_TRANSFER_SUPPORTED",
+    "ABLATION_DESCRIPTIVE_CONDITION_CONTRAST_ONLY",
+    "CAUSAL_METHOD_TRACE_EFFECT_NOT_ESTABLISHED",
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED",
+    "CROSS_MODEL_TRANSFER_DEFERRED",
+    "SUCCESSOR_NOT_RUN",
+    "EVALUATOR_NOT_RUN",
+    "NO_CANONICAL_PROMOTION",
+    "NO_METARSI_OR_MODEL_RSI",
+    "NO_WEIGHT_TRAINING"
+  ],
+  "final_state_after_successful_exact_head_ci": "READY_FOR_REPLICATED_METHOD_USE_SUCCESSOR_TRIALS",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}
