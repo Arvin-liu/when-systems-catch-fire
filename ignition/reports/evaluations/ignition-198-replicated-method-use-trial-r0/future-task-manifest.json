@@ -1,0 +1,151 @@
+{
+  "artifact_type": "FUTURE_SUCCESSOR_TASK_MANIFEST",
+  "task_id": "IGNITION-20260921-198",
+  "manifest_version": "replicated-method-use-r0-future-tasks-v1",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "preparation_branch": "work/IGNITION-20260921-198-replicated-method-use-trial-r0",
+  "source_commit": "76bb9b566bffc8fd92e6a84026a336bd96d8a534",
+  "status": "FROZEN_NOT_RUN",
+  "future_execution_policy": {
+    "owner_gpt_authorization_required": true,
+    "future_task_manifest_is_not_execution_authority": true,
+    "current_successor_status": "NOT_RUN",
+    "current_evaluator_status": "NOT_RUN",
+    "write_to_1111": false,
+    "run_successor_now": false,
+    "run_evaluator_now": false,
+    "cross_model_trial": false,
+    "canonical_promotion": false,
+    "metarsi_or_model_rsi": false,
+    "weight_training": false,
+    "future_successor_commit_or_push": false,
+    "future_successor_external_search": false
+  },
+  "shared_contracts": {
+    "output_schema": {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+      "sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
+      "reuse": "EXISTING_R0.1_SUCCESSOR_OUTPUT_SCHEMA"
+    },
+    "method_trace_schema": {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/schema/method-use-trace-r0.schema.json",
+      "sha256": "e53532c8338c76d83b72c79edbb3780800d190ce9338c194c7ba2f03eec69e8b",
+      "reuse": "EXISTING_METHOD_USE_TRACE_R0_NO_NEW_SCHEMA"
+    },
+    "method_trace_validator": {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/tools/validate_method_use_trace_r0.py",
+      "sha256": "7adcd2c56acb520b26e2f9e126f0ac258ec5f794582e08c0e2c993fcb4f527a5"
+    },
+    "response_contract": {
+      "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/response-contract.json",
+      "sha256": "d59fe0748aad1abf12424ead1c036847425855df0f62ab108d36e2774e393cff"
+    },
+    "read_manifest_contract": {
+      "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/read-manifest-contract.json",
+      "sha256": "b8d92913c8ed5f76b9257ad9acc1a4478ded26620bc996ca80de6f7cbbb9c587"
+    },
+    "freeze_contract": {
+      "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/freeze-contract.txt",
+      "sha256": "eef98801f4a00c9fc78976831bb9c71b67dd074054ebcafc312de6a88f34d5c3"
+    },
+    "allowlist_resolution": "Each future task must verify its packet_manifest path and final-byte SHA-256, then use exactly that manifest's read_allowlist array. No task-level expansion, implicit repository read, evaluator-criteria read, external search, or unlisted read is permitted."
+  },
+  "tasks": [
+    {
+      "task_id": "IGNITION-20260921-198-FACTS-A",
+      "condition": "FACTS_ONLY",
+      "replicate": "A",
+      "case_order": ["REPL-CASE-03", "REPL-CASE-01", "REPL-CASE-02"],
+      "order_seed": "IGNITION-20260921-198:A-order:v1",
+      "packet_manifest": {
+        "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-a/packet-manifest.json",
+        "sha256": "b98cf2b4b321235a887865a5697fc8e5e402d4764b620550f50ddec223caa164"
+      },
+      "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
+      "successor_branch": "work/IGNITION-20260921-198-successor-facts-a",
+      "output_directory": "ignition/reports/evaluations/local-successor-trials/ignition-198-facts-a",
+      "normal_terminal_state": "SUCCESSOR_TRIAL_LOCAL_ONLY_COMPLETE",
+      "status": "NOT_RUN"
+    },
+    {
+      "task_id": "IGNITION-20260921-198-FACTS-B",
+      "condition": "FACTS_ONLY",
+      "replicate": "B",
+      "case_order": ["REPL-CASE-01", "REPL-CASE-02", "REPL-CASE-03"],
+      "order_seed": "IGNITION-20260921-198:B-order:v1",
+      "packet_manifest": {
+        "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-b/packet-manifest.json",
+        "sha256": "a7f7dfe5a8702fa7c2f5e0ade04d7306735379d5a4fa37cecf8fdaf05fbf9e93"
+      },
+      "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
+      "successor_branch": "work/IGNITION-20260921-198-successor-facts-b",
+      "output_directory": "ignition/reports/evaluations/local-successor-trials/ignition-198-facts-b",
+      "normal_terminal_state": "SUCCESSOR_TRIAL_LOCAL_ONLY_COMPLETE",
+      "status": "NOT_RUN"
+    },
+    {
+      "task_id": "IGNITION-20260921-198-METHOD-A",
+      "condition": "METHOD_TRACE",
+      "replicate": "A",
+      "case_order": ["REPL-CASE-03", "REPL-CASE-01", "REPL-CASE-02"],
+      "order_seed": "IGNITION-20260921-198:A-order:v1",
+      "packet_manifest": {
+        "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-a/packet-manifest.json",
+        "sha256": "cd9596898e526a27bf0ef7779036e017baaf25f25c821a43a75e7c3cb23f3ac1"
+      },
+      "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
+      "successor_branch": "work/IGNITION-20260921-198-successor-method-a",
+      "output_directory": "ignition/reports/evaluations/local-successor-trials/ignition-198-method-a",
+      "normal_terminal_state": "SUCCESSOR_TRIAL_LOCAL_ONLY_COMPLETE",
+      "status": "NOT_RUN"
+    },
+    {
+      "task_id": "IGNITION-20260921-198-METHOD-B",
+      "condition": "METHOD_TRACE",
+      "replicate": "B",
+      "case_order": ["REPL-CASE-01", "REPL-CASE-02", "REPL-CASE-03"],
+      "order_seed": "IGNITION-20260921-198:B-order:v1",
+      "packet_manifest": {
+        "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-b/packet-manifest.json",
+        "sha256": "2b417095f663101070fd1da1dd1f9f6b54ed002a221490c914bc513956d6b11a"
+      },
+      "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
+      "successor_branch": "work/IGNITION-20260921-198-successor-method-b",
+      "output_directory": "ignition/reports/evaluations/local-successor-trials/ignition-198-method-b",
+      "normal_terminal_state": "SUCCESSOR_TRIAL_LOCAL_ONLY_COMPLETE",
+      "status": "NOT_RUN"
+    },
+    {
+      "task_id": "IGNITION-20260921-198-BROKEN-A",
+      "condition": "BROKEN_METHOD_TRACE_CONTROL",
+      "replicate": "A",
+      "case_order": ["REPL-CASE-03", "REPL-CASE-01", "REPL-CASE-02"],
+      "order_seed": "IGNITION-20260921-198:A-order:v1",
+      "packet_manifest": {
+        "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/packet-manifest.json",
+        "sha256": "e1a89ae7d9f9da26a377ae0691e622ed3509c408e2d52f4284318f12f53d9b23"
+      },
+      "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
+      "successor_branch": "work/IGNITION-20260921-198-successor-broken-a",
+      "output_directory": "ignition/reports/evaluations/local-successor-trials/ignition-198-broken-a",
+      "normal_terminal_state": "SUCCESSOR_TRIAL_LOCAL_ONLY_COMPLETE",
+      "status": "NOT_RUN"
+    },
+    {
+      "task_id": "IGNITION-20260921-198-BROKEN-B",
+      "condition": "BROKEN_METHOD_TRACE_CONTROL",
+      "replicate": "B",
+      "case_order": ["REPL-CASE-01", "REPL-CASE-02", "REPL-CASE-03"],
+      "order_seed": "IGNITION-20260921-198:B-order:v1",
+      "packet_manifest": {
+        "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-b/packet-manifest.json",
+        "sha256": "24b6680f360fe0112fda3c9ffc1fd6204aa3244cef002e548db4c52363d506cf"
+      },
+      "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
+      "successor_branch": "work/IGNITION-20260921-198-successor-broken-b",
+      "output_directory": "ignition/reports/evaluations/local-successor-trials/ignition-198-broken-b",
+      "normal_terminal_state": "SUCCESSOR_TRIAL_LOCAL_ONLY_COMPLETE",
+      "status": "NOT_RUN"
+    }
+  ]
+}
