@@ -1,0 +1,21 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260921-198",
+  "case_id": "REPL-CASE-01",
+  "synthetic": true,
+  "personal_data": false,
+  "external_knowledge_required": false,
+  "source_path": "cases/REPL-CASE-01/facts.md",
+  "source_sha256": "4a00553d17cb8ff4c651db383dfda8e975e14e883e60643dfbc238d5de2937a4",
+  "provenance_scope": "task-local synthetic facts and record gaps",
+  "construction_note": "Constructed as a two-lane relay observation with a missing pre-input measurement and no embedded method history.",
+  "design_constraints_satisfied": [
+    "distinct relay-and-selector structure",
+    "missing measurement remains explicit",
+    "unresolved interpretation is not pre-decided"
+  ],
+  "evaluator_labels_included": false,
+  "method_answer_embedded_in_facts": false,
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}
