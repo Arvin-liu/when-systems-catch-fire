@@ -5,8 +5,7 @@ import sys
 import unittest
 from pathlib import Path
 
-IGNITION_ROOT = Path(__file__).resolve().parents[2]
-PACKET_ROOT = IGNITION_ROOT / "reports/evaluations/ignition-198-replicated-method-use-trial-r0"
+PACKET_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PACKET_ROOT / "tools"))
 
 import validate_step04_packets as packet_validator  # noqa: E402

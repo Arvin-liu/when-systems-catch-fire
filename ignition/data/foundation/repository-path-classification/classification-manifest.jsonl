@@ -3474,6 +3474,7 @@
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/step09-path-accounting.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/step10-preflight.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/step10-validation-receipt.json"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/tools/test_task199_schema_closure.py"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/tools/validate_step02_cases.py"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/tools/validate_step03_traces.py"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/tools/validate_step04_packets.py"}
@@ -3487,6 +3488,9 @@
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/trace-excerpts/REPL-CASE-03/trace-excerpt.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/trace-manifest.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/trace-manifest.sha256"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-199-successor-packet-schema-closure-repair/defect-reproduction.json"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-199-successor-packet-schema-closure-repair/defect-reproduction.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-199-successor-packet-schema-closure-repair/evaluation-plane-isolation-fixed-point.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/104-dual-088-reconciliation.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/104-gap-patch-evidence-readiness.md"}
 {"category": "GENERATED_PROJECTION", "matched_rule": "GENERATED_PROJECTION", "path": "ignition/reports/external-research/104-source-quality-audit.md"}
