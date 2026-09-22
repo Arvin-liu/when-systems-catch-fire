@@ -66,6 +66,8 @@
     "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/negative-control-audit.md",
     "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/reconstruction-evaluation.md",
     "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/transfer-evaluation.md",
+    "reports/evaluations/ignition-199-successor-packet-schema-closure-repair/defect-reproduction.md",
+    "reports/evaluations/ignition-199-successor-packet-schema-closure-repair/evaluation-plane-isolation-fixed-point.md",
     "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "subjects": [

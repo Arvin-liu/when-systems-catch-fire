@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Task198 Step04 packet order, byte pins, and condition isolation."""
+"""Validate Task198 Step04 packet order, schema closure, and condition isolation."""
 
 from __future__ import annotations
 
@@ -12,9 +12,27 @@ ROOT = Path(__file__).resolve().parents[1]
 PACKETS = ROOT / "packets"
 COMMON = {
     "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/output-schema-ref.json": "279285bd8da1bfcc799d86425380fd6ef920b7368c6b909736f0ca431e4cb8de",
+    "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
     "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/response-contract.json": "d59fe0748aad1abf12424ead1c036847425855df0f62ab108d36e2774e393cff",
     "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/read-manifest-contract.json": "b8d92913c8ed5f76b9257ad9acc1a4478ded26620bc996ca80de6f7cbbb9c587",
     "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/freeze-contract.txt": "eef98801f4a00c9fc78976831bb9c71b67dd074054ebcafc312de6a88f34d5c3",
+}
+OUTPUT_SCHEMA_PATH = "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json"
+OUTPUT_SCHEMA_SHA256 = "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+OUTPUT_SCHEMA_REF_PATH = "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/output-schema-ref.json"
+FORBIDDEN_OUT_OF_BAND_ROLES = {"command", "out_of_band", "experimental_input"}
+ALLOWED_ROLES = {
+    "instruction",
+    "output_contract",
+    "output_schema",
+    "read_contract",
+    "freeze_contract",
+    "case_facts",
+    "case_provenance",
+    "method_history",
+    "method_provenance",
+    "method_trace",
+    "partial_lineage_excerpt",
 }
 ORDER = {
     "A": ["REPL-CASE-03", "REPL-CASE-01", "REPL-CASE-02"],
@@ -42,12 +60,8 @@ def repo_path(path: str) -> Path:
     return ROOT.parents[3] / path
 
 
-def assert_packet(packet_name: str, spec: tuple) -> None:
+def validate_packet_manifest(packet_name: str, spec: tuple, manifest: dict) -> None:
     condition, replicate, material, *excluded = spec
-    directory = PACKETS / packet_name
-    manifest_path = directory / "packet-manifest.json"
-    digest_path = directory / "packet-manifest.sha256"
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     assert manifest["packet_id"] == "IGNITION-20260921-198-" + packet_name.upper()
     assert manifest["condition"] == condition
     assert manifest["replicate"] == replicate
@@ -58,13 +72,32 @@ def assert_packet(packet_name: str, spec: tuple) -> None:
     assert manifest["evaluator_status"] == "NOT_RUN"
     assert manifest["canonical_claim_ids"] == []
     assert manifest["canonical_promotion"] == "NONE"
-    assert sha256(manifest_path) == digest_path.read_text(encoding="utf-8").split()[0]
 
     allowlist = manifest["read_allowlist"]
     paths = [item["path"] for item in allowlist]
     assert len(paths) == len(set(paths))
     assert manifest["task_prompt_path"] in paths
     assert {item["path"]: item["sha256"] for item in allowlist if item["path"] in COMMON} == COMMON
+    output_schema_rows = [item for item in allowlist if item["role"] == "output_schema"]
+    assert output_schema_rows == [{
+        "path": OUTPUT_SCHEMA_PATH,
+        "sha256": OUTPUT_SCHEMA_SHA256,
+        "role": "output_schema",
+    }]
+    assert len(output_schema_rows) == 1
+    assert not any(item["role"] in FORBIDDEN_OUT_OF_BAND_ROLES for item in allowlist)
+    assert not any(path.startswith("agent-commands/") for path in paths)
+
+    schema_ref = json.loads(repo_path(OUTPUT_SCHEMA_REF_PATH).read_text(encoding="utf-8"))
+    assert schema_ref["schema_path"] == OUTPUT_SCHEMA_PATH
+    assert schema_ref["schema_sha256"] == OUTPUT_SCHEMA_SHA256
+    ref_rows = [item for item in allowlist if item["path"] == OUTPUT_SCHEMA_REF_PATH]
+    assert len(ref_rows) == 1
+    assert ref_rows[0]["sha256"] == COMMON[OUTPUT_SCHEMA_REF_PATH]
+    assert ref_rows[0]["role"] == "output_contract"
+    schema_file = repo_path(OUTPUT_SCHEMA_PATH)
+    assert schema_file.is_file()
+    assert sha256(schema_file) == OUTPUT_SCHEMA_SHA256
     assert not any("evaluator" in path.lower() or "criteria" in path.lower() for path in paths)
     assert not any("ignition-197" in path for path in paths)
     assert not any("__" in item["sha256"] for item in allowlist)
@@ -75,6 +108,8 @@ def assert_packet(packet_name: str, spec: tuple) -> None:
         assert sha256(actual) == item["sha256"], item["path"]
 
     role_paths = {role: [item["path"] for item in allowlist if item["role"] == role] for role in {item["role"] for item in allowlist}}
+    assert set(role_paths) <= ALLOWED_ROLES
+    assert role_paths["output_schema"] == [OUTPUT_SCHEMA_PATH]
     assert len(role_paths.get("case_facts", [])) == 3
     assert len(role_paths.get("case_provenance", [])) == 3
     assert sorted(path.split("/cases/")[1].split("/")[0] for path in role_paths["case_facts"]) == sorted(ORDER[replicate])
@@ -106,6 +141,15 @@ def assert_packet(packet_name: str, spec: tuple) -> None:
     assert output_contract["response_contract_path"] in paths
     assert output_contract["read_manifest_contract_path"] in paths
     assert output_contract["freeze_contract_path"] in paths
+
+
+def assert_packet(packet_name: str, spec: tuple) -> None:
+    directory = PACKETS / packet_name
+    manifest_path = directory / "packet-manifest.json"
+    digest_path = directory / "packet-manifest.sha256"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    assert sha256(manifest_path) == digest_path.read_text(encoding="utf-8").split()[0]
+    validate_packet_manifest(packet_name, spec, manifest)
 
 
 def main() -> int:

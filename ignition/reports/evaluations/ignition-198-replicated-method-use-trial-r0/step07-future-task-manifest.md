@@ -9,9 +9,15 @@ six future same-model Successor conversation slots for Task198:
 
 Each slot has a predeclared case order, a distinct future branch name, a local
 output directory, and a packet-manifest hash. The packet manifest is the sole
-source of the exact read allowlist; the future runner must verify that final
-byte hash before reading any packet content. No evaluator criteria are in a
-Successor allowlist.
+source of the exact read allowlist; the future runner must treat the packet
+manifest as control metadata, verify its final-byte hash, and parse its exact
+allowlist before reading packet content. The manifest is not required to list
+itself in its own content-hash allowlist, and verifying it does not expose other
+condition or evaluator material. Cognitive/input reads may come only from the
+verified packet allowlist. The actual R0.1 output schema is now an
+`output_schema` row in every packet, so a future Successor may read it through
+that allowlist. A task command may not add experimental content or substitute
+for a missing packet input. No evaluator criteria are in a Successor allowlist.
 
 The six slots remain `NOT_RUN`. The manifest does not authorize execution,
 external search, a cross-model trial, a commit or push from a future

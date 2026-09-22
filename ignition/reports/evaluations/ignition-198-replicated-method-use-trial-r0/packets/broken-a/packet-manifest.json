@@ -20,6 +20,7 @@
   "read_allowlist": [
     {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/task-prompt.md", "sha256": "0b8ef9ae66dcc1113be445ce70bfe4aeb5a7fad871e74e432cc78f178ca0c7e3", "role": "instruction"},
     {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/output-schema-ref.json", "sha256": "279285bd8da1bfcc799d86425380fd6ef920b7368c6b909736f0ca431e4cb8de", "role": "output_contract"},
+    {"path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json", "sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133", "role": "output_schema"},
     {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/response-contract.json", "sha256": "d59fe0748aad1abf12424ead1c036847425855df0f62ab108d36e2774e393cff", "role": "output_contract"},
     {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/read-manifest-contract.json", "sha256": "b8d92913c8ed5f76b9257ad9acc1a4478ded26620bc996ca80de6f7cbbb9c587", "role": "read_contract"},
     {"path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/freeze-contract.txt", "sha256": "eef98801f4a00c9fc78976831bb9c71b67dd074054ebcafc312de6a88f34d5c3", "role": "freeze_contract"},
