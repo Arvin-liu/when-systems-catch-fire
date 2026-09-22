@@ -1,0 +1,52 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260922-206",
+  "step": "Step04",
+  "disposition": "REPLICATED_METHOD_USE_SIGNAL_SUPPORTED",
+  "decision_logic_source": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/criteria/replicated-method-use-criteria.json",
+  "decision_logic_sha256": "34723cdc82873215e223ce3216bc8990c2ee91985d3196c85e19de2bac5f3732",
+  "rule_evaluation": [
+    {
+      "rule": "METHOD_A and METHOD_B pass METHOD-SOURCE-BOUND-SELECTION and METHOD-APPLICATION-LINEAGE for all three cases",
+      "satisfied": true,
+      "evidence": "METHOD_A and METHOD_B: 3/3 cases each, both criteria PASS"
+    },
+    {
+      "rule": "FACTS_A and FACTS_B pass FACTS-NO-INHERITED-METHOD and FACTS-BOUNDARY-PRESERVATION for all three cases",
+      "satisfied": true,
+      "evidence": "FACTS_A and FACTS_B: 3/3 cases each, both criteria PASS"
+    },
+    {
+      "rule": "BROKEN_A and BROKEN_B pass BROKEN-MISSING-LINK-PRESERVATION and BROKEN-NO-FALSE-POSITIVE-COMPLETION for all three cases",
+      "satisfied": true,
+      "evidence": "BROKEN_A and BROKEN_B: 3/3 cases each, both criteria PASS"
+    },
+    {
+      "rule": "ALL-SOURCE-FIDELITY and ALL-CEILING-PRESERVATION pass for every replicate",
+      "satisfied": true,
+      "evidence": "6/6 replicates, both criteria PASS"
+    },
+    {
+      "rule": "No protocol contamination occurs",
+      "satisfied": true,
+      "evidence": "Step00: 0 unlisted / cross-condition / evaluator-sealed reads, 0 SHA mismatches, 0 successor commits, 6/6 remote successor branches absent"
+    }
+  ],
+  "fixed_interpretation": "REPLICATED_CONDITION_ASSOCIATION_ONLY_NOT_CAUSAL_EFFECT",
+  "not_computed": [
+    "probability",
+    "effect_size",
+    "confidence_interval",
+    "general_superiority",
+    "causal_effect"
+  ],
+  "fixed_ceilings": [
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED_BY_EVALUATOR",
+    "CROSS_MODEL_TRANSFER_NOT_RUN",
+    "NO_CANONICAL_PROMOTION"
+  ],
+  "runtime_model_attestation": "COMMAND_ASSIGNED_NOT_INDEPENDENTLY_VERIFIED",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}
