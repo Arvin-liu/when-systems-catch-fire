@@ -1,0 +1,115 @@
+{
+  "artifact_type": "TASK199_DEFECT_REPRODUCTION",
+  "task_id": "IGNITION-20260922-199",
+  "base_commit": "7c2592e3dc0516d960db38cc16bb68d5ec3a58c8",
+  "command_source": {
+    "repository": "Arvin-liu/1111",
+    "control_ref": "main",
+    "control_commit": "a7dcecfb897fecccdf99355fc1b8692e4deaf3be",
+    "command_path": "agent-commands/IGNITION-20260922-199.md",
+    "command_blob": "fb015a23caad2b0113f1e7c930c97a5984a0dea9"
+  },
+  "verdict": "OUTPUT_SCHEMA_ALLOWLIST_CLOSURE_DEFECT_CONFIRMED",
+  "reproduction": {
+    "packet_count": 6,
+    "packets": [
+      {
+        "packet_dir": "facts-a",
+        "packet_id": "IGNITION-20260921-198-FACTS-A",
+        "prompt_requires_existing_r01_schema": true,
+        "prompt_schema_phrase_count": 1,
+        "allowlist_row_count": 11,
+        "ref_row_present": true,
+        "actual_schema_row_present": false,
+        "actual_schema_rows": []
+      },
+      {
+        "packet_dir": "facts-b",
+        "packet_id": "IGNITION-20260921-198-FACTS-B",
+        "prompt_requires_existing_r01_schema": true,
+        "prompt_schema_phrase_count": 1,
+        "allowlist_row_count": 11,
+        "ref_row_present": true,
+        "actual_schema_row_present": false,
+        "actual_schema_rows": []
+      },
+      {
+        "packet_dir": "method-a",
+        "packet_id": "IGNITION-20260921-198-METHOD-A",
+        "prompt_requires_existing_r01_schema": true,
+        "prompt_schema_phrase_count": 1,
+        "allowlist_row_count": 16,
+        "ref_row_present": true,
+        "actual_schema_row_present": false,
+        "actual_schema_rows": []
+      },
+      {
+        "packet_dir": "method-b",
+        "packet_id": "IGNITION-20260921-198-METHOD-B",
+        "prompt_requires_existing_r01_schema": true,
+        "prompt_schema_phrase_count": 1,
+        "allowlist_row_count": 16,
+        "ref_row_present": true,
+        "actual_schema_row_present": false,
+        "actual_schema_rows": []
+      },
+      {
+        "packet_dir": "broken-a",
+        "packet_id": "IGNITION-20260921-198-BROKEN-A",
+        "prompt_requires_existing_r01_schema": true,
+        "prompt_schema_phrase_count": 1,
+        "allowlist_row_count": 14,
+        "ref_row_present": true,
+        "actual_schema_row_present": false,
+        "actual_schema_rows": []
+      },
+      {
+        "packet_dir": "broken-b",
+        "packet_id": "IGNITION-20260921-198-BROKEN-B",
+        "prompt_requires_existing_r01_schema": true,
+        "prompt_schema_phrase_count": 1,
+        "allowlist_row_count": 14,
+        "ref_row_present": true,
+        "actual_schema_row_present": false,
+        "actual_schema_rows": []
+      }
+    ],
+    "schema_reference": {
+      "ref_path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/output-schema-ref.json",
+      "actual_schema_path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+      "declared_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
+      "actual_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
+      "hash_matches": true,
+      "ref_contains_field_definition_keys": false,
+      "actual_schema_definition_keys": [
+        "$defs",
+        "$id",
+        "$schema",
+        "additionalProperties",
+        "properties",
+        "required",
+        "title",
+        "type"
+      ]
+    },
+    "future_task_manifest": {
+      "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/future-task-manifest.json",
+      "sha256": "2d70e1e9e8f1bf52aab813e6aafb1e35f5b53c6a763efa997ff3179704e20734",
+      "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
+      "allowlist_resolution": "Each future task must verify its packet_manifest path and final-byte SHA-256, then use exactly that manifest's read_allowlist array. No task-level expansion, implicit repository read, evaluator-criteria read, external search, or unlisted read is permitted."
+    }
+  },
+  "checks": {
+    "all_six_prompts_require_schema": true,
+    "all_six_actual_schema_rows_missing": true,
+    "ref_hash_matches_actual_schema": true,
+    "ref_has_no_field_definitions": true,
+    "strict_allowlist_blocks_implicit_read": true
+  },
+  "negative_controls": {
+    "successor_run": false,
+    "evaluator_run": false,
+    "schema_injected_into_command": false,
+    "case_bytes_read_for_content": false
+  }
+}
