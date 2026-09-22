@@ -3,15 +3,15 @@
   "task_id": "IGNITION-20260922-206",
   "step": "Step07",
   "typing": {
-    "task206_tracked_paths": 32,
-    "classified_EVALUATION_EVIDENCE": 32,
+    "task206_tracked_paths": 34,
+    "classified_EVALUATION_EVIDENCE": 34,
     "other_categories": 0,
     "generator": "tools/foundation/validate_repository_path_classification.py --generate",
     "checks": "10/10 PASS on two consecutive --check passes"
   },
   "path_accounting": {
-    "tracked_paths_total": 4924,
-    "manifest_paths_total": 4924,
+    "tracked_paths_total": 4926,
+    "manifest_paths_total": 4926,
     "unresolved": 0,
     "duplicates": 0,
     "stale": 0
@@ -26,7 +26,7 @@
     "automatic_function_candidate": false,
     "automatic_nonfunction_candidate": false,
     "nonfunction_source_coverage": "EXCLUDED_EVALUATION_EVIDENCE_ONLY",
-    "excluded_evaluation_evidence_rows": 319,
+    "excluded_evaluation_evidence_rows": 321,
     "canonical_claims": 18003,
     "canonical_claim_ids_emitted_by_task206": 0,
     "canonical_promotion": "NONE"

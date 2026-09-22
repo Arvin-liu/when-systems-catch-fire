@@ -4,6 +4,15 @@
 
 ## 2026
 
+<a id="change-src-hr-67c573b4578ae30a"></a>
+### 2026-09-23 · Evaluation evidence isolation / fixed point (Step07)
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Because Task206 Markdown falls under the reports human-results source root, human-results may carry it as a navigation projection, and Knowledge Experience isolates it by reusing the existing exact-path excludedgeneratedresultsources list. Six exact paths were appended; no wide-prefix exclusion w…
+- **来源：** [evaluation-evidence-isolation.md](../reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/evaluation-evidence-isolation.md)
+- **资产卡：** [HR-67C573B4578AE30A](./ASSET-CARDS.md#asset-hr-67c573b4578ae30a)
+
 <a id="change-src-hr-ffc42fd42bfd7145"></a>
 ### 2026-09-21 · REPL-CASE-03 — Shadow-map fold
 

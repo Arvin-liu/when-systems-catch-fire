@@ -2,14 +2,14 @@
 
 ## Typing and path accounting
 
-- 32 Task206 tracked paths, 32 classified `EVALUATION_EVIDENCE`, 0 in any other category (official repository-path-classification generator).
-- 4924 tracked paths, 4924 manifest rows, 0 unresolved / duplicate / stale.
+- 34 Task206 tracked paths, 34 classified `EVALUATION_EVIDENCE`, 0 in any other category (official repository-path-classification generator).
+- 4926 tracked paths, 4926 manifest rows, 0 unresolved / duplicate / stale.
 - Six frozen bundles copied byte-for-byte; no user absolute path is committed.
 
 ## No automatic Foundation candidate
 
 - 0 automatic function-asset candidates, 0 automatic nonfunction-claim candidates.
-- Task206 paths appear as `EXCLUDED_EVALUATION_EVIDENCE_ONLY` rows (319 total across the repository); canonical claims remain 18003.
+- Task206 paths appear as `EXCLUDED_EVALUATION_EVIDENCE_ONLY` rows (321 total across the repository); canonical claims remain 18003.
 - Task206 emits zero canonical claim IDs; canonical promotion `NONE`.
 
 ## Knowledge Experience isolation

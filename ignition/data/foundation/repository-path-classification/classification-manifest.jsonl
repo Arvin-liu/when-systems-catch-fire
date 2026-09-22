@@ -3491,6 +3491,8 @@
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-199-successor-packet-schema-closure-repair/defect-reproduction.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-199-successor-packet-schema-closure-repair/defect-reproduction.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-199-successor-packet-schema-closure-repair/evaluation-plane-isolation-fixed-point.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/evaluation-evidence-isolation.json"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/evaluation-evidence-isolation.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/evaluation-input-freeze.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/frozen-successor-evidence/200-facts-a/freeze-sha256.txt"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/frozen-successor-evidence/200-facts-a/read-manifest.json"}
