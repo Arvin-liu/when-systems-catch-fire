@@ -1,0 +1,52 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260922-206",
+  "step": "Step06",
+  "evidence_validity": "VALID_SIX_OF_SIX_MECHANICAL_GATE_PASSED",
+  "step00_checkpoint_sha": "43c3f07c64abc31529b791c562560e02bb345981",
+  "conversation_boundary_results": {
+    "FACTS_A": "BOUNDARY_PRESERVED",
+    "FACTS_B": "BOUNDARY_PRESERVED",
+    "METHOD_A": "BOUNDARY_PRESERVED",
+    "METHOD_B": "BOUNDARY_PRESERVED",
+    "BROKEN_A": "BOUNDARY_PRESERVED",
+    "BROKEN_B": "BOUNDARY_PRESERVED"
+  },
+  "per_case_exceptions": {
+    "count": 0,
+    "advisories": [
+      "A1 FACTS_A/REPL-CASE-03: METHOD-typed object describes the case's own fold command, not a supplied method lineage",
+      "A2 FACTS_B/REPL-CASE-03: interpretive relation typed SOURCE_REPORTED, gap retained",
+      "A3 METHOD_A and METHOD_B (all cases): trace SHA carried by packet read-manifest, verified equal, not inline in the R0.1 record",
+      "A4 METHOD_B/REPL-CASE-02: reset/re-queue observation not enumerated",
+      "A5 BROKEN_A (all cases): candidate typed METHOD/OBSERVED rather than SOURCE_REPORTED",
+      "A6 BROKEN_B (all cases): candidate and excerpt outcome typed OBSERVED with excerpt locators"
+    ]
+  },
+  "a_b_consistency": "BOTH_REPLICATES_PRESERVE_BOUNDARY_IN_ALL_THREE_CONDITIONS",
+  "order_sensitivity": "NO_ONLY_A_OR_ONLY_B_FAILURE; ORDER_CONFOUNDED_WITH_REPLICATE_LETTER; REPORTED_DESCRIPTIVELY",
+  "template_imitation_findings": "NOT_WORDING_ONLY; CASE_BOUND_RATIONALE_PRESENT",
+  "negative_controls": {
+    "total": 12,
+    "NOT_TRIGGERED": 12,
+    "TRIGGERED": 0,
+    "UNRESOLVED": 0
+  },
+  "replicated_disposition": "REPLICATED_METHOD_USE_SIGNAL_SUPPORTED",
+  "disposition_unchanged_by_this_report": true,
+  "execution_environment_attestation": {
+    "attestation": "MODEL_CONFIGURATION_ATTESTATION: COMMAND_ASSIGNED_NOT_INDEPENDENTLY_VERIFIED",
+    "limitation": "same-model wording limited to assigned configuration"
+  },
+  "fixed_epistemic_ceiling": [
+    "GENERAL_COGNITIVE_INHERITANCE_NOT_ESTABLISHED",
+    "R1_NOT_AUTHORIZED_BY_EVALUATOR",
+    "CROSS_MODEL_TRANSFER_NOT_RUN",
+    "OWNER_GPT_ADJUDICATION_NOT_RUN",
+    "NO_CANONICAL_PROMOTION",
+    "REPLICATED_CONDITION_ASSOCIATION_ONLY_NOT_CAUSAL_EFFECT"
+  ],
+  "owner_acceptance": "NOT_PERFORMED_BY_EVALUATOR",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}
