@@ -25,6 +25,12 @@
     "reports/evaluations/ignition-197-method-use-trace-independent-evaluation/transfer-evaluation.md",
     "reports/evaluations/ignition-199-successor-packet-schema-closure-repair/defect-reproduction.md",
     "reports/evaluations/ignition-199-successor-packet-schema-closure-repair/evaluation-plane-isolation-fixed-point.md",
+    "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/frozen-successor-evidence/evidence-freeze.md",
+    "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/independent-evaluation-report.md",
+    "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/negative-control-audit.md",
+    "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/per-replicate-evaluation.md",
+    "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/replicated-method-use-report.md",
+    "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/replication-analysis.md",
     "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "excluded_timeline_asset_ids": [

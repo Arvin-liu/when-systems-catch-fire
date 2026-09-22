@@ -108,11 +108,11 @@
     "KNOWLEDGE/reading-layers/part-012.md": "04b81654a0f599856d87f4d5dd21ac8c2969b9a6b178fee1a0052f0c5df95dfe",
     "KNOWLEDGE/reading-layers/part-013.md": "fe079acc541ee3c35ca8b2c53d8a0c9cb628f865ec051ee2115923e3e0fccdd3",
     "data/governance/knowledge-experience/alias-index.jsonl": "d155f1ce0e65954396a83fc771a00e55e6aef177312408c2de1f379860e3a943",
-    "data/governance/knowledge-experience/asset-cards.jsonl": "c249382f2c159b14d91048dd52e1db95982360763cdbbb782c93f4a7047a2c0c",
+    "data/governance/knowledge-experience/asset-cards.jsonl": "8c8882f72bf9579ff592446efa79aebf6e2784cb9c90fc7cf61f287bb9e4f289",
     "data/governance/knowledge-experience/changes.jsonl": "d7d88fbc414750de34304161c32d72eb0fb11c3c947dcb36f28159ab17c38bce",
-    "data/governance/knowledge-experience/coverage.json": "3d0fabb7fa51fa7ab6f20b9e6b2aff80b0936eb85c8d379e797fb7247d55f0a8",
-    "data/governance/knowledge-experience/layered-reading.jsonl": "6b779e89fe5c6e00c4a9d63fda0904c816491b2345ab26c1f99e86c0dc436a27",
-    "data/governance/knowledge-experience/search-index.jsonl": "8f5d3ed4e1821676383f89fce51f3e2f1218a53f264a6c99a22d99574ece0124"
+    "data/governance/knowledge-experience/coverage.json": "47bfe2ef0bb4f5b28e0448be5874bbb71002292d00203a1624a1818cfc407c86",
+    "data/governance/knowledge-experience/layered-reading.jsonl": "c990d9a5660ed1db02eff4cc21db42ff598acc1d6f440be2e53d09be842a8078",
+    "data/governance/knowledge-experience/search-index.jsonl": "fb54dc747b19abeb76274a1920e6453c3b3ecda81dd6a07a103e34adf97b3bff"
   },
   "machine_human_pairs": [
     {
@@ -145,8 +145,8 @@
   "source_inputs": {
     "data/foundation/function-assets/identity-cards.jsonl": "2b5a83c0e5ffe5c8199d4d8fa831b5e15832c9559614ce21b9a3d643cf6f3c16",
     "data/foundation/nonfunction-claims/claim-registry.jsonl": "b8d9f009553729f97cf82bf70771795f3ba912259e866808cb99341a00a077ed",
-    "data/governance/human-results/result-ledger.jsonl": "ead09eae2959ab5cd0876cb29ac9592d577db22dcf0245f5918a01117ac21333",
-    "data/governance/knowledge-experience/config.json": "a139180e124b5735e3b491cbab0724dca79e13bf70f112e7aba7ed7a28d2ca86",
-    "data/governance/knowledge-experience/source-first-seen.json": "b205f576a0208f25cbba3f491d94a14eccdc228b7415329ce5130e0441710749"
+    "data/governance/human-results/result-ledger.jsonl": "6cc3dfb001de11157a4a086036845524e99319ba301004134803ef93f9e35d9c",
+    "data/governance/knowledge-experience/config.json": "6b385de98d9a39b07e50678a7036ca5524b0f42e3b9db42a6a6d6ef76a4c070f",
+    "data/governance/knowledge-experience/source-first-seen.json": "945ccc4111936448fdef2cfa14bcdf876281431c5b138ddfcd20609ca0a912f0"
   }
 }
