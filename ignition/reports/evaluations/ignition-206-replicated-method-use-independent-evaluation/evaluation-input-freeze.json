@@ -1,0 +1,60 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260922-206",
+  "step": "Step01",
+  "unseal_authorization": "Step00 committed and pushed before unsealing",
+  "step00_checkpoint_sha": "43c3f07c64abc31529b791c562560e02bb345981",
+  "exact_base": "867dc2e4f47c3981aa4178d706b6ea6e110379fe",
+  "unsealed": [
+    {
+      "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/criteria/replicated-method-use-criteria.json",
+      "sha256": "34723cdc82873215e223ce3216bc8990c2ee91985d3196c85e19de2bac5f3732",
+      "expected_sha256": "34723cdc82873215e223ce3216bc8990c2ee91985d3196c85e19de2bac5f3732",
+      "match": true,
+      "role": "predeclared_step05_decision_logic"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/evaluator-sealed/criteria.json",
+      "sha256": "178c38350508aca1b27b41123f58004053d5f2ce736866b2ce4293afa54a6195",
+      "expected_sha256": "178c38350508aca1b27b41123f58004053d5f2ce736866b2ce4293afa54a6195",
+      "match": true,
+      "role": "sealed_evaluator_criteria"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/evaluator-sealed/package-manifest.json",
+      "sha256": "c6a2c31f86c300febeb26e1202ab7eed48b9793e913997940296e9d71dea187c",
+      "expected_sha256": "c6a2c31f86c300febeb26e1202ab7eed48b9793e913997940296e9d71dea187c",
+      "match": true,
+      "role": "sealed_package_manifest"
+    }
+  ],
+  "also_read_for_evaluation": [
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/<condition>/packet-manifest.json (six, hashes verified at Step00)",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/case-manifest.json",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/trace-manifest.json",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/case-order-receipt.json",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-0X/facts.md and provenance.json",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-family/method-family-history.md and provenance.json",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-traces/REPL-CASE-0X/method-trace.json",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/trace-excerpts/REPL-CASE-0X/trace-excerpt.json",
+    "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/<condition>/task-prompt.md"
+  ],
+  "a_b_order_receipt": {
+    "A": [
+      "REPL-CASE-03",
+      "REPL-CASE-01",
+      "REPL-CASE-02"
+    ],
+    "B": [
+      "REPL-CASE-01",
+      "REPL-CASE-02",
+      "REPL-CASE-03"
+    ],
+    "orders_differ": true,
+    "adaptive_reordering": false,
+    "generated_before_successor_or_evaluator": true,
+    "source": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/case-order-receipt.json"
+  },
+  "criteria_used": "replicated-method-use-r0 (Step05, unmodified)",
+  "semantic_scoring_started": true
+}
