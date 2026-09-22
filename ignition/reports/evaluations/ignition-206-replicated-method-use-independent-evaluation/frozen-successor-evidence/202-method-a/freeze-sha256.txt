@@ -1,0 +1,13 @@
+task_id=IGNITION-20260921-198
+status=SUCCESSOR_TRIAL_LOCAL_ONLY_COMPLETE
+freeze_rule=compute SHA-256 directly from final bytes after the conversation
+freeze_scope=successor-response.jsonl read-manifest.json and packet allowlist bytes
+successor_response_path=successor-response.jsonl
+successor_response_sha256=b2abe7c2eb6ea5081c3e673717b8730a15e20b0c0932f2a0cf4c8a65cfb3edee
+read_manifest_path=read-manifest.json
+read_manifest_sha256=812b385f101a70c7b8de125f9d5f46076818058995ec7ccc8ab4ab6f940eac45
+packet_allowlist_bytes=concatenation of 17 allowlisted packet files in manifest read_allowlist order
+packet_allowlist_sha256=7219301c97b9f63f322cccc1157e7a397926bee06725ff0747e04837772a38e3
+unlisted_read=0
+successor_status=SUCCESSOR_TRIAL_LOCAL_ONLY_COMPLETE
+evaluator_status=NOT_RUN

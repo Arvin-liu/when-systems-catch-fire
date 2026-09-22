@@ -1,0 +1,34 @@
+task_id=IGNITION-20260921-198
+freeze_file=freeze-sha256.txt
+freeze_scope=successor-response.jsonl; read-manifest.json; packet allowlist bytes (17 files)
+freeze_rule=SHA-256 computed directly from final bytes of the three frozen scopes
+freeze_sha256=f2c4a3e9575ab32aad284c3f15a2ff741fd5facbde76cef2d9320c8176e111ac
+
+component_hashes:
+successor-response.jsonl=8da75328fefc27606ac1f4319bacbfd3d61abd13cc5c8748d3880d7498e0b148
+read-manifest.json=2fbb094885dd61c607906496d1953d100b9a0c4c54863290bd3591afda2e9c99
+allowlist_file_count=17
+
+allowlist_bytes_sha256_per_file:
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-b/task-prompt.md=eed4599333ed94ce4e5b0c0fa879034a90be74bbf519b50d102a4e2e50383b5d
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/output-schema-ref.json=279285bd8da1bfcc799d86425380fd6ef920b7368c6b909736f0ca431e4cb8de
+ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json=fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/response-contract.json=d59fe0748aad1abf12424ead1c036847425855df0f62ab108d36e2774e393cff
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/read-manifest-contract.json=b8d92913c8ed5f76b9257ad9acc1a4478ded26620bc996ca80de6f7cbbb9c587
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/freeze-contract.txt=eef98801f4a00c9fc78976831bb9c71b67dd074054ebcafc312de6a88f34d5c3
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-01/facts.md=4a00553d17cb8ff4c651db383dfda8e975e14e883e60643dfbc238d5de2937a4
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-01/provenance.json=a7c7a551b62c57e7b4d260f463a938a04d7e79dc67aeeb055a153e38d5d27a3e
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-02/facts.md=f3e22b89dc238794083118552f0b5a2b8c490fc960298ddf55e1a1c7f720cdab
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-02/provenance.json=3200209c87847a07c1e11d6db9dac9129f4a59db1cb41b42c4530bf45839add8
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-03/facts.md=b7ff2806fe4321a6f406d7f3e708607a712dbca091144818b1fdb88034eadfde
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-03/provenance.json=f26aa5bd0b5c8c93a41d47a4513502ac7d2b2604149840090161e6cd88420fda
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-family/method-family-history.md=f1a7ab79cf52dae59b6ab338fcd4c1469fa05f72433a34f5ee642da0478a3ebe
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-family/provenance.json=6213792d969f71fa7ee17cde5dc07035fe8839705727f7d69f2bbeb898cc92ff
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-traces/REPL-CASE-01/method-trace.json=743e1e1ce5228d77a67a78a31198c34696c8a2cf7ad7a1b4cb9039dc2678b06b
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-traces/REPL-CASE-02/method-trace.json=d1e179bcb3cff7aecf23869834baef77dfc89e7c59128c1a80351246d8bcfa76
+ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-traces/REPL-CASE-03/method-trace.json=ab3bf8c101dcbf0f57f234d58958b9fca19e240cb1a609d9141cd909d88665ee
+
+unlisted_read_count=0
+successor_status=NOT_RUN
+evaluator_status=NOT_RUN
+canonical_promotion=NONE
