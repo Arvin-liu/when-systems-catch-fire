@@ -59,7 +59,7 @@
       "order_seed": "IGNITION-20260921-198:A-order:v1",
       "packet_manifest": {
         "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-a/packet-manifest.json",
-        "sha256": "b98cf2b4b321235a887865a5697fc8e5e402d4764b620550f50ddec223caa164"
+        "sha256": "c6d3c0a4c67c0c1ab28ea5b56da69526a3aef2b21ee53a3b4587e388a252ca1a"
       },
       "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
       "successor_branch": "work/IGNITION-20260921-198-successor-facts-a",
@@ -75,7 +75,7 @@
       "order_seed": "IGNITION-20260921-198:B-order:v1",
       "packet_manifest": {
         "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-b/packet-manifest.json",
-        "sha256": "a7f7dfe5a8702fa7c2f5e0ade04d7306735379d5a4fa37cecf8fdaf05fbf9e93"
+        "sha256": "3926b9b2085cd7930e26532f9b1f59e75437b8e8c684349922b5ed372d876891"
       },
       "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
       "successor_branch": "work/IGNITION-20260921-198-successor-facts-b",
@@ -91,7 +91,7 @@
       "order_seed": "IGNITION-20260921-198:A-order:v1",
       "packet_manifest": {
         "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-a/packet-manifest.json",
-        "sha256": "cd9596898e526a27bf0ef7779036e017baaf25f25c821a43a75e7c3cb23f3ac1"
+        "sha256": "65822249c3b008426f69ec12f61a4d5c703d436ed64abf2c199c661f5a57251a"
       },
       "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
       "successor_branch": "work/IGNITION-20260921-198-successor-method-a",
@@ -107,7 +107,7 @@
       "order_seed": "IGNITION-20260921-198:B-order:v1",
       "packet_manifest": {
         "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-b/packet-manifest.json",
-        "sha256": "2b417095f663101070fd1da1dd1f9f6b54ed002a221490c914bc513956d6b11a"
+        "sha256": "3f1b6a4fc0eb39393c775210da83de4b5a39a02b572ae171ce028772b8a98ca0"
       },
       "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
       "successor_branch": "work/IGNITION-20260921-198-successor-method-b",
@@ -123,7 +123,7 @@
       "order_seed": "IGNITION-20260921-198:A-order:v1",
       "packet_manifest": {
         "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/packet-manifest.json",
-        "sha256": "e1a89ae7d9f9da26a377ae0691e622ed3509c408e2d52f4284318f12f53d9b23"
+        "sha256": "44b001c0da14f2c5fcb9f237a381dc17aa402b7fe76cee864a61782fbbd9d2af"
       },
       "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
       "successor_branch": "work/IGNITION-20260921-198-successor-broken-a",
@@ -139,7 +139,7 @@
       "order_seed": "IGNITION-20260921-198:B-order:v1",
       "packet_manifest": {
         "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-b/packet-manifest.json",
-        "sha256": "24b6680f360fe0112fda3c9ffc1fd6204aa3244cef002e548db4c52363d506cf"
+        "sha256": "e3384e79faabe03b44a274775c9ca3a42c3e59badc44a441eaf932600f78fe05"
       },
       "allowed_reads": "EXACT_PACKET_MANIFEST_READ_ALLOWLIST",
       "successor_branch": "work/IGNITION-20260921-198-successor-broken-b",

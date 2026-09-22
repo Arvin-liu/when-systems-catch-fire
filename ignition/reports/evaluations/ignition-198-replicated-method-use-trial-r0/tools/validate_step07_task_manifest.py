@@ -49,12 +49,12 @@ def main() -> None:
         fail("manifest incorrectly grants execution authority")
 
     expected = {
-        "FACTS-A": ("FACTS_ONLY", "A", "facts-a", "b98cf2b4b321235a887865a5697fc8e5e402d4764b620550f50ddec223caa164"),
-        "FACTS-B": ("FACTS_ONLY", "B", "facts-b", "a7f7dfe5a8702fa7c2f5e0ade04d7306735379d5a4fa37cecf8fdaf05fbf9e93"),
-        "METHOD-A": ("METHOD_TRACE", "A", "method-a", "cd9596898e526a27bf0ef7779036e017baaf25f25c821a43a75e7c3cb23f3ac1"),
-        "METHOD-B": ("METHOD_TRACE", "B", "method-b", "2b417095f663101070fd1da1dd1f9f6b54ed002a221490c914bc513956d6b11a"),
-        "BROKEN-A": ("BROKEN_METHOD_TRACE_CONTROL", "A", "broken-a", "e1a89ae7d9f9da26a377ae0691e622ed3509c408e2d52f4284318f12f53d9b23"),
-        "BROKEN-B": ("BROKEN_METHOD_TRACE_CONTROL", "B", "broken-b", "24b6680f360fe0112fda3c9ffc1fd6204aa3244cef002e548db4c52363d506cf"),
+        "FACTS-A": ("FACTS_ONLY", "A", "facts-a", "c6d3c0a4c67c0c1ab28ea5b56da69526a3aef2b21ee53a3b4587e388a252ca1a"),
+        "FACTS-B": ("FACTS_ONLY", "B", "facts-b", "3926b9b2085cd7930e26532f9b1f59e75437b8e8c684349922b5ed372d876891"),
+        "METHOD-A": ("METHOD_TRACE", "A", "method-a", "65822249c3b008426f69ec12f61a4d5c703d436ed64abf2c199c661f5a57251a"),
+        "METHOD-B": ("METHOD_TRACE", "B", "method-b", "3f1b6a4fc0eb39393c775210da83de4b5a39a02b572ae171ce028772b8a98ca0"),
+        "BROKEN-A": ("BROKEN_METHOD_TRACE_CONTROL", "A", "broken-a", "44b001c0da14f2c5fcb9f237a381dc17aa402b7fe76cee864a61782fbbd9d2af"),
+        "BROKEN-B": ("BROKEN_METHOD_TRACE_CONTROL", "B", "broken-b", "e3384e79faabe03b44a274775c9ca3a42c3e59badc44a441eaf932600f78fe05"),
     }
     tasks = data["tasks"]
     if len(tasks) != 6:
