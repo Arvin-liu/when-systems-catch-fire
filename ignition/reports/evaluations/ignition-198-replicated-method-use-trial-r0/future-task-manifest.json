@@ -48,7 +48,25 @@
       "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/freeze-contract.txt",
       "sha256": "eef98801f4a00c9fc78976831bb9c71b67dd074054ebcafc312de6a88f34d5c3"
     },
-    "allowlist_resolution": "Each future task must verify its packet_manifest path and final-byte SHA-256, then use exactly that manifest's read_allowlist array. No task-level expansion, implicit repository read, evaluator-criteria read, external search, or unlisted read is permitted."
+    "allowlist_resolution": "Each future task must verify its packet_manifest path and final-byte SHA-256, then use exactly that manifest's read_allowlist array. No task-level expansion, implicit repository read, evaluator-criteria read, external search, or unlisted read is permitted.",
+    "packet_manifest_control_metadata": {
+      "read_class": "CONTROL_METADATA",
+      "purpose": [
+        "VERIFY_PACKET_MANIFEST_FINAL_BYTES_AND_SHA256",
+        "PARSE_EXACT_PACKET_READ_ALLOWLIST"
+      ],
+      "self_listing": "PACKET_MANIFEST_IS_NOT_REQUIRED_TO_SELF_LIST_IN_ITS_OWN_CONTENT_HASH_ALLOWLIST",
+      "verification_exposure": "MANIFEST_VERIFICATION_DOES_NOT_EXPOSE_OTHER_CONDITION_OR_EVALUATOR_MATERIAL",
+      "cognitive_input_reads": "ONLY_FROM_VERIFIED_PACKET_READ_ALLOWLIST",
+      "actual_output_schema": {
+        "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+        "sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
+        "role": "output_schema",
+        "future_successor_read": "ALLOWED_FROM_PACKET_ALLOWLIST"
+      },
+      "command_level_extra_input": "PROHIBITED_AND_NOT_A_SUBSTITUTE_FOR_MISSING_PACKET_INPUT",
+      "experimental_content_outside_packet": "PROHIBITED"
+    }
   },
   "tasks": [
     {

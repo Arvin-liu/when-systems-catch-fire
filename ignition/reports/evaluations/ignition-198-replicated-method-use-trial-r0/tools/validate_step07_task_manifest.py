@@ -10,6 +10,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "future-task-manifest.json"
+OUTPUT_SCHEMA_PATH = "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json"
+OUTPUT_SCHEMA_SHA256 = "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
 
 
 def sha256(path: Path) -> str:
@@ -48,6 +50,33 @@ def main() -> None:
     if not policy["future_task_manifest_is_not_execution_authority"]:
         fail("manifest incorrectly grants execution authority")
 
+    control = data["shared_contracts"]["packet_manifest_control_metadata"]
+    if control["read_class"] != "CONTROL_METADATA":
+        fail("packet manifest control metadata is not separated from cognitive input")
+    if control["purpose"] != [
+        "VERIFY_PACKET_MANIFEST_FINAL_BYTES_AND_SHA256",
+        "PARSE_EXACT_PACKET_READ_ALLOWLIST",
+    ]:
+        fail("packet manifest control purpose drifted")
+    if control["self_listing"] != "PACKET_MANIFEST_IS_NOT_REQUIRED_TO_SELF_LIST_IN_ITS_OWN_CONTENT_HASH_ALLOWLIST":
+        fail("packet self-listing rule drifted")
+    if control["verification_exposure"] != "MANIFEST_VERIFICATION_DOES_NOT_EXPOSE_OTHER_CONDITION_OR_EVALUATOR_MATERIAL":
+        fail("manifest verification exposure boundary drifted")
+    if control["cognitive_input_reads"] != "ONLY_FROM_VERIFIED_PACKET_READ_ALLOWLIST":
+        fail("cognitive input read boundary drifted")
+    if control["command_level_extra_input"] != "PROHIBITED_AND_NOT_A_SUBSTITUTE_FOR_MISSING_PACKET_INPUT":
+        fail("command-level extra input is not prohibited")
+    if control["experimental_content_outside_packet"] != "PROHIBITED":
+        fail("experimental content outside packet is not prohibited")
+    schema_contract = control["actual_output_schema"]
+    if schema_contract != {
+        "path": OUTPUT_SCHEMA_PATH,
+        "sha256": OUTPUT_SCHEMA_SHA256,
+        "role": "output_schema",
+        "future_successor_read": "ALLOWED_FROM_PACKET_ALLOWLIST",
+    }:
+        fail("actual output schema control contract drifted")
+
     expected = {
         "FACTS-A": ("FACTS_ONLY", "A", "facts-a", "c6d3c0a4c67c0c1ab28ea5b56da69526a3aef2b21ee53a3b4587e388a252ca1a"),
         "FACTS-B": ("FACTS_ONLY", "B", "facts-b", "3926b9b2085cd7930e26532f9b1f59e75437b8e8c684349922b5ed372d876891"),
@@ -82,6 +111,9 @@ def main() -> None:
         if not packet_path.is_file() or sha256(packet_path) != packet["sha256"]:
             fail(f"packet manifest final-byte hash mismatch for {suffix}")
         packet_data = json.loads(packet_path.read_text())
+        schema_rows = [row for row in packet_data["read_allowlist"] if row["role"] == "output_schema"]
+        if schema_rows != [{"path": OUTPUT_SCHEMA_PATH, "sha256": OUTPUT_SCHEMA_SHA256, "role": "output_schema"}]:
+            fail(f"actual output schema allowlist row mismatch for {suffix}")
         if packet_data["condition"] != condition or packet_data["replicate"] != replicate:
             fail(f"packet condition/replicate mismatch for {suffix}")
         if packet_data["case_order"] != task["case_order"]:
