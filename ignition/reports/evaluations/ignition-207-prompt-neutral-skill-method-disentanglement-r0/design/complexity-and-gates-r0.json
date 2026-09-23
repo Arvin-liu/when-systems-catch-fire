@@ -1,0 +1,59 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "step": "Step08",
+  "schema_version": "task207-complexity-gates-r0",
+  "base_commit": "8e70ba196739cf1a79600e02ace36f90ad2c130c",
+  "design_counts": {
+    "conditions": 4,
+    "independent_conversations_per_condition": 2,
+    "future_conversations": 8,
+    "cases_per_conversation": 3,
+    "nested_case_records": 24,
+    "independent_replication_unit": "CONVERSATION"
+  },
+  "analysis_ceiling": {
+    "summary_mode": "DESCRIPTIVE_ONLY",
+    "inferential_significance": "NOT_AUTHORIZED",
+    "causal_method_inheritance": "NOT_ESTABLISHED",
+    "general_cognitive_inheritance": "NOT_ESTABLISHED",
+    "r1": "NOT_AUTHORIZED",
+    "cross_model_transfer": "NOT_AUTHORIZED",
+    "canonical_promotion": "NONE"
+  },
+  "condition_separation": {
+    "packet_ids": "OPAQUE",
+    "direct_condition_labels_in_successor_packets": false,
+    "input_content_nature_may_be_inferable": true,
+    "condition_map_release": "AFTER_BOTH_INDEPENDENT_SCORE_SHEETS_ARE_LOCKED",
+    "repository_secrecy_from_readers": false
+  },
+  "retirement_triggers": [
+    "FROZEN_INPUT_HASH_MISMATCH",
+    "SUCCESSOR_READ_OUTSIDE_SINGLE_PACKET_ALLOWLIST",
+    "EVALUATOR_MATERIAL_EXPOSED_BEFORE_SCORE_LOCK",
+    "SHARED_CONVERSATION_HISTORY",
+    "TRIAL_WORKTREE_MUTATION_INVALID",
+    "UNTRACKED_FILE_OUTSIDE_DECLARED_OUTPUT",
+    "MISSING_OR_ALTERED_OUTPUT_OR_RECEIPT",
+    "RUNTIME_ASSIGNMENT_DIFFERS_ACROSS_EIGHT_TASKS",
+    "TASK_ORDER_CHANGED_AFTER_LAUNCH"
+  ],
+  "invalid_trial_disposition": "STOP_RUN_FAMILY; DO_NOT_REPLACE_OR_RERUN_WITHIN_R0",
+  "next_gate": [
+    "OWNER_AUTHORIZES_SEPARATE_FUTURE_TASK_AND_PINS_EXACT_PREPARED_PR_HEAD",
+    "HASH_CHECK_PACKETS_AND_CONTRACTS; ASSIGN_ONE_RUNTIME; FREEZE_RANDOMIZED_TASK_ORDER_AND_BASELINE",
+    "RUN_EIGHT_FRESH_ISOLATED_SUCCESSOR_CONVERSATIONS_ONLY_AFTER_AUTHORIZATION",
+    "LOCK_OUTPUTS_RECEIPTS_AND_PROTOCOL_STATUS_BEFORE_TWO_INDEPENDENT_EVALUATORS_SCORE",
+    "RELEASE_CONDITION_MAP_AFTER_BOTH_SCORE_SHEETS_LOCK",
+    "REPORT_DESCRIPTIVELY_AND_RETURN_FOR_NEW_OWNER_GPT_ADJUDICATION"
+  ],
+  "status": {
+    "successor": "NOT_RUN",
+    "evaluator": "NOT_RUN",
+    "cross_model_execution": "NOT_AUTHORIZED",
+    "r1": "NOT_AUTHORIZED",
+    "canonical_claim_ids": [],
+    "canonical_promotion": "NONE"
+  }
+}

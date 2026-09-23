@@ -1,0 +1,139 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "step": "Step06",
+  "schema_version": "task207-evaluator-condition-map-r0",
+  "scope": "EVALUATOR_ONLY_AFTER_TWO_SCORE_SHEETS_ARE_LOCKED",
+  "condition_count": 4,
+  "replicates_per_condition": 2,
+  "packet_count": 8,
+  "mappings": [
+    {
+      "condition_label": "FACTS",
+      "replicate": "A",
+      "opaque_packet_id": "PKT-7C4A9D",
+      "packet_manifest_sha256": "c76f1d643d9bca8e3d5950d213d8fe7e5ebf68dc5b839021f67328e88d6f5e43",
+      "case_order": [
+        "CASE-02",
+        "CASE-01",
+        "CASE-03"
+      ],
+      "reference_input_sha256s": [],
+      "assignment_basis": "CONTENT_HASH_AND_PREDECLARED_PACKET_ORDER_ONLY"
+    },
+    {
+      "condition_label": "FACTS",
+      "replicate": "B",
+      "opaque_packet_id": "PKT-A7C145",
+      "packet_manifest_sha256": "db3bffbc4dca04552b7aaa724335f6efaddc26548893b7a6ba95ae6dd3d07e93",
+      "case_order": [
+        "CASE-03",
+        "CASE-02",
+        "CASE-01"
+      ],
+      "reference_input_sha256s": [],
+      "assignment_basis": "CONTENT_HASH_AND_PREDECLARED_PACKET_ORDER_ONLY"
+    },
+    {
+      "condition_label": "SKILL",
+      "replicate": "A",
+      "opaque_packet_id": "PKT-05E8B2",
+      "packet_manifest_sha256": "f772236feed302ea24e85b3d827cb9dd847f3225feac46ad5cc2624063e704eb",
+      "case_order": [
+        "CASE-02",
+        "CASE-01",
+        "CASE-03"
+      ],
+      "reference_input_sha256s": [
+        "c734e8e7e272b4b14e868c70196ca068cf59d5cd49ee7063064a836f2a843d4f"
+      ],
+      "assignment_basis": "CONTENT_HASH_AND_PREDECLARED_PACKET_ORDER_ONLY"
+    },
+    {
+      "condition_label": "SKILL",
+      "replicate": "B",
+      "opaque_packet_id": "PKT-92DE30",
+      "packet_manifest_sha256": "9df4a9a8af74a2e18cdf4310e0203917f16ef7244d3a2eb975053ca4aa9a73c4",
+      "case_order": [
+        "CASE-03",
+        "CASE-02",
+        "CASE-01"
+      ],
+      "reference_input_sha256s": [
+        "c734e8e7e272b4b14e868c70196ca068cf59d5cd49ee7063064a836f2a843d4f"
+      ],
+      "assignment_basis": "CONTENT_HASH_AND_PREDECLARED_PACKET_ORDER_ONLY"
+    },
+    {
+      "condition_label": "METHOD",
+      "replicate": "A",
+      "opaque_packet_id": "PKT-D18F63",
+      "packet_manifest_sha256": "c28d63842b7d99bab06102afa25bd0aa924129fe2788771d0e113d3433512754",
+      "case_order": [
+        "CASE-02",
+        "CASE-01",
+        "CASE-03"
+      ],
+      "reference_input_sha256s": [
+        "a4de7849263f7029ec09c341c2552c11b9bd1f646655dbdc490015deddacdc41",
+        "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815"
+      ],
+      "assignment_basis": "CONTENT_HASH_AND_PREDECLARED_PACKET_ORDER_ONLY"
+    },
+    {
+      "condition_label": "METHOD",
+      "replicate": "B",
+      "opaque_packet_id": "PKT-40BC81",
+      "packet_manifest_sha256": "e71550ea614aa32d394f2f6f9b5e29a008d85104f7514b1c389d42a8a5221fb6",
+      "case_order": [
+        "CASE-03",
+        "CASE-02",
+        "CASE-01"
+      ],
+      "reference_input_sha256s": [
+        "a4de7849263f7029ec09c341c2552c11b9bd1f646655dbdc490015deddacdc41",
+        "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815"
+      ],
+      "assignment_basis": "CONTENT_HASH_AND_PREDECLARED_PACKET_ORDER_ONLY"
+    },
+    {
+      "condition_label": "BROKEN_METHOD",
+      "replicate": "A",
+      "opaque_packet_id": "PKT-B6092E",
+      "packet_manifest_sha256": "a8f583c5e19f1356c3488d7819378ee974dacf53ece50e6484b154b02d79057b",
+      "case_order": [
+        "CASE-02",
+        "CASE-01",
+        "CASE-03"
+      ],
+      "reference_input_sha256s": [
+        "50e985efa40be5e901cc5dacf29b0458a04b7862bf7116d7443f0eb7daad6653",
+        "8e8e2a01a4ac75140c48fe3d71f11ba8bee17d756bc0eb7c53d37a96626bb1f2"
+      ],
+      "assignment_basis": "CONTENT_HASH_AND_PREDECLARED_PACKET_ORDER_ONLY"
+    },
+    {
+      "condition_label": "BROKEN_METHOD",
+      "replicate": "B",
+      "opaque_packet_id": "PKT-E3157A",
+      "packet_manifest_sha256": "df44cbeb071e263ee9573dc959ebff920c56168790ad07be3abab50366b6c0e8",
+      "case_order": [
+        "CASE-03",
+        "CASE-02",
+        "CASE-01"
+      ],
+      "reference_input_sha256s": [
+        "50e985efa40be5e901cc5dacf29b0458a04b7862bf7116d7443f0eb7daad6653",
+        "8e8e2a01a4ac75140c48fe3d71f11ba8bee17d756bc0eb7c53d37a96626bb1f2"
+      ],
+      "assignment_basis": "CONTENT_HASH_AND_PREDECLARED_PACKET_ORDER_ONLY"
+    }
+  ],
+  "condition_mapping_release": "AFTER_BOTH_INDEPENDENT_EVALUATOR_SCORE_SHEETS_ARE_LOCKED",
+  "status": {
+    "successor": "NOT_RUN",
+    "evaluator": "NOT_RUN",
+    "canonical_claim_ids": [],
+    "canonical_promotion": "NONE"
+  }
+}

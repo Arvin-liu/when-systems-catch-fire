@@ -1,0 +1,67 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "step": "Step07",
+  "schema_version": "task207-future-task-index-r0",
+  "base_commit": "8e70ba196739cf1a79600e02ace36f90ad2c130c",
+  "future_task_count": 8,
+  "future_successors": [
+    {
+      "opaque_future_task_id": "TASK-31A7",
+      "manifest_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/future-tasks/tasks/TASK-31A7.json",
+      "manifest_sha256": "d57f6d582d4094f07bfd0114279ecd80a3580130f7061a97d8516ddb71dd91f0",
+      "opaque_packet_id": "PKT-40BC81"
+    },
+    {
+      "opaque_future_task_id": "TASK-6C2F",
+      "manifest_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/future-tasks/tasks/TASK-6C2F.json",
+      "manifest_sha256": "250d6caf3b117599d647ebffc4291f9630d43ab17866a438ced8a568a49a913f",
+      "opaque_packet_id": "PKT-7C4A9D"
+    },
+    {
+      "opaque_future_task_id": "TASK-4E90",
+      "manifest_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/future-tasks/tasks/TASK-4E90.json",
+      "manifest_sha256": "565a7520d7152373bb790eb59463535ca99b4d23bc3357d3acc34fd9c57be7e7",
+      "opaque_packet_id": "PKT-E3157A"
+    },
+    {
+      "opaque_future_task_id": "TASK-B2A5",
+      "manifest_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/future-tasks/tasks/TASK-B2A5.json",
+      "manifest_sha256": "2047ae76ecd41ef1eb92885422ccea5d1fb8b4782e508aebdb766c18e796a1b7",
+      "opaque_packet_id": "PKT-05E8B2"
+    },
+    {
+      "opaque_future_task_id": "TASK-993D",
+      "manifest_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/future-tasks/tasks/TASK-993D.json",
+      "manifest_sha256": "b6436a873963a8a7d37a2386531d05ed5bf26a055c0e1c03aa397d66ca55f796",
+      "opaque_packet_id": "PKT-92DE30"
+    },
+    {
+      "opaque_future_task_id": "TASK-0F68",
+      "manifest_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/future-tasks/tasks/TASK-0F68.json",
+      "manifest_sha256": "4b3070f556060bb1c09a2c5cb4fd5cb2eaa1faea41dcfb5adc1145e96684127d",
+      "opaque_packet_id": "PKT-D18F63"
+    },
+    {
+      "opaque_future_task_id": "TASK-712C",
+      "manifest_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/future-tasks/tasks/TASK-712C.json",
+      "manifest_sha256": "fed5454833155460df1d999b1a85707f6716bbbafadc0b694645f9091950cf6d",
+      "opaque_packet_id": "PKT-B6092E"
+    },
+    {
+      "opaque_future_task_id": "TASK-E43B",
+      "manifest_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/future-tasks/tasks/TASK-E43B.json",
+      "manifest_sha256": "177c8994003991555d098314173d0559484e92958eed6a15aa44377d2d57518d",
+      "opaque_packet_id": "PKT-A7C145"
+    }
+  ],
+  "condition_mapping": "WITHHELD_IN_EVALUATOR_SEALED_PACKAGE",
+  "launch_authorization": "NOT_GRANTED_BY_PREPARATION; EXPLICIT_OWNER_AUTHORIZATION_REQUIRED",
+  "same_runtime_configuration_across_all_eight": true,
+  "successor": "NOT_RUN",
+  "evaluator": "NOT_RUN",
+  "cross_model_execution": "NOT_AUTHORIZED",
+  "r1": "NOT_AUTHORIZED",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

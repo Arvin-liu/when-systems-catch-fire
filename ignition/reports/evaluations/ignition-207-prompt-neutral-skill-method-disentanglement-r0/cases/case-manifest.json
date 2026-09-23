@@ -1,0 +1,49 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "step": "Step02",
+  "schema_version": "task207-case-manifest-r0",
+  "base_commit": "8e70ba196739cf1a79600e02ace36f90ad2c130c",
+  "synthetic": true,
+  "personal_data": false,
+  "external_sources_used": false,
+  "cases": [
+    {
+      "case_id": "DISENTANGLE-CASE-01",
+      "structure_signature": "PARALLEL_RESETTABLE_CHANNELS",
+      "candidate_count": 2,
+      "facts_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-01/facts.md",
+      "facts_sha256": "9931b3ef746c4225c6257340642a9e2a6515ad3871e6facc58f3436899507a89",
+      "facts_sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-01/facts.md.sha256",
+      "provenance_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-01/provenance.json",
+      "provenance_sha256": "1b8a577909df6e7cac726d4fb61752dca554100e44001f8074fc60ba7af50060",
+      "provenance_sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-01/provenance.json.sha256"
+    },
+    {
+      "case_id": "DISENTANGLE-CASE-02",
+      "structure_signature": "SINGLE_PATH_NON_RESETTABLE_STATE",
+      "candidate_count": 2,
+      "facts_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-02/facts.md",
+      "facts_sha256": "18731fab6296526ed7d59a03ce7d1d19c2d627b1a3daa3962c3f23e05efe17d8",
+      "facts_sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-02/facts.md.sha256",
+      "provenance_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-02/provenance.json",
+      "provenance_sha256": "3db2f656a753f4234079e142c32a7252763f5c0d1a00ded84f5093d710087a3e",
+      "provenance_sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-02/provenance.json.sha256"
+    },
+    {
+      "case_id": "DISENTANGLE-CASE-03",
+      "structure_signature": "SERIAL_BRIDGE_MISSING_BASELINE",
+      "candidate_count": 2,
+      "facts_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-03/facts.md",
+      "facts_sha256": "418b7d453d7c213a76a1ad3e60518a6809b02719d4152a1c818fb3e2a62bd898",
+      "facts_sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-03/facts.md.sha256",
+      "provenance_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-03/provenance.json",
+      "provenance_sha256": "1b5e5d3157047bc2a920955ad669f9299a0dbb1cdfcb6daa406d1a5874c10f89",
+      "provenance_sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-03/provenance.json.sha256"
+    }
+  ],
+  "case_count": 3,
+  "claim_ceiling": "SYNTHETIC_CASE_FIXTURES_ONLY; NO_EXPERIMENTAL_OUTCOME",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

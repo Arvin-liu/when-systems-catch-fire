@@ -1,0 +1,15 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "case_id": "CASE-02",
+  "source_ref": "synthetic://ignition-207/packet-case-set-r0/case-02",
+  "source_kind": "BUILDER_AUTHORED_SYNTHETIC",
+  "source_path": "cases/CASE-02/facts.md",
+  "source_sha256": "b223541ce8c6c5c06a4ea682b567d88f9915454e8c826820f9dc952d33ab4d90",
+  "synthetic": true,
+  "personal_data": false,
+  "external_sources_used": false,
+  "reused_case_families": [],
+  "scope": "PROVENANCE_ONLY; NO_METHOD_OR_SKILL_ARTIFACT_OR_EVALUATOR_CRITERION",
+  "packet_alias_of": "DISENTANGLE-CASE-02"
+}

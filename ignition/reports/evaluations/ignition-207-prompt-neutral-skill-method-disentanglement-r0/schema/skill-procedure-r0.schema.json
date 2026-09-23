@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Arvin-liu/when-systems-catch-fire/blob/main/ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/schema/skill-procedure-r0.schema.json",
+  "title": "Task207 Experiment-Only Local Procedural Skill R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifact_type",
+    "representation_kind",
+    "schema_version",
+    "task_id",
+    "skill_id",
+    "synthetic",
+    "title",
+    "purpose",
+    "inputs",
+    "applicability_preconditions",
+    "steps",
+    "observable_fields",
+    "stop_conditions",
+    "representation_boundary",
+    "authority_status",
+    "canonical_claim_ids",
+    "canonical_promotion",
+    "successor_status",
+    "evaluator_status"
+  ],
+  "properties": {
+    "artifact_type": {"const": "EVALUATION_EVIDENCE"},
+    "representation_kind": {"const": "REUSABLE_PROCEDURAL_SKILL"},
+    "schema_version": {"const": "task207-skill-artifact-r0"},
+    "task_id": {"const": "IGNITION-20260923-207"},
+    "skill_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]+$"},
+    "synthetic": {"const": true},
+    "title": {"type": "string", "minLength": 5},
+    "purpose": {"type": "string", "minLength": 20},
+    "inputs": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"type": "string", "minLength": 5}
+    },
+    "applicability_preconditions": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"type": "string", "minLength": 10}
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": {"type": "string", "minLength": 15}
+    },
+    "observable_fields": {
+      "type": "array",
+      "minItems": 3,
+      "items": {"type": "string", "minLength": 3}
+    },
+    "stop_conditions": {
+      "type": "array",
+      "minItems": 2,
+      "items": {"type": "string", "minLength": 10}
+    },
+    "representation_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["skill_scope", "method_lineage", "claim_ceiling"],
+      "properties": {
+        "skill_scope": {"const": "LOCAL_ACTION_PROCEDURE_ONLY"},
+        "method_lineage": {"const": "NOT_PRESENT"},
+        "claim_ceiling": {"const": "PROCEDURAL_SKILL_ARTIFACT_DOES_NOT_ESTABLISH_METHOD_INHERITANCE_OR_CAPABILITY"}
+      }
+    },
+    "authority_status": {"const": "RESEARCH_ONLY"},
+    "canonical_claim_ids": {"const": []},
+    "canonical_promotion": {"const": "NONE"},
+    "successor_status": {"const": "NOT_RUN"},
+    "evaluator_status": {"const": "NOT_RUN"}
+  }
+}

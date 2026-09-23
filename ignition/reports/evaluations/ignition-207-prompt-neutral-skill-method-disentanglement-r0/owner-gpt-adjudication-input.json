@@ -1,0 +1,101 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "step": "Step00",
+  "role": "BUILDER_EXPERIMENTAL_DESIGN_PREPARATION",
+  "command_authority": {
+    "repository": "Arvin-liu/1111",
+    "path": "agent-commands/IGNITION-20260923-207.md",
+    "blob_sha": "65433df5fce80224f3d78ddb9a740d76134c5dbd"
+  },
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "task206_exact_head": "8e70ba196739cf1a79600e02ace36f90ad2c130c",
+  "task206_input_hashes": {
+    "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/independent-evaluation-report.md": "e1b9191daf6ce17abc52097ea948cdfbdc515025c34ded7458d0d03c7cb08235",
+    "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/independent-evaluation-verdict.json": "4843d8d34dabf5247b2ce6988dee47325442bd7037f2a118da84928710ebfc7c",
+    "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/replication-analysis.md": "99de016f5493bd4d22fb8bcd7ec5a27ef9c4b0f67d1aab41cf1c768d351d4ef8",
+    "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/replicated-method-use-verdict.json": "ceb35278fc6d18106431ce32d391fb701b24f8c64193cfb29aa2a557ba581434",
+    "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/negative-control-audit.md": "644fb7d1018fa11062dea5ce0293739b404d1acd9a1502fbf841424f6249822d2"
+  },
+  "task198_prompt_confound_audit": {
+    "claim": "The three condition-specific prompts differ in both path and final bytes; Task206 condition association cannot be attributed to the method artifact alone.",
+    "representative_prompt_paths_and_sha256": [
+      {
+        "condition_as_seen_in_historical_builder_record": "FACTS_ONLY",
+        "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-a/task-prompt.md",
+        "sha256": "f33432b877265d2130256bec2568f28fa67132d77089e4eae0b53c553c0f6500",
+        "instruction_difference": "Facts/provenance only; do not reconstruct method history."
+      },
+      {
+        "condition_as_seen_in_historical_builder_record": "METHOD_TRACE",
+        "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/method-a/task-prompt.md",
+        "sha256": "655178187fe0f43c1aeb02314a79bdf680d7809d7fff457c95f5127e47a357a6",
+        "instruction_difference": "Record candidate/selection and apply the supplied trace."
+      },
+      {
+        "condition_as_seen_in_historical_builder_record": "BROKEN_METHOD_TRACE_CONTROL",
+        "path": "ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/task-prompt.md",
+        "sha256": "0b8ef9ae66dcc1113be445ce70bfe4aeb5a7fad871e74e432cc78f178ca0c7e3",
+        "instruction_difference": "Keep absent selection/use links absent; do not complete them."
+      }
+    ],
+    "three_prompt_hashes_distinct": true,
+    "task206_condition_association": "SUPPORTED_UNDER_THE_PREDECLARED_PROTOCOL",
+    "causal_effect_of_method_artifact": "NOT_ESTABLISHED"
+  },
+  "task186_research_inputs": {
+    "exact_head": "0d1d3cdabdc674d7bc196d7a1a64345ff4c27c56",
+    "scope": "RESEARCH_INPUT_ONLY; NO_EXTERNAL_WEB_EXPANSION",
+    "files": {
+      "ignition/reports/external-research/IGNITION-20260918-186/inheritance-distinction-report.md": "7311fb74d37c235bf63965d4f5bb82bc6d99fd5daffaaf2a82f17eecd68ff725",
+      "ignition/reports/external-research/IGNITION-20260918-186/minimal-experiment-candidates.md": "884e97af3b7f6931967da671e744b8c1a4d30023e2390fa2877be783e314c096"
+    }
+  },
+  "frozen_owner_gpt_adjudication": {
+    "TASK206_EVIDENCE_VALIDITY": "ACCEPT",
+    "TASK206_REPLICATED_METHOD_USE_SIGNAL": "ACCEPT_BOUNDED_SUPPORTED_EVIDENCE",
+    "TASK206_NEGATIVE_CONTROLS": "ACCEPT_12_OF_12_NOT_TRIGGERED",
+    "TASK206_REPLICATION_SCOPE": [
+      "SIX_CONVERSATION_LEVEL_REPLICATES",
+      "THREE_CASES_PER_CONVERSATION_ARE_NOT_INDEPENDENT"
+    ],
+    "TASK206_CONDITION_ASSOCIATION": "SUPPORTED_UNDER_THE_PREDECLARED_PROTOCOL",
+    "CAUSAL_EFFECT_OF_METHOD_ARTIFACT": "NOT_ESTABLISHED",
+    "SKILL_INHERITANCE_VS_METHOD_INHERITANCE": "NOT_SEPARATED",
+    "MODEL_CONFIGURATION_ATTESTATION": "COMMAND_ASSIGNED_NOT_INDEPENDENTLY_VERIFIED",
+    "GENERAL_COGNITIVE_INHERITANCE": "NOT_ESTABLISHED",
+    "COGNITIVE_INHERITANCE_R1": "NOT_AUTHORIZED",
+    "CROSS_MODEL_TRANSFER": "NOT_YET_AUTHORIZED",
+    "NEXT_EXPERIMENT": "AUTHORIZE_PROMPT_NEUTRAL_SKILL_VS_METHOD_DISENTANGLEMENT_R0",
+    "MODEL_RSI": "NOT_AUTHORIZED",
+    "WEIGHT_TRAINING": "NOT_AUTHORIZED",
+    "CANONICAL_PROMOTION": "NOT_AUTHORIZED"
+  },
+  "task206_residuals": [
+    {
+      "id": "201-FACTS-B-STAGED-TRACKED-DELETIONS",
+      "task206_disposition": "MECHANICALLY_BENIGN_ADVISORY; DID_NOT_INVALIDATE_TASK206",
+      "task207_future_trial_rule": "ANY_TRACKED_DELETION_OR_MODIFICATION_OR_STAGING_INVALIDATES_THE_TRIAL"
+    },
+    {
+      "id": "NC-06-LOCATOR-TYPO",
+      "locator": "ignition/reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/frozen-successor-evidence/frozen-successor-evidence/202-method-a/successor-response.jsonl",
+      "disposition": "DUPLICATED_PATH_SEGMENT_IN_REPORT_LOCATOR_ONLY; FROZEN_BYTES_AND_CRITERION_RESULT_UNCHANGED"
+    },
+    {
+      "id": "RUNTIME-MODEL-CONFIGURATION",
+      "disposition": "COMMAND_ASSIGNED_NOT_INDEPENDENTLY_VERIFIED"
+    }
+  ],
+  "builder_run_status": {
+    "successor": "NOT_RUN",
+    "evaluator": "NOT_RUN",
+    "cross_model_transfer": "NOT_RUN",
+    "r1": "NOT_AUTHORIZED",
+    "canonical_promotion": "NONE",
+    "model_rsi": "NOT_AUTHORIZED",
+    "weight_training": "NOT_AUTHORIZED"
+  },
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

@@ -1,0 +1,116 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "step": "Step03",
+  "base_commit": "8e70ba196739cf1a79600e02ace36f90ad2c130c",
+  "scope": "TASK_LOCAL_SYNTHETIC_INPUT_ARTIFACTS_ONLY",
+  "artifacts": [
+    {
+      "opaque_artifact_id": "item-a",
+      "representation_role": "REUSABLE_PROCEDURAL_SKILL",
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-a.json",
+      "sha256": "c734e8e7e272b4b14e868c70196ca068cf59d5cd49ee7063064a836f2a843d4f",
+      "sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-a.json.sha256",
+      "source_kind": "BUILDER_AUTHORED_SYNTHETIC",
+      "source_ref": "synthetic://ignition-207/skill/paired-readout-comparison-r0",
+      "source_path": null,
+      "source_sha256": null
+    },
+    {
+      "opaque_artifact_id": "item-b-history",
+      "representation_role": "METHOD_SOURCE_HISTORY",
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-b-history.md",
+      "sha256": "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815",
+      "sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-b-history.md.sha256",
+      "source_kind": "BUILDER_AUTHORED_SYNTHETIC",
+      "source_ref": "synthetic://ignition-207/calibration/gated-local-measurement-r0",
+      "source_path": null,
+      "source_sha256": null
+    },
+    {
+      "opaque_artifact_id": "item-b",
+      "representation_role": "COMPLETE_METHOD_USE_TRACE_R0",
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-b.json",
+      "sha256": "a4de7849263f7029ec09c341c2552c11b9bd1f646655dbdc490015deddacdc41",
+      "sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-b.json.sha256",
+      "source_kind": "BUILDER_AUTHORED_SYNTHETIC",
+      "source_ref": "synthetic://ignition-207/calibration/gated-local-measurement-r0",
+      "source_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-b-history.md",
+      "source_sha256": "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815"
+    },
+    {
+      "opaque_artifact_id": "item-c-source",
+      "representation_role": "PARTIAL_LINEAGE_SOURCE",
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-c-source.md",
+      "sha256": "8e8e2a01a4ac75140c48fe3d71f11ba8bee17d756bc0eb7c53d37a96626bb1f2",
+      "sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-c-source.md.sha256",
+      "source_kind": "BUILDER_AUTHORED_SYNTHETIC",
+      "source_ref": "synthetic://ignition-207/calibration/fragment-r7",
+      "source_path": null,
+      "source_sha256": null
+    },
+    {
+      "opaque_artifact_id": "item-c",
+      "representation_role": "LINEAGE_FRAGMENT",
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-c.json",
+      "sha256": "50e985efa40be5e901cc5dacf29b0458a04b7862bf7116d7443f0eb7daad6653",
+      "sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-c.json.sha256",
+      "source_kind": "BUILDER_AUTHORED_SYNTHETIC",
+      "source_ref": "synthetic://ignition-207/calibration/fragment-r7",
+      "source_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-c-source.md",
+      "source_sha256": "8e8e2a01a4ac75140c48fe3d71f11ba8bee17d756bc0eb7c53d37a96626bb1f2"
+    },
+    {
+      "opaque_artifact_id": "skill-procedure-r0",
+      "representation_role": "TASK_LOCAL_SKILL_SCHEMA",
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/schema/skill-procedure-r0.schema.json",
+      "sha256": "d4f6e5029afacd9eb044920f39b7a23b6acefe6a3e9e8078578d10f7528d30c9",
+      "sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/schema/skill-procedure-r0.schema.json.sha256",
+      "source_kind": "TASK_LOCAL_SCHEMA_AUTHORED_FOR_THIS_PREPARATION",
+      "source_ref": "synthetic://ignition-207/schema/skill-procedure-r0",
+      "source_path": null,
+      "source_sha256": null
+    }
+  ],
+  "reused_contracts": [
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/schema/method-use-trace-r0.schema.json",
+      "sha256": "e53532c8338c76d83b72c79edbb3780800d190ce9338c194c7ba2f03eec69e8b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/tools/validate_method_use_trace_r0.py",
+      "sha256": "7adcd2c56acb520b26e2f9e126f0ac258ec5f794582e08c0e2c993fcb4f527a5"
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+      "sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+    }
+  ],
+  "method_trace_lineage": {
+    "complete_trace_segment_count": 6,
+    "complete_trace_source_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-b-history.md",
+    "complete_trace_source_sha256": "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815",
+    "excerpt_segment_kinds": [
+      "METHOD_CANDIDATE",
+      "CONTEXT",
+      "OBSERVED_OUTCOME_OR_FAILURE"
+    ],
+    "excerpt_source_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/payload/item-c-source.md",
+    "excerpt_source_sha256": "8e8e2a01a4ac75140c48fe3d71f11ba8bee17d756bc0eb7c53d37a96626bb1f2",
+    "missing_lineage_kinds": [
+      "SELECTION_RATIONALE",
+      "METHOD_USE_EVENT",
+      "REVISION_OR_DISPOSITION"
+    ]
+  },
+  "skill_boundary": {
+    "method_lineage": "NOT_PRESENT",
+    "case_answers_included": false
+  },
+  "status": {
+    "successor": "NOT_RUN",
+    "evaluator": "NOT_RUN",
+    "canonical_claim_ids": [],
+    "canonical_promotion": "NONE"
+  }
+}

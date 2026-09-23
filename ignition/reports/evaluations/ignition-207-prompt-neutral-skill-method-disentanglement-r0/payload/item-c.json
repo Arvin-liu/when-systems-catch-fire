@@ -1,0 +1,102 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "task207-fragment-r7",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate-note",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-207/calibration/fragment-r7",
+      "source_sha256": "8e8e2a01a4ac75140c48fe3d71f11ba8bee17d756bc0eb7c53d37a96626bb1f2",
+      "exact_locator": "item-c-source.md#entry-1",
+      "summary": "A candidate identifier is present in one source entry.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "source entry 1"
+        ],
+        "open_questions": [
+          "replicate context is unspecified"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "the candidate identifier is recorded"
+        ],
+        "forbidden_inferences": [
+          "causation",
+          "capability",
+          "inheritance"
+        ]
+      },
+      "candidate_ref": "method:paired-readout-r0"
+    },
+    {
+      "segment_id": "context-note",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-207/calibration/fragment-r7",
+      "source_sha256": "8e8e2a01a4ac75140c48fe3d71f11ba8bee17d756bc0eb7c53d37a96626bb1f2",
+      "exact_locator": "item-c-source.md#entry-2",
+      "summary": "A separate entry records two counters and their starting labels.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "source entry 2"
+        ],
+        "open_questions": [
+          "source sequence is not given"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "the context note is present"
+        ],
+        "forbidden_inferences": [
+          "causation",
+          "capability",
+          "inheritance"
+        ]
+      }
+    },
+    {
+      "segment_id": "outcome-note",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-207/calibration/fragment-r7",
+      "source_sha256": "8e8e2a01a4ac75140c48fe3d71f11ba8bee17d756bc0eb7c53d37a96626bb1f2",
+      "exact_locator": "item-c-source.md#entry-3",
+      "summary": "A later entry records two terminal counter values.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "source entry 3"
+        ],
+        "open_questions": [
+          "source sequence is not given"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "the terminal values are separately recorded"
+        ],
+        "forbidden_inferences": [
+          "causation",
+          "capability",
+          "inheritance"
+        ]
+      },
+      "outcome_type": "OBSERVED_OUTCOME",
+      "observed_outcome": "Terminal counter A is 6 and terminal counter B is 10."
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

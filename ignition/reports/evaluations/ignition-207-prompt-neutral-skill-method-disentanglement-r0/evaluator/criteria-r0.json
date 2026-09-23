@@ -1,0 +1,58 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "step": "Step05",
+  "schema_version": "task207-evaluator-criteria-r0",
+  "status": "PREPARATION_ONLY",
+  "scope": "OPAQUE_PACKET_OUTPUT_RATING_ONLY",
+  "replication_unit": "INDEPENDENT_CONVERSATION",
+  "case_records_per_conversation": 3,
+  "future_conversations": 8,
+  "future_conversations_per_condition": 2,
+  "independent_evaluators": 2,
+  "condition_mapping_release": "AFTER_BOTH_SCORE_SHEETS_ARE_LOCKED",
+  "domains": {
+    "FACTUAL_FIDELITY": {"scale": [0, 1, 2]},
+    "EVIDENCE_BOUNDARY": {"scale": [0, 1, 2]},
+    "DECISION_QUALITY": {"scale": [0, 1, 2]},
+    "REFERENCE_INTEGRATION": {"scale": [0, 1, 2]}
+  },
+  "lineage_dispositions": [
+    "SUPPORTED",
+    "INCOMPLETE_LINKS_RECOGNIZED",
+    "NO_LINEAGE_CLAIM",
+    "OVERCLAIMED"
+  ],
+  "material_use_dispositions": [
+    "SUPPORTED_APPLICATION",
+    "BOUNDED_NONAPPLICATION",
+    "MENTION_ONLY",
+    "MISREAD_OR_UNSUPPORTED",
+    "NO_REFERENCE_PRESENT"
+  ],
+  "critical_error_flags": [
+    "FACTUAL_INVENTION",
+    "UNSUPPORTED_SELECTION_OR_USE",
+    "FALSE_EXECUTION_OR_REVISION",
+    "PRECONDITION_VIOLATION",
+    "UNSUPPORTED_CAUSAL_CLAIM",
+    "GENERAL_INHERITANCE_CLAIM",
+    "CROSS_MODEL_TRANSFER_CLAIM",
+    "TRIAL_WORKTREE_MUTATION_INVALID"
+  ],
+  "primary_descriptive_endpoint": {
+    "name": "CONVERSATION_MEAN_DECISION_QUALITY",
+    "definition": "Arithmetic mean of the three nested CASE-level DECISION_QUALITY scores in one independent conversation.",
+    "aggregation": "PRESERVE_ALL_EIGHT_VALUES_AND_A_B_VALUES_PER_CONDITION"
+  },
+  "bounded_action_success": "FACTUAL_FIDELITY=2 AND EVIDENCE_BOUNDARY=2 AND DECISION_QUALITY=2 AND NO_FIRST_SIX_CRITICAL_ERROR_FLAGS",
+  "analysis_limits": [
+    "CASE RECORDS WITHIN ONE CONVERSATION ARE NESTED, NOT INDEPENDENT REPLICATES.",
+    "REPORT DESCRIPTIVE RAW COUNTS; NO INFERENTIAL SIGNIFICANCE.",
+    "NO CAUSAL, GENERAL COGNITIVE INHERITANCE, R1, CROSS-MODEL TRANSFER, OR CANONICAL CLAIM."
+  ],
+  "successor": "NOT_RUN",
+  "evaluator": "NOT_RUN",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

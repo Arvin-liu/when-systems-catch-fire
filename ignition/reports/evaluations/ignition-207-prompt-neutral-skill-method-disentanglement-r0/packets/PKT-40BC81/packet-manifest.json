@@ -1,0 +1,75 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "schema_version": "task207-successor-packet-r0",
+  "packet_id": "PKT-40BC81",
+  "base_commit": "8e70ba196739cf1a79600e02ace36f90ad2c130c",
+  "prompt": {
+    "path": "neutral-task-prompt.md",
+    "sha256": "32c4f9659f66cff4cc7690bdf2ec2166cb3bb906f48251a58099fe5580312584"
+  },
+  "read_manifest": {
+    "path": "read-manifest.json",
+    "sha256": "23ceb556e34cecdde4d34eca44b72c9c95233b8fa1792659e76c97e492aa57aa"
+  },
+  "freeze_contract": {
+    "path": "freeze-contract.json",
+    "sha256": "51ee0490892ae70b6bf0c0d4e411d88b40c3a39698d3a81307a8a940332d5f28"
+  },
+  "output_schema": {
+    "path": "output-schema.json",
+    "sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+  },
+  "case_order": [
+    "CASE-03",
+    "CASE-02",
+    "CASE-01"
+  ],
+  "cases": [
+    {
+      "case_id": "CASE-03",
+      "facts_path": "cases/CASE-03/facts.md",
+      "facts_sha256": "d199d3f31b9b3377b5e67e7a837500e2f7cf7a773bab69cd5bad6eb4d8b0667c",
+      "facts_sha256_sidecar": "cases/CASE-03/facts.md.sha256",
+      "provenance_path": "cases/CASE-03/provenance.json",
+      "provenance_sha256": "984345bc3c20313e9675f7b78e399a57e08bb0fd7bb280b2507481d191685896",
+      "provenance_sha256_sidecar": "cases/CASE-03/provenance.json.sha256"
+    },
+    {
+      "case_id": "CASE-02",
+      "facts_path": "cases/CASE-02/facts.md",
+      "facts_sha256": "b223541ce8c6c5c06a4ea682b567d88f9915454e8c826820f9dc952d33ab4d90",
+      "facts_sha256_sidecar": "cases/CASE-02/facts.md.sha256",
+      "provenance_path": "cases/CASE-02/provenance.json",
+      "provenance_sha256": "3dce34e50a0ff91faa41c49f4d1b9f6a298c6c96c0fd715649e4dcd56a8ce702",
+      "provenance_sha256_sidecar": "cases/CASE-02/provenance.json.sha256"
+    },
+    {
+      "case_id": "CASE-01",
+      "facts_path": "cases/CASE-01/facts.md",
+      "facts_sha256": "395fd3299f4a15ef2e5e0703545bc997ad9951cefc97a04a5b9dc67b20f7b07d",
+      "facts_sha256_sidecar": "cases/CASE-01/facts.md.sha256",
+      "provenance_path": "cases/CASE-01/provenance.json",
+      "provenance_sha256": "1bb636b7620631f035e1c864456ecd56521f0ecaec5018ab45cb5d1b118cdf17",
+      "provenance_sha256_sidecar": "cases/CASE-01/provenance.json.sha256"
+    }
+  ],
+  "reference_inputs": [
+    {
+      "path": "reference-material/entry.json",
+      "sha256": "a4de7849263f7029ec09c341c2552c11b9bd1f646655dbdc490015deddacdc41",
+      "sha256_sidecar": "reference-material/entry.json.sha256"
+    },
+    {
+      "path": "reference-material/context.md",
+      "sha256": "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815",
+      "sha256_sidecar": "reference-material/context.md.sha256"
+    }
+  ],
+  "status": {
+    "future_successor": "NOT_RUN",
+    "future_evaluator": "NOT_RUN",
+    "canonical_claim_ids": [],
+    "canonical_promotion": "NONE"
+  }
+}
