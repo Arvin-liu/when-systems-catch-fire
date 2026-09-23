@@ -5,9 +5,24 @@
   "schema_version": "task207-path-accounting-r0",
   "base_commit": "8e70ba196739cf1a79600e02ace36f90ad2c130c",
   "pre_step08_head": "0ca97b283f0955a708f6bfe8f24762b3672c0896",
-  "scope": "ALL_TASK207_PREPARATION_FILES; NO_REPOSITORY_WIDE_RECLASSIFICATION",
+  "scope": "OWNER_AUTHORIZED_TASK207_R2_NARROW_DERIVED_PROJECTION_CLOSURE",
+  "historical_r1_scope": "ALL_TASK207_PREPARATION_FILES; NO_REPOSITORY_WIDE_RECLASSIFICATION",
+  "r2_scope_receipt": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/provenance/task207-r2-scope-repair-receipt.json",
+  "r2_authorized_non_task207_paths": [
+    "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+    "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+    "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+    "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "ignition/data/governance/human-results/config.json",
+    "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+    "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+    "ignition/data/governance/knowledge-experience/manifest.json",
+    "ignition/data/governance/knowledge-experience/search-index.jsonl",
+    "ignition/data/publication/fire-seeds/seed-census.json",
+    "ignition/docs/foundation/nonfunction-claim-adjudication-index.md"
+  ],
   "task_root": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0",
-  "path_count_excluding_this_ledger_and_sidecars": 282,
+  "path_count_excluding_this_ledger_and_sidecars": 283,
   "paths": [
     {
       "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-01/facts.md",
@@ -2892,6 +2907,17 @@
       "sha256_sidecar": null
     },
     {
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/provenance/task207-r2-scope-repair-receipt.json",
+      "sha256": "7d184e542da7599ea98f74e403d1dc25f7d0238ddeebe393a0369d010350bf22",
+      "size_bytes": 96820,
+      "path_class": "PROVENANCE_OR_PACKET_PLAN",
+      "artifact_type": "EVALUATION_EVIDENCE",
+      "canonical_claim_ids": [],
+      "canonical_promotion": "NONE",
+      "successor_or_evaluator_execution": "NOT_RUN",
+      "sha256_sidecar": null
+    },
+    {
       "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/representation-sufficiency.json",
       "sha256": "0b9fce01c86e70c9e4d96268b1969186001910067aa31e4db16538b44bb819b6",
       "size_bytes": 5578,
@@ -2992,8 +3018,8 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/tools/build_step09_path_ledger.py",
-      "sha256": "0c26c7ceaa7ec2e815bbb071edbb1b5d58ff1b0a2ac5fd16c0087852042faf95",
-      "size_bytes": 7539,
+      "sha256": "db32747d272c2269d0ff7fd1f62dcbe78d5e5c246e825a75968845a85eb377bb",
+      "size_bytes": 10442,
       "path_class": "BUILDER_OR_VALIDATOR",
       "artifact_type": "EVALUATION_EVIDENCE",
       "canonical_claim_ids": [],
@@ -3102,8 +3128,8 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/tools/validate_step09_path_ledger.py",
-      "sha256": "05243e636115cf87a58167570c355cb74c771b829f09b8b1cd3d1a28d2b66688",
-      "size_bytes": 5127,
+      "sha256": "93cb49993fed5617fe320992140aa2ecc3989122d9e692112fc671e3a1c67e5c",
+      "size_bytes": 14633,
       "path_class": "BUILDER_OR_VALIDATOR",
       "artifact_type": "EVALUATION_EVIDENCE",
       "canonical_claim_ids": [],
@@ -3123,18 +3149,154 @@
   "downstream_projections": [
     {
       "target": "human-results",
-      "required": false,
-      "disposition": "NO_PROPAGATION_REQUIRED",
-      "proof": "This branch adds design/preparation artifacts only; it contains no Successor output, evaluator result, accepted empirical outcome, or canonical claim ID, and no changed path is outside this Task207 evaluation directory."
+      "semantic_canonical_propagation_required": false,
+      "mechanical_isolation_required": true,
+      "exact_excluded_prefix": "reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/",
+      "disposition": "TASK207_SUBTREE_EXCLUDED_FROM_DISCOVERY",
+      "proof": "The exact Task207 experiment subtree is excluded by the existing human-results prefix filter; unrelated evaluation reports remain discoverable."
     },
     {
       "target": "Foundation / Current / knowledge / Fire Seeds / self-correction",
-      "required": false,
-      "disposition": "UNCHANGED",
-      "proof": "The exact-base branch diff is scoped entirely under the Task207 evaluation directory; no source projection or canonical path is changed."
+      "semantic_canonical_propagation_required": false,
+      "mechanical_generator_runs_recorded_in": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/provenance/task207-r2-scope-repair-receipt.json",
+      "disposition": "DETERMINISTIC_DERIVED_OUTPUTS_ONLY",
+      "proof": "Actual mechanical generator runs and exact changed paths are recorded in the R2 receipt; canonical claims and identities remain unchanged."
     }
   ],
-  "projection_generators_run": [],
+  "projection_generators_run": [
+    {
+      "changed_paths": [
+        "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
+      ],
+      "check_command": "python3 tools/foundation/validate_repository_path_classification.py --check",
+      "check_status": "PASS",
+      "name": "repository_path_classification",
+      "output_paths": [
+        "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
+      ],
+      "run_command": "python3 tools/foundation/validate_repository_path_classification.py --generate",
+      "script": "ignition/tools/foundation/validate_repository_path_classification.py",
+      "script_blob_at_start": "e1bb7bf5d9e738af4417a7cd6cbbfe50fa156f33",
+      "status": "PASS",
+      "tracked_paths_after_generation": 5213,
+      "unresolved_paths": 0
+    },
+    {
+      "canonical_promotion": "NONE",
+      "changed_paths": [
+        "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+        "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+        "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+        "ignition/docs/foundation/nonfunction-claim-adjudication-index.md"
+      ],
+      "check_command": "python3 tools/foundation/adjudicate_nonfunction_claims.py --check",
+      "check_status": "PASS",
+      "evaluation_evidence_auto_discovery": false,
+      "name": "nonfunction_claim_projections",
+      "output_paths": [
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+        "ignition/data/foundation/nonfunction-claims/adjudication-ledger.jsonl",
+        "ignition/data/foundation/nonfunction-claims/evidence-lineage.jsonl",
+        "ignition/data/foundation/nonfunction-claims/dependency-graph.jsonl",
+        "ignition/data/foundation/nonfunction-claims/inference-risk-report.jsonl",
+        "ignition/data/foundation/nonfunction-claims/conclusion-rebound-report.jsonl",
+        "ignition/data/foundation/nonfunction-claims/public-surface-report.jsonl",
+        "ignition/data/foundation/nonfunction-claims/unresolved-quarantine.jsonl",
+        "ignition/data/foundation/nonfunction-claims/supersession-lineage.jsonl",
+        "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+        "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+        "ignition/data/foundation/nonfunction-claims/claim-inventory.csv",
+        "ignition/docs/foundation/nonfunction-claim-adjudication-index.md"
+      ],
+      "precheck_command": "python3 tools/foundation/adjudicate_nonfunction_claims.py --check",
+      "precheck_drift_paths": [
+        "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+        "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+        "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+        "ignition/docs/foundation/nonfunction-claim-adjudication-index.md"
+      ],
+      "precheck_status": "EXPECTED_BASELINE_DRIFT_REPRODUCED",
+      "run_command": "python3 tools/foundation/adjudicate_nonfunction_claims.py",
+      "script": "ignition/tools/foundation/adjudicate_nonfunction_claims.py",
+      "script_blob_at_start": "e8eee317505fb674588bbc07163d6ec54aaa4e5e",
+      "status": "PASS",
+      "unchanged_declared_outputs": [
+        "ignition/data/foundation/nonfunction-claims/adjudication-ledger.jsonl",
+        "ignition/data/foundation/nonfunction-claims/claim-inventory.csv",
+        "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+        "ignition/data/foundation/nonfunction-claims/conclusion-rebound-report.jsonl",
+        "ignition/data/foundation/nonfunction-claims/dependency-graph.jsonl",
+        "ignition/data/foundation/nonfunction-claims/evidence-lineage.jsonl",
+        "ignition/data/foundation/nonfunction-claims/inference-risk-report.jsonl",
+        "ignition/data/foundation/nonfunction-claims/public-surface-report.jsonl",
+        "ignition/data/foundation/nonfunction-claims/supersession-lineage.jsonl",
+        "ignition/data/foundation/nonfunction-claims/unresolved-quarantine.jsonl"
+      ]
+    },
+    {
+      "name": "knowledge_experience",
+      "script": "ignition/tools/governance/build_knowledge_experience.py",
+      "script_blob_at_start": "3bdeaf4d91677539c403f47a607c3aee246a5a28",
+      "precheck_command": "python3 tools/governance/build_knowledge_experience.py --check",
+      "precheck_drift_paths": [
+        "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+        "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+        "ignition/data/governance/knowledge-experience/search-index.jsonl",
+        "ignition/data/governance/knowledge-experience/manifest.json"
+      ],
+      "precheck_status": "EXPECTED_BASELINE_DRIFT_REPRODUCED",
+      "run_command": "python3 tools/governance/build_knowledge_experience.py",
+      "status": "PASS",
+      "output_paths": [
+        "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+        "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+        "ignition/data/governance/knowledge-experience/search-index.jsonl",
+        "ignition/data/governance/knowledge-experience/manifest.json"
+      ],
+      "changed_paths": [
+        "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+        "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+        "ignition/data/governance/knowledge-experience/search-index.jsonl",
+        "ignition/data/governance/knowledge-experience/manifest.json"
+      ],
+      "check_command": "python3 tools/governance/build_knowledge_experience.py --check",
+      "check_status": "PASS",
+      "summary_counts": {
+        "cards": 725,
+        "changes": 618,
+        "layered": 646,
+        "search": 24807
+      },
+      "fixed_point_status": "PASS"
+    },
+    {
+      "name": "fire_seeds_census",
+      "script": "ignition/tools/publication/build_fire_seed_census.py",
+      "script_blob_at_start": "e4203fd97f35f2cff6a35ef02a0e17dc7d5d5f98",
+      "precheck_command": "python3 tools/publication/build_fire_seed_census.py --check",
+      "precheck_drift_paths": [
+        "ignition/data/publication/fire-seeds/seed-census.json"
+      ],
+      "precheck_status": "EXPECTED_BASELINE_DRIFT_REPRODUCED",
+      "run_command": "python3 tools/publication/build_fire_seed_census.py",
+      "status": "PASS",
+      "output_paths": [
+        "ignition/data/publication/fire-seeds/seed-census.json"
+      ],
+      "changed_paths": [
+        "ignition/data/publication/fire-seeds/seed-census.json"
+      ],
+      "check_command": "python3 tools/publication/build_fire_seed_census.py --check",
+      "check_status": "PASS",
+      "fixed_point_status": "PASS",
+      "summary_counts": {
+        "seeds": 64,
+        "sources": 712,
+        "layered_origins": 646
+      }
+    }
+  ],
   "canonical_claim_ids": [],
   "canonical_promotion": "NONE",
   "successor": "NOT_RUN",

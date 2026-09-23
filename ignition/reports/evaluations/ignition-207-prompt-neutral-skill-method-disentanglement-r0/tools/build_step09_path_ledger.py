@@ -16,7 +16,10 @@ TASK_PREFIX = TASK_DIR.relative_to(REPO_ROOT).as_posix() + "/"
 BASE_COMMIT = "8e70ba196739cf1a79600e02ace36f90ad2c130c"
 LEDGER_PATH = TASK_DIR / "provenance/path-accounting-r0.json"
 LEDGER_MD = TASK_DIR / "provenance/path-accounting-r0.md"
+R2_RECEIPT_PATH = TASK_DIR / "provenance/task207-r2-scope-repair-receipt.json"
 SELF_PATHS = {LEDGER_PATH, LEDGER_MD}
+R1_HISTORICAL_SCOPE = "ALL_TASK207_PREPARATION_FILES; NO_REPOSITORY_WIDE_RECLASSIFICATION"
+R2_SCOPE = "OWNER_AUTHORIZED_TASK207_R2_NARROW_DERIVED_PROJECTION_CLOSURE"
 
 
 def sha256(path: Path) -> str:
@@ -56,6 +59,28 @@ def repo_rel(path: Path) -> str:
     return path.relative_to(REPO_ROOT).as_posix()
 
 
+def read_r2_receipt() -> dict:
+    if not R2_RECEIPT_PATH.is_file():
+        raise SystemExit("missing Task207 R2 scope-repair receipt")
+    return json.loads(R2_RECEIPT_PATH.read_text(encoding="utf-8"))
+
+
+def current_changed_paths() -> list[str]:
+    commands = [
+        ["git", "diff", "--name-only", f"{BASE_COMMIT}...HEAD"],
+        ["git", "diff", "--cached", "--name-only"],
+        ["git", "diff", "--name-only"],
+        ["git", "ls-files", "--others", "--exclude-standard"],
+    ]
+    paths: set[str] = set()
+    for command in commands:
+        result = subprocess.run(command, cwd=REPO_ROOT, text=True, capture_output=True, check=False)
+        if result.returncode != 0:
+            raise SystemExit(result.stderr.strip() or "changed-path enumeration failed")
+        paths.update(line for line in result.stdout.splitlines() if line)
+    return sorted(paths)
+
+
 def main() -> int:
     rows = []
     for root, dirs, files in os.walk(TASK_DIR, followlinks=False):
@@ -65,7 +90,7 @@ def main() -> int:
             if path in SELF_PATHS or path.name in {"path-accounting-r0.json.sha256", "path-accounting-r0.md.sha256"}:
                 continue
             if path.is_symlink() or not path.is_file():
-                raise SystemExit(f"unexpected non-regular Task207 path: {path}")
+                raise SystemExit("unexpected non-regular Task207 path: " + repo_rel(path))
             category, artifact_type = classify(path)
             rel = repo_rel(path)
             rows.append(
@@ -83,20 +108,26 @@ def main() -> int:
             )
     rows.sort(key=lambda row: row["path"])
 
-    path_diff = subprocess.run(
-        ["git", "diff", "--name-only", f"{BASE_COMMIT}...HEAD"],
-        cwd=REPO_ROOT,
-        text=True,
-        capture_output=True,
-        check=False,
-    )
-    if path_diff.returncode != 0:
-        raise SystemExit(path_diff.stderr.strip() or "git diff path accounting failed")
-    changed_paths = [line for line in path_diff.stdout.splitlines() if line]
+    receipt = read_r2_receipt()
+    if receipt.get("authorization", {}).get("r1_scope_historical_verbatim") != R1_HISTORICAL_SCOPE:
+        raise SystemExit("R1 historical scope is missing or changed in the R2 receipt")
+    if receipt.get("authorization", {}).get("r2_scope") != R2_SCOPE:
+        raise SystemExit("R2 authorization scope is missing or changed")
+    allowed_non_task207 = receipt.get("exact_non_task207_allowlist", [])
+    if not isinstance(allowed_non_task207, list) or len(set(allowed_non_task207)) != len(allowed_non_task207):
+        raise SystemExit("R2 non-Task207 allowlist is malformed or duplicated")
+    if any(not isinstance(path, str) or not path.startswith("ignition/") or path.endswith("/") or "*" in path for path in allowed_non_task207):
+        raise SystemExit("R2 non-Task207 allowlist must contain exact repository file paths only")
+    changed_paths = current_changed_paths()
     outside_task = [path for path in changed_paths if not path.startswith(TASK_PREFIX)]
-    if outside_task:
-        raise SystemExit("changed paths outside the Task207 evaluation directory: " + ", ".join(outside_task[:10]))
+    unauthorized = [path for path in outside_task if path not in set(allowed_non_task207)]
+    if unauthorized:
+        raise SystemExit("unauthorized paths outside the Task207 evaluation directory: " + ", ".join(unauthorized[:10]))
+    generator_runs = receipt.get("generator_runs", [])
+    if not isinstance(generator_runs, list):
+        raise SystemExit("R2 generator run receipt is malformed")
 
+    exact_prefix = "reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/"
     data = {
         "artifact_type": "EVALUATION_EVIDENCE",
         "task_id": "IGNITION-20260923-207",
@@ -104,7 +135,10 @@ def main() -> int:
         "schema_version": "task207-path-accounting-r0",
         "base_commit": BASE_COMMIT,
         "pre_step08_head": "0ca97b283f0955a708f6bfe8f24762b3672c0896",
-        "scope": "ALL_TASK207_PREPARATION_FILES; NO_REPOSITORY_WIDE_RECLASSIFICATION",
+        "scope": R2_SCOPE,
+        "historical_r1_scope": R1_HISTORICAL_SCOPE,
+        "r2_scope_receipt": repo_rel(R2_RECEIPT_PATH),
+        "r2_authorized_non_task207_paths": sorted(allowed_non_task207),
         "task_root": TASK_PREFIX.rstrip("/"),
         "path_count_excluding_this_ledger_and_sidecars": len(rows),
         "paths": rows,
@@ -119,18 +153,21 @@ def main() -> int:
         "downstream_projections": [
             {
                 "target": "human-results",
-                "required": False,
-                "disposition": "NO_PROPAGATION_REQUIRED",
-                "proof": "This branch adds design/preparation artifacts only; it contains no Successor output, evaluator result, accepted empirical outcome, or canonical claim ID, and no changed path is outside this Task207 evaluation directory.",
+                "semantic_canonical_propagation_required": False,
+                "mechanical_isolation_required": True,
+                "exact_excluded_prefix": exact_prefix,
+                "disposition": "TASK207_SUBTREE_EXCLUDED_FROM_DISCOVERY",
+                "proof": "The exact Task207 experiment subtree is excluded by the existing human-results prefix filter; unrelated evaluation reports remain discoverable.",
             },
             {
                 "target": "Foundation / Current / knowledge / Fire Seeds / self-correction",
-                "required": False,
-                "disposition": "UNCHANGED",
-                "proof": "The exact-base branch diff is scoped entirely under the Task207 evaluation directory; no source projection or canonical path is changed.",
+                "semantic_canonical_propagation_required": False,
+                "mechanical_generator_runs_recorded_in": repo_rel(R2_RECEIPT_PATH),
+                "disposition": "DETERMINISTIC_DERIVED_OUTPUTS_ONLY",
+                "proof": "Actual mechanical generator runs and exact changed paths are recorded in the R2 receipt; canonical claims and identities remain unchanged.",
             },
         ],
-        "projection_generators_run": [],
+        "projection_generators_run": generator_runs,
         "canonical_claim_ids": [],
         "canonical_promotion": "NONE",
         "successor": "NOT_RUN",
@@ -141,23 +178,30 @@ def main() -> int:
     LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
     LEDGER_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
+    generator_names = ", ".join(run.get("name", "UNNAMED") for run in generator_runs)
     summary = [
-        "# Task207 Path Accounting R0",
+        "# Task207 Path Accounting R0 with R2 Scope Amendment",
         "",
-        "All inventoried paths are task-local `EVALUATION_EVIDENCE` preparation artifacts. No canonical claim IDs were added.",
+        "Task-local paths remain evaluation evidence; no canonical claim IDs were added.",
         "",
         f"- Exact base: `{BASE_COMMIT}`",
         f"- Inventory count (excluding this ledger and its sidecars): **{len(rows)}**",
-        f"- Changed paths outside this task root: **0**",
-        "- Human-results projection: not required; no successor output, evaluator result, accepted empirical outcome, or canonical claim exists.",
-        "- Foundation, Current, knowledge, Fire Seeds, and self-correction projections: unchanged; no generator was run.",
-        "- Successor/Evaluator: not run. R1 and cross-model execution: not authorized.",
+        f"- Non-Task207 changed paths accepted by the exact R2 allowlist: **{len(outside_task)}**",
+        f"- Historical R1 scope retained: `{R1_HISTORICAL_SCOPE}`.",
+        f"- Current R2 scope: `{R2_SCOPE}`.",
+        f"- Official projection generators recorded: **{len(generator_runs)}** ({generator_names or 'none recorded'}).",
+        f"- Human-results excludes only `{exact_prefix}`; unrelated reports remain discoverable.",
+        "- Semantic/canonical promotion: none. Successor and Evaluator: not run.",
+        f"- R2 continuation receipt: `{repo_rel(R2_RECEIPT_PATH)}`.",
         "",
-        "The machine-readable ledger lists each path, SHA-256, byte count, path class, artifact type, canonical status, and available sidecar.",
+        "The machine-readable ledger lists each Task207 path, SHA-256, byte count, path class, artifact type, canonical status, and available sidecar.",
         "",
     ]
     LEDGER_MD.write_text("\n".join(summary), encoding="utf-8")
-    print("TASK207_STEP09_PATH_LEDGER_BUILT")
+    for path in (LEDGER_PATH, LEDGER_MD):
+        sidecar = path.with_name(path.name + ".sha256")
+        sidecar.write_text(f"{sha256(path)}  {repo_rel(path)}\n", encoding="utf-8")
+    print(f"TASK207_STEP09_PATH_LEDGER_BUILT: hashed_paths={len(rows)} outside_task_paths={len(outside_task)} generator_runs={len(generator_runs)}")
     return 0
 
 

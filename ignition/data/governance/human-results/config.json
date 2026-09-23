@@ -14,7 +14,8 @@
   ],
   "excluded_prefixes": [
     "docs/generated/",
-    "reports/readme/"
+    "reports/readme/",
+    "reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/"
   ],
   "claim_ceiling": "Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.",
   "machine_human_pairs": [
