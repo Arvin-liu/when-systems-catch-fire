@@ -1,0 +1,14 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "case_id": "DISENTANGLE-CASE-02",
+  "source_ref": "synthetic://ignition-207/disentangle-case-02/v1",
+  "source_kind": "BUILDER_AUTHORED_SYNTHETIC",
+  "source_path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/cases/DISENTANGLE-CASE-02/facts.md",
+  "source_sha256": "18731fab6296526ed7d59a03ce7d1d19c2d627b1a3daa3962c3f23e05efe17d8",
+  "synthetic": true,
+  "personal_data": false,
+  "external_sources_used": false,
+  "reused_case_families": [],
+  "scope": "PROVENANCE_ONLY; NO_METHOD_OR_SKILL_ARTIFACT_OR_EVALUATOR_CRITERION"
+}
