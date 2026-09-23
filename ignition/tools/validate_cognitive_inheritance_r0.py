@@ -70,6 +70,8 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/RESULTS/CHRONOLOGY.md",
     "ignition/data/governance/human-results/census.json",
     "ignition/data/governance/human-results/result-ledger.jsonl",
+    # Task207-only human-results isolation config exception; do not widen config allowances.
+    "ignition/data/governance/human-results/config.json",
     "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
     # Task187 evaluation reports are explicitly excluded from Knowledge
     # Experience; allow the exact source policy and its generated coverage.
