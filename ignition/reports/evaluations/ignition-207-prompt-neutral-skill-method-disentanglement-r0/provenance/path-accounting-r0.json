@@ -21,6 +21,37 @@
     "ignition/data/publication/fire-seeds/seed-census.json",
     "ignition/docs/foundation/nonfunction-claim-adjudication-index.md"
   ],
+  "r3_authorized_outside_paths": [
+    "ignition/tests/test_cognitive_inheritance_r0.py",
+    "ignition/tools/validate_cognitive_inheritance_r0.py"
+  ],
+  "r3_authorization_lineage": {
+    "authority_repository": "Arvin-liu/1111",
+    "authority_command": "agent-commands/IGNITION-20260924-207-R5-OVERNIGHT-MULTIAGENT-CLOSEOUT.md",
+    "authority_blob_oid": "6c46876c75dc06f219003055ca7909a104e1160d",
+    "r2_start_head": "cb418d72dafb7ea4150b12ec732aa6e6a4e7d1d3",
+    "r3_commit": "90cabb9a423ea6ac69f88dd5871afb70580c2657",
+    "r3_parent": "cb418d72dafb7ea4150b12ec732aa6e6a4e7d1d3",
+    "r3_commit_changed_paths": [
+      "ignition/tests/test_cognitive_inheritance_r0.py",
+      "ignition/tools/validate_cognitive_inheritance_r0.py"
+    ]
+  },
+  "actual_non_task207_changed_paths": [
+    "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+    "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+    "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+    "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "ignition/data/governance/human-results/config.json",
+    "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+    "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+    "ignition/data/governance/knowledge-experience/manifest.json",
+    "ignition/data/governance/knowledge-experience/search-index.jsonl",
+    "ignition/data/publication/fire-seeds/seed-census.json",
+    "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+    "ignition/tests/test_cognitive_inheritance_r0.py",
+    "ignition/tools/validate_cognitive_inheritance_r0.py"
+  ],
   "task_root": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0",
   "path_count_excluding_this_ledger_and_sidecars": 283,
   "paths": [
@@ -3018,8 +3049,8 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/tools/build_step09_path_ledger.py",
-      "sha256": "db32747d272c2269d0ff7fd1f62dcbe78d5e5c246e825a75968845a85eb377bb",
-      "size_bytes": 10442,
+      "sha256": "37b47645b0d99e8463ff67dee4e3e685a2451dc325a2d54f2c04c57124e4bf8d",
+      "size_bytes": 13333,
       "path_class": "BUILDER_OR_VALIDATOR",
       "artifact_type": "EVALUATION_EVIDENCE",
       "canonical_claim_ids": [],
@@ -3128,8 +3159,8 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/tools/validate_step09_path_ledger.py",
-      "sha256": "93cb49993fed5617fe320992140aa2ecc3989122d9e692112fc671e3a1c67e5c",
-      "size_bytes": 14633,
+      "sha256": "30bfd91765e44cbd4e6ab7df939081776c380814b0b0fe95ed3c7695b21fbac4",
+      "size_bytes": 18607,
       "path_class": "BUILDER_OR_VALIDATOR",
       "artifact_type": "EVALUATION_EVIDENCE",
       "canonical_claim_ids": [],

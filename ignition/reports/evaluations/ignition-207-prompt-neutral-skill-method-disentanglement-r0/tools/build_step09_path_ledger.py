@@ -20,6 +20,53 @@ R2_RECEIPT_PATH = TASK_DIR / "provenance/task207-r2-scope-repair-receipt.json"
 SELF_PATHS = {LEDGER_PATH, LEDGER_MD}
 R1_HISTORICAL_SCOPE = "ALL_TASK207_PREPARATION_FILES; NO_REPOSITORY_WIDE_RECLASSIFICATION"
 R2_SCOPE = "OWNER_AUTHORIZED_TASK207_R2_NARROW_DERIVED_PROJECTION_CLOSURE"
+R2_START_HEAD = "cb418d72dafb7ea4150b12ec732aa6e6a4e7d1d3"
+R3_COMMIT = "90cabb9a423ea6ac69f88dd5871afb70580c2657"
+R3_TASK179_EXACT_FILES = frozenset(
+    {
+        "ignition/tests/test_cognitive_inheritance_r0.py",
+        "ignition/tools/validate_cognitive_inheritance_r0.py",
+    }
+)
+R5_AUTHORITY_REPOSITORY = "Arvin-liu/1111"
+R5_AUTHORITY_PATH = "agent-commands/IGNITION-20260924-207-R5-OVERNIGHT-MULTIAGENT-CLOSEOUT.md"
+R5_AUTHORITY_BLOB_OID = "6c46876c75dc06f219003055ca7909a104e1160d"
+
+
+def git_output(*args: str) -> str:
+    result = subprocess.run(
+        ["git", *args], cwd=REPO_ROOT, text=True, capture_output=True, check=False
+    )
+    if result.returncode != 0:
+        raise SystemExit(result.stderr.strip() or "git lineage check failed")
+    return result.stdout.strip()
+
+
+def verify_r3_lineage() -> dict:
+    parent = git_output("rev-parse", f"{R3_COMMIT}^")
+    changed = set(git_output("diff-tree", "--no-commit-id", "--name-only", "-r", R3_COMMIT).splitlines())
+    ancestor = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", R3_COMMIT, "HEAD"],
+        cwd=REPO_ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    if parent != R2_START_HEAD:
+        raise SystemExit("R3 is not the exact direct child of the R2 starting head")
+    if changed != R3_TASK179_EXACT_FILES:
+        raise SystemExit("R3 commit changed-path set is not the exact two-file authorization")
+    if ancestor.returncode != 0:
+        raise SystemExit("R3 authorized commit is not an ancestor of the current branch")
+    return {
+        "authority_repository": R5_AUTHORITY_REPOSITORY,
+        "authority_command": R5_AUTHORITY_PATH,
+        "authority_blob_oid": R5_AUTHORITY_BLOB_OID,
+        "r2_start_head": R2_START_HEAD,
+        "r3_commit": R3_COMMIT,
+        "r3_parent": parent,
+        "r3_commit_changed_paths": sorted(changed),
+    }
 
 
 def sha256(path: Path) -> str:
@@ -114,15 +161,23 @@ def main() -> int:
     if receipt.get("authorization", {}).get("r2_scope") != R2_SCOPE:
         raise SystemExit("R2 authorization scope is missing or changed")
     allowed_non_task207 = receipt.get("exact_non_task207_allowlist", [])
+    actual_r2_paths = receipt.get("actual_non_task207_changed_paths", [])
     if not isinstance(allowed_non_task207, list) or len(set(allowed_non_task207)) != len(allowed_non_task207):
         raise SystemExit("R2 non-Task207 allowlist is malformed or duplicated")
     if any(not isinstance(path, str) or not path.startswith("ignition/") or path.endswith("/") or "*" in path for path in allowed_non_task207):
         raise SystemExit("R2 non-Task207 allowlist must contain exact repository file paths only")
+    if not isinstance(actual_r2_paths, list) or len(set(actual_r2_paths)) != len(actual_r2_paths):
+        raise SystemExit("R2 actual changed-path record is malformed or duplicated")
+    if set(actual_r2_paths) != set(allowed_non_task207):
+        raise SystemExit("R2 actual changed paths do not exactly equal its immutable exact allowlist")
+    r3_lineage = verify_r3_lineage()
+    r2_and_r3_expected = set(allowed_non_task207) | set(R3_TASK179_EXACT_FILES)
     changed_paths = current_changed_paths()
     outside_task = [path for path in changed_paths if not path.startswith(TASK_PREFIX)]
-    unauthorized = [path for path in outside_task if path not in set(allowed_non_task207)]
-    if unauthorized:
-        raise SystemExit("unauthorized paths outside the Task207 evaluation directory: " + ", ".join(unauthorized[:10]))
+    if set(outside_task) != r2_and_r3_expected:
+        missing = sorted(r2_and_r3_expected - set(outside_task))
+        extra = sorted(set(outside_task) - r2_and_r3_expected)
+        raise SystemExit(f"outside-Task207 paths differ from exact R2+R3 authority; missing={missing}; extra={extra}")
     generator_runs = receipt.get("generator_runs", [])
     if not isinstance(generator_runs, list):
         raise SystemExit("R2 generator run receipt is malformed")
@@ -139,6 +194,9 @@ def main() -> int:
         "historical_r1_scope": R1_HISTORICAL_SCOPE,
         "r2_scope_receipt": repo_rel(R2_RECEIPT_PATH),
         "r2_authorized_non_task207_paths": sorted(allowed_non_task207),
+        "r3_authorized_outside_paths": sorted(R3_TASK179_EXACT_FILES),
+        "r3_authorization_lineage": r3_lineage,
+        "actual_non_task207_changed_paths": sorted(outside_task),
         "task_root": TASK_PREFIX.rstrip("/"),
         "path_count_excluding_this_ledger_and_sidecars": len(rows),
         "paths": rows,
@@ -186,9 +244,10 @@ def main() -> int:
         "",
         f"- Exact base: `{BASE_COMMIT}`",
         f"- Inventory count (excluding this ledger and its sidecars): **{len(rows)}**",
-        f"- Non-Task207 changed paths accepted by the exact R2 allowlist: **{len(outside_task)}**",
-        f"- Historical R1 scope retained: `{R1_HISTORICAL_SCOPE}`.",
-        f"- Current R2 scope: `{R2_SCOPE}`.",
+        f"- Exact non-Task207 paths: **{len(outside_task)}** (R2 **{len(allowed_non_task207)}**; R3 **{len(R3_TASK179_EXACT_FILES)}**).",
+        f"- Historical R1 scope retained: {R1_HISTORICAL_SCOPE}.",
+        f"- Current R2 scope and receipt retained verbatim: {R2_SCOPE}.",
+        f"- R3 exact-path authorization: {R3_COMMIT} is a direct child of {R2_START_HEAD} and changes only the two paths listed in r3_authorization_lineage.",
         f"- Official projection generators recorded: **{len(generator_runs)}** ({generator_names or 'none recorded'}).",
         f"- Human-results excludes only `{exact_prefix}`; unrelated reports remain discoverable.",
         "- Semantic/canonical promotion: none. Successor and Evaluator: not run.",

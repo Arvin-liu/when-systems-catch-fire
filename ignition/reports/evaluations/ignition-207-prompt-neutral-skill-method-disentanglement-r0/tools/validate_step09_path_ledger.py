@@ -21,6 +21,17 @@ SUMMARY = TASK_DIR / "provenance/path-accounting-r0.md"
 R2_RECEIPT = TASK_DIR / "provenance/task207-r2-scope-repair-receipt.json"
 R1_HISTORICAL_SCOPE = "ALL_TASK207_PREPARATION_FILES; NO_REPOSITORY_WIDE_RECLASSIFICATION"
 R2_SCOPE = "OWNER_AUTHORIZED_TASK207_R2_NARROW_DERIVED_PROJECTION_CLOSURE"
+R2_START_HEAD = "cb418d72dafb7ea4150b12ec732aa6e6a4e7d1d3"
+R3_COMMIT = "90cabb9a423ea6ac69f88dd5871afb70580c2657"
+R3_TASK179_EXACT_FILES = frozenset(
+    {
+        "ignition/tests/test_cognitive_inheritance_r0.py",
+        "ignition/tools/validate_cognitive_inheritance_r0.py",
+    }
+)
+R5_AUTHORITY_REPOSITORY = "Arvin-liu/1111"
+R5_AUTHORITY_PATH = "agent-commands/IGNITION-20260924-207-R5-OVERNIGHT-MULTIAGENT-CLOSEOUT.md"
+R5_AUTHORITY_BLOB_OID = "6c46876c75dc06f219003055ca7909a104e1160d"
 TASK207_HUMAN_RESULTS_PREFIX = "reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/"
 CLASSIFICATION_MANIFEST = "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
 
@@ -51,6 +62,42 @@ def current_changed_paths() -> list[str]:
 
 def exact_scope_accepts(paths: list[str], allowlist: set[str]) -> bool:
     return all(path in allowlist for path in paths)
+
+
+def exact_scope_matches(paths: list[str], expected: set[str]) -> bool:
+    return len(paths) == len(set(paths)) and set(paths) == expected
+
+
+def git_output(*args: str) -> str:
+    result = subprocess.run(
+        ["git", *args], cwd=REPO_ROOT, text=True, capture_output=True, check=False
+    )
+    require(result.returncode == 0, "cannot verify immutable R3 authorization lineage")
+    return result.stdout.strip()
+
+
+def expected_r3_lineage() -> dict:
+    parent = git_output("rev-parse", f"{R3_COMMIT}^")
+    changed = set(git_output("diff-tree", "--no-commit-id", "--name-only", "-r", R3_COMMIT).splitlines())
+    ancestor = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", R3_COMMIT, "HEAD"],
+        cwd=REPO_ROOT,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    require(parent == R2_START_HEAD, "R3 is not the exact direct child of the R2 starting head")
+    require(changed == R3_TASK179_EXACT_FILES, "R3 commit does not contain exactly the two authorized paths")
+    require(ancestor.returncode == 0, "R3 authorized commit is not an ancestor of the current branch")
+    return {
+        "authority_repository": R5_AUTHORITY_REPOSITORY,
+        "authority_command": R5_AUTHORITY_PATH,
+        "authority_blob_oid": R5_AUTHORITY_BLOB_OID,
+        "r2_start_head": R2_START_HEAD,
+        "r3_commit": R3_COMMIT,
+        "r3_parent": parent,
+        "r3_commit_changed_paths": sorted(changed),
+    }
 
 
 def digest_equal(expected: str, observed: str) -> bool:
@@ -94,11 +141,29 @@ def verify_human_results_isolation(config: dict) -> tuple[int, int]:
     return len(task_markdown), len(unrelated_evaluation_markdown)
 
 
-def run_negative_tests(allowlist: set[str], protected_hashes: list[dict]) -> None:
-    require(exact_scope_accepts([CLASSIFICATION_MANIFEST], allowlist), "authorized classification output failed exact allowlist test")
+def run_negative_tests(
+    r2_allowlist: set[str],
+    exact_outside_paths: set[str],
+    protected_hashes: list[dict],
+) -> None:
+    require(exact_scope_accepts([CLASSIFICATION_MANIFEST], r2_allowlist), "authorized R2 classification output failed allowlist test")
+    require(exact_scope_accepts([next(iter(R3_TASK179_EXACT_FILES))], exact_outside_paths), "authorized exact R3 path failed combined-scope test")
+    require(exact_scope_matches(sorted(exact_outside_paths), exact_outside_paths), "exact R2+R3 outside-path set failed positive test")
+    for path in R3_TASK179_EXACT_FILES:
+        require(not exact_scope_matches(sorted(exact_outside_paths - {path}), exact_outside_paths), "omission of an R3 exact path was accepted")
+    unlisted_task179_path = "ignition/reports/evaluations/ignition-179-unlisted/receipt.json"
+    require(
+        not exact_scope_matches(sorted(exact_outside_paths | {unlisted_task179_path}), exact_outside_paths),
+        "an unlisted third Task179 path was accepted",
+    )
+    unrelated_configuration_path = "ignition/data/governance/unlisted-config.json"
+    require(
+        not exact_scope_matches(sorted(exact_outside_paths | {unrelated_configuration_path}), exact_outside_paths),
+        "an unrelated configuration path was accepted",
+    )
     canonical_claim_path = "ignition/data/foundation/claims/claims.jsonl"
-    require(not exact_scope_accepts([canonical_claim_path], allowlist), "simulated canonical claim mutation was accepted")
-    require(not exact_scope_accepts(["ignition/docs/foundation/canonical-claim-test.md"], allowlist), "simulated unauthorized path was accepted")
+    require(not exact_scope_accepts([canonical_claim_path], exact_outside_paths), "simulated canonical claim mutation was accepted")
+    require(not exact_scope_accepts(["ignition/docs/foundation/canonical-claim-test.md"], exact_outside_paths), "simulated unauthorized path was accepted")
     packet = next((row for row in protected_hashes if "/packets/" in row["path"]), None)
     require(packet is not None, "protected-input inventory lacks a packet hash fixture")
     altered_digest = ("0" if packet["sha256"][0] != "0" else "1") + packet["sha256"][1:]
@@ -131,9 +196,12 @@ def main() -> int:
         require(sha256(path) == row.get("sha256"), "protected Task207 input hash changed: " + rel)
 
     allow_rows = receipt.get("exact_non_task207_allowlist", [])
+    actual_r2_rows = receipt.get("actual_non_task207_changed_paths", [])
     require(isinstance(allow_rows, list) and len(allow_rows) == len(set(allow_rows)), "R2 exact non-Task207 allowlist malformed/duplicated")
     require(all(isinstance(path, str) and path.startswith("ignition/") and not path.endswith("/") and "*" not in path for path in allow_rows), "R2 allowlist contains a broad path")
+    require(isinstance(actual_r2_rows, list) and len(actual_r2_rows) == len(set(actual_r2_rows)), "R2 actual changed-path record malformed/duplicated")
     allowlist = set(allow_rows)
+    require(set(actual_r2_rows) == allowlist, "immutable R2 actual paths no longer exactly equal its allowlist")
     require(receipt.get("authorized_configuration_changes"), "R2 configuration change is not recorded")
     config_changes = set()
     for change in receipt["authorized_configuration_changes"]:
@@ -157,6 +225,7 @@ def main() -> int:
         require(changed.issubset(allowlist), "generator changed a path outside the exact R2 diff allowlist")
         generator_changed_paths.update(changed)
     require(generator_changed_paths.isdisjoint(config_changes), "configuration and generator changed-path records overlap")
+    require(generator_changed_paths | config_changes == allowlist, "R2 recorded projection/configuration changes do not exactly cover its allowlist")
 
     data = json.loads(LEDGER.read_text(encoding="utf-8"))
     require(data.get("artifact_type") == "EVALUATION_EVIDENCE" and data.get("step") == "Step09", "wrong artifact type or step")
@@ -164,6 +233,9 @@ def main() -> int:
     require(data.get("scope") == R2_SCOPE and data.get("historical_r1_scope") == R1_HISTORICAL_SCOPE, "R1/R2 scope lineage missing")
     require(data.get("r2_scope_receipt") == R2_RECEIPT.relative_to(REPO_ROOT).as_posix(), "wrong R2 receipt reference")
     require(data.get("r2_authorized_non_task207_paths") == sorted(allowlist), "ledger and receipt exact allowlists differ")
+    require(data.get("r3_authorized_outside_paths") == sorted(R3_TASK179_EXACT_FILES), "ledger R3 exact allowlist differs from the command")
+    require(data.get("r3_authorization_lineage") == expected_r3_lineage(), "ledger R3 command/commit lineage differs")
+    require(data.get("actual_non_task207_changed_paths") == sorted(allowlist | set(R3_TASK179_EXACT_FILES)), "ledger outside-path union is not exact R2 plus exact R3")
     require(data.get("projection_generators_run") == generator_runs, "ledger generator record differs from R2 receipt")
     require(data.get("canonical_claim_ids") == [] and data.get("canonical_promotion") == "NONE", "canonical evidence/promotion present")
     require(data.get("successor") == "NOT_RUN" and data.get("evaluator") == "NOT_RUN", "Successor/Evaluator ran")
@@ -200,23 +272,22 @@ def main() -> int:
 
     changed_paths = current_changed_paths()
     outside_task = {path for path in changed_paths if not path.startswith(TASK_PREFIX)}
-    require(exact_scope_accepts(sorted(outside_task), allowlist), "branch/worktree contains an unauthorized non-Task207 path")
-    actual_outside = receipt.get("actual_non_task207_changed_paths", [])
-    require(outside_task == set(actual_outside), "receipt does not enumerate the exact non-Task207 diff")
-    require(outside_task == generator_changed_paths | config_changes, "every non-Task207 change must be an authorized generator output or exact configuration change")
+    exact_outside_paths = allowlist | set(R3_TASK179_EXACT_FILES)
+    require(outside_task == exact_outside_paths, "branch/worktree outside paths do not exactly equal the immutable R2 allowlist plus the exact R3 two-file authorization")
+    require(outside_task == set(data.get("actual_non_task207_changed_paths", [])), "ledger does not enumerate the exact R2+R3 non-Task207 diff")
 
     config = json.loads((REPO_ROOT / "ignition/data/governance/human-results/config.json").read_text(encoding="utf-8"))
     task_markdown_count, unrelated_report_count = verify_human_results_isolation(config)
-    run_negative_tests(allowlist, protected_hashes)
+    run_negative_tests(allowlist, exact_outside_paths, protected_hashes)
 
     self_meta = data.get("self_accounting", {})
     require(self_meta.get("ledger_sha256") == "PROTECTED_BY_DETACHED_SHA256_SIDECAR", "ledger self-hash rule changed")
     require(self_meta.get("summary_sha256") == "PROTECTED_BY_DETACHED_SHA256_SIDECAR", "summary self-hash rule changed")
     verify_sidecar(LEDGER, LEDGER.relative_to(REPO_ROOT).as_posix())
     verify_sidecar(SUMMARY, SUMMARY.relative_to(REPO_ROOT).as_posix())
-    print(f"TASK207_STEP09_PATH_LEDGER_VALID: paths={len(seen)} protected_hashes={len(protected_hashes)} outside_paths={len(outside_task)} generators={len(generator_runs)}")
+    print(f"TASK207_STEP09_PATH_LEDGER_VALID: paths={len(seen)} protected_hashes={len(protected_hashes)} outside_paths={len(outside_task)} r2_paths={len(allowlist)} r3_paths={len(R3_TASK179_EXACT_FILES)} generators={len(generator_runs)}")
     print(f"TASK207_KNOWLEDGE_ISOLATION_VALID: task_markdown_excluded={task_markdown_count} unrelated_reports_discovered={unrelated_report_count}")
-    print("TASK207_R2_NEGATIVE_TESTS_VALID: unauthorized_path canonical_claim_mutation packet_hash_mutation rejected; exact_manifest_path accepted")
+    print("TASK207_R5_NEGATIVE_TESTS_VALID: R2+R3 exact union accepted; each R3 omission, extra Task179 path, unrelated config, canonical path, and protected hash mutation rejected")
     return 0
 
 
