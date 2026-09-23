@@ -1,0 +1,84 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "step": "Step01",
+  "base_commit": "8e70ba196739cf1a79600e02ace36f90ad2c130c",
+  "audit_scope": "EXPERIMENT_ONLY_REPRESENTATION_SELECTION",
+  "reviewed_representations": [
+    {
+      "path": "ignition/agent_runtime/cognitive_inheritance_r0/schema/cognitive-ir-r0.schema.json",
+      "sha256": "206b35f51c5c8242bc68dd831f646fcd1fb8739fa155644aec74b8342dd823ae",
+      "finding": "The object type enum includes METHOD but has no SKILL type; its package task_id/status are bound to an earlier task. Reusing METHOD for a local procedural skill would erase the distinction this experiment measures."
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/schema/method-use-trace-r0.schema.json",
+      "sha256": "e53532c8338c76d83b72c79edbb3780800d190ce9338c194c7ba2f03eec69e8b",
+      "finding": "This is a six-segment method lineage schema covering candidate, selection, context, use, outcome/failure, and revision/disposition. It represents the method side of the contrast, not a skill-only procedure."
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/tools/validate_method_use_trace_r0.py",
+      "sha256": "7adcd2c56acb520b26e2f9e126f0ac258ec5f794582e08c0e2c993fcb4f527a5",
+      "finding": "Existing validator is reused unchanged for the complete method artifact; Task198 already demonstrates trace reuse with the pinned Task190 schema and validator."
+    },
+    {
+      "path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+      "sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
+      "finding": "This is the existing strict successor output contract. It remains the output representation and is not changed to encode input skills."
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/ablation/skill-only-not-applicable.json",
+      "sha256": "a5463a2de0d708db52875a2ba1aa52b91bb3cc4614f47c0276b186dd81fbab7b",
+      "finding": "This is a Task190 ablation record stating no existing Pack/skill artifact was supplied; it is not a reusable skill representation or schema."
+    },
+    {
+      "paths": [
+        "ignition/packs/knowledge/manifest.json",
+        "ignition/packs/maintenance/manifest.json",
+        "ignition/packs/research/manifest.json",
+        "ignition/packs/writing/manifest.json"
+      ],
+      "finding": "Pack manifests declare capabilities, dependencies, and owned resources. The repository search found no standalone reusable skill artifact schema or global skill registry among them."
+    }
+  ],
+  "verdict": {
+    "existing_skill_representation_sufficient": false,
+    "new_task_local_narrow_skill_schema_necessary": true,
+    "new_global_skill_registry": false,
+    "second_method_schema": false,
+    "global_cognitive_ir_enum_change": false,
+    "r0_1_output_schema_change": false
+  },
+  "skill_input_representation_plan": {
+    "representation": "One Task207-only JSON procedural skill artifact validated by a narrow Task207-only schema.",
+    "included": [
+      "local procedure purpose and input shape",
+      "short executable steps",
+      "applicability preconditions and stop conditions",
+      "observable fields to record"
+    ],
+    "excluded": [
+      "candidate comparison and selection rationale",
+      "method-use or causal attribution",
+      "validation outcome or failure history",
+      "revision, rejection, retirement, or cross-case answer",
+      "the three synthetic case answers"
+    ],
+    "exact_consumer": "Task207 Step03 artifact validator and the Task207 Step04 packets assigned the skill-only payload; the same file is evaluated under Step05 criteria."
+  },
+  "method_reuse_plan": {
+    "schema_path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/schema/method-use-trace-r0.schema.json",
+    "validator_path": "ignition/reports/evaluations/ignition-190-method-use-trace-r0/tools/validate_method_use_trace_r0.py",
+    "reuse": "Use both pinned files byte-for-byte for the complete source-bound method trace. Bind Task207 source and artifact hashes in the Task207 manifest/wrapper, following the existing Task198 reuse pattern; do not fork the Method-Use Trace R0 schema. Broken excerpts remain incomplete and are checked as expected-invalid inputs to that same validator."
+  },
+  "output_representation_plan": {
+    "schema_path": "ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json",
+    "reuse": "Use unchanged for all future successor records across all eight packets."
+  },
+  "new_schema_justification": {
+    "why_existing_schema_is_insufficient": "The existing Cognitive IR has no SKILL type and using METHOD would conflate the measured concepts. Method-Use Trace R0 intentionally requires full selection/use/outcome/revision lineage, while the output schema describes responses rather than input procedures. The prior skill-only artifact records non-applicability and contains no reusable procedure representation.",
+    "retirement_condition": "After Task207's future successor trials and independent evaluation are frozen and the handoff is complete, retain this schema only as Task207 historical experimental material. Do not promote it to a shared registry or reuse it in another task without a fresh representation audit."
+  },
+  "claim_ceiling": "SCHEMA_AND_REPRESENTATION_PLAN_ONLY; NO_CAPABILITY_OR_INHERITANCE_CLAIM",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}
