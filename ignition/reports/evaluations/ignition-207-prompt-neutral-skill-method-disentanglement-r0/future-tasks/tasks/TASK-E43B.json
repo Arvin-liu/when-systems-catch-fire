@@ -1,0 +1,54 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "TASK-E43B",
+  "parent_experiment_id": "IGNITION-20260923-207",
+  "schema_version": "task207-future-successor-task-r0",
+  "role": "SUCCESSOR",
+  "packet": {
+    "opaque_packet_id": "PKT-A7C145",
+    "packet_manifest_path": "packets/PKT-A7C145/packet-manifest.json",
+    "packet_manifest_sha256": "db3bffbc4dca04552b7aaa724335f6efaddc26548893b7a6ba95ae6dd3d07e93",
+    "prompt_sha256": "32c4f9659f66cff4cc7690bdf2ec2166cb3bb906f48251a58099fe5580312584",
+    "read_manifest_sha256": "23ceb556e34cecdde4d34eca44b72c9c95233b8fa1792659e76c97e492aa57aa",
+    "freeze_contract_sha256": "51ee0490892ae70b6bf0c0d4e411d88b40c3a39698d3a81307a8a940332d5f28",
+    "output_schema_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
+    "case_order": [
+      "CASE-03",
+      "CASE-02",
+      "CASE-01"
+    ]
+  },
+  "launch": {
+    "launch_authorization": "NOT_GRANTED_BY_PREPARATION; EXPLICIT_OWNER_AUTHORIZATION_REQUIRED",
+    "prepared_branch": "work/IGNITION-20260923-207-prompt-neutral-skill-method-disentanglement-r0",
+    "prepared_commit": "EXACT_TASK207_PR_HEAD_SHA_MUST_BE_RECORDED_AND_PINNED_BEFORE_LAUNCH",
+    "starting_worktree_must_be_clean": true,
+    "conversation_must_be_fresh_and_independent": true,
+    "shared_history_or_context_between_tasks": false,
+    "prompt_bytes_must_be_unchanged": true,
+    "read_only_scope": "THIS_PACKET_ONLY_AND_ITS_READ_MANIFEST",
+    "output_path": "trial-output/PKT-A7C145/successor-output.jsonl"
+  },
+  "runtime_policy": {
+    "model_assignment": "UNASSIGNED_PENDING_FUTURE_OWNER_AUTHORIZATION",
+    "same_runtime_configuration_across_all_eight": true,
+    "runtime_receipt_required_per_conversation": "evaluator/runtime-attestation/receipt-r0.schema.json",
+    "configuration_status_must_not_be_overstated": true,
+    "cross_model_execution": "NOT_AUTHORIZED",
+    "r1": "NOT_AUTHORIZED"
+  },
+  "output_contract": {
+    "records": 3,
+    "encoding": "UTF-8 JSON Lines; one schema-valid object per case; no wrapper",
+    "case_ids_and_order_from_packet_manifest": true,
+    "claim_ceiling": "SYNTHETIC_CASE_FIXTURES_ONLY; NO EXPERIMENTAL_OUTCOME"
+  },
+  "status": {
+    "successor": "NOT_RUN",
+    "evaluator": "NOT_RUN",
+    "cross_model_execution": "NOT_AUTHORIZED",
+    "r1": "NOT_AUTHORIZED",
+    "canonical_claim_ids": [],
+    "canonical_promotion": "NONE"
+  }
+}
