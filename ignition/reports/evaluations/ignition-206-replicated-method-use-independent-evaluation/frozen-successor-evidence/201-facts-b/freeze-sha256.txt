@@ -1,0 +1,27 @@
+task_id=IGNITION-20260921-198
+successor_task_id=IGNITION-20260922-201
+condition=FACTS_ONLY
+replicate=B
+freeze_rule=SHA-256 computed directly from final bytes
+freeze_scope=successor-response.jsonl read-manifest.json packet-allowlist-bytes
+
+## component final-byte SHA-256
+successor-response.jsonl sha256=357e480ba9f5459bce13dc6db3f8724d2f1ac2e0f865a71d65fd44fd2d07f509
+read-manifest.json sha256=a68e1b06d9b28b9322de0f43099699ac3928845f87d8bcb97f92e70a120d8ec1
+
+## packet allowlist bytes (12 files)
+OK  1f07216ca87d2c592b0fc37a37f7904c4d5dd931ed10e088ddc7547c897855fd  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/facts-b/task-prompt.md
+OK  279285bd8da1bfcc799d86425380fd6ef920b7368c6b909736f0ca431e4cb8de  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/output-schema-ref.json
+OK  fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133  ignition/evaluation/heldout/r0.1/successor-visible/successor-output-r0.1.schema.json
+OK  d59fe0748aad1abf12424ead1c036847425855df0f62ab108d36e2774e393cff  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/response-contract.json
+OK  b8d92913c8ed5f76b9257ad9acc1a4478ded26620bc996ca80de6f7cbbb9c587  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/read-manifest-contract.json
+OK  eef98801f4a00c9fc78976831bb9c71b67dd074054ebcafc312de6a88f34d5c3  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/common/freeze-contract.txt
+OK  4a00553d17cb8ff4c651db383dfda8e975e14e883e60643dfbc238d5de2937a4  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-01/facts.md
+OK  a7c7a551b62c57e7b4d260f463a938a04d7e79dc67aeeb055a153e38d5d27a3e  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-01/provenance.json
+OK  f3e22b89dc238794083118552f0b5a2b8c490fc960298ddf55e1a1c7f720cdab  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-02/facts.md
+OK  3200209c87847a07c1e11d6db9dac9129f4a59db1cb41b42c4530bf45839add8  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-02/provenance.json
+OK  b7ff2806fe4321a6f406d7f3e708607a712dbca091144818b1fdb88034eadfde  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-03/facts.md
+OK  f26aa5bd0b5c8c93a41d47a4513502ac7d2b2604149840090161e6cd88420fda  ignition/reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-03/provenance.json
+
+unlisted_read_count=0
+freeze_status=FROZEN

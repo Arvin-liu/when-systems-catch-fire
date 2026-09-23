@@ -1,0 +1,192 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260922-206",
+  "step": "Step07",
+  "typing": {
+    "task206_tracked_paths": 34,
+    "classified_EVALUATION_EVIDENCE": 34,
+    "other_categories": 0,
+    "generator": "tools/foundation/validate_repository_path_classification.py --generate",
+    "checks": "10/10 PASS on two consecutive --check passes"
+  },
+  "path_accounting": {
+    "tracked_paths_total": 4926,
+    "manifest_paths_total": 4926,
+    "unresolved": 0,
+    "duplicates": 0,
+    "stale": 0
+  },
+  "provenance": {
+    "frozen_bundles_copied_byte_for_byte": 6,
+    "evidence_freeze_json": "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/frozen-successor-evidence/evidence-freeze.json",
+    "source_copy_byte_equality": true,
+    "user_absolute_paths_committed": false
+  },
+  "foundation_candidate_status": {
+    "automatic_function_candidate": false,
+    "automatic_nonfunction_candidate": false,
+    "nonfunction_source_coverage": "EXCLUDED_EVALUATION_EVIDENCE_ONLY",
+    "excluded_evaluation_evidence_rows": 321,
+    "canonical_claims": 18003,
+    "canonical_claim_ids_emitted_by_task206": 0,
+    "canonical_promotion": "NONE"
+  },
+  "knowledge_experience_isolation": {
+    "mechanism": "existing exact-path excluded_generated_result_sources list",
+    "wide_prefix_exclusion_added": false,
+    "exact_paths_added": 6,
+    "paths": [
+      "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/frozen-successor-evidence/evidence-freeze.md",
+      "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/per-replicate-evaluation.md",
+      "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/replication-analysis.md",
+      "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/replicated-method-use-report.md",
+      "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/negative-control-audit.md",
+      "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/independent-evaluation-report.md"
+    ],
+    "config_path": "ignition/data/governance/knowledge-experience/config.json",
+    "purpose": "prevent evaluator reports from becoming a future cognitive source"
+  },
+  "human_results": {
+    "navigation_projection_allowed": true,
+    "records": 676,
+    "generator": "tools/governance/build_human_results.py",
+    "semantic_promotion": false
+  },
+  "promotion_boundaries": {
+    "knowledge_canonical_promotion": false,
+    "fire_seeds_semantic_promotion": false,
+    "current_mutation": false,
+    "zero_canonical_claim_ids": true
+  },
+  "official_generators_only": true,
+  "deterministic_projection_chain": [
+    {
+      "tool": "tools/foundation/validate_repository_path_classification.py",
+      "mode": "generate + 2x --check",
+      "result": "REPOSITORY_PATH_CLASSIFICATION_VALID"
+    },
+    {
+      "tool": "tools/foundation/adjudicate_nonfunction_claims.py",
+      "mode": "generate + 2x --check",
+      "result": "NONFUNCTION_CLAIM_GENERATION_DETERMINISTIC"
+    },
+    {
+      "tool": "tools/foundation/adjudicate_core.py --check",
+      "mode": "check",
+      "result": "ADJUDICATION_CHECK_OK"
+    },
+    {
+      "tool": "tools/foundation/migrate_legacy.py --check",
+      "mode": "check",
+      "result": "LEGACY_GENERATOR_RETIRED"
+    },
+    {
+      "tool": "tools/foundation/build_function_asset_census.py --check",
+      "mode": "check",
+      "result": "FUNCTION_ASSET_CENSUS_VALID"
+    },
+    {
+      "tool": "tools/foundation/adjudicate_function_assets.py --check",
+      "mode": "check",
+      "result": "FUNCTION_ASSET_DEEP_ADJUDICATION_VALID"
+    },
+    {
+      "tool": "tools/foundation/validate_foundation.py",
+      "mode": "validate",
+      "result": "ALL_FOUNDATION_VALID"
+    },
+    {
+      "tool": "tools/foundation/validate_claim_governance.py",
+      "mode": "validate",
+      "result": "CLAIM_GOVERNANCE_VALID"
+    },
+    {
+      "tool": "tools/foundation/validate_function_asset_closure.py",
+      "mode": "validate",
+      "result": "FUNCTION_ASSET_REGISTRY_CLOSURE_VALID"
+    },
+    {
+      "tool": "tools/foundation/validate_nonfunction_claim_closure.py",
+      "mode": "validate",
+      "result": "NONFUNCTION_CLAIM_EVIDENCE_LINEAGE_CLOSURE_VALID"
+    },
+    {
+      "tool": "tools/foundation/run_function_asset_math_checks.py --check",
+      "mode": "check",
+      "result": "7/7 PASS"
+    },
+    {
+      "tool": "tools/foundation/verify_core_claims.py --check",
+      "mode": "check",
+      "result": "CORE 5/5 ALL_CORE_CLAIMS_REPLAYED"
+    },
+    {
+      "tool": "tools/governance/build_human_results.py",
+      "mode": "generate + --check",
+      "result": "HUMAN_RESULTS_OK records=676"
+    },
+    {
+      "tool": "tools/governance/build_knowledge_experience.py",
+      "mode": "generate + --check",
+      "result": "KNOWLEDGE_EXPERIENCE_OK cards=724"
+    },
+    {
+      "tool": "tools/governance/run_self_correction.py --check",
+      "mode": "check",
+      "result": "SELF_CORRECTION_OK deltas=717"
+    },
+    {
+      "tool": "tools/governance/validate_knowledge_experience.py",
+      "mode": "validate",
+      "result": "KNOWLEDGE_EXPERIENCE_AUDIT_OK"
+    },
+    {
+      "tool": "tools/governance/validate_human_visibility.py",
+      "mode": "validate",
+      "result": "HUMAN_VISIBILITY_OK"
+    },
+    {
+      "tool": "tools/governance/gen_source_first_seen.py",
+      "mode": "generate",
+      "result": "SOURCE_FIRST_SEEN_WRITTEN entries=676"
+    },
+    {
+      "tool": "tools/governance/check_knowledge_experience_determinism.py",
+      "mode": "check",
+      "result": "KNOWLEDGE_EXPERIENCE_DETERMINISM_OK two_pass=identical"
+    },
+    {
+      "tool": "tools/publication/build_fire_seed_census.py",
+      "mode": "generate",
+      "result": "FIRE_SEEDS_CENSUS_BUILT seeds=64"
+    },
+    {
+      "tool": "tools/publication/validate_fire_seeds.py --check",
+      "mode": "check",
+      "result": "FIRE_SEEDS_VALID"
+    },
+    {
+      "tool": "tools/governance/build_claim_browsers.py --check",
+      "mode": "check",
+      "result": "HUMAN_ASSETS_CHECK_OK"
+    },
+    {
+      "tool": "tools/generate_overall_architecture.py --check",
+      "mode": "check",
+      "result": "SYSTEM_MAP_DERIVED_OK"
+    },
+    {
+      "tool": "tools/governance/validate_human_surface_contract.py",
+      "mode": "validate",
+      "result": "HUMAN_SURFACE_CONTRACT_OK"
+    },
+    {
+      "tool": "tools/governance/refresh_human_surface_materiality.py --check",
+      "mode": "check",
+      "result": "HUMAN_SURFACE_MATERIALITY_DETERMINISTIC"
+    }
+  ],
+  "two_pass_no_diff": true,
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

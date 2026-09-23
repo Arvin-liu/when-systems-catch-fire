@@ -1,0 +1,386 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "evaluator_role": "INDEPENDENT_EVALUATOR_EVIDENCE_FREEZER",
+  "task_id": "IGNITION-20260922-206",
+  "exact_base": "867dc2e4f47c3981aa4178d706b6ea6e110379fe",
+  "source_trial_task_ids": [
+    "IGNITION-20260921-200",
+    "IGNITION-20260921-201",
+    "IGNITION-20260921-202",
+    "IGNITION-20260921-203",
+    "IGNITION-20260921-204",
+    "IGNITION-20260921-205"
+  ],
+  "mechanical_gate": "PASS",
+  "semantic_verdict": "NOT_RUN_AT_STEP00",
+  "bundles": [
+    {
+      "task": "IGNITION-20260921-200",
+      "condition": "FACTS_ONLY",
+      "replicate": "A",
+      "source_container_logical_id": "200-FACTS-A",
+      "branch": "work/IGNITION-20260921-198-successor-facts-a",
+      "exact_base": "867dc2e4f47c3981aa4178d706b6ea6e110379fe",
+      "branch_ref_equals_exact_base": true,
+      "successor_commits_after_base": "0",
+      "local_no_commit_status": "NO_SUCCESSOR_COMMIT",
+      "remote_branch_absence_status": "ABSENT",
+      "packet_manifest_sha256": "c6d3c0a4c67c0c1ab28ea5b56da69526a3aef2b21ee53a3b4587e388a252ca1a",
+      "packet_manifest_expected_sha256": "c6d3c0a4c67c0c1ab28ea5b56da69526a3aef2b21ee53a3b4587e388a252ca1a",
+      "packet_manifest_match": true,
+      "allowlist_count": 12,
+      "read_manifest_entry_count": 12,
+      "read_allowlist_exact_set_equality": true,
+      "unlisted_read_count": 0,
+      "cross_condition_read_count": 0,
+      "evaluator_sealed_read_count": 0,
+      "schema_status": "PASS",
+      "record_count": 3,
+      "record_order": [
+        "REPL-CASE-03",
+        "REPL-CASE-01",
+        "REPL-CASE-02"
+      ],
+      "packet_case_order": [
+        "REPL-CASE-03",
+        "REPL-CASE-01",
+        "REPL-CASE-02"
+      ],
+      "case_order_match": true,
+      "case_pin_mismatches": 0,
+      "packet_pin_vs_base_mismatches": 0,
+      "source_copy_byte_equality": true,
+      "files": {
+        "successor-response.jsonl": {
+          "source_sha256": "f7f019261deb18f2b12ac91841e935b5ae504030bcbfcd952ceff65988fc0af5",
+          "frozen_copy_sha256": "f7f019261deb18f2b12ac91841e935b5ae504030bcbfcd952ceff65988fc0af5",
+          "byte_equal": true,
+          "bytes": 15357
+        },
+        "read-manifest.json": {
+          "source_sha256": "6e4c891e6413f1ee69a997c9e006614cdb33f933c91741f4781f816eb81befa4",
+          "frozen_copy_sha256": "6e4c891e6413f1ee69a997c9e006614cdb33f933c91741f4781f816eb81befa4",
+          "byte_equal": true,
+          "bytes": 3681
+        },
+        "freeze-sha256.txt": {
+          "source_sha256": "3a7c847018adc5ee0e861198efaa8273352725e4535fd8d230770166355179fb",
+          "frozen_copy_sha256": "3a7c847018adc5ee0e861198efaa8273352725e4535fd8d230770166355179fb",
+          "byte_equal": true,
+          "bytes": 2736
+        }
+      },
+      "contamination_status": "NONE_DETECTED",
+      "notes": [
+        "checked-out HEAD 428d1885d0cb on 'main' is an ancestor of exact base (not advanced); successor branch ref == exact base"
+      ]
+    },
+    {
+      "task": "IGNITION-20260921-201",
+      "condition": "FACTS_ONLY",
+      "replicate": "B",
+      "source_container_logical_id": "201-FACTS-B",
+      "branch": "work/IGNITION-20260921-198-successor-facts-b",
+      "exact_base": "867dc2e4f47c3981aa4178d706b6ea6e110379fe",
+      "branch_ref_equals_exact_base": true,
+      "successor_commits_after_base": "0",
+      "local_no_commit_status": "NO_SUCCESSOR_COMMIT",
+      "remote_branch_absence_status": "ABSENT",
+      "packet_manifest_sha256": "3926b9b2085cd7930e26532f9b1f59e75437b8e8c684349922b5ed372d876891",
+      "packet_manifest_expected_sha256": "3926b9b2085cd7930e26532f9b1f59e75437b8e8c684349922b5ed372d876891",
+      "packet_manifest_match": true,
+      "allowlist_count": 12,
+      "read_manifest_entry_count": 12,
+      "read_allowlist_exact_set_equality": true,
+      "unlisted_read_count": 0,
+      "cross_condition_read_count": 0,
+      "evaluator_sealed_read_count": 0,
+      "schema_status": "PASS",
+      "record_count": 3,
+      "record_order": [
+        "REPL-CASE-01",
+        "REPL-CASE-02",
+        "REPL-CASE-03"
+      ],
+      "packet_case_order": [
+        "REPL-CASE-01",
+        "REPL-CASE-02",
+        "REPL-CASE-03"
+      ],
+      "case_order_match": true,
+      "case_pin_mismatches": 0,
+      "packet_pin_vs_base_mismatches": 0,
+      "source_copy_byte_equality": true,
+      "files": {
+        "successor-response.jsonl": {
+          "source_sha256": "357e480ba9f5459bce13dc6db3f8724d2f1ac2e0f865a71d65fd44fd2d07f509",
+          "frozen_copy_sha256": "357e480ba9f5459bce13dc6db3f8724d2f1ac2e0f865a71d65fd44fd2d07f509",
+          "byte_equal": true,
+          "bytes": 15005
+        },
+        "read-manifest.json": {
+          "source_sha256": "a68e1b06d9b28b9322de0f43099699ac3928845f87d8bcb97f92e70a120d8ec1",
+          "frozen_copy_sha256": "a68e1b06d9b28b9322de0f43099699ac3928845f87d8bcb97f92e70a120d8ec1",
+          "byte_equal": true,
+          "bytes": 3801
+        },
+        "freeze-sha256.txt": {
+          "source_sha256": "ed41c74ad92d5d4897b300b34cffbfa04d3eff1ad137ffd81d27e50188b2c9ca",
+          "frozen_copy_sha256": "ed41c74ad92d5d4897b300b34cffbfa04d3eff1ad137ffd81d27e50188b2c9ca",
+          "byte_equal": true,
+          "bytes": 2643
+        }
+      },
+      "contamination_status": "WORKTREE_WIPE_ISOLATION_MECHANICALLY_BENIGN: 4358 tracked files staged-deleted (no commit); sole remaining worktree content is the local untracked evidence bundle; branch ref unchanged at exact base; deletion cannot inject evidence and is consistent with read isolation",
+      "notes": [
+        "checked-out HEAD 428d1885d0cb on 'main' is an ancestor of exact base (not advanced); successor branch ref == exact base",
+        "worktree mutation outside bundle: .github/CONTRIBUTING.md, .github/ISSUE_TEMPLATE/independent-review.yml, .github/ISSUE_TEMPLATE/noncommercial-use-report.yml ...",
+        "freeze file declares no per-path allowlist entries (only aggregate hash); per-path equality checked via read-manifest"
+      ]
+    },
+    {
+      "task": "IGNITION-20260921-202",
+      "condition": "METHOD_TRACE",
+      "replicate": "A",
+      "source_container_logical_id": "202-METHOD-A",
+      "branch": "work/IGNITION-20260921-198-successor-method-a",
+      "exact_base": "867dc2e4f47c3981aa4178d706b6ea6e110379fe",
+      "branch_ref_equals_exact_base": true,
+      "successor_commits_after_base": "0",
+      "local_no_commit_status": "NO_SUCCESSOR_COMMIT",
+      "remote_branch_absence_status": "ABSENT",
+      "packet_manifest_sha256": "65822249c3b008426f69ec12f61a4d5c703d436ed64abf2c199c661f5a57251a",
+      "packet_manifest_expected_sha256": "65822249c3b008426f69ec12f61a4d5c703d436ed64abf2c199c661f5a57251a",
+      "packet_manifest_match": true,
+      "allowlist_count": 17,
+      "read_manifest_entry_count": 17,
+      "read_allowlist_exact_set_equality": true,
+      "unlisted_read_count": 0,
+      "cross_condition_read_count": 0,
+      "evaluator_sealed_read_count": 0,
+      "schema_status": "PASS",
+      "record_count": 3,
+      "record_order": [
+        "REPL-CASE-03",
+        "REPL-CASE-01",
+        "REPL-CASE-02"
+      ],
+      "packet_case_order": [
+        "REPL-CASE-03",
+        "REPL-CASE-01",
+        "REPL-CASE-02"
+      ],
+      "case_order_match": true,
+      "case_pin_mismatches": 0,
+      "packet_pin_vs_base_mismatches": 0,
+      "source_copy_byte_equality": true,
+      "files": {
+        "successor-response.jsonl": {
+          "source_sha256": "b2abe7c2eb6ea5081c3e673717b8730a15e20b0c0932f2a0cf4c8a65cfb3edee",
+          "frozen_copy_sha256": "b2abe7c2eb6ea5081c3e673717b8730a15e20b0c0932f2a0cf4c8a65cfb3edee",
+          "byte_equal": true,
+          "bytes": 17473
+        },
+        "read-manifest.json": {
+          "source_sha256": "812b385f101a70c7b8de125f9d5f46076818058995ec7ccc8ab4ab6f940eac45",
+          "frozen_copy_sha256": "812b385f101a70c7b8de125f9d5f46076818058995ec7ccc8ab4ab6f940eac45",
+          "byte_equal": true,
+          "bytes": 5316
+        },
+        "freeze-sha256.txt": {
+          "source_sha256": "6695cf8ba892322d2d75f71d0d2290059c35052824844e0b20636295fbac2303",
+          "frozen_copy_sha256": "6695cf8ba892322d2d75f71d0d2290059c35052824844e0b20636295fbac2303",
+          "byte_equal": true,
+          "bytes": 782
+        }
+      },
+      "contamination_status": "NONE_DETECTED",
+      "notes": [
+        "freeze file declares no per-path allowlist entries (only aggregate hash); per-path equality checked via read-manifest"
+      ]
+    },
+    {
+      "task": "IGNITION-20260921-203",
+      "condition": "METHOD_TRACE",
+      "replicate": "B",
+      "source_container_logical_id": "203-METHOD-B",
+      "branch": "work/IGNITION-20260921-198-successor-method-b",
+      "exact_base": "867dc2e4f47c3981aa4178d706b6ea6e110379fe",
+      "branch_ref_equals_exact_base": true,
+      "successor_commits_after_base": "0",
+      "local_no_commit_status": "NO_SUCCESSOR_COMMIT",
+      "remote_branch_absence_status": "ABSENT",
+      "packet_manifest_sha256": "3f1b6a4fc0eb39393c775210da83de4b5a39a02b572ae171ce028772b8a98ca0",
+      "packet_manifest_expected_sha256": "3f1b6a4fc0eb39393c775210da83de4b5a39a02b572ae171ce028772b8a98ca0",
+      "packet_manifest_match": true,
+      "allowlist_count": 17,
+      "read_manifest_entry_count": 17,
+      "read_allowlist_exact_set_equality": true,
+      "unlisted_read_count": 0,
+      "cross_condition_read_count": 0,
+      "evaluator_sealed_read_count": 0,
+      "schema_status": "PASS",
+      "record_count": 3,
+      "record_order": [
+        "REPL-CASE-01",
+        "REPL-CASE-02",
+        "REPL-CASE-03"
+      ],
+      "packet_case_order": [
+        "REPL-CASE-01",
+        "REPL-CASE-02",
+        "REPL-CASE-03"
+      ],
+      "case_order_match": true,
+      "case_pin_mismatches": 0,
+      "packet_pin_vs_base_mismatches": 0,
+      "source_copy_byte_equality": true,
+      "files": {
+        "successor-response.jsonl": {
+          "source_sha256": "8da75328fefc27606ac1f4319bacbfd3d61abd13cc5c8748d3880d7498e0b148",
+          "frozen_copy_sha256": "8da75328fefc27606ac1f4319bacbfd3d61abd13cc5c8748d3880d7498e0b148",
+          "byte_equal": true,
+          "bytes": 21013
+        },
+        "read-manifest.json": {
+          "source_sha256": "2fbb094885dd61c607906496d1953d100b9a0c4c54863290bd3591afda2e9c99",
+          "frozen_copy_sha256": "2fbb094885dd61c607906496d1953d100b9a0c4c54863290bd3591afda2e9c99",
+          "byte_equal": true,
+          "bytes": 5318
+        },
+        "freeze-sha256.txt": {
+          "source_sha256": "4539670f0a3cbdbac7781f4f663a7b4509a68e866b869369a9c1b93cb24307d2",
+          "frozen_copy_sha256": "4539670f0a3cbdbac7781f4f663a7b4509a68e866b869369a9c1b93cb24307d2",
+          "byte_equal": true,
+          "bytes": 3600
+        }
+      },
+      "contamination_status": "NONE_DETECTED",
+      "notes": [
+        "checked-out HEAD 428d1885d0cb on 'main' is an ancestor of exact base (not advanced); successor branch ref == exact base",
+        "freeze file declares no per-path allowlist entries (only aggregate hash); per-path equality checked via read-manifest"
+      ]
+    },
+    {
+      "task": "IGNITION-20260921-204",
+      "condition": "BROKEN_METHOD_TRACE_CONTROL",
+      "replicate": "A",
+      "source_container_logical_id": "204-BROKEN-A",
+      "branch": "work/IGNITION-20260921-198-successor-broken-a",
+      "exact_base": "867dc2e4f47c3981aa4178d706b6ea6e110379fe",
+      "branch_ref_equals_exact_base": true,
+      "successor_commits_after_base": "0",
+      "local_no_commit_status": "NO_SUCCESSOR_COMMIT",
+      "remote_branch_absence_status": "ABSENT",
+      "packet_manifest_sha256": "44b001c0da14f2c5fcb9f237a381dc17aa402b7fe76cee864a61782fbbd9d2af",
+      "packet_manifest_expected_sha256": "44b001c0da14f2c5fcb9f237a381dc17aa402b7fe76cee864a61782fbbd9d2af",
+      "packet_manifest_match": true,
+      "allowlist_count": 15,
+      "read_manifest_entry_count": 15,
+      "read_allowlist_exact_set_equality": true,
+      "unlisted_read_count": 0,
+      "cross_condition_read_count": 0,
+      "evaluator_sealed_read_count": 0,
+      "schema_status": "PASS",
+      "record_count": 3,
+      "record_order": [
+        "REPL-CASE-03",
+        "REPL-CASE-01",
+        "REPL-CASE-02"
+      ],
+      "packet_case_order": [
+        "REPL-CASE-03",
+        "REPL-CASE-01",
+        "REPL-CASE-02"
+      ],
+      "case_order_match": true,
+      "case_pin_mismatches": 0,
+      "packet_pin_vs_base_mismatches": 0,
+      "source_copy_byte_equality": true,
+      "files": {
+        "successor-response.jsonl": {
+          "source_sha256": "722dabef0cd7fb70c4690c36ac40998bad34c0e0069474eafaea00a578db62c8",
+          "frozen_copy_sha256": "722dabef0cd7fb70c4690c36ac40998bad34c0e0069474eafaea00a578db62c8",
+          "byte_equal": true,
+          "bytes": 15850
+        },
+        "read-manifest.json": {
+          "source_sha256": "b9e0fefb46ccac1a330d1cb14ee12680083de2facd1908a30e69c512b39ae4d6",
+          "frozen_copy_sha256": "b9e0fefb46ccac1a330d1cb14ee12680083de2facd1908a30e69c512b39ae4d6",
+          "byte_equal": true,
+          "bytes": 4796
+        },
+        "freeze-sha256.txt": {
+          "source_sha256": "702687b9ca6011c8e902e5f51b68722903cf638a8192361fec0cdf7f224380bb",
+          "frozen_copy_sha256": "702687b9ca6011c8e902e5f51b68722903cf638a8192361fec0cdf7f224380bb",
+          "byte_equal": true,
+          "bytes": 3530
+        }
+      },
+      "contamination_status": "NONE_DETECTED",
+      "notes": [
+        "freeze file declares no per-path allowlist entries (only aggregate hash); per-path equality checked via read-manifest"
+      ]
+    },
+    {
+      "task": "IGNITION-20260921-205",
+      "condition": "BROKEN_METHOD_TRACE_CONTROL",
+      "replicate": "B",
+      "source_container_logical_id": "205-BROKEN-B",
+      "branch": "work/IGNITION-20260921-198-successor-broken-b",
+      "exact_base": "867dc2e4f47c3981aa4178d706b6ea6e110379fe",
+      "branch_ref_equals_exact_base": true,
+      "successor_commits_after_base": "0",
+      "local_no_commit_status": "NO_SUCCESSOR_COMMIT",
+      "remote_branch_absence_status": "ABSENT",
+      "packet_manifest_sha256": "e3384e79faabe03b44a274775c9ca3a42c3e59badc44a441eaf932600f78fe05",
+      "packet_manifest_expected_sha256": "e3384e79faabe03b44a274775c9ca3a42c3e59badc44a441eaf932600f78fe05",
+      "packet_manifest_match": true,
+      "allowlist_count": 15,
+      "read_manifest_entry_count": 15,
+      "read_allowlist_exact_set_equality": true,
+      "unlisted_read_count": 0,
+      "cross_condition_read_count": 0,
+      "evaluator_sealed_read_count": 0,
+      "schema_status": "PASS",
+      "record_count": 3,
+      "record_order": [
+        "REPL-CASE-01",
+        "REPL-CASE-02",
+        "REPL-CASE-03"
+      ],
+      "packet_case_order": [
+        "REPL-CASE-01",
+        "REPL-CASE-02",
+        "REPL-CASE-03"
+      ],
+      "case_order_match": true,
+      "case_pin_mismatches": 0,
+      "packet_pin_vs_base_mismatches": 0,
+      "source_copy_byte_equality": true,
+      "files": {
+        "successor-response.jsonl": {
+          "source_sha256": "b7f7039ffc4d1e009d287c0b88c90093822f67aa2125e5209c06b9b9fc8c9a50",
+          "frozen_copy_sha256": "b7f7039ffc4d1e009d287c0b88c90093822f67aa2125e5209c06b9b9fc8c9a50",
+          "byte_equal": true,
+          "bytes": 11150
+        },
+        "read-manifest.json": {
+          "source_sha256": "a213b5bc117f7bc3174b1b6b907b73811c81e1f186e2034b67438e386daab5ba",
+          "frozen_copy_sha256": "a213b5bc117f7bc3174b1b6b907b73811c81e1f186e2034b67438e386daab5ba",
+          "byte_equal": true,
+          "bytes": 4659
+        },
+        "freeze-sha256.txt": {
+          "source_sha256": "f5bd804582314e58166c3728d8789bb6e290195b299d51f6aabde50aa830402f",
+          "frozen_copy_sha256": "f5bd804582314e58166c3728d8789bb6e290195b299d51f6aabde50aa830402f",
+          "byte_equal": true,
+          "bytes": 3356
+        }
+      },
+      "contamination_status": "NONE_DETECTED",
+      "notes": []
+    }
+  ],
+  "gate_all_pass": true
+}

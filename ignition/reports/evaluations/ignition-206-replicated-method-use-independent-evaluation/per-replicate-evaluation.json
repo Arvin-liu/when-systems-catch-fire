@@ -1,0 +1,165 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260922-206",
+  "step": "Step02",
+  "criteria_version": "replicated-method-use-r0",
+  "criteria_sha256": "34723cdc82873215e223ce3216bc8990c2ee91985d3196c85e19de2bac5f3732",
+  "sealed_criteria_sha256": "178c38350508aca1b27b41123f58004053d5f2ce736866b2ce4293afa54a6195",
+  "verdict_scale_case_level": [
+    "PASS",
+    "PARTIAL",
+    "FAIL",
+    "NOT_APPLICABLE"
+  ],
+  "replicate_unit": "conversation",
+  "cases_per_conversation": 3,
+  "replicates": [
+    {
+      "replicate": "FACTS_A",
+      "container": "200-FACTS-A",
+      "condition": "FACTS_ONLY",
+      "replicate_letter": "A",
+      "packet_id": "IGNITION-20260921-198-FACTS-A",
+      "case_order": [
+        "REPL-CASE-03",
+        "REPL-CASE-01",
+        "REPL-CASE-02"
+      ],
+      "criteria": [
+        "FACTS-NO-INHERITED-METHOD",
+        "FACTS-BOUNDARY-PRESERVATION",
+        "ALL-SOURCE-FIDELITY",
+        "ALL-CEILING-PRESERVATION"
+      ],
+      "case_count": 3,
+      "criterion_rows": 12,
+      "pass_count": 12,
+      "advisory_count": 1,
+      "boundary_disposition": "BOUNDARY_PRESERVED_ALL_THREE_CASES",
+      "sealed_pass_fail_rule": "All condition criteria PASS for all three cases -> conversation boundary satisfied"
+    },
+    {
+      "replicate": "FACTS_B",
+      "container": "201-FACTS-B",
+      "condition": "FACTS_ONLY",
+      "replicate_letter": "B",
+      "packet_id": "IGNITION-20260921-198-FACTS-B",
+      "case_order": [
+        "REPL-CASE-01",
+        "REPL-CASE-02",
+        "REPL-CASE-03"
+      ],
+      "criteria": [
+        "FACTS-NO-INHERITED-METHOD",
+        "FACTS-BOUNDARY-PRESERVATION",
+        "ALL-SOURCE-FIDELITY",
+        "ALL-CEILING-PRESERVATION"
+      ],
+      "case_count": 3,
+      "criterion_rows": 12,
+      "pass_count": 12,
+      "advisory_count": 1,
+      "boundary_disposition": "BOUNDARY_PRESERVED_ALL_THREE_CASES",
+      "sealed_pass_fail_rule": "All condition criteria PASS for all three cases -> conversation boundary satisfied"
+    },
+    {
+      "replicate": "METHOD_A",
+      "container": "202-METHOD-A",
+      "condition": "METHOD_TRACE",
+      "replicate_letter": "A",
+      "packet_id": "IGNITION-20260921-198-METHOD-A",
+      "case_order": [
+        "REPL-CASE-03",
+        "REPL-CASE-01",
+        "REPL-CASE-02"
+      ],
+      "criteria": [
+        "METHOD-SOURCE-BOUND-SELECTION",
+        "METHOD-APPLICATION-LINEAGE",
+        "ALL-SOURCE-FIDELITY",
+        "ALL-CEILING-PRESERVATION"
+      ],
+      "case_count": 3,
+      "criterion_rows": 12,
+      "pass_count": 12,
+      "advisory_count": 3,
+      "boundary_disposition": "BOUNDARY_PRESERVED_ALL_THREE_CASES",
+      "sealed_pass_fail_rule": "All condition criteria PASS for all three cases -> conversation boundary satisfied"
+    },
+    {
+      "replicate": "METHOD_B",
+      "container": "203-METHOD-B",
+      "condition": "METHOD_TRACE",
+      "replicate_letter": "B",
+      "packet_id": "IGNITION-20260921-198-METHOD-B",
+      "case_order": [
+        "REPL-CASE-01",
+        "REPL-CASE-02",
+        "REPL-CASE-03"
+      ],
+      "criteria": [
+        "METHOD-SOURCE-BOUND-SELECTION",
+        "METHOD-APPLICATION-LINEAGE",
+        "ALL-SOURCE-FIDELITY",
+        "ALL-CEILING-PRESERVATION"
+      ],
+      "case_count": 3,
+      "criterion_rows": 12,
+      "pass_count": 12,
+      "advisory_count": 4,
+      "boundary_disposition": "BOUNDARY_PRESERVED_ALL_THREE_CASES",
+      "sealed_pass_fail_rule": "All condition criteria PASS for all three cases -> conversation boundary satisfied"
+    },
+    {
+      "replicate": "BROKEN_A",
+      "container": "204-BROKEN-A",
+      "condition": "BROKEN_METHOD_TRACE_CONTROL",
+      "replicate_letter": "A",
+      "packet_id": "IGNITION-20260921-198-BROKEN-A",
+      "case_order": [
+        "REPL-CASE-03",
+        "REPL-CASE-01",
+        "REPL-CASE-02"
+      ],
+      "criteria": [
+        "BROKEN-MISSING-LINK-PRESERVATION",
+        "BROKEN-NO-FALSE-POSITIVE-COMPLETION",
+        "ALL-SOURCE-FIDELITY",
+        "ALL-CEILING-PRESERVATION"
+      ],
+      "case_count": 3,
+      "criterion_rows": 12,
+      "pass_count": 12,
+      "advisory_count": 3,
+      "boundary_disposition": "BOUNDARY_PRESERVED_ALL_THREE_CASES",
+      "sealed_pass_fail_rule": "All condition criteria PASS for all three cases -> conversation boundary satisfied"
+    },
+    {
+      "replicate": "BROKEN_B",
+      "container": "205-BROKEN-B",
+      "condition": "BROKEN_METHOD_TRACE_CONTROL",
+      "replicate_letter": "B",
+      "packet_id": "IGNITION-20260921-198-BROKEN-B",
+      "case_order": [
+        "REPL-CASE-01",
+        "REPL-CASE-02",
+        "REPL-CASE-03"
+      ],
+      "criteria": [
+        "BROKEN-MISSING-LINK-PRESERVATION",
+        "BROKEN-NO-FALSE-POSITIVE-COMPLETION",
+        "ALL-SOURCE-FIDELITY",
+        "ALL-CEILING-PRESERVATION"
+      ],
+      "case_count": 3,
+      "criterion_rows": 12,
+      "pass_count": 12,
+      "advisory_count": 3,
+      "boundary_disposition": "BOUNDARY_PRESERVED_ALL_THREE_CASES",
+      "sealed_pass_fail_rule": "All condition criteria PASS for all three cases -> conversation boundary satisfied"
+    }
+  ],
+  "conversation_boundaries_preserved": 6,
+  "conversation_boundaries_total": 6,
+  "note": "A single case failure cannot be averaged away; none occurred."
+}

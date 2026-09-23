@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 670 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 677 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,97 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Replication / order / template analysis (Step03)](../reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/replication-analysis.md)
+
+- **结果 ID：** `HR-0A03E9C6C6010E6D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `206-REPLICATED-METHOD-USE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Replication / order / template analysis (Step03)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task200-205 commands all declare model 5.6 Terra / reasoning medium / speed standard. None of the six frozen bundles or any auditable operational metadata independently records the actual runtime model or configuration.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Replicated method-use disposition (Step04)](../reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/replicated-method-use-report.md)
+
+- **结果 ID：** `HR-30720FF722FB07A6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `206-REPLICATED-METHOD-USE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Replicated method-use disposition (Step04)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** REPLICATEDMETHODUSESIGNALSUPPORTED
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Per-replicate, per-case sealed evaluation (Step02)](../reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/per-replicate-evaluation.md)
+
+- **结果 ID：** `HR-1AFD342B4CAFB130`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `206-REPLICATED-METHOD-USE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Per-replicate, per-case sealed evaluation (Step02)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Criteria: replicated-method-use-r0 (Step05 predeclared logic, unmodified). Case-level scale: PASS / PARTIAL / FAIL / NOTAPPLICABLE. Replicate unit: conversation.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Negative-control audit (Step05)](../reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/negative-control-audit.md)
+
+- **结果 ID：** `HR-F23A7548E8615E5D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `206-REPLICATED-METHOD-USE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Negative-control audit (Step05)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 12/12 NOTTRIGGERED. This does NOT upgrade general cognitive inheritance.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Independent evaluator final report (Step06)](../reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/independent-evaluation-report.md)
+
+- **结果 ID：** `HR-66B009A545FC091B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `206-REPLICATED-METHOD-USE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Independent evaluator final report (Step06)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This report summarises Step02-05. It does not change the Step04 predeclared disposition.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Evidence Freeze - IGNITION-20260922-206](../reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/frozen-successor-evidence/evidence-freeze.md)
+
+- **结果 ID：** `HR-665EB953A7CA1115`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `206-REPLICATED-METHOD-USE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Evidence Freeze - IGNITION-20260922-206？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Replicated Method-Use R0 Independent Evaluation - Step00 mechanical gate.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Evaluation evidence isolation / fixed point (Step07)](../reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/evaluation-evidence-isolation.md)
+
+- **结果 ID：** `HR-67C573B4578AE30A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `206-REPLICATED-METHOD-USE-INDEPENDENT-EVALUATION`
+- **问题：** 此来源记录了什么：Evaluation evidence isolation / fixed point (Step07)？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Because Task206 Markdown falls under the reports human-results source root, human-results may carry it as a navigation projection, and Knowledge Experience isolates it by reusing the existing exact-path excludedgeneratedresultsources list. Six exact paths were appended; no wide-prefix exclusion w…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

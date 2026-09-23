@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-771c575b7e09f8bd"></a>
+## 121Q32I Phase D integrated validation closeout
+`CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: PHASEDVALIDATIONCLOSEDCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q32I Phase D integrated validation closeout；Status: PHASEDVALIDATIONCLOSEDCANDIDATEONLY；This report aggregates the already completed D1 unified validator, D2 end-to-end acceptance, and D3 local defensive rejection work. It is a repository-scoped validation artifact. The observed candidate identifier is 4dd038bd3caf5483c8bf3833a0382ed5bb3e2b8a; that identifier is not an attestation or a validity premise.；主题：Preserved history；主题：Integrated evidence；Phase A profile tests: 5/5 PASS; generator --check and profile validator PASS.
+- 完整阅读：[reports/operations/121Q32I-phase-d-validation-closeout.md](../../reports/operations/121Q32I-phase-d-validation-closeout.md)
+
 <a id="reading-hr-773e495bc5720013"></a>
 ## Core system reclassification
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
@@ -346,10 +353,3 @@
 - 1 分钟：The provider-neutral offline harness accepts exactly one strict synthetic result and rejects ten negative cases: malformed JSON, extra fields, semantic mismatch, non-zero process exit, timeout/effect unknown, child cleanup failure, workspace mutation, runtime-scratch leak, incomplete durable capt… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260827-142 Step 05 — Offline Executor Conformance；The provider-neutral offline harness accepts exactly one strict synthetic result and rejects ten negative cases: malformed JSON, extra fields, semantic mismatch, non-zero process exit, timeout/effect unknown, child cleanup failure, workspace mutation, runtime-scratch leak, incomplete durable capture, and redaction failure. The harness does not repair malform…；The result matrix is ignition/data/operations/executor-conformance-matrix-r1.json, generated from ignition/agentfederation/executorconformance.py and checked by ignition/tools/validateexecutorconformance.py. It records no live process, no child left behind, no formal workspace mutation, no runtime-scratch leak, and no secret-content read.；This is a local contract/conformance result only. It is not evidence that any installed provider or executor is live-selectable.
 - 完整阅读：[reports/operations/ignition-142-step05-offline-conformance.md](../../reports/operations/ignition-142-step05-offline-conformance.md)
-
-<a id="reading-hr-89bee83cf7869f76"></a>
-## IGNITION-20260908-167 result
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
-- 1 分钟：MAINLINEINTEGRATIONSTILLBLOCKED 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260908-167 result；MAINLINEINTEGRATIONSTILLBLOCKED；This result records a bounded execution of the controlling command Arvin-liu/1111@3fafaeec7d928309d51f18c3fb0483218706c8a1, agent-commands/IGNITION-20260908-167.md (command blob a5d27d6b72d9f20507b08bf741084c403112b5f3). No new material run was started.；主题：Exact baseline and current remote state；Formal repository: Arvin-liu/when-systems-catch-fire；Old formal main: 212322d41db79bce2dbd116166d3f1ad226291f3
-- 完整阅读：[agent-results/IGNITION-20260908-167-result.md](../../agent-results/IGNITION-20260908-167-result.md)

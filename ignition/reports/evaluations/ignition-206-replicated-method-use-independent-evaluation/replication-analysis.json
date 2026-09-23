@@ -1,0 +1,87 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260922-206",
+  "step": "Step03",
+  "dimensions": [
+    {
+      "dimension_id": "ACROSS-CASE-CONSISTENCY",
+      "result": "PASS",
+      "finding": "Each of the three cases is evaluated separately per replicate. No case-level failure, missing measurement or unresolved disposition was averaged away; 18 case records x 4 criteria = 72 rows, all PASS, with 11 advisory annotations retained individually."
+    },
+    {
+      "dimension_id": "ACROSS-REPLICATE-CONSISTENCY",
+      "result": "PASS",
+      "finding": "A and B preserve the intended condition boundary in both replicates (FACTS 2/2, METHOD 2/2, BROKEN 2/2). No replicate was excluded and no outcome-adaptive reinterpretation was used. Repeated consistency is not treated as causation."
+    },
+    {
+      "dimension_id": "CASE-ORDER-SENSITIVITY",
+      "result": "PASS",
+      "finding": "A order (03,01,02) and B order (01,02,03) were frozen before execution and differ. No boundary failure appears in only one order, and no divergence co-occurs with case position. Structural caveat retained: with one conversation per (condition, replicate), order is perfectly confounded with replicate (A-order always paired with replicate A), so order is descriptive, not a randomized control."
+    },
+    {
+      "dimension_id": "WORDING-TEMPLATE-IMITATION",
+      "result": "PASS",
+      "finding": "The method replicates repeat the candidate identifier method:bounded-replay-contrast-r0, but each case adds a distinct, case-bound rationale (K7 repeatable; B3 plus four-tick watchdog window; fold=2 repeatable after reset) and a distinct expected-observation statement. Wording repetition alone was not counted as source-bound use."
+    },
+    {
+      "dimension_id": "FALSE-POSITIVE-COMPLETION",
+      "result": "PASS",
+      "finding": "No invented inherited method in FACTS A/B; no manufactured selection/use/revision link in BROKEN A/B; no expected observation reported as actual in METHOD A/B; the watchdog expiry failure is retained in every replicate that touches REPL-CASE-02."
+    },
+    {
+      "dimension_id": "SOURCE-PROVENANCE-FIDELITY",
+      "result": "PASS",
+      "finding": "Step00 mechanical gate: read-manifest entries equal packet read_allowlist exactly, each path once, each recorded SHA equal to the packet pin and to the exact-base final bytes, read_channel cognitive_packet_read, read_status READ, 0 unlisted / cross-condition / evaluator-sealed reads."
+    },
+    {
+      "dimension_id": "UNCERTAINTY-PRESERVATION",
+      "result": "PASS",
+      "finding": "Unknowns, boundaries, obligations and claim ceilings are populated in all 18 records; missing measurements are typed NOT_MEASURED or retained as unknowns; no uncertainty collapses into a causal, capability, inheritance, R1 or canonical claim."
+    }
+  ],
+  "independence_boundary": {
+    "replicate_unit": "conversation",
+    "cases_within_conversation_are_independent_samples": false,
+    "replicate_count": 6,
+    "case_record_count": 18,
+    "claimable_independent_replicates": 6,
+    "claimable_independent_cases": 0,
+    "random_seed_control": false,
+    "repeated_consistency_is_causal_proof": false
+  },
+  "execution_environment_attestation": {
+    "command_declared": {
+      "model": "5.6 Terra",
+      "reasoning_effort": "medium",
+      "speed": "standard",
+      "applies_to": [
+        "IGNITION-20260921-200",
+        "IGNITION-20260921-201",
+        "IGNITION-20260921-202",
+        "IGNITION-20260921-203",
+        "IGNITION-20260921-204",
+        "IGNITION-20260921-205"
+      ]
+    },
+    "independently_recorded_in_frozen_bundles": false,
+    "attestation": "MODEL_CONFIGURATION_ATTESTATION: COMMAND_ASSIGNED_NOT_INDEPENDENTLY_VERIFIED",
+    "consequence": "'same-model' must be stated as assigned configuration, not as independently verified runtime identity; this does not invalidate the trial"
+  },
+  "order_sensitivity": {
+    "a_order": [
+      "REPL-CASE-03",
+      "REPL-CASE-01",
+      "REPL-CASE-02"
+    ],
+    "b_order": [
+      "REPL-CASE-01",
+      "REPL-CASE-02",
+      "REPL-CASE-03"
+    ],
+    "only_in_A_boundary_failure": false,
+    "only_in_B_boundary_failure": false,
+    "order_position_cooccurring_divergence": false,
+    "structural_confound": "order is perfectly confounded with replicate letter",
+    "reported_as": "descriptive, not a randomized order control"
+  }
+}
