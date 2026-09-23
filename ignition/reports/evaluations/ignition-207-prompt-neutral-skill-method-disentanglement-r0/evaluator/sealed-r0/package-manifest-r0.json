@@ -1,0 +1,51 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "step": "Step06",
+  "schema_version": "task207-evaluator-sealed-package-r0",
+  "base_commit": "8e70ba196739cf1a79600e02ace36f90ad2c130c",
+  "input_packet_set_sha256": "cb7d73c3a1fdcc066000b8385627c3b34ab24b4baf5589abbfb445a9af3a9506",
+  "condition_map": {
+    "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/evaluator/sealed-r0/condition-map-r0.json",
+    "sha256": "0a0f94159708145f45ba54a1abe1fbffef91a71f345db5d01b49e536762311f2",
+    "sha256_sidecar": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/evaluator/sealed-r0/condition-map-r0.json.sha256"
+  },
+  "evaluator_and_runtime_contract_files": [
+    {
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/evaluator/criteria-r0.md",
+      "sha256": "005182455b4b72146635ae8950e41b41d91b5f77f7d2b96e79d5db33632e3c12"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/evaluator/criteria-r0.json",
+      "sha256": "86a8fea868847424499b334d3e1285433eaedfb37f4dbe6c42483f162cdb5e04"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/evaluator/runtime-attestation/receipt-r0.schema.json",
+      "sha256": "d65c6951bd8d945149557fc01295aa1d73f41961a74867c89e97b563ac5e6b88"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/evaluator/runtime-attestation/interpretation-r0.md",
+      "sha256": "767df9550e6974b68ae16019c9b91628de8e0f6ca8db8c30c5a6485aef8f246b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/tools/validate_runtime_attestation_r0.py",
+      "sha256": "1b15605f28756ca9c3d936c002c8baa2d835c6f87bb7b87b81e88aae3eb8f23a"
+    }
+  ],
+  "protection_boundary": {
+    "successor_visible": false,
+    "release_gate": "AFTER_BOTH_INDEPENDENT_EVALUATOR_SCORE_SHEETS_ARE_LOCKED",
+    "enforcement": "TASK_READ_ALLOWLIST_AND_EVALUATOR_PATH_SEPARATION",
+    "cryptographic_encryption_or_repository_acl": false,
+    "limitation": "This repository package is protocol-separated, not cryptographically secret from repository readers. Successor tasks must receive only allowlisted packet paths; do not claim repository-level secrecy."
+  },
+  "runtime_receipts_included": 0,
+  "status": {
+    "successor": "NOT_RUN",
+    "evaluator": "NOT_RUN",
+    "cross_model_execution": "NOT_AUTHORIZED",
+    "r1": "NOT_AUTHORIZED",
+    "canonical_claim_ids": [],
+    "canonical_promotion": "NONE"
+  }
+}
