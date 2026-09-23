@@ -1,0 +1,140 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "step": "Step04",
+  "schema_version": "task207-packet-set-r0",
+  "base_commit": "8e70ba196739cf1a79600e02ace36f90ad2c130c",
+  "packet_count": 8,
+  "case_count_per_packet": 3,
+  "replicate_blocks": [
+    {
+      "replicate_block": "A",
+      "packet_ids": [
+        "PKT-7C4A9D",
+        "PKT-05E8B2",
+        "PKT-D18F63",
+        "PKT-B6092E"
+      ],
+      "case_order": [
+        "CASE-02",
+        "CASE-01",
+        "CASE-03"
+      ]
+    },
+    {
+      "replicate_block": "B",
+      "packet_ids": [
+        "PKT-A7C145",
+        "PKT-92DE30",
+        "PKT-40BC81",
+        "PKT-E3157A"
+      ],
+      "case_order": [
+        "CASE-03",
+        "CASE-02",
+        "CASE-01"
+      ]
+    }
+  ],
+  "packets": [
+    {
+      "packet_id": "PKT-7C4A9D",
+      "replicate_block": "A",
+      "packet_manifest": "packets/PKT-7C4A9D/packet-manifest.json",
+      "packet_manifest_sha256": "c76f1d643d9bca8e3d5950d213d8fe7e5ebf68dc5b839021f67328e88d6f5e43",
+      "case_order": [
+        "CASE-02",
+        "CASE-01",
+        "CASE-03"
+      ]
+    },
+    {
+      "packet_id": "PKT-05E8B2",
+      "replicate_block": "A",
+      "packet_manifest": "packets/PKT-05E8B2/packet-manifest.json",
+      "packet_manifest_sha256": "f772236feed302ea24e85b3d827cb9dd847f3225feac46ad5cc2624063e704eb",
+      "case_order": [
+        "CASE-02",
+        "CASE-01",
+        "CASE-03"
+      ]
+    },
+    {
+      "packet_id": "PKT-D18F63",
+      "replicate_block": "A",
+      "packet_manifest": "packets/PKT-D18F63/packet-manifest.json",
+      "packet_manifest_sha256": "c28d63842b7d99bab06102afa25bd0aa924129fe2788771d0e113d3433512754",
+      "case_order": [
+        "CASE-02",
+        "CASE-01",
+        "CASE-03"
+      ]
+    },
+    {
+      "packet_id": "PKT-B6092E",
+      "replicate_block": "A",
+      "packet_manifest": "packets/PKT-B6092E/packet-manifest.json",
+      "packet_manifest_sha256": "a8f583c5e19f1356c3488d7819378ee974dacf53ece50e6484b154b02d79057b",
+      "case_order": [
+        "CASE-02",
+        "CASE-01",
+        "CASE-03"
+      ]
+    },
+    {
+      "packet_id": "PKT-A7C145",
+      "replicate_block": "B",
+      "packet_manifest": "packets/PKT-A7C145/packet-manifest.json",
+      "packet_manifest_sha256": "db3bffbc4dca04552b7aaa724335f6efaddc26548893b7a6ba95ae6dd3d07e93",
+      "case_order": [
+        "CASE-03",
+        "CASE-02",
+        "CASE-01"
+      ]
+    },
+    {
+      "packet_id": "PKT-92DE30",
+      "replicate_block": "B",
+      "packet_manifest": "packets/PKT-92DE30/packet-manifest.json",
+      "packet_manifest_sha256": "9df4a9a8af74a2e18cdf4310e0203917f16ef7244d3a2eb975053ca4aa9a73c4",
+      "case_order": [
+        "CASE-03",
+        "CASE-02",
+        "CASE-01"
+      ]
+    },
+    {
+      "packet_id": "PKT-40BC81",
+      "replicate_block": "B",
+      "packet_manifest": "packets/PKT-40BC81/packet-manifest.json",
+      "packet_manifest_sha256": "e71550ea614aa32d394f2f6f9b5e29a008d85104f7514b1c389d42a8a5221fb6",
+      "case_order": [
+        "CASE-03",
+        "CASE-02",
+        "CASE-01"
+      ]
+    },
+    {
+      "packet_id": "PKT-E3157A",
+      "replicate_block": "B",
+      "packet_manifest": "packets/PKT-E3157A/packet-manifest.json",
+      "packet_manifest_sha256": "df44cbeb071e263ee9573dc959ebff920c56168790ad07be3abab50366b6c0e8",
+      "case_order": [
+        "CASE-03",
+        "CASE-02",
+        "CASE-01"
+      ]
+    }
+  ],
+  "shared_prompt_sha256": "32c4f9659f66cff4cc7690bdf2ec2166cb3bb906f48251a58099fe5580312584",
+  "shared_read_manifest_sha256": "23ceb556e34cecdde4d34eca44b72c9c95233b8fa1792659e76c97e492aa57aa",
+  "shared_freeze_contract_sha256": "51ee0490892ae70b6bf0c0d4e411d88b40c3a39698d3a81307a8a940332d5f28",
+  "shared_output_schema_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
+  "condition_mapping": "WITHHELD_FOR_EVALUATOR_SEALED_PACKAGE",
+  "status": {
+    "future_successor": "NOT_RUN",
+    "future_evaluator": "NOT_RUN",
+    "canonical_claim_ids": [],
+    "canonical_promotion": "NONE"
+  }
+}

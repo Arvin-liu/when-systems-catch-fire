@@ -1,0 +1,15 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "schema_version": "task207-trial-freeze-contract-r0",
+  "before_run": [
+    "Record the trial worktree HEAD, branch, tracked path inventory, and clean index/worktree state.",
+    "Declare the sole output directory as trial-output/<opaque-packet-id>/ before execution."
+  ],
+  "during_and_after_run": [
+    "Any tracked deletion, tracked modification, or staging/index change immediately invalidates the trial with TRIAL_WORKTREE_MUTATION_INVALID.",
+    "Any untracked file outside trial-output/<opaque-packet-id>/ immediately invalidates the trial with TRIAL_WORKTREE_MUTATION_INVALID.",
+    "Preserve the packet inputs and record the final HEAD, index/worktree state, tracked path inventory, and output file hashes."
+  ],
+  "status": "PREPARATION_ONLY"
+}

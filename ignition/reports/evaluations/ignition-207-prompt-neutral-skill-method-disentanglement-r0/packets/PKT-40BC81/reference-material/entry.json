@@ -1,0 +1,233 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "schema_version": "method-use-trace-r0",
+  "task_id": "IGNITION-20260920-190",
+  "trace_id": "task207-context-gated-calibration-history-r0",
+  "is_synthetic": true,
+  "segments": [
+    {
+      "segment_id": "candidate",
+      "segment_kind": "METHOD_CANDIDATE",
+      "source_ref": "synthetic://ignition-207/calibration/gated-local-measurement-r0",
+      "source_sha256": "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815",
+      "exact_locator": "item-b-history.md#candidate-set",
+      "summary": "A source-bound procedure checks reset topology and required measurements before selecting a local observation action.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "synthetic calibration notebook defines three candidate procedures"
+        ],
+        "open_questions": [
+          "future successor application is not measured"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "the synthetic source records a context-gated procedure candidate"
+        ],
+        "forbidden_inferences": [
+          "causal effectiveness",
+          "general capability",
+          "general cognitive inheritance",
+          "R1 authorization",
+          "cross-model transfer",
+          "canonical promotion"
+        ]
+      },
+      "candidate_ref": "method:gated-local-measurement-r0"
+    },
+    {
+      "segment_id": "selection",
+      "segment_kind": "SELECTION_RATIONALE",
+      "source_ref": "synthetic://ignition-207/calibration/gated-local-measurement-r0",
+      "source_sha256": "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815",
+      "exact_locator": "item-b-history.md#selection-rationale-and-context-constraints",
+      "summary": "The procedure is selected because the calibration family varies in reset topology and reference availability.",
+      "uncertainty": {
+        "status": "SUPPORTED",
+        "basis": [
+          "the synthetic source records parallel, shared-state, and missing-anchor contexts"
+        ],
+        "open_questions": [
+          "the selection rule has not been independently applied"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "selection rationale is present in the source history"
+        ],
+        "forbidden_inferences": [
+          "causal effectiveness",
+          "general capability",
+          "general cognitive inheritance",
+          "R1 authorization",
+          "cross-model transfer",
+          "canonical promotion"
+        ]
+      },
+      "selected_candidate_ref": "method:gated-local-measurement-r0",
+      "rationale": "A context-gated procedure handles distinct measurement prerequisites without making the paired action a default for every fixture.",
+      "alternatives_considered": [
+        "paired comparison by default",
+        "single-step logging for every fixture",
+        "anchor collection without context classification"
+      ]
+    },
+    {
+      "segment_id": "context",
+      "segment_kind": "CONTEXT",
+      "source_ref": "synthetic://ignition-207/calibration/gated-local-measurement-r0",
+      "source_sha256": "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815",
+      "exact_locator": "item-b-history.md#selection-rationale-and-context-constraints",
+      "summary": "The source covers independent channels, one shared-state path, and a bridge with a missing reference anchor.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "the notebook records reset and anchor availability for its calibration fixtures"
+        ],
+        "open_questions": [
+          "future cases may contain other constraints"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "the synthetic calibration contexts differ in recorded preconditions"
+        ],
+        "forbidden_inferences": [
+          "causal effectiveness",
+          "general capability",
+          "general cognitive inheritance",
+          "R1 authorization",
+          "cross-model transfer",
+          "canonical promotion"
+        ]
+      },
+      "context_ref": "selection",
+      "constraints": [
+        "use synthetic records only",
+        "keep expected observations separate from actual records",
+        "do not interpret an offset without its required anchor"
+      ]
+    },
+    {
+      "segment_id": "use",
+      "segment_kind": "METHOD_USE_EVENT",
+      "source_ref": "synthetic://ignition-207/calibration/gated-local-measurement-r0",
+      "source_sha256": "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815",
+      "exact_locator": "item-b-history.md#use-and-test-history",
+      "summary": "The context-gated procedure was used to classify three synthetic calibration fixtures and record their bounded observations.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "CAL-04, CAL-08, and CAL-11 entries in the synthetic source"
+        ],
+        "open_questions": [
+          "independent reproduction is not performed in Task207"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "the source records a bounded synthetic procedure use"
+        ],
+        "forbidden_inferences": [
+          "causal effectiveness",
+          "general capability",
+          "general cognitive inheritance",
+          "R1 authorization",
+          "cross-model transfer",
+          "canonical promotion"
+        ]
+      },
+      "used_candidate_ref": "method:gated-local-measurement-r0",
+      "input_ref": "context",
+      "expected_observation": "A valid common start and identical input permit a paired record; a non-resettable state or missing anchor should block that comparison and leave the corresponding inference unresolved.",
+      "use_order": 1
+    },
+    {
+      "segment_id": "outcome",
+      "segment_kind": "OBSERVED_OUTCOME_OR_FAILURE",
+      "source_ref": "synthetic://ignition-207/calibration/gated-local-measurement-r0",
+      "source_sha256": "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815",
+      "exact_locator": "item-b-history.md#use-and-test-history",
+      "summary": "One calibration recorded a paired difference, one lacked a resettable start, and one lacked its required anchor.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "the synthetic source lists values and missing prerequisites for each calibration fixture"
+        ],
+        "open_questions": [
+          "no causal explanation is recorded"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "the calibration source records distinct outcomes and unresolved prerequisites"
+        ],
+        "forbidden_inferences": [
+          "causal effectiveness",
+          "general capability",
+          "general cognitive inheritance",
+          "R1 authorization",
+          "cross-model transfer",
+          "canonical promotion"
+        ]
+      },
+      "use_segment_ref": "use",
+      "outcome_type": "OBSERVED_OUTCOME",
+      "observed_outcome": "CAL-04 records counters 6 and 9 after a paired run; CAL-08 was not replayed because a common reset state was unavailable; CAL-11 remained uninterpreted because anchor A0 was absent.",
+      "confounders": [
+        "synthetic calibration only",
+        "no external validation",
+        "the recorded difference has no causal explanation"
+      ],
+      "causal_attribution": "NOT_ESTABLISHED"
+    },
+    {
+      "segment_id": "revision",
+      "segment_kind": "REVISION_OR_DISPOSITION",
+      "source_ref": "synthetic://ignition-207/calibration/gated-local-measurement-r0",
+      "source_sha256": "1434da68d9b9655970ae172450b61d067bb4f70417b39194ac272efb976d2815",
+      "exact_locator": "item-b-history.md#outcome-and-revision-history",
+      "summary": "The recorded constraints led to explicit reset-topology and reference-anchor gates in the procedure.",
+      "uncertainty": {
+        "status": "OBSERVED",
+        "basis": [
+          "the notebook records a revision after CAL-08 and CAL-11"
+        ],
+        "open_questions": [
+          "future use of the revised gates remains unmeasured"
+        ]
+      },
+      "claim_ceiling": {
+        "authority_status": "OBSERVATION_ONLY",
+        "allowed_claims": [
+          "the source records a procedural revision"
+        ],
+        "forbidden_inferences": [
+          "causal effectiveness",
+          "general capability",
+          "general cognitive inheritance",
+          "R1 authorization",
+          "cross-model transfer",
+          "canonical promotion"
+        ]
+      },
+      "revision_type": "REVISE",
+      "revision_rationale": "The source history added a reset-topology check and an anchor prerequisite after the recorded blocked and unresolved fixtures.",
+      "disposition": "REVISE",
+      "target_candidate_ref": "method:gated-local-measurement-r0",
+      "rollback_ref": null
+    }
+  ],
+  "claim_ceiling": "METHOD_USE_TRACE_IS_EVIDENCE_ARTIFACT_NOT_CAPABILITY_PROOF",
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}

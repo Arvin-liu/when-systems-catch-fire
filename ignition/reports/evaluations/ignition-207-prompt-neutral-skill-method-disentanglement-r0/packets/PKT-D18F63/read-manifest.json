@@ -1,0 +1,28 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260923-207",
+  "schema_version": "task207-read-manifest-r0",
+  "allowed_path_patterns": [
+    "packet-manifest.json",
+    "read-manifest.json",
+    "read-manifest.json.sha256",
+    "freeze-contract.json",
+    "freeze-contract.json.sha256",
+    "neutral-task-prompt.md",
+    "neutral-task-prompt.md.sha256",
+    "output-schema.json",
+    "output-schema.json.sha256",
+    "cases/CASE-*/facts.md",
+    "cases/CASE-*/facts.md.sha256",
+    "cases/CASE-*/provenance.json",
+    "cases/CASE-*/provenance.json.sha256",
+    "reference-material/**"
+  ],
+  "path_rules": {
+    "relative_paths_only": true,
+    "parent_traversal_forbidden": true,
+    "symlinks_forbidden": true,
+    "unlisted_repository_paths_forbidden": true
+  },
+  "status": "PREPARATION_ONLY"
+}

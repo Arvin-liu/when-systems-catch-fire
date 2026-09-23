@@ -1,0 +1,50 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "representation_kind": "REUSABLE_PROCEDURAL_SKILL",
+  "schema_version": "task207-skill-artifact-r0",
+  "task_id": "IGNITION-20260923-207",
+  "skill_id": "paired-readout-comparison-r0",
+  "synthetic": true,
+  "title": "Paired readout comparison",
+  "purpose": "Record a bounded comparison between two independent channels that share a documented starting state and receive the same input.",
+  "inputs": [
+    "two independent channels with separate reset controls",
+    "a documented common starting counter",
+    "one input token that can be applied identically to both channels",
+    "a fixture-cycle identifier"
+  ],
+  "applicability_preconditions": [
+    "Both channels can be reset independently to the same documented starting counter.",
+    "The same input token can be applied once to each channel during one fixture cycle.",
+    "The starting values and fixture-cycle identifier can be recorded before the input is applied."
+  ],
+  "steps": [
+    "Record each channel identifier, starting counter, input token, and shared fixture-cycle identifier.",
+    "Reset each channel to the same documented starting counter and record the resulting value.",
+    "Apply the identical input token once to each channel within the same fixture cycle.",
+    "Record each ending counter and output marker separately; leave any unrecorded value unknown."
+  ],
+  "observable_fields": [
+    "channel identifier",
+    "starting counter",
+    "input token",
+    "fixture-cycle identifier",
+    "ending counter",
+    "output marker"
+  ],
+  "stop_conditions": [
+    "Stop if either channel cannot be returned to the documented common starting counter.",
+    "Stop if the input token or fixture-cycle identifier differs between channels.",
+    "If a required value is absent, report that this procedure cannot be completed from the available record."
+  ],
+  "representation_boundary": {
+    "skill_scope": "LOCAL_ACTION_PROCEDURE_ONLY",
+    "method_lineage": "NOT_PRESENT",
+    "claim_ceiling": "PROCEDURAL_SKILL_ARTIFACT_DOES_NOT_ESTABLISH_METHOD_INHERITANCE_OR_CAPABILITY"
+  },
+  "authority_status": "RESEARCH_ONLY",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE",
+  "successor_status": "NOT_RUN",
+  "evaluator_status": "NOT_RUN"
+}
