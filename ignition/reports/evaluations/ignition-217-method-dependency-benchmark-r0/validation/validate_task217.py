@@ -46,6 +46,10 @@ GENERATED_COGNITIVE_INHERITANCE_COMPATIBILITY_FILES = {
     "ignition/tools/validate_cognitive_inheritance_r0.py",
     "ignition/tests/test_cognitive_inheritance_r0.py",
 }
+GENERATED_FIRE_SEED_OUTPUTS = {
+    "ignition/data/publication/fire-seeds/seed-census.json",
+    "ignition/data/publication/fire-seeds/CHANGELOG.jsonl",
+}
 
 
 def require(value: bool, message: str) -> None:
@@ -357,6 +361,7 @@ def check_repository_closure_and_freeze(report: str) -> None:
         | GENERATED_HUMAN_RESULTS_OUTPUTS
         | GENERATED_SELF_CORRECTION_OUTPUTS
         | GENERATED_COGNITIVE_INHERITANCE_COMPATIBILITY_FILES
+        | GENERATED_FIRE_SEED_OUTPUTS
         | generated_knowledge_paths
     )
     require(changed and all(path.startswith(TASK_REL.as_posix() + "/") or path in allowed_external for path in changed), "changes extend outside Task217 and prescribed generated projections")
@@ -426,6 +431,21 @@ def check_repository_closure_and_freeze(report: str) -> None:
     require(compatibility.get("scope") == "hash-verified Task217 Knowledge Experience projections only", "Task172 R0 projection compatibility scope differs")
     for path, expected in compatibility_hashes.items():
         require((ROOT / path).is_file() and sha((ROOT / path).read_bytes()) == expected, f"Task172 R0 projection compatibility SHA-256 mismatch: {path}")
+    fire_seeds = freeze.get("external_generated_fire_seed_census", {})
+    fire_seed_files = fire_seeds.get("files", [])
+    fire_seed_hashes = {item.get("path"): item.get("sha256") for item in fire_seed_files}
+    require(set(fire_seed_hashes) == GENERATED_FIRE_SEED_OUTPUTS, "external generated Fire Seeds census inventory differs")
+    require(fire_seeds.get("generator") == "python3 tools/publication/build_fire_seed_census.py", "Fire Seeds census generator record differs")
+    require(fire_seeds.get("validator") == "python3 tools/publication/validate_fire_seeds.py --check", "Fire Seeds census validator record differs")
+    require(fire_seeds.get("scope") == "machine source census only; no human Fire Seeds entry changed", "Fire Seeds census scope differs")
+    for path, expected in fire_seed_hashes.items():
+        require((ROOT / path).is_file() and sha((ROOT / path).read_bytes()) == expected, f"external generated Fire Seeds SHA-256 mismatch: {path}")
+    fire_seed_changelog = ROOT / "ignition/data/publication/fire-seeds/CHANGELOG.jsonl"
+    fire_seed_events = [json.loads(line) for line in fire_seed_changelog.read_text(encoding="utf-8").splitlines() if line.strip()]
+    require(bool(fire_seed_events), "Fire Seeds changelog is empty")
+    latest_fire_seed_event = fire_seed_events[-1]
+    require(latest_fire_seed_event.get("task") == "IGNITION-20260925-217-R1" and latest_fire_seed_event.get("action") == "NO_SEED_DELTA", "Fire Seeds closeout must record NO_SEED_DELTA")
+    require(latest_fire_seed_event.get("knowledge_experience_source_origins") == 726, "Fire Seeds closeout source-origin count differs")
     excluded = {freeze_path.relative_to(ROOT).as_posix(), sidecar_path.relative_to(ROOT).as_posix()}
     actual_files = {path.relative_to(ROOT).as_posix() for path in TASK.rglob("*") if path.is_file()} - excluded
     inventory = {item["path"]: item["sha256"] for item in freeze.get("files", [])}

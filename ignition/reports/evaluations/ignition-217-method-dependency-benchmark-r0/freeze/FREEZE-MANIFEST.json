@@ -386,7 +386,7 @@
       },
       {
         "path": "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
-        "sha256": "8a238746f7f5e15a692a8c4640d6470250779f210ce00bcfe955a9d9927202bb"
+        "sha256": "e070a6f655d37f53f0090dcbf4fc453fbed5f02f4818414034190f23bd829142"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/changes.jsonl",
@@ -398,15 +398,15 @@
       },
       {
         "path": "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
-        "sha256": "4a085974ff84a98751b25fd964117f8ae83aa54219750f05fa8bd0475a46c210"
+        "sha256": "5373602ac68bfea0fbee749ae4435b15b2511a3550521ea559f6a86931563b5f"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/manifest.json",
-        "sha256": "a4a089e7e0e5d377b3ddb98983a107500f6148cf2bfcf4921db97fd14913351d"
+        "sha256": "f9f4bdceabb11d471e1b4b7f734ced671292591294a494176079791f760a8b99"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
-        "sha256": "88a08c86d2b211837f87015565a29c1a29ab420dabadb2f03a74161f919bb353"
+        "sha256": "219b8d06a8e9f95161de059bec9bc6c3a55a05b2a8768707843025495aac77af"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/source-first-seen.json",
@@ -899,11 +899,11 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md",
-      "sha256": "4dc370d912e221c6d7a4950ecd49c3559398b10cf37068a1257308f8dc51f8a7"
+      "sha256": "49bbdeb266c4821135941271196462c9e76c71abc073d7c7b3904f74a93a9ca5"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/validate_task217.py",
-      "sha256": "3a7103a934667726d7ac7c24f0326424322977f7252462da46ee57cc48b7c036"
+      "sha256": "cae0320d012cc19418ba40b7b748a68a32dfcbd48898162f193b526bf45e7b48"
     }
   ],
   "freeze_status": "R1_REPAIRED_LOCAL_VALIDATION_PASS_EXACT_HEAD_CI_PENDING",
@@ -919,7 +919,12 @@
     "validate_knowledge_experience": "PASS KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=805 changes=698 layers=726 search=24887 aliases=1657 links=29606 two_click_pages=8",
     "validate_nonfunction_claim_closure": "PASS 54/54",
     "validate_cognitive_inheritance_r0": "PASS status=PASS final_state=READY_FOR_INDEPENDENT_EVALUATION; Task172 artifacts unchanged",
-    "test_cognitive_inheritance_r0": "PASS 8/8 tests including hash-bound Task217 projection allowance"
+    "test_cognitive_inheritance_r0": "PASS 8/8 tests including hash-bound Task217 projection allowance",
+    "build_fire_seed_census": "PASS deterministic FIRE_SEEDS_CENSUS_CHECK_OK seeds=64 sources=792 layered_origins=726",
+    "validate_fire_seeds": "PASS FIRE_SEEDS_VALID entries=64 clusters=64 content_seed_count=40 methodology_seed_count=24 source_count=792 changelog_records=3",
+    "validate_human_visibility": "PASS HUMAN_VISIBILITY_OK human_surfaces=25 machine_human_pairs=14 two_click_destinations=20",
+    "build_claim_browsers_check": "PASS HUMAN_ASSETS_CHECK_OK function_machine=6158 function_human=24 nonfunction_machine=18003 nonfunction_human=24",
+    "generate_overall_architecture_check": "PASS SYSTEM_MAP_DERIVED_OK nodes=87 edges=92 homepage_projection=PASS"
   },
   "method_relation_citation_required_for_primary": false,
   "primary_endpoint": "TARGET_DECISION_SUCCESS",
@@ -937,6 +942,26 @@
       {
         "path": "ignition/tests/test_cognitive_inheritance_r0.py",
         "sha256": "5543b3c98ffc5a3208b67cc09d5749f42ddc4db130fb700ad8896fe5b1d6d373"
+      }
+    ]
+  },
+  "external_generated_fire_seed_census": {
+    "generator": "python3 tools/publication/build_fire_seed_census.py",
+    "validator": "python3 tools/publication/validate_fire_seeds.py --check",
+    "scope": "machine source census only; no human Fire Seeds entry changed",
+    "reason": "Task217 R1 Knowledge Experience origins and the regenerated nonfunction-claim index changed the inputs referenced by the Fire Seeds machine census. The prescribed census generator refreshed source hashes and origin counts; the human seed page and seed registry were unchanged, so the changelog records NO_SEED_DELTA.",
+    "seed_count": 64,
+    "source_count": 792,
+    "knowledge_experience_source_origins": 726,
+    "changelog_action": "NO_SEED_DELTA",
+    "files": [
+      {
+        "path": "ignition/data/publication/fire-seeds/CHANGELOG.jsonl",
+        "sha256": "13f7f3d30a451d1cd6fb9592fe78184abc3ae4c75491a4afbb795572162f48a2"
+      },
+      {
+        "path": "ignition/data/publication/fire-seeds/seed-census.json",
+        "sha256": "3ce35aeaddf79a8634e557b0a2a9958fa8097631cd6a521654a4b2dab8399e59"
       }
     ]
   }
