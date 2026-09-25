@@ -1,20 +1,19 @@
 # Supplemental record CASE04
 
-Representation note: this excerpt preserves the same atomic records and source context as the companion trace, but its relation field is absent.
+Representation note: structured synthetic records; relation rows connect source-linked records.
 
-## Independently listed records
-[A01] Candidate explanation: elevated root-zone salt concentration.
-[A02] Candidate explanation: canopy heat exposure.
-[A03] Candidate observation: a root-zone conductivity reading collected after four minutes of recirculation.
-[A04] Selection rationale: the incoming feed value alone does not distinguish accumulated root-zone salt from canopy heat.
-[A05] Boundary record: do not change feed concentration from leaf appearance or feed-tank conductivity alone.
-[A06] Expected observation: compare the timed root-zone value with the recorded inlet value; a difference of at least 0.6 mS/cm supports accumulation, while a smaller difference leaves the two explanations unresolved.
-[A07] Disposition record: request the timed root-zone observation and keep the cause unresolved until it is recorded.
+<!-- ATOM_BLOCK_BEGIN -->
+## Atomic records
+[A01] Hypothesis record: elevated salt concentration in the root zone.
+[A02] Hypothesis record: canopy heat or humidity stress.
+[A03] Measurement-definition record: a root-zone conductivity reading can be collected after recirculation; the exact interval is selected by the operating protocol.
+[A04] Existing-value record: the feed-tank value of 1.4 mS/cm predates refill.
+[A05] Instrument record: root-zone port, recirculation timer, and canopy humidity sensor are available.
+[A06] Calibration-record index: the protocol has an inlet-comparison rule; its threshold and interpretation are kept in the referenced calibration record.
+[A07] Current-record status: no post-refill root-zone reading or cause is present.
+<!-- ATOM_BLOCK_END -->
 
-No source record in this excerpt joins the listed records into an ordered selection, test, interpretation, and disposition chain.
-
-## Recorded relations retained in this control
-[R02] A05 blocks an unsupported immediate feed change.
-[R03] A03 specifies the location and timing required for A06.
-[R04] A06 interprets the possible observation without assigning a cause from missing data.
-[R05] A07 records the unresolved disposition.
+## Recorded relations
+[R02] A04 --TEMPORAL_LIMIT_FOR--> A01 :: The pre-refill feed value does not record the current root-zone state.
+[R03] A05 --SUPPORTS_MEASUREMENT--> A03 :: The listed port and timer make a post-refill reading technically available; they do not select a measurement or interval.
+[R05] A07 --RESULT_STATUS_FOR--> A03 :: The current record contains no post-refill measurement result.

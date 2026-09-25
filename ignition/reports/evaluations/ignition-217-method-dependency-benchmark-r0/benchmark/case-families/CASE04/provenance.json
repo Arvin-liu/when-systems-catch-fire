@@ -1,14 +1,7 @@
 {
-  "artifact_type": "EVALUATION_EVIDENCE",
-  "task_id": "IGNITION-20260925-217",
   "case_id": "CASE04",
-  "synthetic": true,
-  "source_record": "synthetic://ignition-217/CASE04/greenhouse-sampling-note",
-  "facts_path": "benchmark/case-families/CASE04/facts.md",
-  "facts_sha256": "c140e24c339990df2ddf10a7f94496dec3fbb3d1b4fc4ccc2eed4bc22fc9e9fa",
-  "locator_scheme": "stable fact IDs in square brackets",
-  "recorded_facts_only": true,
-  "method_selection_or_linkage_present": false,
-  "selection_use_outcome_or_revision_executed": false,
-  "uncertainty": "Synthetic case record only; no external truth or causal claim."
+  "artifact_type": "SYNTHETIC_CASE_PROVENANCE",
+  "schema_version": "ignition-217-case-provenance-r2",
+  "facts_sha256": "93bb8abab7be72380dd48451a37c4f36087c4ac062b592cd68878ab8e098a3c0",
+  "facts_source": "Synthetic Task217 R1 case record; no external or real-world provenance is asserted."
 }

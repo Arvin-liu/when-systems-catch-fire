@@ -1,14 +1,14 @@
 # Supplemental record CASE06
 
-Source type: local event check-in instruction. Synthetic.
+Source type: local event-status recorder. Synthetic.
 
-Purpose: record an attendee check-in using the selected station.
+Purpose: record a selected station's result and preserve any unresolved status.
 
 Procedure:
 1. [S01] Record the event ID and attendee identifier presented.
-2. [S02] For a valid event code, scan once and record the returned roster status.
-3. [S03] For a no-match response, preserve the response and use the staffed review queue if authorized.
-4. [S04] Record any manual correction as a separate event with its source.
-5. [S05] Stop if the roster record cannot be resolved; do not invent an attendee match.
+2. [S02] Record the station selected by the authorized operator.
+3. [S03] Save the returned token status or roster evidence source with its timestamp.
+4. [S04] Record any correction as a separate event with its source.
+5. [S05] Stop on a station error; record the returned response and status verbatim.
 
-Observable fields: event ID, attendee identifier, scan status, queue ID, manual-review source, final recorded status.
+Observable fields: event ID, attendee identifier, station, token status, roster evidence source, timestamp, final status.

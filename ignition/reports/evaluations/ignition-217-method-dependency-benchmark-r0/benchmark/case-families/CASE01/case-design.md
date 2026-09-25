@@ -1,11 +1,7 @@
-# CASE01 design note
+# CASE01 design note — R1
 
-Family: candidate selection among two locally plausible procedures.
+Family: candidate_selection.
 
-Freshness: distinct from Task207's counter, reset, bridge-offset, and missing-anchor calibration cases. This is a synthetic records-provenance setting.
+FACTS presents two incomplete, complementary route previews. SKILL records an operator-selected route without selecting it. METHOD and LINKLESS have byte-identical neutral atom blocks; METHOD has five structured relations and LINKLESS omits only decisive R01.
 
-Decision-bearing relation: the method record must connect the checkpoint-reconstruction objective and source integrity preconditions to a selected export route, then connect the manifest observation to a bounded inclusion decision.
-
-Facts/skill insufficiency review: the facts describe both route outputs and the audit objective, but do not establish that either route provides the required event-to-version join. The reusable export skill can hash and package files, but cannot select the route or license a checkpoint claim. Both routes retain useful but different metadata.
-
-Leakage guard: the successor-visible facts contain no selected route, approval-to-version relation, or export outcome. The method condition contains a reusable selection rule, not a worked answer for this packet.
+Before R01, two licensed actions remain: propose Birch conditionally and inspect its delivered fields, or defer route selection until the optional event field is verified. R02–R05 preserve prerequisites, post-export comparison, preview limitations, and provenance but do not select a route. R01 supplies the objective-to-candidate mapping and requires the delivered digest/checkpoint/event join before asserting membership.

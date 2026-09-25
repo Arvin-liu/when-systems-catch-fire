@@ -1,4 +1,5 @@
 # Supplemental record CASE04
 
-Synthetic provenance note: source record case log.
-This note contains no recorded action selection, method-use event, test result, or revision for this case.
+Source type: neutral synthetic case-log index.
+
+Scope: lists recorded environmental observations and available instruments. It does not select a measurement or attribute a cause.

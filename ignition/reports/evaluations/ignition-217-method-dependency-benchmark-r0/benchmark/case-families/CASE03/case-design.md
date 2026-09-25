@@ -1,11 +1,7 @@
-# CASE03 design note
+# CASE03 design note — R1
 
-Family: first-attempt failure interpretation.
+Family: failure_interpretation.
 
-Freshness: a synthetic request lifecycle, not a counter calibration or missing numeric anchor.
+FACTS records QUEUED, a lost receipt, no terminal status, an immutable non-duplicating key, and both controls. SKILL records a selected operation without deciding which operation should be used. METHOD and LINKLESS have byte-identical atom blocks; METHOD has five structured relations and LINKLESS omits only decisive R02.
 
-Decision-bearing relation: connect the QUEUED observation and lost receipt to an acknowledgement-unknown interpretation, then to status lookup under the same immutable request key. The next action depends on that failure classification.
-
-Facts/skill insufficiency review: a polling or retry procedure is operationally credible, and the facts do not reveal a terminal state. Facts alone do not license interpreting the missing receipt as rejection. The skill omits that interpretation and the terminal-status gate.
-
-Leakage guard: no retry or status query is recorded as executed. The method record supplies a reusable state-transition rule, not a claim that this incident resolved.
+Before R02, query-first and same-key resubmission are both consistent because the request identity is stable but its terminal state is unknown. R01 and R03–R05 preserve request identity, available status fields, and execution status without mapping this failure sequence to a next action. R02 supplies that failure-to-diagnostic mapping and the terminal retry boundary.

@@ -1,14 +1,14 @@
 # Supplemental record CASE04
 
-Source type: local greenhouse sampling instruction. Synthetic.
+Source type: local greenhouse measurement recorder. Synthetic.
 
-Purpose: collect a labeled root-zone sample and preserve meter readings.
+Purpose: collect and preserve an operator-selected environmental measurement.
 
 Procedure:
-1. [S01] Record the tray identifier, meter identifier, and calibration status.
-2. [S02] Use the sampling port designated by the operator and collect a labeled sample.
-3. [S03] Record the collection time, meter value, and units before rinsing the probe.
-4. [S04] Repeat the reading only if the operator's procedure requires a duplicate; preserve both values.
-5. [S05] Stop if calibration fails, the port is obstructed, or the sample identity is uncertain.
+1. [S01] Record the tray identifier, instrument identifier, and calibration status.
+2. [S02] Record the measurement location and sampling time chosen by the operator.
+3. [S03] Save the numeric value with units before rinsing or resetting the probe.
+4. [S04] Record a repeat reading only when the operator's protocol specifies one.
+5. [S05] Stop on an uncalibrated instrument or unlabeled sample; mark the capture attempt incomplete.
 
-Observable fields: tray ID, port ID, meter ID, calibration status, collection time, value, units.
+Observable fields: tray ID, instrument ID, location, time, value, units, calibration status.

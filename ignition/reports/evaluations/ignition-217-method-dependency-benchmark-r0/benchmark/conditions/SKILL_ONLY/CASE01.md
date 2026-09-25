@@ -1,14 +1,14 @@
 # Supplemental record CASE01
 
-Source type: local archive handling instruction. Synthetic.
+Source type: local archive export handling instruction. Synthetic.
 
-Purpose: prepare a requested archive package and record what was delivered.
+Purpose: preserve an operator-selected export and record its output.
 
 Procedure:
-1. [S01] Confirm the requested archive identifier and the caller's access to the source folder.
-2. [S02] List the files visible to the caller and record their version labels and signature markers.
-3. [S03] Run the export route already selected by the caller; record the route identifier and item count.
-4. [S04] Reopen the delivered package and compare its file list with the source list.
-5. [S05] Stop if access is denied or the delivered item count differs from the recorded count.
+1. [S01] Record the archive identifier and route identifier selected by the authorized operator.
+2. [S02] List visible source files with version labels and signature markers.
+3. [S03] Run only the preselected route and save its operation identifier and item count.
+4. [S04] Reopen the package and compare its file list with the source list.
+5. [S05] Stop on access denial or item-count mismatch; record the response and operation status.
 
-Observable fields: archive ID, route ID, file labels, signature marker, item count, export status.
+Observable fields: archive ID, route ID, version labels, signature markers, item count, operation status.

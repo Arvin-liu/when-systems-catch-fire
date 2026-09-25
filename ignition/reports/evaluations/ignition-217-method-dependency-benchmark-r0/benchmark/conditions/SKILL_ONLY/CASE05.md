@@ -1,14 +1,14 @@
 # Supplemental record CASE05
 
-Source type: local archive packaging instruction. Synthetic.
+Source type: local archive packaging recorder. Synthetic.
 
-Purpose: prepare a requested bundle while preserving source labels and a delivery record.
+Purpose: prepare and verify an archive using a grouping key selected outside this instruction.
 
 Procedure:
-1. [S01] Confirm the archive identifier, destination group, and operator authorization.
-2. [S02] List each source file with its supplied label and file digest.
-3. [S03] Run the selected packaging operation and save the package identifier.
-4. [S04] Reopen the output and verify the file list, labels, and digests against the source list.
-5. [S05] Stop on a missing label, digest mismatch, or authorization error.
+1. [S01] Record archive identifier, recipient group, and operator authorization.
+2. [S02] List each source file with its supplied label and digest.
+3. [S03] Record the grouping key supplied by the authorized operator.
+4. [S04] Reopen the output and compare each file, label, and digest with the source list.
+5. [S05] Stop on a missing label, digest mismatch, or authorization error; preserve the discrepancy without changing the grouping key.
 
-Observable fields: archive ID, destination group, file label, digest, package ID, verification result.
+Observable fields: archive ID, recipient group, grouping key, file label, digest, package ID, verification result.

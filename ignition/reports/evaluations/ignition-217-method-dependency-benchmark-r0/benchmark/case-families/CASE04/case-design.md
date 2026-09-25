@@ -1,11 +1,7 @@
-# CASE04 design note
+# CASE04 design note — R1
 
-Family: missing discriminating measurement and unresolved disposition.
+Family: missing_discriminating_measurement.
 
-Freshness: a synthetic greenhouse sampling problem, distinct from Task207's missing bridge anchor and reset checksum.
+FACTS records two plausible explanations and several available measurements/interventions without a post-refill result. SKILL records the location/time chosen by an operator but contains no measurement-selection rule. METHOD and LINKLESS have byte-identical atom blocks; METHOD has five structured relations and LINKLESS omits the complete decision-bearing set R01 and R04.
 
-Decision-bearing relation: the method record must identify the sample location and timing that discriminate the candidate explanations, then connect the absent observation to an unresolved disposition rather than a guessed adjustment.
-
-Facts/skill insufficiency review: both feed concentration and heat remain plausible. A sampling skill can operate the meter but does not choose the location/timing or establish which reading separates the hypotheses.
-
-Leakage guard: facts contain no root-zone result or diagnosis. The method record states a measurement rule and interpretation boundary, not a result for this tray.
+Before those relations, feed adjustment and canopy-humidity investigation are both consistent with the record. R02, R03, and R05 preserve temporal limits, equipment availability, and missing-result status without selecting a discriminator or interpreting a threshold. R01 selects the timed root-zone measurement; R04 supplies its numeric interpretation and the boundary against changing feed from current observations.

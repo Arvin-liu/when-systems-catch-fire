@@ -1,14 +1,14 @@
 # Supplemental record CASE03
 
-Source type: local test-queue status procedure. Synthetic.
+Source type: local test-queue event recorder. Synthetic.
 
-Purpose: collect and preserve the status of a queued test request.
+Purpose: preserve request identifiers, a selected control, and its returned status.
 
 Procedure:
-1. [S01] Record the immutable request key and the last response stored by the client.
-2. [S02] Use the status-lookup control with the same request key.
-3. [S03] If a status is pending, wait the local polling interval and query again with that key.
-4. [S04] Save each returned status and timestamp without replacing earlier records.
-5. [S05] Stop if the lookup returns an error or no response; report status as unavailable.
+1. [S01] Record the immutable request key and last response stored by the client.
+2. [S02] Record the queue control chosen by the authorized operator.
+3. [S03] Save the control response and timestamp under the original event record.
+4. [S04] Preserve earlier status entries when a later response arrives.
+5. [S05] Stop if the service returns an error or no response; record the response code and timestamp.
 
-Observable fields: request key, returned status, query timestamp, receipt identifier, lookup error.
+Observable fields: request key, selected control, returned status, timestamp, receipt identifier, lookup error.

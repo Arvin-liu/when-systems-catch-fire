@@ -1,4 +1,5 @@
 # Supplemental record CASE06
 
-Synthetic provenance note: source record case log.
-This note contains no recorded action selection, method-use event, test result, or revision for this case.
+Source type: neutral synthetic case-log index.
+
+Scope: identifies current roster entries and status fields. It does not assign an entry category to a station or compare procedure performance.

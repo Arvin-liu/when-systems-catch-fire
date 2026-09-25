@@ -1,4 +1,5 @@
 # Supplemental record CASE02
 
-Synthetic provenance note: source record case log.
-This note contains no recorded action selection, method-use event, test result, or revision for this case.
+Source type: neutral synthetic case-log index.
+
+Scope: lists the incident identifier and region names. It does not record cache-control effects or select an operation.

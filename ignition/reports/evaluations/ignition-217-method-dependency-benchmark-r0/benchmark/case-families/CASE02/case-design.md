@@ -1,11 +1,7 @@
-# CASE02 design note
+# CASE02 design note — R1
 
-Family: boundary rejection of an otherwise familiar local procedure.
+Family: boundary_rejection.
 
-Freshness: a distributed content rollout, unlike Task207's synthetic device-state and counter cases.
+FACTS records mixed regional markers, both controls, an older origin snapshot, and no operation result. SKILL records an operator-selected control but contains no selection rule. METHOD and LINKLESS have byte-identical atom blocks; METHOD has five structured relations and LINKLESS omits only decisive R02.
 
-Decision-bearing relation: the method record must join the mixed-epoch observation to the method's convergence boundary and the non-application disposition. Tool operability is not the same as a licensed inference.
-
-Facts/skill insufficiency review: a cache-purge procedure can be competently described and is locally executable. The facts show mixed state but do not record the method rule connecting that state to a safe inference about the purge. A generic wait heuristic is not credited as the source-linked method decision.
-
-Leakage guard: the facts do not state a purge result or a selected action. The method record gives the boundary rule and recheck observation without describing this incident's final action as an answer sentence.
+Before R02, both a purge proposal and a wait-and-probe proposal remain consistent because the record does not say what revision a purge reloads during mixed rollout. R01 and R03–R05 record context, observation fields, coverage, and execution status without deciding the boundary. R02 alone maps the boundary to deferral and the all-region/two-probe reconsideration gate.

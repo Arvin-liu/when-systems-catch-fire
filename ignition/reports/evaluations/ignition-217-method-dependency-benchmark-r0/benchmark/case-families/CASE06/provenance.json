@@ -1,14 +1,7 @@
 {
-  "artifact_type": "EVALUATION_EVIDENCE",
-  "task_id": "IGNITION-20260925-217",
   "case_id": "CASE06",
-  "synthetic": true,
-  "source_record": "synthetic://ignition-217/CASE06/event-roster-and-cohort-logs",
-  "facts_path": "benchmark/case-families/CASE06/facts.md",
-  "facts_sha256": "fde873e756f175e1218e9f242c08eb8081f98c6987ec6a345dfaf60d72719c1f",
-  "locator_scheme": "stable fact IDs in square brackets",
-  "recorded_facts_only": true,
-  "method_selection_or_linkage_present": false,
-  "selection_use_outcome_or_revision_executed": false,
-  "uncertainty": "Synthetic case record only; no external truth or causal claim."
+  "artifact_type": "SYNTHETIC_CASE_PROVENANCE",
+  "schema_version": "ignition-217-case-provenance-r2",
+  "facts_sha256": "36dba3983f725eb1b14482cf18a4999c74c082e127b1724a08bc585260bc84c5",
+  "facts_source": "Synthetic Task217 R1 case record; no external or real-world provenance is asserted."
 }

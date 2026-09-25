@@ -1,19 +1,21 @@
 # Supplemental record CASE03
 
-Representation note: six ordered Method-Use Trace segments are expressed as task-local linked records; the existing global schema is unchanged.
+Representation note: structured synthetic records; relation rows connect source-linked records.
 
+<!-- ATOM_BLOCK_BEGIN -->
 ## Atomic records
-[A01] Candidate record: status lookup by the original immutable request key.
-[A02] Candidate record: a new submission under a new request key.
-[A03] Observed response: the original request returned QUEUED before the client connection ended without storing a receipt body.
-[A04] Failure interpretation: a missing receipt after QUEUED is an acknowledgement-unknown state, not a terminal rejection.
-[A05] Expected observation: a status query under the same key returns pending, terminal accepted, terminal not accepted, or remains unavailable.
-[A06] Boundary record: another submission is not licensed while the original key has a non-terminal or unavailable status.
-[A07] Disposition record: reconcile the original key first; only a recorded terminal NOT_ACCEPTED state permits a new submission.
+[A01] Candidate-diagnostic record: status query using the original immutable request key.
+[A02] Candidate-operation record: resubmit control using the same idempotency key.
+[A03] Gateway record: the original key received a QUEUED response.
+[A04] Connection record: the client ended before storing a receipt body.
+[A05] Status-field record: a query can return pending, terminal accepted, terminal not accepted, or unavailable.
+[A06] Key record: RQ-18 is immutable and reuse does not create a second request.
+[A07] Follow-up record: no status query or later submission is present in the event log.
+<!-- ATOM_BLOCK_END -->
 
 ## Recorded relations
-[R01] A03 supports the acknowledgement-unknown interpretation in A04.
-[R02] A04 licenses A01 before considering A02.
-[R03] A05 discriminates the terminal state under the original key.
-[R04] A06 bounds any further submission.
-[R05] A07 records the conditional disposition.
+[R01] A06 --IDENTIFIES--> A03 :: The immutable key identifies the stored QUEUED response.
+[R02] A04 --FAILURE_TO_DIAGNOSTIC--> A01 :: Treat QUEUED followed by a lost receipt as acknowledgement status unknown. Query the original key first; do not submit while status is pending, non-terminal, or unavailable, and permit a new submission only after terminal NOT_ACCEPTED is recorded.
+[R03] A05 --DISCRIMINATES_STATUS_FOR--> A03 :: The status fields distinguish pending, terminal, and unavailable states for the original request.
+[R04] A06 --KEY_IDENTITY_FOR--> A02 :: RQ-18 names the same request identity; this record does not establish the request's present status or the safe next operation.
+[R05] A07 --EXECUTION_STATUS_FOR--> A01 :: The event log separates a proposed diagnostic from a query already performed.

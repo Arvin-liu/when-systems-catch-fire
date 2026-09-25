@@ -1,20 +1,20 @@
 # Supplemental record CASE06
 
-Representation note: this excerpt preserves the same atomic records and source context as the companion trace, but its relation field is absent.
+Representation note: structured synthetic records; relation rows connect source-linked records.
 
-## Independently listed records
-[A01] Candidate procedure Q: self-service code scan for entries with exact roster identifiers.
-[A02] Candidate procedure D: staffed roster review for aliases and walk-ins.
-[A03] Source record Q-1: scan completion observations from a cohort of exact identifier matches.
-[A04] Source record D-1: desk resolution observations from a different cohort of aliases and walk-ins.
-[A05] Evidence boundary: Q-1 and D-1 are not a head-to-head comparison and do not rank universal performance.
-[A06] Expected observation: an exact roster identifier is verified by its event code; an alias or walk-in is routed to a documented roster review.
-[A07] Disposition record: retain both cohort-bounded procedures; leave an unexplained mismatch unresolved pending roster evidence.
+<!-- ATOM_BLOCK_BEGIN -->
+## Atomic records
+[A01] Procedure record Q: process a set of entry identifiers and optional event tokens and return status fields.
+[A02] Procedure record D: process entry identifiers and optional event tokens one row at a time and return status fields with an evidence note.
+[A03] Historical timing record: a result is recorded for cohort H1.
+[A04] Historical timing record: a separate result is recorded for cohort H2; entry categories and procedure assignment are not in this record.
+[A05] Comparison record: H1 and H2 are separate cohorts without a head-to-head comparison.
+[A06] Current-entry record: roster identifier status, entry type, event-token status, and mismatch status are recorded for each entry.
+[A07] Check-in status record: no current entry has a resolved check-in event.
+<!-- ATOM_BLOCK_END -->
 
-No source record in this excerpt joins the listed records into an ordered selection, test, interpretation, and disposition chain.
-
-## Recorded relations retained in this control
-[R01] A03 supports A01 only for the exact-identifier cohort.
-[R02] A04 supports A02 only for aliases and walk-ins.
-[R03] A05 blocks a universal-winner inference.
-[R05] A07 preserves coexistence and unresolved mismatches.
+## Recorded relations
+[R01] A03 --SOURCE_RECORD_FOR--> A05 :: H1 is the source cohort for its recorded timing observation.
+[R02] A04 --SOURCE_RECORD_FOR--> A05 :: H2 is a separate source cohort for its recorded timing observation.
+[R03] A05 --DOES_NOT_RANK--> A01 :: Separate cohorts do not establish a universal procedure winner.
+[R05] A07 --LIMITS_STATUS_CLAIM_FOR--> A06 :: The current status record contains no completed check-in event.

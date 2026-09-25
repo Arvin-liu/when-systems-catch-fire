@@ -1,23 +1,11 @@
-# Control-equivalence note — CASE03
+# Control-equivalence note — CASE03 R1
 
-## Retained METHOD atoms
+The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
 
-- A01: Candidate record: status lookup by the original immutable request key.
-- A02: Candidate record: a new submission under a new request key.
-- A03: Observed response: the original request returned QUEUED before the client connection ended without storing a receipt body.
-- A04: Failure interpretation: a missing receipt after QUEUED is an acknowledgement-unknown state, not a terminal rejection.
-- A05: Expected observation: a status query under the same key returns pending, terminal accepted, terminal not accepted, or remains unavailable.
-- A06: Boundary record: another submission is not licensed while the original key has a non-terminal or unavailable status.
-- A07: Disposition record: reconcile the original key first; only a recorded terminal NOT_ACCEPTED state permits a new submission.
+- METHOD and LINKLESS atom-block bytes are identical.
+- METHOD relations: R01, R02, R03, R04, R05.
+- LINKLESS retained relations: R01, R03, R04, R05.
+- The removed decisive relation is R02 with signature `A04 --FAILURE_TO_DIAGNOSTIC--> A01`. It maps the ambiguous acknowledgement state to status lookup first and the terminal retry boundary.
+- The R1 ambiguity proof is in `CASE03-ambiguity-proof.md`.
 
-## Relation inventory
-
-METHOD contains these relations: R01, R02, R03, R04, R05.
-LINKLESS_METHOD_CONTROL retains: R01, R03, R04, R05.
-Removed relation: R02.
-
-## Why the cut is meaningful
-
-The queued/lost-receipt and acknowledgement-unknown atoms are retained, as are both candidate actions, but the relation selecting status lookup over new submission is severed.
-
-The control does not simply omit the target decision as a fact: there is no final-answer atom in either artifact. It preserves candidate/action, context, observation, failure or counterexample, and disposition atoms; the missing relation is the predeclared bridge that licenses the target choice or bounded disposition. No false contradiction or nonsense text is added.
+This construction inventory is not a score, trial, or proof of semantic validity by itself.

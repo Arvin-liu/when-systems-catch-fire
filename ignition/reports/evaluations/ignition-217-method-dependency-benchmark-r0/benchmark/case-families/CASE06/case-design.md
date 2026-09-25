@@ -1,11 +1,7 @@
-# CASE06 design note
+# CASE06 design note — R1
 
-Family: coexistence and non-collapse.
+Family: cohort_boundary_routing.
 
-Freshness: a synthetic cohort-routing setting, distinct from Task207's paired-lane observations.
+FACTS presents current roster/token/mismatch fields and two procedures that both accept identifiers and optional tokens. SKILL records a selected station without a category-to-station rule. METHOD and LINKLESS have byte-identical atom blocks; METHOD has five structured relations and LINKLESS omits only decisive R04.
 
-Decision-bearing relation: join each method's supported cohort boundary to its own procedure, preserve the lack of a head-to-head comparison, and leave unexplained mismatches unresolved.
-
-Facts/skill insufficiency review: the scenario makes each operational route plausible, but it does not license a universal winner or state which evidence applies to which cohort. A scanner skill covers the ordinary scan path but cannot supply the separate cohort boundaries or comparative limit.
-
-Leakage guard: facts provide no winner or completed check-ins. The method record retains the two cohort-specific source histories and a non-collapse disposition without asserting comparative superiority.
+Before R04, routing token-bearing entries to Q or sending names through D for evidence is consistent with the facts and retained relations. The historical timing records H1/H2 have no category or procedure assignment, so R01–R03 do not map current entries. R05 limits completion claims. R04 alone maps the current category boundary to Q/D and leaves unexplained mismatches unresolved.

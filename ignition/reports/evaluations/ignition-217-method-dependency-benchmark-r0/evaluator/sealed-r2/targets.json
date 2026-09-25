@@ -62,7 +62,6 @@
     {
       "case_id": "CASE01",
       "family": "candidate_selection",
-      "decisive_relation_id": "R01",
       "target_action_or_disposition": "Propose Route Birch for a checkpoint-level verification export. Do not claim either route was selected or run. Assert checkpoint content only if the delivered manifest joins each digest to its checkpoint and approval event. Keep the unsigned later correction outside the approved C-17 record.",
       "accepted_decision_elements": [
         "Propose Route Birch as the candidate for a checkpoint-level verification run, not as an executed action.",
@@ -103,30 +102,49 @@
       "method_trace_relations": [
         {
           "id": "R01",
-          "meaning": "The checkpoint-membership objective maps to the candidate carrying a digest-to-approval-event field."
+          "meaning": "The checkpoint-membership objective selects Birch as a conditional verification candidate and makes the delivered digest/checkpoint/approval-event join the acceptance observation.",
+          "primary_decision_bearing": true
         },
         {
           "id": "R02",
-          "meaning": "Intact version labels, checkpoint identifiers, and signature markers are a precondition for interpreting export fields."
+          "meaning": "Intact version labels, checkpoint identifiers, and signature markers are prerequisites for interpreting export fields.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R03",
-          "meaning": "The delivered manifest's digest/checkpoint/event join is the post-export observation."
+          "meaning": "The delivered package is compared with source records after a proposed export.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R04",
-          "meaning": "An absent join leaves checkpoint content unresolved rather than proving approval."
+          "meaning": "A field not verified in preview must be checked in the delivered package before describing it.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R05",
-          "meaning": "The unsigned correction remains outside the approved checkpoint record."
+          "meaning": "The observed C-17 version and unsigned-correction marker remain separate provenance entries.",
+          "primary_decision_bearing": false
+        }
+      ],
+      "skill_forbidden_target_phrases": [
+        "route birch",
+        "select route birch",
+        "checkpoint event join"
+      ],
+      "decisive_relation_ids": [
+        "R01"
+      ],
+      "decisive_relation_signatures": [
+        {
+          "from_id": "A03",
+          "relation_type": "SELECTS_FOR_AUDIT",
+          "to_id": "A02"
         }
       ]
     },
     {
       "case_id": "CASE02",
       "family": "boundary_rejection",
-      "decisive_relation_id": "R02",
       "target_action_or_disposition": "Defer the cache purge while regional revision markers are mixed. Reconsider only after all named regions report B-12 and the origin warm marker is stable on two probes. No cache operation is recorded as executed.",
       "accepted_decision_elements": [
         "Do not purge under the recorded mixed-region state.",
@@ -167,30 +185,49 @@
       "method_trace_relations": [
         {
           "id": "R01",
-          "meaning": "The current revision-marker set is compared with the named deployment set."
+          "meaning": "The regional-marker set and origin-snapshot record describe the same rollout interval.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R02",
-          "meaning": "The mixed-state boundary maps to deferral/probing rather than a purge."
+          "meaning": "The mixed-state boundary selects deferral; reconsider only after every named region reports B-12 and the origin warm marker is stable on two probes.",
+          "primary_decision_bearing": true
         },
         {
           "id": "R03",
-          "meaning": "The all-region target-marker check is the reconsideration observation."
+          "meaning": "The regional marker and origin warm marker are fields returned by a probe.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R04",
-          "meaning": "An old or unavailable marker is incomplete evidence, not success."
+          "meaning": "A single-region preview does not establish the state of every named region.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R05",
-          "meaning": "The operation record distinguishes a proposal from an executed cache action."
+          "meaning": "The operation record distinguishes a proposal from an executed cache action.",
+          "primary_decision_bearing": false
+        }
+      ],
+      "skill_forbidden_target_phrases": [
+        "defer the purge",
+        "do not purge",
+        "wait until all regions report"
+      ],
+      "decisive_relation_ids": [
+        "R02"
+      ],
+      "decisive_relation_signatures": [
+        {
+          "from_id": "A03",
+          "relation_type": "BOUNDARY_TO_NONAPPLICATION",
+          "to_id": "A01"
         }
       ]
     },
     {
       "case_id": "CASE03",
       "family": "failure_interpretation",
-      "decisive_relation_id": "R02",
       "target_action_or_disposition": "Treat QUEUED followed by a lost receipt as acknowledgement status unknown. Query status under the original immutable key RQ-18 first. Do not submit again while the result is pending, non-terminal, or unavailable; permit a new submission only after terminal NOT_ACCEPTED is recorded. No second submission is recorded.",
       "accepted_decision_elements": [
         "Do not infer acceptance or rejection from the missing receipt.",
@@ -232,30 +269,49 @@
       "method_trace_relations": [
         {
           "id": "R01",
-          "meaning": "The gateway response and missing receipt are recorded as separate observations."
+          "meaning": "The gateway response and missing receipt are separate observations for the original request.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R02",
-          "meaning": "The queued/lost-receipt failure class maps to status lookup under the original key before another submission."
+          "meaning": "QUEUED followed by a lost receipt maps to status lookup first; no new submission before terminal NOT_ACCEPTED.",
+          "primary_decision_bearing": true
         },
         {
           "id": "R03",
-          "meaning": "A status query under the original key discriminates pending, accepted, not accepted, or unavailable."
+          "meaning": "A status query under the original key distinguishes pending, accepted, not accepted, or unavailable.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R04",
-          "meaning": "A non-terminal or unavailable state does not establish permission to submit again."
+          "meaning": "RQ-18 names the same request identity; it does not establish current status or the safe next operation.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R05",
-          "meaning": "The event record distinguishes permitted next steps from actions already executed."
+          "meaning": "The event record contains no follow-up action.",
+          "primary_decision_bearing": false
+        }
+      ],
+      "skill_forbidden_target_phrases": [
+        "query status first",
+        "do not submit again",
+        "acknowledgement-unknown"
+      ],
+      "decisive_relation_ids": [
+        "R02"
+      ],
+      "decisive_relation_signatures": [
+        {
+          "from_id": "A04",
+          "relation_type": "FAILURE_TO_DIAGNOSTIC",
+          "to_id": "A01"
         }
       ]
     },
     {
       "case_id": "CASE04",
       "family": "missing_discriminating_measurement",
-      "decisive_relation_id": "R01",
       "target_action_or_disposition": "Keep salt accumulation and canopy heat as unresolved explanations. Do not change feed concentration from the current observations. Request a root-zone conductivity reading after four minutes of recirculation and compare it with the recorded inlet value; a difference of at least 0.6 mS/cm supports accumulation, while a smaller difference leaves both explanations unresolved. No root-zone reading or cause is recorded.",
       "accepted_decision_elements": [
         "Do not declare either cause or change feed concentration from the current observations.",
@@ -297,30 +353,55 @@
       "method_trace_relations": [
         {
           "id": "R01",
-          "meaning": "The two competing explanations map to the timed root-zone conductivity sample as their discriminator."
+          "meaning": "The competing explanations select the root-zone conductivity reading after four minutes, compared with the recorded inlet value.",
+          "primary_decision_bearing": true
         },
         {
           "id": "R02",
-          "meaning": "The observed feed-tank value alone does not establish the root-zone condition."
+          "meaning": "The pre-refill feed value does not establish the current root-zone state.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R03",
-          "meaning": "The recirculation interval and sampling location define the required measurement."
+          "meaning": "The listed port and timer make a post-refill reading technically available without selecting the measurement or interval.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R04",
-          "meaning": "The threshold result supports or leaves open an explanation without filling missing data."
+          "meaning": "The calibration relation gives the 0.6 mS/cm interpretation, leaves both explanations open below threshold, and rules out changing feed from current observations.",
+          "primary_decision_bearing": true
         },
         {
           "id": "R05",
-          "meaning": "The current disposition remains bounded by the absent root-zone observation."
+          "meaning": "The current record contains no post-refill measurement result.",
+          "primary_decision_bearing": false
+        }
+      ],
+      "skill_forbidden_target_phrases": [
+        "request the root-zone reading",
+        "change feed concentration",
+        "keep both explanations unresolved"
+      ],
+      "decisive_relation_ids": [
+        "R01",
+        "R04"
+      ],
+      "decisive_relation_signatures": [
+        {
+          "from_id": "A01",
+          "relation_type": "SELECTS_DISCRIMINATOR",
+          "to_id": "A03"
+        },
+        {
+          "from_id": "A06",
+          "relation_type": "INTERPRETS",
+          "to_id": "A03"
         }
       ]
     },
     {
       "case_id": "CASE05",
       "family": "revision_scope",
-      "decisive_relation_id": "R01",
       "target_action_or_disposition": "Use the scoped V1 procedure for the present archive that contains two signatory classes under one request. Verify that output groups and the manifest preserve those classes. Keep V0 available for its recorded single-class scope; do not claim universal supersession or that an export already occurred.",
       "accepted_decision_elements": [
         "Propose V1 for the present mixed-signatory archive, not as an executed action.",
@@ -362,30 +443,49 @@
       "method_trace_relations": [
         {
           "id": "R01",
-          "meaning": "The cross-access counterexample maps to the limited V1 scope for mixed-signatory archives."
+          "meaning": "The cross-access counterexample maps to V1 for the mixed-signatory scope while retaining V0 for single-class records.",
+          "primary_decision_bearing": true
         },
         {
           "id": "R02",
-          "meaning": "V0 remains within its recorded single-signatory scope."
+          "meaning": "The version log records V0 before V1 without encoding a case-specific selection.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R03",
-          "meaning": "The current archive shares a request identifier but has two signatory classes."
+          "meaning": "The current archive has one request identifier and two signatory classes.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R04",
-          "meaning": "The manifest grouping key and class labels are the verification observation."
+          "meaning": "Request identifier and signatory-class labels can be compared with output groups after any proposed procedure.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R05",
-          "meaning": "The archive record distinguishes a proposal from a completed export."
+          "meaning": "The archive record distinguishes a proposal from a completed export.",
+          "primary_decision_bearing": false
+        }
+      ],
+      "skill_forbidden_target_phrases": [
+        "use v1 for the current archive",
+        "group this request by signatory class",
+        "v0 is limited to single-class"
+      ],
+      "decisive_relation_ids": [
+        "R01"
+      ],
+      "decisive_relation_signatures": [
+        {
+          "from_id": "A03",
+          "relation_type": "COUNTEREXAMPLE_REVISES_SCOPE",
+          "to_id": "A02"
         }
       ]
     },
     {
       "case_id": "CASE06",
       "family": "cohort_boundary_routing",
-      "decisive_relation_id": "R04",
       "target_action_or_disposition": "Use procedure Q for exact roster identifiers with a valid event code. Use procedure D for aliases and walk-ins. Keep unexplained mismatch entries unresolved pending roster evidence. The two historical cohorts do not establish a universal winner, and no check-in is recorded as completed.",
       "accepted_decision_elements": [
         "Route exact roster identifiers with a valid event code to procedure Q.",
@@ -427,23 +527,43 @@
       "method_trace_relations": [
         {
           "id": "R01",
-          "meaning": "Historical Q observations are bounded to their recorded cohort only."
+          "meaning": "H1 is one source cohort for its timing observation.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R02",
-          "meaning": "Historical D observations are bounded to their recorded cohort only."
+          "meaning": "H2 is a separate source cohort for its timing observation.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R03",
-          "meaning": "Separate cohorts do not support a universal performance ranking."
+          "meaning": "Separate historical cohorts without head-to-head comparison do not support a universal performance ranking.",
+          "primary_decision_bearing": false
         },
         {
           "id": "R04",
-          "meaning": "The current entry boundary maps to the procedure appropriate to its roster/code state."
+          "meaning": "The current classifier routes exact roster identifiers with valid event codes to Q and aliases/walk-ins to D; unexplained mismatches remain unresolved pending roster evidence.",
+          "primary_decision_bearing": true
         },
         {
           "id": "R05",
-          "meaning": "An unexplained mismatch remains outside the resolved check-in record."
+          "meaning": "The current status record contains no completed check-in event.",
+          "primary_decision_bearing": false
+        }
+      ],
+      "skill_forbidden_target_phrases": [
+        "exact identifiers with valid tokens map to q",
+        "aliases and walk-ins map to d",
+        "leave mismatches unresolved"
+      ],
+      "decisive_relation_ids": [
+        "R04"
+      ],
+      "decisive_relation_signatures": [
+        {
+          "from_id": "A06",
+          "relation_type": "MAPS_COHORT_TO_PROCEDURE",
+          "to_id": "A01"
         }
       ]
     }
