@@ -3,239 +3,227 @@ Packet reference: PK-B32AB4BD936E
 Six synthetic case records follow.
 
 ## Record CASE05
-Source SHA-256: e76b2e6635d5f772af6cddb6776769c82a62a0abd6accaef6f0a7967fb7ed1ba
+Source SHA-256: bb149f931f4b2712ac3f57db1e6d2e1076162103add30b716c8ac2befd5139b2
 
+# CASE05 — Archive grouping revision scope
 
-# CASE05 — Mixed-class export revision
+All labels, versions, and files are synthetic.
 
-All labels, versions, and files in this case are synthetic.
-
-[F01] A proposed archive bundle contains a public procedure guide and a restricted annex.
-[F02] The bundle request uses a single recipient group for the archive.
-[F03] The available packager can combine files or produce separate sub-bundles.
-[F04] The record contains labels for both files but no policy version or export decision.
-[F05] No bundle has been created or transmitted.
-[F06] The source record does not say whether an older bundling rule remains valid for other archive shapes.
-
+[F01] A proposed archive contains a public guide and restricted annex under one request identifier.
+[F02] Packaging procedure V0 groups files by request identifier.
+[F03] Packaging procedure V1 groups files by signatory class.
+[F04] A prior package review recorded a cross-access event, but its raw event record omits the grouping key, permission record, and procedure version.
+[F05] The current request includes two signatory classes.
+[F06] No grouping procedure is selected, and no archive has been created or transmitted.
+[F07] The record does not state how the prior event should affect this request.
 
 
 # Supplemental record CASE05
 
-Representation note: this excerpt preserves the same atomic records and source context as the companion trace, but its relation field is absent.
+Representation note: structured synthetic records; relation rows connect source-linked records.
 
-## Independently listed records
-[A01] Older procedure V0: combine records in one bundle when every record has the same authorization class.
-[A02] Counterexample record: a mixed-class bundle exposed a restricted supplement in the synthetic review.
-[A03] Revised procedure V1: separate records when authorization classes differ.
-[A04] Revision scope: V1 narrows the mixed-class case; it does not retire V0 for homogeneous sets.
-[A05] Context record: the current archive contains one public guide and one restricted annex.
-[A06] Expected observation: each output sub-bundle contains only one authorization class and its manifest preserves the supplied labels.
-[A07] Disposition record: apply the scoped revision to a mixed-class set and preserve the older rule within its original homogeneous boundary.
+<!-- ATOM_BLOCK_BEGIN -->
+## Atomic records
+[A01] Procedure record V0: package records that share a request identifier into one group.
+[A02] Procedure record V1: group records by signatory class.
+[A03] Counterexample record: a prior mixed-signatory archive had a cross-access event; the raw event record omits grouping key and procedure version.
+[A04] Revision-history record: V1 was recorded after V0; the version log contains no universal-retirement field.
+[A05] Current archive record: one request identifier contains a public guide and restricted annex with two signatory classes.
+[A06] Verification-field record: output groups can be inspected for request identifier, signatory class, and supplied file labels.
+[A07] Execution-status record: no procedure is selected and no archive output exists.
+<!-- ATOM_BLOCK_END -->
 
-No source record in this excerpt joins the listed records into an ordered selection, test, interpretation, and disposition chain.
-
-## Recorded relations retained in this control
-[R01] A02 is the counterexample linked to revision A03.
-[R03] A05 identifies the present case as mixed-class.
-[R04] A06 is the check for applying the revised procedure.
-[R05] A07 records scoped revision rather than universal supersession.
+## Recorded relations
+[R02] A04 --ORDERS_VERSION_RECORDS--> A01 :: The version log records V0 before V1; it does not encode a case-specific procedure selection.
+[R03] A05 --IDENTIFIES_CURRENT_SHAPE--> A06 :: The current archive identifiers and labels are available for output verification.
+[R04] A05 --VERIFICATION_FIELDS_FOR--> A06 :: Request identifier and signatory-class labels can be compared with output groups after any proposed procedure.
+[R05] A07 --EXECUTION_STATUS_FOR--> A01 :: The archive record distinguishes a proposed grouping procedure from a completed export.
 
 
 ## Record CASE02
-Source SHA-256: 5c1f977c39ee5ecf1ec0a86df0b04fed1035c83902f33bf4a50f20017e0d3850
+Source SHA-256: 00fcfed0e0301ac01deb4d53913ed347705b267e2c9c4f1f2efa1e48cb8a20d7
 
+# CASE02 — Regional cache boundary
 
-# CASE02 — Regional storefront revision
+All names, observations, and systems are synthetic.
 
-All names, observations, and systems in this case are synthetic.
-
-[F01] A banner revision B-12 has been scheduled across five edge regions.
-[F02] Two regions report B-12 as active; three still report B-11.
-[F03] The purge control and the wait-for-convergence control are both available.
-[F04] A preview from one B-12 region shows the new banner, while one B-11 region still serves the earlier copy.
-[F05] The task record asks whether to purge the edge cache now or defer that action.
-[F06] No cache operation is recorded as executed in this incident.
-[F07] The incident record does not state what revision a purge would reload during mixed regional state.
-
+[F01] Banner revision B-12 is scheduled across five edge regions.
+[F02] Two regions report B-12 active; three report B-11.
+[F03] A purge control and a wait-and-probe control are both available.
+[F04] A preview from one B-12 region shows the new banner, while one B-11 region serves the earlier copy.
+[F05] The incident asks which operation should be proposed while regional markers differ.
+[F06] The incident log contains no cache-operation result and no record of which revision a purge would reload during mixed state.
+[F07] No cache operation is recorded as executed.
 
 
 # Supplemental record CASE02
 
-Representation note: this excerpt preserves the same atomic records and source context as the companion trace, but its relation field is absent.
+Representation note: structured synthetic records; relation rows connect source-linked records.
 
-## Independently listed records
-[A01] Candidate record: a cache purge can be submitted for the banner key.
-[A02] Candidate record: defer the purge and run named-region revision probes.
-[A03] Boundary record: during mixed regional revision state, a purge may refill an edge from an older origin snapshot.
-[A04] Context record: the boundary applies to a rollout whose region markers have not converged.
-[A05] Expected observation: every named region reports the target revision and the origin warm marker is stable on two probes.
-[A06] Failure interpretation: any old or unavailable region marker means convergence has not been demonstrated.
-[A07] Disposition record: withhold the purge until the stated observation is satisfied; the current record does not establish that condition.
+<!-- ATOM_BLOCK_BEGIN -->
+## Atomic records
+[A01] Candidate-operation record: the purge control refreshes the selected edge-cache key.
+[A02] Candidate-operation record: the wait-and-probe control records regional revision markers and the origin warm marker.
+[A03] Current-state record: two named regions report B-12 and three report B-11.
+[A04] Origin record: an older origin snapshot remains available during the rollout window.
+[A05] Probe-field record: a regional marker and origin warm marker can be recorded at a stated time.
+[A06] Probe-coverage record: a preview from one region is not a record for the other named regions.
+[A07] Operation-log record: no cache-action result is present for this incident.
+<!-- ATOM_BLOCK_END -->
 
-No source record in this excerpt joins the listed records into an ordered selection, test, interpretation, and disposition chain.
-
-## Recorded relations retained in this control
-[R01] A04 activates the boundary recorded in A03.
-[R03] A05 is the observation required before reconsidering A01.
-[R04] A06 interprets a stale or unavailable probe as incomplete, not as success.
-[R05] A07 records bounded non-application.
+## Recorded relations
+[R01] A03 --STATE_SET_FOR--> A04 :: The regional-marker set and origin-snapshot record describe the same rollout interval.
+[R03] A05 --OBSERVED_FIELDS_FOR--> A02 :: The regional marker and origin warm marker are fields returned by a probe.
+[R04] A06 --LIMITS_COVERAGE_OF--> A05 :: A single-region preview does not establish the state of every named region.
+[R05] A07 --EXECUTION_STATUS_FOR--> A01 :: The incident log distinguishes a proposed operation from an operation result.
 
 
 ## Record CASE06
-Source SHA-256: a5f9758e62f7075181c41b94f89c139260848b178bbed219865b5571e39e6672
+Source SHA-256: e6201271f311633910edc2edd42c20a9762454f4567e690e3303fe5be6bb8b2a
 
+# CASE06 — Cohort-specific event routing
 
-# CASE06 — Event check-in cohorts
+All attendees, systems, and cohort records are synthetic.
 
-All attendees, systems, and cohort records in this case are synthetic.
-
-[F01] The event roster contains exact identifier matches, name aliases, and walk-in entries.
-[F02] A self-service scanner accepts a valid event code; a staffed desk can review a name against the roster.
-[F03] One prior cohort log contains scanner-completion times for exact identifier matches.
-[F04] A separate cohort log contains desk-resolution times for aliases and walk-ins.
-[F05] The two logs use different cohorts and do not include a head-to-head comparison.
-[F06] Several current entries have a mismatch flag whose cause is not recorded.
-[F07] The event plan asks for a check-in procedure and a disposition for unresolved mismatches.
-
+[F01] The event roster contains exact identifier matches, aliases, and walk-in entries.
+[F02] Some entries have a valid event token; several others have a mismatch flag whose cause is not recorded.
+[F03] Station Q accepts an entry identifier and optional event token and returns status fields.
+[F04] Station D accepts an entry identifier and optional event token and returns status fields with an evidence note.
+[F05] The event asks for a procedure and a disposition for unresolved mismatches.
+[F06] No current entry has been checked in, and the facts assign no station to an entry category.
+[F07] Historical timing records, if any, come from separate cohorts without a head-to-head comparison.
 
 
 # Supplemental record CASE06
 
-Representation note: this excerpt preserves the same atomic records and source context as the companion trace, but its relation field is absent.
+Representation note: structured synthetic records; relation rows connect source-linked records.
 
-## Independently listed records
-[A01] Candidate procedure Q: self-service code scan for entries with exact roster identifiers.
-[A02] Candidate procedure D: staffed roster review for aliases and walk-ins.
-[A03] Source record Q-1: scan completion observations from a cohort of exact identifier matches.
-[A04] Source record D-1: desk resolution observations from a different cohort of aliases and walk-ins.
-[A05] Evidence boundary: Q-1 and D-1 are not a head-to-head comparison and do not rank universal performance.
-[A06] Expected observation: an exact roster identifier is verified by its event code; an alias or walk-in is routed to a documented roster review.
-[A07] Disposition record: retain both cohort-bounded procedures; leave an unexplained mismatch unresolved pending roster evidence.
+<!-- ATOM_BLOCK_BEGIN -->
+## Atomic records
+[A01] Procedure record Q: process a set of entry identifiers and optional event tokens and return status fields.
+[A02] Procedure record D: process entry identifiers and optional event tokens one row at a time and return status fields with an evidence note.
+[A03] Historical timing record: a result is recorded for cohort H1.
+[A04] Historical timing record: a separate result is recorded for cohort H2; entry categories and procedure assignment are not in this record.
+[A05] Comparison record: H1 and H2 are separate cohorts without a head-to-head comparison.
+[A06] Current-entry record: roster identifier status, entry type, event-token status, and mismatch status are recorded for each entry.
+[A07] Check-in status record: no current entry has a resolved check-in event.
+<!-- ATOM_BLOCK_END -->
 
-No source record in this excerpt joins the listed records into an ordered selection, test, interpretation, and disposition chain.
-
-## Recorded relations retained in this control
-[R01] A03 supports A01 only for the exact-identifier cohort.
-[R02] A04 supports A02 only for aliases and walk-ins.
-[R03] A05 blocks a universal-winner inference.
-[R05] A07 preserves coexistence and unresolved mismatches.
+## Recorded relations
+[R01] A03 --SOURCE_RECORD_FOR--> A05 :: H1 is the source cohort for its recorded timing observation.
+[R02] A04 --SOURCE_RECORD_FOR--> A05 :: H2 is a separate source cohort for its recorded timing observation.
+[R03] A05 --DOES_NOT_RANK--> A01 :: Separate cohorts do not establish a universal procedure winner.
+[R05] A07 --LIMITS_STATUS_CLAIM_FOR--> A06 :: The current status record contains no completed check-in event.
 
 
 ## Record CASE01
-Source SHA-256: 84787990111e5a9c53a9ac8405df1e7cc411f08b46a28dcda3219bba7ed7c796
+Source SHA-256: f74d8467e956ece4ac093f5aaac275c9615f61e9f37c802e8e5df45fbece268b
 
+# CASE01 — Checkpoint export selection
 
-# CASE01 — Archive approval trail
+All names, records, dates, and tools are synthetic.
 
-All names, records, dates, and tools in this case are synthetic.
-
-[F01] A review packet contains a signed version 3 transcript from checkpoint C-17 and a later version 4 correction marked unsigned.
-[F02] The export console offers Route Alder, which emits the most recent signed document and its signature timestamp.
-[F03] The console also offers Route Birch, which emits the version chronology and a digest for each file.
-[F04] The request asks for a record from which a later auditor can identify what content was present at each approval checkpoint.
-[F05] The console preview does not show how either route relates a file version to a particular checkpoint.
-[F06] Neither route is recorded as selected or run for this packet.
-[F07] No approval event is recorded for the unsigned correction.
-
+[F01] A packet contains signed document version 3 associated with checkpoint C-17 and a later version 4 correction marked unsigned.
+[F02] Route Alder's preview lists a signed-document field, signature timestamp, and approval-event reference; it does not list a per-file digest.
+[F03] Route Birch's preview lists a version sequence and per-file digest; its optional approval-event field is not verified in the preview.
+[F04] The request asks for an export from which a later auditor can reconstruct which content was present at each approval checkpoint.
+[F05] Neither route has been selected or run.
+[F06] No approval event is recorded for the unsigned correction.
+[F07] The packet does not establish which route's available fields are sufficient to identify checkpoint membership.
 
 
 # Supplemental record CASE01
 
-Representation note: this excerpt preserves the same atomic records and source context as the companion trace, but its relation field is absent.
+Representation note: structured synthetic records; relation rows connect source-linked records.
 
-## Independently listed records
-[A01] Candidate record: Route Alder emits the most recent signed document and its signature timestamp.
-[A02] Candidate record: Route Birch emits the version chronology and file digests and can include an approval-event pointer.
-[A03] Selection criterion: a checkpoint audit needs the content digest joined to the approval event for that checkpoint.
-[A04] Context record: source version labels, checkpoint identifiers, and signature markers must be intact before export.
-[A05] Expected observation: the delivered manifest associates each included content digest with a checkpoint and approval event.
-[A06] Failure interpretation: a missing digest-to-event join leaves the approved content unresolved; an unsigned later correction is not an approval event.
-[A07] Disposition record: keep a correction without an approval event pending; do not infer that a later file was part of an earlier checkpoint.
+<!-- ATOM_BLOCK_BEGIN -->
+## Atomic records
+[A01] Candidate record: Route Alder returns a signed-document field, signature-timestamp field, and approval-event reference, but no per-file digest.
+[A02] Candidate record: Route Birch returns a version sequence and per-file digest; its optional approval-event field has unverified output behavior.
+[A03] Audit objective record: reconstruct content membership at each approval checkpoint.
+[A04] Source precondition record: version labels, checkpoint identifiers, and signature markers are available for comparison.
+[A05] Output-field record: a delivered manifest may expose multiple source identifiers; the current preview does not establish how its fields join.
+[A06] Preview limitation record: at least one optional field's delivered behavior is not verified by the current preview.
+[A07] Version record: version 4 is marked unsigned; the observed C-17 document is version 3.
+<!-- ATOM_BLOCK_END -->
 
-No source record in this excerpt joins the listed records into an ordered selection, test, interpretation, and disposition chain.
-
-## Recorded relations retained in this control
-[R02] A04 is the precondition for applying the selection rule.
-[R03] A05 is the discriminator to inspect after export.
-[R04] A06 interprets a missing join without inventing approval.
-[R05] A07 bounds the disposition of the later correction.
+## Recorded relations
+[R02] A04 --PRECONDITION_FOR--> A03 :: Version, checkpoint, and signature identifiers must be intact before interpreting a checkpoint export.
+[R03] A05 --OBSERVATION_FOR--> A02 :: The delivered package can be compared with the source records after a proposed export.
+[R04] A06 --LIMITS_INTERPRETATION_OF--> A05 :: A field not verified in a preview must be checked in the delivered package before describing that field.
+[R05] A07 --PROVENANCE_FOR--> A03 :: The observed C-17 version and unsigned-correction marker remain separate provenance entries.
 
 
 ## Record CASE03
-Source SHA-256: 96e03fa356f35a0c30868c1a47f7e868617c7021e05d78a3bd08fbc56f64ce7b
+Source SHA-256: a3a45dd417174a166c521348c29c379396a5109aa568f85435816616539ecc32
 
+# CASE03 — Queued request acknowledgement
 
-# CASE03 — Queued export with missing receipt
+All identifiers, events, and service behavior are synthetic.
 
-All identifiers, events, and service behavior in this case are synthetic.
-
-[F01] One export request with immutable request key RQ-18 was submitted to a test queue.
+[F01] An export request with immutable idempotency key RQ-18 was submitted to a test queue.
 [F02] The gateway returned QUEUED for RQ-18.
 [F03] The client connection ended before a receipt body was stored.
 [F04] The local event log contains no terminal ACCEPTED or NOT_ACCEPTED status.
-[F05] A retry control and a status-lookup control are both available.
-[F06] The incident record contains no evidence that a second submission occurred.
-[F07] No rule in the event log classifies a missing receipt as success or failure.
-
+[F05] A status-query control and a resubmit control using the same key are available.
+[F06] The queue contract says reuse of RQ-18 does not create a second request, but does not state whether the first request is terminal.
+[F07] The incident record contains no follow-up action.
 
 
 # Supplemental record CASE03
 
-Representation note: this excerpt preserves the same atomic records and source context as the companion trace, but its relation field is absent.
+Representation note: structured synthetic records; relation rows connect source-linked records.
 
-## Independently listed records
-[A01] Candidate record: status lookup by the original immutable request key.
-[A02] Candidate record: a new submission under a new request key.
-[A03] Observed response: the original request returned QUEUED before the client connection ended without storing a receipt body.
-[A04] Failure interpretation: a missing receipt after QUEUED is an acknowledgement-unknown state, not a terminal rejection.
-[A05] Expected observation: a status query under the same key returns pending, terminal accepted, terminal not accepted, or remains unavailable.
-[A06] Boundary record: another submission is not licensed while the original key has a non-terminal or unavailable status.
-[A07] Disposition record: reconcile the original key first; only a recorded terminal NOT_ACCEPTED state permits a new submission.
+<!-- ATOM_BLOCK_BEGIN -->
+## Atomic records
+[A01] Candidate-diagnostic record: status query using the original immutable request key.
+[A02] Candidate-operation record: resubmit control using the same idempotency key.
+[A03] Gateway record: the original key received a QUEUED response.
+[A04] Connection record: the client ended before storing a receipt body.
+[A05] Status-field record: a query can return pending, terminal accepted, terminal not accepted, or unavailable.
+[A06] Key record: RQ-18 is immutable and reuse does not create a second request.
+[A07] Follow-up record: no status query or later submission is present in the event log.
+<!-- ATOM_BLOCK_END -->
 
-No source record in this excerpt joins the listed records into an ordered selection, test, interpretation, and disposition chain.
-
-## Recorded relations retained in this control
-[R01] A03 supports the acknowledgement-unknown interpretation in A04.
-[R03] A05 discriminates the terminal state under the original key.
-[R04] A06 bounds any further submission.
-[R05] A07 records the conditional disposition.
+## Recorded relations
+[R01] A06 --IDENTIFIES--> A03 :: The immutable key identifies the stored QUEUED response.
+[R03] A05 --DISCRIMINATES_STATUS_FOR--> A03 :: The status fields distinguish pending, terminal, and unavailable states for the original request.
+[R04] A06 --KEY_IDENTITY_FOR--> A02 :: RQ-18 names the same request identity; this record does not establish the request's present status or the safe next operation.
+[R05] A07 --EXECUTION_STATUS_FOR--> A01 :: The event log separates a proposed diagnostic from a query already performed.
 
 
 ## Record CASE04
-Source SHA-256: 2de34564f2d749a651b6d8d4fbe2ee18d10508686020d6dbac693f8b417aaf5f
+Source SHA-256: 30a6eb86a8eda7c6663d1f46c7544b024f2451e65a5e42ce07b3cd72e90c3e9e
 
+# CASE04 — Greenhouse symptom discriminator
 
-# CASE04 — Root-zone sample timing
-
-All crops, instruments, values, and observations in this case are synthetic.
+All crops, instruments, values, and observations are synthetic.
 
 [F01] A greenhouse tray shows curled leaves in two rows.
 [F02] Air temperature at canopy height was 31 degrees during the prior hour.
-[F03] The feed tank conductivity was recorded as 1.4 mS/cm before refill.
-[F04] No root-zone sample was recorded after the refill.
-[F05] A handheld meter, a root-zone sampling port, and a recirculation timer are available.
-[F06] The work note asks whether the next action should change the feed concentration or continue observation.
-[F07] The record contains no post-recirculation root-zone measurement and no recorded cause.
-
+[F03] Feed-tank conductivity was 1.4 mS/cm before refill.
+[F04] No root-zone sample was recorded after refill.
+[F05] A handheld meter, root-zone port, recirculation timer, and canopy humidity sensor are available.
+[F06] The work note lists feed adjustment, increased airflow, a root-zone sample, and a canopy humidity reading as possible next steps.
+[F07] No cause or post-refill measurement is recorded.
 
 
 # Supplemental record CASE04
 
-Representation note: this excerpt preserves the same atomic records and source context as the companion trace, but its relation field is absent.
+Representation note: structured synthetic records; relation rows connect source-linked records.
 
-## Independently listed records
-[A01] Candidate explanation: elevated root-zone salt concentration.
-[A02] Candidate explanation: canopy heat exposure.
-[A03] Candidate observation: a root-zone conductivity reading collected after four minutes of recirculation.
-[A04] Selection rationale: the incoming feed value alone does not distinguish accumulated root-zone salt from canopy heat.
-[A05] Boundary record: do not change feed concentration from leaf appearance or feed-tank conductivity alone.
-[A06] Expected observation: compare the timed root-zone value with the recorded inlet value; a difference of at least 0.6 mS/cm supports accumulation, while a smaller difference leaves the two explanations unresolved.
-[A07] Disposition record: request the timed root-zone observation and keep the cause unresolved until it is recorded.
+<!-- ATOM_BLOCK_BEGIN -->
+## Atomic records
+[A01] Hypothesis record: elevated salt concentration in the root zone.
+[A02] Hypothesis record: canopy heat or humidity stress.
+[A03] Measurement-definition record: a root-zone conductivity reading can be collected after recirculation; the exact interval is selected by the operating protocol.
+[A04] Existing-value record: the feed-tank value of 1.4 mS/cm predates refill.
+[A05] Instrument record: root-zone port, recirculation timer, and canopy humidity sensor are available.
+[A06] Calibration-record index: the protocol has an inlet-comparison rule; its threshold and interpretation are kept in the referenced calibration record.
+[A07] Current-record status: no post-refill root-zone reading or cause is present.
+<!-- ATOM_BLOCK_END -->
 
-No source record in this excerpt joins the listed records into an ordered selection, test, interpretation, and disposition chain.
-
-## Recorded relations retained in this control
-[R02] A05 blocks an unsupported immediate feed change.
-[R03] A03 specifies the location and timing required for A06.
-[R04] A06 interprets the possible observation without assigning a cause from missing data.
-[R05] A07 records the unresolved disposition.
+## Recorded relations
+[R02] A04 --TEMPORAL_LIMIT_FOR--> A01 :: The pre-refill feed value does not record the current root-zone state.
+[R03] A05 --SUPPORTS_MEASUREMENT--> A03 :: The listed port and timer make a post-refill reading technically available; they do not select a measurement or interval.
+[R05] A07 --RESULT_STATUS_FOR--> A03 :: The current record contains no post-refill measurement result.

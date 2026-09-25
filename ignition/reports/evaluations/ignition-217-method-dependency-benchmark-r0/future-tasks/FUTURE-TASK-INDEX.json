@@ -1,5 +1,5 @@
 {
-  "schema_version": "ignition-217-future-task-index-r0",
+  "schema_version": "ignition-217-future-task-index-r2",
   "successors_authorized_or_launched": false,
   "task_count": 12,
   "tasks": [
@@ -63,5 +63,6 @@
       "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-6439741CDC98.json",
       "packet_id": "PK-9B32BAE52185"
     }
-  ]
+  ],
+  "supersedes": "ignition-217-future-task-index-r0; opaque task and packet IDs preserved"
 }

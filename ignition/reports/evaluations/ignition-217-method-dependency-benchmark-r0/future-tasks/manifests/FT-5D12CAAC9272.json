@@ -1,5 +1,5 @@
 {
-  "schema_version": "ignition-217-future-task-manifest-r0",
+  "schema_version": "ignition-217-future-task-manifest-r2",
   "future_task_id": "FT-5D12CAAC9272",
   "packet_id": "PK-36E400FB560F",
   "conversation_replication_unit": true,
@@ -7,14 +7,14 @@
   "prompt_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/neutral-task-prompt.md",
   "prompt_sha256": "4b5dc76b563aa6f45a9c3fa5ee155bc20fc8a82902da2a7a77d4dcc859d7a913",
   "payload_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md",
-  "payload_sha256": "96e530a96c6be7ba3851183d507228c6d1f0ee4aed6aee7f4012c6917a3bd718",
+  "payload_sha256": "05a6b6cd97cc5a077cb3f3229842437faca50fcd217207c2cb2284de05708e64",
   "case_source_sha256": {
-    "CASE01": "914150fdb8bc8ca546761e7f99a5e8ff12972acbde1612fa89d29f7065ecc411",
-    "CASE02": "cc6271cd6254b7b4d9a9c185ad614df9aa68aee82c5537eb8cc8c159962e0306",
-    "CASE03": "de3029e8ebc6b4d53cff429203429fbe1a2beae99dcf64973132246d13c9664c",
-    "CASE04": "5e398f1e8fd8e7e128b848bcb41eb8fe00a92083d9e4d869d6ae3e846f9ecdc0",
-    "CASE05": "d8efab8ee18f028e1c20aafe0cb324159c9e54a71d535ddd869c4d1f899e6bbd",
-    "CASE06": "2aeec94c73bb7fbeefa741a7c5f154cb6a8e760eb3983762700b6d9a7ad210c7"
+    "CASE01": "5571dbf60194725aa4342bdf1abf9738713a904474e7bb48db128f049c301e4d",
+    "CASE02": "a01b147be30e6e1d26831ab85b21860aee2ac452e0e8681a0fb3c7f02b29e12e",
+    "CASE03": "778589ea714b94a7cf57ba84bec2936583f0e980c6a36dd512068e50cdf071c6",
+    "CASE04": "0f0a83087bc9728a375e09211c0bd767108b8456703d2e0fdaaa562b5cdcb31f",
+    "CASE05": "8fc8fef77dcddb8055b3906e868d2e6051d46ca9f22e43d7db49eca399e9a9ba",
+    "CASE06": "9c8990f65ed6e5e4eb8aa729dfa774d68cc8c1c12f801afda16995e2501bacdc"
   },
   "source_hash_definition": "SHA256 of case-families/CASE##/facts.md bytes, followed by two LF bytes, followed by the selected supplemental record bytes.",
   "output_schema_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/successor-output-r0.1.json",
@@ -26,7 +26,7 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md",
-      "sha256": "96e530a96c6be7ba3851183d507228c6d1f0ee4aed6aee7f4012c6917a3bd718"
+      "sha256": "05a6b6cd97cc5a077cb3f3229842437faca50fcd217207c2cb2284de05708e64"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/successor-output-r0.1.json",
@@ -52,5 +52,6 @@
     "mismatch": "A runtime mismatch does not silently invalidate outputs unless a future frozen protocol explicitly says so."
   },
   "output_contract": "Return exactly six case records as one JSON array; each record conforms to the supplied schema. Do not add prose outside the array.",
-  "access_scope": "Only the three files in read_allowlist are available to the successor. No repository-wide browsing."
+  "access_scope": "Only the three files in read_allowlist are available to the successor. No repository-wide browsing.",
+  "supersedes": "ignition-217-future-task-manifest-r0; opaque identity and matched case order preserved"
 }
