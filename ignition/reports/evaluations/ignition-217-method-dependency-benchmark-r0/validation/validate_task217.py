@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[5]
 TASK_REL = Path("ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0")
 TASK = ROOT / TASK_REL
 BASE = "24198effb2e2d94c19fe212244bbfcf47f995b2a"
+PATH_MANIFEST_REL = "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
 CONDITIONS = ["FACTS_ONLY", "SKILL_ONLY", "METHOD", "LINKLESS_METHOD_CONTROL"]
 CASES = [f"CASE{i:02d}" for i in range(1, 7)]
 CUTS = {"CASE01": "R01", "CASE02": "R02", "CASE03": "R02", "CASE04": "R01", "CASE05": "R02", "CASE06": "R04"}
@@ -144,13 +145,24 @@ def main() -> int:
     require(outcome["outputs_present_at_freeze"] is False and outcome["successors_launched"] is False and outcome["evaluators_launched"] is False, "future outputs or runs are marked present")
 
     changed = subprocess.check_output(["git", "diff", "--name-only", BASE, "HEAD"], cwd=ROOT, text=True).splitlines()
-    require(changed and all(path.startswith(TASK_REL.as_posix() + "/") for path in changed), "changes extend outside isolated Task217 subtree")
+    allowed_external = {PATH_MANIFEST_REL}
+    require(changed and all(path.startswith(TASK_REL.as_posix() + "/") or path in allowed_external for path in changed), "changes extend outside Task217 subtree and its required generated path index")
+    path_manifest_path = ROOT / PATH_MANIFEST_REL
+    path_rows = [json.loads(line) for line in path_manifest_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    path_row_by_name = {row["path"]: row for row in path_rows}
+    task_tracked_paths = subprocess.check_output(["git", "ls-files", TASK_REL.as_posix()], cwd=ROOT, text=True).splitlines()
+    require(len(task_tracked_paths) == 94, "expected 94 tracked Task217 paths in repository path index")
+    require(all(path in path_row_by_name and path_row_by_name[path]["category"] == "EVALUATION_EVIDENCE" for path in task_tracked_paths), "Task217 paths are absent or misclassified in generated repository path index")
     status = subprocess.check_output(["git", "status", "--porcelain"], cwd=ROOT, text=True)
     require(status == "", "worktree is not clean")
 
     freeze = TASK / "freeze" / "FREEZE-MANIFEST.json"
     sidecar = TASK / "freeze" / "FREEZE-MANIFEST.sha256"
     manifest = read_json(freeze)
+    external_index = manifest.get("external_generated_path_index", {})
+    require(external_index.get("path") == PATH_MANIFEST_REL, "external generated path-index reference missing")
+    require(external_index.get("sha256") == sha(path_manifest_path.read_bytes()), "external path-index hash mismatch")
+    require(external_index.get("task217_entry_count") == 94 and external_index.get("category") == "EVALUATION_EVIDENCE", "external Task217 path-index entry summary mismatch")
     excluded = {freeze.relative_to(ROOT).as_posix(), sidecar.relative_to(ROOT).as_posix()}
     actual_files = {p.relative_to(ROOT).as_posix() for p in TASK.rglob("*") if p.is_file()} - excluded
     inventory = {entry["path"]: entry["sha256"] for entry in manifest["files"]}

@@ -10,6 +10,14 @@
     "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.json",
     "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.sha256"
   ],
+  "external_generated_path_index": {
+    "category": "EVALUATION_EVIDENCE",
+    "check": "ignition/tools/foundation/validate_repository_path_classification.py --check passed 10/10",
+    "generator": "ignition/tools/foundation/validate_repository_path_classification.py --generate",
+    "path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "sha256": "82ddc45ab0806651af51ebacd4148e10f7116a153893c037618581cca2d90ceb",
+    "task217_entry_count": 94
+  },
   "file_count": 92,
   "files": [
     {
@@ -374,11 +382,11 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md",
-      "sha256": "9a6ab1ab2d38cbac7d56c1e5702b8f3793559e7ad6be0b88cf9075f76dc7911f"
+      "sha256": "ec7c092c33cf485bcc149a8b69b379c745f5c4f6ae73225deadb190f54cb00f4"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/validate_task217.py",
-      "sha256": "162df07383be8c441518744bbc3869ca3a99471fc52a3b9b6e9d0b4dc76ef7b8"
+      "sha256": "0f7d11304cc4904ea4edab4d591d49d24ffa3f7c5158ee3b5eacfde52a74ecca"
     }
   ],
   "formal_base_sha": "24198effb2e2d94c19fe212244bbfcf47f995b2a",
@@ -389,5 +397,6 @@
   "repository": "Arvin-liu/when-systems-catch-fire",
   "runtime_selected_by_task": false,
   "status": "FROZEN_PRE_OUTCOME",
-  "task_id": "IGNITION-20260925-217"
+  "task_id": "IGNITION-20260925-217",
+  "updated_at_utc": "2026-09-25T11:06:23+00:00"
 }

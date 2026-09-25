@@ -33,9 +33,10 @@ Status: PASS for benchmark preparation and freeze. No Successor or Evaluator out
 
 ## Repository and freeze integrity
 
-- Branch: `work/IGNITION-20260925-217-method-dependency-benchmark-r0`, created from the exact Formal base above. All changes are under the Task217 subtree; the Task207 frozen subtree and global schemas/projections are unchanged.
+- Branch: `work/IGNITION-20260925-217-method-dependency-benchmark-r0`, created from the exact Formal base above. All benchmark artifacts remain under the Task217 subtree; the Task207 frozen subtree, classification rules/schema, and global architecture projections are unchanged.
+- The first exact-head repository-path-accounting run found the expected 94 new Task217 paths missing from the generated snapshot. The repository's prescribed generator updated only `ignition/data/foundation/repository-path-classification/classification-manifest.jsonl`, classifying all 94 paths under the existing `EVALUATION_EVIDENCE` rule. The subsequent local `--check` passed 10/10; no classifier rule or schema was edited.
 - No Owner packet files were imported as canonical truth. The command’s authority, source provenance caveat, and all Task217 artifacts are recorded inside the isolated subtree.
-- The freeze manifest inventories every file in this Task217 subtree except itself and its checksum sidecar; that inventory includes this report and the validator. The adjacent sidecar verifies the manifest SHA-256.
+- The freeze manifest inventories every file in this Task217 subtree except itself and its checksum sidecar; that inventory includes this report and the validator. It also records the SHA-256 and 94-path count of the required generated repository path index. The adjacent sidecar verifies the freeze manifest SHA-256.
 - The task-local validator checks case counts and hashes, atom equality and one-relation cuts, prompt identity, opaque manifests, order matching, map secrecy, fixed outcome thresholds, Task207 schema parity, repository path scope, clean worktree, and complete inventory/sidecar integrity.
 
 Final preparation state: six families; four conditions; twelve future tasks prepared; zero Successors launched; zero Evaluators launched; condition map unreleased; runtime unchosen.
