@@ -1,0 +1,67 @@
+{
+  "schema_version": "ignition-217-future-task-index-r0",
+  "successors_authorized_or_launched": false,
+  "task_count": 12,
+  "tasks": [
+    {
+      "future_task_id": "FT-58CF738C46CB",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-58CF738C46CB.json",
+      "packet_id": "PK-87E4C138ACC9"
+    },
+    {
+      "future_task_id": "FT-60CB05519C9B",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-60CB05519C9B.json",
+      "packet_id": "PK-9737185B9103"
+    },
+    {
+      "future_task_id": "FT-1635801CC8F6",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-1635801CC8F6.json",
+      "packet_id": "PK-036C68E81455"
+    },
+    {
+      "future_task_id": "FT-2ED736040AA4",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-2ED736040AA4.json",
+      "packet_id": "PK-A4903D709062"
+    },
+    {
+      "future_task_id": "FT-BCA806ED6F1B",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-BCA806ED6F1B.json",
+      "packet_id": "PK-D7BA5DE6F459"
+    },
+    {
+      "future_task_id": "FT-A29644406938",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-A29644406938.json",
+      "packet_id": "PK-F245E2EB0644"
+    },
+    {
+      "future_task_id": "FT-B03332236A38",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-B03332236A38.json",
+      "packet_id": "PK-6453996D8B64"
+    },
+    {
+      "future_task_id": "FT-0CBCA4234750",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-0CBCA4234750.json",
+      "packet_id": "PK-E4E08B5DB0B4"
+    },
+    {
+      "future_task_id": "FT-DC09E06A7C56",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-DC09E06A7C56.json",
+      "packet_id": "PK-B32AB4BD936E"
+    },
+    {
+      "future_task_id": "FT-4A7924F0136D",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-4A7924F0136D.json",
+      "packet_id": "PK-CD1E0740AE3A"
+    },
+    {
+      "future_task_id": "FT-5D12CAAC9272",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-5D12CAAC9272.json",
+      "packet_id": "PK-36E400FB560F"
+    },
+    {
+      "future_task_id": "FT-6439741CDC98",
+      "manifest_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-6439741CDC98.json",
+      "packet_id": "PK-9B32BAE52185"
+    }
+  ]
+}

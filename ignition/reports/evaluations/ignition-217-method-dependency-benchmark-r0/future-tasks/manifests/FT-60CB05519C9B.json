@@ -1,0 +1,56 @@
+{
+  "schema_version": "ignition-217-future-task-manifest-r0",
+  "future_task_id": "FT-60CB05519C9B",
+  "packet_id": "PK-9737185B9103",
+  "conversation_replication_unit": true,
+  "fresh_conversation_required": true,
+  "prompt_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/neutral-task-prompt.md",
+  "prompt_sha256": "4b5dc76b563aa6f45a9c3fa5ee155bc20fc8a82902da2a7a77d4dcc859d7a913",
+  "payload_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-9737185B9103.md",
+  "payload_sha256": "2d3cee2bfdbe494b13bfbd4c053fd8e000bfe088780c4f7ea846b75ebf3ac313",
+  "case_source_sha256": {
+    "CASE05": "d8efab8ee18f028e1c20aafe0cb324159c9e54a71d535ddd869c4d1f899e6bbd",
+    "CASE02": "cc6271cd6254b7b4d9a9c185ad614df9aa68aee82c5537eb8cc8c159962e0306",
+    "CASE06": "2aeec94c73bb7fbeefa741a7c5f154cb6a8e760eb3983762700b6d9a7ad210c7",
+    "CASE01": "914150fdb8bc8ca546761e7f99a5e8ff12972acbde1612fa89d29f7065ecc411",
+    "CASE03": "de3029e8ebc6b4d53cff429203429fbe1a2beae99dcf64973132246d13c9664c",
+    "CASE04": "5e398f1e8fd8e7e128b848bcb41eb8fe00a92083d9e4d869d6ae3e846f9ecdc0"
+  },
+  "source_hash_definition": "SHA256 of case-families/CASE##/facts.md bytes, followed by two LF bytes, followed by the selected supplemental record bytes.",
+  "output_schema_path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/successor-output-r0.1.json",
+  "output_schema_sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133",
+  "read_allowlist": [
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/neutral-task-prompt.md",
+      "sha256": "4b5dc76b563aa6f45a9c3fa5ee155bc20fc8a82902da2a7a77d4dcc859d7a913"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-9737185B9103.md",
+      "sha256": "2d3cee2bfdbe494b13bfbd4c053fd8e000bfe088780c4f7ea846b75ebf3ac313"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/successor-output-r0.1.json",
+      "sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+    }
+  ],
+  "runtime_policy": {
+    "selection": "Runtime and launch preset are selected externally at execution; Task217 selects none.",
+    "record_actual_fields": [
+      "provider_or_service",
+      "model_identifier",
+      "model_version",
+      "reasoning_effort",
+      "speed_mode",
+      "launch_preset_identifier",
+      "launch_preset_configuration_hash",
+      "execution_timestamp_utc",
+      "runtime_capture_source",
+      "independent_verification_source"
+    ],
+    "matching": "Use the same externally selected launch preset across all twelve conversations when operationally possible.",
+    "attestation": "Assignment or self-report is not independent verification. Missing runtime attestation lowers the claim ceiling.",
+    "mismatch": "A runtime mismatch does not silently invalidate outputs unless a future frozen protocol explicitly says so."
+  },
+  "output_contract": "Return exactly six case records as one JSON array; each record conforms to the supplied schema. Do not add prose outside the array.",
+  "access_scope": "Only the three files in read_allowlist are available to the successor. No repository-wide browsing."
+}
