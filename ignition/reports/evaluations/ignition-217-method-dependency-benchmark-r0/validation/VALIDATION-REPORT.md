@@ -28,9 +28,9 @@ The Task217 output schema remains byte-identical to the Task207 schema at `ignit
 
 ## Repository closure
 
-The Task217 validator now has hard gates for the condition-neutral endpoint, exact atom identity and relation cuts, target-bearing atom phrases, ambiguity proofs, identical prompts, hidden manifest labels, and zero Successor/Evaluator outputs. It also verifies the sealed map, R2 target/outcome definitions, Task207 schema parity, generated path-index coverage, clean worktree, and freeze inventory/sidecar. Repository path accounting and nonfunction closure repair are pending in this report snapshot; final local and exact-head workflow results will be recorded after the prescribed generators and checks run.
+The Task217 validator now has hard gates for the condition-neutral endpoint, exact atom identity and relation cuts, target-bearing atom phrases, ambiguity proofs, identical prompts, hidden manifest labels, and zero Successor/Evaluator outputs. It also verifies the sealed map, R2 target/outcome definitions, Task207 schema parity, generated path-index coverage, clean worktree, and freeze inventory/sidecar.
 
-The repository path-classification generator refreshed only `ignition/data/foundation/repository-path-classification/classification-manifest.jsonl`; its `--check` passed 10/10 and accounted for all 111 tracked Task217 paths under the existing EVALUATION_EVIDENCE rule. The classification rules/schema and frozen Task207 subtree remain unchanged. Nonfunction-claim closure is still pending; generator-owned outputs will not be manually edited.
+Repository path accounting passed 10/10. The prescribed generator refreshed only `ignition/data/foundation/repository-path-classification/classification-manifest.jsonl`, accounting for all 111 tracked Task217 paths under the existing EVALUATION_EVIDENCE rule. Nonfunction generation changed exactly four generator-owned projections: `source-discovery.jsonl` added 111 new tracked paths; `closure-summary.json` and `discovery-coverage.json` moved tracked/excluded-evidence counts from 6644/608 to 6755/719; `nonfunction-claim-adjudication-index.md` refreshed the tracked-file total from 6644 to 6755. The nonfunction claim registry remains 18003 records and its dispositions were not promoted. `adjudicate_nonfunction_claims.py --check` passed deterministic generation across 14 files; `validate_nonfunction_claim_closure.py` passed 54/54; `validate_foundation.py` passed 63/63 locally. No generator-owned file was edited by hand. The classification rules/schema and frozen Task207 subtree remain unchanged. Exact-head GitHub workflows are checked against the final pushed commit.
 
 ## Final state
 
@@ -48,8 +48,7 @@ EVALUATORS_LAUNCHED=0
 CONDITION_MAP_RELEASED=false
 RUNTIME_CHOSEN_BY_TASK=false
 REPOSITORY_PATH_ACCOUNTING=PASS
-ARCHITECTURE_PAGES=PENDING
-FOUNDATION_VALIDATION=PENDING
+FOUNDATION_VALIDATION=PASS
 R1_NOT_AUTHORIZED
 CROSS_MODEL_NOT_AUTHORIZED
 PR_STATE=OPEN_DRAFT_UNMERGED
