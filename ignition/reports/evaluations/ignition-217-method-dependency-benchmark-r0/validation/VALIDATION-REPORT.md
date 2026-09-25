@@ -38,6 +38,8 @@ The next exact-head Foundation attempt (`36156192485`, job `108141657042`) passe
 
 Recording this closure in the validation report also changed the configured self-correction inputs. The standard `python3 tools/governance/run_self_correction.py` generator refreshed only `ignition/data/governance/self-correction/audit-findings.jsonl` and `ignition/RESULTS/SELF-CORRECTION-AUDIT.md`; its subsequent `--check` passed with 717 deltas and 10 rules. These are generator-owned audit projections, and their hashes are recorded in the freeze manifest.
 
+The exact-head Foundation run `36170554119` passed the full Foundation, function-asset, nonfunction-claim, and Task172 Step05–09 checks, then failed at the older Task172 R0 path-scope gate because 28 new Knowledge Experience partitions were outside its fixed historical list. No Task172 R0 artifacts or claim records changed. The R0 validator now admits only Knowledge Experience paths explicitly listed in this Task217 freeze after verifying the freeze sidecar and every listed SHA-256; a regression test rejects unlisted or tampered paths. The two compatibility source files and hashes are recorded in the Task217 freeze.
+
 ## Final state
 
 ```text

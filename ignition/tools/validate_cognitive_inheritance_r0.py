@@ -34,6 +34,12 @@ TASK_ID = "IGNITION-20260916-179"
 BASELINE = "68565f2afb50989d2c2b0d346d774e3388702743"
 FINAL_STATE = "READY_FOR_INDEPENDENT_EVALUATION"
 R0_RELATIVE = Path("agent_runtime/cognitive_inheritance_r0")
+TASK217_FREEZE_RELATIVE = Path(
+    "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.json"
+)
+TASK217_FREEZE_SIDECAR_RELATIVE = Path(
+    "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.sha256"
+)
 ALLOWED_CHANGED_PREFIXES = (
     "ignition/agent_runtime/cognitive_inheritance_r0/",
     # Evaluation-plane work is a separate, non-canonical evidence surface.
@@ -264,8 +270,48 @@ def validate_changed_paths(root: Path) -> None:
     if result.returncode != 0:
         return
     changed = [line for line in result.stdout.splitlines() if line]
-    unexpected = [path for path in changed if not is_allowed_changed_path(path)]
+    # Later Task217 closure may add deterministic Knowledge Experience shards
+    # outside this R0 task's original fixed list. Admit only the exact outputs
+    # whose hashes are recorded in Task217's freeze and checksum sidecar.
+    task217_projection_paths = task217_generated_knowledge_paths(root.parent)
+    unexpected = [
+        path for path in changed
+        if not is_allowed_changed_path(path, exact_extra_paths=task217_projection_paths)
+    ]
     require(not unexpected, f"R0 changed protected or out-of-scope paths: {unexpected}")
+
+
+def task217_generated_knowledge_paths(repo_root: Path) -> set[str]:
+    freeze_path = repo_root / TASK217_FREEZE_RELATIVE
+    sidecar_path = repo_root / TASK217_FREEZE_SIDECAR_RELATIVE
+    if not freeze_path.exists() and not sidecar_path.exists():
+        return set()
+    require(freeze_path.is_file() and sidecar_path.is_file(), "Task217 knowledge projection freeze or sidecar is missing")
+    freeze_bytes = freeze_path.read_bytes()
+    freeze_sha = hashlib.sha256(freeze_bytes).hexdigest()
+    expected_sidecar = f"{freeze_sha}  {TASK217_FREEZE_RELATIVE.as_posix()}\n"
+    require(sidecar_path.read_text(encoding="utf-8") == expected_sidecar, "Task217 knowledge projection freeze sidecar mismatch")
+    try:
+        freeze = json.loads(freeze_bytes.decode("utf-8"))
+    except json.JSONDecodeError as exc:
+        raise ValidationFailure(f"Task217 knowledge projection freeze is invalid JSON: {exc}") from exc
+    knowledge = freeze.get("external_generated_knowledge_experience", {})
+    entries = knowledge.get("files", [])
+    paths: set[str] = set()
+    for entry in entries:
+        path = entry.get("path")
+        expected_sha = entry.get("sha256")
+        require(
+            isinstance(path, str)
+            and (path.startswith("ignition/KNOWLEDGE/") or path.startswith("ignition/data/governance/knowledge-experience/")),
+            "Task217 freeze contains a non-knowledge-experience projection path",
+        )
+        require(path not in paths, f"Task217 freeze duplicates knowledge-experience path {path}")
+        artifact = repo_root / path
+        require(artifact.is_file(), f"Task217 frozen knowledge-experience projection is missing: {path}")
+        require(hashlib.sha256(artifact.read_bytes()).hexdigest() == expected_sha, f"Task217 frozen knowledge-experience projection hash mismatch: {path}")
+        paths.add(path)
+    return paths
 
 
 def validate_foundation_discovery_boundary(root: Path, r0: Path) -> int:
@@ -311,9 +357,9 @@ def validate_foundation_discovery_boundary(root: Path, r0: Path) -> int:
     return len(expected)
 
 
-def is_allowed_changed_path(path: str) -> bool:
+def is_allowed_changed_path(path: str, exact_extra_paths: set[str] | frozenset[str] = frozenset()) -> bool:
     """Keep R0 changes bounded while recognizing the typed evaluation surface."""
-    return path in ALLOWED_CHANGED_FILES or path.startswith(ALLOWED_CHANGED_PREFIXES)
+    return path in ALLOWED_CHANGED_FILES or path.startswith(ALLOWED_CHANGED_PREFIXES) or path in exact_extra_paths
 
 
 def validate_migration(r0: Path, migration_record: dict[str, Any]) -> None:

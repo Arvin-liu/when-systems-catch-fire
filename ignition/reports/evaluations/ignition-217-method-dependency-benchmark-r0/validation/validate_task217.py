@@ -42,6 +42,10 @@ GENERATED_SELF_CORRECTION_OUTPUTS = {
 }
 SOURCE_FIRST_SEEN_REL = "ignition/data/governance/knowledge-experience/source-first-seen.json"
 KNOWLEDGE_EXPERIENCE_MANIFEST_REL = "ignition/data/governance/knowledge-experience/manifest.json"
+GENERATED_COGNITIVE_INHERITANCE_COMPATIBILITY_FILES = {
+    "ignition/tools/validate_cognitive_inheritance_r0.py",
+    "ignition/tests/test_cognitive_inheritance_r0.py",
+}
 
 
 def require(value: bool, message: str) -> None:
@@ -347,7 +351,14 @@ def check_repository_closure_and_freeze(report: str) -> None:
         or path.startswith("ignition/KNOWLEDGE/")
         or path.startswith("ignition/data/governance/knowledge-experience/")
     }
-    allowed_external = {PATH_MANIFEST_REL} | GENERATED_NONFUNCTION_OUTPUTS | GENERATED_HUMAN_RESULTS_OUTPUTS | GENERATED_SELF_CORRECTION_OUTPUTS | generated_knowledge_paths
+    allowed_external = (
+        {PATH_MANIFEST_REL}
+        | GENERATED_NONFUNCTION_OUTPUTS
+        | GENERATED_HUMAN_RESULTS_OUTPUTS
+        | GENERATED_SELF_CORRECTION_OUTPUTS
+        | GENERATED_COGNITIVE_INHERITANCE_COMPATIBILITY_FILES
+        | generated_knowledge_paths
+    )
     require(changed and all(path.startswith(TASK_REL.as_posix() + "/") or path in allowed_external for path in changed), "changes extend outside Task217 and prescribed generated projections")
     require(not any(path.startswith("ignition/reports/evaluations/ignition-207-") for path in changed), "frozen Task207 subtree changed")
     knowledge_manifest = read_json(ROOT / KNOWLEDGE_EXPERIENCE_MANIFEST_REL)
@@ -408,6 +419,13 @@ def check_repository_closure_and_freeze(report: str) -> None:
             continue
         relative = path.removeprefix("ignition/")
         require(output_hashes.get(relative) == expected, f"knowledge-experience manifest output hash differs: {path}")
+    compatibility = freeze.get("external_generated_cognitive_inheritance_r0_compatibility", {})
+    compatibility_files = compatibility.get("files", [])
+    compatibility_hashes = {item.get("path"): item.get("sha256") for item in compatibility_files}
+    require(set(compatibility_hashes) == GENERATED_COGNITIVE_INHERITANCE_COMPATIBILITY_FILES, "Task172 R0 projection compatibility inventory differs")
+    require(compatibility.get("scope") == "hash-verified Task217 Knowledge Experience projections only", "Task172 R0 projection compatibility scope differs")
+    for path, expected in compatibility_hashes.items():
+        require((ROOT / path).is_file() and sha((ROOT / path).read_bytes()) == expected, f"Task172 R0 projection compatibility SHA-256 mismatch: {path}")
     excluded = {freeze_path.relative_to(ROOT).as_posix(), sidecar_path.relative_to(ROOT).as_posix()}
     actual_files = {path.relative_to(ROOT).as_posix() for path in TASK.rglob("*") if path.is_file()} - excluded
     inventory = {item["path"]: item["sha256"] for item in freeze.get("files", [])}

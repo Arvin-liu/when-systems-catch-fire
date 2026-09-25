@@ -386,7 +386,7 @@
       },
       {
         "path": "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
-        "sha256": "f0f25a9fac8dd169c2d589e78a20d6952d5aacbeab825716b81b6ebd99fa8aef"
+        "sha256": "8a238746f7f5e15a692a8c4640d6470250779f210ce00bcfe955a9d9927202bb"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/changes.jsonl",
@@ -398,15 +398,15 @@
       },
       {
         "path": "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
-        "sha256": "bc3133df19e1b652b320ec813ecf550820c827b574bda1c0d78892ca8e14342d"
+        "sha256": "4a085974ff84a98751b25fd964117f8ae83aa54219750f05fa8bd0475a46c210"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/manifest.json",
-        "sha256": "53b0f2fb3eb695e0a24dc8526618f98f7f9b3666ec0b2a11656bacf821e28113"
+        "sha256": "a4a089e7e0e5d377b3ddb98983a107500f6148cf2bfcf4921db97fd14913351d"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
-        "sha256": "df1854514acf00c8444f8624887ff729c825e470564a829c031c04ff7625df03"
+        "sha256": "88a08c86d2b211837f87015565a29c1a29ab420dabadb2f03a74161f919bb353"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/source-first-seen.json",
@@ -899,11 +899,11 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md",
-      "sha256": "ac04fac9cca9a9da82c2cef6f7eb3107f263e5f977ff12669390e227417265e4"
+      "sha256": "4dc370d912e221c6d7a4950ecd49c3559398b10cf37068a1257308f8dc51f8a7"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/validate_task217.py",
-      "sha256": "30e37647d69aed1c78795bebcae3fe0755fa3c77ddf73c4baa04a4994a5e4d5a"
+      "sha256": "3a7103a934667726d7ac7c24f0326424322977f7252462da46ee57cc48b7c036"
     }
   ],
   "freeze_status": "R1_REPAIRED_LOCAL_VALIDATION_PASS_EXACT_HEAD_CI_PENDING",
@@ -917,11 +917,27 @@
     "run_self_correction_check": "PASS SELF_CORRECTION_OK deltas=717 rules=10",
     "validate_foundation": "PASS CHECKS_TOTAL=63 CHECKS_PASSED=63 CHECKS_FAILED=0; ALL_FOUNDATION_VALID",
     "validate_knowledge_experience": "PASS KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=805 changes=698 layers=726 search=24887 aliases=1657 links=29606 two_click_pages=8",
-    "validate_nonfunction_claim_closure": "PASS 54/54"
+    "validate_nonfunction_claim_closure": "PASS 54/54",
+    "validate_cognitive_inheritance_r0": "PASS status=PASS final_state=READY_FOR_INDEPENDENT_EVALUATION; Task172 artifacts unchanged",
+    "test_cognitive_inheritance_r0": "PASS 8/8 tests including hash-bound Task217 projection allowance"
   },
   "method_relation_citation_required_for_primary": false,
   "primary_endpoint": "TARGET_DECISION_SUCCESS",
   "primary_endpoint_condition_neutral": true,
   "successor_outputs_exist": false,
-  "successors_launched": false
+  "successors_launched": false,
+  "external_generated_cognitive_inheritance_r0_compatibility": {
+    "scope": "hash-verified Task217 Knowledge Experience projections only",
+    "reason": "The older Task172 R0 validator used a fixed historical changed-path list that omitted deterministic Knowledge Experience shards added by Task217 closure. This compatibility allowance admits only Task217-frozen Knowledge Experience paths whose freeze sidecar and individual SHA-256 values validate; no Task172 R0 artifacts or claim records were changed.",
+    "files": [
+      {
+        "path": "ignition/tools/validate_cognitive_inheritance_r0.py",
+        "sha256": "c6516f1d5f2fd43d31d9e104152157856574008e95553022d228320728fdf38f"
+      },
+      {
+        "path": "ignition/tests/test_cognitive_inheritance_r0.py",
+        "sha256": "5543b3c98ffc5a3208b67cc09d5749f42ddc4db130fb700ad8896fe5b1d6d373"
+      }
+    ]
+  }
 }
