@@ -1,0 +1,62 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260925-217",
+  "schema_version": "ignition-217-preregistered-outcome-rule-r2",
+  "status": "FROZEN_BEFORE_OUTPUTS",
+  "primary_endpoint": "TARGET_DECISION_SUCCESS",
+  "condition_neutral": true,
+  "outputs_present_at_freeze": false,
+  "successors_launched": false,
+  "evaluators_launched": false,
+  "condition_map_released": false,
+  "runtime_selected_by_task": false,
+  "replication_unit": "INDEPENDENT_CONVERSATION",
+  "case_families": 6,
+  "replicates_per_condition": 3,
+  "conditions": 4,
+  "matched_contrasts_per_evaluator": 18,
+  "records_per_evaluator": 72,
+  "missing_or_malformed_record": "false for TARGET_DECISION_SUCCESS; retain the fixed denominator",
+  "definitions": {
+    "M": "METHOD TARGET_DECISION_SUCCESS for the matched case family and replicate",
+    "L": "LINKLESS_METHOD_CONTROL TARGET_DECISION_SUCCESS for the matched case family and replicate",
+    "F": "FACTS_ONLY TARGET_DECISION_SUCCESS for the matched case family and replicate",
+    "S": "SKILL_ONLY TARGET_DECISION_SUCCESS for the matched case family and replicate",
+    "METHOD_LINKLESS_WIN": "M and not L",
+    "METHOD_CONTRAST_SUCCESS": "M and not L and (not F or not S)",
+    "FAMILY_DEPENDENCY_REPLICATED": "METHOD_CONTRAST_SUCCESS occurs in at least two of three matched replicates"
+  },
+  "secondary_measures_do_not_enter_primary_contrasts": [
+    "METHOD_TRACE_USE_SUCCESS",
+    "FACTUAL_FIDELITY",
+    "EVIDENCE_BOUNDARY",
+    "DECISION_QUALITY",
+    "REFERENCE_INTEGRATION"
+  ],
+  "benchmark_disposition": {
+    "SUPPORTED": {
+      "both_evaluators_must_independently_meet_all": [
+        "METHOD TARGET_DECISION_SUCCESS >=16/18",
+        "FAMILY_DEPENDENCY_REPLICATED in >=5/6 families",
+        "METHOD_LINKLESS_WIN in all three replicates for >=4/6 families",
+        "zero critical-error flags across the evaluator's 18 METHOD records"
+      ]
+    },
+    "PARTIAL": {
+      "applies_only_if_SUPPORTED_not_met_and_both_evaluators_independently_meet_all": [
+        "METHOD TARGET_DECISION_SUCCESS >=14/18",
+        "FAMILY_DEPENDENCY_REPLICATED in >=3/6 families",
+        "METHOD_LINKLESS_WIN in >=10/18 matched pairs; this direct win does not require the FACTS/SKILL clause in METHOD_CONTRAST_SUCCESS"
+      ]
+    },
+    "NOT_SUPPORTED": "All other outcomes, including evaluator disagreement that prevents both evaluators meeting the same disposition."
+  },
+  "reporting": {
+    "preserve_all_raw_evaluator_sheets": true,
+    "preserve_all_72_case_outcomes_per_evaluator": true,
+    "preserve_all_18_matched_contrasts_per_evaluator": true,
+    "report_each_family_three_replicate_outcomes": true,
+    "inferential_significance_tests": false
+  },
+  "claim_ceiling": "Bounded synthetic benchmark only; no universal cognitive inheritance, causal effect across runtimes/models, cross-model transfer, R1, or canonical promotion."
+}

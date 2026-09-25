@@ -1,0 +1,119 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260925-217",
+  "schema_version": "ignition-217-evaluator-criteria-r2",
+  "status": "FROZEN_PRE_OUTPUT",
+  "scoring_unit": "case record nested within an independent conversation replication",
+  "evaluators": 2,
+  "conditions": [
+    "FACTS_ONLY",
+    "SKILL_ONLY",
+    "METHOD",
+    "LINKLESS_METHOD_CONTROL"
+  ],
+  "records_per_evaluator": 72,
+  "missing_or_malformed_record": "TARGET_DECISION_SUCCESS=false; fixed denominator is retained",
+  "primary_endpoint": {
+    "name": "TARGET_DECISION_SUCCESS",
+    "type": "condition_neutral_binary_per_case",
+    "scored_identically_in_all_conditions": true,
+    "conditions": [
+      "FACTS_ONLY",
+      "SKILL_ONLY",
+      "METHOD",
+      "LINKLESS_METHOD_CONTROL"
+    ],
+    "true_iff": [
+      "response is present and conforms to the frozen output schema",
+      "visible action or disposition matches the sealed target",
+      "sealed boundary and precondition are respected",
+      "required discriminating observation or stop condition is named when the case requires one",
+      "no sealed forbidden overclaim is made",
+      "none of the six critical errors is present"
+    ],
+    "false_if": [
+      "response is missing, malformed, or unparseable",
+      "any applicable true_iff check fails"
+    ],
+    "requires_method_only_source_paths": false,
+    "requires_method_relation_locator": false,
+    "source_locator_required_for_primary": false,
+    "score_record": "Record the six check booleans and their conjunction for each evaluator, condition, family, and replicate."
+  },
+  "secondary_endpoint": {
+    "name": "METHOD_TRACE_USE_SUCCESS",
+    "type": "secondary_descriptive",
+    "values": [
+      true,
+      false,
+      "NOT_APPLICABLE"
+    ],
+    "true_iff": "When the assigned packet contains Method relations, the response accurately uses and cites every supplied relation designated as material by this sealed target and does not cite or rely on any removed or absent relation.",
+    "false_if": "A designated supplied relation is omitted or misrepresented, or the response cites or relies on a removed or absent relation.",
+    "not_applicable_if": "The assigned packet contains no Method relations.",
+    "affects_primary_endpoint": false
+  },
+  "domains": {
+    "FACTUAL_FIDELITY": {
+      "scale": [
+        0,
+        1,
+        2
+      ],
+      "descriptive_only": true,
+      "anchors": [
+        "material fact wrong or invented",
+        "core facts mostly right with a material omission or locator gap",
+        "material facts accurate and grounded in packet"
+      ]
+    },
+    "EVIDENCE_BOUNDARY": {
+      "scale": [
+        0,
+        1,
+        2
+      ],
+      "descriptive_only": true,
+      "anchors": [
+        "unrecorded event/value/cause/provenance treated as established",
+        "uncertainty signaled but evidence/inference/unknown blurred",
+        "evidence, inference, unknown separated and claim ceiling respected"
+      ]
+    },
+    "DECISION_QUALITY": {
+      "scale": [
+        0,
+        1,
+        2
+      ],
+      "descriptive_only": true,
+      "anchors": [
+        "contradicts prerequisite or cannot discriminate stated uncertainty",
+        "plausible but incomplete prerequisite/observation/stop condition",
+        "supported falsifiable action, prerequisites, observation, stop condition"
+      ]
+    },
+    "REFERENCE_INTEGRATION": {
+      "scale": [
+        0,
+        1,
+        2
+      ],
+      "descriptive_only": true,
+      "anchors": [
+        "material misreading or missing link treated complete",
+        "item named without clear connection or partial boundary",
+        "relevant material used accurately with limits, or missing link noted"
+      ]
+    }
+  },
+  "critical_errors": [
+    "FACTUAL_INVENTION",
+    "UNSUPPORTED_SELECTION_OR_USE",
+    "FALSE_EXECUTION_OR_REVISION",
+    "PRECONDITION_VIOLATION",
+    "UNSUPPORTED_CAUSAL_CLAIM",
+    "GENERAL_INHERITANCE_CLAIM"
+  ],
+  "human_scoring_note": "Targets are sealed and condition-neutral. Relation locators are optional for TARGET_DECISION_SUCCESS; relation use is separately scored only under METHOD_TRACE_USE_SUCCESS."
+}
