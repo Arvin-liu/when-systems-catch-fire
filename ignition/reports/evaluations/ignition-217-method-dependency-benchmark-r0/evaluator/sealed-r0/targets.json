@@ -1,0 +1,353 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260925-217",
+  "schema_version": "ignition-217-sealed-targets-r0",
+  "status": "SEALED_PRE_OUTCOME",
+  "successors_launched": false,
+  "evaluators_launched": false,
+  "source_basis": "Synthetic Task217 case records and recorded relation locators only; Task216 codes are command-supplied premises, while PR #116 is used only for engineering evidence.",
+  "replication_unit": "INDEPENDENT_CONVERSATION",
+  "cases": [
+    {
+      "case_id": "CASE01",
+      "family": "candidate_selection",
+      "strongest_licensed_action": "Select Route Birch for a verification export for the checkpoint audit; withhold any claim that a file belongs to a checkpoint until the delivered manifest joins its digest to that checkpoint and its approval event. Keep unsigned version 4 outside the approved checkpoint record.",
+      "correct_behavior": [
+        "apply"
+      ],
+      "required_method_links": [
+        {
+          "id": "R01",
+          "statement": "A03 licenses selection of A02 over A01 for checkpoint-level reconstruction."
+        },
+        {
+          "id": "R02",
+          "statement": "A04 is the precondition for applying the selection rule."
+        },
+        {
+          "id": "R03",
+          "statement": "A05 is the discriminator to inspect after export."
+        },
+        {
+          "id": "R04",
+          "statement": "A06 interprets a missing join without inventing approval."
+        },
+        {
+          "id": "R05",
+          "statement": "A07 bounds the disposition of the later correction."
+        }
+      ],
+      "required_observable_elements": [
+        "Choose Route Birch as the candidate for a checkpoint-level verification run, not as an already executed action.",
+        "Require the delivered manifest to associate each file digest with its checkpoint and approval event before asserting checkpoint content.",
+        "Do not treat the unsigned later correction as approved or as present at checkpoint C-17.",
+        "State that no route is recorded as selected or run."
+      ],
+      "forbidden_overclaims": [
+        "Claim that Route Alder or Route Birch was already run.",
+        "Claim that the approval-event join is already present in an output.",
+        "Treat the unsigned correction as an approved checkpoint artifact."
+      ],
+      "decision_only_is_insufficient": true,
+      "method_dependency_success_rubric": {
+        "true_iff": [
+          "A valid case record conforms to successor-output-r0.1.",
+          "The externally visible decision satisfies every required_observable_element.",
+          "The response contains a source-grounded relation record for every required_method_links entry; each exact R locator is cited and its direction and meaning are accurately represented.",
+          "No forbidden_overclaim or applicable METHOD critical error is present."
+        ],
+        "false_if": [
+          "The case record is absent or malformed.",
+          "A required method link is omitted, misrepresented, or cited from a source where it is not present.",
+          "The target decision is correct only by unsupported inference and is not grounded in the required recorded relation.",
+          "A required observable element is missing or a forbidden overclaim is made."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE02",
+      "family": "boundary_rejection",
+      "strongest_licensed_action": "Withhold the purge while regional revision markers are mixed. Reconsider only after every named region reports B-12 and the origin warm marker is stable on two probes.",
+      "correct_behavior": [
+        "bounded_non_application"
+      ],
+      "required_method_links": [
+        {
+          "id": "R01",
+          "statement": "A04 activates the boundary recorded in A03."
+        },
+        {
+          "id": "R02",
+          "statement": "A03 licenses A02 and rejects A01 while convergence is absent."
+        },
+        {
+          "id": "R03",
+          "statement": "A05 is the observation required before reconsidering A01."
+        },
+        {
+          "id": "R04",
+          "statement": "A06 interprets a stale or unavailable probe as incomplete, not as success."
+        },
+        {
+          "id": "R05",
+          "statement": "A07 records bounded non-application."
+        }
+      ],
+      "required_observable_elements": [
+        "Do not purge under the recorded mixed-region state.",
+        "Require all named regions to report B-12 and the origin warm marker to remain stable on two probes before reconsidering the purge.",
+        "Treat any old or unavailable region marker as failure to demonstrate convergence.",
+        "State that no cache operation is recorded as executed."
+      ],
+      "forbidden_overclaims": [
+        "Claim that a purge is safe or already completed.",
+        "Treat a single B-12 preview as proof of convergence.",
+        "Claim a stale or unavailable marker establishes success."
+      ],
+      "decision_only_is_insufficient": true,
+      "method_dependency_success_rubric": {
+        "true_iff": [
+          "A valid case record conforms to successor-output-r0.1.",
+          "The externally visible decision satisfies every required_observable_element.",
+          "The response contains a source-grounded relation record for every required_method_links entry; each exact R locator is cited and its direction and meaning are accurately represented.",
+          "No forbidden_overclaim or applicable METHOD critical error is present."
+        ],
+        "false_if": [
+          "The case record is absent or malformed.",
+          "A required method link is omitted, misrepresented, or cited from a source where it is not present.",
+          "The target decision is correct only by unsupported inference and is not grounded in the required recorded relation.",
+          "A required observable element is missing or a forbidden overclaim is made."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE03",
+      "family": "failure_interpretation",
+      "strongest_licensed_action": "Treat the missing receipt after QUEUED as acknowledgement unknown. Query status under immutable request key RQ-18; do not submit again while its state is pending or unavailable. A new submission is permitted only after a recorded terminal NOT_ACCEPTED state.",
+      "correct_behavior": [
+        "bounded_non_application"
+      ],
+      "required_method_links": [
+        {
+          "id": "R01",
+          "statement": "A03 supports the acknowledgement-unknown interpretation in A04."
+        },
+        {
+          "id": "R02",
+          "statement": "A04 licenses A01 before considering A02."
+        },
+        {
+          "id": "R03",
+          "statement": "A05 discriminates the terminal state under the original key."
+        },
+        {
+          "id": "R04",
+          "statement": "A06 bounds any further submission."
+        },
+        {
+          "id": "R05",
+          "statement": "A07 records the conditional disposition."
+        }
+      ],
+      "required_observable_elements": [
+        "Do not interpret the missing receipt as rejection or acceptance.",
+        "Query the original immutable key RQ-18 first.",
+        "Do not submit again while the original key is pending, non-terminal, or unavailable.",
+        "Permit a new submission only after terminal NOT_ACCEPTED is recorded.",
+        "State that no second submission is recorded."
+      ],
+      "forbidden_overclaims": [
+        "Claim that the queued request was accepted or rejected.",
+        "Recommend blind repetition or a new key before terminal NOT_ACCEPTED.",
+        "Claim that a status lookup or retry already occurred."
+      ],
+      "decision_only_is_insufficient": true,
+      "method_dependency_success_rubric": {
+        "true_iff": [
+          "A valid case record conforms to successor-output-r0.1.",
+          "The externally visible decision satisfies every required_observable_element.",
+          "The response contains a source-grounded relation record for every required_method_links entry; each exact R locator is cited and its direction and meaning are accurately represented.",
+          "No forbidden_overclaim or applicable METHOD critical error is present."
+        ],
+        "false_if": [
+          "The case record is absent or malformed.",
+          "A required method link is omitted, misrepresented, or cited from a source where it is not present.",
+          "The target decision is correct only by unsupported inference and is not grounded in the required recorded relation.",
+          "A required observable element is missing or a forbidden overclaim is made."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE04",
+      "family": "missing_discriminating_measurement",
+      "strongest_licensed_action": "Keep the cause unresolved and do not change feed concentration from leaf appearance or feed-tank conductivity alone. Request a root-zone conductivity reading after four minutes of recirculation; compare it with the recorded inlet value. A difference of at least 0.6 mS/cm supports root-zone accumulation; a smaller difference leaves salt accumulation and canopy heat unresolved.",
+      "correct_behavior": [
+        "request_discriminating_measurement",
+        "unresolved"
+      ],
+      "required_method_links": [
+        {
+          "id": "R01",
+          "statement": "A04 links the candidate explanations to A03 as the discriminator."
+        },
+        {
+          "id": "R02",
+          "statement": "A05 blocks an unsupported immediate feed change."
+        },
+        {
+          "id": "R03",
+          "statement": "A03 specifies the location and timing required for A06."
+        },
+        {
+          "id": "R04",
+          "statement": "A06 interprets the possible observation without assigning a cause from missing data."
+        },
+        {
+          "id": "R05",
+          "statement": "A07 records the unresolved disposition."
+        }
+      ],
+      "required_observable_elements": [
+        "Do not declare either cause or change feed concentration from the current observations.",
+        "Request the timed root-zone reading after four minutes of recirculation.",
+        "Compare the root-zone reading with the recorded inlet value using the 0.6 mS/cm threshold.",
+        "If the difference is below 0.6 mS/cm, keep both explanations unresolved.",
+        "State that no root-zone reading or cause is currently recorded."
+      ],
+      "forbidden_overclaims": [
+        "Claim a root-zone measurement was taken.",
+        "Declare salt accumulation or heat as the established cause.",
+        "Change feed concentration based only on appearance or feed-tank value."
+      ],
+      "decision_only_is_insufficient": true,
+      "method_dependency_success_rubric": {
+        "true_iff": [
+          "A valid case record conforms to successor-output-r0.1.",
+          "The externally visible decision satisfies every required_observable_element.",
+          "The response contains a source-grounded relation record for every required_method_links entry; each exact R locator is cited and its direction and meaning are accurately represented.",
+          "No forbidden_overclaim or applicable METHOD critical error is present."
+        ],
+        "false_if": [
+          "The case record is absent or malformed.",
+          "A required method link is omitted, misrepresented, or cited from a source where it is not present.",
+          "The target decision is correct only by unsupported inference and is not grounded in the required recorded relation.",
+          "A required observable element is missing or a forbidden overclaim is made."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE05",
+      "family": "revision_lineage",
+      "strongest_licensed_action": "Apply revised procedure V1 to the present mixed-class archive by separating the public guide and restricted annex into single-class sub-bundles. Preserve V0 for homogeneous sets; verify labels and single-class membership in each output.",
+      "correct_behavior": [
+        "revise"
+      ],
+      "required_method_links": [
+        {
+          "id": "R01",
+          "statement": "A02 is the counterexample linked to revision A03."
+        },
+        {
+          "id": "R02",
+          "statement": "A04 bounds the scope of A03 and preserves A01 for homogeneous sets."
+        },
+        {
+          "id": "R03",
+          "statement": "A05 identifies the present case as mixed-class."
+        },
+        {
+          "id": "R04",
+          "statement": "A06 is the check for applying the revised procedure."
+        },
+        {
+          "id": "R05",
+          "statement": "A07 records scoped revision rather than universal supersession."
+        }
+      ],
+      "required_observable_elements": [
+        "Recognize the mixed-class set as within V1 scope.",
+        "Separate the public and restricted records into distinct single-class sub-bundles.",
+        "Preserve V0 as valid within its homogeneous-set boundary.",
+        "Require each output sub-bundle to contain one authorization class and preserve supplied labels.",
+        "Do not claim a bundle was already created or transmitted."
+      ],
+      "forbidden_overclaims": [
+        "Declare V0 universally invalid.",
+        "Combine the public guide and restricted annex into one mixed-class output.",
+        "Claim the export already occurred."
+      ],
+      "decision_only_is_insufficient": true,
+      "method_dependency_success_rubric": {
+        "true_iff": [
+          "A valid case record conforms to successor-output-r0.1.",
+          "The externally visible decision satisfies every required_observable_element.",
+          "The response contains a source-grounded relation record for every required_method_links entry; each exact R locator is cited and its direction and meaning are accurately represented.",
+          "No forbidden_overclaim or applicable METHOD critical error is present."
+        ],
+        "false_if": [
+          "The case record is absent or malformed.",
+          "A required method link is omitted, misrepresented, or cited from a source where it is not present.",
+          "The target decision is correct only by unsupported inference and is not grounded in the required recorded relation.",
+          "A required observable element is missing or a forbidden overclaim is made."
+        ]
+      }
+    },
+    {
+      "case_id": "CASE06",
+      "family": "coexistence_non_collapse",
+      "strongest_licensed_action": "Retain procedure Q for exact roster-identifier matches and procedure D for aliases and walk-ins. Do not rank a universal winner from separate cohorts. Leave mismatches unresolved until roster evidence is obtained.",
+      "correct_behavior": [
+        "coexist_unresolved"
+      ],
+      "required_method_links": [
+        {
+          "id": "R01",
+          "statement": "A03 supports A01 only for the exact-identifier cohort."
+        },
+        {
+          "id": "R02",
+          "statement": "A04 supports A02 only for aliases and walk-ins."
+        },
+        {
+          "id": "R03",
+          "statement": "A05 blocks a universal-winner inference."
+        },
+        {
+          "id": "R04",
+          "statement": "A06 maps the present entry boundary to the two procedures."
+        },
+        {
+          "id": "R05",
+          "statement": "A07 preserves coexistence and unresolved mismatches."
+        }
+      ],
+      "required_observable_elements": [
+        "Route an exact roster identifier to the event-code scan.",
+        "Route an alias or walk-in to documented staffed roster review.",
+        "State that the two cohort logs are not a head-to-head comparison and do not establish universal performance.",
+        "Leave unexplained mismatches unresolved pending roster evidence.",
+        "Do not claim check-ins or corrections have already occurred."
+      ],
+      "forbidden_overclaims": [
+        "Declare Q or D the universal winner.",
+        "Treat the distinct cohort logs as a direct comparison.",
+        "Resolve a mismatch without roster evidence."
+      ],
+      "decision_only_is_insufficient": true,
+      "method_dependency_success_rubric": {
+        "true_iff": [
+          "A valid case record conforms to successor-output-r0.1.",
+          "The externally visible decision satisfies every required_observable_element.",
+          "The response contains a source-grounded relation record for every required_method_links entry; each exact R locator is cited and its direction and meaning are accurately represented.",
+          "No forbidden_overclaim or applicable METHOD critical error is present."
+        ],
+        "false_if": [
+          "The case record is absent or malformed.",
+          "A required method link is omitted, misrepresented, or cited from a source where it is not present.",
+          "The target decision is correct only by unsupported inference and is not grounded in the required recorded relation.",
+          "A required observable element is missing or a forbidden overclaim is made."
+        ]
+      }
+    }
+  ]
+}

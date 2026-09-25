@@ -1,0 +1,98 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260925-217",
+  "step": "Step05",
+  "schema_version": "ignition-217-evaluator-criteria-r1",
+  "status": "PREPARATION_ONLY",
+  "scope": "OPAQUE_PACKET_OUTPUT_RATING_ONLY",
+  "replication_unit": "INDEPENDENT_CONVERSATION",
+  "case_records_per_conversation": 6,
+  "future_conversations": 12,
+  "future_conversations_per_condition": 3,
+  "conditions": [
+    "FACTS_ONLY",
+    "SKILL_ONLY",
+    "METHOD",
+    "LINKLESS_METHOD_CONTROL"
+  ],
+  "independent_evaluators": 2,
+  "condition_mapping_release": "NOT_AUTHORIZED_IN_TASK217",
+  "domains": {
+    "FACTUAL_FIDELITY": {
+      "scale": [
+        0,
+        1,
+        2
+      ]
+    },
+    "EVIDENCE_BOUNDARY": {
+      "scale": [
+        0,
+        1,
+        2
+      ]
+    },
+    "DECISION_QUALITY": {
+      "scale": [
+        0,
+        1,
+        2
+      ]
+    },
+    "REFERENCE_INTEGRATION": {
+      "scale": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "primary_endpoint": {
+    "name": "METHOD_DEPENDENCY_SUCCESS",
+    "scale": [
+      false,
+      true
+    ],
+    "unit": "case record nested within independent conversation",
+    "definition": "Per-case binary target requiring the strongest licensed decision, its evidence boundary, and every sealed case-specific Method relation to be accurately represented with exact source locators.",
+    "target_file": "evaluator/sealed-r0/targets.json",
+    "malformed_or_missing_record": "FALSE",
+    "hidden_chain_of_thought_required": false
+  },
+  "method_critical_error_flags": [
+    "FACTUAL_INVENTION",
+    "UNSUPPORTED_SELECTION_OR_USE",
+    "FALSE_EXECUTION_OR_REVISION",
+    "PRECONDITION_VIOLATION",
+    "UNSUPPORTED_CAUSAL_CLAIM",
+    "GENERAL_INHERITANCE_CLAIM"
+  ],
+  "method_success_requires_zero_critical_errors_on_that_record": true,
+  "scoring_instructions": {
+    "score_all_four_domains_per_case": true,
+    "method_dependency_is_not_a_domain_mean": true,
+    "source_locators_required_for_assertions": true,
+    "evaluate_only_externally_visible_output_and_frozen_input": true,
+    "do_not_use_hidden_chain_of_thought": true,
+    "keep_evaluator_sheets_independent_and_locked_before_map_release": true,
+    "retain_disagreement_reconciliation_without_overwriting_original_sheets": true
+  },
+  "reporting": {
+    "case_records_per_evaluator": 72,
+    "conversation_is_replication_unit": true,
+    "six_case_records_are_nested_not_independent": true,
+    "preserve_all_raw_case_outcomes_and_matched_contrasts": true,
+    "four_domain_case_scores_and_conversation_means_are_descriptive_secondary_summaries": true,
+    "inferential_significance_test": "NONE"
+  },
+  "claim_limits": [
+    "No universal cognitive inheritance claim.",
+    "No causal method-artifact effect across runtimes or models.",
+    "No cross-model transfer or R1 authorization.",
+    "No canonical promotion."
+  ],
+  "successors": "NOT_RUN",
+  "evaluators": "NOT_RUN",
+  "canonical_claim_ids": [],
+  "canonical_promotion": "NONE"
+}

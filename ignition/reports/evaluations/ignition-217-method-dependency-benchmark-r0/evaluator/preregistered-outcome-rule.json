@@ -1,0 +1,59 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260925-217",
+  "schema_version": "ignition-217-preregistered-outcome-rule-r0",
+  "status": "FROZEN_BEFORE_OUTPUTS",
+  "outputs_present_at_freeze": false,
+  "primary_endpoint": "METHOD_DEPENDENCY_SUCCESS",
+  "evaluators": 2,
+  "matched_contrasts_per_evaluator": 18,
+  "matching_keys": [
+    "case_id",
+    "replicate"
+  ],
+  "replication_unit": "INDEPENDENT_CONVERSATION",
+  "definitions": {
+    "M": "METHOD condition METHOD_DEPENDENCY_SUCCESS for the matched case family and replicate.",
+    "L": "LINKLESS_METHOD_CONTROL condition METHOD_DEPENDENCY_SUCCESS for the matched case family and replicate.",
+    "F": "FACTS_ONLY condition METHOD_DEPENDENCY_SUCCESS for the matched case family and replicate.",
+    "S": "SKILL_ONLY condition METHOD_DEPENDENCY_SUCCESS for the matched case family and replicate.",
+    "METHOD_LINKLESS_WIN": "true iff M is true and L is false.",
+    "METHOD_CONTRAST_SUCCESS": "true iff M is true, L is false, and at least one of F or S is false.",
+    "FAMILY_DEPENDENCY_REPLICATED": "true iff METHOD_CONTRAST_SUCCESS occurs in at least 2 of 3 matched replicates for that family."
+  },
+  "benchmark_disposition": {
+    "SUPPORTED": {
+      "both_evaluators_must_independently_meet_all": [
+        "METHOD success at least 16/18.",
+        "At least 5/6 families are FAMILY_DEPENDENCY_REPLICATED.",
+        "At least 4/6 families show METHOD_LINKLESS_WIN in all 3 replicates.",
+        "Zero METHOD critical-error flags across all 18 METHOD records: FACTUAL_INVENTION, UNSUPPORTED_SELECTION_OR_USE, FALSE_EXECUTION_OR_REVISION, PRECONDITION_VIOLATION, UNSUPPORTED_CAUSAL_CLAIM, GENERAL_INHERITANCE_CLAIM."
+      ]
+    },
+    "PARTIAL": {
+      "eligible_only_if_SUPPORTED_not_met": true,
+      "both_evaluators_must_independently_meet_all": [
+        "METHOD success at least 14/18.",
+        "At least 3/6 families are FAMILY_DEPENDENCY_REPLICATED.",
+        "METHOD_LINKLESS_WIN in at least 10/18 matched case-family/replicate pairs."
+      ],
+      "method_linkless_win_is_direct_M_and_not_L_not_full_METHOD_CONTRAST_SUCCESS": true
+    },
+    "NOT_SUPPORTED": "All other outcomes, including evaluator disagreement across disposition thresholds."
+  },
+  "denominators_fixed": {
+    "case_families": 6,
+    "replicates_per_condition": 3,
+    "matched_pairs_per_evaluator": 18,
+    "missing_or_malformed_records": "Count as false; do not reduce denominator."
+  },
+  "analysis_limits": [
+    "Preserve raw matched outcomes and both evaluator sheets.",
+    "The six cases within one conversation are nested observations, never independent replicates.",
+    "Report descriptive raw counts; calculate no inferential significance test.",
+    "SUPPORTED is limited to this bounded synthetic method-dependency benchmark and does not establish universal inheritance, a causal artifact effect, cross-model transfer, R1, or canonical promotion."
+  ],
+  "future_map_release": "Not performed by Task217; requires later explicit authority after evaluator sheets are locked.",
+  "successors_launched": false,
+  "evaluators_launched": false
+}
