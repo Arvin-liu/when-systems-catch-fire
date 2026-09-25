@@ -31,6 +31,11 @@ GENERATED_NONFUNCTION_OUTPUTS = {
     "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
     "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
 }
+GENERATED_HUMAN_RESULTS_OUTPUTS = {
+    "ignition/RESULTS/CHRONOLOGY.md",
+    "ignition/data/governance/human-results/census.json",
+    "ignition/data/governance/human-results/result-ledger.jsonl",
+}
 
 
 def require(value: bool, message: str) -> None:
@@ -330,7 +335,7 @@ def check_no_outputs(targets: dict, outcome: dict) -> None:
 
 def check_repository_closure_and_freeze(report: str) -> None:
     changed = subprocess.check_output(["git", "diff", "--name-only", BASE, "HEAD"], cwd=ROOT, text=True).splitlines()
-    allowed_external = {PATH_MANIFEST_REL} | GENERATED_NONFUNCTION_OUTPUTS
+    allowed_external = {PATH_MANIFEST_REL} | GENERATED_NONFUNCTION_OUTPUTS | GENERATED_HUMAN_RESULTS_OUTPUTS
     require(changed and all(path.startswith(TASK_REL.as_posix() + "/") or path in allowed_external for path in changed), "changes extend outside Task217 and prescribed generated projections")
     require(not any(path.startswith("ignition/reports/evaluations/ignition-207-") for path in changed), "frozen Task207 subtree changed")
 
@@ -350,6 +355,14 @@ def check_repository_closure_and_freeze(report: str) -> None:
     require(external.get("path") == PATH_MANIFEST_REL, "external generated path-index reference missing")
     require(external.get("sha256") == sha(path_manifest_path.read_bytes()), "external path-index hash mismatch")
     require(external.get("task217_entry_count") == len(task_paths) and external.get("category") == "EVALUATION_EVIDENCE", "external Task217 path-index count/category mismatch")
+    human_results = freeze.get("external_generated_human_results", {})
+    human_result_files = human_results.get("files", [])
+    human_result_hashes = {item.get("path"): item.get("sha256") for item in human_result_files}
+    require(set(human_result_hashes) == GENERATED_HUMAN_RESULTS_OUTPUTS, "external generated human-results inventory differs")
+    require(human_results.get("generator") == "python3 tools/governance/build_human_results.py", "external generated human-results generator differs")
+    require(human_results.get("new_task217_source_documents") == 80, "external generated human-results Task217 source count differs")
+    for path, expected in human_result_hashes.items():
+        require((ROOT / path).is_file() and sha((ROOT / path).read_bytes()) == expected, f"external generated human-results SHA-256 mismatch: {path}")
     excluded = {freeze_path.relative_to(ROOT).as_posix(), sidecar_path.relative_to(ROOT).as_posix()}
     actual_files = {path.relative_to(ROOT).as_posix() for path in TASK.rglob("*") if path.is_file()} - excluded
     inventory = {item["path"]: item["sha256"] for item in freeze.get("files", [])}

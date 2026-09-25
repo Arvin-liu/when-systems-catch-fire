@@ -8,7 +8,7 @@
   "evaluator_outputs_exist": false,
   "successor_outputs_exist": false,
   "evaluators_launched": false,
-  "created_at_utc": "2026-09-25T14:13:20+00:00",
+  "created_at_utc": "2026-09-25T15:29:29+00:00",
   "freeze_status": "R1_REPAIRED_LOCAL_EXACT_HEAD_CI_PENDING",
   "primary_endpoint": "TARGET_DECISION_SUCCESS",
   "primary_endpoint_condition_neutral": true,
@@ -459,11 +459,11 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md",
-      "sha256": "9cd02640b2efad5259e9ea2dadb91a1889566f709e76da93290d1b8d3d5fde23"
+      "sha256": "b6e3f547fb770e4d3b4e9c2481f0f870e8a316810fadb28f38ddc49bca9a3d9c"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/validate_task217.py",
-      "sha256": "b6ec3a110a814c2345cfc4213b8f582a5781d1bb8ff8c965fc2632294965e560"
+      "sha256": "1ab0ac41af37a0c388f32bfa0115856f0777aa5ba443ca8c32dab25f262ddaba"
     }
   ],
   "local_validation_results": {
@@ -489,5 +489,25 @@
       "path": "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
       "reason": "refreshed the generated tracked-file total"
     }
-  ]
+  ],
+  "external_generated_human_results": {
+    "generator": "python3 tools/governance/build_human_results.py",
+    "check": "python3 tools/governance/build_human_results.py --check passed; HUMAN_RESULTS_OK records=757",
+    "new_task217_source_documents": 80,
+    "reason": "The reports/ source root includes the 80 newly indexed Task217 evaluation-subtree Markdown documents; outputs remain navigation-only under the configured claim ceiling.",
+    "files": [
+      {
+        "path": "ignition/RESULTS/CHRONOLOGY.md",
+        "sha256": "cf6a089acfeb3eec249ec30a4acdbfec0e87bcaddf357b4e65fa8531f48c8d6f"
+      },
+      {
+        "path": "ignition/data/governance/human-results/census.json",
+        "sha256": "f920c455d159557865b13e3699c773d4749636c705d5d6d834776ed18ff1373d"
+      },
+      {
+        "path": "ignition/data/governance/human-results/result-ledger.jsonl",
+        "sha256": "073be07e060221013bdac778b1375a7b364f02f341cd0000b7779b32814b289b"
+      }
+    ]
+  }
 }
