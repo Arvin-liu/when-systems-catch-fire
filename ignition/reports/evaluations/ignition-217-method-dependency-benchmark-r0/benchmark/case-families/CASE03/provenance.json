@@ -1,0 +1,14 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260925-217",
+  "case_id": "CASE03",
+  "synthetic": true,
+  "source_record": "synthetic://ignition-217/CASE03/export-queue-log",
+  "facts_path": "benchmark/case-families/CASE03/facts.md",
+  "facts_sha256": "7e70b476d100dd8674fd2583ad293313c8f34795c54a0a41d510087b05f629e7",
+  "locator_scheme": "stable fact IDs in square brackets",
+  "recorded_facts_only": true,
+  "method_selection_or_linkage_present": false,
+  "selection_use_outcome_or_revision_executed": false,
+  "uncertainty": "Synthetic case record only; no external truth or causal claim."
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260925-217",
+  "case_id": "CASE02",
+  "synthetic": true,
+  "source_record": "synthetic://ignition-217/CASE02/regional-edge-incident",
+  "facts_path": "benchmark/case-families/CASE02/facts.md",
+  "facts_sha256": "0130f8ba40c21d883eb34961807d0d5dccf45e98eddda8fbbe175b379e9b880a",
+  "locator_scheme": "stable fact IDs in square brackets",
+  "recorded_facts_only": true,
+  "method_selection_or_linkage_present": false,
+  "selection_use_outcome_or_revision_executed": false,
+  "uncertainty": "Synthetic case record only; no external truth or causal claim."
+}

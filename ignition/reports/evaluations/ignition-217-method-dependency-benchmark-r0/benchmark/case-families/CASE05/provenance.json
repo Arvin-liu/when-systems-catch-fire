@@ -1,0 +1,14 @@
+{
+  "artifact_type": "EVALUATION_EVIDENCE",
+  "task_id": "IGNITION-20260925-217",
+  "case_id": "CASE05",
+  "synthetic": true,
+  "source_record": "synthetic://ignition-217/CASE05/archive-policy-case",
+  "facts_path": "benchmark/case-families/CASE05/facts.md",
+  "facts_sha256": "37fa7ec1fe8aa26ec4502574391067ac5f1dc390e25f5845febb0004027217f0",
+  "locator_scheme": "stable fact IDs in square brackets",
+  "recorded_facts_only": true,
+  "method_selection_or_linkage_present": false,
+  "selection_use_outcome_or_revision_executed": false,
+  "uncertainty": "Synthetic case record only; no external truth or causal claim."
+}
