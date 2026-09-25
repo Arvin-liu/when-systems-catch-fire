@@ -24,7 +24,7 @@
     "S": "SKILL_ONLY TARGET_DECISION_SUCCESS for the matched case family and replicate",
     "METHOD_LINKLESS_WIN": "M and not L",
     "METHOD_CONTRAST_SUCCESS": "M and not L and (not F or not S)",
-    "FAMILY_DEPENDENCY_REPLICATED": "METHOD_CONTRAST_SUCCESS occurs in at least two of three matched replicates"
+    "FAMILY_DEPENDENCY_REPLICATED": "METHOD_CONTRAST_SUCCESS in >=2 of 3 replicates"
   },
   "secondary_measures_do_not_enter_primary_contrasts": [
     "METHOD_TRACE_USE_SUCCESS",

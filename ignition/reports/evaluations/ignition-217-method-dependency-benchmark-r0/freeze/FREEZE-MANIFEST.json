@@ -1,28 +1,41 @@
 {
   "artifact_type": "TASK_FREEZE_MANIFEST",
   "branch": "work/IGNITION-20260925-217-method-dependency-benchmark-r0",
-  "command_blob_sha": "e142fd490cc73d8bf2a3c6a539e319124434012c",
-  "command_path": "Arvin-liu/1111:agent-commands/IGNITION-20260925-217-METHOD-DEPENDENCY-BENCHMARK-R0.md",
+  "command_blob_sha": "86dc6df5c40ae27375773f58f6d339abc8003753",
+  "command_path": "Arvin-liu/1111:agent-commands/IGNITION-20260925-217-R1-BENCHMARK-VALIDITY-REPAIR.md",
   "condition_map_released": false,
-  "created_at_utc": "2026-09-25T10:59:11+00:00",
+  "successors_launched": false,
   "evaluator_outputs_exist": false,
+  "successor_outputs_exist": false,
+  "evaluators_launched": false,
+  "created_at_utc": "2026-09-25T13:53:14+00:00",
+  "freeze_status": "R1_REPAIR_PENDING_REPOSITORY_CLOSURE",
+  "primary_endpoint": "TARGET_DECISION_SUCCESS",
+  "primary_endpoint_condition_neutral": true,
+  "method_relation_citation_required_for_primary": false,
+  "linkless_two_way_ambiguity_proven": "6/6",
+  "future_task_count": 12,
   "excluded_self_references": [
     "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.json",
     "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.sha256"
   ],
   "external_generated_path_index": {
     "category": "EVALUATION_EVIDENCE",
-    "check": "ignition/tools/foundation/validate_repository_path_classification.py --check passed 10/10",
+    "check": "pending prescribed --check after R1 repository path generator",
     "generator": "ignition/tools/foundation/validate_repository_path_classification.py --generate",
     "path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
     "sha256": "82ddc45ab0806651af51ebacd4148e10f7116a153893c037618581cca2d90ceb",
-    "task217_entry_count": 94
+    "task217_entry_count": 111
   },
-  "file_count": 92,
+  "file_count": 109,
   "files": [
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/ARCHITECTURE-QUESTION.md",
       "sha256": "4470a5fcf9c236f542f56098cdc673cc7ce57430f7e2118f17a5c0ebb84b5e3a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/OWNER-REVIEW-R1.md",
+      "sha256": "eef17147e4f7633a8eedab1a9a8bd3e112f07cac5e869af6e6a9de544b8c942b"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/README.md",
@@ -34,199 +47,223 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/case-design.md",
-      "sha256": "b7da28a5db746431084e2e8570abee57d063ccf6de2235317b521c4d087803b6"
+      "sha256": "a03c9085830e92fff4f5d71a401acacf4c15256e7a23c5d187f7dc53f129df19"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/facts.md",
-      "sha256": "e8bba65cf6c9c485aaa54c3cf3630939ad58240db1d5da6fb3b80cb6a079bf75"
+      "sha256": "9e795bf00455974a546fa1c8aff4b39d8796d2c88e2c09c843a9b4d56358ff90"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/provenance.json",
-      "sha256": "f398567099bbf9a4a68f6598815c1b0d74f0c39252314e94805c92f87a941773"
+      "sha256": "3e67b960e105817ff0dc17fc00e745f462e711505815219d3ba72c4e048eff96"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/case-design.md",
-      "sha256": "af481d4d3aac5c497e9ddc5d3305cfc2a0cf7cd5f7346fefcbe92f17647484dc"
+      "sha256": "7f1ac164891b819f2094b4f94471e8ef29f04a6eb5fc9edf2b8010024fe65877"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/facts.md",
-      "sha256": "0130f8ba40c21d883eb34961807d0d5dccf45e98eddda8fbbe175b379e9b880a"
+      "sha256": "ad25047c5543769e5022f88115a1edd324a8dbfe83579b0ce088fb38ce7b28e8"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/provenance.json",
-      "sha256": "fb066c86958c183d2b44c84efb4ffe3531b27cbf5f5995d8ce94b920086cfecd"
+      "sha256": "e32c64d356dd3bb6ce5c46e3e4e66c60fce2e25579643802aa437ba994906105"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE03/case-design.md",
-      "sha256": "8bb981b81544e3a3e4cf413650a070527f975313ff4cd3dcd85122fe67eefc68"
+      "sha256": "8189d6067de333cd2d5e01831d8e068b3bf940c74127a91c0540f26bfe8935f6"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE03/facts.md",
-      "sha256": "7e70b476d100dd8674fd2583ad293313c8f34795c54a0a41d510087b05f629e7"
+      "sha256": "175bfb3f2468f2fed0cec4508e971405172bc857a8b13377329cf609dd3a8689"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE03/provenance.json",
-      "sha256": "a10270dbf487a2187f1e4e436f6f1a7b2914deb3d292543217524ca99cdacdbe"
+      "sha256": "5898e2cf2ebc0448203efea1bbb2b4b4e4d1d11ff1d7812dc3adb0ab26966cfb"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE04/case-design.md",
-      "sha256": "b9f6397bb6b02525590256f0fc3eda01e379d1caa36f80da74be5ab1dd48b62a"
+      "sha256": "b701e12419a42ca18076408d5cef9ee1c1ac5c1c1e7e7be932993592cd9df732"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE04/facts.md",
-      "sha256": "c140e24c339990df2ddf10a7f94496dec3fbb3d1b4fc4ccc2eed4bc22fc9e9fa"
+      "sha256": "93bb8abab7be72380dd48451a37c4f36087c4ac062b592cd68878ab8e098a3c0"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE04/provenance.json",
-      "sha256": "2ac74a0b2b9a7ac4b70ae1800ae00b730fe5c7396ddd06bbf8bcbb01ed09df0d"
+      "sha256": "bfd401ef1423f61d9e3dacd5777a01e32ee5f7e869825926dde588eeb1a7aebd"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE05/case-design.md",
-      "sha256": "6f74794ed9a8b1c45d189a8858d3f706863f6e33d3047c1e1f2ffff8955dd6ed"
+      "sha256": "02e8f116e1b2fe029d5d08a3de99aa0bc57b0204f52058fe29e9455ad534777b"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE05/facts.md",
-      "sha256": "37fa7ec1fe8aa26ec4502574391067ac5f1dc390e25f5845febb0004027217f0"
+      "sha256": "93a53c0e1300c89553c2f9772be4d7c8ce33321820b241cceda4668f1f4f694b"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE05/provenance.json",
-      "sha256": "91c07ce9dbfaf5b659f6f6adb941345a48d3286ecc258dd6cab3f98ff63894eb"
+      "sha256": "48c069b28890449b209aff122c957e888532bb0b2f879ba0afa3e43090097725"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/case-design.md",
-      "sha256": "269a81b83daa34a109b019be75f560d4df9bf5d70e44e6c73030c166b9f45289"
+      "sha256": "1c6cd00f694decf50c8912293aec664139ca76b9463b158748fc2fc25a81e694"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/facts.md",
-      "sha256": "fde873e756f175e1218e9f242c08eb8081f98c6987ec6a345dfaf60d72719c1f"
+      "sha256": "36dba3983f725eb1b14482cf18a4999c74c082e127b1724a08bc585260bc84c5"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/provenance.json",
-      "sha256": "8eac9f865270665a2031ab1b79e450e41014eb33228f5b81e531268100a9fca6"
+      "sha256": "730979a72d5059691e03e0912de17190feaef24c7e9808b361631253a21191cc"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE01.md",
-      "sha256": "8ec671397d6e8a2492b5914ab1b279d8665b3750a3b721a64c3642181e3e85cd"
+      "sha256": "09e3bbaaf61cf1b583951bc854258316776e7798c2a4efad1109cd8086caa634"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE02.md",
-      "sha256": "5913292c6a7a500005ec375c3a8a47548b906dd63632b6b2f2de1588e7b51f05"
+      "sha256": "b5fe68bc83e755660ce88d6791b81d8a02244b714e72007b6dcceef9ffa37ec8"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE03.md",
-      "sha256": "7a8e272891d8bd7845a3c69c1960f3520e23e73f3122a88611f0f2e3c97dce54"
+      "sha256": "183711b8010e6db4b1cce273ad85d3068eca337dd00738f26da10145b09d88d6"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE04.md",
-      "sha256": "bb0b4ebf85e45b631668a1460690d3ae66dcea317249058d14e8ee8d687dcbaf"
+      "sha256": "71d6089c89446f15783ba7b33bdef4b4ac5f4e70af72aab6b1b4770989081e97"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE05.md",
-      "sha256": "3171dc6343575d702080a9aed2fc70187d5dc3080b3ff3f55c6179b760f7f81a"
+      "sha256": "d330790b13a046d34ad954a197743d78e44256bda5135c8fadc409204950ad7f"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE06.md",
-      "sha256": "f6371736dcbd4489cbadd91d823579d00ac065e3a27cae863dbdc5dffe8bf322"
+      "sha256": "950c927742d1c6b72327343031e0d6e7fa83e328daa91eb8f2363f519a098404"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE01.md",
-      "sha256": "8245fc459cab62f96e4ef8c8ec6642c349b1fb2f6f16b1e2b8abb413c6487bc1"
+      "sha256": "c37883c7c6a329c3c1842a788dbee6998964a8eead24b8b51e83a4482b2e7ed1"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE02.md",
-      "sha256": "1b22e64357eb34c08db09d6c7b25b9c6e725f6e9560f1ac404c095956819bbcf"
+      "sha256": "a6e716186f75c294b6d2ab697533df6235b4d0fdc99227a0769b074086119e87"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE03.md",
-      "sha256": "c60e14cda96ffece439308c7c9834ae9edf797eb5967f6f7bd6340ddb4d1dbf0"
+      "sha256": "a7bda3a8f9a3f044d2bd6981cc05d7fd7071a543413f54cd3f53c236371a09ab"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE04.md",
-      "sha256": "d5a23935fba5c47e23a9043da3137e2228426ac6e886338ed72acec79f53c0ac"
+      "sha256": "4538a0274a4e30f15107d4ecde160fbf9c5a6ed443e6d840bbe59ef3a133b85d"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE05.md",
-      "sha256": "d66bb2d1297af12b8fe05393292b46e78c9e386ba48d5cc757ea35c5eeee45bf"
+      "sha256": "092138724dcd09776574d7c8e90cdbf006eaf63ef9b11f5e8d467ada963d9e93"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE06.md",
-      "sha256": "f94da84505b937281bb111fad63719422ab1f0a844413a6f45b0586d66a46b48"
+      "sha256": "f01ce1f7da4ba8be840664ad69ed6587cd080dd34de7f17eb13d889b7402a444"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE01.md",
-      "sha256": "d44539dd46e391edd98a6399347e1c58a3dc7919301947ac75851784e966f356"
+      "sha256": "6c2a16875f36abbc152938121391415fc5920034f0acad69b704151210b19dde"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE02.md",
-      "sha256": "57b8b1c8ec0fcda8bb047a37e6291178e2850f11e95659df943e82dd23b326c8"
+      "sha256": "111e22d979b2ac8f954f235999e1ce1568fc5bca13c2c50f4279c6dd5f1ea044"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE03.md",
-      "sha256": "1fe8bed2cdce1c5672b924fa6083b18386e4f4a2d9376b5732c050ef8d2c42f6"
+      "sha256": "a7890397831b050eaa8f7097e85711a89a2b71425c57c79472f394ca4e06e1ac"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE04.md",
-      "sha256": "f64d74be567aa2bbba7bf53750147ac5a033d6db75402d0e09894bfd4ce0eb0c"
+      "sha256": "ab493d190602394edacddb1a87c24a94f1a80f8be99cc928e6fd56cba8bfd50f"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE05.md",
-      "sha256": "ee4526bafe0bda651312f0b4e5128b9a522d738a0aa5c19503985cdbda7f1614"
+      "sha256": "b9b3af5aa6f2fd120ebd644390c72449921ce8b38b69709c303b6a31b8e708ed"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE06.md",
-      "sha256": "4e1e17abbcbb956620dc66a1f2a22aa582dc281fb239d735ad340b9fe1271650"
+      "sha256": "94d171d2fce8236b66c85bb5216e508a1abdb53f9962594b1eebbf209967fc03"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/README.md",
-      "sha256": "9f5f31f4dcebce92682d9d294e1cfa224b974958800d2a42b02aa650646bd3b4"
+      "sha256": "b06dd5dda86154dd314ca594076a34a319fa0ef838581a8917904195eb2c7f76"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE01.md",
-      "sha256": "d9ca6244505ed16ecdd2c0d527e9b4756b754a995b2cb76e8434a54fad626e72"
+      "sha256": "11af96e916706ff497888fc29e6990db5224a5c50cde4efb4ef243d0e58c58e4"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE02.md",
-      "sha256": "14fbf729852d8dd4d56c5c6bcfe3c8ae92509ae4b33a78dca0c91e5db278243e"
+      "sha256": "89bddf5c63166cdc7f761cbceba8c4dc753843e148f5e213104458e093cd5169"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE03.md",
-      "sha256": "b2e9dcc7279eca8c340939b631b927880626c08e91982a1336132a4d99d1c356"
+      "sha256": "fddc999a1a93785cbedd478447301e090a00727191affdad7aead2c8b7b5df1e"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE04.md",
-      "sha256": "10bed4ef4831f0871d006d6c063a76bfc6bb6b9f3950a60a9d116af6f0b9ba3f"
+      "sha256": "68074e03f6a2bc843b8f3fcb1e4a9ec260030c1f6a519de1d0c9e5a6f970ef73"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE05.md",
-      "sha256": "931d9696c0a9a6616aa3087ccd41f0b3bcc181c6835fb3bc2fe52817aad027cc"
+      "sha256": "2080ccc2def2682bd4a448123223d1f7b8add0deb34b93b1a16d165f6c83452c"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE06.md",
-      "sha256": "462e1caa1b26fa0b9657f8756748a07b3aa009777c6d37c60f193c716e7de67c"
+      "sha256": "43005ba5118a4fc71ee8d0c43cff7647d55909acececba42423eeabffc405cf2"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE01-ambiguity-proof.md",
+      "sha256": "fcc911a89913f4ce8c6ec43e9bc94c2b576a01e56299ed39eba5d413c3051fd6"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE01-control-equivalence-note.md",
-      "sha256": "23e3d3549ad9ce9a9cf46c0e6ed7969c6751d1766f22599f3e296339d32d2a7f"
+      "sha256": "498d89440124cacbd72b704693ae32401cf01e34a9e49e825e44275e8c68c10b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-ambiguity-proof.md",
+      "sha256": "6a51e3a17ccb45e1b551b43d2ecaf4b2fe16002e992eda5b8da983b18708c871"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-control-equivalence-note.md",
-      "sha256": "94239cce87bd227805ddc499ff3c4bcee8e0dd2a3de3cf932ab9009c0d2b5e1e"
+      "sha256": "967b60c20d660fe4b3643f514bf1d0d3bc9e9a9b557f5c181499a10fc1cb5b2f"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-ambiguity-proof.md",
+      "sha256": "451eaeb47997dfc22c0cb281173c9ad68568b2e1faf27b1129361f9d36cbc6df"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-control-equivalence-note.md",
-      "sha256": "dccb9421be877332347920e74b7ea7df6c470e648d28d9d5c75cacd45d6fe791"
+      "sha256": "6b762be229b20bfad8adb822679acc27d57a21f75062012a46d460c4b2e5e2e6"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE04-ambiguity-proof.md",
+      "sha256": "6478f39a6ed06e677cc334b2cd422abcf26823df3a8a8b31dd572a09a9742717"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE04-control-equivalence-note.md",
-      "sha256": "8bb7d4491557cbf24658f6c6c497895f8e0afa07c3e1219e6c78b404db3a7958"
+      "sha256": "ad14b01a23dfb34d2357dbec1a103e3c313c611026eff52789f5910eb9e99ebd"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE05-ambiguity-proof.md",
+      "sha256": "64503ed7e4206c72763c99bb8c8ab89f24665d7cadbb89ed2da90b8d6ff4d5e0"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE05-control-equivalence-note.md",
-      "sha256": "6c52da1ef7ab9578ef0c6328d76654e3b2194ca62e71e2e3f9ca429da6cd0cbd"
+      "sha256": "519ab8c51e75fb741704a838b35bf4a856468634d531f5f95e6069651f40aea0"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE06-ambiguity-proof.md",
+      "sha256": "bdb14dbdd0b2adea74ba30b3b0b1e942ce36795213329450c3b34fc686fe4e29"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE06-control-equivalence-note.md",
-      "sha256": "ee35d62fbbc68b5b26c4e3fd0dab9c6abb7f45b9591ed9a5e9be51ee73c8808a"
+      "sha256": "332369ec765b3a34bd7db9f6e2363e846cd52871a211f8a027eb01ad316799e6"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/neutral-task-prompt.md",
@@ -257,12 +294,40 @@
       "sha256": "c911c6393bd8ce1735d2d7c827a60c700bf4faa2c112c4f5579357a0c362edf4"
     },
     {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/A-endpoint.md",
+      "sha256": "f160fd296d1b9b26ee514724f8e2eaad58f41008317290a9e9be6bdfacdc9c6c"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/B-leakage.md",
+      "sha256": "cbbcc91fc41c33cf50916993ea393a314cfa3726174b9d6fe8ad66ddd9dbd1cd"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/C-control-ambiguity.md",
+      "sha256": "02660866d8de3cbdf201848ec7ae868cc88db78b51898272bb8116ab9ebdd6f7"
+    },
+    {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r1.json",
       "sha256": "8d6749f23d99420414409d0eadb59dcf9e5f5c0f628ef45d5f0e64ebdf8cc70a"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r1.md",
       "sha256": "357c95db85a906f9363c262bb02039ab287ed8a6b3c149928816ef45f37b042a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r2.json",
+      "sha256": "25b0229e4007e31a1333ca2e31e5a92b4bc5954c3e6abccd4c043709a5854f0b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r2.md",
+      "sha256": "85fd3a0068224cd18048b671885e7219a058f41970c70b4b44ffee5c066799a4"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule-r2.json",
+      "sha256": "f66e39839fcff159e8ee518480f33fc272547b2a577032cf12582d11fd19c005"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule-r2.md",
+      "sha256": "a0055ab27cf243e0d7ed0f0710c348f71876f9ebf08a1e9228bea438a2f5fa66"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule.json",
@@ -281,122 +346,124 @@
       "sha256": "27219b49c43eb2a7f03f23ed2f6797a18a5322c0fd2fc2e438f3b7d37a96ffe6"
     },
     {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/sealed-r2/condition-map.json",
+      "sha256": "c551dec8e6b5e26b58ffde785a4ba2266fb8c4d21350cb03813468661234000a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/sealed-r2/targets.json",
+      "sha256": "b2ec611ef4c3e69bf387e02a75ceea3528b3ec6df72246370b5cccc28fc19eae"
+    },
+    {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/FUTURE-TASK-INDEX.json",
-      "sha256": "f56899ce0565c395359f31d5e7a242a0dc7fde9e8c8f5d2c1774ecf14b0f6d59"
+      "sha256": "520855232cd3b71336d52fdae783da02d1e74addb0171baf86192953caf41ee5"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-0CBCA4234750.json",
-      "sha256": "c3237c28ed76c40adbdee503c28acef16e551ffecd3207ac7e0ee78fb5c32f6f"
+      "sha256": "ade9a4e7906192c64f49f14c5f51e041dfb8435c50912c71a184ec943da6b358"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-1635801CC8F6.json",
-      "sha256": "cc291f2a5062d974098116442dd878dc26d02be6563a2ed5d393d6be1e9c1559"
+      "sha256": "68a1522f8b440bbeb9a45a0fcf3348bc774daa269c9b54e836cc71a7f788d453"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-2ED736040AA4.json",
-      "sha256": "39b109c340dd600be840f79578c2d65cee248d53a14bbd8d609e7b3752be81d2"
+      "sha256": "4bad96236eabbc019ce7dd0797f4293e3e6dfd0b8dc3b9ca40e704e43c86212a"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-4A7924F0136D.json",
-      "sha256": "99630d427f746c194e36a45ce1d73b0b7081a3803a512835894c45e9d0ebef93"
+      "sha256": "c5216620e4b0080461a9dbd740de42ae6a3b1d12518baf84a7a7ad74e7bd42d5"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-58CF738C46CB.json",
-      "sha256": "8746b92e683095bd4150edd9f58589108b52417eeb6e440718b9cb4d373f2e9b"
+      "sha256": "59e3d78e35f4003cca67ed5500fc525dc7eaa1734990d0b826dbcc2066362745"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-5D12CAAC9272.json",
-      "sha256": "d88fd5b8b0a6b081c8cbe4fd9c3f0973ec19b77e7e2527532354525a48717b1d"
+      "sha256": "877be65167bd13b9fde4a93b10b2360df60e0f934bbb270dcd4ef757c85bfc79"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-60CB05519C9B.json",
-      "sha256": "0aff12d85c8b0615b5aac33e1b9d53a6c3d8635747983ce180dcf8e52ed1f5f7"
+      "sha256": "fa50c002b7a418733a221133ef3892eb4fdfcea6aec9c9735a2f82081a65c794"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-6439741CDC98.json",
-      "sha256": "631c922b77a7c5efdf325915b4b41968aed7eac02a9016b8a5e380482243dc3f"
+      "sha256": "7247ced19bc6a026165c2dc130caa8c57532481df883fc303d10654c214a7526"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-A29644406938.json",
-      "sha256": "39dca8dc5c875e463f2fbdff847bb6439a184fb0633fb7a2c5262b5a249542ad"
+      "sha256": "1291895e7e85fe782bb47bc13d2b9ca6bbe569df745c3ae17b71494ac972c752"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-B03332236A38.json",
-      "sha256": "7ef75062722cac60f2f3ff6059af08177edc6d05078f5461afd438ea87b44950"
+      "sha256": "88992f5abb68511896c5734be6002e23b2436d38c2305b4a681c11688c315dff"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-BCA806ED6F1B.json",
-      "sha256": "0011b1c9d059f847910a2fbca6e64d1bfbbb5f91b399afdb4a1b6b827fa57767"
+      "sha256": "c562205fcbcb4f76b776f3f44e395e4cc459d8ad694271673ce4248727361cdb"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-DC09E06A7C56.json",
-      "sha256": "b76bb44aae83485dfd573b9ad36dcd0fc26a8670f669b12fed180aa5f25a48c4"
+      "sha256": "79e812a149bbb0e1d7a0c5d004efa0625104462849438906e298137f3d86f6fe"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-036C68E81455.md",
-      "sha256": "84fb2e5fef30b09c09168ff9452a35e4933d0d15c5875914116df01723c3cb4f"
+      "sha256": "05111399019fc19dd5ef3a0fd86639931f5bc6dfb10361fc3b5ad8ce530bfec2"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md",
-      "sha256": "96e530a96c6be7ba3851183d507228c6d1f0ee4aed6aee7f4012c6917a3bd718"
+      "sha256": "05a6b6cd97cc5a077cb3f3229842437faca50fcd217207c2cb2284de05708e64"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-6453996D8B64.md",
-      "sha256": "bad520db09a6641072fda014d16ed5b5be0e34a60ef947db0710afdb5d81714e"
+      "sha256": "bcfcc1451e304755a0bab0ccc32d613576db7d09ab6f5182363bf76a32024956"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-87E4C138ACC9.md",
-      "sha256": "b644f1951fe99cef921c21f6f0bc3a89eeb005109217ffd92881c99f08646dde"
+      "sha256": "0181a245b8d8d3010027278fa34893c5044066bd220df6c9694551391cc28b30"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-9737185B9103.md",
-      "sha256": "2d3cee2bfdbe494b13bfbd4c053fd8e000bfe088780c4f7ea846b75ebf3ac313"
+      "sha256": "d35aafba3025fb3f2930fbc717c5ddc2167b607b67d8eb83977f1d19879107a0"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-9B32BAE52185.md",
-      "sha256": "6afb51249d8a96d1d8502796e13ef0be1c23ae545093dd8f26c0e0300549155d"
+      "sha256": "5fc2bbc54bc112778ecdc5fc1be5ccb64d8836a7921715382cd27fb3bd6533f2"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-A4903D709062.md",
-      "sha256": "d754683391763b90f8fd40f4f928233478df74d4784804998e1948473b2e4232"
+      "sha256": "7cede93c65aeb16ff438a57020a5f12ebf33dd1b65f127c5bcaa765bf4ff723f"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-B32AB4BD936E.md",
-      "sha256": "df06157f443b968373df0dced54e74f13be7480a990abc4903e36803a5278322"
+      "sha256": "859c604694ed6903fa6293d93f91542fbab07904723b8e089aea741ad42cde9e"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-CD1E0740AE3A.md",
-      "sha256": "5f70f0a2232cbd0b108ea96ee83a9251b19801d70a2a95e11c36a324d8c9df0a"
+      "sha256": "226590aaa456668f0bad024e07775e2dd100770441dac7d286b941b17d75a601"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-D7BA5DE6F459.md",
-      "sha256": "16cf869dd24524d6e1ea4ef00c547986d012343daac2e406eaf153d5b8c432de"
+      "sha256": "1b760bcac5741b0aa8e511e0f2184538264e9714a6896f3a1a88cdcd1b08c473"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-E4E08B5DB0B4.md",
-      "sha256": "9a5dc41ae44aca009655e54d5bc6c2aca3cf430b5bd0703c86a6a8c93540421d"
+      "sha256": "ad06032b0893f9cd8ec47598e9d687fac8c69b1c6bad1e42d3288bf01afbcebc"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-F245E2EB0644.md",
-      "sha256": "5fa238df2183a5bb89db5d7f61456285e5933dfc5f9f10e5dd2d4246a0e69cdb"
+      "sha256": "26b9af1753035f4d4309c3f436c4dc7a499421d4bba099f007dcfd57b9c622d8"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/CONTROL-VALIDITY-REVIEW.md",
+      "sha256": "9f3cef6f9a417422b0509a024c6156a1ee3eb91a56f5648fe4acd28a9bb56ec7"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md",
-      "sha256": "ec7c092c33cf485bcc149a8b69b379c745f5c4f6ae73225deadb190f54cb00f4"
+      "sha256": "43ed101eaeccea59517cb671d338acdc95f3f6ccfdb74cdd6cd3034d81ed99ef"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/validate_task217.py",
-      "sha256": "0f7d11304cc4904ea4edab4d591d49d24ffa3f7c5158ee3b5eacfde52a74ecca"
+      "sha256": "b6ec3a110a814c2345cfc4213b8f582a5781d1bb8ff8c965fc2632294965e560"
     }
-  ],
-  "formal_base_sha": "24198effb2e2d94c19fe212244bbfcf47f995b2a",
-  "freeze_version": "R0",
-  "future_successor_outputs_exist": false,
-  "inventory_scope": "Every file under the Task217 subtree except this manifest and its adjacent SHA256 sidecar.",
-  "pre_freeze_parent_commit_sha": "3eb302ae639cf564331f50bec7224ec53ece5fe5",
-  "repository": "Arvin-liu/when-systems-catch-fire",
-  "runtime_selected_by_task": false,
-  "status": "FROZEN_PRE_OUTCOME",
-  "task_id": "IGNITION-20260925-217",
-  "updated_at_utc": "2026-09-25T11:06:23+00:00"
+  ]
 }

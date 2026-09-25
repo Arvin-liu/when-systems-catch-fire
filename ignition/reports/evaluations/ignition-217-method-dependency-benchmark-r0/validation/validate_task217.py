@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the frozen Task217 benchmark, secrecy boundary, and file inventory."""
+"""Validate Task217 R1 endpoint, controls, packet secrecy, repository closure, and freeze."""
 
 from __future__ import annotations
 
@@ -17,12 +17,25 @@ BASE = "24198effb2e2d94c19fe212244bbfcf47f995b2a"
 PATH_MANIFEST_REL = "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
 CONDITIONS = ["FACTS_ONLY", "SKILL_ONLY", "METHOD", "LINKLESS_METHOD_CONTROL"]
 CASES = [f"CASE{i:02d}" for i in range(1, 7)]
-CUTS = {"CASE01": "R01", "CASE02": "R02", "CASE03": "R02", "CASE04": "R01", "CASE05": "R02", "CASE06": "R04"}
+EXPECTED_CUTS = {
+    "CASE01": {"R01"},
+    "CASE02": {"R02"},
+    "CASE03": {"R02"},
+    "CASE04": {"R01", "R04"},
+    "CASE05": {"R01"},
+    "CASE06": {"R04"},
+}
+GENERATED_NONFUNCTION_OUTPUTS = {
+    "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+    "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+    "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+    "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+}
 
 
 def require(value: bool, message: str) -> None:
     if not value:
-        raise SystemExit(f"FAIL_TASK217_VALIDATION: {message}")
+        raise SystemExit(f"FAIL_TASK217_R1_VALIDATION: {message}")
 
 
 def sha(data: bytes) -> str:
@@ -30,150 +43,360 @@ def sha(data: bytes) -> str:
 
 
 def read_json(path: Path) -> dict:
-    return json.loads(path.read_text(encoding="utf-8"))
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        raise SystemExit(f"FAIL_TASK217_R1_VALIDATION: invalid JSON {path}: {exc}") from exc
 
 
-def relation_rows(text: str) -> list[tuple[str, str]]:
-    return re.findall(r"^\[(R\d+)\] (.+)$", text, re.M)
+def relation_rows(text: str) -> dict[str, dict[str, str]]:
+    rows: dict[str, dict[str, str]] = {}
+    pattern = re.compile(r"^\[(R\d+)\] (A\d+) --([A-Z_]+)--> (A\d+) :: (.+)$", re.M)
+    for match in pattern.finditer(text):
+        rid, source, edge, target, body = match.groups()
+        require(rid not in rows, f"duplicate relation id {rid}")
+        rows[rid] = {"source": source, "type": edge, "target": target, "body": body, "line": match.group(0)}
+    return rows
+
+
+def atom_block(text: str, case: str, condition: str) -> bytes:
+    matches = re.findall(r"<!-- ATOM_BLOCK_BEGIN -->.*?<!-- ATOM_BLOCK_END -->", text, re.S)
+    require(len(matches) == 1, f"{condition}/{case} must contain one delimited atom block")
+    return matches[0].encode("utf-8")
+
+
+def normalized_tokens(text: str) -> set[str]:
+    stop = {"a", "an", "and", "are", "as", "at", "before", "by", "for", "from", "in", "of", "or", "the", "to", "under", "with", "without", "current", "every", "all", "one", "any", "after"}
+    return {word for word in re.findall(r"[a-z0-9]+", text.casefold()) if word not in stop}
+
+
+def primary_text_has_locator_gate(endpoint: dict) -> bool:
+    true_iff = endpoint.get("true_iff", [])
+    searchable = " ".join(str(item).casefold() for item in true_iff)
+    return bool(re.search(r"method.only|method relation locator|required_method_links|cite every.*relation|relation locator required|source path required", searchable))
+
+
+def check_primary_endpoint(criteria: dict, targets: dict, outcome: dict) -> None:
+    primary = criteria.get("primary_endpoint", {})
+    require(primary.get("name") == "TARGET_DECISION_SUCCESS", "criteria primary endpoint is not TARGET_DECISION_SUCCESS")
+    require(primary.get("type") == "condition_neutral_binary_per_case", "primary endpoint type is not condition-neutral binary")
+    require(primary.get("scored_identically_in_all_conditions") is True, "primary endpoint is not identical across conditions")
+    require(primary.get("conditions") == CONDITIONS, "primary endpoint condition set/order differs")
+    require(primary.get("requires_method_only_source_paths") is False, "primary endpoint requires a METHOD-only path")
+    require(primary.get("requires_method_relation_locator") is False, "primary endpoint requires a METHOD relation locator")
+    require(primary.get("source_locator_required_for_primary") is False, "primary endpoint requires a source locator")
+    require(not primary_text_has_locator_gate(primary), "primary endpoint wording contains a locator/citation gate")
+
+    target_primary = targets.get("primary_endpoint", {})
+    require(target_primary.get("name") == "TARGET_DECISION_SUCCESS", "sealed-target primary endpoint differs")
+    require(target_primary.get("scored_identically_in_all_conditions") is True, "sealed-target endpoint is not condition-neutral")
+    require(target_primary.get("conditions") == CONDITIONS, "sealed-target condition set/order differs")
+    require(target_primary.get("requires_method_only_source_paths") is False, "sealed target requires METHOD-only paths")
+    require(target_primary.get("requires_method_relation_locator") is False, "sealed target requires METHOD relation locators")
+    require(not primary_text_has_locator_gate(target_primary), "sealed primary endpoint wording contains a locator/citation gate")
+
+    for case in targets.get("cases", []):
+        rubric = case.get("target_decision_success_rubric", {})
+        require(rubric.get("condition_neutral") is True, f"{case.get('case_id')} rubric is not condition-neutral")
+        require(rubric.get("requires_method_relation_locator") is False, f"{case.get('case_id')} primary rubric requires a relation locator")
+        require(rubric.get("requires_method_only_source_path") is False, f"{case.get('case_id')} primary rubric requires a METHOD-only path")
+        require(rubric.get("requires_source_locator") is False, f"{case.get('case_id')} primary rubric requires a source locator")
+        require(not primary_text_has_locator_gate(rubric), f"{case.get('case_id')} primary rubric contains a locator/citation gate")
+
+    secondary = criteria.get("secondary_endpoint", {})
+    require(secondary.get("name") == "METHOD_TRACE_USE_SUCCESS", "secondary endpoint is not METHOD_TRACE_USE_SUCCESS")
+    require(secondary.get("affects_primary_endpoint") is False, "method-trace endpoint affects primary scoring")
+    domains = criteria.get("domains", {})
+    require(set(domains) == {"FACTUAL_FIDELITY", "EVIDENCE_BOUNDARY", "DECISION_QUALITY", "REFERENCE_INTEGRATION"}, "secondary domain set differs")
+    require(all(domains[name].get("scale") == [0, 1, 2] and domains[name].get("descriptive_only") is True for name in domains), "the four 0–2 domains are not secondary descriptive measures")
+
+    require(outcome.get("primary_endpoint") == "TARGET_DECISION_SUCCESS" and outcome.get("condition_neutral") is True, "outcome rule does not use the condition-neutral endpoint")
+    require(outcome.get("outputs_present_at_freeze") is False, "outcome rule says outputs existed at freeze")
+    require(outcome.get("successors_launched") is False and outcome.get("evaluators_launched") is False, "a launch is recorded in the preregistration")
+    require(outcome.get("condition_map_released") is False and outcome.get("runtime_selected_by_task") is False, "map release/runtime selection is recorded")
+    definitions = outcome.get("definitions", {})
+    require(definitions.get("M") == "METHOD TARGET_DECISION_SUCCESS for the matched case family and replicate", "M definition differs")
+    require(definitions.get("L") == "LINKLESS_METHOD_CONTROL TARGET_DECISION_SUCCESS for the matched case family and replicate", "L definition differs")
+    require(definitions.get("F") == "FACTS_ONLY TARGET_DECISION_SUCCESS for the matched case family and replicate", "F definition differs")
+    require(definitions.get("S") == "SKILL_ONLY TARGET_DECISION_SUCCESS for the matched case family and replicate", "S definition differs")
+    require(definitions.get("METHOD_LINKLESS_WIN") == "M and not L", "METHOD_LINKLESS_WIN formula differs")
+    require(definitions.get("METHOD_CONTRAST_SUCCESS") == "M and not L and (not F or not S)", "METHOD_CONTRAST_SUCCESS formula differs")
+    require(definitions.get("FAMILY_DEPENDENCY_REPLICATED") == "METHOD_CONTRAST_SUCCESS in >=2 of 3 replicates", "family replication formula differs")
+    require(outcome.get("case_families") == 6 and outcome.get("conditions") == 4 and outcome.get("replicates_per_condition") == 3, "frozen design counts differ")
+    require(outcome.get("matched_contrasts_per_evaluator") == 18 and outcome.get("records_per_evaluator") == 72, "frozen denominator differs")
+    disposition = outcome.get("benchmark_disposition", {})
+    supported = disposition.get("SUPPORTED", {}).get("both_evaluators_must_independently_meet_all", [])
+    partial = disposition.get("PARTIAL", {}).get("applies_only_if_SUPPORTED_not_met_and_both_evaluators_independently_meet_all", [])
+    require(any("METHOD TARGET_DECISION_SUCCESS >=16/18" in item for item in supported), "SUPPORTED threshold does not use primary endpoint")
+    require(any("FAMILY_DEPENDENCY_REPLICATED in >=5/6 families" in item for item in supported), "SUPPORTED family threshold differs")
+    require(any("METHOD_LINKLESS_WIN in all three replicates for >=4/6 families" in item for item in supported), "SUPPORTED direct-win threshold differs")
+    require(any("METHOD TARGET_DECISION_SUCCESS >=14/18" in item for item in partial), "PARTIAL threshold does not use primary endpoint")
+    require(any("FAMILY_DEPENDENCY_REPLICATED in >=3/6 families" in item for item in partial), "PARTIAL family threshold differs")
+    require(any("METHOD_LINKLESS_WIN in >=10/18" in item for item in partial), "PARTIAL direct-win threshold differs")
+
+
+def check_case_controls(targets: dict) -> None:
+    case_root = TASK / "benchmark" / "case-families"
+    conditions_root = TASK / "benchmark" / "conditions"
+    control_root = TASK / "benchmark" / "control-equivalence"
+    require(sorted(p.name for p in case_root.iterdir() if p.is_dir()) == CASES, "case-family set is not exactly CASE01..CASE06")
+    for condition in CONDITIONS:
+        files = sorted((conditions_root / condition).glob("CASE*.md"))
+        require([p.stem for p in files] == CASES, f"{condition} does not contain exactly six cases")
+
+    target_by_case = {item["case_id"]: item for item in targets["cases"]}
+    require(set(target_by_case) == set(CASES), "sealed target case set differs")
+    for case in CASES:
+        facts_path = case_root / case / "facts.md"
+        facts = facts_path.read_bytes()
+        provenance = read_json(case_root / case / "provenance.json")
+        require(provenance.get("facts_sha256") == sha(facts), f"facts provenance hash mismatch for {case}")
+
+        method_text = (conditions_root / "METHOD" / f"{case}.md").read_text(encoding="utf-8")
+        linkless_text = (conditions_root / "LINKLESS_METHOD_CONTROL" / f"{case}.md").read_text(encoding="utf-8")
+        method_atoms = atom_block(method_text, case, "METHOD")
+        linkless_atoms = atom_block(linkless_text, case, "LINKLESS_METHOD_CONTROL")
+        # Hard gate 3: atoms have identical bytes.
+        require(method_atoms == linkless_atoms, f"METHOD/LINKLESS atom blocks differ for {case}")
+        atom_lines = re.findall(rb"^\[A\d+\].*$", method_atoms, re.M)
+        require(len(atom_lines) == 7, f"{case} must have seven stable atoms")
+
+        method_relations = relation_rows(method_text)
+        linkless_relations = relation_rows(linkless_text)
+        require(list(method_relations) == [f"R{i:02d}" for i in range(1, 6)], f"METHOD relation set/order differs for {case}")
+        target = target_by_case[case]
+        cut_ids = set(target.get("decisive_relation_ids", []))
+        require(cut_ids == EXPECTED_CUTS[case], f"{case} decisive relation set differs from preregistration")
+        signatures = target.get("decisive_relation_signatures", [])
+        signature_set = {(item.get("from_id"), item.get("relation_type"), item.get("to_id")) for item in signatures}
+        require(len(signature_set) == len(cut_ids) and signature_set == {(method_relations[rid]["source"], method_relations[rid]["type"], method_relations[rid]["target"]) for rid in cut_ids}, f"{case} decisive signatures do not match the sealed relations")
+        retained_ids = [rid for rid in method_relations if rid not in cut_ids]
+        require(list(linkless_relations) == retained_ids, f"LINKLESS relation cut or retained relation set differs for {case}")
+        for rid in retained_ids:
+            require(linkless_relations[rid]["line"] == method_relations[rid]["line"], f"retained relation {rid} changed for {case}")
+        # Hard gate 4: the deleted structured relation cannot survive under another ID.
+        for rid, row in linkless_relations.items():
+            signature = (row["source"], row["type"], row["target"])
+            require(signature not in signature_set, f"{case} removed relation signature survives as {rid}")
+        note = (control_root / f"{case}-control-equivalence-note.md").read_text(encoding="utf-8")
+        proof_path = control_root / f"{case}-ambiguity-proof.md"
+        require(proof_path.is_file(), f"ambiguity proof missing for {case}")  # Hard gate 6
+        proof = proof_path.read_text(encoding="utf-8")
+        require("TWO_WAY_AMBIGUITY_DEMONSTRATED=YES" in proof, f"two-way ambiguity is not asserted for {case}")
+        require("FACTS" in proof and "atoms" in proof.casefold() and "retained" in proof.casefold(), f"{case} proof omits facts/atoms/retained-relations basis")
+        require(all(rid in proof for rid in cut_ids), f"{case} ambiguity proof omits a missing decisive relation ID")
+        section = re.search(r"## Two materially different licensed actions(.*?)(?:\n## |\Z)", proof, re.S)
+        require(section is not None, f"licensed-alternatives section missing for {case}")
+        alternatives = re.findall(r"^\d+\. (.+)$", section.group(1), re.M)
+        # Hard gate 7: two licensed alternatives must be materially distinct by their action terms.
+        require(len(alternatives) >= 2, f"{case} ambiguity proof names fewer than two possibilities")
+        left = normalized_tokens(alternatives[0]); right = normalized_tokens(alternatives[1])
+        union = left | right
+        similarity = len(left & right) / len(union) if union else 1.0
+        require(len(left.symmetric_difference(right)) >= 2 and similarity < 0.82, f"{case} alternatives are not materially distinct by action wording")
+        note_lower = note.casefold()
+        require("removed decisive relation" in note_lower or "complete removed decision-bearing relation set" in note_lower, f"control note does not name the removed relation for {case}")
+        for rid in cut_ids:
+            require(rid in note, f"control note omits removed relation {rid} for {case}")
+
+        skill_text = (conditions_root / "SKILL_ONLY" / f"{case}.md").read_text(encoding="utf-8")
+        require(re.search(r"^\d+\. \[S01\]", skill_text, re.M) is not None, f"stable skill source locators missing for {case}")
+        phrases = target.get("atom_forbidden_phrases", [])
+        require(len(phrases) >= 3, f"{case} target-bearing atom phrase guard is missing/incomplete")
+        lower_atoms = method_atoms.decode("utf-8").casefold()
+        for phrase in phrases:
+            require(str(phrase).casefold() not in lower_atoms, f"target-bearing wording duplicated in {case} atoms: {phrase}")
+        # Hard gate 5: catch common target disposition forms even if the phrase list is incomplete.
+        generic_disposition_patterns = [
+            r"\bdisposition record\b",
+            r"\bwithhold\s+(?:the\s+)?(?:purge|route|action|feed|procedure)\b",
+            r"\bapply\s+(?:revision|procedure|v\d+)\b",
+            r"\breconcile\s+(?:the\s+)?(?:key|request)\s+first\b",
+            r"\brequest\s+.+\s+and\s+(?:remain|keep)\s+unresolved\b",
+            r"\broute\s+.+\s+to\s+(?:procedure|station)\s+[a-z0-9]+\b",
+            r"\bdo\s+not\s+.+\s+until\s+terminal\b",
+        ]
+        for pattern in generic_disposition_patterns:
+            require(not re.search(pattern, lower_atoms), f"target-bearing disposition pattern duplicated in {case} atoms: {pattern}")
+        for phrase in target.get("skill_forbidden_target_phrases", []):
+            require(str(phrase).casefold() not in skill_text.casefold(), f"target-bearing wording leaked into {case} SKILL record: {phrase}")
+
+    # Hard gate 5 human review companion: six rows, three explicit NO leakage calls and YES ambiguity each.
+    review = (TASK / "validation" / "CONTROL-VALIDITY-REVIEW.md").read_text(encoding="utf-8")
+    rows = [line for line in review.splitlines() if re.match(r"^\| CASE\d\d \|", line)]
+    require(len(rows) == 6, "human control-validity review does not have exactly six case rows")
+    for case, line in zip(CASES, rows):
+        cells = [cell.strip() for cell in line.strip().strip("|").split("|")]
+        require(cells[0] == case and len(cells) == 8, f"human review table row malformed for {case}")
+        require(all(cells[index].startswith("No —") for index in (3, 4, 5)), f"human review reports leakage or omits a reason for {case}")
+        require(cells[7] == "YES", f"human review does not demonstrate two-way ambiguity for {case}")
+
+
+def check_packet_secrecy(targets: dict) -> None:
+    prompt_path = TASK / "benchmark" / "neutral-task-prompt.md"
+    prompt_bytes = prompt_path.read_bytes()
+    prompt_hash = sha(prompt_bytes)
+    prompt_text = prompt_bytes.decode("utf-8")
+    require(not re.search(r"FACTS_ONLY|SKILL_ONLY|LINKLESS_METHOD_CONTROL|\bMETHOD\b|condition-map|sealed-r[02]", prompt_text), "neutral prompt exposes condition or evaluator labels")
+    schema = TASK / "benchmark" / "successor-output-r0.1.json"
+    task207_schema = ROOT / "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/packets/PKT-B6092E/output-schema.json"
+    require(schema.read_bytes() == task207_schema.read_bytes(), "Task207 output schema was not reused byte-for-byte")
+
+    future = TASK / "future-tasks"
+    index = read_json(future / "FUTURE-TASK-INDEX.json")
+    sealed = read_json(TASK / "evaluator" / "sealed-r2" / "condition-map.json")
+    require(index.get("schema_version") == "ignition-217-future-task-index-r2", "future-task index is not R2")
+    require(index.get("successors_authorized_or_launched") is False, "future-task index authorizes or records a launch")
+    require(index.get("task_count") == 12 and len(index.get("tasks", [])) == 12, "future task index is not 12 entries")
+    manifests = sorted((future / "manifests").glob("*.json"))
+    payloads = sorted((future / "payloads").glob("*.md"))
+    require(len(manifests) == 12 and len(payloads) == 12, "expected twelve R2 manifests and payloads")
+    require(sealed.get("schema_version") == "ignition-217-sealed-condition-map-r2", "wrong sealed map schema")
+    require(sealed.get("sealed") is True and sealed.get("successors_may_read") is False and sealed.get("released") is False, "condition map is not sealed/unreleased")
+    entries = sealed.get("entries", [])
+    require(len(entries) == 12 and {entry["condition"] for entry in entries} == set(CONDITIONS), "sealed map condition set/count differs")
+    require(all(sum(1 for entry in entries if entry["condition"] == condition) == 3 for condition in CONDITIONS), "sealed map does not have three tasks per condition")
+    entry_by_id = {entry["future_task_id"]: entry for entry in entries}
+    require({row["future_task_id"] for row in index["tasks"]} == set(entry_by_id), "opaque index and sealed map task IDs differ")
+    require({row["packet_id"] for row in index["tasks"]} == {entry["packet_id"] for entry in entries}, "opaque index and sealed map packet IDs differ")
+
+    prompt_hashes: set[str] = set()
+    orders_by_replicate: dict[int, set[tuple[str, ...]]] = {1: set(), 2: set(), 3: set()}
+    payload_sources_by_condition: dict[str, set[str]] = {condition: set() for condition in CONDITIONS}
+    manifest_label_patterns = ["FACTS_ONLY", "SKILL_ONLY", "METHOD", "LINKLESS_METHOD_CONTROL"]
+    for manifest_path in manifests:
+        manifest = read_json(manifest_path)
+        require(manifest.get("schema_version") == "ignition-217-future-task-manifest-r2", f"manifest is not R2: {manifest_path.name}")
+        future_id = manifest.get("future_task_id")
+        map_entry = entry_by_id.get(future_id)
+        require(map_entry is not None and manifest.get("packet_id") == map_entry["packet_id"], f"manifest does not match sealed map: {manifest_path.name}")
+        # Hard gate 9: dispatch metadata cannot expose a condition label.
+        require(not any(key in manifest for key in ("condition", "replicate", "case_order")), f"manifest exposes condition metadata: {manifest_path.name}")
+        manifest_text = json.dumps(manifest, ensure_ascii=False)
+        require(not any(label in manifest_text for label in manifest_label_patterns), f"manifest exposes a condition label: {manifest_path.name}")
+        require(manifest.get("conversation_replication_unit") is True and manifest.get("fresh_conversation_required") is True, "fresh independent conversation requirement missing")
+        require(manifest.get("prompt_sha256") == prompt_hash, "neutral prompt hash differs across manifests")
+        require(manifest.get("prompt_path") == "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/neutral-task-prompt.md", "manifest prompt path differs")
+        prompt_hashes.add(manifest["prompt_sha256"])
+        require(manifest.get("output_schema_sha256") == sha(schema.read_bytes()), "output schema hash mismatch")
+        allow = manifest.get("read_allowlist", [])
+        require(len(allow) == 3, "successor allowlist must expose exactly prompt, payload, and schema")
+        require({item["path"] for item in allow} == {manifest["prompt_path"], manifest["payload_path"], manifest["output_schema_path"]}, "successor allowlist contains a non-prompt/payload/schema path")
+        require(all("evaluator/" not in item["path"] and "targets" not in item["path"] and "condition-map" not in item["path"] for item in allow), "successor allowlist exposes sealed evaluation data")
+        for item in allow:
+            require(sha((ROOT / item["path"]).read_bytes()) == item["sha256"], f"read-allowlist hash mismatch: {item['path']}")
+
+        payload_path = ROOT / manifest["payload_path"]
+        payload_bytes = payload_path.read_bytes()
+        payload = payload_bytes.decode("utf-8")
+        require(sha(payload_bytes) == manifest.get("payload_sha256") == map_entry.get("payload_sha256"), f"payload hash mismatch: {payload_path.name}")
+        # Hard gate 9 also covers the successor-visible packet itself.
+        require(not re.search(r"FACTS_ONLY|SKILL_ONLY|LINKLESS_METHOD_CONTROL|\bMETHOD\b|condition-map|sealed-r[02]", payload), f"payload exposes an exact condition/evaluator label: {payload_path.name}")
+        order = tuple(re.findall(r"^## Record (CASE\d\d)$", payload, re.M))
+        require(len(order) == 6 and set(order) == set(CASES), f"packet case set invalid: {payload_path.name}")
+        require(list(order) == map_entry["case_order"], f"packet order differs from sealed map: {payload_path.name}")
+        orders_by_replicate[map_entry["replicate"]].add(order)
+        payload_sources_by_condition[map_entry["condition"]].add(json.dumps(manifest["case_source_sha256"], sort_keys=True))
+        for case in CASES:
+            facts = (TASK / "benchmark" / "case-families" / case / "facts.md").read_bytes()
+            supplement = (TASK / "benchmark" / "conditions" / map_entry["condition"] / f"{case}.md").read_bytes()
+            expected_hash = sha(facts + b"\n\n" + supplement)
+            require(manifest["case_source_sha256"].get(case) == expected_hash, f"case source hash mismatch for {case} in {manifest_path.name}")
+            require(f"Source SHA-256: {expected_hash}" in payload, f"packet omits displayed source hash for {case}")
+            require(facts.decode("utf-8") in payload and supplement.decode("utf-8") in payload, f"packet content differs from its source files for {case}")
+
+    require(prompt_hashes == {prompt_hash}, "neutral prompt differs across manifests")  # Hard gate 8
+    require(all(len(orders_by_replicate[replicate]) == 1 for replicate in (1, 2, 3)), "matched conditions do not share order within replicate")
+    require(len({next(iter(orders_by_replicate[replicate])) for replicate in (1, 2, 3)}) == 3, "replicates do not use three distinct case orders")
+    require(all(len(payload_sources_by_condition[condition]) == 1 for condition in CONDITIONS), "condition semantics differ across its three replicates")
+
+
+def check_no_outputs(targets: dict, outcome: dict) -> None:
+    # The output-schema JSON is an interface contract, not an output record.
+    schema_rel = "benchmark/successor-output-r0.1.json"
+    require((TASK / schema_rel).is_file(), "successor output schema missing")
+    require(outcome.get("outputs_present_at_freeze") is False, "preregistration says outputs were present")
+    require(targets.get("successors_launched") is False and targets.get("evaluators_launched") is False, "sealed targets record a launch")
+    for dirname in ("outputs", "results", "successor-runs", "evaluator-runs"):
+        for path in TASK.rglob(dirname):
+            if path.is_dir():
+                require(not any(child.is_file() for child in path.rglob("*")), f"output/run directory is nonempty: {path.relative_to(TASK)}")
+    output_name = re.compile(r"(?:successor|evaluator).*?(?:response|result|output)(?:s)?(?:[._-]|$)", re.I)
+    for path in TASK.rglob("*"):
+        if not path.is_file() or path.relative_to(TASK).as_posix() == schema_rel:
+            continue
+        require(not output_name.search(path.name), f"Successor/Evaluator output-like artifact exists: {path.relative_to(TASK)}")
+
+
+def check_repository_closure_and_freeze(report: str) -> None:
+    changed = subprocess.check_output(["git", "diff", "--name-only", BASE, "HEAD"], cwd=ROOT, text=True).splitlines()
+    allowed_external = {PATH_MANIFEST_REL} | GENERATED_NONFUNCTION_OUTPUTS
+    require(changed and all(path.startswith(TASK_REL.as_posix() + "/") or path in allowed_external for path in changed), "changes extend outside Task217 and prescribed generated projections")
+    require(not any(path.startswith("ignition/reports/evaluations/ignition-207-") for path in changed), "frozen Task207 subtree changed")
+
+    path_manifest_path = ROOT / PATH_MANIFEST_REL
+    path_rows = [json.loads(line) for line in path_manifest_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    path_row_by_name = {row["path"]: row for row in path_rows}
+    task_paths = subprocess.check_output(["git", "ls-files", TASK_REL.as_posix()], cwd=ROOT, text=True).splitlines()
+    require(task_paths, "no tracked Task217 paths found")
+    require(all(path in path_row_by_name and path_row_by_name[path].get("category") == "EVALUATION_EVIDENCE" for path in task_paths), "Task217 path missing/misclassified in generated path index")
+    task_rows = [row for row in path_rows if row.get("path", "").startswith(TASK_REL.as_posix() + "/")]
+    require(len(task_rows) == len(task_paths), "generated path index Task217 entry count differs from tracked inventory")
+
+    freeze_path = TASK / "freeze" / "FREEZE-MANIFEST.json"
+    sidecar_path = TASK / "freeze" / "FREEZE-MANIFEST.sha256"
+    freeze = read_json(freeze_path)
+    external = freeze.get("external_generated_path_index", {})
+    require(external.get("path") == PATH_MANIFEST_REL, "external generated path-index reference missing")
+    require(external.get("sha256") == sha(path_manifest_path.read_bytes()), "external path-index hash mismatch")
+    require(external.get("task217_entry_count") == len(task_paths) and external.get("category") == "EVALUATION_EVIDENCE", "external Task217 path-index count/category mismatch")
+    excluded = {freeze_path.relative_to(ROOT).as_posix(), sidecar_path.relative_to(ROOT).as_posix()}
+    actual_files = {path.relative_to(ROOT).as_posix() for path in TASK.rglob("*") if path.is_file()} - excluded
+    inventory = {item["path"]: item["sha256"] for item in freeze.get("files", [])}
+    require(set(inventory) == actual_files, "freeze inventory does not cover exactly all Task217 artifacts except itself/sidecar")
+    require(freeze.get("file_count") == len(inventory), "freeze file count differs")
+    for path, expected in inventory.items():
+        require(sha((ROOT / path).read_bytes()) == expected, f"freeze SHA-256 mismatch: {path}")
+    digest = sha(freeze_path.read_bytes())
+    expected_sidecar = f"{digest}  {freeze_path.relative_to(ROOT).as_posix()}\n"
+    require(sidecar_path.read_text(encoding="utf-8") == expected_sidecar, "freeze manifest sidecar mismatch")
+    status = subprocess.check_output(["git", "status", "--porcelain"], cwd=ROOT, text=True)
+    require(status == "", "worktree is not clean")
+
+    report_lines = set(line.strip() for line in report.splitlines())
+    required_report_lines = {
+        "PRIMARY_ENDPOINT=TARGET_DECISION_SUCCESS",
+        "PRIMARY_ENDPOINT_CONDITION_NEUTRAL=true",
+        "METHOD_RELATION_CITATION_REQUIRED_FOR_PRIMARY=false",
+        "METHOD_LINKLESS_ATOMS_BYTE_IDENTICAL_PER_CASE=true",
+        "LINKLESS_TWO_WAY_AMBIGUITY_PROVEN=6/6",
+        "CASE_FAMILIES=6",
+        "CONDITIONS=4",
+        "FUTURE_SUCCESSORS=12",
+        "SUCCESSORS_LAUNCHED=0",
+        "EVALUATORS_LAUNCHED=0",
+        "CONDITION_MAP_RELEASED=false",
+        "RUNTIME_CHOSEN_BY_TASK=false",
+        "R1_NOT_AUTHORIZED",
+        "CROSS_MODEL_NOT_AUTHORIZED",
+        "PR_STATE=OPEN_DRAFT_UNMERGED",
+    }
+    require(required_report_lines <= report_lines, "validation report omits required final R1 status lines")
+    print(f"TASK217_R1_VALIDATION_PASS tracked_paths={len(task_paths)} task_files={len(inventory)} change_paths={len(changed)}")
 
 
 def main() -> int:
     require(TASK.is_dir(), "Task217 subtree missing")
-    case_root = TASK / "benchmark" / "case-families"
-    condition_root = TASK / "benchmark" / "conditions"
-    control_root = TASK / "benchmark" / "control-equivalence"
-    require(sorted(p.name for p in case_root.iterdir() if p.is_dir()) == CASES, "case-family set is not exactly CASE01..CASE06")
-
-    for condition in CONDITIONS:
-        paths = sorted((condition_root / condition).glob("CASE*.md"))
-        require([p.stem for p in paths] == CASES, f"{condition} does not contain exactly six cases")
-
-    for case in CASES:
-        facts = (case_root / case / "facts.md").read_bytes()
-        provenance = read_json(case_root / case / "provenance.json")
-        require(provenance.get("facts_sha256") == sha(facts), f"facts provenance hash mismatch for {case}")
-        method_text = (condition_root / "METHOD" / f"{case}.md").read_text(encoding="utf-8")
-        control_text = (condition_root / "LINKLESS_METHOD_CONTROL" / f"{case}.md").read_text(encoding="utf-8")
-        method_atoms = re.findall(r"^\[A\d+\].*$", method_text, re.M)
-        control_atoms = re.findall(r"^\[A\d+\].*$", control_text, re.M)
-        require(len(method_atoms) == 7 and method_atoms == control_atoms, f"atomic content differs in link-broken control for {case}")
-        method_relations = relation_rows(method_text)
-        control_relations = relation_rows(control_text)
-        require(len(method_relations) == 5, f"METHOD relation count is not five for {case}")
-        expected_retained = [(rid, statement) for rid, statement in method_relations if rid != CUTS[case]]
-        require(len(expected_retained) == 4 and control_relations == expected_retained, f"control relation cut or retained relations mismatch for {case}")
-        note = (control_root / f"{case}-control-equivalence-note.md").read_text(encoding="utf-8")
-        require(f"Removed relation: {CUTS[case]}." in note, f"control-equivalence note cut mismatch for {case}")
-        skill = (condition_root / "SKILL_ONLY" / f"{case}.md").read_text(encoding="utf-8")
-        require(re.search(r"^\d+\. \[S01\]", skill, re.M) is not None, f"stable skill source locators missing for {case}")
-
-    prompt_path = TASK / "benchmark" / "neutral-task-prompt.md"
-    prompt = prompt_path.read_bytes()
-    prompt_sha = sha(prompt)
-    prompt_text = prompt.decode("utf-8")
-    require(not re.search(r"facts_only|skill_only|linkless_method_control|\bmethod\b|\bskill\b|\bbroken\b", prompt_text, re.I), "neutral prompt contains a condition label or name")
-    schema = TASK / "benchmark" / "successor-output-r0.1.json"
-    task207_schema = ROOT / "ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/packets/PKT-B6092E/output-schema.json"
-    require(schema.read_bytes() == task207_schema.read_bytes(), "Task207 successor output schema was not reused byte-for-byte")
-
-    future = TASK / "future-tasks"
-    index = read_json(future / "FUTURE-TASK-INDEX.json")
-    sealed = read_json(TASK / "evaluator" / "sealed-r0" / "condition-map.json")
-    manifests = sorted((future / "manifests").glob("*.json"))
-    payloads = sorted((future / "payloads").glob("*.md"))
-    require(index.get("task_count") == 12 and len(index.get("tasks", [])) == 12, "future task index is not 12 entries")
-    require(len(manifests) == 12 and len(payloads) == 12, "expected twelve manifests and twelve payloads")
-    require(sealed.get("sealed") is True and sealed.get("successors_may_read") is False, "condition map is not sealed")
-    entries = sealed.get("entries", [])
-    require(len(entries) == 12, "sealed condition map is not 12 entries")
-    require({entry["condition"] for entry in entries} == set(CONDITIONS), "sealed map condition set differs")
-    require(all(sum(1 for entry in entries if entry["condition"] == condition) == 3 for condition in CONDITIONS), "sealed map does not have three tasks per condition")
-    entry_by_id = {entry["future_task_id"]: entry for entry in entries}
-    index_ids = {row["future_task_id"] for row in index["tasks"]}
-    require(index_ids == set(entry_by_id), "opaque index and sealed map task IDs differ")
-    orders_by_replicate: dict[int, set[tuple[str, ...]]] = {1: set(), 2: set(), 3: set()}
-    hashes_by_condition: dict[str, set[str]] = {condition: set() for condition in CONDITIONS}
-    maps = []
-
-    for manifest_path in manifests:
-        manifest = read_json(manifest_path)
-        require("condition" not in manifest and "replicate" not in manifest and "case_order" not in manifest, f"manifest exposes condition metadata: {manifest_path.name}")
-        require(manifest["fresh_conversation_required"] is True and manifest["conversation_replication_unit"] is True, "conversation independence missing")
-        require(manifest["prompt_sha256"] == prompt_sha, "prompt hash mismatch across task manifest")
-        require(manifest["output_schema_sha256"] == sha(schema.read_bytes()), "output schema hash mismatch")
-        allow = manifest["read_allowlist"]
-        require(len(allow) == 3, "successor allowlist must expose exactly prompt, payload, and schema")
-        require(all("evaluator/" not in item["path"] and "targets" not in item["path"] and "condition-map" not in item["path"] for item in allow), "successor allowlist exposes sealed evaluation data")
-        for item in allow:
-            require(sha((ROOT / item["path"]).read_bytes()) == item["sha256"], f"read-allowlist hash mismatch: {item['path']}")
-        payload_path = ROOT / manifest["payload_path"]
-        payload_bytes = payload_path.read_bytes()
-        payload = payload_bytes.decode("utf-8")
-        require(sha(payload_bytes) == manifest["payload_sha256"], f"payload hash mismatch: {payload_path.name}")
-        require(not re.search(r"FACTS_ONLY|SKILL_ONLY|LINKLESS_METHOD_CONTROL|\bMETHOD\b", payload), f"payload exposes an exact condition label: {payload_path.name}")
-        order = tuple(re.findall(r"^## Record (CASE\d\d)$", payload, re.M))
-        require(len(order) == 6 and set(order) == set(CASES), f"packet case order invalid: {payload_path.name}")
-        map_entry = entry_by_id.get(manifest["future_task_id"])
-        require(map_entry is not None and map_entry["packet_id"] == manifest["packet_id"], "manifest does not match sealed map")
-        require(list(order) == map_entry["case_order"], "packet order differs from sealed map")
-        orders_by_replicate[map_entry["replicate"]].add(order)
-        hashes_by_condition[map_entry["condition"]].add(json.dumps(manifest["case_source_sha256"], sort_keys=True))
-        for case in CASES:
-            fact_bytes = (case_root / case / "facts.md").read_bytes()
-            supplement = (condition_root / map_entry["condition"] / f"{case}.md").read_bytes()
-            expected_hash = sha(fact_bytes + b"\n\n" + supplement)
-            require(manifest["case_source_sha256"][case] == expected_hash, f"case source hash mismatch for {case}")
-            require(f"Source SHA-256: {expected_hash}" in payload, f"packet omits displayed source hash for {case}")
-        maps.append(map_entry)
-
-    require(all(len(orders_by_replicate[r]) == 1 for r in (1, 2, 3)), "matched conditions do not share order within replicate")
-    require(len({next(iter(orders_by_replicate[r])) for r in (1, 2, 3)}) == 3, "replicates do not use three distinct case orders")
-    require(all(len(hashes_by_condition[c]) == 1 for c in CONDITIONS), "condition semantics differ across its three replicates")
-
-    targets = read_json(TASK / "evaluator" / "sealed-r0" / "targets.json")
-    criteria = read_json(TASK / "evaluator" / "criteria-r1.json")
-    outcome = read_json(TASK / "evaluator" / "preregistered-outcome-rule.json")
+    targets = read_json(TASK / "evaluator" / "sealed-r2" / "targets.json")
+    criteria = read_json(TASK / "evaluator" / "criteria-r2.json")
+    outcome = read_json(TASK / "evaluator" / "preregistered-outcome-rule-r2.json")
     require(len(targets.get("cases", [])) == 6, "sealed target count differs from six")
-    for target in targets["cases"]:
-        require([link["id"] for link in target["required_method_links"]] == [f"R{i:02d}" for i in range(1, 6)], f"required method links incomplete for {target['case_id']}")
-    require(criteria["primary_endpoint"]["name"] == "METHOD_DEPENDENCY_SUCCESS", "wrong primary endpoint")
-    require(set(criteria["domains"]) == {"FACTUAL_FIDELITY", "EVIDENCE_BOUNDARY", "DECISION_QUALITY", "REFERENCE_INTEGRATION"}, "legacy score domains differ")
-    require(all(criteria["domains"][domain]["scale"] == [0, 1, 2] for domain in criteria["domains"]), "legacy score scale differs")
-    require(outcome["matched_contrasts_per_evaluator"] == 18, "matched denominator differs")
-    require(outcome["definitions"]["METHOD_CONTRAST_SUCCESS"] == "true iff M is true, L is false, and at least one of F or S is false.", "full contrast definition differs")
-    require(outcome["benchmark_disposition"]["PARTIAL"]["both_evaluators_must_independently_meet_all"][2].startswith("METHOD_LINKLESS_WIN in at least 10/18"), "PARTIAL threshold differs from command wording")
-    require(outcome["outputs_present_at_freeze"] is False and outcome["successors_launched"] is False and outcome["evaluators_launched"] is False, "future outputs or runs are marked present")
-
-    changed = subprocess.check_output(["git", "diff", "--name-only", BASE, "HEAD"], cwd=ROOT, text=True).splitlines()
-    allowed_external = {PATH_MANIFEST_REL}
-    require(changed and all(path.startswith(TASK_REL.as_posix() + "/") or path in allowed_external for path in changed), "changes extend outside Task217 subtree and its required generated path index")
-    path_manifest_path = ROOT / PATH_MANIFEST_REL
-    path_rows = [json.loads(line) for line in path_manifest_path.read_text(encoding="utf-8").splitlines() if line.strip()]
-    path_row_by_name = {row["path"]: row for row in path_rows}
-    task_tracked_paths = subprocess.check_output(["git", "ls-files", TASK_REL.as_posix()], cwd=ROOT, text=True).splitlines()
-    require(len(task_tracked_paths) == 94, "expected 94 tracked Task217 paths in repository path index")
-    require(all(path in path_row_by_name and path_row_by_name[path]["category"] == "EVALUATION_EVIDENCE" for path in task_tracked_paths), "Task217 paths are absent or misclassified in generated repository path index")
-    status = subprocess.check_output(["git", "status", "--porcelain"], cwd=ROOT, text=True)
-    require(status == "", "worktree is not clean")
-
-    freeze = TASK / "freeze" / "FREEZE-MANIFEST.json"
-    sidecar = TASK / "freeze" / "FREEZE-MANIFEST.sha256"
-    manifest = read_json(freeze)
-    external_index = manifest.get("external_generated_path_index", {})
-    require(external_index.get("path") == PATH_MANIFEST_REL, "external generated path-index reference missing")
-    require(external_index.get("sha256") == sha(path_manifest_path.read_bytes()), "external path-index hash mismatch")
-    require(external_index.get("task217_entry_count") == 94 and external_index.get("category") == "EVALUATION_EVIDENCE", "external Task217 path-index entry summary mismatch")
-    excluded = {freeze.relative_to(ROOT).as_posix(), sidecar.relative_to(ROOT).as_posix()}
-    actual_files = {p.relative_to(ROOT).as_posix() for p in TASK.rglob("*") if p.is_file()} - excluded
-    inventory = {entry["path"]: entry["sha256"] for entry in manifest["files"]}
-    require(set(inventory) == actual_files, "freeze inventory does not cover exactly all non-recursive task artifacts")
-    require(manifest["file_count"] == len(inventory), "freeze file count mismatch")
-    for path, expected in inventory.items():
-        require(sha((ROOT / path).read_bytes()) == expected, f"freeze SHA256 mismatch: {path}")
-    digest = sha(freeze.read_bytes())
-    expected_sidecar = f"{digest}  {freeze.relative_to(ROOT).as_posix()}\n"
-    require(sidecar.read_text(encoding="utf-8") == expected_sidecar, "freeze manifest sidecar mismatch")
-    print(f"TASK217_STEP06_VALIDATION_PASS files={len(inventory)} prompt_sha256={prompt_sha}")
+    check_primary_endpoint(criteria, targets, outcome)
+    check_case_controls(targets)
+    check_packet_secrecy(targets)
+    check_no_outputs(targets, outcome)  # Hard gate 10
+    report_path = TASK / "validation" / "VALIDATION-REPORT.md"
+    check_repository_closure_and_freeze(report_path.read_text(encoding="utf-8"))
     return 0
 
 

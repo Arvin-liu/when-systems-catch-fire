@@ -1,42 +1,56 @@
-# IGNITION-20260925-217 — Validation Report
+# IGNITION-20260925-217 R1 — Validation Report
 
-Status: PASS for benchmark preparation and freeze. No Successor or Evaluator outputs exist.
+This report supersedes the R0 preparation report for current scoring and packet definitions. R0 files, commits, and the initial local-validator pass remain preserved as reviewed-and-superseded history. R1 remains preparation-only and is not authorized for launch.
 
-## Anchors
+## Owner review and exact starting state
 
-- Formal base is Task207 head `24198effb2e2d94c19fe212244bbfcf47f995b2a`. PR #233 was rechecked Open + Draft + unmerged at that exact head on `work/IGNITION-20260923-207-prompt-neutral-skill-method-disentanglement-r0`.
-- Required workflows at the exact Formal base all completed successfully: q33 governance validation run `35910591160`, repository path accounting run `35910591179`, architecture pages run `35910591184`, and foundation validation run `35910591157`.
-- Owner PR #116 was rechecked Open + Draft + unmerged at `3cdbb8a8c8d41cec1af10aa63e85cacfb78b5818` on `records/ignition-216-owner-adjudication-packet-20260925`.
-- The Task217 command supplies the fixed Task216 scientific codes. PR #116 is cited only for its engineering scores, recomputation receipt, and runtime evidence because that packet says it did not make the final scientific adjudication.
+At the required starting head `29ae2b3f507a988d34362821ed7f8a0060a566e8`, PR #234 was Open + Draft + unmerged on `work/IGNITION-20260925-217-method-dependency-benchmark-r0`, based on `24198effb2e2d94c19fe212244bbfcf47f995b2a`. Foundation validation run `36127648408` completed with failure, not pending: `discovery:every-repository-path-accounted listed=6644 tracked=6738` and `generator:deterministic NONFUNCTION_CLAIM_OUTPUT_DRIFT`. The generated projections named by that failure were source-discovery, closure-summary, discovery-coverage, and the nonfunction-claim adjudication index.
 
-## Architecture and case design
+The initial freeze remains recorded as locally valid but rejected for launch because the primary endpoint was circular, retained atoms leaked target actions, and Foundation discovery had drift. No successor or evaluator output existed before repair. Three fresh read-only reviewers completed endpoint, leakage, and ambiguity proposals in parallel; their frozen reports are under `design/r1-independent-reviews/`.
 
-- Exactly six fresh synthetic case families cover candidate selection, boundary rejection, failure interpretation, missing measurement, revision lineage, and coexistence/non-collapse.
-- Each family has four condition records. The common case facts and each source file hash are verified. Each Skill condition is a reusable local procedure with stable source locators.
-- Every complete trace has seven stable atoms and five recorded relations. Each LINKLESS control retains the exact same seven atom lines and the four non-cut relation lines; its separately frozen control note identifies the single removed relation. No contradictory or nonsense content is added.
-- Each sealed case target maps its decision to the five required relation locators. The primary score requires the target decision and complete source-grounded relation use, so an answer sentence alone cannot score success.
+## R1 endpoint and case controls
 
-## Prompt, packets, and secrecy
+The primary endpoint is `TARGET_DECISION_SUCCESS`, a condition-neutral binary score in FACTS_ONLY, SKILL_ONLY, METHOD, and LINKLESS_METHOD_CONTROL. It scores the externally visible decision, boundary/precondition, required observation or stop condition, overclaims, and critical errors. It requires neither a source locator nor a METHOD relation locator. `METHOD_TRACE_USE_SUCCESS` is secondary and descriptive; the four 0–2 domains remain secondary descriptive measures.
 
-- One byte-identical neutral prompt is referenced by all 12 future task manifests. SHA-256: `4b5dc76b563aa6f45a9c3fa5ee155bc20fc8a82902da2a7a77d4dcc859d7a913`.
-- The 12 opaque manifests form four conditions with three conversations per condition. The three matched replicates use three distinct case orders; order is held constant across conditions within each replicate.
-- Successor manifests and the dispatch index contain no condition or replicate fields. Their read allowlists expose only the neutral prompt, assigned packet, and output schema. The sealed condition map and evaluator targets are excluded from every allowlist.
-- The local Task217 output schema is byte-identical to Task207’s `successor-output-r0.1`; SHA-256: `fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133`.
-- Future runtime fields are recorded as requirements only. Task217 selects no provider, model, version, reasoning effort, speed mode, or launch preset.
+All six synthetic case families have byte-identical METHOD and LINKLESS atom blocks. Each METHOD record contains five structured relations. LINKLESS removes exactly the sealed decision-bearing relation set: one relation in CASE01, CASE02, CASE03, CASE05, and CASE06; R01 and R04 in CASE04, where measurement selection and threshold interpretation are separate decision-bearing relations. Every LINKLESS case has two materially different licensed alternatives checked against facts, atoms, and retained relations, plus a human review row. The review records no target leakage from FACTS, SKILL, or LINKLESS atoms and demonstrates two-way ambiguity in all six cases.
 
-## Measurement and limits
+## Frozen future packets
 
-- Six sealed target decisions and R1 criteria were frozen before outputs. The primary endpoint is binary `METHOD_DEPENDENCY_SUCCESS`; all four legacy domains retain their 0–2 scale as secondary descriptive measures.
-- The pre-registered rule uses 18 matched case-family/replicate contrasts per Evaluator. `METHOD_CONTRAST_SUCCESS` drives family replication. The PARTIAL 10/18 threshold is the direct METHOD-over-LINKLESS win count, and both counts are reported separately.
-- Missing or malformed records count as false without reducing denominators. The conversation is the replication unit; the six case records remain nested. No inferential significance test is used.
-- This preparation does not establish general cognitive inheritance, causal method-artifact effects across runtimes or models, cross-model transfer, R1, or canonical promotion.
+The R2 target, criteria, and preregistered outcome rule were frozen before any outputs. Matched outcomes use M/L/F/S = METHOD/LINKLESS/FACTS/SKILL `TARGET_DECISION_SUCCESS`:
 
-## Repository and freeze integrity
+- `METHOD_LINKLESS_WIN = M and not L`
+- `METHOD_CONTRAST_SUCCESS = M and not L and (not F or not S)`
+- `FAMILY_DEPENDENCY_REPLICATED = METHOD_CONTRAST_SUCCESS in >=2 of 3 replicates`
 
-- Branch: `work/IGNITION-20260925-217-method-dependency-benchmark-r0`, created from the exact Formal base above. All benchmark artifacts remain under the Task217 subtree; the Task207 frozen subtree, classification rules/schema, and global architecture projections are unchanged.
-- The first exact-head repository-path-accounting run found the expected 94 new Task217 paths missing from the generated snapshot. The repository's prescribed generator updated only `ignition/data/foundation/repository-path-classification/classification-manifest.jsonl`, classifying all 94 paths under the existing `EVALUATION_EVIDENCE` rule. The subsequent local `--check` passed 10/10; no classifier rule or schema was edited.
-- No Owner packet files were imported as canonical truth. The command’s authority, source provenance caveat, and all Task217 artifacts are recorded inside the isolated subtree.
-- The freeze manifest inventories every file in this Task217 subtree except itself and its checksum sidecar; that inventory includes this report and the validator. It also records the SHA-256 and 94-path count of the required generated repository path index. The adjacent sidecar verifies the freeze manifest SHA-256.
-- The task-local validator checks case counts and hashes, atom equality and one-relation cuts, prompt identity, opaque manifests, order matching, map secrecy, fixed outcome thresholds, Task207 schema parity, repository path scope, clean worktree, and complete inventory/sidecar integrity.
+The design contains six families, four conditions, three replicates per condition, and twelve opaque future task IDs. All twelve manifests point to the same byte-identical neutral prompt, preserve matched order within each replicate, and expose exactly the prompt, assigned payload, and output schema. No manifest or payload contains a condition label. The condition map remains sealed and unreleased. Task217 selected no runtime.
 
-Final preparation state: six families; four conditions; twelve future tasks prepared; zero Successors launched; zero Evaluators launched; condition map unreleased; runtime unchosen.
+The Task217 output schema remains byte-identical to the Task207 schema at `ignition/reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/packets/PKT-B6092E/output-schema.json` (SHA-256 `fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133`). The neutral prompt SHA-256 remains `4b5dc76b563aa6f45a9c3fa5ee155bc20fc8a82902da2a7a77d4dcc859d7a913`.
+
+## Repository closure
+
+The Task217 validator now has hard gates for the condition-neutral endpoint, exact atom identity and relation cuts, target-bearing atom phrases, ambiguity proofs, identical prompts, hidden manifest labels, and zero Successor/Evaluator outputs. It also verifies the sealed map, R2 target/outcome definitions, Task207 schema parity, generated path-index coverage, clean worktree, and freeze inventory/sidecar. Repository path accounting and nonfunction closure repair are pending in this report snapshot; final local and exact-head workflow results will be recorded after the prescribed generators and checks run.
+
+The repository's classification rules/schema and the frozen Task207 subtree remain unchanged. The path-classification generator and nonfunction-claim generator are required to refresh their own generated projections; those outputs will not be manually edited.
+
+## Final state
+
+```text
+PRIMARY_ENDPOINT=TARGET_DECISION_SUCCESS
+PRIMARY_ENDPOINT_CONDITION_NEUTRAL=true
+METHOD_RELATION_CITATION_REQUIRED_FOR_PRIMARY=false
+METHOD_LINKLESS_ATOMS_BYTE_IDENTICAL_PER_CASE=true
+LINKLESS_TWO_WAY_AMBIGUITY_PROVEN=6/6
+CASE_FAMILIES=6
+CONDITIONS=4
+FUTURE_SUCCESSORS=12
+SUCCESSORS_LAUNCHED=0
+EVALUATORS_LAUNCHED=0
+CONDITION_MAP_RELEASED=false
+RUNTIME_CHOSEN_BY_TASK=false
+REPOSITORY_PATH_ACCOUNTING=PENDING
+ARCHITECTURE_PAGES=PENDING
+FOUNDATION_VALIDATION=PENDING
+R1_NOT_AUTHORIZED
+CROSS_MODEL_NOT_AUTHORIZED
+PR_STATE=OPEN_DRAFT_UNMERGED
+```

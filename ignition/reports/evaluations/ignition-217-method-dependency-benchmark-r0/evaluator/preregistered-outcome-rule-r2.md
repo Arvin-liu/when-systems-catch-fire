@@ -20,7 +20,7 @@ For each Evaluator, family, and replicate:
 - S = SKILL_ONLY `TARGET_DECISION_SUCCESS`.
 - `METHOD_LINKLESS_WIN = M and not L`.
 - `METHOD_CONTRAST_SUCCESS = M and not L and (not F or not S)`.
-- `FAMILY_DEPENDENCY_REPLICATED` is true for a family when `METHOD_CONTRAST_SUCCESS` occurs in at least two of its three matched replicates.
+- `FAMILY_DEPENDENCY_REPLICATED = METHOD_CONTRAST_SUCCESS in >=2 of 3 replicates`.
 
 `METHOD_TRACE_USE_SUCCESS` and the four 0–2 descriptive domains are reported separately. They do not replace, gate, or average into M/L/F/S.
 
