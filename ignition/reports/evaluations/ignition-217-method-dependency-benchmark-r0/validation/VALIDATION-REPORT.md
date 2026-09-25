@@ -34,12 +34,17 @@ Repository path accounting passed 10/10. The prescribed generator refreshed only
 
 The first final-head Foundation workflow (`36146123903`, head `7fe8e2a5f53f7080b3c1a3f143c1e388a62fc003`) reached the human-results gate and found `HUMAN_RESULT_OUTPUT_DRIFT`. The configured human-results generator scans Markdown under `reports/`; all 80 newly indexed source documents are under the Task217 evaluation subtree. Running `python3 tools/governance/build_human_results.py` regenerated only these generator-owned navigation projections: `ignition/data/governance/human-results/result-ledger.jsonl`, `ignition/data/governance/human-results/census.json`, and `ignition/RESULTS/CHRONOLOGY.md`. The result ledger now has 757 source records; its configured claim ceiling remains navigation-only. These projections add no scientific adjudication or lifecycle promotion, and their exact paths and hashes are recorded in the freeze manifest.
 
+The next exact-head Foundation attempt (`36156192485`, job `108141657042`) passed the human-results and self-correction gates, then stopped at the knowledge-experience check because the Task217 validation report lacked a registered first-seen date. From the full-history clone, `python3 tools/governance/gen_source_first_seen.py` registered the Task217 Markdown sources; the standard knowledge-experience generator then rebuilt its affected projections. `build_knowledge_experience.py --check` and `validate_knowledge_experience.py` passed: 805 cards, 698 changes, 726 layered readings, 24,887 search records, 1,657 aliases, and 29,606 checked links across eight two-click pages. The source-first-seen registry and changed knowledge-experience projections are generated repository data, not new scientific adjudication or lifecycle promotion; their exact paths and SHA-256 values are frozen and checked by the Task217 validator. After four new knowledge shard paths entered the tracked set, the prescribed path-classification and nonfunction generators were rerun; final discovery accounts for 6,759/6,759 tracked files, while the canonical claim registry remains 18,003 records with no disposition promotion.
+
+Recording this closure in the validation report also changed the configured self-correction inputs. The standard `python3 tools/governance/run_self_correction.py` generator refreshed only `ignition/data/governance/self-correction/audit-findings.jsonl` and `ignition/RESULTS/SELF-CORRECTION-AUDIT.md`; its subsequent `--check` passed with 717 deltas and 10 rules. These are generator-owned audit projections, and their hashes are recorded in the freeze manifest.
+
 ## Final state
 
 ```text
 PRIMARY_ENDPOINT=TARGET_DECISION_SUCCESS
 PRIMARY_ENDPOINT_CONDITION_NEUTRAL=true
 METHOD_RELATION_CITATION_REQUIRED_FOR_PRIMARY=false
+METHOD_TRACE_USE_ENDPOINT=SECONDARY
 METHOD_LINKLESS_ATOMS_BYTE_IDENTICAL_PER_CASE=true
 LINKLESS_TWO_WAY_AMBIGUITY_PROVEN=6/6
 CASE_FAMILIES=6
@@ -50,6 +55,7 @@ EVALUATORS_LAUNCHED=0
 CONDITION_MAP_RELEASED=false
 RUNTIME_CHOSEN_BY_TASK=false
 REPOSITORY_PATH_ACCOUNTING=PASS
+ARCHITECTURE_PAGES=PASS
 FOUNDATION_VALIDATION=PASS
 R1_NOT_AUTHORIZED
 CROSS_MODEL_NOT_AUTHORIZED

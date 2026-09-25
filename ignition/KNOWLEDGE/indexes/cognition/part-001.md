@@ -1374,10 +1374,30 @@
   - 可搜索名称：NFC-c5cfd77205ff11b2 / Affected Human Front Door, Human Surface, Current projection, compiler, Current state, ordinal, map-freeze and related u
   - 来源：`agent-results/IGNITION-20260828-147-result.md`
   - 依赖：—；被引用：—
+- [Agent A — Architecture alignment proposal](../../ASSET-CARDS.md#asset-hr-ebb1fa6b2f55aaaf)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Agent A — Architecture alignment proposal / A
+  - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/A.md`
+  - 依赖：—；被引用：—
 - [Agent agreement、模型互评或重复回答不能作为 `EVIDENCE / SOURCES`；它们最多是需要独立核验的 observation。validator 不接纳 `AGENT_CONSENSUS` 或 `MODEL_MEM](../../../OPERATING-METHOD.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-33c4db706350e44f / Agent agreement、模型互评或重复回答不能作为 `EVIDENCE / SOURCES`；它们最多是需要独立核验的 observation。validator 不接纳 `AGENT_CONSENSUS` 或 `MODEL_MEM
   - 来源：`OPERATING-METHOD.md`
+  - 依赖：—；被引用：—
+- [Agent B — Adversarial benchmark designer proposal](../../ASSET-CARDS.md#asset-hr-814e2fde7628632c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Agent B — Adversarial benchmark designer proposal / B
+  - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/B.md`
+  - 依赖：—；被引用：—
+- [Agent C — Control-equivalence and leakage review](../../ASSET-CARDS.md#asset-hr-7d51714b30f09ade)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Agent C — Control-equivalence and leakage review / C
+  - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/C.md`
+  - 依赖：—；被引用：—
+- [Agent D — Measurement and preregistration proposal](../../ASSET-CARDS.md#asset-hr-04b6095797c8bb89)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Agent D — Measurement and preregistration proposal / D
+  - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/D.md`
   - 依赖：—；被引用：—
 - [Agent Platform blast-radius report, Current State projections, Task143 runner](../../../reports/operations/ignition-143-step18-full-regression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1523,6 +1543,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F74294207589ACB3 / APP不Agent化必死：d_relative\(t\)=d_得到大脑\(t\)/d_竞品\(t\)单调递增。竞品d在降（Agent能力让退出代价趋零），得到大脑d不变→穿过θ_d时P_forward归零。内容优势=f\(P_infra\)≈0的乘法归零 / IMPLICIT-F74294207589ACB3
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Architecture question](../../ASSET-CARDS.md#asset-hr-992246db470a640a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Architecture question / ARCHITECTURE-QUESTION
+  - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/ARCHITECTURE-QUESTION.md`
   - 依赖：—；被引用：—
 - [are recovery accelerators and never a second truth source.](../../../agent-results/IGNITION-20260820-127-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f61a8cc767427aaf / from .live_execution import LiveExecutionError, _cost, _safe_summary, _transport_evidence
   - 来源：`agent_federation/live_task137.py`
-  - 依赖：—；被引用：—
-- [from .openclaw import OpenClawAdapter, OpenClawAdapterError](../../../agent_federation/adapters/__init__.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e79d7794625968c7 / from .openclaw import OpenClawAdapter, OpenClawAdapterError
-  - 来源：`agent_federation/adapters/__init__.py`
-  - 依赖：—；被引用：—
-- [from .structured_result_contract import StructuredResultContractError, StructuredResultEvidence, extract_synthetic_resul](../../../agent_federation/__init__.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-7bbda084df2ff95d / from .structured_result_contract import StructuredResultContractError, StructuredResultEvidence, extract_synthetic_resul
-  - 来源：`agent_federation/__init__.py`
-  - 依赖：—；被引用：—
-- [future choice space and precaution principle. It also keeps the charter's](../../../agent-results/IGNITION-20260828-146-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-fe32cee746c16400 / future choice space and precaution principle. It also keeps the charter's
-  - 来源：`agent-results/IGNITION-20260828-146-result.md`
-  - 依赖：—；被引用：—
-- [G_δ：创业普遍结构不可判定（E6 pending）。保留 pending。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2fb37f482ab6d37a / G_δ：创业普遍结构不可判定（E6 pending）。保留 pending。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
-  - 依赖：—；被引用：—
-- [G_δ：女性群体普遍率不可判定（E5 pending）。保留 pending。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-844b1c595262819c / G_δ：女性群体普遍率不可判定（E5 pending）。保留 pending。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
   - 依赖：—；被引用：—

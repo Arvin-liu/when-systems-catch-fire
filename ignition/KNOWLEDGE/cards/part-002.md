@@ -644,6 +644,26 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Step09 — Path Accounting and Fixed Point`, `step09-path-accounting`
 
+<a id="asset-hr-026cc267d69c82cb"></a>
+## Owner Review R1 — initial freeze rejected for launch
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-026CC267D69C82CB` · [reports/evaluations/ignition-217-method-dependency-benchmark-r0/OWNER-REVIEW-R1.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/OWNER-REVIEW-R1.md)
+- **为什么产生：** 此来源记录了什么：Owner Review R1 — initial freeze rejected for launch？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The R0 freeze passed its task-local validator, but the Owner/GPT review rejected it for launch readiness. This record preserves the initial result and the three independent read-only proposals before synthesis.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-217-method-dependency-benchmark-r0/OWNER-REVIEW-R1.md`, `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **演化历史：** 2026-09-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Owner Review R1 — initial freeze rejected for launch`, `OWNER-REVIEW-R1`
+
 <a id="asset-hr-03bc02f942aee639"></a>
 ## Full Object Inventory
 
@@ -684,6 +704,26 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `121Q9 Global Validation`, `121Q9-global-validation`
 
+<a id="asset-hr-048f37968c6d4686"></a>
+## Frozen read-only proposal A — endpoint validity
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-048F37968C6D4686` · [reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/A-endpoint.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/A-endpoint.md)
+- **为什么产生：** 此来源记录了什么：Frozen read-only proposal A — endpoint validity？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Review basis: Task217 R0 evaluator criteria, sealed targets, and outcome rule at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/A-endpoint.md`, `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **演化历史：** 2026-09-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`
+- **可搜索名称：** `Frozen read-only proposal A — endpoint validity`, `A-endpoint`
+
 <a id="asset-hr-04914b1570918ae6"></a>
 ## Task172 Step09 field 57: LINGUISTICS
 
@@ -723,6 +763,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260824-138 — Step 06 Capability / Auth / Billing Re-attestation`, `ignition-138-step06-capability-reauth`
+
+<a id="asset-hr-04b6095797c8bb89"></a>
+## Agent D — Measurement and preregistration proposal
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-04B6095797C8BB89` · [reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/D.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/D.md)
+- **为什么产生：** 此来源记录了什么：Agent D — Measurement and preregistration proposal？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Read-only proposal. No repository files were changed.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/D.md`, `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **演化历史：** 2026-09-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`
+- **可搜索名称：** `Agent D — Measurement and preregistration proposal`, `D`
 
 <a id="asset-hr-04e3c04b5c9de706"></a>
 ## 101 人类可读知识表面与持续自我纠错引擎
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-137 Step 13 — Steering / Goal / Memory boundary`, `ignition-137-step13-steering-goal-memory-boundary`
-
-<a id="asset-hr-081b7e1fafaa5756"></a>
-## 104 双 088 归并与外部证据层定版报告
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-081B7E1FAFAA5756` · [reports/external-research/104-dual-088-reconciliation.md](../../reports/external-research/104-dual-088-reconciliation.md)
-- **为什么产生：** 此来源记录了什么：104 双 088 归并与外部证据层定版报告？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** PARTIALEXTERNALEVIDENCELAYERWITHEXPLICITBLOCKERS
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/external-research/104-dual-088-reconciliation.md`, `104-DUAL-088-RECONCILIATION`
-- **演化历史：** 2026-07-13: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `104 双 088 归并与外部证据层定版报告`, `104-dual-088-reconciliation`
-
-<a id="asset-hr-0854899207c74d5d"></a>
-## IGNITION-137 Step 08 — dry-run readiness
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-0854899207C74D5D` · [reports/operations/ignition-137-step08-dry-run-readiness.md](../../reports/operations/ignition-137-step08-dry-run-readiness.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-137 Step 08 — dry-run readiness？
-- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
-- **当前结果：** Status: READYFORONELIVECODEXATTEMPT
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-137-step08-dry-run-readiness.md`, `137-STEP08-DRY-RUN-READINESS`
-- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-137 Step 08 — dry-run readiness`, `ignition-137-step08-dry-run-readiness`
-
-<a id="asset-hr-086dff9b702e2613"></a>
-## IGNITION-20260827-142 Step 06 — Gemini Public Interface Audit
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-086DFF9B702E2613` · [reports/operations/ignition-142-step06-gemini-public-audit.md](../../reports/operations/ignition-142-step06-gemini-public-audit.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260827-142 Step 06 — Gemini Public Interface Audit？
-- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
-- **当前结果：** The fresh public probe resolved gemini, observed version 0.53.1, and received exit 0 from both --version and --help. The help surface exposes noninteractive prompt, output-format, approval/sandbox and tool-related flags. The audit records only path/version/help digests and selected public flags;…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-142-step06-gemini-public-audit.md`, `142-STEP06-GEMINI-PUBLIC-AUDIT`
-- **演化历史：** 2026-08-27: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260827-142 Step 06 — Gemini Public Interface Audit`, `ignition-142-step06-gemini-public-audit`

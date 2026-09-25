@@ -36,6 +36,12 @@ GENERATED_HUMAN_RESULTS_OUTPUTS = {
     "ignition/data/governance/human-results/census.json",
     "ignition/data/governance/human-results/result-ledger.jsonl",
 }
+GENERATED_SELF_CORRECTION_OUTPUTS = {
+    "ignition/data/governance/self-correction/audit-findings.jsonl",
+    "ignition/RESULTS/SELF-CORRECTION-AUDIT.md",
+}
+SOURCE_FIRST_SEEN_REL = "ignition/data/governance/knowledge-experience/source-first-seen.json"
+KNOWLEDGE_EXPERIENCE_MANIFEST_REL = "ignition/data/governance/knowledge-experience/manifest.json"
 
 
 def require(value: bool, message: str) -> None:
@@ -335,9 +341,19 @@ def check_no_outputs(targets: dict, outcome: dict) -> None:
 
 def check_repository_closure_and_freeze(report: str) -> None:
     changed = subprocess.check_output(["git", "diff", "--name-only", BASE, "HEAD"], cwd=ROOT, text=True).splitlines()
-    allowed_external = {PATH_MANIFEST_REL} | GENERATED_NONFUNCTION_OUTPUTS | GENERATED_HUMAN_RESULTS_OUTPUTS
+    generated_knowledge_paths = {
+        path for path in changed
+        if path == SOURCE_FIRST_SEEN_REL
+        or path.startswith("ignition/KNOWLEDGE/")
+        or path.startswith("ignition/data/governance/knowledge-experience/")
+    }
+    allowed_external = {PATH_MANIFEST_REL} | GENERATED_NONFUNCTION_OUTPUTS | GENERATED_HUMAN_RESULTS_OUTPUTS | GENERATED_SELF_CORRECTION_OUTPUTS | generated_knowledge_paths
     require(changed and all(path.startswith(TASK_REL.as_posix() + "/") or path in allowed_external for path in changed), "changes extend outside Task217 and prescribed generated projections")
     require(not any(path.startswith("ignition/reports/evaluations/ignition-207-") for path in changed), "frozen Task207 subtree changed")
+    knowledge_manifest = read_json(ROOT / KNOWLEDGE_EXPERIENCE_MANIFEST_REL)
+    generated_knowledge_outputs = {"ignition/" + path for path in knowledge_manifest.get("generated_outputs", {})}
+    expected_knowledge_paths = generated_knowledge_outputs | {SOURCE_FIRST_SEEN_REL, KNOWLEDGE_EXPERIENCE_MANIFEST_REL}
+    require(generated_knowledge_paths <= expected_knowledge_paths, "knowledge-experience external path is not declared by its generated manifest")
 
     path_manifest_path = ROOT / PATH_MANIFEST_REL
     path_rows = [json.loads(line) for line in path_manifest_path.read_text(encoding="utf-8").splitlines() if line.strip()]
@@ -363,6 +379,35 @@ def check_repository_closure_and_freeze(report: str) -> None:
     require(human_results.get("new_task217_source_documents") == 80, "external generated human-results Task217 source count differs")
     for path, expected in human_result_hashes.items():
         require((ROOT / path).is_file() and sha((ROOT / path).read_bytes()) == expected, f"external generated human-results SHA-256 mismatch: {path}")
+    self_correction = freeze.get("external_generated_self_correction", {})
+    self_correction_files = self_correction.get("files", [])
+    self_correction_hashes = {item.get("path"): item.get("sha256") for item in self_correction_files}
+    require(set(self_correction_hashes) == GENERATED_SELF_CORRECTION_OUTPUTS, "external generated self-correction inventory differs")
+    require(self_correction.get("generator") == "python3 tools/governance/run_self_correction.py", "self-correction generator record differs")
+    for path, expected in self_correction_hashes.items():
+        require((ROOT / path).is_file() and sha((ROOT / path).read_bytes()) == expected, f"external generated self-correction SHA-256 mismatch: {path}")
+    nonfunction_files = freeze.get("external_generated_nonfunction_claim_files", [])
+    nonfunction_hashes = {item.get("path"): item.get("sha256") for item in nonfunction_files}
+    require(set(nonfunction_hashes) == GENERATED_NONFUNCTION_OUTPUTS, "external generated nonfunction-claim inventory differs")
+    for path, expected in nonfunction_hashes.items():
+        require((ROOT / path).is_file() and sha((ROOT / path).read_bytes()) == expected, f"external generated nonfunction-claim SHA-256 mismatch: {path}")
+    knowledge = freeze.get("external_generated_knowledge_experience", {})
+    knowledge_files = knowledge.get("files", [])
+    knowledge_hashes = {item.get("path"): item.get("sha256") for item in knowledge_files}
+    require(set(knowledge_hashes) == generated_knowledge_paths, "external generated knowledge-experience inventory differs from changed paths")
+    require(knowledge.get("source_first_seen_path") == SOURCE_FIRST_SEEN_REL, "source-first-seen registry reference differs")
+    require(knowledge.get("new_task217_source_documents") == 80, "knowledge-experience Task217 source count differs")
+    require(knowledge.get("generators") == ["python3 tools/governance/gen_source_first_seen.py", "python3 tools/governance/build_knowledge_experience.py"], "knowledge-experience generator record differs")
+    for path, expected in knowledge_hashes.items():
+        require((ROOT / path).is_file() and sha((ROOT / path).read_bytes()) == expected, f"external generated knowledge-experience SHA-256 mismatch: {path}")
+    first_seen_hash = sha((ROOT / SOURCE_FIRST_SEEN_REL).read_bytes())
+    require(knowledge_manifest.get("source_inputs", {}).get("data/governance/knowledge-experience/source-first-seen.json") == first_seen_hash, "knowledge-experience manifest source-first-seen hash differs")
+    output_hashes = knowledge_manifest.get("generated_outputs", {})
+    for path, expected in knowledge_hashes.items():
+        if path == SOURCE_FIRST_SEEN_REL or path == KNOWLEDGE_EXPERIENCE_MANIFEST_REL:
+            continue
+        relative = path.removeprefix("ignition/")
+        require(output_hashes.get(relative) == expected, f"knowledge-experience manifest output hash differs: {path}")
     excluded = {freeze_path.relative_to(ROOT).as_posix(), sidecar_path.relative_to(ROOT).as_posix()}
     actual_files = {path.relative_to(ROOT).as_posix() for path in TASK.rglob("*") if path.is_file()} - excluded
     inventory = {item["path"]: item["sha256"] for item in freeze.get("files", [])}
@@ -381,6 +426,7 @@ def check_repository_closure_and_freeze(report: str) -> None:
         "PRIMARY_ENDPOINT=TARGET_DECISION_SUCCESS",
         "PRIMARY_ENDPOINT_CONDITION_NEUTRAL=true",
         "METHOD_RELATION_CITATION_REQUIRED_FOR_PRIMARY=false",
+        "METHOD_TRACE_USE_ENDPOINT=SECONDARY",
         "METHOD_LINKLESS_ATOMS_BYTE_IDENTICAL_PER_CASE=true",
         "LINKLESS_TWO_WAY_AMBIGUITY_PROVEN=6/6",
         "CASE_FAMILIES=6",
@@ -390,6 +436,9 @@ def check_repository_closure_and_freeze(report: str) -> None:
         "EVALUATORS_LAUNCHED=0",
         "CONDITION_MAP_RELEASED=false",
         "RUNTIME_CHOSEN_BY_TASK=false",
+        "REPOSITORY_PATH_ACCOUNTING=PASS",
+        "ARCHITECTURE_PAGES=PASS",
+        "FOUNDATION_VALIDATION=PASS",
         "R1_NOT_AUTHORIZED",
         "CROSS_MODEL_NOT_AUTHORIZED",
         "PR_STATE=OPEN_DRAFT_UNMERGED",

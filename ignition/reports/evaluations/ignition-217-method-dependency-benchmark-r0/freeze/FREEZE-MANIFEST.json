@@ -4,28 +4,468 @@
   "command_blob_sha": "86dc6df5c40ae27375773f58f6d339abc8003753",
   "command_path": "Arvin-liu/1111:agent-commands/IGNITION-20260925-217-R1-BENCHMARK-VALIDITY-REPAIR.md",
   "condition_map_released": false,
-  "successors_launched": false,
-  "evaluator_outputs_exist": false,
-  "successor_outputs_exist": false,
-  "evaluators_launched": false,
   "created_at_utc": "2026-09-25T15:29:29+00:00",
-  "freeze_status": "R1_REPAIRED_LOCAL_EXACT_HEAD_CI_PENDING",
-  "primary_endpoint": "TARGET_DECISION_SUCCESS",
-  "primary_endpoint_condition_neutral": true,
-  "method_relation_citation_required_for_primary": false,
-  "linkless_two_way_ambiguity_proven": "6/6",
-  "future_task_count": 12,
+  "evaluator_outputs_exist": false,
+  "evaluators_launched": false,
   "excluded_self_references": [
     "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.json",
     "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.sha256"
+  ],
+  "external_generated_human_results": {
+    "check": "python3 tools/governance/build_human_results.py --check passed; HUMAN_RESULTS_OK records=757",
+    "files": [
+      {
+        "path": "ignition/RESULTS/CHRONOLOGY.md",
+        "sha256": "cf6a089acfeb3eec249ec30a4acdbfec0e87bcaddf357b4e65fa8531f48c8d6f"
+      },
+      {
+        "path": "ignition/data/governance/human-results/census.json",
+        "sha256": "f920c455d159557865b13e3699c773d4749636c705d5d6d834776ed18ff1373d"
+      },
+      {
+        "path": "ignition/data/governance/human-results/result-ledger.jsonl",
+        "sha256": "073be07e060221013bdac778b1375a7b364f02f341cd0000b7779b32814b289b"
+      }
+    ],
+    "generator": "python3 tools/governance/build_human_results.py",
+    "new_task217_source_documents": 80,
+    "reason": "The configured reports/ source root includes 80 Task217 Markdown documents; outputs remain navigation-only under the configured claim ceiling."
+  },
+  "external_generated_knowledge_experience": {
+    "audit": "python3 tools/governance/validate_knowledge_experience.py passed; KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=805 changes=698 layers=726 search=24887 aliases=1657 links=29606 two_click_pages=8",
+    "changed_generated_output_count": 93,
+    "check": "python3 tools/governance/build_knowledge_experience.py --check passed; KNOWLEDGE_EXPERIENCE_OK cards=805 changes=698 layered=726 search=24887",
+    "files": [
+      {
+        "path": "ignition/KNOWLEDGE/ASSET-CARDS.md",
+        "sha256": "90e7e8a93f8657ab2b02d555cbf118861019abf9a6b864c327c7cb44964781a8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/COVERAGE.md",
+        "sha256": "cb44c5b6bbfd24f5908542eaff42b6e4fa3b5f6c89ad9b7f9bab124e675ddad2"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/MAP.md",
+        "sha256": "8d29148b73fe7eac92c6b7f0c43fc7de53a1e26088733aa0be69f8eee85aece1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/READING-LAYERS.md",
+        "sha256": "5be5e5c21ef265fe1c297940190930683c203a18d0465a162ebe2d6c43a1d1db"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/README.md",
+        "sha256": "ed0025a8c0b8d9dec5b3abef6645d8ce935c376657b5f0c57e8c024763447ca2"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/SEARCH.md",
+        "sha256": "21b195c7c8580468fdcebb487c092d7cdadace50ae4500e3f87c0ed3cdf30f49"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/WHATS-NEW.md",
+        "sha256": "b6fe2733eb7d61b5f898129c662965d049d07d1b3f88cc4586ec2d2b2923706b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-002.md",
+        "sha256": "3a74e4477ed202882f924a6120544d680590bc18bc907f6755d409f075255fb8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-003.md",
+        "sha256": "ec5b41d242f150346a5220e33a60ac412056767347fb76d936e82eede2ba89ab"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-004.md",
+        "sha256": "0348851325bef160d446173e80d2da8f619b3aeb24dddbb5019b4d77327206b8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-005.md",
+        "sha256": "1e4b03eb6b9bd73fa3737e45a93fe43e24a61a6f97f9757b6832be22fb4d6eb3"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-006.md",
+        "sha256": "b2f7585fe5a7053d4560c9092ab3d7cb033d62269ab943aab3a305d466958b77"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-007.md",
+        "sha256": "cecaa1f13bffd4062436ef2c82c2fd7d239ab86d9d9b45972adf2323fc156978"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-008.md",
+        "sha256": "90b2c6a499e19dcfb6b1224dec0ec804f77951d48af71d8c2a15f38891f9b694"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-009.md",
+        "sha256": "b50eddbcd43964e1515e19da203c221fa3ac65da79858f8588a919ae1280cd24"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-010.md",
+        "sha256": "bc9457df6491038afb472f71767e0ce4e8a34548e521d66a2792b818f32531ec"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-011.md",
+        "sha256": "fa9d94358147ab62e24329376a8f209594826145138a74b85b3d22e7a7cd653e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-012.md",
+        "sha256": "27ddb401334305bdc20096c1d737945c7da684b4c22f5b020bb4c65840de42e8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-013.md",
+        "sha256": "8443eb4bcb20173b453474a6224b241555015ff439ccc7a9e57ac2f75faeaf12"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-014.md",
+        "sha256": "1cea1566e8a528a4c97b24fa2e90c5605bc7ec1242db54a97599d74051aef324"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-015.md",
+        "sha256": "88e5f473e61c5954114f215f884da37306b7d7412ed61799b4f52446dba69c5b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-016.md",
+        "sha256": "b38a129d3c6a465c29f8d1b811b404506efd2b680450efc344df7ac50c75b212"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-017.md",
+        "sha256": "ce0e94bab7e2a4294bf61ac6b59ba7d80b0ca8d8b09d24e602f474d1cc380fa7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance.md",
+        "sha256": "1ff9bb7e25aeda581bdb083f6b554973b7a753830ea58025bb282eaf27e5574f"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-006.md",
+        "sha256": "67f1d671578acdac65353b1e6d92c4ef72a4c61fda80a588df5aaa8be0069f22"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-007.md",
+        "sha256": "1b109ebb62611639f297aa65596ca1099c965e65a34bfb3ef630c89fabbbb9f4"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-008.md",
+        "sha256": "3ba05e2f99f2c1cea25426a71d4a89a5d5a18d53e6412392171164a43872b1ba"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-009.md",
+        "sha256": "d9fb25b40f72113df32bece703ff8a1b9bb72cc6486a258d5aee0fed1f519641"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-010.md",
+        "sha256": "b477800f94a9dc0f9138e7e49875e2af29a8466600e912a497dc0c6891c8ec96"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-011.md",
+        "sha256": "ed333809a82f23875e572e34d20e2e24513b59fec903b86f668e70656ba2218b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-012.md",
+        "sha256": "032ba7fdb4b6267a34ca9b88cd90933e152b9e38dc611e6a67bdcbbba6ef2dfe"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-013.md",
+        "sha256": "3c1002e147636e4c67a5ef997b7ad7bd55a076f085973865197b152a230ed81e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-014.md",
+        "sha256": "361a7a4f6749c5f8c67460cf2d45f8898ba775dc401839f0bc2c82d2ecea5752"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-015.md",
+        "sha256": "e753799b25c56fbf07c826c49354eeb4781105f6e350b1d3dc30281a7efa4a15"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition.md",
+        "sha256": "9ee1f2271bab95654981ddab86e1479229d85464174e2fd078c2c76505ce4dbb"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-001.md",
+        "sha256": "53e43ceaf6d412869034a1e1a8baaae4633a275979f2580106f7cb7476aa3703"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-002.md",
+        "sha256": "ac381d8a25b55ae89e19c1fef25fc2fde1ef17d9bbb356718a75c7eb5a4d9e03"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-003.md",
+        "sha256": "12c3eaac4d7133b46856abe7ad6f2af14cb4043c6dca775016db044ad054763a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics.md",
+        "sha256": "a80239227551ab140251dd027d0c89724c1432f64f5c3fb70ceb420d3cad8d2c"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-004.md",
+        "sha256": "f4c1710fb59e921d369ff6f0e642c4fb562082a4c106bc4aef6353a34883a004"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-005.md",
+        "sha256": "43b71b552f56d594cb1b1a41563f883b6d245388619c7c31ac13eb14692d9197"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-006.md",
+        "sha256": "517d7d0ed8760cb958fad9e58437c1e8fba9c697558fa4e9f5c2090a0952681a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-007.md",
+        "sha256": "6bb2bcde285516313bae324320f7a05898bd2a3e7c0a4f5bed4fcf862cc0cab1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-008.md",
+        "sha256": "8152cd071621905b1254bae413aae5ec671a1255351e962ae97a65a492accad4"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-009.md",
+        "sha256": "33fc92308f0cc6cd9b5bae2a6d8e3498072a3bea925ae69b0d6c7e8d6980cdda"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-010.md",
+        "sha256": "f5a40a95b0580c9515ede47c75082476e4c33e4b491b379b3b0f0637ed3d6800"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-011.md",
+        "sha256": "6c5d8b17500e2b794220d797f0e289126f28c2a6ba235080a94cab3af79398a9"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-012.md",
+        "sha256": "e8630358e3b01b6351dbd492bcfee61a9d0687dd79c0cdfbeb65fbdb95a2cc3e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-013.md",
+        "sha256": "1bbdd150f6f4f8891da0c9d852126b754a17711ced1b98eeeeca9981479ca7ac"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-014.md",
+        "sha256": "f283ba6c104d94675de54a080008527fe847f75ab2e57a88c8c91aa74554f770"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-015.md",
+        "sha256": "e4bd6f581aa65dd2d528ad1d6086a298d3702aca43fd87064105f74dc7562012"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-016.md",
+        "sha256": "9ebf183de3affbd23fda46c3f92cf54cdc0416dbd5006033dc28f8df0a2eb785"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-017.md",
+        "sha256": "501c7ca701cd115ceacbd7ea67598d9d13b769c4b914a34247876ee613dd5260"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-018.md",
+        "sha256": "1b20237742d0cdfc7ea87eca87ad8fabc101eb46305cde3b1fc4b7f3f1d3d4c5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-019.md",
+        "sha256": "094ec712343cfc412448ddcf429d68ed4e0cc4ab94d3f34e1e534b673d4dd166"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-020.md",
+        "sha256": "39ed7c34ed6b279d91c57bc61fd2431376fc76022f654cde4427427d5bc42a11"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence.md",
+        "sha256": "d8589c37b946c55dd9a9918f98916c0d790b5cd40dbb05ed49339b4f9825e426"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-003.md",
+        "sha256": "42e7fffafaa5fbf4027416230a94c26806bdac09c217228f6592ed280e28667b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-004.md",
+        "sha256": "3a57e982c7c800ce5e6969d8953b8a2854d86b0d99c3a2e360d8050f71b56d57"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-005.md",
+        "sha256": "b7611d16f031681803f572f73d1249accffb6fcf82b68b28bbe05e9964276486"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-006.md",
+        "sha256": "c3f05d61837a26b1f98095bdea3e69d206ad4b8f6c6d9cf3c889308ca58854c5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-007.md",
+        "sha256": "004486b07514c7a87072ec543397c9ac34dbe0dc89c050164b55acbe338c5951"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems.md",
+        "sha256": "39cbdcb1a5da6665949b51d7bc0f79e1eebb71965931ba93ca0cece9c05043c2"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-001.md",
+        "sha256": "56c8eea4fa268b3b8e389f138fed3ecadec8a0796f89c76e02b83486a46e1bf1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-002.md",
+        "sha256": "c93482871dfdabb2bb702fa402c4f50ac0392670ab46a248bd39fc7dd77b501b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-003.md",
+        "sha256": "df1eac6eb6a0fa77d2695aaf060bed4409799af4872a332e6739ffa1e18f4f33"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-004.md",
+        "sha256": "7f7f15ed100a5b15bc5c18eab7b5197e88dfde7d85970be6868a7d93ddb451fb"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-005.md",
+        "sha256": "26b9e0abc3d44d48389dda433997dc8d09256a88ee56906948e8bccad946bf5c"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-006.md",
+        "sha256": "851d3854e7bdadb8f997f35ac51b463a2eb1841e74169268115d6b035d90bd25"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/writing_publication.md",
+        "sha256": "45f7c761693fd93b043159027189a493b16e52d3d287d0aec8659c6687664076"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/writing_publication/part-001.md",
+        "sha256": "1f35ece0871209b609a5d74e815bbcf040eb75b60087ed376de04c7fed4fe50e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-001.md",
+        "sha256": "41acd69a4c0c9cf6f1a0e182673e2ae54a38b9b8b21657aa93dd6a1c2ff26d02"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-002.md",
+        "sha256": "c9c5f788609307332d738a5733e09a9f654086dff35f66e1fadd122218785993"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-003.md",
+        "sha256": "a46d025f1a3e94c0116ed7537a37fcf027092393afc35e1af2156228e03492cd"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-004.md",
+        "sha256": "2f199d01129b1c0bd3b913bf134f43c0876d231fcafe28c71d3ef8314ccfd4f3"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-005.md",
+        "sha256": "b776f71874d3444252878a0924e34056805f2325cd4ea7ba225533b6107ed260"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-006.md",
+        "sha256": "01c7daf60d27e2c8e7e8c80cca9c9852fc92c1fa9bbf3576716d0e4ca632e3d7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-007.md",
+        "sha256": "f93a6936e2639b8803f8266f91ca76b53862d11939260bbbee7ab1efe6a80f75"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-008.md",
+        "sha256": "30ae2bdc37b526bfe97aa7cf4f8825f9276bdf01a4ced7d7e48f9b0d5bc675d7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-009.md",
+        "sha256": "f869337a17259eff6907bef14f8e1dc09a430c1ded1374d9137963faee13482c"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-010.md",
+        "sha256": "a1c0b6d741520d59a80f719db44ce48328e19eeefb7b6ad40aee238f568c1363"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-011.md",
+        "sha256": "8bb0cf6c6ec8613ffe1939a47d6c7113548f5c20ce5b4593240cfb4453df9717"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-012.md",
+        "sha256": "998fb79828aef0bc05e4fec76d56098f9ae21639c6255e3739b2ba6a049c4eb1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-013.md",
+        "sha256": "1e60a8c9b09bf8bf894fbf18c3899bc8083a30024b372df982227f5320e53b54"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-014.md",
+        "sha256": "ddf8881ece93641c4a880efea6b1f27445afa2ce9b247503e5b7596621286e3a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-015.md",
+        "sha256": "261d42a8cb98c9690fc041499fc6dd63cbe40000fcc93a4462569d65cc5c1779"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+        "sha256": "cfa4a71b76d45548ae28dd2718799917358b15fd7dc867c5147c94293770fa65"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+        "sha256": "f0f25a9fac8dd169c2d589e78a20d6952d5aacbeab825716b81b6ebd99fa8aef"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/changes.jsonl",
+        "sha256": "33febc3af3ce6478c455630615ada0945491b74ee8f180fc5c11dc8e88689e81"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/coverage.json",
+        "sha256": "1c534d9c460910fb6d2fad5c2290a0a4193b958c1ddcf80d565fa59633dd0542"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+        "sha256": "bc3133df19e1b652b320ec813ecf550820c827b574bda1c0d78892ca8e14342d"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/manifest.json",
+        "sha256": "53b0f2fb3eb695e0a24dc8526618f98f7f9b3666ec0b2a11656bacf821e28113"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
+        "sha256": "df1854514acf00c8444f8624887ff729c825e470564a829c031c04ff7625df03"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/source-first-seen.json",
+        "sha256": "26e5fc807faf8fcea2677702c56db20dca8c68b18bb224301601b1190d0e9aa9"
+      }
+    ],
+    "generators": [
+      "python3 tools/governance/gen_source_first_seen.py",
+      "python3 tools/governance/build_knowledge_experience.py"
+    ],
+    "new_task217_source_documents": 80,
+    "reason": "The full-history first-seen generator registered 80 Task217 Markdown sources; the standard knowledge-experience generator refreshed its declared projections. These are repository navigation/search projections, not scientific adjudications or lifecycle promotions.",
+    "source_first_seen_entry_count": 757,
+    "source_first_seen_path": "ignition/data/governance/knowledge-experience/source-first-seen.json"
+  },
+  "external_generated_nonfunction_claim_files": [
+    {
+      "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+      "reason": "refreshed tracked and evaluation-evidence exclusion counts after the knowledge-experience shard addition",
+      "sha256": "a369aa7369a8afbbc70d2e5a5e1c37c2ff7009b897651741549f594ce5203b46"
+    },
+    {
+      "path": "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+      "reason": "refreshed generated discovery coverage after the knowledge-experience shard addition",
+      "sha256": "91e8c1e2335a6eb7e2de7bed6c9514d7c2db2a7178f5a644965dcddb0e5430de"
+    },
+    {
+      "path": "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+      "reason": "registered the four newly generated knowledge-experience shard paths; repository discovery now covers 6759 tracked files",
+      "sha256": "a1b4eaf913b281f0419a973a25020c99e3d45465a0d844ec6cab02dbc1c40afe"
+    },
+    {
+      "path": "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+      "reason": "refreshed the generated tracked-file total to 6759",
+      "sha256": "05c5f7cb32501ec0958af24b28b7e12b3d0a6e509b668e8f8c913434681d48d5"
+    }
   ],
   "external_generated_path_index": {
     "category": "EVALUATION_EVIDENCE",
     "check": "python3 tools/foundation/validate_repository_path_classification.py --check passed 10/10",
     "generator": "ignition/tools/foundation/validate_repository_path_classification.py --generate",
     "path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
-    "sha256": "a58812ab7feb921e4ba67f1ccf89382bcc3a9b92a20f0399da17f1b89b43e4ba",
+    "sha256": "b1708e3e939354b6b4ee80df66c9c5ea6cfe82e3777ce696b73a1f826ccec32e",
     "task217_entry_count": 111
+  },
+  "external_generated_self_correction": {
+    "check": "python3 tools/governance/run_self_correction.py --check passed; SELF_CORRECTION_OK deltas=717 rules=10",
+    "files": [
+      {
+        "path": "ignition/data/governance/self-correction/audit-findings.jsonl",
+        "sha256": "394fe7c31d38181b5974369fda69c219a0ac70fd7fbf86b9428a5574a379d457"
+      },
+      {
+        "path": "ignition/RESULTS/SELF-CORRECTION-AUDIT.md",
+        "sha256": "cfc0ad63f3729a4673f87d459901b26acf2ebbfd8c3c434abf155f30e51f0251"
+      }
+    ],
+    "generator": "python3 tools/governance/run_self_correction.py",
+    "reason": "The Task217 validation report is an input to self-correction; these two files are generated audit projections."
   },
   "file_count": 109,
   "files": [
@@ -459,55 +899,29 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md",
-      "sha256": "b6e3f547fb770e4d3b4e9c2481f0f870e8a316810fadb28f38ddc49bca9a3d9c"
+      "sha256": "ac04fac9cca9a9da82c2cef6f7eb3107f263e5f977ff12669390e227417265e4"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/validate_task217.py",
-      "sha256": "1ab0ac41af37a0c388f32bfa0115856f0777aa5ba443ca8c32dab25f262ddaba"
+      "sha256": "30e37647d69aed1c78795bebcae3fe0755fa3c77ddf73c4baa04a4994a5e4d5a"
     }
   ],
+  "freeze_status": "R1_REPAIRED_LOCAL_VALIDATION_PASS_EXACT_HEAD_CI_PENDING",
+  "future_task_count": 12,
+  "linkless_two_way_ambiguity_proven": "6/6",
   "local_validation_results": {
-    "repository_path_accounting": "PASS 10/10",
     "adjudicate_nonfunction_claims_check": "PASS NONFUNCTION_CLAIM_GENERATION_DETERMINISTIC files=14",
-    "validate_nonfunction_claim_closure": "PASS 54/54",
-    "validate_foundation": "PASS 63/63"
+    "build_human_results_check": "PASS HUMAN_RESULTS_OK records=757",
+    "build_knowledge_experience_check": "PASS KNOWLEDGE_EXPERIENCE_OK cards=805 changes=698 layered=726 search=24887",
+    "repository_path_accounting": "PASS 10/10",
+    "run_self_correction_check": "PASS SELF_CORRECTION_OK deltas=717 rules=10",
+    "validate_foundation": "PASS CHECKS_TOTAL=63 CHECKS_PASSED=63 CHECKS_FAILED=0; ALL_FOUNDATION_VALID",
+    "validate_knowledge_experience": "PASS KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=805 changes=698 layers=726 search=24887 aliases=1657 links=29606 two_click_pages=8",
+    "validate_nonfunction_claim_closure": "PASS 54/54"
   },
-  "external_generated_nonfunction_claim_files": [
-    {
-      "path": "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
-      "reason": "added 111 tracked Task217 paths to complete repository path discovery"
-    },
-    {
-      "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "reason": "refreshed tracked and evaluation-evidence exclusion counts from current discovery"
-    },
-    {
-      "path": "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
-      "reason": "refreshed tracked and evaluation-evidence exclusion coverage counts"
-    },
-    {
-      "path": "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
-      "reason": "refreshed the generated tracked-file total"
-    }
-  ],
-  "external_generated_human_results": {
-    "generator": "python3 tools/governance/build_human_results.py",
-    "check": "python3 tools/governance/build_human_results.py --check passed; HUMAN_RESULTS_OK records=757",
-    "new_task217_source_documents": 80,
-    "reason": "The reports/ source root includes the 80 newly indexed Task217 evaluation-subtree Markdown documents; outputs remain navigation-only under the configured claim ceiling.",
-    "files": [
-      {
-        "path": "ignition/RESULTS/CHRONOLOGY.md",
-        "sha256": "cf6a089acfeb3eec249ec30a4acdbfec0e87bcaddf357b4e65fa8531f48c8d6f"
-      },
-      {
-        "path": "ignition/data/governance/human-results/census.json",
-        "sha256": "f920c455d159557865b13e3699c773d4749636c705d5d6d834776ed18ff1373d"
-      },
-      {
-        "path": "ignition/data/governance/human-results/result-ledger.jsonl",
-        "sha256": "073be07e060221013bdac778b1375a7b364f02f341cd0000b7779b32814b289b"
-      }
-    ]
-  }
+  "method_relation_citation_required_for_primary": false,
+  "primary_endpoint": "TARGET_DECISION_SUCCESS",
+  "primary_endpoint_condition_neutral": true,
+  "successor_outputs_exist": false,
+  "successors_launched": false
 }

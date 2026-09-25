@@ -52,6 +52,8 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/cards/part-013.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/cards/part-014.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/cards/part-015.md"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/cards/part-016.md"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/cards/part-017.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/indexes/architecture_governance.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/indexes/architecture_governance/part-001.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/indexes/architecture_governance/part-002.md"}
@@ -125,6 +127,8 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/reading-layers/part-011.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/reading-layers/part-012.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/reading-layers/part-013.md"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/reading-layers/part-014.md"}
+{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","exclusion_reason":"EXCLUDED_GENERATED_PROJECTION_EXCLUDED","path":"KNOWLEDGE/reading-layers/part-015.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE","exclusion_reason":"EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE","path":"LICENSE"}
 {"candidate_fragments":2,"canonical_claim_ids":["NFC-2348640a79738e63","NFC-775cc63aa37f1452"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"LICENSES/README.md"}
 {"candidate_fragments":7,"canonical_claim_ids":["NFC-411b56637eae1139","NFC-5fbc358872eb437a","NFC-9389ebbec82fabf0","NFC-99201e138fbc24d2","NFC-d300fd8fb796ed85","NFC-d57536ce17685145","NFC-e22c714975bc6a21"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"LICENSES/active/APACHE-2.0.md"}
