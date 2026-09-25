@@ -30,7 +30,7 @@ The Task217 output schema remains byte-identical to the Task207 schema at `ignit
 
 The Task217 validator now has hard gates for the condition-neutral endpoint, exact atom identity and relation cuts, target-bearing atom phrases, ambiguity proofs, identical prompts, hidden manifest labels, and zero Successor/Evaluator outputs. It also verifies the sealed map, R2 target/outcome definitions, Task207 schema parity, generated path-index coverage, clean worktree, and freeze inventory/sidecar. Repository path accounting and nonfunction closure repair are pending in this report snapshot; final local and exact-head workflow results will be recorded after the prescribed generators and checks run.
 
-The repository's classification rules/schema and the frozen Task207 subtree remain unchanged. The path-classification generator and nonfunction-claim generator are required to refresh their own generated projections; those outputs will not be manually edited.
+The repository path-classification generator refreshed only `ignition/data/foundation/repository-path-classification/classification-manifest.jsonl`; its `--check` passed 10/10 and accounted for all 111 tracked Task217 paths under the existing EVALUATION_EVIDENCE rule. The classification rules/schema and frozen Task207 subtree remain unchanged. Nonfunction-claim closure is still pending; generator-owned outputs will not be manually edited.
 
 ## Final state
 
@@ -47,7 +47,7 @@ SUCCESSORS_LAUNCHED=0
 EVALUATORS_LAUNCHED=0
 CONDITION_MAP_RELEASED=false
 RUNTIME_CHOSEN_BY_TASK=false
-REPOSITORY_PATH_ACCOUNTING=PENDING
+REPOSITORY_PATH_ACCOUNTING=PASS
 ARCHITECTURE_PAGES=PENDING
 FOUNDATION_VALIDATION=PENDING
 R1_NOT_AUTHORIZED

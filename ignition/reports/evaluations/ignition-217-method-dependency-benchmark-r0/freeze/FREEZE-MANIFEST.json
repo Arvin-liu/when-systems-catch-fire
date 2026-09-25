@@ -8,8 +8,8 @@
   "evaluator_outputs_exist": false,
   "successor_outputs_exist": false,
   "evaluators_launched": false,
-  "created_at_utc": "2026-09-25T13:53:14+00:00",
-  "freeze_status": "R1_REPAIR_PENDING_REPOSITORY_CLOSURE",
+  "created_at_utc": "2026-09-25T13:54:58+00:00",
+  "freeze_status": "R1_REPAIR_PENDING_NONFUNCTION_CLOSURE",
   "primary_endpoint": "TARGET_DECISION_SUCCESS",
   "primary_endpoint_condition_neutral": true,
   "method_relation_citation_required_for_primary": false,
@@ -21,10 +21,10 @@
   ],
   "external_generated_path_index": {
     "category": "EVALUATION_EVIDENCE",
-    "check": "pending prescribed --check after R1 repository path generator",
+    "check": "python3 tools/foundation/validate_repository_path_classification.py --check passed 10/10",
     "generator": "ignition/tools/foundation/validate_repository_path_classification.py --generate",
     "path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
-    "sha256": "82ddc45ab0806651af51ebacd4148e10f7116a153893c037618581cca2d90ceb",
+    "sha256": "a58812ab7feb921e4ba67f1ccf89382bcc3a9b92a20f0399da17f1b89b43e4ba",
     "task217_entry_count": 111
   },
   "file_count": 109,
@@ -459,7 +459,7 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md",
-      "sha256": "43ed101eaeccea59517cb671d338acdc95f3f6ccfdb74cdd6cd3034d81ed99ef"
+      "sha256": "5f00f0ce26f708c7ae0cda87afac77f85a53740c9e2bc23c6d7291dd201e2255"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/validate_task217.py",
