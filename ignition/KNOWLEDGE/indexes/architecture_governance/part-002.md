@@ -1314,6 +1314,11 @@
   - 可搜索名称：NFC-5d0216251eb8ab40 / Apply accepts only profile-registered argv arrays and always uses `shell=False`; caller-supplied commands are not author
   - 来源：`docs/architecture/incremental-execution.md`
   - 依赖：—；被引用：—
+- [Architecture question — bounded cognitive evolution R0](../../ASSET-CARDS.md#asset-hr-50ade7a7ff4ce25d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Architecture question — bounded cognitive evolution R0 / ARCHITECTURE-QUESTION
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/ARCHITECTURE-QUESTION.md`
+  - 依赖：—；被引用：—
 - [Architecture Structure Freeze v1](../../ASSET-CARDS.md#asset-hr-2dd772b06269e251)
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：Architecture Structure Freeze v1 / architecture-structure-freeze-v1
@@ -2497,10 +2502,5 @@
 - [class ArtifactRefRecord:](../../../reos_vnext/contract.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-6700b48ab59365b4 / class ArtifactRefRecord:
-  - 来源：`reos_vnext/contract.py`
-  - 依赖：—；被引用：—
-- [class EvidenceRequest:](../../../reos_vnext/contract.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-4af0dc121c7d0dc1 / class EvidenceRequest:
   - 来源：`reos_vnext/contract.py`
   - 依赖：—；被引用：—

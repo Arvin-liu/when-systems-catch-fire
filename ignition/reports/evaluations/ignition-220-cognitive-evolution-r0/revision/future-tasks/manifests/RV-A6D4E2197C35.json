@@ -1,0 +1,44 @@
+{
+  "schema_version": "ignition-220-revision-task-manifest-r0",
+  "future_task_id": "RV-A6D4E2197C35",
+  "task_type": "BOUNDED_METHOD_REVISION_PROPOSAL",
+  "fresh_conversation_required": true,
+  "same_prompt_and_schema_for_all_tasks": true,
+  "m0_id": "CE-F03-M0-R0",
+  "m0_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md",
+  "m0_sha256": "691b63e6ff4324acc23a09a35114df3fbb75668d39de3d8283386f30b110331a",
+  "e1_id": "CE-F03-E1-R0",
+  "e1_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md",
+  "e1_sha256": "fba2eef834fa1ae9b43665ecbaa15a2bf8690f840cc0a56483701a8e7601c5ff",
+  "neutral_prompt_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/revision/neutral-revision-prompt.md",
+  "neutral_prompt_sha256": "6cf01114050149219b287fbea287df073eb6347b88a8968fe156787554623c0e",
+  "output_schema_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/revision/revision-output-schema.json",
+  "output_schema_sha256": "23272ea6b685bc39adb96b5a104a8f0a938632d5bf8f8d5a58180b504a1b6c74",
+  "read_allowlist": [
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md",
+      "sha256": "691b63e6ff4324acc23a09a35114df3fbb75668d39de3d8283386f30b110331a",
+      "role": "initial_method"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md",
+      "sha256": "fba2eef834fa1ae9b43665ecbaa15a2bf8690f840cc0a56483701a8e7601c5ff",
+      "role": "source_bound_revision_evidence"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/revision/neutral-revision-prompt.md",
+      "sha256": "6cf01114050149219b287fbea287df073eb6347b88a8968fe156787554623c0e",
+      "role": "neutral_instruction"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/revision/revision-output-schema.json",
+      "sha256": "23272ea6b685bc39adb96b5a104a8f0a938632d5bf8f8d5a58180b504a1b6c74",
+      "role": "output_schema"
+    }
+  ],
+  "access_scope": "Only the four files listed in read_allowlist are available to this future revision conversation. No repository browsing, other task manifests, outputs, or other conversations are authorized.",
+  "output_contract": "Return one JSON object conforming exactly to output_schema_path; do not include hidden chain-of-thought or prose outside the object.",
+  "execution_state": "NOT_LAUNCHED",
+  "dispatch_authorized_by_task220": false,
+  "output_present": false
+}

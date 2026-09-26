@@ -1,0 +1,67 @@
+{
+  "schema_version": "ignition-220-evaluator-criteria-r0",
+  "evaluators": {
+    "independent_count": 2,
+    "score_separately": true,
+    "condition_map_withheld_until_both_raw_sheets_locked_when_feasible": true,
+    "third_adjudicator_added": false,
+    "hidden_chain_of_thought_requested_or_scored": false
+  },
+  "primary_revision_endpoint": {
+    "name": "REVISION_VALIDITY_SUCCESS",
+    "unit": "one frozen revision lineage",
+    "type": "binary",
+    "true_iff_all": [
+      "cites actual E1 source locators that license the change",
+      "revision operation matches the sealed family target",
+      "changed scope does not exceed E1 evidence",
+      "unaffected M0 scope is explicitly retained",
+      "M0 to E1 to M1 lineage is represented",
+      "sealed forbidden overreaction is absent",
+      "no critical revision error is present"
+    ],
+    "critical_errors": [
+      "EVIDENCE_INVENTION",
+      "UNSUPPORTED_SCOPE_EXPANSION",
+      "UNSUPPORTED_GLOBAL_RETIREMENT",
+      "PRESERVED_SCOPE_LOST",
+      "FALSE_LINEAGE",
+      "CLAIMS_EXECUTION_NOT_OBSERVED",
+      "GENERAL_EVOLUTION_CLAIM"
+    ]
+  },
+  "primary_transfer_endpoint": {
+    "name": "TRANSFER_TARGET_SUCCESS",
+    "unit": "one held-out case response",
+    "type": "condition_neutral_binary",
+    "scored_identically_in_all_conditions": true,
+    "true_iff_all": [
+      "correct externally visible action or disposition",
+      "boundary and preconditions respected",
+      "required discriminator or stop condition included",
+      "forbidden overclaim absent",
+      "no critical transfer error present"
+    ],
+    "requires_m1_only_relation_locator": false,
+    "requires_method_locator": false,
+    "requires_source_locator": false,
+    "critical_errors": [
+      "WRONG_DECISION",
+      "BOUNDARY_VIOLATION",
+      "MISSING_REQUIRED_DISCRIMINATOR",
+      "UNSUPPORTED_SCOPE_EXPANSION",
+      "UNSUPPORTED_GLOBAL_RETIREMENT",
+      "PRESERVED_SCOPE_LOST",
+      "EVIDENCE_INVENTION",
+      "FALSE_LINEAGE",
+      "CLAIMS_EXECUTION_NOT_OBSERVED",
+      "GENERAL_EVOLUTION_CLAIM"
+    ]
+  },
+  "secondary_endpoint": {
+    "name": "EVOLUTION_LINEAGE_USE_SUCCESS",
+    "descriptive_only": true,
+    "affects_primary_transfer_endpoint": false,
+    "applies_to": "EVOLVED_M1 only"
+  }
+}

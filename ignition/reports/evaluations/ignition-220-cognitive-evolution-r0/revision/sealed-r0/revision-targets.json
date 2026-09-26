@@ -1,0 +1,76 @@
+{
+  "schema_version": "ignition-220-sealed-revision-targets-r0",
+  "sealed": true,
+  "read_allowlist_excluded": true,
+  "applies_to": "revision-validity evaluation only",
+  "targets": [
+    {
+      "family_id": "FAMILY01",
+      "m0_id": "CE-F01-M0-R0",
+      "e1_id": "CE-F01-E1-R0",
+      "revision_operation": "NARROW",
+      "licensed_change": "Narrow the thermal-trigger applicability only for the observed reflective silver-film and toward-sun off-nadir configuration evidenced by E1. M0's thermal trigger alone must not determine the block disposition in that configuration; independent water evidence or a discriminating scan/measurement is required.",
+      "preserved_scope": "Keep the M0 threshold and procedure for the validated ordinary mineral soil and dark organic mulch contexts where the thermal/contact measurements agreed with independent water observations.",
+      "changed_scope": "The source-bound reflective-surface and view-geometry combination supported by E1; do not invent a universal reflectance cutoff or extend to every reflective material or camera angle.",
+      "required_uncertainty": "Leave mixed-cover or unmeasured view geometry unresolved and request surface/view characterization plus independent root-zone VWC or contact measurement.",
+      "forbidden_overreaction": [
+        "retire all canopy-temperature measurements",
+        "globally change the M0 2.0 C trigger",
+        "claim that every reflective surface invalidates thermal measurements",
+        "infer irrigation or plant stress solely from the E1 thermal readings"
+      ],
+      "required_lineage": [
+        "M0 claim surface-radiance-premise",
+        "E1 source locators OBS-01 through OBS-04 and OBS-06 as applicable",
+        "new M1 boundary relation with preserved M0 scope"
+      ],
+      "claim_ceiling": "bounded synthetic revision design; no external agronomy claim"
+    },
+    {
+      "family_id": "FAMILY02",
+      "m0_id": "CE-F02-M0-R0",
+      "e1_id": "CE-F02-E1-R0",
+      "revision_operation": "SPLIT_COEXIST",
+      "licensed_change": "Represent the distinct measured mineral-dominant and organic-floc-rich turbidity-to-mass relationships as coexisting, composition-conditional branches. Preserve the M0 calibration for the source-supported mineral-dominant scope and add a bounded relation for the observed floc-rich scope using the E1 pairs.",
+      "preserved_scope": "Retain the M0 formula, range, and uncertainty for mineral-dominant samples with valid measurement controls.",
+      "changed_scope": "Add a composition-selected coexisting relationship for the observed floc-rich samples; do not claim a universal composition cutoff beyond what E1 measures.",
+      "required_uncertainty": "For intermediate, mixed, or aliquot-variable composition, do not average branches or force a branch; request repeat composition and gravimetric measurements or report a bounded unresolved estimate.",
+      "forbidden_overreaction": [
+        "globally retire the M0 calibration",
+        "average the two relationships into one universal line",
+        "select a branch without composition evidence",
+        "assert a universal threshold for every sediment matrix"
+      ],
+      "required_lineage": [
+        "M0 calibration claim",
+        "E1 source locators OBS-01 through OBS-08",
+        "two conditional M1 relations and their measured selection basis"
+      ],
+      "claim_ceiling": "bounded synthetic revision design; no external water-quality claim"
+    },
+    {
+      "family_id": "FAMILY03",
+      "m0_id": "CE-F03-M0-R0",
+      "e1_id": "CE-F03-E1-R0",
+      "revision_operation": "RETIRE_REPLACE_BOUNDED",
+      "licensed_change": "Retire the interval-mean-only screen for the observed group-P short-pulse context, replacing it with a bounded review rule that uses verified high-rate trace and product identity. Evidence supports review for pulse cases in the observed E1 envelope but does not establish a universal numerical degradation threshold.",
+      "preserved_scope": "Keep M0's interval-mean screen for the validated continuous-profile cases, including group-P no-pulse records and unaffected formulations for which evidence supports the old behavior.",
+      "changed_scope": "Verified group-P high-rate traces with brief excursions in the observed pulse range, where the interval mean conceals exposure associated with reduced retained-sample activity.",
+      "required_uncertainty": "If product identity, high-rate trace, calibration, or custody is unresolved, do not infer pass or confirmed failure; reconcile the missing record or request a product-specific assay.",
+      "forbidden_overreaction": [
+        "treat every isolated high sample as confirmed degradation",
+        "retire all logger-based review",
+        "apply the group-P revision to all formulations",
+        "claim a universal pulse threshold from three observations"
+      ],
+      "required_lineage": [
+        "M0 mean-sufficiency premise",
+        "E1 source locators OBS-01 through OBS-06",
+        "bounded retirement/replacement relation plus preserved continuous-profile scope"
+      ],
+      "claim_ceiling": "bounded synthetic revision design; no external cold-chain safety claim"
+    }
+  ],
+  "heldout_access": "Held-out paths are excluded from all revision-agent read allowlists and are not used to author this target.",
+  "future_outputs_present": false
+}

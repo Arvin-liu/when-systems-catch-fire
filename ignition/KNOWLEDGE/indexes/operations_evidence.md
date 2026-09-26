@@ -8,6 +8,6 @@
 - [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\]\(docs/zh/cases/items/C-0479.md\) → - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0398}\)=1\].
 - [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0399}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-01.json
 - [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-01.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json → Method vs facts/skill/template ablation design R0
-- [第 006 片](./operations_evidence/part-006.md)：2501—3000；M₁\(x\) := G₁\(x\) = ∏_{i=1}^{n} x_i → — IGNITION-20260816-123-CURRENT-STATE-SYNC-R1-STEP-07 — task-branch projection
-- [第 007 片](./operations_evidence/part-007.md)：3001—3294；— IGNITION-20260817-124-OS-CONTROL-PLANE-R2-STEP-11 — task-branch projection → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json → M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology
+- [第 006 片](./operations_evidence/part-006.md)：2501—3000；M\(B_n\) = ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology → Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\]
+- [第 007 片](./operations_evidence/part-007.md)：3001—3309；ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\) → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

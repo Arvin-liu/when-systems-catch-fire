@@ -1,0 +1,31 @@
+{
+  "schema_version": "ignition-220-family-provenance-r0",
+  "family_id": "FAMILY01",
+  "family_operation_class": "BOUNDARY_NARROWING",
+  "synthetic_only": true,
+  "m0_id": "CE-F01-M0-R0",
+  "m0_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/m0.md",
+  "m0_basis_source_id": "F01-M0-VALIDATION",
+  "e1_id": "CE-F01-E1-R0",
+  "e1_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md",
+  "e1_source_ids": [
+    "F01-E1-CAMPAIGN-LOG",
+    "F01-E1-INSTRUMENT-CHECK",
+    "F01-E1-SOIL-PLANT-LOG"
+  ],
+  "evidence_locators": ["OBS-01", "OBS-02", "OBS-03", "OBS-04", "OBS-05", "OBS-06"],
+  "provenance_relations": [
+    {
+      "from": "CE-F01-E1-R0#OBS-01",
+      "relation": "contradicts_under_observed_conditions",
+      "to": "CE-F01-M0-R0#surface-radiance-premise"
+    },
+    {
+      "from": "CE-F01-E1-R0#OBS-05",
+      "relation": "supports_within_validated_scope",
+      "to": "CE-F01-M0-R0#thermal-trigger"
+    }
+  ],
+  "evidence_binding": "Every locator names an exact table row and its source-log key in the E1 packet; source record sets and capture checks are identified there.",
+  "external_truth_claim": "NONE"
+}

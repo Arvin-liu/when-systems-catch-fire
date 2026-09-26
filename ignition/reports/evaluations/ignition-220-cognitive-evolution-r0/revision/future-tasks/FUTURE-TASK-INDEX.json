@@ -1,0 +1,32 @@
+{
+  "schema_version": "ignition-220-revision-future-task-index-r0",
+  "task_count": 6,
+  "revision_agents_authorized_or_launched": false,
+  "tasks": [
+    {
+      "future_task_id": "RV-19D83A7C205E",
+      "manifest_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/revision/future-tasks/manifests/RV-19D83A7C205E.json"
+    },
+    {
+      "future_task_id": "RV-3E7F0A4B91C6",
+      "manifest_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/revision/future-tasks/manifests/RV-3E7F0A4B91C6.json"
+    },
+    {
+      "future_task_id": "RV-9C21E8A6F4D0",
+      "manifest_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/revision/future-tasks/manifests/RV-9C21E8A6F4D0.json"
+    },
+    {
+      "future_task_id": "RV-5B70D31A8E49",
+      "manifest_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/revision/future-tasks/manifests/RV-5B70D31A8E49.json"
+    },
+    {
+      "future_task_id": "RV-A6D4E2197C35",
+      "manifest_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/revision/future-tasks/manifests/RV-A6D4E2197C35.json"
+    },
+    {
+      "future_task_id": "RV-C8035F1B6A72",
+      "manifest_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/revision/future-tasks/manifests/RV-C8035F1B6A72.json"
+    }
+  ],
+  "dispatch_rule": "Future tasks require a separately authorized successor command; this index is not dispatch authority."
+}

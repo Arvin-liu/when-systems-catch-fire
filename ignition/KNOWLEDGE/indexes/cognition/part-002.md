@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAd](../../../agent_federation/__init__.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-7915d23723117771 / from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAd
+  - 来源：`agent_federation/__init__.py`
+  - 依赖：—；被引用：—
+- [from .live_adapters import LiveAdapterError, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAdapter](../../../agent_federation/live_preflight.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-61a3401d6b1b9e21 / from .live_adapters import LiveAdapterError, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAdapter
+  - 来源：`agent_federation/live_preflight.py`
+  - 依赖：—；被引用：—
+- [from .live_execution import LiveExecutionError, _cost, _safe_summary, _transport_evidence](../../../agent_federation/live_task137.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-f61a8cc767427aaf / from .live_execution import LiveExecutionError, _cost, _safe_summary, _transport_evidence
+  - 来源：`agent_federation/live_task137.py`
+  - 依赖：—；被引用：—
 - [from .openclaw import OpenClawAdapter, OpenClawAdapterError](../../../agent_federation/adapters/__init__.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e79d7794625968c7 / from .openclaw import OpenClawAdapter, OpenClawAdapterError
@@ -568,6 +583,16 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-20260915-178 — Task172 final closeout / IGNITION-20260915-178-result
   - 来源：`agent-results/IGNITION-20260915-178-result.md`
+  - 依赖：—；被引用：—
+- [IGNITION-20260926-220 — Cognitive Evolution R0 preparation](../../ASSET-CARDS.md#asset-hr-c63a8d788fa21227)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260926-220 — Cognitive Evolution R0 preparation / README
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/README.md`
+  - 依赖：—；被引用：—
+- [IGNITION-220 R0 preparation validation](../../ASSET-CARDS.md#asset-hr-48533b326ebedf8f)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-220 R0 preparation validation / VALIDATION-REPORT
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/validation/VALIDATION-REPORT.md`
   - 依赖：—；被引用：—
 - [incomplete\), and an attempt identity can never be overwritten or reused.](../../../agent_federation/live_attempt_ledger.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -1143,6 +1168,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-f54073e496534eda / projections that an existing OperationalMemoryStore may append. It never
   - 来源：`agent_federation/convergence.py`
+  - 依赖：—；被引用：—
+- [Proposal A — Minimal Observable, Bounded Cognitive Evolution Chain](../../ASSET-CARDS.md#asset-hr-7b40e26ce16dbce1)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Proposal A — Minimal Observable, Bounded Cognitive Evolution Chain / A
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/A.md`
   - 依赖：—；被引用：—
 - [proposal；Reasoner 永远不是 Executor，model/provider 字段只是 telemetry。](../../../docs/architecture/agent-platform-r2.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2319,6 +2349,11 @@
   - 可搜索名称：Task160｜Basis Escape V2 / IGNITION-20260907-160-result
   - 来源：`agent-results/IGNITION-20260907-160-result.md`
   - 依赖：—；被引用：—
+- [Task220 disagreement register](../../ASSET-CARDS.md#asset-hr-351a57523bc6a9fe)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task220 disagreement register / disagreement-register
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/design/disagreement-register.md`
+  - 依赖：—；被引用：—
 - [terminal_state="COMPLETED_VALIDATED",](../../../agent_federation/pilots.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3d2713b4350057f8 / terminal_state="COMPLETED_VALIDATED",
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-04d459a81b3da41f / This coordinator never selects a goal, grants permission, or interprets an
   - 来源：`agent_federation/live_orchestration.py`
-  - 依赖：—；被引用：—
-- [This ledger is a correction/provenance overlay. It never rewrites the older](../../../agent_federation/live_inference_observation_events.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b48995e7ab4b6a36 / This ledger is a correction/provenance overlay. It never rewrites the older
-  - 来源：`agent_federation/live_inference_observation_events.py`
-  - 依赖：—；被引用：—
-- [This preserves the no-blind-retry invariant even though the Codex attempt did not produce a validated completion.](../../../reports/operations/ignition-137-step11-hermes-retry-decision.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-96d6a3a8fcd7a6c7 / This preserves the no-blind-retry invariant even though the Codex attempt did not produce a validated completion.
-  - 来源：`reports/operations/ignition-137-step11-hermes-retry-decision.md`
-  - 依赖：—；被引用：—
-- [This receipt proves repository-local deterministic Steering / Intent / Goal / Commitment modeling, authority and non-inf](../../../agent-results/IGNITION-20260821-129-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-28552119c09a7b23 / This receipt proves repository-local deterministic Steering / Intent / Goal / Commitment modeling, authority and non-inf
-  - 来源：`agent-results/IGNITION-20260821-129-result.md`
-  - 依赖：—；被引用：—
-- [This receipt records the state observed before Task178 writes. It is not a claim about external truth or CI beyond the n](../../../agent-results/IGNITION-20260915-178-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f353579be44502c6 / This receipt records the state observed before Task178 writes. It is not a claim about external truth or CI beyond the n
-  - 来源：`agent-results/IGNITION-20260915-178-result.md`
-  - 依赖：—；被引用：—
-- [This result is finalized before the final full-repository derivation. Final generator fixed-point, exact-head, clean-clo](../../../agent-results/IGNITION-20260910-169-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8ad6957d603ee55f / This result is finalized before the final full-repository derivation. Final generator fixed-point, exact-head, clean-clo
-  - 来源：`agent-results/IGNITION-20260910-169-result.md`
-  - 依赖：—；被引用：—
-- [This result proves only repository-local regression closure, deterministic projection cleanliness, bounded residual non-](../../../agent-results/IGNITION-20260822-135-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-e35e12e0bb8bea3d / This result proves only repository-local regression closure, deterministic projection cleanliness, bounded residual non-
-  - 来源：`agent-results/IGNITION-20260822-135-result.md`
-  - 依赖：—；被引用：—
-- [This result proves only repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic](../../../agent-results/IGNITION-20260823-136-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-95b5ede727be431b / This result proves only repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic
-  - 来源：`agent-results/IGNITION-20260823-136-result.md`
   - 依赖：—；被引用：—

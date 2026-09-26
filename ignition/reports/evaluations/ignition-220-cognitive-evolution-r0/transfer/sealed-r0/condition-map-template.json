@@ -1,0 +1,159 @@
+{
+  "schema_version": "ignition-220-condition-map-template-r0",
+  "status": "SEALED_TEMPLATE_NOT_RELEASED",
+  "condition_map_released": false,
+  "template_only": true,
+  "lineage_count": 6,
+  "matched_assignments_per_lineage": 3,
+  "planned_conversation_count": 18,
+  "future_lineages": [
+    {
+      "family_id": "FAMILY01",
+      "revision_task_id": "RV-19D83A7C205E",
+      "revision_output_sha256": "<SHA256_AFTER_TASK221_REVISION_FREEZE>",
+      "case_order": [
+        "CE-F01-HO-A-R0",
+        "CE-F01-HO-B-R0",
+        "CE-F01-HO-C-R0"
+      ],
+      "matched_assignments": [
+        {
+          "condition": "M0_ONLY",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "M0_PLUS_E1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "EVOLVED_M1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        }
+      ]
+    },
+    {
+      "family_id": "FAMILY01",
+      "revision_task_id": "RV-3E7F0A4B91C6",
+      "revision_output_sha256": "<SHA256_AFTER_TASK221_REVISION_FREEZE>",
+      "case_order": [
+        "CE-F01-HO-C-R0",
+        "CE-F01-HO-A-R0",
+        "CE-F01-HO-B-R0"
+      ],
+      "matched_assignments": [
+        {
+          "condition": "M0_ONLY",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "M0_PLUS_E1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "EVOLVED_M1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        }
+      ]
+    },
+    {
+      "family_id": "FAMILY02",
+      "revision_task_id": "RV-9C21E8A6F4D0",
+      "revision_output_sha256": "<SHA256_AFTER_TASK221_REVISION_FREEZE>",
+      "case_order": [
+        "CE-F02-HO-A-R0",
+        "CE-F02-HO-B-R0",
+        "CE-F02-HO-C-R0"
+      ],
+      "matched_assignments": [
+        {
+          "condition": "M0_ONLY",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "M0_PLUS_E1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "EVOLVED_M1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        }
+      ]
+    },
+    {
+      "family_id": "FAMILY02",
+      "revision_task_id": "RV-5B70D31A8E49",
+      "revision_output_sha256": "<SHA256_AFTER_TASK221_REVISION_FREEZE>",
+      "case_order": [
+        "CE-F02-HO-C-R0",
+        "CE-F02-HO-A-R0",
+        "CE-F02-HO-B-R0"
+      ],
+      "matched_assignments": [
+        {
+          "condition": "M0_ONLY",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "M0_PLUS_E1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "EVOLVED_M1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        }
+      ]
+    },
+    {
+      "family_id": "FAMILY03",
+      "revision_task_id": "RV-A6D4E2197C35",
+      "revision_output_sha256": "<SHA256_AFTER_TASK221_REVISION_FREEZE>",
+      "case_order": [
+        "CE-F03-HO-A-R0",
+        "CE-F03-HO-B-R0",
+        "CE-F03-HO-C-R0"
+      ],
+      "matched_assignments": [
+        {
+          "condition": "M0_ONLY",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "M0_PLUS_E1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "EVOLVED_M1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        }
+      ]
+    },
+    {
+      "family_id": "FAMILY03",
+      "revision_task_id": "RV-C8035F1B6A72",
+      "revision_output_sha256": "<SHA256_AFTER_TASK221_REVISION_FREEZE>",
+      "case_order": [
+        "CE-F03-HO-C-R0",
+        "CE-F03-HO-A-R0",
+        "CE-F03-HO-B-R0"
+      ],
+      "matched_assignments": [
+        {
+          "condition": "M0_ONLY",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "M0_PLUS_E1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        },
+        {
+          "condition": "EVOLVED_M1",
+          "future_task_id": "<DETERMINISTIC_OPAQUE_ID_TO_BE_MATERIALIZED>"
+        }
+      ]
+    }
+  ],
+  "assignment_id_recipe": "TX- plus the first 12 uppercase hex characters of SHA256 over the UTF-8 string ignition-220-r0|revision_task_id|condition_label|sorted_visible_input_hashes_joined_by_LF. This maps labels to opaque IDs only inside this sealed custodian template.",
+  "packet_instantiation_gate": "Do not create final transfer packets until all six actual revision outputs are frozen and their syntax and hashes are checked.",
+  "dispatch_authorized": false,
+  "evaluators_launched": false
+}

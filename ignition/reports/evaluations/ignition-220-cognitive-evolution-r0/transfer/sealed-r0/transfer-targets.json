@@ -1,0 +1,191 @@
+{
+  "schema_version": "ignition-220-transfer-targets-r0",
+  "sealed": true,
+  "condition_neutral": true,
+  "primary_endpoint": {
+    "name": "TRANSFER_TARGET_SUCCESS",
+    "unit": "one held-out case response",
+    "condition_neutral": true,
+    "true_iff": [
+      "correct externally visible action or disposition",
+      "the stated boundary and preconditions are respected",
+      "the required discriminator or stop condition is included",
+      "no forbidden overclaim is present",
+      "no critical transfer error is present"
+    ],
+    "requires_m1_only_relation_locators": false,
+    "conditions_scored_identically": true
+  },
+  "secondary_endpoint": {
+    "name": "EVOLUTION_LINEAGE_USE_SUCCESS",
+    "descriptive_only": true,
+    "affects_primary_endpoint": false,
+    "definition": "For an evolved-method response only, the response correctly uses and identifies the relevant M1 lineage relation when available. No relation locator is required for the primary transfer score."
+  },
+  "critical_transfer_errors": [
+    "WRONG_DECISION",
+    "BOUNDARY_VIOLATION",
+    "MISSING_REQUIRED_DISCRIMINATOR",
+    "UNSUPPORTED_SCOPE_EXPANSION",
+    "UNSUPPORTED_GLOBAL_RETIREMENT",
+    "PRESERVED_SCOPE_LOST",
+    "EVIDENCE_INVENTION",
+    "FALSE_LINEAGE",
+    "CLAIMS_EXECUTION_NOT_OBSERVED",
+    "GENERAL_EVOLUTION_CLAIM"
+  ],
+  "cases": [
+    {
+      "case_id": "CE-F01-HO-A-R0",
+      "family_id": "FAMILY01",
+      "case_class": "REVISED_BOUNDARY_CASE",
+      "acceptable_actions": ["ROUTINE_MONITORING"],
+      "required_elements": [
+        "recognize that the measured reflective film and toward-sun view match the E1 measurement context",
+        "use the already available VWC above 16% and plant-water observation rather than treating D alone as a stress finding",
+        "do not escalate irrigation from the thermal trigger"
+      ],
+      "forbidden_overclaims": [
+        "all reflective surfaces invalidate thermal measurement",
+        "the crop is water-stressed because D exceeded 2.0 C"
+      ]
+    },
+    {
+      "case_id": "CE-F01-HO-B-R0",
+      "family_id": "FAMILY01",
+      "case_class": "PRESERVED_OLD_SCOPE_CASE",
+      "acceptable_actions": ["SOIL_MOISTURE_CONFIRMATION", "AGRONOMIST_REVIEW"],
+      "required_elements": [
+        "preserve the M0 thermal trigger in the measured dark-organic-mulch, away-from-sun context",
+        "recognize that VWC 13.2% is below the independent 16% site review threshold",
+        "route to human review and do not claim irrigation was executed"
+      ],
+      "forbidden_overclaims": [
+        "the reflective-film limitation invalidates this ordinary-surface case",
+        "thermal evidence alone authorizes irrigation"
+      ]
+    },
+    {
+      "case_id": "CE-F01-HO-C-R0",
+      "family_id": "FAMILY01",
+      "case_class": "EDGE_UNRESOLVED_CASE",
+      "acceptable_actions": ["UNRESOLVED_REQUEST_SURFACE_VIEW_AND_VWC"],
+      "required_elements": [
+        "do not apply a definite thermal disposition with unknown view alignment and mixed cover",
+        "request cover/reflectance and sun-view characterization plus an independent root-zone VWC or contact measurement"
+      ],
+      "forbidden_overclaims": [
+        "the whole block is stressed",
+        "all thermal scans should be discarded"
+      ]
+    },
+    {
+      "case_id": "CE-F02-HO-A-R0",
+      "family_id": "FAMILY02",
+      "case_class": "REVISED_BOUNDARY_CASE",
+      "acceptable_actions": ["REPORT_ESTIMATE"],
+      "acceptable_estimate_mg_per_l": {
+        "minimum": 201,
+        "maximum": 225,
+        "inclusive": true
+      },
+      "evaluator_only_reference": {
+        "source_locator": "F02-HO-A-GRAVIMETRY#BLIND-REFERENCE",
+        "gravimetric_tss_mg_per_l": 213,
+        "visible_to_successor": false
+      },
+      "required_elements": [
+        "use the measured organic-floc-rich composition as the basis for a point estimate",
+        "report an estimate consistent with the independent 213 mg/L gravimetric reference and bounded uncertainty",
+        "do not apply the mineral-dominant M0 estimate to this measured composition"
+      ],
+      "forbidden_overclaims": [
+        "one composition branch applies to every sediment",
+        "the estimate is exact or universally calibrated"
+      ]
+    },
+    {
+      "case_id": "CE-F02-HO-B-R0",
+      "family_id": "FAMILY02",
+      "case_class": "PRESERVED_OLD_SCOPE_CASE",
+      "acceptable_actions": ["REPORT_ESTIMATE"],
+      "acceptable_estimate_mg_per_l": {
+        "minimum": 336,
+        "maximum": 360,
+        "inclusive": true
+      },
+      "evaluator_only_reference": {
+        "source_locator": "F02-HO-B-GRAVIMETRY#BLIND-REFERENCE",
+        "gravimetric_tss_mg_per_l": 348,
+        "visible_to_successor": false
+      },
+      "required_elements": [
+        "preserve the M0 mineral-dominant estimate for this measured composition",
+        "report a bounded estimate consistent with the 348 mg/L gravimetric reference"
+      ],
+      "forbidden_overclaims": [
+        "the new floc-rich relation replaces M0 for mineral-dominant samples"
+      ]
+    },
+    {
+      "case_id": "CE-F02-HO-C-R0",
+      "family_id": "FAMILY02",
+      "case_class": "EDGE_UNRESOLVED_CASE",
+      "acceptable_actions": ["UNRESOLVED_REQUEST_COMPOSITION_AND_GRAVIMETRY"],
+      "required_elements": [
+        "do not force either conditional relation or average them into a universal line",
+        "name the aliquot-varying composition and gravimetric spread",
+        "request repeat composition and gravimetric measurements before a point estimate"
+      ],
+      "forbidden_overclaims": [
+        "a point mapping is established for this sample",
+        "stable turbidity alone resolves composition-dependent mass"
+      ]
+    },
+    {
+      "case_id": "CE-F03-HO-A-R0",
+      "family_id": "FAMILY03",
+      "case_class": "REVISED_BOUNDARY_CASE",
+      "acceptable_actions": ["STABILITY_REVIEW"],
+      "required_elements": [
+        "respect verified group-P identity and calibrated high-rate trace",
+        "recognize the 10-minute excursion lies within the observed E1 pulse context even though the mean is 6.2 C",
+        "request product-specific stability review or assay without claiming confirmed degradation"
+      ],
+      "forbidden_overclaims": [
+        "the mean below 8.0 C is sufficient to pass this evidenced pulse context",
+        "the product is confirmed degraded without an assay"
+      ]
+    },
+    {
+      "case_id": "CE-F03-HO-B-R0",
+      "family_id": "FAMILY03",
+      "case_class": "PRESERVED_OLD_SCOPE_CASE",
+      "acceptable_actions": ["SCREEN_PASS"],
+      "required_elements": [
+        "preserve M0 for a complete calibrated continuous profile with no observed pulse",
+        "state that this is a screening pass under the recorded method, not an unconditional safety guarantee"
+      ],
+      "forbidden_overclaims": [
+        "retire interval-mean screening for every group-P record",
+        "a screen pass proves product safety"
+      ]
+    },
+    {
+      "case_id": "CE-F03-HO-C-R0",
+      "family_id": "FAMILY03",
+      "case_class": "EDGE_UNRESOLVED_CASE",
+      "acceptable_actions": ["UNRESOLVED_RECONCILE_TRACE_AND_ASSAY"],
+      "required_elements": [
+        "do not convert the incomplete high-rate trace and discordant assay into a pass or confirmed failure",
+        "request trace-gap reconciliation and repeat product-specific assay"
+      ],
+      "forbidden_overclaims": [
+        "no excursion occurred during the gap",
+        "one assay result establishes degradation"
+      ]
+    }
+  ],
+  "future_outputs_present": false,
+  "condition_map_released": false
+}

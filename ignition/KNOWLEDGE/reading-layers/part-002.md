@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-11f58a3d336fc97e"></a>
+## CASE03 ambiguity proof — R1
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
+- 1 分钟：FACTS and both byte-identical atom blocks record QUEUED, a lost receipt, no terminal status, an immutable non-duplicating key, and two available controls. LINKLESS retains R01 and R03–R05. Those relations identify the request, expose possible query statuses, preserve the key identity, and record… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：CASE03 ambiguity proof — R1；主题：Evidence before the cut relation；FACTS and both byte-identical atom blocks record QUEUED, a lost receipt, no terminal status, an immutable non-duplicating key, and two available controls. LINKLESS retains R01 and R03–R05. Those relations identify the request, expose possible query statuses, preserve the key identity, and record that no follow-up occurred; they do not establish which next op…；主题：Two materially different licensed actions；Query status under RQ-18 before any further operation.；Resubmit using RQ-18 to retrieve or reconcile the existing idempotent request.
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-ambiguity-proof.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-ambiguity-proof.md)
+
+<a id="reading-hr-1255e91e43370b8e"></a>
+## 085: Backlog Prioritization
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：文件: data/foundation/work-queues/085-proof-priority-queue.jsonl 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：085: Backlog Prioritization；先筛选影响核心架构、Ψ₀ 元函数、关键判定器、公开强结论的对象；其余对象保留 provisional/downgraded 状态，不阻塞架构冻结；cross-model 队列目标显著小于 353；主题：1. Proof Priority Queue；文件: data/foundation/work-queues/085-proof-priority-queue.jsonl
+- 完整阅读：[reports/foundation-architecture/085-backlog-prioritization.md](../../reports/foundation-architecture/085-backlog-prioritization.md)
+
+<a id="reading-hr-129bb07e4a0a453e"></a>
+## IGNITION-20260827-143 Step 18 — Natural full regression and projection closure
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The exact candidate 0a25989dd895af6326447e1a8741df1db5101211 completed the canonical isolated natural full regression with 1272 tests, 0 failures, 0 errors and 0 skips. The test process completed naturally in 3019.932s (3020.978s elapsed), with cleanbefore=true, cleanafter=true, no watchdog, no p… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-143 Step 18 — Natural full regression and projection closure；The exact candidate 0a25989dd895af6326447e1a8741df1db5101211 completed the canonical isolated natural full regression with 1272 tests, 0 failures, 0 errors and 0 skips. The test process completed naturally in 3019.932s (3020.978s elapsed), with cleanbefore=true, cleanafter=true, no watchdog, no process kill and no generated-output drift. The isolated foundat…；The earlier natural failures remain preserved as evidence rather than being relabelled:；The remaining failures were deterministic source/projection closure issues. The existing generators were run to fixed point: deep function adjudication is now 6029/6029; nonfunction claim closure is 17550/17550; Knowledge Experience is 413 cards / 315 changes / 332 layered readings / 23911 search; Fire Seeds is 64 seeds / 398 sources / 332 layered origins; t…；The historical 29-failure run, the subsequent 6-failure run, and the subsequent 1-failure run are all retained in the machine receipt. No skip, xfail, ignore, expected-failure or residual expansion was introduced. No Gemini, Hermes, OpenClaw or Codex qualification or live attempt was started; LIVEEXTERNALINVOCATION remains OPEN / OWNERDEFERRED with six histo…；Machine evidence: step18-full-regression.json.
+- 完整阅读：[reports/operations/ignition-143-step18-full-regression.md](../../reports/operations/ignition-143-step18-full-regression.md)
+
 <a id="reading-hr-12a0a75721794540"></a>
 ## P1 机器可读数据完整性审计
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -38,6 +59,13 @@
 - 1 分钟：The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Control-equivalence note — CASE02 R1；The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.；METHOD and LINKLESS atom-block bytes are identical.；METHOD relations: R01, R02, R03, R04, R05.；LINKLESS retained relations: R01, R03, R04, R05.；The removed decisive relation is R02 with signature A03 --BOUNDARYTONONAPPLICATION--> A01. It alone maps the mixed rollout boundary to deferral and the reconsideration gate.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-control-equivalence-note.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-control-equivalence-note.md)
+
+<a id="reading-hr-157065f9a419db14"></a>
+## Agent B — Synthetic method family proposals
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Agent B — Synthetic method family proposals；主题：B1. Narrow the surface-condition boundary for canopy temperature；M0 premise: A calibrated leaf-temperature method can estimate plant water stress across the covered field, regardless of ground surface.；E1 evidence shape: Paired measurements show that reflective ground covering biases the thermal reading under some viewing conditions. Independent plant-water indicators support the method’s results in ordinary plots, while controls isolate the discrepancy to the reflective-surface setup.；Licensed operation / preserved scope: Narrow the thermal method’s applicability for the affected surface and measurement conditions. Preserve its use in validated setups and keep unrelated calibration and decision steps intact.；Tempting overreaction: Discard all thermal measurements, or treat the discrepancy as evidence that the entire stress method is invalid.
+- 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/B.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/B.md)
 
 <a id="reading-hr-15d26bfc6734b7d4"></a>
 ## Supplemental record CASE01
@@ -325,31 +353,3 @@
 - 1 分钟：本轮没有尝试解决四力统一、量子引力或所谓“七团乌云”。它只修正点火自身资产可以支持什么、不能支持什么。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：首批物理资产纠偏（2026-07-29）；本轮没有尝试解决四力统一、量子引力或所谓“七团乌云”。它只修正点火自身资产可以支持什么、不能支持什么。；点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。；最强可保留的有界命题是：把所有状态压成一个等价类的商映射不能保存非恒定可观测量；零门只退化其声明的读出，不等于世界、状态空间或全部物理信息消失。该命题仍需独立形式证明工件，不能被包装成物理学 no-go theorem。；哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。；历史笔记把“乘法归零律”称为 D127；formal main 中该资产实际为 T2，D127 是“认知路径积分函数”。两者分别纠偏，不覆盖身份。
 - 完整阅读：[docs/foundation/physics-asset-correction-20260729.md](../../docs/foundation/physics-asset-correction-20260729.md)
-
-<a id="reading-hr-27badcb5d09c98af"></a>
-## 22 本书籍验证案例候选（可读版）
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：22 本书籍验证案例候选（可读版）；candidateonly；未分配 C 编号。；主题：BC-20260709-001 《系统之美》；核心案例：系统基模中的"成长上限"基模与点火框架M1增强回路的同构性。当增强回路推动系统增长，同时调节回路在某个阈值启动限制增长，形成门控面极小点。；哥德尔边界：本书识别出一处哥德尔不完备性（Gδ 判定触发），系统内部无法自证，须跳到元层面（元协议）处理；具体见 sourcereport。；来源报告：《系统之美》最终收敛报告 2026年7月9日18211915117869592591840.md
-- 完整阅读：[outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md](../../outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md)
-
-<a id="reading-hr-27f02cb6238db1a2"></a>
-## Preregistered Outcome Rule R2
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Frozen before outputs: yes. Primary endpoint: TARGETDECISIONSUCCESS. Successors launched: no. Evaluators launched: no. Condition map released: no. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Preregistered Outcome Rule R2；Frozen before outputs: yes. Primary endpoint: TARGETDECISIONSUCCESS. Successors launched: no. Evaluators launched: no. Condition map released: no.；主题：Unit and denominators；There are six case families and three independent conversations in each of four conditions. The conversation is the replication unit. For each Evaluator and condition, the fixed case denominator is 18; each Evaluator scores 72 case records across the four conditions. Missing or malformed records count as TARGETDECISIONSUCCESS=false; denominators never shrink…；主题：Matched definitions；For each Evaluator, family, and replicate:
-- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule-r2.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule-r2.md)
-
-<a id="reading-hr-290e2cb3b336dd6a"></a>
-## Count reconciliation
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：622 formal objects + 22 candidate-only records + 34 pending claims = 678 scoped claim entities. The separate evidence registry contains 806 formal cases + 22 candidate cases = 828 records. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Count reconciliation；622 formal objects + 22 candidate-only records + 34 pending claims = 678 scoped claim entities. The separate evidence registry contains 806 formal cases + 22 candidate cases = 828 records.
-- 完整阅读：[reports/foundation-architecture/count-reconciliation-20260712.md](../../reports/foundation-architecture/count-reconciliation-20260712.md)
-
-<a id="reading-hr-2976c727fb36904e"></a>
-## IGNITION-130 Step 00 — Current surface split-brain audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：The audit found real, pre-repair contradictions; this report does not rewrite them as a clean baseline. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-130 Step 00 — Current surface split-brain audit；Execution-time formal origin/main: 9eb916530bc4f3aad5c7194f389447759164aa41.；Audit was performed before any IGNITION-130 repair.；Canonical identity epoch: os-control-plane-r4-steering-intent-r1.；Canonical current task at baseline: IGNITION-20260821-129, COMPLETEDWITHCLASSIFIEDRESIDUALS, terminal.；Canonical map: 0.12.0 Current; 0.11.0 Historical.
-- 完整阅读：[reports/operations/ignition-130-step00-current-surface-audit.md](../../reports/operations/ignition-130-step00-current-surface-audit.md)

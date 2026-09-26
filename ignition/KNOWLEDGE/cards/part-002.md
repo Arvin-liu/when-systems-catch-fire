@@ -624,6 +624,26 @@
 - **主题：** `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260827-143 Step 04 — 可出版素材盘点`, `ignition-143-step04-corpus-census`
 
+<a id="asset-hr-02352d9fbccc87db"></a>
+## FAMILY01 held-out C — canopy-temperature observation
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-02352D9FBCCC87DB` · [reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/heldout/C-edge-unresolved.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/heldout/C-edge-unresolved.md)
+- **为什么产生：** 此来源记录了什么：FAMILY01 held-out C — canopy-temperature observation？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Case ID: CE-F01-HO-C-R0 Case class: EDGEUNRESOLVEDCASE Data class: fresh synthetic field record; not part of M0 validation or E1.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/heldout/C-edge-unresolved.md`, `220-COGNITIVE-EVOLUTION-R0`
+- **演化历史：** 2026-09-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `FAMILY01 held-out C — canopy-temperature observation`, `C-edge-unresolved`
+
 <a id="asset-hr-026324ff85eb49af"></a>
 ## Step09 — Path Accounting and Fixed Point
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `持续自我纠错引擎`, `self-correction-engine`
-
-<a id="asset-hr-07f04c57755e61ed"></a>
-## IGNITION-137 Step 13 — Steering / Goal / Memory boundary
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-07F04C57755E61ED` · [reports/operations/ignition-137-step13-steering-goal-memory-boundary.md](../../reports/operations/ignition-137-step13-steering-goal-memory-boundary.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-137 Step 13 — Steering / Goal / Memory boundary？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** There is no validated structured result to absorb. The MALFORMEDRESULT startup receipt remains operational evidence only; it does not become Intent, Goal completion, Owner acceptance, or Memory content.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-137-step13-steering-goal-memory-boundary.md`, `137-STEP13-STEERING-GOAL-MEMORY-BOUNDARY`
-- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-137 Step 13 — Steering / Goal / Memory boundary`, `ignition-137-step13-steering-goal-memory-boundary`
