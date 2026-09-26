@@ -1,0 +1,289 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-220-revision-output-r0",
+  "title": "Task220 R0 revision output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "m0_id",
+    "revision_id",
+    "evidence_locators",
+    "revision_operation",
+    "preserved_scope",
+    "changed_scope",
+    "new_or_revised_relations",
+    "rejected_overreaction",
+    "uncertainties",
+    "lineage_edges",
+    "claim_ceiling"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "ignition-220-revision-output-r0"
+    },
+    "m0_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_locators": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "revision_operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "summary",
+        "affected_m0_claim_ids"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "UPDATE",
+            "NARROW",
+            "SPLIT_COEXIST",
+            "REJECT",
+            "RETIRE",
+            "RETIRE_REPLACE_BOUNDED",
+            "REWRITE_ONLY_NOT_REVISION",
+            "NO_CHANGE_INSUFFICIENT_EVIDENCE"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "affected_m0_claim_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "preserved_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scope",
+          "m0_claim_ids"
+        ],
+        "properties": {
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "m0_claim_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "changed_scope": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scope",
+          "evidence_locators"
+        ],
+        "properties": {
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_locators": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "new_or_revised_relations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "relation_id",
+          "from_id",
+          "relation_type",
+          "to_id",
+          "scope",
+          "evidence_locators"
+        ],
+        "properties": {
+          "relation_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relation_type": {
+            "enum": [
+              "DERIVED_FROM",
+              "NARROWS",
+              "SPLITS_FROM",
+              "COEXISTS_WITH",
+              "REPLACES_IN_SCOPE",
+              "REJECTS_IN_SCOPE",
+              "RETIRES_IN_SCOPE",
+              "UPDATES"
+            ]
+          },
+          "to_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scope": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_locators": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "rejected_overreaction": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "overreaction",
+          "reason",
+          "evidence_locators"
+        ],
+        "properties": {
+          "overreaction": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_locators": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "issue",
+          "evidence_limit",
+          "discriminating_observation"
+        ],
+        "properties": {
+          "issue": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_limit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "discriminating_observation": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "lineage_edges": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "from_id",
+          "relation",
+          "to_id",
+          "evidence_locators"
+        ],
+        "properties": {
+          "from_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relation": {
+            "enum": [
+              "STARTS_FROM",
+              "USES_EVIDENCE",
+              "DERIVES_REVISION",
+              "PRESERVES_SCOPE",
+              "CHANGES_SCOPE"
+            ]
+          },
+          "to_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_locators": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "claim_ceiling": {
+      "enum": [
+        "BOUNDED_SYNTHETIC_REVISION_PROPOSAL",
+        "INSUFFICIENT_EVIDENCE_FOR_REVISION"
+      ]
+    }
+  }
+}
