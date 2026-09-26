@@ -42,6 +42,8 @@ The exact-head Foundation run `36170554119` passed the full Foundation, function
 
 The next exact-head Foundation run (`36179756969`) passed the full Foundation check, all function/nonfunction closures, Task172 Step05–09, and the repaired Task172 R0 validator plus its eight regression tests. It then failed in workflow step 33, after the human-results, self-correction, Knowledge Experience build, human-visibility, and Knowledge Experience audit checks passed. `validate_fire_seeds.py --check` found a stale SHA-256 for `ignition/docs/foundation/nonfunction-claim-adjudication-index.md` and stale Knowledge Experience source-origin counts (the census still recorded 646 while the generated layered index had 726). The R1 additions and repository-closure projections changed those inputs without changing any human Fire Seeds entry. The prescribed `build_fire_seed_census.py` generator refreshed only the machine source census; a `NO_SEED_DELTA` changelog record documents the metadata-only refresh. The Fire Seeds validator and the two later checks in that workflow step pass locally, and the generated census/changelog paths and hashes are recorded in the Task217 freeze.
 
+The following exact-head Foundation run (`36190509401`) passed full Foundation, function/nonfunction closure, and Task172 Step05–09, then failed at the Task172 R0 changed-path gate. The existing exact R0 list already recognized the Fire Seeds machine census, but not the appended `NO_SEED_DELTA` changelog record. The R0 validator now admits only the two Fire Seeds machine paths explicitly frozen by Task217 after validating the freeze sidecar and both file hashes; a regression test covers unlisted and tampered paths. No Task172 R0 artifacts or claim records changed.
+
 ## Final state
 
 ```text

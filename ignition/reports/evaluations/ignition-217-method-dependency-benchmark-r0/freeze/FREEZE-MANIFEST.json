@@ -386,7 +386,7 @@
       },
       {
         "path": "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
-        "sha256": "e070a6f655d37f53f0090dcbf4fc453fbed5f02f4818414034190f23bd829142"
+        "sha256": "c9b8dd19a51c941b05dd690b2312b2ba306839723b6690503a3f33c0f960066e"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/changes.jsonl",
@@ -398,15 +398,15 @@
       },
       {
         "path": "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
-        "sha256": "5373602ac68bfea0fbee749ae4435b15b2511a3550521ea559f6a86931563b5f"
+        "sha256": "9a83845716f3dad4001dfd6d1052a386673046f7308d809f05b26cf1f2ba3bc1"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/manifest.json",
-        "sha256": "f9f4bdceabb11d471e1b4b7f734ced671292591294a494176079791f760a8b99"
+        "sha256": "9e8f850b523c5c278ecc57a960a1f1d71f39c04ba9e31f1e56ee35e67c601423"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
-        "sha256": "219b8d06a8e9f95161de059bec9bc6c3a55a05b2a8768707843025495aac77af"
+        "sha256": "0112606d65264da0ab0660b5a76e90fcda22f11ebf13b291c6c5c8835d54648d"
       },
       {
         "path": "ignition/data/governance/knowledge-experience/source-first-seen.json",
@@ -899,11 +899,11 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md",
-      "sha256": "49bbdeb266c4821135941271196462c9e76c71abc073d7c7b3904f74a93a9ca5"
+      "sha256": "392964cba387d3fd02a9a52a66966d6e24b5e794a6d045e1f6a725ee94a0cc6b"
     },
     {
       "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/validate_task217.py",
-      "sha256": "cae0320d012cc19418ba40b7b748a68a32dfcbd48898162f193b526bf45e7b48"
+      "sha256": "5a29759349a5c72b605de7cb217e1a222907eacea68377291b88e1636e5f18ff"
     }
   ],
   "freeze_status": "R1_REPAIRED_LOCAL_VALIDATION_PASS_EXACT_HEAD_CI_PENDING",
@@ -919,9 +919,9 @@
     "validate_knowledge_experience": "PASS KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=805 changes=698 layers=726 search=24887 aliases=1657 links=29606 two_click_pages=8",
     "validate_nonfunction_claim_closure": "PASS 54/54",
     "validate_cognitive_inheritance_r0": "PASS status=PASS final_state=READY_FOR_INDEPENDENT_EVALUATION; Task172 artifacts unchanged",
-    "test_cognitive_inheritance_r0": "PASS 8/8 tests including hash-bound Task217 projection allowance",
+    "test_cognitive_inheritance_r0": "PASS 9/9 tests including hash-bound Task217 Knowledge Experience and Fire Seeds projection allowances",
     "build_fire_seed_census": "PASS deterministic FIRE_SEEDS_CENSUS_CHECK_OK seeds=64 sources=792 layered_origins=726",
-    "validate_fire_seeds": "PASS FIRE_SEEDS_VALID entries=64 clusters=64 content_seed_count=40 methodology_seed_count=24 source_count=792 changelog_records=3",
+    "validate_fire_seeds": "PASS FIRE_SEEDS_VALID entries=64 clusters=64 content_seed_count=40 methodology_seed_count=24 source_count=792 changelog_records=4",
     "validate_human_visibility": "PASS HUMAN_VISIBILITY_OK human_surfaces=25 machine_human_pairs=14 two_click_destinations=20",
     "build_claim_browsers_check": "PASS HUMAN_ASSETS_CHECK_OK function_machine=6158 function_human=24 nonfunction_machine=18003 nonfunction_human=24",
     "generate_overall_architecture_check": "PASS SYSTEM_MAP_DERIVED_OK nodes=87 edges=92 homepage_projection=PASS"
@@ -932,16 +932,16 @@
   "successor_outputs_exist": false,
   "successors_launched": false,
   "external_generated_cognitive_inheritance_r0_compatibility": {
-    "scope": "hash-verified Task217 Knowledge Experience projections only",
-    "reason": "The older Task172 R0 validator used a fixed historical changed-path list that omitted deterministic Knowledge Experience shards added by Task217 closure. This compatibility allowance admits only Task217-frozen Knowledge Experience paths whose freeze sidecar and individual SHA-256 values validate; no Task172 R0 artifacts or claim records were changed.",
+    "scope": "hash-verified Task217 Knowledge Experience and Fire Seeds machine projections only",
+    "reason": "The older Task172 R0 changed-path gate did not include deterministic Task217 Knowledge Experience shards or the Fire Seeds NO_SEED_DELTA changelog. This compatibility inventory admits only exact Task217-frozen Knowledge Experience and Fire Seeds machine projection paths after validating the Task217 freeze sidecar and per-file SHA-256 values; no Task172 R0 artifacts or claim records changed.",
     "files": [
       {
         "path": "ignition/tools/validate_cognitive_inheritance_r0.py",
-        "sha256": "c6516f1d5f2fd43d31d9e104152157856574008e95553022d228320728fdf38f"
+        "sha256": "4c8b20db63b28133dc96c7be7f6620a9f208e340dd691212f88e22c4da9eafd1"
       },
       {
         "path": "ignition/tests/test_cognitive_inheritance_r0.py",
-        "sha256": "5543b3c98ffc5a3208b67cc09d5749f42ddc4db130fb700ad8896fe5b1d6d373"
+        "sha256": "d815336a1df440063a6f0fc382dd03845a1d45343d016694c4d79c6697af264f"
       }
     ]
   },
@@ -957,11 +957,11 @@
     "files": [
       {
         "path": "ignition/data/publication/fire-seeds/CHANGELOG.jsonl",
-        "sha256": "13f7f3d30a451d1cd6fb9592fe78184abc3ae4c75491a4afbb795572162f48a2"
+        "sha256": "fcfc19b7ce1a0bc0a29cf730786b67260662669b20340e90bc6aa195bd5107ad"
       },
       {
         "path": "ignition/data/publication/fire-seeds/seed-census.json",
-        "sha256": "3ce35aeaddf79a8634e557b0a2a9958fa8097631cd6a521654a4b2dab8399e59"
+        "sha256": "b881a7aba713a55a4e29ade64d638042b34484924d4f25504539bbccc9c32945"
       }
     ]
   }

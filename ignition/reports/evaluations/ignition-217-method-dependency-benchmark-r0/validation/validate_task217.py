@@ -428,7 +428,7 @@ def check_repository_closure_and_freeze(report: str) -> None:
     compatibility_files = compatibility.get("files", [])
     compatibility_hashes = {item.get("path"): item.get("sha256") for item in compatibility_files}
     require(set(compatibility_hashes) == GENERATED_COGNITIVE_INHERITANCE_COMPATIBILITY_FILES, "Task172 R0 projection compatibility inventory differs")
-    require(compatibility.get("scope") == "hash-verified Task217 Knowledge Experience projections only", "Task172 R0 projection compatibility scope differs")
+    require(compatibility.get("scope") == "hash-verified Task217 Knowledge Experience and Fire Seeds machine projections only", "Task172 R0 projection compatibility scope differs")
     for path, expected in compatibility_hashes.items():
         require((ROOT / path).is_file() and sha((ROOT / path).read_bytes()) == expected, f"Task172 R0 projection compatibility SHA-256 mismatch: {path}")
     fire_seeds = freeze.get("external_generated_fire_seed_census", {})
