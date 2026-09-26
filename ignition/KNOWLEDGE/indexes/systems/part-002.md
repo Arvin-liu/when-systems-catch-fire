@@ -6,6 +6,16 @@
 
 - [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M01 / data/external-research/088-external-source-atlas-medium.jsonl / M01 / M02
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：M02 / data/external-research/088-external-source-atlas-medium.jsonl / M02 / M01
+  - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
+  - 依赖：—；被引用：—
+- [data/external-research/088-external-source-atlas-medium.jsonl](../../../data/external-research/088-external-source-atlas-medium.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：M03 / data/external-research/088-external-source-atlas-medium.jsonl / M03 / M01
   - 来源：`data/external-research/088-external-source-atlas-medium.jsonl`
   - 依赖：—；被引用：—
@@ -2494,13 +2504,3 @@
   - 可搜索名称：NFC-4f6f0233d69d3834 / Object D375 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D3, D305, D375；被引用：—
-- [Object D376 defines a mechanism_model within the point-fire framework. Core: 中文：M7的联合效应极限∝-ln\(P_min\)∝n——n越大极限越高→大系统能承受更多](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-adfb6b834c7fda2e / Object D376 defines a mechanism_model within the point-fire framework. Core: 中文：M7的联合效应极限∝-ln\(P_min\)∝n——n越大极限越高→大系统能承受更多
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D364, D376；被引用：—
-- [Object D377 defines a mechanism_model within the point-fire framework. Core: 中文：M8的总响应时间τ_total = τ_perceive + τ_σ。小偏离时瓶](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f5c00579c46b23b5 / Object D377 defines a mechanism_model within the point-fire framework. Core: 中文：M8的总响应时间τ_total = τ_perceive + τ_σ。小偏离时瓶
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D377；被引用：—

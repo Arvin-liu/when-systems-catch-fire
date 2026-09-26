@@ -4,6 +4,726 @@
 
 ## 2026
 
+<a id="change-src-hr-fa12509d4d61d59d"></a>
+### 2026-09-25 · Control-equivalence note — CASE06 R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
+- **来源：** [CASE06-control-equivalence-note.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE06-control-equivalence-note.md)
+- **资产卡：** [HR-FA12509D4D61D59D](./ASSET-CARDS.md#asset-hr-fa12509d4d61d59d)
+
+<a id="change-src-hr-f5e323d605e8630b"></a>
+### 2026-09-25 · Supplemental record CASE03
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: local test-queue event recorder. Synthetic.
+- **来源：** [CASE03.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE03.md)
+- **资产卡：** [HR-F5E323D605E8630B](./ASSET-CARDS.md#asset-hr-f5e323d605e8630b)
+
+<a id="change-src-hr-f4741ae212a850fb"></a>
+### 2026-09-25 · Control-equivalence note — CASE01 R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
+- **来源：** [CASE01-control-equivalence-note.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE01-control-equivalence-note.md)
+- **资产卡：** [HR-F4741AE212A850FB](./ASSET-CARDS.md#asset-hr-f4741ae212a850fb)
+
+<a id="change-src-hr-f11243baaca53de8"></a>
+### 2026-09-25 · CASE06 — Cohort-specific event routing
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** All attendees, systems, and cohort records are synthetic.
+- **来源：** [facts.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/facts.md)
+- **资产卡：** [HR-F11243BAACA53DE8](./ASSET-CARDS.md#asset-hr-f11243baaca53de8)
+
+<a id="change-src-hr-efc7da19421cfcea"></a>
+### 2026-09-25 · Control-equivalence note — CASE03 R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
+- **来源：** [CASE03-control-equivalence-note.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-control-equivalence-note.md)
+- **资产卡：** [HR-EFC7DA19421CFCEA](./ASSET-CARDS.md#asset-hr-efc7da19421cfcea)
+
+<a id="change-src-hr-eddeace6c7d52420"></a>
+### 2026-09-25 · Supplemental record CASE06
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: local event-status recorder. Synthetic.
+- **来源：** [CASE06.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE06.md)
+- **资产卡：** [HR-EDDEACE6C7D52420](./ASSET-CARDS.md#asset-hr-eddeace6c7d52420)
+
+<a id="change-src-hr-edd02874217c8efb"></a>
+### 2026-09-25 · CASE02 ambiguity proof — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** FACTS and both byte-identical atom blocks record mixed regional markers, an older origin snapshot, available controls, and no executed cache operation. LINKLESS retains R01 and R03–R05; these describe the rollout interval, available probe fields, coverage, and execution status without assigning a…
+- **来源：** [CASE02-ambiguity-proof.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-ambiguity-proof.md)
+- **资产卡：** [HR-EDD02874217C8EFB](./ASSET-CARDS.md#asset-hr-edd02874217c8efb)
+
+<a id="change-src-hr-ebb1fa6b2f55aaaf"></a>
+### 2026-09-25 · Agent A — Architecture alignment proposal
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Read-only proposal. No repository files were changed.
+- **来源：** [A.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/A.md)
+- **资产卡：** [HR-EBB1FA6B2F55AAAF](./ASSET-CARDS.md#asset-hr-ebb1fa6b2f55aaaf)
+
+<a id="change-src-hr-eb0fa16319dfda4e"></a>
+### 2026-09-25 · CASE01 — Checkpoint export selection
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** All names, records, dates, and tools are synthetic.
+- **来源：** [facts.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/facts.md)
+- **资产卡：** [HR-EB0FA16319DFDA4E](./ASSET-CARDS.md#asset-hr-eb0fa16319dfda4e)
+
+<a id="change-src-hr-ea3223380bef1f8a"></a>
+### 2026-09-25 · Supplemental record CASE06
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE06.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE06.md)
+- **资产卡：** [HR-EA3223380BEF1F8A](./ASSET-CARDS.md#asset-hr-ea3223380bef1f8a)
+
+<a id="change-src-hr-e0ffc2d97e3776b5"></a>
+### 2026-09-25 · CASE05 design note — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** FACTS records V0, V1, a prior cross-access event whose raw record omits grouping key and procedure version, a present two-class request, and no execution. SKILL records a grouping key supplied by the operator without choosing it. METHOD and LINKLESS have byte-identical atom blocks; METHOD has fiv…
+- **来源：** [case-design.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE05/case-design.md)
+- **资产卡：** [HR-E0FFC2D97E3776B5](./ASSET-CARDS.md#asset-hr-e0ffc2d97e3776b5)
+
+<a id="change-src-hr-dc5be702709b1776"></a>
+### 2026-09-25 · Supplemental record CASE03
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE03.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE03.md)
+- **资产卡：** [HR-DC5BE702709B1776](./ASSET-CARDS.md#asset-hr-dc5be702709b1776)
+
+<a id="change-src-hr-d997ab676df9422a"></a>
+### 2026-09-25 · Supplemental record CASE01
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: local archive export handling instruction. Synthetic.
+- **来源：** [CASE01.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE01.md)
+- **资产卡：** [HR-D997AB676DF9422A](./ASSET-CARDS.md#asset-hr-d997ab676df9422a)
+
+<a id="change-src-hr-d0139e669eda9954"></a>
+### 2026-09-25 · Control-equivalence note — CASE04 R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The R0 note was superseded because retained atoms and relations disclosed the measurement disposition.
+- **来源：** [CASE04-control-equivalence-note.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE04-control-equivalence-note.md)
+- **资产卡：** [HR-D0139E669EDA9954](./ASSET-CARDS.md#asset-hr-d0139e669eda9954)
+
+<a id="change-src-hr-c63d64bd86e12abb"></a>
+### 2026-09-25 · CASE02 design note — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Family: boundaryrejection.
+- **来源：** [case-design.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/case-design.md)
+- **资产卡：** [HR-C63D64BD86E12ABB](./ASSET-CARDS.md#asset-hr-c63d64bd86e12abb)
+
+<a id="change-src-hr-b9a059e2fac7e9c3"></a>
+### 2026-09-25 · Supplemental record CASE06
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE06.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE06.md)
+- **资产卡：** [HR-B9A059E2FAC7E9C3](./ASSET-CARDS.md#asset-hr-b9a059e2fac7e9c3)
+
+<a id="change-src-hr-b789ed64c8685503"></a>
+### 2026-09-25 · Supplemental record CASE04
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE04.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE04.md)
+- **资产卡：** [HR-B789ED64C8685503](./ASSET-CARDS.md#asset-hr-b789ed64c8685503)
+
+<a id="change-src-hr-b71861c23f82b389"></a>
+### 2026-09-25 · Supplemental record CASE01
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE01.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE01.md)
+- **资产卡：** [HR-B71861C23F82B389](./ASSET-CARDS.md#asset-hr-b71861c23f82b389)
+
+<a id="change-src-hr-b0c119f89725537a"></a>
+### 2026-09-25 · CASE06 design note — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Family: cohortboundaryrouting.
+- **来源：** [case-design.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/case-design.md)
+- **资产卡：** [HR-B0C119F89725537A](./ASSET-CARDS.md#asset-hr-b0c119f89725537a)
+
+<a id="change-src-hr-ab85108cb77a38c2"></a>
+### 2026-09-25 · CASE05 ambiguity proof — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** FACTS and both byte-identical atom blocks give two grouping procedures, a prior cross-access event whose raw record omits the grouping key and procedure version, a present request containing two signatory classes, and no selected procedure or output. LINKLESS retains R02–R05: version chronology,…
+- **来源：** [CASE05-ambiguity-proof.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE05-ambiguity-proof.md)
+- **资产卡：** [HR-AB85108CB77A38C2](./ASSET-CARDS.md#asset-hr-ab85108cb77a38c2)
+
+<a id="change-src-hr-aae3d9ad43087470"></a>
+### 2026-09-25 · Control-equivalence note — CASE05 R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
+- **来源：** [CASE05-control-equivalence-note.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE05-control-equivalence-note.md)
+- **资产卡：** [HR-AAE3D9AD43087470](./ASSET-CARDS.md#asset-hr-aae3d9ad43087470)
+
+<a id="change-src-hr-a8a027e08f80e147"></a>
+### 2026-09-25 · Task216 owner-adjudication input
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The Task217 command declares these fixed inputs for this task:
+- **来源：** [TASK216-OWNER-ADJUDICATION-INPUT.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/TASK216-OWNER-ADJUDICATION-INPUT.md)
+- **资产卡：** [HR-A8A027E08F80E147](./ASSET-CARDS.md#asset-hr-a8a027e08f80e147)
+
+<a id="change-src-hr-a738be8177f4e66f"></a>
+### 2026-09-25 · Frozen read-only proposal B — target leakage
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Review basis: all six METHOD and LINKLESS artifacts at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run.
+- **来源：** [B-leakage.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/B-leakage.md)
+- **资产卡：** [HR-A738BE8177F4E66F](./ASSET-CARDS.md#asset-hr-a738be8177f4e66f)
+
+<a id="change-src-hr-a5b33f64e57df4ae"></a>
+### 2026-09-25 · CASE04 design note — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Family: missingdiscriminatingmeasurement.
+- **来源：** [case-design.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE04/case-design.md)
+- **资产卡：** [HR-A5B33F64E57DF4AE](./ASSET-CARDS.md#asset-hr-a5b33f64e57df4ae)
+
+<a id="change-src-hr-a430210134de8964"></a>
+### 2026-09-25 · CASE06 ambiguity proof — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** FACTS and both byte-identical atom blocks record Q and D, current identifier/token/mismatch fields, separate historical timing cohorts without head-to-head comparison, and no completed check-in. LINKLESS retains R01–R03 and R05. The cohort records have no entry-category or procedure assignment; t…
+- **来源：** [CASE06-ambiguity-proof.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE06-ambiguity-proof.md)
+- **资产卡：** [HR-A430210134DE8964](./ASSET-CARDS.md#asset-hr-a430210134de8964)
+
+<a id="change-src-hr-a01b432a9e8f5965"></a>
+### 2026-09-25 · Supplemental record CASE05
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE05.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE05.md)
+- **资产卡：** [HR-A01B432A9E8F5965](./ASSET-CARDS.md#asset-hr-a01b432a9e8f5965)
+
+<a id="change-src-hr-9c6bdea8b380662f"></a>
+### 2026-09-25 · CASE04 ambiguity proof — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** FACTS and both byte-identical atom blocks record curled leaves, a prior canopy temperature, a pre-refill feed value, two competing explanations, available equipment, and no post-refill result. LINKLESS retains R02, R03, and R05: the older value is temporally limited, equipment is available withou…
+- **来源：** [CASE04-ambiguity-proof.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE04-ambiguity-proof.md)
+- **资产卡：** [HR-9C6BDEA8B380662F](./ASSET-CARDS.md#asset-hr-9c6bdea8b380662f)
+
+<a id="change-src-hr-992246db470a640a"></a>
+### 2026-09-25 · Architecture question
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Can a successor make a warranted decision in a fresh synthetic case because a complete source-linked cognitive-method chain is available—candidate, selection rationale, context and boundary, discriminating observation, application or test, outcome/failure interpretation, and revise/reject/coexist…
+- **来源：** [ARCHITECTURE-QUESTION.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/ARCHITECTURE-QUESTION.md)
+- **资产卡：** [HR-992246DB470A640A](./ASSET-CARDS.md#asset-hr-992246db470a640a)
+
+<a id="change-src-hr-98e3a41a4878fcda"></a>
+### 2026-09-25 · Frozen read-only proposal C — control ambiguity
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Review basis: all six facts, METHOD, LINKLESS, and control-equivalence notes at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run.
+- **来源：** [C-control-ambiguity.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/C-control-ambiguity.md)
+- **资产卡：** [HR-98E3A41A4878FCDA](./ASSET-CARDS.md#asset-hr-98e3a41a4878fcda)
+
+<a id="change-src-hr-8ce1dbadad44d165"></a>
+### 2026-09-25 · CASE03 — Queued request acknowledgement
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** All identifiers, events, and service behavior are synthetic.
+- **来源：** [facts.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE03/facts.md)
+- **资产卡：** [HR-8CE1DBADAD44D165](./ASSET-CARDS.md#asset-hr-8ce1dbadad44d165)
+
+<a id="change-src-hr-8a33ff657c6c46d0"></a>
+### 2026-09-25 · CASE03 design note — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Family: failureinterpretation.
+- **来源：** [case-design.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE03/case-design.md)
+- **资产卡：** [HR-8A33FF657C6C46D0](./ASSET-CARDS.md#asset-hr-8a33ff657c6c46d0)
+
+<a id="change-src-hr-8747598c34b9628e"></a>
+### 2026-09-25 · CASE05 — Archive grouping revision scope
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-B32AB4BD936E
+- **来源：** [PK-B32AB4BD936E.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-B32AB4BD936E.md)
+- **资产卡：** [HR-8747598C34B9628E](./ASSET-CARDS.md#asset-hr-8747598c34b9628e)
+
+<a id="change-src-hr-87232cfb5274583d"></a>
+### 2026-09-25 · CASE03 — Queued request acknowledgement
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-CD1E0740AE3A
+- **来源：** [PK-CD1E0740AE3A.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-CD1E0740AE3A.md)
+- **资产卡：** [HR-87232CFB5274583D](./ASSET-CARDS.md#asset-hr-87232cfb5274583d)
+
+<a id="change-src-hr-85695718f60d0279"></a>
+### 2026-09-25 · CASE04 — Greenhouse symptom discriminator
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** All crops, instruments, values, and observations are synthetic.
+- **来源：** [facts.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE04/facts.md)
+- **资产卡：** [HR-85695718F60D0279](./ASSET-CARDS.md#asset-hr-85695718f60d0279)
+
+<a id="change-src-hr-84a93bbe19e1b7d1"></a>
+### 2026-09-25 · Supplemental record CASE01
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: neutral synthetic case-log index.
+- **来源：** [CASE01.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE01.md)
+- **资产卡：** [HR-84A93BBE19E1B7D1](./ASSET-CARDS.md#asset-hr-84a93bbe19e1b7d1)
+
+<a id="change-src-hr-814e2fde7628632c"></a>
+### 2026-09-25 · Agent B — Adversarial benchmark designer proposal
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Read-only proposal. No repository files were changed. Task207's cases and method history concern counters, resettable lanes, bridge offsets, and a missing anchor; the following proposals use distinct settings.
+- **来源：** [B.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/B.md)
+- **资产卡：** [HR-814E2FDE7628632C](./ASSET-CARDS.md#asset-hr-814e2fde7628632c)
+
+<a id="change-src-hr-8034a3f646aed3fc"></a>
+### 2026-09-25 · Evaluator Criteria R1 — Method Dependency Benchmark
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: preparation only. No Successor output exists and no Evaluator has run. These criteria and the outcome rule are frozen before any outputs.
+- **来源：** [criteria-r1.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r1.md)
+- **资产卡：** [HR-8034A3F646AED3FC](./ASSET-CARDS.md#asset-hr-8034a3f646aed3fc)
+
+<a id="change-src-hr-7dfd4e807d066375"></a>
+### 2026-09-25 · Supplemental record CASE03
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE03.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE03.md)
+- **资产卡：** [HR-7DFD4E807D066375](./ASSET-CARDS.md#asset-hr-7dfd4e807d066375)
+
+<a id="change-src-hr-7d51714b30f09ade"></a>
+### 2026-09-25 · Agent C — Control-equivalence and leakage review
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Read-only proposal. No repository files were changed.
+- **来源：** [C.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/C.md)
+- **资产卡：** [HR-7D51714B30F09ADE](./ASSET-CARDS.md#asset-hr-7d51714b30f09ade)
+
+<a id="change-src-hr-7d2c448385c1b8b3"></a>
+### 2026-09-25 · CASE01 ambiguity proof — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** FACTS and both byte-identical atom blocks describe two incomplete but complementary previews. LINKLESS retains R02–R05: identifier preconditions, a post-export comparison, preview-field verification, and source provenance. None selects a route or claims that a delivered join already exists.
+- **来源：** [CASE01-ambiguity-proof.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE01-ambiguity-proof.md)
+- **资产卡：** [HR-7D2C448385C1B8B3](./ASSET-CARDS.md#asset-hr-7d2c448385c1b8b3)
+
+<a id="change-src-hr-790243425d392f18"></a>
+### 2026-09-25 · Evaluator Criteria R2 — Method Dependency Benchmark
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: repaired preparation freeze. No Successor output exists and no Evaluator has run. Score only the externally visible response against the same sealed case target in all four conditions. Do not inspect hidden reasoning.
+- **来源：** [criteria-r2.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r2.md)
+- **资产卡：** [HR-790243425D392F18](./ASSET-CARDS.md#asset-hr-790243425d392f18)
+
+<a id="change-src-hr-772b83bd323ace93"></a>
+### 2026-09-25 · Supplemental record CASE04
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: local greenhouse measurement recorder. Synthetic.
+- **来源：** [CASE04.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE04.md)
+- **资产卡：** [HR-772B83BD323ACE93](./ASSET-CARDS.md#asset-hr-772b83bd323ace93)
+
+<a id="change-src-hr-7617ecdac21d9c30"></a>
+### 2026-09-25 · CASE05 — Archive grouping revision scope
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** All labels, versions, and files are synthetic.
+- **来源：** [facts.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE05/facts.md)
+- **资产卡：** [HR-7617ECDAC21D9C30](./ASSET-CARDS.md#asset-hr-7617ecdac21d9c30)
+
+<a id="change-src-hr-70b8bac01216167f"></a>
+### 2026-09-25 · Supplemental record CASE02
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE02.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE02.md)
+- **资产卡：** [HR-70B8BAC01216167F](./ASSET-CARDS.md#asset-hr-70b8bac01216167f)
+
+<a id="change-src-hr-6ffc16c239f47e05"></a>
+### 2026-09-25 · IGNITION-20260925-217 — Method Dependency Benchmark R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: preparation only. This subtree freezes an architecture-relevant benchmark design. It contains no Successor outputs and no evaluator scores.
+- **来源：** [README.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/README.md)
+- **资产卡：** [HR-6FFC16C239F47E05](./ASSET-CARDS.md#asset-hr-6ffc16c239f47e05)
+
+<a id="change-src-hr-6dbcf0032d4e011f"></a>
+### 2026-09-25 · Supplemental record CASE04
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: neutral synthetic case-log index.
+- **来源：** [CASE04.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE04.md)
+- **资产卡：** [HR-6DBCF0032D4E011F](./ASSET-CARDS.md#asset-hr-6dbcf0032d4e011f)
+
+<a id="change-src-hr-69aabef7a55e7316"></a>
+### 2026-09-25 · Disagreement and resolution register
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** All four proposals were produced independently and read-only before synthesis.
+- **来源：** [disagreement-register.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/disagreement-register.md)
+- **资产卡：** [HR-69AABEF7A55E7316](./ASSET-CARDS.md#asset-hr-69aabef7a55e7316)
+
+<a id="change-src-hr-653d03b18e9469af"></a>
+### 2026-09-25 · CASE01 design note — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Family: candidateselection.
+- **来源：** [case-design.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/case-design.md)
+- **资产卡：** [HR-653D03B18E9469AF](./ASSET-CARDS.md#asset-hr-653d03b18e9469af)
+
+<a id="change-src-hr-6445f5aad600628f"></a>
+### 2026-09-25 · CONTROL-VALIDITY-REVIEW — Task217 R1
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a human-readable review of the six synthetic controls. “Leakage: no” means the condition does not itself state or strongly imply the sealed target; it does not claim that no reader can infer it. The ambiguity proofs check alternatives against FACTS, the byte-identical atom block, and ever…
+- **来源：** [CONTROL-VALIDITY-REVIEW.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/CONTROL-VALIDITY-REVIEW.md)
+- **资产卡：** [HR-6445F5AAD600628F](./ASSET-CARDS.md#asset-hr-6445f5aad600628f)
+
+<a id="change-src-hr-63da6783782ff844"></a>
+### 2026-09-25 · CASE03 — Queued request acknowledgement
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-9B32BAE52185
+- **来源：** [PK-9B32BAE52185.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-9B32BAE52185.md)
+- **资产卡：** [HR-63DA6783782FF844](./ASSET-CARDS.md#asset-hr-63da6783782ff844)
+
+<a id="change-src-hr-6239eb32a5e612b5"></a>
+### 2026-09-25 · CASE05 — Archive grouping revision scope
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-D7BA5DE6F459
+- **来源：** [PK-D7BA5DE6F459.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-D7BA5DE6F459.md)
+- **资产卡：** [HR-6239EB32A5E612B5](./ASSET-CARDS.md#asset-hr-6239eb32a5e612b5)
+
+<a id="change-src-hr-596bf7ed48cf4e33"></a>
+### 2026-09-25 · Supplemental record CASE04
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE04.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE04.md)
+- **资产卡：** [HR-596BF7ED48CF4E33](./ASSET-CARDS.md#asset-hr-596bf7ed48cf4e33)
+
+<a id="change-src-hr-51661dc14afcb684"></a>
+### 2026-09-25 · Supplemental record CASE02
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE02.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE02.md)
+- **资产卡：** [HR-51661DC14AFCB684](./ASSET-CARDS.md#asset-hr-51661dc14afcb684)
+
+<a id="change-src-hr-4d0fb19567578381"></a>
+### 2026-09-25 · CASE03 — Queued request acknowledgement
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-A4903D709062
+- **来源：** [PK-A4903D709062.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-A4903D709062.md)
+- **资产卡：** [HR-4D0FB19567578381](./ASSET-CARDS.md#asset-hr-4d0fb19567578381)
+
+<a id="change-src-hr-4cf11961bcf1534a"></a>
+### 2026-09-25 · Condition packet construction — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Each future case contains shared synthetic facts plus exactly one supplemental record. FACTSONLY adds a neutral case-log index. SKILLONLY adds an operation-recording procedure that does not select among case actions. METHOD adds seven byte-addressable atoms and five source-linked relations; its p…
+- **来源：** [README.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/README.md)
+- **资产卡：** [HR-4CF11961BCF1534A](./ASSET-CARDS.md#asset-hr-4cf11961bcf1534a)
+
+<a id="change-src-hr-4a7f8b9de6427b3b"></a>
+### 2026-09-25 · Supplemental record CASE05
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: neutral synthetic case-log index.
+- **来源：** [CASE05.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE05.md)
+- **资产卡：** [HR-4A7F8B9DE6427B3B](./ASSET-CARDS.md#asset-hr-4a7f8b9de6427b3b)
+
+<a id="change-src-hr-47dcce2e5f42a82a"></a>
+### 2026-09-25 · CASE02 — Regional cache boundary
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** All names, observations, and systems are synthetic.
+- **来源：** [facts.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/facts.md)
+- **资产卡：** [HR-47DCCE2E5F42A82A](./ASSET-CARDS.md#asset-hr-47dcce2e5f42a82a)
+
+<a id="change-src-hr-4679d26e37e40f35"></a>
+### 2026-09-25 · Case review task
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** You are given a packet containing six synthetic operational cases and an output schema. For every case, determine the strongest action or disposition supported by the provided records.
+- **来源：** [neutral-task-prompt.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/neutral-task-prompt.md)
+- **资产卡：** [HR-4679D26E37E40F35](./ASSET-CARDS.md#asset-hr-4679d26e37e40f35)
+
+<a id="change-src-hr-430499b7f2792c7d"></a>
+### 2026-09-25 · IGNITION-20260925-217 R1 — Validation Report
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This report supersedes the R0 preparation report for current scoring and packet definitions. R0 files, commits, and the initial local-validator pass remain preserved as reviewed-and-superseded history. R1 remains preparation-only and is not authorized for launch.
+- **来源：** [VALIDATION-REPORT.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md)
+- **资产卡：** [HR-430499B7F2792C7D](./ASSET-CARDS.md#asset-hr-430499b7f2792c7d)
+
+<a id="change-src-hr-3fec9af3edd1416d"></a>
+### 2026-09-25 · Preregistered Outcome Rule R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Frozen before outputs: yes. Successors launched: no. Evaluators launched: no. Condition map released: no.
+- **来源：** [preregistered-outcome-rule.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule.md)
+- **资产卡：** [HR-3FEC9AF3EDD1416D](./ASSET-CARDS.md#asset-hr-3fec9af3edd1416d)
+
+<a id="change-src-hr-3aafab32674cfdea"></a>
+### 2026-09-25 · CASE05 — Archive grouping revision scope
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-9737185B9103
+- **来源：** [PK-9737185B9103.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-9737185B9103.md)
+- **资产卡：** [HR-3AAFAB32674CFDEA](./ASSET-CARDS.md#asset-hr-3aafab32674cfdea)
+
+<a id="change-src-hr-39b78b71b41c6f74"></a>
+### 2026-09-25 · Supplemental record CASE03
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: neutral synthetic case-log index.
+- **来源：** [CASE03.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE03.md)
+- **资产卡：** [HR-39B78B71B41C6F74](./ASSET-CARDS.md#asset-hr-39b78b71b41c6f74)
+
+<a id="change-src-hr-30c931c262175b7f"></a>
+### 2026-09-25 · CASE01 — Checkpoint export selection
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-6453996D8B64
+- **来源：** [PK-6453996D8B64.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-6453996D8B64.md)
+- **资产卡：** [HR-30C931C262175B7F](./ASSET-CARDS.md#asset-hr-30c931c262175b7f)
+
+<a id="change-src-hr-29d22d527942e550"></a>
+### 2026-09-25 · Supplemental record CASE05
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: local archive packaging recorder. Synthetic.
+- **来源：** [CASE05.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE05.md)
+- **资产卡：** [HR-29D22D527942E550](./ASSET-CARDS.md#asset-hr-29d22d527942e550)
+
+<a id="change-src-hr-27f02cb6238db1a2"></a>
+### 2026-09-25 · Preregistered Outcome Rule R2
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Frozen before outputs: yes. Primary endpoint: TARGETDECISIONSUCCESS. Successors launched: no. Evaluators launched: no. Condition map released: no.
+- **来源：** [preregistered-outcome-rule-r2.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule-r2.md)
+- **资产卡：** [HR-27F02CB6238DB1A2](./ASSET-CARDS.md#asset-hr-27f02cb6238db1a2)
+
+<a id="change-src-hr-266563bdd4271980"></a>
+### 2026-09-25 · Supplemental record CASE06
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: neutral synthetic case-log index.
+- **来源：** [CASE06.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE06.md)
+- **资产卡：** [HR-266563BDD4271980](./ASSET-CARDS.md#asset-hr-266563bdd4271980)
+
+<a id="change-src-hr-21fa4364fd213abe"></a>
+### 2026-09-25 · Supplemental record CASE02
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: local edge-cache operation recorder. Synthetic.
+- **来源：** [CASE02.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE02.md)
+- **资产卡：** [HR-21FA4364FD213ABE](./ASSET-CARDS.md#asset-hr-21fa4364fd213abe)
+
+<a id="change-src-hr-21c2972f96d27050"></a>
+### 2026-09-25 · Supplemental record CASE05
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE05.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE05.md)
+- **资产卡：** [HR-21C2972F96D27050](./ASSET-CARDS.md#asset-hr-21c2972f96d27050)
+
+<a id="change-src-hr-20ecfd77779db3cf"></a>
+### 2026-09-25 · CASE01 — Checkpoint export selection
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-036C68E81455
+- **来源：** [PK-036C68E81455.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-036C68E81455.md)
+- **资产卡：** [HR-20ECFD77779DB3CF](./ASSET-CARDS.md#asset-hr-20ecfd77779db3cf)
+
+<a id="change-src-hr-1f9841e6ddd99212"></a>
+### 2026-09-25 · CASE03 — Queued request acknowledgement
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-E4E08B5DB0B4
+- **来源：** [PK-E4E08B5DB0B4.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-E4E08B5DB0B4.md)
+- **资产卡：** [HR-1F9841E6DDD99212](./ASSET-CARDS.md#asset-hr-1f9841e6ddd99212)
+
+<a id="change-src-hr-1f0aede0fa518585"></a>
+### 2026-09-25 · Supplemental record CASE02
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Source type: neutral synthetic case-log index.
+- **来源：** [CASE02.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE02.md)
+- **资产卡：** [HR-1F0AEDE0FA518585](./ASSET-CARDS.md#asset-hr-1f0aede0fa518585)
+
+<a id="change-src-hr-1b246f491ba5342a"></a>
+### 2026-09-25 · CASE01 — Checkpoint export selection
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-87E4C138ACC9
+- **来源：** [PK-87E4C138ACC9.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-87E4C138ACC9.md)
+- **资产卡：** [HR-1B246F491BA5342A](./ASSET-CARDS.md#asset-hr-1b246f491ba5342a)
+
+<a id="change-src-hr-1951fd6d3793f7a4"></a>
+### 2026-09-25 · CASE05 — Archive grouping revision scope
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-F245E2EB0644
+- **来源：** [PK-F245E2EB0644.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-F245E2EB0644.md)
+- **资产卡：** [HR-1951FD6D3793F7A4](./ASSET-CARDS.md#asset-hr-1951fd6d3793f7a4)
+
+<a id="change-src-hr-15d26bfc6734b7d4"></a>
+### 2026-09-25 · Supplemental record CASE01
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **来源：** [CASE01.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE01.md)
+- **资产卡：** [HR-15D26BFC6734B7D4](./ASSET-CARDS.md#asset-hr-15d26bfc6734b7d4)
+
+<a id="change-src-hr-146c6d892d909ee6"></a>
+### 2026-09-25 · Control-equivalence note — CASE02 R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
+- **来源：** [CASE02-control-equivalence-note.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-control-equivalence-note.md)
+- **资产卡：** [HR-146C6D892D909EE6](./ASSET-CARDS.md#asset-hr-146c6d892d909ee6)
+
+<a id="change-src-hr-11f58a3d336fc97e"></a>
+### 2026-09-25 · CASE03 ambiguity proof — R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** FACTS and both byte-identical atom blocks record QUEUED, a lost receipt, no terminal status, an immutable non-duplicating key, and two available controls. LINKLESS retains R01 and R03–R05. Those relations identify the request, expose possible query statuses, preserve the key identity, and record…
+- **来源：** [CASE03-ambiguity-proof.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-ambiguity-proof.md)
+- **资产卡：** [HR-11F58A3D336FC97E](./ASSET-CARDS.md#asset-hr-11f58a3d336fc97e)
+
+<a id="change-src-hr-1075a79086af4a5d"></a>
+### 2026-09-25 · CASE01 — Checkpoint export selection
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Packet reference: PK-36E400FB560F
+- **来源：** [PK-36E400FB560F.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md)
+- **资产卡：** [HR-1075A79086AF4A5D](./ASSET-CARDS.md#asset-hr-1075a79086af4a5d)
+
+<a id="change-src-hr-04b6095797c8bb89"></a>
+### 2026-09-25 · Agent D — Measurement and preregistration proposal
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Read-only proposal. No repository files were changed.
+- **来源：** [D.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/D.md)
+- **资产卡：** [HR-04B6095797C8BB89](./ASSET-CARDS.md#asset-hr-04b6095797c8bb89)
+
+<a id="change-src-hr-048f37968c6d4686"></a>
+### 2026-09-25 · Frozen read-only proposal A — endpoint validity
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Review basis: Task217 R0 evaluator criteria, sealed targets, and outcome rule at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run.
+- **来源：** [A-endpoint.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/A-endpoint.md)
+- **资产卡：** [HR-048F37968C6D4686](./ASSET-CARDS.md#asset-hr-048f37968c6d4686)
+
+<a id="change-src-hr-026cc267d69c82cb"></a>
+### 2026-09-25 · Owner Review R1 — initial freeze rejected for launch
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The R0 freeze passed its task-local validator, but the Owner/GPT review rejected it for launch readiness. This record preserves the initial result and the three independent read-only proposals before synthesis.
+- **来源：** [OWNER-REVIEW-R1.md](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/OWNER-REVIEW-R1.md)
+- **资产卡：** [HR-026CC267D69C82CB](./ASSET-CARDS.md#asset-hr-026cc267d69c82cb)
+
 <a id="change-src-hr-67c573b4578ae30a"></a>
 ### 2026-09-23 · Evaluation evidence isolation / fixed point (Step07)
 

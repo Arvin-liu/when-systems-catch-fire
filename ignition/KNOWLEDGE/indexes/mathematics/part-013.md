@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从原文看，信息门非对称退化，η_gate^asym = G × \(1-H\) × min\(ε^S,ε^R\)/max\(ε^S,ε^R\)。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4ff9edd58fed35af / 从原文看，信息门非对称退化，η_gate^asym = G × \(1-H\) × min\(ε^S,ε^R\)/max\(ε^S,ε^R\)。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，信息门非对称退化，效率由低意识方决定。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0840350e2fff91cd / 从原文看，信息门非对称退化，效率由低意识方决定。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-26298EEF40DEEDA5 / 从原文看，倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 更像是一个用于把局部现象拉到跨域统一结构上的函数。 / IMPLICIT-26298EEF40DEEDA5 / IMPLICIT-9D0B03F022A7ED21
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-9D0B03F022A7ED21 / 从原文看，倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 更像是一个用于把局部现象拉到跨域统一结构上的函数。 / IMPLICIT-9D0B03F022A7ED21 / IMPLICIT-26298EEF40DEEDA5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-531de3c48b490f16 / 从原文看，倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，偏好伪造概率，遮蔽越高→偏好伪造概率越高→崩塌条件触发。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-566295066efbec73 / 从原文看，偏好伪造概率，遮蔽越高→偏好伪造概率越高→崩塌条件触发。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，储能函数，储能双类型：E_practice+E_body。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-71daa6a7e42d4808 / 从原文看，储能函数，储能双类型：E_practice+E_body。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，共享源双重杀伤函数,ρ同时驱动H_correlation\(D66\)和P\(biased\)\(D53\),联合效应P_sustain∝\(1-ρ\)²… 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-82d352d8fae5f297 / 从原文看，共享源双重杀伤函数,ρ同时驱动H_correlation\(D66\)和P\(biased\)\(D53\),联合效应P_sustain∝\(1-ρ\)²… 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D53, D66；被引用：—
+- [从原文看，关联长度-门槛函数，关联长度ξ=\|T-Tc\|^{-ν}描述门控面Λ的空间关联范围。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-782e100d831fd4c3 / 从原文看，关联长度-门槛函数，关联长度ξ=\|T-Tc\|^{-ν}描述门控面Λ的空间关联范围。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，内部抵抗，外部能量、抵抗阈值、退出权信号的平衡。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e71749ac3294a929 / 从原文看，内部抵抗，外部能量、抵抗阈值、退出权信号的平衡。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从原文看，决策维度，二值变量。不可推导，作为框架起点。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c1bf85776e71e2d5 / 从原文看，决策维度，二值变量。不可推导，作为框架起点。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
@@ -2452,55 +2502,5 @@
 - [从这条案例看，中文：案例说明：忆秦娥身份锁定——η_tool变成H_self放大器 English: Rule-based English render… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6e22fbcbf51672ff / 从这条案例看，中文：案例说明：忆秦娥身份锁定——η_tool变成H_self放大器 English: Rule-based English render… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大。核心函数：\[D158\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f3cbf4a12ce23ba4 / 从这条案例看，中文：案例说明：恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大。核心函数：\[D158\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158；被引用：—
-- [从这条案例看，中文：案例说明：恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归。核心函数：… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f3900f17678f3b51 / 从这条案例看，中文：案例说明：恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归。核心函数：… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D111；被引用：—
-- [从这条案例看，中文：案例说明：愉悦是正预测误差或状态改善信号，成瘾是高增益反馈导致策略空间收缩。 关键发现：Q-0025 补充 \[D160\]\(docs/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2e77cf24bfe22f1b / 从这条案例看，中文：案例说明：愉悦是正预测误差或状态改善信号，成瘾是高增益反馈导致策略空间收缩。 关键发现：Q-0025 补充 \[D160\]\(docs/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D160；被引用：—
-- [从这条案例看，中文：案例说明：意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高。核… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a3a2d4260f30eb9e / 从这条案例看，中文：案例说明：意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高。核… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：意识 — Φ极小处自我感知，Φ_IIT∝-Φ\(点火\)。核心函数：\[D158\]\(docs/zh/functions/item… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-61999f4f5a8e2244 / 从这条案例看，中文：案例说明：意识 — Φ极小处自我感知，Φ_IIT∝-Φ\(点火\)。核心函数：\[D158\]\(docs/zh/functions/item… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158；被引用：—
-- [从这条案例看，中文：案例说明：意识障碍涉及脑干、丘脑、皮层网络和功能连接；数学上可写成全局工作空间增益未超过阈值，具体治疗需要医学实证。 关键发现：Q-… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85e656b6ff8b76c7 / 从这条案例看，中文：案例说明：意识障碍涉及脑干、丘脑、皮层网络和功能连接；数学上可写成全局工作空间增益未超过阈值，具体治疗需要医学实证。 关键发现：Q-… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：感染扩张取决于有效再生产数；免疫缺陷降低清除率、识别率或问题器容量，使原本可控的病原越过阈值。 关键发现：Q-0031 将… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-621bf59e39534b2c / 从这条案例看，中文：案例说明：感染扩张取决于有效再生产数；免疫缺陷降低清除率、识别率或问题器容量，使原本可控的病原越过阈值。 关键发现：Q-0031 将… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失。核心函数：\[D159\]\(docs/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a66cb5425cd84789 / 从这条案例看，中文：案例说明：慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失。核心函数：\[D159\]\(docs/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D159；被引用：—
-- [从这条案例看，中文：案例说明：成人睡眠约七小时多不是神秘常数，而是修复收益、机会成本和长睡风险之间的最优窗口。 关键发现：Q-0028 将睡眠时长写成总… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-06285e4362bf9722 / 从这条案例看，中文：案例说明：成人睡眠约七小时多不是神秘常数，而是修复收益、机会成本和长睡风险之间的最优窗口。 关键发现：Q-0028 将睡眠时长写成总… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：成员国有真实退出权（英国脱欧=验证），但只点了经济认同 关键发现：第4步部分跑通 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ee2536daf58e4341 / 从这条案例看，中文：案例说明：成员国有真实退出权（英国脱欧=验证），但只点了经济认同 关键发现：第4步部分跑通 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

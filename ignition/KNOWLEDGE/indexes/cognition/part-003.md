@@ -4,6 +4,36 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [This result proves repository-local deterministic projection, semantic consistency, lifecycle bookkeeping and release tr](../../../agent-results/IGNITION-20260821-130-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a7acbc9ab3d78202 / This result proves repository-local deterministic projection, semantic consistency, lifecycle bookkeeping and release tr
+  - 来源：`agent-results/IGNITION-20260821-130-result.md`
+  - 依赖：—；被引用：—
+- [This result proves repository-local implementation, deterministic projection, semantic consistency, bounded regression e](../../../agent-results/IGNITION-20260822-132-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-67b05f00232825f7 / This result proves repository-local implementation, deterministic projection, semantic consistency, bounded regression e
+  - 来源：`agent-results/IGNITION-20260822-132-result.md`
+  - 依赖：—；被引用：—
+- [This result proves repository-local residual non-growth, projection hygiene, deterministic rendering, bounded regression](../../../agent-results/IGNITION-20260822-134-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-891d0b182aab3ee5 / This result proves repository-local residual non-growth, projection hygiene, deterministic rendering, bounded regression
+  - 来源：`agent-results/IGNITION-20260822-134-result.md`
+  - 依赖：—；被引用：—
+- [This result proves repository-local semantic implementation, deterministic projection, bounded regression evidence and c](../../../agent-results/IGNITION-20260822-133-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-afc4d38bbd59403f / This result proves repository-local semantic implementation, deterministic projection, bounded regression evidence and c
+  - 来源：`agent-results/IGNITION-20260822-133-result.md`
+  - 依赖：—；被引用：—
+- [title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-34C556C9FFC62BCE / title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用" / IMPLICIT-34C556C9FFC62BCE
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B00AD01AD1BE4FE8 / title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)" / IMPLICIT-B00AD01AD1BE4FE8
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-48ef5f5f1fa5e0cb / title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)"

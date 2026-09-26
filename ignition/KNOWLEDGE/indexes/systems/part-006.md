@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [社会科学因果判定；](../../../docs/v0.2_summary.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-75f11fff3c6448fe / 社会科学因果判定；
+  - 来源：`docs/v0.2_summary.md`
+  - 依赖：—；被引用：—
+- [社会科学因果判定；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-919acc5904af88df / 社会科学因果判定；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
 - [社会科学是中等风险领域。社会因果不能写成单因决定论。数据不足、解释争议大、缺乏统计显著性检验时必须 pending。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8017de0e1a02dc61 / 社会科学是中等风险领域。社会因果不能写成单因决定论。数据不足、解释争议大、缺乏统计显著性检验时必须 pending。

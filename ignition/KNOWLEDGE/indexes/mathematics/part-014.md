@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [从这条案例看，中文：案例说明：恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大。核心函数：\[D158\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f3cbf4a12ce23ba4 / 从这条案例看，中文：案例说明：恒星质量下限 — 聚变门控面=Gamow峰=隧穿×热分布乘积极大。核心函数：\[D158\]\(docs/zh/function… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158；被引用：—
+- [从这条案例看，中文：案例说明：恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归。核心函数：… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f3900f17678f3b51 / 从这条案例看，中文：案例说明：恢复力验证 — 从D111偏离10%投入，S_ignition增大0.8%，梯度指向D111方向，系统自动回归。核心函数：… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D111；被引用：—
+- [从这条案例看，中文：案例说明：愉悦是正预测误差或状态改善信号，成瘾是高增益反馈导致策略空间收缩。 关键发现：Q-0025 补充 \[D160\]\(docs/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2e77cf24bfe22f1b / 从这条案例看，中文：案例说明：愉悦是正预测误差或状态改善信号，成瘾是高增益反馈导致策略空间收缩。 关键发现：Q-0025 补充 \[D160\]\(docs/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D160；被引用：—
+- [从这条案例看，中文：案例说明：意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高。核… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a3a2d4260f30eb9e / 从这条案例看，中文：案例说明：意图清晰降低信道需求 — εaware高的人说一句话就够，εaware低的人写一大段还说不清，前者ηShannon更高。核… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：意识 — Φ极小处自我感知，Φ_IIT∝-Φ\(点火\)。核心函数：\[D158\]\(docs/zh/functions/item… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-61999f4f5a8e2244 / 从这条案例看，中文：案例说明：意识 — Φ极小处自我感知，Φ_IIT∝-Φ\(点火\)。核心函数：\[D158\]\(docs/zh/functions/item… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158；被引用：—
+- [从这条案例看，中文：案例说明：意识障碍涉及脑干、丘脑、皮层网络和功能连接；数学上可写成全局工作空间增益未超过阈值，具体治疗需要医学实证。 关键发现：Q-… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-85e656b6ff8b76c7 / 从这条案例看，中文：案例说明：意识障碍涉及脑干、丘脑、皮层网络和功能连接；数学上可写成全局工作空间增益未超过阈值，具体治疗需要医学实证。 关键发现：Q-… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：感染扩张取决于有效再生产数；免疫缺陷降低清除率、识别率或问题器容量，使原本可控的病原越过阈值。 关键发现：Q-0031 将… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-621bf59e39534b2c / 从这条案例看，中文：案例说明：感染扩张取决于有效再生产数；免疫缺陷降低清除率、识别率或问题器容量，使原本可控的病原越过阈值。 关键发现：Q-0031 将… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失。核心函数：\[D159\]\(docs/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a66cb5425cd84789 / 从这条案例看，中文：案例说明：慢性病的门外锁定+向下兼容——μ_repair<Λ_repair+症状管理的保真度损失。核心函数：\[D159\]\(docs/… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D159；被引用：—
+- [从这条案例看，中文：案例说明：成人睡眠约七小时多不是神秘常数，而是修复收益、机会成本和长睡风险之间的最优窗口。 关键发现：Q-0028 将睡眠时长写成总… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-06285e4362bf9722 / 从这条案例看，中文：案例说明：成人睡眠约七小时多不是神秘常数，而是修复收益、机会成本和长睡风险之间的最优窗口。 关键发现：Q-0028 将睡眠时长写成总… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从这条案例看，中文：案例说明：成员国有真实退出权（英国脱欧=验证），但只点了经济认同 关键发现：第4步部分跑通 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ee2536daf58e4341 / 从这条案例看，中文：案例说明：成员国有真实退出权（英国脱欧=验证），但只点了经济认同 关键发现：第4步部分跑通 English: Rule-based… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [从这条案例看，中文：案例说明：成瘾=σ退化到1/ln — 从连续优化退回二值判断（要/不要），失去中间态。核心函数：\[D227\]\(docs/zh/fun… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-937294a23339109f / 从这条案例看，中文：案例说明：成瘾=σ退化到1/ln — 从连续优化退回二值判断（要/不要），失去中间态。核心函数：\[D227\]\(docs/zh/fun… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2453,54 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-909044c6ea319a6c / 历史因果的具体判定（需要史料考证和解释共同体共识）
   - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [历史因果的具体判定：**pending**](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4aae191f707f084c / 历史因果的具体判定：**pending**
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [历史因果的具体判定：史料考证和解释共同体共识](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f91169d078206930 / 历史因果的具体判定：史料考证和解释共同体共识
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [历史如何解释偶然性？**（反事实历史）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6e1a0ca1c9da96db / 历史如何解释偶然性？**（反事实历史）
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [历史学不是物理实验](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0261e51abc9d346e / 历史学不是物理实验
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [历史学：历史因果的具体判定、历史规律的判定](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8d8eac55023cabe3 / 历史学：历史因果的具体判定、历史规律的判定
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [历史学：历史因果的具体判定、历史规律的判定](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c9f98285f8b1891a / 历史学：历史因果的具体判定、历史规律的判定
-  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
-  - 依赖：—；被引用：—
-- [历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明，并对植物、蚁群与 ChatGPT 作了未实证的层级归类；这些内部案例不能证明层级生成协议的普适性或智能与意识可分离，当前仅保留为历史候选。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-55514b3f7f2db1f0 / 历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明，并对植物、蚁群与 ChatGPT 作了未实证的层级归类；这些内部案例不能证明层级生成协议的普适性或智能与意识可分离，当前仅保留为历史候选。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明决策权必须与信息权对称，当前仅保留为历史规范候选。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0d40a7f29fab9549 / 历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明决策权必须与信息权对称，当前仅保留为历史规范候选。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明局部信息调整必然产生全局涌现，当前仅保留为历史候选。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-5799581a2bf15705 / 历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明局部信息调整必然产生全局涌现，当前仅保留为历史候选。
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明感知→调整→循环递归机制具有普适性，当前仅保留为历史候选。](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3cb99b907341dc67 / 历史文字纠偏：** 旧稿把9个内部案例的通过写成普适性证明；有限内部案例不能证明感知→调整→循环递归机制具有普适性，当前仅保留为历史候选。
-  - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

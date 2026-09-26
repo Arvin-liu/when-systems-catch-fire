@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import hashlib
+import json
 from pathlib import Path
 import sys
+import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,7 +19,12 @@ from agent_runtime.cognitive_inheritance_r0.src.contracts import (  # noqa: E402
 )
 from tools.validate_cognitive_inheritance_r0 import (  # noqa: E402
     FINAL_STATE,
+    TASK217_FREEZE_RELATIVE,
+    TASK217_FREEZE_SIDECAR_RELATIVE,
+    ValidationFailure,
+    task217_generated_fire_seed_paths,
     is_allowed_changed_path,
+    task217_generated_knowledge_paths,
     validate_all,
 )
 
@@ -92,6 +100,76 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertFalse(is_allowed_changed_path("ignition/KNOWLEDGE/UNEXPECTED.md"))
         self.assertFalse(is_allowed_changed_path("ignition/data/publication/fire-seeds/CHANGELOG.jsonl"))
         self.assertFalse(is_allowed_changed_path("ignition/data/agent-federation/build-vs-integrate-policy-r1.json.bak"))
+
+    def test_task217_generated_knowledge_allowance_is_hash_bound(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            projection = "ignition/KNOWLEDGE/cards/part-016.md"
+            artifact = repo / projection
+            artifact.parent.mkdir(parents=True)
+            artifact.write_text("frozen generated projection\n", encoding="utf-8")
+            digest = hashlib.sha256(artifact.read_bytes()).hexdigest()
+            freeze = {
+                "external_generated_knowledge_experience": {
+                    "files": [{"path": projection, "sha256": digest}],
+                },
+            }
+            freeze_path = repo / TASK217_FREEZE_RELATIVE
+            freeze_path.parent.mkdir(parents=True)
+            freeze_bytes = (json.dumps(freeze, sort_keys=True, indent=2) + "\n").encode("utf-8")
+            freeze_path.write_bytes(freeze_bytes)
+            sidecar_path = repo / TASK217_FREEZE_SIDECAR_RELATIVE
+            sidecar_path.write_text(
+                f"{hashlib.sha256(freeze_bytes).hexdigest()}  {TASK217_FREEZE_RELATIVE.as_posix()}\n",
+                encoding="utf-8",
+            )
+
+            exact_paths = task217_generated_knowledge_paths(repo)
+            self.assertEqual(exact_paths, {projection})
+            self.assertTrue(is_allowed_changed_path(projection, exact_extra_paths=exact_paths))
+            self.assertFalse(is_allowed_changed_path("ignition/KNOWLEDGE/cards/part-999.md", exact_extra_paths=exact_paths))
+
+            artifact.write_text("tampered projection\n", encoding="utf-8")
+            with self.assertRaises(ValidationFailure):
+                task217_generated_knowledge_paths(repo)
+
+    def test_task217_fire_seed_allowance_is_hash_bound(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            projections = {
+                "ignition/data/publication/fire-seeds/seed-census.json": "frozen seed census\n",
+                "ignition/data/publication/fire-seeds/CHANGELOG.jsonl": "frozen no-delta event\n",
+            }
+            files = []
+            for path, body in projections.items():
+                artifact = repo / path
+                artifact.parent.mkdir(parents=True, exist_ok=True)
+                artifact.write_text(body, encoding="utf-8")
+                files.append({"path": path, "sha256": hashlib.sha256(artifact.read_bytes()).hexdigest()})
+            freeze = {
+                "external_generated_fire_seed_census": {
+                    "scope": "machine source census only; no human Fire Seeds entry changed",
+                    "files": files,
+                },
+            }
+            freeze_path = repo / TASK217_FREEZE_RELATIVE
+            freeze_path.parent.mkdir(parents=True)
+            freeze_bytes = (json.dumps(freeze, sort_keys=True, indent=2) + "\n").encode("utf-8")
+            freeze_path.write_bytes(freeze_bytes)
+            sidecar_path = repo / TASK217_FREEZE_SIDECAR_RELATIVE
+            sidecar_path.write_text(
+                f"{hashlib.sha256(freeze_bytes).hexdigest()}  {TASK217_FREEZE_RELATIVE.as_posix()}\n",
+                encoding="utf-8",
+            )
+
+            exact_paths = task217_generated_fire_seed_paths(repo)
+            self.assertEqual(exact_paths, set(projections))
+            self.assertTrue(is_allowed_changed_path("ignition/data/publication/fire-seeds/CHANGELOG.jsonl", exact_extra_paths=exact_paths))
+            self.assertFalse(is_allowed_changed_path("ignition/data/publication/fire-seeds/unlisted.jsonl", exact_extra_paths=exact_paths))
+
+            (repo / "ignition/data/publication/fire-seeds/CHANGELOG.jsonl").write_text("tampered\n", encoding="utf-8")
+            with self.assertRaises(ValidationFailure):
+                task217_generated_fire_seed_paths(repo)
 
     def test_r0_paths_are_excluded_from_canonical_claim_discovery(self) -> None:
         result = validate_all(ROOT)

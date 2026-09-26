@@ -1444,6 +1444,11 @@
   - 可搜索名称：IGNITION-20260920-190 Step00 receipt / step00-receipt
   - 来源：`reports/evaluations/ignition-190-method-use-trace-r0/step00-receipt.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260925-217 — Method Dependency Benchmark R0](../../ASSET-CARDS.md#asset-hr-6ffc16c239f47e05)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260925-217 — Method Dependency Benchmark R0 / README
+  - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/README.md`
+  - 依赖：—；被引用：—
 - [Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q_evidence](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-796aefc21450d046 / Ignition_d=C_d × M_d × I_d × L_d × G_d × P_d × Q_evidence
@@ -2497,10 +2502,5 @@
 - [link: "已迁移的历史案例来源/0777-C-0782-马伯庸建议蹲下来看最下面一排书.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2af322bd03d915e0 / link: "已迁移的历史案例来源/0777-C-0782-马伯庸建议蹲下来看最下面一排书.md"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [link: "已迁移的历史案例来源/0778-C-0783-准备《长谈》花一个月.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-f2f6e929ec1936a2 / link: "已迁移的历史案例来源/0778-C-0783-准备《长谈》花一个月.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

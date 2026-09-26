@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "统一健康指标函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A02F11550F365BD5 / title: "统一健康指标函数" / IMPLICIT-A02F11550F365BD5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "统一健康指标函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1ea1078b9615b16b / title: "统一健康指标函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "统一内部驱动力函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2F1321B7A45ABE48 / title: "统一内部驱动力函数" / IMPLICIT-2F1321B7A45ABE48 / IMPLICIT-923298EDA525CEAE
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "统一内部驱动力函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-923298EDA525CEAE / title: "统一内部驱动力函数" / IMPLICIT-923298EDA525CEAE / IMPLICIT-2F1321B7A45ABE48
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "统一内部驱动力函数"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f8937e7eeadc0783 / title: "统一内部驱动力函数"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度-容斥稳定性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-08F74701B9627707 / title: "维度-容斥稳定性函数" / IMPLICIT-08F74701B9627707
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度不归点-退化路径联合函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0FFD14568CC4E6A9 / title: "维度不归点-退化路径联合函数" / IMPLICIT-0FFD14568CC4E6A9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度偏离退化路径函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2A3AECE974ADBE51 / title: "维度偏离退化路径函数" / IMPLICIT-2A3AECE974ADBE51
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度回复力函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2A5FC175308BCFBA / title: "维度回复力函数" / IMPLICIT-2A5FC175308BCFBA
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "维度回复阻尼函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0CA06FCDA1FD5DB9 / title: "维度回复阻尼函数" / IMPLICIT-0CA06FCDA1FD5DB9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [title: "维度回复非线性-阻尼联合函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-31BAB242160EC320 / title: "维度回复非线性-阻尼联合函数" / IMPLICIT-31BAB242160EC320
@@ -2454,53 +2504,3 @@
   - 可搜索名称：CLAIM-D316 / Within the source-defined scope, 容斥时间权重演化函数 is adjudicated as STATE_TRANSITION: M3的dΦ/dt=Σᵢ αᵢ/\(1-pᵢ\) + Σᵢⱼ d\(pᵢpⱼ\)/dt。早
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—
-- [Within the source-defined scope, 容斥渐近发散函数 is adjudicated as RELATION: M3的容斥高阶项在pᵢ→1时ΔΦ→e^{pᵢ}-1-pᵢ→∞，发散速率∝e^{pᵢ}。pᵢ接近1时容](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D302 / Within the source-defined scope, 容斥渐近发散函数 is adjudicated as RELATION: M3的容斥高阶项在pᵢ→1时ΔΦ→e^{pᵢ}-1-pᵢ→∞，发散速率∝e^{pᵢ}。pᵢ接近1时容
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D260, D296；被引用：—
-- [Within the source-defined scope, 容斥阈值-复杂度函数 is adjudicated as METRIC: M4的容斥阈值p*∝√n。复杂系统p*更高→更难被容斥压垮。但n大→容斥高阶项基数更大→一旦pᵢ>p](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D271 / Within the source-defined scope, 容斥阈值-复杂度函数 is adjudicated as METRIC: M4的容斥阈值p*∝√n。复杂系统p*更高→更难被容斥压垮。但n大→容斥高阶项基数更大→一旦pᵢ>p
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 容斥集中性统一函数 is adjudicated as RELATION: M3的D372与D328是同一现象不同表述。统一指标I_concentration = max\(Δ](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D386 / Within the source-defined scope, 容斥集中性统一函数 is adjudicated as RELATION: M3的D372与D328是同一现象不同表述。统一指标I_concentration = max\(Δ
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D328, D372；被引用：—
-- [Within the source-defined scope, 容斥项精确结构 is adjudicated as RELATION: 容斥项精确结构。. This is a model-internal controlled propo](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-T19 / Within the source-defined scope, 容斥项精确结构 is adjudicated as RELATION: 容斥项精确结构。. This is a model-internal controlled propo
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 对称-破缺-定向对偶函数\(推论级\) is adjudicated as RELATION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-i](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D111 / Within the source-defined scope, 对称-破缺-定向对偶函数\(推论级\) is adjudicated as RELATION: 17域词典簇碰撞，涵盖17个领域的函数投影。. This is a model-i
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 对称性破缺-关联拓扑联合函数 is adjudicated as RELATION: M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果比D33](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D372 / Within the source-defined scope, 对称性破缺-关联拓扑联合函数 is adjudicated as RELATION: M3的不对称性使前3个高p门控面容斥贡献从>50%升至>60%。降p_max效果比D33
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D330；被引用：—
-- [Within the source-defined scope, 干预时机悖论函数 is adjudicated as RELATION: M13正反馈干预的时机悖论：早期效果弱但窗口宽，晚期效果强但窗口窄。最优时机=D262缓冲峰值时刻t](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D279 / Within the source-defined scope, 干预时机悖论函数 is adjudicated as RELATION: M13正反馈干预的时机悖论：早期效果弱但窗口宽，晚期效果强但窗口窄。最优时机=D262缓冲峰值时刻t
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D262；被引用：—
-- [Within the source-defined scope, 干预机会面积函数 is adjudicated as RELATION: A_intervention^\(2\)\(d\) ∝ p*\(√d-1\)/d`，在 `d≈4` 时最大；这意](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D285 / Within the source-defined scope, 干预机会面积函数 is adjudicated as RELATION: A_intervention^\(2\)\(d\) ∝ p*\(√d-1\)/d`，在 `d≈4` 时最大；这意
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 幽灵-不可逆竞争函数 is adjudicated as RELATION: \[D464\]\(docs/zh/functions/items/D464.md\)×D410交叉产生](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D465 / Within the source-defined scope, 幽灵-不可逆竞争函数 is adjudicated as RELATION: \[D464\]\(docs/zh/functions/items/D464.md\)×D410交叉产生
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D410, D412, D464；被引用：—
-- [Within the source-defined scope, 幽灵超指数衰减函数 is adjudicated as STATE_TRANSITION: D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D464 / Within the source-defined scope, 幽灵超指数衰减函数 is adjudicated as STATE_TRANSITION: D384精确化——极小点消失后的势能面残余不是简单指数衰减，而是超指数衰减： $$
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D384, P17；被引用：—

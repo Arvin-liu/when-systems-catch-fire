@@ -1,0 +1,968 @@
+{
+  "artifact_type": "TASK_FREEZE_MANIFEST",
+  "branch": "work/IGNITION-20260925-217-method-dependency-benchmark-r0",
+  "command_blob_sha": "86dc6df5c40ae27375773f58f6d339abc8003753",
+  "command_path": "Arvin-liu/1111:agent-commands/IGNITION-20260925-217-R1-BENCHMARK-VALIDITY-REPAIR.md",
+  "condition_map_released": false,
+  "created_at_utc": "2026-09-25T15:29:29+00:00",
+  "evaluator_outputs_exist": false,
+  "evaluators_launched": false,
+  "excluded_self_references": [
+    "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.json",
+    "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.sha256"
+  ],
+  "external_generated_human_results": {
+    "check": "python3 tools/governance/build_human_results.py --check passed; HUMAN_RESULTS_OK records=757",
+    "files": [
+      {
+        "path": "ignition/RESULTS/CHRONOLOGY.md",
+        "sha256": "cf6a089acfeb3eec249ec30a4acdbfec0e87bcaddf357b4e65fa8531f48c8d6f"
+      },
+      {
+        "path": "ignition/data/governance/human-results/census.json",
+        "sha256": "f920c455d159557865b13e3699c773d4749636c705d5d6d834776ed18ff1373d"
+      },
+      {
+        "path": "ignition/data/governance/human-results/result-ledger.jsonl",
+        "sha256": "073be07e060221013bdac778b1375a7b364f02f341cd0000b7779b32814b289b"
+      }
+    ],
+    "generator": "python3 tools/governance/build_human_results.py",
+    "new_task217_source_documents": 80,
+    "reason": "The configured reports/ source root includes 80 Task217 Markdown documents; outputs remain navigation-only under the configured claim ceiling."
+  },
+  "external_generated_knowledge_experience": {
+    "audit": "python3 tools/governance/validate_knowledge_experience.py passed; KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=805 changes=698 layers=726 search=24887 aliases=1657 links=29606 two_click_pages=8",
+    "changed_generated_output_count": 93,
+    "check": "python3 tools/governance/build_knowledge_experience.py --check passed; KNOWLEDGE_EXPERIENCE_OK cards=805 changes=698 layered=726 search=24887",
+    "files": [
+      {
+        "path": "ignition/KNOWLEDGE/ASSET-CARDS.md",
+        "sha256": "90e7e8a93f8657ab2b02d555cbf118861019abf9a6b864c327c7cb44964781a8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/COVERAGE.md",
+        "sha256": "cb44c5b6bbfd24f5908542eaff42b6e4fa3b5f6c89ad9b7f9bab124e675ddad2"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/MAP.md",
+        "sha256": "8d29148b73fe7eac92c6b7f0c43fc7de53a1e26088733aa0be69f8eee85aece1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/READING-LAYERS.md",
+        "sha256": "5be5e5c21ef265fe1c297940190930683c203a18d0465a162ebe2d6c43a1d1db"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/README.md",
+        "sha256": "ed0025a8c0b8d9dec5b3abef6645d8ce935c376657b5f0c57e8c024763447ca2"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/SEARCH.md",
+        "sha256": "21b195c7c8580468fdcebb487c092d7cdadace50ae4500e3f87c0ed3cdf30f49"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/WHATS-NEW.md",
+        "sha256": "b6fe2733eb7d61b5f898129c662965d049d07d1b3f88cc4586ec2d2b2923706b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-002.md",
+        "sha256": "3a74e4477ed202882f924a6120544d680590bc18bc907f6755d409f075255fb8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-003.md",
+        "sha256": "ec5b41d242f150346a5220e33a60ac412056767347fb76d936e82eede2ba89ab"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-004.md",
+        "sha256": "0348851325bef160d446173e80d2da8f619b3aeb24dddbb5019b4d77327206b8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-005.md",
+        "sha256": "1e4b03eb6b9bd73fa3737e45a93fe43e24a61a6f97f9757b6832be22fb4d6eb3"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-006.md",
+        "sha256": "b2f7585fe5a7053d4560c9092ab3d7cb033d62269ab943aab3a305d466958b77"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-007.md",
+        "sha256": "cecaa1f13bffd4062436ef2c82c2fd7d239ab86d9d9b45972adf2323fc156978"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-008.md",
+        "sha256": "90b2c6a499e19dcfb6b1224dec0ec804f77951d48af71d8c2a15f38891f9b694"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-009.md",
+        "sha256": "b50eddbcd43964e1515e19da203c221fa3ac65da79858f8588a919ae1280cd24"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-010.md",
+        "sha256": "bc9457df6491038afb472f71767e0ce4e8a34548e521d66a2792b818f32531ec"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-011.md",
+        "sha256": "fa9d94358147ab62e24329376a8f209594826145138a74b85b3d22e7a7cd653e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-012.md",
+        "sha256": "27ddb401334305bdc20096c1d737945c7da684b4c22f5b020bb4c65840de42e8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-013.md",
+        "sha256": "8443eb4bcb20173b453474a6224b241555015ff439ccc7a9e57ac2f75faeaf12"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-014.md",
+        "sha256": "1cea1566e8a528a4c97b24fa2e90c5605bc7ec1242db54a97599d74051aef324"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-015.md",
+        "sha256": "88e5f473e61c5954114f215f884da37306b7d7412ed61799b4f52446dba69c5b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-016.md",
+        "sha256": "b38a129d3c6a465c29f8d1b811b404506efd2b680450efc344df7ac50c75b212"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-017.md",
+        "sha256": "ce0e94bab7e2a4294bf61ac6b59ba7d80b0ca8d8b09d24e602f474d1cc380fa7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance.md",
+        "sha256": "1ff9bb7e25aeda581bdb083f6b554973b7a753830ea58025bb282eaf27e5574f"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-006.md",
+        "sha256": "67f1d671578acdac65353b1e6d92c4ef72a4c61fda80a588df5aaa8be0069f22"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-007.md",
+        "sha256": "1b109ebb62611639f297aa65596ca1099c965e65a34bfb3ef630c89fabbbb9f4"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-008.md",
+        "sha256": "3ba05e2f99f2c1cea25426a71d4a89a5d5a18d53e6412392171164a43872b1ba"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-009.md",
+        "sha256": "d9fb25b40f72113df32bece703ff8a1b9bb72cc6486a258d5aee0fed1f519641"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-010.md",
+        "sha256": "b477800f94a9dc0f9138e7e49875e2af29a8466600e912a497dc0c6891c8ec96"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-011.md",
+        "sha256": "ed333809a82f23875e572e34d20e2e24513b59fec903b86f668e70656ba2218b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-012.md",
+        "sha256": "032ba7fdb4b6267a34ca9b88cd90933e152b9e38dc611e6a67bdcbbba6ef2dfe"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-013.md",
+        "sha256": "3c1002e147636e4c67a5ef997b7ad7bd55a076f085973865197b152a230ed81e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-014.md",
+        "sha256": "361a7a4f6749c5f8c67460cf2d45f8898ba775dc401839f0bc2c82d2ecea5752"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-015.md",
+        "sha256": "e753799b25c56fbf07c826c49354eeb4781105f6e350b1d3dc30281a7efa4a15"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition.md",
+        "sha256": "9ee1f2271bab95654981ddab86e1479229d85464174e2fd078c2c76505ce4dbb"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-001.md",
+        "sha256": "53e43ceaf6d412869034a1e1a8baaae4633a275979f2580106f7cb7476aa3703"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-002.md",
+        "sha256": "ac381d8a25b55ae89e19c1fef25fc2fde1ef17d9bbb356718a75c7eb5a4d9e03"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-003.md",
+        "sha256": "12c3eaac4d7133b46856abe7ad6f2af14cb4043c6dca775016db044ad054763a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics.md",
+        "sha256": "a80239227551ab140251dd027d0c89724c1432f64f5c3fb70ceb420d3cad8d2c"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-004.md",
+        "sha256": "f4c1710fb59e921d369ff6f0e642c4fb562082a4c106bc4aef6353a34883a004"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-005.md",
+        "sha256": "43b71b552f56d594cb1b1a41563f883b6d245388619c7c31ac13eb14692d9197"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-006.md",
+        "sha256": "517d7d0ed8760cb958fad9e58437c1e8fba9c697558fa4e9f5c2090a0952681a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-007.md",
+        "sha256": "6bb2bcde285516313bae324320f7a05898bd2a3e7c0a4f5bed4fcf862cc0cab1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-008.md",
+        "sha256": "8152cd071621905b1254bae413aae5ec671a1255351e962ae97a65a492accad4"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-009.md",
+        "sha256": "33fc92308f0cc6cd9b5bae2a6d8e3498072a3bea925ae69b0d6c7e8d6980cdda"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-010.md",
+        "sha256": "f5a40a95b0580c9515ede47c75082476e4c33e4b491b379b3b0f0637ed3d6800"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-011.md",
+        "sha256": "6c5d8b17500e2b794220d797f0e289126f28c2a6ba235080a94cab3af79398a9"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-012.md",
+        "sha256": "e8630358e3b01b6351dbd492bcfee61a9d0687dd79c0cdfbeb65fbdb95a2cc3e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-013.md",
+        "sha256": "1bbdd150f6f4f8891da0c9d852126b754a17711ced1b98eeeeca9981479ca7ac"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-014.md",
+        "sha256": "f283ba6c104d94675de54a080008527fe847f75ab2e57a88c8c91aa74554f770"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-015.md",
+        "sha256": "e4bd6f581aa65dd2d528ad1d6086a298d3702aca43fd87064105f74dc7562012"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-016.md",
+        "sha256": "9ebf183de3affbd23fda46c3f92cf54cdc0416dbd5006033dc28f8df0a2eb785"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-017.md",
+        "sha256": "501c7ca701cd115ceacbd7ea67598d9d13b769c4b914a34247876ee613dd5260"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-018.md",
+        "sha256": "1b20237742d0cdfc7ea87eca87ad8fabc101eb46305cde3b1fc4b7f3f1d3d4c5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-019.md",
+        "sha256": "094ec712343cfc412448ddcf429d68ed4e0cc4ab94d3f34e1e534b673d4dd166"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-020.md",
+        "sha256": "39ed7c34ed6b279d91c57bc61fd2431376fc76022f654cde4427427d5bc42a11"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence.md",
+        "sha256": "d8589c37b946c55dd9a9918f98916c0d790b5cd40dbb05ed49339b4f9825e426"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-003.md",
+        "sha256": "42e7fffafaa5fbf4027416230a94c26806bdac09c217228f6592ed280e28667b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-004.md",
+        "sha256": "3a57e982c7c800ce5e6969d8953b8a2854d86b0d99c3a2e360d8050f71b56d57"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-005.md",
+        "sha256": "b7611d16f031681803f572f73d1249accffb6fcf82b68b28bbe05e9964276486"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-006.md",
+        "sha256": "c3f05d61837a26b1f98095bdea3e69d206ad4b8f6c6d9cf3c889308ca58854c5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-007.md",
+        "sha256": "004486b07514c7a87072ec543397c9ac34dbe0dc89c050164b55acbe338c5951"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems.md",
+        "sha256": "39cbdcb1a5da6665949b51d7bc0f79e1eebb71965931ba93ca0cece9c05043c2"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-001.md",
+        "sha256": "56c8eea4fa268b3b8e389f138fed3ecadec8a0796f89c76e02b83486a46e1bf1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-002.md",
+        "sha256": "c93482871dfdabb2bb702fa402c4f50ac0392670ab46a248bd39fc7dd77b501b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-003.md",
+        "sha256": "df1eac6eb6a0fa77d2695aaf060bed4409799af4872a332e6739ffa1e18f4f33"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-004.md",
+        "sha256": "7f7f15ed100a5b15bc5c18eab7b5197e88dfde7d85970be6868a7d93ddb451fb"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-005.md",
+        "sha256": "26b9e0abc3d44d48389dda433997dc8d09256a88ee56906948e8bccad946bf5c"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-006.md",
+        "sha256": "851d3854e7bdadb8f997f35ac51b463a2eb1841e74169268115d6b035d90bd25"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/writing_publication.md",
+        "sha256": "45f7c761693fd93b043159027189a493b16e52d3d287d0aec8659c6687664076"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/writing_publication/part-001.md",
+        "sha256": "1f35ece0871209b609a5d74e815bbcf040eb75b60087ed376de04c7fed4fe50e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-001.md",
+        "sha256": "41acd69a4c0c9cf6f1a0e182673e2ae54a38b9b8b21657aa93dd6a1c2ff26d02"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-002.md",
+        "sha256": "c9c5f788609307332d738a5733e09a9f654086dff35f66e1fadd122218785993"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-003.md",
+        "sha256": "a46d025f1a3e94c0116ed7537a37fcf027092393afc35e1af2156228e03492cd"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-004.md",
+        "sha256": "2f199d01129b1c0bd3b913bf134f43c0876d231fcafe28c71d3ef8314ccfd4f3"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-005.md",
+        "sha256": "b776f71874d3444252878a0924e34056805f2325cd4ea7ba225533b6107ed260"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-006.md",
+        "sha256": "01c7daf60d27e2c8e7e8c80cca9c9852fc92c1fa9bbf3576716d0e4ca632e3d7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-007.md",
+        "sha256": "f93a6936e2639b8803f8266f91ca76b53862d11939260bbbee7ab1efe6a80f75"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-008.md",
+        "sha256": "30ae2bdc37b526bfe97aa7cf4f8825f9276bdf01a4ced7d7e48f9b0d5bc675d7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-009.md",
+        "sha256": "f869337a17259eff6907bef14f8e1dc09a430c1ded1374d9137963faee13482c"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-010.md",
+        "sha256": "a1c0b6d741520d59a80f719db44ce48328e19eeefb7b6ad40aee238f568c1363"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-011.md",
+        "sha256": "8bb0cf6c6ec8613ffe1939a47d6c7113548f5c20ce5b4593240cfb4453df9717"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-012.md",
+        "sha256": "998fb79828aef0bc05e4fec76d56098f9ae21639c6255e3739b2ba6a049c4eb1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-013.md",
+        "sha256": "1e60a8c9b09bf8bf894fbf18c3899bc8083a30024b372df982227f5320e53b54"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-014.md",
+        "sha256": "ddf8881ece93641c4a880efea6b1f27445afa2ce9b247503e5b7596621286e3a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-015.md",
+        "sha256": "261d42a8cb98c9690fc041499fc6dd63cbe40000fcc93a4462569d65cc5c1779"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+        "sha256": "cfa4a71b76d45548ae28dd2718799917358b15fd7dc867c5147c94293770fa65"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+        "sha256": "c9b8dd19a51c941b05dd690b2312b2ba306839723b6690503a3f33c0f960066e"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/changes.jsonl",
+        "sha256": "33febc3af3ce6478c455630615ada0945491b74ee8f180fc5c11dc8e88689e81"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/coverage.json",
+        "sha256": "1c534d9c460910fb6d2fad5c2290a0a4193b958c1ddcf80d565fa59633dd0542"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+        "sha256": "9a83845716f3dad4001dfd6d1052a386673046f7308d809f05b26cf1f2ba3bc1"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/manifest.json",
+        "sha256": "9e8f850b523c5c278ecc57a960a1f1d71f39c04ba9e31f1e56ee35e67c601423"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
+        "sha256": "0112606d65264da0ab0660b5a76e90fcda22f11ebf13b291c6c5c8835d54648d"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/source-first-seen.json",
+        "sha256": "26e5fc807faf8fcea2677702c56db20dca8c68b18bb224301601b1190d0e9aa9"
+      }
+    ],
+    "generators": [
+      "python3 tools/governance/gen_source_first_seen.py",
+      "python3 tools/governance/build_knowledge_experience.py"
+    ],
+    "new_task217_source_documents": 80,
+    "reason": "The full-history first-seen generator registered 80 Task217 Markdown sources; the standard knowledge-experience generator refreshed its declared projections. These are repository navigation/search projections, not scientific adjudications or lifecycle promotions.",
+    "source_first_seen_entry_count": 757,
+    "source_first_seen_path": "ignition/data/governance/knowledge-experience/source-first-seen.json"
+  },
+  "external_generated_nonfunction_claim_files": [
+    {
+      "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+      "reason": "refreshed tracked and evaluation-evidence exclusion counts after the knowledge-experience shard addition",
+      "sha256": "a369aa7369a8afbbc70d2e5a5e1c37c2ff7009b897651741549f594ce5203b46"
+    },
+    {
+      "path": "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+      "reason": "refreshed generated discovery coverage after the knowledge-experience shard addition",
+      "sha256": "91e8c1e2335a6eb7e2de7bed6c9514d7c2db2a7178f5a644965dcddb0e5430de"
+    },
+    {
+      "path": "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+      "reason": "registered the four newly generated knowledge-experience shard paths; repository discovery now covers 6759 tracked files",
+      "sha256": "a1b4eaf913b281f0419a973a25020c99e3d45465a0d844ec6cab02dbc1c40afe"
+    },
+    {
+      "path": "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+      "reason": "refreshed the generated tracked-file total to 6759",
+      "sha256": "05c5f7cb32501ec0958af24b28b7e12b3d0a6e509b668e8f8c913434681d48d5"
+    }
+  ],
+  "external_generated_path_index": {
+    "category": "EVALUATION_EVIDENCE",
+    "check": "python3 tools/foundation/validate_repository_path_classification.py --check passed 10/10",
+    "generator": "ignition/tools/foundation/validate_repository_path_classification.py --generate",
+    "path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+    "sha256": "b1708e3e939354b6b4ee80df66c9c5ea6cfe82e3777ce696b73a1f826ccec32e",
+    "task217_entry_count": 111
+  },
+  "external_generated_self_correction": {
+    "check": "python3 tools/governance/run_self_correction.py --check passed; SELF_CORRECTION_OK deltas=717 rules=10",
+    "files": [
+      {
+        "path": "ignition/data/governance/self-correction/audit-findings.jsonl",
+        "sha256": "394fe7c31d38181b5974369fda69c219a0ac70fd7fbf86b9428a5574a379d457"
+      },
+      {
+        "path": "ignition/RESULTS/SELF-CORRECTION-AUDIT.md",
+        "sha256": "cfc0ad63f3729a4673f87d459901b26acf2ebbfd8c3c434abf155f30e51f0251"
+      }
+    ],
+    "generator": "python3 tools/governance/run_self_correction.py",
+    "reason": "The Task217 validation report is an input to self-correction; these two files are generated audit projections."
+  },
+  "file_count": 109,
+  "files": [
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/ARCHITECTURE-QUESTION.md",
+      "sha256": "4470a5fcf9c236f542f56098cdc673cc7ce57430f7e2118f17a5c0ebb84b5e3a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/OWNER-REVIEW-R1.md",
+      "sha256": "eef17147e4f7633a8eedab1a9a8bd3e112f07cac5e869af6e6a9de544b8c942b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/README.md",
+      "sha256": "1528dc43ed31059fa909aa400a5351cf853ffb5322aefbe2891279739c4fbf8c"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/TASK216-OWNER-ADJUDICATION-INPUT.md",
+      "sha256": "c7ec24a5b2c3377b60cba83bd2c1686545dbf94dfc386a48b01ee11f10f65324"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/case-design.md",
+      "sha256": "a03c9085830e92fff4f5d71a401acacf4c15256e7a23c5d187f7dc53f129df19"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/facts.md",
+      "sha256": "9e795bf00455974a546fa1c8aff4b39d8796d2c88e2c09c843a9b4d56358ff90"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/provenance.json",
+      "sha256": "3e67b960e105817ff0dc17fc00e745f462e711505815219d3ba72c4e048eff96"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/case-design.md",
+      "sha256": "7f1ac164891b819f2094b4f94471e8ef29f04a6eb5fc9edf2b8010024fe65877"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/facts.md",
+      "sha256": "ad25047c5543769e5022f88115a1edd324a8dbfe83579b0ce088fb38ce7b28e8"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/provenance.json",
+      "sha256": "e32c64d356dd3bb6ce5c46e3e4e66c60fce2e25579643802aa437ba994906105"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE03/case-design.md",
+      "sha256": "8189d6067de333cd2d5e01831d8e068b3bf940c74127a91c0540f26bfe8935f6"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE03/facts.md",
+      "sha256": "175bfb3f2468f2fed0cec4508e971405172bc857a8b13377329cf609dd3a8689"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE03/provenance.json",
+      "sha256": "5898e2cf2ebc0448203efea1bbb2b4b4e4d1d11ff1d7812dc3adb0ab26966cfb"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE04/case-design.md",
+      "sha256": "b701e12419a42ca18076408d5cef9ee1c1ac5c1c1e7e7be932993592cd9df732"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE04/facts.md",
+      "sha256": "93bb8abab7be72380dd48451a37c4f36087c4ac062b592cd68878ab8e098a3c0"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE04/provenance.json",
+      "sha256": "bfd401ef1423f61d9e3dacd5777a01e32ee5f7e869825926dde588eeb1a7aebd"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE05/case-design.md",
+      "sha256": "02e8f116e1b2fe029d5d08a3de99aa0bc57b0204f52058fe29e9455ad534777b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE05/facts.md",
+      "sha256": "93a53c0e1300c89553c2f9772be4d7c8ce33321820b241cceda4668f1f4f694b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE05/provenance.json",
+      "sha256": "48c069b28890449b209aff122c957e888532bb0b2f879ba0afa3e43090097725"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/case-design.md",
+      "sha256": "1c6cd00f694decf50c8912293aec664139ca76b9463b158748fc2fc25a81e694"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/facts.md",
+      "sha256": "36dba3983f725eb1b14482cf18a4999c74c082e127b1724a08bc585260bc84c5"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/provenance.json",
+      "sha256": "730979a72d5059691e03e0912de17190feaef24c7e9808b361631253a21191cc"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE01.md",
+      "sha256": "09e3bbaaf61cf1b583951bc854258316776e7798c2a4efad1109cd8086caa634"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE02.md",
+      "sha256": "b5fe68bc83e755660ce88d6791b81d8a02244b714e72007b6dcceef9ffa37ec8"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE03.md",
+      "sha256": "183711b8010e6db4b1cce273ad85d3068eca337dd00738f26da10145b09d88d6"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE04.md",
+      "sha256": "71d6089c89446f15783ba7b33bdef4b4ac5f4e70af72aab6b1b4770989081e97"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE05.md",
+      "sha256": "d330790b13a046d34ad954a197743d78e44256bda5135c8fadc409204950ad7f"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE06.md",
+      "sha256": "950c927742d1c6b72327343031e0d6e7fa83e328daa91eb8f2363f519a098404"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE01.md",
+      "sha256": "c37883c7c6a329c3c1842a788dbee6998964a8eead24b8b51e83a4482b2e7ed1"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE02.md",
+      "sha256": "a6e716186f75c294b6d2ab697533df6235b4d0fdc99227a0769b074086119e87"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE03.md",
+      "sha256": "a7bda3a8f9a3f044d2bd6981cc05d7fd7071a543413f54cd3f53c236371a09ab"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE04.md",
+      "sha256": "4538a0274a4e30f15107d4ecde160fbf9c5a6ed443e6d840bbe59ef3a133b85d"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE05.md",
+      "sha256": "092138724dcd09776574d7c8e90cdbf006eaf63ef9b11f5e8d467ada963d9e93"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE06.md",
+      "sha256": "f01ce1f7da4ba8be840664ad69ed6587cd080dd34de7f17eb13d889b7402a444"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE01.md",
+      "sha256": "6c2a16875f36abbc152938121391415fc5920034f0acad69b704151210b19dde"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE02.md",
+      "sha256": "111e22d979b2ac8f954f235999e1ce1568fc5bca13c2c50f4279c6dd5f1ea044"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE03.md",
+      "sha256": "a7890397831b050eaa8f7097e85711a89a2b71425c57c79472f394ca4e06e1ac"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE04.md",
+      "sha256": "ab493d190602394edacddb1a87c24a94f1a80f8be99cc928e6fd56cba8bfd50f"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE05.md",
+      "sha256": "b9b3af5aa6f2fd120ebd644390c72449921ce8b38b69709c303b6a31b8e708ed"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE06.md",
+      "sha256": "94d171d2fce8236b66c85bb5216e508a1abdb53f9962594b1eebbf209967fc03"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/README.md",
+      "sha256": "b06dd5dda86154dd314ca594076a34a319fa0ef838581a8917904195eb2c7f76"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE01.md",
+      "sha256": "11af96e916706ff497888fc29e6990db5224a5c50cde4efb4ef243d0e58c58e4"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE02.md",
+      "sha256": "89bddf5c63166cdc7f761cbceba8c4dc753843e148f5e213104458e093cd5169"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE03.md",
+      "sha256": "fddc999a1a93785cbedd478447301e090a00727191affdad7aead2c8b7b5df1e"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE04.md",
+      "sha256": "68074e03f6a2bc843b8f3fcb1e4a9ec260030c1f6a519de1d0c9e5a6f970ef73"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE05.md",
+      "sha256": "2080ccc2def2682bd4a448123223d1f7b8add0deb34b93b1a16d165f6c83452c"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE06.md",
+      "sha256": "43005ba5118a4fc71ee8d0c43cff7647d55909acececba42423eeabffc405cf2"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE01-ambiguity-proof.md",
+      "sha256": "fcc911a89913f4ce8c6ec43e9bc94c2b576a01e56299ed39eba5d413c3051fd6"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE01-control-equivalence-note.md",
+      "sha256": "498d89440124cacbd72b704693ae32401cf01e34a9e49e825e44275e8c68c10b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-ambiguity-proof.md",
+      "sha256": "6a51e3a17ccb45e1b551b43d2ecaf4b2fe16002e992eda5b8da983b18708c871"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-control-equivalence-note.md",
+      "sha256": "967b60c20d660fe4b3643f514bf1d0d3bc9e9a9b557f5c181499a10fc1cb5b2f"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-ambiguity-proof.md",
+      "sha256": "451eaeb47997dfc22c0cb281173c9ad68568b2e1faf27b1129361f9d36cbc6df"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-control-equivalence-note.md",
+      "sha256": "6b762be229b20bfad8adb822679acc27d57a21f75062012a46d460c4b2e5e2e6"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE04-ambiguity-proof.md",
+      "sha256": "6478f39a6ed06e677cc334b2cd422abcf26823df3a8a8b31dd572a09a9742717"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE04-control-equivalence-note.md",
+      "sha256": "ad14b01a23dfb34d2357dbec1a103e3c313c611026eff52789f5910eb9e99ebd"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE05-ambiguity-proof.md",
+      "sha256": "64503ed7e4206c72763c99bb8c8ab89f24665d7cadbb89ed2da90b8d6ff4d5e0"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE05-control-equivalence-note.md",
+      "sha256": "519ab8c51e75fb741704a838b35bf4a856468634d531f5f95e6069651f40aea0"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE06-ambiguity-proof.md",
+      "sha256": "bdb14dbdd0b2adea74ba30b3b0b1e942ce36795213329450c3b34fc686fe4e29"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE06-control-equivalence-note.md",
+      "sha256": "332369ec765b3a34bd7db9f6e2363e846cd52871a211f8a027eb01ad316799e6"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/neutral-task-prompt.md",
+      "sha256": "4b5dc76b563aa6f45a9c3fa5ee155bc20fc8a82902da2a7a77d4dcc859d7a913"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/successor-output-r0.1.json",
+      "sha256": "fdf46bbe7f92dbc5a8340ad95381a0932b5b55f49f3c88f48f33c502a52c0133"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/disagreement-register.md",
+      "sha256": "d70df4c1fc0592739090f220c5a67fa957ded29af328125008ef468e44dbad2b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/A.md",
+      "sha256": "38221ee805d8490d65e5d0171fc6469c5c6196b2ccfc74df914e53c9c85f4379"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/B.md",
+      "sha256": "142693b2a946a81150977aad0ffbd5d832e93d478a5985df1b49b6cfc6487ae9"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/C.md",
+      "sha256": "443b9440f233d0479f8a55702eaabbb9b01faa244667b7f3a0ac00952ffa448f"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/D.md",
+      "sha256": "c911c6393bd8ce1735d2d7c827a60c700bf4faa2c112c4f5579357a0c362edf4"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/A-endpoint.md",
+      "sha256": "f160fd296d1b9b26ee514724f8e2eaad58f41008317290a9e9be6bdfacdc9c6c"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/B-leakage.md",
+      "sha256": "cbbcc91fc41c33cf50916993ea393a314cfa3726174b9d6fe8ad66ddd9dbd1cd"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/C-control-ambiguity.md",
+      "sha256": "02660866d8de3cbdf201848ec7ae868cc88db78b51898272bb8116ab9ebdd6f7"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r1.json",
+      "sha256": "8d6749f23d99420414409d0eadb59dcf9e5f5c0f628ef45d5f0e64ebdf8cc70a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r1.md",
+      "sha256": "357c95db85a906f9363c262bb02039ab287ed8a6b3c149928816ef45f37b042a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r2.json",
+      "sha256": "25b0229e4007e31a1333ca2e31e5a92b4bc5954c3e6abccd4c043709a5854f0b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r2.md",
+      "sha256": "85fd3a0068224cd18048b671885e7219a058f41970c70b4b44ffee5c066799a4"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule-r2.json",
+      "sha256": "f66e39839fcff159e8ee518480f33fc272547b2a577032cf12582d11fd19c005"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule-r2.md",
+      "sha256": "a0055ab27cf243e0d7ed0f0710c348f71876f9ebf08a1e9228bea438a2f5fa66"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule.json",
+      "sha256": "c63d684d7ffd8d8cf949bd48096cfb5a38e7aeac8983f11bb016642aeed915c5"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule.md",
+      "sha256": "e1e9b3778b02086cf43bc1bc892a335a204cb7e3a61e54ed8782d1fc6220e409"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/sealed-r0/condition-map.json",
+      "sha256": "55d3d25c878df8cf5a7f8b8aa95f8c5edf04fe4fad3aa806b59c3cc93a81f584"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/sealed-r0/targets.json",
+      "sha256": "27219b49c43eb2a7f03f23ed2f6797a18a5322c0fd2fc2e438f3b7d37a96ffe6"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/sealed-r2/condition-map.json",
+      "sha256": "c551dec8e6b5e26b58ffde785a4ba2266fb8c4d21350cb03813468661234000a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/sealed-r2/targets.json",
+      "sha256": "b2ec611ef4c3e69bf387e02a75ceea3528b3ec6df72246370b5cccc28fc19eae"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/FUTURE-TASK-INDEX.json",
+      "sha256": "520855232cd3b71336d52fdae783da02d1e74addb0171baf86192953caf41ee5"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-0CBCA4234750.json",
+      "sha256": "ade9a4e7906192c64f49f14c5f51e041dfb8435c50912c71a184ec943da6b358"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-1635801CC8F6.json",
+      "sha256": "68a1522f8b440bbeb9a45a0fcf3348bc774daa269c9b54e836cc71a7f788d453"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-2ED736040AA4.json",
+      "sha256": "4bad96236eabbc019ce7dd0797f4293e3e6dfd0b8dc3b9ca40e704e43c86212a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-4A7924F0136D.json",
+      "sha256": "c5216620e4b0080461a9dbd740de42ae6a3b1d12518baf84a7a7ad74e7bd42d5"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-58CF738C46CB.json",
+      "sha256": "59e3d78e35f4003cca67ed5500fc525dc7eaa1734990d0b826dbcc2066362745"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-5D12CAAC9272.json",
+      "sha256": "877be65167bd13b9fde4a93b10b2360df60e0f934bbb270dcd4ef757c85bfc79"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-60CB05519C9B.json",
+      "sha256": "fa50c002b7a418733a221133ef3892eb4fdfcea6aec9c9735a2f82081a65c794"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-6439741CDC98.json",
+      "sha256": "7247ced19bc6a026165c2dc130caa8c57532481df883fc303d10654c214a7526"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-A29644406938.json",
+      "sha256": "1291895e7e85fe782bb47bc13d2b9ca6bbe569df745c3ae17b71494ac972c752"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-B03332236A38.json",
+      "sha256": "88992f5abb68511896c5734be6002e23b2436d38c2305b4a681c11688c315dff"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-BCA806ED6F1B.json",
+      "sha256": "c562205fcbcb4f76b776f3f44e395e4cc459d8ad694271673ce4248727361cdb"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/manifests/FT-DC09E06A7C56.json",
+      "sha256": "79e812a149bbb0e1d7a0c5d004efa0625104462849438906e298137f3d86f6fe"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-036C68E81455.md",
+      "sha256": "05111399019fc19dd5ef3a0fd86639931f5bc6dfb10361fc3b5ad8ce530bfec2"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md",
+      "sha256": "05a6b6cd97cc5a077cb3f3229842437faca50fcd217207c2cb2284de05708e64"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-6453996D8B64.md",
+      "sha256": "bcfcc1451e304755a0bab0ccc32d613576db7d09ab6f5182363bf76a32024956"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-87E4C138ACC9.md",
+      "sha256": "0181a245b8d8d3010027278fa34893c5044066bd220df6c9694551391cc28b30"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-9737185B9103.md",
+      "sha256": "d35aafba3025fb3f2930fbc717c5ddc2167b607b67d8eb83977f1d19879107a0"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-9B32BAE52185.md",
+      "sha256": "5fc2bbc54bc112778ecdc5fc1be5ccb64d8836a7921715382cd27fb3bd6533f2"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-A4903D709062.md",
+      "sha256": "7cede93c65aeb16ff438a57020a5f12ebf33dd1b65f127c5bcaa765bf4ff723f"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-B32AB4BD936E.md",
+      "sha256": "859c604694ed6903fa6293d93f91542fbab07904723b8e089aea741ad42cde9e"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-CD1E0740AE3A.md",
+      "sha256": "226590aaa456668f0bad024e07775e2dd100770441dac7d286b941b17d75a601"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-D7BA5DE6F459.md",
+      "sha256": "1b760bcac5741b0aa8e511e0f2184538264e9714a6896f3a1a88cdcd1b08c473"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-E4E08B5DB0B4.md",
+      "sha256": "ad06032b0893f9cd8ec47598e9d687fac8c69b1c6bad1e42d3288bf01afbcebc"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-F245E2EB0644.md",
+      "sha256": "26b9af1753035f4d4309c3f436c4dc7a499421d4bba099f007dcfd57b9c622d8"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/CONTROL-VALIDITY-REVIEW.md",
+      "sha256": "9f3cef6f9a417422b0509a024c6156a1ee3eb91a56f5648fe4acd28a9bb56ec7"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md",
+      "sha256": "392964cba387d3fd02a9a52a66966d6e24b5e794a6d045e1f6a725ee94a0cc6b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/validate_task217.py",
+      "sha256": "5a29759349a5c72b605de7cb217e1a222907eacea68377291b88e1636e5f18ff"
+    }
+  ],
+  "freeze_status": "R1_REPAIRED_LOCAL_VALIDATION_PASS_EXACT_HEAD_CI_PENDING",
+  "future_task_count": 12,
+  "linkless_two_way_ambiguity_proven": "6/6",
+  "local_validation_results": {
+    "adjudicate_nonfunction_claims_check": "PASS NONFUNCTION_CLAIM_GENERATION_DETERMINISTIC files=14",
+    "build_human_results_check": "PASS HUMAN_RESULTS_OK records=757",
+    "build_knowledge_experience_check": "PASS KNOWLEDGE_EXPERIENCE_OK cards=805 changes=698 layered=726 search=24887",
+    "repository_path_accounting": "PASS 10/10",
+    "run_self_correction_check": "PASS SELF_CORRECTION_OK deltas=717 rules=10",
+    "validate_foundation": "PASS CHECKS_TOTAL=63 CHECKS_PASSED=63 CHECKS_FAILED=0; ALL_FOUNDATION_VALID",
+    "validate_knowledge_experience": "PASS KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=805 changes=698 layers=726 search=24887 aliases=1657 links=29606 two_click_pages=8",
+    "validate_nonfunction_claim_closure": "PASS 54/54",
+    "validate_cognitive_inheritance_r0": "PASS status=PASS final_state=READY_FOR_INDEPENDENT_EVALUATION; Task172 artifacts unchanged",
+    "test_cognitive_inheritance_r0": "PASS 9/9 tests including hash-bound Task217 Knowledge Experience and Fire Seeds projection allowances",
+    "build_fire_seed_census": "PASS deterministic FIRE_SEEDS_CENSUS_CHECK_OK seeds=64 sources=792 layered_origins=726",
+    "validate_fire_seeds": "PASS FIRE_SEEDS_VALID entries=64 clusters=64 content_seed_count=40 methodology_seed_count=24 source_count=792 changelog_records=4",
+    "validate_human_visibility": "PASS HUMAN_VISIBILITY_OK human_surfaces=25 machine_human_pairs=14 two_click_destinations=20",
+    "build_claim_browsers_check": "PASS HUMAN_ASSETS_CHECK_OK function_machine=6158 function_human=24 nonfunction_machine=18003 nonfunction_human=24",
+    "generate_overall_architecture_check": "PASS SYSTEM_MAP_DERIVED_OK nodes=87 edges=92 homepage_projection=PASS"
+  },
+  "method_relation_citation_required_for_primary": false,
+  "primary_endpoint": "TARGET_DECISION_SUCCESS",
+  "primary_endpoint_condition_neutral": true,
+  "successor_outputs_exist": false,
+  "successors_launched": false,
+  "external_generated_cognitive_inheritance_r0_compatibility": {
+    "scope": "hash-verified Task217 Knowledge Experience and Fire Seeds machine projections only",
+    "reason": "The older Task172 R0 changed-path gate did not include deterministic Task217 Knowledge Experience shards or the Fire Seeds NO_SEED_DELTA changelog. This compatibility inventory admits only exact Task217-frozen Knowledge Experience and Fire Seeds machine projection paths after validating the Task217 freeze sidecar and per-file SHA-256 values; no Task172 R0 artifacts or claim records changed.",
+    "files": [
+      {
+        "path": "ignition/tools/validate_cognitive_inheritance_r0.py",
+        "sha256": "4c8b20db63b28133dc96c7be7f6620a9f208e340dd691212f88e22c4da9eafd1"
+      },
+      {
+        "path": "ignition/tests/test_cognitive_inheritance_r0.py",
+        "sha256": "d815336a1df440063a6f0fc382dd03845a1d45343d016694c4d79c6697af264f"
+      }
+    ]
+  },
+  "external_generated_fire_seed_census": {
+    "generator": "python3 tools/publication/build_fire_seed_census.py",
+    "validator": "python3 tools/publication/validate_fire_seeds.py --check",
+    "scope": "machine source census only; no human Fire Seeds entry changed",
+    "reason": "Task217 R1 Knowledge Experience origins and the regenerated nonfunction-claim index changed the inputs referenced by the Fire Seeds machine census. The prescribed census generator refreshed source hashes and origin counts; the human seed page and seed registry were unchanged, so the changelog records NO_SEED_DELTA.",
+    "seed_count": 64,
+    "source_count": 792,
+    "knowledge_experience_source_origins": 726,
+    "changelog_action": "NO_SEED_DELTA",
+    "files": [
+      {
+        "path": "ignition/data/publication/fire-seeds/CHANGELOG.jsonl",
+        "sha256": "fcfc19b7ce1a0bc0a29cf730786b67260662669b20340e90bc6aa195bd5107ad"
+      },
+      {
+        "path": "ignition/data/publication/fire-seeds/seed-census.json",
+        "sha256": "b881a7aba713a55a4e29ade64d638042b34484924d4f25504539bbccc9c32945"
+      }
+    ]
+  }
+}

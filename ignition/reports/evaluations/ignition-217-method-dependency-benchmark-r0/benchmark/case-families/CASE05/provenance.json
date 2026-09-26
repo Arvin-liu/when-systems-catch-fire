@@ -1,0 +1,7 @@
+{
+  "case_id": "CASE05",
+  "artifact_type": "SYNTHETIC_CASE_PROVENANCE",
+  "schema_version": "ignition-217-case-provenance-r2",
+  "facts_sha256": "93a53c0e1300c89553c2f9772be4d7c8ce33321820b241cceda4668f1f4f694b",
+  "facts_source": "Synthetic Task217 R1 case record; no external or real-world provenance is asserted."
+}

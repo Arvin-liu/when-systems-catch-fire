@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 677 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 757 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,1046 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260925-217 R1 — Validation Report](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md)
+
+- **结果 ID：** `HR-430499B7F2792C7D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：IGNITION-20260925-217 R1 — Validation Report？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This report supersedes the R0 preparation report for current scoring and packet definitions. R0 files, commits, and the initial local-validator pass remain preserved as reviewed-and-superseded history. R1 remains preparation-only and is not authorized for launch.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CONTROL-VALIDITY-REVIEW — Task217 R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/CONTROL-VALIDITY-REVIEW.md)
+
+- **结果 ID：** `HR-6445F5AAD600628F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CONTROL-VALIDITY-REVIEW — Task217 R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a human-readable review of the six synthetic controls. “Leakage: no” means the condition does not itself state or strongly imply the sealed target; it does not claim that no reader can infer it. The ambiguity proofs check alternatives against FACTS, the byte-identical atom block, and ever…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE05 — Archive grouping revision scope](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-F245E2EB0644.md)
+
+- **结果 ID：** `HR-1951FD6D3793F7A4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE05 — Archive grouping revision scope？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-F245E2EB0644
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE03 — Queued request acknowledgement](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-E4E08B5DB0B4.md)
+
+- **结果 ID：** `HR-1F9841E6DDD99212`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE03 — Queued request acknowledgement？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-E4E08B5DB0B4
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE05 — Archive grouping revision scope](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-D7BA5DE6F459.md)
+
+- **结果 ID：** `HR-6239EB32A5E612B5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE05 — Archive grouping revision scope？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-D7BA5DE6F459
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE03 — Queued request acknowledgement](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-CD1E0740AE3A.md)
+
+- **结果 ID：** `HR-87232CFB5274583D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE03 — Queued request acknowledgement？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-CD1E0740AE3A
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE05 — Archive grouping revision scope](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-B32AB4BD936E.md)
+
+- **结果 ID：** `HR-8747598C34B9628E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE05 — Archive grouping revision scope？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-B32AB4BD936E
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE03 — Queued request acknowledgement](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-A4903D709062.md)
+
+- **结果 ID：** `HR-4D0FB19567578381`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE03 — Queued request acknowledgement？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-A4903D709062
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE03 — Queued request acknowledgement](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-9B32BAE52185.md)
+
+- **结果 ID：** `HR-63DA6783782FF844`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE03 — Queued request acknowledgement？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-9B32BAE52185
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE05 — Archive grouping revision scope](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-9737185B9103.md)
+
+- **结果 ID：** `HR-3AAFAB32674CFDEA`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE05 — Archive grouping revision scope？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-9737185B9103
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE01 — Checkpoint export selection](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-87E4C138ACC9.md)
+
+- **结果 ID：** `HR-1B246F491BA5342A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE01 — Checkpoint export selection？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-87E4C138ACC9
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE01 — Checkpoint export selection](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-6453996D8B64.md)
+
+- **结果 ID：** `HR-30C931C262175B7F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE01 — Checkpoint export selection？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-6453996D8B64
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE01 — Checkpoint export selection](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md)
+
+- **结果 ID：** `HR-1075A79086AF4A5D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE01 — Checkpoint export selection？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-36E400FB560F
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE01 — Checkpoint export selection](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-036C68E81455.md)
+
+- **结果 ID：** `HR-20ECFD77779DB3CF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE01 — Checkpoint export selection？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Packet reference: PK-036C68E81455
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Preregistered Outcome Rule R0](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule.md)
+
+- **结果 ID：** `HR-3FEC9AF3EDD1416D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Preregistered Outcome Rule R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Frozen before outputs: yes. Successors launched: no. Evaluators launched: no. Condition map released: no.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Preregistered Outcome Rule R2](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule-r2.md)
+
+- **结果 ID：** `HR-27F02CB6238DB1A2`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Preregistered Outcome Rule R2？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Frozen before outputs: yes. Primary endpoint: TARGETDECISIONSUCCESS. Successors launched: no. Evaluators launched: no. Condition map released: no.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Evaluator Criteria R2 — Method Dependency Benchmark](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r2.md)
+
+- **结果 ID：** `HR-790243425D392F18`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Evaluator Criteria R2 — Method Dependency Benchmark？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: repaired preparation freeze. No Successor output exists and no Evaluator has run. Score only the externally visible response against the same sealed case target in all four conditions. Do not inspect hidden reasoning.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Evaluator Criteria R1 — Method Dependency Benchmark](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/criteria-r1.md)
+
+- **结果 ID：** `HR-8034A3F646AED3FC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Evaluator Criteria R1 — Method Dependency Benchmark？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: preparation only. No Successor output exists and no Evaluator has run. These criteria and the outcome rule are frozen before any outputs.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Frozen read-only proposal C — control ambiguity](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/C-control-ambiguity.md)
+
+- **结果 ID：** `HR-98E3A41A4878FCDA`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Frozen read-only proposal C — control ambiguity？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Review basis: all six facts, METHOD, LINKLESS, and control-equivalence notes at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Frozen read-only proposal B — target leakage](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/B-leakage.md)
+
+- **结果 ID：** `HR-A738BE8177F4E66F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Frozen read-only proposal B — target leakage？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Review basis: all six METHOD and LINKLESS artifacts at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Frozen read-only proposal A — endpoint validity](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/A-endpoint.md)
+
+- **结果 ID：** `HR-048F37968C6D4686`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Frozen read-only proposal A — endpoint validity？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Review basis: Task217 R0 evaluator criteria, sealed targets, and outcome rule at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent D — Measurement and preregistration proposal](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/D.md)
+
+- **结果 ID：** `HR-04B6095797C8BB89`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Agent D — Measurement and preregistration proposal？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Read-only proposal. No repository files were changed.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent C — Control-equivalence and leakage review](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/C.md)
+
+- **结果 ID：** `HR-7D51714B30F09ADE`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Agent C — Control-equivalence and leakage review？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Read-only proposal. No repository files were changed.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent B — Adversarial benchmark designer proposal](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/B.md)
+
+- **结果 ID：** `HR-814E2FDE7628632C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Agent B — Adversarial benchmark designer proposal？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Read-only proposal. No repository files were changed. Task207's cases and method history concern counters, resettable lanes, bridge offsets, and a missing anchor; the following proposals use distinct settings.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent A — Architecture alignment proposal](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/A.md)
+
+- **结果 ID：** `HR-EBB1FA6B2F55AAAF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Agent A — Architecture alignment proposal？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Read-only proposal. No repository files were changed.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Disagreement and resolution register](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/disagreement-register.md)
+
+- **结果 ID：** `HR-69AABEF7A55E7316`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Disagreement and resolution register？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All four proposals were produced independently and read-only before synthesis.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Case review task](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/neutral-task-prompt.md)
+
+- **结果 ID：** `HR-4679D26E37E40F35`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Case review task？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** You are given a packet containing six synthetic operational cases and an output schema. For every case, determine the strongest action or disposition supported by the provided records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Control-equivalence note — CASE06 R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE06-control-equivalence-note.md)
+
+- **结果 ID：** `HR-FA12509D4D61D59D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Control-equivalence note — CASE06 R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE06 ambiguity proof — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE06-ambiguity-proof.md)
+
+- **结果 ID：** `HR-A430210134DE8964`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE06 ambiguity proof — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** FACTS and both byte-identical atom blocks record Q and D, current identifier/token/mismatch fields, separate historical timing cohorts without head-to-head comparison, and no completed check-in. LINKLESS retains R01–R03 and R05. The cohort records have no entry-category or procedure assignment; t…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Control-equivalence note — CASE05 R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE05-control-equivalence-note.md)
+
+- **结果 ID：** `HR-AAE3D9AD43087470`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Control-equivalence note — CASE05 R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE05 ambiguity proof — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE05-ambiguity-proof.md)
+
+- **结果 ID：** `HR-AB85108CB77A38C2`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE05 ambiguity proof — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** FACTS and both byte-identical atom blocks give two grouping procedures, a prior cross-access event whose raw record omits the grouping key and procedure version, a present request containing two signatory classes, and no selected procedure or output. LINKLESS retains R02–R05: version chronology,…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Control-equivalence note — CASE04 R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE04-control-equivalence-note.md)
+
+- **结果 ID：** `HR-D0139E669EDA9954`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Control-equivalence note — CASE04 R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The R0 note was superseded because retained atoms and relations disclosed the measurement disposition.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE04 ambiguity proof — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE04-ambiguity-proof.md)
+
+- **结果 ID：** `HR-9C6BDEA8B380662F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE04 ambiguity proof — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** FACTS and both byte-identical atom blocks record curled leaves, a prior canopy temperature, a pre-refill feed value, two competing explanations, available equipment, and no post-refill result. LINKLESS retains R02, R03, and R05: the older value is temporally limited, equipment is available withou…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Control-equivalence note — CASE03 R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-control-equivalence-note.md)
+
+- **结果 ID：** `HR-EFC7DA19421CFCEA`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Control-equivalence note — CASE03 R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE03 ambiguity proof — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-ambiguity-proof.md)
+
+- **结果 ID：** `HR-11F58A3D336FC97E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE03 ambiguity proof — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** FACTS and both byte-identical atom blocks record QUEUED, a lost receipt, no terminal status, an immutable non-duplicating key, and two available controls. LINKLESS retains R01 and R03–R05. Those relations identify the request, expose possible query statuses, preserve the key identity, and record…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Control-equivalence note — CASE02 R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-control-equivalence-note.md)
+
+- **结果 ID：** `HR-146C6D892D909EE6`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Control-equivalence note — CASE02 R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE02 ambiguity proof — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-ambiguity-proof.md)
+
+- **结果 ID：** `HR-EDD02874217C8EFB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE02 ambiguity proof — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** FACTS and both byte-identical atom blocks record mixed regional markers, an older origin snapshot, available controls, and no executed cache operation. LINKLESS retains R01 and R03–R05; these describe the rollout interval, available probe fields, coverage, and execution status without assigning a…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Control-equivalence note — CASE01 R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE01-control-equivalence-note.md)
+
+- **结果 ID：** `HR-F4741AE212A850FB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Control-equivalence note — CASE01 R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE01 ambiguity proof — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE01-ambiguity-proof.md)
+
+- **结果 ID：** `HR-7D2C448385C1B8B3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE01 ambiguity proof — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** FACTS and both byte-identical atom blocks describe two incomplete but complementary previews. LINKLESS retains R02–R05: identifier preconditions, a post-export comparison, preview-field verification, and source provenance. None selects a route or claims that a delivered join already exists.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE06](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE06.md)
+
+- **结果 ID：** `HR-EDDEACE6C7D52420`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE06？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: local event-status recorder. Synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE05](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE05.md)
+
+- **结果 ID：** `HR-29D22D527942E550`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE05？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: local archive packaging recorder. Synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE04](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE04.md)
+
+- **结果 ID：** `HR-772B83BD323ACE93`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE04？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: local greenhouse measurement recorder. Synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE03](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE03.md)
+
+- **结果 ID：** `HR-F5E323D605E8630B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE03？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: local test-queue event recorder. Synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE02](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE02.md)
+
+- **结果 ID：** `HR-21FA4364FD213ABE`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE02？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: local edge-cache operation recorder. Synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE01](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE01.md)
+
+- **结果 ID：** `HR-D997AB676DF9422A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE01？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: local archive export handling instruction. Synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Condition packet construction — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/README.md)
+
+- **结果 ID：** `HR-4CF11961BCF1534A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Condition packet construction — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Each future case contains shared synthetic facts plus exactly one supplemental record. FACTSONLY adds a neutral case-log index. SKILLONLY adds an operation-recording procedure that does not select among case actions. METHOD adds seven byte-addressable atoms and five source-linked relations; its p…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE06](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE06.md)
+
+- **结果 ID：** `HR-B9A059E2FAC7E9C3`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE06？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE05](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE05.md)
+
+- **结果 ID：** `HR-21C2972F96D27050`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE05？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE04](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE04.md)
+
+- **结果 ID：** `HR-596BF7ED48CF4E33`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE04？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE03](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE03.md)
+
+- **结果 ID：** `HR-DC5BE702709B1776`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE03？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE02](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE02.md)
+
+- **结果 ID：** `HR-70B8BAC01216167F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE02？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE01](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE01.md)
+
+- **结果 ID：** `HR-B71861C23F82B389`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE01？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE06](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE06.md)
+
+- **结果 ID：** `HR-EA3223380BEF1F8A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE06？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE05](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE05.md)
+
+- **结果 ID：** `HR-A01B432A9E8F5965`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE05？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE04](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE04.md)
+
+- **结果 ID：** `HR-B789ED64C8685503`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE04？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE03](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE03.md)
+
+- **结果 ID：** `HR-7DFD4E807D066375`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE03？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE02](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE02.md)
+
+- **结果 ID：** `HR-51661DC14AFCB684`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE02？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE01](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE01.md)
+
+- **结果 ID：** `HR-15D26BFC6734B7D4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE01？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Representation note: structured synthetic records; relation rows connect source-linked records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE06](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE06.md)
+
+- **结果 ID：** `HR-266563BDD4271980`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE06？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: neutral synthetic case-log index.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE05](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE05.md)
+
+- **结果 ID：** `HR-4A7F8B9DE6427B3B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE05？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: neutral synthetic case-log index.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE04](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE04.md)
+
+- **结果 ID：** `HR-6DBCF0032D4E011F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE04？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: neutral synthetic case-log index.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE03](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE03.md)
+
+- **结果 ID：** `HR-39B78B71B41C6F74`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE03？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: neutral synthetic case-log index.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE02](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE02.md)
+
+- **结果 ID：** `HR-1F0AEDE0FA518585`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE02？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: neutral synthetic case-log index.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Supplemental record CASE01](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE01.md)
+
+- **结果 ID：** `HR-84A93BBE19E1B7D1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Supplemental record CASE01？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Source type: neutral synthetic case-log index.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE06 — Cohort-specific event routing](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/facts.md)
+
+- **结果 ID：** `HR-F11243BAACA53DE8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE06 — Cohort-specific event routing？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All attendees, systems, and cohort records are synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE06 design note — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/case-design.md)
+
+- **结果 ID：** `HR-B0C119F89725537A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE06 design note — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Family: cohortboundaryrouting.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE05 — Archive grouping revision scope](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE05/facts.md)
+
+- **结果 ID：** `HR-7617ECDAC21D9C30`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE05 — Archive grouping revision scope？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All labels, versions, and files are synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE05 design note — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE05/case-design.md)
+
+- **结果 ID：** `HR-E0FFC2D97E3776B5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE05 design note — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** FACTS records V0, V1, a prior cross-access event whose raw record omits grouping key and procedure version, a present two-class request, and no execution. SKILL records a grouping key supplied by the operator without choosing it. METHOD and LINKLESS have byte-identical atom blocks; METHOD has fiv…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE04 — Greenhouse symptom discriminator](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE04/facts.md)
+
+- **结果 ID：** `HR-85695718F60D0279`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE04 — Greenhouse symptom discriminator？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All crops, instruments, values, and observations are synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE04 design note — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE04/case-design.md)
+
+- **结果 ID：** `HR-A5B33F64E57DF4AE`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE04 design note — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Family: missingdiscriminatingmeasurement.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE03 — Queued request acknowledgement](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE03/facts.md)
+
+- **结果 ID：** `HR-8CE1DBADAD44D165`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE03 — Queued request acknowledgement？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All identifiers, events, and service behavior are synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE03 design note — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE03/case-design.md)
+
+- **结果 ID：** `HR-8A33FF657C6C46D0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE03 design note — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Family: failureinterpretation.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE02 — Regional cache boundary](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/facts.md)
+
+- **结果 ID：** `HR-47DCCE2E5F42A82A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE02 — Regional cache boundary？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All names, observations, and systems are synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE02 design note — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/case-design.md)
+
+- **结果 ID：** `HR-C63D64BD86E12ABB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE02 design note — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Family: boundaryrejection.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE01 — Checkpoint export selection](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/facts.md)
+
+- **结果 ID：** `HR-EB0FA16319DFDA4E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE01 — Checkpoint export selection？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** All names, records, dates, and tools are synthetic.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [CASE01 design note — R1](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/case-design.md)
+
+- **结果 ID：** `HR-653D03B18E9469AF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：CASE01 design note — R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Family: candidateselection.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task216 owner-adjudication input](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/TASK216-OWNER-ADJUDICATION-INPUT.md)
+
+- **结果 ID：** `HR-A8A027E08F80E147`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Task216 owner-adjudication input？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The Task217 command declares these fixed inputs for this task:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260925-217 — Method Dependency Benchmark R0](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/README.md)
+
+- **结果 ID：** `HR-6FFC16C239F47E05`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：IGNITION-20260925-217 — Method Dependency Benchmark R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: preparation only. This subtree freezes an architecture-relevant benchmark design. It contains no Successor outputs and no evaluator scores.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Owner Review R1 — initial freeze rejected for launch](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/OWNER-REVIEW-R1.md)
+
+- **结果 ID：** `HR-026CC267D69C82CB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Owner Review R1 — initial freeze rejected for launch？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The R0 freeze passed its task-local validator, but the Owner/GPT review rejected it for launch readiness. This record preserves the initial result and the three independent read-only proposals before synthesis.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Architecture question](../reports/evaluations/ignition-217-method-dependency-benchmark-r0/ARCHITECTURE-QUESTION.md)
+
+- **结果 ID：** `HR-992246DB470A640A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `217-METHOD-DEPENDENCY-BENCHMARK-R0`
+- **问题：** 此来源记录了什么：Architecture question？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Can a successor make a warranted decision in a fresh synthetic case because a complete source-linked cognitive-method chain is available—candidate, selection rationale, context and boundary, discriminating observation, application or test, outcome/failure interpretation, and revise/reject/coexist…
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

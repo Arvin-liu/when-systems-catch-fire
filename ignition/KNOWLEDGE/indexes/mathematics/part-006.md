@@ -4,6 +4,56 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D471} exist, compose F_{D471}=N\(⊕_{g∈D_{D471}} g\); otherwise treat F_{D471} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-cdc4d9bc5660b487 / If upstream objects D_{D471} exist, compose F_{D471}=N\(⊕_{g∈D_{D471}} g\); otherwise treat F_{D471} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D471；被引用：—
+- [If upstream objects D_{D472} exist, compose F_{D472}=N\(⊕_{g∈D_{D472}} g\); otherwise treat F_{D472} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-941beaf446206279 / If upstream objects D_{D472} exist, compose F_{D472}=N\(⊕_{g∈D_{D472}} g\); otherwise treat F_{D472} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D472；被引用：—
+- [If upstream objects D_{D473} exist, compose F_{D473}=N\(⊕_{g∈D_{D473}} g\); otherwise treat F_{D473} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4fa8498dd032d5c6 / If upstream objects D_{D473} exist, compose F_{D473}=N\(⊕_{g∈D_{D473}} g\); otherwise treat F_{D473} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D473；被引用：—
+- [If upstream objects D_{D474} exist, compose F_{D474}=N\(⊕_{g∈D_{D474}} g\); otherwise treat F_{D474} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-2b7d7ba9b265270c / If upstream objects D_{D474} exist, compose F_{D474}=N\(⊕_{g∈D_{D474}} g\); otherwise treat F_{D474} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D474；被引用：—
+- [If upstream objects D_{D475} exist, compose F_{D475}=N\(⊕_{g∈D_{D475}} g\); otherwise treat F_{D475} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9914d6f962994ea2 / If upstream objects D_{D475} exist, compose F_{D475}=N\(⊕_{g∈D_{D475}} g\); otherwise treat F_{D475} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D475；被引用：—
+- [If upstream objects D_{D47} exist, compose F_{D47}=N\(⊕_{g∈D_{D47}} g\); otherwise treat F_{D47} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-28ce74ab64a59be9 / If upstream objects D_{D47} exist, compose F_{D47}=N\(⊕_{g∈D_{D47}} g\); otherwise treat F_{D47} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D47；被引用：—
+- [If upstream objects D_{D48} exist, compose F_{D48}=N\(⊕_{g∈D_{D48}} g\); otherwise treat F_{D48} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-7d4932b812af636e / If upstream objects D_{D48} exist, compose F_{D48}=N\(⊕_{g∈D_{D48}} g\); otherwise treat F_{D48} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D48；被引用：—
+- [If upstream objects D_{D49} exist, compose F_{D49}=N\(⊕_{g∈D_{D49}} g\); otherwise treat F_{D49} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-ca165eeeca5b088a / If upstream objects D_{D49} exist, compose F_{D49}=N\(⊕_{g∈D_{D49}} g\); otherwise treat F_{D49} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D49；被引用：—
+- [If upstream objects D_{D4} exist, compose F_{D4}=N\(⊕_{g∈D_{D4}} g\); otherwise treat F_{D4} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-74148f005e15386a / If upstream objects D_{D4} exist, compose F_{D4}=N\(⊕_{g∈D_{D4}} g\); otherwise treat F_{D4} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D4；被引用：—
+- [If upstream objects D_{D50} exist, compose F_{D50}=N\(⊕_{g∈D_{D50}} g\); otherwise treat F_{D50} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3e5c233a1fb6307a / If upstream objects D_{D50} exist, compose F_{D50}=N\(⊕_{g∈D_{D50}} g\); otherwise treat F_{D50} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D50；被引用：—
 - [If upstream objects D_{D51} exist, compose F_{D51}=N\(⊕_{g∈D_{D51}} g\); otherwise treat F_{D51} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-53e00a3edff69f8a / If upstream objects D_{D51} exist, compose F_{D51}=N\(⊕_{g∈D_{D51}} g\); otherwise treat F_{D51} as an axiom seed.
@@ -2454,53 +2504,3 @@
   - 可搜索名称：NFC-27b9f32b94ba8431 / Object D183 defines a mechanism_model within the point-fire framework. Core: 中文：当两个门控面Λ_A和Λ_B在μ以上合并为Λ_AB时 Φ_before = 1/l
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D183；被引用：—
-- [Object D184 defines a mechanism_model within the point-fire framework. Core: 中文：Λ_disorder\(t\) = Λ₀ × e^\(σ_entropy × t\)，σ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-7e7ee43f081a30ab / Object D184 defines a mechanism_model within the point-fire framework. Core: 中文：Λ_disorder\(t\) = Λ₀ × e^\(σ_entropy × t\)，σ
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D184；被引用：—
-- [Object D185 defines a mechanism_model within the point-fire framework. Core: 中文：相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-f2f4305b73cd492a / Object D185 defines a mechanism_model within the point-fire framework. Core: 中文：相对论是单门槛系统的特例，Λ = c（光速）是唯一门槛。当v << c时，μ/Λ
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D182, D185；被引用：—
-- [Object D186 defines a mechanism_model within the point-fire framework. Core: 中文：量子力学是多门槛系统，门槛Λ_i（能级）高度聚集。门槛聚集度ḡ高→阶段2宽→临界](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-47b1598a44d2ffb9 / Object D186 defines a mechanism_model within the point-fire framework. Core: 中文：量子力学是多门槛系统，门槛Λ_i（能级）高度聚集。门槛聚集度ḡ高→阶段2宽→临界
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D186；被引用：—
-- [Object D187 defines a mechanism_model within the point-fire framework. Core: 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ<μ_EW时两个门控](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-511518eaae0d9028 / Object D187 defines a mechanism_model within the point-fire framework. Core: 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ<μ_EW时两个门控
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D187；被引用：—
-- [Object D188 defines a mechanism_model within the point-fire framework. Core: 中文：强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD→](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-9b01054d22427151 / Object D188 defines a mechanism_model within the point-fire framework. Core: 中文：强核力Λ_QCD在高能μ>μ_QCD时门控效应显著,μ<μ_QCD时Λ_QCD→
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D188；被引用：—
-- [Object D189 defines a mechanism_model within the point-fire framework. Core: 中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-b96c5067fe826ee3 / Object D189 defines a mechanism_model within the point-fire framework. Core: 中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ<μ_
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D189；被引用：—
-- [Object D190 defines a mechanism_model within the point-fire framework. Core: 中文：万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ<μ_ToE时四](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-1574130dc36ee02b / Object D190 defines a mechanism_model within the point-fire framework. Core: 中文：万有理论ToE是所有基本力在高能μ>μ_ToE时的门控面合并。μ<μ_ToE时四
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D190；被引用：—
-- [Object D191 defines a mechanism_model within the point-fire framework. Core: 中文：规范破缺真空选择=陷阱选择。. Annotation: 认知规范破缺函数，规范破](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ce7efd548b67fcb1 / Object D191 defines a mechanism_model within the point-fire framework. Core: 中文：规范破缺真空选择=陷阱选择。. Annotation: 认知规范破缺函数，规范破
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D191, D467, D468；被引用：—
-- [Object D199 defines a mechanism_model within the point-fire framework. Core: 中文：相变序参量φ=门控面Λ的序参量。. Annotation: 相变序参量-门槛函数](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-65cedcbf5b6f6671 / Object D199 defines a mechanism_model within the point-fire framework. Core: 中文：相变序参量φ=门控面Λ的序参量。. Annotation: 相变序参量-门槛函数
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D150, D199；被引用：—
-- [Object D203 defines a mechanism_model within the point-fire framework. Core: 中文：配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。. Annotation](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-8906fc57b7dfd80b / Object D203 defines a mechanism_model within the point-fire framework. Core: 中文：配分函数Z=Σe^{-βE}描述门控面Λ的全局统计性质。. Annotation
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D203, T17；被引用：—

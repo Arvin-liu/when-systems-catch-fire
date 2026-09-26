@@ -279,6 +279,11 @@
   - 可搜索名称：IGNITION-20260828-144 Step 09 — Owner Production Brief Contract R1 / ignition-144-step09-production-brief-contract
   - 来源：`reports/operations/ignition-144-step09-production-brief-contract.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260925-217 R1 — Validation Report](../../ASSET-CARDS.md#asset-hr-430499b7f2792c7d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：IGNITION-20260925-217 R1 — Validation Report / VALIDATION-REPORT
+  - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/validation/VALIDATION-REPORT.md`
+  - 依赖：—；被引用：—
 - [IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-5a6642209467ff3a)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-ITERATION-METHOD-1.4-CONTINUOUS-STAGE-SNAPSHOT-PUBLICATION-R1-20260726 typed change-propagation impact report / IGNITION-ITERATION-METHOD-1.4-change-propagation-impact

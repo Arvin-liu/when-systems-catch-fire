@@ -4,6 +4,31 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [from .openclaw import OpenClawAdapter, OpenClawAdapterError](../../../agent_federation/adapters/__init__.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-e79d7794625968c7 / from .openclaw import OpenClawAdapter, OpenClawAdapterError
+  - 来源：`agent_federation/adapters/__init__.py`
+  - 依赖：—；被引用：—
+- [from .structured_result_contract import StructuredResultContractError, StructuredResultEvidence, extract_synthetic_resul](../../../agent_federation/__init__.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-7bbda084df2ff95d / from .structured_result_contract import StructuredResultContractError, StructuredResultEvidence, extract_synthetic_resul
+  - 来源：`agent_federation/__init__.py`
+  - 依赖：—；被引用：—
+- [future choice space and precaution principle. It also keeps the charter's](../../../agent-results/IGNITION-20260828-146-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-fe32cee746c16400 / future choice space and precaution principle. It also keeps the charter's
+  - 来源：`agent-results/IGNITION-20260828-146-result.md`
+  - 依赖：—；被引用：—
+- [G_δ：创业普遍结构不可判定（E6 pending）。保留 pending。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-2fb37f482ab6d37a / G_δ：创业普遍结构不可判定（E6 pending）。保留 pending。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
+  - 依赖：—；被引用：—
+- [G_δ：女性群体普遍率不可判定（E5 pending）。保留 pending。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-844b1c595262819c / G_δ：女性群体普遍率不可判定（E5 pending）。保留 pending。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md`
+  - 依赖：—；被引用：—
 - [G_δ：跨代际普遍性不可判定（E2 pending）。保留 pending。](../../../outputs/collisions/20260711-disobedience-subjectivity/psi0-decision-matrix.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-9c90ab69168e7c90 / G_δ：跨代际普遍性不可判定（E2 pending）。保留 pending。
@@ -1023,6 +1048,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8be11e01b0e9287b / Positive claims must still be tied to evidence, version, test scope, and boundary conditions. Negative feedback is not t
   - 来源：`.github/SUPPORT.md`
+  - 依赖：—；被引用：—
+- [Preregistered Outcome Rule R2](../../ASSET-CARDS.md#asset-hr-27f02cb6238db1a2)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Preregistered Outcome Rule R2 / preregistered-outcome-rule-r2
+  - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/evaluator/preregistered-outcome-rule-r2.md`
   - 依赖：—；被引用：—
 - [preserved as evidence. This result does not self-witness a publication SHA:](../../../agent-results/IGNITION-20260828-144-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -2473,34 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-95b5ede727be431b / This result proves only repository-local Task136 bridge implementation, bounded live-attempt observation, deterministic
   - 来源：`agent-results/IGNITION-20260823-136-result.md`
-  - 依赖：—；被引用：—
-- [This result proves repository-local deterministic projection, semantic consistency, lifecycle bookkeeping and release tr](../../../agent-results/IGNITION-20260821-130-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a7acbc9ab3d78202 / This result proves repository-local deterministic projection, semantic consistency, lifecycle bookkeeping and release tr
-  - 来源：`agent-results/IGNITION-20260821-130-result.md`
-  - 依赖：—；被引用：—
-- [This result proves repository-local implementation, deterministic projection, semantic consistency, bounded regression e](../../../agent-results/IGNITION-20260822-132-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-67b05f00232825f7 / This result proves repository-local implementation, deterministic projection, semantic consistency, bounded regression e
-  - 来源：`agent-results/IGNITION-20260822-132-result.md`
-  - 依赖：—；被引用：—
-- [This result proves repository-local residual non-growth, projection hygiene, deterministic rendering, bounded regression](../../../agent-results/IGNITION-20260822-134-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-891d0b182aab3ee5 / This result proves repository-local residual non-growth, projection hygiene, deterministic rendering, bounded regression
-  - 来源：`agent-results/IGNITION-20260822-134-result.md`
-  - 依赖：—；被引用：—
-- [This result proves repository-local semantic implementation, deterministic projection, bounded regression evidence and c](../../../agent-results/IGNITION-20260822-133-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-afc4d38bbd59403f / This result proves repository-local semantic implementation, deterministic projection, bounded regression evidence and c
-  - 来源：`agent-results/IGNITION-20260822-133-result.md`
-  - 依赖：—；被引用：—
-- [title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-34C556C9FFC62BCE / title: "Ψ=ι×P_exit — 智能度×退出概率=自主意识，乘法归零律适用 / Ψ=ι x P_exit - 智能度 x exit probability=自主意识, multiplication zero law适用" / IMPLICIT-34C556C9FFC62BCE
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-B00AD01AD1BE4FE8 / title: "三阶段操作协议验证 — 个人职业转型：阶段1\(ε >θC,转型成功,β小,可以激进拓展\)" / IMPLICIT-B00AD01AD1BE4FE8
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

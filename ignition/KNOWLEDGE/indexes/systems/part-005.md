@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [历史因果具体判定；](../../../docs/publication_risk_checklist.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f76dd24663fb49db / 历史因果具体判定；
+  - 来源：`docs/publication_risk_checklist.md`
+  - 依赖：—；被引用：—
+- [历史学是中等风险领域。历史因果不能写成单因决定论。史料不足、解释争议大、缺少互证时必须 pending。](../../../outputs/getbrain/evidence-regime-library-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a98dd633b1609dce / 历史学是中等风险领域。历史因果不能写成单因决定论。史料不足、解释争议大、缺少互证时必须 pending。
+  - 来源：`outputs/getbrain/evidence-regime-library-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [历史学用于测试因果、材料、边界和叙事结构。](../../../docs/discipline_kernel_pilot.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-831298eadea223e4 / 历史学用于测试因果、材料、边界和叙事结构。
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6145fa2f0724806f / 社会信任形成的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [社会科学因果判定；](../../../docs/v0.2_summary.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-75f11fff3c6448fe / 社会科学因果判定；
-  - 来源：`docs/v0.2_summary.md`
-  - 依赖：—；被引用：—
-- [社会科学因果判定；](../../../docs/publication_risk_checklist.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-919acc5904af88df / 社会科学因果判定；
-  - 来源：`docs/publication_risk_checklist.md`
   - 依赖：—；被引用：—
