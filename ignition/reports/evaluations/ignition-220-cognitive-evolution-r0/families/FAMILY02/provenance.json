@@ -1,0 +1,41 @@
+{
+  "schema_version": "ignition-220-family-provenance-r0",
+  "family_id": "FAMILY02",
+  "family_operation_class": "SPLIT_COEXIST",
+  "synthetic_only": true,
+  "m0_id": "CE-F02-M0-R0",
+  "m0_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md",
+  "m0_basis_source_id": "F02-M0-CALIBRATION",
+  "e1_id": "CE-F02-E1-R0",
+  "e1_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md",
+  "e1_source_ids": [
+    "F02-E1-TURBIDITY-LOG",
+    "F02-E1-GRAVIMETRY-LOG",
+    "F02-E1-COMPOSITION-LOG",
+    "F02-E1-QC-LOG"
+  ],
+  "evidence_locators": [
+    "OBS-01",
+    "OBS-02",
+    "OBS-03",
+    "OBS-04",
+    "OBS-05",
+    "OBS-06",
+    "OBS-07",
+    "OBS-08"
+  ],
+  "provenance_relations": [
+    {
+      "from": "CE-F02-E1-R0#OBS-04",
+      "relation": "contradicts_under_observed_composition",
+      "to": "CE-F02-M0-R0#universal-composition-premise"
+    },
+    {
+      "from": "CE-F02-E1-R0#OBS-01",
+      "relation": "supports_within_original_scope",
+      "to": "CE-F02-M0-R0#calibration"
+    }
+  ],
+  "evidence_binding": "Each observation locator binds paired turbidity, gravimetry, composition, and QC source rows; capture and instrument checks are described in the E1 packet.",
+  "external_truth_claim": "NONE"
+}

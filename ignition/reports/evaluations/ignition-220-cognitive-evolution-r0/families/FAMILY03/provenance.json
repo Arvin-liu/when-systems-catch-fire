@@ -1,0 +1,32 @@
+{
+  "schema_version": "ignition-220-family-provenance-r0",
+  "family_id": "FAMILY03",
+  "family_operation_class": "RETIRE_REPLACE_BOUNDED",
+  "synthetic_only": true,
+  "m0_id": "CE-F03-M0-R0",
+  "m0_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md",
+  "m0_basis_source_id": "F03-M0-STABILITY-VALIDATION",
+  "e1_id": "CE-F03-E1-R0",
+  "e1_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md",
+  "e1_source_ids": [
+    "F03-E1-INTERVAL-LOG",
+    "F03-E1-HIGH-RATE-TRACE",
+    "F03-E1-ACTIVITY-ASSAY",
+    "F03-E1-CUSTODY-CALIBRATION"
+  ],
+  "evidence_locators": ["OBS-01", "OBS-02", "OBS-03", "OBS-04", "OBS-05", "OBS-06"],
+  "provenance_relations": [
+    {
+      "from": "CE-F03-E1-R0#OBS-01",
+      "relation": "contradicts_under_observed_product_and_trace",
+      "to": "CE-F03-M0-R0#mean-sufficiency-premise"
+    },
+    {
+      "from": "CE-F03-E1-R0#OBS-05",
+      "relation": "supports_within_continuous-profile-scope",
+      "to": "CE-F03-M0-R0#screening-mean"
+    }
+  ],
+  "evidence_binding": "Each locator binds an interval-log row, high-rate trace, duplicate assay result, and shared custody/calibration log where present.",
+  "external_truth_claim": "NONE"
+}
