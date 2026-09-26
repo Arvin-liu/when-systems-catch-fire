@@ -1424,6 +1424,11 @@
   - 可搜索名称：Task198 Method Family History — bounded replay contrast / method-family-history
   - 来源：`reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-family/method-family-history.md`
   - 依赖：—；被引用：—
+- [Task220 §3 — Agent D: preservation and catastrophic-overrevision proposal](../../ASSET-CARDS.md#asset-hr-a6f2d3f646a5fc96)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task220 §3 — Agent D: preservation and catastrophic-overrevision proposal / D
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/D.md`
+  - 依赖：—；被引用：—
 - [Technical admission is not live authorization. Task140's malformed-result record remains a real non-completion, but its](../../../reports/operations/ignition-142-step09-codex-blocker-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e0f4ad849a1643dc / Technical admission is not live authorization. Task140's malformed-result record remains a real non-completion, but its
@@ -2497,10 +2502,5 @@
 - [\| \[C-0692\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-aaaacf8046a27d5e / \| \[C-0692\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0694\]\( \) \| \[关联案例（道德自居-认知偏差）\]\( \) \| 道德自居机制通过Sigmoid](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-881f7aa78cc5a998 / \| \[C-0694\]\( \) \| \[关联案例（道德自居-认知偏差）\]\( \) \| 道德自居机制通过Sigmoid
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

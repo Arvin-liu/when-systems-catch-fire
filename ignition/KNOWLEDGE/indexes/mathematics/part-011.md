@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D281\]\( \) \| \[极小点漂移-鲁棒性耦合函数\]\( \) \| F_{D281}\(x\) := M2的极小点漂移对鲁棒性](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1da69536ebd9ac11 / \| \[D281\]\( \) \| \[极小点漂移-鲁棒性耦合函数\]\( \) \| F_{D281}\(x\) := M2的极小点漂移对鲁棒性
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D281；被引用：—
+- [\| \[D287\]\( \) \| \[容斥主导实验签名函数\]\( \) \| F_{D287}\(x\) := M5的容斥主导有可检验签名：实际量子引力修](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9e151c3a6d06b07c / \| \[D287\]\( \) \| \[容斥主导实验签名函数\]\( \) \| F_{D287}\(x\) := M5的容斥主导有可检验签名：实际量子引力修
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D287；被引用：—
+- [\| \[D289\]\( \) \| \[良性循环逃逸速度函数\]\( \) \| F_{D289}\(x\) := M14的逃逸速度v_escape∝λ·p_](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-86c1dcca32f67e27 / \| \[D289\]\( \) \| \[良性循环逃逸速度函数\]\( \) \| F_{D289}\(x\) := M14的逃逸速度v_escape∝λ·p_
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D279, D289；被引用：—
+- [\| \[D293\]\( \) \| \[三阶段-相变分类对应函数\]\( \) \| F_{D293}\(x\) := M9三阶段对应相变分类：阶段1](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-e3b4407af518f184 / \| \[D293\]\( \) \| \[三阶段-相变分类对应函数\]\( \) \| F_{D293}\(x\) := M9三阶段对应相变分类：阶段1
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D293；被引用：—
 - [\| \[D297\]\( \) \| \[基本常数-容斥约束函数\]\( \) \| F_{D297}\(x\) := M6的d=4稳定性约束基本物理常数：](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6725f028e12f89f7 / \| \[D297\]\( \) \| \[基本常数-容斥约束函数\]\( \) \| F_{D297}\(x\) := M6的d=4稳定性约束基本物理常数：
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-7fc6a1955b4ab9dd / 不把故事化、碰撞或单材料结论写成证明。
   - 来源：`docs/math-foundation/06-audit-and-correction-protocol.md`
-  - 依赖：—；被引用：—
-- [不把规训语言偷换成因果证明](../../../outputs/research/role-identity-collision-batches-20260712.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b0eeba1ed0b94691 / 不把规训语言偷换成因果证明
-  - 来源：`outputs/research/role-identity-collision-batches-20260712.md`
-  - 依赖：—；被引用：—
-- [不是产品成熟度、市场唯一性、AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明。](../../../docs/project-current-state.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-5f8f060ff3f34c51 / 不是产品成熟度、市场唯一性、AGI、生产安全、现实因果、外部有效性或 Owner acceptance 证明。
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [不是数学证明体系；](../../../docs/author_motivation_and_boundary_note.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a145b2d0742616eb / 不是数学证明体系；
-  - 来源：`docs/author_motivation_and_boundary_note.md`
-  - 依赖：—；被引用：—
-- [不是替代两张表**：碰撞主源仍是 `已迁移的历史函数来源/` 与 `已迁移的历史案例来源/`。](../../../docs/p1-machine-data-collision-workflow-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-13cb8bd025565fd5 / 不是替代两张表**：碰撞主源仍是 `已迁移的历史函数来源/` 与 `已迁移的历史案例来源/`。
-  - 来源：`docs/p1-machine-data-collision-workflow-20260708.md`
   - 依赖：—；被引用：—

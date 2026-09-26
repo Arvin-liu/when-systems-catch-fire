@@ -21,6 +21,8 @@ from tools.validate_cognitive_inheritance_r0 import (  # noqa: E402
     FINAL_STATE,
     TASK217_FREEZE_RELATIVE,
     TASK217_FREEZE_SIDECAR_RELATIVE,
+    TASK220_FREEZE_RELATIVE,
+    TASK220_FREEZE_SIDECAR_RELATIVE,
     ValidationFailure,
     task217_generated_fire_seed_paths,
     is_allowed_changed_path,
@@ -170,6 +172,54 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
             (repo / "ignition/data/publication/fire-seeds/CHANGELOG.jsonl").write_text("tampered\n", encoding="utf-8")
             with self.assertRaises(ValidationFailure):
                 task217_generated_fire_seed_paths(repo)
+
+    def test_task220_frozen_projection_supersedes_only_matching_task217_hash(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            projection = "ignition/KNOWLEDGE/cards/part-016.md"
+            artifact = repo / projection
+            artifact.parent.mkdir(parents=True)
+            artifact.write_text("Task220 regenerated navigation projection\n", encoding="utf-8")
+            current_digest = hashlib.sha256(artifact.read_bytes()).hexdigest()
+            old_digest = hashlib.sha256(b"Task217 frozen projection\n").hexdigest()
+
+            task217_freeze = {
+                "external_generated_knowledge_experience": {
+                    "files": [{"path": projection, "sha256": old_digest}],
+                },
+            }
+            task217_bytes = (json.dumps(task217_freeze, sort_keys=True, indent=2) + "\n").encode("utf-8")
+            task217_path = repo / TASK217_FREEZE_RELATIVE
+            task217_path.parent.mkdir(parents=True)
+            task217_path.write_bytes(task217_bytes)
+            (repo / TASK217_FREEZE_SIDECAR_RELATIVE).write_text(
+                f"{hashlib.sha256(task217_bytes).hexdigest()}  {TASK217_FREEZE_RELATIVE.as_posix()}\n",
+                encoding="utf-8",
+            )
+
+            task220_freeze = {
+                "task_id": "IGNITION-20260926-220",
+                "external_generated_knowledge_experience": {
+                    "files": [{"path": projection, "sha256": current_digest}],
+                },
+            }
+            task220_bytes = (json.dumps(task220_freeze, sort_keys=True, indent=2) + "\n").encode("utf-8")
+            task220_path = repo / TASK220_FREEZE_RELATIVE
+            task220_path.parent.mkdir(parents=True)
+            task220_path.write_bytes(task220_bytes)
+            (repo / TASK220_FREEZE_SIDECAR_RELATIVE).write_text(
+                f"{hashlib.sha256(task220_bytes).hexdigest()}  {TASK220_FREEZE_RELATIVE.as_posix()}\n",
+                encoding="utf-8",
+            )
+
+            exact_paths = task217_generated_knowledge_paths(repo)
+            self.assertEqual(exact_paths, {projection})
+            self.assertTrue(is_allowed_changed_path(projection, exact_extra_paths=exact_paths))
+            self.assertFalse(is_allowed_changed_path("ignition/KNOWLEDGE/cards/part-999.md", exact_extra_paths=exact_paths))
+
+            artifact.write_text("tampered after Task220 freeze\n", encoding="utf-8")
+            with self.assertRaises(ValidationFailure):
+                task217_generated_knowledge_paths(repo)
 
     def test_r0_paths_are_excluded_from_canonical_claim_discovery(self) -> None:
         result = validate_all(ROOT)

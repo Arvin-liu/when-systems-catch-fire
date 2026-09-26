@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [历史因果容易被误读为单因决定论（实际是多因结构）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-009bad524050c15c / 历史因果容易被误读为单因决定论（实际是多因结构）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [历史因果的争议（单因 vs 多因）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7a71b0c454c8535b / 历史因果的争议（单因 vs 多因）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [历史因果的具体判定 → **pending**（需要史料考证和解释共同体共识）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-0711dbf59902e9a5 / 历史因果的具体判定 → **pending**（需要史料考证和解释共同体共识）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
+- [历史因果的具体判定（需要史料考证和解释共同体共识）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-909044c6ea319a6c / 历史因果的具体判定（需要史料考证和解释共同体共识）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
+  - 依赖：—；被引用：—
 - [历史因果的具体判定：**pending**](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-4aae191f707f084c / 历史因果的具体判定：**pending**
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a2cf350bb76f810b / 同步 registry 升至 `1.4.0`，以 `human.reading` 与 `human.results` 取代现行 Pages 表面。旧迭代清单继续按其声明的 era registry 解释；已从当前树退役的路径必须能在 Git
   - 来源：`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`
-  - 依赖：—；被引用：—
-- [同步与生命周期](../../../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-658934d5649c32d7 / 同步与生命周期
-  - 来源：`reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md`
-  - 依赖：—；被引用：—
-- [同步更新函数表、案例表、证据制度库、AI 输出协议和 `docs` 边界说明；](../../../docs/failure_typology.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-10c4032a58f36e13 / 同步更新函数表、案例表、证据制度库、AI 输出协议和 `docs` 边界说明；
-  - 来源：`docs/failure_typology.md`
-  - 依赖：—；被引用：—
-- [同步更新函数表、案例表、证据制度库、AI 输出协议和边界说明；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-a7c083cceef92513 / 同步更新函数表、案例表、证据制度库、AI 输出协议和边界说明；
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [同源不等于同一。这里没有科学识别维护者的大脑结构，没有证明两套系统形式同构，也没有声称点火只是个人风格的软件化。点火的 Foundation、证明、validator、Function OS、MCF、PSD、ARN 和迭代纪律不能被文学运动](../../../docs/publication/zhiyuan-writing-method.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f5f73ed7b10fb7ba / 同源不等于同一。这里没有科学识别维护者的大脑结构，没有证明两套系统形式同构，也没有声称点火只是个人风格的软件化。点火的 Foundation、证明、validator、Function OS、MCF、PSD、ARN 和迭代纪律不能被文学运动
-  - 来源：`docs/publication/zhiyuan-writing-method.md`
   - 依赖：—；被引用：—

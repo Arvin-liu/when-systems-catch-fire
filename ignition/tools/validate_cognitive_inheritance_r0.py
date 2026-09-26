@@ -40,6 +40,12 @@ TASK217_FREEZE_RELATIVE = Path(
 TASK217_FREEZE_SIDECAR_RELATIVE = Path(
     "ignition/reports/evaluations/ignition-217-method-dependency-benchmark-r0/freeze/FREEZE-MANIFEST.sha256"
 )
+TASK220_FREEZE_RELATIVE = Path(
+    "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/freeze/FREEZE-MANIFEST.json"
+)
+TASK220_FREEZE_SIDECAR_RELATIVE = Path(
+    "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/freeze/FREEZE-MANIFEST.sha256"
+)
 ALLOWED_CHANGED_PREFIXES = (
     "ignition/agent_runtime/cognitive_inheritance_r0/",
     # Evaluation-plane work is a separate, non-canonical evidence surface.
@@ -301,10 +307,71 @@ def load_task217_freeze(repo_root: Path) -> dict[str, Any] | None:
         raise ValidationFailure(f"Task217 projection freeze is invalid JSON: {exc}") from exc
 
 
+def load_task220_freeze(repo_root: Path) -> dict[str, Any] | None:
+    freeze_path = repo_root / TASK220_FREEZE_RELATIVE
+    sidecar_path = repo_root / TASK220_FREEZE_SIDECAR_RELATIVE
+    if not freeze_path.exists() and not sidecar_path.exists():
+        return None
+    require(freeze_path.is_file() and sidecar_path.is_file(), "Task220 projection freeze or sidecar is missing")
+    freeze_bytes = freeze_path.read_bytes()
+    freeze_sha = hashlib.sha256(freeze_bytes).hexdigest()
+    expected_sidecar = f"{freeze_sha}  {TASK220_FREEZE_RELATIVE.as_posix()}\n"
+    require(sidecar_path.read_text(encoding="utf-8") == expected_sidecar, "Task220 projection freeze sidecar mismatch")
+    try:
+        freeze = json.loads(freeze_bytes.decode("utf-8"))
+    except json.JSONDecodeError as exc:
+        raise ValidationFailure(f"Task220 projection freeze is invalid JSON: {exc}") from exc
+    require(freeze.get("task_id") == "IGNITION-20260926-220", "Task220 projection freeze task ID differs")
+    return freeze
+
+
+def task220_projection_hashes(repo_root: Path, section_name: str) -> dict[str, str]:
+    freeze = load_task220_freeze(repo_root)
+    if freeze is None:
+        return {}
+    section = freeze.get(section_name, {})
+    entries = section.get("files", [])
+    paths: dict[str, str] = {}
+    for entry in entries:
+        path = entry.get("path")
+        expected_sha = entry.get("sha256")
+        if section_name == "external_generated_knowledge_experience":
+            require(
+                isinstance(path, str)
+                and (path.startswith("ignition/KNOWLEDGE/") or path.startswith("ignition/data/governance/knowledge-experience/")),
+                "Task220 freeze contains a non-knowledge-experience projection path",
+            )
+        elif section_name == "external_generated_fire_seed_census":
+            require(
+                path in {
+                    "ignition/data/publication/fire-seeds/seed-census.json",
+                    "ignition/data/publication/fire-seeds/CHANGELOG.jsonl",
+                },
+                "Task220 freeze contains a non-Fire-Seeds projection path",
+            )
+        require(isinstance(expected_sha, str) and len(expected_sha) == 64, f"Task220 freeze has invalid SHA-256 for {path}")
+        require(path not in paths, f"Task220 freeze duplicates projection path {path}")
+        artifact = repo_root / path
+        require(artifact.is_file(), f"Task220 frozen projection is missing: {path}")
+        actual_sha = hashlib.sha256(artifact.read_bytes()).hexdigest()
+        require(actual_sha == expected_sha, f"Task220 frozen projection hash mismatch: {path}")
+        paths[path] = expected_sha
+    if section_name == "external_generated_fire_seed_census" and entries:
+        require(
+            set(paths) == {
+                "ignition/data/publication/fire-seeds/seed-census.json",
+                "ignition/data/publication/fire-seeds/CHANGELOG.jsonl",
+            },
+            "Task220 Fire Seeds projection inventory differs",
+        )
+    return paths
+
+
 def task217_generated_knowledge_paths(repo_root: Path) -> set[str]:
     freeze = load_task217_freeze(repo_root)
     if freeze is None:
         return set()
+    task220_hashes = task220_projection_hashes(repo_root, "external_generated_knowledge_experience")
     knowledge = freeze.get("external_generated_knowledge_experience", {})
     entries = knowledge.get("files", [])
     paths: set[str] = set()
@@ -319,7 +386,13 @@ def task217_generated_knowledge_paths(repo_root: Path) -> set[str]:
         require(path not in paths, f"Task217 freeze duplicates knowledge-experience path {path}")
         artifact = repo_root / path
         require(artifact.is_file(), f"Task217 frozen knowledge-experience projection is missing: {path}")
-        require(hashlib.sha256(artifact.read_bytes()).hexdigest() == expected_sha, f"Task217 frozen knowledge-experience projection hash mismatch: {path}")
+        actual_sha = hashlib.sha256(artifact.read_bytes()).hexdigest()
+        require(
+            actual_sha == expected_sha or task220_hashes.get(path) == actual_sha,
+            f"Task217 frozen knowledge-experience projection hash mismatch without a Task220 frozen replacement: {path}",
+        )
+        paths.add(path)
+    for path in task220_hashes:
         paths.add(path)
     return paths
 
@@ -328,6 +401,7 @@ def task217_generated_fire_seed_paths(repo_root: Path) -> set[str]:
     freeze = load_task217_freeze(repo_root)
     if freeze is None:
         return set()
+    task220_hashes = task220_projection_hashes(repo_root, "external_generated_fire_seed_census")
     expected_paths = {
         "ignition/data/publication/fire-seeds/seed-census.json",
         "ignition/data/publication/fire-seeds/CHANGELOG.jsonl",
@@ -342,10 +416,15 @@ def task217_generated_fire_seed_paths(repo_root: Path) -> set[str]:
         require(path not in paths, f"Task217 freeze duplicates Fire Seeds projection path {path}")
         artifact = repo_root / path
         require(artifact.is_file(), f"Task217 frozen Fire Seeds projection is missing: {path}")
-        require(hashlib.sha256(artifact.read_bytes()).hexdigest() == expected_sha, f"Task217 frozen Fire Seeds projection hash mismatch: {path}")
+        actual_sha = hashlib.sha256(artifact.read_bytes()).hexdigest()
+        require(
+            actual_sha == expected_sha or task220_hashes.get(path) == actual_sha,
+            f"Task217 frozen Fire Seeds projection hash mismatch without a Task220 frozen replacement: {path}",
+        )
         paths.add(path)
     require(paths == expected_paths, "Task217 Fire Seeds projection inventory differs")
     require(projection.get("scope") == "machine source census only; no human Fire Seeds entry changed", "Task217 Fire Seeds projection scope differs")
+    paths.update(task220_hashes)
     return paths
 
 

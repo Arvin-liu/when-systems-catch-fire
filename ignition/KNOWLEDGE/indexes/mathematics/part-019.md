@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [已迁移的历史函数来源/0301-D265-极小点漂移方向函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6f0ead7ba76c4264 / 已迁移的历史函数来源/0301-D265-极小点漂移方向函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D265；被引用：—
+- [已迁移的历史函数来源/0302-D266-容斥偏差加速函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6ce1abf8b9534233 / 已迁移的历史函数来源/0302-D266-容斥偏差加速函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D266；被引用：—
+- [已迁移的历史函数来源/0303-D267-维度稳定性裕度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-a3ac4cc448a6cc39 / 已迁移的历史函数来源/0303-D267-维度稳定性裕度函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D267；被引用：—
+- [已迁移的历史函数来源/0304-D268-容斥加速临界函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-096ae0eb981b7d42 / 已迁移的历史函数来源/0304-D268-容斥加速临界函数.md
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D268；被引用：—
 - [已迁移的历史函数来源/0305-D269-阶段过渡锐度函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-2c8664eb3ec79d34 / 已迁移的历史函数来源/0305-D269-阶段过渡锐度函数.md
@@ -2484,23 +2504,3 @@
   - 可搜索名称：NFC-8d4f2652d2132e1a / 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的验证。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D581；被引用：—
-- [该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-e7cd0f413d2208b2 / 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D582；被引用：—
-- [该案例对应 D583《认知肌肉锻炼》，用于补充该函数在具体对象上的验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9c6ffe04fddddcbd / 该案例对应 D583《认知肌肉锻炼》，用于补充该函数在具体对象上的验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D583；被引用：—
-- [该案例对应 D584《电子节食》，用于补充该函数在具体对象上的验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4685c8c4089989dd / 该案例对应 D584《电子节食》，用于补充该函数在具体对象上的验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D584；被引用：—
-- [该案例对应 D585《认知复杂度收敛》，用于补充该函数在具体对象上的验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aa14f59f7341fd93 / 该案例对应 D585《认知复杂度收敛》，用于补充该函数在具体对象上的验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D585；被引用：—

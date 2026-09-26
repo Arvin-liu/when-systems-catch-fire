@@ -121,6 +121,24 @@ def validate_families(task_root: Path) -> dict[str, set[str]]:
 
 
 def validate_revision_tasks(repo_root: Path, task_root: Path) -> tuple[list[dict[str, Any]], set[str]]:
+    sealed_targets = read_json(task_root / "revision/sealed-r0/revision-targets.json")
+    require(sealed_targets.get("sealed") is True and sealed_targets.get("read_allowlist_excluded") is True, "revision targets are not sealed from revision manifests")
+    require(sealed_targets.get("future_outputs_present") is False, "revision target records future outputs")
+    targets = sealed_targets.get("targets", [])
+    require({item.get("family_id") for item in targets} == set(FAMILIES) and len(targets) == 3, "sealed revision targets do not cover the exact three families")
+    target_operations = {"FAMILY01": "NARROW", "FAMILY02": "SPLIT_COEXIST", "FAMILY03": "RETIRE_REPLACE_BOUNDED"}
+    for target in targets:
+        family_id = target["family_id"]
+        require(target.get("revision_operation") == target_operations[family_id], f"{family_id} sealed operation differs")
+        require(all(target.get(key) for key in ("licensed_change", "preserved_scope", "changed_scope", "required_uncertainty", "forbidden_overreaction", "required_lineage", "claim_ceiling")), f"{family_id} sealed revision target is incomplete")
+    revision_schema = read_json(task_root / "revision/revision-output-schema.json")
+    required_revision_fields = {
+        "schema_version", "m0_id", "revision_id", "evidence_locators", "revision_operation", "preserved_scope",
+        "changed_scope", "new_or_revised_relations", "rejected_overreaction", "uncertainties",
+        "lineage_edges", "claim_ceiling",
+    }
+    require(set(revision_schema.get("required", [])) == required_revision_fields, "revision output schema required fields differ")
+
     index = read_json(task_root / "revision/future-tasks/FUTURE-TASK-INDEX.json")
     manifests_dir = task_root / "revision/future-tasks/manifests"
     files = sorted(manifests_dir.glob("*.json"))
@@ -228,6 +246,25 @@ def validate_evaluation_design(task_root: Path) -> None:
     endpoints = rule.get("lineage_endpoints", {})
     require(endpoints.get("REVISED_BOUNDARY_GAIN") == "E_A AND NOT O_A AND NOT F_A", "revised-boundary counterfactual formula differs")
     require(endpoints.get("EVOLUTION_CHAIN_SUCCESS") == "R AND REVISED_BOUNDARY_GAIN AND PRESERVATION_SUCCESS AND EDGE_BOUNDARY_SUCCESS", "evolution-chain formula differs")
+    dispositions = rule.get("per_evaluator_disposition", {})
+    supported = set(dispositions.get("SUPPORTED", {}).get("all_required", []))
+    require(supported == {
+        "REVISION_VALIDITY_SUCCESS >= 5/6",
+        "EVOLUTION_CHAIN_SUCCESS >= 5/6",
+        "each of 3 families has >=1 successful lineage",
+        "at least 2/3 families have both revision replicates successful",
+        "zero UNSUPPORTED_GLOBAL_RETIREMENT errors in successful EVOLVED_M1 lineages",
+        "zero PRESERVED_SCOPE_LOST errors in successful EVOLVED_M1 lineages",
+    }, "SUPPORTED disposition threshold differs")
+    partial = set(dispositions.get("PARTIAL", {}).get("all_required", []))
+    require(partial == {
+        "REVISION_VALIDITY_SUCCESS >= 4/6",
+        "EVOLUTION_CHAIN_SUCCESS >= 3/6",
+        "at least 2/3 families have >=1 successful lineage",
+        "sum(E_A) > sum(O_A) across the six matched lineages",
+        "sum(E_A) > sum(F_A) across the six matched lineages",
+    } and dispositions["PARTIAL"].get("only_if_SUPPORTED_not_met") is True, "PARTIAL disposition threshold differs")
+    require(rule.get("statistical_claim") == "Descriptive counts only; no population inference or statistical-significance claim.", "outcome rule makes an inferential statistical claim")
     require(rule.get("revision_agents_launched") == 0 and rule.get("transfer_successors_launched") == 0 and rule.get("evaluators_launched") == 0, "revision, transfer, or evaluator work was launched")
     require(rule.get("runtime_chosen_by_task") is False and rule.get("r1_authorized") is False and rule.get("cross_model_transfer_authorized") is False, "runtime or later phase was authorized")
 
@@ -265,6 +302,46 @@ def validate_freeze(repo_root: Path, task_root: Path, require_closure: bool) -> 
             artifact = repo_root / path
             require(artifact.is_file() and sha256(artifact.read_bytes()) == digest, f"external generated SHA-256 mismatch: {path}")
         require(external.get("r0_compatibility_inventory") == "PASS", "legacy R0 compatibility closure is not recorded PASS")
+
+        knowledge = manifest.get("external_generated_knowledge_experience", {})
+        knowledge_files = knowledge.get("files", [])
+        require(str(knowledge.get("audit_status", "")).startswith("PASS ") and str(knowledge.get("build_check", "")).startswith("PASS "), "Knowledge Experience build/audit is not recorded PASS")
+        require(knowledge_files, "Knowledge Experience output inventory is missing")
+        for item in knowledge_files:
+            path, digest = item.get("path"), item.get("sha256")
+            require(path in paths and next(row["sha256"] for row in files if row["path"] == path) == digest, f"Knowledge Experience output is not bound by the generated projection inventory: {path}")
+
+        fire_seeds = manifest.get("external_generated_fire_seed_census", {})
+        fire_files = fire_seeds.get("files", [])
+        require(str(fire_seeds.get("validator_status", "")).startswith("PASS "), "Fire Seeds validation is not recorded PASS")
+        require({item.get("path") for item in fire_files} == {
+            "ignition/data/publication/fire-seeds/seed-census.json",
+            "ignition/data/publication/fire-seeds/CHANGELOG.jsonl",
+        }, "Fire Seeds projection inventory differs")
+        for item in fire_files:
+            path, digest = item.get("path"), item.get("sha256")
+            require(path in paths and next(row["sha256"] for row in files if row["path"] == path) == digest, f"Fire Seeds output is not bound by the generated projection inventory: {path}")
+
+        compatibility = manifest.get("external_generated_cognitive_inheritance_r0_compatibility", {})
+        compat_files = compatibility.get("files", [])
+        compat_hashes = {item.get("path"): item.get("sha256") for item in compat_files}
+        require(set(compat_hashes) == {
+            "ignition/tools/validate_cognitive_inheritance_r0.py",
+            "ignition/tests/test_cognitive_inheritance_r0.py",
+        }, "legacy R0 compatibility inventory differs")
+        for path, digest in compat_hashes.items():
+            require(SHA256_RE.fullmatch(str(digest)) is not None and sha256((repo_root / path).read_bytes()) == digest, f"legacy R0 compatibility hash mismatch: {path}")
+
+        classification_path = repo_root / "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
+        classification = {}
+        for line in classification_path.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                row = json.loads(line)
+                classification[row.get("path")] = row.get("category")
+        tracked = git(repo_root, "ls-files", "--", TASK_ROOT_REL.as_posix()).splitlines()
+        task_files = {path for path in tracked if path}
+        require(task_files and all(classification.get(path) == "EVALUATION_EVIDENCE" for path in task_files), "repository path accounting does not classify every Task220 artifact as EVALUATION_EVIDENCE")
+        require(external.get("task220_evaluation_evidence_paths") == len(task_files), "Task220 path-accounting entry count differs")
     return manifest
 
 

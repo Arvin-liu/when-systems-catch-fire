@@ -1,5 +1,997 @@
 {
   "branch": "work/IGNITION-20260926-220-cognitive-evolution-r0",
+  "external_generated_cognitive_inheritance_r0_compatibility": {
+    "files": [
+      {
+        "path": "ignition/tests/test_cognitive_inheritance_r0.py",
+        "sha256": "c0db289489b72ae08f25437520097a48705938d722dcfb2c992e859bc56277c7"
+      },
+      {
+        "path": "ignition/tools/validate_cognitive_inheritance_r0.py",
+        "sha256": "04dca366d9484421cfe9baa0bdcb1509bfe3563fcc80e129c4d16155bf3861c0"
+      }
+    ],
+    "reason": "Task220 repository closure regenerated navigation and machine census projections whose prior Task217 hashes remain frozen. The old gate validates the Task217 freeze as-is and admits only current files named and hashed by the separate Task220 freeze.",
+    "scope": "the legacy Task172 R0 changed-path gate accepts only exact Task220-sidecar-bound generated Knowledge Experience and Fire Seeds path/hash replacements"
+  },
+  "external_generated_fire_seed_census": {
+    "changelog_action": "NO_SEED_DELTA",
+    "files": [
+      {
+        "path": "ignition/data/publication/fire-seeds/CHANGELOG.jsonl",
+        "sha256": "fcfc19b7ce1a0bc0a29cf730786b67260662669b20340e90bc6aa195bd5107ad"
+      },
+      {
+        "path": "ignition/data/publication/fire-seeds/seed-census.json",
+        "sha256": "388ca96253855e1bc0a85f4b719be6c0ce51bc9a22854ae228332a65ffb4de9b"
+      }
+    ],
+    "generator": "python3 tools/publication/build_fire_seed_census.py",
+    "knowledge_experience_source_origins": 755,
+    "scope": "machine source census only; no human Fire Seeds entry changed",
+    "seed_count": 64,
+    "source_count": 821,
+    "validator": "python3 tools/publication/validate_fire_seeds.py --check",
+    "validator_status": "PASS FIRE_SEEDS_VALID entries=64 clusters=64 content_seed_count=40 methodology_seed_count=24 source_count=821 changelog_records=4"
+  },
+  "external_generated_knowledge_experience": {
+    "audit_status": "PASS KNOWLEDGE_EXPERIENCE_AUDIT_OK cards=834 changes=727 layers=755 search=24916 aliases=1715 links=29810 two_click_pages=8",
+    "build_check": "PASS KNOWLEDGE_EXPERIENCE_OK cards=834 changes=727 layered=755 search=24916",
+    "files": [
+      {
+        "path": "ignition/KNOWLEDGE/ASSET-CARDS.md",
+        "sha256": "e27108320b08afd220cf4fc7ccd721a0ebc7e5785eba15e5a12d211dc6dc58c8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/COVERAGE.md",
+        "sha256": "93d4fb61a28e74e1c6b78f4c7cc3759609fb85927fa9efb0eeb9252dd1bac7c5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/EVOLUTION.md",
+        "sha256": "ba9debdc4413a5b7e9f460f9f81a8f717e90e5fa6ee90a2cd055c4ba471e4f07"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/MAP.md",
+        "sha256": "00979270973600c291799a1693802d8a66ed7b561f27bbe48003094f26d37cd1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/READING-LAYERS.md",
+        "sha256": "3fca50b0b5856a75c85cf65ec9d5e5be594123e256950d8f9113bbe69fcbba3e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/README.md",
+        "sha256": "f0b8595cd75003505b479778f536de2426f3e335c62988a8b8aea1861996ad6e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/SEARCH.md",
+        "sha256": "8e83c56b98e80754da609a21a183f2d08200988cc244775b03ba29aba53ffabf"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/WHATS-NEW.md",
+        "sha256": "8e39ec10957a3f11351e071d1560ebe4f4eb52a46e067714805f25ecb3de62fe"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-001.md",
+        "sha256": "9d9afe81973bd58d64032aa2f237e8a2ce4450e5b97413f9615b45f81e1a0718"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-002.md",
+        "sha256": "62c5ce842200c4999921e6c348dcc1b5b9d9137fbe94213b578345c00e46b814"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-003.md",
+        "sha256": "4d7ed22600d98b9c52c67b50432e9bd2bed4858b9a67e599fc708948f1648415"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-004.md",
+        "sha256": "daf462447cd056d1ba618fd3598a406c87bdf01cfa51cc3ce37f60824f6bba18"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-005.md",
+        "sha256": "a9951825d88c15b0360ef454371a4fadf9a1d28b7621f376ae689f1f4b0fc9d0"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-006.md",
+        "sha256": "f357ab8cc3912dd1e3912d3d0548ce14019256d4a05d0d025f2cb0e4ca8b6288"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-007.md",
+        "sha256": "b97c7550db97ba46c060023102c3ece69af48957cfb1f4ecdabec900008b6e50"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-008.md",
+        "sha256": "5cd560ac82ddbdc01e739d3c6f2e9cb64ca7d69296d446e5afe4df94a1282c83"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-009.md",
+        "sha256": "f5d00eda7684643e8a96313dbeba47d1f7fce8582c0acd4c65da3c280df4bddb"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-010.md",
+        "sha256": "380912814efa8f87a0ecd1075cf3598405882641c7a2b6712abdde557d1dcf97"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-011.md",
+        "sha256": "bf872133a5d731a38a6b61460b986ad5cd366fc3f63b8ddb6fac93404540a8da"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-012.md",
+        "sha256": "ff84cbe621ac56ca70345dc51d21f2be04a19ed6c3d5ca04f85251d908253dc4"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-013.md",
+        "sha256": "5dbb3c8efa9f27a9963e7afc10f7181ccfe5f20122c65fe89e8c678acf5e371a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-014.md",
+        "sha256": "4dd5684b497b063b00f807a1bbd9a1c44f648b054162bb52d99c79919b2064a5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-015.md",
+        "sha256": "59e90f734a061493b957ee8ee10ec63dc6b4985fb8e8898739ce8458a9f8f9f4"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-016.md",
+        "sha256": "5bafb732b9138857ff7d2232bbd46f9f31551c6f8793f8ad61d246eafdc4678e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-017.md",
+        "sha256": "a20c8484cbdf04492ad15d4fabb66a80c0f57b0eec35349095df50dd419657cd"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance.md",
+        "sha256": "d1ed74c7e462f406890f3451aeadf70624b15f2eaca42b8a8855f01bfc709a02"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-001.md",
+        "sha256": "f39988eb178c5d2596bd5b13d40346850a9df132f6bc9d8a064a7ef62e3253db"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-002.md",
+        "sha256": "3d24a05ad809e9a3ea6aecccf3e6c58f0dcc3b71002adad4f7a0189fa03c7649"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-003.md",
+        "sha256": "78916d1b7e903ee9f92f4dbf2c2fda0bcb564fd6e7ff73bfa6c0b7b6bec778f1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-004.md",
+        "sha256": "831ff4184f4b63e1acebcd8a5b663d97c2212fb9d7f4a39dea002be5301ef0dc"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-005.md",
+        "sha256": "841abc244b8c97a7fd2236d6a741bf350bcfad42847dcb6dbebb271c519b969e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-006.md",
+        "sha256": "d9405f34c6d29a14c434ef20383953d88e8d1e096c2a782b0b567e67c2c4af21"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-007.md",
+        "sha256": "0d21de50ce7bfa6f7449dcddd53046d27ea4f705dfe27adfaa01c48c2d1b800c"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-008.md",
+        "sha256": "d46f7692db1f7149db9d3113043a5e2df6bbdca091b7729eaae14d26d07b4e71"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-009.md",
+        "sha256": "ead7e90633bc1e9cf5c05d30a9d903f8e999a89a772b807613daddd1e33b31bf"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-010.md",
+        "sha256": "6b218fdd6aa7d177246a6ce63af99a06303b61874293b34a5e76e3fce0fedcb1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-011.md",
+        "sha256": "209d5fce5aca222729d5342e276f7de344ad04e29403d7c0b473c728e1dfc72c"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-012.md",
+        "sha256": "25ed1155dd2cdcc7ff06ea12be3d8da876053c746a80e3507f5b50b78271c254"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-013.md",
+        "sha256": "b428725f8af09e398a5dcd201dae4eedbb9b40d2306e08e437989a3c7ceb4409"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-014.md",
+        "sha256": "a2737982723620bd027eaa4140340b05d61158b1b77cddaa172588b45f68d64e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-015.md",
+        "sha256": "86a7fffaa852c95d2c8c0a0354f362f6290419bf22e465ec2ca9d08ea438e1b7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition.md",
+        "sha256": "4c5641a7a0c596d099292e262656631f63c4a6b6ecd66e9277de05861bfde0d7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-001.md",
+        "sha256": "c13ff28031ef8a592076c64d883eaf9581566bd4c7579e60e4e9f48fb9ef89f9"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-002.md",
+        "sha256": "167c772de80582690b9fd187a652a85e14f88382b4bc43d78ab6ab60f127c29d"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-003.md",
+        "sha256": "f7f5e67804669c21cf04dff213477bb289caa35e0f9787582c1dae7e1439102e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics.md",
+        "sha256": "d331c07e031f38f6520f4087c104ce105a42d4d4ee2ed1275a1e44d5945bfbb6"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-001.md",
+        "sha256": "6ffb2f3531d478d5a5a6a08ef90e2bec63fb4c553445c3613d787c0ec26047fc"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-002.md",
+        "sha256": "246c20fa87ecb023af120b56827f01ed98fdb2a243086859b5714c1d811ce57b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-003.md",
+        "sha256": "0c5d8c78fc5dd310d8623edec5deb82ac73ddcab497cc3e4f86a68a65bb535c5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-004.md",
+        "sha256": "454aca7b92c26338ac1393cde653e6b8dd8828802ca6422761c7ca5086d97d43"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-005.md",
+        "sha256": "9e5ca1882774ab1a233aabaa314edbc4d7823f85c5ced985962734791f97d3aa"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-006.md",
+        "sha256": "333ed84a698c7b969912a9942ae94c84e0947f5941729a022b9ca7cf2d3f50f2"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-007.md",
+        "sha256": "41fa4099c8eae7a985fbaae46e48d051c0ffb8aafb6bfcc68d86b04448277c59"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-008.md",
+        "sha256": "031effe0b5f95898442c7d28ae2d90989d2d50344a72d52630fb39f1b3cf1703"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-009.md",
+        "sha256": "903f268769ae384d21316c85db33fee255c0e64e6a4621a69c0083e7e2bf4aa8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-010.md",
+        "sha256": "2e1c72a9d52ac50bd1e56750533521c8ca4da779da307ef737d2c295e1c6a823"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-011.md",
+        "sha256": "9b628f40485d68591bb43bf3ec009c3154198c32b8107f5e3ac95bef74e088fe"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-012.md",
+        "sha256": "aced7f6fb5b93103db769bb2ab5106ab91b5a909be041cbe293188d4f372ae5d"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-013.md",
+        "sha256": "c7448a792375c63a8c17ff15feb3f6eeaa77e23b6922fe43b2cf76fe96d0cdeb"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-014.md",
+        "sha256": "1774337eadfba1e46fd2397657b39a05cb7a97064ae0299b559ca39732f88f08"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-015.md",
+        "sha256": "e623c1617f892e2ea4a9b8f67402b003c148ae6839aaee6f878a8076bcc829a6"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-016.md",
+        "sha256": "abe1eb46a3839a6cdb0e506636ebe62e46fc1f60832b42580b95368e8a4b130a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-017.md",
+        "sha256": "d5828056de450a24b6470f793ba2ab92c89dc987de57b2c3494c2c0fa26d9107"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-018.md",
+        "sha256": "07346f227342245ec96b268c25ddb9d4c1cb93c8f5d141e48879ae98181f0e00"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-019.md",
+        "sha256": "8c6ecb82e3bcea61b1c2074fc2deeebf1751054403ffca2f9a5ad4eebf8e020f"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-020.md",
+        "sha256": "c5725fb94edc240333b0d066838b21feaeb31919099ae0148a776a1b387251ee"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence.md",
+        "sha256": "0f4e133abc67a8cf6eed921bdac7f104ae4567512c74e4f1c99f189c95707fc6"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-001.md",
+        "sha256": "6e44ea92c0aa53f9ea3870efad0e29da6a8ad802db24d078d367018960d507ce"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-002.md",
+        "sha256": "d29ff2415ba285592566e3e12bef7accbbec09a0721be5bc46e737fe6c1324b1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-003.md",
+        "sha256": "42e7fffafaa5fbf4027416230a94c26806bdac09c217228f6592ed280e28667b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-004.md",
+        "sha256": "3a57e982c7c800ce5e6969d8953b8a2854d86b0d99c3a2e360d8050f71b56d57"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-005.md",
+        "sha256": "386a4fbc8dae9afd2e509ba407a4ce8018c1e324eefcbaf90cc6273ce8b619cc"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-006.md",
+        "sha256": "c38e900bbfb18c10a1218e3db26774703d40ab48caae8c3d5cf3acf95a25ad1e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-007.md",
+        "sha256": "2946216a88994382f816926c895dc053227497fa2b06c341e3df8b64327adb41"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/physics.md",
+        "sha256": "22eb4dc69818b054a935d9a5890f0b9fae6ef705e8dc3c6a29d559cb6d2f2e18"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/physics/part-001.md",
+        "sha256": "89a47433bc8ebd30bb615345e4952f7ed7fbe9bc6d61456bd5f5bac7759a242b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems.md",
+        "sha256": "be20f0d68d99cedeb8cab3ae4107e317fa3b6b0f327b5d82724e2a3dc8fe1ece"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-001.md",
+        "sha256": "56c8eea4fa268b3b8e389f138fed3ecadec8a0796f89c76e02b83486a46e1bf1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-002.md",
+        "sha256": "c93482871dfdabb2bb702fa402c4f50ac0392670ab46a248bd39fc7dd77b501b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-003.md",
+        "sha256": "609dcb33c045a71636e470b423135f5d204546852a8a5edcfd23b47633acc4e2"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-004.md",
+        "sha256": "566e8fbebe4560d95d4b132449442d676410ee1772aadacbbabf71f58f177c52"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-005.md",
+        "sha256": "a7082349570170729d164ca38ed879c3c3010654b65669a6479e27fd430e5a1a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-006.md",
+        "sha256": "59e87e6eb91d3a08c1da9461d949a074a682c23749a644507e426526723fdfab"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/writing_publication.md",
+        "sha256": "45f7c761693fd93b043159027189a493b16e52d3d287d0aec8659c6687664076"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/writing_publication/part-001.md",
+        "sha256": "1f35ece0871209b609a5d74e815bbcf040eb75b60087ed376de04c7fed4fe50e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-001.md",
+        "sha256": "20a2febc725dc26d75ddbc975a6b97d5cdb2a038bfcbe018cd74c6d5ab675754"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-002.md",
+        "sha256": "3a5524c7eb314b295bc9272312e44b02a8cc37d28476331260121f19281dc68a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-003.md",
+        "sha256": "a750685e3af3ac9c2a24735772d25e301433cbc3342cf1988d55e34ec42eb418"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-004.md",
+        "sha256": "90b5c53b87253714ae55b91ffcc92e130b0d7d274f92eb371022e913d55e66ae"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-005.md",
+        "sha256": "00fe64db99972ba410e82d71cdae340d884768b5cd8b51eeaacc040409795d34"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-006.md",
+        "sha256": "987898c0db57989c5b12efee4ff308cb21652c6dfd1432fc271c747dd75a6bb7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-007.md",
+        "sha256": "341786003a3c2f3fa24632c739d27ae92bd994120431bf3453f56a225c95e3af"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-008.md",
+        "sha256": "8f878c31fb38841756dcd6d32be8034d52164d2ba6299cc4885e392b4c92abcf"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-009.md",
+        "sha256": "c246c472a1df25cded52d52995a7d90e19c59cf36c2094919454fb4b9db6a9ac"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-010.md",
+        "sha256": "a40b2c8a69bb77b3d6a7e703c8f6f011256d47b84b3f6ab791a3d96057a68d15"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-011.md",
+        "sha256": "795fb4ea7ab76a75d0d15cc27589ab6c5e4318ee7f76311c20c79574d0eb874f"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-012.md",
+        "sha256": "2cbecd84ea209c4d99b339d0afb224d91a745b94bd6ecadc4c9cb28fffb69e79"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-013.md",
+        "sha256": "e1c872c905d24e5931942ab9ac03fc25e02dbfaa8e2816b230282bc1164f3b11"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-014.md",
+        "sha256": "03261b110d09c25e1a410856e3692fdf1506d65afd1493917ba6bd99daa106f5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-015.md",
+        "sha256": "158a1d58ea99e4cabe48f6ebe7c8784fe33f4202c2d63fe20c196f4e4ebe251a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-016.md",
+        "sha256": "29d1fccf83707a45c5867eded637859df732e3cb9fa95d2ae350c98ddfb6de2a"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+        "sha256": "a342dd67dbe3471005ad89abdca16a8b1568b9efd0286643764388e72d88294f"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+        "sha256": "eb5f592739eb9374dcf151e8ab937f7aa58c8972dda52d8a8c2be789f352ad17"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/changes.jsonl",
+        "sha256": "d297912ecf1bc2f86783ae43c85cdd260d031150451ce41cd35e8db77e3bafa9"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/coverage.json",
+        "sha256": "db85b9e1fe6d7d8785653263ce7893559b9a57ef4cd677262284f554787e55e1"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+        "sha256": "cda77bcb9209313a75f3cd8816868fe119d430f3c15150ab76778fa0443913c4"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/manifest.json",
+        "sha256": "d3c4567bd17c6deca5a8e6c89208303596e8a1a8cac1c73c1e825d192fb436c7"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
+        "sha256": "deaa1b4d568424c6da5c4b49fe77dc6d1b5a0db474ac8d8dc4f4291322dc34c0"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/source-first-seen.json",
+        "sha256": "0c74da6837139d8bed00508323d4ceb4e45c180710b059480c29f05e836c29c1"
+      }
+    ],
+    "generators": [
+      "python3 tools/governance/gen_source_first_seen.py",
+      "python3 tools/governance/build_knowledge_experience.py"
+    ],
+    "source_first_seen_entry_count": 786,
+    "source_first_seen_path": "ignition/data/governance/knowledge-experience/source-first-seen.json",
+    "source_origin_count": 755
+  },
+  "external_generated_projections": {
+    "checks": {
+      "adjudicate_nonfunction_claims.py --check": "PASS NONFUNCTION_CLAIM_GENERATION_DETERMINISTIC files=14",
+      "build_claim_browsers.py --check": "PASS function_machine=6158 function_human=24 nonfunction_machine=18003 nonfunction_human=24",
+      "build_human_results.py --check": "PASS HUMAN_RESULTS_OK records=786",
+      "build_knowledge_experience.py --check": "PASS cards=834 changes=727 layered=755 search=24916",
+      "gen_source_first_seen.py": "PASS SOURCE_FIRST_SEEN_WRITTEN entries=786",
+      "generate_overall_architecture.py --check": "PASS nodes=87 edges=92 homepage_projection=PASS",
+      "run_self_correction.py --check": "PASS SELF_CORRECTION_OK deltas=717 rules=10",
+      "validate_cognitive_inheritance_r0.py --repo-root ignition": "PASS status=PASS task=IGNITION-20260916-179 changed-path gate and fixture validation",
+      "validate_fire_seeds.py --check": "PASS FIRE_SEEDS_VALID entries=64 sources=821 layered_origins=755",
+      "validate_foundation.py": "PASS CHECKS_TOTAL=63 CHECKS_PASSED=63 CHECKS_FAILED=0",
+      "validate_human_visibility.py": "PASS human_surfaces=25 machine_human_pairs=14 two_click_destinations=20",
+      "validate_knowledge_experience.py": "PASS cards=834 changes=727 layers=755 search=24916 aliases=1715 links=29810 two_click_pages=8",
+      "validate_nonfunction_claim_closure.py": "PASS 54/54 tracked=6811 canonical_claims=18003",
+      "validate_repository_path_classification.py --check": "PASS 10/10"
+    },
+    "files": [
+      {
+        "path": "ignition/KNOWLEDGE/ASSET-CARDS.md",
+        "sha256": "e27108320b08afd220cf4fc7ccd721a0ebc7e5785eba15e5a12d211dc6dc58c8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/COVERAGE.md",
+        "sha256": "93d4fb61a28e74e1c6b78f4c7cc3759609fb85927fa9efb0eeb9252dd1bac7c5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/EVOLUTION.md",
+        "sha256": "ba9debdc4413a5b7e9f460f9f81a8f717e90e5fa6ee90a2cd055c4ba471e4f07"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/MAP.md",
+        "sha256": "00979270973600c291799a1693802d8a66ed7b561f27bbe48003094f26d37cd1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/READING-LAYERS.md",
+        "sha256": "3fca50b0b5856a75c85cf65ec9d5e5be594123e256950d8f9113bbe69fcbba3e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/README.md",
+        "sha256": "f0b8595cd75003505b479778f536de2426f3e335c62988a8b8aea1861996ad6e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/SEARCH.md",
+        "sha256": "8e83c56b98e80754da609a21a183f2d08200988cc244775b03ba29aba53ffabf"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/WHATS-NEW.md",
+        "sha256": "8e39ec10957a3f11351e071d1560ebe4f4eb52a46e067714805f25ecb3de62fe"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-001.md",
+        "sha256": "9d9afe81973bd58d64032aa2f237e8a2ce4450e5b97413f9615b45f81e1a0718"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-002.md",
+        "sha256": "62c5ce842200c4999921e6c348dcc1b5b9d9137fbe94213b578345c00e46b814"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-003.md",
+        "sha256": "4d7ed22600d98b9c52c67b50432e9bd2bed4858b9a67e599fc708948f1648415"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-004.md",
+        "sha256": "daf462447cd056d1ba618fd3598a406c87bdf01cfa51cc3ce37f60824f6bba18"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-005.md",
+        "sha256": "a9951825d88c15b0360ef454371a4fadf9a1d28b7621f376ae689f1f4b0fc9d0"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-006.md",
+        "sha256": "f357ab8cc3912dd1e3912d3d0548ce14019256d4a05d0d025f2cb0e4ca8b6288"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-007.md",
+        "sha256": "b97c7550db97ba46c060023102c3ece69af48957cfb1f4ecdabec900008b6e50"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-008.md",
+        "sha256": "5cd560ac82ddbdc01e739d3c6f2e9cb64ca7d69296d446e5afe4df94a1282c83"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-009.md",
+        "sha256": "f5d00eda7684643e8a96313dbeba47d1f7fce8582c0acd4c65da3c280df4bddb"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-010.md",
+        "sha256": "380912814efa8f87a0ecd1075cf3598405882641c7a2b6712abdde557d1dcf97"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-011.md",
+        "sha256": "bf872133a5d731a38a6b61460b986ad5cd366fc3f63b8ddb6fac93404540a8da"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-012.md",
+        "sha256": "ff84cbe621ac56ca70345dc51d21f2be04a19ed6c3d5ca04f85251d908253dc4"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-013.md",
+        "sha256": "5dbb3c8efa9f27a9963e7afc10f7181ccfe5f20122c65fe89e8c678acf5e371a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-014.md",
+        "sha256": "4dd5684b497b063b00f807a1bbd9a1c44f648b054162bb52d99c79919b2064a5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-015.md",
+        "sha256": "59e90f734a061493b957ee8ee10ec63dc6b4985fb8e8898739ce8458a9f8f9f4"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-016.md",
+        "sha256": "5bafb732b9138857ff7d2232bbd46f9f31551c6f8793f8ad61d246eafdc4678e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/cards/part-017.md",
+        "sha256": "a20c8484cbdf04492ad15d4fabb66a80c0f57b0eec35349095df50dd419657cd"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance.md",
+        "sha256": "d1ed74c7e462f406890f3451aeadf70624b15f2eaca42b8a8855f01bfc709a02"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-001.md",
+        "sha256": "f39988eb178c5d2596bd5b13d40346850a9df132f6bc9d8a064a7ef62e3253db"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-002.md",
+        "sha256": "3d24a05ad809e9a3ea6aecccf3e6c58f0dcc3b71002adad4f7a0189fa03c7649"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-003.md",
+        "sha256": "78916d1b7e903ee9f92f4dbf2c2fda0bcb564fd6e7ff73bfa6c0b7b6bec778f1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-004.md",
+        "sha256": "831ff4184f4b63e1acebcd8a5b663d97c2212fb9d7f4a39dea002be5301ef0dc"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-005.md",
+        "sha256": "841abc244b8c97a7fd2236d6a741bf350bcfad42847dcb6dbebb271c519b969e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-006.md",
+        "sha256": "d9405f34c6d29a14c434ef20383953d88e8d1e096c2a782b0b567e67c2c4af21"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-007.md",
+        "sha256": "0d21de50ce7bfa6f7449dcddd53046d27ea4f705dfe27adfaa01c48c2d1b800c"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-008.md",
+        "sha256": "d46f7692db1f7149db9d3113043a5e2df6bbdca091b7729eaae14d26d07b4e71"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-009.md",
+        "sha256": "ead7e90633bc1e9cf5c05d30a9d903f8e999a89a772b807613daddd1e33b31bf"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-010.md",
+        "sha256": "6b218fdd6aa7d177246a6ce63af99a06303b61874293b34a5e76e3fce0fedcb1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-011.md",
+        "sha256": "209d5fce5aca222729d5342e276f7de344ad04e29403d7c0b473c728e1dfc72c"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-012.md",
+        "sha256": "25ed1155dd2cdcc7ff06ea12be3d8da876053c746a80e3507f5b50b78271c254"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-013.md",
+        "sha256": "b428725f8af09e398a5dcd201dae4eedbb9b40d2306e08e437989a3c7ceb4409"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-014.md",
+        "sha256": "a2737982723620bd027eaa4140340b05d61158b1b77cddaa172588b45f68d64e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/architecture_governance/part-015.md",
+        "sha256": "86a7fffaa852c95d2c8c0a0354f362f6290419bf22e465ec2ca9d08ea438e1b7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition.md",
+        "sha256": "4c5641a7a0c596d099292e262656631f63c4a6b6ecd66e9277de05861bfde0d7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-001.md",
+        "sha256": "c13ff28031ef8a592076c64d883eaf9581566bd4c7579e60e4e9f48fb9ef89f9"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-002.md",
+        "sha256": "167c772de80582690b9fd187a652a85e14f88382b4bc43d78ab6ab60f127c29d"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/cognition/part-003.md",
+        "sha256": "f7f5e67804669c21cf04dff213477bb289caa35e0f9787582c1dae7e1439102e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics.md",
+        "sha256": "d331c07e031f38f6520f4087c104ce105a42d4d4ee2ed1275a1e44d5945bfbb6"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-001.md",
+        "sha256": "6ffb2f3531d478d5a5a6a08ef90e2bec63fb4c553445c3613d787c0ec26047fc"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-002.md",
+        "sha256": "246c20fa87ecb023af120b56827f01ed98fdb2a243086859b5714c1d811ce57b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-003.md",
+        "sha256": "0c5d8c78fc5dd310d8623edec5deb82ac73ddcab497cc3e4f86a68a65bb535c5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-004.md",
+        "sha256": "454aca7b92c26338ac1393cde653e6b8dd8828802ca6422761c7ca5086d97d43"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-005.md",
+        "sha256": "9e5ca1882774ab1a233aabaa314edbc4d7823f85c5ced985962734791f97d3aa"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-006.md",
+        "sha256": "333ed84a698c7b969912a9942ae94c84e0947f5941729a022b9ca7cf2d3f50f2"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-007.md",
+        "sha256": "41fa4099c8eae7a985fbaae46e48d051c0ffb8aafb6bfcc68d86b04448277c59"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-008.md",
+        "sha256": "031effe0b5f95898442c7d28ae2d90989d2d50344a72d52630fb39f1b3cf1703"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-009.md",
+        "sha256": "903f268769ae384d21316c85db33fee255c0e64e6a4621a69c0083e7e2bf4aa8"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-010.md",
+        "sha256": "2e1c72a9d52ac50bd1e56750533521c8ca4da779da307ef737d2c295e1c6a823"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-011.md",
+        "sha256": "9b628f40485d68591bb43bf3ec009c3154198c32b8107f5e3ac95bef74e088fe"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-012.md",
+        "sha256": "aced7f6fb5b93103db769bb2ab5106ab91b5a909be041cbe293188d4f372ae5d"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-013.md",
+        "sha256": "c7448a792375c63a8c17ff15feb3f6eeaa77e23b6922fe43b2cf76fe96d0cdeb"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-014.md",
+        "sha256": "1774337eadfba1e46fd2397657b39a05cb7a97064ae0299b559ca39732f88f08"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-015.md",
+        "sha256": "e623c1617f892e2ea4a9b8f67402b003c148ae6839aaee6f878a8076bcc829a6"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-016.md",
+        "sha256": "abe1eb46a3839a6cdb0e506636ebe62e46fc1f60832b42580b95368e8a4b130a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-017.md",
+        "sha256": "d5828056de450a24b6470f793ba2ab92c89dc987de57b2c3494c2c0fa26d9107"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-018.md",
+        "sha256": "07346f227342245ec96b268c25ddb9d4c1cb93c8f5d141e48879ae98181f0e00"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-019.md",
+        "sha256": "8c6ecb82e3bcea61b1c2074fc2deeebf1751054403ffca2f9a5ad4eebf8e020f"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/mathematics/part-020.md",
+        "sha256": "c5725fb94edc240333b0d066838b21feaeb31919099ae0148a776a1b387251ee"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence.md",
+        "sha256": "0f4e133abc67a8cf6eed921bdac7f104ae4567512c74e4f1c99f189c95707fc6"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-001.md",
+        "sha256": "6e44ea92c0aa53f9ea3870efad0e29da6a8ad802db24d078d367018960d507ce"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-002.md",
+        "sha256": "d29ff2415ba285592566e3e12bef7accbbec09a0721be5bc46e737fe6c1324b1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-003.md",
+        "sha256": "42e7fffafaa5fbf4027416230a94c26806bdac09c217228f6592ed280e28667b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-004.md",
+        "sha256": "3a57e982c7c800ce5e6969d8953b8a2854d86b0d99c3a2e360d8050f71b56d57"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-005.md",
+        "sha256": "386a4fbc8dae9afd2e509ba407a4ce8018c1e324eefcbaf90cc6273ce8b619cc"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-006.md",
+        "sha256": "c38e900bbfb18c10a1218e3db26774703d40ab48caae8c3d5cf3acf95a25ad1e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/operations_evidence/part-007.md",
+        "sha256": "2946216a88994382f816926c895dc053227497fa2b06c341e3df8b64327adb41"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/physics.md",
+        "sha256": "22eb4dc69818b054a935d9a5890f0b9fae6ef705e8dc3c6a29d559cb6d2f2e18"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/physics/part-001.md",
+        "sha256": "89a47433bc8ebd30bb615345e4952f7ed7fbe9bc6d61456bd5f5bac7759a242b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems.md",
+        "sha256": "be20f0d68d99cedeb8cab3ae4107e317fa3b6b0f327b5d82724e2a3dc8fe1ece"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-001.md",
+        "sha256": "56c8eea4fa268b3b8e389f138fed3ecadec8a0796f89c76e02b83486a46e1bf1"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-002.md",
+        "sha256": "c93482871dfdabb2bb702fa402c4f50ac0392670ab46a248bd39fc7dd77b501b"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-003.md",
+        "sha256": "609dcb33c045a71636e470b423135f5d204546852a8a5edcfd23b47633acc4e2"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-004.md",
+        "sha256": "566e8fbebe4560d95d4b132449442d676410ee1772aadacbbabf71f58f177c52"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-005.md",
+        "sha256": "a7082349570170729d164ca38ed879c3c3010654b65669a6479e27fd430e5a1a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/systems/part-006.md",
+        "sha256": "59e87e6eb91d3a08c1da9461d949a074a682c23749a644507e426526723fdfab"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/writing_publication.md",
+        "sha256": "45f7c761693fd93b043159027189a493b16e52d3d287d0aec8659c6687664076"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/indexes/writing_publication/part-001.md",
+        "sha256": "1f35ece0871209b609a5d74e815bbcf040eb75b60087ed376de04c7fed4fe50e"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-001.md",
+        "sha256": "20a2febc725dc26d75ddbc975a6b97d5cdb2a038bfcbe018cd74c6d5ab675754"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-002.md",
+        "sha256": "3a5524c7eb314b295bc9272312e44b02a8cc37d28476331260121f19281dc68a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-003.md",
+        "sha256": "a750685e3af3ac9c2a24735772d25e301433cbc3342cf1988d55e34ec42eb418"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-004.md",
+        "sha256": "90b5c53b87253714ae55b91ffcc92e130b0d7d274f92eb371022e913d55e66ae"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-005.md",
+        "sha256": "00fe64db99972ba410e82d71cdae340d884768b5cd8b51eeaacc040409795d34"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-006.md",
+        "sha256": "987898c0db57989c5b12efee4ff308cb21652c6dfd1432fc271c747dd75a6bb7"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-007.md",
+        "sha256": "341786003a3c2f3fa24632c739d27ae92bd994120431bf3453f56a225c95e3af"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-008.md",
+        "sha256": "8f878c31fb38841756dcd6d32be8034d52164d2ba6299cc4885e392b4c92abcf"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-009.md",
+        "sha256": "c246c472a1df25cded52d52995a7d90e19c59cf36c2094919454fb4b9db6a9ac"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-010.md",
+        "sha256": "a40b2c8a69bb77b3d6a7e703c8f6f011256d47b84b3f6ab791a3d96057a68d15"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-011.md",
+        "sha256": "795fb4ea7ab76a75d0d15cc27589ab6c5e4318ee7f76311c20c79574d0eb874f"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-012.md",
+        "sha256": "2cbecd84ea209c4d99b339d0afb224d91a745b94bd6ecadc4c9cb28fffb69e79"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-013.md",
+        "sha256": "e1c872c905d24e5931942ab9ac03fc25e02dbfaa8e2816b230282bc1164f3b11"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-014.md",
+        "sha256": "03261b110d09c25e1a410856e3692fdf1506d65afd1493917ba6bd99daa106f5"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-015.md",
+        "sha256": "158a1d58ea99e4cabe48f6ebe7c8784fe33f4202c2d63fe20c196f4e4ebe251a"
+      },
+      {
+        "path": "ignition/KNOWLEDGE/reading-layers/part-016.md",
+        "sha256": "29d1fccf83707a45c5867eded637859df732e3cb9fa95d2ae350c98ddfb6de2a"
+      },
+      {
+        "path": "ignition/RESULTS/CHRONOLOGY.md",
+        "sha256": "a6704412a220da24ec9ea6b6c6ccf6c47facca0ee1a5443ed460d1f10cd302c6"
+      },
+      {
+        "path": "ignition/RESULTS/SELF-CORRECTION-AUDIT.md",
+        "sha256": "8133665b260d13632b3c52470afb122b824dabafe7a8c254ae5d74eb8714e557"
+      },
+      {
+        "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
+        "sha256": "ef6df2079701be37845e94022c8040adc256a5bdc75e3d2817a533616e7a8d52"
+      },
+      {
+        "path": "ignition/data/foundation/nonfunction-claims/discovery-coverage.json",
+        "sha256": "5cc5dcdf1f4d18247b007e5e1e3c2f2a0cfe0a933e7abc0fcb510d90e34366df"
+      },
+      {
+        "path": "ignition/data/foundation/nonfunction-claims/source-discovery.jsonl",
+        "sha256": "76f52aab752b1c33cd83ea38b3726cbae7561551d5f7740c38e3a590ba0fa67d"
+      },
+      {
+        "path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+        "sha256": "d679eb6493c77ed2de5367297fa97a14d039ce8d8b0da1a6a31a8f3d3d828e0c"
+      },
+      {
+        "path": "ignition/data/governance/human-results/census.json",
+        "sha256": "b6918d7f9e6471e3310c7db8cece8d10a721113a2d6b288df025dc786b634ef5"
+      },
+      {
+        "path": "ignition/data/governance/human-results/result-ledger.jsonl",
+        "sha256": "bc7954f13305a8590ced3e14d1331b006164c5cddf53e4df4525786320852bad"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/alias-index.jsonl",
+        "sha256": "a342dd67dbe3471005ad89abdca16a8b1568b9efd0286643764388e72d88294f"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+        "sha256": "eb5f592739eb9374dcf151e8ab937f7aa58c8972dda52d8a8c2be789f352ad17"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/changes.jsonl",
+        "sha256": "d297912ecf1bc2f86783ae43c85cdd260d031150451ce41cd35e8db77e3bafa9"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/coverage.json",
+        "sha256": "db85b9e1fe6d7d8785653263ce7893559b9a57ef4cd677262284f554787e55e1"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+        "sha256": "cda77bcb9209313a75f3cd8816868fe119d430f3c15150ab76778fa0443913c4"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/manifest.json",
+        "sha256": "d3c4567bd17c6deca5a8e6c89208303596e8a1a8cac1c73c1e825d192fb436c7"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/search-index.jsonl",
+        "sha256": "deaa1b4d568424c6da5c4b49fe77dc6d1b5a0db474ac8d8dc4f4291322dc34c0"
+      },
+      {
+        "path": "ignition/data/governance/knowledge-experience/source-first-seen.json",
+        "sha256": "0c74da6837139d8bed00508323d4ceb4e45c180710b059480c29f05e836c29c1"
+      },
+      {
+        "path": "ignition/data/governance/self-correction/audit-findings.jsonl",
+        "sha256": "0462a5c666183e4e3169ebe00255f3a0918d3975f382641051b7fcfdae9a6308"
+      },
+      {
+        "path": "ignition/data/publication/fire-seeds/CHANGELOG.jsonl",
+        "sha256": "fcfc19b7ce1a0bc0a29cf730786b67260662669b20340e90bc6aa195bd5107ad"
+      },
+      {
+        "path": "ignition/data/publication/fire-seeds/seed-census.json",
+        "sha256": "388ca96253855e1bc0a85f4b719be6c0ce51bc9a22854ae228332a65ffb4de9b"
+      },
+      {
+        "path": "ignition/docs/foundation/nonfunction-claim-adjudication-index.md",
+        "sha256": "53739d2ecac1e391dd04cbb441b8057725508d46a8c4b8202cafdb53246c0716"
+      }
+    ],
+    "generator_closure": "PASS",
+    "r0_compatibility_inventory": "PASS",
+    "repository_path_accounting": "PASS",
+    "repository_path_accounting_check": "PASS 10/10",
+    "task220_evaluation_evidence_paths": 51
+  },
   "file_count": 49,
   "files": [
     {
@@ -192,15 +1184,15 @@
     },
     {
       "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/validation/VALIDATION-REPORT.md",
-      "sha256": "a9b516d953220acf8f2652f5d82ae7ab9fd37a7732f382b7d90e22665736e8d1"
+      "sha256": "c4fcccb9ad4820f198e7833ebf66698db948790a709cb977ca492faf265b21be"
     },
     {
       "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/validation/validate_task220.py",
-      "sha256": "4def8b11a921a0bf278aa64a9bb4aa8a5f80a67a0a91fd6d7852f1ebeeb1714a"
+      "sha256": "ad4a8e8ddb62b345057c2096bf28319d0575e14ad176eb83a964faab24e8c145"
     }
   ],
   "formal_base": "1f7286515768347a2a3a131dd0f6de87f631676c",
-  "freeze_status": "STEP07_FROZEN_REPOSITORY_CLOSURE_PENDING",
+  "freeze_status": "TASK220_R0_LOCAL_VALIDATION_PASS",
   "schema_version": "ignition-220-freeze-r0",
   "task_id": "IGNITION-20260926-220"
 }

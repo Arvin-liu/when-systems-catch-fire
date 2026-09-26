@@ -2474,6 +2474,21 @@
   - 可搜索名称：NFC-26e95f29ada730bd / F_退出权验证 **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
+- [FAMILY01 — E1 observed counterexample packet](../../ASSET-CARDS.md#asset-hr-6caf723d016f282b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY01 — E1 observed counterexample packet / revision-evidence-e1
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md`
+  - 依赖：—；被引用：—
+- [FAMILY02 — E1 observed counterexample packet](../../ASSET-CARDS.md#asset-hr-5416e13e3062a16a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY02 — E1 observed counterexample packet / revision-evidence-e1
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md`
+  - 依赖：—；被引用：—
+- [FAMILY03 — E1 observed counterexample packet](../../ASSET-CARDS.md#asset-hr-b0246ccd61089f31)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY03 — E1 observed counterexample packet / revision-evidence-e1
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md`
+  - 依赖：—；被引用：—
 - [federation dispatch, residual and Current-state gates, release/lifecycle](../../../reports/operations/ignition-138-step13-targeted-regression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-744440975fd78bda / federation dispatch, residual and Current-state gates, release/lifecycle
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-5dcbae25a5a0a15c / Final-state loss and held-out task accuracy validate selected outputs, without semantic postconditions, independent test
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—
-- [Finite input-output examples are an extensional FunctionSpec, but names, types, contracts, effects and lifecycle fields](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
-  - 可搜索名称：NFC-220c28289f8d4561 / Finite input-output examples are an extensional FunctionSpec, but names, types, contracts, effects and lifecycle fields
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Fisher信息-门控距离函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D198 / Fisher信息-门控距离函数 / D198
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D181, D211, D220, D270；被引用：D227, CLAIM-D227, NFC-358c3ff341f70be5, NFC-70704e52e9f99de2
-- [Fisher健康度函数](../../../data/foundation/adjudications/079-method-audit.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D121 / Fisher健康度函数 / D121
-  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
-  - 依赖：D180, D91；被引用：D128, NFC-246fd59337cec0f5, NFC-2583dfad4478c954, NFC-25ae33b712987972

@@ -4,6 +4,81 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B6FEBD9550221C76 / ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\) / IMPLICIT-B6FEBD9550221C76 / IMPLICIT-C3C8D112801987DA
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3C8D112801987DA / ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\) / IMPLICIT-C3C8D112801987DA / IMPLICIT-B6FEBD9550221C76
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [σ = f\(Posture_deg, H\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D3CC0B303B40577E / σ = f\(Posture_deg, H\) / IMPLICIT-D3CC0B303B40577E
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3F39071C3EF5FF6F / σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\) / IMPLICIT-3F39071C3EF5FF6F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E92EB02A64BB97DD / σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点 / IMPLICIT-E92EB02A64BB97DD
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Φ\(x\) = E\(x\) - T·S\(x\)](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7506B88F1F0D7FCD / Φ\(x\) = E\(x\) - T·S\(x\) / IMPLICIT-7506B88F1F0D7FCD / IMPLICIT-8283AA10BCACD392
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [Φ\(x\) = E\(x\) - T·S\(x\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8283AA10BCACD392 / Φ\(x\) = E\(x\) - T·S\(x\) / IMPLICIT-8283AA10BCACD392 / IMPLICIT-7506B88F1F0D7FCD
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-97EDC919D40414E5 / Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\) / IMPLICIT-97EDC919D40414E5 / IMPLICIT-EDA3023ED91EA252
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\)](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EDA3023ED91EA252 / Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\) / IMPLICIT-EDA3023ED91EA252 / IMPLICIT-97EDC919D40414E5
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [Ψ₀ 元判定框架：负责判定（J⁺/J⁻）、同构识别（I_iso）、收敛审核（L_meta）。](../../../docs/meta-protocols/README.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-9209575ad3d016e5 / Ψ₀ 元判定框架：负责判定（J⁺/J⁻）、同构识别（I_iso）、收敛审核（L_meta）。
+  - 来源：`docs/meta-protocols/README.md`
+  - 依赖：—；被引用：—
+- [Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-41B66B56E0A0BD47 / Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)} / IMPLICIT-41B66B56E0A0BD47
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0945A6A6A90EDEC6 / Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)} / IMPLICIT-0945A6A6A90EDEC6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1D67331BDA699B53 / Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复} / IMPLICIT-1D67331BDA699B53
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-174E36F3415C91F4 / Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足} / IMPLICIT-174E36F3415C91F4
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [— IGNITION-20260816-123-CURRENT-STATE-SYNC-R1-STEP-07 — task-branch projection](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-dadba3221586363a / — IGNITION-20260816-123-CURRENT-STATE-SYNC-R1-STEP-07 — task-branch projection
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [— IGNITION-20260817-124-OS-CONTROL-PLANE-R2-STEP-11 — task-branch projection](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-7ea68fb6a1240eaf / — IGNITION-20260817-124-OS-CONTROL-PLANE-R2-STEP-11 — task-branch projection

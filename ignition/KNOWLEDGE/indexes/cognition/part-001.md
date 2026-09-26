@@ -1389,6 +1389,16 @@
   - 可搜索名称：Agent B — Adversarial benchmark designer proposal / B
   - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/B.md`
   - 依赖：—；被引用：—
+- [Agent B — Synthetic method family proposals](../../ASSET-CARDS.md#asset-hr-157065f9a419db14)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Agent B — Synthetic method family proposals / B
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/B.md`
+  - 依赖：—；被引用：—
+- [Agent C — Adversarial controls proposal](../../ASSET-CARDS.md#asset-hr-477ad07f55e48357)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Agent C — Adversarial controls proposal / C
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/C.md`
+  - 依赖：—；被引用：—
 - [Agent C — Control-equivalence and leakage review](../../ASSET-CARDS.md#asset-hr-7d51714b30f09ade)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Agent C — Control-equivalence and leakage review / C
@@ -1398,6 +1408,11 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Agent D — Measurement and preregistration proposal / D
   - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/D.md`
+  - 依赖：—；被引用：—
+- [Agent E — Condition-neutral preregistration and statistics proposal](../../ASSET-CARDS.md#asset-hr-29e7f865b5a1385c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Agent E — Condition-neutral preregistration and statistics proposal / E
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/E.md`
   - 依赖：—；被引用：—
 - [Agent Platform blast-radius report, Current State projections, Task143 runner](../../../reports/operations/ignition-143-step18-full-regression.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-e505f07dd0615462 / from .adapters.openclaw import OpenClawAdapter
   - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
-- [from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAd](../../../agent_federation/__init__.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-7915d23723117771 / from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAd
-  - 来源：`agent_federation/__init__.py`
-  - 依赖：—；被引用：—
-- [from .live_adapters import LiveAdapterError, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAdapter](../../../agent_federation/live_preflight.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-61a3401d6b1b9e21 / from .live_adapters import LiveAdapterError, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAdapter
-  - 来源：`agent_federation/live_preflight.py`
-  - 依赖：—；被引用：—
-- [from .live_execution import LiveExecutionError, _cost, _safe_summary, _transport_evidence](../../../agent_federation/live_task137.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-f61a8cc767427aaf / from .live_execution import LiveExecutionError, _cost, _safe_summary, _transport_evidence
-  - 来源：`agent_federation/live_task137.py`
   - 依赖：—；被引用：—

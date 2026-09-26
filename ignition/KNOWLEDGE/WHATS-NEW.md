@@ -4,6 +4,267 @@
 
 ## 2026
 
+<a id="change-src-hr-df0673680b15866c"></a>
+### 2026-09-26 · Task220 R0 preregistered outcome rule
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This rule is frozen before any revision, transfer, or evaluator output exists. It applies separately to each of two independent evaluators and uses fixed denominators.
+- **来源：** [preregistered-outcome-rule-r0.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/evaluator/preregistered-outcome-rule-r0.md)
+- **资产卡：** [HR-DF0673680B15866C](./ASSET-CARDS.md#asset-hr-df0673680b15866c)
+
+<a id="change-src-hr-d2c3b20ff57406cc"></a>
+### 2026-09-26 · Neutral revision prompt — Task220 R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** You are given one frozen initial method M0 and one source-bound packet E1 containing observations from a failure or counterexample. Use only the provided M0, E1, and output schema.
+- **来源：** [neutral-revision-prompt.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/revision/neutral-revision-prompt.md)
+- **资产卡：** [HR-D2C3B20FF57406CC](./ASSET-CARDS.md#asset-hr-d2c3b20ff57406cc)
+
+<a id="change-src-hr-cd992fa924fd400d"></a>
+### 2026-09-26 · Neutral transfer prompt — Task220 R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** You are given three held-out case records and a bounded set of method and/or source evidence. Use only the files assigned to this conversation. Apply the supplied method material to each case independently.
+- **来源：** [neutral-transfer-prompt.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/transfer/neutral-transfer-prompt.md)
+- **资产卡：** [HR-CD992FA924FD400D](./ASSET-CARDS.md#asset-hr-cd992fa924fd400d)
+
+<a id="change-src-hr-ca1da12fc46f8d44"></a>
+### 2026-09-26 · FAMILY03 held-out C — refrigerated shipment record
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Case ID: CE-F03-HO-C-R0 Case class: EDGEUNRESOLVEDCASE Data class: fresh synthetic shipment; excluded from M0 validation and E1.
+- **来源：** [C-edge-unresolved.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/heldout/C-edge-unresolved.md)
+- **资产卡：** [HR-CA1DA12FC46F8D44](./ASSET-CARDS.md#asset-hr-ca1da12fc46f8d44)
+
+<a id="change-src-hr-c63a8d788fa21227"></a>
+### 2026-09-26 · IGNITION-20260926-220 — Cognitive Evolution R0 preparation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: design and freeze preparation only. This package does not launch a revision agent, transfer Successor, or Evaluator.
+- **来源：** [README.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/README.md)
+- **资产卡：** [HR-C63A8D788FA21227](./ASSET-CARDS.md#asset-hr-c63a8d788fa21227)
+
+<a id="change-src-hr-c0287df2ab1b6d6f"></a>
+### 2026-09-26 · FAMILY03 — M0 interval-mean cold-chain screen
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Artifact ID: CE-F03-M0-R0 Status: frozen initial-method design; synthetic benchmark material only.
+- **来源：** [m0.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md)
+- **资产卡：** [HR-C0287DF2AB1B6D6F](./ASSET-CARDS.md#asset-hr-c0287df2ab1b6d6f)
+
+<a id="change-src-hr-b0246ccd61089f31"></a>
+### 2026-09-26 · FAMILY03 — E1 observed counterexample packet
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Evidence ID: CE-F03-E1-R0 Evidence class: fresh synthetic cold-chain observations; locators bind trace, interval logger, assay, and custody records.
+- **来源：** [revision-evidence-e1.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md)
+- **资产卡：** [HR-B0246CCD61089F31](./ASSET-CARDS.md#asset-hr-b0246ccd61089f31)
+
+<a id="change-src-hr-a6f2d3f646a5fc96"></a>
+### 2026-09-26 · Task220 §3 — Agent D: preservation and catastrophic-overrevision proposal
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Design three fresh synthetic families. Each family has three held-out cases: A tests correct behavior inside the revised scope, B tests preservation of valid M0 behavior, and C tests whether the system leaves a real ambiguity unresolved. Require an explicit decision on A and B; blanket abstention…
+- **来源：** [D.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/D.md)
+- **资产卡：** [HR-A6F2D3F646A5FC96](./ASSET-CARDS.md#asset-hr-a6f2d3f646a5fc96)
+
+<a id="change-src-hr-83221751438a975f"></a>
+### 2026-09-26 · FAMILY02 — M0 turbidity-to-solids method
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Artifact ID: CE-F02-M0-R0 Status: frozen initial-method design; synthetic benchmark material only.
+- **来源：** [m0.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md)
+- **资产卡：** [HR-83221751438A975F](./ASSET-CARDS.md#asset-hr-83221751438a975f)
+
+<a id="change-src-hr-7b40e26ce16dbce1"></a>
+### 2026-09-26 · Proposal A — Minimal Observable, Bounded Cognitive Evolution Chain
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Scope: Design only. This proposal defines one auditable chain from an existing model snapshot through a revision and one held-out successor use. It does not authorize an experiment or establish general cognitive inheritance.
+- **来源：** [A.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/A.md)
+- **资产卡：** [HR-7B40E26CE16DBCE1](./ASSET-CARDS.md#asset-hr-7b40e26ce16dbce1)
+
+<a id="change-src-hr-76109e51cab21118"></a>
+### 2026-09-26 · FAMILY02 held-out B — sediment sample
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Case ID: CE-F02-HO-B-R0 Case class: PRESERVEDOLDSCOPECASE Data class: fresh synthetic sample; excluded from M0 calibration and E1.
+- **来源：** [B-preserved-old-scope.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/heldout/B-preserved-old-scope.md)
+- **资产卡：** [HR-76109E51CAB21118](./ASSET-CARDS.md#asset-hr-76109e51cab21118)
+
+<a id="change-src-hr-75c5e24f77e95e44"></a>
+### 2026-09-26 · FAMILY01 — M0 canopy-temperature triage method
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Artifact ID: CE-F01-M0-R0 Status: frozen initial-method design; synthetic benchmark material only.
+- **来源：** [m0.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/m0.md)
+- **资产卡：** [HR-75C5E24F77E95E44](./ASSET-CARDS.md#asset-hr-75c5e24f77e95e44)
+
+<a id="change-src-hr-6caf723d016f282b"></a>
+### 2026-09-26 · FAMILY01 — E1 observed counterexample packet
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Evidence ID: CE-F01-E1-R0 Evidence class: fresh synthetic field observations; all IDs below are stable source locators within this packet.
+- **来源：** [revision-evidence-e1.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md)
+- **资产卡：** [HR-6CAF723D016F282B](./ASSET-CARDS.md#asset-hr-6caf723d016f282b)
+
+<a id="change-src-hr-6bf206a2f7f1d3ff"></a>
+### 2026-09-26 · FAMILY01 held-out A — canopy-temperature observation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Case ID: CE-F01-HO-A-R0 Case class: REVISEDBOUNDARYCASE Data class: fresh synthetic field record; not part of M0 validation or E1.
+- **来源：** [A-revised-boundary.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/heldout/A-revised-boundary.md)
+- **资产卡：** [HR-6BF206A2F7F1D3FF](./ASSET-CARDS.md#asset-hr-6bf206a2f7f1d3ff)
+
+<a id="change-src-hr-5b971a8ecab45bca"></a>
+### 2026-09-26 · FAMILY02 held-out C — sediment sample
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Case ID: CE-F02-HO-C-R0 Case class: EDGEUNRESOLVEDCASE Data class: fresh synthetic sample; excluded from M0 calibration and E1.
+- **来源：** [C-edge-unresolved.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/heldout/C-edge-unresolved.md)
+- **资产卡：** [HR-5B971A8ECAB45BCA](./ASSET-CARDS.md#asset-hr-5b971a8ecab45bca)
+
+<a id="change-src-hr-5416e13e3062a16a"></a>
+### 2026-09-26 · FAMILY02 — E1 observed counterexample packet
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Evidence ID: CE-F02-E1-R0 Evidence class: fresh synthetic bench observations; locators identify the raw paired records.
+- **来源：** [revision-evidence-e1.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md)
+- **资产卡：** [HR-5416E13E3062A16A](./ASSET-CARDS.md#asset-hr-5416e13e3062a16a)
+
+<a id="change-src-hr-50d63d730b9318fe"></a>
+### 2026-09-26 · FAMILY03 held-out A — refrigerated shipment record
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Case ID: CE-F03-HO-A-R0 Case class: REVISEDBOUNDARYCASE Data class: fresh synthetic shipment; excluded from M0 validation and E1.
+- **来源：** [A-revised-boundary.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/heldout/A-revised-boundary.md)
+- **资产卡：** [HR-50D63D730B9318FE](./ASSET-CARDS.md#asset-hr-50d63d730b9318fe)
+
+<a id="change-src-hr-50ade7a7ff4ce25d"></a>
+### 2026-09-26 · Architecture question — bounded cognitive evolution R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The observable chain is:
+- **来源：** [ARCHITECTURE-QUESTION.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/ARCHITECTURE-QUESTION.md)
+- **资产卡：** [HR-50ADE7A7FF4CE25D](./ASSET-CARDS.md#asset-hr-50ade7a7ff4ce25d)
+
+<a id="change-src-hr-4e1ed70e4946c75c"></a>
+### 2026-09-26 · Task220 R0 evaluator criteria
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Two independent evaluators later score all frozen revision and transfer records. Each evaluator receives the frozen inputs, outputs, sealed case/revision targets, and this rubric. Condition labels and the condition map remain withheld until both raw score sheets are locked when feasible. Each eva…
+- **来源：** [criteria-r0.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/evaluator/criteria-r0.md)
+- **资产卡：** [HR-4E1ED70E4946C75C](./ASSET-CARDS.md#asset-hr-4e1ed70e4946c75c)
+
+<a id="change-src-hr-48533b326ebedf8f"></a>
+### 2026-09-26 · IGNITION-220 R0 preparation validation
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task220 prepares a bounded synthetic design for studying evidence-triggered method revision and later successor transfer. It has not launched revision agents, transfer successors, or evaluators, and it has not selected a model, runtime, provider, reasoning effort, or speed mode.
+- **来源：** [VALIDATION-REPORT.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/validation/VALIDATION-REPORT.md)
+- **资产卡：** [HR-48533B326EBEDF8F](./ASSET-CARDS.md#asset-hr-48533b326ebedf8f)
+
+<a id="change-src-hr-477ad07f55e48357"></a>
+### 2026-09-26 · Agent C — Adversarial controls proposal
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Claim to test: M1’s revised relation structure improves transfer on held-out cases beyond what a successor can recover from M0, raw failure evidence, or generic reasoning. Improvement must depend on the relevant relation structure.
+- **来源：** [C.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/C.md)
+- **资产卡：** [HR-477AD07F55E48357](./ASSET-CARDS.md#asset-hr-477ad07f55e48357)
+
+<a id="change-src-hr-3ffbee92eb90c603"></a>
+### 2026-09-26 · FAMILY03 held-out B — refrigerated shipment record
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Case ID: CE-F03-HO-B-R0 Case class: PRESERVEDOLDSCOPECASE Data class: fresh synthetic shipment; excluded from M0 validation and E1.
+- **来源：** [B-preserved-old-scope.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/heldout/B-preserved-old-scope.md)
+- **资产卡：** [HR-3FFBEE92EB90C603](./ASSET-CARDS.md#asset-hr-3ffbee92eb90c603)
+
+<a id="change-src-hr-351a57523bc6a9fe"></a>
+### 2026-09-26 · Task220 disagreement register
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The five read-only proposals in multi-agent-proposals/A.md through E.md were returned independently before family synthesis. No proposal author inspected or edited shared repository state, launched an experiment, or saw another proposal before returning its own.
+- **来源：** [disagreement-register.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/disagreement-register.md)
+- **资产卡：** [HR-351A57523BC6A9FE](./ASSET-CARDS.md#asset-hr-351a57523bc6a9fe)
+
+<a id="change-src-hr-2cebf56c229f2d1a"></a>
+### 2026-09-26 · Task219-R2 scientific premise
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task220 treats the following frozen result as its premise:
+- **来源：** [TASK219-SCIENTIFIC-PREMISE.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/TASK219-SCIENTIFIC-PREMISE.md)
+- **资产卡：** [HR-2CEBF56C229F2D1A](./ASSET-CARDS.md#asset-hr-2cebf56c229f2d1a)
+
+<a id="change-src-hr-29e7f865b5a1385c"></a>
+### 2026-09-26 · Agent E — Condition-neutral preregistration and statistics proposal
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Score each output against the same frozen, condition-neutral rubric. Before outputs are generated or shown, adjudicate and seal a case key for every lineage and case: its categorical disposition, required response elements, acceptable bounded variations, preserved scope, forbidden overreactions,…
+- **来源：** [E.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/E.md)
+- **资产卡：** [HR-29E7F865B5A1385C](./ASSET-CARDS.md#asset-hr-29e7f865b5a1385c)
+
+<a id="change-src-hr-157065f9a419db14"></a>
+### 2026-09-26 · Agent B — Synthetic method family proposals
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [B.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/B.md)
+- **资产卡：** [HR-157065F9A419DB14](./ASSET-CARDS.md#asset-hr-157065f9a419db14)
+
+<a id="change-src-hr-0beac99ead040348"></a>
+### 2026-09-26 · FAMILY01 held-out B — canopy-temperature observation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Case ID: CE-F01-HO-B-R0 Case class: PRESERVEDOLDSCOPECASE Data class: fresh synthetic field record; not part of M0 validation or E1.
+- **来源：** [B-preserved-old-scope.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/heldout/B-preserved-old-scope.md)
+- **资产卡：** [HR-0BEAC99EAD040348](./ASSET-CARDS.md#asset-hr-0beac99ead040348)
+
+<a id="change-src-hr-0925a4280f54a5cb"></a>
+### 2026-09-26 · FAMILY02 held-out A — sediment sample
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Case ID: CE-F02-HO-A-R0 Case class: REVISEDBOUNDARYCASE Data class: fresh synthetic sample; excluded from M0 calibration and E1.
+- **来源：** [A-revised-boundary.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/heldout/A-revised-boundary.md)
+- **资产卡：** [HR-0925A4280F54A5CB](./ASSET-CARDS.md#asset-hr-0925a4280f54a5cb)
+
+<a id="change-src-hr-02352d9fbccc87db"></a>
+### 2026-09-26 · FAMILY01 held-out C — canopy-temperature observation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Case ID: CE-F01-HO-C-R0 Case class: EDGEUNRESOLVEDCASE Data class: fresh synthetic field record; not part of M0 validation or E1.
+- **来源：** [C-edge-unresolved.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/heldout/C-edge-unresolved.md)
+- **资产卡：** [HR-02352D9FBCCC87DB](./ASSET-CARDS.md#asset-hr-02352d9fbccc87db)
+
 <a id="change-src-hr-fa12509d4d61d59d"></a>
 ### 2026-09-25 · Control-equivalence note — CASE06 R1
 

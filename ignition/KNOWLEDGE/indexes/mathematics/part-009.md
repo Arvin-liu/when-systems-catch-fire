@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [title: "经典问题差分函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C6C51AEC80D09458 / title: "经典问题差分函数" / IMPLICIT-C6C51AEC80D09458
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-15041674d637e42d / title: "经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [title: "经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例"](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-79CC3712E269007D / title: "经济学弹性守恒 — Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ，维度置换对称→∑αᵢ=1守恒，均等分配αᵢ=1/n是诺特定理特例 / 经济学弹性守恒 - Cobb-Douglas生产函数Y=∏Kᵢ^αᵢ, 维度置换对称 -> ∑αᵢ=1守恒, 均等分配αᵢ=1/n是诺特定理特例" / IMPLICIT-79CC3712E269007D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [title: "结构保守性元定理"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-f31c1f2523a96189 / title: "结构保守性元定理"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [title: "统一健康指标函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A02F11550F365BD5 / title: "统一健康指标函数" / IMPLICIT-A02F11550F365BD5
@@ -2482,25 +2502,5 @@
 - [Within the source-defined scope, 容斥加速跨域标度函数 is adjudicated as RELATION: M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D320 / Within the source-defined scope, 容斥加速跨域标度函数 is adjudicated as RELATION: M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 容斥加速逆转条件函数 is adjudicated as PREDICATE: M7的容斥加速逆转条件：p_max相对下降速率\|α_max\|/p_max必须超过其他pᵢ平均相](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D290 / Within the source-defined scope, 容斥加速逆转条件函数 is adjudicated as PREDICATE: M7的容斥加速逆转条件：p_max相对下降速率\|α_max\|/p_max必须超过其他pᵢ平均相
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 容斥加速饱和函数 is adjudicated as RELATION: M7的a_excl有上界∝n²·σ²/\(4·p_min\)，但系统在达到理论饱和前已进入D332容斥主](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D334 / Within the source-defined scope, 容斥加速饱和函数 is adjudicated as RELATION: M7的a_excl有上界∝n²·σ²/\(4·p_min\)，但系统在达到理论饱和前已进入D332容斥主
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D332；被引用：—
-- [Within the source-defined scope, 容斥干预两步策略函数 is adjudicated as ARGUMENT_SCHEMA: M7的干预策略：A均匀降pᵢ（全面但成本高），B只降p_max（效率∝\(n-1\)·](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D280 / Within the source-defined scope, 容斥干预两步策略函数 is adjudicated as ARGUMENT_SCHEMA: M7的干预策略：A均匀降pᵢ（全面但成本高），B只降p_max（效率∝\(n-1\)·
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 容斥时间权重演化函数 is adjudicated as STATE_TRANSITION: M3的dΦ/dt=Σᵢ αᵢ/\(1-pᵢ\) + Σᵢⱼ d\(pᵢpⱼ\)/dt。早](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D316 / Within the source-defined scope, 容斥时间权重演化函数 is adjudicated as STATE_TRANSITION: M3的dΦ/dt=Σᵢ αᵢ/\(1-pᵢ\) + Σᵢⱼ d\(pᵢpⱼ\)/dt。早
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：—；被引用：—

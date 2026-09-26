@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 757 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 786 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,383 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-220 R0 preparation validation](../reports/evaluations/ignition-220-cognitive-evolution-r0/validation/VALIDATION-REPORT.md)
+
+- **结果 ID：** `HR-48533B326EBEDF8F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：IGNITION-220 R0 preparation validation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task220 prepares a bounded synthetic design for studying evidence-triggered method revision and later successor transfer. It has not launched revision agents, transfer successors, or evaluators, and it has not selected a model, runtime, provider, reasoning effort, or speed mode.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Neutral transfer prompt — Task220 R0](../reports/evaluations/ignition-220-cognitive-evolution-r0/transfer/neutral-transfer-prompt.md)
+
+- **结果 ID：** `HR-CD992FA924FD400D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Neutral transfer prompt — Task220 R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** You are given three held-out case records and a bounded set of method and/or source evidence. Use only the files assigned to this conversation. Apply the supplied method material to each case independently.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Neutral revision prompt — Task220 R0](../reports/evaluations/ignition-220-cognitive-evolution-r0/revision/neutral-revision-prompt.md)
+
+- **结果 ID：** `HR-D2C3B20FF57406CC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Neutral revision prompt — Task220 R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** You are given one frozen initial method M0 and one source-bound packet E1 containing observations from a failure or counterexample. Use only the provided M0, E1, and output schema.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY03 — E1 observed counterexample packet](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md)
+
+- **结果 ID：** `HR-B0246CCD61089F31`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY03 — E1 observed counterexample packet？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Evidence ID: CE-F03-E1-R0 Evidence class: fresh synthetic cold-chain observations; locators bind trace, interval logger, assay, and custody records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY03 — M0 interval-mean cold-chain screen](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md)
+
+- **结果 ID：** `HR-C0287DF2AB1B6D6F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY03 — M0 interval-mean cold-chain screen？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Artifact ID: CE-F03-M0-R0 Status: frozen initial-method design; synthetic benchmark material only.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY03 held-out C — refrigerated shipment record](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/heldout/C-edge-unresolved.md)
+
+- **结果 ID：** `HR-CA1DA12FC46F8D44`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY03 held-out C — refrigerated shipment record？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Case ID: CE-F03-HO-C-R0 Case class: EDGEUNRESOLVEDCASE Data class: fresh synthetic shipment; excluded from M0 validation and E1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY03 held-out B — refrigerated shipment record](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/heldout/B-preserved-old-scope.md)
+
+- **结果 ID：** `HR-3FFBEE92EB90C603`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY03 held-out B — refrigerated shipment record？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Case ID: CE-F03-HO-B-R0 Case class: PRESERVEDOLDSCOPECASE Data class: fresh synthetic shipment; excluded from M0 validation and E1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY03 held-out A — refrigerated shipment record](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/heldout/A-revised-boundary.md)
+
+- **结果 ID：** `HR-50D63D730B9318FE`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY03 held-out A — refrigerated shipment record？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Case ID: CE-F03-HO-A-R0 Case class: REVISEDBOUNDARYCASE Data class: fresh synthetic shipment; excluded from M0 validation and E1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY02 — E1 observed counterexample packet](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md)
+
+- **结果 ID：** `HR-5416E13E3062A16A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY02 — E1 observed counterexample packet？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Evidence ID: CE-F02-E1-R0 Evidence class: fresh synthetic bench observations; locators identify the raw paired records.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY02 — M0 turbidity-to-solids method](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md)
+
+- **结果 ID：** `HR-83221751438A975F`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY02 — M0 turbidity-to-solids method？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Artifact ID: CE-F02-M0-R0 Status: frozen initial-method design; synthetic benchmark material only.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY02 held-out C — sediment sample](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/heldout/C-edge-unresolved.md)
+
+- **结果 ID：** `HR-5B971A8ECAB45BCA`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY02 held-out C — sediment sample？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Case ID: CE-F02-HO-C-R0 Case class: EDGEUNRESOLVEDCASE Data class: fresh synthetic sample; excluded from M0 calibration and E1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY02 held-out B — sediment sample](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/heldout/B-preserved-old-scope.md)
+
+- **结果 ID：** `HR-76109E51CAB21118`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY02 held-out B — sediment sample？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Case ID: CE-F02-HO-B-R0 Case class: PRESERVEDOLDSCOPECASE Data class: fresh synthetic sample; excluded from M0 calibration and E1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY02 held-out A — sediment sample](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/heldout/A-revised-boundary.md)
+
+- **结果 ID：** `HR-0925A4280F54A5CB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY02 held-out A — sediment sample？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Case ID: CE-F02-HO-A-R0 Case class: REVISEDBOUNDARYCASE Data class: fresh synthetic sample; excluded from M0 calibration and E1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY01 — E1 observed counterexample packet](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md)
+
+- **结果 ID：** `HR-6CAF723D016F282B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY01 — E1 observed counterexample packet？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Evidence ID: CE-F01-E1-R0 Evidence class: fresh synthetic field observations; all IDs below are stable source locators within this packet.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY01 — M0 canopy-temperature triage method](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/m0.md)
+
+- **结果 ID：** `HR-75C5E24F77E95E44`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY01 — M0 canopy-temperature triage method？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Artifact ID: CE-F01-M0-R0 Status: frozen initial-method design; synthetic benchmark material only.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY01 held-out C — canopy-temperature observation](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/heldout/C-edge-unresolved.md)
+
+- **结果 ID：** `HR-02352D9FBCCC87DB`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY01 held-out C — canopy-temperature observation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Case ID: CE-F01-HO-C-R0 Case class: EDGEUNRESOLVEDCASE Data class: fresh synthetic field record; not part of M0 validation or E1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY01 held-out B — canopy-temperature observation](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/heldout/B-preserved-old-scope.md)
+
+- **结果 ID：** `HR-0BEAC99EAD040348`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY01 held-out B — canopy-temperature observation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Case ID: CE-F01-HO-B-R0 Case class: PRESERVEDOLDSCOPECASE Data class: fresh synthetic field record; not part of M0 validation or E1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [FAMILY01 held-out A — canopy-temperature observation](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/heldout/A-revised-boundary.md)
+
+- **结果 ID：** `HR-6BF206A2F7F1D3FF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：FAMILY01 held-out A — canopy-temperature observation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Case ID: CE-F01-HO-A-R0 Case class: REVISEDBOUNDARYCASE Data class: fresh synthetic field record; not part of M0 validation or E1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task220 R0 preregistered outcome rule](../reports/evaluations/ignition-220-cognitive-evolution-r0/evaluator/preregistered-outcome-rule-r0.md)
+
+- **结果 ID：** `HR-DF0673680B15866C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Task220 R0 preregistered outcome rule？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This rule is frozen before any revision, transfer, or evaluator output exists. It applies separately to each of two independent evaluators and uses fixed denominators.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task220 R0 evaluator criteria](../reports/evaluations/ignition-220-cognitive-evolution-r0/evaluator/criteria-r0.md)
+
+- **结果 ID：** `HR-4E1ED70E4946C75C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Task220 R0 evaluator criteria？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Two independent evaluators later score all frozen revision and transfer records. Each evaluator receives the frozen inputs, outputs, sealed case/revision targets, and this rubric. Condition labels and the condition map remain withheld until both raw score sheets are locked when feasible. Each eva…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent E — Condition-neutral preregistration and statistics proposal](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/E.md)
+
+- **结果 ID：** `HR-29E7F865B5A1385C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Agent E — Condition-neutral preregistration and statistics proposal？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Score each output against the same frozen, condition-neutral rubric. Before outputs are generated or shown, adjudicate and seal a case key for every lineage and case: its categorical disposition, required response elements, acceptable bounded variations, preserved scope, forbidden overreactions,…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task220 §3 — Agent D: preservation and catastrophic-overrevision proposal](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/D.md)
+
+- **结果 ID：** `HR-A6F2D3F646A5FC96`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Task220 §3 — Agent D: preservation and catastrophic-overrevision proposal？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Design three fresh synthetic families. Each family has three held-out cases: A tests correct behavior inside the revised scope, B tests preservation of valid M0 behavior, and C tests whether the system leaves a real ambiguity unresolved. Require an explicit decision on A and B; blanket abstention…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent C — Adversarial controls proposal](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/C.md)
+
+- **结果 ID：** `HR-477AD07F55E48357`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Agent C — Adversarial controls proposal？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Claim to test: M1’s revised relation structure improves transfer on held-out cases beyond what a successor can recover from M0, raw failure evidence, or generic reasoning. Improvement must depend on the relevant relation structure.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Agent B — Synthetic method family proposals](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/B.md)
+
+- **结果 ID：** `HR-157065F9A419DB14`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Agent B — Synthetic method family proposals？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Proposal A — Minimal Observable, Bounded Cognitive Evolution Chain](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/A.md)
+
+- **结果 ID：** `HR-7B40E26CE16DBCE1`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Proposal A — Minimal Observable, Bounded Cognitive Evolution Chain？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Scope: Design only. This proposal defines one auditable chain from an existing model snapshot through a revision and one held-out successor use. It does not authorize an experiment or establish general cognitive inheritance.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task220 disagreement register](../reports/evaluations/ignition-220-cognitive-evolution-r0/design/disagreement-register.md)
+
+- **结果 ID：** `HR-351A57523BC6A9FE`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Task220 disagreement register？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The five read-only proposals in multi-agent-proposals/A.md through E.md were returned independently before family synthesis. No proposal author inspected or edited shared repository state, launched an experiment, or saw another proposal before returning its own.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task219-R2 scientific premise](../reports/evaluations/ignition-220-cognitive-evolution-r0/TASK219-SCIENTIFIC-PREMISE.md)
+
+- **结果 ID：** `HR-2CEBF56C229F2D1A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Task219-R2 scientific premise？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task220 treats the following frozen result as its premise:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260926-220 — Cognitive Evolution R0 preparation](../reports/evaluations/ignition-220-cognitive-evolution-r0/README.md)
+
+- **结果 ID：** `HR-C63A8D788FA21227`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：IGNITION-20260926-220 — Cognitive Evolution R0 preparation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: design and freeze preparation only. This package does not launch a revision agent, transfer Successor, or Evaluator.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Architecture question — bounded cognitive evolution R0](../reports/evaluations/ignition-220-cognitive-evolution-r0/ARCHITECTURE-QUESTION.md)
+
+- **结果 ID：** `HR-50ADE7A7FF4CE25D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `220-COGNITIVE-EVOLUTION-R0`
+- **问题：** 此来源记录了什么：Architecture question — bounded cognitive evolution R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The observable chain is:
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
