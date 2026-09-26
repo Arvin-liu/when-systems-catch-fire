@@ -1,0 +1,88 @@
+{
+  "schema_version": "ignition-220-preregistered-outcome-rule-r0",
+  "frozen_before_outputs": true,
+  "revision_outputs_present": false,
+  "transfer_outputs_present": false,
+  "evaluator_outputs_present": false,
+  "design": {
+    "families": 3,
+    "revision_replicates_per_family": 2,
+    "lineages": 6,
+    "heldout_cases_per_family": 3,
+    "conditions_per_lineage": 3,
+    "future_transfer_conversations_if_all_revision_outputs_usable": 18,
+    "case_responses_per_condition": 18,
+    "case_condition_responses_total": 54,
+    "denominators_fixed": true
+  },
+  "conditions": ["M0_ONLY", "M0_PLUS_E1", "EVOLVED_M1"],
+  "notation": {
+    "R": "REVISION_VALIDITY_SUCCESS",
+    "E_A": "EVOLVED_M1 TRANSFER_TARGET_SUCCESS for revised-boundary case A",
+    "E_B": "EVOLVED_M1 TRANSFER_TARGET_SUCCESS for preserved-old-scope case B",
+    "E_C": "EVOLVED_M1 TRANSFER_TARGET_SUCCESS for edge-unresolved case C",
+    "O_A": "M0_ONLY TRANSFER_TARGET_SUCCESS for case A",
+    "F_A": "M0_PLUS_E1 TRANSFER_TARGET_SUCCESS for case A",
+    "O_A_and_F_A_mean_control_success_not_error_flags": true
+  },
+  "lineage_endpoints": {
+    "REVISED_BOUNDARY_GAIN": "E_A AND NOT O_A AND NOT F_A",
+    "PRESERVATION_SUCCESS": "E_B",
+    "EDGE_BOUNDARY_SUCCESS": "E_C",
+    "EVOLUTION_CHAIN_SUCCESS": "R AND REVISED_BOUNDARY_GAIN AND PRESERVATION_SUCCESS AND EDGE_BOUNDARY_SUCCESS"
+  },
+  "missing_or_unusable_records": {
+    "silently_omit": false,
+    "replace_or_reconstruct": false,
+    "fixed_lineage_denominator": 6,
+    "unusable_revision_lineage_chain_success": false
+  },
+  "per_evaluator_disposition": {
+    "SUPPORTED": {
+      "all_required": [
+        "REVISION_VALIDITY_SUCCESS >= 5/6",
+        "EVOLUTION_CHAIN_SUCCESS >= 5/6",
+        "each of 3 families has >=1 successful lineage",
+        "at least 2/3 families have both revision replicates successful",
+        "zero UNSUPPORTED_GLOBAL_RETIREMENT errors in successful EVOLVED_M1 lineages",
+        "zero PRESERVED_SCOPE_LOST errors in successful EVOLVED_M1 lineages"
+      ]
+    },
+    "PARTIAL": {
+      "only_if_SUPPORTED_not_met": true,
+      "all_required": [
+        "REVISION_VALIDITY_SUCCESS >= 4/6",
+        "EVOLUTION_CHAIN_SUCCESS >= 3/6",
+        "at least 2/3 families have >=1 successful lineage",
+        "sum(E_A) > sum(O_A) across the six matched lineages",
+        "sum(E_A) > sum(F_A) across the six matched lineages"
+      ]
+    },
+    "NOT_SUPPORTED": {
+      "otherwise": true
+    }
+  },
+  "overall_disposition": {
+    "name": "BOUNDED_COGNITIVE_EVOLUTION_R0",
+    "SUPPORTED": "both evaluators independently assign SUPPORTED",
+    "PARTIAL": "both evaluators independently satisfy all PARTIAL predicates; an evaluator meeting SUPPORTED also satisfies the lower PARTIAL numeric predicates",
+    "NOT_SUPPORTED": "otherwise, including evaluator disagreement that prevents both evaluators reaching the same disposition threshold"
+  },
+  "descriptive_metrics": [
+    "E versus O case-level wins, losses, and ties",
+    "E versus F case-level wins, losses, and ties",
+    "preserved-old-scope successes",
+    "edge-boundary successes",
+    "revision critical-error counts",
+    "transfer critical-error counts",
+    "EVOLUTION_LINEAGE_USE_SUCCESS"
+  ],
+  "statistical_claim": "Descriptive counts only; no population inference or statistical-significance claim.",
+  "claim_ceiling": "Even SUPPORTED is limited to BOUNDED_COGNITIVE_EVOLUTION_R0 for this synthetic protocol.",
+  "revision_agents_launched": 0,
+  "transfer_successors_launched": 0,
+  "evaluators_launched": 0,
+  "runtime_chosen_by_task": false,
+  "r1_authorized": false,
+  "cross_model_transfer_authorized": false
+}
