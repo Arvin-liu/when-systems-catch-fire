@@ -1,0 +1,54 @@
+{
+  "schema_version": "ignition-220-successor-task-manifest-template-r0",
+  "future_task_id": "<OPAQUE_ID_GENERATED_AFTER_REVISION_FREEZE>",
+  "fresh_conversation_required": true,
+  "neutral_prompt_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/transfer/neutral-transfer-prompt.md",
+  "neutral_prompt_sha256": "<SHA256_AFTER_FREEZE>",
+  "output_schema_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/transfer/transfer-output-schema.json",
+  "output_schema_sha256": "<SHA256_AFTER_FREEZE>",
+  "case_order": [
+    "<ONE_CASE_ID>",
+    "<ONE_CASE_ID>",
+    "<ONE_CASE_ID>"
+  ],
+  "common_read_allowlist": [
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/transfer/neutral-transfer-prompt.md",
+      "sha256": "<SHA256_AFTER_FREEZE>"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/transfer/transfer-output-schema.json",
+      "sha256": "<SHA256_AFTER_FREEZE>"
+    },
+    {
+      "path": "<ASSIGNED_HELDOUT_CASE_PATH>",
+      "sha256": "<SHA256>"
+    },
+    {
+      "path": "<ASSIGNED_HELDOUT_CASE_PATH>",
+      "sha256": "<SHA256>"
+    },
+    {
+      "path": "<ASSIGNED_HELDOUT_CASE_PATH>",
+      "sha256": "<SHA256>"
+    }
+  ],
+  "assignment_material_read_allowlist": [
+    {
+      "path": "<ASSIGNED_METHOD_OR_EVIDENCE_INPUT_PATH>",
+      "sha256": "<SHA256>"
+    },
+    {
+      "path": "<ADDITIONAL_ASSIGNED_INPUT_PATH_IF_REQUIRED>",
+      "sha256": "<SHA256>"
+    },
+    {
+      "path": "<OPTIONAL_IDENTITY_OR_PROVENANCE_INPUT_PATH>",
+      "sha256": "<SHA256>"
+    }
+  ],
+  "access_scope": "At packet construction, retain the two prompt/schema entries and exactly three held-out case entries, then flatten only the required non-placeholder assignment inputs into one exact read_allowlist. Only those files are available to this future conversation.",
+  "output_contract": "Return exactly one JSON object conforming to output_schema_path.",
+  "execution_state": "NOT_INSTANTIATED",
+  "output_present": false
+}

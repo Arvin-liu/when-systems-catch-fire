@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ignition-220-transfer-output-r0",
+  "title": "Task220 R0 transfer response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "case_records"],
+  "properties": {
+    "schema_version": {
+      "const": "ignition-220-transfer-output-r0"
+    },
+    "case_records": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "case_id",
+          "visible_action",
+          "scope_and_preconditions",
+          "boundary_respected",
+          "discriminating_observation_or_stop",
+          "uncertainties",
+          "unsupported_claims",
+          "critical_errors"
+        ],
+        "properties": {
+          "case_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "visible_action": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scope_and_preconditions": {
+            "type": "string",
+            "minLength": 1
+          },
+          "boundary_respected": {
+            "type": "boolean"
+          },
+          "discriminating_observation_or_stop": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uncertainties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unsupported_claims": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "critical_errors": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "WRONG_DECISION",
+                "BOUNDARY_VIOLATION",
+                "MISSING_REQUIRED_DISCRIMINATOR",
+                "UNSUPPORTED_SCOPE_EXPANSION",
+                "UNSUPPORTED_GLOBAL_RETIREMENT",
+                "PRESERVED_SCOPE_LOST",
+                "EVIDENCE_INVENTION",
+                "FALSE_LINEAGE",
+                "CLAIMS_EXECUTION_NOT_OBSERVED",
+                "GENERAL_EVOLUTION_CLAIM"
+              ]
+            }
+          },
+          "lineage_use": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["used_relation_ids", "description"],
+            "properties": {
+              "used_relation_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

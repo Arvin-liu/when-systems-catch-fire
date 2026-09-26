@@ -1,0 +1,74 @@
+{
+  "schema_version": "ignition-220-transfer-packet-builder-template-r0",
+  "template_only": true,
+  "instantiate_final_packets": false,
+  "prerequisites": [
+    "six actual revision outputs are present and frozen",
+    "each usable revision output conforms to revision-output-schema.json",
+    "each revision output content hash and its M0/E1 lineage are verified",
+    "the same three held-out case bytes are assigned across matched conditions"
+  ],
+  "input_sets_for_future_custodian": {
+    "M0_ONLY": [
+      "assigned held-out case files",
+      "the exact frozen M0 file"
+    ],
+    "M0_PLUS_E1": [
+      "assigned held-out case files",
+      "the exact frozen M0 file",
+      "the exact raw E1 evidence file; no explicit M1 artifact"
+    ],
+    "EVOLVED_M1": [
+      "assigned held-out case files",
+      "the frozen revision agent M1 output with its lineage",
+      "enough M0 identity and provenance to interpret that lineage"
+    ]
+  },
+  "matched_design": {
+    "families": 3,
+    "revision_replicates_per_family": 2,
+    "assignment_labels_per_lineage": 3,
+    "heldout_cases_per_conversation": 3,
+    "expected_conversations": 18,
+    "same_heldout_case_bytes_across_matched_assignments": true
+  },
+  "runtime_policy": {
+    "selected_by_task220": false,
+    "selection_authority": "external future task owner",
+    "matching": "Use the same externally selected runtime preset across all matched conversations when operationally possible.",
+    "attestation": "Capture actual runtime metadata and an independent verification source where available; missing attestation lowers the claim ceiling.",
+    "mismatch": "Do not silently invalidate a response for runtime mismatch unless a separately frozen future protocol requires it."
+  },
+  "successor_visible_manifest_contract": {
+    "fresh_conversation_required": true,
+    "read_allowlist_is_exact": true,
+    "allowed_visible_material": [
+      "neutral transfer prompt",
+      "transfer output schema",
+      "the three assigned held-out cases",
+      "only the method/evidence inputs listed for that assignment"
+    ],
+    "must_not_include": [
+      "assignment label",
+      "sealed revision target",
+      "sealed transfer target",
+      "evaluation criteria or outcome thresholds",
+      "sibling task IDs or outputs"
+    ],
+    "condition_field_or_condition_name_in_manifest": false
+  },
+  "deterministic_build_order": [
+    "sort by family ID",
+    "preserve the opaque revision-task order in the sealed condition-map template",
+    "emit one opaque future-task manifest for each usable lineage and each of the three matched assignments",
+    "use the frozen case order assigned to that revision task for all three matched assignments",
+    "hash every visible input and reject any unlisted path"
+  ],
+  "failure_policy": "A missing or unusable revision output is not replaced or reconstructed. Record the missing lineage; do not fabricate M1 or held-out output. The final denominator remains six lineages for the preregistered disposition.",
+  "current_state": {
+    "revision_outputs_present": false,
+    "transfer_packets_instantiated": false,
+    "transfer_successors_launched": false
+  },
+  "deterministic_task_id_recipe": "TX- plus the first 12 uppercase hex characters of SHA256 over the UTF-8 string ignition-220-r0|revision_task_id|condition_label|sorted_visible_input_hashes_joined_by_LF. This maps labels to opaque IDs only inside this sealed custodian template."
+}

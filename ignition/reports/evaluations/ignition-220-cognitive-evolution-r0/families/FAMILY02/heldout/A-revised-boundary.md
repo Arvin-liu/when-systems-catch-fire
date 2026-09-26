@@ -6,9 +6,9 @@
 
 ## Observation
 
-A new sample has stable blank-corrected turbidity of 250 NTU (duplicate readings 249 and 251; blank +0.6 NTU). Cell and custody checks pass. The independent composition assay reports mineral grains 22%, organic flocs 45%, and remaining mixed fines. An independently preserved gravimetric aliquot is 213 mg/L. The sample is within the turbidity range recorded by M0.
+A new sample has stable blank-corrected turbidity of 250 NTU (duplicate readings 249 and 251; blank +0.6 NTU). Cell and custody checks pass. The independent composition assay reports mineral grains 22%, organic flocs 45%, and remaining mixed fines. A separate aliquot is reserved for a blind gravimetric reference measurement; no gravimetric result is available in this case record. The sample is within the turbidity range recorded by M0.
 
-Source records: F02-HO-A-TURBIDITY#READINGS; F02-HO-A-COMPOSITION#ASSAY; F02-HO-A-GRAVIMETRY#REFERENCE; F02-HO-A-QC#ALL.
+Source records: F02-HO-A-TURBIDITY#READINGS; F02-HO-A-COMPOSITION#ASSAY; F02-HO-A-QC#ALL.
 
 ## Requested response
 
