@@ -2474,33 +2474,33 @@
   - 可搜索名称：NFC-26e95f29ada730bd / F_退出权验证 **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
+- [FAMILY01 control-dependency proof](../../ASSET-CARDS.md#asset-hr-530097d693882404)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY01 control-dependency proof / control-dependency-proof
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY01/control-dependency-proof.md`
+  - 依赖：—；被引用：—
 - [FAMILY01 — E1 observed counterexample packet](../../ASSET-CARDS.md#asset-hr-6caf723d016f282b)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：FAMILY01 — E1 observed counterexample packet / revision-evidence-e1
   - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md`
+  - 依赖：—；被引用：—
+- [FAMILY02 control-dependency proof](../../ASSET-CARDS.md#asset-hr-a67a6c1dadf6d70b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY02 control-dependency proof / control-dependency-proof
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY02/control-dependency-proof.md`
   - 依赖：—；被引用：—
 - [FAMILY02 — E1 observed counterexample packet](../../ASSET-CARDS.md#asset-hr-5416e13e3062a16a)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：FAMILY02 — E1 observed counterexample packet / revision-evidence-e1
   - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md`
   - 依赖：—；被引用：—
+- [FAMILY03 control-dependency proof](../../ASSET-CARDS.md#asset-hr-c4aae86681e2be4d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY03 control-dependency proof / control-dependency-proof
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY03/control-dependency-proof.md`
+  - 依赖：—；被引用：—
 - [FAMILY03 — E1 observed counterexample packet](../../ASSET-CARDS.md#asset-hr-b0246ccd61089f31)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：FAMILY03 — E1 observed counterexample packet / revision-evidence-e1
   - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md`
-  - 依赖：—；被引用：—
-- [federation dispatch, residual and Current-state gates, release/lifecycle](../../../reports/operations/ignition-138-step13-targeted-regression.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-744440975fd78bda / federation dispatch, residual and Current-state gates, release/lifecycle
-  - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
-  - 依赖：—；被引用：—
-- [final formal main is known, the next Durability/Lifecycle task must be](../../../reports/operations/ignition-126-progress.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-420f0c46fd22ff6d / final formal main is known, the next Durability/Lifecycle task must be
-  - 来源：`reports/operations/ignition-126-progress.md`
-  - 依赖：—；被引用：—
-- [Final-state loss and held-out task accuracy validate selected outputs, without semantic postconditions, independent test](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-5dcbae25a5a0a15c / Final-state loss and held-out task accuracy validate selected outputs, without semantic postconditions, independent test
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
   - 依赖：—；被引用：—

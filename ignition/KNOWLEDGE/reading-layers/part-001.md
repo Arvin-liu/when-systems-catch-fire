@@ -11,6 +11,13 @@
 - 5 分钟：主题：External Agent Interface Audit R1；Task: IGNITION-20260816-122 Audit mode: read-only inventory, local help, and official-source inspection Accessed: 2026-08-16 15:01 Asia/Shanghai Formal baseline: 277ea6c17883d9fe7661a92175a02c3cdfabac9d；主题：Decision boundary；This audit records observable machine surfaces. It does not grant permissions, prove external-agent correctness, import external memory, or make an executor a part of the Ignition OS. No credentials, tokens, cookies, OAuth material, private session databases, or message contents were read. No external configuration was changed, and no package was installed o…；The inventory is the machine record: executor-inventory-r1.json. Its validator is validateexecutorinventory.py.；主题：Repository baseline
 - 完整阅读：[reports/architecture/external-agent-interface-audit-r1.md](../../reports/architecture/external-agent-interface-audit-r1.md)
 
+<a id="reading-hr-00634f83e401ed3f"></a>
+## Repair round 2 — fresh role B M0-only bypass review (PRE-FREEZE / FAILED)
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Role B read only the round-2 F01/F03 proposal and their Task220 M0/E1 sources. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Repair round 2 — fresh role B M0-only bypass review (PRE-FREEZE / FAILED)；Role B read only the round-2 F01/F03 proposal and their Task220 M0/E1 sources.；Role B conclusion: both revised A cases still fail G2 literally. A generic caution is not an M0-licensed rule and does not establish degradation.
+- 完整阅读：[reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-2/B-m0-only-review.md](../../reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-2/B-m0-only-review.md)
+
 <a id="reading-hr-00eff8444211bc60"></a>
 ## IGNITION-20260827-143 Step 04 — 可出版素材盘点
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：Packet reference: PK-36E400FB560F 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：Packet reference: PK-36E400FB560F；Six synthetic case records follow.；Source SHA-256: 5571dbf60194725aa4342bdf1abf9738713a904474e7bb48db128f049c301e4d；主题：CASE01 — Checkpoint export selection；All names, records, dates, and tools are synthetic.；[F01] A packet contains signed document version 3 associated with checkpoint C-17 and a later version 4 correction marked unsigned. [F02] Route Alder's preview lists a signed-document field, signature timestamp, and approval-event reference; it does not list a per-file digest. [F03] Route Birch's preview lists a version sequence and per-file digest; its opti…
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md)
-
-<a id="reading-hr-1125ea8d76940b5f"></a>
-## 下一步认识论能力评估 — IGNITION-20260908-165
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：下一步认识论能力评估 — IGNITION-20260908-165；命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32fb2df 边界：研究只、Draft 只；不改变 Current、canonical、生产运行时、validator 或 Own…；结论：NOVALIDATEDCREATIVEDISCONTINUITYFOUND。本次没有证明跨线程操作器，也没有发现达到高门槛的候选。公共先例搜索没有被触发，因为没有候选越过高门槛；这不等于不存在先例。；剩余事项是：补足 P00 的历史边界、引入真正独立的 proposer/answer-key 分离、验证第三域迁移和删除损失，并在独立授权前保持研究只。不得把本分支推进为 Current、Ready、merge、生产或后续任务。
-- 完整阅读：[docs/governance/next-epistemic-capability-assessment-2026-09-08.md](../../docs/governance/next-epistemic-capability-assessment-2026-09-08.md)

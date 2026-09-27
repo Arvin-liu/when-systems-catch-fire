@@ -1674,6 +1674,11 @@
   - 可搜索名称：NFC-987e1bd60f30a3be / authority_changes: \[External Agent Federation R1\]\(./docs/architecture/external-agent-federation-r1.md\), \[federation inve
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
+- [B — M0-only adversarial review \(repair round 3\)](../../ASSET-CARDS.md#asset-hr-cbacbd9124b8d5e5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：B — M0-only adversarial review \(repair round 3\) / B-m0-only-review
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/B-m0-only-review.md`
+  - 依赖：—；被引用：—
 - [before_digest=_runtime_metadata_digest\(resolved\),](../../../agent_federation/live_transport.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-5413b7aecde95fcb / before_digest=_runtime_metadata_digest\(resolved\),
@@ -1918,6 +1923,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-9ec097f8a2c606b8 / Current path classification is a generated snapshot of the live tree. The final candidate must be read with the Step14 p
   - 来源：`agent-results/IGNITION-20260822-134-result.md`
+  - 依赖：—；被引用：—
+- [D — target-leakage review, repair round 3](../../ASSET-CARDS.md#asset-hr-1cd1491a44cf32f1)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：D — target-leakage review, repair round 3 / D-target-leakage-review
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/D-target-leakage-review.md`
   - 依赖：—；被引用：—
 - [D244（自主意识涌现的临界条件）描述的是 `Ψ = ι × P_exit > 0` 的意识涌现阈值，与「指标化/量化替代价值」无关，二者不同构、无重叠。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -2274,6 +2284,11 @@
   - 可搜索名称：NFC-842f61ce7997cd98 / errors.append\("stop-on-first-validated-completion policy is missing"\)
   - 来源：`agent_federation/executor_admission_contract.py`
   - 依赖：—；被引用：—
+- [Evaluator criteria R0.1](../../ASSET-CARDS.md#asset-hr-6456a1f993004f51)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Evaluator criteria R0.1 / criteria
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/evaluator/criteria.md`
+  - 依赖：—；被引用：—
 - [Every no-change decision includes evidence; green CI alone does not close propagation.](../../../templates/operations/independent-review-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0848a785fbe5e971 / Every no-change decision includes evidence; green CI alone does not close propagation.
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-179ca46127ef3832 / for field in \("validated_completed_work", "pending_work", "allowed_capabilities", "workspace_refs", "acceptance_criteria
   - 来源：`agent_federation/contracts.py`
-  - 依赖：—；被引用：—
-- [for field, values in \(\("pending_work", pending_work\), \("allowed_capabilities", allowed_capabilities\), \("workspace_refs",](../../../agent_federation/approval_handoff.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9a09fb98abc5709d / for field, values in \(\("pending_work", pending_work\), \("allowed_capabilities", allowed_capabilities\), \("workspace_refs",
-  - 来源：`agent_federation/approval_handoff.py`
-  - 依赖：—；被引用：—
-- [for item in raw_artifacts:](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dc21cfca1ca3d67e / for item in raw_artifacts:
-  - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [Fresh-clone current-state, task-lineage, map, facts, geometry, component-profile, Steering adversarial, compile, diff, a](../../../agent-results/IGNITION-20260821-129-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ef3c0f8ec633ad75 / Fresh-clone current-state, task-lineage, map, facts, geometry, component-profile, Steering adversarial, compile, diff, a
-  - 来源：`agent-results/IGNITION-20260821-129-result.md`
   - 依赖：—；被引用：—

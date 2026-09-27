@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [物理大统一路径](../../../data/foundation/adjudications/079-method-audit.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：D137 / 物理大统一路径 / D137 / D134
+  - 来源：`data/foundation/adjudications/079-method-audit.jsonl`
+  - 依赖：D180, D91；被引用：NFC-006430426308f743, NFC-0eab8d1125cf1435, NFC-1c85fa7518efe5a8, NFC-215ab9c84dd6b6c3
+- [物理大统一路径，物理大统一推导、电弱理论碰撞等。 **扩展注释 / Extended Annotation**](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-42a7c1ed8c97bc8f / 物理大统一路径，物理大统一推导、电弱理论碰撞等。 **扩展注释 / Extended Annotation**
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：—；被引用：—
+- [物理存在受三重时间约束： 约束1（逻辑约束·\[D220\]\(docs/zh/functions/items/D220.md\)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·\[D222\]\(docs/zh/functions/](../../../data/math-foundation/function-provenance-ledger.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
+  - 可搜索名称：NFC-166daaaed06561f3 / 物理存在受三重时间约束： 约束1（逻辑约束·\[D220\]\(docs/zh/functions/items/D220.md\)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·\[D222\]\(docs/zh/functions/
+  - 来源：`data/math-foundation/function-provenance-ledger.csv`
+  - 依赖：D220, D222, D224；被引用：—
 - [物理存在必要条件](../../../data/foundation/adjudications/079-method-audit.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `DOWNGRADE_TO_CONJECTURE`
   - 可搜索名称：D218 / 物理存在必要条件 / D218
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-32601a753786c890 / 已迁移的历史函数来源/0297-D261-维度最优平衡函数.md
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：D261；被引用：—
-- [已迁移的历史函数来源/0298-D262-缓冲容量峰值函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-cad40bde10473b2b / 已迁移的历史函数来源/0298-D262-缓冲容量峰值函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D262；被引用：—
-- [已迁移的历史函数来源/0299-D263-正反馈时间常数函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-1a46d61a6e97a1ff / 已迁移的历史函数来源/0299-D263-正反馈时间常数函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D263；被引用：—
-- [已迁移的历史函数来源/0300-D264-良性循环启动阈值函数.md](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-0fc58a5923264699 / 已迁移的历史函数来源/0300-D264-良性循环启动阈值函数.md
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D264；被引用：—

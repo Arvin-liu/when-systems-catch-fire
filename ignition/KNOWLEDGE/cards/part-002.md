@@ -604,6 +604,26 @@
 - **主题：** `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `External Agent Interface Audit R1`, `external-agent-interface-audit-r1`
 
+<a id="asset-hr-00634f83e401ed3f"></a>
+## Repair round 2 — fresh role B M0-only bypass review (PRE-FREEZE / FAILED)
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-00634F83E401ED3F` · [reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-2/B-m0-only-review.md](../../reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-2/B-m0-only-review.md)
+- **为什么产生：** 此来源记录了什么：Repair round 2 — fresh role B M0-only bypass review (PRE-FREEZE / FAILED)？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Role B read only the round-2 F01/F03 proposal and their Task220 M0/E1 sources.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-2/B-m0-only-review.md`, `225-COGNITIVE-EVOLUTION-R0-1`
+- **演化历史：** 2026-09-27: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Repair round 2 — fresh role B M0-only bypass review (PRE-FREEZE / FAILED)`, `B-m0-only-review`
+
 <a id="asset-hr-00eff8444211bc60"></a>
 ## IGNITION-20260827-143 Step 04 — 可出版素材盘点
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260824-138 — Step 11 Obligation Semantics`, `ignition-138-step11-obligation-semantics`
-
-<a id="asset-hr-07eaa526c5114401"></a>
-## 持续自我纠错引擎
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-07EAA526C5114401` · [docs/governance/self-correction-engine.md](../../docs/governance/self-correction-engine.md)
-- **为什么产生：** 此来源记录了什么：持续自我纠错引擎？
-- **当前状态：** `CURRENT_CORRECTION_RECORD`
-- **当前结果：** 本引擎把任务 98—100 的断言治理、函数注册表与证据谱系接到每次知识资产变化上。它自动建立“变化 → 关联断言 → 依赖影响 → 证据链 → 风险规则 → 整改计划 → 人类结果”，但不把自动检测当成数学证明、专家裁决或外部真理。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/self-correction-engine.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `持续自我纠错引擎`, `self-correction-engine`

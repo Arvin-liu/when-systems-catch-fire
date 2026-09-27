@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [federation dispatch, residual and Current-state gates, release/lifecycle](../../../reports/operations/ignition-138-step13-targeted-regression.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-744440975fd78bda / federation dispatch, residual and Current-state gates, release/lifecycle
+  - 来源：`reports/operations/ignition-138-step13-targeted-regression.md`
+  - 依赖：—；被引用：—
+- [final formal main is known, the next Durability/Lifecycle task must be](../../../reports/operations/ignition-126-progress.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-420f0c46fd22ff6d / final formal main is known, the next Durability/Lifecycle task must be
+  - 来源：`reports/operations/ignition-126-progress.md`
+  - 依赖：—；被引用：—
+- [Final-state loss and held-out task accuracy validate selected outputs, without semantic postconditions, independent test](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-5dcbae25a5a0a15c / Final-state loss and held-out task accuracy validate selected outputs, without semantic postconditions, independent test
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
 - [Finite input-output examples are an extensional FunctionSpec, but names, types, contracts, effects and lifecycle fields](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_RESEARCH_HYPOTHESIS`
   - 可搜索名称：NFC-220c28289f8d4561 / Finite input-output examples are an extensional FunctionSpec, but names, types, contracts, effects and lifecycle fields
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-d6fcf2e4a1ab6691 / If upstream objects D_{D465} exist, compose F_{D465}=N\(⊕_{g∈D_{D465}} g\); otherwise treat F_{D465} as an axiom seed.
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D465；被引用：—
-- [If upstream objects D_{D466} exist, compose F_{D466}=N\(⊕_{g∈D_{D466}} g\); otherwise treat F_{D466} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-85c1737c2885eca1 / If upstream objects D_{D466} exist, compose F_{D466}=N\(⊕_{g∈D_{D466}} g\); otherwise treat F_{D466} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D466；被引用：—
-- [If upstream objects D_{D467} exist, compose F_{D467}=N\(⊕_{g∈D_{D467}} g\); otherwise treat F_{D467} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d0acc9bddc009ef3 / If upstream objects D_{D467} exist, compose F_{D467}=N\(⊕_{g∈D_{D467}} g\); otherwise treat F_{D467} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D467；被引用：—
-- [If upstream objects D_{D468} exist, compose F_{D468}=N\(⊕_{g∈D_{D468}} g\); otherwise treat F_{D468} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-284164118fdb63d1 / If upstream objects D_{D468} exist, compose F_{D468}=N\(⊕_{g∈D_{D468}} g\); otherwise treat F_{D468} as an axiom seed.
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D468；被引用：—

@@ -1369,6 +1369,21 @@
   - 可搜索名称：IMPLICIT-AB92BA4DD527D2D4 / F_theory\(d\)=O_d × R_d × E_d × Δ_t × Θ_d × V_d / IMPLICIT-AB92BA4DD527D2D4 / IMPLICIT-09037C50D537ABDA
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
+- [FAMILY01 A — successor-visible case facts](../../ASSET-CARDS.md#asset-hr-bb161d9381019205)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY01 A — successor-visible case facts / A
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY01/cases/A.md`
+  - 依赖：—；被引用：—
+- [FAMILY01 B — successor-visible case facts](../../ASSET-CARDS.md#asset-hr-3100b26f30afbc0c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY01 B — successor-visible case facts / B
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY01/cases/B.md`
+  - 依赖：—；被引用：—
+- [FAMILY01 C — successor-visible case facts](../../ASSET-CARDS.md#asset-hr-852d9aa948ce8a96)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY01 C — successor-visible case facts / C
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY01/cases/C.md`
+  - 依赖：—；被引用：—
 - [FAMILY01 held-out A — canopy-temperature observation](../../ASSET-CARDS.md#asset-hr-6bf206a2f7f1d3ff)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：FAMILY01 held-out A — canopy-temperature observation / A-revised-boundary
@@ -1389,6 +1404,21 @@
   - 可搜索名称：FAMILY01 — M0 canopy-temperature triage method / m0
   - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/m0.md`
   - 依赖：—；被引用：—
+- [FAMILY02 A — successor-visible case facts](../../ASSET-CARDS.md#asset-hr-2c4edeebf6d45682)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY02 A — successor-visible case facts / A
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY02/cases/A.md`
+  - 依赖：—；被引用：—
+- [FAMILY02 B — successor-visible case facts](../../ASSET-CARDS.md#asset-hr-d96929dbe2e3d839)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY02 B — successor-visible case facts / B
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY02/cases/B.md`
+  - 依赖：—；被引用：—
+- [FAMILY02 C — successor-visible case facts](../../ASSET-CARDS.md#asset-hr-89d77c1b54122d12)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY02 C — successor-visible case facts / C
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY02/cases/C.md`
+  - 依赖：—；被引用：—
 - [FAMILY02 held-out A — sediment sample](../../ASSET-CARDS.md#asset-hr-0925a4280f54a5cb)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：FAMILY02 held-out A — sediment sample / A-revised-boundary
@@ -1408,6 +1438,16 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：FAMILY02 — M0 turbidity-to-solids method / m0
   - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md`
+  - 依赖：—；被引用：—
+- [FAMILY03 B — successor-visible case facts](../../ASSET-CARDS.md#asset-hr-97c41b8c17bb696b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY03 B — successor-visible case facts / B
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY03/cases/B.md`
+  - 依赖：—；被引用：—
+- [FAMILY03 C — successor-visible case facts](../../ASSET-CARDS.md#asset-hr-6343f940a3a86c5c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：FAMILY03 C — successor-visible case facts / C
+  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY03/cases/C.md`
   - 依赖：—；被引用：—
 - [FAMILY03 held-out A — refrigerated shipment record](../../ASSET-CARDS.md#asset-hr-50d63d730b9318fe)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -2463,44 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-78a0a495c66b19b3 / live_observation: the canonical projection contains five attempts, zero validated completions, zero unreconciled attempt
   - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-366ea11858254982 / live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [live_observation: the canonical R3 projection contains six attempts, zero validated completions, zero unreconciled attem](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b3b71ba18a43c3f3 / live_observation: the canonical R3 projection contains six attempts, zero validated completions, zero unreconciled attem
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [live_observation: the historical projection remains six attempts, zero validated completions, zero unreconciled attempts](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1d6d404f3a27ec9d / live_observation: the historical projection remains six attempts, zero validated completions, zero unreconciled attempts
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [live_observation: the six-attempt projection remains dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`,](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a832cc9f4e0d994d / live_observation: the six-attempt projection remains dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`,
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [LORAUTER full-text review: validation-backed task representations, task-adapter catalog construction, query-task retriev](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8110b07adbcfd2a2 / LORAUTER full-text review: validation-backed task representations, task-adapter catalog construction, query-task retriev
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-170ED17891544D42 / M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-170ED17891544D42 / IMPLICIT-63FAE8AD62F6660D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-63FAE8AD62F6660D / M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-63FAE8AD62F6660D / IMPLICIT-170ED17891544D42
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-81F4EADAFE7C6FCF / M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-81F4EADAFE7C6FCF / IMPLICIT-170ED17891544D42
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

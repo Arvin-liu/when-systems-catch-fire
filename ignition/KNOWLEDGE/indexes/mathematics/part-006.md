@@ -4,6 +4,21 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D466} exist, compose F_{D466}=N\(⊕_{g∈D_{D466}} g\); otherwise treat F_{D466} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-85c1737c2885eca1 / If upstream objects D_{D466} exist, compose F_{D466}=N\(⊕_{g∈D_{D466}} g\); otherwise treat F_{D466} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D466；被引用：—
+- [If upstream objects D_{D467} exist, compose F_{D467}=N\(⊕_{g∈D_{D467}} g\); otherwise treat F_{D467} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-d0acc9bddc009ef3 / If upstream objects D_{D467} exist, compose F_{D467}=N\(⊕_{g∈D_{D467}} g\); otherwise treat F_{D467} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D467；被引用：—
+- [If upstream objects D_{D468} exist, compose F_{D468}=N\(⊕_{g∈D_{D468}} g\); otherwise treat F_{D468} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-284164118fdb63d1 / If upstream objects D_{D468} exist, compose F_{D468}=N\(⊕_{g∈D_{D468}} g\); otherwise treat F_{D468} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D468；被引用：—
 - [If upstream objects D_{D469} exist, compose F_{D469}=N\(⊕_{g∈D_{D469}} g\); otherwise treat F_{D469} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-67c0cdf4c388abcb / If upstream objects D_{D469} exist, compose F_{D469}=N\(⊕_{g∈D_{D469}} g\); otherwise treat F_{D469} as an axiom seed.
@@ -2489,18 +2504,3 @@
   - 可搜索名称：NFC-7e1adf014978e238 / Object D136 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D136；被引用：—
-- [Object D137 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-792752afc789c0de / Object D137 defines a formal_proposition within the point-fire framework. Core: 中文：物理大统一推导、电弱理论碰撞等。. Annotation: 物理大统一路径
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D137；被引用：—
-- [Object D149 defines a formal_proposition within the point-fire framework. Core: 中文：设计结构让估计不必要 > 估计准确后保守执行。. Annotation:](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-2041370237e9f3a1 / Object D149 defines a formal_proposition within the point-fire framework. Core: 中文：设计结构让估计不必要 > 估计准确后保守执行。. Annotation:
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D149；被引用：—
-- [Object D150 defines a formal_proposition within the point-fire framework. Core: 中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。. Annotation: 倒U](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-d6f434661b21d0a9 / Object D150 defines a formal_proposition within the point-fire framework. Core: 中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。. Annotation: 倒U
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D150, T16；被引用：—
