@@ -321,7 +321,7 @@
 
 <a id="reading-hr-477ad07f55e48357"></a>
 ## Agent C — Adversarial controls proposal
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Claim to test: M1’s revised relation structure improves transfer on held-out cases beyond what a successor can recover from M0, raw failure evidence, or generic reasoning. Improvement must depend on the relevant relation structure. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Agent C — Adversarial controls proposal；Claim to test: M1’s revised relation structure improves transfer on held-out cases beyond what a successor can recover from M0, raw failure evidence, or generic reasoning. Improvement must depend on the relevant relation structure.；主题：Control conditions；Run every held-out case with the same model, task prompt, tools, token budget, and scoring rule. Isolate each run’s context and randomize run order.；M0 alone: frozen M0; no raw failure records or M1.；M0 + raw failure evidence: M0 plus the eligible raw records used to develop M1, in unstructured form. Exclude held-out cases, labels, answers, and target-specific feedback.
 - 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/C.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/C.md)
@@ -349,7 +349,7 @@
 
 <a id="reading-hr-47dcce2e5f42a82a"></a>
 ## CASE02 — Regional cache boundary
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
 - 1 分钟：All names, observations, and systems are synthetic. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：CASE02 — Regional cache boundary；All names, observations, and systems are synthetic.；[F01] Banner revision B-12 is scheduled across five edge regions. [F02] Two regions report B-12 active; three report B-11. [F03] A purge control and a wait-and-probe control are both available. [F04] A preview from one B-12 region shows the new banner, while one B-11 region serves the earlier copy. [F05] The incident asks which operation should be proposed w…
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/facts.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE02/facts.md)

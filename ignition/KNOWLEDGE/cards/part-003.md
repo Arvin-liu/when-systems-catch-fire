@@ -601,7 +601,7 @@
 - **演化历史：** 2026-09-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`
+- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `CASE03 ambiguity proof — R1`, `CASE03-ambiguity-proof`
 
 <a id="asset-hr-1255e91e43370b8e"></a>
@@ -761,7 +761,7 @@
 - **演化历史：** 2026-09-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`
+- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Agent B — Synthetic method family proposals`, `B`
 
 <a id="asset-hr-15d26bfc6734b7d4"></a>

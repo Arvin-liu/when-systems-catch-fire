@@ -1564,6 +1564,11 @@
   - 可搜索名称：Architecture question / ARCHITECTURE-QUESTION
   - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/ARCHITECTURE-QUESTION.md`
   - 依赖：—；被引用：—
+- [Architecture question — bounded cognitive evolution R0](../../ASSET-CARDS.md#asset-hr-50ade7a7ff4ce25d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Architecture question — bounded cognitive evolution R0 / ARCHITECTURE-QUESTION
+  - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/ARCHITECTURE-QUESTION.md`
+  - 依赖：—；被引用：—
 - [are recovery accelerators and never a second truth source.](../../../agent-results/IGNITION-20260820-127-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cd480a73b143ab6b / are recovery accelerators and never a second truth source.
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ef3c0f8ec633ad75 / Fresh-clone current-state, task-lineage, map, facts, geometry, component-profile, Steering adversarial, compile, diff, a
   - 来源：`agent-results/IGNITION-20260821-129-result.md`
-  - 依赖：—；被引用：—
-- [from .adapters.openclaw import OpenClawAdapter](../../../agent_federation/pilots.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e505f07dd0615462 / from .adapters.openclaw import OpenClawAdapter
-  - 来源：`agent_federation/pilots.py`
   - 依赖：—；被引用：—

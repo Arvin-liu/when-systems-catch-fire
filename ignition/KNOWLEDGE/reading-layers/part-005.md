@@ -104,7 +104,7 @@
 
 <a id="reading-hr-4b47f8918982152b"></a>
 ## Step03 — Method History and Broken Controls
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Task198 reuses the Task190 Method-Use Trace R0 schema and validator exactly: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Step03 — Method History and Broken Controls；Task198 reuses the Task190 Method-Use Trace R0 schema and validator exactly:；schema SHA-256: e53532c8338c76d83b72c79edbb3780800d190ce9338c194c7ba2f03eec69e8b；validator SHA-256: 7adcd2c56acb520b26e2f9e126f0ac258ec5f794582e08c0e2c993fcb4f527a5；The method family is method:bounded-replay-contrast-r0. Its history is one synthetic source shared by the three case-specific traces. It defines a bounded, held-input replay and a context-specific discriminating observation; it does not embed a final answer for any case.；Each complete trace contains the exact R0 chain:
 - 完整阅读：[reports/evaluations/ignition-198-replicated-method-use-trial-r0/step03-method-trace-freeze.md](../../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step03-method-trace-freeze.md)
@@ -223,7 +223,7 @@
 
 <a id="reading-hr-50ade7a7ff4ce25d"></a>
 ## Architecture question — bounded cognitive evolution R0
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：The observable chain is: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Architecture question — bounded cognitive evolution R0；主题：Frozen question；Given an initial method M0 and a source-bound failure/counterexample that exposes a boundary defect, can an independent revision agent produce a bounded M1 that (a) changes only what the evidence licenses, (b) preserves unaffected M0 scope, (c) records explicit M0→evidence→M1 lineage, and (d) enables a fresh successor to make better held-out decisions than M…；The observable chain is:；M0 → actual evidence/counterexample → revision operation → M1 → fresh successor use → held-out outcome；This separates four questions:
 - 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/ARCHITECTURE-QUESTION.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/ARCHITECTURE-QUESTION.md)
@@ -300,7 +300,7 @@
 
 <a id="reading-hr-5416e13e3062a16a"></a>
 ## FAMILY02 — E1 observed counterexample packet
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Evidence ID: CE-F02-E1-R0 Evidence class: fresh synthetic bench observations; locators identify the raw paired records. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：FAMILY02 — E1 observed counterexample packet；Evidence ID: CE-F02-E1-R0 Evidence class: fresh synthetic bench observations; locators identify the raw paired records.；主题：Capture and custody record；The fresh set was collected with the same nephelometer lot and cell protocol as M0. Each turbidity value is paired with an independent constant-weight gravimetric solids measurement. Particle composition was measured before gravimetry by an independent particle-size and organic-floc assay. Source sets are F02-E1-TURBIDITY-LOG, F02-E1-GRAVIMETRY-LOG, F02-E1-C…；主题：Exact observations；The first three rows are new mineral-dominant replicates on which M0 remains within ±12 mg/L. Rows OBS-04 through OBS-06 have stable replicate measurements and gravimetric results well below M0 estimates at three concentrations. OBS-07 lies between the first two measured composition patterns. OBS-08 has aliquot-dependent composition and a gravimetric duplica…
 - 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md)

@@ -741,7 +741,7 @@
 - **演化历史：** 2026-09-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`
+- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Frozen read-only proposal A — endpoint validity`, `A-endpoint`
 
 <a id="asset-hr-04914b1570918ae6"></a>
@@ -801,7 +801,7 @@
 - **演化历史：** 2026-09-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`
+- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Agent D — Measurement and preregistration proposal`, `D`
 
 <a id="asset-hr-04e3c04b5c9de706"></a>

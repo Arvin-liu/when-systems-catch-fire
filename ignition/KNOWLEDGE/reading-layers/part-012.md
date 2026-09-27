@@ -6,7 +6,7 @@
 
 <a id="reading-hr-b0246ccd61089f31"></a>
 ## FAMILY03 — E1 observed counterexample packet
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Evidence ID: CE-F03-E1-R0 Evidence class: fresh synthetic cold-chain observations; locators bind trace, interval logger, assay, and custody records. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：FAMILY03 — E1 observed counterexample packet；Evidence ID: CE-F03-E1-R0 Evidence class: fresh synthetic cold-chain observations; locators bind trace, interval logger, assay, and custody records.；主题：Capture and custody record；Six shipments were observed with independently calibrated 15-minute shipment loggers and a second one-minute trace logger at the same product location. Clocks were aligned to within 40 seconds; calibration checks were within ±0.15 °C; seal and custody logs had no gaps. Retained-sample activity assays were run in duplicate by a lab blind to the logger summari…；The fictional registry identifies formulation groups by their ordinary shipment and handling records. Group S had prior continuous-profile validation in F03-M0-STABILITY-VALIDATION; group P is a separately documented formulation with a different stability response. The ID is not an assignment label for future tasks.；主题：Exact observations
 - 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md)

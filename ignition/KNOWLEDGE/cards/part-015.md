@@ -24,6 +24,26 @@
 - **主题：** `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Strong-term audit`, `strong-term-audit-20260712`
 
+<a id="asset-hr-cceca3d5e7f0bad6"></a>
+## Task225 R0.1 repaired pre-output design gate
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-CCECA3D5E7F0BAD6` · [reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/ROUND-3-ASSESSMENT.md](../../reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/ROUND-3-ASSESSMENT.md)
+- **为什么产生：** Did the repaired design satisfy G1–G4 before the R0.1 trial?
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Repair round 3 passed all four case-validity gates in each of three families after fresh A/B/C/D review. The record preserves the earlier pre-freeze failure and does not report experimental or evaluator results.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and pre-output design status only; no experimental, causal, capability, truth, or lifecycle upgrade.
+- **未建立：** No revision, transfer, or evaluator output existed at this design-gate stage. Exact-head CI and the bounded R0.1 experiment remain separate evidence.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/ROUND-3-ASSESSMENT.md`, `IGNITION-20260927-225-R0.1`
+- **演化历史：** 2026-09-27: source first appears in repository history；Fresh four-role review in the final authorized repair round found that every family satisfies the fixed four-part pre-freeze design gate. This is a design-gate record only.
+- **最近变化：** Fresh four-role review in the final authorized repair round found that every family satisfies the fixed four-part pre-freeze design gate. This is a design-gate record only.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Task225 R0.1 repaired pre-output design gate`, `ROUND-3-ASSESSMENT`
+
 <a id="asset-hr-cd008d2b8134b963"></a>
 ## 点火 Operation-specific Playbooks R1
 
@@ -61,7 +81,7 @@
 - **演化历史：** 2026-09-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Neutral transfer prompt — Task220 R0`, `neutral-transfer-prompt`
 
 <a id="asset-hr-cda7771b389c6cec"></a>
@@ -381,7 +401,7 @@
 - **演化历史：** 2026-09-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`
+- **主题：** `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Neutral revision prompt — Task220 R0`, `neutral-revision-prompt`
 
 <a id="asset-hr-d2f7959438110a91"></a>
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260828-144 Step 10 — minimum production state machine`, `ignition-144-step10-production-state-machine`
-
-<a id="asset-hr-dc0c745159dd31db"></a>
-## 比刀剑更持久的，是共享观念
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-DC0C745159DD31DB` · [新故事/0001-S1-比刀剑更持久的，是共享观念.md](../../%E6%96%B0%E6%95%85%E4%BA%8B/0001-S1-%E6%AF%94%E5%88%80%E5%89%91%E6%9B%B4%E6%8C%81%E4%B9%85%E7%9A%84%EF%BC%8C%E6%98%AF%E5%85%B1%E4%BA%AB%E8%A7%82%E5%BF%B5.md)
-- **为什么产生：** 此来源记录了什么：比刀剑更持久的，是共享观念？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** --- kind: "story" seq: 1 id: "S1" title: "比刀剑更持久的，是共享观念" source: "PRIVATE_PROVENANCE_WITHHELD" derivedfrom: "PRIVATE_PROVENANCE_WITHHELD
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** `D585`, `D586`, `D587`, `D588`, `D589`
-- **来源与证据：** `新故事/0001-S1-比刀剑更持久的，是共享观念.md`, `0001-S1`
-- **演化历史：** 2026-07-06: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `比刀剑更持久的，是共享观念`, `0001-S1-比刀剑更持久的，是共享观念`

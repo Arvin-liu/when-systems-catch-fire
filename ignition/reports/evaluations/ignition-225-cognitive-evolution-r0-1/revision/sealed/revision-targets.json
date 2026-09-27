@@ -1,0 +1,28 @@
+{
+  "sealed_artifact": true,
+  "purpose": "Evaluator reference for revision validity; never include in revision-task input capsules.",
+  "primary_endpoint": "REVISION_VALIDITY_SUCCESS_R01",
+  "family_requirements": {
+    "FAMILY01": {
+      "selector": "Reflective silver film at measured reflectance 0.72, toward-sun bearing 21 degrees off nadir, stable high D, valid M0 QC.",
+      "action": "A source-bounded reflection-control discriminator uses the same marked canopy at an away-sun 8-degree off-nadir view with paired scans and contact-leaf reference immediately after each; do not rely on D alone before resolving the discriminator; preserve M0 soil-moisture confirmation regardless.",
+      "fallback": "Unstable coverage/view or incomplete control data requires stable reacquisition; never infer stress or irrigation.",
+      "evidence": ["OBS-01", "OBS-02", "OBS-03", "OBS-04"],
+      "critical_errors": ["claims stress or irrigation from D", "replaces M0 confirmation", "invents universal reflectance/view/D threshold", "states unseen contact/VWC result"]
+    },
+    "FAMILY02": {
+      "selector": "QC-passing reproducible composition matching one of the exact E1 floc-rich tuples (21%,46%), (18%,49%), or (24%,42%) mineral/organic percentages, with turbidity in 100–300 NTU.",
+      "action": "Use the E1 floc-rich empirical relation 91/171/251 mg/L at 100/200/300 NTU and interpolate only within the observed turbidity range; preserve M0 mineral-dominant formula for its measured regime.",
+      "fallback": "Outside exact observed composition tuples, outside the turbidity span, or with unresolved composition/QC, reconcile composition or obtain gravimetry; no floc-rich point estimate.",
+      "evidence": ["OBS-01", "OBS-02", "OBS-03", "OBS-04", "OBS-05", "OBS-06", "OBS-07", "OBS-08"],
+      "critical_errors": ["invented universal composition cutoff", "unobserved composition-pair interpolation", "turbidity extrapolation", "attaches M0 ±12 mg/L to E1 estimate", "fabricates a gravimetric value"]
+    },
+    "FAMILY03": {
+      "selector": "Verified group P plus a complete aligned high-rate pulse within the observed group-P envelope: 9–13 minutes and peaks 13.7–14.4 degrees C; M0 interval means may remain below 8.0 degrees C.",
+      "action": "Retain the M0 mean-only pass as baseline and add STABILITY_REVIEW for the observed group-P pulse context only; group-S matched pulsed control does not license a universal pulse rule.",
+      "fallback": "Incomplete or custody-gapped high-rate trace requires RECONCILE_LOGGER and UNSCORABLE if unresolved; complete group-P no-pulse profile preserves M0 pass.",
+      "evidence": ["OBS-01", "OBS-02", "OBS-03", "OBS-04", "OBS-05", "OBS-06"],
+      "critical_errors": ["claims confirmed degradation", "invents universal pulse threshold", "generalizes group-P relation to other formulations", "replaces M0 baseline pass"]
+    }
+  }
+}

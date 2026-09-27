@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:task225:r0.1:revision.schema",
+  "title": "Task225 R0.1 bounded revision output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["family_id", "method_name", "operational_policy"],
+  "properties": {
+    "family_id": {"enum": ["FAMILY01", "FAMILY02", "FAMILY03"]},
+    "method_name": {"type": "string", "minLength": 1},
+    "operational_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "selector_inputs",
+        "applicability_rule",
+        "action_mapping",
+        "preserved_rule_ids",
+        "unresolved_or_fallback_rule",
+        "stop_conditions",
+        "evidence_provenance",
+        "scope_ceiling"
+      ],
+      "properties": {
+        "selector_inputs": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+        "applicability_rule": {"type": "string", "minLength": 1},
+        "action_mapping": {"type": "string", "minLength": 1},
+        "preserved_rule_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "unresolved_or_fallback_rule": {"type": "string", "minLength": 1},
+        "stop_conditions": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+        "evidence_provenance": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+        "scope_ceiling": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

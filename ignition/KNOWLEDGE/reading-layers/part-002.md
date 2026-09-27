@@ -6,7 +6,7 @@
 
 <a id="reading-hr-11f58a3d336fc97e"></a>
 ## CASE03 ambiguity proof — R1
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - 1 分钟：FACTS and both byte-identical atom blocks record QUEUED, a lost receipt, no terminal status, an immutable non-duplicating key, and two available controls. LINKLESS retains R01 and R03–R05. Those relations identify the request, expose possible query statuses, preserve the key identity, and record… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：CASE03 ambiguity proof — R1；主题：Evidence before the cut relation；FACTS and both byte-identical atom blocks record QUEUED, a lost receipt, no terminal status, an immutable non-duplicating key, and two available controls. LINKLESS retains R01 and R03–R05. Those relations identify the request, expose possible query statuses, preserve the key identity, and record that no follow-up occurred; they do not establish which next op…；主题：Two materially different licensed actions；Query status under RQ-18 before any further operation.；Resubmit using RQ-18 to retrieve or reconcile the existing idempotent request.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-ambiguity-proof.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-ambiguity-proof.md)
@@ -62,7 +62,7 @@
 
 <a id="reading-hr-157065f9a419db14"></a>
 ## Agent B — Synthetic method family proposals
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Agent B — Synthetic method family proposals；主题：B1. Narrow the surface-condition boundary for canopy temperature；M0 premise: A calibrated leaf-temperature method can estimate plant water stress across the covered field, regardless of ground surface.；E1 evidence shape: Paired measurements show that reflective ground covering biases the thermal reading under some viewing conditions. Independent plant-water indicators support the method’s results in ordinary plots, while controls isolate the discrepancy to the reflective-surface setup.；Licensed operation / preserved scope: Narrow the thermal method’s applicability for the affected surface and measurement conditions. Preserve its use in validated setups and keep unrelated calibration and decision steps intact.；Tempting overreaction: Discard all thermal measurements, or treat the discrepancy as evidence that the entire stress method is invalid.
 - 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/B.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/design/multi-agent-proposals/B.md)
@@ -237,7 +237,7 @@
 
 <a id="reading-hr-23214f941beb27c8"></a>
 ## Task198 Method Family History — bounded replay contrast
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - 1 分钟：This is a task-local synthetic method-family history for the replicated preparation. It reuses Method-Use Trace R0; it is not a new schema, registry, ontology, capability claim, or causal model. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Task198 Method Family History — bounded replay contrast；This is a task-local synthetic method-family history for the replicated preparation. It reuses Method-Use Trace R0; it is not a new schema, registry, ontology, capability claim, or causal model.；method:bounded-replay-contrast-r0 is a bounded probe that holds a synthetic input constant, resets the local state when the case permits it, and compares a predeclared discriminating observation across two local explanations. The probe is useful only when the observation can be recorded without importing external facts.；主题：Selection history；The candidate is selected when a case contains a repeated or repeatable local input and two plausible local explanations that can be separated by a bounded observation. A single snapshot explanation and a wording-only template are alternatives, not substitutes for a recorded replay. The selection preserves unknowns when the discriminating measurement is abse…；主题：Context constraints
 - 完整阅读：[reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-family/method-family-history.md](../../reports/evaluations/ignition-198-replicated-method-use-trial-r0/method-family/method-family-history.md)

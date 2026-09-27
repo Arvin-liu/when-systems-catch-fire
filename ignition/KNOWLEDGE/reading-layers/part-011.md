@@ -41,7 +41,7 @@
 
 <a id="reading-hr-a430210134de8964"></a>
 ## CASE06 ambiguity proof — R1
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - 1 分钟：FACTS and both byte-identical atom blocks record Q and D, current identifier/token/mismatch fields, separate historical timing cohorts without head-to-head comparison, and no completed check-in. LINKLESS retains R01–R03 and R05. The cohort records have no entry-category or procedure assignment; t… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：CASE06 ambiguity proof — R1；主题：Evidence before the cut relation；FACTS and both byte-identical atom blocks record Q and D, current identifier/token/mismatch fields, separate historical timing cohorts without head-to-head comparison, and no completed check-in. LINKLESS retains R01–R03 and R05. The cohort records have no entry-category or procedure assignment; the remaining relations preserve the cohort boundary, avoid a un…；主题：Two materially different licensed actions；Use Q for every current entry with a token and leave other entries for later review.；Send every current name through D for a roster-evidence note before check-in.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE06-ambiguity-proof.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE06-ambiguity-proof.md)
@@ -125,7 +125,7 @@
 
 <a id="reading-hr-a738be8177f4e66f"></a>
 ## Frozen read-only proposal B — target leakage
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Review basis: all six METHOD and LINKLESS artifacts at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Frozen read-only proposal B — target leakage；Review basis: all six METHOD and LINKLESS artifacts at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run.；All six LINKLESS files say their relation field is absent while retaining four explicit relation rows. In addition, their atoms state or strongly imply the target. Removing one formal edge therefore does not hide the target.；For every case, METHOD and LINKLESS need byte-identical atom blocks, and LINKLESS must not contain the removed relation under another ID, prose paraphrase, or target-bearing atom.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/B-leakage.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/B-leakage.md)
@@ -153,7 +153,7 @@
 
 <a id="reading-hr-a8a027e08f80e147"></a>
 ## Task216 owner-adjudication input
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：The Task217 command declares these fixed inputs for this task: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Task216 owner-adjudication input；主题：Command-provided scientific adjudication；The Task217 command declares these fixed inputs for this task:；PROMPTNEUTRALSKILLMETHODDISENTANGLEMENT = PARTIAL；PROMPTNEUTRALCONDITIONASSOCIATION = OBSERVED；METHODSPECIFICDECISIONADVANTAGE = NOTESTABLISHED
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/TASK216-OWNER-ADJUDICATION-INPUT.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/TASK216-OWNER-ADJUDICATION-INPUT.md)
@@ -244,7 +244,7 @@
 
 <a id="reading-hr-ab85108cb77a38c2"></a>
 ## CASE05 ambiguity proof — R1
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - 1 分钟：FACTS and both byte-identical atom blocks give two grouping procedures, a prior cross-access event whose raw record omits the grouping key and procedure version, a present request containing two signatory classes, and no selected procedure or output. LINKLESS retains R02–R05: version chronology,… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：CASE05 ambiguity proof — R1；主题：Evidence before the cut relation；FACTS and both byte-identical atom blocks give two grouping procedures, a prior cross-access event whose raw record omits the grouping key and procedure version, a present request containing two signatory classes, and no selected procedure or output. LINKLESS retains R02–R05: version chronology, current-shape fields, verification fields, and execution status…；主题：Two materially different licensed actions；Propose V0 for the request and verify the output labels.；Propose V1 for the request and verify that output groups preserve signatory classes.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE05-ambiguity-proof.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE05-ambiguity-proof.md)

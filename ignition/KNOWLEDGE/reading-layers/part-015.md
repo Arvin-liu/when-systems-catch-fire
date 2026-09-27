@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-e7ceb44d380bbb46"></a>
+## IGNITION-20260827-143 Step 19 — Terminality and publication boundary
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Task143 is terminal as COMPLETEDWITHOPENOBLIGATIONS. Its formal scope is complete after the phase closure, three complete article manuscripts, Book Project R1, two mature samples, canonical publication integration, Current State synchronization and the natural full regression. The independent LIV… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-143 Step 19 — Terminality and publication boundary；Task143 is terminal as COMPLETEDWITHOPENOBLIGATIONS. Its formal scope is complete after the phase closure, three complete article manuscripts, Book Project R1, two mature samples, canonical publication integration, Current State synchronization and the natural full regression. The independent LIVEEXTERNALINVOCATION obligation remains OPEN / OWNERDEFERRED and…；The architecture/executor phase remains frozen on the Task142 baseline. No Gemini, Hermes, OpenClaw or Codex qualification, process, inference, install, auth action or live attempt was started in Task143. The six historical live attempts, zero validated completions, zero unreconciled records and two observation-incomplete records remain preserved.；Publication production is complete at the existing Results Book entrypoint: three substantive articles, Book Project R1 and two polished book samples are registered there. Article B preserves the D600/M3 model as an indirect-source, formalization-incomplete candidate; none of the manuscripts upgrades a repository-local result into external truth.；The exact Step18 candidate natural regression passed 1272 tests, 0 failures, 0 errors and 0 skips, with natural completion and clean before/after trees. The four natural attempts, including the earlier 29, 6 and 1 failure runs, remain retained in the Step18 receipt. Formal main publication is still an observation-time remote-ref transaction: this formal repo…；Machine evidence: step19-terminality.json.
+- 完整阅读：[reports/operations/ignition-143-step19-terminality.md](../../reports/operations/ignition-143-step19-terminality.md)
+
 <a id="reading-hr-e7d18e3a634ad513"></a>
 ## Governance report: IGNITION-20260907-161
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -97,7 +104,7 @@
 
 <a id="reading-hr-ebb1fa6b2f55aaaf"></a>
 ## Agent A — Architecture alignment proposal
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Read-only proposal. No repository files were changed. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Agent A — Architecture alignment proposal；Read-only proposal. No repository files were changed.；For bounded synthetic cases, a source-linked complete method trace is needed to justify method-specific selection, use, outcome, and revision claims. A local procedural skill can support an action where its preconditions hold but carries no method lineage. An incomplete trace must remain bounded nonapplication or unknown. This tests dependence for warranted…；Representation: Cognitive IR R0 has METHOD but no SKILL. Task207's local procedural-skill schema cleanly separates local steps, preconditions, stop conditions, and observable fields from selection rationale and history. Preserve source hashes, locators, uncertainty, and claim boundaries.；Cognitive Method: test whether a trace reconstructs context-gated selection and use. The R0 method slots are observable artifact records, not hidden reasoning traces.；Cognitive Evolution: connect anomaly or failure and reframing to a revised representation/method, independent evaluation, disposition, and migration lineage. A code or text diff alone does not establish evolution.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/A.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/A.md)
@@ -346,10 +353,3 @@
 - 1 分钟：Status: NOTRUNSTAGEASTOP. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Fixed-feature versus mutable-basis comparison — Task163；Status: NOTRUNSTAGEASTOP.；The F0 fixed-feature baseline and M1 mutable-basis pipeline were not compared because M1 did not qualify on the required historical replay gate. It would be invalid to infer generator lock-in from a comparison involving an unqualified operator.；The run therefore contains no result for cross-book residual compression, fresh-holdout causal reconstruction, question/falsifier yield, compile-away rate, local patch burden, complexity, or permutation stability. The Stage B comparison file is a stop sentinel, not a zero score.
 - 完整阅读：[docs/governance/fixed-vs-mutable-generator-comparison-2026-09-07.md](../../docs/governance/fixed-vs-mutable-generator-comparison-2026-09-07.md)
-
-<a id="reading-hr-fcbaa498cbeb783c"></a>
-## 080 Resume Instructions
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：080 Resume Instructions；branch: records/ignition-080-full-semantic-adjudication-20260713；status: PARTIALRESUMABLESOURCETEXTADJUDICATION；nextpendingstableid: T13；nextpendingbatch: 2；queuefile: data/foundation/work-queues/080-semantic-review-queue.jsonl
-- 完整阅读：[reports/foundation-architecture/080-resume-instructions-20260713.md](../../reports/foundation-architecture/080-resume-instructions-20260713.md)

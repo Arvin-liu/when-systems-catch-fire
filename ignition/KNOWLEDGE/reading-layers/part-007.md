@@ -6,7 +6,7 @@
 
 <a id="reading-hr-67c573b4578ae30a"></a>
 ## Evaluation evidence isolation / fixed point (Step07)
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Because Task206 Markdown falls under the reports human-results source root, human-results may carry it as a navigation projection, and Knowledge Experience isolates it by reusing the existing exact-path excludedgeneratedresultsources list. Six exact paths were appended; no wide-prefix exclusion w… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Evaluation evidence isolation / fixed point (Step07)；主题：Typing and path accounting；34 Task206 tracked paths, 34 classified EVALUATIONEVIDENCE, 0 in any other category (official repository-path-classification generator).；4926 tracked paths, 4926 manifest rows, 0 unresolved / duplicate / stale.；Six frozen bundles copied byte-for-byte; no user absolute path is committed.；主题：No automatic Foundation candidate
 - 完整阅读：[reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/evaluation-evidence-isolation.md](../../reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/evaluation-evidence-isolation.md)
@@ -55,7 +55,7 @@
 
 <a id="reading-hr-696937f472ec1c98"></a>
 ## Method-Use Trace R0
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Step01 found that existing R0, Cognitive IR, Transition, provenance, observation, failure, and self-correction contracts carry the source material but do not provide a reconstructable, ordered candidate-to-use-to-revision event chain. This file defines one task-local adapter surface. It is not a… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Method-Use Trace R0；Step01 found that existing R0, Cognitive IR, Transition, provenance, observation, failure, and self-correction contracts carry the source material but do not provide a reconstructable, ordered candidate-to-use-to-revision event chain. This file defines one task-local adapter surface. It is not a Method Registry.；The adapter does not alter or replace any existing authority-bearing schema. It adds no global relation, no universal method ontology, no second provenance service, and no parallel lifecycle state machine.；Every valid trace has exactly six ordered segments:；METHODCANDIDATE: candidate method identity and source fingerprint.；SELECTIONRATIONALE: why the candidate was selected and which alternatives
 - 完整阅读：[reports/evaluations/ignition-190-method-use-trace-r0/method-use-trace-r0.md](../../reports/evaluations/ignition-190-method-use-trace-r0/method-use-trace-r0.md)
@@ -132,7 +132,7 @@
 
 <a id="reading-hr-6caf723d016f282b"></a>
 ## FAMILY01 — E1 observed counterexample packet
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Evidence ID: CE-F01-E1-R0 Evidence class: fresh synthetic field observations; all IDs below are stable source locators within this packet. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：FAMILY01 — E1 observed counterexample packet；Evidence ID: CE-F01-E1-R0 Evidence class: fresh synthetic field observations; all IDs below are stable source locators within this packet.；主题：Capture and custody record；The six paired records were collected in one synthetic field campaign using the same camera, blackbody check (maximum error 0.1 °C), shielded air sensor, canopy mask procedure, and root-zone probes. Contact-leaf readings were taken immediately after each scan. A second technician independently recorded ground cover and camera bearing. Source record set: F01-…；主题：Exact observations；All six records passed camera/air-sensor quality checks and were within M0 ambient-temperature and canopy-height limits. The site VWC review threshold was 16%. Raw values are also present in F01-E1-CAMPAIGN-LOG rows keyed by the locators above.
 - 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md)
@@ -167,7 +167,7 @@
 
 <a id="reading-hr-6ffc16c239f47e05"></a>
 ## IGNITION-20260925-217 — Method Dependency Benchmark R0
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Status: preparation only. This subtree freezes an architecture-relevant benchmark design. It contains no Successor outputs and no evaluator scores. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260925-217 — Method Dependency Benchmark R0；Status: preparation only. This subtree freezes an architecture-relevant benchmark design. It contains no Successor outputs and no evaluator scores.；主题：Authority and anchors；Command: Arvin-liu/1111, agent-commands/IGNITION-20260925-217-METHOD-DEPENDENCY-BENCHMARK-R0.md, blob e142fd490cc73d8bf2a3c6a539e319124434012c.；Formal starting head: 24198effb2e2d94c19fe212244bbfcf47f995b2a, Task207 PR #233 head; branch work/IGNITION-20260925-217-method-dependency-benchmark-r0.；Owner evidence source: Arvin-liu/1111 PR #116 head 3cdbb8a8c8d41cec1af10aa63e85cacfb78b5818.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/README.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/README.md)

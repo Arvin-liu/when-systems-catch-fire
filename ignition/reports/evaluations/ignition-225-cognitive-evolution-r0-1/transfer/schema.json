@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:task225:r0.1:transfer-response.schema",
+  "title": "Task225 R0.1 transfer response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["responses"],
+  "properties": {
+    "responses": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["A", "B", "C"],
+      "properties": {
+        "A": {"$ref": "#/$defs/case_response"},
+        "B": {"$ref": "#/$defs/case_response"},
+        "C": {"$ref": "#/$defs/case_response"}
+      }
+    }
+  },
+  "$defs": {
+    "case_response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "rationale", "evidence_provenance"],
+      "properties": {
+        "action": {"type": "string", "minLength": 1},
+        "reported_value": {"type": ["number", "string", "null"]},
+        "rationale": {"type": "string", "minLength": 1},
+        "evidence_provenance": {"type": "array", "items": {"type": "string"}}
+      }
+    }
+  }
+}

@@ -34,7 +34,7 @@
 
 <a id="reading-hr-c63a8d788fa21227"></a>
 ## IGNITION-20260926-220 — Cognitive Evolution R0 preparation
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Status: design and freeze preparation only. This package does not launch a revision agent, transfer Successor, or Evaluator. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260926-220 — Cognitive Evolution R0 preparation；Status: design and freeze preparation only. This package does not launch a revision agent, transfer Successor, or Evaluator.；主题：Bounded question；Given an initial method M0 and a source-bound failure/counterexample that exposes a boundary defect, can an independent revision agent produce a bounded M1 that changes only what the evidence licenses, preserves unaffected M0 scope, records explicit M0 → evidence → M1 lineage, and enables a fresh successor to make better held-out decisions than M0 alone or M…；This exploratory preparation adds a third proposed architecture layer:；Representation → Cognitive Method → Cognitive Evolution
 - 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/README.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/README.md)
@@ -55,7 +55,7 @@
 
 <a id="reading-hr-c6c43a5f2896c3f2"></a>
 ## Step00 — Owner/GPT Adjudication Freeze
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Task: IGNITION-20260921-198 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Step00 — Owner/GPT Adjudication Freeze；Task: IGNITION-20260921-198；Role: Builder / Experimental-Design Preparation.；Formal repository: Arvin-liu/when-systems-catch-fire；Starting exact head: 76bb9b566bffc8fd92e6a84026a336bd96d8a534；Working branch: work/IGNITION-20260921-198-replicated-method-use-trial-r0
 - 完整阅读：[reports/evaluations/ignition-198-replicated-method-use-trial-r0/step00-owner-gpt-adjudication-receipt.md](../../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step00-owner-gpt-adjudication-receipt.md)
@@ -158,6 +158,13 @@
 - 5 分钟：主题：Strong-term audit；Theorem, law, isomorphism and causality wording in legacy titles is preserved as historical text and downgraded to unverified claim status in the registry.
 - 完整阅读：[reports/foundation-architecture/strong-term-audit-20260712.md](../../reports/foundation-architecture/strong-term-audit-20260712.md)
 
+<a id="reading-hr-cceca3d5e7f0bad6"></a>
+## Task225 R0.1 repaired pre-output design gate
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Repair round 3 passed all four case-validity gates in each of three families after fresh A/B/C/D review. The record preserves the earlier pre-freeze failure and does not report experimental or evaluator results. 边界：No revision, transfer, or evaluator output existed at this design-gate stage. Exact-head CI and the bounded R0.1 experiment remain separate evidence.
+- 5 分钟：主题：Repair round 3 — unique-writer synthesis and gate result；Status: final permitted pre-freeze design round; candidate set passes the four-part A-case gate. This synthesis was written after the A proposal and fresh B/C/D reports were frozen. It does not freeze the experiment or create experimental outputs.；FAMILY01=4/4; FAMILY02=4/4; FAMILY03=4/4; FULLACASEVALIDITYGATE=3/3 M0ONLYTWOWAYAMBIGUITYPROVEN=3/3；主题：Frozen review findings and required freeze wording；B found no A case with two materially distinct M0 outputs left compatible. G1 therefore relies on the command's different-action path or, for F02, the full method/value as the scored action. Preserve that distinction in the case schema and outcome key; do not score only a terminal action label.；C found G3/G4 supported for all three families. For F01, align the final control with E1's paired comparison: acquire two same-canopy away-from-sun scans at 8° off nadir, taking a contact-leaf reference immediately after each. This remains a diagnostic comparison; M0's soil-moisture confirmation remains mandatory regardless of its result.
+- 完整阅读：[reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/ROUND-3-ASSESSMENT.md](../../reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/ROUND-3-ASSESSMENT.md)
+
 <a id="reading-hr-cd008d2b8134b963"></a>
 ## 点火 Operation-specific Playbooks R1
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -167,7 +174,7 @@
 
 <a id="reading-hr-cd992fa924fd400d"></a>
 ## Neutral transfer prompt — Task220 R0
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：You are given three held-out case records and a bounded set of method and/or source evidence. Use only the files assigned to this conversation. Apply the supplied method material to each case independently. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Neutral transfer prompt — Task220 R0；You are given three held-out case records and a bounded set of method and/or source evidence. Use only the files assigned to this conversation. Apply the supplied method material to each case independently.；For each case, return the externally visible action or disposition, the scope and preconditions that govern it, any required discriminating observation or stop condition, and the remaining uncertainty. Do not claim that an action was executed or that an outcome was observed unless the supplied record establishes it. Do not invent sources or measurements.；If the case is unresolved, state what is missing and the specific measurement or reconciliation needed. Do not respond with blanket refusal where the supplied method and case support a bounded action. Do not expose hidden chain-of-thought; provide only the structured fields in the output schema.；Return exactly one JSON object with one record for each assigned case, in the case order given in the input manifest. Do not add prose outside the object. Do not browse other repository paths, inspect sealed targets, look for scoring criteria, contact another agent, or see sibling outputs.
 - 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/transfer/neutral-transfer-prompt.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/transfer/neutral-transfer-prompt.md)
@@ -279,7 +286,7 @@
 
 <a id="reading-hr-d2c3b20ff57406cc"></a>
 ## Neutral revision prompt — Task220 R0
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - 1 分钟：You are given one frozen initial method M0 and one source-bound packet E1 containing observations from a failure or counterexample. Use only the provided M0, E1, and output schema. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Neutral revision prompt — Task220 R0；You are given one frozen initial method M0 and one source-bound packet E1 containing observations from a failure or counterexample. Use only the provided M0, E1, and output schema.；Produce one externally auditable proposed M1. Identify the M0 claim or relation affected, cite the exact E1 source locators that support a change, state the operation, mark the changed and preserved scopes, preserve unresolved boundaries, and represent M0 → E1 → M1 lineage. Leave unrelated M0 components intact. If E1 does not license a change for a scope, do…；The operation vocabulary distinguishes UPDATE, NARROW, SPLITCOEXIST, REJECT, RETIRE, and RETIREREPLACEBOUNDED. A wording-only rewrite is not a revision; if that is all the evidence supports, say so explicitly. Rejecting or retiring a claim in one scope does not silently remove its other supported uses.；Use only exact source locators present in E1. Separate observation from inference. Do not invent measurements, sources, execution, validation, or successor outcomes. State a bounded uncertainty and the observation that would resolve it when needed. Do not expose hidden chain-of-thought; provide only the structured fields in the output schema.；Return exactly one JSON object conforming to the supplied schema. Do not add prose outside the object. Do not browse other repository paths, search for held-out cases or scoring targets, contact another agent, or execute a method. This is a proposal only; no experiment is being run.
 - 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/revision/neutral-revision-prompt.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/revision/neutral-revision-prompt.md)
@@ -346,10 +353,3 @@
 - 1 分钟：Task ID: IGNITION-20260829-148 Formal task ordinal: 148 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260829-148 result — AI-first 点火操作法 R1；Task ID: IGNITION-20260829-148 Formal task ordinal: 148；result: COMPLETEDWITHOPENOBLIGATIONS；NOTPRODUCTIONREADY；NOEXTERNALTRUTHASSERTION；Task148 completes the bounded repository-local delivery of IGNITIONOPERATINGMETHODR1. The formal task is terminal as COMPLETEDWITHOPENOBLIGATIONS: the Operating Method, Current Snapshot, Current Facts, State Changelog, registry, playbooks, output and current surfaces are synchronized on formal main after the ordinary merge and post-merge closeout.
 - 完整阅读：[agent-results/IGNITION-20260829-148-result.md](../../agent-results/IGNITION-20260829-148-result.md)
-
-<a id="reading-hr-d6193a2d42722179"></a>
-## IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Step 04 passes. The remaining engineering items are classified into DEFERREDOWNERREOPEN, HISTORICALPRESERVED, NONBLOCKINGUNKNOWN and an empty CLOSUREBLOCKER set. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260828-144 Step 04 — deferred backlog and resume capsule；Step 04 passes. The remaining engineering items are classified into DEFERREDOWNERREOPEN, HISTORICALPRESERVED, NONBLOCKINGUNKNOWN and an empty CLOSUREBLOCKER set.；LIVEEXTERNALINVOCATION remains OPEN / OWNERDEFERRED, with its six historical attempts and two observation-incomplete records preserved. The resume capsule requires an explicit Owner reopen and a prepared, installed and attested local environment before any future qualification; it does not itself authorize a retry. Task143 smoke outputs and earlier natural f…
-- 完整阅读：[reports/operations/ignition-144-step04-deferred-backlog.md](../../reports/operations/ignition-144-step04-deferred-backlog.md)

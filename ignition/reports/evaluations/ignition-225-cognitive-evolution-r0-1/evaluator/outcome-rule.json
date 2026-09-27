@@ -1,0 +1,33 @@
+{
+  "version": "R0.1",
+  "primary_revision_endpoint": "REVISION_VALIDITY_SUCCESS_R01",
+  "primary_transfer_endpoint": "TRANSFER_TARGET_SUCCESS_R01",
+  "primary_chain": "EVOLUTION_TRANSFER_SUCCESS = R AND E_A AND NOT O_A AND E_B AND E_C",
+  "secondary_endpoint": "EXPLICIT_ARTIFACT_ADVANTAGE_A = E_A AND NOT F_A",
+  "secondary_is_not_a_primary_gate": true,
+  "fixed_denominator": 6,
+  "per_lineage": {
+    "R": "Revision output is valid under the frozen revision criterion.",
+    "E_A": "EVOLVED_M1 transfer response matches the complete sealed A target.",
+    "O_A": "M0_ONLY transfer response matches the complete sealed A target.",
+    "F_A": "M0_PLUS_E1 transfer response matches the complete sealed A target.",
+    "E_B": "EVOLVED_M1 transfer response matches the preserved-scope B target.",
+    "E_C": "EVOLVED_M1 transfer response matches the unresolved/fallback C target.",
+    "EVOLUTION_TRANSFER_SUCCESS": "R AND E_A AND NOT O_A AND E_B AND E_C.",
+    "EXPLICIT_ARTIFACT_ADVANTAGE_A": "E_A AND NOT F_A. Secondary/descriptive only; never a primary gate."
+  },
+  "missing_invalid_unusable": "Keep the fixed denominator of six. Missing/invalid revision makes R=false and no EVOLVED_M1 task is instantiated for that lineage. Missing/invalid transfer response scores false for each required transfer endpoint; do not fabricate outputs or reduce denominators.",
+  "disposition_per_evaluator": {
+    "SUPPORTED": "revision_successes >= 5/6 AND evolution_successes >= 5/6 AND each family has at least one evolution success AND at least 2/3 families have both replicates successful AND zero preservation/global-retirement critical errors.",
+    "PARTIAL": "If not SUPPORTED: revision_successes >= 4/6 AND evolution_successes >= 3/6 AND at least 2/3 families are represented by an evolution success AND sum(E_A) > sum(O_A).",
+    "NOT_SUPPORTED": "Otherwise."
+  },
+  "overall_disposition_without_score_reconciliation": {
+    "SUPPORTED": "Both independent evaluator sheets yield SUPPORTED.",
+    "NOT_SUPPORTED": "Both independent evaluator sheets yield NOT_SUPPORTED.",
+    "PARTIAL": "All other pairs of independently derived dispositions, including disagreement. Preserve each evaluator's raw result and disagreement register; do not reconcile scores."
+  },
+  "no_population_inference": true,
+  "no_p_values": true,
+  "no_third_evaluator": true
+}

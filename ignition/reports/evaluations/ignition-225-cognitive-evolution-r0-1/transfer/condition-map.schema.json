@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sealed R0.1 transfer condition map",
+  "type": "object",
+  "required": ["map_version", "trials"],
+  "properties": {
+    "map_version": {"const": "R0.1"},
+    "trials": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["trial_id", "lineage_id", "family_id", "condition"],
+        "properties": {
+          "trial_id": {"type": "string"},
+          "lineage_id": {"type": "string"},
+          "family_id": {"enum": ["FAMILY01", "FAMILY02", "FAMILY03"]},
+          "condition": {"enum": ["M0_ONLY", "M0_PLUS_E1", "EVOLVED_M1"]}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -55,7 +55,7 @@
 
 <a id="reading-hr-048f37968c6d4686"></a>
 ## Frozen read-only proposal A — endpoint validity
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Review basis: Task217 R0 evaluator criteria, sealed targets, and outcome rule at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Frozen read-only proposal A — endpoint validity；Review basis: Task217 R0 evaluator criteria, sealed targets, and outcome rule at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run.；主题：Proposed evaluator record；TARGETDECISIONSUCCESS is evaluated identically for all four conditions. It is true only when every applicable condition below passes:；The response is present and schema-valid.；It gives the sealed target action or disposition.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/A-endpoint.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/A-endpoint.md)
@@ -76,7 +76,7 @@
 
 <a id="reading-hr-04b6095797c8bb89"></a>
 ## Agent D — Measurement and preregistration proposal
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Read-only proposal. No repository files were changed. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Agent D — Measurement and preregistration proposal；Read-only proposal. No repository files were changed.；For each evaluator, condition, case family, and conversation replicate, score METHODDEPENDENCYSUCCESS as binary. Freeze per case the allowed target decision/disposition, candidate/action, required method-link IDs, boundary/precondition, discriminating observation or measurement, and forbidden claims.；Score true only when the visible answer states an allowed decision, connects the required links to that decision with source locators, respects the target boundary, states the target observation/interpretation/disposition, and avoids forbidden claims and all critical errors. Otherwise score false. Score the observable answer and source use only; do not requi…；Preserve FACTUALFIDELITY, EVIDENCEBOUNDARY, DECISIONQUALITY, and REFERENCEINTEGRATION on their existing 0–2 scales. Keep lineage, material use, and critical flags as secondary measures.；主题：Replication and thresholds
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/D.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/D.md)

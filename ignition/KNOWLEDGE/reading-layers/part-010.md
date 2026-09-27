@@ -139,7 +139,7 @@
 
 <a id="reading-hr-98e3a41a4878fcda"></a>
 ## Frozen read-only proposal C — control ambiguity
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Review basis: all six facts, METHOD, LINKLESS, and control-equivalence notes at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Frozen read-only proposal C — control ambiguity；Review basis: all six facts, METHOD, LINKLESS, and control-equivalence notes at Formal head 29ae2b3f507a988d34362821ed7f8a0060a566e8. No files were changed and no trials were run.；The current control-equivalence notes incorrectly claim CASE02–06 have no final-answer atoms. CASE05 and CASE06 also cut relations that do not uniquely carry their stated current-case target. Every new ambiguity proof must give at least two materially different licensed alternatives consistent with facts, byte-identical retained atoms, and retained non-decis…
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/C-control-ambiguity.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/r1-independent-reviews/C-control-ambiguity.md)
@@ -216,7 +216,7 @@
 
 <a id="reading-hr-9ba686d027762485"></a>
 ## Architecture rebuild summary
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：The seven-layer architecture, separated registries, nine status axes, gates, deterministic migration, compatibility views and executable benchmarks are installed. Status: ARCHITECTURECOMPLETEPENDINGCONTENTPROOFS. Architecture completion does not prove the registered content. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Architecture rebuild summary；The seven-layer architecture, separated registries, nine status axes, gates, deterministic migration, compatibility views and executable benchmarks are installed. Status: ARCHITECTURECOMPLETEPENDINGCONTENTPROOFS. Architecture completion does not prove the registered content.
 - 完整阅读：[reports/foundation-architecture/architecture-rebuild-summary-20260712.md](../../reports/foundation-architecture/architecture-rebuild-summary-20260712.md)
@@ -251,7 +251,7 @@
 
 <a id="reading-hr-9c6bdea8b380662f"></a>
 ## CASE04 ambiguity proof — R1
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
 - 1 分钟：FACTS and both byte-identical atom blocks record curled leaves, a prior canopy temperature, a pre-refill feed value, two competing explanations, available equipment, and no post-refill result. LINKLESS retains R02, R03, and R05: the older value is temporally limited, equipment is available withou… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：CASE04 ambiguity proof — R1；主题：Evidence before the cut relations；FACTS and both byte-identical atom blocks record curled leaves, a prior canopy temperature, a pre-refill feed value, two competing explanations, available equipment, and no post-refill result. LINKLESS retains R02, R03, and R05: the older value is temporally limited, equipment is available without selecting a measurement, and no result is present. The atom b…；主题：Two materially different licensed actions；Adjust feed concentration based on the earlier feed-tank reading.；Increase airflow or collect a canopy-humidity reading based on the temperature record.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE04-ambiguity-proof.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE04-ambiguity-proof.md)

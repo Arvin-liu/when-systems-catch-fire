@@ -1,0 +1,37 @@
+{
+  "manifest_count": 6,
+  "independent_replicates_per_family": 2,
+  "opaque_tasks": [
+    {
+      "opaque_task_id": "RL-001",
+      "assigned_family": "FAMILY01",
+      "replicate": 1
+    },
+    {
+      "opaque_task_id": "RL-002",
+      "assigned_family": "FAMILY01",
+      "replicate": 2
+    },
+    {
+      "opaque_task_id": "RL-003",
+      "assigned_family": "FAMILY02",
+      "replicate": 1
+    },
+    {
+      "opaque_task_id": "RL-004",
+      "assigned_family": "FAMILY02",
+      "replicate": 2
+    },
+    {
+      "opaque_task_id": "RL-005",
+      "assigned_family": "FAMILY03",
+      "replicate": 1
+    },
+    {
+      "opaque_task_id": "RL-006",
+      "assigned_family": "FAMILY03",
+      "replicate": 2
+    }
+  ],
+  "visibility": "orchestrator only; do not include in revision-task inputs"
+}

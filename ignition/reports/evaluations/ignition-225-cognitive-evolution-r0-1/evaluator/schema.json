@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:task225:r0.1:evaluator-sheet.schema",
+  "title": "Task225 R0.1 blind evaluator sheet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["evaluator_id", "revision_scores", "transfer_scores", "blindness_receipt", "lock_status"],
+  "properties": {
+    "evaluator_id": {"enum": ["EVAL-R", "EVAL-S"]},
+    "revision_scores": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/revision_score"},
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "transfer_scores": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/transfer_score"},
+      "minItems": 12,
+      "maxItems": 18
+    },
+    "blindness_receipt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["condition_map_read_count", "outcome_rule_read_count", "sibling_read_count", "outside_workdir_read_count"],
+      "properties": {
+        "condition_map_read_count": {"const": 0},
+        "outcome_rule_read_count": {"const": 0},
+        "sibling_read_count": {"const": 0},
+        "outside_workdir_read_count": {"const": 0}
+      }
+    },
+    "runtime_metadata": {"type": ["object", "string"], "default": "UNKNOWN"},
+    "lock_status": {"const": "LOCKED_VALID"}
+  },
+  "$defs": {
+    "revision_score": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lineage_id", "valid", "critical_error", "rationale"],
+      "properties": {
+        "lineage_id": {"type": "string"},
+        "valid": {"type": "boolean"},
+        "critical_error": {"type": "boolean"},
+        "rationale": {"type": "string"}
+      }
+    },
+    "transfer_score": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["trial_id", "case_scores", "critical_error", "rationale"],
+      "properties": {
+        "trial_id": {"type": "string"},
+        "case_scores": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["A", "B", "C"],
+          "properties": {
+            "A": {"type": "boolean"},
+            "B": {"type": "boolean"},
+            "C": {"type": "boolean"}
+          }
+        },
+        "critical_error": {"type": "boolean"},
+        "rationale": {"type": "string"}
+      }
+    }
+  }
+}

@@ -41,7 +41,7 @@
 
 <a id="reading-hr-76cd92eb611c7cb4"></a>
 ## IGNITION-20260920-190 Step00 receipt
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：The Owner/GPT adjudication is frozen mechanically in the JSON artifact. The three evidence heads are recorded with exact source paths and SHA-256 digests. Task189's command-literal path was resolved to the exact-head tree path with the existing ignition/ prefix; no content was substituted. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260920-190 Step00 receipt；Formal repository: Arvin-liu/when-systems-catch-fire；Branch: work/IGNITION-20260920-190-method-use-trace-r0；Starting exact head: ca641a87ad7bc16d18a65f37cbe37b9a5cb733c8；Stacked Draft base: eval/IGNITION-20260919-189-r0-4-independent-evaluation；Control command: Arvin-liu/1111:agent-commands/IGNITION-20260920-190.md@main
 - 完整阅读：[reports/evaluations/ignition-190-method-use-trace-r0/step00-receipt.md](../../reports/evaluations/ignition-190-method-use-trace-r0/step00-receipt.md)
@@ -202,7 +202,7 @@
 
 <a id="reading-hr-7d2c448385c1b8b3"></a>
 ## CASE01 ambiguity proof — R1
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - 1 分钟：FACTS and both byte-identical atom blocks describe two incomplete but complementary previews. LINKLESS retains R02–R05: identifier preconditions, a post-export comparison, preview-field verification, and source provenance. None selects a route or claims that a delivered join already exists. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：CASE01 ambiguity proof — R1；主题：Evidence before the cut relation；FACTS and both byte-identical atom blocks describe two incomplete but complementary previews. LINKLESS retains R02–R05: identifier preconditions, a post-export comparison, preview-field verification, and source provenance. None selects a route or claims that a delivered join already exists.；主题：Two materially different licensed actions；Propose Birch as a conditional verification export and inspect its delivered fields.；Defer route selection until the optional event-field behavior is documented.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE01-ambiguity-proof.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE01-ambiguity-proof.md)
@@ -216,7 +216,7 @@
 
 <a id="reading-hr-7d51714b30f09ade"></a>
 ## Agent C — Control-equivalence and leakage review
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Read-only proposal. No repository files were changed. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Agent C — Control-equivalence and leakage review；Read-only proposal. No repository files were changed.；主题：Risks and repairs；Task207's method history contains examples close to its cases. Keep Task217 target-case decisions and outcomes out of the reusable method material; use different settings and values so a successor must apply links rather than match an example.；Task207's broken control was not atom-matched. For every Task217 case, inventory the same candidate, procedure, observation, boundary, and outcome atoms in METHOD and LINKLESS; remove only a named essential relation. Preserve format and provenance, and verify remaining links cannot reconstruct the cut.；Task207 facts make several next actions easy to infer, and FACTS reached 6/6 bounded success for both evaluators. Make competing actions genuinely plausible from facts and skill alone; require a source relation for the sealed target and reject a case if its facts alone decide it.
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/C.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/C.md)
@@ -300,7 +300,7 @@
 
 <a id="reading-hr-814e2fde7628632c"></a>
 ## Agent B — Adversarial benchmark designer proposal
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - 1 分钟：Read-only proposal. No repository files were changed. Task207's cases and method history concern counters, resettable lanes, bridge offsets, and a missing anchor; the following proposals use distinct settings. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Agent B — Adversarial benchmark designer proposal；Read-only proposal. No repository files were changed. Task207's cases and method history concern counters, resettable lanes, bridge offsets, and a missing anchor; the following proposals use distinct settings.；Candidate selection — archive transfer. Two plausible procedures are a latest-file export and a revision-preserving snapshot. A synthetic work order concerns which wording was approved at each checkpoint; a signed transcript and later unsigned correction make both procedures plausible. The linked method rationale and manifest check determine which record is…；Boundary rejection — storefront rollout. A stale banner appears while regions serve different revisions. A cache-purge procedure is familiar and executable; the recorded method boundary governs whether to use it during convergence. Target is bounded nonapplication now, then recheck after the stated convergence interval. FACTS gives a stale page and SKILL giv…；Failure interpretation — refund request. An attempt returns queued, then the connection drops before a receipt arrives. The method treats missing acknowledgment as possible acceptance, not confirmed failure. Target is status lookup by request key and no resubmission until explicit terminal rejection. FACTS and retry skill are both tempting; neither establish…；Missing measurement/unresolved — hydroponic greens. Leaves curl with normal reservoir level after refill; root-zone conductivity after recirculation is absent. Method identifies that timed calibrated EC observation as the discriminator between salt concentration and heat stress. Target is unresolved plus the exact measurement, with no feed change yet. FACTS…
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/B.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/B.md)

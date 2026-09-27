@@ -681,7 +681,7 @@
 - **演化历史：** 2026-09-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`
+- **主题：** `COGNITION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260926-220 — Cognitive Evolution R0 preparation`, `README`
 
 <a id="asset-hr-c63d64bd86e12abb"></a>
@@ -741,7 +741,7 @@
 - **演化历史：** 2026-09-21: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Step00 — Owner/GPT Adjudication Freeze`, `step00-owner-gpt-adjudication-receipt`
 
 <a id="asset-hr-c7aaddf58550aae5"></a>

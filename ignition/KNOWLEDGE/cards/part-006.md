@@ -501,7 +501,7 @@
 - **演化历史：** 2026-09-26: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- **主题：** `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Agent C — Adversarial controls proposal`, `C`
 
 <a id="asset-hr-4798fdbcb413611b"></a>
@@ -581,7 +581,7 @@
 - **演化历史：** 2026-09-25: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`
+- **主题：** `SYSTEMS`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `CASE02 — Regional cache boundary`, `facts`
 
 <a id="asset-hr-48533b326ebedf8f"></a>
@@ -881,7 +881,7 @@
 - **演化历史：** 2026-09-21: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
 - **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `WRITING_PUBLICATION`
+- **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Step03 — Method History and Broken Controls`, `step03-method-trace-freeze`
 
 <a id="asset-hr-4b5539f6a578f48d"></a>

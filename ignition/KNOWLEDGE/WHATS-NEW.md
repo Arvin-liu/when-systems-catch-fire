@@ -4,6 +4,23 @@
 
 ## 2026
 
+<a id="change-chg-task225-r01-design-20260927"></a>
+### 2026-09-27 · Task225 R0.1 repaired pre-output design gate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `PRE_OUTPUT_DESIGN_GATE_PASS_PENDING_EXACT_HEAD_CI_AND_EXPERIMENT`
+- **变化：** The repaired Task225 R0.1 pre-output design passed all four fixed validity gates in each of three families after four-role review. This records design readiness only; experimental outputs, evaluator results, causal claims, and lifecycle promotion are not asserted.
+- **来源：** [README.md](../reports/evaluations/ignition-225-cognitive-evolution-r0-1/README.md) · [ROUND-3-ASSESSMENT.md](../reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/ROUND-3-ASSESSMENT.md) · [PRE-FREEZE-DESIGN-GATE-FAILURE-01.md](../reports/evaluations/ignition-225-cognitive-evolution-r0-1/PRE-FREEZE-DESIGN-GATE-FAILURE-01.md) · [m0.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/m0.md) · [revision-evidence-e1.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md) · [m0.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md) · [revision-evidence-e1.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md) · [m0.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md) · [revision-evidence-e1.md](../reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md)
+
+<a id="change-src-hr-cceca3d5e7f0bad6"></a>
+### 2026-09-27 · Task225 R0.1 repaired pre-output design gate
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Repair round 3 passed all four case-validity gates in each of three families after fresh A/B/C/D review. The record preserves the earlier pre-freeze failure and does not report experimental or evaluator results.
+- **来源：** [ROUND-3-ASSESSMENT.md](../reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/ROUND-3-ASSESSMENT.md)
+- **资产卡：** [HR-CCECA3D5E7F0BAD6](./ASSET-CARDS.md#asset-hr-cceca3d5e7f0bad6)
+
 <a id="change-src-hr-df0673680b15866c"></a>
 ### 2026-09-26 · Task220 R0 preregistered outcome rule
 
