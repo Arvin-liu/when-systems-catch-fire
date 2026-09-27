@@ -1,0 +1,50 @@
+{
+  "sealed_artifact": true,
+  "family_id": "FAMILY02",
+  "cases": {
+    "A": {
+      "m0_action": "REPORT_ESTIMATE",
+      "m0_value_mg_l": 214.5,
+      "m0_uncertainty_mg_l": 12,
+      "target_action": "REPORT_ESTIMATE",
+      "target_value_mg_l": 131,
+      "operational_policy": {
+        "selector_inputs": [
+          "QC-passing composition matching the observed floc-rich pattern",
+          "blank-corrected turbidity from 100 through 300 NTU"
+        ],
+        "applicability_rule": "Use only for reproducible QC-passing composition matching one of the observed E1 floc-rich tuples: (21% mineral, 46% organic flocs), (18%, 49%), or (24%, 42%), and turbidity within the observed 100–300 NTU span. Do not treat the independent minimum/maximum values as permission for unobserved composition pairs.",
+        "action_mapping": "Use the E1 floc-rich empirical relation at 100/200/300 NTU (91/171/251 mg/L) and linearly interpolate only within that turbidity span. At 150 NTU the estimate is 131 mg/L. E1 provides no uncertainty band for this estimate; do not transfer M0's ±12 mg/L band.",
+        "preserved_rule_ids": [
+          "M0_F02_QC_AND_DUPLICATE_CHECKS",
+          "M0_F02_MINERAL_DOMINANT_REPORT_ESTIMATE"
+        ],
+        "unresolved_or_fallback_rule": "Outside an exact observed floc-rich composition tuple, outside 100–300 NTU, or when composition/QC is unresolved, request or reconcile composition and/or obtain gravimetry; do not apply the floc-rich point relation.",
+        "stop_conditions": [
+          "No universal mineral/floc cutoff",
+          "No composition-pair interpolation beyond the observed tuples",
+          "No turbidity extrapolation beyond 100–300 NTU",
+          "No ±12 mg/L uncertainty claim for the E1 estimate"
+        ],
+        "evidence_provenance": [
+          "Task220 FAMILY02 E1 OBS-04",
+          "Task220 FAMILY02 E1 OBS-05",
+          "Task220 FAMILY02 E1 OBS-06"
+        ],
+        "scope_ceiling": "Exact observed floc-rich composition tuples and 100–300 NTU; no universal formula or inference beyond the synthetic E1 evidence."
+      }
+    },
+    "B": {
+      "m0_action": "REPORT_ESTIMATE",
+      "m0_value_mg_l": 349.5,
+      "target_action": "REPORT_ESTIMATE",
+      "target_method": "M0 mineral-dominant formula; preserve baseline scope"
+    },
+    "C": {
+      "m0_action": "REPORT_ESTIMATE",
+      "m0_value_mg_l": 221.25,
+      "target_action": "RECONCILE_COMPOSITION_OR_OBTAIN_GRAVIMETRY",
+      "reason": "Composition aliquots do not reproducibly match an observed E1 composition tuple; no floc-rich point estimate is licensed."
+    }
+  }
+}

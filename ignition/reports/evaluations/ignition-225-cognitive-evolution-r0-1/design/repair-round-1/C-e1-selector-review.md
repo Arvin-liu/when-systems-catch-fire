@@ -1,0 +1,7 @@
+# Repair round 1 — role C E1 selector-boundary review (PRE-FREEZE / FAILED)
+
+- **F01: PASS if strictly bounded.** A matches E1 OBS-02; OBS-03 supports the same-canopy changed-bearing control. Contact reference is grounded by the observed contact excesses. Do not generalize reflectance or bearing into universal cutoffs. B and C are consistent with E1 OBS-04/05 and OBS-06. Sources: `FAMILY01/revision-evidence-e1.md` lines 14–19, 25–27; `FAMILY01/m0.md` lines 23–27, 37–42.
+- **F02: PASS with an interpolation caveat.** The 21% mineral/46% floc composition matches OBS-04, and 150 NTU lies inside the observed 100–300 NTU floc-rich span. Interpolation between OBS-04/05 derives 131 mg/L. E1 does not state or validate a general linear formula or uncertainty at 150; composition also varies across OBS-04/05/06. Keep within the observed envelope, do not generalize slope or apply M0's ±12 band. Sources: `FAMILY02/revision-evidence-e1.md` lines 12–29; `FAMILY02/m0.md` lines 8–10, 21–24.
+- **F03: PASS.** Verified group P plus complete 10-minute/13.8°C pulse lies inside E1's observed P context. `STABILITY_REVIEW` is supported as triage, not degradation. OBS-04/05 support preserved controls and OBS-06 supports reconciliation. No universal threshold or cross-formulation generalization. Sources: `FAMILY03/revision-evidence-e1.md` lines 14–29; `FAMILY03/m0.md` lines 21–24, 30–34.
+
+Role C conclusion: F01 and F03 pass with bounded wording; F02 passes as an empirical interpolation only, with no validated uncertainty band or general formula.

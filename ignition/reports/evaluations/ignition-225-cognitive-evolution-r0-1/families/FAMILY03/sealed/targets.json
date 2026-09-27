@@ -1,0 +1,60 @@
+{
+  "sealed_artifact": true,
+  "family_id": "FAMILY03",
+  "cases": {
+    "A": {
+      "m0_actions": {
+        "group_p": "SCREEN_PASS",
+        "group_s": "SCREEN_PASS"
+      },
+      "target_action": {
+        "group_p": "STABILITY_REVIEW",
+        "group_s": "SCREEN_PASS"
+      },
+      "selected_for_single_review_slot": "group_p",
+      "operational_policy": {
+        "selector_inputs": [
+          "independently registry-verified group P",
+          "complete aligned high-rate trace",
+          "pulse duration within 9–13 minutes",
+          "pulse peak within 13.7–14.4 degrees C",
+          "valid M0 means below 8.0 degrees C"
+        ],
+        "applicability_rule": "For a complete high-rate pulse within the observed group-P E1 context only, select group P for stability review even when M0's 15-minute means pass. The matched group-S pulsed control does not authorize a universal pulse rule.",
+        "action_mapping": "Retain the M0 mean-only SCREEN_PASS as the baseline result and add STABILITY_REVIEW for the verified group-P lot. This is an independent review disposition, not a confirmed degradation or safety finding.",
+        "preserved_rule_ids": [
+          "M0_F03_LOGGER_CALIBRATION_CLOCK_CUSTODY",
+          "M0_F03_MEAN_ONLY_SCREEN_PASS"
+        ],
+        "unresolved_or_fallback_rule": "If the required high-rate trace is incomplete or pulse duration cannot be determined, select RECONCILE_LOGGER; if unresolved, select UNSCORABLE. For a complete group-P trace without the observed pulse context, retain the M0 pass path.",
+        "stop_conditions": [
+          "No universal temperature or pulse-duration cutoff",
+          "No automatic degradation claim",
+          "No generalization from group P to group S or other formulations",
+          "No replacement of M0 mean-only baseline"
+        ],
+        "evidence_provenance": [
+          "Task220 FAMILY03 E1 OBS-01",
+          "Task220 FAMILY03 E1 OBS-02",
+          "Task220 FAMILY03 E1 OBS-03",
+          "Task220 FAMILY03 E1 OBS-04",
+          "Task220 FAMILY03 E1 OBS-05"
+        ],
+        "scope_ceiling": "Verified group-P formulation, complete calibrated high-rate pulse context in the observed 9–13 minute / 13.7–14.4 degree C envelope, and stability-review triage only."
+      }
+    },
+    "B": {
+      "m0_action": "SCREEN_PASS",
+      "target_action": "SCREEN_PASS",
+      "reason": "No above-12 degree C pulse is present; preserve M0."
+    },
+    "C": {
+      "m0_action": "SCREEN_PASS",
+      "target_action_sequence": [
+        "RECONCILE_LOGGER",
+        "UNSCORABLE_IF_TRACE_REMAINS_UNRESOLVED"
+      ],
+      "reason": "M0 means do not reveal a missing high-rate trace; the revision requires the trace for pulse evaluation."
+    }
+  }
+}

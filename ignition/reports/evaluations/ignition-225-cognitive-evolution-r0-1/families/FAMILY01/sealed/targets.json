@@ -1,0 +1,52 @@
+{
+  "sealed_artifact": true,
+  "family_id": "FAMILY01",
+  "scope": "synthetic benchmark; exact observed context only",
+  "cases": {
+    "A": {
+      "m0_action": "SOIL_MOISTURE_CONFIRMATION",
+      "target_action_sequence": [
+        "REFLECTION_CONTROL_SCAN_OR_CONTACT_CHECK",
+        "SOIL_MOISTURE_CONFIRMATION"
+      ],
+      "operational_policy": {
+        "selector_inputs": [
+          "reflective silver film at measured reflectance 0.72",
+          "toward-sun view at 21 degrees off nadir",
+          "same marked canopy and calibrated camera",
+          "stable high D pair"
+        ],
+        "applicability_rule": "For this observed stable reflective-film/toward-sun/21-degree context only, do not treat stable high D as sufficient to rely on the ordinary M0 thermal-trigger path until the measurement-control discriminator is resolved.",
+        "action_mapping": "Acquire two same-canopy scans with the view changed away from the sun to 8 degrees off nadir; take a contact-leaf reference immediately after each scan and record the paired comparisons. Then retain the M0 soil-moisture confirmation regardless of the comparison. Do not infer stress or irrigation.",
+        "preserved_rule_ids": [
+          "M0_F01_CALIBRATION_QC",
+          "M0_F01_STABLE_HIGH_D_SOIL_MOISTURE_CONFIRMATION"
+        ],
+        "unresolved_or_fallback_rule": "If coverage, bearing, or the required control measurements are invalid or incomplete, reacquire under stable coverage/view and retain the M0 confirmation path; do not infer stress or irrigation.",
+        "stop_conditions": [
+          "No universal reflectance cutoff",
+          "No universal view-angle cutoff",
+          "No changed D threshold",
+          "No stress or irrigation disposition from thermal evidence alone"
+        ],
+        "evidence_provenance": [
+          "Task220 FAMILY01 E1 OBS-01",
+          "Task220 FAMILY01 E1 OBS-02",
+          "Task220 FAMILY01 E1 OBS-03",
+          "Task220 FAMILY01 E1 OBS-04"
+        ],
+        "scope_ceiling": "The measured reflective-silver-film/toward-sun/21-degree case context and the E1-observed away-sun 8-degree comparison; no population or universal physical claim."
+      }
+    },
+    "B": {
+      "m0_action": "SOIL_MOISTURE_CONFIRMATION",
+      "target_action": "SOIL_MOISTURE_CONFIRMATION",
+      "reason": "The reflective-film selector is absent; preserve the M0 path."
+    },
+    "C": {
+      "m0_action": "REPEAT_THERMAL_SCAN",
+      "target_action": "REPEAT_THERMAL_SCAN",
+      "reason": "The pair straddles the 2.0 degree trigger and bearing varies; the stable reflective-context rule does not apply. Reacquire under stable coverage/view."
+    }
+  }
+}

@@ -3334,7 +3334,7 @@
       "title": "closure-summary",
       "knowledge_status": null,
       "subject": null,
-      "source_sha256": "ef6df2079701be37845e94022c8040adc256a5bdc75e3d2817a533616e7a8d52",
+      "source_sha256": "b379fedfe79dab11ebdd7451e77658bd66ede4d3c8505efaa56fa1227226ef0e",
       "disposition": "MERGED_INTO_SEED",
       "seed_ids": [
         "FS-07"
@@ -4271,7 +4271,7 @@
       "title": "全语料非函数型断言裁决索引",
       "knowledge_status": "CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS",
       "subject": null,
-      "source_sha256": "53739d2ecac1e391dd04cbb441b8057725508d46a8c4b8202cafdb53246c0716",
+      "source_sha256": "054b1fffead021954873c6859dc668763d15914d81443ff0a4a0046eeb124b7d",
       "disposition": "NO_SEED_DELTA",
       "seed_ids": [],
       "review_basis": "KNOWLEDGE_LAYERED_READING_TRIAGE",

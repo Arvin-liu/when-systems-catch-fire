@@ -1,0 +1,28 @@
+{
+  "manifest_version": "R0.1",
+  "opaque_task_id": "RL-006",
+  "inputs": [
+    {
+      "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/revision/PROMPT.md",
+      "sha256": "e58696b2a1c3643af497a41670582dc1a2a5829ec3e14cb5708597e706229581"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/revision/schema.json",
+      "sha256": "f64727087d87dd535c3568578c436ab79e9a2cec471ce4f50b2b55f067c0c172"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md",
+      "sha256": "691b63e6ff4324acc23a09a35114df3fbb75668d39de3d8283386f30b110331a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md",
+      "sha256": "fba2eef834fa1ae9b43665ecbaa15a2bf8690f840cc0a56483701a8e7601c5ff"
+    }
+  ],
+  "output_contract": {
+    "schema_path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/revision/schema.json",
+    "expected_records": 1,
+    "pre_read_infrastructure_retry_max": 3,
+    "after_any_input_read_retry_or_replacement": false
+  }
+}

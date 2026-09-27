@@ -3,9 +3,11 @@ from __future__ import annotations
 import hashlib
 import json
 from pathlib import Path
+import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -23,10 +25,20 @@ from tools.validate_cognitive_inheritance_r0 import (  # noqa: E402
     TASK217_FREEZE_SIDECAR_RELATIVE,
     TASK220_FREEZE_RELATIVE,
     TASK220_FREEZE_SIDECAR_RELATIVE,
+    TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS,
+    TASK225_REPLACEMENT_PATHS,
+    TASK225_FIRE_SEED_CENSUS_PATH,
+    TASK225_FIRE_SEED_CENSUS_SHA256,
+    TASK225_SUCCESSOR_PROVENANCE,
     ValidationFailure,
     task217_generated_fire_seed_paths,
     is_allowed_changed_path,
     task217_generated_knowledge_paths,
+    task220_projection_hashes,
+    task225_projection_chain_coverage,
+    task220_source_bytes,
+    validate_task225_successor_lock,
+    validate_human_results_excluded_prefixes,
     validate_all,
 )
 
@@ -41,6 +53,14 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertEqual(result["final_state"], FINAL_STATE)
         self.assertEqual(result["builder_verdict"], "NOT_EVALUATED_BY_BUILDER")
         self.assertEqual(result["independent_evaluation"], "NOT_RUN")
+        self.assertEqual(
+            result["projection_chain_coverage"],
+            {
+                "task220_unchanged": "105/109",
+                "task225_exact_successor_replacements": "4/4",
+                "effective_projection_chain_coverage": "109/109",
+            },
+        )
 
     def test_migration_is_deterministic_and_preserves_unknown_relation(self) -> None:
         source = load_json(R0 / "fixtures" / "migration-r0a.json")
@@ -87,6 +107,7 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertTrue(is_allowed_changed_path("ignition/KNOWLEDGE/indexes/writing_publication.md"))
         self.assertTrue(is_allowed_changed_path("ignition/KNOWLEDGE/reading-layers/part-001.md"))
         self.assertTrue(is_allowed_changed_path("ignition/KNOWLEDGE/cards/part-015.md"))
+        self.assertTrue(is_allowed_changed_path("ignition/KNOWLEDGE/cards/part-018.md"))
         self.assertTrue(is_allowed_changed_path("ignition/data/publication/fire-seeds/seed-census.json"))
         self.assertTrue(is_allowed_changed_path("ignition/agent_runtime/cognitive_inheritance_r0/packages/current-self-model-r0.json"))
         self.assertTrue(is_allowed_changed_path("ignition/evaluation/reports/task181-result.json"))
@@ -102,6 +123,37 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertFalse(is_allowed_changed_path("ignition/KNOWLEDGE/UNEXPECTED.md"))
         self.assertFalse(is_allowed_changed_path("ignition/data/publication/fire-seeds/CHANGELOG.jsonl"))
         self.assertFalse(is_allowed_changed_path("ignition/data/agent-federation/build-vs-integrate-policy-r1.json.bak"))
+
+    def test_human_results_isolation_is_exact_and_preserves_unrelated_reports(self) -> None:
+        config = json.loads((ROOT / "data/governance/human-results/config.json").read_text(encoding="utf-8"))
+        validate_human_results_excluded_prefixes(config["excluded_prefixes"])
+
+        for broad_prefix in (
+            "reports/evaluations/",
+            "reports/",
+            "reports/evaluations/ignition-217-method-dependency-benchmark-r0/",
+            "reports/evaluations/ignition-220-cognitive-evolution-r0/",
+            "reports/evaluations/ignition-223/",
+            "reports/evaluations/ignition-224/",
+        ):
+            with self.subTest(broad_prefix=broad_prefix), self.assertRaises(ValidationFailure):
+                validate_human_results_excluded_prefixes([*config["excluded_prefixes"], broad_prefix])
+
+        from tools.governance.build_human_results import discover
+
+        discovered = set(discover(config))
+        self.assertIn(
+            "reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md",
+            discovered,
+        )
+        self.assertNotIn(
+            "reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/packets/PKT-92DE30/cases/CASE-03/facts.md",
+            discovered,
+        )
+        self.assertNotIn(
+            "reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/A-case-designer-report.md",
+            discovered,
+        )
 
     def test_task217_generated_knowledge_allowance_is_hash_bound(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -212,6 +264,10 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
                 encoding="utf-8",
             )
 
+            self.assertEqual(
+                task220_projection_hashes(repo, "external_generated_knowledge_experience"),
+                {projection: current_digest},
+            )
             exact_paths = task217_generated_knowledge_paths(repo)
             self.assertEqual(exact_paths, {projection})
             self.assertTrue(is_allowed_changed_path(projection, exact_extra_paths=exact_paths))
@@ -220,6 +276,101 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
             artifact.write_text("tampered after Task220 freeze\n", encoding="utf-8")
             with self.assertRaises(ValidationFailure):
                 task217_generated_knowledge_paths(repo)
+
+    def test_task225_inline_lock_preserves_105_hashes_and_scientific_freeze(self) -> None:
+        sys.path.insert(0, str(ROOT / "tools/foundation"))
+        from legacy_table_migration import migration_paths
+
+        raw_paths = subprocess.check_output(
+            ["git", "ls-files", "--cached", "--others", "--exclude-standard", "-z"],
+            cwd=ROOT.parent,
+        )
+        indexed_paths = {item.decode("utf-8") for item in raw_paths.split(b"\0") if item}
+        self.assertEqual(len(indexed_paths | set(migration_paths())), 6868)
+        self.assertEqual(TASK225_SUCCESSOR_PROVENANCE["tracked_file_census_after"], 6868)
+        self.assertFalse((ROOT / "KNOWLEDGE/cards/part-018.md").exists())
+
+        historical = task220_projection_hashes(ROOT.parent, "external_generated_knowledge_experience")
+        self.assertEqual(len(historical), 109)
+        self.assertEqual(set(TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS), TASK225_REPLACEMENT_PATHS)
+        self.assertEqual(len(task217_generated_knowledge_paths(ROOT.parent)), 109)
+        fire_seed_hashes = task220_projection_hashes(ROOT.parent, "external_generated_fire_seed_census")
+        self.assertEqual(len(fire_seed_hashes), 2)
+        fire_seed_path = ROOT.parent / TASK225_FIRE_SEED_CENSUS_PATH
+        self.assertEqual(hashlib.sha256(fire_seed_path.read_bytes()).hexdigest(), TASK225_FIRE_SEED_CENSUS_SHA256)
+        self.assertIn(TASK225_FIRE_SEED_CENSUS_PATH, task217_generated_fire_seed_paths(ROOT.parent))
+        self.assertEqual(
+            task225_projection_chain_coverage(ROOT.parent),
+            {
+                "task220_unchanged": "105/109",
+                "task225_exact_successor_replacements": "4/4",
+                "effective_projection_chain_coverage": "109/109",
+            },
+        )
+
+    def test_task225_fire_seed_successor_rejects_wrong_hash(self) -> None:
+        with patch("tools.validate_cognitive_inheritance_r0.TASK225_FIRE_SEED_CENSUS_SHA256", "0" * 64):
+            with self.assertRaises(ValidationFailure):
+                task220_projection_hashes(ROOT.parent, "external_generated_fire_seed_census")
+
+        scientific_root = ROOT / "reports/evaluations/ignition-225-cognitive-evolution-r0-1"
+        manifest_path = scientific_root / "freeze-manifest.json"
+        sidecar_path = scientific_root / "freeze.sha256"
+        manifest_bytes = manifest_path.read_bytes()
+        manifest = json.loads(manifest_bytes)
+        self.assertEqual(len(manifest["frozen_files"]), 55)
+        self.assertEqual(
+            sidecar_path.read_text(encoding="utf-8"),
+            f"{hashlib.sha256(manifest_bytes).hexdigest()}  freeze-manifest.json\n",
+        )
+        for entry in manifest["frozen_files"]:
+            artifact = ROOT.parent / entry["path"]
+            self.assertEqual(hashlib.sha256(artifact.read_bytes()).hexdigest(), entry["sha256"])
+        self.assertFalse((scientific_root / "projection-replacement-freeze.json").exists())
+        self.assertFalse((scientific_root / "projection-replacement-freeze.sha256").exists())
+
+    def test_task225_inline_lock_rejects_a_fifth_or_missing_path(self) -> None:
+        fifth_path = "ignition/KNOWLEDGE/cards/task225-unapproved-fifth.md"
+        with patch(
+            "tools.validate_cognitive_inheritance_r0.TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS",
+            {**TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS, fifth_path: "0" * 64},
+        ):
+            with self.assertRaises(ValidationFailure):
+                validate_task225_successor_lock(ROOT.parent)
+
+        missing = dict(TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS)
+        missing.pop(next(iter(missing)))
+        with patch("tools.validate_cognitive_inheritance_r0.TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS", missing):
+            with self.assertRaises(ValidationFailure):
+                validate_task225_successor_lock(ROOT.parent)
+
+    def test_task225_inline_lock_rejects_wrong_projection_and_source_hashes(self) -> None:
+        wrong_projection = dict(TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS)
+        first_path = next(iter(wrong_projection))
+        wrong_projection[first_path] = "0" * 64
+        with patch("tools.validate_cognitive_inheritance_r0.TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS", wrong_projection):
+            with self.assertRaises(ValidationFailure):
+                validate_task225_successor_lock(ROOT.parent)
+
+        with patch("tools.validate_cognitive_inheritance_r0.TASK225_SUCCESSOR_SOURCE_SHA256", "0" * 64):
+            with self.assertRaises(ValidationFailure):
+                validate_task225_successor_lock(ROOT.parent)
+
+    def test_task225_inline_lock_rejects_any_source_delta_beyond_census_token(self) -> None:
+        historical_source = task220_source_bytes(ROOT.parent)
+        current_source_path = ROOT.parent / "ignition/docs/foundation/nonfunction-claim-adjudication-index.md"
+        tampered_source = current_source_path.read_bytes() + b"\nextra changed line\n"
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            source_path = repo / "ignition/docs/foundation/nonfunction-claim-adjudication-index.md"
+            source_path.parent.mkdir(parents=True)
+            source_path.write_bytes(tampered_source)
+            with patch(
+                "tools.validate_cognitive_inheritance_r0.TASK225_SUCCESSOR_SOURCE_SHA256",
+                hashlib.sha256(tampered_source).hexdigest(),
+            ):
+                with self.assertRaisesRegex(ValidationFailure, "differs beyond the exact"):
+                    validate_task225_successor_lock(repo, task220_source=historical_source)
 
     def test_r0_paths_are_excluded_from_canonical_claim_discovery(self) -> None:
         result = validate_all(ROOT)

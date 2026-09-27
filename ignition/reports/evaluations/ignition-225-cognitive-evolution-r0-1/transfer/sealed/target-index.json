@@ -1,0 +1,11 @@
+{
+  "sealed_artifact": true,
+  "visibility": "evaluator/coordinator only after raw trial outputs are frozen; never successor-visible",
+  "family_target_files": {
+    "FAMILY01": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY01/sealed/targets.json",
+    "FAMILY02": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY02/sealed/targets.json",
+    "FAMILY03": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY03/sealed/targets.json"
+  },
+  "condition_map_path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/transfer/sealed/condition-map.json",
+  "outcome_rule_path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/evaluator/outcome-rule.json"
+}
