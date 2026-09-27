@@ -64,16 +64,6 @@
   - 可搜索名称：REOS vNext minimal kernel R1 — frozen contract / reos-vnext-minimal-kernel-r1-contract
   - 来源：`docs/architecture/reos-vnext-minimal-kernel-r1-contract.md`
   - 依赖：—；被引用：—
-- [Repair round 1 — role B M0-only bypass review \(PRE-FREEZE / FAILED\)](../../ASSET-CARDS.md#asset-hr-a8fb0bd944dc4079)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Repair round 1 — role B M0-only bypass review \(PRE-FREEZE / FAILED\) / B-m0-only-review
-  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-1/B-m0-only-review.md`
-  - 依赖：—；被引用：—
-- [Repair round 3 — A case-designer report \(read-only\)](../../ASSET-CARDS.md#asset-hr-e2fd452e0c8343b7)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Repair round 3 — A case-designer report \(read-only\) / A-case-designer-report
-  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/A-case-designer-report.md`
-  - 依赖：—；被引用：—
 - [Repeated loops require IterationDelta; no delta means stop, branch, seek external evidence, preserve residue, or downgra](../../../llms.txt)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-68a11df8ebb3735d / Repeated loops require IterationDelta; no delta means stop, branch, seek external evidence, preserve residue, or downgra
@@ -394,20 +384,10 @@
   - 可搜索名称：NFC-816cb58509a27f73 / Revision lineage：任务 113 接受文本 SHA-256 `8d9fe3752e602041c8effb12f39bb2188c60a74843be4285d9181969e314a2e4` 保持为历史事实；任务 114 的
   - 来源：`docs/publication/zhiyuan-writing-showcase.md`
   - 依赖：—；被引用：—
-- [Revision phase inputs](../../ASSET-CARDS.md#asset-hr-8f1ccb29eff85d3c)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Revision phase inputs / README
-  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/revision/README.md`
-  - 依赖：—；被引用：—
 - [rewritten merely to satisfy a Current check. Exact commit SHA evidence belongs](../../../ITERATION.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-f61f60bdfda2d5f9 / rewritten merely to satisfy a Current check. Exact commit SHA evidence belongs
   - 来源：`ITERATION.md`
-  - 依赖：—；被引用：—
-- [Role C — E1 selector/source-boundary review](../../ASSET-CARDS.md#asset-hr-93b4fe9a56d20129)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Role C — E1 selector/source-boundary review / C-e1-selector-review
-  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/C-e1-selector-review.md`
   - 依赖：—；被引用：—
 - [Role**: 验证 DOI/ISBN/arXiv/PubMed 等标识符并获取元数据（IDENTIFIER_RESOLVED → METADATA_VERIFIED）](../../../docs/external-research/provider-contract.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
@@ -2503,4 +2483,24 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a92d1d608e6b1e3f / This is a capability calibration of four current-main candidate components. It is not a truth test and does not promote
   - 来源：`reports/architecture-calibration/STEP08-PREREGISTRATION.md`
+  - 依赖：—；被引用：—
+- [This is a cumulative release seal for already validated Q12-Q14 work:](../../../reports/releases/121Q15-q12-q14-cumulative-preflight.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-188053d47b7b0675 / This is a cumulative release seal for already validated Q12-Q14 work:
+  - 来源：`reports/releases/121Q15-q12-q14-cumulative-preflight.md`
+  - 依赖：—；被引用：—
+- [This is a Current projection repair; Task107/127/133 historical observations remain in Git history and receipts. Claim c](../../../reports/operations/ignition-134-step05-current-path-manifest-r1.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-3175815df6ffb55b / This is a Current projection repair; Task107/127/133 historical observations remain in Git history and receipts. Claim c
+  - 来源：`reports/operations/ignition-134-step05-current-path-manifest-r1.md`
+  - 依赖：—；被引用：—
+- [This is a local contract/conformance result only. It is not evidence that any installed provider or executor is live-sel](../../../reports/operations/ignition-142-step05-offline-conformance.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c3fdd92d615301e4 / This is a local contract/conformance result only. It is not evidence that any installed provider or executor is live-sel
+  - 来源：`reports/operations/ignition-142-step05-offline-conformance.md`
+  - 依赖：—；被引用：—
+- [This is a repository-local integrity and metadata-governance audit. It does not promote scholarly metadata to evidence,](../../../reports/operations/ignition-172-20260915-step10-global-corpus-qa.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c56264b31c7b674f / This is a repository-local integrity and metadata-governance audit. It does not promote scholarly metadata to evidence,
+  - 来源：`reports/operations/ignition-172-20260915-step10-global-corpus-qa.md`
   - 依赖：—；被引用：—

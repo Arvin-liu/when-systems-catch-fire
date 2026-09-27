@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [Within the source-defined scope, 容斥加速-波动累积联合函数 is adjudicated as RELATION: M7的容斥加速放大D342波动累积：E\[ΣΔΦ\]_accelerated = ΣE\[ΔΦᵢ](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D362 / Within the source-defined scope, 容斥加速-波动累积联合函数 is adjudicated as RELATION: M7的容斥加速放大D342波动累积：E\[ΣΔΦ\]_accelerated = ΣE\[ΔΦᵢ
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：D342；被引用：—
-- [Within the source-defined scope, 容斥加速临界函数 is adjudicated as RELATION: M7的容斥加速临界点取决于pᵢ增长模式：pᵢ线性增长→Σpᵢpⱼ∝t²（可控），pᵢ指数增长→Σpᵢ](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D268 / Within the source-defined scope, 容斥加速临界函数 is adjudicated as RELATION: M7的容斥加速临界点取决于pᵢ增长模式：pᵢ线性增长→Σpᵢpⱼ∝t²（可控），pᵢ指数增长→Σpᵢ
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
-- [Within the source-defined scope, 容斥加速跨域标度函数 is adjudicated as RELATION: M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n](../../../data/foundation/adjudications/core-kernel.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
-  - 可搜索名称：CLAIM-D320 / Within the source-defined scope, 容斥加速跨域标度函数 is adjudicated as RELATION: M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n
-  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
-  - 依赖：—；被引用：—
 - [Within the source-defined scope, 容斥加速逆转条件函数 is adjudicated as PREDICATE: M7的容斥加速逆转条件：p_max相对下降速率\|α_max\|/p_max必须超过其他pᵢ平均相](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D290 / Within the source-defined scope, 容斥加速逆转条件函数 is adjudicated as PREDICATE: M7的容斥加速逆转条件：p_max相对下降速率\|α_max\|/p_max必须超过其他pᵢ平均相
@@ -2504,3 +2489,18 @@
   - 可搜索名称：NFC-7f4460a1cf19bd8a / \| \[D269\]\( \) \| \[阶段过渡锐度函数\]\( \) \| F_{D269}\(x\) := M9的阶段过渡锐度由Φ高阶导数决定：阶段1→2∝\\\|d
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D269；被引用：—
+- [\| \[D274\]\( \) \| \[良性循环收敛速度函数\]\( \) \| F_{D274}\(x\) := M14良性循环收敛速度由反馈增益K∝\\\|∂](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-17eed73d0163f501 / \| \[D274\]\( \) \| \[良性循环收敛速度函数\]\( \) \| F_{D274}\(x\) := M14良性循环收敛速度由反馈增益K∝\\\|∂
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D274；被引用：—
+- [\| \[D276\]\( \) \| \[D158预测失效阈值函数\]\( \) \| F_{D276}\(x\) := M1的ΔΦ导致D158预测误差](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4ceb1c009ef02b74 / \| \[D276\]\( \) \| \[D158预测失效阈值函数\]\( \) \| F_{D276}\(x\) := M1的ΔΦ导致D158预测误差
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D158, D276；被引用：—
+- [\| \[D277\]\( \) \| \[统一健康指标函数\]\( \) \| F_{D277}\(x\) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-760346cf16172c8d / \| \[D277\]\( \) \| \[统一健康指标函数\]\( \) \| F_{D277}\(x\) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D277；被引用：—

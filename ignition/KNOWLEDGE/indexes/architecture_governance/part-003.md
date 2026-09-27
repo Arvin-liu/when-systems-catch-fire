@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [class EvidenceRequest:](../../../reos_vnext/contract.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-4af0dc121c7d0dc1 / class EvidenceRequest:
+  - 来源：`reos_vnext/contract.py`
+  - 依赖：—；被引用：—
 - [Classic Problems Benchmark Dataset](../../../data/schemas/classic_problems_benchmark.schema.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-2d5cf18b4ed756c1 / Classic Problems Benchmark Dataset
@@ -2498,9 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
   - 可搜索名称：IMPLICIT-BCC4972518EE8F84 / def _timestamp_or_marker\(value: Any, field: str, *, allow_not_applicable: bool = False\) -> None: / IMPLICIT-BCC4972518EE8F84
   - 来源：`agent_federation/live_attempt_ledger.py`
-  - 依赖：—；被引用：—
-- [def _trace\(self, inputs\):](../../../function-os-candidate/v0.2/tests/test_n6_robust.py)
-  - 类型/状态：`FUNCTION_ASSET` · `KEEP_AS_ALGORITHM`
-  - 可搜索名称：IMPLICIT-FD7F21DC1210DE34 / def _trace\(self, inputs\): / IMPLICIT-FD7F21DC1210DE34
-  - 来源：`function-os-candidate/v0.2/tests/test_n6_robust.py`
   - 依赖：—；被引用：—

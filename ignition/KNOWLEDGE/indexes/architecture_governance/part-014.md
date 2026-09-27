@@ -4,26 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [材料错误指输入本身有误，包括案例、史料、数据、转述或对象定义不准确。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-accbd8ec1a61ef7b / 材料错误指输入本身有误，包括案例、史料、数据、转述或对象定义不准确。
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [材料错误（实验数据错误）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-8401d8220403ae41 / 材料错误（实验数据错误）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [材料错误（数据错误）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-b528c01116003f29 / 材料错误（数据错误）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [材料错误（文本错误、实验数据错误）](../../../outputs/getbrain/classic-problems-benchmark-supplement-20260707.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-bdc120f9d2fb34bd / 材料错误（文本错误、实验数据错误）
-  - 来源：`outputs/getbrain/classic-problems-benchmark-supplement-20260707.md`
-  - 依赖：—；被引用：—
 - [条 empirical obligations — 需要经验证据、实验或外部来源](../../../reports/foundation-architecture/084-max-adjudication-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-77ff737af04b16f1 / 条 empirical obligations — 需要经验证据、实验或外部来源
@@ -2503,4 +2483,24 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-85cf9801664d358b / 遮蔽=退相干环境 — 组织信息透明度实验-H=0.1时τ_decoherence=50年,H=0.5时τ=10年,H=0.9时τ=1年。遮蔽
   - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-98aa7f7d1e80b626 / 部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
+- [部分成立 = 部分验证通过（停留在L1层，缺乏L2层涌现）](../../../docs/phi_meta_law.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-9e5b3a7098f71275 / 部分成立 = 部分验证通过（停留在L1层，缺乏L2层涌现）
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [重整化群门槛标度案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-49ab0715cd940c7b / 重整化群门槛标度案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [重算轴覆盖（与执行报告一致，证实 250 分母正确）](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-faddbf78e3156e64 / 重算轴覆盖（与执行报告一致，证实 250 分母正确）
+  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
   - 依赖：—；被引用：—

@@ -46,6 +46,42 @@ TASK220_FREEZE_RELATIVE = Path(
 TASK220_FREEZE_SIDECAR_RELATIVE = Path(
     "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/freeze/FREEZE-MANIFEST.sha256"
 )
+TASK225_SUCCESSOR_SOURCE_PATH = "ignition/docs/foundation/nonfunction-claim-adjudication-index.md"
+TASK225_SUCCESSOR_SOURCE_SHA256 = "054b1fffead021954873c6859dc668763d15914d81443ff0a4a0046eeb124b7d"
+TASK225_TASK220_SOURCE_SHA256 = "53739d2ecac1e391dd04cbb441b8057725508d46a8c4b8202cafdb53246c0716"
+TASK225_FIRE_SEED_CENSUS_PATH = "ignition/data/publication/fire-seeds/seed-census.json"
+TASK225_FIRE_SEED_CENSUS_SHA256 = "4e396ca2aeb6f862fec94165b8517d8c6354d9a2cc6359997973ad704457c31d"
+TASK225_SUCCESSOR_PARENT_TASK = "IGNITION-20260926-220"
+TASK225_SUCCESSOR_PARENT_COMMIT = "8989a7c58e602f1e02c5de95af1cde418ad827a9"
+TASK225_SUCCESSOR_PROVENANCE = {
+    "historical_parent_task": "IGNITION-20260926-220",
+    "historical_parent_commit": "8989a7c58e602f1e02c5de95af1cde418ad827a9",
+    "reason": "REPOSITORY_TRACKED_FILE_CENSUS_CHANGED",
+    "tracked_file_census_before": 6811,
+    "tracked_file_census_after": 6868,
+    "scientific_claim_promotion": False,
+}
+TASK225_SUCCESSOR_SOURCE_DELTA_BEFORE = "已核算跟踪文件：6811".encode("utf-8")
+TASK225_SUCCESSOR_SOURCE_DELTA_AFTER = "已核算跟踪文件：6868".encode("utf-8")
+TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS = {
+    "ignition/data/governance/knowledge-experience/asset-cards.jsonl": "24ca2802df1062de79428651da938e83fa0e1ab9e23aebb2201d67893e92bbb8",
+    "ignition/data/governance/knowledge-experience/layered-reading.jsonl": "12c2014a86d28ee58d9a32fce542e6c81a8e17016f9a7b19d812efe8a16354d0",
+    "ignition/data/governance/knowledge-experience/manifest.json": "186a08a6c10f4bbd48d2f31861b194617734f004f91b8a974533d0890e3edecb",
+    "ignition/data/governance/knowledge-experience/search-index.jsonl": "d783071e7d7cc05c068cceb3b35a75d7b8f0ffa55543feedeb49016bb3bb1d1e",
+}
+TASK225_REPLACEMENT_PATHS = frozenset({
+    "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
+    "ignition/data/governance/knowledge-experience/layered-reading.jsonl",
+    "ignition/data/governance/knowledge-experience/manifest.json",
+    "ignition/data/governance/knowledge-experience/search-index.jsonl",
+})
+HUMAN_RESULTS_EXCLUDED_PREFIXES = frozenset({
+    "docs/generated/",
+    "reports/readme/",
+    "reports/evaluations/ignition-207-prompt-neutral-skill-method-disentanglement-r0/",
+    "reports/evaluations/ignition-225-cognitive-evolution-r0-1/",
+    "outputs/TASK225-R01-",
+})
 ALLOWED_CHANGED_PREFIXES = (
     "ignition/agent_runtime/cognitive_inheritance_r0/",
     # Evaluation-plane work is a separate, non-canonical evidence surface.
@@ -82,7 +118,7 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/RESULTS/CHRONOLOGY.md",
     "ignition/data/governance/human-results/census.json",
     "ignition/data/governance/human-results/result-ledger.jsonl",
-    # Task207-only human-results isolation config exception; do not widen config allowances.
+    # Task207 + Task225 exact-scoped human-results isolation; do not widen config allowances.
     "ignition/data/governance/human-results/config.json",
     "ignition/data/governance/knowledge-experience/asset-cards.jsonl",
     # Task187 evaluation reports are explicitly excluded from Knowledge
@@ -123,6 +159,8 @@ ALLOWED_CHANGED_FILES = frozenset({
     "ignition/KNOWLEDGE/cards/part-013.md",
     "ignition/KNOWLEDGE/cards/part-014.md",
     "ignition/KNOWLEDGE/cards/part-015.md",
+    # The Task225 deterministic corpus rebuild removes the now-empty final card partition.
+    "ignition/KNOWLEDGE/cards/part-018.md",
     "ignition/KNOWLEDGE/indexes/architecture_governance.md",
     "ignition/KNOWLEDGE/indexes/architecture_governance/part-003.md",
     "ignition/KNOWLEDGE/indexes/architecture_governance/part-004.md",
@@ -325,6 +363,84 @@ def load_task220_freeze(repo_root: Path) -> dict[str, Any] | None:
     return freeze
 
 
+def task220_source_bytes(repo_root: Path) -> bytes:
+    result = subprocess.run(
+        ["git", "show", f"{TASK225_SUCCESSOR_PARENT_COMMIT}:{TASK225_SUCCESSOR_SOURCE_PATH}"],
+        cwd=repo_root,
+        capture_output=True,
+        check=False,
+    )
+    require(result.returncode == 0, "Task220 upstream source cannot be read from its frozen parent commit")
+    return result.stdout
+
+
+def validate_task225_successor_lock(
+    repo_root: Path,
+    *,
+    task220_source: bytes | None = None,
+) -> dict[str, str]:
+    """Validate the inline, exact Task225 source and projection successor lock."""
+    require(TASK225_SUCCESSOR_PARENT_TASK == "IGNITION-20260926-220", "Task225 successor parent task differs")
+    require(
+        TASK225_SUCCESSOR_PARENT_COMMIT == "8989a7c58e602f1e02c5de95af1cde418ad827a9",
+        "Task225 successor parent commit differs",
+    )
+    require(
+        TASK225_SUCCESSOR_PROVENANCE == {
+            "historical_parent_task": "IGNITION-20260926-220",
+            "historical_parent_commit": "8989a7c58e602f1e02c5de95af1cde418ad827a9",
+            "reason": "REPOSITORY_TRACKED_FILE_CENSUS_CHANGED",
+            "tracked_file_census_before": 6811,
+            "tracked_file_census_after": 6868,
+            "scientific_claim_promotion": False,
+        },
+        "Task225 successor provenance differs",
+    )
+    require(
+        set(TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS) == TASK225_REPLACEMENT_PATHS,
+        "Task225 inline replacement inventory differs from the exact four paths",
+    )
+    for path, expected_sha in TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS.items():
+        require(
+            isinstance(expected_sha, str)
+            and len(expected_sha) == 64
+            and all(char in "0123456789abcdef" for char in expected_sha),
+            f"Task225 inline replacement has invalid SHA-256 for {path}",
+        )
+
+    source_path = repo_root / TASK225_SUCCESSOR_SOURCE_PATH
+    require(source_path.is_file(), "Task225 successor upstream source is missing")
+    current_source = source_path.read_bytes()
+    require(
+        hashlib.sha256(current_source).hexdigest() == TASK225_SUCCESSOR_SOURCE_SHA256,
+        "Task225 successor upstream source hash differs from the inline lock",
+    )
+    historical_source = task220_source if task220_source is not None else task220_source_bytes(repo_root)
+    require(
+        hashlib.sha256(historical_source).hexdigest() == TASK225_TASK220_SOURCE_SHA256,
+        "Task220 upstream source hash differs from the inline lock",
+    )
+    require(
+        historical_source.count(TASK225_SUCCESSOR_SOURCE_DELTA_BEFORE) == 1
+        and current_source.count(TASK225_SUCCESSOR_SOURCE_DELTA_AFTER) == 1
+        and historical_source.replace(
+            TASK225_SUCCESSOR_SOURCE_DELTA_BEFORE,
+            TASK225_SUCCESSOR_SOURCE_DELTA_AFTER,
+            1,
+        ) == current_source,
+        "Task225 successor source differs beyond the exact 6811-to-6868 census token",
+    )
+
+    for path, expected_sha in TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS.items():
+        artifact = repo_root / path
+        require(artifact.is_file(), f"Task225 successor projection is missing: {path}")
+        require(
+            hashlib.sha256(artifact.read_bytes()).hexdigest() == expected_sha,
+            f"Task225 inline successor projection hash mismatch: {path}",
+        )
+    return dict(TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS)
+
+
 def task220_projection_hashes(repo_root: Path, section_name: str) -> dict[str, str]:
     freeze = load_task220_freeze(repo_root)
     if freeze is None:
@@ -332,6 +448,8 @@ def task220_projection_hashes(repo_root: Path, section_name: str) -> dict[str, s
     section = freeze.get(section_name, {})
     entries = section.get("files", [])
     paths: dict[str, str] = {}
+    replacements: dict[str, str] = {}
+    mismatched_paths: set[str] = set()
     for entry in entries:
         path = entry.get("path")
         expected_sha = entry.get("sha256")
@@ -354,8 +472,33 @@ def task220_projection_hashes(repo_root: Path, section_name: str) -> dict[str, s
         artifact = repo_root / path
         require(artifact.is_file(), f"Task220 frozen projection is missing: {path}")
         actual_sha = hashlib.sha256(artifact.read_bytes()).hexdigest()
-        require(actual_sha == expected_sha, f"Task220 frozen projection hash mismatch: {path}")
+        if actual_sha != expected_sha:
+            mismatched_paths.add(path)
         paths[path] = expected_sha
+    if section_name == "external_generated_knowledge_experience" and len(paths) == 109:
+        replacements = validate_task225_successor_lock(repo_root)
+    for path in mismatched_paths:
+        if (
+            section_name == "external_generated_fire_seed_census"
+            and path == TASK225_FIRE_SEED_CENSUS_PATH
+            and hashlib.sha256((repo_root / path).read_bytes()).hexdigest()
+            == TASK225_FIRE_SEED_CENSUS_SHA256
+        ):
+            continue
+        require(
+            path in replacements
+            and hashlib.sha256((repo_root / path).read_bytes()).hexdigest() == replacements[path],
+            f"Task220 frozen projection hash mismatch: {path}",
+        )
+    if section_name == "external_generated_knowledge_experience" and replacements:
+        require(
+            len(paths) == 109,
+            f"Task220 Knowledge Experience projection count differs from 109: {len(paths)}",
+        )
+        require(
+            mismatched_paths == set(replacements),
+            "Task225 replacement paths do not exactly match Task220 projection mismatches",
+        )
     if section_name == "external_generated_fire_seed_census" and entries:
         require(
             set(paths) == {
@@ -372,6 +515,11 @@ def task217_generated_knowledge_paths(repo_root: Path) -> set[str]:
     if freeze is None:
         return set()
     task220_hashes = task220_projection_hashes(repo_root, "external_generated_knowledge_experience")
+    task225_replacements = (
+        validate_task225_successor_lock(repo_root)
+        if len(task220_hashes) == 109
+        else {}
+    )
     knowledge = freeze.get("external_generated_knowledge_experience", {})
     entries = knowledge.get("files", [])
     paths: set[str] = set()
@@ -388,13 +536,38 @@ def task217_generated_knowledge_paths(repo_root: Path) -> set[str]:
         require(artifact.is_file(), f"Task217 frozen knowledge-experience projection is missing: {path}")
         actual_sha = hashlib.sha256(artifact.read_bytes()).hexdigest()
         require(
-            actual_sha == expected_sha or task220_hashes.get(path) == actual_sha,
+            actual_sha == expected_sha
+            or task220_hashes.get(path) == actual_sha
+            or task225_replacements.get(path) == actual_sha,
             f"Task217 frozen knowledge-experience projection hash mismatch without a Task220 frozen replacement: {path}",
         )
         paths.add(path)
     for path in task220_hashes:
         paths.add(path)
     return paths
+
+
+def task225_projection_chain_coverage(repo_root: Path) -> dict[str, str] | None:
+    historical = task220_projection_hashes(repo_root, "external_generated_knowledge_experience")
+    if len(historical) != 109:
+        return None
+    replacements = validate_task225_successor_lock(repo_root)
+    unchanged = sum(
+        hashlib.sha256((repo_root / path).read_bytes()).hexdigest() == expected_sha
+        for path, expected_sha in historical.items()
+    )
+    replaced = sum(
+        hashlib.sha256((repo_root / path).read_bytes()).hexdigest() == replacement_sha
+        for path, replacement_sha in replacements.items()
+    )
+    require(unchanged == 105, f"Task220 unchanged Knowledge projection coverage differs: {unchanged}/109")
+    require(replaced == 4, f"Task225 exact successor replacement coverage differs: {replaced}/4")
+    require(len(historical) == 109 and len(replacements) == 4, "Task225 effective projection inventory differs")
+    return {
+        "task220_unchanged": "105/109",
+        "task225_exact_successor_replacements": "4/4",
+        "effective_projection_chain_coverage": "109/109",
+    }
 
 
 def task217_generated_fire_seed_paths(repo_root: Path) -> set[str]:
@@ -418,7 +591,12 @@ def task217_generated_fire_seed_paths(repo_root: Path) -> set[str]:
         require(artifact.is_file(), f"Task217 frozen Fire Seeds projection is missing: {path}")
         actual_sha = hashlib.sha256(artifact.read_bytes()).hexdigest()
         require(
-            actual_sha == expected_sha or task220_hashes.get(path) == actual_sha,
+            actual_sha == expected_sha
+            or task220_hashes.get(path) == actual_sha
+            or (
+                path == TASK225_FIRE_SEED_CENSUS_PATH
+                and actual_sha == TASK225_FIRE_SEED_CENSUS_SHA256
+            ),
             f"Task217 frozen Fire Seeds projection hash mismatch without a Task220 frozen replacement: {path}",
         )
         paths.add(path)
@@ -476,6 +654,23 @@ def is_allowed_changed_path(path: str, exact_extra_paths: set[str] | frozenset[s
     return path in ALLOWED_CHANGED_FILES or path.startswith(ALLOWED_CHANGED_PREFIXES) or path in exact_extra_paths
 
 
+def validate_human_results_excluded_prefixes(prefixes: Any) -> None:
+    """Permit only the pre-existing exclusions plus Task225's two exact prefixes."""
+    require(isinstance(prefixes, list), "human-results excluded_prefixes must be a list")
+    require(all(isinstance(prefix, str) for prefix in prefixes), "human-results exclusions must be strings")
+    require(len(prefixes) == len(set(prefixes)), "human-results exclusions contain duplicates")
+    require(
+        set(prefixes) == HUMAN_RESULTS_EXCLUDED_PREFIXES,
+        "human-results exclusions differ from the exact Task207 + Task225 isolation policy",
+    )
+
+
+def validate_human_results_isolation(root: Path) -> None:
+    config = read_json(root / "data/governance/human-results/config.json")
+    require(isinstance(config, dict), "human-results config must be an object")
+    validate_human_results_excluded_prefixes(config.get("excluded_prefixes"))
+
+
 def validate_migration(r0: Path, migration_record: dict[str, Any]) -> None:
     source = read_json(r0 / "fixtures/migration-r0a.json")
     expected = read_json(r0 / "fixtures/migration-r0b.expected.json")
@@ -518,6 +713,8 @@ def validate_all(repo_root: Path) -> dict[str, Any]:
     migration_record = read_json(fixtures / "migration-record-r0.json")
     validate_schema(migration_record, schema / "migration-record-r0.schema.json", "migration record")
 
+    validate_human_results_isolation(root)
+
     validate_transition(read_json(fixtures / "content-research-transition.json"), content_ir, "content transition")
     validate_transition(read_json(fixtures / "engineering-baseline-transition.json"), engineering_ir, "engineering transition")
     validate_real_source_bindings(root, content_fixture, engineering_fixture)
@@ -555,6 +752,7 @@ def validate_all(repo_root: Path) -> dict[str, Any]:
         validate_no_forbidden_fields(read_json(path))
     foundation_discovery_paths = validate_foundation_discovery_boundary(root, r0)
     validate_changed_paths(root)
+    projection_chain_coverage = task225_projection_chain_coverage(root.parent)
 
     return {
         "status": "PASS",
@@ -570,6 +768,7 @@ def validate_all(repo_root: Path) -> dict[str, Any]:
             "candidate_fragments": 0,
             "canonical_claim_ids": 0,
         },
+        "projection_chain_coverage": projection_chain_coverage,
         "model_rsi_or_weight_training": "NOT_PRESENT",
         "checked_json_files": len(all_json),
     }

@@ -158,11 +158,7 @@
         "decision",
         "行动",
         "feedback",
-        "路径积分",
-        "cognitive evolution",
-        "blind evaluation",
-        "Task225",
-        "R0.1"
+        "路径积分"
       ]
     },
     {
@@ -218,10 +214,7 @@
         "审计",
         "验证",
         "迁移",
-        "CI",
-        "evaluation",
-        "benchmark",
-        "pre-output design gate"
+        "CI"
       ]
     }
   ],
@@ -345,26 +338,6 @@
         "PHYSICS_UNIFICATION_NOGO",
         "FOUR_FORCE_UNIFICATION_CLAIM"
       ]
-    },
-    {
-      "change_id": "CHG-TASK225-R01-DESIGN-20260927",
-      "date": "2026-09-27",
-      "change_type": "ITERATION_OR_REPOSITORY_RESULT",
-      "title": "Task225 R0.1 repaired pre-output design gate",
-      "summary": "The repaired Task225 R0.1 pre-output design passed all four fixed validity gates in each of three families after four-role review. This records design readiness only; experimental outputs, evaluator results, causal claims, and lifecycle promotion are not asserted.",
-      "status": "PRE_OUTPUT_DESIGN_GATE_PASS_PENDING_EXACT_HEAD_CI_AND_EXPERIMENT",
-      "sources": [
-        "reports/evaluations/ignition-225-cognitive-evolution-r0-1/README.md",
-        "reports/evaluations/ignition-225-cognitive-evolution-r0-1/design/repair-round-3/ROUND-3-ASSESSMENT.md",
-        "reports/evaluations/ignition-225-cognitive-evolution-r0-1/PRE-FREEZE-DESIGN-GATE-FAILURE-01.md",
-        "reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/m0.md",
-        "reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md",
-        "reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md",
-        "reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md",
-        "reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md",
-        "reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md"
-      ],
-      "supersedes": []
     }
   ],
   "required_historical_aliases": [

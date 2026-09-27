@@ -4,26 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [for field, values in \(\("pending_work", pending_work\), \("allowed_capabilities", allowed_capabilities\), \("workspace_refs",](../../../agent_federation/approval_handoff.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9a09fb98abc5709d / for field, values in \(\("pending_work", pending_work\), \("allowed_capabilities", allowed_capabilities\), \("workspace_refs",
-  - 来源：`agent_federation/approval_handoff.py`
-  - 依赖：—；被引用：—
-- [for item in raw_artifacts:](../../../agent_federation/adapters/openclaw.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-dc21cfca1ca3d67e / for item in raw_artifacts:
-  - 来源：`agent_federation/adapters/openclaw.py`
-  - 依赖：—；被引用：—
-- [Fresh-clone current-state, task-lineage, map, facts, geometry, component-profile, Steering adversarial, compile, diff, a](../../../agent-results/IGNITION-20260821-129-result.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-ef3c0f8ec633ad75 / Fresh-clone current-state, task-lineage, map, facts, geometry, component-profile, Steering adversarial, compile, diff, a
-  - 来源：`agent-results/IGNITION-20260821-129-result.md`
-  - 依赖：—；被引用：—
-- [from .adapters.openclaw import OpenClawAdapter](../../../agent_federation/pilots.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-e505f07dd0615462 / from .adapters.openclaw import OpenClawAdapter
-  - 来源：`agent_federation/pilots.py`
-  - 依赖：—；被引用：—
 - [from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAd](../../../agent_federation/__init__.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-7915d23723117771 / from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAd
@@ -759,16 +739,6 @@
   - 可搜索名称：NFC-c79fb4c7cd3b06e6 / method_boundary: the Operating Method governs how an Agent uses Ignition; the Iteration Method governs how Ignition chan
   - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
-- [Neutral revision prompt R0.1](../../ASSET-CARDS.md#asset-hr-e238b4758f74690c)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Neutral revision prompt R0.1 / PROMPT
-  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/revision/PROMPT.md`
-  - 依赖：—；被引用：—
-- [Neutral transfer prompt R0.1](../../ASSET-CARDS.md#asset-hr-3049375aa44bab4c)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Neutral transfer prompt R0.1 / PROMPT
-  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/transfer/PROMPT.md`
-  - 依赖：—；被引用：—
 - [never promoted to an `AGENTIC_EXECUTOR` by the gate, and a long-term open](../../../docs/architecture/external-agent-federation-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-5b8c5882ac875194 / never promoted to an `AGENTIC_EXECUTOR` by the gate, and a long-term open
@@ -1103,11 +1073,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8be11e01b0e9287b / Positive claims must still be tied to evidence, version, test scope, and boundary conditions. Negative feedback is not t
   - 来源：`.github/SUPPORT.md`
-  - 依赖：—；被引用：—
-- [PRE-FREEZE-DESIGN-GATE-FAILURE-01](../../ASSET-CARDS.md#asset-hr-58ed1fb6e2d344cc)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：PRE-FREEZE-DESIGN-GATE-FAILURE-01 / PRE-FREEZE-DESIGN-GATE-FAILURE-01
-  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/PRE-FREEZE-DESIGN-GATE-FAILURE-01.md`
   - 依赖：—；被引用：—
 - [Preregistered Outcome Rule R2](../../ASSET-CARDS.md#asset-hr-27f02cb6238db1a2)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -2389,11 +2354,6 @@
   - 可搜索名称：Task220 disagreement register / disagreement-register
   - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/design/disagreement-register.md`
   - 依赖：—；被引用：—
-- [Task225 Cognitive Evolution R0.1](../../ASSET-CARDS.md#asset-hr-60329619ab8de109)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Task225 Cognitive Evolution R0.1 / README
-  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/README.md`
-  - 依赖：—；被引用：—
 - [terminal_state="COMPLETED_VALIDATED",](../../../agent_federation/pilots.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-3d2713b4350057f8 / terminal_state="COMPLETED_VALIDATED",
@@ -2503,4 +2463,44 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-f86694bd3f8612e7 / The new source domain is `agent_platform.federation`; it is forbidden from directly generating Knowledge, Writing, Human
   - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [The public GPT-to-Babel-to-JavaScript execution/refinement pipeline compiles task/state/feedback and prior skills into r](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-f1c2d5318e9334e5 / The public GPT-to-Babel-to-JavaScript execution/refinement pipeline compiles task/state/feedback and prior skills into r
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl`
+  - 依赖：—；被引用：—
+- [The residual delta matrix passes 18/18. The live ledger preserves the historical Task104–106 mismatch and environmental](../../../agent-results/IGNITION-20260822-134-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-37bd7645ad113fae / The residual delta matrix passes 18/18. The live ledger preserves the historical Task104–106 mismatch and environmental
+  - 来源：`agent-results/IGNITION-20260822-134-result.md`
+  - 依赖：—；被引用：—
+- [The scan found 14 candidates: 5 AGENTIC_EXECUTOR records \(4 installed\), 4 REASONER_RUNTIME records, 3 TOOL_ONLY records](../../../reports/operations/ignition-140-step09-local-executor-census-and-selection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-542b276709c82a6b / The scan found 14 candidates: 5 AGENTIC_EXECUTOR records \(4 installed\), 4 REASONER_RUNTIME records, 3 TOOL_ONLY records
+  - 来源：`reports/operations/ignition-140-step09-local-executor-census-and-selection.md`
+  - 依赖：—；被引用：—
+- [The State Changelog validator retains historical/source-transition field and base-tip residuals in append-only entries;](../../../agent-results/IGNITION-20260822-132-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f5d611d4adaaace5 / The State Changelog validator retains historical/source-transition field and base-tip residuals in append-only entries;
+  - 来源：`agent-results/IGNITION-20260822-132-result.md`
+  - 依赖：—；被引用：—
+- [The validator consumes a public, already-captured candidate record. It never](../../../agent_federation/task142_first_completion_validator.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-c16a40ff15f78a9e / The validator consumes a public, already-captured candidate record. It never
+  - 来源：`agent_federation/task142_first_completion_validator.py`
+  - 依赖：—；被引用：—
+- [The writer owns an attempt-specific raw spool. ``LiveCaptureCapsule`` never](../../../agent_federation/live_capture.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5a6b51ad74508a59 / The writer owns an attempt-specific raw spool. ``LiveCaptureCapsule`` never
+  - 来源：`agent_federation/live_capture.py`
+  - 依赖：—；被引用：—
+- [They were regenerated by the official generator, not hand-edited. The final resulting checks passed: Human Results `reco](../../../agent-results/IGNITION-20260915-178-result.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-ae7dd015db115a5c / They were regenerated by the official generator, not hand-edited. The final resulting checks passed: Human Results `reco
+  - 来源：`agent-results/IGNITION-20260915-178-result.md`
+  - 依赖：—；被引用：—
+- [This coordinator never selects a goal, grants permission, or interprets an](../../../agent_federation/live_orchestration.py)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-04d459a81b3da41f / This coordinator never selects a goal, grants permission, or interprets an
+  - 来源：`agent_federation/live_orchestration.py`
   - 依赖：—；被引用：—

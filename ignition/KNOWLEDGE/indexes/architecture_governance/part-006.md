@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Exact arXiv v1 hash/size, all-28-page visual/full-text and official SDK/model/dataset snapshot audit retained PARTIAL su](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-678f1af76affdfee / Exact arXiv v1 hash/size, all-28-page visual/full-text and official SDK/model/dataset snapshot audit retained PARTIAL su
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
 - [Exact arXiv v2 and official ICML/PMLR identity/hash/size, all-23-page visual/full-text, complete official source/history](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-e9820e77eefeb501 / Exact arXiv v2 and official ICML/PMLR identity/hash/size, all-23-page visual/full-text, complete official source/history
@@ -388,11 +393,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-4acb10c268063792 / fake-CLI lifecycle evidence only; no real Codex inference, validated live
   - 来源：`reports/operations/ignition-138-step04-codex-adapter-r3.md`
-  - 依赖：—；被引用：—
-- [FAMILY03 A — successor-visible case facts](../../ASSET-CARDS.md#asset-hr-3ba058f0ecc8ef28)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：FAMILY03 A — successor-visible case facts / A
-  - 来源：`reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY03/cases/A.md`
   - 依赖：—；被引用：—
 - [Fausey 等（2010）的英语／日语意外事件研究只支持任务内的施事描述和记忆差异，不支持“日本人淡化责任”等文化本质结论。日语证据性分类在不同理论中口径不一，因此配置明确留为分析争议。](../../../docs/language-thought/profile-source-review.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`

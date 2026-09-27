@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [该案例对应 D579《阅历赤字解决》，用于补充该函数在具体对象上的验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-5f9ff66e6ed91f72 / 该案例对应 D579《阅历赤字解决》，用于补充该函数在具体对象上的验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D579；被引用：—
-- [该案例对应 D580《边缘革命》，用于补充该函数在具体对象上的验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-da4e3a97177d53b2 / 该案例对应 D580《边缘革命》，用于补充该函数在具体对象上的验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D580；被引用：—
-- [该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-8d4f2652d2132e1a / 该案例对应 D581《信息茧房破解》，用于补充该函数在具体对象上的验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D581；被引用：—
 - [该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e7cd0f413d2208b2 / 该案例对应 D582《堆肥法》，用于补充该函数在具体对象上的验证。

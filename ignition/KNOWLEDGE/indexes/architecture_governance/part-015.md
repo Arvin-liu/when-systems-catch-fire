@@ -4,26 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未](../../../reports/external-research/104-dual-088-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-98aa7f7d1e80b626 / 部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未
-  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
-  - 依赖：—；被引用：—
-- [部分成立 = 部分验证通过（停留在L1层，缺乏L2层涌现）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-9e5b3a7098f71275 / 部分成立 = 部分验证通过（停留在L1层，缺乏L2层涌现）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [重整化群门槛标度案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-49ab0715cd940c7b / 重整化群门槛标度案例验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [重算轴覆盖（与执行报告一致，证实 250 分母正确）](../../../reports/foundation-architecture/088-087-count-and-denominator-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-faddbf78e3156e64 / 重算轴覆盖（与执行报告一致，证实 250 分母正确）
-  - 来源：`reports/foundation-architecture/088-087-count-and-denominator-audit.md`
-  - 依赖：—；被引用：—
 - [量化竞赛转化**：专业成长 → 可量化指标（磨课轮数、获奖等级、AI 课堂分析数据）。](../../../outputs/collisions/20260708-teacher-competition/collision-report.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-ff4ee677a662de46 / 量化竞赛转化**：专业成长 → 可量化指标（磨课轮数、获奖等级、AI 课堂分析数据）。

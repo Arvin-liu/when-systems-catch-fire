@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [\| \[D274\]\( \) \| \[良性循环收敛速度函数\]\( \) \| F_{D274}\(x\) := M14良性循环收敛速度由反馈增益K∝\\\|∂](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-17eed73d0163f501 / \| \[D274\]\( \) \| \[良性循环收敛速度函数\]\( \) \| F_{D274}\(x\) := M14良性循环收敛速度由反馈增益K∝\\\|∂
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D274；被引用：—
-- [\| \[D276\]\( \) \| \[D158预测失效阈值函数\]\( \) \| F_{D276}\(x\) := M1的ΔΦ导致D158预测误差](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4ceb1c009ef02b74 / \| \[D276\]\( \) \| \[D158预测失效阈值函数\]\( \) \| F_{D276}\(x\) := M1的ΔΦ导致D158预测误差
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D158, D276；被引用：—
-- [\| \[D277\]\( \) \| \[统一健康指标函数\]\( \) \| F_{D277}\(x\) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-760346cf16172c8d / \| \[D277\]\( \) \| \[统一健康指标函数\]\( \) \| F_{D277}\(x\) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D277；被引用：—
 - [\| \[D281\]\( \) \| \[极小点漂移-鲁棒性耦合函数\]\( \) \| F_{D281}\(x\) := M2的极小点漂移对鲁棒性](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1da69536ebd9ac11 / \| \[D281\]\( \) \| \[极小点漂移-鲁棒性耦合函数\]\( \) \| F_{D281}\(x\) := M2的极小点漂移对鲁棒性
@@ -2503,4 +2488,19 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-8e71f57cde799174 / 不归点-吸引域边界统一函数
   - 来源：`data/foundation/formal-objects/objects.jsonl`
+  - 依赖：—；被引用：—
+- [不得把地图坐标、视觉邻近、演进阶段或依赖关系写成事实证明、同构或机制因果。地图不能替代 registry、矩阵、schema、测试或来源工件。](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-858a3f72160d190c / 不得把地图坐标、视觉邻近、演进阶段或依赖关系写成事实证明、同构或机制因果。地图不能替代 registry、矩阵、schema、测试或来源工件。
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [不得把邻接、相似性、中心性、社群、检索、自述或行为变化升级为真理、价值、因果或内部学习机制证明。](../../../AI-HANDOFF.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
+  - 可搜索名称：NFC-2cdc9226a7e7b1d1 / 不得把邻接、相似性、中心性、社群、检索、自述或行为变化升级为真理、价值、因果或内部学习机制证明。
+  - 来源：`AI-HANDOFF.md`
+  - 依赖：—；被引用：—
+- [不把故事化、碰撞或单材料结论写成证明。](../../../docs/math-foundation/06-audit-and-correction-protocol.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-7fc6a1955b4ab9dd / 不把故事化、碰撞或单材料结论写成证明。
+  - 来源：`docs/math-foundation/06-audit-and-correction-protocol.md`
   - 依赖：—；被引用：—

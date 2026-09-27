@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [title: "空间集中性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3CE2FEDB5CCB3831 / title: "空间集中性函数" / IMPLICIT-3CE2FEDB5CCB3831
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "纯拉力上位衰减函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-266717E44AF1E53E / title: "纯拉力上位衰减函数" / IMPLICIT-266717E44AF1E53E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "经典确定性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-093F6C31C7C9037B / title: "经典确定性函数" / IMPLICIT-093F6C31C7C9037B / IMPLICIT-54050DBB3CB4E918
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
 - [title: "经典问题差分函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C6C51AEC80D09458 / title: "经典问题差分函数" / IMPLICIT-C6C51AEC80D09458
@@ -2504,3 +2489,18 @@
   - 可搜索名称：CLAIM-D348 / Within the source-defined scope, 容斥加速-时间权重联合函数 is adjudicated as METRIC: M7的容斥加速使D316转折点提前：无加速时Σpᵢ≈0.5容斥主导，有加速时转折提前到Σpᵢ≈
   - 来源：`data/foundation/adjudications/core-kernel.jsonl`
   - 依赖：D316；被引用：—
+- [Within the source-defined scope, 容斥加速-波动累积联合函数 is adjudicated as RELATION: M7的容斥加速放大D342波动累积：E\[ΣΔΦ\]_accelerated = ΣE\[ΔΦᵢ](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D362 / Within the source-defined scope, 容斥加速-波动累积联合函数 is adjudicated as RELATION: M7的容斥加速放大D342波动累积：E\[ΣΔΦ\]_accelerated = ΣE\[ΔΦᵢ
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：D342；被引用：—
+- [Within the source-defined scope, 容斥加速临界函数 is adjudicated as RELATION: M7的容斥加速临界点取决于pᵢ增长模式：pᵢ线性增长→Σpᵢpⱼ∝t²（可控），pᵢ指数增长→Σpᵢ](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D268 / Within the source-defined scope, 容斥加速临界函数 is adjudicated as RELATION: M7的容斥加速临界点取决于pᵢ增长模式：pᵢ线性增长→Σpᵢpⱼ∝t²（可控），pᵢ指数增长→Σpᵢ
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
+- [Within the source-defined scope, 容斥加速跨域标度函数 is adjudicated as RELATION: M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D320 / Within the source-defined scope, 容斥加速跨域标度函数 is adjudicated as RELATION: M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—

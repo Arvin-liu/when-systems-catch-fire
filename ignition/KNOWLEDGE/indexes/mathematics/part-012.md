@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [不得把地图坐标、视觉邻近、演进阶段或依赖关系写成事实证明、同构或机制因果。地图不能替代 registry、矩阵、schema、测试或来源工件。](../../../AI-HANDOFF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-858a3f72160d190c / 不得把地图坐标、视觉邻近、演进阶段或依赖关系写成事实证明、同构或机制因果。地图不能替代 registry、矩阵、schema、测试或来源工件。
-  - 来源：`AI-HANDOFF.md`
-  - 依赖：—；被引用：—
-- [不得把邻接、相似性、中心性、社群、检索、自述或行为变化升级为真理、价值、因果或内部学习机制证明。](../../../AI-HANDOFF.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-2cdc9226a7e7b1d1 / 不得把邻接、相似性、中心性、社群、检索、自述或行为变化升级为真理、价值、因果或内部学习机制证明。
-  - 来源：`AI-HANDOFF.md`
-  - 依赖：—；被引用：—
-- [不把故事化、碰撞或单材料结论写成证明。](../../../docs/math-foundation/06-audit-and-correction-protocol.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7fc6a1955b4ab9dd / 不把故事化、碰撞或单材料结论写成证明。
-  - 来源：`docs/math-foundation/06-audit-and-correction-protocol.md`
-  - 依赖：—；被引用：—
 - [不把规训语言偷换成因果证明](../../../outputs/research/role-identity-collision-batches-20260712.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-b0eeba1ed0b94691 / 不把规训语言偷换成因果证明
@@ -2502,5 +2487,20 @@
 - [从原文看，乘法对称变换展开。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-38d95cea5a0ab1ad / 从原文看，乘法对称变换展开。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，乘法系统的对称变换，可以将点火问题转换为生存概率问题。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c6dc3ae4e4a231d9 / 从原文看，乘法系统的对称变换，可以将点火问题转换为生存概率问题。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，乘法系统脆弱点在最接近零的因子上。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b92447938e857558 / 从原文看，乘法系统脆弱点在最接近零的因子上。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [从原文看，书籍碰撞函数，书籍碰撞案例验证。 更像是一个用于把局部现象拉到跨域统一结构上的函数。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4b474f40f64e4948 / 从原文看，书籍碰撞函数，书籍碰撞案例验证。 更像是一个用于把局部现象拉到跨域统一结构上的函数。
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [同构判定：**函数总表协作/需求/对齐机制轴空白**。判定为 **真新候选函数（协作协议实例化）**。受≤5约束，本轮 M9 进 candidates/，不与 M3/M4/M5 争名额；若用户后续要求可独立回填。](../../../outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-68e3643927c2678f / 同构判定：**函数总表协作/需求/对齐机制轴空白**。判定为 **真新候选函数（协作协议实例化）**。受≤5约束，本轮 M9 进 candidates/，不与 M3/M4/M5 争名额；若用户后续要求可独立回填。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/mechanism-extraction.md`
-  - 依赖：—；被引用：—
-- [同构度 D600↔EXIT族 70%、D601↔遮蔽函数族 65%、D602↔决策权函数族 68%。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-4960b6ace466c359 / 同构度 D600↔EXIT族 70%、D601↔遮蔽函数族 65%、D602↔决策权函数族 68%。
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
-  - 依赖：D600, D601, D602；被引用：—
-- [同步 registry 升至 `1.4.0`，以 `human.reading` 与 `human.results` 取代现行 Pages 表面。旧迭代清单继续按其声明的 era registry 解释；已从当前树退役的路径必须能在 Git](../../../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a2cf350bb76f810b / 同步 registry 升至 `1.4.0`，以 `human.reading` 与 `human.results` 取代现行 Pages 表面。旧迭代清单继续按其声明的 era registry 解释；已从当前树退役的路径必须能在 Git
-  - 来源：`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`
-  - 依赖：—；被引用：—
 - [同步与生命周期](../../../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-658934d5649c32d7 / 同步与生命周期
@@ -2504,3 +2489,18 @@
   - 可搜索名称：NFC-7cf6ca7929f075b8 / 数学表达 / Expression: `F_{D281}\(x\) := M2的极小点漂移对鲁棒性影响取决于Φ三阶导数符号。学习新技能→δμ<0→极小点下移→无论偏斜方向都提升鲁棒性。物理大统一d³Φ/dμ³≈0→漂移影响极小。`
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D281；被引用：—
+- [数学表达 / Expression: `F_{D287}\(x\) := M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准模型预测，是容斥主导的证据。新判据：不只看"有没有"，还看"是否比独立假设](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-663daf6286484355 / 数学表达 / Expression: `F_{D287}\(x\) := M5的容斥主导有可检验签名：实际量子引力修正>>标准预测。如果实验观测到量子引力效应显著强于标准模型预测，是容斥主导的证据。新判据：不只看"有没有"，还看"是否比独立假设
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D287；被引用：—
+- [数学表达 / Expression: `F_{D289}\(x\) := M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max 0.8几乎](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0efc9f97a36374eb / 数学表达 / Expression: `F_{D289}\(x\) := M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max 0.8几乎
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D279, D289；被引用：—
+- [数学表达 / Expression: `F_{D293}\(x\) := M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b7e05bcad112d6c3 / 数学表达 / Expression: `F_{D293}\(x\) := M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D293；被引用：—

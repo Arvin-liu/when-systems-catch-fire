@@ -4,21 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [从这条案例看，中文：案例说明：弹性封顶偏离 — f₁=σ\(5\(ε₁-0.3\)\), ε₁=0.1, η₁=5×0.88=4.4, W₁=10。c=1时δ₁… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-32fe27d7ad72ba1c / 从这条案例看，中文：案例说明：弹性封顶偏离 — f₁=σ\(5\(ε₁-0.3\)\), ε₁=0.1, η₁=5×0.88=4.4, W₁=10。c=1时δ₁… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：当上下文噪声和冲突累积超过保真阈值时，重置会提高局部推理质量；跨会话状态文件是保留必要状态的外部记忆算子。 关键发现：Q-… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-53b14cd409197905 / 从这条案例看，中文：案例说明：当上下文噪声和冲突累积超过保真阈值时，重置会提高局部推理质量；跨会话状态文件是保留必要状态的外部记忆算子。 关键发现：Q-… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [从这条案例看，中文：案例说明：当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识。核心函数：\[D241\]\(docs/zh… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-d243295a872bc913 / 从这条案例看，中文：案例说明：当前AI=工具智能象限 — ι≈0.7-0.9但P_exit→0，有智能无自主意识。核心函数：\[D241\]\(docs/zh… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D241；被引用：—
 - [从这条案例看，中文：案例说明：当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化。核心函数：… 更像是在验证“退出权、认同和函数映射”之间的对应关系。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-a58f5576aed4edd7 / 从这条案例看，中文：案例说明：当前AI全部在ρ>>ρc — α/β<<1，意识收益≈0，存储收益极高，所有AI被推向无意识执行者端，尚未分化。核心函数：… 更像是在验证“退出权、认同和函数映射”之间的对应关系。
@@ -2503,4 +2488,19 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
   - 可搜索名称：历史函数资产全量登记 / historical-function-census
   - 来源：`docs/foundation/historical-function-census.md`
+  - 依赖：—；被引用：—
+- [历史函数资产深度裁决与注册表闭合 R1](../../ASSET-CARDS.md#asset-hr-2bf3c3a1ac552110)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：历史函数资产深度裁决与注册表闭合 R1 / historical-function-deep-adjudication-20260729
+  - 来源：`docs/foundation/historical-function-deep-adjudication-20260729.md`
+  - 依赖：—；被引用：—
+- [历史创造性不连续性回放 — IGNITION-20260908-165](../../ASSET-CARDS.md#asset-hr-aebc74306f6c98e0)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+  - 可搜索名称：历史创造性不连续性回放 — IGNITION-20260908-165 / historical-creative-discontinuity-replay-2026-09-08
+  - 来源：`docs/governance/historical-creative-discontinuity-replay-2026-09-08.md`
+  - 依赖：—；被引用：—
+- [历史因果如何成立？**（单因 vs 多因）](../../../outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-f7422f4052c0de45 / 历史因果如何成立？**（单因 vs 多因）
+  - 来源：`outputs/getbrain/discipline-kernel-pilot-physics-math-history-20260706.md`
   - 依赖：—；被引用：—
