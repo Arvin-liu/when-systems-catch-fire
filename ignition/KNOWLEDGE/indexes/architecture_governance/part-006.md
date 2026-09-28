@@ -584,6 +584,11 @@
   - 可搜索名称：NFC-41dd20ec13ca51b3 / Fresh child-process peak memory was approximately 985,088,000 / 985,350,144 / 986,054,656 bytes on macOS Python. It is r
   - 来源：`reports/operations/ignition-172-20260915-step11-ab-replay.md`
   - 依赖：—；被引用：—
+- [Fresh reference-M1 builder prompt](../../ASSET-CARDS.md#asset-hr-fea07b39d2492747)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Fresh reference-M1 builder prompt / builder-prompt
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/builder-prompt.md`
+  - 依赖：—；被引用：—
 - [from OpenClaw's internal behavior.](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-286043425de6eee4 / from OpenClaw's internal behavior.
@@ -2497,10 +2502,5 @@
 - [link: "已迁移的历史案例来源/0775-C-0780-青蒿素从《肘后备急方》提炼.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e45282979b72ab0c / link: "已迁移的历史案例来源/0775-C-0780-青蒿素从《肘后备急方》提炼.md"
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [link: "已迁移的历史案例来源/0776-C-0781-《写作是门手艺》段落控制≤10行.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-1421fa9af1fc13c5 / link: "已迁移的历史案例来源/0776-C-0781-《写作是门手艺》段落控制≤10行.md"
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [数学表达 / Expression: `F_{D293}\(x\) := M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-b7e05bcad112d6c3 / 数学表达 / Expression: `F_{D293}\(x\) := M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D293；被引用：—
 - [数学表达 / Expression: `F_{D297}\(x\) := M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-e19bbabe896aa378 / 数学表达 / Expression: `F_{D297}\(x\) := M6的d=4稳定性约束基本物理常数：α增大~100倍→pᵢ>p*→极小点消失。精细结构常数α≈1/137不能太大→否则电磁否决概率超p*→d=4不稳定。常数不是任意的，必
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-42a7c1ed8c97bc8f / 物理大统一路径，物理大统一推导、电弱理论碰撞等。 **扩展注释 / Extended Annotation**
   - 来源：`data/math-foundation/function-provenance-ledger.csv`
   - 依赖：—；被引用：—
-- [物理存在受三重时间约束： 约束1（逻辑约束·\[D220\]\(docs/zh/functions/items/D220.md\)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·\[D222\]\(docs/zh/functions/](../../../data/math-foundation/function-provenance-ledger.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-166daaaed06561f3 / 物理存在受三重时间约束： 约束1（逻辑约束·\[D220\]\(docs/zh/functions/items/D220.md\)）：Ω<1是物理存在的必要条件，Ω→1=无物理 约束2（热力学约束·\[D222\]\(docs/zh/functions/
-  - 来源：`data/math-foundation/function-provenance-ledger.csv`
-  - 依赖：D220, D222, D224；被引用：—

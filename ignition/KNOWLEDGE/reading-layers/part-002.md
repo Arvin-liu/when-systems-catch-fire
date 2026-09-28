@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-1125ea8d76940b5f"></a>
+## 下一步认识论能力评估 — IGNITION-20260908-165
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32f… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：下一步认识论能力评估 — IGNITION-20260908-165；命令：Arvin-liu/1111/agent-commands/IGNITION-20260908-165.md@b3b128f46a625f728870ded1a975f3c2f0db53ce 命令 blob：065f02e04e3a0c8e55c398954a761c66901f74b5；内容 SHA-256：dcd123b9ae487f54dd7afcc921f9f1fd691147c463634e33e8d3f1f136b2d22a Formal 基线：work/IGNITION-20260907-164@ba6641d200000ad4ebaa764e4ed94d79f32fb2df 边界：研究只、Draft 只；不改变 Current、canonical、生产运行时、validator 或 Own…；结论：NOVALIDATEDCREATIVEDISCONTINUITYFOUND。本次没有证明跨线程操作器，也没有发现达到高门槛的候选。公共先例搜索没有被触发，因为没有候选越过高门槛；这不等于不存在先例。；剩余事项是：补足 P00 的历史边界、引入真正独立的 proposer/answer-key 分离、验证第三域迁移和删除损失，并在独立授权前保持研究只。不得把本分支推进为 Current、Ready、merge、生产或后续任务。
+- 完整阅读：[docs/governance/next-epistemic-capability-assessment-2026-09-08.md](../../docs/governance/next-epistemic-capability-assessment-2026-09-08.md)
+
+<a id="reading-hr-11563958b6e1ee6a"></a>
+## Component-A reference policy construction
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Exactly two independent builders per family (six total). The six manifests each allow only same-family M0 and raw E1 plus the common schema and builder prompt. Builders have no repository browsing or shell access; give them file content only for those paths and a fresh session with no inherited h… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Component-A reference policy construction；Exactly two independent builders per family (six total). The six manifests each allow only same-family M0 and raw E1 plus the common schema and builder prompt. Builders have no repository browsing or shell access; give them file content only for those paths and a fresh session with no inherited history. Each produces one JSON policy. Freeze raw output; do no…
+- 完整阅读：[reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/README.md](../../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/README.md)
+
 <a id="reading-hr-11f58a3d336fc97e"></a>
 ## CASE03 ambiguity proof — R1
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
@@ -207,6 +221,13 @@
 - 5 分钟：Packet reference: PK-036C68E81455；Six synthetic case records follow.；Source SHA-256: 159c6f84493d441a99393c7bc5caa1e66f36b345b73d822a42e0354eea6f50f5；主题：CASE01 — Checkpoint export selection；All names, records, dates, and tools are synthetic.；[F01] A packet contains signed document version 3 associated with checkpoint C-17 and a later version 4 correction marked unsigned. [F02] Route Alder's preview lists a signed-document field, signature timestamp, and approval-event reference; it does not list a per-file digest. [F03] Route Birch's preview lists a version sequence and per-file digest; its opti…
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-036C68E81455.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-036C68E81455.md)
 
+<a id="reading-hr-2107d5eed5e7e51d"></a>
+## Pre-freeze reviewer A — Task226 taxonomy and policy contract
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Scope: read-only review of the taxonomy mapping, policy schema, policy validator, and builder/revision prompts. No held-out target content was inspected. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Pre-freeze reviewer A — Task226 taxonomy and policy contract；Scope: read-only review of the taxonomy mapping, policy schema, policy validator, and builder/revision prompts. No held-out target content was inspected.；The initial hard issues were closed: preserved M0 mode semantics are structurally enforced; each policy is validated against the full Draft 2020-12 schema before cross-reference checks; licensed regions map one-to-one to selector rules with identical conditions; the universal fallback covers out-of-scope and unresolved inputs; and licensed scope claims can c…
+- 完整阅读：[reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-A.md](../../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-A.md)
+
 <a id="reading-hr-215773989a96f879"></a>
 ## 121A Night Recovery Report
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：The first real Codex R3 child used new identities dispatch-138-live-01 / attempt-138-live-01, the fresh lease lease-ignition-138-live-01-repaired, the Task138 fixture, an external strict schema, a mode-0555 task workspace and an attempt-specific runtime scratch. The default persistent-document ro… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch；The first real Codex R3 child used new identities dispatch-138-live-01 / attempt-138-live-01, the fresh lease lease-ignition-138-live-01-repaired, the Task138 fixture, an external strict schema, a mode-0555 task workspace and an attempt-specific runtime scratch. The default persistent-document root was rejected before child launch because it contains histori…；The repaired first real child process exited in 61.166 ms with return code 1. It produced zero stdout bytes and no structured JSONL result; stderr was bounded to 521 bytes with digest 79bf39ba628c787ae5baf83ed84bff92b2a4f36583dd820f3b64c1698e0120f3. The process group was CONFIRMEDGONE, no session pointer was observed, no timeout or output truncation occurred…；A separate non-inference public login status probe under the exact isolated runtime environment reproduced the public configuration error: the declared CODEXHOME directory did not exist, so configuration loading failed before any model result. This is classified as the concrete CODEXRUNTIMEPATHPREINFERENCESTARTUPFAILURE with known no effect for the second-at…；The Step09 gate predicates are all satisfied: process group gone, no session, no structured result, no timeout/effect uncertainty, unchanged workspace, cleaned scratch, no observed external side effect, and a narrow repair that only prepares declared runtime directories inside scratch. No blind retry is authorized; the second invocation remains conditional o…；Claim ceiling: one bounded Codex startup failure and its machine-observed known-no-effect pre-inference classification only; no validated live completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.
 - 完整阅读：[reports/operations/ignition-138-step08-first-codex-dispatch.md](../../reports/operations/ignition-138-step08-first-codex-dispatch.md)
-
-<a id="reading-hr-26ff2edbbc24babb"></a>
-## IGNITION-20260826-141 Step 16 — Fresh task-branch clone and publication gate
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The exact pushed Task141 Step15 tip 6f30c9aff2b64141d4a96e32a57deb64eb89b97a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3436 tracked paths and was clean before and aft… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260826-141 Step 16 — Fresh task-branch clone and publication gate；主题：Fresh task-branch clone；The exact pushed Task141 Step15 tip 6f30c9aff2b64141d4a96e32a57deb64eb89b97a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3436 tracked paths and was clean before and after validation. The remote task branch SHA and fresh clone HEAD…；The clone passed the independent 25-check deterministic projection preflight with --require-clean: failedchecks=[], releaseadmission=true, sideeffectdetected=false, and the clean-tree gate passed. Its natural isolated full regression then completed with 1260 tests, 0 failures, 0 errors and 0 skips in 2948.043s runtime / 2949.650s elapsed. Python 3.14.6, SymP…；The fresh-clone full-suite capture remains external to the formal repository:；stdout SHA-256: 70241fbfcbbe0caef8b97add50058c33a8d96e4a882811dbbf1d0384339ba125;
-- 完整阅读：[reports/operations/ignition-141-step16-fresh-clone-publication.md](../../reports/operations/ignition-141-step16-fresh-clone-publication.md)
-
-<a id="reading-hr-272476f707875492"></a>
-## IGNITION-20260822-133 — Iteration Boundary Semantics R1
-`HISTORICAL_COMPLETION_RECORD` · `COGNITION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Task ID: IGNITION-20260822-133 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-133 — Iteration Boundary Semantics R1；Task ID: IGNITION-20260822-133；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；This is the formal repository result for the Task133 iteration-boundary semantics and ordinal-binding implementation. It records repository-local archaeology, canonical derivation, deterministic Current projection, terminal content readiness and bounded regression evidence. It does not assert formal main publication; the final release SHA remains an independ…；主题：Identity closure；Canonical Current formal task: IGNITION-20260822-133; formal task ordinal: 133; terminal status COMPLETEDWITHCLASSIFIEDRESIDUALS; currenttaskterminal=true.
-- 完整阅读：[agent-results/IGNITION-20260822-133-result.md](../../agent-results/IGNITION-20260822-133-result.md)
-
-<a id="reading-hr-279683b750652ac6"></a>
-## 首批物理资产纠偏（2026-07-29）
-`CURRENT_CORRECTION_RECORD` · `PHYSICS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：本轮没有尝试解决四力统一、量子引力或所谓“七团乌云”。它只修正点火自身资产可以支持什么、不能支持什么。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：首批物理资产纠偏（2026-07-29）；本轮没有尝试解决四力统一、量子引力或所谓“七团乌云”。它只修正点火自身资产可以支持什么、不能支持什么。；点火现有乘法门控模型不能完成数学和物理上充分的四种相互作用统一。四力统一问题本身保持开放。项目没有证明“大一统普遍不可能”，也没有给出物理统一点。；最强可保留的有界命题是：把所有状态压成一个等价类的商映射不能保存非恒定可观测量；零门只退化其声明的读出，不等于世界、状态空间或全部物理信息消失。该命题仍需独立形式证明工件，不能被包装成物理学 no-go theorem。；哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。；历史笔记把“乘法归零律”称为 D127；formal main 中该资产实际为 T2，D127 是“认知路径积分函数”。两者分别纠偏，不覆盖身份。
-- 完整阅读：[docs/foundation/physics-asset-correction-20260729.md](../../docs/foundation/physics-asset-correction-20260729.md)

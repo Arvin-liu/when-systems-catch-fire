@@ -1469,6 +1469,16 @@
   - 可搜索名称：NFC-0532c427e1d01490 / benchmark 通过"结构增益 + 重述 + 失败 + pending"四类结果，测试点火框架是否真的有结构增益。如果点火框架只是重述，说明没有新增解释力；如果点火框架发生失败，说明边界选错或同构误判；如果点火框架只能 pending，
   - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—
+- [Blind Component-A transfer evaluator criteria](../../ASSET-CARDS.md#asset-hr-302db23be2786f1c)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Blind Component-A transfer evaluator criteria / evaluator-criteria
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/evaluator-criteria.md`
+  - 依赖：—；被引用：—
+- [Blind Component-B revision evaluator criteria](../../ASSET-CARDS.md#asset-hr-d4b245232c5dc745)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Blind Component-B revision evaluator criteria / criteria
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/evaluator/criteria.md`
+  - 依赖：—；被引用：—
 - [Blind Method-Use Reconstruction R0](../../ASSET-CARDS.md#asset-hr-ac2c8f7dc1615a92)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Blind Method-Use Reconstruction R0 / reconstruction-task
@@ -1858,6 +1868,21 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-1d5108fc9cec3665 / COGEX full-text review: Python-shaped pseudo-programs, LM emulation, intermediate dictionaries, and metric-guided progra
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [Component-A exact scoring and interpretation](../../ASSET-CARDS.md#asset-hr-b2754787026b6544)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Component-A exact scoring and interpretation / interpretation
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/interpretation.md`
+  - 依赖：—；被引用：—
+- [Component-A reference policy construction](../../ASSET-CARDS.md#asset-hr-11563958b6e1ee6a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Component-A reference policy construction / README
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/README.md`
+  - 依赖：—；被引用：—
+- [Component-B revision generation](../../ASSET-CARDS.md#asset-hr-38a1fb7c1d829771)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Component-B revision generation / README
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/README.md`
   - 依赖：—；被引用：—
 - [composition_consistency := ∫_{A×C} \|\|π_B→C\(π_A→B\(x\)\) - π_A→C\(x\)\|\|² dμ\(x\)（复合一致性）](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2478,29 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：P4310320547 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json / P4310320547 / A5022860483
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5080191351 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json / A5080191351 / A5082456527
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5082456527 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json / A5082456527 / A5080191351
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5109860041 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json / A5109860041 / A5080191351
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T10108 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json / T10108 / A5080191351
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-08.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-01.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-01.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：A5029788536 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-01.json / A5029788536 / D000818
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-01.json`
   - 依赖：—；被引用：—

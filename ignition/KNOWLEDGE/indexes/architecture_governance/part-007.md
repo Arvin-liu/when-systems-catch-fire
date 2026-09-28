@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [link: "已迁移的历史案例来源/0776-C-0781-《写作是门手艺》段落控制≤10行.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-1421fa9af1fc13c5 / link: "已迁移的历史案例来源/0776-C-0781-《写作是门手艺》段落控制≤10行.md"
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
 - [link: "已迁移的历史案例来源/0777-C-0782-马伯庸建议蹲下来看最下面一排书.md"](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2af322bd03d915e0 / link: "已迁移的历史案例来源/0777-C-0782-马伯庸建议蹲下来看最下面一排书.md"
@@ -1939,6 +1944,11 @@
   - 可搜索名称：NFC-2feaf5f755263db1 / PR #58 在合并前重新满足全部精确门禁：HEAD 为 `19a013719a8e98319004c3b7ad9d0d4b29405351`，review `4714216621` 接受该精确 HEAD，Foundation、Functi
   - 来源：`reports/operations/121Q28T-zhiyuan-writing-method-merge-current-closeout-audit.md`
   - 依赖：—；被引用：—
+- [Pre-freeze reviewer D — transfer visible-input isolation](../../ASSET-CARDS.md#asset-hr-735af33437eb4a21)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Pre-freeze reviewer D — transfer visible-input isolation / reviewer-D
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-D.md`
+  - 依赖：—；被引用：—
 - [Pre-registered responsible and proposed-publisher `actor_ref` values \(resolved through `data/operations/responsibility-a](../../../templates/operations/execution-result-template.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d421c8a4851b3af7 / Pre-registered responsible and proposed-publisher `actor_ref` values \(resolved through `data/operations/responsibility-a
@@ -2493,14 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-6671846605153f71 / related_evidence_regime（关联证据制度）
   - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
-  - 依赖：—；被引用：—
-- [related_pend_ids 如存在，必须能在 PEND 数据集中找到。](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-dd17d46d2866773c / related_pend_ids 如存在，必须能在 PEND 数据集中找到。
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [relations remain in the typed topology and are machine-validated.](../../../reports/operations/ignition-142-step17-architecture-impact.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-4f974bc797fe3c53 / relations remain in the typed topology and are machine-validated.
-  - 来源：`reports/operations/ignition-142-step17-architecture-impact.md`
   - 依赖：—；被引用：—

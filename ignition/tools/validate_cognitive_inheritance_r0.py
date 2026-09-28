@@ -375,15 +375,19 @@ def task220_source_bytes(repo_root: Path) -> bytes:
     return result.stdout
 
 
-def task225_source_bytes(repo_root: Path) -> bytes:
+def task225_blob_bytes(repo_root: Path, path: str) -> bytes:
     result = subprocess.run(
-        ["git", "show", f"{TASK225_SUCCESSOR_HEAD_COMMIT}:{TASK225_SUCCESSOR_SOURCE_PATH}"],
+        ["git", "show", f"{TASK225_SUCCESSOR_HEAD_COMMIT}:{path}"],
         cwd=repo_root,
         capture_output=True,
         check=False,
     )
-    require(result.returncode == 0, "Task225 frozen source cannot be read from its exact head commit")
+    require(result.returncode == 0, f"Task225 frozen file cannot be read at its exact head commit: {path}")
     return result.stdout
+
+
+def task225_source_bytes(repo_root: Path) -> bytes:
+    return task225_blob_bytes(repo_root, TASK225_SUCCESSOR_SOURCE_PATH)
 
 
 def validate_task225_successor_lock(
@@ -451,8 +455,8 @@ def validate_task225_successor_lock(
         artifact = repo_root / path
         require(artifact.is_file(), f"Task225 successor projection is missing: {path}")
         require(
-            hashlib.sha256(artifact.read_bytes()).hexdigest() == expected_sha,
-            f"Task225 inline successor projection hash mismatch: {path}",
+            hashlib.sha256(task225_blob_bytes(repo_root, path)).hexdigest() == expected_sha,
+            f"Task225 frozen inline successor projection hash mismatch: {path}",
         )
     return dict(TASK225_KNOWLEDGE_SUCCESSOR_REPLACEMENTS)
 
@@ -493,6 +497,26 @@ def task220_projection_hashes(repo_root: Path, section_name: str) -> dict[str, s
         paths[path] = expected_sha
     if section_name == "external_generated_knowledge_experience" and len(paths) == 109:
         replacements = validate_task225_successor_lock(repo_root)
+        for path, expected_sha in paths.items():
+            frozen_task225_sha = hashlib.sha256(task225_blob_bytes(repo_root, path)).hexdigest()
+            require(
+                frozen_task225_sha == replacements.get(path, expected_sha),
+                f"Task225 historical Knowledge Experience successor hash mismatch: {path}",
+            )
+        return paths
+    if section_name == "external_generated_fire_seed_census" and len(paths) == 2:
+        for path, expected_sha in paths.items():
+            frozen_task225_sha = hashlib.sha256(task225_blob_bytes(repo_root, path)).hexdigest()
+            expected_task225_sha = (
+                TASK225_FIRE_SEED_CENSUS_SHA256
+                if path == TASK225_FIRE_SEED_CENSUS_PATH
+                else expected_sha
+            )
+            require(
+                frozen_task225_sha == expected_task225_sha,
+                f"Task225 historical Fire Seeds successor hash mismatch: {path}",
+            )
+        return paths
     for path in mismatched_paths:
         if (
             section_name == "external_generated_fire_seed_census"
@@ -539,6 +563,7 @@ def task217_generated_knowledge_paths(repo_root: Path) -> set[str]:
     knowledge = freeze.get("external_generated_knowledge_experience", {})
     entries = knowledge.get("files", [])
     paths: set[str] = set()
+    task225_frozen_chain = len(task220_hashes) == 109
     for entry in entries:
         path = entry.get("path")
         expected_sha = entry.get("sha256")
@@ -551,6 +576,8 @@ def task217_generated_knowledge_paths(repo_root: Path) -> set[str]:
         artifact = repo_root / path
         require(artifact.is_file(), f"Task217 frozen knowledge-experience projection is missing: {path}")
         actual_sha = hashlib.sha256(artifact.read_bytes()).hexdigest()
+        if task225_frozen_chain:
+            actual_sha = hashlib.sha256(task225_blob_bytes(repo_root, path)).hexdigest()
         require(
             actual_sha == expected_sha
             or task220_hashes.get(path) == actual_sha
@@ -568,12 +595,16 @@ def task225_projection_chain_coverage(repo_root: Path) -> dict[str, str] | None:
     if len(historical) != 109:
         return None
     replacements = validate_task225_successor_lock(repo_root)
+    task225_hashes = {
+        path: hashlib.sha256(task225_blob_bytes(repo_root, path)).hexdigest()
+        for path in historical
+    }
     unchanged = sum(
-        hashlib.sha256((repo_root / path).read_bytes()).hexdigest() == expected_sha
+        task225_hashes[path] == expected_sha
         for path, expected_sha in historical.items()
     )
     replaced = sum(
-        hashlib.sha256((repo_root / path).read_bytes()).hexdigest() == replacement_sha
+        task225_hashes[path] == replacement_sha
         for path, replacement_sha in replacements.items()
     )
     require(unchanged == 105, f"Task220 unchanged Knowledge projection coverage differs: {unchanged}/109")
@@ -598,6 +629,7 @@ def task217_generated_fire_seed_paths(repo_root: Path) -> set[str]:
     projection = freeze.get("external_generated_fire_seed_census", {})
     entries = projection.get("files", [])
     paths: set[str] = set()
+    task225_frozen_chain = len(task220_hashes) == 2
     for entry in entries:
         path = entry.get("path")
         expected_sha = entry.get("sha256")
@@ -606,6 +638,8 @@ def task217_generated_fire_seed_paths(repo_root: Path) -> set[str]:
         artifact = repo_root / path
         require(artifact.is_file(), f"Task217 frozen Fire Seeds projection is missing: {path}")
         actual_sha = hashlib.sha256(artifact.read_bytes()).hexdigest()
+        if task225_frozen_chain:
+            actual_sha = hashlib.sha256(task225_blob_bytes(repo_root, path)).hexdigest()
         require(
             actual_sha == expected_sha
             or task220_hashes.get(path) == actual_sha

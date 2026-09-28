@@ -30,6 +30,7 @@ from tools.validate_cognitive_inheritance_r0 import (  # noqa: E402
     TASK225_FIRE_SEED_CENSUS_PATH,
     TASK225_FIRE_SEED_CENSUS_SHA256,
     TASK225_SUCCESSOR_PROVENANCE,
+    TASK225_SUCCESSOR_HEAD_COMMIT,
     TASK225_SUCCESSOR_SOURCE_PATH,
     ValidationFailure,
     task217_generated_fire_seed_paths,
@@ -291,7 +292,18 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         current_source_lines = (ROOT.parent / TASK225_SUCCESSOR_SOURCE_PATH).read_text(encoding="utf-8").splitlines()
         self.assertIn(f"- 已核算跟踪文件：{current_tracked_file_count}", current_source_lines)
         self.assertEqual(TASK225_SUCCESSOR_PROVENANCE["tracked_file_census_after"], 6868)
-        self.assertFalse((ROOT / "KNOWLEDGE/cards/part-018.md").exists())
+        task225_part018 = subprocess.run(
+            [
+                "git",
+                "cat-file",
+                "-e",
+                f"{TASK225_SUCCESSOR_HEAD_COMMIT}:ignition/KNOWLEDGE/cards/part-018.md",
+            ],
+            cwd=ROOT.parent,
+            capture_output=True,
+            check=False,
+        )
+        self.assertNotEqual(task225_part018.returncode, 0)
 
         historical = task220_projection_hashes(ROOT.parent, "external_generated_knowledge_experience")
         self.assertEqual(len(historical), 109)
@@ -299,8 +311,11 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertEqual(len(task217_generated_knowledge_paths(ROOT.parent)), 109)
         fire_seed_hashes = task220_projection_hashes(ROOT.parent, "external_generated_fire_seed_census")
         self.assertEqual(len(fire_seed_hashes), 2)
-        fire_seed_path = ROOT.parent / TASK225_FIRE_SEED_CENSUS_PATH
-        self.assertEqual(hashlib.sha256(fire_seed_path.read_bytes()).hexdigest(), TASK225_FIRE_SEED_CENSUS_SHA256)
+        task225_fire_seed_bytes = subprocess.check_output(
+            ["git", "show", f"{TASK225_SUCCESSOR_HEAD_COMMIT}:{TASK225_FIRE_SEED_CENSUS_PATH}"],
+            cwd=ROOT.parent,
+        )
+        self.assertEqual(hashlib.sha256(task225_fire_seed_bytes).hexdigest(), TASK225_FIRE_SEED_CENSUS_SHA256)
         self.assertIn(TASK225_FIRE_SEED_CENSUS_PATH, task217_generated_fire_seed_paths(ROOT.parent))
         self.assertEqual(
             task225_projection_chain_coverage(ROOT.parent),

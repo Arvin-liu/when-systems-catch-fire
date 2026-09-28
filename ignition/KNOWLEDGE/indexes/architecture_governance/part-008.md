@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [related_pend_ids 如存在，必须能在 PEND 数据集中找到。](../../../docs/machine_readable_data_plan.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-dd17d46d2866773c / related_pend_ids 如存在，必须能在 PEND 数据集中找到。
+  - 来源：`docs/machine_readable_data_plan.md`
+  - 依赖：—；被引用：—
+- [relations remain in the typed topology and are machine-validated.](../../../reports/operations/ignition-142-step17-architecture-impact.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-4f974bc797fe3c53 / relations remain in the typed topology and are machine-validated.
+  - 来源：`reports/operations/ignition-142-step17-architecture-impact.md`
+  - 依赖：—；被引用：—
 - [relationship index 与 projection 不复制、不覆盖局部 truth authority。](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-6c5189e115244b42 / relationship index 与 projection 不复制、不覆盖局部 truth authority。
@@ -1514,6 +1524,11 @@
   - 可搜索名称：Task216 owner-adjudication input / TASK216-OWNER-ADJUDICATION-INPUT
   - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/TASK216-OWNER-ADJUDICATION-INPUT.md`
   - 依赖：—；被引用：—
+- [Task226 evidence binding receipt](../../ASSET-CARDS.md#asset-hr-d706ee9795e4faf5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task226 evidence binding receipt / task226-evidence-binding-receipt
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/task226-evidence-binding-receipt.md`
+  - 依赖：—；被引用：—
 - [Tasks, adapters, routers, memory, composition mode and experimental conditions are operationally explicit, but semantic,](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-3e48742e55a92254 / Tasks, adapters, routers, memory, composition mode and experimental conditions are operationally explicit, but semantic,
@@ -2488,19 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-188053d47b7b0675 / This is a cumulative release seal for already validated Q12-Q14 work:
   - 来源：`reports/releases/121Q15-q12-q14-cumulative-preflight.md`
-  - 依赖：—；被引用：—
-- [This is a Current projection repair; Task107/127/133 historical observations remain in Git history and receipts. Claim c](../../../reports/operations/ignition-134-step05-current-path-manifest-r1.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-3175815df6ffb55b / This is a Current projection repair; Task107/127/133 historical observations remain in Git history and receipts. Claim c
-  - 来源：`reports/operations/ignition-134-step05-current-path-manifest-r1.md`
-  - 依赖：—；被引用：—
-- [This is a local contract/conformance result only. It is not evidence that any installed provider or executor is live-sel](../../../reports/operations/ignition-142-step05-offline-conformance.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c3fdd92d615301e4 / This is a local contract/conformance result only. It is not evidence that any installed provider or executor is live-sel
-  - 来源：`reports/operations/ignition-142-step05-offline-conformance.md`
-  - 依赖：—；被引用：—
-- [This is a repository-local integrity and metadata-governance audit. It does not promote scholarly metadata to evidence,](../../../reports/operations/ignition-172-20260915-step10-global-corpus-qa.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c56264b31c7b674f / This is a repository-local integrity and metadata-governance audit. It does not promote scholarly metadata to evidence,
-  - 来源：`reports/operations/ignition-172-20260915-step10-global-corpus-qa.md`
   - 依赖：—；被引用：—

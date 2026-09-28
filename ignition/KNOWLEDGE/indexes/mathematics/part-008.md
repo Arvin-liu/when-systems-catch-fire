@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [The Foundation distinguished formal types and nine statuses, but it had no authoritative ten-class function-identity ove](../../../reports/foundation-architecture/098-claim-governance-implementation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-704394da53e2a852 / The Foundation distinguished formal types and nine statuses, but it had no authoritative ten-class function-identity ove
+  - 来源：`reports/foundation-architecture/098-claim-governance-implementation.md`
+  - 依赖：—；被引用：—
 - [The fresh clone of exact candidate tip `a609c5aa7cfae52dfda144072be8c2198d9df0fc` was clean. It passed the Current regis](../../../agent-results/IGNITION-20260821-130-result.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-d1ff93da02dc7080 / The fresh clone of exact candidate tip `a609c5aa7cfae52dfda144072be8c2198d9df0fc` was clean. It passed the Current regis
@@ -2497,10 +2502,5 @@
 - [title: "纯拉力上位衰减函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-266717E44AF1E53E / title: "纯拉力上位衰减函数" / IMPLICIT-266717E44AF1E53E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [title: "经典确定性函数"](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-093F6C31C7C9037B / title: "经典确定性函数" / IMPLICIT-093F6C31C7C9037B / IMPLICIT-54050DBB3CB4E918
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

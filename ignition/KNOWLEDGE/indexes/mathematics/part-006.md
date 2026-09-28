@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [If upstream objects D_{D468} exist, compose F_{D468}=N\(⊕_{g∈D_{D468}} g\); otherwise treat F_{D468} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-284164118fdb63d1 / If upstream objects D_{D468} exist, compose F_{D468}=N\(⊕_{g∈D_{D468}} g\); otherwise treat F_{D468} as an axiom seed.
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D468；被引用：—
 - [If upstream objects D_{D469} exist, compose F_{D469}=N\(⊕_{g∈D_{D469}} g\); otherwise treat F_{D469} as an axiom seed.](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-67c0cdf4c388abcb / If upstream objects D_{D469} exist, compose F_{D469}=N\(⊕_{g∈D_{D469}} g\); otherwise treat F_{D469} as an axiom seed.
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-2041370237e9f3a1 / Object D149 defines a formal_proposition within the point-fire framework. Core: 中文：设计结构让估计不必要 > 估计准确后保守执行。. Annotation:
   - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
   - 依赖：D149；被引用：—
-- [Object D150 defines a formal_proposition within the point-fire framework. Core: 中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。. Annotation: 倒U](../../../data/foundation/adjudications/084-max-decisions.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
-  - 可搜索名称：NFC-d6f434661b21d0a9 / Object D150 defines a formal_proposition within the point-fire framework. Core: 中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。. Annotation: 倒U
-  - 来源：`data/foundation/adjudications/084-max-decisions.jsonl`
-  - 依赖：D150, T16；被引用：—

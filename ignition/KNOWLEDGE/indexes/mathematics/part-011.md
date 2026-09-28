@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [\| \[D277\]\( \) \| \[统一健康指标函数\]\( \) \| F_{D277}\(x\) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-760346cf16172c8d / \| \[D277\]\( \) \| \[统一健康指标函数\]\( \) \| F_{D277}\(x\) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：D277；被引用：—
 - [\| \[D281\]\( \) \| \[极小点漂移-鲁棒性耦合函数\]\( \) \| F_{D281}\(x\) := M2的极小点漂移对鲁棒性](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1da69536ebd9ac11 / \| \[D281\]\( \) \| \[极小点漂移-鲁棒性耦合函数\]\( \) \| F_{D281}\(x\) := M2的极小点漂移对鲁棒性
@@ -2498,9 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_PROOF`
   - 可搜索名称：NFC-2cdc9226a7e7b1d1 / 不得把邻接、相似性、中心性、社群、检索、自述或行为变化升级为真理、价值、因果或内部学习机制证明。
   - 来源：`AI-HANDOFF.md`
-  - 依赖：—；被引用：—
-- [不把故事化、碰撞或单材料结论写成证明。](../../../docs/math-foundation/06-audit-and-correction-protocol.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7fc6a1955b4ab9dd / 不把故事化、碰撞或单材料结论写成证明。
-  - 来源：`docs/math-foundation/06-audit-and-correction-protocol.md`
   - 依赖：—；被引用：—

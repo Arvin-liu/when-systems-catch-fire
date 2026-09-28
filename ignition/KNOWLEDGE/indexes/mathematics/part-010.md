@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [Within the source-defined scope, 容斥加速跨域标度函数 is adjudicated as RELATION: M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n](../../../data/foundation/adjudications/core-kernel.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
+  - 可搜索名称：CLAIM-D320 / Within the source-defined scope, 容斥加速跨域标度函数 is adjudicated as RELATION: M7的容斥加速度a_excl∝n²·σ²·ḡ在不同域的标度：物理n小σ小→a_excl小，生物n
+  - 来源：`data/foundation/adjudications/core-kernel.jsonl`
+  - 依赖：—；被引用：—
 - [Within the source-defined scope, 容斥加速逆转条件函数 is adjudicated as PREDICATE: M7的容斥加速逆转条件：p_max相对下降速率\|α_max\|/p_max必须超过其他pᵢ平均相](../../../data/foundation/adjudications/core-kernel.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_HEURISTIC`
   - 可搜索名称：CLAIM-D290 / Within the source-defined scope, 容斥加速逆转条件函数 is adjudicated as PREDICATE: M7的容斥加速逆转条件：p_max相对下降速率\|α_max\|/p_max必须超过其他pᵢ平均相
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-4ceb1c009ef02b74 / \| \[D276\]\( \) \| \[D158预测失效阈值函数\]\( \) \| F_{D276}\(x\) := M1的ΔΦ导致D158预测误差
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D158, D276；被引用：—
-- [\| \[D277\]\( \) \| \[统一健康指标函数\]\( \) \| F_{D277}\(x\) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-760346cf16172c8d / \| \[D277\]\( \) \| \[统一健康指标函数\]\( \) \| F_{D277}\(x\) := M9三阶段各有健康指标：阶段1=平坦度⁻¹，阶段2=C
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D277；被引用：—

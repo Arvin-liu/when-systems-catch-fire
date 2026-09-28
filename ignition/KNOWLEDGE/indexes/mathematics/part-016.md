@@ -4,6 +4,11 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [同步 registry 升至 `1.4.0`，以 `human.reading` 与 `human.results` 取代现行 Pages 表面。旧迭代清单继续按其声明的 era registry 解释；已从当前树退役的路径必须能在 Git](../../../reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-a2cf350bb76f810b / 同步 registry 升至 `1.4.0`，以 `human.reading` 与 `human.results` 取代现行 Pages 表面。旧迭代清单继续按其声明的 era registry 解释；已从当前树退役的路径必须能在 Git
+  - 来源：`reports/foundation-architecture/101-human-readable-surfaces-self-correction-closeout.md`
+  - 依赖：—；被引用：—
 - [同步与生命周期](../../../reports/operations/121Q31-interactive-system-map-and-writing-source-pool-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-658934d5649c32d7 / 同步与生命周期
@@ -2499,8 +2504,3 @@
   - 可搜索名称：NFC-0efc9f97a36374eb / 数学表达 / Expression: `F_{D289}\(x\) := M14的逃逸速度v_escape∝λ·p_max²·g_eff。p_max≈0.5是最佳逃逸窗口（黄金逃逸点）。p_max 0.8几乎
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：D279, D289；被引用：—
-- [数学表达 / Expression: `F_{D293}\(x\) := M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-b7e05bcad112d6c3 / 数学表达 / Expression: `F_{D293}\(x\) := M9三阶段对应相变分类：阶段1→2≈二级相变（连续过渡→还有救），阶段2→3≈一级相变（突变→没救）。新相变分类：二级="还能缓冲"，一级="缓冲耗尽"。干预在二级相变区
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：D293；被引用：—

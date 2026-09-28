@@ -4,6 +4,46 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-366ea11858254982 / live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [live_observation: the canonical R3 projection contains six attempts, zero validated completions, zero unreconciled attem](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-b3b71ba18a43c3f3 / live_observation: the canonical R3 projection contains six attempts, zero validated completions, zero unreconciled attem
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [live_observation: the historical projection remains six attempts, zero validated completions, zero unreconciled attempts](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-1d6d404f3a27ec9d / live_observation: the historical projection remains six attempts, zero validated completions, zero unreconciled attempts
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [live_observation: the six-attempt projection remains dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`,](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-a832cc9f4e0d994d / live_observation: the six-attempt projection remains dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`,
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [LORAUTER full-text review: validation-backed task representations, task-adapter catalog construction, query-task retriev](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-8110b07adbcfd2a2 / LORAUTER full-text review: validation-backed task representations, task-adapter catalog construction, query-task retriev
+  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 依赖：—；被引用：—
+- [M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-170ED17891544D42 / M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-170ED17891544D42 / IMPLICIT-63FAE8AD62F6660D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../docs/phi_meta_law.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-63FAE8AD62F6660D / M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-63FAE8AD62F6660D / IMPLICIT-170ED17891544D42
+  - 来源：`docs/phi_meta_law.md`
+  - 依赖：—；被引用：—
+- [M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-81F4EADAFE7C6FCF / M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-81F4EADAFE7C6FCF / IMPLICIT-170ED17891544D42
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
 - [M\(B_n\) = ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../docs/phi_meta_law.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-854C67528F7AB092 / M\(B_n\) = ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-854C67528F7AB092 / IMPLICIT-170ED17891544D42
@@ -108,6 +148,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-7096d148b46fc2e6 / NC-002 表演化假课与指标消解温度：暂缓（待 NF-002 先入表后对应）
   - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [Neutral fresh transfer prompt](../../ASSET-CARDS.md#asset-hr-f1199313764281b0)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Neutral fresh transfer prompt / prompt
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/prompt.md`
   - 依赖：—；被引用：—
 - [New projections use `live-current-projection-r2`. Typed attempt summaries do](../../../reports/operations/ignition-140-step04-typed-observation-outcomes.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -444,6 +489,26 @@
   - 可搜索名称：Pointfire seven-track external cross-domain replay — repaired governed pass / REPLAY-REPORT
   - 来源：`reports/external-research/pointfire-seven-track-replay-r1/REPLAY-REPORT.md`
   - 依赖：—；被引用：—
+- [Pre-freeze reviewer A — Task226 taxonomy and policy contract](../../ASSET-CARDS.md#asset-hr-2107d5eed5e7e51d)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Pre-freeze reviewer A — Task226 taxonomy and policy contract / reviewer-A
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-A.md`
+  - 依赖：—；被引用：—
+- [Pre-freeze reviewer B — reference-builder input isolation](../../ASSET-CARDS.md#asset-hr-4fdd2c6565052033)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Pre-freeze reviewer B — reference-builder input isolation / reviewer-B
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-B.md`
+  - 依赖：—；被引用：—
+- [Pre-freeze reviewer C — target compatibility and achievability](../../ASSET-CARDS.md#asset-hr-ca1b4d29c75cb920)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Pre-freeze reviewer C — target compatibility and achievability / reviewer-C
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-C.md`
+  - 依赖：—；被引用：—
+- [Pre-freeze reviewer E — endpoint and preregistration audit](../../ASSET-CARDS.md#asset-hr-eac563ea0a86b785)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Pre-freeze reviewer E — endpoint and preregistration audit / reviewer-E
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-E.md`
+  - 依赖：—；被引用：—
 - [Preregistered Outcome Rule R0](../../ASSET-CARDS.md#asset-hr-3fec9af3edd1416d)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Preregistered Outcome Rule R0 / preregistered-outcome-rule
@@ -543,6 +608,11 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-0cd66516602c7224 / reconciliation_boundary: the three historical retry-safety blockers are terminalized; terminalization preserves unknown
   - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
+- [Reference policy independent reviewer criteria](../../ASSET-CARDS.md#asset-hr-d950d1fb4221f338)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Reference policy independent reviewer criteria / reviewer-criteria
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/reviewer-criteria.md`
   - 依赖：—；被引用：—
 - [regenerated path/nonfunction projections. The affected closure and production](../../../reports/operations/ignition-122-federation-progress.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -718,6 +788,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-57249D2D07EEDF8D / same = canon\(used\) == canon\(pre\) / IMPLICIT-57249D2D07EEDF8D
   - 来源：`evidence-program/tools/validate_evidence_program.py`
+  - 依赖：—；被引用：—
+- [Sealed condition-map generation recipe](../../ASSET-CARDS.md#asset-hr-0b1a76b884ead2d8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Sealed condition-map generation recipe / condition-map-recipe
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/freeze/condition-map-recipe.md`
   - 依赖：—；被引用：—
 - [Sealed evaluator package](../../ASSET-CARDS.md#asset-hr-69bd64e36b0a14eb)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -999,6 +1074,11 @@
   - 可搜索名称：NFC-0be3952fb51314cd / Surface semantics. Two deterministic projection checks were byte-identical.
   - 来源：`reports/operations/ignition-140-step00-baseline-audit.md`
   - 依赖：—；被引用：—
+- [Target-blind reference policy validity criteria](../../ASSET-CARDS.md#asset-hr-9ceae5d4527ea26e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Target-blind reference policy validity criteria / validity-criteria
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/validity-criteria.md`
+  - 依赖：—；被引用：—
 - [Task arithmetic IS composition: \(1\) negation = subtractive composition, \(2\) addition = additive composition, \(3\) analogy](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-045.json)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-bc9024ed08373c7b / Task arithmetic IS composition: \(1\) negation = subtractive composition, \(2\) addition = additive composition, \(3\) analogy
@@ -1038,6 +1118,21 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Task220 R0 preregistered outcome rule / preregistered-outcome-rule-r0
   - 来源：`reports/evaluations/ignition-220-cognitive-evolution-r0/evaluator/preregistered-outcome-rule-r0.md`
+  - 依赖：—；被引用：—
+- [Task226 R7 revision-failure taxonomy to policy contract](../../ASSET-CARDS.md#asset-hr-612510a940b17d90)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task226 R7 revision-failure taxonomy to policy contract / taxonomy-to-schema
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/taxonomy-to-schema.md`
+  - 依赖：—；被引用：—
+- [Task227 Component Isolation R0](../../ASSET-CARDS.md#asset-hr-5fc13ddf9bdf3adf)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task227 Component Isolation R0 / README
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/README.md`
+  - 依赖：—；被引用：—
+- [Task227 Component Isolation R0 protocol](../../ASSET-CARDS.md#asset-hr-5130cdc4ebe5e2cc)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task227 Component Isolation R0 protocol / protocol
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/protocol.md`
   - 依赖：—；被引用：—
 - [task_events = \[event for event in lifecycle if event.get\("task_number"\) == 114\]](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1774,6 +1869,11 @@
   - 可搜索名称：NFC-88faa7d9376fdd44 / TMLR in-the-wild model-merging full-text and exact-code review: four bases, 48 named fine-tunes, sampled subset sizes, 1
   - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—
+- [Transfer byte-integrity and opaque bundle recipe](../../ASSET-CARDS.md#asset-hr-3d53f7e0c9d1759e)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Transfer byte-integrity and opaque bundle recipe / input-integrity-recipe
+  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/input-integrity-recipe.md`
+  - 依赖：—；被引用：—
 - [TRANSFER-01 — synthetic bounded transfer case](../../ASSET-CARDS.md#asset-hr-82d271579f2ef74f)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：TRANSFER-01 — synthetic bounded transfer case / case-source
@@ -2403,104 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-10bf8a6175e93442 / \| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子
   - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—
-- [\| N2=Symbolic Compiler \| N2=Representation \(encoder/decoder/validator\) \|](../../../reports/external-research/121Q5-final-report.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-342B1819B0C12810 / \| N2=Symbolic Compiler \| N2=Representation \(encoder/decoder/validator\) \| / IMPLICIT-342B1819B0C12810
-  - 来源：`reports/external-research/121Q5-final-report.md`
-  - 依赖：—；被引用：—
-- [\| No external function projection \| ✅ All projections marked EXTERNAL_PARADIGM \|](../../../reports/external-research/120-source-quality-and-template-risk-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-0a69e9ffd2fa04e5 / \| No external function projection \| ✅ All projections marked EXTERNAL_PARADIGM \|
-  - 来源：`reports/external-research/120-source-quality-and-template-risk-audit.md`
-  - 依赖：—；被引用：—
-- [\| SB \| CP \| 某故事化案例对应哪些 benchmark \|](../../../docs/machine_readable_data_plan.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-7328159c2c1d691f / \| SB \| CP \| 某故事化案例对应哪些 benchmark \|
-  - 来源：`docs/machine_readable_data_plan.md`
-  - 依赖：—；被引用：—
-- [\| Surface \| Baseline Main \| 1.4 Candidate exact-branch projection \| Capability effect \|](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-58d5b43ea0d1d113 / \| Surface \| Baseline Main \| 1.4 Candidate exact-branch projection \| Capability effect \|
-  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
-  - 依赖：—；被引用：—
-- [\| Task 127 projection manifest `missing=96` \| `HISTORICAL_PROJECTION_RESIDUAL` \| Historical projection-hygiene manifest](../../../reports/operations/ignition-130-step11-residual-reclassification.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-c8df8d47b339144d / \| Task 127 projection manifest `missing=96` \| `HISTORICAL_PROJECTION_RESIDUAL` \| Historical projection-hygiene manifest
-  - 来源：`reports/operations/ignition-130-step11-residual-reclassification.md`
-  - 依赖：—；被引用：—
-- [\| 信息顺序 \| 基本 SOV 与话题初始、前动词焦点等倾向互动。 \| 不把线性位置机械对应 given/new。 \|](../../../docs/language-thought/profiles/tr.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-f0a3e0fdbfc64237 / \| 信息顺序 \| 基本 SOV 与话题初始、前动词焦点等倾向互动。 \| 不把线性位置机械对应 given/new。 \|
-  - 来源：`docs/language-thought/profiles/tr.md`
-  - 依赖：—；被引用：—
-- [\| 分类／词汇粒度 \| 量词、复合词、成语、专业术语和语境共同调节类别；无一词对应时可解释。 \| 用一个目标词压平多个历史／制度术语，或把量词选择本体化。 \|](../../../docs/language-thought/profiles/zh-hans.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-72f52859f1469402 / \| 分类／词汇粒度 \| 量词、复合词、成语、专业术语和语境共同调节类别；无一词对应时可解释。 \| 用一个目标词压平多个历史／制度术语，或把量词选择本体化。 \|
-  - 来源：`docs/language-thought/profiles/zh-hans.md`
-  - 依赖：—；被引用：—
-- [\| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \|](../../../outputs/getbrain/failure-typology-draft-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-98bce4c901d5ab64 / \| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \|
-  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 我播种黄金 / structural analogy \| 194 \| 50 \| 50 \| 0 \| false \| 0 \| 100% \| 943.108 ms \| `INCONCLUSIVE` \|](../../../reports/operations/ignition-172-20260915-step11-ab-replay.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-15fafeb2231f4ef8 / \| 我播种黄金 / structural analogy \| 194 \| 50 \| 50 \| 0 \| false \| 0 \| 100% \| 943.108 ms \| `INCONCLUSIVE` \|
-  - 来源：`reports/operations/ignition-172-20260915-step11-ab-replay.md`
-  - 依赖：—；被引用：—
-- [\| 数据 schema \| `data/schemas/` \| 上述七类数据对应的 JSON schema \|](../../../docs/getbrain-handoff-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-64e695d4f8ddf838 / \| 数据 schema \| `data/schemas/` \| 上述七类数据对应的 JSON schema \|
-  - 来源：`docs/getbrain-handoff-20260708.md`
-  - 依赖：—；被引用：—
-- [\| 时制／体貌／终点 \| 时间主要由体标记、时间词、词汇和语境组织；`了、着、过、在` 不一一对应英语时制。 \| `了` 被机械当过去完成，或过程被翻成已达终点。 \|](../../../docs/language-thought/profiles/zh-hans.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9fba56df0def3204 / \| 时制／体貌／终点 \| 时间主要由体标记、时间词、词汇和语境组织；`了、着、过、在` 不一一对应英语时制。 \| `了` 被机械当过去完成，或过程被翻成已达终点。 \|
-  - 来源：`docs/language-thought/profiles/zh-hans.md`
-  - 依赖：—；被引用：—
-- [\| 结构性统一 \| 多领域共享同构、门控、约束、收敛结构 \| 可以（L1-L2） \|](../../../outputs/getbrain/project-position-update-20260706.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-17af45cc473c3c81 / \| 结构性统一 \| 多领域共享同构、门控、约束、收敛结构 \| 可以（L1-L2） \|
-  - 来源：`outputs/getbrain/project-position-update-20260706.md`
-  - 依赖：—；被引用：—
-- [\| 输出跨域同构汇总 \| ✓ \|](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-9026bf124ab59f6a / \| 输出跨域同构汇总 \| ✓ \|
-  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [\|快速读懂一篇长文\|\[分层阅读\]\(./KNOWLEDGE/READING-LAYERS.md\)\|对应完整来源、\[统一资产卡\]\(./KNOWLEDGE/ASSET-CARDS.md\)\|](../../../HUMAN-READING.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-cd3d0bb56dce01f7 / \|快速读懂一篇长文\|\[分层阅读\]\(./KNOWLEDGE/READING-LAYERS.md\)\|对应完整来源、\[统一资产卡\]\(./KNOWLEDGE/ASSET-CARDS.md\)\|
-  - 来源：`HUMAN-READING.md`
-  - 依赖：—；被引用：—
-- [\|跨域映射\|大量对应只达到结构隐喻或研究假设。\|对象集合、映射、双射/同态条件、保持结构与反例。\|相似性不能稳定保持时不得称同构。\|](../../../RESULTS/OPEN-QUESTIONS.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-850ad71b7466f040 / \|跨域映射\|大量对应只达到结构隐喻或研究假设。\|对象集合、映射、双射/同态条件、保持结构与反例。\|相似性不能稳定保持时不得称同构。\|
-  - 来源：`RESULTS/OPEN-QUESTIONS.md`
-  - 依赖：—；被引用：—
-- [ΔΘ = Θ - min Φ = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0923FD51EF01A1CB / ΔΘ = Θ - min Φ = 0 / IMPLICIT-0923FD51EF01A1CB / IMPLICIT-1A9DA4161A0E8200
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [ΔΘ = Θ - min Φ = 0](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1A9DA4161A0E8200 / ΔΘ = Θ - min Φ = 0 / IMPLICIT-1A9DA4161A0E8200 / IMPLICIT-0923FD51EF01A1CB
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [ΔΩ_n := Ω_n - Ω_{n-1}（同构增量）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-eb331219144035f3 / ΔΩ_n := Ω_n - Ω_{n-1}（同构增量）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\]](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-6899092547602833 / Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\] / IMPLICIT-6899092547602833 / IMPLICIT-E51AC76294648D92
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\]](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E51AC76294648D92 / Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\] / IMPLICIT-E51AC76294648D92 / IMPLICIT-6899092547602833
-  - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—

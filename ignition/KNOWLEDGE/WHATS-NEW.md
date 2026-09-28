@@ -4,6 +4,222 @@
 
 ## 2026
 
+<a id="change-src-hr-fea07b39d2492747"></a>
+### 2026-09-28 · Fresh reference-M1 builder prompt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** You are a fresh, independent policy designer. Use only the input files explicitly supplied in your task manifest: one family's M0, that family's raw E1 evidence, this policy schema, and this prompt. Do not search or open any other files, repositories, conversations, or prior outputs.
+- **来源：** [builder-prompt.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/builder-prompt.md)
+- **资产卡：** [HR-FEA07B39D2492747](./ASSET-CARDS.md#asset-hr-fea07b39d2492747)
+
+<a id="change-src-hr-f1199313764281b0"></a>
+### 2026-09-28 · Neutral fresh transfer prompt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Apply only the method materials provided in this single task bundle to visible cases A, B, and C. Return one JSON response conforming to response-schema.json.
+- **来源：** [prompt.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/prompt.md)
+- **资产卡：** [HR-F1199313764281B0](./ASSET-CARDS.md#asset-hr-f1199313764281b0)
+
+<a id="change-src-hr-eac563ea0a86b785"></a>
+### 2026-09-28 · Pre-freeze reviewer E — endpoint and preregistration audit
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Scope: read-only review of the Component-A endpoint and interpretation contract.
+- **来源：** [reviewer-E.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-E.md)
+- **资产卡：** [HR-EAC563EA0A86B785](./ASSET-CARDS.md#asset-hr-eac563ea0a86b785)
+
+<a id="change-src-hr-d950d1fb4221f338"></a>
+### 2026-09-28 · Reference policy independent reviewer criteria
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Each reviewer scores all six raw policy objects against their own family M0 and E1. A policy is USABLE only when this reviewer marks all eight schema-listed dimensions true and affirms that the policy is E1-supported, operational, bounded, preservation-safe, explicit about fallback/edges, and fre…
+- **来源：** [reviewer-criteria.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/reviewer-criteria.md)
+- **资产卡：** [HR-D950D1FB4221F338](./ASSET-CARDS.md#asset-hr-d950d1fb4221f338)
+
+<a id="change-src-hr-d706ee9795e4faf5"></a>
+### 2026-09-28 · Task226 evidence binding receipt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Recovery status: complete; reproduction gate passed exactly. Packet identity: TASK226R7FAILUREARCHAEOLOGYRECOVERED Recovery-receipt SHA256: 85bbc10248fea6427ad66ddfbd7fc8a45e01a67791908150338f1e4613dd07a5
+- **来源：** [task226-evidence-binding-receipt.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/task226-evidence-binding-receipt.md)
+- **资产卡：** [HR-D706EE9795E4FAF5](./ASSET-CARDS.md#asset-hr-d706ee9795e4faf5)
+
+<a id="change-src-hr-d4b245232c5dc745"></a>
+### 2026-09-28 · Blind Component-B revision evaluator criteria
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Score each of six generated policies independently. Use only the named family M0/E1, the shared operational policy schema, this criteria file, and six candidate policies. Do not access held-out cases or targets, reference policies, transfer outputs, Task226 report, or another evaluator's sheet. R…
+- **来源：** [criteria.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/evaluator/criteria.md)
+- **资产卡：** [HR-D4B245232C5DC745](./ASSET-CARDS.md#asset-hr-d4b245232c5dc745)
+
+<a id="change-src-hr-ca1b4d29c75cb920"></a>
+### 2026-09-28 · Pre-freeze reviewer C — target compatibility and achievability
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Scope: read-only review of the Task227 reference policy schema, builder prompt, six reference manifests, and authorized Task225 R0.1 target definitions for FAMILY01–03. No Task226/R7 outputs, Task227 outputs, or builder response/session logs were opened.
+- **来源：** [reviewer-C.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-C.md)
+- **资产卡：** [HR-CA1B4D29C75CB920](./ASSET-CARDS.md#asset-hr-ca1b4d29c75cb920)
+
+<a id="change-src-hr-bfacb9d1d4663b29"></a>
+### 2026-09-28 · Identical bundle template for every transfer session
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Every one of the 18 fresh sessions receives identical byte copies of its family's cases A.md, B.md, and C.md, plus the neutral prompt and response schema. The one condition-specific method bundle is provided per the sealed coordinator manifest.
+- **来源：** [template.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/template.md)
+- **资产卡：** [HR-BFACB9D1D4663B29](./ASSET-CARDS.md#asset-hr-bfacb9d1d4663b29)
+
+<a id="change-src-hr-b7271a431d9522e4"></a>
+### 2026-09-28 · Formal anchor receipt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Live anchor checked on 2026-09-28 before Task227 freeze.
+- **来源：** [formal-anchor-receipt.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/formal-anchor-receipt.md)
+- **资产卡：** [HR-B7271A431D9522E4](./ASSET-CARDS.md#asset-hr-b7271a431d9522e4)
+
+<a id="change-src-hr-b2754787026b6544"></a>
+### 2026-09-28 · Component-A exact scoring and interpretation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Blind evaluators score each randomized response against the existing R0.1 frozen target for its case. The response schema supports action, additional actions, reported value, preserved M0 rule, fallback, scope, rationale, and provenance. Score A/B/C against the complete outcome, not a shared term…
+- **来源：** [interpretation.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/interpretation.md)
+- **资产卡：** [HR-B2754787026B6544](./ASSET-CARDS.md#asset-hr-b2754787026b6544)
+
+<a id="change-src-hr-a91c29ce537b48ef"></a>
+### 2026-09-28 · Fresh Component-B revision-generation prompt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** You are a fresh independent policy designer. Use only the task's one family M0, raw E1, policy schema, and this prompt. Do not search or open other files, task directories, prior conversations, held-out cases, targets, earlier outputs, reference policies, or evaluation material.
+- **来源：** [prompt.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/prompt.md)
+- **资产卡：** [HR-A91C29CE537B48EF](./ASSET-CARDS.md#asset-hr-a91c29ce537b48ef)
+
+<a id="change-src-hr-9ceae5d4527ea26e"></a>
+### 2026-09-28 · Target-blind reference policy validity criteria
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Review each of the six policies independently. Use only that policy, its family's M0 and E1, and policy-schema.json. Do not open or infer from held-out A/B/C cases, targets, Task226 analysis, R7 responses or scores, or other policies while scoring. No repair is permitted.
+- **来源：** [validity-criteria.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/validity-criteria.md)
+- **资产卡：** [HR-9CEAE5D4527EA26E](./ASSET-CARDS.md#asset-hr-9ceae5d4527ea26e)
+
+<a id="change-src-hr-98cf607fc5cc588a"></a>
+### 2026-09-28 · Five-review pre-freeze record
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Each report must identify the exact reviewed draft tree, list only the authorized files consulted, state PASS / HARDISSUE / STOP, and provide findings with file/section references. Reports are read-only design review, not outcome data. No reviewer may edit the design or inspect material outside t…
+- **来源：** [pre-freeze-review-record-template.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/pre-freeze-review-record-template.md)
+- **资产卡：** [HR-98CF607FC5CC588A](./ASSET-CARDS.md#asset-hr-98cf607fc5cc588a)
+
+<a id="change-src-hr-735af33437eb4a21"></a>
+### 2026-09-28 · Pre-freeze reviewer D — transfer visible-input isolation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Scope: read-only review of the successor transfer packet and blind-evaluator inputs. The response no longer carries source provenance or evidence locators; the sanitizer removes condition, bundle, policy, lineage, builder, and source identifiers before blind evaluation, then scans for residual id…
+- **来源：** [reviewer-D.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-D.md)
+- **资产卡：** [HR-735AF33437EB4A21](./ASSET-CARDS.md#asset-hr-735af33437eb4a21)
+
+<a id="change-src-hr-612510a940b17d90"></a>
+### 2026-09-28 · Task226 R7 revision-failure taxonomy to policy contract
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This mapping covers the three revision failure classes explicitly summarized in the recovered Task226 revision taxonomy. The Task227 command independently requires operational selector, applicability, fallback, stop, provenance, and scope fields; those are structural safeguards, not extra failure…
+- **来源：** [taxonomy-to-schema.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/taxonomy-to-schema.md)
+- **资产卡：** [HR-612510A940B17D90](./ASSET-CARDS.md#asset-hr-612510a940b17d90)
+
+<a id="change-src-hr-5fc13ddf9bdf3adf"></a>
+### 2026-09-28 · Task227 Component Isolation R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: pre-freeze design. No Task227 experimental conversations have run and no scientific outputs exist.
+- **来源：** [README.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/README.md)
+- **资产卡：** [HR-5FC13DDF9BDF3ADF](./ASSET-CARDS.md#asset-hr-5fc13ddf9bdf3adf)
+
+<a id="change-src-hr-5130cdc4ebe5e2cc"></a>
+### 2026-09-28 · Task227 Component Isolation R0 protocol
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is POSTRESULTEXPLORATORYCOMPONENTISOLATIONR0, authorized after the read-only Task226 R7 archaeology. Task223 R0 and Task225/R7 R0.1 remain NOTSUPPORTED. Task226 reproduced the mixed revision-generation, target-compatibility, and M1 transfer-interface failure plus evaluator-sensitive critical…
+- **来源：** [protocol.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/protocol.md)
+- **资产卡：** [HR-5130CDC4EBE5E2CC](./ASSET-CARDS.md#asset-hr-5130cdc4ebe5e2cc)
+
+<a id="change-src-hr-4fdd2c6565052033"></a>
+### 2026-09-28 · Pre-freeze reviewer B — reference-builder input isolation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Scope: read-only review of the six reference manifests, builder prompt, and policy schema. No held-out case or target content was inspected.
+- **来源：** [reviewer-B.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-B.md)
+- **资产卡：** [HR-4FDD2C6565052033](./ASSET-CARDS.md#asset-hr-4fdd2c6565052033)
+
+<a id="change-src-hr-3d53f7e0c9d1759e"></a>
+### 2026-09-28 · Transfer byte-integrity and opaque bundle recipe
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** After reference policy validity is locked, coordinator copies each frozen FAMILY01/02/03 case A/B/C byte-for-byte into every one of the six lineage × three condition bundles. Compute and retain SHA-256 for all 54 materialized case files; within each family, the three case hashes must be identical…
+- **来源：** [input-integrity-recipe.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/input-integrity-recipe.md)
+- **资产卡：** [HR-3D53F7E0C9D1759E](./ASSET-CARDS.md#asset-hr-3d53f7e0c9d1759e)
+
+<a id="change-src-hr-38a1fb7c1d829771"></a>
+### 2026-09-28 · Component-B revision generation
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Exactly two fresh independent sessions per family (six total). Each manifest allowlists same-family M0 and E1 plus the shared operational policy schema and neutral prompt. Do not give builders Task226 or Task225 outputs, cases, targets, reference policies, prior context, sibling outputs, or scori…
+- **来源：** [README.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/README.md)
+- **资产卡：** [HR-38A1FB7C1D829771](./ASSET-CARDS.md#asset-hr-38a1fb7c1d829771)
+
+<a id="change-src-hr-302db23be2786f1c"></a>
+### 2026-09-28 · Blind Component-A transfer evaluator criteria
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Each evaluator independently scores the same 18 randomized opaque response packets. Use only the visible case bytes, corresponding frozen target, this scoring guide, and sanitized response. Do not access M0/E1/reference-policy materials, condition labels, input manifests, condition map, lineage g…
+- **来源：** [evaluator-criteria.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/evaluator-criteria.md)
+- **资产卡：** [HR-302DB23BE2786F1C](./ASSET-CARDS.md#asset-hr-302db23be2786f1c)
+
+<a id="change-src-hr-2107d5eed5e7e51d"></a>
+### 2026-09-28 · Pre-freeze reviewer A — Task226 taxonomy and policy contract
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Scope: read-only review of the taxonomy mapping, policy schema, policy validator, and builder/revision prompts. No held-out target content was inspected.
+- **来源：** [reviewer-A.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-A.md)
+- **资产卡：** [HR-2107D5EED5E7E51D](./ASSET-CARDS.md#asset-hr-2107d5eed5e7e51d)
+
+<a id="change-src-hr-11563958b6e1ee6a"></a>
+### 2026-09-28 · Component-A reference policy construction
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Exactly two independent builders per family (six total). The six manifests each allow only same-family M0 and raw E1 plus the common schema and builder prompt. Builders have no repository browsing or shell access; give them file content only for those paths and a fresh session with no inherited h…
+- **来源：** [README.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/README.md)
+- **资产卡：** [HR-11563958B6E1EE6A](./ASSET-CARDS.md#asset-hr-11563958b6e1ee6a)
+
+<a id="change-src-hr-0b1a76b884ead2d8"></a>
+### 2026-09-28 · Sealed condition-map generation recipe
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** At freeze no condition map with usable mappings is exposed to successors or evaluators. After reference policy validity is dual-locked, an independent coordinator generates 18 cryptographically random opaque trial IDs. Construct a complete Cartesian product of six reference-policy lineages by M0O…
+- **来源：** [condition-map-recipe.md](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/freeze/condition-map-recipe.md)
+- **资产卡：** [HR-0B1A76B884EAD2D8](./ASSET-CARDS.md#asset-hr-0b1a76b884ead2d8)
+
 <a id="change-src-hr-df0673680b15866c"></a>
 ### 2026-09-26 · Task220 R0 preregistered outcome rule
 
