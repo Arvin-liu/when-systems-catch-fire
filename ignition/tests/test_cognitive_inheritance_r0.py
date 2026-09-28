@@ -369,8 +369,12 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
                 "tools.validate_cognitive_inheritance_r0.TASK225_SUCCESSOR_SOURCE_SHA256",
                 hashlib.sha256(tampered_source).hexdigest(),
             ):
-                with self.assertRaisesRegex(ValidationFailure, "differs beyond the exact"):
-                    validate_task225_successor_lock(repo, task220_source=historical_source)
+                with patch(
+                    "tools.validate_cognitive_inheritance_r0.task225_source_bytes",
+                    return_value=tampered_source,
+                ):
+                    with self.assertRaisesRegex(ValidationFailure, "differs beyond the exact"):
+                        validate_task225_successor_lock(repo, task220_source=historical_source)
 
     def test_r0_paths_are_excluded_from_canonical_claim_discovery(self) -> None:
         result = validate_all(ROOT)

@@ -47,6 +47,7 @@ TASK220_FREEZE_SIDECAR_RELATIVE = Path(
     "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/freeze/FREEZE-MANIFEST.sha256"
 )
 TASK225_SUCCESSOR_SOURCE_PATH = "ignition/docs/foundation/nonfunction-claim-adjudication-index.md"
+TASK225_SUCCESSOR_HEAD_COMMIT = "b6acf6856128833677c35d85a9f088cb49b5d4f2"
 TASK225_SUCCESSOR_SOURCE_SHA256 = "054b1fffead021954873c6859dc668763d15914d81443ff0a4a0046eeb124b7d"
 TASK225_TASK220_SOURCE_SHA256 = "53739d2ecac1e391dd04cbb441b8057725508d46a8c4b8202cafdb53246c0716"
 TASK225_FIRE_SEED_CENSUS_PATH = "ignition/data/publication/fire-seeds/seed-census.json"
@@ -374,6 +375,17 @@ def task220_source_bytes(repo_root: Path) -> bytes:
     return result.stdout
 
 
+def task225_source_bytes(repo_root: Path) -> bytes:
+    result = subprocess.run(
+        ["git", "show", f"{TASK225_SUCCESSOR_HEAD_COMMIT}:{TASK225_SUCCESSOR_SOURCE_PATH}"],
+        cwd=repo_root,
+        capture_output=True,
+        check=False,
+    )
+    require(result.returncode == 0, "Task225 frozen source cannot be read from its exact head commit")
+    return result.stdout
+
+
 def validate_task225_successor_lock(
     repo_root: Path,
     *,
@@ -384,6 +396,10 @@ def validate_task225_successor_lock(
     require(
         TASK225_SUCCESSOR_PARENT_COMMIT == "8989a7c58e602f1e02c5de95af1cde418ad827a9",
         "Task225 successor parent commit differs",
+    )
+    require(
+        TASK225_SUCCESSOR_HEAD_COMMIT == "b6acf6856128833677c35d85a9f088cb49b5d4f2",
+        "Task225 successor head commit differs",
     )
     require(
         TASK225_SUCCESSOR_PROVENANCE == {
@@ -410,10 +426,10 @@ def validate_task225_successor_lock(
 
     source_path = repo_root / TASK225_SUCCESSOR_SOURCE_PATH
     require(source_path.is_file(), "Task225 successor upstream source is missing")
-    current_source = source_path.read_bytes()
+    frozen_task225_source = task225_source_bytes(repo_root)
     require(
-        hashlib.sha256(current_source).hexdigest() == TASK225_SUCCESSOR_SOURCE_SHA256,
-        "Task225 successor upstream source hash differs from the inline lock",
+        hashlib.sha256(frozen_task225_source).hexdigest() == TASK225_SUCCESSOR_SOURCE_SHA256,
+        "Task225 frozen successor source hash differs from the inline lock",
     )
     historical_source = task220_source if task220_source is not None else task220_source_bytes(repo_root)
     require(
@@ -422,12 +438,12 @@ def validate_task225_successor_lock(
     )
     require(
         historical_source.count(TASK225_SUCCESSOR_SOURCE_DELTA_BEFORE) == 1
-        and current_source.count(TASK225_SUCCESSOR_SOURCE_DELTA_AFTER) == 1
+        and frozen_task225_source.count(TASK225_SUCCESSOR_SOURCE_DELTA_AFTER) == 1
         and historical_source.replace(
             TASK225_SUCCESSOR_SOURCE_DELTA_BEFORE,
             TASK225_SUCCESSOR_SOURCE_DELTA_AFTER,
             1,
-        ) == current_source,
+        ) == frozen_task225_source,
         "Task225 successor source differs beyond the exact 6811-to-6868 census token",
     )
 
