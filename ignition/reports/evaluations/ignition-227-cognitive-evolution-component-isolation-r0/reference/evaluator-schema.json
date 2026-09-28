@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Task227 reference policy dual-review sheet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evaluator_id",
+    "locked",
+    "scores"
+  ],
+  "properties": {
+    "evaluator_id": {
+      "type": "string"
+    },
+    "locked": {
+      "const": true
+    },
+    "scores": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "policy_id",
+          "dimensions",
+          "usable",
+          "rationale"
+        ],
+        "properties": {
+          "policy_id": {
+            "type": "string"
+          },
+          "dimensions": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "schema_operational_completeness",
+              "evidence_grounding",
+              "operational_selector",
+              "bounded_applicability",
+              "preservation_safety",
+              "fallback_edge_explicitness",
+              "no_unsupported_universalization",
+              "provenance_scope_ceiling"
+            ],
+            "properties": {
+              "schema_operational_completeness": {
+                "type": "boolean"
+              },
+              "evidence_grounding": {
+                "type": "boolean"
+              },
+              "operational_selector": {
+                "type": "boolean"
+              },
+              "bounded_applicability": {
+                "type": "boolean"
+              },
+              "preservation_safety": {
+                "type": "boolean"
+              },
+              "fallback_edge_explicitness": {
+                "type": "boolean"
+              },
+              "no_unsupported_universalization": {
+                "type": "boolean"
+              },
+              "provenance_scope_ceiling": {
+                "type": "boolean"
+              }
+            }
+          },
+          "usable": {
+            "type": "boolean"
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

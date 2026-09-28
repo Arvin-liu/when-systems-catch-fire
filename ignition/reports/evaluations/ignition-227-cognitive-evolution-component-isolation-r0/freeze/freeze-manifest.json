@@ -1,0 +1,299 @@
+{
+  "commands": [
+    {
+      "path": "agent-commands/IGNITION-20260928-227-R1-RECOVER-TASK226-AND-RESUME.md",
+      "repository": "Arvin-liu/1111",
+      "sha256": "737cf17b7eec263537d60da1f6c9174645f40614"
+    },
+    {
+      "path": "agent-commands/IGNITION-20260928-227-COMPONENT-ISOLATION-R0-MIXED-REPAIR.md",
+      "repository": "Arvin-liu/1111",
+      "sha256": "d339343803ee4269f1ee96ed191930919acd6b5c"
+    }
+  ],
+  "design_gate": {
+    "hard_issues_unresolved": 0,
+    "reviewers": {
+      "A": "PASS",
+      "B": "PASS",
+      "C": "PASS",
+      "D": "PASS",
+      "E": "PASS"
+    },
+    "target_families": "3/3"
+  },
+  "external_m0_e1_inputs": [
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/m0.md",
+      "sha256": "4cce89f12f278559f45ac0d3bbb6dae049e72dc059866bb1fb039ab74aaa5a0a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md",
+      "sha256": "8c4d4123055732d8e68a13eaa0dcb9fbae3cddb07afef66e7dbb3699ea761ca0"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md",
+      "sha256": "bc64a52ae85320c22221021aa57f3dee526d4355a5c37f45477f1e329737dc69"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md",
+      "sha256": "f7adf3efbc59f07b5df3ef80552d96981c0112a71cdc324fe71d8e17988072ea"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md",
+      "sha256": "691b63e6ff4324acc23a09a35114df3fbb75668d39de3d8283386f30b110331a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md",
+      "sha256": "fba2eef834fa1ae9b43665ecbaa15a2bf8690f840cc0a56483701a8e7601c5ff"
+    }
+  ],
+  "fixed_design": {
+    "component_a_evaluators": 2,
+    "component_a_transfers": 18,
+    "component_b_evaluators": 2,
+    "denominator": 6,
+    "reference_builders": 6,
+    "revision_sessions": 6
+  },
+  "formal_anchor": {
+    "base": "8989a7c58e602f1e02c5de95af1cde418ad827a9",
+    "head": "b6acf6856128833677c35d85a9f088cb49b5d4f2",
+    "pr": 236,
+    "receipt_path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/formal-anchor-receipt.md",
+    "receipt_sha256": "45dd29edb50d918ca276625af8fc8502d1a0d382826a9526e6cf45a5f025319b",
+    "required_ci_runs": {
+      "architecture-pages": 36345482985,
+      "foundation-validation": 36345482994,
+      "q33-governance-validation": 36345482980,
+      "repository-path-accounting-preflight": 36345483024
+    },
+    "state": "OPEN_DRAFT_UNMERGED"
+  },
+  "freeze_version": "TASK227_COMPONENT_ISOLATION_R0",
+  "frozen_files": [
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/README.md",
+      "sha256": "2c7ff7de973aaddca8809dfda6550717238761f3f253fc4ded4b5e992b74a53a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/formal-anchor-receipt.md",
+      "sha256": "45dd29edb50d918ca276625af8fc8502d1a0d382826a9526e6cf45a5f025319b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/protocol.md",
+      "sha256": "c0e0a4306ba6120d611493f8c53e5523465ed36582a2bf8a7ce2eeb5eace3ba4"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/task226-evidence-binding-receipt.md",
+      "sha256": "d1d460f2764c0d7401088499b9448c5d76a57ba885d742469bcdf3c2d7582d73"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/taxonomy-to-schema.md",
+      "sha256": "73fa4fc0f8030fd9bc7abf6486ebba41bf1e425c911f2685d7c80e3c87fd073a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/freeze/condition-map-recipe.md",
+      "sha256": "bffe2278f4a4e630cdd7efdd45fe4e62033603c34362cdb72c0ecbfbdef5a170"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/README.md",
+      "sha256": "85b4c76cdc28a5e8119201daf8f807b653ae469a606ba98ac9dfcbefa43e2926"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/builder-prompt.md",
+      "sha256": "53c1416c265b88756c0bf78d43d2226d4ed29ee557e3e1ff1fa5071476187655"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/criteria.json",
+      "sha256": "5a0349fc761226c673ced02bcb00996ae7987792f2704797943c7838280c53a5"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/evaluator-schema.json",
+      "sha256": "330d963e6a47a13ae56d20e0d3d65376d7386e255fa0be4b1fc32633dd97d5a0"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/manifests/REF-01.json",
+      "sha256": "eb5ac16689d719d2eb71bac56647dde79032f943fda07a3cd0284c4314790969"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/manifests/REF-02.json",
+      "sha256": "ca9333948c26f21e4394f188539d9f1a8766b1dd1f67470160ef765f2e06242c"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/manifests/REF-03.json",
+      "sha256": "220542e2bb49cabb64c2ee2e32d1423436364fa6598e4a3506eaba86f4946fcc"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/manifests/REF-04.json",
+      "sha256": "835f87b70f4b1931b496fd9c41ebda8dba4ec08c42f2eae40bf2821f007c2a42"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/manifests/REF-05.json",
+      "sha256": "6def5883e3e7bf4a6e329164c951c3559bfde11ad2447e5740bc0352a17c3338"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/manifests/REF-06.json",
+      "sha256": "337c556e34bf8a3dc2732c2f27bde5711fa93342b3b5558afa006fa0bd7bfab5"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/policy-schema.json",
+      "sha256": "65995a0ea424ed7103db862c36d678a59efa95546f2d55fdb6f0c13997776dc6"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/reviewer-criteria.md",
+      "sha256": "70add38bbaf6c8ee76259a5429ceeb3cb517d3dfcf3dfa385892825d5f72056e"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/validity-criteria.md",
+      "sha256": "df4a9f4f1dff2749dd71ac42afbbd35b0facb6dc838bb2823cc9f64381c81b5d"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/pre-freeze-review-record-template.md",
+      "sha256": "81aa4d617d0258760bf68f7a4aa87ab4b513c7cd86f15f69b9df0c6a1f0a5686"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-A.md",
+      "sha256": "504fa99427e7f3dcb0a3cc2066c0aa6ed06a33b16c16192b6aa900fdc91e5d5c"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-B.md",
+      "sha256": "d190c5fefd9d5a158031a63b440662a193911135ed665661c2dda6ebdb7a9570"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-C.md",
+      "sha256": "92e926ef61d02c854e241d1f9fa4a5875457b43a0df7d03a2c4c7470fc141bde"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-D.md",
+      "sha256": "ec6b8c9318ae4240f36732564af8d677677fd4f7d4292579d34de14d5042ef05"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-E.md",
+      "sha256": "9368023573d9f2e3a6f34b03e772f372ca783931f8dbfbac4dbb81b15c30e30d"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/README.md",
+      "sha256": "f1c0a4b4df2478dcb71955fab14b9911cba80d3d49bc987c49b46727b9635b5e"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/evaluator/criteria.md",
+      "sha256": "79936855885f300d185e0306ce18e0bc21f35f67a36240c8b87f5c8e80e1c61f"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/evaluator/schema.json",
+      "sha256": "1d6bcb0173e1cef0f148c073d4d5d4449d56832784d6f363ea51dba19d2c75fc"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/manifests/REV-01.json",
+      "sha256": "79f511484582d2ae60dd835657200ed21a0274c3790b1e157ba9a5d2fb1a302b"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/manifests/REV-02.json",
+      "sha256": "02e71ec22e2df7c9118050504cf55a504b4dde288d412f88ede840fe02ae8bbe"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/manifests/REV-03.json",
+      "sha256": "f10ae7009679b2838f4018e3410f53c2e6dbc13eab000b078a97c1645cc79ab6"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/manifests/REV-04.json",
+      "sha256": "4bda85c2305e51c7a42c6264c8b0734281c5b07de7c2d90685c6758d19729678"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/manifests/REV-05.json",
+      "sha256": "596e5ddc24015ae6db189d4967110843083a58ca6b0ad63b43ca073a5215982e"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/manifests/REV-06.json",
+      "sha256": "048206d4b2b80d7ab5ef199c0c4863ee1278587dae193efdc12d6994cd76f99c"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/outcome-rule.json",
+      "sha256": "a5fef53f65ed78f8d549aaaa255fe44cfdb02364b07e998db487d5555a96ae1c"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/prompt.md",
+      "sha256": "39bfd92f36fca6373e02eecc64d41d09bfd2ce5eec4c097e00997c09d09f32d9"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/tools/build_freeze_manifest.py",
+      "sha256": "93ed9fce7cbfd2ce9431b5f249c74f7783d5cefd4931b9efaf649dd1a3a58536"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/tools/build_transfer_bundles.py",
+      "sha256": "5111a7ff42a775990b9bad4aa14493482effb615bb2f37bd3003ae6da23308f9"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/tools/make_transfer_map.py",
+      "sha256": "61dd653604371a3792dcf7d9251401d100e4582aaf22ef7cef91dd85539012a8"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/tools/requirements.txt",
+      "sha256": "4046ca1e3a64f4ea791fb4fb3d8566242086ff1c8e2431e2c349e1052ffc6ba0"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/tools/sanitize_transfer_packet.py",
+      "sha256": "a375f68d652d9af6fc131a165b2d0ab0a73993c39613cfa695c752d3acbcc01a"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/tools/validate_design.py",
+      "sha256": "072a3f52d92589d4cb4a78506f5cdea83becbd2997e5e89337c53735258a5059"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/tools/validate_policy.py",
+      "sha256": "97825e5d8640fe931578cfb4448e453674de3a68cb9001fce2d4ce5ef89623bc"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/tools/validate_transfer_response.py",
+      "sha256": "da9c1b266aeb30e6200eef3ee73ecd4df7e532a5bc7f8b572a2bcc06b98bc8cc"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/evaluator-criteria.md",
+      "sha256": "880ce3bc42d4bf122babbbd349f8b4a4360f8e238e1338c72765efbe114e3874"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/evaluator-schema.json",
+      "sha256": "665fbee30e02a8761044cd94bfd2a9528aae16fefa5bafaed604efbcc54b3eac"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/input-integrity-recipe.md",
+      "sha256": "d5df73222052031d71d2ae0d0fd2e741874b47378cfba036594e90d84aaf7609"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/interpretation.md",
+      "sha256": "8a94eed0202372a31e97dbe0dec323cd15b9a7741fdd8bd485e6f6e65d0dd7cb"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/outcome-rule.json",
+      "sha256": "5100c60d1b27b732efeae9d451a1ef1020bac5cbf9c2e38d69a651ed2cd3c202"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/prompt.md",
+      "sha256": "d4519ec05081fe8904d5c8cd566930ff3f99a7b4d06f59a754c18dea678cf4ea"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/response-schema.json",
+      "sha256": "2f9c60b88852f02c607c3538955fb6ea7d04608ad3d7d7fc3283df3dea1c1671"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/template.md",
+      "sha256": "1abfe12cd14194df4a6f7d93ec2109ee1caef87605ef3eb428a82cbfcb2f316c"
+    }
+  ],
+  "outputs_at_scientific_freeze": {
+    "evaluator": 0,
+    "reference_m1": 0,
+    "revision_generation": 0,
+    "transfer": 0
+  },
+  "starting_head_before_freeze": "eefa2126e9bbdcf684d43e5000395420240f35ea",
+  "study_class": "POST_RESULT_EXPLORATORY_COMPONENT_ISOLATION_R0",
+  "task226_evidence_binding": {
+    "receipt_path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/task226-evidence-binding-receipt.md",
+    "receipt_sha256": "d1d460f2764c0d7401088499b9448c5d76a57ba885d742469bcdf3c2d7582d73"
+  },
+  "task227_branch": "work/IGNITION-20260928-227-cognitive-evolution-component-isolation-r0",
+  "task227_pr": 237,
+  "task227_state": "OPEN_DRAFT_UNMERGED"
+}

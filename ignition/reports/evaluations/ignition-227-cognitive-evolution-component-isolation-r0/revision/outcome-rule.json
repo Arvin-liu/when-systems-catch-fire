@@ -1,0 +1,23 @@
+{
+  "version": "TASK227_COMPONENT_B_R0",
+  "fixed_denominator": 6,
+  "validity": "all required evaluator dimensions pass and no critical unsupported universalization or retirement",
+  "working": {
+    "both_evaluators": {
+      "valid": "at least 5/6",
+      "families_represented": "all 3",
+      "families_with_both_replicates_valid": "at least 2/3",
+      "unsupported_global_retirement_critical_errors_among_valid_policies": 0
+    }
+  },
+  "partial_if_not_working": {
+    "both_evaluators": {
+      "valid": "at least 4/6",
+      "families_represented": "at least 2/3"
+    }
+  },
+  "otherwise": "REVISION_GENERATION_NOT_ESTABLISHED",
+  "no_reconciliation": true,
+  "no_third_evaluator": true,
+  "no_transfer_on_component_b_policies": true
+}

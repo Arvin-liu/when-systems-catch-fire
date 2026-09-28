@@ -1,0 +1,30 @@
+{
+  "revision_id": "REV-03",
+  "family_id": "FAMILY02",
+  "permitted_inputs": [
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md",
+      "sha256": "bc64a52ae85320c22221021aa57f3dee526d4355a5c37f45477f1e329737dc69"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md",
+      "sha256": "f7adf3efbc59f07b5df3ef80552d96981c0112a71cdc324fe71d8e17988072ea"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/policy-schema.json",
+      "sha256": "65995a0ea424ed7103db862c36d678a59efa95546f2d55fdb6f0c13997776dc6"
+    },
+    {
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/prompt.md",
+      "sha256": "39bfd92f36fca6373e02eecc64d41d09bfd2ce5eec4c097e00997c09d09f32d9"
+    }
+  ],
+  "forbidden": [
+    "all Task225 cases and sealed targets",
+    "Task226 archaeology and all R7 responses/scores",
+    "all Component-A reference policies",
+    "other revision sessions and evaluator sheets"
+  ],
+  "output_schema": "reference/policy-schema.json",
+  "fresh_session": true
+}

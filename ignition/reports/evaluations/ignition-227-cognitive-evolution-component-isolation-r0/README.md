@@ -1,11 +1,13 @@
-# Task227 Cognitive Evolution Component Isolation R0
+# Task227 Component Isolation R0
+
+Status: pre-freeze design. No Task227 experimental conversations have run and no scientific outputs exist.
 
 Study class: POST_RESULT_EXPLORATORY_COMPONENT_ISOLATION_R0.
+The study separately measures target-blind reference-policy transfer achievability and fresh revision-generation validity. These component results do not establish Cognitive Evolution, general inheritance, causality, R1, cross-model transfer, or training.
 
-Task226 read-only R7 archaeology was recovered from the authoritative Task225 R7 packet. The recovered reproduction gate matched the previously reported result; the recovery packet passed its SHA-256 checks. No experiment or score was changed during recovery.
+Task226 diagnostic packet: recovered authoritative R7 archaeology packet (bound by the tracked receipt)
+Task226 packet recovery receipt SHA256: 85bbc10248fea6427ad66ddfbd7fc8a45e01a67791908150338f1e4613dd07a5
+Formal base: Task225 head b6acf6856128833677c35d85a9f088cb49b5d4f2
+Formal PR: #237, Open + Draft + unmerged.
 
-This stacked Formal task separates two questions: (A) target-blind, evidence-grounded reference-M1 transfer achievability, and (B) revision-generation reliability under an explicit decision-table contract. The Task227 frozen protocol will define schemas, prompts, manifests, evaluators, validators, opaque condition-map recipe, and interpretation rules.
-
-At this setup commit, all Task227 experimental output counts are zero. No reference-M1 builder, transfer, revision-generation, or evaluator conversation has been run. Task225 frozen artifacts are unchanged.
-
-Claim ceiling: no Cognitive Evolution support, R1, cross-model, Ready, merge, canonical promotion, Model-RSI, or training claim is authorized.
+The official policy validator uses Python's `jsonschema` 4.x package as declared in `tools/requirements.txt`; it validates each complete policy instance before checking typed links and region coverage.

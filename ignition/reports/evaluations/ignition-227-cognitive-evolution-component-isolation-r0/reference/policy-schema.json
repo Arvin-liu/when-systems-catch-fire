@@ -1,0 +1,233 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:task227:operational-policy.schema",
+  "title": "Task227 explicit operational M1 policy",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["policy_id", "evidence_basis", "selector", "applicability", "action_table", "preserved_rules", "fallback", "stop_conditions", "scope_ceiling", "provenance"],
+  "properties": {
+    "policy_id": {"$ref": "#/$defs/nonEmpty"},
+    "evidence_basis": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/evidence"}},
+    "selector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required_inputs", "rule"],
+      "properties": {
+        "required_inputs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/input"}},
+        "rule": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/selectorRule"}}
+      }
+    },
+    "applicability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["licensed_region", "out_of_scope"],
+      "properties": {
+        "licensed_region": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/licensedRegion"}},
+        "out_of_scope": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/outOfScope"}}
+      }
+    },
+    "action_table": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/actionRow"}},
+    "preserved_rules": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/preservedRule"}},
+    "fallback": {"$ref": "#/$defs/fallback"},
+    "stop_conditions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/stopCondition"}},
+    "scope_ceiling": {"$ref": "#/$defs/scopeCeiling"},
+    "provenance": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/provenance"}}
+  },
+  "$defs": {
+    "nonEmpty": {"type": "string", "minLength": 1},
+    "stringList": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/nonEmpty"}},
+    "evidenceRefs": {"$ref": "#/$defs/stringList"},
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_id", "operator", "value", "unit"],
+      "properties": {
+        "input_id": {"$ref": "#/$defs/nonEmpty"},
+        "operator": {"enum": ["eq", "neq", "lt", "lte", "gt", "gte", "in", "not_in", "between", "present", "absent", "stable", "complete", "reproducible", "matches"]},
+        "value": {"type": ["string", "number", "boolean", "null", "array"]},
+        "unit": {"type": ["string", "null"]}
+      }
+    },
+    "conditions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/condition"}, "description": "A nonempty conjunction (AND); encode alternatives as separate rows."},
+    "emptyAllowedConditions": {"type": "array", "items": {"$ref": "#/$defs/condition"}, "description": "A conjunction when nonempty; an empty array is permitted only where the enclosing field defines a universal or complement case."},
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evidence_id", "source_type", "source_locator", "supports", "claim_type"],
+      "properties": {
+        "evidence_id": {"$ref": "#/$defs/nonEmpty"},
+        "source_type": {"enum": ["M0", "E1"]},
+        "source_locator": {"$ref": "#/$defs/nonEmpty"},
+        "supports": {"$ref": "#/$defs/nonEmpty"},
+        "claim_type": {"enum": ["observed", "derived", "method_rule"]}
+      }
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input_id", "description", "value_type", "unit", "source_refs"],
+      "properties": {
+        "input_id": {"$ref": "#/$defs/nonEmpty"},
+        "description": {"$ref": "#/$defs/nonEmpty"},
+        "value_type": {"enum": ["number", "string", "boolean"]},
+        "unit": {"type": ["string", "null"]},
+        "source_refs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "selectorRule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rule_id", "when", "action_ref"],
+      "properties": {
+        "rule_id": {"$ref": "#/$defs/nonEmpty"},
+        "when": {"$ref": "#/$defs/conditions"},
+        "action_ref": {"$ref": "#/$defs/nonEmpty"}
+      }
+    },
+    "licensedRegion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["region_id", "conditions", "rule_refs"],
+      "properties": {
+        "region_id": {"$ref": "#/$defs/nonEmpty"},
+        "conditions": {"$ref": "#/$defs/conditions"},
+        "rule_refs": {"type": "array", "minItems": 1, "maxItems": 1, "items": {"$ref": "#/$defs/nonEmpty"}}
+      }
+    },
+    "outOfScope": {
+      "type": "object",
+      "description": "An explicit excluded pattern routed to the universal fallback. Empty conditions designate the complement of all licensed regions and may appear only once.",
+      "additionalProperties": false,
+      "required": ["region_id", "conditions", "fallback_ref"],
+      "properties": {
+        "region_id": {"$ref": "#/$defs/nonEmpty"},
+        "conditions": {"$ref": "#/$defs/emptyAllowedConditions"},
+        "fallback_ref": {"const": "fallback"}
+      }
+    },
+    "parameter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "value"],
+      "properties": {
+        "name": {"$ref": "#/$defs/nonEmpty"},
+        "value": {
+          "oneOf": [
+            {"type": ["string", "number", "boolean", "null"]},
+            {"type": "array", "items": {"type": ["string", "number", "boolean", "null"]}}
+          ]
+        }
+      }
+    },
+    "actionSpec": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category", "name", "parameters"],
+      "properties": {
+        "category": {"enum": ["KEEP_BASELINE", "APPLY_EVIDENCE_RULE", "COLLECT_MEASUREMENT", "REPEAT_OR_REACQUIRE", "ROUTE_FOR_REVIEW", "RECONCILE", "UNSCORABLE", "REPORT", "OTHER"]},
+        "name": {"$ref": "#/$defs/nonEmpty"},
+        "parameters": {"type": "array", "items": {"$ref": "#/$defs/parameter"}}
+      }
+    },
+    "reportField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field_id", "description", "unit", "evidence_refs"],
+      "properties": {
+        "field_id": {"$ref": "#/$defs/nonEmpty"},
+        "description": {"$ref": "#/$defs/nonEmpty"},
+        "unit": {"type": ["string", "null"]},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "actionRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action_id", "when", "action", "required_report_fields", "evidence_refs"],
+      "properties": {
+        "action_id": {"$ref": "#/$defs/nonEmpty"},
+        "when": {"$ref": "#/$defs/conditions"},
+        "action": {"$ref": "#/$defs/actionSpec"},
+        "required_report_fields": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/reportField"}},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "preservedRule": {
+      "type": "object",
+      "description": "M0 actions remain available. unconditional means independent of the new selector; selector_miss means the M0 action remains available whenever no new selector matches; additive_coexistence must match one selector rule condition set and keeps the original action alongside the new action.",
+      "additionalProperties": false,
+      "required": ["preservation_id", "when", "baseline_action", "preservation_mode", "m0_action_retired", "evidence_refs"],
+      "properties": {
+        "preservation_id": {"$ref": "#/$defs/nonEmpty"},
+        "when": {"$ref": "#/$defs/emptyAllowedConditions"},
+        "baseline_action": {"$ref": "#/$defs/nonEmpty"},
+        "preservation_mode": {"enum": ["unconditional", "selector_miss", "additive_coexistence"]},
+        "m0_action_retired": {"const": false},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "fallback": {
+      "type": "object",
+      "description": "Universal catch-all for every out-of-scope, unresolved, or otherwise unmatched input. when is therefore exactly an empty array.",
+      "additionalProperties": false,
+      "required": ["when", "action", "evidence_refs"],
+      "properties": {
+        "when": {"const": []},
+        "action": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["outcome", "instruction", "required_report_fields"],
+          "properties": {
+            "outcome": {"enum": ["REACQUIRE", "RECONCILE", "UNSCORABLE", "SAFE_HOLD", "ROUTE_TO_M0", "OTHER"]},
+            "instruction": {"$ref": "#/$defs/nonEmpty"},
+            "required_report_fields": {"$ref": "#/$defs/stringList"}
+          }
+        },
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "stopCondition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["stop_id", "when", "outcome", "instruction"],
+      "properties": {
+        "stop_id": {"$ref": "#/$defs/nonEmpty"},
+        "when": {"$ref": "#/$defs/conditions"},
+        "outcome": {"enum": ["STOP", "UNSCORABLE", "RECONCILE", "REACQUIRE", "ESCALATE"]},
+        "instruction": {"$ref": "#/$defs/nonEmpty"}
+      }
+    },
+    "scopeClaim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_id", "statement", "region_refs", "evidence_refs"],
+      "properties": {
+        "claim_id": {"$ref": "#/$defs/nonEmpty"},
+        "statement": {"$ref": "#/$defs/nonEmpty"},
+        "region_refs": {"$ref": "#/$defs/evidenceRefs"},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"}
+      }
+    },
+    "scopeCeiling": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["licensed_claims", "not_established", "statement"],
+      "properties": {
+        "licensed_claims": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/scopeClaim"}},
+        "not_established": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/scopeClaim"}},
+        "statement": {"$ref": "#/$defs/nonEmpty"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["element_type", "element_id", "evidence_refs", "locator_detail"],
+      "properties": {
+        "element_type": {"enum": ["selector_rule", "action", "licensed_region", "out_of_scope", "preserved_rule", "fallback", "stop_condition", "scope_claim", "scope_exclusion"]},
+        "element_id": {"$ref": "#/$defs/nonEmpty"},
+        "evidence_refs": {"$ref": "#/$defs/evidenceRefs"},
+        "locator_detail": {"$ref": "#/$defs/nonEmpty"}
+      }
+    }
+  }
+}
