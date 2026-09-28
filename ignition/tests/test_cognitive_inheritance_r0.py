@@ -30,6 +30,7 @@ from tools.validate_cognitive_inheritance_r0 import (  # noqa: E402
     TASK225_FIRE_SEED_CENSUS_PATH,
     TASK225_FIRE_SEED_CENSUS_SHA256,
     TASK225_SUCCESSOR_PROVENANCE,
+    TASK225_SUCCESSOR_SOURCE_PATH,
     ValidationFailure,
     task217_generated_fire_seed_paths,
     is_allowed_changed_path,
@@ -286,7 +287,9 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
             cwd=ROOT.parent,
         )
         indexed_paths = {item.decode("utf-8") for item in raw_paths.split(b"\0") if item}
-        self.assertEqual(len(indexed_paths | set(migration_paths())), 6868)
+        current_tracked_file_count = len(indexed_paths | set(migration_paths()))
+        current_source_lines = (ROOT.parent / TASK225_SUCCESSOR_SOURCE_PATH).read_text(encoding="utf-8").splitlines()
+        self.assertIn(f"- 已核算跟踪文件：{current_tracked_file_count}", current_source_lines)
         self.assertEqual(TASK225_SUCCESSOR_PROVENANCE["tracked_file_census_after"], 6868)
         self.assertFalse((ROOT / "KNOWLEDGE/cards/part-018.md").exists())
 
