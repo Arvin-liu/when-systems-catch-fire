@@ -1,0 +1,18 @@
+{
+  "version": "TASK227_REFERENCE_POLICY_VALIDITY_R0",
+  "dimensions": [
+    "schema_operational_completeness",
+    "evidence_grounding",
+    "operational_selector",
+    "bounded_applicability",
+    "preservation_safety",
+    "fallback_edge_explicitness",
+    "no_unsupported_universalization",
+    "provenance_scope_ceiling"
+  ],
+  "decision": "USABLE=true only when both independent reviewers pass every dimension and affirm evidence-supported, operational, bounded, preservation-safe, fallback/edge-explicit, and no unsupported universalization",
+  "fixed_denominator": 6,
+  "missing_invalid": "false",
+  "repair_after_review": false,
+  "third_evaluator": false
+}

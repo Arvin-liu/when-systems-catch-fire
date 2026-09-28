@@ -1,0 +1,5 @@
+# Sealed condition-map generation recipe
+
+At freeze no condition map with usable mappings is exposed to successors or evaluators. After reference policy validity is dual-locked, an independent coordinator generates 18 cryptographically random opaque trial IDs. Construct a complete Cartesian product of six reference-policy lineages by M0_ONLY, M0_PLUS_E1, and REFERENCE_M1. Randomly permute rows, assign IDs, and write a local sealed map containing only trial ID, lineage ID, family ID, condition, and immutable input byte hashes. Verify exactly 18 unique IDs and exactly one row per lineage-condition pair.
+
+The sealed map and per-session materialization manifests are stored outside the repository in the protected local execution area, not in successor prompts. Do not disclose them to evaluators. Commit only this recipe and its checksum with the freeze. After both Component-A evaluator sheets are locked, publish the sealed map into the local Owner packet and compute the unblinding receipt. Never create condition inputs by editing case bytes.

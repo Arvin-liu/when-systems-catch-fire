@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Task227 blind transfer evaluation sheet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evaluator_id",
+    "locked",
+    "scores"
+  ],
+  "properties": {
+    "evaluator_id": {
+      "type": "string"
+    },
+    "locked": {
+      "const": true
+    },
+    "scores": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "opaque_response_id",
+          "valid_response",
+          "case_scores",
+          "critical_errors",
+          "notes"
+        ],
+        "properties": {
+          "opaque_response_id": {
+            "type": "string"
+          },
+          "case_scores": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "A",
+              "B",
+              "C"
+            ],
+            "properties": {
+              "A": {
+                "type": "boolean"
+              },
+              "B": {
+                "type": "boolean"
+              },
+              "C": {
+                "type": "boolean"
+              }
+            }
+          },
+          "critical_errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "string"
+          },
+          "valid_response": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

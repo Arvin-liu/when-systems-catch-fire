@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Task227 blind revision evaluation sheet",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "evaluator_id",
+    "locked",
+    "scores"
+  ],
+  "properties": {
+    "evaluator_id": {
+      "type": "string"
+    },
+    "locked": {
+      "const": true
+    },
+    "scores": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "opaque_revision_id",
+          "dimensions",
+          "valid",
+          "critical_errors",
+          "rationale"
+        ],
+        "properties": {
+          "opaque_revision_id": {
+            "type": "string"
+          },
+          "dimensions": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "schema_operational_completeness",
+              "evidence_grounding",
+              "correct_operation_class",
+              "explicit_selector",
+              "bounded_applicability",
+              "operational_action_table",
+              "m0_preservation",
+              "fallback_edge_behavior",
+              "stop_conditions",
+              "provenance",
+              "scope_ceiling"
+            ],
+            "properties": {
+              "schema_operational_completeness": {
+                "type": "boolean"
+              },
+              "evidence_grounding": {
+                "type": "boolean"
+              },
+              "correct_operation_class": {
+                "type": "boolean"
+              },
+              "explicit_selector": {
+                "type": "boolean"
+              },
+              "bounded_applicability": {
+                "type": "boolean"
+              },
+              "operational_action_table": {
+                "type": "boolean"
+              },
+              "m0_preservation": {
+                "type": "boolean"
+              },
+              "fallback_edge_behavior": {
+                "type": "boolean"
+              },
+              "stop_conditions": {
+                "type": "boolean"
+              },
+              "provenance": {
+                "type": "boolean"
+              },
+              "scope_ceiling": {
+                "type": "boolean"
+              }
+            }
+          },
+          "valid": {
+            "type": "boolean"
+          },
+          "critical_errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

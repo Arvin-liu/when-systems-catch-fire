@@ -1,0 +1,13 @@
+# Task226 R7 revision-failure taxonomy to policy contract
+
+This mapping covers the three revision failure classes explicitly summarized in the recovered Task226 revision taxonomy. The Task227 command independently requires operational selector, applicability, fallback, stop, provenance, and scope fields; those are structural safeguards, not extra failure classes attributed to that taxonomy.
+
+| Task226 R7 revision failure class | Explicit Task227 fields | Required review |
+|---|---|---|
+| Conditionalizing or bypassing a preserved M0 path | preserved_rules[].when, baseline_action, preservation_mode, m0_action_retired; action_table[].action | `unconditional` and `selector_miss` require an empty when list and cannot be gated by the new selector. `additive_coexistence` must share one exact selector condition set while leaving the M0 action intact. |
+| Withholding a bounded E1 relationship | evidence_basis[].source_locator/supports; selector.required_inputs; selector.rule[].when/action_ref; action_table[].when/action/evidence_refs | Verify the E1-supported relation is traceable and can be applied from observable inputs; no unstated value or selector may be invented. |
+| Retiring a baseline or broadening applicability | applicability.licensed_region; applicability.out_of_scope; preserved_rules; scope_ceiling | Verify the additive behavior stays inside evidence support and the original baseline remains available. |
+
+Every nonempty when/conditions array is conjunctive AND; alternatives are separate rows. Input declarations carry value type and unit. Each licensed region maps one-to-one to a selector rule with exactly equal conditions, and every rule is mapped exactly once. Empty out-of-scope conditions denote the full complement of licensed regions and are allowed only as the sole out-of-scope row. The fallback has `when: []`, explicitly covering every out-of-scope, unresolved, or unmatched input. Licensed scope claims may reference only licensed regions. The validator performs full Draft 2020-12 JSON Schema validation plus cross-reference checks for operator-specific values, declared-input references and unit/type agreement, unique IDs, selector/action and region/rule equality, preservation-mode coverage, fallback coverage, non-retirement, evidence references, scope-claim-to-region/evidence links, and provenance links to typed policy-element IDs. Reviewers still judge evidential support and whether the policy actually preserves safe behavior.
+
+Fallback and edge fields are required by the Task227 interface contract. They are not asserted here as a fourth Task226 revision-generation failure class. No A/B/C target value, label, or target-specific rule is encoded in this schema.

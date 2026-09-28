@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ignition:task227:transfer-response.schema",
+  "title": "Task227 transfer response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["responses"],
+  "properties": {
+    "responses": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["A", "B", "C"],
+      "properties": {
+        "A": {"$ref": "#/$defs/case_response"},
+        "B": {"$ref": "#/$defs/case_response"},
+        "C": {"$ref": "#/$defs/case_response"}
+      }
+    }
+  },
+  "$defs": {
+    "case_response": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary_action", "additional_actions", "reported_value", "preserved_m0_rule", "fallback", "scope_statement", "rationale"],
+      "properties": {
+        "primary_action": {"type": "string", "minLength": 1},
+        "additional_actions": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "reported_value": {"type": ["number", "string", "null"]},
+        "preserved_m0_rule": {"type": ["string", "null"]},
+        "fallback": {"type": ["string", "null"]},
+        "scope_statement": {"type": "string", "minLength": 1},
+        "rationale": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

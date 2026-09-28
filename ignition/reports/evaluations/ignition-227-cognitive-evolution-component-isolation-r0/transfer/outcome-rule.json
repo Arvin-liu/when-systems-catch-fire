@@ -1,0 +1,44 @@
+{
+  "version": "TASK227_COMPONENT_A_R0",
+  "fixed_denominator": 6,
+  "per_lineage": {
+    "REF_A": "Reference-M1 condition A target success",
+    "O_A": "M0_ONLY condition A target success",
+    "F_A": "M0_PLUS_E1 condition A target success",
+    "REF_B": "Reference-M1 condition B target success",
+    "REF_C": "Reference-M1 condition C target success",
+    "CHAIN": "REF_A AND NOT O_A AND REF_B AND REF_C"
+  },
+  "thresholds": {
+    "working": {
+      "both_evaluators": {
+        "usable_reference_policies": "at least 5/6",
+        "REF_A": "at least 5/6",
+        "O_A": "at most 1/6",
+        "REF_B": "at least 5/6",
+        "REF_C": "at least 5/6",
+        "CHAIN": "at least 5/6"
+      }
+    },
+    "partial": {
+      "both_evaluators": {
+        "usable_reference_policies": "at least 4/6",
+        "REF_A": "at least 3/6",
+        "CHAIN": "at least 3/6"
+      }
+    }
+  },
+  "order": [
+    "TRANSFER_INTERFACE_WORKING",
+    "TRANSFER_INTERFACE_PARTIAL",
+    "TRANSFER_INTERFACE_NOT_ESTABLISHED"
+  ],
+  "F_A": "descriptive only; REF_A greater than F_A is not required",
+  "no_reconciliation": true,
+  "no_third_evaluator": true,
+  "missingness": {
+    "raw_O_A": "A missing, invalid, or unusable M0_ONLY A response scores O_A=false as a raw endpoint.",
+    "negative_control_gate": "Set O_A_CONTROL_OBSERVED=true only for a valid observed M0_ONLY A response. If false, force that lineage CHAIN=false; missing control evidence cannot satisfy NOT O_A.",
+    "complete_case_chain": "REF_A AND NOT O_A AND REF_B AND REF_C"
+  }
+}

@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 786 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 810 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,318 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Identical bundle template for every transfer session](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/template.md)
+
+- **结果 ID：** `HR-BFACB9D1D4663B29`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Identical bundle template for every transfer session？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Every one of the 18 fresh sessions receives identical byte copies of its family's cases A.md, B.md, and C.md, plus the neutral prompt and response schema. The one condition-specific method bundle is provided per the sealed coordinator manifest.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Neutral fresh transfer prompt](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/prompt.md)
+
+- **结果 ID：** `HR-F1199313764281B0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Neutral fresh transfer prompt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Apply only the method materials provided in this single task bundle to visible cases A, B, and C. Return one JSON response conforming to response-schema.json.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Component-A exact scoring and interpretation](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/interpretation.md)
+
+- **结果 ID：** `HR-B2754787026B6544`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Component-A exact scoring and interpretation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Blind evaluators score each randomized response against the existing R0.1 frozen target for its case. The response schema supports action, additional actions, reported value, preserved M0 rule, fallback, scope, rationale, and provenance. Score A/B/C against the complete outcome, not a shared term…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Transfer byte-integrity and opaque bundle recipe](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/input-integrity-recipe.md)
+
+- **结果 ID：** `HR-3D53F7E0C9D1759E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Transfer byte-integrity and opaque bundle recipe？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** After reference policy validity is locked, coordinator copies each frozen FAMILY01/02/03 case A/B/C byte-for-byte into every one of the six lineage × three condition bundles. Compute and retain SHA-256 for all 54 materialized case files; within each family, the three case hashes must be identical…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Blind Component-A transfer evaluator criteria](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/evaluator-criteria.md)
+
+- **结果 ID：** `HR-302DB23BE2786F1C`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Blind Component-A transfer evaluator criteria？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Each evaluator independently scores the same 18 randomized opaque response packets. Use only the visible case bytes, corresponding frozen target, this scoring guide, and sanitized response. Do not access M0/E1/reference-policy materials, condition labels, input manifests, condition map, lineage g…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Fresh Component-B revision-generation prompt](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/prompt.md)
+
+- **结果 ID：** `HR-A91C29CE537B48EF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Fresh Component-B revision-generation prompt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** You are a fresh independent policy designer. Use only the task's one family M0, raw E1, policy schema, and this prompt. Do not search or open other files, task directories, prior conversations, held-out cases, targets, earlier outputs, reference policies, or evaluation material.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Blind Component-B revision evaluator criteria](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/evaluator/criteria.md)
+
+- **结果 ID：** `HR-D4B245232C5DC745`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Blind Component-B revision evaluator criteria？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Score each of six generated policies independently. Use only the named family M0/E1, the shared operational policy schema, this criteria file, and six candidate policies. Do not access held-out cases or targets, reference policies, transfer outputs, Task226 report, or another evaluator's sheet. R…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Component-B revision generation](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/README.md)
+
+- **结果 ID：** `HR-38A1FB7C1D829771`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Component-B revision generation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Exactly two fresh independent sessions per family (six total). Each manifest allowlists same-family M0 and E1 plus the shared operational policy schema and neutral prompt. Do not give builders Task226 or Task225 outputs, cases, targets, reference policies, prior context, sibling outputs, or scori…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Pre-freeze reviewer E — endpoint and preregistration audit](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-E.md)
+
+- **结果 ID：** `HR-EAC563EA0A86B785`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Pre-freeze reviewer E — endpoint and preregistration audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Scope: read-only review of the Component-A endpoint and interpretation contract.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Pre-freeze reviewer D — transfer visible-input isolation](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-D.md)
+
+- **结果 ID：** `HR-735AF33437EB4A21`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Pre-freeze reviewer D — transfer visible-input isolation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Scope: read-only review of the successor transfer packet and blind-evaluator inputs. The response no longer carries source provenance or evidence locators; the sanitizer removes condition, bundle, policy, lineage, builder, and source identifiers before blind evaluation, then scans for residual id…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Pre-freeze reviewer C — target compatibility and achievability](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-C.md)
+
+- **结果 ID：** `HR-CA1B4D29C75CB920`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Pre-freeze reviewer C — target compatibility and achievability？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Scope: read-only review of the Task227 reference policy schema, builder prompt, six reference manifests, and authorized Task225 R0.1 target definitions for FAMILY01–03. No Task226/R7 outputs, Task227 outputs, or builder response/session logs were opened.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Pre-freeze reviewer B — reference-builder input isolation](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-B.md)
+
+- **结果 ID：** `HR-4FDD2C6565052033`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Pre-freeze reviewer B — reference-builder input isolation？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Scope: read-only review of the six reference manifests, builder prompt, and policy schema. No held-out case or target content was inspected.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Pre-freeze reviewer A — Task226 taxonomy and policy contract](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-A.md)
+
+- **结果 ID：** `HR-2107D5EED5E7E51D`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Pre-freeze reviewer A — Task226 taxonomy and policy contract？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Scope: read-only review of the taxonomy mapping, policy schema, policy validator, and builder/revision prompts. No held-out target content was inspected.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Five-review pre-freeze record](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/pre-freeze-review-record-template.md)
+
+- **结果 ID：** `HR-98CF607FC5CC588A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Five-review pre-freeze record？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Each report must identify the exact reviewed draft tree, list only the authorized files consulted, state PASS / HARDISSUE / STOP, and provide findings with file/section references. Reports are read-only design review, not outcome data. No reviewer may edit the design or inspect material outside t…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Target-blind reference policy validity criteria](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/validity-criteria.md)
+
+- **结果 ID：** `HR-9CEAE5D4527EA26E`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Target-blind reference policy validity criteria？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Review each of the six policies independently. Use only that policy, its family's M0 and E1, and policy-schema.json. Do not open or infer from held-out A/B/C cases, targets, Task226 analysis, R7 responses or scores, or other policies while scoring. No repair is permitted.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Reference policy independent reviewer criteria](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/reviewer-criteria.md)
+
+- **结果 ID：** `HR-D950D1FB4221F338`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Reference policy independent reviewer criteria？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Each reviewer scores all six raw policy objects against their own family M0 and E1. A policy is USABLE only when this reviewer marks all eight schema-listed dimensions true and affirms that the policy is E1-supported, operational, bounded, preservation-safe, explicit about fallback/edges, and fre…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Fresh reference-M1 builder prompt](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/builder-prompt.md)
+
+- **结果 ID：** `HR-FEA07B39D2492747`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Fresh reference-M1 builder prompt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** You are a fresh, independent policy designer. Use only the input files explicitly supplied in your task manifest: one family's M0, that family's raw E1 evidence, this policy schema, and this prompt. Do not search or open any other files, repositories, conversations, or prior outputs.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Component-A reference policy construction](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/README.md)
+
+- **结果 ID：** `HR-11563958B6E1EE6A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Component-A reference policy construction？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Exactly two independent builders per family (six total). The six manifests each allow only same-family M0 and raw E1 plus the common schema and builder prompt. Builders have no repository browsing or shell access; give them file content only for those paths and a fresh session with no inherited h…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Sealed condition-map generation recipe](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/freeze/condition-map-recipe.md)
+
+- **结果 ID：** `HR-0B1A76B884EAD2D8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Sealed condition-map generation recipe？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** At freeze no condition map with usable mappings is exposed to successors or evaluators. After reference policy validity is dual-locked, an independent coordinator generates 18 cryptographically random opaque trial IDs. Construct a complete Cartesian product of six reference-policy lineages by M0O…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task226 R7 revision-failure taxonomy to policy contract](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/taxonomy-to-schema.md)
+
+- **结果 ID：** `HR-612510A940B17D90`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Task226 R7 revision-failure taxonomy to policy contract？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This mapping covers the three revision failure classes explicitly summarized in the recovered Task226 revision taxonomy. The Task227 command independently requires operational selector, applicability, fallback, stop, provenance, and scope fields; those are structural safeguards, not extra failure…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task226 evidence binding receipt](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/task226-evidence-binding-receipt.md)
+
+- **结果 ID：** `HR-D706EE9795E4FAF5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Task226 evidence binding receipt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Recovery status: complete; reproduction gate passed exactly. Packet identity: TASK226R7FAILUREARCHAEOLOGYRECOVERED Recovery-receipt SHA256: 85bbc10248fea6427ad66ddfbd7fc8a45e01a67791908150338f1e4613dd07a5
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task227 Component Isolation R0 protocol](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/protocol.md)
+
+- **结果 ID：** `HR-5130CDC4EBE5E2CC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Task227 Component Isolation R0 protocol？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is POSTRESULTEXPLORATORYCOMPONENTISOLATIONR0, authorized after the read-only Task226 R7 archaeology. Task223 R0 and Task225/R7 R0.1 remain NOTSUPPORTED. Task226 reproduced the mixed revision-generation, target-compatibility, and M1 transfer-interface failure plus evaluator-sensitive critical…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Formal anchor receipt](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/formal-anchor-receipt.md)
+
+- **结果 ID：** `HR-B7271A431D9522E4`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Formal anchor receipt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Live anchor checked on 2026-09-28 before Task227 freeze.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task227 Component Isolation R0](../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/README.md)
+
+- **结果 ID：** `HR-5FC13DDF9BDF3ADF`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **问题：** 此来源记录了什么：Task227 Component Isolation R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: pre-freeze design. No Task227 experimental conversations have run and no scientific outputs exist.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
