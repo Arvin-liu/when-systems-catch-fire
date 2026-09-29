@@ -1,0 +1,53 @@
+{
+  "manifest_version": "task228-candidate-build-manifest-r1",
+  "mapping_declaration": "mappings/reference-mapping-declarations.json",
+  "mapping_declaration_sha256": "048be8a900789d62dc4bb2fb04fddfcc9b124e3ed3d1e659ff62c95e3446dfa4",
+  "compiler": "task228-reference-instrument-compiler-r1",
+  "compiler_sha256": "42bac5a383844ed2b3394625bf3c588f0ca3b210f9b45997da8610e688de1bee",
+  "candidate_count": 6,
+  "mapping_declarations": {
+    "MAP_F01_A": {
+      "authorship": "researcher-authored target-blind mapping",
+      "mapping_statement": "Code the two source-observed reflective silver-film and toward-sun records as a bounded independent contact/VWC review route; do not change M0's threshold or correct thermal values."
+    },
+    "MAP_F01_B": {
+      "authorship": "researcher-authored target-blind mapping",
+      "mapping_statement": "Route only the source-observed incomplete-coverage and variable-reading pattern to reacquire context; do not invent a numeric coverage or variation cutoff."
+    },
+    "MAP_F02_A": {
+      "authorship": "researcher-authored target-blind mapping",
+      "mapping_statement": "Code the three source-observed organic-floc cases as a bounded independent gravimetric review category; do not fit a new formula or composition threshold."
+    },
+    "MAP_F02_B": {
+      "authorship": "researcher-authored target-blind mapping",
+      "mapping_statement": "Route the source-observed non-reproducible composition plus non-agreeing gravimetric replicate pattern to reconciliation; do not supply a point estimate."
+    },
+    "MAP_F03_A": {
+      "authorship": "researcher-authored target-blind mapping",
+      "mapping_statement": "Code the named group-P pulse observations as a bounded product-specific stability review route; do not establish pulse-duration or temperature thresholds."
+    },
+    "MAP_F03_B": {
+      "authorship": "researcher-authored target-blind mapping",
+      "mapping_statement": "Route the source-observed high-rate trace gap plus assay disagreement to record reconciliation; do not infer whether a pulse occurred or claim degradation."
+    }
+  },
+  "candidate_sha256": {
+    "policies/POLICY_F01_A.json": "68f85b17f993a9768c4eecf71830bf0a92bcb139e18f59d23d277d116acd1b5d",
+    "policies/POLICY_F01_B.json": "7d0d8abe8a0551869c33f55de7216ec6a86b94584c5ca0f6ddf6de85d2a5e6e7",
+    "policies/POLICY_F02_A.json": "47478f96d332ad793cc7e881bcf9999d3da77395cff2d3e05baa31236385dce2",
+    "policies/POLICY_F02_B.json": "fec1b7c39ca8a59fc64a44be938c8dd23389856e39795195a8292229563d48d2",
+    "policies/POLICY_F03_A.json": "a5b2a4dee1e127a662a9a7c35e61020b6ef3599281a28cea41679de0c3c44bea",
+    "policies/POLICY_F03_B.json": "ddce62c7b20f1b76cf1b03806e049ec40be5180acfdf8544c97f0224eb852b92"
+  },
+  "source_sha256": {
+    "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/m0.md": "4cce89f12f278559f45ac0d3bbb6dae049e72dc059866bb1fb039ab74aaa5a0a",
+    "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md": "8c4d4123055732d8e68a13eaa0dcb9fbae3cddb07afef66e7dbb3699ea761ca0",
+    "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md": "bc64a52ae85320c22221021aa57f3dee526d4355a5c37f45477f1e329737dc69",
+    "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md": "f7adf3efbc59f07b5df3ef80552d96981c0112a71cdc324fe71d8e17988072ea",
+    "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md": "691b63e6ff4324acc23a09a35114df3fbb75668d39de3d8283386f30b110331a",
+    "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md": "fba2eef834fa1ae9b43665ecbaa15a2bf8690f840cc0a56483701a8e7601c5ff"
+  },
+  "target_access_during_build": false,
+  "transfer_experiment_run": false,
+  "revision_experiment_run": false
+}

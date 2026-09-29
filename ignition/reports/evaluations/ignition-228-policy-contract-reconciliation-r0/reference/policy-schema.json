@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://arvin-liu.github.io/when-systems-catch-fire/ignition-228/policy-contract-r1.schema.json",
+  "title": "Task228 Policy Contract R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version", "policy_id", "family", "mapping_id", "evidence_basis",
+    "selector", "applicability", "action_table", "preserved_rules", "fallback",
+    "stop_conditions", "scope_ceiling", "provenance"
+  ],
+  "properties": {
+    "contract_version": {"const": "task228-policy-contract-r1"},
+    "policy_id": {"$ref": "#/$defs/id"},
+    "family": {"enum": ["FAMILY01", "FAMILY02", "FAMILY03"]},
+    "mapping_id": {"$ref": "#/$defs/id"},
+    "evidence_basis": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/evidence"}},
+    "selector": {
+      "type": "object", "additionalProperties": false,
+      "required": ["required_inputs", "rule"],
+      "properties": {
+        "required_inputs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/input"}},
+        "rule": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/rule"}}
+      }
+    },
+    "applicability": {
+      "type": "object", "additionalProperties": false,
+      "required": ["licensed_region", "out_of_scope"],
+      "properties": {
+        "licensed_region": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/licensedRegion"}},
+        "out_of_scope": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/outOfScope"}}
+      }
+    },
+    "action_table": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/action"}},
+    "preserved_rules": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/preservedRule"}},
+    "fallback": {"$ref": "#/$defs/fallback"},
+    "stop_conditions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/stopCondition"}},
+    "scope_ceiling": {"$ref": "#/$defs/scopeCeiling"},
+    "provenance": {"$ref": "#/$defs/provenance"}
+  },
+  "$defs": {
+    "id": {"type": "string", "minLength": 2, "maxLength": 80, "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"},
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "text": {"type": "string", "minLength": 1, "pattern": "\\S"},
+    "unit": {"type": ["string", "null"]},
+    "scalar": {"oneOf": [{"type": "string"}, {"type": "number"}, {"type": "boolean"}]},
+    "refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evidence_id", "source_type", "source_path", "source_sha256", "locator", "supports", "claim_type"],
+      "properties": {
+        "evidence_id": {"$ref": "#/$defs/id"},
+        "source_type": {"enum": ["M0", "E1"]},
+        "source_path": {"type": "string", "minLength": 1},
+        "source_sha256": {"$ref": "#/$defs/sha256"},
+        "locator": {
+          "type": "object", "additionalProperties": false,
+          "required": ["start_line", "end_line", "excerpt_sha256"],
+          "properties": {
+            "start_line": {"type": "integer", "minimum": 1},
+            "end_line": {"type": "integer", "minimum": 1},
+            "excerpt_sha256": {"$ref": "#/$defs/sha256"}
+          }
+        },
+        "display_excerpt": {"type": "string"},
+        "supports": {"$ref": "#/$defs/text"},
+        "claim_type": {"enum": ["observed", "derived", "method_rule"]}
+      }
+    },
+    "input": {
+      "type": "object", "additionalProperties": false,
+      "required": ["input_id", "description", "value_type", "unit", "source_refs"],
+      "properties": {
+        "input_id": {"$ref": "#/$defs/id"}, "description": {"$ref": "#/$defs/text"},
+        "value_type": {"enum": ["number", "string", "boolean"]}, "unit": {"$ref": "#/$defs/unit"},
+        "source_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "condition": {
+      "type": "object", "additionalProperties": false,
+      "required": ["input_id", "operator", "value", "unit"],
+      "properties": {
+        "input_id": {"$ref": "#/$defs/id"},
+        "operator": {"enum": ["eq", "neq", "lt", "lte", "gt", "gte", "in", "not_in", "between", "present", "absent"]},
+        "value": {"oneOf": [{"$ref": "#/$defs/scalar"}, {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/scalar"}}, {"type": "null"}]},
+        "unit": {"$ref": "#/$defs/unit"}
+      }
+    },
+    "rule": {
+      "type": "object", "additionalProperties": false,
+      "required": ["rule_id", "when", "action_ref", "evidence_refs"],
+      "properties": {
+        "rule_id": {"$ref": "#/$defs/id"}, "when": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/condition"}},
+        "action_ref": {"$ref": "#/$defs/id"}, "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "literalParameter": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "binding", "value_type", "value", "unit", "evidence_refs"],
+      "properties": {
+        "name": {"$ref": "#/$defs/id"}, "binding": {"const": "literal"},
+        "value_type": {"enum": ["number", "string", "boolean"]}, "value": {"$ref": "#/$defs/scalar"},
+        "unit": {"$ref": "#/$defs/unit"}, "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "inputRefParameter": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "binding", "input_id", "value_type", "unit", "evidence_refs"],
+      "properties": {
+        "name": {"$ref": "#/$defs/id"}, "binding": {"const": "input_ref"}, "input_id": {"$ref": "#/$defs/id"},
+        "value_type": {"enum": ["number", "string", "boolean"]}, "unit": {"$ref": "#/$defs/unit"},
+        "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "parameter": {"oneOf": [{"$ref": "#/$defs/literalParameter"}, {"$ref": "#/$defs/inputRefParameter"}]},
+    "reportField": {
+      "type": "object", "additionalProperties": false,
+      "required": ["field_id", "description", "unit", "evidence_refs"],
+      "properties": {
+        "field_id": {"$ref": "#/$defs/id"}, "description": {"$ref": "#/$defs/text"},
+        "unit": {"$ref": "#/$defs/unit"}, "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "action": {
+      "type": "object", "additionalProperties": false,
+      "required": ["action_id", "when", "action", "required_report_fields", "evidence_refs"],
+      "properties": {
+        "action_id": {"$ref": "#/$defs/id"}, "when": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/condition"}},
+        "action": {
+          "type": "object", "additionalProperties": false, "required": ["category", "name", "parameters"],
+          "properties": {
+            "category": {"enum": ["KEEP_BASELINE", "APPLY_EVIDENCE_RULE", "COLLECT_MEASUREMENT", "REPEAT_OR_REACQUIRE", "ROUTE_FOR_REVIEW", "RECONCILE", "UNSCORABLE", "REPORT"]},
+            "name": {"$ref": "#/$defs/text"}, "parameters": {"type": "array", "uniqueItems": false, "items": {"$ref": "#/$defs/parameter"}}
+          }
+        },
+        "required_report_fields": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/reportField"}},
+        "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "licensedRegion": {
+      "type": "object", "additionalProperties": false,
+      "required": ["region_id", "conditions", "rule_refs", "evidence_refs"],
+      "properties": {
+        "region_id": {"$ref": "#/$defs/id"}, "conditions": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/condition"}},
+        "rule_refs": {"type": "array", "minItems": 1, "maxItems": 1, "items": {"$ref": "#/$defs/id"}}, "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "outOfScope": {
+      "type": "object", "additionalProperties": false,
+      "required": ["region_id", "conditions", "fallback_ref", "evidence_refs"],
+      "properties": {
+        "region_id": {"$ref": "#/$defs/id"}, "conditions": {"type": "array", "items": {"$ref": "#/$defs/condition"}},
+        "fallback_ref": {"const": "fallback"}, "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "preservedRule": {
+      "type": "object", "additionalProperties": false,
+      "required": ["preservation_id", "when", "baseline_action", "preservation_mode", "m0_action_retired", "evidence_refs"],
+      "properties": {
+        "preservation_id": {"$ref": "#/$defs/id"}, "when": {"type": "array", "items": {"$ref": "#/$defs/condition"}},
+        "baseline_action": {"$ref": "#/$defs/text"}, "preservation_mode": {"enum": ["unconditional", "selector_miss", "additive_coexistence"]},
+        "m0_action_retired": {"const": false}, "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "fallback": {
+      "type": "object", "additionalProperties": false, "required": ["when", "action", "evidence_refs"],
+      "properties": {
+        "when": {"type": "array", "maxItems": 0},
+        "action": {
+          "type": "object", "additionalProperties": false, "required": ["outcome", "instruction", "required_report_fields"],
+          "properties": {
+            "outcome": {"enum": ["REACQUIRE", "RECONCILE", "UNSCORABLE", "SAFE_HOLD", "ROUTE_TO_M0"]},
+            "instruction": {"$ref": "#/$defs/text"}, "required_report_fields": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/text"}}
+          }
+        },
+        "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "stopCondition": {
+      "type": "object", "additionalProperties": false,
+      "required": ["stop_id", "when", "outcome", "instruction", "evidence_refs"],
+      "properties": {
+        "stop_id": {"$ref": "#/$defs/id"}, "when": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/condition"}},
+        "outcome": {"enum": ["STOP", "UNSCORABLE", "RECONCILE", "REACQUIRE", "ESCALATE"]},
+        "instruction": {"$ref": "#/$defs/text"}, "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "scopeClaim": {
+      "type": "object", "additionalProperties": false,
+      "required": ["claim_id", "statement", "region_refs", "evidence_refs"],
+      "properties": {
+        "claim_id": {"$ref": "#/$defs/id"}, "statement": {"$ref": "#/$defs/text"},
+        "region_refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "evidence_refs": {"$ref": "#/$defs/refs"}
+      }
+    },
+    "scopeCeiling": {
+      "type": "object", "additionalProperties": false,
+      "required": ["licensed_claims", "not_established", "statement"],
+      "properties": {
+        "licensed_claims": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/scopeClaim"}},
+        "not_established": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/scopeClaim"}}, "statement": {"$ref": "#/$defs/text"}
+      }
+    },
+    "provenance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["declaration_sha256", "compiler", "links"],
+      "properties": {
+        "declaration_sha256": {"$ref": "#/$defs/sha256"}, "compiler": {"$ref": "#/$defs/text"},
+        "links": {
+          "type": "array", "minItems": 1,
+          "items": {
+            "type": "object", "additionalProperties": false,
+            "required": ["element_type", "element_id", "evidence_refs", "locator_detail"],
+            "properties": {
+              "element_type": {"enum": ["required_input", "selector_rule", "action", "licensed_region", "out_of_scope", "preserved_rule", "fallback", "stop_condition", "licensed_claim", "not_established_claim"]},
+              "element_id": {"$ref": "#/$defs/id"}, "evidence_refs": {"$ref": "#/$defs/refs"}, "locator_detail": {"$ref": "#/$defs/text"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

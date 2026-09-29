@@ -1,0 +1,456 @@
+#!/usr/bin/env python3
+"""Emit the Task228 rule-by-rule source comparison."""
+from __future__ import annotations
+import csv, json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[5]
+OUT = ROOT / "ignition/reports/evaluations/ignition-228-policy-contract-reconciliation-r0"
+TAXONOMY = json.loads((OUT / "validator-failure-taxonomy.json").read_text(encoding="utf-8"))
+SOURCE_KEYS = [
+    "protocol", "schema", "validator", "reviewer_criteria", "validity_criteria",
+    "builder_prompt", "revision_prompt", "revision_evaluator",
+]
+def statuses(**kwargs):
+    return {k: kwargs.get(k, "silent") for k in SOURCE_KEYS}
+
+rows = [
+{
+"rule_id":"INPUT_ALLOWLIST",
+"scientific_intent":"Keep reference-instrument construction grounded only in the family's M0, raw E1, and the frozen authoring contract.",
+"source_encoding":{
+"protocol":"Each fresh builder sees only its family's M0, raw E1, schema, and prompt; held-out cases, targets, prior analyses and outcomes are excluded.",
+"schema":"evidence.source_type is M0 or E1; source_locator is a non-empty string.",
+"validator":"With --family, each locator must occur literally in that family's frozen M0 or E1 file.",
+"reviewer_criteria":"Each raw policy is reviewed against its own family M0/E1.",
+"validity_criteria":"Reviewer may use only policy, family M0/E1, and schema.",
+"builder_prompt":"Explicit allowlist of one family's M0, E1, schema, and prompt.",
+"revision_prompt":"Same allowlist; forbids prior outputs, targets, and sibling policies.",
+"revision_evaluator":"Only named family M0/E1, schema, criteria, and six policies."
+},
+"status_by_source":statuses(protocol="equivalent",schema="equivalent",validator="equivalent",reviewer_criteria="equivalent",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="equivalent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No evidence that a policy used another family's M0/E1. Target-blind construction is independently verified by frozen packet/manifest; this matrix does not inspect held-out target content.",
+"proposed_resolution":"Keep the allowlist and make candidate-build tooling expose only these inputs.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"FAMILY_SOURCE_LOCATOR_FORMAT",
+"scientific_intent":"Make each evidence claim traceable to the exact source segment that supports it.",
+"source_encoding":{
+"protocol":"Requires M0/E1-grounded rules and locators, but defines no locator grammar or canonical anchor form.",
+"schema":"source_locator is any non-empty string.",
+"validator":"Requires the complete locator string to be a literal substring of one source file.",
+"reviewer_criteria":"Requires evidence support and row reasons; no exact locator syntax or matching algorithm.",
+"validity_criteria":"Requires E1 source locators and evidence grounding; no exact locator syntax.",
+"builder_prompt":"Use source locators from M0/E1; no grammar or literal-match requirement.",
+"revision_prompt":"Requests evidence locators; no grammar or literal-match requirement.",
+"revision_evaluator":"Requests evidence locators and evidence grounding; no literal-match requirement."
+},
+"status_by_source":statuses(protocol="weaker",schema="weaker",validator="stronger",reviewer_criteria="weaker",validity_criteria="weaker",builder_prompt="weaker",revision_prompt="weaker",revision_evaluator="weaker"),
+"materiality":"could_change_scientific_admissibility",
+"task227_policy_violations":"The exhaustive audit finds 23 source_locator strings across REF-01..REF-06 that are not literal substrings of their bound M0/E1 files. Some use compound section/anchor notation. All six policies therefore fail this validator predicate after earlier failures are passed.",
+"proposed_resolution":"Do not decide whether literal substring matching, canonical section anchors, or line-addressable locators are normative. Require Owner to select a locator grammar and verification rule before changing either reviewer or machine gates.",
+"resolution_class":"OWNER_ADJUDICATION_REQUIRED",
+"owner_adjudication_question":"Must every source_locator be a literal substring, or may it use structured file/section/observation anchors? If structured anchors are allowed, what exact parser and source revision binding proves them?"
+},
+{
+"rule_id":"SELECTOR_CONDITION_TYPES",
+"scientific_intent":"Prevent selectors from comparing undeclared, wrong-type, or wrong-unit inputs.",
+"source_encoding":{
+"protocol":"Calls for observable selector inputs and operational conditions, but does not spell out every type/unit check.",
+"schema":"Declares input value_type/unit and condition operator/value/unit fields; condition value permits a broad JSON union.",
+"validator":"Checks input declaration, operator, value type, unit, numeric-comparison type, and ordered between values.",
+"reviewer_criteria":"Requires operational selectors based on declared observable inputs.",
+"validity_criteria":"Requires operational selector inputs and bounded applicability.",
+"builder_prompt":"Requires declared input types/units and operator values matching them.",
+"revision_prompt":"Requires selector inputs, explicit conditions, and conjunction semantics.",
+"revision_evaluator":"Requires operational selectors and typed parameters, but has no separate action-parameter/input relation."
+},
+"status_by_source":statuses(protocol="weaker",schema="weaker",validator="stronger",reviewer_criteria="weaker",validity_criteria="weaker",builder_prompt="equivalent",revision_prompt="equivalent",revision_evaluator="weaker"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No typed selector-condition failures were found by the exhaustive audit.",
+"proposed_resolution":"Keep the checks and encode the full allowed condition/value/unit semantics in the Task228 contract.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"ACTION_PARAMETER_INPUT_BINDING",
+"scientific_intent":"Avoid operational actions applying parameters with the wrong type or unit.",
+"source_encoding":{
+"protocol":"Requires operational actions and typed selector inputs; action parameter/input relationships are not specified.",
+"schema":"actionSpec.parameters are only {name,value}; value is scalar or scalar array with no declared type/unit or input_id.",
+"validator":"Checks selector condition typing but has no typed action-parameter-to-input predicate.",
+"reviewer_criteria":"Operational action review; no exact parameter/input type-link rule.",
+"validity_criteria":"Operational completeness, without a parameter/input type-link definition.",
+"builder_prompt":"Requires typed operation category, parameters, and typed selector conditions, but no binding grammar between action parameters and inputs.",
+"revision_prompt":"Requires operational action details, without a parameter/input binding grammar.",
+"revision_evaluator":"Requests typed parameters but does not define when a parameter must match a selector input."
+},
+"status_by_source":statuses(protocol="silent",schema="weaker",validator="silent",reviewer_criteria="weaker",validity_criteria="silent",builder_prompt="weaker",revision_prompt="silent",revision_evaluator="weaker"),
+"materiality":"could_change_scientific_admissibility",
+"task227_policy_violations":"Not encoded as a Task227 predicate; no failure can be scored without a normative relation between action parameters and selector inputs.",
+"proposed_resolution":"Do not invent a type-link rule during repair. Ask Owner whether action parameters require explicit type/unit declarations and when they must bind to selector input types.",
+"resolution_class":"OWNER_ADJUDICATION_REQUIRED",
+"owner_adjudication_question":"Should action parameters have declared type/unit fields, and which parameter values must match a selector input's type/unit? Please specify handling for constants and derived parameters."
+},
+{
+"rule_id":"SELECTOR_ACTION_ONE_TO_ONE",
+"scientific_intent":"Ensure each selector outcome resolves to one and only one declared operational action, with no orphan or ambiguous action mapping.",
+"source_encoding":{
+"protocol":"Refers to linked semantic checks but does not fully state the bijection.",
+"schema":"Selector rules carry action_ref; action rows are a separate array.",
+"validator":"Requires a one-to-one mapping and equal coverage across selector rules and action rows.",
+"reviewer_criteria":"Requires operational selector/action linkage, but not orphan-action behavior.",
+"validity_criteria":"Requires each operational selector to declare an action.",
+"builder_prompt":"Requires each selector rule to link to exactly one action ID.",
+"revision_prompt":"Requires selector rules and actions, but not an explicit no-orphan action rule.",
+"revision_evaluator":"Requires each rule to reference a declared action."
+},
+"status_by_source":statuses(protocol="weaker",schema="weaker",validator="stronger",reviewer_criteria="weaker",validity_criteria="weaker",builder_prompt="equivalent",revision_prompt="weaker",revision_evaluator="weaker"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No failures found.",
+"proposed_resolution":"Keep the bijection and state it explicitly in schema and reviewer criteria.",
+"resolution_class":"CLARIFY_REVIEWER_CRITERIA",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"SELECTOR_ACTION_CONDITION_EQUALITY",
+"scientific_intent":"Ensure the action executes on exactly the condition set that selected it.",
+"source_encoding":{
+"protocol":"Explains selector and action semantics but does not state their arrays must be byte/value-equal.",
+"schema":"Stores selector-rule and action-row conditions separately.",
+"validator":"Requires exact parsed equality.",
+"reviewer_criteria":"Reviews declared selectors/actions; no exact equality check is stated.",
+"validity_criteria":"Requires selectors and operational actions but not literal condition equality.",
+"builder_prompt":"Explicitly requires identical selector-rule/action conditions.",
+"revision_prompt":"Requires conditions and action details without repeating this exact equality rule.",
+"revision_evaluator":"Requires rules to reference actions but not exact selector/action equality."
+},
+"status_by_source":statuses(protocol="weaker",schema="weaker",validator="stronger",reviewer_criteria="weaker",validity_criteria="weaker",builder_prompt="equivalent",revision_prompt="weaker",revision_evaluator="weaker"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No failures found.",
+"proposed_resolution":"Keep exact condition equality; make the frozen normative text and rubric explicit.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"LICENSED_REGION_TO_SELECTOR_MAPPING",
+"scientific_intent":"Ensure each licensed region is supported by one selector rule and every selector rule has exactly one licensed region.",
+"source_encoding":{
+"protocol":"Each licensed region copies exactly one selector rule's conditions.",
+"schema":"rule_refs has minItems=1/maxItems=1; references are strings.",
+"validator":"Requires one known rule, unique mapping, complete coverage, and one region per selector rule.",
+"reviewer_criteria":"Checks that each region copies its linked rule.",
+"validity_criteria":"Explicitly requires exactly one linked selector rule per region.",
+"builder_prompt":"Explicitly requires each licensed region to link to one selector rule.",
+"revision_prompt":"Same exact one-rule region rule.",
+"revision_evaluator":"Checks one-to-one region/rule condition equality."
+},
+"status_by_source":statuses(protocol="equivalent",schema="weaker",validator="equivalent",reviewer_criteria="equivalent",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="equivalent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No failures found.",
+"proposed_resolution":"Keep rule and add explicit region/rule completeness to the Task228 schema/rubric.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"LICENSED_REGION_CONDITION_EQUALITY",
+"scientific_intent":"Prevent a licensed region from claiming a broader or different scope than its selector rule.",
+"source_encoding":{
+"protocol":"Explicitly says each licensed region copies its selector-rule conditions exactly.",
+"schema":"Both conditions arrays are represented separately; no equality keyword constraint.",
+"validator":"Requires exact parsed condition equality.",
+"reviewer_criteria":"Broad bounded-applicability wording.",
+"validity_criteria":"Explicitly requires exact condition copying.",
+"builder_prompt":"Explicit exact copy requirement.",
+"revision_prompt":"Explicit exact copy requirement.",
+"revision_evaluator":"Explicit exact copy requirement."
+},
+"status_by_source":statuses(protocol="equivalent",schema="weaker",validator="equivalent",reviewer_criteria="weaker",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="equivalent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No failures found.",
+"proposed_resolution":"Keep validator rule; align schema/test fixtures and reviewer rubric.",
+"resolution_class":"ALIGN_SCHEMA_OR_REVIEWER_TO_PROTOCOL",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"REGION_COMPLEMENT_SEMANTICS",
+"scientific_intent":"Make excluded applicability exhaustive without permitting an empty row to disguise partial exclusions.",
+"source_encoding":{
+"protocol":"An empty out-of-scope condition list denotes the full complement and may appear only once.",
+"schema":"Empty conditions are allowed for out_of_scope; description states complement and sole-row semantics.",
+"validator":"Requires an empty complement row to be the sole out-of-scope row.",
+"reviewer_criteria":"Requires unmatched cases to route to fallback.",
+"validity_criteria":"Explicit bounded applicability and complement handling.",
+"builder_prompt":"Explicit sole empty complement row and alternatives as separate rows.",
+"revision_prompt":"Explicit complement/fallback handling.",
+"revision_evaluator":"Explicit complement and excluded-region semantics."
+},
+"status_by_source":statuses(protocol="equivalent",schema="equivalent",validator="equivalent",reviewer_criteria="weaker",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="equivalent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No failures found.",
+"proposed_resolution":"Keep exact complement semantics.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"PRESERVATION_MODE_SEMANTICS",
+"scientific_intent":"Keep valid M0 behavior reachable without hiding it behind a new selector; additive behavior may coexist only on an identical selector condition set.",
+"source_encoding":{
+"protocol":"M0 remains available when the new selector does not apply; preservation modes may not hide a new-selector gate.",
+"schema":"Defines unconditional, selector_miss, and additive_coexistence modes and descriptions.",
+"validator":"Requires empty when for unconditional/selector_miss; additive_coexistence must equal a selector condition set.",
+"reviewer_criteria":"Scores preservation safety and whether M0 remains available.",
+"validity_criteria":"Spells out mode-specific empty/equality behavior.",
+"builder_prompt":"Spells out mode-specific behavior.",
+"revision_prompt":"Spells out mode-specific behavior.",
+"revision_evaluator":"Spells out mode-specific behavior."
+},
+"status_by_source":statuses(protocol="equivalent",schema="equivalent",validator="equivalent",reviewer_criteria="weaker",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="equivalent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No mode/condition failures found; separate source-type failures are covered by PRESERVED_RULE_EVIDENCE_ORIGIN.",
+"proposed_resolution":"Keep mode semantics separate from the unresolved source-evidence-origin rule.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"PRESERVED_RULE_EVIDENCE_ORIGIN",
+"scientific_intent":"Prove that an asserted preserved baseline action actually comes from M0, while retaining any legitimate E1 support for coexistence context.",
+"source_encoding":{
+"protocol":"Requires preservation of M0 actions and source-linked provenance but is silent on whether preserved-rule evidence may also cite E1.",
+"schema":"evidence_refs is an untyped string list; both M0 and E1 IDs are accepted.",
+"validator":"Requires every preserved-rule evidence_ref to be M0; rejects mixed M0/E1 lists.",
+"reviewer_criteria":"Checks preservation safety and evidence support but does not say preserved_rule refs must be M0-only.",
+"validity_criteria":"Requires explicit M0 preservation but does not define evidence_refs source-type restriction.",
+"builder_prompt":"Requires provenance for preserved rules with M0/E1 IDs and locators, without source-type exclusivity.",
+"revision_prompt":"Requires preserved rules and evidence locators, without source-type exclusivity.",
+"revision_evaluator":"Requires M0 preservation and provenance, without source-type exclusivity."
+},
+"status_by_source":statuses(protocol="silent",schema="weaker",validator="stronger",reviewer_criteria="weaker",validity_criteria="weaker",builder_prompt="weaker",revision_prompt="weaker",revision_evaluator="weaker"),
+"materiality":"could_change_scientific_admissibility",
+"task227_policy_violations":"First failure for REF-01, REF-03, REF-04, and REF-05; six preserved-rule reference occurrences include E1 or mixed M0/E1 evidence. Four human-reviewed policies were rejected at this predicate.",
+"proposed_resolution":"Stop. Owner must decide whether preserved-rule refs are M0-only or whether the representation needs separate mandatory M0-baseline and optional E1-context references. Do not remove E1 references or weaken the validator before that decision.",
+"resolution_class":"OWNER_ADJUDICATION_REQUIRED",
+"owner_adjudication_question":"Must preserved_rules.evidence_refs be M0-only, or may additive_coexistence cite E1 alongside M0? If mixed citations are permitted, must every preserved rule have at least one M0 reference and a separate field for E1 context?"
+},
+{
+"rule_id":"M0_RETIREMENT",
+"scientific_intent":"Prohibit retiring an original M0 action.",
+"source_encoding":{
+"protocol":"Says no M0 action may be retired or gated by the new selector.",
+"schema":"m0_action_retired is const false.",
+"validator":"Fails whenever retirement is not false.",
+"reviewer_criteria":"Explicit preservation-safety dimension.",
+"validity_criteria":"Explicit no-retirement preservation requirement.",
+"builder_prompt":"Explicitly says do not retire original M0 action.",
+"revision_prompt":"Requires retained applicable M0 rules.",
+"revision_evaluator":"Critical error for global retirement."
+},
+"status_by_source":statuses(protocol="equivalent",schema="equivalent",validator="equivalent",reviewer_criteria="equivalent",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="equivalent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No failures found.",
+"proposed_resolution":"Keep prohibition.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"FALLBACK_UNIVERSALITY",
+"scientific_intent":"Route every excluded, unresolved, or unmatched input to a universal safe catch-all.",
+"source_encoding":{
+"protocol":"Explicit universal fallback; when must be empty.",
+"schema":"fallback.when const []; description states catch-all semantics.",
+"validator":"Rejects nonempty fallback.when.",
+"reviewer_criteria":"Checks fallback/edge behavior.",
+"validity_criteria":"Explicit universal fallback and unresolved stops.",
+"builder_prompt":"Explicit universal fallback and empty when.",
+"revision_prompt":"Explicit universal fallback and empty when.",
+"revision_evaluator":"Explicit universal fallback and safe edge behavior."
+},
+"status_by_source":statuses(protocol="equivalent",schema="equivalent",validator="equivalent",reviewer_criteria="weaker",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="equivalent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No failures found.",
+"proposed_resolution":"Keep exact universal catch-all requirement.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"STOP_CONDITION_STRUCTURE",
+"scientific_intent":"Ensure unresolved, invalid, or unsafe cases have explicit stop or reacquisition behavior.",
+"source_encoding":{
+"protocol":"Requires explicit stop outcomes for unresolved inputs.",
+"schema":"Requires stop id, nonempty conditions, enumerated outcome, and instruction.",
+"validator":"Checks structure, typed conditions, and allowed outcomes.",
+"reviewer_criteria":"Checks fallback and edge behavior.",
+"validity_criteria":"Explicit stop outcomes for unresolved inputs.",
+"builder_prompt":"Explicit fallback, stop outcomes, and provenance.",
+"revision_prompt":"Explicit stop conditions.",
+"revision_evaluator":"Explicit stops and critical unsupported universalization/retirement."
+},
+"status_by_source":statuses(protocol="equivalent",schema="equivalent",validator="equivalent",reviewer_criteria="weaker",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="equivalent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No structure/type failures found.",
+"proposed_resolution":"Keep requirements; distinguish explicit stop conditions from the universal fallback.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"SCOPE_CEILING_REGION_LICENSING",
+"scientific_intent":"Prevent licensed claims from citing excluded or unmatched regions; keep non-established claims bounded to known regions.",
+"source_encoding":{
+"protocol":"Licensed scope claims cannot cite excluded regions.",
+"schema":"Scope region_refs are strings; no semantic enum restriction.",
+"validator":"Licensed claims must reference licensed IDs; not_established claims may reference any known licensed or excluded ID.",
+"reviewer_criteria":"Checks boundedness and absence of unsupported universalization.",
+"validity_criteria":"Requires licensed-only scope claims and a narrow ceiling.",
+"builder_prompt":"Requires licensed claims to cite only licensed regions and limits for not_established claims.",
+"revision_prompt":"Requires licensed/excluded applicability and scope ceiling.",
+"revision_evaluator":"Explicit licensed-only claims and bounded scope."
+},
+"status_by_source":statuses(protocol="equivalent",schema="weaker",validator="equivalent",reviewer_criteria="weaker",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="equivalent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No licensed-scope region failures found; three policy provenance IDs mismatch the validator's licensed/not_established type map.",
+"proposed_resolution":"Keep region licensing and define typed scope-claim provenance separately.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"EVIDENCE_REFERENCE_INTEGRITY",
+"scientific_intent":"Every evidence reference resolves to one uniquely identified M0/E1 source entry.",
+"source_encoding":{
+"protocol":"Requires evidence-grounded policy behavior and source locators.",
+"schema":"Evidence refs are nonempty string arrays; schema does not enforce foreign keys.",
+"validator":"Checks every reference resolves in evidence_basis and enforces source type for preserved-rule refs.",
+"reviewer_criteria":"Requires evidence support and row-level reasons.",
+"validity_criteria":"Requires every new rule/value to be supported by supplied E1 locators and evidence support.",
+"builder_prompt":"Requires source IDs/locators for selector, action, preserved, fallback, stop, region, and claims.",
+"revision_prompt":"Requires evidence locators and provenance.",
+"revision_evaluator":"Requires evidence grounding and provenance."
+},
+"status_by_source":statuses(protocol="weaker",schema="weaker",validator="stronger",reviewer_criteria="weaker",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="weaker",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"Unknown evidence refs were not among exhaustive findings; family source-locator and preserved-source checks are separately listed.",
+"proposed_resolution":"Keep referential integrity; require distinct IDs and human semantic support.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"EVIDENCE_IDENTIFIER_UNIQUENESS",
+"scientific_intent":"Avoid ambiguous evidence references when policy elements cite an evidence ID.",
+"source_encoding":{
+"protocol":"Uses evidence IDs but does not say IDs must be globally unique.",
+"schema":"No uniqueItems constraint across evidence_basis IDs.",
+"validator":"Requires unique evidence IDs.",
+"reviewer_criteria":"No explicit identifier-uniqueness check.",
+"validity_criteria":"No explicit identifier-uniqueness check.",
+"builder_prompt":"Requires evidence IDs and references but not explicit uniqueness.",
+"revision_prompt":"Requires evidence locators without uniqueness wording.",
+"revision_evaluator":"Requires evidence provenance without uniqueness wording."
+},
+"status_by_source":statuses(protocol="weaker",schema="weaker",validator="stronger",reviewer_criteria="weaker",validity_criteria="weaker",builder_prompt="weaker",revision_prompt="weaker",revision_evaluator="weaker"),
+"materiality":"serialization_or_traceability",
+"task227_policy_violations":"REF-02 reuses CE-F01-E1-R0 for distinct source-locator entries and fails the official first check.",
+"proposed_resolution":"Retain unique evidence IDs as referential-integrity normalization; encode it in schema and reviewer rubric without changing policy behavior.",
+"resolution_class":"SERIALIZATION_ONLY_NORMALIZATION",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"PROVENANCE_TYPED_LINK_COVERAGE",
+"scientific_intent":"Bind every operational and scope element to evidence through a type-correct provenance link.",
+"source_encoding":{
+"protocol":"Requires linked semantic checks but does not enumerate all typed-link pairs.",
+"schema":"Provenance entries have element_type/id/evidence_refs/locator_detail; no completeness or foreign-key constraints.",
+"validator":"Requires known element type/id pairs, unique pairs, evidence refs, and typed coverage of every element.",
+"reviewer_criteria":"Checks provenance, scope ceiling, and row-level reasons.",
+"validity_criteria":"Requires provenance completeness and scope ceiling.",
+"builder_prompt":"Explicitly requires links for every selector, action, preserved rule, fallback, stop, region, and scope claim.",
+"revision_prompt":"Requires provenance links for policy elements.",
+"revision_evaluator":"Requires provenance completeness."
+},
+"status_by_source":statuses(protocol="weaker",schema="weaker",validator="stronger",reviewer_criteria="weaker",validity_criteria="equivalent",builder_prompt="equivalent",revision_prompt="weaker",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"REF-01/02/04/06 have unsupported scope/fallback provenance type IDs and/or omitted typed links.",
+"proposed_resolution":"Keep typed coverage; document canonical type-to-section mapping. Treat identifier spelling as a serialization convention only if Owner confirms the underlying claim semantics do not change.",
+"resolution_class":"SERIALIZATION_ONLY_NORMALIZATION",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"FIXED_DENOMINATOR_AND_MISSINGNESS",
+"scientific_intent":"Preserve the six-policy denominator and prevent missing or invalid policies from being counted as usable.",
+"source_encoding":{
+"protocol":"Fixed denominator six; missing/invalid/unusable artifacts count false.",
+"schema":"Policy object requires all core fields; this schema alone does not encode the task denominator.",
+"validator":"Rejects invalid objects; it does not alter the endpoint denominator.",
+"reviewer_criteria":"Both reviewers must pass; fixed denominator six.",
+"validity_criteria":"USABLE false unless both reviewers pass all dimensions.",
+"builder_prompt":"One policy per task; no endpoint rule.",
+"revision_prompt":"One output; no denominator rule.",
+"revision_evaluator":"Missing/invalid artifact is invalid; fixed six-row lock."
+},
+"status_by_source":statuses(protocol="equivalent",schema="weaker",validator="equivalent",reviewer_criteria="equivalent",validity_criteria="equivalent",builder_prompt="silent",revision_prompt="silent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"No denominator alteration or missingness substitution found in the bound lock.",
+"proposed_resolution":"Preserve the human usability endpoint and machine validator endpoint as distinct records; never convert one into the other.",
+"resolution_class":"KEEP_VALIDATOR_RULE",
+"owner_adjudication_question":""
+},
+{
+"rule_id":"MACHINE_VALIDITY_AND_HUMAN_SEMANTIC_AUDIT",
+"scientific_intent":"Require formal structure and independent human semantic review as separate gates; one cannot substitute for the other.",
+"source_encoding":{
+"protocol":"Usable requires both independent reviewers across eight dimensions; official schema/semantic validation is a separate gate.",
+"schema":"Machine-readable shape only.",
+"validator":"Deterministic schema and cross-reference checks; no semantic evidence-support judgement.",
+"reviewer_criteria":"Independent human evidence/operation/boundedness/preservation/fallback review.",
+"validity_criteria":"Requires both reviewers to pass all eight dimensions.",
+"builder_prompt":"Describes policy-authoring constraints, not evaluator authority.",
+"revision_prompt":"Authoring instructions only.",
+"revision_evaluator":"Separate Component B semantic validity dimensions."
+},
+"status_by_source":statuses(protocol="equivalent",schema="weaker",validator="weaker",reviewer_criteria="equivalent",validity_criteria="equivalent",builder_prompt="silent",revision_prompt="silent",revision_evaluator="equivalent"),
+"materiality":"scientific_admissibility",
+"task227_policy_violations":"Locked human result is 3/6 usable; official validator result is 0/6 pass. Keep both facts unchanged; the difference is the object of this audit.",
+"proposed_resolution":"Keep both gates, label each output precisely, and make reviewer criteria explicitly reference the reconciled normative contract.",
+"resolution_class":"CLARIFY_REVIEWER_CRITERIA",
+"owner_adjudication_question":""
+},
+]
+
+summary = {
+    "task_id": "IGNITION-20260929-228",
+    "task227_head": "7d979b1aa523030b16f773a973477cbfca1e4513",
+    "source_columns": SOURCE_KEYS,
+    "status_vocabulary": ["silent", "equivalent", "weaker", "stronger", "contradictory"],
+    "rows": rows,
+    "diagnostic_policy_failures": {
+        r["ref_id"]: [f["rule_id"] for f in r["failures"]]
+        for r in TAXONOMY["results"]
+    },
+    "material_owner_adjudication_rules": [
+        "FAMILY_SOURCE_LOCATOR_FORMAT",
+        "ACTION_PARAMETER_INPUT_BINDING",
+        "PRESERVED_RULE_EVIDENCE_ORIGIN",
+    ],
+}
+(OUT / "normative-contract-matrix.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+fields = [
+    "rule_id","scientific_intent","protocol","schema","validator","reviewer_criteria",
+    "validity_criteria","builder_prompt","revision_prompt","revision_evaluator",
+    "status_by_source","materiality","task227_policy_violations","proposed_resolution",
+    "resolution_class","owner_adjudication_question",
+]
+with (OUT / "normative-contract-matrix.csv").open("w", newline="", encoding="utf-8") as f:
+    writer=csv.DictWriter(f,fieldnames=fields)
+    writer.writeheader()
+    for row in rows:
+        writer.writerow({
+            **{k: row[k] for k in fields if k in row},
+            **row["source_encoding"],
+            "status_by_source": json.dumps(row["status_by_source"], ensure_ascii=False, sort_keys=True),
+        })
+print(json.dumps({
+    "matrix_rows":len(rows),
+    "owner_adjudication_rows":sum(r["resolution_class"]=="OWNER_ADJUDICATION_REQUIRED" for r in rows),
+    "policy_failure_rows":len(TAXONOMY["results"]),
+}))
