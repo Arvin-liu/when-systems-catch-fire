@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 822 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 830 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,110 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Target-opening gate R0](../reports/evaluations/ignition-229-clean-transfer-interface-r0/target-opening-gate.md)
+
+- **结果 ID：** `HR-B7CAB34097905A9B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `229-CLEAN-TRANSFER-INTERFACE-R0`
+- **问题：** 此来源记录了什么：Target-opening gate R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** No Task225 A/B/C case or sealed target content may be opened before all conditions below are mechanically evidenced:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Fixed visible prompt for each successor session](../reports/evaluations/ignition-229-clean-transfer-interface-r0/session-prompt-template.md)
+
+- **结果 ID：** `HR-040C381A1EA90B6B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `229-CLEAN-TRANSFER-INTERFACE-R0`
+- **问题：** 此来源记录了什么：Fixed visible prompt for each successor session？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** You are handling one fresh, isolated case-solving session. Use only the case files and method material included in this message. Do not use tools, browse, inspect a workspace, request other records, infer an unstated threshold, or refer to another session. Do not mention any study, condition, lin…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Blind packet sanitization R0](../reports/evaluations/ignition-229-clean-transfer-interface-r0/sanitization-procedure.md)
+
+- **结果 ID：** `HR-36457F71D1DD5632`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `229-CLEAN-TRANSFER-INTERFACE-R0`
+- **问题：** 此来源记录了什么：Blind packet sanitization R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Sanitization runs after all raw session responses are frozen and before either evaluator receives any packet. The sanitizer must not read or use the condition-to-lineage map.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task229 preregistered protocol R0](../reports/evaluations/ignition-229-clean-transfer-interface-r0/protocol.md)
+
+- **结果 ID：** `HR-56A47EB090AE671A`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `229-CLEAN-TRANSFER-INTERFACE-R0`
+- **问题：** 此来源记录了什么：Task229 preregistered protocol R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This is a transfer-only experiment with six frozen Task228 reference instruments. It does not run revision generation or the full chain.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Missingness and retry rules R0](../reports/evaluations/ignition-229-clean-transfer-interface-r0/missingness-retry-rules.md)
+
+- **结果 ID：** `HR-9529D96918D275AD`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `229-CLEAN-TRANSFER-INTERFACE-R0`
+- **问题：** 此来源记录了什么：Missingness and retry rules R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** 原文件保存该项结果的完整问题、过程与边界。
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Blind evaluator rubric R0](../reports/evaluations/ignition-229-clean-transfer-interface-r0/evaluator-rubric.md)
+
+- **结果 ID：** `HR-32060F38C1B1D7DC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `229-CLEAN-TRANSFER-INTERFACE-R0`
+- **问题：** 此来源记录了什么：Blind evaluator rubric R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Score each response against the complete frozen Task225 R0.1 target criteria and the Task227 transfer scoring contract. The source bytes are fixed:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task229 claim ceiling R0](../reports/evaluations/ignition-229-clean-transfer-interface-r0/claim-ceiling.md)
+
+- **结果 ID：** `HR-037A78AE8C7C5909`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `229-CLEAN-TRANSFER-INTERFACE-R0`
+- **问题：** 此来源记录了什么：Task229 claim ceiling R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** The only supported claims are bounded fixed-lineage/fixed-target facts about:
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260929-229 — Clean Transfer Interface Test R0](../reports/evaluations/ignition-229-clean-transfer-interface-r0/README.md)
+
+- **结果 ID：** `HR-50AC988BF4A51266`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `229-CLEAN-TRANSFER-INTERFACE-R0`
+- **问题：** 此来源记录了什么：IGNITION-20260929-229 — Clean Transfer Interface Test R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This subtree contains the frozen preregistration and deterministic analysis contract for the Task229 transfer-only experiment. It is created before any Task225 A/B/C case or sealed target content is opened.
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
