@@ -1,10 +1,10 @@
 # Task228 contract-gap report
 
-## Terminal state
+## Former pre-A1 terminal state (historical)
 
-`TASK228_OWNER_ADJUDICATION_REQUIRED`
+At the end of Phase 03, before Owner/GPT adjudication, the temporary terminal status was `TASK228_OWNER_ADJUDICATION_REQUIRED`. The A1 instruction later resolved all three questions and authorized continuation from Phase 04.
 
-Phase 01 evidence binding and Phase 02 exhaustive validator forensics are complete. Phase 03 has a 20-row source matrix. Reconciliation stops here because three unresolved contract questions can affect which policies count as scientifically admissible. No Task228 normative-contract candidate, schema, validator, reviewer rubric, authoring guide, or reference-instrument candidate was adopted.
+At that earlier checkpoint, Phase 01 evidence binding and Phase 02 exhaustive validator forensics were complete and Phase 03 had a 20-row source matrix. The former stop preserved against guessing at scientifically material contract rules; it is superseded by the recorded A1 decisions below.
 
 ## Frozen result discrepancy
 
@@ -28,7 +28,7 @@ The non-mutating harness checks the six original policy bytes against the frozen
 
 The detailed evidence is in `validator-failure-taxonomy.json`, `validator-failure-taxonomy.csv`, and `per-policy-validator-audit.md`.
 
-## Owner decisions required
+## Owner/GPT questions and A1 decisions
 
 1. **Preserved-rule evidence origin.** The protocol requires preservation of M0 actions. The schema and authoring/review language permit evidence references without an M0-only constraint, while the validator rejects every preserved-rule reference whose source type is E1, including mixed M0+E1 context citations. Decide whether the field must be M0-only, or whether each preserved rule should require a baseline M0 reference and allow a separate E1 context reference. This affects proof of preservation and must not be guessed from the six outcomes.
 2. **Source-locator grammar.** The validator requires a complete locator string to appear literally in one source file. The protocol, schema, reviewer criteria, and prompts do not define that syntax; the frozen policies use compound section/observation anchors, and 23 such strings fail literal matching. Decide whether literal substring matching is normative or specify a structured, revision-bound locator grammar and its verifier.
@@ -36,9 +36,9 @@ The detailed evidence is in `validator-failure-taxonomy.json`, `validator-failur
 
 The additional ID differences (duplicate evidence IDs; `scope_claim` versus `scope_exclusion`; lowercase `fallback` versus `FALLBACK`) can be specified as deterministic serialization conventions only after they are kept separate from the three substantive decisions above. No convention was applied to a candidate contract.
 
-## Stop boundary and next step
+## Former stop boundary (cleared by A1)
 
-Do not reconcile the contract, produce or validate the six target-blind reference instruments, run transfer, revision-generation, or full-chain sessions, or open a Task228 Formal Draft PR until Owner/GPT answers the three questions and the normative matrix is updated. The current task establishes only the specific human/machine contract divergence and its blocker; it establishes no transfer, revision-generation, or cognitive-evolution capability.
+That boundary applied before the answers were received. A1 supplied and bound the three decisions below; Phases 04–06 then proceeded under those decisions. The task still establishes no transfer, revision-generation, or cognitive-evolution capability.
 
 ## Owner/GPT adjudication and Phase 04 resolution
 
@@ -58,4 +58,12 @@ The A1 resolutions are now encoded in the Task228 normative contract, Draft 2020
 
 The six explicit researcher-authored mapping declarations use only the family M0 and raw E1 source rows. A deterministic compiler reads only the six declared M0/E1 paths and serializes six candidates. Each candidate preserves the named M0 actions, has a bounded E1-derived route, universal fallback, measurement-quality stop, source-bound evidence, typed provenance, and scope ceiling. No A/B/C target or Task227 outcome was opened for candidate construction.
 
-Verification completed: Task228 schema valid; candidate validator 6/6 pass; positive/adversarial conformance tests 4/4 pass; Task227 diagnostic regression tests 3/3 pass; compiler rebuild is byte-identical. No substantive requirement was relaxed to improve a frozen Task227 policy's pass rate. The dual independent semantic audits remain pending, so no reference-instrument-ready conclusion is made yet.
+Verification completed: Task228 schema valid; candidate validator 6/6 pass; positive/adversarial conformance tests 4/4 pass; Task227 diagnostic regression tests 3/3 pass; compiler rebuild is byte-identical. No substantive requirement was relaxed to improve a frozen Task227 policy's pass rate.
+
+## Independent semantic audit outcomes
+
+Round 1 raw sheets are preserved separately under `audit/round-1/`. Auditor A passed all six candidates. Auditor B marked `PROVENANCE_COVERAGE` and semantic provenance meaning as FAIL for F02_A and F02_B because `F02_E1_QC` cited by each nested report field was absent from its parent action evidence. The contract requires nested report and parameter evidence references to be covered by the parent action’s direct references. That gap was made an explicit contract predicate, validator check, rubric rule, mapping declaration requirement, and adversarial fixture. The two original sheets remain unchanged.
+
+Round 2 used separate, read-only, byte-identical packages documented by `audit/round-2/package-manifest.json`. Auditor A and Auditor B each independently passed all six candidates across all 15 machine predicates and all nine semantic dimensions. Their raw sheets are preserved under `audit/round-2/`. No audit results were reconciled and no third auditor was used.
+
+The resulting bounded conclusion is that the six target-blind reference instrument candidates satisfy the Task228 machine and semantic audit gates and rebuild byte-identically. This is not a transfer or revision-generation result.
