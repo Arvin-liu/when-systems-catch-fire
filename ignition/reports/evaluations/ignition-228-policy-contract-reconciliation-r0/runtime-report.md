@@ -26,7 +26,7 @@ The candidate compiler and both reviewers received only the contract, schema, ru
 
 ## Formal publication reference
 
-Formal repository: `Arvin-liu/when-systems-catch-fire`. Task228 branch: `work/IGNITION-20260929-228-policy-contract-reconciliation-r0`, stacked from the exact Task227 head above. Phase 07 publishes an OPEN + DRAFT + UNMERGED PR after this report is committed. The terminal 1111 relay receipt records the resulting PR URL/base, final exact Formal head, and CI run IDs/conclusions verified against that head. At final receipt publication, the receipt branch must not be merged to 1111 main.
+Formal repository: `Arvin-liu/when-systems-catch-fire`. Task228 branch: `work/IGNITION-20260929-228-policy-contract-reconciliation-r0`, stacked from the exact Task227 head above. Draft PR #238 is [OPEN + DRAFT + UNMERGED](https://github.com/Arvin-liu/when-systems-catch-fire/pull/238), with base branch `work/IGNITION-20260928-227-cognitive-evolution-component-isolation-r0` at `7d979b1aa523030b16f773a973477cbfca1e4513`. It was opened at Task228 head `2470849b4af68916c5492e708a34b6d834a92f22`. This report commit will advance the PR head; the final current head SHA and exact-head CI run IDs/conclusions are recorded in the terminal 1111 relay receipt after verification against that final head. At final receipt publication, the receipt branch must not be merged to 1111 main.
 
 ## Claim ceiling
 

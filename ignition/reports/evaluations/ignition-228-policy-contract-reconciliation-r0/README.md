@@ -1,6 +1,6 @@
 # IGNITION-20260929-228 — Policy Contract Reconciliation R0
 
-Status: `REFERENCE_INSTRUMENTS_AUDITED_READY_DRAFT_PR_PENDING`
+Status: `REFERENCE_INSTRUMENTS_AUDITED_READY_DRAFT_PR_OPEN`
 
 Task228 is a bounded post-Task227 contract-reconciliation and reference-instrument task. Phases 01–06 are complete. Phase 07 packaging and Draft PR publication follow after this report commit. The relay receipt records the final PR URL/state, exact Formal head, and exact-head CI proof.
 
@@ -28,7 +28,7 @@ It does not rerun transfer, revision generation, the full chain, R1, cross-model
 - Compiler rebuild: byte-identical; source, mapping, compiler, and candidate hashes are recorded. No target access or experiment run.
 - Audit round 1: raw disagreement preserved. Auditor A passed all six; Auditor B identified nested report evidence not included in the parent action evidence for F02_A and F02_B.
 - Audit round 2: both independent auditors passed all six candidates across the 15 machine predicates and nine semantic dimensions. The first-round sheets remain unchanged as history; no third auditor or audit reconciliation was used.
-- Phase 07: formal Draft PR publication remains the next step; the PR must remain OPEN + DRAFT + UNMERGED. Exact URL, head SHA, and applicable exact-head CI conclusions are recorded in the relay receipt after publication.
+- Phase 07: Draft PR #238 is OPEN + DRAFT + UNMERGED against the exact Task227 head branch. The report commit will advance the PR head; the terminal relay receipt records the final head SHA and applicable exact-head CI conclusions.
 
 ## Claim ceiling
 
