@@ -4,6 +4,26 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-07eaa526c5114401"></a>
+## 持续自我纠错引擎
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-07EAA526C5114401` · [docs/governance/self-correction-engine.md](../../docs/governance/self-correction-engine.md)
+- **为什么产生：** 此来源记录了什么：持续自我纠错引擎？
+- **当前状态：** `CURRENT_CORRECTION_RECORD`
+- **当前结果：** 本引擎把任务 98—100 的断言治理、函数注册表与证据谱系接到每次知识资产变化上。它自动建立“变化 → 关联断言 → 依赖影响 → 证据链 → 风险规则 → 整改计划 → 人类结果”，但不把自动检测当成数学证明、专家裁决或外部真理。
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/governance/self-correction-engine.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `持续自我纠错引擎`, `self-correction-engine`
+
 <a id="asset-hr-07f04c57755e61ed"></a>
 ## IGNITION-137 Step 13 — Steering / Goal / Memory boundary
 
@@ -824,6 +844,26 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Supplemental record CASE01`, `CASE01`
 
+<a id="asset-hr-1794c69a5bf13cd8"></a>
+## Task228 normative policy contract R1
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1794C69A5BF13CD8` · [reports/evaluations/ignition-228-policy-contract-reconciliation-r0/normative-policy-contract.md](../../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/normative-policy-contract.md)
+- **为什么产生：** 此来源记录了什么：Task228 normative policy contract R1？
+- **当前状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **当前结果：** Status: RECONCILEDCANDIDATE Scope: Task228 reference-instrument construction and later independent semantic audit only. Dialect: task228-policy-contract-r1.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-228-policy-contract-reconciliation-r0/normative-policy-contract.md`, `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **演化历史：** 2026-09-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Task228 normative policy contract R1`, `normative-policy-contract`
+
 <a id="asset-hr-191c775bce185353"></a>
 ## T16 counterexample-equivalence audit
 
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `V4 规范性审核 - 可持续性协议 (Sustainability Protocol)`, `V4`
-
-<a id="asset-hr-1c6a8f5e8b981082"></a>
-## 121B Fulltext Batch Report
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1C6A8F5E8B981082` · [reports/external-research/121b-fulltext-batch-report.md](../../reports/external-research/121b-fulltext-batch-report.md)
-- **为什么产生：** 此来源记录了什么：121B Fulltext Batch Report？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** 121B successfully published the 121A local checkpoint to a clean remote branch, completed batch legal fulltext resolution for all 84 sources, and generated the 121C semantic review queue. Of 84 sources, 79 were successfully downloaded (74 original + 5 retry), 5 remain failed with explicit failure…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/external-research/121b-fulltext-batch-report.md`, `121`
-- **演化历史：** 2026-07-14: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `121B Fulltext Batch Report`, `121b-fulltext-batch-report`
-
-<a id="asset-hr-1c89ea0a4c2a0aa1"></a>
-## map-epistemic-architecture
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1C89EA0A4C2A0AA1` · [reports/atlas/maps/map-epistemic-architecture.md](../../reports/atlas/maps/map-epistemic-architecture.md)
-- **为什么产生：** 此来源记录了什么：map-epistemic-architecture？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Observer: maintainer and reviewer deciding how claims can move toward publication
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/atlas/maps/map-epistemic-architecture.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-15: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `map-epistemic-architecture`, `map-epistemic-architecture`

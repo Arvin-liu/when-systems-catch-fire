@@ -424,6 +424,11 @@
   - 可搜索名称：NFC-b6dbc81acbc4739f / pending 项：财富自由=复利+退出权 是否可上收为一般机制，待跨域验证
   - 来源：`docs/getbrain-book-collision-guide-20260708.md`
   - 依赖：—；被引用：—
+- [Per-policy Task227 validator audit](../../ASSET-CARDS.md#asset-hr-5dfc2e14933cd222)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Per-policy Task227 validator audit / per-policy-validator-audit
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/per-policy-validator-audit.md`
+  - 依赖：—；被引用：—
 - [Perspectives on Mechanism Design in Economic Theory](../../../data/external-research/088-external-source-atlas-v1.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-dcd54c36c4ba8e99 / Perspectives on Mechanism Design in Economic Theory
@@ -2497,10 +2502,5 @@
 - [\| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-830c947db8c4ca4b / \| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [\| \[C-0692\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-aaaacf8046a27d5e / \| \[C-0692\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
   - 依赖：—；被引用：—

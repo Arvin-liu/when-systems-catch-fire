@@ -476,6 +476,18 @@
     "reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/interpretation.md": "2026-09-28",
     "reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/prompt.md": "2026-09-28",
     "reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/template.md": "2026-09-28",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/README.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-1/auditor-a.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-1/auditor-b.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-a.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-b.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/contract-gap-report.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/evidence-binding-receipt.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/normative-policy-contract.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/per-policy-validator-audit.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/instrument-authoring-guide.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/reviewer-rubric.md": "2026-09-29",
+    "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/runtime-report.md": "2026-09-29",
     "reports/external-research/104-dual-088-reconciliation.md": "2026-07-13",
     "reports/external-research/104-gap-patch-evidence-readiness.md": "2026-07-13",
     "reports/external-research/104-source-quality-audit.md": "2026-07-13",
@@ -812,7 +824,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 810,
+  "entry_count": 822,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }

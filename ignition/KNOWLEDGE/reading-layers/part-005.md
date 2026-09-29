@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-4611947d00b2fdc0"></a>
+## Step02 — Three Fresh Synthetic Replicated Cases
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The Task198 case manifest freezes three new, bounded, synthetic sources: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Step02 — Three Fresh Synthetic Replicated Cases；The Task198 case manifest freezes three new, bounded, synthetic sources:；The cases are structurally different rather than numeric substitutions. They use only invented names, values, and local observations; they contain no real personal data or external-knowledge dependency. The facts sources contain no method history, condition label, evaluator label, expected disposition, or embedded method answer.；The authoritative hashes are in cases/case-manifest.json and are checked by tools/validatestep02cases.py. The manifest itself is bound by the cases/case-manifest.sha256 sidecar. The validator requires:；each source SHA-256 to equal the final source bytes;；each provenance SHA-256 to equal the final provenance bytes;
+- 完整阅读：[reports/evaluations/ignition-198-replicated-method-use-trial-r0/step02-case-freeze.md](../../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step02-case-freeze.md)
+
+<a id="reading-hr-4679d26e37e40f35"></a>
+## Case review task
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：You are given a packet containing six synthetic operational cases and an output schema. For every case, determine the strongest action or disposition supported by the provided records. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Case review task；You are given a packet containing six synthetic operational cases and an output schema. For every case, determine the strongest action or disposition supported by the provided records.；Separate directly recorded observations from inferences and hypotheses. Record material unknowns, applicable boundaries, prerequisites, and a stop condition. Do not state that an action occurred unless the packet records it. If the record does not distinguish among plausible explanations or actions, preserve that uncertainty and name the specific observation…；Use only source locators present in the packet. Support factual and relational statements with their source locator or locators; identify a relation as inferred when the records do not explicitly state it. Do not turn a missing record into evidence that an event did or did not occur.；Return only a JSON array of exactly six objects, one for each caseid shown in the packet. Each array element must conform to the supplied output schema. Copy that case's displayed Source SHA-256 value into sourcesha256. Use the caseid exactly as shown.
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/neutral-task-prompt.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/neutral-task-prompt.md)
+
+<a id="reading-hr-46cd997d4826e649"></a>
+## IGNITION-140 Step 06 — Evidence Exhaustion Audit
+`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The bounded read-only recovery audit checked the declared public sources for the three old open reconciliation lines. All nine declared source files were present. No private session database, credential, hidden reasoning, or provider telemetry was read. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-140 Step 06 — Evidence Exhaustion Audit；The bounded read-only recovery audit checked the declared public sources for the three old open reconciliation lines. All nine declared source files were present. No private session database, credential, hidden reasoning, or provider telemetry was read.；Hermes136 has no attempt PID/PGID, durable disposable workspace, session pointer, raw public output, or matching public artifact in the bounded search. Its state is therefore terminalized as TERMINALUNRECOVERABLEEFFECTUNKNOWN; this does not prove cancellation, success, failure, or no external effect.；Codex138 second is a confirmed started attempt, but the durable evidence path contains no capture, return code, session pointer, structured result, lease receipt, or validator result. It is terminalized as TERMINALUNRECOVERABLEOBSERVATIONINCOMPLETE, while effect knowledge stays UNKNOWN.；Task139 is different: its public transport record is conclusive for the process boundary. It has two public probes, zero live dispatch calls, no live inference start, and no capture capsule because Pointfire failed closed before process start. It is closed as CLOSEDNOLIVEDISPATCH; that label is not a claim that an external effect was observed absent, and its…；No historical record was rewritten and no retry was started. The next step may append canonical reconciliation events and then perform fresh dynamic executor admission.
+- 完整阅读：[reports/operations/ignition-140-step06-evidence-exhaustion-audit.md](../../reports/operations/ignition-140-step06-evidence-exhaustion-audit.md)
+
 <a id="reading-hr-46d4e1a9e463a4a0"></a>
 ## 候选决策摘要（candidate-decision-summary）
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`, `OPERATIONS_EVIDENCE`
@@ -165,6 +186,13 @@
 - 5 分钟：主题：IGNITION-20260827-143 Step 07 — Article A 对抗性编辑；Article A 通过编辑复核并修订为 REVIEWEDCURRENTR1。它现在明确是一篇以 Task142 为案例的仓库内方法文章，而不是对所有项目的生命周期规范。修订没有改变案例事实或开放义务的状态。；“这不是给‘不够成功’找一个新标签”改为明确针对本仓库的 lifecycle 判断，避免把局部设计写成普遍心理解释。；将“系统叙事”和“成熟终态”改为“这个项目的叙事”和“对这个仓库而言的可用终态”，降低普遍化风险。；保留历史动作与当前动作的区分，因为它是本文和 Task143 Owner-deferred 停放之间的实际连接；没有把 Owner-deferred 写成完成或失败。；文章具备标题、deck、引入、完整论证、结尾和来源与边界说明；当前正文约 4,300 个中文字符，满足本轮完整稿目标。编辑结论只表示文章适合进入本轮 publication production，不表示其中的生命周期设计已获得外部验证。
 - 完整阅读：[reports/operations/ignition-143-step07-article-a-editorial-review.md](../../reports/operations/ignition-143-step07-article-a-editorial-review.md)
 
+<a id="reading-hr-4cf0a85ab2711561"></a>
+## auditor-a
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Read-only audit of the isolated package only. The packaged validator returned TASK228POLICYSCHEMA=PASS and TASK228POLICYVALID=PASS for all six candidates. The packaged compiler’s read-only check returned TASK228REFERENCEREBUILD=BYTEIDENTICAL. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task228 semantic audit — Auditor A；Read-only audit of the isolated package only. The packaged validator returned TASK228POLICYSCHEMA=PASS and TASK228POLICYVALID=PASS for all six candidates. The packaged compiler’s read-only check returned TASK228REFERENCEREBUILD=BYTEIDENTICAL.；For each candidate below, all 15 machine predicates are PASS: SCHEMAVALIDITY, FAMILYSOURCEBINDING, UNIQUEIDENTIFIERS, EVIDENCEREFERENCES, TYPEDCONDITIONS, SELECTORACTIONBIJECTION, LICENSEDREGIONBIJECTION, OUTOFSCOPECOMPLEMENT, PRESERVATIONSEMANTICS, PRESERVEDEVIDENCEM0ONLY, TYPEDPARAMETERBINDING, FALLBACKUNIVERSALITY, STOPCONDITIONSTRUCTURE, SCOPEREGIONLICEN…；Evidence support — PASS. F01E1TRIGGER, F01E1CONTROLS, and F01E1LIMITS support routing the observed silver-film/toward-sun pattern for contact and VWC review, without changing a threshold.；Operational completeness — PASS. F01AMEASUREMENTVALID, F01ASURFACEPATTERN, and F01ABEARINGRELATION select a named category; the action and report fields specify review and records to capture.；Bounded applicability — PASS. The licensed pattern is explicitly reflective silver film plus toward-sun bearing; F01E1LIMITS rejects a universal cutoff.
+- 完整阅读：[reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-1/auditor-a.md](../../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-1/auditor-a.md)
+
 <a id="reading-hr-4cf11961bcf1534a"></a>
 ## Condition packet construction — R1
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -325,31 +353,3 @@
 - 1 分钟：验证「不同领域材料 → 统一两张表碰撞」流程可运行性，并确认框架跨域同构识别能力。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：跨域 smoke test 审计；验证「不同领域材料 → 统一两张表碰撞」流程可运行性，并确认框架跨域同构识别能力。；git pull --ff-only：Already up to date；P1 校验器：ALLP1DATAVALID；主题：输入（本地文本，避免网页链接依赖）；inputs/collisions/20260708-cross-domain-smoke-test/social.md（社会学·邻里积分制）
 - 完整阅读：[outputs/audit/cross-domain-smoke-test-audit-20260708.md](../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
-
-<a id="reading-hr-52a1b14648bb866b"></a>
-## Remaining content work queue
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Remaining content work queue；Unreviewed registry objects: 1.；Queue path: data/foundation/work-queues/content-proof-queue.jsonl.；Ordering is dependency/risk based, not numeric.；D598 is the only registry object outside the literal root/MF/A/T and title-or-body strong-term scope. It remains PROVISIONAL; no semantic-completion credit is claimed for it.
-- 完整阅读：[reports/foundation-architecture/remaining-content-work-queue-20260713.md](../../reports/foundation-architecture/remaining-content-work-queue-20260713.md)
-
-<a id="reading-hr-53733a2aa5cf5dd7"></a>
-## 碰撞输出报告 · P1 接入烟雾测试
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：输入描述了一个私有工程流程案例：主线仓库 / 临时救援仓库 / 本地备份三层结构 → 差异审计 → 只补回增量（五个内部结构件）→ 删除临时环境、保留救援分支。核心可判定结构：分层存储、差异审计优先、只回填增量、凭证保留。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：碰撞输出报告 · P1 接入烟雾测试；本文件为 smoke test，仅验证 P1 机器数据接入碰撞流程是否可运行，不追求高质量洞见，不回填正式两张表。；本地文件：inputs/collisions/20260708-smoke-test/task.md；无网页链接，符合「默认得到大脑读不了网页链接」的输入原则。；函数表目录：存在（已迁移的历史函数来源/），本轮未读全量正文。；案例表目录：存在（已迁移的历史案例来源/），本轮未读全量正文。
-- 完整阅读：[outputs/collisions/20260708-smoke-test/collision-report.md](../../outputs/collisions/20260708-smoke-test/collision-report.md)
-
-<a id="reading-hr-537499c7917fee41"></a>
-## S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：系统允许外部输入、退出、迁移或扩展，边界可渗透。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：S2 规范性审核 - 开放边界协议 (Open-Boundary Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；系统允许外部输入、退出、迁移或扩展，边界可渗透。；'可渗透'无上限，易变成无限开放导致病原/污染/风险无控扩散（歧义/适用边界）。
-- 完整阅读：[docs/governance/meta-protocol-reviews/protocols/S2.md](../../docs/governance/meta-protocol-reviews/protocols/S2.md)
-
-<a id="reading-hr-53d09798ed596327"></a>
-## E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：价值：向安全吸引子、合作稳定、风险降低与系统协调收敛，是降低冲突与风险的正向工具。条件：仅当收敛不强制同质化、保留多样性与未来选择空间时才有价值。伤害：当强制同质化、过早收敛、单一占据全部空间时会伤害共同体（锁死未来）。不可缺少的约束：禁止强制同质化、保留多样性、避免过早收敛、保留未来选择空间。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：E4 规范性审核 - 收敛演化协议 (Convergent-Evolution Protocol)；外部治理记录 · IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；来源审核任务：IGNITION-20260709-042；状态向某个均衡点、目标或吸引子收敛。；未防止强制同质化与过早收敛，易锁死未来选择（歧义/适用边界）。
-- 完整阅读：[docs/governance/meta-protocol-reviews/protocols/E4.md](../../docs/governance/meta-protocol-reviews/protocols/E4.md)

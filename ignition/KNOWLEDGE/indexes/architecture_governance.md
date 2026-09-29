@@ -11,11 +11,11 @@
 - [第 005 片](./architecture_governance/part-005.md)：2001—2500；def sha256_file\(path: Path\) -> str: → EVIDENCE_STATES,
 - [第 006 片](./architecture_governance/part-006.md)：2501—3000；Exact arXiv v1 hash/size, all-28-page visual/full-text and official SDK/model/dataset snapshot audit retained PARTIAL su → link: "已迁移的历史案例来源/0775-C-0780-青蒿素从《肘后备急方》提炼.md"
 - [第 007 片](./architecture_governance/part-007.md)：3001—3500；link: "已迁移的历史案例来源/0776-C-0781-《写作是门手艺》段落控制≤10行.md" → related_evidence_regime（关联证据制度）
-- [第 008 片](./architecture_governance/part-008.md)：3501—4000；related_pend_ids 如存在，必须能在 PEND 数据集中找到。 → This is a cumulative release seal for already validated Q12-Q14 work:
-- [第 009 片](./architecture_governance/part-009.md)：4001—4500；This is a Current projection repair; Task107/127/133 historical observations remain in Git history and receipts. Claim c → \| \[C-32\]\( \) \| \[雅典民主改革\]\( \) \| 公民可流亡可拒绝参与，民主认同经退出权验证（排除了奴隶和女性） \|
-- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| \[C-330\]\( \) \| \[巴菲特模式的投资域验证 — 定投=巴菲特模式精确执行，三效率乘积最大\]\(<./0330-C-330-巴菲特 → 下一步进入 P1-3：生成 CP / SB 数据。
-- [第 011 片](./architecture_governance/part-011.md)：5001—5500；下一步进入 P1-4：生成 pending / risk / failure 数据。 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
-- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 反向投影覆盖→覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。
-- [第 013 片](./architecture_governance/part-013.md)：6001—6500；反向投影覆盖，覆盖度 = \|投影变量∩点火变量\|/\|点火变量\|。 → 材料错误指输入本身有误，包括案例、史料、数据、转述或对象定义不准确。
-- [第 014 片](./architecture_governance/part-014.md)：6501—7000；材料错误（实验数据错误） → 部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未
-- [第 015 片](./architecture_governance/part-015.md)：7001—7143；部分成立 = 部分验证通过（停留在L1层，缺乏L2层涌现） → （证据不足、需外部验证、待人工复核）
+- [第 008 片](./architecture_governance/part-008.md)：3501—4000；related_pend_ids 如存在，必须能在 PEND 数据集中找到。 → This execution compares each candidate component with the frozen simplest baseline from STEP08. The outcome is bounded r
+- [第 009 片](./architecture_governance/part-009.md)：4001—4500；This gate proves repository synchronization evidence only. It does not prove → \| \[C-321\]\( \) \| \[AI安装路径的串行约束 — 不能并行装三个模块，串行安装每一步是下一步的必要条件\]\(<./03
+- [第 010 片](./architecture_governance/part-010.md)：4501—5000；\| \[C-322\]\( \) \| \[D137与D141的粒度对应 — D137说\\\\"阶段2是最大瓶 → 上游降级触发下游重审，不自动传播 truth；
+- [第 011 片](./architecture_governance/part-011.md)：5001—5500；下一层尚未公开出现，却已改变当前层的选词、意象、概念边界、句法或停止位置。检验不是“后来能否解释”，而是删去下一层后，当前层是否仍留下某个不完全必要、却被未来问题提前加载的细节。 → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`
+- [第 012 片](./architecture_governance/part-012.md)：5501—6000；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD` → 反事实推断（如自然实验、随机对照试验）
+- [第 013 片](./architecture_governance/part-013.md)：6001—6500；反事实识别（如自然实验、随机对照试验） → 材料内成立；跨群体普遍性 pending（外部证据 E5）。
+- [第 014 片](./architecture_governance/part-014.md)：6501—7000；材料来源不清、事实错误、引用缺失。 → 道阶、受箓与官员忠诚的关系要写成可能的制度通道，不写成每个人的心理事实。
+- [第 015 片](./architecture_governance/part-015.md)：7001—7147；遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死 → （证据不足、需外部验证、待人工复核）

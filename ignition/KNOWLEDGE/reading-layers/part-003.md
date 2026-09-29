@@ -4,6 +4,27 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-266563bdd4271980"></a>
+## Supplemental record CASE06
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Source type: neutral synthetic case-log index. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Supplemental record CASE06；Source type: neutral synthetic case-log index.；Scope: identifies current roster entries and status fields. It does not assign an entry category to a station or compare procedure performance.
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE06.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE06.md)
+
+<a id="reading-hr-26d1f225ef8a1e1e"></a>
+## IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Step 02 passes with a deliberately small machine boundary in data/governance/owner-editorial-authority-r1.json and its validator. The contract keeps DRAFTGENERATED, OWNERSELECTED and PUBLICATIONACCEPTED as separate fields/states. Only OWNEREXPLICITPRODUCTIONBRIEF or OWNEREXPLICITSELECTION can sup… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1；Step 02 passes with a deliberately small machine boundary in data/governance/owner-editorial-authority-r1.json and its validator. The contract keeps DRAFTGENERATED, OWNERSELECTED and PUBLICATIONACCEPTED as separate fields/states. Only OWNEREXPLICITPRODUCTIONBRIEF or OWNEREXPLICITSELECTION can supply the authority required to move beyond the candidate state o…；Five negative fixtures fail closed for model-ranked topic selection, auto-cluster book initiation, draft-to-accepted promotion, registry-item acceptance and fire-seed-score project activation. The validator also checks all six Task143 smoke outputs against the non-selected/non-accepted defaults. No runtime adapter, Agent shell, provider SDK or parallel edito…
+- 完整阅读：[reports/operations/ignition-144-step02-owner-editorial-authority.md](../../reports/operations/ignition-144-step02-owner-editorial-authority.md)
+
+<a id="reading-hr-26db9e2e52f3d7c9"></a>
+## IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The first real Codex R3 child used new identities dispatch-138-live-01 / attempt-138-live-01, the fresh lease lease-ignition-138-live-01-repaired, the Task138 fixture, an external strict schema, a mode-0555 task workspace and an attempt-specific runtime scratch. The default persistent-document ro… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch；The first real Codex R3 child used new identities dispatch-138-live-01 / attempt-138-live-01, the fresh lease lease-ignition-138-live-01-repaired, the Task138 fixture, an external strict schema, a mode-0555 task workspace and an attempt-specific runtime scratch. The default persistent-document root was rejected before child launch because it contains histori…；The repaired first real child process exited in 61.166 ms with return code 1. It produced zero stdout bytes and no structured JSONL result; stderr was bounded to 521 bytes with digest 79bf39ba628c787ae5baf83ed84bff92b2a4f36583dd820f3b64c1698e0120f3. The process group was CONFIRMEDGONE, no session pointer was observed, no timeout or output truncation occurred…；A separate non-inference public login status probe under the exact isolated runtime environment reproduced the public configuration error: the declared CODEXHOME directory did not exist, so configuration loading failed before any model result. This is classified as the concrete CODEXRUNTIMEPATHPREINFERENCESTARTUPFAILURE with known no effect for the second-at…；The Step09 gate predicates are all satisfied: process group gone, no session, no structured result, no timeout/effect uncertainty, unchanged workspace, cleaned scratch, no observed external side effect, and a narrow repair that only prepares declared runtime directories inside scratch. No blind retry is authorized; the second invocation remains conditional o…；Claim ceiling: one bounded Codex startup failure and its machine-observed known-no-effect pre-inference classification only; no validated live completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.
+- 完整阅读：[reports/operations/ignition-138-step08-first-codex-dispatch.md](../../reports/operations/ignition-138-step08-first-codex-dispatch.md)
+
 <a id="reading-hr-26ff2edbbc24babb"></a>
 ## IGNITION-20260826-141 Step 16 — Fresh task-branch clone and publication gate
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Foundation documentation；076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。；函数、模型、定理、公式、律或判定器还必须读取：；旧表是不可变来源；data/foundation/function-assets/corrections.jsonl 是 task 98 首批纠偏权威覆盖。task 99 的 identity-cards.jsonl 为每个发现项提供现行处置；自动 census 仍只是候选，quarantine 也不因登记、编号或测试而获得真值。；task 100 的 data/foundation/nonfunction-claims/claim-registry.jsonl 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 quarantine，不表示证明、外部证据、原创性、同行评审或复现完成。
 - 完整阅读：[docs/foundation/README.md](../../docs/foundation/README.md)
-
-<a id="reading-hr-3697fef2b08e4800"></a>
-## IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1
-`HISTORICAL_COMPLETION_RECORD` · `COGNITION`
-- 1 分钟：Task ID: IGNITION-20260825-139 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1；Task ID: IGNITION-20260825-139；Formal task ordinal: 139；Latest architecture-changing task: IGNITION-20260823-136; architecture task ordinal: 136.；Status: COMPLETEDWITHCLASSIFIEDRESIDUALS；Task139 terminalizes the repository-local durable live-observation and Current projection continuation. CURRENTWITHOPENOBLIGATIONS remains current, EPISTEMICALLYACCEPTED=0 remains unchanged, and the live external invocation obligation remains open because no validated external completion was observed. This result records durable capture contracts, append-onl…
-- 完整阅读：[agent-results/IGNITION-20260825-139-result.md](../../agent-results/IGNITION-20260825-139-result.md)
-
-<a id="reading-hr-369f261001c4ece1"></a>
-## 121Q25 Human Front-Door Audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Starting main: 7fc4b309720ea1b4e9c4b47477c2f423860d53df. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q25 Human Front-Door Audit；Starting main: 7fc4b309720ea1b4e9c4b47477c2f423860d53df.；Claim ceiling: validatedhumanfrontdoorsynccandidateonly. This report verifies repository surfaces and records external rendering evidence; it does not make MCF, PSD or ARN a truth layer or proven scientific theory.；来源含已退役的独立阅读站维护机制；历史细节保留在完整来源，不得恢复为当前表面。；主题：Candidate repair；The visible README names and briefly relates MCF, PSD, ARN and the current iteration method.
-- 完整阅读：[reports/operations/121Q25-front-door-audit.md](../../reports/operations/121Q25-front-door-audit.md)
-
-<a id="reading-hr-371e32ea8afe3e83"></a>
-## IGNITION-20260825-139 Step 09 — Fresh local executor census and why-executor
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：PASS: the current host was re-attested at 2026-08-25T05:37:35Z using only public version/help surfaces, binary/help digests, application-bundle presence and auth-status presence/exit behavior. No model, Agent inference, UI action, login, secret read, installation, configuration or billing operati… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260825-139 Step 09 — Fresh local executor census and why-executor；PASS: the current host was re-attested at 2026-08-25T05:37:35Z using only public version/help surfaces, binary/help digests, application-bundle presence and auth-status presence/exit behavior. No model, Agent inference, UI action, login, secret read, installation, configuration or billing operation occurred.；The scan found 14 candidates: five Agentic Executor records (four installed), four local Reasoner Runtime records, three Tool-only records and two UI-only records. Gemini CLI 0.53.1, Codex 0.144.4, Hermes and OpenClaw are the four installed Agentic candidates. Plain gh 2.96.0 remains TOOLONLY; Ollama, LM Studio, MLX DSpark and bundled llama-server remain REA…；主题：Dynamic selection；Codex is the only currently admitted Agentic Executor. Its public codex login status returned exit 0 without exposing output, and the census records the auth file as presence-only. The R3 adapter now keeps the auth reference separate from the attempt runtime scratch, while the ten census checks cover disposable workspace, read-only ceiling, one-shot operatio…；Gemini remains blocked by auth/home and billing re-attestation; Hermes by strict structured-result and auth/no-billing boundaries; OpenClaw by workspace, channel and process-cleanup boundaries; and Copilot CLI by not being installed. This whyexecutor result is an admission trace only, not a model-quality ranking or a completion result.
-- 完整阅读：[reports/operations/ignition-139-step09-local-executor-census-and-selection.md](../../reports/operations/ignition-139-step09-local-executor-census-and-selection.md)

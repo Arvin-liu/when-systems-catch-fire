@@ -6,6 +6,11 @@
 
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：A5046780990 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json / A5046780990 / D010506
+  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json`
+  - 依赖：—；被引用：—
+- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：D010506 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json / D010506 / A5046780990
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json`
   - 依赖：—；被引用：—
@@ -2304,6 +2309,11 @@
   - 可搜索名称：IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock / ignition-172-20260913-step03-unesco-gate-t
   - 来源：`reports/operations/ignition-172-20260913-step03-unesco-gate-t.md`
   - 依赖：—；被引用：—
+- [IGNITION-20260929-228 — Policy Contract Reconciliation R0](../../ASSET-CARDS.md#asset-hr-68be436f325e45a0)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：IGNITION-20260929-228 — Policy Contract Reconciliation R0 / README
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/README.md`
+  - 依赖：—；被引用：—
 - [IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../ASSET-CARDS.md#asset-hr-bda837b6080acf95)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report / IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact
@@ -2493,14 +2503,4 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C43CFB9D8B43B227 / lim=5 / IMPLICIT-C43CFB9D8B43B227
   - 来源：`scripts/external-research/anysearch_client.py`
-  - 依赖：—；被引用：—
-- [lim=int\(parts\[-1\]\); q=" ".join\(parts\[:-1\]\)](../../../scripts/external-research/anysearch_client.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C6DCBF56B3E4FAAF / lim=int\(parts\[-1\]\); q=" ".join\(parts\[:-1\]\) / IMPLICIT-C6DCBF56B3E4FAAF
-  - 来源：`scripts/external-research/anysearch_client.py`
-  - 依赖：—；被引用：—
-- [live_observation: the canonical projection contains five attempts, zero validated completions, zero unreconciled attempt](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-78a0a495c66b19b3 / live_observation: the canonical projection contains five attempts, zero validated completions, zero unreconciled attempt
-  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—

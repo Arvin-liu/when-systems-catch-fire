@@ -4,6 +4,114 @@
 
 ## 2026
 
+<a id="change-src-hr-ebcf23ec787cac52"></a>
+### 2026-09-29 · Task228 target-blind instrument authoring guide R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** For one candidate, use only its family's frozen m0.md, raw revision-evidence-e1.md, this normative contract, and an explicit researcher-authored mapping declaration. Do not open or use A/B/C targets, Task227 policy files, Task227 scores or dispositions, transfer outputs, or target-compatibility a…
+- **来源：** [instrument-authoring-guide.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/instrument-authoring-guide.md)
+- **资产卡：** [HR-EBCF23EC787CAC52](./ASSET-CARDS.md#asset-hr-ebcf23ec787cac52)
+
+<a id="change-src-hr-d81c17a67e88b8bd"></a>
+### 2026-09-29 · Task228 auditor-b audit sheet
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Audited only the supplied isolated package. The six validator invocations each returned TASK228POLICYSCHEMA=PASS and TASK228POLICYVALID=PASS; the packaged rebuild check returned TASK228REFERENCEREBUILD=BYTEIDENTICAL.
+- **来源：** [auditor-b.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-1/auditor-b.md)
+- **资产卡：** [HR-D81C17A67E88B8BD](./ASSET-CARDS.md#asset-hr-d81c17a67e88b8bd)
+
+<a id="change-src-hr-d49183423aac8346"></a>
+### 2026-09-29 · Task228 candidate revision v2 — Auditor A raw audit sheet
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Validator and compiler checks were rerun in the isolated package. All six validators returned TASK228POLICYSCHEMA=PASS and TASK228POLICYVALID=PASS; the compiler check returned TASK228REFERENCEREBUILD=BYTEIDENTICAL.
+- **来源：** [auditor-a.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-a.md)
+- **资产卡：** [HR-D49183423AAC8346](./ASSET-CARDS.md#asset-hr-d49183423aac8346)
+
+<a id="change-src-hr-872036691a947edc"></a>
+### 2026-09-29 · Task228 runtime report — Phase 04 through Phase 07
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Task: IGNITION-20260929-228. This run resumed at Phase 04 after the A1 Owner/GPT adjudication. The controlling 1111 snapshot was 55a0add295b70afa4283fa2a75bbc26ac4bc63b3; the requested instruction/checklist/current-state set was consistent at that locked revision.
+- **来源：** [runtime-report.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/runtime-report.md)
+- **资产卡：** [HR-872036691A947EDC](./ASSET-CARDS.md#asset-hr-872036691a947edc)
+
+<a id="change-src-hr-68be436f325e45a0"></a>
+### 2026-09-29 · IGNITION-20260929-228 — Policy Contract Reconciliation R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: REFERENCEINSTRUMENTSAUDITEDREADYDRAFTPROPEN
+- **来源：** [README.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/README.md)
+- **资产卡：** [HR-68BE436F325E45A0](./ASSET-CARDS.md#asset-hr-68be436f325e45a0)
+
+<a id="change-src-hr-5dfc2e14933cd222"></a>
+### 2026-09-29 · Per-policy Task227 validator audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Inputs were the six immutable raw reference-policy bytes only. The diagnostic harness loaded the frozen Task227 schema and validator, enumerated all custom predicates without modifying policy inputs, and ran the official validator unchanged for first-failure comparison.
+- **来源：** [per-policy-validator-audit.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/per-policy-validator-audit.md)
+- **资产卡：** [HR-5DFC2E14933CD222](./ASSET-CARDS.md#asset-hr-5dfc2e14933cd222)
+
+<a id="change-src-hr-5d6f1a5bbcbd4e45"></a>
+### 2026-09-29 · Task228 independent policy review rubric R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This rubric implements task228-policy-contract-r1. Reviewers must not add operational thresholds, scientific exclusions, or source requirements that are absent from the normative contract. Record each machine rule as PASS or FAIL; a reviewer cannot waive a machine failure. Semantic findings must…
+- **来源：** [reviewer-rubric.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/reviewer-rubric.md)
+- **资产卡：** [HR-5D6F1A5BBCBD4E45](./ASSET-CARDS.md#asset-hr-5d6f1a5bbcbd4e45)
+
+<a id="change-src-hr-55b8a590151a0c77"></a>
+### 2026-09-29 · Task228 Task227 evidence-binding receipt
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** No Task227 policy, reviewer sheet, lock, aggregate, result, target, or validator source was modified. The Task228 diagnostic read only the six raw reference policies, the frozen schema/validator, and frozen family M0/E1 inputs; it did not read A/B/C target files.
+- **来源：** [evidence-binding-receipt.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/evidence-binding-receipt.md)
+- **资产卡：** [HR-55B8A590151A0C77](./ASSET-CARDS.md#asset-hr-55b8a590151a0c77)
+
+<a id="change-src-hr-4cf0a85ab2711561"></a>
+### 2026-09-29 · auditor-a
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Read-only audit of the isolated package only. The packaged validator returned TASK228POLICYSCHEMA=PASS and TASK228POLICYVALID=PASS for all six candidates. The packaged compiler’s read-only check returned TASK228REFERENCEREBUILD=BYTEIDENTICAL.
+- **来源：** [auditor-a.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-1/auditor-a.md)
+- **资产卡：** [HR-4CF0A85AB2711561](./ASSET-CARDS.md#asset-hr-4cf0a85ab2711561)
+
+<a id="change-src-hr-252aa2ba43ffa5a5"></a>
+### 2026-09-29 · Task228 contract-gap report
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** At the end of Phase 03, before Owner/GPT adjudication, the temporary terminal status was TASK228OWNERADJUDICATIONREQUIRED. The A1 instruction later resolved all three questions and authorized continuation from Phase 04.
+- **来源：** [contract-gap-report.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/contract-gap-report.md)
+- **资产卡：** [HR-252AA2BA43FFA5A5](./ASSET-CARDS.md#asset-hr-252aa2ba43ffa5a5)
+
+<a id="change-src-hr-1794c69a5bf13cd8"></a>
+### 2026-09-29 · Task228 normative policy contract R1
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `CANDIDATE_OR_PENDING_SOURCE`
+- **变化：** Status: RECONCILEDCANDIDATE Scope: Task228 reference-instrument construction and later independent semantic audit only. Dialect: task228-policy-contract-r1.
+- **来源：** [normative-policy-contract.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/normative-policy-contract.md)
+- **资产卡：** [HR-1794C69A5BF13CD8](./ASSET-CARDS.md#asset-hr-1794c69a5bf13cd8)
+
+<a id="change-src-hr-01bbd082ca4a248b"></a>
+### 2026-09-29 · Task228 v2 — Auditor B Raw Audit Sheet
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Scope: Isolated v2 package only. No target material or other audit sheets inspected.
+- **来源：** [auditor-b.md](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-b.md)
+- **资产卡：** [HR-01BBD082CA4A248B](./ASSET-CARDS.md#asset-hr-01bbd082ca4a248b)
+
 <a id="change-src-hr-fea07b39d2492747"></a>
 ### 2026-09-28 · Fresh reference-M1 builder prompt
 

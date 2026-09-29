@@ -4,6 +4,16 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [lim=int\(parts\[-1\]\); q=" ".join\(parts\[:-1\]\)](../../../scripts/external-research/anysearch_client.py)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C6DCBF56B3E4FAAF / lim=int\(parts\[-1\]\); q=" ".join\(parts\[:-1\]\) / IMPLICIT-C6DCBF56B3E4FAAF
+  - 来源：`scripts/external-research/anysearch_client.py`
+  - 依赖：—；被引用：—
+- [live_observation: the canonical projection contains five attempts, zero validated completions, zero unreconciled attempt](../../../STATE-CHANGELOG.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-78a0a495c66b19b3 / live_observation: the canonical projection contains five attempts, zero validated completions, zero unreconciled attempt
+  - 来源：`STATE-CHANGELOG.md`
+  - 依赖：—；被引用：—
 - [live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-366ea11858254982 / live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts
@@ -1133,6 +1143,31 @@
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
   - 可搜索名称：Task227 Component Isolation R0 protocol / protocol
   - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/protocol.md`
+  - 依赖：—；被引用：—
+- [Task228 auditor-b audit sheet](../../ASSET-CARDS.md#asset-hr-d81c17a67e88b8bd)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task228 auditor-b audit sheet / auditor-b
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-1/auditor-b.md`
+  - 依赖：—；被引用：—
+- [Task228 candidate revision v2 — Auditor A raw audit sheet](../../ASSET-CARDS.md#asset-hr-d49183423aac8346)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task228 candidate revision v2 — Auditor A raw audit sheet / auditor-a
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-a.md`
+  - 依赖：—；被引用：—
+- [Task228 independent policy review rubric R1](../../ASSET-CARDS.md#asset-hr-5d6f1a5bbcbd4e45)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task228 independent policy review rubric R1 / reviewer-rubric
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/reviewer-rubric.md`
+  - 依赖：—；被引用：—
+- [Task228 normative policy contract R1](../../ASSET-CARDS.md#asset-hr-1794c69a5bf13cd8)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：Task228 normative policy contract R1 / normative-policy-contract
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/normative-policy-contract.md`
+  - 依赖：—；被引用：—
+- [Task228 v2 — Auditor B Raw Audit Sheet](../../ASSET-CARDS.md#asset-hr-01bbd082ca4a248b)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task228 v2 — Auditor B Raw Audit Sheet / auditor-b
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-b.md`
   - 依赖：—；被引用：—
 - [task_events = \[event for event in lifecycle if event.get\("task_number"\) == 114\]](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2468,39 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
   - 可搜索名称：NFC-29150c45832abaf9 / \| E1 \| 线性演化协议 \| Linear-Evolution Protocol \| 沿单一轨迹线性推进，状态可预测 \|
   - 来源：`docs/protocols/protocol-index.md`
-  - 依赖：—；被引用：—
-- [\| Failure handling \| No stage-specific gate \| Schema, semantic, identity/HEAD, privacy, responsibility, succession and b](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-02d021373da2e251 / \| Failure handling \| No stage-specific gate \| Schema, semantic, identity/HEAD, privacy, responsibility, succession and b
-  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
-  - 依赖：—；被引用：—
-- [\| I_iso\(A,B\) \| 无同构案例；结构独特（教育评价硬门槛 + 青年教师）。 \|](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-9bed28cbd66745b1 / \| I_iso\(A,B\) \| 无同构案例；结构独特（教育评价硬门槛 + 青年教师）。 \|
-  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [\| L_meta \| 社会学实例，提示跨域同构，未越权 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6c27738a4ab6f77f / \| L_meta \| 社会学实例，提示跨域同构，未越权 \|
-  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
-  - 依赖：—；被引用：—
-- [\| L_meta \| 自然科学实例，强化跨域同构 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-e7f3cdb87f993a19 / \| L_meta \| 自然科学实例，强化跨域同构 \|
-  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
-  - 依赖：—；被引用：—
-- [\| M1 听话—低成本控制 \| 边界扩展 \| D595/EXIT 族 \| 约束来源=管理成本，同构；命中 V1 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-63ac227a65b3942e / \| M1 听话—低成本控制 \| 边界扩展 \| D595/EXIT 族 \| 约束来源=管理成本，同构；命中 V1 \|
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
-  - 依赖：D595；被引用：—
-- [\| M2 外部评价内化自我规训 \| 已有覆盖 \| D598+D597 \| 实质同构；家庭轴补强 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-0a3da2a3283f13a2 / \| M2 外部评价内化自我规训 \| 已有覆盖 \| D598+D597 \| 实质同构；家庭轴补强 \|
-  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
-  - 依赖：D597, D598；被引用：—
-- [\| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-10bf8a6175e93442 / \| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
   - 依赖：—；被引用：—

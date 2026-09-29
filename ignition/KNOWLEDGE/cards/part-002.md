@@ -624,6 +624,26 @@
 - **主题：** `SYSTEMS`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260827-143 Step 04 — 可出版素材盘点`, `ignition-143-step04-corpus-census`
 
+<a id="asset-hr-01bbd082ca4a248b"></a>
+## Task228 v2 — Auditor B Raw Audit Sheet
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-01BBD082CA4A248B` · [reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-b.md](../../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-b.md)
+- **为什么产生：** 此来源记录了什么：Task228 v2 — Auditor B Raw Audit Sheet？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** Scope: Isolated v2 package only. No target material or other audit sheets inspected.
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-b.md`, `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **演化历史：** 2026-09-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Task228 v2 — Auditor B Raw Audit Sheet`, `auditor-b`
+
 <a id="asset-hr-02352d9fbccc87db"></a>
 ## FAMILY01 held-out C — canopy-temperature observation
 
@@ -983,23 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `IGNITION-20260824-138 — Step 11 Obligation Semantics`, `ignition-138-step11-obligation-semantics`
-
-<a id="asset-hr-07eaa526c5114401"></a>
-## 持续自我纠错引擎
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-07EAA526C5114401` · [docs/governance/self-correction-engine.md](../../docs/governance/self-correction-engine.md)
-- **为什么产生：** 此来源记录了什么：持续自我纠错引擎？
-- **当前状态：** `CURRENT_CORRECTION_RECORD`
-- **当前结果：** 本引擎把任务 98—100 的断言治理、函数注册表与证据谱系接到每次知识资产变化上。它自动建立“变化 → 关联断言 → 依赖影响 → 证据链 → 风险规则 → 整改计划 → 人类结果”，但不把自动检测当成数学证明、专家裁决或外部真理。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/self-correction-engine.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `持续自我纠错引擎`, `self-correction-engine`

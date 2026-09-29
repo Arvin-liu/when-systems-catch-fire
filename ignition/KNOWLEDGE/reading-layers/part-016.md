@@ -4,6 +4,90 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-ebfbf26abf72ff4c"></a>
+## IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计；Step 17 通过，Task143 的 Current State 同步影响为 PRESENTATIONONLY。当前正式任务仍是 IGNITION-20260827-143，最新 architecture-changing task 仍是 Task142，identity epoch 仍为 os-control-plane-r8-task-lifecycle-decoupling-executor-admission-r1，当前 map 仍为 0.16.0。；Task143 的 phase-closure、publication-production 和新 canonical 出版入口在 Current/Handoff/AI surfaces 中可恢复；；Task142 的 LIVEEXTERNALINVOCATION 历史 6 次 attempt、0 次 validated completion、0 次 unreconciled、2 次 observation-incomplete 没有被新出版成果改写；；obligation registry 的当前动作仍是 OWNERDEFERREDREQUIRESEXPLICITREOPENANDLOCALENVIRONMENTPREPARATION，历史 projection 的 dynamic admission 动作仍被保留；；本轮没有新增组件、typed topology relation、map version、executor live attempt、安装、配置、认证、计费或环境手术；
+- 完整阅读：[reports/operations/ignition-143-step17-current-state-sync.md](../../reports/operations/ignition-143-step17-current-state-sync.md)
+
+<a id="reading-hr-ecb9a4b8ee1483ca"></a>
+## IGNITION-172 Step07 — Knowledge Experience routing index
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This logical step is based on exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step07 — Knowledge Experience routing index；This logical step is based on exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR #218.；The compact index is a generated, canonical-ID keyed facet projection of the already completed function and nonfunction routing overlays.；Coverage: 6158 function records + 18003 nonfunction records = 24161 routing records.；Facets: UNESCO field/discipline when justified, asset role, collision use, topic and classification state. Empty or unresolved facets are retained rather than guessed.；Operation binding: knowledge.collideobject remains CURRENTBOUNDED + READONLYRUN; the router has no repository, registry or network write permission.
+- 完整阅读：[reports/operations/ignition-172-20260915-step07-routing-index.md](../../reports/operations/ignition-172-20260915-step07-routing-index.md)
+
+<a id="reading-hr-ecc4e92db835c50c"></a>
+## REOS vNext LIGHT pilot R1 — public-safe synthesis
+`HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: OWNERACCEPTEDBOUNDEDREOSLIGHTCAPABILITYWITHEXPLICITRESIDUALS Architecture disposition: KEEPLIGHTONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：REOS vNext LIGHT pilot R1 — public-safe synthesis；Status: OWNERACCEPTEDBOUNDEDREOSLIGHTCAPABILITYWITHEXPLICITRESIDUALS Architecture disposition: KEEPLIGHTONLY；This is a public-safe method and process result. It does not publish private relay paths, reviewer/session identifiers, local worktree paths, raw private receipts or private environment details.；主题：Question and frozen boundary；In adults self-studying a fixed set of unfamiliar factual items, with total learning time and retrieval count held equal, does spaced retrieval versus one massed session increase mean proportion correct on a seven-day delayed test?；The frozen boundary was:
+- 完整阅读：[reports/research/reos-vnext-light-pilot-r1.md](../../reports/research/reos-vnext-light-pilot-r1.md)
+
+<a id="reading-hr-ed60006ec664c67a"></a>
+## IGNITION-20260826-140 Step 13 — Adversarial / negative matrix
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The required fail-closed matrix completed with 20 cases, 17 negative and 3 positive, all PASS. It started 0 live processes. The matrix exercises the architecture-impact correction, typed probe/transport/process scope, durable capture and completion gates, reconciliation unknown ceiling, executor-… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260826-140 Step 13 — Adversarial / negative matrix；The required fail-closed matrix completed with 20 cases, 17 negative and 3 positive, all PASS. It started 0 live processes. The matrix exercises the architecture-impact correction, typed probe/transport/process scope, durable capture and completion gates, reconciliation unknown ceiling, executor-kind admission, one-attempt-per-family retry policy, Task125 hi…；The negative cases reject probe return 0 masquerading as a live process return, completion without a live dispatch, terminal unknown upgraded to success, open-reconciliation retry, exit 0 without a result or validator, wrong result/validator binding, workspace mutation, incomplete capture, raw private ledger output, gh promoted to an Agent, reasoner runtime…；Machine evidence: step13-adversarial-matrix.json.；The matrix is synthetic and repository-local. It did not start a live process, does not establish a validated completion, and does not infer external truth, production readiness, Owner acceptance or epistemic acceptance.
+- 完整阅读：[reports/operations/ignition-140-step13-adversarial-matrix.md](../../reports/operations/ignition-140-step13-adversarial-matrix.md)
+
+<a id="reading-hr-edd02874217c8efb"></a>
+## CASE02 ambiguity proof — R1
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：FACTS and both byte-identical atom blocks record mixed regional markers, an older origin snapshot, available controls, and no executed cache operation. LINKLESS retains R01 and R03–R05; these describe the rollout interval, available probe fields, coverage, and execution status without assigning a… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：CASE02 ambiguity proof — R1；主题：Evidence before the cut relation；FACTS and both byte-identical atom blocks record mixed regional markers, an older origin snapshot, available controls, and no executed cache operation. LINKLESS retains R01 and R03–R05; these describe the rollout interval, available probe fields, coverage, and execution status without assigning an operation to the mixed boundary.；主题：Two materially different licensed actions；Propose a purge now to refresh the selected edge-cache key.；Wait and record all regional markers before operating on the cache.
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-ambiguity-proof.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE02-ambiguity-proof.md)
+
+<a id="reading-hr-eddeace6c7d52420"></a>
+## Supplemental record CASE06
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Source type: local event-status recorder. Synthetic. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Supplemental record CASE06；Source type: local event-status recorder. Synthetic.；Purpose: record a selected station's result and preserve any unresolved status.；[S01] Record the event ID and attendee identifier presented.；[S02] Record the station selected by the authorized operator.；[S03] Save the returned token status or roster evidence source with its timestamp.
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE06.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/SKILL_ONLY/CASE06.md)
+
+<a id="reading-hr-ef6e1d0860ae3fef"></a>
+## 事实 Pending 总表（外部治理记录）
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONALACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：事实 Pending 总表（外部治理记录）；任务：IGNITION-20260709-043；依据：《生命共同体价值宪章》（docs/governance/life-community-value-charter.md）；本表整理 12 个元协议的事实缺口。这些缺口是“事实验证待补”，不是价值冲突，也不否定已经完成的规范性判断（全部为 CONDITIONALACCEPTANCE）。规范性审核阶段到此整体结束；后续进入项目使用与事实验证，不再逐协议重复审核。；主题：V2（黄色协议）— 全成本效率度量待验证；全成本效率的边界：效率提升在何种范围、何种尺度上才算“净正”，需明确边界。
+- 完整阅读：[docs/governance/meta-protocol-reviews/factual-pending-register.md](../../docs/governance/meta-protocol-reviews/factual-pending-register.md)
+
+<a id="reading-hr-efc7da19421cfcea"></a>
+## Control-equivalence note — CASE03 R1
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Control-equivalence note — CASE03 R1；The R0 note was superseded because its atoms disclosed dispositions and retained relations bypassed the intended cut.；METHOD and LINKLESS atom-block bytes are identical.；METHOD relations: R01, R02, R03, R04, R05.；LINKLESS retained relations: R01, R03, R04, R05.；The removed decisive relation is R02 with signature A04 --FAILURETODIAGNOSTIC--> A01. It maps the ambiguous acknowledgement state to status lookup first and the terminal retry boundary.
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-control-equivalence-note.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/control-equivalence/CASE03-control-equivalence-note.md)
+
+<a id="reading-hr-f03c0e16cbb5b9f8"></a>
+## IGNITION-20260907-160 progress
+`CANDIDATE_OR_PENDING_SOURCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260907-160 progress；Status: OPENDRAFTRESEARCHCOMPLETEPENDINGREMOTECIANDINDEPENDENT1111RECEIPT.；Task160 remains research-only; exact-head and lifecycle ceilings are preserved.
+- 完整阅读：[agent-results/IGNITION-20260907-160-progress.md](../../agent-results/IGNITION-20260907-160-progress.md)
+
+<a id="reading-hr-f03c23c4c688f1d5"></a>
+## Future Successor Conversation — partial-lineage replicate A
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Future Successor Conversation — partial-lineage replicate A；This is a future local-only conversation packet. It is not an authorization to run now, commit, push, evaluate, or promote.；Read only the files in this packet's readallowlist. Process the three cases in this pre-frozen order:；For each case, describe facts and the supplied partial lineage excerpt. Keep selection/use links absent when they are absent in the excerpt. A candidate and an outcome do not establish a causal link. Do not complete missing links from plausibility, wording, or the case values; retain uncertainty and state what additional evidence would be needed.；Return exactly one JSON object per case in successor-response.jsonl, using the existing R0.1 successor output record schema named by the packet. Keep the caseid and facts-source SHA exact. Do not add scores, expected labels, or a verdict.
+- 完整阅读：[reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/task-prompt.md](../../reports/evaluations/ignition-198-replicated-method-use-trial-r0/packets/broken-a/task-prompt.md)
+
+<a id="reading-hr-f11243baaca53de8"></a>
+## CASE06 — Cohort-specific event routing
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：All attendees, systems, and cohort records are synthetic. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：CASE06 — Cohort-specific event routing；All attendees, systems, and cohort records are synthetic.；[F01] The event roster contains exact identifier matches, aliases, and walk-in entries. [F02] Some entries have a valid event token; several others have a mismatch flag whose cause is not recorded. [F03] Station Q accepts an entry identifier and optional event token and returns status fields. [F04] Station D accepts an entry identifier and optional event tok…
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/facts.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE06/facts.md)
+
+<a id="reading-hr-f1199313764281b0"></a>
+## Neutral fresh transfer prompt
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Apply only the method materials provided in this single task bundle to visible cases A, B, and C. Return one JSON response conforming to response-schema.json. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Neutral fresh transfer prompt；Apply only the method materials provided in this single task bundle to visible cases A, B, and C. Return one JSON response conforming to response-schema.json.；For every case, identify the operational action(s), include any required numeric estimate, state which original baseline action remains in force, and state fallback/stop behavior. Distinguish observation from inference. Do not assume missing measurements or hidden outcomes. Do not include source filenames, source locator tokens, artifact IDs, condition/bundl…
+- 完整阅读：[reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/prompt.md](../../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/prompt.md)
+
 <a id="reading-hr-f25c6ad93d4e6b1c"></a>
 ## IGNITION-140 Step 07 — Canonical Reconciliation Events
 `HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
