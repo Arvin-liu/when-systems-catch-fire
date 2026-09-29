@@ -28,7 +28,7 @@ It does not rerun transfer, revision generation, the full chain, R1, cross-model
 - Compiler rebuild: byte-identical; source, mapping, compiler, and candidate hashes are recorded. No target access or experiment run.
 - Audit round 1: raw disagreement preserved. Auditor A passed all six; Auditor B identified nested report evidence not included in the parent action evidence for F02_A and F02_B.
 - Audit round 2: both independent auditors passed all six candidates across the 15 machine predicates and nine semantic dimensions. The first-round sheets remain unchanged as history; no third auditor or audit reconciliation was used.
-- Phase 07: Draft PR #238 is OPEN + DRAFT + UNMERGED against the exact Task227 head branch. The report commit will advance the PR head; the terminal relay receipt records the final head SHA and applicable exact-head CI conclusions.
+- Phase 07: Draft PR #238 is OPEN + DRAFT + UNMERGED against the exact Task227 head branch. A publication-metadata update follows PR creation; the terminal relay receipt records the final head SHA and applicable exact-head CI conclusions.
 
 ## Claim ceiling
 
