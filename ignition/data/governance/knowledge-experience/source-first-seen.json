@@ -488,6 +488,14 @@
     "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/instrument-authoring-guide.md": "2026-09-29",
     "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/reviewer-rubric.md": "2026-09-29",
     "reports/evaluations/ignition-228-policy-contract-reconciliation-r0/runtime-report.md": "2026-09-29",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/README.md": "2026-09-30",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/claim-ceiling.md": "2026-09-30",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/evaluator-rubric.md": "2026-09-30",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/missingness-retry-rules.md": "2026-09-30",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/protocol.md": "2026-09-30",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/sanitization-procedure.md": "2026-09-30",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/session-prompt-template.md": "2026-09-30",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/target-opening-gate.md": "2026-09-30",
     "reports/external-research/104-dual-088-reconciliation.md": "2026-07-13",
     "reports/external-research/104-gap-patch-evidence-readiness.md": "2026-07-13",
     "reports/external-research/104-source-quality-audit.md": "2026-07-13",
@@ -824,7 +832,7 @@
     "新故事/0001-S1-比刀剑更持久的，是共享观念.md": "2026-07-06",
     "新故事/INDEX.md": "2026-07-06"
   },
-  "entry_count": 822,
+  "entry_count": 830,
   "history_requirement": "FULL",
   "schema_version": "1.0.0"
 }
