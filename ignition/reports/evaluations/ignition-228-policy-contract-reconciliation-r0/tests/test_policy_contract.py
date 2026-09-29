@@ -45,6 +45,12 @@ def mutate(policy: dict, operation: str) -> dict:
         result["scope_ceiling"]["licensed_claims"][0]["region_refs"] = [result["applicability"]["out_of_scope"][0]["region_id"]]
     elif operation == "remove_provenance_link":
         result["provenance"]["links"].pop(0)
+    elif operation == "nested_report_evidence_escape":
+        action = result["action_table"][0]
+        escaped_ref = action["required_report_fields"][0]["evidence_refs"][-1]
+        action["evidence_refs"].remove(escaped_ref)
+        link = next(row for row in result["provenance"]["links"] if row["element_type"] == "action" and row["element_id"] == action["action_id"])
+        link["evidence_refs"].remove(escaped_ref)
     elif operation == "second_empty_complement":
         original = result["applicability"]["out_of_scope"][0]
         result["applicability"]["out_of_scope"].append({**original, "region_id": original["region_id"] + "_SECOND"})

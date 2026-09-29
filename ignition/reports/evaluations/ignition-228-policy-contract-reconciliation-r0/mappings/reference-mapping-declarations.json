@@ -106,7 +106,7 @@
       "rule_evidence": ["F02_E1_ORGANIC", "F02_E1_LIMITS"],
       "action_id": "F02A_GRAVIMETRIC_REVIEW", "action_category": "ROUTE_FOR_REVIEW", "action_name": "ROUTE_OBSERVED_COMPOSITION_PATTERN_FOR_INDEPENDENT_GRAVIMETRIC_REVIEW",
       "parameters": [{"name": "composition_pattern", "binding": "input_ref", "input_id": "F02A_COMPOSITION_PATTERN", "value_type": "string", "unit": null, "evidence_refs": ["F02_E1_ORGANIC", "F02_E1_LIMITS"]}],
-      "action_evidence": ["F02_E1_ORGANIC", "F02_E1_LIMITS"],
+      "action_evidence": ["F02_E1_ORGANIC", "F02_E1_LIMITS", "F02_E1_QC"],
       "report_fields": [{"field_id": "F02A_COMPOSITION_AND_MASS", "description": "Record composition assay, turbidity duplicates, M0 estimate, and independent gravimetric result.", "unit": "mg/L", "evidence_refs": ["F02_E1_ORGANIC", "F02_E1_QC"]}],
       "stop_evidence": ["F02_M0_PROCEDURE"], "fallback_evidence": ["F02_M0_PROCEDURE", "F02_E1_LIMITS"], "out_of_scope_evidence": ["F02_E1_LIMITS"],
       "licensed_claim": "Routes only the researcher-coded organic-floc observation category represented by the named E1 cases for independent gravimetric review; it adds no composition cutoff or formula.",
@@ -139,7 +139,7 @@
         {"name": "composition_reproducible", "binding": "input_ref", "input_id": "F02B_COMPOSITION_REPRODUCIBLE", "value_type": "boolean", "unit": null, "evidence_refs": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS"]},
         {"name": "gravimetric_replicates_agree", "binding": "input_ref", "input_id": "F02B_GRAVIMETRIC_REPLICATES_AGREE", "value_type": "boolean", "unit": null, "evidence_refs": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS"]}
       ],
-      "action_evidence": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS"],
+      "action_evidence": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS", "F02_E1_QC"],
       "report_fields": [{"field_id": "F02B_ALIQUOT_RECONCILIATION", "description": "Record each aliquot composition result, turbidity duplicate, and gravimetric replicate separately.", "unit": null, "evidence_refs": ["F02_E1_UNREPRODUCIBLE", "F02_E1_QC"]}],
       "stop_evidence": ["F02_M0_PROCEDURE"], "fallback_evidence": ["F02_M0_PROCEDURE", "F02_E1_LIMITS"], "out_of_scope_evidence": ["F02_E1_LIMITS"],
       "licensed_claim": "Routes only the non-reproducible composition plus non-agreeing gravimetric replicate pattern represented by OBS-08 for reconciliation; it supplies no point estimate.",

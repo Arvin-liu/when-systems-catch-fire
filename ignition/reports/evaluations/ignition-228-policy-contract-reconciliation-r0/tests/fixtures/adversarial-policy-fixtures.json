@@ -8,6 +8,7 @@
   {"fixture_id": "input-reference-unit-mismatch", "policy_id": "POLICY_F02_B", "mutation": "parameter_unit_mismatch", "expected_rule_id": "TYPED_PARAMETER_BINDING"},
   {"fixture_id": "licensed-claim-outside-region", "policy_id": "POLICY_F03_B", "mutation": "claim_outside_region", "expected_rule_id": "SCOPE_REGION_LICENSING"},
   {"fixture_id": "provenance-omits-input", "policy_id": "POLICY_F03_A", "mutation": "remove_provenance_link", "expected_rule_id": "PROVENANCE_COVERAGE"},
+  {"fixture_id": "nested-report-evidence-escapes-parent-action", "policy_id": "POLICY_F02_A", "mutation": "nested_report_evidence_escape", "expected_rule_id": "PROVENANCE_COVERAGE"},
   {"fixture_id": "two-empty-outside-complements", "policy_id": "POLICY_F01_B", "mutation": "second_empty_complement", "expected_rule_id": "OUT_OF_SCOPE_COMPLEMENT"},
   {"fixture_id": "fallback-not-universal", "policy_id": "POLICY_F03_A", "mutation": "fallback_condition", "expected_rule_id": "SCHEMA_VALIDITY"}
 ]

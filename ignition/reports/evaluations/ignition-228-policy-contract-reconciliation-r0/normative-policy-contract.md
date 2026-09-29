@@ -24,7 +24,7 @@ Every evidence ID is unique within a policy and must be referenced by at least o
 
 ## Canonical policy shape and provenance coverage
 
-Every Task228 policy declares `contract_version: "task228-policy-contract-r1"`, a unique policy ID, one of the three frozen family IDs, and its researcher-authored `mapping_id`. Evidence, inputs, rules, actions, regions, preservation rows, stop rows, fallback, scope claims, and provenance are explicit objects. Semantic rows carry nonempty direct evidence-reference lists. The typed provenance index has exactly one link for each of these object kinds: `required_input`, `selector_rule`, `action`, `licensed_region`, `out_of_scope`, `preserved_rule`, `fallback`, `stop_condition`, `licensed_claim`, and `not_established_claim`. Nested report fields and parameters are covered by their parent action's direct evidence references; they are not separate provenance element types. The declaration hash and compiler identity are recorded at the provenance root.
+Every Task228 policy declares `contract_version: "task228-policy-contract-r1"`, a unique policy ID, one of the three frozen family IDs, and its researcher-authored `mapping_id`. Evidence, inputs, rules, actions, regions, preservation rows, stop rows, fallback, scope claims, and provenance are explicit objects. Semantic rows carry nonempty direct evidence-reference lists. The typed provenance index has exactly one link for each of these object kinds: `required_input`, `selector_rule`, `action`, `licensed_region`, `out_of_scope`, `preserved_rule`, `fallback`, `stop_condition`, `licensed_claim`, and `not_established_claim`. Nested report fields and parameters are covered by their parent action's direct evidence references; their evidence-reference sets must be subsets of the parent's direct set. They are not separate provenance element types. The declaration hash and compiler identity are recorded at the provenance root.
 
 ## Selector inputs, conditions, and actions
 
@@ -85,7 +85,7 @@ Licensed claims may reference only licensed region IDs. `not_established` claims
 | `FALLBACK_UNIVERSALITY` | The fallback condition list is empty and safe fields are present. |
 | `STOP_CONDITION_STRUCTURE` | Stop rows are unique, typed, nonempty, and have explicit outcomes/instructions. |
 | `SCOPE_REGION_LICENSING` | Licensed and not-established region references obey the ceiling. |
-| `PROVENANCE_COVERAGE` | Typed provenance covers every listed element exactly once and matches its direct evidence refs; nested reports and parameters use their parent action's evidence. |
+| `PROVENANCE_COVERAGE` | Typed provenance covers every listed element exactly once and matches its direct evidence refs; every nested report/parameter evidence ref is included in its parent action's direct set. |
 
 The machine gate does not decide whether an observation scientifically supports a derived policy meaning; that interpretive support is explicitly reviewed by humans under the same contract.
 

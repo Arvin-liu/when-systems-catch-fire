@@ -22,7 +22,7 @@ The reviewer records the validator output for each exact rule ID below. Every ca
 | `FALLBACK_UNIVERSALITY` | Is fallback unconditional and does it define a safe outcome, instruction, and required reporting? |
 | `STOP_CONDITION_STRUCTURE` | Does each stop have nonempty typed conditions and an explicit safe outcome and instruction? |
 | `SCOPE_REGION_LICENSING` | Are licensed claims limited to licensed regions and not-established claims limited to known regions? |
-| `PROVENANCE_COVERAGE` | Is there exactly one provenance link for every contract-listed typed element, with identical direct evidence references? |
+| `PROVENANCE_COVERAGE` | Is there exactly one provenance link for every contract-listed typed element, with identical direct evidence references, and are nested report/parameter refs included by their parent action? |
 
 ## Independent semantic review
 

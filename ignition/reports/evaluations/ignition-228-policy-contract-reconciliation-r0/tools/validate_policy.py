@@ -300,8 +300,6 @@ def validate_policy(
         names = [param["name"] for param in params]
         if len(names) != len(set(names)):
             add("UNIQUE_IDENTIFIERS", f"/action_table/{ai}/action/parameters", "parameter names must be unique within an action")
-        if params and action["action"]["category"] in {"KEEP_BASELINE", "UNSCORABLE"}:
-            pass
         if not params and action["action"]["category"] not in {"KEEP_BASELINE", "UNSCORABLE"}:
             add("TYPED_PARAMETER_BINDING", f"/action_table/{ai}/action/parameters", "empty parameters are allowed only for KEEP_BASELINE or UNSCORABLE")
         for pi, parameter in enumerate(params):
@@ -318,6 +316,22 @@ def validate_policy(
                         add("TYPED_PARAMETER_BINDING", ppath, "input_ref type and unit must exactly match its required input")
                     if not set(inp["source_refs"]).issubset(set(parameter["evidence_refs"])):
                         add("TYPED_PARAMETER_BINDING", ppath + "/evidence_refs", "input_ref evidence must include all referenced input source_refs")
+        nested_evidence = {
+            ref
+            for item in action["required_report_fields"]
+            for ref in item["evidence_refs"]
+        }
+        nested_evidence.update(
+            ref
+            for parameter in params
+            for ref in parameter["evidence_refs"]
+        )
+        if not nested_evidence.issubset(set(action["evidence_refs"])):
+            add(
+                "PROVENANCE_COVERAGE",
+                f"/action_table/{ai}/evidence_refs",
+                "action evidence_refs must cover every nested parameter and required report-field evidence reference",
+            )
 
     if policy["fallback"]["when"]:
         add("FALLBACK_UNIVERSALITY", "/fallback/when", "fallback must have empty conditions to cover all unresolved and excluded inputs")

@@ -379,7 +379,7 @@
     "statement": "This is a bounded reference-instrument candidate from one family’s M0 and E1 only. It is not a transfer, revision-generation, causal-effect, general-inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit result."
   },
   "provenance": {
-    "declaration_sha256": "048be8a900789d62dc4bb2fb04fddfcc9b124e3ed3d1e659ff62c95e3446dfa4",
+    "declaration_sha256": "b22382fdf9c21bd4c7fbdb4df0fbedc92b1f6ba86b81a3aa7b5a10f495a461cb",
     "compiler": "task228-reference-instrument-compiler-r1",
     "links": [
       {
