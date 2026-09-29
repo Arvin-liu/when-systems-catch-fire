@@ -1,0 +1,105 @@
+{
+  "external_anchors": {
+    "task225_freeze_manifest": {
+      "expected_sha256": "f6201ea25d3614af34ef05d36cc8f620a8c149902fcef8937d259445b0b302a8",
+      "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/freeze-manifest.json",
+      "sha256": "f6201ea25d3614af34ef05d36cc8f620a8c149902fcef8937d259445b0b302a8"
+    },
+    "task227_freeze_manifest": {
+      "expected_sha256": "91a33c38f209b88644ef473c21a133463bf7839d1bd5afc9c1507b88d128b7ec",
+      "path": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/freeze/freeze-manifest.json",
+      "sha256": "91a33c38f209b88644ef473c21a133463bf7839d1bd5afc9c1507b88d128b7ec"
+    },
+    "task228_build_manifest": {
+      "expected_sha256": "dc679675af1401a3b4c7c816bcded9e7485dbf49f109d3e08f757011f21eb484",
+      "path": "ignition/reports/evaluations/ignition-228-policy-contract-reconciliation-r0/build/candidate-build-manifest.json",
+      "sha256": "dc679675af1401a3b4c7c816bcded9e7485dbf49f109d3e08f757011f21eb484"
+    },
+    "task228_manifest": {
+      "expected_sha256": "864c4b91dc12b7f3166d1f0101b8e4dc300551fd4e83f28bb9e1be96a0312538",
+      "path": "ignition/reports/evaluations/ignition-228-policy-contract-reconciliation-r0/SHA256SUMS",
+      "sha256": "864c4b91dc12b7f3166d1f0101b8e4dc300551fd4e83f28bb9e1be96a0312538"
+    }
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "8eb339469c63be9c1d0d1e4ea86e1b9da8ac4ac1c5d77fa36113e2f6272e9f99"
+    },
+    {
+      "path": "analysis-input-schema.json",
+      "sha256": "00b0adf8709036625603e508d9ead155b70629c641055d1535481a3b0a2419f4"
+    },
+    {
+      "path": "blind-evaluation-schema.json",
+      "sha256": "3c6e27ce7b8393314c7b5c76e7a9611d023ddce3ecce69ac626f4b071e019cd4"
+    },
+    {
+      "path": "blind-key-schema.json",
+      "sha256": "908f5fc868f2a9bf3efc65901ffa1b88b1c3931cf741567cd545213819fdb5c4"
+    },
+    {
+      "path": "claim-ceiling.md",
+      "sha256": "154aa909b8cdaa4f4ce87663f08be85da0fc1d76b9b92854416ef9a5527126a6"
+    },
+    {
+      "path": "condition-manifest.json",
+      "sha256": "4c13f7a6cfa804da0541bd98ef67f2ab56714a062ef42b05aaf2b10883f50f8f"
+    },
+    {
+      "path": "evaluator-rubric.md",
+      "sha256": "a5162f3891d8a3bb71e58006860a67bc292987ec7071d2aff2a1efc63436f8e0"
+    },
+    {
+      "path": "missingness-retry-rules.md",
+      "sha256": "f958cd5b3044fb9ecb64f692c569f7d1bf78d1c54ae2f8cbb66b4c5fc8ec89f4"
+    },
+    {
+      "path": "outcome-rule.json",
+      "sha256": "b331885d27f80ed98bf059743e2cfe337fda79ff753fc7515587ea79bffe85aa"
+    },
+    {
+      "path": "protocol.md",
+      "sha256": "b611cd1ed29131faeeb11fa23d046ba5c1bed8acee22f1930085d3b24b211f63"
+    },
+    {
+      "path": "response-schema.json",
+      "sha256": "d0a2de5555d5c176d83acba66494afbf5637dc10aba917a981d3572469a74aa8"
+    },
+    {
+      "path": "sanitization-procedure.md",
+      "sha256": "7787c29638fb97787a034ad3f3ec3ed92ba83e55168e3d31685a962e1f96688a"
+    },
+    {
+      "path": "session-order.json",
+      "sha256": "ced9e939fc75944a7c388647d0d8dfef82caddca608a30d6b076202bc25d4e70"
+    },
+    {
+      "path": "session-prompt-template.md",
+      "sha256": "c2cfb7704fb7ba24682c3553b3f316ab4869641b6e4f674d708ee27d0742302a"
+    },
+    {
+      "path": "target-opening-gate.md",
+      "sha256": "4c8ab397c90d0326e58345425e9d06b17ecbc0ed533bc591b80b97df9b62d1bf"
+    },
+    {
+      "path": "tools/freeze_manifest.py",
+      "sha256": "d3aea186cbda2d6ed3bb20408cd3f46e8a76c88493a8207724b546e5b1f2e47c"
+    },
+    {
+      "path": "tools/recompute.py",
+      "sha256": "2a81a493b2d40cde023b4017a72c3aa7dfe45dee96fc06e223639fb082902b54"
+    },
+    {
+      "path": "tools/target_opening_gate.py",
+      "sha256": "c32e22fc3030feabdc5a99bc97230e73a3fcb493e4cd31a7789a69a41a05b3a4"
+    },
+    {
+      "path": "tools/validate_preregistration.py",
+      "sha256": "b265df6030bf86d850c99002e72ec18e62f278d80d50192dba8f58ca95527f65"
+    }
+  ],
+  "required_parent_sha": "d82a52077df6d4e96e998ace3757f2fb343b4db5",
+  "task_branch": "work/IGNITION-20260929-229-transfer-interface-clean-r0",
+  "version": "task229-preregistration-freeze-r0"
+}

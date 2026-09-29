@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task229-blind-evaluation-r0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "rows"],
+  "properties": {
+    "schema_version": {"const": "task229-blind-evaluation-r0"},
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["response_id", "case_id", "success", "criterion_reference"],
+        "properties": {
+          "response_id": {"type": "string", "minLength": 1},
+          "case_id": {"enum": ["A", "B", "C"]},
+          "success": {"type": "boolean"},
+          "criterion_reference": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

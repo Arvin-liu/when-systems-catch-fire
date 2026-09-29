@@ -1,0 +1,42 @@
+{
+  "version": "TASK229_TRANSFER_ONLY_R0",
+  "denominator": 6,
+  "conditions": ["M0_ONLY", "M0_PLUS_E1", "REFERENCE_M1"],
+  "descriptive_only": ["M0_PLUS_E1"],
+  "layers": {
+    "interface_execution": {
+      "lineage_success": "semantic response exists AND common envelope parses AND all three case route traces name the supplied policy AND route/rule/action IDs are mechanically consistent with that policy and supplied inputs AND no impossible or dangling identifier appears",
+      "working": ">=5/6",
+      "partial": "3-4/6",
+      "not_established": "<=2/6"
+    },
+    "reference_target_compatibility": {
+      "evaluator_independence": true,
+      "working": "Both evaluators independently score A>=5/6 AND B>=5/6 AND C>=5/6 on REFERENCE_M1",
+      "partial": "Not working, and both evaluators independently score A>=3/6 AND at least two of A/B/C>=3/6 on REFERENCE_M1",
+      "not_established": "Otherwise",
+      "do_not_average_evaluators": true
+    },
+    "incremental_policy_effect": {
+      "control_observed": "A lineage M0_ONLY control is observed only when its semantic response exists and its common response envelope parses with exactly A, B, and C",
+      "control_gate": {"6/6": "full endpoint interpretable", "5/6": "only INCREMENTAL_POLICY_EFFECT_PARTIAL_OBSERVABILITY", "0-4/6": "INCREMENTAL_POLICY_EFFECT_NOT_ESTABLISHED_CONTROL_FAILURE"},
+      "chain_per_lineage_evaluator": "REFERENCE_M1_A AND NOT M0_ONLY_A AND REFERENCE_M1_B AND REFERENCE_M1_C",
+      "supported": "For both evaluators independently: controls observed 6/6 AND M0_ONLY_A<=1/6 AND CHAIN>=5/6",
+      "when_6_of_6_observed_but_support_thresholds_fail": "Return no incremental-effect conclusion marker; retain raw counts and record that the preregistered support threshold was not met. Do not infer causality.",
+      "M0_PLUS_E1": "descriptive only; excluded from primary thresholds"
+    }
+  },
+  "missing_evaluator_rows": "false for the affected evaluator and target; preserve raw row",
+  "missing_or_invalid_successor_output": "false raw endpoint; retain in denominator",
+  "allowed_result_markers": [
+    "INTERFACE_EXECUTION_WORKING",
+    "INTERFACE_EXECUTION_PARTIAL",
+    "INTERFACE_EXECUTION_NOT_ESTABLISHED",
+    "REFERENCE_TARGET_COMPATIBILITY_WORKING",
+    "REFERENCE_TARGET_COMPATIBILITY_PARTIAL",
+    "REFERENCE_TARGET_COMPATIBILITY_NOT_ESTABLISHED",
+    "INCREMENTAL_POLICY_EFFECT_SUPPORTED",
+    "INCREMENTAL_POLICY_EFFECT_PARTIAL_OBSERVABILITY",
+    "INCREMENTAL_POLICY_EFFECT_NOT_ESTABLISHED_CONTROL_FAILURE"
+  ]
+}
