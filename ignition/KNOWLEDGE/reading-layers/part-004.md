@@ -4,6 +4,34 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-351a57523bc6a9fe"></a>
+## Task220 disagreement register
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
+- 1 分钟：The five read-only proposals in multi-agent-proposals/A.md through E.md were returned independently before family synthesis. No proposal author inspected or edited shared repository state, launched an experiment, or saw another proposal before returning its own. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task220 disagreement register；The five read-only proposals in multi-agent-proposals/A.md through E.md were returned independently before family synthesis. No proposal author inspected or edited shared repository state, launched an experiment, or saw another proposal before returning its own.；This register freezes protocol choices only. It does not create a target response, score an output, select a runtime, or authorize Task221.
+- 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/design/disagreement-register.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/design/disagreement-register.md)
+
+<a id="reading-hr-3548680b422987dd"></a>
+## IGNITION-20260828-147 result
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`
+- 1 分钟：Task ID: IGNITION-20260828-147 Formal task ordinal: 147 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260828-147 result；Task ID: IGNITION-20260828-147 Formal task ordinal: 147；Task147 completes the bounded repository-local README project-identity and architecture-navigation repair. The formal task is terminal as COMPLETEDWITHOPENOBLIGATIONS: the exact Owner-supplied ### 项目现状 paragraph is present without work-status additions; ## 1. 项目与价值 contains only the two direct human blocks ### 项目现状 and ### 价值宪章; and the architecture section…；The raw/transparent SVG secondary entry and href/link-metadata/registry/topology/layout or rendered-hotspot machine explanations are absent from the README. The component navigation contains 22 links whose targets were checked against the current architecture registry, map specification and canonical documentation; the map itself was not changed.；The homepage remains humanstaticsummary / nogeneratedsnapshot. Current Snapshot, task lineage, live and architecture counts, detailed engineering explanations and machine state remain in the linked Current surfaces. Rebuilding Current projections does not rewrite or re-inject the README identity or component menu.；Affected Human Front Door, Human Surface, Current projection, compiler, Current state, ordinal, map-freeze and related unit-test gates passed naturally: 42 tests, 0 failures, 0 errors and 0 skips. The authorized narrow task does not require the long full suite.
+- 完整阅读：[agent-results/IGNITION-20260828-147-result.md](../../agent-results/IGNITION-20260828-147-result.md)
+
+<a id="reading-hr-3611a9bf0615b4e7"></a>
+## Foundation documentation
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Foundation documentation；076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。；函数、模型、定理、公式、律或判定器还必须读取：；旧表是不可变来源；data/foundation/function-assets/corrections.jsonl 是 task 98 首批纠偏权威覆盖。task 99 的 identity-cards.jsonl 为每个发现项提供现行处置；自动 census 仍只是候选，quarantine 也不因登记、编号或测试而获得真值。；task 100 的 data/foundation/nonfunction-claims/claim-registry.jsonl 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 quarantine，不表示证明、外部证据、原创性、同行评审或复现完成。
+- 完整阅读：[docs/foundation/README.md](../../docs/foundation/README.md)
+
+<a id="reading-hr-36457f71d1dd5632"></a>
+## Blind packet sanitization R0
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Sanitization runs after all raw session responses are frozen and before either evaluator receives any packet. The sanitizer must not read or use the condition-to-lineage map. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Blind packet sanitization R0；Sanitization runs after all raw session responses are frozen and before either evaluator receives any packet. The sanitizer must not read or use the condition-to-lineage map.；Create a distinct opaque response ID for each session-case pair. Keep the response-ID mapping only in the coordinator ledger.；Pair each response with only its matching frozen case bytes and the frozen scoring criteria.；Remove the complete routetrace object, since it is interface evidence and contains policy/rule/action/input identifiers. Remove any provenance, builder, tool, file-path, source-locator, artifact-ID, session-ID, policy-ID, lineage-ID, bundle-ID, and condition-name fields.；In remaining text fields, replace exact known identifiers and source-locator tokens with [REDACTED]. Do not rewrite, summarize, reorder, or normalize the primary action, additional actions, reported values, preserved baseline action IDs, fallback, scope, or rationale.
+- 完整阅读：[reports/evaluations/ignition-229-clean-transfer-interface-r0/sanitization-procedure.md](../../reports/evaluations/ignition-229-clean-transfer-interface-r0/sanitization-procedure.md)
+
 <a id="reading-hr-3697fef2b08e4800"></a>
 ## IGNITION-20260825-139 — Durable Live Attempt Journal & Observation Projection R1
 `HISTORICAL_COMPLETION_RECORD` · `COGNITION`
@@ -325,31 +353,3 @@
 - 1 分钟：Status: READYFORGPTVERIFICATIONCANDIDATEONLY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：121Q28S 之元写作法 0.3.0 全项目整合审计；Status: READYFORGPTVERIFICATIONCANDIDATEONLY；Claim ceiling: candidatezhiyuanwritingmethod030wholeprojectexpressionfeedbackprojectionimplemented / repositorysynchronizationcompletependingindependentreview；主题：Remote truth and append-only history；origin/main: b396c136b47d8fd60ca513a531cb96ce65293d20；existing branch / Draft PR: docs/121q28-embodied-cognitive-leap-writing-method-20260716 / #58
 - 完整阅读：[reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md](../../reports/operations/121Q28S-zhiyuan-writing-method-whole-project-integration-audit.md)
-
-<a id="reading-hr-44eb56d76a052dc0"></a>
-## IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：The exact pushed Task140 Step15 tip 64b0ac92d343af9f1ba66d91123bf4ca5a5bb62a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3370 tracked paths and was clean before and aft… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260826-140 Step 16 — Fresh task-branch clone and publication gate；主题：Fresh task-branch clone；The exact pushed Task140 Step15 tip 64b0ac92d343af9f1ba66d91123bf4ca5a5bb62a was cloned from the remote task branch into a fresh checkout. The clone had no copied virtual environment, cache, generated temporary state or untracked files; it contained 3370 tracked paths and was clean before and after validation.；The clone passed the independent 25-check deterministic projection preflight: failedchecks=[], releaseadmission=true, sideeffectdetected=false, and the clean-tree gate passed. Its natural isolated full regression then completed with 1227 tests, 0 failures, 0 errors and 0 skips in 3032.893s runtime / 3034.208s elapsed. Python 3.14.6, SymPy 1.14.0, z3-solver 4…；The fresh-clone full-suite capture remains external to the formal repository:；stdout SHA-256: 97fa565750566bd885c5cd275f5ba6b2260282299d4174ec0cbcef287f2890e4;
-- 完整阅读：[reports/operations/ignition-140-step16-fresh-clone-publication.md](../../reports/operations/ignition-140-step16-fresh-clone-publication.md)
-
-<a id="reading-hr-45480c716d721c81"></a>
-## 121Q25B Whole-Project Synchronization Contract
-`HISTORICAL_OR_SUPERSEDED_SOURCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: superseded non-ready method 1.1.0 Draft candidate on PR 57. Q25C preserves this history and repairs its lifecycle deadlock. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：121Q25B Whole-Project Synchronization Contract；Status: superseded non-ready method 1.1.0 Draft candidate on PR #57. Q25C preserves this history and repairs its lifecycle deadlock.；主题：Reproduced defect；The prior validator loaded only reports/operations/121Q24-completion-seal.json and passed that object while iterating every manifest. Seal checks ran only when task IDs matched, so Q25 could pass without any Q25 manifest/seal comparison. The generic validator now resolves each manifest's declared seal path, or infers -completion-seal.json for method 1.0.0 co…；data/operations/synchronization-surfaces.json is the canonical topology of synchronization obligations. It does not store substantive capability truth. Method 1.1.0 manifests declare transition subjects/dimensions, a registry-derived closure and separated completion states.；Repository-local validation reports implementation consistency and repository synchronization closure. It always reports live external truth as false. External Pages production verification remains a post-merge obligation.
-- 完整阅读：[reports/operations/121Q25B-whole-project-synchronization-contract.md](../../reports/operations/121Q25B-whole-project-synchronization-contract.md)
-
-<a id="reading-hr-4597e4725744281a"></a>
-## 新增注释 · P1 接入烟雾测试
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：新增注释 · P1 接入烟雾测试；救援仓库不作为主线：临时仓库（LIANGZHANGBIAO / Unified-）仅作 Codespace 救援缓存，主线始终在点火主仓库 when-systems-catch-fire。；差异审计优先：在合并任何来源前，先对来源与主仓库做差异审计，区分「重叠 / 独有增量 / 缺失」，避免盲目整体合并。；只回填增量：仅把差异审计确认的主线独有增量（本次为 MF-0001~0005 五个内部结构件）补回主线，不整体搬运临时仓库。；案例无增量不回灌：救援案例表经审计为正式表旧子集（578/806 重叠，0 增量），故不回灌案例表。；凭证保留：删除临时环境前，保留本机 Codespace-Rescue/ 与远端 rescue 分支作为可回查凭证。
-- 完整阅读：[outputs/collisions/20260708-smoke-test/notes.md](../../outputs/collisions/20260708-smoke-test/notes.md)
-
-<a id="reading-hr-460ef60e3cf27dca"></a>
-## 元协议规范性审核发布审计 — IGNITION-20260709-043
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：宪章 PR 9（docs/life-community-value-charter-20260711）尚未合并。本任务未基于旧 main 发布，也未重复创建第二份宪章文件，而是以宪章分支为基线建立堆叠分支，将 12 个协议的外部治理记录叠加其上。在 9 合并前，本 PR（10）的基线是宪章分支；宪章合并后，本 PR 应重新基于合并后的 main（或由审查者处理）。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：元协议规范性审核发布审计 — IGNITION-20260709-043；任务：12 元协议规范性审核外部治理记录入库与统一发布；基线分支：docs/life-community-value-charter-20260711（宪章 PR #9，尚未合并）；发布分支：docs/meta-protocol-normative-reviews-20260711；验证脚本：outputs/audit 由 PRIVATE_PROVENANCE_WITHHELD；主题：二、验证清单（23 项，全部通过）
-- 完整阅读：[outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md](../../outputs/audit/meta-protocol-normative-review-publication-audit-20260711.md)

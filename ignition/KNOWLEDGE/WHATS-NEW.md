@@ -4,6 +4,78 @@
 
 ## 2026
 
+<a id="change-src-hr-b7cab34097905a9b"></a>
+### 2026-09-30 · Target-opening gate R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** No Task225 A/B/C case or sealed target content may be opened before all conditions below are mechanically evidenced:
+- **来源：** [target-opening-gate.md](../reports/evaluations/ignition-229-clean-transfer-interface-r0/target-opening-gate.md)
+- **资产卡：** [HR-B7CAB34097905A9B](./ASSET-CARDS.md#asset-hr-b7cab34097905a9b)
+
+<a id="change-src-hr-9529d96918d275ad"></a>
+### 2026-09-30 · Missingness and retry rules R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** 原文件保存该项结果的完整问题、过程与边界。
+- **来源：** [missingness-retry-rules.md](../reports/evaluations/ignition-229-clean-transfer-interface-r0/missingness-retry-rules.md)
+- **资产卡：** [HR-9529D96918D275AD](./ASSET-CARDS.md#asset-hr-9529d96918d275ad)
+
+<a id="change-src-hr-56a47eb090ae671a"></a>
+### 2026-09-30 · Task229 preregistered protocol R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This is a transfer-only experiment with six frozen Task228 reference instruments. It does not run revision generation or the full chain.
+- **来源：** [protocol.md](../reports/evaluations/ignition-229-clean-transfer-interface-r0/protocol.md)
+- **资产卡：** [HR-56A47EB090AE671A](./ASSET-CARDS.md#asset-hr-56a47eb090ae671a)
+
+<a id="change-src-hr-50ac988bf4a51266"></a>
+### 2026-09-30 · IGNITION-20260929-229 — Clean Transfer Interface Test R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This subtree contains the frozen preregistration and deterministic analysis contract for the Task229 transfer-only experiment. It is created before any Task225 A/B/C case or sealed target content is opened.
+- **来源：** [README.md](../reports/evaluations/ignition-229-clean-transfer-interface-r0/README.md)
+- **资产卡：** [HR-50AC988BF4A51266](./ASSET-CARDS.md#asset-hr-50ac988bf4a51266)
+
+<a id="change-src-hr-36457f71d1dd5632"></a>
+### 2026-09-30 · Blind packet sanitization R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Sanitization runs after all raw session responses are frozen and before either evaluator receives any packet. The sanitizer must not read or use the condition-to-lineage map.
+- **来源：** [sanitization-procedure.md](../reports/evaluations/ignition-229-clean-transfer-interface-r0/sanitization-procedure.md)
+- **资产卡：** [HR-36457F71D1DD5632](./ASSET-CARDS.md#asset-hr-36457f71d1dd5632)
+
+<a id="change-src-hr-32060f38c1b1d7dc"></a>
+### 2026-09-30 · Blind evaluator rubric R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Score each response against the complete frozen Task225 R0.1 target criteria and the Task227 transfer scoring contract. The source bytes are fixed:
+- **来源：** [evaluator-rubric.md](../reports/evaluations/ignition-229-clean-transfer-interface-r0/evaluator-rubric.md)
+- **资产卡：** [HR-32060F38C1B1D7DC](./ASSET-CARDS.md#asset-hr-32060f38c1b1d7dc)
+
+<a id="change-src-hr-040c381a1ea90b6b"></a>
+### 2026-09-30 · Fixed visible prompt for each successor session
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** You are handling one fresh, isolated case-solving session. Use only the case files and method material included in this message. Do not use tools, browse, inspect a workspace, request other records, infer an unstated threshold, or refer to another session. Do not mention any study, condition, lin…
+- **来源：** [session-prompt-template.md](../reports/evaluations/ignition-229-clean-transfer-interface-r0/session-prompt-template.md)
+- **资产卡：** [HR-040C381A1EA90B6B](./ASSET-CARDS.md#asset-hr-040c381a1ea90b6b)
+
+<a id="change-src-hr-037a78ae8c7c5909"></a>
+### 2026-09-30 · Task229 claim ceiling R0
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The only supported claims are bounded fixed-lineage/fixed-target facts about:
+- **来源：** [claim-ceiling.md](../reports/evaluations/ignition-229-clean-transfer-interface-r0/claim-ceiling.md)
+- **资产卡：** [HR-037A78AE8C7C5909](./ASSET-CARDS.md#asset-hr-037a78ae8c7c5909)
+
 <a id="change-src-hr-ebcf23ec787cac52"></a>
 ### 2026-09-29 · Task228 target-blind instrument authoring guide R1
 
@@ -4446,7 +4518,7 @@
 - **类型：** `EVIDENCE_GATE_AND_ADJUDICATION`
 - **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
 - **变化：** 保留三个失败案例的原始分类作为历史基线，分离外部证据、可执行 target、形式化和复现；苹果历史材料仅支持有边界的 memoir provenance，当前没有可执行 target，因此不声称真实实现缺陷，并建立冻结 commit、精确输入输出、trace、oracle、首次失败和 regression guard 的 fail-closed 门禁。
-- **来源：** [README.md](../../.github/README.md) · [LATEST.md](../RESULTS/LATEST.md) · [OPEN-QUESTIONS.md](../RESULTS/OPEN-QUESTIONS.md) · [case-status.json](../data/operations/iterations/111/case-status.json) · [EVIDENCE_DOSSIER.md](../data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md) · [TARGET_AUDIT.md](../data/operations/iterations/111/TARGET_AUDIT.md) · [010-failure-case-evidence-gate-and-apple-case-adjudication.md](../docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md)
+- **来源：** [README.md](README.md) · [LATEST.md](../RESULTS/LATEST.md) · [OPEN-QUESTIONS.md](../RESULTS/OPEN-QUESTIONS.md) · [case-status.json](../data/operations/iterations/111/case-status.json) · [EVIDENCE_DOSSIER.md](../data/operations/iterations/111/historical/EVIDENCE_DOSSIER.md) · [TARGET_AUDIT.md](../data/operations/iterations/111/TARGET_AUDIT.md) · [010-failure-case-evidence-gate-and-apple-case-adjudication.md](../docs/editorial/articles/010-failure-case-evidence-gate-and-apple-case-adjudication.md)
 
 <a id="change-chg-110"></a>
 ### 2026-08-01 · 任务 110：已完成工作不再重复排队
@@ -4454,7 +4526,7 @@
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
 - **变化：** 保留任务 109 的 C-01 重复推荐缺陷并将 C-01/C-04 按权威完成证据移出 active queue；C-03 完成了独立 OpenAlex 书目元数据复制。117 条记录全部返回 HTTP 200，主分母 116 中 101 supported、8 partial、7 null、0 contradicted、0 invalid。
-- **来源：** [README.md](../../.github/README.md) · [RESULT.md](../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md) · [009-system-completion-state-and-independent-replication.md](../docs/editorial/articles/009-system-completion-state-and-independent-replication.md) · [task-110-portfolio-state.json](../evidence-program/registry/task-110-portfolio-state.json)
+- **来源：** [README.md](README.md) · [RESULT.md](../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/RESULT.md) · [009-system-completion-state-and-independent-replication.md](../docs/editorial/articles/009-system-completion-state-and-independent-replication.md) · [task-110-portfolio-state.json](../evidence-program/registry/task-110-portfolio-state.json)
 
 <a id="change-src-hr-f3d97a665e74558a"></a>
 ### 2026-08-01 · 迭代生命周期模型（事件溯源 · 任务 108 引入）
@@ -6837,7 +6909,7 @@
 - **类型：** `ITERATION_OR_REPOSITORY_RESULT`
 - **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
 - **变化：** 原文件保存该项结果的完整问题、过程与边界。
-- **来源：** [INDEX.md](../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- **来源：** [INDEX.md](../新故事/INDEX.md)
 - **资产卡：** [HR-AD59534793E1D1D7](./ASSET-CARDS.md#asset-hr-ad59534793e1d1d7)
 
 <a id="change-src-hr-a8550987d2a41dab"></a>

@@ -4,6 +4,55 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-a8a027e08f80e147"></a>
+## Task216 owner-adjudication input
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：The Task217 command declares these fixed inputs for this task: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task216 owner-adjudication input；主题：Command-provided scientific adjudication；The Task217 command declares these fixed inputs for this task:；PROMPTNEUTRALSKILLMETHODDISENTANGLEMENT = PARTIAL；PROMPTNEUTRALCONDITIONASSOCIATION = OBSERVED；METHODSPECIFICDECISIONADVANTAGE = NOTESTABLISHED
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/TASK216-OWNER-ADJUDICATION-INPUT.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/TASK216-OWNER-ADJUDICATION-INPUT.md)
+
+<a id="reading-hr-a904c867936c20d9"></a>
+## OS Control Plane R2 gap audit — IGNITION-20260817-124
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The existing Supervisor R0 was run with two dependency-ready children, ready-a and ready-b, whose write targets do not overlap. Both were accepted and the episode reached EPISODECOMPLETEDVALIDATED, but the trace was strictly ready-a → ready-b and the maximum observed concurrency was 1. The curren… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：OS Control Plane R2 gap audit — IGNITION-20260817-124；主题：Baseline identity；Formal repository: Arvin-liu/when-systems-catch-fire；Execution baseline: origin/main=266426d7110af9ee921a020a46c3a0347aa364e9；Control source: Arvin-liu/1111, origin/relay/current=c06c556cf6e98e8d4f0b004a8c15cd19a64b3cae；Task branch: codex/ignition-124-os-control-plane-r2-20260817
+- 完整阅读：[reports/architecture/os-control-plane-r2-gap-audit.md](../../reports/architecture/os-control-plane-r2-gap-audit.md)
+
+<a id="reading-hr-a91c29ce537b48ef"></a>
+## Fresh Component-B revision-generation prompt
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：You are a fresh independent policy designer. Use only the task's one family M0, raw E1, policy schema, and this prompt. Do not search or open other files, task directories, prior conversations, held-out cases, targets, earlier outputs, reference policies, or evaluation material. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Fresh Component-B revision-generation prompt；You are a fresh independent policy designer. Use only the task's one family M0, raw E1, policy schema, and this prompt. Do not search or open other files, task directories, prior conversations, held-out cases, targets, earlier outputs, reference policies, or evaluation material.；Produce one concise operational policy JSON conforming exactly to policy-schema.json. The policy must retain applicable M0 rules and add only bounded E1-supported behavior. Explicitly report selector inputs/rules, licensed and excluded applicability, actions and required report fields, preserved rules, fallback, stop conditions, scope ceiling, evidence locat…
+- 完整阅读：[reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/prompt.md](../../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/revision/prompt.md)
+
+<a id="reading-hr-a932eb17267d9709"></a>
+## 之元写作法
+`CURRENT_SCOPED_SOURCE` · `WRITING_PUBLICATION`
+- 1 分钟：English: Zhiyuan Writing Method 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：English: Zhiyuan Writing Method；Version: 0.5.0 current; 0.4.0 and 0.3.0 remain historical merged versions.；Status: CURRENTMERGEDL6CAPABILITY；Operational location: L6 interpretation / application / publication. Generative provenance: maintainer-declared shared cognitive provenance with 点火 as a whole. Version 0.5.0 makes the method a target-language publication consumer of the project-wide Language–Thought Logic Plane; it does not add L7 or raise any L0-L5 claim.；本方法以“之元”命名，因为它不是从通用写作教材拼接而来，而是从维护者之元的作品、心智运动、反馈和失败反例中蒸馏、提炼并总结出的个人写作方法。名称标记其真实来源和心智风格谱系。；“之元写作法”是方法名称；“心智层级跃迁”是其自 0.3.0 起的核心生成运动之一。方法具体如何实现，由起始承载点、前视写作、不可容纳残余、心智引力中心、概念递归重定义、突然跃迁、隐形连续性、回照增义、潜题生长与反向显影、低层保存、信息增益停止，以及公共表达与反馈返回点火的双向契约共同定义。
+- 完整阅读：[docs/publication/zhiyuan-writing-method.md](../../docs/publication/zhiyuan-writing-method.md)
+
+<a id="reading-hr-a9335c325605b8e4"></a>
+## IGNITION-172 Step08 — UNESCO/provider metadata pilot
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：This logical step follows Gate T, Gate R and the Gate C policy/provider lock. The frozen parent is 36a1ed4c0e5b91598b5a4fada4bec1539ccc106b on the existing Task172 branch and Draft PR 218. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-172 Step08 — UNESCO/provider metadata pilot；This logical step follows Gate T, Gate R and the Gate C policy/provider lock. The frozen parent is 36a1ed4c0e5b91598b5a4fada4bec1539ccc106b on the existing Task172 branch and Draft PR #218.；Gate T authority: the 1988 UNESCO primary parse, 24 fields / 245 four-digit disciplines / 2178 six-digit subdisciplines. The 248 mirror, 250 local inventory and 2183 historical secondary counts remain discrepancy values, not silent substitutes.；Pilot scope: one Gate T four-digit discipline seed from each of the 24 fields; provider requests were bounded to OpenAlex, Crossref and OpenAIRE, with PubMed E-utilities only for the medical field.；Crosswalk status: QUERYSEEDONLYNODIRECTPROVIDEREQUIVALENCE; provider taxonomy identifiers are not copied into UNESCO identity, and every target remains manual-review-required.；Results: 365 sanitized metadata candidates admitted as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA; no content body was persisted, no scientific relevance was adjudicated, and no evidence/proof/replication promotion occurred.
+- 完整阅读：[reports/operations/ignition-172-20260914-step08-scholarly-pilot.md](../../reports/operations/ignition-172-20260914-step08-scholarly-pilot.md)
+
+<a id="reading-hr-a960756efab9d50a"></a>
+## 第57期故事验收报告
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：状态：PASSWITHBOUNDARIES；只使用 D600 / D601 / D602 与 C-0810 / C-0811 作为正式基础。；D603 / D604 未写成已进入 main 的事实。；M8 保留 pending，没有借故事偷升格。；跨域节点使用 Hedy Lamarr，而不是动机高度不可核验的名人拼盘。；正文基本不出现内部编号，编号与判定保留在附录和 ledger。
+- 完整阅读：[outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md](../../outputs/stories/20260712-disobedience-subjectivity/story-validation-report.md)
+
+<a id="reading-hr-a9a90af4c17ea1f8"></a>
+## 赛课机制下的教师生存困境碰撞报告
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `WRITING_PUBLICATION`
+- 1 分钟：文章以「赛课」机制为对象，揭示其如何将教师专业成长转化为可量化竞赛，并层层绑定职称、绩效、学校业绩与教研资源，最终造成教师身心代价与真实教学被挤压。核心机制链： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：赛课机制下的教师生存困境碰撞报告；本地 Markdown 文件：inputs/collisions/20260708-teacher-competition/source.md；来源：Get 笔记文章《赛课机制下的教师生存困境：当讲台之上的人不堪重负，教育该如何安放》；作者：之元；日期：2026-07-08；是否使用网页链接：否（仅用本地快照，符合「默认得到大脑读不了网页链接」原则）；正文规模：288 行 / 约 37KB，含表格与多教师个案。
+- 完整阅读：[outputs/collisions/20260708-teacher-competition/collision-report.md](../../outputs/collisions/20260708-teacher-competition/collision-report.md)
+
 <a id="reading-hr-aa71cb6d79bb27ed"></a>
 ## AI entrypoint audit
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
@@ -100,7 +149,7 @@
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：新故事索引表（2026年07月06日03时06分，故事总数 1）；条目状态: 故事版笔记，支持继续扩展
-- 完整阅读：[新故事/INDEX.md](../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
+- 完整阅读：[新故事/INDEX.md](../../新故事/INDEX.md)
 
 <a id="reading-hr-ad8d11d719d1a437"></a>
 ## IGNITION-142 Step 17 — architecture impact
@@ -304,52 +353,3 @@
 - 1 分钟：Representation note: structured synthetic records; relation rows connect source-linked records. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Supplemental record CASE01；Representation note: structured synthetic records; relation rows connect source-linked records.；[A01] Candidate record: Route Alder returns a signed-document field, signature-timestamp field, and approval-event reference, but no per-file digest. [A02] Candidate record: Route Birch returns a version sequence and per-file digest; its optional approval-event field has unverified output behavior. [A03] Audit objective record: reconstruct content membership…；主题：Recorded relations；[R01] A03 --SELECTSFORAUDIT--> A02 :: Propose Route Birch as the checkpoint-level verification candidate because its chronology and per-file digest can identify content; assert membership only if the delivered digest joins to the checkpoint and approval event, and keep the unsigned correction outside the approved record. [R02] A04 --PRECONDITIONFOR--> A03 ::…
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE01.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE01.md)
-
-<a id="reading-hr-b7271a431d9522e4"></a>
-## Formal anchor receipt
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`
-- 1 分钟：Live anchor checked on 2026-09-28 before Task227 freeze. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Formal anchor receipt；Live anchor checked on 2026-09-28 before Task227 freeze.；State: OPEN + DRAFT + unmerged；Head: b6acf6856128833677c35d85a9f088cb49b5d4f2；Base: 8989a7c58e602f1e02c5de95af1cde418ad827a9；Exact-head pull-request CI evidence:
-- 完整阅读：[reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/formal-anchor-receipt.md](../../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/formal-anchor-receipt.md)
-
-<a id="reading-hr-b72bf8b27748c5e3"></a>
-## D583 可移植来源引用清理审计报告（IGNITION-20260709-055）
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：D583 文件中含有历史遗留的 macOS 本机绝对路径，作为原始来源锚点写入 3 处： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：D583 可移植来源引用清理审计报告（IGNITION-20260709-055）；任务：IGNITION-20260709-055；仓库：Arvin-liu/when-systems-catch-fire；基线 main SHA：895c9895b7f7587a0db26f00619bbdd272204df1；分支：fix/d583-portable-source-reference-20260711；目标文件：已迁移的历史函数来源/0593-D583-认知肌肉锻炼.md
-- 完整阅读：[outputs/audit/d583-portable-source-reference-audit-20260711.md](../../outputs/audit/d583-portable-source-reference-audit-20260711.md)
-
-<a id="reading-hr-b789ed64c8685503"></a>
-## Supplemental record CASE04
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Representation note: structured synthetic records; relation rows connect source-linked records. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Supplemental record CASE04；Representation note: structured synthetic records; relation rows connect source-linked records.；[A01] Hypothesis record: elevated salt concentration in the root zone. [A02] Hypothesis record: canopy heat or humidity stress. [A03] Measurement-definition record: a root-zone conductivity reading can be collected after recirculation; the exact interval is selected by the operating protocol. [A04] Existing-value record: the feed-tank value of 1.4 mS/cm pred…；主题：Recorded relations；[R02] A04 --TEMPORALLIMITFOR--> A01 :: The pre-refill feed value does not record the current root-zone state. [R03] A05 --SUPPORTSMEASUREMENT--> A03 :: The listed port and timer make a post-refill reading technically available; they do not select a measurement or interval. [R05] A07 --RESULTSTATUSFOR--> A03 :: The current record contains no post-refill measu…
-- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE04.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE04.md)
-
-<a id="reading-hr-b7cf68ed12ba8b82"></a>
-## 两张表单条条目结构审计与统一模板草案
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：结构更规范：基本信息 / 数学表达 / 判定理由 / 数学推导过程 / 关联案例 / 原文捞回，含变量解释与推导，是旧条目中离模板最近的形态。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：两张表单条条目结构审计与统一模板草案；两张表版本同步维护已完成（提交 aa307e61，2026-07-09 00:30）。；当前入口统计：函数表 617 个正式函数，案例表 804 个正式案例，更新时间 2026-07-09 00:30。；已确认：D595-D599 已入函数表；C-0807-C-0809 已入案例表；README、函数 INDEX、案例 INDEX 已同步。；本轮任务：只读审计历史函数来源与历史案例来源的单条 MD 写作结构，比较旧条目与 2026-07-08 新增条目差异，产出统一模板草案。；不修改函数表、案例表、README、INDEX、data、schema、P1 数据、历史审计、碰撞流程；不新增函数/案例；不迁移格式、不回填。
-- 完整阅读：[outputs/audit/two-tables-entry-format-audit-20260709.md](../../outputs/audit/two-tables-entry-format-audit-20260709.md)
-
-<a id="reading-hr-b9a059e2fac7e9c3"></a>
-## Supplemental record CASE06
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Representation note: structured synthetic records; relation rows connect source-linked records. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Supplemental record CASE06；Representation note: structured synthetic records; relation rows connect source-linked records.；[A01] Procedure record Q: process a set of entry identifiers and optional event tokens and return status fields. [A02] Procedure record D: process entry identifiers and optional event tokens one row at a time and return status fields with an evidence note. [A03] Historical timing record: a result is recorded for cohort H1. [A04] Historical timing record: a s…；主题：Recorded relations；[R01] A03 --SOURCERECORDFOR--> A05 :: H1 is the source cohort for its recorded timing observation. [R02] A04 --SOURCERECORDFOR--> A05 :: H2 is a separate source cohort for its recorded timing observation. [R03] A05 --DOESNOTRANK--> A01 :: Separate cohorts do not establish a universal procedure winner. [R04] A06 --MAPSCOHORTTOPROCEDURE--> A01 :: Route exact r…
-- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE06.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE06.md)
-
-<a id="reading-hr-b9ed64291673acbc"></a>
-## MF-0001~0005 补入审计记录（2026-07-08）
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：MF-0001~0005 是 Codespace 救援函数表中 Section 0 自举元函数（MF-0000）的 5 个内部子通道/判定器，在差异审计（codespace-rescue-two-tables-diff-audit-20260708.md）中被识别为救援函数表独有增量（救援 476 / 正式 612 / 重叠 471 / 救援独有 5）。复核报告（mf-0001-0005-rescue-review-20260708.md）确认： 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：MF-0001~0005 补入审计记录（2026-07-08）；MF-0001~0005 是 Codespace 救援函数表中 Section 0 自举元函数（MF-0000）的 5 个内部子通道/判定器，在差异审计（codespace-rescue-two-tables-diff-audit-20260708.md）中被识别为救援函数表独有增量（救援 476 / 正式 612 / 重叠 471 / 救援独有 5）。复核报告（mf-0001-0005-rescue-review-20260708.md）确认：；正式函数表目录搜索 5 个关键词（正向自举通道/反向自举通道/正反互斥判定器/自举嵌套判定器/自举收敛判定器）全部 0 命中；；D141（0190-D141-自举元函数.md）仅对自身函数做正反向收敛检查，并未以独立条目或等价命名定义这 5 个内部子通道；；因此这 5 个是 MF-0000 的内部结构件，而非普通重复函数，具备独立结构价值，应补入 Section 0。；已迁移的历史函数来源/ 下新增 5 个独立条目（采用 0000- 前缀以归入 Section 0 内部层，不与 D/A/T 层编号撞车）：
-- 完整阅读：[outputs/audit/mf-0001-0005-integration-audit-20260708.md](../../outputs/audit/mf-0001-0005-integration-audit-20260708.md)
-
-<a id="reading-hr-ba75dd3140d0b0a0"></a>
-## IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Status: BASELINEREPRODUCED 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260822-134 Step 00 — Residual archaeology and projection contract audit；Status: BASELINEREPRODUCED；The refreshed control ref is Arvin-liu/1111:origin/relay/current@3fc8a329eb4f581d1940688046bdc16f4594417d. The isolated formal worktree starts from Arvin-liu/when-systems-catch-fire:main@517510aed545ff440c3464536ba2964c94e5f560 and was clean before the audit.；主题：Current path manifest；ignition/tools/foundation/validaterepositorypathclassification.py explicitly defines classification-manifest.jsonl as a generated snapshot of the deterministic live engine. Its --check mode compares the live Git path set to the committed manifest and fails closed on missing, stale, duplicate, category-drift, unresolved, and anti-backflow violations. The clea…；The observed baseline is:
-- 完整阅读：[reports/operations/ignition-134-step00-residual-archaeology.md](../../reports/operations/ignition-134-step00-residual-archaeology.md)

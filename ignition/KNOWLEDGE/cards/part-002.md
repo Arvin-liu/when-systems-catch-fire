@@ -7,7 +7,7 @@
 <a id="asset-nfc-921e43a466f461f8"></a>
 ## 非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-921e43a466f461f8` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-921e43a466f461f8` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** 非函数型资产交接必须保留 task 100 的规范 ID、原子文本、十三门、证据与复现状态、依赖和下游影响、M/E、处置、公开上限及 supersession lineage。自动发现只生成待裁决记录；一个模型失败不能推出普遍不可能，类比不能冒充同构，历史撤回不能因改名恢复。
@@ -17,7 +17,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-HANDOFF.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `AI-HANDOFF.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
@@ -27,7 +27,7 @@
 <a id="asset-nfc-9379ce5377b8455f"></a>
 ## Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-9379ce5377b8455f` · [llms.txt](../../llms.txt)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-9379ce5377b8455f` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
 - **当前状态：** `QUARANTINED_AMBIGUOUS`
 - **当前结果：** - Formalization, computability, internal consistency, AI numbering and passing tests do not establish external truth. The current gate model does not unify the four interactions, and the physics unification problem remains open; do not restore the withdrawn universal-impossibility claim under a new label.
@@ -37,7 +37,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `llms.txt`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `llms.txt`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
 - **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
@@ -67,7 +67,7 @@
 <a id="asset-nfc-a1a28b3a56bcb64b"></a>
 ## 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a1a28b3a56bcb64b` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a1a28b3a56bcb64b` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** - 函数资产中 `4,804` 项仍 quarantine/pending；非函数断言中 `4,615` 项仍 quarantine/pending；数字来自 current-facts projection，不能解释为内容验证完成。
@@ -77,7 +77,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `docs/project-current-state.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
@@ -87,7 +87,7 @@
 <a id="asset-nfc-a50fdd39601af897"></a>
 ## 身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a50fdd39601af897` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a50fdd39601af897` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** 身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。
@@ -97,17 +97,17 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-HANDOFF.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `AI-HANDOFF.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-a50fdd39601af897`, `身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。`, `身份 epoch、当前任务、方法、地图、状态和 lineage 由 generated Current Snapshot 统一投影。`
 
 <a id="asset-nfc-a5870d6c2e430817"></a>
 ## 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a5870d6c2e430817` · [RESULTS/README.md](../../RESULTS/README.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a5870d6c2e430817` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** 机器对应物位于 `data/governance/human-results/` 与 `data/governance/self-correction/`。CI 同时检查两层；缺任一层即失败。
@@ -117,7 +117,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/README.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `RESULTS/README.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
@@ -147,7 +147,7 @@
 <a id="asset-nfc-a97aee2717fb336a"></a>
 ## Current iteration method version is emitted by the generated Current Snapshot. Read data/operations/stage-snapshots.json
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a97aee2717fb336a` · [llms.txt](../../llms.txt)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-a97aee2717fb336a` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
 - **当前状态：** `QUARANTINED_AMBIGUOUS`
 - **当前结果：** Current iteration method version is emitted by the generated Current Snapshot. Read data/operations/stage-snapshots.json and docs/operations/stage-snapshot-publication.md. Snapshot or homepage visibility never implies Accepted, Current, Activated, capability availability, or candidate payload merge.
@@ -157,7 +157,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `llms.txt`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `llms.txt`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
 - **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
@@ -167,7 +167,7 @@
 <a id="asset-nfc-b3044ed3734222fb"></a>
 ## “物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b3044ed3734222fb` · [docs/physics_boundary.md](../../docs/physics_boundary.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b3044ed3734222fb` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
 - **当前状态：** `ACCEPTED_AS_DEFINITION`
 - **当前结果：** “物理学已经证明大一统不可能”现已正式撤回。它不能仅改名为“结构性边界推论”“框架判定”或“元层机制”后保留同一结论。
@@ -177,7 +177,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/physics_boundary.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `docs/physics_boundary.md`
 - **演化历史：** Lineage: PHYSICS_UNIFICATION_NOGO；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
@@ -187,7 +187,7 @@
 <a id="asset-nfc-b478ca63674e2e09"></a>
 ## 当前地图、身份、任务和状态的易变值由下方 Current Snapshot 统一投影；本段只解释稳定的
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b478ca63674e2e09` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b478ca63674e2e09` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** 当前地图、身份、任务和状态的易变值由下方 Current Snapshot 统一投影；本段只解释稳定的
@@ -197,17 +197,17 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `docs/project-current-state.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-b478ca63674e2e09`, `当前地图、身份、任务和状态的易变值由下方 Current Snapshot 统一投影；本段只解释稳定的`, `当前地图、身份、任务和状态的易变值由下方 Current Snapshot 统一投影；本段只解释稳定的`
 
 <a id="asset-nfc-b8317ad5cc6c3230"></a>
 ## 使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b8317ad5cc6c3230` · [AI-START-HERE.md](../../AI-START-HERE.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-b8317ad5cc6c3230` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** - 使用 0.5.0 时，先标记 `external_input` 与 `ignition_increment`，保存版本、生成路径、claim ceiling、不可映射残余和原始来源回链；涉及语言转换时还须保存 source form、候选意义、target form 与 framing delta。发布反馈必须登记 provenance 后才能成为候选 source／gap。同源只表示维护者声明的设计来源与结构对应候选，不是大脑事实、形式同构或真值许可。
@@ -217,7 +217,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-START-HERE.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `AI-START-HERE.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
@@ -227,7 +227,7 @@
 <a id="asset-nfc-bd6c757f496eff1d"></a>
 ## `RESULTS/` 把机器注册表、报告和历史资产投影为可直接阅读的结果。它不复制或提高证据权限；每个结论仍受来源、成熟度、处置和 claim ceiling 约束。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-bd6c757f496eff1d` · [RESULTS/README.md](../../RESULTS/README.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-bd6c757f496eff1d` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `ACCEPTED_AS_DEFINITION`
 - **当前结果：** `RESULTS/` 把机器注册表、报告和历史资产投影为可直接阅读的结果。它不复制或提高证据权限；每个结论仍受来源、成熟度、处置和 claim ceiling 约束。
@@ -237,7 +237,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/README.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `RESULTS/README.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
 - **下一步：** No open obligation was recorded.
@@ -247,7 +247,7 @@
 <a id="asset-nfc-c15234f1546c00ea"></a>
 ## 任务边界：1111 中对应的 IGNITION command、progress 与 result
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-c15234f1546c00ea` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-c15234f1546c00ea` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** - 任务边界：1111 中对应的 IGNITION command、progress 与 result
@@ -257,17 +257,17 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-HANDOFF.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `AI-HANDOFF.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-c15234f1546c00ea`, `任务边界：1111 中对应的 IGNITION command、progress 与 result`, `- 任务边界：1111 中对应的 IGNITION command、progress 与 result`
 
 <a id="asset-nfc-c349fbdc470b50ab"></a>
 ## Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-c349fbdc470b50ab` · [llms.txt](../../llms.txt)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-c349fbdc470b50ab` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** - Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search and bidirectional dependency projections; these discovery surfaces never override canonical registries or evidence maturity.
@@ -277,17 +277,17 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `llms.txt`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `llms.txt`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-c349fbdc470b50ab`, `Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/`, `- Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search and bidirectional dependency projections; these discovery surfaces never override canonical registries or evidence maturity.`
 
 <a id="asset-nfc-c55e34db613b6c41"></a>
 ## K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-c55e34db613b6c41` · [llms.txt](../../llms.txt)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-c55e34db613b6c41` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated citation, cross-domain correspondence, model elegance and Agent consensus cannot auto-upgrade assertion status; M/E remains orthogonal.
@@ -297,11 +297,11 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `llms.txt`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `llms.txt`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `SYSTEMS`, `WRITING_PUBLICATION`
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`
 - **可搜索名称：** `NFC-c55e34db613b6c41`, `K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated`, `K13_ASSERTION_NON_ESCALATION: project scale, engineering maturity, writing/summaries/results books/system maps, repeated citation, cross-domain correspondence, model elegance and Agent consensus cannot auto-upgrade assertion status; M/E remains orthogonal.`
 
 <a id="asset-nfc-d12a007686070f3d"></a>
@@ -327,7 +327,7 @@
 <a id="asset-nfc-d1eb87089fada196"></a>
 ## active queue 排除；同一冻结评分模型的 task-110 projection 保留 C-03 作为已执行的
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-d1eb87089fada196` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-d1eb87089fada196` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** active queue 排除；同一冻结评分模型的 task-110 projection 保留 C-03 作为已执行的
@@ -337,11 +337,11 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `docs/project-current-state.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-d1eb87089fada196`, `active queue 排除；同一冻结评分模型的 task-110 projection 保留 C-03 作为已执行的`, `active queue 排除；同一冻结评分模型的 task-110 projection 保留 C-03 作为已执行的`
 
 <a id="asset-nfc-d30b79cb6b607ade"></a>
@@ -367,7 +367,7 @@
 <a id="asset-nfc-d584235380a9199d"></a>
 ## Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-d584235380a9199d` · [AI-START-HERE.md](../../AI-START-HERE.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-d584235380a9199d` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** - Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。
@@ -377,17 +377,17 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-START-HERE.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `AI-START-HERE.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-d584235380a9199d`, `Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。`, `- Q32I 的方法 `1.3.0` 与系统图 `0.3.0` 已独立接受、由 PR #62 普通合并并完成生产收口；其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影。`
 
 <a id="asset-nfc-d64522bd6b0c9ee7"></a>
 ## The retired function and case tables are preserved only through the migration manifest, Git history and canonical regist
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-d64522bd6b0c9ee7` · [llms.txt](../../llms.txt)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-d64522bd6b0c9ee7` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
 - **当前状态：** `QUARANTINED_AMBIGUOUS`
 - **当前结果：** The retired function and case tables are preserved only through the migration manifest, Git history and canonical registries. Never use an archived header as current count authority; use the function-assets and nonfunction-assets human entries for reading.
@@ -397,7 +397,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `llms.txt`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `llms.txt`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
 - **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
@@ -407,7 +407,7 @@
 <a id="asset-nfc-dd395b512a59af63"></a>
 ## 其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-dd395b512a59af63` · [AI-HANDOFF.md](../../AI-HANDOFF.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-dd395b512a59af63` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** 其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。
@@ -417,17 +417,17 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-HANDOFF.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `AI-HANDOFF.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-dd395b512a59af63`, `其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。`, `其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。`
 
 <a id="asset-nfc-e9612969179efbcb"></a>
 ## R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-e9612969179efbcb` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-e9612969179efbcb` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** - R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-side durable capture、append-only LiveAttemptLedger 和 ledger-derived Current projection。历史 ledger 共记录四次尝试，其中 Hermes136 与 Codex138 second 仍待 reconciliation；Codex138 second 确实发生，但 outer context overflow 使 observation incomplete，return code、structured result、lease、workspace 和 validator input 未恢复。当前 live provider/inference ceiling 仍未建立。
@@ -437,37 +437,37 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `docs/project-current-state.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-e9612969179efbcb`, `R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s`, `- R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-side durable capture、append-only LiveAttemptLedger 和 ledger-derived Current projection。历史 ledger 共记录四次尝试，其中 Hermes136 与 Codex138 second 仍待 reconciliation；Codex138 second 确实发生，但 outer context overflow 使 observation incomplete，return code、structured result、lease、workspace 和 validator input 未恢复。当前 live provider/inference ceiling 仍未建立。`
 
 <a id="asset-nfc-ea55d13b7ba7aeff"></a>
-## [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
+## [任务 106 合并后真相传播与当前真相调和](../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ea55d13b7ba7aeff` · [RESULTS/RESEARCH-AND-ARTICLES.md](../../RESULTS/RESEARCH-AND-ARTICLES.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ea55d13b7ba7aeff` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
-- **当前结果：** - [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
+- **当前结果：** - [任务 106 合并后真相传播与当前真相调和](../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。
 - **双成熟度：** 数学 `M0`；外部证据 `E0`
 - **假设与表述上限：** Analogy or structural metaphor only; no homomorphism, isomorphism or causal identity is established.
 - **未建立：** Do not present registry presence, internal tests, AI agreement or formal appearance as proof, external validation, novelty, peer review or replication.
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/RESEARCH-AND-ARTICLES.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `RESULTS/RESEARCH-AND-ARTICLES.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `NFC-ea55d13b7ba7aeff`, `[任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。`, `- [任务 106 合并后真相传播与当前真相调和](../../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。`
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `NFC-ea55d13b7ba7aeff`, `[任务 106 合并后真相传播与当前真相调和](../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。`, `- [任务 106 合并后真相传播与当前真相调和](../ITERATION.md)（规范化 ledger / 9 维 impact 引擎 / current-truth 投影 / fail-closed 验证器）。`
 
 <a id="asset-nfc-ebfd48dc0e2de71c"></a>
 ## 当前工程状态与 epistemic ceiling 由 generated Current Snapshot 投影；它们描述仓库接口，
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ebfd48dc0e2de71c` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ebfd48dc0e2de71c` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** 当前工程状态与 epistemic ceiling 由 generated Current Snapshot 投影；它们描述仓库接口，
@@ -477,17 +477,17 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `docs/project-current-state.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `NFC-ebfd48dc0e2de71c`, `当前工程状态与 epistemic ceiling 由 generated Current Snapshot 投影；它们描述仓库接口，`, `当前工程状态与 epistemic ceiling 由 generated Current Snapshot 投影；它们描述仓库接口，`
 
 <a id="asset-nfc-ecf6b1c991ca0e1c"></a>
 ## 及其 JSON 投影为准，不在本段复制第二份值。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ecf6b1c991ca0e1c` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ecf6b1c991ca0e1c` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** 及其 JSON 投影为准，不在本段复制第二份值。
@@ -497,17 +497,17 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `docs/project-current-state.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-ecf6b1c991ca0e1c`, `及其 JSON 投影为准，不在本段复制第二份值。`, `及其 JSON 投影为准，不在本段复制第二份值。`
 
 <a id="asset-nfc-ef9727c199e45632"></a>
 ## 仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ef9727c199e45632` · [AI-START-HERE.md](../../AI-START-HERE.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-ef9727c199e45632` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `ACCEPTED_AS_DEFINITION`
 - **当前结果：** 仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见
@@ -517,17 +517,17 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-START-HERE.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `AI-START-HERE.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: ACCEPTED_AS_DEFINITION
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-ef9727c199e45632`, `仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见`, `仓库状态上限、外部真值边界和“仓库回执不等于外部真值”的区分。当前身份 contract 与确定性事实投影见`
 
 <a id="asset-nfc-efd2508248c8410a"></a>
 ## 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-efd2508248c8410a` · [docs/project-current-state.md](../../docs/project-current-state.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-efd2508248c8410a` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** - 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。
@@ -537,17 +537,17 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/project-current-state.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `docs/project-current-state.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
-- **主题：** `OPERATIONS_EVIDENCE`
+- **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `NFC-efd2508248c8410a`, `控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。`, `- 控制平面把事件、权限收窄、共享资源、并发 ready-set、健康租约、队列、外部回执和操作记忆分别持久化；Driver Console 只投影下一步与开放义务，不成为第二真相源。`
 
 <a id="asset-nfc-f31cd02c40b70cc7"></a>
 ## 跨域对应 2,178；
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-f31cd02c40b70cc7` · [RESULTS/ADJUDICATION-SUMMARY.md](../../RESULTS/ADJUDICATION-SUMMARY.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-f31cd02c40b70cc7` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public CROSS_DOMAIN_CORRESPONDENCE and its correction or evidence boundary.
 - **当前状态：** `RETAINED_AS_STRUCTURAL_METAPHOR`
 - **当前结果：** - 跨域对应 2,178；
@@ -557,7 +557,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `RESULTS/ADJUDICATION-SUMMARY.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `RESULTS/ADJUDICATION-SUMMARY.md`
 - **演化历史：** Lineage: NO_NAMED_LINEAGE；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: SOURCE_TEXT_RULE_ADJUDICATED
 - **最近变化：** Task 100 disposition: RETAINED_AS_STRUCTURAL_METAPHOR
 - **下一步：** No open obligation was recorded.
@@ -567,7 +567,7 @@
 <a id="asset-nfc-fa7f908615d24682"></a>
 ## 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。
 
-- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-fa7f908615d24682` · [AI-START-HERE.md](../../AI-START-HERE.md)
+- **身份/来源：** `NONFUNCTION_CLAIM` · `NFC-fa7f908615d24682` · [data/foundation/nonfunction-claims/claim-registry.jsonl](../../data/foundation/nonfunction-claims/claim-registry.jsonl)
 - **为什么产生：** Expose a materially public IMPOSSIBILITY_OR_UNIVERSAL_CLAIM and its correction or evidence boundary.
 - **当前状态：** `QUARANTINED_AMBIGUOUS`
 - **当前结果：** - 公式化、可计算、内部自洽、AI 编号和单元测试通过都不等于外部真实；当前门控模型没有统一四力，也没有证明大一统普遍不可能。
@@ -577,7 +577,7 @@
 - **依赖：** 无已登记直接依赖
 - **被引用/反向依赖：** 无已登记反向依赖
 - **相关文章/资产：** 无已登记关联
-- **来源与证据：** `AI-START-HERE.md`
+- **来源与证据：** `data/foundation/nonfunction-claims/claim-registry.jsonl`, `AI-START-HERE.md`
 - **演化历史：** Lineage: PHYSICS_UNIFICATION_NOGO；Lineage status: CURRENT_SCOPED_RECORD；Reviewer state: EXPLICITLY_QUARANTINED
 - **最近变化：** Task 100 disposition: QUARANTINED_AMBIGUOUS
 - **下一步：** State typed definitions, assumptions and quantifiers; provide a checkable proof or delimit the statement as conjectural.；Search for countermodels inside and outside the declared model class.
@@ -704,6 +704,26 @@
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Owner Review R1 — initial freeze rejected for launch`, `OWNER-REVIEW-R1`
 
+<a id="asset-hr-037a78ae8c7c5909"></a>
+## Task229 claim ceiling R0
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-037A78AE8C7C5909` · [reports/evaluations/ignition-229-clean-transfer-interface-r0/claim-ceiling.md](../../reports/evaluations/ignition-229-clean-transfer-interface-r0/claim-ceiling.md)
+- **为什么产生：** 此来源记录了什么：Task229 claim ceiling R0？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The only supported claims are bounded fixed-lineage/fixed-target facts about:
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-229-clean-transfer-interface-r0/claim-ceiling.md`, `229-CLEAN-TRANSFER-INTERFACE-R0`
+- **演化历史：** 2026-09-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `Task229 claim ceiling R0`, `claim-ceiling`
+
 <a id="asset-hr-03bc02f942aee639"></a>
 ## Full Object Inventory
 
@@ -723,6 +743,26 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `Full Object Inventory`, `full-object-inventory-20260712`
+
+<a id="asset-hr-040c381a1ea90b6b"></a>
+## Fixed visible prompt for each successor session
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-040C381A1EA90B6B` · [reports/evaluations/ignition-229-clean-transfer-interface-r0/session-prompt-template.md](../../reports/evaluations/ignition-229-clean-transfer-interface-r0/session-prompt-template.md)
+- **为什么产生：** 此来源记录了什么：Fixed visible prompt for each successor session？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** You are handling one fresh, isolated case-solving session. Use only the case files and method material included in this message. Do not use tools, browse, inspect a workspace, request other records, infer an unstated threshold, or refer to another session. Do not mention any study, condition, lin…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-229-clean-transfer-interface-r0/session-prompt-template.md`, `229-CLEAN-TRANSFER-INTERFACE-R0`
+- **演化历史：** 2026-09-30: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Fixed visible prompt for each successor session`, `session-prompt-template`
 
 <a id="asset-hr-0450dd379222f5ba"></a>
 ## 121Q9 Global Validation
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `ARCHITECTURE_GOVERNANCE`
 - **可搜索名称：** `Task160｜Basis Escape V2`, `meta-protocol-64-absorption-vs-generativity-2026-09-07`
-
-<a id="asset-hr-077438a238642315"></a>
-## Epistemic Governance Kernel and Federated Planes
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-077438A238642315` · [docs/architecture/epistemic-governance-kernel-and-federated-planes.md](../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
-- **为什么产生：** 此来源记录了什么：Epistemic Governance Kernel and Federated Planes？
-- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
-- **当前结果：** Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/architecture/epistemic-governance-kernel-and-federated-planes.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-08-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `Epistemic Governance Kernel and Federated Planes`, `epistemic-governance-kernel-and-federated-planes`
-
-<a id="asset-hr-07c0a722103fa88b"></a>
-## IGNITION-20260824-138 — Step 11 Obligation Semantics
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-07C0A722103FA88B` · [reports/operations/ignition-138-step11-obligation-semantics.md](../../reports/operations/ignition-138-step11-obligation-semantics.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260824-138 — Step 11 Obligation Semantics？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The inherited Hermes live-hermes-136 reconciliation remains open exactly as recorded by Task137. No new evidence proves reconciled-no-side-effect or closes the timeout/effect uncertainty, so no Hermes resume, retry or channel action is created. The inherited OpenClaw safety-boundary blockers are…
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-138-step11-obligation-semantics.md`, `138-STEP11-OBLIGATION-SEMANTICS`
-- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260824-138 — Step 11 Obligation Semantics`, `ignition-138-step11-obligation-semantics`

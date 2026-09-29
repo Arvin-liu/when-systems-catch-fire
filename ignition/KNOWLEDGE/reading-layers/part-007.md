@@ -4,6 +4,48 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-6106e26409ecfa79"></a>
+## 跨域 smoke test — 社会学碰撞报告
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：inputs/collisions/20260708-cross-domain-smoke-test/social.md（邻里积分制） 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：跨域 smoke test — 社会学碰撞报告；inputs/collisions/20260708-cross-domain-smoke-test/social.md（邻里积分制）；量化指标替代真实价值：命中 D597（指标成为唯一显式入口→不可量化互助被挤出）；显态粘性：关联 D173（表演性互助=外部指标驱动的显态行为）；绩效绑定裹挟：关联 D595（积分与公共资格/评优挂钩→可拒绝性趋零）；隐性层级/分层/荣誉阶层：零精确命中（现有 D94 向下兼容损耗提及组织层级，但非「指标排名制造隐性社会分层」）
+- 完整阅读：[outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md](../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
+
+<a id="reading-hr-612510a940b17d90"></a>
+## Task226 R7 revision-failure taxonomy to policy contract
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：This mapping covers the three revision failure classes explicitly summarized in the recovered Task226 revision taxonomy. The Task227 command independently requires operational selector, applicability, fallback, stop, provenance, and scope fields; those are structural safeguards, not extra failure… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task226 R7 revision-failure taxonomy to policy contract；This mapping covers the three revision failure classes explicitly summarized in the recovered Task226 revision taxonomy. The Task227 command independently requires operational selector, applicability, fallback, stop, provenance, and scope fields; those are structural safeguards, not extra failure classes attributed to that taxonomy.；Every nonempty when/conditions array is conjunctive AND; alternatives are separate rows. Input declarations carry value type and unit. Each licensed region maps one-to-one to a selector rule with exactly equal conditions, and every rule is mapped exactly once. Empty out-of-scope conditions denote the full complement of licensed regions and are allowed only a…；Fallback and edge fields are required by the Task227 interface contract. They are not asserted here as a fourth Task226 revision-generation failure class. No A/B/C target value, label, or target-specific rule is encoded in this schema.
+- 完整阅读：[reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/taxonomy-to-schema.md](../../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/taxonomy-to-schema.md)
+
+<a id="reading-hr-615330c2f4c14260"></a>
+## IGNITION-20260827-142 Step 11 — Fresh Executor Census R2
+`HISTORICAL_COMPLETION_RECORD` · `COGNITION`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The shared public probe produced 14 candidates: 5 Agentic Executor records (4 installed), 4 reasoner runtimes, 3 tools and 2 UI surfaces. No inference, UI action, installation, configuration or billing operation occurred. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-142 Step 11 — Fresh Executor Census R2；The shared public probe produced 14 candidates: 5 Agentic Executor records (4 installed), 4 reasoner runtimes, 3 tools and 2 UI surfaces. No inference, UI action, installation, configuration or billing operation occurred.；Deterministic ranking uses only the ten admission checks and stable family/ID tie-breakers. Codex is the sole technically admitted Agentic Executor, but its Task140 same-family blind-retry policy blocker remains active. Gemini, Hermes and OpenClaw each retain explicit technical blockers; Copilot is not installed. Reasoners, tools and UI surfaces are excluded…；Machine evidence is ignition/data/operations/iterations/142/local-executor-census-r2.json plus ignition/data/operations/iterations/142/step11-fresh-census.json. The canonical census is validated through ignition/agentfederation/localexecutorcensus.py and ignition/tools/validatelocalexecutorcensus.py.；Claim ceiling: fresh public observation, classification, admission checks, policy exclusion and deterministic why-executor trace only; no live completion or external truth is claimed.
+- 完整阅读：[reports/operations/ignition-142-step11-fresh-census.md](../../reports/operations/ignition-142-step11-fresh-census.md)
+
+<a id="reading-hr-617b14d24b6c52be"></a>
+## 22 本书验证候选案例 · 正式案例表入表审计 2026-07-09
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：22 本书验证候选案例 · 正式案例表入表审计 2026-07-09；任务：IGNITION-20260709-007。分支 case/book-validation-22-20260709。结论：0 条正式入表，22 条全部维持 candidateonly。；点火主仓库 main：Arvin-liu/when-systems-catch-fire@bb8144c76c956082eea183fb49d31b2a41e8a254（已确认 origin/main == 该 merge commit，PR#1 已合并）；1111 当前版本口径包：Arvin-liu/1111/project-context/、agent-results/IGNITION-20260709-005-、006-；22 本书候选数据：data/meta-protocols/book-validation-cases-20260709.json（count=22，均 status=candidateonly，formalcaseid=null）；可读候选清单：docs/meta-protocols/book-validation-22-cases-20260709.md、outputs/book-collisions/20260709-22-book-validation/book-case-candidates.md
+- 完整阅读：[outputs/audit/book-validation-case-table-formalization-audit-20260709.md](../../outputs/audit/book-validation-case-table-formalization-audit-20260709.md)
+
+<a id="reading-hr-61e3d96daff155d9"></a>
+## IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate
+`HISTORICAL_COMPLETION_RECORD` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: PASS for the offline adversarial matrix. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260827-142 Step 18 — Adversarial and Regression Gate；Status: PASS for the offline adversarial matrix.；The matrix contains 15 required negative cases covering formal-task terminality, obligation closure, class separation, provider-neutral admission, public-auth attestation, billing authority, workspace and runtime-scratch boundaries, exact structured results, executor self-report, retry/stop policy, capture completeness, process/inference separation, and stal…；The matrix mutates in-memory copies only. It starts no executor, process, inference, UI action, network operation, or live attempt; it reads no secret content and changes no configuration or billing state. Natural targeted and full-suite receipts are recorded by the Step 18/19 publication evidence after the exact candidate commit is fixed.；Machine source: ignition/data/operations/iterations/142/step18-adversarial-matrix.json.；Claim ceiling: offline repository-local adversarial rejection evidence only. This does not claim a live validated completion, external truth, production readiness, Owner acceptance, or epistemic acceptance.
+- 完整阅读：[reports/operations/ignition-142-step18-adversarial-matrix.md](../../reports/operations/ignition-142-step18-adversarial-matrix.md)
+
+<a id="reading-hr-61f3531a51705a76"></a>
+## IGNITION-20260821-129 Step 00 — Steering gap audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：0064897c5537cc4a20eb7b03824841a9d6a608d6 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260821-129 Step 00 — Steering gap audit；Formal repository: Arvin-liu/when-systems-catch-fire；Task branch: codex/ignition-129-os-steering-intent-obligation-r1-20260821；Execution-time origin/main: 354be6c079945eb8349e0fee1de79395eb5f8d1c；Relay control tip: Arvin-liu/1111:origin/relay/current；0064897c5537cc4a20eb7b03824841a9d6a608d6
+- 完整阅读：[reports/operations/ignition-129-step00-steering-audit.md](../../reports/operations/ignition-129-step00-steering-audit.md)
+
 <a id="reading-hr-6239eb32a5e612b5"></a>
 ## CASE05 — Archive grouping revision scope
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -311,45 +353,3 @@
 - 1 分钟：Status: 121Q12OPERATIONOVERLAY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Non-Sycophancy Output Protocol；Status: 121Q12OPERATIONOVERLAY；This protocol makes non-sycophancy a repository property rather than a tone preference.；An output must not raise claim strength because the user, maintainer, author, or proposer appears excited, certain, tired, urgent, or personally invested.；Agreement is allowed only when it is grounded in explicit criteria. Disagreement is not required as performance. The required action is calibration.；主题：Positive Claim Binding
 - 完整阅读：[docs/governance/non-sycophancy-output-protocol.md](../../docs/governance/non-sycophancy-output-protocol.md)
-
-<a id="reading-hr-7040ba2fdd013ab9"></a>
-## Step10 preflight and handoff
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：This is the final Builder / Research-Experiment Preparation step. The branch starts from Task189 exact head ca641a87ad7bc16d18a65f37cbe37b9a5cb733c8, targets stacked Draft base eval/IGNITION-20260919-189-r0-4-independent-evaluation, and keeps all Task190 surfaces research/evaluation-only. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Step10 preflight and handoff；This is the final Builder / Research-Experiment Preparation step. The branch starts from Task189 exact head ca641a87ad7bc16d18a65f37cbe37b9a5cb733c8, targets stacked Draft base eval/IGNITION-20260919-189-r0-4-independent-evaluation, and keeps all Task190 surfaces research/evaluation-only.；The per-step exact heads and one-commit/one-fast-forward ledger are in step-ledger.json. The machine-readable preflight is in step10-validation-receipt.json.；主题：Validation boundary；The task-local validator and all four fixture expectations passed. Step09 path accounting passed its two-pass fixed point with zero candidate fragments and zero canonical claim IDs.；A direct local full-history clone was attempted over HTTPS and SSH and was blocked by the environment's GitHub TLS/connection failure. Exact-head PR CI is the authoritative replacement: the existing workflows use actions/checkout@v4 with fetch-depth: 0, and Foundation validation uses the PR head SHA.
-- 完整阅读：[reports/evaluations/ignition-190-method-use-trace-r0/step10-preflight.md](../../reports/evaluations/ignition-190-method-use-trace-r0/step10-preflight.md)
-
-<a id="reading-hr-70a0b0d3dd83948a"></a>
-## Representation Residual Casebook — IGNITION-20260906-158
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：The entries below are repeated research residuals observed while comparing the existing static representation, repository generators, and historical controls. A residual family is a review lens, not a canonical failure class, schema, obligation, or production requirement. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Representation Residual Casebook — IGNITION-20260906-158；The entries below are repeated research residuals observed while comparing the existing static representation, repository generators, and historical controls. A residual family is a review lens, not a canonical failure class, schema, obligation, or production requirement.；RR-001 is grounded in docs/meta-protocols/meta-protocol-64-combination-matrix.md and docs/meta-protocols/version-iteration-note-20260709.md.；RR-002 is grounded in the function and non-function adjudication paths.；RR-003 is grounded in ignition/tools/governance/gensourcefirstseen.py and its generated first-seen record.；RR-004 is grounded in the function-asset census, non-function adjudication, knowledge-experience builder, and fire-seed census.
-- 完整阅读：[docs/governance/representation-residual-casebook-2026-09-06.md](../../docs/governance/representation-residual-casebook-2026-09-06.md)
-
-<a id="reading-hr-70b8bac01216167f"></a>
-## Supplemental record CASE02
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Representation note: structured synthetic records; relation rows connect source-linked records. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Supplemental record CASE02；Representation note: structured synthetic records; relation rows connect source-linked records.；[A01] Candidate-operation record: the purge control refreshes the selected edge-cache key. [A02] Candidate-operation record: the wait-and-probe control records regional revision markers and the origin warm marker. [A03] Current-state record: two named regions report B-12 and three report B-11. [A04] Origin record: an older origin snapshot remains available d…；主题：Recorded relations；[R01] A03 --STATESETFOR--> A04 :: The regional-marker set and origin-snapshot record describe the same rollout interval. [R02] A03 --BOUNDARYTONONAPPLICATION--> A01 :: Mixed regional markers with an older origin snapshot make a purge inapplicable now. Defer it until every named region reports B-12 and the origin warm marker is stable on two probes; an old or…
-- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE02.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/METHOD/CASE02.md)
-
-<a id="reading-hr-70edc5860a2e57c8"></a>
-## 扩展注释 · 赛课机制下的教师生存困境
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：扩展注释 · 赛课机制下的教师生存困境；主题：适合扩展旧条目的内容（说明为什么不是新增条目）；主题：扩展 E1：扩展退出权函数族，新增「结构性不可拒绝」子类；对应旧条目：FUNC-L1-EXIT 退出权函数族（A4/A9/D499）。；扩展内容：现有退出权函数族描述个体「可感知退出权 → 退出概率」的显式机制，但未覆盖「法律可拒绝但待遇绑定使实际退出成本无限高」的隐性剥夺情形。赛课材料显示：青年教师并非无退出权，而是退出权被绩效/职称绑定「架空」。建议在退出权函数族中补「绑定强度 → 实际可拒绝性」维度。；为什么不是新增条目：这是退出权机制的细分维度扩展，不是独立新机制，应并入现有函数族而非新建。
-- 完整阅读：[outputs/collisions/20260708-teacher-competition/expanded-notes.md](../../outputs/collisions/20260708-teacher-competition/expanded-notes.md)
-
-<a id="reading-hr-70fddc78f6837470"></a>
-## Claim argument evidence audit
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Claims, arguments and evidence now have separate registries. Legacy prose is not silently promoted to a valid argument or proof. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Claim argument evidence audit；Claims, arguments and evidence now have separate registries. Legacy prose is not silently promoted to a valid argument or proof.
-- 完整阅读：[reports/foundation-architecture/claim-argument-evidence-audit-20260712.md](../../reports/foundation-architecture/claim-argument-evidence-audit-20260712.md)
-
-<a id="reading-hr-7142e033279e204a"></a>
-## 083 Max Queue Readiness Report
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：Date: 2026-07-13 Task: IGNITION-20260709-083 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：083 Max Queue Readiness Report；Date: 2026-07-13 Task: IGNITION-20260709-083；353 self-contained max adjudication packages have been prepared for 084 processing. Each package contains all necessary information for max-level adjudication without requiring additional context retrieval.；主题：Queue Statistics；主题：Priority Distribution；主题：Risk Distribution
-- 完整阅读：[reports/foundation-architecture/083-max-queue-readiness.md](../../reports/foundation-architecture/083-max-queue-readiness.md)

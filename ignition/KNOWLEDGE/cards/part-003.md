@@ -4,6 +4,46 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-077438a238642315"></a>
+## Epistemic Governance Kernel and Federated Planes
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-077438A238642315` · [docs/architecture/epistemic-governance-kernel-and-federated-planes.md](../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
+- **为什么产生：** 此来源记录了什么：Epistemic Governance Kernel and Federated Planes？
+- **当前状态：** `HISTORICAL_COMPLETION_RECORD`
+- **当前结果：** Status: OWNERACCEPTEDWITHEXPLICITRESIDUALS Architecture disposition: FEDERATEDARCHITECTUREONLY Alias: Knowledge Qualification Federation
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/architecture/epistemic-governance-kernel-and-federated-planes.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-08-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Epistemic Governance Kernel and Federated Planes`, `epistemic-governance-kernel-and-federated-planes`
+
+<a id="asset-hr-07c0a722103fa88b"></a>
+## IGNITION-20260824-138 — Step 11 Obligation Semantics
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-07C0A722103FA88B` · [reports/operations/ignition-138-step11-obligation-semantics.md](../../reports/operations/ignition-138-step11-obligation-semantics.md)
+- **为什么产生：** 此来源记录了什么：IGNITION-20260824-138 — Step 11 Obligation Semantics？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** The inherited Hermes live-hermes-136 reconciliation remains open exactly as recorded by Task137. No new evidence proves reconciled-no-side-effect or closes the timeout/effect uncertainty, so no Hermes resume, retry or channel action is created. The inherited OpenClaw safety-boundary blockers are…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/operations/ignition-138-step11-obligation-semantics.md`, `138-STEP11-OBLIGATION-SEMANTICS`
+- **演化历史：** 2026-08-24: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `IGNITION-20260824-138 — Step 11 Obligation Semantics`, `ignition-138-step11-obligation-semantics`
+
 <a id="asset-hr-07eaa526c5114401"></a>
 ## 持续自我纠错引擎
 
@@ -963,43 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `CASE01 — Checkpoint export selection`, `PK-87E4C138ACC9`
-
-<a id="asset-hr-1bf6463b42d7824f"></a>
-## 生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1BF6463B42D7824F` · [reports/operations/lifecycle-audit-108.md](../../reports/operations/lifecycle-audit-108.md)
-- **为什么产生：** 此来源记录了什么：生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** data/operations/merged-iteration-ledger.jsonl 在 main 上呈现：
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/lifecycle-audit-108.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-08-01: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `生命周期审计 · 任务 108（双相迭代终态化与自闭合当前真相 R1）`, `lifecycle-audit-108`
-
-<a id="asset-hr-1c328f9ffe6aee1f"></a>
-## V4 规范性审核 - 可持续性协议 (Sustainability Protocol)
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-1C328F9FFE6AEE1F` · [docs/governance/meta-protocol-reviews/protocols/V4.md](../../docs/governance/meta-protocol-reviews/protocols/V4.md)
-- **为什么产生：** 此来源记录了什么：V4 规范性审核 - 可持续性协议 (Sustainability Protocol)？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** 价值：在多时间尺度上维持再生能力、承载能力、多样性与代际公平，是共同体长期繁荣的硬边界。条件：仅当它指向再生与公平，而非维持有害现状时才有价值。伤害：当它被用作保护有害系统、压制必要改革或牺牲主体尊严的借口时，会伤害共同体。不可缺少的约束：再生优先于存量维持、不得保护有害系统、代际公平、多样性、不得无限压倒个体。
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/meta-protocol-reviews/protocols/V4.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-07-11: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `V4 规范性审核 - 可持续性协议 (Sustainability Protocol)`, `V4`

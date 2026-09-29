@@ -4,9 +4,9 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./systems/part-001.md)：1—500；"1_FunctionSpec", "2_Representation", "3_Compiler", "4_Artifact", → d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。
-- [第 002 片](./systems/part-002.md)：501—1000；data/external-research/088-external-source-atlas-medium.jsonl → Object D375 defines a mechanism_model within the point-fire framework. Core: 中文：M6的δ_c不归点恰好是D305退化路径的分叉点。δ<δ_c在d=4附近振荡（可
-- [第 003 片](./systems/part-003.md)：1001—1500；Object D376 defines a mechanism_model within the point-fire framework. Core: 中文：M7的联合效应极限∝-ln\(P_min\)∝n——n越大极限越高→大系统能承受更多 → \| \[C-0677\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优
-- [第 004 片](./systems/part-004.md)：1501—2000；\| \[C-0692\]\( \) \| \[梅纳德快速缩小间隔\]\( \) \| 突破后认知熵快速下降，系统从"不可能"相变到"可能"，涌现出大量优 → 即使作为案例，也应先查重、再决定是否入表；smoke test 阶段不做此判断。
-- [第 005 片](./systems/part-005.md)：2001—2500；历史因果不能写成单因决定论； → 真诚信仰、政治利用和制度化并不互相排斥；把它们硬切成纯真或纯假会丢失机制。
-- [第 006 片](./systems/part-006.md)：2501—2705；研究只能支持“在哪些维度需要检查”，不能直接判定一条历史因果或一篇文章的意义。机器配置中的每条 tendency 都要回链证据 ID，并附 `claim_ceiling`。研究有冲突时，配置把该维度标为 `mixed` 或 `open`，而 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。
+- [第 001 片](./systems/part-001.md)：1—500；"AI 对齐困难是由价值观、目标、反馈等多重因素共同导致"（这是 AI 界和计算机科学界的共识，点火框架只是重述） → d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。
+- [第 002 片](./systems/part-002.md)：501—1000；d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。 **扩展注释 / Extended Annotati → Object D378 defines a mechanism_model within the point-fire framework. Core: 中文：M9的R_irreversible ≈ 1 - e^{-n²·p̄·Σαᵢ/β}
+- [第 003 片](./systems/part-003.md)：1001—1500；Object D379 defines a mechanism_model within the point-fire framework. Core: 中文：M10的溢出量∝ḡ·p_max·ΔC_i/n，方向系数∝p_max/p̄。p_m → \| \[C-542\]\( \) \| \[高温超导 — 多门控面共振，Tc远高于单机制预言\]\(<./0537-C-542-高温超导 — 多门控面共振,Tc远高于单机制预
+- [第 004 片](./systems/part-004.md)：1501—2000；\| \[C-57\]\( \) \| \[WeWork\]\( \) \| "We家族"认同被验证但协作系统未建 \| → 原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD\(0.3,0.5,0.7\),初始ε=\(0.1,0.3,0.5\)。S由ε3决定\(最接近门槛\)。投
+- [第 005 片](./systems/part-005.md)：2001—2500；原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD → 脱不花在财务决策中长期被动，真实退出权不足，导致个人财务契约始终失衡。
+- [第 006 片](./systems/part-006.md)：2501—2665；脱不花长期缺乏系统化财务协议，导致决策只能零散应对，无法形成元协议级治理。 → 黑死病是加速器。它加速了共享机制的失效。人口锐减，税收减少，汗无法再通过共享收入维持别克们的忠诚。别克们开始各自为政，汗的权威成了空壳。这是内部的共享机制崩溃了。

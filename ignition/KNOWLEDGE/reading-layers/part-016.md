@@ -4,6 +4,62 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-ea8833ef83822509"></a>
+## IGNITION-20260828-144 Step 11 — cross-surface split-brain audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：The current machine sources agree on Task144 as the active presentation-only closure task and Task142 as the latest architecture-changing task. The phase state, Owner production-brief template, deferred backlog, formal lifecycle, open-obligation registry and release lifecycle agree on their respe… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260828-144 Step 11 — cross-surface split-brain audit；The current machine sources agree on Task144 as the active presentation-only closure task and Task142 as the latest architecture-changing task. The phase state, Owner production-brief template, deferred backlog, formal lifecycle, open-obligation registry and release lifecycle agree on their respective boundaries.；Seven Current Snapshot surfaces were checked. None exposes the historical RUNDYNAMICEXECUTORADMISSION value as a current pointer; historical occurrences remain preserved as historical evidence. The Results Book has one registry and one canonical README entrypoint. All six Task143 registry rows and the three article manifest entries retain the smoke-test/non-…；Step 11 therefore records no deterministic closure blocker. The remaining LIVEEXTERNALINVOCATION obligation is open but independently Owner-deferred, not a Task144 engineering blocker.
+- 完整阅读：[reports/operations/ignition-144-step11-cross-surface-audit.md](../../reports/operations/ignition-144-step11-cross-surface-audit.md)
+
+<a id="reading-hr-eabed7bd3564479d"></a>
+## IGNITION-20260829-148 typed change-propagation impact report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：IGNITION-20260829-148 typed change-propagation impact report；Closure complete: true；Closure hash: fc273554be492455c273b17cc8011a4906de6354c5294495bd089aab1c28b3fa；Fixpoint iterations: 2；Seeds: aiguide, currentstate, formaltasklifecycler1, foundation, historicalreports, humanknowledgesurfaces, ignitionoperatingmethod, iterationmanifestcontract, l6, nol7, openobligationregistryr1, projectcomponentregistry, propagationcalculator, systemmapprojection；Resolved components: 35
+- 完整阅读：[reports/operations/IGNITION-20260829-148-change-propagation-impact.md](../../reports/operations/IGNITION-20260829-148-change-propagation-impact.md)
+
+<a id="reading-hr-eac563ea0a86b785"></a>
+## Pre-freeze reviewer E — endpoint and preregistration audit
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Scope: read-only review of the Component-A endpoint and interpretation contract. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Pre-freeze reviewer E — endpoint and preregistration audit；Scope: read-only review of the Component-A endpoint and interpretation contract.；For complete, scorable data, the chain remains REFA AND NOT OA AND REFB AND REFC, and the working/partial thresholds are unchanged. Missing, invalid, or unusable M0ONLY A data cannot count as a successful negative control: it sets OACONTROLOBSERVED=false and forces that lineage's chain false while retaining the fixed denominator of six. No remaining endpoint…
+- 完整阅读：[reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-E.md](../../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/review/reviewer-E.md)
+
+<a id="reading-hr-eb0fa16319dfda4e"></a>
+## CASE01 — Checkpoint export selection
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：All names, records, dates, and tools are synthetic. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：CASE01 — Checkpoint export selection；All names, records, dates, and tools are synthetic.；[F01] A packet contains signed document version 3 associated with checkpoint C-17 and a later version 4 correction marked unsigned. [F02] Route Alder's preview lists a signed-document field, signature timestamp, and approval-event reference; it does not list a per-file digest. [F03] Route Birch's preview lists a version sequence and per-file digest; its opti…
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/facts.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/case-families/CASE01/facts.md)
+
+<a id="reading-hr-ebb1fa6b2f55aaaf"></a>
+## Agent A — Architecture alignment proposal
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `ARCHITECTURE_GOVERNANCE`
+- 1 分钟：Read-only proposal. No repository files were changed. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Agent A — Architecture alignment proposal；Read-only proposal. No repository files were changed.；For bounded synthetic cases, a source-linked complete method trace is needed to justify method-specific selection, use, outcome, and revision claims. A local procedural skill can support an action where its preconditions hold but carries no method lineage. An incomplete trace must remain bounded nonapplication or unknown. This tests dependence for warranted…；Representation: Cognitive IR R0 has METHOD but no SKILL. Task207's local procedural-skill schema cleanly separates local steps, preconditions, stop conditions, and observable fields from selection rationale and history. Preserve source hashes, locators, uncertainty, and claim boundaries.；Cognitive Method: test whether a trace reconstructs context-gated selection and use. The R0 method slots are observable artifact records, not hidden reasoning traces.；Cognitive Evolution: connect anomaly or failure and reframing to a revised representation/method, independent evaluation, disposition, and migration lineage. A code or text diff alone does not establish evolution.
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/A.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/design/multi-agent-proposals/A.md)
+
+<a id="reading-hr-ebcda7ca000d3bac"></a>
+## 121Q2R Final Report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Generated: 2026-07-14T17:04:01Z 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q2R Final Report；主题：STATUS: COMPLETE — FORCED STOP per Step 017；Generated: 2026-07-14T17:04:01Z；主题：1. Execution Identity；Actual model: qclaw/pool-glm-5.2-night；Reasoning level: high (adaptive, but operating at high for this task)
+- 完整阅读：[reports/external-research/121Q2R-final-report.md](../../reports/external-research/121Q2R-final-report.md)
+
+<a id="reading-hr-ebcf23ec787cac52"></a>
+## Task228 target-blind instrument authoring guide R1
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：For one candidate, use only its family's frozen m0.md, raw revision-evidence-e1.md, this normative contract, and an explicit researcher-authored mapping declaration. Do not open or use A/B/C targets, Task227 policy files, Task227 scores or dispositions, transfer outputs, or target-compatibility a… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task228 target-blind instrument authoring guide R1；主题：Allowed construction inputs；For one candidate, use only its family's frozen m0.md, raw revision-evidence-e1.md, this normative contract, and an explicit researcher-authored mapping declaration. Do not open or use A/B/C targets, Task227 policy files, Task227 scores or dispositions, transfer outputs, or target-compatibility artifacts. Do not run a builder model or any transfer/revision s…；The declaration is the human-authored semantic transformation. The compiler only verifies its input bindings and serializes the declared rows into canonical JSON; compiler determinism does not make the semantic mapping itself deterministic or scientifically proven.；主题：Declaration and evidence locators；Each declaration names one family and candidate, exact source paths and frozen hashes, evidence items, scalar input meanings, selector/action/region rows, preserved M0 actions, fallback, stops, scope ceiling, and evidence references for every typed element. Each evidence item has an inclusive 1-based line range. Hash the exact concatenated LF-delimited byte…
+- 完整阅读：[reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/instrument-authoring-guide.md](../../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/instrument-authoring-guide.md)
+
+<a id="reading-hr-ebd5091c3be06f0a"></a>
+## 121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `SYSTEMS`, `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: REALHISTORYOPERATIONALPROOFREGENERATEDWITHPATHSTATEANDREFERENCECONTRACT 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：121Q23C/121Q23D/121Q23E Operational ARN Real-History Validation；Status: REALHISTORYOPERATIONALPROOFREGENERATEDWITHPATHSTATEANDREFERENCECONTRACT；Before ARN operational hardening: 1f3815538cf56d0f35cc06c6b2396fadf33a34a2；After ARN path-state and reference closure: recorded in data/architecture/adaptive-relational-network/real-history/deterministic-replay.json；before-projection.json；after-projection.json
+- 完整阅读：[reports/architecture/121Q23C-operational-arn-real-history-validation.md](../../reports/architecture/121Q23C-operational-arn-real-history-validation.md)
+
 <a id="reading-hr-ebfbf26abf72ff4c"></a>
 ## IGNITION-20260827-143 Step 17 — Current State 同步与出版边界审计
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`

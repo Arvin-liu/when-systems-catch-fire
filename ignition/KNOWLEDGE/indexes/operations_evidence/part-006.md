@@ -4,476 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [lim=int\(parts\[-1\]\); q=" ".join\(parts\[:-1\]\)](../../../scripts/external-research/anysearch_client.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-C6DCBF56B3E4FAAF / lim=int\(parts\[-1\]\); q=" ".join\(parts\[:-1\]\) / IMPLICIT-C6DCBF56B3E4FAAF
-  - 来源：`scripts/external-research/anysearch_client.py`
-  - 依赖：—；被引用：—
-- [live_observation: the canonical projection contains five attempts, zero validated completions, zero unreconciled attempt](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-78a0a495c66b19b3 / live_observation: the canonical projection contains five attempts, zero validated completions, zero unreconciled attempt
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-366ea11858254982 / live_observation: the canonical projection contains six attempts, zero validated completions, zero unreconciled attempts
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [live_observation: the canonical R3 projection contains six attempts, zero validated completions, zero unreconciled attem](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-b3b71ba18a43c3f3 / live_observation: the canonical R3 projection contains six attempts, zero validated completions, zero unreconciled attem
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [live_observation: the historical projection remains six attempts, zero validated completions, zero unreconciled attempts](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-1d6d404f3a27ec9d / live_observation: the historical projection remains six attempts, zero validated completions, zero unreconciled attempts
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [live_observation: the six-attempt projection remains dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`,](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a832cc9f4e0d994d / live_observation: the six-attempt projection remains dispatch `OBSERVED`, process `OBSERVED`, inference `NOT_OBSERVED`,
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [LORAUTER full-text review: validation-backed task representations, task-adapter catalog construction, query-task retriev](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8110b07adbcfd2a2 / LORAUTER full-text review: validation-backed task representations, task-adapter catalog construction, query-task retriev
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-170ED17891544D42 / M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-170ED17891544D42 / IMPLICIT-63FAE8AD62F6660D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-63FAE8AD62F6660D / M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-63FAE8AD62F6660D / IMPLICIT-170ED17891544D42
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-81F4EADAFE7C6FCF / M\(B_n\) := ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-81F4EADAFE7C6FCF / IMPLICIT-170ED17891544D42
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [M\(B_n\) = ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-854C67528F7AB092 / M\(B_n\) = ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-854C67528F7AB092 / IMPLICIT-170ED17891544D42
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [M\(B_n\) = ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D20E5358AF07A597 / M\(B_n\) = ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-D20E5358AF07A597 / IMPLICIT-170ED17891544D42
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [M\(B_n\) = ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D670398EF833CB79 / M\(B_n\) = ∫\(ΔB_n / ΔB_{n-1}\) × bootstrap_loop × convergence_threshold / bootstrap_topology / IMPLICIT-D670398EF833CB79 / IMPLICIT-170ED17891544D42
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [machine and human projections: Current Facts, sole interactive map, SVG, human/AI front doors, Federation boundary and a](../../../reports/operations/ignition-129-step20-current-sync.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-df13080cfb2319d1 / machine and human projections: Current Facts, sole interactive map, SVG, human/AI front doors, Federation boundary and a
-  - 来源：`reports/operations/ignition-129-step20-current-sync.md`
-  - 依赖：—；被引用：—
-- [main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is a task-branch pre-release projection at `983aff0b280313c79d82484f60](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-02191a201cfee59e / main_state: `CURRENT_WITH_OPEN_OBLIGATIONS`; this is a task-branch pre-release projection at `983aff0b280313c79d82484f60
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [mapping_consistency := ∫_{A×B} \|\|φ\(x\) - y\|\|² dμ\(x,y\)（映射一致性积分）](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-09BCCD433065F7DB / mapping_consistency := ∫_{A×B} \|\|φ\(x\) - y\|\|² dμ\(x,y\)（映射一致性积分） / IMPLICIT-09BCCD433065F7DB / IMPLICIT-87E19C0BBDBCE9FB
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [mapping_consistency := ∫_{A×B} \|\|φ\(x\) - y\|\|² dμ\(x,y\)（映射一致性积分）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-87E19C0BBDBCE9FB / mapping_consistency := ∫_{A×B} \|\|φ\(x\) - y\|\|² dμ\(x,y\)（映射一致性积分） / IMPLICIT-87E19C0BBDBCE9FB / IMPLICIT-09BCCD433065F7DB
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [matching = \[entry for entry in entries if entry.get\("request", {}\).get\("review_id"\) == review_id\]](../../../reos_vnext/kernel.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E3570D46F135890B / matching = \[entry for entry in entries if entry.get\("request", {}\).get\("review_id"\) == review_id\] / IMPLICIT-E3570D46F135890B
-  - 来源：`reos_vnext/kernel.py`
-  - 依赖：—；被引用：—
-- [Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/](../../ASSET-CARDS.md#asset-nfc-c349fbdc470b50ab)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-c349fbdc470b50ab / Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/ / - Meaningful knowledge changes must regenerate the task-102 What's New, subject map, asset cards, reading layers, aliases/supersession, full search and bidirectional dependency projections; these discovery surfaces never override canonical registries or evidence maturity.
-  - 来源：`llms.txt`
-  - 依赖：—；被引用：—
-- [meta_protocol_topology := ∫_{Ω} I_iso\(A,B\) × L_meta × G_δ dΩ（元协议拓扑积分）](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-1F01489E460501F5 / meta_protocol_topology := ∫_{Ω} I_iso\(A,B\) × L_meta × G_δ dΩ（元协议拓扑积分） / IMPLICIT-1F01489E460501F5 / IMPLICIT-CD2A5386E936680A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [meta_protocol_topology := ∫_{Ω} I_iso\(A,B\) × L_meta × G_δ dΩ（元协议拓扑积分）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-CD2A5386E936680A / meta_protocol_topology := ∫_{Ω} I_iso\(A,B\) × L_meta × G_δ dΩ（元协议拓扑积分） / IMPLICIT-CD2A5386E936680A / IMPLICIT-1F01489E460501F5
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [Method vs facts/skill/template ablation design R0](../../ASSET-CARDS.md#asset-hr-c386d0cc5aa6970d)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Method vs facts/skill/template ablation design R0 / ablation-design
-  - 来源：`reports/evaluations/ignition-190-method-use-trace-r0/ablation/ablation-design.md`
-  - 依赖：—；被引用：—
-- [M₁\(x\) := G₁\(x\) = ∏_{i=1}^{n} x_i](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D019FDD70A9254BC / M₁\(x\) := G₁\(x\) = ∏_{i=1}^{n} x_i / IMPLICIT-D019FDD70A9254BC / IMPLICIT-FDEF1008CEB8B8E8
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [M₁\(x\) := G₁\(x\) = ∏_{i=1}^{n} x_i](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FDEF1008CEB8B8E8 / M₁\(x\) := G₁\(x\) = ∏_{i=1}^{n} x_i / IMPLICIT-FDEF1008CEB8B8E8 / IMPLICIT-D019FDD70A9254BC
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [M₂\(线性组合\)和M₃\(对数衰减\)都是线性变换的特殊形式,M₃是M₂在对数空间的投影,归入U₂](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-8b56603c334d900a / M₂\(线性组合\)和M₃\(对数衰减\)都是线性变换的特殊形式,M₃是M₂在对数空间的投影,归入U₂
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [M₄\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-0198CFC2215AB617 / M₄\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\) / IMPLICIT-0198CFC2215AB617 / IMPLICIT-453279BF5E747BE1
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [M₄\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\)](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-453279BF5E747BE1 / M₄\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\) / IMPLICIT-453279BF5E747BE1 / IMPLICIT-0198CFC2215AB617
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [n_lock\(Ω\) = Σᵢ step\(C_exit\(Ωᵢ\) > θ_C\(Ωᵢ\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7E351C611EFB6A90 / n_lock\(Ω\) = Σᵢ step\(C_exit\(Ωᵢ\) > θ_C\(Ωᵢ\)\) / IMPLICIT-7E351C611EFB6A90
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [NC-001 / NC-002**：建议入表，但待 NF-001/NF-002 先入表后对应。](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-0f58ab563dd645fe / NC-001 / NC-002**：建议入表，但待 NF-001/NF-002 先入表后对应。
-  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
-  - 依赖：—；被引用：—
-- [NC-001 职称硬门槛裹挟：暂缓（待 NF-001 先入表后对应）](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-7d04e544af52470f / NC-001 职称硬门槛裹挟：暂缓（待 NF-001 先入表后对应）
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [NC-002 表演化假课与指标消解温度：暂缓（待 NF-002 先入表后对应）](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-7096d148b46fc2e6 / NC-002 表演化假课与指标消解温度：暂缓（待 NF-002 先入表后对应）
-  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
-  - 依赖：—；被引用：—
-- [Neutral fresh transfer prompt](../../ASSET-CARDS.md#asset-hr-f1199313764281b0)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Neutral fresh transfer prompt / prompt
-  - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/prompt.md`
-  - 依赖：—；被引用：—
-- [New projections use `live-current-projection-r2`. Typed attempt summaries do](../../../reports/operations/ignition-140-step04-typed-observation-outcomes.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-7df8eaff4320ebb4 / New projections use `live-current-projection-r2`. Typed attempt summaries do
-  - 来源：`reports/operations/ignition-140-step04-typed-observation-outcomes.md`
-  - 依赖：—；被引用：—
-- [NEW_OBJECT_TYPE（8个 HIGH）**：GAP-001~008，对应 087 重算 missing 占多数（164~250），需开新对象类型承载外部理论来源族。](../../../data/external-research/088-patch-blueprint.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-3badfadb463ef0e3 / NEW_OBJECT_TYPE（8个 HIGH）**：GAP-001~008，对应 087 重算 missing 占多数（164~250），需开新对象类型承载外部理论来源族。
-  - 来源：`data/external-research/088-patch-blueprint.md`
-  - 依赖：—；被引用：—
-- [next_read: follow the Task132 execution contract, release-candidate identity gate and generated Current projection; hist](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-56275503ba50c8a9 / next_read: follow the Task132 execution contract, release-candidate identity gate and generated Current projection; hist
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read \[`current-release-lifecycle-r1.json`\]\(./data/operations/current-release-lifecycle-r1.json\), \[`current-sn](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-710279d3c6596422 / next_read: read \[`current-release-lifecycle-r1.json`\]\(./data/operations/current-release-lifecycle-r1.json\), \[`current-sn
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read \[Task139 execution contract\]\(./data/operations/iterations/139/execution-contract-r1.json\), \[historical L](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-74766f3eb275b970 / next_read: read \[Task139 execution contract\]\(./data/operations/iterations/139/execution-contract-r1.json\), \[historical L
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read `data/operations/iterations/134/step14-residual-debt-projection-hygiene-r1.json`, `data/operations/itera](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-1cbf5b1dadbe2f01 / next_read: read `data/operations/iterations/134/step14-residual-debt-projection-hygiene-r1.json`, `data/operations/itera
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read the Task141 Step 12 R3 projection, Step 13 adversarial matrix, Step 14 current-state receipt and then co](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-113f070441242d24 / next_read: read the Task141 Step 12 R3 projection, Step 13 adversarial matrix, Step 14 current-state receipt and then co
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read the Task144 execution contract, phase-closure state, Owner authority contract, Results Book entrypoint a](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4f4a19973086351c / next_read: read the Task144 execution contract, phase-closure state, Owner authority contract, Results Book entrypoint a
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read this delta, \[Task 127 progress\]\(./data/operations/iterations/127/progress.jsonl\), \[current identity\]\(./d](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-5a3dfe7f8c39927f / next_read: read this delta, \[Task 127 progress\]\(./data/operations/iterations/127/progress.jsonl\), \[current identity\]\(./d
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [next_read: read this task-branch projection with \[current-state-sync-receipt\]\(./data/operations/iterations/123/current-s](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-f3e0746f13562508 / next_read: read this task-branch projection with \[current-state-sync-receipt\]\(./data/operations/iterations/123/current-s
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [NF-003：已在上轮重定向为 D173 扩展注释（本任务不重复处理，仅作案例对应标注）](../../../outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-9d9234527cabca59 / NF-003：已在上轮重定向为 D173 扩展注释（本任务不重复处理，仅作案例对应标注）
-  - 来源：`outputs/audit/nc-002-performed-fake-class-backfill-audit-20260708.md`
-  - 依赖：D173；被引用：—
-- [No "this paper's function corresponds to ignition function X"](../../../reports/external-research/120-source-quality-and-template-risk-audit.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-be848efa935ca4a3 / No "this paper's function corresponds to ignition function X"
-  - 来源：`reports/external-research/120-source-quality-and-template-risk-audit.md`
-  - 依赖：—；被引用：—
-- [No `ignore`, `skip`, residual broadening or validator weakening was used. Step 11 must repair only the current projectio](../../../reports/operations/ignition-134-step10-full-unittest-discovery.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-08c091c8a293ed5f / No `ignore`, `skip`, residual broadening or validator weakening was used. Step 11 must repair only the current projectio
-  - 来源：`reports/operations/ignition-134-step10-full-unittest-discovery.md`
-  - 依赖：—；被引用：—
-- [not_checked = \[s\["source_id"\] for s in sources if s.get\("retraction_check_status"\) == "NOT_CHECKED"\]](../../../data/external-research/106-105-correction/106-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-63865700D1371589 / not_checked = \[s\["source_id"\] for s in sources if s.get\("retraction_check_status"\) == "NOT_CHECKED"\] / IMPLICIT-63865700D1371589 / IMPLICIT-E83129CAEC0FAF95
-  - 来源：`data/external-research/106-105-correction/106-validator.py`
-  - 依赖：—；被引用：—
-- [not_checked = \[s\["source_id"\] for s in sources if s.get\("retraction_check_status"\) == "NOT_CHECKED"\]](../../../data/external-research/105-intervention-control/105-evidence-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E83129CAEC0FAF95 / not_checked = \[s\["source_id"\] for s in sources if s.get\("retraction_check_status"\) == "NOT_CHECKED"\] / IMPLICIT-E83129CAEC0FAF95 / IMPLICIT-63865700D1371589
-  - 来源：`data/external-research/105-intervention-control/105-evidence-validator.py`
-  - 依赖：—；被引用：—
-- [NoviCode full-text review: cAST intermediate representation, deterministic AST-to-Python compilation, mock-API execution](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-945fab5da488e628 / NoviCode full-text review: cAST intermediate representation, deterministic AST-to-Python compilation, mock-API execution
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [O_i\(x,y\) := 第 i 个同构算子的判定结果](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-45435fb7d6d3c6de / O_i\(x,y\) := 第 i 个同构算子的判定结果
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [obligation_open = obligation.get\("current_status"\) == "OPEN"](../../../agent_federation/task142_adversarial.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-FE8F6D6FE350E3A2 / obligation_open = obligation.get\("current_status"\) == "OPEN" / IMPLICIT-FE8F6D6FE350E3A2
-  - 来源：`agent_federation/task142_adversarial.py`
-  - 依赖：—；被引用：—
-- [obligations: Step 09–13 must retain the 11 pre-existing Human Surface source-hash drifts, historical projection residual](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-8d6c0ce89d856afd / obligations: Step 09–13 must retain the 11 pre-existing Human Surface source-hash drifts, historical projection residual
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [observed = result.captured_events and result.captured_events\[0\].get\("result"\) == result_value and result.capture_capsule\["capture_completeness"\] == "COMPLETE"](../../../agent_federation/live_capture_fault_matrix.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-7071C8835B6C7D2F / observed = result.captured_events and result.captured_events\[0\].get\("result"\) == result_value and result.capture_capsule\["capture_completeness"\] == "COMPLETE" / IMPLICIT-7071C8835B6C7D2F
-  - 来源：`agent_federation/live_capture_fault_matrix.py`
-  - 依赖：—；被引用：—
-- [ops = len\(re.findall\(r"\[∀∃∈⊆⊂→↔∧∨¬⇒⇔∂∇∫∑∏≡≈≤≥\]", text\)\)](../../../function-os-candidate/v0.2/function_os/importer/legacy_asset_importer.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D502DA2E6D6991FA / ops = len\(re.findall\(r"\[∀∃∈⊆⊂→↔∧∨¬⇒⇔∂∇∫∑∏≡≈≤≥\]", text\)\) / IMPLICIT-D502DA2E6D6991FA
-  - 来源：`function-os-candidate/v0.2/function_os/importer/legacy_asset_importer.py`
-  - 依赖：—；被引用：—
-- [Optimal Convergence Rates full-text review: shallow neural-operator NTK/RKHS analysis, early stopping, width and two-sta](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-5ddc8b3bb514f231 / Optimal Convergence Rates full-text review: shallow neural-operator NTK/RKHS analysis, early stopping, width and two-sta
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
-  - 依赖：—；被引用：—
-- [original_extracted = sum\(1 for e in extraction_manifest if e.get\("extraction_status"\) == "SUCCESS"\)](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-574D8D79822A822A / original_extracted = sum\(1 for e in extraction_manifest if e.get\("extraction_status"\) == "SUCCESS"\) / IMPLICIT-574D8D79822A822A
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
-  - 依赖：—；被引用：—
-- [original_verified = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "ORIGINAL_SUCCESS_VERIFIED"\)](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-440D713FA4108EBB / original_verified = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "ORIGINAL_SUCCESS_VERIFIED"\) / IMPLICIT-440D713FA4108EBB
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
-  - 依赖：—；被引用：—
-- [Outcome**: Did the prediction hold? If not, what failed?](../../../docs/falsifiability/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6639c6be08d8960a / Outcome**: Did the prediction hold? If not, what failed?
-  - 来源：`docs/falsifiability/README.md`
-  - 依赖：—；被引用：—
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：D570 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / D570 / T100
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：NFC-00f68294b8e6ce4d
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T100 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T100 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：NFC-8eb2dd5da70992ac
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T61 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T61 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T70 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T70 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T71 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T71 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T80 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T80 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [outputs/getbrain/v0.2-function-dependency-graph-20260706.md](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：T81 / outputs/getbrain/v0.2-function-dependency-graph-20260706.md / T81 / D570
-  - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
-  - 依赖：—；被引用：—
-- [overlay projection digest](../../../reports/operations/ignition-140-step07-canonical-reconciliation-events.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-2c599b58a5bd055e / overlay projection digest
-  - 来源：`reports/operations/ignition-140-step07-canonical-reconciliation-events.md`
-  - 依赖：—；被引用：—
-- [Owner Review R1 — initial freeze rejected for launch](../../ASSET-CARDS.md#asset-hr-026cc267d69c82cb)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：Owner Review R1 — initial freeze rejected for launch / OWNER-REVIEW-R1
-  - 来源：`reports/evaluations/ignition-217-method-dependency-benchmark-r0/OWNER-REVIEW-R1.md`
-  - 依赖：—；被引用：—
-- [O₁\(x,y\) := D177\(参数空间同构\)**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-018252cbca715f7b / O₁\(x,y\) := D177\(参数空间同构\)**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：D177；被引用：—
-- [O₁₀\(x,y\) := D179-energy\(能量尺度同构\)**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-d190df70147d8208 / O₁₀\(x,y\) := D179-energy\(能量尺度同构\)**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：D179；被引用：—
-- [O₁₁\(x,y\) := D179-info\(信息尺度同构\)**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-0c916667739dd129 / O₁₁\(x,y\) := D179-info\(信息尺度同构\)**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：D179；被引用：—
-- [O₁₂\(x,y\) := D179-dynamics\(动力学同构\)**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-7ac11efda8095c56 / O₁₂\(x,y\) := D179-dynamics\(动力学同构\)**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：D179；被引用：—
-- [O₁₃\(x,y\) := D179-scaling\(尺度律同构\)**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-7bca4233d64f5e3d / O₁₃\(x,y\) := D179-scaling\(尺度律同构\)**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：D179；被引用：—
-- [O₁₄\(x,y\) := D179-phase\(相变同构\)**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-7422eb4bb760e86a / O₁₄\(x,y\) := D179-phase\(相变同构\)**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：D179；被引用：—
-- [O₄\(x,y\) := Θ-Y1统一同构**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-6d0c3f0ad475f22f / O₄\(x,y\) := Θ-Y1统一同构**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：Y1；被引用：—
-- [O₅\(x,y\) := E-001与Ψ₀同构**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-777d9dfcb4a34a75 / O₅\(x,y\) := E-001与Ψ₀同构**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [O₆\(x,y\) := C-002四象限同构**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-12f252509b0faab3 / O₆\(x,y\) := C-002四象限同构**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [O₇\(x,y\) := 乘法归零跨域同构**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-cd12af4876604de8 / O₇\(x,y\) := 乘法归零跨域同构**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [O₉\(x,y\) := D179-space\(空间尺度同构\)**](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-d3752f6689d085cd / O₉\(x,y\) := D179-space\(空间尺度同构\)**
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：D179；被引用：—
-- [P1 机器可读化抽取可行性审计](../../ASSET-CARDS.md#asset-hr-850e9cc7f0805b92)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：P1 机器可读化抽取可行性审计 / p1-extraction-feasibility-audit-20260707
-  - 来源：`outputs/audit/p1-extraction-feasibility-audit-20260707.md`
-  - 依赖：—；被引用：—
-- [P1 机器可读数据完整性审计](../../ASSET-CARDS.md#asset-hr-12a0a75721794540)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：P1 机器可读数据完整性审计 / p1-machine-readable-data-audit-20260707
-  - 来源：`outputs/audit/p1-machine-readable-data-audit-20260707.md`
-  - 依赖：—；被引用：—
-- [P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08）](../../ASSET-CARDS.md#asset-hr-8ace59cddddfe0a2)
-  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-  - 可搜索名称：P1 机器数据接入碰撞工作流 · Smoke Test 审计（2026-07-08） / p1-collision-workflow-smoke-test-20260708
-  - 来源：`outputs/audit/p1-collision-workflow-smoke-test-20260708.md`
-  - 依赖：—；被引用：—
-- [P_exit\(t\)=f\(Ω\(t\),T\(t\),C\(t\),σ\(t\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-A566E114A89FBA0D / P_exit\(t\)=f\(Ω\(t\),T\(t\),C\(t\),σ\(t\)\) / IMPLICIT-A566E114A89FBA0D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [P_exit\(t\)=P_exit\(Ω,T,C,σ\) × e^\(-Γ_unified×t\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8505F775CFB985D6 / P_exit\(t\)=P_exit\(Ω,T,C,σ\) × e^\(-Γ_unified×t\) / IMPLICIT-8505F775CFB985D6
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [P_exit\(Ω\) = R\(Ω\) - C\(Ω\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3924649C87DE3F2A / P_exit\(Ω\) = R\(Ω\) - C\(Ω\) / IMPLICIT-3924649C87DE3F2A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [P_exit\(Ω\)=f\(Ω,T,C,σ\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-18FBED247D16439B / P_exit\(Ω\)=f\(Ω,T,C,σ\) / IMPLICIT-18FBED247D16439B
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [P_exit_decay\(Ω,t\) = P_exit\(Ω,0\) × e^\(-λ·t\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-ECAC4B94BB052FC1 / P_exit_decay\(Ω,t\) = P_exit\(Ω,0\) × e^\(-λ·t\) / IMPLICIT-ECAC4B94BB052FC1
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [P_exit_phase\(ε_aware\) = {5个相变点}](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-8A763CCA00E7001F / P_exit_phase\(ε_aware\) = {5个相变点} / IMPLICIT-8A763CCA00E7001F
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [P_meta := ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-4245BB389CC8B154 / P_meta := ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology / IMPLICIT-4245BB389CC8B154 / IMPLICIT-34DAE058B2385F56
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [P_meta := ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-99D51675EC72A601 / P_meta := ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology / IMPLICIT-99D51675EC72A601 / IMPLICIT-34DAE058B2385F56
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [P_meta := ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-E63B7C30949FE01C / P_meta := ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology / IMPLICIT-E63B7C30949FE01C / IMPLICIT-34DAE058B2385F56
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-34DAE058B2385F56 / P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology / IMPLICIT-34DAE058B2385F56 / IMPLICIT-3B9EB1F3157B12AC
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology](../../../docs/phi_meta_law.md)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-3B9EB1F3157B12AC / P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology / IMPLICIT-3B9EB1F3157B12AC / IMPLICIT-34DAE058B2385F56
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BE16992822C3F95B / P_meta = ∫\(I_iso\(A,B\) × L_meta × G_δ\) / meta_protocol_topology / IMPLICIT-BE16992822C3F95B / IMPLICIT-34DAE058B2385F56
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [P_meta — 元协议投影算子](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-39300f47ccca2f89 / P_meta — 元协议投影算子
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [P_meta 元协议投影](../../../data/function_dependency.csv)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-df26543601b76f12 / P_meta 元协议投影
-  - 来源：`data/function_dependency.csv`
-  - 依赖：—；被引用：—
 - [P_meta 元协议投影（元协议分析）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
   - 可搜索名称：NFC-810acb734e35c5ba / P_meta 元协议投影（元协议分析）
@@ -483,11 +13,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-96D9F76707099695 / P_sustain\(Ω\) = 1 - P_exit\(Ω\) / IMPLICIT-96D9F76707099695
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [Parsel full-text review: hierarchical natural-language function specifications, SCC-aware candidate composition, target-](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-b45bda51548536d3 / Parsel full-text review: hierarchical natural-language function specifications, SCC-aware candidate composition, target-
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
   - 依赖：—；被引用：—
 - [Pointfire seven-track current-main maintenance integration R1](../../ASSET-CARDS.md#asset-hr-5d85331f1d96b2aa)
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
@@ -554,70 +79,40 @@
   - 可搜索名称：NFC-9f91c8fdc2ee03df / Projection validator: `LIVE_CURRENT_PROJECTION_OK`.
   - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
   - 依赖：—；被引用：—
-- [projection-matrix.jsonl — 250 条投影矩阵 ✅ 全覆盖](../../../data/discipline-projection/087-execution-report.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-4aad79b291df47cb / projection-matrix.jsonl — 250 条投影矩阵 ✅ 全覆盖
-  - 来源：`data/discipline-projection/087-execution-report.md`
-  - 依赖：—；被引用：—
 - [projection-only `HandoffBundle`;](../../../reports/research/reos-vnext-light-pilot-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-9e3b70412057ef75 / projection-only `HandoffBundle`;
   - 来源：`reports/research/reos-vnext-light-pilot-r1.md`
   - 依赖：—；被引用：—
-- [projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分）](../../../docs/phi_meta_law.md)
+- [projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分）](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-ECE12C2FF35AECEB / projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分） / IMPLICIT-ECE12C2FF35AECEB / IMPLICIT-FF67B9E83A1A37FA
-  - 来源：`docs/phi_meta_law.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分）](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FF67B9E83A1A37FA / projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分） / IMPLICIT-FF67B9E83A1A37FA / IMPLICIT-ECE12C2FF35AECEB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a82531d0e1f8b09b / projection_A→B := ∫_{A×B} π_A→B\(x\) = y dμ\(x,y\)（投影映射积分）
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
 - [projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-510C4AE85EF0880B / projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ / IMPLICIT-510C4AE85EF0880B / IMPLICIT-F88CEAB528337AE8
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ](../../../docs/phi_meta_law.md)
+- [projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F88CEAB528337AE8 / projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ / IMPLICIT-F88CEAB528337AE8 / IMPLICIT-510C4AE85EF0880B
-  - 来源：`docs/phi_meta_law.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-95b5dd8eb1e04894 / projection_topology := ∫_{Ω} projection_A→B × inverse_consistency dΩ
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
-- [propagation_ok = \(len\(missing_steps\) == 0\)](../../../function-os-candidate/v0.2/benchmark/run.py)
+- [propagation_ok = \(len\(missing_steps\) == 0\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FAAF64CD3333EB3C / propagation_ok = \(len\(missing_steps\) == 0\) / IMPLICIT-FAAF64CD3333EB3C
-  - 来源：`function-os-candidate/v0.2/benchmark/run.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s](../../ASSET-CARDS.md#asset-nfc-e9612969179efbcb)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-e9612969179efbcb / R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-s / - R2/Federation conformance 仍以 disposable local fixture 为主；Task 139 延续 Task 136–138 的 live completion obligation，建立 host-side durable capture、append-only LiveAttemptLedger 和 ledger-derived Current projection。历史 ledger 共记录四次尝试，其中 Hermes136 与 Codex138 second 仍待 reconciliation；Codex138 second 确实发生，但 outer context overflow 使 observation incomplete，return code、structured result、lease、workspace 和 validator input 未恢复。当前 live provider/inference ceiling 仍未建立。
-  - 来源：`docs/project-current-state.md`
-  - 依赖：—；被引用：—
-- [r\["replay_match"\] = \(p is not None and p.get\("result_sha"\) == r.get\("result_sha"\)\)](../../../function-os-candidate/v0.2/benchmark/run.py)
+- [r\["replay_match"\] = \(p is not None and p.get\("result_sha"\) == r.get\("result_sha"\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F42AE8D92C486956 / r\["replay_match"\] = \(p is not None and p.get\("result_sha"\) == r.get\("result_sha"\)\) / IMPLICIT-F42AE8D92C486956
-  - 来源：`function-os-candidate/v0.2/benchmark/run.py`
-  - 依赖：—；被引用：—
-- [Re-run the privacy/secret, disguised-failure, succession, responsibility and deterministic-projection attack cases indiv](../../../templates/operations/independent-review-template.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-a74c4c9a3f0087b9 / Re-run the privacy/secret, disguised-failure, succession, responsibility and deterministic-projection attack cases indiv
-  - 来源：`templates/operations/independent-review-template.md`
-  - 依赖：—；被引用：—
-- [reconciliation_boundary: the three historical retry-safety blockers are terminalized; terminalization preserves unknown](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-0cd66516602c7224 / reconciliation_boundary: the three historical retry-safety blockers are terminalized; terminalization preserves unknown
-  - 来源：`STATE-CHANGELOG.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [Reference policy independent reviewer criteria](../../ASSET-CARDS.md#asset-hr-d950d1fb4221f338)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -634,20 +129,10 @@
   - 可搜索名称：NFC-37eceaaf3c9f4fda / registries remain unchanged and the projection validator fails closed.
   - 来源：`reports/validation/pointfire-seven-track-current-main-maintenance-r1-20260813.md`
   - 依赖：—；被引用：—
-- [regression: Human Front Door, Human Surface, Current projection, compiler, current-state sync, ordinal and related unit-](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-979f376a2dc749be / regression: Human Front Door, Human Surface, Current projection, compiler, current-state sync, ordinal and related unit-
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [regression_boundary: candidate and fresh remote task-branch clone both passed on exact `9a3b4a5561cf389b4f8af91274391096](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a189ab7b47015ac7 / regression_boundary: candidate and fresh remote task-branch clone both passed on exact `9a3b4a5561cf389b4f8af91274391096
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [relation = next\(\(item for item in topology.get\("relations", \[\]\) if item.get\("relation_id"\) == "map_language_thought_zhiyuan"\), None\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [relation = next\(\(item for item in topology.get\("relations", \[\]\) if item.get\("relation_id"\) == "map_language_thought_zhiyuan"\), None\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3C0F724825A54953 / relation = next\(\(item for item in topology.get\("relations", \[\]\) if item.get\("relation_id"\) == "map_language_thought_zhiyuan"\), None\) / IMPLICIT-3C0F724825A54953
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [Render only the bounded projection and its validation findings.](../../../docs/operations/ignition-operation-playbooks-r1.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -674,100 +159,95 @@
   - 可搜索名称：REPL-CASE-03 — Shadow-map fold / facts
   - 来源：`reports/evaluations/ignition-198-replicated-method-use-trial-r0/cases/REPL-CASE-03/facts.md`
   - 依赖：—；被引用：—
-- [require\(item.get\("accepted_text_sha256"\) == HISTORICAL_HASHES\[path\], f"historical acceptance overwritten: {path}"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [require\(item.get\("accepted_text_sha256"\) == HISTORICAL_HASHES\[path\], f"historical acceptance overwritten: {path}"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C8C60FC7F4882A50 / require\(item.get\("accepted_text_sha256"\) == HISTORICAL_HASHES\[path\], f"historical acceptance overwritten: {path}"\) / IMPLICIT-C8C60FC7F4882A50
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [require\(item.get\("current_method_version"\) == "0.5.0", f"current method version missing: {path}"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [require\(item.get\("current_method_version"\) == "0.5.0", f"current method version missing: {path}"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9243413E59DF982D / require\(item.get\("current_method_version"\) == "0.5.0", f"current method version missing: {path}"\) / IMPLICIT-9243413E59DF982D
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [require\(item.get\("current_revision_sha256"\) == FINAL_HASHES\[path\], f"current revision not bound: {path}"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [require\(item.get\("current_revision_sha256"\) == FINAL_HASHES\[path\], f"current revision not bound: {path}"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9731E65665C76DFE / require\(item.get\("current_revision_sha256"\) == FINAL_HASHES\[path\], f"current revision not bound: {path}"\) / IMPLICIT-9731E65665C76DFE
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [require\(language_profile is not None and language_profile.get\("execution_capability"\) == "manual", "language-thought component execution profile is missing or inflated"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [require\(language_profile is not None and language_profile.get\("execution_capability"\) == "manual", "language-thought component execution profile is missing or inflated"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-998858336877DEFA / require\(language_profile is not None and language_profile.get\("execution_capability"\) == "manual", "language-thought component execution profile is missing or inflated"\) / IMPLICIT-998858336877DEFA
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [require\(len\(candidates\) == 1, "Task 114 must have exactly one content candidate event"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [require\(len\(candidates\) == 1, "Task 114 must have exactly one content candidate event"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EC4D8A58E2C046EE / require\(len\(candidates\) == 1, "Task 114 must have exactly one content candidate event"\) / IMPLICIT-EC4D8A58E2C046EE
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [require\(manifest.get\("review_state"\) == "FOUR_ROLE_REVIEW_COMPLETE_SUBSTANTIVE_REWRITE_COMPLETE", "four-role review is not complete"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [require\(manifest.get\("review_state"\) == "FOUR_ROLE_REVIEW_COMPLETE_SUBSTANTIVE_REWRITE_COMPLETE", "four-role review is not complete"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F1A49E6E262D1AF1 / require\(manifest.get\("review_state"\) == "FOUR_ROLE_REVIEW_COMPLETE_SUBSTANTIVE_REWRITE_COMPLETE", "four-role review is not complete"\) / IMPLICIT-F1A49E6E262D1AF1
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [require\(relation is not None and relation.get\("relation_class"\) == "synchronization_requires", "plane-to-method relation is not a synchronization obligation"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [require\(relation is not None and relation.get\("relation_class"\) == "synchronization_requires", "plane-to-method relation is not a synchronization obligation"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1A50EE66C2111D4B / require\(relation is not None and relation.get\("relation_class"\) == "synchronization_requires", "plane-to-method relation is not a synchronization obligation"\) / IMPLICIT-1A50EE66C2111D4B
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [require\(terminals\[0\].get\("lifecycle_state"\) == "TERMINAL_SUCCESS", "Task 114 terminal projection is not TERMINAL_SUCCESS"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [require\(terminals\[0\].get\("lifecycle_state"\) == "TERMINAL_SUCCESS", "Task 114 terminal projection is not TERMINAL_SUCCESS"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-34A1F97A69390ED0 / require\(terminals\[0\].get\("lifecycle_state"\) == "TERMINAL_SUCCESS", "Task 114 terminal projection is not TERMINAL_SUCCESS"\) / IMPLICIT-34A1F97A69390ED0
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [require\(text\(ROOT / "reports/operations/114-language-thought-project-audit.md"\).count\("25 条"\) == 1, "project audit summary missing exact finding count"\)](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [require\(text\(ROOT / "reports/operations/114-language-thought-project-audit.md"\).count\("25 条"\) == 1, "project audit summary missing exact finding count"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-31147A1B2F97C9BA / require\(text\(ROOT / "reports/operations/114-language-thought-project-audit.md"\).count\("25 条"\) == 1, "project audit summary missing exact finding count"\) / IMPLICIT-31147A1B2F97C9BA
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [res=search\(q, lim\)](../../../scripts/external-research/anysearch_client.py)
+- [res=search\(q, lim\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-56D5E4E6E61F07B7 / res=search\(q, lim\) / IMPLICIT-56D5E4E6E61F07B7
-  - 来源：`scripts/external-research/anysearch_client.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [residual_boundary: the 11 pre-existing Human Surface source-hash drifts, projection-manifest residual, historical Task10](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-4b4c5bd3853f6755 / residual_boundary: the 11 pre-existing Human Surface source-hash drifts, projection-manifest residual, historical Task10
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [results = search\(q, lim, mailto\)](../../../scripts/external-research/openalex_client.py)
+- [results = search\(q, lim, mailto\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E1E109777BC7E0A5 / results = search\(q, lim, mailto\) / IMPLICIT-E1E109777BC7E0A5
-  - 来源：`scripts/external-research/openalex_client.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [results\["passed"\] = len\(results\["errors"\]\) == 0](../../../data/external-research/121-fulltext-resolver/121-validator.py)
+- [results\["passed"\] = len\(results\["errors"\]\) == 0](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-28CCC08D41E25491 / results\["passed"\] = len\(results\["errors"\]\) == 0 / IMPLICIT-28CCC08D41E25491
-  - 来源：`data/external-research/121-fulltext-resolver/121-validator.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [retry_failed = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "RETRY_FAILED"\)](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
+- [retry_failed = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "RETRY_FAILED"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-13CCA3457F0363F8 / retry_failed = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "RETRY_FAILED"\) / IMPLICIT-13CCA3457F0363F8
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [retry_pending = sum\(1 for e in extraction_manifest if e.get\("extraction_status"\) == "DOWNLOADED_NOT_FULLY_EXTRACTED"\)](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
+- [retry_pending = sum\(1 for e in extraction_manifest if e.get\("extraction_status"\) == "DOWNLOADED_NOT_FULLY_EXTRACTED"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-95A99DD304A90E18 / retry_pending = sum\(1 for e in extraction_manifest if e.get\("extraction_status"\) == "DOWNLOADED_NOT_FULLY_EXTRACTED"\) / IMPLICIT-95A99DD304A90E18
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [retry_success = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "RETRY_SUCCESS"\)](../../../data/external-research/121b-fulltext-batch/121b-validator.py)
+- [retry_success = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "RETRY_SUCCESS"\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FF6229E2F6A4A96B / retry_success = sum\(1 for e in resolution_log if e.get\("121b_verification"\) == "RETRY_SUCCESS"\) / IMPLICIT-FF6229E2F6A4A96B
-  - 来源：`data/external-research/121b-fulltext-batch/121b-validator.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [return "RETRY_REQUIRES_NEW_LINEAGE" if machine.retry_allowed and machine.new_lineage_attempt\("fault-repair-attempt"\) == "fault-repair-attempt" else "UNEXPECTED_REPLAY"](../../../agent_federation/live_fault_matrix.py)
+- [return "RETRY_REQUIRES_NEW_LINEAGE" if machine.retry_allowed and machine.new_lineage_attempt\("fault-repair-attempt"\) == "fault-repair-attempt" else "UNEXPECTED_REPLAY"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2BAD7A79E647C1B0 / return "RETRY_REQUIRES_NEW_LINEAGE" if machine.retry_allowed and machine.new_lineage_attempt\("fault-repair-attempt"\) == "fault-repair-attempt" else "UNEXPECTED_REPLAY" / IMPLICIT-2BAD7A79E647C1B0
-  - 来源：`agent_federation/live_fault_matrix.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [return candidates\[0\] if len\(candidates\) == 1 else None](../../../evidence-program/tools/validate_evidence_program.py)
+- [return candidates\[0\] if len\(candidates\) == 1 else None](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1FFA7A65FC0F169E / return candidates\[0\] if len\(candidates\) == 1 else None / IMPLICIT-1FFA7A65FC0F169E
-  - 来源：`evidence-program/tools/validate_evidence_program.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [return mapping.get\(expected, expected\) == mapping.get\(actual, actual\)](../../../function-os-candidate/v0.2/function_os/n5_interpreter.py)
+- [return mapping.get\(expected, expected\) == mapping.get\(actual, actual\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C64CE0713483A405 / return mapping.get\(expected, expected\) == mapping.get\(actual, actual\) / IMPLICIT-C64CE0713483A405
-  - 来源：`function-os-candidate/v0.2/function_os/n5_interpreter.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [run the production-authority validator matrix under the same canonical environment and projection preflight.](../../../reports/operations/ignition-135-step00-failure-inventory.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -779,25 +259,25 @@
   - 可搜索名称：IMPLICIT-5635B73E31A9CADB / S\(x\) := -k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ（熵项） / IMPLICIT-5635B73E31A9CADB / IMPLICIT-C9BC2B57C2E6DBF5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [S\(x\) := -k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ（熵项）](../../../docs/phi_meta_law.md)
+- [S\(x\) := -k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ（熵项）](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C9BC2B57C2E6DBF5 / S\(x\) := -k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ（熵项） / IMPLICIT-C9BC2B57C2E6DBF5 / IMPLICIT-5635B73E31A9CADB
-  - 来源：`docs/phi_meta_law.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [S120-045 \(Task Arithmetic\):** Task vectors as weight-space directions. Negation, addition, and analogy as composition op](../../../reports/external-research/121c01-max-semantic-review-batch-01.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-7a5507be7c7038cf / S120-045 \(Task Arithmetic\):** Task vectors as weight-space directions. Negation, addition, and analogy as composition op
   - 来源：`reports/external-research/121c01-max-semantic-review-batch-01.md`
   - 依赖：—；被引用：—
-- [safe_workspace = Path\(process.cwd\).resolve\(\) == fixture.root.resolve\(\)](../../../agent_federation/live_task137.py)
+- [safe_workspace = Path\(process.cwd\).resolve\(\) == fixture.root.resolve\(\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B1B5139E27962123 / safe_workspace = Path\(process.cwd\).resolve\(\) == fixture.root.resolve\(\) / IMPLICIT-B1B5139E27962123
-  - 来源：`agent_federation/live_task137.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [same = canon\(used\) == canon\(pre\)](../../../evidence-program/tools/validate_evidence_program.py)
+- [same = canon\(used\) == canon\(pre\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-57249D2D07EEDF8D / same = canon\(used\) == canon\(pre\) / IMPLICIT-57249D2D07EEDF8D
-  - 来源：`evidence-program/tools/validate_evidence_program.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [Sealed condition-map generation recipe](../../ASSET-CARDS.md#asset-hr-0b1a76b884ead2d8)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -809,10 +289,10 @@
   - 可搜索名称：Sealed evaluator package / README
   - 来源：`reports/evaluations/ignition-190-method-use-trace-r0/evaluator-sealed/README.md`
   - 依赖：—；被引用：—
-- [secret_scan_status="FAIL" if getattr\(capture, "_secret_scan_status", "PASS"\) == "FAIL" else "PASS",](../../../agent_federation/live_transport.py)
+- [secret_scan_status="FAIL" if getattr\(capture, "_secret_scan_status", "PASS"\) == "FAIL" else "PASS",](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1647FD700E719A64 / secret_scan_status="FAIL" if getattr\(capture, "_secret_scan_status", "PASS"\) == "FAIL" else "PASS", / IMPLICIT-1647FD700E719A64
-  - 来源：`agent_federation/live_transport.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [Seeds: `ai_guide, current_state, historical_reports, incremental_execution, iteration, iteration_manifest_contract, no_l](../../../reports/operations/121Q32I-change-propagation-impact.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -829,10 +309,10 @@
   - 可搜索名称：IMPLICIT-0C6254CA494049EE / self_organization_topology := ∫_{Ω} perception × adjustment × recursion dΩ / IMPLICIT-0C6254CA494049EE / IMPLICIT-40E637D3F6A4E50C
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [self_organization_topology := ∫_{Ω} perception × adjustment × recursion dΩ](../../../docs/phi_meta_law.md)
+- [self_organization_topology := ∫_{Ω} perception × adjustment × recursion dΩ](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-40E637D3F6A4E50C / self_organization_topology := ∫_{Ω} perception × adjustment × recursion dΩ / IMPLICIT-40E637D3F6A4E50C / IMPLICIT-0C6254CA494049EE
-  - 来源：`docs/phi_meta_law.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [smoke test **通过**：不同领域材料可正常接入，查重/Ψ₀/候选输出链路完整，跨域同构可被框架识别。](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
@@ -843,36 +323,6 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F94492AC052076DF / Space_Function\(Ω\) = {I\(Ω\), D_immune\(Ω\), R\(Ω\)} / IMPLICIT-F94492AC052076DF
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [stale_knowledge: a stable Knowledge projection, a validated local Reference/Conformance/Fallback path, a cross-executor](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-51e998cd89d410de / stale_knowledge: a stable Knowledge projection, a validated local Reference/Conformance/Fallback path, a cross-executor
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: historical Task 126 map `0.10.0`, old copied counts and branch-only receipts remain historical context;](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-ef1c806fbc97ffe9 / stale_knowledge: historical Task 126 map `0.10.0`, old copied counts and branch-only receipts remain historical context;
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: historical Task 126/127/128 records retain their original wording as provenance and are not rewritten;](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-20359ad2a9b373f8 / stale_knowledge: historical Task 126/127/128 records retain their original wording as provenance and are not rewritten;
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: Task 119/120 R0/R1-only descriptions are historical compatibility surfaces; R2 is now the current engin](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-a4004aa617043331 / stale_knowledge: Task 119/120 R0/R1-only descriptions are historical compatibility surfaces; R2 is now the current engin
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: Task140 raw receipt, ledger hash chain, old R2 projection and historical Current prose remain immutable](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-434fbb2c61bdc374 / stale_knowledge: Task140 raw receipt, ledger hash chain, old R2 projection and historical Current prose remain immutable
-  - 来源：`STATE-CHANGELOG.md`
-  - 依赖：—；被引用：—
-- [stale_knowledge: Task141's historical terminality and six-attempt projection are preserved; the older `IN_PROGRESS` surf](../../../STATE-CHANGELOG.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-c0ceb387ecfbcc2e / stale_knowledge: Task141's historical terminality and six-attempt projection are preserved; the older `IN_PROGRESS` surf
-  - 来源：`STATE-CHANGELOG.md`
   - 依赖：—；被引用：—
 - [Step 10's actionable current failures were deterministic projection drift, not permission to enlarge a residual. The nat](../../../reports/operations/ignition-134-step11-current-projection-closure.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -948,11 +398,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-fc20174883423750 / Step13 must run the targeted regression and projection preflight. Step14 and
   - 来源：`reports/operations/ignition-138-step12-current-state-sync.md`
-  - 依赖：—；被引用：—
-- [structure_A ≅ structure_B := ∃φ: A→B, ∀x,y∈A, \(x≈y ⇔ φ\(x\)≈φ\(y\)\)（结构同构）](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-7933b0f73adff625 / structure_A ≅ structure_B := ∃φ: A→B, ∀x,y∈A, \(x≈y ⇔ φ\(x\)≈φ\(y\)\)（结构同构）
-  - 来源：`docs/phi_meta_law.md`
   - 依赖：—；被引用：—
 - [Summary: 11 audited; 11 semantically valid; 0 regeneration-required; 0 superseded; 0 hash-only; 0 actual conflicts. Curr](../../../reports/operations/ignition-134-step14-human-surface-semantic-audit.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
@@ -1089,11 +534,6 @@
   - 可搜索名称：Target-blind reference policy validity criteria / validity-criteria
   - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/validity-criteria.md`
   - 依赖：—；被引用：—
-- [Task arithmetic IS composition: \(1\) negation = subtractive composition, \(2\) addition = additive composition, \(3\) analogy](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-045.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-bc9024ed08373c7b / Task arithmetic IS composition: \(1\) negation = subtractive composition, \(2\) addition = additive composition, \(3\) analogy
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-045.json`
-  - 依赖：—；被引用：—
 - [Task172 Step10 — global corpus QA](../../ASSET-CARDS.md#asset-hr-a13879f03cb48a28)
   - 类型/状态：`RESULT_OR_ARTICLE` · `HISTORICAL_COMPLETION_RECORD`
   - 可搜索名称：Task172 Step10 — global corpus QA / ignition-172-20260915-step10-global-corpus-qa
@@ -1169,15 +609,20 @@
   - 可搜索名称：Task228 v2 — Auditor B Raw Audit Sheet / auditor-b
   - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-b.md`
   - 依赖：—；被引用：—
-- [task_events = \[event for event in lifecycle if event.get\("task_number"\) == 114\]](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [Task229 preregistered protocol R0](../../ASSET-CARDS.md#asset-hr-56a47eb090ae671a)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task229 preregistered protocol R0 / protocol
+  - 来源：`reports/evaluations/ignition-229-clean-transfer-interface-r0/protocol.md`
+  - 依赖：—；被引用：—
+- [task_events = \[event for event in lifecycle if event.get\("task_number"\) == 114\]](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A9FA98F547424F1C / task_events = \[event for event in lifecycle if event.get\("task_number"\) == 114\] / IMPLICIT-A9FA98F547424F1C
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [terminals = \[event for event in task_events if event.get\("event_type"\) == "TERMINALIZATION_PROJECTION"\]](../../../data/operations/iterations/114/publication/tools/validate_publication.py)
+- [terminals = \[event for event in task_events if event.get\("event_type"\) == "TERMINALIZATION_PROJECTION"\]](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B827D053A0848E65 / terminals = \[event for event in task_events if event.get\("event_type"\) == "TERMINALIZATION_PROJECTION"\] / IMPLICIT-B827D053A0848E65
-  - 来源：`data/operations/iterations/114/publication/tools/validate_publication.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [The 078 example uses `f1\(x\)=exp\(x\)` and `f2\(x\)=exp\(-2x\)` on the reals. The first is strictly increasing, the second strictly decreasing, while the product `exp\(-x\)` is strictly decreasing and has no interior inverted-U maximum. It satisfies](../../../reports/foundation-architecture/T16-counterexample-equivalence-audit-20260713.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1624,10 +1069,10 @@
   - 可搜索名称：IMPLICIT-760A7BA1C8333791 / title: "指数型正向偏离 — f₁=exp\(-1/ε₁\),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33。δ₁=11.1×0.3/1-1=2.33。弹性远超弱度预期，应比补最弱更激进地投入 / 指数型正向偏离 - f₁=exp\(-1/ε₁\),ε₁=0.3,η₁=1/0.09≈11.1,W₁=3.33. δ₁=11.1 x 0.3/1-1=2.33. 弹性远超弱度预期, 应比补最弱更激进地投入" / IMPLICIT-760A7BA1C8333791
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [title: "描述不等于证明：跨尺度、概率与关系网络能说什么，不能说什么"](../../../docs/editorial/articles/005-description-is-not-proof-systems-representations.md)
+- [title: "描述不等于证明：跨尺度、概率与关系网络能说什么，不能说什么"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2E9A8DBDCB7DEE29 / title: "描述不等于证明：跨尺度、概率与关系网络能说什么，不能说什么" / IMPLICIT-2E9A8DBDCB7DEE29
-  - 来源：`docs/editorial/articles/005-description-is-not-proof-systems-representations.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [title: "文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1824,10 +1269,10 @@
   - 可搜索名称：IMPLICIT-2BDDD3260C2AD0BB / title: "费米悖论 — 乘法门控使跨星系文明B=⟨ε⟩^N→0" / IMPLICIT-2BDDD3260C2AD0BB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [title: "边界之内的可信：Function OS v0.2 能力基准告诉我们什么，以及它诚实停在哪里"](../../../docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md)
+- [title: "边界之内的可信：Function OS v0.2 能力基准告诉我们什么，以及它诚实停在哪里"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E305BCF7D44AB8E4 / title: "边界之内的可信：Function OS v0.2 能力基准告诉我们什么，以及它诚实停在哪里" / IMPLICIT-E305BCF7D44AB8E4
-  - 来源：`docs/editorial/articles/007-bounded-trust-function-os-v02-capability-benchmark.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [title: "退出概率=阿伦尼乌斯方程 / exit probability=阿伦尼乌斯方程"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1894,15 +1339,10 @@
   - 可搜索名称：IMPLICIT-CAA9B9641067B18B / title: "黑洞热力学 — S_BH=N_dof×⟨Φ\(视界\)⟩，面积律×对数律 / 黑洞热力学 - S_BH=N_dof x ⟨Φ\(视界\)⟩, 面积律 x 对数律" / IMPLICIT-CAA9B9641067B18B
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [tmatch = norm\(obs_title\) == norm\(r.get\("crossref_title"\)\)](../../../evidence-program/tools/run_crossref_verification.py)
+- [tmatch = norm\(obs_title\) == norm\(r.get\("crossref_title"\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4195794FC356ADCB / tmatch = norm\(obs_title\) == norm\(r.get\("crossref_title"\)\) / IMPLICIT-4195794FC356ADCB
-  - 来源：`evidence-program/tools/run_crossref_verification.py`
-  - 依赖：—；被引用：—
-- [TMLR in-the-wild model-merging full-text and exact-code review: four bases, 48 named fine-tunes, sampled subset sizes, 1](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-88faa7d9376fdd44 / TMLR in-the-wild model-merging full-text and exact-code review: four bases, 48 named fine-tunes, sampled subset sizes, 1
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [Transfer byte-integrity and opaque bundle recipe](../../ASSET-CARDS.md#asset-hr-3d53f7e0c9d1759e)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -1924,30 +1364,25 @@
   - 可搜索名称：NFC-914eb1cc6bf7185d / typed projection digest: `b8fbe0690182dc4bed698d46007bcee1e35acb272757b8d6af18216ca7c3bbfe`
   - 来源：`reports/operations/ignition-140-step04-typed-observation-outcomes.md`
   - 依赖：—；被引用：—
-- [U₁\(x\) := M₁\(x\) = ∏_{i=1}^{n} x_i](../../../docs/phi_meta_law.md)
+- [U₁\(x\) := M₁\(x\) = ∏_{i=1}^{n} x_i](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-14D03334DC897AC7 / U₁\(x\) := M₁\(x\) = ∏_{i=1}^{n} x_i / IMPLICIT-14D03334DC897AC7 / IMPLICIT-BB8E723BB4DC8C57
-  - 来源：`docs/phi_meta_law.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [U₁\(x\) := M₁\(x\) = ∏_{i=1}^{n} x_i](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BB8E723BB4DC8C57 / U₁\(x\) := M₁\(x\) = ∏_{i=1}^{n} x_i / IMPLICIT-BB8E723BB4DC8C57 / IMPLICIT-14D03334DC897AC7
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [U₁\(零点约束\)、U₂\(线性变换\)、U₃\(耦合动力学\)、U₄\(判定优化\)都是约束-优化统一的不同投影](../../../docs/phi_meta_law.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-6c09d0eea5d4416c / U₁\(零点约束\)、U₂\(线性变换\)、U₃\(耦合动力学\)、U₄\(判定优化\)都是约束-优化统一的不同投影
-  - 来源：`docs/phi_meta_law.md`
-  - 依赖：—；被引用：—
 - [U₃\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-30EA00CC49D41648 / U₃\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\) / IMPLICIT-30EA00CC49D41648 / IMPLICIT-E48DA376BE69E3CC
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [U₃\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\)](../../../docs/phi_meta_law.md)
+- [U₃\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E48DA376BE69E3CC / U₃\(x\) := dx/dt = αx₁ - βx₂ + f\(g\(x\), h\(x\)\) / IMPLICIT-E48DA376BE69E3CC / IMPLICIT-30EA00CC49D41648
-  - 来源：`docs/phi_meta_law.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [v0.2 CP/SB 编号前计数审计](../../ASSET-CARDS.md#asset-hr-655695609bf38d4a)
   - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
@@ -1969,410 +1404,395 @@
   - 可搜索名称：v0.2 阶段定位 / v0.2-summary-and-closure-20260707
   - 来源：`outputs/getbrain/v0.2-summary-and-closure-20260707.md`
   - 依赖：—；被引用：—
-- [v1-1-overlay.md 全程使用分母 143（如 143/143、124/143、123/143 等共9处），但 087 全部数据文件权威学科总数为 250，且投影矩阵中 NOT_APPLICABLE=0（无学科被排除）。143 在](../../../data/external-research/088-087-count-reconciliation.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-d4fbc20f0cc057e4 / v1-1-overlay.md 全程使用分母 143（如 143/143、124/143、123/143 等共9处），但 087 全部数据文件权威学科总数为 250，且投影矩阵中 NOT_APPLICABLE=0（无学科被排除）。143 在
-  - 来源：`data/external-research/088-087-count-reconciliation.json`
-  - 依赖：—；被引用：—
-- [Validated repository-declared dependency planning, execution, validation and selective materialization of copyright risk](../../../reports/operations/121Q33-completion-seal.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-37f7c46c4ec0f495 / Validated repository-declared dependency planning, execution, validation and selective materialization of copyright risk
-  - 来源：`reports/operations/121Q33-completion-seal.json`
-  - 依赖：—；被引用：—
 - [W\(S\)=∫_S H² dA, min_{S:亏格g} W\(S\)=2π² \(g=1\)，环面达到Willmore能量极小点。变分法验证通过：J⁺=0.8, J⁻=0.2, C_unified=1。](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B07E07BAAC43A923 / W\(S\)=∫_S H² dA, min_{S:亏格g} W\(S\)=2π² \(g=1\)，环面达到Willmore能量极小点。变分法验证通过：J⁺=0.8, J⁻=0.2, C_unified=1。 / IMPLICIT-B07E07BAAC43A923
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [Weight space as representation: averaging weights in same loss basin. Greedy selection as representation pruning. Loss l](../../../data/external-research/121-fulltext-resolver/121q2/acceptance/S120-039.json)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-8df5715baa5107fc / Weight space as representation: averaging weights in same loss basin. Greedy selection as representation pruning. Loss l
-  - 来源：`data/external-research/121-fulltext-resolver/121q2/acceptance/S120-039.json`
-  - 依赖：—；被引用：—
-- [ymatch = \(obs_year is not None and r.get\("crossref_year"\) is not None and int\(obs_year\) == int\(r.get\("crossref_year"\)\)\)](../../../evidence-program/tools/run_crossref_verification.py)
+- [ymatch = \(obs_year is not None and r.get\("crossref_year"\) is not None and int\(obs_year\) == int\(r.get\("crossref_year"\)\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-64A29B8C230B1F8D / ymatch = \(obs_year is not None and r.get\("crossref_year"\) is not None and int\(obs_year\) == int\(r.get\("crossref_year"\)\)\) / IMPLICIT-64A29B8C230B1F8D
-  - 来源：`evidence-program/tools/run_crossref_verification.py`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"acquisition_status": "OK", "canonical_identifier": "10.1111/ectj.12097", "licence": "OpenAlex API metadata; audit retention only", "notes": "selection=exact_normalized_doi_match; raw=first-run-20260801/raw/GAP001-04.json; raw_sha256=2c7be](../../../evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/source-manifest.jsonl)
+- [{"acquisition_status": "OK", "canonical_identifier": "10.1111/ectj.12097", "licence": "OpenAlex API metadata; audit retention only", "notes": "selection=exact_normalized_doi_match; raw=first-run-20260801/raw/GAP001-04.json; raw_sha256=2c7be](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A9EDC7D15BF5A7C9 / {"acquisition_status": "OK", "canonical_identifier": "10.1111/ectj.12097", "licence": "OpenAlex API metadata; audit retention only", "notes": "selection=exact_normalized_doi_match; raw=first-run-20260801/raw/GAP001-04.json; raw_sha256=2c7be / IMPLICIT-A9EDC7D15BF5A7C9
-  - 来源：`evidence-program/runs/IGNITION-EVIDENCE-PILOT-R1-OPENALEX-DOI-REPLICATION-20260801/source-manifest.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"attempts": \[{"attempt": 1, "finished_at": "2026-08-01T07:19:31+00:00", "http_status": 200, "response_sha256": "2c7bedbcd6c80e37da506ff29809d85e09771ecb07b2bcc9aefd347aff68e3dd", "started_at": "2026-08-01T07:19:30+00:00"}\], "cited_by_count](../../../data/operations/iterations/110/openalex/first-run-20260801/source-manifest.jsonl)
+- [{"attempts": \[{"attempt": 1, "finished_at": "2026-08-01T07:19:31+00:00", "http_status": 200, "response_sha256": "2c7bedbcd6c80e37da506ff29809d85e09771ecb07b2bcc9aefd347aff68e3dd", "started_at": "2026-08-01T07:19:30+00:00"}\], "cited_by_count](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C33A1D3D39562E57 / {"attempts": \[{"attempt": 1, "finished_at": "2026-08-01T07:19:31+00:00", "http_status": 200, "response_sha256": "2c7bedbcd6c80e37da506ff29809d85e09771ecb07b2bcc9aefd347aff68e3dd", "started_at": "2026-08-01T07:19:30+00:00"}\], "cited_by_count / IMPLICIT-C33A1D3D39562E57
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/source-manifest.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"cx_step":76,"canonical_source_step":76,"action":"codex56_extreme_semantic_review","source_id":"S120-079","description":"Pryor, Dickens and Getoor exact author-hosted KLR workshop paper, all-11-page visual/full-text/equation/table/appendix](../../../data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl)
+- [{"cx_step":76,"canonical_source_step":76,"action":"codex56_extreme_semantic_review","source_id":"S120-079","description":"Pryor, Dickens and Getoor exact author-hosted KLR workshop paper, all-11-page visual/full-text/equation/table/appendix](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3931DF27E1A23B99 / {"cx_step":76,"canonical_source_step":76,"action":"codex56_extreme_semantic_review","source_id":"S120-079","description":"Pryor, Dickens and Getoor exact author-hosted KLR workshop paper, all-11-page visual/full-text/equation/table/appendix / IMPLICIT-3931DF27E1A23B99
-  - 来源：`data/external-research/121-fulltext-resolver/121cx/121cx-step-ledger.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":103970,"feature_counts":{"01":0,"02":1,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":2},"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","local_definition](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":103970,"feature_counts":{"01":0,"02":1,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":2},"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","local_definition](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-94AC87DAD392EE2A / {"end_word":103970,"feature_counts":{"01":0,"02":1,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":2},"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","local_definition / IMPLICIT-94AC87DAD392EE2A
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":103970,"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","sequence":391,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-econ](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":103970,"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","sequence":391,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-econ](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-10E4E2FF4B3881EB / {"end_word":103970,"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","sequence":391,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-econ / IMPLICIT-10E4E2FF4B3881EB / IMPLICIT-2AB8B3A3FA8ADEFA
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":103970,"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","sequence":391,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-econ](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":103970,"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","sequence":391,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-econ](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2AB8B3A3FA8ADEFA / {"end_word":103970,"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","sequence":391,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-econ / IMPLICIT-2AB8B3A3FA8ADEFA / IMPLICIT-10E4E2FF4B3881EB
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":103970,"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","sequence":391,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-econ](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":103970,"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","sequence":391,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-econ](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8EF1B0CE839D68EE / {"end_word":103970,"label":"10 . Explain how the profit-maximizing rule of setting P = MC leads a perfectly competitive market to be","sequence":391,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-econ / IMPLICIT-8EF1B0CE839D68EE / IMPLICIT-10E4E2FF4B3881EB
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":127960,"feature_counts":{"01":1,"02":0,"03":2,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","local_d](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":127960,"feature_counts":{"01":1,"02":0,"03":2,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","local_d](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DBFA7381434467B1 / {"end_word":127960,"feature_counts":{"01":1,"02":0,"03":2,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","local_d / IMPLICIT-DBFA7381434467B1
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":127960,"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","sequence":477,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princi](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":127960,"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","sequence":477,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princi](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-08FA48D527B11E54 / {"end_word":127960,"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","sequence":477,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princi / IMPLICIT-08FA48D527B11E54 / IMPLICIT-1A1F61146AF45ACB
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":127960,"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","sequence":477,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princi](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":127960,"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","sequence":477,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princi](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1A1F61146AF45ACB / {"end_word":127960,"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","sequence":477,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princi / IMPLICIT-1A1F61146AF45ACB / IMPLICIT-08FA48D527B11E54
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":127960,"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","sequence":477,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princi](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":127960,"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","sequence":477,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princi](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7F6AEA1F51924736 / {"end_word":127960,"label":"16 + 10 + 8 + 6 = 40. We do not consider this concentration ratio especially high, because the largest four firms","sequence":477,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princi / IMPLICIT-7F6AEA1F51924736 / IMPLICIT-08FA48D527B11E54
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":163353,"feature_counts":{"01":1,"02":0,"03":3,"04":0,"05":0,"06":1,"07":0,"08":4,"09":0,"10":0},"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","local_definition_count":0,"local_falsifier_count":0,"](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":163353,"feature_counts":{"01":1,"02":0,"03":3,"04":0,"05":0,"06":1,"07":0,"08":4,"09":0,"10":0},"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","local_definition_count":0,"local_falsifier_count":0,"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C8E559E2C0EE06F6 / {"end_word":163353,"feature_counts":{"01":1,"02":0,"03":3,"04":0,"05":0,"06":1,"07":0,"08":4,"09":0,"10":0},"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","local_definition_count":0,"local_falsifier_count":0," / IMPLICIT-C8E559E2C0EE06F6
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":163353,"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","sequence":617,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#30 3 $480 + $600 =](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":163353,"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","sequence":617,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#30 3 $480 + $600 =](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5289A7C53B7DEC10 / {"end_word":163353,"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","sequence":617,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#30 3 $480 + $600 = / IMPLICIT-5289A7C53B7DEC10 / IMPLICIT-DB19883E750A1298
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":163353,"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","sequence":617,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#30 3 $480 + $600 =](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":163353,"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","sequence":617,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#30 3 $480 + $600 =](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DB19883E750A1298 / {"end_word":163353,"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","sequence":617,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#30 3 $480 + $600 = / IMPLICIT-DB19883E750A1298 / IMPLICIT-5289A7C53B7DEC10
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":163353,"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","sequence":617,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#30 3 $480 + $600 =](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":163353,"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","sequence":617,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#30 3 $480 + $600 =](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-F348EA52429B8CE3 / {"end_word":163353,"label":"30 3 $480 + $600 = $1,080 $600 + $600 = $1,200 $720 + $600 = $1,320","sequence":617,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#30 3 $480 + $600 = / IMPLICIT-F348EA52429B8CE3 / IMPLICIT-5289A7C53B7DEC10
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":165231,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":2,"09":0,"10":0},"label":"3 . a. Domain = range = b. No, not a function","local_definition_count":0,"local_falsifier_count":0,"local_question_count":](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":165231,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":2,"09":0,"10":0},"label":"3 . a. Domain = range = b. No, not a function","local_definition_count":0,"local_falsifier_count":0,"local_question_count":](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EBA3F3F5D4D736D9 / {"end_word":165231,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":2,"09":0,"10":0},"label":"3 . a. Domain = range = b. No, not a function","local_definition_count":0,"local_falsifier_count":0,"local_question_count": / IMPLICIT-EBA3F3F5D4D736D9
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":165231,"label":"3 . a. Domain = range = b. No, not a function","sequence":1156,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/calculus-volume-1_-_WEB.pdf#3 . a. Domain = range = b. No, not a function](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":165231,"label":"3 . a. Domain = range = b. No, not a function","sequence":1156,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/calculus-volume-1_-_WEB.pdf#3 . a. Domain = range = b. No, not a function](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0493C0FCCFAD0C4E / {"end_word":165231,"label":"3 . a. Domain = range = b. No, not a function","sequence":1156,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/calculus-volume-1_-_WEB.pdf#3 . a. Domain = range = b. No, not a function / IMPLICIT-0493C0FCCFAD0C4E / IMPLICIT-8B8063A8F0432BFE
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":165231,"label":"3 . a. Domain = range = b. No, not a function","sequence":1156,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/calculus-volume-1_-_WEB.pdf#3 . a. Domain = range = b. No, not a function](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":165231,"label":"3 . a. Domain = range = b. No, not a function","sequence":1156,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/calculus-volume-1_-_WEB.pdf#3 . a. Domain = range = b. No, not a function](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8B8063A8F0432BFE / {"end_word":165231,"label":"3 . a. Domain = range = b. No, not a function","sequence":1156,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/calculus-volume-1_-_WEB.pdf#3 . a. Domain = range = b. No, not a function / IMPLICIT-8B8063A8F0432BFE / IMPLICIT-0493C0FCCFAD0C4E
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":165231,"label":"3 . a. Domain = range = b. No, not a function","sequence":1156,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/calculus-volume-1_-_WEB.pdf#3 . a. Domain = range = b. No, not a function](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":165231,"label":"3 . a. Domain = range = b. No, not a function","sequence":1156,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/calculus-volume-1_-_WEB.pdf#3 . a. Domain = range = b. No, not a function](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-C059E7ACA961C9F5 / {"end_word":165231,"label":"3 . a. Domain = range = b. No, not a function","sequence":1156,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/calculus-volume-1_-_WEB.pdf#3 . a. Domain = range = b. No, not a function / IMPLICIT-C059E7ACA961C9F5 / IMPLICIT-0493C0FCCFAD0C4E
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":239057,"feature_counts":{"01":1,"02":0,"03":0,"04":0,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"25 years; that is, 100 \(1.03\)25 = 209.","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"loca](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":239057,"feature_counts":{"01":1,"02":0,"03":0,"04":0,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"25 years; that is, 100 \(1.03\)25 = 209.","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"loca](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-260B90A0F3CAF78F / {"end_word":239057,"feature_counts":{"01":1,"02":0,"03":0,"04":0,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"25 years; that is, 100 \(1.03\)25 = 209.","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"loca / IMPLICIT-260B90A0F3CAF78F
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":239057,"label":"25 years; that is, 100 \(1.03\)25 = 209.","sequence":885,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#25 years; that is, 100 \(1.03\)25 = 209.","start_](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":239057,"label":"25 years; that is, 100 \(1.03\)25 = 209.","sequence":885,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#25 years; that is, 100 \(1.03\)25 = 209.","start_](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-43F1EF49C6D063F1 / {"end_word":239057,"label":"25 years; that is, 100 \(1.03\)25 = 209.","sequence":885,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#25 years; that is, 100 \(1.03\)25 = 209.","start_ / IMPLICIT-43F1EF49C6D063F1 / IMPLICIT-7449493DBA26B1F1
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":239057,"label":"25 years; that is, 100 \(1.03\)25 = 209.","sequence":885,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#25 years; that is, 100 \(1.03\)25 = 209.","start_](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":239057,"label":"25 years; that is, 100 \(1.03\)25 = 209.","sequence":885,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#25 years; that is, 100 \(1.03\)25 = 209.","start_](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7449493DBA26B1F1 / {"end_word":239057,"label":"25 years; that is, 100 \(1.03\)25 = 209.","sequence":885,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#25 years; that is, 100 \(1.03\)25 = 209.","start_ / IMPLICIT-7449493DBA26B1F1 / IMPLICIT-43F1EF49C6D063F1
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":239057,"label":"25 years; that is, 100 \(1.03\)25 = 209.","sequence":885,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#25 years; that is, 100 \(1.03\)25 = 209.","start_](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":239057,"label":"25 years; that is, 100 \(1.03\)25 = 209.","sequence":885,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#25 years; that is, 100 \(1.03\)25 = 209.","start_](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AAE98068AD3CA15E / {"end_word":239057,"label":"25 years; that is, 100 \(1.03\)25 = 209.","sequence":885,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#25 years; that is, 100 \(1.03\)25 = 209.","start_ / IMPLICIT-AAE98068AD3CA15E / IMPLICIT-43F1EF49C6D063F1
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":425380,"feature_counts":{"01":1,"02":1,"03":1,"04":8,"05":0,"06":0,"07":4,"08":0,"09":0,"10":0},"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","local_definit](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":425380,"feature_counts":{"01":1,"02":1,"03":1,"04":8,"05":0,"06":0,"07":4,"08":0,"09":0,"10":0},"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","local_definit](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1C6959672D28CFA4 / {"end_word":425380,"feature_counts":{"01":1,"02":1,"03":1,"04":8,"05":0,"06":0,"07":4,"08":0,"09":0,"10":0},"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","local_definit / IMPLICIT-1C6959672D28CFA4
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":425380,"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","sequence":1533,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":425380,"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","sequence":1533,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-73B2A496793F52E1 / {"end_word":425380,"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","sequence":1533,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles- / IMPLICIT-73B2A496793F52E1 / IMPLICIT-BE0114ABDD4F76C4
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":425380,"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","sequence":1533,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":425380,"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","sequence":1533,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-BE0114ABDD4F76C4 / {"end_word":425380,"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","sequence":1533,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles- / IMPLICIT-BE0114ABDD4F76C4 / IMPLICIT-73B2A496793F52E1
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":425380,"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","sequence":1533,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":425380,"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","sequence":1533,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DBEF691C3528F987 / {"end_word":425380,"label":"0.167 or 16.7% growth. In the third year, the same $2 raise would correspond to a $2/$14 = 14.2%. The moral","sequence":1533,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles- / IMPLICIT-DBEF691C3528F987 / IMPLICIT-73B2A496793F52E1
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":451203,"feature_counts":{"01":0,"02":1,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"3 210 60 80 680 220/40 = 5.5","local_definition_count":0,"local_falsifier_count":1,"local_question_count":0,"local_revision](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":451203,"feature_counts":{"01":0,"02":1,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"3 210 60 80 680 220/40 = 5.5","local_definition_count":0,"local_falsifier_count":1,"local_question_count":0,"local_revision](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3A01DF4C27B3B941 / {"end_word":451203,"feature_counts":{"01":0,"02":1,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"3 210 60 80 680 220/40 = 5.5","local_definition_count":0,"local_falsifier_count":1,"local_question_count":0,"local_revision / IMPLICIT-3A01DF4C27B3B941
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":451203,"label":"3 210 60 80 680 220/40 = 5.5","sequence":1627,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#3 210 60 80 680 220/40 = 5.5","start_word":451116,"word_](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":451203,"label":"3 210 60 80 680 220/40 = 5.5","sequence":1627,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#3 210 60 80 680 220/40 = 5.5","start_word":451116,"word_](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-0B21202701774B03 / {"end_word":451203,"label":"3 210 60 80 680 220/40 = 5.5","sequence":1627,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#3 210 60 80 680 220/40 = 5.5","start_word":451116,"word_ / IMPLICIT-0B21202701774B03 / IMPLICIT-A9CA35C4DB5FF84E
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":451203,"label":"3 210 60 80 680 220/40 = 5.5","sequence":1627,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#3 210 60 80 680 220/40 = 5.5","start_word":451116,"word_](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":451203,"label":"3 210 60 80 680 220/40 = 5.5","sequence":1627,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#3 210 60 80 680 220/40 = 5.5","start_word":451116,"word_](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A9CA35C4DB5FF84E / {"end_word":451203,"label":"3 210 60 80 680 220/40 = 5.5","sequence":1627,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#3 210 60 80 680 220/40 = 5.5","start_word":451116,"word_ / IMPLICIT-A9CA35C4DB5FF84E / IMPLICIT-0B21202701774B03
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":451203,"label":"3 210 60 80 680 220/40 = 5.5","sequence":1627,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#3 210 60 80 680 220/40 = 5.5","start_word":451116,"word_](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":451203,"label":"3 210 60 80 680 220/40 = 5.5","sequence":1627,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#3 210 60 80 680 220/40 = 5.5","start_word":451116,"word_](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CB57423845309C80 / {"end_word":451203,"label":"3 210 60 80 680 220/40 = 5.5","sequence":1627,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#3 210 60 80 680 220/40 = 5.5","start_word":451116,"word_ / IMPLICIT-CB57423845309C80 / IMPLICIT-0B21202701774B03
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":451284,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"loca](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":451284,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"loca](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3D04441AA7042A1C / {"end_word":451284,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"loca / IMPLICIT-3D04441AA7042A1C
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":451284,"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","sequence":1628,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","start](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":451284,"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","sequence":1628,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","start](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1D1BBFC1F081E0E2 / {"end_word":451284,"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","sequence":1628,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","start / IMPLICIT-1D1BBFC1F081E0E2 / IMPLICIT-408569C01ECEF962
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":451284,"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","sequence":1628,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","start](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":451284,"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","sequence":1628,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","start](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-408569C01ECEF962 / {"end_word":451284,"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","sequence":1628,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","start / IMPLICIT-408569C01ECEF962 / IMPLICIT-1D1BBFC1F081E0E2
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":451284,"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","sequence":1628,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","start](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":451284,"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","sequence":1628,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","start](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-8C93F35E8DCACB45 / {"end_word":451284,"label":"0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","sequence":1628,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 0 - - 200 1100 60/40 = 1.5 1.5/$0.05","start / IMPLICIT-8C93F35E8DCACB45 / IMPLICIT-1D1BBFC1F081E0E2
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":453458,"feature_counts":{"01":1,"02":0,"03":1,"04":0,"05":0,"06":0,"07":1,"08":1,"09":0,"10":0},"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","local_defini](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":453458,"feature_counts":{"01":1,"02":0,"03":1,"04":0,"05":0,"06":0,"07":1,"08":1,"09":0,"10":0},"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","local_defini](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AA84AC9E37F0B1A8 / {"end_word":453458,"feature_counts":{"01":1,"02":0,"03":1,"04":0,"05":0,"06":0,"07":1,"08":1,"09":0,"10":0},"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","local_defini / IMPLICIT-AA84AC9E37F0B1A8
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":453458,"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","sequence":1645,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":453458,"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","sequence":1645,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-13D1FCB8B18AEB3C / {"end_word":453458,"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","sequence":1645,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles / IMPLICIT-13D1FCB8B18AEB3C / IMPLICIT-CB8AA91CA5A1FE6E
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":453458,"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","sequence":1645,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":453458,"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","sequence":1645,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CB8AA91CA5A1FE6E / {"end_word":453458,"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","sequence":1645,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles / IMPLICIT-CB8AA91CA5A1FE6E / IMPLICIT-13D1FCB8B18AEB3C
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":453458,"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","sequence":1645,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":453458,"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","sequence":1645,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EED4C73919062DFB / {"end_word":453458,"label":"3 . a. If the firms form a cartel, they will act like a monopoly, choosing the quantity of output where MR =","sequence":1645,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles / IMPLICIT-EED4C73919062DFB / IMPLICIT-13D1FCB8B18AEB3C
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":459275,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","local_definit](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":459275,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","local_definit](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E49AFF06EC7CBF5D / {"end_word":459275,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","local_definit / IMPLICIT-E49AFF06EC7CBF5D
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":459275,"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","sequence":1692,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":459275,"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","sequence":1692,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2CD67448C832DEB5 / {"end_word":459275,"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","sequence":1692,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles- / IMPLICIT-2CD67448C832DEB5 / IMPLICIT-9C8D02D041769C99
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":459275,"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","sequence":1692,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":459275,"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","sequence":1692,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9C8D02D041769C99 / {"end_word":459275,"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","sequence":1692,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles- / IMPLICIT-9C8D02D041769C99 / IMPLICIT-2CD67448C832DEB5
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":459275,"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","sequence":1692,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":459275,"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","sequence":1692,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-EBFAE0275C10E25D / {"end_word":459275,"label":"3 . From 1980 to 1990, real GDP grew by \(8,225.0 – 5,926.5\) / \(5,926.5\) = 39%. Over the same period, prices","sequence":1692,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles- / IMPLICIT-EBFAE0275C10E25D / IMPLICIT-2CD67448C832DEB5
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":462809,"feature_counts":{"01":1,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":2},"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","local_definitio](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":462809,"feature_counts":{"01":1,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":2},"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","local_definitio](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-323F17E5334C6046 / {"end_word":462809,"feature_counts":{"01":1,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":2},"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","local_definitio / IMPLICIT-323F17E5334C6046
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":462809,"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","sequence":1721,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-ec](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":462809,"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","sequence":1721,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-ec](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-330AA369182F3769 / {"end_word":462809,"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","sequence":1721,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-ec / IMPLICIT-330AA369182F3769 / IMPLICIT-4DE5953EC658CFD3
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":462809,"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","sequence":1721,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-ec](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":462809,"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","sequence":1721,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-ec](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4DE5953EC658CFD3 / {"end_word":462809,"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","sequence":1721,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-ec / IMPLICIT-4DE5953EC658CFD3 / IMPLICIT-330AA369182F3769
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":462809,"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","sequence":1721,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-ec](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":462809,"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","sequence":1721,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-ec](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-733D525D25257063 / {"end_word":462809,"label":"4 . Equilibrium occurs at the level of GDP where AD = AS. Insufficient aggregate demand could explain why","sequence":1721,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-ec / IMPLICIT-733D525D25257063 / IMPLICIT-330AA369182F3769
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":66768,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","local_de](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":66768,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","local_de](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1BE79D50FB697FE2 / {"end_word":66768,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","local_de / IMPLICIT-1BE79D50FB697FE2
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":66768,"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","sequence":254,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princip](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":66768,"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","sequence":254,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princip](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1A14A9B3D2B4F579 / {"end_word":66768,"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","sequence":254,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princip / IMPLICIT-1A14A9B3D2B4F579 / IMPLICIT-2F2C5155A7B5CE56
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":66768,"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","sequence":254,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princip](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":66768,"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","sequence":254,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princip](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2F2C5155A7B5CE56 / {"end_word":66768,"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","sequence":254,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princip / IMPLICIT-2F2C5155A7B5CE56 / IMPLICIT-1A14A9B3D2B4F579
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":66768,"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","sequence":254,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princip](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":66768,"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","sequence":254,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princip](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4BACD507918A13DF / {"end_word":66768,"label":"35 . The equation for a supply curve is 4P = Q. What is the elasticity of supply as price rises from 3 to 4? What","sequence":254,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/princip / IMPLICIT-4BACD507918A13DF / IMPLICIT-1A14A9B3D2B4F579
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":68854,"feature_counts":{"01":0,"02":0,"03":4,"04":1,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"P 4 0 81 + 0 = 81","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":0,"s](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":68854,"feature_counts":{"01":0,"02":0,"03":4,"04":1,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"P 4 0 81 + 0 = 81","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":0,"s](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-940980CDB94B9EC0 / {"end_word":68854,"feature_counts":{"01":0,"02":0,"03":4,"04":1,"05":0,"06":0,"07":1,"08":0,"09":0,"10":0},"label":"P 4 0 81 + 0 = 81","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":0,"s / IMPLICIT-940980CDB94B9EC0
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":68854,"label":"P 4 0 81 + 0 = 81","sequence":263,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#P 4 0 81 + 0 = 81","start_word":68701,"word_count":153,"work_id":"OPE](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":68854,"label":"P 4 0 81 + 0 = 81","sequence":263,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#P 4 0 81 + 0 = 81","start_word":68701,"word_count":153,"work_id":"OPE](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2F0C486F67824EE7 / {"end_word":68854,"label":"P 4 0 81 + 0 = 81","sequence":263,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#P 4 0 81 + 0 = 81","start_word":68701,"word_count":153,"work_id":"OPE / IMPLICIT-2F0C486F67824EE7 / IMPLICIT-4068F7A6EC0068D8
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":68854,"label":"P 4 0 81 + 0 = 81","sequence":263,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#P 4 0 81 + 0 = 81","start_word":68701,"word_count":153,"work_id":"OPE](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":68854,"label":"P 4 0 81 + 0 = 81","sequence":263,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#P 4 0 81 + 0 = 81","start_word":68701,"word_count":153,"work_id":"OPE](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-4068F7A6EC0068D8 / {"end_word":68854,"label":"P 4 0 81 + 0 = 81","sequence":263,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#P 4 0 81 + 0 = 81","start_word":68701,"word_count":153,"work_id":"OPE / IMPLICIT-4068F7A6EC0068D8 / IMPLICIT-2F0C486F67824EE7
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":68854,"label":"P 4 0 81 + 0 = 81","sequence":263,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#P 4 0 81 + 0 = 81","start_word":68701,"word_count":153,"work_id":"OPE](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":68854,"label":"P 4 0 81 + 0 = 81","sequence":263,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#P 4 0 81 + 0 = 81","start_word":68701,"word_count":153,"work_id":"OPE](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A4B458F23A498E98 / {"end_word":68854,"label":"P 4 0 81 + 0 = 81","sequence":263,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#P 4 0 81 + 0 = 81","start_word":68701,"word_count":153,"work_id":"OPE / IMPLICIT-A4B458F23A498E98 / IMPLICIT-2F0C486F67824EE7
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":70085,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_r](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":70085,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_r](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3DBDFEE543D3D5EE / {"end_word":70085,"feature_counts":{"01":0,"02":0,"03":0,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_r / IMPLICIT-3DBDFEE543D3D5EE
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":70085,"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","sequence":268,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","start_word"](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":70085,"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","sequence":268,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","start_word"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-515ECB9D15139AC2 / {"end_word":70085,"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","sequence":268,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","start_word" / IMPLICIT-515ECB9D15139AC2 / IMPLICIT-7085E73315C211B2
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":70085,"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","sequence":268,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","start_word"](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":70085,"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","sequence":268,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","start_word"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7085E73315C211B2 / {"end_word":70085,"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","sequence":268,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","start_word" / IMPLICIT-7085E73315C211B2 / IMPLICIT-515ECB9D15139AC2
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":70085,"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","sequence":268,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","start_word"](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":70085,"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","sequence":268,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","start_word"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CCF47A986CB6EF6C / {"end_word":70085,"label":"1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","sequence":268,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#1 22 22 22/$14=1.6 1 16 16 16/$7=2.3","start_word" / IMPLICIT-CCF47A986CB6EF6C / IMPLICIT-515ECB9D15139AC2
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":70538,"feature_counts":{"01":1,"02":5,"03":7,"04":0,"05":0,"06":0,"07":4,"08":1,"09":0,"10":1},"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","local_definition_count":1,"local_falsifier_count":1,"local_question_count":0,"local_r](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":70538,"feature_counts":{"01":1,"02":5,"03":7,"04":0,"05":0,"06":0,"07":4,"08":1,"09":0,"10":1},"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","local_definition_count":1,"local_falsifier_count":1,"local_question_count":0,"local_r](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DDD612857415948A / {"end_word":70538,"feature_counts":{"01":1,"02":5,"03":7,"04":0,"05":0,"06":0,"07":4,"08":1,"09":0,"10":1},"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","local_definition_count":1,"local_falsifier_count":1,"local_question_count":0,"local_r / IMPLICIT-DDD612857415948A
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":70538,"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","sequence":269,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","start_word"](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":70538,"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","sequence":269,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","start_word"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A3B3465FDD8BB283 / {"end_word":70538,"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","sequence":269,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","start_word" / IMPLICIT-A3B3465FDD8BB283 / IMPLICIT-CCA29D6EC47D1767
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":70538,"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","sequence":269,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","start_word"](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":70538,"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","sequence":269,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","start_word"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CCA29D6EC47D1767 / {"end_word":70538,"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","sequence":269,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","start_word" / IMPLICIT-CCA29D6EC47D1767 / IMPLICIT-A3B3465FDD8BB283
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":70538,"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","sequence":269,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","start_word"](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":70538,"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","sequence":269,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","start_word"](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CD88EA2DDB1D9CE8 / {"end_word":70538,"label":"5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","sequence":269,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#5 97 16 16/$14=1.1 5 70 12 12/$7=1.7","start_word" / IMPLICIT-CD88EA2DDB1D9CE8 / IMPLICIT-A3B3465FDD8BB283
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99298,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","local_definition_count":0,"local_falsifier_count":0,"local_](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":99298,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","local_definition_count":0,"local_falsifier_count":0,"local_](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9D0660A5684A86D9 / {"end_word":99298,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","local_definition_count":0,"local_falsifier_count":0,"local_ / IMPLICIT-9D0660A5684A86D9
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99298,"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","sequence":371,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 $28 $20 $52 $20+$52=$7](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":99298,"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","sequence":371,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 $28 $20 $52 $20+$52=$7](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3FEE0BBFCC6A53A4 / {"end_word":99298,"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","sequence":371,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 $28 $20 $52 $20+$52=$7 / IMPLICIT-3FEE0BBFCC6A53A4 / IMPLICIT-B61733AC9518EA04
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99298,"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","sequence":371,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 $28 $20 $52 $20+$52=$7](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":99298,"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","sequence":371,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 $28 $20 $52 $20+$52=$7](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B61733AC9518EA04 / {"end_word":99298,"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","sequence":371,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 $28 $20 $52 $20+$52=$7 / IMPLICIT-B61733AC9518EA04 / IMPLICIT-3FEE0BBFCC6A53A4
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99298,"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","sequence":371,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 $28 $20 $52 $20+$52=$7](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":99298,"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","sequence":371,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 $28 $20 $52 $20+$52=$7](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DC8ABD60E12CAD8C / {"end_word":99298,"label":"4 $28 $20 $52 $20+$52=$72 $52/4=$13.00 $72/4=$18.00 \($72−$55\)/","sequence":371,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#4 $28 $20 $52 $20+$52=$7 / IMPLICIT-DC8ABD60E12CAD8C / IMPLICIT-3FEE0BBFCC6A53A4
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99379,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"0 $28 $28×0=$0","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":0,"sequ](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":99379,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"0 $28 $28×0=$0","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":0,"sequ](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-A5541CAB2FBB9DAF / {"end_word":99379,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"0 $28 $28×0=$0","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":0,"sequ / IMPLICIT-A5541CAB2FBB9DAF
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-61A095D15775AC06 / {"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E / IMPLICIT-61A095D15775AC06 / IMPLICIT-CA9F40FC7FB03AD2
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CA9F40FC7FB03AD2 / {"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E / IMPLICIT-CA9F40FC7FB03AD2 / IMPLICIT-61A095D15775AC06
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D0E4133A4FB9F315 / {"end_word":99379,"label":"0 $28 $28×0=$0","sequence":372,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#0 $28 $28×0=$0","start_word":99298,"word_count":81,"work_id":"OPENSTAX-E / IMPLICIT-D0E4133A4FB9F315 / IMPLICIT-61A095D15775AC06
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99466,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"2 $56 $45 $56−$45=$11","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl)
+- [{"end_word":99466,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"2 $56 $45 $56−$45=$11","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count":](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-55E0EBCFCC29A3C9 / {"end_word":99466,"feature_counts":{"01":0,"02":0,"03":1,"04":0,"05":0,"06":0,"07":0,"08":0,"09":0,"10":0},"label":"2 $56 $45 $56−$45=$11","local_definition_count":0,"local_falsifier_count":0,"local_question_count":0,"local_revision_count": / IMPLICIT-55E0EBCFCC29A3C9
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/longform-section-state.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99466,"label":"2 $56 $45 $56−$45=$11","sequence":373,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#2 $56 $45 $56−$45=$11","start_word":99379,"word_count":87,"work_i](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":99466,"label":"2 $56 $45 $56−$45=$11","sequence":373,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#2 $56 $45 $56−$45=$11","start_word":99379,"word_count":87,"work_i](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-159EF7557568BB0E / {"end_word":99466,"label":"2 $56 $45 $56−$45=$11","sequence":373,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#2 $56 $45 $56−$45=$11","start_word":99379,"word_count":87,"work_i / IMPLICIT-159EF7557568BB0E / IMPLICIT-3DCD64C7A2106492
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99466,"label":"2 $56 $45 $56−$45=$11","sequence":373,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#2 $56 $45 $56−$45=$11","start_word":99379,"word_count":87,"work_i](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":99466,"label":"2 $56 $45 $56−$45=$11","sequence":373,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#2 $56 $45 $56−$45=$11","start_word":99379,"word_count":87,"work_i](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3DCD64C7A2106492 / {"end_word":99466,"label":"2 $56 $45 $56−$45=$11","sequence":373,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#2 $56 $45 $56−$45=$11","start_word":99379,"word_count":87,"work_i / IMPLICIT-3DCD64C7A2106492 / IMPLICIT-159EF7557568BB0E
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-01/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [{"end_word":99466,"label":"2 $56 $45 $56−$45=$11","sequence":373,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#2 $56 $45 $56−$45=$11","start_word":99379,"word_count":87,"work_i](../../../data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl)
+- [{"end_word":99466,"label":"2 $56 $45 $56−$45=$11","sequence":373,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#2 $56 $45 $56−$45=$11","start_word":99379,"word_count":87,"work_i](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-DD4DC3846336A78C / {"end_word":99466,"label":"2 $56 $45 $56−$45=$11","sequence":373,"source_locator":"https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf#2 $56 $45 $56−$45=$11","start_word":99379,"word_count":87,"work_i / IMPLICIT-DD4DC3846336A78C / IMPLICIT-159EF7557568BB0E
-  - 来源：`data/research/longform-emergence-and-historical-adjudication-2026-09-07/invalidated-runs/run-02/longform-emergence-and-historical-adjudication-2026-09-07/chapter-map.jsonl`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [\| **U₃ 耦合动力学元律** \| M₄动力学元律 \| 耦合动力学:dx/dt=f\(x₁,x₂,...\)或f\(g\(x\),h\(x\)\) \|](../../../docs/phi_meta_law.md)
+- [\| **U₃ 耦合动力学元律** \| M₄动力学元律 \| 耦合动力学:dx/dt=f\(x₁,x₂,...\)或f\(g\(x\),h\(x\)\) \|](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-AB0AE67F6D7524A9 / \| **U₃ 耦合动力学元律** \| M₄动力学元律 \| 耦合动力学:dx/dt=f\(x₁,x₂,...\)或f\(g\(x\),h\(x\)\) \| / IMPLICIT-AB0AE67F6D7524A9 / IMPLICIT-AC69D5A2E1C2D7CC
-  - 来源：`docs/phi_meta_law.md`
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
 - [\| **U₃ 耦合动力学元律** \| M₄动力学元律 \| 耦合动力学:dx/dt=f\(x₁,x₂,...\)或f\(g\(x\),h\(x\)\) \|](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2403,11 +1823,6 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-1733686f7b4d281d / \| 16 \| COMPLETED \| pending closure \| pending closure \| Closed full regression, downstream projection repair, determinist
   - 来源：`reports/operations/ignition-126-progress.md`
-  - 依赖：—；被引用：—
-- [\| 6 \| 089 至 103 共 15 产物 \| 投影/闸门/对齐层/可视化/维护 \|](../../../data/external-research/088-FINAL-REPORT.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-9101eccc3c3c791c / \| 6 \| 089 至 103 共 15 产物 \| 投影/闸门/对齐层/可视化/维护 \|
-  - 来源：`data/external-research/088-FINAL-REPORT.md`
   - 依赖：—；被引用：—
 - [\| \[C-109\]\( \) \| \[口味偏好固化\]\( \) \| Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt \|](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2484,23 +1899,608 @@
   - 可搜索名称：NFC-f5402d965444cd92 / \| `translation_language_thought` \| `COVERED_BOUNDED` \| `language_thought.project_bounded_meaning` \| The Current language
   - 来源：`docs/operations/ignition-operation-playbooks-r1.md`
   - 依赖：—；被引用：—
-- [\| BC-20260709-005 \| 《创新者的窘境》 \| 破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。 \| V3 \| 1/ln \| 《创新者的窘境》最终收](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
-  - 可搜索名称：NFC-af089a75b012e6d1 / \| BC-20260709-005 \| 《创新者的窘境》 \| 破坏性创新与点火框架门控面演化的同构性。大公司受旧维度拖累（1/ln为负），边缘玩家无旧维度负担，验证了创新在边缘的拖累效应。 \| V3 \| 1/ln \| 《创新者的窘境》最终收
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
-  - 依赖：—；被引用：—
-- [\| BC-20260709-021 \| 《原则》 \| 生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。 \| pending \| P_meta \| 《原则》最终收敛报告 2](../../../docs/meta-protocols/book-validation-22-cases-20260709.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-113f0d72e729392f / \| BC-20260709-021 \| 《原则》 \| 生活和工作原则与点火框架P_meta元协议实例化的映射。原则作为元协议，指导决策门控面，验证了元协议投影算子的有效性。 \| pending \| P_meta \| 《原则》最终收敛报告 2
-  - 来源：`docs/meta-protocols/book-validation-22-cases-20260709.md`
-  - 依赖：—；被引用：—
 - [\| Current projections \| Facts, Snapshot, semantic gate and two-pass compiler determinism pass after the projection rebui](../../../reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-c2638abb44c8e79d / \| Current projections \| Facts, Snapshot, semantic gate and two-pass compiler determinism pass after the projection rebui
   - 来源：`reports/operations/ignition-134-step14-residual-debt-projection-hygiene.md`
   - 依赖：—；被引用：—
-- [\| E1 \| 线性演化协议 \| Linear-Evolution Protocol \| 沿单一轨迹线性推进，状态可预测 \|](../../../docs/protocols/protocol-index.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_EMPIRICAL_TEST`
-  - 可搜索名称：NFC-29150c45832abaf9 / \| E1 \| 线性演化协议 \| Linear-Evolution Protocol \| 沿单一轨迹线性推进，状态可预测 \|
-  - 来源：`docs/protocols/protocol-index.md`
+- [\| Failure handling \| No stage-specific gate \| Schema, semantic, identity/HEAD, privacy, responsibility, succession and b](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-02d021373da2e251 / \| Failure handling \| No stage-specific gate \| Schema, semantic, identity/HEAD, privacy, responsibility, succession and b
+  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
+  - 依赖：—；被引用：—
+- [\| I_iso\(A,B\) \| 无同构案例；结构独特（教育评价硬门槛 + 青年教师）。 \|](../../../outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-9bed28cbd66745b1 / \| I_iso\(A,B\) \| 无同构案例；结构独特（教育评价硬门槛 + 青年教师）。 \|
+  - 来源：`outputs/audit/nc-001-title-barrier-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [\| L_meta \| 社会学实例，提示跨域同构，未越权 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-6c27738a4ab6f77f / \| L_meta \| 社会学实例，提示跨域同构，未越权 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| L_meta \| 自然科学实例，强化跨域同构 \|](../../../outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-e7f3cdb87f993a19 / \| L_meta \| 自然科学实例，强化跨域同构 \|
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/science/collision-report.md`
+  - 依赖：—；被引用：—
+- [\| M1 听话—低成本控制 \| 边界扩展 \| D595/EXIT 族 \| 约束来源=管理成本，同构；命中 V1 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-63ac227a65b3942e / \| M1 听话—低成本控制 \| 边界扩展 \| D595/EXIT 族 \| 约束来源=管理成本，同构；命中 V1 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：D595；被引用：—
+- [\| M2 外部评价内化自我规训 \| 已有覆盖 \| D598+D597 \| 实质同构；家庭轴补强 \|](../../../outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-0a3da2a3283f13a2 / \| M2 外部评价内化自我规训 \| 已有覆盖 \| D598+D597 \| 实质同构；家庭轴补强 \|
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：D597, D598；被引用：—
+- [\| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子](../../../outputs/audit/teacher-competition-backfill-review-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-10bf8a6175e93442 / \| N1 \| 退出权族 FUNC-L1-EXIT \| 退出权族 77 文件存在 \| C：补「绑定致架空」维度；I_iso：非同构，是细分；L_meta：注释级不污染 \| **作为注释并入 EXIT 族** \| 不新建条目，补结构性不可拒绝子
+  - 来源：`outputs/audit/teacher-competition-backfill-review-20260708.md`
+  - 依赖：—；被引用：—
+- [\| N2=Symbolic Compiler \| N2=Representation \(encoder/decoder/validator\) \|](../../../reports/external-research/121Q5-final-report.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-342B1819B0C12810 / \| N2=Symbolic Compiler \| N2=Representation \(encoder/decoder/validator\) \| / IMPLICIT-342B1819B0C12810
+  - 来源：`reports/external-research/121Q5-final-report.md`
+  - 依赖：—；被引用：—
+- [\| No external function projection \| ✅ All projections marked EXTERNAL_PARADIGM \|](../../../reports/external-research/120-source-quality-and-template-risk-audit.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-0a69e9ffd2fa04e5 / \| No external function projection \| ✅ All projections marked EXTERNAL_PARADIGM \|
+  - 来源：`reports/external-research/120-source-quality-and-template-risk-audit.md`
+  - 依赖：—；被引用：—
+- [\| Surface \| Baseline Main \| 1.4 Candidate exact-branch projection \| Capability effect \|](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-58d5b43ea0d1d113 / \| Surface \| Baseline Main \| 1.4 Candidate exact-branch projection \| Capability effect \|
+  - 来源：`reports/operations/IGNITION-ITERATION-METHOD-1.4-homepage-comparison.md`
+  - 依赖：—；被引用：—
+- [\| Task 127 projection manifest `missing=96` \| `HISTORICAL_PROJECTION_RESIDUAL` \| Historical projection-hygiene manifest](../../../reports/operations/ignition-130-step11-residual-reclassification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-c8df8d47b339144d / \| Task 127 projection manifest `missing=96` \| `HISTORICAL_PROJECTION_RESIDUAL` \| Historical projection-hygiene manifest
+  - 来源：`reports/operations/ignition-130-step11-residual-reclassification.md`
+  - 依赖：—；被引用：—
+- [\| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \|](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-98bce4c901d5ab64 / \| 同构误判 \| 弱类比冒充同构 \| I_iso \| 降级为类比 \|
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 我播种黄金 / structural analogy \| 194 \| 50 \| 50 \| 0 \| false \| 0 \| 100% \| 943.108 ms \| `INCONCLUSIVE` \|](../../../reports/operations/ignition-172-20260915-step11-ab-replay.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-15fafeb2231f4ef8 / \| 我播种黄金 / structural analogy \| 194 \| 50 \| 50 \| 0 \| false \| 0 \| 100% \| 943.108 ms \| `INCONCLUSIVE` \|
+  - 来源：`reports/operations/ignition-172-20260915-step11-ab-replay.md`
+  - 依赖：—；被引用：—
+- [\| 结构性统一 \| 多领域共享同构、门控、约束、收敛结构 \| 可以（L1-L2） \|](../../../outputs/getbrain/project-position-update-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-17af45cc473c3c81 / \| 结构性统一 \| 多领域共享同构、门控、约束、收敛结构 \| 可以（L1-L2） \|
+  - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
+- [\| 输出跨域同构汇总 \| ✓ \|](../../../outputs/audit/cross-domain-smoke-test-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-9026bf124ab59f6a / \| 输出跨域同构汇总 \| ✓ \|
+  - 来源：`outputs/audit/cross-domain-smoke-test-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [ΔΘ = Θ - min Φ = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0923FD51EF01A1CB / ΔΘ = Θ - min Φ = 0 / IMPLICIT-0923FD51EF01A1CB / IMPLICIT-1A9DA4161A0E8200
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [ΔΘ = Θ - min Φ = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1A9DA4161A0E8200 / ΔΘ = Θ - min Φ = 0 / IMPLICIT-1A9DA4161A0E8200 / IMPLICIT-0923FD51EF01A1CB
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\]](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6899092547602833 / Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\] / IMPLICIT-6899092547602833 / IMPLICIT-E51AC76294648D92
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\]](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E51AC76294648D92 / Θ := argmin_x \[∫_{Ω} V\(x\) dΩ - T·\(-k_B ∫_{Ω} p\(x\) ln p\(x\) dΩ\)\] / IMPLICIT-E51AC76294648D92 / IMPLICIT-6899092547602833
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-B6FEBD9550221C76 / ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\) / IMPLICIT-B6FEBD9550221C76 / IMPLICIT-C3C8D112801987DA
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C3C8D112801987DA / ΘY1_iso\(A,B\) := Θ_A\(x\) = Θ_B\(φ\(x\)\) ∧ Y1_A\(x\) = Y1_B\(φ\(x\)\) / IMPLICIT-C3C8D112801987DA / IMPLICIT-B6FEBD9550221C76
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [σ = f\(Posture_deg, H\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D3CC0B303B40577E / σ = f\(Posture_deg, H\) / IMPLICIT-D3CC0B303B40577E
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3F39071C3EF5FF6F / σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\) / IMPLICIT-3F39071C3EF5FF6F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E92EB02A64BB97DD / σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点 / IMPLICIT-E92EB02A64BB97DD
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Φ\(x\) = E\(x\) - T·S\(x\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7506B88F1F0D7FCD / Φ\(x\) = E\(x\) - T·S\(x\) / IMPLICIT-7506B88F1F0D7FCD / IMPLICIT-8283AA10BCACD392
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Φ\(x\) = E\(x\) - T·S\(x\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8283AA10BCACD392 / Φ\(x\) = E\(x\) - T·S\(x\) / IMPLICIT-8283AA10BCACD392 / IMPLICIT-7506B88F1F0D7FCD
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-97EDC919D40414E5 / Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\) / IMPLICIT-97EDC919D40414E5 / IMPLICIT-EDA3023ED91EA252
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-EDA3023ED91EA252 / Φ_iso\(A,B\) := ∃φ: A→B, Φ_A\(x\) = Φ_B\(φ\(x\)\) / IMPLICIT-EDA3023ED91EA252 / IMPLICIT-97EDC919D40414E5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-41B66B56E0A0BD47 / Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)} / IMPLICIT-41B66B56E0A0BD47
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0945A6A6A90EDEC6 / Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)} / IMPLICIT-0945A6A6A90EDEC6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1D67331BDA699B53 / Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复} / IMPLICIT-1D67331BDA699B53
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-174E36F3415C91F4 / Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足} / IMPLICIT-174E36F3415C91F4
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [∂Ω_universe = {x \| Cᵢ\(x\) = 边界值}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-36F43D15A5DB25A5 / ∂Ω_universe = {x \| Cᵢ\(x\) = 边界值} / IMPLICIT-36F43D15A5DB25A5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A\(S\) = 最优决策](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8D70A958B15DB468 / ∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A\(S\) = 最优决策 / IMPLICIT-8D70A958B15DB468 / IMPLICIT-A92F11F032ACA5E0
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A\(S\) = 最优决策](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A92F11F032ACA5E0 / ∄ 完美财务决策算法 A，使得 ∀ 财务场景 S，A\(S\) = 最优决策 / IMPLICIT-A92F11F032ACA5E0 / IMPLICIT-8D70A958B15DB468
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [不可复现数值：初次审计据 0000 摘要误判 `f₁/同构度/计数增量` 不可复现；**完整报告证实这些数值存在**，误判已撤销（见第〇节）。命令疑点 #2/#9 的「数值来源」已由完整报告坐实。](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-fad1d0f433a492c2 / 不可复现数值：初次审计据 0000 摘要误判 `f₁/同构度/计数增量` 不可复现；**完整报告证实这些数值存在**，误判已撤销（见第〇节）。命令疑点 #2/#9 的「数值来源」已由完整报告坐实。
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：—；被引用：—
+- [不采纳理由：对应 failure_typology FAIL-003 尺度错配；私有流程 ≠ 学科可判定结构。](../../../outputs/collisions/20260708-smoke-test/rejected.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-5bf0747ca1cd92b4 / 不采纳理由：对应 failure_typology FAIL-003 尺度错配；私有流程 ≠ 学科可判定结构。
+  - 来源：`outputs/collisions/20260708-smoke-test/rejected.md`
+  - 依赖：—；被引用：—
+- [不采纳项 · P1 接入烟雾测试](../../ASSET-CARDS.md#asset-hr-a3102269fa5cb3fd)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：不采纳项 · P1 接入烟雾测试 / rejected
+  - 来源：`outputs/collisions/20260708-smoke-test/rejected.md`
+  - 依赖：—；被引用：—
+- [与退出权不同构：退出=离开，避风港=内部保留低侵蚀空间](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d23645fd745d0bb2 / 与退出权不同构：退出=离开，避风港=内部保留低侵蚀空间
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [与退出权族不同构：补「待遇强绑定→可拒绝性趋零」维度](../../../outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-246ea5f319d2e154 / 与退出权族不同构：补「待遇强绑定→可拒绝性趋零」维度
+  - 来源：`outputs/audit/teacher-competition-small-batch-backfill-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [两张表全量碰撞报告（two-tables-full-collision-report）](../../ASSET-CARDS.md#asset-hr-bbf31ff3f05d22fe)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：两张表全量碰撞报告（two-tables-full-collision-report） / two-tables-full-collision-report
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/two-tables-full-collision-report.md`
+  - 依赖：—；被引用：—
+- [两张表版本同步维护审计（2026-07-09 00:30）](../../ASSET-CARDS.md#asset-hr-2605b1957ccb9e09)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：两张表版本同步维护审计（2026-07-09 00:30） / two-tables-version-sync-audit-20260708
+  - 来源：`outputs/audit/two-tables-version-sync-audit-20260708.md`
+  - 依赖：—；被引用：—
+- [中文：$$\\text{Noether}: G \\xrightarrow{\\text{对称}} \\text{Conservation} \\quad \\Longleftrightarrow \\quad \\text{Ignition}: \\neg G \\xrightarrow{\\text{破缺}} \\text{Directed Evolution}$$ 守恒量变化率： $$\\frac{dQ}{dt} = -\\nabla G \\cdot \\vec{v}_{evolution}$$ $](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2721291F515316D6 / 中文：$$\\text{Noether}: G \\xrightarrow{\\text{对称}} \\text{Conservation} \\quad \\Longleftrightarrow \\quad \\text{Ignition}: \\neg G \\xrightarrow{\\text{破缺}} \\text{Directed Evolution}$$ 守恒量变化率： $$\\frac{dQ}{dt} = -\\nabla G \\cdot \\vec{v}_{evolution}$$ $ / IMPLICIT-2721291F515316D6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Classical\(μ, Λ\) = lim_{μ/Λ→∞} 1/ln\(μ/Λ\) = 0。经典力学是所有门控贡献趋零的极限态，确定性=门控贡献可忽略。牛顿力学不是"更基本的理论"，是μ>>Λ时门控贡献趋零的退化极限。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2F4D1DD5B00C75DE / 中文：Classical\(μ, Λ\) = lim_{μ/Λ→∞} 1/ln\(μ/Λ\) = 0。经典力学是所有门控贡献趋零的极限态，确定性=门控贡献可忽略。牛顿力学不是"更基本的理论"，是μ>>Λ时门控贡献趋零的退化极限。 / IMPLICIT-2F4D1DD5B00C75DE
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-418959E91EE64A93 / 中文：d_opt由"新门控面降低p"（αᵢ 0）的平衡决定。dΦ/dd=0→Σᵢ αᵢ/\(1-pᵢ\(d_opt\)\)=0。d_opt是学习收益和维护成本的交叉点。 / IMPLICIT-418959E91EE64A93
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：dP_exit/dΩ = 0 ↔ dΦ/dμ = 0](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D89A028B92AAA77C / 中文：dP_exit/dΩ = 0 ↔ dΦ/dμ = 0 / IMPLICIT-D89A028B92AAA77C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：dW/dt = -θ_resist×\(dE/dt\)/E² - dε_aware_min/dt](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AEA6D5687F6D54EA / 中文：dW/dt = -θ_resist×\(dE/dt\)/E² - dε_aware_min/dt / IMPLICIT-AEA6D5687F6D54EA
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：dε/dt = α·\(1-ε\)·I·σ\(Δv\) - β·ε·Posture_deg·H](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-283F04B5DDEA6E6E / 中文：dε/dt = α·\(1-ε\)·I·σ\(Δv\) - β·ε·Posture_deg·H / IMPLICIT-283F04B5DDEA6E6E
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：E_signal\(t\) = {零阶:ε, 一阶:dε/dt, 二阶:d²ε/dt², 交互:εᵢ×εⱼ}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-982754AA1547AB4D / 中文：E_signal\(t\) = {零阶:ε, 一阶:dε/dt, 二阶:d²ε/dt², 交互:εᵢ×εⱼ} / IMPLICIT-982754AA1547AB4D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：f\(执念,逃避\) = σ\(θ_escape - ε_fixation\) × R_escape²。执念O触发逃避E\(O\)，逃避本身成为新执念源，形成二阶逃避。第一层逃避现实，第二层逃避逃避行为本身。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-958523EA5EA33B8D / 中文：f\(执念,逃避\) = σ\(θ_escape - ε_fixation\) × R_escape²。执念O触发逃避E\(O\)，逃避本身成为新执念源，形成二阶逃避。第一层逃避现实，第二层逃避逃避行为本身。 / IMPLICIT-958523EA5EA33B8D
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：I\(Ω\) = log₂ \|{x \| 所有硬约束 Cᵢ\(x\) 同时满足}\|](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0A7AC0249AAAD7FB / 中文：I\(Ω\) = log₂ \|{x \| 所有硬约束 Cᵢ\(x\) 同时满足}\| / IMPLICIT-0A7AC0249AAAD7FB
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：L_net\(t\) = \(1-H_blur\) × C_exit_gain - L_rigidity](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3516A01BFB0D4B2C / 中文：L_net\(t\) = \(1-H_blur\) × C_exit_gain - L_rigidity / IMPLICIT-3516A01BFB0D4B2C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：n_lock\(Ω\) = Σᵢ step\(C_exit\(Ωᵢ\) > θ_C\(Ωᵢ\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4EFF694A9341849E / 中文：n_lock\(Ω\) = Σᵢ step\(C_exit\(Ωᵢ\) > θ_C\(Ωᵢ\)\) / IMPLICIT-4EFF694A9341849E
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：P\(grid_k \| L\) = f\(H_total, C_exit, D_immune\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E073D5834A7B64C0 / 中文：P\(grid_k \| L\) = f\(H_total, C_exit, D_immune\) / IMPLICIT-E073D5834A7B64C0
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：P_collision\(WM\) = P_slot × P_priority × P_overlap **三个乘法因子：** P_slot = 1 - N_active/WM - 槽位可用率，随WM↑ - 缓存越大，越容易装下信息 P_priority = σ\(α_pri × N_active/WM - θ_pri\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DD671816730BAC16 / 中文：P_collision\(WM\) = P_slot × P_priority × P_overlap **三个乘法因子：** P_slot = 1 - N_active/WM - 槽位可用率，随WM↑ - 缓存越大，越容易装下信息 P_priority = σ\(α_pri × N_active/WM - θ_pri\) / IMPLICIT-DD671816730BAC16
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：P_exit\(t\)=f\(Ω\(t\),T\(t\),C\(t\),σ\(t\)\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C8A78C480E7C9DF6 / 中文：P_exit\(t\)=f\(Ω\(t\),T\(t\),C\(t\),σ\(t\)\) / IMPLICIT-C8A78C480E7C9DF6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：P_exit\(t\)=P_exit\(Ω,T,C,σ\) × e^\(-Γ_unified×t\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C81EE48F4D8DB9A9 / 中文：P_exit\(t\)=P_exit\(Ω,T,C,σ\) × e^\(-Γ_unified×t\) / IMPLICIT-C81EE48F4D8DB9A9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：P_exit\(Ω\) = R\(Ω\) - C\(Ω\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3239CC7F68833180 / 中文：P_exit\(Ω\) = R\(Ω\) - C\(Ω\) / IMPLICIT-3239CC7F68833180
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：P_exit\(Ω\)=f\(Ω,T,C,σ\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3FBC7E635D686C61 / 中文：P_exit\(Ω\)=f\(Ω,T,C,σ\) / IMPLICIT-3FBC7E635D686C61
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：P_exit_decay\(Ω,t\) = P_exit\(Ω,0\) × e^\(-λ·t\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4E386C27C382699E / 中文：P_exit_decay\(Ω,t\) = P_exit\(Ω,0\) × e^\(-λ·t\) / IMPLICIT-4E386C27C382699E
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：P_exit_phase\(ε_aware\) = {5个相变点}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-1404AFC2CDA0D45F / 中文：P_exit_phase\(ε_aware\) = {5个相变点} / IMPLICIT-1404AFC2CDA0D45F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：P_sustain\(Ω\) = 1 - P_exit\(Ω\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-92285AC7A60A3475 / 中文：P_sustain\(Ω\) = 1 - P_exit\(Ω\) / IMPLICIT-92285AC7A60A3475
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Space_Function\(Ω\) = {I\(Ω\), D_immune\(Ω\), R\(Ω\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2BC1BFE3536FEAE0 / 中文：Space_Function\(Ω\) = {I\(Ω\), D_immune\(Ω\), R\(Ω\)} / IMPLICIT-2BC1BFE3536FEAE0
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：W\(S\)=∫_S H² dA, min_{S:亏格g} W\(S\)=2π² \(g=1\)，环面达到Willmore能量极小点。变分法验证通过：J⁺=0.8, J⁻=0.2, C_unified=1。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-69FEF86E0A1D6548 / 中文：W\(S\)=∫_S H² dA, min_{S:亏格g} W\(S\)=2π² \(g=1\)，环面达到Willmore能量极小点。变分法验证通过：J⁺=0.8, J⁻=0.2, C_unified=1。 / IMPLICIT-69FEF86E0A1D6548
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Window\(t\) = σ\(ε_eff - θ_low\) × σ\(θ_high - ε_eff\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-816D0809F882F50E / 中文：Window\(t\) = σ\(ε_eff - θ_low\) × σ\(θ_high - ε_eff\) / IMPLICIT-816D0809F882F50E
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：β\(t\) = γ × maxⱼ σ'\(εⱼ\(t\)-θC\(j\)\)，β先升后降，峰值在最弱维度推过门槛时。 dβ/dt = γ × σ''\(εₖ-θC\(k\)\) × dεₖ/dt σ''\(x\) = σ'\(x\)\(1-2σ\(x\)\)，在x=0处变号。 防守阶段（εₖ 0→β随改善而升→级联防御权重增大 进攻阶段（εₖ>θC\(k\)）：σ''<0→β随改善而降→贪心优化权重增大 切换点：εₖ=θC\(k\)，β=0.25γ为峰值](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FAB0F9026A6F7731 / 中文：β\(t\) = γ × maxⱼ σ'\(εⱼ\(t\)-θC\(j\)\)，β先升后降，峰值在最弱维度推过门槛时。 dβ/dt = γ × σ''\(εₖ-θC\(k\)\) × dεₖ/dt σ''\(x\) = σ'\(x\)\(1-2σ\(x\)\)，在x=0处变号。 防守阶段（εₖ 0→β随改善而升→级联防御权重增大 进攻阶段（εₖ>θC\(k\)）：σ''<0→β随改善而降→贪心优化权重增大 切换点：εₖ=θC\(k\)，β=0.25γ为峰值 / IMPLICIT-FAB0F9026A6F7731
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：ε_eff = ε₀ × exp\(-∫₀ᵗ λ\(s\)ds\) × \(1-Posture_deg\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-85CF3690E427D478 / 中文：ε_eff = ε₀ × exp\(-∫₀ᵗ λ\(s\)ds\) × \(1-Posture_deg\) / IMPLICIT-85CF3690E427D478
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：ε_eff\(t\) = ε_eff\(0\) × e^{-λt} + ε_threshold × \(1 - e^{-λt}\)。种子爆发后退出权信号按指数恢复至阈值水平。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5C6EDD566912150F / 中文：ε_eff\(t\) = ε_eff\(0\) × e^{-λt} + ε_threshold × \(1 - e^{-λt}\)。种子爆发后退出权信号按指数恢复至阈值水平。 / IMPLICIT-5C6EDD566912150F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：ε_eff\(t+1\) = ε_eff\(t\) × \(1-f_表达\) × \(1-f_感知\) × \(1-f_免疫\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CC7C5BB4B5F2F59F / 中文：ε_eff\(t+1\) = ε_eff\(t\) × \(1-f_表达\) × \(1-f_感知\) × \(1-f_免疫\) / IMPLICIT-CC7C5BB4B5F2F59F / IMPLICIT-CD2582EFD2C1D53C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：ε_eff\(t+1\) = ε_eff\(t\) × \(1-f_表达\) × \(1-f_感知\) × \(1-f_免疫\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-CD2582EFD2C1D53C / 中文：ε_eff\(t+1\) = ε_eff\(t\) × \(1-f_表达\) × \(1-f_感知\) × \(1-f_免疫\) / IMPLICIT-CD2582EFD2C1D53C / IMPLICIT-CC7C5BB4B5F2F59F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：σ = f\(Posture_deg, H\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4FF2EFA2E6455C7F / 中文：σ = f\(Posture_deg, H\) / IMPLICIT-4FF2EFA2E6455C7F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F816F91A49771D4A / 中文：σ\(Λ\)=\|ln\(M_Planck/Λ\)\|/√\(2ln\|ln\(M_Planck/Λ\)\|\) / IMPLICIT-F816F91A49771D4A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D5EFB5C8F44D5A9F / 中文：σ=√\(dim_eff×ℏ_eff/\(2μ_eff\)\)，顿悟=1/ln→exp\[-ln²\]的切换点 / IMPLICIT-D5EFB5C8F44D5A9F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-79C84C31226C9A70 / 中文：Φ = dim\(V\)×\|推导规则\|×r_cross\(framework\)。 / IMPLICIT-79C84C31226C9A70
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Φ = F_zero_temp = E - T·S\|T=0。Φ与统计力学零温自由能精确等价，有限温修正∝n：Φ\(T\) = Φ\(0\) + α·n·T² + O\(T³\)。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AB1BF01DF3AD97F4 / 中文：Φ = F_zero_temp = E - T·S\|T=0。Φ与统计力学零温自由能精确等价，有限温修正∝n：Φ\(T\) = Φ\(0\) + α·n·T² + O\(T³\)。 / IMPLICIT-AB1BF01DF3AD97F4
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-96F3F25E54B128E9 / 中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 / IMPLICIT-96F3F25E54B128E9 / IMPLICIT-BD05412BF056A5C5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BD05412BF056A5C5 / 中文：Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 / IMPLICIT-BD05412BF056A5C5 / IMPLICIT-96F3F25E54B128E9
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-E9DD820855EC5353 / 中文：Ω = {x \| C₁\(x\) ∧ C₂\(x\) ∧ ... ∧ Cₙ\(x\)} / IMPLICIT-E9DD820855EC5353
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8260E3912F40EDA7 / 中文：Ω\(t\) = {x \| C₁\(x,t\) ∧ C₂\(x,t\) ∧ ... ∧ Cₙ\(x,t\)} / IMPLICIT-8260E3912F40EDA7
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-95A13B84298DF511 / 中文：Ω=0或Ω→∞→P_exit=0。选择空间为零或无限大都会导致退出权归零。 / IMPLICIT-95A13B84298DF511
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-7C728EA9580D3100 / 中文：Ω=1（所有选项相同）→σ=0→P_exit=0。所有选项无差异时方差为零退出权归零。 / IMPLICIT-7C728EA9580D3100
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-D0BE2DCD374A0018 / 中文：Ω=1（无选择）→P_exit=0。单一选项意味着无退出权。 / IMPLICIT-D0BE2DCD374A0018
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-70835ED6D1A6E8DD / 中文：Ω_irreversible = {Ω \| P_exit\(Ω\)=0 且无法恢复} / IMPLICIT-70835ED6D1A6E8DD
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4388CB8EBBD05DCC / 中文：Ω_universe\(t\) = {x \| 所有硬约束 Cᵢ\(x,t\) 同时满足} / IMPLICIT-4388CB8EBBD05DCC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：∂Ω_universe = {x \| Cᵢ\(x\) = 边界值}](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5FEE289B7A3C0AFE / 中文：∂Ω_universe = {x \| Cᵢ\(x\) = 边界值} / IMPLICIT-5FEE289B7A3C0AFE
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln\(μ/Λ_GUT\)。统一度Ω_after > Ω_before。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-0C399FB7B821BEB2 / 中文：大统一GUT是电磁力、弱核力、强核力在高能μ>μ_GUT时的门控面合并。μ μ_GUT时合并为Λ_GUT,Φ = 1/ln\(μ/Λ_GUT\)。统一度Ω_after > Ω_before。 / IMPLICIT-0C399FB7B821BEB2
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：拓扑选择 = argmax{P_collapse, P_sustain} P_collapse = 1 - Πᵢ\(1-fᵢ_risk\)（风险规避模式） P_sustain = Πⱼfⱼ_cap（能力扩展模式） 选择判据： · 当min\(fⱼ_cap\) < θ_floor → P_sustain→0 → 选择F_collapse（二选一）](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DBB9759D53F37174 / 中文：拓扑选择 = argmax{P_collapse, P_sustain} P_collapse = 1 - Πᵢ\(1-fᵢ_risk\)（风险规避模式） P_sustain = Πⱼfⱼ_cap（能力扩展模式） 选择判据： · 当min\(fⱼ_cap\) < θ_floor → P_sustain→0 → 选择F_collapse（二选一） / IMPLICIT-DBB9759D53F37174
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-60D538CB6C68E0C5 / 中文：智能 = 在σ_opt附近运行的能力 定义智能度： ι = I_eff\(σ\) / I_eff\(σ_opt\) = I_eff\(σ\) / I_eff_max ι ∈ \[0, 1\] ι = 1：有效信息最大，最优智能 ι → 0：有效信息趋零，无智能 / IMPLICIT-60D538CB6C68E0C5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-80C4CA8ED525C020 / 中文：案例说明：C_exit\(geo\)=κ×ρ^\(-α\)×r^β×τ / IMPLICIT-80C4CA8ED525C020
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-57E4B558EB78D577 / 中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) / IMPLICIT-57E4B558EB78D577 / IMPLICIT-F3383A2BBF7459EC
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F3383A2BBF7459EC / 中文：案例说明：P\(发现\)=P\(L₅激活\)×P\(L₅不退化\) / IMPLICIT-F3383A2BBF7459EC / IMPLICIT-57E4B558EB78D577
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-4AAC30FBEABFC46C / 中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt / IMPLICIT-4AAC30FBEABFC46C / IMPLICIT-63D758A66FFD78EF
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-63D758A66FFD78EF / 中文：案例说明：Preference\(k,t\)=∫\[S_body×R_repeat×\(1-H_cultural\)\]dt / IMPLICIT-63D758A66FFD78EF / IMPLICIT-4AAC30FBEABFC46C
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F11B1904A633D87F / 中文：案例说明：R_upgrade=R₀×∫\[α₁Δ\(信息可及性\)+α₂\(-ΔC_exit_eff\)+α₃Δε_aware\]dt / IMPLICIT-F11B1904A633D87F
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：案例说明：维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BE6D82E6E5ED2FB7 / 中文：案例说明：维护成本M\(t\)=M₀·e^αt vs 信息产出I\(t\) / IMPLICIT-BE6D82E6E5ED2FB7
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene\(t\) = σ\(Q_unresolved\(t\) × \(1-D_immune\(t\)\)\) × W\(t\) × η_delivery - Q_unresolved × \(1-D_immune\)：疑问未解但退化免疫未锁死——种子可激活条件 - W\(t\)：窗口宽度（D-X54）——时机条件 - η_delivery ∈](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-DF5F4AA4482FBEEF / 中文：沃尔顿的"智慧干预"= 在关键节点做最小注入，逆转D-X52→D-X53→D-X31的闭环。这是D-X38种子激活在心理干预维度的场景展开。 P_intervene\(t\) = σ\(Q_unresolved\(t\) × \(1-D_immune\(t\)\)\) × W\(t\) × η_delivery - Q_unresolved × \(1-D_immune\)：疑问未解但退化免疫未锁死——种子可激活条件 - W\(t\)：窗口宽度（D-X54）——时机条件 - η_delivery ∈ / IMPLICIT-DF5F4AA4482FBEEF
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3E813E681FA10CA1 / 中文：热力学第二定律的终态：热寂 = 所有能量均匀分布 = 没有结构 = 没有力 在高斯门控框架下： 热寂 ⟹ μ_available → 0 ⟹ 对所有Λᵢ：μ < Λᵢ ⟹ gᵢ = exp\[-\(ln\(μ/Λᵢ\)\)²/\(2σᵢ²\)\] → 0（μ→0时ln\(μ/Λᵢ\)→-∞，exp→0） ⟹ Φ = Σgᵢ → 0 ⟹ Ω = e^{-Φ} → 1 / IMPLICIT-3E813E681FA10CA1
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln\(μ/Λ_EW\)。统一度Ω_after > Ω_before。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-2D2F752E1B7D42E5 / 中文：电弱统一是电磁力和弱核力在高能μ>μ_EW时的门控面合并。μ μ_EW时合并为Λ_EW,Φ = 1/ln\(μ/Λ_EW\)。统一度Ω_after > Ω_before。 / IMPLICIT-2D2F752E1B7D42E5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：相变序参量φ=门控面Λ的序参量。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-FCE597834442D685 / 中文：相变序参量φ=门控面Λ的序参量。 / IMPLICIT-FCE597834442D685
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：该案例围绕 =0不导致Ψ=0 展开。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3ECE357BD54366BB / 中文：该案例围绕 =0不导致Ψ=0 展开。 / IMPLICIT-3ECE357BD54366BB
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：该案例围绕 =0不导致Ψ=0 展开。 English: Rule-based English rendering pending human revie…](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5F6B03A37EB47946 / 中文：该案例围绕 =0不导致Ψ=0 展开。 English: Rule-based English rendering pending human revie… / IMPLICIT-5F6B03A37EB47946
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：跑步训练σ=1.2→Ω太小→P_exit低；API成本σ=2.0→Ω太大→P_exit低。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-AA3A53DA4DC5E3D5 / 中文：跑步训练σ=1.2→Ω太小→P_exit低；API成本σ=2.0→Ω太大→P_exit低。 / IMPLICIT-AA3A53DA4DC5E3D5
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H\(σ\) = ½ln\(2πeσ²\) Fisher信息（分辨率）： I_Fisher\(σ\) = 1/σ²（高斯分布的Fisher信息） σ递减时：](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-001A56A0D7E4C3D6 / 中文：高斯门控下的两种信息量度： Shannon信息熵（带宽）： H\(σ\) = ½ln\(2πeσ²\) Fisher信息（分辨率）： I_Fisher\(σ\) = 1/σ²（高斯分布的Fisher信息） σ递减时： / IMPLICIT-001A56A0D7E4C3D6
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [仅凭表面相似就判定同构；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d1410beba2af6d4b / 仅凭表面相似就判定同构；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [从"跨域同构"进化为"证据制度约束下的跨域同构"；](../../../outputs/getbrain/v0.2-summary-and-closure-20260707.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-44c956761e2391e2 / 从"跨域同构"进化为"证据制度约束下的跨域同构"；
+  - 来源：`outputs/getbrain/v0.2-summary-and-closure-20260707.md`
+  - 依赖：—；被引用：—
+- [任务 102 知识体验层缺口与覆盖审计](../../ASSET-CARDS.md#asset-hr-c629630ad15b68cb)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `CANDIDATE_OR_PENDING_SOURCE`
+  - 可搜索名称：任务 102 知识体验层缺口与覆盖审计 / 102-knowledge-experience-audit
+  - 来源：`reports/operations/102-knowledge-experience-audit.md`
+  - 依赖：—；被引用：—
+- [修订说明（重要）**：056 初次审计只读获取的是 0000 知识库中较简短的《脱不花 × 李丹阳长谈：点火碰撞全部增量记录（D600—D602 / C-0810—C-0811）》（note_id 1915319279935456112），](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d1cb59c1cdc566fb / 修订说明（重要）**：056 初次审计只读获取的是 0000 知识库中较简短的《脱不花 × 李丹阳长谈：点火碰撞全部增量记录（D600—D602 / C-0810—C-0811）》（note_id 1915319279935456112），
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：D600, D602；被引用：—
+- [倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A06CE2EE901191CD / 倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 / IMPLICIT-A06CE2EE901191CD / IMPLICIT-F66B1ACB440AC1E2
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-F66B1ACB440AC1E2 / 倒U型统一生成定理，Φ = f₁\(↑\)×f₂\(↓\)必然倒U型。 / IMPLICIT-F66B1ACB440AC1E2 / IMPLICIT-A06CE2EE901191CD
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [候选案例：邻里积分制下价值替代与隐性分层（建议对应 D597 + 候选 NF-X1 + NF-X2）](../../../outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-057b27138eb8f13c / 候选案例：邻里积分制下价值替代与隐性分层（建议对应 D597 + 候选 NF-X1 + NF-X2）
+  - 来源：`outputs/collisions/20260708-cross-domain-smoke-test/social/collision-report.md`
+  - 依赖：D597；被引用：—
+- [假设存在完美算法 A，则 ∀ S，A\(S\) = 最优决策](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-186C1ACFD0D03162 / 假设存在完美算法 A，则 ∀ S，A\(S\) = 最优决策 / IMPLICIT-186C1ACFD0D03162 / IMPLICIT-5732DC76B0EB983A
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [假设存在完美算法 A，则 ∀ S，A\(S\) = 最优决策](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-5732DC76B0EB983A / 假设存在完美算法 A，则 ∀ S，A\(S\) = 最优决策 / IMPLICIT-5732DC76B0EB983A / IMPLICIT-186C1ACFD0D03162
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [元协议投影 P_meta。](../../../outputs/getbrain/project-position-update-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-811a341ac16cfbb7 / 元协议投影 P_meta。
+  - 来源：`outputs/getbrain/project-position-update-20260706.md`
+  - 依赖：—；被引用：—
+- [元协议投影结论](../../../outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-f6d0505fbe9e23a2 / 元协议投影结论
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md`
+  - 依赖：—；被引用：—
+- [元协议投影（12-meta-protocol-projection）](../../../outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-da6a487cd2363c5c / 元协议投影（12-meta-protocol-projection）
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md`
+  - 依赖：—；被引用：—
+- [元协议版本迭代维护审计 2026-07-09](../../ASSET-CARDS.md#asset-hr-ab7862b612e34394)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：元协议版本迭代维护审计 2026-07-09 / meta-protocol-version-iteration-audit-20260709
+  - 来源：`outputs/audit/meta-protocol-version-iteration-audit-20260709.md`
+  - 依赖：—；被引用：—
+- [其中 v\(n\) = ΔB_n / ΔB_{n-1} 为收敛速度](../../../data/foundation/function-assets/identity-cards.jsonl)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-8466D2546DBBC8D3 / 其中 v\(n\) = ΔB_n / ΔB_{n-1} 为收敛速度 / IMPLICIT-8466D2546DBBC8D3
+  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 依赖：—；被引用：—
+- [初版审计因只读取到 0000 摘要（note_id 1915319279935456112）而未见到 `f₁=15%/3%`、同构度 `70/65/68%`、计数增量等数值，误判为 UNREPRODUCIBLE。**用户提供完整验证报告后确](../../../outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-a274b9ff7f4cf537 / 初版审计因只读取到 0000 摘要（note_id 1915319279935456112）而未见到 `f₁=15%/3%`、同构度 `70/65/68%`、计数增量等数值，误判为 UNREPRODUCIBLE。**用户提供完整验证报告后确
+  - 来源：`outputs/collisions/20260711-disobedience-subjectivity/independent-second-angle-audit-056.md`
+  - 依赖：—；被引用：—
+- [区分类比、映射、同构；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-be6386e374a38ad5 / 区分类比、映射、同构；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
+- [可能把弱类比写成强同构；](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `RETAINED_AS_STRUCTURAL_METAPHOR`
+  - 可搜索名称：NFC-ba92b8a8fb451006 / 可能把弱类比写成强同构；
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
   - 依赖：—；被引用：—

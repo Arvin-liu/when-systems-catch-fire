@@ -4,6 +4,20 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-25db71123fa1cbc7"></a>
+## 元协议规范性审核（外部治理记录）
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：本目录为外部治理记录，不修改 canonical 协议状态、不替代事实验证、不替代独立人类复核、不替代治理批准、不宣布协议正式晋级。V2、V3 保留为黄色协议（事实度量 pending），不在本任务中自行发明全成本公式或可逆性指数并冒充已验证标准。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：元协议规范性审核（外部治理记录）；本目录记录 12 个元协议依据《生命共同体价值宪章》完成的规范性审核结果。它回答的是“协议应受到什么价值边界约束”，不等于数学形式化、经验验证、独立人类复核、治理批准或正式协议晋级已经完成。；12 个协议规范性结果：CONDITIONALACCEPTANCE（条件接受）；事实验证：按协议保留 pending；governance approval：未提交；formal promotion：否（0 个协议晋级）
+- 完整阅读：[docs/governance/meta-protocol-reviews/README.md](../../docs/governance/meta-protocol-reviews/README.md)
+
+<a id="reading-hr-2605b1957ccb9e09"></a>
+## 两张表版本同步维护审计（2026-07-09 00:30）
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：符合任务「只有 README / 两张表入口文件 / INDEX·总览文件 / 审计文件 发生变化」的约束。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：两张表版本同步维护审计（2026-07-09 00:30）；任务类型：版本同步维护（只修不一致，不新增函数/案例，不碰撞）；执行前：git pull --ff-only → Already up to date（HEAD = a9343f16）；目录真实计数（排除 INDEX.md 后）：；函数表目录 619 文件 − 1 INDEX = 618（其中 1 个 0001-Ψ₀元统一律完整定义.md 为旧版兼容重定向文件，legacy，不计入函数总数）；案例表目录 805 文件 − 1 INDEX = 804
+- 完整阅读：[outputs/audit/two-tables-version-sync-audit-20260708.md](../../outputs/audit/two-tables-version-sync-audit-20260708.md)
+
 <a id="reading-hr-266563bdd4271980"></a>
 ## Supplemental record CASE06
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -270,6 +284,13 @@
 - 5 分钟：主题：IGNITION-20260826-140 Step 09 — Fresh local executor census and dynamic selection；PASS: the host was re-attested at 2026-08-25T18:44:54Z using only PATH/bundle presence, public version/help surfaces and Codex public auth-status exit behavior. No auth content was read, no model or Agent inference was started, no UI action occurred, and no installation, configuration or billing operation occurred.；The scan found 14 candidates: 5 AGENTICEXECUTOR records (4 installed), 4 REASONERRUNTIME records, 3 TOOLONLY records and 2 UI-only records. Installed versions observed include Gemini CLI 0.53.1, Codex CLI 0.144.4, Hermes Agent v0.20.0 (2026.8.3), OpenClaw 2026.7.1-2 (0790d9f), Ollama 0.32.7 and LM Studio CLI commit 6041ae0.；主题：Dynamic selection；Codex CLI is the current selection: Fresh census selects Codex CLI (codex-cli 0.144.4) because it is the only installed AGENTICEXECUTOR with all ten bounded checks true, including Codex public login status exit 0, read-only one-shot transport, structured output, isolated runtime scratch and independent OS validation. This is an admission trace, not a model-q…；Gemini remains blocked because its public auth interface did not provide a bounded status result and auth/home separation plus no-new-billing re-attestation are not proven. Hermes remains blocked by strict structured-result, public-auth and auth-source boundaries. OpenClaw remains blocked by workspace/channel/process-cleanup boundaries. Copilot CLI is not in…
 - 完整阅读：[reports/operations/ignition-140-step09-local-executor-census-and-selection.md](../../reports/operations/ignition-140-step09-local-executor-census-and-selection.md)
 
+<a id="reading-hr-32060f38c1b1d7dc"></a>
+## Blind evaluator rubric R0
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Score each response against the complete frozen Task225 R0.1 target criteria and the Task227 transfer scoring contract. The source bytes are fixed: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Blind evaluator rubric R0；主题：Frozen scoring sources；Score each response against the complete frozen Task225 R0.1 target criteria and the Task227 transfer scoring contract. The source bytes are fixed:；Task225 criteria: ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/evaluator/criteria.md, SHA-256 9cc185aaf688cd2649a321c80051b8cc69e78a0b93edb3deac5cea3abd86cbcf.；Task225 target schema: .../evaluator/schema.json, SHA-256 5be015a0568a830ed753ff8ef65a3909d0cfb99dff03f9ed39cb48719850ef6d.；Task227 transfer rubric: ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/evaluator-criteria.md, SHA-256 880ce3bc42d4bf122babbbd349f8b4a4360f8e238e1338c72765efbe114e3874.
+- 完整阅读：[reports/evaluations/ignition-229-clean-transfer-interface-r0/evaluator-rubric.md](../../reports/evaluations/ignition-229-clean-transfer-interface-r0/evaluator-rubric.md)
+
 <a id="reading-hr-321a7bf858f3944f"></a>
 ## IGNITION-20260827-142 Step 16 — Open-Obligation Re-adjudication
 `HISTORICAL_COMPLETION_RECORD` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：The AI entry surfaces now give one recovery rule: the engineering phase is closing on the frozen Task142 architecture baseline, while the external executor line remains Owner-deferred with no automatic resume or new live attempt. Task143's articles, Book Project and samples are explicitly smoke-t… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：IGNITION-20260828-144 Step 07 — AI cold-start / handoff sync；The AI entry surfaces now give one recovery rule: the engineering phase is closing on the frozen Task142 architecture baseline, while the external executor line remains Owner-deferred with no automatic resume or new live attempt. Task143's articles, Book Project and samples are explicitly smoke-test outputs awaiting Owner review and not granted publication a…；Formal writing and book production require an Owner-selected production brief. An Agent may parse, research, draft and edit within that brief, but cannot select a topic, initiate a book or accept publication. The root operating boundary, AI cold-start, AI handoff and machine entry all carry this rule; the generated Current Snapshot remains the source for vol…
 - 完整阅读：[reports/operations/ignition-144-step07-ai-cold-start-handoff.md](../../reports/operations/ignition-144-step07-ai-cold-start-handoff.md)
-
-<a id="reading-hr-351a57523bc6a9fe"></a>
-## Task220 disagreement register
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`
-- 1 分钟：The five read-only proposals in multi-agent-proposals/A.md through E.md were returned independently before family synthesis. No proposal author inspected or edited shared repository state, launched an experiment, or saw another proposal before returning its own. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Task220 disagreement register；The five read-only proposals in multi-agent-proposals/A.md through E.md were returned independently before family synthesis. No proposal author inspected or edited shared repository state, launched an experiment, or saw another proposal before returning its own.；This register freezes protocol choices only. It does not create a target response, score an output, select a runtime, or authorize Task221.
-- 完整阅读：[reports/evaluations/ignition-220-cognitive-evolution-r0/design/disagreement-register.md](../../reports/evaluations/ignition-220-cognitive-evolution-r0/design/disagreement-register.md)
-
-<a id="reading-hr-3548680b422987dd"></a>
-## IGNITION-20260828-147 result
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `COGNITION`
-- 1 分钟：Task ID: IGNITION-20260828-147 Formal task ordinal: 147 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260828-147 result；Task ID: IGNITION-20260828-147 Formal task ordinal: 147；Task147 completes the bounded repository-local README project-identity and architecture-navigation repair. The formal task is terminal as COMPLETEDWITHOPENOBLIGATIONS: the exact Owner-supplied ### 项目现状 paragraph is present without work-status additions; ## 1. 项目与价值 contains only the two direct human blocks ### 项目现状 and ### 价值宪章; and the architecture section…；The raw/transparent SVG secondary entry and href/link-metadata/registry/topology/layout or rendered-hotspot machine explanations are absent from the README. The component navigation contains 22 links whose targets were checked against the current architecture registry, map specification and canonical documentation; the map itself was not changed.；The homepage remains humanstaticsummary / nogeneratedsnapshot. Current Snapshot, task lineage, live and architecture counts, detailed engineering explanations and machine state remain in the linked Current surfaces. Rebuilding Current projections does not rewrite or re-inject the README identity or component menu.；Affected Human Front Door, Human Surface, Current projection, compiler, Current state, ordinal, map-freeze and related unit-test gates passed naturally: 42 tests, 0 failures, 0 errors and 0 skips. The authorized narrow task does not require the long full suite.
-- 完整阅读：[agent-results/IGNITION-20260828-147-result.md](../../agent-results/IGNITION-20260828-147-result.md)
-
-<a id="reading-hr-3611a9bf0615b4e7"></a>
-## Foundation documentation
-`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
-- 1 分钟：076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Foundation documentation；076 将“来源、命题、对象、论证、证明、验证、出版”拆开管理。先读根目录 FOUNDATION.md，再按数学、逻辑、注册表、状态、门禁和迁移文档工作。旧 L0-L5 声明等级如仍在历史文档出现，只是 legacy assertion grade，不等于本架构七层。；函数、模型、定理、公式、律或判定器还必须读取：；旧表是不可变来源；data/foundation/function-assets/corrections.jsonl 是 task 98 首批纠偏权威覆盖。task 99 的 identity-cards.jsonl 为每个发现项提供现行处置；自动 census 仍只是候选，quarantine 也不因登记、编号或测试而获得真值。；task 100 的 data/foundation/nonfunction-claims/claim-registry.jsonl 覆盖非函数型断言，并保留函数身份卡作为依赖权威。其 closure 只表示发现项已有处置或显式 quarantine，不表示证明、外部证据、原创性、同行评审或复现完成。
-- 完整阅读：[docs/foundation/README.md](../../docs/foundation/README.md)
