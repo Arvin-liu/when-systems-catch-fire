@@ -24,6 +24,10 @@ Candidate/mapping/compiler/source hashes and the six-candidate build status are 
 
 The candidate compiler and both reviewers received only the contract, schema, rubric, guide, mapping declaration, candidate artifacts, compiler/validator, the sanitized M0/E1 source manifest, and the six corresponding M0/E1 files. No A/B/C target material or Task227 evaluation outcomes were in either package. Build manifests state target access false and experiment flags false; no target was opened.
 
+## Repository path accounting
+
+The first final-head preflight identified 36 newly tracked Task228 subtree paths missing from the repository-wide generated classification manifest. The existing classification engine regenerated the manifest without changing its rules; all 36 paths are classified as EVALUATION_EVIDENCE. Local --check reports 5,528/5,528 tracked paths accounted for and 10/10 checks passed; --self-test passed. Generated manifest SHA-256: 7342705c2a946dbc3afb4877d6122150a2fdd371fea8d8ffbc7e630513da8c45.
+
 ## Formal publication reference
 
 Formal repository: `Arvin-liu/when-systems-catch-fire`. Task228 branch: `work/IGNITION-20260929-228-policy-contract-reconciliation-r0`, stacked from the exact Task227 head above. Draft PR #238 is [OPEN + DRAFT + UNMERGED](https://github.com/Arvin-liu/when-systems-catch-fire/pull/238), with base branch `work/IGNITION-20260928-227-cognitive-evolution-component-isolation-r0` at `7d979b1aa523030b16f773a973477cbfca1e4513`. It was opened at Task228 head `2470849b4af68916c5492e708a34b6d834a92f22`. This publication-metadata update advances the PR head after opening. The final current head SHA and exact-head CI run IDs/conclusions are recorded in the terminal 1111 relay receipt after verification against that final head. At final receipt publication, the receipt branch must not be merged to 1111 main.
