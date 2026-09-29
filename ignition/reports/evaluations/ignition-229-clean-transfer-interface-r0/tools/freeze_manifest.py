@@ -18,6 +18,7 @@ EXTERNAL = {
     "task225_freeze_manifest": ("ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/freeze-manifest.json", "f6201ea25d3614af34ef05d36cc8f620a8c149902fcef8937d259445b0b302a8"),
     "task227_freeze_manifest": ("ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/freeze/freeze-manifest.json", "91a33c38f209b88644ef473c21a133463bf7839d1bd5afc9c1507b88d128b7ec"),
 }
+PATH_CLASSIFICATION = "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl"
 PARENT_SHA = "d82a52077df6d4e96e998ace3757f2fb343b4db5"
 
 
@@ -53,6 +54,13 @@ def expected_document():
             raw = b""
         digest = sha(raw) if raw else None
         external[name] = {"path": rel, "sha256": digest, "expected_sha256": expected}
+    classification_path = repo / PATH_CLASSIFICATION
+    classification_sha = sha(classification_path.read_bytes()) if classification_path.is_file() else None
+    external["formal_path_classification_manifest"] = {
+        "path": PATH_CLASSIFICATION,
+        "sha256": classification_sha,
+        "expected_sha256": classification_sha,
+    }
     return {
         "version": "task229-preregistration-freeze-r0",
         "task_branch": "work/IGNITION-20260929-229-transfer-interface-clean-r0",

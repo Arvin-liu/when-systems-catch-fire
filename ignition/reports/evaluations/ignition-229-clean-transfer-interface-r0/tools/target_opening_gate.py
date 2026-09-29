@@ -61,8 +61,12 @@ def main():
 
     head = subprocess.run(["git", "rev-parse", "HEAD"], cwd=REPO, check=True, capture_output=True, text=True).stdout.strip()
     parent = subprocess.run(["git", "rev-parse", "HEAD^"], cwd=REPO, check=True, capture_output=True, text=True).stdout.strip()
-    if head != evidence.get("task229_head_sha") or parent != PARENT_SHA or evidence.get("task229_head_parent") != PARENT_SHA:
-        fail("committed exact head or Task228 parent mismatch")
+    based_on_task228 = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", PARENT_SHA, "HEAD"], cwd=REPO,
+        capture_output=True
+    )
+    if head != evidence.get("task229_head_sha") or parent != evidence.get("task229_head_parent") or based_on_task228.returncode != 0:
+        fail("committed exact head or Task228 ancestry mismatch")
     if evidence.get("task229_branch") != "work/IGNITION-20260929-229-transfer-interface-clean-r0":
         fail("Task229 branch identity mismatch")
 

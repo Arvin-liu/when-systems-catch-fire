@@ -1,5 +1,10 @@
 {
   "external_anchors": {
+    "formal_path_classification_manifest": {
+      "expected_sha256": "350aaba243070a09fb48547a05631607b38f2a848e61f68cc9c062d2615248f1",
+      "path": "ignition/data/foundation/repository-path-classification/classification-manifest.jsonl",
+      "sha256": "350aaba243070a09fb48547a05631607b38f2a848e61f68cc9c062d2615248f1"
+    },
     "task225_freeze_manifest": {
       "expected_sha256": "f6201ea25d3614af34ef05d36cc8f620a8c149902fcef8937d259445b0b302a8",
       "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/freeze-manifest.json",
@@ -80,11 +85,11 @@
     },
     {
       "path": "target-opening-gate.md",
-      "sha256": "4c8ab397c90d0326e58345425e9d06b17ecbc0ed533bc591b80b97df9b62d1bf"
+      "sha256": "d23a23222847ee4864e0ea6966dbd01e594832a70654084186a3b87618be4bdc"
     },
     {
       "path": "tools/freeze_manifest.py",
-      "sha256": "d3aea186cbda2d6ed3bb20408cd3f46e8a76c88493a8207724b546e5b1f2e47c"
+      "sha256": "57221944eb5345b6f0ffc22819cb0d88239cfcd1530fa7273629b2339d26b14f"
     },
     {
       "path": "tools/recompute.py",
@@ -92,7 +97,7 @@
     },
     {
       "path": "tools/target_opening_gate.py",
-      "sha256": "c32e22fc3030feabdc5a99bc97230e73a3fcb493e4cd31a7789a69a41a05b3a4"
+      "sha256": "99abcfb79faed76bf17e01661727553b5b0a852a2929c737eb42770dc889f1f8"
     },
     {
       "path": "tools/validate_preregistration.py",
