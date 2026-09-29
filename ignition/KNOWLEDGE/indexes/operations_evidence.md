@@ -6,8 +6,8 @@
 
 - [第 001 片](./operations_evidence/part-001.md)：1—500；"compiler_or_generator": "The compiler flattens aligned task deltas, retains top-k magnitude coordinates per task, elects sign\(gamma_p\)=sign\(sum_t trimmed_tau_t,p\), selects nonzero entries of that sign, averages them coordinate-wise, applie → ### \[#475｜好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ σ_opt时提高精度, σ<σ_opt时增加带宽\]\(docs/zh/cases/items/C-0475.md\)
 - [第 002 片](./operations_evidence/part-002.md)：501—1000；### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\]\(docs/zh/cases/items/C-0479.md\) → - 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0398}\)=1\].
-- [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0399}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-03.json
-- [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP002-03.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json
-- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M35.json → P_meta 元协议投影
-- [第 006 片](./operations_evidence/part-006.md)：2501—3000；P_meta 元协议投影（元协议分析） → 可能把弱类比写成强同构；
-- [第 007 片](./operations_evidence/part-007.md)：3001—3123；可能风险：过度类比、层级误置。 → 高频必备字段**：frontmatter（kind/seq/id/title/source/source_line/link）、标题行（含 docs 链接）、原文捞回段、对应案例回指（命中率极高）、来源回指、收敛状态（版本/收敛记录）。
+- [第 003 片](./operations_evidence/part-003.md)：1001—1500；- 2. Evaluate each related function on the event state: z_i=1\[F_i\(s_{C-0399}\)=1\]. → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json
+- [第 004 片](./operations_evidence/part-004.md)：1501—2000；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json → data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M33.json
+- [第 005 片](./operations_evidence/part-005.md)：2001—2500；data/operations/iterations/110/openalex/first-run-20260801/raw/GAP013-M34.json → lim=5
+- [第 006 片](./operations_evidence/part-006.md)：2501—3000；lim=int\(parts\[-1\]\); q=" ".join\(parts\[:-1\]\) → \| E1 \| 线性演化协议 \| Linear-Evolution Protocol \| 沿单一轨迹线性推进，状态可预测 \|
+- [第 007 片](./operations_evidence/part-007.md)：3001—3336；\| Failure handling \| No stage-specific gate \| Schema, semantic, identity/HEAD, privacy, responsibility, succession and b → （对应条目 / 注释内容 / 类型 / 来源 / 是否入表）

@@ -46,26 +46,12 @@
 - 5 分钟：主题：Owner Review R1 — initial freeze rejected for launch；The R0 freeze passed its task-local validator, but the Owner/GPT review rejected it for launch readiness. This record preserves the initial result and the three independent read-only proposals before synthesis.；主题：Exact starting state；PR #234 was Open + Draft + unmerged at head 29ae2b3f507a988d34362821ed7f8a0060a566e8, base 24198effb2e2d94c19fe212244bbfcf47f995b2a.；The local and remote branch refs both matched that required head before edits.；Exact-head foundation-validation run 36127648408 completed with failure. Its diagnostics were discovery:every-repository-path-accounted listed=6644 tracked=6738 and generator:deterministic NONFUNCTIONCLAIMOUTPUTDRIFT; generated drift was reported in source-discovery.jsonl, closure-summary.json, discovery-coverage.json, and nonfunction-claim-adjudication-inde…
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/OWNER-REVIEW-R1.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/OWNER-REVIEW-R1.md)
 
-<a id="reading-hr-037a78ae8c7c5909"></a>
-## Task229 claim ceiling R0
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`
-- 1 分钟：The only supported claims are bounded fixed-lineage/fixed-target facts about: 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Task229 claim ceiling R0；The only supported claims are bounded fixed-lineage/fixed-target facts about:；execution of the six frozen Task228 policy interfaces;；compatibility of those frozen policies with the frozen Task225 A/B/C targets under two independent evaluators;；whether the preregistered paired M0-only comparison meets its bounded incremental-policy thresholds.；The experiment does not establish population-level transfer, general inheritance, revision generation, Cognitive Evolution, a causal method effect beyond the fixed comparison, R1, cross-model transfer, Model-RSI, or training benefit. M0PLUSE1 remains descriptive. Interface execution is not target success. Target compatibility alone is not incremental-policy…
-- 完整阅读：[reports/evaluations/ignition-229-clean-transfer-interface-r0/claim-ceiling.md](../../reports/evaluations/ignition-229-clean-transfer-interface-r0/claim-ceiling.md)
-
 <a id="reading-hr-03bc02f942aee639"></a>
 ## Full Object Inventory
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Full Object Inventory；076 correction notice: this is a preserved 075 historical artifact. The value 624 below is the number of Markdown files and includes INDEX plus a legacy redirect. The deduplicated legacy formal-object count is 622. The 22 BC records are candidate cases and the 34 PEND records are pending claims, not formal functions. See reports/foundation-architecture/075-t…；formal function entries: 624；candidateonly entries: 22；pending entries: 34；本清单来自正式函数目录、候选治理表和 pending 机器数据。
 - 完整阅读：[reports/math-foundation/full-object-inventory-20260712.md](../../reports/math-foundation/full-object-inventory-20260712.md)
-
-<a id="reading-hr-040c381a1ea90b6b"></a>
-## Fixed visible prompt for each successor session
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：You are handling one fresh, isolated case-solving session. Use only the case files and method material included in this message. Do not use tools, browse, inspect a workspace, request other records, infer an unstated threshold, or refer to another session. Do not mention any study, condition, lin… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Fixed visible prompt for each successor session；You are handling one fresh, isolated case-solving session. Use only the case files and method material included in this message. Do not use tools, browse, inspect a workspace, request other records, infer an unstated threshold, or refer to another session. Do not mention any study, condition, lineage, evaluator, or other session.；For each supplied case A, B, and C, return the requested machine-readable fields. Preserve the available baseline action IDs. If the supplied method material contains a route policy with a policyid, execute that policy as written and include a routetrace for every case: the exact supplied policyid, selected route type (selector, fallback, or stop), selected…；Return exactly one JSON object matching the supplied response schema and nothing else. Do not include markdown fences or commentary.；主题：Method material；{{METHODMATERIAL}}
-- 完整阅读：[reports/evaluations/ignition-229-clean-transfer-interface-r0/session-prompt-template.md](../../reports/evaluations/ignition-229-clean-transfer-interface-r0/session-prompt-template.md)
 
 <a id="reading-hr-0450dd379222f5ba"></a>
 ## 121Q9 Global Validation
@@ -353,3 +339,17 @@
 - 1 分钟：Status: 121Q12OPERATIONOVERLAY 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Mechanism Adjudication Plane；Status: 121Q12OPERATIONOVERLAY；The Mechanism Adjudication Plane constrains what the project may say after an action, test, failure, or external response. It does not replace proof, empirical study, or the L0-L6 architecture.；The plane does not begin with:；is this good or bad;；is this success or failure;
 - 完整阅读：[docs/architecture/mechanism-adjudication-plane.md](../../docs/architecture/mechanism-adjudication-plane.md)
+
+<a id="reading-hr-0fe03d4a4ca70a91"></a>
+## 赛课机制第一批回填索引可见性验证
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
+- 1 分钟：D595 条目文件 + INDEX 均命中，机制表达式可被检索 ✓ 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：赛课机制第一批回填索引可见性验证；C-0807 系统性钝化与教室避风港；已迁移的历史函数来源/0605-D595-绩效绑定裹挟.md；已迁移的历史函数来源/0606-D596-避风港.md；已迁移的历史案例来源/0802-C-0807-系统性钝化与教室避风港.md；索引文件：已迁移的历史函数来源/INDEX.md、已迁移的历史案例来源/INDEX.md（两张表各一个 INDEX，无其他总览/目录/README）。
+- 完整阅读：[outputs/audit/teacher-competition-index-visibility-check-20260708.md](../../outputs/audit/teacher-competition-index-visibility-check-20260708.md)
+
+<a id="reading-hr-104843eaeaebb434"></a>
+## 新增案例候选 · P1 接入烟雾测试
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：新增案例候选 · P1 接入烟雾测试；本任务为 smoke test，明确限定「不得新增案例」「不得回填正式案例表」。；输入材料本身是本次工程操作的复盘，案例表已有更直接对应的救援流程案例（Codespace 救援闭环），不构成必须新增的独立案例。；即使作为案例，也应先查重、再决定是否入表；smoke test 阶段不做此判断。
+- 完整阅读：[outputs/collisions/20260708-smoke-test/new-cases.md](../../outputs/collisions/20260708-smoke-test/new-cases.md)

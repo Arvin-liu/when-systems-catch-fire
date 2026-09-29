@@ -4,20 +4,6 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
-<a id="reading-hr-0fe03d4a4ca70a91"></a>
-## 赛课机制第一批回填索引可见性验证
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `SYSTEMS`, `OPERATIONS_EVIDENCE`
-- 1 分钟：D595 条目文件 + INDEX 均命中，机制表达式可被检索 ✓ 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：赛课机制第一批回填索引可见性验证；C-0807 系统性钝化与教室避风港；已迁移的历史函数来源/0605-D595-绩效绑定裹挟.md；已迁移的历史函数来源/0606-D596-避风港.md；已迁移的历史案例来源/0802-C-0807-系统性钝化与教室避风港.md；索引文件：已迁移的历史函数来源/INDEX.md、已迁移的历史案例来源/INDEX.md（两张表各一个 INDEX，无其他总览/目录/README）。
-- 完整阅读：[outputs/audit/teacher-competition-index-visibility-check-20260708.md](../../outputs/audit/teacher-competition-index-visibility-check-20260708.md)
-
-<a id="reading-hr-104843eaeaebb434"></a>
-## 新增案例候选 · P1 接入烟雾测试
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：新增案例候选 · P1 接入烟雾测试；本任务为 smoke test，明确限定「不得新增案例」「不得回填正式案例表」。；输入材料本身是本次工程操作的复盘，案例表已有更直接对应的救援流程案例（Codespace 救援闭环），不构成必须新增的独立案例。；即使作为案例，也应先查重、再决定是否入表；smoke test 阶段不做此判断。
-- 完整阅读：[outputs/collisions/20260708-smoke-test/new-cases.md](../../outputs/collisions/20260708-smoke-test/new-cases.md)
-
 <a id="reading-hr-1075a79086af4a5d"></a>
 ## CASE01 — Checkpoint export selection
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -353,3 +339,17 @@
 - 1 分钟：他可能只是看见前方的旗变了方向，几匹马逆着队列奔来。也许那是传令，也许主将正在调动一支小队，也许真正的战斗还远没有分出胜负。但他站得太低，看不见全局；箭矢和马蹄也不会给他时间核实。他后退一步，想为自己留下半息余地。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：战场上最先转身的人，未必知道自己正在逃跑。；他可能只是看见前方的旗变了方向，几匹马逆着队列奔来。也许那是传令，也许主将正在调动一支小队，也许真正的战斗还远没有分出胜负。但他站得太低，看不见全局；箭矢和马蹄也不会给他时间核实。他后退一步，想为自己留下半息余地。；身后的人看见的，却不是“半息余地”。他们看见一个从前方退回来的人。；一步变成了消息。第二个人并没有获得更多战场事实，只获得了第一个人的判断；第三个人甚至看不见敌军，他看见的是前两个人。越靠后，关于敌人的信息越少，关于自己人的信息越多。到了某一刻，军队不再看敌军做了什么，只盯着自己人：谁在退，谁还站着。战局如何，仿佛都能从这些反应里看出来。；我们习惯把“失败”理解为一个结果：阵地丢了，主将死了，伤亡大到无法继续。可在这里，失败先是一种解释。有人把后退解释为前线已败，随后用自己的后退替这个解释增加证据。等越来越多人这样做，解释才取得肉身，踩倒同伴，堵塞道路，把原本尚可收拾的混乱变成真正的溃败。；金辽战争的一些叙述，为这种时刻留下了观察窗口：撤动、指挥中枢受压、信息混乱和局部退却，可能彼此放大。但具体战役的兵力、伤亡和先后次序仍需史料考订；所谓统一的“崩溃百分比”，也不能当作穿越时代的定律。我们不能从一段有力的故事断定某场战役就是这样发生的。我们只能先停在这个士兵身边，看见一件更小、也更危险的事：人会把别人的反应当成现实的证据，而他的反应又会进入别人眼中的现实。
 - 完整阅读：[docs/publication/works/when-an-army-believes-its-own-back.md](../../docs/publication/works/when-an-army-believes-its-own-back.md)
+
+<a id="reading-hr-25db71123fa1cbc7"></a>
+## 元协议规范性审核（外部治理记录）
+`CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：本目录为外部治理记录，不修改 canonical 协议状态、不替代事实验证、不替代独立人类复核、不替代治理批准、不宣布协议正式晋级。V2、V3 保留为黄色协议（事实度量 pending），不在本任务中自行发明全成本公式或可逆性指数并冒充已验证标准。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：元协议规范性审核（外部治理记录）；本目录记录 12 个元协议依据《生命共同体价值宪章》完成的规范性审核结果。它回答的是“协议应受到什么价值边界约束”，不等于数学形式化、经验验证、独立人类复核、治理批准或正式协议晋级已经完成。；12 个协议规范性结果：CONDITIONALACCEPTANCE（条件接受）；事实验证：按协议保留 pending；governance approval：未提交；formal promotion：否（0 个协议晋级）
+- 完整阅读：[docs/governance/meta-protocol-reviews/README.md](../../docs/governance/meta-protocol-reviews/README.md)
+
+<a id="reading-hr-2605b1957ccb9e09"></a>
+## 两张表版本同步维护审计（2026-07-09 00:30）
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：符合任务「只有 README / 两张表入口文件 / INDEX·总览文件 / 审计文件 发生变化」的约束。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：两张表版本同步维护审计（2026-07-09 00:30）；任务类型：版本同步维护（只修不一致，不新增函数/案例，不碰撞）；执行前：git pull --ff-only → Already up to date（HEAD = a9343f16）；目录真实计数（排除 INDEX.md 后）：；函数表目录 619 文件 − 1 INDEX = 618（其中 1 个 0001-Ψ₀元统一律完整定义.md 为旧版兼容重定向文件，legacy，不计入函数总数）；案例表目录 805 文件 − 1 INDEX = 804
+- 完整阅读：[outputs/audit/two-tables-version-sync-audit-20260708.md](../../outputs/audit/two-tables-version-sync-audit-20260708.md)

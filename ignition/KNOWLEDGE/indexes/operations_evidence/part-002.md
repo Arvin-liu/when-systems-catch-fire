@@ -249,35 +249,35 @@
   - 可搜索名称：IMPLICIT-2D1690A54E16E990 / ### function_dependency / IMPLICIT-2D1690A54E16E990 / IMPLICIT-FFF1DCEF8CC17C17
   - 来源：`outputs/collisions/20260708-teacher-competition/collision-report.md`
   - 依赖：—；被引用：—
-- [### function_dependency](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### function_dependency](../../../docs/p1-data-index-map-20260708.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-FFF1DCEF8CC17C17 / ### function_dependency / IMPLICIT-FFF1DCEF8CC17C17 / IMPLICIT-2D1690A54E16E990
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`docs/p1-data-index-map-20260708.md`
   - 依赖：—；被引用：—
-- [### G12 Not a Plain Function Rename](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### G12 Not a Plain Function Rename](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-75DAEF27BAF5E003 / ### G12 Not a Plain Function Rename / IMPLICIT-75DAEF27BAF5E003
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
-- [### G18 Function Layer Relation Clear](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### G18 Function Layer Relation Clear](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-07D6B42B0153B62A / ### G18 Function Layer Relation Clear / IMPLICIT-07D6B42B0153B62A
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
-- [### G19 Not Counted as Function](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### G19 Not Counted as Function](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-2B37DB30942D1C67 / ### G19 Not Counted as Function / IMPLICIT-2B37DB30942D1C67
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
-- [### G20 Not a Duplicate of Existing Function](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### G20 Not a Duplicate of Existing Function](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-006E83309FF50E81 / ### G20 Not a Duplicate of Existing Function / IMPLICIT-006E83309FF50E81
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
-- [### G28 Index Entry Exists](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### G28 Index Entry Exists](../../../inputs/020/formal-protocol-promotion-standard.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3F11C4308505B8BF / ### G28 Index Entry Exists / IMPLICIT-3F11C4308505B8BF
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`inputs/020/formal-protocol-promotion-standard.md`
   - 依赖：—；被引用：—
 - [### Gates](../../../docs/architecture/epistemic-governance-kernel-and-federated-planes.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -379,10 +379,10 @@
   - 可搜索名称：IMPLICIT-061F1C10B8EC323C / ### 组织压力 / 绩效绑定相关族 / IMPLICIT-061F1C10B8EC323C
   - 来源：`outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md`
   - 依赖：—；被引用：—
-- [### 阶段 2：Theory Kernels ✅ COMPLETE \(250/250, 100%\)](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### 阶段 2：Theory Kernels ✅ COMPLETE \(250/250, 100%\)](../../../data/discipline-projection/087-execution-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9AD6E5062D82C9E6 / ### 阶段 2：Theory Kernels ✅ COMPLETE \(250/250, 100%\) / IMPLICIT-9AD6E5062D82C9E6
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`data/discipline-projection/087-execution-report.md`
   - 依赖：—；被引用：—
 - [#### Node 1: FunctionSpec](../../../reports/external-research/120-function-os-architecture-candidate-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -499,10 +499,10 @@
   - 可搜索名称：IMPLICIT-EFFA7EDD53E8A39D / #91倒U型统一生成定理→所有"最优在中间"是同一投影。 / IMPLICIT-EFFA7EDD53E8A39D / IMPLICIT-4A88C5C00FCEAC09
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [\("call_import", '__import__\("os"\) == result', {"x": 5}\),](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [\("call_import", '__import__\("os"\) == result', {"x": 5}\),](../../../function-os-candidate/v0.2/benchmark/generate_corpus.py)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-952DD50D89FE89A1 / \("call_import", '__import__\("os"\) == result', {"x": 5}\), / IMPLICIT-952DD50D89FE89A1
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`function-os-candidate/v0.2/benchmark/generate_corpus.py`
   - 依赖：—；被引用：—
 - [**原文来源 / Source**：`PRIVATE_PROVENANCE_WITHHELD`](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`

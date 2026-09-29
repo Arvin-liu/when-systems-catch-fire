@@ -4,5 +4,4 @@
 
 索引按固定 500 条分片，避免单页过大而无法在 GitHub 渲染。分片连续覆盖本主题主归属资产，未按重要性删减。
 
-- [第 001 片](./physics/part-001.md)：1—500；"title": "Pointfire unifies the four fundamental forces / quantum gravity.", → 需要外部物理理论（如大统一理论）和实验验证（如质子衰变）。
-- [第 002 片](../cards/part-002.md)：501—506；需要外部物理理论（如弦论、圈量子引力）和实验验证（如引力波、量子引力效应）。 → 验证物理、社会、认知三域的一致性
+- [第 001 片](./physics/part-001.md)：1—481；"title": "Pointfire unifies the four fundamental forces / quantum gravity.", → 验证物理、社会、认知三域的一致性
