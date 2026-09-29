@@ -1,0 +1,216 @@
+{
+  "schema_version": "task228-researcher-mappings-r1",
+  "mapping_notice": "These target-blind semantic mappings are researcher-authored interpretations of family M0 plus raw E1. The compiler only serializes them; it does not make the interpretation deterministic or validate its scientific support.",
+  "sources": {
+    "FAMILY01": {
+      "M0": {"path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/m0.md", "sha256": "4cce89f12f278559f45ac0d3bbb6dae049e72dc059866bb1fb039ab74aaa5a0a"},
+      "E1": {"path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY01/revision-evidence-e1.md", "sha256": "8c4d4123055732d8e68a13eaa0dcb9fbae3cddb07afef66e7dbb3699ea761ca0"},
+      "baseline_actions": ["ROUTINE_MONITORING", "SOIL_MOISTURE_CONFIRMATION", "REPEAT_THERMAL_SCAN", "INPUT_INVALID"],
+      "baseline_actions_evidence": ["F01_M0_ACTIONS"]
+    },
+    "FAMILY02": {
+      "M0": {"path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md", "sha256": "bc64a52ae85320c22221021aa57f3dee526d4355a5c37f45477f1e329737dc69"},
+      "E1": {"path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md", "sha256": "f7adf3efbc59f07b5df3ef80552d96981c0112a71cdc324fe71d8e17988072ea"},
+      "baseline_actions": ["REPORT_ESTIMATE", "REPEAT_SAMPLE", "FLAG_OUT_OF_RANGE", "INVALID_MEASUREMENT"],
+      "baseline_actions_evidence": ["F02_M0_ACTIONS"]
+    },
+    "FAMILY03": {
+      "M0": {"path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md", "sha256": "691b63e6ff4324acc23a09a35114df3fbb75668d39de3d8283386f30b110331a"},
+      "E1": {"path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md", "sha256": "fba2eef834fa1ae9b43665ecbaa15a2bf8690f840cc0a56483701a8e7601c5ff"},
+      "baseline_actions": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "baseline_actions_evidence": ["F03_M0_ACTIONS"]
+    }
+  },
+  "candidates": [
+    {
+      "mapping_id": "MAP_F01_A", "policy_id": "POLICY_F01_A", "family": "FAMILY01", "authorship": "researcher-authored target-blind mapping", "mapping_statement": "Code the two source-observed reflective silver-film and toward-sun records as a bounded independent contact/VWC review route; do not change M0's threshold or correct thermal values.",
+      "evidence": [
+        {"evidence_id": "F01_M0_ACTIONS", "source_type": "M0", "start_line": 14, "end_line": 19, "supports": "Names the frozen M0 triage actions that this candidate keeps available.", "claim_type": "method_rule"},
+        {"evidence_id": "F01_M0_SELECTION", "source_type": "M0", "start_line": 21, "end_line": 27, "supports": "Defines M0 setup validity, paired scans, thresholds, and separate VWC review; used only for baseline and stop context.", "claim_type": "method_rule"},
+        {"evidence_id": "F01_E1_TRIGGER", "source_type": "E1", "start_line": 14, "end_line": 15, "supports": "Two observed silver-film records triggered M0 while contact-reference excess and independent water observations did not indicate dry soil.", "claim_type": "observed"},
+        {"evidence_id": "F01_E1_CONTROLS", "source_type": "E1", "start_line": 16, "end_line": 18, "supports": "The changed bearing, ordinary-surface comparison, and positive control bound the observed contrast.", "claim_type": "observed"},
+        {"evidence_id": "F01_E1_LIMITS", "source_type": "E1", "start_line": 25, "end_line": 27, "supports": "Supports investigating only the observed surface/radiance/view combination and explicitly rejects universal cutoffs or a global M0 threshold change.", "claim_type": "method_rule"},
+        {"evidence_id": "F01_E1_QUALITY", "source_type": "E1", "start_line": 21, "end_line": 21, "supports": "The named E1 records passed the stated camera and air-sensor quality checks.", "claim_type": "observed"}
+      ],
+      "inputs": [
+        {"input_id": "F01A_MEASUREMENT_VALID", "description": "Whether the required M0 setup and measurement-quality checks are valid.", "value_type": "boolean", "unit": null, "source_refs": ["F01_M0_SELECTION", "F01_E1_QUALITY"]},
+        {"input_id": "F01A_SURFACE_PATTERN", "description": "Researcher-coded surface category, including the observed reflective silver-film pattern where present.", "value_type": "string", "unit": null, "source_refs": ["F01_E1_TRIGGER", "F01_E1_CONTROLS", "F01_E1_LIMITS"]},
+        {"input_id": "F01A_BEARING_RELATION", "description": "Observed camera-bearing relation for the measurement context.", "value_type": "string", "unit": null, "source_refs": ["F01_E1_TRIGGER", "F01_E1_CONTROLS", "F01_E1_LIMITS"]}
+      ],
+      "rule_id": "F01A_OBSERVED_REFLECTIVE_CONTEXT", "conditions": [
+        {"input_id": "F01A_MEASUREMENT_VALID", "operator": "eq", "value": true, "unit": null},
+        {"input_id": "F01A_SURFACE_PATTERN", "operator": "eq", "value": "reflective_silver_film_observed", "unit": null},
+        {"input_id": "F01A_BEARING_RELATION", "operator": "eq", "value": "toward_sun_observed", "unit": null}
+      ],
+      "rule_evidence": ["F01_E1_TRIGGER", "F01_E1_CONTROLS", "F01_E1_LIMITS"],
+      "action_id": "F01A_ROUTE_CONTACT_CONTEXT", "action_category": "ROUTE_FOR_REVIEW", "action_name": "ROUTE_OBSERVED_CONTEXT_FOR_INDEPENDENT_CONTACT_AND_VWC_REVIEW",
+      "parameters": [
+        {"name": "surface_pattern", "binding": "input_ref", "input_id": "F01A_SURFACE_PATTERN", "value_type": "string", "unit": null, "evidence_refs": ["F01_E1_TRIGGER", "F01_E1_CONTROLS", "F01_E1_LIMITS"]},
+        {"name": "bearing_relation", "binding": "input_ref", "input_id": "F01A_BEARING_RELATION", "value_type": "string", "unit": null, "evidence_refs": ["F01_E1_TRIGGER", "F01_E1_CONTROLS", "F01_E1_LIMITS"]}
+      ],
+      "action_evidence": ["F01_E1_TRIGGER", "F01_E1_CONTROLS", "F01_E1_LIMITS"],
+      "report_fields": [{"field_id": "F01A_OBSERVED_CONTEXT", "description": "Record the observed surface, bearing, paired thermal readings, contact check, and independent VWC evidence.", "unit": null, "evidence_refs": ["F01_E1_TRIGGER", "F01_E1_CONTROLS"]}],
+      "stop_evidence": ["F01_M0_SELECTION"], "fallback_evidence": ["F01_M0_SELECTION", "F01_E1_LIMITS"], "out_of_scope_evidence": ["F01_E1_LIMITS"],
+      "licensed_claim": "Routes only the explicitly coded reflective silver-film and toward-sun observation pattern for independent review; it sets no correction or thermal cutoff.",
+      "licensed_claim_evidence": ["F01_E1_TRIGGER", "F01_E1_CONTROLS", "F01_E1_LIMITS"],
+      "not_established": "No universal reflective-surface rule, corrected thermal threshold, global change to M0, transfer, revision-generation, causal, inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit claim is established.",
+      "not_established_evidence": ["F01_E1_LIMITS"]
+    },
+    {
+      "mapping_id": "MAP_F01_B", "policy_id": "POLICY_F01_B", "family": "FAMILY01", "authorship": "researcher-authored target-blind mapping", "mapping_statement": "Route only the source-observed incomplete-coverage and variable-reading pattern to reacquire context; do not invent a numeric coverage or variation cutoff.",
+      "evidence": [
+        {"evidence_id": "F01_M0_ACTIONS", "source_type": "M0", "start_line": 14, "end_line": 19, "supports": "Names the frozen M0 triage actions that this candidate keeps available.", "claim_type": "method_rule"},
+        {"evidence_id": "F01_M0_SELECTION", "source_type": "M0", "start_line": 21, "end_line": 27, "supports": "Defines M0 setup validity, paired scans, thresholds, and separate VWC review; used only for baseline and stop context.", "claim_type": "method_rule"},
+        {"evidence_id": "F01_E1_PARTIAL", "source_type": "E1", "start_line": 19, "end_line": 19, "supports": "OBS-06 has partial reflective coverage, variable bearing, a retained mask, and variable contact excess.", "claim_type": "observed"},
+        {"evidence_id": "F01_E1_LIMITS", "source_type": "E1", "start_line": 25, "end_line": 27, "supports": "The partial record does not isolate one stable measurement context and does not establish universal thresholds or actions.", "claim_type": "method_rule"},
+        {"evidence_id": "F01_E1_QUALITY", "source_type": "E1", "start_line": 21, "end_line": 21, "supports": "The named E1 records passed the stated camera and air-sensor quality checks.", "claim_type": "observed"}
+      ],
+      "inputs": [
+        {"input_id": "F01B_MEASUREMENT_VALID", "description": "Whether the required M0 setup and measurement-quality checks are valid.", "value_type": "boolean", "unit": null, "source_refs": ["F01_M0_SELECTION", "F01_E1_QUALITY"]},
+        {"input_id": "F01B_SURFACE_COVERAGE_COMPLETE", "description": "Whether the relevant surface coverage is complete for interpreting this scan context.", "value_type": "boolean", "unit": null, "source_refs": ["F01_E1_PARTIAL", "F01_E1_LIMITS"]},
+        {"input_id": "F01B_PAIRED_READING_PATTERN", "description": "Researcher-coded qualitative pattern for the paired readings, including the observed variable case.", "value_type": "string", "unit": null, "source_refs": ["F01_E1_PARTIAL", "F01_E1_LIMITS"]}
+      ],
+      "rule_id": "F01B_INCOMPLETE_VARIABLE_CONTEXT", "conditions": [
+        {"input_id": "F01B_MEASUREMENT_VALID", "operator": "eq", "value": true, "unit": null},
+        {"input_id": "F01B_SURFACE_COVERAGE_COMPLETE", "operator": "eq", "value": false, "unit": null},
+        {"input_id": "F01B_PAIRED_READING_PATTERN", "operator": "eq", "value": "variable_observed", "unit": null}
+      ],
+      "rule_evidence": ["F01_E1_PARTIAL", "F01_E1_LIMITS"],
+      "action_id": "F01B_REACQUIRE_CONTEXT", "action_category": "REPEAT_OR_REACQUIRE", "action_name": "REACQUIRE_COMPLETE_SURFACE_AND_PAIRED_READING_CONTEXT",
+      "parameters": [{"name": "paired_reading_pattern", "binding": "input_ref", "input_id": "F01B_PAIRED_READING_PATTERN", "value_type": "string", "unit": null, "evidence_refs": ["F01_E1_PARTIAL", "F01_E1_LIMITS"]}],
+      "action_evidence": ["F01_E1_PARTIAL", "F01_E1_LIMITS"],
+      "report_fields": [{"field_id": "F01B_COVERAGE_AND_VARIATION", "description": "Record surface coverage, scan bearing, paired readings, mask status, and contact-reference variation.", "unit": null, "evidence_refs": ["F01_E1_PARTIAL", "F01_E1_LIMITS"]}],
+      "stop_evidence": ["F01_M0_SELECTION"], "fallback_evidence": ["F01_M0_SELECTION", "F01_E1_LIMITS"], "out_of_scope_evidence": ["F01_E1_LIMITS"],
+      "licensed_claim": "Routes only an incomplete-coverage and variable-reading observation pattern for reacquisition; it supplies no new numeric threshold.",
+      "licensed_claim_evidence": ["F01_E1_PARTIAL", "F01_E1_LIMITS"],
+      "not_established": "No universal reflective-surface rule, corrected thermal threshold, global change to M0, transfer, revision-generation, causal, inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit claim is established.",
+      "not_established_evidence": ["F01_E1_LIMITS"]
+    },
+    {
+      "mapping_id": "MAP_F02_A", "policy_id": "POLICY_F02_A", "family": "FAMILY02", "authorship": "researcher-authored target-blind mapping", "mapping_statement": "Code the three source-observed organic-floc cases as a bounded independent gravimetric review category; do not fit a new formula or composition threshold.",
+      "evidence": [
+        {"evidence_id": "F02_M0_ACTIONS", "source_type": "M0", "start_line": 14, "end_line": 17, "supports": "Names the frozen M0 estimate, repeat, out-of-range, and invalid-measurement actions kept available.", "claim_type": "method_rule"},
+        {"evidence_id": "F02_M0_PROCEDURE", "source_type": "M0", "start_line": 21, "end_line": 24, "supports": "Records the frozen blank, duplicate, range, and estimate procedure without changing the M0 formula.", "claim_type": "method_rule"},
+        {"evidence_id": "F02_E1_ORGANIC", "source_type": "E1", "start_line": 17, "end_line": 19, "supports": "Three stable organic-floc observations have gravimetric results below the mineral-dominant M0 estimates.", "claim_type": "observed"},
+        {"evidence_id": "F02_E1_LIMITS", "source_type": "E1", "start_line": 27, "end_line": 29, "supports": "The packet rejects a universal composition cutoff, new single formula, or discarding turbidity for all sediments.", "claim_type": "method_rule"},
+        {"evidence_id": "F02_E1_QC", "source_type": "E1", "start_line": 8, "end_line": 8, "supports": "Records instrument, gravimetric, composition-assay, and blank/cell checks for the E1 observations.", "claim_type": "observed"}
+      ],
+      "inputs": [
+        {"input_id": "F02A_MEASUREMENT_VALID", "description": "Whether blank, cell, duplicate, and instrument checks required by M0 are valid.", "value_type": "boolean", "unit": null, "source_refs": ["F02_M0_PROCEDURE", "F02_E1_QC"]},
+        {"input_id": "F02A_COMPOSITION_PATTERN", "description": "Researcher-coded composition observation category, including the observed organic-floc cases.", "value_type": "string", "unit": null, "source_refs": ["F02_E1_ORGANIC", "F02_E1_LIMITS"]}
+      ],
+      "rule_id": "F02A_OBSERVED_ORGANIC_FLOC_PATTERN", "conditions": [
+        {"input_id": "F02A_MEASUREMENT_VALID", "operator": "eq", "value": true, "unit": null},
+        {"input_id": "F02A_COMPOSITION_PATTERN", "operator": "eq", "value": "observed_organic_floc_cases", "unit": null}
+      ],
+      "rule_evidence": ["F02_E1_ORGANIC", "F02_E1_LIMITS"],
+      "action_id": "F02A_GRAVIMETRIC_REVIEW", "action_category": "ROUTE_FOR_REVIEW", "action_name": "ROUTE_OBSERVED_COMPOSITION_PATTERN_FOR_INDEPENDENT_GRAVIMETRIC_REVIEW",
+      "parameters": [{"name": "composition_pattern", "binding": "input_ref", "input_id": "F02A_COMPOSITION_PATTERN", "value_type": "string", "unit": null, "evidence_refs": ["F02_E1_ORGANIC", "F02_E1_LIMITS"]}],
+      "action_evidence": ["F02_E1_ORGANIC", "F02_E1_LIMITS", "F02_E1_QC"],
+      "report_fields": [{"field_id": "F02A_COMPOSITION_AND_MASS", "description": "Record composition assay, turbidity duplicates, M0 estimate, and independent gravimetric result.", "unit": "mg/L", "evidence_refs": ["F02_E1_ORGANIC", "F02_E1_QC"]}],
+      "stop_evidence": ["F02_M0_PROCEDURE"], "fallback_evidence": ["F02_M0_PROCEDURE", "F02_E1_LIMITS"], "out_of_scope_evidence": ["F02_E1_LIMITS"],
+      "licensed_claim": "Routes only the researcher-coded organic-floc observation category represented by the named E1 cases for independent gravimetric review; it adds no composition cutoff or formula.",
+      "licensed_claim_evidence": ["F02_E1_ORGANIC", "F02_E1_LIMITS"],
+      "not_established": "No universal composition boundary, new single calibration, global M0 replacement, transfer, revision-generation, causal, inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit claim is established.",
+      "not_established_evidence": ["F02_E1_LIMITS"]
+    },
+    {
+      "mapping_id": "MAP_F02_B", "policy_id": "POLICY_F02_B", "family": "FAMILY02", "authorship": "researcher-authored target-blind mapping", "mapping_statement": "Route the source-observed non-reproducible composition plus non-agreeing gravimetric replicate pattern to reconciliation; do not supply a point estimate.",
+      "evidence": [
+        {"evidence_id": "F02_M0_ACTIONS", "source_type": "M0", "start_line": 14, "end_line": 17, "supports": "Names the frozen M0 estimate, repeat, out-of-range, and invalid-measurement actions kept available.", "claim_type": "method_rule"},
+        {"evidence_id": "F02_M0_PROCEDURE", "source_type": "M0", "start_line": 21, "end_line": 24, "supports": "Records the frozen blank, duplicate, range, and estimate procedure without changing the M0 formula.", "claim_type": "method_rule"},
+        {"evidence_id": "F02_E1_UNREPRODUCIBLE", "source_type": "E1", "start_line": 21, "end_line": 23, "supports": "OBS-08 has aliquot-dependent composition and a gravimetric duplicate spread despite stable turbidity.", "claim_type": "observed"},
+        {"evidence_id": "F02_E1_LIMITS", "source_type": "E1", "start_line": 27, "end_line": 29, "supports": "The packet says the variable mixture has no reproducible basis here for a point mapping and rejects universal extrapolation.", "claim_type": "method_rule"},
+        {"evidence_id": "F02_E1_QC", "source_type": "E1", "start_line": 8, "end_line": 8, "supports": "Records instrument, gravimetric, composition-assay, and blank/cell checks for the E1 observations.", "claim_type": "observed"}
+      ],
+      "inputs": [
+        {"input_id": "F02B_MEASUREMENT_VALID", "description": "Whether blank, cell, duplicate, and instrument checks required by M0 are valid.", "value_type": "boolean", "unit": null, "source_refs": ["F02_M0_PROCEDURE", "F02_E1_QC"]},
+        {"input_id": "F02B_COMPOSITION_REPRODUCIBLE", "description": "Whether composition classification is reproducible across the compared aliquots.", "value_type": "boolean", "unit": null, "source_refs": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS"]},
+        {"input_id": "F02B_GRAVIMETRIC_REPLICATES_AGREE", "description": "Whether the independent gravimetric replicates agree for the sample under review.", "value_type": "boolean", "unit": null, "source_refs": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS"]}
+      ],
+      "rule_id": "F02B_UNREPRODUCIBLE_COMPOSITION_AND_MASS", "conditions": [
+        {"input_id": "F02B_MEASUREMENT_VALID", "operator": "eq", "value": true, "unit": null},
+        {"input_id": "F02B_COMPOSITION_REPRODUCIBLE", "operator": "eq", "value": false, "unit": null},
+        {"input_id": "F02B_GRAVIMETRIC_REPLICATES_AGREE", "operator": "eq", "value": false, "unit": null}
+      ],
+      "rule_evidence": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS"],
+      "action_id": "F02B_RECONCILE_ALIQUOTS", "action_category": "RECONCILE", "action_name": "RECONCILE_COMPOSITION_AND_GRAVIMETRIC_ALIQUOT_RECORDS",
+      "parameters": [
+        {"name": "composition_reproducible", "binding": "input_ref", "input_id": "F02B_COMPOSITION_REPRODUCIBLE", "value_type": "boolean", "unit": null, "evidence_refs": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS"]},
+        {"name": "gravimetric_replicates_agree", "binding": "input_ref", "input_id": "F02B_GRAVIMETRIC_REPLICATES_AGREE", "value_type": "boolean", "unit": null, "evidence_refs": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS"]}
+      ],
+      "action_evidence": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS", "F02_E1_QC"],
+      "report_fields": [{"field_id": "F02B_ALIQUOT_RECONCILIATION", "description": "Record each aliquot composition result, turbidity duplicate, and gravimetric replicate separately.", "unit": null, "evidence_refs": ["F02_E1_UNREPRODUCIBLE", "F02_E1_QC"]}],
+      "stop_evidence": ["F02_M0_PROCEDURE"], "fallback_evidence": ["F02_M0_PROCEDURE", "F02_E1_LIMITS"], "out_of_scope_evidence": ["F02_E1_LIMITS"],
+      "licensed_claim": "Routes only the non-reproducible composition plus non-agreeing gravimetric replicate pattern represented by OBS-08 for reconciliation; it supplies no point estimate.",
+      "licensed_claim_evidence": ["F02_E1_UNREPRODUCIBLE", "F02_E1_LIMITS"],
+      "not_established": "No universal composition boundary, new single calibration, global M0 replacement, transfer, revision-generation, causal, inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit claim is established.",
+      "not_established_evidence": ["F02_E1_LIMITS"]
+    },
+    {
+      "mapping_id": "MAP_F03_A", "policy_id": "POLICY_F03_A", "family": "FAMILY03", "authorship": "researcher-authored target-blind mapping", "mapping_statement": "Code the named group-P pulse observations as a bounded product-specific stability review route; do not establish pulse-duration or temperature thresholds.",
+      "evidence": [
+        {"evidence_id": "F03_M0_ACTIONS", "source_type": "M0", "start_line": 14, "end_line": 17, "supports": "Names the frozen M0 screening, review, logger-reconciliation, and unscorable actions kept available.", "claim_type": "method_rule"},
+        {"evidence_id": "F03_M0_PROCEDURE", "source_type": "M0", "start_line": 21, "end_line": 24, "supports": "Defines M0 logger completeness, interval means, and review routing; used only as baseline and stop context.", "claim_type": "method_rule"},
+        {"evidence_id": "F03_E1_PULSED_P", "source_type": "E1", "start_line": 16, "end_line": 18, "supports": "Three group-P observations show brief high-rate pulses with assay results below the stated reference while 15-minute means remain within M0.", "claim_type": "observed"},
+        {"evidence_id": "F03_E1_CONTRAST", "source_type": "E1", "start_line": 19, "end_line": 20, "supports": "The group-S pulse contrast and group-P continuous profile bound interpretation of the group-P observations.", "claim_type": "observed"},
+        {"evidence_id": "F03_E1_LIMITS", "source_type": "E1", "start_line": 27, "end_line": 29, "supports": "The observations do not establish a universal pulse threshold or confirmed degradation from any isolated high reading.", "claim_type": "method_rule"}
+      ],
+      "inputs": [
+        {"input_id": "F03A_MEASUREMENT_VALID", "description": "Whether logger calibration, clock, shipment identity, and required record checks are valid.", "value_type": "boolean", "unit": null, "source_refs": ["F03_M0_PROCEDURE", "F03_E1_LIMITS"]},
+        {"input_id": "F03A_FORMULATION_GROUP", "description": "The formulation group recorded independently in ordinary shipment records.", "value_type": "string", "unit": null, "source_refs": ["F03_E1_PULSED_P", "F03_E1_CONTRAST"]},
+        {"input_id": "F03A_PULSE_PATTERN", "description": "Researcher-coded high-rate trace pattern, including the observed group-P pulse cases.", "value_type": "string", "unit": null, "source_refs": ["F03_E1_PULSED_P", "F03_E1_CONTRAST", "F03_E1_LIMITS"]}
+      ],
+      "rule_id": "F03A_OBSERVED_GROUP_P_PULSE_PATTERN", "conditions": [
+        {"input_id": "F03A_MEASUREMENT_VALID", "operator": "eq", "value": true, "unit": null},
+        {"input_id": "F03A_FORMULATION_GROUP", "operator": "eq", "value": "P", "unit": null},
+        {"input_id": "F03A_PULSE_PATTERN", "operator": "eq", "value": "observed_group_p_pulse_cases", "unit": null}
+      ],
+      "rule_evidence": ["F03_E1_PULSED_P", "F03_E1_CONTRAST", "F03_E1_LIMITS"],
+      "action_id": "F03A_PRODUCT_STABILITY_REVIEW", "action_category": "ROUTE_FOR_REVIEW", "action_name": "ROUTE_OBSERVED_GROUP_P_PULSE_PATTERN_FOR_STABILITY_REVIEW",
+      "parameters": [
+        {"name": "formulation_group", "binding": "input_ref", "input_id": "F03A_FORMULATION_GROUP", "value_type": "string", "unit": null, "evidence_refs": ["F03_E1_PULSED_P", "F03_E1_CONTRAST"]},
+        {"name": "pulse_pattern", "binding": "input_ref", "input_id": "F03A_PULSE_PATTERN", "value_type": "string", "unit": null, "evidence_refs": ["F03_E1_PULSED_P", "F03_E1_CONTRAST", "F03_E1_LIMITS"]}
+      ],
+      "action_evidence": ["F03_E1_PULSED_P", "F03_E1_CONTRAST", "F03_E1_LIMITS"],
+      "report_fields": [{"field_id": "F03A_TRACE_AND_ASSAY", "description": "Record formulation identity, one-minute trace context, 15-minute record, and duplicate activity assay.", "unit": null, "evidence_refs": ["F03_E1_PULSED_P", "F03_E1_CONTRAST"]}],
+      "stop_evidence": ["F03_M0_PROCEDURE"], "fallback_evidence": ["F03_M0_PROCEDURE", "F03_E1_LIMITS"], "out_of_scope_evidence": ["F03_E1_LIMITS"],
+      "licensed_claim": "Routes only the researcher-coded group-P pulse pattern represented by the named E1 records for product-specific stability review; it asserts no pulse threshold or degradation finding.",
+      "licensed_claim_evidence": ["F03_E1_PULSED_P", "F03_E1_CONTRAST", "F03_E1_LIMITS"],
+      "not_established": "No universal pulse threshold, confirmed degradation rule, global M0 replacement, transfer, revision-generation, causal, inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit claim is established.",
+      "not_established_evidence": ["F03_E1_LIMITS"]
+    },
+    {
+      "mapping_id": "MAP_F03_B", "policy_id": "POLICY_F03_B", "family": "FAMILY03", "authorship": "researcher-authored target-blind mapping", "mapping_statement": "Route the source-observed high-rate trace gap plus assay disagreement to record reconciliation; do not infer whether a pulse occurred or claim degradation.",
+      "evidence": [
+        {"evidence_id": "F03_M0_ACTIONS", "source_type": "M0", "start_line": 14, "end_line": 17, "supports": "Names the frozen M0 screening, review, logger-reconciliation, and unscorable actions kept available.", "claim_type": "method_rule"},
+        {"evidence_id": "F03_M0_PROCEDURE", "source_type": "M0", "start_line": 21, "end_line": 24, "supports": "Defines M0 logger completeness, interval means, and review routing; used only as baseline and stop context.", "claim_type": "method_rule"},
+        {"evidence_id": "F03_E1_TRACE_GAP", "source_type": "E1", "start_line": 21, "end_line": 23, "supports": "OBS-06 has a high-rate trace gap, unknown pulse duration, and assay disagreement despite a valid 15-minute mean.", "claim_type": "observed"},
+        {"evidence_id": "F03_E1_LIMITS", "source_type": "E1", "start_line": 27, "end_line": 29, "supports": "The source says OBS-06 does not identify whether a pulse occurred and rejects calling an isolated reading confirmed failure.", "claim_type": "method_rule"}
+      ],
+      "inputs": [
+        {"input_id": "F03B_MEASUREMENT_VALID", "description": "Whether logger calibration, clock, shipment identity, and required record checks are valid.", "value_type": "boolean", "unit": null, "source_refs": ["F03_M0_PROCEDURE", "F03_E1_LIMITS"]},
+        {"input_id": "F03B_HIGH_RATE_TRACE_COMPLETE", "description": "Whether the high-rate trace is complete over the relevant handoff interval.", "value_type": "boolean", "unit": null, "source_refs": ["F03_E1_TRACE_GAP", "F03_E1_LIMITS"]},
+        {"input_id": "F03B_ASSAY_REPLICATES_RECONCILE", "description": "Whether retained-sample activity assay replicates reconcile for this record.", "value_type": "boolean", "unit": null, "source_refs": ["F03_E1_TRACE_GAP", "F03_E1_LIMITS"]}
+      ],
+      "rule_id": "F03B_TRACE_GAP_WITH_ASSAY_DISAGREEMENT", "conditions": [
+        {"input_id": "F03B_MEASUREMENT_VALID", "operator": "eq", "value": true, "unit": null},
+        {"input_id": "F03B_HIGH_RATE_TRACE_COMPLETE", "operator": "eq", "value": false, "unit": null},
+        {"input_id": "F03B_ASSAY_REPLICATES_RECONCILE", "operator": "eq", "value": false, "unit": null}
+      ],
+      "rule_evidence": ["F03_E1_TRACE_GAP", "F03_E1_LIMITS"],
+      "action_id": "F03B_RECONCILE_TRACE_AND_ASSAY", "action_category": "RECONCILE", "action_name": "RECONCILE_HIGH_RATE_TRACE_AND_ASSAY_RECORDS",
+      "parameters": [
+        {"name": "trace_complete", "binding": "input_ref", "input_id": "F03B_HIGH_RATE_TRACE_COMPLETE", "value_type": "boolean", "unit": null, "evidence_refs": ["F03_E1_TRACE_GAP", "F03_E1_LIMITS"]},
+        {"name": "assay_replicates_reconcile", "binding": "input_ref", "input_id": "F03B_ASSAY_REPLICATES_RECONCILE", "value_type": "boolean", "unit": null, "evidence_refs": ["F03_E1_TRACE_GAP", "F03_E1_LIMITS"]}
+      ],
+      "action_evidence": ["F03_E1_TRACE_GAP", "F03_E1_LIMITS"],
+      "report_fields": [{"field_id": "F03B_TRACE_GAP_AND_ASSAY", "description": "Record the interval logger, high-rate trace gap, assay replicates, clock alignment, and custody context.", "unit": null, "evidence_refs": ["F03_E1_TRACE_GAP", "F03_E1_LIMITS"]}],
+      "stop_evidence": ["F03_M0_PROCEDURE"], "fallback_evidence": ["F03_M0_PROCEDURE", "F03_E1_LIMITS"], "out_of_scope_evidence": ["F03_E1_LIMITS"],
+      "licensed_claim": "Routes only the incomplete high-rate trace plus non-reconciling assay pattern represented by OBS-06 for record reconciliation; it does not infer a pulse or degradation.",
+      "licensed_claim_evidence": ["F03_E1_TRACE_GAP", "F03_E1_LIMITS"],
+      "not_established": "No universal pulse threshold, confirmed degradation rule, global M0 replacement, transfer, revision-generation, causal, inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit claim is established.",
+      "not_established_evidence": ["F03_E1_LIMITS"]
+    }
+  ]
+}

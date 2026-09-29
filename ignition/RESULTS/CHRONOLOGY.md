@@ -1,6 +1,6 @@
 # 历史结果台账
 
-本台账从 810 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
+本台账从 822 份现存研究、文章、架构、Foundation 与迭代文档确定性恢复。它只提供保真导航，不改变原来源的证据权限。
 
 **统一断言上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
 
@@ -5172,6 +5172,162 @@
 - **问题：** 此来源记录了什么：121Q8 Final Report？
 - **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
 - **来源摘要：** Status: complete pending GPT verification. PR remains OPEN / DRAFT / UNMERGED.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task228 runtime report — Phase 04 through Phase 07](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/runtime-report.md)
+
+- **结果 ID：** `HR-872036691A947EDC`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：Task228 runtime report — Phase 04 through Phase 07？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Task: IGNITION-20260929-228. This run resumed at Phase 04 after the A1 Owner/GPT adjudication. The controlling 1111 snapshot was 55a0add295b70afa4283fa2a75bbc26ac4bc63b3; the requested instruction/checklist/current-state set was consistent at that locked revision.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task228 independent policy review rubric R1](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/reviewer-rubric.md)
+
+- **结果 ID：** `HR-5D6F1A5BBCBD4E45`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：Task228 independent policy review rubric R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** This rubric implements task228-policy-contract-r1. Reviewers must not add operational thresholds, scientific exclusions, or source requirements that are absent from the normative contract. Record each machine rule as PASS or FAIL; a reviewer cannot waive a machine failure. Semantic findings must…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task228 target-blind instrument authoring guide R1](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/instrument-authoring-guide.md)
+
+- **结果 ID：** `HR-EBCF23EC787CAC52`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：Task228 target-blind instrument authoring guide R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** For one candidate, use only its family's frozen m0.md, raw revision-evidence-e1.md, this normative contract, and an explicit researcher-authored mapping declaration. Do not open or use A/B/C targets, Task227 policy files, Task227 scores or dispositions, transfer outputs, or target-compatibility a…
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Per-policy Task227 validator audit](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/per-policy-validator-audit.md)
+
+- **结果 ID：** `HR-5DFC2E14933CD222`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：Per-policy Task227 validator audit？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Inputs were the six immutable raw reference-policy bytes only. The diagnostic harness loaded the frozen Task227 schema and validator, enumerated all custom predicates without modifying policy inputs, and ran the official validator unchanged for first-failure comparison.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task228 normative policy contract R1](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/normative-policy-contract.md)
+
+- **结果 ID：** `HR-1794C69A5BF13CD8`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：Task228 normative policy contract R1？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: RECONCILEDCANDIDATE Scope: Task228 reference-instrument construction and later independent semantic audit only. Dialect: task228-policy-contract-r1.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task228 Task227 evidence-binding receipt](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/evidence-binding-receipt.md)
+
+- **结果 ID：** `HR-55B8A590151A0C77`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：Task228 Task227 evidence-binding receipt？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** No Task227 policy, reviewer sheet, lock, aggregate, result, target, or validator source was modified. The Task228 diagnostic read only the six raw reference policies, the frozen schema/validator, and frozen family M0/E1 inputs; it did not read A/B/C target files.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task228 contract-gap report](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/contract-gap-report.md)
+
+- **结果 ID：** `HR-252AA2BA43FFA5A5`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：Task228 contract-gap report？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** At the end of Phase 03, before Owner/GPT adjudication, the temporary terminal status was TASK228OWNERADJUDICATIONREQUIRED. The A1 instruction later resolved all three questions and authorized continuation from Phase 04.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task228 v2 — Auditor B Raw Audit Sheet](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-b.md)
+
+- **结果 ID：** `HR-01BBD082CA4A248B`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：Task228 v2 — Auditor B Raw Audit Sheet？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Scope: Isolated v2 package only. No target material or other audit sheets inspected.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task228 candidate revision v2 — Auditor A raw audit sheet](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-a.md)
+
+- **结果 ID：** `HR-D49183423AAC8346`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：Task228 candidate revision v2 — Auditor A raw audit sheet？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Validator and compiler checks were rerun in the isolated package. All six validators returned TASK228POLICYSCHEMA=PASS and TASK228POLICYVALID=PASS; the compiler check returned TASK228REFERENCEREBUILD=BYTEIDENTICAL.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [Task228 auditor-b audit sheet](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-1/auditor-b.md)
+
+- **结果 ID：** `HR-D81C17A67E88B8BD`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：Task228 auditor-b audit sheet？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Audited only the supplied isolated package. The six validator invocations each returned TASK228POLICYSCHEMA=PASS and TASK228POLICYVALID=PASS; the packaged rebuild check returned TASK228REFERENCEREBUILD=BYTEIDENTICAL.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [auditor-a](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-1/auditor-a.md)
+
+- **结果 ID：** `HR-4CF0A85AB2711561`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：auditor-a？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Read-only audit of the isolated package only. The packaged validator returned TASK228POLICYSCHEMA=PASS and TASK228POLICYVALID=PASS for all six candidates. The packaged compiler’s read-only check returned TASK228REFERENCEREBUILD=BYTEIDENTICAL.
+- **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
+- **变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **处置：** `HUMAN_INDEX_ONLY`
+
+### [IGNITION-20260929-228 — Policy Contract Reconciliation R0](../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/README.md)
+
+- **结果 ID：** `HR-68BE436F325E45A0`
+- **日期：** UNSPECIFIED
+- **来源任务/运行：** `228-POLICY-CONTRACT-RECONCILIATION-R0`
+- **问题：** 此来源记录了什么：IGNITION-20260929-228 — Policy Contract Reconciliation R0？
+- **方法/证据类别：** SOURCE_DOCUMENT_RECOVERY_AND_NAVIGATION
+- **来源摘要：** Status: REFERENCEINSTRUMENTSAUDITEDREADYDRAFTPROPEN
 - **成熟度与证据：** SOURCE_DEFINED; inspect the linked source and current adjudication before reuse.
 - **变化：** Recovered into the task 101 human-readable ledger without altering the source.
 - **局限：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.

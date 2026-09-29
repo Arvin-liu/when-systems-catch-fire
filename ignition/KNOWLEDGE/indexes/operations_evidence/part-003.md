@@ -1404,6 +1404,11 @@
   - 可搜索名称：NFC-6f16053a84919a73 / attempt source for this projection.
   - 来源：`reports/operations/ignition-139-step06-live-current-projection.md`
   - 依赖：—；被引用：—
+- [auditor-a](../../ASSET-CARDS.md#asset-hr-4cf0a85ab2711561)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：auditor-a / auditor-a
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-1/auditor-a.md`
+  - 依赖：—；被引用：—
 - [authority_changes: `data/operations/current-task-lineage-status.json` is authoritative only for task-lineage and lifecyc](../../../STATE-CHANGELOG.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-aab478eb20267007 / authority_changes: `data/operations/current-task-lineage-status.json` is authoritative only for task-lineage and lifecyc
@@ -2497,10 +2502,5 @@
 - [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：A5022860483 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json / A5022860483 / P4310320547
-  - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json`
-  - 依赖：—；被引用：—
-- [data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json](../../../data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：P4310320547 / data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json / P4310320547 / A5022860483
   - 来源：`data/operations/iterations/110/openalex/first-run-20260801/raw/GAP001-07.json`
   - 依赖：—；被引用：—

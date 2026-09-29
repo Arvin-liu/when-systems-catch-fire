@@ -1,0 +1,380 @@
+{
+  "task_id": "IGNITION-20260929-228",
+  "task227_head": "7d979b1aa523030b16f773a973477cbfca1e4513",
+  "diagnostic_mode": "read_only_exhaustive_no_input_mutation",
+  "source_files": {
+    "schema": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/reference/policy-schema.json",
+    "validator": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/tools/validate_policy.py",
+    "frozen_manifest": "ignition/reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/freeze/freeze-manifest.json"
+  },
+  "policy_count": 6,
+  "validator_pass_count": 0,
+  "first_failure_crosscheck_all_match": true,
+  "pass_fail_crosscheck_all_match": true,
+  "all_policy_bytes_unchanged": true,
+  "categories": {
+    "SCHEMA_JSON": "JSON Schema, required-field, or type failure",
+    "UNSUPPORTED_OR_DANGLING_IDENTIFIER": "Duplicate, unsupported, or dangling identifier",
+    "SELECTOR_ACTION_ONE_TO_ONE": "Selector/action one-to-one mapping",
+    "SELECTOR_ACTION_CONDITION_EQUALITY": "Selector/action condition equality",
+    "LICENSED_REGION_RULE_MAPPING": "Licensed-region/rule mapping",
+    "LICENSED_REGION_CONDITION_EQUALITY": "Licensed-region exact-condition equality",
+    "REGION_COVERAGE_COMPLEMENT": "Region coverage/complement semantics",
+    "EVIDENCE_REFERENCE_INTEGRITY": "Evidence-reference integrity",
+    "FAMILY_SOURCE_LOCATOR_BINDING": "Family source-locator binding",
+    "PRESERVATION_MODE_SEMANTICS": "Preservation-mode semantics",
+    "M0_RETIREMENT_PROHIBITED": "Prohibited M0 retirement",
+    "FALLBACK_UNIVERSALITY": "Fallback universality",
+    "STOP_CONDITION_STRUCTURE": "Stop-condition structure",
+    "TYPED_PARAMETER_INPUT_MISMATCH": "Typed parameter/input mismatch, including selector-condition typing",
+    "SCOPE_CEILING_REGION_LICENSING": "Scope-ceiling region licensing",
+    "PROVENANCE_TYPED_LINK_COVERAGE": "Provenance completeness and typed-link coverage",
+    "OTHER_VALIDATOR_SPECIFIC": "Other validator-specific constraint"
+  },
+  "predicates_not_defined_by_task227": [
+    {
+      "rule_id": "ACTION_PARAMETER_INPUT_BINDING",
+      "category": "TYPED_PARAMETER_INPUT_MISMATCH",
+      "status": "not_encoded",
+      "detail": "Task227 has typed selector-condition checks, but action parameters are only name/value pairs and have no declared input-type link in schema or validator."
+    }
+  ],
+  "results": [
+    {
+      "ref_id": "REF-01",
+      "family_id": "FAMILY01",
+      "policy_path": "/private/tmp/ignition-227-component-isolation-r0/FINAL-OWNER-PACKET/reference-m1/REF-01.json",
+      "policy_sha256": "7d8931b28e01d128573634731068cbf793a295a3800af8416b9fb8e6ef45cb6f",
+      "policy_sha256_after": "7d8931b28e01d128573634731068cbf793a295a3800af8416b9fb8e6ef45cb6f",
+      "input_unchanged": true,
+      "official_first_failure": "preserved-rule evidence_refs must reference M0",
+      "diagnostic_first_failure": "preserved-rule evidence_refs must reference M0",
+      "first_failure_matches_official": true,
+      "diagnostic_pass": false,
+      "validator_pass": false,
+      "pass_fail_matches_official": true,
+      "failures": [
+        {
+          "rule_id": "PRESERVED_RULE_SOURCE_M0",
+          "category": "PRESERVATION_MODE_SEMANTICS",
+          "location": "preserved-rule evidence_refs",
+          "detail": "preserved-rule evidence_refs must reference M0"
+        },
+        {
+          "rule_id": "PRESERVED_RULE_SOURCE_M0",
+          "category": "PRESERVATION_MODE_SEMANTICS",
+          "location": "preserved-rule evidence_refs",
+          "detail": "preserved-rule evidence_refs must reference M0"
+        },
+        {
+          "rule_id": "PROVENANCE_TYPED_LINK",
+          "category": "PROVENANCE_TYPED_LINK_COVERAGE",
+          "location": "provenance[11]",
+          "detail": "unknown provenance link scope_claim:LIMIT-NO-GLOBAL-REFLECTANCE-OR-THRESHOLD"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.EV-M0-BASELINE",
+          "detail": "source locator missing from family inputs for EV-M0-BASELINE"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.EV-M0-VALIDATION",
+          "detail": "source locator missing from family inputs for EV-M0-VALIDATION"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.EV-E1-OBS01-02",
+          "detail": "source locator missing from family inputs for EV-E1-OBS01-02"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.EV-E1-OBS03-04",
+          "detail": "source locator missing from family inputs for EV-E1-OBS03-04"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.EV-E1-OBS05",
+          "detail": "source locator missing from family inputs for EV-E1-OBS05"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.EV-E1-OBS06",
+          "detail": "source locator missing from family inputs for EV-E1-OBS06"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.EV-E1-LIMITS",
+          "detail": "source locator missing from family inputs for EV-E1-LIMITS"
+        }
+      ]
+    },
+    {
+      "ref_id": "REF-02",
+      "family_id": "FAMILY01",
+      "policy_path": "/private/tmp/ignition-227-component-isolation-r0/FINAL-OWNER-PACKET/reference-m1/REF-02.json",
+      "policy_sha256": "223aff4d4cf6dc67804416bd2b33fa297f5688ebda5c6cd44e49de7387c857bb",
+      "policy_sha256_after": "223aff4d4cf6dc67804416bd2b33fa297f5688ebda5c6cd44e49de7387c857bb",
+      "input_unchanged": true,
+      "official_first_failure": "evidence IDs must be unique",
+      "diagnostic_first_failure": "evidence IDs must be unique",
+      "first_failure_matches_official": true,
+      "diagnostic_pass": false,
+      "validator_pass": false,
+      "pass_fail_matches_official": true,
+      "failures": [
+        {
+          "rule_id": "EVIDENCE_IDS_UNIQUE",
+          "category": "UNSUPPORTED_OR_DANGLING_IDENTIFIER",
+          "location": "evidence_basis",
+          "detail": "evidence IDs must be unique"
+        },
+        {
+          "rule_id": "PROVENANCE_TYPED_LINK",
+          "category": "PROVENANCE_TYPED_LINK_COVERAGE",
+          "location": "provenance[16]",
+          "detail": "unknown provenance link scope_claim:CLAIM_NO_UNIVERSAL_CUTOFF_OR_CORRECTION"
+        },
+        {
+          "rule_id": "PROVENANCE_TYPED_LINK",
+          "category": "PROVENANCE_TYPED_LINK_COVERAGE",
+          "location": "provenance[17]",
+          "detail": "unknown provenance link scope_claim:CLAIM_NO_GENERAL_REFLECTIVE_SURFACE_ACTION"
+        },
+        {
+          "rule_id": "PROVENANCE_TYPED_LINK",
+          "category": "PROVENANCE_TYPED_LINK_COVERAGE",
+          "location": "provenance[18]",
+          "detail": "unknown provenance link scope_claim:CLAIM_NO_IRRIGATION_AUTHORITY"
+        },
+        {
+          "rule_id": "PROVENANCE_TYPED_COVERAGE",
+          "category": "PROVENANCE_TYPED_LINK_COVERAGE",
+          "location": "provenance",
+          "detail": "provenance omits typed links: [('scope_exclusion', 'CLAIM_NO_GENERAL_REFLECTIVE_SURFACE_ACTION'), ('scope_exclusion', 'CLAIM_NO_IRRIGATION_AUTHORITY'), ('scope_exclusion', 'CLAIM_NO_UNIVERSAL_CUTOFF_OR_CORRECTION')]"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F01-M0-R0",
+          "detail": "source locator missing from family inputs for CE-F01-M0-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F01-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F01-E1-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F01-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F01-E1-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F01-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F01-E1-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F01-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F01-E1-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F01-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F01-E1-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F01-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F01-E1-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F01-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F01-E1-R0"
+        }
+      ]
+    },
+    {
+      "ref_id": "REF-03",
+      "family_id": "FAMILY02",
+      "policy_path": "/private/tmp/ignition-227-component-isolation-r0/FINAL-OWNER-PACKET/reference-m1/REF-03.json",
+      "policy_sha256": "9e22f44ece3f436f247f89e427a82ea1c7247901e318dc9597c661b5c9a21039",
+      "policy_sha256_after": "9e22f44ece3f436f247f89e427a82ea1c7247901e318dc9597c661b5c9a21039",
+      "input_unchanged": true,
+      "official_first_failure": "preserved-rule evidence_refs must reference M0",
+      "diagnostic_first_failure": "preserved-rule evidence_refs must reference M0",
+      "first_failure_matches_official": true,
+      "diagnostic_pass": false,
+      "validator_pass": false,
+      "pass_fail_matches_official": true,
+      "failures": [
+        {
+          "rule_id": "PRESERVED_RULE_SOURCE_M0",
+          "category": "PRESERVATION_MODE_SEMANTICS",
+          "location": "preserved-rule evidence_refs",
+          "detail": "preserved-rule evidence_refs must reference M0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F02-M0-R0",
+          "detail": "source locator missing from family inputs for CE-F02-M0-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F02-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F02-E1-R0"
+        }
+      ]
+    },
+    {
+      "ref_id": "REF-04",
+      "family_id": "FAMILY02",
+      "policy_path": "/private/tmp/ignition-227-component-isolation-r0/FINAL-OWNER-PACKET/reference-m1/REF-04.json",
+      "policy_sha256": "043f91bc940f13f8a876ae83877d31f0428bcecbb6f32112ba4b9663d1eb4594",
+      "policy_sha256_after": "043f91bc940f13f8a876ae83877d31f0428bcecbb6f32112ba4b9663d1eb4594",
+      "input_unchanged": true,
+      "official_first_failure": "preserved-rule evidence_refs must reference M0",
+      "diagnostic_first_failure": "preserved-rule evidence_refs must reference M0",
+      "first_failure_matches_official": true,
+      "diagnostic_pass": false,
+      "validator_pass": false,
+      "pass_fail_matches_official": true,
+      "failures": [
+        {
+          "rule_id": "PRESERVED_RULE_SOURCE_M0",
+          "category": "PRESERVATION_MODE_SEMANTICS",
+          "location": "preserved-rule evidence_refs",
+          "detail": "preserved-rule evidence_refs must reference M0"
+        },
+        {
+          "rule_id": "PROVENANCE_TYPED_LINK",
+          "category": "PROVENANCE_TYPED_LINK_COVERAGE",
+          "location": "provenance[22]",
+          "detail": "unknown provenance link scope_claim:LIMIT-NO-GENERAL-COMPOSITION-MAPPING"
+        },
+        {
+          "rule_id": "PROVENANCE_TYPED_LINK",
+          "category": "PROVENANCE_TYPED_LINK_COVERAGE",
+          "location": "provenance[23]",
+          "detail": "unknown provenance link scope_exclusion:OUT-COMPLEMENT-INCLUDES-OBS07-OBS08-AND-ALL-UNMATCHED-PATTERNS"
+        },
+        {
+          "rule_id": "PROVENANCE_TYPED_COVERAGE",
+          "category": "PROVENANCE_TYPED_LINK_COVERAGE",
+          "location": "provenance",
+          "detail": "provenance omits typed links: [('scope_exclusion', 'LIMIT-NO-GENERAL-COMPOSITION-MAPPING')]"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F02-M0-R0",
+          "detail": "source locator missing from family inputs for CE-F02-M0-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F02-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F02-E1-R0"
+        }
+      ]
+    },
+    {
+      "ref_id": "REF-05",
+      "family_id": "FAMILY03",
+      "policy_path": "/private/tmp/ignition-227-component-isolation-r0/FINAL-OWNER-PACKET/reference-m1/REF-05.json",
+      "policy_sha256": "613eff7b1da721bf84c96a2b29f2ae5c5ad233dc79248b5a4dad2c9be850f630",
+      "policy_sha256_after": "613eff7b1da721bf84c96a2b29f2ae5c5ad233dc79248b5a4dad2c9be850f630",
+      "input_unchanged": true,
+      "official_first_failure": "preserved-rule evidence_refs must reference M0",
+      "diagnostic_first_failure": "preserved-rule evidence_refs must reference M0",
+      "first_failure_matches_official": true,
+      "diagnostic_pass": false,
+      "validator_pass": false,
+      "pass_fail_matches_official": true,
+      "failures": [
+        {
+          "rule_id": "PRESERVED_RULE_SOURCE_M0",
+          "category": "PRESERVATION_MODE_SEMANTICS",
+          "location": "preserved-rule evidence_refs",
+          "detail": "preserved-rule evidence_refs must reference M0"
+        },
+        {
+          "rule_id": "PRESERVED_RULE_SOURCE_M0",
+          "category": "PRESERVATION_MODE_SEMANTICS",
+          "location": "preserved-rule evidence_refs",
+          "detail": "preserved-rule evidence_refs must reference M0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F03-M0-R0",
+          "detail": "source locator missing from family inputs for CE-F03-M0-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F03-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F03-E1-R0"
+        }
+      ]
+    },
+    {
+      "ref_id": "REF-06",
+      "family_id": "FAMILY03",
+      "policy_path": "/private/tmp/ignition-227-component-isolation-r0/FINAL-OWNER-PACKET/reference-m1/REF-06.json",
+      "policy_sha256": "207841634dc2824cb3a4f4b8c72d58e3d05d82bd917241aa4eff262644fa0022",
+      "policy_sha256_after": "207841634dc2824cb3a4f4b8c72d58e3d05d82bd917241aa4eff262644fa0022",
+      "input_unchanged": true,
+      "official_first_failure": "unknown provenance link fallback:FALLBACK",
+      "diagnostic_first_failure": "unknown provenance link fallback:FALLBACK",
+      "first_failure_matches_official": true,
+      "diagnostic_pass": false,
+      "validator_pass": false,
+      "pass_fail_matches_official": true,
+      "failures": [
+        {
+          "rule_id": "PROVENANCE_TYPED_LINK",
+          "category": "PROVENANCE_TYPED_LINK_COVERAGE",
+          "location": "provenance[17]",
+          "detail": "unknown provenance link fallback:FALLBACK"
+        },
+        {
+          "rule_id": "PROVENANCE_TYPED_COVERAGE",
+          "category": "PROVENANCE_TYPED_LINK_COVERAGE",
+          "location": "provenance",
+          "detail": "provenance omits typed links: [('fallback', 'fallback')]"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F03-M0-R0",
+          "detail": "source locator missing from family inputs for CE-F03-M0-R0"
+        },
+        {
+          "rule_id": "FAMILY_LOCATOR_LITERAL",
+          "category": "FAMILY_SOURCE_LOCATOR_BINDING",
+          "location": "evidence_basis.CE-F03-E1-R0",
+          "detail": "source locator missing from family inputs for CE-F03-E1-R0"
+        }
+      ]
+    }
+  ]
+}

@@ -4,6 +4,66 @@
 
 [返回资产卡总索引](../ASSET-CARDS.md)
 
+<a id="asset-hr-3d53f7e0c9d1759e"></a>
+## Transfer byte-integrity and opaque bundle recipe
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3D53F7E0C9D1759E` · [reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/input-integrity-recipe.md](../../reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/input-integrity-recipe.md)
+- **为什么产生：** 此来源记录了什么：Transfer byte-integrity and opaque bundle recipe？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** After reference policy validity is locked, coordinator copies each frozen FAMILY01/02/03 case A/B/C byte-for-byte into every one of the six lineage × three condition bundles. Compute and retain SHA-256 for all 54 materialized case files; within each family, the three case hashes must be identical…
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/transfer/input-integrity-recipe.md`, `227-COGNITIVE-EVOLUTION-COMPONENT-ISOLATION-R0`
+- **演化历史：** 2026-09-28: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `OPERATIONS_EVIDENCE`
+- **可搜索名称：** `Transfer byte-integrity and opaque bundle recipe`, `input-integrity-recipe`
+
+<a id="asset-hr-3d6271e0ba81267e"></a>
+## 跨域 smoke test — 历史学碰撞报告
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3D6271E0BA81267E` · [outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md](../../outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md)
+- **为什么产生：** 此来源记录了什么：跨域 smoke test — 历史学碰撞报告？
+- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **当前结果：** inputs/collisions/20260708-cross-domain-smoke-test/history.md（修志数字化积分）
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** `D597`, `D173`
+- **来源与证据：** `outputs/collisions/20260708-cross-domain-smoke-test/history/collision-report.md`, `202`
+- **演化历史：** 2026-07-08: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `WRITING_PUBLICATION`
+- **可搜索名称：** `跨域 smoke test — 历史学碰撞报告`, `collision-report`
+
+<a id="asset-hr-3da265b74da19421"></a>
+## 函数资产作者指南
+
+- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-3DA265B74DA19421` · [docs/foundation/function-asset-authoring-guide.md](../../docs/foundation/function-asset-authoring-guide.md)
+- **为什么产生：** 此来源记录了什么：函数资产作者指南？
+- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
+- **当前结果：** 提交任何名为函数、模型、定理、公式、律或判定器的资产时：
+- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
+- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
+- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- **依赖：** 无已登记直接依赖
+- **被引用/反向依赖：** 无已登记反向依赖
+- **相关文章/资产：** 无已登记关联
+- **来源与证据：** `docs/foundation/function-asset-authoring-guide.md`, `REPOSITORY_HISTORY_SOURCE`
+- **演化历史：** 2026-07-29: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
+- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
+- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
+- **主题：** `MATHEMATICS`, `ARCHITECTURE_GOVERNANCE`
+- **可搜索名称：** `函数资产作者指南`, `function-asset-authoring-guide`
+
 <a id="asset-hr-3ded720d598ae407"></a>
 ## Current-State Drift Audit R1 — IGNITION-20260816-123 Step 00
 
@@ -943,63 +1003,3 @@
 - **下一步：** Inspect the full source and current registries before reusing any substantive claim.
 - **主题：** `OPERATIONS_EVIDENCE`
 - **可搜索名称：** `Task172 Step11 — three-input A/B replay`, `ignition-172-20260915-step11-ab-replay`
-
-<a id="asset-hr-4ad08e43386acc2f"></a>
-## Early-ignition historical replay — Task163
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4AD08E43386ACC2F` · [docs/governance/early-ignition-historical-replay-2026-09-07.md](../../docs/governance/early-ignition-historical-replay-2026-09-07.md)
-- **为什么产生：** 此来源记录了什么：Early-ignition historical replay — Task163？
-- **当前状态：** `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS`
-- **当前结果：** This is the Stage A historical qualification record for the research-only R1 operator.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `docs/governance/early-ignition-historical-replay-2026-09-07.md`, `REPOSITORY_HISTORY_SOURCE`
-- **演化历史：** 2026-09-07: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `ARCHITECTURE_GOVERNANCE`
-- **可搜索名称：** `Early-ignition historical replay — Task163`, `early-ignition-historical-replay-2026-09-07`
-
-<a id="asset-hr-4b0cb0982975e6bf"></a>
-## IGNITION-20260828-144 Step 16 — candidate natural full regression
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4B0CB0982975E6BF` · [reports/operations/ignition-144-step16-candidate-full-regression.md](../../reports/operations/ignition-144-step16-candidate-full-regression.md)
-- **为什么产生：** 此来源记录了什么：IGNITION-20260828-144 Step 16 — candidate natural full regression？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** The exact candidate projection preflight passed all 25 checks with a clean worktree before and after the check and no generated-output side effect.
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/operations/ignition-144-step16-candidate-full-regression.md`, `144-STEP16-CANDIDATE-FULL-REGRESSION`
-- **演化历史：** 2026-08-28: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `OPERATIONS_EVIDENCE`
-- **可搜索名称：** `IGNITION-20260828-144 Step 16 — candidate natural full regression`, `ignition-144-step16-candidate-full-regression`
-
-<a id="asset-hr-4b47f8918982152b"></a>
-## Step03 — Method History and Broken Controls
-
-- **身份/来源：** `RESULT_OR_ARTICLE` · `HR-4B47F8918982152B` · [reports/evaluations/ignition-198-replicated-method-use-trial-r0/step03-method-trace-freeze.md](../../reports/evaluations/ignition-198-replicated-method-use-trial-r0/step03-method-trace-freeze.md)
-- **为什么产生：** 此来源记录了什么：Step03 — Method History and Broken Controls？
-- **当前状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
-- **当前结果：** Task198 reuses the Task190 Method-Use Trace R0 schema and validator exactly:
-- **双成熟度：** 数学 `NOT_APPLICABLE_OR_SOURCE_DEFINED_ONLY`；外部证据 `NOT_INFERRED_FROM_DOCUMENT_PRESENCE`
-- **假设与表述上限：** Human navigation and source-faithful summary only; no truth, maturity, proof, evidence or lifecycle upgrade.
-- **未建立：** This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- **依赖：** 无已登记直接依赖
-- **被引用/反向依赖：** 无已登记反向依赖
-- **相关文章/资产：** 无已登记关联
-- **来源与证据：** `reports/evaluations/ignition-198-replicated-method-use-trial-r0/step03-method-trace-freeze.md`, `198-REPLICATED-METHOD-USE-TRIAL-R0`
-- **演化历史：** 2026-09-21: source first appears in repository history；Recovered into the task 101 human-readable ledger without altering the source.
-- **最近变化：** Recovered into the task 101 human-readable ledger without altering the source.
-- **下一步：** Inspect the full source and current registries before reusing any substantive claim.
-- **主题：** `WRITING_PUBLICATION`
-- **可搜索名称：** `Step03 — Method History and Broken Controls`, `step03-method-trace-freeze`

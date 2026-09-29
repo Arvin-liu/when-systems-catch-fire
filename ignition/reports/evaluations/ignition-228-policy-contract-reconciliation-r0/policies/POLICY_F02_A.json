@@ -1,0 +1,447 @@
+{
+  "contract_version": "task228-policy-contract-r1",
+  "policy_id": "POLICY_F02_A",
+  "family": "FAMILY02",
+  "mapping_id": "MAP_F02_A",
+  "evidence_basis": [
+    {
+      "evidence_id": "F02_M0_ACTIONS",
+      "source_type": "M0",
+      "source_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md",
+      "source_sha256": "bc64a52ae85320c22221021aa57f3dee526d4355a5c37f45477f1e329737dc69",
+      "locator": {
+        "start_line": 14,
+        "end_line": 17,
+        "excerpt_sha256": "09defacb65bb3c8c216a7667f4b5b310c749b1c2dca6a36c96f4ecca546e4f18"
+      },
+      "display_excerpt": "- REPORT_ESTIMATE: report concentration estimate with source method and range.\n- REPEAT_SAMPLE: remix, take two additional readings, and recompute the median.\n- FLAG_OUT_OF_RANGE: do not extrapolate above 500 NTU or below the blank-corrected measurement limit.\n- INVALID_MEASUREMENT: stop if blank drift, cell contamination, or replicate spread exceeds the method limits.\n",
+      "supports": "Names the frozen M0 estimate, repeat, out-of-range, and invalid-measurement actions kept available.",
+      "claim_type": "method_rule"
+    },
+    {
+      "evidence_id": "F02_M0_PROCEDURE",
+      "source_type": "M0",
+      "source_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/m0.md",
+      "source_sha256": "bc64a52ae85320c22221021aa57f3dee526d4355a5c37f45477f1e329737dc69",
+      "locator": {
+        "start_line": 21,
+        "end_line": 24,
+        "excerpt_sha256": "2a06e39742b546ca4bf469e97d8cb2bd3b105afeeffa8cd9ad2ecfd1ba92e9c8"
+      },
+      "display_excerpt": "1. Confirm blank correction is between −2 and +2 NTU, inspect the cell for bubbles/contamination, and take two readings after the prescribed mixing time.\n2. If duplicate difference exceeds 8 NTU, remix and take two further readings. If the new pair still differs by more than 8 NTU, emit INVALID_MEASUREMENT.\n3. For a valid blank-corrected median T in 0–500 NTU, calculate estimated TSS (mg/L) = 1.35 × T + 12.\n4. If T is outside the validated range, emit FLAG_OUT_OF_RANGE. Otherwise emit REPORT_ESTIMATE with the calculated estimate and the calibration uncertainty band of ±12 mg/L for the original calibration matrix.\n",
+      "supports": "Records the frozen blank, duplicate, range, and estimate procedure without changing the M0 formula.",
+      "claim_type": "method_rule"
+    },
+    {
+      "evidence_id": "F02_E1_ORGANIC",
+      "source_type": "E1",
+      "source_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md",
+      "source_sha256": "f7adf3efbc59f07b5df3ef80552d96981c0112a71cdc324fe71d8e17988072ea",
+      "locator": {
+        "start_line": 17,
+        "end_line": 19,
+        "excerpt_sha256": "06ce9847a8af44b3f223ab176e2282a148a75aa226a0a3025facbcbc44e993fd"
+      },
+      "display_excerpt": "| OBS-04 | mineral grains 21%, organic flocs 46% | 100 | 91 | 147 | 99 / 101 NTU |\n| OBS-05 | mineral grains 18%, organic flocs 49% | 200 | 171 | 282 | 199 / 201 NTU |\n| OBS-06 | mineral grains 24%, organic flocs 42% | 300 | 251 | 417 | 298 / 302 NTU |\n",
+      "supports": "Three stable organic-floc observations have gravimetric results below the mineral-dominant M0 estimates.",
+      "claim_type": "observed"
+    },
+    {
+      "evidence_id": "F02_E1_LIMITS",
+      "source_type": "E1",
+      "source_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md",
+      "source_sha256": "f7adf3efbc59f07b5df3ef80552d96981c0112a71cdc324fe71d8e17988072ea",
+      "locator": {
+        "start_line": 27,
+        "end_line": 29,
+        "excerpt_sha256": "7786695157fa4aa7fdb38acc433b5b5ded76180773e6c41f1f9e5f6b4036b6d7"
+      },
+      "display_excerpt": "The named composition measurements co-vary with distinct turbidity-to-mass outcomes in this packet, while the instrument and gravimetric controls remain acceptable. The records are sufficient to show that applying one M0 estimate to all sampled compositions can exceed its original uncertainty band. The intermediate and aliquot-variable samples do not establish a universal composition cutoff or resolve how every mixture should be treated.\n\nA tempting response would be to average all observed groups into a new single line, or to discard turbidity as a measurement for every sediment. Neither follows from these records: the mineral-dominant rows continue to match the M0 calibration, while composition-uncertain rows have no reproducible basis for a point mapping here.\n",
+      "supports": "The packet rejects a universal composition cutoff, new single formula, or discarding turbidity for all sediments.",
+      "claim_type": "method_rule"
+    },
+    {
+      "evidence_id": "F02_E1_QC",
+      "source_type": "E1",
+      "source_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY02/revision-evidence-e1.md",
+      "source_sha256": "f7adf3efbc59f07b5df3ef80552d96981c0112a71cdc324fe71d8e17988072ea",
+      "locator": {
+        "start_line": 8,
+        "end_line": 8,
+        "excerpt_sha256": "0fe19672b65b067b41aab86b73b0c85d0d81f4249b6ffe56c2746015f0302a1f"
+      },
+      "display_excerpt": "The fresh set was collected with the same nephelometer lot and cell protocol as M0. Each turbidity value is paired with an independent constant-weight gravimetric solids measurement. Particle composition was measured before gravimetry by an independent particle-size and organic-floc assay. Source sets are F02-E1-TURBIDITY-LOG, F02-E1-GRAVIMETRY-LOG, F02-E1-COMPOSITION-LOG, and F02-E1-QC-LOG. Blank drift remained within ±1.2 NTU; all named samples passed cell and duplicate checks.\n",
+      "supports": "Records instrument, gravimetric, composition-assay, and blank/cell checks for the E1 observations.",
+      "claim_type": "observed"
+    }
+  ],
+  "selector": {
+    "required_inputs": [
+      {
+        "input_id": "F02A_MEASUREMENT_VALID",
+        "description": "Whether blank, cell, duplicate, and instrument checks required by M0 are valid.",
+        "value_type": "boolean",
+        "unit": null,
+        "source_refs": [
+          "F02_M0_PROCEDURE",
+          "F02_E1_QC"
+        ]
+      },
+      {
+        "input_id": "F02A_COMPOSITION_PATTERN",
+        "description": "Researcher-coded composition observation category, including the observed organic-floc cases.",
+        "value_type": "string",
+        "unit": null,
+        "source_refs": [
+          "F02_E1_ORGANIC",
+          "F02_E1_LIMITS"
+        ]
+      }
+    ],
+    "rule": [
+      {
+        "rule_id": "F02A_OBSERVED_ORGANIC_FLOC_PATTERN",
+        "when": [
+          {
+            "input_id": "F02A_MEASUREMENT_VALID",
+            "operator": "eq",
+            "value": true,
+            "unit": null
+          },
+          {
+            "input_id": "F02A_COMPOSITION_PATTERN",
+            "operator": "eq",
+            "value": "observed_organic_floc_cases",
+            "unit": null
+          }
+        ],
+        "action_ref": "F02A_GRAVIMETRIC_REVIEW",
+        "evidence_refs": [
+          "F02_E1_ORGANIC",
+          "F02_E1_LIMITS"
+        ]
+      }
+    ]
+  },
+  "applicability": {
+    "licensed_region": [
+      {
+        "region_id": "POLICY_F02_A_LICENSED_PATTERN",
+        "conditions": [
+          {
+            "input_id": "F02A_MEASUREMENT_VALID",
+            "operator": "eq",
+            "value": true,
+            "unit": null
+          },
+          {
+            "input_id": "F02A_COMPOSITION_PATTERN",
+            "operator": "eq",
+            "value": "observed_organic_floc_cases",
+            "unit": null
+          }
+        ],
+        "rule_refs": [
+          "F02A_OBSERVED_ORGANIC_FLOC_PATTERN"
+        ],
+        "evidence_refs": [
+          "F02_E1_ORGANIC",
+          "F02_E1_LIMITS"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "region_id": "POLICY_F02_A_OUTSIDE_COMPLEMENT",
+        "conditions": [],
+        "fallback_ref": "fallback",
+        "evidence_refs": [
+          "F02_E1_LIMITS"
+        ]
+      }
+    ]
+  },
+  "action_table": [
+    {
+      "action_id": "F02A_GRAVIMETRIC_REVIEW",
+      "when": [
+        {
+          "input_id": "F02A_MEASUREMENT_VALID",
+          "operator": "eq",
+          "value": true,
+          "unit": null
+        },
+        {
+          "input_id": "F02A_COMPOSITION_PATTERN",
+          "operator": "eq",
+          "value": "observed_organic_floc_cases",
+          "unit": null
+        }
+      ],
+      "action": {
+        "category": "ROUTE_FOR_REVIEW",
+        "name": "ROUTE_OBSERVED_COMPOSITION_PATTERN_FOR_INDEPENDENT_GRAVIMETRIC_REVIEW",
+        "parameters": [
+          {
+            "name": "composition_pattern",
+            "binding": "input_ref",
+            "input_id": "F02A_COMPOSITION_PATTERN",
+            "value_type": "string",
+            "unit": null,
+            "evidence_refs": [
+              "F02_E1_ORGANIC",
+              "F02_E1_LIMITS"
+            ]
+          }
+        ]
+      },
+      "required_report_fields": [
+        {
+          "field_id": "F02A_COMPOSITION_AND_MASS",
+          "description": "Record composition assay, turbidity duplicates, M0 estimate, and independent gravimetric result.",
+          "unit": "mg/L",
+          "evidence_refs": [
+            "F02_E1_ORGANIC",
+            "F02_E1_QC"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "F02_E1_ORGANIC",
+        "F02_E1_LIMITS",
+        "F02_E1_QC"
+      ]
+    }
+  ],
+  "preserved_rules": [
+    {
+      "preservation_id": "POLICY_F02_A_PRESERVE_1",
+      "when": [],
+      "baseline_action": "REPORT_ESTIMATE",
+      "preservation_mode": "unconditional",
+      "m0_action_retired": false,
+      "evidence_refs": [
+        "F02_M0_ACTIONS"
+      ]
+    },
+    {
+      "preservation_id": "POLICY_F02_A_PRESERVE_2",
+      "when": [],
+      "baseline_action": "REPEAT_SAMPLE",
+      "preservation_mode": "unconditional",
+      "m0_action_retired": false,
+      "evidence_refs": [
+        "F02_M0_ACTIONS"
+      ]
+    },
+    {
+      "preservation_id": "POLICY_F02_A_PRESERVE_3",
+      "when": [],
+      "baseline_action": "FLAG_OUT_OF_RANGE",
+      "preservation_mode": "unconditional",
+      "m0_action_retired": false,
+      "evidence_refs": [
+        "F02_M0_ACTIONS"
+      ]
+    },
+    {
+      "preservation_id": "POLICY_F02_A_PRESERVE_4",
+      "when": [],
+      "baseline_action": "INVALID_MEASUREMENT",
+      "preservation_mode": "unconditional",
+      "m0_action_retired": false,
+      "evidence_refs": [
+        "F02_M0_ACTIONS"
+      ]
+    }
+  ],
+  "fallback": {
+    "when": [],
+    "action": {
+      "outcome": "RECONCILE",
+      "instruction": "Record the supplied values and reason for missing, excluded, zero-match, or multiple-match routing; preserve the M0 pathway and request independent review when needed.",
+      "required_report_fields": [
+        "supplied_inputs",
+        "fallback_reason",
+        "M0_pathway_status"
+      ]
+    },
+    "evidence_refs": [
+      "F02_M0_PROCEDURE",
+      "F02_E1_LIMITS"
+    ]
+  },
+  "stop_conditions": [
+    {
+      "stop_id": "POLICY_F02_A_INVALID_MEASUREMENT_STOP",
+      "when": [
+        {
+          "input_id": "F02A_MEASUREMENT_VALID",
+          "operator": "eq",
+          "value": false,
+          "unit": null
+        }
+      ],
+      "outcome": "REACQUIRE",
+      "instruction": "Stop this candidate route; restore or reacquire required M0 setup and measurement-quality inputs before classifying.",
+      "evidence_refs": [
+        "F02_M0_PROCEDURE"
+      ]
+    }
+  ],
+  "scope_ceiling": {
+    "licensed_claims": [
+      {
+        "claim_id": "POLICY_F02_A_BOUNDED_CLAIM",
+        "statement": "Routes only the researcher-coded organic-floc observation category represented by the named E1 cases for independent gravimetric review; it adds no composition cutoff or formula.",
+        "region_refs": [
+          "POLICY_F02_A_LICENSED_PATTERN"
+        ],
+        "evidence_refs": [
+          "F02_E1_ORGANIC",
+          "F02_E1_LIMITS"
+        ]
+      }
+    ],
+    "not_established": [
+      {
+        "claim_id": "POLICY_F02_A_LIMITS",
+        "statement": "No universal composition boundary, new single calibration, global M0 replacement, transfer, revision-generation, causal, inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit claim is established.",
+        "region_refs": [
+          "POLICY_F02_A_LICENSED_PATTERN",
+          "POLICY_F02_A_OUTSIDE_COMPLEMENT"
+        ],
+        "evidence_refs": [
+          "F02_E1_LIMITS"
+        ]
+      }
+    ],
+    "statement": "This is a bounded reference-instrument candidate from one family’s M0 and E1 only. It is not a transfer, revision-generation, causal-effect, general-inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit result."
+  },
+  "provenance": {
+    "declaration_sha256": "b22382fdf9c21bd4c7fbdb4df0fbedc92b1f6ba86b81a3aa7b5a10f495a461cb",
+    "compiler": "task228-reference-instrument-compiler-r1",
+    "links": [
+      {
+        "element_type": "required_input",
+        "element_id": "F02A_MEASUREMENT_VALID",
+        "evidence_refs": [
+          "F02_M0_PROCEDURE",
+          "F02_E1_QC"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_M0_PROCEDURE, F02_E1_QC"
+      },
+      {
+        "element_type": "required_input",
+        "element_id": "F02A_COMPOSITION_PATTERN",
+        "evidence_refs": [
+          "F02_E1_ORGANIC",
+          "F02_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_E1_ORGANIC, F02_E1_LIMITS"
+      },
+      {
+        "element_type": "selector_rule",
+        "element_id": "F02A_OBSERVED_ORGANIC_FLOC_PATTERN",
+        "evidence_refs": [
+          "F02_E1_ORGANIC",
+          "F02_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_E1_ORGANIC, F02_E1_LIMITS"
+      },
+      {
+        "element_type": "action",
+        "element_id": "F02A_GRAVIMETRIC_REVIEW",
+        "evidence_refs": [
+          "F02_E1_ORGANIC",
+          "F02_E1_LIMITS",
+          "F02_E1_QC"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_E1_ORGANIC, F02_E1_LIMITS, F02_E1_QC"
+      },
+      {
+        "element_type": "licensed_region",
+        "element_id": "POLICY_F02_A_LICENSED_PATTERN",
+        "evidence_refs": [
+          "F02_E1_ORGANIC",
+          "F02_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_E1_ORGANIC, F02_E1_LIMITS"
+      },
+      {
+        "element_type": "out_of_scope",
+        "element_id": "POLICY_F02_A_OUTSIDE_COMPLEMENT",
+        "evidence_refs": [
+          "F02_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_E1_LIMITS"
+      },
+      {
+        "element_type": "preserved_rule",
+        "element_id": "POLICY_F02_A_PRESERVE_1",
+        "evidence_refs": [
+          "F02_M0_ACTIONS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_M0_ACTIONS"
+      },
+      {
+        "element_type": "preserved_rule",
+        "element_id": "POLICY_F02_A_PRESERVE_2",
+        "evidence_refs": [
+          "F02_M0_ACTIONS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_M0_ACTIONS"
+      },
+      {
+        "element_type": "preserved_rule",
+        "element_id": "POLICY_F02_A_PRESERVE_3",
+        "evidence_refs": [
+          "F02_M0_ACTIONS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_M0_ACTIONS"
+      },
+      {
+        "element_type": "preserved_rule",
+        "element_id": "POLICY_F02_A_PRESERVE_4",
+        "evidence_refs": [
+          "F02_M0_ACTIONS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_M0_ACTIONS"
+      },
+      {
+        "element_type": "fallback",
+        "element_id": "fallback",
+        "evidence_refs": [
+          "F02_M0_PROCEDURE",
+          "F02_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_M0_PROCEDURE, F02_E1_LIMITS"
+      },
+      {
+        "element_type": "stop_condition",
+        "element_id": "POLICY_F02_A_INVALID_MEASUREMENT_STOP",
+        "evidence_refs": [
+          "F02_M0_PROCEDURE"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_M0_PROCEDURE"
+      },
+      {
+        "element_type": "licensed_claim",
+        "element_id": "POLICY_F02_A_BOUNDED_CLAIM",
+        "evidence_refs": [
+          "F02_E1_ORGANIC",
+          "F02_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_E1_ORGANIC, F02_E1_LIMITS"
+      },
+      {
+        "element_type": "not_established_claim",
+        "element_id": "POLICY_F02_A_LIMITS",
+        "evidence_refs": [
+          "F02_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F02_A declaration; evidence refs: F02_E1_LIMITS"
+      }
+    ]
+  }
+}

@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [材料来源不清、事实错误、引用缺失。](../../../data/failure_typology.csv)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d6bfec92da7f2323 / 材料来源不清、事实错误、引用缺失。
+  - 来源：`data/failure_typology.csv`
+  - 依赖：—；被引用：—
+- [材料碰撞只产生：D 条目（NEW_FUNCTION/EXTENSION）、C 条目、候选登记（PENDING_EVIDENCE）、审计/决策产物（outputs/collisions、data/collisions）。](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-d6773b92252ce344 / 材料碰撞只产生：D 条目（NEW_FUNCTION/EXTENSION）、C 条目、候选登记（PENDING_EVIDENCE）、审计/决策产物（outputs/collisions、data/collisions）。
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [材料碰撞验证与分类规则（含「无配额」硬规则）](../../../docs/material-collision-validation-and-classification.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-998b11393c15275c / 材料碰撞验证与分类规则（含「无配额」硬规则）
+  - 来源：`docs/material-collision-validation-and-classification.md`
+  - 依赖：—；被引用：—
+- [材料错误指输入本身有误，包括案例、史料、数据、转述或对象定义不准确。](../../../outputs/getbrain/failure-typology-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-accbd8ec1a61ef7b / 材料错误指输入本身有误，包括案例、史料、数据、转述或对象定义不准确。
+  - 来源：`outputs/getbrain/failure-typology-draft-20260706.md`
+  - 依赖：—；被引用：—
 - [材料错误（实验数据错误）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-8401d8220403ae41 / 材料错误（实验数据错误）
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-bb6971743a3e911c / 道阶、受箓与官员忠诚的关系要写成可能的制度通道，不写成每个人的心理事实。
   - 来源：`reports/publication/song-huizong-taoism-point-fire-analysis.md`
-  - 依赖：—；被引用：—
-- [遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-6c31d402039e4418 / 遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [遮蔽-补偿-成本三角约束案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-9d95836376a525f2 / 遮蔽-补偿-成本三角约束案例验证。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
-- [遮蔽=退相干环境 — 组织信息透明度实验-H=0.1时τ_decoherence=50年,H=0.5时τ=10年,H=0.9时τ=1年。遮蔽](../../../data/foundation/evidence/evidence.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
-  - 可搜索名称：NFC-85cf9801664d358b / 遮蔽=退相干环境 — 组织信息透明度实验-H=0.1时τ_decoherence=50年,H=0.5时τ=10年,H=0.9时τ=1年。遮蔽
-  - 来源：`data/foundation/evidence/evidence.jsonl`
-  - 依赖：—；被引用：—
-- [部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未](../../../reports/external-research/104-dual-088-reconciliation.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-98aa7f7d1e80b626 / 部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未
-  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
   - 依赖：—；被引用：—

@@ -4,6 +4,13 @@
 
 [返回分层阅读总索引](../READING-LAYERS.md)
 
+<a id="reading-hr-1075a79086af4a5d"></a>
+## CASE01 — Checkpoint export selection
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Packet reference: PK-36E400FB560F 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：Packet reference: PK-36E400FB560F；Six synthetic case records follow.；Source SHA-256: 5571dbf60194725aa4342bdf1abf9738713a904474e7bb48db128f049c301e4d；主题：CASE01 — Checkpoint export selection；All names, records, dates, and tools are synthetic.；[F01] A packet contains signed document version 3 associated with checkpoint C-17 and a later version 4 correction marked unsigned. [F02] Route Alder's preview lists a signed-document field, signature timestamp, and approval-event reference; it does not list a per-file digest. [F03] Route Birch's preview lists a version sequence and per-file digest; its opti…
+- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md)
+
 <a id="reading-hr-1125ea8d76940b5f"></a>
 ## 下一步认识论能力评估 — IGNITION-20260908-165
 `CURRENT_REPOSITORY_DOCUMENT_WITH_SEPARATE_CLAIM_STATUS` · `MATHEMATICS`, `COGNITION`, `ARCHITECTURE_GOVERNANCE`
@@ -87,6 +94,13 @@
 - 1 分钟：Representation note: structured synthetic records; relation rows connect source-linked records. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：Supplemental record CASE01；Representation note: structured synthetic records; relation rows connect source-linked records.；[A01] Candidate record: Route Alder returns a signed-document field, signature-timestamp field, and approval-event reference, but no per-file digest. [A02] Candidate record: Route Birch returns a version sequence and per-file digest; its optional approval-event field has unverified output behavior. [A03] Audit objective record: reconstruct content membership…；主题：Recorded relations；[R02] A04 --PRECONDITIONFOR--> A03 :: Version, checkpoint, and signature identifiers must be intact before interpreting a checkpoint export. [R03] A05 --OBSERVATIONFOR--> A02 :: The delivered package can be compared with the source records after a proposed export. [R04] A06 --LIMITSINTERPRETATIONOF--> A05 :: A field not verified in a preview must be checked…
 - 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE01.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/LINKLESS_METHOD_CONTROL/CASE01.md)
+
+<a id="reading-hr-1794c69a5bf13cd8"></a>
+## Task228 normative policy contract R1
+`CANDIDATE_OR_PENDING_SOURCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Status: RECONCILEDCANDIDATE Scope: Task228 reference-instrument construction and later independent semantic audit only. Dialect: task228-policy-contract-r1. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task228 normative policy contract R1；Status: RECONCILEDCANDIDATE Scope: Task228 reference-instrument construction and later independent semantic audit only. Dialect: task228-policy-contract-r1.；主题：Precedence and frozen decisions；For Task228, the frozen Task227 protocol intent and this Owner/GPT adjudication govern over historical schema or implementation details. Task227 remains a read-only historical record. This contract does not alter its schema, validator, policies, reviews, scores, lock, aggregates, or dispositions.；The three Owner/GPT decisions are normative:；Preserved baseline evidence is M0-only. E1 cannot establish the identity or content of a preserved M0 action.
+- 完整阅读：[reports/evaluations/ignition-228-policy-contract-reconciliation-r0/normative-policy-contract.md](../../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/normative-policy-contract.md)
 
 <a id="reading-hr-191c775bce185353"></a>
 ## T16 counterexample-equivalence audit
@@ -298,6 +312,13 @@
 - 5 分钟：主题：12 元协议投影（12-meta-protocol-projection）；对 3 个拟回填函数 + 2 个边界扩展 + 1 个覆盖，做 V1–V4、S1/S2、S3/S4、E1–E4 投影。；M3（托举退化）：家庭延续以牺牲子女主体性为代价时，支持变成控制。危险点：「维持关系」变成阻止退出（命中点火 V1 自问项）。正向：健康兜底不绑路径。；M4（角色覆盖）：母职/妻职延续牺牲主体独立叙事。正向：角色可延续但不覆盖自我。；M1（听话）：关系延续依赖服从，管理成本外部化到被控方。；M1：「听话」通过降低管理成本获局部效率，主体性损失被外部化（父母/组织省去协商成本）。
 - 完整阅读：[outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md](../../outputs/collisions/20260711-disobedience-subjectivity/12-meta-protocol-projection.md)
 
+<a id="reading-hr-252aa2ba43ffa5a5"></a>
+## Task228 contract-gap report
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `OPERATIONS_EVIDENCE`
+- 1 分钟：At the end of Phase 03, before Owner/GPT adjudication, the temporary terminal status was TASK228OWNERADJUDICATIONREQUIRED. The A1 instruction later resolved all three questions and authorized continuation from Phase 04. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task228 contract-gap report；主题：Former pre-A1 terminal state (historical)；At the end of Phase 03, before Owner/GPT adjudication, the temporary terminal status was TASK228OWNERADJUDICATIONREQUIRED. The A1 instruction later resolved all three questions and authorized continuation from Phase 04.；At that earlier checkpoint, Phase 01 evidence binding and Phase 02 exhaustive validator forensics were complete and Phase 03 had a 20-row source matrix. The former stop preserved against guessing at scientifically material contract rules; it is superseded by the recorded A1 decisions below.；主题：Frozen result discrepancy；The exact Task227 Owner Packet is checksum-valid: all 100 manifest entries pass. Both raw reviewer sheets and the locked aggregate support 3/6 usable (REF-01, REF-04, REF-05); the official frozen validator audit supports 0/6 pass. Those are distinct endpoints and remain unchanged.
+- 完整阅读：[reports/evaluations/ignition-228-policy-contract-reconciliation-r0/contract-gap-report.md](../../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/contract-gap-report.md)
+
 <a id="reading-hr-252ed61cfaf40f35"></a>
 ## Agent 碰撞阶段收口审计（2026-07-08 23:55）
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `COGNITION`, `OPERATIONS_EVIDENCE`
@@ -332,24 +353,3 @@
 - 1 分钟：符合任务「只有 README / 两张表入口文件 / INDEX·总览文件 / 审计文件 发生变化」的约束。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：两张表版本同步维护审计（2026-07-09 00:30）；任务类型：版本同步维护（只修不一致，不新增函数/案例，不碰撞）；执行前：git pull --ff-only → Already up to date（HEAD = a9343f16）；目录真实计数（排除 INDEX.md 后）：；函数表目录 619 文件 − 1 INDEX = 618（其中 1 个 0001-Ψ₀元统一律完整定义.md 为旧版兼容重定向文件，legacy，不计入函数总数）；案例表目录 805 文件 − 1 INDEX = 804
 - 完整阅读：[outputs/audit/two-tables-version-sync-audit-20260708.md](../../outputs/audit/two-tables-version-sync-audit-20260708.md)
-
-<a id="reading-hr-266563bdd4271980"></a>
-## Supplemental record CASE06
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Source type: neutral synthetic case-log index. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：Supplemental record CASE06；Source type: neutral synthetic case-log index.；Scope: identifies current roster entries and status fields. It does not assign an entry category to a station or compare procedure performance.
-- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE06.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/benchmark/conditions/FACTS_ONLY/CASE06.md)
-
-<a id="reading-hr-26d1f225ef8a1e1e"></a>
-## IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `ARCHITECTURE_GOVERNANCE`, `WRITING_PUBLICATION`, `OPERATIONS_EVIDENCE`
-- 1 分钟：Step 02 passes with a deliberately small machine boundary in data/governance/owner-editorial-authority-r1.json and its validator. The contract keeps DRAFTGENERATED, OWNERSELECTED and PUBLICATIONACCEPTED as separate fields/states. Only OWNEREXPLICITPRODUCTIONBRIEF or OWNEREXPLICITSELECTION can sup… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260828-144 Step 02 — Owner Editorial Authority Contract R1；Step 02 passes with a deliberately small machine boundary in data/governance/owner-editorial-authority-r1.json and its validator. The contract keeps DRAFTGENERATED, OWNERSELECTED and PUBLICATIONACCEPTED as separate fields/states. Only OWNEREXPLICITPRODUCTIONBRIEF or OWNEREXPLICITSELECTION can supply the authority required to move beyond the candidate state o…；Five negative fixtures fail closed for model-ranked topic selection, auto-cluster book initiation, draft-to-accepted promotion, registry-item acceptance and fire-seed-score project activation. The validator also checks all six Task143 smoke outputs against the non-selected/non-accepted defaults. No runtime adapter, Agent shell, provider SDK or parallel edito…
-- 完整阅读：[reports/operations/ignition-144-step02-owner-editorial-authority.md](../../reports/operations/ignition-144-step02-owner-editorial-authority.md)
-
-<a id="reading-hr-26db9e2e52f3d7c9"></a>
-## IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：The first real Codex R3 child used new identities dispatch-138-live-01 / attempt-138-live-01, the fresh lease lease-ignition-138-live-01-repaired, the Task138 fixture, an external strict schema, a mode-0555 task workspace and an attempt-specific runtime scratch. The default persistent-document ro… 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：主题：IGNITION-20260824-138 — Step 08 First Real Codex Bounded Dispatch；The first real Codex R3 child used new identities dispatch-138-live-01 / attempt-138-live-01, the fresh lease lease-ignition-138-live-01-repaired, the Task138 fixture, an external strict schema, a mode-0555 task workspace and an attempt-specific runtime scratch. The default persistent-document root was rejected before child launch because it contains histori…；The repaired first real child process exited in 61.166 ms with return code 1. It produced zero stdout bytes and no structured JSONL result; stderr was bounded to 521 bytes with digest 79bf39ba628c787ae5baf83ed84bff92b2a4f36583dd820f3b64c1698e0120f3. The process group was CONFIRMEDGONE, no session pointer was observed, no timeout or output truncation occurred…；A separate non-inference public login status probe under the exact isolated runtime environment reproduced the public configuration error: the declared CODEXHOME directory did not exist, so configuration loading failed before any model result. This is classified as the concrete CODEXRUNTIMEPATHPREINFERENCESTARTUPFAILURE with known no effect for the second-at…；The Step09 gate predicates are all satisfied: process group gone, no session, no structured result, no timeout/effect uncertainty, unchanged workspace, cleaned scratch, no observed external side effect, and a narrow repair that only prepares declared runtime directories inside scratch. No blind retry is authorized; the second invocation remains conditional o…；Claim ceiling: one bounded Codex startup failure and its machine-observed known-no-effect pre-inference classification only; no validated live completion, production readiness, external truth, Owner acceptance or epistemic acceptance is inferred.
-- 完整阅读：[reports/operations/ignition-138-step08-first-codex-dispatch.md](../../reports/operations/ignition-138-step08-first-codex-dispatch.md)

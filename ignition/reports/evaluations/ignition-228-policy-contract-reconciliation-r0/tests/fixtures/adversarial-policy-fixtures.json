@@ -1,0 +1,14 @@
+[
+  {"fixture_id": "wrong-frozen-source-hash", "policy_id": "POLICY_F01_A", "mutation": "wrong_source_hash", "expected_rule_id": "FAMILY_SOURCE_BINDING"},
+  {"fixture_id": "wrong-locator-excerpt-hash", "policy_id": "POLICY_F02_A", "mutation": "wrong_excerpt_hash", "expected_rule_id": "FAMILY_SOURCE_BINDING"},
+  {"fixture_id": "condition-unit-drift", "policy_id": "POLICY_F01_B", "mutation": "condition_unit_drift", "expected_rule_id": "TYPED_CONDITIONS"},
+  {"fixture_id": "action-condition-drift", "policy_id": "POLICY_F03_A", "mutation": "action_condition_drift", "expected_rule_id": "SELECTOR_ACTION_BIJECTION"},
+  {"fixture_id": "licensed-region-condition-drift", "policy_id": "POLICY_F02_A", "mutation": "region_condition_drift", "expected_rule_id": "LICENSED_REGION_BIJECTION"},
+  {"fixture_id": "preserved-rule-e1-reference", "policy_id": "POLICY_F01_A", "mutation": "preserved_e1_reference", "expected_rule_id": "PRESERVED_EVIDENCE_M0_ONLY"},
+  {"fixture_id": "input-reference-unit-mismatch", "policy_id": "POLICY_F02_B", "mutation": "parameter_unit_mismatch", "expected_rule_id": "TYPED_PARAMETER_BINDING"},
+  {"fixture_id": "licensed-claim-outside-region", "policy_id": "POLICY_F03_B", "mutation": "claim_outside_region", "expected_rule_id": "SCOPE_REGION_LICENSING"},
+  {"fixture_id": "provenance-omits-input", "policy_id": "POLICY_F03_A", "mutation": "remove_provenance_link", "expected_rule_id": "PROVENANCE_COVERAGE"},
+  {"fixture_id": "nested-report-evidence-escapes-parent-action", "policy_id": "POLICY_F02_A", "mutation": "nested_report_evidence_escape", "expected_rule_id": "PROVENANCE_COVERAGE"},
+  {"fixture_id": "two-empty-outside-complements", "policy_id": "POLICY_F01_B", "mutation": "second_empty_complement", "expected_rule_id": "OUT_OF_SCOPE_COMPLEMENT"},
+  {"fixture_id": "fallback-not-universal", "policy_id": "POLICY_F03_A", "mutation": "fallback_condition", "expected_rule_id": "SCHEMA_VALIDITY"}
+]

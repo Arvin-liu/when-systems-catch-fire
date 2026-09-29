@@ -1,0 +1,504 @@
+{
+  "contract_version": "task228-policy-contract-r1",
+  "policy_id": "POLICY_F03_A",
+  "family": "FAMILY03",
+  "mapping_id": "MAP_F03_A",
+  "evidence_basis": [
+    {
+      "evidence_id": "F03_M0_ACTIONS",
+      "source_type": "M0",
+      "source_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md",
+      "source_sha256": "691b63e6ff4324acc23a09a35114df3fbb75668d39de3d8283386f30b110331a",
+      "locator": {
+        "start_line": 14,
+        "end_line": 17,
+        "excerpt_sha256": "fcbb70c67e63a6f56a7f75a1e6e6d94ce3ebf9927198dc8195b03a2f6e47cb1e"
+      },
+      "display_excerpt": "- SCREEN_PASS: record the screened lot as within M0's temperature criterion.\n- STABILITY_REVIEW: quarantine the screening decision for an independent stability review.\n- RECONCILE_LOGGER: recover logger clock, missing intervals, or custody mismatch before classification.\n- UNSCORABLE: do not classify if required temperature, product identity, or logger provenance is unavailable.\n",
+      "supports": "Names the frozen M0 screening, review, logger-reconciliation, and unscorable actions kept available.",
+      "claim_type": "method_rule"
+    },
+    {
+      "evidence_id": "F03_M0_PROCEDURE",
+      "source_type": "M0",
+      "source_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/m0.md",
+      "source_sha256": "691b63e6ff4324acc23a09a35114df3fbb75668d39de3d8283386f30b110331a",
+      "locator": {
+        "start_line": 21,
+        "end_line": 24,
+        "excerpt_sha256": "92c79d0332999f6080c51782f31263f6f27446e064db7dea6442724da864d205"
+      },
+      "display_excerpt": "1. Confirm logger calibration, clock alignment, shipment identity, 15-minute sampling interval, and completeness across the defined shipment window.\n2. Compute the arithmetic mean of the valid 15-minute readings for each eight-hour segment and the shipment-wide mean.\n3. If any eight-hour segment mean or the shipment-wide mean is above 8.0 °C, select STABILITY_REVIEW. If required samples are missing or custody/clock checks fail, select RECONCILE_LOGGER; unresolved required inputs yield UNSCORABLE.\n4. Otherwise select SCREEN_PASS. A screen pass is a triage result under M0; it is not an unconditional product-safety guarantee.\n",
+      "supports": "Defines M0 logger completeness, interval means, and review routing; used only as baseline and stop context.",
+      "claim_type": "method_rule"
+    },
+    {
+      "evidence_id": "F03_E1_PULSED_P",
+      "source_type": "E1",
+      "source_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md",
+      "source_sha256": "fba2eef834fa1ae9b43665ecbaa15a2bf8690f840cc0a56483701a8e7601c5ff",
+      "locator": {
+        "start_line": 16,
+        "end_line": 18,
+        "excerpt_sha256": "2c45b96e1efd4c8da249499054969771babc46571017a542d4fb5628eab77373"
+      },
+      "display_excerpt": "| OBS-01 | group P; warm dock handoff trace | 6.1 °C | 14.2 °C | 11 min | 88.4% | 88.1 / 88.7% |\n| OBS-02 | group P; repeated route and unit | 6.3 °C | 13.7 °C | 9 min | 90.1% | 89.8 / 90.4% |\n| OBS-03 | group P; second unit, separate shipment | 6.0 °C | 14.4 °C | 13 min | 85.9% | 85.4 / 86.4% |\n",
+      "supports": "Three group-P observations show brief high-rate pulses with assay results below the stated reference while 15-minute means remain within M0.",
+      "claim_type": "observed"
+    },
+    {
+      "evidence_id": "F03_E1_CONTRAST",
+      "source_type": "E1",
+      "source_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md",
+      "source_sha256": "fba2eef834fa1ae9b43665ecbaa15a2bf8690f840cc0a56483701a8e7601c5ff",
+      "locator": {
+        "start_line": 19,
+        "end_line": 20,
+        "excerpt_sha256": "27116db57bebfaae9d62de74e7d25b48620283da5fbe7de49ac5b936150cb6eb"
+      },
+      "display_excerpt": "| OBS-04 | group S; matched 15-minute mean, brief dock pulse | 6.2 °C | 14.0 °C | 10 min | 98.7% | 98.3 / 99.1% |\n| OBS-05 | group P; no observed pulse, continuous profile | 6.5 °C | 7.1 °C | 0 min | 99.0% | 98.6 / 99.4% |\n",
+      "supports": "The group-S pulse contrast and group-P continuous profile bound interpretation of the group-P observations.",
+      "claim_type": "observed"
+    },
+    {
+      "evidence_id": "F03_E1_LIMITS",
+      "source_type": "E1",
+      "source_path": "ignition/reports/evaluations/ignition-220-cognitive-evolution-r0/families/FAMILY03/revision-evidence-e1.md",
+      "source_sha256": "fba2eef834fa1ae9b43665ecbaa15a2bf8690f840cc0a56483701a8e7601c5ff",
+      "locator": {
+        "start_line": 27,
+        "end_line": 29,
+        "excerpt_sha256": "e2e47e6dfb0c9bd01090180433980ca4a5816e6e7f9ca963c4adc7a78ffdeffd"
+      },
+      "display_excerpt": "The source rows establish a reproducible contradiction to mean-only screening for the observed group-P pulse cases while retaining a stable continuous-profile group-P case and a pulsed group-S case. The group and detailed exposure are independently recorded and not inferred from the assay. The records do not support treating every isolated high sample as a confirmed degradation event, and OBS-06 does not identify whether a pulse occurred. The pulse amplitudes/durations observed here do not establish a universal threshold for every formulation or logger cadence.\n\nA tempting but unsupported overreaction is to classify any one-minute reading above 8 °C as a confirmed product failure or to discard all logger-based screening. M0's calibration, custody, continuous-profile behavior, and the product-specific contrast remain separately observable.\n",
+      "supports": "The observations do not establish a universal pulse threshold or confirmed degradation from any isolated high reading.",
+      "claim_type": "method_rule"
+    }
+  ],
+  "selector": {
+    "required_inputs": [
+      {
+        "input_id": "F03A_MEASUREMENT_VALID",
+        "description": "Whether logger calibration, clock, shipment identity, and required record checks are valid.",
+        "value_type": "boolean",
+        "unit": null,
+        "source_refs": [
+          "F03_M0_PROCEDURE",
+          "F03_E1_LIMITS"
+        ]
+      },
+      {
+        "input_id": "F03A_FORMULATION_GROUP",
+        "description": "The formulation group recorded independently in ordinary shipment records.",
+        "value_type": "string",
+        "unit": null,
+        "source_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST"
+        ]
+      },
+      {
+        "input_id": "F03A_PULSE_PATTERN",
+        "description": "Researcher-coded high-rate trace pattern, including the observed group-P pulse cases.",
+        "value_type": "string",
+        "unit": null,
+        "source_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST",
+          "F03_E1_LIMITS"
+        ]
+      }
+    ],
+    "rule": [
+      {
+        "rule_id": "F03A_OBSERVED_GROUP_P_PULSE_PATTERN",
+        "when": [
+          {
+            "input_id": "F03A_MEASUREMENT_VALID",
+            "operator": "eq",
+            "value": true,
+            "unit": null
+          },
+          {
+            "input_id": "F03A_FORMULATION_GROUP",
+            "operator": "eq",
+            "value": "P",
+            "unit": null
+          },
+          {
+            "input_id": "F03A_PULSE_PATTERN",
+            "operator": "eq",
+            "value": "observed_group_p_pulse_cases",
+            "unit": null
+          }
+        ],
+        "action_ref": "F03A_PRODUCT_STABILITY_REVIEW",
+        "evidence_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST",
+          "F03_E1_LIMITS"
+        ]
+      }
+    ]
+  },
+  "applicability": {
+    "licensed_region": [
+      {
+        "region_id": "POLICY_F03_A_LICENSED_PATTERN",
+        "conditions": [
+          {
+            "input_id": "F03A_MEASUREMENT_VALID",
+            "operator": "eq",
+            "value": true,
+            "unit": null
+          },
+          {
+            "input_id": "F03A_FORMULATION_GROUP",
+            "operator": "eq",
+            "value": "P",
+            "unit": null
+          },
+          {
+            "input_id": "F03A_PULSE_PATTERN",
+            "operator": "eq",
+            "value": "observed_group_p_pulse_cases",
+            "unit": null
+          }
+        ],
+        "rule_refs": [
+          "F03A_OBSERVED_GROUP_P_PULSE_PATTERN"
+        ],
+        "evidence_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST",
+          "F03_E1_LIMITS"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "region_id": "POLICY_F03_A_OUTSIDE_COMPLEMENT",
+        "conditions": [],
+        "fallback_ref": "fallback",
+        "evidence_refs": [
+          "F03_E1_LIMITS"
+        ]
+      }
+    ]
+  },
+  "action_table": [
+    {
+      "action_id": "F03A_PRODUCT_STABILITY_REVIEW",
+      "when": [
+        {
+          "input_id": "F03A_MEASUREMENT_VALID",
+          "operator": "eq",
+          "value": true,
+          "unit": null
+        },
+        {
+          "input_id": "F03A_FORMULATION_GROUP",
+          "operator": "eq",
+          "value": "P",
+          "unit": null
+        },
+        {
+          "input_id": "F03A_PULSE_PATTERN",
+          "operator": "eq",
+          "value": "observed_group_p_pulse_cases",
+          "unit": null
+        }
+      ],
+      "action": {
+        "category": "ROUTE_FOR_REVIEW",
+        "name": "ROUTE_OBSERVED_GROUP_P_PULSE_PATTERN_FOR_STABILITY_REVIEW",
+        "parameters": [
+          {
+            "name": "formulation_group",
+            "binding": "input_ref",
+            "input_id": "F03A_FORMULATION_GROUP",
+            "value_type": "string",
+            "unit": null,
+            "evidence_refs": [
+              "F03_E1_PULSED_P",
+              "F03_E1_CONTRAST"
+            ]
+          },
+          {
+            "name": "pulse_pattern",
+            "binding": "input_ref",
+            "input_id": "F03A_PULSE_PATTERN",
+            "value_type": "string",
+            "unit": null,
+            "evidence_refs": [
+              "F03_E1_PULSED_P",
+              "F03_E1_CONTRAST",
+              "F03_E1_LIMITS"
+            ]
+          }
+        ]
+      },
+      "required_report_fields": [
+        {
+          "field_id": "F03A_TRACE_AND_ASSAY",
+          "description": "Record formulation identity, one-minute trace context, 15-minute record, and duplicate activity assay.",
+          "unit": null,
+          "evidence_refs": [
+            "F03_E1_PULSED_P",
+            "F03_E1_CONTRAST"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "F03_E1_PULSED_P",
+        "F03_E1_CONTRAST",
+        "F03_E1_LIMITS"
+      ]
+    }
+  ],
+  "preserved_rules": [
+    {
+      "preservation_id": "POLICY_F03_A_PRESERVE_1",
+      "when": [],
+      "baseline_action": "SCREEN_PASS",
+      "preservation_mode": "unconditional",
+      "m0_action_retired": false,
+      "evidence_refs": [
+        "F03_M0_ACTIONS"
+      ]
+    },
+    {
+      "preservation_id": "POLICY_F03_A_PRESERVE_2",
+      "when": [],
+      "baseline_action": "STABILITY_REVIEW",
+      "preservation_mode": "unconditional",
+      "m0_action_retired": false,
+      "evidence_refs": [
+        "F03_M0_ACTIONS"
+      ]
+    },
+    {
+      "preservation_id": "POLICY_F03_A_PRESERVE_3",
+      "when": [],
+      "baseline_action": "RECONCILE_LOGGER",
+      "preservation_mode": "unconditional",
+      "m0_action_retired": false,
+      "evidence_refs": [
+        "F03_M0_ACTIONS"
+      ]
+    },
+    {
+      "preservation_id": "POLICY_F03_A_PRESERVE_4",
+      "when": [],
+      "baseline_action": "UNSCORABLE",
+      "preservation_mode": "unconditional",
+      "m0_action_retired": false,
+      "evidence_refs": [
+        "F03_M0_ACTIONS"
+      ]
+    }
+  ],
+  "fallback": {
+    "when": [],
+    "action": {
+      "outcome": "RECONCILE",
+      "instruction": "Record the supplied values and reason for missing, excluded, zero-match, or multiple-match routing; preserve the M0 pathway and request independent review when needed.",
+      "required_report_fields": [
+        "supplied_inputs",
+        "fallback_reason",
+        "M0_pathway_status"
+      ]
+    },
+    "evidence_refs": [
+      "F03_M0_PROCEDURE",
+      "F03_E1_LIMITS"
+    ]
+  },
+  "stop_conditions": [
+    {
+      "stop_id": "POLICY_F03_A_INVALID_MEASUREMENT_STOP",
+      "when": [
+        {
+          "input_id": "F03A_MEASUREMENT_VALID",
+          "operator": "eq",
+          "value": false,
+          "unit": null
+        }
+      ],
+      "outcome": "REACQUIRE",
+      "instruction": "Stop this candidate route; restore or reacquire required M0 setup and measurement-quality inputs before classifying.",
+      "evidence_refs": [
+        "F03_M0_PROCEDURE"
+      ]
+    }
+  ],
+  "scope_ceiling": {
+    "licensed_claims": [
+      {
+        "claim_id": "POLICY_F03_A_BOUNDED_CLAIM",
+        "statement": "Routes only the researcher-coded group-P pulse pattern represented by the named E1 records for product-specific stability review; it asserts no pulse threshold or degradation finding.",
+        "region_refs": [
+          "POLICY_F03_A_LICENSED_PATTERN"
+        ],
+        "evidence_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST",
+          "F03_E1_LIMITS"
+        ]
+      }
+    ],
+    "not_established": [
+      {
+        "claim_id": "POLICY_F03_A_LIMITS",
+        "statement": "No universal pulse threshold, confirmed degradation rule, global M0 replacement, transfer, revision-generation, causal, inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit claim is established.",
+        "region_refs": [
+          "POLICY_F03_A_LICENSED_PATTERN",
+          "POLICY_F03_A_OUTSIDE_COMPLEMENT"
+        ],
+        "evidence_refs": [
+          "F03_E1_LIMITS"
+        ]
+      }
+    ],
+    "statement": "This is a bounded reference-instrument candidate from one family’s M0 and E1 only. It is not a transfer, revision-generation, causal-effect, general-inheritance, Cognitive Evolution, cross-model, R1, Model-RSI, or training-benefit result."
+  },
+  "provenance": {
+    "declaration_sha256": "b22382fdf9c21bd4c7fbdb4df0fbedc92b1f6ba86b81a3aa7b5a10f495a461cb",
+    "compiler": "task228-reference-instrument-compiler-r1",
+    "links": [
+      {
+        "element_type": "required_input",
+        "element_id": "F03A_MEASUREMENT_VALID",
+        "evidence_refs": [
+          "F03_M0_PROCEDURE",
+          "F03_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_M0_PROCEDURE, F03_E1_LIMITS"
+      },
+      {
+        "element_type": "required_input",
+        "element_id": "F03A_FORMULATION_GROUP",
+        "evidence_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_E1_PULSED_P, F03_E1_CONTRAST"
+      },
+      {
+        "element_type": "required_input",
+        "element_id": "F03A_PULSE_PATTERN",
+        "evidence_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST",
+          "F03_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_E1_PULSED_P, F03_E1_CONTRAST, F03_E1_LIMITS"
+      },
+      {
+        "element_type": "selector_rule",
+        "element_id": "F03A_OBSERVED_GROUP_P_PULSE_PATTERN",
+        "evidence_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST",
+          "F03_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_E1_PULSED_P, F03_E1_CONTRAST, F03_E1_LIMITS"
+      },
+      {
+        "element_type": "action",
+        "element_id": "F03A_PRODUCT_STABILITY_REVIEW",
+        "evidence_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST",
+          "F03_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_E1_PULSED_P, F03_E1_CONTRAST, F03_E1_LIMITS"
+      },
+      {
+        "element_type": "licensed_region",
+        "element_id": "POLICY_F03_A_LICENSED_PATTERN",
+        "evidence_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST",
+          "F03_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_E1_PULSED_P, F03_E1_CONTRAST, F03_E1_LIMITS"
+      },
+      {
+        "element_type": "out_of_scope",
+        "element_id": "POLICY_F03_A_OUTSIDE_COMPLEMENT",
+        "evidence_refs": [
+          "F03_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_E1_LIMITS"
+      },
+      {
+        "element_type": "preserved_rule",
+        "element_id": "POLICY_F03_A_PRESERVE_1",
+        "evidence_refs": [
+          "F03_M0_ACTIONS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_M0_ACTIONS"
+      },
+      {
+        "element_type": "preserved_rule",
+        "element_id": "POLICY_F03_A_PRESERVE_2",
+        "evidence_refs": [
+          "F03_M0_ACTIONS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_M0_ACTIONS"
+      },
+      {
+        "element_type": "preserved_rule",
+        "element_id": "POLICY_F03_A_PRESERVE_3",
+        "evidence_refs": [
+          "F03_M0_ACTIONS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_M0_ACTIONS"
+      },
+      {
+        "element_type": "preserved_rule",
+        "element_id": "POLICY_F03_A_PRESERVE_4",
+        "evidence_refs": [
+          "F03_M0_ACTIONS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_M0_ACTIONS"
+      },
+      {
+        "element_type": "fallback",
+        "element_id": "fallback",
+        "evidence_refs": [
+          "F03_M0_PROCEDURE",
+          "F03_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_M0_PROCEDURE, F03_E1_LIMITS"
+      },
+      {
+        "element_type": "stop_condition",
+        "element_id": "POLICY_F03_A_INVALID_MEASUREMENT_STOP",
+        "evidence_refs": [
+          "F03_M0_PROCEDURE"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_M0_PROCEDURE"
+      },
+      {
+        "element_type": "licensed_claim",
+        "element_id": "POLICY_F03_A_BOUNDED_CLAIM",
+        "evidence_refs": [
+          "F03_E1_PULSED_P",
+          "F03_E1_CONTRAST",
+          "F03_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_E1_PULSED_P, F03_E1_CONTRAST, F03_E1_LIMITS"
+      },
+      {
+        "element_type": "not_established_claim",
+        "element_id": "POLICY_F03_A_LIMITS",
+        "evidence_refs": [
+          "F03_E1_LIMITS"
+        ],
+        "locator_detail": "MAP_F03_A declaration; evidence refs: F03_E1_LIMITS"
+      }
+    ]
+  }
+}

@@ -18,6 +18,13 @@
 - 5 分钟：主题：IGNITION-20260827-143 Step 04 — 可出版素材盘点；Step 04 已完成。盘点不是看标题投票，而是把成果册、火种、既有文章、碰撞机制、树冠 replay 和 Task142 生命周期修复逐一读到能说明“它支持什么、不能支持什么”的程度。机器版见 corpus-census-r1.json。；现有成果册已经很完整，但它的完整性主要是“结果地图”的完整性：十二章把起源、函数、案例、GetNote、方法、科学映照、写作法、最新正式结果、七轨修复和火种放在了一条入口里。十篇编辑文章则已经把最容易重复的几个方向写过一遍：撤回与防回弹、机器表面与人类表面、候选到 Current、跨域投影、表示不等于证明、边界写作、Function OS、公开真相滞后、独立复现和失败案例门禁。；因此本轮需要的不是再写一篇“点火是什么”，也不是把既有文章换个标题，而是从同一素材池里挑出三种互不替代的阅读经验：一个工程方法的真实转折、一个点火材料本身提出的实质问题、以及一个外部读者不需要先理解仓库就能进入的具体案例。；最强的三条候选分别来自 A、B、C。A 的新意不在“收据不能冒充现实”这句原则，而在 Task142 把两个时钟真正拆开：任务范围可以 terminal，未来义务可以继续 OPEN；B 不是治理说明，而是材料提出的“正向支持退化为路径控制”模型；C 不是泛泛讲证据，而是用树冠、地表温度、近地面空气和人的热暴露四个容易混淆的词，展示一个有用但收窄的结果怎样被保留下来。；“未完成的诚实”：从任务终止、来源和负结果写到退出与出版；
 - 完整阅读：[reports/operations/ignition-143-step04-corpus-census.md](../../reports/operations/ignition-143-step04-corpus-census.md)
 
+<a id="reading-hr-01bbd082ca4a248b"></a>
+## Task228 v2 — Auditor B Raw Audit Sheet
+`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
+- 1 分钟：Scope: Isolated v2 package only. No target material or other audit sheets inspected. 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
+- 5 分钟：主题：Task228 v2 — Auditor B Raw Audit Sheet；Scope: Isolated v2 package only. No target material or other audit sheets inspected.；Checks run: All six packaged validator invocations returned schema and contract PASS. buildreferenceinstruments.py --check returned TASK228REFERENCEREBUILD=BYTEIDENTICAL.；主题：Machine predicates；主题：Semantic dimensions；For each candidate: 1 evidence support; 2 operational completeness; 3 bounded applicability; 4 M0 preservation; 5 fallback and stops; 6 provenance meaning; 7 no unsupported universalization; 8 target-blind lineage; 9 contract consistency.
+- 完整阅读：[reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-b.md](../../reports/evaluations/ignition-228-policy-contract-reconciliation-r0/audit/round-2/auditor-b.md)
+
 <a id="reading-hr-02352d9fbccc87db"></a>
 ## FAMILY01 held-out C — canopy-temperature observation
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
@@ -346,10 +353,3 @@
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：新增案例候选 · P1 接入烟雾测试；本任务为 smoke test，明确限定「不得新增案例」「不得回填正式案例表」。；输入材料本身是本次工程操作的复盘，案例表已有更直接对应的救援流程案例（Codespace 救援闭环），不构成必须新增的独立案例。；即使作为案例，也应先查重、再决定是否入表；smoke test 阶段不做此判断。
 - 完整阅读：[outputs/collisions/20260708-smoke-test/new-cases.md](../../outputs/collisions/20260708-smoke-test/new-cases.md)
-
-<a id="reading-hr-1075a79086af4a5d"></a>
-## CASE01 — Checkpoint export selection
-`SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
-- 1 分钟：Packet reference: PK-36E400FB560F 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
-- 5 分钟：Packet reference: PK-36E400FB560F；Six synthetic case records follow.；Source SHA-256: 5571dbf60194725aa4342bdf1abf9738713a904474e7bb48db128f049c301e4d；主题：CASE01 — Checkpoint export selection；All names, records, dates, and tools are synthetic.；[F01] A packet contains signed document version 3 associated with checkpoint C-17 and a later version 4 correction marked unsigned. [F02] Route Alder's preview lists a signed-document field, signature timestamp, and approval-event reference; it does not list a per-file digest. [F03] Route Birch's preview lists a version sequence and per-file digest; its opti…
-- 完整阅读：[reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md](../../reports/evaluations/ignition-217-method-dependency-benchmark-r0/future-tasks/payloads/PK-36E400FB560F.md)

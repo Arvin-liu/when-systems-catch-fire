@@ -1529,6 +1529,26 @@
   - 可搜索名称：Task226 evidence binding receipt / task226-evidence-binding-receipt
   - 来源：`reports/evaluations/ignition-227-cognitive-evolution-component-isolation-r0/design/task226-evidence-binding-receipt.md`
   - 依赖：—；被引用：—
+- [Task228 contract-gap report](../../ASSET-CARDS.md#asset-hr-252aa2ba43ffa5a5)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task228 contract-gap report / contract-gap-report
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/contract-gap-report.md`
+  - 依赖：—；被引用：—
+- [Task228 runtime report — Phase 04 through Phase 07](../../ASSET-CARDS.md#asset-hr-872036691a947edc)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task228 runtime report — Phase 04 through Phase 07 / runtime-report
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/runtime-report.md`
+  - 依赖：—；被引用：—
+- [Task228 target-blind instrument authoring guide R1](../../ASSET-CARDS.md#asset-hr-ebcf23ec787cac52)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task228 target-blind instrument authoring guide R1 / instrument-authoring-guide
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/reference/instrument-authoring-guide.md`
+  - 依赖：—；被引用：—
+- [Task228 Task227 evidence-binding receipt](../../ASSET-CARDS.md#asset-hr-55b8a590151a0c77)
+  - 类型/状态：`RESULT_OR_ARTICLE` · `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+  - 可搜索名称：Task228 Task227 evidence-binding receipt / evidence-binding-receipt
+  - 来源：`reports/evaluations/ignition-228-policy-contract-reconciliation-r0/evidence-binding-receipt.md`
+  - 依赖：—；被引用：—
 - [Tasks, adapters, routers, memory, composition mode and experimental conditions are operationally explicit, but semantic,](../../../data/external-research/121-fulltext-resolver/121cx/121cx-extreme-semantic-evidence-cards.jsonl)
   - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
   - 可搜索名称：NFC-3e48742e55a92254 / Tasks, adapters, routers, memory, composition mode and experimental conditions are operationally explicit, but semantic,
@@ -2483,24 +2503,4 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-2fdaf15713e7ca55 / This execution compares each candidate component with the frozen simplest baseline from STEP08. The outcome is bounded r
   - 来源：`reports/architecture-calibration/STEP09-EXECUTION.md`
-  - 依赖：—；被引用：—
-- [This gate proves repository synchronization evidence only. It does not prove](../../../docs/governance/current-state-sync-invariant.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-7a14ca94f4b94bf5 / This gate proves repository synchronization evidence only. It does not prove
-  - 来源：`docs/governance/current-state-sync-invariant.md`
-  - 依赖：—；被引用：—
-- [This gate records evidence eligibility only. It does not turn Function OS into](../../../evidence-program/README.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
-  - 可搜索名称：NFC-3b5e08ef063ae1d5 / This gate records evidence eligibility only. It does not turn Function OS into
-  - 来源：`evidence-program/README.md`
-  - 依赖：—；被引用：—
-- [This is a capability calibration of four current-main candidate components. It is not a truth test and does not promote](../../../reports/architecture-calibration/STEP08-PREREGISTRATION.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-a92d1d608e6b1e3f / This is a capability calibration of four current-main candidate components. It is not a truth test and does not promote
-  - 来源：`reports/architecture-calibration/STEP08-PREREGISTRATION.md`
-  - 依赖：—；被引用：—
-- [This is a cumulative release seal for already validated Q12-Q14 work:](../../../reports/releases/121Q15-q12-q14-cumulative-preflight.md)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-188053d47b7b0675 / This is a cumulative release seal for already validated Q12-Q14 work:
-  - 来源：`reports/releases/121Q15-q12-q14-cumulative-preflight.md`
   - 依赖：—；被引用：—

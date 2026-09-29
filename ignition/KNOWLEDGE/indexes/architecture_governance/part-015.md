@@ -4,6 +4,26 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
+- [遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
+  - 可搜索名称：NFC-6c31d402039e4418 / 遮蔽-补偿-成本三角在AI训练中 — 训练数据同质化→需要异质性补偿→成本高→三角锁死
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [遮蔽-补偿-成本三角约束案例验证。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-9d95836376a525f2 / 遮蔽-补偿-成本三角约束案例验证。
+  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [遮蔽=退相干环境 — 组织信息透明度实验-H=0.1时τ_decoherence=50年,H=0.5时τ=10年,H=0.9时τ=1年。遮蔽](../../../data/foundation/evidence/evidence.jsonl)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `PENDING_LITERATURE_ADJUDICATION`
+  - 可搜索名称：NFC-85cf9801664d358b / 遮蔽=退相干环境 — 组织信息透明度实验-H=0.1时τ_decoherence=50年,H=0.5时τ=10年,H=0.9时τ=1年。遮蔽
+  - 来源：`data/foundation/evidence/evidence.jsonl`
+  - 依赖：—；被引用：—
+- [部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未](../../../reports/external-research/104-dual-088-reconciliation.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
+  - 可搜索名称：NFC-98aa7f7d1e80b626 / 部分完成：双 088 已发现并归并；外部证据状态阶梯已建立；117 条来源已重新评定；anysearch 已审计；14 补丁已重新评级；105+ 深挖队列已生成。Blocker：088-A 和 088-C 未执行（仅有任务文件），全文审阅未
+  - 来源：`reports/external-research/104-dual-088-reconciliation.md`
+  - 依赖：—；被引用：—
 - [部分成立 = 部分验证通过（停留在L1层，缺乏L2层涌现）](../../../docs/phi_meta_law.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-9e5b3a7098f71275 / 部分成立 = 部分验证通过（停留在L1层，缺乏L2层涌现）
