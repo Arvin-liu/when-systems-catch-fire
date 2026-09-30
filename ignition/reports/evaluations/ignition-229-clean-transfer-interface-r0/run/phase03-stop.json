@@ -1,0 +1,14 @@
+{
+  "version": "task229-phase03-stop-r0",
+  "status": "STOPPED_NONCONFORMANT_PROMPT",
+  "stop_sequence": 2,
+  "gate_status_remains": "TASK229_TARGET_OPENING_GATE=PASS",
+  "sessions_started": 2,
+  "conformant_sessions_started": 1,
+  "nonconformant_session_id": "a84ab374f5ed0d2a73aac293f4ea1c3b",
+  "reason": "The actual second-session collaboration message contained a response schema that differed from the frozen, hashed prompt: additional_actions.items referenced $defs/reported_value and reported_values was omitted from the second oneOf branch. No replacement is permitted; the frozen protocol fixes prompts and permits replacement only after transport/infrastructure failure before semantic response.",
+  "response_preserved": "raw-sessions/a84ab374f5ed0d2a73aac293f4ea1c3b.json",
+  "actual_prompt_preserved": "prompt-deviations/a84ab374f5ed0d2a73aac293f4ea1c3b-actual-sent.md",
+  "later_sessions_started": 0,
+  "next_action": "Hard stop; do not start session 03 or any evaluator."
+}
