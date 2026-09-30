@@ -4136,6 +4136,11 @@
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/prompt-bundle-manifest.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/protocol.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/provenance/original-task229-freeze-manifest.json"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/run/canary/non-scientific-large-input-01/canary-result.json"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/run/canary/non-scientific-large-input-01/dispatch-receipt.json"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/run/canary/non-scientific-large-input-01/last-message.txt"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/run/canary/non-scientific-large-input-01/stderr.txt"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/run/canary/non-scientific-large-input-01/stdout.jsonl"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/run/prompts/01-e15692066dfc90306e83372151fc8512.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/run/prompts/02-a84ab374f5ed0d2a73aac293f4ea1c3b.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/run/prompts/03-28b15c45689f1c28734faf2458b1adf0.md"}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "task229-r1-nonscientific-canary-result-v1",
+  "execution_class": "NONSCIENTIFIC_TRANSPORT_CANARY",
+  "result": "PASS",
+  "scientific_session": false,
+  "canary_plan_path": "canary-plan.json",
+  "canary_plan_sha256": "1195b44bdba604e54c30e2b49b1d3cb3a4bcd3bb49d37862b4fbcdeb02eca423",
+  "fixture_path": "fixtures/large-input-nonscientific-canary.txt",
+  "fixture_bytes": 65547,
+  "fixture_sha256": "ac3b05b7ec1330046a6d87a97cbb0c561ecb17f3e259a2a31ef12ee1059de3b7",
+  "dispatcher_sha256": "c4e2aa109201c8292149a7a92020be36470f90be6d2ab7927d8c82c4b9cce577",
+  "runtime": {
+    "cli_version": "codex-cli 0.159.2",
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "medium",
+    "backend_echo_limitation": "BACKEND_MODEL_AND_EFFORT_NOT_ECHOED_IN_JSONL"
+  },
+  "transport": {
+    "stdin_only": true,
+    "source_and_outbound_sha_match": true,
+    "source_and_outbound_bytes": 65547,
+    "outbound_sha256": "ac3b05b7ec1330046a6d87a97cbb0c561ecb17f3e259a2a31ef12ee1059de3b7"
+  },
+  "process": {
+    "status": "COMPLETED",
+    "return_code": 0,
+    "timed_out": false,
+    "events": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "agent_message_count": 1,
+    "thread_ids": [
+      "01a0f2f9-2b27-73d2-9f1e-5b14c532024d"
+    ],
+    "completion_pass": true
+  },
+  "ack": {
+    "expected": "CANARY_ACK",
+    "exact_byte_match": true,
+    "response_bytes": 10,
+    "response_sha256": "3a4574a09e3cc7a2feea74ff8771a8993745d1f426ddb56d11c10bea27ca339e"
+  },
+  "captures": {
+    "dispatch-receipt.json": {
+      "bytes": 3773,
+      "sha256": "1ab47e42bff1965c89a1770b45fac06670ee1ef77451ba1b39bf1a56b8ab25d6"
+    },
+    "stdout.jsonl": {
+      "bytes": 353,
+      "sha256": "3fe620552c82859d1b98ecb080262d63f2c3e1d88507e80da5345c735e95410d"
+    },
+    "stderr.txt": {
+      "bytes": 847,
+      "sha256": "c1c02f03dcfa1cad8782c817d70e402bf35eafcc3f2a3ebee3f59c634059f63e"
+    },
+    "last-message.txt": {
+      "bytes": 10,
+      "sha256": "3a4574a09e3cc7a2feea74ff8771a8993745d1f426ddb56d11c10bea27ca339e"
+    }
+  }
+}

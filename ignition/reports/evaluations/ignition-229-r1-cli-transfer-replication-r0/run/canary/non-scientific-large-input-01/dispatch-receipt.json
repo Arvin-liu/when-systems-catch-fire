@@ -1,0 +1,92 @@
+{
+  "schema_version": "task229-h1-dispatch-receipt-v1",
+  "started_at_utc": "2026-09-30T15:40:10.721385Z",
+  "source_path": "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/when-systems-catch-fire-r1/ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/fixtures/large-input-nonscientific-canary.txt",
+  "expected_sha256": "ac3b05b7ec1330046a6d87a97cbb0c561ecb17f3e259a2a31ef12ee1059de3b7",
+  "cli_requested_path": "codex",
+  "model_requested": "gpt-6-astra",
+  "reasoning_effort_requested": "medium",
+  "shell": false,
+  "stdin_transport": "subprocess.Popen.communicate(input=source_bytes)",
+  "freshness": {
+    "resume_subcommand": false,
+    "ephemeral_flag": true
+  },
+  "prelaunch": {
+    "source_byte_length": 65547,
+    "source_sha256": "ac3b05b7ec1330046a6d87a97cbb0c561ecb17f3e259a2a31ef12ee1059de3b7",
+    "strict_utf8_decode": true,
+    "utf8_roundtrip_equal": true,
+    "outbound_byte_length": 65547,
+    "outbound_sha256": "ac3b05b7ec1330046a6d87a97cbb0c561ecb17f3e259a2a31ef12ee1059de3b7",
+    "outbound_equals_source": true,
+    "cli_resolved_path": "/Users/zhiyuan/.local/lib/node_modules/@openai/codex/bin/codex.js",
+    "workspace_path": "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/outputs/r1-workspaces/task229-h1-fresh-sez1tdsk",
+    "workspace_empty_at_launch": true,
+    "command_argv_no_prompt_content": true,
+    "argv": [
+      "/Users/zhiyuan/.local/bin/codex",
+      "exec",
+      "--ephemeral",
+      "--ignore-user-config",
+      "--ignore-rules",
+      "--strict-config",
+      "--model",
+      "gpt-6-astra",
+      "--config",
+      "model_reasoning_effort=\"medium\"",
+      "--sandbox",
+      "read-only",
+      "--cd",
+      "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/outputs/r1-workspaces/task229-h1-fresh-sez1tdsk",
+      "--skip-git-repo-check",
+      "--json",
+      "--color",
+      "never",
+      "--output-last-message",
+      "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/outputs/r1-canary-01/last-message.txt",
+      "-"
+    ]
+  },
+  "process": {
+    "pid": 74897,
+    "launch_time_utc": "2026-09-30T15:40:10.722460Z",
+    "fresh_process": true,
+    "ended_at_utc": "2026-09-30T15:40:24.176743Z",
+    "duration_observed": true,
+    "return_code": 0,
+    "timed_out": false,
+    "stdin_request_byte_length": 65547,
+    "stdin_request_sha256": "ac3b05b7ec1330046a6d87a97cbb0c561ecb17f3e259a2a31ef12ee1059de3b7",
+    "stdin_pipe_closed_by_communicate": true,
+    "argv_uses_resume": false,
+    "ephemeral_requested": true,
+    "session_ids_observed": [
+      "01a0f2f9-2b27-73d2-9f1e-5b14c532024d"
+    ]
+  },
+  "capture": {
+    "last_message_file": "last-message.txt",
+    "last_message_sha256": "3a4574a09e3cc7a2feea74ff8771a8993745d1f426ddb56d11c10bea27ca339e",
+    "stdout_file": "stdout.jsonl",
+    "stdout_sha256": "3fe620552c82859d1b98ecb080262d63f2c3e1d88507e80da5345c735e95410d",
+    "stderr_file": "stderr.txt",
+    "stderr_sha256": "c1c02f03dcfa1cad8782c817d70e402bf35eafcc3f2a3ebee3f59c634059f63e",
+    "jsonl_event_types": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "agent_message_count": 1,
+    "agent_message_sha256": [
+      "3a4574a09e3cc7a2feea74ff8771a8993745d1f426ddb56d11c10bea27ca339e"
+    ],
+    "observed_models": [],
+    "observed_efforts": [],
+    "last_message_captured": true,
+    "jsonl_final_message_captured": true
+  },
+  "status": "COMPLETED",
+  "finished_at_utc": "2026-09-30T15:40:24.178012Z"
+}
