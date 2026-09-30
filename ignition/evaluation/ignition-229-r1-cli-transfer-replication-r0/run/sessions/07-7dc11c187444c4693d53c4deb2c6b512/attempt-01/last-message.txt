@@ -1,0 +1,197 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "F03A_PRODUCT_STABILITY_REVIEW",
+      "additional_actions": [],
+      "reported_values": [
+        {
+          "name": "selected_formulation_group",
+          "value": "P",
+          "unit": null
+        },
+        {
+          "name": "F03A_MEASUREMENT_VALID",
+          "value": true,
+          "unit": null
+        },
+        {
+          "name": "F03A_FORMULATION_GROUP",
+          "value": "P",
+          "unit": null
+        },
+        {
+          "name": "F03A_PULSE_PATTERN",
+          "value": "observed_group_p_pulse_cases",
+          "unit": null
+        },
+        {
+          "name": "F03A_TRACE_AND_ASSAY",
+          "value": {
+            "formulation_identity": "Independently verified group P",
+            "high_rate_trace": "Complete and aligned; 9-minute excursion peaking at 13.7 °C, matching the supplied OBS-02 pattern",
+            "15_minute_record": "Complete and calibrated; clock and custody valid; all segment and shipment means below 8.0 °C",
+            "duplicate_activity_assay": "Not supplied"
+          },
+          "unit": null
+        },
+        {
+          "name": "alternative_lot",
+          "value": {
+            "formulation_group": "S",
+            "pulse_duration_minutes": 10,
+            "peak_temperature_celsius": 14.0,
+            "selector_match": false
+          },
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "Both lots meet SCREEN_PASS under the baseline mean criterion.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "SCREEN_PASS",
+        "STABILITY_REVIEW",
+        "RECONCILE_LOGGER",
+        "UNSCORABLE"
+      ],
+      "fallback": null,
+      "scope": "Allocate the review slot to group P for product-specific stability review; no degradation finding or universal pulse threshold.",
+      "rationale": "The valid group-P trace matches the supplied observed pulse pattern and satisfies F03A_OBSERVED_GROUP_P_PULSE_PATTERN, whose action reference is F03A_PRODUCT_STABILITY_REVIEW. Group S does not satisfy the formulation condition.",
+      "route_trace": {
+        "policy_id": "POLICY_F03_A",
+        "route_type": "selector",
+        "selected_rule_id": "F03A_OBSERVED_GROUP_P_PULSE_PATTERN",
+        "selected_action_id": "F03A_PRODUCT_STABILITY_REVIEW",
+        "input_ids": [
+          "F03A_MEASUREMENT_VALID",
+          "F03A_FORMULATION_GROUP",
+          "F03A_PULSE_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "SCREEN_PASS",
+          "STABILITY_REVIEW",
+          "RECONCILE_LOGGER",
+          "UNSCORABLE"
+        ]
+      }
+    },
+    {
+      "case_id": "B",
+      "primary_action": "RECONCILE",
+      "additional_actions": [
+        "SCREEN_PASS"
+      ],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F03A_MEASUREMENT_VALID": true,
+            "F03A_FORMULATION_GROUP": "P",
+            "F03A_PULSE_PATTERN": "No above-12 °C pulse present",
+            "records": "Complete calibrated 15-minute logger and aligned high-rate trace; calibration, clock, and custody checks pass",
+            "means": "All segment and shipment means below 8.0 °C"
+          },
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Zero matching selector rules: the observed group-P pulse pattern is absent.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "SCREEN_PASS under the complete, valid baseline record and mean criterion.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "SCREEN_PASS",
+        "STABILITY_REVIEW",
+        "RECONCILE_LOGGER",
+        "UNSCORABLE"
+      ],
+      "fallback": "RECONCILE: record the supplied inputs and zero-match reason while preserving the M0 SCREEN_PASS pathway.",
+      "scope": "Baseline temperature screening only; no unconditional product-safety guarantee.",
+      "rationale": "Valid measurements avoid the stop condition, but group P alone does not satisfy the selector. The fallback applies, and the supplied baseline checks support SCREEN_PASS.",
+      "route_trace": {
+        "policy_id": "POLICY_F03_A",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F03A_MEASUREMENT_VALID",
+          "F03A_FORMULATION_GROUP",
+          "F03A_PULSE_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "SCREEN_PASS",
+          "STABILITY_REVIEW",
+          "RECONCILE_LOGGER",
+          "UNSCORABLE"
+        ]
+      }
+    },
+    {
+      "case_id": "C",
+      "primary_action": "REACQUIRE",
+      "additional_actions": [
+        "RECONCILE_LOGGER"
+      ],
+      "reported_values": [
+        {
+          "name": "F03A_MEASUREMENT_VALID",
+          "value": false,
+          "unit": null
+        },
+        {
+          "name": "F03A_FORMULATION_GROUP",
+          "value": "P",
+          "unit": null
+        },
+        {
+          "name": "F03A_PULSE_PATTERN",
+          "value": null,
+          "unit": null
+        },
+        {
+          "name": "measurement_quality",
+          "value": "High-rate trace custody gap across handoff prevents determining pulse duration; calibration and 15-minute logger checks pass.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "The supplied 15-minute record meets the baseline mean criterion. It does not resolve the high-rate custody gap or establish a pulse-pattern classification.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "SCREEN_PASS",
+        "STABILITY_REVIEW",
+        "RECONCILE_LOGGER",
+        "UNSCORABLE"
+      ],
+      "fallback": null,
+      "scope": "Stop the candidate pulse route pending restoration of trace custody and required measurement inputs; neither pulse absence nor degradation is established.",
+      "rationale": "The high-rate custody failure makes the candidate measurement-quality input false, triggering POLICY_F03_A_INVALID_MEASUREMENT_STOP. Passing 15-minute checks cannot repair that gap.",
+      "route_trace": {
+        "policy_id": "POLICY_F03_A",
+        "route_type": "stop",
+        "selected_rule_id": "POLICY_F03_A_INVALID_MEASUREMENT_STOP",
+        "selected_action_id": null,
+        "input_ids": [
+          "F03A_MEASUREMENT_VALID"
+        ],
+        "preserved_baseline_action_ids": [
+          "SCREEN_PASS",
+          "STABILITY_REVIEW",
+          "RECONCILE_LOGGER",
+          "UNSCORABLE"
+        ]
+      }
+    }
+  ]
+}

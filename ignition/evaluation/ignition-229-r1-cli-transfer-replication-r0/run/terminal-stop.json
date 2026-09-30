@@ -1,0 +1,68 @@
+{
+  "schema_version": "ignition-20260930-229-r1-terminal-stop-v1",
+  "experiment_id": "IGNITION-20260930-229-R1",
+  "execution_class": "NEW_PREREGISTERED_REPLICATION_AFTER_ORIGINAL_TASK229_OPERATIONAL_BLOCKER",
+  "runtime": "LOCAL_CODEX_CLI_STDIN_DIFFERENT_FROM_ORIGINAL_COLLABORATION_AGENT",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "medium",
+  "backend_model_and_effort_echoed": false,
+  "historical_coordinator_target_exposure": true,
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "formal_branch": "work/IGNITION-20260930-229-R1-cli-transfer-replication-r0",
+  "formal_pr": {
+    "number": 240,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/240",
+    "base_sha": "d82a52077df6d4e96e998ace3757f2fb343b4db5",
+    "pre_session_head_sha": "699b66b2a67d703d3db62cec0e2ba2b7621ff43c",
+    "pre_session_status": "OPEN_DRAFT_UNMERGED"
+  },
+  "terminal": true,
+  "status": "STOPPED_PROTOCOL_DEVIATION_NO_SCIENTIFIC_RESULT",
+  "scientific_result": "NONE",
+  "result_markers": null,
+  "stop_reasons": [
+    {
+      "code": "BLIND_PACKET_BUILDER_NOT_FROZEN_BEFORE_TARGET_CRITERIA",
+      "detail": "The R1 command requires freezing the deterministic packet-building implementation before reading target criteria. The implementation was authored after Task225/Task227 criteria and target content had been opened."
+    },
+    {
+      "code": "PACKET_SANITIZER_IMPLEMENTATION_CHANGED_AFTER_FIRST_FAIL_CLOSED_SCAN",
+      "detail": "After a fail-closed scan attempt, the path-detection regular expression was adjusted before packets were emitted. No evaluator had been launched yet, but this was an implementation change after response exposure and is recorded as a protocol deviation."
+    },
+    {
+      "code": "FIXED_CASE_INPUT_MAP_MISSING",
+      "detail": "No frozen run record supplies case_inputs_by_lineage. The preregistered recomputation requires the actual per-case values keyed by input ID, and Phase 04 requires fixed-route trace validation against that map before opening scoring criteria. No map was reconstructed from responses or other material."
+    }
+  ],
+  "phase_status": {
+    "pre_session_preregistration_freeze": "PASS",
+    "exact_head_ci_before_successor_sessions": "PASS",
+    "large_input_non_scientific_canary": "PASS",
+    "successor_sessions": "18_OF_18_COMPLETED_ONE_ATTEMPT_EACH",
+    "raw_response_freeze": "PASS",
+    "fixed_input_route_trace_validation_before_target_criteria": "NOT_COMPLETED",
+    "target_hash_binding_after_raw_freeze": "PASS",
+    "blind_packet_leak_scan": "PASS_ZERO_MATCHES",
+    "blind_packet_builder_pre_target_freeze": "FAIL",
+    "evaluator_dispatch": "2_OF_2_COMPLETED_DISTINCT_FRESH_THREADS",
+    "evaluator_sheets": "54_ROWS_EACH_SCHEMA_VALID_EXACT_ID_CASE_COVERAGE",
+    "evaluator_tool_events": 0,
+    "reconciliation_or_third_evaluator": false,
+    "analysis_input_created": false,
+    "deterministic_recomputation": "NOT_RUN_HARD_STOP",
+    "valid_scientific_result": false
+  },
+  "frozen_evidence": {
+    "session_freeze_manifest_sha256": "fcdd4b742ffd0cd7860d2ea583ea39c14ee1aa11fd832c0ab4388a3c5dd97bc0",
+    "post_response_target_binding_sha256": "16e7f4df979ba3f7d45f16da0c7bc457698a0d2c75dcdc7887bf2021b45b7667",
+    "blind_packet_freeze_manifest_sha256": "6d873fbff4188ab3d8e9564be644c27fafc716edcaaebfab83f4005bc5f9dec6",
+    "evaluator_run_freeze_manifest_sha256": "5f9fcb6873162b40cf25e4a7484af96eb2657b2d4a5106cf5347de113ae8e380",
+    "historical_attempt1_responses_used": false,
+    "post_exposure_scientific_prompt_or_scoring_tuning": false,
+    "task230_started": false
+  },
+  "next_action": "AWAIT_OWNER_GPT_REVIEW",
+  "owner_gpt_review_required": true,
+  "automatic_task230_launch": false,
+  "written_at_utc": "2026-09-30T22:24:03Z"
+}

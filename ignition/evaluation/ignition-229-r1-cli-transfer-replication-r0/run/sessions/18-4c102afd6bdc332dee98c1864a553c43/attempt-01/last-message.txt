@@ -1,0 +1,44 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "REPORT_ESTIMATE",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "estimated_TSS", "value": 214.5, "unit": "mg/L"},
+        {"name": "original_calibration_matrix_uncertainty_band", "value": 12, "unit": "mg/L"}
+      ],
+      "preserved_baseline_action_ids": ["REPORT_ESTIMATE", "REPEAT_SAMPLE", "FLAG_OUT_OF_RANGE", "INVALID_MEASUREMENT"],
+      "fallback": null,
+      "scope": "CE-F02-M0-R0; validated turbidity range 0–500 NTU. The ±12 mg/L band applies to the original mineral-dominant calibration matrix; its applicability to this composition is unvalidated.",
+      "rationale": "Measurement checks pass and 150 NTU is in range, so M0 reports 1.35 × 150 + 12 = 214.5 mg/L. Composition is not an M0 routing input. Without a gravimetric reference, this estimate's error cannot be determined."
+    },
+    {
+      "case_id": "B",
+      "primary_action": "REPORT_ESTIMATE",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "estimated_TSS", "value": 349.5, "unit": "mg/L"},
+        {"name": "original_calibration_matrix_uncertainty_band", "value": 12, "unit": "mg/L"}
+      ],
+      "preserved_baseline_action_ids": ["REPORT_ESTIMATE", "REPEAT_SAMPLE", "FLAG_OUT_OF_RANGE", "INVALID_MEASUREMENT"],
+      "fallback": null,
+      "scope": "CE-F02-M0-R0; validated turbidity range 0–500 NTU and original mineral-dominant calibration matrix, with a recorded uncertainty band of ±12 mg/L.",
+      "rationale": "Measurement checks pass and 250 NTU is in range, so M0 reports 1.35 × 250 + 12 = 349.5 mg/L. The supplied composition matches the mineral-dominant pattern. Without a gravimetric reference, the individual estimate's error remains unverified."
+    },
+    {
+      "case_id": "C",
+      "primary_action": "REPORT_ESTIMATE",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "estimated_TSS", "value": 221.25, "unit": "mg/L"},
+        {"name": "original_calibration_matrix_uncertainty_band", "value": 12, "unit": "mg/L"}
+      ],
+      "preserved_baseline_action_ids": ["REPORT_ESTIMATE", "REPEAT_SAMPLE", "FLAG_OUT_OF_RANGE", "INVALID_MEASUREMENT"],
+      "fallback": null,
+      "scope": "CE-F02-M0-R0; validated turbidity range 0–500 NTU. The ±12 mg/L band applies to the original mineral-dominant calibration matrix; this sample's matrix applicability is unresolved.",
+      "rationale": "Blank, cell, and turbidity duplicate checks pass at 155 NTU, so M0 reports 1.35 × 155 + 12 = 221.25 mg/L. Unstable composition aliquots do not trigger M0's turbidity replicate rule because composition is not an M0 input. No gravimetric reference establishes the estimate's error."
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "F01A_ROUTE_CONTACT_CONTEXT",
+      "additional_actions": ["SOIL_MOISTURE_CONFIRMATION"],
+      "reported_values": [
+        {
+          "name": "F01A_OBSERVED_CONTEXT",
+          "value": {
+            "surface": "reflective silver film",
+            "reflectance": 0.72,
+            "bearing": "toward sun, 21 degrees off nadir",
+            "paired_D_C": [2.7, 2.6],
+            "contact_check": "not supplied; obtain independent contact check",
+            "VWC": "not supplied; obtain independent VWC measurement"
+          },
+          "unit": null
+        },
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F01A_MEASUREMENT_VALID": true,
+            "F01A_SURFACE_PATTERN": "reflective_silver_film_observed",
+            "F01A_BEARING_RELATION": "toward_sun_observed"
+          },
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "ROUTINE_MONITORING",
+        "SOIL_MOISTURE_CONFIRMATION",
+        "REPEAT_THERMAL_SCAN",
+        "INPUT_INVALID"
+      ],
+      "fallback": null,
+      "scope": "Independent contact and VWC review for the specified silver-film and toward-sun context. No thermal correction, universal reflectance cutoff, or irrigation authorization.",
+      "rationale": "F01A_OBSERVED_REFLECTIVE_CONTEXT matches all three inputs and references F01A_ROUTE_CONTACT_CONTEXT. The preserved M0 pathway also selects SOIL_MOISTURE_CONFIRMATION because both D values exceed 2.0 °C and differ by only 0.1 °C.",
+      "route_trace": {
+        "policy_id": "POLICY_F01_A",
+        "route_type": "selector",
+        "selected_rule_id": "F01A_OBSERVED_REFLECTIVE_CONTEXT",
+        "selected_action_id": "F01A_ROUTE_CONTACT_CONTEXT",
+        "input_ids": [
+          "F01A_MEASUREMENT_VALID",
+          "F01A_SURFACE_PATTERN",
+          "F01A_BEARING_RELATION"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      }
+    },
+    {
+      "case_id": "B",
+      "primary_action": "RECONCILE",
+      "additional_actions": ["SOIL_MOISTURE_CONFIRMATION"],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F01A_MEASUREMENT_VALID": true,
+            "F01A_SURFACE_PATTERN": "ordinary mineral soil",
+            "F01A_BEARING_RELATION": "toward_sun_observed",
+            "reflectance": 0.15,
+            "off_nadir_degrees": 21,
+            "paired_D_C": [2.5, 2.4]
+          },
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Zero selector matches: ordinary mineral soil does not match the specified reflective silver-film pattern.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "SOIL_MOISTURE_CONFIRMATION: valid stable pair, both D values at least 2.0 °C.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "ROUTINE_MONITORING",
+        "SOIL_MOISTURE_CONFIRMATION",
+        "REPEAT_THERMAL_SCAN",
+        "INPUT_INVALID"
+      ],
+      "fallback": "RECONCILE; preserve and execute the M0 soil-moisture confirmation pathway.",
+      "scope": "Outside the selector's licensed surface pattern; the unchanged M0 threshold applies. Thermal evidence alone does not authorize irrigation.",
+      "rationale": "The surface input excludes the selector. The preserved M0 pathway selects SOIL_MOISTURE_CONFIRMATION because D is 2.5/2.4 °C with a 0.1 °C difference. Independent VWC evidence remains necessary.",
+      "route_trace": {
+        "policy_id": "POLICY_F01_A",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F01A_MEASUREMENT_VALID",
+          "F01A_SURFACE_PATTERN",
+          "F01A_BEARING_RELATION"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      }
+    },
+    {
+      "case_id": "C",
+      "primary_action": "RECONCILE",
+      "additional_actions": ["REPEAT_THERMAL_SCAN"],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F01A_MEASUREMENT_VALID": true,
+            "F01A_SURFACE_PATTERN": "partially covered reflective surface",
+            "F01A_BEARING_RELATION": "varying between scans",
+            "reflectance_range": [0.18, 0.69],
+            "paired_D_C": [2.2, 1.4],
+            "calibration_and_sensor_quality": "pass"
+          },
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Zero selector matches: partial reflective coverage and varying bearing do not establish the specified silver-film and toward-sun pattern.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "REPEAT_THERMAL_SCAN: the valid pair straddles 2.0 °C. Its difference is 0.8 °C, not greater than 0.8 °C.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "ROUTINE_MONITORING",
+        "SOIL_MOISTURE_CONFIRMATION",
+        "REPEAT_THERMAL_SCAN",
+        "INPUT_INVALID"
+      ],
+      "fallback": "RECONCILE; preserve the M0 repeat-scan pathway and request independent review if the measurement context remains unresolved.",
+      "scope": "Outside the selector's licensed pattern. No reflectance cutoff or corrected thermal threshold is established for partial coverage or varying bearing.",
+      "rationale": "The supplied valid readings do not trigger the invalid-measurement stop. Neither the surface nor bearing matches the selector. M0 requires REPEAT_THERMAL_SCAN because 2.2/1.4 °C straddles its threshold; check setup and establish a consistent measurement context.",
+      "route_trace": {
+        "policy_id": "POLICY_F01_A",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F01A_MEASUREMENT_VALID",
+          "F01A_SURFACE_PATTERN",
+          "F01A_BEARING_RELATION"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "task229-h1-dispatch-receipt-v1",
+  "started_at_utc": "2026-09-30T21:45:20.286071Z",
+  "source_path": "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/when-systems-catch-fire-r1/ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/prompts/17-6301b4fae5d0903958a7308be5e8c94c.md",
+  "expected_sha256": "367ded5556ea4b8fa610731fd4c4de07bc48d63fe3562642322df36c0e42c4a8",
+  "cli_requested_path": "codex",
+  "model_requested": "gpt-6-astra",
+  "reasoning_effort_requested": "medium",
+  "shell": false,
+  "stdin_transport": "subprocess.Popen.communicate(input=source_bytes)",
+  "freshness": {
+    "resume_subcommand": false,
+    "ephemeral_flag": true
+  },
+  "prelaunch": {
+    "source_byte_length": 30365,
+    "source_sha256": "367ded5556ea4b8fa610731fd4c4de07bc48d63fe3562642322df36c0e42c4a8",
+    "strict_utf8_decode": true,
+    "utf8_roundtrip_equal": true,
+    "outbound_byte_length": 30365,
+    "outbound_sha256": "367ded5556ea4b8fa610731fd4c4de07bc48d63fe3562642322df36c0e42c4a8",
+    "outbound_equals_source": true,
+    "cli_resolved_path": "/Users/zhiyuan/.local/lib/node_modules/@openai/codex/bin/codex.js",
+    "workspace_path": "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/when-systems-catch-fire-r1/ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/session-workspaces/task229-h1-fresh-xi7u57ym",
+    "workspace_empty_at_launch": true,
+    "command_argv_no_prompt_content": true,
+    "argv": [
+      "/Users/zhiyuan/.local/bin/codex",
+      "exec",
+      "--ephemeral",
+      "--ignore-user-config",
+      "--ignore-rules",
+      "--strict-config",
+      "--model",
+      "gpt-6-astra",
+      "--config",
+      "model_reasoning_effort=\"medium\"",
+      "--sandbox",
+      "read-only",
+      "--cd",
+      "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/when-systems-catch-fire-r1/ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/session-workspaces/task229-h1-fresh-xi7u57ym",
+      "--skip-git-repo-check",
+      "--json",
+      "--color",
+      "never",
+      "--output-last-message",
+      "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/when-systems-catch-fire-r1/ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/17-6301b4fae5d0903958a7308be5e8c94c/attempt-01/last-message.txt",
+      "-"
+    ]
+  },
+  "process": {
+    "pid": 76000,
+    "launch_time_utc": "2026-09-30T21:45:20.286931Z",
+    "fresh_process": true,
+    "ended_at_utc": "2026-09-30T21:46:19.929672Z",
+    "duration_observed": true,
+    "return_code": 0,
+    "timed_out": false,
+    "stdin_request_byte_length": 30365,
+    "stdin_request_sha256": "367ded5556ea4b8fa610731fd4c4de07bc48d63fe3562642322df36c0e42c4a8",
+    "stdin_pipe_closed_by_communicate": true,
+    "argv_uses_resume": false,
+    "ephemeral_requested": true,
+    "session_ids_observed": [
+      "01a0f447-7ad3-7c90-8f3c-d2a90f9a03e1"
+    ]
+  },
+  "capture": {
+    "last_message_file": "last-message.txt",
+    "last_message_sha256": "37a6368a223c184b8664086adfe4c12dcfec22625565f83a63499881de8a5260",
+    "stdout_file": "stdout.jsonl",
+    "stdout_sha256": "01a773087863b0f5756259d8836ef2bfab85fc0e027942fe4588ce0fc577c4fa",
+    "stderr_file": "stderr.txt",
+    "stderr_sha256": "1b7be7ab49b80ccff73d91c0d2604ca8fa0efa67845645f401dec57eaeeec10d",
+    "jsonl_event_types": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "agent_message_count": 1,
+    "agent_message_sha256": [
+      "37a6368a223c184b8664086adfe4c12dcfec22625565f83a63499881de8a5260"
+    ],
+    "observed_models": [],
+    "observed_efforts": [],
+    "last_message_captured": true,
+    "jsonl_final_message_captured": true
+  },
+  "status": "COMPLETED",
+  "finished_at_utc": "2026-09-30T21:46:19.931705Z"
+}

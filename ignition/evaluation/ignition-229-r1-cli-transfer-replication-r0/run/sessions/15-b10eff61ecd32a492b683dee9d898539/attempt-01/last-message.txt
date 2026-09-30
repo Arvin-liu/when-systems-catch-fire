@@ -1,0 +1,82 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "F02A_GRAVIMETRIC_REVIEW",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "F02A_MEASUREMENT_VALID", "value": true, "unit": null},
+        {"name": "F02A_COMPOSITION_PATTERN", "value": "observed_organic_floc_cases", "unit": null},
+        {"name": "turbidity", "value": 150, "unit": "NTU"},
+        {"name": "composition_assay", "value": {"mineral_grains_percent": 21, "organic_flocs_percent": 46, "remainder": "mixed fines", "reproducible": true}, "unit": null},
+        {"name": "turbidity_duplicates", "value": "Checks pass; individual readings not supplied.", "unit": null},
+        {"name": "M0_estimate_for_comparison", "value": 214.5, "unit": "mg/L"},
+        {"name": "independent_gravimetric_result", "value": null, "unit": "mg/L"}
+      ],
+      "preserved_baseline_action_ids": ["REPORT_ESTIMATE", "REPEAT_SAMPLE", "FLAG_OUT_OF_RANGE", "INVALID_MEASUREMENT"],
+      "fallback": null,
+      "scope": "Independent gravimetric review of the represented organic-floc pattern. The M0 uncertainty band is not established for this composition.",
+      "rationale": "Valid measurement and reproducible 21% mineral grains / 46% organic flocs match F02A_OBSERVED_ORGANIC_FLOC_PATTERN, whose action reference is F02A_GRAVIMETRIC_REVIEW. Record the M0 calculation as a comparison and obtain independent gravimetry; no replacement formula or composition cutoff is established.",
+      "route_trace": {
+        "policy_id": "POLICY_F02_A",
+        "route_type": "selector",
+        "selected_rule_id": "F02A_OBSERVED_ORGANIC_FLOC_PATTERN",
+        "selected_action_id": "F02A_GRAVIMETRIC_REVIEW",
+        "input_ids": ["F02A_MEASUREMENT_VALID", "F02A_COMPOSITION_PATTERN"],
+        "preserved_baseline_action_ids": ["REPORT_ESTIMATE", "REPEAT_SAMPLE", "FLAG_OUT_OF_RANGE", "INVALID_MEASUREMENT"]
+      }
+    },
+    {
+      "case_id": "B",
+      "primary_action": "REPORT_ESTIMATE",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "supplied_inputs", "value": {"F02A_MEASUREMENT_VALID": true, "F02A_COMPOSITION_PATTERN": "Reproducible measured mineral-dominant pattern", "turbidity_NTU": 250, "mineral_grains_percent": 84, "organic_flocs_percent": 3, "blank_cell_duplicate_custody_checks": "pass"}, "unit": null},
+        {"name": "fallback_reason", "value": "Zero selector matches: the mineral-dominant pattern is outside the organic-floc selector.", "unit": null},
+        {"name": "M0_pathway_status", "value": "Applicable: valid in-range measurement matching the original mineral-dominant matrix; REPORT_ESTIMATE.", "unit": null},
+        {"name": "M0_estimated_TSS", "value": 349.5, "unit": "mg/L"},
+        {"name": "original_matrix_calibration_uncertainty", "value": 12, "unit": "mg/L"},
+        {"name": "source_method", "value": "CE-F02-M0-R0", "unit": null},
+        {"name": "validated_turbidity_range", "value": [0, 500], "unit": "NTU"},
+        {"name": "independent_gravimetric_result", "value": null, "unit": "mg/L"}
+      ],
+      "preserved_baseline_action_ids": ["REPORT_ESTIMATE", "REPEAT_SAMPLE", "FLAG_OUT_OF_RANGE", "INVALID_MEASUREMENT"],
+      "fallback": "RECONCILE: record supplied inputs and zero-match reason; retain and apply the M0 pathway.",
+      "scope": "Report 349.5 mg/L with the original mineral-matrix calibration band of ±12 mg/L. No case-specific gravimetric verification is available.",
+      "rationale": "The organic-floc selector does not match. The preserved M0 pathway applies to the supplied mineral-dominant pattern and yields 1.35 × 250 + 12 = 349.5 mg/L.",
+      "route_trace": {
+        "policy_id": "POLICY_F02_A",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": ["F02A_MEASUREMENT_VALID", "F02A_COMPOSITION_PATTERN"],
+        "preserved_baseline_action_ids": ["REPORT_ESTIMATE", "REPEAT_SAMPLE", "FLAG_OUT_OF_RANGE", "INVALID_MEASUREMENT"]
+      }
+    },
+    {
+      "case_id": "C",
+      "primary_action": "RECONCILE",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "supplied_inputs", "value": {"F02A_MEASUREMENT_VALID": true, "F02A_COMPOSITION_PATTERN": "Nonreproducible composition; no stable match to either measured pattern", "turbidity_NTU": 155, "blank_cell_turbidity_duplicate_checks": "pass", "composition_aliquots_reproducible": false}, "unit": null},
+        {"name": "fallback_reason", "value": "Zero selector matches: composition does not reproducibly match the observed organic-floc category.", "unit": null},
+        {"name": "M0_pathway_status", "value": "Preserved. Turbidity passes the supplied quality and range checks, but composition uncertainty prevents treating the calculation as a supported mass estimate for this sample.", "unit": null},
+        {"name": "M0_estimate_for_comparison", "value": 221.25, "unit": "mg/L"},
+        {"name": "independent_gravimetric_result", "value": null, "unit": "mg/L"}
+      ],
+      "preserved_baseline_action_ids": ["REPORT_ESTIMATE", "REPEAT_SAMPLE", "FLAG_OUT_OF_RANGE", "INVALID_MEASUREMENT"],
+      "fallback": "RECONCILE: retain supplied values and M0 calculation, document unstable composition, and request independent composition and gravimetric review.",
+      "scope": "No supported composition-specific point mapping or ±12 mg/L uncertainty claim. M0 remains available without extending its validated matrix.",
+      "rationale": "Unstable composition does not match the selector and does not invalidate the passing turbidity checks. The measurement-invalid stop is not triggered. The arithmetic M0 result is 1.35 × 155 + 12 = 221.25 mg/L, retained only for comparison pending independent review.",
+      "route_trace": {
+        "policy_id": "POLICY_F02_A",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": ["F02A_MEASUREMENT_VALID", "F02A_COMPOSITION_PATTERN"],
+        "preserved_baseline_action_ids": ["REPORT_ESTIMATE", "REPEAT_SAMPLE", "FLAG_OUT_OF_RANGE", "INVALID_MEASUREMENT"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "SCREEN_PASS",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "P_excursion_duration", "value": 9, "unit": "minutes"},
+        {"name": "P_peak_temperature", "value": 13.7, "unit": "°C"},
+        {"name": "S_excursion_duration", "value": 10, "unit": "minutes"},
+        {"name": "S_peak_temperature", "value": 14.0, "unit": "°C"},
+        {"name": "selected_review_lot", "value": null, "unit": null}
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": "M0 supplies no criterion for allocating the single review slot between these lots.",
+      "scope": "Both lots pass the M0 interval-mean screen; review-slot allocation is undetermined.",
+      "rationale": "Both lots satisfy the required logger checks and mean criterion. M0 contains no formulation-specific priority, peak-temperature threshold, pulse-duration rule, or tie-breaker. Selecting either lot for preferential review would require an unsupported rule. Neither pass establishes stability under the observed excursions."
+    },
+    {
+      "case_id": "B",
+      "primary_action": "SCREEN_PASS",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "all_segment_and_shipment_means_below_8_C", "value": true, "unit": null},
+        {"name": "above_12_C_pulse_present", "value": false, "unit": null}
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": null,
+      "scope": "M0 temperature screening only.",
+      "rationale": "Required inputs and logger checks pass, and all means are below 8.0 °C. The high-rate observation does not introduce an additional M0 criterion. This is a triage pass, not an unconditional product-safety guarantee."
+    },
+    {
+      "case_id": "C",
+      "primary_action": "SCREEN_PASS",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "all_required_logger_means_below_8_C", "value": true, "unit": null},
+        {"name": "high_rate_trace_custody_gap", "value": true, "unit": null},
+        {"name": "pulse_duration", "value": null, "unit": "minutes"}
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": null,
+      "scope": "M0 interval-mean screening only; pulse duration remains unknown.",
+      "rationale": "The required 15-minute logger record is complete, its checks pass, and its means are below 8.0 °C. The custody gap affects the supplemental high-rate trace, which M0 does not require. It prevents a pulse-duration conclusion but does not invalidate the supplied M0 inputs or establish product safety."
+    }
+  ]
+}

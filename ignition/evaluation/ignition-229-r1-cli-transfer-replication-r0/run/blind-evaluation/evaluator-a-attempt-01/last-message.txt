@@ -1,0 +1,329 @@
+{
+  "schema_version": "task229-blind-evaluation-r0",
+  "rows": [
+    {
+      "response_id": "f1def88a5b615f95ba55e958105ef5e2",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: retains SCREEN_PASS with valid means and no above-12 °C pulse."
+    },
+    {
+      "response_id": "662e88d62aaebbd2b42311192753c0e7",
+      "case_id": "A",
+      "success": true,
+      "criterion_reference": "A target: reports 131 mg/L using bounded floc-rich interpolation within 100–300 NTU and explicitly excludes the M0 uncertainty band."
+    },
+    {
+      "response_id": "f94c4d6279b469c9e0fce07b6af2773b",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: selects M0 soil-moisture confirmation and fixed root-zone VWC measurement."
+    },
+    {
+      "response_id": "ce9d9d8d72b1a2a5fb19a644043e6e43",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: reports 349.5 mg/L from the M0 mineral-dominant formula within baseline scope."
+    },
+    {
+      "response_id": "2ca23cdffc099bda5fbf5fc0a9bdf5e1",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: retains SCREEN_PASS for the complete passing record without a safety guarantee."
+    },
+    {
+      "response_id": "983ab8830146749ba168d575af3d2bd5",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: requires context reacquisition and REPEAT_THERMAL_SCAN for partial coverage, varying bearing, and the straddling pair."
+    },
+    {
+      "response_id": "6e5d8c4bcabee07acfe7cd6195b096a3",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires two same-canopy away-sun 8-degree scans, immediate contact references after each, and recorded comparisons before mandatory soil confirmation; a generic repeat and contact check omit these requirements."
+    },
+    {
+      "response_id": "03b8be9bcfb1bb871bbe6b50e9cd7765",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: repeats the straddling pair with consistent geometry and a checked mask without imputing a reflective-context correction."
+    },
+    {
+      "response_id": "fb685f8dc67903c2d6f7fce132440774",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires the bounded 131 mg/L estimate; response instead requests gravimetric review and reports only the 214.5 mg/L M0 comparison."
+    },
+    {
+      "response_id": "97fb12c457a2fc7c0c46f1fdc367e46c",
+      "case_id": "C",
+      "success": false,
+      "criterion_reference": "C target requires reconciliation followed by UNSCORABLE if the trace remains unresolved; response requests reacquisition and reconciliation but omits that conditional outcome."
+    },
+    {
+      "response_id": "5c55e2d3130bd4e785b9997ba8586de2",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: explicitly applies REPORT_ESTIMATE at 349.5 mg/L using the M0 mineral-dominant formula and original scope."
+    },
+    {
+      "response_id": "904d032fe817d4223c4802af2b60f26b",
+      "case_id": "A",
+      "success": true,
+      "criterion_reference": "A target: selects P for the single stability-review slot, retains both baseline passes, and makes no degradation or universal-threshold claim."
+    },
+    {
+      "response_id": "fa9fbcffa5486d424454a9989bf2f17d",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: reports 349.5 mg/L from M0 within the original mineral-matrix scope."
+    },
+    {
+      "response_id": "547a7eece054e0524a605b903a3ceb4f",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: explicitly retains soil-moisture confirmation for the valid stable ordinary-surface pair."
+    },
+    {
+      "response_id": "f819ae9e1820146d713440e9fa8b766e",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: reacquires a comparable thermal pair after geometry and mask checks, without applying the stable reflective-context rule."
+    },
+    {
+      "response_id": "ea671a01433640082d83f0f92039cc3b",
+      "case_id": "A",
+      "success": true,
+      "criterion_reference": "A target: explicitly allocates the review slot to P and retains SCREEN_PASS for both lots without asserting degradation or a universal threshold."
+    },
+    {
+      "response_id": "393767a58265ea401f3d156ef07d20df",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: requests reconciliation and independent review of unresolved composition and gravimetric evidence; does not license a point estimate."
+    },
+    {
+      "response_id": "245b5dc746c6fdb057c6874b09967a24",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: retains SCREEN_PASS with passing means and a complete trace lacking the pulse."
+    },
+    {
+      "response_id": "a668ef4790e47b26f149c805522dea14",
+      "case_id": "C",
+      "success": false,
+      "criterion_reference": "C target requires high-rate trace reconciliation and conditional UNSCORABLE; response provides only SCREEN_PASS."
+    },
+    {
+      "response_id": "7e737f378825a844d535bca39b496e4c",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires two same-canopy away-sun 8-degree scans with immediate contact references and recorded comparisons; independent contact and VWC review omit that procedure."
+    },
+    {
+      "response_id": "22f7557526cfe5413bf7b0b5a29d2435",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires the specified reflection-control scans and contact comparisons before soil confirmation; response supplies only soil confirmation."
+    },
+    {
+      "response_id": "8045401c916146730f74afdea5ed6670",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: reports the required 349.5 mg/L using M0 and preserves mineral-dominant calibration scope."
+    },
+    {
+      "response_id": "3a7a930da04fb9c67ac35c4a76ff75a9",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: requests composition and gravimetric review, retaining M0 arithmetic only for comparison rather than a supported estimate."
+    },
+    {
+      "response_id": "a39524e0c5a752fcaf12206192ea9ea4",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: reports 349.5 mg/L from the applicable M0 mineral-dominant formula."
+    },
+    {
+      "response_id": "4e13824968d41a0067b3ef167038d9d8",
+      "case_id": "C",
+      "success": false,
+      "criterion_reference": "C target requires RECONCILE_LOGGER and UNSCORABLE if unresolved; response leaves the high-rate gap unresolved with SCREEN_PASS alone."
+    },
+    {
+      "response_id": "df88e6f4fc36e8425d602afa5afc6977",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: preserves REPEAT_THERMAL_SCAN and requires a consistent measurement context for the straddling pair."
+    },
+    {
+      "response_id": "2f81a72d57777e58750f0f69a33d8d90",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires the two away-sun 8-degree scans and immediate paired contact checks; response selects only soil-moisture confirmation."
+    },
+    {
+      "response_id": "be93cc5dab7fce5d8f19c4334cc4493c",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: reconciles high-rate custody and exposure records, with UNSCORABLE if recovery fails and no pulse imputation."
+    },
+    {
+      "response_id": "6b467b92418e536a055066f04c0630dd",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: selects RECONCILE_LOGGER and conditional UNSCORABLE while preserving uncertainty about pulse exposure."
+    },
+    {
+      "response_id": "6c96feef50b08a2c3f1552623240105e",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: selects soil-moisture confirmation with fixed root-zone VWC measurement."
+    },
+    {
+      "response_id": "151025b2cbab28dc5ef4b0108a88433a",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires 131 mg/L from bounded floc-rich interpolation; response reports 214.5 mg/L from M0."
+    },
+    {
+      "response_id": "6c75505f61d1374bae31597bebd84ce0",
+      "case_id": "C",
+      "success": false,
+      "criterion_reference": "C target requires composition reconciliation or gravimetry; response reports 221.25 mg/L without either fallback action."
+    },
+    {
+      "response_id": "70d684380ccf586d316c234502b144ed",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires the bounded floc-rich estimate of 131 mg/L; response instead reports 214.5 mg/L."
+    },
+    {
+      "response_id": "ab5427670c8610b861d1124dbba56926",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: retains SCREEN_PASS for the valid below-8 °C mean record."
+    },
+    {
+      "response_id": "d2f11ed64387b39e6fd0712bf628672b",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: explicitly applies and preserves SCREEN_PASS for the complete valid record without the observed pulse."
+    },
+    {
+      "response_id": "c2221e51bae3005ed6e00fd2624a43b0",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires reporting 131 mg/L using bounded interpolation; response withholds the estimate."
+    },
+    {
+      "response_id": "236e679839b0e0a7a3602b5e05254e85",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: explicitly preserves and executes M0 soil-moisture confirmation for the ordinary-surface pair."
+    },
+    {
+      "response_id": "9a06c13f562679df6d24a50f0f675026",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: withholds an unsupported estimate and specifies representative sampling and independent gravimetry to resolve variability."
+    },
+    {
+      "response_id": "c098cd5db06985ea64acb4eca82d59da",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires selecting P for the review slot while retaining baseline passes; response leaves the selected lot null."
+    },
+    {
+      "response_id": "29a9a4015be2beeb44e9c37f7a88363b",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: includes SCREEN_PASS and explicitly preserves its application to the complete passing record."
+    },
+    {
+      "response_id": "69038b7f6a4dec2ecd54916eb6fae0a4",
+      "case_id": "A",
+      "success": true,
+      "criterion_reference": "A target: allocates the single review slot to P, preserves both baseline mean passes, and avoids degradation and universal-threshold claims."
+    },
+    {
+      "response_id": "847ea5c5a756c907d77a0a280db65e72",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: requires repeat thermal acquisition after setup checks because the valid pair straddles 2.0 °C."
+    },
+    {
+      "response_id": "e4d0b1862b288176bddc98d1e75c83a0",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: selects M0 soil-moisture confirmation and retains independent VWC review."
+    },
+    {
+      "response_id": "95f94b9aa682bc3b894514b7458fabba",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: repeats thermal acquisition after setup checks for the straddling pair without inventing reflectance or bearing thresholds."
+    },
+    {
+      "response_id": "af5bbe52499a7b8501ce3238cdba7722",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires two same-canopy away-sun 8-degree scans, immediate contact checks, and comparisons before mandatory soil confirmation; response omits the control procedure."
+    },
+    {
+      "response_id": "52957aa4d457b1f9edaa0019771b25a8",
+      "case_id": "C",
+      "success": false,
+      "criterion_reference": "C target requires composition reconciliation or gravimetry; response reports an M0 point estimate with no resolving action."
+    },
+    {
+      "response_id": "e063662dd49b892ae038c68dc19a9251",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: selects soil-moisture confirmation and sends a technician for fixed root-zone VWC measurement."
+    },
+    {
+      "response_id": "cb7e76b7e564dac41f0fe9931389ac3b",
+      "case_id": "B",
+      "success": true,
+      "criterion_reference": "B preservation: reports 349.5 mg/L using the applicable M0 mineral-dominant formula and calibration scope."
+    },
+    {
+      "response_id": "e886b7cdf0af619cc7aea7999211ab9a",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires the specified reflection-control scans and immediate contact comparisons; response provides soil confirmation alone."
+    },
+    {
+      "response_id": "c3e3dbc5739f7418ca3b35dd2d76953e",
+      "case_id": "C",
+      "success": true,
+      "criterion_reference": "C fallback: withholds a point estimate and obtains independent gravimetry across representative aliquots before reassessing composition."
+    },
+    {
+      "response_id": "464b06373436e6e9d4cb18ee09ce2637",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires selecting P for stability review; response leaves review allocation undetermined."
+    },
+    {
+      "response_id": "09d2e1f037351ffc8f86e28a7bba2c85",
+      "case_id": "A",
+      "success": false,
+      "criterion_reference": "A target requires reporting 131 mg/L from bounded floc-rich interpolation; response supplies reconciliation and an M0 comparison only."
+    },
+    {
+      "response_id": "34aa2167ec5062dac28a375125e89bea",
+      "case_id": "A",
+      "success": true,
+      "criterion_reference": "A target: selects verified P with its complete 9-minute, 13.7 °C trace for review, retains both baseline passes, and avoids degradation or universal-threshold claims."
+    },
+    {
+      "response_id": "34c08afd5adb24d0c0e7509566fc8efc",
+      "case_id": "C",
+      "success": false,
+      "criterion_reference": "C target requires UNSCORABLE if high-rate trace reconciliation remains unresolved; response requests reconciliation but omits that conditional outcome."
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+2026-09-30T21:44:47.597084Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-30T21:44:47.603105Z  WARN codex_rollout::list: state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back
+2026-09-30T21:44:47.657247Z ERROR codex_core::session::session: failed to load skill /Users/zhiyuan/.agents/skills/azure-app-onboard/deploy/SKILL.md: missing YAML frontmatter delimited by ---
+2026-09-30T21:44:47.657257Z ERROR codex_core::session::session: failed to load skill /Users/zhiyuan/.agents/skills/azure-app-onboard/prepare/SKILL.md: missing YAML frontmatter delimited by ---
+2026-09-30T21:44:47.657258Z ERROR codex_core::session::session: failed to load skill /Users/zhiyuan/.agents/skills/azure-app-onboard/scaffold/SKILL.md: missing YAML frontmatter delimited by ---

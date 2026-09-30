@@ -1,0 +1,71 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "REPORT_ESTIMATE",
+      "additional_actions": [
+        "Obtain independent gravimetric confirmation."
+      ],
+      "reported_values": [
+        {
+          "name": "Provisional floc-rich TSS estimate",
+          "value": 131,
+          "unit": "mg/L"
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "REPORT_ESTIMATE",
+        "REPEAT_SAMPLE",
+        "FLAG_OUT_OF_RANGE",
+        "INVALID_MEASUREMENT"
+      ],
+      "fallback": "Use independent constant-weight gravimetry if a confirmed concentration is required.",
+      "scope": "Provisional interpolation within the observed floc-rich pattern and 100–300 NTU interval; no validated uncertainty band.",
+      "rationale": "The reproducible composition matches OBS-04. OBS-04 through OBS-06 support the provisional local relationship TSS = 0.80 × T + 11, yielding 131 mg/L at 150 NTU. This is an inferred interpolation, not a supplied or validated revised calibration. M0's universal composition premise is contradicted by these observations, and its ±12 mg/L band cannot be transferred to this estimate."
+    },
+    {
+      "case_id": "B",
+      "primary_action": "REPORT_ESTIMATE",
+      "additional_actions": [],
+      "reported_values": [
+        {
+          "name": "M0 TSS estimate",
+          "value": 349.5,
+          "unit": "mg/L"
+        },
+        {
+          "name": "Original mineral-matrix calibration uncertainty band",
+          "value": 12,
+          "unit": "mg/L"
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "REPORT_ESTIMATE",
+        "REPEAT_SAMPLE",
+        "FLAG_OUT_OF_RANGE",
+        "INVALID_MEASUREMENT"
+      ],
+      "fallback": null,
+      "scope": "M0 mineral-dominant calibration scope, 0–500 NTU; uncertainty band is ±12 mg/L for the original calibration matrix.",
+      "rationale": "Checks pass, turbidity is in range, and composition matches the mineral-dominant pattern supported by OBS-01 through OBS-03. Applying M0 gives 1.35 × 250 + 12 = 349.5 mg/L. No gravimetric reference confirms this individual estimate."
+    },
+    {
+      "case_id": "C",
+      "primary_action": "Withhold a TSS point estimate.",
+      "additional_actions": [
+        "Obtain independent constant-weight gravimetry across representative aliquots."
+      ],
+      "reported_values": [],
+      "preserved_baseline_action_ids": [
+        "REPORT_ESTIMATE",
+        "REPEAT_SAMPLE",
+        "FLAG_OUT_OF_RANGE",
+        "INVALID_MEASUREMENT"
+      ],
+      "fallback": "Report aliquot-specific gravimetric results and their spread; reassess composition reproducibility before selecting a calibration.",
+      "scope": "Composition-variable sample without a supported reproducible turbidity-to-mass mapping.",
+      "rationale": "Stable turbidity does not resolve aliquot-dependent composition. OBS-08 demonstrates differing gravimetric outcomes despite stable turbidity. Neither observed composition pattern can be selected, and no mixture threshold is supplied. Passing instrument checks does not justify INVALID_MEASUREMENT, while an in-range reading does not justify FLAG_OUT_OF_RANGE."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "SCREEN_PASS",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "group_P_screen", "value": "SCREEN_PASS", "unit": null},
+        {"name": "group_S_screen", "value": "SCREEN_PASS", "unit": null},
+        {"name": "selected_review_lot", "value": null, "unit": null}
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": "The supplied method provides no basis to select one lot for the review slot.",
+      "scope": "M0 interval-mean screening of both lots; review priority is undetermined.",
+      "rationale": "Both lots satisfy M0's required checks and mean criterion. M0 contains no formulation-specific ranking, peak-temperature rule, pulse-duration rule, or tie-breaker. Selecting one preferentially would require an unsupported rule."
+    },
+    {
+      "case_id": "B",
+      "primary_action": "SCREEN_PASS",
+      "additional_actions": [],
+      "reported_values": [],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": null,
+      "scope": "M0 temperature triage, not an unconditional product-safety guarantee.",
+      "rationale": "Required logger records and provenance checks pass, and every segment and shipment mean is below 8.0 °C. The absence of an above-12 °C pulse is not an M0 selection criterion."
+    },
+    {
+      "case_id": "C",
+      "primary_action": "SCREEN_PASS",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "high_rate_pulse_duration", "value": null, "unit": "minutes"}
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": null,
+      "scope": "M0 screening using the complete validated 15-minute logger; high-rate pulse exposure remains unresolved.",
+      "rationale": "The required 15-minute logger checks pass and its means are below 8.0 °C. The custody gap affects the supplementary high-rate trace, which M0 does not require or use to determine pulse duration. It does not establish a failure of the required logger's custody checks."
+    }
+  ]
+}
