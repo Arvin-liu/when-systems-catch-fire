@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task229-successor-output-r0",
+  "title": "Task229 successor response envelope R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "responses"],
+  "properties": {
+    "schema_version": {"const": "task229-successor-output-r0"},
+    "responses": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"$ref": "#/$defs/case_response"}
+    }
+  },
+  "$defs": {
+    "reported_value": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "value", "unit"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "value": {},
+        "unit": {"type": ["string", "null"]}
+      }
+    },
+    "route_trace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["policy_id", "route_type", "selected_rule_id", "selected_action_id", "input_ids", "preserved_baseline_action_ids"],
+      "properties": {
+        "policy_id": {"type": "string", "minLength": 1},
+        "route_type": {"enum": ["selector", "fallback", "stop"]},
+        "selected_rule_id": {"type": ["string", "null"]},
+        "selected_action_id": {"type": ["string", "null"]},
+        "input_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "preserved_baseline_action_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "case_response": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["case_id", "primary_action", "additional_actions", "reported_values", "preserved_baseline_action_ids", "fallback", "scope", "rationale"],
+          "properties": {
+            "case_id": {"enum": ["A", "B", "C"]},
+            "primary_action": {"type": "string", "minLength": 1},
+            "additional_actions": {"type": "array", "items": {"type": "string"}},
+            "reported_values": {"type": "array", "items": {"$ref": "#/$defs/reported_value"}},
+            "preserved_baseline_action_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+            "fallback": {"type": ["string", "null"]},
+            "scope": {"type": "string"},
+            "rationale": {"type": "string"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["case_id", "primary_action", "additional_actions", "reported_values", "preserved_baseline_action_ids", "fallback", "scope", "rationale", "route_trace"],
+          "properties": {
+            "case_id": {"enum": ["A", "B", "C"]},
+            "primary_action": {"type": "string", "minLength": 1},
+            "additional_actions": {"type": "array", "items": {"type": "string"}},
+            "reported_values": {"type": "array", "items": {"$ref": "#/$defs/reported_value"}},
+            "preserved_baseline_action_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+            "fallback": {"type": ["string", "null"]},
+            "scope": {"type": "string"},
+            "rationale": {"type": "string"},
+            "route_trace": {"$ref": "#/$defs/route_trace"}
+          }
+        }
+      ]
+    }
+  }
+}

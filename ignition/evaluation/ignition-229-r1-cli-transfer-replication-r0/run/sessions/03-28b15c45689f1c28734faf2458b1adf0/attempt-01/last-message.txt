@@ -1,0 +1,179 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "RECONCILE",
+      "additional_actions": ["SOIL_MOISTURE_CONFIRMATION"],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F01B_MEASUREMENT_VALID": true,
+            "F01B_SURFACE_COVERAGE_COMPLETE": null,
+            "F01B_PAIRED_READING_PATTERN": "stable",
+            "surface": "reflective silver film",
+            "reflectance": 0.72,
+            "bearing": "toward sun",
+            "off_nadir_degrees": 21,
+            "paired_D_C": [2.7, 2.6]
+          },
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Surface-coverage completeness is not explicitly supplied; stable readings do not match the variable_observed selector condition.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "SOIL_MOISTURE_CONFIRMATION: valid paired readings differ by 0.1 °C and both meet the 2.0 °C threshold.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "ROUTINE_MONITORING",
+        "SOIL_MOISTURE_CONFIRMATION",
+        "REPEAT_THERMAL_SCAN",
+        "INPUT_INVALID"
+      ],
+      "fallback": "Record supplied values and unmatched routing; retain M0 soil-moisture confirmation and request independent review when needed.",
+      "scope": "No reflective-surface cutoff or thermal correction is supplied. Thermal evidence does not authorize irrigation.",
+      "rationale": "The bounded selector does not match. The preserved M0 pathway prioritizes an independent VWC measurement.",
+      "route_trace": {
+        "policy_id": "POLICY_F01_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F01B_MEASUREMENT_VALID",
+          "F01B_SURFACE_COVERAGE_COMPLETE",
+          "F01B_PAIRED_READING_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      }
+    },
+    {
+      "case_id": "B",
+      "primary_action": "RECONCILE",
+      "additional_actions": ["SOIL_MOISTURE_CONFIRMATION"],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F01B_MEASUREMENT_VALID": true,
+            "F01B_SURFACE_COVERAGE_COMPLETE": null,
+            "F01B_PAIRED_READING_PATTERN": "stable",
+            "surface": "ordinary mineral soil",
+            "reflectance": 0.15,
+            "bearing": "toward sun",
+            "off_nadir_degrees": 21,
+            "paired_D_C": [2.5, 2.4]
+          },
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Surface-coverage completeness is not explicitly supplied; stable readings do not match the variable_observed selector condition.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "SOIL_MOISTURE_CONFIRMATION: valid paired readings differ by 0.1 °C and both meet the 2.0 °C threshold.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "ROUTINE_MONITORING",
+        "SOIL_MOISTURE_CONFIRMATION",
+        "REPEAT_THERMAL_SCAN",
+        "INPUT_INVALID"
+      ],
+      "fallback": "Record supplied values and unmatched routing; retain M0 soil-moisture confirmation and request independent review when needed.",
+      "scope": "The ordinary-surface M0 pathway remains available. Thermal evidence does not authorize irrigation.",
+      "rationale": "The bounded selector does not match. Both valid stable D readings trigger confirmation under M0.",
+      "route_trace": {
+        "policy_id": "POLICY_F01_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F01B_MEASUREMENT_VALID",
+          "F01B_SURFACE_COVERAGE_COMPLETE",
+          "F01B_PAIRED_READING_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      }
+    },
+    {
+      "case_id": "C",
+      "primary_action": "F01B_REACQUIRE_CONTEXT",
+      "additional_actions": ["REPEAT_THERMAL_SCAN"],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F01B_MEASUREMENT_VALID": true,
+            "F01B_SURFACE_COVERAGE_COMPLETE": false,
+            "F01B_PAIRED_READING_PATTERN": "variable_observed"
+          },
+          "unit": null
+        },
+        {
+          "name": "F01B_COVERAGE_AND_VARIATION",
+          "value": {
+            "surface_coverage": "partial reflective coverage",
+            "reflectance_range": [0.18, 0.69],
+            "scan_bearing": "varies between scans",
+            "paired_D_C": [2.2, 1.4],
+            "mask_status": "not separately supplied",
+            "contact_reference_variation": "not supplied",
+            "calibration_and_sensor_quality": "pass"
+          },
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "REPEAT_THERMAL_SCAN: the pair straddles 2.0 °C; its 0.8 °C difference does not exceed the disagreement limit.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "ROUTINE_MONITORING",
+        "SOIL_MOISTURE_CONFIRMATION",
+        "REPEAT_THERMAL_SCAN",
+        "INPUT_INVALID"
+      ],
+      "fallback": null,
+      "scope": "Reacquire complete surface and paired-reading context for this incomplete-coverage, variable-reading pattern. No new numeric threshold or causal conclusion is established.",
+      "rationale": "Valid measurements, partial coverage, and the observed variable pair match F01B_INCOMPLETE_VARIABLE_CONTEXT, whose action_ref is F01B_REACQUIRE_CONTEXT.",
+      "route_trace": {
+        "policy_id": "POLICY_F01_B",
+        "route_type": "selector",
+        "selected_rule_id": "F01B_INCOMPLETE_VARIABLE_CONTEXT",
+        "selected_action_id": "F01B_REACQUIRE_CONTEXT",
+        "input_ids": [
+          "F01B_MEASUREMENT_VALID",
+          "F01B_SURFACE_COVERAGE_COMPLETE",
+          "F01B_PAIRED_READING_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      }
+    }
+  ]
+}

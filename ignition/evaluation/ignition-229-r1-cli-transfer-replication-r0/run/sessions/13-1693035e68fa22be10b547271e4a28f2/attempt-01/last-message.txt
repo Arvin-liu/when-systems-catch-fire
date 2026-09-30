@@ -1,0 +1,134 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "RECONCILE",
+      "additional_actions": ["STABILITY_REVIEW"],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F03B_MEASUREMENT_VALID": true,
+            "F03B_HIGH_RATE_TRACE_COMPLETE": true,
+            "F03B_ASSAY_REPLICATES_RECONCILE": null,
+            "both_lots_means_below_8_C": true,
+            "group_P_excursion": {"duration_minutes": 9, "peak_C": 13.7},
+            "group_S_excursion": {"duration_minutes": 10, "peak_C": 14.0}
+          },
+          "unit": null
+        },
+        {
+          "name": "selected_review_lot",
+          "value": "P",
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Complete high-rate traces exclude the selector pattern; assay reconciliation inputs are unavailable.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "SCREEN_PASS for both lots under the baseline mean criterion.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": "Record supplied inputs and preserve M0 screening; allocate the independent review slot to group P.",
+      "scope": "Review prioritization only; no pulse threshold or confirmed degradation conclusion.",
+      "rationale": "The policy requires fallback. Within its independent-review provision, prioritize P because the supplied evidence records reduced activity in observed pulsed P lots while the observed pulsed S lot retained activity. This supports a bounded review priority, not a predicted assay result.",
+      "route_trace": {
+        "policy_id": "POLICY_F03_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": ["F03B_MEASUREMENT_VALID", "F03B_HIGH_RATE_TRACE_COMPLETE", "F03B_ASSAY_REPLICATES_RECONCILE"],
+        "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"]
+      }
+    },
+    {
+      "case_id": "B",
+      "primary_action": "RECONCILE",
+      "additional_actions": ["SCREEN_PASS"],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F03B_MEASUREMENT_VALID": true,
+            "F03B_HIGH_RATE_TRACE_COMPLETE": true,
+            "F03B_ASSAY_REPLICATES_RECONCILE": null,
+            "formulation_group": "P",
+            "all_means_below_8_C": true,
+            "above_12_C_pulse_present": false
+          },
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Complete high-rate trace excludes the selector pattern; assay reconciliation input is unavailable.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "SCREEN_PASS: required baseline checks pass and all means are below 8.0 C.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": "Record the unmatched inputs and preserve the M0 SCREEN_PASS pathway.",
+      "scope": "Baseline temperature screening only; no unconditional product-safety guarantee.",
+      "rationale": "The selector does not match. The baseline independently permits SCREEN_PASS; absence of an above-12 C pulse is not used as a new safety threshold.",
+      "route_trace": {
+        "policy_id": "POLICY_F03_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": ["F03B_MEASUREMENT_VALID", "F03B_HIGH_RATE_TRACE_COMPLETE", "F03B_ASSAY_REPLICATES_RECONCILE"],
+        "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"]
+      }
+    },
+    {
+      "case_id": "C",
+      "primary_action": "RECONCILE",
+      "additional_actions": [],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F03B_MEASUREMENT_VALID": true,
+            "F03B_HIGH_RATE_TRACE_COMPLETE": false,
+            "F03B_ASSAY_REPLICATES_RECONCILE": null,
+            "formulation_group": "P",
+            "all_means_below_8_C": true,
+            "high_rate_trace_custody_gap": true,
+            "pulse_duration": null
+          },
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Assay replicate reconciliation is unavailable; a trace gap alone does not satisfy the selector.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "The supplied passing 15-minute logger checks and means satisfy the baseline SCREEN_PASS criterion; the separate high-rate custody gap remains unresolved.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": "Record the handoff custody gap and unavailable assay information; reconcile the high-rate record and seek independent review as needed.",
+      "scope": "Record reconciliation only; neither a pulse nor degradation is established.",
+      "rationale": "Baseline measurement checks pass, while high-rate completeness is false. Missing assay evidence cannot be treated as non-reconciling replicates, so the selector is not established and fallback applies.",
+      "route_trace": {
+        "policy_id": "POLICY_F03_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": ["F03B_MEASUREMENT_VALID", "F03B_HIGH_RATE_TRACE_COMPLETE", "F03B_ASSAY_REPLICATES_RECONCILE"],
+        "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"]
+      }
+    }
+  ]
+}

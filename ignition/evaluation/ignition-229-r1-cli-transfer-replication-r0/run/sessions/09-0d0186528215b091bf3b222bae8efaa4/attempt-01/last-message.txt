@@ -1,0 +1,63 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "SOIL_MOISTURE_CONFIRMATION",
+      "additional_actions": ["REPEAT_THERMAL_SCAN"],
+      "reported_values": [
+        {"name": "D_scan_1", "value": 2.7, "unit": "°C"},
+        {"name": "D_scan_2", "value": 2.6, "unit": "°C"},
+        {"name": "surface_reflectance", "value": 0.72, "unit": null}
+      ],
+      "preserved_baseline_action_ids": [
+        "ROUTINE_MONITORING",
+        "SOIL_MOISTURE_CONFIRMATION",
+        "REPEAT_THERMAL_SCAN",
+        "INPUT_INVALID"
+      ],
+      "fallback": null,
+      "scope": "Independent soil-moisture triage only; possible reflected-radiance contamination requires investigation.",
+      "rationale": "Both valid D readings exceed M0's 2.0 °C threshold, selecting confirmation. The surface and bearing match the measurement context implicated by OBS-01 through OBS-03, so additionally repeat the scan with a bearing comparison and contact-leaf check. Those observations do not establish this case's VWC or justify a replacement threshold. Do not infer irrigation or plant stress from D alone."
+    },
+    {
+      "case_id": "B",
+      "primary_action": "SOIL_MOISTURE_CONFIRMATION",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "D_scan_1", "value": 2.5, "unit": "°C"},
+        {"name": "D_scan_2", "value": 2.4, "unit": "°C"},
+        {"name": "surface_reflectance", "value": 0.15, "unit": null}
+      ],
+      "preserved_baseline_action_ids": [
+        "ROUTINE_MONITORING",
+        "SOIL_MOISTURE_CONFIRMATION",
+        "REPEAT_THERMAL_SCAN",
+        "INPUT_INVALID"
+      ],
+      "fallback": null,
+      "scope": "M0 triage on ordinary mineral soil; irrigation remains subject to independent site evidence.",
+      "rationale": "Both valid, stable D readings exceed 2.0 °C. M0 selects a fixed root-zone VWC measurement. OBS-05 supports retaining this ordinary-surface pathway, but its VWC and plant-water observations cannot be transferred to this case."
+    },
+    {
+      "case_id": "C",
+      "primary_action": "REPEAT_THERMAL_SCAN",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "D_scan_1", "value": 2.2, "unit": "°C"},
+        {"name": "D_scan_2", "value": 1.4, "unit": "°C"},
+        {"name": "paired_D_difference", "value": 0.8, "unit": "°C"},
+        {"name": "surface_reflectance_range", "value": [0.18, 0.69], "unit": null}
+      ],
+      "preserved_baseline_action_ids": [
+        "ROUTINE_MONITORING",
+        "SOIL_MOISTURE_CONFIRMATION",
+        "REPEAT_THERMAL_SCAN",
+        "INPUT_INVALID"
+      ],
+      "fallback": "INPUT_INVALID if required setup or mask checks fail or required fields are absent.",
+      "scope": "Unresolved paired thermal signal with varying bearing and partial reflective coverage.",
+      "rationale": "The readings straddle 2.0 °C, requiring a repeat under M0. Their difference equals, rather than exceeds, 0.8 °C. Verify required setup fields and repeat with consistent geometry and a checked mask. The mixed surface context does not support a reflectance cutoff, corrected threshold, or dry-soil conclusion."
+    }
+  ]
+}

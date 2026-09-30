@@ -1,0 +1,186 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "RECONCILE",
+      "additional_actions": [],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F02B_MEASUREMENT_VALID": true,
+            "F02B_COMPOSITION_REPRODUCIBLE": true,
+            "F02B_GRAVIMETRIC_REPLICATES_AGREE": null,
+            "turbidity_NTU": 150,
+            "mineral_grains_percent": 21,
+            "organic_flocs_percent": 46,
+            "remainder": "mixed fines",
+            "gravimetric_reference": null
+          },
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Composition is reproducible, so the selector does not match; gravimetric replicate agreement is also unavailable.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "Preserved. The in-range M0 calculation is 214.5 mg/L, but its original ±12 mg/L uncertainty band is not validated for this composition.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "REPORT_ESTIMATE",
+        "REPEAT_SAMPLE",
+        "FLAG_OUT_OF_RANGE",
+        "INVALID_MEASUREMENT"
+      ],
+      "fallback": "Record supplied values and request independent review of calibration applicability.",
+      "scope": "No composition-specific point mapping or universal composition threshold is supplied.",
+      "rationale": "Valid turbidity measurements do not establish calibration accuracy for this composition. Missing gravimetric evidence cannot be treated as replicate disagreement.",
+      "route_trace": {
+        "policy_id": "POLICY_F02_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F02B_MEASUREMENT_VALID",
+          "F02B_COMPOSITION_REPRODUCIBLE",
+          "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+        ],
+        "preserved_baseline_action_ids": [
+          "REPORT_ESTIMATE",
+          "REPEAT_SAMPLE",
+          "FLAG_OUT_OF_RANGE",
+          "INVALID_MEASUREMENT"
+        ]
+      }
+    },
+    {
+      "case_id": "B",
+      "primary_action": "RECONCILE",
+      "additional_actions": [
+        "REPORT_ESTIMATE"
+      ],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F02B_MEASUREMENT_VALID": true,
+            "F02B_COMPOSITION_REPRODUCIBLE": true,
+            "F02B_GRAVIMETRIC_REPLICATES_AGREE": null,
+            "turbidity_NTU": 250,
+            "mineral_grains_percent": 84,
+            "organic_flocs_percent": 3,
+            "matches_measured_mineral_dominant_pattern": true,
+            "gravimetric_reference": null
+          },
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Reproducible composition does not match the selector; gravimetric replicate agreement is unavailable.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "Preserved and applicable to the supplied mineral-dominant pattern. REPORT_ESTIMATE uses CE-F02-M0-R0 within its 0–500 NTU range.",
+          "unit": null
+        },
+        {
+          "name": "M0_estimated_TSS",
+          "value": 349.5,
+          "unit": "mg/L"
+        },
+        {
+          "name": "original_matrix_calibration_uncertainty_plus_minus",
+          "value": 12,
+          "unit": "mg/L"
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "REPORT_ESTIMATE",
+        "REPEAT_SAMPLE",
+        "FLAG_OUT_OF_RANGE",
+        "INVALID_MEASUREMENT"
+      ],
+      "fallback": "Record supplied values and preserve the applicable M0 reporting pathway.",
+      "scope": "Original mineral-dominant calibration scope; the estimate lacks a sample-specific gravimetric verification.",
+      "rationale": "The policy selector does not match. The preserved baseline yields 1.35 × 250 + 12 = 349.5 mg/L for the stated matching mineral-dominant pattern.",
+      "route_trace": {
+        "policy_id": "POLICY_F02_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F02B_MEASUREMENT_VALID",
+          "F02B_COMPOSITION_REPRODUCIBLE",
+          "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+        ],
+        "preserved_baseline_action_ids": [
+          "REPORT_ESTIMATE",
+          "REPEAT_SAMPLE",
+          "FLAG_OUT_OF_RANGE",
+          "INVALID_MEASUREMENT"
+        ]
+      }
+    },
+    {
+      "case_id": "C",
+      "primary_action": "RECONCILE",
+      "additional_actions": [],
+      "reported_values": [
+        {
+          "name": "supplied_inputs",
+          "value": {
+            "F02B_MEASUREMENT_VALID": true,
+            "F02B_COMPOSITION_REPRODUCIBLE": false,
+            "F02B_GRAVIMETRIC_REPLICATES_AGREE": null,
+            "turbidity_NTU": 155,
+            "composition": "Aliquots are not reproducible and do not stably match either supplied composition pattern.",
+            "gravimetric_reference": null
+          },
+          "unit": null
+        },
+        {
+          "name": "fallback_reason",
+          "value": "Gravimetric replicate agreement is missing; the selector requires an explicit false value, which cannot be inferred.",
+          "unit": null
+        },
+        {
+          "name": "M0_pathway_status",
+          "value": "Preserved. The in-range baseline calculation is 221.25 mg/L, but no reproducible composition basis establishes its applicability or the original uncertainty band.",
+          "unit": null
+        }
+      ],
+      "preserved_baseline_action_ids": [
+        "REPORT_ESTIMATE",
+        "REPEAT_SAMPLE",
+        "FLAG_OUT_OF_RANGE",
+        "INVALID_MEASUREMENT"
+      ],
+      "fallback": "Record supplied values and request independent review of unresolved composition and gravimetric evidence.",
+      "scope": "No licensed selector action or validated composition-specific point estimate is established.",
+      "rationale": "Non-reproducible composition alone does not satisfy F02B_UNREPRODUCIBLE_COMPOSITION_AND_MASS. Passing turbidity checks neither supplies missing gravimetric evidence nor establishes mass agreement.",
+      "route_trace": {
+        "policy_id": "POLICY_F02_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F02B_MEASUREMENT_VALID",
+          "F02B_COMPOSITION_REPRODUCIBLE",
+          "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+        ],
+        "preserved_baseline_action_ids": [
+          "REPORT_ESTIMATE",
+          "REPEAT_SAMPLE",
+          "FLAG_OUT_OF_RANGE",
+          "INVALID_MEASUREMENT"
+        ]
+      }
+    }
+  ]
+}

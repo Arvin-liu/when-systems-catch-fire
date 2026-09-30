@@ -1,0 +1,58 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "Withhold a supported concentration estimate",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "Turbidity", "value": 150, "unit": "NTU"}
+      ],
+      "preserved_baseline_action_ids": [
+        "REPORT_ESTIMATE",
+        "REPEAT_SAMPLE",
+        "FLAG_OUT_OF_RANGE",
+        "INVALID_MEASUREMENT"
+      ],
+      "fallback": "Independent constant-weight gravimetry would be needed to establish concentration.",
+      "scope": "Reproducible floc-rich composition; valid in-range turbidity.",
+      "rationale": "Composition matches OBS-04. OBS-04 through OBS-06 show substantial M0 calibration error despite stable measurements. No validated replacement mapping or uncertainty band is supplied. Measurement validity alone does not support applying M0 to this composition."
+    },
+    {
+      "case_id": "B",
+      "primary_action": "REPORT_ESTIMATE",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "Turbidity", "value": 250, "unit": "NTU"},
+        {"name": "M0 estimated TSS", "value": 349.5, "unit": "mg/L"},
+        {"name": "Original-matrix calibration uncertainty band", "value": 12, "unit": "mg/L"}
+      ],
+      "preserved_baseline_action_ids": [
+        "REPORT_ESTIMATE",
+        "REPEAT_SAMPLE",
+        "FLAG_OUT_OF_RANGE",
+        "INVALID_MEASUREMENT"
+      ],
+      "fallback": null,
+      "scope": "CE-F02-M0-R0 mineral-dominant calibration; validated turbidity range 0–500 NTU; uncertainty ±12 mg/L.",
+      "rationale": "Checks pass and composition matches the measured mineral-dominant pattern supported by OBS-01 through OBS-03. Applying 1.35 × 250 + 12 gives 349.5 mg/L. No independent reference establishes this case's actual residual."
+    },
+    {
+      "case_id": "C",
+      "primary_action": "Withhold a supported concentration estimate",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "Turbidity", "value": 155, "unit": "NTU"}
+      ],
+      "preserved_baseline_action_ids": [
+        "REPORT_ESTIMATE",
+        "REPEAT_SAMPLE",
+        "FLAG_OUT_OF_RANGE",
+        "INVALID_MEASUREMENT"
+      ],
+      "fallback": "Representative sampling and independent constant-weight gravimetry would be needed to resolve concentration and aliquot variability.",
+      "scope": "Valid in-range turbidity with nonreproducible composition.",
+      "rationale": "The composition does not support a stable calibration assignment. OBS-08 demonstrates that stable turbidity can coexist with composition and gravimetric variability. No supplied rule resolves this mixture; passing turbidity checks neither establishes a concentration mapping nor triggers INVALID_MEASUREMENT."
+    }
+  ]
+}

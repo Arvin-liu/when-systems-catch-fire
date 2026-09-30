@@ -1,0 +1,51 @@
+{
+  "backend_echo_limitation": "BACKEND_MODEL_AND_EFFORT_NOT_ECHOED_IN_JSONL",
+  "backend_model_and_effort_echoed": false,
+  "capture": [
+    "dispatch-receipt.json",
+    "stdout.jsonl",
+    "stderr.txt",
+    "last-message.txt",
+    "exit status",
+    "process id",
+    "thread id"
+  ],
+  "cli": {
+    "binary_sha256": "61b0194f3bb6534439c8d26a3ed57d0805f84b884588b761795323eeb92fcf70",
+    "command": "codex",
+    "resolution": "PATH lookup",
+    "resolved_path_normalized": "~/.local/lib/node_modules/@openai/codex/bin/codex.js",
+    "version": "codex-cli 0.159.2"
+  },
+  "codex_exec_contract": [
+    "exec",
+    "--ephemeral",
+    "--ignore-user-config",
+    "--ignore-rules",
+    "--strict-config",
+    "--model gpt-6-astra",
+    "--config model_reasoning_effort=medium",
+    "--sandbox read-only",
+    "--cd <fresh-empty-workspace>",
+    "--skip-git-repo-check",
+    "--json",
+    "--color never",
+    "--output-last-message <path>",
+    "- (stdin)"
+  ],
+  "dispatcher": {
+    "destination_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/tools/dispatcher.py",
+    "sha256": "c4e2aa109201c8292149a7a92020be36470f90be6d2ab7927d8c82c4b9cce577",
+    "source_commit": "98c415d0a92b382263ef9fca7c8e42439309d10d",
+    "source_path": "relay/receipts/IGNITION-20260930-229-H1/harness/dispatcher.py",
+    "source_repository": "Arvin-liu/1111"
+  },
+  "fresh_empty_workspace_per_invocation": true,
+  "fresh_ephemeral_process_per_invocation": true,
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "medium",
+  "runtime": "LOCAL_CODEX_CLI_SUBPROCESS_STDIN",
+  "schema_version": "ignition-229-r1-runtime-lock-v1",
+  "stdin_only_prompt_transport": true,
+  "strict_utf8_roundtrip": true
+}
