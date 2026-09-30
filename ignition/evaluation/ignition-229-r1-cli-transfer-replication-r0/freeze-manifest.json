@@ -3,9 +3,9 @@
   "experiment_id": "IGNITION-20260930-229-R1",
   "files": [
     {
-      "byte_length": 606,
+      "byte_length": 597,
       "path": "canary-plan.json",
-      "sha256": "1195b44bdba604e54c30e2b49b1d3cb3a4bcd3bb49d37862b4fbcdeb02eca423"
+      "sha256": "99a51d22dc93e109049b1578ac5232666881bbbb37e245bf8e0a120ec3920ed5"
     },
     {
       "byte_length": 884,
@@ -18,9 +18,9 @@
       "sha256": "f8bbcd28a2cb0682c80edb3f2fb465934363a60918253f0d240c60385d19fa8d"
     },
     {
-      "byte_length": 9315,
+      "byte_length": 9081,
       "path": "execution-plan.json",
-      "sha256": "9f17a5da0f974f074d2230a14771a4b9904c6384dc4d7d69bd3337173dcb6fd2"
+      "sha256": "111e5a5f45c4d21749600ecd0be2ce214edc372b85c8308faf730ea2cadfba46"
     },
     {
       "byte_length": 65547,
@@ -28,9 +28,9 @@
       "sha256": "ac3b05b7ec1330046a6d87a97cbb0c561ecb17f3e259a2a31ef12ee1059de3b7"
     },
     {
-      "byte_length": 12970,
+      "byte_length": 12799,
       "path": "prompt-bundle-manifest.json",
-      "sha256": "70a1d320c5de476ca8e89034b8726763a439079358c984fb4162723e4a963471"
+      "sha256": "089ef37e9cce6a4686e4f0d048e564a9c5963e5088ffcaf0955bdd4c365262b8"
     },
     {
       "byte_length": 2476,
@@ -133,14 +133,14 @@
       "sha256": "1d2e9e06d7a839f761303c7227a3b860b9b144c29134ce3dd557712c113f1a37"
     },
     {
-      "byte_length": 1729,
+      "byte_length": 1720,
       "path": "runtime-lock.json",
-      "sha256": "c772048d35d303c3b2b953d70010984ae7c963454709bd1453e4104a7eac6c22"
+      "sha256": "ffc8dbbc37e41e5a4a953de0a2da6bc63370faada5f4afc9f36c3c39e75eb09a"
     },
     {
-      "byte_length": 11065,
+      "byte_length": 10885,
       "path": "source-bundle-manifest.json",
-      "sha256": "fbec599ed91fee95ca6724728dfe42757336b46d253602e05052b129bac6f5db"
+      "sha256": "a38493d4d464706a61d60fecc24403d5e80bec8f0742261b60267d6aacbdb69b"
     },
     {
       "byte_length": 1187,
@@ -245,7 +245,7 @@
     {
       "byte_length": 1835,
       "path": "tools/validate_wrapper_freeze.py",
-      "sha256": "2a263ec4543ac94814521fc048fe52b3258edf56efe74f396aa2df40a4f38044"
+      "sha256": "3a90188a502b01c360e7d55738a90baa69028b5a10adc0e5263c3a55c83ebb0a"
     }
   ],
   "formal_base_sha": "d82a52077df6d4e96e998ace3757f2fb343b4db5",

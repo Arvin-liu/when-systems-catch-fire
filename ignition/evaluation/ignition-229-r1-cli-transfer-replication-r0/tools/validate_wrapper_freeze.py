@@ -10,11 +10,11 @@ prompts = load("prompt-bundle-manifest.json")
 assert source["expected_file_count"] == source["copied_file_count"] == 19
 assert source["original_freeze_manifest_sha256"] == "057d76eae931881a3209129528fef500aef762854beb6b5288411441bbf55b95"
 for row in source["files"]:
-    p = ROOT.parents[3] / row["copied_path"]
+    p = ROOT.parents[2] / row["copied_path"]
     assert sha(p) == row["expected_sha256"] == row["copied_sha256"], row["copied_path"]
 assert prompts["expected_prompt_count"] == prompts["copied_prompt_count"] == 18
 for row in prompts["prompts"]:
-    p = ROOT.parents[3] / row["copied_path"]
+    p = ROOT.parents[2] / row["copied_path"]
     assert p.stat().st_size == row["byte_length"]
     assert sha(p) == row["sha256"] == row["copied_sha256"], row["copied_path"]
 dispatcher = ROOT / "tools/dispatcher.py"
