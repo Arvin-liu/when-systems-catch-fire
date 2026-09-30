@@ -1,0 +1,46 @@
+{
+  "schema_version": "task229-successor-output-r0",
+  "responses": [
+    {
+      "case_id": "A",
+      "primary_action": "STABILITY_REVIEW",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "selected_lot_formulation_group", "value": "P", "unit": null},
+        {"name": "selected_lot_excursion_duration", "value": 9, "unit": "min"},
+        {"name": "selected_lot_peak_temperature", "value": 13.7, "unit": "°C"}
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": null,
+      "scope": "Prioritize the group-P lot for the single available review slot; this does not establish degradation or a universal pulse threshold.",
+      "rationale": "Both lots pass the frozen M0 mean criterion. The group-P exposure matches OBS-02, with corroborating group-P pulse observations in OBS-01 and OBS-03 showing activity below the supplied assay reference. The comparable group-S pulse in OBS-04 retained activity above that reference. These observations support prioritizing group P for independent review."
+    },
+    {
+      "case_id": "B",
+      "primary_action": "SCREEN_PASS",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "formulation_group", "value": "P", "unit": null},
+        {"name": "pulse_above_12_C_present", "value": false, "unit": null}
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": null,
+      "scope": "M0 temperature-screen triage; not an unconditional product-safety guarantee.",
+      "rationale": "All required baseline checks pass and all means are below 8.0 °C. The complete high-rate trace shows no above-12 °C pulse. OBS-05 supports retaining a pass for the observed group-P continuous-profile setting; the packet does not justify reviewing every group-P lot."
+    },
+    {
+      "case_id": "C",
+      "primary_action": "RECONCILE_LOGGER",
+      "additional_actions": [],
+      "reported_values": [
+        {"name": "formulation_group", "value": "P", "unit": null},
+        {"name": "pulse_duration", "value": null, "unit": "min"},
+        {"name": "high_rate_trace_custody_gap", "value": true, "unit": null}
+      ],
+      "preserved_baseline_action_ids": ["SCREEN_PASS", "STABILITY_REVIEW", "RECONCILE_LOGGER", "UNSCORABLE"],
+      "fallback": "UNSCORABLE if the required high-rate trace provenance and exposure information remain unresolved.",
+      "scope": "Reconcile the high-rate trace custody gap before resolving pulse-sensitive screening; the valid 15-minute means alone satisfy frozen M0.",
+      "rationale": "The custody gap prevents determining whether the group-P lot experienced a relevant pulse. OBS-06 establishes that a trace gap does not identify pulse occurrence. Recover the missing custody and trace evidence without imputing a pass or asserting degradation."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": "task229-runtime-freeze-r0",
+  "recorded_at_utc": "2026-09-30T06:18:51.810287Z",
+  "provider_runtime": "OpenAI Codex collaboration-agent runtime",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "medium",
+  "system_prompt_control": "platform-managed outer system message; not exposed to coordinator",
+  "visible_prompt_template_path": "session-prompt-template.md",
+  "visible_prompt_template_sha256": "c2cfb7704fb7ba24682c3553b3f316ab4869641b6e4f674d708ee27d0742302a",
+  "temperature_sampling_settings": "not exposed by session tool",
+  "tool_surface": "Codex tools available; fixed visible prompt prohibits their use",
+  "response_schema_version": "task229-successor-output-r0",
+  "response_schema_sha256": "d0a2de5555d5c176d83acba66494afbf5637dc10aba917a981d3572469a74aa8",
+  "analysis_runtime": "Python 3 with jsonschema 4.25.1",
+  "retry_rule": "One replacement only for a documented transport/infrastructure failure before any semantic response."
+}

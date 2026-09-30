@@ -1,0 +1,189 @@
+# Fixed visible prompt for each successor session
+
+You are handling one fresh, isolated case-solving session. Use only the case files and method material included in this message. Do not use tools, browse, inspect a workspace, request other records, infer an unstated threshold, or refer to another session. Do not mention any study, condition, lineage, evaluator, or other session.
+
+For each supplied case A, B, and C, return the requested machine-readable fields. Preserve the available baseline action IDs. If the supplied method material contains a route policy with a `policy_id`, execute that policy as written and include a `route_trace` for every case: the exact supplied `policy_id`, selected route type (`selector`, `fallback`, or `stop`), selected rule ID and action ID when applicable, the case input IDs used in routing, and the preserved baseline action IDs still available. For a selector, cite the matching selector rule and its action reference. For a stop, cite the stop ID as the selected rule and use a null action ID. For fallback, use null selected rule and action IDs. Do not invent IDs. If no route policy is present, omit `route_trace`.
+
+Return exactly one JSON object matching the supplied response schema and nothing else. Do not include markdown fences or commentary.
+
+## Session inputs
+
+### Method material
+
+# FAMILY03 — M0 interval-mean cold-chain screen
+
+**Artifact ID:** CE-F03-M0-R0  
+**Status:** frozen initial-method design; synthetic benchmark material only.
+
+## Purpose and source boundary
+
+M0 screens refrigerated shipment logs for temperature exposure that warrants product-stability review. Its source basis is F03-M0-STABILITY-VALIDATION, with calibrated loggers sampled every 15 minutes and independent retained-sample activity assays. The original clean-profile validation covered three refrigerated formulation groups under continuous 2–8 °C profiles, including multiple routes and logger units. It correctly separated the recorded in-range stable lots from mean excursions associated with reduced activity.
+
+The stated M0 claim treats the interval mean as sufficient for all refrigerated formulations. Its input representation stores 15-minute readings and does not resolve shorter excursions between samples. The method remains useful on its validated continuous-profile scope.
+
+## Candidate actions
+
+- SCREEN_PASS: record the screened lot as within M0's temperature criterion.
+- STABILITY_REVIEW: quarantine the screening decision for an independent stability review.
+- RECONCILE_LOGGER: recover logger clock, missing intervals, or custody mismatch before classification.
+- UNSCORABLE: do not classify if required temperature, product identity, or logger provenance is unavailable.
+
+## Selection criterion and procedure
+
+1. Confirm logger calibration, clock alignment, shipment identity, 15-minute sampling interval, and completeness across the defined shipment window.
+2. Compute the arithmetic mean of the valid 15-minute readings for each eight-hour segment and the shipment-wide mean.
+3. If any eight-hour segment mean or the shipment-wide mean is above 8.0 °C, select STABILITY_REVIEW. If required samples are missing or custody/clock checks fail, select RECONCILE_LOGGER; unresolved required inputs yield UNSCORABLE.
+4. Otherwise select SCREEN_PASS. A screen pass is a triage result under M0; it is not an unconditional product-safety guarantee.
+
+Discriminating observations are the validated interval readings, segment means, calibration status, and independent retained-sample activity assay from the source basis. In the validated set, VAL-05 is a continuous 4.2 °C profile with 99.1% activity retained and screens pass; VAL-16 has an eight-hour mean of 9.3 °C with 88.2% activity retained and routes to review.
+
+## Failure interpretation and disposition
+
+- Missing readings, clock drift above two minutes, or invalid calibration: reconcile; never impute a pass.
+- A mean above 8.0 °C: stability review; do not claim degradation from temperature alone.
+- A mean at or below 8.0 °C: SCREEN_PASS under the M0 summary statistic; retain the logger record and sample identity for audit.
+
+M0 does not encode a maximum-temperature or pulse-duration statistic. This is part of the frozen baseline, not a revised rule.
+
+# FAMILY03 — E1 observed counterexample packet
+
+**Evidence ID:** CE-F03-E1-R0  
+**Evidence class:** fresh synthetic cold-chain observations; locators bind trace, interval logger, assay, and custody records.
+
+## Capture and custody record
+
+Six shipments were observed with independently calibrated 15-minute shipment loggers and a second one-minute trace logger at the same product location. Clocks were aligned to within 40 seconds; calibration checks were within ±0.15 °C; seal and custody logs had no gaps. Retained-sample activity assays were run in duplicate by a lab blind to the logger summaries. Source record sets: F03-E1-INTERVAL-LOG, F03-E1-HIGH-RATE-TRACE, F03-E1-ACTIVITY-ASSAY, F03-E1-CUSTODY-CALIBRATION.
+
+The fictional registry identifies formulation groups by their ordinary shipment and handling records. Group S had prior continuous-profile validation in F03-M0-STABILITY-VALIDATION; group P is a separately documented formulation with a different stability response. The ID is not an assignment label for future tasks.
+
+## Exact observations
+
+| Locator | Formulation and trace | 15-minute shipment mean | Highest one-minute interval | Pulse duration above 12 °C | Activity retained | Assay repeat |
+|---|---|---:|---:|---:|---:|---:|
+| OBS-01 | group P; warm dock handoff trace | 6.1 °C | 14.2 °C | 11 min | 88.4% | 88.1 / 88.7% |
+| OBS-02 | group P; repeated route and unit | 6.3 °C | 13.7 °C | 9 min | 90.1% | 89.8 / 90.4% |
+| OBS-03 | group P; second unit, separate shipment | 6.0 °C | 14.4 °C | 13 min | 85.9% | 85.4 / 86.4% |
+| OBS-04 | group S; matched 15-minute mean, brief dock pulse | 6.2 °C | 14.0 °C | 10 min | 98.7% | 98.3 / 99.1% |
+| OBS-05 | group P; no observed pulse, continuous profile | 6.5 °C | 7.1 °C | 0 min | 99.0% | 98.6 / 99.4% |
+| OBS-06 | group P; high-rate trace gap across handoff | 6.2 °C | 11.8 °C observed | unknown | 93.0% | 90.5 / 95.5% |
+
+All six shipment-wide and eight-hour means are at or below M0's 8.0 °C cutoff and would produce SCREEN_PASS if identity and 15-minute record completeness alone were considered. The independent assay reference for the synthetic stability protocol is 95% activity retained. OBS-01 through OBS-03 repeatedly fall below that reference while their high-rate traces show short pulses. OBS-04 has a similar pulse record and mean but remains within assay reference on group S. OBS-05 is a within-M0 stable control for group P. OBS-06 has an unresolved trace gap and assay disagreement.
+
+## Competing readings and limits
+
+The source rows establish a reproducible contradiction to mean-only screening for the observed group-P pulse cases while retaining a stable continuous-profile group-P case and a pulsed group-S case. The group and detailed exposure are independently recorded and not inferred from the assay. The records do not support treating every isolated high sample as a confirmed degradation event, and OBS-06 does not identify whether a pulse occurred. The pulse amplitudes/durations observed here do not establish a universal threshold for every formulation or logger cadence.
+
+A tempting but unsupported overreaction is to classify any one-minute reading above 8 °C as a confirmed product failure or to discard all logger-based screening. M0's calibration, custody, continuous-profile behavior, and the product-specific contrast remain separately observable.
+
+## Source locators
+
+- F03-E1-INTERVAL-LOG#OBS-01 … #OBS-06: 15-minute samples and calculated means.
+- F03-E1-HIGH-RATE-TRACE#OBS-01 … #OBS-06: one-minute temperatures and trace gaps.
+- F03-E1-ACTIVITY-ASSAY#OBS-01 … #OBS-06: duplicate retained-sample assay results.
+- F03-E1-CUSTODY-CALIBRATION#ALL: identity, clock, calibration, seal, and custody records.
+
+No replacement statistic, pulse threshold, revised screen, held-out case, sealed target, condition label, or scoring rule is supplied here.
+
+
+### Case A
+
+# FAMILY03 A — successor-visible case facts
+
+Two independently registry-verified lots are available for one stability-review slot: one is formulation group P and one is group S. Both have complete calibrated 15-minute logger records and valid clock/custody checks; every segment and shipment mean is below 8.0 °C. Both have complete aligned high-rate traces. The group-P trace has a 9-minute excursion peaking at 13.7 °C; the group-S trace has a 10-minute excursion peaking at 14.0 °C. No assay or disposition result is provided. Select one lot for the available review slot.
+
+
+### Case B
+
+# FAMILY03 B — successor-visible case facts
+
+Verified formulation group P; complete calibrated 15-minute logger and aligned high-rate trace; all shipment and segment means are below 8.0 °C; no above-12 °C pulse is present; calibration, clock, and custody checks pass.
+
+
+### Case C
+
+# FAMILY03 C — successor-visible case facts
+
+Verified formulation group P; complete calibrated 15-minute logger means are below 8.0 °C. The high-rate trace has a custody gap across handoff, so pulse duration cannot be determined. Calibration and 15-minute logger checks pass.
+
+
+
+
+### Response schema
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task229-successor-output-r0",
+  "title": "Task229 successor response envelope R0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "responses"],
+  "properties": {
+    "schema_version": {"const": "task229-successor-output-r0"},
+    "responses": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {"$ref": "#/$defs/case_response"}
+    }
+  },
+  "$defs": {
+    "reported_value": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "value", "unit"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "value": {},
+        "unit": {"type": ["string", "null"]}
+      }
+    },
+    "route_trace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["policy_id", "route_type", "selected_rule_id", "selected_action_id", "input_ids", "preserved_baseline_action_ids"],
+      "properties": {
+        "policy_id": {"type": "string", "minLength": 1},
+        "route_type": {"enum": ["selector", "fallback", "stop"]},
+        "selected_rule_id": {"type": ["string", "null"]},
+        "selected_action_id": {"type": ["string", "null"]},
+        "input_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "preserved_baseline_action_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "case_response": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["case_id", "primary_action", "additional_actions", "reported_values", "preserved_baseline_action_ids", "fallback", "scope", "rationale"],
+          "properties": {
+            "case_id": {"enum": ["A", "B", "C"]},
+            "primary_action": {"type": "string", "minLength": 1},
+            "additional_actions": {"type": "array", "items": {"type": "string"}},
+            "reported_values": {"type": "array", "items": {"$ref": "#/$defs/reported_value"}},
+            "preserved_baseline_action_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+            "fallback": {"type": ["string", "null"]},
+            "scope": {"type": "string"},
+            "rationale": {"type": "string"}
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["case_id", "primary_action", "additional_actions", "reported_values", "preserved_baseline_action_ids", "fallback", "scope", "rationale", "route_trace"],
+          "properties": {
+            "case_id": {"enum": ["A", "B", "C"]},
+            "primary_action": {"type": "string", "minLength": 1},
+            "additional_actions": {"type": "array", "items": {"$ref": "#/$defs/reported_value"}},
+            "preserved_baseline_action_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+            "fallback": {"type": ["string", "null"]},
+            "scope": {"type": "string"},
+            "rationale": {"type": "string"},
+            "route_trace": {"$ref": "#/$defs/route_trace"}
+          }
+        }
+      ]
+    }
+  }
+}
+

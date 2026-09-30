@@ -31,6 +31,14 @@
     "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/per-replicate-evaluation.md",
     "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/replicated-method-use-report.md",
     "reports/evaluations/ignition-206-replicated-method-use-independent-evaluation/replication-analysis.md",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/README.md",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/claim-ceiling.md",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/evaluator-rubric.md",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/missingness-retry-rules.md",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/protocol.md",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/sanitization-procedure.md",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/session-prompt-template.md",
+    "reports/evaluations/ignition-229-clean-transfer-interface-r0/target-opening-gate.md",
     "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "excluded_timeline_asset_ids": [
