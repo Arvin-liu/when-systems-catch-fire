@@ -1,0 +1,165 @@
+{
+  "copied_file_count": 19,
+  "expected_file_count": 19,
+  "files": [
+    {
+      "byte_length": 1187,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/README.md",
+      "copied_sha256": "8eb339469c63be9c1d0d1e4ea86e1b9da8ac4ac1c5d77fa36113e2f6272e9f99",
+      "expected_sha256": "8eb339469c63be9c1d0d1e4ea86e1b9da8ac4ac1c5d77fa36113e2f6272e9f99",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/README.md"
+    },
+    {
+      "byte_length": 1602,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/analysis-input-schema.json",
+      "copied_sha256": "00b0adf8709036625603e508d9ead155b70629c641055d1535481a3b0a2419f4",
+      "expected_sha256": "00b0adf8709036625603e508d9ead155b70629c641055d1535481a3b0a2419f4",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/analysis-input-schema.json"
+    },
+    {
+      "byte_length": 754,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/blind-evaluation-schema.json",
+      "copied_sha256": "3c6e27ce7b8393314c7b5c76e7a9611d023ddce3ecce69ac626f4b071e019cd4",
+      "expected_sha256": "3c6e27ce7b8393314c7b5c76e7a9611d023ddce3ecce69ac626f4b071e019cd4",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/blind-evaluation-schema.json"
+    },
+    {
+      "byte_length": 671,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/blind-key-schema.json",
+      "copied_sha256": "908f5fc868f2a9bf3efc65901ffa1b88b1c3931cf741567cd545213819fdb5c4",
+      "expected_sha256": "908f5fc868f2a9bf3efc65901ffa1b88b1c3931cf741567cd545213819fdb5c4",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/blind-key-schema.json"
+    },
+    {
+      "byte_length": 752,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/claim-ceiling.md",
+      "copied_sha256": "154aa909b8cdaa4f4ce87663f08be85da0fc1d76b9b92854416ef9a5527126a6",
+      "expected_sha256": "154aa909b8cdaa4f4ce87663f08be85da0fc1d76b9b92854416ef9a5527126a6",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/claim-ceiling.md"
+    },
+    {
+      "byte_length": 14628,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/condition-manifest.json",
+      "copied_sha256": "4c13f7a6cfa804da0541bd98ef67f2ab56714a062ef42b05aaf2b10883f50f8f",
+      "expected_sha256": "4c13f7a6cfa804da0541bd98ef67f2ab56714a062ef42b05aaf2b10883f50f8f",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/condition-manifest.json"
+    },
+    {
+      "byte_length": 1824,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/evaluator-rubric.md",
+      "copied_sha256": "a5162f3891d8a3bb71e58006860a67bc292987ec7071d2aff2a1efc63436f8e0",
+      "expected_sha256": "a5162f3891d8a3bb71e58006860a67bc292987ec7071d2aff2a1efc63436f8e0",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/evaluator-rubric.md"
+    },
+    {
+      "byte_length": 958,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/missingness-retry-rules.md",
+      "copied_sha256": "f958cd5b3044fb9ecb64f692c569f7d1bf78d1c54ae2f8cbb66b4c5fc8ec89f4",
+      "expected_sha256": "f958cd5b3044fb9ecb64f692c569f7d1bf78d1c54ae2f8cbb66b4c5fc8ec89f4",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/missingness-retry-rules.md"
+    },
+    {
+      "byte_length": 2524,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/outcome-rule.json",
+      "copied_sha256": "b331885d27f80ed98bf059743e2cfe337fda79ff753fc7515587ea79bffe85aa",
+      "expected_sha256": "b331885d27f80ed98bf059743e2cfe337fda79ff753fc7515587ea79bffe85aa",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/outcome-rule.json"
+    },
+    {
+      "byte_length": 6520,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/protocol.md",
+      "copied_sha256": "b611cd1ed29131faeeb11fa23d046ba5c1bed8acee22f1930085d3b24b211f63",
+      "expected_sha256": "b611cd1ed29131faeeb11fa23d046ba5c1bed8acee22f1930085d3b24b211f63",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/protocol.md"
+    },
+    {
+      "byte_length": 3278,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/response-schema.json",
+      "copied_sha256": "d0a2de5555d5c176d83acba66494afbf5637dc10aba917a981d3572469a74aa8",
+      "expected_sha256": "d0a2de5555d5c176d83acba66494afbf5637dc10aba917a981d3572469a74aa8",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/response-schema.json"
+    },
+    {
+      "byte_length": 1815,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/sanitization-procedure.md",
+      "copied_sha256": "7787c29638fb97787a034ad3f3ec3ed92ba83e55168e3d31685a962e1f96688a",
+      "expected_sha256": "7787c29638fb97787a034ad3f3ec3ed92ba83e55168e3d31685a962e1f96688a",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/sanitization-procedure.md"
+    },
+    {
+      "byte_length": 1116,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/session-order.json",
+      "copied_sha256": "ced9e939fc75944a7c388647d0d8dfef82caddca608a30d6b076202bc25d4e70",
+      "expected_sha256": "ced9e939fc75944a7c388647d0d8dfef82caddca608a30d6b076202bc25d4e70",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/session-order.json"
+    },
+    {
+      "byte_length": 1471,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/session-prompt-template.md",
+      "copied_sha256": "c2cfb7704fb7ba24682c3553b3f316ab4869641b6e4f674d708ee27d0742302a",
+      "expected_sha256": "c2cfb7704fb7ba24682c3553b3f316ab4869641b6e4f674d708ee27d0742302a",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/session-prompt-template.md"
+    },
+    {
+      "byte_length": 1275,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/target-opening-gate.md",
+      "copied_sha256": "d23a23222847ee4864e0ea6966dbd01e594832a70654084186a3b87618be4bdc",
+      "expected_sha256": "d23a23222847ee4864e0ea6966dbd01e594832a70654084186a3b87618be4bdc",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/target-opening-gate.md"
+    },
+    {
+      "byte_length": 4395,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/tools/freeze_manifest.py",
+      "copied_sha256": "57221944eb5345b6f0ffc22819cb0d88239cfcd1530fa7273629b2339d26b14f",
+      "expected_sha256": "57221944eb5345b6f0ffc22819cb0d88239cfcd1530fa7273629b2339d26b14f",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/tools/freeze_manifest.py"
+    },
+    {
+      "byte_length": 23318,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/tools/recompute.py",
+      "copied_sha256": "2a81a493b2d40cde023b4017a72c3aa7dfe45dee96fc06e223639fb082902b54",
+      "expected_sha256": "2a81a493b2d40cde023b4017a72c3aa7dfe45dee96fc06e223639fb082902b54",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/tools/recompute.py"
+    },
+    {
+      "byte_length": 6845,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/tools/target_opening_gate.py",
+      "copied_sha256": "99abcfb79faed76bf17e01661727553b5b0a852a2929c737eb42770dc889f1f8",
+      "expected_sha256": "99abcfb79faed76bf17e01661727553b5b0a852a2929c737eb42770dc889f1f8",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/tools/target_opening_gate.py"
+    },
+    {
+      "byte_length": 9461,
+      "copied_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/source-prereg/tools/validate_preregistration.py",
+      "copied_sha256": "b265df6030bf86d850c99002e72ec18e62f278d80d50192dba8f58ca95527f65",
+      "expected_sha256": "b265df6030bf86d850c99002e72ec18e62f278d80d50192dba8f58ca95527f65",
+      "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+      "source_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/tools/validate_preregistration.py"
+    }
+  ],
+  "original_freeze_manifest_copy_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/provenance/original-task229-freeze-manifest.json",
+  "original_freeze_manifest_copy_sha256": "057d76eae931881a3209129528fef500aef762854beb6b5288411441bbf55b95",
+  "original_freeze_manifest_path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/freeze-manifest.json",
+  "original_freeze_manifest_sha256": "057d76eae931881a3209129528fef500aef762854beb6b5288411441bbf55b95",
+  "schema_version": "ignition-229-r1-source-bundle-manifest-v1",
+  "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+  "source_root": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/"
+}

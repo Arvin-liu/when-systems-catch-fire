@@ -1,0 +1,11 @@
+{
+  "canary_bytes": 65547,
+  "canary_path": "ignition/reports/evaluations/ignition-229-r1-cli-transfer-replication-r0/fixtures/large-input-nonscientific-canary.txt",
+  "canary_sha256": "ac3b05b7ec1330046a6d87a97cbb0c561ecb17f3e259a2a31ef12ee1059de3b7",
+  "dispatcher_sha256": "c4e2aa109201c8292149a7a92020be36470f90be6d2ab7927d8c82c4b9cce577",
+  "max_frozen_successor_prompt_bytes": 30365,
+  "minimum_required_bytes": 65536,
+  "schema_version": "ignition-229-r1-large-input-canary-plan-v1",
+  "scientific_session": false,
+  "source_content": "inert repeated text plus fixed acknowledgement request only"
+}
