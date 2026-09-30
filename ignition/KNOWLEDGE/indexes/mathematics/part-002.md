@@ -74,10 +74,10 @@
   - 可搜索名称：IMPLICIT-108BF8B634D79C72 / ## 非函数断言 / IMPLICIT-108BF8B634D79C72
   - 来源：`RESULTS/ADJUDICATION-SUMMARY.md`
   - 依赖：—；被引用：—
-- [### 1. “函数”必须真的跑起来吗](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### 1. “函数”必须真的跑起来吗](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-41E49B0D03829BC5 / ### 1. “函数”必须真的跑起来吗 / IMPLICIT-41E49B0D03829BC5
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
   - 依赖：—；被引用：—
 - [### 12. 函数不穷尽生命原则](../../../docs/governance/life-community-value-charter.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -179,15 +179,15 @@
   - 可搜索名称：IMPLICIT-2D79D7C9D4C71342 / ### 4.3 层级错位函数 / IMPLICIT-2D79D7C9D4C71342
   - 来源：`outputs/getbrain/v0.2-function-dependency-graph-20260706.md`
   - 依赖：—；被引用：—
-- [### 4.3 架构候选与函数执行](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### 4.3 架构候选与函数执行](../../../data/operations/iterations/112/publication/r0-original/01-%E7%99%BE%E8%BD%AE%E6%88%90%E6%9E%9C%E6%80%BB%E5%8F%B0%E8%B4%A6.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-B242417EDC8A4AB5 / ### 4.3 架构候选与函数执行 / IMPLICIT-B242417EDC8A4AB5
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`data/operations/iterations/112/publication/r0-original/01-百轮成果总台账.md`
   - 依赖：—；被引用：—
-- [### 5. 一个函数系统真正缺什么](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### 5. 一个函数系统真正缺什么](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-9965F9410828E48D / ### 5. 一个函数系统真正缺什么 / IMPLICIT-9965F9410828E48D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
   - 依赖：—；被引用：—
 - [### 5.1 元函数与执行函数混用](../../../outputs/getbrain/v0.2-function-dependency-graph-20260706.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -309,10 +309,10 @@
   - 可搜索名称：IMPLICIT-27FAAF6BC61A5DFB / ### \[#93｜向下兼容函数\]\(docs/zh/cases/items/C-0093.md\) / IMPLICIT-27FAAF6BC61A5DFB
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—
-- [### N31｜函数身份比函数数量重要](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### N31｜函数身份比函数数量重要](../../../data/operations/iterations/112/publication/r0-original/notes/%E7%82%B9%E7%81%AB%E7%A0%94%E7%A9%B6%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%BE%91.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-CBA3A23E07711917 / ### N31｜函数身份比函数数量重要 / IMPLICIT-CBA3A23E07711917
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`data/operations/iterations/112/publication/r0-original/notes/点火研究笔记-第一辑.md`
   - 依赖：—；被引用：—
 - [### 不可逆相关函数（全表扫描）](../../../outputs/audit/nf-004-systemic-numbing-backfill-audit-20260708.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`

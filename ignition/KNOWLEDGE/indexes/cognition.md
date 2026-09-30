@@ -6,4 +6,4 @@
 
 - [第 001 片](./cognition/part-001.md)：1—500；"""A thin, fixture-testable adapter over ``openclaw agent --json``.""" → from .adapters.openclaw import OpenClawAdapter
 - [第 002 片](./cognition/part-002.md)：501—1000；from .live_adapters import LiveAdapterError, LiveAdapterObservation, LiveCodexAdapter, LiveHermesAdapter, LiveOpenClawAd → This coordinator never selects a goal, grants permission, or interprets an
-- [第 003 片](../cards/part-003.md)：1001—1353；This ledger is a correction/provenance overlay. It never rewrites the older → 高维认知必然多轨，dim>1 ⟹ P_track>1。
+- [第 003 片](./cognition/part-003.md)：1001—1353；This ledger is a correction/provenance overlay. It never rewrites the older → 高维认知必然多轨，dim>1 ⟹ P_track>1。

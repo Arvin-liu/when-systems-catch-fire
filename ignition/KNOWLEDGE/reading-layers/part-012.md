@@ -100,7 +100,7 @@
 `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE` · `OPERATIONS_EVIDENCE`
 - 1 分钟：原文件保存该项结果的完整问题、过程与边界。 边界：This is a conservative navigation summary, not a new adjudication, proof, empirical verification or lifecycle promotion.
 - 5 分钟：主题：新故事索引表（2026年07月06日03时06分，故事总数 1）；条目状态: 故事版笔记，支持继续扩展
-- 完整阅读：[新故事/INDEX.md](../../新故事/INDEX.md)
+- 完整阅读：[新故事/INDEX.md](../../analysis/corpus-relation/cluster_source_briefs/INDEX.md)
 
 <a id="reading-hr-ad8d11d719d1a437"></a>
 ## IGNITION-142 Step 17 — architecture impact

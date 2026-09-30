@@ -494,10 +494,10 @@
   - 可搜索名称：IMPLICIT-FDACD9849736DF99 / # 金朝崛起为什么这么快：从凝聚力叙事到跨尺度机制候选 / IMPLICIT-FDACD9849736DF99
   - 来源：`reports/publication/jin-rise-point-fire-analysis.md`
   - 依赖：—；被引用：—
-- [## 3. MCF、PSD、ARN 与 Function OS](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [## 3. MCF、PSD、ARN 与 Function OS](../../../data/operations/iterations/112/publication/r0-original/volume/%E6%9D%A5%E6%BA%90%E4%B8%8E%E8%AF%81%E6%8D%AE%E9%99%84%E5%BD%95.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-7E92FC44285573D3 / ## 3. MCF、PSD、ARN 与 Function OS / IMPLICIT-7E92FC44285573D3
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/来源与证据附录.md`
   - 依赖：—；被引用：—
 - [## L4：机制与模型](../../../docs/language-thought/cross-layer-contract.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`

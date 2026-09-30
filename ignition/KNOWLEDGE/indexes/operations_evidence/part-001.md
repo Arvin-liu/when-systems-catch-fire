@@ -2199,15 +2199,15 @@
   - 可搜索名称：IMPLICIT-E08CF9CF49296365 / ## 程序可以照料人，也可以保护权力 / IMPLICIT-E08CF9CF49296365
   - 来源：`docs/publication/works/when-an-emperor-manufactures-heaven.md`
   - 依赖：—；被引用：—
-- [## 第五章 Function OS 的价值，在于让失败留下第一现场](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [## 第五章 Function OS 的价值，在于让失败留下第一现场](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E7%AC%AC%E4%BA%8C%E7%A8%BF.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-E7C6F08A18B15190 / ## 第五章 Function OS 的价值，在于让失败留下第一现场 / IMPLICIT-E7C6F08A18B15190
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-第二稿.md`
   - 依赖：—；被引用：—
-- [## 第五章 Function OS：一次失败比一次漂亮的通过更能说明问题](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [## 第五章 Function OS：一次失败比一次漂亮的通过更能说明问题](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-60A449EF84B386F0 / ## 第五章 Function OS：一次失败比一次漂亮的通过更能说明问题 / IMPLICIT-60A449EF84B386F0
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
   - 依赖：—；被引用：—
 - [## 规范性协议是边界声明，不是经验定律](../../../docs/editorial/articles/005-description-is-not-proof-systems-representations.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2219,10 +2219,10 @@
   - 可搜索名称：IMPLICIT-9BE6FB1E28C92398 / ## 这个模型目前知道什么，还不知道什么 / IMPLICIT-9BE6FB1E28C92398
   - 来源：`docs/editorial/articles/012-support-becomes-path-control.md`
   - 依赖：—；被引用：—
-- [### 1. 轮次不是样本，而是压力](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### 1. 轮次不是样本，而是压力](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-16D49D6FCBE5DB92 / ### 1. 轮次不是样本，而是压力 / IMPLICIT-16D49D6FCBE5DB92
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
   - 依赖：—；被引用：—
 - [### 10. 84-Source Canonical Index](../../../reports/external-research/121Q2R-final-report.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2259,10 +2259,10 @@
   - 可搜索名称：IMPLICIT-330F7B57409065B5 / ### 3. Cross-Model Acceptance Queue / IMPLICIT-330F7B57409065B5
   - 来源：`reports/foundation-architecture/085-backlog-prioritization.md`
   - 依赖：—；被引用：—
-- [### 4. 它不知道 Function OS 能否离开小世界](../../../data/foundation/function-assets/identity-cards.jsonl)
+- [### 4. 它不知道 Function OS 能否离开小世界](../../../data/operations/iterations/112/publication/r0-original/volume/%E7%AC%AC%E4%B8%80%E5%8D%B7-%E5%88%9D%E7%A8%BF.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1F41909AB41A1E5E / ### 4. 它不知道 Function OS 能否离开小世界 / IMPLICIT-1F41909AB41A1E5E
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
+  - 来源：`data/operations/iterations/112/publication/r0-original/volume/第一卷-初稿.md`
   - 依赖：—；被引用：—
 - [### 8.3 `RESOLVE_OPERATION` 与 `CHECK_CAPABILITY_STATUS`](../../../OPERATING-METHOD.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
