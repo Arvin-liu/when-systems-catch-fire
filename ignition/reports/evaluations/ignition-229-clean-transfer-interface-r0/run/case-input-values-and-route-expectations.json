@@ -1,0 +1,318 @@
+{
+  "version": "task229-case-input-values-r0",
+  "visibility": "coordinator-only; not provided to successors or evaluators",
+  "coding_basis": "Coded from frozen visible case facts against frozen policy-declared IDs; no sealed-target values used. Unreported evidence is omitted, not encoded as false.",
+  "case_inputs_by_lineage": {
+    "L01": {
+      "A": {
+        "F01A_MEASUREMENT_VALID": true,
+        "F01A_SURFACE_PATTERN": "reflective_silver_film_observed",
+        "F01A_BEARING_RELATION": "toward_sun_observed"
+      },
+      "B": {
+        "F01A_MEASUREMENT_VALID": true,
+        "F01A_SURFACE_PATTERN": "ordinary_mineral_soil_observed",
+        "F01A_BEARING_RELATION": "toward_sun_observed"
+      },
+      "C": {
+        "F01A_MEASUREMENT_VALID": true,
+        "F01A_SURFACE_PATTERN": "partial_reflective_coverage_observed",
+        "F01A_BEARING_RELATION": "variable_between_scans"
+      }
+    },
+    "L02": {
+      "A": {
+        "F01B_MEASUREMENT_VALID": true,
+        "F01B_SURFACE_COVERAGE_COMPLETE": true,
+        "F01B_PAIRED_READING_PATTERN": "stable_observed"
+      },
+      "B": {
+        "F01B_MEASUREMENT_VALID": true,
+        "F01B_SURFACE_COVERAGE_COMPLETE": true,
+        "F01B_PAIRED_READING_PATTERN": "stable_observed"
+      },
+      "C": {
+        "F01B_MEASUREMENT_VALID": true,
+        "F01B_SURFACE_COVERAGE_COMPLETE": false,
+        "F01B_PAIRED_READING_PATTERN": "variable_observed"
+      }
+    },
+    "L03": {
+      "A": {
+        "F02A_MEASUREMENT_VALID": true,
+        "F02A_COMPOSITION_PATTERN": "observed_organic_floc_cases"
+      },
+      "B": {
+        "F02A_MEASUREMENT_VALID": true,
+        "F02A_COMPOSITION_PATTERN": "measured_mineral_dominant_pattern"
+      },
+      "C": {
+        "F02A_MEASUREMENT_VALID": true,
+        "F02A_COMPOSITION_PATTERN": "not_reproducible_or_neither_pattern"
+      }
+    },
+    "L04": {
+      "A": {
+        "F02B_MEASUREMENT_VALID": true,
+        "F02B_COMPOSITION_REPRODUCIBLE": true
+      },
+      "B": {
+        "F02B_MEASUREMENT_VALID": true,
+        "F02B_COMPOSITION_REPRODUCIBLE": true
+      },
+      "C": {
+        "F02B_MEASUREMENT_VALID": true,
+        "F02B_COMPOSITION_REPRODUCIBLE": false
+      }
+    },
+    "L05": {
+      "A": {
+        "F03A_MEASUREMENT_VALID": true,
+        "F03A_FORMULATION_GROUP": "P",
+        "F03A_PULSE_PATTERN": "observed_group_p_pulse_cases"
+      },
+      "B": {
+        "F03A_MEASUREMENT_VALID": true,
+        "F03A_FORMULATION_GROUP": "P",
+        "F03A_PULSE_PATTERN": "no_above_12_celsius_pulse"
+      },
+      "C": {
+        "F03A_MEASUREMENT_VALID": true,
+        "F03A_FORMULATION_GROUP": "P",
+        "F03A_PULSE_PATTERN": "pulse_duration_indeterminate_due_to_trace_gap"
+      }
+    },
+    "L06": {
+      "A": {
+        "F03B_MEASUREMENT_VALID": true,
+        "F03B_HIGH_RATE_TRACE_COMPLETE": true
+      },
+      "B": {
+        "F03B_MEASUREMENT_VALID": true,
+        "F03B_HIGH_RATE_TRACE_COMPLETE": true
+      },
+      "C": {
+        "F03B_MEASUREMENT_VALID": true,
+        "F03B_HIGH_RATE_TRACE_COMPLETE": false
+      }
+    }
+  },
+  "route_expectations_by_lineage": {
+    "L01": {
+      "A": {
+        "input_values": {
+          "F01A_MEASUREMENT_VALID": true,
+          "F01A_SURFACE_PATTERN": "reflective_silver_film_observed",
+          "F01A_BEARING_RELATION": "toward_sun_observed"
+        },
+        "route_type": "selector",
+        "selected_rule_id": "F01A_OBSERVED_REFLECTIVE_CONTEXT",
+        "selected_action_id": "F01A_ROUTE_CONTACT_CONTEXT",
+        "required_input_ids": [
+          "F01A_BEARING_RELATION",
+          "F01A_MEASUREMENT_VALID",
+          "F01A_SURFACE_PATTERN"
+        ]
+      },
+      "B": {
+        "input_values": {
+          "F01A_MEASUREMENT_VALID": true,
+          "F01A_SURFACE_PATTERN": "ordinary_mineral_soil_observed",
+          "F01A_BEARING_RELATION": "toward_sun_observed"
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      },
+      "C": {
+        "input_values": {
+          "F01A_MEASUREMENT_VALID": true,
+          "F01A_SURFACE_PATTERN": "partial_reflective_coverage_observed",
+          "F01A_BEARING_RELATION": "variable_between_scans"
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      }
+    },
+    "L02": {
+      "A": {
+        "input_values": {
+          "F01B_MEASUREMENT_VALID": true,
+          "F01B_SURFACE_COVERAGE_COMPLETE": true,
+          "F01B_PAIRED_READING_PATTERN": "stable_observed"
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      },
+      "B": {
+        "input_values": {
+          "F01B_MEASUREMENT_VALID": true,
+          "F01B_SURFACE_COVERAGE_COMPLETE": true,
+          "F01B_PAIRED_READING_PATTERN": "stable_observed"
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      },
+      "C": {
+        "input_values": {
+          "F01B_MEASUREMENT_VALID": true,
+          "F01B_SURFACE_COVERAGE_COMPLETE": false,
+          "F01B_PAIRED_READING_PATTERN": "variable_observed"
+        },
+        "route_type": "selector",
+        "selected_rule_id": "F01B_INCOMPLETE_VARIABLE_CONTEXT",
+        "selected_action_id": "F01B_REACQUIRE_CONTEXT",
+        "required_input_ids": [
+          "F01B_MEASUREMENT_VALID",
+          "F01B_PAIRED_READING_PATTERN",
+          "F01B_SURFACE_COVERAGE_COMPLETE"
+        ]
+      }
+    },
+    "L03": {
+      "A": {
+        "input_values": {
+          "F02A_MEASUREMENT_VALID": true,
+          "F02A_COMPOSITION_PATTERN": "observed_organic_floc_cases"
+        },
+        "route_type": "selector",
+        "selected_rule_id": "F02A_OBSERVED_ORGANIC_FLOC_PATTERN",
+        "selected_action_id": "F02A_GRAVIMETRIC_REVIEW",
+        "required_input_ids": [
+          "F02A_COMPOSITION_PATTERN",
+          "F02A_MEASUREMENT_VALID"
+        ]
+      },
+      "B": {
+        "input_values": {
+          "F02A_MEASUREMENT_VALID": true,
+          "F02A_COMPOSITION_PATTERN": "measured_mineral_dominant_pattern"
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      },
+      "C": {
+        "input_values": {
+          "F02A_MEASUREMENT_VALID": true,
+          "F02A_COMPOSITION_PATTERN": "not_reproducible_or_neither_pattern"
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      }
+    },
+    "L04": {
+      "A": {
+        "input_values": {
+          "F02B_MEASUREMENT_VALID": true,
+          "F02B_COMPOSITION_REPRODUCIBLE": true
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      },
+      "B": {
+        "input_values": {
+          "F02B_MEASUREMENT_VALID": true,
+          "F02B_COMPOSITION_REPRODUCIBLE": true
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      },
+      "C": {
+        "input_values": {
+          "F02B_MEASUREMENT_VALID": true,
+          "F02B_COMPOSITION_REPRODUCIBLE": false
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      }
+    },
+    "L05": {
+      "A": {
+        "input_values": {
+          "F03A_MEASUREMENT_VALID": true,
+          "F03A_FORMULATION_GROUP": "P",
+          "F03A_PULSE_PATTERN": "observed_group_p_pulse_cases"
+        },
+        "route_type": "selector",
+        "selected_rule_id": "F03A_OBSERVED_GROUP_P_PULSE_PATTERN",
+        "selected_action_id": "F03A_PRODUCT_STABILITY_REVIEW",
+        "required_input_ids": [
+          "F03A_FORMULATION_GROUP",
+          "F03A_MEASUREMENT_VALID",
+          "F03A_PULSE_PATTERN"
+        ]
+      },
+      "B": {
+        "input_values": {
+          "F03A_MEASUREMENT_VALID": true,
+          "F03A_FORMULATION_GROUP": "P",
+          "F03A_PULSE_PATTERN": "no_above_12_celsius_pulse"
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      },
+      "C": {
+        "input_values": {
+          "F03A_MEASUREMENT_VALID": true,
+          "F03A_FORMULATION_GROUP": "P",
+          "F03A_PULSE_PATTERN": "pulse_duration_indeterminate_due_to_trace_gap"
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      }
+    },
+    "L06": {
+      "A": {
+        "input_values": {
+          "F03B_MEASUREMENT_VALID": true,
+          "F03B_HIGH_RATE_TRACE_COMPLETE": true
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      },
+      "B": {
+        "input_values": {
+          "F03B_MEASUREMENT_VALID": true,
+          "F03B_HIGH_RATE_TRACE_COMPLETE": true
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      },
+      "C": {
+        "input_values": {
+          "F03B_MEASUREMENT_VALID": true,
+          "F03B_HIGH_RATE_TRACE_COMPLETE": false
+        },
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "required_input_ids": []
+      }
+    }
+  }
+}

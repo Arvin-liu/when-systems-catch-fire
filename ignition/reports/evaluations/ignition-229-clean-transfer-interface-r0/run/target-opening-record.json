@@ -1,0 +1,91 @@
+{
+  "version": "task229-target-opening-record-r0",
+  "opened_at_utc": "2026-09-30T06:18:51.810287Z",
+  "task229_head": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+  "task228_base": "d82a52077df6d4e96e998ace3757f2fb343b4db5",
+  "gate_result": "TASK229_TARGET_OPENING_GATE=PASS",
+  "gate_receipt_sha256": "407cdded2930e132cb4a89ed5630071ff200ba9a5263fd0efad2f078f3c2d221",
+  "gate_evidence_sha256": "371c8ed1f9ca392b3c35e0bde478c495dce81cd129747603581a4d3d7545ab99",
+  "a1_field_comparison_sha256": "0cad11bcae8bbcee82caa0ccac61c6dae720f1481e05105e796229f135f8141b",
+  "preserved_first_failure_evidence_sha256": "2f9f9857a451dbd9e40277172850665a5446443834ec361f8f49ebc4a65cace3",
+  "task225_manifest_sha256": "f6201ea25d3614af34ef05d36cc8f620a8c149902fcef8937d259445b0b302a8",
+  "task227_transfer_manifest_sha256": "91a33c38f209b88644ef473c21a133463bf7839d1bd5afc9c1507b88d128b7ec",
+  "case_assets": {
+    "FAMILY01": {
+      "A": {
+        "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY01/cases/A.md",
+        "sha256": "8f5d0b7f683cfe5f5d1bb66a92106cbea6a2c6a583de38b8ed362874e21ff792",
+        "bytes": 385
+      },
+      "B": {
+        "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY01/cases/B.md",
+        "sha256": "a489371664a0a98ae7e75ebc9a49c717c81b8916eae1d109c8d1e8d981fc1d50",
+        "bytes": 230
+      },
+      "C": {
+        "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY01/cases/C.md",
+        "sha256": "69092def60ae5791dbbcbd5012e84ec17683c25e3421cfd0fff1579a2a7c89c5",
+        "bytes": 241
+      }
+    },
+    "FAMILY02": {
+      "A": {
+        "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY02/cases/A.md",
+        "sha256": "5a986c58979f549ffdb29dcd5548835d6febadac72ae32a5516ec6b83defac08",
+        "bytes": 256
+      },
+      "B": {
+        "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY02/cases/B.md",
+        "sha256": "9a62cb08fcc6fbc952ceec14ba5bd7fa12a671b427577253fdf4498238b216ce",
+        "bytes": 273
+      },
+      "C": {
+        "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY02/cases/C.md",
+        "sha256": "8823bf4488a15f26acd6dc75b6929201b9fa826a0f5bb09b51f54c6044814309",
+        "bytes": 272
+      }
+    },
+    "FAMILY03": {
+      "A": {
+        "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY03/cases/A.md",
+        "sha256": "2a70c8c72e010c56bcc49187fe1489b87026dc7d7b74a34278ed2d7f068c9a8d",
+        "bytes": 581
+      },
+      "B": {
+        "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY03/cases/B.md",
+        "sha256": "32dca7500cc43346c1c1066834684175fde29fc8899755faececffcff1068d62",
+        "bytes": 272
+      },
+      "C": {
+        "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY03/cases/C.md",
+        "sha256": "a95fc6b21e5118f9465921660bf0bfe9f92e4cfbcf0fb70e845f0254f5f68ae4",
+        "bytes": 279
+      }
+    }
+  },
+  "sealed_target_assets": {
+    "FAMILY01": {
+      "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY01/sealed/targets.json",
+      "sha256": "a2dbc6c59fcfb4a9e49db85dfbb989293286482c62b64d27e766365b5da593ef",
+      "bytes": 2683,
+      "opened_json_envelope": true,
+      "family_id_confirmed": "FAMILY01"
+    },
+    "FAMILY02": {
+      "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY02/sealed/targets.json",
+      "sha256": "7390cb33cddb30cef53b7270203498c1943f1186c9d893727dec3f1cafde07d0",
+      "bytes": 2626,
+      "opened_json_envelope": true,
+      "family_id_confirmed": "FAMILY02"
+    },
+    "FAMILY03": {
+      "path": "ignition/reports/evaluations/ignition-225-cognitive-evolution-r0-1/families/FAMILY03/sealed/targets.json",
+      "sha256": "0d4df5e40e67814f2c643f6412401d81b7050f65b097aed733b414686ae5a863",
+      "bytes": 2753,
+      "opened_json_envelope": true,
+      "family_id_confirmed": "FAMILY03"
+    }
+  },
+  "opening_scope": "Only the frozen A/B/C cases and sealed targets were opened after gate PASS. Target JSON was parsed only to verify sealed_artifact and family_id; case-input coding and prompts use no target values.",
+  "successor_visibility": "Each successor receives its assigned frozen method material, the same family A/B/C case bytes, the frozen visible template, and response schema. Sealed targets, coordinator maps, evaluator criteria, and target outcomes are excluded."
+}
