@@ -1,0 +1,114 @@
+{
+  "explicitly_quarantined": {
+    "blind_evaluation_subtree": [
+      "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/"
+    ],
+    "evaluator_dispatch_plan": [
+      "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/evaluator-dispatch-plan.md"
+    ],
+    "packet_builder": [
+      "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/tools/build_blind_packets.py"
+    ],
+    "scanner_path_search": {
+      "note": "No separate scanner-named tracked path was found; do not infer or inspect implementation semantics.",
+      "search_scope": "tracked paths under ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0 at d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+      "separate_scanner_path_names_found": []
+    }
+  },
+  "inventory": [
+    {
+      "byte_length": 1673,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/evaluator-dispatch-plan.md",
+      "sha256": "f8bbcd28a2cb0682c80edb3f2fb465934363a60918253f0d240c60385d19fa8d"
+    },
+    {
+      "byte_length": 11089,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/coordinator-ledger.json",
+      "sha256": "64071af9c4cd72fb47acfbbb8649140885b84ac4174f7e2586b090476866ea77"
+    },
+    {
+      "byte_length": 4080,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-a-attempt-01/dispatch-receipt.json",
+      "sha256": "155f5aca230278a9c2afad48f706fb3524c47a2c4db280ea47f9e0d4ba577d36"
+    },
+    {
+      "byte_length": 14635,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-a-attempt-01/last-message.txt",
+      "sha256": "531c8540c1e469cbb32a85d482f1801fd4fc93726e2027dac1c9ea17ed200f54"
+    },
+    {
+      "byte_length": 847,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-a-attempt-01/stderr.txt",
+      "sha256": "aa8cca44399ffe2ac3a5a638b34d993f9b7861973480fe2c3a14e05e2112b64c"
+    },
+    {
+      "byte_length": 16072,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-a-attempt-01/stdout.jsonl",
+      "sha256": "515ec5f2c1ebab44a8555aa15d63c75db831e366dfabe7a35990423545efaaf6"
+    },
+    {
+      "byte_length": 151664,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-a-prompt.md",
+      "sha256": "917faa24adab1a26851e8c35fe551a80847b975d94ab41f46394ac552ee26eba"
+    },
+    {
+      "byte_length": 6154,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-a-response-key.json",
+      "sha256": "914639bbe0fa9a311d3b74be4e099e7390fdbe731aa9f6d732d7c70156830021"
+    },
+    {
+      "byte_length": 4080,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-b-attempt-01/dispatch-receipt.json",
+      "sha256": "8e7126f325fce37f9702587ae5c5c42302ea1c592f4c53f41a3dbe1ee27385b3"
+    },
+    {
+      "byte_length": 15533,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-b-attempt-01/last-message.txt",
+      "sha256": "17e611880c73a781edaca1ce6d2cf30f05277136341068b643966ada906643f9"
+    },
+    {
+      "byte_length": 847,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-b-attempt-01/stderr.txt",
+      "sha256": "b9ebcd87886430100cb10d6a5851b3db2971652ece1545d96cc86e98fcde28d1"
+    },
+    {
+      "byte_length": 16971,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-b-attempt-01/stdout.jsonl",
+      "sha256": "0ade3cb371bcb521674da1058d3709db84e04c3e969099069e2050b48c05d07d"
+    },
+    {
+      "byte_length": 151664,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-b-prompt.md",
+      "sha256": "a35c8840f6a8e98c35dea2cfc451dc5a51cfa0b5acf7adf196da08cd297ee45f"
+    },
+    {
+      "byte_length": 6154,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-b-response-key.json",
+      "sha256": "17d16b1e55a2c1113c373544ffea9093d4a00647c0fb47bee0afd45dee8ff1a2"
+    },
+    {
+      "byte_length": 2858,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/evaluator-run-freeze-manifest.json",
+      "sha256": "5f9fcb6873162b40cf25e4a7484af96eb2657b2d4a5106cf5347de113ae8e380"
+    },
+    {
+      "byte_length": 6876,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/packet-freeze-manifest.json",
+      "sha256": "6d873fbff4188ab3d8e9564be644c27fafc716edcaaebfab83f4005bc5f9dec6"
+    },
+    {
+      "byte_length": 28909,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/blind-evaluation/sanitization-audit.json",
+      "sha256": "ade9a30bc5594252390535cc91917682a3e62f47dd8d8ccd1d77b26a6ebc1c32"
+    },
+    {
+      "byte_length": 26246,
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/tools/build_blind_packets.py",
+      "sha256": "66041a19e8b2b9b64823372c1975d6b87192151440ae8b61c0c0b956379cb468"
+    }
+  ],
+  "inventory_rule": "file path, byte length, SHA-256 only; file payloads were not decoded or printed",
+  "r1_primary_status_remains": "STOPPED_PROTOCOL_DEVIATION_NO_SCIENTIFIC_RESULT",
+  "schema_version": "ignition-229-r2-quarantine-manifest-v1",
+  "semantic_read_or_reuse": false
+}

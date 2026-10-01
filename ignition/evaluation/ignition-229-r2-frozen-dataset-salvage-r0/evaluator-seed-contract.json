@@ -1,0 +1,17 @@
+{
+  "contract_frozen_before_real_data": true,
+  "derivation": "seed = lowercase_hex(SHA256((freeze_manifest_sha256_hex || evaluator_label).encode(\"ascii\"))); || means direct concatenation with no delimiter.",
+  "freeze_manifest_path": "freeze-manifest.json",
+  "freeze_manifest_sha256": "7963ede143e38a01f102cbf53ef0dbddd1c9cd110c6f3e2b9297045d70f862f3",
+  "interactive_order_selection": false,
+  "labels": [
+    "EVALUATOR_A",
+    "EVALUATOR_B"
+  ],
+  "packet_order_algorithm": "ascending lexical SHA-256 of UTF-8(seed_hex + NUL + response_id), response_id as final tie-breaker",
+  "schema_version": "ignition-229-r2-evaluator-seed-contract-v1",
+  "seeds": {
+    "EVALUATOR_A": "7ffa3012c2668a2c347120a530a0c98670180a9aa7ba453a94917278bca0cb7e",
+    "EVALUATOR_B": "1b39154c084e47493acaa4eae0f8cef2e2ab5fbffa8db53f29897b0ed6458f1c"
+  }
+}

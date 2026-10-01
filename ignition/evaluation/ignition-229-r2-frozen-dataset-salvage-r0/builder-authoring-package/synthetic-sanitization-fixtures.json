@@ -1,0 +1,405 @@
+{
+  "fixtures": [
+    {
+      "case_bytes": "synthetic case bytes for case A\n",
+      "case_id": "A",
+      "criteria_bytes": "synthetic criteria bytes: preserve a fictional baseline action\n",
+      "fixture_id": "synthetic-full-token-and-route-removal-v1",
+      "response_envelope": {
+        "responses": [
+          {
+            "additional_actions": [
+              "SYNTHETIC_ADDITIONAL_A L01"
+            ],
+            "artifact_id": "SYNTHETIC_ARTIFACT",
+            "builder": "SYNTHETIC_BUILDER",
+            "bundle_id": "SYNTHETIC_BUNDLE",
+            "case_id": "A",
+            "condition_name": "SYNTHETIC_CONDITION",
+            "fallback": "SYNTHETIC_FALLBACK 01-e15692066dfc90306e83372151fc8512",
+            "lineage_id": "SYNTHETIC_LINEAGE",
+            "policy_id": "SYNTHETIC_POLICY",
+            "preserved_baseline_action_ids": [
+              "SYNTHETIC_BASELINE_KEEP",
+              "01a0f43d-99cc-7412-9310-ed8dd251d4a4"
+            ],
+            "primary_action": "SYNTHETIC_PRIMARY_A 01-e15692066dfc90306e83372151fc8512",
+            "provenance": "SYNTHETIC_PROVENANCE",
+            "rationale": "SYNTHETIC_RATIONALE_BEGIN __ALL_DENY_TOKENS__ SYNTHETIC_RATIONALE_END",
+            "reported_values": [
+              {
+                "name": "synthetic_metric",
+                "unit": "units",
+                "value": "SYNTHETIC_VALUE POLICY_F01_A"
+              }
+            ],
+            "route_trace": {
+              "input_ids": [
+                "01-e15692066dfc90306e83372151fc8512",
+                "01a0f43d-99cc-7412-9310-ed8dd251d4a4"
+              ],
+              "policy_id": "POLICY_F01_A",
+              "preserved_baseline_action_ids": [
+                "SYNTHETIC_BASELINE_KEEP"
+              ],
+              "route_type": "selector",
+              "selected_action_id": "SYNTHETIC_ACTION_ID",
+              "selected_rule_id": "L01"
+            },
+            "scope": "SYNTHETIC_SCOPE ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/01-e15692066dfc90306e83372151fc8512/attempt-01/dispatch-receipt.json",
+            "session_id": "SYNTHETIC_SESSION",
+            "source_locator": "__ONE_SOURCE_LOCATOR_TOKEN__",
+            "tool": "SYNTHETIC_TOOL"
+          },
+          {
+            "additional_actions": [
+              "SYNTHETIC_ADDITIONAL_B KEEP"
+            ],
+            "artifact_id": "SYNTHETIC_ARTIFACT",
+            "builder": "SYNTHETIC_BUILDER",
+            "bundle_id": "SYNTHETIC_BUNDLE",
+            "case_id": "B",
+            "condition_name": "SYNTHETIC_CONDITION",
+            "fallback": null,
+            "lineage_id": "SYNTHETIC_LINEAGE",
+            "policy_id": "SYNTHETIC_POLICY",
+            "preserved_baseline_action_ids": [
+              "SYNTHETIC_BASELINE_KEEP",
+              "SYNTHETIC_BASELINE_2"
+            ],
+            "primary_action": "SYNTHETIC_PRIMARY_B KEEP",
+            "provenance": "SYNTHETIC_PROVENANCE",
+            "rationale": "SYNTHETIC_RATIONALE_B unchanged",
+            "reported_values": [
+              {
+                "name": "synthetic_metric",
+                "unit": "units",
+                "value": 12.5
+              }
+            ],
+            "scope": "synthetic-local-scope",
+            "session_id": "SYNTHETIC_SESSION",
+            "source_locator": "__ONE_SOURCE_LOCATOR_TOKEN__",
+            "tool": "SYNTHETIC_TOOL"
+          },
+          {
+            "additional_actions": [
+              "SYNTHETIC_ADDITIONAL_C KEEP"
+            ],
+            "artifact_id": "SYNTHETIC_ARTIFACT",
+            "builder": "SYNTHETIC_BUILDER",
+            "bundle_id": "SYNTHETIC_BUNDLE",
+            "case_id": "C",
+            "condition_name": "SYNTHETIC_CONDITION",
+            "fallback": null,
+            "lineage_id": "SYNTHETIC_LINEAGE",
+            "policy_id": "SYNTHETIC_POLICY",
+            "preserved_baseline_action_ids": [
+              "SYNTHETIC_BASELINE_KEEP",
+              "SYNTHETIC_BASELINE_2"
+            ],
+            "primary_action": "SYNTHETIC_PRIMARY_C KEEP",
+            "provenance": "SYNTHETIC_PROVENANCE",
+            "rationale": "SYNTHETIC_RATIONALE_C unchanged",
+            "reported_values": [
+              {
+                "name": "synthetic_metric",
+                "unit": "units",
+                "value": 12.5
+              }
+            ],
+            "route_trace": {
+              "input_ids": [
+                "01-e15692066dfc90306e83372151fc8512",
+                "01a0f43d-99cc-7412-9310-ed8dd251d4a4"
+              ],
+              "policy_id": "POLICY_F01_A",
+              "preserved_baseline_action_ids": [
+                "SYNTHETIC_BASELINE_KEEP"
+              ],
+              "route_type": "selector",
+              "selected_action_id": "SYNTHETIC_ACTION_ID",
+              "selected_rule_id": "L01"
+            },
+            "scope": "synthetic-local-scope",
+            "session_id": "SYNTHETIC_SESSION",
+            "source_locator": "__ONE_SOURCE_LOCATOR_TOKEN__",
+            "tool": "SYNTHETIC_TOOL"
+          }
+        ],
+        "schema_version": "task229-successor-output-r0"
+      },
+      "response_id": "SYNTHETIC-OPAQUE-RESPONSE-A"
+    },
+    {
+      "case_bytes": "synthetic case bytes for case B\n",
+      "case_id": "B",
+      "criteria_bytes": "synthetic criteria bytes: fictional case B\n",
+      "fixture_id": "synthetic-route-absent-v1",
+      "response_envelope": {
+        "responses": [
+          {
+            "additional_actions": [
+              "SYNTHETIC_ADDITIONAL_A L01"
+            ],
+            "artifact_id": "SYNTHETIC_ARTIFACT",
+            "builder": "SYNTHETIC_BUILDER",
+            "bundle_id": "SYNTHETIC_BUNDLE",
+            "case_id": "A",
+            "condition_name": "SYNTHETIC_CONDITION",
+            "fallback": "SYNTHETIC_FALLBACK 01-e15692066dfc90306e83372151fc8512",
+            "lineage_id": "SYNTHETIC_LINEAGE",
+            "policy_id": "SYNTHETIC_POLICY",
+            "preserved_baseline_action_ids": [
+              "SYNTHETIC_BASELINE_KEEP",
+              "01a0f43d-99cc-7412-9310-ed8dd251d4a4"
+            ],
+            "primary_action": "SYNTHETIC_PRIMARY_A 01-e15692066dfc90306e83372151fc8512",
+            "provenance": "SYNTHETIC_PROVENANCE",
+            "rationale": "SYNTHETIC_RATIONALE_BEGIN __ALL_DENY_TOKENS__ SYNTHETIC_RATIONALE_END",
+            "reported_values": [
+              {
+                "name": "synthetic_metric",
+                "unit": "units",
+                "value": "SYNTHETIC_VALUE POLICY_F01_A"
+              }
+            ],
+            "route_trace": {
+              "input_ids": [
+                "01-e15692066dfc90306e83372151fc8512",
+                "01a0f43d-99cc-7412-9310-ed8dd251d4a4"
+              ],
+              "policy_id": "POLICY_F01_A",
+              "preserved_baseline_action_ids": [
+                "SYNTHETIC_BASELINE_KEEP"
+              ],
+              "route_type": "selector",
+              "selected_action_id": "SYNTHETIC_ACTION_ID",
+              "selected_rule_id": "L01"
+            },
+            "scope": "SYNTHETIC_SCOPE ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/01-e15692066dfc90306e83372151fc8512/attempt-01/dispatch-receipt.json",
+            "session_id": "SYNTHETIC_SESSION",
+            "source_locator": "__ONE_SOURCE_LOCATOR_TOKEN__",
+            "tool": "SYNTHETIC_TOOL"
+          },
+          {
+            "additional_actions": [
+              "SYNTHETIC_ADDITIONAL_B KEEP"
+            ],
+            "artifact_id": "SYNTHETIC_ARTIFACT",
+            "builder": "SYNTHETIC_BUILDER",
+            "bundle_id": "SYNTHETIC_BUNDLE",
+            "case_id": "B",
+            "condition_name": "SYNTHETIC_CONDITION",
+            "fallback": null,
+            "lineage_id": "SYNTHETIC_LINEAGE",
+            "policy_id": "SYNTHETIC_POLICY",
+            "preserved_baseline_action_ids": [
+              "SYNTHETIC_BASELINE_KEEP",
+              "SYNTHETIC_BASELINE_2"
+            ],
+            "primary_action": "SYNTHETIC_PRIMARY_B KEEP",
+            "provenance": "SYNTHETIC_PROVENANCE",
+            "rationale": "SYNTHETIC_RATIONALE_B unchanged",
+            "reported_values": [
+              {
+                "name": "synthetic_metric",
+                "unit": "units",
+                "value": 12.5
+              }
+            ],
+            "scope": "synthetic-local-scope",
+            "session_id": "SYNTHETIC_SESSION",
+            "source_locator": "__ONE_SOURCE_LOCATOR_TOKEN__",
+            "tool": "SYNTHETIC_TOOL"
+          },
+          {
+            "additional_actions": [
+              "SYNTHETIC_ADDITIONAL_C KEEP"
+            ],
+            "artifact_id": "SYNTHETIC_ARTIFACT",
+            "builder": "SYNTHETIC_BUILDER",
+            "bundle_id": "SYNTHETIC_BUNDLE",
+            "case_id": "C",
+            "condition_name": "SYNTHETIC_CONDITION",
+            "fallback": null,
+            "lineage_id": "SYNTHETIC_LINEAGE",
+            "policy_id": "SYNTHETIC_POLICY",
+            "preserved_baseline_action_ids": [
+              "SYNTHETIC_BASELINE_KEEP",
+              "SYNTHETIC_BASELINE_2"
+            ],
+            "primary_action": "SYNTHETIC_PRIMARY_C KEEP",
+            "provenance": "SYNTHETIC_PROVENANCE",
+            "rationale": "SYNTHETIC_RATIONALE_C unchanged",
+            "reported_values": [
+              {
+                "name": "synthetic_metric",
+                "unit": "units",
+                "value": 12.5
+              }
+            ],
+            "route_trace": {
+              "input_ids": [
+                "01-e15692066dfc90306e83372151fc8512",
+                "01a0f43d-99cc-7412-9310-ed8dd251d4a4"
+              ],
+              "policy_id": "POLICY_F01_A",
+              "preserved_baseline_action_ids": [
+                "SYNTHETIC_BASELINE_KEEP"
+              ],
+              "route_type": "selector",
+              "selected_action_id": "SYNTHETIC_ACTION_ID",
+              "selected_rule_id": "L01"
+            },
+            "scope": "synthetic-local-scope",
+            "session_id": "SYNTHETIC_SESSION",
+            "source_locator": "__ONE_SOURCE_LOCATOR_TOKEN__",
+            "tool": "SYNTHETIC_TOOL"
+          }
+        ],
+        "schema_version": "task229-successor-output-r0"
+      },
+      "response_id": "SYNTHETIC-OPAQUE-RESPONSE-B"
+    },
+    {
+      "case_bytes": "synthetic case bytes for case C\n",
+      "case_id": "C",
+      "criteria_bytes": "synthetic criteria bytes: fictional case C\n",
+      "fixture_id": "synthetic-route-present-v1",
+      "response_envelope": {
+        "responses": [
+          {
+            "additional_actions": [
+              "SYNTHETIC_ADDITIONAL_A L01"
+            ],
+            "artifact_id": "SYNTHETIC_ARTIFACT",
+            "builder": "SYNTHETIC_BUILDER",
+            "bundle_id": "SYNTHETIC_BUNDLE",
+            "case_id": "A",
+            "condition_name": "SYNTHETIC_CONDITION",
+            "fallback": "SYNTHETIC_FALLBACK 01-e15692066dfc90306e83372151fc8512",
+            "lineage_id": "SYNTHETIC_LINEAGE",
+            "policy_id": "SYNTHETIC_POLICY",
+            "preserved_baseline_action_ids": [
+              "SYNTHETIC_BASELINE_KEEP",
+              "01a0f43d-99cc-7412-9310-ed8dd251d4a4"
+            ],
+            "primary_action": "SYNTHETIC_PRIMARY_A 01-e15692066dfc90306e83372151fc8512",
+            "provenance": "SYNTHETIC_PROVENANCE",
+            "rationale": "SYNTHETIC_RATIONALE_BEGIN __ALL_DENY_TOKENS__ SYNTHETIC_RATIONALE_END",
+            "reported_values": [
+              {
+                "name": "synthetic_metric",
+                "unit": "units",
+                "value": "SYNTHETIC_VALUE POLICY_F01_A"
+              }
+            ],
+            "route_trace": {
+              "input_ids": [
+                "01-e15692066dfc90306e83372151fc8512",
+                "01a0f43d-99cc-7412-9310-ed8dd251d4a4"
+              ],
+              "policy_id": "POLICY_F01_A",
+              "preserved_baseline_action_ids": [
+                "SYNTHETIC_BASELINE_KEEP"
+              ],
+              "route_type": "selector",
+              "selected_action_id": "SYNTHETIC_ACTION_ID",
+              "selected_rule_id": "L01"
+            },
+            "scope": "SYNTHETIC_SCOPE ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/01-e15692066dfc90306e83372151fc8512/attempt-01/dispatch-receipt.json",
+            "session_id": "SYNTHETIC_SESSION",
+            "source_locator": "__ONE_SOURCE_LOCATOR_TOKEN__",
+            "tool": "SYNTHETIC_TOOL"
+          },
+          {
+            "additional_actions": [
+              "SYNTHETIC_ADDITIONAL_B KEEP"
+            ],
+            "artifact_id": "SYNTHETIC_ARTIFACT",
+            "builder": "SYNTHETIC_BUILDER",
+            "bundle_id": "SYNTHETIC_BUNDLE",
+            "case_id": "B",
+            "condition_name": "SYNTHETIC_CONDITION",
+            "fallback": null,
+            "lineage_id": "SYNTHETIC_LINEAGE",
+            "policy_id": "SYNTHETIC_POLICY",
+            "preserved_baseline_action_ids": [
+              "SYNTHETIC_BASELINE_KEEP",
+              "SYNTHETIC_BASELINE_2"
+            ],
+            "primary_action": "SYNTHETIC_PRIMARY_B KEEP",
+            "provenance": "SYNTHETIC_PROVENANCE",
+            "rationale": "SYNTHETIC_RATIONALE_B unchanged",
+            "reported_values": [
+              {
+                "name": "synthetic_metric",
+                "unit": "units",
+                "value": 12.5
+              }
+            ],
+            "scope": "synthetic-local-scope",
+            "session_id": "SYNTHETIC_SESSION",
+            "source_locator": "__ONE_SOURCE_LOCATOR_TOKEN__",
+            "tool": "SYNTHETIC_TOOL"
+          },
+          {
+            "additional_actions": [
+              "SYNTHETIC_ADDITIONAL_C KEEP"
+            ],
+            "artifact_id": "SYNTHETIC_ARTIFACT",
+            "builder": "SYNTHETIC_BUILDER",
+            "bundle_id": "SYNTHETIC_BUNDLE",
+            "case_id": "C",
+            "condition_name": "SYNTHETIC_CONDITION",
+            "fallback": null,
+            "lineage_id": "SYNTHETIC_LINEAGE",
+            "policy_id": "SYNTHETIC_POLICY",
+            "preserved_baseline_action_ids": [
+              "SYNTHETIC_BASELINE_KEEP",
+              "SYNTHETIC_BASELINE_2"
+            ],
+            "primary_action": "SYNTHETIC_PRIMARY_C KEEP",
+            "provenance": "SYNTHETIC_PROVENANCE",
+            "rationale": "SYNTHETIC_RATIONALE_C unchanged",
+            "reported_values": [
+              {
+                "name": "synthetic_metric",
+                "unit": "units",
+                "value": 12.5
+              }
+            ],
+            "route_trace": {
+              "input_ids": [
+                "01-e15692066dfc90306e83372151fc8512",
+                "01a0f43d-99cc-7412-9310-ed8dd251d4a4"
+              ],
+              "policy_id": "POLICY_F01_A",
+              "preserved_baseline_action_ids": [
+                "SYNTHETIC_BASELINE_KEEP"
+              ],
+              "route_type": "selector",
+              "selected_action_id": "SYNTHETIC_ACTION_ID",
+              "selected_rule_id": "L01"
+            },
+            "scope": "synthetic-local-scope",
+            "session_id": "SYNTHETIC_SESSION",
+            "source_locator": "__ONE_SOURCE_LOCATOR_TOKEN__",
+            "tool": "SYNTHETIC_TOOL"
+          }
+        ],
+        "schema_version": "task229-successor-output-r0"
+      },
+      "response_id": "SYNTHETIC-OPAQUE-RESPONSE-C"
+    }
+  ],
+  "purpose": "Synthetic-only contract fixtures; no real R1 response/case/target/evaluator data. The gate runner replaces the two explicit placeholders with metadata tokens from deny-token-manifest.json before each invocation.",
+  "schema_version": "ignition-229-r2-synthetic-sanitization-fixtures-v1",
+  "token_expansion": {
+    "all_tokens_joiner": " | ",
+    "all_tokens_placeholder": "__ALL_DENY_TOKENS__",
+    "must_expand_from": "deny-token-manifest.json#literal_tokens",
+    "single_source_locator_placeholder": "__ONE_SOURCE_LOCATOR_TOKEN__"
+  }
+}
