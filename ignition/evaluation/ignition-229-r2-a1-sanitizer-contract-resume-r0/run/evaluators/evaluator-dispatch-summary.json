@@ -1,0 +1,60 @@
+{
+  "schema_version": "ignition-229-r2-a1-evaluator-dispatch-summary-v1",
+  "experiment_id": "IGNITION-20261001-229-R2-A1",
+  "dispatches": [
+    {
+      "evaluator_label": "A",
+      "driver_exit_code": 0,
+      "status": "COMPLETED",
+      "receipt_path": "/Users/zhiyuan/Documents/Codex/2026-10-01/arvin-liu-1111-a1edf0d791bd9fc017aaf43a489572f5a8a18b86-protocols-instruction/work/ignition-a1/ignition/evaluation/ignition-229-r2-a1-sanitizer-contract-resume-r0/run/evaluators/evaluator-a-dispatch/dispatch-receipt.json",
+      "receipt_status": "COMPLETED",
+      "prompt_sha256": "305127552b0ebea53adbd37f21ef8086e108b90899fdad1df5ec982265fe7ee6",
+      "outbound_sha256": "305127552b0ebea53adbd37f21ef8086e108b90899fdad1df5ec982265fe7ee6",
+      "requested_model": "gpt-6-astra",
+      "requested_effort": "medium",
+      "thread_ids": [
+        "01a0f880-65e2-7520-8dd1-00f4c9bf18df"
+      ],
+      "pid": 29208,
+      "return_code": 0,
+      "timed_out": false,
+      "last_message_captured": true,
+      "agent_message_count": 1,
+      "observed_models": [],
+      "observed_efforts": [],
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ]
+    },
+    {
+      "evaluator_label": "B",
+      "driver_exit_code": 0,
+      "status": "COMPLETED",
+      "receipt_path": "/Users/zhiyuan/Documents/Codex/2026-10-01/arvin-liu-1111-a1edf0d791bd9fc017aaf43a489572f5a8a18b86-protocols-instruction/work/ignition-a1/ignition/evaluation/ignition-229-r2-a1-sanitizer-contract-resume-r0/run/evaluators/evaluator-b-dispatch/dispatch-receipt.json",
+      "receipt_status": "COMPLETED",
+      "prompt_sha256": "0e7a4524fa5f2300c5666c6d8507be00f50aa50e413df7191c473765b0ba1b30",
+      "outbound_sha256": "0e7a4524fa5f2300c5666c6d8507be00f50aa50e413df7191c473765b0ba1b30",
+      "requested_model": "gpt-6-astra",
+      "requested_effort": "medium",
+      "thread_ids": [
+        "01a0f883-1de3-71e0-af5c-5e38743398c2"
+      ],
+      "pid": 30054,
+      "return_code": 0,
+      "timed_out": false,
+      "last_message_captured": true,
+      "agent_message_count": 1,
+      "observed_models": [],
+      "observed_efforts": [],
+      "event_types": [
+        "thread.started",
+        "turn.started",
+        "item.completed",
+        "turn.completed"
+      ]
+    }
+  ]
+}

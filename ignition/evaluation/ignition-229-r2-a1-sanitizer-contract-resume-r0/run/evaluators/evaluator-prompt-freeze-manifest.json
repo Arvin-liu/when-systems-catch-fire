@@ -1,0 +1,154 @@
+{
+  "schema_version": "ignition-229-r2-a1-evaluator-prompt-freeze-v1",
+  "experiment_id": "IGNITION-20261001-229-R2-A1",
+  "status": "FROZEN_AND_DISPATCHED",
+  "analysis_class": "SECONDARY_SALVAGE_ANALYSIS_OF_PREEXISTING_R1_FROZEN_SUCCESSOR_DATASET",
+  "new_successor_sessions": 0,
+  "evaluator_count": 2,
+  "dispatcher_source_commit": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+  "dispatcher_source_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/tools/dispatcher.py",
+  "dispatcher_sha256": "c4e2aa109201c8292149a7a92020be36470f90be6d2ab7927d8c82c4b9cce577",
+  "implementation_freeze_manifest_sha256": "bdf549124bb3503adc2973033f786407b3b2c570ba6041c0899d92047c41e71f",
+  "packet_freeze_manifest_sha256": "bda7bee28412a7a7b9bc10f3d752641ea50b46aff0900485a732854b3f260f10",
+  "evaluator_materials": {
+    "task229_evaluator_rubric": {
+      "sha256": "a5162f3891d8a3bb71e58006860a67bc292987ec7071d2aff2a1efc63436f8e0",
+      "byte_length": 1824
+    },
+    "task225_evaluator_criteria": {
+      "sha256": "9cc185aaf688cd2649a321c80051b8cc69e78a0b93edb3deac5cea3abd86cbcf",
+      "byte_length": 2356
+    },
+    "task225_evaluator_schema": {
+      "sha256": "5be015a0568a830ed753ff8ef65a3909d0cfb99dff03f9ed39cb48719850ef6d",
+      "byte_length": 2275
+    },
+    "task227_transfer_criteria": {
+      "sha256": "880ce3bc42d4bf122babbbd349f8b4a4360f8e238e1338c72765efbe114e3874",
+      "byte_length": 2034
+    },
+    "task227_transfer_schema": {
+      "sha256": "665fbee30e02a8761044cd94bfd2a9528aae16fefa5bafaed604efbcc54b3eac",
+      "byte_length": 1554
+    },
+    "blind_evaluation_schema": {
+      "sha256": "3c6e27ce7b8393314c7b5c76e7a9611d023ddce3ecce69ac626f4b071e019cd4",
+      "byte_length": 754
+    }
+  },
+  "evaluators": [
+    {
+      "evaluator_label": "A",
+      "prompt_path": "run/evaluators/evaluator-a-prompt.md",
+      "prompt_sha256": "305127552b0ebea53adbd37f21ef8086e108b90899fdad1df5ec982265fe7ee6",
+      "prompt_byte_length": 148894,
+      "order_seed_input": "bdf549124bb3503adc2973033f786407b3b2c570ba6041c0899d92047c41e71fA",
+      "order_seed_sha256": "76c08fef2c732aa217e804a3173e3b0440b84a38bbe2a800f4df8e50dfd3ee4a",
+      "order_algorithm": "ascending SHA256(seed_digest || presentation_response_id_ascii), tie-break presentation_response_id",
+      "packet_count": 54,
+      "presentation_id_count": 54,
+      "presentation_order_sha256": "abb5907ddb719792a8cd303cc1dfc097c73d75ff5454c449034c3a05653847f6",
+      "fresh_ephemeral_process_required": true
+    },
+    {
+      "evaluator_label": "B",
+      "prompt_path": "run/evaluators/evaluator-b-prompt.md",
+      "prompt_sha256": "0e7a4524fa5f2300c5666c6d8507be00f50aa50e413df7191c473765b0ba1b30",
+      "prompt_byte_length": 148894,
+      "order_seed_input": "bdf549124bb3503adc2973033f786407b3b2c570ba6041c0899d92047c41e71fB",
+      "order_seed_sha256": "99aaa8392a7057247f413141c00700c3e4cc00019328685614ae89f51043f48a",
+      "order_algorithm": "ascending SHA256(seed_digest || presentation_response_id_ascii), tie-break presentation_response_id",
+      "packet_count": 54,
+      "presentation_id_count": 54,
+      "presentation_order_sha256": "285c3531ffb6d373c66fd560703579d269abd3cabdf634835e2c611e2564cd82",
+      "fresh_ephemeral_process_required": true
+    }
+  ],
+  "coordinator_response_key_path": "run/evaluators/evaluator-response-key-coordinator.json",
+  "coordinator_response_key_sha256": "6260bd5141ff94063e4340b0b6e9de9e757e142722c15e1876659c354ed33873",
+  "response_ids_differ_between_evaluators": true,
+  "packet_order_differs_between_evaluators": true,
+  "condition_lineage_policy_or_session_mapping_in_prompts": false,
+  "raw_r1_evaluator_materials_used": false,
+  "failed_r2_evaluator_materials_used": false,
+  "tools_or_external_sources_used": false,
+  "dispatcher_runtime": {
+    "codex_cli_version": "0.159.2",
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "medium",
+    "fresh_ephemeral_processes": 2,
+    "distinct_thread_ids": 2,
+    "process_timeout_seconds": 240
+  },
+  "dispatch_results": [
+    {
+      "evaluator_label": "A",
+      "status": "PASS",
+      "prompt_sha256": "305127552b0ebea53adbd37f21ef8086e108b90899fdad1df5ec982265fe7ee6",
+      "outbound_sha256": "305127552b0ebea53adbd37f21ef8086e108b90899fdad1df5ec982265fe7ee6",
+      "dispatch_receipt_path": "run/evaluators/evaluator-a-dispatch/dispatch-receipt.json",
+      "dispatch_receipt_sha256": "632ef1d87e43951820c600c67ace424e1d34a075dfc58e624cd3ccf5595ce87b",
+      "stdout_sha256": "e43521e94105460729806b7c19250f9a9943ac7de85dc2d1daf5a31539ab2f5a",
+      "stderr_sha256": "cd70107bf729e9f5d6b4e4de337998eea9596d6ee2a9bb7dda80d535d7065c95",
+      "raw_output_path": "run/evaluators/evaluator-a-dispatch/last-message.txt",
+      "raw_output_sha256": "b7a45c58db4f08ce6f802f9cb133e96654baa63ab3ff4783396bacd65c26599c",
+      "raw_output_byte_length": 16409,
+      "schema_valid": true,
+      "exact_rows": 54,
+      "exact_response_case_coverage": true,
+      "process_pid": 29208,
+      "thread_id": "01a0f880-65e2-7520-8dd1-00f4c9bf18df",
+      "requested_model": "gpt-6-astra",
+      "requested_effort": "medium",
+      "observed_models": [],
+      "observed_efforts": [],
+      "jsonl_event_types": [
+        "item.completed",
+        "thread.started",
+        "turn.completed",
+        "turn.started"
+      ],
+      "jsonl_item_types": [
+        "agent_message"
+      ],
+      "nonmessage_or_tool_item_types": [],
+      "agent_message_count": 1
+    },
+    {
+      "evaluator_label": "B",
+      "status": "PASS",
+      "prompt_sha256": "0e7a4524fa5f2300c5666c6d8507be00f50aa50e413df7191c473765b0ba1b30",
+      "outbound_sha256": "0e7a4524fa5f2300c5666c6d8507be00f50aa50e413df7191c473765b0ba1b30",
+      "dispatch_receipt_path": "run/evaluators/evaluator-b-dispatch/dispatch-receipt.json",
+      "dispatch_receipt_sha256": "373a8ea346a266b70bcb124160648d2d45e39a6944e2293a90046c2427ef50a1",
+      "stdout_sha256": "66a30ec78b2d7d1ab1bdf6bf4e1e3dfa9816384a825c7cbdb2a57b378a296fee",
+      "stderr_sha256": "e8ff9e93214e0243094e8c943c797076e57c8302959df762ad34cb923c55653a",
+      "raw_output_path": "run/evaluators/evaluator-b-dispatch/last-message.txt",
+      "raw_output_sha256": "5421d24df568a13c9a501fe50ff6b3a64ad6b44465c8988bda2e51dd79245cf3",
+      "raw_output_byte_length": 12784,
+      "schema_valid": true,
+      "exact_rows": 54,
+      "exact_response_case_coverage": true,
+      "process_pid": 30054,
+      "thread_id": "01a0f883-1de3-71e0-af5c-5e38743398c2",
+      "requested_model": "gpt-6-astra",
+      "requested_effort": "medium",
+      "observed_models": [],
+      "observed_efforts": [],
+      "jsonl_event_types": [
+        "item.completed",
+        "thread.started",
+        "turn.completed",
+        "turn.started"
+      ],
+      "jsonl_item_types": [
+        "agent_message"
+      ],
+      "nonmessage_or_tool_item_types": [],
+      "agent_message_count": 1
+    }
+  ],
+  "raw_outputs_schema_valid": true,
+  "exact_coverage_each": 54,
+  "dispatch_summary_sha256": "f8bc57df30c5ba1df7afd638bfb9ad50ef143c6f2cf9ca94a9fb6a9a4c28e2df"
+}
