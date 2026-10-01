@@ -1325,7 +1325,9 @@
     "prompt_case_insertion_wrapper_bytes": "LF before exact frozen case bytes; LF LF after exact frozen case bytes",
     "case_deny_token_occurrences": 0,
     "target_deny_token_occurrences": 0,
-    "raw_response_bytes_read": false,
-    "condition_or_lineage_map_used_for_pairing": false
+    "raw_response_bytes_read": true,
+    "condition_or_lineage_map_used_for_pairing": false,
+    "packetization_phase": "A1-06",
+    "packet_pairs_built_and_independently_checked": 54
   }
 }
