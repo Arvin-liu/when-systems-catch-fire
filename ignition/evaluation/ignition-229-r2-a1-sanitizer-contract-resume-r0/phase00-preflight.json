@@ -1,0 +1,93 @@
+{
+  "experiment_id": "IGNITION-20261001-229-R2-A1",
+  "phase": "A1-00-exact-state-verification",
+  "status": "PASS",
+  "control_snapshot": {
+    "repository": "Arvin-liu/1111",
+    "commit": "a1edf0d791bd9fc017aaf43a489572f5a8a18b86",
+    "tree": "0cd51f97ec5021ec298340112414d81b01231647",
+    "sole_nonterminal_current_control_count": 1,
+    "sole_nonterminal_current_control_task": "IGNITION-20261001-229-R2-A1",
+    "r2_receipt_branch": "relay/receipts/IGNITION-20261001-229-R2",
+    "r2_receipt_head": "751f9f7fdcb7f1588dc584eb5d07a8dd2b709c5d"
+  },
+  "formal_repository": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "origin": "https://github.com/Arvin-liu/when-systems-catch-fire.git",
+    "r2_exact_head": "9c409d6d998d62ff2c65eb50fd32b7fdf45af806",
+    "new_branch": "work/IGNITION-20261001-229-R2-A1-sanitizer-contract-resume-r0",
+    "pr241": {
+      "state": "OPEN",
+      "draft": true,
+      "merged": false,
+      "head_sha": "9c409d6d998d62ff2c65eb50fd32b7fdf45af806"
+    },
+    "exact_head_required_workflows": {
+      "foundation-validation": "success",
+      "q33-governance-validation": "success",
+      "architecture-pages": "success",
+      "repository-path-accounting-preflight": "success"
+    }
+  },
+  "r1_frozen_dataset": {
+    "pr240": {
+      "state": "OPEN",
+      "draft": true,
+      "merged": false,
+      "head_sha": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b"
+    },
+    "raw_session_freeze_manifest_sha256": "fcdd4b742ffd0cd7860d2ea583ea39c14ee1aa11fd832c0ab4388a3c5dd97bc0",
+    "raw_session_freeze_manifest_sha256_match": true,
+    "design_sessions": 18,
+    "completed_sessions": 18,
+    "missing_or_invalid": 0,
+    "replacements": 0,
+    "historical_attempt1_responses_used": false,
+    "target_criteria_opened_before_response_freeze": false,
+    "raw_file_hashes_checked": 73,
+    "raw_file_hash_mismatches": 0,
+    "verification_mode": "sha256_and_byte_length_only_no_semantic_read"
+  },
+  "historical_fixed_input_map": {
+    "source_commit": "4ee132e8d50e8805c466cb5d681aaa18c34c9f68",
+    "path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/run/case-input-values-and-route-expectations.json",
+    "expected_sha256": "b2d44d56aa602e429a8f3ddded61e0b3524b16700a4d35232126a5e264ffa057",
+    "observed_sha256": "b2d44d56aa602e429a8f3ddded61e0b3524b16700a4d35232126a5e264ffa057",
+    "semantic_contents_read": false,
+    "reconstruction_or_recoding": false
+  },
+  "original_task229_bundle": {
+    "source_commit": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+    "freeze_manifest_sha256": "057d76eae931881a3209129528fef500aef762854beb6b5288411441bbf55b95",
+    "files_checked": 19,
+    "hash_mismatches": 0,
+    "semantic_contents_read": false
+  },
+  "failed_r2_candidates": {
+    "builder_sha256": "b31f3f2674f932237a8b63c043cdf1089ac8e0531bb08317aac9b8a04b60838b",
+    "checker_sha256": "b16a914b8a112bed084261d8d05eb32d941298c3a1be1d8e37d27e1dc9f11388",
+    "hash_only_verification": true,
+    "included_in_r2_freeze_manifest": false,
+    "included_in_r2_phase02_freeze_seal": false,
+    "read_as_source_or_executed": false,
+    "patch_or_reuse": false
+  },
+  "r2_post_stop_artifacts": {
+    "real_data_packet_evaluator_analysis_artifact_paths": 0,
+    "fresh_evaluators": 0,
+    "recompute_runs": 0,
+    "scientific_result": false
+  },
+  "h1_dispatcher": {
+    "receipt_commit": "98c415d0a92b382263ef9fca7c8e42439309d10d",
+    "sha256_expected": "c4e2aa109201c8292149a7a92020be36470f90be6d2ab7927d8c82b4b9cce577",
+    "sha256_observed": "c4e2aa109201c8292149a7a92020be36470f90be6d2ab7927d8c82b4b9cce577"
+  },
+  "exposure_and_lifecycle": {
+    "real_r1_response_semantic_reads": 0,
+    "real_case_target_semantic_reads": 0,
+    "fresh_evaluators_started": 0,
+    "new_successor_sessions": 0,
+    "task230_started": false
+  }
+}

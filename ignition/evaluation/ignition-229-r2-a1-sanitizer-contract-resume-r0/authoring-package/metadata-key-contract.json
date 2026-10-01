@@ -1,0 +1,32 @@
+{
+  "exact_metadata_removal_canonical_keys": [
+    "provenance",
+    "builder",
+    "tool",
+    "file_path",
+    "source_locator",
+    "artifact_id",
+    "session_id",
+    "policy_id",
+    "lineage_id",
+    "bundle_id",
+    "condition_name"
+  ],
+  "key_canonicalization": {
+    "no_other_transforms": true,
+    "operations_in_order": [
+      "lowercase",
+      "replace_hyphen_with_underscore"
+    ],
+    "scope": "object_keys_only"
+  },
+  "schema_version": "task229-r2-a1-metadata-key-contract-v1",
+  "unlisted_key_policy": {
+    "preserve_before_schema_validation": true,
+    "schema_invalid_survivor": "fail_closed",
+    "schema_source": "original_frozen_response_schema.json"
+  },
+  "whole_object_removal_canonical_keys": [
+    "route_trace"
+  ]
+}
