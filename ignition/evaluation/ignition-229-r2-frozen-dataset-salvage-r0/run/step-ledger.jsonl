@@ -1,0 +1,4 @@
+{"evidence": "source-bindings.json; quarantine-manifest.json", "status": "PASS", "step": "00"}
+{"evidence": "formal commit e2f94951; second generator check; foundation 63/63", "status": "PASS", "step": "01"}
+{"evidence": "freeze-manifest.json SHA256 7963ede143e38a01f102cbf53ef0dbddd1c9cd110c6f3e2b9297045d70f862f3; phase02 commit d1875fec", "status": "PASS", "step": "02"}
+{"evidence": "run/authoring/metadata-contract-delta.json; run/authoring/synthetic-gate/synthetic-gate-report.json", "marker": "TASK229_R2_SANITIZER_CONTRACT_NOT_ESTABLISHED", "real_data_opened": false, "status": "STOP", "step": "03"}

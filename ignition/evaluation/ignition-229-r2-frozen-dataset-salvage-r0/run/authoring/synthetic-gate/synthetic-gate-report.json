@@ -1,0 +1,87 @@
+{
+  "all_builder_runs_pass": true,
+  "all_checker_runs_pass": true,
+  "all_repeated_outputs_identical": true,
+  "all_token_scans_zero": true,
+  "contract_disagreement": "builder/checker metadata key sets differ; see metadata-contract-delta.json",
+  "contract_disagreement_detected": true,
+  "contract_disagreement_file": "run/authoring/metadata-contract-delta.json",
+  "fixtures_run": 3,
+  "real_r1_data_opened": false,
+  "results": [
+    {
+      "builder_outputs_byte_identical": true,
+      "builder_runs": [
+        {
+          "output_exists": true,
+          "return_code": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "output_exists": true,
+          "return_code": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "checker_diagnostic": "{\"case_sha256\":\"3c30357a663d92ce185470000c2d7126ad0fb9a30f20da5278f60eb83c1b9d30\",\"criteria_sha256\":\"2b73b86f97f5f10a09c",
+      "checker_return_code": 0,
+      "checker_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_stdout_sha256": "3b009cbb9a513124ec1add522833583f13539230b0dc82e9dbbba8a4af26d83c",
+      "fixture_id": "synthetic-full-token-and-route-removal-v1",
+      "packet_sha256": "2d409bd12909bf67af3b7baba1122e2ffbcccb3ba1d5bc06f99ee8744a9682e6",
+      "remaining_deny_token_count": 0
+    },
+    {
+      "builder_outputs_byte_identical": true,
+      "builder_runs": [
+        {
+          "output_exists": true,
+          "return_code": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "output_exists": true,
+          "return_code": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "checker_diagnostic": "{\"case_sha256\":\"94743e8e626d0d335afc6b48a1fd3454eb303c905944cf50d7ff4499971abbf5\",\"criteria_sha256\":\"86e8278fb94de25e3be",
+      "checker_return_code": 0,
+      "checker_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_stdout_sha256": "c4917a0bd3df15f4d4895a6abab28d679d39a90f748c015bcb09525d3e08b203",
+      "fixture_id": "synthetic-route-absent-v1",
+      "packet_sha256": "916a824ecc262a2200e045d943698d70416f07c9af1985e2fe4013789a49f3a8",
+      "remaining_deny_token_count": 0
+    },
+    {
+      "builder_outputs_byte_identical": true,
+      "builder_runs": [
+        {
+          "output_exists": true,
+          "return_code": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "output_exists": true,
+          "return_code": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "checker_diagnostic": "{\"case_sha256\":\"2134fa810ffa41d7c77f53a36c0cb83f8643c475b23b1509ab70b9fe5a17b506\",\"criteria_sha256\":\"984aeae8f5f1311dad3",
+      "checker_return_code": 0,
+      "checker_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checker_stdout_sha256": "d28462da125221015b8dfe51ddcba2e520f956ad2d65429dda2ab0f982f7f884",
+      "fixture_id": "synthetic-route-present-v1",
+      "packet_sha256": "dac705a200a8c061333db9b8cd940fa4f02b3315c6a720db57820fb31bec71a1",
+      "remaining_deny_token_count": 0
+    }
+  ],
+  "schema_version": "ignition-229-r2-synthetic-gate-report-v1",
+  "synthetic_fixtures_passed_but_contract_gate_failed": true
+}

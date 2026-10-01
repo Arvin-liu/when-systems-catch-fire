@@ -1,0 +1,46 @@
+{
+  "authoring_package_manifest": "builder-authoring-package-manifest.json",
+  "builder": {
+    "candidate_path": "run/authoring/builder-cli/builder.py",
+    "candidate_sha256": "b31f3f2674f932237a8b63c043cdf1089ac8e0531bb08317aac9b8a04b60838b",
+    "effort_requested": "medium",
+    "frozen_for_real_data": false,
+    "model_requested": "gpt-6-astra",
+    "outbound_sha256": "a2227a7bb0e9eb43f0337350176903759136a52573c1eea9b49f69fee98ad30d",
+    "prompt_path": "run/authoring-prompts/builder-authoring-prompt.md",
+    "prompt_sha256": "a2227a7bb0e9eb43f0337350176903759136a52573c1eea9b49f69fee98ad30d",
+    "source_sha256": "a2227a7bb0e9eb43f0337350176903759136a52573c1eea9b49f69fee98ad30d",
+    "stdin_sha256": "a2227a7bb0e9eb43f0337350176903759136a52573c1eea9b49f69fee98ad30d",
+    "thread_ids": [
+      "01a0f651-f967-73c1-b517-d86aa55432f7"
+    ],
+    "tools_called": false,
+    "workspace_empty_at_launch": true
+  },
+  "checker": {
+    "candidate_path": "run/authoring/checker-cli/checker.py",
+    "candidate_sha256": "b16a914b8a112bed084261d8d05eb32d941298c3a1be1d8e37d27e1dc9f11388",
+    "effort_requested": "medium",
+    "frozen_for_real_data": false,
+    "model_requested": "gpt-6-astra",
+    "outbound_sha256": "9f159f33fc24ed39db870007ca439ddbe47d745963823c9c67356349f0e5fadc",
+    "prompt_path": "run/authoring-prompts/checker-authoring-prompt.md",
+    "prompt_sha256": "9f159f33fc24ed39db870007ca439ddbe47d745963823c9c67356349f0e5fadc",
+    "source_sha256": "9f159f33fc24ed39db870007ca439ddbe47d745963823c9c67356349f0e5fadc",
+    "stdin_sha256": "9f159f33fc24ed39db870007ca439ddbe47d745963823c9c67356349f0e5fadc",
+    "thread_ids": [
+      "01a0f655-0d66-73c3-b701-7aa518b2ea7f"
+    ],
+    "tools_called": false,
+    "workspace_empty_at_launch": true
+  },
+  "h1_dispatcher": {
+    "local_copy": "run/tools/h1-dispatcher.py",
+    "sha256": "c4e2aa109201c8292149a7a92020be36470f90be6d2ab7927d8c82c4b9cce577",
+    "source_commit": "98c415d0a92b382263ef9fca7c8e42439309d10d"
+  },
+  "real_data_accessed": false,
+  "schema_version": "ignition-229-r2-authoring-process-record-v1",
+  "synthetic_only_inputs": true,
+  "threads_distinct": true
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "task229-h1-dispatch-receipt-v1",
+  "started_at_utc": "2026-10-01T07:16:02.146512Z",
+  "source_path": "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/when-systems-catch-fire-r2-analysis/ignition/evaluation/ignition-229-r2-frozen-dataset-salvage-r0/run/authoring-prompts/builder-authoring-prompt.md",
+  "expected_sha256": "a2227a7bb0e9eb43f0337350176903759136a52573c1eea9b49f69fee98ad30d",
+  "cli_requested_path": "/Users/zhiyuan/.local/bin/codex",
+  "model_requested": "gpt-6-astra",
+  "reasoning_effort_requested": "medium",
+  "shell": false,
+  "stdin_transport": "subprocess.Popen.communicate(input=source_bytes)",
+  "freshness": {
+    "resume_subcommand": false,
+    "ephemeral_flag": true
+  },
+  "prelaunch": {
+    "source_byte_length": 65544,
+    "source_sha256": "a2227a7bb0e9eb43f0337350176903759136a52573c1eea9b49f69fee98ad30d",
+    "strict_utf8_decode": true,
+    "utf8_roundtrip_equal": true,
+    "outbound_byte_length": 65544,
+    "outbound_sha256": "a2227a7bb0e9eb43f0337350176903759136a52573c1eea9b49f69fee98ad30d",
+    "outbound_equals_source": true,
+    "cli_resolved_path": "/Users/zhiyuan/.local/lib/node_modules/@openai/codex/bin/codex.js",
+    "workspace_path": "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/r2-cli-isolated-workspaces/task229-h1-fresh-_uu15jf0",
+    "workspace_empty_at_launch": true,
+    "command_argv_no_prompt_content": true,
+    "argv": [
+      "/Users/zhiyuan/.local/bin/codex",
+      "exec",
+      "--ephemeral",
+      "--ignore-user-config",
+      "--ignore-rules",
+      "--strict-config",
+      "--model",
+      "gpt-6-astra",
+      "--config",
+      "model_reasoning_effort=\"medium\"",
+      "--sandbox",
+      "read-only",
+      "--cd",
+      "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/r2-cli-isolated-workspaces/task229-h1-fresh-_uu15jf0",
+      "--skip-git-repo-check",
+      "--json",
+      "--color",
+      "never",
+      "--output-last-message",
+      "/Users/zhiyuan/Documents/Codex/2026-09-30/arvin-liu-1111-a3ddc75c35c90d298eda8202a9adfd3482bff44a-protocols-instruction/work/when-systems-catch-fire-r2-analysis/ignition/evaluation/ignition-229-r2-frozen-dataset-salvage-r0/run/authoring/builder-cli/last-message.txt",
+      "-"
+    ]
+  },
+  "process": {
+    "pid": 77461,
+    "launch_time_utc": "2026-10-01T07:16:02.147040Z",
+    "fresh_process": true,
+    "ended_at_utc": "2026-10-01T07:17:59.529407Z",
+    "duration_observed": true,
+    "return_code": 0,
+    "timed_out": false,
+    "stdin_request_byte_length": 65544,
+    "stdin_request_sha256": "a2227a7bb0e9eb43f0337350176903759136a52573c1eea9b49f69fee98ad30d",
+    "stdin_pipe_closed_by_communicate": true,
+    "argv_uses_resume": false,
+    "ephemeral_requested": true,
+    "session_ids_observed": [
+      "01a0f651-f967-73c1-b517-d86aa55432f7"
+    ]
+  },
+  "capture": {
+    "last_message_file": "last-message.txt",
+    "last_message_sha256": "c73fde69098746e5eb1a4221c52096c5ebd828e1da6a1956720495fe503ee43c",
+    "stdout_file": "stdout.jsonl",
+    "stdout_sha256": "a97d8d19e7f34251b66bbef9528e5092bd16ffa089b865d5808bad4ada96e532",
+    "stderr_file": "stderr.txt",
+    "stderr_sha256": "3217551ce643eb35e6a51348c197022733fc38f63bd2d97735187f0658c10546",
+    "jsonl_event_types": [
+      "thread.started",
+      "turn.started",
+      "item.completed",
+      "turn.completed"
+    ],
+    "agent_message_count": 1,
+    "agent_message_sha256": [
+      "c73fde69098746e5eb1a4221c52096c5ebd828e1da6a1956720495fe503ee43c"
+    ],
+    "observed_models": [],
+    "observed_efforts": [],
+    "last_message_captured": true,
+    "jsonl_final_message_captured": true
+  },
+  "status": "COMPLETED",
+  "finished_at_utc": "2026-10-01T07:17:59.530277Z"
+}
