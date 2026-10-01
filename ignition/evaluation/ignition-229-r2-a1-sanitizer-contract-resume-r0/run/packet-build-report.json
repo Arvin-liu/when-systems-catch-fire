@@ -1,0 +1,19 @@
+{
+  "schema_version": "ignition-229-r2-a1-packet-build-report-v1",
+  "experiment_id": "IGNITION-20261001-229-R2-A1",
+  "status": "PASS",
+  "pair_count": 54,
+  "builder_pass_count": 54,
+  "checker_pass_count": 54,
+  "packet_deny_token_matches": 0,
+  "raw_response_hash_verified_before_builder_count": 54,
+  "case_and_target_sources_byte_bound": true,
+  "scored_fields_check": "independent checker deep-compared against contract-derived sanitized response; only exact deny-token redactions applied",
+  "raw_r1_successor_response_content_committed": false,
+  "new_successor_sessions": 0,
+  "implementation_freeze_manifest_sha256": "bdf549124bb3503adc2973033f786407b3b2c570ba6041c0899d92047c41e71f",
+  "builder_sha256": "b0c99414b0603dde34ce1fc895c6ffe8003974fbd40c0b2b49029d7d3e7755fe",
+  "checker_sha256": "7a5895303e8c36239520691c28a516d55559ac50e5265eb8ce46a4683384bcf9",
+  "packet_freeze_manifest_sha256": "bda7bee28412a7a7b9bc10f3d752641ea50b46aff0900485a732854b3f260f10",
+  "response_key_coordinator_sha256": "452977f6161b43668504101048ac2c85fa7763e03949e5645d2e61974091f537"
+}

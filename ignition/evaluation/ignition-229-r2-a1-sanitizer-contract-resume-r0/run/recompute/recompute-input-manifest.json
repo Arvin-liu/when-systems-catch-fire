@@ -1,0 +1,44 @@
+{
+  "schema_version": "ignition-229-r2-a1-recompute-input-manifest-v1",
+  "experiment_id": "IGNITION-20261001-229-R2-A1",
+  "status": "FROZEN",
+  "analysis_input_path": "run/recompute/analysis-input.json",
+  "analysis_input_sha256": "2e68be3746b5dc8c2677be02f1b1dd76019a30661784342f36628cc49df0299b",
+  "analysis_input_byte_length": 6535,
+  "historical_fixed_input_map_sha256": "b2d44d56aa602e429a8f3ddded61e0b3524b16700a4d35232126a5e264ffa057",
+  "historical_case_inputs_by_lineage_slice_sha256": "00a6434823f883477b95112039b6fa474055bcfb9e92f261ab41fee9418a17ee",
+  "case_inputs_by_lineage_exact_source_bytes_embedded": true,
+  "r1_frozen_raw_file_count_reverified": 73,
+  "semantic_successor_sessions": 18,
+  "new_successor_sessions": 0,
+  "condition_manifest_sha256": "4c13f7a6cfa804da0541bd98ef67f2ab56714a062ef42b05aaf2b10883f50f8f",
+  "session_order_sha256": "ced9e939fc75944a7c388647d0d8dfef82caddca608a30d6b076202bc25d4e70",
+  "recompute_sha256": "2a81a493b2d40cde023b4017a72c3aa7dfe45dee96fc06e223639fb082902b54",
+  "analysis_input_schema_sha256": "00b0adf8709036625603e508d9ead155b70629c641055d1535481a3b0a2419f4",
+  "response_schema_sha256": "d0a2de5555d5c176d83acba66494afbf5637dc10aba917a981d3572469a74aa8",
+  "blind_key_schema_sha256": "908f5fc868f2a9bf3efc65901ffa1b88b1c3931cf741567cd545213819fdb5c4",
+  "blind_evaluation_schema_sha256": "3c6e27ce7b8393314c7b5c76e7a9611d023ddce3ecce69ac626f4b071e019cd4",
+  "evaluator_score_files_used": [
+    "run/evaluators/evaluator-a-dispatch/last-message.txt",
+    "run/evaluators/evaluator-b-dispatch/last-message.txt"
+  ],
+  "coordinator_key_source_sha256": "6260bd5141ff94063e4340b0b6e9de9e757e142722c15e1876659c354ed33873",
+  "prompt_bundle_manifest_sha256": "089ef37e9cce6a4686e4f0d048e564a9c5963e5088ffcaf0955bdd4c365262b8",
+  "copied_to_design_session_crosswalk_count": 18,
+  "raw_response_snapshot_directory": "work/a1-recompute-raw",
+  "raw_response_snapshot_files_committed": false,
+  "evaluator_key_files": [
+    {
+      "path": "run/recompute/keys/evaluator-a-key.json",
+      "sha256": "92ac1edf70a77bb5b790dd7317085bdc7419c1487835d9ab9f2264ade681dc91"
+    },
+    {
+      "path": "run/recompute/keys/evaluator-b-key.json",
+      "sha256": "d2bf27bc70a51a19f637038b5834661f827d30dce6aa765ae87aa32b56b40f74"
+    }
+  ],
+  "r1_evaluator_artifacts_used": false,
+  "task229_attempt1_responses_used": false,
+  "failed_r2_artifacts_used": false,
+  "jsonschema_version": "4.25.1"
+}

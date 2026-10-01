@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task229-analysis-input-r0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "case_inputs_by_lineage", "session_records", "evaluators"],
+  "properties": {
+    "schema_version": {"const": "task229-analysis-input-r0"},
+    "case_inputs_by_lineage": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["A", "B", "C"],
+        "properties": {"A": {"type": "object"}, "B": {"type": "object"}, "C": {"type": "object"}}
+      }
+    },
+    "session_records": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["status"],
+        "properties": {
+          "status": {"enum": ["semantic", "missing", "transport_failure"]},
+          "response_file": {"type": "string", "minLength": 1},
+          "attempt_count": {"type": "integer", "minimum": 0},
+          "replacement_for": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "evaluators": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["evaluator_key", "scores_file", "response_key_file"],
+        "properties": {
+          "evaluator_key": {"type": "string", "minLength": 1},
+          "scores_file": {"type": "string", "minLength": 1},
+          "response_key_file": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  }
+}

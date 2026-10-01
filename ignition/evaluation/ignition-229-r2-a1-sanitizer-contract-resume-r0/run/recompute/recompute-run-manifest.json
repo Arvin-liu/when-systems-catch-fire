@@ -1,0 +1,40 @@
+{
+  "status": "STOP",
+  "phase": "A1-08",
+  "terminal": "TASK229_R2_A1_RECOMPUTE_MISMATCH",
+  "runs": [
+    {
+      "run": 1,
+      "return_code": 1,
+      "output_path": "run/recompute/recompute-output-run-1.json",
+      "output_sha256": null,
+      "output_byte_length": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "acf14f451510a2c9029a3103401afcc230b09710b94d5456828b9d2e12ddeba7",
+      "stdout_path": "run/recompute/recompute-run-1.stdout.txt",
+      "stderr_path": "run/recompute/recompute-run-1.stderr.txt",
+      "pass_line": ""
+    },
+    {
+      "run": 2,
+      "return_code": 1,
+      "output_path": "run/recompute/recompute-output-run-2.json",
+      "output_sha256": null,
+      "output_byte_length": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "acf14f451510a2c9029a3103401afcc230b09710b94d5456828b9d2e12ddeba7",
+      "stdout_path": "run/recompute/recompute-run-2.stdout.txt",
+      "stderr_path": "run/recompute/recompute-run-2.stderr.txt",
+      "pass_line": ""
+    }
+  ],
+  "analysis_input_sha256": "2e68be3746b5dc8c2677be02f1b1dd76019a30661784342f36628cc49df0299b",
+  "recompute_sha256": "2a81a493b2d40cde023b4017a72c3aa7dfe45dee96fc06e223639fb082902b54",
+  "failure_code": "TASK229_R2_A1_RECOMPUTE_MISMATCH",
+  "failure_class": "both original recompute invocations exited nonzero before producing an output",
+  "identical_failure_diagnostic": "FileNotFoundError: [Errno 2] No such file or directory: \"/Users/zhiyuan/Documents/Codex/2026-10-01/arvin-liu-1111-a1edf0d791bd9fc017aaf43a489572f5a8a18b86-protocols-instruction/work/ignition/reports/evaluations/ignition-228-policy-contract-reconciliation-r0/policies/POLICY_F01_A.json\"",
+  "outputs_byte_identical": false,
+  "outputs_produced": 0,
+  "retry_or_replacement_attempted": false,
+  "new_successor_sessions": 0
+}

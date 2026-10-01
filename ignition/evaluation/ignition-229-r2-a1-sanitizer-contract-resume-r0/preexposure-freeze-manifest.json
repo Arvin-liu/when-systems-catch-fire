@@ -1,0 +1,58 @@
+{
+  "authoring_package_manifest_sha256": "2e2d9e6dcc230ac8bdf439bba6b82d49610e33475a7f3dc09ef32aeb2575277a",
+  "base_head": "9c409d6d998d62ff2c65eb50fd32b7fdf45af806",
+  "contract_sha256": "30df09d9832eec97a1445034dce22abace88784910a6896cb06e0fec093dbb74",
+  "exact_metadata_keys": [
+    "provenance",
+    "builder",
+    "tool",
+    "file_path",
+    "source_locator",
+    "artifact_id",
+    "session_id",
+    "policy_id",
+    "lineage_id",
+    "bundle_id",
+    "condition_name"
+  ],
+  "fixture_count": 17,
+  "fixtures_sha256": "1b86d116ae7a19b07180cc03086eeb409cefb0a7b34398fcf719ae7655711cdb",
+  "formal_repository": "Arvin-liu/when-systems-catch-fire",
+  "freeze_scope": "exact metadata contract, augmented synthetic fixtures, target-blind authoring package and expected outcomes, all frozen before either implementation process",
+  "fresh_evaluators": 0,
+  "literal_deny_token_count": 163,
+  "near_miss_schema_fail_fixture_count": 14,
+  "new_branch": "work/IGNITION-20261001-229-R2-A1-sanitizer-contract-resume-r0",
+  "new_successor_sessions": 0,
+  "positive_fixture_count": 3,
+  "raw_real_r1_response_case_target_policy_or_evaluator_semantic_reads": 0,
+  "recompute_runs": 0,
+  "required_near_miss_keys": [
+    "conditions",
+    "condition",
+    "policies",
+    "policy_name",
+    "runtime_session_id",
+    "repository_path",
+    "source_path",
+    "artifact",
+    "sessions",
+    "tools"
+  ],
+  "schema_version": "task229-r2-a1-preexposure-freeze-v1",
+  "source_hashes": {
+    "a1-contract-requirements.md": "7b1fd8c1c2ea2342e8780c71710333b1ca3c524899f20bfdb68e9c8f985f3571",
+    "blind-evaluation-schema.json": "3c6e27ce7b8393314c7b5c76e7a9611d023ddce3ecce69ac626f4b071e019cd4",
+    "blind-key-schema.json": "908f5fc868f2a9bf3efc65901ffa1b88b1c3931cf741567cd545213819fdb5c4",
+    "builder-authoring-prompt.md": "befd97bcbf7be5e61cc971c248c18972b6ff310356c28273292f9e1e670f83eb",
+    "builder-spec.md": "9263840030a5b7b2c5879d97e316947c37d6f85e1205709c397bfcdfda0ee6a6",
+    "checker-authoring-prompt.md": "8b6993225a46e0c1a18804abf1e2a3407091b87f937e050f57684fb26f20a93a",
+    "checker-spec.md": "396da2c635fa756004d191fb8f1ce075ce3ef06638fd4c477f53a1adecc18965",
+    "deny-token-manifest.json": "57937333000511487958b3e3a428009820d655d8d96afc981113a4b134879cbc",
+    "response-schema.json": "d0a2de5555d5c176d83acba66494afbf5637dc10aba917a981d3572469a74aa8",
+    "sanitization-procedure.md": "7787c29638fb97787a034ad3f3ec3ed92ba83e55168e3d31685a962e1f96688a"
+  },
+  "whole_object_removal_keys": [
+    "route_trace"
+  ]
+}
