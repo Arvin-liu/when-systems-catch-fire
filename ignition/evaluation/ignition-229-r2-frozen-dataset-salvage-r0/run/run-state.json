@@ -1,0 +1,17 @@
+{
+  "analysis_class": "SECONDARY_SALVAGE_ANALYSIS_OF_PREEXISTING_R1_FROZEN_SUCCESSOR_DATASET",
+  "analysis_input_created": false,
+  "builder_checker_frozen": false,
+  "completed_phase": "03_PREEXPOSURE_SYNTHETIC_GATE_STOP",
+  "experiment_id": "IGNITION-20261001-229-R2",
+  "fresh_evaluators_started": 0,
+  "new_successor_sessions": 0,
+  "next_action": "AWAIT_OWNER_GPT",
+  "r1_primary_status_remains": "STOPPED_PROTOCOL_DEVIATION_NO_SCIENTIFIC_RESULT",
+  "real_r1_data_semantically_opened": false,
+  "recompute_runs": 0,
+  "schema_version": "ignition-229-r2-run-state-v1",
+  "status": "TASK229_R2_SANITIZER_CONTRACT_NOT_ESTABLISHED",
+  "task230_started": false,
+  "terminal": true
+}

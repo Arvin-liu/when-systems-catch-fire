@@ -1,0 +1,58 @@
+{
+  "allowed_files": [
+    {
+      "byte_length": 754,
+      "path": "blind-evaluation-schema.json",
+      "sha256": "3c6e27ce7b8393314c7b5c76e7a9611d023ddce3ecce69ac626f4b071e019cd4"
+    },
+    {
+      "byte_length": 671,
+      "path": "blind-key-schema.json",
+      "sha256": "908f5fc868f2a9bf3efc65901ffa1b88b1c3931cf741567cd545213819fdb5c4"
+    },
+    {
+      "byte_length": 1356,
+      "path": "checker-spec.md",
+      "sha256": "5b6b3ed45aeb3298f08b9dfa1f3665786bad8c314b3c4b28965bbb3a482cb9d0"
+    },
+    {
+      "byte_length": 33893,
+      "path": "deny-token-manifest.json",
+      "sha256": "57937333000511487958b3e3a428009820d655d8d96afc981113a4b134879cbc"
+    },
+    {
+      "byte_length": 2604,
+      "path": "generic-requirements.md",
+      "sha256": "a32c758133a359b4e26f3685257d6f92c6609498949fb6f143fd96c97e7a34c1"
+    },
+    {
+      "byte_length": 2160,
+      "path": "packet-builder-spec.md",
+      "sha256": "62f1358dc1e4fe5ca2d154b11bf78f14d68d1f814aa579d72af8993dfdd8b56c"
+    },
+    {
+      "byte_length": 3278,
+      "path": "response-schema.json",
+      "sha256": "d0a2de5555d5c176d83acba66494afbf5637dc10aba917a981d3572469a74aa8"
+    },
+    {
+      "byte_length": 1815,
+      "path": "sanitization-procedure.md",
+      "sha256": "7787c29638fb97787a034ad3f3ec3ed92ba83e55168e3d31685a962e1f96688a"
+    },
+    {
+      "byte_length": 15965,
+      "path": "synthetic-sanitization-fixtures.json",
+      "sha256": "e867a98b68e36195c2a7967ad1d9562934d352ef44f0b96f5a1934e781b06b56"
+    }
+  ],
+  "contains_case_or_target_content": false,
+  "contains_condition_to_outcome_mapping": false,
+  "contains_policy_content": false,
+  "contains_r1_evaluator_artifact": false,
+  "contains_real_r1_response": false,
+  "file_count": 9,
+  "forbidden_content_present": false,
+  "package_root": "builder-authoring-package/",
+  "schema_version": "ignition-229-r2-builder-authoring-package-v1"
+}

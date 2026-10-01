@@ -1,0 +1,448 @@
+```python
+#!/usr/bin/env python3
+"""checker.py: independent, standard-library-only packet verification."""
+
+import argparse
+import hashlib
+import json
+import math
+import sys
+
+
+SCHEMA_SHA256 = (
+    "d0a2de5555d5c176d83acba66494afbf5637dc10aba917a981d3572469a74aa8"
+)
+PACKET_VERSION = "task229-r2-blind-packet-v1"
+REDACTION = "[REDACTED]"
+
+# Match complete key names after lowercase/hyphen canonicalization only.
+# Never match arbitrary substrings of a scored-field name.
+METADATA_KEYS = frozenset({
+    "provenance", "provenance_id", "provenance_ids",
+    "provenance_metadata",
+    "builder", "builders", "builder_id", "builder_ids",
+    "builder_name", "builder_names", "builder_version",
+    "tool", "tools", "tool_id", "tool_ids",
+    "tool_name", "tool_names", "tool_version",
+    "file_path", "file_paths",
+    "source_locator", "source_locators",
+    "artifact", "artifacts", "artifact_id", "artifact_ids",
+    "session", "sessions", "session_id", "session_ids",
+    "policy", "policies", "policy_id", "policy_ids",
+    "lineage", "lineages", "lineage_id", "lineage_ids",
+    "bundle", "bundles", "bundle_id", "bundle_ids",
+    "condition", "conditions", "condition_name", "condition_names",
+})
+
+PACKET_KEYS = frozenset({
+    "schema_version", "response_id", "case_id",
+    "case_text", "case_sha256", "criteria_text", "criteria_sha256",
+    "response",
+})
+
+
+class CheckError(Exception):
+    """A mechanical verification failure with a content-free diagnostic."""
+
+
+def require(condition, diagnostic):
+    if not condition:
+        raise CheckError(diagnostic)
+
+
+def sha256(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def strict_text(data, label):
+    require(type(data) is bytes, label + ": expected bytes")
+    try:
+        text = data.decode("utf-8", errors="strict")
+        require(text.encode("utf-8", errors="strict") == data,
+                label + ": UTF-8 round-trip mismatch")
+        return text
+    except UnicodeError:
+        raise CheckError(label + ": invalid UTF-8") from None
+
+
+def reject_constant(_value):
+    raise CheckError("JSON: nonfinite number")
+
+
+def unique_object(pairs):
+    result = {}
+    for key, value in pairs:
+        require(key not in result, "JSON: duplicate object key")
+        result[key] = value
+    return result
+
+
+def inspect_json(value):
+    """Reject non-JSON values, nonfinite floats, and unpaired surrogates."""
+    kind = type(value)
+    if kind is str:
+        value.encode("utf-8", errors="strict")
+    elif kind is float:
+        require(math.isfinite(value), "JSON: nonfinite number")
+    elif kind in (int, bool, type(None)):
+        pass
+    elif kind is list:
+        for item in value:
+            inspect_json(item)
+    elif kind is dict:
+        for key, item in value.items():
+            require(type(key) is str, "JSON: non-string object key")
+            inspect_json(key)
+            inspect_json(item)
+    else:
+        raise CheckError("JSON: invalid value type")
+
+
+def parse_json(data, label):
+    text = strict_text(data, label)
+    try:
+        result = json.loads(
+            text,
+            object_pairs_hook=unique_object,
+            parse_constant=reject_constant,
+        )
+        inspect_json(result)
+        return result
+    except CheckError:
+        raise
+    except (ValueError, UnicodeError, OverflowError, RecursionError):
+        raise CheckError(label + ": invalid strict JSON") from None
+
+
+def canonical(value):
+    try:
+        return (
+            json.dumps(
+                value,
+                ensure_ascii=False,
+                sort_keys=True,
+                separators=(",", ":"),
+                allow_nan=False,
+            ) + "\n"
+        ).encode("utf-8", errors="strict")
+    except (ValueError, TypeError, UnicodeError, OverflowError, RecursionError):
+        raise CheckError("packet: cannot encode canonical JSON") from None
+
+
+def forbidden_key(key):
+    normalized = key.lower().replace("-", "_")
+    return normalized == "route_trace" or normalized in METADATA_KEYS
+
+
+def remove_metadata(value):
+    if type(value) is dict:
+        return {
+            key: remove_metadata(item)
+            for key, item in value.items()
+            if not forbidden_key(key)
+        }
+    if type(value) is list:
+        return [remove_metadata(item) for item in value]
+    return value
+
+
+def assert_no_metadata(value):
+    if type(value) is dict:
+        for key, item in value.items():
+            require(not forbidden_key(key),
+                    "packet: forbidden metadata field")
+            assert_no_metadata(item)
+    elif type(value) is list:
+        for item in value:
+            assert_no_metadata(item)
+
+
+def json_equal(left, right):
+    """JSON Schema equality, keeping booleans distinct from numbers."""
+    numeric = (int, float)
+    if type(left) in numeric and type(right) in numeric:
+        return left == right
+    if type(left) is not type(right):
+        return False
+    if type(left) is dict:
+        return (
+            left.keys() == right.keys()
+            and all(json_equal(left[key], right[key]) for key in left)
+        )
+    if type(left) is list:
+        return (
+            len(left) == len(right)
+            and all(json_equal(a, b) for a, b in zip(left, right))
+        )
+    return left == right
+
+
+def response_equal(left, right):
+    """Preserve parsed value types and signed floating-point zero."""
+    if type(left) is not type(right):
+        return False
+    if type(left) is dict:
+        return (
+            left.keys() == right.keys()
+            and all(response_equal(left[key], right[key]) for key in left)
+        )
+    if type(left) is list:
+        return (
+            len(left) == len(right)
+            and all(response_equal(a, b) for a, b in zip(left, right))
+        )
+    if type(left) is float:
+        return left.hex() == right.hex()
+    return left == right
+
+
+def matches_type(value, name):
+    return {
+        "object": type(value) is dict,
+        "array": type(value) is list,
+        "string": type(value) is str,
+        "null": value is None,
+        "boolean": type(value) is bool,
+        "number": type(value) in (int, float),
+        "integer": (
+            type(value) is int
+            or (type(value) is float and value.is_integer())
+        ),
+    }.get(name, False)
+
+
+def schema_matches(value, schema, root):
+    """Implement the vocabulary used by the byte-pinned original schema."""
+    if "$ref" in schema:
+        reference = schema["$ref"]
+        require(reference.startswith("#/"), "schema: unsupported reference")
+        target = root
+        for segment in reference[2:].split("/"):
+            target = target[segment.replace("~1", "/").replace("~0", "~")]
+        if not schema_matches(value, target, root):
+            return False
+
+    if "oneOf" in schema:
+        count = sum(
+            schema_matches(value, branch, root)
+            for branch in schema["oneOf"]
+        )
+        if count != 1:
+            return False
+
+    if "const" in schema and not json_equal(value, schema["const"]):
+        return False
+    if "enum" in schema:
+        if not any(json_equal(value, option) for option in schema["enum"]):
+            return False
+
+    if "type" in schema:
+        allowed = schema["type"]
+        if type(allowed) is str:
+            allowed = [allowed]
+        if not any(matches_type(value, name) for name in allowed):
+            return False
+
+    if type(value) is dict:
+        if any(key not in value for key in schema.get("required", [])):
+            return False
+        properties = schema.get("properties", {})
+        if schema.get("additionalProperties") is False:
+            if any(key not in properties for key in value):
+                return False
+        for key, item in value.items():
+            if key in properties:
+                if not schema_matches(item, properties[key], root):
+                    return False
+
+    if type(value) is list:
+        if len(value) < schema.get("minItems", 0):
+            return False
+        if "maxItems" in schema and len(value) > schema["maxItems"]:
+            return False
+        if schema.get("uniqueItems", False):
+            for index, item in enumerate(value):
+                if any(json_equal(item, earlier) for earlier in value[:index]):
+                    return False
+        if "items" in schema:
+            if not all(schema_matches(item, schema["items"], root)
+                       for item in value):
+                return False
+
+    if type(value) is str:
+        if len(value) < schema.get("minLength", 0):
+            return False
+
+    return True
+
+
+def redact_strings(value, tokens):
+    if type(value) is str:
+        for token in tokens:
+            value = value.replace(token, REDACTION)
+        return value
+    if type(value) is list:
+        return [redact_strings(item, tokens) for item in value]
+    if type(value) is dict:
+        # Object keys are preserved, never rewritten.
+        return {
+            key: redact_strings(item, tokens)
+            for key, item in value.items()
+        }
+    return value
+
+
+def assert_no_literal_leakage(value, serialized_text, tokens):
+    for token in tokens:
+        require(token not in serialized_text,
+                "packet: literal token leakage")
+
+    # Also inspect decoded keys and strings so JSON escaping cannot mask a token.
+    def visit(node):
+        if type(node) is str:
+            require(not any(token in node for token in tokens),
+                    "packet: literal token leakage")
+        elif type(node) is dict:
+            for key, item in node.items():
+                visit(key)
+                visit(item)
+        elif type(node) is list:
+            for item in node:
+                visit(item)
+
+    visit(value)
+
+
+def check_packet(response, case_id, response_id, case_bytes, criteria_bytes,
+                 deny_token_manifest, response_schema, packet):
+    """Verify caller-supplied bytes; return only mechanical audit information."""
+    require(case_id in ("A", "B", "C"), "input: invalid case ID")
+    require(type(response_id) is str and bool(response_id),
+            "input: empty response ID")
+    try:
+        response_id.encode("utf-8", errors="strict")
+    except UnicodeError:
+        raise CheckError("input: invalid response ID") from None
+
+    require(sha256(response_schema) == SCHEMA_SHA256,
+            "schema: frozen byte hash mismatch")
+    schema = parse_json(response_schema, "schema")
+    source = parse_json(response, "response")
+    manifest = parse_json(deny_token_manifest, "manifest")
+    candidate = parse_json(packet, "packet")
+
+    require(type(manifest) is dict, "manifest: expected object")
+    tokens = manifest.get("literal_tokens")
+    require(type(tokens) is list and bool(tokens),
+            "manifest: missing literal token list")
+    require(all(type(token) is str and bool(token) for token in tokens),
+            "manifest: invalid literal token")
+    tokens = sorted(set(tokens), key=lambda token: (-len(token), token))
+
+    cleaned = remove_metadata(source)
+    require(schema_matches(cleaned, schema, schema),
+            "response: original schema validation failed")
+
+    responses = cleaned["responses"]
+    ids = [item["case_id"] for item in responses]
+    require(len(ids) == 3 and set(ids) == {"A", "B", "C"},
+            "response: case IDs must be distinct A/B/C")
+    selected = [item for item in responses if item["case_id"] == case_id]
+    require(len(selected) == 1, "response: requested case is not unique")
+    expected_response = redact_strings(selected[0], tokens)
+
+    case_text = strict_text(case_bytes, "case")
+    criteria_text = strict_text(criteria_bytes, "criteria")
+
+    require(type(candidate) is dict, "packet: expected object")
+    require(set(candidate) == PACKET_KEYS, "packet: incorrect field set")
+    require(candidate["schema_version"] == PACKET_VERSION,
+            "packet: incorrect schema version")
+    require(candidate["response_id"] == response_id,
+            "packet: response ID mismatch")
+    require(candidate["case_id"] == case_id, "packet: case ID mismatch")
+
+    for prefix, original, decoded in (
+        ("case", case_bytes, case_text),
+        ("criteria", criteria_bytes, criteria_text),
+    ):
+        text = candidate[prefix + "_text"]
+        digest = candidate[prefix + "_sha256"]
+        require(type(text) is str and text == decoded,
+                "packet: " + prefix + " text mismatch")
+        require(text.encode("utf-8", errors="strict") == original,
+                "packet: " + prefix + " byte mismatch")
+        require(type(digest) is str and digest == sha256(original),
+                "packet: " + prefix + " SHA-256 mismatch")
+
+    assert_no_metadata(candidate)
+    require(response_equal(candidate["response"], expected_response),
+            "packet: response equivalence failed")
+
+    canonical_bytes = canonical(candidate)
+    require(packet == canonical_bytes, "packet: noncanonical serialization")
+    assert_no_literal_leakage(
+        candidate, strict_text(packet, "packet"), tokens
+    )
+
+    return {
+        "ok": True,
+        "case_sha256": sha256(case_bytes),
+        "criteria_sha256": sha256(criteria_bytes),
+        "packet_sha256": sha256(packet),
+        "deny_token_matches": 0,
+    }
+
+
+def read_bytes(path, label):
+    try:
+        with open(path, "rb") as stream:
+            return stream.read()
+    except (OSError, ValueError):
+        raise CheckError(label + ": cannot read input") from None
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(
+        description="Independently verify a source response and blind packet.",
+        allow_abbrev=False,
+    )
+    parser.add_argument("--response", required=True)
+    parser.add_argument("--case-id", required=True, choices=("A", "B", "C"))
+    parser.add_argument("--response-id", required=True)
+    parser.add_argument("--case", required=True)
+    parser.add_argument("--criteria", required=True)
+    parser.add_argument("--deny-token-manifest", required=True)
+    parser.add_argument("--response-schema", required=True)
+    parser.add_argument("--packet", required=True)
+    args = parser.parse_args(argv)
+
+    try:
+        report = check_packet(
+            response=read_bytes(args.response, "response"),
+            case_id=args.case_id,
+            response_id=args.response_id,
+            case_bytes=read_bytes(args.case, "case"),
+            criteria_bytes=read_bytes(args.criteria, "criteria"),
+            deny_token_manifest=read_bytes(
+                args.deny_token_manifest, "manifest"
+            ),
+            response_schema=read_bytes(args.response_schema, "schema"),
+            packet=read_bytes(args.packet, "packet"),
+        )
+    except CheckError as error:
+        sys.stderr.write("CHECK FAILED: " + str(error) + "\n")
+        return 1
+    except Exception:
+        # Do not expose input content, paths, or exception representations.
+        sys.stderr.write("CHECK FAILED: verification could not complete\n")
+        return 1
+
+    sys.stdout.write(json.dumps(report, sort_keys=True, separators=(",", ":")))
+    sys.stdout.write("\n")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+```

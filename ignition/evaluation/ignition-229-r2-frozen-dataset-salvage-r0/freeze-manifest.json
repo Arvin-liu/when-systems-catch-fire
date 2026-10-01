@@ -1,0 +1,56 @@
+{
+  "analysis_class": "SECONDARY_SALVAGE_ANALYSIS_OF_PREEXISTING_R1_FROZEN_SUCCESSOR_DATASET",
+  "experiment_id": "IGNITION-20261001-229-R2",
+  "files": [
+    {
+      "byte_length": 4670,
+      "path": "protocol.md",
+      "sha256": "2e2cf536e23af9d7536fb3876d9f8e4dd000144ff763b0d984f3458bced6bfbc"
+    },
+    {
+      "byte_length": 28861,
+      "path": "source-bindings.json",
+      "sha256": "091406d14311520fed4eb3918510bf3c725e71135152804d01949f96f6748a9c"
+    },
+    {
+      "byte_length": 5704,
+      "path": "quarantine-manifest.json",
+      "sha256": "59517ba6d9098c6f2104247474bda48efe5c7c869cfd60d4fef6f0d5b06a045e"
+    },
+    {
+      "byte_length": 1895,
+      "path": "builder-authoring-package-manifest.json",
+      "sha256": "089e750b799ecf78360d379284e2b9af43916be0fd62dcab1fdeecb2f1812dcf"
+    },
+    {
+      "byte_length": 33893,
+      "path": "deny-token-manifest.json",
+      "sha256": "57937333000511487958b3e3a428009820d655d8d96afc981113a4b134879cbc"
+    },
+    {
+      "byte_length": 15965,
+      "path": "synthetic-sanitization-fixtures.json",
+      "sha256": "e867a98b68e36195c2a7967ad1d9562934d352ef44f0b96f5a1934e781b06b56"
+    },
+    {
+      "byte_length": 2160,
+      "path": "packet-builder-spec.md",
+      "sha256": "62f1358dc1e4fe5ca2d154b11bf78f14d68d1f814aa579d72af8993dfdd8b56c"
+    },
+    {
+      "byte_length": 1356,
+      "path": "checker-spec.md",
+      "sha256": "5b6b3ed45aeb3298f08b9dfa1f3665786bad8c314b3c4b28965bbb3a482cb9d0"
+    },
+    {
+      "byte_length": 1154,
+      "path": "claim-ceiling.md",
+      "sha256": "fe56d6e708fc5ec684904c794077b5a24c2780a4f4702f7a633cd3cc82b62bfe"
+    }
+  ],
+  "freeze_rule": "This file is the immutable seed derivation anchor. It lists protocol inputs and excludes itself and the derived evaluator-seed-contract.json to avoid a circular hash. The phase02 seal binds the seed contract separately.",
+  "freeze_scope": "phase-02 protocol, source bindings, quarantine inventory, authoring package, synthetic fixtures, builder/checker contract, claim ceiling",
+  "new_successor_sessions": 0,
+  "r1_primary_status_remains": "STOPPED_PROTOCOL_DEVIATION_NO_SCIENTIFIC_RESULT",
+  "schema_version": "ignition-229-r2-protocol-freeze-manifest-v1"
+}

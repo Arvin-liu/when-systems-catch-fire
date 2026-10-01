@@ -1,0 +1,21 @@
+{
+  "analysis_input_created": false,
+  "builder_checker_contract_agreement": false,
+  "builder_checker_frozen": false,
+  "experiment_id": "IGNITION-20261001-229-R2",
+  "fixed_map_semantics_opened": false,
+  "fresh_evaluators_started": 0,
+  "new_successor_sessions": 0,
+  "next_action": "WRITE_TERMINAL_RECEIPT_AND_AWAIT_OWNER_GPT",
+  "original_recompute_run": false,
+  "r1_evaluator_artifacts_semantically_read_or_reused": false,
+  "real_case_or_target_content_opened": false,
+  "real_r1_responses_opened": false,
+  "reason_file": "run/authoring/metadata-contract-delta.json",
+  "schema_version": "ignition-229-r2-phase03-stop-v1",
+  "status": "TASK229_R2_SANITIZER_CONTRACT_NOT_ESTABLISHED",
+  "stop_gate": "PHASE_03_BUILDER_CHECKER_CONTRACT_AGREEMENT",
+  "synthetic_fixtures_passed": true,
+  "synthetic_gate_report": "run/authoring/synthetic-gate/synthetic-gate-report.json",
+  "task230_started": false
+}
