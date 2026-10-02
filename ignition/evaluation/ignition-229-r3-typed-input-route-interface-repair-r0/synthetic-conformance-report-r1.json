@@ -1,0 +1,376 @@
+{
+  "all_fixtures_passed_expected_outcome": true,
+  "all_route_rebuilds_byte_deterministic": true,
+  "evaluators_run": 0,
+  "fixture_corpus_sha256": "ff9c53751cd353a224cde4c67bc2f929ee82afaa388ab3fc6ab2912380891f09",
+  "fixture_count": 25,
+  "negative_fixture_count": 15,
+  "positive_fixture_count": 10,
+  "report_version": "task229-synthetic-route-conformance-report-r1",
+  "results": [
+    {
+      "actual": {
+        "binding_rebuild_sha256": "1b1864481a5dc658ef9235ace331a3669ddd4a05b13337160db5cb938946d6a0",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "all_present_selector_match",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "c96fce2149b01b948ebb3f8c291565341d1c511c928f64f4e4c4c4ba4e1827c9",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "all_present_fallback",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "86b2371ea57415ff84124dffc5e152c47abbc7562a496b3393d14f6f2e0a1a84",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_MODE"
+        ],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "missing_one_selector_input",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "9596a473b5582b63a5cf9961acb84e3e7ed28ef153968956103502723297a4d3",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_ENABLED"
+        ],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "missing_boolean_is_not_false",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "67398cb467afaaf76df5aba73885e2082adb28ea38dde07647cca7d8649daaaa",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "stop",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "explicit_false_is_present",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "67bdf2cf82ad20acbbe26772213ab8196d00f0d7d3056a0ea20d3aa20ed1d123",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_NULLABLE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "explicit_null_permitted",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "TYPE_MISMATCH",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "explicit_null_not_permitted",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "0656d0cd973438aed00398cf24a65a0a8062615a6f2744074cef5a953496f51d",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_STOP_FLAG"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "stop",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "stop_match",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "f44929a38fea2f8068c7a78a8dfee9d3c31164fa2899c077b021bc0ca374ca0a",
+        "build_code": null,
+        "evaluated_input_ids": [],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_STOP_FLAG"
+        ],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "missing_stop_input",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "659055ae59a0bedb707857e877a8a540545ef757f7b0a70509af201f8748ff44",
+        "build_code": null,
+        "execution_code": "ROUTE_AMBIGUOUS",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "multiple_selector_matches",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "0a3e411e2187a8888f3ca73982d3c0245cf0216d12361312d71bc8a13d593d8e",
+        "build_code": null,
+        "execution_code": "ROUTE_AMBIGUOUS",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "stop_selector_conflict",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "UNKNOWN_INPUT_ID",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "unknown_input_id",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "DUPLICATE_INPUT_ID",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "duplicate_input_id",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "TYPE_MISMATCH",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "type_mismatch_no_coercion",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "UNIT_MISMATCH",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "unit_mismatch_no_conversion",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "2274dba329fee932808a6a0ebf01c7bed34045b48a13172fe15987ffd8be4e05",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": "TRACE_SEMANTIC_MISMATCH"
+      },
+      "class": "negative",
+      "fixture_id": "preserved_baseline_mismatch",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "58ab0820c0002adaedf18302b15e8e30accf97220902494dbec36bf8aa552468",
+        "build_code": null,
+        "execution_code": "INTERFACE_CONFLICT",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "prose_binding_conflict_marker",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "UNKNOWN_OPERATOR",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "unknown_operator_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "UNKNOWN_TYPE",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "unknown_policy_type_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "MAPPING_POINTER_UNRESOLVED",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "unresolved_source_pointer",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "MAPPING_INCOMPLETE",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "incomplete_mapping_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "d963a42cae16835c0a250a4cb123e2deeb559e52ad95cc54b175b408aca403bd",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_MODE"
+        ],
+        "route_type": "fallback",
+        "validator_code": "TRACE_SEMANTIC_MISMATCH"
+      },
+      "class": "negative",
+      "fixture_id": "absent_id_trace_contamination",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "6f75c4b07b149518c7d66d5e7770bea61adf29b2d6a9538195a48d3cfd317e2b",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_MODE"
+        ],
+        "route_type": "fallback",
+        "validator_code": "TRACE_SCHEMA_FAILURE"
+      },
+      "class": "negative",
+      "fixture_id": "duplicate_trace_id_fails_schema",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "c6b8c6e875a81f6b692cea187a0f7b436a74530ab360d59d3989e5477f1bad70",
+        "build_code": null,
+        "evaluated_input_ids": [],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_NULLABLE"
+        ],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "null_and_missing_are_distinct",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "fa31804eb7edae12a20da4b7d4598d9a3eb9509d7a58527e5e4f12d551776c0f",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_MODE"
+        ],
+        "route_type": "stop",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "no_match_dominates_missing",
+      "status": "PASS"
+    }
+  ],
+  "runner_sha256": "9fd3542a3dd64c5bda6697079f5cb30662f1a029cc4e55daaada93a81f6cc62e",
+  "successor_sessions_run": 0,
+  "target_or_evaluator_material_in_fixture_corpus": false
+}
