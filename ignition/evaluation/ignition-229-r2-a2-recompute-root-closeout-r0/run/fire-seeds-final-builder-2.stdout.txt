@@ -1,0 +1,3 @@
+FIRE_SEEDS_CENSUS_BUILT seeds=64 content=40 methodology=24 sources=857 layered_origins=791
+FIRE_SEEDS_CENSUS_CHECK_OK seeds=64 sources=857 layered_origins=791
+FIRE_SEEDS_CENSUS_CHECK_OK seeds=64 sources=857 layered_origins=791

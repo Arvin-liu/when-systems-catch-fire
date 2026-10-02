@@ -1,0 +1,93 @@
+{
+  "final_exact_head_ci": {
+    "required_workflows": [
+      "foundation-validation",
+      "repository-path-accounting-preflight",
+      "q33-governance-validation",
+      "architecture-pages"
+    ],
+    "status": "PENDING"
+  },
+  "fire_seeds": {
+    "a2_no_seed_delta_records": 1,
+    "builder_outputs_byte_stable": true,
+    "census_sha256_first_and_second": "05bc17f4c2c8f6cd7948fa5e4fcc8a4a607b97d6b7dbf1c2d3ad56cc06f95ca1",
+    "changelog_records_after_exactly_one_a2_no_seed_delta": 6,
+    "content_seed_count": 40,
+    "entries": 64,
+    "final_builder_check_exit_code": 0,
+    "final_builder_runs": 2,
+    "knowledge_experience_source_origins": 791,
+    "methodology_seed_count": 24,
+    "result": "PASS",
+    "source_census_diff_vs_base": {
+      "added_sources": 0,
+      "base_commit": "8c084d3127b5ce5c7cfa129b0b9f4de9846f2757",
+      "changed_fields_per_source": [
+        "source_sha256"
+      ],
+      "changed_source_count": 2,
+      "human_seed_cluster_conflict_content_unchanged": true,
+      "removed_sources": 0
+    },
+    "source_count": 857,
+    "validator_exit_code": 0
+  },
+  "function_asset_census": {
+    "final_check_exit_code": 0,
+    "generator_runs": 2,
+    "result": "PASS"
+  },
+  "knowledge_experience": {
+    "check_runs": 4,
+    "counts": {
+      "cards": 870,
+      "changes": 763,
+      "layered": 791,
+      "search": 24952
+    },
+    "final_two_checks_exit_code": 0,
+    "generator_runs": 2,
+    "last_check_after_reports_exit_code": 0,
+    "recovered_initial_output_drift": true,
+    "result": "PASS"
+  },
+  "new_evaluator_sessions": 0,
+  "new_successor_sessions": 0,
+  "nonfunction_claims": {
+    "check_runs": 2,
+    "final_check_exit_code": 0,
+    "generated_files": 14,
+    "generator_runs": 2,
+    "registry_closed": true,
+    "result": "PASS",
+    "tracked_files_accounted": 7335
+  },
+  "path_accounting": {
+    "final_check_exit_code": 0,
+    "generator_runs": 2,
+    "manifest_paths": 5904,
+    "result": "PASS",
+    "tracked_paths": 5904,
+    "unresolved_paths": 0
+  },
+  "projection_sha256": {
+    "fire_seeds_census": "05bc17f4c2c8f6cd7948fa5e4fcc8a4a607b97d6b7dbf1c2d3ad56cc06f95ca1",
+    "function_asset_census": "8d0d8e2dc86e9213e0fca4b2bc94fad94b06eba0c672e15f7e0cc744d286e924",
+    "knowledge_experience_asset_cards": "12a138e7a2bc06ce7a22db9b83fe6b5343e4090976d9f9eebfd273379299a0f3",
+    "knowledge_experience_layered_reading": "ff05d657d2816d22bfcc44a15e84f2c62ddcf695672fa455e5237c9177a15a36",
+    "knowledge_experience_manifest": "2bcf7f2ec4e4e7e03493003aef9774139afc08c24d43eeeb1dcc46186bb45caa",
+    "knowledge_experience_search_index": "0cc7abda40b2ca31f1a303df9162bc1c263b9efb2d1c93762305d6dc87afa296",
+    "nonfunction_closure_summary": "f22e576aacca8413edebd553ae1ce903cf6511aeff31ace0c8e4bda00f7d7e4b",
+    "path_classification_manifest": "8399cf2b58c5ca0745a4fbe04b861c589f4c6196c308bb288521ea065d321417"
+  },
+  "schema_version": "ignition-229-r2-a2-projection-closeout-v1",
+  "source_base_commit": "8c084d3127b5ce5c7cfa129b0b9f4de9846f2757",
+  "source_first_seen": {
+    "existing_projection_unchanged": true,
+    "reason": "human-results/result-ledger.jsonl has no A2 change or new source rows",
+    "run": false
+  },
+  "status": "PASS",
+  "task230_auto_launch": false
+}

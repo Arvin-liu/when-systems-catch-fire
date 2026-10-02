@@ -1,0 +1,42 @@
+{
+  "schema_version": "ignition-229-r2-a2-recompute-run-v1",
+  "experiment_id": "IGNITION-20261002-229-R2-A2",
+  "status": "PASS",
+  "run_count": 2,
+  "script_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/source-prereg/tools/recompute.py",
+  "script_sha256": "2a81a493b2d40cde023b4017a72c3aa7dfe45dee96fc06e223639fb082902b54",
+  "analysis_input_path": "ignition/evaluation/ignition-229-r2-a1-sanitizer-contract-resume-r0/run/recompute/analysis-input.json",
+  "analysis_input_sha256": "2e68be3746b5dc8c2677be02f1b1dd76019a30661784342f36628cc49df0299b",
+  "runtime_inputs_unchanged_after_both_runs": true,
+  "outputs_byte_identical": true,
+  "output_sha256": "8724263aca1feb29ad9f57752bdc523e12ce6be5fb5186b24431100398b3af55",
+  "output_byte_length": 3849,
+  "runs": [
+    {
+      "run": 1,
+      "exit_code": 0,
+      "pass_line": "TASK229_RECOMPUTE=PASS SHA256=8724263aca1feb29ad9f57752bdc523e12ce6be5fb5186b24431100398b3af55",
+      "output_path": "run/recompute-output-run-1.json",
+      "stdout_sha256": "723da3861013af0ee4f35fc025ca74c905839caa5cc73f62f78c2853ccc5cbb3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0,
+      "output_sha256": "8724263aca1feb29ad9f57752bdc523e12ce6be5fb5186b24431100398b3af55",
+      "output_byte_length": 3849
+    },
+    {
+      "run": 2,
+      "exit_code": 0,
+      "pass_line": "TASK229_RECOMPUTE=PASS SHA256=8724263aca1feb29ad9f57752bdc523e12ce6be5fb5186b24431100398b3af55",
+      "output_path": "run/recompute-output-run-2.json",
+      "stdout_sha256": "723da3861013af0ee4f35fc025ca74c905839caa5cc73f62f78c2853ccc5cbb3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_bytes": 0,
+      "output_sha256": "8724263aca1feb29ad9f57752bdc523e12ce6be5fb5186b24431100398b3af55",
+      "output_byte_length": 3849
+    }
+  ],
+  "new_successor_sessions": 0,
+  "new_evaluator_sessions": 0,
+  "recompute_code_modified": false,
+  "analysis_input_modified": false
+}

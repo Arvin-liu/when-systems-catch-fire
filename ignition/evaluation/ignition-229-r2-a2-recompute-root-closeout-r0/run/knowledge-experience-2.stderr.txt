@@ -1,0 +1,1 @@
+KNOWLEDGE_EXPERIENCE_OUTPUT_DRIFT: data/governance/knowledge-experience/asset-cards.jsonl, data/governance/knowledge-experience/layered-reading.jsonl, data/governance/knowledge-experience/search-index.jsonl, data/governance/knowledge-experience/manifest.json

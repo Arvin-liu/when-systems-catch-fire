@@ -1,0 +1,1 @@
+GENERATED manifest=/Users/zhiyuan/Documents/Codex/2026-10-01/arvin-liu-1111-a1edf0d791bd9fc017aaf43a489572f5a8a18b86-protocols-instruction/work/ignition-a2/ignition/data/foundation/repository-path-classification/classification-manifest.jsonl paths=5908 unresolved=0
