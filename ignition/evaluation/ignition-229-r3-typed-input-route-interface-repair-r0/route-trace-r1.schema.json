@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task229-route-trace-r1",
+  "title": "Task229 deterministic route trace R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "policy_id",
+    "policy_sha256",
+    "binding_sha256",
+    "route_type",
+    "selected_rule_id",
+    "selected_action_id",
+    "evaluated_input_ids",
+    "missing_input_ids",
+    "preserved_baseline_action_ids"
+  ],
+  "properties": {
+    "contract_version": {"const": "task229-route-interface-contract-r1"},
+    "policy_id": {"type": "string", "minLength": 1},
+    "policy_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "binding_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "route_type": {"enum": ["selector", "stop", "fallback"]},
+    "selected_rule_id": {"type": ["string", "null"]},
+    "selected_action_id": {"type": ["string", "null"]},
+    "evaluated_input_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "missing_input_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "preserved_baseline_action_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"route_type": {"const": "selector"}}, "required": ["route_type"]},
+      "then": {
+        "properties": {
+          "selected_rule_id": {"type": "string", "minLength": 1},
+          "selected_action_id": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"route_type": {"const": "stop"}}, "required": ["route_type"]},
+      "then": {
+        "properties": {
+          "selected_rule_id": {"type": "string", "minLength": 1},
+          "selected_action_id": {"type": "null"}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"route_type": {"const": "fallback"}}, "required": ["route_type"]},
+      "then": {
+        "properties": {
+          "selected_rule_id": {"type": "null"},
+          "selected_action_id": {"type": "null"}
+        }
+      }
+    }
+  ]
+}
