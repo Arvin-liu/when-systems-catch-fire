@@ -1,0 +1,155 @@
+{
+  "case_prose": "For this invented demo, export confirmation is present. The destination label has not been supplied.",
+  "example_version": "task229-binding-visible-example-synthetic-r1",
+  "expected_interface_invariants": {
+    "evaluated_input_ids": [
+      "QUEUE_EXPORT_CONFIRMED"
+    ],
+    "missing_input_ids": [
+      "DESTINATION_LABEL"
+    ],
+    "missing_value_synthesized": false,
+    "prose_binding_conflict": false,
+    "route_type": "fallback",
+    "status": "ROUTED"
+  },
+  "frozen_policy": {
+    "policy_id": "SYNTH_POLICY_QUEUE_PREVIEW_R1",
+    "preserved_rules": [
+      {
+        "baseline_action": "SYNTH_KEEP_DEFAULT"
+      }
+    ],
+    "selector": {
+      "required_inputs": [
+        {
+          "input_id": "QUEUE_EXPORT_CONFIRMED",
+          "unit": null,
+          "value_type": "boolean"
+        },
+        {
+          "input_id": "DESTINATION_LABEL",
+          "unit": null,
+          "value_type": "string"
+        }
+      ],
+      "rule": [
+        {
+          "action_ref": "SYNTH_PREVIEW_ACTION",
+          "rule_id": "PREVIEW_SHARED_QUEUE",
+          "when": [
+            {
+              "input_id": "QUEUE_EXPORT_CONFIRMED",
+              "operator": "eq",
+              "unit": null,
+              "value": true
+            },
+            {
+              "input_id": "DESTINATION_LABEL",
+              "operator": "eq",
+              "unit": null,
+              "value": "demo-queue"
+            }
+          ]
+        }
+      ]
+    },
+    "stop_conditions": []
+  },
+  "reference_interpreter_result": {
+    "condition_evaluations": [
+      {
+        "condition_index": 0,
+        "input_id": "QUEUE_EXPORT_CONFIRMED",
+        "reason_code": "STRICT_TYPED_EQUALITY",
+        "result": "MATCH",
+        "route_id": "PREVIEW_SHARED_QUEUE",
+        "route_kind": "selector"
+      },
+      {
+        "condition_index": 1,
+        "input_id": "DESTINATION_LABEL",
+        "reason_code": "INPUT_ABSENT_FROM_TYPED_BINDING",
+        "result": "MISSING_INPUT",
+        "route_id": "PREVIEW_SHARED_QUEUE",
+        "route_kind": "selector"
+      }
+    ],
+    "condition_set_evaluations": [
+      {
+        "missing_input_ids": [
+          "DESTINATION_LABEL"
+        ],
+        "result": "MISSING_INPUT",
+        "route_id": "PREVIEW_SHARED_QUEUE",
+        "route_kind": "selector"
+      }
+    ],
+    "error": null,
+    "execution_status": "ROUTE_TRACE_READY",
+    "missing_input_report": {
+      "condition_sets": [
+        {
+          "missing_input_ids": [
+            "DESTINATION_LABEL"
+          ],
+          "result": "MISSING_INPUT",
+          "route_id": "PREVIEW_SHARED_QUEUE",
+          "route_kind": "selector"
+        }
+      ],
+      "policy_required_missing_input_ids": [
+        "DESTINATION_LABEL"
+      ],
+      "route_condition_missing_input_ids": [
+        "DESTINATION_LABEL"
+      ]
+    },
+    "route_trace": {
+      "binding_sha256": "af3b7acfe6fc036fb2c4bfc3e9c657e606af38a5a45642abcc963d73769f536e",
+      "contract_version": "task229-route-interface-contract-r1",
+      "evaluated_input_ids": [
+        "QUEUE_EXPORT_CONFIRMED"
+      ],
+      "missing_input_ids": [
+        "DESTINATION_LABEL"
+      ],
+      "policy_id": "SYNTH_POLICY_QUEUE_PREVIEW_R1",
+      "policy_sha256": "9025f180f1ddd07dc937fbbe0d322032648e11b0724e1e0c69f2706003af90d7",
+      "preserved_baseline_action_ids": [
+        "SYNTH_KEEP_DEFAULT"
+      ],
+      "route_type": "fallback",
+      "selected_action_id": null,
+      "selected_rule_id": null
+    }
+  },
+  "scenario": "A demo queue preview requires a positive export confirmation and a destination label. The label is deliberately absent.",
+  "source_class": "invented_synthetic_example",
+  "typed_binding": {
+    "binding_builder": {
+      "sha256": "285cc0cdab2e03e3c6904742c5e5094612d6468e06ea9352ecf095d7a8c27346",
+      "version": "task229-typed-binding-builder-r1"
+    },
+    "binding_version": "task229-route-input-binding-r1",
+    "bindings": {
+      "QUEUE_EXPORT_CONFIRMED": {
+        "present": true,
+        "unit": null,
+        "value": true,
+        "value_type": "boolean"
+      }
+    },
+    "case_id": "SYNTH-QP-01",
+    "missing_input_ids": [
+      "DESTINATION_LABEL"
+    ],
+    "policy_id": "SYNTH_POLICY_QUEUE_PREVIEW_R1",
+    "policy_sha256": "9025f180f1ddd07dc937fbbe0d322032648e11b0724e1e0c69f2706003af90d7",
+    "present_input_ids": [
+      "QUEUE_EXPORT_CONFIRMED"
+    ],
+    "source_case_id": "synthetic-demo:queue-preview:01",
+    "source_case_sha256": "da4bdb3fafe4fa093c8d120176b0b0c4629eddf5a868bfe8c1cdae09f920c850"
+  }
+}
