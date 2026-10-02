@@ -1,0 +1,1422 @@
+{
+  "schema_version": "task229-r3-interface-failure-taxonomy-r0",
+  "scope": "Historical REFERENCE_M1 route mechanics only; no evaluator scores, target criteria, or target-success labels used.",
+  "source_binding": {
+    "command_snapshot_sha": "21ff8f22875b37568f2f77bbb41421f7becbcae9",
+    "task228_policy_base_sha": "d82a52077df6d4e96e998ace3757f2fb343b4db5",
+    "task229_scientific_source_sha": "961603c2cb8b6cd1aac14ff72ecd946e26828aa5",
+    "concrete_prompt_and_input_map_sha": "4ee132e8d50e8805c466cb5d681aaa18c34c9f68",
+    "historical_successor_trace_source_sha": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+    "a2_receipt_sha": "f6a9796a36df1e63ae7c475701416c879e10d9b5",
+    "fixed_case_input_map": {
+      "path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/run/case-input-values-and-route-expectations.json",
+      "sha256": "b2d44d56aa602e429a8f3ddded61e0b3524b16700a4d35232126a5e264ffa057"
+    },
+    "legacy_recompute": {
+      "path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/tools/recompute.py",
+      "sha256": "2a81a493b2d40cde023b4017a72c3aa7dfe45dee96fc06e223639fb082902b54"
+    },
+    "response_schema": {
+      "path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/response-schema.json",
+      "sha256": "d0a2de5555d5c176d83acba66494afbf5637dc10aba917a981d3572469a74aa8"
+    },
+    "policy_sha256_by_id": {
+      "POLICY_F01_A": "db786b0d68c8955cc1354c325aaa528bcc2e88915e75dc593fa3e9475b5c2410",
+      "POLICY_F01_B": "f64bc598c3d37309a7519c8e19976d3f439c9e1715484fea3d9ed8e6788d93f5",
+      "POLICY_F02_A": "e4fd07ae2f96bd31ddf9422de43d403e80aebd264fb0b1ca0be618598fc3744c",
+      "POLICY_F02_B": "ac66d15487b8ae93b7353ab07ddb4230eb49b643370da92750db68b2a5ec371c",
+      "POLICY_F03_A": "17a338279f13bbe716bc21cdbc90a7592a21b7024cb18b601f9dcb9b6ddbc4a9",
+      "POLICY_F03_B": "d248c7809edc0fd739c226100179d1e56d5294db92148831efac8fda16d53841"
+    },
+    "task228_policy_manifest_sha256": "864c4b91dc12b7f3166d1f0101b8e4dc300551fd4e83f28bb9e1be96a0312538",
+    "session_run_index": {
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/session-run-index.json",
+      "sha256": "4275c07de48ed8ae1f86d1caa0fc817af8459abe362c1dc8b91f15002ff98576",
+      "design_session_count": 18
+    }
+  },
+  "legacy_verifier_semantics": {
+    "source_function": "verify_trace(response, policy, case_values)",
+    "source_sha256": "2a81a493b2d40cde023b4017a72c3aa7dfe45dee96fc06e223639fb082902b54",
+    "conditions": "Only eq operators; every condition must have a present case value equal to the literal.",
+    "order": "Validate policy and baselines; require trace input IDs unique and present in case map; evaluate stop and selector matches; reject multiple/conflicting matches; require exact route type/rule/action fields; fallback requires null rule/action."
+  },
+  "failure_code_vocabulary": [
+    "TRACE_PASS",
+    "ABSENT_INPUT_ID_TRACED",
+    "BOUND_INPUT_VALUE_REINTERPRETED",
+    "ROUTE_TYPE_MISMATCH",
+    "RULE_ID_MISMATCH",
+    "ACTION_ID_MISMATCH",
+    "PRESERVED_BASELINE_MISMATCH",
+    "POLICY_ID_MISMATCH",
+    "SCHEMA_FAILURE",
+    "MULTIPLE_ROUTE_MATCH",
+    "OTHER_MECHANICAL_MISMATCH"
+  ],
+  "cases": [
+    {
+      "lineage_id": "L02",
+      "family": "FAMILY01",
+      "case_id": "A",
+      "condition": "REFERENCE_M1",
+      "session_order": 3,
+      "policy_id": "POLICY_F01_B",
+      "policy_sha256": "f64bc598c3d37309a7519c8e19976d3f439c9e1715484fea3d9ed8e6788d93f5",
+      "binding_values": {
+        "F01B_MEASUREMENT_VALID": true,
+        "F01B_SURFACE_COVERAGE_COMPLETE": true,
+        "F01B_PAIRED_READING_PATTERN": "stable_observed"
+      },
+      "policy_required_input_ids": [
+        "F01B_MEASUREMENT_VALID",
+        "F01B_PAIRED_READING_PATTERN",
+        "F01B_SURFACE_COVERAGE_COMPLETE"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F01_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F01B_MEASUREMENT_VALID",
+          "F01B_SURFACE_COVERAGE_COMPLETE",
+          "F01B_PAIRED_READING_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/03-28b15c45689f1c28734faf2458b1adf0/attempt-01/stdout.jsonl",
+        "stdout_sha256": "a948b4455c3b71b134905ee208dc0931d1ee14e77ef61a5cdce3006d11225b81"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    },
+    {
+      "lineage_id": "L02",
+      "family": "FAMILY01",
+      "case_id": "B",
+      "condition": "REFERENCE_M1",
+      "session_order": 3,
+      "policy_id": "POLICY_F01_B",
+      "policy_sha256": "f64bc598c3d37309a7519c8e19976d3f439c9e1715484fea3d9ed8e6788d93f5",
+      "binding_values": {
+        "F01B_MEASUREMENT_VALID": true,
+        "F01B_SURFACE_COVERAGE_COMPLETE": true,
+        "F01B_PAIRED_READING_PATTERN": "stable_observed"
+      },
+      "policy_required_input_ids": [
+        "F01B_MEASUREMENT_VALID",
+        "F01B_PAIRED_READING_PATTERN",
+        "F01B_SURFACE_COVERAGE_COMPLETE"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F01_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F01B_MEASUREMENT_VALID",
+          "F01B_SURFACE_COVERAGE_COMPLETE",
+          "F01B_PAIRED_READING_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/03-28b15c45689f1c28734faf2458b1adf0/attempt-01/stdout.jsonl",
+        "stdout_sha256": "a948b4455c3b71b134905ee208dc0931d1ee14e77ef61a5cdce3006d11225b81"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    },
+    {
+      "lineage_id": "L02",
+      "family": "FAMILY01",
+      "case_id": "C",
+      "condition": "REFERENCE_M1",
+      "session_order": 3,
+      "policy_id": "POLICY_F01_B",
+      "policy_sha256": "f64bc598c3d37309a7519c8e19976d3f439c9e1715484fea3d9ed8e6788d93f5",
+      "binding_values": {
+        "F01B_MEASUREMENT_VALID": true,
+        "F01B_SURFACE_COVERAGE_COMPLETE": false,
+        "F01B_PAIRED_READING_PATTERN": "variable_observed"
+      },
+      "policy_required_input_ids": [
+        "F01B_MEASUREMENT_VALID",
+        "F01B_PAIRED_READING_PATTERN",
+        "F01B_SURFACE_COVERAGE_COMPLETE"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F01_B",
+        "route_type": "selector",
+        "selected_rule_id": "F01B_INCOMPLETE_VARIABLE_CONTEXT",
+        "selected_action_id": "F01B_REACQUIRE_CONTEXT",
+        "input_ids": [
+          "F01B_MEASUREMENT_VALID",
+          "F01B_SURFACE_COVERAGE_COMPLETE",
+          "F01B_PAIRED_READING_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/03-28b15c45689f1c28734faf2458b1adf0/attempt-01/stdout.jsonl",
+        "stdout_sha256": "a948b4455c3b71b134905ee208dc0931d1ee14e77ef61a5cdce3006d11225b81"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "selector",
+        "selected_rule_id": "F01B_INCOMPLETE_VARIABLE_CONTEXT",
+        "selected_action_id": "F01B_REACQUIRE_CONTEXT"
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 1
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    },
+    {
+      "lineage_id": "L05",
+      "family": "FAMILY03",
+      "case_id": "A",
+      "condition": "REFERENCE_M1",
+      "session_order": 7,
+      "policy_id": "POLICY_F03_A",
+      "policy_sha256": "17a338279f13bbe716bc21cdbc90a7592a21b7024cb18b601f9dcb9b6ddbc4a9",
+      "binding_values": {
+        "F03A_MEASUREMENT_VALID": true,
+        "F03A_FORMULATION_GROUP": "P",
+        "F03A_PULSE_PATTERN": "observed_group_p_pulse_cases"
+      },
+      "policy_required_input_ids": [
+        "F03A_FORMULATION_GROUP",
+        "F03A_MEASUREMENT_VALID",
+        "F03A_PULSE_PATTERN"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F03_A",
+        "route_type": "selector",
+        "selected_rule_id": "F03A_OBSERVED_GROUP_P_PULSE_PATTERN",
+        "selected_action_id": "F03A_PRODUCT_STABILITY_REVIEW",
+        "input_ids": [
+          "F03A_MEASUREMENT_VALID",
+          "F03A_FORMULATION_GROUP",
+          "F03A_PULSE_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "SCREEN_PASS",
+          "STABILITY_REVIEW",
+          "RECONCILE_LOGGER",
+          "UNSCORABLE"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/07-7dc11c187444c4693d53c4deb2c6b512/attempt-01/stdout.jsonl",
+        "stdout_sha256": "318b11c3557f6ceeacd1655bb09b1fcfaecb9b5428276eb4fe7bbd2145f21e68"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "selector",
+        "selected_rule_id": "F03A_OBSERVED_GROUP_P_PULSE_PATTERN",
+        "selected_action_id": "F03A_PRODUCT_STABILITY_REVIEW"
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 1
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    },
+    {
+      "lineage_id": "L05",
+      "family": "FAMILY03",
+      "case_id": "B",
+      "condition": "REFERENCE_M1",
+      "session_order": 7,
+      "policy_id": "POLICY_F03_A",
+      "policy_sha256": "17a338279f13bbe716bc21cdbc90a7592a21b7024cb18b601f9dcb9b6ddbc4a9",
+      "binding_values": {
+        "F03A_MEASUREMENT_VALID": true,
+        "F03A_FORMULATION_GROUP": "P",
+        "F03A_PULSE_PATTERN": "no_above_12_celsius_pulse"
+      },
+      "policy_required_input_ids": [
+        "F03A_FORMULATION_GROUP",
+        "F03A_MEASUREMENT_VALID",
+        "F03A_PULSE_PATTERN"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F03_A",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F03A_MEASUREMENT_VALID",
+          "F03A_FORMULATION_GROUP",
+          "F03A_PULSE_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "SCREEN_PASS",
+          "STABILITY_REVIEW",
+          "RECONCILE_LOGGER",
+          "UNSCORABLE"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/07-7dc11c187444c4693d53c4deb2c6b512/attempt-01/stdout.jsonl",
+        "stdout_sha256": "318b11c3557f6ceeacd1655bb09b1fcfaecb9b5428276eb4fe7bbd2145f21e68"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    },
+    {
+      "lineage_id": "L05",
+      "family": "FAMILY03",
+      "case_id": "C",
+      "condition": "REFERENCE_M1",
+      "session_order": 7,
+      "policy_id": "POLICY_F03_A",
+      "policy_sha256": "17a338279f13bbe716bc21cdbc90a7592a21b7024cb18b601f9dcb9b6ddbc4a9",
+      "binding_values": {
+        "F03A_MEASUREMENT_VALID": true,
+        "F03A_FORMULATION_GROUP": "P",
+        "F03A_PULSE_PATTERN": "pulse_duration_indeterminate_due_to_trace_gap"
+      },
+      "policy_required_input_ids": [
+        "F03A_FORMULATION_GROUP",
+        "F03A_MEASUREMENT_VALID",
+        "F03A_PULSE_PATTERN"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F03_A",
+        "route_type": "stop",
+        "selected_rule_id": "POLICY_F03_A_INVALID_MEASUREMENT_STOP",
+        "selected_action_id": null,
+        "input_ids": [
+          "F03A_MEASUREMENT_VALID"
+        ],
+        "preserved_baseline_action_ids": [
+          "SCREEN_PASS",
+          "STABILITY_REVIEW",
+          "RECONCILE_LOGGER",
+          "UNSCORABLE"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/07-7dc11c187444c4693d53c4deb2c6b512/attempt-01/stdout.jsonl",
+        "stdout_sha256": "318b11c3557f6ceeacd1655bb09b1fcfaecb9b5428276eb4fe7bbd2145f21e68"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": false,
+        "first_rejection_gate": "fallback_route_fields"
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [
+          "F03A_FORMULATION_GROUP",
+          "F03A_PULSE_PATTERN"
+        ],
+        "selected_route_conditions_contradict_frozen_binding": true,
+        "contradictory_conditions": [
+          {
+            "input_id": "F03A_MEASUREMENT_VALID",
+            "bound_value": true,
+            "selected_route_requires": false
+          }
+        ],
+        "route_fields_match_reference": false,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "BOUND_INPUT_VALUE_REINTERPRETED",
+        "ROUTE_TYPE_MISMATCH",
+        "RULE_ID_MISMATCH"
+      ]
+    },
+    {
+      "lineage_id": "L04",
+      "family": "FAMILY02",
+      "case_id": "A",
+      "condition": "REFERENCE_M1",
+      "session_order": 10,
+      "policy_id": "POLICY_F02_B",
+      "policy_sha256": "ac66d15487b8ae93b7353ab07ddb4230eb49b643370da92750db68b2a5ec371c",
+      "binding_values": {
+        "F02B_MEASUREMENT_VALID": true,
+        "F02B_COMPOSITION_REPRODUCIBLE": true
+      },
+      "policy_required_input_ids": [
+        "F02B_COMPOSITION_REPRODUCIBLE",
+        "F02B_GRAVIMETRIC_REPLICATES_AGREE",
+        "F02B_MEASUREMENT_VALID"
+      ],
+      "missing_policy_required_input_ids": [
+        "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+      ],
+      "trace": {
+        "policy_id": "POLICY_F02_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F02B_MEASUREMENT_VALID",
+          "F02B_COMPOSITION_REPRODUCIBLE",
+          "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+        ],
+        "preserved_baseline_action_ids": [
+          "REPORT_ESTIMATE",
+          "REPEAT_SAMPLE",
+          "FLAG_OUT_OF_RANGE",
+          "INVALID_MEASUREMENT"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/10-038df275866cab10ff31c47d72ba4d90/attempt-01/stdout.jsonl",
+        "stdout_sha256": "c0432d683c30e98db4973be7ea6a417d4b37a5865745acbea3a68fc52cf4f37c"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": false,
+        "first_rejection_gate": "absent_input_id"
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": false,
+        "unbound_traced_input_ids": [
+          "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+        ],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "ABSENT_INPUT_ID_TRACED"
+      ]
+    },
+    {
+      "lineage_id": "L04",
+      "family": "FAMILY02",
+      "case_id": "B",
+      "condition": "REFERENCE_M1",
+      "session_order": 10,
+      "policy_id": "POLICY_F02_B",
+      "policy_sha256": "ac66d15487b8ae93b7353ab07ddb4230eb49b643370da92750db68b2a5ec371c",
+      "binding_values": {
+        "F02B_MEASUREMENT_VALID": true,
+        "F02B_COMPOSITION_REPRODUCIBLE": true
+      },
+      "policy_required_input_ids": [
+        "F02B_COMPOSITION_REPRODUCIBLE",
+        "F02B_GRAVIMETRIC_REPLICATES_AGREE",
+        "F02B_MEASUREMENT_VALID"
+      ],
+      "missing_policy_required_input_ids": [
+        "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+      ],
+      "trace": {
+        "policy_id": "POLICY_F02_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F02B_MEASUREMENT_VALID",
+          "F02B_COMPOSITION_REPRODUCIBLE",
+          "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+        ],
+        "preserved_baseline_action_ids": [
+          "REPORT_ESTIMATE",
+          "REPEAT_SAMPLE",
+          "FLAG_OUT_OF_RANGE",
+          "INVALID_MEASUREMENT"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/10-038df275866cab10ff31c47d72ba4d90/attempt-01/stdout.jsonl",
+        "stdout_sha256": "c0432d683c30e98db4973be7ea6a417d4b37a5865745acbea3a68fc52cf4f37c"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": false,
+        "first_rejection_gate": "absent_input_id"
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": false,
+        "unbound_traced_input_ids": [
+          "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+        ],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "ABSENT_INPUT_ID_TRACED"
+      ]
+    },
+    {
+      "lineage_id": "L04",
+      "family": "FAMILY02",
+      "case_id": "C",
+      "condition": "REFERENCE_M1",
+      "session_order": 10,
+      "policy_id": "POLICY_F02_B",
+      "policy_sha256": "ac66d15487b8ae93b7353ab07ddb4230eb49b643370da92750db68b2a5ec371c",
+      "binding_values": {
+        "F02B_MEASUREMENT_VALID": true,
+        "F02B_COMPOSITION_REPRODUCIBLE": false
+      },
+      "policy_required_input_ids": [
+        "F02B_COMPOSITION_REPRODUCIBLE",
+        "F02B_GRAVIMETRIC_REPLICATES_AGREE",
+        "F02B_MEASUREMENT_VALID"
+      ],
+      "missing_policy_required_input_ids": [
+        "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+      ],
+      "trace": {
+        "policy_id": "POLICY_F02_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F02B_MEASUREMENT_VALID",
+          "F02B_COMPOSITION_REPRODUCIBLE",
+          "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+        ],
+        "preserved_baseline_action_ids": [
+          "REPORT_ESTIMATE",
+          "REPEAT_SAMPLE",
+          "FLAG_OUT_OF_RANGE",
+          "INVALID_MEASUREMENT"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/10-038df275866cab10ff31c47d72ba4d90/attempt-01/stdout.jsonl",
+        "stdout_sha256": "c0432d683c30e98db4973be7ea6a417d4b37a5865745acbea3a68fc52cf4f37c"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": false,
+        "first_rejection_gate": "absent_input_id"
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": false,
+        "unbound_traced_input_ids": [
+          "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+        ],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "ABSENT_INPUT_ID_TRACED"
+      ]
+    },
+    {
+      "lineage_id": "L06",
+      "family": "FAMILY03",
+      "case_id": "A",
+      "condition": "REFERENCE_M1",
+      "session_order": 13,
+      "policy_id": "POLICY_F03_B",
+      "policy_sha256": "d248c7809edc0fd739c226100179d1e56d5294db92148831efac8fda16d53841",
+      "binding_values": {
+        "F03B_MEASUREMENT_VALID": true,
+        "F03B_HIGH_RATE_TRACE_COMPLETE": true
+      },
+      "policy_required_input_ids": [
+        "F03B_ASSAY_REPLICATES_RECONCILE",
+        "F03B_HIGH_RATE_TRACE_COMPLETE",
+        "F03B_MEASUREMENT_VALID"
+      ],
+      "missing_policy_required_input_ids": [
+        "F03B_ASSAY_REPLICATES_RECONCILE"
+      ],
+      "trace": {
+        "policy_id": "POLICY_F03_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F03B_MEASUREMENT_VALID",
+          "F03B_HIGH_RATE_TRACE_COMPLETE",
+          "F03B_ASSAY_REPLICATES_RECONCILE"
+        ],
+        "preserved_baseline_action_ids": [
+          "SCREEN_PASS",
+          "STABILITY_REVIEW",
+          "RECONCILE_LOGGER",
+          "UNSCORABLE"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/13-1693035e68fa22be10b547271e4a28f2/attempt-01/stdout.jsonl",
+        "stdout_sha256": "9f358e81b1c1f7ca492104bdd68b4cebc5e59e9208aaf58492b7c1fa4f6587a9"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": false,
+        "first_rejection_gate": "absent_input_id"
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": false,
+        "unbound_traced_input_ids": [
+          "F03B_ASSAY_REPLICATES_RECONCILE"
+        ],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "ABSENT_INPUT_ID_TRACED"
+      ]
+    },
+    {
+      "lineage_id": "L06",
+      "family": "FAMILY03",
+      "case_id": "B",
+      "condition": "REFERENCE_M1",
+      "session_order": 13,
+      "policy_id": "POLICY_F03_B",
+      "policy_sha256": "d248c7809edc0fd739c226100179d1e56d5294db92148831efac8fda16d53841",
+      "binding_values": {
+        "F03B_MEASUREMENT_VALID": true,
+        "F03B_HIGH_RATE_TRACE_COMPLETE": true
+      },
+      "policy_required_input_ids": [
+        "F03B_ASSAY_REPLICATES_RECONCILE",
+        "F03B_HIGH_RATE_TRACE_COMPLETE",
+        "F03B_MEASUREMENT_VALID"
+      ],
+      "missing_policy_required_input_ids": [
+        "F03B_ASSAY_REPLICATES_RECONCILE"
+      ],
+      "trace": {
+        "policy_id": "POLICY_F03_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F03B_MEASUREMENT_VALID",
+          "F03B_HIGH_RATE_TRACE_COMPLETE",
+          "F03B_ASSAY_REPLICATES_RECONCILE"
+        ],
+        "preserved_baseline_action_ids": [
+          "SCREEN_PASS",
+          "STABILITY_REVIEW",
+          "RECONCILE_LOGGER",
+          "UNSCORABLE"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/13-1693035e68fa22be10b547271e4a28f2/attempt-01/stdout.jsonl",
+        "stdout_sha256": "9f358e81b1c1f7ca492104bdd68b4cebc5e59e9208aaf58492b7c1fa4f6587a9"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": false,
+        "first_rejection_gate": "absent_input_id"
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": false,
+        "unbound_traced_input_ids": [
+          "F03B_ASSAY_REPLICATES_RECONCILE"
+        ],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "ABSENT_INPUT_ID_TRACED"
+      ]
+    },
+    {
+      "lineage_id": "L06",
+      "family": "FAMILY03",
+      "case_id": "C",
+      "condition": "REFERENCE_M1",
+      "session_order": 13,
+      "policy_id": "POLICY_F03_B",
+      "policy_sha256": "d248c7809edc0fd739c226100179d1e56d5294db92148831efac8fda16d53841",
+      "binding_values": {
+        "F03B_MEASUREMENT_VALID": true,
+        "F03B_HIGH_RATE_TRACE_COMPLETE": false
+      },
+      "policy_required_input_ids": [
+        "F03B_ASSAY_REPLICATES_RECONCILE",
+        "F03B_HIGH_RATE_TRACE_COMPLETE",
+        "F03B_MEASUREMENT_VALID"
+      ],
+      "missing_policy_required_input_ids": [
+        "F03B_ASSAY_REPLICATES_RECONCILE"
+      ],
+      "trace": {
+        "policy_id": "POLICY_F03_B",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F03B_MEASUREMENT_VALID",
+          "F03B_HIGH_RATE_TRACE_COMPLETE",
+          "F03B_ASSAY_REPLICATES_RECONCILE"
+        ],
+        "preserved_baseline_action_ids": [
+          "SCREEN_PASS",
+          "STABILITY_REVIEW",
+          "RECONCILE_LOGGER",
+          "UNSCORABLE"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/13-1693035e68fa22be10b547271e4a28f2/attempt-01/stdout.jsonl",
+        "stdout_sha256": "9f358e81b1c1f7ca492104bdd68b4cebc5e59e9208aaf58492b7c1fa4f6587a9"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": false,
+        "first_rejection_gate": "absent_input_id"
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": false,
+        "unbound_traced_input_ids": [
+          "F03B_ASSAY_REPLICATES_RECONCILE"
+        ],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "ABSENT_INPUT_ID_TRACED"
+      ]
+    },
+    {
+      "lineage_id": "L03",
+      "family": "FAMILY02",
+      "case_id": "A",
+      "condition": "REFERENCE_M1",
+      "session_order": 15,
+      "policy_id": "POLICY_F02_A",
+      "policy_sha256": "e4fd07ae2f96bd31ddf9422de43d403e80aebd264fb0b1ca0be618598fc3744c",
+      "binding_values": {
+        "F02A_MEASUREMENT_VALID": true,
+        "F02A_COMPOSITION_PATTERN": "observed_organic_floc_cases"
+      },
+      "policy_required_input_ids": [
+        "F02A_COMPOSITION_PATTERN",
+        "F02A_MEASUREMENT_VALID"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F02_A",
+        "route_type": "selector",
+        "selected_rule_id": "F02A_OBSERVED_ORGANIC_FLOC_PATTERN",
+        "selected_action_id": "F02A_GRAVIMETRIC_REVIEW",
+        "input_ids": [
+          "F02A_MEASUREMENT_VALID",
+          "F02A_COMPOSITION_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "REPORT_ESTIMATE",
+          "REPEAT_SAMPLE",
+          "FLAG_OUT_OF_RANGE",
+          "INVALID_MEASUREMENT"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/15-b10eff61ecd32a492b683dee9d898539/attempt-01/stdout.jsonl",
+        "stdout_sha256": "dcc381331238a4961d1f5f5660e23defe4d40393a647486fbf92f293f8ff48ea"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "selector",
+        "selected_rule_id": "F02A_OBSERVED_ORGANIC_FLOC_PATTERN",
+        "selected_action_id": "F02A_GRAVIMETRIC_REVIEW"
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 1
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    },
+    {
+      "lineage_id": "L03",
+      "family": "FAMILY02",
+      "case_id": "B",
+      "condition": "REFERENCE_M1",
+      "session_order": 15,
+      "policy_id": "POLICY_F02_A",
+      "policy_sha256": "e4fd07ae2f96bd31ddf9422de43d403e80aebd264fb0b1ca0be618598fc3744c",
+      "binding_values": {
+        "F02A_MEASUREMENT_VALID": true,
+        "F02A_COMPOSITION_PATTERN": "measured_mineral_dominant_pattern"
+      },
+      "policy_required_input_ids": [
+        "F02A_COMPOSITION_PATTERN",
+        "F02A_MEASUREMENT_VALID"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F02_A",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F02A_MEASUREMENT_VALID",
+          "F02A_COMPOSITION_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "REPORT_ESTIMATE",
+          "REPEAT_SAMPLE",
+          "FLAG_OUT_OF_RANGE",
+          "INVALID_MEASUREMENT"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/15-b10eff61ecd32a492b683dee9d898539/attempt-01/stdout.jsonl",
+        "stdout_sha256": "dcc381331238a4961d1f5f5660e23defe4d40393a647486fbf92f293f8ff48ea"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    },
+    {
+      "lineage_id": "L03",
+      "family": "FAMILY02",
+      "case_id": "C",
+      "condition": "REFERENCE_M1",
+      "session_order": 15,
+      "policy_id": "POLICY_F02_A",
+      "policy_sha256": "e4fd07ae2f96bd31ddf9422de43d403e80aebd264fb0b1ca0be618598fc3744c",
+      "binding_values": {
+        "F02A_MEASUREMENT_VALID": true,
+        "F02A_COMPOSITION_PATTERN": "not_reproducible_or_neither_pattern"
+      },
+      "policy_required_input_ids": [
+        "F02A_COMPOSITION_PATTERN",
+        "F02A_MEASUREMENT_VALID"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F02_A",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F02A_MEASUREMENT_VALID",
+          "F02A_COMPOSITION_PATTERN"
+        ],
+        "preserved_baseline_action_ids": [
+          "REPORT_ESTIMATE",
+          "REPEAT_SAMPLE",
+          "FLAG_OUT_OF_RANGE",
+          "INVALID_MEASUREMENT"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/15-b10eff61ecd32a492b683dee9d898539/attempt-01/stdout.jsonl",
+        "stdout_sha256": "dcc381331238a4961d1f5f5660e23defe4d40393a647486fbf92f293f8ff48ea"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    },
+    {
+      "lineage_id": "L01",
+      "family": "FAMILY01",
+      "case_id": "A",
+      "condition": "REFERENCE_M1",
+      "session_order": 17,
+      "policy_id": "POLICY_F01_A",
+      "policy_sha256": "db786b0d68c8955cc1354c325aaa528bcc2e88915e75dc593fa3e9475b5c2410",
+      "binding_values": {
+        "F01A_MEASUREMENT_VALID": true,
+        "F01A_SURFACE_PATTERN": "reflective_silver_film_observed",
+        "F01A_BEARING_RELATION": "toward_sun_observed"
+      },
+      "policy_required_input_ids": [
+        "F01A_BEARING_RELATION",
+        "F01A_MEASUREMENT_VALID",
+        "F01A_SURFACE_PATTERN"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F01_A",
+        "route_type": "selector",
+        "selected_rule_id": "F01A_OBSERVED_REFLECTIVE_CONTEXT",
+        "selected_action_id": "F01A_ROUTE_CONTACT_CONTEXT",
+        "input_ids": [
+          "F01A_MEASUREMENT_VALID",
+          "F01A_SURFACE_PATTERN",
+          "F01A_BEARING_RELATION"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/17-6301b4fae5d0903958a7308be5e8c94c/attempt-01/stdout.jsonl",
+        "stdout_sha256": "01a773087863b0f5756259d8836ef2bfab85fc0e027942fe4588ce0fc577c4fa"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "selector",
+        "selected_rule_id": "F01A_OBSERVED_REFLECTIVE_CONTEXT",
+        "selected_action_id": "F01A_ROUTE_CONTACT_CONTEXT"
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 1
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    },
+    {
+      "lineage_id": "L01",
+      "family": "FAMILY01",
+      "case_id": "B",
+      "condition": "REFERENCE_M1",
+      "session_order": 17,
+      "policy_id": "POLICY_F01_A",
+      "policy_sha256": "db786b0d68c8955cc1354c325aaa528bcc2e88915e75dc593fa3e9475b5c2410",
+      "binding_values": {
+        "F01A_MEASUREMENT_VALID": true,
+        "F01A_SURFACE_PATTERN": "ordinary_mineral_soil_observed",
+        "F01A_BEARING_RELATION": "toward_sun_observed"
+      },
+      "policy_required_input_ids": [
+        "F01A_BEARING_RELATION",
+        "F01A_MEASUREMENT_VALID",
+        "F01A_SURFACE_PATTERN"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F01_A",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F01A_MEASUREMENT_VALID",
+          "F01A_SURFACE_PATTERN",
+          "F01A_BEARING_RELATION"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/17-6301b4fae5d0903958a7308be5e8c94c/attempt-01/stdout.jsonl",
+        "stdout_sha256": "01a773087863b0f5756259d8836ef2bfab85fc0e027942fe4588ce0fc577c4fa"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    },
+    {
+      "lineage_id": "L01",
+      "family": "FAMILY01",
+      "case_id": "C",
+      "condition": "REFERENCE_M1",
+      "session_order": 17,
+      "policy_id": "POLICY_F01_A",
+      "policy_sha256": "db786b0d68c8955cc1354c325aaa528bcc2e88915e75dc593fa3e9475b5c2410",
+      "binding_values": {
+        "F01A_MEASUREMENT_VALID": true,
+        "F01A_SURFACE_PATTERN": "partial_reflective_coverage_observed",
+        "F01A_BEARING_RELATION": "variable_between_scans"
+      },
+      "policy_required_input_ids": [
+        "F01A_BEARING_RELATION",
+        "F01A_MEASUREMENT_VALID",
+        "F01A_SURFACE_PATTERN"
+      ],
+      "missing_policy_required_input_ids": [],
+      "trace": {
+        "policy_id": "POLICY_F01_A",
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null,
+        "input_ids": [
+          "F01A_MEASUREMENT_VALID",
+          "F01A_SURFACE_PATTERN",
+          "F01A_BEARING_RELATION"
+        ],
+        "preserved_baseline_action_ids": [
+          "ROUTINE_MONITORING",
+          "SOIL_MOISTURE_CONFIRMATION",
+          "REPEAT_THERMAL_SCAN",
+          "INPUT_INVALID"
+        ]
+      },
+      "source": {
+        "revision": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+        "stdout_path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/run/sessions/17-6301b4fae5d0903958a7308be5e8c94c/attempt-01/stdout.jsonl",
+        "stdout_sha256": "01a773087863b0f5756259d8836ef2bfab85fc0e027942fe4588ce0fc577c4fa"
+      },
+      "expected_route_from_exact_policy": {
+        "route_type": "fallback",
+        "selected_rule_id": null,
+        "selected_action_id": null
+      },
+      "declared_frozen_route_expectation_matches_replay": true,
+      "legacy_verify_trace": {
+        "pass": true,
+        "first_rejection_gate": null
+      },
+      "predicates": {
+        "original_response_case_schema_valid": true,
+        "schema_errors": [],
+        "policy_id_matches": true,
+        "preserved_baseline_matches": true,
+        "input_ids_is_array_and_unique": true,
+        "all_traced_ids_present_in_frozen_binding": true,
+        "unbound_traced_input_ids": [],
+        "present_binding_ids_omitted_from_trace": [],
+        "selected_route_conditions_contradict_frozen_binding": false,
+        "contradictory_conditions": [],
+        "route_fields_match_reference": true,
+        "stop_match_count": 0,
+        "selector_match_count": 0
+      },
+      "failure_codes": [
+        "TRACE_PASS"
+      ]
+    }
+  ],
+  "lineage_summary": [
+    {
+      "lineage_id": "L01",
+      "policy_id": "POLICY_F01_A",
+      "case_count": 3,
+      "case_trace_pass_count": 3,
+      "lineage_interface_pass": true,
+      "case_ids": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "lineage_id": "L02",
+      "policy_id": "POLICY_F01_B",
+      "case_count": 3,
+      "case_trace_pass_count": 3,
+      "lineage_interface_pass": true,
+      "case_ids": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "lineage_id": "L03",
+      "policy_id": "POLICY_F02_A",
+      "case_count": 3,
+      "case_trace_pass_count": 3,
+      "lineage_interface_pass": true,
+      "case_ids": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "lineage_id": "L04",
+      "policy_id": "POLICY_F02_B",
+      "case_count": 3,
+      "case_trace_pass_count": 0,
+      "lineage_interface_pass": false,
+      "case_ids": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "lineage_id": "L05",
+      "policy_id": "POLICY_F03_A",
+      "case_count": 3,
+      "case_trace_pass_count": 2,
+      "lineage_interface_pass": false,
+      "case_ids": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "lineage_id": "L06",
+      "policy_id": "POLICY_F03_B",
+      "case_count": 3,
+      "case_trace_pass_count": 0,
+      "lineage_interface_pass": false,
+      "case_ids": [
+        "A",
+        "B",
+        "C"
+      ]
+    }
+  ],
+  "aggregate": {
+    "reference_m1_lineages": 6,
+    "cases": 18,
+    "case_trace_passes": 11,
+    "lineage_passes": 3,
+    "lineage_denominator": 6,
+    "target_or_evaluator_material_used_for_taxonomy": false,
+    "reference_m1_response_envelopes": 6,
+    "response_envelope_schema_valid_count": 6,
+    "response_case_schema_valid_count": 18
+  }
+}
