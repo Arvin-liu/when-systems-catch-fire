@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import tempfile
 from pathlib import Path
 from typing import Any
@@ -37,6 +38,7 @@ REQUIRED_FIXTURES = {
     "stop_match",
     "missing_stop_input",
     "multiple_selector_matches",
+    "multiple_stop_matches",
     "stop_selector_conflict",
     "unknown_input_id",
     "duplicate_input_id",
@@ -89,7 +91,7 @@ COVERAGE_FIXTURES = {
         "malformed_json_pointer_escape", "incomplete_mapping_fails_closed",
     ],
     "routing_and_missingness": [
-        "multiple_selector_matches", "stop_selector_conflict", "all_present_fallback",
+        "multiple_selector_matches", "multiple_stop_matches", "stop_selector_conflict", "all_present_fallback",
         "missing_one_selector_input", "missing_stop_input", "no_match_dominates_missing",
         "absent_id_trace_contamination", "absent_input_contamination_rejected",
     ],
@@ -237,6 +239,14 @@ def _mutate_binding(binding: dict[str, Any], mutation: str | None) -> dict[str, 
     return candidate
 
 
+def _synthetic_boolean_prose_claim(prose: str) -> tuple[str, bool] | None:
+    """Recognize one deliberately narrow assertion used only by these fixtures."""
+    match = re.fullmatch(r"([A-Z][A-Z0-9_]*) is (true|false)\.", prose.strip())
+    if match is None:
+        return None
+    return match.group(1), match.group(2) == "true"
+
+
 def _load_inline_json(raw_text: str) -> tuple[Any, bytes]:
     """Use the production JSON loader on a short-lived synthetic file."""
     with tempfile.TemporaryDirectory(prefix=".r3-synthetic-", dir=SUBTREE) as temp_dir:
@@ -322,14 +332,27 @@ def run_corpus(corpus: Any, corpus_bytes: bytes) -> dict[str, Any]:
         if canonical_json_bytes(binding) != canonical_json_bytes(binding_again):
             raise AssertionError(f"{fixture_id}: binding rebuild was not deterministic")
         actual["binding_rebuild_sha256"] = hashlib.sha256(canonical_json_bytes(binding)).hexdigest()
-        if fixture.get("runtime_marker"):
-            if not isinstance(fixture.get("synthetic_prose"), str):
-                raise AssertionError(f"{fixture_id}: prose conflict fixture lacks synthetic prose")
-            conflict_input = fixture.get("conflict_input", {})
-            input_id = conflict_input.get("input_id")
-            if input_id not in binding["bindings"] or binding["bindings"][input_id]["value"] != conflict_input.get("value"):
-                raise AssertionError(f"{fixture_id}: conflict marker changed the authoritative bound value")
-            binding["interface_conflict_marker"] = fixture["runtime_marker"]
+        if "synthetic_prose" in fixture:
+            prose = fixture["synthetic_prose"]
+            if not isinstance(prose, str):
+                raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "synthetic prose must be text")
+            claim = _synthetic_boolean_prose_claim(prose)
+            detected_conflict = False
+            if claim is not None:
+                input_id, prose_value = claim
+                record = binding["bindings"].get(input_id)
+                if record is None:
+                    raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "synthetic prose claim must refer to a present typed input")
+                detected_conflict = record["value"] != prose_value
+            runtime_marker = fixture.get("runtime_marker")
+            if runtime_marker not in (None, "PROSE_BINDING_CONFLICT"):
+                raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "unsupported synthetic prose conflict marker")
+            if detected_conflict != (runtime_marker == "PROSE_BINDING_CONFLICT"):
+                raise AssertionError(f"{fixture_id}: prose claim and conflict marker disagree with the typed binding")
+            if detected_conflict:
+                binding["interface_conflict_marker"] = runtime_marker
+        elif fixture.get("runtime_marker"):
+            raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "prose conflict marker has no synthetic prose")
 
         binding = _mutate_binding(binding, fixture.get("binding_mutation"))
         first = interpret(policy, binding, policy_bytes)

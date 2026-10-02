@@ -338,11 +338,7 @@
       "fixture_id": "prose_binding_conflict_marker",
       "policy_ref": "base",
       "runtime_marker": "PROSE_BINDING_CONFLICT",
-      "synthetic_prose": "The bound SYN_ENABLED value is true, but the synthetic prose says SYN_ENABLED is false.",
-      "conflict_input": {
-        "input_id": "SYN_ENABLED",
-        "value": true
-      },
+      "synthetic_prose": "SYN_ENABLED is false.",
       "source_case": {
         "case_id": "SYN-17",
         "source_case_id": "synthetic-route-r1:prose_binding_conflict_marker",
@@ -965,6 +961,21 @@
       "expected": {
         "execution_error": "BINDING_PROVENANCE_INVALID"
       }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "multiple_stop_matches",
+      "policy_ref": "multiple_stops",
+      "source_case": {
+        "case_id": "SYN-49",
+        "source_case_id": "synthetic-route-r1:multiple_stop_matches",
+        "values": {
+          "SYN_STOP_FLAG": true
+        }
+      },
+      "expected": {
+        "execution_error": "ROUTE_AMBIGUOUS"
+      }
     }
   ],
   "policies": {
@@ -1499,6 +1510,50 @@
         ]
       },
       "stop_conditions": [],
+      "preserved_rules": [
+        {
+          "baseline_action": "SYN_KEEP_BASELINE"
+        }
+      ]
+    },
+    "multiple_stops": {
+      "policy_id": "SYNTH_POLICY_MULTI_STOP",
+      "selector": {
+        "required_inputs": [
+          {
+            "input_id": "SYN_STOP_FLAG",
+            "value_type": "boolean",
+            "unit": null
+          }
+        ],
+        "rule": []
+      },
+      "stop_conditions": [
+        {
+          "stop_id": "SYN_STOP_A",
+          "outcome": "STOP",
+          "when": [
+            {
+              "input_id": "SYN_STOP_FLAG",
+              "operator": "eq",
+              "value": true,
+              "unit": null
+            }
+          ]
+        },
+        {
+          "stop_id": "SYN_STOP_B",
+          "outcome": "STOP",
+          "when": [
+            {
+              "input_id": "SYN_STOP_FLAG",
+              "operator": "eq",
+              "value": true,
+              "unit": null
+            }
+          ]
+        }
+      ],
       "preserved_rules": [
         {
           "baseline_action": "SYN_KEEP_BASELINE"
