@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import tempfile
 from pathlib import Path
 from typing import Any
 
@@ -27,6 +28,10 @@ REQUIRED_FIXTURES = {
     "missing_one_selector_input",
     "missing_boolean_is_not_false",
     "explicit_false_is_present",
+    "explicit_zero_is_present",
+    "zero_is_distinct_from_absence",
+    "empty_string_is_present",
+    "empty_string_is_distinct_from_absence",
     "explicit_null_permitted",
     "explicit_null_not_permitted",
     "stop_match",
@@ -36,9 +41,69 @@ REQUIRED_FIXTURES = {
     "unknown_input_id",
     "duplicate_input_id",
     "type_mismatch_no_coercion",
+    "boolean_is_not_integer",
     "unit_mismatch_no_conversion",
     "preserved_baseline_mismatch",
     "prose_binding_conflict_marker",
+    "unknown_operator_fails_closed",
+    "unknown_policy_type_fails_closed",
+    "unresolved_source_pointer",
+    "incomplete_mapping_fails_closed",
+    "absent_id_trace_contamination",
+    "duplicate_trace_id_fails_schema",
+    "null_and_missing_are_distinct",
+    "no_match_dominates_missing",
+    "negative_zero_matches_number_zero",
+    "largest_finite_number",
+    "overflowed_json_number_rejected",
+    "malformed_json_pointer_escape",
+    "absent_input_contamination_rejected",
+    "binding_policy_hash_mismatch",
+    "malformed_source_provenance",
+    "nonfinite_binding_value_rejected",
+    "trace_policy_hash_mutation",
+    "trace_binding_hash_mutation",
+    "trace_missing_field_rejected",
+    "trace_extra_field_rejected",
+    "trace_wrong_selected_rule_id",
+    "trace_wrong_selected_action_id",
+    "vague_prose_does_not_override_binding",
+    "nonfinite_json_constant_rejected",
+    "integer_source_allowed_as_number",
+    "malformed_builder_provenance",
+}
+
+COVERAGE_FIXTURES = {
+    "presence_and_scalar_types": [
+        "missing_boolean_is_not_false", "explicit_false_is_present", "explicit_zero_is_present",
+        "zero_is_distinct_from_absence", "empty_string_is_present", "explicit_null_permitted",
+        "empty_string_is_distinct_from_absence", "null_and_missing_are_distinct", "boolean_is_not_integer",
+    ],
+    "number_and_units": [
+        "unit_mismatch_no_conversion", "negative_zero_matches_number_zero",
+        "largest_finite_number", "integer_source_allowed_as_number", "overflowed_json_number_rejected",
+        "nonfinite_binding_value_rejected",
+    ],
+    "mapping_ids_and_pointers": [
+        "unknown_input_id", "duplicate_input_id", "unresolved_source_pointer",
+        "malformed_json_pointer_escape", "incomplete_mapping_fails_closed",
+    ],
+    "routing_and_missingness": [
+        "multiple_selector_matches", "stop_selector_conflict", "all_present_fallback",
+        "missing_one_selector_input", "missing_stop_input", "no_match_dominates_missing",
+        "absent_id_trace_contamination", "absent_input_contamination_rejected",
+    ],
+    "trace_integrity": [
+        "preserved_baseline_mismatch", "duplicate_trace_id_fails_schema",
+        "trace_policy_hash_mutation", "trace_binding_hash_mutation", "trace_missing_field_rejected",
+        "trace_extra_field_rejected", "trace_wrong_selected_rule_id", "trace_wrong_selected_action_id",
+    ],
+    "provenance_and_prose": [
+        "binding_policy_hash_mismatch", "malformed_source_provenance", "malformed_builder_provenance",
+        "prose_binding_conflict_marker",
+        "vague_prose_does_not_override_binding",
+    ],
+    "json_and_rebuild": ["nonfinite_json_constant_rejected", "all_present_selector_match"],
 }
 
 
@@ -103,14 +168,16 @@ def _mapping_for(policy: dict[str, Any], source_case: dict[str, Any], mutation: 
             entries.append({"input_id": "SYN_UNKNOWN", "present": False, "source_pointer": None, "value_type": "string", "unit": None})
         elif kind == "duplicate_first":
             entries.append(dict(entries[0]))
-        elif kind in ("wrong_type", "wrong_unit", "bad_pointer"):
+        elif kind in ("wrong_type", "wrong_unit", "bad_pointer", "malformed_pointer"):
             target = next(item for item in entries if item["input_id"] == mutation["input_id"])
             if kind == "wrong_type":
                 target["value_type"] = mutation["value_type"]
             elif kind == "wrong_unit":
                 target["unit"] = mutation["unit"]
-            else:
+            elif kind == "bad_pointer":
                 target["source_pointer"] = "/values/SYN_NOT_PRESENT"
+            else:
+                target["source_pointer"] = "/values/SYN~2MODE"
         elif kind == "omit_last":
             entries.pop()
         else:
@@ -128,9 +195,55 @@ def _mutate_trace(trace: dict[str, Any], mutation: str | None) -> dict[str, Any]
         if not candidate["missing_input_ids"]:
             raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "duplicate-missing mutation requires a missing ID")
         candidate["missing_input_ids"].append(candidate["missing_input_ids"][0])
+    elif mutation == "wrong_policy_hash":
+        candidate["policy_sha256"] = "0" * 64
+    elif mutation == "wrong_binding_hash":
+        candidate["binding_sha256"] = "0" * 64
+    elif mutation == "remove_field":
+        candidate.pop("selected_action_id")
+    elif mutation == "add_field":
+        candidate["unexpected_trace_field"] = "synthetic-extra"
+    elif mutation == "wrong_rule_id":
+        candidate["selected_rule_id"] = "SYN_WRONG_RULE"
+    elif mutation == "wrong_action_id":
+        candidate["selected_action_id"] = "SYN_WRONG_ACTION"
     elif mutation is not None:
         raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "unknown trace mutation")
     return candidate
+
+
+def _mutate_binding(binding: dict[str, Any], mutation: str | None) -> dict[str, Any]:
+    candidate = json.loads(json.dumps(binding))
+    if mutation is None:
+        return candidate
+    if mutation == "add_missing_as_present":
+        input_id = "SYN_MODE"
+        if input_id not in candidate["missing_input_ids"]:
+            raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "contamination mutation requires an absent input")
+        candidate["bindings"][input_id] = {"present": True, "value": "cobalt", "value_type": "string", "unit": None}
+        candidate["present_input_ids"] = sorted([*candidate["present_input_ids"], input_id])
+    elif mutation == "wrong_policy_hash":
+        candidate["policy_sha256"] = "0" * 64
+    elif mutation == "malformed_source_hash":
+        candidate["source_case_sha256"] = "not-a-sha256"
+    elif mutation == "malformed_builder_hash":
+        candidate["binding_builder"]["sha256"] = "not-a-sha256"
+    elif mutation == "nonfinite_number":
+        if "SYN_NUMBER" not in candidate["bindings"]:
+            raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "nonfinite mutation requires a present numeric binding")
+        candidate["bindings"]["SYN_NUMBER"]["value"] = float("inf")
+    else:
+        raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "unknown binding mutation")
+    return candidate
+
+
+def _load_inline_json(raw_text: str) -> tuple[Any, bytes]:
+    """Use the production JSON loader on a short-lived synthetic file."""
+    with tempfile.TemporaryDirectory(prefix=".r3-synthetic-", dir=SUBTREE) as temp_dir:
+        path = Path(temp_dir) / "inline.json"
+        raw = raw_text.encode("utf-8")
+        path.write_bytes(raw)
+        return load_json_file(path)
 
 
 def run_corpus(corpus: Any, corpus_bytes: bytes) -> dict[str, Any]:
@@ -143,7 +256,7 @@ def run_corpus(corpus: Any, corpus_bytes: bytes) -> dict[str, Any]:
         raise RouteInterfaceError("FIXTURE_SOURCE_FAILURE", "synthetic fixture corpus contains forbidden result material")
     policies = corpus.get("policies")
     fixtures = corpus.get("fixtures")
-    if not isinstance(policies, dict) or not isinstance(fixtures, list) or len(fixtures) < 16:
+    if not isinstance(policies, dict) or not isinstance(fixtures, list) or len(fixtures) < len(REQUIRED_FIXTURES):
         raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "fixture corpus is incomplete")
     fixture_ids = [item.get("fixture_id") for item in fixtures if isinstance(item, dict)]
     if len(fixture_ids) != len(fixtures) or len(set(fixture_ids)) != len(fixture_ids):
@@ -163,13 +276,35 @@ def run_corpus(corpus: Any, corpus_bytes: bytes) -> dict[str, Any]:
             positive_count += 1
         else:
             negative_count += 1
+        expected = fixture.get("expected")
+        if not isinstance(expected, dict):
+            raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "fixture expectation is missing")
+        if expected.get("load_error"):
+            raw_probe = fixture.get("raw_json_probe")
+            if not isinstance(raw_probe, str):
+                raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "raw JSON probe is missing")
+            try:
+                _load_inline_json(raw_probe)
+            except RouteInterfaceError as exc:
+                if exc.code != expected["load_error"]:
+                    raise AssertionError(f"{fixture_id}: expected JSON load failure {expected['load_error']}, got {exc.code}") from exc
+                results.append({"fixture_id": fixture_id, "class": fixture_class, "status": "PASS", "actual": {"load_code": exc.code}})
+                continue
+            raise AssertionError(f"{fixture_id}: malformed/non-finite JSON probe was accepted")
         policy = policies.get(fixture.get("policy_ref"))
         source_case = fixture.get("source_case")
-        expected = fixture.get("expected")
         if not isinstance(policy, dict) or not isinstance(source_case, dict) or not isinstance(expected, dict):
             raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "fixture references missing policy/source/expectation data")
         policy_bytes = canonical_json_bytes(policy)
-        source_case_bytes = canonical_json_bytes(source_case)
+        if fixture.get("source_case_json_override") is not None:
+            raw_override = fixture["source_case_json_override"]
+            if not isinstance(raw_override, str):
+                raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "source-case JSON override must be text")
+            source_case, source_case_bytes = _load_inline_json(raw_override)
+            if not isinstance(source_case, dict) or (source_case.get("case_id"), source_case.get("source_case_id")) != (fixture["source_case"].get("case_id"), fixture["source_case"].get("source_case_id")):
+                raise RouteInterfaceError("FIXTURE_SCHEMA_FAILURE", "source-case JSON override identity differs from fixture")
+        else:
+            source_case_bytes = canonical_json_bytes(source_case)
         mapping = _mapping_for(policy, source_case, fixture.get("mapping_mutation"))
         mapping_bytes = canonical_json_bytes(mapping)
         actual: dict[str, Any] = {"build_code": None, "execution_code": None, "validator_code": None}
@@ -196,6 +331,7 @@ def run_corpus(corpus: Any, corpus_bytes: bytes) -> dict[str, Any]:
                 raise AssertionError(f"{fixture_id}: conflict marker changed the authoritative bound value")
             binding["interface_conflict_marker"] = fixture["runtime_marker"]
 
+        binding = _mutate_binding(binding, fixture.get("binding_mutation"))
         first = interpret(policy, binding, policy_bytes)
         second = interpret(policy, binding, policy_bytes)
         if canonical_json_bytes(first) != canonical_json_bytes(second):
@@ -244,6 +380,7 @@ def run_corpus(corpus: Any, corpus_bytes: bytes) -> dict[str, Any]:
         "negative_fixture_count": negative_count,
         "all_fixtures_passed_expected_outcome": all(item["status"] == "PASS" for item in results),
         "all_route_rebuilds_byte_deterministic": True,
+        "coverage_fixtures": COVERAGE_FIXTURES,
         "target_or_evaluator_material_in_fixture_corpus": False,
         "successor_sessions_run": 0,
         "evaluators_run": 0,

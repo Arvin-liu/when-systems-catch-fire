@@ -1,20 +1,19 @@
 # Synthetic Route Interface Conformance R1
 
-Result: `25/25` synthetic fixtures produced their expected outcome: 10 valid route fixtures passed the interpreter and validator; 15 negative fixtures failed closed with the expected reason. Rebuilding every binding and interpreter result was byte-deterministic.
+Result: `48/48` synthetic fixtures produced their expected outcomes: 18 valid route fixtures passed the interpreter and validator; 30 negative fixtures were rejected at the expected boundary. Rebuilding bindings and interpreter results was byte-deterministic.
 
-The fixture corpus is authored independently of the historical Task229 cases. It uses synthetic IDs and values only; the runner rejects the corpus if it contains target, evaluator, score, or sealed-result material. No live successor or evaluator ran.
+The fixture corpus uses synthetic IDs and values only. The runner rejects result-material terms in the corpus. No live successor or evaluator ran.
 
 ## Coverage
 
-- Selector match and all-present fallback.
-- Missing selector input; a missing boolean does not become false; explicit false remains present and can select stop.
-- Explicit null only under an explicitly nullable policy type; null remains distinct from absence.
-- Stop match and missing stop input.
-- Multiple selector matches and stop-selector conflict return `ROUTE_AMBIGUOUS` without a route trace.
-- Unknown and duplicate mapping IDs, incomplete mapping, unresolved source pointer, type mismatch, and unit mismatch fail closed.
-- Preserved-baseline mismatch, absent ID contamination of `evaluated_input_ids`, and duplicate trace IDs are rejected.
-- A synthetic prose/binding conflict records `PROSE_BINDING_CONFLICT`; the bound boolean stays true and the interpreter emits no route trace.
-- Unknown policy operator and unknown type fail closed.
+- Missing values stay distinct from explicit `null`, `false`, `0`, and the empty string. Boolean values do not pass integer declarations; number tests cover negative zero, integer input under a number declaration, the largest finite double, overflow to infinity, and non-finite rejection. Unit mismatches fail closed.
+- Unknown and duplicate mapping IDs, unresolved and malformed JSON Pointers, and incomplete mappings fail closed.
+- Multiple selector matches and stop-selector conflicts emit no route trace. Fallback remains valid with missing inputs; a no-match condition dominates a missing condition.
+- Missing-ID contamination is rejected both in an input binding and in candidate trace IDs.
+- Candidate traces with a wrong policy hash, binding hash, baseline action ID, selected rule ID, or selected action ID fail validation. Missing or extra trace fields and duplicate trace IDs are rejected.
+- Binding policy-hash mismatch and malformed source-case or builder provenance fail closed.
+- Contradictory synthetic prose produces `PROSE_BINDING_CONFLICT`; vague prose leaves the typed route unchanged.
+- The JSON loader rejects a non-finite constant, and the binding builder rejects an overflowed numeric value.
 
 Machine evidence is in `synthetic-conformance-report-r1.json`; the source fixture corpus is `fixtures/synthetic-route-conformance-r1.json`.
 
@@ -25,5 +24,7 @@ Run from the repository root:
 ```text
 python3 ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/tools/run_synthetic_conformance.py --output ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/synthetic-conformance-report-r1.json
 ```
+
+The runner also rebuilds each valid binding and interpreter result twice and compares canonical bytes. Re-running the command produces a byte-identical machine report.
 
 This establishes synthetic interface conformance only. It does not establish live model behavior, target compatibility, transfer, policy effect, causality, revision generation, cross-model transfer, Model-RSI, or training benefit. Task230 remains unauthorized.

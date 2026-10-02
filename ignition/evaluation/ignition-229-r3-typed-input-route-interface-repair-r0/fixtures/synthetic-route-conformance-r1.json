@@ -338,7 +338,7 @@
       "fixture_id": "prose_binding_conflict_marker",
       "policy_ref": "base",
       "runtime_marker": "PROSE_BINDING_CONFLICT",
-      "synthetic_prose": "The synthetic sentence says the switch is off, while SYN_ENABLED is explicitly true.",
+      "synthetic_prose": "The bound SYN_ENABLED value is true, but the synthetic prose says SYN_ENABLED is false.",
       "conflict_input": {
         "input_id": "SYN_ENABLED",
         "value": true
@@ -515,6 +515,455 @@
           "SYN_COUNT": 3,
           "SYN_ENABLED": false
         }
+      }
+    },
+    {
+      "class": "positive",
+      "fixture_id": "explicit_zero_is_present",
+      "policy_ref": "zero",
+      "source_case": {
+        "case_id": "SYN-26",
+        "source_case_id": "synthetic-route-r1:explicit_zero_is_present",
+        "values": {
+          "SYN_ZERO": 0
+        }
+      },
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_ZERO"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector"
+      }
+    },
+    {
+      "class": "positive",
+      "fixture_id": "zero_is_distinct_from_absence",
+      "policy_ref": "zero",
+      "source_case": {
+        "case_id": "SYN-27",
+        "source_case_id": "synthetic-route-r1:zero_is_distinct_from_absence",
+        "values": {}
+      },
+      "expected": {
+        "evaluated_input_ids": [],
+        "missing_input_ids": [
+          "SYN_ZERO"
+        ],
+        "route_type": "fallback"
+      },
+      "expected_condition_set": {
+        "SYN_ZERO_RULE": "MISSING_INPUT"
+      }
+    },
+    {
+      "class": "positive",
+      "fixture_id": "empty_string_is_present",
+      "policy_ref": "empty_text",
+      "source_case": {
+        "case_id": "SYN-28",
+        "source_case_id": "synthetic-route-r1:empty_string_is_present",
+        "values": {
+          "SYN_EMPTY_TEXT": ""
+        }
+      },
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_EMPTY_TEXT"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "boolean_is_not_integer",
+      "policy_ref": "integer_only",
+      "source_case": {
+        "case_id": "SYN-29",
+        "source_case_id": "synthetic-route-r1:boolean_is_not_integer",
+        "values": {
+          "SYN_INTEGER": true
+        }
+      },
+      "expected": {
+        "build_error": "TYPE_MISMATCH"
+      }
+    },
+    {
+      "class": "positive",
+      "fixture_id": "negative_zero_matches_number_zero",
+      "policy_ref": "number",
+      "source_case": {
+        "case_id": "SYN-30",
+        "source_case_id": "synthetic-route-r1:negative_zero_matches_number_zero",
+        "values": {
+          "SYN_NUMBER": -0.0
+        }
+      },
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_NUMBER"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector"
+      }
+    },
+    {
+      "class": "positive",
+      "fixture_id": "largest_finite_number",
+      "policy_ref": "number_max",
+      "source_case": {
+        "case_id": "SYN-31",
+        "source_case_id": "synthetic-route-r1:largest_finite_number",
+        "values": {
+          "SYN_NUMBER_MAX": 1.7976931348623157e+308
+        }
+      },
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_NUMBER_MAX"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "overflowed_json_number_rejected",
+      "policy_ref": "number",
+      "source_case": {
+        "case_id": "SYN-32",
+        "source_case_id": "synthetic-route-r1:overflowed_json_number_rejected",
+        "values": {
+          "SYN_NUMBER": 1.0
+        }
+      },
+      "source_case_json_override": "{\"case_id\":\"SYN-32\",\"source_case_id\":\"synthetic-route-r1:overflowed_json_number_rejected\",\"values\":{\"SYN_NUMBER\":1e9999}}",
+      "expected": {
+        "build_error": "TYPE_MISMATCH"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "malformed_json_pointer_escape",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-33",
+        "source_case_id": "synthetic-route-r1:malformed_json_pointer_escape",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "mapping_mutation": {
+        "kind": "malformed_pointer",
+        "input_id": "SYN_MODE"
+      },
+      "expected": {
+        "build_error": "MAPPING_POINTER_INVALID"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "absent_input_contamination_rejected",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-34",
+        "source_case_id": "synthetic-route-r1:absent_input_contamination_rejected",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true
+        }
+      },
+      "binding_mutation": "add_missing_as_present",
+      "expected": {
+        "execution_error": "MISSINGNESS_MISMATCH"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "binding_policy_hash_mismatch",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-35",
+        "source_case_id": "synthetic-route-r1:binding_policy_hash_mismatch",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "binding_mutation": "wrong_policy_hash",
+      "expected": {
+        "execution_error": "POLICY_HASH_MISMATCH"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "malformed_source_provenance",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-36",
+        "source_case_id": "synthetic-route-r1:malformed_source_provenance",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "binding_mutation": "malformed_source_hash",
+      "expected": {
+        "execution_error": "BINDING_PROVENANCE_INVALID"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "nonfinite_binding_value_rejected",
+      "policy_ref": "number",
+      "source_case": {
+        "case_id": "SYN-37",
+        "source_case_id": "synthetic-route-r1:nonfinite_binding_value_rejected",
+        "values": {
+          "SYN_NUMBER": 0.0
+        }
+      },
+      "binding_mutation": "nonfinite_number",
+      "expected": {
+        "execution_error": "TYPE_MISMATCH"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "trace_policy_hash_mutation",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-38",
+        "source_case_id": "synthetic-route-r1:trace_policy_hash_mutation",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "trace_mutation": "wrong_policy_hash",
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_error": "TRACE_SEMANTIC_MISMATCH"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "trace_binding_hash_mutation",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-39",
+        "source_case_id": "synthetic-route-r1:trace_binding_hash_mutation",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "trace_mutation": "wrong_binding_hash",
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_error": "TRACE_SEMANTIC_MISMATCH"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "trace_missing_field_rejected",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-40",
+        "source_case_id": "synthetic-route-r1:trace_missing_field_rejected",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "trace_mutation": "remove_field",
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_error": "TRACE_SCHEMA_FAILURE"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "trace_extra_field_rejected",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-41",
+        "source_case_id": "synthetic-route-r1:trace_extra_field_rejected",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "trace_mutation": "add_field",
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_error": "TRACE_SCHEMA_FAILURE"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "trace_wrong_selected_rule_id",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-42",
+        "source_case_id": "synthetic-route-r1:trace_wrong_selected_rule_id",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "trace_mutation": "wrong_rule_id",
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_error": "TRACE_SEMANTIC_MISMATCH"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "trace_wrong_selected_action_id",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-43",
+        "source_case_id": "synthetic-route-r1:trace_wrong_selected_action_id",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "trace_mutation": "wrong_action_id",
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_error": "TRACE_SEMANTIC_MISMATCH"
+      }
+    },
+    {
+      "class": "positive",
+      "fixture_id": "vague_prose_does_not_override_binding",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-44",
+        "source_case_id": "synthetic-route-r1:vague_prose_does_not_override_binding",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "synthetic_prose": "The record may need more context; review the case carefully.",
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "nonfinite_json_constant_rejected",
+      "raw_json_probe": "{\"synthetic_value\":NaN}",
+      "expected": {
+        "load_error": "INVALID_JSON_VALUE"
+      }
+    },
+    {
+      "class": "positive",
+      "fixture_id": "empty_string_is_distinct_from_absence",
+      "policy_ref": "empty_text",
+      "source_case": {
+        "case_id": "SYN-46",
+        "source_case_id": "synthetic-route-r1:empty_string_is_distinct_from_absence",
+        "values": {}
+      },
+      "expected": {
+        "evaluated_input_ids": [],
+        "missing_input_ids": [
+          "SYN_EMPTY_TEXT"
+        ],
+        "route_type": "fallback"
+      },
+      "expected_condition_set": {
+        "SYN_EMPTY_TEXT_RULE": "MISSING_INPUT"
+      }
+    },
+    {
+      "class": "positive",
+      "fixture_id": "integer_source_allowed_as_number",
+      "policy_ref": "number",
+      "source_case": {
+        "case_id": "SYN-47",
+        "source_case_id": "synthetic-route-r1:integer_source_allowed_as_number",
+        "values": {
+          "SYN_NUMBER": 0
+        }
+      },
+      "expected": {
+        "evaluated_input_ids": [
+          "SYN_NUMBER"
+        ],
+        "missing_input_ids": [],
+        "route_type": "selector"
+      }
+    },
+    {
+      "class": "negative",
+      "fixture_id": "malformed_builder_provenance",
+      "policy_ref": "base",
+      "source_case": {
+        "case_id": "SYN-48",
+        "source_case_id": "synthetic-route-r1:malformed_builder_provenance",
+        "values": {
+          "SYN_COUNT": 3,
+          "SYN_ENABLED": true,
+          "SYN_MODE": "cobalt"
+        }
+      },
+      "binding_mutation": "malformed_builder_hash",
+      "expected": {
+        "execution_error": "BINDING_PROVENANCE_INVALID"
       }
     }
   ],
@@ -895,6 +1344,166 @@
         "rule": []
       },
       "stop_conditions": []
+    },
+    "zero": {
+      "policy_id": "SYNTH_POLICY_ZERO",
+      "selector": {
+        "required_inputs": [
+          {
+            "input_id": "SYN_ZERO",
+            "value_type": "integer",
+            "unit": "item"
+          }
+        ],
+        "rule": [
+          {
+            "rule_id": "SYN_ZERO_RULE",
+            "action_ref": "SYN_ZERO_ACTION",
+            "when": [
+              {
+                "input_id": "SYN_ZERO",
+                "operator": "eq",
+                "value": 0,
+                "unit": "item"
+              }
+            ]
+          }
+        ]
+      },
+      "stop_conditions": [],
+      "preserved_rules": [
+        {
+          "baseline_action": "SYN_KEEP_BASELINE"
+        }
+      ]
+    },
+    "empty_text": {
+      "policy_id": "SYNTH_POLICY_EMPTY_TEXT",
+      "selector": {
+        "required_inputs": [
+          {
+            "input_id": "SYN_EMPTY_TEXT",
+            "value_type": "string",
+            "unit": null
+          }
+        ],
+        "rule": [
+          {
+            "rule_id": "SYN_EMPTY_TEXT_RULE",
+            "action_ref": "SYN_EMPTY_TEXT_ACTION",
+            "when": [
+              {
+                "input_id": "SYN_EMPTY_TEXT",
+                "operator": "eq",
+                "value": "",
+                "unit": null
+              }
+            ]
+          }
+        ]
+      },
+      "stop_conditions": [],
+      "preserved_rules": [
+        {
+          "baseline_action": "SYN_KEEP_BASELINE"
+        }
+      ]
+    },
+    "integer_only": {
+      "policy_id": "SYNTH_POLICY_INTEGER_ONLY",
+      "selector": {
+        "required_inputs": [
+          {
+            "input_id": "SYN_INTEGER",
+            "value_type": "integer",
+            "unit": null
+          }
+        ],
+        "rule": [
+          {
+            "rule_id": "SYN_INTEGER_RULE",
+            "action_ref": "SYN_INTEGER_ACTION",
+            "when": [
+              {
+                "input_id": "SYN_INTEGER",
+                "operator": "eq",
+                "value": 1,
+                "unit": null
+              }
+            ]
+          }
+        ]
+      },
+      "stop_conditions": [],
+      "preserved_rules": [
+        {
+          "baseline_action": "SYN_KEEP_BASELINE"
+        }
+      ]
+    },
+    "number": {
+      "policy_id": "SYNTH_POLICY_NUMBER",
+      "selector": {
+        "required_inputs": [
+          {
+            "input_id": "SYN_NUMBER",
+            "value_type": "number",
+            "unit": "millisecond"
+          }
+        ],
+        "rule": [
+          {
+            "rule_id": "SYN_NUMBER_RULE",
+            "action_ref": "SYN_NUMBER_ACTION",
+            "when": [
+              {
+                "input_id": "SYN_NUMBER",
+                "operator": "eq",
+                "value": 0.0,
+                "unit": "millisecond"
+              }
+            ]
+          }
+        ]
+      },
+      "stop_conditions": [],
+      "preserved_rules": [
+        {
+          "baseline_action": "SYN_KEEP_BASELINE"
+        }
+      ]
+    },
+    "number_max": {
+      "policy_id": "SYNTH_POLICY_NUMBER_MAX",
+      "selector": {
+        "required_inputs": [
+          {
+            "input_id": "SYN_NUMBER_MAX",
+            "value_type": "number",
+            "unit": "count"
+          }
+        ],
+        "rule": [
+          {
+            "rule_id": "SYN_NUMBER_MAX_RULE",
+            "action_ref": "SYN_NUMBER_MAX_ACTION",
+            "when": [
+              {
+                "input_id": "SYN_NUMBER_MAX",
+                "operator": "eq",
+                "value": 1.7976931348623157e+308,
+                "unit": "count"
+              }
+            ]
+          }
+        ]
+      },
+      "stop_conditions": [],
+      "preserved_rules": [
+        {
+          "baseline_action": "SYN_KEEP_BASELINE"
+        }
+      ]
     }
   },
   "source_class": "synthetic_only"
