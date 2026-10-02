@@ -1,0 +1,93 @@
+{
+  "schema_version": "ignition-229-r2-a2-phase00-preflight-v1",
+  "experiment_id": "IGNITION-20261002-229-R2-A2",
+  "status": "PASS",
+  "phase": "00",
+  "recorded_at_utc": "2026-10-02T06:13:08+00:00",
+  "control_snapshot": {
+    "repository": "Arvin-liu/1111",
+    "sha": "856eede7e83d98a6f5a8b57886ed743ba24f0059",
+    "current_control_count": 1,
+    "current_control": "IGNITION-20261002-229-R2-A2"
+  },
+  "formal_repository": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "base_head": "8c084d3127b5ce5c7cfa129b0b9f4de9846f2757",
+    "a1_remote_head": "8c084d3127b5ce5c7cfa129b0b9f4de9846f2757",
+    "a1_local_head": "8c084d3127b5ce5c7cfa129b0b9f4de9846f2757",
+    "a1_worktree_clean": true,
+    "a1_pr": 242,
+    "a1_pr_state": "OPEN",
+    "a1_pr_is_draft": true,
+    "a1_pr_unmerged": true,
+    "a2_branch": "work/IGNITION-20261002-229-R2-A2-recompute-root-closeout-r0",
+    "a2_branch_base": "8c084d3127b5ce5c7cfa129b0b9f4de9846f2757"
+  },
+  "frozen_artifact_checks": {
+    "a1_run_sha256_manifest": {
+      "entry_count": 117,
+      "verified_count": 117,
+      "pass": true
+    },
+    "analysis_input": {
+      "path": "ignition/evaluation/ignition-229-r2-a1-sanitizer-contract-resume-r0/run/recompute/analysis-input.json",
+      "byte_length": 6535,
+      "sha256": "2e68be3746b5dc8c2677be02f1b1dd76019a30661784342f36628cc49df0299b",
+      "expected_sha256": "2e68be3746b5dc8c2677be02f1b1dd76019a30661784342f36628cc49df0299b",
+      "pass": true
+    },
+    "original_recompute": {
+      "path": "ignition/evaluation/ignition-229-r1-cli-transfer-replication-r0/source-prereg/tools/recompute.py",
+      "byte_length": 23318,
+      "sha256": "2a81a493b2d40cde023b4017a72c3aa7dfe45dee96fc06e223639fb082902b54",
+      "expected_sha256": "2a81a493b2d40cde023b4017a72c3aa7dfe45dee96fc06e223639fb082902b54",
+      "pass": true
+    },
+    "a1_shallow_copy_byte_identical": true,
+    "r1_frozen_dataset": {
+      "source_commit": "d7c4715d0cdc23b8d2b0bf4c5285ce0ac6d5041b",
+      "manifest_file_count": 73,
+      "verified_file_count": 73,
+      "pass": true
+    },
+    "raw_snapshot": {
+      "workspace_relative_path": "work/a1-recompute-raw",
+      "recreated": false,
+      "expected_files": 18,
+      "verified_files": 18,
+      "extra_files": 0,
+      "pass": true
+    },
+    "evaluator_raw_outputs": {
+      "count": 2,
+      "verified": 2,
+      "pass": true
+    },
+    "evaluator_keys": {
+      "count": 2,
+      "verified": 2,
+      "pass": true
+    },
+    "task228_policy_files": {
+      "count": 6,
+      "verified": 6,
+      "pass": true
+    },
+    "fixed_input_map": {
+      "source_commit": "4ee132e8d50e8805c466cb5d681aaa18c34c9f68",
+      "path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/run/case-input-values-and-route-expectations.json",
+      "byte_length": 9704,
+      "sha256": "b2d44d56aa602e429a8f3ddded61e0b3524b16700a4d35232126a5e264ffa057",
+      "matches_required_sha256": true,
+      "usage": "historical provenance binding; case-input slice is embedded in frozen A1 analysis-input"
+    },
+    "task230_work_found": false
+  },
+  "new_successor_sessions": 0,
+  "new_evaluator_sessions": 0,
+  "historical_statuses_unchanged": {
+    "r1_primary": "STOPPED_PROTOCOL_DEVIATION_NO_SCIENTIFIC_RESULT",
+    "r2": "TASK229_R2_SANITIZER_CONTRACT_NOT_ESTABLISHED",
+    "r2_a1": "TASK229_R2_A1_RECOMPUTE_MISMATCH"
+  }
+}
