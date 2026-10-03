@@ -185,13 +185,15 @@ Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完�
 2. 定义 `EvidenceWindow`：绑定 source path / source digest / snapshot or commit / byte-or-line range / observed_at / evidence role，证据边界由 query 决定而不是预切固定 chunk。
 3. 实现 index-optional 的低成本 prior：现有 search index、alias、路径、关键词、ARN 关系与历史成功检索都只能用于缩小候选空间；任一 prior 缺失或 stale 时必须能回退到 raw source。
 4. 实现有预算的顺序探索与显式 stopping：记录 file reads、token、wall-clock、oracle calls；以“最弱未覆盖 requirement”作为继续/停止依据，预算耗尽时保留 uncertainty，不强行补答案。
-5. 增加 `CurrentScientificUnderstanding` 视图，专门服务科学问题：它不是单篇“最新论文”，而是查询时点的证据综合状态，至少记录 as-of 时间、适用人群/系统、共识与争议、主要支持/反对证据、证据层级、已知时效风险和来源集合。它负责**校准解释**，不能覆盖原始证据，也不能把“新”自动当成“更真”。
+5. 增加 `CurrentScientificUnderstanding` 视图，专门服务科学问题：它不是单篇“最新论文”，而是查询时点的证据综合状态，至少记录 as-of 时间、适用人群/系统、共识与争议、主要支持/反对证据、证据层级、已知时效风险、来源集合以及它相对旧理解发生了什么变化。它负责**校准解释**，不能覆盖原始证据，也不能把“新”自动当成“更真”。这个视图隐含两个强约束：其一，只有当新证据、重复研究、反例、撤稿、指南/共识变化或适用边界变化足以改变旧有结论时，才发生版本迭代，而不是为追逐新鲜度机械刷新；其二，任何 `CurrentScientificUnderstanding` 都必须显式声明为**当前时点的可修订理解，而非永恒真理**，未来可以被后续更充分的证据综合 supersede、downgrade、split 或推翻。
 6. 把成功搜索沉淀成 `RetrievalExperience` / `EvidenceCluster`，但状态固定为 `NONCANONICAL_RETRIEVAL_PRIOR`；必须绑定来源 digest、失效条件、supersession、最后核验时间，来源变化后旧经验只能帮助定位，不能直接复用结论。
 7. Meta-cluster 若存在，只能抽象“怎样找”的检索方法或 routing heuristic，不能抽象成新的事实/机制/理论；它进入方法候选而不是 claim registry。
 8. 采用 hybrid 策略而不是“零索引教条”：稳定高频语料继续用确定性索引/缓存，快速变化或 freshness-sensitive 的材料走 raw evidence navigation。
 9. 先做动态 corpus benchmark：在受控 add/modify/delete 后测 Time-to-First-Query、evidence recall、grounding、stale-answer rate、budget-normalized quality 与全生命周期更新成本，再决定是否注册为 Current operation。
 
-可以把这条关系压缩为：**历史知识负责导航，原始来源负责证据锚定与事实核验，当前最新科学理解负责校准解释；三者都不能替代点火的 claim governance。**
+可以把这条关系压缩为：**历史知识负责导航，原始来源负责证据锚定与事实核验，当前最新科学理解负责校准解释；而“当前”本身就是版本声明，不是终局真理。旧理解只在有足够理由时更新，新理解也始终保留未来被再次改写的义务。三者都不能替代点火的 claim governance。**
+
+建议把这一原则机器化为 `CURRENT_SCIENTIFIC_UNDERSTANDING_IS_VERSIONED_NOT_ETERNAL_TRUTH`，并要求每个版本保留 predecessor、change_reason、evidence_delta、supersession 条件与 rollback/downgrade 路径。
 
 需要特别防止的错误：**知识自进化 ≠ 真值自进化**。Sirchmunk 的 KnowledgeCluster / query embedding / meta-cluster
 对点火最有价值的是“搜索经验如何压缩为下一次的先验”，而不是让历史答案、embedding 相似度、社群或高复用频率
