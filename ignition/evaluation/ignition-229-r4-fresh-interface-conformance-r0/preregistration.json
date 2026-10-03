@@ -7,18 +7,19 @@
     "task230_started": false
   },
   "claim_ceiling": [
-    "live successor can consume the repaired typed binding interface",
+    "live successor can consume the repaired typed binding interface alongside the required R3 reference_execution_json",
     "live successor can preserve explicit missingness in route/interface fields",
     "live successor can emit the required response structure",
-    "live successor route trace can be mechanically compared with the deterministic R3 reference",
-    "observed mechanical interface-conformance rate under this exact run matrix"
+    "live successor route trace can mechanically conform to the deterministic trace supplied in R3 reference_execution_json",
+    "observed mechanical reference-assisted interface-conformance rate under this exact run matrix"
   ],
   "explicit_nonclaims": [
     "answer correctness or quality",
     "policy effectiveness",
     "target compatibility",
     "transfer or causal effect",
-    "generalization, inheritance, Cognitive Evolution, Model-RSI, training benefit"
+    "generalization, inheritance, Cognitive Evolution, Model-RSI, training benefit",
+    "independent route derivation from policy and typed binding without reference assistance"
   ],
   "frozen_entering_state": {
     "formal_repository": "Arvin-liu/when-systems-catch-fire",
@@ -48,7 +49,7 @@
     "receipt_path": "relay/receipts/IGNITION-20261003-229-R4"
   },
   "preregistration_marker": "TASK229_R4_PREREGISTRATION_COMPLETE_EXECUTION_NOT_STARTED",
-  "question": "When a live successor is given the frozen R3 successor prompt, frozen Task228 policy, explicit R1 typed binding, and allowed visible case prose, can it emit a response whose route/interface fields conform mechanically to the frozen R3 deterministic reference contract?",
+  "question": "When a live successor is given the frozen R3 successor prompt, frozen Task228 policy, explicit R1 typed binding, allowed visible case prose, and required `reference_execution_json` (including the deterministic R3 route trace), can it emit a response whose route/interface fields conform mechanically to that supplied reference?",
   "run_matrix": {
     "attempts_per_unit": 1,
     "design": "six frozen Task228 policies, each paired with three frozen case slots A/B/C for L01-L06",
@@ -60,5 +61,15 @@
   },
   "schema_version": "task229-r4-preregistration-r0",
   "status": "FROZEN_NOT_EXECUTED",
-  "task_id": "IGNITION-20261003-229-R4"
+  "task_id": "IGNITION-20261003-229-R4",
+  "interpretation_lock": {
+    "test_type": "REFERENCE_ASSISTED_LIVE_INTERFACE_SERIALIZATION_CONFORMANCE",
+    "reference_payload": "The frozen prompt supplies reference_execution_json, including the deterministic R3 route trace, to the successor.",
+    "pass_ceiling": "A PASS means only that the successor consumed the frozen package and emitted a mechanically conforming response under this prompt.",
+    "not_established": "The successor independently derives the route from policy plus typed binding without reference assistance."
+  },
+  "access_event_disposition": {
+    "prior_events": "R4_PREREG_ACCESS_EVENTS_DISCLOSED_NO_EVIDENCE_OF_TUNING_CONTAMINATION",
+    "reconciliation_path_listing": "DISCLOSED_PATH_ONLY_PENDING_OWNER_GPT_DISPOSITION_BEFORE_POSITIVE_RESULT"
+  }
 }

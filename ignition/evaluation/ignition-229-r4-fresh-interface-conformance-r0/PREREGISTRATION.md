@@ -4,9 +4,9 @@ Status: frozen preregistration package; no live execution has started.
 
 ## Question
 
-When a live successor is given the frozen R3 successor prompt, frozen Task228 policy, explicit R1 typed binding, and allowed visible case prose, can it emit a response whose route/interface fields conform mechanically to the frozen R3 deterministic reference contract?
+When a live successor is given the frozen R3 successor prompt, frozen Task228 policy, explicit R1 typed binding, allowed visible case prose, and required `reference_execution_json` (including the deterministic R3 route trace), can it emit a response whose route/interface fields conform mechanically to that supplied reference?
 
-R4 measures interface execution conformance only. It does not score answer correctness or quality, target compatibility, policy effect, transfer, causal effect, revision quality, generalization, Cognitive Evolution, Model-RSI, or training benefit.
+R4 is a reference-assisted live interface/serialization conformance test. Because the frozen R3 prompt supplies `reference_execution_json`, including the deterministic route trace, a later PASS can establish only that the successor consumed the frozen package and emitted a mechanically conforming response under this prompt. It does not test independent route derivation from policy plus typed binding without reference assistance. R4 does not score answer correctness or quality, target compatibility, policy effect, transfer, causal effect, revision quality, generalization, Cognitive Evolution, Model-RSI, or training benefit.
 
 ## Frozen entering state
 
@@ -56,7 +56,7 @@ Only successor_inputs in execution-inputs.jsonl are sent to a successor. The val
 
 A live-interface pass establishes only mechanical conformance under this exact prompt and matrix. It does not establish that an answer is correct, that a policy helps, or that a route is compatible with a target.
 
-The preregistration access log is in leakage-boundary.md. Its disclosed broad/truncated reads must be dispositioned by Owner/GPT before any positive R4 result is claimed.
+Owner/GPT accepted the previously disclosed access events as `R4_PREREG_ACCESS_EVENTS_DISCLOSED_NO_EVIDENCE_OF_TUNING_CONTAMINATION`; unknown/truncated scope remains unknown. A separate reconciliation-time path-listing event is also disclosed in leakage-boundary.md; it exposed paths only, and no additional Owner/GPT disposition is claimed for it. Owner/GPT disposition of that new event is required before any positive R4 result.
 
 ## Current state
 

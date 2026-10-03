@@ -30,3 +30,17 @@ These events are not silently treated as proof of contamination or proof of no c
 - Do not expose expected trace digests as prose or pass validator-only manifests to the successor.
 - Do not use one R4 output to tune or change any later run.
 - Keep PR #244 Open, Draft, Unmerged, and unchanged.
+
+## Reconciliation addendum — Owner/GPT disposition and interpretation lock
+
+Owner/GPT reviewed the original disclosures above and accepted:
+
+`R4_PREREG_ACCESS_EVENTS_DISCLOSED_NO_EVIDENCE_OF_TUNING_CONTAMINATION`
+
+The broad/truncated PR diff, repository/path metadata, Task230 PR-summary search, shallow/sparse checkout path output, extra materialized R3 subtree files, and interrupted lazy object fetch remain disclosed. Unknown/truncated exposure scope remains unknown; it is not rewritten as proof that no forbidden content was accessed. No evidence was found that those events were used to alter the frozen prompt, policies, typed bindings, thresholds, expected traces, run matrix, or target/evaluator behavior. Those events do not by themselves invalidate the preregistration. Any new forbidden-source access during live execution remains a hard protocol stop.
+
+After that review, a premature `git status` in the incomplete temporary sparse reconciliation worktree emitted a truncated large list of tracked-path names while checkout was still running. The returned output contained path names only; no file bodies were printed or opened through this command. The full path scope is not enumerated. This additional path-listing event was not used to alter the frozen experiment semantics or generated outputs. No additional Owner/GPT disposition is claimed for this new event; it must be reviewed before any positive live R4 result.
+
+## Reference-assisted conformance interpretation lock
+
+The frozen R3 prompt supplies `reference_execution_json`, including the deterministic R3 route trace, to the live successor. R4 is therefore a reference-assisted live interface/serialization conformance test. A later PASS can establish only that the successor consumed the frozen package and emitted a mechanically conforming response under this prompt. It does not establish independent route derivation from policy plus typed binding without reference assistance.
