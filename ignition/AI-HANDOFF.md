@@ -156,6 +156,65 @@ Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完�
 其后迭代方法版本与 Current 标签由 generated Current Snapshot 统一投影（连续阶段快照发布，见 docs/operations/stage-snapshot-publication.md）。
 
 较早的 `1.3.0` 降为 Historical，Q32I 为 Closed。它明确分离 authority 类型、execution capability 与 validation capability，只允许真实、确定性且完整物化声明输出的 producer 为 automatic，只有完整且构件职责相符的命令才是 local validator。Apply 在子进程／写入前必须经统一权威预检；rollback 要按整仓字节、类型、symlink 和 mode 证明完整恢复。交接必须读取 `docs/architecture/incremental-execution.md`，重算 closure、plan 和派生 projection；不能把 cache、Git diff、依赖、图连线、CI 或 artifact 当作现实因果、自我验收或 Current 证明。Q33 启动包已在 1111 准备，但 Q33 与 Q34—Q40 均尚未启动。
+## 2026-10-03 外部研究线索：Sirchmunk / LENS 与下一迭代候选
+
+外部来源：ModelScope Sirchmunk / LENS，论文 `arXiv:2608.16185v2`（2026-08-18）与公开代码仓库
+`modelscope/sirchmunk`。这里只记录对点火的候选启发，不把外部框架、论文结论或实现状态升级为点火 Current 能力。
+
+这项工作的关键不是“不要向量库”本身，而是把检索对象重新定义为**当前原始材料中的查询条件证据窗口**：
+先把问题拆成必须覆盖的原子事实，再用路径、关键词、结构、已有经验等低成本信号形成先验；随后按预算执行
+`propose → observe → update`，每读到一段原文就更新下一步搜索方向；证据充分或预算耗尽即停止。
+历史搜索经验只能帮助下一次更快定位，来源变化时仍必须回到当前原始材料重新核验。
+
+这与点火现有边界有直接咬合：
+
+- 当前 Knowledge Experience 的 `search-index.jsonl`、主题索引和分层阅读是确定性导航投影，适合稳定仓库，但它们不是 query-conditioned 的动态证据定位器。
+- `OPERATING-METHOD.md` 已明确 `MEMORY_IS_RETRIEVAL_HINT_NOT_CURRENT_AUTHORITY`，这恰好可以成为动态检索的核心不变量：历史知识只能做 prior，不能替代 Current source。对科学问题还要增加一层 `CURRENT_SCIENTIFIC_UNDERSTANDING`：用截至查询时点可获得的高质量综述、指南、共识、元分析和必要的最新一手研究校准解释框架、共识/争议位置与时效边界；它同样必须有来源、日期、适用人群/范围和不确定性，不能凭“最新”二字升级为真值。
+- 当前 capability registry 明确承认 source/evidence research 只有 evidence-link validation 与 REOS LIGHT obligation coordination，**没有通用自主检索 operation**；这是一个真实能力缺口，而不是重新命名已有能力。
+- REOS LIGHT 已有 `QuestionContract`、`EvidenceRequest`、obligation ledger 与 typed handoff，可自然承接“问题需求分解 → 证据定位 → 充分性判断”。
+- Adaptive Relational Network 可以承接来源间 linkage / conflict / temporal relation，但仍必须保持原边界：retrieval、similarity、community、reuse 都不等于 truth、integration 或 causality。
+- Runtime / Operational Memory 已有 provenance、supersession、bounded memory 和 budget/retry 基础，可复用为检索轨迹与 warm-prior 容器，而不另造第二个真值库。
+
+候选下一迭代方向（工作名，**不分配 task 编号、不启动 Task230**）：
+
+`QUERY_CONDITIONED_RAW_EVIDENCE_NAVIGATION_R0`
+
+最小目标不是复制 Sirchmunk，而是在点火现有治理下补一条 source-first retrieval plane：
+
+1. 定义 `EvidenceRequirement[]`：把 lookup / comparison / computation / aggregation / synthesis 问题拆成必须覆盖的原子事实需求。
+2. 定义 `EvidenceWindow`：绑定 source path / source digest / snapshot or commit / byte-or-line range / observed_at / evidence role，证据边界由 query 决定而不是预切固定 chunk。
+3. 实现 index-optional 的低成本 prior：现有 search index、alias、路径、关键词、ARN 关系与历史成功检索都只能用于缩小候选空间；任一 prior 缺失或 stale 时必须能回退到 raw source。
+4. 实现有预算的顺序探索与显式 stopping：记录 file reads、token、wall-clock、oracle calls；以“最弱未覆盖 requirement”作为继续/停止依据，预算耗尽时保留 uncertainty，不强行补答案。
+5. 增加 `CurrentScientificUnderstanding` 视图，专门服务科学问题：它不是单篇“最新论文”，而是查询时点的证据综合状态，至少记录 as-of 时间、适用人群/系统、共识与争议、主要支持/反对证据、证据层级、已知时效风险、来源集合以及它相对旧理解发生了什么变化。它负责**校准解释**，不能覆盖原始证据，也不能把“新”自动当成“更真”。这个视图隐含两个强约束：其一，只有当新证据、重复研究、反例、撤稿、指南/共识变化或适用边界变化足以改变旧有结论时，才发生版本迭代，而不是为追逐新鲜度机械刷新；其二，任何 `CurrentScientificUnderstanding` 都必须显式声明为**当前时点的可修订理解，而非永恒真理**，未来可以被后续更充分的证据综合 supersede、downgrade、split 或推翻。
+6. 把成功搜索沉淀成 `RetrievalExperience` / `EvidenceCluster`，但状态固定为 `NONCANONICAL_RETRIEVAL_PRIOR`；必须绑定来源 digest、失效条件、supersession、最后核验时间，来源变化后旧经验只能帮助定位，不能直接复用结论。
+7. Meta-cluster 若存在，只能抽象“怎样找”的检索方法或 routing heuristic，不能抽象成新的事实/机制/理论；它进入方法候选而不是 claim registry。
+8. 采用 hybrid 策略而不是“零索引教条”：稳定高频语料继续用确定性索引/缓存，快速变化或 freshness-sensitive 的材料走 raw evidence navigation。
+9. 先做动态 corpus benchmark：在受控 add/modify/delete 后测 Time-to-First-Query、evidence recall、grounding、stale-answer rate、budget-normalized quality 与全生命周期更新成本，再决定是否注册为 Current operation。
+
+可以把这条关系压缩为：**历史知识负责导航，原始来源负责证据锚定与事实核验，当前最新科学理解负责校准解释；而“当前”本身就是版本声明，不是终局真理。旧理解只在有足够理由时更新，新理解也始终保留未来被再次改写的义务。三者都不能替代点火的 claim governance。**
+
+建议把这一原则机器化为 `CURRENT_SCIENTIFIC_UNDERSTANDING_IS_VERSIONED_NOT_ETERNAL_TRUTH`，并要求每个版本保留 predecessor、change_reason、evidence_delta、supersession 条件与 rollback/downgrade 路径。
+
+需要特别防止的错误：**知识自进化 ≠ 真值自进化**。Sirchmunk 的 KnowledgeCluster / query embedding / meta-cluster
+对点火最有价值的是“搜索经验如何压缩为下一次的先验”，而不是让历史答案、embedding 相似度、社群或高复用频率
+自动进入 canonical knowledge。任何复用都必须服从 source fingerprint、Current-first、claim governance 和
+`K13_ASSERTION_NON_ESCALATION`。
+
+建议顺序：先等当前 Task229-R3 控制链完成；若 Owner 选择这个方向，再做一个 read-only gap audit + synthetic pilot，
+只比较“现有确定性索引”与“raw sequential navigation”的 freshness / evidence coverage / cost，不先改 canonical
+knowledge registry，也不先引入外部向量库或长期 daemon。只有 pilot 证明存在可重复的净增益，才考虑把它注册为
+Research/Knowledge Pack 的新 bounded operation。
+
+## 交互与 Codex 派发约定（Owner preference）
+
+以下约定属于跨会话 handoff，未来新对话恢复点火工作时应先读取并遵守：
+
+- 每次准备启动一个新的 Codex 任务时，GPT 必须先**单独告诉 Owner 会话方式**：`会话：接续当前对话` 或 `会话：新开窗口`。这句话只用于 Owner 的界面操作判断，不应混入 Codex 的任务正文，也不应让 Codex 自己创建、切换、委派或请求新的聊天会话。
+- 给 Codex 的聊天启动指令必须保持短小。详细 phase、hash、branch、测试矩阵、停止条件、claim ceiling、receipt 格式、并行策略和失败处置应写入独立 instruction 文件；聊天里通常只提供 instruction 文件路径、冻结起点、少数关键禁止项和最终停点。
+- Codex 启动指令与 instruction 文件都必须明确：**不得使用会触发 GitHub 邮箱隐私保护的隐私邮箱进行 commit/push**。提交前先核对 Git author/committer 身份；若当前邮箱会触发 GitHub privacy / GH007 类拒绝，必须改用仓库允许的 GitHub noreply 身份或 Owner 已明确允许的提交邮箱，再进行普通 push。不要等 push 被拒绝后才处理。
+- 该邮箱约定只约束提交身份与推送可达性，不授权 force-push、历史重写或绕过 branch protection；仍遵循任务 instruction 中的 Git/PR 边界。
+- 若聊天启动指令与 instruction 文件冲突，以当前 Owner 明示要求与 instruction 文件中的机器可审计边界为准；不要因为聊天中一句简短启动语而自行扩大任务范围。
+
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。
