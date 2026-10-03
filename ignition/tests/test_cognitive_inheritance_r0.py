@@ -21,6 +21,8 @@ from agent_runtime.cognitive_inheritance_r0.src.contracts import (  # noqa: E402
 )
 from tools.validate_cognitive_inheritance_r0 import (  # noqa: E402
     FINAL_STATE,
+    TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_PATH,
+    TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_SHA256,
     TASK217_FREEZE_RELATIVE,
     TASK217_FREEZE_SIDECAR_RELATIVE,
     TASK220_FREEZE_RELATIVE,
@@ -40,6 +42,7 @@ from tools.validate_cognitive_inheritance_r0 import (  # noqa: E402
     task225_projection_chain_coverage,
     task220_source_bytes,
     validate_task225_successor_lock,
+    validate_changed_paths,
     validate_human_results_excluded_prefixes,
     validate_all,
 )
@@ -125,6 +128,56 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertFalse(is_allowed_changed_path("ignition/KNOWLEDGE/UNEXPECTED.md"))
         self.assertFalse(is_allowed_changed_path("ignition/data/publication/fire-seeds/CHANGELOG.jsonl"))
         self.assertFalse(is_allowed_changed_path("ignition/data/agent-federation/build-vs-integrate-policy-r1.json.bak"))
+
+    def test_task229_successor_exception_is_exact_content_bound(self) -> None:
+        relative_path = TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_PATH
+        source_bytes = (ROOT.parent / relative_path).read_bytes()
+        self.assertEqual(hashlib.sha256(source_bytes).hexdigest(), TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_SHA256)
+        self.assertFalse(is_allowed_changed_path(relative_path))
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            repo_root = Path(temp_dir)
+            ignition_root = repo_root / "ignition"
+            ignition_root.mkdir()
+            (repo_root / ".git").mkdir()
+            candidate = repo_root / relative_path
+            candidate.parent.mkdir(parents=True)
+            candidate.write_bytes(source_bytes)
+
+            def validate_single_change(changed_path: str, passes: bool) -> None:
+                completed = subprocess.CompletedProcess(
+                    args=["git", "diff", "--name-only", "BASELINE", "HEAD"],
+                    returncode=0,
+                    stdout=changed_path + "\n",
+                    stderr="",
+                )
+                with patch(
+                    "tools.validate_cognitive_inheritance_r0.subprocess.run",
+                    return_value=completed,
+                ), patch(
+                    "tools.validate_cognitive_inheritance_r0.task217_generated_knowledge_paths",
+                    return_value=set(),
+                ), patch(
+                    "tools.validate_cognitive_inheritance_r0.task217_generated_fire_seed_paths",
+                    return_value=set(),
+                ):
+                    if passes:
+                        validate_changed_paths(ignition_root)
+                    else:
+                        with self.assertRaises(ValidationFailure):
+                            validate_changed_paths(ignition_root)
+
+            validate_single_change(relative_path, passes=True)
+
+            candidate.write_bytes(source_bytes.replace(
+                b"#!/usr/bin/env python3\n",
+                b"#!/usr/bin/env python2\n",
+                1,
+            ))
+            validate_single_change(relative_path, passes=False)
+
+            protected_path = "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+            validate_single_change(protected_path, passes=False)
 
     def test_human_results_isolation_is_exact_and_preserves_unrelated_reports(self) -> None:
         config = json.loads((ROOT / "data/governance/human-results/config.json").read_text(encoding="utf-8"))

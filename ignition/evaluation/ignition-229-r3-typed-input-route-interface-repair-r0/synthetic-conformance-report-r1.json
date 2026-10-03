@@ -1,0 +1,791 @@
+{
+  "all_fixtures_passed_expected_outcome": true,
+  "all_route_rebuilds_byte_deterministic": true,
+  "coverage_fixtures": {
+    "json_and_rebuild": [
+      "nonfinite_json_constant_rejected",
+      "all_present_selector_match"
+    ],
+    "mapping_ids_and_pointers": [
+      "unknown_input_id",
+      "duplicate_input_id",
+      "unresolved_source_pointer",
+      "malformed_json_pointer_escape",
+      "incomplete_mapping_fails_closed"
+    ],
+    "number_and_units": [
+      "unit_mismatch_no_conversion",
+      "negative_zero_matches_number_zero",
+      "largest_finite_number",
+      "integer_source_allowed_as_number",
+      "overflowed_json_number_rejected",
+      "nonfinite_binding_value_rejected"
+    ],
+    "presence_and_scalar_types": [
+      "missing_boolean_is_not_false",
+      "explicit_false_is_present",
+      "explicit_zero_is_present",
+      "zero_is_distinct_from_absence",
+      "empty_string_is_present",
+      "explicit_null_permitted",
+      "empty_string_is_distinct_from_absence",
+      "null_and_missing_are_distinct",
+      "boolean_is_not_integer"
+    ],
+    "provenance_and_prose": [
+      "binding_policy_hash_mismatch",
+      "malformed_source_provenance",
+      "malformed_builder_provenance",
+      "prose_binding_conflict_marker",
+      "vague_prose_does_not_override_binding"
+    ],
+    "routing_and_missingness": [
+      "multiple_selector_matches",
+      "multiple_stop_matches",
+      "stop_selector_conflict",
+      "all_present_fallback",
+      "missing_one_selector_input",
+      "missing_stop_input",
+      "no_match_dominates_missing",
+      "absent_id_trace_contamination",
+      "absent_input_contamination_rejected"
+    ],
+    "trace_integrity": [
+      "preserved_baseline_mismatch",
+      "duplicate_trace_id_fails_schema",
+      "trace_policy_hash_mutation",
+      "trace_binding_hash_mutation",
+      "trace_missing_field_rejected",
+      "trace_extra_field_rejected",
+      "trace_wrong_selected_rule_id",
+      "trace_wrong_selected_action_id"
+    ]
+  },
+  "evaluators_run": 0,
+  "fixture_corpus_sha256": "2bdb3d572124af8717830dc11d0ebb31b38dabe0c95148f126cf97172bc09271",
+  "fixture_count": 49,
+  "negative_fixture_count": 31,
+  "positive_fixture_count": 18,
+  "report_version": "task229-synthetic-route-conformance-report-r1",
+  "results": [
+    {
+      "actual": {
+        "binding_rebuild_sha256": "1b1864481a5dc658ef9235ace331a3669ddd4a05b13337160db5cb938946d6a0",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "all_present_selector_match",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "c96fce2149b01b948ebb3f8c291565341d1c511c928f64f4e4c4c4ba4e1827c9",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "all_present_fallback",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "86b2371ea57415ff84124dffc5e152c47abbc7562a496b3393d14f6f2e0a1a84",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_MODE"
+        ],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "missing_one_selector_input",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "9596a473b5582b63a5cf9961acb84e3e7ed28ef153968956103502723297a4d3",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_ENABLED"
+        ],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "missing_boolean_is_not_false",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "67398cb467afaaf76df5aba73885e2082adb28ea38dde07647cca7d8649daaaa",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "stop",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "explicit_false_is_present",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "67bdf2cf82ad20acbbe26772213ab8196d00f0d7d3056a0ea20d3aa20ed1d123",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_NULLABLE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "explicit_null_permitted",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "TYPE_MISMATCH",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "explicit_null_not_permitted",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "0656d0cd973438aed00398cf24a65a0a8062615a6f2744074cef5a953496f51d",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_STOP_FLAG"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "stop",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "stop_match",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "f44929a38fea2f8068c7a78a8dfee9d3c31164fa2899c077b021bc0ca374ca0a",
+        "build_code": null,
+        "evaluated_input_ids": [],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_STOP_FLAG"
+        ],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "missing_stop_input",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "659055ae59a0bedb707857e877a8a540545ef757f7b0a70509af201f8748ff44",
+        "build_code": null,
+        "execution_code": "ROUTE_AMBIGUOUS",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "multiple_selector_matches",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "0a3e411e2187a8888f3ca73982d3c0245cf0216d12361312d71bc8a13d593d8e",
+        "build_code": null,
+        "execution_code": "ROUTE_AMBIGUOUS",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "stop_selector_conflict",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "UNKNOWN_INPUT_ID",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "unknown_input_id",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "DUPLICATE_INPUT_ID",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "duplicate_input_id",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "TYPE_MISMATCH",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "type_mismatch_no_coercion",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "UNIT_MISMATCH",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "unit_mismatch_no_conversion",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "2274dba329fee932808a6a0ebf01c7bed34045b48a13172fe15987ffd8be4e05",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": "TRACE_SEMANTIC_MISMATCH"
+      },
+      "class": "negative",
+      "fixture_id": "preserved_baseline_mismatch",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "58ab0820c0002adaedf18302b15e8e30accf97220902494dbec36bf8aa552468",
+        "build_code": null,
+        "execution_code": "INTERFACE_CONFLICT",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "prose_binding_conflict_marker",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "UNKNOWN_OPERATOR",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "unknown_operator_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "UNKNOWN_TYPE",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "unknown_policy_type_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "MAPPING_POINTER_UNRESOLVED",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "unresolved_source_pointer",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "MAPPING_INCOMPLETE",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "incomplete_mapping_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "d963a42cae16835c0a250a4cb123e2deeb559e52ad95cc54b175b408aca403bd",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_MODE"
+        ],
+        "route_type": "fallback",
+        "validator_code": "TRACE_SEMANTIC_MISMATCH"
+      },
+      "class": "negative",
+      "fixture_id": "absent_id_trace_contamination",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "6f75c4b07b149518c7d66d5e7770bea61adf29b2d6a9538195a48d3cfd317e2b",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_MODE"
+        ],
+        "route_type": "fallback",
+        "validator_code": "TRACE_SCHEMA_FAILURE"
+      },
+      "class": "negative",
+      "fixture_id": "duplicate_trace_id_fails_schema",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "c6b8c6e875a81f6b692cea187a0f7b436a74530ab360d59d3989e5477f1bad70",
+        "build_code": null,
+        "evaluated_input_ids": [],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_NULLABLE"
+        ],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "null_and_missing_are_distinct",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "fa31804eb7edae12a20da4b7d4598d9a3eb9509d7a58527e5e4f12d551776c0f",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_MODE"
+        ],
+        "route_type": "stop",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "no_match_dominates_missing",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "41537f610fa9d19b63b28f6478f1a38ed23014e1f125b418a8edf34d5bdbdd89",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ZERO"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "explicit_zero_is_present",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "c4aef302403f3e6b13b93831c047f022051fcd058eeedb1f1a8f293aed7b5dc7",
+        "build_code": null,
+        "evaluated_input_ids": [],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_ZERO"
+        ],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "zero_is_distinct_from_absence",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "4b09f423d75a0e7183eb374f706ae856f75715c2721fb72d97690945297de99b",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_EMPTY_TEXT"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "empty_string_is_present",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "TYPE_MISMATCH",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "boolean_is_not_integer",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "35acdd72e00347ba0b2d1ed658a4871fc8eb481204d72a3c6ee9adb2976c485a",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_NUMBER"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "negative_zero_matches_number_zero",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "b3b3b68b66111b42e0429f97d8e930a65f4a0981576ceeb5fb45838b2a7f0d9a",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_NUMBER_MAX"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "largest_finite_number",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "TYPE_MISMATCH",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "overflowed_json_number_rejected",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "build_code": "MAPPING_POINTER_INVALID",
+        "execution_code": null,
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "malformed_json_pointer_escape",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "aff93bf52ab7356f8d579f682ad7cf05aed5187b9a61352cf0b1ebffb24e6dc7",
+        "build_code": null,
+        "execution_code": "MISSINGNESS_MISMATCH",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "absent_input_contamination_rejected",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "1f08fe4759a58d74092d02f2ea082a257452d73b4b6551512b68f72b210c1774",
+        "build_code": null,
+        "execution_code": "POLICY_HASH_MISMATCH",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "binding_policy_hash_mismatch",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "70f1c776a8c1cbcb5ad6e70f3c27df2beca323a42604dfd774fd44d0c3919ce8",
+        "build_code": null,
+        "execution_code": "BINDING_PROVENANCE_INVALID",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "malformed_source_provenance",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "5394f29ae7818566a242e2a7d4b2246db2517ed16098b61ac476126ab8209b00",
+        "build_code": null,
+        "execution_code": "TYPE_MISMATCH",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "nonfinite_binding_value_rejected",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "3a6f79bc91391772c9ae28472ea513c1362e25caf401847db8bda68d62318cf2",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": "TRACE_SEMANTIC_MISMATCH"
+      },
+      "class": "negative",
+      "fixture_id": "trace_policy_hash_mutation",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "bc1d72fd544ea16eb4fa5de27b9800bb497ea7fd9f404d9e3e28823a8216a73a",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": "TRACE_SEMANTIC_MISMATCH"
+      },
+      "class": "negative",
+      "fixture_id": "trace_binding_hash_mutation",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "1000f4564803a88646eaa1bd0ca0199c38376df48627f40552cbcd15645851d6",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": "TRACE_SCHEMA_FAILURE"
+      },
+      "class": "negative",
+      "fixture_id": "trace_missing_field_rejected",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "ae466616d2e539a37399fcf0b61a50bb17ce66ed49124625fc78aa58d1e6c453",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": "TRACE_SCHEMA_FAILURE"
+      },
+      "class": "negative",
+      "fixture_id": "trace_extra_field_rejected",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "bd6e8e8ec43b496da4a671aa85b5016e269a43956f7308ed293e73a0d5a08a10",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": "TRACE_SEMANTIC_MISMATCH"
+      },
+      "class": "negative",
+      "fixture_id": "trace_wrong_selected_rule_id",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "ff0fe35cf293381f87b881f33117a86ce236f0d38d3fc831dc8b5651939b3336",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": "TRACE_SEMANTIC_MISMATCH"
+      },
+      "class": "negative",
+      "fixture_id": "trace_wrong_selected_action_id",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "a5c6a9f604106c0a188d712c163441e307641008f83ba066bca8600bd9768182",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_ENABLED",
+          "SYN_MODE"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "vague_prose_does_not_override_binding",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "load_code": "INVALID_JSON_VALUE"
+      },
+      "class": "negative",
+      "fixture_id": "nonfinite_json_constant_rejected",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "4c0037dc6fb639d680774bd724e6d993ab8778bb18d8f021bfa783a0333160d9",
+        "build_code": null,
+        "evaluated_input_ids": [],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [
+          "SYN_EMPTY_TEXT"
+        ],
+        "route_type": "fallback",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "empty_string_is_distinct_from_absence",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "32550971cbef923d59bb425ddea6f5274f18fd8e65675f4912fabf9fbf7437e7",
+        "build_code": null,
+        "evaluated_input_ids": [
+          "SYN_NUMBER"
+        ],
+        "execution_code": null,
+        "execution_status": "ROUTE_TRACE_READY",
+        "missing_input_ids": [],
+        "route_type": "selector",
+        "validator_code": null
+      },
+      "class": "positive",
+      "fixture_id": "integer_source_allowed_as_number",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "b67f6b1823dc2f851fc6cb5faccac17de0458b82786042b8312048fd0e72be70",
+        "build_code": null,
+        "execution_code": "BINDING_PROVENANCE_INVALID",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "malformed_builder_provenance",
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "binding_rebuild_sha256": "552c06a3da558f133f415dd06a2506470494ead6ad969bca95b72604e4f0532e",
+        "build_code": null,
+        "execution_code": "ROUTE_AMBIGUOUS",
+        "execution_status": "FAIL_CLOSED",
+        "validator_code": null
+      },
+      "class": "negative",
+      "fixture_id": "multiple_stop_matches",
+      "status": "PASS"
+    }
+  ],
+  "runner_sha256": "32f9b8d8f8252ffb408ca6f1859684bd357c7bf213eebce8556406fcec757a1a",
+  "successor_sessions_run": 0,
+  "target_or_evaluator_material_in_fixture_corpus": false
+}
