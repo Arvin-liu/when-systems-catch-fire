@@ -1,0 +1,411 @@
+{
+  "case_order": "lineage ascending L01-L06; within each lineage A, B, C",
+  "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+  "historical_case_prose_used": false,
+  "invocations_per_unit": 1,
+  "neutral_case_prose": "No narrative case details are supplied beyond the explicit typed binding.",
+  "run_unit_count": 18,
+  "schema_version": "task229-r4-run-matrix-r0",
+  "source_r3_head": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+  "units": [
+    {
+      "binding_sha256": "4f15ce6ad7b7bb9ce05fbfae20278694ffbd3c37d9d97fab234f54af0b9e109a",
+      "case_id": "A",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "e1853890b8a902f6d0258019ad0b75db353e026b5cc5215bf7119c9ce8c638e5",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L01",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F01_A",
+      "policy_sha256": "db786b0d68c8955cc1354c325aaa528bcc2e88915e75dc593fa3e9475b5c2410",
+      "present_input_ids": [
+        "F01A_BEARING_RELATION",
+        "F01A_MEASUREMENT_VALID",
+        "F01A_SURFACE_PATTERN"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "518ee430c1db5e6ec48c3a52a36e88827ade1b39b9b3776f1d010f9bf060bf53",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L01-A",
+      "source_case_binding_provenance_sha256": "9174d2d10f794d848676fdb116daf8d04d94fa825fe6c52486244f1963a8619d"
+    },
+    {
+      "binding_sha256": "6ade34ee126a5f503d18ca0a890aa6b5ae74b35bff164039bf5d95f26537187b",
+      "case_id": "B",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "b71a319581db8fe3875105a4612ebb8e25701142393bd9d90d5ff3600b0c6354",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L01",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F01_A",
+      "policy_sha256": "db786b0d68c8955cc1354c325aaa528bcc2e88915e75dc593fa3e9475b5c2410",
+      "present_input_ids": [
+        "F01A_BEARING_RELATION",
+        "F01A_MEASUREMENT_VALID",
+        "F01A_SURFACE_PATTERN"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "f721ba5cab43778beddeffeff69bae8a96b2a4792b62dad2d0eae39e635dab8f",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L01-B",
+      "source_case_binding_provenance_sha256": "ffb5bc5df9c0b152fdb3e607a3cd2e832d764ca889b145470acef20bc542c7b3"
+    },
+    {
+      "binding_sha256": "755bb1b1e2a378fd826a0288ba5ba08906dc90465278990af8943cbf17315293",
+      "case_id": "C",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "102e01ee938c173a3b002df01115f22dcb30546d071b44fa3b786c9047222d3c",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L01",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F01_A",
+      "policy_sha256": "db786b0d68c8955cc1354c325aaa528bcc2e88915e75dc593fa3e9475b5c2410",
+      "present_input_ids": [
+        "F01A_BEARING_RELATION",
+        "F01A_MEASUREMENT_VALID",
+        "F01A_SURFACE_PATTERN"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "2c82607ba3ada707a7b035b3242bbb9dd0ff2ea2cba54e5a18cb91020e73196c",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L01-C",
+      "source_case_binding_provenance_sha256": "39036b5006fd2a12a2f61d315f05ef75ec81ed8b7507cbcb2f7031f4554b52bb"
+    },
+    {
+      "binding_sha256": "0fb71d4c9ef0ed0c3398ce007accbff47d4b73bab94cc8dacc0edcc0a830959f",
+      "case_id": "A",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "d6a1595b597f78039b2b88c79b58d14df52d41a08ae29da547e3d55f74506c69",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L02",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F01_B",
+      "policy_sha256": "f64bc598c3d37309a7519c8e19976d3f439c9e1715484fea3d9ed8e6788d93f5",
+      "present_input_ids": [
+        "F01B_MEASUREMENT_VALID",
+        "F01B_PAIRED_READING_PATTERN",
+        "F01B_SURFACE_COVERAGE_COMPLETE"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "136a4d33dffcdba18365fde56c90df55bb30f765c636d876851d06220596d80a",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L02-A",
+      "source_case_binding_provenance_sha256": "37a121e6c6d088d5bbd833628e364d07a62b96c24cbf6a5affdde6d5e081d9fc"
+    },
+    {
+      "binding_sha256": "d13b42ddd6c343bbcbb3a323d9d4fa208fd0dbfb8b4455080349bc0c00657b02",
+      "case_id": "B",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "e666f2f7d14241e39e3eeb315124e8debe5d1786029e1d7d27529b1867637453",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L02",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F01_B",
+      "policy_sha256": "f64bc598c3d37309a7519c8e19976d3f439c9e1715484fea3d9ed8e6788d93f5",
+      "present_input_ids": [
+        "F01B_MEASUREMENT_VALID",
+        "F01B_PAIRED_READING_PATTERN",
+        "F01B_SURFACE_COVERAGE_COMPLETE"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "bb111037b7b65d2275040efd4b0e29179284908dbadb91db8818197f15d7d3b0",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L02-B",
+      "source_case_binding_provenance_sha256": "32b30bc283777269b64782924c209b0c3f43522007e1fce774212d08f0a7894b"
+    },
+    {
+      "binding_sha256": "c3e89837008c4811cb6b635489ade392ba7402dfc694d8b5e88a7ffcda45330f",
+      "case_id": "C",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "a029de5e92e907128869fa6e4d84005e701fdb110224fafcf7926eb746ba8327",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L02",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F01_B",
+      "policy_sha256": "f64bc598c3d37309a7519c8e19976d3f439c9e1715484fea3d9ed8e6788d93f5",
+      "present_input_ids": [
+        "F01B_MEASUREMENT_VALID",
+        "F01B_PAIRED_READING_PATTERN",
+        "F01B_SURFACE_COVERAGE_COMPLETE"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "865231b75476428502ac32dfe565b107a528e0529f35dc38da4c44c73e85d0d2",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L02-C",
+      "source_case_binding_provenance_sha256": "ed794a4a9e9272f52f20153e674d1b13264ada3e56acf49bf6dad1d650a78037"
+    },
+    {
+      "binding_sha256": "114d561876300d631977c25502b8ad0c2b4aeb66b5abe5dfbac63d2353dd2a7c",
+      "case_id": "A",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "6505497de8ad57928486fe1a0108e7b90f8b0866f1f5d857f430429ccd0ce7d4",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L03",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F02_A",
+      "policy_sha256": "e4fd07ae2f96bd31ddf9422de43d403e80aebd264fb0b1ca0be618598fc3744c",
+      "present_input_ids": [
+        "F02A_COMPOSITION_PATTERN",
+        "F02A_MEASUREMENT_VALID"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "853e37aae94a71259c303f18f934ae7d978c5e2f56164cae6e3c121802d56fe5",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L03-A",
+      "source_case_binding_provenance_sha256": "36ffa49f97035a4ce22e70a3cdbb6eaebca6b36d19ddd2285a6623cb00a9bfd6"
+    },
+    {
+      "binding_sha256": "836a1d66fb30a1784fabe5fb701b510c8110caa35133b91c89c7d85c0dcc9ec7",
+      "case_id": "B",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "f27007889b0e433c3d2382ff08cb679bb1dbac06c4c86cd67213b6499a60f377",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L03",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F02_A",
+      "policy_sha256": "e4fd07ae2f96bd31ddf9422de43d403e80aebd264fb0b1ca0be618598fc3744c",
+      "present_input_ids": [
+        "F02A_COMPOSITION_PATTERN",
+        "F02A_MEASUREMENT_VALID"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "279a8b837d5f47e1a642da0eec09b75b3900bbae512567ba9761fe637bd1eac9",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L03-B",
+      "source_case_binding_provenance_sha256": "1490a8164dc9464b50f89ac8f08b07a7d833bc3f56457f01d5232ac1567d4a64"
+    },
+    {
+      "binding_sha256": "ddd4571b08280a457201f47570109c7d0fb38251f80cbfbcd9e6bdc29c45d32a",
+      "case_id": "C",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "7575869879af627fe8c3788f39cf39a8c6a48a85c8a2dc79f57f254ea9924a4d",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L03",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F02_A",
+      "policy_sha256": "e4fd07ae2f96bd31ddf9422de43d403e80aebd264fb0b1ca0be618598fc3744c",
+      "present_input_ids": [
+        "F02A_COMPOSITION_PATTERN",
+        "F02A_MEASUREMENT_VALID"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "f6ddc672c6ff039a84b9c28c1c9f706aded7bef4addd77b0632dd397b138d7bb",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L03-C",
+      "source_case_binding_provenance_sha256": "7d3c3cb34929611fd1f9c3b501bd1cb95495374f2f1f5d5f963f6e12ebd99557"
+    },
+    {
+      "binding_sha256": "aa950e4033c1af613f7e9d5af76e086500c6362ff7ef538adce59e67c1e4a7a7",
+      "case_id": "A",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "b9b33ddfa83c646477e112d3a0c5a54f9447d02b4b06f8ca6d1724c00ebb18e4",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L04",
+      "missing_input_ids": [
+        "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+      ],
+      "policy_id": "POLICY_F02_B",
+      "policy_sha256": "ac66d15487b8ae93b7353ab07ddb4230eb49b643370da92750db68b2a5ec371c",
+      "present_input_ids": [
+        "F02B_COMPOSITION_REPRODUCIBLE",
+        "F02B_MEASUREMENT_VALID"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "295ce30afb59f3b7e1b4f216dd67b8002f5c684bd04cd2781593a48f0fb27645",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L04-A",
+      "source_case_binding_provenance_sha256": "731b0998bcd52ded27099547d924935bd56c4f1cbb0fbff679a7a9cb4a140975"
+    },
+    {
+      "binding_sha256": "fcddf9af458f326867ea484c049ff5f9f2850f3d1262cc0baf09c826ab001b33",
+      "case_id": "B",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "d5caab4574b16da58cfcb5ac2147afbadaadaf77c18793ca255df89857832d28",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L04",
+      "missing_input_ids": [
+        "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+      ],
+      "policy_id": "POLICY_F02_B",
+      "policy_sha256": "ac66d15487b8ae93b7353ab07ddb4230eb49b643370da92750db68b2a5ec371c",
+      "present_input_ids": [
+        "F02B_COMPOSITION_REPRODUCIBLE",
+        "F02B_MEASUREMENT_VALID"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "614076d1078d3efa0c3a85b8ee71c22133ad0077cd841241fb703adf43de30bd",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L04-B",
+      "source_case_binding_provenance_sha256": "d655fe52ee3215b01405a5c123f3afdfc70ed517d40f035fc891ec3aee0e1fcc"
+    },
+    {
+      "binding_sha256": "9ed6b0491757db30e3e599b6fa98a0d79696c285fea94862339e3d90b1281bca",
+      "case_id": "C",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "c49d564b579890ecc29274934e9c81e155e10206f805d511f22144801a7f886d",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L04",
+      "missing_input_ids": [
+        "F02B_GRAVIMETRIC_REPLICATES_AGREE"
+      ],
+      "policy_id": "POLICY_F02_B",
+      "policy_sha256": "ac66d15487b8ae93b7353ab07ddb4230eb49b643370da92750db68b2a5ec371c",
+      "present_input_ids": [
+        "F02B_COMPOSITION_REPRODUCIBLE",
+        "F02B_MEASUREMENT_VALID"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "bd758028ea50fe972cec2f0a24280e22d32817ae3f939f998971ddf08faceeab",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L04-C",
+      "source_case_binding_provenance_sha256": "900c108cbab942ac7c5b71a384ac43ef98220d64ff6125f8583281f1dd9c6be3"
+    },
+    {
+      "binding_sha256": "23bd3efa6291488ee364b8c5551bd9deae475b2ca568fe66c5550b9d7ad3c4b6",
+      "case_id": "A",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "90a2754c0e4c5c04ebaa0f4773d28766d7a2a2292f5ad2f2b85c5b1643da87ef",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L05",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F03_A",
+      "policy_sha256": "17a338279f13bbe716bc21cdbc90a7592a21b7024cb18b601f9dcb9b6ddbc4a9",
+      "present_input_ids": [
+        "F03A_FORMULATION_GROUP",
+        "F03A_MEASUREMENT_VALID",
+        "F03A_PULSE_PATTERN"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "6a5d95ebcab63f5760f863afecb0f4d071adacada5e3f51c3c74a48530783a0b",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L05-A",
+      "source_case_binding_provenance_sha256": "a1c38cb046ac6d3a9440668e19225a43ec26e49517a8cdacb2914eea4922a74c"
+    },
+    {
+      "binding_sha256": "d1afb81a7eef60f819c4996f804725dee8465d862d49af9c845c370aa7be5ec2",
+      "case_id": "B",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "aa5a492a2cd45274041c45af1fbd2ca78dad9f664df2e6c5943e5e33079877ba",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L05",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F03_A",
+      "policy_sha256": "17a338279f13bbe716bc21cdbc90a7592a21b7024cb18b601f9dcb9b6ddbc4a9",
+      "present_input_ids": [
+        "F03A_FORMULATION_GROUP",
+        "F03A_MEASUREMENT_VALID",
+        "F03A_PULSE_PATTERN"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "2741b46f8f001188afed33fc3f013bfbfb8fedca245b023ae172fad013275ee2",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L05-B",
+      "source_case_binding_provenance_sha256": "232ba0e68450c260e92bf7767638186708aa8a29739c6172e4483ee60b975974"
+    },
+    {
+      "binding_sha256": "25cd5aea73d4d75801206bf2ffe7c895069608c15fdf72c3a117dfd4832f9e96",
+      "case_id": "C",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "a13f894605f3809c3893912224d235644939b96d91f008702a18ae1e258f2652",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L05",
+      "missing_input_ids": [],
+      "policy_id": "POLICY_F03_A",
+      "policy_sha256": "17a338279f13bbe716bc21cdbc90a7592a21b7024cb18b601f9dcb9b6ddbc4a9",
+      "present_input_ids": [
+        "F03A_FORMULATION_GROUP",
+        "F03A_MEASUREMENT_VALID",
+        "F03A_PULSE_PATTERN"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "2323e5527244b3245e7a1599e1a55d674bec618eeef1db1f96376dfa68ad68cc",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L05-C",
+      "source_case_binding_provenance_sha256": "df650ccc9c4c74b9e0df8bca4c920268ddc0f5e63e5846eff2d179c50e1aea9b"
+    },
+    {
+      "binding_sha256": "669e360f16c03ef17bad077561af746e13e704913eced11757682acfc73e415c",
+      "case_id": "A",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "2ae60d159d35c91a631cab7c07e66686a32ae35977548149b49695bc167fc44e",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L06",
+      "missing_input_ids": [
+        "F03B_ASSAY_REPLICATES_RECONCILE"
+      ],
+      "policy_id": "POLICY_F03_B",
+      "policy_sha256": "d248c7809edc0fd739c226100179d1e56d5294db92148831efac8fda16d53841",
+      "present_input_ids": [
+        "F03B_HIGH_RATE_TRACE_COMPLETE",
+        "F03B_MEASUREMENT_VALID"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "d18beba61ce8f8b25b36be34a5732a90a887f169b654c4c44298a151b71cea6d",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L06-A",
+      "source_case_binding_provenance_sha256": "3055438cec8a40ba35b9f9b9914702f7a01d1e0ce8e2bb4f1b0e13b4b8b65891"
+    },
+    {
+      "binding_sha256": "2a6acd4828b83eca18ad3e46a661337b6772f96384a375a229571ee678015d66",
+      "case_id": "B",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "415d703a060bec6121f3e2fc379949e13356f4f1036f8b09a2319554149e4713",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L06",
+      "missing_input_ids": [
+        "F03B_ASSAY_REPLICATES_RECONCILE"
+      ],
+      "policy_id": "POLICY_F03_B",
+      "policy_sha256": "d248c7809edc0fd739c226100179d1e56d5294db92148831efac8fda16d53841",
+      "present_input_ids": [
+        "F03B_HIGH_RATE_TRACE_COMPLETE",
+        "F03B_MEASUREMENT_VALID"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "56b160e663ab4cd080e66a0b82e98627522de610db17068e8076b5241318dbe1",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L06-B",
+      "source_case_binding_provenance_sha256": "bac2d967b88584c720b692c72014a9448919069ed9a0af814ecad75983f33562"
+    },
+    {
+      "binding_sha256": "fbe3e687a71180b9d4d52400cc1598e86a56060dbf30f43cb4d367abe8725246",
+      "case_id": "C",
+      "case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "expected_deterministic_route_trace_sha256": "794fe5d8310fb2ce7d670bfa3c7663be5c6a24dfca08b0f4ba3cb762b263eacc",
+      "expected_reference_status": "ROUTE_TRACE_READY",
+      "lineage_id": "L06",
+      "missing_input_ids": [
+        "F03B_ASSAY_REPLICATES_RECONCILE"
+      ],
+      "policy_id": "POLICY_F03_B",
+      "policy_sha256": "d248c7809edc0fd739c226100179d1e56d5294db92148831efac8fda16d53841",
+      "present_input_ids": [
+        "F03B_HIGH_RATE_TRACE_COMPLETE",
+        "F03B_MEASUREMENT_VALID"
+      ],
+      "prompt_template_sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "reference_execution_sha256": "2397f39f07d3747d5ef4401e620b101467276db510086d50e50deaba76258a69",
+      "response_schema_sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "route_trace_schema_sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "run_id": "R4-L06-C",
+      "source_case_binding_provenance_sha256": "0e1a2620f3c08adafb9929aa2eb7c992bb9a5d2bdc6468ec2f9f4d64dd98a552"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "admission_rule": "Only exact path and SHA-256 entries in allowed-input-manifest.json may be read for R4 input construction. If a necessary source cannot be mechanically separated from a forbidden class, stop for Owner/GPT disposition.",
+  "default": "DENY",
+  "forbidden_prompt_context": [
+    "expected trace as prose",
+    "run-matrix validator digest",
+    "prior R4 output or another unit response",
+    "post-hoc repair suggestions",
+    "hidden preregistration analysis"
+  ],
+  "forbidden_source_classes": [
+    "target success labels",
+    "evaluator score sheets or outputs",
+    "sealed target criteria",
+    "target-derived prompt tuning",
+    "historical evaluator commentary",
+    "answer-quality adjudication material not needed for interface mechanics",
+    "data used solely to optimize compatibility with target scoring",
+    "R1/R2/A1/A2 judgments or historical route-failure labels",
+    "historical failed successor outputs",
+    "evaluator feedback or target-answer text"
+  ],
+  "no_recursive_discovery": true,
+  "no_target_tuning": true,
+  "schema_version": "task229-r4-forbidden-input-manifest-r0"
+}

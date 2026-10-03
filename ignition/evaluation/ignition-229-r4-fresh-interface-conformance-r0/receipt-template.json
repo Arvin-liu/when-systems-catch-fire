@@ -1,0 +1,22 @@
+{
+  "artifact_hashes": {},
+  "evaluator_runs": 0,
+  "formal_pr": {
+    "base_branch": "work/IGNITION-20261002-229-R3-typed-input-route-interface-repair-r0",
+    "branch": "work/IGNITION-20261003-229-R4-fresh-interface-conformance-prereg-r0",
+    "head_sha": null,
+    "number": null,
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "url": null
+  },
+  "live_successor_runs": 0,
+  "next_direction": null,
+  "note": "Populate only from verified published preregistration state. This template asserts no result.",
+  "outcomes": [],
+  "preregistration_marker": null,
+  "r4_execution_started": false,
+  "status": "TEMPLATE_ONLY_NO_EXECUTION_RESULT",
+  "task230_started": false,
+  "task_id": "IGNITION-20261003-229-R4",
+  "template_version": "task229-r4-preregistration-receipt-template-r0"
+}

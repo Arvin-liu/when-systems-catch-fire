@@ -1,0 +1,12 @@
+d5c2aab6cdaef376d30365f23adae007ac2e629b172df3d2eed6a63ef0a6fdc9  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/PREREGISTRATION.md
+dbcc18ca16cf13e4c8e4673e275b2213505b38a987ee58932ea8d3ab66f5c409  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/allowed-input-manifest.json
+3cd0fea03a44a06620d4ee737562e390e1943e23507724972cf671ba8ccbfb64  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/execution-inputs.jsonl
+cc709fa7b3b718faf0a19e5ca53b13c7e326fe7cb966daf9d320a7d070a48baa  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/execution-manifest.json
+2f9792036b3eec98be34c0ebe587cc995d147d1e70a9d439529d37f0ac911bff  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/forbidden-input-manifest.json
+4e8a5abb3832acad5ae2bd9f7da824f83e548108d85ee8f5120959a1a2c8f2fb  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/future-execution-instructions.md
+e52a8104447135e1ff1f51959bb6e277db796d6a23746f7b47a7e2dbe6b11e51  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/leakage-boundary.md
+1e287545098ced1138802588d249719783ece114e10ec3d7916f1536fc6c18ed  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/mechanical-outcome-contract.json
+9242a2ca11129a247abd604f93f02ee41984b6a68ccd487404bd7bb88b325588  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/preregistration.json
+dd070f1ee804f211f59b5286d25ef15ff14257c9c54e05d9292fc3d546618c9b  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/receipt-template.json
+36b935cec936f33cf09b88bfddade161b91ff753f9e22fe0ad853ce00d0f98ec  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/run-matrix.json
+ff69400e91b25cd8c0ae8d4ac10d0c472f41b3be80e70bde3502dd33e417ba52  ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/tools/build_frozen_execution_package.py
