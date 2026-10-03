@@ -52,6 +52,15 @@ TASK225_SUCCESSOR_SOURCE_SHA256 = "054b1fffead021954873c6859dc668763d15914d81443
 TASK225_TASK220_SOURCE_SHA256 = "53739d2ecac1e391dd04cbb441b8057725508d46a8c4b8202cafdb53246c0716"
 TASK225_FIRE_SEED_CENSUS_PATH = "ignition/data/publication/fire-seeds/seed-census.json"
 TASK225_FIRE_SEED_CENSUS_SHA256 = "4e396ca2aeb6f862fec94165b8517d8c6354d9a2cc6359997973ad704457c31d"
+TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_PATH = (
+    "ignition/tools/foundation/adjudicate_nonfunction_claims.py"
+)
+TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_SHA256 = (
+    "f089743b3e07b1ed3b63027e6d0b0e3846a10cffba88487ab3a6d4b917f21e99"
+)
+# Provenance: the exact Task229-R3 admission-before-read safety repair landed
+# in 4f79a8f988ee11d461e41e025c4fc3644cce7a4f. This is a successor-compatible
+# exception for those exact bytes, not a Task179 allowlist expansion.
 TASK225_SUCCESSOR_PARENT_TASK = "IGNITION-20260926-220"
 TASK225_SUCCESSOR_PARENT_COMMIT = "8989a7c58e602f1e02c5de95af1cde418ad827a9"
 TASK225_SUCCESSOR_PROVENANCE = {
@@ -326,6 +335,7 @@ def validate_changed_paths(root: Path) -> None:
     unexpected = [
         path for path in changed
         if not is_allowed_changed_path(path, exact_extra_paths=task217_projection_paths)
+        and not is_task229_admission_before_read_successor(path, root.parent)
     ]
     require(not unexpected, f"R0 changed protected or out-of-scope paths: {unexpected}")
 
@@ -702,6 +712,24 @@ def validate_foundation_discovery_boundary(root: Path, r0: Path) -> int:
 def is_allowed_changed_path(path: str, exact_extra_paths: set[str] | frozenset[str] = frozenset()) -> bool:
     """Keep R0 changes bounded while recognizing the typed evaluation surface."""
     return path in ALLOWED_CHANGED_FILES or path.startswith(ALLOWED_CHANGED_PREFIXES) or path in exact_extra_paths
+
+
+def is_task229_admission_before_read_successor(path: str, repo_root: Path) -> bool:
+    """Admit only Task229-R3's exact admission-before-read safety repair bytes.
+
+    The protected generator remains absent from the general R0 allowlist.
+    Every other path, missing file, symlink, or content change fails closed.
+    """
+    if path != TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_PATH:
+        return False
+    candidate = repo_root / TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_PATH
+    try:
+        if candidate.is_symlink() or not candidate.is_file():
+            return False
+        digest = hashlib.sha256(candidate.read_bytes()).hexdigest()
+    except OSError:
+        return False
+    return digest == TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_SHA256
 
 
 def validate_human_results_excluded_prefixes(prefixes: Any) -> None:
