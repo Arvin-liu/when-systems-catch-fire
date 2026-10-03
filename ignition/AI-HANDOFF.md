@@ -205,6 +205,16 @@ Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完�
 knowledge registry，也不先引入外部向量库或长期 daemon。只有 pilot 证明存在可重复的净增益，才考虑把它注册为
 Research/Knowledge Pack 的新 bounded operation。
 
+## 交互与 Codex 派发约定（Owner preference）
+
+以下约定属于跨会话 handoff，未来新对话恢复点火工作时应先读取并遵守：
+
+- 每次准备启动一个新的 Codex 任务时，GPT 必须先**单独告诉 Owner 会话方式**：`会话：接续当前对话` 或 `会话：新开窗口`。这句话只用于 Owner 的界面操作判断，不应混入 Codex 的任务正文，也不应让 Codex 自己创建、切换、委派或请求新的聊天会话。
+- 给 Codex 的聊天启动指令必须保持短小。详细 phase、hash、branch、测试矩阵、停止条件、claim ceiling、receipt 格式、并行策略和失败处置应写入独立 instruction 文件；聊天里通常只提供 instruction 文件路径、冻结起点、少数关键禁止项和最终停点。
+- Codex 启动指令与 instruction 文件都必须明确：**不得使用会触发 GitHub 邮箱隐私保护的隐私邮箱进行 commit/push**。提交前先核对 Git author/committer 身份；若当前邮箱会触发 GitHub privacy / GH007 类拒绝，必须改用仓库允许的 GitHub noreply 身份或 Owner 已明确允许的提交邮箱，再进行普通 push。不要等 push 被拒绝后才处理。
+- 该邮箱约定只约束提交身份与推送可达性，不授权 force-push、历史重写或绕过 branch protection；仍遵循任务 instruction 中的 Git/PR 边界。
+- 若聊天启动指令与 instruction 文件冲突，以当前 Owner 明示要求与 instruction 文件中的机器可审计边界为准；不要因为聊天中一句简短启动语而自行扩大任务范围。
+
 ## 许可边界
 
 当前分发版本采用分层许可。核心可执行软件为 BUSL-1.1 并在 Change Date 后转为 AGPL-3.0-or-later；原创文档/报告为 CC BY-NC-SA 4.0；价值宪章和一般治理原则为 CC BY-SA 4.0；公开接口与互操作 schema 为 Apache-2.0。许可作用域以根 LICENSE 与 LICENSES/README.md 为准；历史 MIT 版本权利不追溯撤销。
