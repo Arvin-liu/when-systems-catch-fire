@@ -41,6 +41,8 @@ The broad/truncated PR diff, repository/path metadata, Task230 PR-summary search
 
 After that review, a premature `git status` in the incomplete temporary sparse reconciliation worktree emitted a truncated large list of tracked-path names while checkout was still running. The returned output contained path names only; no file bodies were printed or opened through this command. The full path scope is not enumerated. This additional path-listing event was not used to alter the frozen experiment semantics or generated outputs. No additional Owner/GPT disposition is claimed for this new event; it must be reviewed before any positive live R4 result.
 
+A later targeted fetch to create the missing local tracking ref for the reconciliation head also auto-followed and displayed Git tag/ref names. The command output showed the ref names; whether additional tag-object history or commits were transferred was not separately inspected. No tag contents were opened or used to alter the frozen experiment semantics or generated outputs. No additional Owner/GPT disposition is claimed for this event; review it before any positive live R4 result.
+
 ## Reference-assisted conformance interpretation lock
 
 The frozen R3 prompt supplies `reference_execution_json`, including the deterministic R3 route trace, to the live successor. R4 is therefore a reference-assisted live interface/serialization conformance test. A later PASS can establish only that the successor consumed the frozen package and emitted a mechanically conforming response under this prompt. It does not establish independent route derivation from policy plus typed binding without reference assistance.
