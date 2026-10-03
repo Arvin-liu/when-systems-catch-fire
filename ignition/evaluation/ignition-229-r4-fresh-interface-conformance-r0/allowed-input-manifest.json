@@ -1,0 +1,188 @@
+{
+  "default": "DENY_UNLISTED_SOURCES",
+  "entries": [
+    {
+      "commit": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+      "path": "ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/typed-route-interface-contract-r1.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "0feede3cc896c520068b4f11f50c64c0bcec2ba9138f5342c35cd9b588d8e0dc",
+      "source_id": "typed_route_contract_json",
+      "use": "frozen R3 interface specification, execution code, or validation record"
+    },
+    {
+      "commit": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+      "path": "ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/typed-route-interface-contract-r1.md",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "e7e06a30d13fed03f74ada43f6a47668fcecbf405d82f28ff00b6805a7b93663",
+      "source_id": "typed_route_contract_markdown",
+      "use": "frozen R3 interface specification, execution code, or validation record"
+    },
+    {
+      "commit": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+      "path": "ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/route-trace-r1.schema.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "ab445f7258eafabcf0c44103518fe3818c7f9d7193dd8e683b125e61a0ac5d91",
+      "source_id": "route_trace_schema",
+      "use": "frozen R3 interface specification, execution code, or validation record"
+    },
+    {
+      "commit": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+      "path": "ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/successor-response-schema-r1.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "d28d8ca0c35ffb255f09f13954a82e693e1bf74258fdeb4437af3692084a4494",
+      "source_id": "successor_response_schema",
+      "use": "frozen R3 interface specification, execution code, or validation record"
+    },
+    {
+      "commit": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+      "path": "ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/successor-prompt-template-r1.md",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "b7259d938fdc8474470cb19723993e6c308aa5a6413255cfb84b4963a2345205",
+      "source_id": "successor_prompt_template",
+      "use": "frozen R3 interface specification, execution code, or validation record"
+    },
+    {
+      "commit": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+      "path": "ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/tools/route_reference_interpreter.py",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "ed96bf0489b10652ec8a0b6ecb53c27161d6735820dd3f83bbec64150ec4ff1e",
+      "source_id": "reference_interpreter",
+      "use": "frozen R3 interface specification, execution code, or validation record"
+    },
+    {
+      "commit": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+      "path": "ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/tools/validate_route_trace_r1.py",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "038ba960ad912483b5522150786edb388552b553f5139aa23e9cd583360a9ab6",
+      "source_id": "route_trace_validator",
+      "use": "frozen R3 interface specification, execution code, or validation record"
+    },
+    {
+      "commit": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+      "path": "ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/tools/build_typed_case_binding.py",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "285cc0cdab2e03e3c6904742c5e5094612d6468e06ea9352ecf095d7a8c27346",
+      "source_id": "binding_builder",
+      "use": "frozen R3 interface specification, execution code, or validation record"
+    },
+    {
+      "commit": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+      "path": "ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/tools/prove_historical_binding_migration.py",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "4c68ec54f77e5479af808c188118e92c46d6adb4a62ee073b20f6beb4a6f9890",
+      "source_id": "historical_migration_builder",
+      "use": "frozen R3 interface specification, execution code, or validation record"
+    },
+    {
+      "commit": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+      "path": "ignition/evaluation/ignition-229-r3-typed-input-route-interface-repair-r0/historical-binding-migration-proof-r1.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "855c8fab6608f878c4ef1dca8e7903825dc02b12b21fc4c40a9ce4eb40324f3f",
+      "source_id": "historical_migration_proof",
+      "use": "frozen R3 interface specification, execution code, or validation record"
+    },
+    {
+      "commit": "d82a52077df6d4e96e998ace3757f2fb343b4db5",
+      "path": "ignition/reports/evaluations/ignition-228-policy-contract-reconciliation-r0/policies/POLICY_F01_A.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "db786b0d68c8955cc1354c325aaa528bcc2e88915e75dc593fa3e9475b5c2410",
+      "source_id": "task228_policy_POLICY_F01_A",
+      "use": "read-only frozen policy supplied as structured successor input"
+    },
+    {
+      "commit": "d82a52077df6d4e96e998ace3757f2fb343b4db5",
+      "path": "ignition/reports/evaluations/ignition-228-policy-contract-reconciliation-r0/policies/POLICY_F01_B.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "f64bc598c3d37309a7519c8e19976d3f439c9e1715484fea3d9ed8e6788d93f5",
+      "source_id": "task228_policy_POLICY_F01_B",
+      "use": "read-only frozen policy supplied as structured successor input"
+    },
+    {
+      "commit": "d82a52077df6d4e96e998ace3757f2fb343b4db5",
+      "path": "ignition/reports/evaluations/ignition-228-policy-contract-reconciliation-r0/policies/POLICY_F02_A.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "e4fd07ae2f96bd31ddf9422de43d403e80aebd264fb0b1ca0be618598fc3744c",
+      "source_id": "task228_policy_POLICY_F02_A",
+      "use": "read-only frozen policy supplied as structured successor input"
+    },
+    {
+      "commit": "d82a52077df6d4e96e998ace3757f2fb343b4db5",
+      "path": "ignition/reports/evaluations/ignition-228-policy-contract-reconciliation-r0/policies/POLICY_F02_B.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "ac66d15487b8ae93b7353ab07ddb4230eb49b643370da92750db68b2a5ec371c",
+      "source_id": "task228_policy_POLICY_F02_B",
+      "use": "read-only frozen policy supplied as structured successor input"
+    },
+    {
+      "commit": "d82a52077df6d4e96e998ace3757f2fb343b4db5",
+      "path": "ignition/reports/evaluations/ignition-228-policy-contract-reconciliation-r0/policies/POLICY_F03_A.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "17a338279f13bbe716bc21cdbc90a7592a21b7024cb18b601f9dcb9b6ddbc4a9",
+      "source_id": "task228_policy_POLICY_F03_A",
+      "use": "read-only frozen policy supplied as structured successor input"
+    },
+    {
+      "commit": "d82a52077df6d4e96e998ace3757f2fb343b4db5",
+      "path": "ignition/reports/evaluations/ignition-228-policy-contract-reconciliation-r0/policies/POLICY_F03_B.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "d248c7809edc0fd739c226100179d1e56d5294db92148831efac8fda16d53841",
+      "source_id": "task228_policy_POLICY_F03_B",
+      "use": "read-only frozen policy supplied as structured successor input"
+    },
+    {
+      "commit": "4ee132e8d50e8805c466cb5d681aaa18c34c9f68",
+      "consumed_fields": "case_inputs_by_lineage only; route_expectations_by_lineage is not copied to the execution package",
+      "path": "ignition/reports/evaluations/ignition-229-clean-transfer-interface-r0/run/case-input-values-and-route-expectations.json",
+      "repository": "Arvin-liu/when-systems-catch-fire",
+      "sha256": "b2d44d56aa602e429a8f3ddded61e0b3524b16700a4d35232126a5e264ffa057",
+      "source_id": "historical_case_input_map",
+      "use": "build exact R1 typed bindings and provenance hashes"
+    },
+    {
+      "commit": null,
+      "path": null,
+      "repository": "Task229-R4 preregistration literal",
+      "sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+      "source_id": "neutral_case_prose",
+      "use": "same neutral visible prose for every unit; no historical case prose"
+    },
+    {
+      "commit": null,
+      "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/execution-inputs.jsonl",
+      "repository": "Task229-R4 preregistration package",
+      "sha256": "3cd0fea03a44a06620d4ee737562e390e1943e23507724972cf671ba8ccbfb64",
+      "source_id": "generated_successor_execution_inputs",
+      "use": "structured inputs passed to each frozen R3 prompt"
+    },
+    {
+      "commit": null,
+      "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/run-matrix.json",
+      "repository": "Task229-R4 preregistration package",
+      "sha256": "36b935cec936f33cf09b88bfddade161b91ff753f9e22fe0ad853ce00d0f98ec",
+      "source_id": "generated_run_matrix",
+      "use": "validator-side unit order and expected digests; not sent to successor"
+    },
+    {
+      "commit": null,
+      "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/tools/build_frozen_execution_package.py",
+      "repository": "Task229-R4 preregistration package",
+      "sha256": "ff69400e91b25cd8c0ae8d4ac10d0c472f41b3be80e70bde3502dd33e417ba52",
+      "source_id": "r4_execution_package_builder",
+      "use": "rebuild execution inputs and run matrix"
+    }
+  ],
+  "frozen_r3_head": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+  "reference_execution_note": "The frozen R3 prompt requires reference_execution_json as a structured input and includes its route_trace. The separate expected digest stays in the validator-side matrix and is not supplied as an additional target or prose cue.",
+  "schema_version": "task229-r4-allowed-input-manifest-r0",
+  "successor_visible_fields": [
+    "exact frozen Task228 policy JSON",
+    "exact R1 typed binding JSON",
+    "one fixed neutral case_prose string",
+    "exact R3 deterministic reference_execution_json required by frozen prompt"
+  ],
+  "validator_only_fields_not_sent_to_successor": [
+    "expected deterministic route-trace digest",
+    "run-matrix thresholds",
+    "post-run classification rules"
+  ]
+}

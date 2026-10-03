@@ -1,0 +1,64 @@
+{
+  "boundary": {
+    "evaluator_runs": 0,
+    "execution_authorized": false,
+    "live_successor_runs": 0,
+    "next_direction_is_pointer_only": true,
+    "task230_started": false
+  },
+  "claim_ceiling": [
+    "live successor can consume the repaired typed binding interface",
+    "live successor can preserve explicit missingness in route/interface fields",
+    "live successor can emit the required response structure",
+    "live successor route trace can be mechanically compared with the deterministic R3 reference",
+    "observed mechanical interface-conformance rate under this exact run matrix"
+  ],
+  "explicit_nonclaims": [
+    "answer correctness or quality",
+    "policy effectiveness",
+    "target compatibility",
+    "transfer or causal effect",
+    "generalization, inheritance, Cognitive Evolution, Model-RSI, training benefit"
+  ],
+  "frozen_entering_state": {
+    "formal_repository": "Arvin-liu/when-systems-catch-fire",
+    "r3_final_marker": "TASK229_R3_TRANSFER_INTERFACE_CONTRACT_REPAIRED",
+    "r3_head": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+    "r3_historical_migration": "18/18",
+    "r3_next_direction": "NEXT_DIRECTION=PREREGISTER_FRESH_INTERFACE_CONFORMANCE_TASK229_R4",
+    "r3_pr": 244,
+    "r3_pr_draft": true,
+    "r3_pr_merged": false,
+    "r3_pr_state": "OPEN",
+    "r3_receipt_commit": "d8ac3cf567c6a77a754044a28259253810334f69",
+    "r3_receipt_repository": "Arvin-liu/1111",
+    "r3_synthetic_conformance": "49/49",
+    "r4_previously_started": false,
+    "six_policy_hashes_match_contract": true,
+    "task230_started": false
+  },
+  "next_direction": "NEXT_DIRECTION=EXECUTE_FROZEN_TASK229_R4_INTERFACE_CONFORMANCE",
+  "package": {
+    "base_r3_head": "9ef9a1b6ce47702a88af39f437dc3bbee33772fb",
+    "formal_branch": "work/IGNITION-20261003-229-R4-fresh-interface-conformance-prereg-r0",
+    "new_subtree": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/",
+    "pr244_must_remain_open_draft_unmerged_unchanged": true,
+    "r3_branch_unchanged": true,
+    "receipt_branch": "relay/receipts/IGNITION-20261003-229-R4",
+    "receipt_path": "relay/receipts/IGNITION-20261003-229-R4"
+  },
+  "preregistration_marker": "TASK229_R4_PREREGISTRATION_COMPLETE_EXECUTION_NOT_STARTED",
+  "question": "When a live successor is given the frozen R3 successor prompt, frozen Task228 policy, explicit R1 typed binding, and allowed visible case prose, can it emit a response whose route/interface fields conform mechanically to the frozen R3 deterministic reference contract?",
+  "run_matrix": {
+    "attempts_per_unit": 1,
+    "design": "six frozen Task228 policies, each paired with three frozen case slots A/B/C for L01-L06",
+    "historical_case_prose_used": false,
+    "neutral_case_prose_sha256": "64e292dc325f93c95eb5a21cfcf248953fcf943868f310c24cfd185dfb73ae25",
+    "order": "ascending lineage L01-L06, A then B then C",
+    "retries": 0,
+    "run_units": 18
+  },
+  "schema_version": "task229-r4-preregistration-r0",
+  "status": "FROZEN_NOT_EXECUTED",
+  "task_id": "IGNITION-20261003-229-R4"
+}

@@ -1,0 +1,104 @@
+{
+  "classification_order": [
+    "protocol/source/hash deviation -> INVALIDATED_BY_PROTOCOL_DEVIATION and stop",
+    "unit not invoked after a global stop -> UNIT_NOT_STARTED_AFTER_GLOBAL_STOP",
+    "deadline exceeded -> TIMEOUT",
+    "runtime/process error -> EXECUTION_ERROR",
+    "explicit refusal or no response bytes -> SUCCESSOR_REFUSAL_OR_NO_OUTPUT",
+    "raw response exceeds 16384 bytes -> OUTPUT_BUDGET_EXCEEDED",
+    "invalid UTF-8, malformed JSON, or response-schema failure -> RESPONSE_SCHEMA_FAILURE",
+    "INTERFACE_CONFLICT with PROSE_BINDING_CONFLICT -> PROSE_BINDING_CONFLICT",
+    "unexpected ROUTE_AMBIGUOUS status -> ROUTE_AMBIGUOUS",
+    "other response status mismatch -> RESPONSE_STATUS_MISMATCH",
+    "compare route-trace fields in field_comparison_order and emit the first mismatch",
+    "all schema, status, and trace checks pass -> LIVE_INTERFACE_PASS"
+  ],
+  "expected_matrix": {
+    "deliberate_prose_conflict_cases": 0,
+    "note": "No historical case prose; one neutral case_prose literal is frozen for all units.",
+    "prose_conflict_units": 0,
+    "reference_status": "ROUTE_TRACE_READY",
+    "route_ambiguous_units": 0,
+    "run_units": 18
+  },
+  "field_comparison_order": [
+    {
+      "field": "policy_id",
+      "mismatch": "POLICY_ID_MISMATCH"
+    },
+    {
+      "field": "policy_sha256",
+      "mismatch": "POLICY_HASH_MISMATCH"
+    },
+    {
+      "field": "binding_sha256",
+      "mismatch": "BINDING_HASH_MISMATCH"
+    },
+    {
+      "field": "route_type",
+      "mismatch": "ROUTE_TYPE_MISMATCH"
+    },
+    {
+      "field": "selected_rule_id",
+      "mismatch": "RULE_ID_MISMATCH"
+    },
+    {
+      "field": "selected_action_id",
+      "mismatch": "ACTION_ID_MISMATCH"
+    },
+    {
+      "field": "evaluated_input_ids",
+      "mismatch": "EVALUATED_INPUT_IDS_MISMATCH"
+    },
+    {
+      "field": "missing_input_ids",
+      "mismatch": "MISSING_INPUT_IDS_MISMATCH"
+    },
+    {
+      "field": "preserved_baseline_action_ids",
+      "mismatch": "PRESERVED_BASELINE_MISMATCH"
+    }
+  ],
+  "no_answer_quality_or_policy_effect_score": true,
+  "not_scored": [
+    "answer correctness or quality",
+    "policy effectiveness",
+    "target compatibility",
+    "transfer or causal effect",
+    "generalization, inheritance, Cognitive Evolution, Model-RSI, training benefit"
+  ],
+  "outcome_labels": [
+    "LIVE_INTERFACE_PASS",
+    "RESPONSE_SCHEMA_FAILURE",
+    "RESPONSE_STATUS_MISMATCH",
+    "PROSE_BINDING_CONFLICT",
+    "POLICY_ID_MISMATCH",
+    "POLICY_HASH_MISMATCH",
+    "BINDING_HASH_MISMATCH",
+    "ROUTE_TYPE_MISMATCH",
+    "RULE_ID_MISMATCH",
+    "ACTION_ID_MISMATCH",
+    "EVALUATED_INPUT_IDS_MISMATCH",
+    "MISSING_INPUT_IDS_MISMATCH",
+    "PRESERVED_BASELINE_MISMATCH",
+    "INTERFACE_ERROR_MISMATCH",
+    "ROUTE_AMBIGUOUS",
+    "SUCCESSOR_REFUSAL_OR_NO_OUTPUT",
+    "TIMEOUT",
+    "EXECUTION_ERROR",
+    "OUTPUT_BUDGET_EXCEEDED",
+    "INVALIDATED_BY_PROTOCOL_DEVIATION",
+    "UNIT_NOT_STARTED_AFTER_GLOBAL_STOP"
+  ],
+  "pass_rule": "Schema-valid response; expected status ROUTED for all 18 units; interface_error null; exact equality of every route-trace field to the deterministic R3 trace.",
+  "primary_endpoint": "mechanical response/interface conformance to the exact deterministic R3 reference",
+  "runner_outcomes_exhaustive": true,
+  "schema_version": "task229-r4-mechanical-outcome-contract-r0",
+  "thresholds": {
+    "full_establishment": "18 of 18 attempted once and all 18 LIVE_INTERFACE_PASS, no protocol deviation, access events dispositioned before a positive claim",
+    "invalidated": "any protocol/source/hash deviation; stop immediately, do not continue and do not retry",
+    "no_establishment": "zero LIVE_INTERFACE_PASS outcomes",
+    "partial_establishment": "1 through 17 LIVE_INTERFACE_PASS among the fixed 18, no protocol deviation; counts only, no broader inference"
+  },
+  "transient_failure_policy": "Timeouts, refusals, and process errors consume the sole attempt; never exclude or replace."
+}
