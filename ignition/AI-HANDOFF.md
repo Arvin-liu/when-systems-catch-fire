@@ -169,7 +169,7 @@ Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完�
 这与点火现有边界有直接咬合：
 
 - 当前 Knowledge Experience 的 `search-index.jsonl`、主题索引和分层阅读是确定性导航投影，适合稳定仓库，但它们不是 query-conditioned 的动态证据定位器。
-- `OPERATING-METHOD.md` 已明确 `MEMORY_IS_RETRIEVAL_HINT_NOT_CURRENT_AUTHORITY`，这恰好可以成为动态检索的核心不变量：历史知识只能做 prior，不能替代 Current source。
+- `OPERATING-METHOD.md` 已明确 `MEMORY_IS_RETRIEVAL_HINT_NOT_CURRENT_AUTHORITY`，这恰好可以成为动态检索的核心不变量：历史知识只能做 prior，不能替代 Current source。对科学问题还要增加一层 `CURRENT_SCIENTIFIC_UNDERSTANDING`：用截至查询时点可获得的高质量综述、指南、共识、元分析和必要的最新一手研究校准解释框架、共识/争议位置与时效边界；它同样必须有来源、日期、适用人群/范围和不确定性，不能凭“最新”二字升级为真值。
 - 当前 capability registry 明确承认 source/evidence research 只有 evidence-link validation 与 REOS LIGHT obligation coordination，**没有通用自主检索 operation**；这是一个真实能力缺口，而不是重新命名已有能力。
 - REOS LIGHT 已有 `QuestionContract`、`EvidenceRequest`、obligation ledger 与 typed handoff，可自然承接“问题需求分解 → 证据定位 → 充分性判断”。
 - Adaptive Relational Network 可以承接来源间 linkage / conflict / temporal relation，但仍必须保持原边界：retrieval、similarity、community、reuse 都不等于 truth、integration 或 causality。
@@ -185,10 +185,13 @@ Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完�
 2. 定义 `EvidenceWindow`：绑定 source path / source digest / snapshot or commit / byte-or-line range / observed_at / evidence role，证据边界由 query 决定而不是预切固定 chunk。
 3. 实现 index-optional 的低成本 prior：现有 search index、alias、路径、关键词、ARN 关系与历史成功检索都只能用于缩小候选空间；任一 prior 缺失或 stale 时必须能回退到 raw source。
 4. 实现有预算的顺序探索与显式 stopping：记录 file reads、token、wall-clock、oracle calls；以“最弱未覆盖 requirement”作为继续/停止依据，预算耗尽时保留 uncertainty，不强行补答案。
-5. 把成功搜索沉淀成 `RetrievalExperience` / `EvidenceCluster`，但状态固定为 `NONCANONICAL_RETRIEVAL_PRIOR`；必须绑定来源 digest、失效条件、supersession、最后核验时间，来源变化后旧经验只能帮助定位，不能直接复用结论。
-6. Meta-cluster 若存在，只能抽象“怎样找”的检索方法或 routing heuristic，不能抽象成新的事实/机制/理论；它进入方法候选而不是 claim registry。
-7. 采用 hybrid 策略而不是“零索引教条”：稳定高频语料继续用确定性索引/缓存，快速变化或 freshness-sensitive 的材料走 raw evidence navigation。
-8. 先做动态 corpus benchmark：在受控 add/modify/delete 后测 Time-to-First-Query、evidence recall、grounding、stale-answer rate、budget-normalized quality 与全生命周期更新成本，再决定是否注册为 Current operation。
+5. 增加 `CurrentScientificUnderstanding` 视图，专门服务科学问题：它不是单篇“最新论文”，而是查询时点的证据综合状态，至少记录 as-of 时间、适用人群/系统、共识与争议、主要支持/反对证据、证据层级、已知时效风险和来源集合。它负责**校准解释**，不能覆盖原始证据，也不能把“新”自动当成“更真”。
+6. 把成功搜索沉淀成 `RetrievalExperience` / `EvidenceCluster`，但状态固定为 `NONCANONICAL_RETRIEVAL_PRIOR`；必须绑定来源 digest、失效条件、supersession、最后核验时间，来源变化后旧经验只能帮助定位，不能直接复用结论。
+7. Meta-cluster 若存在，只能抽象“怎样找”的检索方法或 routing heuristic，不能抽象成新的事实/机制/理论；它进入方法候选而不是 claim registry。
+8. 采用 hybrid 策略而不是“零索引教条”：稳定高频语料继续用确定性索引/缓存，快速变化或 freshness-sensitive 的材料走 raw evidence navigation。
+9. 先做动态 corpus benchmark：在受控 add/modify/delete 后测 Time-to-First-Query、evidence recall、grounding、stale-answer rate、budget-normalized quality 与全生命周期更新成本，再决定是否注册为 Current operation。
+
+可以把这条关系压缩为：**历史知识负责导航，原始来源负责证据锚定与事实核验，当前最新科学理解负责校准解释；三者都不能替代点火的 claim governance。**
 
 需要特别防止的错误：**知识自进化 ≠ 真值自进化**。Sirchmunk 的 KnowledgeCluster / query embedding / meta-cluster
 对点火最有价值的是“搜索经验如何压缩为下一次的先验”，而不是让历史答案、embedding 相似度、社群或高复用频率
