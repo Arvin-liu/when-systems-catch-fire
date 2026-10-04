@@ -1,0 +1,34 @@
+{
+  "schema_version": "task229-r4-runtime-payload-byte-contract-r1",
+  "transport_response_bytes": {
+    "definition": "HTTP response entity-body octets after transfer-framing removal and before JSON decoding",
+    "packet_or_tls_capture": false,
+    "accept_encoding_request": "identity",
+    "accepted_content_encoding": "identity_or_absent",
+    "max_bytes": 1048576,
+    "persist_and_hash_before_json_parse": true
+  },
+  "successor_payload_bytes": {
+    "source": "the single completed assistant message's single output_text string",
+    "transformation": "decode JSON string escapes, then strict UTF-8 encode the exact Unicode text",
+    "persist_and_hash_before_json_or_schema_interpretation": true,
+    "max_bytes": 16384,
+    "cap_applied_after_full_capture": true,
+    "oversize_action": "reject without truncation",
+    "normalization_or_trimming": false
+  },
+  "decoded_successor_object": {
+    "parsed_by_runtime_worker": false,
+    "later_schema_and_route_validation": "separately authorized stage using the frozen R0/R3 contracts"
+  },
+  "fail_closed_cases": [
+    "malformed transport framing",
+    "invalid transport UTF-8 or JSON",
+    "incomplete or aborted response",
+    "ambiguous output_text blocks",
+    "invalid successor UTF-8",
+    "oversized transport envelope",
+    "successor payload over 16384 bytes"
+  ],
+  "deterministic_fixture_sizes_bytes": [16383, 16384, 16385]
+}

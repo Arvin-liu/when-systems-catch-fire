@@ -1,0 +1,31 @@
+{
+  "schema_version": "task229-r4-runtime-forbidden-surfaces-r1",
+  "model_facing_request_fields": {
+    "tools": [],
+    "tool_choice": "none"
+  },
+  "allowed_model_facing_surfaces": [],
+  "forbidden_surfaces": [
+    "MCP tools",
+    "app integrations",
+    "browser or computer-use tools",
+    "shell or local execution tools",
+    "filesystem tools",
+    "search or retrieval tools",
+    "provider function tools",
+    "code interpreter",
+    "inherited CLI tool catalog",
+    "agent-loop orchestration"
+  ],
+  "forbidden_session_state": [
+    "conversation history",
+    "previous_response_id",
+    "thread or session reuse",
+    "prompt cache key",
+    "prior unit response"
+  ],
+  "worker_network_allowlist": ["api.openai.com:443/v1/responses"],
+  "redirects": false,
+  "proxy_environment": false,
+  "retries": false
+}

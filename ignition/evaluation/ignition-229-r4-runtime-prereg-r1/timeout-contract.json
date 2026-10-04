@@ -1,0 +1,24 @@
+{
+  "schema_version": "task229-r4-runtime-timeout-contract-r1",
+  "worker_requests_per_process": 1,
+  "wall_timeout_seconds": 300,
+  "new_process_session": true,
+  "process_group_supervision": true,
+  "timeout_sequence": [
+    {"signal": "SIGTERM", "scope": "process_group"},
+    {"wait_seconds": 1},
+    {"signal": "SIGKILL", "scope": "process_group"}
+  ],
+  "timeout_classification": "EXTERNAL_TIMEOUT",
+  "attempt_consumed": true,
+  "retry_count": 0,
+  "replacement_allowed": false,
+  "post_exit_process_group_cleanup_check": true,
+  "fixture_verification": [
+    "timeout classification",
+    "child process-group termination",
+    "cleanup metadata",
+    "no retry",
+    "no orphan process"
+  ]
+}

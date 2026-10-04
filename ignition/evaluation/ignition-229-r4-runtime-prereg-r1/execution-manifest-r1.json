@@ -1,0 +1,31 @@
+{
+  "canary_calls_in_this_task": 0,
+  "canary_contract": "runtime-canary-contract.json",
+  "evaluator_runs_in_this_task": 0,
+  "execution_authorized": false,
+  "fixed_order": "exact order in frozen R0 execution-manifest.json",
+  "invocations_per_unit": 1,
+  "live_r4_units_in_this_task": 0,
+  "marker": "TASK229_R4_RUNTIME_PREREGISTRATION_R1_FROZEN_EXECUTION_NOT_STARTED",
+  "maximum_retries": 0,
+  "parent_formal_head": "b7267180cb2afe735cdcb0e75583d2e356cadf98",
+  "provider_calls_in_this_task": 0,
+  "request_no_tool_contract": {
+    "tool_choice": "none",
+    "tools": []
+  },
+  "request_schema": "request-envelope.schema.json",
+  "run_matrix_source": "../ignition-229-r4-fresh-interface-conformance-r0/run-matrix.json",
+  "run_matrix_units": 18,
+  "runtime_contract": "runtime-contract.json",
+  "runtime_executor": "runtime_executor.py",
+  "runtime_source_sha256": "03d9e91f19b294992e09ee0c4388143e658191d9b02427d0a0100087112ea64f",
+  "schema_version": "task229-r4-execution-manifest-r1",
+  "successor_payload_max_bytes": 16384,
+  "supervisor": "runtime_supervisor.py",
+  "supervisor_source_sha256": "2c8f39008b031fc3acabf533134c52918b445a5602a063e6497ec7ad21039d29",
+  "task230_started": false,
+  "task_id": "IGNITION-20261004-229-R4-RUNTIME-R1",
+  "timeout_seconds": 300,
+  "transport_response_entity_body_max_bytes": 1048576
+}
