@@ -47,7 +47,8 @@
   "review_boundary": "OWNER_GPT_MORNING_REVIEW_REQUIRED",
   "access_audit": {
     "ledger_path": "ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/audit-ledger.jsonl",
-    "ledger_sha256": "097c4f97cfbd913dd0eccfc16db77ba4c2dd8318e1f66e4048b3e4b76a7ee0cf",
-    "required_disposition": "R4_PREREG_AND_RECONCILIATION_ACCESS_EVENTS_DISCLOSED_NO_EVIDENCE_OF_TUNING_CONTAMINATION"
+    "ledger_sha256": "127fb84cca62d4e66e1f1866643bbfd08d070875cc2f05e05842704659f376f9",
+    "required_disposition": "R4_PREREG_AND_RECONCILIATION_ACCESS_EVENTS_DISCLOSED_NO_EVIDENCE_OF_TUNING_CONTAMINATION",
+    "ledger_event_count": 14
   }
 }

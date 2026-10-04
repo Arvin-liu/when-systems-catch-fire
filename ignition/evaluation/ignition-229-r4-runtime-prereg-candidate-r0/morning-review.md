@@ -99,7 +99,7 @@ Route type is not observable for all 18 planned units because there were no invo
 - PR #244: Open + Draft + Unmerged; unchanged head `9ef9a1b6ce47702a88af39f437dc3bbee33772fb` at preflight.
 - Frozen package checksums: 12/12 PASS; allowed input file hashes: 20/20 PASS; six policy hashes PASS; per-unit pinned input hash rows 18/18 PASS.
 - Frozen execution artifacts: unchanged at preflight. No execution artifacts or per-unit outcomes were created.
-- Access/protocol ledger: see `access-events.jsonl` and the exact appended audit copy `audit-ledger.jsonl` (SHA-256 `097c4f97cfbd913dd0eccfc16db77ba4c2dd8318e1f66e4048b3e4b76a7ee0cf`). Unknown and truncated scopes remain disclosed as such, including the partial lazy checkout's unknown object scope, the truncated input-payload output, and the abandoned receipt sparse-checkout path listing.
+- Access/protocol ledger: see access-events.jsonl and audit-ledger.jsonl (14 events; SHA-256 127fb84cca62d4e66e1f1866643bbfd08d070875cc2f05e05842704659f376f9). LD-E013 records the receipt commit partial-clone lazy fetch (20,297 objects, approximately 225 MB; object types and exact scope unknown; no file body surfaced/read). LD-E014 records the later paths-only status listing and read-only PR/workflow/profile plus review-package reconciliation reads; the PR #244 response was truncated. No target, evaluator, or Task230 source body was read.
 - Required pre-execution access disposition: `R4_PREREG_AND_RECONCILIATION_ACCESS_EVENTS_DISCLOSED_NO_EVIDENCE_OF_TUNING_CONTAMINATION`; no live result is claimed.
 - Exact-head CI for a live execution head: not applicable; no execution head or execution Draft PR exists. Frozen #246 baseline at `b7267180cb2afe735cdcb0e75583d2e356cadf98`: repository path accounting run `37132671551` PASS; architecture-pages run `37132671478` build PASS/deploy SKIPPED; Q33 run `37132671495` PASS; Foundation run `37132671475` PASS (65/65). These are not candidate-head checks.
 - Candidate branch: `work/IGNITION-20261004-229-R4-runtime-prereg-candidate-r0`; its exact head and local path-accounting check are recorded in the append-only 1111 receipt. The runtime fallback calls for a candidate branch only; no PR was created. Candidate exact-head CI was not run because no PR or workflow dispatch was created.
@@ -114,7 +114,11 @@ Morning entry points:
 1. This file and `runtime-preflight.json` on candidate branch `work/IGNITION-20261004-229-R4-runtime-prereg-candidate-r0`.
 2. Frozen Task229-R4 instruction: `Arvin-liu/1111@e535bd19cf390104a4c29d1bcbee1522811ab2c3`, path `instructions/IGNITION-2026-10-04-229-R4-overnight-live-interface-execution.md`.
 3. Frozen package and matrix at PR #246 head `b7267180cb2afe735cdcb0e75583d2e356cadf98`.
-4. Append-only 1111 R4 receipt lineage: `relay/receipts/IGNITION-20261003-229-R4` (final SHA to be added).
+4. Append-only 1111 R4 receipt lineage: relay/receipts/IGNITION-20261003-229-R4; verified receipt snapshot at this review refresh: 3b363944dbf8aaaf44cde33ef1683682ef3e1393. Use the current branch tip for any later append.
 5. Current task's access audit ledger and the receipt's updated access-event disposition.
 
 No evaluator, Task230, merge, Ready transition, extra live attempt, or repaired experiment occurred.
+
+## Independent fallback recomputation
+
+Two independent read-only lanes confirmed the frozen 18-unit order and zero-retry contract, 18 planned = 0 attempted + 18 not started at the pre-call gate, zero pass/non-pass outcomes, no per-unit receipts or raw responses, and matching fallback/Owner-review markers. No live run exists to recompute from unit receipts.
