@@ -284,6 +284,41 @@ Current/source-first、预算、provenance、claim governance 和 `K13_ASSERTION
 降低高档 executor 过度使用、tail latency 或 cost-per-validated-completion，才考虑把它注册为
 Agent Runtime / OS Control Plane 的 bounded operation。
 
+## 2026-10-04 Architecture Backlog Consolidation
+
+跨对话讨论的架构候选已统一收口到：
+
+`docs/architecture/architecture-backlog-consolidation-2026-10-04.md`
+
+该文件是未来架构候选的 handoff 总账，不把候选自动升级为 Current，也不授权 Task230 或任何新的 live experiment。
+
+当前主索引：
+
+| ID | 方向 | 状态 |
+|---|---|---|
+| AB-00 | 现有 OS/Runtime/Federation/Durability/ARN/Operating Method 地基 | `ALREADY_CURRENT` |
+| AB-01 | Reliable Context Construction / Operating Layer | `NEEDS_GAP_AUDIT` |
+| AB-02 | Query-conditioned Raw Evidence Navigation | `NEEDS_SYNTHETIC_PILOT` |
+| AB-03 | Versioned CurrentScientificUnderstanding | `NEEDS_GAP_AUDIT` |
+| AB-04 | Capability-tiered Execution Routing | `NEEDS_SYNTHETIC_PILOT` |
+| AB-05 | Concurrent heterogeneous multi-Agent orchestration | `NEEDS_GAP_AUDIT` |
+| AB-06 | Cross-contract integrity / reference binding | `NEEDS_GAP_AUDIT` |
+| AB-07 | Provider/runtime execution contract R1 | `RECORDED_CANDIDATE` |
+| AB-08 | Long-term vector/embedding memory as required core plane | `DEFERRED` |
+| AB-09 | Always-on daemon / autonomous service as Current target | `DEFERRED` |
+| AB-10 | Universal static-index-only retrieval as target architecture | `SUPERSEDED` |
+| AB-11 | Provider-bound direct task→named-model routing as desired end state | `SUPERSEDED` |
+
+恢复未来架构讨论时，先读该 backlog，再判断是已有 Current、真实 gap、需要 synthetic pilot、延期还是已被替代。
+Conversation-only 架构想法不再视为完成 handoff；只有进入该 backlog 或其 canonical successor 后，才算跨窗口可恢复。
+
+建议的实现顺序由 backlog 冻结为：
+
+1. 先补 live runtime substrate；
+2. 再做 Reliable Context、CurrentScientificUnderstanding、multi-Agent delta 与 cross-contract integrity 的只读 gap audit；
+3. 对 Raw Evidence Navigation 与 Capability-tiered Routing 做 bounded synthetic pilots；
+4. 只有独立 pilot 证明存在可重复净收益后，才组合更大的 Context/Research 与 Runtime/Orchestration 路径。
+
 ## 交互与 Codex 派发约定（Owner preference）
 
 以下约定属于跨会话 handoff，未来新对话恢复点火工作时应先读取并遵守：
