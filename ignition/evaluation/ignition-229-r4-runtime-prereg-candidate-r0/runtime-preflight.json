@@ -1,0 +1,53 @@
+{
+  "schema_version": "task229-r4-runtime-preflight-candidate-r0",
+  "task_id": "IGNITION-20261003-229-R4",
+  "checked_before_any_live_call": true,
+  "gate_status": "NOT_ESTABLISHED",
+  "fallback_marker": "TASK229_R4_LIVE_EXECUTION_BLOCKED_BY_RUNTIME_PREREG_MISMATCH",
+  "frozen_base_head": "b7267180cb2afe735cdcb0e75583d2e356cadf98",
+  "observed": {
+    "codex_cli_version": "0.159.2",
+    "requested_model": "gpt-6-astra",
+    "model_catalog_api_supported": true,
+    "requested_reasoning_effort": "medium",
+    "model_catalog_lists_medium": true,
+    "live_backend_acceptance_observed": false,
+    "ephemeral_process_option_available": true,
+    "read_only_sandbox_option_available": true,
+    "native_300_second_timeout_option": false,
+    "native_raw_response_byte_cap": false,
+    "predecode_raw_response_capture_verified": false,
+    "empty_model_facing_tool_catalog_verified": false,
+    "successor_shell_and_network_unavailable_verified": false,
+    "external_timeout_supervisor_implemented_and_verified": false,
+    "streaming_16384_byte_guard_implemented_and_verified": false
+  },
+  "blocking_evidence": [
+    "CLI help provides no native 300-second timeout flag; an external process-group supervisor was not implemented or validated.",
+    "Read-only sandboxing does not remove tools. Feature overrides were insufficient to prove an empty model-facing tool catalog; unified_exec remained enabled in the candidate feature inspection.",
+    "The CLI provides no verified raw transport-byte capture before decoding and no verified 16384-byte response-body cap.",
+    "The local model catalog lists gpt-6-astra as API-supported and medium as supported, but live backend acceptance was not observed; no non-matrix canary was allowed."
+  ],
+  "counts": {
+    "planned_units": 18,
+    "live_successor_invocations": 0,
+    "evaluator_invocations": 0,
+    "task230_started": false,
+    "retries": 0,
+    "replacements": 0
+  },
+  "source_scope": {
+    "frozen_package_hash_check": "PASS",
+    "allowed_input_hash_check": "PASS",
+    "six_policy_hashes": "PASS",
+    "18_row_input_hash_checks": "PASS",
+    "target_or_evaluator_source_bodies_fetched": false,
+    "frozen_inputs_modified": false
+  },
+  "review_boundary": "OWNER_GPT_MORNING_REVIEW_REQUIRED",
+  "access_audit": {
+    "ledger_path": "ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/audit-ledger.jsonl",
+    "ledger_sha256": "097c4f97cfbd913dd0eccfc16db77ba4c2dd8318e1f66e4048b3e4b76a7ee0cf",
+    "required_disposition": "R4_PREREG_AND_RECONCILIATION_ACCESS_EVENTS_DISCLOSED_NO_EVIDENCE_OF_TUNING_CONTAMINATION"
+  }
+}

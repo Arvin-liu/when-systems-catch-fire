@@ -3039,6 +3039,13 @@
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/receipt-template.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/run-matrix.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/tools/build_frozen_execution_package.py"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/README.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/SHA256SUMS.txt"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/access-events.jsonl"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/audit-ledger.jsonl"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/morning-review.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/preregistration-delta-candidate.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/runtime-preflight.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/README.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/task-branch-authorization-r0.2.schema.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/task182-r2-branch-authorization-template.json"}

@@ -1,0 +1,7 @@
+697422f7e8d2f4f65bf55b932b248561435729149fdcd36e5a19d0f5dacf4f2b  ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/README.md
+bd0f5019d41368c13ea726639954b2f6e03e0081c9212d2bf31e829c29bcb3a1  ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/runtime-preflight.json
+5febd1087cb2ad3018018c634a9cbb3cd1043155d3e638d52efd94bc0373f9fc  ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/preregistration-delta-candidate.md
+f5b03643aba634fe77265645aa7192b52a3d6f1aa8b5824de9036742ca1d4144  ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/morning-review.md
+2ea1151e7832cf7db176c548557e821208b6a5c78d5248e5653f01533983042b  ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/access-events.jsonl
+097c4f97cfbd913dd0eccfc16db77ba4c2dd8318e1f66e4048b3e4b76a7ee0cf  ignition/evaluation/ignition-229-r4-runtime-prereg-candidate-r0/audit-ledger.jsonl
+c503c5a0b74672038c91e8b849fdb0ff0cb0c894355e448c0eecd819f0544146  ignition/data/foundation/repository-path-classification/classification-manifest.jsonl
