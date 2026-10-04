@@ -205,6 +205,85 @@ Q32I 已通过第三次独立 exact-head 审查，以 PR #62 普通合并并完�
 knowledge registry，也不先引入外部向量库或长期 daemon。只有 pilot 证明存在可重复的净增益，才考虑把它注册为
 Research/Knowledge Pack 的新 bounded operation。
 
+## 2026-10-04 外部架构线索：MoHGE 与异构执行分组路由
+
+外部来源：MoHGE（Mixture of Heterogeneous Grouped Experts，arXiv:2604.23108）。
+这里只记录**跨层架构类比产生的候选设计方向**：MoHGE 是模型内部 token→expert 路由，
+点火是 OS / orchestration-governance layer；二者不是同一层次，不能把论文的模型实验结果
+直接当作点火多 Agent / 多模型编排的有效性证据。
+
+MoHGE 对点火最值得借用的不是“异构专家”这个名词，而是三种分离：
+
+1. **任务需求与具体执行者分离**：先判断需要哪一档能力，再在该档内选执行者；
+2. **认知/能力路由与运行负载分离**：任务复杂度决定进入哪个执行组，健康度、队列和背压决定组内落到哪个 executor；
+3. **逻辑能力组与物理/provider 放置分离**：能力档位不绑定某个模型名、厂商或节点，保持 executor 可替换。
+
+这与点火现有 R2 工程脊柱有直接咬合。当前已有 Pack-aware routing、Reasoner Gateway、
+resource arbitration、bounded scheduler、executor health lease、queue/backpressure 与 federation，
+但这些构件主要回答“这项工作能否执行、何时执行、在哪个已知 executor 上执行”。
+MoHGE 暗示还缺少一层显式的 **capacity matching**：
+
+`Operation / QuestionContract → TaskDemandProfile → ExecutionGroup → Executor → Validator`
+
+其中：
+
+- `TaskDemandProfile` 不应只让模型主观自评“难/简单”，而应优先由可观察特征组成：输入规模、
+  tool/网络需求、DAG 宽度与依赖深度、权限/外部性、freshness、证明/验证要求、失败代价、
+  预估 token/tool/wall-clock budget、是否要求独立 Reviewer 等。
+- `ExecutionGroup` 是 provider-neutral 的能力档，而不是具体模型名。候选可按
+  `LIGHT / STANDARD / DEEP / REVIEW` 或其他可注册 tier 表达；每档必须声明 capability、
+  cost/latency envelope、allowed tools、context ceiling、validation obligation 与 escalation policy。
+- 组内 `Executor` 选择应主要由 health lease、可用性、队列/backpressure、历史 validated-completion
+  和当前资源占用裁决，而不是再次偷偷改变任务的认识论要求。
+
+候选下一迭代方向（工作名，**不分配 task 编号、不自动启动**）：
+
+`CAPABILITY_TIERED_EXECUTION_ROUTING_R0`
+
+建议的最小机制：
+
+1. **Two-level routing**：一级只选 capability tier；二级只在 tier 内选 executor。
+2. **Smallest-sufficient regularizer**：借鉴 MoHGE 对大专家的参数惩罚，但不照搬训练 loss。
+   点火可在 routing objective 中对高成本 executor 增加可审计的 cost/latency/context penalty，
+   默认选择“最小但足够”的执行档；高风险、高外部性或高验证义务任务可以有强制最低档，不能为了省成本降级安全边界。
+3. **Explicit escalation**：低档执行若触发预注册的 validator failure / uncertainty / budget exhaustion，
+   可升级到更高档；首次失败必须保留，升级不能把失败历史抹掉，也不能由 executor 自己扩大权限。
+4. **Group/placement decoupling**：能力组与 provider/host 解耦；同一逻辑 tier 应允许多个可替换 executor，
+   避免把“高能力”绑定到单一模型/厂商形成热点或单点依赖。
+5. **Intra-group load balance**：在同一能力档内，scheduler/health/backpressure 负责负载均衡；
+   不应因为某个 executor 当前空闲就把本该进入更高能力档的任务降级过去，也不应为了追求平均负载牺牲 validator 要求。
+6. **Routing telemetry**：至少记录 tier choice、executor choice、escalation、validated completion、
+   token/tool/wall-clock、queue wait、retry/rollback、失败类型与最终 cost-per-validated-completion。
+   重点不是“更便宜”本身，而是单位**已验证完成**成本是否下降。
+7. **Counterfactual benchmark**：在受控任务集上比较
+   `uniform-high-capacity baseline`、`single-stage executor routing` 与
+   `two-level heterogeneous routing`，测 validated-completion、p95 latency、资源利用、
+   高档过度使用率、错误降档率、升级率和总成本；没有重复性净收益前不得注册为 Current。
+
+需要特别防止的错误：
+
+- **token complexity ≠ task complexity**：MoHGE 的 token 级难度路由不能直接证明 Agent 任务复杂度可被同样估计。
+- **负载均衡 ≠ 正确性**：GPU/worker 利用率更平滑不能升级为更好的知识结论、更多 Owner authority 或更高 epistemic status。
+- **更大模型 ≠ 更高真值权威**：capacity tier 只表示执行资源/能力配置，不授予 truth authority。
+- **路由历史 ≠ 自动学习真值**：历史 validated outcomes 可以更新 routing prior，但不能把高频选择变成事实或机制证明。
+- **成本优化不得越过 claim ceiling**：任何最小能力路由都必须先满足 permission、safety、validation 与 evidence obligation。
+
+与 Sirchmunk/LENS 候选可以组合成一个更完整的长期结构：
+
+`问题需要什么证据 → 去哪里找证据 → 需要多大执行能力 → 选哪个当前可用 executor → 怎样验证完成`
+
+对应：
+
+`EvidenceRequirement / Raw Evidence Navigation → TaskDemandProfile → ExecutionGroup → Executor → Validator`
+
+其中 LENS 解决“**读什么**”，MoHGE 类比解决“**用多大能力、派给谁**”；两者都应服从
+Current/source-first、预算、provenance、claim governance 和 `K13_ASSERTION_NON_ESCALATION`。
+
+建议先做 read-only gap audit + synthetic routing pilot，不直接改现有 scheduler。
+只有在可重复任务集上证明“两级异构路由”能在保持 validated-completion 与安全/治理约束的前提下，
+降低高档 executor 过度使用、tail latency 或 cost-per-validated-completion，才考虑把它注册为
+Agent Runtime / OS Control Plane 的 bounded operation。
+
 ## 交互与 Codex 派发约定（Owner preference）
 
 以下约定属于跨会话 handoff，未来新对话恢复点火工作时应先读取并遵守：
