@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "task229-r4-runtime-request-envelope-r1",
+  "title": "Task229-R4 direct Responses API request envelope R1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["input", "model", "reasoning", "store", "tool_choice", "tools"],
+  "properties": {
+    "input": {"type": "string", "minLength": 1},
+    "model": {"const": "gpt-6-astra"},
+    "reasoning": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["effort"],
+      "properties": {"effort": {"const": "medium"}}
+    },
+    "store": {"const": false},
+    "tool_choice": {"const": "none"},
+    "tools": {"const": []}
+  },
+  "not": {
+    "anyOf": [
+      {"required": ["conversation"]},
+      {"required": ["previous_response_id"]},
+      {"required": ["prompt_cache_key"]},
+      {"required": ["prompt_cache_retention"]},
+      {"required": ["background"]},
+      {"required": ["temperature"]},
+      {"required": ["top_p"]},
+      {"required": ["seed"]},
+      {"required": ["text"]}
+    ]
+  }
+}

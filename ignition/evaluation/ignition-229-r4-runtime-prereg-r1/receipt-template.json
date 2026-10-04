@@ -1,0 +1,42 @@
+{
+  "schema_version": "task229-r4-runtime-prereg-r1-receipt-template",
+  "task_id": "IGNITION-20261004-229-R4-RUNTIME-R1",
+  "marker": "TASK229_R4_RUNTIME_PREREGISTRATION_R1_FROZEN_EXECUTION_NOT_STARTED",
+  "formal_pr": {
+    "number": null,
+    "url": null,
+    "branch": "work/IGNITION-20261004-229-R4-runtime-prereg-r1",
+    "head_sha": null,
+    "base_branch": "work/IGNITION-20261003-229-R4-fresh-interface-conformance-prereg-r0",
+    "parent_head": "b7267180cb2afe735cdcb0e75583d2e356cadf98",
+    "state": "DRAFT_OPEN_UNMERGED"
+  },
+  "runtime_contract_sha256": null,
+  "request_schema_sha256": null,
+  "canary_contract_sha256": null,
+  "runtime_source_sha256": null,
+  "local_deterministic_tests": {
+    "status": null,
+    "command": "python3 -m unittest tests.test_runtime_prereg -v"
+  },
+  "exact_head_ci": {
+    "head_sha": null,
+    "status": null,
+    "required_workflows": ["repository-path-accounting-preflight", "architecture-pages", "foundation-validation", "Task229-R4-R1 package tests"]
+  },
+  "provider_calls_this_task": 0,
+  "canary_calls_this_task": 0,
+  "live_r4_units": 0,
+  "evaluator_runs": 0,
+  "task230_started": false,
+  "r4_execution_started": false,
+  "receipt_base_sha": "73072b03bb8e9b33403db4b4a57925f6a880ae90",
+  "receipt_sha": null,
+  "unresolved_assumptions": [
+    "The authenticated provider account accepts gpt-6-astra through the Responses API at medium effort; the target-blind canary must verify request-level acceptance.",
+    "The provider may not echo the applied reasoning effort; absent an echo, record request-level acceptance only and make no internal backend-effort claim.",
+    "HTTP entity-body capture follows transfer framing removal and is not a packet-level wire capture; JSON output text is decoded and re-encoded as UTF-8 to define successor_payload_bytes.",
+    "store=false does not itself establish zero retention; review current provider/account retention controls before sending any frozen R4 unit input.",
+    "Host-level egress allowlisting to api.openai.com:443 must be arranged where available before a future live process."
+  ]
+}

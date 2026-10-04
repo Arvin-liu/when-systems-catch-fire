@@ -1,0 +1,1 @@
+{"id":"resp_fixture","model":"gpt-6-astra","output":[{"content":[{"annotations":[],"text":"{\"fixture\":\"ok\"}","type":"output_text"}],"role":"assistant","type":"message"}],"status":"completed"}

@@ -1,0 +1,75 @@
+{
+  "schema_version": "task229-r4-runtime-contract-r1",
+  "task_id": "IGNITION-20261004-229-R4-RUNTIME-R1",
+  "parent_formal_head": "b7267180cb2afe735cdcb0e75583d2e356cadf98",
+  "marker": "TASK229_R4_RUNTIME_PREREGISTRATION_R1_FROZEN_EXECUTION_NOT_STARTED",
+  "runtime": {
+    "implementation": "Python standard library direct HTTPS worker",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "fresh_processes": 1,
+    "provider_requests_per_process": 1,
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort_requested": "medium",
+    "model_echo_acceptance": "response.model must equal gpt-6-astra exactly; otherwise fail before interpreting successor output",
+    "effort_acceptance": "reasoning.effort=medium is explicit in request; HTTP 200 plus completed response records API request acceptance. If response.reasoning.effort is present it must equal medium. If absent, record no backend effort echo and make no internal-execution claim.",
+    "data_retention_assumption": "store=false is set. Do not infer zero retention from this flag; endpoint/account retention controls must be reviewed before any future R4 input is sent. See https://platform.openai.com/docs/models/default-usage-policies-by-endpoint.",
+    "request_body_encoding": "UTF-8 canonical JSON, sorted keys, compact separators, no NaN, no trailing newline",
+    "request_fields": {
+      "tools": [],
+      "tool_choice": "none",
+      "store": false,
+      "reasoning": {"effort": "medium"}
+    },
+    "prohibited_request_fields": [
+      "conversation", "previous_response_id", "prompt_cache_key", "prompt_cache_retention",
+      "background", "temperature", "top_p", "seed", "text.format"
+    ],
+    "allowed_model_surfaces": [],
+    "egress": "Worker code connects only to api.openai.com:443 and POSTs only /v1/responses; use host-level egress allowlisting where available. No redirect following, proxy environment, or retry."
+  },
+  "model_input": {
+    "source_bytes": [
+      "frozen R3 successor prompt template",
+      "frozen R3 response schema",
+      "one execution-inputs.jsonl successor_inputs record"
+    ],
+    "framing": "prompt bytes + LF LF + FROZEN_RESPONSE_SCHEMA_JSON_UTF8: LF + schema bytes + LF LF + SUCCESSOR_INPUTS_CANONICAL_JSON_UTF8: LF + canonical JSON of exactly the four successor_inputs fields",
+    "successor_fields": ["case_prose", "policy_json_utf8", "reference_execution_json_utf8", "typed_binding_json_utf8"],
+    "preflight": "Verify exact UTF-8 value hashes from that record before building the request. Do not add input_hashes, matrix metadata, expected outputs, receipt data, or prior responses to model input."
+  },
+  "supervisor": {
+    "wall_timeout_seconds": 300,
+    "process_group": "new session; terminate whole process group with SIGTERM then SIGKILL",
+    "timeout_outcome": "EXTERNAL_TIMEOUT; attempt consumed",
+    "retry_count": 0,
+    "worker_exit": "worker process group cleanup checked before supervisor returns"
+  },
+  "capture": {
+    "transport_layer": "HTTP response entity-body octets after transfer-framing removal and before JSON decoding; not a TCP/TLS wire capture",
+    "accept_encoding": "identity",
+    "content_encoding": "reject any non-identity response content encoding",
+    "transport_entity_body_max_bytes": 1048576,
+    "successor_payload_max_bytes": 16384,
+    "order": [
+      "hash exact request body bytes",
+      "record runtime version, source hash, requested model/effort, run ID, selected input hashes, and request hash before network activity",
+      "persist and hash complete transport response entity-body bytes",
+      "strictly decode and parse transport JSON envelope",
+      "require one completed assistant message and one output_text block",
+      "decode JSON string and strict UTF-8 encode exact output text as successor_payload_bytes",
+      "persist and hash full successor_payload_bytes",
+      "reject if successor_payload_bytes exceeds 16384; never truncate",
+      "leave successor payload JSON/schema validation to a separately authorized later R4 stage"
+    ],
+    "response_envelope_failure": "capture available transport bytes; no retry; classify incomplete, non-200, oversized envelope, malformed JSON, duplicate key, wrong model, refusal, tool/non-text output, multiple messages, or ambiguous text block as non-pass",
+    "payload_parse_in_runtime": false
+  },
+  "task_boundary": {
+    "r4_live_units_this_task": 0,
+    "canary_calls_this_task": 0,
+    "evaluator_runs_this_task": 0,
+    "task230_started": false,
+    "future_execution_authorized": false,
+    "draft_pr_only": true
+  }
+}

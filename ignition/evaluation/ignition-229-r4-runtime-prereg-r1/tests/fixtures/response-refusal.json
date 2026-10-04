@@ -1,0 +1,1 @@
+{"id":"resp_fixture_refusal","model":"gpt-6-astra","output":[{"content":[{"refusal":"I cannot comply.","type":"refusal"}],"role":"assistant","type":"message"}],"status":"completed"}

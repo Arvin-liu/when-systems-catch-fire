@@ -1,0 +1,65 @@
+{
+  "canary_contract_sha256": "54ca64630f604c9e6539034b3eaecbc2dd4624cb286d7986f8ad7affb43aca64",
+  "frozen_r0_package": {
+    "files": [
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/PREREGISTRATION.md",
+        "sha256": "d5c2aab6cdaef376d30365f23adae007ac2e629b172df3d2eed6a63ef0a6fdc9"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/allowed-input-manifest.json",
+        "sha256": "dbcc18ca16cf13e4c8e4673e275b2213505b38a987ee58932ea8d3ab66f5c409"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/execution-inputs.jsonl",
+        "sha256": "3cd0fea03a44a06620d4ee737562e390e1943e23507724972cf671ba8ccbfb64"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/execution-manifest.json",
+        "sha256": "cc709fa7b3b718faf0a19e5ca53b13c7e326fe7cb966daf9d320a7d070a48baa"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/forbidden-input-manifest.json",
+        "sha256": "2f9792036b3eec98be34c0ebe587cc995d147d1e70a9d439529d37f0ac911bff"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/future-execution-instructions.md",
+        "sha256": "4e8a5abb3832acad5ae2bd9f7da824f83e548108d85ee8f5120959a1a2c8f2fb"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/leakage-boundary.md",
+        "sha256": "e52a8104447135e1ff1f51959bb6e277db796d6a23746f7b47a7e2dbe6b11e51"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/mechanical-outcome-contract.json",
+        "sha256": "1e287545098ced1138802588d249719783ece114e10ec3d7916f1536fc6c18ed"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/preregistration.json",
+        "sha256": "9242a2ca11129a247abd604f93f02ee41984b6a68ccd487404bd7bb88b325588"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/receipt-template.json",
+        "sha256": "dd070f1ee804f211f59b5286d25ef15ff14257c9c54e05d9292fc3d546618c9b"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/run-matrix.json",
+        "sha256": "36b935cec936f33cf09b88bfddade161b91ff753f9e22fe0ad853ce00d0f98ec"
+      },
+      {
+        "path": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/tools/build_frozen_execution_package.py",
+        "sha256": "ff69400e91b25cd8c0ae8d4ac10d0c472f41b3be80e70bde3502dd33e417ba52"
+      }
+    ],
+    "sha256_manifest": "ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/SHA256SUMS.txt",
+    "verified": true
+  },
+  "parent_formal_head": "b7267180cb2afe735cdcb0e75583d2e356cadf98",
+  "request_envelope_schema_sha256": "626bd101d0172f2b14988fced9fa3a51594801fa6fada6776fbea7dfb38b3c08",
+  "runtime_contract_sha256": "cef23b496d6342abc5b074f61ffd9a164fb123d9911b72aa02af5d0c06fe18ec",
+  "runtime_sources": {
+    "runtime_executor.py": "03d9e91f19b294992e09ee0c4388143e658191d9b02427d0a0100087112ea64f",
+    "runtime_supervisor.py": "2c8f39008b031fc3acabf533134c52918b445a5602a063e6497ec7ad21039d29"
+  },
+  "schema_version": "task229-r4-runtime-source-manifest-r1"
+}

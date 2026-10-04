@@ -1,0 +1,35 @@
+{
+  "schema_version": "task229-r4-runtime-canary-r1",
+  "pattern": "A_TARGET_BLIND_SYNTHETIC_CANARY",
+  "canary_calls_in_preregistration_task": 0,
+  "required_before_any_r4_unit": true,
+  "attempts": 1,
+  "retry_count": 0,
+  "fresh_process": true,
+  "supervisor_timeout_seconds": 300,
+  "provider": "OpenAI Responses API",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "model_requested": "gpt-6-astra",
+  "reasoning_effort_requested": "medium",
+  "synthetic_input_exact": "Output exactly the ASCII token RUNTIME_CANARY_OK; no other characters.",
+  "expected_successor_payload_ascii": "RUNTIME_CANARY_OK",
+  "forbidden_canary_context": [
+    "Task229 case prose or case identifiers",
+    "Task228 policies or typed bindings",
+    "R3 reference execution or route trace",
+    "expected route, expected digest, outcome label, or evaluator material",
+    "prior R4 response or another canary response"
+  ],
+  "pass_conditions": [
+    "one HTTP 200 response and completed Responses object",
+    "response model field exactly equals gpt-6-astra",
+    "any returned reasoning.effort field equals medium; if absent, record API request acceptance only and do not claim backend effort echo",
+    "empty tools and tool_choice=none were present in the hashed request body",
+    "transport entity bytes and their SHA-256 were persisted before JSON parsing",
+    "successor payload bytes and their SHA-256 were persisted before any parse",
+    "successor payload is exactly the expected 17-byte ASCII token and below the cap",
+    "supervisor confirms the worker completed inside 300 seconds with no retry or surviving process"
+  ],
+  "failure_action": "Stop before all 18 R4 units. Preserve the single canary attempt and its receipt. Do not tune the prompt/request, retry, replace the canary, or begin R4 under this revision; obtain a new preregistration revision.",
+  "interpretation": "The canary establishes endpoint/request-envelope acceptance and the byte-capture path for a synthetic string only. It does not establish R4 behavior, answer quality, or hidden backend execution settings."
+}
