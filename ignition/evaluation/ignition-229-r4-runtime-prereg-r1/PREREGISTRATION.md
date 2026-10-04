@@ -12,7 +12,9 @@ Status: runtime contract frozen for review; no provider call or R4 unit has run.
 - Parent: PR #246, open, Draft, unmerged; frozen head `b7267180cb2afe735cdcb0e75583d2e356cadf98`.
 - R1 branch: `work/IGNITION-20261004-229-R4-runtime-prereg-r1`.
 - R1 subtree: `ignition/evaluation/ignition-229-r4-runtime-prereg-r1/`.
-- R4 scientific package: the unchanged R0 subtree at the frozen parent. R1 adds only a runtime adapter, request/capture/timeout contracts, synthetic local fixtures, and forward instructions.
+- Machine contracts are split into `runtime-contract.json`, `forbidden-runtime-surfaces.json`, `timeout-contract.json`, and `payload-byte-contract.json`; implementation source hashes are pinned by `executor-source-manifest.json`.
+- R4 scientific package: the unchanged R0 subtree at the frozen parent. The R1 scientific delta is limited to a runtime adapter, request/capture/timeout contracts, synthetic local fixtures, and forward instructions; repository-level path/Foundation projections account for the added operational files without modifying scientific inputs.
+- All new paths remain repository-accounted. R1 package files are excluded from automatic Foundation discovery as `EXCLUDED_EVALUATION_EVIDENCE_ONLY`; the package workflow is excluded as `EXCLUDED_PLATFORM_CODE_EXCLUDED`. Generated Foundation projections are reconciled by the official deterministic generator.
 - R4 matrix remains the frozen 18 units, one attempt each, in its exact order. R1 changes no prompt, policy, binding, case prose, response schema, route schema, reference result, expected digest, outcome rule, or evaluator.
 
 ## Runtime choice
@@ -42,6 +44,8 @@ Canary calls in this preregistration task: `0`. The canary is a future gate and 
 At R1 closeout: `R4_EXECUTION_STARTED=false`, `LIVE_SUCCESSOR_RUNS=0`, `CANARY_CALLS=0`, `EVALUATOR_RUNS=0`, `TASK230_STARTED=false`. A green local test or exact-head CI result establishes only the reproducibility and completeness of this runtime preregistration package. It is not provider acceptance, a canary result, an R4 result, Owner acceptance, or authority to execute.
 
 No R4 live unit, evaluator, or Task230 may be run from this task. PR #244 and PR #246 remain open, Draft, unmerged, and unchanged. This PR must remain Draft and unmerged.
+
+The PR-scoped workflow `.github/workflows/task229-r4-r1-runtime-prereg.yml` runs only synthetic package tests, Python compilation, R1/R0 checksum checks, and an exact R0-tree comparison. It makes no provider request and does not invoke the R4 validator or evaluator.
 
 ## Required review residual
 

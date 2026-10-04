@@ -6,7 +6,7 @@ This package is preregistration only. Neither its marker nor the parent R0 next-
 
 1. Reconfirm this exact R1 PR head, Draft/unmerged state, frozen parent `b7267180cb2afe735cdcb0e75583d2e356cadf98`, and unchanged PR #244/#246 state.
 2. Obtain explicit Owner authorization for the synthetic canary. Review the access history in `leakage-boundary.md`; new R1 access events still need Owner/GPT disposition before any positive R4 result.
-3. Verify all 12 frozen R0 artifact hashes against its committed `SHA256SUMS.txt`; verify the selected R4 runtime source hashes from `source-manifest.json`.
+3. Verify all 12 frozen R0 artifact hashes against its committed `SHA256SUMS.txt`; verify the selected R4 runtime source hashes from `executor-source-manifest.json`.
 4. Set `TASK229_R4_EXECUTION_AUTHORIZATION=OWNER_AUTHORIZED_R4_EXECUTION` only for the authorized process. Supply `OPENAI_API_KEY` through a secret environment mechanism. Never print or store the key.
 5. Run one canary in a fresh external supervisor process, for example:
 

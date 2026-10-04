@@ -1,0 +1,33 @@
+name: Task229-R4-R1 package tests
+
+on:
+  pull_request:
+    paths:
+      - 'ignition/evaluation/ignition-229-r4-runtime-prereg-r1/**'
+      - '.github/workflows/task229-r4-r1-runtime-prereg.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  package-tests:
+    name: Task229-R4-R1 package tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run deterministic runtime preregistration tests
+        working-directory: ignition/evaluation/ignition-229-r4-runtime-prereg-r1
+        run: |
+          python3 -m unittest tests.test_runtime_prereg -v
+          python3 -m py_compile runtime_executor.py runtime_supervisor.py
+          sha256sum --check SHA256SUMS.txt
+      - name: Verify frozen R0 package hashes
+        run: sha256sum --check ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/SHA256SUMS.txt
+      - name: Verify frozen R0 source tree remains unchanged
+        run: git diff --exit-code b7267180cb2afe735cdcb0e75583d2e356cadf98 HEAD -- ignition/evaluation/ignition-229-r4-fresh-interface-conformance-r0/
