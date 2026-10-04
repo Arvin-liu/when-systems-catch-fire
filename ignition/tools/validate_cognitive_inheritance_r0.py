@@ -101,6 +101,8 @@ ALLOWED_CHANGED_PREFIXES = (
 )
 ALLOWED_CHANGED_FILES = frozenset({
     "ignition/tools/validate_cognitive_inheritance_r0.py",
+    # This PR-scoped workflow runs only deterministic, synthetic R1 package checks.
+    ".github/workflows/task229-r4-r1-runtime-prereg.yml",
     "ignition/tests/test_cognitive_inheritance_r0.py",
     "ignition/tests/test_target_repository_preflight_r0_1.py",
     "ignition/tests/test_evaluation_plane_r0_1.py",
