@@ -14,7 +14,6 @@
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/q33-governance-validation.yml"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/repository-path-accounting-preflight.yml"}
 {"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/task229-r4-r1-runtime-prereg.yml"}
-{"category": "TOOL_OR_WORKFLOW", "matched_rule": "TOOL_OR_WORKFLOW", "path": ".github/workflows/task229-r4-r2-2-local-proof.yml"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": ".gitignore"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "AGENTS.md"}
 {"category": "REPOSITORY_GOVERNANCE_DOC", "matched_rule": "REPOSITORY_GOVERNANCE_DOC", "path": "LICENSE"}

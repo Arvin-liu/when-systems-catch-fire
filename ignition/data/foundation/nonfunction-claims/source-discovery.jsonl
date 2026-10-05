@@ -15,7 +15,6 @@
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":".github/workflows/q33-governance-validation.yml"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":".github/workflows/repository-path-accounting-preflight.yml"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":".github/workflows/task229-r4-r1-runtime-prereg.yml"}
-{"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_PLATFORM_CODE_EXCLUDED","exclusion_reason":"EXCLUDED_PLATFORM_CODE_EXCLUDED","path":".github/workflows/task229-r4-r2-2-local-proof.yml"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE","exclusion_reason":"EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE","path":".gitignore"}
 {"candidate_fragments":6,"canonical_claim_ids":["NFC-10d5adaa1e1afb60","NFC-2ba1d481c5b5dd84","NFC-69c49f8a9603e420","NFC-6e4b3099629ffa1a","NFC-87c4d49f5637465e","NFC-bea12c8494f76cf4"],"coverage_status":"SCANNED_REGISTERED","exclusion_reason":null,"path":"ACKNOWLEDGEMENTS.md"}
 {"candidate_fragments":0,"canonical_claim_ids":[],"coverage_status":"EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE","exclusion_reason":"EXCLUDED_MIGRATED_SOURCE_UNAVAILABLE","path":"AGENTS.md"}
