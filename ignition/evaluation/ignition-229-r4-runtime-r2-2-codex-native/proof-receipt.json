@@ -1,0 +1,332 @@
+{
+  "CODEX_HOME_config_assertion": {
+    "config_path": "$CODEX_HOME/config.toml",
+    "config_sha256_by_run": {
+      "run_1": "f6c84010409306ed24a847151c80bd11a624be8f2a5fa0b0c6a32146d10989e1",
+      "run_2": "6dd80f5339d13fc7a2614ac99a7041f32d2d500a1bafe8a461a27725bc6e55b8"
+    },
+    "credentials": "No OPENAI_API_KEY or copied ChatGPT auth was provided to the isolated process.",
+    "prelaunch_realpath_and_TOML_parse": "PASS for each completed repetition",
+    "provider_config": "model_provider=local_loopback; base_url=http://127.0.0.1:<per-run-port>/v1; wire_api=responses; requires_openai_auth=false; supports_websockets=false; retries=0",
+    "sibling_run_root_config": "absent in both completed repetitions",
+    "status": "PASS",
+    "user_layer_origin": "config/read identified the exact isolated user config path before thread/start"
+  },
+  "codex_identity": {
+    "app_server_initialized": true,
+    "app_server_started": true,
+    "binary_sha256": "61b0194f3bb6534439c8d26a3ed57d0805f84b884588b761795323eeb92fcf70",
+    "identity_status": "PASS_VERSION_PATH_SHA256",
+    "resolved_path": "/Users/zhiyuan/.local/lib/node_modules/@openai/codex/bin/codex.js",
+    "version": "codex-cli 0.159.2"
+  },
+  "counts": {
+    "R4_live_units_attempted": 0,
+    "Ready_or_merge_actions": 0,
+    "Task230_started": false,
+    "evaluator_runs": 0,
+    "external_provider_or_model_requests_transmitted": 0,
+    "live_canary_attempts": 0,
+    "local_loopback_mock_model_requests_in_aborted_attempt": 0,
+    "local_loopback_mock_model_requests_in_two_complete_repetitions": 2,
+    "non_loopback_proxy_attempts": 0
+  },
+  "determinism": {
+    "assistant_payload_sha256": "b7dd3bac1fc07f459389c90a16fd74de951fcf78a0ef298b5cf0afdce292d009",
+    "complete_fresh_repetitions": 2,
+    "nondeterministic_fields": [
+      "loopback port",
+      "JSON-RPC request IDs",
+      "thread/turn/response IDs",
+      "turn timestamp including serialized turn_started_at_unix_ms"
+    ],
+    "normalized_request_sha256": "bad3f12ab89a7d5150dbb8fd3c1d75696208212a0dc656248687628de953d2a1",
+    "process_cleanup": "clean exit 0 in both complete repetitions",
+    "same_assistant_payload": true,
+    "same_effective_local_provider": true,
+    "same_model_facing_tool_inventory": true,
+    "same_normalized_model_request": true,
+    "same_thread_isolation": true,
+    "status": "PASS"
+  },
+  "effective_local_provider_config": {
+    "approval": "never",
+    "base_url": "127.0.0.1 loopback only",
+    "config_read_response_sha256_by_run": {
+      "run_1": "1e4a3f1b5f7cc5a796f49e34613553501a8f489b835f328339c88648d6025c40",
+      "run_2": "8cec892bff03271a5ab5ba90189f156e4e9eaf9a084b27af355f1176b163055d"
+    },
+    "mcp_servers": "absent",
+    "provider_id": "local_loopback",
+    "request_max_retries": 0,
+    "requires_openai_auth": false,
+    "root_sandbox": "read-only",
+    "status": "PASS_BEFORE_THREAD_START_IN_BOTH_COMPLETED_REPETITIONS",
+    "stream_max_retries": 0,
+    "web_search": "disabled"
+  },
+  "egress_boundary": {
+    "external_provider_or_model_requests_transmitted": 0,
+    "guard": "Per-process macOS sandbox-exec allowed the exact 127.0.0.1 mock listener; the loopback proxy rejected any non-loopback target without forwarding.",
+    "host_wide_isolation_claim": false,
+    "non_loopback_attempts_observed_by_proxy": 0
+  },
+  "formal_parent": {
+    "branch": "work/IGNITION-20261004-229-R4-runtime-prereg-r1",
+    "commit": "ef819228adf52bd162ba834095fb2489b348cb8e",
+    "pr_number": 247,
+    "pr_state": "OPEN_DRAFT_UNMERGED",
+    "repository": "Arvin-liu/when-systems-catch-fire"
+  },
+  "formal_pr_and_ci": "Record exact PR/head/check run IDs in the independent 1111 receipt; do not self-embed post-commit or post-CI identifiers.",
+  "instruction": {
+    "branch": "relay/independent/IGNITION-20261005-229-R4-runtime-r2-2-local-provider-proof",
+    "commit": "a64c24f3081a3cb585a9294bc6999fd0b62f9593",
+    "content_sha256": "961e0ae1d008fb1dd988c2c58da6a49f2f281e53937d5eb7391ba3928cacdcf9",
+    "git_blob_sha": "cfb8bf7e293f41b006764cb85b12a198e46e8fcc",
+    "path": "instructions/IGNITION-2026-10-05-229-R4-runtime-r2-2-local-provider-proof.md",
+    "repository": "Arvin-liu/1111"
+  },
+  "marker": "TASK229_R4_RUNTIME_PREREGISTRATION_R2_2_LOCAL_TOOL_PROOF_FROZEN_EXECUTION_NOT_STARTED",
+  "model_facing_tools_assertion": {
+    "no_app_plugin_memory_multi_agent_image_input_update_plan_tool": true,
+    "no_mcp_or_dynamic_tool": true,
+    "no_shell_exec_unified_exec": true,
+    "no_web_search": true,
+    "no_workspace_environment_capability_in_tool_surface": true,
+    "nonempty_tool_namespace_fields": [],
+    "status": "PASS_BOTH_COMPLETED_REPETITIONS",
+    "tools_field": "empty_array in both requests",
+    "wire_observation": "Actual Codex host-side HTTP request body captured by the local loopback listener before JSON parsing."
+  },
+  "predecessor_review": {
+    "commit": "642b25375de7c815881257826635ed2999552204",
+    "verdict": "R2_1_STOP_VALID_LOCAL_PROVIDER_CONFIG_NOT_LOADED_ZERO_PROVIDER_CALLS"
+  },
+  "preflight_and_aborted_attempts": {
+    "aborted_attempt": {
+      "config_read_response_sha256": "d26800aab0b3979ab1df4aca6b90a50d6ddcdaa5dada80c3facf5beb444b1cd6",
+      "config_sha256": "37eb8e6958dca1e7c9d976231ac546f13093431ca784b8116827ad2aa4ef3580",
+      "failure_artifact_sha256": "69fe2fa410d3f63d0bea8f9760fa127a1d048dca02399d6edd678e82b69d1317",
+      "initial_harness_marker": "TASK229_R4_RUNTIME_R2_2_NO_TOOL_BOUNDARY_FAILED",
+      "local_mock_model_requests": 0,
+      "marker_interpretation": "The preliminary harness mapped any warning before request capture to NO_TOOL_BOUNDARY_FAILED. No model request was captured, so this was an aborted attempt and not evidence that a tool was present. It is excluded from the two complete repetitions.",
+      "non_loopback_proxy_attempts": 0,
+      "notifications_sha256": "7dbe108fdf9df7429804dd2e626c625643dba06db955f338fccb3c8e981c5fd1",
+      "status": "ABORTED_BEFORE_LOCAL_MODEL_REQUEST_NOT_A_TOOL_INVENTORY_RESULT",
+      "thread_start_request_sha256": "590b02e4cd44db9f8864d2d13ebbbb5c4c6d089b4dc663f329eb8f65ae786324",
+      "thread_start_response_sha256": "cdfea863e60c33eb07dac5e4fd2bad6085263772b214fb15e9442a2abb5183c5",
+      "turn_start_request_sha256": "8b2f2afb44dd5a600c1cc775690740275889f0c89f04202435b7ccdbc9be78fd",
+      "warning": "Model metadata for `r2-2-local-synthetic` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+    },
+    "config_only_preflight": {
+      "config_read_response_sha256": "f1809996c47c5ff78ab341018e04a0c062226af3115055774f697148616d46fa",
+      "config_sha256": "3ab4b04b6bf31767c8d4c527f2e5e35c869b2ea5e2edb878c64f3470485af2c3",
+      "local_mock_model_requests": 0,
+      "offline_reconciliation_sha256": "e16e4ef075dae63bd5e44a1058a3b635e3fc16a81827ef54e7c7c52e3377f73e",
+      "status": "PASS_CONFIG_ONLY_NO_THREAD_OR_MODEL_REQUEST",
+      "thread_start_sent": false
+    }
+  },
+  "repetitions": [
+    {
+      "assertions": {
+        "assistant_payload_sha256": "b7dd3bac1fc07f459389c90a16fd74de951fcf78a0ef298b5cf0afdce292d009",
+        "capture_hashes": {
+          "app-server-client-transcript.bin": "4e5899cdee1479c1fbf8759d90b94860f64ac531b4e6f8e9253b8f0dee5ab29b",
+          "app-server-notifications.raw": "22d2d9ba8d200070d1315e3e524edbf20066eab240fc64dd959b84792f8061aa",
+          "assistant-payload.raw": "b7dd3bac1fc07f459389c90a16fd74de951fcf78a0ef298b5cf0afdce292d009",
+          "host-request-01.body.raw": "47477262dc09626b86ecf13d6a7b0e737a6a8851158b00769f2d386f6e0741b6",
+          "host-request-01.http.raw": "be8c06b9a8d37306ec5c20f0eebaca622d6f71626e2f4965de181a63d2a18859",
+          "mock-response.raw": "a6e498740d613e6643902f50f7a295689bf558e4d29754eaa79990df7c9f311a",
+          "rpc-01-initialize-request.raw": "ce70c7d7d2341d52633f4354cb50338fa651f95e4bf8949351011c6301241849",
+          "rpc-01-initialize-response.raw": "77f13266c35c5f51dd9f8b9697f37c61099ca39632bc22af62e816488e69c9c8",
+          "rpc-02-config-read-request.raw": "629d35427481add4c93cd22059c768218580e35905c711ad25b0ff31e786036d",
+          "rpc-02-config-read-response.raw": "1e4a3f1b5f7cc5a796f49e34613553501a8f489b835f328339c88648d6025c40",
+          "rpc-03-thread-start-request.raw": "fc1ed131510b68690649b25ea08d1fa4b757b7e2486ff3a96ce216eb650dd5df",
+          "rpc-03-thread-start-response.raw": "2041b3f35c434edf03a878be506729d5a7e3b0d75b917f381de7c975d0bc2a3e",
+          "rpc-04-turn-start-request.raw": "7191064ccb7d589a409c740fef2beb590498b77c3b9b037168cbc95fe10e6180",
+          "rpc-04-turn-start-response.raw": "64dedd12773795bf648fdd07ee21a0cbd711f6840c7a930cd8d8c17a7cace2a4"
+        },
+        "capture_manifest_sha256": "4a5a13c585ffd15fa94f88690aa08558f18d32f286f8339a8eadc8e0e09baa0e",
+        "config_assertion_sha256": "2f700cf31f1167fcce3e8dcca59295bf43fbffe06b6c16f6a985b0d3a72344ec",
+        "config_file_sha256": "f6c84010409306ed24a847151c80bd11a624be8f2a5fa0b0c6a32146d10989e1",
+        "config_parsed_as_TOML": true,
+        "config_written_realpath_equals_CODEX_HOME_config_toml": true,
+        "effective_approval_policy": "never",
+        "effective_base_url": "http://127.0.0.1:60289/v1",
+        "effective_base_url_loopback": true,
+        "effective_config_response_sha256": "1e4a3f1b5f7cc5a796f49e34613553501a8f489b835f328339c88648d6025c40",
+        "effective_default_permissions": ":read-only",
+        "effective_mcp_disable_map": {},
+        "effective_provider_id": "local_loopback",
+        "effective_sandbox_mode": "read-only",
+        "effective_web_search": "disabled",
+        "full_loopback_http_request_sha256": "be8c06b9a8d37306ec5c20f0eebaca622d6f71626e2f4965de181a63d2a18859",
+        "loopback_mock_requests": 1,
+        "model_facing_tool_assertion": "PASS_EMPTY_TOOLS_FIELD",
+        "non_loopback_proxy_attempts": 0,
+        "normalized_model_request_sha256": "bad3f12ab89a7d5150dbb8fd3c1d75696208212a0dc656248687628de953d2a1",
+        "normalized_thread_isolation_sha256": "caa40e2590925d71612c49f7a547c1c905309c6bfb4bb56774551fc66371b970",
+        "process_cleanup": {
+          "clean_exit": true,
+          "exit_code": 0,
+          "stdin_closed": true
+        },
+        "request_body_sha256": "47477262dc09626b86ecf13d6a7b0e737a6a8851158b00769f2d386f6e0741b6",
+        "request_max_retries": 0,
+        "requested_dynamic_tools": [],
+        "requested_selected_capability_roots": [],
+        "requires_openai_auth": false,
+        "sibling_config_absent": true,
+        "stream_max_retries": 0,
+        "thread_start_environments": [],
+        "thread_start_ephemeral": true,
+        "thread_start_model": "r2-2-local-synthetic",
+        "thread_start_model_provider": "local_loopback",
+        "thread_start_runtime_workspace_roots": [],
+        "thread_start_sandbox": {
+          "networkAccess": false,
+          "type": "readOnly"
+        },
+        "tool_assertion": {
+          "no_app_plugin_memory_multi_agent_image_input_update_plan_tool": true,
+          "no_mcp_or_dynamic_tool": true,
+          "no_shell_exec_unified_exec": true,
+          "no_web_search": true,
+          "no_workspace_environment_capability_in_tool_surface": true,
+          "nonempty_tool_namespace_keys": [],
+          "pass": true,
+          "tools_field": "empty_array",
+          "wire_format": "OpenAI Responses API request JSON captured from Codex 0.159.2 host-side HTTP client to loopback mock"
+        },
+        "user_layer_path_matches_CODEX_HOME_config_toml": true,
+        "warnings": [
+          "Model metadata for `r2-2-local-synthetic` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+        ]
+      },
+      "run": 1,
+      "status": "COMPLETE_PASS"
+    },
+    {
+      "assertions": {
+        "assistant_payload_sha256": "b7dd3bac1fc07f459389c90a16fd74de951fcf78a0ef298b5cf0afdce292d009",
+        "capture_hashes": {
+          "app-server-client-transcript.bin": "c073a666588b3e49bc08202071f9e1b7578376d5c3bce695777a2262f772e522",
+          "app-server-notifications.raw": "9d086a17d59e76c775206bab8bc59c7a8b47057c2bf315554dfbd90171c1f505",
+          "assistant-payload.raw": "b7dd3bac1fc07f459389c90a16fd74de951fcf78a0ef298b5cf0afdce292d009",
+          "host-request-01.body.raw": "70920017979b97eb89613b5f3e8fe34aaa05f607136f5d9d2baead09c0e790b9",
+          "host-request-01.http.raw": "ce26f98297ac0624391818d96605b573c0f44d2204f3964165d2a966be0679bd",
+          "mock-response.raw": "a6e498740d613e6643902f50f7a295689bf558e4d29754eaa79990df7c9f311a",
+          "rpc-01-initialize-request.raw": "ce70c7d7d2341d52633f4354cb50338fa651f95e4bf8949351011c6301241849",
+          "rpc-01-initialize-response.raw": "d63ffde0111fcdadbf3d5e907c74857bbe619bfa4724f10bd1768759f273c24e",
+          "rpc-02-config-read-request.raw": "4cde039baa65777a9332dc7aa7fa9b2b7cb12259762dea2702b734f193836520",
+          "rpc-02-config-read-response.raw": "8cec892bff03271a5ab5ba90189f156e4e9eaf9a084b27af355f1176b163055d",
+          "rpc-03-thread-start-request.raw": "3ac0917d9e6791036c782ac8fa5f8f58501ae9e5ccb0b1ce86289b845b521873",
+          "rpc-03-thread-start-response.raw": "7481507dd59cb2f76c1ba2adcceb64e0e88419e7f26d20480a7d1ebcc9790b5b",
+          "rpc-04-turn-start-request.raw": "7341959e4664d6ed4e010c07fa26103fe2cb0560282d0e93d556f8792d666cf2",
+          "rpc-04-turn-start-response.raw": "afafa7f5aebbc60e842e8f61f4a2fc05964fbc82e2b2b4d8747b753b6834b034"
+        },
+        "capture_manifest_sha256": "e3e8ba5175c254ea51763535e34813c60766531b96a7aa0312187f4addb38114",
+        "config_assertion_sha256": "c1c12ed9c8699f2f147fb1d9dd18c373a273f766ab74dfe4074b27d3737e684b",
+        "config_file_sha256": "6dd80f5339d13fc7a2614ac99a7041f32d2d500a1bafe8a461a27725bc6e55b8",
+        "config_parsed_as_TOML": true,
+        "config_written_realpath_equals_CODEX_HOME_config_toml": true,
+        "effective_approval_policy": "never",
+        "effective_base_url": "http://127.0.0.1:60941/v1",
+        "effective_base_url_loopback": true,
+        "effective_config_response_sha256": "8cec892bff03271a5ab5ba90189f156e4e9eaf9a084b27af355f1176b163055d",
+        "effective_default_permissions": ":read-only",
+        "effective_mcp_disable_map": {},
+        "effective_provider_id": "local_loopback",
+        "effective_sandbox_mode": "read-only",
+        "effective_web_search": "disabled",
+        "full_loopback_http_request_sha256": "ce26f98297ac0624391818d96605b573c0f44d2204f3964165d2a966be0679bd",
+        "loopback_mock_requests": 1,
+        "model_facing_tool_assertion": "PASS_EMPTY_TOOLS_FIELD",
+        "non_loopback_proxy_attempts": 0,
+        "normalized_model_request_sha256": "bad3f12ab89a7d5150dbb8fd3c1d75696208212a0dc656248687628de953d2a1",
+        "normalized_thread_isolation_sha256": "caa40e2590925d71612c49f7a547c1c905309c6bfb4bb56774551fc66371b970",
+        "process_cleanup": {
+          "clean_exit": true,
+          "exit_code": 0,
+          "stdin_closed": true
+        },
+        "request_body_sha256": "70920017979b97eb89613b5f3e8fe34aaa05f607136f5d9d2baead09c0e790b9",
+        "request_max_retries": 0,
+        "requested_dynamic_tools": [],
+        "requested_selected_capability_roots": [],
+        "requires_openai_auth": false,
+        "sibling_config_absent": true,
+        "stream_max_retries": 0,
+        "thread_start_environments": [],
+        "thread_start_ephemeral": true,
+        "thread_start_model": "r2-2-local-synthetic",
+        "thread_start_model_provider": "local_loopback",
+        "thread_start_runtime_workspace_roots": [],
+        "thread_start_sandbox": {
+          "networkAccess": false,
+          "type": "readOnly"
+        },
+        "tool_assertion": {
+          "no_app_plugin_memory_multi_agent_image_input_update_plan_tool": true,
+          "no_mcp_or_dynamic_tool": true,
+          "no_shell_exec_unified_exec": true,
+          "no_web_search": true,
+          "no_workspace_environment_capability_in_tool_surface": true,
+          "nonempty_tool_namespace_keys": [],
+          "pass": true,
+          "tools_field": "empty_array",
+          "wire_format": "OpenAI Responses API request JSON captured from Codex 0.159.2 host-side HTTP client to loopback mock"
+        },
+        "user_layer_path_matches_CODEX_HOME_config_toml": true,
+        "warnings": [
+          "Model metadata for `r2-2-local-synthetic` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+        ]
+      },
+      "run": 2,
+      "status": "COMPLETE_PASS"
+    }
+  ],
+  "schema": "task229-r4-runtime-r2-2-local-provider-proof/v1",
+  "scope": "Exact Codex 0.159.2 host-side model-facing request serialization with isolated local loopback mock only.",
+  "synthetic_turn": {
+    "mock_assistant_payload": "LOCAL_TOOL_INVENTORY_PROBE_OK",
+    "prompt": "Return exactly LOCAL_TOOL_INVENTORY_PROBE_OK.",
+    "provider_kind": "deterministic unauthenticated local mock, not an external model"
+  },
+  "thread_isolation": {
+    "approval_policy": "never",
+    "dynamic_tools": [],
+    "environments": [],
+    "ephemeral": true,
+    "mcp_servers": "all discovered servers disabled; none configured",
+    "root_tool_and_feature_disables": "accepted in config/read and thread/start: apps, code mode, contexts, hooks, image, memories, multi-agent, plugins, shell, unified-exec, web, request permissions, request user input, update plan, tool suggest, view image, skills/instructions",
+    "runtime_workspace_roots": [],
+    "sandbox": "readOnly, networkAccess=false",
+    "selected_capability_roots": [],
+    "status": "PASS_BOTH_COMPLETED_REPETITIONS"
+  },
+  "unresolved_assumptions": [
+    "Codex emitted a fallback-metadata warning for the synthetic local model in both complete repetitions. The exact warning was recorded. Both config/read and thread/start confirmed local_loopback; both host requests went only to the loopback mock, and the turn completed. This proof does not evaluate model metadata quality or model behavior.",
+    "One preliminary run was stopped by an overly broad warning gate before any local mock model request. It is recorded separately, is not counted as a complete repetition, and did not observe a model-facing tool surface.",
+    "The proxy counter covers targets that reached the proxy. Direct non-loopback egress was denied by the process-scoped seatbelt guard; no host-wide isolation claim is made.",
+    "Raw protocol/model request bytes are retained only in local temporary roots; this repository package carries hashes and safe semantic assertions, not system/developer prompt contents."
+  ],
+  "upstream_source": {
+    "codex-rs/app-server-protocol/src/protocol/v2/config.rs": "42b7df7c4543344662ffbdcfd590ee04c1d1f92d",
+    "codex-rs/app-server/src/config_manager_service.rs": "f7377c5b76e5c1d5c7787711c6880363b9f7deaf",
+    "codex-rs/app-server/tests/common/config.rs": "f359b40f89c9ab9f997aef1cbf6b614d4eae4aaf",
+    "codex-rs/app-server/tests/common/test_app_server.rs": "39fbef236c49beb1aed918807b821ed3c526ffa5",
+    "codex-rs/app-server/tests/suite/v2/config_rpc.rs": "347db91b24164b924456291a4cfea8fccb136fe7",
+    "codex-rs/app-server/tests/suite/v2/turn_start.rs": "da6605b6d4b38796eab313dcdd7c54aa20230bf3",
+    "codex-rs/config/src/config_toml.rs": "84b532177e34cb159313484d7990925672f064cb",
+    "codex-rs/core/src/config/mod.rs": "571fc2d81b51d77f34084f28b296ebd1931b31e2",
+    "codex-rs/features/src/lib.rs": "ebd6d89f6c967e49424e9e526235d90988215dc3",
+    "codex-rs/model-provider-info/src/lib.rs": "ead5e9f419d07322552a56d3a0c84c099168e0b5",
+    "codex-rs/tui/src/temporary_structured_request.rs": "574ab35ef024e6dacf7a7f0cb9d95d4e0a684cfc",
+    "peeled_commit": "ff6aec96948b70d94983af2641a6b67c94faeff5",
+    "tag": "openai/codex@rust-v0.159.2",
+    "tag_object": "8b9fa496bbf2c47aebd62e85a080b9a522a455b5"
+  }
+}

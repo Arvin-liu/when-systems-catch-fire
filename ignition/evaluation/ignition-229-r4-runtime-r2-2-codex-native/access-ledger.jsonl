@@ -1,0 +1,7 @@
+{"event": "instruction", "ref": "Arvin-liu/1111@a64c24f3081a3cb585a9294bc6999fd0b62f9593", "scope": "Pinned R2.2 instruction and receipt/marker requirements."}
+{"event": "predecessor_review", "ref": "Arvin-liu/1111@642b25375de7c815881257826635ed2999552204", "scope": "R2.1 local-provider config-not-loaded stop and zero provider-call boundary."}
+{"event": "formal_parent", "ref": "Arvin-liu/when-systems-catch-fire@ef819228adf52bd162ba834095fb2489b348cb8e", "scope": "AGENTS.md, repository operating/state boundaries, R1 runtime package and workflow, path-classification contract/tool, frozen R0/R1 path identities."}
+{"event": "upstream_source", "ref": "openai/codex@rust-v0.159.2", "scope": "Codex 0.159.2 temporary structured request, config/provider/features and app-server local mock test source blobs listed in proof-receipt.json."}
+{"event": "runtime_capture", "scope": "Isolated CODEX_HOME TOML, app-server config/read, thread/start, synthetic turn, host-side loopback request, local mock response, notifications and cleanup metadata; hashes only copied into this repo."}
+{"event": "not_accessed", "scope": "R4 unit prompts/answers, Task228 policy/bindings, R3 reference traces, expected outputs, evaluator artifacts and provider credentials."}
+{"event": "not_performed", "scope": "External provider/model request, live canary, R4 unit, evaluator run, Task230, Ready, merge."}
