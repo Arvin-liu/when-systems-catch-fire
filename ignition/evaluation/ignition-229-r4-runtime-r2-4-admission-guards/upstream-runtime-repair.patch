@@ -1,0 +1,1081 @@
+diff --git a/codex-rs/Cargo.lock b/codex-rs/Cargo.lock
+index a24fb43..172f81b 100644
+--- a/codex-rs/Cargo.lock
++++ b/codex-rs/Cargo.lock
+@@ -2045,0 +2046 @@ dependencies = [
++ "libc",
+@@ -2052,0 +2054 @@ dependencies = [
++ "sha2 0.10.9",
+@@ -3000,0 +3003 @@ dependencies = [
++ "sha2 0.10.9",
+diff --git a/codex-rs/codex-api/Cargo.toml b/codex-rs/codex-api/Cargo.toml
+index 82bec69..b3b86e0 100644
+--- a/codex-rs/codex-api/Cargo.toml
++++ b/codex-rs/codex-api/Cargo.toml
+@@ -18,0 +19 @@ http = { workspace = true }
++libc = { workspace = true }
+@@ -21,0 +23 @@ serde_json = { workspace = true, features = ["raw_value"] }
++sha2 = { workspace = true }
+diff --git a/codex-rs/codex-api/src/endpoint/responses.rs b/codex-rs/codex-api/src/endpoint/responses.rs
+index 9c41a80..5dbb732 100644
+--- a/codex-rs/codex-api/src/endpoint/responses.rs
++++ b/codex-rs/codex-api/src/endpoint/responses.rs
+@@ -23,0 +24 @@ use std::sync::OnceLock;
++use std::path::Path;
+@@ -122,0 +124,55 @@ impl<T: HttpTransport> ResponsesClient<T> {
++    /// Executes one non-streaming request for the frozen Task229 native-auth canary.
++    /// The endpoint session validates and captures the prepared body before transport.
++    pub async fn execute_task229_capture_once(
++        &self,
++        body: Value,
++        expected_body: &[u8],
++        capture_dir: &Path,
++        native_chatgpt_auth: bool,
++        run_id: &str,
++        source_commit: &str,
++        source_sha256: &str,
++        input_sha256: &str,
++        run_kind: &str,
++    ) -> Result<codex_client::Response, ApiError> {
++        let mut headers = HeaderMap::new();
++        headers.insert(http::header::ACCEPT, HeaderValue::from_static("application/json"));
++        headers.insert(
++            http::header::ACCEPT_ENCODING,
++            HeaderValue::from_static("identity"),
++        );
++        self.session
++            .execute_capture_once(
++                Method::POST,
++                "/responses",
++                headers,
++                body,
++                "https://api.openai.com/v1/responses",
++                expected_body,
++                capture_dir,
++                native_chatgpt_auth,
++                1_048_576,
++                run_id,
++                source_commit,
++                source_sha256,
++                input_sha256,
++                run_kind,
++            )
++            .await
++    }
++
++    /// Persists exact Task229 successor bytes and returns their SHA-256 digest.
++    pub fn capture_task229_successor_payload(
++        &self,
++        capture_dir: &Path,
++        payload: &[u8],
++    ) -> Result<String, ApiError> {
++        self.session
++            .capture_task229_successor_payload(capture_dir, payload)
++    }
++
++    /// Computes a SHA-256 digest for a Task229 capture summary.
++    pub fn task229_sha256_hex(bytes: &[u8]) -> String {
++        crate::endpoint::session::sha256_hex(bytes)
++    }
++
+diff --git a/codex-rs/codex-api/src/endpoint/session.rs b/codex-rs/codex-api/src/endpoint/session.rs
+index 7849225..40d252c 100644
+--- a/codex-rs/codex-api/src/endpoint/session.rs
++++ b/codex-rs/codex-api/src/endpoint/session.rs
+@@ -16,0 +17,5 @@ use std::sync::Arc;
++use std::fs::OpenOptions;
++use std::io::Write;
++use std::path::Path;
++use std::time::Duration;
++use sha2::Digest;
+@@ -115,0 +121,154 @@ impl<T: HttpTransport> EndpointSession<T> {
++    /// Sends the single bounded Task229 runtime request after recording its exact body.
++    /// This path deliberately bypasses the provider retry policy.
++    pub(crate) async fn execute_capture_once(
++        &self,
++        method: Method,
++        path: &str,
++        extra_headers: HeaderMap,
++        body: Value,
++        expected_url: &str,
++        expected_body: &[u8],
++        capture_dir: &Path,
++        native_chatgpt_auth: bool,
++        response_body_limit_bytes: usize,
++        run_id: &str,
++        source_commit: &str,
++        source_sha256: &str,
++        input_sha256: &str,
++        run_kind: &str,
++    ) -> Result<Response, ApiError> {
++        const MAX_REQUEST_BYTES: usize = 16_384;
++        const MAX_CAPTURE_BYTES: usize = 1_048_576;
++
++        if !native_chatgpt_auth
++            || expected_url != "https://api.openai.com/v1/responses"
++            || response_body_limit_bytes != MAX_CAPTURE_BYTES
++            || expected_body.len() > MAX_REQUEST_BYTES
++            || !is_lower_hex(run_id, 32)
++            || !is_lower_hex(source_commit, 40)
++            || !is_lower_hex(source_sha256, 64)
++            || !is_lower_hex(input_sha256, 64)
++            || !matches!(run_kind, "canary" | "r4_unit")
++        {
++            return Err(ApiError::Stream(
++                "Task229 runtime capture contract was not satisfied".to_string(),
++            ));
++        }
++        validate_private_capture_dir(capture_dir)?;
++
++        let body = RequestBody::Json(body);
++        let mut request = self.make_request(&method, path, &extra_headers, Some(&body));
++        request.timeout = Some(Duration::from_secs(300));
++        request.response_body_limit_bytes = Some(response_body_limit_bytes);
++        let request = request.into_prepared().map_err(TransportError::Build)?;
++        validate_task229_request(&request, expected_url, expected_body)?;
++
++        let request = self
++            .auth
++            .clone()
++            .apply_auth(request)
++            .await
++            .map_err(TransportError::from)?;
++        validate_task229_request(&request, expected_url, expected_body)?;
++        if !request.headers.contains_key(http::header::AUTHORIZATION) {
++            return Err(ApiError::Stream(
++                "Task229 native authorization header was unavailable".to_string(),
++            ));
++        }
++
++        let request_bytes = match request.body.as_ref() {
++            Some(RequestBody::EncodedJson(body)) => body.as_bytes(),
++            _ => {
++                return Err(ApiError::Stream(
++                    "Task229 request body was not prepared JSON".to_string(),
++                ));
++            }
++        };
++        write_new(capture_dir, "request-body.bin", request_bytes)?;
++        write_new(
++            capture_dir,
++            "request-capture.json",
++            serde_json::to_vec_pretty(&serde_json::json!({
++                "method": request.method.as_str(),
++                "url": request.url.clone(),
++                "native_chatgpt_auth": true,
++                "authorization_header_present": true,
++                "request_body_bytes": request_bytes.len(),
++                "request_body_sha256": sha256_hex(request_bytes),
++                "response_body_limit_bytes": response_body_limit_bytes,
++                "retry_count": 0
++            }))
++            .map_err(|error| ApiError::Stream(format!("Task229 capture JSON encoding failed: {error}")))?
++            .as_slice(),
++        )?;
++        write_new(
++            capture_dir,
++            "pre-send.json",
++            serde_json::to_vec_pretty(&serde_json::json!({
++                "run_id": run_id,
++                "run_kind": run_kind,
++                "source_commit": source_commit,
++                "source_sha256": source_sha256,
++                "input_sha256": input_sha256,
++                "request_body_sha256": sha256_hex(request_bytes),
++                "request_body_bytes": request_bytes.len(),
++                "method": request.method.as_str(),
++                "url": request.url.clone(),
++                "model": "gpt-6-astra",
++                "reasoning_effort": "medium",
++                "tools": [],
++                "tool_choice": "none",
++                "retry_count": 0
++            }))
++            .map_err(|error| ApiError::Stream(format!("Task229 pre-send JSON encoding failed: {error}")))?
++            .as_slice(),
++        )?;
++        write_new(capture_dir, "attempt-started", b"one-shot\n")?;
++
++        let response = self.transport.execute(request).await?;
++        if response.body.len() > response_body_limit_bytes {
++            return Err(ApiError::Stream(
++                "Task229 transport response exceeded its byte cap".to_string(),
++            ));
++        }
++        write_new(capture_dir, "transport-response.bin", &response.body)?;
++        let safe_headers: std::collections::BTreeMap<String, String> = response
++            .headers
++            .iter()
++            .filter_map(|(name, value)| {
++                let name = name.as_str().to_ascii_lowercase();
++                if matches!(
++                    name.as_str(),
++                    "content-type" | "content-encoding" | "content-length" | "date" | "x-request-id"
++                ) {
++                    value.to_str().ok().map(|value| (name, value.to_string()))
++                } else {
++                    None
++                }
++            })
++            .collect();
++        write_new(
++            capture_dir,
++            "transport-capture.json",
++            serde_json::to_vec_pretty(&serde_json::json!({
++                "http_status": response.status.as_u16(),
++                "headers": safe_headers,
++                "transport_response_bytes": response.body.len(),
++                "transport_response_sha256": sha256_hex(&response.body),
++                "captured_before_json_parse": true
++            }))
++            .map_err(|error| ApiError::Stream(format!("Task229 capture JSON encoding failed: {error}")))?
++            .as_slice(),
++        )?;
++        Ok(response)
++    }
++
++    pub(crate) fn capture_task229_successor_payload(
++        &self,
++        capture_dir: &Path,
++        payload: &[u8],
++    ) -> Result<String, ApiError> {
++        write_new(capture_dir, "successor-payload.bin", payload)?;
++        Ok(sha256_hex(payload))
++    }
++
+@@ -156,0 +316,84 @@ impl<T: HttpTransport> EndpointSession<T> {
++
++fn validate_task229_request(
++    request: &Request,
++    expected_url: &str,
++    expected_body: &[u8],
++) -> Result<(), ApiError> {
++    let body = match request.body.as_ref() {
++        Some(RequestBody::EncodedJson(body)) => body.as_bytes(),
++        _ => {
++            return Err(ApiError::Stream(
++                "Task229 request body was not encoded JSON".to_string(),
++            ));
++        }
++    };
++    if request.method != Method::POST
++        || request.url != expected_url
++        || body != expected_body
++        || request.compression != codex_client::RequestCompression::None
++        || request
++            .headers
++            .get(http::header::ACCEPT_ENCODING)
++            .and_then(|value| value.to_str().ok())
++            != Some("identity")
++    {
++        return Err(ApiError::Stream(
++            "Task229 exact request validation failed before network send".to_string(),
++        ));
++    }
++    Ok(())
++}
++
++fn write_new(directory: &Path, name: &str, bytes: &[u8]) -> Result<(), ApiError> {
++    validate_private_capture_dir(directory)?;
++    let path = directory.join(name);
++    let mut options = OpenOptions::new();
++    options.write(true).create_new(true);
++    #[cfg(unix)]
++    {
++        use std::os::unix::fs::OpenOptionsExt;
++        options
++            .mode(0o600)
++            .custom_flags(libc::O_NOFOLLOW | libc::O_CLOEXEC);
++    }
++    let mut file = options.open(path).map_err(|error| {
++        ApiError::Stream(format!("Task229 capture file creation failed: {error}"))
++    })?;
++    file.write_all(bytes)
++        .and_then(|()| file.sync_all())
++        .map_err(|error| ApiError::Stream(format!("Task229 capture persistence failed: {error}")))?;
++    std::fs::File::open(directory)
++        .and_then(|directory| directory.sync_all())
++        .map_err(|error| ApiError::Stream(format!("Task229 capture directory sync failed: {error}")))
++}
++
++fn validate_private_capture_dir(directory: &Path) -> Result<(), ApiError> {
++    let metadata = std::fs::symlink_metadata(directory)
++        .map_err(|error| ApiError::Stream(format!("Task229 capture directory unavailable: {error}")))?;
++    if !metadata.file_type().is_dir() || std::fs::canonicalize(directory).ok().as_deref() != Some(directory) {
++        return Err(ApiError::Stream(
++            "Task229 capture directory must be an existing canonical directory".to_string(),
++        ));
++    }
++    #[cfg(unix)]
++    {
++        use std::os::unix::fs::MetadataExt;
++        if metadata.uid() != unsafe { libc::geteuid() } || metadata.mode() & 0o077 != 0 {
++            return Err(ApiError::Stream(
++                "Task229 capture directory must be private and owned by the runtime user".to_string(),
++            ));
++        }
++    }
++    Ok(())
++}
++
++fn is_lower_hex(value: &str, expected_len: usize) -> bool {
++    value.len() == expected_len
++        && value
++            .bytes()
++            .all(|byte| byte.is_ascii_digit() || (b'a'..=b'f').contains(&byte))
++}
++
++pub(crate) fn sha256_hex(bytes: &[u8]) -> String {
++    format!("{:x}", sha2::Sha256::digest(bytes))
++}
+diff --git a/codex-rs/core/Cargo.toml b/codex-rs/core/Cargo.toml
+index d5fd95d..43260b2 100644
+--- a/codex-rs/core/Cargo.toml
++++ b/codex-rs/core/Cargo.toml
+@@ -130,0 +131,3 @@ whoami = { workspace = true }
++[build-dependencies]
++sha2 = { workspace = true }
++
+diff --git a/codex-rs/core/build.rs b/codex-rs/core/build.rs
+new file mode 100644
+index 0000000..13f3cf6
+--- /dev/null
++++ b/codex-rs/core/build.rs
+@@ -0,0 +1,72 @@
++use sha2::Digest;
++use sha2::Sha256;
++use std::path::PathBuf;
++use std::process::Command;
++
++fn main() {
++    let core_dir = PathBuf::from(std::env::var_os("CARGO_MANIFEST_DIR").expect("manifest dir"));
++    let workspace = core_dir.parent().expect("workspace directory");
++    let files = [
++        ("Cargo.toml", workspace.join("Cargo.toml")),
++        (
++            "codex-api/Cargo.toml",
++            workspace.join("codex-api/Cargo.toml"),
++        ),
++        (
++            "codex-api/src/endpoint/responses.rs",
++            workspace.join("codex-api/src/endpoint/responses.rs"),
++        ),
++        (
++            "codex-api/src/endpoint/session.rs",
++            workspace.join("codex-api/src/endpoint/session.rs"),
++        ),
++        ("core/Cargo.toml", core_dir.join("Cargo.toml")),
++        ("core/build.rs", core_dir.join("build.rs")),
++        ("core/src/client.rs", core_dir.join("src/client.rs")),
++    ];
++
++    let mut digest = Sha256::new();
++    for (name, path) in files {
++        println!("cargo:rerun-if-changed={}", path.display());
++        digest.update(name.as_bytes());
++        digest.update([0]);
++        digest.update(std::fs::read(path).expect("Task229 runtime source file"));
++    }
++    let source_sha256 = format!("{:x}", digest.finalize());
++
++    let git_root = workspace.parent().expect("Git worktree root");
++    let status = Command::new("git")
++        .arg("-C")
++        .arg(git_root)
++        .args([
++            "status",
++            "--porcelain",
++            "--untracked-files=no",
++            "--",
++            "codex-rs/Cargo.toml",
++            "codex-rs/codex-api/Cargo.toml",
++            "codex-rs/codex-api/src/endpoint/responses.rs",
++            "codex-rs/codex-api/src/endpoint/session.rs",
++            "codex-rs/core/Cargo.toml",
++            "codex-rs/core/build.rs",
++            "codex-rs/core/src/client.rs",
++        ])
++        .output();
++    let source_commit = match status {
++        Ok(status) if status.status.success() && status.stdout.is_empty() => Command::new("git")
++            .arg("-C")
++            .arg(git_root)
++            .args(["rev-parse", "HEAD"])
++            .output()
++            .ok()
++            .filter(|output| output.status.success())
++            .and_then(|output| String::from_utf8(output.stdout).ok())
++            .map(|commit| commit.trim().to_string())
++            .filter(|commit| commit.len() == 40 && commit.bytes().all(|b| b.is_ascii_hexdigit() && !b.is_ascii_uppercase()))
++            .unwrap_or_else(|| "unknown".to_string()),
++        _ => "unknown-dirty".to_string(),
++    };
++
++    println!("cargo:rustc-env=TASK229_R4_SOURCE_COMMIT={source_commit}");
++    println!("cargo:rustc-env=TASK229_R4_SOURCE_SHA256={source_sha256}");
++}
+diff --git a/codex-rs/core/src/client.rs b/codex-rs/core/src/client.rs
+index f5ac495..48cb5b8 100644
+--- a/codex-rs/core/src/client.rs
++++ b/codex-rs/core/src/client.rs
+@@ -28,0 +29,4 @@ use std::collections::HashMap;
++use std::fs::OpenOptions;
++use std::io::Write;
++use std::path::Path;
++use std::path::PathBuf;
+@@ -90,0 +95 @@ use codex_protocol::models::ResponseItem;
++use codex_protocol::models::ContentItem;
+@@ -130,0 +136,324 @@ use crate::context::BaseInstructionsFragment;
++
++const TASK229_NATIVE_CANARY_TEXT: &str =
++    "Output exactly the ASCII token RUNTIME_CANARY_OK; no other characters.";
++const TASK229_NATIVE_CANARY_OUTPUT: &str = "RUNTIME_CANARY_OK";
++const TASK229_RUNTIME_SOURCE_COMMIT: &str = env!("TASK229_R4_SOURCE_COMMIT");
++const TASK229_RUNTIME_SOURCE_SHA256: &str = env!("TASK229_R4_SOURCE_SHA256");
++static TASK229_NATIVE_REQUEST_CLAIMED: AtomicBool = AtomicBool::new(false);
++
++#[derive(Clone, Copy, PartialEq, Eq)]
++enum Task229NativeRunKind {
++    Canary,
++    R4Unit,
++}
++
++struct Task229NativeRunConfig {
++    kind: Task229NativeRunKind,
++    capture_dir: PathBuf,
++    expected_input_sha256: Option<String>,
++    canary_gate_path: Option<PathBuf>,
++    run_id: String,
++    source_commit: String,
++    source_sha256: String,
++}
++
++fn task229_native_run_config() -> Result<Option<Task229NativeRunConfig>> {
++    let mode = std::env::var("TASK229_R4_NATIVE_REQUEST").ok();
++    let capture_dir = std::env::var("TASK229_R4_CAPTURE_DIR").ok();
++    let expected_input_sha256 = std::env::var("TASK229_R4_UNIT_INPUT_SHA256").ok();
++    let run_id = std::env::var("TASK229_R4_RUN_ID").ok();
++    let canary_gate_path = std::env::var("TASK229_R4_CANARY_GATE_PATH").ok();
++    if mode.is_none() {
++        if capture_dir.is_some()
++            || expected_input_sha256.is_some()
++            || run_id.is_some()
++            || canary_gate_path.is_some()
++        {
++            return Err(std::io::Error::other(
++                "Task229 native request environment is incomplete",
++            )
++            .into());
++        }
++        return Ok(None);
++    }
++    let mode = mode.expect("checked above");
++    let capture_dir = capture_dir.ok_or_else(|| {
++        std::io::Error::other("Task229 capture directory is required")
++    })?;
++    let run_id = run_id.ok_or_else(|| std::io::Error::other("Task229 run id is required"))?;
++    if capture_dir.is_empty()
++        || !is_lower_hex(&run_id, 32)
++        || !is_lower_hex(TASK229_RUNTIME_SOURCE_COMMIT, 40)
++        || !is_lower_hex(TASK229_RUNTIME_SOURCE_SHA256, 64)
++    {
++        return Err(std::io::Error::other(
++            "Task229 run or source metadata is malformed",
++        )
++        .into());
++    }
++    match mode.as_str() {
++        "canary" if expected_input_sha256.is_none() && canary_gate_path.is_none() => {
++            Ok(Some(Task229NativeRunConfig {
++                kind: Task229NativeRunKind::Canary,
++                capture_dir: PathBuf::from(capture_dir),
++                expected_input_sha256: None,
++                canary_gate_path: None,
++                run_id,
++                source_commit: TASK229_RUNTIME_SOURCE_COMMIT.to_string(),
++                source_sha256: TASK229_RUNTIME_SOURCE_SHA256.to_string(),
++            }))
++        }
++        "unit" => {
++            let expected = expected_input_sha256.ok_or_else(|| {
++                std::io::Error::other("Task229 unit input hash is required")
++            })?;
++            let gate = canary_gate_path.ok_or_else(|| {
++                std::io::Error::other("Task229 unit mode requires a canary gate receipt")
++            })?;
++            if !is_lower_hex(&expected, 64) || gate.is_empty() {
++                return Err(std::io::Error::other(
++                    "Task229 unit gate or input hash is malformed",
++                )
++                .into());
++            }
++            Ok(Some(Task229NativeRunConfig {
++                kind: Task229NativeRunKind::R4Unit,
++                capture_dir: PathBuf::from(capture_dir),
++                expected_input_sha256: Some(expected),
++                canary_gate_path: Some(PathBuf::from(gate)),
++                run_id,
++                source_commit: TASK229_RUNTIME_SOURCE_COMMIT.to_string(),
++                source_sha256: TASK229_RUNTIME_SOURCE_SHA256.to_string(),
++            }))
++        }
++        _ => Err(std::io::Error::other(
++            "Task229 native request mode is invalid",
++        )
++        .into()),
++    }
++}
++
++fn is_lower_hex(value: &str, expected_len: usize) -> bool {
++    value.len() == expected_len
++        && value
++            .bytes()
++            .all(|byte| byte.is_ascii_digit() || (b'a'..=b'f').contains(&byte))
++}
++
++fn parse_task229_unique_json(bytes: &[u8]) -> Result<serde_json::Value> {
++    use serde::Deserialize;
++    let mut deserializer = serde_json::Deserializer::from_slice(bytes);
++    let value = Task229UniqueJson::deserialize(&mut deserializer)
++        .map_err(|error| std::io::Error::other(format!("Task229 JSON rejected: {error}")))?;
++    deserializer
++        .end()
++        .map_err(|error| std::io::Error::other(format!("Task229 JSON trailing bytes: {error}")))?;
++    Ok(value.0)
++}
++
++struct Task229UniqueJson(serde_json::Value);
++
++impl<'de> serde::Deserialize<'de> for Task229UniqueJson {
++    fn deserialize<D>(deserializer: D) -> std::result::Result<Self, D::Error>
++    where
++        D: serde::Deserializer<'de>,
++    {
++        struct UniqueValueVisitor;
++        impl<'de> serde::de::Visitor<'de> for UniqueValueVisitor {
++            type Value = Task229UniqueJson;
++
++            fn expecting(&self, formatter: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
++                formatter.write_str("a JSON value with unique object keys")
++            }
++
++            fn visit_bool<E>(self, value: bool) -> std::result::Result<Self::Value, E> {
++                Ok(Task229UniqueJson(serde_json::Value::Bool(value)))
++            }
++
++            fn visit_i64<E>(self, value: i64) -> std::result::Result<Self::Value, E> {
++                Ok(Task229UniqueJson(serde_json::Value::Number(value.into())))
++            }
++
++            fn visit_u64<E>(self, value: u64) -> std::result::Result<Self::Value, E> {
++                Ok(Task229UniqueJson(serde_json::Value::Number(value.into())))
++            }
++
++            fn visit_f64<E>(self, value: f64) -> std::result::Result<Self::Value, E>
++            where
++                E: serde::de::Error,
++            {
++                let number = serde_json::Number::from_f64(value)
++                    .ok_or_else(|| E::custom("non-finite JSON number"))?;
++                Ok(Task229UniqueJson(serde_json::Value::Number(number)))
++            }
++
++            fn visit_str<E>(self, value: &str) -> std::result::Result<Self::Value, E> {
++                Ok(Task229UniqueJson(serde_json::Value::String(
++                    value.to_string(),
++                )))
++            }
++
++            fn visit_string<E>(self, value: String) -> std::result::Result<Self::Value, E> {
++                Ok(Task229UniqueJson(serde_json::Value::String(value)))
++            }
++
++            fn visit_none<E>(self) -> std::result::Result<Self::Value, E> {
++                Ok(Task229UniqueJson(serde_json::Value::Null))
++            }
++
++            fn visit_unit<E>(self) -> std::result::Result<Self::Value, E> {
++                Ok(Task229UniqueJson(serde_json::Value::Null))
++            }
++
++            fn visit_seq<A>(self, mut sequence: A) -> std::result::Result<Self::Value, A::Error>
++            where
++                A: serde::de::SeqAccess<'de>,
++            {
++                let mut values = Vec::new();
++                while let Some(value) = sequence.next_element::<Task229UniqueJson>()? {
++                    values.push(value.0);
++                }
++                Ok(Task229UniqueJson(serde_json::Value::Array(values)))
++            }
++
++            fn visit_map<A>(self, mut map: A) -> std::result::Result<Self::Value, A::Error>
++            where
++                A: serde::de::MapAccess<'de>,
++            {
++                let mut values = serde_json::Map::new();
++                while let Some(key) = map.next_key::<String>()? {
++                    if values.contains_key(&key) {
++                        return Err(serde::de::Error::custom(format!(
++                            "duplicate JSON object key {key:?}"
++                        )));
++                    }
++                    let value = map.next_value::<Task229UniqueJson>()?;
++                    values.insert(key, value.0);
++                }
++                Ok(Task229UniqueJson(serde_json::Value::Object(values)))
++            }
++        }
++        deserializer.deserialize_any(UniqueValueVisitor)
++    }
++}
++
++fn verify_task229_canary_gate(config: &Task229NativeRunConfig) -> Result<()> {
++    let path = config
++        .canary_gate_path
++        .as_ref()
++        .ok_or_else(|| std::io::Error::other("Task229 canary gate path is missing"))?;
++    let metadata = std::fs::symlink_metadata(path)?;
++    if !metadata.file_type().is_file() || metadata.len() > 16_384 {
++        return Err(std::io::Error::other("Task229 canary gate file is invalid").into());
++    }
++    let bytes = std::fs::read(path)?;
++    let value = parse_task229_unique_json(&bytes)?;
++    let canary_input_sha256 = ApiResponsesClient::<ReqwestTransport>::task229_sha256_hex(
++        TASK229_NATIVE_CANARY_TEXT.as_bytes(),
++    );
++    let canary_body = br#"{"input":"Output exactly the ASCII token RUNTIME_CANARY_OK; no other characters.","model":"gpt-6-astra","reasoning":{"effort":"medium"},"store":false,"tool_choice":"none","tools":[]}"#;
++    let canary_body_sha256 =
++        ApiResponsesClient::<ReqwestTransport>::task229_sha256_hex(canary_body);
++    let canary_payload_sha256 =
++        ApiResponsesClient::<ReqwestTransport>::task229_sha256_hex(TASK229_NATIVE_CANARY_OUTPUT.as_bytes());
++    let matches = value.get("status").and_then(serde_json::Value::as_str)
++        == Some("CANARY_RUNTIME_GATE_PASSED")
++        && value.get("run_kind").and_then(serde_json::Value::as_str) == Some("canary")
++        && value
++            .get("run_id")
++            .and_then(serde_json::Value::as_str)
++            .is_some_and(|run_id| is_lower_hex(run_id, 32))
++        && value.get("source_commit").and_then(serde_json::Value::as_str)
++            == Some(config.source_commit.as_str())
++        && value.get("source_sha256").and_then(serde_json::Value::as_str)
++            == Some(config.source_sha256.as_str())
++        && value.get("input_sha256").and_then(serde_json::Value::as_str)
++            == Some(canary_input_sha256.as_str())
++        && value.get("request_body_sha256").and_then(serde_json::Value::as_str)
++            == Some(canary_body_sha256.as_str())
++        && value
++            .get("transport_response_sha256")
++            .and_then(serde_json::Value::as_str)
++            .is_some_and(|digest| is_lower_hex(digest, 64))
++        && value
++            .get("transport_response_bytes")
++            .and_then(serde_json::Value::as_u64)
++            .is_some_and(|bytes| bytes <= 1_048_576)
++        && value.get("successor_payload_sha256").and_then(serde_json::Value::as_str)
++            == Some(canary_payload_sha256.as_str())
++        && value
++            .get("successor_payload_bytes")
++            .and_then(serde_json::Value::as_u64)
++            == Some(TASK229_NATIVE_CANARY_OUTPUT.len() as u64)
++        && value.get("http_status").and_then(serde_json::Value::as_u64) == Some(200)
++        && value.get("request_model").and_then(serde_json::Value::as_str) == Some("gpt-6-astra")
++        && value.get("accepted_model_echo").and_then(serde_json::Value::as_str)
++            == Some("gpt-6-astra")
++        && value.get("request_reasoning_effort").and_then(serde_json::Value::as_str)
++            == Some("medium")
++        && value
++            .get("reasoning_effort_echo")
++            .is_none_or(|effort| effort.is_null() || effort.as_str() == Some("medium"))
++        && value.get("request_tools").and_then(serde_json::Value::as_array)
++            .is_some_and(Vec::is_empty)
++        && value.get("request_tool_choice").and_then(serde_json::Value::as_str) == Some("none")
++        && value.get("output_exact_match").and_then(serde_json::Value::as_bool) == Some(true)
++        && value.get("retry_count").and_then(serde_json::Value::as_u64) == Some(0);
++    if !matches {
++        return Err(std::io::Error::other(
++            "Task229 unit mode requires a successful exact-source canary gate",
++        )
++        .into());
++    }
++    Ok(())
++}
++
++fn task229_single_user_text(prompt: &Prompt) -> Option<&str> {
++    let [ResponseItem::Message { role, content, .. }] = prompt.input.as_slice() else {
++        return None;
++    };
++    if role != "user" {
++        return None;
++    }
++    let [ContentItem::InputText { text }] = content.as_slice() else {
++        return None;
++    };
++    Some(text)
++}
++
++fn write_task229_capture_file(directory: &Path, name: &str, bytes: &[u8]) -> Result<()> {
++    let metadata = std::fs::symlink_metadata(directory)?;
++    if !metadata.file_type().is_dir()
++        || std::fs::canonicalize(directory).ok().as_deref() != Some(directory)
++    {
++        return Err(std::io::Error::other(
++            "Task229 capture directory must be an existing canonical directory",
++        )
++        .into());
++    }
++    #[cfg(unix)]
++    {
++        use std::os::unix::fs::MetadataExt;
++        if metadata.uid() != unsafe { libc::geteuid() } || metadata.mode() & 0o077 != 0 {
++            return Err(std::io::Error::other(
++                "Task229 capture directory must be private and owned by the runtime user",
++            )
++            .into());
++        }
++    }
++    let mut options = OpenOptions::new();
++    options.write(true).create_new(true);
++    #[cfg(unix)]
++    {
++        use std::os::unix::fs::OpenOptionsExt;
++        options
++            .mode(0o600)
++            .custom_flags(libc::O_NOFOLLOW | libc::O_CLOEXEC);
++    }
++    let mut file = options.open(directory.join(name))?;
++    file.write_all(bytes)?;
++    file.sync_all()?;
++    std::fs::File::open(directory)?.sync_all()?;
++    Ok(())
++}
++
+@@ -1025 +1354,3 @@ impl ModelClient {
+-        if !self.state.provider.info().supports_websockets
++        if std::env::var_os("TASK229_R4_NATIVE_REQUEST").is_some()
++            || std::env::var_os("TASK229_R4_CAPTURE_DIR").is_some()
++            || !self.state.provider.info().supports_websockets
+@@ -1343,0 +1675,317 @@ impl ModelClientSession {
++    async fn stream_task229_native_request(
++        &self,
++        prompt: &Prompt,
++        model_info: &ModelInfo,
++        effort: Option<ReasoningEffortConfig>,
++        config: &Task229NativeRunConfig,
++    ) -> Result<ResponseStream> {
++        const MODEL: &str = "gpt-6-astra";
++        const EFFORT: &str = "medium";
++        let input_text = task229_single_user_text(prompt).ok_or_else(|| {
++            std::io::Error::other("Task229 request must contain one plain user text item")
++        })?;
++        let input_sha256 = ApiResponsesClient::<ReqwestTransport>::task229_sha256_hex(
++            input_text.as_bytes(),
++        );
++        let input_matches_run_kind = match config.kind {
++            Task229NativeRunKind::Canary => {
++                input_text == TASK229_NATIVE_CANARY_TEXT
++                    && config.expected_input_sha256.is_none()
++            }
++            Task229NativeRunKind::R4Unit => config.expected_input_sha256.as_deref()
++                == Some(input_sha256.as_str()),
++        };
++        if !input_matches_run_kind
++            || !prompt.tools.is_empty()
++            || prompt.parallel_tool_calls
++            || prompt.output_schema.is_some()
++            || prompt.cyber_access_program.is_some()
++            || model_info.slug != MODEL
++            || effort != Some(ReasoningEffortConfig::Medium)
++        {
++            return Err(std::io::Error::other(
++                "Task229 frozen prompt or settings did not match",
++            )
++            .into());
++        }
++        if config.kind == Task229NativeRunKind::R4Unit {
++            verify_task229_canary_gate(config)?;
++        }
++        if TASK229_NATIVE_REQUEST_CLAIMED
++            .compare_exchange(false, true, Ordering::SeqCst, Ordering::SeqCst)
++            .is_err()
++        {
++            return Err(std::io::Error::other(
++                "Task229 process has already claimed its one model request",
++            )
++            .into());
++        }
++
++        let client_setup = self
++            .client
++            .current_client_setup(ClientRouting::Workspace)
++            .await?;
++        let native_chatgpt_auth = client_setup
++            .auth
++            .as_ref()
++            .is_some_and(CodexAuth::is_chatgpt_auth);
++        if !native_chatgpt_auth
++            || client_setup.agent_identity_telemetry.is_some()
++            || !self.client.state.provider.info().is_openai()
++            || !self.client.state.provider.info().requires_openai_auth
++            || client_setup.api_provider.name != "openai"
++            || client_setup.api_provider.base_url.trim_end_matches('/')
++                != "https://api.openai.com/v1"
++        {
++            return Err(std::io::Error::other(
++                "Task229 requires native ChatGPT auth and the exact first-party Responses endpoint",
++            )
++            .into());
++        }
++
++        let body = serde_json::json!({
++            "input": input_text,
++            "model": MODEL,
++            "reasoning": {"effort": EFFORT},
++            "store": false,
++            "tool_choice": "none",
++            "tools": []
++        });
++        let expected_body = if config.kind == Task229NativeRunKind::Canary {
++            br#"{"input":"Output exactly the ASCII token RUNTIME_CANARY_OK; no other characters.","model":"gpt-6-astra","reasoning":{"effort":"medium"},"store":false,"tool_choice":"none","tools":[]}"#.to_vec()
++        } else {
++            serde_json::to_vec(&body)?
++        };
++        let transport = self.client.build_api_transport(
++            &client_setup.api_provider,
++            "/responses",
++            ClientRedirectPolicy::Reject,
++        )?;
++        let client = ApiResponsesClient::new(
++            transport,
++            client_setup.api_provider,
++            client_setup.api_auth,
++        );
++        let response = client
++            .execute_task229_capture_once(
++                body,
++                &expected_body,
++                &config.capture_dir,
++                native_chatgpt_auth,
++                &config.run_id,
++                &config.source_commit,
++                &config.source_sha256,
++                &input_sha256,
++                if config.kind == Task229NativeRunKind::Canary {
++                    "canary"
++                } else {
++                    "r4_unit"
++                },
++            )
++            .await
++            .map_err(|error| self.client.state.provider.map_api_error(error))?;
++        if response.status != StatusCode::OK
++            || response
++                .headers
++                .get(http::header::CONTENT_ENCODING)
++                .and_then(|value| value.to_str().ok())
++                .is_some_and(|value| !value.eq_ignore_ascii_case("identity"))
++        {
++            return Err(std::io::Error::other(
++                "Task229 response status or content encoding was not accepted",
++            )
++            .into());
++        }
++
++        if response.body.len() > 1_048_576 {
++            return Err(std::io::Error::other("Task229 response exceeded the exact byte cap").into());
++        }
++        let response_value = parse_task229_unique_json(&response.body)?;
++        if response_value.get("status").and_then(serde_json::Value::as_str) != Some("completed")
++            || response_value.get("error").is_some_and(|value| !value.is_null())
++            || response_value
++                .get("incomplete_details")
++                .is_some_and(|value| !value.is_null())
++            || response_value.get("model").and_then(serde_json::Value::as_str) != Some(MODEL)
++        {
++            return Err(std::io::Error::other(
++                "Task229 did not return a completed response with the requested model",
++            )
++            .into());
++        }
++        let effort_echo = response_value
++            .get("reasoning")
++            .and_then(|value| value.get("effort"))
++            .and_then(serde_json::Value::as_str);
++        if effort_echo.is_some_and(|value| value != EFFORT) {
++            return Err(std::io::Error::other(
++                "Task229 reasoning effort echo did not match",
++            )
++            .into());
++        }
++
++        let output = response_value
++            .get("output")
++            .and_then(serde_json::Value::as_array)
++            .ok_or_else(|| std::io::Error::other("Task229 response output was not an array"))?;
++        let mut messages = Vec::new();
++        for item in output {
++            match item.get("type").and_then(serde_json::Value::as_str) {
++                Some("reasoning") => {}
++                Some("message") if item.get("role").and_then(serde_json::Value::as_str) == Some("assistant") => {
++                    messages.push(item);
++                }
++                _ => {
++                    return Err(std::io::Error::other(
++                        "Task229 response contained non-text or non-assistant output",
++                    )
++                    .into());
++                }
++            }
++        }
++        if messages.len() != 1 {
++            return Err(std::io::Error::other(
++                "Task229 response did not contain exactly one assistant message",
++            )
++            .into());
++        }
++        let content = messages[0]
++            .get("content")
++            .and_then(serde_json::Value::as_array)
++            .ok_or_else(|| std::io::Error::other("Task229 assistant content was not an array"))?;
++        if content.len() != 1
++            || content[0].get("type").and_then(serde_json::Value::as_str) != Some("output_text")
++        {
++            return Err(std::io::Error::other(
++                "Task229 response did not contain one unambiguous output_text block",
++            )
++            .into());
++        }
++        let output_text = content[0]
++            .get("text")
++            .and_then(serde_json::Value::as_str)
++            .ok_or_else(|| std::io::Error::other("Task229 output_text was not a string"))?;
++        let payload = output_text.as_bytes();
++        let payload_sha256 = client
++            .capture_task229_successor_payload(&config.capture_dir, payload)
++            .map_err(|error| {
++                self.client.state.provider.map_api_error(error)
++            })?;
++        let request_body_sha256 = ApiResponsesClient::<ReqwestTransport>::task229_sha256_hex(
++            &expected_body,
++        );
++        let transport_response_sha256 = ApiResponsesClient::<ReqwestTransport>::task229_sha256_hex(
++            &response.body,
++        );
++        let response_id = response_value
++            .get("id")
++            .and_then(serde_json::Value::as_str)
++            .filter(|value| !value.is_empty())
++            .ok_or_else(|| std::io::Error::other("Task229 response id was missing"))?;
++        let is_canary = config.kind == Task229NativeRunKind::Canary;
++        let payload_within_cap = payload.len() <= 16_384;
++        let canary_exact_match = is_canary && payload == TASK229_NATIVE_CANARY_OUTPUT.as_bytes();
++        let passed = payload_within_cap && (!is_canary || canary_exact_match);
++        let run_status = match (config.kind, passed) {
++            (Task229NativeRunKind::Canary, true) => "CANARY_RUNTIME_GATE_PASSED",
++            (Task229NativeRunKind::Canary, false) => "CANARY_RUNTIME_GATE_FAILED",
++            (Task229NativeRunKind::R4Unit, true) => {
++                "R4_UNIT_CAPTURED_AWAITING_FROZEN_SCHEMA_VALIDATION"
++            }
++            (Task229NativeRunKind::R4Unit, false) => "R4_UNIT_CAPTURE_FAILED",
++        };
++        let runtime_result = serde_json::json!({
++            "status": run_status,
++            "run_kind": if is_canary { "canary" } else { "r4_unit" },
++            "target_blind": true,
++            "contains_task229_material": false,
++            "run_id": config.run_id,
++            "source_commit": config.source_commit,
++            "source_sha256": config.source_sha256,
++            "r4_unit_count": usize::from(!is_canary),
++            "canary_calls": usize::from(is_canary),
++            "input_sha256": input_sha256,
++            "http_status": response.status.as_u16(),
++            "request_model": MODEL,
++            "accepted_model_echo": MODEL,
++            "request_reasoning_effort": EFFORT,
++            "reasoning_effort_echo": effort_echo,
++            "backend_effort_echo_claimed": false,
++            "request_tools": [],
++            "request_tool_choice": "none",
++            "request_body_sha256": request_body_sha256,
++            "transport_response_sha256": transport_response_sha256,
++            "transport_response_bytes": response.body.len(),
++            "successor_payload_sha256": payload_sha256,
++            "successor_payload_bytes": payload.len(),
++            "output_exact_match": if is_canary { Some(canary_exact_match) } else { None },
++            "retry_count": 0
++        });
++        write_task229_capture_file(
++            &config.capture_dir,
++            "runtime-result.json",
++            &serde_json::to_vec_pretty(&runtime_result)?,
++        )?;
++        if !passed {
++            return Err(std::io::Error::other(
++                "Task229 response payload did not satisfy the frozen runtime gate",
++            )
++            .into());
++        }
++        if is_canary {
++            let gate = serde_json::json!({
++                "status": "CANARY_RUNTIME_GATE_PASSED",
++                "run_kind": "canary",
++                "run_id": config.run_id,
++                "source_commit": config.source_commit,
++                "source_sha256": config.source_sha256,
++                "input_sha256": input_sha256,
++                "request_body_sha256": request_body_sha256,
++                "transport_response_sha256": transport_response_sha256,
++                "successor_payload_sha256": payload_sha256,
++                "transport_response_bytes": response.body.len(),
++                "successor_payload_bytes": payload.len(),
++                "http_status": response.status.as_u16(),
++                "request_model": MODEL,
++                "accepted_model_echo": MODEL,
++                "request_reasoning_effort": EFFORT,
++                "reasoning_effort_echo": effort_echo,
++                "request_tools": [],
++                "request_tool_choice": "none",
++                "output_exact_match": canary_exact_match,
++                "retry_count": 0
++            });
++            write_task229_capture_file(
++                &config.capture_dir,
++                "canary-gate.json",
++                &serde_json::to_vec_pretty(&gate)?,
++            )?;
++        }
++
++        let item = ResponseItem::Message {
++            id: None,
++            role: "assistant".to_string(),
++            content: vec![ContentItem::OutputText {
++                text: output_text.to_string(),
++            }],
++            phase: None,
++            internal_chat_message_metadata_passthrough: None,
++        };
++        let (tx_event, rx_event) = mpsc::channel(4);
++        let _ = tx_event.send(Ok(ResponseEvent::OutputTextDelta(output_text.to_string()))).await;
++        let _ = tx_event.send(Ok(ResponseEvent::OutputItemDone(item))).await;
++        let _ = tx_event
++            .send(Ok(ResponseEvent::Completed {
++                response_id: response_id.to_string(),
++                token_usage: None,
++                usage_metadata: None,
++                end_turn: Some(true),
++            }))
++            .await;
++        Ok(ResponseStream {
++            rx_event,
++            interrupt: None,
++            consumer_dropped: CancellationToken::new(),
++        })
++    }
++
+@@ -2228,0 +2877,5 @@ impl ModelClientSession {
++        if let Some(config) = task229_native_run_config()? {
++            return self
++                .stream_task229_native_request(prompt, model_info, effort, &config)
++                .await;
++        }
