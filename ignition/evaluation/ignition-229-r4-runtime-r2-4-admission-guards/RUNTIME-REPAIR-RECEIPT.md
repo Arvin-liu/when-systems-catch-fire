@@ -67,8 +67,19 @@ The exact profile files are included under `profiles/`. The API hostname, numeri
 ## Validation and remaining admission condition
 
 - `RUSTUP_TOOLCHAIN=stable cargo build --offline --bin codex` completed for `21bb399`; binary SHA-256 is recorded above.
-- `git diff --check` passed for the upstream runtime patch.
+- `git diff --check` passed for the upstream runtime patch and Formal receipt changes.
 - The earlier targeted offline Rust test attempt stopped before compilation because `assert_matches v1.5.0` is not cached. No dependency fetch or provider call was attempted.
-- No scientific canary, R4 unit, or evaluator was run. CI and independent read-only review of this successor package are pending.
+- No scientific canary, R4 unit, or evaluator was run.
+- Initial Draft PR #249 checks at exact head `0fb9cea984daa2d0d3ea5981d8b98cc43048b028`:
+
+  | Workflow/job | Run | Conclusion at observation |
+  |---|---:|---|
+  | `architecture-pages / build` | `37356133949` | `SUCCESS` |
+  | `architecture-pages / deploy` | `37356133949` | `SKIPPED` |
+  | `repository-path-accounting-preflight / preflight` | `37356134051` | `FAILURE` — 10 new R2.4 paths were missing from the classification manifest |
+  | `foundation-validation / validate` | `37356133963` | `IN_PROGRESS` at the last observation; its job output was not inspected |
+
+  The failed preflight inspected path metadata only. The 10 paths were added as `EVALUATION_EVIDENCE`; the exact local `validate_repository_path_classification.py --check` then passed all 10 checks, and `git diff --check` passed. The next commit records this append-only correction; its exact-head CI is pending.
+- Independent read-only review of the successor package remains pending.
 
 Admission remains blocked until an authorized process-scoped control proves both (a) exact host-scoped egress for the actual native-auth model-facing request while denying other egress and (b) bounded descendant cleanup and capture. If local policy cannot establish those properties without credential access or permission widening, this hard stop remains terminal for the current execution.

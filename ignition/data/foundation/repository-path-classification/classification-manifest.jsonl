@@ -3063,6 +3063,16 @@
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-r1/tests/test_runtime_prereg.py"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-r1/timeout-contract.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-r1/timeout-payload-contract.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/INDEPENDENT-REVIEW-FINDINGS.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/RUNTIME-REPAIR-RECEIPT.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/SHA256SUMS.txt"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/profiles/sandbox-profile-api-host-probe.sb"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/profiles/sandbox-profile-localhost-probe.sb"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/profiles/sandbox-profile-param-probe.sb"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/profiles/sandbox-profile-probe.sb"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/profiles/sandbox-profile-remote-tcp-probe.sb"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/profiles/sandbox-profile-wildcard-port-probe.sb"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/upstream-runtime-repair.patch"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/README.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/task-branch-authorization-r0.2.schema.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/task182-r2-branch-authorization-template.json"}
