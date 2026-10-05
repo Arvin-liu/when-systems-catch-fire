@@ -3063,6 +3063,13 @@
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-r1/tests/test_runtime_prereg.py"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-r1/timeout-contract.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-prereg-r1/timeout-payload-contract.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-2-codex-native/PREREGISTRATION.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-2-codex-native/SHA256SUMS.txt"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-2-codex-native/access-ledger.jsonl"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-2-codex-native/capture-semantics.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-2-codex-native/future-execution-instructions.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-2-codex-native/proof-receipt.json"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-2-codex-native/validate_local_proof.py"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/README.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/task-branch-authorization-r0.2.schema.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/task182-r2-branch-authorization-template.json"}
