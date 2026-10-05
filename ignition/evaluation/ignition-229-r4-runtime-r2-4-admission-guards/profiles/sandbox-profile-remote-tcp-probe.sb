@@ -1,0 +1,5 @@
+(version 1)
+(deny default)
+(allow file-read*)
+(allow process-exec (literal "/usr/bin/true"))
+(allow network-outbound (remote tcp "api.openai.com:443"))
