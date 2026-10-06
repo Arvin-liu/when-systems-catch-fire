@@ -3073,6 +3073,15 @@
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/profiles/sandbox-profile-remote-tcp-probe.sb"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/profiles/sandbox-profile-wildcard-port-probe.sb"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-4-admission-guards/upstream-runtime-repair.patch"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-5-egress-isolation/RUNTIME-REPAIR-RECEIPT.md"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-5-egress-isolation/SHA256SUMS.txt"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-5-egress-isolation/egress_broker.py"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-5-egress-isolation/local-gates.json"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-5-egress-isolation/process_supervisor.py"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-5-egress-isolation/sandbox_profile.py"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-5-egress-isolation/test_egress_broker.py"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-5-egress-isolation/test_process_supervisor.py"}
+{"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/ignition-229-r4-runtime-r2-5-egress-isolation/test_sandbox_profile.py"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/README.md"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/task-branch-authorization-r0.2.schema.json"}
 {"category": "EVALUATION_EVIDENCE", "matched_rule": "EVALUATION_EVIDENCE", "path": "ignition/evaluation/operational-control/r0.2/task182-r2-branch-authorization-template.json"}
