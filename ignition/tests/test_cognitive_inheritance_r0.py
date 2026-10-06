@@ -23,6 +23,7 @@ from tools.validate_cognitive_inheritance_r0 import (  # noqa: E402
     FINAL_STATE,
     TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_PATH,
     TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_SHA256,
+    TASK229_R4_TASK179_SUCCESSOR_SHA256,
     TASK217_FREEZE_RELATIVE,
     TASK217_FREEZE_SIDECAR_RELATIVE,
     TASK220_FREEZE_RELATIVE,
@@ -37,6 +38,7 @@ from tools.validate_cognitive_inheritance_r0 import (  # noqa: E402
     ValidationFailure,
     task217_generated_fire_seed_paths,
     is_allowed_changed_path,
+    is_task229_r4_task179_successor,
     task217_generated_knowledge_paths,
     task220_projection_hashes,
     task225_projection_chain_coverage,
@@ -130,54 +132,75 @@ class CognitiveInheritanceR0Tests(unittest.TestCase):
         self.assertFalse(is_allowed_changed_path("ignition/data/agent-federation/build-vs-integrate-policy-r1.json.bak"))
 
     def test_task229_successor_exception_is_exact_content_bound(self) -> None:
-        relative_path = TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_PATH
-        source_bytes = (ROOT.parent / relative_path).read_bytes()
-        self.assertEqual(hashlib.sha256(source_bytes).hexdigest(), TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_SHA256)
-        self.assertFalse(is_allowed_changed_path(relative_path))
+        # Preserve the R3 byte lock as history while testing the separately
+        # authorized R4 successor identity at its exact path and full hash.
+        self.assertEqual(
+            TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_SHA256,
+            "f089743b3e07b1ed3b63027e6d0b0e3846a10cffba88487ab3a6d4b917f21e99",
+        )
+        self.assertFalse(is_allowed_changed_path(TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_PATH))
 
-        with tempfile.TemporaryDirectory() as temp_dir:
-            repo_root = Path(temp_dir)
-            ignition_root = repo_root / "ignition"
-            ignition_root.mkdir()
-            (repo_root / ".git").mkdir()
-            candidate = repo_root / relative_path
-            candidate.parent.mkdir(parents=True)
-            candidate.write_bytes(source_bytes)
+        successors = {}
+        for relative_path, expected_sha256 in TASK229_R4_TASK179_SUCCESSOR_SHA256.items():
+            source_bytes = (ROOT.parent / relative_path).read_bytes()
+            self.assertEqual(hashlib.sha256(source_bytes).hexdigest(), expected_sha256)
+            self.assertTrue(is_task229_r4_task179_successor(relative_path, ROOT.parent))
+            self.assertFalse(is_allowed_changed_path(relative_path))
+            successors[relative_path] = source_bytes
 
-            def validate_single_change(changed_path: str, passes: bool) -> None:
-                completed = subprocess.CompletedProcess(
-                    args=["git", "diff", "--name-only", "BASELINE", "HEAD"],
-                    returncode=0,
-                    stdout=changed_path + "\n",
-                    stderr="",
-                )
-                with patch(
-                    "tools.validate_cognitive_inheritance_r0.subprocess.run",
-                    return_value=completed,
-                ), patch(
-                    "tools.validate_cognitive_inheritance_r0.task217_generated_knowledge_paths",
-                    return_value=set(),
-                ), patch(
-                    "tools.validate_cognitive_inheritance_r0.task217_generated_fire_seed_paths",
-                    return_value=set(),
-                ):
-                    if passes:
-                        validate_changed_paths(ignition_root)
-                    else:
-                        with self.assertRaises(ValidationFailure):
+        for relative_path, source_bytes in successors.items():
+            with self.subTest(successor_path=relative_path), tempfile.TemporaryDirectory() as temp_dir:
+                repo_root = Path(temp_dir)
+                ignition_root = repo_root / "ignition"
+                ignition_root.mkdir()
+                (repo_root / ".git").mkdir()
+                candidate = repo_root / relative_path
+                candidate.parent.mkdir(parents=True)
+
+                def validate_single_change(changed_path: str, passes: bool) -> None:
+                    completed = subprocess.CompletedProcess(
+                        args=["git", "diff", "--name-only", "BASELINE", "HEAD"],
+                        returncode=0,
+                        stdout=changed_path + "\n",
+                        stderr="",
+                    )
+                    with patch(
+                        "tools.validate_cognitive_inheritance_r0.subprocess.run",
+                        return_value=completed,
+                    ), patch(
+                        "tools.validate_cognitive_inheritance_r0.task217_generated_knowledge_paths",
+                        return_value=set(),
+                    ), patch(
+                        "tools.validate_cognitive_inheritance_r0.task217_generated_fire_seed_paths",
+                        return_value=set(),
+                    ):
+                        if passes:
                             validate_changed_paths(ignition_root)
+                        else:
+                            with self.assertRaises(ValidationFailure):
+                                validate_changed_paths(ignition_root)
 
-            validate_single_change(relative_path, passes=True)
+                candidate.write_bytes(source_bytes)
+                validate_single_change(relative_path, passes=True)
 
-            candidate.write_bytes(source_bytes.replace(
-                b"#!/usr/bin/env python3\n",
-                b"#!/usr/bin/env python2\n",
-                1,
-            ))
-            validate_single_change(relative_path, passes=False)
+                candidate.write_bytes(source_bytes + b"\nbyte drift\n")
+                validate_single_change(relative_path, passes=False)
 
-            protected_path = "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
-            validate_single_change(protected_path, passes=False)
+                candidate.unlink()
+                validate_single_change(relative_path, passes=False)
+
+                candidate.mkdir()
+                validate_single_change(relative_path, passes=False)
+                candidate.rmdir()
+
+                candidate.symlink_to(ROOT.parent / relative_path)
+                validate_single_change(relative_path, passes=False)
+                candidate.unlink()
+
+                third_path = "ignition/tools/foundation/adjudicate_core.py"
+                validate_single_change(third_path, passes=False)
+                protected_path = "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl"
+                validate_single_change(protected_path, passes=False)
 
     def test_human_results_isolation_is_exact_and_preserves_unrelated_reports(self) -> None:
         config = json.loads((ROOT / "data/governance/human-results/config.json").read_text(encoding="utf-8"))
