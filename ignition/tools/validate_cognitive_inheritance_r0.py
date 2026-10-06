@@ -61,6 +61,21 @@ TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_SHA256 = (
 # Provenance: the exact Task229-R3 admission-before-read safety repair landed
 # in 4f79a8f988ee11d461e41e025c4fc3644cce7a4f. This is a successor-compatible
 # exception for those exact bytes, not a Task179 allowlist expansion.
+# Task229/R4 successor scope is separately authorized by
+# Arvin-liu/1111@2a5491293ea0971675363f2987f02e19005bdd5f:
+# reviews/IGNITION-2026-10-06-229-R4-task179-successor-scope.md. Its only
+# semantic purpose is PATH_CLASSIFY_AND_EXCLUDE_BEFORE_BODY_READ for the
+# Foundation boundary Arvin-liu/1111@6267248304658086aa6e44a4b3558338bdc189e8.
+# Keep this exact-path + exact-byte successor separate from the historical R3
+# lock above and from ALLOWED_CHANGED_FILES / ALLOWED_CHANGED_PREFIXES.
+TASK229_R4_TASK179_SUCCESSOR_SHA256 = {
+    "ignition/tools/foundation/adjudicate_nonfunction_claims.py": (
+        "6937a2eade94d202dde1cab04d74455bd58627d10655579659302ddb028cb006"
+    ),
+    "ignition/tests/foundation/test_nonfunction_claim_closure.py": (
+        "c2e9da906a9c8c32b2e527461b5cad4d9023fe4db83ccf09b58315a5d78aa2da"
+    ),
+}
 TASK225_SUCCESSOR_PARENT_TASK = "IGNITION-20260926-220"
 TASK225_SUCCESSOR_PARENT_COMMIT = "8989a7c58e602f1e02c5de95af1cde418ad827a9"
 TASK225_SUCCESSOR_PROVENANCE = {
@@ -338,6 +353,7 @@ def validate_changed_paths(root: Path) -> None:
         path for path in changed
         if not is_allowed_changed_path(path, exact_extra_paths=task217_projection_paths)
         and not is_task229_admission_before_read_successor(path, root.parent)
+        and not is_task229_r4_task179_successor(path, root.parent)
     ]
     require(not unexpected, f"R0 changed protected or out-of-scope paths: {unexpected}")
 
@@ -732,6 +748,21 @@ def is_task229_admission_before_read_successor(path: str, repo_root: Path) -> bo
     except OSError:
         return False
     return digest == TASK229_ADMISSION_BEFORE_READ_SUCCESSOR_SHA256
+
+
+def is_task229_r4_task179_successor(path: str, repo_root: Path) -> bool:
+    """Admit only the two exact Task229/R4 Foundation safety-repair files."""
+    expected_sha256 = TASK229_R4_TASK179_SUCCESSOR_SHA256.get(path)
+    if expected_sha256 is None:
+        return False
+    candidate = repo_root / path
+    try:
+        if candidate.is_symlink() or not candidate.is_file():
+            return False
+        actual_sha256 = hashlib.sha256(candidate.read_bytes()).hexdigest()
+    except OSError:
+        return False
+    return actual_sha256 == expected_sha256
 
 
 def validate_human_results_excluded_prefixes(prefixes: Any) -> None:
