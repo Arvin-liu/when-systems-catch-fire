@@ -1,0 +1,33 @@
+{
+  "broker_allowlist": [],
+  "canary_calls": 0,
+  "codex_binary_sha256": "33626f845897d8d90afd28de8204b0765ebc66b7c20a7fe52a666f5b908fbac3",
+  "codex_selected_source_sha256": "a62a68bb01f96698d2e55fb77914e67d3879f698976f8f53f57d5411bbb5b22e",
+  "codex_source_commit": "0e76e6b4d63539595e073eb8fdfe90649e50f669",
+  "credential_values_captured": false,
+  "deny_first_events": [
+    {
+      "decision": "blocked",
+      "host": "stage02.local-probe.invalid",
+      "port": 443,
+      "reason": "not_allowlisted",
+      "sequence": 1,
+      "timestamp_utc": "2026-10-06T03:09:04.896525+00:00"
+    }
+  ],
+  "evaluator_calls": 0,
+  "local_test_count": 10,
+  "provider_requests": 0,
+  "r4_units": 0,
+  "sandbox_child_result": {
+    "approved_loopback_reached_broker": true,
+    "broker_denied_probe_host": true,
+    "direct_external_denied": true,
+    "other_loopback_denied": true
+  },
+  "sandbox_profile_sha256": "2278428a59831ba81414e4a41ccdb24094eb2b74c03349849892e98c0b06e670",
+  "status": "LOCAL_RUNTIME_ISOLATION_CHECKS_PASSED",
+  "task230": false,
+  "tls_mitm": false,
+  "unapproved_loopback_listener_accepted": false
+}

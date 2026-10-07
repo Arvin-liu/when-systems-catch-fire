@@ -261,6 +261,10 @@ NON_AUTHORITATIVE_PREFIXES = (
     "reports/governance/task-IGNITION-20260907-159.md",
     "agent-results/IGNITION-20260907-159-result.md",
 )
+# Task229/R4 runtime and evaluation artifacts are path-accounted operational
+# evidence only. Keep this exact prefix separate from the broader legacy list so
+# its authorized pre-body exclusion remains explicit and narrow.
+TASK229_R4_PROTECTED_PREFIX = "evaluation/ignition-229-r4-"
 EXPLICIT_IMPORTS = {
     "data/foundation/claims/claims.jsonl",
 }
@@ -397,6 +401,13 @@ def walk_json_strings(value: object, pointer: str = "") -> Iterable[tuple[str, s
 
 
 def text_fragments(path: str) -> tuple[list[dict], str]:
+    # Foundation discovery may retain only the protected path string and this
+    # nonsemantic disposition. Return before admission lookup, filesystem
+    # checks, archive fallback, or any body read so protected runtime/evaluation
+    # evidence cannot supply candidate fragments or canonical claim IDs.
+    if path.startswith(TASK229_R4_PROTECTED_PREFIX):
+        return [], "EXCLUDED_NON_AUTHORITATIVE_RUNTIME_EVIDENCE"
+
     admission = admission_for_path(path)
     if path not in EXPLICIT_IMPORTS and not admission.auto_discovery:
         return [], f"EXCLUDED_{admission.classification}"
