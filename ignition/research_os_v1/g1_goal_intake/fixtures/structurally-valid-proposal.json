@@ -1,0 +1,129 @@
+{
+  "schema": "ignition.research_os_v1.g1_goal_intake.request.v1",
+  "request": {
+    "research_question": "Assess whether a synthetic completion boundary prevents RUN_PASS from implying Goal completion.",
+    "declared_origin": "USER_SUBMITTED_UNVERIFIED",
+    "deliverables": [
+      "preflight-report.md"
+    ],
+    "success_predicates": [
+      "intent_goal_contract_bound",
+      "objective_digest_matches"
+    ],
+    "allowed_source_kinds": [
+      "LOCAL_SYNTHETIC_FIXTURE"
+    ],
+    "budget_envelopes": {
+      "branches": 2,
+      "reviews": 1
+    },
+    "allowed_executors": [
+      "local-python"
+    ],
+    "stop_conditions": {
+      "budget_exhausted": "STOP",
+      "stale_or_unbound": "STOP",
+      "owner_authority_required": "OWNER_REVIEW",
+      "executor_unavailable": "STOP"
+    },
+    "claim_ceiling": "SYNTHETIC_PREFLIGHT_ONLY"
+  },
+  "bindings": {
+    "intent_id": "intent:g1-fixture",
+    "intent_version": 1,
+    "goal_id": "goal:g1-fixture",
+    "goal_version": 1,
+    "completion_contract_id": "contract:g1-fixture",
+    "objective_digest": "fc0d69ac3fcc83a9b702b57f059d87f052ddda545966da516e4e83aebab25646",
+    "parent_goal_id": null,
+    "parent_goal_version": null,
+    "proposal_episode_id": "episode:g1-fixture",
+    "proposal_run_ids": [
+      "run:g1-fixture"
+    ]
+  },
+  "snapshots": {
+    "intent": {
+      "schema": "os-steering-intent-obligation-r1.intent",
+      "intent_id": "intent:g1-fixture",
+      "statement": "Assess whether a synthetic completion boundary prevents RUN_PASS from implying Goal completion.",
+      "namespace": "ignition-g1-synthetic",
+      "provenance": {
+        "source_type": "SYSTEM_DERIVED_PROPOSAL",
+        "actor_ref": "fixture-author",
+        "authority_id": "synthetic-fixture",
+        "reason": "Synthetic proposal input for local preflight only.",
+        "evidence_refs": [],
+        "authorized": false
+      },
+      "status": "PROPOSED",
+      "scope": {
+        "allowed_deliverables": [
+          "preflight-report.md"
+        ],
+        "allowed_source_kinds": [
+          "LOCAL_SYNTHETIC_FIXTURE"
+        ],
+        "allowed_executors": [
+          "local-python"
+        ],
+        "budget_envelopes": {
+          "branches": 3,
+          "reviews": 2
+        },
+        "stop_conditions": {
+          "budget_exhausted": "STOP",
+          "stale_or_unbound": "STOP",
+          "owner_authority_required": "OWNER_REVIEW",
+          "executor_unavailable": "STOP"
+        },
+        "claim_ceiling": "SYNTHETIC_PREFLIGHT_ONLY"
+      },
+      "version": 1,
+      "supersedes_intent_id": null,
+      "created_at": "2026-10-10T00:00:00+00:00",
+      "updated_at": "2026-10-10T00:00:00+00:00"
+    },
+    "goal": {
+      "schema": "os-steering-intent-obligation-r1.goal",
+      "goal_id": "goal:g1-fixture",
+      "intent_id": "intent:g1-fixture",
+      "statement": "Assess whether a synthetic completion boundary prevents RUN_PASS from implying Goal completion.",
+      "namespace": "ignition-g1-synthetic",
+      "completion_contract_id": "contract:g1-fixture",
+      "provenance": {
+        "source_type": "SYSTEM_DERIVED_PROPOSAL",
+        "actor_ref": "fixture-author",
+        "authority_id": "synthetic-fixture",
+        "reason": "Synthetic proposal input for local preflight only.",
+        "evidence_refs": [],
+        "authorized": false
+      },
+      "status": "PROPOSED",
+      "version": 1,
+      "parent_goal_id": null,
+      "supersedes_goal_id": null,
+      "created_at": "2026-10-10T00:00:00+00:00",
+      "updated_at": "2026-10-10T00:00:00+00:00",
+      "objective_digest": "fc0d69ac3fcc83a9b702b57f059d87f052ddda545966da516e4e83aebab25646"
+    },
+    "completion_contract": {
+      "schema": "os-steering-intent-obligation-r1.completion-contract",
+      "contract_id": "contract:g1-fixture",
+      "acceptance_predicates": [
+        "intent_goal_contract_bound",
+        "objective_digest_matches"
+      ],
+      "required_evidence_types": [
+        "LOCAL_SYNTHETIC_FIXTURE"
+      ],
+      "completion_authority": "OWNER_ONLY",
+      "forbidden_shortcuts": [
+        "RUN_PASS",
+        "tests_green"
+      ],
+      "review_window_ref": null
+    },
+    "parent_goal": null
+  }
+}
