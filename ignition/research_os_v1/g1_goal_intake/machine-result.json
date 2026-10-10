@@ -1,0 +1,106 @@
+{
+  "schema": "ignition.research_os_v1.g1_goal_intake.checkpoint.v1",
+  "status": "V1_G1_READ_ONLY_ADAPTER_CANDIDATE_READY_FOR_OWNER_REVIEW",
+  "repository": "Arvin-liu/when-systems-catch-fire",
+  "pull_request": {
+    "number": 251,
+    "url": "https://github.com/Arvin-liu/when-systems-catch-fire/pull/251",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "branch": "draft/v1-g1-goal-intake-independent-20261010",
+    "base_branch": "main",
+    "base_sha": "f17477dd9761c898563dbf5670c63914a5ecedfa",
+    "initial_head_sha": "846d567d834159e97a5d44be1cf10f4d25b93acc",
+    "implementation_commit_sha": "a64f5a32df059c14dbeacd736116f6b8b4a8bacf"
+  },
+  "authority": {
+    "G1_GATE_PASSED": false,
+    "owner_authenticated": false,
+    "canonical_records_written": false,
+    "goal_lifecycle_mutated": false,
+    "completion_decision_evaluated": false,
+    "approval_receipt_created": false,
+    "dispatch": false,
+    "Stage08_touched": false,
+    "Current_mutated": false,
+    "Task230_started": false,
+    "merged": false,
+    "ready_for_review": false
+  },
+  "changed_paths": [
+    "ignition/research_os_v1/g1_goal_intake/README.md",
+    "ignition/research_os_v1/g1_goal_intake/RESULT.md",
+    "ignition/research_os_v1/g1_goal_intake/SHA256SUMS.txt",
+    "ignition/research_os_v1/g1_goal_intake/__init__.py",
+    "ignition/research_os_v1/g1_goal_intake/__main__.py",
+    "ignition/research_os_v1/g1_goal_intake/dry-run-compatibility.md",
+    "ignition/research_os_v1/g1_goal_intake/fixtures/structurally-valid-proposal.json",
+    "ignition/research_os_v1/g1_goal_intake/integration-plan.md",
+    "ignition/research_os_v1/g1_goal_intake/machine-result.json",
+    "ignition/research_os_v1/g1_goal_intake/preflight.py",
+    "ignition/tests/test_research_os_v1_g1_goal_intake.py"
+  ],
+  "tests": [
+    {
+      "command": "python3 -m py_compile research_os_v1/g1_goal_intake/*.py tests/test_research_os_v1_g1_goal_intake.py",
+      "result": "PASS",
+      "exit_code": 0
+    },
+    {
+      "command": "PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_research_os_v1_g1_*.py' -v",
+      "result": "PASS",
+      "passed": 58,
+      "exit_code": 0
+    },
+    {
+      "command": "PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_steering_episode_binding.py' -v",
+      "result": "PASS",
+      "passed": 4,
+      "exit_code": 0
+    },
+    {
+      "command": "PYTHONPATH=. python3 -m unittest discover -s tests -p 'test_steering_completion.py' -v",
+      "result": "PASS",
+      "passed": 5,
+      "exit_code": 0
+    }
+  ],
+  "cli_replay": {
+    "runs": 2,
+    "result": "PASS",
+    "commands": [
+      "python3 -m research_os_v1.g1_goal_intake --input research_os_v1/g1_goal_intake/fixtures/structurally-valid-proposal.json --report-dir /tmp/g1-goal-intake-terminal-20261010-final-a1",
+      "python3 -m research_os_v1.g1_goal_intake --input research_os_v1/g1_goal_intake/fixtures/structurally-valid-proposal.json --report-dir /tmp/g1-goal-intake-terminal-20261010-final-b1",
+      "cmp /tmp/g1-goal-intake-terminal-20261010-final-a1/admission-report.json /tmp/g1-goal-intake-terminal-20261010-final-b1/admission-report.json",
+      "cmp /tmp/g1-goal-intake-terminal-20261010-final-a1/summary.md /tmp/g1-goal-intake-terminal-20261010-final-b1/summary.md"
+    ],
+    "byte_identical_json": true,
+    "byte_identical_markdown": true,
+    "preflight_status": "REQUIRES_OWNER_AUTHORITY",
+    "structural_outcome": "CANDIDATE_STRUCTURALLY_VALID_PROPOSAL_ONLY",
+    "input_sha256": "8f0f9d226ba0ab83d34a31dfaf3f560752040d5268ba6505b8433102a9d0e84e",
+    "json_output_sha256": "4c84d20c1cd5d117345e627b98a78101788c84aa70fa9ee54950d91354c001c0",
+    "markdown_output_sha256": "95135eac9d649bc89e4dc10b3ddb84ff3c0a29fb3d80348181a58abeacdd328a"
+  },
+  "independent_review": {
+    "reviewer": "independent A6 reviewer /root/a2_authority_review",
+    "result": "PASS_NO_REMAINING_BLOCKERS",
+    "new_tests_passed": 58,
+    "episode_binding_tests_passed": 4,
+    "completion_tests_passed": 5,
+    "preflight_py_sha256": "f666d3c3e3cae96fbeae84b0f2e81aede08a35de4bd399836e4dd3a26415f7b4",
+    "test_py_sha256": "cd812806207ae089f43f2f113558b2931d295ab8317d8588ef26b2c07a120a96"
+  },
+  "failure_record": [
+    "Initial 50-test run: 1 assertion failure and 2 assertion errors from expectations that did not match early fail-closed summary omission and bounded_text_required; corrected assertions, preserving INVALID_INPUT and no-echo expectations.",
+    "Independent review found caller-controlled report path writes; confined CLI output to system temp roots and added outside-root and symlink-escape rejection tests 51-52.",
+    "Independent review found RUN_PASS spelling and synchronized contract tamper gaps; normalized tokens and enforced the invariant independent of untrusted forbidden-list declarations; tests 53-56.",
+    "Independent review found deep JSON RecursionError; now returns malformed-input failure; test 57.",
+    "Independent review found Unicode-confusable policy tokens; ASCII-only policy token validation added; test 58.",
+    "The manifest check was first invoked from the repository root, so ignition-relative paths did not resolve; rerunning from ignition verified 11/11 entries. This was a working-directory mistake, not a checksum mismatch.",
+    "A pre-commit guard compared git var GIT_AUTHOR_IDENT including its dynamic timestamp and stopped before staging/commit; the local author and committer name/email were then checked against the authenticated account public noreply identity; no commit was made by the failed guard.",
+    "A later combined pre-commit command regenerated the relative-path manifest from repository root but checked it from ignition, so all 11 prefixed paths failed to resolve and it stopped before staging; the manifest was regenerated and verified from ignition. This was a path mismatch, not a file hash mismatch."
+  ],
+  "checkpoint_note": "The exact terminal branch head is recorded in the PR #251 body after this evidence commit is pushed; this file records the implementation source commit to avoid a self-referential commit hash."
+}
