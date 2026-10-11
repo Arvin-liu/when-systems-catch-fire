@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 15,
+    "global_links_after_field": 848,
+    "global_physical_records_after_field": 790,
+    "new_physical_records": 103,
+    "selected_links": 120
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "32",
+  "field_label": "MEDICAL SCIENCES",
+  "formal_parent_head": "145cdb68e46f46eb8413e073f986450e9bc64285",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "0feba12abcf92586d6973510a5ae9ce50a43e89a01d695e525d1489b928be3f1",
+    "field_admission": "794cb52eb13ae8ec45d644199822099241979f858271c71c5558cc3b7c8669ad",
+    "manifest": "e456a1cbdb6ebaf880dea40d70c889c4c26c4cc0e025124b7437dfe0622d58a9",
+    "operation": "0dceff8dda644d7d72c35524daa073b8da2bdc31957f4942506ec0d3e50279a3",
+    "physical_records": "1e22a730d731b9c14e300fd86cfa17a4a6a823bf6733e53ff8647ae141852b89",
+    "report": "34b072ee451b2041597f6df0bf025f7cb72fcc975397b5a87e613b39f1ec56d9",
+    "source_freeze": "18dc875b0535903461a221102607dd691257ae14f995dfdf1b8cb722d7f0b098"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "18dc875b0535903461a221102607dd691257ae14f995dfdf1b8cb722d7f0b098",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

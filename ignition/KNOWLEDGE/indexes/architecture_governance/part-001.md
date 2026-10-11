@@ -849,6 +849,11 @@
   - 可搜索名称：IMPLICIT-1DE20CCA0629C92C / ## Charter Gate Fields / IMPLICIT-1DE20CCA0629C92C
   - 来源：`docs/architecture/effectual-action-plane.md`
   - 依赖：—；被引用：—
+- [## Claim ceiling and next gate](../../../reports/operations/ignition-172-step01-collision-audit.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A3F7219B0B366A1D / ## Claim ceiling and next gate / IMPLICIT-A3F7219B0B366A1D
+  - 来源：`reports/operations/ignition-172-step01-collision-audit.md`
+  - 依赖：—；被引用：—
 - [## hr-3785d4850d94b77e — Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure](../../../analysis/corpus-relation/cluster_source_briefs/C000.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-D07C092402911F53 / ## hr-3785d4850d94b77e — Task 100 — corpus-wide non-function claim adjudication and evidence-lineage closure / IMPLICIT-D07C092402911F53
@@ -2497,10 +2502,5 @@
 - [_issue\(issues, "UNKNOWN_REF", f"{item_path}.{name}", "claim artifact reference is unknown"\)](../../../reos_vnext/validation.py)
   - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
   - 可搜索名称：NFC-34d09f657f7a446a / _issue\(issues, "UNKNOWN_REF", f"{item_path}.{name}", "claim artifact reference is unknown"\)
-  - 来源：`reos_vnext/validation.py`
-  - 依赖：—；被引用：—
-- [_strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)](../../../reos_vnext/validation.py)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `QUARANTINED_AMBIGUOUS`
-  - 可搜索名称：NFC-3e436859091f4829 / _strings\(record.get\("unnecessary_modules"\), f"{path}.unnecessary_modules", issues\)
   - 来源：`reos_vnext/validation.py`
   - 依赖：—；被引用：—

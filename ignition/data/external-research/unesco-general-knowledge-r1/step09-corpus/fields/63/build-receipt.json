@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 12,
+    "global_links_after_field": 1848,
+    "global_physical_records_after_field": 1703,
+    "new_physical_records": 88,
+    "selected_links": 96
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "63",
+  "field_label": "SOCIOLOGY",
+  "formal_parent_head": "6eebc5337eb8e586c2ba88731eb7c508a5dac24b",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "ace7d242f5d5b4c33f271e74cf9d29af918ec3099c2f3bff64f1d2de587786a6",
+    "field_admission": "3fbd7733a007082de9db4bac545b62c3171ab8e07e86513ad09cac52add6a63e",
+    "manifest": "44374aaed31334369a5aee3b2e443302e6427e172acb61eca9520fb04e19ba17",
+    "operation": "465007d68138f8ee9b0eceb0ac921f96c979094a93c22c729637ce1b2ccc0a03",
+    "physical_records": "11ff0d27925eba3363794df7ae1d556fa5b7ebe80bb935dd9717064ce3b10467",
+    "report": "d115620a8a9d432e61557f5c7cb4a680952b641e0a3b3c54c41c7453b5f369bd",
+    "source_freeze": "4778e86e924923b73abced790ca55dbd7ccc6326c0ebe528082340dab815276c"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "4778e86e924923b73abced790ca55dbd7ccc6326c0ebe528082340dab815276c",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

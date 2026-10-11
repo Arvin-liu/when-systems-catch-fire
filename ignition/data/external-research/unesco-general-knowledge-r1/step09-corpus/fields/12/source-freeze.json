@@ -1,0 +1,50 @@
+{
+  "abstract_or_fulltext_persistence": false,
+  "decision": "STEP09_FIELD_SOURCE_AND_DERIVED_INPUT_FROZEN; METADATA_ONLY; MANUAL_REVIEW_REQUIRED; NO_EVIDENCE_PROMOTION",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "field_code": "12",
+  "formal_parent_head": "8e231b6ab54804f8a80cc8a5230f45932176ceb9",
+  "freeze_event": "SCAN_AND_PROVIDER_INPUT_FREEZE",
+  "packet_name": "12.json",
+  "packet_sha256": "8cc5152d42133ffdfe6a349b7278b9fd6e02f6902eeaf45c92c53f5c8726b872",
+  "provider_input": [
+    {
+      "artifact": "step09 scratch field packet",
+      "name": "wave1.json",
+      "sha256": "3e1fe3c390a1ce5562ec57320086008e48f499fe523e6c33fd166a63554c1d6e"
+    },
+    {
+      "artifact": "step09 scratch field packet",
+      "name": "wave2.json",
+      "sha256": "740ed41773df2aafb8bc7cf2d7d5a49f9e442a01f9c39620a30ce699c9e4fc89"
+    },
+    {
+      "artifact": "step09 scratch field packet",
+      "name": "wave3.json",
+      "sha256": "bbec5ff7ad864462c4647183b545fc224573fdbc5ced5337d81b7bd661962bf6"
+    },
+    {
+      "artifact": "step09 scratch field packet",
+      "name": "wave4.json",
+      "sha256": "d38ef240c8fb1231404a4a4dcbe6067c9c564de4d2c7cf8ca974ec720c7c2829"
+    },
+    {
+      "artifact": "step09 scratch field packet",
+      "name": "deficit-retry.json",
+      "sha256": "42221c61383e71e46be5ec3d0131d270ecc42c9bf24cf7af7b2ccafe770ab3cc"
+    },
+    {
+      "artifact": "step09 scratch field packet",
+      "name": "residual-retry.json",
+      "sha256": "2851e8bf055fa3721baf00384a3e1167165bc0a86fdc4fc0d1e5c7a00b3c50ff"
+    },
+    {
+      "artifact": "step09 scratch field packet",
+      "name": "crossref-safe-retry.json",
+      "sha256": "f7e5aabe85e9ba905f172ba73c3642ee1506b59155f6d0fe93799fd7b2872bc9"
+    }
+  ],
+  "raw_response_persistence": false,
+  "schema": "task172-step09-field-source-freeze-v1",
+  "selection_is_metadata_heuristic": true
+}

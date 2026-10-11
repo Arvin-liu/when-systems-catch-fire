@@ -1,0 +1,1281 @@
+{
+  "authority": "UNESCO codes/labels come only from Gate T primary parse; provider indexes are retrieval signals",
+  "decision": "STEP08_PILOT_PASS_FOR_METADATA_PIPELINE; NO_DIRECT_PROVIDER_EQUIVALENCE; NO_SCIENTIFIC_EVIDENCE_PROMOTION",
+  "no_direct_mapping_rule": true,
+  "pilot_scope": {
+    "manual_review_required": true,
+    "metadata_only": true,
+    "records": 365,
+    "target_disciplines": 24,
+    "target_fields": 24
+  },
+  "provider_candidate_counts": {
+    "Crossref": 120,
+    "OpenAIRE": 120,
+    "OpenAlex": 120,
+    "PubMed E-utilities": 5
+  },
+  "rows": [
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0001",
+        "UNESCO172-STEP08-0002",
+        "UNESCO172-STEP08-0003",
+        "UNESCO172-STEP08-0004",
+        "UNESCO172-STEP08-0005",
+        "UNESCO172-STEP08-0006",
+        "UNESCO172-STEP08-0007",
+        "UNESCO172-STEP08-0008",
+        "UNESCO172-STEP08-0009",
+        "UNESCO172-STEP08-0010",
+        "UNESCO172-STEP08-0011",
+        "UNESCO172-STEP08-0012",
+        "UNESCO172-STEP08-0013",
+        "UNESCO172-STEP08-0014",
+        "UNESCO172-STEP08-0015"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "11",
+      "field_label": "LOGIC",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 2,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 15,
+          "raw_heading_line": "1101",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Applications of logic"
+      ],
+      "unesco_discipline_code": "1101",
+      "unesco_discipline_label": "Applications of logic"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0016",
+        "UNESCO172-STEP08-0017",
+        "UNESCO172-STEP08-0018",
+        "UNESCO172-STEP08-0019",
+        "UNESCO172-STEP08-0020",
+        "UNESCO172-STEP08-0021",
+        "UNESCO172-STEP08-0022",
+        "UNESCO172-STEP08-0023",
+        "UNESCO172-STEP08-0024",
+        "UNESCO172-STEP08-0025",
+        "UNESCO172-STEP08-0026",
+        "UNESCO172-STEP08-0027",
+        "UNESCO172-STEP08-0028",
+        "UNESCO172-STEP08-0029",
+        "UNESCO172-STEP08-0030"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "12",
+      "field_label": "MATHEMATICS",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 2,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 67,
+          "raw_heading_line": "1201",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Algebra"
+      ],
+      "unesco_discipline_code": "1201",
+      "unesco_discipline_label": "Algebra"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0031",
+        "UNESCO172-STEP08-0032",
+        "UNESCO172-STEP08-0033",
+        "UNESCO172-STEP08-0034",
+        "UNESCO172-STEP08-0035",
+        "UNESCO172-STEP08-0036",
+        "UNESCO172-STEP08-0037",
+        "UNESCO172-STEP08-0038",
+        "UNESCO172-STEP08-0039",
+        "UNESCO172-STEP08-0040",
+        "UNESCO172-STEP08-0041",
+        "UNESCO172-STEP08-0042",
+        "UNESCO172-STEP08-0043",
+        "UNESCO172-STEP08-0044",
+        "UNESCO172-STEP08-0045"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "21",
+      "field_label": "ASTRONOMY AND ASTROPHYSICS",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 3,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 403,
+          "raw_heading_line": "2101",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Cosmology and cosmogony"
+      ],
+      "unesco_discipline_code": "2101",
+      "unesco_discipline_label": "Cosmology and cosmogony"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0046",
+        "UNESCO172-STEP08-0047",
+        "UNESCO172-STEP08-0048",
+        "UNESCO172-STEP08-0049",
+        "UNESCO172-STEP08-0050",
+        "UNESCO172-STEP08-0051",
+        "UNESCO172-STEP08-0052",
+        "UNESCO172-STEP08-0053",
+        "UNESCO172-STEP08-0054",
+        "UNESCO172-STEP08-0055",
+        "UNESCO172-STEP08-0056",
+        "UNESCO172-STEP08-0057",
+        "UNESCO172-STEP08-0058",
+        "UNESCO172-STEP08-0059",
+        "UNESCO172-STEP08-0060"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "22",
+      "field_label": "PHYSICS",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 3,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 500,
+          "raw_heading_line": "2201",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Acoustics"
+      ],
+      "unesco_discipline_code": "2201",
+      "unesco_discipline_label": "Acoustics"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0061",
+        "UNESCO172-STEP08-0062",
+        "UNESCO172-STEP08-0063",
+        "UNESCO172-STEP08-0064",
+        "UNESCO172-STEP08-0065",
+        "UNESCO172-STEP08-0066",
+        "UNESCO172-STEP08-0067",
+        "UNESCO172-STEP08-0068",
+        "UNESCO172-STEP08-0069",
+        "UNESCO172-STEP08-0070",
+        "UNESCO172-STEP08-0071",
+        "UNESCO172-STEP08-0072",
+        "UNESCO172-STEP08-0073",
+        "UNESCO172-STEP08-0074",
+        "UNESCO172-STEP08-0075"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "23",
+      "field_label": "CHEMISTRY",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 5,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 903,
+          "raw_heading_line": "2301",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Analytical Chemistry"
+      ],
+      "unesco_discipline_code": "2301",
+      "unesco_discipline_label": "Analytical Chemistry"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0076",
+        "UNESCO172-STEP08-0077",
+        "UNESCO172-STEP08-0078",
+        "UNESCO172-STEP08-0079",
+        "UNESCO172-STEP08-0080",
+        "UNESCO172-STEP08-0081",
+        "UNESCO172-STEP08-0082",
+        "UNESCO172-STEP08-0083",
+        "UNESCO172-STEP08-0084",
+        "UNESCO172-STEP08-0085",
+        "UNESCO172-STEP08-0086",
+        "UNESCO172-STEP08-0087",
+        "UNESCO172-STEP08-0088",
+        "UNESCO172-STEP08-0089",
+        "UNESCO172-STEP08-0090"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "24",
+      "field_label": "LIFE SCIENCES",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 6,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 1192,
+          "raw_heading_line": "2401",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Animal biology (Zoology)"
+      ],
+      "unesco_discipline_code": "2401",
+      "unesco_discipline_label": "Animal biology (Zoology)"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0091",
+        "UNESCO172-STEP08-0092",
+        "UNESCO172-STEP08-0093",
+        "UNESCO172-STEP08-0094",
+        "UNESCO172-STEP08-0095",
+        "UNESCO172-STEP08-0096",
+        "UNESCO172-STEP08-0097",
+        "UNESCO172-STEP08-0098",
+        "UNESCO172-STEP08-0099",
+        "UNESCO172-STEP08-0100",
+        "UNESCO172-STEP08-0101",
+        "UNESCO172-STEP08-0102",
+        "UNESCO172-STEP08-0103",
+        "UNESCO172-STEP08-0104",
+        "UNESCO172-STEP08-0105"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "25",
+      "field_label": "EARTH AND SPACE SCIENCES",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 7,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 1553,
+          "raw_heading_line": "2501",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Atmospheric sciences"
+      ],
+      "unesco_discipline_code": "2501",
+      "unesco_discipline_label": "Atmospheric sciences"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0106",
+        "UNESCO172-STEP08-0107",
+        "UNESCO172-STEP08-0108",
+        "UNESCO172-STEP08-0109",
+        "UNESCO172-STEP08-0110",
+        "UNESCO172-STEP08-0111",
+        "UNESCO172-STEP08-0112",
+        "UNESCO172-STEP08-0113",
+        "UNESCO172-STEP08-0114",
+        "UNESCO172-STEP08-0115",
+        "UNESCO172-STEP08-0116",
+        "UNESCO172-STEP08-0117",
+        "UNESCO172-STEP08-0118",
+        "UNESCO172-STEP08-0119",
+        "UNESCO172-STEP08-0120"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "31",
+      "field_label": "AGRICULTURAL SCIENCES",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 8,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 1890,
+          "raw_heading_line": "3101",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Agricultural chemistry"
+      ],
+      "unesco_discipline_code": "3101",
+      "unesco_discipline_label": "Agricultural chemistry"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0121",
+        "UNESCO172-STEP08-0122",
+        "UNESCO172-STEP08-0123",
+        "UNESCO172-STEP08-0124",
+        "UNESCO172-STEP08-0125",
+        "UNESCO172-STEP08-0126",
+        "UNESCO172-STEP08-0127",
+        "UNESCO172-STEP08-0128",
+        "UNESCO172-STEP08-0129",
+        "UNESCO172-STEP08-0130",
+        "UNESCO172-STEP08-0131",
+        "UNESCO172-STEP08-0132",
+        "UNESCO172-STEP08-0133",
+        "UNESCO172-STEP08-0134",
+        "UNESCO172-STEP08-0135",
+        "UNESCO172-STEP08-0136",
+        "UNESCO172-STEP08-0137",
+        "UNESCO172-STEP08-0138",
+        "UNESCO172-STEP08-0139",
+        "UNESCO172-STEP08-0140"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "32",
+      "field_label": "MEDICAL SCIENCES",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 9,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 2112,
+          "raw_heading_line": "3201",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 5
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE",
+        "PubMed E-utilities"
+      ],
+      "query_terms": [
+        "Clinical Sciences"
+      ],
+      "unesco_discipline_code": "3201",
+      "unesco_discipline_label": "Clinical Sciences"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0141",
+        "UNESCO172-STEP08-0142",
+        "UNESCO172-STEP08-0143",
+        "UNESCO172-STEP08-0144",
+        "UNESCO172-STEP08-0145",
+        "UNESCO172-STEP08-0146",
+        "UNESCO172-STEP08-0147",
+        "UNESCO172-STEP08-0148",
+        "UNESCO172-STEP08-0149",
+        "UNESCO172-STEP08-0150",
+        "UNESCO172-STEP08-0151",
+        "UNESCO172-STEP08-0152",
+        "UNESCO172-STEP08-0153",
+        "UNESCO172-STEP08-0154",
+        "UNESCO172-STEP08-0155"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "33",
+      "field_label": "TECHNOLOGICAL SCIENCES",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 10,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 2330,
+          "raw_heading_line": "3301",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Aeronautical technology and engineering"
+      ],
+      "unesco_discipline_code": "3301",
+      "unesco_discipline_label": "Aeronautical technology and engineering"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0156",
+        "UNESCO172-STEP08-0157",
+        "UNESCO172-STEP08-0158",
+        "UNESCO172-STEP08-0159",
+        "UNESCO172-STEP08-0160",
+        "UNESCO172-STEP08-0161",
+        "UNESCO172-STEP08-0162",
+        "UNESCO172-STEP08-0163",
+        "UNESCO172-STEP08-0164",
+        "UNESCO172-STEP08-0165",
+        "UNESCO172-STEP08-0166",
+        "UNESCO172-STEP08-0167",
+        "UNESCO172-STEP08-0168",
+        "UNESCO172-STEP08-0169",
+        "UNESCO172-STEP08-0170"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "51",
+      "field_label": "ANTHROPOLOGY",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 13,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3122,
+          "raw_heading_line": "5101",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Cultural anthropology"
+      ],
+      "unesco_discipline_code": "5101",
+      "unesco_discipline_label": "Cultural anthropology"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0171",
+        "UNESCO172-STEP08-0172",
+        "UNESCO172-STEP08-0173",
+        "UNESCO172-STEP08-0174",
+        "UNESCO172-STEP08-0175",
+        "UNESCO172-STEP08-0176",
+        "UNESCO172-STEP08-0177",
+        "UNESCO172-STEP08-0178",
+        "UNESCO172-STEP08-0179",
+        "UNESCO172-STEP08-0180",
+        "UNESCO172-STEP08-0181",
+        "UNESCO172-STEP08-0182",
+        "UNESCO172-STEP08-0183",
+        "UNESCO172-STEP08-0184",
+        "UNESCO172-STEP08-0185"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "52",
+      "field_label": "DEMOGRAPHY",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 14,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3195,
+          "raw_heading_line": "5201",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Fertility"
+      ],
+      "unesco_discipline_code": "5201",
+      "unesco_discipline_label": "Fertility"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0186",
+        "UNESCO172-STEP08-0187",
+        "UNESCO172-STEP08-0188",
+        "UNESCO172-STEP08-0189",
+        "UNESCO172-STEP08-0190",
+        "UNESCO172-STEP08-0191",
+        "UNESCO172-STEP08-0192",
+        "UNESCO172-STEP08-0193",
+        "UNESCO172-STEP08-0194",
+        "UNESCO172-STEP08-0195",
+        "UNESCO172-STEP08-0196",
+        "UNESCO172-STEP08-0197",
+        "UNESCO172-STEP08-0198",
+        "UNESCO172-STEP08-0199",
+        "UNESCO172-STEP08-0200"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "53",
+      "field_label": "ECONOMIC SCIENCES",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 14,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3318,
+          "raw_heading_line": "5301",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Domestic fiscal policy and public finance"
+      ],
+      "unesco_discipline_code": "5301",
+      "unesco_discipline_label": "Domestic fiscal policy and public finance"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0201",
+        "UNESCO172-STEP08-0202",
+        "UNESCO172-STEP08-0203",
+        "UNESCO172-STEP08-0204",
+        "UNESCO172-STEP08-0205",
+        "UNESCO172-STEP08-0206",
+        "UNESCO172-STEP08-0207",
+        "UNESCO172-STEP08-0208",
+        "UNESCO172-STEP08-0209",
+        "UNESCO172-STEP08-0210",
+        "UNESCO172-STEP08-0211",
+        "UNESCO172-STEP08-0212",
+        "UNESCO172-STEP08-0213",
+        "UNESCO172-STEP08-0214",
+        "UNESCO172-STEP08-0215"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "54",
+      "field_label": "GEOGRAPHY",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 15,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3542,
+          "raw_heading_line": "5401",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Economic Geography"
+      ],
+      "unesco_discipline_code": "5401",
+      "unesco_discipline_label": "Economic Geography"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0216",
+        "UNESCO172-STEP08-0217",
+        "UNESCO172-STEP08-0218",
+        "UNESCO172-STEP08-0219",
+        "UNESCO172-STEP08-0220",
+        "UNESCO172-STEP08-0221",
+        "UNESCO172-STEP08-0222",
+        "UNESCO172-STEP08-0223",
+        "UNESCO172-STEP08-0224",
+        "UNESCO172-STEP08-0225",
+        "UNESCO172-STEP08-0226",
+        "UNESCO172-STEP08-0227",
+        "UNESCO172-STEP08-0228",
+        "UNESCO172-STEP08-0229",
+        "UNESCO172-STEP08-0230"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "55",
+      "field_label": "HISTORY",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 15,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3579,
+          "raw_heading_line": "5501",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Biographies"
+      ],
+      "unesco_discipline_code": "5501",
+      "unesco_discipline_label": "Biographies"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0231",
+        "UNESCO172-STEP08-0232",
+        "UNESCO172-STEP08-0233",
+        "UNESCO172-STEP08-0234",
+        "UNESCO172-STEP08-0235",
+        "UNESCO172-STEP08-0236",
+        "UNESCO172-STEP08-0237",
+        "UNESCO172-STEP08-0238",
+        "UNESCO172-STEP08-0239",
+        "UNESCO172-STEP08-0240",
+        "UNESCO172-STEP08-0241",
+        "UNESCO172-STEP08-0242",
+        "UNESCO172-STEP08-0243",
+        "UNESCO172-STEP08-0244",
+        "UNESCO172-STEP08-0245"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "56",
+      "field_label": "JURIDICAL SCIENCES & LAW",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 15,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3685,
+          "raw_heading_line": "5601",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Canon law"
+      ],
+      "unesco_discipline_code": "5601",
+      "unesco_discipline_label": "Canon law"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0246",
+        "UNESCO172-STEP08-0247",
+        "UNESCO172-STEP08-0248",
+        "UNESCO172-STEP08-0249",
+        "UNESCO172-STEP08-0250",
+        "UNESCO172-STEP08-0251",
+        "UNESCO172-STEP08-0252",
+        "UNESCO172-STEP08-0253",
+        "UNESCO172-STEP08-0254",
+        "UNESCO172-STEP08-0255",
+        "UNESCO172-STEP08-0256",
+        "UNESCO172-STEP08-0257",
+        "UNESCO172-STEP08-0258",
+        "UNESCO172-STEP08-0259",
+        "UNESCO172-STEP08-0260"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "57",
+      "field_label": "LINGUISTICS",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 16,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3743,
+          "raw_heading_line": "5701",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Applied linguistics"
+      ],
+      "unesco_discipline_code": "5701",
+      "unesco_discipline_label": "Applied linguistics"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0261",
+        "UNESCO172-STEP08-0262",
+        "UNESCO172-STEP08-0263",
+        "UNESCO172-STEP08-0264",
+        "UNESCO172-STEP08-0265",
+        "UNESCO172-STEP08-0266",
+        "UNESCO172-STEP08-0267",
+        "UNESCO172-STEP08-0268",
+        "UNESCO172-STEP08-0269",
+        "UNESCO172-STEP08-0270",
+        "UNESCO172-STEP08-0271",
+        "UNESCO172-STEP08-0272",
+        "UNESCO172-STEP08-0273",
+        "UNESCO172-STEP08-0274",
+        "UNESCO172-STEP08-0275"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "58",
+      "field_label": "PEDAGOGY",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 16,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3816,
+          "raw_heading_line": "5801",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Educational theory and methods"
+      ],
+      "unesco_discipline_code": "5801",
+      "unesco_discipline_label": "Educational theory and methods"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0276",
+        "UNESCO172-STEP08-0277",
+        "UNESCO172-STEP08-0278",
+        "UNESCO172-STEP08-0279",
+        "UNESCO172-STEP08-0280",
+        "UNESCO172-STEP08-0281",
+        "UNESCO172-STEP08-0282",
+        "UNESCO172-STEP08-0283",
+        "UNESCO172-STEP08-0284",
+        "UNESCO172-STEP08-0285",
+        "UNESCO172-STEP08-0286",
+        "UNESCO172-STEP08-0287",
+        "UNESCO172-STEP08-0288",
+        "UNESCO172-STEP08-0289",
+        "UNESCO172-STEP08-0290"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "59",
+      "field_label": "POLITICAL SCIENCE",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 16,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3865,
+          "raw_heading_line": "5901",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "International relations"
+      ],
+      "unesco_discipline_code": "5901",
+      "unesco_discipline_label": "International relations"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0291",
+        "UNESCO172-STEP08-0292",
+        "UNESCO172-STEP08-0293",
+        "UNESCO172-STEP08-0294",
+        "UNESCO172-STEP08-0295",
+        "UNESCO172-STEP08-0296",
+        "UNESCO172-STEP08-0297",
+        "UNESCO172-STEP08-0298",
+        "UNESCO172-STEP08-0299",
+        "UNESCO172-STEP08-0300",
+        "UNESCO172-STEP08-0301",
+        "UNESCO172-STEP08-0302",
+        "UNESCO172-STEP08-0303",
+        "UNESCO172-STEP08-0304",
+        "UNESCO172-STEP08-0305"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "61",
+      "field_label": "PSYCHOLOGY",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 17,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": null,
+          "raw_heading_line": "printed heading \"6101 Abnormal psychology\"",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Abnormal psychology"
+      ],
+      "unesco_discipline_code": "6101",
+      "unesco_discipline_label": "Abnormal psychology"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0306",
+        "UNESCO172-STEP08-0307",
+        "UNESCO172-STEP08-0308",
+        "UNESCO172-STEP08-0309",
+        "UNESCO172-STEP08-0310",
+        "UNESCO172-STEP08-0311",
+        "UNESCO172-STEP08-0312",
+        "UNESCO172-STEP08-0313",
+        "UNESCO172-STEP08-0314",
+        "UNESCO172-STEP08-0315",
+        "UNESCO172-STEP08-0316",
+        "UNESCO172-STEP08-0317",
+        "UNESCO172-STEP08-0318",
+        "UNESCO172-STEP08-0319",
+        "UNESCO172-STEP08-0320"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "62",
+      "field_label": "SCIENCES OF ARTS & LETTERS",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 17,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 4215,
+          "raw_heading_line": "6201",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Architecture"
+      ],
+      "unesco_discipline_code": "6201",
+      "unesco_discipline_label": "Architecture"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0321",
+        "UNESCO172-STEP08-0322",
+        "UNESCO172-STEP08-0323",
+        "UNESCO172-STEP08-0324",
+        "UNESCO172-STEP08-0325",
+        "UNESCO172-STEP08-0326",
+        "UNESCO172-STEP08-0327",
+        "UNESCO172-STEP08-0328",
+        "UNESCO172-STEP08-0329",
+        "UNESCO172-STEP08-0330",
+        "UNESCO172-STEP08-0331",
+        "UNESCO172-STEP08-0332",
+        "UNESCO172-STEP08-0333",
+        "UNESCO172-STEP08-0334",
+        "UNESCO172-STEP08-0335"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "63",
+      "field_label": "SOCIOLOGY",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 18,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 4270,
+          "raw_heading_line": "6301",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Cultural sociology"
+      ],
+      "unesco_discipline_code": "6301",
+      "unesco_discipline_label": "Cultural sociology"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0336",
+        "UNESCO172-STEP08-0337",
+        "UNESCO172-STEP08-0338",
+        "UNESCO172-STEP08-0339",
+        "UNESCO172-STEP08-0340",
+        "UNESCO172-STEP08-0341",
+        "UNESCO172-STEP08-0342",
+        "UNESCO172-STEP08-0343",
+        "UNESCO172-STEP08-0344",
+        "UNESCO172-STEP08-0345",
+        "UNESCO172-STEP08-0346",
+        "UNESCO172-STEP08-0347",
+        "UNESCO172-STEP08-0348",
+        "UNESCO172-STEP08-0349",
+        "UNESCO172-STEP08-0350"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "71",
+      "field_label": "ETHICS",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 18,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 4441,
+          "raw_heading_line": "7101",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Classical ethics"
+      ],
+      "unesco_discipline_code": "7101",
+      "unesco_discipline_label": "Classical ethics"
+    },
+    {
+      "candidate_record_ids": [
+        "UNESCO172-STEP08-0351",
+        "UNESCO172-STEP08-0352",
+        "UNESCO172-STEP08-0353",
+        "UNESCO172-STEP08-0354",
+        "UNESCO172-STEP08-0355",
+        "UNESCO172-STEP08-0356",
+        "UNESCO172-STEP08-0357",
+        "UNESCO172-STEP08-0358",
+        "UNESCO172-STEP08-0359",
+        "UNESCO172-STEP08-0360",
+        "UNESCO172-STEP08-0361",
+        "UNESCO172-STEP08-0362",
+        "UNESCO172-STEP08-0363",
+        "UNESCO172-STEP08-0364",
+        "UNESCO172-STEP08-0365"
+      ],
+      "confidence": null,
+      "coverage_interpretation": "query attempt and candidate availability only; not completeness and not a provider-to-UNESCO equivalence",
+      "field_code": "72",
+      "field_label": "PHILOSOPHY",
+      "manual_review_required": true,
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 19,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 4474,
+          "raw_heading_line": "7201",
+          "same_line_label": ""
+        }
+      },
+      "provider_candidate_counts": {
+        "Crossref": 5,
+        "OpenAIRE": 5,
+        "OpenAlex": 5,
+        "PubMed E-utilities": 0
+      },
+      "provider_taxonomy_ids": [],
+      "providers_attempted": [
+        "OpenAlex",
+        "Crossref",
+        "OpenAIRE"
+      ],
+      "query_terms": [
+        "Philosophy of knowledge"
+      ],
+      "unesco_discipline_code": "7201",
+      "unesco_discipline_label": "Philosophy of knowledge"
+    }
+  ],
+  "schema": "task172-step08-unesco-modern-index-crosswalk-pilot-v1",
+  "source_exact_head": "36a1ed4c0e5b91598b5a4fada4bec1539ccc106b",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

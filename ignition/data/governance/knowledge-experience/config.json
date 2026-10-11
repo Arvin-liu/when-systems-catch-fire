@@ -44,7 +44,8 @@
     "backfill-plan.md"
   ],
   "excluded_generated_result_sources": [
-    "docs/architecture/current-facts.md"
+    "docs/architecture/current-facts.md",
+    "reports/operations/ignition-172-step00-baseline-audit.md"
   ],
   "subjects": [
     {

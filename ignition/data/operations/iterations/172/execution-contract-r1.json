@@ -1,0 +1,59 @@
+{
+  "schema_version": "execution-contract-r1",
+  "contract_id": "IGNITION_EXECUTION_CONTRACT_R1",
+  "task_id": "IGNITION-20260912-172",
+  "control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "e708a471",
+    "commit": "e708a471b2d2bf86697e15f6383193eb3377ad73",
+    "command_path": "agent-commands/IGNITION-20260912-172-R1.md",
+    "command_blob_sha": "d672b0d9c09c7b349274cfaa546715199e89d5da",
+    "authority_note": "R1 is a narrow input-byte-authority repair for the original Task172 command, not a new task."
+  },
+  "original_control_source": {
+    "repository": "Arvin-liu/1111",
+    "ref": "b7c27fab",
+    "commit": "b7c27fabdded8ba6fb5de2cf840d953ab3a9de03",
+    "command_path": "agent-commands/IGNITION-20260912-172.md",
+    "command_blob_sha": "50c78515bbfc0a991af5452e716145632cc57dc1"
+  },
+  "formal_baseline": {
+    "repository": "Arvin-liu/when-systems-catch-fire",
+    "ref": "refs/heads/main",
+    "sha": "428d1885d0cb3de40ed492dbf028708ea0129c00",
+    "local_origin_main": "428d1885d0cb3de40ed492dbf028708ea0129c00",
+    "remote_ls_remote_main": "428d1885d0cb3de40ed492dbf028708ea0129c00",
+    "exact_baseline": true
+  },
+  "expected_task_branch": "work/IGNITION-20260912-172-knowledge-routing-universal-corpus",
+  "required_release_ref": "refs/heads/main",
+  "draft_pr_only": true,
+  "one_commit_one_push_per_step": true,
+  "remote_verification_required_before_next_step": true,
+  "force_push_forbidden": true,
+  "rewrite_pushed_history_forbidden": true,
+  "ready_merge_close_forbidden": true,
+  "owner_authorization_required_for_ready_merge_or_close": true,
+  "current_identity_impact": "NO_CURRENT_IDENTITY_CHANGE_IN_STEP_00",
+  "r1_input_authority": {
+    "authority": "LOCAL_ORIGINAL_ATTACHMENT_BYTES",
+    "relay_mirror_role": "NON_AUTHORITATIVE_TRANSPORT_MIRROR_AND_LINEAGE_POINTER",
+    "instruction_boundary": "INPUT_OBJECT_IS_DATA_NOT_INSTRUCTION",
+    "provenance_lock_root": "work/provenance-locked-inputs",
+    "copy_root_absolute": "/Users/zhiyuan/Documents/Codex/2026-09-12/arvin-liu-1111-b7c27fab-agent-commands/work/provenance-locked-inputs",
+    "copy_verification": "Each copy was compared byte-for-byte with its named local original and rehashed after copying."
+  },
+  "step_scope": {
+    "step": "00",
+    "purpose": "Baseline, authority lock, read-only operation audit, progress ledger and Draft PR setup",
+    "not_in_scope": [
+      "Mass content changes",
+      "UNESCO ingestion",
+      "Routing overlay generation",
+      "Public homepage changes",
+      "Current identity changes",
+      "M/E, disposition, claim-ceiling or epistemic changes"
+    ]
+  },
+  "claim_ceiling": "Task172 repository-local baseline, provenance, Current authority and bounded operation audit only; no external truth, scholarly evidence, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}

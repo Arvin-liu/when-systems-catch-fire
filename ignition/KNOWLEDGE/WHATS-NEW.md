@@ -4,6 +4,348 @@
 
 ## 2026
 
+<a id="change-src-hr-ecb9a4b8ee1483ca"></a>
+### 2026-09-15 · IGNITION-172 Step07 — Knowledge Experience routing index
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This logical step is based on exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218.
+- **来源：** [ignition-172-20260915-step07-routing-index.md](../reports/operations/ignition-172-20260915-step07-routing-index.md)
+- **资产卡：** [HR-ECB9A4B8EE1483CA](./ASSET-CARDS.md#asset-hr-ecb9a4b8ee1483ca)
+
+<a id="change-src-hr-e209cf9b12ff43a0"></a>
+### 2026-09-15 · Task172 Step09 field 72: PHILOSOPHY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-72.md](../reports/operations/ignition-172-20260915-step09-field-72.md)
+- **资产卡：** [HR-E209CF9B12FF43A0](./ASSET-CARDS.md#asset-hr-e209cf9b12ff43a0)
+
+<a id="change-src-hr-cfb1d9d7c981b639"></a>
+### 2026-09-15 · Task172 Step09 field 12: MATHEMATICS
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-12.md](../reports/operations/ignition-172-20260915-step09-field-12.md)
+- **资产卡：** [HR-CFB1D9D7C981B639](./ASSET-CARDS.md#asset-hr-cfb1d9d7c981b639)
+
+<a id="change-src-hr-cf438096338b88f8"></a>
+### 2026-09-15 · Task172 Step09 field 62: SCIENCES OF ARTS & LETTERS
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-62.md](../reports/operations/ignition-172-20260915-step09-field-62.md)
+- **资产卡：** [HR-CF438096338B88F8](./ASSET-CARDS.md#asset-hr-cf438096338b88f8)
+
+<a id="change-src-hr-cadd18cb2328ced3"></a>
+### 2026-09-15 · Task172 Step09 field 24: LIFE SCIENCES
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-24.md](../reports/operations/ignition-172-20260915-step09-field-24.md)
+- **资产卡：** [HR-CADD18CB2328CED3](./ASSET-CARDS.md#asset-hr-cadd18cb2328ced3)
+
+<a id="change-src-hr-c66547aa41dfc55f"></a>
+### 2026-09-15 · Task172 Step12 — final candidate disposition
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The 11 surviving Step01 candidates were re-audited against the Step02 route review and Step11 replay. The result is deliberately 0 new canonical additions.
+- **来源：** [ignition-172-20260915-step12-final-disposition.md](../reports/operations/ignition-172-20260915-step12-final-disposition.md)
+- **资产卡：** [HR-C66547AA41DFC55F](./ASSET-CARDS.md#asset-hr-c66547aa41dfc55f)
+
+<a id="change-src-hr-bab21171893c54e0"></a>
+### 2026-09-15 · Task172 Step09 field 54: GEOGRAPHY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-54.md](../reports/operations/ignition-172-20260915-step09-field-54.md)
+- **资产卡：** [HR-BAB21171893C54E0](./ASSET-CARDS.md#asset-hr-bab21171893c54e0)
+
+<a id="change-src-hr-b13564480e093ad5"></a>
+### 2026-09-15 · Task172 Step09 field 51: ANTHROPOLOGY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-51.md](../reports/operations/ignition-172-20260915-step09-field-51.md)
+- **资产卡：** [HR-B13564480E093AD5](./ASSET-CARDS.md#asset-hr-b13564480e093ad5)
+
+<a id="change-src-hr-a5172a2b53cec20b"></a>
+### 2026-09-15 · Task172 Step09 field 21: ASTRONOMY AND ASTROPHYSICS
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-21.md](../reports/operations/ignition-172-20260915-step09-field-21.md)
+- **资产卡：** [HR-A5172A2B53CEC20B](./ASSET-CARDS.md#asset-hr-a5172a2b53cec20b)
+
+<a id="change-src-hr-a13879f03cb48a28"></a>
+### 2026-09-15 · Task172 Step10 — global corpus QA
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: PASSWITHEXPLICITDEFICITS
+- **来源：** [ignition-172-20260915-step10-global-corpus-qa.md](../reports/operations/ignition-172-20260915-step10-global-corpus-qa.md)
+- **资产卡：** [HR-A13879F03CB48A28](./ASSET-CARDS.md#asset-hr-a13879f03cb48a28)
+
+<a id="change-src-hr-9fa397ef4fda55c6"></a>
+### 2026-09-15 · Task172 Step09 field 71: ETHICS
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-71.md](../reports/operations/ignition-172-20260915-step09-field-71.md)
+- **资产卡：** [HR-9FA397EF4FDA55C6](./ASSET-CARDS.md#asset-hr-9fa397ef4fda55c6)
+
+<a id="change-src-hr-9c2eb035ebedff6a"></a>
+### 2026-09-15 · IGNITION-20260915-178 — Task172 final closeout
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This receipt records the state observed before Task178 writes. It is not a claim about external truth or CI beyond the named exact head and checks.
+- **来源：** [IGNITION-20260915-178-result.md](../agent-results/IGNITION-20260915-178-result.md)
+- **资产卡：** [HR-9C2EB035EBEDFF6A](./ASSET-CARDS.md#asset-hr-9c2eb035ebedff6a)
+
+<a id="change-src-hr-96ec40a0b9c9f87d"></a>
+### 2026-09-15 · Task172 Step09 field 22: PHYSICS
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-22.md](../reports/operations/ignition-172-20260915-step09-field-22.md)
+- **资产卡：** [HR-96EC40A0B9C9F87D](./ASSET-CARDS.md#asset-hr-96ec40a0b9c9f87d)
+
+<a id="change-src-hr-964dcdec208da025"></a>
+### 2026-09-15 · Task172 Step09 field 32: MEDICAL SCIENCES
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-32.md](../reports/operations/ignition-172-20260915-step09-field-32.md)
+- **资产卡：** [HR-964DCDEC208DA025](./ASSET-CARDS.md#asset-hr-964dcdec208da025)
+
+<a id="change-src-hr-8c5918a5fc43e2c6"></a>
+### 2026-09-15 · Task172 Step09 field 25: EARTH AND SPACE SCIENCES
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-25.md](../reports/operations/ignition-172-20260915-step09-field-25.md)
+- **资产卡：** [HR-8C5918A5FC43E2C6](./ASSET-CARDS.md#asset-hr-8c5918a5fc43e2c6)
+
+<a id="change-src-hr-8c4659f4dd8045ee"></a>
+### 2026-09-15 · Task172 Step09 field 55: HISTORY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-55.md](../reports/operations/ignition-172-20260915-step09-field-55.md)
+- **资产卡：** [HR-8C4659F4DD8045EE](./ASSET-CARDS.md#asset-hr-8c4659f4dd8045ee)
+
+<a id="change-src-hr-817cdcccf68a5582"></a>
+### 2026-09-15 · Task172 Step09 field 53: ECONOMIC SCIENCES
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-53.md](../reports/operations/ignition-172-20260915-step09-field-53.md)
+- **资产卡：** [HR-817CDCCCF68A5582](./ASSET-CARDS.md#asset-hr-817cdcccf68a5582)
+
+<a id="change-src-hr-7149c661bb0af806"></a>
+### 2026-09-15 · Task172 Step09 field 23: CHEMISTRY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-23.md](../reports/operations/ignition-172-20260915-step09-field-23.md)
+- **资产卡：** [HR-7149C661BB0AF806](./ASSET-CARDS.md#asset-hr-7149c661bb0af806)
+
+<a id="change-src-hr-5797c2119cce6faa"></a>
+### 2026-09-15 · Task172 Step09 field 33: TECHNOLOGICAL SCIENCES
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-33.md](../reports/operations/ignition-172-20260915-step09-field-33.md)
+- **资产卡：** [HR-5797C2119CCE6FAA](./ASSET-CARDS.md#asset-hr-5797c2119cce6faa)
+
+<a id="change-src-hr-513a4899383ebc1d"></a>
+### 2026-09-15 · Task172 Step09 field 52: DEMOGRAPHY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-52.md](../reports/operations/ignition-172-20260915-step09-field-52.md)
+- **资产卡：** [HR-513A4899383EBC1D](./ASSET-CARDS.md#asset-hr-513a4899383ebc1d)
+
+<a id="change-src-hr-4ac39dba80c596a5"></a>
+### 2026-09-15 · Task172 Step11 — three-input A/B replay
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** The three provenance-locked input bytes were available by their recorded SHA-256 values. A is the frozen Step01 relay baseline; B is the current read-only routing overlay plus compact index and exact canonical validation.
+- **来源：** [ignition-172-20260915-step11-ab-replay.md](../reports/operations/ignition-172-20260915-step11-ab-replay.md)
+- **资产卡：** [HR-4AC39DBA80C596A5](./ASSET-CARDS.md#asset-hr-4ac39dba80c596a5)
+
+<a id="change-src-hr-4915734264bb9de0"></a>
+### 2026-09-15 · Task172 Step09 field 59: POLITICAL SCIENCE
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-59.md](../reports/operations/ignition-172-20260915-step09-field-59.md)
+- **资产卡：** [HR-4915734264BB9DE0](./ASSET-CARDS.md#asset-hr-4915734264bb9de0)
+
+<a id="change-src-hr-429865ba2fb29659"></a>
+### 2026-09-15 · Task172 Step09 field 31: AGRICULTURAL SCIENCES
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-31.md](../reports/operations/ignition-172-20260915-step09-field-31.md)
+- **资产卡：** [HR-429865BA2FB29659](./ASSET-CARDS.md#asset-hr-429865ba2fb29659)
+
+<a id="change-src-hr-3b8d996f1e9886e9"></a>
+### 2026-09-15 · Task172 Step09 field 56: JURIDICAL SCIENCES & LAW
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-56.md](../reports/operations/ignition-172-20260915-step09-field-56.md)
+- **资产卡：** [HR-3B8D996F1E9886E9](./ASSET-CARDS.md#asset-hr-3b8d996f1e9886e9)
+
+<a id="change-src-hr-2f64159284453379"></a>
+### 2026-09-15 · Task172 Step13 — final closeout freeze
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Status: FINALSCANINPUTFREEZERECORDED
+- **来源：** [ignition-172-20260915-step13-final-freeze.md](../reports/operations/ignition-172-20260915-step13-final-freeze.md)
+- **资产卡：** [HR-2F64159284453379](./ASSET-CARDS.md#asset-hr-2f64159284453379)
+
+<a id="change-src-hr-13e9b3b4578e1c4d"></a>
+### 2026-09-15 · Task172 Step09 field 63: SOCIOLOGY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-63.md](../reports/operations/ignition-172-20260915-step09-field-63.md)
+- **资产卡：** [HR-13E9B3B4578E1C4D](./ASSET-CARDS.md#asset-hr-13e9b3b4578e1c4d)
+
+<a id="change-src-hr-0d982954aa1aa3e9"></a>
+### 2026-09-15 · Task172 Step09 field 11: LOGIC
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-11.md](../reports/operations/ignition-172-20260915-step09-field-11.md)
+- **资产卡：** [HR-0D982954AA1AA3E9](./ASSET-CARDS.md#asset-hr-0d982954aa1aa3e9)
+
+<a id="change-src-hr-05cc949076737494"></a>
+### 2026-09-15 · Task172 Step09 field 61: PSYCHOLOGY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-61.md](../reports/operations/ignition-172-20260915-step09-field-61.md)
+- **资产卡：** [HR-05CC949076737494](./ASSET-CARDS.md#asset-hr-05cc949076737494)
+
+<a id="change-src-hr-04ea1bf3ffc2d56a"></a>
+### 2026-09-15 · Task172 Step09 field 58: PEDAGOGY
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-58.md](../reports/operations/ignition-172-20260915-step09-field-58.md)
+- **资产卡：** [HR-04EA1BF3FFC2D56A](./ASSET-CARDS.md#asset-hr-04ea1bf3ffc2d56a)
+
+<a id="change-src-hr-04914b1570918ae6"></a>
+### 2026-09-15 · Task172 Step09 field 57: LINGUISTICS
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This field is admitted only as GENERALKNOWLEDGEREFERENCE / SCHOLARLYMETADATA. Provider responses were normalized to metadata hashes and identifiers; no abstract, full text, raw response, evidence, proof, or replication claim was persisted. Every selected row remains manual-review-required. A phys…
+- **来源：** [ignition-172-20260915-step09-field-57.md](../reports/operations/ignition-172-20260915-step09-field-57.md)
+- **资产卡：** [HR-04914B1570918AE6](./ASSET-CARDS.md#asset-hr-04914b1570918ae6)
+
+<a id="change-src-hr-bc0fd3372f5d0546"></a>
+### 2026-09-14 · IGNITION-172 Step06 — full nonfunction claim routing overlay
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This logical step is based on the exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218.
+- **来源：** [ignition-172-20260914-step06-nonfunction-routing.md](../reports/operations/ignition-172-20260914-step06-nonfunction-routing.md)
+- **资产卡：** [HR-BC0FD3372F5D0546](./ASSET-CARDS.md#asset-hr-bc0fd3372f5d0546)
+
+<a id="change-src-hr-a9335c325605b8e4"></a>
+### 2026-09-14 · IGNITION-172 Step08 — UNESCO/provider metadata pilot
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This logical step follows Gate T, Gate R and the Gate C policy/provider lock. The frozen parent is 36a1ed4c0e5b91598b5a4fada4bec1539ccc106b on the existing Task172 branch and Draft PR 218.
+- **来源：** [ignition-172-20260914-step08-scholarly-pilot.md](../reports/operations/ignition-172-20260914-step08-scholarly-pilot.md)
+- **资产卡：** [HR-A9335C325605B8E4](./ASSET-CARDS.md#asset-hr-a9335c325605b8e4)
+
+<a id="change-src-hr-5bd3902ec1ba8dce"></a>
+### 2026-09-14 · IGNITION-172 Step05 — full function asset routing overlay
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** This logical step is based on the exact frozen parent 03a2b33cced830418cc310a59b519fca8d10f2fa on the existing Task172 branch and Draft PR 218.
+- **来源：** [ignition-172-20260914-step05-function-routing.md](../reports/operations/ignition-172-20260914-step05-function-routing.md)
+- **资产卡：** [HR-5BD3902EC1BA8DCE](./ASSET-CARDS.md#asset-hr-5bd3902ec1ba8dce)
+
+<a id="change-src-hr-f8412af8d8458685"></a>
+### 2026-09-13 · IGNITION-172 Step04 — Gate R routing schema and precision pilot
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Gate T exact-head CI is complete for parent 6d704d570827bf8d6ebb65fb65bcdd236056b4d3. This step freezes a bounded routing sidecar and a precision-oriented pilot; it does not perform mass taxonomy routing or scholarly corpus admission.
+- **来源：** [ignition-172-20260913-step04-gate-r-routing.md](../reports/operations/ignition-172-20260913-step04-gate-r-routing.md)
+- **资产卡：** [HR-F8412AF8D8458685](./ASSET-CARDS.md#asset-hr-f8412af8d8458685)
+
+<a id="change-src-hr-9a9f6a65046403f2"></a>
+### 2026-09-13 · IGNITION-172 Step05 — Gate C scholarly admission policy
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `SOURCE_INDEXED_WITHOUT_LIFECYCLE_INFERENCE`
+- **变化：** Gate C is a policy lock downstream of Gate T and Gate R at Formal head 998b5654248b41a8982d0674bf0368b400b65eec. It freezes scholarly-admission semantics, provider roles, rights handling, correction/retraction handling, conservative deduplication, and a synthetic cross-domain pilot. It does not e…
+- **来源：** [ignition-172-20260913-step05-gate-c-scholarly.md](../reports/operations/ignition-172-20260913-step05-gate-c-scholarly.md)
+- **资产卡：** [HR-9A9F6A65046403F2](./ASSET-CARDS.md#asset-hr-9a9f6a65046403f2)
+
+<a id="change-src-hr-90ed509023725da0"></a>
+### 2026-09-13 · IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: GATETPASSFORAUTHORITYLOCK; MASSINGESTIONREMAINSGATEDBYGATERANDGATEC
+- **来源：** [ignition-172-20260913-step03-unesco-gate-t.md](../reports/operations/ignition-172-20260913-step03-unesco-gate-t.md)
+- **资产卡：** [HR-90ED509023725DA0](./ASSET-CARDS.md#asset-hr-90ed509023725da0)
+
+<a id="change-src-hr-88377c1093adf0bd"></a>
+### 2026-09-13 · IGNITION-20260912-172 Step01 collision audit
+
+- **类型：** `AUDIT_OR_ADJUDICATION`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: PASSWITHBOUNDEDDISPOSITIONS
+- **来源：** [ignition-172-step01-collision-audit.md](../reports/operations/ignition-172-step01-collision-audit.md)
+- **资产卡：** [HR-88377C1093ADF0BD](./ASSET-CARDS.md#asset-hr-88377c1093adf0bd)
+
+<a id="change-src-hr-4fd3f769e03bbc82"></a>
+### 2026-09-13 · IGNITION-20260912-172 Step02 route review
+
+- **类型：** `ITERATION_OR_REPOSITORY_RESULT`
+- **状态：** `HISTORICAL_COMPLETION_RECORD`
+- **变化：** Status: PASSWITHBOUNDEDROUTEDISPOSITIONS
+- **来源：** [ignition-172-step02-route-review.md](../reports/operations/ignition-172-step02-route-review.md)
+- **资产卡：** [HR-4FD3F769E03BBC82](./ASSET-CARDS.md#asset-hr-4fd3f769e03bbc82)
+
 <a id="change-src-hr-721da9720e4dc58a"></a>
 ### 2026-09-10 · IGNITION-20260910-169 result
 

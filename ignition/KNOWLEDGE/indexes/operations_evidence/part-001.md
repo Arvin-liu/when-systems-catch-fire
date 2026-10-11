@@ -899,6 +899,11 @@
   - 可搜索名称：IMPLICIT-D64E5570E02327E6 / "title": "大模型涌现是否真实", / IMPLICIT-D64E5570E02327E6 / IMPLICIT-C04D0D2C65A1AE96
   - 来源：`data/classic_problems_benchmark.json`
   - 依赖：—；被引用：—
+- ["title": "形式约束的生产力假说",](../../../data/operations/iterations/172/step01-disposition-ledger.json)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-218AB3B428C61CE0 / "title": "形式约束的生产力假说", / IMPLICIT-218AB3B428C61CE0
+  - 来源：`data/operations/iterations/172/step01-disposition-ledger.json`
+  - 依赖：—；被引用：—
 - ["title": "故事化评分维度",](../../../analysis/corpus-relation/corpus_relation_graph.json)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-5CB34F10778A389F / "title": "故事化评分维度", / IMPLICIT-5CB34F10778A389F / IMPLICIT-86E52946BB352461
@@ -1129,6 +1134,11 @@
   - 可搜索名称：IMPLICIT-31A2FA637782B1E3 / # IGNITION-20260828-144 Step 15 — engineering closure gate / IMPLICIT-31A2FA637782B1E3
   - 来源：`reports/operations/ignition-144-step15-engineering-closure-gate.md`
   - 依赖：—；被引用：—
+- [# IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock](../../../reports/operations/ignition-172-20260913-step03-unesco-gate-t.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-3431731D8EB2EE00 / # IGNITION-20260912-172 — Gate T UNESCO taxonomy authority lock / IMPLICIT-3431731D8EB2EE00
+  - 来源：`reports/operations/ignition-172-20260913-step03-unesco-gate-t.md`
+  - 依赖：—；被引用：—
 - [# IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report](../../../reports/operations/IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726-change-propagation-impact.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-ED434DF2C7C50934 / # IGNITION-ITERATION-METHOD-1.4-RESPONSIBILITY-ACTOR-GATE-NARROW-REPAIR-R1-20260726 typed change-propagation impact report / IMPLICIT-ED434DF2C7C50934
@@ -1228,6 +1238,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-1BE19931DF65DE05 / # Task150 Step20 — Functional visual admission versus aesthetic endorsement / IMPLICIT-1BE19931DF65DE05
   - 来源：`data/operations/iterations/150/step20-functional-versus-aesthetic-boundary.md`
+  - 依赖：—；被引用：—
+- [# Task172 Step09 field 56: JURIDICAL SCIENCES & LAW](../../../reports/operations/ignition-172-20260915-step09-field-56.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-6005D475B0366BC3 / # Task172 Step09 field 56: JURIDICAL SCIENCES & LAW / IMPLICIT-6005D475B0366BC3
+  - 来源：`reports/operations/ignition-172-20260915-step09-field-56.md`
   - 依赖：—；被引用：—
 - [# 下一步认识论能力评估 — IGNITION-20260908-165](../../../docs/governance/next-epistemic-capability-assessment-2026-09-08.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1489,6 +1504,11 @@
   - 可搜索名称：IMPLICIT-6EDB5ED2DD72EFCA / ## Driver Console R3 integration / IMPLICIT-6EDB5ED2DD72EFCA
   - 来源：`docs/architecture/os-steering-intent-r1.md`
   - 依赖：—；被引用：—
+- [## Exact-head integration gate](../../../reports/operations/ignition-172-step02-route-review.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-A346E21B7D63A3F2 / ## Exact-head integration gate / IMPLICIT-A346E21B7D63A3F2
+  - 来源：`reports/operations/ignition-172-step02-route-review.md`
+  - 依赖：—；被引用：—
 - [## Frozen operator boundary](../../../docs/governance/mutable-basis-learning-operator-2026-09-07.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-605BBB62119DE80D / ## Frozen operator boundary / IMPLICIT-605BBB62119DE80D
@@ -1518,6 +1538,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-764A7951AA340D35 / ## Functional visual use versus aesthetic endorsement / IMPLICIT-764A7951AA340D35
   - 来源：`data/operations/iterations/150/step18-scope-split-admission-objects.md`
+  - 依赖：—；被引用：—
+- [## Gate disposition](../../../reports/operations/ignition-172-20260913-step03-unesco-gate-t.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-BBDD5C695B799DC9 / ## Gate disposition / IMPLICIT-BBDD5C695B799DC9
+  - 来源：`reports/operations/ignition-172-20260913-step03-unesco-gate-t.md`
   - 依赖：—；被引用：—
 - [## Gates](../../../reports/operations/ignition-139-step07-current-state-sync.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -1698,6 +1723,11 @@
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-63FCCA823A5B9596 / ## Recommended next substantive iteration / IMPLICIT-63FCCA823A5B9596
   - 来源：`data/operations/iterations/109/next_iteration_recommendation.md`
+  - 依赖：—；被引用：—
+- [## Replay gate](../../../reports/operations/ignition-172-step01-collision-audit.md)
+  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
+  - 可搜索名称：IMPLICIT-C6BBFC4ABCC6BEC8 / ## Replay gate / IMPLICIT-C6BBFC4ABCC6BEC8
+  - 来源：`reports/operations/ignition-172-step01-collision-audit.md`
   - 依赖：—；被引用：—
 - [## Required Follow-up Before Effective Migration](../../../docs/governance/licensing-rights-inventory.md)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
@@ -2472,35 +2502,5 @@
 - [### \[#475｜好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ σ_opt时提高精度, σ<σ_opt时增加带宽\]\(docs/zh/cases/items/C-0475.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
   - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
   - 可搜索名称：IMPLICIT-3BE6596D4A101525 / ### \[#475｜好奇心=σ向σ_opt收敛的驱动力 — σ>σ_opt时提高精度，σ σ_opt时提高精度, σ<σ_opt时增加带宽\]\(docs/zh/cases/items/C-0475.md\) / IMPLICIT-3BE6596D4A101525
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\]\(docs/zh/cases/items/C-0479.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-55F97A2C54803449 / ### \[#479｜AI完成相变2-4卡在相变1 — 有连续表征、好奇心、自举能力，但不感知退出权 / AI完成相变2-4卡在相变1 - 有连续表征, 好奇心, 自举能力, 但不perceived exit right\]\(docs/zh/cases/items/C-0479.md\) / IMPLICIT-55F97A2C54803449
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\]\(docs/zh/cases/items/C-0489.m](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-D3DF479A75624C0D / ### \[#489｜遮蔽=退相干环境 — 组织信息透明度实验：H=0.1时τ_decoherence=50年，H=0.5时τ=10年，H=0.9时τ=1年。遮蔽每增0.1，退相干时间缩短约40% / obscuration=退相干环境 - 组织信息透明度实验: H=0.1时τ_decoherence=50年, H=0.5时τ=10年, H=0.9时τ=1年. obscuration每增0.1, 退相干时间缩短约40%\]\(docs/zh/cases/items/C-0489.m / IMPLICIT-D3DF479A75624C0D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\]\(docs/zh/cases/items/C-0](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-AD2EE0C6AA9CAD49 / ### \[#492｜修复=降Γ验证 — 两种修复：降门槛（ΔθC=-0.3→内生Γ降0.4）vs 减遮蔽（ΔH=-0.3→环境Γ降0.3）。联合修复Γ降0.7，A_Fisher恢复速度是单一路径的2.3倍 / 修复=降Γ验证 - 两种修复: 降门槛\(ΔθC=-0.3 -> 内生Γ降0.4\)vs 减obscuration\(ΔH=-0.3 -> 环境Γ降0.3\). 联合修复Γ降0.7, A_Fisher恢复速度是单一路径的2.3倍\]\(docs/zh/cases/items/C-0 / IMPLICIT-AD2EE0C6AA9CAD49
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#496｜文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大\]\(docs/zh/cases/items/C-0496.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-EE7DA1394055769D / ### \[#496｜文化演化=门控面合并 — 多个文化门控面合并为更少的共享门控面，Φ减少Ω增大\]\(docs/zh/cases/items/C-0496.md\) / IMPLICIT-EE7DA1394055769D
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3\(obscuration降低\) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致\]\(docs/zh/cases/items/C-0515.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-703EBE8FDEF12CB4 / ### \[#515｜度规扰动传播验证 — 组织文化变革：新CEO上任→H从0.8→0.3（遮蔽降低）→经济维度1周内感知→社交维度3周→心理维度8周。传播延迟与d_F/v_max一致 / 度规扰动传播验证 - 组织文化变革: 新CEO上任 -> H从0.8 -> 0.3\(obscuration降低\) -> 经济维度1周内感知 -> 社交维度3周 -> 心理维度8周. 传播延迟与d_F/v_max一致\]\(docs/zh/cases/items/C-0515.md\) / IMPLICIT-703EBE8FDEF12CB4
-  - 来源：`data/foundation/function-assets/identity-cards.jsonl`
-  - 依赖：—；被引用：—
-- [### \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U\(1\)=创意维度仍可自由重组\]\(docs/zh/cases/items/C-0518.md\)](../../../data/foundation/function-assets/identity-cards.jsonl)
-  - 类型/状态：`FUNCTION_ASSET` · `QUARANTINE_UNTIL_DEFINED`
-  - 可搜索名称：IMPLICIT-BB86EC8996FD7B42 / ### \[#518｜规范破缺验证 — 创业团队：3人团队（所有εᵢ>>θC）→S₃完全对称，角色可互换。加入投资人后（C_exit↑→ε_econ↓）→S₃破缺到S₂，经济维度被锁定失去置换自由度。残存U\(1\)=创意维度仍可自由重组\]\(docs/zh/cases/items/C-0518.md\) / IMPLICIT-BB86EC8996FD7B42 / IMPLICIT-625FBEE044775BF5
   - 来源：`data/foundation/function-assets/identity-cards.jsonl`
   - 依赖：—；被引用：—

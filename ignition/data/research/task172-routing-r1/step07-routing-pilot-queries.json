@@ -1,0 +1,29 @@
+{
+  "schema_version": "task172-step07-routing-pilot-queries-v1",
+  "input_boundary": "Facet-only synthetic queries derived from the three relay themes; no source text or scholarly conclusion is persisted here.",
+  "cases": [
+    {
+      "case_id": "gold-structural-analogy",
+      "asset_kinds": ["FUNCTION_ASSET", "NONFUNCTION_CLAIM"],
+      "unesco_field_codes": ["55", "62"],
+      "asset_role": ["ANALOGY_SOURCE"],
+      "collision_use": ["COMPARE"],
+      "top_k": 50
+    },
+    {
+      "case_id": "xujiu-literary-context",
+      "asset_kinds": ["FUNCTION_ASSET", "NONFUNCTION_CLAIM"],
+      "unesco_field_codes": ["55", "62"],
+      "asset_role": ["NARRATIVE_CASE"],
+      "collision_use": ["EXPLAIN"],
+      "top_k": 50
+    },
+    {
+      "case_id": "rest-evidence-boundary",
+      "asset_kinds": ["FUNCTION_ASSET", "NONFUNCTION_CLAIM"],
+      "unesco_field_codes": ["61"],
+      "collision_use": ["EVIDENCE_CHECK", "MECHANISM_TEST"],
+      "top_k": 50
+    }
+  ]
+}

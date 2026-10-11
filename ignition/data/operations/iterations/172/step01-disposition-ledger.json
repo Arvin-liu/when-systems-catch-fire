@@ -1,0 +1,303 @@
+{
+  "schema": "task172-step01-disposition-ledger-v1",
+  "authority": "Formal Task172 Step01 machine-readable bounded collision disposition ledger",
+  "source_exact_head": "8f33c0b71d9957eee06eb10470aba45b0e413031",
+  "inputs": [
+    {
+      "lane": "A1",
+      "attachment_sha256": "a783f0ceab5e585b61f4eda0ce4507732e0e090729242437530ef0debd9f83c5",
+      "candidate_count": 5,
+      "ceiling": "M0-E0",
+      "disposition": "candidate-only; no registry action"
+    },
+    {
+      "lane": "A2",
+      "attachment_sha256": "cd4b6d587bb6b80d53eede8a7f863f710d0430bdcdcf5bb5237422b242b6d905",
+      "candidate_count": 3,
+      "ceiling": "E1-M0 research-only limits",
+      "disposition": "candidate-only; no registry action"
+    },
+    {
+      "lane": "A3",
+      "attachment_sha256": "6d92ac39669875a0d2a0c5aeb887df319a712d1886313c394da5f50daf4202d1",
+      "candidate_count": 3,
+      "ceiling": "E1-M2 strongest mechanism candidate; not proof",
+      "disposition": "candidate-only; no registry action"
+    }
+  ],
+  "candidate_total": 11,
+  "source_rebound_manifest": {
+    "workspace_path": "/tmp/task172-parallel-scratch/A-wave/step01-rebound-manifest.json",
+    "role": "non-authoritative byte/hash evidence rebound to this Formal head",
+    "status": "verified_before_integration"
+  },
+  "candidate_dispositions": [
+    {
+      "candidate_key": "got-brain-01-gold:C-候选-001",
+      "source_lane": "A1",
+      "source_section": "三、跨域候选断言",
+      "source_line": 98,
+      "title": "形式约束的生产力假说",
+      "source_ceiling": "M0-E0",
+      "disposition_category": "RESEARCH_HYPOTHESIS_CANDIDATE",
+      "nearest_canonical_match_ids": [],
+      "match_resolution": "UNRESOLVED; source packet supplies a qualitative mapping without a Current canonical ID/hash",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "No exact Current identity establishes this cross-domain productivity hypothesis; the supplied report is conceptual and remains bounded at M0-E0.",
+      "next_formal_route": "Step02 research-seed review; no registry write"
+    },
+    {
+      "candidate_key": "got-brain-01-gold:C-候选-002",
+      "source_lane": "A1",
+      "source_section": "三、跨域候选断言",
+      "source_line": 99,
+      "title": "开放义务的价值论",
+      "source_ceiling": "M0-E0",
+      "disposition_category": "LITERARY_OR_INTERPRETIVE_SEED",
+      "nearest_canonical_match_ids": [
+        "NFC-efd2508248c8410a"
+      ],
+      "match_resolution": "UNRESOLVED; source packet supplies a qualitative mapping without a Current canonical ID/hash",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "The report's value-theoretic reading is literary interpretation; current open-obligation records are contextual matches, not proof of the proposed value claim.",
+      "next_formal_route": "Step02 literary/source-seed route; no scientific evidence claim"
+    },
+    {
+      "candidate_key": "got-brain-01-gold:C-候选-003",
+      "source_lane": "A1",
+      "source_section": "三、跨域候选断言",
+      "source_line": 100,
+      "title": "弱主体符号反击论",
+      "source_ceiling": "M0-E0",
+      "disposition_category": "LITERARY_OR_INTERPRETIVE_SEED",
+      "nearest_canonical_match_ids": [
+        "NFC-09d312ecbcfb059a"
+      ],
+      "match_resolution": "UNRESOLVED; source packet supplies a qualitative mapping without a Current canonical ID/hash",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "The report supplies a literary interpretation of symbolic retaliation; the explanation-rights match is contextual and does not establish a new mechanism.",
+      "next_formal_route": "Step02 literary/source-seed route; no canonical promotion"
+    },
+    {
+      "candidate_key": "got-brain-01-gold:C-候选-004",
+      "source_lane": "A1",
+      "source_section": "三、跨域候选断言",
+      "source_line": 101,
+      "title": "知识的水系形态假说",
+      "source_ceiling": "M0-E0",
+      "disposition_category": "LITERARY_OR_INTERPRETIVE_SEED",
+      "nearest_canonical_match_ids": [],
+      "match_resolution": "UNRESOLVED; source packet supplies a qualitative mapping without a Current canonical ID/hash",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "The river/watershed framing is an interpretive metaphor with no exact Current identity or independent mechanism evidence.",
+      "next_formal_route": "Step02 literary/source-seed route; preserve as bounded metaphor"
+    },
+    {
+      "candidate_key": "got-brain-01-gold:C-候选-005",
+      "source_lane": "A1",
+      "source_section": "三、跨域候选断言",
+      "source_line": 102,
+      "title": "QUARANTINE 的价值剩余",
+      "source_ceiling": "M0-E0",
+      "disposition_category": "LITERARY_OR_INTERPRETIVE_SEED",
+      "nearest_canonical_match_ids": [],
+      "match_resolution": "UNRESOLVED; source packet supplies a qualitative mapping without a Current canonical ID/hash",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "The report's value remainder is an interpretation of an existing quarantine disposition; no new canonical meaning is established.",
+      "next_formal_route": "Step02 bounded governance-reading seed; no disposition or M/E change"
+    },
+    {
+      "candidate_key": "got-brain-02-xujiu:CANDIDATE-001",
+      "source_lane": "A2",
+      "source_section": "四、碰撞后增量",
+      "source_line": 94,
+      "title": "文学作为失败案例库的认识论价值",
+      "source_ceiling": "E1-M1",
+      "disposition_category": "DUPLICATE_OR_ALREADY_COVERED",
+      "nearest_canonical_match_ids": [
+        "NFC-b23a7c5c87fec397",
+        "NFC-141baf705bf3a42a",
+        "NFC-078d9a74e8f4a462"
+      ],
+      "match_resolution": "UNRESOLVED; source packet reports qualitative or partial matches, not a Current canonical identity",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "Current records already express failure-case storage, domain-specific evidence standards and the literary-force boundary; the reported gap is not a new governance system.",
+      "next_formal_route": "Step02 reuse existing literary/evidence governance; no schema expansion"
+    },
+    {
+      "candidate_key": "got-brain-02-xujiu:CANDIDATE-002",
+      "source_lane": "A2",
+      "source_section": "四、碰撞后增量",
+      "source_line": 102,
+      "title": "注视作为知识关系的文学原型",
+      "source_ceiling": "E1-M0",
+      "disposition_category": "LITERARY_OR_INTERPRETIVE_SEED",
+      "nearest_canonical_match_ids": [],
+      "match_resolution": "UNRESOLVED; source packet reports qualitative or partial matches, not a Current canonical identity",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "No reliable exact or alias identity was found for the nested-observation phrase; the report is partial literary interpretation.",
+      "next_formal_route": "Step02 literary/source-seed route; retain input-coverage limitation"
+    },
+    {
+      "candidate_key": "got-brain-02-xujiu:CANDIDATE-003",
+      "source_lane": "A2",
+      "source_section": "四、碰撞后增量",
+      "source_line": 110,
+      "title": "时间积分的人文维度",
+      "source_ceiling": "E1-M1",
+      "disposition_category": "DUPLICATE_OR_ALREADY_COVERED",
+      "nearest_canonical_match_ids": [
+        "D127",
+        "CLAIM-D127"
+      ],
+      "match_resolution": "UNRESOLVED; source packet reports qualitative or partial matches, not a Current canonical identity",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "D127 and CLAIM-D127 already bound the path-integral wording to a structural-metaphor ceiling; the human-dimension reading does not add a new canonical asset.",
+      "next_formal_route": "Step02 link to existing D127/CLAIM-D127 only"
+    },
+    {
+      "candidate_key": "got-brain-03-rest:Δ1",
+      "source_lane": "A3",
+      "source_section": "七、CANDIDATE_DELTAS",
+      "source_line": 158,
+      "title": "双系统振荡原理",
+      "source_ceiling": "E1-M2",
+      "disposition_category": "EXTERNAL_EVIDENCE_REVIEW_REQUIRED",
+      "nearest_canonical_match_ids": [],
+      "match_resolution": "UNRESOLVED; source packet explicitly labels the relation candidate-level and non-canonical",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "The DMN/executive-network and creativity assertions are scientific claims in a supplied secondary source; primary-literature review is required before any evidence route.",
+      "next_formal_route": "Step02/Step08 evidence-review queue; no cross-domain mechanism claim"
+    },
+    {
+      "candidate_key": "got-brain-03-rest:Δ2",
+      "source_lane": "A3",
+      "source_section": "七、CANDIDATE_DELTAS",
+      "source_line": 159,
+      "title": "主动无为作为独立操作范畴",
+      "source_ceiling": "E1-M1",
+      "disposition_category": "RESEARCH_HYPOTHESIS_CANDIDATE",
+      "nearest_canonical_match_ids": [],
+      "match_resolution": "UNRESOLVED; source packet explicitly labels the relation candidate-level and non-canonical",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "The active-non-action synthesis is a cross-domain research question, not an exact Current identity or validated operation extension.",
+      "next_formal_route": "Step02 bounded research hypothesis; preserve READ_ONLY semantics"
+    },
+    {
+      "candidate_key": "got-brain-03-rest:Δ3",
+      "source_lane": "A3",
+      "source_section": "七、CANDIDATE_DELTAS",
+      "source_line": 160,
+      "title": "恢复/克制 = 高阶产出的反线性假设",
+      "source_ceiling": "E1",
+      "disposition_category": "EXTERNAL_EVIDENCE_REVIEW_REQUIRED",
+      "nearest_canonical_match_ids": [],
+      "match_resolution": "UNRESOLVED; source packet explicitly labels the relation candidate-level and non-canonical",
+      "canonical_status": "CANDIDATE_NOT_CANONICAL",
+      "registry_action": "NONE",
+      "maturity_change": "NONE",
+      "maturity_ceiling_unchanged": true,
+      "reason": "The recovery/benefit relation is a causal or empirical claim; the supplied book and report do not establish controls, mechanism or replication.",
+      "next_formal_route": "Step02/Step08 primary-literature evidence review; no causal wording"
+    }
+  ],
+  "coverage_check": {
+    "expected_by_lane": {
+      "A1": 5,
+      "A2": 3,
+      "A3": 3
+    },
+    "observed_by_lane": {
+      "A1": 5,
+      "A2": 3,
+      "A3": 3
+    },
+    "all_candidate_rows_covered": true,
+    "canonical_promotions": 0,
+    "registry_actions": 0,
+    "maturity_changes": 0
+  },
+  "duplicate_evidence": [
+    {
+      "candidate_key": "got-brain-02-xujiu:CANDIDATE-001",
+      "canonical_id": "NFC-b23a7c5c87fec397",
+      "record_sha256": "9e1f4bcc441b0d82c750ed21c5724c150fca3f6d3e32c023367dabf482f2c3d7",
+      "reason": "Current registry already defines a failure-case library and reverse-correction use."
+    },
+    {
+      "candidate_key": "got-brain-02-xujiu:CANDIDATE-001",
+      "canonical_id": "NFC-141baf705bf3a42a",
+      "record_sha256": "468694ee0a89d1e878383f88916fec652bc699749794cd21d91868f0e9a780ce",
+      "reason": "Current registry already distinguishes domain-specific evidence requirements, including literary/artistic interpretation."
+    },
+    {
+      "candidate_key": "got-brain-02-xujiu:CANDIDATE-001",
+      "canonical_id": "NFC-078d9a74e8f4a462",
+      "record_sha256": "2f3758e7e5816b0e5ef0529b7120bde1b0b41c17e741547d3ac0e5acba98df73",
+      "reason": "Current registry already blocks turning literary force into fact, causal or value evidence."
+    },
+    {
+      "candidate_key": "got-brain-02-xujiu:CANDIDATE-003",
+      "canonical_id": "D127",
+      "record_sha256": "c78876c133d5091baefda22632c67b9558b001847991d34128022335313d754c",
+      "reason": "Current function identity is already the cognitive path-integral structural metaphor."
+    },
+    {
+      "candidate_key": "got-brain-02-xujiu:CANDIDATE-003",
+      "canonical_id": "CLAIM-D127",
+      "record_sha256": "faefbbbcd1cfa872f3e8d24f9e5ed2355251b0fadebdf2c2e254dbd475652ca7",
+      "reason": "Current nonfunction claim preserves the same bounded structural-metaphor ceiling."
+    }
+  ],
+  "gap_reviews": [
+    {
+      "gap_key": "got-brain-02-xujiu:literary-evidence-classification",
+      "reported_gap": "文学证据分类缺口",
+      "disposition_category": "DUPLICATE_OR_ALREADY_COVERED",
+      "canonical_ids": [
+        "NFC-0fe7757175fa33a5",
+        "NFC-141baf705bf3a42a",
+        "NFC-078d9a74e8f4a462",
+        "CLAIM-PEND-025"
+      ],
+      "reason": "Current claim registry already contains EMPIRICAL_OR_LITERATURE_CLAIM records and explicit boundaries against treating literary force as external fact or causality; no new literary evidence system is warranted by this report.",
+      "registry_action": "NONE"
+    }
+  ],
+  "integration_lock": "exact-head 7/7 Step00B workflows success at 8f33c0b7; Step01 records dispositions only; no canonical promotion, registry action, M/E, identity, disposition or ceiling mutation",
+  "next_action": "Step02 route review after this Step01 commit has its own exact-head 7/7 gate; preserve Draft PR #218 and numbered-step order",
+  "task_id": "IGNITION-20260912-172",
+  "step": "01",
+  "status": "PASS_WITH_BOUNDED_DISPOSITIONS",
+  "claim_ceiling": "Task172 repository-local bounded collision disposition and source provenance only; no external truth, scientific evidence, production readiness, Owner acceptance, publication acceptance or epistemic acceptance is inferred."
+}

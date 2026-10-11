@@ -1,0 +1,34 @@
+{
+  "abstract_or_fulltext_persisted": false,
+  "counts": {
+    "field_disciplines": 21,
+    "global_links_after_field": 544,
+    "global_physical_records_after_field": 514,
+    "new_physical_records": 162,
+    "selected_links": 168
+  },
+  "decision": "STEP09_FIELD_ADMITTED_METADATA_ONLY; MANUAL_REVIEW_REQUIRED; PHYSICAL_RECORDS_DEDUPED_GLOBALLY",
+  "discovery_parent_head": "294a2b095a30354797686db4d10430304f3309ae",
+  "evidence_promotion": false,
+  "field_code": "24",
+  "field_label": "LIFE SCIENCES",
+  "formal_parent_head": "dbfe98e2837dbf50ba893aa6a2f136323539209d",
+  "manual_review_required": true,
+  "metadata_only": true,
+  "outputs": {
+    "discipline_links": "86a990e4559bebbc93fb64a2f79385578082aa30c15a6403a5b69a531d670e2e",
+    "field_admission": "1abe3b6cf51b151aa3d1f7c71bfb0c7f2ad2ae4db879e4346852dac93c74570e",
+    "manifest": "16c44141c6813a816a3145e9e3085b182ac10fb83b6485db21a98e5db6745623",
+    "operation": "65e0317ed03c99fa0a4a24940c1d0247dcb2334041302aae1516588c1e4c8259",
+    "physical_records": "e1aef65f0655646d8537eac9cf8769366a58b53b904a9d133817c3e8565f624e",
+    "report": "2acdb96f9d5df6d18ac175f68ff7e046092ca2c217c9d06d162fb671a7dfc9a9",
+    "source_freeze": "201f6d42060a1bb26f9a22f98fb6fa1a24260a2a205ecc78411c0332fac0303f"
+  },
+  "schema": "task172-step09-field-build-receipt-v1",
+  "source_freeze_sha256": "201f6d42060a1bb26f9a22f98fb6fa1a24260a2a205ecc78411c0332fac0303f",
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

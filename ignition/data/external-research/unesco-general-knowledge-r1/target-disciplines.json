@@ -1,0 +1,517 @@
+{
+  "authority": "Gate T primary 1988 UNESCO parse; one four-digit seed per each of 24 fields",
+  "discrepancy_policy": "245 primary disciplines remain authoritative; 248 mirror, 250 local inventory and 2183 historical secondary counts remain labeled discrepancies",
+  "schema": "task172-step08-target-disciplines-v1",
+  "source_exact_head": "36a1ed4c0e5b91598b5a4fada4bec1539ccc106b",
+  "targets": [
+    {
+      "confidence": null,
+      "discipline_code": "1101",
+      "discipline_label": "Applications of logic",
+      "field_code": "11",
+      "field_label": "LOGIC",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 2,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 15,
+          "raw_heading_line": "1101",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Applications of logic"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "1201",
+      "discipline_label": "Algebra",
+      "field_code": "12",
+      "field_label": "MATHEMATICS",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 2,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 67,
+          "raw_heading_line": "1201",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Algebra"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "2101",
+      "discipline_label": "Cosmology and cosmogony",
+      "field_code": "21",
+      "field_label": "ASTRONOMY AND ASTROPHYSICS",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 3,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 403,
+          "raw_heading_line": "2101",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Cosmology and cosmogony"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "2201",
+      "discipline_label": "Acoustics",
+      "field_code": "22",
+      "field_label": "PHYSICS",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 3,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 500,
+          "raw_heading_line": "2201",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Acoustics"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "2301",
+      "discipline_label": "Analytical Chemistry",
+      "field_code": "23",
+      "field_label": "CHEMISTRY",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 5,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 903,
+          "raw_heading_line": "2301",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Analytical Chemistry"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "2401",
+      "discipline_label": "Animal biology (Zoology)",
+      "field_code": "24",
+      "field_label": "LIFE SCIENCES",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 6,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 1192,
+          "raw_heading_line": "2401",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Animal biology (Zoology)"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "2501",
+      "discipline_label": "Atmospheric sciences",
+      "field_code": "25",
+      "field_label": "EARTH AND SPACE SCIENCES",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 7,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 1553,
+          "raw_heading_line": "2501",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Atmospheric sciences"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "3101",
+      "discipline_label": "Agricultural chemistry",
+      "field_code": "31",
+      "field_label": "AGRICULTURAL SCIENCES",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 8,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 1890,
+          "raw_heading_line": "3101",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Agricultural chemistry"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "3201",
+      "discipline_label": "Clinical Sciences",
+      "field_code": "32",
+      "field_label": "MEDICAL SCIENCES",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 9,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 2112,
+          "raw_heading_line": "3201",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Clinical Sciences"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "3301",
+      "discipline_label": "Aeronautical technology and engineering",
+      "field_code": "33",
+      "field_label": "TECHNOLOGICAL SCIENCES",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 10,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 2330,
+          "raw_heading_line": "3301",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Aeronautical technology and engineering"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "5101",
+      "discipline_label": "Cultural anthropology",
+      "field_code": "51",
+      "field_label": "ANTHROPOLOGY",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 13,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3122,
+          "raw_heading_line": "5101",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Cultural anthropology"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "5201",
+      "discipline_label": "Fertility",
+      "field_code": "52",
+      "field_label": "DEMOGRAPHY",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 14,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3195,
+          "raw_heading_line": "5201",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Fertility"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "5301",
+      "discipline_label": "Domestic fiscal policy and public finance",
+      "field_code": "53",
+      "field_label": "ECONOMIC SCIENCES",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 14,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3318,
+          "raw_heading_line": "5301",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Domestic fiscal policy and public finance"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "5401",
+      "discipline_label": "Economic Geography",
+      "field_code": "54",
+      "field_label": "GEOGRAPHY",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 15,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3542,
+          "raw_heading_line": "5401",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Economic Geography"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "5501",
+      "discipline_label": "Biographies",
+      "field_code": "55",
+      "field_label": "HISTORY",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 15,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3579,
+          "raw_heading_line": "5501",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Biographies"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "5601",
+      "discipline_label": "Canon law",
+      "field_code": "56",
+      "field_label": "JURIDICAL SCIENCES & LAW",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 15,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3685,
+          "raw_heading_line": "5601",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Canon law"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "5701",
+      "discipline_label": "Applied linguistics",
+      "field_code": "57",
+      "field_label": "LINGUISTICS",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 16,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3743,
+          "raw_heading_line": "5701",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Applied linguistics"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "5801",
+      "discipline_label": "Educational theory and methods",
+      "field_code": "58",
+      "field_label": "PEDAGOGY",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 16,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3816,
+          "raw_heading_line": "5801",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Educational theory and methods"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "5901",
+      "discipline_label": "International relations",
+      "field_code": "59",
+      "field_label": "POLITICAL SCIENCE",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 16,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 3865,
+          "raw_heading_line": "5901",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "International relations"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "6101",
+      "discipline_label": "Abnormal psychology",
+      "field_code": "61",
+      "field_label": "PSYCHOLOGY",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 17,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": null,
+          "raw_heading_line": "printed heading \"6101 Abnormal psychology\"",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Abnormal psychology"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "6201",
+      "discipline_label": "Architecture",
+      "field_code": "62",
+      "field_label": "SCIENCES OF ARTS & LETTERS",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 17,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 4215,
+          "raw_heading_line": "6201",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Architecture"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "6301",
+      "discipline_label": "Cultural sociology",
+      "field_code": "63",
+      "field_label": "SOCIOLOGY",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 18,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 4270,
+          "raw_heading_line": "6301",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Cultural sociology"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "7101",
+      "discipline_label": "Classical ethics",
+      "field_code": "71",
+      "field_label": "ETHICS",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 18,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 4441,
+          "raw_heading_line": "7101",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Classical ethics"
+      ]
+    },
+    {
+      "confidence": null,
+      "discipline_code": "7201",
+      "discipline_label": "Philosophy of knowledge",
+      "field_code": "72",
+      "field_label": "PHILOSOPHY",
+      "mapping_type": "QUERY_SEED_ONLY_NO_DIRECT_PROVIDER_EQUIVALENCE",
+      "primary_evidence": {
+        "source_document_id": "UNESCO/NS/ROU/257-rev.1-SC-88/WS-80-1988",
+        "source_page": 19,
+        "source_text_anchor": {
+          "ocr_file": "primary-ocr-300.txt",
+          "ocr_global_line": 4474,
+          "raw_heading_line": "7201",
+          "same_line_label": ""
+        }
+      },
+      "query_terms": [
+        "Philosophy of knowledge"
+      ]
+    }
+  ],
+  "taxonomy": {
+    "fields": 24,
+    "primary_disciplines": 245,
+    "primary_subdisciplines": 2178
+  }
+}

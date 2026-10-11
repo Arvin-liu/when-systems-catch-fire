@@ -1,0 +1,38 @@
+{
+  "canonical_mutation": false,
+  "decision": "STEP07_ROUTING_INDEX_READY; READ_ONLY; EXACT_VALIDATION_REQUIRED; NO_CANONICAL_MUTATION",
+  "default_top_k": 120,
+  "execution_mode": "READ_ONLY_RUN",
+  "index": {
+    "path": "data/research/task172-routing-r1/step07-routing-index.json",
+    "rows": 24161,
+    "sha256": "239d66351135a3c43ce0a30e6e60fbab55db8f2ae7292f75d855763ed86e113b"
+  },
+  "knowledge_entrypoints": {
+    "human_tags": "KNOWLEDGE/TAGS.md",
+    "machine_search": "data/governance/knowledge-experience/search-index.jsonl",
+    "routing_index": "data/research/task172-routing-r1/step07-routing-index.json",
+    "runtime_router": "tools/research/task172_routing.py"
+  },
+  "network": false,
+  "operation_id": "knowledge.collide_object",
+  "operation_status": "CURRENT_BOUNDED",
+  "pilot": {
+    "path": "data/research/task172-routing-r1/step07-routing-pilot.json",
+    "sha256": "ebb46cc12ff3f08d7e4382b3044654891caecc2a8709d7f0e5cdb065a4053712"
+  },
+  "registry_write": false,
+  "report_sha256": "e0579df1916ab49eb94a5a7e464bf8fac951405e0b5f62ef023a4e17f4f57d6e",
+  "repository_mutation": false,
+  "required_sequence": [
+    "derive bounded query facets",
+    "retrieve from routing index",
+    "widen to explicit fallback only when required",
+    "validate canonical ID and source fingerprint against Current authority",
+    "report candidate universe, facet reasons, exact status and fallback warning"
+  ],
+  "schema": "task172-step07-routing-index-operation-v1",
+  "source_exact_head": "03a2b33cced830418cc310a59b519fca8d10f2fa",
+  "source_freeze_sha256": "8afb65c8cd5b5202a56c8719a2e1b64280d298425a54df96c12907d1092ccb25",
+  "step": "Task172 Step07"
+}

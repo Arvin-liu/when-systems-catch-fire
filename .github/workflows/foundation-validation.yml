@@ -51,6 +51,34 @@ jobs:
       - run: python3 tools/foundation/run_function_asset_math_checks.py --check
       - run: python3 tools/foundation/adjudicate_nonfunction_claims.py --check
       - run: python3 tools/foundation/validate_nonfunction_claim_closure.py
+      - name: Validate Task172 Gate T UNESCO taxonomy authority lock
+        run: python3 tools/research/validate_task172_gate_t.py --repo-root .
+      - name: Validate Task172 Gate R routing schema and precision pilot
+        run: python3 tools/research/validate_task172_gate_r.py --repo-root .
+      - name: Validate Task172 Gate C scholarly admission policy
+        run: python3 tools/research/validate_task172_gate_c.py --repo-root .
+      - name: Test Task172 Gate C scholarly admission policy
+        run: python3 -m unittest tests.test_task172_gate_c -v
+      - name: Validate Task172 Step05 full function routing overlay
+        run: python3 tools/research/validate_task172_full_routing.py --repo-root . --asset-kind FUNCTION_ASSET --step 05
+      - name: Test Task172 Step05 full function routing overlay
+        run: python3 -m unittest tests.test_task172_step05_routing -v
+      - name: Validate Task172 Step06 full nonfunction routing overlay
+        run: python3 tools/research/validate_task172_full_routing.py --repo-root . --asset-kind NONFUNCTION_CLAIM --step 06
+      - name: Test Task172 Step06 full nonfunction routing overlay
+        run: python3 -m unittest tests.test_task172_step06_routing -v
+      - name: Validate Task172 Step07 Knowledge Experience routing index
+        run: python3 tools/research/validate_task172_routing_index.py --repo-root .
+      - name: Test Task172 Step07 Knowledge Experience routing index
+        run: python3 -m unittest tests.test_task172_step07_routing -v
+      - name: Validate Task172 Step08 UNESCO/provider metadata pilot
+        run: python3 tools/research/validate_task172_step08.py --repo-root .
+      - name: Test Task172 Step08 UNESCO/provider metadata pilot
+        run: python3 -m unittest tests.test_task172_step08 -v
+      - name: Validate Task172 Step09 UNESCO field corpus
+        run: python3 tools/research/validate_task172_step09.py --repo-root .
+      - name: Test Task172 Step09 UNESCO field corpus
+        run: python3 -m unittest tests.test_task172_step09 -v
       - name: Validate human result census and self-correction products
         run: |
           python3 tools/governance/build_human_results.py --check
