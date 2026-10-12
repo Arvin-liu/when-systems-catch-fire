@@ -14,6 +14,7 @@ from tools.validate_human_front_door import (
     CURRENT_STATE,
     GUIDE,
     HUMAN_READING,
+    IDENTITY_INPUT,
     LLMS,
     MINIMAL_INVOCATION,
     OPERATING_METHOD_LINK,
@@ -60,6 +61,12 @@ class HumanFrontDoorTests(unittest.TestCase):
         start = self.readme.index("### 项目现状") + len("### 项目现状")
         end = self.readme.index("### 价值宪章")
         self.assertEqual(self.readme[start:end].strip(), PROJECT_IDENTITY_TEXT)
+
+    def test_project_identity_has_one_machine_readable_authoring_input(self):
+        payload = json.loads(IDENTITY_INPUT.read_text(encoding="utf-8"))
+        self.assertEqual(payload["schema_version"], "human-front-door-identity-r1")
+        self.assertEqual(payload["identity_id"], "IGNITION_OWNER_HUMAN_FRONT_DOOR_IDENTITY_R1")
+        self.assertEqual(payload["text"], PROJECT_IDENTITY_TEXT)
 
     def test_component_navigation_is_collapsed_and_canonical(self):
         architecture_start = self.readme.index("## 4. 整体架构")
