@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "6e6bfabb9ebf73e0a5a66d636b7fc9434220a2f3c77f897e1fe7800e72772ddc"
+      "sha256": "85155f8e21c050c248ed27e14a58adfcd1a01ed0adc18d08f081059339efb612"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
