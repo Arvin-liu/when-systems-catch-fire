@@ -159,7 +159,7 @@
       "cards": 653,
       "changes": 548,
       "layered_readings": 574,
-      "search_records": 24691
+      "search_records": 24690
     },
     "open_obligations": {
       "authority": "OPEN_OBLIGATION_REGISTRY",
@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "b22a742fc54959f769c756f22629a0f88cea1875744da6c6cb0af5c566804cd3"
+      "sha256": "1c89e00442e0a8ac160f429572edadc000f0834c29243a9eb33b52f192088735"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
@@ -249,11 +249,11 @@
     },
     {
       "path": "ignition/data/governance/human-surface/materiality-manifest.json",
-      "sha256": "07e18ee690254d12cc097a981603c5ce172d3ba4caeda2774634c35258882318"
+      "sha256": "aee0c59500479b327773aba5fea10dfc14f895656b2dc179718def0846107976"
     },
     {
       "path": "ignition/data/governance/knowledge-experience/manifest.json",
-      "sha256": "3bd1b6acc9fb8827f05c3e99cbc857f7b40c367551bfcc84dac8fd8028f6d5a9"
+      "sha256": "185e2fcf997854a08a1df83015f6cf869aaed5cb2957d646626c7aaa5fbd24d1"
     },
     {
       "path": "ignition/data/operations/change-propagation-topology.json",
