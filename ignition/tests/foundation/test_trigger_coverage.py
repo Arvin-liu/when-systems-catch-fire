@@ -142,6 +142,11 @@ class FoundationCiRunnerTest(unittest.TestCase):
         self.assertIn("test-human-front-door", names)
         self.assertIn("validate-propagation-reconciliation", names)
 
+    def test_generated_output_negative_authority_runs_on_every_foundation_head(self) -> None:
+        checks = run_foundation_ci.foundation_checks(sys.executable)
+        authority_check = next(item for item in checks if item.name == "test-era-resolver-and-generated-output-authority")
+        self.assertIn("tests.test_generated_output_authority_negative", authority_check.argv)
+
     def test_runner_continues_after_failure_and_retains_per_command_evidence(self) -> None:
         with tempfile.TemporaryDirectory(prefix="foundation-ci-runner-test-") as directory:
             root = Path(directory)
