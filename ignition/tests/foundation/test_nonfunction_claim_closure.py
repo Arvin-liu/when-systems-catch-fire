@@ -1,4 +1,5 @@
 import importlib.util
+import hashlib
 import json
 import subprocess
 import sys
@@ -61,13 +62,14 @@ class NonFunctionClaimClosureTests(unittest.TestCase):
     def test_public_surface_anchor_survives_inserted_navigation_line(self):
         with tempfile.TemporaryDirectory() as directory:
             source = Path(directory) / "SUMMARY.md"
-            claim = "This theorem proves a universal result."
+            claim = "[This theorem proves a universal result.](https://example.test/old-source)"
             source.write_text(claim + "\n", encoding="utf-8")
             with patch.object(self.adjudicator, "repo_path", return_value=source):
                 before, _ = self.adjudicator.text_fragments("SUMMARY.md")
                 before_fragment = next(row for row in before if row.get("candidate", True))
                 before_anchor = self.adjudicator.anchor("SUMMARY.md", before_fragment, "CURRENT_PUBLIC_SURFACE")
-                source.write_text("[Guide](https://example.test/theorem-proof)\n" + claim + "\n", encoding="utf-8")
+                updated_claim = claim.replace("old-source", "new-source")
+                source.write_text("[Guide](https://example.test/theorem-proof)\n" + updated_claim + "\n", encoding="utf-8")
                 after, _ = self.adjudicator.text_fragments("SUMMARY.md")
                 after_fragment = next(row for row in after if row.get("candidate", True))
                 after_anchor = self.adjudicator.anchor("SUMMARY.md", after_fragment, "CURRENT_PUBLIC_SURFACE")
@@ -75,6 +77,20 @@ class NonFunctionClaimClosureTests(unittest.TestCase):
             self.assertNotIn("first_line", after_anchor)
             self.assertEqual(after_fragment["line"], 2)
             self.assertTrue(any(row.get("impact_class") == "EDITORIAL_NAVIGATION_ONLY" for row in after))
+
+    def test_link_destination_does_not_define_identity_but_visible_change_does(self):
+        original = "[This theorem proves a universal result.](https://example.test/old-source)"
+        moved = "[This theorem proves a universal result.](https://example.test/new-source)"
+        changed = "[This theorem proves a different universal result.](https://example.test/new-source)"
+
+        def candidate_id(text):
+            normalized = self.adjudicator.normalize(text)
+            return "NFC-" + hashlib.sha256(normalized.encode("utf-8")).hexdigest()[:16]
+
+        for text in (original, moved, changed):
+            self.assertTrue(self.adjudicator.candidate(text, markdown=True))
+        self.assertEqual(candidate_id(original), candidate_id(moved))
+        self.assertNotEqual(candidate_id(original), candidate_id(changed))
 
     def test_claim_bearing_link_label_remains_a_new_candidate_with_all_audits(self):
         linked_claim = "[This theorem proves a universal result.](https://example.test/source)"
