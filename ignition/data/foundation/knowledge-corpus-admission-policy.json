@@ -1,26 +1,37 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "policy_id": "KNOWLEDGE_CORPUS_ADMISSION_R1",
   "default_classification": "KNOWLEDGE_SOURCE_ELIGIBLE",
+  "impact_classes": {
+    "EDITORIAL_NAVIGATION_ONLY": "Formatting or navigation metadata that does not itself state a claim; it never suppresses claim-bearing text.",
+    "SOURCE_CONTENT_CHANGED": "Admitted source text changed; its provenance remains visible and no claim maturity is inferred.",
+    "NEW_CLAIM_CANDIDATE": "A claim-like fragment has no current canonical match and must enter the ordinary candidate registry with all gates and quarantine rules.",
+    "GENERATED_PROJECTION_REFRESH": "A derived projection changed and must be checked by its declared generator without feeding its rows back as source claims."
+  },
   "classes": {
     "KNOWLEDGE_SOURCE_ELIGIBLE": {
       "auto_discovery": true,
+      "impact_class": "SOURCE_CONTENT_CHANGED",
       "meaning": "A domain source may enter the Knowledge Pack through its declared source contract."
     },
     "KNOWLEDGE_SOURCE_EXPLICIT_ONLY": {
       "auto_discovery": false,
+      "impact_class": "SOURCE_CONTENT_CHANGED",
       "meaning": "A project or architecture document enters only through an explicit source registration."
     },
     "PLATFORM_CODE_EXCLUDED": {
       "auto_discovery": false,
+      "impact_class": "SOURCE_CONTENT_CHANGED",
       "meaning": "Kernel, runtime, tests, schemas, CI, tooling, and operational traces are platform provenance, not knowledge assets."
     },
     "GENERATED_PROJECTION_EXCLUDED": {
       "auto_discovery": false,
+      "impact_class": "GENERATED_PROJECTION_REFRESH",
       "meaning": "A deterministic projection is validated by its generator and cannot feed its own rows back into Knowledge."
     },
     "HISTORICAL_PROVENANCE_ONLY": {
       "auto_discovery": true,
+      "impact_class": "SOURCE_CONTENT_CHANGED",
       "provenance_only": true,
       "meaning": "Historical or audit material may be retained for source lineage, but its presence cannot upgrade a claim."
     }

@@ -15,12 +15,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 POLICY_PATH = ROOT / "data/foundation/knowledge-corpus-admission-policy.json"
+IMPACT_CLASS_NAMES = {
+    "EDITORIAL_NAVIGATION_ONLY",
+    "SOURCE_CONTENT_CHANGED",
+    "NEW_CLAIM_CANDIDATE",
+    "GENERATED_PROJECTION_REFRESH",
+}
 
 
 @dataclass(frozen=True)
 class Admission:
     path: str
     classification: str
+    impact_class: str
     auto_discovery: bool
     provenance_only: bool
     explicit: bool
@@ -28,7 +35,13 @@ class Admission:
 
 
 def load_policy() -> dict:
-    return json.loads(POLICY_PATH.read_text(encoding="utf-8"))
+    policy = json.loads(POLICY_PATH.read_text(encoding="utf-8"))
+    if set(policy.get("impact_classes", {})) != IMPACT_CLASS_NAMES:
+        raise ValueError("knowledge admission policy impact-class vocabulary drift")
+    for name, definition in policy.get("classes", {}).items():
+        if definition.get("impact_class") not in {"SOURCE_CONTENT_CHANGED", "GENERATED_PROJECTION_REFRESH"}:
+            raise ValueError(f"knowledge admission class has no valid impact class: {name}")
+    return policy
 
 
 def _normalized(path: str) -> str:
@@ -61,6 +74,7 @@ def admission_for_path(path: str) -> Admission:
     return Admission(
         path=normalized,
         classification=classification,
+        impact_class=class_config["impact_class"],
         auto_discovery=auto_discovery,
         provenance_only=bool(class_config.get("provenance_only", False)),
         explicit=explicit,
@@ -82,6 +96,7 @@ def policy_summary() -> dict:
         "policy_id": policy["policy_id"],
         "schema_version": policy["schema_version"],
         "classes": sorted(policy["classes"]),
+        "impact_classes": sorted(policy["impact_classes"]),
         "explicit_allowlist": sorted(policy.get("explicit_allowlist", [])),
         "rule_count": len(policy.get("rules", [])),
     }

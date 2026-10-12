@@ -119,8 +119,8 @@
     "foundation": {
       "function_identity_cards": 6151,
       "function_quarantine_or_pending": 4999,
-      "nonfunction_claims": 17966,
-      "nonfunction_quarantine_or_pending": 4993
+      "nonfunction_claims": 17965,
+      "nonfunction_quarantine_or_pending": 4992
     },
     "human_surface": {
       "function_human_entries": 24,
@@ -241,7 +241,7 @@
     },
     {
       "path": "ignition/data/foundation/nonfunction-claims/closure-summary.json",
-      "sha256": "85155f8e21c050c248ed27e14a58adfcd1a01ed0adc18d08f081059339efb612"
+      "sha256": "b22a742fc54959f769c756f22629a0f88cea1875744da6c6cb0af5c566804cd3"
     },
     {
       "path": "ignition/data/governance/human-results/config.json",
