@@ -4,11 +4,6 @@
 
 此页按 canonical title 排列。状态与关系来自当前注册表；`被引用` 是仓库依赖反向索引，不是现实因果。
 
-- [历史系统可以在内部逻辑上保持自洽，但无法预测外部冲击；当外部冲击导致原有价值体系归零时，系统呈现哥德尔不完备性式的历史实例化。](../../../data/foundation/nonfunction-claims/claim-registry.jsonl)
-  - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
-  - 可搜索名称：NFC-ab2c2dda6e989474 / 历史系统可以在内部逻辑上保持自洽，但无法预测外部冲击；当外部冲击导致原有价值体系归零时，系统呈现哥德尔不完备性式的历史实例化。
-  - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
-  - 依赖：—；被引用：—
 - [原始上传路径：`PRIVATE_PROVENANCE_WITHHELD](../../../outputs/collisions/20260708-teacher-competition/source-snapshot.md)
   - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
   - 可搜索名称：NFC-cb1a309b037eefef / 原始上传路径：`PRIVATE_PROVENANCE_WITHHELD
@@ -2503,4 +2498,9 @@
   - 类型/状态：`NONFUNCTION_CLAIM` · `HISTORICAL_ONLY`
   - 可搜索名称：NFC-6be07a00f7ce42cb / 社会系统：邻里积分制中的荣誉阶层；
   - 来源：`data/foundation/nonfunction-claims/claim-registry.jsonl`
+  - 依赖：—；被引用：—
+- [社会阶层固化的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）](../../../outputs/getbrain/classic-problems-benchmark-draft-20260706.md)
+  - 类型/状态：`NONFUNCTION_CLAIM` · `ACCEPTED_AS_DEFINITION`
+  - 可搜索名称：NFC-e0b21330a981ed20 / 社会阶层固化的具体因果判定：**pending**（需要调查、统计、田野、实验和反事实识别）
+  - 来源：`outputs/getbrain/classic-problems-benchmark-draft-20260706.md`
   - 依赖：—；被引用：—

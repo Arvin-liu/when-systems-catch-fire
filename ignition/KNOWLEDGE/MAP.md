@@ -61,7 +61,7 @@
 
 **引导问题：** 跨尺度表示、概率动力学和关系网络能描述什么，不能证明什么？
 
-当前检索覆盖 4233 项，重点卡片 101 项。 [打开本主题完整索引](./indexes/systems.md)
+当前检索覆盖 4232 项，重点卡片 101 项。 [打开本主题完整索引](./indexes/systems.md)
 
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
 - [Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0,](./ASSET-CARDS.md#asset-nfc-08dd51bd4230ce81) — `ACCEPTED_AS_DEFINITION`；Iteration method 1.3.0 and system maps 0.13.0, 0.12.0, 0.10.0, 0.6.0, 0.5.0 are Historical; method 1.2.0 and maps 0.1.0, 0.2.0, 0.3.0, 0.4.0 are earli
@@ -115,7 +115,7 @@
 
 **引导问题：** 知识资产怎样被登记、裁决、修订、隔离并保持机器与人类表面一致？
 
-当前检索覆盖 18608 项，重点卡片 313 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
+当前检索覆盖 18607 项，重点卡片 313 项。 [打开本主题完整索引](./indexes/architecture_governance.md)
 
 - [哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。](./ASSET-CARDS.md#asset-nfc-00b4be17fb8dc706) — `ACCEPTED_AS_DEFINITION`；哥德尔不完备性、霍奇猜想类比、不同能标、不同函数族，以及点火当前模型的失败，都不是大一统不可能的桥接定理。
 - [现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agent](./ASSET-CARDS.md#asset-nfc-06ddf2b643747a14) — `ACCEPTED_AS_DEFINITION`；现有知识治理系统被登记为第一个 `Knowledge Domain Pack`，REOS vNext LIGHT 与之元写作法分别作为有界 research/writing Pack 引用；R0 没有全仓物理迁移。机器边界以 \[`agentization-boundary-r0.json`\]\(../
