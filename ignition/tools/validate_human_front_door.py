@@ -50,7 +50,7 @@ VERSION_FACTS = {
 HUMAN_CURRENT_HEADING = "### 项目现状"
 HUMAN_CHARTER_HEADING = "### 价值宪章"
 CHARTER_LINK = "../ignition/docs/governance/life-community-value-charter.md"
-PROJECT_IDENTITY_TEXT = "点火是一个面向长期研究、判断与创作的认知—行动工作系统。它把问题、来源、证据、模型、反例、记忆、任务、工具与公开表达组织在同一套可追溯、可修订的结构中，使跨时间、跨领域的工作能够持续积累、检验、纠错，并最终转化为文章、书籍和其他成果。它不替人决定目标，也不把模型、Agent、工程状态或写得漂亮的结论当作真理；它负责保存上下文、约束边界、协调可替换的工具与执行器，让人始终知道依据从哪里来、哪里仍然未知，以及工作如何继续。"
+PROJECT_IDENTITY_TEXT = "点火是一个以人的好奇心为起点、以问题为驱动的开放式研究系统，也是一项将自身纳入研究的长期工程。它把不同领域的来源、证据、假设、模型、反例、任务与工具连接成可追溯、可检验、可修订的研究过程，使认识与成果得以跨越时间积累，并在新的发现中不断被重新审视。点火既探索外部世界，也研究自己的研究方式；研究成果可以改变它对世界的理解，也可以改变它的方法、程序与架构，而这些改变又将作用于后续研究，形成一个持续探索、验证、纠错与演化的过程。"
 ARCHITECTURE_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
 ARCHITECTURE_PAGES_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/"
 ARCHITECTURE_PAGES_PRESENTATION_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1"
