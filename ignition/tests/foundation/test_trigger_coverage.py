@@ -14,7 +14,9 @@ Scenarios covered here:
 from __future__ import annotations
 
 import re
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -22,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = ROOT.parent
 sys.path.insert(0, str(ROOT / "tools" / "foundation"))
 import validate_repository_path_classification as preflight  # noqa: E402
+import run_foundation_ci  # noqa: E402
 
 CJK = ("统一函数总表/", "统一案例总表/")
 
@@ -104,9 +107,9 @@ class LayerBTriggerTest(unittest.TestCase):
         return path.read_text(encoding="utf-8")
 
     def test_layer_b_runs_task106_propagation_proof(self) -> None:
-        text = self._on_block()
-        self.assertIn("validate_reconciliation.py --check", text,
-                      "Layer B must run the task-106 propagation reconciliation step (contract §6)")
+        names = {item.name for item in run_foundation_ci.foundation_checks(sys.executable)}
+        self.assertIn("validate-propagation-reconciliation", names,
+                      "Layer B runner must retain the task-106 propagation reconciliation step (contract §6)")
 
     def test_layer_b_triggers_on_authoritative_change(self) -> None:
         text = self._on_block()
@@ -127,6 +130,48 @@ class LayerBTriggerTest(unittest.TestCase):
             "foundation-validation.yml must not use a narrow `paths:` filter that "
             "would omit the authoritative CJK-table directories (contract §3.4)",
         )
+
+
+class FoundationCiRunnerTest(unittest.TestCase):
+    def test_suite_inventory_is_unique_and_sequential(self) -> None:
+        checks = run_foundation_ci.foundation_checks(sys.executable)
+        names = [item.name for item in checks]
+        self.assertEqual(len(checks), 57)
+        self.assertEqual(len(names), len(set(names)))
+        self.assertIn("adjudicate-nonfunction-claims", names)
+        self.assertIn("test-human-front-door", names)
+        self.assertIn("validate-propagation-reconciliation", names)
+
+    def test_runner_continues_after_failure_and_retains_per_command_evidence(self) -> None:
+        with tempfile.TemporaryDirectory(prefix="foundation-ci-runner-test-") as directory:
+            root = Path(directory)
+            repo = root / "repo"
+            app = repo / "ignition"
+            app.mkdir(parents=True)
+            evidence = root / "evidence"
+            checks = [
+                run_foundation_ci.Check(
+                    "intentional-failure",
+                    (sys.executable, "-c", "print('first ran'); raise SystemExit(7)"),
+                ),
+                run_foundation_ci.Check(
+                    "run-after-failure",
+                    (sys.executable, "-c", "from pathlib import Path; Path('second-ran').write_text('yes')"),
+                ),
+            ]
+            summary = run_foundation_ci.execute_checks(
+                checks,
+                repo_root=repo,
+                app_root=app,
+                evidence_dir=evidence,
+            )
+            self.assertEqual(summary["status"], "FAIL")
+            self.assertEqual(summary["checks_total"], 2)
+            self.assertEqual(summary["checks_failed"], 1)
+            self.assertEqual((app / "second-ran").read_text(encoding="utf-8"), "yes")
+            rows = [json.loads(line) for line in (evidence / "command-ledger.jsonl").read_text(encoding="utf-8").splitlines()]
+            self.assertEqual([row["status"] for row in rows], ["FAIL", "PASS"])
+            self.assertTrue(all((evidence / row[stream]["path"]).is_file() for row in rows for stream in ("stdout", "stderr")))
 
 
 if __name__ == "__main__":

@@ -1,4 +1,6 @@
+import fnmatch
 import json
+import re
 import unittest
 from pathlib import Path
 
@@ -149,6 +151,44 @@ class HumanFrontDoorTests(unittest.TestCase):
         for token in (".github/workflows/pages.yml", "pages/system-map.html"):
             self.assertNotIn(token, self.readme)
             self.assertNotIn(token, self.human_reading)
+
+    def test_q33_workflow_triggers_current_human_surface_inputs(self):
+        repo_root = Path(__file__).resolve().parents[2]
+        workflow = (repo_root / ".github/workflows/q33-governance-validation.yml").read_text(encoding="utf-8")
+        match = re.search(
+            r"(?ms)^  pull_request:\n    paths:\n(?P<paths>(?:      - [^\n]+\n)+)",
+            workflow,
+        )
+        self.assertIsNotNone(match, "Q33 pull_request trigger must declare its path coverage")
+        patterns = [
+            line.split("-", 1)[1].strip().strip("'").strip('"')
+            for line in match.group("paths").splitlines()
+        ]
+        counterfactual_inputs = (
+            ".github/README.md",
+            "ignition/AI-START-HERE.md",
+            "ignition/AI-HANDOFF.md",
+            "ignition/HUMAN-READING.md",
+            "ignition/ITERATION.md",
+            "ignition/STATE-CHANGELOG.md",
+            "ignition/SUMMARY.md",
+            "ignition/llms.txt",
+            "ignition/docs/ai-assistant-usage-reference.md",
+            "ignition/docs/project-current-state.md",
+            "ignition/data/operations/human-front-door-identity-r1.json",
+            "ignition/data/operations/project-components.json",
+            "ignition/data/architecture/interactive-system-map.json",
+            "ignition/data/foundation/function-assets/census.jsonl",
+            "ignition/data/foundation/nonfunction-claims/claim-registry.jsonl",
+            "ignition/docs/human/function-assets/README.md",
+        )
+        missing = [path for path in counterfactual_inputs if not any(fnmatch.fnmatchcase(path, pattern) for pattern in patterns)]
+        self.assertEqual(missing, [], f"Q33 Human Surface input changes would skip CI: {missing}")
+        self.assertIn(
+            "if: ${{ github.ref == 'refs/heads/agent/121q33-global-copyright-risk-and-rights-governance' || (github.event_name == 'pull_request' && github.event.pull_request.head.ref == 'agent/121q33-global-copyright-risk-and-rights-governance') }}",
+            workflow,
+            "the Q33 task-specific diff gate must not run on an unrelated pull request",
+        )
 
     def test_physics_correction_is_visible(self):
         self.assertIn("研究仍保持研究候选或负结果，不升级为系统能力或认识论结论", self.readme)
