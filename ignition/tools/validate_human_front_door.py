@@ -32,6 +32,7 @@ HUMAN_READING = ROOT / "HUMAN-READING.md"
 SYSTEM_MAP_SPEC = ROOT / "data/architecture/interactive-system-map.json"
 SYSTEM_MAP_SVG = ROOT / "docs/generated/ignition-system-architecture.svg"
 COMPONENT_REGISTRY = ROOT / "data/operations/project-components.json"
+IDENTITY_INPUT = ROOT / "data/operations/human-front-door-identity-r1.json"
 
 CAPABILITIES = {
     "MCF": "docs/architecture/multiscale-causal-fabric.md",
@@ -50,7 +51,22 @@ VERSION_FACTS = {
 HUMAN_CURRENT_HEADING = "### 项目现状"
 HUMAN_CHARTER_HEADING = "### 价值宪章"
 CHARTER_LINK = "../ignition/docs/governance/life-community-value-charter.md"
-PROJECT_IDENTITY_TEXT = "点火是一个面向长期研究、判断与创作的认知—行动工作系统。它把问题、来源、证据、模型、反例、记忆、任务、工具与公开表达组织在同一套可追溯、可修订的结构中，使跨时间、跨领域的工作能够持续积累、检验、纠错，并最终转化为文章、书籍和其他成果。它不替人决定目标，也不把模型、Agent、工程状态或写得漂亮的结论当作真理；它负责保存上下文、约束边界、协调可替换的工具与执行器，让人始终知道依据从哪里来、哪里仍然未知，以及工作如何继续。"
+IDENTITY_INPUT_CONTRACT = "human-front-door-identity-r1"
+
+
+def load_project_identity_text() -> str:
+    payload = json.loads(IDENTITY_INPUT.read_text(encoding="utf-8"))
+    if payload.get("schema_version") != IDENTITY_INPUT_CONTRACT:
+        raise ValueError("human front-door identity input has an unknown schema version")
+    if payload.get("identity_id") != "IGNITION_OWNER_HUMAN_FRONT_DOOR_IDENTITY_R1":
+        raise ValueError("human front-door identity input has an unknown identity id")
+    text = payload.get("text")
+    if not isinstance(text, str) or not text.strip():
+        raise ValueError("human front-door identity input text is missing")
+    return text
+
+
+PROJECT_IDENTITY_TEXT = load_project_identity_text()
 ARCHITECTURE_IMAGE_TARGET = "../ignition/docs/generated/ignition-system-architecture.svg"
 ARCHITECTURE_PAGES_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/"
 ARCHITECTURE_PAGES_PRESENTATION_URL = "https://arvin-liu.github.io/when-systems-catch-fire/architecture/?present=1"
